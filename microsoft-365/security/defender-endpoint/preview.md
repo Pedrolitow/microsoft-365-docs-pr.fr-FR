@@ -15,15 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 61eae362d9f4e5e2777b5f917ac95d7c838e350c
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 8cd930fcc74994abe91f4c13255f97bc21159202
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214130"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765659"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Fonctionnalités de prévisualisation de Microsoft Defender for Endpoint
 
@@ -43,7 +42,7 @@ Découvrez les nouvelles fonctionnalités de la version d’évaluation de Defen
 > [!TIP]
 > Recevez une notification lorsque cette page est mise à jour en copiant et en coller l’URL suivante dans votre lecteur de flux : `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
-Pour plus d’informations sur les nouvelles fonctionnalités généralement disponibles, voir [Nouveautés de Defender pour Endpoint.](whats-new-in-microsoft-defender-endpoint.md)
+Pour plus d’informations sur les nouvelles fonctionnalités généralement disponibles, voir [Nouveautés de Defender pour Endpoint](whats-new-in-microsoft-defender-endpoint.md).
 
 ## <a name="what-you-need-to-know"></a>Ce que vous devez savoir
 
@@ -62,9 +61,9 @@ Vous aurez accès aux fonctionnalités à venir sur qui vous pourrez nous faire 
 
 Activez le paramètre d’expérience de préversion pour être parmi les premiers à essayer les fonctionnalités à venir.
 
-1. Dans le volet de navigation, **sélectionnez** Paramètres fonctionnalités avancées Des points de \>  \>  \> **terminaison prévisualisation.**
+1. Dans le volet de navigation, **sélectionnez Paramètres** \> **fonctionnalités** \> avancées **des points** de **terminaison prévisualisation**\>.
 
-2. Basculez le paramètre entre **Sur** et **Hors et** sélectionnez Enregistrer **les préférences.**
+2. Basculez le paramètre entre **« Sur** » et « **Éteint »** et sélectionnez Enregistrer **les préférences**.
 
 > [!TIP]
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-preview-belowfoldlink)

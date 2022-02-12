@@ -1,7 +1,7 @@
 ---
 title: Nouveautés de Microsoft Defender pour Point de terminaison sur Mac
 description: Découvrez les principales modifications apportées aux versions précédentes de Microsoft Defender pour Endpoint sur Mac.
-keywords: 'microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, macos, whatsnew'
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, macos, whatsnew
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -12,12 +12,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
 ms.topic: reference
 ms.technology: mde
+ms.openlocfilehash: 5382118753f3c865f6fceb7cd16a7a7953e7bfad
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767602"
 ---
-
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour Point de terminaison sur Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]

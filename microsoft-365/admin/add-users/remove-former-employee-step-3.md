@@ -1,5 +1,5 @@
 ---
-title: 'Étape 3 : forward a former employee’s email to another employee or convert to a shared mailbox'
+title: 'Étape 3 : effacer et bloquer l’appareil mobile d’un ancien employé'
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,50 +20,32 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - m365solution-removeemployee
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Suivez ces étapes pour envoyer le courrier électronique d’un ancien employé à un autre employé ou convertir en boîte aux lettres partagée.
-ms.openlocfilehash: 5f52bb9d3c77d492d5a80a19cef99282b78e8b79
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Suivez ces étapes pour bloquer l’accès à l’appareil mobile d’un ancien employé.
+ms.openlocfilehash: 8d6423611b1bf228fbfd5bf13037ade4033013a0
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161653"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765971"
 ---
-# <a name="step-3---forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>Étape 3 : forward a former employee’s email to another employee or convert to a shared mailbox
+# <a name="step-3---wipe-and-block-a-former-employees-mobile-device"></a>Étape 3 : effacer et bloquer l’appareil mobile d’un ancien employé
 
-Dans cette étape, vous affectez l’adresse de messagerie de l’ancien employé à un autre employé ou convertissez la boîte aux lettres de l’utilisateur en boîte aux lettres partagée.
+Si votre ancien employé avait un téléphone d’organisation, vous pouvez utiliser le Centre d’administration <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a> pour effacer et bloquer cet appareil afin que toutes les données de l’organisation sont supprimées de l’appareil et qu’il ne puisse plus se connecter à Office 365. Si votre organisation utilise Basic Mobility and Security pour gérer les appareils mobiles, vous pouvez effacer et bloquer ces appareils à l’aide de Basic Mobility and Security.
 
-## <a name="convert-former-employees-mailbox-to-a-shared-mailbox"></a>Convertir la boîte aux lettres d’un ancien employé en boîte aux lettres partagée
+## <a name="wipe-mobile-device-using-the-exchange-admin-center"></a>Effacer l’appareil mobile à l’aide Exchange d’administration
 
-Lorsque vous convertissez la boîte aux lettres d’un utilisateur en boîte aux lettres partagée, l’ensemble du courrier électronique et du calendrier existants est conservé. Ce n’est que maintenant que dans une boîte aux lettres partagée que plusieurs personnes pourront y accéder au lieu d’une seule personne. Si vous le souhaitez, vous pouvez reconverti une boîte aux lettres partagée en boîte aux lettres utilisateur (privée).
-
-- La création d'une boîte aux lettres partagée est la solution la plus économique car aucune licence payante n'est requise **tant que la boîte aux lettres ne dépasse pas les 50 Go**. Au-delà de 50 Go, vous devrez acheter une licence.
-- Si vous convertissez la boîte aux lettres en boîte aux lettres partagée, les anciens courriers seront également disponibles. Ceux-ci peuvent occuper beaucoup d'espace.
-- Si vous définissez le forwarding du courrier, seuls les nouveaux *messages* électroniques envoyés à l’ancien employé sont désormais envoyés à l’employé actuel.
-
-Suivez ces étapes pour convertir la boîte aux lettres [de l’utilisateur en boîte aux lettres partagée.](../email/convert-user-mailbox-to-shared-mailbox.md)
-
-## <a name="forward-a-former-employees-email-to-another-employee"></a>Envoyer le courrier électronique d’un ancien employé à un autre employé
-
- > [!IMPORTANT]
- > Si vous programmez le forwarding de courrier ou une boîte aux lettres partagée, à la fin, ne supprimez pas le compte de l’ancien employé. Le compte doit être présent pour ancrer la boîte aux lettres partagée ou de forwarding de courrier électronique.
-
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
-2. Sélectionnez le nom de l’employé que vous souhaitez bloquer, puis sélectionnez **l’onglet** Courrier.
-3. Under **Email Forwarding**, select **Manage email forwarding**.
-4. Activez l'option **Transférer tous les messages envoyés à cette boîte aux lettres**. Dans la **zone d’adresse de forwarding,** tapez l’adresse e-mail de l’employé actuel qui va obtenir le courrier électronique.
-5. Sélectionnez **Enregistrer**.
-6. Souvenez-vous que vous ne devez pas supprimer le compte de l'ancien employé.
+1. Go to the Exchange admin center > **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">Mailboxes</a>.
+1. Sélectionnez l’utilisateur, puis sous **Appareils mobiles**, **sélectionnez Afficher les détails**.
+1. Dans la page **Détails de** l’appareil mobile, sous **Appareils** mobiles, sélectionnez l’appareil mobile, effacez l’appareil **DataWipe**![](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png), puis sélectionnez **Bloquer**.
+1. Sélectionnez **Enregistrer**.
+   > [!TIP]
+   > Assurez-vous de supprimer ou de désactiver l’utilisateur de votre service Blackberry Enterprise local. Vous devez également désactiver les appareils Blackberry de l'utilisateur. Reportez-vous au guide d'administration des services Blackberry Business Cloud Services pour consulter les étapes spécifiques relatives à la désactivation de l'utilisateur.
 
 ## <a name="related-content"></a>Contenu associé
 
-[Ouvrir et utiliser une boîte aux lettres partagée dans Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd)
-
-[Accéder à la boîte aux lettres d’un autre utilisateur](https://support.microsoft.com/office/access-another-person-s-mailbox-a909ad30-e413-40b5-a487-0ea70b763081)
-
 [Centre d’administration Exchange dans Exchange Online](/exchange/exchange-admin-center)
-
-[Gestion des éléments de courrier et de calendrier d’une autre personne](https://support.microsoft.com/office/manage-another-person-s-mail-and-calendar-items-afb79d6b-2967-43b9-a944-a6b953190af5)

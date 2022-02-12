@@ -14,16 +14,16 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 01/19/2022
+ms.date: 02/11/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: f09e3f4c585bb286b080096acb0b8aa9a2af912b
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 67debb23e701b1c31edbc8084aa39ed7bb58385c
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464905"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767027"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Antivirus Microsoft Defender compatibilité avec d’autres produits de sécurité
 
@@ -139,7 +139,7 @@ Le tableau de cette section récapitule les fonctionnalités qui fonctionnent ac
 
  | Protection | Antivirus Microsoft Defender <br/>(*Mode actif*) | Antivirus Microsoft Defender <br/>(*Mode passif*) | Antivirus Microsoft Defender <br/>(*Désactivé ou désinstallé*) | [PEPT en mode blocage](edr-in-block-mode.md) | 
  |:---|:---|:---|:---|:---| 
- | [Protection en temps réel](configure-real-time-protection-microsoft-defender-antivirus.md) | Oui | Non <sup>[[4](#fn4)]</sup> | Non | Non | 
+ | [Protection en temps réel](configure-real-time-protection-microsoft-defender-antivirus.md) | Oui | Voir la remarque <sup>[[4](#fn4)]</sup> | Non | Non | 
  | [Protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md) | Oui | Non  | Non | Non | 
  | [Protection du réseau](network-protection.md)  | Oui | Non | Non | Non | 
  | [Règles de réduction de la surface d’attaque](attack-surface-reduction.md)  | Oui | Non | Non  | Non | 
@@ -184,7 +184,7 @@ Le tableau de cette section décrit les différents états que vous pouvez voir 
  |  State  |  Action exécutée  | 
  |:---|:---| 
  |  Mode actif  |  En mode actif, Antivirus Microsoft Defender est utilisé comme application antivirus sur l’ordinateur. Paramètres configurés à l’aide de Configuration Manager, d’une stratégie de groupe, Microsoft Intune d’autres produits de gestion s’appliquent. Les fichiers sont analysés, les menaces sont corrigés et les informations de détection sont signalées dans votre outil de configuration (par exemple, Configuration Manager ou l’application Antivirus Microsoft Defender sur le point de terminaison lui-même).  | 
- |  Mode passif  |  En mode passif, Antivirus Microsoft Defender n’est pas utilisé comme application antivirus et les menaces ne sont  pas corrigés par Antivirus Microsoft Defender. Toutefois, les menaces peuvent être corrigés par la détection et la réponse des points de terminaison [(PEPT) en mode blocage](edr-in-block-mode.md). <br/><br/> Les fichiers sont analysés et des rapports sont fournis pour détecter les menaces qui sont partagées avec le service Defender for Endpoint. Il se peut que des alertes s’affichent dans [Defender pour le cloud](/defender-cloud-apps) Antivirus Microsoft Defender en tant que source, même lorsque Antivirus Microsoft Defender est en mode passif. <br/><br/> Lorsque Antivirus Microsoft Defender est en mode passif, vous pouvez toujours gérer les mises à jour pour [Antivirus Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md) ; toutefois, vous ne pouvez pas déplacer Antivirus Microsoft Defender  en mode actif si vos appareils ont un produit antivirus non Microsoft qui fournit une protection en temps réel contre les programmes malveillants. <br/><br/> Pour une protection par couches de sécurité et une détection optimales, veillez à obtenir vos mises à jour antivirus et anti-programme malveillant, même si Antivirus Microsoft Defender est en cours d’exécution en mode passif. Voir [Gérer Antivirus Microsoft Defender mises à jour et appliquer les lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md). <br/><br/> **REMARQUE** : le mode passif n’est pas pris en charge sur Windows Server 2016.  | 
+ |  Mode passif  |  En mode passif, Antivirus Microsoft Defender n’est pas utilisé comme application antivirus et les menaces ne sont  pas corrigés par Antivirus Microsoft Defender. Toutefois, les menaces peuvent être corrigés par la détection et la réponse des points de terminaison [(PEPT) en mode blocage](edr-in-block-mode.md). <br/><br/> Les fichiers sont analysés par PEPT, et des rapports sont fournis pour les détections de menaces partagées avec le service Defender for Endpoint. Il se peut que des alertes s’affichent dans [Defender pour le cloud](/defender-cloud-apps) Antivirus Microsoft Defender en tant que source, même lorsque Antivirus Microsoft Defender est en mode passif. <br/><br/> Lorsque Antivirus Microsoft Defender est en mode passif, vous pouvez toujours gérer les mises à jour pour [Antivirus Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md) ; toutefois, vous ne pouvez pas déplacer Antivirus Microsoft Defender  en mode actif si vos appareils ont un produit antivirus non Microsoft qui fournit une protection en temps réel contre les programmes malveillants. <br/><br/> Pour une protection par couches de sécurité et une détection optimales, veillez à obtenir vos mises à jour antivirus et anti-programme malveillant, même si Antivirus Microsoft Defender est en cours d’exécution en mode passif. Voir [Gérer Antivirus Microsoft Defender mises à jour et appliquer les lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md). <br/><br/> **REMARQUE** : le mode passif n’est pas pris en charge sur Windows Server 2016.  | 
  |  Désactivé <br/><br/> ou <br/><br/> Désinstallé  |  Lorsqu’il est désactivé ou désinstallé, Antivirus Microsoft Defender n’est pas utilisé comme application antivirus. Les fichiers ne sont pas analysés et les menaces ne sont pas corrigés. <br/><br/> La désactivation ou la désinstallation de Antivirus Microsoft Defender n’est pas recommandée en général ; si possible, conservez les Antivirus Microsoft Defender en mode passif si vous utilisez une solution anti-programme malveillant/antivirus non Microsoft. <br/><br/> Dans les cas où Antivirus Microsoft Defender est automatiquement désactivé, il peut être réactivé automatiquement si le produit antivirus/anti-programme malveillant non-Microsoft expire ou cesse de fournir une protection en temps réel contre les virus, les programmes malveillants ou d’autres menaces. La réactivé automatique des Antivirus Microsoft Defender vous permet de vous assurer que la protection antivirus est conservée sur vos points de terminaison. <br/><br/> Vous pouvez également utiliser une analyse périodique [limitée, qui](limited-periodic-scanning-microsoft-defender-antivirus.md) fonctionne avec le moteur Antivirus Microsoft Defender pour vérifier régulièrement les menaces si vous utilisez une application antivirus non Microsoft.  | 
 
 

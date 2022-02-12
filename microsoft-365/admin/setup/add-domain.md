@@ -19,6 +19,7 @@ ms.custom:
 - SaRA
 - MSStore_Link
 - okr_smb
+- business_assist
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -27,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Utilisez l’Assistant Installation pour ajouter votre domaine à Microsoft 365 dans le Centre d'administration Microsoft 365 en ajoutant un enregistrement DNS à votre hôte DNS.
-ms.openlocfilehash: 8562d3bd3dc4e3d550c3c8365fdfc2dcf9220f94
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: eb58c8fc69a26157aa7dfb323be03efb81ef76bf
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62155991"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766535"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Ajouter un domaine à Microsoft 365
 
@@ -40,7 +41,10 @@ ms.locfileid: "62155991"
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Pour ajouter, modifier ou supprimer  des domaines, vous devez être administrateur de nom de domaine ou administrateur **général** d’un plan d’entreprise [ou d’entreprise.](https://products.office.com/business/office)  Ces modifications affectent l’ensemble du client . *Les administrateurs personnalisés* *ou* les utilisateurs réguliers ne pourront pas apporter ces modifications.
+Pour ajouter, modifier ou supprimer des domaines, vous devez  être administrateur de  nom de domaine ou administrateur **général** d’un plan d’entreprise [ou d’entreprise](https://products.office.com/business/office). Ces modifications affectent l’ensemble du client . *Les administrateurs personnalisés* *ou les* utilisateurs réguliers ne pourront pas apporter ces modifications.
+
+> [!TIP]
+> Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de collaborer avec [un spécialiste microsoft des petites entreprises](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Business Assist, vous et vos employés accédez 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
 
 ## <a name="watch-add-a-domain"></a>Regarder : Ajouter un domaine
 
@@ -48,12 +52,12 @@ Pour ajouter, modifier ou supprimer  des domaines, vous devez être administrate
 
 Votre entreprise peut avoir besoin de plusieurs noms de domaine à des fins différentes. Par exemple, vous souhaitez peut-être ajouter une orthographe différente du nom de votre société, car les clients l’utilisent déjà et leurs communications n’ont pas pu vous joindre.
 
-1. In the Centre d'administration Microsoft 365, choose <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
-1. Under **Get your custom domain set up**, select **View**  >  **Manage**  >  **Add domain**.
-1. Entrez le nouveau nom de domaine à ajouter, puis sélectionnez **Suivant.**
-1. Connectez-vous à votre bureau d’enregistrement de domaines, puis sélectionnez **Suivant.**
+1. Dans la Centre d'administration Microsoft 365, choisissez <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Installation**</a>.
+1. Sous **Obtenir votre domaine personnalisé, sélectionnez** **Domaine** **ViewManageAdd** >  > .
+1. Entrez le nouveau nom de domaine à ajouter, puis sélectionnez **Suivant**.
+1. Connectez-vous à votre bureau d’enregistrement de domaines, puis sélectionnez **Suivant**.
 1. Choisissez les services pour votre nouveau domaine.
-1. Select **Next**  >  **Authorize**  >  **Next,** and then **Finish**. Votre nouveau domaine a été ajouté.
+1. **Sélectionnez** **NextAuthorizeNext** >  > , puis **Terminez**. Votre nouveau domaine a été ajouté.
 
 ## <a name="add-a-domain"></a>Ajouter un domaine
 
@@ -71,7 +75,7 @@ Suivez ces étapes pour ajouter, configurer ou poursuivre la configuration d’u
 
 ::: moniker-end
     
-2. Go to the **Paramètres**  >  **Domains** page. 
+2. Go to the **Paramètres** >  **Domains** page. 
 
 3. Sélectionnez **Ajouter un domaine**.
     
@@ -79,22 +83,22 @@ Suivez ces étapes pour ajouter, configurer ou poursuivre la configuration d’u
     
 5. Choisissez la façon dont vous souhaitez vérifier que vous êtes propriétaire du domaine.
     
-    1. Si votre bureau d’enregistrement de domaines utilise [domain Connecter](#domain-connect-registrars-integrating-with-microsoft-365), [Microsoft](../get-help-with-domains/domain-connect.md) configurera automatiquement vos enregistrements en vous connectant à votre bureau d’enregistrement et en confirmant la connexion à Microsoft 365. Vous serez renvoyé au Centre d’administration et Microsoft vérifiera ensuite automatiquement votre domaine.
+    1. Si votre bureau d’enregistrement de domaines utilise [domain Connecter](#domain-connect-registrars-integrating-with-microsoft-365)[, Microsoft](../get-help-with-domains/domain-connect.md) configurera automatiquement vos enregistrements en vous connectant à votre bureau d’enregistrement et en confirmant la connexion à Microsoft 365. Vous serez renvoyé au Centre d’administration et Microsoft vérifiera ensuite automatiquement votre domaine.
     2. Vous pouvez utiliser un enregistrement TXT pour vérifier votre domaine. Sélectionnez ceci et **sélectionnez Suivant** pour voir les instructions d’ajout de cet enregistrement DNS au site web de votre bureau d’enregistrement. La vérification peut prendre jusqu’à 30 minutes après l’ajout de l’enregistrement. 
-    3. Vous pouvez ajouter un fichier texte au site web de votre domaine. Sélectionnez et téléchargez le .txt à partir de l’Assistant Installation, puis téléchargez le fichier dans le dossier de niveau supérieur de votre site web. Le chemin d’accès au fichier doit ressembler à : `http://mydomain.com/ms39978200.txt` . Nous vous confirmerons que vous êtes propriétaire du domaine en trouvant le fichier sur votre site web.
+    3. Vous pouvez ajouter un fichier texte au site web de votre domaine. Sélectionnez et téléchargez le .txt à partir de l’Assistant Installation, puis téléchargez le fichier dans le dossier de niveau supérieur de votre site web. Le chemin d’accès au fichier doit ressembler à : `http://mydomain.com/ms39978200.txt`. Nous vous confirmerons que vous êtes propriétaire du domaine en trouvant le fichier sur votre site web.
     
 6. Choisissez la façon dont vous souhaitez apporter les modifications DNS requises pour que Microsoft utilise votre domaine.
     
-    1. Choisissez Ajouter les enregistrements **DNS** pour moi si votre bureau d’enregistrement prend en charge [domain Connecter](#domain-connect-registrars-integrating-with-microsoft-365)et [Microsoft](../get-help-with-domains/domain-connect.md) configurera vos enregistrements automatiquement en vous connectant à votre bureau d’enregistrement et en confirmant la connexion à Microsoft 365.
-    2. Choisissez **J’ajouterai** les enregistrements DNS moi-même si vous souhaitez joindre uniquement des services Microsoft 365 spécifiques à votre domaine ou si vous souhaitez ignorer cette étape pour le moment et le faire ultérieurement. **Choisissez cette option si vous savez exactement ce que vous faites.**
+    1. Choisissez Ajouter les enregistrements **DNS** pour moi si votre bureau d’enregistrement prend en charge les [Connecter](#domain-connect-registrars-integrating-with-microsoft-365) de domaine, [et Microsoft](../get-help-with-domains/domain-connect.md) configurera vos enregistrements automatiquement en vous connectant à votre bureau d’enregistrement et en confirmant la connexion à Microsoft 365.
+    2. Choisissez **J’ajouterai les enregistrements DNS** moi-même si vous souhaitez joindre uniquement des services Microsoft 365 spécifiques à votre domaine ou si vous souhaitez ignorer cette étape pour le moment et le faire ultérieurement. **Choisissez cette option si vous savez exactement ce que vous faites.**
 
-7. Si vous avez choisi d’ajouter vous-même des enregistrements *DNS,*  sélectionnez **Suivant** et vous verrez une page avec tous les enregistrements que vous devez ajouter à votre site web de bureau d’enregistrement pour configurer votre domaine. 
+7. Si vous avez choisi d’ajouter vous-même des enregistrements *DNS*  , sélectionnez **Suivant** et vous verrez une page avec tous les enregistrements que vous devez ajouter à votre site web de bureau d’enregistrement pour configurer votre domaine. 
 
     Si le portail ne reconnaît pas votre bureau d'enregistrement, vous pouvez [suivre ces instructions générales](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
     
     Si vous ne connaissez pas le fournisseur d'hébergement DNS ou le bureau d'enregistrement pour votre domaine, voir [Rechercher mon bureau d'enregistrement de domaines ou mon fournisseur d'hébergement DNS](../get-help-with-domains/find-your-domain-registrar.md).
     
-    Si vous souhaitez attendre plus tard, désélectionnez tous les services et cliquez sur **Continuer,** ou à l’étape précédente de connexion de domaine, sélectionnez Plus **d’options** et sélectionnez Ignorer cette option **pour le moment.**
+    Si vous souhaitez attendre plus tard, désélectionnez tous les services et cliquez sur **Continuer**, ou à l’étape précédente de connexion de domaine, sélectionnez Plus **d’options** et sélectionnez Ignorer cette **option pour le moment**.
     
 8. Select **Finish** - you’re done!
 
@@ -102,13 +106,13 @@ Suivez ces étapes pour ajouter, configurer ou poursuivre la configuration d’u
 
 Suivez les étapes ci-dessous pour ajouter un enregistrement personnalisé pour un site web ou un service tiers.
 
-1. Connectez-vous au Centre d’administration Microsoft à <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> l’adresse .
+1. Connectez-vous au Centre d’administration Microsoft à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
-2. Go to the **Paramètres**   >  **Domains** page.
+2. Go to the **Paramètres**  >  **Domains** page.
 
 3. Dans la page **Domaines**, sélectionnez un domaine. 
     
-4. Sous **paramètres DNS**, sélectionnez **Enregistrements personnalisés**; puis **sélectionnez Nouvel enregistrement personnalisé.**
+4. Sous **paramètres DNS**, sélectionnez **Enregistrements personnalisés** ; puis **sélectionnez Nouvel enregistrement personnalisé**.
 
 5. Sélectionnez le type d’enregistrement DNS à ajouter et tapez les informations du nouvel enregistrement.
     
@@ -125,7 +129,7 @@ Dans l’Assistant, nous allons simplement confirmer que vous êtes propriétair
   
 ### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Intégration Connecter bureaux d’enregistrement de domaines Microsoft 365
 
-- [1 &amp; 1 IONOS](https://www.1and1.com/)
+- [11&amp; IONOS](https://www.1and1.com/)
 - [EuroDNS](https://www.eurodns.com/)
 - [Cloudflare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
@@ -155,9 +159,9 @@ Chaque Microsoft 365 organisation peut avoir jusqu’à trois onmicrosoft.com do
 
 Pour ajouter un domaine onmicrosoft.com:
 
-1. Go to the Microsoft admin center, **Paramètres**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+1. Go to the Microsoft admin center, **Paramètres** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
 
-2. Sous **l’onglet** Vue d’ensemble, **sélectionnez Ajouter onmicrosoft.com domaine.**
+2. Sous **l’onglet** Vue d’ensemble, **sélectionnez Ajouter onmicrosoft.com domaine**.
 
 Vous pouvez définir n’importe quel domaine que vous possédez comme domaine par défaut.
 

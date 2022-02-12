@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a3ed4dd5f38369dd818d31e60e23de053dff4347
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: ba52d9587a2ac530eabeacf8c72336751a1a17d7
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170992"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767567"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes d’extension du noyau dans Microsoft Defender pour point de terminaison sur macOS
 
@@ -31,7 +30,7 @@ ms.locfileid: "61170992"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -45,7 +44,7 @@ Si vous n’avez pas approuvé l’extension du noyau pendant le déploiement/l�
 
    ![Capture d’écran désactivée rtp.](images/mdatp-32-main-app-fix.png)
 
-Vous pouvez également exécuter ```mdatp health``` . Il indique si la protection en temps réel est activée mais non disponible. Cela indique que l’extension du noyau n’est pas approuvée pour s’exécuter sur votre appareil.
+Vous pouvez également exécuter ```mdatp health```. Il indique si la protection en temps réel est activée mais non disponible. Cela indique que l’extension du noyau n’est pas approuvée pour s’exécuter sur votre appareil.
 
 ```bash
 mdatp health
@@ -68,7 +67,7 @@ Consultez les instructions correspondant à l’outil de gestion que vous avez u
 
 ## <a name="manual-deployment"></a>Déploiement manuel
 
-Si moins de 30 minutes se sont écoulées depuis l’installation du produit, accédez à La sécurité des préférences système & Confidentialité , où vous devez autoriser les **logiciels** système des développeurs \> « Microsoft Corporation ». 
+Si moins de 30 minutes se sont écoulées depuis l’installation du produit, accédez à La  sécurité des préférences système **& Confidentialité**, où vous devez autoriser les **logiciels** \> système des développeurs « Microsoft Corporation ».
 
 Si vous ne voyez pas cette invite, cela signifie que 30 minutes ou plus se sont écoulées et que l’extension de noyau n’a toujours pas été approuvée pour s’exécuter sur votre appareil :
 
@@ -88,7 +87,7 @@ Dans ce cas, vous devez effectuer les étapes suivantes pour déclencher à nouv
     Diagnostics for /Library/Extensions/wdavkext.kext:
     ```
 
-2. Ouvrez **La sécurité des préférences** système & \> **confidentialité** dans le menu. (Fermez-le d’abord, s’il est ouvert.)
+2. **Ouvrez La sécurité des préférences** \> **système & confidentialité** dans le menu. (Fermez-le d’abord, s’il est ouvert.)
 
 3. **Autoriser les** logiciels système des développeurs « Microsoft Corporation »
 
@@ -98,7 +97,7 @@ Dans ce cas, vous devez effectuer les étapes suivantes pour déclencher à nouv
     sudo kextutil /Library/Extensions/wdavkext.kext
     ```
 
-    La bannière doit disparaître de l’application Defender et doit maintenant signaler que la protection en temps réel est à la fois ```mdatp health``` activée et disponible :
+    La bannière doit disparaître de l’application Defender et ```mdatp health``` doit maintenant signaler que la protection en temps réel est à la fois activée et disponible :
 
     ```bash
     mdatp health

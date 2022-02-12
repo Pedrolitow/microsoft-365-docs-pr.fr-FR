@@ -1,7 +1,7 @@
 ---
 title: Référence des règles de réduction de la surface d’attaque
 description: Répertorie les détails sur les règles de réduction de la surface d’attaque par règle.
-keywords: 'Règles de réduction de la surface d’attaque, règles de réduction de la surface d’attaque, règles asr, système de prévention des intrusions hôtes, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour point de terminaison, configurer les règles de réduction de la surface d’attaque, description des règles de réduction de la surface d’attaque'
+keywords: Règles de réduction de la surface d’attaque, règles de réduction de la surface d’attaque, règles asr, système de prévention des intrusions hôtes, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour point de terminaison, configurer les règles de réduction de la surface d’attaque, description des règles de réduction de la surface d’attaque
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,19 +10,24 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: 'oogunrinde, sugamar, jcedola'
+ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
+ms.openlocfilehash: ca7f52c0a91540e68c845ca559daecd5736d9b60
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767495"
 ---
-
-
 # <a name="attack-surface-reduction-rules-reference"></a>Référence des règles de réduction de la surface d’attaque
 
 **S’applique à :**
+
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -31,6 +36,7 @@ Cet article fournit des informations sur les règles de réduction des attaques 
 
 - [Versions de système d’exploitation prise en charge](#supported-operating-systems)
 - [Systèmes de gestion de la configuration pris en charge](#supported-configuration-management-systems)
+- [Informations sur les alertes et les notifications par règle](#per-rule-alert-and-notification-details)
 - [Descriptions par règle](#per-rule-descriptions)
   - Descriptions des règles
   - GUID
@@ -66,7 +72,7 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 |[Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v | v |
 |[Bloquer les appels d’API Win32 à partir Office macros](#block-win32-api-calls-from-office-macros) | N | N |
 |[Utiliser la protection avancée contre les ransomware](#use-advanced-protection-against-ransomware) | v | v |
-| **Nom de la règle** | **&nbsp;Windows Server 2016** <sup>[[1](#fn1)]<sup></sup> | **&nbsp;Windows Server 2012 R2** <sup>[[1](#fn1)]<sup></sup> |
+|  |  |  |
 
 (<a id="fn1">1</a>) Fait référence à la solution moderne et unifiée pour Windows Server 2012 et 2016. Pour plus d’informations, [voir Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
 
@@ -78,12 +84,12 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 
 > [!Note]
 >
-> - Sauf indication contraire, la version Windows&nbsp; 10 minimale est la version 1709 (RS3, build 16299) ou ultérieure ; la version minimale de Windows&nbsp; Server est la version 1809 ou ultérieure.
+> Sauf indication contraire, la version Windows&nbsp; 10 minimale est la version 1709 (RS3, build 16299) ou ultérieure ; la version minimale de Windows&nbsp; Server est la version 1809 ou ultérieure.
 >
 
 |Nom de la règle|&nbsp;Windows 10|&nbsp;Windows Server 2019|&nbsp;Windows Server|
 |---|:---:|:---:|:---:|
-|[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | Y version 1803 (canal semi-annuel) ou version ultérieure | 
+|[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | Y version 1803 (canal semi-annuel) ou version ultérieure |
 |[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | Y version 1809 ou ultérieure | v | v  <br><br> |
 |[Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes) | v | v | v <br><br> |
 |[Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité locale (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y version 1803 ou ultérieure | v <br><br> | v <br><br> |
@@ -132,6 +138,53 @@ Les liens vers des informations sur les versions du système de gestion de la co
 - [Microsoft Endpoint Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [System Center Configuration Manager CB 1710 (SCCM)](/configmgr/core/servers/manage/updates) <br>_SCCM est désormais Microsoft Endpoint Configuration Manager._
 
+## <a name="per-rule-alert-and-notification-details"></a>Informations sur l’alerte et la notification par règle
+
+Les notifications toast sont générées pour toutes les règles en mode blocage. Les règles dans n’importe quel autre mode ne génèreront pas de notifications toast
+
+Pour les règles dont l'« état de règle » est spécifié :
+
+- Les règles asr avec \<ASR Rule, Rule State\> combinaisons sont utilisées pour faire surface des alertes (notifications toast) sur Microsoft Defender pour le point de terminaison uniquement pour les appareils au niveau du bloc cloud élevé. Les appareils qui ne sont pas au niveau de blocage élevé du cloud ne génèreront pas d’alertes <règle asr, état de règle> combinaisons
+- PEPT alertes sont générées pour les règles de asr dans les états spécifiés, mais uniquement pour les appareils au niveau de blocage cloud élevé.
+
+| Nom de la règle : | État de la règle : | Génère des alertes dans PEPT ? <br> (Oui)&nbsp;\|&nbsp;Non) | Génère des notifications toast ? <br> (Oui)&nbsp;\|&nbsp;Non) |
+|---|:---:|:---:|:---:|
+|   |   |  _Uniquement pour les appareils au niveau du bloc cloud élevé_ | _En mode Blocage uniquement_ |
+|[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) |   | N  | v |
+|[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | Bloquer  | v <br> Nécessite un appareil au niveau du bloc cloud élevé  | v <br> Nécessite un appareil au niveau du bloc cloud élevé |
+|[Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes) |   | N | v |
+|[Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité locale (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) |   | N | v |
+|[Bloquer le contenu exécutable du client de messagerie et de la messagerie web](#block-executable-content-from-email-client-and-webmail) |   | v <br> Nécessite un appareil au niveau du bloc cloud élevé | v <br> Nécessite un appareil au niveau du bloc cloud élevé |
+|[Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste de confiance](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) |   | N | v |
+|[Bloquer l’exécution de scripts potentiellement obscurcis](#block-execution-of-potentially-obfuscated-scripts) |  AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé  | N \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé |
+|[Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Bloquer | v <br> Nécessite un appareil au niveau du bloc cloud élevé  | v <br> Nécessite un appareil au niveau du bloc cloud élevé |
+|[Empêcher Office applications de créer du contenu exécutable](#block-office-applications-from-creating-executable-content) |   | N | v |
+|[Empêcher Office applications d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes)  |   | N | v |
+|[Empêcher Office application de communication de créer des processus enfants](#block-office-communication-application-from-creating-child-processes) |  |  N | v |
+|[Bloquer la persistance via un abonnement à des événements WMI](#block-persistence-through-wmi-event-subscription) |  AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé  | N \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé |
+|[Bloquer les créations de processus provenant de commandes PSExec et WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) |   | N | v |
+|[Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé  | N \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé |
+|[Bloquer les appels d’API Win32 à partir Office macros](#block-win32-api-calls-from-office-macros) |   | N | v |
+|[Utiliser la protection avancée contre les ransomware](#use-advanced-protection-against-ransomware) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé  | N \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé |
+|   |   |   |   |
+  
+## <a name="asr-rule-modes"></a>Modes de règle ASR
+
+- **Non configurée ou** **désactivée** : il s’agit de l’état dans lequel la règle asr n’a pas été activée ou désactivée. Code de cet état = 0.
+- **Bloc** : il s’agit de l’état dans lequel la règle asr est activée. Le code de cet état est 1.
+- **Audit** : il s’agit de l’état dans lequel la règle de astéreur est évaluée pour son comportement d’impact sur l’organisation ou l’environnement dans lequel elle est déployée. Le code de cet état est 2.
+- **Avertir** Il s’agit de l’état dans lequel la règle asr est activée et présente une notification à l’utilisateur final, mais permet à l’utilisateur final de contourner le blocage. Le code de cet état est 6.
+
+_Le mode Avertissement_ est un type de blocage qui avertit les utilisateurs des actions potentiellement risquées. Les utilisateurs peuvent ensuite choisir d’ignorer le message d’avertissement de blocage et d’autoriser l’action sous-jacente. Les utilisateurs peuvent sélectionner **OK** pour appliquer le bloc, ou sélectionner l’option de contournement **- Débloquer** - via la notification toast de l’utilisateur final générée au moment du blocage. Une fois l’avertissement débloqué, l’opération est autorisée jusqu’au prochain message d’avertissement, auquel cas l’utilisateur final devra reformer l’action.
+
+Si vous cliquez sur le bouton autoriser, le bloc sera supprimé pendant 24 heures. Au bout de 24 heures, l’utilisateur final doit autoriser à nouveau le blocage. Le mode d’avertissement pour les règles de récupération automatique est uniquement pris en charge pour les appareils RS5+ (1809+). Si le contournement est affecté à des règles de récupération automatique sur des appareils avec des versions antérieures, la règle sera en mode bloqué.
+
+Vous pouvez également définir une règle en mode d’avertissement via PowerShell en spécifiant simplement l’AttackSurfaceReductionRules_Actions comme « Avertir ». Par exemple :
+
+```powershell
+-command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
+```
+
 ## <a name="per-rule-descriptions"></a>Descriptions par règle
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Bloquer l’utilisation abusive des pilotes signés vulnérables exploités
@@ -147,6 +200,9 @@ La **règle bloquer l’utilisation abusive des pilotes signés vulnérables exp
 > Vous pouvez également configurer cette règle à l’aide [de PowerShell](enable-attack-surface-reduction.md#powershell).
 >
 > Pour examiner un pilote, utilisez ce site Web pour soumettre [un pilote pour analyse](https://www.microsoft.com/en-us/wdsi/driversubmission).
+
+<!--The above link is the 'only link' that exists for having drivers examined. The 'en-us' component is required to make the link work. Any alterations to this link will result in a 404.
+-->
 
 Nom Intune : `Block abuse of exploited vulnerable signed drivers` (pas encore disponible)
 

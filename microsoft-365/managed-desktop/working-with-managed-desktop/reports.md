@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: edf1025008fe13161e32a1a824413fd5eda0f5ff
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: f37a02c8cda29f48f926125f353d5e75410d9ab5
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322372"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765491"
 ---
 # <a name="work-with-reports"></a>Utiliser les rapports
 
@@ -36,6 +36,7 @@ Lorsque vous sélectionnez l’onglet **Rapports** , vous voyez les descriptions
 | **Tendance de l’état de** l’appareil (*en prévisualisation*) | Cela permet de surveiller les tendances de l’état des appareils au cours des 60 derniers jours pour Microsoft Manged Desktop appareils. Les tendances peuvent vous aider à associer l’état de l’appareil à d’autres modifications au fil du temps, par exemple de nouveaux déploiements. |
 | [**Windows des mises à jour de sécurité**](security-updates-report.md) (*en prévisualisation*) | Ce rapport montre comment Windows mises à jour de sécurité sont publiées sur Microsoft Manged Desktop appareils. |
 | [**Rapport d’utilisation des** applications](app-usage-report.md) | Ce rapport fournit des informations sur l’utilisation classique des applications sur Microsoft Manged Desktop appareils. Pour que les appareils fournissent des données à ce rapport, ils doivent être définies sur le niveau de données de diagnostic facultatif. |
+| **Rapport de mesures de service** (*en prévisualisation*) | Ce rapport fournit des résumés simples des mesures clés pour Microsoft Manged Desktop mois. |
 
 ## <a name="endpoint-analytics"></a>Analyse des points de terminaison
 
@@ -48,7 +49,9 @@ Si l’analyse des points de terminaison n’a pas été configurée automatique
 
 ## <a name="intune-reports"></a>Rapports Intune
 
-Microsoft Intune est l’un des services que nous utilisons pour gérer les appareils en votre nom. Dans certains cas, il peut être utile d’utiliser les rapports Intune pour surveiller spécifiquement l’administration de Microsoft Manged Desktop appareils mobiles. Vous pouvez exclure les appareils que nous gérons du rapport que vous utilisez pour gérer d’autres appareils. Les rapports suivants vous permet de filtrer la fonctionnalité pour inclure ou exclure Microsoft Manged Desktop appareils.
+Microsoft Intune est l’un des services que nous utilisons pour gérer les appareils en votre nom.
+
+Dans certains cas, il peut être utile d’utiliser les rapports Intune pour surveiller spécifiquement l’administration de Microsoft Manged Desktop appareils mobiles. Vous pouvez exclure les appareils que nous gérons du rapport que vous utilisez pour gérer d’autres appareils. Les rapports suivants vous permet de filtrer la fonctionnalité pour inclure ou exclure Microsoft Manged Desktop appareils.
 
 - [Tous les appareils](/mem/intune/remote-actions/device-management#get-to-your-devices)
 - [Conformité des appareils](/mem/intune/fundamentals/reports#device-compliance-report-organizational)

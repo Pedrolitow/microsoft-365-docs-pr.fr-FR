@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dcc4faa8289ad1a51345407442d866ddb0f8000b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a069e3dd3ef99f094f96318277e077c56b7cb974
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167216"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766667"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>Configurer et valider des exclusions pour Microsoft Defender pour le point de terminaison sur macOS
 
@@ -29,9 +28,9 @@ ms.locfileid: "61167216"
 
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -54,7 +53,7 @@ Le tableau suivant indique les types d’exclusion pris en charge par Defender p
 Exclusion|Définition|Exemples
 ---|---|---
 Extension de fichier|Tous les fichiers avec l’extension, n’importe où sur l’ordinateur|`.test`
-Fichier|Un fichier spécifique identifié par le chemin d’accès complet|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`
+File|Un fichier spécifique identifié par le chemin d’accès complet|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`
 Folder|Tous les fichiers sous le dossier spécifié (de manière récursive)|`/var/log/` <p> `/var/*/`
 Processus|Un processus spécifique (spécifié par le chemin d’accès complet ou le nom de fichier) et tous les fichiers ouverts par celui-ci|`/bin/cat` <p> `cat` <p> `c?t`
 
@@ -72,11 +71,11 @@ Caractère générique|Description|Exemple|Correspondances|Ne correspond pas
 
 ### <a name="from-the-management-console"></a>À partir de la console de gestion
 
-Pour plus d’informations sur la configuration des exclusions à partir de JAMF, Intune ou une autre console de gestion, voir Définir les préférences de [Defender pour Endpoint sur Mac.](mac-preferences.md)
+Pour plus d’informations sur la configuration des exclusions à partir de JAMF, Intune ou une autre console de gestion, voir Définir les préférences pour [Defender pour Endpoint sur Mac](mac-preferences.md).
 
 ### <a name="from-the-user-interface"></a>À partir de l’interface utilisateur
 
-Ouvrez l’application Defender for Endpoint et accédez à Gérer les **paramètres** Ajouter ou supprimer une exclusion... , comme illustré \> dans la capture d’écran suivante :
+Ouvrez l’application Defender for Endpoint et accédez à **Gérer les paramètres** \> Ajouter ou supprimer une **exclusion...**, comme illustré dans la capture d’écran suivante :
 
 ![Capture d’écran Gérer les exclusions.](images/mdatp-37-exclusions.png)
 
@@ -84,15 +83,15 @@ Sélectionnez le type d’exclusion que vous souhaitez ajouter et suivez les inv
 
 ## <a name="validate-exclusions-lists-with-the-eicar-test-file"></a>Valider les listes d’exclusions avec le fichier de test EICAR
 
-Vous pouvez vérifier que vos listes d’exclusions fonctionnent à l’aide `curl` du téléchargement d’un fichier de test.
+Vous pouvez vérifier que vos listes d’exclusions fonctionnent à l’aide du `curl` téléchargement d’un fichier de test.
 
-Dans l’extrait de code Bash suivant, remplacez-le par un fichier conforme `test.txt` à vos règles d’exclusion. Par exemple, si vous avez exclu `.testing` l’extension, `test.txt` remplacez par `test.testing` . Si vous testez un chemin d’accès, veillez à exécuter la commande dans ce chemin d’accès.
+Dans l’extrait de code Bash suivant, remplacez-le `test.txt` par un fichier conforme à vos règles d’exclusion. Par exemple, si vous avez exclu l’extension `.testing` , remplacez par `test.txt` `test.testing`. Si vous testez un chemin d’accès, veillez à exécuter la commande dans ce chemin d’accès.
 
 ```bash
 curl -o test.txt https://www.eicar.org/download/eicar.com.txt
 ```
 
-Si Defender pour point de terminaison sur Mac signale un programme malveillant, la règle ne fonctionne pas. Si aucun programme malveillant n’est détecté et que le fichier téléchargé existe, l’exclusion fonctionne. Vous pouvez ouvrir le fichier pour confirmer que le contenu est identique à ce qui est décrit sur le site web du fichier [de test EICAR.](http://2016.eicar.org/86-0-Intended-use.html)
+Si Defender pour point de terminaison sur Mac signale un programme malveillant, la règle ne fonctionne pas. Si aucun programme malveillant n’est détecté et que le fichier téléchargé existe, l’exclusion fonctionne. Vous pouvez ouvrir le fichier pour vérifier que le contenu est identique à ce qui est décrit sur le site web du fichier [de test EICAR](http://2016.eicar.org/86-0-Intended-use.html).
 
 Si vous n’avez pas accès à Internet, vous pouvez créer votre propre fichier de test EICAR. Écrivez la chaîne EICAR dans un nouveau fichier texte avec la commande Bash suivante :
 
@@ -118,7 +117,7 @@ Le nom de la menace associé à une détection sur votre appareil peut être obt
 mdatp threat list
 ```
 
-Par exemple, pour ajouter (le nom de menace associé à la détection EICAR) à la liste `EICAR-Test-File (not a virus)` autorisée, exécutez la commande suivante :
+Par exemple, pour ajouter (le `EICAR-Test-File (not a virus)` nom de menace associé à la détection EICAR) à la liste autorisée, exécutez la commande suivante :
 
 ```bash
 mdatp threat allowed add --name "EICAR-Test-File (not a virus)"

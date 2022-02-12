@@ -1,7 +1,7 @@
 ---
 title: Exemples de stratégies de contrôle d’appareil pour Intune
 description: Découvrez comment utiliser des stratégies de contrôle d’appareil à l’aide d’exemples qui peuvent être utilisés avec Intune.
-keywords: 'microsoft, defender, Microsoft Defender pour point de terminaison, mac, appareil, contrôle, usb, amovible, média, intune'
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, appareil, contrôle, usb, amovible, média, intune
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -12,12 +12,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
+ms.openlocfilehash: e9edec2b4e0b08cf6506f6234fbfb1f2c3c03914
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767099"
 ---
-
 # <a name="examples-of-device-control-policies-for-intune"></a>Exemples de stratégies de contrôle d’appareil pour Intune
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]

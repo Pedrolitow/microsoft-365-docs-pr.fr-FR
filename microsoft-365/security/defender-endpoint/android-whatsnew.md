@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 84009fbe386d19828cfa1393fb08bf8bef4c3444
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 1e235329fa57a703ab678049dd0da2d4f135de99
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464777"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767354"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Nouveautés de Microsoft Defender pour Point de terminaison sur Android
 
@@ -45,7 +44,7 @@ Le 25 janvier 2022, nous avons annoncé la disponibilité générale de la gesti
 
 Release Build: 1.0.3501.0301 Release month: Nov 2021 Microsoft Defender for Endpoint has released this update required by [Google](https://developer.android.com/distribute/play-policies#APILevel30) to upgrade to Android API 30. Cette modification invite les utilisateurs à accéder à de nouvelles [autorisations de stockage](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play) pour les appareils exécutant Android 11 ou version ultérieure. Les utilisateurs doivent accepter cette nouvelle autorisation de stockage une fois qu’ils ont mis à jour l’application Defender avec la version 1.0.3501.0301 ou ultérieure. Cela garantit que la fonctionnalité de sécurité de l’application defender pour point de terminaison fonctionne sans interruption. Pour plus d’informations,  examinez les sections suivantes.
 
-**Quel sera l’impact sur votre organisation :** Ces modifications auront une incidence si vous utilisez Microsoft Defender pour Endpoint sur les appareils exécutant Android 11 ou version ultérieure et que Vous avez mis à jour Defender pour Endpoint pour publier la build 1.0.3501.0301 ou ultérieure.
+**Quel sera l’impact sur votre organisation :** Ces modifications  prennent effet si vous utilisez Microsoft Defender pour Endpoint sur les appareils exécutant Android 11 ou version ultérieure et que Vous avez mis à jour Defender pour Endpoint pour publier la build 1.0.3501.0301 ou ultérieure.
 
 > [!NOTE]
 > Les nouvelles autorisations de stockage ne peuvent pas être configurées par l’administrateur pour « Approuver automatiquement » via Microsoft Endpoint Manager. L’utilisateur doit prendre des mesures pour fournir l’accès à cette autorisation.

@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 704510b6b31e47b1a68ab90ffbf5e6e7353d0969
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: b990c73f9cdb81d164bd57d1aff5b7ec61df714f
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217937"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767111"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Examiner un fichier associé à une alerte Microsoft Defender pour le point de terminaison
 
@@ -38,9 +38,9 @@ ms.locfileid: "61217937"
 
 Examinez les détails d’un fichier associé à une alerte, un comportement ou un événement spécifique pour déterminer si le fichier présente des activités malveillantes, identifier la motivation de l’attaque et comprendre l’étendue potentielle de la violation.
 
-Il existe plusieurs façons d’accéder à la page de profil détaillée d’un fichier spécifique. Par exemple, vous pouvez utiliser la fonctionnalité de recherche, cliquer sur un lien à partir de l’arborescence du processus d’alerte, du graphique **d’incident,** de la chronologie de l’artefact **ou** sélectionner un événement répertorié dans la chronologie de **l’appareil.**
+Il existe plusieurs façons d’accéder à la page de profil détaillée d’un fichier spécifique. Par exemple, vous pouvez utiliser la fonctionnalité de recherche, cliquer sur un lien à partir de l’arborescence du processus d’alerte **, du** graphique **d’incident****, de** la chronologie de l’artefact ou sélectionner un événement répertorié dans la chronologie de **l’appareil**.
 
-Une fois sur la page de profil détaillée, vous pouvez basculer entre la nouvelle et l’ancienne mise en page en basant **la nouvelle page de fichier.** Le reste de cet article décrit la mise en page la plus nouvelle.
+Une fois sur la page de profil détaillée, vous pouvez basculer entre la nouvelle et l’ancienne mise en page en basant **la nouvelle page fichier**. Le reste de cet article décrit la mise en page la plus nouvelle.
 
 Vous pouvez obtenir des informations à partir des sections suivantes dans l’affichage de fichier :
 
@@ -63,7 +63,7 @@ En haut de la page de profil, au-dessus des cartes d’informations de fichier. 
 - Consulter un spécialiste des menaces
 - Centre de notifications
 
-Pour plus d’informations sur ces actions, voir [Action de réponse sur un fichier.](respond-file-alerts.md)
+Pour plus d’informations sur ces actions, voir [Action de réponse sur un fichier](respond-file-alerts.md).
 
 ## <a name="file-details-malware-detection-and-file-prevalence"></a>Détails du fichier, détection des programmes malveillants et prévalence du fichier
 
@@ -74,19 +74,19 @@ Vous verrez des détails tels que le MD5 du fichier, le taux de détection du no
 La carte de prévalence du fichier indique où le fichier a été vu sur les appareils de l’organisation et du monde entier.
 
 > [!NOTE]
-> Différents utilisateurs peuvent voir des valeurs différentes dans les appareils de la *section* Organisation de la carte de prévalence du fichier. En effet, la carte affiche des informations en fonction de l’étendue RBAC dont dispose un utilisateur. Cela signifie que si un utilisateur a obtenu une visibilité sur un ensemble spécifique d’appareils, il verra uniquement le fichier de prévalence organisationnelle sur ces appareils.
+> Différents utilisateurs peuvent voir des valeurs différentes dans les appareils de *la section Organisation* de la carte de prévalence du fichier. En effet, la carte affiche des informations en fonction de l’étendue RBAC dont dispose un utilisateur. Cela signifie que si un utilisateur a obtenu une visibilité sur un ensemble spécifique d’appareils, il verra uniquement le fichier de prévalence organisationnelle sur ces appareils.
 
 ![Image des informations de fichier.](images/atp-file-information.png)
 
 ## <a name="alerts"></a>Alertes
 
-**L’onglet Alertes** fournit une liste des alertes associées au fichier. Cette liste couvre la plupart des informations de la file d’attente des alertes, à l’exception du groupe d’appareils, s’il y en a, à qui appartient l’appareil concerné. Vous pouvez choisir le type d’informations affiché en sélectionnant Personnaliser les colonnes dans la barre d’outils au-dessus des en-têtes de colonne. 
+**L’onglet Alertes** fournit une liste des alertes associées au fichier. Cette liste couvre la plupart des informations de la file d’attente des alertes, à l’exception du groupe d’appareils, s’il y en a, à qui appartient l’appareil concerné. Vous pouvez choisir le type d’informations affiché en sélectionnant  Personnaliser les colonnes dans la barre d’outils au-dessus des en-têtes de colonne.
 
 ![Image des alertes associées à la section du fichier.](images/atp-alerts-related-to-file.png)
 
 ## <a name="observed-in-organization"></a>Observé dans l’organisation
 
-L’onglet Observé **dans l’organisation** vous permet de spécifier une plage de dates pour voir quels appareils ont été observés avec le fichier.
+**L’onglet Observé dans l’organisation** vous permet de spécifier une plage de dates pour voir quels appareils ont été observés avec le fichier.
 
 > [!NOTE]
 > Cet onglet affiche un nombre maximal de 100 appareils. Pour voir tous _les_ appareils avec le fichier, exportez l’onglet dans un fichier CSV en sélectionnant **Exporter** à partir du menu Actions au-dessus des en-têtes de colonne de l’onglet.
@@ -97,7 +97,7 @@ Utilisez le curseur ou le sélecteur de plage pour spécifier rapidement une pé
 
 ## <a name="deep-analysis"></a>Analyse profonde
 
-**L’onglet** Analyse approfondie vous permet d’envoyer le fichier pour analyse [approfondie,](respond-file-alerts.md#deep-analysis)de découvrir plus de détails sur le comportement du fichier, ainsi que l’effet qu’il a au sein de vos organisations. Une fois le fichier soumis, le rapport d’analyse approfondie s’affiche dans cet onglet une fois que les résultats sont disponibles. Si l’analyse approfondie n’a trouvé rien, le rapport est vide et l’espace de résultats reste vide.
+**L’onglet** Analyse approfondie vous permet de soumettre le fichier pour analyse [approfondie, afin](respond-file-alerts.md#deep-analysis) de découvrir plus de détails sur le comportement du fichier, ainsi que l’effet qu’il a au sein de vos organisations. Une fois le fichier soumis, le rapport d’analyse approfondie s’affiche dans cet onglet une fois que les résultats sont disponibles. Si l’analyse approfondie n’a trouvé rien, le rapport est vide et l’espace de résultats reste vide.
 
 ![Image de l’onglet Analyse approfondie.](images/submit-file.png)
 
@@ -107,7 +107,7 @@ Utilisez le curseur ou le sélecteur de plage pour spécifier rapidement une pé
 
 ![Image de l’onglet Noms de fichiers.](images/atp-file-names.png)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Afficher et organiser la file d’attente de Microsoft Defender pour les points de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)

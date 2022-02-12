@@ -21,21 +21,25 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - m365solution-removeemployee
+- business_assist
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Suivez les étapes de cette solution pour supprimer un ancien employé de Microsoft 365 et sécuriser les données de votre organisation.
-ms.openlocfilehash: 15ef426892bcabe0af71c52f1664255cb82b6637
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 17d66e3ff39e00861acdf90e2d5f155cb9225f2c
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370247"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765887"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Vue d’ensemble : supprimer un ancien employé et sécuriser les données
 
 Nous avons souvent la question suivante : « Que dois-je faire pour sécuriser les données et protéger l’accès lorsqu’un employé quitte mon organisation ? » Cette série d’articles explique comment bloquer l’accès à Microsoft 365 afin que ces utilisateurs ne se connectent pas aux Microsoft 365, les étapes à suivre pour sécuriser les données de l’organisation et permettre aux autres employés d’accéder aux données de messagerie et de OneDrive.
+
+> [!TIP]
+> Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de collaborer avec [un spécialiste microsoft des petites entreprises](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Business Assist, vous et vos employés accédez 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -57,14 +61,14 @@ Pour effectuer les étapes de cette série, vous devez utiliser Microsoft 365 fo
 
 Lorsqu’un employé quitte l’entreprise, vous devez le supprimer de Microsoft 365 entreprise. Avant cela, vous devez les empêcher d’accéder aux fichiers de l’entreprise, conserver les documents qu’ils ont créés et effectuer plusieurs autres tâches d’administration associées à la suppression d’un utilisateur.
 
-1. Dans le Centre d’administration, **sélectionnez Utilisateurs** et sélectionnez **Utilisateurs actifs.**
-1. Sélectionnez l’utilisateur à supprimer, puis sélectionnez **Supprimer l’utilisateur.**
+1. Dans le Centre d’administration, sélectionnez **Utilisateurs**, puis **utilisateurs actifs**.
+1. Sélectionnez l’utilisateur à supprimer, puis sélectionnez **Supprimer l’utilisateur**.
 1. Cochez la case pour supprimer leur licence, puis cochez la case pour supprimer leurs alias de messagerie.
-1. Cochez la case pour accorder à un autre utilisateur l’accès au courrier électronique de l’ancien employé, puis sélectionnez Sélectionner un utilisateur **et définir les options de messagerie.**
+1. Cochez la case pour accorder à un autre utilisateur l’accès au courrier électronique de l’ancien employé, puis sélectionnez Sélectionner un utilisateur **et définir les options de messagerie**.
 1. Pour supprimer les alias de messagerie associés, **sélectionnez X** en côté de leurs alias.
-1. Examinez les informations de boîte aux lettres partagées, puis sélectionnez **Terminer.**
-1. Confirmez que vos options sont définies correctement, puis choisissez **Affecter et convertir.**
-1. Examinez vos résultats, puis sélectionnez **Fermer.**
+1. Examinez les informations de boîte aux lettres partagées, puis sélectionnez **Terminer**.
+1. Confirmez que vos options sont correctement définies, puis choisissez **Affecter et convertir**.
+1. Examinez vos résultats, puis sélectionnez **Fermer**.
 
 Après avoir supprimé un utilisateur, vous avez jusqu’à 30 jours pour restaurer son compte.
 

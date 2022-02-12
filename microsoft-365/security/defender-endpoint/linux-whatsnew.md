@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 4091a5945bbd754fb78bb957c46bd2ea5636e64d
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: 090c43ea1d2d9f2d158f94d1e509490c3faf4799
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265486"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767087"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Nouveautés de Microsoft Defender pour Endpoint sur Linux
 
@@ -44,7 +43,7 @@ ms.locfileid: "62265486"
 
 ## <a name="1014776-30121092147760"></a>101.47.76 (30.121092.14776.0)
 
-- Ajout d’un nouveau commutateur à l’outil en ligne de commande pour contrôler si les archives sont analysées pendant les analyses à la demande. Cela peut être configuré via `mdatp config scan-archives --value [enabled/disabled]` . Par défaut, cette valeur est définie sur `enabled` .
+- Ajout d’un nouveau commutateur à l’outil en ligne de commande pour contrôler si les archives sont analysées pendant les analyses à la demande. Cela peut être configuré via `mdatp config scan-archives --value [enabled/disabled]`. Par défaut, cette valeur est définie sur `enabled`.
 - Correctifs de bogue
 
 ## <a name="1014513-30121082145130"></a>101.45.13 (30.121082.14513.0)
@@ -59,8 +58,8 @@ ms.locfileid: "62265486"
 ## <a name="1014500-30121072145000"></a>101.45.00 (30.121072.14500.0)
 
 - Ajout de nouveaux commutateurs à l’outil en ligne de commande :
-  - Contrôler le degré de parallélisme pour les analyses à la demande. Cela peut être configuré via `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]` . Par défaut, un degré de parallélisme `2` est utilisé.
-  - Contrôler si les analyses après l’actualisation des informations de sécurité sont activées ou désactivées. Cela peut être configuré via `mdatp config scan-after-definition-update --value [enabled/disabled]` . Par défaut, cette valeur est définie sur `enabled` .
+  - Contrôler le degré de parallélisme pour les analyses à la demande. Cela peut être configuré via `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`. Par défaut, un degré de parallélisme est `2` utilisé.
+  - Contrôler si les analyses après l’actualisation des informations de sécurité sont activées ou désactivées. Cela peut être configuré via `mdatp config scan-after-definition-update --value [enabled/disabled]`. Par défaut, cette valeur est définie sur `enabled`.
 - La modification du niveau du journal des produits nécessite désormais une élévation
 - Correctifs de bogue
 
@@ -99,8 +98,8 @@ ms.locfileid: "62265486"
 ## <a name="1011853"></a>101.18.53
 
 - PEPT linux est désormais [généralement disponible](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
-- Ajout d’un nouveau commutateur de ligne de commande ( ) pour ignorer les exclusions av lors `--ignore-exclusions` des analyses personnalisées ( `mdatp scan custom` )
-- Étendu avec un nouveau paramètre ( ) qui permet d’enregistrer les journaux de diagnostic dans `mdatp diagnostic create` `--path [directory]` un autre répertoire
+- Ajout d’un nouveau commutateur de ligne de commande (`--ignore-exclusions`) pour ignorer les exclusions av pendant les analyses personnalisées (`mdatp scan custom`)
+- Étendu avec `mdatp diagnostic create` un nouveau paramètre (`--path [directory]`) qui permet d’enregistrer les journaux de diagnostic dans un autre répertoire
 - Améliorations des performances & résolutions de bogues
 
 ## <a name="1011299"></a>101.12.99
@@ -122,8 +121,8 @@ ms.locfileid: "62265486"
 
 ## <a name="1010075"></a>101.00.75
 
-- Ajout de la prise en charge des types de système de fichiers suivants `ecryptfs` : , , , , , , , `fuse` `fuseblk` `jfs` `nfs` `overlay` `ramfs` `reiserfs` `udf` et `vfat`
-- Nouvelle syntaxe pour [l’outil en ligne de commande.](linux-resources.md#configure-from-the-command-line)
+- Ajout de la prise en charge des types de système de fichiers suivants `ecryptfs`: , `fuse`, , `fuseblk`, `jfs`, `overlay``nfs`, `ramfs`, `reiserfs`et `udf``vfat`
+- Nouvelle syntaxe de [l’outil en ligne de commande](linux-resources.md#configure-from-the-command-line).
 - Améliorations des performances & résolutions de bogues
 
 ## <a name="1009070"></a>100.90.70
@@ -132,6 +131,6 @@ ms.locfileid: "62265486"
 > Lors de la mise à niveau du package installé à partir d’une version antérieure à la version 100.90.70, la mise à jour peut échouer sur les distributions Basées sur Red Hat et SLES. Cela est dû à un changement majeur dans le chemin d’accès d’un fichier. Une solution temporaire consiste à supprimer l’ancien package, puis à installer le nouveau. Ce problème n’existe pas dans les versions plus récentes.
 
 - Les [exclusions antivirus désormais prise en charge les caractères génériques](linux-exclusions.md#supported-exclusion-types)
-- Ajout de la possibilité de résoudre [les problèmes](linux-support-perf.md) de performances via l’outil en ligne `mdatp` de commande
+- Ajout de la possibilité de résoudre [les problèmes de performances](linux-support-perf.md) via l’outil `mdatp` en ligne de commande
 - Améliorations pour rendre l’installation du package plus robuste
 - Améliorations des performances & résolutions de bogues

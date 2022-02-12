@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b7a12d2eb88998496c4998396a5d7bf5084656e8
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: b0a328ffeee6ee5796cb92f00b8491b257e88a65
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520967"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765731"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes de licence pour Microsoft Defender pour le point de terminaison sur macOS
 
@@ -30,14 +29,14 @@ ms.locfileid: "61520967"
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison sur macOS](microsoft-defender-endpoint-mac.md) 
- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- [Microsoft Defender pour point de terminaison sur macOS](microsoft-defender-endpoint-mac.md)
+ [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
  [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Pendant que vous êtes en cours d’utilisation de Microsoft Defender pour point de terminaison sur [macOS](microsoft-defender-endpoint-mac.md) et les tests de déploiement manuel ou d’une preuve de concept, vous pouvez obtenir l’erreur suivante : [](mac-install-manually.md)
+Pendant que vous êtes en cours d’utilisation de [Microsoft Defender pour point](microsoft-defender-endpoint-mac.md) de terminaison sur macOS et les tests de déploiement manuel ou d’une preuve de concept, vous pouvez obtenir l’erreur suivante :[](mac-install-manually.md)
 
 ![Image de l’erreur de licence.](images/no-license-found.png)
 

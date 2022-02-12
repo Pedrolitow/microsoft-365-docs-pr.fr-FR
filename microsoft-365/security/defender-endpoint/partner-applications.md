@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 430b087fc682eced9c20ef013b77ccc1d690187a
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: e7470115d053cd892b87399b53ba0b471c3cda8e
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213974"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765699"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Applications partenaires dans Microsoft Defender pour point de terminaison
 
@@ -89,6 +89,7 @@ Logo|Nom du partenaire|Description
 :---|:---|:---
 ![Image du logo aruba ClearPass Policy Manager.](images/aruba-logo.png)|[Aruba ClearPass Policy Manager](https://go.microsoft.com/fwlink/?linkid=2127544)|S’assurer que Defender pour le point de terminaison est installé et mis à jour sur chaque point de terminaison avant d’autoriser l’accès au réseau
 ![Image du logo Hexagone bleu pour le réseau.](images/bluehexagon-logo.png)|[Hexagone bleu pour le réseau](https://go.microsoft.com/fwlink/?linkid=2104613)|Blue Hexagon a créé la première plateforme d’apprentissage profond en temps réel du secteur pour la protection contre les menaces réseau
+![Image du logo Corelight.](images/logo-corelight.png)| [Corelight]( https://corelight.com/integrations/iot-security)| À l’aide de données envoyées à partir d’appliances réseau Corelight, Microsoft 365 Defender gagne en visibilité sur les activités réseau des appareils non utilisés, y compris la communication avec d’autres périphériques non utilisés ou des réseaux externes.
 ![Image du logo CyberMDX.](images/cybermdx-logo.png)|[CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620)|Cyber MDX intègre la visibilité complète des biens de santé, la prévention des menaces et le repose dans votre environnement Defender for Endpoint
 ![Image du logo GLOS Protect.](images/hyas-logo.png)|[Protection GLOS](https://go.microsoft.com/fwlink/?linkid=2156763)|La protection FENS utilise la connaissance faisant autorité de l’infrastructure des attaquants pour protéger de manière proactive Microsoft Defender pour les points de terminaison des points de terminaison contre les cyberattaques
 ![Image du logo de réponse et de détection réseau (NDR) Vectra.](images/vectra-logo.png)|[Détection et réponse du réseau Vectra (NDR)](https://go.microsoft.com/fwlink/?linkid=866934)|Vectra applique une recherche de sécurité & ia à la détection et à la réponse aux cyberattaques en temps réel

@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5621ce43443a3e620ef0166c4b362e9dc04becae
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 629db5fc343d100913d631f59a680fc9160713ed
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156327"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765995"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Planifier des analyses avec Microsoft Defender pour endpoint sur macOS
 
@@ -40,7 +39,7 @@ Bien que vous pouvez démarrer une analyse des menaces à tout moment avec Micro
 
 Vous pouvez créer une planification d’analyse à l’aide du *daemon* lancé sur un appareil macOS.
 
-Pour plus d’informations sur le format [](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) de fichier *.plist* utilisé ici, voir à propos des fichiers de liste de propriétés d’informations sur le site web officiel du développeur Apple.
+Pour plus d’informations sur le format *de fichier .plist* utilisé [](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) ici, voir à propos des fichiers de liste de propriétés d’informations sur le site web officiel du développeur Apple.
 
 ### <a name="schedule-a-quick-scan"></a>Planifier une analyse rapide
 
@@ -81,7 +80,7 @@ Le code suivant montre le schéma que vous devez utiliser pour planifier une ana
     </plist>
      ```
 
-2. Enregistrez le fichier *sous com.microsoft.wdav.schedquickscan.plist*.
+2. Enregistrez le fichier *sous le nom com.microsoft.wdav.schedquickscan.plist*.
 
 ### <a name="schedule-a-full-scan"></a>Planifier une analyse complète
 
@@ -124,7 +123,7 @@ Le code suivant montre le schéma que vous devez utiliser pour planifier une ana
  
 ### <a name="load-your-file"></a>Charger votre fichier
 
-1. Ouvrez **Terminal**.
+1. **Ouvrez Terminal**.
 2. Entrez les commandes suivantes pour charger votre fichier :
 
     ```bash
@@ -134,10 +133,10 @@ Le code suivant montre le schéma que vous devez utiliser pour planifier une ana
 
 3. Votre analyse programmée s’exécutera à la date, à l’heure et à la fréquence que vous avez définies dans votre liste P. Dans les exemples précédents, l’analyse s’exécute à 2 h 50 tous les vendredis. 
 
-    - La `Weekday` valeur de utilise un nombre nombre `StartCalendarInterval` integer pour indiquer le cinquième jour de la semaine ou le vendredi. La plage est entre 0 et 7, 7 représentant Dimanche.
-    - La `Day` valeur de utilise un nombre nombre `StartCalendarInterval` integer pour indiquer le troisième jour du mois. La plage est entre 1 et 31.
-    - La `Hour` valeur de utilise un nombre nombre `StartCalendarInterval` integer pour indiquer la deuxième heure de la journée. La plage est entre 0 et 24.
-    La `Minute` valeur de utilise un nombre total pour indiquer `StartCalendarInterval` 50 minutes de l’heure. La plage est entre 0 et 59.
+    - La `Weekday` valeur de utilise `StartCalendarInterval` un nombre nombre integer pour indiquer le cinquième jour de la semaine ou le vendredi. La plage est entre 0 et 7, 7 représentant Dimanche.
+    - La `Day` valeur de `StartCalendarInterval` utilise un nombre nombre integer pour indiquer le troisième jour du mois. La plage est entre 1 et 31.
+    - La `Hour` valeur de utilise `StartCalendarInterval` un nombre nombre integer pour indiquer la deuxième heure de la journée. La plage est entre 0 et 24.
+    La `Minute` valeur de utilise `StartCalendarInterval` un nombre total pour indiquer 50 minutes de l’heure. La plage est entre 0 et 59.
     
     
  > [!IMPORTANT]
@@ -149,4 +148,4 @@ Le code suivant montre le schéma que vous devez utiliser pour planifier une ana
 
 Vous pouvez également planifier des analyses avec Microsoft Intune. Le [script runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) shell disponible dans [scripts pour Microsoft Defender pour le](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) point de terminaison est persistant lorsque l’appareil reprend du mode veille. 
 
-Voir Utiliser des scripts shell sur les appareils macOS dans [Intune](/mem/intune/apps/macos-shell-scripts) pour obtenir des instructions plus détaillées sur l’utilisation de ce script dans votre entreprise.
+Voir [Utiliser des scripts shell sur les appareils macOS dans Intune](/mem/intune/apps/macos-shell-scripts) pour obtenir des instructions plus détaillées sur l’utilisation de ce script dans votre entreprise.

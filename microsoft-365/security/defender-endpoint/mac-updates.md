@@ -1,7 +1,7 @@
 ---
 title: Déployer des mises à jour pour Microsoft Defender pour endpoint sur Mac
 description: Contrôler les mises à jour de Microsoft Defender pour Endpoint sur Mac dans les environnements d’entreprise.
-keywords: 'microsoft, defender, Microsoft Defender pour point de terminaison, mac, mises à jour, déployer'
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, mises à jour, déployer
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,12 +12,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
+ms.openlocfilehash: ceff362daeb2054b6037ea0eecbeafbb9dbed4f3
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767627"
 ---
-
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Déployer les mises à jour de Microsoft Defender pour endpoint sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -136,7 +140,7 @@ Indiquez si les utilisateurs locaux pourront cliquer sur l’option « Vérifier
 |**Domaine**|`com.microsoft.autoupdate2`|
 |**Clé**|EnableCheckForUpdatesButton|
 |**Type de données**|Valeur booléenne|
-|**Valeurs possibles**|True (par défaut) <p> Faux|
+|**Valeurs possibles**|True (par défaut) <p> False|
 |||
 
 ### <a name="disable-insider-checkbox"></a>Désactiver la case à cocher Insider
@@ -168,7 +172,7 @@ Définissez ce dernier sur False pour envoyer un minimum de données de pulsatio
 |**Domaine**|`com.microsoft.autoupdate2`|
 |**Clé**|SendAllTelemetryEnabled|
 |**Type de données**|Valeur booléenne|
-|**Valeurs possibles**|True (par défaut) <p> Faux|
+|**Valeurs possibles**|True (par défaut) <p> False|
 |||
 
 ## <a name="example-configuration-profile"></a>Exemple de profil de configuration

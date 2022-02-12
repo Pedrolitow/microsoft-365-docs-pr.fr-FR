@@ -13,23 +13,22 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7f9f51e9ce31881d66ca8a8e72fa128c458229aa
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5cb41b0bd3f185237055daa2d282f0a1d6975a49
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166169"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765539"
 ---
 # <a name="device-control-for-macos"></a>Contrôle d’appareil pour macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -48,7 +47,7 @@ Le contrôle d’appareil pour macOS présente les conditions préalables suivan
 
 Pour configurer le contrôle d’appareil pour macOS, vous devez créer une stratégie qui décrit les restrictions que vous souhaitez mettre en place au sein de votre organisation.
 
-La stratégie de contrôle d’appareil est incluse dans le profil de configuration utilisé pour configurer tous les autres paramètres du produit. Pour plus d’informations, voir [Structure de profil de configuration.](mac-preferences.md#configuration-profile-structure)
+La stratégie de contrôle d’appareil est incluse dans le profil de configuration utilisé pour configurer tous les autres paramètres du produit. Pour plus d’informations, voir [Structure de profil de configuration](mac-preferences.md#configuration-profile-structure).
 
 Dans le profil de configuration, la stratégie de contrôle d’appareil est définie dans la section suivante :
 
@@ -123,7 +122,7 @@ Cette section de la stratégie est hiérarchique, ce qui permet une flexibilité
     |-- vendor N
 ```
 
-Pour plus d’informations sur la recherche des identificateurs d’appareil, voir [Rechercher des identificateurs d’appareil.](#look-up-device-identifiers)
+Pour plus d’informations sur la recherche des identificateurs d’appareil, voir [Rechercher des identificateurs d’appareil](#look-up-device-identifiers).
 
 La stratégie est évaluée de l’entrée la plus spécifique à la plus générale. Autrement dit, lorsqu’un appareil est branché, le produit tente de trouver la correspondance la plus spécifique dans la stratégie pour chaque périphérique multimédia amovible et applique les autorisations à ce niveau. En l’absence de correspondance, la meilleure correspondance suivante est appliquée, jusqu’à l’autorisation spécifiée au niveau supérieur, qui est la valeur par défaut lorsqu’un appareil ne correspond à aucune autre entrée de la stratégie.
 
@@ -135,7 +134,7 @@ Sous la section Média amovible, il existe une option pour définir le niveau d�
 - `block` - Sous ce niveau d’application, les opérations que l’utilisateur peut effectuer sur l’appareil sont limitées à ce qui est défini dans la stratégie. En outre, une notification est alors avertie à l’utilisateur.
 
 > [!NOTE]
-> Par défaut, le niveau d’application est définie sur `audit` .
+> Par défaut, le niveau d’application est définie sur `audit`.
 
 <br>
 
@@ -162,9 +161,9 @@ Ce paramètre peut être définie sur :
   - `execute` - Les opérations d’exécution sont autorisées sur l’appareil
 
 > [!NOTE]
-> `none`S’il est présent dans le niveau d’autorisation, toutes les autres autorisations ( ou ) sont `read` `write` `execute` ignorées.
+> S’il `none` est présent dans le niveau d’autorisation, toutes les autres autorisations (`read`ou `write``execute`) seront ignorées.
 >
-> L’autorisation fait uniquement référence à l’exécution des binaires `execute` Mach-O. Il n’inclut pas l’exécution de scripts ou d’autres types de charges utiles.
+> L’autorisation `execute` fait uniquement référence à l’exécution des binaires Mach-O. Il n’inclut pas l’exécution de scripts ou d’autres types de charges utiles.
 
 <br>
 
@@ -180,11 +179,11 @@ Ce paramètre peut être définie sur :
 
 #### <a name="restrict-removable-media-by-vendor-product-and-serial-number"></a>Restreindre les médias amovibles par fournisseur, produit et numéro de série
 
-Comme décrit dans [Autoriser](#allow-or-block-removable-devices)ou bloquer les appareils amovibles, les supports amovibles tels que les périphériques USB peuvent être identifiés par l’ID du fournisseur, l’ID de produit et le numéro de série.
+Comme décrit dans [Autoriser](#allow-or-block-removable-devices) ou bloquer les appareils amovibles, les supports amovibles tels que les périphériques USB peuvent être identifiés par l’ID du fournisseur, l’ID de produit et le numéro de série.
 
 Au niveau supérieur de la stratégie de média amovible, vous pouvez éventuellement définir des restrictions plus précises au niveau du fournisseur.
 
-Le dictionnaire contient une ou plusieurs entrées, chaque entrée étant `vendors` identifiée par l’ID du fournisseur.
+Le `vendors` dictionnaire contient une ou plusieurs entrées, chaque entrée étant identifiée par l’ID du fournisseur.
 
 <br>
 
@@ -211,7 +210,7 @@ Pour chaque fournisseur, vous pouvez spécifier le niveau d’autorisation souha
 |**Valeurs possibles**|Identique au [niveau d’autorisation par défaut](#default-permission-level)|
 |
 
-En outre, vous pouvez éventuellement spécifier l’ensemble des produits appartenant à ce fournisseur pour lesquels des autorisations plus granulaires sont définies. Le dictionnaire contient une ou plusieurs entrées, chaque entrée étant `products` identifiée par l’ID de produit.
+En outre, vous pouvez éventuellement spécifier l’ensemble des produits appartenant à ce fournisseur pour lesquels des autorisations plus granulaires sont définies. Le `products` dictionnaire contient une ou plusieurs entrées, chaque entrée étant identifiée par l’ID de produit.
 
 <br>
 
@@ -240,7 +239,7 @@ Pour chaque produit, vous pouvez spécifier le niveau d’autorisation souhaité
 
 En outre, vous pouvez spécifier un ensemble facultatif de numéros de série pour lesquels des autorisations plus granulaires sont définies.
 
-Le dictionnaire contient une ou plusieurs entrées, chaque entrée étant `serialNumbers` identifiée par le numéro de série.
+Le `serialNumbers` dictionnaire contient une ou plusieurs entrées, chaque entrée étant identifiée par le numéro de série.
 
 <br>
 
@@ -339,7 +338,7 @@ Pour rechercher l’ID du fournisseur, l’ID de produit et le numéro de série
 
 1. Connectez-vous à un appareil Mac.
 1. Branchez le périphérique USB pour lequel vous souhaitez rechercher les identificateurs.
-1. Dans le menu de niveau supérieur de macOS, sélectionnez **À propos de ce Mac.**
+1. Dans le menu de niveau supérieur de macOS, sélectionnez **À propos de ce Mac**.
 
     ![À propos de ce Mac.](images/mac-device-control-lookup-1.png)
 
@@ -347,15 +346,15 @@ Pour rechercher l’ID du fournisseur, l’ID de produit et le numéro de série
 
     ![Rapport système.](images/mac-device-control-lookup-2.png)
 
-1. Dans la colonne de gauche, sélectionnez **USB.**
+1. Dans la colonne de gauche, sélectionnez **USB**.
 
     ![Affichage de tous les périphériques USB.](images/mac-device-control-lookup-3.png)
 
-1. Sous **Arborescence d’appareils USB,** accédez à l’appareil USB que vous avez branché.
+1. Sous **Arborescence d’appareils USB**, accédez à l’appareil USB que vous avez branché.
 
     ![Détails d’un périphérique USB.](images/mac-device-control-lookup-4.png)
 
-1. L’ID de fournisseur, l’ID de produit et le numéro de série sont affichés. Lorsque vous ajoutez l’ID fournisseur et l’ID de produit à la stratégie de média amovible, vous devez uniquement ajouter la partie après `0x` . Par exemple, dans l’image ci-dessous, l’ID du fournisseur `1000` est et l’ID de produit est `090c` .
+1. L’ID de fournisseur, l’ID de produit et le numéro de série sont affichés. Lorsque vous ajoutez l’ID fournisseur et l’ID de produit à la stratégie de média amovible, vous devez uniquement ajouter la partie après `0x`. Par exemple, dans l’image ci-dessous, l’ID `1000` du fournisseur est et l’ID de produit est `090c`.
 
 #### <a name="discover-usb-devices-in-your-organization"></a>Découvrir les périphériques USB de votre organisation
 
@@ -369,9 +368,9 @@ DeviceEvents
 
 ## <a name="device-control-policy-deployment"></a>Déploiement de stratégie de contrôle d’appareil
 
-La stratégie de contrôle d’appareil doit être incluse en plus des autres paramètres du produit, comme décrit dans Définir les préférences pour [Microsoft Defender pour endpoint sur macOS.](mac-preferences.md)
+La stratégie de contrôle d’appareil doit être incluse en plus des autres paramètres du produit, comme décrit dans Définir les préférences de [Microsoft Defender pour Endpoint sur macOS](mac-preferences.md).
 
-Ce profil peut être déployé à l’aide des instructions répertoriées dans le déploiement de [profil de configuration.](mac-preferences.md#configuration-profile-deployment)
+Ce profil peut être déployé à l’aide des instructions répertoriées dans le déploiement de [profil de configuration](mac-preferences.md#configuration-profile-deployment).
 
 ## <a name="troubleshooting-tips"></a>Conseils de dépannage
 
@@ -381,7 +380,7 @@ Après avoir lancé le profil de configuration via Intune ou JAMF, vous pouvez v
 mdatp device-control removable-media policy list
 ```
 
-Cette commande imprime en sortie standard la stratégie de contrôle d’appareil que le produit utilise. Dans le cas où cela imprime, assurez-vous (a) que le profil de configuration a bien été poussée vers votre appareil à partir de la console de gestion et (b) qu’il s’agit d’une stratégie de contrôle d’appareil valide, comme décrit dans ce `Policy is empty` document.
+Cette commande imprime en sortie standard la stratégie de contrôle d’appareil que le produit utilise. `Policy is empty`Dans le cas où cela imprime, assurez-vous (a) que le profil de configuration a bien été poussée vers votre appareil à partir de la console de gestion et (b) qu’il s’agit d’une stratégie de contrôle d’appareil valide, comme décrit dans ce document.
 
 Sur un appareil sur lequel la stratégie a été correctement livrée et où un ou plusieurs appareils sont branchés, vous pouvez exécuter la commande suivante pour lister tous les appareils et les autorisations effectives qui leur sont appliquées.
 
@@ -400,9 +399,9 @@ Exemple de sortie :
 | |-o Mount point: "/Volumes/TESTUSB"
 ```
 
-Dans l’exemple ci-dessus, il n’existe qu’un seul périphérique multimédia amovible branché et il dispose d’autorisations et d’autorisations, conformément à la stratégie de contrôle d’appareil qui a été remis à `read` `execute` l’appareil.
+Dans l’exemple ci-dessus, `read` `execute` il n’existe qu’un seul périphérique multimédia amovible branché et il dispose d’autorisations et d’autorisations, conformément à la stratégie de contrôle d’appareil qui a été remis à l’appareil.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Exemples de stratégies de contrôle d’appareil pour Intune](mac-device-control-intune.md)
 - [Exemples de stratégies de contrôle d’appareil pour JAMF](mac-device-control-jamf.md)

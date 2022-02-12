@@ -13,22 +13,21 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 64847494bba34be838617842481ce6016e0b803a
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: c8ffab850302967b9e36e841bf035cef07ad2775
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171316"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767231"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement avec un autre système de gestion des périphériques mobiles (MDM) pour Microsoft Defender pour Endpoint sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -37,7 +36,7 @@ ms.locfileid: "61171316"
  
 ## <a name="prerequisites-and-system-requirements"></a>Conditions préalables et système requis
 
-Avant de commencer, consultez la page principale de Microsoft Defender pour point de terminaison sur [macOS](microsoft-defender-endpoint-mac.md) pour obtenir une description des conditions préalables et de la requise pour la version logicielle actuelle.
+Avant de commencer, consultez la [page principale de Microsoft Defender pour point](microsoft-defender-endpoint-mac.md) de terminaison sur macOS pour obtenir une description des conditions préalables et de la requise pour la version logicielle actuelle.
 
 
 ## <a name="approach"></a>Approche
@@ -67,17 +66,17 @@ La plupart des solutions MDM utilisent le même modèle pour la gestion des appa
 
 ### <a name="package"></a>Package
 
-Configurez le déploiement d’un [package d’application](mac-install-with-jamf.md)requis, avec le package d’installation (wdav.pkg) téléchargé à partir [Microsoft 365 Defender portail.](mac-install-with-jamf.md)
+Configurez le déploiement d’un [package d’application](mac-install-with-jamf.md) requis, avec le package d’installation (wdav.pkg) téléchargé à partir [Microsoft 365 Defender portail.](mac-install-with-jamf.md)
 
 Pour déployer le package dans votre entreprise, utilisez les instructions associées à votre solution MDM.
 
 ### <a name="license-settings"></a>Paramètres de licence
 
-Configurer un [profil de configuration système.](mac-install-with-jamf.md) 
+Configurer un [profil de configuration système](mac-install-with-jamf.md). 
 
 Votre solution MDM peut l’appeler « Profil Paramètres personnalisé », car Microsoft Defender pour endpoint sur macOS ne fait pas partie de macOS.
 
-Utilisez la liste des propriétés, jamf/WindowsDefenderATPOnboarding.plist, qui peut être extraite d’un package d’intégration téléchargé à partir Microsoft 365 Defender [portail.](mac-install-with-jamf.md)
+Utilisez la liste des propriétés, jamf/WindowsDefenderATPOnboarding.plist, qui peut être extraite d’un package d’intégration téléchargé à partir Microsoft 365 Defender [portail](mac-install-with-jamf.md).
 Votre système peut prendre en charge une liste de propriétés arbitraire au format XML. Vous pouvez télécharger le fichier jamf/WindowsDefenderATPOnboarding.plist tel qu’il est dans ce cas.
 Vous pouvez également avoir besoin de convertir d’abord la liste des propriétés dans un autre format.
 
@@ -125,4 +124,4 @@ Dans le cadre des fonctionnalités de détection et de réponse des points de te
 
 ## <a name="check-installation-status"></a>Vérifier l’état de l’installation
 
-Exécutez [Microsoft Defender pour le point de terminaison](mac-install-with-jamf.md) sur un appareil client pour vérifier l’état d’intégration.
+[Exécutez Microsoft Defender pour le point de terminaison](mac-install-with-jamf.md) sur un appareil client pour vérifier l’état d’intégration.

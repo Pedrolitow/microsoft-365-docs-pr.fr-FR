@@ -10,17 +10,17 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/08/2021
+ms.date: 02/11/2022
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: da03e729ba3da286820727fa8b13ad4d5259d4f2
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 83013faf2fca5a3a281c5668973523918b883f54
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464632"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766775"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guide de déploiement de l’antivirus Microsoft Defender dans un environnement VDI (Virtual Desktop Infrastructure)
 
@@ -120,7 +120,7 @@ Pour cela :
 
     Name   ScopeName AccountName AccessControlType AccessRight
     ----   --------- ----------- ----------------- -----------
-    mdatp$ *         Everyone    Allow             Change
+    mdatp$ *         Everyone    Allow             Read
     ```
    
     > [!NOTE]

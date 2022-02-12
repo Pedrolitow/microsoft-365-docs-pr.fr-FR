@@ -21,12 +21,12 @@ search.appverid:
 description: Découvrez Microsoft 365 Business Premium, un service d’abonnement qui prend en charge la partie informatique pour vous.
 feedback_system: None
 ms.date: 10/20/2021
-ms.openlocfilehash: dfc19c2f603f7f561fec01e3879d9e5e234a5158
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: bee91aeb09fa2b2baff34c8f7d7193db6085b2a1
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643659"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765815"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 
@@ -48,6 +48,6 @@ Lorsque vous souscrivez un abonnement à Microsoft 365 Business Premium, vous b�
 | Sécuriser vos appareils | Vous pouvez protéger vos fichiers de travail sur les appareils en restreignant l’accès mobile (par exemple, les actions Copier et Coller). Vous pouvez également effacer de façon sélective les données professionnelles provenant d’appareils mobiles inscrits en cas de perte ou de vol. |
 | Autres fonctionnalités de sécurité | Les fonctionnalités avancées de Microsoft 365 Business Premium sont disponibles pour vous aider à protéger votre activité contre les cybermenaces et protéger les informations sensibles. Les fonctionnalités incluent Microsoft Defender pour Office 365 Plan 1, les stratégies de prévention des pertes de données (DLP), l'archivage Exchange Online, Azure Information Protection et Intune. |
 
-Si vous avez Microsoft Business Premium, la façon la plus rapide de configurer la sécurité et de commencer à collaborer en toute sécurité consiste à suivre les instructions de cette bibliothèque : [Microsoft 365 pour les petites entreprises et les campagnes](../../campaigns/index.md). Ces conseils ont été développés en partenariat avec l’équipe Microsoft Microsoft Defending Democracy pour protéger tous les clients de PME contre les menaces informatiques lancées par des pirates informatiques sophistiqués. 
+Si vous avez Microsoft Business Premium, la façon la plus rapide de configurer la sécurité et de commencer à collaborer en toute sécurité consiste à suivre les instructions de cette bibliothèque : [Microsoft 365 pour les petites entreprises et les campagnes](../../business-premium/index.md). Ces conseils ont été développés en partenariat avec l’équipe Microsoft Microsoft Defending Democracy pour protéger tous les clients de PME contre les menaces informatiques lancées par des pirates informatiques sophistiqués. 
 
 Pour plus d’informations, voir [Contenu de Microsoft 365 Business](../../admin/index.yml).

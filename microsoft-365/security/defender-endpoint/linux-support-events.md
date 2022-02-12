@@ -13,34 +13,33 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 82c1418d58679fef1b59e51b41052e4dfe584635
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5a17f94e3d26c08c0f6e0ca358778a65189cf6a5
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168537"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766012"
 ---
 # <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes d’événements ou d’alertes manquants pour Microsoft Defender pour Endpoint sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Cet article fournit quelques étapes générales pour atténuer les événements ou alertes manquants dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">le portail Microsoft 365 Defender.</a>
+Cet article fournit quelques étapes générales pour atténuer les événements ou alertes manquants dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">le portail Microsoft 365 Defender web</a>.
 
 Une **fois que Microsoft Defender pour le point** de terminaison a été correctement installé sur un appareil, une _page_ d’appareil est générée dans le portail. Vous pouvez passer en revue tous les événements enregistrés dans l’onglet Chronologie de la page de l’appareil ou dans la page de recherche avancée. Cette section permet de résoudre les problèmes de certains événements attendus ou de tous.
 Par exemple, si tous _les événements CreatedFile_ sont manquants.
 
 ## <a name="missing-network-and-login-events"></a>Événements réseau et de connexion manquants
 
-Microsoft Defender pour le point de terminaison a utilisé `audit` l’infrastructure linux pour suivre l’activité réseau et de connexion.
+Microsoft Defender pour le point de terminaison `audit` a utilisé l’infrastructure linux pour suivre l’activité réseau et de connexion.
 
 1. Assurez-vous que l’infrastructure d’audit fonctionne.
 
@@ -67,13 +66,13 @@ Microsoft Defender pour le point de terminaison a utilisé `audit` l’infrastru
             └─16671 /opt/microsoft/mdatp/sbin/mdatp_audisp_plugin -d
     ```
 
-2. Si `auditd` elle est marquée comme arrêtée, démarrez-la.
+2. Si elle `auditd` est marquée comme arrêtée, démarrez-la.
 
     ```bash
     service auditd start
     ```
 
-**Sur les systèmes SLES,** l’audit SYSCALL peut être désactivé par défaut et peut être tenu compte des `auditd` événements manquants.
+**Sur les systèmes SLES** , l’audit `auditd` SYSCALL peut être désactivé par défaut et peut être tenu compte des événements manquants.
 
 1. Pour vérifier que l’audit SYSCALL n’est pas désactivé, listez les règles d’audit actuelles :
 
@@ -87,11 +86,11 @@ Microsoft Defender pour le point de terminaison a utilisé `audit` l’infrastru
     -a task, never
     ```
 
-    les règles d’audit se trouvent à `/etc/audit/rules.d/audit.rules` l’emplacement .
+    les règles d’audit se trouvent à l’emplacement .`/etc/audit/rules.d/audit.rules`
 
 ## <a name="missing-file-events"></a>Événements de fichier manquants
 
-Les événements de fichier sont collectés avec `fanotify` l’infrastructure. Si certains événements de fichier ou tous sont manquants, assurez-vous qu’il est activé sur l’appareil et que le système `fanotify` de fichiers est pris en [charge.](microsoft-defender-endpoint-linux.md#system-requirements)
+Les événements de fichier sont collectés avec l’infrastructure `fanotify` . Si certains événements de fichier ou tous sont manquants, `fanotify` assurez-vous qu’il est activé sur l’appareil et que le système de fichiers est [pris en charge](microsoft-defender-endpoint-linux.md#system-requirements).
 
 List the filesystems on the machine with:
 

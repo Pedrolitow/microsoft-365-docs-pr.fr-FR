@@ -9,21 +9,21 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: fd0eae34c5ca48168587a3e495d34ab329cb05a3
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 959c557501fe1232dd92f9c501f95b2f3faa37bc
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034532"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765959"
 ---
 # <a name="shared-devices"></a>Appareils partagés
 
-Microsoft Manged Desktop vous permet d’inscrire des appareils en « mode d’appareil partagé », comme le mode d’appareil partagé proposé [par Microsoft Intune](/mem/intune/configuration/shared-user-device-settings). Les appareils dans ce mode sont optimisés pour les situations dans lesquelles les utilisateurs ne sont pas liés à un seul bureau et changent fréquemment d’appareil, en général, pour les travailleurs de la sécurité tels que les collaborateurs de banque ou les employés de la maison. Vous pouvez appliquer n’importe quel profil Microsoft Manged Desktop [aux](profiles.md) appareils dans ce mode. Les appareils inscrits dans ce mode ont des différences importantes :
+Microsoft Manged Desktop vous permet d’inscrire des appareils en « mode d’appareil partagé », comme le mode d’appareil partagé proposé par [Microsoft Intune](/mem/intune/configuration/shared-user-device-settings). Les appareils dans ce mode sont optimisés pour les situations dans lesquelles les utilisateurs ne sont pas liés à un seul bureau et changent fréquemment d’appareil, en général, pour les travailleurs de la sécurité tels que les collaborateurs de banque ou les employés de la maison. Vous pouvez appliquer n’importe quel profil Microsoft Manged Desktop [aux](profiles.md) appareils dans ce mode. Les appareils inscrits dans ce mode ont des différences importantes :
 
 - [Le stockage de l’appareil](#device-storage) est optimisé pour les utilisateurs partagés.
 - [Les comptes inactifs](#deletion-of-inactive-accounts) sont supprimés.
 - [Les comptes invités](#guest-accounts) ne sont pas pris en charge par défaut.
-- [Microsoft 365 applications pour](#microsoft-365-apps-for-enterprise) les licences d’entreprise est optimisée pour les appareils partagés.
+- [Microsoft 365 applications pour les licences](#microsoft-365-apps-for-enterprise) d’entreprise est optimisée pour les appareils partagés.
 
 Étant donné que vous faites le choix d’utiliser le mode d’appareil partagé au moment de l’inscription dans Microsoft Manged Desktop, si vous souhaitez le faire sortir de ce mode ultérieurement, vous devez le désins inscrire et l’inscrire à nouveau.
 
@@ -41,18 +41,18 @@ Le mode appareil partagé n’est pas un bon choix dans les situations ci-après
 
 - Lorsque les fichiers d’un utilisateur doivent être stockés localement plutôt que dans le cloud
 - Si l’expérience utilisateur doit être différente pour différents utilisateurs sur l’appareil
-- Si l’ensemble d’applications dont chaque utilisateur a besoin diffère sensiblement
+- Si l’ensemble d’applications dont chaque utilisateur a besoin diffère  sensiblement
 
 ## <a name="enroll-new-devices-in-shared-device-mode"></a>Inscrire de nouveaux appareils en mode d’appareil partagé
 
 Que vous ou un partenaire gèrez l’inscription, vous pouvez choisir d’utiliser le mode appareil partagé.
 
-Si vous inscrivez **vous-même** des appareils, suivez les étapes de l’inscription de nouveaux appareils vous-même, [](../get-started/register-devices-self.md)puis ajoutez-les au groupe Appareils de l’espace de travail moderne - Mode appareil partagé.
+Si vous inscrivez vous-même des appareils, suivez les étapes de [](../get-started/register-devices-self.md)l’inscription de nouveaux appareils, puis ajoutez-les au groupe Appareils de l’espace de travail moderne **- Mode appareil** partagé.
 
 > [!WARNING]
 > N’essayez pas de convertir des appareils Microsoft Manged Desktop existants en mode d’appareil partagé en les ajoutant simplement à ce groupe. Les stratégies appliquées peuvent potentiellement entraîner la perte OneDrive fichiers.
 
-Si vous avez un partenaire inscrit des appareils, suivez les étapes de la procédure d’inscription des appareils par les [partenaires,](../get-started/register-devices-partner.md)mais l’append **-Shared** à la balise de groupe, comme indiqué dans le tableau suivant :
+Si vous avez un partenaire inscrit des appareils, suivez les étapes de la procédure d’inscription des appareils par les [partenaires, mais](../get-started/register-devices-partner.md) l’append **-Shared** à la balise de groupe, comme indiqué dans le tableau suivant :
 
 |Profil d’appareil  |Balise de groupe (mode standard)  |Balise de groupe (mode appareil partagé)  |
 |---------|---------|---------|
@@ -64,7 +64,7 @@ Si vous avez un partenaire inscrit des appareils, suivez les étapes de la proc�
 
 ### <a name="device-storage"></a>Stockage d’appareil
 
-Les utilisateurs d’appareils partagés doivent avoir leurs données dans le cloud pour pouvoir les suivre sur d’autres appareils. Une fois que vous avez inscrit des appareils en mode d’appareil [](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e#:~:text=%20Turn%20on%20Files%20On-Demand%20%201%20Make,files%20as%20you%20use%20them%20box.%20More%20) partagé, veillez à activer les fonctionnalités de redirection de fichiers à la demande et de [dossiers](/onedrive/redirect-known-folders) connus de OneDrive. Cette approche réduit l’impact de chaque profil utilisateur sur le stockage de l’appareil. Les appareils en mode d’appareil partagé suppriment automatiquement les profils utilisateur si l’espace disque disponible descend en dessous de 25 %. Cette activité est prévue à minuit à l’heure locale de l’appareil, sauf si le stockage devient extrêmement limité.
+Les utilisateurs d’appareils partagés doivent avoir leurs données dans le cloud pour pouvoir les suivre sur d’autres appareils. Une fois que vous avez inscrit des appareils en mode d’appareil partagé, veillez à activer les fonctionnalités de [](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e#:~:text=%20Turn%20on%20Files%20On-Demand%20%201%20Make,files%20as%20you%20use%20them%20box.%20More%20) redirection de fichiers à la demande et de [dossiers](/onedrive/redirect-known-folders) connus de OneDrive. Cette approche réduit l’impact de chaque profil utilisateur sur le stockage de l’appareil. Les appareils en mode d’appareil partagé suppriment automatiquement les profils utilisateur si l’espace disque disponible descend en dessous de 25 %. Cette activité est prévue à minuit à l’heure locale de l’appareil, sauf si le stockage devient extrêmement limité.
 
 Microsoft Manged Desktop le CSP [SharedPC](/mem/intune/configuration/shared-user-device-settings-windows) pour effectuer ces opérations, veillez donc à ne pas utiliser ces CSP vous-même.
 
@@ -77,7 +77,7 @@ Le mode appareil partagé supprime tous les comptes qui n’ont pas été connec
 
 ### <a name="guest-accounts"></a>Comptes invités
 
-Les appareils en mode d’appareil partagé autorisent uniquement les comptes joints à un domaine. Si vous avez besoin de comptes invités sur un appareil, vous pouvez déposer une [demande](../working-with-managed-desktop/admin-support.md) de modification pour les demander à être activés.
+Les appareils en mode d’appareil partagé autorisent uniquement les comptes joints à un domaine. Si vous avez besoin de comptes invités sur un appareil, vous pouvez déposer [une demande de](../working-with-managed-desktop/admin-support.md) modification pour les demander à être activés.
 
 ### <a name="microsoft-365-apps-for-enterprise"></a>Applications Microsoft 365 for entreprise
 
@@ -89,13 +89,13 @@ En mode d’appareil partagé, vous ne pouvez avoir qu’un seul [profil d’app
 
 ### <a name="apps-and-policies-assigned-to-users"></a>Applications et stratégies attribuées aux utilisateurs
 
-Sur les appareils partagés, vous devez affecter les applications ou stratégies que vous gérez vous-même à des groupes d’appareils, et non à des groupes d’utilisateurs. Cela garantit que chaque utilisateur dispose d’une expérience plus cohérente. L’exception est [Portail d'entreprise](#deploying-apps-with-company-portal).
+Sur les appareils partagés, vous devez affecter les applications ou stratégies que vous gérez vous-même à des groupes d’appareils *, et* non à des groupes d’utilisateurs. Cela garantit que chaque utilisateur dispose d’une expérience plus cohérente. L’exception est [Portail d'entreprise](#deploying-apps-with-company-portal).
 
 ## <a name="limitations-of-shared-device-mode"></a>Limitations du mode d’appareil partagé
 
 ### <a name="windows-hello"></a>Windows Hello
 
-Windows Hello l’émulation de carte à puce pour mettre en cache en toute sécurité les [pins](/windows/security/identity-protection/hello-for-business/hello-faq)utilisateur, réduisant ainsi le nombre de fois que les utilisateurs doivent s’authentifier. Toutefois, Windows autorise uniquement 10 cartes à puce à la fois sur un appareil donné. Lorsqu’un onzième utilisateur se signe pour la première fois, l’un des comptes existants perd sa carte à puce. Ils pourront se connecter, mais leur code confidentiel ne sera pas mis en cache.
+Windows Hello l’émulation de carte à puce pour mettre en cache en toute sécurité les [pins](/windows/security/identity-protection/hello-for-business/hello-faq) utilisateur, réduisant ainsi le nombre de fois que les utilisateurs doivent s’authentifier. Toutefois, Windows autorise uniquement 10 cartes à puce à la fois sur un appareil donné. Lorsqu’un onzième utilisateur se signe pour la première fois, l’un des comptes existants perd sa carte à puce. Ils pourront se connecter, mais leur code confidentiel ne sera pas mis en cache.
 
 ### <a name="universal-print"></a>Impression universelle
 
@@ -108,14 +108,14 @@ Lorsque l’impression universelle installe une imprimante pour un utilisateur u
 Chaque Microsoft Intune’appareil a un utilisateur principal, qui est affecté lorsqu’un appareil est installé par Autopilot. Toutefois, lorsque des appareils sont partagés, Intune requiert la suppression de l’utilisateur principal.
 
 > [!IMPORTANT]
-> Alors que le mode appareil partagé est en prévisualisation publique, veillez à supprimer l’utilisateur principal en suivant les étapes suivantes : connectez-vous au Centre d’administration Microsoft Endpoint Manager, sélectionnez Appareils tous les appareils, sélectionnez un appareil, puis sélectionnez Propriétés Supprimer l’utilisateur principal, puis supprimez l’utilisateur répertorié  >   > ici.
+> Alors que le mode d’appareil partagé est en prévisualisation publique, veillez à supprimer l’utilisateur principal en suivant les étapes suivantes : connectez-vous au Centre d’administration Microsoft Endpoint Manager, sélectionnez **AppareilsToutes**>**,** sélectionnez un appareil, puis sélectionnez l’utilisateur principal **PropertiesRemove**> et supprimez l’utilisateur répertorié ici.
 
 ### <a name="deploying-apps-with-company-portal"></a>Déploiement d’applications avec Portail d'entreprise
 
-Certaines applications n’ont probablement pas besoin d’être présentes sur tous les [appareils.](/mem/intune/user-help/install-apps-cpapp-windows)Vous pouvez donc préférer que les utilisateurs installent uniquement ces applications lorsqu’ils en ont besoin à partir de Portail d'entreprise . Microsoft Manged Desktop désactive Portail d'entreprise par défaut pour les appareils en mode d’appareil partagé. Si vous souhaitez Portail d'entreprise activée, vous pouvez déposer une demande de [modification,](../working-with-managed-desktop/admin-support.md)mais vous devez connaître certaines limitations de cette fonctionnalité dans cette prévisualisation publique :
+Certaines applications n’ont probablement pas besoin d’être présentes sur tous les appareils. Vous pouvez donc préférer que les utilisateurs installent ces applications uniquement lorsqu’ils en ont besoin à [partir de Portail d'entreprise](/mem/intune/user-help/install-apps-cpapp-windows). Microsoft Manged Desktop désactive Portail d'entreprise par défaut pour les appareils en mode d’appareil partagé. Si vous souhaitez Portail d'entreprise activée, vous pouvez déposer une demande de [modification, mais](../working-with-managed-desktop/admin-support.md) vous devez connaître certaines limitations de cette fonctionnalité dans cette prévisualisation publique :
 
 - Pour rendre une application accessible aux utilisateurs dans [Portail d'entreprise,](/mem/intune/apps/apps-deploy) affectez un groupe d’utilisateurs à cette application dans Intune, puis ajoutez chaque utilisateur à ce groupe d’utilisateurs.
-- Les appareils ne peuvent pas avoir [d’utilisateur principal.](#primary-user)
+- Les appareils ne peuvent pas avoir [d’utilisateur principal](#primary-user).
 - Pour désinstaller une application qu’un utilisateur a installée via Portail d'entreprise, vous devez désinstaller l’application de tous les utilisateurs de cet appareil.
 
 > [!CAUTION]

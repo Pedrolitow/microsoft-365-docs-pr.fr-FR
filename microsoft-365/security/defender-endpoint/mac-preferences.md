@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: adcf044de78b1cecb6b7b9160a196ec102e8606c
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 07e91e5b2cb93a6ba876510b558761f95489f496
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214152"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765752"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur macOS
 
@@ -70,10 +69,10 @@ La *section antivirusEngine* du profil de configuration est utilisée pour gére
 
 Spécifie la préférence d’application du moteur antivirus. Il existe trois valeurs pour définir le niveau d’application :
 
-- En temps réel ( ) : la protection en temps réel (analyser les fichiers à mesure qu’ils sont `real_time` accessibles) est activée.
-- À la demande ( `on_demand` ) : les fichiers sont analysés uniquement à la demande. Dans les cas ci-après :
+- En temps réel (`real_time`) : la protection en temps réel (analyser les fichiers à mesure qu’ils sont accessibles) est activée.
+- À la demande (`on_demand`) : les fichiers sont analysés uniquement à la demande. Dans les cas ci-après :
   - La protection en temps réel est désactivée.
-- Passive ( `passive` ) : exécute le moteur antivirus en mode passif. Dans les cas ci-après :
+- Passive (`passive`) : exécute le moteur antivirus en mode passif. Dans les cas ci-après :
   - La protection en temps réel est désactivée.
   - L’analyse à la demande est désactivée.
   - La correction automatique des menaces est désactivée.
@@ -146,7 +145,7 @@ Spécifie le degré de parallélisme pour les analyses à la demande. Cela corre
 
 #### <a name="exclusion-merge-policy"></a>Stratégie de fusion d’exclusions
 
-Spécifiez la stratégie de fusion pour les exclusions. Il peut s’agit d’une combinaison d’exclusions définies par l’administrateur et d’exclusions définies par l’utilisateur ( ) ou uniquement `merge` d’exclusions définies par l’administrateur ( `admin_only` ). Ce paramètre peut être utilisé pour empêcher les utilisateurs locaux de définir leurs propres exclusions.
+Spécifiez la stratégie de fusion pour les exclusions. Il peut s’agit d’une combinaison d’exclusions définies par l’administrateur et d’exclusions définies par l’utilisateur (`merge`) ou uniquement d’exclusions définies par l’administrateur (`admin_only`). Ce paramètre peut être utilisé pour empêcher les utilisateurs locaux de définir leurs propres exclusions.
 
 <br>
 
@@ -219,16 +218,16 @@ Le tableau suivant indique les types d’exclusion pris en charge par Defender p
 
 ****
 
-|Exclusion|Définition|範例|
+|Exclusion|Définition|Exemples|
 |---|---|---|
 |Extension de fichier|Tous les fichiers avec l’extension, n’importe où sur l’appareil|`.test`|
-|Fichier|Un fichier spécifique identifié par le chemin d’accès complet|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
+|File|Un fichier spécifique identifié par le chemin d’accès complet|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
 |Folder|Tous les fichiers sous le dossier spécifié (de manière récursive)|`/var/log/` <p> `/var/*/`|
 |Processus|Un processus spécifique (spécifié par le chemin d’accès complet ou le nom de fichier) et tous les fichiers ouverts par celui-ci|`/bin/cat` <p> `cat` <p> `c?t`|
 ||||
 
 > [!IMPORTANT]
-> Les chemins ci-dessus doivent être des liens durs, et non symboliques, pour être correctement exclus. Vous pouvez vérifier si un chemin d’accès est un lien symbolique en exécutant `file <path-name>` .
+> Les chemins ci-dessus doivent être des liens durs, et non symboliques, pour être correctement exclus. Vous pouvez vérifier si un chemin d’accès est un lien symbolique en exécutant `file <path-name>`.
 
 Les exclusions de fichiers, de dossiers et de processus prisent en charge les caractères génériques suivants :
 
@@ -273,12 +272,12 @@ Spécifiez le contenu exclu de l’analyse par extension de fichier.
 |**Clé**|extension|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|extensions de fichier valides|
-|**Comments**|Applicable uniquement si *$type* est *excluFileExtension*|
+|**Comments**|Applicable uniquement si *$type* *est excluFileExtension*|
 |||
 
 ### <a name="process-excluded-from-the-scan"></a>Processus exclu de l’analyse
 
-Spécifiez un processus pour lequel toute l’activité de fichier est exclue de l’analyse. Le processus peut être spécifié par son nom (par exemple) ou son chemin `cat` d’accès complet (par exemple, `/bin/cat` ).
+Spécifiez un processus pour lequel toute l’activité de fichier est exclue de l’analyse. Le processus peut être spécifié par son nom (par exemple) `cat`ou son chemin d’accès complet (par exemple, `/bin/cat`).
 
 <br>
 
@@ -357,13 +356,13 @@ Spécifiez les types de menaces.
 |**Valeurs possibles**|potentially_unwanted_application <p> archive_bomb|
 |||
 
-##### <a name="action-to-take"></a>Action
+##### <a name="action-to-take"></a>Mesures à prendre
 
 Spécifiez l’action à prendre lorsqu’une menace du type spécifié dans la section précédente est détectée. Choisissez l'une des options suivantes :
 
-- **Audit**: votre appareil n’est pas protégé contre ce type de menace, mais une entrée sur la menace est enregistrée.
-- **Bloquer**: votre appareil est protégé contre ce type de menace et vous êtes averti dans l’interface utilisateur et la console de sécurité.
-- **Off**: votre appareil n’est pas protégé contre ce type de menace et rien n’est enregistré.
+- **Audit** : votre appareil n’est pas protégé contre ce type de menace, mais une entrée sur la menace est enregistrée.
+- **Bloc** : votre appareil est protégé contre ce type de menace et vous êtes averti dans l’interface utilisateur et la console de sécurité.
+- **Off** : votre appareil n’est pas protégé contre ce type de menace et rien n’est enregistré.
 
 <br>
 
@@ -379,7 +378,7 @@ Spécifiez l’action à prendre lorsqu’une menace du type spécifié dans la 
 
 #### <a name="threat-type-settings-merge-policy"></a>Stratégie de fusion des paramètres du type de menace
 
-Spécifiez la stratégie de fusion pour les paramètres de type de menace. Il peut s’agit d’une combinaison de paramètres définis par l’administrateur et de paramètres définis par l’utilisateur ( ) ou uniquement de `merge` paramètres définis par l’administrateur ( `admin_only` ). Ce paramètre peut être utilisé pour empêcher les utilisateurs locaux de définir leurs propres paramètres pour différents types de menaces.
+Spécifiez la stratégie de fusion pour les paramètres de type de menace. Il peut s’agit d’une combinaison de paramètres définis par l’administrateur et de paramètres définis par l’utilisateur (`merge`) ou uniquement de paramètres définis par l’administrateur (`admin_only`). Ce paramètre peut être utilisé pour empêcher les utilisateurs locaux de définir leurs propres paramètres pour différents types de menaces.
 
 <br>
 
@@ -541,7 +540,7 @@ Spécifiez s’il faut afficher ou masquer l’icône du menu d’état dans le 
 
 #### <a name="show--hide-option-to-send-feedback"></a>Afficher /masquer l’option d’envoi de commentaires
 
-Spécifiez si les utilisateurs peuvent envoyer des commentaires à Microsoft en allant à `Help`  >  `Send Feedback` .
+Spécifiez si les utilisateurs peuvent envoyer des commentaires à Microsoft en allant à `Help` > `Send Feedback`.
 
 <br>
 
@@ -585,7 +584,7 @@ Spécifiez un nom de balise et sa valeur.
 |Section|Valeur|
 |---|---|
 |**Domaine**|`com.microsoft.wdav`|
-|**Clé**|étiquettes|
+|**Clé**|balises|
 |**Type de données**|Dictionnaire (préférence imbriée)|
 |**Comments**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
 |||
@@ -1057,7 +1056,7 @@ plutil -lint com.microsoft.wdav.plist
 com.microsoft.wdav.plist: OK
 ```
 
-Si le fichier est bien formé, la commande ci-dessus produit `OK` et renvoie un code de sortie de `0` . Sinon, une erreur qui décrit le problème s’affiche et la commande renvoie un code de sortie de `1` .
+Si le fichier est bien formé, `OK` la commande ci-dessus produit et renvoie un code de sortie de `0`. Sinon, une erreur qui décrit le problème s’affiche et la commande renvoie un code de sortie de `1`.
 
 ## <a name="configuration-profile-deployment"></a>Déploiement de profil de configuration
 
@@ -1065,26 +1064,26 @@ Une fois que vous avez créé le profil de configuration pour votre entreprise, 
 
 ### <a name="jamf-deployment"></a>Déploiement JAMF
 
-À partir de la console JAMF, **ouvrez** profils de configuration ordinateurs, accédez au profil de configuration que vous souhaitez utiliser, puis sélectionnez Custom \>  **Paramètres**. Créez une entrée avec `com.microsoft.wdav` comme domaine de préférence et téléchargez le *.plist* produit précédemment.
+À partir de la console JAMF **, ouvrez** \> profils de **configuration** ordinateurs, accédez au profil de configuration que vous souhaitez utiliser, puis sélectionnez Custom **Paramètres**. Créez une entrée avec `com.microsoft.wdav` comme domaine de préférence et téléchargez *le .plist* produit précédemment.
 
 > [!CAUTION]
-> Vous devez entrer le domaine de préférence correct ( ) ; sinon, les préférences ne seront pas reconnues par `com.microsoft.wdav` Microsoft Defender pour le point de terminaison.
+> Vous devez entrer le domaine de préférence correct (`com.microsoft.wdav`) ; sinon, les préférences ne seront pas reconnues par Microsoft Defender pour le point de terminaison.
 
 ### <a name="intune-deployment"></a>Déploiement d’Intune
 
-1. Ouvrez **Gérer** \> **la configuration de l’appareil.** Sélectionnez **Gérer** \> **les profils** \> **créer un profil.**
+1. Ouvrez **Gérer la** \> **configuration de l’appareil**. Sélectionnez **Gérer les** \> **profils** \> **Créer un profil**.
 
 2. Choisissez un nom pour le profil. Change **Platform=macOS** to **Profile type=Custom**. Sélectionnez Configurer.
 
-3. Enregistrez le .plist produit précédemment sous `com.microsoft.wdav.xml` .
+3. Enregistrez le .plist produit précédemment sous `com.microsoft.wdav.xml`.
 
-4. Entrez `com.microsoft.wdav` comme nom de profil de configuration **personnalisé.**
+4. Entrez le `com.microsoft.wdav` nom du **profil de configuration personnalisé**.
 
 5. Ouvrez le profil de configuration et téléchargez le `com.microsoft.wdav.xml` fichier. (Ce fichier a été créé à l’étape 3.)
 
 6. Sélectionnez **OK**.
 
-7. Sélectionnez  \> **Gérer les affectations.** Dans **l’onglet** Inclure, sélectionnez Affecter à tous **les utilisateurs & tous les appareils.**
+7. **Sélectionnez Gérer** \> **les affectations**. Dans **l’onglet** Inclure, **sélectionnez Affecter à tous les utilisateurs & tous les appareils**.
 
 > [!CAUTION]
 > Vous devez entrer le nom de profil de configuration personnalisé correct . Dans le cas contraire, ces préférences ne seront pas reconnues par Microsoft Defender pour endpoint.

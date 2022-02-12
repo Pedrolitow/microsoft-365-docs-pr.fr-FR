@@ -1,7 +1,7 @@
 ---
-title: Conditions préalables au déploiement des règles asr
+title: Prérequis pour le déploiement des règles ASR
 description: Fournit une vue d’ensemble et des instructions préalables sur le déploiement de règles de réduction de la surface d’attaque (ASR).
-keywords: 'Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque'
+keywords: Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -11,16 +11,21 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: 'oogunrinde, sugamar'
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: m365solution-scenario
 ms.date: 1/18/2022
+ms.openlocfilehash: 7a05d2712adb37121b1e625ab5c4774a60af3e81
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767207"
 ---
-
-# <a name="asr-rules-deployment-prerequisites"></a>Conditions préalables au déploiement des règles asr
+# <a name="asr-rules-deployment-prerequisites"></a>Prérequis pour le déploiement des règles ASR
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -105,6 +110,10 @@ Les versions de Antivirus Microsoft Defender suivantes ne doivent pas être plus
 - **Antivirus Microsoft Defender** la sécurité : Microsoft met continuellement à jour l’intelligence de sécurité Microsoft Defender (également appelée, définition et signature) pour répondre aux dernières menaces et affiner la logique de détection.
 
 Le fait Antivirus Microsoft Defender versions actuelles permet de réduire les règles de réduction de la réduction des résultats faux positifs et Antivirus Microsoft Defender fonctionnalités de détection. Pour plus d’informations sur les versions actuelles et la mise à jour des différents composants de Antivirus Microsoft Defender, consultez la [Antivirus Microsoft Defender prise en charge de la plateforme](manage-updates-baselines-microsoft-defender-antivirus.md).
+
+### <a name="caveat"></a>Avertissement
+
+Certaines règles ne fonctionnent pas correctement si les applications et les scripts non signés et développés en interne sont très utilisé. Il est plus difficile de déployer des règles de asr si la signature du code n’est pas appliquée.
 
 ## <a name="asr-rules-deployment-steps"></a>Étapes de déploiement des règles asr
 

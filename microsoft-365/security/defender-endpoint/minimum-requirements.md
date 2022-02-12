@@ -11,15 +11,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3df27d3a09b5a19b4e2c4c2ecea1ab0eb8c1e157
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 6d4d76a45d69994c82c2027f57d5c3b045e82397
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245170"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765059"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Conditions minimales requises pour Microsoft Defender pour le point de terminaison
 
@@ -36,16 +38,16 @@ Certaines conditions minimales sont requises pour l’intégration d’appareils
 > [!TIP]
 >
 > - Cet article décrit les conditions minimales requises pour Microsoft Defender pour Endpoint Plan 2. Si vous recherchez des informations sur Defender pour Endpoint Plan 1, voir [Requirements for Defender for Endpoint Plan 1](mde-p1-setup-configuration.md#review-the-requirements).
-> - Découvrez les dernières améliorations apportées à Defender for Endpoint : [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
+> - Découvrez les dernières améliorations de Defender for Endpoint : [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
 > - Defender pour le point de terminaison a démontré les fonctionnalités d’optique et de détection de pointe du secteur dans l’évaluation MITRE récente. Lire : [Informations tirées de l’évaluation de MITRE basée sur ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
-## <a name="licensing-requirements"></a>Critères de licence
-Pour plus d’informations sur les licences requises pour Microsoft Defender pour endpoint, voir Microsoft Defender pour les informations de licence [de point de terminaison.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint)
+## <a name="licensing-requirements"></a>Conditions d'octroi de licence
+Pour plus d’informations sur les conditions requises en matière de licences pour Microsoft Defender pour endpoint, voir [Microsoft Defender pour les informations de licence de point de terminaison](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
 
 Pour obtenir des informations détaillées sur les licences, consultez le [site](https://www.microsoft.com/licensing/terms/) Termes du produit et travaillez avec votre équipe de compte pour en savoir plus sur les conditions générales.
 
-Pour plus d’informations sur le tableau des fonctionnalités Windows éditions, voir [Comparer Windows éditions.](https://www.microsoft.com/windowsforbusiness/compare)
+Pour plus d’informations sur le tableau des fonctionnalités Windows éditions, voir [Comparer Windows éditions](https://www.microsoft.com/windowsforbusiness/compare).
 
 ## <a name="browser-requirements"></a>Configuration requise pour le navigateur
 
@@ -61,8 +63,8 @@ L’accès à Defender pour le point de terminaison s’fait par le biais d’un
 
 ### <a name="supported-windows-versions"></a>Versions de Windows prises en charge
 
-- Windows 7 SP1 Enterprise ([Nécessite ESU pour la prise en charge.)](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)
-- Windows 7 SP1 Pro ([Nécessite ESU pour la prise en charge.)](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)
+- Windows 7 SP1 Enterprise ([EsU est nécessaire pour la prise en charge](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
+- Windows 7 SP1 Pro ([EsU est nécessaire pour la prise en charge](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
 - Windows 8,1 Entreprise
 - Windows 8.1 Professionnel
 - Windows 11 Entreprise
@@ -75,7 +77,7 @@ L’accès à Defender pour le point de terminaison s’fait par le biais d’un
 - Windows 10 Professionnel
 - Windows 10 Professionnel Éducation
 - Windows serveur
-  - Windows Server 2008 R2 SP1[(EsU](/windows-server/get-started/extended-security-updates-deploy)est nécessaire pour la prise en charge)
+  - Windows Server 2008 R2 SP1 ([requiert esu pour la prise en charge](/windows-server/get-started/extended-security-updates-deploy))
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server, version 1803 ou ultérieure
@@ -98,7 +100,7 @@ Pour plus d’informations sur les versions Windows 10, voir (/windows/release-h
 >
 > Pour les environnements virtuels, nous vous recommandons Windows 10 Entreprise LTSC 2019 ou une ultérieure.
 
-Lorsque les composants sont à jour sur les systèmes d’exploitation Microsoft Windows, la prise en charge de Microsoft Defender for Endpoint suit le cycle de vie du système d’exploitation respectif. Pour plus d’informations, voir [FAQ sur le cycle de vie.](/lifecycle/faq/general-lifecycle) De nouvelles fonctionnalités sont généralement fournies uniquement sur les systèmes d’exploitation qui n’ont pas encore atteint la fin de leur cycle de vie. Les mises à jour de l’intelligence de la sécurité (mises à jour de définition et de moteur) et la logique de détection continueront d’être fournies jusqu’au minimum :
+Lorsque les composants sont à jour sur les systèmes d’exploitation Microsoft Windows, la prise en charge de Microsoft Defender for Endpoint suit le cycle de vie du système d’exploitation respectif. Pour plus d’informations, voir [FAQ sur le cycle de vie](/lifecycle/faq/general-lifecycle). De nouvelles fonctionnalités sont généralement fournies uniquement sur les systèmes d’exploitation qui n’ont pas encore atteint la fin de leur cycle de vie. Les mises à jour de l’intelligence de la sécurité (mises à jour de définition et de moteur) et la logique de détection continueront d’être fournies jusqu’au minimum :
 
 - Date [de fin du support](/lifecycle/products/) (pour les systèmes d’exploitation qui n’ont pas de programme ESU (Extended Security Updates).
 - La [fin de la date ESU](/lifecycle/faq/extended-security-updates) (pour les systèmes d’exploitation qui ont un programme ESU).
@@ -122,7 +124,7 @@ Lorsque vous exécutez l’Assistant d’intégration pour la première fois, vo
 > [!NOTE]
 >
 > - Vous ne pouvez pas modifier votre emplacement de stockage de données après la première installation.
-> - Pour plus d’informations sur l’endroit et la façon dont Microsoft stocke vos données, voir Microsoft Defender for [Endpoint data storage and privacy.](data-storage-privacy.md)
+> - Pour plus d’informations sur l’endroit et la façon dont Microsoft stocke vos données, voir Microsoft [Defender for Endpoint data storage and privacy](data-storage-privacy.md) .
 
 ### <a name="diagnostic-data-settings"></a>Paramètres des données de diagnostic
 
@@ -138,7 +140,7 @@ Par défaut, ce service est activé. Il est bon de vérifier que vous obtenez de
    1. Accéder à **Démarrer** et taper **cmd**.
    2. Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
 
-2. Entrez la commande suivante, puis appuyez sur **Entrée**:
+2. Entrez la commande suivante, puis appuyez sur **Entrée** :
 
    ```console
    sc qc diagtrack
@@ -148,7 +150,7 @@ Par défaut, ce service est activé. Il est bon de vérifier que vous obtenez de
 
    ![Résultat de la commande de requête sc pour diagtrack.](images/windefatp-sc-qc-diagtrack.png)
 
-Vous devez configurer le service pour qu’il démarre automatiquement si la START_TYPE n’est pas définie sur **AUTO_START**. 
+Vous devez configurer le service pour qu’il démarre automatiquement si le START_TYPE  n’est pas **AUTO_START.**
 
 #### <a name="use-the-command-line-to-set-the-windows-diagnostic-data-service-to-automatically-start"></a>Utiliser la ligne de commande pour définir le Windows de données de diagnostic pour démarrer automatiquement
 
@@ -156,13 +158,13 @@ Vous devez configurer le service pour qu’il démarre automatiquement si la STA
     1. Accéder à **Démarrer** et taper **cmd**.
     2. Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
 
-2. Entrez la commande suivante, puis appuyez sur **Entrée**:
+2. Entrez la commande suivante, puis appuyez sur **Entrée** :
 
     ```console
     sc config diagtrack start=auto
     ```
 
-3. Un message de réussite s’affiche. Vérifiez la modification en entrant la commande suivante, puis appuyez sur **Entrée**:
+3. Un message de réussite s’affiche. Vérifiez la modification en entrant la commande suivante, puis appuyez sur **Entrée** :
 
     ```console
     sc qc diagtrack
@@ -174,7 +176,7 @@ La connectivité Internet sur les appareils est requise directement ou par proxy
 
 Le capteur Defender pour point de terminaison peut utiliser une bande passante moyenne quotidienne de 5 Mo pour communiquer avec le service cloud Defender for Endpoint et signaler les cyber-données. Les activités non limitées, telles que les téléchargements de fichiers et la collecte de packages d’enquête, ne sont pas incluses dans cette bande passante moyenne quotidienne.
 
-Pour plus d’informations sur les paramètres de configuration de proxy supplémentaires, voir Configurer les [paramètres de proxy d’appareil](configure-proxy-internet.md)et de connectivité Internet.
+Pour plus d’informations sur les paramètres de configuration proxy supplémentaires, voir [Configurer les paramètres de proxy d’appareil et de connectivité Internet](configure-proxy-internet.md).
 
 Avant d’intégrer des appareils, le service de données de diagnostic doit être activé. Le service est activé par défaut dans Windows 10 et Windows 11.
 
@@ -182,7 +184,7 @@ Avant d’intégrer des appareils, le service de données de diagnostic doit êt
 
 L’agent Defender for Endpoint dépend de la capacité des Antivirus Microsoft Defender à analyser des fichiers et à fournir des informations les concernant.
 
-Configurez les mises à jour d’intelligence de sécurité sur les appareils Defender for Endpoint, Antivirus Microsoft Defender est le logiciel anti-programme malveillant actif ou non. Pour plus d’informations, [voir Gérer Antivirus Microsoft Defender mises à jour et appliquer les lignes de base.](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)
+Configurez les mises à jour d’intelligence de sécurité sur les appareils Defender for Endpoint, Antivirus Microsoft Defender est le logiciel anti-programme malveillant actif ou non. Pour plus d’informations, voir [Gérer Antivirus Microsoft Defender mises à jour et appliquer les lignes de base](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
 
 Lorsque Antivirus Microsoft Defender n’est pas le logiciel anti-programme malveillant actif dans votre organisation et que vous utilisez le service Defender for Endpoint, Antivirus Microsoft Defender passe en mode passif.
 
@@ -197,7 +199,7 @@ Si vous intégrer des serveurs et que Antivirus Microsoft Defender n’est pas l
 
 Si vous exécutez Antivirus Microsoft Defender comme produit anti-programme malveillant principal sur vos appareils, l’agent Defender pour Endpoint est correctement intégré.
 
-Si vous exécutez un client anti-programme malveillant tiers et que vous utilisez des solutions de gestion des périphériques mobiles ou des Microsoft Endpoint Manager (branche actuelle), vous devez vous assurer que le pilote ELAM Antivirus Microsoft Defender est activé. Pour plus d’informations, [voir s’assurer Antivirus Microsoft Defender n’est pas désactivé par la stratégie.](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
+Si vous exécutez un client anti-programme malveillant tiers et que vous utilisez des solutions de gestion des périphériques mobiles ou des Microsoft Endpoint Manager (branche actuelle), vous devez vous assurer que le pilote ELAM Antivirus Microsoft Defender est activé. Pour plus d’informations, voir [Vérifier que Antivirus Microsoft Defender n’est pas désactivé par la stratégie](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## <a name="related-topics"></a>Voir aussi
 

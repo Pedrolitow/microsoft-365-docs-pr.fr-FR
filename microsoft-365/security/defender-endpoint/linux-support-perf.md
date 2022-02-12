@@ -13,15 +13,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6f7a3404ec0ae64e3dcdc4d6a3072e7fc2936646
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 14424f0cdff908fc641d6de1c22d25546473cc13
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172450"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766043"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de performances pour Microsoft Defender pour point de terminaison sur Linux
 
@@ -39,7 +39,7 @@ Ce document fournit des instructions sur la façon de limiter les problèmes de 
 Selon les applications que vous exécutez et les caractéristiques de votre appareil, vous pouvez obtenir des performances sous-optimales lors de l’exécution de Defender pour Endpoint sur Linux. En particulier, les applications ou les processus système qui accèdent à de nombreuses ressources telles que le processeur, le disque et la mémoire sur un court laps de temps peuvent entraîner des problèmes de performances dans Defender pour Endpoint sur Linux.
 
 > [!WARNING]
-> Avant de commencer, assurez-vous que les autres produits de sécurité ne sont pas en cours **d’exécution sur l’appareil.** Plusieurs produits de sécurité peuvent être en conflit et avoir un impact sur les performances de l’hôte.
+> Avant de commencer, **assurez-vous que les autres produits de sécurité ne sont pas en cours d’exécution sur l’appareil**. Plusieurs produits de sécurité peuvent être en conflit et avoir un impact sur les performances de l’hôte.
 
 ## <a name="troubleshoot-performance-issues-using-real-time-protection-statistics"></a>Résoudre les problèmes de performances à l’aide des statistiques de protection en temps réel
 
@@ -62,7 +62,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
     Configuration property updated
     ```
 
-    Si votre appareil est géré par votre organisation, la protection en temps réel peut être désactivée par votre administrateur à l’aide des instructions dans Définir les préférences pour [Defender pour Endpoint sur Linux.](linux-preferences.md)
+    Si votre appareil est géré par votre organisation, la protection en temps réel peut être désactivée par votre administrateur à l’aide des instructions dans Définir les préférences pour [Defender pour Endpoint sur Linux](linux-preferences.md).
 
     > [!NOTE]
     > Si le problème de performances persiste alors que la protection en temps réel est éteinte, l’origine du problème peut être le composant protection évolutive des points de terminaison (PEPT). Dans ce cas, suivez les étapes de la section Résolution des problèmes de performances à l’aide de **Microsoft Defender pour Endpoint Client Analyzer** de cet article.
@@ -72,7 +72,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
     > [!NOTE]
     > Cette fonctionnalité est disponible dans la version 100.90.70 ou une version plus récente.
 
-    Cette fonctionnalité est activée par défaut sur les `Dogfood` canaux et les `InsiderFast` canaux. Si vous utilisez un autre canal de mise à jour, cette fonctionnalité peut être activée à partir de la ligne de commande :
+    Cette fonctionnalité est activée par défaut sur les canaux `Dogfood` et les `InsiderFast` canaux. Si vous utilisez un autre canal de mise à jour, cette fonctionnalité peut être activée à partir de la ligne de commande :
 
     ```bash
     mdatp config real-time-protection-statistics --value enabled
@@ -84,7 +84,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
     mdatp health --field real_time_protection_enabled
     ```
 
-    Vérifiez que `real_time_protection_enabled` l’entrée est `true` . Sinon, exécutez la commande suivante pour l’activer :
+    Vérifiez que l’entrée `real_time_protection_enabled` est `true`. Sinon, exécutez la commande suivante pour l’activer :
 
     ```bash
     mdatp config real-time-protection --value enabled
@@ -101,7 +101,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
     ```
 
     > [!NOTE]
-    > L’utilisation (notez le tiret double) permet de s’assurer que le format de sortie ```--output json``` est prêt pour l’utilisation.
+    > L’utilisation ```--output json``` (notez le tiret double) permet de s’assurer que le format de sortie est prêt pour l’utilisation.
 
     Le résultat de cette commande affiche tous les processus et l’activité d’analyse associée.
 
@@ -151,7 +151,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
     125  CrashPlanService 164
     ```
 
-    Pour améliorer les performances de Defender pour Endpoint sur Linux, recherchez celui qui a le plus grand nombre sous la ligne et ajoutez une `Total files scanned` exclusion pour celui-ci. Pour plus d’informations, voir Configurer et valider des [exclusions pour Defender pour Endpoint sur Linux.](linux-exclusions.md)
+    Pour améliorer les performances de Defender pour Endpoint sur Linux, `Total files scanned` recherchez celui qui a le plus grand nombre sous la ligne et ajoutez une exclusion pour celui-ci. Pour plus d’informations, voir [Configurer et valider des exclusions pour Defender pour Endpoint sur Linux](linux-exclusions.md).
 
     > [!NOTE]
     > L’application stocke les statistiques en mémoire et suit uniquement l’activité des fichiers depuis son début et que la protection en temps réel a été activée. Les processus qui ont été lancés avant ou pendant les périodes où la protection en temps réel était hors programme ne sont pas comptabilisés. En outre, seuls les événements qui ont déclenché des analyses sont comptés.
@@ -165,12 +165,12 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
 **S’applique à :**
 - Problèmes de performances de tous les composants Defender pour point de terminaison disponibles, tels que av et PEPT  
 
-Microsoft Defender for Endpoint Client Analyzer (MDECA) peut collecter des suivis, des journaux [](/microsoft-365/security/defender-endpoint/onboard-configure) et des informations de diagnostic afin de résoudre les problèmes de performances sur les appareils intégrés sur Linux.
+Microsoft Defender for Endpoint Client Analyzer (MDECA) peut collecter des suivis, des journaux et des informations de diagnostic afin de résoudre les problèmes de performances [](/microsoft-365/security/defender-endpoint/onboard-configure) sur les appareils intégrés sur Linux.
 
 > [!NOTE]
-> L’outil Microsoft Defender for Endpoint Client Analyzer est régulièrement utilisé par les services de support technique Microsoft (CSS) pour collecter des informations telles que (mais sans s’y limiter) des adresses IP, des noms de PC qui vous aideront à résoudre les problèmes que vous rencontrez peut-être avec Microsoft Defender pour le point de terminaison. Pour plus d’informations sur notre déclaration de confidentialité, voir [déclaration de confidentialité Microsoft.](https://privacy.microsoft.com/privacystatement)
+> L’outil Microsoft Defender for Endpoint Client Analyzer est régulièrement utilisé par les services de support technique Microsoft (CSS) pour collecter des informations telles que (mais sans s’y limiter) des adresses IP, des noms de PC qui vous aideront à résoudre les problèmes que vous rencontrez peut-être avec Microsoft Defender pour le point de terminaison. Pour plus d’informations sur notre déclaration de confidentialité, voir [déclaration de confidentialité Microsoft](https://privacy.microsoft.com/privacystatement).
 
-### <a name="requirements"></a>Conditions requises
+### <a name="requirements"></a>Configuration requise
 
 - L’analyseur client peut s’exécuter sur des présentations de [Linux](microsoft-defender-endpoint-linux.md#system-requirements) prise en charge avant ou après l’intégration à Microsoft Defender pour Endpoint.
 - Téléchargez l’analyseur client pour Linux à partir de la dernière version d’aperçu disponible en téléchargement ici : <https://aka.ms/XMDEClientAnalyzer>
@@ -185,7 +185,7 @@ Ouvrez un terminal ou un SSH sur l’ordinateur approprié et exécutez les comm
 3. `cd XMDEClientAnalyzer`
 4. `chmod +x mde_support_tool.sh`
 5. Exécutez en tant qu’utilisation non racine pour installer les composants pip et lxml requis : `./mde_support_tool.sh`
-6. Pour collecter le package de diagnostic réel et générer le fichier d’archivage des résultats, exécutez à nouveau en tant que racine `./mde_support_tool.sh -d` : Exemple :
+6. Pour collecter le package de diagnostic réel et générer le fichier d’archivage des résultats, exécutez à nouveau en tant que racine : `./mde_support_tool.sh -d` Exemple :
 
    ![Image de l’exemple de ligne de commande.](images/4ca188f6c457e335abe3c9ad3eddda26.png)
 
@@ -202,7 +202,7 @@ Ouvrez un terminal ou un SSH sur l’ordinateur approprié et exécutez les comm
 \# Afficher le message d’aide
 
 **performance** \# Performances<br>
-\# Collecte un suivi complet pour l’analyse d’un problème de performances qui peut être reproduit à la demande. Utilisation `--length=<seconds>` pour spécifier la durée du critère.
+\# Collecte un suivi complet pour l’analyse d’un problème de performances qui peut être reproduit à la demande. Utilisation pour `--length=<seconds>` spécifier la durée du critère.
 
 **-o** \# Sortie<br>
 \# Spécifier le chemin d’accès de destination pour le fichier de résultats
@@ -237,7 +237,7 @@ Ouvrez un terminal ou un SSH sur l’ordinateur approprié et exécutez les comm
 
 - Health.txt
 
-  Description : sortie d’état d’état de base affichée lors de l’exécution de la *commande d’état d’état mdatp.*
+  Description : sortie d’état d’état de base affichée lors de l’exécution de la *commande d’état d’état mdatp* .
 
 - Events.xml
 

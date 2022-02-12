@@ -13,23 +13,22 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 20579b54e0ce9e58c1466afbbda348730ffad839
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 74925625f6d004c1901756cde75310b345dd5747
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168521"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766031"
 ---
 # <a name="examples-of-device-control-policies-for-jamf"></a>Exemples de stratégies de contrôle d’appareil pour JAMF
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -38,7 +37,7 @@ Ce document contient des exemples de stratégies de contrôle d’appareil que v
 
 ## <a name="restrict-access-to-all-removable-media"></a>Restreindre l’accès à tous les médias amovibles
 
-L’exemple suivant limite l’accès à tous les médias amovibles. Notez l’autorisation qui est appliquée au niveau supérieur de la stratégie, ce qui signifie que toutes les opérations sur `none` les fichiers seront interdites.
+L’exemple suivant limite l’accès à tous les médias amovibles. Notez l’autorisation `none` qui est appliquée au niveau supérieur de la stratégie, ce qui signifie que toutes les opérations sur les fichiers seront interdites.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -63,7 +62,7 @@ L’exemple suivant limite l’accès à tous les médias amovibles. Notez l’a
 
 ## <a name="set-all-removable-media-to-be-read-only"></a>Définir tous les médias amovibles en lecture seule
 
-L’exemple suivant configure tous les médias amovibles en lecture seule. Notez l’autorisation qui est appliquée au niveau supérieur de la stratégie, ce qui signifie que toutes les opérations d’écriture et `read` d’exécution seront non autorisées.
+L’exemple suivant configure tous les médias amovibles en lecture seule. Notez l’autorisation `read` qui est appliquée au niveau supérieur de la stratégie, ce qui signifie que toutes les opérations d’écriture et d’exécution seront non autorisées.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -88,7 +87,7 @@ L’exemple suivant configure tous les médias amovibles en lecture seule. Notez
 
 ## <a name="disallow-program-execution-from-removable-media"></a>Ne pas exécuter le programme à partir d’un média amovible
 
-L’exemple suivant montre comment l’exécution d’un programme à partir d’un média amovible peut être rejetée. Notez `read` les `write` autorisations qui sont appliquées au niveau supérieur de la stratégie.
+L’exemple suivant montre comment l’exécution d’un programme à partir d’un média amovible peut être rejetée. Notez les `read` autorisations `write` qui sont appliquées au niveau supérieur de la stratégie.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -114,7 +113,7 @@ L’exemple suivant montre comment l’exécution d’un programme à partir d�
 
 ## <a name="restrict-all-devices-from-specific-vendors"></a>Restreindre tous les appareils de fournisseurs spécifiques
 
-L’exemple suivant limite tous les appareils de fournisseurs spécifiques (dans ce cas identifiés par `fff0` et `4525` ). Tous les autres appareils seront illimités, car l’autorisation définie au niveau supérieur de la stratégie répertorie toutes les autorisations possibles (lecture, écriture et exécution).
+L’exemple suivant limite tous les appareils de fournisseurs spécifiques (dans ce cas identifiés par `fff0` et `4525`). Tous les autres appareils seront illimités, car l’autorisation définie au niveau supérieur de la stratégie répertorie toutes les autorisations possibles (lecture, écriture et exécution).
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -158,7 +157,7 @@ L’exemple suivant limite tous les appareils de fournisseurs spécifiques (dans
 
 ## <a name="restrict-specific-devices-identified-by-vendor-id-product-id-and-serial-number"></a>Restreindre des appareils spécifiques identifiés par l’ID du fournisseur, l’ID de produit et le numéro de série
 
-L’exemple suivant limite deux appareils spécifiques, identifiés par l’ID du `fff0` fournisseur, l’ID de produit `1000` et les numéros de série et `04ZSSMHI2O7WBVOA` `04ZSSMHI2O7WBVOB` . À tous les autres niveaux de la stratégie, les autorisations incluent toutes les valeurs possibles (lecture, écriture et exécution), ce qui signifie que tous les autres appareils seront illimités.
+L’exemple suivant limite deux appareils spécifiques, identifiés par l’ID `fff0`du fournisseur, l’ID `1000`de produit et les numéros de série et `04ZSSMHI2O7WBVOA` `04ZSSMHI2O7WBVOB`. À tous les autres niveaux de la stratégie, les autorisations incluent toutes les valeurs possibles (lecture, écriture et exécution), ce qui signifie que tous les autres appareils seront illimités.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -218,6 +217,6 @@ L’exemple suivant limite deux appareils spécifiques, identifiés par l’ID d
 </plist>
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Vue d’ensemble du contrôle d’appareil pour macOS](mac-device-control-overview.md)

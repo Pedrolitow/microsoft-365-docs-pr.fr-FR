@@ -1,7 +1,7 @@
 ---
 title: Déploiement manuel de Microsoft Defender pour endpoint sur macOS
-description: 'Installez Microsoft Defender pour le point de terminaison sur macOS manuellement, à partir de la ligne de commande.'
-keywords: 'microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, déployer, désinstallation, intune, jamf, macos,pératin, mojave, high sierra'
+description: Installez Microsoft Defender pour le point de terminaison sur macOS manuellement, à partir de la ligne de commande.
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, déployer, désinstallation, intune, jamf, macos,pératin, mojave, high sierra
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,13 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
+ms.openlocfilehash: 1fce7aa103de9fb90cafa88a286cbf33bc753456
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765120"
 ---
-
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement manuel de Microsoft Defender pour endpoint sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -33,7 +37,7 @@ ms.technology: mde
 Cette rubrique décrit comment déployer Manuellement Microsoft Defender pour Endpoint sur macOS. Un déploiement réussi nécessite la réalisation de toutes les étapes suivantes :
 
 - [Télécharger les packages d’installation et d’intégration](#download-installation-and-onboarding-packages)
-- [Installation d’applications (macOS 10.15 et versions antérieures)](#application-installation-macos-1015-and-older-versions)
+- [Installation d’applications (macOS 10.15)](#application-installation-macos-1015)
 - [Installation d’applications (macOS 11 et versions plus récentes)](#application-installation-macos-11-and-newer-versions)
 - [Configuration du client](#client-configuration)
 
@@ -54,7 +58,7 @@ Téléchargez les packages d’installation et d’intégration à partir Micros
 
 5. À partir d’une invite de commandes, vérifiez que vous avez les deux fichiers.
 
-## <a name="application-installation-macos-1015-and-older-versions"></a>Installation d’applications (macOS 10.15 et versions antérieures)
+## <a name="application-installation-macos-1015"></a>Installation d’applications (macOS 10.15)
 
 Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur sur l’appareil.
 

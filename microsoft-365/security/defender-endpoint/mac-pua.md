@@ -13,22 +13,21 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 23838ce85603abfb213e2ae0afdcb65ee6ba2ae3
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: a0fb8e19dd573da67936892c81cd515b463a7cba
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170969"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765743"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>Détecter et bloquer les applications potentiellement indésirables avec Microsoft Defender pour endpoint sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -40,7 +39,7 @@ Ces applications ne sont pas considérées comme des virus, des programmes malve
 
 Ces applications peuvent augmenter le risque d’infection de votre réseau par des programmes malveillants, rendre l’identification des programmes malveillants plus difficile et entraîner une perte de ressources informatiques lors du nettoyage des applications.
 
-## <a name="how-it-works"></a>Fonctionnement
+## <a name="how-it-works"></a>Mode de fonctionnement
 
 Microsoft Defender pour le point de terminaison sur macOS peut détecter et signaler des fichiers PUA. Lorsqu’ils sont configurés en mode de blocage, les fichiers PUA sont placés en quarantaine.
 
@@ -50,12 +49,12 @@ Lorsqu’une puA est détectée sur un point de terminaison, Microsoft Defender 
 
 La protection PUA dans Microsoft Defender pour endpoint sur macOS peut être configurée de l’une des manières suivantes :
 
-- **Désactivé**: la protection PUA est désactivée.
-- **Audit**: les fichiers PUA sont signalés dans les journaux du produit, mais pas dans Microsoft 365 Defender portail. Aucune notification n’est présentée à l’utilisateur et aucune action n’est prise par le produit.
-- **Bloquer**: les fichiers PUA sont signalés dans les journaux du produit et dans Microsoft 365 Defender portail. Une notification est présentée à l’utilisateur et une action est prise par le produit.
+- **Désactivé :** la protection PUA est désactivée.
+- **Audit** : les fichiers PUA sont signalés dans les journaux du produit, mais pas dans Microsoft 365 Defender portail. Aucune notification n’est présentée à l’utilisateur et aucune action n’est prise par le produit.
+- **Bloc** : les fichiers PUA sont signalés dans les journaux du produit et dans Microsoft 365 Defender portail. Une notification est présentée à l’utilisateur et une action est prise par le produit.
 
 > [!WARNING]
-> Par défaut, la protection PUA est configurée en mode **Audit.**
+> Par défaut, la protection PUA est configurée en mode **Audit** .
 
 Vous pouvez configurer la façon dont les fichiers PUA sont gérés à partir de la ligne de commande ou de la console de gestion.
 
@@ -69,8 +68,8 @@ mdatp threat policy set --type potentially_unwanted_application --action [off|au
 
 ### <a name="use-the-management-console-to-configure-pua-protection"></a>Utilisez la console de gestion pour configurer la protection PUA :
 
-Dans votre entreprise, vous pouvez configurer la protection PUA à partir d’une console de gestion, telle que JAMF ou Intune, de la même manière que les autres paramètres de produit sont configurés. Pour plus d’informations, consultez la section [Paramètres](mac-preferences.md#threat-type-settings) du type de menace de la rubrique Définir les préférences de Microsoft Defender pour le point de terminaison [sur macOS.](mac-preferences.md)
+Dans votre entreprise, vous pouvez configurer la protection PUA à partir d’une console de gestion, telle que JAMF ou Intune, de la même manière que les autres paramètres de produit sont configurés. Pour plus d’informations, consultez la section [Paramètres du type](mac-preferences.md#threat-type-settings) de menace de la rubrique Définir les préférences [de Microsoft Defender pour le point de terminaison sur macOS](mac-preferences.md) .
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Définir des préférences pour Microsoft Defender pour le point de terminaison sur macOS](mac-preferences.md)

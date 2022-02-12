@@ -17,22 +17,26 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkEXCHANGE
+- business_assist
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Apprenez à convertir une boîte aux lettres privée en boîte aux lettres partagée accessible par plusieurs personnes et non par une seule personne. '
-ms.openlocfilehash: 45ed21e1638bfee2d13ee59193a542bd4f70e05b
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: a1b82d744cc43f8119e9819537467133f2bae17c
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422266"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766607"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée
 
 Lorsque vous convertissez la boîte aux lettres d’un utilisateur en boîte aux lettres partagée, l’ensemble du courrier électronique et du calendrier existants est conservé. Ce n’est que maintenant que dans une boîte aux lettres partagée que plusieurs personnes pourront y accéder au lieu d’une seule personne. À une date ultérieure, vous pouvez reconverti une boîte aux lettres partagée en boîte aux lettres utilisateur (privée).
+
+> [!TIP]
+> Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de collaborer avec [un spécialiste microsoft des petites entreprises](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Business Assist, vous et vos employés accédez 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -42,7 +46,7 @@ Lorsque vous convertissez la boîte aux lettres d’un utilisateur en boîte aux
 
 - Les boîtes aux lettres partagées peuvent avoir jusqu’à 50 Go de données sans licence. Pour contenir davantage de données, vous avez besoin d’une licence qui lui est attribuée. Vous devrez peut-être supprimer un grand nombre de messages électroniques volumineux (par ex., ceux avec pièces jointes) de la boîte aux lettres partagée pour réduire la taille de la boîte aux lettres afin de pouvoir supprimer la licence.
 
-- Ne supprimez pas le compte de l’ancien utilisateur. Cette valeur est nécessaire pour ancrer la boîte aux lettres partagée. Si vous avez déjà supprimé le compte d’utilisateur, voir Convertir la boîte aux lettres [d’un utilisateur supprimé.](#convert-the-mailbox-of-a-deleted-user)
+- Ne supprimez pas le compte de l’ancien utilisateur. Cette valeur est nécessaire pour ancrer la boîte aux lettres partagée. Si vous avez déjà supprimé le compte d’utilisateur, voir Convertir la boîte aux lettres [d’un utilisateur supprimé](#convert-the-mailbox-of-a-deleted-user).
 
 - Les règles sont intactes une fois la boîte aux lettres convertie en boîte aux lettres partagée.
 
@@ -50,34 +54,34 @@ Lorsque vous convertissez la boîte aux lettres d’un utilisateur en boîte aux
  
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Classic Exchange admin center</a>.
 
-2. Sélectionnez **Les boîtes aux lettres** de \> **destinataires.**
+2. Sélectionnez **Boîtes aux lettres** \> **destinataires**.
 
-3. Sélectionnez la boîte aux lettres de l’utilisateur. Sous **Convertir en boîte aux lettres partagée,** sélectionnez **Convertir.**
+3. Sélectionnez la boîte aux lettres de l’utilisateur. Sous **Convertir en boîte aux lettres partagée**, sélectionnez **Convertir**.
 
-4. Si la boîte aux lettres est plus petite que 50 Go, vous pouvez supprimer la licence de l’utilisateur [et](../manage/remove-licenses-from-users.md)arrêter de payer pour celle-ci. Ne supprimez pas le compte de l’utilisateur. La boîte aux lettres partagée en a besoin comme ancre. Si vous convertissez la boîte aux lettres d’un employé qui quitte votre organisation, vous devez prendre des mesures supplémentaires pour vous assurer qu’il ne peut plus se connecter. Pour plus d’informations, voir [Supprimer un ancien employé de Microsoft 365](../add-users/remove-former-employee.md).
+4. Si la boîte aux lettres est plus petite que 50 Go, vous pouvez supprimer la licence de l’utilisateur [et arrêter](../manage/remove-licenses-from-users.md) de payer pour celle-ci. Ne supprimez pas le compte de l’utilisateur. La boîte aux lettres partagée en a besoin comme ancre. Si vous convertissez la boîte aux lettres d’un employé qui quitte votre organisation, vous devez prendre des mesures supplémentaires pour vous assurer qu’il ne peut plus se connecter. Pour plus d’informations, voir [Supprimer un ancien employé de Microsoft 365](../add-users/remove-former-employee.md).
     
 > [!NOTE]
-> Il n’est pas nécessaire de réinitialiser le mot de passe de l’utilisateur lors de la conversion de boîte aux lettres. Toutefois, si le mot  de passe n’est pas réinitialisé, le nom d’utilisateur et le mot de passe d’origine continuent de fonctionner une fois la conversion de la boîte aux lettres terminée.
+> Il n’est pas nécessaire de réinitialiser le mot de passe de l’utilisateur lors de la conversion de boîte aux lettres. Toutefois, si le mot de passe n’est pas réinitialisé **, le** nom d’utilisateur et le mot de passe d’origine continuent de fonctionner une fois la conversion de la boîte aux lettres terminée.
 
-Pour tout ce que vous devez savoir sur les boîtes aux lettres partagées, voir À propos des boîtes aux lettres partagées [et](about-shared-mailboxes.md) créer une boîte aux [lettres partagée.](create-a-shared-mailbox.md)
+Pour tout ce que vous devez savoir sur les boîtes aux lettres partagées, voir À propos des boîtes aux lettres partagées [et](about-shared-mailboxes.md) [Créer une boîte aux lettres partagée](create-a-shared-mailbox.md).
 
 > [!NOTE]
 > Les boîtes aux lettres partagées ne nécessitent pas de licence distincte. Toutefois, si vous souhaitez activer une boîte aux lettres d'archivage ou placer une conservation inaltérable ou une conservation pour litige sur une boîte aux lettres partagée, vous devez affecter une licence Exchange Online Plan 1 avec l'Archivage Exchange Online ou une licence Exchange Online Plan 2 à la boîte aux lettres.
 
 ## <a name="use-the-new-exchange-admin-center-to-convert-a-mailbox"></a>Utiliser le Centre d’administration Exchange pour convertir une boîte aux lettres
 
-1. Go to the <a href="https://admin.exchange.microsoft.com/#/homepage" target="_blank">Exchange admin center</a>.
+1. Go to the <a href="https://admin.exchange.microsoft.com/#/homepage" target="_blank"> Exchange admin center</a>.
 
-2. Sélectionnez **Les boîtes aux lettres** de \> **destinataires.**
+2. Sélectionnez **Boîtes aux lettres** \> **destinataires**.
 
-3. Sélectionnez la boîte aux lettres de l’utilisateur. Dans **l’onglet Boîte** aux lettres, sous **Plus d’actions,** **sélectionnez Convertir en boîte aux lettres partagée.**
+3. Sélectionnez la boîte aux lettres de l’utilisateur. Sous **l’onglet Boîte** aux lettres, sous **Plus d’actions**, **sélectionnez Convertir en boîte aux lettres partagée**.
 
-4. Si la boîte aux lettres est plus petite que 50 Go, vous pouvez supprimer la licence de l’utilisateur [et](../manage/remove-licenses-from-users.md)arrêter de payer pour celle-ci. Ne supprimez pas le compte de l’utilisateur. La boîte aux lettres partagée en a besoin comme ancre. Si vous convertissez la boîte aux lettres d’un employé qui quitte votre organisation, vous devez prendre des mesures supplémentaires pour vous assurer qu’il ne peut plus se connecter. Veuillez consulter [Supprimer un ancien employé de Microsoft 365](../add-users/remove-former-employee.md).
+4. Si la boîte aux lettres est plus petite que 50 Go, vous pouvez supprimer la licence de l’utilisateur [et arrêter](../manage/remove-licenses-from-users.md) de payer pour celle-ci. Ne supprimez pas le compte de l’utilisateur. La boîte aux lettres partagée en a besoin comme ancre. Si vous convertissez la boîte aux lettres d’un employé qui quitte votre organisation, vous devez prendre des mesures supplémentaires pour vous assurer qu’il ne peut plus se connecter. Veuillez consulter [Supprimer un ancien employé de Microsoft 365](../add-users/remove-former-employee.md).
     
 > [!NOTE]
-> Il n’est pas nécessaire de réinitialiser le mot de passe de l’utilisateur lors de la conversion de boîte aux lettres. Toutefois, si le mot  de passe n’est pas réinitialisé, le nom d’utilisateur et le mot de passe d’origine continuent de fonctionner une fois la conversion de la boîte aux lettres terminée.
+> Il n’est pas nécessaire de réinitialiser le mot de passe de l’utilisateur lors de la conversion de boîte aux lettres. Toutefois, si le mot de passe n’est pas réinitialisé **, le** nom d’utilisateur et le mot de passe d’origine continuent de fonctionner une fois la conversion de la boîte aux lettres terminée.
 
-Pour tout ce que vous devez savoir sur les boîtes aux lettres partagées, voir À propos des boîtes aux lettres partagées [et](about-shared-mailboxes.md) créer une boîte aux [lettres partagée.](create-a-shared-mailbox.md)
+Pour tout ce que vous devez savoir sur les boîtes aux lettres partagées, voir À propos des boîtes aux lettres partagées [et](about-shared-mailboxes.md) [Créer une boîte aux lettres partagée](create-a-shared-mailbox.md).
 
 > [!NOTE]
 > Les boîtes aux lettres partagées ne nécessitent pas de licence distincte. Toutefois, si vous souhaitez activer une boîte aux lettres d'archivage ou placer une conservation inaltérable ou une conservation pour litige sur une boîte aux lettres partagée, vous devez affecter une licence Exchange Online Plan 1 avec l'Archivage Exchange Online ou une licence Exchange Online Plan 2 à la boîte aux lettres.
@@ -86,7 +90,7 @@ Pour tout ce que vous devez savoir sur les boîtes aux lettres partagées, voir 
 
 Après avoir supprimé un compte d’utilisateur, suivez les étapes suivantes pour convertir son ancienne boîte aux lettres en boîte aux lettres de partage :
 
-1. [Restituer le compte de l’utilisateur.](../add-users/restore-user.md)
+1. [Restituer le compte de l’utilisateur](../add-users/restore-user.md).
 
 2. Assurez-vous qu Microsoft 365 licence est affectée.
 
@@ -102,11 +106,11 @@ Après avoir supprimé un compte d’utilisateur, suivez les étapes suivantes p
 
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>.
    
-2. Sélectionnez **Destinataires** \> **partagés.**
+2. Sélectionnez **Destinataires partagés**\>.
 
-3. Sélectionnez la boîte aux lettres partagée. Sous **Convertir en boîte aux lettres normale,** sélectionnez **Convertir.**
+3. Sélectionnez la boîte aux lettres partagée. Sous **Convertir en boîte aux lettres normale**, sélectionnez **Convertir**.
 
-4. Revenir au Centre d’administration. Sous **Utilisateurs,** choisissez le compte d’utilisateur associé à l’ancienne boîte aux lettres partagée. Attribuez une licence au compte, puis réinitialisez le mot de passe.
+4. Revenir au Centre d’administration. Sous **Utilisateurs**, choisissez le compte d’utilisateur associé à l’ancienne boîte aux lettres partagée. Attribuez une licence au compte, puis réinitialisez le mot de passe.
 
    La mise en place de la boîte aux lettres prendra quelques minutes, mais après cela, la personne qui utilisera ce compte sera prête à l’emploi. Lorsqu’ils se connectent, ils voient les éléments de courrier électronique et de calendrier qui se trouveraient dans la boîte aux lettres partagée.
 
@@ -119,7 +123,7 @@ Pour plus d’informations sur la conversion d’une boîte aux lettres utilisat
  
 
 > [!NOTE]
-> Si vous êtes membre du groupe de rôles Gestion de l’organisation ou Gestion des destinataires, vous pouvez utiliser l’Exchange Management Shell pour modifier une boîte aux lettres utilisateur en boîte aux lettres partagée en local. Par exemple : `Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`.
+> Si vous êtes membre du groupe de rôles Gestion de l’organisation ou Gestion des destinataires, vous pouvez utiliser l’Exchange Management Shell pour modifier une boîte aux lettres utilisateur en boîte aux lettres partagée en local. Par exemple, `Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`.
 
 ## <a name="related-content"></a>Contenu associé
 

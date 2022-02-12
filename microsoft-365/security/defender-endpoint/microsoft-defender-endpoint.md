@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender pour point de terminaison
 description: Microsoft Defender pour point de terminaison est une plateforme de sécurité de point de terminaison d’entreprise qui permet de se défendre contre les menaces persistantes avancées.
-keywords: 'introduction à Microsoft Defender pour point de terminaison, présentation de Microsoft Defender pour point de terminaison, cybersécurité, menace persistante avancée, sécurité d’entreprise, capteur de comportement de l’ordinateur, sécurité cloud, analytique, renseignement sur les menaces, réduction de la surface d’attaque, protection nouvelle génération, investigation et correction automatisée, experts en menaces Microsoft, degré de sécurisation, repérage avancé, Microsoft 365 Defender, repérage de cybermenaces'
+keywords: introduction à Microsoft Defender pour point de terminaison, présentation de Microsoft Defender pour point de terminaison, cybersécurité, menace persistante avancée, sécurité d’entreprise, capteur de comportement de l’ordinateur, sécurité cloud, analytique, renseignement sur les menaces, réduction de la surface d’attaque, protection nouvelle génération, investigation et correction automatisée, experts en menaces Microsoft, degré de sécurisation, repérage avancé, Microsoft 365 Defender, repérage de cybermenaces
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -11,12 +11,19 @@ author: mjcaparas
 ms.localizationpriority: high
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-endpoint
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
+ms.openlocfilehash: 47773d3fb7f94811a03c78f181b2552245f89f97
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767579"
 ---
-
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]

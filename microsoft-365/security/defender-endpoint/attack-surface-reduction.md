@@ -19,12 +19,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: m365initiative-m365-defender
 ms.date: 1/18/2022
-ms.openlocfilehash: 149abcc1677dc3b7664d8c94170342c4679f9e4d
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 3f3daaa068f067c8d4ffbbf40a4d8ba1d32d04b9
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62465408"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766440"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>Vue d’ensemble des règles de réduction de la surface d’attaque
 
@@ -102,6 +102,8 @@ En outre, lorsque certaines règles de réduction de la surface d’attaque sont
 
 Les notifications et les alertes générées peuvent être vues dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender web</a>.
 
+Pour plus d’informations sur les fonctionnalités de notification et d’alerte, voir : Par alerte de règle et [détails de notification](attack-surface-reduction-rules-reference.md#per-rule-alert-and-notification-details), dans la référence des règles de réduction de la **surface d’attaque de l’article**.
+
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Événements de réduction de la surface d’attaque et de recherche avancée
 
 Vous pouvez utiliser le hunting avancé pour afficher les événements de réduction de la surface d’attaque. Pour simplifier le volume des données entrantes, seuls les processus uniques pour chaque heure sont consultables avec le hunting avancé. L’heure d’un événement de réduction de la surface d’attaque est la première fois que cet événement est vu dans l’heure.
@@ -122,8 +124,7 @@ Vous pouvez définir des règles de réduction de la surface d’attaque pour le
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 
   >[!NOTE]
-  >Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) pour que cette fonctionnalité fonctionne. 
-
+  >Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) pour que cette fonctionnalité fonctionne.
 
 Bien que les règles de réduction de la surface d’attaque ne nécessitent [Windows licence E5](/windows/deployment/deploy-enterprise-licenses), si vous avez Windows E5, vous obtenez des fonctionnalités de gestion avancées. Les fonctionnalités avancées, disponibles uniquement dans Windows E5, sont les suivantes :
 

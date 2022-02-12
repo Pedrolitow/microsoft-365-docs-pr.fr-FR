@@ -13,15 +13,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1cbef40696c7d2973a22ad9606c5fd99726329ae
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 41ba14fd2e4a9e3726e4ef4287812cf8d3ffb2d1
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345962"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767238"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré
 
@@ -66,7 +66,7 @@ Exécutez le script PowerShell suivant sur un appareil nouvellement intégré po
 
 La fenêtre d’invite de commandes se ferme automatiquement. Si elle réussit, une nouvelle alerte s’affiche dans le portail pour l’appareil intégré dans environ dix minutes.
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Voir aussi
 
 - [Intégrer des appareils Windows 10](configure-endpoints.md)
 - [Serveurs intégrés](configure-server-endpoints.md)

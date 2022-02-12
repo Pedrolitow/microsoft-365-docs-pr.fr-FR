@@ -1,7 +1,7 @@
 ---
 title: Configurer microsoft Defender pour le point de terminaison sur les stratégies macOS dans Jamf Pro
 description: Découvrez comment configurer les stratégies Microsoft Defender for Endpoint sur macOS dans Jamf Pro
-keywords: 'policies, microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, defender, mojave, high sierra'
+keywords: policies, microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, defender, mojave, high sierra
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,12 +12,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
+ms.openlocfilehash: 981e2afc2bfe3ff27bf5be492c98f96229a6deab
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766883"
 ---
-
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurer microsoft Defender pour le point de terminaison sur les stratégies macOS dans Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -204,7 +208,7 @@ Il vous suffit de télécharger un schéma mis à jour, de modifier le profil de
     - archive_bomb
     - cloudService
     - automaticSampleSubmission
-    - étiquettes
+    - balises
     - hideStatusMenuIcon
 
      Pour plus d’informations, [voir Liste des propriétés pour le profil de configuration complet JAMF](mac-preferences.md#property-list-for-jamf-full-configuration-profile).

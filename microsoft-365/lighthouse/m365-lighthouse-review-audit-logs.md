@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment consulter les journaux d’audit.
-ms.openlocfilehash: a2c9efe88930ad0aae197a5cac26cf06b1386a53
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 2044e61430ef26cf671340c02363658d54414f3b
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354935"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767483"
 ---
 # <a name="review-audit-logs"></a>Examiner les journaux d’audit
 
@@ -78,7 +78,7 @@ Le tableau suivant est une liste des types d’activité capturés dans les jour
 |**restartDevice**                            | Appareils                          | Redémarrer                                                          | Microsoft Endpoint Manager |
 | **syncDevice**                               | Appareils                          | Synchronisation                                                             | Microsoft Endpoint Manager |
 | **rebootNow**                                | Gestion des menaces                | Redémarrage                                                           | Microsoft Endpoint Manager |
-| **reprovision**                              | Clients                          | Nouvelle tentative d’approvisionnement                                               | Windows 365                |
+| **reprovision**                              | Windows 365     | Nouvelle tentative d’approvisionnement                                               | Windows 365                |
 | **windowsDefenderScanFull**                  | Gestion des menaces                | Analyse complète                                                       | Microsoft Endpoint Manager |
 | **windowsDefenderScan**                      | Gestion des menaces                | Analyse rapide                                                       | Microsoft Endpoint Manager |
 | **windowsDefenderUpdateSignatures**          | Gestion des menaces                | Mettre à jour un antivirus                                                | Microsoft Endpoint Manager |
@@ -87,6 +87,6 @@ Le tableau suivant est une liste des types d’activité capturés dans les jour
 
 Si vous avez besoin d’informations supplémentaires, vous pouvez utiliser l’API Microsoft Graph pour accéder à d’autres événements d’audit. Pour plus d’informations, voir [Vue d’ensemble de la gestion multi-locataires à l’aide de l’API Microsoft 365 Lighthouse client](/graph/managedtenants-concept-overview).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

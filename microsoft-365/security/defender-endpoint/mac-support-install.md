@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 52fdf612ac86c1a0cc99220793461507f86a6fe3
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 5f56e28d472cb3fdf8dd089effcd4beac6e42374
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170527"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766655"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes d’installation de Microsoft Defender pour endpoint sur macOS
 
@@ -31,7 +30,7 @@ ms.locfileid: "61170527"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -41,7 +40,7 @@ ms.locfileid: "61170527"
 
 Pour l’installation manuelle, la page Résumé de l’Assistant d’installation indique : « Une erreur s’est produite lors de l’installation. Le programme d’installation a rencontré une erreur qui a provoqué l’échec de l’installation. Contactez l’éditeur de logiciels pour obtenir de l’aide. » Pour les déploiements mdm, il s’affiche également sous la forme d’un échec d’installation générique.
 
-Bien que nous n’affichions pas une erreur exacte à l’utilisateur final, nous tenez un fichier journal avec la progression de l’installation dans `/Library/Logs/Microsoft/mdatp/install.log` . Chaque session d’installation s’y connecte. Vous pouvez utiliser la `sed` sortie de la dernière session d’installation uniquement :
+Bien que nous n’affichions pas une erreur exacte à l’utilisateur final, nous tenez un fichier journal avec la progression de l’installation dans `/Library/Logs/Microsoft/mdatp/install.log`. Chaque session d’installation s’y connecte. Vous pouvez utiliser la sortie `sed` de la dernière session d’installation uniquement :
 
 ```bash
 sed -n 'H; /^preinstall com.microsoft.wdav begin/h; ${g;p;}' /Library/Logs/Microsoft/mdatp/install.log
@@ -54,7 +53,7 @@ correlation id=CB509765-70FC-4679-866D-8A14AD3F13CC
 preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 ```
 
-Dans cet exemple, la raison réelle est précédée du `[ERROR]` préfixe .
+Dans cet exemple, la raison réelle est précédée du préfixe `[ERROR]`.
 L’installation a échoué car une mise à niveau vers une version antérieure entre ces versions n’est pas prise en charge.
 
 ## <a name="mdatp-install-log-missing-or-not-updated"></a>Journal d’installation MDATP manquant ou non mis à jour

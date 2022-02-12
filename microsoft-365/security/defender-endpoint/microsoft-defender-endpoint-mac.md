@@ -14,15 +14,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4310248b3d85dd42c77692906380609b819089f5
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 504bed69cb8380d685abfc78abe9c579313c3963
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321386"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767555"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender pour point de terminaison sur Mac
 
@@ -53,7 +53,7 @@ Pour obtenir les fonctionnalités les plus récentes, y compris les fonctionnali
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>Comment installer Microsoft Defender pour endpoint sur Mac
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Conditions préalables
 
 - Abonnement Defender for Endpoint et accès au portail Microsoft 365 Defender
 - Expérience de niveau débutant dans les scripts macOS et BASH
@@ -71,7 +71,7 @@ Vous pouvez utiliser plusieurs méthodes et outils de déploiement pour installe
 - Outil en ligne de commande :
     - [Déploiement manuel](mac-install-manually.md)
 
-### <a name="system-requirements"></a>Configuration requise du système
+### <a name="system-requirements"></a>Configuration requise
 
 Les trois plus récentes publication majeures de macOS sont pris en charge.
 

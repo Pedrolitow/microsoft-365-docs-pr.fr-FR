@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 235a0a79a4d388cd90668697677fe09934ae176c
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 2a297813fbde94499f2d239627be6c33c153e8b0
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217757"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765107"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>Examiner les incidents dans Microsoft Defender pour point de terminaison
 
@@ -47,7 +47,7 @@ Lorsque vous examinez un incident, vous voyez :
 
 ## <a name="analyze-incident-details"></a>Analyser les détails de l’incident
 
-Cliquez sur un incident pour voir le **volet Incident.** Sélectionnez **Ouvrir la page Incident** pour voir les détails de l’incident et les informations connexes (alertes, périphériques, enquêtes, preuves, graphique).
+Cliquez sur un incident pour voir le **volet Incident**. **Sélectionnez Ouvrir la page Incident** pour voir les détails de l’incident et les informations connexes (alertes, périphériques, enquêtes, preuves, graphique).
 
 ![Image des détails de l’incident1.](images/atp-incident-details.png)
 
@@ -64,17 +64,17 @@ Vous pouvez examiner les alertes et voir comment elles ont été liées dans un 
 
 ![Image de l’onglet Alertes avec page détails de l’incident indiquant les raisons pour lesquelles les alertes ont été liées dans cet incident.](images/atp-incidents-alerts-reason.png)
 
-Vous pouvez également gérer une alerte et voir les métadonnées d’alerte ainsi que d’autres informations. Pour plus d’informations, voir [Examiner les alertes.](investigate-alerts.md)
+Vous pouvez également gérer une alerte et voir les métadonnées d’alerte ainsi que d’autres informations. Pour plus d’informations, voir [Examiner les alertes](investigate-alerts.md).
 
 ### <a name="devices"></a>Appareils
 
-Vous pouvez également examiner les appareils qui font partie d’un incident donné ou y sont liés. Pour plus d’informations, voir [Examiner les appareils.](investigate-machines.md)
+Vous pouvez également examiner les appareils qui font partie d’un incident donné ou y sont liés. Pour plus d’informations, voir [Examiner les appareils](investigate-machines.md).
 
 ![Image de l’onglet Appareils dans la page détails de l’incident.](images/atp-incident-device-tab.png)
 
 ### <a name="investigations"></a>Enquêtes
 
-Sélectionnez **Examens** pour voir toutes les enquêtes automatiques lancées par le système en réponse aux alertes d’incident.
+**Sélectionnez Examens** pour voir toutes les enquêtes automatiques lancées par le système en réponse aux alertes d’incident.
 
 ![Image de l’onglet Enquêtes dans la page détails de l’incident.](images/atp-incident-investigations-tab.png)
 
@@ -100,7 +100,7 @@ Vous pouvez cliquer sur les cercles sur le graphique d’incident pour afficher 
 
 ![Image des détails de l’incident.](images/atp-incident-graph-details.png)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [File d’attente des incidents](/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [Examiner les incidents dans Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/investigate-incidents)

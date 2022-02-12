@@ -13,15 +13,17 @@ ms.author: macapara
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b0e3279b7a1003fa10a112a85bc1e1d83fa14937
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 21e3a9b925581c9c199e78dab763531865a3629c
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322492"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766619"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer Windows serveurs au service Microsoft Defender for Endpoint
 
@@ -146,7 +148,7 @@ Pour plus d’informations, [voir Intégration à Microsoft Defender pour le clo
 > [!NOTE]
 > Bien que cette méthode d’intégration Windows Server 2012 R2 et Windows Server 2016 soit en prévisualisation, vous pouvez choisir de continuer à utiliser la méthode d’intégration précédente à l’aide de Microsoft Monitoring Agent (MMA). Pour plus d’informations, [voir Installer et configurer des points de terminaison à l’aide de MMA](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma).
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Conditions préalables
 
 **Conditions préalables pour Windows Server 2012 R2**
 
@@ -380,7 +382,7 @@ Une fois les appareils intégrés au service, vous devez configurer les composan
 
 ## <a name="offboard-windows-servers"></a>Serveurs de Windows de tableau de bord
 
-Vous pouvez déboarder Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC), Windows Server 2019, Windows Server 2019 Core edition dans la même méthode que pour les appareils clients Windows 10.
+Vous pouvez déboarder Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC), Windows Server 2019 et Windows Server 2019 Core edition dans la même méthode que pour les appareils clients Windows 10.
 
 - [Appareils de tableau de bord à l’aide de la stratégie de groupe](configure-endpoints-gp.md#offboard-devices-using-group-policy)
 - [Hors-carte des appareils à l’aide de Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)

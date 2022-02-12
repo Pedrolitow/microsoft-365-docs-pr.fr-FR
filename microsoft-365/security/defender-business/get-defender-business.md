@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 01/26/2022
+ms.date: 02/11/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: e4d418dcd7ab33fd8f01dfc64e31210fb358d95c
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 7bdce06b14610718e642d06d1f5a99ac09707a5d
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464601"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767339"
 ---
 # <a name="get-microsoft-defender-for-business-preview"></a>Obtenir Microsoft Defender pour les entreprises (prévisualisation)
 
@@ -59,8 +59,32 @@ Si vous êtes accepté, votre courrier électronique contiendra un code de licen
 > [!IMPORTANT]
 > Si vous êtes un partenaire, une fois que vous avez été accepté dans le programme d’évaluation, chaque client doit effectuer le processus décrit dans la section s’inscrire au programme [d’évaluation](#sign-up-for-the-preview-program). Assurez-vous que le client spécifie le nom de votre partenaire Microsoft dans la **zone Autre** .
 
+## <a name="two-portals-for-setup"></a>Deux portails pour l’installation
+
+Lorsque vous êtes prêt à commencer votre version d’essai, vous travaillerez avec deux portails principaux pour configurer les choses. Le tableau suivant récapitule les deux principaux portails que vous utiliserez : <br/><br/>
+
+|Portail  |Description  |
+|---------|---------|
+| Le Centre d'administration Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Utilisez la Centre d'administration Microsoft 365 pour ajouter ou supprimer des utilisateurs, attribuer des licences utilisateur, afficher vos produits et services et effectuer des tâches de configuration pour Microsoft 365 abonnement. <br/><br/> Pour plus d’informations, voir [Vue d’ensemble Centre d'administration Microsoft 365](../../admin/admin-overview/admin-center-overview.md).      |
+| Le Microsoft 365 Defender de l’entreprise ([https://security.microsoft.com](https://security.microsoft.com))     | Utilisez le portail Microsoft 365 Defender pour gérer les paramètres de sécurité de la protection de la messagerie électronique et des appareils de votre organisation. <br/><br/>Pour plus d’informations, voir [Commencer à utiliser le portail Microsoft 365 Defender web](mdb-get-started.md).        |
+
+Si votre organisation utilise Microsoft Intune (partie de Microsoft Endpoint Manager) pour gérer les appareils, vous pouvez également utiliser le Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)). Pour en savoir plus, voir Microsoft Intune est un fournisseur de gestion des appareils mobiles et [de gestion des appareils mobiles pour vos appareils](/mem/intune/fundamentals/what-is-intune).
+
+## <a name="view-and-manage-users"></a>Afficher et gérer les utilisateurs
+
+1. Go to the Centre d'administration Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) and sign in using the same account you used to request your trial subscription.
+
+2. Dans le volet de navigation, sélectionnez **Utilisateurs** **usersActives** > . Examinez la liste des utilisateurs. 
+
+3. Pour ajouter des utilisateurs, suivez les instructions dans [Ajouter des utilisateurs et attribuez des licences en même temps](../../admin/add-users/add-users.md).
+
+Vous êtes maintenant prêt à procéder à la configuration de [Microsoft Defender pour Entreprise (prévisualisation).](mdb-setup-configuration.md)
+
+
 ## <a name="next-steps"></a>Prochaines étapes
 
 - [Voir le processus d’installation et de configuration de Microsoft Defender entreprise (prévisualisation)](mdb-setup-configuration.md)
+
+- [Utiliser l’Assistant pour configurer Microsoft Defender entreprise (prévisualisation)](mdb-use-wizard.md)
 
 - [Découvrez comment obtenir de l’aide et du support pour Microsoft Defender pour les entreprises (prévisualisation)](mdb-get-help.md)

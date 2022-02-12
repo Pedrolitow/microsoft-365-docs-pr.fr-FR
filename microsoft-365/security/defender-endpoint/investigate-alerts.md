@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: fe10cad1f3b9f7afb32b5e3b0575477aee40c55b
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: f228d0ca44589b9c140226c2b39984c717c7d9f8
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218381"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766067"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Examiner les alertes dans Microsoft Defender pour le point de terminaison
 
@@ -39,7 +39,7 @@ Examinez les alertes qui affectent votre réseau, comprenez ce qu’elles signif
 
 Sélectionnez une alerte dans la file d’attente des alertes pour aller à la page d’alerte. Cet affichage contient le titre de l’alerte, les ressources affectées, le volet latéral détails et l’article sur l’alerte.
 
-Dans la page d’alerte, commencez votre enquête en sélectionnant les biens affectés ou l’une des entités sous l’arborescence de l’article de l’alerte. Le volet d’informations se remplit automatiquement avec d’autres informations sur ce que vous avez sélectionné. Pour voir le type d’informations que vous pouvez afficher ici, lisez Les alertes de [révision dans Microsoft Defender pour le point de terminaison.](/microsoft-365/security/defender-endpoint/review-alerts)
+Dans la page d’alerte, commencez votre enquête en sélectionnant les biens affectés ou l’une des entités sous l’arborescence de l’article de l’alerte. Le volet d’informations se remplit automatiquement avec d’autres informations sur ce que vous avez sélectionné. Pour voir le type d’informations que vous pouvez afficher ici, lisez Les [alertes de révision dans Microsoft Defender pour le point de terminaison](/microsoft-365/security/defender-endpoint/review-alerts).
 
 ## <a name="investigate-using-the-alert-story"></a>Examiner l’utilisation de l’article d’alerte
 
@@ -56,9 +56,9 @@ Développez les entités pour afficher les détails en un coup d’œil. La sél
 
 ## <a name="take-action-from-the-details-pane"></a>Action à partir du volet d’informations
 
-Une fois que vous avez sélectionné une entité d’intérêt, le volet d’informations change pour afficher les informations sur le  type d’entité sélectionné, les informations historiques lorsqu’elle est disponible et propose aux contrôles d’agir sur cette entité directement à partir de la page d’alerte.
+Une fois que vous avez sélectionné une entité d’intérêt, le volet d’informations change pour afficher les informations sur le type d’entité sélectionné, les informations historiques lorsqu’elle est disponible et propose aux  contrôles d’agir sur cette entité directement à partir de la page d’alerte.
 
-Une fois que vous avez terminé d’examiner, revenir à l’alerte que vous avez commencée, marquez l’état de l’alerte comme résolu et classez-le comme alerte **False** ou **Alerte True**.  La classification des alertes permet d’affiner cette fonctionnalité pour fournir plus d’alertes vraies et moins de fausses alertes.
+Une fois que vous avez terminé l’enquête, revenir à l’alerte que vous avez démarrée, marquez  l’état de l’alerte comme résolu et classez-le en tant qu’alerte **False** ou **Alerte True**. La classification des alertes permet d’affiner cette fonctionnalité pour fournir plus d’alertes vraies et moins de fausses alertes.
 
 Si vous la classez comme une alerte réelle, vous pouvez également sélectionner une détermination, comme illustré dans l’image ci-dessous.
 
@@ -69,10 +69,10 @@ Si vous rencontrez une fausse alerte avec une application métier, créez une r�
 ![actions et classification dans le volet d’informations avec la règle de suppression mise en évidence.](images/alert-false-suppression-rule.png)
 
 > [!TIP]
-> Si vous rencontrez des problèmes non décrits ci-dessus, utilisez le bouton pour fournir des commentaires ou 🙂 ouvrir un ticket de support.
+> Si vous rencontrez des problèmes non décrits ci-dessus, 🙂 utilisez le bouton pour fournir des commentaires ou ouvrir un ticket de support.
 
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)
 - [Examiner un fichier associé à une alerte Defender for Endpoint](investigate-files.md)

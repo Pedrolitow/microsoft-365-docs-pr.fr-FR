@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1de43dbf64709e5e38caffbe5af0a8bbf37f0d2a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: bd964782303b05e97fe69996bcf3ce2c1a1e9eb8
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940173"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766931"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Créer et gérer des règles de détection personnalisées
 
@@ -42,24 +42,24 @@ Les règles de détection personnalisées sont des règles que vous pouvez conce
 
 Pour gérer les détections personnalisées, vous devez disposer de l’un des rôles suivants:
 
-- **Administrateur de sécurité**: les utilisateurs ayant [ce rôle Azure Active Directory gérer](/azure/active-directory/roles/permissions-reference#security-administrator) les paramètres de sécurité dans le portail Microsoft 365 Defender et d’autres portails et services.
+- **Administrateur de sécurité** : les utilisateurs Azure Active Directory [ce](/azure/active-directory/roles/permissions-reference#security-administrator) rôle peuvent gérer les paramètres de sécurité dans le portail Microsoft 365 Defender et d’autres portails et services.
 
-- **Opérateur de sécurité**: les utilisateurs dotés de ce [rôle Azure Active Directory](/azure/active-directory/roles/permissions-reference#security-operator) peuvent gérer les alertes et avoir un accès global en lecture seule aux fonctionnalités liées à la sécurité, y compris toutes les informations du portail Microsoft 365 Defender. Ce rôle est suffisant pour la gestion des détections personnalisées uniquement si le contrôle d’accès basé sur un rôle (RBAC) est désactivé dans Microsoft Defender pour point de terminaison. Si vous avez configuré RBAC, vous avez également besoin de l’autorisation gérer les **paramètres** de sécurité pour Defender for Endpoint.
+- **Opérateur de sécurité** : les utilisateurs dotés de [ce rôle Azure Active Directory](/azure/active-directory/roles/permissions-reference#security-operator) peuvent gérer les alertes et avoir un accès global en lecture seule aux fonctionnalités liées à la sécurité, y compris toutes les informations du portail Microsoft 365 Defender. Ce rôle est suffisant pour la gestion des détections personnalisées uniquement si le contrôle d’accès basé sur un rôle (RBAC) est désactivé dans Microsoft Defender pour point de terminaison. Si vous avez configuré RBAC, vous avez également besoin de l’autorisation gérer les **paramètres** de sécurité pour Defender for Endpoint.
 
-Vous pouvez également gérer les détections personnalisées qui s’appliquent aux données de solutions Microsoft 365 Defender spécifiques si vous avez des autorisations pour elles. Si vous avez uniquement des autorisations de gestion des Microsoft 365 Defender pour Office, par exemple, vous pouvez créer des détections personnalisées à l’aide de tableaux, mais `Email` pas de `Identity` tableaux.  
+Vous pouvez également gérer les détections personnalisées qui s’appliquent aux données de solutions Microsoft 365 Defender spécifiques si vous avez des autorisations pour elles. Si vous avez uniquement des autorisations de gestion des Microsoft 365 Defender pour Office, par exemple, vous pouvez créer des détections personnalisées `Email` à l’aide de tableaux, mais pas de `Identity` tableaux.  
 
 Pour gérer les autorisations requises, un **administrateur général** peut :
 
-- Attribuez le  **rôle d’administrateur de sécurité** ou d’opérateur de [sécurité Centre d'administration Microsoft 365](https://admin.microsoft.com/) sous Administrateur **de sécurité** des  >  **rôles.**
-- Vérifiez les paramètres RBAC pour Microsoft Defender pour le point de terminaison [dans Microsoft 365 Defender](https://security.microsoft.com/) sous **Paramètres**  >  **rôles d’autorisations.**  >   Sélectionnez le rôle correspondant pour attribuer **l’autorisation gérer les paramètres de** sécurité.
+- Attribuez le **rôle d’administrateur de sécurité** ou d’opérateur de [sécurité Centre d'administration Microsoft 365](https://admin.microsoft.com/) **sous Administrateur RolesSecurity** > .
+- Vérifiez les paramètres RBAC de Microsoft Defender pour le point de [terminaison dans Microsoft 365 Defender](https://security.microsoft.com/) sous **Paramètres** >  **PermissionsRoles** > . Sélectionnez le rôle correspondant pour attribuer **l’autorisation gérer les paramètres de** sécurité.
 
 > [!NOTE]
-> Pour gérer les  détections personnalisées, les opérateurs de sécurité auront besoin de l’autorisation gérer les **paramètres** de sécurité dans Microsoft Defender pour le point de terminaison si le contrôle d’accès en fonction du contrôle d’accès est allumé.
+> Pour gérer les détections personnalisées **, les** opérateurs de sécurité auront besoin de l’autorisation gérer les **paramètres** de sécurité dans Microsoft Defender pour le point de terminaison si le contrôle d’accès en fonction du contrôle d’accès est allumé.
 
 ## <a name="create-a-custom-detection-rule"></a>Créer une règle de détection personnalisée
 ### <a name="1-prepare-the-query"></a>1. Préparez la requête.
 
-Dans le portail Microsoft 365 Defender, allez  à la recherche avancée et sélectionnez une requête existante ou créez une nouvelle requête. Lorsque vous utilisez une nouvelle requête, exécutez la requête pour identifier les erreurs et comprendre les résultats possibles.
+Dans le portail Microsoft 365 Defender, allez à la recherche avancée  et sélectionnez une requête existante ou créez une nouvelle requête. Lorsque vous utilisez une nouvelle requête, exécutez la requête pour identifier les erreurs et comprendre les résultats possibles.
 
 >[!IMPORTANT]
 >Pour empêcher le service de retourner trop d’alertes, chaque règle est limitée à la génération de 100 alertes uniquement chaque fois qu’il s’exécute. Avant de créer une règle, ajustez votre requête pour éviter les alertes pour une activité quotidienne normale.
@@ -86,18 +86,18 @@ Pour créer une règle de détection personnalisée, le de requête doit retourn
     - `InitiatingProcessAccountObjectId`
 
 >[!NOTE]
->La prise en charge d’entités supplémentaires est ajoutée lorsque de nouvelles tables sont ajoutées au schéma de [recherche avancé.](advanced-hunting-schema-tables.md)
+>La prise en charge d’entités supplémentaires est ajoutée lorsque de nouvelles tables sont ajoutées au [schéma de recherche avancé](advanced-hunting-schema-tables.md).
 
-Les requêtes simples, telles que celles qui n’utilisent pas l’opérateur ou l’opérateur pour personnaliser ou agréger les résultats, retournent généralement `project` `summarize` ces colonnes courantes.
+Les requêtes simples, telles que celles qui n’utilisent pas l’opérateur ou l’opérateur `project` `summarize` pour personnaliser ou agréger les résultats, retournent généralement ces colonnes courantes.
 
-Il existe plusieurs façons de s’assurer que les requêtes plus complexes retournent ces colonnes. Par exemple, si vous préférez agréger et compter par entité sous une colonne telle que , vous pouvez toujours renvoyer et en l’obtenant à partir de l’événement le plus récent impliquant `DeviceId` `Timestamp` chaque unique `ReportId` `DeviceId` .
+Il existe plusieurs façons de s’assurer que les requêtes plus complexes retournent ces colonnes. Par exemple, `DeviceId`si vous préférez agréger et compter par entité sous une colonne telle que , `Timestamp` `ReportId` vous pouvez toujours renvoyer et en l’obtenant à partir de l’événement le plus récent impliquant chaque unique `DeviceId`.
 
 
 > [!IMPORTANT]
-> Évitez de filtrer les détections personnalisées à l’aide `Timestamp` de la colonne. Les données utilisées pour les détections personnalisées sont pré-filtrées en fonction de la fréquence de détection.
+> Évitez de filtrer les détections personnalisées à l’aide de la `Timestamp` colonne. Les données utilisées pour les détections personnalisées sont pré-filtrées en fonction de la fréquence de détection.
 
 
-L’exemple de requête ci-dessous compte le nombre d’appareils uniques ( ) avec détections antivirus et utilise ce nombre pour rechercher uniquement les appareils avec plus de `DeviceId` cinq détections. Pour renvoyer la dernière `Timestamp` et la `ReportId` correspondante, elle utilise `summarize` l’opérateur avec la `arg_max` fonction.
+L’exemple de requête ci-dessous compte le nombre d’appareils uniques (`DeviceId`) avec détections antivirus et utilise ce nombre pour rechercher uniquement les appareils avec plus de cinq détections. Pour renvoyer la dernière `Timestamp` et la correspondante `ReportId`, elle utilise l’opérateur `summarize` avec la `arg_max` fonction.
 
 ```kusto
 DeviceEvents
@@ -108,20 +108,20 @@ DeviceEvents
 ```
 
 > [!TIP]
-> Pour de meilleures performances de requête, définissez un filtre d’heure qui correspond à la fréquence d’exécution prévue pour la règle. Étant donné que l’utilisation la moins fréquente _est toutes les 24 heures,_ le filtrage de la journée passée couvrira toutes les nouvelles données.
+> Pour de meilleures performances de requête, définissez un filtre d’heure qui correspond à la fréquence d’exécution prévue pour la règle. Étant donné que l’utilisation la moins fréquente _est toutes les 24_ heures, le filtrage de la journée passée couvrira toutes les nouvelles données.
 
 ### <a name="2-create-new-rule-and-provide-alert-details"></a>2. Créez une règle et fournissez des détails sur l’alerte.
 
-Avec la requête dans l’éditeur  de requête, sélectionnez Créer une règle de détection et spécifiez les détails d’alerte suivants :
+Avec la requête dans l’éditeur de requête, sélectionnez Créer une règle de détection et spécifiez les détails d’alerte suivants :
 
-- **Nom de la détection**: nom de la règle de détection
-- **Fréquence**: intervalle d’exécution de la requête et d’action. [Voir les conseils supplémentaires ci-dessous](#rule-frequency)
-- **Titre de l’alerte**: titre affiché avec les alertes déclenchées par la règle
+- **Nom de la** détection : nom de la règle de détection ; Ce nom doit être unique.
+- **Fréquence** : intervalle d’exécution de la requête et d’action. [Voir les conseils supplémentaires ci-dessous](#rule-frequency)
+- **Titre de l’alerte** : titre affiché avec les alertes déclenchées par la règle ; Ce titre doit être unique.
 - **Gravité :** risque potentiel du composant ou de l’activité identifié par la règle
 - **Catégorie :** composant ou activité de menace identifié par la règle
-- **MITRE ATT&techniques CK**: une ou plusieurs techniques d’attaque identifiées par la règle, comme documenté dans l’infrastructure [MITRE ATT&CK.](https://attack.mitre.org/) Cette section est masquée pour certaines catégories d’alertes, notamment les programmes malveillants, les ransomware, les activités suspectes et les logiciels indésirables
+- **MITRE ATT&techniques CK** : une ou plusieurs techniques d’attaque identifiées par la règle, telles que documentées dans l’infrastructure [MITRE ATT&CK](https://attack.mitre.org/). Cette section est masquée pour certaines catégories d’alertes, notamment les programmes malveillants, les ransomware, les activités suspectes et les logiciels indésirables
 - **Description :** plus d’informations sur le composant ou l’activité identifié par la règle 
-- **Actions recommandées**: actions supplémentaires que les répondeurs peuvent prendre en réponse à une alerte
+- **Actions recommandées** : actions supplémentaires que les répondeurs peuvent prendre en réponse à une alerte
 
 #### <a name="rule-frequency"></a>Fréquence de la règle
 Lorsque vous enregistrez une nouvelle règle, elle s’exécute et recherche les correspondances des 30 derniers jours de données. La règle s’exécute ensuite à intervalles fixes, en appliquant une durée de recherche en fonction de la fréquence que vous choisissez :
@@ -129,7 +129,7 @@ Lorsque vous enregistrez une nouvelle règle, elle s’exécute et recherche les
 - **Toutes les 24 heures**: s’exécute toutes les 24 heures, en vérifiant les données des 30 derniers jours
 - **Toutes les 12 heures**: s’exécute toutes les 12 heures, en vérifiant les données des dernières 24 heures
 - **Toutes les 3 heures :** s’exécute toutes les 3 heures, en vérifiant les données des 6 dernières heures
-- **Toutes les heures**: s’exécute toutes les heures, en vérifiant les données des dernières 2 heures
+- **Toutes les heures** : s’exécute toutes les heures, en vérifiant les données des dernières 2 heures
 
 Lorsque vous modifiez une règle, elle s’exécute avec les modifications appliquées lors de la prochaine exécution planifiée en fonction de la fréquence que vous définissez.
 
@@ -141,7 +141,7 @@ Lorsque vous modifiez une règle, elle s’exécute avec les modifications appli
 Sélectionnez la fréquence qui correspond à la fréquence à laquelle vous souhaitez surveiller les détections. Prenez en compte la capacité de votre organisation à répondre aux alertes.
 
 ### <a name="3-choose-the-impacted-entities"></a>3. Choisissez les entités impactées.
-Identifiez les colonnes dans les résultats de votre requête où vous vous attendez à trouver l’entité principale affectée ou concernée. Par exemple, une requête peut renvoyer des adresses d’expéditeur ( ou ) et de `SenderFromAddress` `SenderMailFromAddress` destinataire ( `RecipientEmailAddress` ). Identifier laquelle de ces colonnes représente la principale entité impactée qui aide le service à agréger les alertes pertinentes, à corréler les incidents et à cibler les actions de réponse.
+Identifiez les colonnes dans les résultats de votre requête où vous vous attendez à trouver l’entité principale affectée ou concernée. Par exemple, une requête peut renvoyer des adresses d’expéditeur (`SenderFromAddress` ou `SenderMailFromAddress`) et de destinataire (`RecipientEmailAddress`). Identifier laquelle de ces colonnes représente la principale entité impactée qui aide le service à agréger les alertes pertinentes, à corréler les incidents et à cibler les actions de réponse.
 
 Vous ne pouvez sélectionner qu’une seule colonne pour chaque type d’entité (boîte aux lettres, utilisateur ou appareil). Les colonnes qui ne sont pas retournées par votre requête ne peuvent pas être sélectionnées.
 
@@ -150,17 +150,17 @@ Votre règle de détection personnalisée peut effectuer automatiquement des act
 
 #### <a name="actions-on-devices"></a>Actions sur des appareils
 Ces actions sont appliquées aux appareils dans la colonne `DeviceId`des résultats de la requête:
-- **Isoler l’appareil**: utilise Microsoft Defender pour point de terminaison pour appliquer une isolation complète du réseau, ce qui empêche l’appareil de se connecter à n’importe quelle application ou service. [En savoir plus sur l’isolation des ordinateurs Microsoft Defender pour Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
-- **Collecter un package d’examen**: collecte des informations sur l’appareil dans un fichier ZIP. [En savoir plus sur le package d’examen Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
-- **Exécuter une analyse antivirus**: effectue une analyse complète Antivirus Windows Defender sur l’appareil
-- **Lancer une enquête**: lance une [enquête automatisée](m365d-autoir.md) sur l’appareil
+- **Isoler l’appareil** : utilise Microsoft Defender pour point de terminaison pour appliquer une isolation complète du réseau, ce qui empêche l’appareil de se connecter à n’importe quelle application ou service. [En savoir plus sur l’isolation des ordinateurs Microsoft Defender pour Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
+- **Collecter un package d’examen** : collecte des informations sur l’appareil dans un fichier ZIP. [En savoir plus sur le package d’examen Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
+- **Exécuter une analyse antivirus** : effectue une analyse complète Antivirus Windows Defender sur l’appareil
+- **Lancer une enquête** : lance une [enquête automatisée](m365d-autoir.md) sur l’appareil
 - **Restreindre l’exécution de** l’application : définit des restrictions sur l’appareil pour autoriser uniquement l’exécution des fichiers signés avec un certificat émis par Microsoft. [En savoir plus sur les restrictions d’application avec Microsoft Defender pour le point de terminaison](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)
 
 #### <a name="actions-on-files"></a>Actions sur les fichiers
-Lorsqu’il est sélectionné, vous  pouvez choisir d’appliquer l’action de fichier de mise en quarantaine sur les fichiers dans la colonne , , ou dans la colonne des résultats `SHA1` de la `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` requête. Cette action supprime le fichier de son emplacement actuel et place une copie en quarantaine.
+Lorsqu’il est sélectionné, vous pouvez choisir d’appliquer **l’action** `SHA1`de fichier de mise en quarantaine sur les fichiers dans la colonne , , `InitiatingProcessSHA1`ou dans `SHA256``InitiatingProcessSHA256` la colonne des résultats de la requête. Cette action supprime le fichier de son emplacement actuel et place une copie en quarantaine.
 
 #### <a name="actions-on-users"></a>Actions sur les utilisateurs
-Lorsque cette option est sélectionnée, l’action **Marquez l’utilisateur comme compromis** est effectuée sur les utilisateurs de la colonne`AccountObjectId`, `InitiatingProcessAccountObjectId` ou `RecipientObjectId`colonne des résultats de la requête. Cette action définit le niveau de risque des utilisateurs sur « élevé » Azure Active Directory, déclenchant les stratégies [de protection des identités correspondantes.](/azure/active-directory/identity-protection/overview-identity-protection)
+Lorsque cette option est sélectionnée, l’action **Marquez l’utilisateur comme compromis** est effectuée sur les utilisateurs de la colonne`AccountObjectId`, `InitiatingProcessAccountObjectId` ou `RecipientObjectId`colonne des résultats de la requête. Cette action définit le niveau de risque des utilisateurs sur « élevé » Azure Active Directory, déclenchant les stratégies de [protection des identités correspondantes](/azure/active-directory/identity-protection/overview-identity-protection).
 
 > [!NOTE]
 > L’action autoriser ou bloquer des règles de détection personnalisées n’est actuellement pas prise en charge sur Microsoft 365 Defender.
@@ -180,7 +180,7 @@ Après avoir examiné la règle, sélectionnez **Créer** pour l’enregistrer. 
 
 
 >[!Important] 
->Les détections personnalisées doivent être régulièrement examinées pour des raisons d’efficacité et d’efficacité. Pour vous assurer que vous créez des détections qui déclenchent de vraies alertes, prenez le temps de passer en revue vos détections personnalisées existantes en suivant les étapes de gestion des règles de [détection personnalisées existantes.](#manage-existing-custom-detection-rules) <br>  
+>Les détections personnalisées doivent être régulièrement examinées pour des raisons d’efficacité et d’efficacité. Pour vous assurer que vous créez des détections qui déclenchent de vraies alertes, prenez le temps de passer en revue vos détections personnalisées existantes en suivant les étapes de gestion des règles de détection [personnalisées existantes](#manage-existing-custom-detection-rules). <br>  
 Vous conservez le contrôle sur l’étendue ou la spécificité de vos détections personnalisées afin que les fausses alertes générées par les détections personnalisées indiquent la nécessité de modifier certains paramètres des règles.
 
 
@@ -188,48 +188,48 @@ Vous conservez le contrôle sur l’étendue ou la spécificité de vos détecti
 Vous pouvez afficher la liste des règles de détection personnalisées existantes, vérifier leurs précédentes séries et passer en revue les alertes qu’elles ont déclenchées. Vous pouvez également exécuter une règle à la demande et la modifier.
 
 >[!TIP]
-> Les alertes élevées par des détections personnalisées sont disponibles sur les alertes et les API d’incident. Pour plus d’informations, [voir API Microsoft 365 Defender pris en charge.](api-supported.md)
+> Les alertes élevées par des détections personnalisées sont disponibles sur les alertes et les API d’incident. Pour plus d’informations, voir [API Microsoft 365 Defender pris en charge](api-supported.md).
 
 ### <a name="view-existing-rules"></a>Afficher les règles existantes
 
-Pour afficher toutes les règles de détection personnalisées existantes, **accédez à Règles de** détection  >  **personnalisées de repérage.** La page répertorie toutes les règles avec les informations d’exécution suivantes:
+Pour afficher toutes les règles de détection personnalisées existantes, **accédez aux règles de** **détection HuntingCustom** > . La page répertorie toutes les règles avec les informations d’exécution suivantes:
 
-- **Dernière série**: lorsqu’une règle a été exécuté pour la dernière fois pour vérifier les correspondances de requête et générer des alertes
-- **État de la dernière fois**: si une règle s’est correctement exécuté
-- **Next run**—the next scheduled run
-- **État**: si une règle a été allumée ou désactivée
+- **Dernière série** : lorsqu’une règle a été exécuté pour la dernière fois pour vérifier les correspondances de requête et générer des alertes
+- **État de la dernière fois** : si une règle s’est correctement exécuté
+- **Prochaine étape :** l’étape suivante programmée
+- **État** : si une règle a été allumée ou désactivée
 
 ### <a name="view-rule-details-modify-rule-and-run-rule"></a>Afficher les détails de la règle, modifier la règle et exécuter la règle
 
-Pour afficher des informations complètes sur une règle de détection personnalisée, sélectionnez **les** règles de détection personnalisées de repérage, puis  >   sélectionnez le nom de la règle. Vous pouvez ensuite afficher des informations générales sur la règle, y compris des informations sur son état d’exécution et son étendue. La page fournit également la liste des alertes et actions déclenchées.
+Pour afficher des informations complètes sur une règle de détection personnalisée, sélectionnez **les** règles de détection **HuntingCustom** > , puis sélectionnez le nom de la règle. Vous pouvez ensuite afficher des informations générales sur la règle, y compris des informations sur son état d’exécution et son étendue. La page fournit également la liste des alertes et actions déclenchées.
 
 ![Page de détails de règle de détection personnalisée.](../../media/custom-detect-rules-view.png)<br>
 *Détails des règles de détection personnalisées*
 
 Vous pouvez également effectuer les actions suivantes sur la règle à partir de cette page:
 
-- **Exécuter**: exécutez la règle immédiatement. Cela réinitialise également l’intervalle pour la prochaine exécution.
-- **Modifier**— modifier la règle sans modifier la requête
-- **Modifier la requête —** modifier la requête dans le recherche avancée
-- **Activer**  /  **Désactiver :** activer la règle ou l’arrêter d’être en cours d’exécution
-- **Supprimer**: désactiver la règle et la supprimer
+- **Exécutez** la règle immédiatement. Cela réinitialise également l’intervalle pour la prochaine exécution.
+- **Modifier** — modifier la règle sans modifier la requête
+- **Modifier la requête :** modifier la requête dans le recherche avancée
+-  /  Activer **Désactiver :** activer la règle ou l’arrêter d’être en cours d’exécution
+- **Supprimer** : désactiver la règle et la supprimer
 
 ### <a name="view-and-manage-triggered-alerts"></a>Afficher et gérer les alertes déclenchées
 
-Dans l’écran détails de la règle (**Détections** personnalisées de repérage [nom de la règle] ), allez à  >    >   **Alertes déclenchées**, qui répertorie les alertes générées par des correspondances à la règle. Sélectionner une alerte pour afficher des informations détaillées à son sujet et effectuer les actions suivantes:
+Dans l’écran des détails de la règle (**détections** >  **HuntingCustom** > [nom de la règle **]**), allez aux **alertes déclenchées**, qui répertorient les alertes générées par des correspondances à la règle. Sélectionner une alerte pour afficher des informations détaillées à son sujet et effectuer les actions suivantes:
 
 - Gérer l’alerte en définissant son état et sa classification (alerte vraie ou fausse)
 - Lier l’alerte à un incident
 - Exécuter la requête qui a déclenché l’alerte en cas de repérage avancé
 
 ### <a name="review-actions"></a>Examiner les actions
-Dans l’écran détails de la règle (**Détections** personnalisées de repérage [nom de la règle] ), allez à Actions déclenchées , qui répertorie les actions entreprises en fonction des  >    >  correspondances à la règle. 
+Dans l’écran des détails de la règle (**détections** >  **HuntingCustom** > [nom de la règle]), allez à **Actions** déclenchées, qui répertorie les actions entreprises en fonction des correspondances à la règle.
 
 >[!TIP]
 >Pour afficher rapidement des informations et agir sur un élément d’un tableau, utilisez la colonne de sélection [&#10003;] à gauche du tableau.
 
 >[!NOTE]
->Certaines colonnes de cet article peuvent ne pas être disponibles dans Microsoft Defender pour endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
+>Certaines colonnes de cet article peuvent ne pas être disponibles dans Microsoft Defender pour endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de [Microsoft Defender pour le point de terminaison](advanced-hunting-migrate-from-mde.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Vue d’ensemble des détections personnalisées](custom-detections-overview.md)

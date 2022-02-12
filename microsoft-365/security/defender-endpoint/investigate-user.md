@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 23eb3d53635334292b762941d39b9683f2a4dd9e
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 0506c5213fe6c4a9c5bb5556b987f64b22bda517
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218141"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765047"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Examiner un compte d’utilisateur dans Microsoft Defender pour le point de terminaison
 
@@ -62,7 +62,7 @@ Lorsque vous examinez une entité de compte d’utilisateur, vous voyez :
 Le  volet d’informations Utilisateur de gauche fournit des informations sur l’utilisateur, telles que les incidents d’ouverture connexes, les alertes actives, le nom SAM, le SID, les alertes Microsoft Defender pour l’identité, le nombre d’appareils avec qui l’utilisateur est connecté, le moment où l’utilisateur a été vu pour la première fois, le rôle et les types d’ouverture de session. Selon les fonctionnalités d’intégration que vous avez activées, vous verrez d’autres détails. Par exemple, si vous activez l’Skype pour l’intégration d’entreprise, vous pourrez contacter l’utilisateur à partir du portail. La section **Alertes Azure ATP** contient un lien qui vous permet d’accès à la page Microsoft Defender pour l’identité, si vous avez activé la fonctionnalité Microsoft Defender pour l’identité et que des alertes sont associées à l’utilisateur. La page Microsoft Defender pour l’identité fournit plus d’informations sur les alertes.
 
 > [!NOTE]
-> Vous devez activer l’intégration sur Microsoft Defender pour l’identité et Defender pour le point de terminaison pour utiliser cette fonctionnalité. Dans Defender pour point de terminaison, vous pouvez activer cette fonctionnalité dans les fonctionnalités avancées. Pour plus d’informations sur l’activer, voir [Activer les fonctionnalités avancées.](advanced-features.md)
+> Vous devez activer l’intégration sur Microsoft Defender pour l’identité et Defender pour le point de terminaison pour utiliser cette fonctionnalité. Dans Defender pour point de terminaison, vous pouvez activer cette fonctionnalité dans les fonctionnalités avancées. Pour plus d’informations sur l’activer, voir [Activer les fonctionnalités avancées](advanced-features.md).
 
 La vue d’ensemble, les alertes et les observations dans l’organisation sont des onglets différents qui affichent différents attributs sur le compte d’utilisateur.
 
@@ -71,25 +71,25 @@ La vue d’ensemble, les alertes et les observations dans l’organisation sont 
 >Pour les appareils Linux, les informations sur les utilisateurs connectés ne sont pas affichées.
 
 
-### <a name="overview"></a>Vue d'ensemble
+### <a name="overview"></a>Vue d’ensemble
 
 **L’onglet** Vue d’ensemble affiche les détails des incidents et une liste des appareils sur qui l’utilisateur s’est connecté. Vous pouvez les développer pour voir les détails des événements de connexion pour chaque appareil.
 
 ### <a name="alerts"></a>Alertes
 
-**L’onglet Alertes** fournit une liste des alertes associées au compte d’utilisateur. Cette liste est une vue [](alerts-queue.md)filtrée de la file d’attente des alertes et affiche les alertes où le contexte utilisateur est le compte d’utilisateur sélectionné, la date à laquelle la dernière activité a été détectée, une brève description de l’alerte, le périphérique associé à l’alerte, la gravité de l’alerte, l’état de l’alerte dans la file d’attente et l’utilisateur affecté à l’alerte.
+**L’onglet Alertes** fournit une liste des alertes associées au compte d’utilisateur. Cette liste est un affichage filtré de la [](alerts-queue.md)file d’attente des alertes et affiche les alertes où le contexte utilisateur est le compte d’utilisateur sélectionné, la date à laquelle la dernière activité a été détectée, une brève description de l’alerte, le périphérique associé à l’alerte, la gravité de l’alerte, l’état de l’alerte dans la file d’attente et l’utilisateur affecté à l’alerte.
 
 ### <a name="observed-in-organization"></a>Observé dans l’organisation
 
-L’onglet Observé dans l’organisation vous permet de spécifier une plage de dates pour voir la liste des appareils sur lequel cet utilisateur a été connecté, le compte d’utilisateur connecté le plus fréquent et le moins fréquent pour chacun de ces appareils et le nombre total d’utilisateurs observés sur chaque appareil. 
+L’onglet Observé dans l’organisation vous permet de spécifier une plage de dates pour voir la liste des appareils sur lequel cet utilisateur a été connecté, le compte d’utilisateur connecté le plus fréquent et le moins fréquent pour chacun de ces appareils et le nombre total d’utilisateurs observés sur chaque appareil.
 
 La sélection d’un élément dans le tableau Observé dans l’organisation développera l’élément, révélant plus de détails sur l’appareil. La sélection directe d’un lien au sein d’un élément vous enverra à la page correspondante.
 
 ## <a name="search-for-specific-user-accounts"></a>Rechercher des comptes d’utilisateurs spécifiques
 
-1. Sélectionnez **Utilisateur** dans le menu déroulant **de la** barre de recherche.
+1. **Sélectionnez Utilisateur** dans le menu déroulant **de la** barre de recherche.
 2. Entrez le compte d’utilisateur dans le **champ** Recherche.
-3. Cliquez sur l’icône de recherche ou appuyez sur **Entrée.**
+3. Cliquez sur l’icône de recherche ou appuyez sur **Entrée**.
 
 Une liste d’utilisateurs correspondant au texte de la requête s’affiche. Vous verrez le domaine et le nom du compte d’utilisateur, la dernière fois que le compte d’utilisateur a été vu, ainsi que le nombre total d’appareils sur qui il a été connecté au cours des 30 derniers jours.
 
@@ -98,10 +98,10 @@ Vous pouvez filtrer les résultats selon les périodes suivantes :
 - 1 jour
 - 3 jours
 - 7 jours
-- 30 jours
+- 30 jours
 - 6 mois
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)

@@ -13,22 +13,22 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 185e0009fda70f78ca93f4bc72b2fb844508c111
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: dee6cec53ef6a3412d110837037f1de48fc6e92f
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217901"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765575"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Examiner les appareils de la liste Microsoft Defender pour les appareils de point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -37,7 +37,7 @@ ms.locfileid: "61217901"
 Examinez les détails d’une alerte sur un appareil spécifique pour identifier d’autres comportements ou événements qui peuvent être liés à l’alerte ou à l’étendue potentielle de la violation.
 
 > [!NOTE]
-> Dans le cadre du processus d’examen ou de réponse, vous pouvez collecter un package d’enquête à partir d’un appareil. Voici comment : Collecter un [package d’enquête à partir d’appareils.](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices)
+> Dans le cadre du processus d’examen ou de réponse, vous pouvez collecter un package d’enquête à partir d’un appareil. Voici comment : Collecter un [package d’enquête à partir d’appareils](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices).
 
 Vous pouvez cliquer sur les appareils concernés chaque fois que vous les voyez dans le portail pour ouvrir un rapport détaillé sur cet appareil. Les appareils concernés sont identifiés dans les zones suivantes :
 
@@ -81,15 +81,15 @@ Les actions de réponse s’exécutent le long de la partie supérieure d’une 
 
 Vous pouvez prendre des mesures de réponse dans le centre de réponse, dans une page d’appareil spécifique ou dans une page de fichiers spécifique.
 
-Pour plus d’informations sur la façon d’agir sur un appareil, voir [Prendre une action de réponse sur un appareil.](respond-machine-alerts.md)
+Pour plus d’informations sur la façon d’agir sur un appareil, voir [Prendre des mesures de réponse sur un appareil](respond-machine-alerts.md).
 
-Pour plus d’informations, voir [Examiner les entités utilisateur.](investigate-user.md)
+Pour plus d’informations, voir [Examiner les entités utilisateur](investigate-user.md).
 
 ## <a name="tabs"></a>Onglets
 
-Les onglets fournissent des informations pertinentes sur la sécurité et la prévention des menaces relatives à l’appareil. Dans chaque onglet, vous pouvez personnaliser les  colonnes affichées en sélectionnant Personnaliser les colonnes dans la barre au-dessus des en-têtes de colonne.
+Les onglets fournissent des informations pertinentes sur la sécurité et la prévention des menaces relatives à l’appareil. Dans chaque onglet, vous pouvez personnaliser les colonnes affichées en sélectionnant  Personnaliser les colonnes dans la barre au-dessus des en-têtes de colonne.
 
-### <a name="overview"></a>Vue d'ensemble
+### <a name="overview"></a>Vue d’ensemble
 
 **L’onglet** Vue d’ensemble affiche les [cartes](#cards) pour les alertes actives, les utilisateurs connectés et l’évaluation de la sécurité.
 
@@ -97,7 +97,7 @@ Les onglets fournissent des informations pertinentes sur la sécurité et la pr�
 
 ### <a name="alerts"></a>Alertes
 
-**L’onglet Alertes** fournit une liste des alertes associées à l’appareil. Cette liste est une version filtrée de la file d’attente des [alertes](alerts-queue.md)et affiche une brève description de l’alerte, de la gravité (élevée, moyenne, faible, informationnelle), de l’état dans la file d’attente (nouveau, en cours, résolu), de la classification (non définie, false alerte, alerte vraie), de l’état d’investigation, de la catégorie d’alerte, de la personne qui résout l’alerte et de la dernière activité. Vous pouvez également filtrer les alertes.
+**L’onglet Alertes** fournit une liste des alertes associées à l’appareil. Cette liste est une version filtrée de la file d’attente des [alertes](alerts-queue.md) et affiche une brève description de l’alerte, de la gravité (élevée, moyenne, faible, informationnelle), de l’état dans la file d’attente (nouveau, en cours, résolu), de la classification (non définie, false alerte, alerte vraie), de l’état d’investigation, de la catégorie d’alerte, de la personne qui résout l’alerte et de la dernière activité. Vous pouvez également filtrer les alertes.
 
 ![Image des alertes liées à l’appareil.](images/alerts-device.png)
 
@@ -112,7 +112,7 @@ Pour afficher une vue de page complète d’une alerte, y compris le graphique d
 La chronologie vous permet également d’aller de manière sélective dans les événements qui se sont produits au cours d’une période donnée. Vous pouvez afficher la séquence temporelle des événements qui se sont produits sur un appareil sur une période sélectionnée. Pour contrôler davantage votre affichage, vous pouvez filtrer par groupes d’événements ou personnaliser les colonnes.
 
 > [!NOTE]
-> Pour afficher les événements de pare-feu, vous devez activer la stratégie d’audit, voir Connexion à la plateforme de filtrage [d’audit.](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
+> Pour afficher les événements de pare-feu, vous devez activer la stratégie d’audit, voir Connexion à la plateforme de filtrage [d’audit](/windows/security/threat-protection/auditing/audit-filtering-platform-connection).
 >
 > Le pare-feu couvre les événements suivants :
 >
@@ -132,7 +132,7 @@ Voici quelques-unes des fonctionnalités :
 - Exporter des événements de chronologie détaillés de l’appareil
   - Exportez la chronologie de l’appareil pour la date actuelle ou une plage de dates spécifiée jusqu’à sept jours.
 
-Des informations supplémentaires sur certains événements sont fournies dans la section **Informations supplémentaires.** Ces détails varient en fonction du type d’événement, par exemple :
+Des informations supplémentaires sur certains événements sont fournies dans la section **Informations supplémentaires** . Ces détails varient en fonction du type d’événement, par exemple :
 
 - Contenu par Application Guard : l’événement de navigateur web a été limité par un conteneur isolé
 - Menace active détectée : la détection des menaces s’est produite pendant l’exécution de la menace
@@ -146,13 +146,13 @@ Des informations supplémentaires sur certains événements sont fournies dans l
 
 Sélectionnez un événement pour afficher les détails pertinents sur cet événement. Un panneau s’affiche pour afficher des informations générales sur les événements. Le cas échéant et lorsque des données sont disponibles, un graphique montrant les entités associées et leurs relations est également affiché.
 
-Pour inspecter plus en détail l’événement [](advanced-hunting-overview.md) et les événements connexes, vous pouvez rapidement exécuter une requête de recherche avancée en sélectionnant **Hunt pour les événements connexes.** La requête retourne l’événement sélectionné et la liste des autres événements qui se sont produits au même moment sur le même point de terminaison.
+Pour examiner plus en détail l’événement et les événements connexes, [](advanced-hunting-overview.md) vous pouvez rapidement exécuter une requête de recherche avancée en sélectionnant **Hunt pour les événements connexes**. La requête retourne l’événement sélectionné et la liste des autres événements qui se sont produits au même moment sur le même point de terminaison.
 
 ![Image du panneau Détails de l’événement.](images/event-details.png)
 
 ### <a name="security-recommendations"></a>Recommandations de sécurité
 
-**Des recommandations en matière** de sécurité sont générées à partir de Microsoft Defender pour la fonctionnalité gestion des menaces [& des vulnérabilités](tvm-dashboard-insights.md) du point de terminaison. La sélection d’une recommandation affiche un panneau dans lequel vous pouvez afficher des détails pertinents, tels que la description de la recommandation et les risques potentiels associés à sa non-adoption. Pour plus [d’informations, voir](tvm-security-recommendation.md) recommandations en matière de sécurité.
+**Les recommandations de sécurité sont générées** à partir de Microsoft Defender pour la fonctionnalité de gestion des menaces [& des vulnérabilités](tvm-dashboard-insights.md) du point de terminaison. La sélection d’une recommandation affiche un panneau dans lequel vous pouvez afficher des détails pertinents, tels que la description de la recommandation et les risques potentiels associés à sa non-adoption. Pour plus [d’informations, voir](tvm-security-recommendation.md) recommandations en matière de sécurité.
 
 ![Image de l’onglet Recommandations de sécurité.](images/security-recommendations-device.png)
 
@@ -182,11 +182,11 @@ La carte **Azure Advanced Threat Protection** affiche une vue d’ensemble des a
 ![Image de la carte d’alerte active.](images/risk-level-small.png)
 
 > [!NOTE]
-> Vous devez activer l’intégration sur Microsoft Defender pour l’identité et Defender pour le point de terminaison pour utiliser cette fonctionnalité. Dans Defender pour point de terminaison, vous pouvez activer cette fonctionnalité dans les fonctionnalités avancées. Pour plus d’informations sur l’activer, voir [Activer les fonctionnalités avancées.](advanced-features.md)
+> Vous devez activer l’intégration sur Microsoft Defender pour l’identité et Defender pour le point de terminaison pour utiliser cette fonctionnalité. Dans Defender pour point de terminaison, vous pouvez activer cette fonctionnalité dans les fonctionnalités avancées. Pour plus d’informations sur l’activer, voir [Activer les fonctionnalités avancées](advanced-features.md).
 
 ### <a name="logged-on-users"></a>Utilisateurs connectés
 
-La **carte Utilisateurs** connectés indique le nombre d’utilisateurs connectés au cours des 30 derniers jours, ainsi que les utilisateurs les plus fréquents et les moins fréquents. La sélection du lien « Afficher tous les utilisateurs » ouvre le volet d’informations, qui affiche des informations telles que le type d’utilisateur, le type de connexion et le moment où l’utilisateur a été vu pour la première fois et pour la dernière fois. Pour plus d’informations, voir [Examiner les entités utilisateur.](investigate-user.md)
+La **carte Utilisateurs** connectés indique le nombre d’utilisateurs connectés au cours des 30 derniers jours, ainsi que les utilisateurs les plus fréquents et les moins fréquents. La sélection du lien « Afficher tous les utilisateurs » ouvre le volet d’informations, qui affiche des informations telles que le type d’utilisateur, le type de connexion et le moment où l’utilisateur a été vu pour la première fois et pour la dernière fois. Pour plus d’informations, voir [Examiner les entités utilisateur](investigate-user.md).
 
 ![Image du volet d’informations de l’utilisateur.](images/logged-on-users.png)
 
@@ -200,7 +200,7 @@ La **carte d’évaluation de** la sécurité indique le niveau d’exposition g
 
 ![Image de la carte d’évaluation de la sécurité.](images/security-assessments.png)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)

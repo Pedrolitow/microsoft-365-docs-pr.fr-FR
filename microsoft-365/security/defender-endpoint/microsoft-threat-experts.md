@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f49274f6a166bd071ebec470ed26fd2ccd6763ec
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
+ms.openlocfilehash: cc9f0f4410e3f62a6f787efd01d899250cd67a93
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62218992"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765671"
 ---
 # <a name="microsoft-threat-experts"></a>Spécialistes des menaces Microsoft
 
@@ -44,13 +44,13 @@ Ce service de recherche de menace gérée fournit des informations et des donné
 > [!NOTE]
 > Discutez des conditions d’éligibilité avec votre fournisseur de services techniques Microsoft et votre équipe de compte avant de vous appliquer au service de recherche de menaces gérées.
 
-Si vous êtes un client Microsoft Defender pour points de terminaison, vous devez demander des notifications d’attaque **ciblées Spécialistes des menaces Microsoft** pour obtenir des informations et une analyse spéciales qui vous aident à identifier les menaces les plus critiques dans votre environnement afin de pouvoir y répondre rapidement.
+Si vous êtes un client Microsoft Defender pour points de terminaison, vous devez demander **Spécialistes des menaces Microsoft - Notifications** d’attaque ciblées pour obtenir des informations et une analyse spéciales qui vous aident à identifier les menaces les plus critiques dans votre environnement afin de pouvoir y répondre rapidement.
 
-Pour vous inscrire à Spécialistes des menaces Microsoft - Avantages des notifications d’attaques ciblées, Paramètres points de terminaison  \> **Fonctionnalités générales** avancées \>  \>  \> **Spécialistes des menaces Microsoft - Notifications** d’attaque ciblée à appliquer. Une fois accepté, vous bénéficiez des avantages des notifications d’attaque ciblée.
+Pour vous inscrire à Spécialistes des menaces Microsoft - Avantages des notifications d’attaques ciblées, \> Paramètres points de terminaison **fonctionnalités générales** \>  \>  \> avancées **Spécialistes des menaces Microsoft - Notifications** d’attaque ciblée à appliquer. Une fois accepté, vous bénéficiez des avantages des notifications d’attaque ciblée.
 
-Contactez votre équipe de compte ou votre représentant Microsoft pour vous abonner à **Spécialistes des menaces Microsoft - Experts** à la demande pour consulter nos experts en matière de menaces sur les détections et les adversaires pertinents auxquels votre organisation est confrontée.
+Contactez votre équipe de compte ou votre représentant Microsoft pour vous abonner à **Spécialistes des menaces Microsoft - Experts** à la demande pour consulter nos experts en matière de menaces sur les détections et les adversaires pertinents auxquels votre organisation fait face.
 
-Pour [plus d’informations, Spécialistes des menaces Microsoft configurer les](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#before-you-begin) fonctionnalités d’analyse.
+Pour [plus d’Spécialistes des menaces Microsoft, voir](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#before-you-begin) Configure Spécialistes des menaces Microsoft capabilities.
 
 ## <a name="microsoft-threat-experts---targeted-attack-notification"></a>Spécialistes des menaces Microsoft - Notification d’attaque ciblée
 

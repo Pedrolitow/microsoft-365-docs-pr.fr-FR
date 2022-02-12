@@ -21,41 +21,45 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - adminvideo
+- business_assist
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Découvrez comment définir une stratégie pour permettre aux utilisateurs de réinitialiser leur mot de passe à l’aide de l’outil de réinitialisation de mot de passe en libre-service.
-ms.openlocfilehash: 486fd0b22c93d233897963a8295bf2048b01aa6c
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: e72d4815be5486f8f7df362b5b93cae988b7df63
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530210"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765383"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Autoriser les utilisateurs à réinitialiser leurs mots de passe
 
 En tant qu’administrateur Microsoft 365, vous pouvez laisser les utilisateurs utiliser l’outil de réinitialisation de mot de passe [libre-service](https://go.microsoft.com/fwlink/p/?LinkId=522677) afin de ne pas avoir à réinitialiser les mots de passe pour eux. Moins de travail pour vous !
+
+> [!TIP]
+> Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de collaborer avec [un spécialiste microsoft des petites entreprises](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Business Assist, vous et vos employés accédez 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
  
 ## <a name="watch-let-users-reset-their-own-passwords"></a>Regardez : laisser les utilisateurs réinitialiser leur mot de passe
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
-1. Dans la Centre d'administration Microsoft 365, dans le volet de navigation de gauche, sélectionnez Paramètres  >  **paramètres** org, puis sécurité <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**& confidentialité**</a>.
-1. Under **Let your people reset their own passwords,** select Azure AD admin **center**.
-1. Dans le volet de navigation de gauche, sélectionnez Utilisateurs, puis sur la page Utilisateurs **-** Tous les utilisateurs, sélectionnez Réinitialiser le mot **de passe.**
-1. Sélectionnez **Tout** pour activer la réinitialisation du mot de passe libre-service, puis sélectionnez **Enregistrer.**
+1. Dans le Centre d'administration Microsoft 365, dans le volet de navigation de gauche,  >  sélectionnez Paramètres **Org**, puis sécurité <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**& confidentialité**</a>.
+1. Sous **Laisser vos utilisateurs réinitialiser leur mot** de passe, **sélectionnez Azure AD’administration**.
+1. Dans le volet de navigation de gauche, sélectionnez Utilisateurs **, puis** dans la page Utilisateurs **-** Tous les utilisateurs, sélectionnez Réinitialiser **le mot de passe**.
+1. **Sélectionnez Tout** pour activer la réinitialisation du mot de passe libre-service, puis sélectionnez **Enregistrer**.
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
  
 ## <a name="before-you-begin"></a>Avant de commencer
   
-- Vous obtenez la réinitialisation  du mot de passe en libre-service pour les utilisateurs du cloud gratuitement avec n’importe quel plan Microsoft 365 entreprise, éducation ou à but non lucratif. Elle ne fonctionne pas avec la Microsoft 365 d’essai.
+- Vous obtenez la réinitialisation du mot de  passe en libre-service pour les utilisateurs du cloud gratuitement avec n’importe quelle offre payante Microsoft 365 entreprise, éducation ou à but non lucratif. Elle ne fonctionne pas avec la Microsoft 365 d’essai.
 
 - Elle utilise Azure. Vous bénéficierez automatiquement et **gratuitement** de cette fonction dans Azure lorsque vous effectuerez ces étapes. L'activation de la réinitialisation du mot de passe libre-service ne vous coûtera rien si vous n'utilisez aucune autre fonctionnalité Azure.
 
-- **Si vous utilisez un active directory** local, les deux points ci-dessus ne s’appliquent pas. Au lieu de cela, vous pouvez configurer cette offre, mais elle **nécessite un abonnement** payant pour Azure AD Premium .
+- **Si vous utilisez un active directory** local, les deux points ci-dessus ne s’appliquent pas. Au lieu de cela, vous pouvez configurer cette offre, mais elle **nécessite un abonnement payant pour Azure AD Premium**.
 
 Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?] (Vue d’ensemble Centre d'administration Microsoft 365](.. /admin-overview/admin-center-overview.md)
 
@@ -65,15 +69,15 @@ Vous devez être administrateur général ou administrateur de [mot de](about-ad
 
 Ces étapes activent la réinitialisation du mot de passe libre-service pour tout le monde dans votre entreprise.
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration,</a>allez à la page **Paramètres**  >  **paramètres de l’organisation.**
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration</a>, allez sur la page **Paramètres** >  **Org**.
 
-2. En haut de la page **Paramètres de l’organisation,** sélectionnez l’onglet Sécurité **& confidentialité.**
+2. En haut de la page **Paramètres de l’organisation** , sélectionnez l’onglet **Sécurité & confidentialité** .
   
-3. Sélectionnez **Réinitialiser le mot de passe en libre-service.**
+3. Sélectionnez **Réinitialiser le mot de passe en libre-service**.
 
-4. Sous **réinitialisation du mot** de passe en **libre-service, sélectionnez Go to the Azure portal to turn on self-service password reset**.
+4. Sous **Réinitialisation du** mot de passe en **libre-service, sélectionnez Go to the Azure portal to turn on self-service password reset**.
 
-5. Dans la page **Propriétés,** **sélectionnez Tout** pour l’activer pour tous les utilisateurs de votre entreprise, puis sélectionnez **Enregistrer.**
+5. Dans la page **Propriétés** , sélectionnez **Tout** pour l’activer pour tous les utilisateurs de votre entreprise, puis sélectionnez **Enregistrer**.
   
 6. Lorsque vos utilisateurs se connectent, ils sont invités à entrer des informations de contact supplémentaires qui les aideront à réinitialiser leur mot de passe à l’avenir.
 

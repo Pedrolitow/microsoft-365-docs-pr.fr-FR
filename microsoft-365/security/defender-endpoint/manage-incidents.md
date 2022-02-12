@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71d453bbc5b94b4685a65c1074244ae98b16448c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 45c08c5a3c304a23b5761d96a4d9aceb1b4f1562
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166805"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766823"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-incidents"></a>Gérer Microsoft Defender pour les incidents de point de terminaison
 
@@ -31,16 +31,16 @@ ms.locfileid: "61166805"
 
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-La gestion des incidents est une partie importante de chaque opération de cybersécurité. Vous pouvez gérer les incidents en sélectionnant un incident dans la file **d’attente Incidents** ou dans le volet de **gestion Incidents.** 
+La gestion des incidents est une partie importante de chaque opération de cybersécurité. Vous pouvez gérer les incidents en sélectionnant un incident dans la file **d’attente Incidents** ou dans le **volet de gestion Incidents**. 
 
 
-La sélection d’un incident dans la  file **d’attente Incidents** ouvre le volet Gestion des incidents dans lequel vous pouvez ouvrir la page incident pour plus d’informations.
+La sélection d’un incident dans la file **d’attente Incidents** ouvre le volet Gestion des incidents dans lequel vous pouvez ouvrir la page incident pour plus d’informations.
 
 
 ![Image du volet de gestion des incidents.](images/atp-incidents-mgt-pane-updated.png)
@@ -59,7 +59,7 @@ Vous pouvez affecter des incidents à vous-même, modifier l’état et la class
 ![Image de la page de détails de l’incident.](images/atp-incident-details-updated.png)
 
 ## <a name="assign-incidents"></a>Attribuer des incidents
-Si aucun incident n’a encore  été affecté, vous pouvez sélectionner Affecter à moi pour vous attribuer l’incident. Cette action suppose l’appropriation non seulement de l’incident, mais aussi de toutes les alertes associées.
+Si aucun incident n’a encore été affecté, vous pouvez  sélectionner Affecter à moi pour vous attribuer l’incident. Cette action suppose l’appropriation non seulement de l’incident, mais aussi de toutes les alertes associées.
 
 ## <a name="set-status-and-classification"></a>Définir l’état et la classification
 ### <a name="incident-status"></a>État de l’incident
@@ -67,7 +67,7 @@ Vous pouvez classer les incidents (comme **actifs** ou **résolus**) en modifian
 
 Par exemple, votre analyste SoC peut examiner les incidents **actifs** urgents de la journée et décider de les affecter à lui-même pour examen.
 
-Sinon, votre analyste SoC peut  définir l’incident comme résolu si l’incident a été corrigé. 
+Sinon, votre analyste SoC peut définir l’incident comme  résolu si l’incident a été corrigé. 
 
 ### <a name="classification"></a>Classification
 Vous pouvez choisir de ne pas définir de classification ou décider de spécifier si un incident est vrai ou faux. Cette opération permet à l’équipe de voir les modèles et d’en apprendre davantage.
@@ -81,7 +81,7 @@ Les commentaires ajoutés apparaissent instantanément dans le volet.
 
 
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [File d’attente des incidents](/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [Afficher et organiser la file d’attente des incidents](view-incidents-queue.md)
 - [Examiner des incidents](investigate-incidents.md)

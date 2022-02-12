@@ -1,7 +1,7 @@
 ---
 title: Operationalize attack surface reduction (ASR) rules deployment
 description: Fournit des conseils pour rendre opérationnel le déploiement de vos règles de réduction de la surface d’attaque.
-keywords: 'Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque'
+keywords: Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -11,16 +11,21 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: 'oogunrinde, sugamar'
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: m365solution-scenario
 ms.date: 1/18/2022
+ms.openlocfilehash: 3229cd0a98714819009e7d50baab0872f3a67c43
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766583"
 ---
-
-# <a name="step-4-operationalize-asr-rules"></a>Étape 4 : Operationalize ASR rules
+# <a name="step-4-operationalize-asr-rules"></a>Étape 4 : Opérationnaliser les règles ASR
 
 Une fois que vous avez déployé entièrement les règles de réduction de la surface d’attaque( ASR), il est essentiel de mettre en place des processus pour surveiller les activités liées à la réduction de la surface d’attaque et y répondre.
 
@@ -44,6 +49,8 @@ Le repérage avancé est un outil de repérage de menaces basé sur une requête
 Grâce à la recherche avancée, il est possible d’extraire des informations sur les règles de la asr, de créer des rapports et d’obtenir des informations détaillées sur le contexte d’un événement d’audit ou de blocage de règle asr donné.
 
  Vous pouvez interroger les événements de règles asr à partir de la table DeviceEvents dans la section de recherche avancée du portail Microsoft 365 Defender. Par exemple, une requête simple, telle que celle ci-dessous, peut signaler tous les événements qui ont des règles de asr en tant que source de données, au cours des 30 derniers jours, et les synthétisera par le nombre ActionType, qui dans ce cas sera le nom de code réel de la règle asr.
+
+Les événements asr présentés dans le portail de chasse sont limitées à des processus uniques visibles toutes les heures. L’heure de l’événement ASR est la première fois que l’événement est vu dans cette heure.
 
 > [!div class="mx-imgBorder"]
 > ![Microsoft 365 Defender ligne de commande de requête de recherche avancée](images/asr-defender365-advanced-hunting3.png)
@@ -72,10 +79,10 @@ Pour plus d’informations sur les options de recherche, voir : [Démystificatio
 
 ## <a name="topics-in-this-deployment-collection"></a>Rubriques de cette collection de déploiements
 
-[Conditions préalables au déploiement des règles asr](attack-surface-reduction-rules-deployment.md)
+[Prérequis pour le déploiement des règles ASR](attack-surface-reduction-rules-deployment.md)
 
-[Étape 1 : Planifier le déploiement des règles de la asr](attack-surface-reduction-rules-deployment-plan.md)
+[Étape 1 : Planifier le déploiement des règles ASR](attack-surface-reduction-rules-deployment-plan.md)
 
-[Étape 2 : Tester les règles de la asr](attack-surface-reduction-rules-deployment-test.md)
+[Étape 2 : Tester les règles ASR](attack-surface-reduction-rules-deployment-test.md)
 
-[Étape 3 : Implémenter des règles de asr](attack-surface-reduction-rules-deployment-implement.md)
+[Étape 3 : Mettre en œuvre les règles ASR](attack-surface-reduction-rules-deployment-implement.md)

@@ -13,22 +13,21 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d35cd0ecba75be5f6546840e5c80177f950b7193
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 3b9d6255320b5d702768614059bb9edff28be3b3
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171052"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767639"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>Configurer Microsoft Defender pour endpoint sur les groupes d’appareils macOS dans Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -36,17 +35,17 @@ ms.locfileid: "61171052"
 
 Configurer les groupes d’appareils similaires aux groupes d’organisation de stratégie de groupe, à Microsoft Endpoint Configuration Manager collection d’appareils et aux groupes d’appareils d’Intune.
 
-1. Accédez à **Groupes d’ordinateurs statiques.**
+1. Accédez à **Groupes d’ordinateurs statiques**.
 
-2. Sélectionnez **Nouveau**. 
+2. **Sélectionnez Nouveau**. 
 
     ![Image de Jamf Pro1.](images/jamf-pro-static-group.png)
 
-3. Fournissez un nom d’affichage et sélectionnez **Enregistrer.**
+3. Fournissez un nom d’affichage et sélectionnez **Enregistrer**.
 
     ![Image de Jamf Pro2.](images/jamfpro-machine-group.png)
 
-4. Vous verrez maintenant le groupe **d’ordinateurs de Contoso** sous **Groupes d’ordinateurs statiques.**
+4. Vous verrez maintenant le groupe **d’ordinateurs de Contoso** sous **Groupes d’ordinateurs statiques**.
 
     ![Image de Jamf Pro3.](images/contoso-machine-group.png)
 

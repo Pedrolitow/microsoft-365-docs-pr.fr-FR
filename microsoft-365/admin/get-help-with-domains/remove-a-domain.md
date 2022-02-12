@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -24,18 +25,21 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Découvrez comment supprimer un ancien domaine d’Microsoft 365 et déplacer des utilisateurs et des groupes vers un autre domaine ou annuler votre abonnement.
-ms.openlocfilehash: 3b6bd67c8678d4be2b483865ee76574fd727cda5
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 875858804912ab75d0a5a0bab45c9bb1614c82ca
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370007"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765155"
 ---
 # <a name="remove-a-domain"></a>Supprimer un domaine
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez.
 
 Supprimez-vous votre domaine, car vous souhaitez l’ajouter à un autre plan Microsoft 365 abonnement ? Ou souhaitez-vous annuler votre abonnement ? Vous pouvez [modifier votre plan ou abonnement](../../commerce/subscriptions/switch-to-a-different-plan.md) ou [annuler votre abonnement](../../commerce/subscriptions/cancel-your-subscription.md).
+
+> [!TIP]
+> Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de collaborer avec [un spécialiste microsoft des petites entreprises](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Business Assist, vous et vos employés accédez 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
 
 ### <a name="step-1-move-users-to-another-domain"></a>Étape 1 : Déplacer des utilisateurs vers un autre domaine
 
@@ -53,13 +57,13 @@ Supprimez-vous votre domaine, car vous souhaitez l’ajouter à un autre plan Mi
 
 ::: moniker-end
 
-2. Sélectionnez   >  **Utilisateurs actifs.**
+2. Sélectionnez **utilisateurs UsersActive** > .
 
 3. Sélectionnez les cases en de côté des noms de tous les utilisateurs que vous souhaitez déplacer.
 
-4. En haut de la page, puis choisissez **Modifier les domaines.**
+4. En haut de la page, puis sélectionnez **Modifier les domaines**.
 
-5. Dans le **volet Modifier les domaines,** sélectionnez un autre domaine.
+5. Dans le **volet Modifier les domaines** , sélectionnez un autre domaine.
 
 Vous devrez également effectuer cette action pour vous-même si vous êtes sur le domaine que vous souhaitez supprimer. Lorsque vous modifiez le domaine de votre compte, vous devez vous déconnecter puis vous reconnecter en utilisant le nouveau domaine que vous avez choisi.
 
@@ -81,7 +85,7 @@ Vous devrez également effectuer cette action pour vous-même si vous êtes sur 
 
 3. Sous **l’onglet** Compte, **sélectionnez Gérer** le nom d’utilisateur, puis choisissez un autre domaine.
 
-4. Dans la partie supérieure, sélectionnez le nom de votre compte, puis **sélectionnez Se sortir.**
+4. Dans la partie supérieure, sélectionnez le nom de votre compte, puis **connectez-vous**.
 
 5. Connectez-vous avec le nouveau domaine et votre même mot de passe.
 
@@ -91,17 +95,17 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groupes.</a>
+1. Dans le Centre d’administration, allez à la page **Groupes**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration,</a>allez à la page  > **Groupes.**
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, allez à la page **Groupes**>.
 
 ::: moniker-end
 
-2. Sélectionnez le nom du groupe, puis sous **l’onglet Général** sous **Adresse de messagerie, Principal,** sélectionnez **Modifier**.
+2. Sélectionnez le nom du groupe, puis sous **l’onglet Général** sous **Adresse de messagerie, Principal**, sélectionnez **Modifier**.
 
 3. Utilisez la liste de listes pour choisir un autre domaine.
 
@@ -117,15 +121,15 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domaines d’installation.</a>
+1. Dans le centre d’administration, allez à la page **Domaines** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">d’installation</a> .
 
 ::: moniker-end
 
-2. Dans la page **Domaines,** sélectionnez le domaine à supprimer.
+2. Dans la page **Domaines** , sélectionnez le domaine à supprimer.
 
-3. Dans le volet droit, sélectionnez **Supprimer.**
+3. Dans le volet droit, sélectionnez **Supprimer**.
 
-4. Suivez les invites supplémentaires, puis sélectionnez **Fermer.**
+4. Suivez les invites supplémentaires, puis sélectionnez **Fermer**.
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>Combien de temps faut-il pour qu'un domaine soit supprimé ?
 
