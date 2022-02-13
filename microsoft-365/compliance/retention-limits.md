@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Comprendre le nombre maximal de stratégies et d’éléments par stratégie pour les stratégies de rétention et les stratégies d’étiquette de rétention
-ms.openlocfilehash: d8746f99961d209fb76f1fbe146162d9b6e2ed59
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: f7b445ab8fd0afe5fb893933c3475385e09bc84e
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370067"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767435"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Limites des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -37,13 +37,20 @@ Un maximum de 1 000 étiquettes de rétention sont supportés par client.
 
 ## <a name="maximum-number-of-policies-per-tenant"></a>Nombre maximal de stratégies par client
 
-Un client unique peut avoir un maximum de 10 000 stratégies (n’importe quelle configuration). Ce nombre maximal inclut les différentes stratégies de rétention et d’autres stratégies de conformité, telles que les stratégies de protection contre la perte de données, les obstacles à l’information, les conservations eDiscovery et les étiquettes de confidentialité.
+Un client unique peut avoir un maximum de 10 000 stratégies (n’importe quelle configuration). Ce nombre maximal inclut les différentes stratégies de rétention et d’autres stratégies de conformité, telles que les stratégies de protection contre la perte de données, les obstacles à l’information, les conservations eDiscovery et les étiquettes de confidentialité. Toutefois, cette valeur maximale exclut :
+
+- Étiqueter les stratégies SharePoint et OneDrive qui ne font que supprimer, plutôt que de les conserver ou de les conserver, puis les supprimer. L'exception est l'application automatique de politiques d'étiquetage pour les pièces jointes dans le cloud, qui sont toujours incluses dans le maximum de 10 000.
+- Exchange stratégies de rétention à partir de [la gestion des enregistrements de messagerie (MRM).](/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
 
 Dans cette limite de 10 000 stratégies, il existe également des limites sur le nombre maximal de stratégies de rétention par charge de travail :
 
 - Exchange (n’importe quelle configuration) : 1 800
+    - Par boîte aux lettres : 25 est la valeur maximale recommandée avant que les performances ne soient touchées . 50 est la limite prise en charge.
 - SharePoint ou OneDrive : (tous les sites sont inclus automatiquement) : 13
 - SharePoint ou OneDrive (emplacements spécifiques inclus ou exclus) : 2 600
+
+> [!NOTE]
+> Ces chiffres maximums pour Exchange et SharePoint ne sont pas exclusifs à la rétention, mais sont partagés avec d’autres types de stratégies de conservation qui incluent les conservations eDiscovery, les conservations pour litige et les conservations inaltérables.
 
 Bien que les stratégies de rétention pour Microsoft Teams et Yammer utilisent des boîtes aux lettres pour stocker des données à des fins de rétention, le nombre maximal de stratégies pour Exchange Online exclut les stratégies de rétention pour Teams et Yammer.
 

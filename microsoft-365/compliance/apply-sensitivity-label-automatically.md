@@ -1,24 +1,29 @@
 ---
 title: Appliquer automatiquement une étiquette de confidentialité au contenu dans Microsoft 365
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
-ms.date: null
+ms.date: ''
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
+- M365-security-compliance
 ms.topic: article
 ms.custom: admindeeplinkMAC
 search.appverid:
-  - MOE150
-  - MET150
-description: 'Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.'
+- MOE150
+- MET150
+description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
+ms.openlocfilehash: 6802947e786f13a577a6f3bf58ea3001599ee4d8
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766079"
 ---
-
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
@@ -81,7 +86,6 @@ Utilisez le tableau suivant pour vous aider à déterminer les différences de c
 |:-----|:-----|:-----|
 |Dépendance de l’application|Oui ([versions minimales](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)) |Non \* |
 |Limiter par emplacement|Non |Oui |
-|Conditions : correspondance exacte des données pour les types d’informations sensibles personnalisés|Oui |Non |
 |Conditions : classifieurs formés|Oui |Non |
 |Conditions : options de partage et options supplémentaires pour le courrier électronique|Non |Oui |
 |Conditions : exceptions|Non |Oui (e-mail uniquement) |
@@ -127,8 +131,8 @@ Pour les stratégies d’étiquetage automatique des e-mails uniquement, vous po
 |Étiquette existante |Remplacer par le paramètre d’étiquette : étiquetage automatique pour les fichiers et les e-mails  |Remplacer par la stratégie : étiquetage automatique|
 |:-----|:-----|:-----|
 |Appliqué manuellement, n’importe quelle priorité|Word, Excel, PowerPoint : Non <br /><br> Outlook : Non  |SharePoint et OneDrive : Non <br /><br> Exchange : Non par défaut, mais configurable |
-|Application automatique, priorité inférieure |Word, Excel, PowerPoint : Oui <br /><br> Outlook : Oui | SharePoint et OneDrive : Oui <br /><br> Exchange : Oui |
-|Application automatique, priorité plus élevée |Word, Excel, PowerPoint : Non <br /><br> Outlook : Non |SharePoint et OneDrive : Non <br /><br> Exchange : Non par défaut, mais configurable |
+|Application automatique ou étiquette par défaut de la stratégie, priorité inférieure |Word, Excel, PowerPoint : Oui <br /><br> Outlook : Oui | SharePoint et OneDrive : Oui <br /><br> Exchange : Oui |
+|Application automatique ou étiquette par défaut de la stratégie, priorité supérieure |Word, Excel, PowerPoint : Non <br /><br> Outlook : Non |SharePoint et OneDrive : Non <br /><br> Exchange : Non par défaut, mais configurable |
 
 Le paramètre configurable pour les stratégies d’étiquetage automatique de l’e-mail se trouve sur la page **Paramètres supplémentaires pour le courrier électronique**. Cette page s’affiche une fois que vous avez sélectionné une étiquette de confidentialité pour une stratégie d’étiquetage automatique qui inclut l’emplacement Exchange.
 
@@ -136,7 +140,7 @@ Le paramètre configurable pour les stratégies d’étiquetage automatique de l
 
 Pour l’étiquetage intégré dans Office applications, vérifiez les [versions](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) minimales requises pour l’étiquetage automatique dans Office applications.
 
-Le client d’étiquetage unifié Azure Information Protection prend en charge l’étiquetage automatique pour les types d’informations sensibles intégrés et personnalisés, mais pas pour les classifieurs entraidables ou les types d’informations sensibles qui utilisent EDM (Exact Data Match).
+Le client d'étiquetage unifié Azure Information Protection prend en charge l'étiquetage automatique uniquement pour les types d'informations sensibles intégrés et personnalisés, et ne prend pas en charge les classificateurs pouvant être formés ou les types d'informations sensibles qui utilisent la correspondance exacte des données (EDM) ou les entités nommées.
 
 Les paramètres d’étiquetage automatique des applications Office sont disponibles lorsque vous [créer ou modifier une étiquette de confidentialité](create-sensitivity-labels.md). Assurez-vous que **Fichiers et e-mails** est sélectionné comme étendue de l’étiquette :
 
@@ -178,7 +182,7 @@ Si vous configurez une étiquette de confidentialité avec uniquement EDM comme 
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>Configuration des classifieurs pouvant être formés pour une étiquette
 
-Si vous utilisez cette option, vérifiez que vous avez publié dans votre locataire au moins une autre étiquette de confidentialité configurée pour l’étiquetage automatique et que l’[option types d’informations sensibles](#configuring-sensitive-info-types-for-a-label).
+Si vous utilisez cette option avec Microsoft 365 Apps pour Windows version 2106 ou inférieure, ou Microsoft 365 Apps pour Mac version 16.50 ou inférieure, assurez-vous que vous avez publié dans votre locataire au moins une autre étiquette de sensibilité configurée pour l'étiquetage automatique et l'[option des types d'informations sensibles](#configuring-sensitive-info-types-for-a-label). Cette exigence n’est pas nécessaire lorsque vous utilisez des versions ultérieures sur ces plateformes.
 
 Lorsque vous sélectionnez l’option **Classifieurs pouvant être formés**, sélectionnez un ou plusieurs classifieurs pouvant être formés ou personnalisés :
 
