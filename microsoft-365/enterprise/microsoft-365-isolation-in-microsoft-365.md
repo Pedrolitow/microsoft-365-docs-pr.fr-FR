@@ -16,26 +16,26 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 'Résumé : Explication de l’isolation et du contrôle d’accès au sein des différentes applications de Microsoft 365.'
-ms.openlocfilehash: ba40efbacac849e2228455697c43da45b2bcbe47
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 65845a8d6c8e6be578e997fa1455aa280c787897
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197304"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806431"
 ---
 # <a name="isolation-and-access-control-in-microsoft-365"></a>Isolation et contrôle d’accès dans Microsoft 365
 
-Azure Active Directory (Azure AD) et Microsoft 365 utilisent un modèle de données très complexe qui inclut des dizaines de services, des centaines d’entités, des milliers de relations et des dizaines de milliers d’attributs. À un niveau élevé, Azure AD et les annuaires de services sont les conteneurs de clients et de destinataires synchronisés à l’aide de protocoles de réplication basés sur l’état. En plus des informations d’annuaire détenues dans Azure AD, chacune des charges de travail de service possède sa propre infrastructure de services d’annuaire.
+Azure Active Directory (Azure AD) et Microsoft 365 utilisent un modèle de données très complexe qui inclut des dizaines de services, des centaines d’entités, des milliers de relations et des dizaines de milliers d’attributs. À un niveau élevé, Azure AD et les répertoires de service sont les conteneurs de clients et de destinataires synchronisés à l’aide de protocoles de réplication basés sur l’état. En plus des informations d’annuaire Azure AD, chacune des charges de travail de service possède sa propre infrastructure de services d’annuaire.
  
-![Microsoft 365 synchronisation des données du client.](../media/office-365-isolation-tenant-data-sync.png)
+![Microsoft 365 synchronisation des données client.](../media/office-365-isolation-tenant-data-sync.png)
 
-Dans ce modèle, il n’existe pas de source unique de données d’annuaire. Des systèmes spécifiques possèdent des éléments de données individuels, mais aucun système unique ne contient toutes les données. Microsoft 365 services collaborent avec Azure AD dans ce modèle de données. Azure AD est le « système de vrai » pour les données partagées, qui est généralement de petites données statiques utilisées par chaque service. Le modèle fédéré utilisé dans Microsoft 365 Azure AD fournit l’affichage partagé des données.
+Dans ce modèle, il n’existe pas de source unique de données d’annuaire. Des systèmes spécifiques possèdent des éléments de données individuels, mais aucun système unique ne contient toutes les données. Microsoft 365 services collaborent avec Azure AD dans ce modèle de données. Azure AD est le « système de vrai » pour les données partagées, qui est généralement de petites données statiques utilisées par chaque service. Le modèle fédéré utilisé dans Microsoft 365 et Azure AD fournit l’affichage partagé des données.
 
 Microsoft 365 utilise à la fois le stockage physique et le stockage cloud Azure. Exchange Online (y compris Exchange Online Protection) et Skype Entreprise utiliser leur propre stockage pour les données client. SharePoint Online utilise à la fois SQL Server stockage et stockage Azure, d’où la nécessité d’une isolation supplémentaire des données client au niveau du stockage.
 
 ## <a name="exchange-online"></a>Exchange Online
 
-Exchange Online stocke les données client dans les boîtes aux lettres. Les boîtes aux lettres sont hébergées dans des bases de données ESE (Extensible Stockage Engine) appelées bases de données de boîtes aux lettres. Cela inclut les boîtes aux lettres utilisateur, les boîtes aux lettres liées, les boîtes aux lettres partagées et les boîtes aux lettres de dossiers publics. Les boîtes aux lettres utilisateur incluent des Skype Entreprise de contenu enregistrés, tels que des historiques de conversation.
+Exchange Online stocke les données client dans les boîtes aux lettres. Les boîtes aux lettres sont hébergées dans des bases de données ESE (Extensible Stockage Engine) appelées bases de données de boîtes aux lettres. Cela inclut les boîtes aux lettres utilisateur, les boîtes aux lettres liées, les boîtes aux lettres partagées et les boîtes aux lettres de dossiers publics. Les boîtes aux lettres utilisateur incluent des Skype Entreprise de contenu enregistrés, tels que les historiques de conversation.
 
 Le contenu de la boîte aux lettres de l’utilisateur inclut :
 
@@ -43,11 +43,11 @@ Le contenu de la boîte aux lettres de l’utilisateur inclut :
 - Informations de calendrier et de libre/occupé
 - Contacts
 - Tâches
-- Remarques
+- Notes
 - Groupes
 - Données d’inférence
 
-Chaque base de données de boîtes aux lettres Exchange Online contient des boîtes aux lettres de plusieurs clients. Un code d’autorisation sécurisation chaque boîte aux lettres, y compris au sein d’une location. Par défaut, seul l’utilisateur affecté a accès à une boîte aux lettres. La liste de contrôle d’accès (ACL) qui sécurisation une boîte aux lettres contient une identité authentifiée par Azure AD au niveau du client. Les boîtes aux lettres de chaque client sont limitées aux identités authentifiées auprès du fournisseur d’authentification du client, qui inclut uniquement les utilisateurs de ce client. Le contenu du client A ne peut en aucune façon être obtenu par les utilisateurs du client B, sauf si le client A l’a explicitement approuvé.
+Chaque base de données de boîtes aux lettres Exchange Online contient des boîtes aux lettres de plusieurs clients. Un code d’autorisation sécurisation chaque boîte aux lettres, y compris au sein d’une location. Par défaut, seul l’utilisateur affecté a accès à une boîte aux lettres. La liste de contrôle d’accès (ACL) qui sécurisation une boîte aux lettres contient une identité authentifiée Azure AD au niveau du client. Les boîtes aux lettres de chaque client sont limitées aux identités authentifiées auprès du fournisseur d’authentification du client, qui inclut uniquement les utilisateurs de ce client. Le contenu du client A ne peut en aucune façon être obtenu par les utilisateurs dans le client B, sauf approbation explicite par le client A.
 
 ## <a name="skype-for-business"></a>Skype Entreprise
 
@@ -61,15 +61,15 @@ Skype Entreprise stocke les données à différents endroits :
 
 SharePoint Online dispose de plusieurs mécanismes indépendants qui assurent l’isolation des données. Il stocke les objets sous forme de code abstrait dans les bases de données d’application. Par exemple, lorsqu’un utilisateur télécharge un fichier vers SharePoint Online, le fichier est désassembl, converti en code d’application et stocké dans plusieurs tables dans plusieurs bases de données.
 
-Si un utilisateur peut accéder directement au stockage contenant les données, le contenu n’est pas interprétable par un système humain ou autre que SharePoint Online. Ces mécanismes incluent le contrôle d’accès à la sécurité et les propriétés. Toutes SharePoint en ligne sont sécurisées par le code d’autorisation et la stratégie RBAC, y compris au sein d’une location. La liste de contrôle d’accès (ACL) qui sécurisation une ressource contient une identité authentifiée au niveau du client. SharePoint Les données en ligne d’un client sont limitées aux identités authentifiées par le fournisseur d’authentification du client.
+Si un utilisateur peut accéder directement au stockage contenant les données, le contenu n’est pas interprétable par un système humain ou autre que SharePoint Online. Ces mécanismes incluent le contrôle d’accès à la sécurité et les propriétés. Toutes SharePoint en ligne sont sécurisées par le code d’autorisation et la stratégie RBAC, y compris au sein d’une location. La liste de contrôle d’accès (ACL) qui sécurisation une ressource contient une identité authentifiée au niveau du client. SharePoint données en ligne pour un client est limitée aux identités authentifiées par le fournisseur d’authentification pour le client.
 
-Outre les ACA, une propriété au niveau du client qui spécifie le fournisseur d’authentification (qui est azure AD propre au client) est écrite une seule fois et ne peut pas être modifiée une fois définie. Une fois que la propriété du client du fournisseur d’authentification a été définie pour un client, elle ne peut pas être modifiée à l’aide d’API exposées à un client.
+Outre les ACA, une propriété de niveau client qui spécifie le fournisseur d’authentification (c’est-à-dire le Azure AD propre au client) est écrite une seule fois et ne peut pas être modifiée une fois définie. Une fois que la propriété du client du fournisseur d’authentification a été définie pour un client, elle ne peut pas être modifiée à l’aide d’API exposées à un client.
 
-Un *SubscriptionId* unique est utilisé pour chaque client. Tous les sites clients sont la propriété d’un client et un *SubscriptionId* est attribué au client. La *propriété SubscriptionId* d’un site est écrite une seule fois et est permanente. Une fois affecté à un client, un site ne peut pas être déplacé vers un autre client. SubscriptionId *est* la clé utilisée pour créer l’étendue de sécurité pour le fournisseur d’authentification et est liée au client.
+Un *SubscriptionId* unique est utilisé pour chaque client. Tous les sites clients sont la propriété d’un client et un *SubscriptionId* est attribué au client. La *propriété SubscriptionId* d’un site est écrite une seule fois et est permanente. Une fois affecté à un client, un site ne peut pas être déplacé vers un autre client. *SubscriptionId est* la clé utilisée pour créer l’étendue de sécurité pour le fournisseur d’authentification et est liée au client.
 
 SharePoint Online utilise les SQL Server et stockage Azure stockage des métadonnées de contenu. La clé de partition pour le magasin de contenu est *SiteId* dans SQL. Lors de l’exécution SQL requête, SharePoint Online utilise un *SiteId* vérifié dans le cadre d’une vérification *SubscriptionId* au niveau du client.
 
-SharePoint Online stocke le contenu de fichier chiffré dans Microsoft Azure blobs. Chaque batterie SharePoint Online possède son propre compte Microsoft Azure et tous les objets blob enregistrés dans Azure sont chiffrés individuellement avec une clé stockée dans le magasin de contenu SQL. Clé de chiffrement protégée dans le code par la couche d’autorisation et non exposée directement à l’utilisateur final. SharePoint Online dispose d’une surveillance en temps réel pour détecter lorsqu’une demande HTTP lit ou écrit des données pour plusieurs clients. L’identité de la *demande SubscriptionId* est suivi par rapport à *l’SubscriptionId* de la ressource accessible. Les demandes d’accès aux ressources de plusieurs clients ne doivent jamais se produire par les utilisateurs finaux. Les demandes de service dans un environnement multi-clients sont la seule exception. Par exemple, le robot de recherche tire les modifications de contenu d’une base de données entière en même temps. Cela implique généralement l’interrogation de sites de plusieurs clients dans une demande de service unique, ce qui est effectué pour des raisons d’efficacité.
+SharePoint Online stocke le contenu de fichier chiffré dans Microsoft Azure blobs. Chaque batterie SharePoint Online possède son propre compte Microsoft Azure et tous les objets blob enregistrés dans Azure sont chiffrés individuellement avec une clé stockée dans le magasin de contenu SQL. Clé de chiffrement protégée dans le code par la couche d’autorisation et non exposée directement à l’utilisateur final. SharePoint Online dispose d’une surveillance en temps réel pour détecter quand une requête HTTP lit ou écrit des données pour plusieurs clients. L’identité de la demande *SubscriptionId* est suivi par rapport à *l’SubscriptionId* de la ressource accessible. Les demandes d’accès aux ressources de plusieurs clients ne doivent jamais avoir lieu par les utilisateurs finaux. Les demandes de service dans un environnement multi-clients sont la seule exception. Par exemple, le robot de recherche tire les modifications de contenu d’une base de données entière en même temps. Cela implique généralement l’interrogation de sites de plusieurs clients dans une demande de service unique, ce qui est effectué pour des raisons d’efficacité.
 
 ## <a name="teams"></a>Teams
 

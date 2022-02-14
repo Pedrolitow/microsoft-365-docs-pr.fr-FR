@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Advanced eDiscovery facilite la gestion du flux de travail de notification de conservation légale en avertissant les dépositaires dans le cadre d’enquêtes juridiques.
-ms.openlocfilehash: 69e13523423c45a3cdcf5b81bbf2ec443a4a2b6e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: abe501624e4bc5d0b62ce49f38aa028cd112a7f8
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61871476"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806647"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery"></a>Travailler avec les communications dans Advanced eDiscovery
 
@@ -29,7 +29,7 @@ Advanced eDiscovery aux services juridiques de simplifier leurs processus de sui
 
 ## <a name="what-is-a-legal-hold-notification"></a>Qu’est-ce qu’une notification de mise en attente légale ?
 
-Une notification de conservation légale (également appelée mise en attente pour *litige)* est une notification envoyée par le service juridique d’une organisation aux employés, au personnel subordonné ou aux dépositaires des données qui peuvent être pertinentes pour une enquête juridique. Ces notifications indiquent aux dépositaires de conserver les informations stockées électroniquement et tout contenu qui peut être pertinent pour une affaire juridique active ou imminente. Les équipes juridiques doivent savoir que chaque dépositaire a reçu, lu, compris et a accepté de se conformer aux instructions données.
+Une notification de conservation légale (également appelée mise en attente pour *litige) est* une notification envoyée par le service juridique d’une organisation aux employés, au personnel subordonné ou aux dépositaires des données qui peuvent être pertinentes pour une enquête juridique. Ces notifications indiquent aux dépositaires de conserver les informations stockées électroniquement et tout contenu qui peut être pertinent pour une affaire juridique active ou imminente. Les équipes juridiques doivent savoir que chaque dépositaire a reçu, lu, compris et a accepté de se conformer aux instructions données.
 
 ## <a name="the-legal-hold-notification-process"></a>Processus de notification de mise en attente légale
 
@@ -39,7 +39,7 @@ Avec Advanced eDiscovery, les équipes juridiques peuvent créer et personnalise
 
 1. **Avis d’émission :** Une notification de conservation légale est émise (ou initiée) par une notification du service juridique aux dépositaires qui peuvent avoir des informations pertinentes sur le cas. Cet avis enjoint aux consignataires de conserver les informations qui peuvent être nécessaires à la découverte.
 
-2. **Avis de réé émission :** Dans un cas, les dépositaires peuvent être tenus de conserver du contenu supplémentaire (ou moins de contenu) que ce qui a été demandé précédemment. Dans ce cas, vous pouvez mettre à jour l'avis de conservation existant et le réémettre aux consignataires.
+2. **Avis de réé émission :** Dans un cas, les dépositaires peuvent être tenus de conserver plus de contenu (ou moins de contenu) que ce qui a été demandé précédemment. Dans ce cas, vous pouvez mettre à jour l'avis de conservation existant et le réémettre aux consignataires.
 
 3. **Avis de publication :** Une fois qu’un problème est résolu et que le dépositaire n’est plus soumis à une obligation de conservation, le dépositaire peut être libéré du cas. En outre, vous pouvez informer le dépositaire qu’il n’est plus tenu de conserver le contenu et fournir des instructions sur la façon de reprendre son activité de travail normale et ses données.
 

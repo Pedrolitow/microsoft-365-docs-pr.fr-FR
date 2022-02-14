@@ -16,21 +16,21 @@ ms.date: 10/14/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 52556d3193843eecfb9130ead349a20bd16fab34
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 183fedefbbb56411674ff80a9feedc507cff0530
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164141"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807523"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>Configurer les fonctionnalités antivirus Microsoft Defender
 
 
 **S’applique à :**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Vous pouvez configurer Antivirus Microsoft Defender avec un certain nombre d’outils, tels que :
 
@@ -38,17 +38,17 @@ Vous pouvez configurer Antivirus Microsoft Defender avec un certain nombre d’o
 - Stratégie de groupe
 - Cmdlets PowerShell
 - WMI (Windows Management Instrumentation)
-- [Joint au client](/mem/configmgr/tenant-attach/)
+- [Attachement du client](/mem/configmgr/tenant-attach/)
 
 Les grandes catégories de fonctionnalités suivantes peuvent être configurées :
 
-- Protection cloud. Voir protection et protection des services [cloud Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
+- Protection cloud. Voir [protection et](cloud-protection-microsoft-defender-antivirus.md) protection cloud Antivirus Microsoft Defender
 
-- Protection en temps réel toujours continue, y compris la protection comportementale, heuristique et basée sur l’apprentissage automatique. Voir [Configurer la protection comportementale, heuristique et en temps réel.](configure-protection-features-microsoft-defender-antivirus.md)
+- Protection en temps réel toujours continue, y compris la protection comportementale, heuristique et basée sur l’apprentissage automatique. Voir [Configurer la protection comportementale, heuristique et en temps réel](configure-protection-features-microsoft-defender-antivirus.md).
 
 - Interaction des utilisateurs finaux avec le client sur des points de terminaison individuels. Consultez les ressources suivantes :
   - [Empêcher les utilisateurs de voir ou d’interagir avec l Antivirus Microsoft Defender’interface utilisateur](prevent-end-user-interaction-microsoft-defender-antivirus.md)
   - [Empêcher ou autoriser les utilisateurs à modifier localement les paramètres Antivirus Microsoft Defender stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 
 > [!TIP]
-> Consulter les [rubriques de référence pour les outils de gestion et de configuration.](configuration-management-reference-microsoft-defender-antivirus.md)
+> Consulter les [rubriques de référence pour les outils de gestion et de configuration](configuration-management-reference-microsoft-defender-antivirus.md).

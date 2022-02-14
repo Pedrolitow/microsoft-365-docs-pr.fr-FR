@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 réseau Informations
-ms.openlocfilehash: d5eca1f1c842c0182bc5ce132de90eda538e0695
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: 429b066a7132cb29f2a35d43857534695391d33c
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327567"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806947"
 ---
 # <a name="microsoft-365-network-insights"></a>Microsoft 365 réseau Informations
 
-**Les informations réseau sont** des mesures de performances collectées à partir de votre client Microsoft 365 et disponibles uniquement pour les utilisateurs administratifs de votre client. Informations sont affichés dans le centre Administration Microsoft 365 à <https://portal.microsoft.com/adminportal/home#/networkperformance> l’écran.
+**Les informations réseau sont** des mesures de performances collectées à partir de votre client Microsoft 365 et disponibles uniquement pour les utilisateurs administratifs de votre client. Informations sont affichés dans le centre Administration Microsoft 365 à l’écran.<https://portal.microsoft.com/adminportal/home#/networkperformance>
 
 Informations sont conçus pour vous aider à concevoir des périmètres réseau pour vos bureaux. Chaque insight fournit des détails en direct sur les caractéristiques de performances d’un problème commun spécifique pour chaque emplacement géographique où les utilisateurs accèdent à votre client.
 
@@ -74,13 +74,13 @@ Les détails de cette analyse sont les suivants :
 
 Nous recommandons une sortie réseau aussi proche que possible de l’emplacement du bureau.  Microsoft 365 trafic doit être acheminé de manière optimale vers le réseau global de Microsoft et vers la porte d’Microsoft 365 service la plus proche. Le fait d’avoir une sortie étroite du réseau vers les emplacements de bureau des utilisateurs permet également d’améliorer les performances, car Microsoft étend à la fois les points de présence réseau et les Microsoft 365 frontaux du service à l’avenir.
 
-Pour plus d’informations sur la résolution de ce problème, voir Egress [connexions](microsoft-365-network-connectivity-principles.md#egress-network-connections-locally) réseau localement dans Microsoft 365 principes de [connectivité réseau.](microsoft-365-network-connectivity-principles.md)
+Pour plus d’informations sur la résolution de ce problème, voir Egress [connexions](microsoft-365-network-connectivity-principles.md#egress-network-connections-locally) réseau localement dans [Microsoft 365 principes de connectivité réseau](microsoft-365-network-connectivity-principles.md).
 
 ## <a name="network-intermediary-device"></a>Périphérique intermédiaire réseau
 
-Cette information s’affiche si nous avons détecté des appareils entre vos utilisateurs et le réseau de Microsoft. Nous vous recommandons d’éviter les Microsoft 365 de trafic réseau sensibles à la latence. Cette recommandation est également décrite dans Microsoft 365 [principes de connectivité réseau.](microsoft-365-network-connectivity-principles.md)
+Cette information s’affiche si nous avons détecté des appareils entre vos utilisateurs et le réseau de Microsoft. Nous vous recommandons d’éviter les Microsoft 365 de trafic réseau sensibles à la latence. Cette recommandation est également décrite dans Microsoft 365 [principes de connectivité réseau](microsoft-365-network-connectivity-principles.md).
 
-L’une des informations intermédiaires du réseau que nous montrons est l’arrêt et l’inspection SSL lorsque des points de terminaison réseau Microsoft 365 critiques pour les Exchange, SharePoint et Teams sont interceptés et déchiffrés par des périphériques intermédiaires réseau.
+L’une des informations intermédiaires du réseau que nous montrons est l’arrêt et l’inspection SSL lorsque les points de terminaison réseau Microsoft 365 critiques pour les Exchange, SharePoint et Teams sont interceptés et déchiffrés par des périphériques intermédiaires réseau.
 
 ### <a name="what-does-this-mean"></a>Qu’est-ce que cela signifie ?
 
@@ -105,7 +105,7 @@ Cette vue d’ensemble examine les performances globales Microsoft 365 clients d
 
 ### <a name="what-should-i-do"></a>Que dois-je faire ?
 
-Il peut y avoir de nombreuses raisons à cette condition, notamment la latence dans votre réseau d’entreprise ou votre isp isp, les goulots d’étranglement ou les problèmes de conception de l’architecture. Examinez la latence entre chaque saut de l’itinéraire entre votre réseau de bureau et la Microsoft 365 frontale actuelle. Pour plus d’informations, [Microsoft 365 principes de connectivité réseau.](microsoft-365-network-connectivity-principles.md)
+Il peut y avoir de nombreuses raisons à cette condition, notamment la latence dans votre réseau d’entreprise ou votre isp isp, les goulots d’étranglement ou les problèmes de conception de l’architecture. Examinez la latence entre chaque saut de l’itinéraire entre votre réseau de bureau et la Microsoft 365 frontale actuelle. Pour plus d’informations, [Microsoft 365 principes de connectivité réseau](microsoft-365-network-connectivity-principles.md).
 
 ## <a name="use-of-a-non-optimal-exchange-online-service-front-door"></a>Utilisation d’une porte d’Exchange Online service non optimale
 
@@ -170,11 +170,11 @@ Si votre organisation dispose d’une connectivité WAN privée, nous vous recom
 - Singapour
 - Malaisie
 
-Une sortie d’Internet plus éloignée des utilisateurs que ces emplacements réduit les performances, et la sortie en Chine peut entraîner des problèmes de latence et de connectivité élevés en raison d’une congestion croisée.
+Une sortie d’Internet plus éloignée des utilisateurs que ces emplacements réduit les performances, et la sortie en Chine peut entraîner des problèmes de latence et de connectivité élevés en raison d’une congestion  croisée.
 
 ### <a name="what-should-i-do"></a>Que dois-je faire ?
 
-Pour plus d’informations sur la façon d’atténuer les problèmes de performances liés à cette information, voir Microsoft 365 optimisation globale des performances des clients pour les [utilisateurs chinois.](microsoft-365-networking-china.md)
+Pour plus d’informations sur la façon d’atténuer les problèmes de performances liés à cette information, voir Microsoft 365 optimisation globale des performances des clients [pour les utilisateurs chinois](microsoft-365-networking-china.md).
 
 ## <a name="exchange-sampled-connections-affected-by-connectivity-issues"></a>Exchange exemples de connexions affectés par des problèmes de connectivité
 

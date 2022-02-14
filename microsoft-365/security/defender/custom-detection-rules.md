@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bd964782303b05e97fe69996bcf3ce2c1a1e9eb8
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 473d58cde13f1f776c31184b2b50e74e23810b22
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766931"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807031"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Créer et gérer des règles de détection personnalisées
 
@@ -114,9 +114,9 @@ DeviceEvents
 
 Avec la requête dans l’éditeur de requête, sélectionnez Créer une règle de détection et spécifiez les détails d’alerte suivants :
 
-- **Nom de la** détection : nom de la règle de détection ; Ce nom doit être unique.
+- **Nom de la** détection : nom de la règle de détection ; doit être unique
 - **Fréquence** : intervalle d’exécution de la requête et d’action. [Voir les conseils supplémentaires ci-dessous](#rule-frequency)
-- **Titre de l’alerte** : titre affiché avec les alertes déclenchées par la règle ; Ce titre doit être unique.
+- **Titre de l’alerte** : titre affiché avec les alertes déclenchées par la règle ; doit être unique
 - **Gravité :** risque potentiel du composant ou de l’activité identifié par la règle
 - **Catégorie :** composant ou activité de menace identifié par la règle
 - **MITRE ATT&techniques CK** : une ou plusieurs techniques d’attaque identifiées par la règle, telles que documentées dans l’infrastructure [MITRE ATT&CK](https://attack.mitre.org/). Cette section est masquée pour certaines catégories d’alertes, notamment les programmes malveillants, les ransomware, les activités suspectes et les logiciels indésirables

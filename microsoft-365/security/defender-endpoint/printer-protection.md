@@ -15,24 +15,24 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 3a9ca21c6cc59e2516220dd04e659d22df0a74e6
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 496d9bf729eaaff6cf12e9734ae80eedacf98a63
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164861"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806119"
 ---
 # <a name="device-control-printer-protection"></a>Protection de l’Imprimante de Contrôle d’Appareil
 
 **S’applique à**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender pour endpoint Device Control Printer Protection empêche les personnes d’imprimer via des imprimantes non d’entreprise ou des imprimantes USB non approuvées.
 
 ## <a name="licensing"></a>Licences
 
-Avant de commencer à vous lancer avec printer Protection, vous devez [confirmer votre abonnement Microsoft 365.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) Pour accéder à printer Protection et l’utiliser, vous devez avoir les informations suivantes :
+Avant de commencer à vous lancer avec printer Protection, vous devez [confirmer votre abonnement Microsoft 365 abonnement](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1). Pour accéder à printer Protection et l’utiliser, vous devez avoir les informations suivantes :
 
 - Microsoft 365 E3 pour le déploiement des fonctionnalités/stratégies
 - Microsoft 365 E5 de rapports
@@ -70,13 +70,13 @@ Vous pouvez déployer la stratégie via la stratégie de groupe ou Intune.
 
 ****
 
-|Titre|Description|Prise en charge du programme CSP | Prise en charge des GPO | Prise en charge basée sur l’utilisateur | Prise en charge basée sur l’ordinateur |
+|Title|Description|Prise en charge du programme CSP | Prise en charge des GPO | Prise en charge basée sur l’utilisateur | Prise en charge basée sur l’ordinateur |
 |---|---|:---:|:---:|:---:|:---:|
 |**Activer les restrictions d’impression des contrôles d’appareil**|Empêcher les personnes d’imprimer via une imprimante non d’entreprise|Oui|Oui|Oui|Oui|
 |**Liste des appareils d’impression connectés usb approuvés**\*|Autoriser une imprimante USB spécifique|Oui|Oui|Oui|Oui|
 |
 
-\*Cette stratégie doit être utilisée avec les **restrictions d’impression des contrôles d’appareil.**
+\* Cette stratégie doit être utilisée avec les **restrictions d’impression des contrôles d’appareil**.
 
 ## <a name="deploy-policy-via-intune"></a>Déployer une stratégie via Intune
 
@@ -92,7 +92,7 @@ Pour Intune, la protection de l’imprimante de contrôle d’appareil prend act
 
   `./Vendor/MSFT/Policy/Config/Printers/EnableDeviceControlUser`
 
-Chaîne de prise en charge du programme CSP avec `<enabled/>` :
+Chaîne de prise en charge du programme CSP avec `<enabled/>`:
 
 :::image type="content" source="../../media/customeditrow.png" alt-text="ligne d’édition personnalisée.":::
 
@@ -106,7 +106,7 @@ Chaîne de prise en charge du programme CSP avec `<enabled/>` :
 
   `./Vendor/MSFT/Policy/Config/Printers/ApprovedUsbPrintDevicesUser`
 
-La chaîne de prise en charge du programme CSP avec des imprimantes USB approuvées via la propriété « ApprovedUsbPrintDevices » (par `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872">` exemple :
+La chaîne de prise en charge du programme CSP avec des imprimantes USB approuvées via la propriété « ApprovedUsbPrintDevices » (par exemple :`<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872"/>`
 
 :::image type="content" source="../../media/editrow.png" alt-text="modifier la ligne.":::
 
@@ -118,11 +118,11 @@ Si l’appareil n’est pas joint à Intune, vous pouvez également déployer la
 
 - Appliquez la stratégie sur l’ordinateur :
 
-  Imprimante de \> modèles d’administration de configuration \> ordinateur : activer les restrictions d’impression des contrôles d’appareil
+  Imprimante de modèles \> d’administration \> de configuration ordinateur : activer les restrictions d’impression des contrôles d’appareil
 
 - Appliquez la stratégie à l’utilisateur :
 
-  Imprimantes du Panneau de configuration Des modèles d’administration de configuration utilisateur : \> \> activer les \> restrictions d’impression des contrôles d’appareil
+  Imprimantes du Panneau \> de configuration Des modèles \> \> d’administration de configuration utilisateur : activer les restrictions d’impression des contrôles d’appareil
 
 :::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="activer les restrictions d’impression de l’appareil.":::
 
@@ -130,11 +130,11 @@ Si l’appareil n’est pas joint à Intune, vous pouvez également déployer la
 
 - Appliquez la stratégie sur l’ordinateur :
 
-  Imprimante de \> modèles d’administration de configuration \> ordinateur : liste des périphériques d’impression connectés usb approuvés
+  Imprimante de modèles \> d’administration \> de configuration ordinateur : liste des périphériques d’impression connectés usb approuvés
 
 - Appliquez la stratégie à l’utilisateur :
 
-  Imprimantes du Panneau de configuration Des modèles d’administration de configuration utilisateur : liste des appareils d’impression connectés \> \> à USB \> approuvés
+  Imprimantes du Panneau \> de configuration Des modèles \> \> d’administration de configuration utilisateur : liste des appareils d’impression connectés à USB approuvés
 
 :::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="liste des périphériques d’impression connectés usb approuvés.":::
 

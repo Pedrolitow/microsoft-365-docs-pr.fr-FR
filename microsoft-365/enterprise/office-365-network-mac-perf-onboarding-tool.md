@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 de test de connectivité réseau
-ms.openlocfilehash: bea7922baa1e92ffcaaff58678141758906ab955
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: 602ab10c9741126360861586776863cb43ce162e
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281458"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806203"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365 de test de connectivité réseau
 
@@ -163,7 +163,7 @@ L’emplacement de sortie de l’adresse IP de sortie du réseau n’est peut-ê
 
 Cette information réseau aura un impact spécifique sur la sélection de la porte d’Exchange Online service. Pour résoudre ce problème, la sortie du réseau local et direct doit être une condition préalable, puis le résolveur récursif DNS doit être situé à proximité de cette sortie réseau.
 
-### <a name="exchange-online"></a>Exchange Online
+### <a name="exchange-online"></a>Exchange Online
 
 Cette section présente les résultats des tests liés aux Exchange Online.
 

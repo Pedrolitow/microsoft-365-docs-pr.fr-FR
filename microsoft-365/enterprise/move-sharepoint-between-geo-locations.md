@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez comment déplacer un site SharePoint vers un autre emplacement géographique au sein de votre environnement multigéogé et communiquer les attentes des modifications à vos utilisateurs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6ccbe708c0fcfb51c1a28b354d8438e526815cec
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 9e4132b8399cc69067d24af6c3c9ec8e3baf52bd
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62242034"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806863"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Déplacer un site SharePoint vers un autre emplacement géographique
 
@@ -35,7 +35,7 @@ Les types de sites pouvant être déplacés entre emplacements géographiques so
 
 Pour pouvoir déplacer un site, vous devez être un administrateur général ou un administrateur SharePoint.
 
-Lors du déplacement géographique de site SharePoint, il existe une fenêtre en lecture seule d’environ 4 à 6 heures, selon le contenu du site.
+Il existe une fenêtre en lecture seule pendant le SharePoint de site géographique d’environ 4 à 6 heures, selon le contenu du site.
 
 ## <a name="best-practices"></a>Meilleures pratiques
 
@@ -75,7 +75,7 @@ L’heure doit être exprimée en Temps universel coordonné (UTC) pour les deux
 
 Un déplacement géographique de site SharePoint nécessite que vous vous connectiez et opériez le déplacement de l’URL d’administration SharePoint vers l’emplacement géographique du site.
 
-Par exemple, si l’URL du site est <https://contosohealthcare.sharepoint.com/sites/Turbines> , connectez-vous à l’URL SharePoint’administration à <https://contosohealthcare-admin.sharepoint.com> l’adresse suivante :
+Par exemple, si l’URL du site est <https://contosohealthcare.sharepoint.com/sites/Turbines>, connectez-vous à l’URL SharePoint’administration à l’adresse <https://contosohealthcare-admin.sharepoint.com>suivante :
 
 ```powershell
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
@@ -159,7 +159,7 @@ Les états de déplacement sont décrits dans le tableau suivant.
 |---|---|
 |Ready to Trigger|Le déplacement n’a pas commencé.|
 |Scheduled|Le déplacement est en file d’attente mais n’a pas encore commencé.|
-|InProgress (n/4)|Le déplacement est en cours dans l’un des états suivants : Validation (1/4), Sauvegarde (2/4), Restauration (3/4), Nettoyage (4/4).|
+|InProgress (n/4)|Le déplacement est en cours dans l’un des états suivants : Validation (1/4), Back up (2/4), Restore (3/4), Cleanup (4/4).|
 |Opération réussie|Le déplacement a réussi.|
 |Échec|Le déplacement a échoué.|
 |
@@ -172,7 +172,7 @@ Les utilisateurs du site devraient constater une perturbation minimale lors du d
 
 ### <a name="site"></a>Site
 
-Durant le déplacement, le site est en lecture seule. Une fois le déplacement terminé, l’utilisateur est redirigé vers le nouveau site dans le nouvel emplacement géographique quand il clique sur des signets ou d’autres liens pointant sur le site.
+Lorsque le déplacement est en cours, le site est en lecture seule. Une fois le déplacement terminé, l’utilisateur est redirigé vers le nouveau site dans le nouvel emplacement géographique quand il clique sur des signets ou d’autres liens pointant sur le site.
 
 ### <a name="permissions"></a>Autorisations
 
@@ -213,15 +213,15 @@ L’application SharePoint Mobile étant inter-géographique, elle est capable d
 
 ### <a name="sharepoint-workflows"></a>Flux de travail SharePoint
 
-Les flux de travail SharePoint 2013 doivent être republiés une fois le site déplacé. Les flux de travail SharePoint 2010 devraient continuer de fonctionner normalement.
+SharePoint flux de travail 2013 doivent être republiés après le déplacement du site. Les flux de travail SharePoint 2010 devraient continuer de fonctionner normalement.
 
 ### <a name="apps"></a>Applications
 
-Si vous migrez un site comportant des applications, vous devez ré-instancier celles-ci dans le nouvel emplacement géographique du site, car les applications et leurs liens pourraient ne pas être disponibles dans l’emplacement géographique cible.
+Si vous souhaitez déplacer un site avec des applications, vous devez réinstancier l’application dans le nouvel emplacement géographique du site, car l’application et ses connexions risquent de ne pas être disponibles dans l’emplacement géographique de destination.
 
-### <a name="flow"></a>Flux
+### <a name="flow"></a>Flow
 
-Dans la plupart des cas, les flux continueront de fonctionner après un déplacement géographique de site SharePoint. Nous vous conseillons de les tester une fois le déplacement terminé.
+Dans la plupart des cas, les flux continueront de fonctionner après un déplacement géographique SharePoint site. Nous vous conseillons de les tester une fois le déplacement terminé.
 
 ### <a name="power-apps"></a>Power Apps
 

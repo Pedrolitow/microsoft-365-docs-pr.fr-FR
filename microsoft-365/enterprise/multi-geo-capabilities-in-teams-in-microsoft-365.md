@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-spintranet
 ms.localizationpriority: medium
 description: Découvrez comment Teams fonctionne avec Microsoft 365 multigéogé.
-ms.openlocfilehash: e561332052f226fe98d0304bd6a76d6b76cfd1c4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0315a9ff0429c5e00c662bd7345a3b6a39a591c3
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177278"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805867"
 ---
 # <a name="multi-geo-capabilities-in-microsoft-teams"></a>Fonctionnalités multigé géographiques dans Microsoft Teams
 
@@ -31,11 +31,11 @@ Les fonctionnalités multigéogé Teams permettent Teams données de conversatio
 Teams utilise la PDL (Preferred Data Location) pour les utilisateurs et les groupes pour déterminer où stocker les données. Si la PDL n’est pas définie ou n’est pas valide, les données sont stockées dans l’emplacement central du client.
 
 > [!NOTE]
-> Fonctionnalités multigé géographiques Teams déployés en juillet 2021. Vos messages de conversation et de canal seront automatiquement migrés vers l’emplacement géographique correct au cours des prochains trimestres. Toutes les nouvelles modifications PDL seront traitées une fois que le client aura terminé la synchronisation initiale, et les nouvelles modifications PDL au-delà seront mise en file d’attente et traitées dans l’ordre de réception.
+> Fonctionnalités multigéogé Teams déployées en juillet 2021. Vos messages de conversation et de canal seront automatiquement migrés vers l’emplacement géographique correct au cours des prochains trimestres. Toutes les nouvelles modifications PDL seront traitées une fois que le client aura terminé la synchronisation initiale, et les nouvelles modifications PDL au-delà seront mise en file d’attente et traitées dans l’ordre de réception.
 
 ## <a name="user-chat"></a>Conversation utilisateur
 
-La conversation utilisateur inclut les messages de réunion un-à-un, un-à-plusieurs et privés.
+La conversation utilisateur inclut les messages de réunion un-à-un, un-à-plusieurs et les messages de réunion privée.
 
 Lorsqu’un nouvel utilisateur est créé, Teams lit le PDL de l’utilisateur et stocke toutes ses données de conversation dans cet emplacement géographique.
 
@@ -51,13 +51,13 @@ Get-MultiGeoRegion -EntityType User -EntityId <UPN>
 
 ## <a name="channel-messages"></a>Messages de canal
 
-Chaque Microsoft 365 a un emplacement de données par choix (PDL) qui indique l’emplacement géographique où les données associées doivent être stockées. Teams utilise la PDL pour le groupe associé à chaque équipe pour déterminer où stocker les données de messagerie de canal pour cette équipe. Cela inclut les canaux privés ainsi que les discussions qui ont lieu au sein d’une réunion de canal.
+Chaque Microsoft 365 a un emplacement de données par choix (PDL) qui indique l’emplacement géographique où les données associées doivent être stockées. Teams utilise la PDL pour le groupe associé à chaque équipe pour déterminer où stocker les données de messagerie de canal pour cette équipe. Cela inclut les canaux privés et les discussions qui ont lieu au sein d’une réunion de canal.
 
-Lorsqu’un utilisateur crée une équipe, le PDL de cet utilisateur détermine quelle PDL est affectée au groupe Microsoft 365 utilisateur. La PDL de groupe détermine l’endroit où les données de cette équipe sont stockées. Si le PDL de cet utilisateur change ultérieurement, le PDL du groupe n’est pas modifié.
+Lorsqu’un utilisateur crée une équipe, le PDL de cet utilisateur détermine quelle PDL est affectée au groupe Microsoft 365 utilisateur. La PDL du groupe détermine l’endroit où les données de cette équipe sont stockées. Si le PDL de cet utilisateur change ultérieurement, le PDL du groupe n’est pas modifié.
 
-Pour les équipes existantes, si un administrateur ajoute ou modifie le PDL pour le groupe Microsoft 365 qui assure le soutien d’une équipe, les données de messagerie de canal de cette équipe sont ajoutées à une file d’attente de migration pour être déplacées vers l’emplacement géographique spécifié.
+Pour les équipes existantes, si un administrateur ajoute ou modifie le PDL pour le groupe Microsoft 365 qui backs a team, les données de messagerie de canal de cette équipe sont ajoutées à une file d’attente de migration pour être déplacées vers l’emplacement géographique spécifié.
 
-La modification du PDL du groupe de Microsoft 365 place en file d’attente Teams données à migrer vers l’emplacement choisi. Toutefois, cela ne migre pas le site SharePoint ou les fichiers associés au groupe automatiquement. Vous devez déplacer le site séparément en suivant les procédures de déplacement [d’un site SharePoint vers un autre emplacement géographique.](/microsoft-365/enterprise/move-sharepoint-between-geo-locations) N’oubliez pas de suivre les deux étapes pour Teams données et SharePoint données d’un groupe à différents emplacements.
+La modification du PDL du groupe Microsoft 365 place en file d’attente les Teams données à migrer vers l’emplacement choisi. Toutefois, cela ne migre pas le site SharePoint ou les fichiers associés au groupe automatiquement. Vous devez déplacer le site séparément en suivant les procédures de déplacement [d’un site SharePoint vers un autre emplacement géographique](/microsoft-365/enterprise/move-sharepoint-between-geo-locations). N’oubliez pas de suivre les deux étapes pour éviter Teams données SharePoint données d’un groupe à différents emplacements.
 
 Pour rechercher l’emplacement actuel des données d’une équipe, connectez-vous [à Teams PowerShell](/powershell/module/teams/connect-microsoftteams) et exécutez la commande suivante :
 
@@ -67,7 +67,7 @@ Get-MultiGeoRegion -EntityType Group -EntityId <GroupObjectId>
 
 ## <a name="user-experience"></a>Expérience de l’utilisateur
 
-Teams Multi-Géo est transparent pour l’utilisateur final. Une fois que vous modifiez le PDL d’un utilisateur ou d’un groupe, les données respectives sont en file d’attente pour la migration et la migration se produit automatiquement sans impact sur l’utilisateur ou son client Teams, même s’ils sont actifs pendant la migration.
+Teams Multi-Géo est transparente pour l’utilisateur final. Une fois que vous modifiez le PDL d’un utilisateur ou d’un groupe, les données respectives sont en file d’attente pour la migration et la migration se produit automatiquement sans impact sur l’utilisateur ou son client Teams, même s’ils sont actifs pendant la migration.
 
 ## <a name="see-also"></a>Voir aussi
 

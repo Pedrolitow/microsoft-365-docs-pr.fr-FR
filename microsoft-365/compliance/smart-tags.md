@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les balises intelligentes vous permet d’appliquer les fonctionnalités d’apprentissage automatique lors de l’examen du contenu dans Advanced eDiscovery cas. Utilisez des groupes de balises intelligentes pour afficher les résultats des modèles de détection d’apprentissage automatique, tels que le modèle de privilège client-avocat.
-ms.openlocfilehash: c47db0c38c13820013615ff986517a86236f186b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 80c946da943e4880dbd82ea6b34d238b80030b4c
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195544"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807187"
 ---
 # <a name="set-up-smart-tags-in-advanced-ediscovery"></a>Configurer des balises intelligentes dans Advanced eDiscovery
 
@@ -30,13 +30,13 @@ Les fonctionnalités d’apprentissage automatique (ML) dans Advanced eDiscovery
 
 ## <a name="how-to-set-up-a-smart-tag-group"></a>Comment configurer un groupe de balises intelligentes
 
-1. Dans un jeu à réviser, cliquez sur **Gérer le jeu à réviser,** puis sur Gérer les **balises.**
+1. Dans un jeu à réviser, cliquez sur **Gérer le jeu à réviser** , puis sur **Gérer les balises**.
 
-2. Cliquez **sur Ajouter un groupe de balises,** puis **sélectionnez Ajouter un groupe de balises intelligentes.**
+2. Cliquez **sur Ajouter un groupe de balises** , puis **sélectionnez Ajouter un groupe de balises intelligentes**.
 
 3. Sélectionnez ML modèle à associer au groupe de balises.
     
-   Cela crée un groupe de balises et des balises *enfants N,* où *N* est le nombre de sorties possibles du modèle. Par exemple, le modèle [de détection des privilèges client-avocat](attorney-privilege-detection.md) a deux sorties possibles : 
+   Cela crée un groupe de balises et des balises *enfants N* , où *N* est le nombre de sorties possibles du modèle. Par exemple, le modèle [de détection des privilèges client-avocat](attorney-privilege-detection.md) a deux sorties possibles : 
 
    - **Positif** : utilisez cette balise pour baliser les documents qui contiennent du contenu privilégié client-avocat.
    
@@ -44,7 +44,7 @@ Les fonctionnalités d’apprentissage automatique (ML) dans Advanced eDiscovery
     
     Si vous sélectionnez ce modèle, un groupe de balises avec deux balises enfants est créé (une balise enfant nommée **Positive** et l’autre nommée **Negative**) pour le jeu à réviser. Dans cet exemple, chaque balise enfant correspond à l’une des sorties possibles du modèle de détection des privilèges client-avocat.
 
-4. Si vous le souhaitez, vous pouvez renommer le groupe de balises et les balises enfants. Par exemple, vous pouvez renommer la balise **Positive** en **Privileged** et la balise **Negative** sur **Not privileged**.
+4. Si vous le souhaitez, vous pouvez renommer le groupe de balises et les balises enfants. Par exemple, vous pouvez renommer la balise **Positive** en **Privilégié** et la balise **Negative** sur **Non privilégié**.
 
 ## <a name="how-to-use-smart-tags"></a>Comment utiliser des balises intelligentes
 

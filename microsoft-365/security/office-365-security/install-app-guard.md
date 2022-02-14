@@ -16,16 +16,16 @@ ms.collection: M365-security-compliance
 description: Obtenez la dernière version de l’isolation matérielle. Empêcher les attaques actuelles et émergentes telles que les attaques ou les liens malveillants de perturber la productivité des employés et la sécurité de l’entreprise.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2dcd218c5c3f9ab12ab4608aec1fdaac7bd00aeb
-ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
+ms.openlocfilehash: d1dfe0bf7082d05fa534a34cb0dd55d9227fca1a
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62520546"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807067"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Application Guard pour les Office pour les administrateurs
 
-**S’applique à :** Word, Excel et PowerPoint pour Microsoft 365, Windows 10 Entreprise
+**S’applique à :** Word, Excel et PowerPoint pour Microsoft 365, Windows 10 Entreprise, Windows 11 Entreprise
 
 Protection d'application Microsoft Defender for Office (Application Guard for Office) permet d’empêcher les fichiers non fiables d’accéder aux ressources de confiance, ce qui permet de protéger votre entreprise contre les attaques nouvelles et émergentes. Cet article présente aux administrateurs la configuration des appareils pour un aperçu d’Application Guard pour Office. Il fournit des informations sur la exigences système et les étapes d’installation pour activer Application Guard Office sur un appareil.
 
@@ -39,8 +39,8 @@ Protection d'application Microsoft Defender for Office (Application Guard for Of
 
 ### <a name="minimum-software-requirements"></a>Configuration logicielle minimale requise
 
-* **Windows 10** : Windows 10 Entreprise, version 2004 (20H1) build 19041 ou ultérieure
-* **Office** : Office Canal actuel et Canal Enterprise mensuel, build version 2011 16.0.13530.10000 ou ultérieure. Les versions 32 bits et 64 bits de Office sont toutes deux pris en charge.
+* **Windows** : Windows 10 Entreprise édition, version 2004 (20H1) build 19041 ou ultérieure. Toutes les versions de Windows 11 sont pris en charge. 
+* **Office** : Office Canal actuel et Canal Enterprise mensuel, build version 2011 16.0.13530.10000 ou ultérieure. Office Semi-Annual Enterprise Canal, build version 2108 ou ultérieure. Les versions 32 bits et 64 bits de Office sont toutes deux pris en charge.
 * **Package de mise à** jour : Windows 10 de sécurité mensuelle cumulative [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
 Pour obtenir des informations détaillées sur la demande système requise, [reportez-vous à la](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard) Protection d'application Microsoft Defender. Consultez également les guides du fabricant de votre ordinateur sur la façon d’activer la technologie de virtualisation.

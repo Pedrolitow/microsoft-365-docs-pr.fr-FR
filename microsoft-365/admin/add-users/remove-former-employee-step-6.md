@@ -25,34 +25,36 @@ search.appverid:
 - MET150
 - MOE150
 description: Suivez ces étapes pour supprimer la licence Microsoft 365 d’un ancien employé.
-ms.openlocfilehash: 0491a28daac7b85c23037a722f3f810bb4eab71d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 52ab851c88d05c33de58d28d566a46b5e8b1710b
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161581"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805843"
 ---
 # <a name="step-6---remove-the-microsoft-365-license-from-a-former-employee"></a>Étape 6 : Supprimer la licence Microsoft 365 d’un ancien employé
 
 Si vous ne souhaitez pas payer pour une licence après qu’une personne a quitté votre organisation, vous devez supprimer sa licence Microsoft 365, puis la supprimer de votre abonnement. Vous pouvez attribuer une licence à un autre utilisateur si vous ne la supprimez pas.
+
+Si la boîte aux lettres doit être accessible par des personnes autorisées qui ont obtenu des autorisations eDiscovery pour des raisons de conformité ou de droit, une licence Exchange Online Plan 2 doit lui être attribuée (ou une licence Exchange Online Plan 1 avec une Archivage Exchange Online  licence de modules), de sorte qu’une boîte aux lettres puisse être en attente avant sa suppression. Une fois le compte d’utilisateur supprimé, toute licence Exchange Online associée au compte d’utilisateur peut être assignée à un nouvel utilisateur.
   
 Lorsque vous effectuez cette opération, toutes les données de cet utilisateur sont conservées pendant 30 jours. Vous pouvez [accéder](get-access-to-and-back-up-a-former-user-s-data.md) aux données, ou [restaurer](restore-user.md) le compte si l'utilisateur revient. Après 30 jours, toutes les données de l’utilisateur (à l’exception des documents stockés sur SharePoint Online) sont définitivement supprimées de Microsoft 365 et ne peuvent pas être récupérées.
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 2. Sélectionnez le nom de l’employé que vous souhaitez bloquer, puis sélectionnez l’onglet **Licences et** applications.
-3. Clear the check boxes for the license(s) you want to remove, and then select **Save changes**.
+3. Cochez les cases des licences que vous souhaitez supprimer, puis sélectionnez **Enregistrer les modifications**.
 
-**Pour réduire le nombre de licences que vous** payez jusqu’à ce que vous recrutiez une autre personne, vous devez suivre les étapes suivantes :
+**Pour réduire le nombre de licences que vous payez jusqu’à** ce que vous recrutiez une autre personne, vous devez suivre les étapes suivantes :
 
-1. Dans le Centre d’administration, allez sur **la** page Facturation de vos \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">produits,</a> puis sélectionnez **l’onglet Produits.**
+1. Dans le Centre d’administration, allez **sur la** \> page <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Facturation de vos produits</a> , puis sélectionnez **l’onglet Produits** .
 2. Sélectionnez l’abonnement dont vous souhaitez supprimer des licences.
-3. Dans la page de détails, **sélectionnez Supprimer des licences.**
-4. Dans le **volet Supprimer des licences,** sous Nouvelle quantité, dans la zone Nombre total de **licences,** entrez le nombre total de licences que vous souhaitez pour cet abonnement. Par exemple, si vous avez 25 licences et que vous souhaitez en supprimer une, entrez 24.
+3. Dans la page de détails, **sélectionnez Supprimer des licences**.
+4. Dans le **volet Supprimer des licences** , sous Nouvelle quantité, dans la zone Nombre total de **licences** , entrez le nombre total de licences que vous souhaitez pour cet abonnement. Par exemple, si vous avez 25 licences et que vous souhaitez en supprimer une, entrez 24.
 5. Sélectionnez **Enregistrer**.
 
 Lorsque vous [ajoutez une autre](add-users.md) personne à votre entreprise, vous êtes invité à acheter une licence en même temps, en une seule étape !
 
-Pour plus d’informations sur la gestion des licences utilisateur pour Microsoft 365 pour les entreprises, voir Attribuer des [licences](../manage/assign-licenses-to-users.md)aux utilisateurs dans Microsoft 365 entreprise et Désattribuer des licences à des utilisateurs dans [Microsoft 365 entreprise.](../manage/remove-licenses-from-users.md)
+Pour plus d’informations sur la gestion des licences utilisateur pour Microsoft 365 pour les entreprises, voir Attribuer des [licences à des utilisateurs dans Microsoft 365](../manage/assign-licenses-to-users.md) entreprise et Désattribuer des [licences à des utilisateurs dans Microsoft 365](../manage/remove-licenses-from-users.md) entreprise.
   
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>Comment le compte supprimé d'un employé affecte Skype Entreprise
 
@@ -62,4 +64,4 @@ Si l'utilisateur appartient à un groupe de files d'attente, il ne sera plus une
 
 ## <a name="set-up-call-forwarding-to-people-in-your-organization"></a>Configurer le forwarding d’appel vers des personnes de votre organisation
 
-Si vous devez configurer le transfert d’appel pour le numéro de téléphone de l’employé licencié, le paramètre de transfert d’appel sous stratégies d’appel peut configurer le transfert dans lequel les appels entrants peuvent être transmis à d’autres utilisateurs ou faire sonner une autre personne en même temps. Pour plus d’informations, voir [Stratégies d’appel dans Microsoft Teams](/microsoftteams/teams-calling-policy).
+Si vous devez configurer le transfert d’appel pour le numéro de téléphone de l’employé licencié, le paramètre de transfert d’appel sous stratégies d’appel peut configurer le transfert dans lequel les appels entrants peuvent être transmis à d’autres utilisateurs ou sonner en même temps. Pour plus d’informations, voir [Stratégies d’appel Microsoft Teams](/microsoftteams/teams-calling-policy).

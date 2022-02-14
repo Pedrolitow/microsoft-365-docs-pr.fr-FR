@@ -29,12 +29,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Comprenez ce que vous devez savoir avant de passer par le processus d’inscription pour Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 0c372f52f1da5fef680a9eaeb499fcede7278489
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: bb74ab42bb16cc2d8b3a97850ae9be17600bfc9a
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643711"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805903"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Comment s’inscrire - Aide de l’administrateur
 
@@ -49,7 +49,7 @@ Si vous êtes en Chine, Office 365 géré par 21Vianet est conçu pour répondre
   
 Inscrivez-vous au Office 365 géré par 21Vianet afin que votre équipe puisse commencer à utiliser les dernières versions de Word, Excel, PowerPoint et d’autres programmes Office.
   
-Vous êtes prêt à vous inscrire ? [Sélectionnez un plan.](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans)
+Vous êtes prêt à vous inscrire ? [Sélectionnez un plan](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans).
   
 ::: moniker-end
 
@@ -69,17 +69,18 @@ Vous avez besoin d’aide pour choisir un plan ? Des conseillers techniques sont
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>Vous êtes prêt à vous inscrire à une version d’essai gratuite ou acheter un abonnement ?
 
 Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) to choose the plan you want to buy and to start the sign-up wizard. 
   
-Si vous commencez par une version d’essai gratuite, vous [pourrez l’acheter ultérieurement.](../../commerce/try-or-buy-microsoft-365.md) Les utilisateurs et données associés à la version d'évaluation seront conservés.
+Si vous commencez par une version d’essai gratuite, vous [pourrez l’acheter ultérieurement](../../commerce/try-or-buy-microsoft-365.md). Les utilisateurs et données associés à la version d'évaluation seront conservés.
   
 Vous n’avez pas besoin d’annuler votre version d’essai. Si vous n’achetez pas l’abonnement d’essai, il expire automatiquement à la fin de la période d’essai et toutes les informations sont définitivement supprimées.
 
-## <a name="watch-set-up-microsoft-365-business-premium"></a>Watch: Set up Microsoft 365 Business Premium
+## <a name="watch-sign-up-for-microsoft-365-business-premium"></a>Regarder : s’inscrire à Microsoft 365 Business Premium
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
 
 ::: moniker-end
 
@@ -106,6 +107,10 @@ Vous n’avez pas besoin d’annuler votre version d’essai. Si vous n’achete
 
     > [!IMPORTANT]
     >  Lorsque vous vous inscrivez, n’oubliez pas de choisir la meilleure option de paiement pour votre organisation. Pour modifier vos options de paiement, vous devez appeler le support de facturation.
+
+## <a name="watch-set-up-microsoft-365-business-premium"></a>Watch: Set up Microsoft 365 Business Premium
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 ## <a name="related-content"></a>Contenu associé
 

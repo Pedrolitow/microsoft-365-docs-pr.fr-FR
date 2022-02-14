@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9ce944e49b40a2b8be477bf13ae9a42c4f4e1f67
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 4492b50cfdfb0125a9079eb1f4a4945b6e06e011
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765095"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807463"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>Intégrer des appareils et configurer les fonctionnalités de Microsoft Defender pour point de terminaison
 
@@ -96,7 +96,7 @@ Après l’intégration des appareils, vous devez configurer les autres fonction
 |Web Protection     |       v   |    v     |     v    |    v    |    v   |
 |||||||
 |**Détection**     |         |         |         |||
-|Recherche avancée     |      v   |    v     |     v    |    v    |    v   |
+|Repérage avancé     |      v   |    v     |     v    |    v    |    v   |
 |Indicateurs de fichiers personnalisés     |      v   |    v     |     v    |    v    |    v   |
 |Indicateurs réseau personnalisés     |      v   |    v     |     v    |    v    |    v   |
 |PEPT blocage & mode passif     |      v   |    v     |     v    |    v    |    v   |

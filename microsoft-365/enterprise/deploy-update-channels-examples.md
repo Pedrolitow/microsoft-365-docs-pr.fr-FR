@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Comment des exemples d’organisation procèdent au déploiement et à la mise à jour des versions à l’aide de canaux.
-ms.openlocfilehash: a2ce901d6014079a729b0e1f069d4a2d0d4be42a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4e4ebfef9c505f3a6ac27726da9b1f6e5ebb932a
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167005"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806875"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>Exemples de configuration des canaux de déploiement et de mise à jour
 
@@ -49,8 +49,8 @@ Cliquez sur le lien dans la colonne **Exemple** pour passer en revue les groupes
 
 |Offre client/canal|Windows 10|Microsoft 365 Apps for Enterprise (Windows 10)|Exemple|
 |:-------|:-------|:-----|:-------|
-|Idéal pour les clients qui souhaitent accéder aux dernières versions dès qu’elles sont prêtes.|Canal semi-annuel|[Canal actuel](/deployoffice/overview-update-channels#current-channel-overview)|[Dernières versions](deploy-update-channels-examples-rapid-deploy.md)|
-|Idéal pour les entreprises qui souhaitent accéder à la dernière version avec une prévisibilité supplémentaire.|Canal semi-annuel|[Canal Entreprise mensuel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview)||
+|Pour les clients qui souhaitent obtenir les dernières mises à jour dès qu’elles sont prêtes.|Canal semi-annuel|[Canal actuel](/deployoffice/overview-update-channels#current-channel-overview)|[Dernières versions](deploy-update-channels-examples-rapid-deploy.md)|
+|Ce modèle est le bon pour les entreprises qui souhaitent obtenir la dernière version avec plus de prévisibilité.|Canal semi-annuel|[Canal Entreprise mensuel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview)||
 |Idéal pour les entreprises qui ont besoin d’effectuer des tests informatiques intensifs avant chaque mise à jour.|Canal semi-annuel|[Canal Entreprise semestriel](/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview)||
 |
 

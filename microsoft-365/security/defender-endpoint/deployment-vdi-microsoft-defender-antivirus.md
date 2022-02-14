@@ -15,12 +15,12 @@ ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 83013faf2fca5a3a281c5668973523918b883f54
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 6386efe2e0d0ccea35a6d346ece0414020d6d1ef
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766775"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807619"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guide de déploiement de l’antivirus Microsoft Defender dans un environnement VDI (Virtual Desktop Infrastructure)
 
@@ -47,6 +47,9 @@ Ce guide décrit comment configurer vos VM pour une protection et des performanc
 - [Appliquer des exclusions](#exclusions)
 
 Vous pouvez également télécharger le Antivirus Microsoft Defender de livre blanc sur [l’infrastructure](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf) de bureau virtuel, qui examine la nouvelle fonctionnalité de mise à jour de l’intelligence de sécurité partagée, ainsi que des tests de performances et des conseils sur la façon de tester les performances des antivirus sur votre propre environnement VDI.
+
+> [!NOTE]
+> Le site de démonstration Defender for Endpoint demo.wd.microsoft.com est supprimé et sera supprimé à l’avenir.
 
 > [!IMPORTANT]
 > Bien que l’environnement VDI puisse être hébergé sur Windows Server 2012 ou Windows Server 2016, les machines virtuelles doivent au minimum être en Windows 10, 1607, en raison de l’augmentation des technologies et des fonctionnalités de protection qui ne sont pas disponibles dans les versions antérieures de Windows.

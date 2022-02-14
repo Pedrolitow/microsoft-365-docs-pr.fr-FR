@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365solution-scenario
 ms.date: ''
-ms.openlocfilehash: 98c97afb34518f32e4d8a5da03ad35d99e5494cd
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: fb46d0c03aaaaad016ca13be5bfa26a19887794c
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320798"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807451"
 ---
 # <a name="evaluate-network-protection"></a>Évaluer la protection du réseau
 
@@ -37,6 +37,9 @@ Cet article vous aide à évaluer la protection du réseau en activant la foncti
 
 > [!TIP]
 > Vous pouvez également consulter le site web des scénarios de démonstration de Microsoft Defender [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour voir comment fonctionnent les autres fonctionnalités de protection.
+
+> [!NOTE]
+> Le site de démonstration Defender for Endpoint demo.wd.microsoft.com est supprimé et sera supprimé à l’avenir.
 
 ## <a name="enable-network-protection-in-audit-mode"></a>Activer la protection réseau en mode audit
 

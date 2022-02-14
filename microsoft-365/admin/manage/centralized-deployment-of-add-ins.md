@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs répondent aux exigences, afin que vous pouvez utiliser le déploiement centralisé pour déployer Office des modules.
-ms.openlocfilehash: 409a19f9e3579978eb3e3cf03d087820e494e181
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 4a64a9dd9a15c9bc877288aa9ac8fc62c40cee51
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933766"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805879"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des add-ins fonctionne pour votre organisation
 
@@ -48,7 +48,7 @@ L’ouverture d’un client pour tous les utilisateurs peut prendre jusqu’à 2
 ## <a name="before-you-begin"></a>Avant de commencer
 
 Le déploiement centralisé des add-ins nécessite que les utilisateurs utilisent des licences Microsoft 365 Business (Business Basic, Business Standard, Business Premium), des licences Office 365 Entreprise (E1/E3/E5/F3) ou des licences Microsoft 365 Entreprise (E3/E5/F3) (et sont Office à l’aide de leur ID d’organisation), de licences Office 365 Éducation (A1/A3/A5) ou de licences Microsoft 365 Éducation (A3/A5), et ont des boîtes aux lettres Exchange Online et Exchange Online actives. Votre annuaire d’abonnement doit être dans ou fédéré pour Azure Active Directory.
-Vous pouvez afficher les exigences spécifiques Office et Exchange ci-dessous, ou utiliser le contrôle de compatibilité du déploiement [centralisé.](#centralized-deployment-compatibility-checker)
+Vous pouvez afficher les exigences spécifiques Office et Exchange ci-dessous, ou utiliser le contrôle de compatibilité [du déploiement centralisé](#centralized-deployment-compatibility-checker).
 
 La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
 
@@ -85,23 +85,23 @@ Pour connaître la configuration utilisée, consultez l'administrateur Exchange 
 
 ### <a name="admin-requirements"></a>Configuration requise pour l’administrateur
 
-Pour déployer un add-in via le déploiement centralisé, vous devez être administrateur général ou administrateur Exchange de l’organisation.
+Pour déployer un add-in via un déploiement centralisé, vous devez être administrateur général ou administrateur Exchange de l’organisation.
 
 > [!NOTE]
-> Un administrateur Exchange peut déployer un application uniquement si la propriété **Inscriptions** de l’application est définie sur true dans le Centre d’administration Azure Active Directory, comme illustré dans l’image suivante :
+> Un administrateur Exchange peut déployer un application si le rôle Administrateur d’application  est ajouté ou si la propriété Inscriptions d’application est définie sur true dans le Centre d’administration Azure Active Directory, comme illustré dans l’image suivante :
 >
 > ![image](https://user-images.githubusercontent.com/89943918/144516704-8874a10d-b540-41f3-ae9d-c07a8d7e143f.png)
 
 
 ### <a name="centralized-deployment-compatibility-checker"></a>Contrôle de compatibilité du déploiement centralisé
 
-À l’aide du contrôle de compatibilité du déploiement centralisé, vous pouvez vérifier si les utilisateurs de votre client sont configurer pour utiliser le déploiement centralisé pour Word, Excel et PowerPoint. Le vérificateur de compatibilité n'est pas requis pour la prise en charge d'Outlook. Téléchargez [le contrôle de compatibilité.](https://aka.ms/officeaddindeploymentorgcompatibilitychecker)
+À l’aide du contrôle de compatibilité du déploiement centralisé, vous pouvez vérifier si les utilisateurs de votre client sont configurer pour utiliser le déploiement centralisé pour Word, Excel et PowerPoint. Le vérificateur de compatibilité n'est pas requis pour la prise en charge d'Outlook. Téléchargez [le contrôle de compatibilité](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
 
 #### <a name="run-the-compatibility-checker"></a>Exécuter le contrôle de compatibilité
 
 1. Démarrez une fenêtre avec PowerShell.exe élevée.
 
-2. Exécutez la commande suivante :
+2. Exécutez la commande suivante :
 
    ```powershell
    Import-Module O365CompatibilityChecker
@@ -112,7 +112,7 @@ Pour déployer un add-in via le déploiement centralisé, vous devez être admin
    ```powershell
    Invoke-CompatibilityCheck
    ```
-   Cette commande vous demande  *_TenantDomain_* (par exemple, *TailspinToysIncorporated.onmicrosoft). </span> com*) et  *_les informations d’identification TenantAdmin_* (utilisez vos informations d’identification d’administrateur global), puis demande le consentement.
+   Cette commande vous demande  *_TenantDomain_* (par exemple, *TailspinToysIncorporated.onmicrosoft).</span> com*) et  *_les informations d’identification TenantAdmin_* (utilisez vos informations d’identification d’administrateur global), puis demande le consentement.
 
    > [!NOTE]
    > Selon le nombre d'utilisateurs dans votre client, l'exécution du vérificateur peut prendre quelques minutes ou plusieurs heures. 
@@ -162,17 +162,17 @@ Vous pouvez également utiliser l'API Graph Azure Active Directory pour exécute
 
 ### <a name="contacting-microsoft-for-support"></a>Contacter Microsoft pour obtenir une assistance
 
-Si vous ou vos utilisateurs rencontrez des problèmes lors du chargement du add-in lors de l’utilisation d’applications Office pour le web (Word, Excel, etc.), qui ont été déployées de manière centralisée, vous devrez peut-être contacter le support Microsoft[(](../../business-video/get-help-support.md)découvrez comment . Fournissez les informations suivantes sur votre environnement Microsoft 365 dans le ticket de support.
+Si vous ou vos utilisateurs rencontrez des problèmes lors du chargement du add-in lors de l’utilisation d’applications Office pour le web (Word, Excel, etc.), qui ont été déployées de manière centralisée, vous devrez peut-être contacter le support [Microsoft (découvrez](../../business-video/get-help-support.md) comment faire. Fournissez les informations suivantes sur votre environnement Microsoft 365 dans le ticket de support.
 
 | Plateforme | Informations de débogage |
 |:-----|:-----|
 |Office | Journaux Charles/Fiddler  <br/>  ID de client ([découvrez comment](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Affichez la source de l’une des pages Office et recherchez la valeur de l’ID de corrélation et envoyez-la pour prendre en charge :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
-|Clients riches (Windows, Mac) | Journaux Charles/Fiddler  <br/>  Numéros de build de l’application cliente (de préférence en tant que capture d’écran de **Fichier/Compte)** |
+|Clients riches (Windows, Mac) | Journaux Charles/Fiddler  <br/>  Numéros de build de l’application cliente (de préférence en tant que capture d’écran de **Fichier/Compte**) |
 
 ## <a name="related-content"></a>Contenu associé
 
 [Déployer des add-ins dans le Centre d’administration](../manage/manage-deployment-of-add-ins.md) (article)\
 [Gérer les add-ins dans le Centre d’administration](manage-addins-in-the-admin-center.md) (article)\
 [FAQ sur le déploiement centralisé](../manage/centralized-deployment-faq.yml) (article)\
-[Mettre à niveau votre Microsoft 365 pour les utilisateurs professionnels](../setup/upgrade-users-to-latest-office-client.md) vers le client Office le plus récent (article)
+[Mettre à niveau votre Microsoft 365 pour les utilisateurs professionnels vers le client Office le plus récent](../setup/upgrade-users-to-latest-office-client.md) (article)
  

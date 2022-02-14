@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez la création et l’importation d’un type d’informations sensibles personnalisé des stratégies dans le centre de conformité.
-ms.openlocfilehash: 4e9a6eb7c4766fa598b0a28f7632c7c3ed530f9e
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: ffca0717bbefdad90854f118131fe45ae3ce4dfd
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272065"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806239"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Créer un type d’informations sensibles personnalisé à l’aide de PowerShell
 
@@ -400,7 +400,7 @@ Microsoft 365 des processeurs de fonctions pour les sits couramment utilisés co
 
 Cela vous permet de définir votre propre RegEx et de les valider. Pour utiliser des validateurs, définissez votre propre RegEx et utilisez `Validator` la propriété pour ajouter le processeur de fonction de votre choix. Une fois défini, vous pouvez utiliser cette regEx dans un sit.
 
-Dans l’exemple ci-dessous, une expression régulière - Regex_credit_card_AdditionalDelimiters est définie pour la carte de crédit qui est ensuite validée à l’aide de la fonction checksum pour la carte de crédit à l’aide de Func_credit_card comme validateur.
+Dans l’exemple ci-dessous, une expression régulière - Regex_credit_card_AdditionalDelimiters est définie pour la carte de crédit, qui est ensuite validée à l’aide de la fonction checksum pour la carte de crédit en utilisant Func_credit_card comme validateur.
 
 ```xml
 <Regex id="Regex_credit_card_AdditionalDelimiters" validators="Func_credit_card"> (?:^|[\s,;\:\(\)\[\]"'])([0-9]{4}[ -_][0-9]{4}[ -_][0-9]{4}[ -_][0-9]{4})(?:$|[\s,;\:\(\)\[\]"'])</Regex>
@@ -537,13 +537,13 @@ Lorsque vous chargez votre fichier XML de package de règles, le système valid
 
 - Chaque type d’informations sensibles personnalisé peut contenir un total maximum de 2 048 mots clés.
 
-- La taille maximale des dictionnaires de mots clés dans un seul client est de 480 000 To compressées pour se conformer aux limites du schéma AD. Faites référence au même dictionnaire autant de fois que nécessaire lors de la création de types d’informations sensibles personnalisés. Commencez par créer des listes de mots clés personnalisés dans le type informations sensibles, puis utilisez des dictionnaires de mots clés si une liste de mots clés en comporte plus de 2048 ou si un mot clé comporte plus de 50 caractères.
+- La taille maximale des dictionnaires de mots clés dans un seul client est de 480 Ko compressés pour se conformer aux limites du schéma AD. Faites référence au même dictionnaire autant de fois que nécessaire lors de la création de types d’informations sensibles personnalisés. Commencez par créer des listes de mots clés personnalisés dans le type informations sensibles, puis utilisez des dictionnaires de mots clés si une liste de mots clés en comporte plus de 2048 ou si un mot clé comporte plus de 50 caractères.
 
 - Un maximum de 50 types d’informations sensibles basés sur un dictionnaire de mots clés sont autorisés dans un client.
 
 - Vérifiez que chaque élément Entité contient un attribut recommendedConfidence.
 
-- Lorsque vous utilisez la cmdlet PowerShell, la taille de retour maximale des données désérialisées est d’environ 1 mégaoctet.   Cela affecte la taille de votre fichier XML de pack de règles. Conservez le fichier chargé limité à un maximum de 770 kilo-octets comme limite recommandée pour obtenir des résultats cohérents sans erreur lors du traitement.
+- Lorsque vous utilisez l’cmdlet PowerShell, la taille de retour maximale des données désérialisées est d’environ 1 mégaoctet.   Cela affecte la taille de votre fichier XML de pack de règles. Conservez le fichier chargé limité à un maximum de 770 kilo-octets comme limite recommandée pour obtenir des résultats cohérents sans erreur lors du traitement.
 
 - La structure XML ne nécessite pas de caractères de mise en forme tels que des espaces, des tabulations ou des entrées de retour chariot/échange de lignes.  Prenez-en note lorsque vous optimisez l’espace disponible sur les téléchargements. Des outils tels que Microsoft Visual Code fournissent des fonctionnalités de ligne de jointure permettant de compacter le fichier XML.
 

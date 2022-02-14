@@ -22,19 +22,19 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6cc1735182a91819d38bc18ecb60de7d29085d28
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: b7118d51ce87e26b6752ac767040a26e87464f22
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122020"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807475"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Exécuter une simulation d’attaque dans Microsoft 365 Defender environnement pilote
 
 
 Cet article est [l’étape 1 de 2](eval-defender-investigate-respond.md) dans le processus d’examen et de réponse d’un incident Microsoft 365 Defender l’aide d’un environnement pilote. Pour plus d’informations sur ce processus, consultez l’article [de](eval-defender-investigate-respond.md) présentation.
 
-Après avoir préparé votre environnement [pilote,](eval-defender-investigate-respond.md)il est temps de tester la réponse aux incidents de Microsoft 365 Defender et les fonctionnalités automatisées d’examen et de correction en créant un incident avec une attaque simulée et en utilisant le portail Microsoft 365 Defender pour examiner et répondre.
+Après avoir préparé votre environnement [pilote, il](eval-defender-investigate-respond.md) est temps de tester la réponse aux incidents de Microsoft 365 Defender et les fonctionnalités automatisées d’examen et de correction en créant un incident avec une attaque simulée et en utilisant le portail Microsoft 365 Defender pour examiner et répondre.
 
 Un incident dans Microsoft 365 Defender est une collection d’alertes corrélées et de données associées qui constitue l’histoire d’une attaque.
 
@@ -48,13 +48,13 @@ Les services et applications Microsoft 365 créent des alertes lorsqu’ils dét
 
 Le Microsoft 365 Defender web dispose de fonctionnalités intégrées pour créer des attaques simulées sur votre environnement pilote :
 
-- Formation à la simulation d’attaques Microsoft 365 Defender pour Office 365 à [https://security.microsoft.com/attacksimulator](https://security.microsoft.com/attacksimulator) .
+- Formation à la simulation d’attaques Microsoft 365 Defender pour Office 365 à [https://security.microsoft.com/attacksimulator](https://security.microsoft.com/attacksimulator).
   
-  Dans le portail Microsoft 365 Defender, sélectionnez **Email & collaboration > attack simulation training**.
+  Dans le portail Microsoft 365 Defender, sélectionnez **e-mail & collaboration > formation à la simulation d’attaques**.
 
-- Didacticiels d& des simulations pour Microsoft 365 Defender point de terminaison à [https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations) .
+- Didacticiels d& des simulations pour Microsoft 365 Defender point de terminaison à [https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations).
 
-  Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>sélectionnez Points de **terminaison > didacticiels & simulations.**
+  Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a> sélectionnez Points de **terminaison > didacticiels & simulations**.
 
 ### <a name="defender-for-office-365-attack-simulation-training"></a>Formation à la simulation d Office 365 Defender for Office 365
 
@@ -62,19 +62,19 @@ Defender for Office 365 with Microsoft 365 E5 or Microsoft Defender for Office 3
 
 1. Créer une simulation
 
-   Pour obtenir des instructions détaillées sur la création et l’envoi d’une nouvelle simulation, voir [Simuler une attaque par hameçonnage.](/microsoft-365/security/office-365-security/attack-simulation-training)
+   Pour obtenir des instructions détaillées sur la création et l’envoi d’une nouvelle simulation, voir [Simulation d’une attaque par hameçonnage](/microsoft-365/security/office-365-security/attack-simulation-training).
 
 2. Créer une charge utile
 
-   Pour obtenir des instructions détaillées sur la création d’une charge utile à utiliser dans une simulation, voir Créer une charge utile personnalisée pour la formation à la [simulation d’attaques.](/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
+   Pour obtenir des instructions détaillées sur la création d’une charge utile à utiliser dans une simulation, voir Créer une charge utile personnalisée pour la formation à la [simulation d’attaques](/microsoft-365/security/office-365-security/attack-simulation-training-payloads).
 
 3. Obtenir des informations
 
-   Pour obtenir des instructions détaillées sur la façon d’obtenir des informations sur les rapports, voir Obtenir des informations via une formation à la [simulation d’attaques.](/microsoft-365/security/office-365-security/attack-simulation-training-insights)
+   Pour obtenir des instructions détaillées sur la façon d’obtenir des informations sur les rapports, voir Obtenir des informations [par le biais d’une formation sur la simulation d’attaques](/microsoft-365/security/office-365-security/attack-simulation-training-insights).
 
    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMhvB]
 
-Pour plus d’informations, voir [Simulations.](/microsoft-365/security/office-365-security/attack-simulation-training-get-started#simulations)
+Pour plus d’informations, voir [Simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started#simulations).
 
 ### <a name="defender-for-endpoint-attack-tutorials--simulations"></a>Didacticiels d’attaque defender pour les points de terminaison & simulations
 
@@ -93,7 +93,7 @@ Pour chaque simulation ou didacticiel :
 
 3. Exécutez le fichier ou le script de simulation sur le périphérique de test comme indiqué dans le document.
 
- Pour plus d’informations, voir [Expérience de Microsoft Defender pour le point de terminaison par le biais d’attaques simulées.](/microsoft-365/security/defender-endpoint/attack-simulations)
+ Pour plus d’informations, voir [Expérience microsoft Defender pour point de terminaison par le biais d’attaques simulées](/microsoft-365/security/defender-endpoint/attack-simulations).
 
 ## <a name="simulate-an-attack-with-an-isolated-domain-controller-and-client-device-optional"></a>Simuler une attaque avec un contrôleur de domaine isolé et un périphérique client (facultatif)
 
@@ -110,7 +110,7 @@ Tout d’abord, vous devez ajouter un contrôleur de domaine AD DS isolé et un 
 2. Vérifiez que votre contrôleur de domaine :
 
    - Exécute Windows Server 2008 R2 ou une version ultérieure.
-   - Signale à [Microsoft Defender pour l’identité et](/azure/security-center/security-center-wdatp) a activé la gestion à [distance.](/windows-server/administration/server-manager/configure-remote-management-in-server-manager)
+   - Signale Microsoft [Defender pour l’identité et](/azure/security-center/security-center-wdatp) a activé la [gestion à distance](/windows-server/administration/server-manager/configure-remote-management-in-server-manager).
    - Microsoft [Defender pour l’identité et Microsoft Defender pour les applications cloud sont-ils](/cloud-app-security/mdi-integration) activés .
    - Un utilisateur test est créé dans le domaine de test. Les autorisations de niveau administrateur ne sont pas nécessaires.
 
@@ -118,12 +118,12 @@ Tout d’abord, vous devez ajouter un contrôleur de domaine AD DS isolé et un 
 
    - S Windows 10 la version 1903 ou une version ultérieure.
    - Est joint au domaine du contrôleur de domaine AD DS.
-   - A [Antivirus Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) activée. Si vous avez des difficultés à activer Antivirus Windows Defender, consultez cette [rubrique de résolution des problèmes.](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
-   - Est [intégré à Microsoft Defender pour point de terminaison.](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
+   - A [Antivirus Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) activée. Si vous avez des difficultés à activer Antivirus Windows Defender, consultez cette [rubrique de résolution des problèmes](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+   - Est [intégré à Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 Si vous utilisez des groupes de locataires et d’appareils, créez un groupe d’appareils dédié pour le périphérique de test et faites-le avancer au niveau supérieur.
 
-Une autre solution consiste à héberger votre contrôleur de domaine AD DS et votre périphérique de test en tant que machines virtuelles dans Microsoft Azure services d’infrastructure. Vous pouvez utiliser les instructions de la [phase 1](/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise#phase-1-create-a-simulated-intranet)du Guide de laboratoire de test d’entreprise simulée, mais ignorez la création de la machine virtuelle APP1.
+Une autre solution consiste à héberger votre contrôleur de domaine AD DS et votre périphérique de test en tant que machines virtuelles dans Microsoft Azure services d’infrastructure. Vous pouvez utiliser les instructions de la [phase 1 du Guide](/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise#phase-1-create-a-simulated-intranet) de laboratoire de test d’entreprise simulée, mais ignorez la création de la machine virtuelle APP1.
 
 Voici le résultat.
 
@@ -189,7 +189,7 @@ Pour voir la fonctionnalité Incident et réponse automatisé en action, mainten
 
 Si vous basculez vers le point de vue de l’analyste SOC, vous pouvez maintenant commencer à examiner l’attaque dans Microsoft 365 Defender portail.
 
-1. Ouvrez <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">le portail Microsoft 365 Defender.</a>
+1. Ouvrez <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">le Microsoft 365 Defender web</a>.
 
 2. Dans le volet de navigation, sélectionnez **Incidents & Alerts > Incidents**.
 
@@ -205,7 +205,7 @@ Les alertes générées au cours de cette simulation sont associées à la même
 
 Pour afficher l’incident :
 
-1. Ouvrez <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">le portail Microsoft 365 Defender.</a>
+1. Ouvrez <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">le Microsoft 365 Defender web</a>.
 
 2. Dans le volet de navigation, sélectionnez **Incidents & Alerts > Incidents**.
 
@@ -213,9 +213,9 @@ Pour afficher l’incident :
 
    Les alertes affichées dans le tableau de bord peuvent être filtrées en fonction des ressources de service : Microsoft Defender pour l’identité, Microsoft Defender pour les applications cloud, Microsoft Defender pour le point de terminaison, Microsoft 365 Defender et Microsoft Defender pour Office 365.
 
-3. Sélectionnez **Ouvrir la page Incident** pour obtenir plus d’informations sur l’incident.
+3. **Sélectionnez Ouvrir la page Incident** pour obtenir plus d’informations sur l’incident.
 
-   Dans la page **Incident,** vous pouvez voir toutes les alertes et informations relatives à l’incident. Les informations incluent les entités et les ressources impliquées dans l’alerte, la source de détection des alertes (par exemple, Microsoft Defender pour l’identité ou Microsoft Defender pour le point de terminaison) et la raison pour laquelle elles ont été liées. L’examen de la liste des alertes d’incident indique la progression de l’attaque. À partir de cette vue, vous pouvez voir et examiner les alertes individuelles.
+   Dans la page **Incident** , vous pouvez voir toutes les alertes et informations relatives à l’incident. Les informations incluent les entités et les ressources impliquées dans l’alerte, la source de détection des alertes (par exemple, Microsoft Defender pour l’identité ou Microsoft Defender pour le point de terminaison) et la raison pour laquelle elles ont été liées. L’examen de la liste des alertes d’incident indique la progression de l’attaque. À partir de cette vue, vous pouvez voir et examiner les alertes individuelles.
 
    Vous pouvez également cliquer sur **Gérer l’incident** dans le menu de droite pour marquer l’incident, l’affecter à vous-même et ajouter des commentaires.
 
@@ -242,7 +242,7 @@ Les détections microsoft Defender pour les points de terminaison ciblent souven
 
 Nous employons des algorithmes d’apprentissage à grande échelle pour établir le comportement normal des processus courants au sein d’une organisation et dans le monde entier, et nous regardons quand ces processus montrent des comportements anormaux. Ces comportements anormaux indiquent souvent que du code superflu a été introduit et s’exécute dans un processus autrement approuvé.
 
-Dans ce scénario, le <i> processus </i>notepad.exeprésente un comportement anormal, impliquant une communication avec un emplacement externe. Ce résultat est indépendant de la méthode spécifique utilisée pour introduire et exécuter le code malveillant.
+Dans ce scénario, <i> le processusnotepad.exe</i> présente un comportement anormal, impliquant une communication avec un emplacement externe. Ce résultat est indépendant de la méthode spécifique utilisée pour introduire et exécuter le code malveillant.
 
 > [!NOTE]
 > Étant donné que cette alerte est basée sur des modèles d’apprentissage automatique qui nécessitent un traitement principal supplémentaire, il peut prendre un certain temps avant que cette alerte ne s’y trouve dans le portail.
@@ -277,7 +277,7 @@ Sélectionnez **l’onglet** Chronologie pour ouvrir la chronologie de l’appar
 
 Le développement de certains des comportements les plus intéressants fournit des détails utiles, tels que les arbre de processus.
 
-Par exemple, faites défiler vers le bas jusqu’à ce que vous trouviez **l’événement d’alerte que l’injection de processus suspect a observé.** Sélectionnez lepowershell.exe injecté dans notepad.exe **événement** de processus sous celui-ci, pour afficher l’arborescence de processus complète de ce comportement sous le graphique **Entités** d’événements dans le volet latéral. Utilisez la barre de recherche pour le filtrage si nécessaire.
+Par exemple, faites défiler vers le bas jusqu’à ce que vous trouviez **l’événement d’alerte que l’injection de processus suspect a observé**. Sélectionnez lepowershell.exe injecté dans lnotepad.exe **de processus** inférieur, pour afficher l’arborescence de processus complète de ce comportement sous le graphique **Entités** d’événements dans le volet latéral. Utilisez la barre de recherche pour le filtrage si nécessaire.
 
 ![Exemple d’arborescence de processus pour le comportement de création de fichier PowerShell sélectionné.](../../media/mtp/fig12.png)
 
@@ -285,7 +285,7 @@ Par exemple, faites défiler vers le bas jusqu’à ce que vous trouviez **l’�
 
 Dans la page Incident, sélectionnez **l’onglet Utilisateurs** pour afficher la liste des utilisateurs impliqués dans l’attaque. Le tableau contient des informations supplémentaires sur chaque utilisateur, y compris le score de priorité d’examen **de chaque** utilisateur.
 
-Sélectionnez le nom d’utilisateur pour ouvrir la page de profil de l’utilisateur dans laquelle un examen plus approfondie peut être effectué. [En savoir plus sur l’étude des utilisateurs à risque.](/cloud-app-security/tutorial-ueba#identify)
+Sélectionnez le nom d’utilisateur pour ouvrir la page de profil de l’utilisateur dans laquelle un examen plus approfondie peut être effectué. [En savoir plus sur l’étude des utilisateurs à risque](/cloud-app-security/tutorial-ueba#identify).
 
 ![Exemple de page d’utilisateur Defender pour les applications cloud.](../../media/mtp/fig13.png)
 
@@ -300,7 +300,7 @@ Revenir à l’incident dans le portail Microsoft 365 Defender web. **L’onglet
 
 ![Exemple d’enquêtes automatisées relatives à l’incident.](../../media/mtp/fig14.png)
 
-Sélectionnez l’alerte qui a déclenché un examen pour ouvrir la page **Détails de l’examen.** Vous verrez les détails suivants :
+Sélectionnez l’alerte qui a déclenché un examen pour ouvrir la page **Détails de l’examen** . Vous verrez les détails suivants :
 
 - Alerte qui a déclenché l’examen automatisé.
 - Utilisateurs et appareils touchés. Si des indicateurs sont trouvés sur des appareils supplémentaires, ces appareils supplémentaires sont également répertoriés.
@@ -308,7 +308,7 @@ Sélectionnez l’alerte qui a déclenché un examen pour ouvrir la page **Déta
 - Menaces trouvées. Menaces connues trouvées au cours de l’enquête.
 
 > [!NOTE]
-> Selon le délai, l’enquête automatisée est peut-être toujours en cours d’exécution. Patientez quelques minutes avant de collecter et d’analyser les preuves et de passer en revue les résultats. Actualisez la page **Détails de l’examen** pour obtenir les dernières conclusions.
+> Selon le délai, l’enquête automatisée est peut-être toujours en cours d’exécution. Patientez quelques minutes avant de collecter et d’analyser les preuves et de passer en revue les résultats. Actualisez **la page Détails de l’examen** pour obtenir les dernières conclusions.
 
 ![Exemple de la page Détails de l’examen.](../../media/mtp/fig15.png)
 
@@ -320,7 +320,7 @@ Vous pouvez voir <i>notepad.exe</i> disparaître de la liste des processus en co
 
 Une fois l’examen terminé et confirmé qu’il a été corrigé, vous résolvez l’incident.
 
-Dans la page **Incident,** sélectionnez **Gérer l’incident.** Définissez l’état **sur Résoudre l’incident** et sélectionnez **Alerte true** pour la classification et les **tests de** sécurité pour la détermination.
+Dans la page **Incident** , sélectionnez **Gérer l’incident**. Définissez l’état **sur Résoudre l’incident** et sélectionnez **Alerte true** pour la classification et **les tests de** sécurité pour la détermination.
 
 ![Exemple de page incidents avec le panneau Gérer les incidents ouvert dans lequel vous pouvez cliquer sur le commutateur pour résoudre l’incident.](../../media/mtp/fig16.png)
 

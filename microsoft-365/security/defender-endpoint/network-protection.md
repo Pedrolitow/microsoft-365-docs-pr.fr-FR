@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: overview
 ms.collection: m365initiative-m365-defender
 ms.date: ''
-ms.openlocfilehash: dfa84cf167dfdb366ad4a7c636a85a30b6de24a4
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: b94e7f959c44e44e5b61dfd0536b3c1077d0edc5
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326932"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807199"
 ---
 # <a name="protect-your-network"></a>Protéger votre réseau
 
@@ -42,6 +42,9 @@ La protection du réseau étend la protection dans [la protection Web](web-prote
 
 > [!TIP]
 > Consultez le site testground de Microsoft Defender for Endpoint [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour voir comment fonctionne la protection réseau.
+
+> [!NOTE]
+> Le site de démonstration Defender for Endpoint demo.wd.microsoft.com est supprimé et sera supprimé à l’avenir.
 
 ## <a name="requirements-for-network-protection"></a>Conditions requises pour la protection du réseau
 

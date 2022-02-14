@@ -26,12 +26,12 @@ metadata:
   - GEA150
   ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
   description: En savoir plus sur les domaines (domaine onmicrosoft et domaine de transfert) en trouvant des réponses à vos questions dans le FAQ.
-  ms.openlocfilehash: d2af94766d11e643856c3139c87ddc643057b957
-  ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+  ms.openlocfilehash: 7fcc70ac6162a038e65646a26a2a6441be8081b9
+  ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 02/09/2022
-  ms.locfileid: "62464285"
+  ms.lasthandoff: 02/14/2022
+  ms.locfileid: "62806539"
 title: Forum aux questions sur les domaines
 summary: "\n\nCet article contient des réponses aux questions fréquemment posées sur les domaines Microsoft 365.\n\nSi vous ne trouvez pas la réponse à votre question, laissez-nous un commentaire et nous l'ajouterons à la liste.\n"
 sections:
@@ -42,7 +42,9 @@ sections:
   - question: Comment puis-je valider les enregistrements SPF pour mon domaine ?
     answer: "Il est important de n’avoir ou de créer qu’un seul enregistrement  **TXT pour SPF**. Si vous avez déjà un enregistrement SPF, vous devez lui Microsoft 365 des valeurs de Microsoft 365, plutôt que d’en créer un nouveau. Une fois que vous avez ajouté ou mis à jour votre enregistrement SPF pour la messagerie Microsoft, vous devez vérifier que la syntaxe est correcte avec l’un de ces outils : \n  \n- [Outils de test d’enregistrement SPF](http://www.kitterman.com/spf/validate.html)\n    \n- [SPF Surveyor](https://dmarcian.com/spf-survey/)\n    \n- [Interface web Dig](http://digwebinterface.com/)\n"
   - question: Qu’est-ce qu’un nom de domaine ?
-    answer: "[] Un domaine est un nom unique qui apparaît après le signe **@** dans les adresses de messagerie et après **www.** dans les adresses web. Elle prend généralement la forme du nom de votre organisation et d’un suffixe Internet standard, tel que  *yourbusiness.com ou*  *stateuniversity.edu.* \n  \nL’utilisation d’un domaine personnalisé comme **« rob\\@ contoso.com** » avec Microsoft 365 vous permet de renforcer la créativité et la reconnaissance de votre marque. \n  \nVous pouvez acheter un domaine dans Microsoft 365 et nous le configurerons automatiquement, ou vous pouvez en acheter ou en obtenir un que vous possédez déjà auprès [d’un bureau d’enregistrement](../get-help-with-domains/buy-a-domain-name.md) de domaines.\n    \n"
+    answer: "[] Un domaine est un nom unique qui apparaît après le signe **@** dans les adresses de messagerie et après **www.** dans les adresses web. Elle prend généralement la forme du nom de votre organisation et d’un suffixe Internet standard, tel que  *yourbusiness.com ou*  *stateuniversity.edu.* \n  \nL’utilisation d’un domaine personnalisé comme **« rob\\@ contoso.com** » avec Microsoft 365 vous permet de renforcer la créativité et la reconnaissance de votre marque. \n  \nVous pouvez acheter un domaine dans Microsoft 365 et nous le configurerons automatiquement, ou vous pouvez en acheter ou en obtenir un que vous possédez déjà auprès [d’un bureau d’enregistrement](../get-help-with-domains/buy-a-domain-name.md) de domaines.\n"
+  - question: Est-il possible de connecter un domaine à des offres personnelles ou de famille ?
+    answer: "En tant qu’avantage de votre abonnement Microsoft 365 Famille ou Microsoft 365 Personnel, vous pouvez créer une adresse de messagerie personnalisée associée à votre boîte aux lettres Outlook.com, par exemple, yourname@example.com. Pour l’instant, nous  prise en charge uniquement la connexion de domaines gérés par GoDaddy Outlook.com. Pour plus d’informations, [voir Obtenir une adresse de messagerie personnalisée dans Microsoft 365](https://support.microsoft.com/office/get-a-personalized-email-address-in-microsoft-365-75416a58-b225-4c02-8c07-8979403b427b).\n   \n"
   - question: Que se passe-t-il si mon fournisseur DNS ne prend pas en charge certains types d’enregistrement ?
     answer: "Si vous gérez vos propres enregistrements DNS et que votre hôte DNS ne prend pas en charge tous les enregistrements DNS dont Microsoft 365 a besoin, certaines fonctionnalités Microsoft 365 ne fonctionneront pas. Nous vous recommandons de transférer votre domaine vers un bureau d’enregistrement qui prend en charge tous les enregistrements DNS requis.\n  \nFournisseurs qui supportent tous les enregistrements DNS requis :\n  \n- Feuille deynadot\n    \n- eNomCentral\n    \n- Europe Registry\n\n- Cloudflare\n    \n- GoDaddy\n    \n- Pointer\n    \n- MyHosting.com\n    \n- Name.com\n    \n- Presque libre\n    \n- Nettica\n    \n- Network Information Center (NIC)\n    \n- Network Solutions\n    \n- Register.com\n  \n"
   - question: Comment définir ou modifier le domaine par défaut dans Microsoft 365 ?

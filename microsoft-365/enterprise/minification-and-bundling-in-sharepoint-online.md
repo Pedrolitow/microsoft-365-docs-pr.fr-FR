@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: Découvrez comment utiliser les techniques de réduction et de regroupement avec Web Essentials pour réduire les demandes HTTP et le temps nécessaire au chargement des pages dans SharePoint Online.
-ms.openlocfilehash: bf9c997fc5245fbe58e1ffd8c306f9818783bd3f
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: fabf690f523cabf67fe775bbd1a10251a477f633
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281470"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807115"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Minimisation et regroupement dans SharePoint Online
 
 Cet article explique comment utiliser les techniques de réduction et de regroupement avec Web Essentials pour réduire le nombre de demandes HTTP et réduire le temps nécessaire au chargement des pages dans SharePoint Online.
   
-Lorsque vous personnalisez votre site web, vous pouvez ajouter un grand nombre de fichiers supplémentaires au serveur pour prendre en charge la personnalisation. L’ajout de JavaScript, de CSS et d’images supplémentaires augmente le nombre de requêtes HTTP sur le serveur, ce qui augmente le temps d’affichage d’une page web. Si vous avez plusieurs fichiers du même type, vous pouvez regrouper ces fichiers pour accélérer le téléchargement de ces fichiers.
+Lorsque vous personnalisez votre site web, vous pouvez ajouter un grand nombre de fichiers supplémentaires au serveur pour prendre en charge la personnalisation. L’ajout de JavaScript, de CSS et d’images supplémentaires augmente le nombre de demandes HTTP sur le serveur, ce qui augmente le temps d’affichage d’une page web. Si vous avez plusieurs fichiers du même type, vous pouvez regrouper ces fichiers pour accélérer le téléchargement de ces fichiers.
   
 Pour les fichiers JavaScript et CSS, vous pouvez également utiliser une approche appelée réduction, dans laquelle vous réduisez la taille totale des fichiers en supprimant les espaces et autres caractères qui ne sont pas nécessaires.
   
@@ -55,7 +55,7 @@ Vous pouvez utiliser Web Essentials si vous disposez d’une fonctionnalité exi
 ### <a name="to-create-a-te000127218-and-css-bundle-in-web-essentials"></a>Pour créer un ensemble TE000127218 et CSS dans Web Essentials
   
 1. Dans Visual Studio, dans l’Explorateur de solutions, sélectionnez les fichiers que vous souhaitez inclure dans le fichier groupé.
-2. Cliquez avec le bouton droit sur les fichiers sélectionnés, puis sélectionnez **Web Essentials** \> Créer un fichier groupé **JavaScript** dans le menu contextif. Par exemple :
+2. Cliquez avec le bouton droit sur les fichiers sélectionnés, puis sélectionnez **Web Essentials** \> Créer un fichier groupé **JavaScript** dans le menu contextif. Par exemple :
 
     ![Capture d’écran montrant les options de menu Web Essentials.](../media/41aac84c-4538-4f78-b454-46e651f868a3.png)
   
@@ -79,7 +79,7 @@ Après avoir groupé les fichiers CSS et JavaScript, le nombre de demandes est p
   
 ![Capture d’écran montrant 74 éléments en cours de téléchargement.](../media/686c4387-70e8-4a74-9d45-059f33a91184.png)
   
-Après le regroupement, le fichier groupé JavaScript est considérablement réduit de 815 000 à 365 000 000 :
+Après le regroupement, le fichier groupé JavaScript est considérablement réduit de 815 Ko à 365 Ko :
   
 ![Capture d’écran montrant une taille de téléchargement réduite.](../media/5e7dbd98-faff-4f68-b320-108fb252e395.png)
   
@@ -90,7 +90,7 @@ Après le regroupement, le fichier groupé JavaScript est considérablement réd
 ### <a name="to-create-an-image-sprite-in-web-essentials"></a>Pour créer un sprite d’image dans Web Essentials**
   
 1. Dans Visual Studio, dans l’Explorateur de solutions, sélectionnez les fichiers que vous souhaitez inclure dans le fichier groupé.
-2. Cliquez avec le bouton droit sur les fichiers sélectionnés, puis sélectionnez **Web Essentials** \> **Créer un sprite d’image** dans le menu contextiqué. Par exemple :
+2. Cliquez avec le bouton droit sur les fichiers sélectionnés, puis sélectionnez **Web Essentials** \> **Créer un sprite d’image** dans le menu contextiqué. Par exemple :
 
     ![Capture d’écran montrant comment créer un sprite d’image.](../media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)
   

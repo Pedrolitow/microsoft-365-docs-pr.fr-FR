@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guide de configuration et d’installation d’applications certifiées étendues pour ServiceNow.
-ms.openlocfilehash: d1e95d308364d92954d53a8ef105dc877d0376a5
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 0629b322a52702ef293ff1f73661359b410f2d69
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295109"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806011"
 ---
 # <a name="microsoft-365-support-integration-with-servicenow-configuration-overview"></a>Vue d’ensemble de l’intégration de la prise en charge Microsoft 365 avec la configuration ServiceNow
 
@@ -80,18 +80,12 @@ Autorisations requises :
 
 Une fois l Microsoft 365'application d’intégration de support technique installée, deux accès d’étendues croisées d’applications sont créés. Si elles ne sont pas créées correctement, créez-les manuellement.
 
-## <a name="what-features-will-work-for-your-organization-based-on-your-configuration"></a>Quelles fonctionnalités fonctionneront pour votre organisation en fonction de votre configuration ?
+## <a name="what-configuration-is-right-for-your-organization"></a>Quelle est la configuration qui est la bonne pour votre organisation ?
 
-Avant de définir une configuration pour Microsoft 365 l’intégration, examinez vos réponses à ces questions :
+Avant de configurer une configuration pour Microsoft 365 l’intégration, comprenez comment votre environnement ServiceNow est installé.
 
-**Question \#1 :** Votre environnement ServiceNow autorise-t-il l’authentification de base (accès avec les informations d’identification de l’utilisateur ServiceNow) pour les appels de service web entrants ?
+- Si votre environnement ServiceNow autorise l’authentification de base (accès avec les informations d’identification de l’utilisateur ServiceNow) pour les appels de service web entrants, suivez les instructions de la procédure [Set up Microsoft 365 pour](servicenow-basic-authentication.md) prendre en charge l’intégration avec l’authentification de base ServiceNow.
+- Si votre environnement ServiceNow n’autorise PAS l’authentification de base (accès avec les informations d’identification de l’utilisateur ServiceNow) pour les appels de service web entrants, suivez les instructions de la procédure [Set up Microsoft 365 support integration with Azure AD Auth Token](servicenow-aad-oauth-token.md).
+  - Cette configuration nécessite un client DSO pour que le jeton AAD auth fonctionne correctement.
 
-**Question \#2** : Si vous avez plusieurs clients, envisagez-vous d’utiliser un seul client intégré à votre environnement ServiceNow pour l’intégration Microsoft 365 prise en charge ?
-
-En fonction de vos réponses aux questions ci-dessus, ce tableau vous indique les fonctionnalités disponibles et la façon de configurer Microsoft 365 l’intégration. Pour obtenir une description de chaque fonctionnalité, voir [Microsoft 365'intégration de prise en charge](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
-
-| Réponse à la question \#1 | Réponse à la question \#2 | Quelles fonctionnalités sont disponibles ? | Étapes de configuration |
-|---------------------|---------------------|-----------|----------------|
-| Oui                 | Oui/Non              | Demande de service Solutions recommandées pour les incidents d’état du service Microsoft | [Configurer l’Microsoft 365 prise en charge de l’intégration avec l’authentification de base ServiceNow](servicenow-basic-authentication.md) |
-| Non                  | Oui                 | Demande de service Solutions recommandées pour les incidents d’état du service Microsoft | [Configurer l’intégration Microsoft 365 prise en charge avec Azure AD auth](servicenow-aad-oauth-token.md)                 |
-| Non                  | Non                  | Solutions recommandées pour les incidents d’état du service                           | [Configurer l’intégration Microsoft 365 prise en charge pour Informations UNIQUEMENT](servicenow-service-health-incidents-solutions-only.md)                    |
+Pour comprendre chaque fonctionnalité, consultez la [Microsoft 365 l’intégration](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).

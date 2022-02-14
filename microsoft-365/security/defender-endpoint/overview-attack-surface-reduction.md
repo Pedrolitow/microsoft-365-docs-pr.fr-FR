@@ -1,8 +1,8 @@
 ---
 title: Comprendre et utiliser la réduction de la surface d’attaque (ASR)
-ms.reviewer: null
+ms.reviewer: ''
 description: Découvrez les fonctionnalités de réduction de la surface d’attaque de Microsoft Defender pour point de terminaison.
-keywords: 'asr, réduction de la surface d’attaque, Microsoft Defender pour point de terminaison, microsoft defender, antivirus, av, windows defender'
+keywords: asr, réduction de la surface d’attaque, Microsoft Defender pour point de terminaison, microsoft defender, antivirus, av, windows defender
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,8 +17,13 @@ ms.topic: conceptual
 ms.technology: mde
 ms.collection: m365initiative-m365-defender
 ms.date: 1/18/2022
+ms.openlocfilehash: 78fdd5c6c02990943874807c285f8e5eb60ad6ad
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807583"
 ---
-
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Comprendre et utiliser les fonctionnalités de réduction de la surface d’attaque
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -92,6 +97,9 @@ Vous pouvez activer le mode audit à l’aide de la stratégie de groupe, de Pow
 
 > [!TIP]
 > Vous pouvez également visiter le site Windows Defender Testground sur [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que les fonctionnalités fonctionnent et voir comment elles fonctionnent.
+
+> [!NOTE]
+> Le site de démonstration Defender for Endpoint demo.wd.microsoft.com est supprimé et sera supprimé à l’avenir.
 
 | Options d’audit | Comment activer le mode audit | Comment afficher les événements |
 |---|---|---|

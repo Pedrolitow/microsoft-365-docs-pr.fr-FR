@@ -17,18 +17,19 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: m365initiative-m365-defender
 ms.date: ''
-ms.openlocfilehash: ae9d1946f0aaa189b716c7a6b63c2bac999f7872
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 8873a8f374280834970d14f72c2e6677292f7702
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327400"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807439"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Protéger les dossiers importants avec accès contrôlé aux dossiers
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
+
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -54,7 +55,7 @@ L’accès contrôlé aux dossiers fonctionne avec une liste d’applications de
 
 Les applications sont ajoutées à la liste en fonction de leur prévalence et de leur réputation. Les applications qui sont très répandues dans toute votre organisation et qui n’ont jamais affiché de comportement considéré comme malveillant sont considérées comme fiables. Ces applications sont ajoutées automatiquement à la liste.
 
-Les applications peuvent également être ajoutées manuellement à la liste de confiance à l’aide de Configuration Manager ou d’Intune. Des actions supplémentaires peuvent être effectuées à partir du portail Microsoft 365 Defender web. 
+Les applications peuvent également être ajoutées manuellement à la liste de confiance à l’aide de Configuration Manager ou d’Intune. Des actions supplémentaires peuvent être effectuées à partir du portail Microsoft 365 Defender web.
 
 ## <a name="why-controlled-folder-access-is-important"></a>Pourquoi l’accès contrôlé aux dossiers est-il important ?
 
@@ -63,6 +64,9 @@ L’accès contrôlé aux dossiers est particulièrement utile pour protéger vo
 Les [dossiers protégés incluent les dossiers](#review-controlled-folder-access-events-in-windows-event-viewer) système courants (y compris les secteurs de démarrage) et vous pouvez [ajouter d’autres dossiers](customize-controlled-folders.md#protect-additional-folders). Vous pouvez également [autoriser les applications](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) à leur donner accès aux dossiers protégés.
 
 Vous pouvez utiliser le [mode audit pour](audit-windows-defender.md) évaluer l’impact de l’accès contrôlé aux dossiers sur votre organisation s’il était activé. Vous pouvez également consulter le site web Windows Defender test au [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que la fonctionnalité fonctionne et voir comment elle fonctionne.
+
+> [!NOTE]
+> Le site de démonstration Defender for Endpoint demo.wd.microsoft.com est supprimé et sera supprimé à l’avenir.
 
 L’accès contrôlé aux dossiers est pris en charge sur les versions suivantes de Windows :
 
@@ -75,6 +79,8 @@ L’accès contrôlé aux dossiers est pris en charge sur les versions suivantes
 
 Windows système sont protégés par défaut, ainsi que plusieurs autres dossiers :
 
+Les dossiers protégés incluent les dossiers système courants (y compris les secteurs de démarrage) et vous pouvez ajouter des dossiers supplémentaires. Vous pouvez également autoriser les applications à leur donner accès aux dossiers protégés.  Les Windows systèmes de gestion qui sont protégés par défaut sont :
+
 - `c:\Users\<username>\Documents`
 - `c:\Users\Public\Documents`
 - `c:\Users\<username>\Pictures`
@@ -85,16 +91,20 @@ Windows système sont protégés par défaut, ainsi que plusieurs autres dossier
 - `c:\Users\Public\Music`
 - `c:\Users\<username>\Favorites`
 
+Les dossiers par défaut apparaissent dans le profil de l’utilisateur, sous **Ce PC**.
+   > [!div class="mx-imgBorder"]
+   > ![Dossiers Windows systèmes par défaut protégés](images/defaultfolders.png)
+
 > [!NOTE]
 > Vous pouvez configurer des dossiers supplémentaires comme étant protégés, mais vous ne pouvez pas supprimer les Windows système qui sont protégés par défaut.
 
 ## <a name="requirements-for-controlled-folder-access"></a>Conditions requises pour l’accès contrôlé aux dossiers
 
-L’accès contrôlé aux dossiers [nécessite Antivirus Microsoft Defender protection en temps réel](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
+L’accès contrôlé aux dossiers [nécessite Antivirus Microsoft Defender protection en temps réel](configure-real-time-protection-microsoft-defender-antivirus.md).
 
 ## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>Passer en revue les événements d’accès contrôlé aux dossiers dans Microsoft 365 Defender web
 
-Defender pour le point de terminaison fournit des rapports détaillés sur les événements et les blocages dans le cadre de ses [scénarios](investigate-alerts.md) d’investigation d’alerte dans Microsoft 365 Defender portail. (Voir [Microsoft Defender pour le point de terminaison dans Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).)
+Defender pour le point de terminaison fournit des rapports détaillés sur les événements et les blocs dans le cadre de ses [scénarios](investigate-alerts.md) d’investigation d’alerte dans le portail Microsoft 365 Defender ; consultez [Microsoft Defender pour point](../defender/microsoft-365-security-center-mde.md) de terminaison dans Microsoft 365 Defender.
 
 Vous pouvez interroger Microsoft Defender pour obtenir des données de point de [terminaison](advanced-hunting-overview.md) à l’aide du recherche avancée. Si vous utilisez le [mode audit](audit-windows-defender.md), vous pouvez utiliser la [](advanced-hunting-overview.md) recherche avancée pour voir comment les paramètres d’accès contrôlé aux dossiers auraient une incidence sur votre environnement s’ils étaient activés.
 

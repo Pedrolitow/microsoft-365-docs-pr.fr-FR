@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365initiative-m365-defender
 ms.date: ''
-ms.openlocfilehash: a4e3d03a8293dbfeef53687d6a91fdfcd165a44a
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 996a96f957d7446b0b951d4f1b3a34c822f64f49
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322046"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806659"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Évaluer l’accès contrôlé aux dossiers
 
@@ -41,6 +41,9 @@ Cet article vous aide à évaluer l’accès contrôlé aux dossiers. Il expliqu
 
 > [!TIP]
 > Vous pouvez également consulter le site web du scénario de démonstration microsoft Defender pour point de terminaison [sur demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que la fonctionnalité fonctionne et voir comment elle fonctionne.
+
+> [!NOTE]
+> Le site de démonstration Defender for Endpoint demo.wd.microsoft.com est supprimé et sera supprimé à l’avenir.
 
 ## <a name="use-audit-mode-to-measure-impact"></a>Utiliser le mode audit pour mesurer l’impact
 

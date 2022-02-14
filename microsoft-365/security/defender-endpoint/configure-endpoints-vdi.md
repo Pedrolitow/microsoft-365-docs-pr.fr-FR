@@ -16,29 +16,29 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 09/22/2021
+ms.date: 02/14/2022
 ms.technology: mde
-ms.openlocfilehash: c27fe45dd00ca5f0241869195daa697a268af92e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3e430d44789a1f3c43ec55a20ee7e06521f2dcaf
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167525"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807631"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Intégrer des appareils VDI (Virtual Desktop Infrastructure) non persistants dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Périphériques VDI (Virtual Desktop Infrastructure)
 - Windows 10, Windows 11, Windows Server 2019, Windows Server 2022, Windows Server 2008R2/2012R2/2016
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
  > [!NOTE]
-  > **Les VDI persistants**  -  [L’intégration](configure-endpoints.md) d’un ordinateur VDI persistant dans Microsoft Defender pour le point de terminaison est gérée de la même manière que pour un ordinateur physique, tel qu’un ordinateur de bureau ou un ordinateur portable. La stratégie de groupe, Microsoft Endpoint Manager et d’autres méthodes peuvent être utilisées pour intégrer un ordinateur persistant. Dans le portail Microsoft 365 Defender, ( sous intégration, sélectionnez votre méthode d’intégration préférée et suivez les https://security.microsoft.com) instructions pour ce type. 
+  > **Les VDI persistants** -  [L’intégration d’un ordinateur VDI](configure-endpoints.md) persistant dans Microsoft Defender pour le point de terminaison est gérée de la même manière que pour un ordinateur physique, tel qu’un ordinateur de bureau ou un ordinateur portable. La stratégie de groupe, Microsoft Endpoint Manager et d’autres méthodes peuvent être utilisées pour intégrer un ordinateur persistant. Dans le portail Microsoft 365 Defender, (https://security.microsoft.com) sous intégration, sélectionnez votre méthode d’intégration préférée et suivez les instructions pour ce type. 
 
 ## <a name="onboarding-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Intégration d’appareils VDI (Virtual Desktop Infrastructure) non persistants
 
@@ -65,26 +65,24 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 
 ### <a name="for-windows-10-or-windows-11-or-windows-server-2019-or-windows-server-2022"></a>Pour Windows 10, Windows 11, Windows Server 2019 ou Windows Server 2022
 
-1.  Ouvrez le fichier de package de configuration VDI .zip (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender :</a>
+1.  Ouvrez le fichier de package de configuration VDI .zip (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender:</a>
 
-    1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **Endpoints**  >  **Device Management**  >  **Onboarding**.
+    1. Dans le volet de navigation, sélectionnez **Paramètres** >  **EndpointsDevice** >  **managementOnboarding** > .
 
     1. Sélectionnez le système d’exploitation.
 
-    1.  Dans le **champ Méthode de** déploiement, sélectionnez les **scripts d’intégration VDI pour les** points de terminaison non persistants.
+    1.  Dans le **champ Méthode de** déploiement, sélectionnez **les scripts d’intégration VDI pour les points de terminaison non persistants**.
 
     1. Cliquez **sur Télécharger le package** et enregistrez .zip fichier.
 
-2. Copiez les fichiers du dossier WindowsDefenderATPOnboardingPackage extraits du fichier .zip dans l’image de premier plan sous le chemin `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` d’accès. 
-
-2. Copiez les fichiers du dossier WindowsDefenderATPOnboardingPackage extraits du fichier .zip dans l’image de premier plan sous le chemin `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` d’accès.
+2. Copiez les fichiers du dossier WindowsDefenderATPOnboardingPackage extraits du fichier .zip dans l’image de premier plan sous le chemin d’accès `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`.
     1. Si vous implémentez plusieurs entrées pour chaque appareil - une pour chaque session, copiez WindowsDefenderATPOnboardingScript.cmd.
     2. Si vous implémentez une entrée unique pour chaque appareil, copiez les fichiers Onboard-NonPersistentMachine.ps1 et WindowsDefenderATPOnboardingScript.cmd.
 
     > [!NOTE]
-    > Si vous ne voyez pas le `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` dossier, il peut être masqué. Vous devez choisir l’option Afficher les fichiers **et dossiers masqués** dans l’Explorateur de fichiers.
+    > Si vous ne voyez pas le dossier `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` , il peut être masqué. Vous devez choisir l’option Afficher les fichiers **et dossiers masqués** dans l’Explorateur de fichiers.
 
-3. Ouvrez une fenêtre Éditeur de stratégie de groupe locale et accédez à **Configuration** ordinateur \> **Windows Paramètres** \> **scripts de** \> **démarrage.**
+3. Ouvrez une fenêtre Éditeur de stratégie de groupe locale et accédez à **Configuration** \> ordinateur **Windows Paramètres** \> **démarrage des scripts** \> **.**
 
    > [!NOTE]
    > La stratégie de groupe de domaine peut également être utilisée pour l’intégration d’appareils VDI non persistants.
@@ -92,11 +90,11 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 4. Selon la méthode que vous souhaitez implémenter, suivez les étapes appropriées :
     - Pour une entrée unique pour chaque appareil :
 
-         Sélectionnez **l’onglet Scripts PowerShell,** puis cliquez sur Ajouter **(Windows** Explorer s’ouvre directement dans le chemin d’accès où vous avez copié le script d’intégration précédemment). Accédez au script PowerShell `Onboard-NonPersistentMachine.ps1` d’intégration. Il n’est pas nécessaire de spécifier l’autre fichier, car il sera déclenché automatiquement.
+         Sélectionnez **l’onglet Scripts PowerShell**, puis cliquez sur **Ajouter (Windows** Explorer s’ouvre directement dans le chemin d’accès où vous avez copié le script d’intégration précédemment). Accédez au script `Onboard-NonPersistentMachine.ps1`PowerShell d’intégration. Il n’est pas nécessaire de spécifier l’autre fichier, car il sera déclenché automatiquement.
 
     - Pour plusieurs entrées pour chaque appareil :
 
-         Sélectionnez **l’onglet Scripts,** puis cliquez sur Ajouter **(Windows** Explorer s’ouvre directement dans le chemin d’accès où vous avez copié le script d’intégration précédemment). Accédez au script Bash `WindowsDefenderATPOnboardingScript.cmd` d’intégration.
+         Sélectionnez **l’onglet Scripts**, puis cliquez sur **Ajouter (Windows** Explorer s’ouvre directement dans le chemin d’accès où vous avez copié le script d’intégration précédemment). Accédez au script Bash d’intégration `WindowsDefenderATPOnboardingScript.cmd`.
 
 5. Testez votre solution :
    1. Créez un pool avec un seul appareil.
@@ -129,7 +127,7 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
     reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging" /v VDI /t REG_SZ /d "NonPersistent" /f
     ```
 
-2. Suivez le [processus d’intégration du serveur.](configure-server-endpoints.md) 
+2. Suivez le [processus d’intégration du serveur](configure-server-endpoints.md). 
 
 ## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Mise à jour d’images DDI (Virtual Desktop Infrastructure) non persistantes
 
@@ -151,7 +149,7 @@ Pour plus d’informations sur les commandes DISM et la maintenance hors connexi
 
 Si la maintenance hors connexion n’est pas une option viable pour votre environnement VDI non persistant, les étapes suivantes doivent être prises pour garantir la cohérence et l’état du capteur :
 
-1. Après avoir démarré l’image maître pour la maintenance en ligne ou la correction, exécutez un script de mise hors service pour désactiver le capteur Defender pour point de terminaison. Pour plus d’informations, voir [Les appareils hors-carte à l’aide d’un script local.](configure-endpoints-script.md#offboard-devices-using-a-local-script)
+1. Après avoir démarré l’image maître pour la maintenance en ligne ou la correction, exécutez un script de mise hors service pour désactiver le capteur Defender pour point de terminaison. Pour plus d’informations, voir [Les appareils hors-carte à l’aide d’un script local](configure-endpoints-script.md#offboard-devices-using-a-local-script).
 
 2. Assurez-vous que le capteur est arrêté en exécutant la commande ci-dessous dans une fenêtre CMD :
 
@@ -161,7 +159,7 @@ Si la maintenance hors connexion n’est pas une option viable pour votre enviro
 
 3. Service de l’image selon les besoins.
 
-4. Exécutez les commandes ci-dessous à l’aide PsExec.exe (qui peut être téléchargé à partir de pour nettoyer le contenu du dossier cyber que le capteur a peut-être cumulé https://download.sysinternals.com/files/PSTools.zip) depuis le démarrage :
+4. Exécutez les commandes ci-dessous à l’aide PsExec.exe ( https://download.sysinternals.com/files/PSTools.zip) qui peut être téléchargé à partir de pour nettoyer le contenu du dossier cyber que le capteur a peut-être cumulé depuis le démarrage :
 
     ```console
     PsExec.exe -s cmd.exe
@@ -173,7 +171,7 @@ Si la maintenance hors connexion n’est pas une option viable pour votre enviro
 
 5. Resealez l’image de premier plan comme vous le feriez normalement.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Intégrer des appareils Windows à l’aide d’une stratégie de groupe](configure-endpoints-gp.md)
 - [Intégrer des appareils Windows à l’aide de Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Intégrer les appareils Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)

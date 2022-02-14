@@ -24,19 +24,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Découvrez comment acheter un nom de domaine dans Microsoft 365.
-ms.openlocfilehash: 6e3b027af45d4a511640406bd10eaf4992a1881f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 77270f7ba045d58ae29092437d3356371a40dc38
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164847"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805855"
 ---
 # <a name="buy-a-domain-name"></a>Acheter un nom de domaine
 
 > [!NOTE]
 > Si votre organisation utilise Office 365 géré par 21Vianet en Chine, voir Comment acheter un domaine pour Office 365 géré par [21Vianet en Chine](#how-to-buy-a-domain-for-office-365-operated-by-21vianet).
 
- *Pour ajouter, modifier ou supprimer des domaines, vous **devez** être administrateur **général** d’un [plan d’entreprise ou d’entreprise.](https://products.office.com/business/office) Ces modifications affectent l’ensemble du  client, *les administrateurs personnalisés* ou les utilisateurs réguliers ne pourront pas effectuer ces modifications.*  
+ *Pour ajouter, modifier ou supprimer des domaines, vous **devez** être administrateur **général** d’un [plan d’entreprise ou d’entreprise](https://products.office.com/business/office). Ces modifications affectent l’ensemble du client, les *administrateurs personnalisés ou les utilisateurs* réguliers ne pourront pas effectuer ces modifications.*  
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
@@ -44,9 +44,9 @@ ms.locfileid: "60164847"
 
 1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
     
-3. Dans la page **Domaines,** sélectionnez **Acheter un domaine.**
+3. Dans la page **Domaines** , sélectionnez **Acheter un domaine**.
     
-Vous pouvez choisir votre domaine parmi les domaines de niveau supérieur suivants.
+Vous pouvez choisir parmi les domaines de niveau supérieur suivants pour votre domaine.
   
 - .biz
     
@@ -73,12 +73,12 @@ Vous pouvez choisir votre domaine parmi les domaines de niveau supérieur suivan
 > Lorsque vous **sélectionnez Acheter** un domaine, vous pouvez être redirigé vers le site web de votre partenaire Microsoft si le client est acheté/géré par le biais d’un partenaire Microsoft.
 
 ## <a name="domain-privacy"></a>Confidentialité du domaine
-Nous proposons un abonnement gratuit à la confidentialité du domaine avec l’achat d’un domaine. Vos informations de contact sont ainsi attachées à l’inscription de votre domaine auprès de l’ICANN privée. [Pour en savoir plus.](https://whois.icann.org/en/privacy-and-proxy-services)
+Nous proposons un abonnement gratuit à la confidentialité du domaine avec l’achat d’un domaine. Vos informations de contact sont ainsi attachées à l’inscription de votre domaine auprès de l’ICANN privée. [En savoir plus.](https://whois.icann.org/en/privacy-and-proxy-services)
   
 ## <a name="buy-a-domain-from-another-domain-registrar"></a>Acheter un domaine auprès d'un autre bureau d'enregistrement de domaines
-Si vous souhaitez acheter un domaine auprès d’un bureau d’enregistrement de domaines autre que [GoDaddy,](https://www.godaddy.com)nous vous recommandons d’en utiliser un ci-dessous qui prend en charge la configuration automatique (Domain Connecter). 
+Si vous souhaitez acheter un domaine auprès d’un bureau d’enregistrement de domaines autre que [GoDaddy](https://www.godaddy.com), nous vous recommandons d’en utiliser un ci-dessous qui prend en charge la configuration automatique (Domain Connecter). 
   
-- [1 &amp; 1 IONOS](https://www.1and1.com/)
+- [11&amp; IONOS](https://www.1and1.com/)
 - [WordPress](https://www.wordpress.com) 
 
    
@@ -86,8 +86,7 @@ Si vous souhaitez acheter un domaine auprès d’un bureau d’enregistrement de
 
 Si votre domaine est géré par un fournisseur qui ne prend pas en charge tous les enregistrements DNS nécessaires, vous pouvez le transférer vers un autre bureau d'enregistrement. Lorsque vous transférez le domaine, vous modifiez le bénéficiaire des paiements en vue du renouvellement et de la conservation de votre nom de domaine.
   
-Demandez le transfert auprès du bureau d'enregistrement vers lequel vous voulez déplacer votre domaine. Recherchez une option telle que **Transfert DNS** sur son site web. N'oubliez pas qu'une fois les modifications effectuées, la mise à jour sur Internet peut prendre quelques jours.
-
+Demandez le transfert auprès du bureau d'enregistrement vers lequel vous voulez déplacer votre domaine. Recherchez une option telle que **Transfert DNS** sur son site web. Une fois les modifications apportées, la mise à jour sur Internet peut prendre quelques jours.
 
 ::: moniker range="o365-21vianet"
 
@@ -100,21 +99,21 @@ Pour configurer un domaine dans Microsoft 365, vous devez posséder un domaine e
 > [!CAUTION]
 > Certains bureaux d’enregistrement de domaines ou fournisseurs d’hébergement DNS n’autorisent pas la création de tous les enregistrements DNS requis par Microsoft 365. Les fournisseurs d'hébergement répertoriés ici prennent en charge tous les enregistrements nécessaires. Si vous envisagez d'utiliser un autre fournisseur d'hébergement, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
   
-Après avoir inscrit votre domaine (auprès d’un bureau d’enregistrement de domaines), connectez-vous à Microsoft 365 en tant qu’administrateur et définissez votre domaine afin de pouvoir l’utiliser avec votre adresse de messagerie et d’autres services.
+Après avoir inscrit votre domaine (auprès d’un bureau d’enregistrement de domaines), vous vous connectez Microsoft 365 en tant qu’administrateur. Ensuite, définissez votre domaine afin de pouvoir l’utiliser avec votre adresse de messagerie et d’autres services.
   
 > [!NOTE]
 > Les SharePoint site web public en ligne de cet article s’appliquent uniquement si votre organisation a acheté Microsoft 365 avant le 9 mars 2015. 
 
-### <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Bureaux d’enregistrement de domaines qui prisent en charge tous les enregistrements DNS requis pour Microsoft 365
+### <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Les bureaux d’enregistrement de domaines qui prisent en charge tous les enregistrements DNS requis pour Microsoft 365
 
 - [Oray](https://oray.com/)
-    
+
 - [HiChina](https://www.hichina.com/)
-    
+
 - [east.net](http://www.east.net/)
-    
+
 - [BIZCN](https://www.bizcn.com/)
-    
+
 ::: moniker-end
 
 ## <a name="related-content"></a>Contenu associé

@@ -18,33 +18,33 @@ search.appverid:
 - MOE150
 ms.assetid: 093a6d0d-890b-489e-9f46-b15687d3fe4f
 description: Découvrez un utilisateur actif de l’analyse Microsoft 365'utilisation, des rapports d’activité et des mesures d’adoption.
-ms.openlocfilehash: a535430281eb73542808ff75d507a700c9354ca2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 748bd08e08cc5e8243c3733c4b3f8448e15ab050
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60160963"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806095"
 ---
 # <a name="active-user-in-microsoft-365-usage-reports"></a>Utilisateur actif dans les rapports Microsoft 365'utilisation
 
 ## <a name="active-user-in-usage-reports"></a>Utilisateur actif dans les rapports d’utilisation
 
-Un utilisateur actif de produits [](usage-analytics.md) Microsoft 365 pour l’analyse Microsoft 365'utilisation et les rapports d’activité dans le Centre [d’administration](../activity-reports/activity-reports.md) est défini comme suit. 
+Un utilisateur actif de produits Microsoft 365 pour l’analyse [](usage-analytics.md) Microsoft 365'utilisation et les rapports d’activité dans le Centre [d’administration](../activity-reports/activity-reports.md) sont définis comme suit. 
   
 |**Produit**|**Définition d'un utilisateur actif**|**Notes**|
 |:-----|:-----|:-----|
 |Exchange Online  <br/> |Tout utilisateur ayant effectué l’une des actions suivantes : marquer comme lu, envoyer des messages, créer des rendez-vous, envoyer des demandes de réunion, accepter (provisoirement) ou refuser des demandes de réunion, annuler des réunions.  <br/> |Aucune information de calendrier n'est représentée. Ces informations seront ajoutées lors d'une prochaine mise à jour.  <br/> |
-|SharePoint Online  <br/> |Tout utilisateur ayant interagi avec un fichier en le créant, en le modifiant, en l'affichant, en le supprimant, en le partageant en interne ou en externe, ou en le synchronisant avec des clients sur un site, ou ayant affiché une page sur un site.  <br/> |La mesure utilisateur active pour SharePoint Online dans l’application modèle d’analyse de l’utilisation Microsoft 365 reflète uniquement les utilisateurs qui ont fait une activité de fichier sur un site d’équipe SharePoint ou un site de groupe. L’application de modèle sera mise à jour pour synchroniser la définition avec celle des rapports d’utilisation dans le Centre d’administration.  <br/> |
+|SharePoint Online  <br/> |Tout utilisateur ayant interagi avec un fichier en le créant, en le modifiant, en l'affichant, en le supprimant, en le partageant en interne ou en externe, ou en le synchronisant avec des clients sur un site, ou ayant affiché une page sur un site.  <br/> |Les mesures utilisateur actives pour SharePoint Online dans l’application modèle d’analyse de l’utilisation Microsoft 365 reflètent uniquement les utilisateurs qui ont fait une activité de fichier sur un site d’équipe SharePoint ou un site de groupe. L’application de modèle sera mise à jour pour synchroniser la définition avec celle des rapports d’utilisation dans le Centre d’administration.  <br/> |
 |OneDrive Entreprise  <br/> |Tout utilisateur ayant interagi avec un fichier en le créant, en le modifiant, en l'affichant, en le supprimant, en le partageant en interne ou en externe, ou en le synchronisant avec des clients.  <br/> ||
 |Yammer  <br/> |Tout utilisateur ayant lu, publié ou aimé un message sur Yammer.  <br/> ||
 |Skype Entreprise  <br/> |Tout utilisateur ayant participé à une session P2P (messages instantanés, appels audio et vidéo, partage d'application, transferts de fichiers, etc.) ou ayant organisé ou participé à une conférence.  <br/> ||
 |Office  <br/> |Tout utilisateur ayant activé son abonnement Microsoft 365 Pro Plus, Visio Pro ou Project Pro au moins un appareil.  <br/> ||
 |Groupes Microsoft 365  <br/> |Tout membre d'un groupe présentant une activité de boîte aux lettres (si un message a été envoyé au groupe)  <br/> |Cette définition sera améliorée avec l’activité de fichier de site de groupe et l’activité de groupe Yammer (activité de fichier sur le site de groupe et message publié dans Yammer groupe associé au groupe.) Ces données ne sont actuellement pas disponibles dans l’application Microsoft 365 modèle Analyse de l’utilisation  <br/> |
-|Microsoft Teams  <br/> |Tout utilisateur ayant participé à des messages de conversation, des messages de conversation privée, des appels, des réunions ou toute autre activité. D’autres activités sont définies comme le nombre d’autres activités d’équipe par l’utilisateur, dont certaines incluent, sans s’y limiter, : aimer des messages, des applications, travailler sur des fichiers, rechercher, suivre les équipes et le canal et les favoritiser.  <br/> ||
+|Microsoft Teams  <br/> |Tout utilisateur ayant participé à des messages de conversation, des messages de conversation privée, des appels, des réunions ou toute autre activité. D’autres activités sont définies comme le nombre d’autres activités d’équipe par l’utilisateur, dont certaines incluent, sans s’y limiter, : aimer des messages, des applications, travailler sur des fichiers, rechercher, suivre des équipes et des canaux et les favoritiser.  <br/> ||
    
 ## <a name="adoption-metrics"></a>Mesures d’adoption
 
-[Microsoft 365'analyse de l’utilisation contient](usage-analytics.md) des mesures d’adoption supplémentaires relatives aux utilisateurs actifs pour montrer l’adoption des produits au fil du temps. Ces mesures sont valides pour le mois, l’année et le produit sélectionnés et sont définies comme suit. 
+[Microsoft 365'analyse de l’utilisation](usage-analytics.md) contient davantage de mesures d’adoption relatives aux utilisateurs actifs pour montrer l’adoption des produits au fil du temps. Ces mesures sont valides pour le mois, l’année et le produit sélectionnés et sont définies comme suit. 
   
 |**Métrique**|**Description**|
 |:-----|:-----|
@@ -56,5 +56,5 @@ Un utilisateur actif de produits [](usage-analytics.md) Microsoft 365 pour l’a
 |ActiveUsers(%)  <br/> |Pourcentage d’utilisateurs, arrondi au dixième le plus proche, actifs dans le mois par rapport au nombre d’utilisateurs activés dans ce mois.  <br/> |
 |MoMReturningUsers(%)  <br/> |Pourcentage d’utilisateurs, arrondis au dixième le plus proche, actifs dans le mois qui étaient également actifs le mois précédent par rapport au nombre d’utilisateurs actifs.  <br/> |
    
-MoMReturningUsers, FirstTimeUsers, CumulativeActiveUsers ont été réinitialisés à partir du &amp; 1er janvier 2018 avec l’inclusion de Microsoft Teams.
+MoMReturningUsers, FirstTimeUsers, &amp; CumulativeActiveUsers ont été réinitialisés à partir du 1er janvier 2018 avec l’inclusion de Microsoft Teams.
   
