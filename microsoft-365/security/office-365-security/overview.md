@@ -1,5 +1,5 @@
 ---
-title: Office 365 Sécurité, y compris Microsoft Defender pour Office 365 et Exchange Online Protection
+title: Office 365 sécurité, y compris Microsoft Defender pour Office 365 et Exchange Online Protection
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -16,12 +16,12 @@ ms.collection:
 description: La sécurité dans Office 365, de EOP à Defender pour Office 365 Plans 1 et 2, les configurations de sécurité Standard vs Strict, et plus encore. Comprenez ce que vous avez et comment sécuriser vos propriétés.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bc444ee36cabf7d148c51d1bceac02f299d89ad9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2866fd9c0da06d9c4f8288f63666842460e85e27
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196464"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818503"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Vue d’ensemble de la sécurité Office 365 Microsoft Defender for Office 365
 
@@ -85,7 +85,7 @@ Ce qui fait de l'ajout des plans Microsoft Defender pour Office 365 un avantage
 
 |Prévention/détection|Examiner|Répondre|
 |---|---|---|
-|Les technologies comprennent :<ul><li>courrier indésirable</li><li>hameçonnage</li><li>programme malveillant</li><li>courrier en nombre</li><li>veille contre l'usurpation d'identité</li><li>détection d’emprunt d’identité</li><li>Mise en quarantaine de l’administrateur</li><li>Envois de faux positifs et de faux négatifs par l’administrateur et l’utilisateur</li><li>Autoriser/Bloquer pour les URL et fichiers</li><li>Rapports</li></ul>|<li>Recherche de journal d’audit</li><li>Suivi des messages</li>|<li>Purge automatique d’heure zéro (ZAP)</li><li>Affinement et test des listes d’autoriser et de blocage</li>|
+|Les technologies comprennent :<ul><li>courrier indésirable</li><li>hameçonnage</li><li>programme malveillant</li><li>courrier en nombre</li><li>veille contre l'usurpation d'identité</li><li>détection d’emprunt d’identité</li><li>Mise en quarantaine de l’administrateur</li><li>Envois de faux positifs et de faux négatifs par l’administrateur et l’utilisateur</li><li>Autoriser/Bloquer pour les URL et fichiers</li><li>Rapports</li></ul>|<li>Recherche de journal d’audit</li><li>Suivi des messages</li>|<li>Purge automatique en heure zéro (ZAP)</li><li>Affinement et test des listes d’autoriser et de blocage</li>|
 |
 
 Si vous souhaitez approfondir EOP, **[passez à cet article](exchange-online-protection-overview.md)**.
@@ -125,8 +125,7 @@ Cette référence rapide vous aide à comprendre les fonctionnalités fournies a
 
 |Microsoft Defender pour Office 365 Plan 1|Microsoft Defender pour Office 365 Plan 2|
 |---|---|
-|Fonctionnalités de configuration, de protection et de détection : <ul><li>[Pièces jointes fiables](safe-attachments.md)</li><li>[Liens fiables](safe-links.md)</li><li>[Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Protection contre le hameçonnage dans Defender pour Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Détections en temps réel](threat-explorer.md)</li></ul>|Fonctionnalités de Microsoft Defender pour Office 365 Plan 1 <p> --- plus --- <p> Fonctionnalités d’automatisation, d’examen, de correction et de formation : <ul><li>[Suivi des menaces](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Examen et réponse automatisés](office-365-air.md)</li><li>[Formation à la simulation d'attaque](attack-simulation-training.md)</li></ul>|
-|
+|Fonctionnalités de configuration, de protection et de détection : <ul><li>[Pièces jointes fiables](safe-attachments.md)</li><li>[Liens fiables](safe-links.md)</li><li>[Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Protection contre le hameçonnage dans Defender pour Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Détections en temps réel](threat-explorer.md)</li></ul>|Fonctionnalités de Microsoft Defender pour Office 365 Plan 1 <p> --- plus --- <p> Fonctionnalités d’automatisation, d’examen, de correction et de formation : <ul><li>[Suivi des menaces](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Examen et réponse automatisés](office-365-air.md)</li><li>[Formation à la simulation d'attaque](attack-simulation-training.md)</li><li>[Microsoft 365 Defender de recherche avancée](advanced-hunting-overview.md)</li><li>[Microsoft 365 Defender incidents](investigate-incidents.md)</li><li>[Microsoft 365 Defender alertes](investigate-alerts.md)</li></ul>|
 
 - Microsoft Defender pour Office 365 Plan 2 est inclus dans Office 365 E5, Office 365 A5 et Microsoft 365 E5.
 
@@ -137,6 +136,8 @@ Cette référence rapide vous aide à comprendre les fonctionnalités fournies a
 - La fonctionnalité [Documents sécurisés](safe-docs.md) est uniquement disponible pour les utilisateurs ayant des licences Microsoft 365 E5 ou Microsoft 365 E5 Sécurité (non inclus dans les offres Microsoft Defender pour Office 365)
 
 - Si votre abonnement actuel n’inclut pas Microsoft Defender pour Office 365 et que vous le souhaitez, [contactez le service commercial pour commencer une version d’évaluation](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html) et découvrez comment Microsoft Defender pour Office 365 peut fonctionner dans votre organisation.
+
+- Les clients Microsoft Defender pour Office 365 P2 ont accès à l’intégration Microsoft 365 Defender pour détecter, examiner et répondre efficacement aux incidents et alertes.
 
 > [!TIP]
 > ***Conseil Insider** _. Vous pouvez utiliser la table des matières de docs.microsoft.com pour en savoir plus sur EOP et Microsoft Defender pour Office 365. Revenez à cette page, [Vue d’ensemble de la sécurité Office 365](index.yml), vous remarquerez que l’organisation de la table des matières est dans la barre latérale. Elle commence par le déploiement (y compris la migration), puis se poursuit par la prévention, la détection, l'enquête et la réponse. <p> Cette structure est divisée de telle sorte que les rubriques _ *Administration de la sécurité** sont suivies de rubriques **Opérations de sécurité**. Si vous êtes un nouveau membre de l’une des fonctions, utilisez le lien dans ce conseil et vos connaissances de la table des matières pour découvrir l’espace. N'oubliez pas d'utiliser les *liens de commentaires* et d'*évaluer les articles* au fur et à mesure. Vos commentaires nous aident à améliorer ce que nous vous proposons.

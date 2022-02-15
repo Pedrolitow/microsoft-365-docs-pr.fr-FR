@@ -15,12 +15,12 @@ ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6386efe2e0d0ccea35a6d346ece0414020d6d1ef
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 9ff523e55efa872002e53f74a631def4c65b9929
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807619"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818239"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guide de déploiement de l’antivirus Microsoft Defender dans un environnement VDI (Virtual Desktop Infrastructure)
 
@@ -28,7 +28,7 @@ ms.locfileid: "62807619"
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Outre les configurations matérielles ou locales standard, vous pouvez également utiliser Antivirus Microsoft Defender dans un environnement bureau à distance (RDS) ou vDI (Virtual Desktop Infrastructure).
+Outre les configurations matérielles ou locales standard, vous pouvez également utiliser Antivirus Microsoft Defender dans un environnement bureau à distance (RDS) ou une infrastructure VDI (Virtual Desktop Infrastructure) non persistante.
 
 Pour plus d’informations sur Bureau à distance Microsoft services et la prise en charge VDI, voir [la documentation Azure Virtual Desktop](/azure/virtual-desktop).
 
@@ -49,7 +49,7 @@ Ce guide décrit comment configurer vos VM pour une protection et des performanc
 Vous pouvez également télécharger le Antivirus Microsoft Defender de livre blanc sur [l’infrastructure](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf) de bureau virtuel, qui examine la nouvelle fonctionnalité de mise à jour de l’intelligence de sécurité partagée, ainsi que des tests de performances et des conseils sur la façon de tester les performances des antivirus sur votre propre environnement VDI.
 
 > [!NOTE]
-> Le site de démonstration Defender for Endpoint demo.wd.microsoft.com est supprimé et sera supprimé à l’avenir.
+> Le site de démonstration Defender pour point de terminaison sur demo.wd.microsoft.com est déconseillé et sera supprimé à l’avenir.
 
 > [!IMPORTANT]
 > Bien que l’environnement VDI puisse être hébergé sur Windows Server 2012 ou Windows Server 2016, les machines virtuelles doivent au minimum être en Windows 10, 1607, en raison de l’augmentation des technologies et des fonctionnalités de protection qui ne sont pas disponibles dans les versions antérieures de Windows.

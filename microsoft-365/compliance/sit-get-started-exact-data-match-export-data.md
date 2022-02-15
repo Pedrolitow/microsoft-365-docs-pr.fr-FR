@@ -1,5 +1,5 @@
 ---
-title: Exporter des données sources pour un type d’informations sensibles basé sur une correspondance exacte de données
+title: Exporter les données sources pour le type d’informations sensibles basé sur la correspondance exacte des données
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 description: Découvrez comment exporter des données sources pour un type d’informations sensibles basé sur une correspondance exacte de données.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b2009687e52e4911345daed1b3c16c0942fc1a65
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 8253ff73d53100c986a2bd8580830703c9f4b363
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914820"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818527"
 ---
-# <a name="export-source-data-for-exact-data-match-based-sensitive-information-type"></a>Exporter des données sources pour un type d’informations sensibles basé sur une correspondance exacte de données
+# <a name="export-source-data-for-exact-data-match-based-sensitive-information-type"></a>Exporter les données sources pour le type d’informations sensibles basé sur la correspondance exacte des données
 
 
 La table de données sensibles est un fichier texte contenant des lignes de valeurs par rapport à laquelle vous comparerez le contenu de vos documents pour identifier les données sensibles. Ces valeurs peuvent être des informations d’identification personnelle, des enregistrements de produits ou d’autres données sensibles sous forme de texte que vous souhaitez détecter dans le contenu et prendre des mesures de protection.
@@ -39,11 +39,11 @@ Utilisez ces règles pour vous aider à déterminer les colonnes que vous devez 
 
 - Si vous devez détecter des données sensibles en fonction de la présence d’une valeur unique correspondant à un champ dans votre table de données sensibles, quelle que soit la présence d’autres données sensibles qui l’entourent, cette colonne doit être définie comme élément principal pour un type EDM. 
 - Si plusieurs combinaisons de champs différents dans votre table de données sensibles doivent être détectées dans le contenu, identifiez les colonnes communes à la plupart de ces combinaisons et désignez-les comme éléments principaux et combinaisons des autres champs en tant qu’éléments secondaires.
-- Si une colonne que vous souhaitez utiliser comme champ principal ne suit pas un modèle détectable, comme une chaîne de texte ou des modèles détectables qui seraient présents dans un grand pourcentage de documents ou d’e-mails, essayez de choisir d’autres colonnes mieux structurées en tant qu’éléments principaux.
+- Si une colonne que vous souhaitez utiliser comme champ principal ne suit pas un modèle détectable, comme une chaîne de texte ou des modèles détectables qui seraient présents dans un grand pourcentage de documents ou d’e-mails, essayez de choisir d’autres colonnes mieux structurées comme éléments principaux.
 
-Par exemple, si vous avez les colonnes , et , même si le prénom et le nom sont les colonnes communes aux différentes combinaisons de données que vous souhaitez détecter, ces chaînes ne suivent pas facilement des modèles identifiables et peuvent être difficiles à définir en tant que `full name` `date of birth` type `account number` `Social Security Number` d’informations sensibles. Cela est dû au fait que certains noms peuvent ne pas commencer par des lettres en minuscules, ils peuvent être constitués de deux, trois mots ou plus et peuvent même contenir des nombres ou d’autres caractères non alphabétiques. La date de naissance peut être identifiée plus facilement, mais comme chaque e-mail et la plupart des documents contiennent au moins une date, il ne s’agit pas non plus d’un bon candidat. Les numéros de sécurité sociale et les numéros de compte sont de bons candidats pour une utilisation en tant que champ principal.
+Par exemple, `full name`si vous avez les colonnes , `date of birth`et `account number``Social Security Number`, même si le prénom et le nom sont les colonnes communes aux différentes combinaisons de données que vous souhaitez détecter, ces chaînes ne suivent pas facilement des modèles identifiables et peuvent être difficiles à définir en tant que type d’informations sensibles. Cela est dû au fait que certains noms peuvent ne pas commencer par des lettres en minuscules, ils peuvent être constitués de deux, trois mots ou plus et peuvent même contenir des nombres ou d’autres caractères non alphabétiques. La date de naissance peut être identifiée plus facilement, mais comme chaque e-mail et la plupart des documents contiennent au moins une date, il ne s’agit pas non plus d’un bon candidat. Les numéros de sécurité sociale et les numéros de compte sont de bons candidats pour une utilisation en tant que champ principal.
 
-## <a name="save-sensitive-data-in-csv-tsv-or-pipe-separated-format"></a>Enregistrer les données sensibles au format .csv, .tsv ou séparés par des pipelines
+## <a name="save-sensitive-data-in-csv-tsv-or-pipe-separated-format"></a>Enregistrer des données sensibles au format .csv, .tsv ou séparés par des pipelines
 
 1. Identifiez les informations sensibles que vous voulez utiliser. Exportez les données vers une application, telle que Microsoft Excel, et enregistrez le fichier dans un fichier texte. Le fichier peut être enregistré au format .csv (valeurs séparées par des virgules), .tsv (valeurs séparées par des tabulations) ou séparés par des |. Le format .tsv est recommandé dans les cas où vos valeurs de données peuvent inclure des virgules, telles que des adresses postales.
 Le fichier de données peut inclure au maximum :
@@ -57,9 +57,9 @@ Le fichier de données peut inclure au maximum :
 
 ## <a name="next-step"></a>Étape suivante
 
-- [Créer le schéma pour les types d’informations sensibles basés sur la correspondance exacte des données](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)
+- [Créer le schéma pour les types d’informations sensibles basés sur des correspondances de données exactes](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commencer avec les types d’informations sensibles exacts de correspondance de données](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
+- [Démarrage avec des types d’informations sensibles basés sur des correspondances de données exactes](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 - [En savoir plus sur les types d’informations sensibles exacts basés sur la correspondance de données](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)

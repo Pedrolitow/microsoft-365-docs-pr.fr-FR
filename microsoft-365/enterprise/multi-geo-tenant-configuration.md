@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: Dans cet article, découvrez l’ajout d’emplacements satellites et la configuration de votre client pour Microsoft 365 Multi-Geo.
-ms.openlocfilehash: 801bd2c094ded40714b07f2ebd8ce1db00769250
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 232791705dacfa9442304434559b67a4b01ca7dd
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177254"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818251"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Configuration de client multigéographique dans Microsoft 365
 
@@ -83,7 +83,7 @@ Suivez le processus de [Azure Active Directory Connect Sync : configurer l’em
 Nous vous recommandons d’inclure la configuration de l’emplacement des données par défaut de l’utilisateur dans le cadre de votre flux de travail de création utilisateur standard.
 
 > [!IMPORTANT]
-> Pour les nouveaux utilisateurs sans OneDrive provisionné, attendez au moins 24 heures après que le PDL d'un utilisateur soit synchronisé avec Azure AD pour que les changements se propagent avant que l'utilisateur ne se connecte à OneDrive Entreprise. (Configurer l’emplacement des données par défaut avant que l’utilisateur ne se connecte pour approvisionner son OneDrive Entreprise permet de s’assurer que le nouveau OneDrive de l’utilisateur est approvisionné à l’emplacement approprié.)
+> Pour les nouveaux utilisateurs sans OneDrive, accordez une licence au compte et attendez au moins 48 heures après la synchronisation du fichier PDL d’un utilisateur avec Azure AD pour que les modifications se propagent avant que l’utilisateur ne se connecte à OneDrive Entreprise. (Configurer l’emplacement des données par défaut avant que l’utilisateur ne se connecte pour approvisionner son OneDrive Entreprise permet de s’assurer que le nouveau OneDrive de l’utilisateur est approvisionné à l’emplacement approprié.)
 
 ### <a name="setting-preferred-data-location-for-cloud-only-users"></a>Configurer l’emplacement des données par défaut pour les utilisateurs cloud uniquement 
 
@@ -106,7 +106,7 @@ Les procédures de cette section nécessitent le [module Microsoft Azure Active 
 Nous vous recommandons d’inclure la configuration de l’emplacement des données par défaut de l’utilisateur dans le cadre de votre flux de travail de création utilisateur standard.
 
 > [!IMPORTANT]
-> Pour les nouveaux utilisateurs sans approvisionnement OneDrive, attendez au moins 24 heures après la configuration d’un emplacement des données par défaut de l’utilisateur pour que les changements soient appliqués avant que l’utilisateur ne se connecte à OneDrive. (Configurer l’emplacement des données par défaut avant que l’utilisateur ne se connecte pour approvisionner son OneDrive Entreprise permet de s’assurer que le nouveau OneDrive de l’utilisateur est approvisionné à l’emplacement approprié.)
+> Pour les nouveaux utilisateurs sans OneDrive mis en service, accordez une licence au compte et patientez au moins 48 heures après que le fichier PDL d’un utilisateur a été définie pour que les modifications se propagent avant que l’utilisateur ne se connecte à OneDrive. (Configurer l’emplacement des données par défaut avant que l’utilisateur ne se connecte pour approvisionner son OneDrive Entreprise permet de s’assurer que le nouveau OneDrive de l’utilisateur est approvisionné à l’emplacement approprié.)
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>Configuration de OneDrive et l’effet de PDL
 

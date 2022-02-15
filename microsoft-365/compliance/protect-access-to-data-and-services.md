@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Découvrez comment protéger l’accès des utilisateurs et des appareils aux données Microsoft 365 services et se défendre contre la perte de données.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9659d9117359fdb7a3264c244e128a1c20d0ec14
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 121c5b8f1168e9986693fea128aa66626b3e31fe
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326686"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818539"
 ---
 # <a name="protect-user-and-device-access"></a>Protéger l’accès aux appareils et l’accès des utilisateurs
 
@@ -45,7 +45,7 @@ Ensuite, configurez la gestion des accès privilégiés dans Office 365. La gest
 - [Vue d’ensemble de la gestion des accès privilégiés](privileged-access-management-overview.md)
 - [Configurer la gestion des accès privilégiés](privileged-access-management-configuration.md)
 
-Une autre recommandation importante consiste à utiliser des stations de travail spécialement configurées pour le travail administratif. Il s’agit d’appareils dédiés qui sont utilisés uniquement pour les tâches administratives. Voir [Sécurisation de l’accès privilégié](/windows-server/identity/securing-privileged-access/securing-privileged-access).
+Une autre recommandation importante consiste à utiliser des stations de travail particulièrement configurées pour le travail administratif. Il s’agit d’appareils dédiés qui sont utilisés uniquement pour les tâches administratives. Voir [Sécurisation de l’accès privilégié](/windows-server/identity/securing-privileged-access/securing-privileged-access).
 
 Enfin, vous pouvez atténuer l’impact d’un manque accidentel d’accès administratif en créant au moins deux comptes d’accès d’urgence dans votre client. Voir [Gérer les comptes d’accès d’urgence dans Azure AD](/azure/active-directory/users-groups-roles/directory-emergency-access). 
 

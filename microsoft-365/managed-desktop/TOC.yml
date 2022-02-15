@@ -159,6 +159,8 @@
               href: working-with-managed-desktop/security-updates-report.md
             - name: Rapport d'utilisation de l'application
               href: working-with-managed-desktop/app-usage-report.md
+            - name: Rapport des mesures de service
+              href: working-with-managed-desktop/service-metrics-report.md
         - name: Support pour les administrateurs
           href: working-with-managed-desktop/admin-support.md
         - name: Support pour les utilisateurs

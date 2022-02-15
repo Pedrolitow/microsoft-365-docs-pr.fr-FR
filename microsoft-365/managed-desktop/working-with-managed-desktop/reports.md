@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: f37a02c8cda29f48f926125f353d5e75410d9ab5
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 620e9d2bd95dc4782237af94966b5cb52579b656
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765491"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818575"
 ---
 # <a name="work-with-reports"></a>Utiliser les rapports
 
@@ -36,7 +36,7 @@ Lorsque vous sélectionnez l’onglet **Rapports** , vous voyez les descriptions
 | **Tendance de l’état de** l’appareil (*en prévisualisation*) | Cela permet de surveiller les tendances de l’état des appareils au cours des 60 derniers jours pour Microsoft Manged Desktop appareils. Les tendances peuvent vous aider à associer l’état de l’appareil à d’autres modifications au fil du temps, par exemple de nouveaux déploiements. |
 | [**Windows des mises à jour de sécurité**](security-updates-report.md) (*en prévisualisation*) | Ce rapport montre comment Windows mises à jour de sécurité sont publiées sur Microsoft Manged Desktop appareils. |
 | [**Rapport d’utilisation des** applications](app-usage-report.md) | Ce rapport fournit des informations sur l’utilisation classique des applications sur Microsoft Manged Desktop appareils. Pour que les appareils fournissent des données à ce rapport, ils doivent être définies sur le niveau de données de diagnostic facultatif. |
-| **Rapport de mesures de service** (*en prévisualisation*) | Ce rapport fournit des résumés simples des mesures clés pour Microsoft Manged Desktop mois. |
+| [**Rapport de mesures de service**](service-metrics-report.md) (*en prévisualisation*) | Ce rapport fournit des résumés simples des mesures clés pour Microsoft Manged Desktop mois. |
 
 ## <a name="endpoint-analytics"></a>Analyse des points de terminaison
 

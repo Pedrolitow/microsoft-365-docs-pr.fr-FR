@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez la principale différence entre un modèle de compréhension de document et un modèle de traitement de formulaire.
-ms.openlocfilehash: 7f79bc12c21162d294aaf15df0ef7d1434889faf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8a97c4a2c03d95a5ba9724423a405cb49d4a90fe
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201732"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818515"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Différence entre la compréhension de document et les modèles de traitement de formulaire 
 
@@ -84,7 +84,7 @@ Utilisez le tableau suivant pour comprendre quand utiliser le traitement des for
 | Régions pris en charge| Le traitement des formulaires s’appuie sur la plateforme Power. Pour plus d’informations sur la disponibilité globale de la plateforme Power et du Générateur d’intelligence artificielle, consultez [Disponibilité de la plateforme Power](https://dynamics.microsoft.com/geographic-availability/). | Disponible dans toutes les régions.|
 | Coût transactionnel | Utilise des crédits de générateur d’intelligence artificielle.<br>Les crédits peuvent être achetés par lots de 1M.<br>Plus de 1M de crédits est inclus lorsque vous achetez plus de 300 licences SharePoint Syntex.<br>1M de crédits permet de traiter un fichier de 2 000 pages.<br>| N/A |
 | Capacité | Utilise l’environnement de plateforme Power par défaut (environnements personnalisés pris en charge par la base de données de dataverse). | Ne comprend pas de restrictions de capacité.|
-| Langues prises en charge| Français <br>Prochainement, en 2021 : Langues de l'alphabet latin | Les modèles fonctionnent sur toutes les langues de l’alphabet latin. En plus de l’anglais : l’allemand, le suédois, le Français, l’espagnol, l’italien et le portugais.|
+| Langues prises en charge| Français <br>À venir en 2022 : langues de l’alphabet latin | Les modèles fonctionnent sur toutes les langues de l’alphabet latin. En plus de l’anglais : l’allemand, le suédois, le Français, l’espagnol, l’italien et le portugais.|
 
 ## <a name="see-also"></a>Voir aussi
 

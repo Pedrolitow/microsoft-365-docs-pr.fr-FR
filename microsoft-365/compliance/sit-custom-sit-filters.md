@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article présente une liste des filtres qui peuvent être codés dans des types d’informations sensibles personnalisés.
-ms.openlocfilehash: 3c91ff4a31f8e80b4798743169d5c30195dcdcde
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e5f3fb99ec4454410c3719dc3d76356e02f03573
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174998"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818227"
 ---
 # <a name="custom-sensitive-information-type-filters-reference"></a>Référence de filtres de type d’informations sensibles personnalisé
 
-Dans Microsoft, vous pouvez définir des filtres ou des vérifications supplémentaires lors de la création d’un type d’informations sensibles personnalisé (SIT).
+Dans Microsoft, vous pouvez définir des filtres ou d’autres vérifications lors de la création d’un type d’informations sensibles personnalisé (SIT).
 
 ## <a name="list-of-supported-filters-and-use-cases"></a>Liste des filtres et cas d’utilisation pris en charge
 
@@ -70,7 +70,7 @@ Par exemple, pour exclure les numéros commençant par 0500, 91, 091, 010 dans u
 - 1000-3265-9874
 - 0100-7892-3012
 
-vous pouvez utiliser ce xml
+Vous pouvez utiliser le xml suivant
 
 ```xml
 <Filters id="phone_number_filters_exc">
@@ -96,7 +96,7 @@ Par exemple, pour inclure les numéros commençant par 0500, 91, 091, 0100 dans 
 - 1000-3265-9874
 - 0100-7892-3012
 
-vous pouvez utiliser ce xml
+Vous pouvez utiliser le xml suivant
 
 ```xml
 <Filters id="phone_filters_inc">
@@ -115,7 +115,7 @@ Par exemple, pour exclure les numéros se terminant par 0500 91 091 0100 dans un
 - 1234.4567.7091
 - 1234-8091-4564
 
-vous pouvez utiliser ce xml
+Vous pouvez utiliser le xml suivant
 
 ```xml
 <Filters id="phone_number_filters_exc">
@@ -139,7 +139,7 @@ Par exemple, pour inclure les numéros se terminant par 0500, 91, 091, 0100, dan
 - 1234.4567.7091
 - 1234-8091-4564
 
-vous pouvez utiliser ce xml
+Vous pouvez utiliser le xml suivant
 
 ```xml
 <Filters id="phone_filters_inc">
@@ -157,7 +157,7 @@ Par exemple, pour exclure des numéros de carte de crédit tels 4111111111111111
 - 4111111111111111
 - 3241891031113111
 
-vous pouvez utiliser ce xml
+Vous pouvez utiliser le xml suivant
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -178,7 +178,7 @@ Par exemple, pour inclure des numéros de carte de crédit tels 4111111111111111
 - 4111111111111111
 - 3241891031113111
 
-vous pouvez utiliser ce xml
+Vous pouvez utiliser le xml suivant
 
 ```xml
 <Filters id="cc_filters_inc">
@@ -190,13 +190,13 @@ vous pouvez utiliser ce xml
 
 Description : vous permet de définir les caractères précédents qui doivent toujours être inclus ou exclus. Par exemple, si le numéro de carte de crédit est précédé de « ID de commande : » supprimez la correspondance des correspondances valides.
 
-Par exemple, pour exclure les occurrences de numéros  de téléphone qui ont Téléphone **numéro** et m’appeler à des chaînes avant le numéro de téléphone, dans une liste comme celle-ci :
+Par exemple, pour exclure les occurrences de numéros de téléphone qui ont Téléphone **numéro** et  m’appeler à des chaînes avant le numéro de téléphone, dans une liste comme celle-ci :
 
-- numéro de téléphone 091-8974-653278
+- Téléphone numéro 091-8974-653278
 - Téléphone 45-124576532-123
 - 45-124576532-123
 
-vous pouvez utiliser ce xml
+Vous pouvez utiliser le xml suivant
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -210,12 +210,12 @@ vous pouvez utiliser ce xml
   </Keyword>
 ```
 
-Par exemple, pour inclure  les occurrences qui ont des chaînes de carte de crédit et de carte **#** avant le numéro de carte de crédit, dans une liste comme celle-ci :
+Par exemple, pour inclure les occurrences qui  ont des chaînes de carte de crédit et de carte **#** avant le numéro de carte de crédit, dans une liste comme celle-ci :
 
 - Carte de crédit 45-124576532-123 
 - 45-124576532-123 (qui peut être un numéro de téléphone)
 
-vous pouvez utiliser ce xml
+Vous pouvez utiliser le xml suivant
 
 ```xml
 <Filters id="cc_filters_inc">
@@ -234,12 +234,12 @@ vous pouvez utiliser ce xml
 
 Description : vous permet de définir les caractères suivants qui doivent toujours être inclus ou exclus. Par exemple, si le numéro de carte de crédit est suivi de « /xuid », supprimez la correspondance des correspondances valides.
 
-Par exemple, les occurrences les plus exclues s’il y a 5 instances de quatre chiffres en plus comme suffixe dans une liste comme celle-ci :
+Par exemple, les occurrences les plus exclues s’il y a cinq instances de quatre chiffres en tant que suffixe dans une liste comme celle-ci :
 
 - 1234-5678-9321 4500 9870 6321 48925566
 - 1234-5678-9321
 
-vous pouvez utiliser ce xml
+Vous pouvez utiliser le xml suivant
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -248,29 +248,32 @@ vous pouvez utiliser ce xml
 
   <Regexid="Regex_false_positives_suffix">(\d{4}){5,}</Regex>
 ```
-Par exemple, pour exclure les occurrences si elles sont **suivies par /xuidsuffix,** comme une dans cette liste :
+Par exemple, pour exclure les occurrences si elles sont **suivies par /xuidsuffix**, comme dans une de cette liste :
 
 - 1234-5678-9321 /xuid
 - 1234-5678-9321
 
-vous pouvez utiliser ce xml
+Vous pouvez utiliser ce xml
 
-''xml <Filters id="cc_number_filters_exc">
+```xml
+<Filters id="cc_number_filters_exc">
     <Filter type="TextMatchFilter" direction="Prefix" logic="Exclude" textProcessorId="Keyword_false_positives_suffix">
 </Filter>
 
-  <Keyword id="Keyword_false_positives_suffix"> <Group matchStyle="string">
+  <Keyword id="Keyword_false_positives_suffix">
+    <Group matchStyle="string">
       <Term>/xuid</Term>
-    </Group> </Keyword>
+    </Group>
+  </Keyword>
 ```
 
-For example, to include an occurrence only if it is followed by **cvv** or **expires**, like two in this list:
+Par exemple, pour inclure une occurrence uniquement si elle est suivie de **cvv** ou **expire**, comme deux dans cette liste :
 
 - 45-124576532-123 
-- 45-124576532-123  cvv 966
-- 45-124576532-123  expires 03/23
+- 45-124576532-123 cvv 966
+- 45-124576532-123 expire le 23/03/2013
 
-you can use this xml
+Vous pouvez utiliser ce xml
 
 ```xml
 <Filters id="cc_filters_inc">
@@ -287,7 +290,7 @@ you can use this xml
 
 ## <a name="using-filters-in-rule-packages"></a>Utilisation de filtres dans des packages de règles
 
-Les filtres peuvent être définis sur l’intégralité de la fonction SIT ou sur un modèle. Voici quelques exemples d’extraits de code. 
+Les filtres peuvent être définis sur l’ensemble du sit ou sur un modèle. Voici quelques exemples d’extraits de code. 
 
 ### <a name="at-sensitive-information-type-level"></a>Au niveau du type d’informations sensibles
 

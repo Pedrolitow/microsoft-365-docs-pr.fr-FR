@@ -1,8 +1,8 @@
 - name: Microsoft 365 Business Premium
   items:
-    - name: Vue d’ensemble
+    - name: Présentation
       href: index.md
-    - name: "Obtenir Microsoft\_365\_Business"
+    - name: "Obtenir Microsoft\_365 Business Premium"
       href: get-microsoft-365-business-premium.md
     - name: Obtenir Microsoft 365 pour les campagnes
       href: get-microsoft-365-campaigns.md
