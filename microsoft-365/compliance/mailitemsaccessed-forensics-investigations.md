@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez l’action d’audit de boîte aux lettres MailItemsAccessed pour effectuer des enquêtes légales sur des comptes d'utilisateur compromis.
-ms.openlocfilehash: 8446c933f71717e57850bbbf2cce49391e26782c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 8bfba164bf3bfb0f4fa4bea687d0fe040cff4836
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61872620"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806023"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Utiliser l’audit avancé pour analyser des comptes compromis
 
@@ -85,7 +85,7 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 
 Voici les étapes à suivre pour utiliser les enregistrements d’audit MailItemsAccessed afin d'enquêter sur l'attaque d'un utilisateur compromis. Chacune de ces étapes présente la syntaxe de commande pour les applets de commande **Search-UnifiedAuditLog** ou **MailboxAuditLog**.
 
-1. Vérifiez si la boîte aux lettres a été limitée. Dans l'affirmative, cela signifie que certains enregistrements d’audit de boîte aux lettres n’ont pas été enregistrés. Dans le cas où les enregistrements d’audit affichent le terme « IsThrottled » sur la valeur « True », vous devez supposer qu’au terme de la période de 24 heures suivant la création de l'enregistrement, l’accès à la boîte aux lettres n’a pas été audité et que toutes les données de courrier ont été compromises.
+1. Vérifiez si la boîte aux lettres a été limitée. Si c’est le cas, cela signifie que certains enregistrements d’audit de boîte aux lettres n’auraient pas été enregistrés. Dans le cas où les enregistrements d’audit affichent le terme « IsThrottled » sur la valeur « True », vous devez supposer qu’au terme de la période de 24 heures suivant la création de l'enregistrement, l’accès à la boîte aux lettres n’a pas été audité et que toutes les données de courrier ont été compromises.
 
    Pour effectuer la recherche des enregistrements MailItemsAccessed dans lesquels la boîte aux lettres a été limitée, exécutez la commande suivante :
 
@@ -173,12 +173,12 @@ Les enregistrements d’audit dupliqués pour les mêmes opérations de liaison 
 |MailAccessType|Si l’accès est une liaison ou une opération de synchronisation.|
 |MailboxUPN|Nom d’utilisateur principal (UPN) de la boîte aux lettres dans laquelle se trouve le message lu.|
 |Utilisateur|Nom d’utilisateur principal (UPN) de l’utilisateur lisant le message.|
-|SessionId|L’ID de session vous permet de différencier les actions de l’attaquant et les activités quotidiennes des utilisateurs au sein de la même boîte aux lettres (en cas de compromission d’un compte). pour plus d’informations sur les sessions, voir [Contextualiser l’activité des attaquants dans les sessions Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/contextualizing-attacker-activity-within-sessions-in-exchange/ba-p/608801).|
+|SessionId|L’ID de session permet de différencier les actions de l’attaquant et les activités quotidiennes des utilisateurs dans la même boîte aux lettres (en cas de compromission de compte) Pour plus d’informations sur les sessions, consultez [Contextualisation de l’activité de l’attaquant dans les sessions dans Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/contextualizing-attacker-activity-within-sessions-in-exchange/ba-p/608801).|
 |
 
 ## <a name="identifying-the-access-contexts-of-different-audit-records"></a>Identification des contextes d'accès des différents enregistrements d'audit
 
-Il est fréquent qu’un attaquant puisse accéder à une boîte aux lettres en même temps que le propriétaire de la boîte aux lettres y accède. Pour différencier l’accès par la personne malveillante et le propriétaire de la boîte aux lettres, il existe des propriétés d’enregistrement d’audit qui définissent le contexte de l’accès. Comme expliqué précédemment, lorsque les valeurs de ces propriétés différentes, même lorsque l’activité se produit dans l’intervalle de cumul, des enregistrements d’audit distincts sont générés. L’exemple suivant présente trois enregistrements d’audit différents. Chacun d’eux se distingue par l’ID de session et les propriétés ClientIPAddress. Les messages consultés sont également identifiés.
+Il est fréquent qu’un attaquant puisse accéder à une boîte aux lettres en même temps que le propriétaire de la boîte aux lettres y accède. Pour différencier l’accès par la personne malveillante et le propriétaire de la boîte aux lettres, il existe des propriétés d’enregistrement d’audit qui définissent le contexte de l’accès. Comme expliqué précédemment, lorsque les valeurs de ces propriétés différentes, même lorsque l’activité se produit dans l’intervalle de cumul, des enregistrements d’audit distincts sont générés. L’exemple suivant présente trois enregistrements d’audit différents. Chacun d’eux est différencié par les propriétés ID de session et ClientIPAddress. Les messages consultés sont également identifiés.
 
 <br>
 
