@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: en savoir plus sur les types de services et d’éléments dont vous pouvez utiliser les étiquettes de confidentialité comme conditions dans les stratégies DLP
-ms.openlocfilehash: b74911765d9249834553c09bbd4efdd02e5f97ce
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Ln savoir plus sur les types de services et d’éléments dont vous pouvez utiliser les étiquettes de confidentialité comme conditions dans les stratégies DLP
+ms.openlocfilehash: 1117471e38b430f1d7289c6aae76994ac5acd494
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163395"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806887"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>Utiliser les étiquettes de confidentialité comme condition dans les stratégies de protection contre la perte de données
 
-Vous pouvez utiliser [ les étiquettes de confidentialité](sensitivity-labels.md)comme condition dans les stratégies de protection contre la perte de données pour cet emplacement:
+Vous pouvez utiliser les [étiquettes de confidentialité](sensitivity-labels.md) comme condition dans les stratégies DLP pour ces emplacements :
 
 - Messagerie Exchange Online
 - SharePoint Online
@@ -75,11 +75,11 @@ Vous pouvez utiliser des étiquettes de confidentialité comme conditions sur ce
 
 - L’utilisation d’étiquettes de confidentialité comme condition est prise en charge dans toutes les charges de travail, comme indiqué dans la matrice de support ci-dessus.
 
-- Les conseils de stratégie DLP continueront à être présentés dans les charges de travail (sauf Outlook Win32) pour les stratégies DLP qui contiennent une étiquette de confidentialité comme condition.
+- Les conseils de stratégie DLP continueront d’être affichés dans les charges de travail (à l’exception d’Outlook Win32) pour les stratégies DLP qui contiennent une étiquette de confidentialité en tant que condition.
 
 - Les étiquettes de confidentialité s’affichent également dans le message de rapport d’incident si une stratégie DLP avec une étiquette de confidentialité comme condition est associée.
 
-- Les détails de l’étiquette de confidentialité s’affichent également dans le journal d’audit de correspondance des règles DLP pour une correspondance de stratégie DLP qui contient l’étiquette de confidentialité comme condition.
+- Les détails de l’étiquette de confidentialité sont également affichés dans le journal d’audit de correspondance de règle DLP pour une correspondance de stratégie DLP qui contient une étiquette de confidentialité en tant que condition.
 
 
 ### <a name="support-policy-tips"></a>Conseils de stratégie de support

@@ -15,12 +15,12 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1ec2694fa974cde3f8316f4ad0937fc686d16c63
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: c955ab15640a8c3154e14ba0201946e109f832a9
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62444652"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807379"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activer Bloquer à la première consultation
 
@@ -152,6 +152,9 @@ Vous pouvez confirmer que Bloquer à la première consultation est activé sur d
 Pour valider le fonctionnement de la fonctionnalité, téléchargez le [Fichier d’exemple de Bloquer à la première consultation](https://demo.wd.microsoft.com/Page/BAFS). Pour télécharger le fichier, vous avez besoin d’un compte dans Azure AD auquel le rôle Administrateur de sécurité ou le rôle Administrateur général est attribué.
 
 Pour valider le fonctionnement de la protection activée pour le cloud, suivez les instructions dans [Valider les connexions entre votre réseau et le cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
+
+> [!NOTE]
+> Le site de démonstration Defender pour point de terminaison sur demo.wd.microsoft.com est déconseillé et sera supprimé à l’avenir.
 
 ## <a name="turn-off-block-at-first-sight"></a>Désactiver la fonctionnalité Bloquer à la première consultation
 

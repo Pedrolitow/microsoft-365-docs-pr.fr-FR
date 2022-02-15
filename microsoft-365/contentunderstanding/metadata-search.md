@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Découvrez comment utiliser la recherche avancée de métadonnées pour rechercher des éléments dans SharePoint bibliothèques de documents à l’aide SharePoint Syntex.
-ms.openlocfilehash: 99cf65c5baf57255ff880a859b8fd0b24bab733f
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b5dffe0cd0bf481c1243d87450110d545578a06b
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60717613"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806903"
 ---
 # <a name="search-for-metadata-in-document-libraries-in-microsoft-sharepoint-syntex"></a>Rechercher des métadonnées dans les bibliothèques de documents dans Microsoft SharePoint Syntex
 
@@ -39,14 +39,15 @@ La recherche avancée de métadonnées vous permet d’utiliser les métadonnée
 
     ![Capture d’écran d’une page de bibliothèque de documents affichant le volet de recherche de métadonnées](../media/content-understanding/metadata-search-pane.png)
 
-   Cinq champs de recherche de métadonnées sont actuellement disponibles. D’autres champs seront ajoutés à l’avenir.
+   Six champs de recherche de métadonnées sont actuellement disponibles. D’autres champs seront ajoutés à l’avenir.
 
    |Champ    |Utilisez ce champ pour  |
    |---------|---------|
    |Mots clés |Recherchez une correspondance de chaîne dans les métadonnées ou dans le texte intégral d’un document. |
-   |Nom     |Recherche dans la **colonne Nom** de la bibliothèque.          |
+   |Nom de fichier     |Recherche dans la **colonne Nom** de la bibliothèque.          |
    |Personnes   |Recherchez une correspondance sur des personnes dans n’importe quelle colonne de la bibliothèque.   |
-   |Modified |Recherchez par plage de dates sélectionnée dans la **colonne Modifié** de la bibliothèque.         |
-   |Type     |Recherchez par type de fichier sélectionné.        |
+   |Date de modification |Recherchez par plage de dates sélectionnée dans la **colonne Modifié** de la bibliothèque.         |
+   |Type de fichier     |Effectuez une recherche par type de fichier sélectionné (par exemple, document Word ou PDF).        |
+   |Type de contenu  |Recherchez par type de contenu sélectionné. Cette option s’affiche uniquement si un type de contenu non par défaut est appliqué à la bibliothèque. Les types de contenu par défaut sont les *documents* et les *dossiers*.        |
 
 3. Sélectionner **Rechercher**. Les documents qui correspondent à votre recherche de métadonnées sont affichés sur la page de résultats. 

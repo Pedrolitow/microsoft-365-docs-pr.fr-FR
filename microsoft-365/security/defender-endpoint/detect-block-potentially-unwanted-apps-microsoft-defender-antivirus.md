@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5b0be9c044b48788e5abb04f469b9f6ab0038cd5
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b193279f9891badc78e639776a57a366a0fa8109
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374531"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807079"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Détecter et bloquer des applications potentiellement indésirables
 
@@ -87,6 +87,9 @@ Vous pouvez également utiliser la protection contre les applications potentiell
 
 > [!TIP]
 > Visitez le site web de démonstration Microsoft Defender pour point de terminaison sur [demo.wd.microsoft.com](https://demo.wd.microsoft.com/Page/UrlRep) pour vérifier que la fonctionnalité est opérationnelle et voir comment elle fonctionne.
+
+> [!NOTE]
+> Le site de démonstration Defender pour point de terminaison sur demo.wd.microsoft.com est déconseillé et sera supprimé à l’avenir.
 
 La protection contre les applications potentiellement indésirables (PUA) dans le mode audit est utile si votre entreprise effectue une vérification de la conformité en matière de sécurité d’un logiciel interne et vous voulez éviter tout faux positif.
 

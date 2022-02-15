@@ -18,12 +18,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les options disponibles pour créer un environnement de partage d’invités sécurisé dans Microsoft 365, offrant un accès invité pour une collaboration améliorée.
-ms.openlocfilehash: 775a5f1376df1bca553bc1b3b9cd92072736ac60
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ae616bcaa78aa759ca5b1f1be4b1beaf8d709a00
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203734"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807607"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Créer un environnement de partage d’invités sécurisé
 
@@ -142,7 +142,7 @@ Configurer une révision d’accès des invités
 13. Tapez un **nom de révision**, puis examinez les paramètres.
 14. Cliquez sur **Créer**.
 
-Il est important de noter que les invités peuvent avoir accès à des équipes ou à des groupes, ou à des fichiers et dossiers individuels. Lorsque l'accès aux fichiers et dossiers leur est accordé, les invités ne peuvent pas être ajoutés à un groupe particulier. Si vous souhaitez effectuer des révisions d’accès sur des invités qui n'appartiennent ni à une équipe ni à un groupe, vous pouvez créer un groupe dynamique dans Azure AD pour contenir tous les invités, puis créer une révision d’accès pour ce groupe. Les propriétaires de site peuvent également gérer l’[expiration des invités pour le site](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea)
+Il est important de noter que pour les emplacements SharePoint et OneDrive, les documents sont bloqués de manière proactive juste après la détection d’informations sensibles, que le document soit partagé ou non, pour tous les utilisateurs externes, tandis que les utilisateurs internes continueront d’avoir accès au document.
 
 ### <a name="more-information"></a>Plus d’informations
 

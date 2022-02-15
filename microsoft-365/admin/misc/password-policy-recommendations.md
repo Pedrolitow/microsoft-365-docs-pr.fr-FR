@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Sécuriser votre organisation contre les attaques par mot de passe, et interdire les mots de passe courants et activer l’authentification multifacteur basée sur les risques.
-ms.openlocfilehash: d05b642455369cda3897733044727719e671a619
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a77d6a157c3691739ee7f5a024796f1f203241e8
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60171758"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805891"
 ---
 # <a name="password-policy-recommendations"></a>Recommandations en matière de stratégie de mot de passe
 
@@ -67,7 +67,7 @@ La diversité des mots de passe représente l’objectif principal d’un systè
 
 - Interdisez les mots de passe communs pour empêcher les mots de passe vulnérables d'envahir votre système
 
-- Informez vos utilisateurs pour qu'ils ne réutilisent pas leur mot de passe d'organisation à des fins autres que professionnelles
+- Former vos utilisateurs à ne pas réutiliser les mots de passe de leur organisation à des fins non professionnelles
 
 - Renforcer l'Inscription des utilisateurs au service d'[authentification multifacteur](../security-and-compliance/set-up-multi-factor-authentication.md)
 
@@ -79,7 +79,7 @@ Voici quelques conseils en matière de mots de passe destinés aux utilisateurs 
   
 - N’utilisez pas de mot de passe identique ou similaire à celui utilisé sur d’autres sites web
 
-- N’utilisez pas de mot unique (par exemple, **code** ou une expression couramment utilisée de type **jetaime)**
+- N’utilisez pas de mot unique (par exemple, **motdepasse** ou une expression couramment utilisée de type **jetaime)**
 
 - Veillez à ce que les mots de passe soient difficiles à deviner, même par des personnes qui vous connaissent bien, telles que les noms et les anniversaires de vos amis et de votre famille, vos groupes préférés et les phrases que vous aimez utiliser
 
@@ -89,11 +89,11 @@ Voici quelques-unes des pratiques les plus couramment utilisées en matière de 
   
 ### <a name="password-expiration-requirements-for-users"></a>Exigences d’expiration du mot de passe pour les utilisateurs
 
-Les conditions d’expiration du mot de passe sont plus néfastes que bénéfiques, car elles permettent aux utilisateurs de sélectionner des mots de passe sans surprise, composés de mots et de chiffres à caractère séquentiel très liés entre eux. Dans ce cas, le mot de passe suivant peut être déterminé en se basant sur le mot de passe précédent. Les exigences en matière d’expiration de mot de passe ne présentent aucun avantage de confinement, car les cybercriminels utilisent pratiquement toujours les informations d’identification dès qu’ils les compromettent. Pour plus d’informations, consultez [Il est temps de reconsidérer les changements de mots de passe obligatoires](https://go.microsoft.com/fwlink/p/?linkid=861018).
+Les exigences d’expiration de mot de passe font plus de mal que de bien, car ces exigences font en sorte que les utilisateurs sélectionnent des mots de passe prévisibles, composés de mots séquentiels et de nombres étroitement liés les uns aux autres. Dans ce cas, le mot de passe suivant peut être déterminé en se basant sur le mot de passe précédent. Les exigences d’expiration de mot de passe n’offrent aucun avantage en matière de contenu, car les cybercriminels utilisent presque toujours les informations d’identification dès qu’ils les compromettent. Pour plus d’informations, consultez [Il est temps de reconsidérer les changements de mots de passe obligatoires](https://go.microsoft.com/fwlink/p/?linkid=861018).
   
 ### <a name="requiring-long-passwords"></a>Exigence de mots de passe longs
 
-Les exigences de longueur de mot de passe (plus de 10 caractères environ) peuvent entraîner un comportement utilisateur prévisible et non souhaitable. Par exemple, il est possible que les utilisateurs devant utiliser un mot de passe de 16 caractères choisissent de répéter des modèles tels que **quatrequatrequatre** ou **motdepassemotdepasse** qui respectent les exigences de longueur de caractères, mais qui sont faciles à deviner. De plus, les exigences de longueur augmentent les risques d’adoption par les utilisateurs d’autres méthodes non sécurisées, telles que l’écriture sur papier de leurs mots de passe, leur réutilisation ou leur stockage non chiffré dans leurs documents. Pour inciter les utilisateurs à considérer un mot de passe unique, nous vous recommandons de conserver une exigence raisonnable d'une longueur minimale de 8 caractères.
+Les exigences de longueur de mot de passe (plus de 10 caractères environ) peuvent entraîner un comportement utilisateur prévisible et non souhaitable. Par exemple, il est possible que les utilisateurs devant utiliser un mot de passe de 16 caractères choisissent de répéter des modèles tels que **quatrequatrequatre** ou **motdepassemotdepasse** qui respectent les exigences de longueur de caractères, mais qui sont faciles à deviner. En outre, les exigences de longueur augmentent les chances que les utilisateurs adoptent d’autres pratiques non sécurisées, telles que l’écriture de leurs mots de passe, leur réutilisation ou leur stockage non chiffré dans leurs documents. Pour inciter les utilisateurs à considérer un mot de passe unique, nous vous recommandons de conserver une exigence raisonnable d'une longueur minimale de 8 caractères.
   
 ### <a name="requiring-the-use-of-multiple-character-sets"></a>Nécessité d’utiliser plusieurs jeux de caractères
 
@@ -105,7 +105,7 @@ L'exigence de complexité de mots de passe permet de réduire l’espace de clé
 
 - caractères non alphanumériques
 
-Beaucoup de personnes utilisent des modèles similaires par exemple, une lettre majuscule en premier, un symbole en dernier et un nombre dans les deux derniers caractères. Les cybercriminels le savent, de sorte qu’ils exécutent leurs attaques de dictionnaire en utilisant les substitutions les plus courantes, « $ » pour « s », « @ » pour « a », « 1 » pour « l ». Le fait de contraindre vos utilisateurs à choisir une combinaison de majuscules, minuscules et caractères spéciaux a une incidence négative. Certaines exigences de complexité empêchent également les utilisateurs d’utiliser des mots de passe sécurisés et mémorables, et de les contraint à faire usage de mots de passe moins sécurisés et moins marquants.
+Beaucoup de personnes utilisent des modèles similaires par exemple, une lettre majuscule en premier, un symbole en dernier et un nombre dans les deux derniers caractères. Les cybercriminels le savent. Ils exécutent donc leurs attaques par dictionnaire à l’aide des substitutions les plus courantes, « $ » pour « s », « @ » pour « a », « 1 » pour « l ». Le fait de contraindre vos utilisateurs à choisir une combinaison de majuscules, minuscules et caractères spéciaux a une incidence négative. Certaines exigences de complexité empêchent également les utilisateurs d’utiliser des mots de passe sécurisés et mémorables, et de les contraint à faire usage de mots de passe moins sécurisés et moins marquants.
   
 ## <a name="successful-patterns"></a>Modèles performants
 
@@ -115,9 +115,9 @@ En revanche, voici quelques recommandations favorisant une variété des mots de
 
 L'exigence de mot de passe la plus importante que vous devez imposer à vos utilisateurs lors de la création de mots de passe est d'interdire l'utilisation de mots de passe courants afin de réduire la susceptibilité de votre organisation aux attaques de mot de passe par force brute. Les mots de passe utilisateur courants incluent : **abcdefg**, **password**, **monkey**.
   
-### <a name="educate-users-to-not-re-use-organization-passwords-anywhere-else"></a>Apprenez à vos utilisateurs à ne pas réutiliser ailleurs les mots de passe d’organisation
+### <a name="educate-users-to-not-reuse-organization-passwords-anywhere-else"></a>Former les utilisateurs à ne pas réutiliser les mots de passe de l’organisation ailleurs
 
-L’un des plus importants messages à faire passer auprès des utilisateurs de votre organisation est de ne pas réutiliser autre part leur mot de passe d’organisation. L’utilisation de mots de passe d’organisation sur des sites web externes augmente considérablement la probabilité de compromission de ces mots de passe par des cybercriminels.
+L’un des messages les plus importants à passer aux utilisateurs de votre organisation consiste à ne pas réutiliser leur mot de passe d’organisation ailleurs. L’utilisation de mots de passe d’organisation dans des sites web externes augmente considérablement la probabilité que les cybercriminels compromettent ces mots de passe.
   
 ### <a name="enforce-multi-factor-authentication-registration"></a>Imposer l'inscription avec service d'authentification multifacteur
 

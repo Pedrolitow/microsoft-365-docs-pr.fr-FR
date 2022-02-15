@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 ms.localizationpriority: high
 description: Découvrez comment les établissements financiers peuvent gérer la conformité de la sécurité financière et collaborer efficacement à l’aide de Microsoft 365 et Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: 8f974340423156c46e907d7ed6b8793a255ad189
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e94ad0e1f7b6f0c8b76f40b6492f69b23655855c
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111530"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807547"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Principales considérations en matière de conformité et de sécurité pour les marchés bancaires et des capitaux américains
 
@@ -216,7 +216,7 @@ Les institutions financières doivent conserver leurs enregistrements et leurs i
  
 En outre, des mandats réglementaires émanant du Département des services financiers de l’État de New-York exigent que les entités couvertes maintiennent des politiques et procédures pour l’élimination d’informations non publiques. 23 NYCRR 500, section 500,13, les limitations en matière de conservation des données nécessite que «dans le cadre de son programme Cyber-sécurité, chaque entité couverte inclut les stratégies et procédures pour l’élimination sécurisée à intervalles réguliers de toute information non publique identifiée dans section 500.01(g)(2)-(3) de cette partie qui n’est plus nécessaire pour les opérations d’entreprise ou pour les besoins professionnels légitimes de l’entité couverte, sauf si ces informations sont normalement conservées en vertu d’une loi ou d’une réglementation ».
  
-Les institutions financières gèrent de grandes quantités de données. Certaines périodes de rétention sont déclenchées par des événements, tels qu’un contrat qui arrive à expiration ou un employé quittant l’organisation. Dans cette atmosphère, il peut être difficile d’appliquer des stratégies de rétention des enregistrements. Les approches permettant d’attribuer des périodes de rétention aux enregistrements de façon précise dans les documents organisationnels peuvent varier. Certains appliquent les stratégies de rétention à grande échelle ou tirent parti des techniques classification et d'apprentissage automatiques. D’autres identifient une approche nécessitant un processus plus granulaire qui attribue des périodes de rétention uniques à des documents individuels.
+Les institutions financières gèrent de grandes quantités de données. Certaines périodes de rétention sont déclenchées par des événements, tels qu’un contrat qui arrive à expiration ou un employé quittant l’organisation. Dans cette atmosphère, il peut être difficile d’appliquer des stratégies de rétention des enregistrements. Les approches permettant d’attribuer des périodes de rétention aux enregistrements de façon précise dans les documents organisationnels peuvent varier. Certains appliquent les stratégies de rétention à grande échelle ou tirent parti des techniques de classification et d'apprentissage automatiques. D’autres identifient une approche nécessitant un processus plus granulaire qui attribue des périodes de rétention uniques à des documents individuels.
 
 ***Microsoft 365 offre des fonctionnalités flexibles pour définir les étiquettes et stratégies de rétention pour implémenter intelligemment les exigences de gestion des enregistrements.*** Un gestionnaire d’enregistrements définit une étiquette de rétention, qui représente un « type d’enregistrement » dans un planning de rétention classique. L’étiquette de rétention contient les paramètres qui définissent les informations suivantes :
 
