@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 47773d3fb7f94811a03c78f181b2552245f89f97
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: c4308c203093d2170cc1a6316db824ee9935363f
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767579"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806227"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 
@@ -48,7 +48,7 @@ Microsoft Defender pour point de terminaison utilise la combinaison de technolog
 
 - **Capteurs de point de terminaison**: intégrés dans Windows 10, ces capteurs collectent et traitent des signaux de comportement par le système d’exploitation et envoient les données de ce capteur à votre instance privée, isolée et Cloud de Microsoft Defender pour point de terminaison.
 
-- **Analyse de sécurité cloud** : tirant parti du Big Data, de l’apprentissage sur appareil et des investigations approfondies uniques de l’écosystème Microsoft Windows, des produits cloud d’entreprise (tels qu’Office 365) et des ressources en ligne, les signaux comportementaux sont convertis en analyses, détections et réponses recommandées aux menaces avancées.
+- **Analyse de sécurité cloud** : Grâce à l'exploitation des données du Big Data, de l’apprentissage sur appareil et des investigations approfondies uniques de l’écosystème Microsoft Windows, des produits cloud d’entreprise (tels qu’Office 365) et des ressources en ligne, les signaux comportementaux sont convertis en informations, détections et réponses recommandées aux menaces avancées.
 
 - **Intelligence des menaces** : générée par les agents de repérage, les équipes de sécurité Microsoft et augmentée par l’intelligence des menaces fournie par les partenaires, l’intelligence des menaces permet à Microsoft Defender pour point de terminaison d’identifier les outils, les techniques et les procédures de l’agresseur, et de générer des alertes lorsqu’il est observé dans les données du capteur collectées.
 
