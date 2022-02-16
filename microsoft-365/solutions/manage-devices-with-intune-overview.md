@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 70824645edbf7c56a77aed76ec8fd07784bc43da
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: 9b1f3fbf48b58c477c1ae4c49870af6d58341bc4
+ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049311"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62825209"
 ---
 # <a name="manage-devices-with-intune-overview"></a>Vue d’ensemble de la gestion des appareils avec Intune
 
@@ -50,7 +50,7 @@ Cette série d’articles vous permet de parcourir un processus recommandé de g
 
 La protection des données et des applications sur les appareils et les appareils eux-mêmes est un processus à plusieurs couches. Il existe certaines protections que vous pouvez acquérir sur des appareils non gérés. Après avoir inscrit des appareils dans la gestion, vous pouvez implémenter des contrôles plus sophistiqués. Lorsque la protection contre les menaces est déployée sur vos points de terminaison, vous obtenez davantage d’informations et la possibilité de corriger automatiquement certaines attaques. Enfin, si votre organisation a travaillé pour identifier les données sensibles, appliquer une classification et des étiquettes et configurer des stratégies de protection contre la perte de données, vous pouvez obtenir une protection encore plus granulaire des données sur vos points de terminaison.
 
-Le diagramme suivant illustre les blocs de construction pour obtenir une posture de sécurité de confiance zéro pour Microsoft 365 et d’autres applications SaaS que vous introduisez dans cet environnement. Les éléments liés aux appareils sont numérotés de 1 à 7. Ce sont les couches de protection que les administrateurs de l’appareil coordonneront avec d’autres administrateurs pour effectuer l’opération. 
+Le diagramme suivant illustre les blocs de construction pour obtenir une posture de sécurité de confiance zéro pour Microsoft 365 et d’autres applications SaaS que vous introduisez dans cet environnement. Les éléments liés aux appareils sont numérotés de 1 à 7. Il s’agit des couches des administrateurs de périphérique de protection qui se coordonnent avec d’autres administrateurs à accomplir. 
 
 ![Pile de déploiement Microsoft 365 de confiance zéro](../media/devices/m365-zero-trust-deployment-stack-devices.png#lightbox)
 
@@ -60,11 +60,11 @@ Dans cette illustration :
 |&nbsp;|Étape |Description  |Conditions d'octroi de licence  |
 |---------|---------|---------|---------|
 |1     | Configurer le point de départ des stratégies d’accès aux appareils et aux identités de confiance zéro       | Travaillez en équipe avec l’administrateur des identités pour [Implémenter la protection des données des stratégies (APP) de niveau 2](manage-devices-with-intune-app-protection.md). Ces stratégies ne nécessitent pas une gestion des appareils. Vous configurez les stratégies de stratégie de protection des applications (SPA) dans Intune. L’administrateur des identités configure une stratégie d’accès conditionnel pour exiger des applications approuvées.          |E3, E5, F1, F3, F5    |
-|2     | Inscrire des appareils dans la gestion       | Cette tâche nécessite davantage de planification et de temps pour son implémentation. Bien que vous ayez le choix entre les outils et les méthodes pour y parvenir, l’[Étape 3 : inscrire des appareils dans la gestion](manage-devices-with-intune-enroll.md) vous guide tout au long du processus à l’aide d’Intune avec Autopilot et de l’inscription automatisée.      | E3, E5, F1, F3, F5        |
-|3     | Configurer des stratégies de conformité        |  Vous souhaitez vérifier que les appareils qui accèdent à vos applications et données répondent à une configuration minimale, par exemple, qu’ils sont protégés par mot de passe ou par code confidentiel et que le système d’exploitation est à jour. Les stratégies de conformité sont le moyen de définir les exigences que les appareils doivent respecter. [Étape 3. La configuration des stratégies de conformité](manage-devices-with-intune-compliance-policies.md) vous permet de configurer ces stratégies.        |   E3, E5, F3, F5      |
+|2     | Inscrire des appareils dans la gestion       | Cette tâche nécessite davantage de planification et de temps pour son implémentation. Microsoft recommande d’utiliser Intune pour inscrire des appareils, car cet outil offre une intégration optimale. Il existe plusieurs options d’inscription d’appareils, en fonction de la plateforme. Par exemple, les appareils Windows peuvent être inscrits à l’aide de Azure AD Join ou d’Autopilot. Vous devez passer en revue les options de chaque plateforme et choisir l’option d’inscription la mieux adaptée à votre environnement. Pour plus d’informations, consultez [Étape 3 : Inscrire des appareils dans l gestion](manage-devices-with-intune-enroll.md).      | E3, E5, F1, F3, F5        |
+|3     | Configurer des stratégies de conformité        |  Vous souhaitez vous assurer que les appareils qui accèdent à vos applications et données répondent aux exigences minimales, par exemple les appareils sont protégés par mot de passe ou par code confidentiel et le système d’exploitation est à jour. Les stratégies de conformité sont le moyen de définir les exigences que les appareils doivent respecter. [Étape 3. La configuration des stratégies de conformité](manage-devices-with-intune-compliance-policies.md) vous permet de configurer ces stratégies.        |   E3, E5, F3, F5      |
 |4     | Configurer les stratégies d’entreprise d’accès aux appareils et aux identités de confiance zéro (recommandé)        |Maintenant que vos appareils sont inscrits, vous pouvez travailler avec l’administrateur des identités pour [régler les stratégies d’accès conditionnel afin d’exiger des appareils sains et conformes](manage-devices-with-intune-require-compliance.md).          | E3, E5, F3, F5        |
 |5     |Déployer des profils de configuration      | Par opposition aux stratégies de conformité des appareils qui marquent simplement un appareil comme conforme ou non en fonction des critères que vous configurez, les profils de configuration modifient réellement la configuration des paramètres sur un appareil. Vous pouvez utiliser des stratégies de configuration pour renforcer les appareils contre les cybermenaces. Voir l’[Étape 5. Déployer des profils de configuration.](manage-devices-with-intune-configuration-profiles.md)        | E3, E5, F3, F5        |
-|6      |Surveiller les risques et la conformité des appareils aux bases de référence de sécurité         | Dans cette étape, vous connectez Intune à Microsoft Defender pour point de terminaison. Grâce à cette intégration, vous pouvez ensuite surveiller les risques des appareils comme condition d’accès. Les appareils dont l’état est à risque sont bloqués. Vous pouvez également surveiller la conformité aux bases de référence de sécurité. Voir l’[Étape 6. Surveiller les risques et la conformité des appareils aux bases de référence de sécurité](manage-devices-with-intune-monitor-risk.md).       | E5, F5        |
+|6      |Surveiller les risques et la conformité des appareils avec les bases de référence de sécurité         | Dans cette étape, vous connectez Intune à Microsoft Defender pour point de terminaison. Grâce à cette intégration, vous pouvez ensuite surveiller les risques des appareils comme condition d’accès. Les appareils dont l’état est à risque sont bloqués. Vous pouvez également surveiller la conformité avec les bases de référence de sécurité. Voir l’[Étape 6. Surveiller les risques et la conformité des appareils aux bases de référence de sécurité](manage-devices-with-intune-monitor-risk.md).       | E5, F5        |
 |7      |Implémenter la protection contre la perte de données (DLP) avec les fonctionnalités de protection des informations   | Si votre organisation a travaillé pour identifier les données sensibles et étiqueter les documents, vous pouvez travailler avec l’administrateur de protection des informations pour [protéger les informations sensibles et les documents sur vos appareils](manage-devices-with-intune-dlp-mip.md).         | Module complémentaire de conformité E5, F5        |
 | | | | |
 
@@ -84,6 +84,35 @@ Dans cette illustration :
 <!---
 ## Managing change with users
 --->
+
+## <a name="enrolling-devices-vs-onboarding-devices"></a>Inscription d’appareils et intégration d’appareils
+Si vous suivez ces instructions, vous inscrirez des appareils à la gestion à l’aide d’Intune (ou d’un autre outil) et vous intégrerez des appareils pour deux services :
+- Defender pour point de terminaison
+- DLP du point de terminaison
+
+
+L’illustration suivante explique comment cela fonctionne à l’aide d’Intune.
+<br>
+
+![Processus d’inscription et d’intégration d’appareils](../media/devices/devices-enroll-onboard-process.png#lightbox)
+
+Dans cette illustration :
+1. Inscrire des appareils dans la gestion avec Intune.
+2. Utilisez Intune pour intégrer des appareils à Defender pour point de terminaison.
+3. Les appareils intégrés à Defender pour point de terminaison sont également intégrés pour Microsoft 365 fonctionnalités de conformité, y compris la DLP du point de terminaison.
+ 
+Notez que seul Intune gère les appareils. L’intégration fait référence à la possibilité pour un appareil de partager des informations avec un service spécifique. Le tableau suivant récapitule les différences entre l’inscription d’appareils dans la gestion et l’intégration d’appareils pour un service spécifique.
+
+
+|         |Inscription     |Intégrer  |
+|---------|---------|---------|
+|Description     |  L’inscription s’applique à la gestion des appareils. Les appareils sont inscrits pour la gestion avec Intune ou Gestionnaire de configuration.        | L’intégration configure un appareil pour qu’il fonctionne avec un ensemble spécifique de fonctionnalités dans Microsoft 365. Actuellement, l’intégration s’applique à Microsoft Defender pour point de terminaison et aux fonctionnalités de conformité Microsoft. <br><br>Sur les appareils Windows, l’intégration implique de basculer un paramètre dans Windows Defender qui permet à Defender de se connecter au service en ligne et d’accepter les stratégies qui s’appliquent à l’appareil.        |
+|Portée     | Ces outils de gestion des appareils gèrent l’ensemble de l’appareil, notamment la configuration de l’appareil pour atteindre des objectifs spécifiques, tels que la sécurité.        |L’intégration affecte uniquement les services qui s’appliquent.     |
+|Méthodes recommandées     | Azure Active Directory jointure inscrit automatiquement les appareils dans Intune.        | Intune est la méthode préférée pour intégrer des appareils à Windows Defender pour point de terminaison, et par conséquent Microsoft 365 fonctionnalités de conformité.<br><br>Notez que les appareils intégrés à Microsoft 365 fonctionnalités de conformité à l’aide d’autres méthodes ne sont pas inscrits automatiquement pour Defender pour point de terminaison.        |
+|Autres méthodes     |   Les autres méthodes d’inscription dépendent de la plateforme de l’appareil et s’il est BYOD ou géré par votre organisation.      | Les autres méthodes d’intégration des appareils sont les suivantes, dans l’ordre recommandé :<br><li>Gestionnaire de configuration<li>Autre outil de gestion des périphériques mobiles (si l’appareil est géré par un seul)<li>Script local<li>Package de configuration VDI pour l’intégration d’appareils d’infrastructure de bureau virtuel (VDI) non persistants<li>Stratégie de groupe|
+| | |     |
+
+
 
 ## <a name="learning-for-administrators"></a>Apprentissage pour les administrateurs
 Les ressources suivantes permettent aux administrateurs de découvrir des concepts sur l’utilisation de Microsoft Endpoint Manager et Intune.
