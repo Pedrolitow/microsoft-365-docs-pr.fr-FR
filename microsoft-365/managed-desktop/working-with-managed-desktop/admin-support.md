@@ -1,7 +1,7 @@
 ---
 title: Aide administrateur pour le Bureau géré Microsoft
 description: Comment les administrateurs peuvent obtenir de l’aide sur le service
-keywords: 'Bureau géré Microsoft, Microsoft 365, service, documentation'
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: tiaraquan
 ms.localizationpriority: medium
@@ -9,8 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
+ms.openlocfilehash: 82903c15c0941a729f85bdbc69cba9779d4509e7
+ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62825444"
 ---
-
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Aide administrateur pour le Bureau géré Microsoft
 
 Vous pouvez envoyer des tickets de support ou des demandes de commentaires à Microsoft à l’aide Microsoft Manged Desktop portail d’administration. Les demandes de support sont toujours prioritaires sur les soumissions de commentaires.
@@ -36,7 +41,7 @@ Les demandes de support sont triés et gérés en fonction de la gravité décri
 | ----- | ----- |
 Incident | Vous avez besoin de l Microsoft Manged Desktop des opérations pour examiner un problème d’utilisateur. Par exemple, un impact étendu d’une modification ou d’une panne de service.
 Demande d’informations | Vous planifiez une modification de la mise en réseau, de la configuration du proxy, des systèmes VPN, de l’expiration des certificats ou vous avez simplement besoin d’informations sur le service. Une réponse de l’équipe Microsoft Manged Desktop Operations est recommandée lors de la communication d’un changement au sein de votre organisation.
-Demande de modification | L’équipe Microsoft Manged Desktop opérations de mise à jour doit apporter des changements, par exemple en déplaçant des appareils entre des groupes de mise à jour.
+Demande de modification | L’équipe Microsoft Manged Desktop opérations de mise à jour doit apporter des changements, par exemple en déplaçant des appareils entre des groupes de mise à jour. Toutes les demandes de modification sont traitées comme des demandes de gravité C.
 
 > [!IMPORTANT]
 > Lorsque vous créez une demande de support, vous devez fournir un contact principal. Cette personne est chargée de collaborer avec nos ingénieurs de service pour résoudre le problème ou répondre à toute question sur une modification demandée. Nous exigeons également que vous avez préalablement mis en place un [contact](../get-started/add-admin-contacts.md) administrateur qui sera copié sur toutes les notifications de cas pour leur domaine de travail pertinent. Cette personne est invitée à prendre en compte un cas si le contact principal d’un cas est inaccessible.

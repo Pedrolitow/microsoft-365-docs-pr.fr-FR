@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 630143a88c453c66de2dba018d0e1cc75a770e89
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 77579a97016d37dd9bfc12f88db62200fbca0ccc
+ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806167"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62825408"
 ---
 # <a name="plan-for-communication-compliance"></a>Planifier la conformité des communications
 
@@ -102,7 +102,7 @@ Avant de commencer à utiliser la conformité des communications, vous devez dé
 
 ### <a name="reviewers"></a>Relecteurs
 
-Lorsque vous créez une stratégie de conformité des communications, vous devez déterminer qui examine les messages des utilisateurs supervisés. Dans la stratégie, les adresses de messagerie des utilisateurs identifient les individus ou les groupes de personnes qui doivent réviser les communications contrôlées. Tous les réviseurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online et doivent être affectés aux rôles Analyse de conformité des communications ou Examen de la conformité *des* communications. Le rôle Gestion des cas de conformité des communications doit également être attribué  aux réviseurs (analystes ou enquêteurs). Lorsque des réviseurs sont ajoutés à une stratégie, ils reçoivent automatiquement un message électronique les avertissant de l’affectation à la stratégie et fournissent des liens vers des informations sur le processus de révision.
+Lorsque vous créez une stratégie de conformité des communications, vous devez déterminer qui examine les messages des utilisateurs supervisés. Dans la stratégie, les adresses de messagerie des utilisateurs identifient les individus ou les groupes de personnes qui doivent réviser les communications contrôlées. Tous les réviseurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online, doivent être affectés à l’analyste de conformité des communications ou aux groupes de rôles d’enquêteur de conformité des communications et doivent être affectés dans la stratégie qu’ils doivent examiner.  Lorsque des réviseurs sont ajoutés à une stratégie, ils reçoivent automatiquement un message électronique les avertissant de l’affectation à la stratégie et fournissent des liens vers des informations sur le processus de révision.
 
 ### <a name="groups-for-supervised-users-and-reviewers"></a>Groupes pour les utilisateurs et les relecteurs supervisés
 

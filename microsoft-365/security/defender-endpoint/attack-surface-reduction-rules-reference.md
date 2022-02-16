@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: ca7f52c0a91540e68c845ca559daecd5736d9b60
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: f6672bfe090458de9ffecae77b656b6f4a8a912d
+ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767495"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62825480"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Référence des règles de réduction de la surface d’attaque
 
@@ -47,11 +47,10 @@ Cet article fournit des informations sur les règles de réduction des attaques 
 > [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
-Le tableau suivant répertorie les systèmes d’exploitation pris en charge pour les règles de réduction de la surface d’attaque qui sont actuellement des produits de préparation. Les règles sont répertoriées par ordre alphabétique.
+Le tableau suivant répertorie les systèmes d’exploitation pris en charge pour les règles de réduction de la surface d’attaque qui sont actuellement des produits de préparation. Les règles sont répertoriées par ordre alphabétique. Sauf indication contraire, la version Windows&nbsp; 10 minimale est la version 1709 (RS3, build 16299) ou ultérieure ; la version minimale de Windows&nbsp; Server est la version 1809 ou ultérieure.
 
-> [!Note]
->
-> - Sauf indication contraire, la version Windows&nbsp; 10 minimale est la version 1709 (RS3, build 16299) ou ultérieure ; la version minimale de Windows&nbsp; Server est la version 1809 ou ultérieure.
+> [!NOTE]
+> Les règles de réduction de la surface d’attaque dans Windows&nbsp; Server2012R2&nbsp;&nbsp; et Windows Server2016&nbsp; sont disponibles pour les appareils intégrés à l’aide du package de solution unifiée&nbsp; moderne. Pour plus d’informations, voir Nouvelle fonctionnalité dans [la solution unifiée moderne pour Windows Server 2012 R2 et 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 >
 
 | Nom de la règle | &nbsp;Windows Server 2016 <sup>[[1](#fn1)]<sup></sup> | &nbsp;Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup> |
@@ -89,7 +88,7 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 
 |Nom de la règle|&nbsp;Windows 10|&nbsp;Windows Server 2019|&nbsp;Windows Server|
 |---|:---:|:---:|:---:|
-|[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | Y version 1803 (canal semi-annuel) ou version ultérieure |
+|[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | v <br><br> version 1803 (canal semi-annuel) ou version ultérieure |
 |[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | Y version 1809 ou ultérieure | v | v  <br><br> |
 |[Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes) | v | v | v <br><br> |
 |[Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité locale (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y version 1803 ou ultérieure | v <br><br> | v <br><br> |
@@ -113,7 +112,7 @@ Les liens vers des informations sur les versions du système de gestion de la co
 
 |Nom de la règle | Intune | Gestionnaire de point de terminaison Microsoft |Microsoft Endpoint Configuration Manager |Stratégie de groupe<sup>[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
-|[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v  | Y MEM OMA-URI |   | v  |  [pris en charge](images/checkmark.png) <br><br> |
+|[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v  | Y MEM OMA-URI |   | v  |  v |
 |[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | v |   | v | v  | v  |
 |[Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes) | v |   |v <br><br> CB 1710 | v  | v  |
 |[Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité locale (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | v  |   | v <br><br>CB 1802 | v  | v  |
@@ -175,7 +174,7 @@ Pour les règles dont l'« état de règle » est spécifié :
 - **Audit** : il s’agit de l’état dans lequel la règle de astéreur est évaluée pour son comportement d’impact sur l’organisation ou l’environnement dans lequel elle est déployée. Le code de cet état est 2.
 - **Avertir** Il s’agit de l’état dans lequel la règle asr est activée et présente une notification à l’utilisateur final, mais permet à l’utilisateur final de contourner le blocage. Le code de cet état est 6.
 
-_Le mode Avertissement_ est un type de blocage qui avertit les utilisateurs des actions potentiellement risquées. Les utilisateurs peuvent ensuite choisir d’ignorer le message d’avertissement de blocage et d’autoriser l’action sous-jacente. Les utilisateurs peuvent sélectionner **OK** pour appliquer le bloc, ou sélectionner l’option de contournement **- Débloquer** - via la notification toast de l’utilisateur final générée au moment du blocage. Une fois l’avertissement débloqué, l’opération est autorisée jusqu’au prochain message d’avertissement, auquel cas l’utilisateur final devra reformer l’action.
+_Le mode Avertissement_ est un type de blocage qui avertit les utilisateurs des actions potentiellement risquées. Les utilisateurs peuvent choisir d’ignorer le message d’avertissement de blocage et d’autoriser l’action sous-jacente. Les utilisateurs peuvent sélectionner **OK** pour appliquer le bloc, ou sélectionner l’option de contournement **- Débloquer** - via la notification toast de l’utilisateur final générée au moment du blocage. Une fois l’avertissement débloqué, l’opération est autorisée jusqu’au prochain message d’avertissement, auquel cas l’utilisateur final devra reformer l’action.
 
 Si vous cliquez sur le bouton autoriser, le bloc sera supprimé pendant 24 heures. Au bout de 24 heures, l’utilisateur final doit autoriser à nouveau le blocage. Le mode d’avertissement pour les règles de récupération automatique est uniquement pris en charge pour les appareils RS5+ (1809+). Si le contournement est affecté à des règles de récupération automatique sur des appareils avec des versions antérieures, la règle sera en mode bloqué.
 

@@ -17,14 +17,16 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guide de configuration et d’installation d’applications certifiées étendues pour ServiceNow.
-ms.openlocfilehash: 0629b322a52702ef293ff1f73661359b410f2d69
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 99024eabd4009dcdd14b3d999afe5ee1875fe23e
+ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806011"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62825326"
 ---
 # <a name="microsoft-365-support-integration-with-servicenow-configuration-overview"></a>Vue d’ensemble de l’intégration de la prise en charge Microsoft 365 avec la configuration ServiceNow
+
+Le contenu suivant s’applique au Microsoft 365 l’application de prise en charge de l’intégration avec une version minimale de **1.0.7**.
 
 **Microsoft 365'intégration du support** technique vous permet d’intégrer Microsoft 365 aide, de support et d’état du service à vos instances ServiceNow. Vous pouvez effectuer des recherches sur les problèmes connus et signalés par Microsoft, résoudre les incidents, effectuer des tâches à l’aide de solutions recommandées par Microsoft et, si nécessaire, faire appel au support technique de Microsoft.
 
@@ -46,7 +48,7 @@ Voici les principales fonctionnalités que vous obtenez avec l’application d�
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-service-request.png" lightbox="../../media/ServiceNow-guide/servicenow-overview-service-request.png" alt-text="Formulaire de demande de service.":::
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prerequisites
 
 ### <a name="permissions-requirements"></a>Conditions requises pour les autorisations
 
@@ -82,8 +84,10 @@ Une fois l Microsoft 365'application d’intégration de support technique insta
 
 ## <a name="what-configuration-is-right-for-your-organization"></a>Quelle est la configuration qui est la bonne pour votre organisation ?
 
-Avant de configurer une configuration pour Microsoft 365 l’intégration, comprenez comment votre environnement ServiceNow est installé.
+Une fois que vous avez téléchargé l’application, accédez à l’Assistant Microsoft 365 de configuration dans votre environnement SOFT pour terminer le processus d’installation.
+:::image type="content" source="../../media/154124985-76e13e7d-b32e-4741-830b-bbb110d3ecbf.png" alt-text="Assistant Installation de la chasse":::
 
+Pour en savoir plus sur les étapes à suivre, consultez les pages suivantes :
 - Si votre environnement ServiceNow autorise l’authentification de base (accès avec les informations d’identification de l’utilisateur ServiceNow) pour les appels de service web entrants, suivez les instructions de la procédure [Set up Microsoft 365 pour](servicenow-basic-authentication.md) prendre en charge l’intégration avec l’authentification de base ServiceNow.
 - Si votre environnement ServiceNow n’autorise PAS l’authentification de base (accès avec les informations d’identification de l’utilisateur ServiceNow) pour les appels de service web entrants, suivez les instructions de la procédure [Set up Microsoft 365 support integration with Azure AD Auth Token](servicenow-aad-oauth-token.md).
   - Cette configuration nécessite un client DSO pour que le jeton AAD auth fonctionne correctement.
