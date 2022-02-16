@@ -21,12 +21,12 @@ description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le 
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: ff963c9bad09657899e9b163dacce46e6a246c6a
-ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
+ms.openlocfilehash: 5d5c7820a28977bb894c30915dc26f12016bb58c
+ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62520245"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62825492"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -191,13 +191,13 @@ Pour effectuer une recherche dans le journal d’audit dans Microsoft 365, vous 
 
    3. **Utilisateurs** : Cliquez dans cette zone, puis sélectionnez un ou plusieurs utilisateurs pour lesquels afficher les résultats. Les entrées du journal d’audit pour l’activité sélectionnée effectuée par les utilisateurs que vous sélectionnez dans cette zone apparaissent dans la liste des résultats. Laissez cette zone vide pour renvoyer les entrées pour tous les utilisateurs (et les comptes de service) dans votre organisation.
 
-   4. **Fichier, dossier ou site** : Tapez l’entièreté ou une partie du nom d’un fichier ou d’un dossier pour rechercher les activités liées au fichier ou au dossier qui contient le mot clé spécifié. Vous pouvez également spécifier l’URL d’un fichier ou d’un dossier. Si vous utilisez une URL, veillez à entre l’URL complète. Si vous ne tapez qu’une partie de l’URL, n’incluez aucun caractère spécial ou espace.<br/><br/>Laissez cette zone vide pour renvoyer les entrées correspondant à tous les fichiers et dossiers dans votre organisation.
+   4. **Fichier, dossier ou site** : Tapez l’entièreté ou une partie du nom d’un fichier ou d’un dossier pour rechercher les activités liées au fichier ou au dossier qui contient le mot clé spécifié. Vous pouvez également spécifier l’URL d’un fichier ou d’un dossier. Si vous utilisez une URL, assurez-vous que vous tapez le chemin d’accès complet de l’URL ou si vous tapez une partie de l’URL, n’incluez pas de caractères spéciaux ou d’espaces (toutefois, l’utilisation du caractère générique (\*) est prise en charge).<br/><br/>Laissez cette zone vide pour renvoyer les entrées correspondant à tous les fichiers et dossiers dans votre organisation.
 
     > [!TIP]
     >
-    > - Si vous recherchez toutes les activités concernant un **site**, ajoutez le symbole générique (\*) après l’URL pour renvoyer toutes les entrées de ce site ; par exemple, `"https://contoso-my.sharepoint.com/personal*"`
+    > - Si vous recherchez toutes les activités liées à un **site**, ajoutez le caractère générique (\*) après l’URL pour renvoyer toutes les entrées de ce site ; par exemple, `"https://contoso-my.sharepoint.com/personal*"`.
     >
-    > - Si vous recherchez toutes les activités associées à **un fichier**, ajoutez le symbole générique (\*) avant le nom de fichier pour renvoyer toutes les entrées de ce fichier, par exemple, `"*Customer_Profitability_Sample.csv"`.
+    > - Si vous recherchez toutes les activités liées à un **fichier,** ajoutez le caractère générique (\*) avant le nom de fichier pour renvoyer toutes les entrées de ce fichier ; par exemple, `"*Customer_Profitability_Sample.csv"`.
 
 4. Cliquez sur **Rechercher** pour effectuer la recherche à l’aide de vos critères de recherche. 
 
