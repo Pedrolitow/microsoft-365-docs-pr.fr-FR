@@ -20,14 +20,14 @@ ms.custom:
 description: Microsoft Defender pour Office 365 inclut des pièces jointes sécurisées, des liens fiables, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités Threat Intelligence.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 07dcc4c5d6d9758828fe2b48344a3c6ccc3b8a2e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: b6756ba1c0315bb2b89c272d8153715cffe8f976
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873536"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818563"
 ---
-# <a name="microsoft-defender-for-office-365"></a>Microsoft Defender pour Office 365
+# <a name="microsoft-defender-for-office-365"></a>Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -79,20 +79,22 @@ Le tableau suivant récapitule les actions incluent dans chaque plan.
 
 ****
 
-|Microsoft Defender pour Office 365 Plan 1|Microsoft Defender pour Office 365 Plan 2|
+|Microsoft Defender pour Office 365 Plan 1|Microsoft Defender pour Office 365 Plan 2|
 |---|---|
-|Fonctionnalités de configuration, de protection et de détection : <ul><li>[Pièces jointes fiables](safe-attachments.md)</li><li>[Liens fiables](safe-links.md)</li><li>[Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Anti-hameçonnage dans la protection de Defender pour Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Détections en temps réel](threat-explorer.md)</li></ul>|Fonctionnalités de Microsoft Defender pour Office 365 Plan 1 <br>--- plus ---<br> Fonctionnalités d’automatisation, d’examen, de correction et de formation :<ul><li>[Suivi des menaces](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Examen et réponse automatisés](office-365-air.md)</li><li>[Formation à la simulation d'attaque](attack-simulation-training.md)</li><li>[Vues de campagne](campaigns.md)</li></ul>|
-|
+|Fonctionnalités de configuration, de protection et de détection : <ul><li>[Pièces jointes fiables](safe-attachments.md)</li><li>[Liens fiables](safe-links.md)</li><li>[Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Protection contre le hameçonnage dans Defender pour Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Détections en temps réel](threat-explorer.md)</li></ul>|Fonctionnalités de Microsoft Defender pour Office 365 Plan 1 <p> --- plus --- <p> Fonctionnalités d’automatisation, d’examen, de correction et de formation : <ul><li>[Suivi des menaces](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Examen et réponse automatisés](office-365-air.md)</li><li>[Formation à la simulation d'attaque](attack-simulation-training.md)</li><li>[Recherche avancée Microsoft 365 Defender](advanced-hunting-overview.md)</li><li>[Incidents Microsoft 365 Defender](investigate-incidents.md)</li><li>[Alertes Microsoft 365 Defender](investigate-alerts.md)</li></ul>|
 
-- Microsoft Defender pour Office 365 Plan 2 est inclus dans Office 365 E5, Office 365 A5, Microsoft 365 E5 Sécurité et Microsoft 365 E5.
 
-- Microsoft Defender pour Office 365 Plan 1 est inclus dans Microsoft 365 Business Premium.
+- Microsoft Defender pour Office 365 Plan 2 est inclus dans Office 365 E5, Office 365 A5 et Microsoft 365 E5.
 
-- Microsoft Defender pour Office 365 Plan 1 et Microsoft Defender pour Office 365 Plan 2 sont tous deux disponibles sous forme de modules complémentaires pour certains abonnements. Pour en savoir plus, voir [Disponibilité des fonctionnalités pour les offres Microsoft Defender pour Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+- Microsoft Defender pour Office 365 Plan 1 est inclus dans Microsoft 365 Business Premium.
 
-- La fonctionnalité [Documents sécurisés](safe-docs.md) est uniquement disponible pour les utilisateurs ayant des licences Microsoft 365 E5 ou Microsoft 365 E5 Sécurité (non inclus dans les offres Microsoft Defender pour Office 365)
+- Microsoft Defender pour Office 365 Plan 1 et Defender pour Office 365 Plan 2 sont tous deux disponibles sous forme de modules complémentaires pour certains abonnements. Pour en savoir plus, voici un autre lien [Disponibilité des fonctionnalités pour les offres Microsoft Defender pour Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-- Si votre abonnement actuel n’inclut pas Microsoft Defender pour Office 365, [contactez le service ventes pour démarrer une version d’évaluation](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html), puis voyez comment Defender pour Office 365 peut fonctionner pour votre organisation.
+- La fonctionnalité [Documents sécurisés](safe-docs.md) est uniquement disponible pour les utilisateurs ayant des licences Microsoft 365 E5 ou Microsoft 365 E5 Sécurité (non inclus dans les offres Microsoft Defender pour Office 365)
+
+- Si votre abonnement actuel n’inclut pas Microsoft Defender pour Office 365 et que vous le souhaitez, [contactez le service commercial pour commencer une version d’évaluation](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html) et découvrez comment Microsoft Defender pour Office 365 peut fonctionner dans votre organisation.
+
+- Les clients Microsoft Defender pour Office 365 P2 ont accès à **l’intégration Microsoft 365 Defender** pour détecter, examiner et répondre efficacement aux incidents et alertes.
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Configurer les stratégies de Microsoft Defender pour Office 365
 

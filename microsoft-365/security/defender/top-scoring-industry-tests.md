@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 6d617024f2a09b73b7b944fb34bd2f34d024d3c1
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: d4e4f9baaf67b921358f17dae16908bcf9fed401
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661056"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818263"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Test le plus élevé parmi les tests du secteur d’activité
 
@@ -35,7 +35,7 @@ Les technologies [Microsoft 365 Defender](https://www.microsoft.com/security/bus
 
 [Microsoft 365 Defender](microsoft-365-defender.md) est une suite de défense d’entreprise pré-et post-violation unifiée qui coordonne en natif la détection, la prévention, les examens et la réponse sur les points de terminaison, les identités, les messages électroniques et les applications pour fournir une protection intégrée contre les attaques sophistiquées.
 
-Microsoft 365 Defender réunit les fonctionnalités de [Microsoft Defender pour point de terminaison](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), [Microsoft Defender pour Office 365](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection), [Microsoft Defender pour Identity](https://azure.microsoft.com/features/azure-advanced-threat-protection/), [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection) et [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security) en une seule solution.
+Microsoft 365 Defender combine en une seule solution les fonctionnalités de [Microsoft Defender pour point de terminaison](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), [Microsoft Defender pour Office 365](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection), [Microsoft Defender pour Identity](https://azure.microsoft.com/features/azure-advanced-threat-protection/), [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection) et [Microsoft Defender for Cloud Apps](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security).
 
 ### <a name="mitre-demonstrated-real-world-detection-response-and-protection-from-advanced-attacks"></a>MITRE : détection, réponse et protection du monde réel prouvées contre les attaques avancées.
 
@@ -87,15 +87,23 @@ Le Test de sécurité d’entreprise se compose de trois parties : le Test de pr
 
 SE Labs teste un éventail de solutions utilisées par les produits et les services pour détecter et/ou protéger contre des attaques. Il inclut un logiciel de point de terminaison, des équipements réseau et des services cloud.
 
-- Protection de point de terminaison d’entreprise d’octobre – décembre 2020 : [Récompense AAA](https://selabs.uk/reports/enterprise-endpoint-protection-2020-q4/) <sup>**Le plus récent**</sup>
+- Rapport annuel 2020 – 2021 : [Prix AAA](https://selabs.uk/wp-content/uploads/2021/11/annual-report-2021.pdf) <sup>**dernière**</sup>
 
-    Le produit de protection Microsoft de nouvelle génération a arrêté toutes les attaques publiques et ciblées. Antivirus Microsoft Defender a réalisé ces bons résultats avec sa capacité de bloquer des URL malveillants, gérer des exploits et de classifier correctement des applications et des sites web légitimes.
+- Protection des points de terminaison pour les entreprises : octobre à décembre 2021 : [Prix AAA](https://selabs.uk/wp-content/uploads/2021/12/oct-dec-2021-enterprise.pdf)
 
-- Protection de point de terminaison d’entreprise de juillet – septembre 2020 : [Récompense AAA](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
+- Sécurité avancée pour les entreprises (PEPT) : Kaspersky : août à septembre 2021 : [Prix AAA](https://selabs.uk/wp-content/uploads/2021/12/AS-EDR-Kaspersky-EDR-2021-1.pdf)
 
-- Protection de point de terminaison d’entreprise d’avril – juin 2020 : [Récompense AAA](https://selabs.uk/reports/epp-ent-20q2-security-testing/)
+- Sécurité avancée pour les entreprises (PEPT) : Crowdstrike : août à septembre 2021 : [Prix AAA](https://selabs.uk/wp-content/uploads/2021/12/AS-EDR-Crowdstrike-Falcon-2021-1.pdf)
 
-- Protection de point de terminaison d’entreprise de janvier – mars 2020 : [Récompense AAA](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup> | [Analyse](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
+- Réponse aux violations (détection de notification d'échec de remise) : détection et réponse du réseau NSX VMware : août 2021 : [Prix AAA](https://selabs.uk/wp-content/uploads/2021/10/NDR-VMware-NSX-detection-2021-1.pdf)
+
+- Protection des points de terminaison pour les entreprises : juillet à septembre 2021 : [Prix AAA](https://selabs.uk/wp-content/uploads/2021/11/july-sept-2021-enterprise.pdf)
+
+- Réponse aux violations (protection) : protection et optique BlackBerry : juillet 2021 : [Prix AAA](https://selabs.uk/wp-content/uploads/2021/07/BRT-BlackBerry-Protect-protection-2021-1.pdf)
+
+- Protection des points de terminaison pour les entreprises : avril à juin 2021 : [Prix AAA](https://selabs.uk/wp-content/uploads/2021/07/apr-jun-2021-enterprise-1.pdf)
+
+- Protection des points de terminaison pour les entreprises : janvier à mars 2021 : [Prix AAA](https://selabs.uk/wp-content/uploads/2021/04/jan-mar-2021-enterprise.pdf) <sup>**Fichier PDF**</sup>
 
 ## <a name="endpoint-detection--response"></a>Détection et réponse des points de terminaison
 
