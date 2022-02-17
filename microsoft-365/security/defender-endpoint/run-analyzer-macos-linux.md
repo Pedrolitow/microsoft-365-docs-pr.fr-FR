@@ -18,14 +18,15 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e79ccf29695f0bc74c75cf12d617e273d974b24b
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 087e7ff666ddcad02b5ead5ab62b483e60541a90
+ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213684"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62859276"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Exécuter l’analyse du client sur macOS ou Linux
+
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -35,7 +36,7 @@ ms.locfileid: "62213684"
 1. Téléchargez [l’outil Analyseur client XMDE](https://aka.ms/XMDEClientAnalyzer) sur l’ordinateur macOS ou Linux que vous devez examiner.
 
    > [!NOTE]
-   > Le hachage SHA256 actuel de « XMDEClientAnalyzer.zip » qui est téléchargé à partir du lien ci-dessus est : '34C0DA20A6B38A16951394958991CD74EF7E07EB1DE06923547B351665A32DF6'.
+   > Le hachage SHA256 actuel de « XMDEClientAnalyzer.zip » qui est téléchargé à partir du lien ci-dessus est : 'AA6E73A5F451C3B78B066C9D55EE6499CE3C2F1A6E05CCE691A6055F36F93A3B'.
 
 2. Extrayez le contenu du XMDEClientAnalyzer.zip sur l’ordinateur.
 
@@ -83,7 +84,7 @@ Aide supplémentaire sur la syntaxe :
 \# Afficher le message d’aide
 
 **performance** \# Performances<br>
-\# Collecte un suivi complet pour l’analyse d’un problème de performances qui peut être reproduit à la demande. Utilisation `--length=<seconds>` pour spécifier la durée du critère.
+\# Collecte un suivi complet pour l’analyse d’un problème de performances qui peut être reproduit à la demande. Utilisation pour `--length=<seconds>` spécifier la durée du critère.
 
 **-o** \# Sortie<br>
 \# Spécifier le chemin d’accès de destination pour le fichier de résultats
@@ -122,7 +123,7 @@ Aide supplémentaire sur la syntaxe :
 
 - Health.txt
 
-  Description : sortie d’état d’état de base affichée lors de l’exécution de la *commande d’état d’état mdatp.*
+  Description : sortie d’état d’état de base affichée lors de l’exécution de la *commande d’état d’état mdatp* .
 
 - Events.xml
 

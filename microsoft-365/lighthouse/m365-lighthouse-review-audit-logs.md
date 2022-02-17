@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment consulter les journaux d’audit.
-ms.openlocfilehash: 2044e61430ef26cf671340c02363658d54414f3b
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 69eb057c0b6a7daf835ec613b7d386e1a7fbfbaa
+ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767483"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62859240"
 ---
 # <a name="review-audit-logs"></a>Examiner les journaux d’audit
 
@@ -34,58 +34,58 @@ Microsoft 365 Lighthouse journaux d’audit enregistrent les actions qui génèr
 
 Pour afficher les journaux d’audit, vous devez avoir l’une des autorisations suivantes :
 
-- Azure AD - Administrateur général du client partenaire
+- Azure Active Directory (Azure AD) : administrateur général du client partenaire
 
-- Rôle de l’Centre partenaires - Agent d’administration
+- Rôle de l’Centre partenaires Microsoft - Agent d’administration
 
-## <a name="review-logs"></a>Consulter les journaux
+## <a name="review-audit-logs"></a>Examiner les journaux d’audit
 
 1. Dans le volet de navigation de gauche de l’écran, sélectionnez **Journaux d’audit**.
 
     > [!NOTE]
     > L’accès aux nouveaux journaux peut prendre jusqu’à 1 heure. Go to the respective service to see the most recent changes.
 
-2. Pour filtrer les journaux, affinez la liste à l’aide des options suivantes :
+2. Filtrez les journaux, si nécessaire, en utilisant les options suivantes :
 
     - **Plage de dates** : mois, semaine ou jour précédents.
     - **Clients : balises** de client ou noms de clients.
-    - **Activité** : Microsoft 365 type d’activité qui correspond à l’action entreprise. Pour plus d’informations, voir le tableau Types d’activité.
+    - **Activité** : Microsoft 365 type d’activité qui correspond à l’action entreprise. Pour plus d’informations, voir [le tableau Activités](#activities) .
     - **Initiée par** - Qui l’action.
 
 3. Sélectionnez un journal dans la liste pour voir tous les détails, y compris le **corps de la** demande.
 
-**Sélectionnez Exporter** pour exporter les données du journal dans un fichier de valeurs séparées par des virgules (.csv).
+    Pour exporter les données du journal vers un fichier de valeurs séparées par des virgules (.csv), sélectionnez **Exporter**.
 
-## <a name="activity-types"></a>Types d’activité
+## <a name="activities"></a>Activités
 
-Le tableau suivant est une liste des types d’activité capturés dans les journaux d’audit de la sécurité. La liste est sujette à modification à mesure que de nouvelles actions sont créées. Vous pouvez utiliser la valeur d’activité du journal d’audit pour voir quelle action a été lancée.
+Le tableau suivant répertorie les activités capturées dans les journaux d’audit de la sécurité. La liste est sujette à modification à mesure que de nouvelles actions sont créées. Vous pouvez utiliser l’activité répertoriée dans le journal d’audit pour voir quelle action a été lancée.<br><br>
 
-| Nom de l’activité    | Zone dans Microsoft 365 Lighthouse | Action initiée  | Service impacté           |
-|------------------|----------------------------------|-------------------|----------------------------|
-|**apply**                                   | Clients                          | Appliquer un plan de déploiement                                           | Azure AD, Microsoft Endpoint Manager                   |
-|**assignTag**                                | Clients                          | Appliquer une balise à partir d’un client                                      | Microsoft 365 Lighthouse   |
-|**changeDeploymentStatus**                   | Clients                          | État du plan d’action pour le plan de déploiement                        | Microsoft 365 Lighthouse   |
-|**offboardTenant**                            | Clients                          | Désactiver un client                                          | Microsoft 365 Lighthouse   |
-|**resetTenantOnboardingStatus**              | Clients                          | Réactive d’un client                                              | Microsoft 365 Lighthouse   |
-|**tenantTags**                               | Clients                          | Créer ou supprimer une balise                                           | Microsoft 365 Lighthouse   |
-|**tenantCustomizedInformation**              | Clients                          | Créer, mettre à jour ou supprimer des informations de contact ou de site web client | Microsoft 365 Lighthouse   |
-|**unassignTag**                              | Clients                          | Supprimer une balise d’un client                                    | Microsoft 365 Lighthouse   |
-| **blockUserSignin**                          | Utilisateurs                            | Bloquer la sign-in                                                     | Azure AD                   |
-| **confirmUsersCompromised**                  | Utilisateurs                            | Confirmer que l’utilisateur a été compromis                                        | Azure AD                   |
-| **dismissUsersRisk**                         | Utilisateurs                            | Ignorer les risques pour l’utilisateur                                                | Azure AD                   |
-| **resetUserPassword**                        | Utilisateurs                            | Réinitialiser le mot de passe                                                   | Azure AD                   |
-| **setCustomerSecurityDefaultsEnabledStatus** | Utilisateurs                            | Activer l’mf avec paramètres de sécurité par défaut                               | Azure AD                   |
-|**restartDevice**                            | Appareils                          | Redémarrer                                                          | Microsoft Endpoint Manager |
-| **syncDevice**                               | Appareils                          | Synchronisation                                                             | Microsoft Endpoint Manager |
-| **rebootNow**                                | Gestion des menaces                | Redémarrage                                                           | Microsoft Endpoint Manager |
-| **reprovision**                              | Windows 365     | Nouvelle tentative d’approvisionnement                                               | Windows 365                |
-| **windowsDefenderScanFull**                  | Gestion des menaces                | Analyse complète                                                       | Microsoft Endpoint Manager |
-| **windowsDefenderScan**                      | Gestion des menaces                | Analyse rapide                                                       | Microsoft Endpoint Manager |
-| **windowsDefenderUpdateSignatures**          | Gestion des menaces                | Mettre à jour un antivirus                                                | Microsoft Endpoint Manager |
+| Nom de l’activité | Zone en île | Action initiée | Service impacté |
+|--|--|--|--|
+| **apply** | Clients | Appliquer un plan de déploiement | Azure AD, Microsoft Endpoint Manager (MEM) |
+| **assignTag** | Clients | Appliquer une balise à partir d’un client | Île |
+| **changeDeploymentStatus** | Clients | État du plan d’action pour le plan de déploiement | Île |
+| **offboardTenant** | Clients | Désactiver un client | Île |
+| **resetTenantOnboardingStatus** | Clients | Réactive d’un client | Île |
+| **tenantTags** | Clients | Créer ou supprimer une balise | Île |
+| **tenantCustomizedInformation** | Clients | Créer, mettre à jour ou supprimer un site web client ou des informations de contact | Île |
+| **unassignTag** | Clients | Supprimer une balise d’un client | Île |
+| **blockUserSignin** | Utilisateurs | Bloquer la sign-in | Azure AD |
+| **confirmUsersCompromised** | Utilisateurs | Vérifier qu’un utilisateur est compromis | Azure AD |
+| **dismissUsersRisk** | Utilisateurs | Ignorer les risques pour l’utilisateur | Azure AD |
+| **resetUserPassword** | Utilisateurs | Réinitialiser le mot de passe | Azure AD |
+| **setCustomerSecurityDefaultsEnabledStatus** | Utilisateurs | Activer l’authentification multifacteur (MFA) avec des paramètres de sécurité par défaut | Azure AD |
+| **restartDevice** | Appareils | Redémarrer | MEM |
+| **syncDevice** | Appareils | Synchronisation | MEM |
+| **rebootNow** | Gestion des menaces | Redémarrage | MEM |
+| **reprovision** | Windows 365 | Nouvelle tentative d’approvisionnement | Windows 365 |
+| **windowsDefenderScanFull** | Gestion des menaces | Analyse complète | MEM |
+| **windowsDefenderScan** | Gestion des menaces | Analyse rapide | MEM |
+| **windowsDefenderUpdateSignatures** | Gestion des menaces | Mettre à jour un antivirus | MEM |
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-Si vous avez besoin d’informations supplémentaires, vous pouvez utiliser l’API Microsoft Graph pour accéder à d’autres événements d’audit. Pour plus d’informations, voir [Vue d’ensemble de la gestion multi-locataires à l’aide de l’API Microsoft 365 Lighthouse client](/graph/managedtenants-concept-overview).
+Si vous avez besoin d’informations supplémentaires, utilisez l’API microsoft Graph pour accéder à d’autres événements d’audit. Pour plus d’informations, voir [Vue d’ensemble de la gestion multi-locataires à l’aide de l’API Microsoft 365 Lighthouse client](/graph/managedtenants-concept-overview).
 
 ## <a name="related-content"></a>Contenu associé
 

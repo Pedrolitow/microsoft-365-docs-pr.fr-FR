@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7e7d28a3904112380d2304ab9191ecfa0c5f5a3b
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: d4e8484f10f70d00b7db7422306ec625925d059d
+ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766559"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62825456"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -72,7 +72,7 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 |[Marquages dynamiques avec des variables](#dynamic-markings-with-variables).                                              | Canal actuel : 2010+ <br /><br> Canal mensuel des entreprises : 2010+ <br /><br> Semi-Annual Enterprise canal : 2102+ | 16.42+     | 2.42+ | 16.0.13328+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Attribuer des autorisations maintenant](encryption-sensitivity-labels.md#assign-permissions-now)                                 | Canal actuel : 1910+ <br /><br> Canal Entreprise mensuel : 1910+ <br /><br> Semi-Annual Enterprise canal : 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Permettre aux utilisateurs d’attribuer des autorisations : <br /> – Inviter les utilisateurs](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |Canal actuel : 2004+ <br /><br> Canal Entreprise mensuel : 2004+ <br /><br> Semi-Annual Enterprise canal : 2008+ | 16.35+   | En cours de révision   | En cours de révision         | En cours de révision                                                        |
-|[Audit de l’activité des utilisateurs liée à une étiquette](data-classification-activity-explorer.md)                      | Canal actuel : 2011+ <br /><br> Canal Entreprise mensuel : 2011+ <br /><br> Canal d’entreprise semestriel | 16.43+ | 2.46+ | 16.0.13628+ | Oui <sup>\*</sup>                                                        |
+|[Audit de l’activité des utilisateurs liée à une étiquette](#auditing-labeling-activities)                      | Canal actuel : 2011+ <br /><br> Canal Entreprise mensuel : 2011+ <br /><br> Canal d’entreprise semestriel | 16.43+ | 2.46+ | 16.0.13628+ | Oui <sup>\*</sup>                                                        |
 |[Demander aux utilisateurs d'appliquer une étiquette à leurs e-mails et documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Canal actuel : 2101+ <br /><br> Canal Entreprise mensuel : 2101+ <br /><br> Canal d’entreprise semestriel | 16.45+         | 2.47+ | 16.0.13628+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de types d’informations sensibles                    | Canal actuel : 2009+ <br /><br> Canal Enterprise mensuel : 2009+ <br /><br> Semi-Annual Enterprise canal : 2102+ | 16.44+ | En cours de révision | En cours de révision | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de classifieurs pouvant être formés                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2018+ | 16.49+ | En cours de révision | En cours de révision | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -102,7 +102,7 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 |[Permettre aux utilisateurs d’attribuer des autorisations : <br /> – Ne pas transférer](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Canal actuel : 1910+ <br /><br> Canal Entreprise mensuel : 1910+ <br /><br> Semi-Annual Enterprise canal : 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Oui               |
 |[Permettre aux utilisateurs d’attribuer des autorisations : <br /> – Chiffrer uniquement](encryption-sensitivity-labels.md#let-users-assign-permissions)  | Canal actuel : 2011+ <br /><br> Canal Entreprise mensuel : 2011+ <br /><br> Canal d’entreprise semestriel | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | Oui |
 |[Demander aux utilisateurs d'appliquer une étiquette à leurs e-mails et documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Canal actuel : 2101+ <br /><br> Canal Entreprise mensuel : 2101+ <br /><br> Canal d’entreprise semestriel | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Oui                |
-|[Audit de l’activité des utilisateurs liée à une étiquette](data-classification-activity-explorer.md) | Canal actuel : 2011+ <br /><br> Canal Entreprise mensuel : 2011+ <br /><br> Canal d’entreprise semi-annuel : 2202+ | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | Oui |
+|[Audit de l’activité des utilisateurs liée à une étiquette](#auditing-labeling-activities) | Canal actuel : 2011+ <br /><br> Canal Entreprise mensuel : 2011+ <br /><br> Canal d’entreprise semi-annuel : 2202+ | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | Oui |
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de types d’informations sensibles                    | Canal actuel : 2009+ <br /><br> Canal Enterprise mensuel : 2009+ <br /><br> Semi-Annual Enterprise canal : 2102+ | 16.44+ <sup>\*</sup>                    | En cours de révision           | En cours de révision               | Oui |
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de classifieurs pouvant être formés                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.49+ | En cours de révision           | En cours de révision               | Oui |
 |[Paramètres différents pour l’étiquette par défaut et l’étiquette obligatoire](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Oui |
@@ -422,6 +422,12 @@ Lorsque l’application Outlook ne prend pas en charge la désactivation de l’
 > Si vous avez configuré les paramètres avancés PowerShell **OutlookDefaultLabel** et **DisableMandatoryInOutlook** à l’aide des cmdlets [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) ou [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) :
 > 
 > Les valeurs que vous avez choisies pour ces paramètres PowerShell apparaissent dans l’assistant de stratégie d’étiquette et fonctionnent automatiquement pour les applications Outlook qui prennent en charge ces paramètres. Les autres paramètres avancés de PowerShell restent pris en charge pour le client d’étiquetage unifié Azure Information Protection uniquement.
+
+## <a name="auditing-labeling-activities"></a>Audit des activités d’étiquetage
+
+Pour plus d’informations sur les événements d’audit générés par les activités des étiquettes de sensibilité, consultez la section d’[activités des étiquettes de confidentialité](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) dans le [journal d’audit du Centre de conformité](search-the-audit-log-in-security-and-compliance.md).
+
+Ces informations d’audit sont visuellement représentées dans l’[ explorateur de contenu](data-classification-content-explorer.md) et l’[explorateur d’activités](data-classification-activity-explorer.md) pour vous aider à comprendre comment vos étiquettes de niveau de confidentialité sont utilisées et où se trouve ce contenu étiqueté.
 
 ## <a name="end-user-documentation"></a>Documentation de l’utilisateur final
 
