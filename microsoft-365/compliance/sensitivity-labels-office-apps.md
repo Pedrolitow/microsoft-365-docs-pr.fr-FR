@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d4e8484f10f70d00b7db7422306ec625925d059d
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.openlocfilehash: efd28dbe00960c2644c476f6cd689c79385eed9d
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62825456"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879215"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -408,26 +408,26 @@ Pour l’étiquetage intégré, identifiez les versions minimales d’Outlook qu
 
 Lorsque l’application Outlook prend en charge un paramètre d’étiquette par défaut différent du paramètre d’étiquette par défaut des documents :
 
-- Dans l’assistant de stratégie d’étiquette, à la page **Appliquer une étiquette par défaut aux e-mails**, vous pouvez spécifier votre choix d’étiquette de confidentialité qui s’appliquera à tous les e-mails sans étiquette, ou aucune étiquette par défaut. Ce paramètre est indépendant du paramètre **Appliquer cette étiquette par défaut aux documents** de la page précédente **Paramètres de stratégie pour les documents** de l’assistant.
+- Dans la configuration de la stratégie d’étiquette à partir du Centre de conformité Microsoft 365, dans la page **Appliquer une étiquette par défaut aux e-mails** : vous pouvez spécifier votre choix d’étiquette de confidentialité qui sera appliquée à tous les e-mails sans étiquette, ou aucune étiquette par défaut. Ce paramètre est indépendant du paramètre **Appliquer cette étiquette par défaut aux documents** dans la page de configuration précédente des **Paramètres de stratégie pour les documents**.
 
-Lorsque l’application Outlook ne prend pas en charge un paramètre d’étiquette par défaut différent du paramètre d’étiquette par défaut des documents : Outlook utilise toujours la valeur que vous spécifiez pour **Appliquer cette étiquette par défaut aux documents** à la page **Paramètres de stratégie pour les documents** page de l’assistant stratégie d’étiquette.
+Lorsque l’application Outlook ne prend pas en charge un paramètre d’étiquette par défaut différent du paramètre d’étiquette par défaut pour les documents : Outlook utilise toujours la valeur que vous spécifiez pour **Appliquer cette étiquette par défaut aux documents** dans la page de configuration de stratégie des **Paramètres de stratégie pour les documents**.
 
 Lorsque l’application Outlook prend en charge la désactivation de l’étiquetage obligatoire :
 
-- Dans l’assistant de stratégie d’étiquette, à la page **Paramètres de stratégie**, sélectionnez **Demander aux utilisateurs d’appliquer une étiquette à leurs e-mails ou documents**. Sélectionnez ensuite **Suivant** > **Suivant**, puis décochez la case **Demander aux utilisateurs d’appliquer une étiquette à leurs e-mails**. Laissez la case cochée si vous souhaitez que l’étiquetage obligatoire s’applique aux e-mails et aux documents.
+- Dans la configuration de la stratégie d’étiquette à partir du Centre de conformité Microsoft 365, dans la page **Paramètres de stratégie** : sélectionnez **Demander aux utilisateurs d’appliquer une étiquette à leurs e-mails ou documents**. Sélectionnez ensuite **Suivant** > **Suivant**, puis décochez la case **Demander aux utilisateurs d’appliquer une étiquette à leurs e-mails**. Laissez la case cochée si vous souhaitez que l’étiquetage obligatoire s’applique aux e-mails et aux documents.
 
 Lorsque l’application Outlook ne prend pas en charge la désactivation de l’étiquetage obligatoire : si vous sélectionnez **Demander aux utilisateurs d’appliquer une étiquette à leurs e-mails ou documents** en tant que paramètre de stratégie, Outlook invite toujours les utilisateurs à sélectionner une étiquette pour les e-mails sans étiquette.
 
 > [!NOTE]
 > Si vous avez configuré les paramètres avancés PowerShell **OutlookDefaultLabel** et **DisableMandatoryInOutlook** à l’aide des cmdlets [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) ou [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) :
 > 
-> Les valeurs que vous avez choisies pour ces paramètres PowerShell apparaissent dans l’assistant de stratégie d’étiquette et fonctionnent automatiquement pour les applications Outlook qui prennent en charge ces paramètres. Les autres paramètres avancés de PowerShell restent pris en charge pour le client d’étiquetage unifié Azure Information Protection uniquement.
+> Les valeurs que vous avez choisies pour ces paramètres PowerShell sont reflétées dans la configuration de la stratégie d’étiquette dans le Centre de conformité, et elles fonctionnent automatiquement pour les applications Outlook qui prennent en charge ces paramètres. Les autres paramètres avancés de PowerShell restent pris en charge pour le client d’étiquetage unifié Azure Information Protection uniquement.
 
 ## <a name="auditing-labeling-activities"></a>Audit des activités d’étiquetage
 
 Pour plus d’informations sur les événements d’audit générés par les activités des étiquettes de sensibilité, consultez la section d’[activités des étiquettes de confidentialité](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) dans le [journal d’audit du Centre de conformité](search-the-audit-log-in-security-and-compliance.md).
 
-Ces informations d’audit sont visuellement représentées dans l’[ explorateur de contenu](data-classification-content-explorer.md) et l’[explorateur d’activités](data-classification-activity-explorer.md) pour vous aider à comprendre comment vos étiquettes de niveau de confidentialité sont utilisées et où se trouve ce contenu étiqueté.
+Ces informations d’audit sont visuellement représentées dans l’[ explorateur de contenu](data-classification-content-explorer.md) et l’[explorateur d’activités](data-classification-activity-explorer.md) pour vous aider à comprendre comment vos étiquettes de niveau de confidentialité sont utilisées et où se trouve ce contenu étiqueté. Vous pouvez également créer des rapports personnalisés avec le logiciel SIEM (Security Information and Event Management) de votre choix lorsque vous [exportez et configurez les enregistrements du journal d’audit](export-view-audit-log-records.md).
 
 ## <a name="end-user-documentation"></a>Documentation de l’utilisateur final
 
