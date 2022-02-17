@@ -3,15 +3,15 @@
     - name: Présentation
       href: move-from-google-workspace-overview.md
     - name: Inscrivez-vous à Microsoft 365
-      href: /admin-overview/sign-up-for-office-365?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
+      href: /admin-overview/sign-up-for-office-365?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
     - name: Configurer Microsoft 365 pour la migration Google
       href: set-up-microsoft-365-forgoogle.md
     - name: Configurer des stratégies de sécurité pour les appareils Windows
-      href: ../setup/secure-win-10-pcs.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
+      href: ../setup/secure-win-10-pcs.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
     - name: Ajouter un domaine d’espace de travail Google
       href: add-google-domain.md
     - name: Installer les applications Office et Microsoft Teams
-      href: ../setup/install-applications.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
+      href: ../setup/install-applications.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
     - name: 'Migrer le courrier électronique, le calendrier et les contacts vers Microsoft 365'
       href: migrate-email.md
     - name: Connecter votre domaine à Microsoft 365

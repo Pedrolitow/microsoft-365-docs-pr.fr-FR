@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 01/06/2022
+ms.date: 02/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: ddaac75774c79ac946754cea5089507e0972fc98
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 570313132367ad591944d87959cff538cd5b75e8
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464917"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879227"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business-preview"></a>Didacticiels et simulations dans Microsoft Defender pour Entreprise (prévisualisation)
 
@@ -45,7 +45,7 @@ Le tableau suivant récapitule plusieurs scénarios à essayer pendant la prévi
 
 | Scénario  | Description  |
 |---------|---------|
-| Intégrer des appareils en utilisant un script local     | Dans Defender entreprise (prévisualisation), vous pouvez intégrer Windows 10 11 appareils à l’aide d’un script que vous téléchargez et exécutez sur chaque appareil. Le script crée une relation d’Azure Active Directory (Azure AD) et inscrit l’appareil avec Microsoft Intune. Pour plus d’informations, voir [Intégrer un appareil à l’aide d’un script local dans Defender for Business (prévisualisation).](mdb-onboard-devices.md#onboard-a-device-using-a-local-script-in-defender-for-business)         |
+| Intégrer des appareils en utilisant un script local     | Dans Defender entreprise (prévisualisation), vous pouvez intégrer Windows 10 11 appareils à l’aide d’un script que vous téléchargez et exécutez sur chaque appareil. Le script crée une relation d’Azure Active Directory (Azure AD) et inscrit l’appareil avec Microsoft Intune. Pour plus d’informations, voir [Appareils intégrés à l’aide d’un script local dans Defender for Business](mdb-onboard-devices.md#onboard-devices-using-a-local-script-in-defender-for-business).         |
 | Intégrer des appareils à l’aide Microsoft Intune     | Si vous utilisiez déjà Microsoft Intune avant d’obtenir Defender pour le point de terminaison, vous pouvez utiliser Microsoft Intune pour intégrer des appareils. Essayez d’intégrer des appareils macOS, iOS, Linux et Android avec Microsoft Intune. Pour en savoir plus, [consultez l’inscription des appareils Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
 | Modifier les stratégies de sécurité     | Si vous gérez vos stratégies de sécurité dans Defender for Business (prévisualisation), utilisez la page **configuration** de l’appareil pour afficher et modifier vos stratégies. Pour plus d’informations, voir [Afficher ou modifier des stratégies dans Microsoft Defender entreprise (prévisualisation).](mdb-view-edit-policies.md)        |
 | Exécuter une attaque simulée   | Plusieurs didacticiels et simulations sont disponibles dans Defender for Business (prévisualisation). Ces didacticiels et simulations sont conçus pour vous montrer comment les fonctionnalités de protection contre les menaces de Defender for Business (prévisualisation) peuvent fonctionner pour votre organisation. Pour essayer un ou plusieurs des didacticiels, consultez les didacticiels [recommandés pour Microsoft Defender pour Entreprise (prévisualisation).](#recommended-tutorials-for-defender-for-business)         |

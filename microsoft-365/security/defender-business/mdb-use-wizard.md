@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 02/08/2022
+ms.date: 02/16/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 1659925081a96b4122910319b5c0a294d007f0b9
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 26bf8e46ba79094f74fe542f932921d4f1c2a50d
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62465334"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879131"
 ---
 # <a name="use-the-wizard-to-set-up-microsoft-defender-for-business-preview"></a>Utiliser l’Assistant pour configurer Microsoft Defender entreprise (prévisualisation)
 
@@ -48,10 +48,13 @@ L’Assistant est conçu pour vous aider à configurer Defender pour Entreprise 
 
 2. **Configurer les notifications par courrier électronique**. Dans cette étape, vous déterminez qui doit recevoir des notifications par courrier électronique en cas de vulnérabilité détectée ou d’une nouvelle alerte. Les notifications par courrier électronique peuvent aider à informer votre équipe de sécurité, même si elle n’est pas à son bureau. [En savoir plus sur les notifications par courrier électronique](mdb-email-notifications.md). 
 
-3. **Intégrer et configurer Windows appareils.** Au cours de cette étape, vous pouvez intégrer rapidement les appareils Windows de votre organisation à Defender for Business. L’intégration immédiate d’appareils permet de protéger ces appareils dès le premier jour. [En savoir plus sur l’intégration d’appareils](mdb-onboard-devices.md).
+3. **Intégrer et configurer Windows appareils.** Au cours de cette étape, vous pouvez intégrer rapidement les appareils Windows de votre organisation à Defender for Business. L’intégration immédiate d’appareils permet de protéger ces appareils dès le premier jour. 
 
-   - Si vous utilisez déjà Microsoft Endpoint Manager (qui inclut Microsoft Intune), vous êtes invité à utiliser l’intégration automatique, qui permet de mettre en place une connexion entre Endpoint Manager et Defender pour les entreprises, puis d’intégrer tous les appareils Windows inscrits Endpoint Manager. 
-   - Si vous n’utilisez pas déjà Endpoint Manager, vous pouvez utiliser l’intégration progressive d’appareils et choisir un ensemble d’appareils à intégrer à Defender for Business. 
+   - Si vous utilisez déjà Microsoft Intune (partie de Microsoft Endpoint Manager) et que votre organisation dispose d’appareils inscrits dans Endpoint Manager, vous êtes invité à utiliser l’intégration automatique pour une partie ou la plupart de vos appareils Windows inscrits. L’intégration automatique définit une connexion entre Endpoint Manager et Defender pour Entreprise, puis intègre Windows appareils à Defender pour Entreprise en toute transparence.
+
+   - Si vous n’utilisez pas déjà Endpoint Manager ou si vous avez des appareils non Windows inscrits dans Endpoint Manager, vous pouvez intégrer manuellement des appareils à Defender for Business (prévisualisation). 
+
+   - Voir [Appareils intégrés à Microsoft Defender pour Entreprises (prévisualisation).](mdb-onboard-devices.md)
    
 4. **Configurez vos stratégies de sécurité**. Defender pour les entreprises inclut des stratégies de sécurité par défaut qui peuvent être appliquées aux appareils de votre organisation. Ces stratégies par défaut utilisent les paramètres recommandés et sont conçues pour fournir une protection forte pour vos appareils. Toutefois, vous pouvez également créer vos propres stratégies de sécurité si vous le souhaitez. Et, si vous utilisez déjà Endpoint Manager, vous pouvez continuer à l’utiliser pour gérer vos stratégies de sécurité. 
 

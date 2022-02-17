@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 098ea7ee2934ac811035414b295a71012edc88e2
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 723dc6a70d9a8d37ef05cb301c41f0fea3911da9
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766907"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879143"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Nouveautés de Microsoft Defender pour Endpoint sur iOS
 
@@ -36,6 +36,10 @@ Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez
 ## <a name="improved-experience-on-supervised-ios-devices"></a>Expérience améliorée sur les appareils iOS supervisés
 
 Microsoft Defender pour Endpoint sur iOS dispose désormais d’une capacité spécialisée sur les appareils iOS/iPadOS supervisés, étant donné les fonctionnalités de gestion accrues fournies par la plateforme sur ces types d’appareils. Il peut également fournir une protection Web **sans configuration d’un VPN local sur l’appareil**. Cela offre aux utilisateurs finaux une expérience transparente tout en étant protégé contre le hameçonnage et d’autres attaques basées sur le web. Pour plus d’informations, consultez [cette documentation](ios-install.md#complete-deployment-for-supervised-devices)
+
+## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-app-store"></a>Microsoft Defender pour le point de terminaison est désormais Microsoft Defender dans l’App Store
+
+Microsoft Defender pour le point de terminaison est désormais disponible en **tant que Microsoft Defender** dans l’App Store. Avec cette mise à jour, l’application sera disponible en prévisualisation pour les **consommateurs de la région des États-Unis**. En fonction de la façon dont vous vous connectez à l’application avec votre compte personnel ou personnel, vous aurez accès aux fonctionnalités de Microsoft Defender pour point de terminaison ou aux fonctionnalités de Microsoft Defender pour les individus. Pour plus d’informations, [consultez ce blog](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals).
 
 ## <a name="threat-and-vulnerability-management"></a>Gestion des menaces et des vulnérabilités
 

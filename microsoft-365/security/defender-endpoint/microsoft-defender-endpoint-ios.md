@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3e0246160424e76d0ddce42b3dacf74c6b56e43c
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: c144eb3cd0cec2d96f20294475618e7e9c49c816
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765071"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879155"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender pour point de terminaison iOS
 
@@ -74,7 +74,7 @@ ms.locfileid: "62765071"
 
 **Configuration requise**
 
-- Appareil iOS exécutant iOS 12.0 et supérieur. Les iPads sont également pris en charge.
+- Appareil iOS exécutant iOS 12.0 et supérieur. Les iPads sont également pris en charge. *Notez qu’à compter du 31 mars-2022, la version iOS minimale prise en charge par Microsoft Defender pour Endpoint sera iOS 13.0.*
 
 - L’appareil est inscrit auprès de [l’application Portail d'entreprise Intune ou](https://apps.apple.com/us/app/intune-company-portal/id719171358) est inscrit auprès Azure Active Directory via [Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458) avec le même compte.
 

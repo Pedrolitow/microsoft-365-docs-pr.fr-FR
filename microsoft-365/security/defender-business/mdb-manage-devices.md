@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 02/09/2022
+ms.date: 02/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 143617fc3669b4a531bafe7fbbb9f2919a9ab295
-ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
+ms.openlocfilehash: 498fa3824ec1e022cbf0abcb0c7789e5e236262e
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62520510"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879191"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business-preview"></a>Gérer les appareils dans Microsoft Defender pour Entreprises (prévisualisation)
 
@@ -73,9 +73,9 @@ Voir [Appareils intégrés à Microsoft Defender pour Entreprises (prévisualisa
 
 ## <a name="offboard-a-device"></a>Hors-carte d’un appareil
 
-Voir [Offboard a device](mdb-onboard-devices.md#what-if-i-want-to-offboard-a-device).
+Voir [Laboarding d’un appareil](mdb-onboard-devices.md#offboarding-a-device).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Afficher et gérer les incidents dans Microsoft Defender entreprise (prévisualisation)](mdb-view-manage-incidents.md)
 
