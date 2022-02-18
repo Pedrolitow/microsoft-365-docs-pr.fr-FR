@@ -17,21 +17,21 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware opéré par l'homme, ransomware opéré par l'homme, HumOR, attaque d'extorsion, attaque de ransomware, cryptage, cryptovirologie, zero trust
 description: Utilisez l’accès contrôlé aux dossiers, MIP, DLP et Microsoft Defender for Cloud Apps pour protéger vos Microsoft 365 sensibles.
-ms.openlocfilehash: 4d6218ef32b10f99fcd1836444add49a7c4cb40c
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e5973373b9a831a8abaf8356866524c6c0639224
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110042"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886989"
 ---
 # <a name="step-5-protect-information"></a>Étape 5 : Vérifier les informations
 
 Étant donné que les attaquants par rançongiciel vont également examiner vos données sur site situées sur des fichiers, des bases de données et d’autres types de serveurs, l’une des meilleures façons de protéger ces données consiste à les migrer vers votre client Microsoft 365. Une fois à cet emplacement, ils peuvent être protégés par des fonctionnalités intégrées d’atténuation et de récupération telles que le [contrôle de version, la corbeille et restauration de fichiers](ransomware-protection-microsoft-365.md#ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365).
 
-Pour fournir une protection supplémentaire de vos informations sensibles dans votre client Microsoft 365 :
+Pour fournir une protection supplémentaire des informations sensibles dans votre client Microsoft 365 client :
 
 - Localisez vos informations sensibles.
-- Implémentez des autorisations strictes et éliminez l’accès large (par exemple, trop d’utilisateurs ayant des capacités d’écriture, de modification et de suppression).
+- Implémenter des autorisations strictes et éliminer l’accès large (par exemple, empêcher un trop grand nombre d’utilisateurs d’avoir des capacités d’écriture, de modification et de suppression).
 - Protégez vos informations sensibles.
 
 >[!Note]
@@ -54,17 +54,17 @@ Pour chaque type d’informations sensibles, déterminez les informations suivan
 - Son emplacement actuel, tel qu’un dossier OneDrive ou SharePoint ou un lieu de collaboration tel qu’une équipe Microsoft Teams
 - Les autorisations actuelles, qui comportent :
 
-   - Comptes d’utilisateurs y ayant accès
+   - Comptes d’utilisateurs qui disposent de l’accès
 
-   - Actions autorisées pour chaque compte y ayant accès
+   - Actions autorisées pour chaque compte qui dispose de l’accès 
 
 ## <a name="implement-strict-permissions-for-locations-with-sensitive-information"></a>Implémenter des autorisations strictes pour les emplacements avec des informations sensibles
 
-L’utilisation d’autorisations strictes au sein de votre client Microsoft 365 est le principe de privilège minimum pour les emplacements et les lieux de communication, qui, dans Microsoft 365, sont généralement des dossiers OneDrive, des sites et des dossiers SharePoint, et des équipes. 
+L’implémentation d’autorisations strictes au sein de votre client Microsoft 365 utilise le principe du privilège minimum pour les emplacements et les lieux de communication, qui, dans Microsoft 365, sont généralement des dossiers OneDrive, des sites SharePoint et des dossiers et des équipes. 
 
 Bien qu’il soit plus facile de créer des emplacements de stockage de fichiers ou des équipes avec un large accès (par exemple, la valeur par défaut de tous les membres de votre organisation), pour les informations sensibles, les comptes d’utilisateurs autorisés et les actions autorisées doivent être limités à l’ensemble minimum requis pour répondre aux besoins de collaboration et d’entreprise.
 
-Une fois qu’un attaquant par rançongiciel a infiltré votre client, il tente d’escalader ses privilèges en compromettant les informations d’identification des comptes d’utilisateur avec une étendue plus large d’autorisations sur votre client, telles que les comptes de rôle d’administrateur ou les comptes d’utilisateur qui ont accès à des informations sensibles. 
+Une fois qu’un pirate de rançongiciel a infiltré votre client, il tente d’escalader ses privilèges en compromettant les informations d’identification des comptes d’utilisateur avec des étendues d’autorisations plus larges sur votre client, telles que les comptes de rôle d’administrateur ou les comptes d’utilisateur qui dispose d’un accès à des informations sensibles. 
 
 En fonction de ce comportement d’attaquant classique, il existe deux niveaux de difficulté pour la personne malveillante :
 
@@ -80,11 +80,11 @@ Vous pouvez garantir des autorisations strictes dans votre client à l’aide de
 3. Gérez les modifications pour vos utilisateurs afin que des emplacements futurs pour les informations sensibles soient créés et maintenus avec des autorisations strictes.
 4. Auditez et surveillez les emplacements pour les informations sensibles afin de vous assurer que des autorisations étendues ne sont pas accordées.
 
-Voir [Configurer la collaboration sécurisée avec Microsoft 365 et Microsoft Teams](setup-secure-collaboration-with-teams.md) pour obtenir des instructions détaillées. Un exemple de lieu de communication et de collaboration avec des autorisations strictes pour les informations sensibles est une [équipe avec isolation de la sécurité](/microsoft-365/solutions/secure-teams-security-isolation).
+Pour obtenir des instructions détaillées, voir [Configurer le partage de fichiers sécurisé et la collaboration avec Microsoft Teams](setup-secure-collaboration-with-teams.md). Un exemple de lieu de communication et de collaboration avec des autorisations strictes pour les informations sensibles est une [équipe avec isolation de la sécurité](/microsoft-365/solutions/secure-teams-security-isolation).
 
 ## <a name="protect-your-sensitive-information"></a>Protéger vos informations sensibles
 
-Pour protéger vos informations sensibles au cas où un pirate par rançongiciel y aurait accès :
+Pour protéger vos informations sensibles au cas où un pirate de rançongiciel y aurait accès :
 
 - Utilisez [l’accès contrôlé aux dossiers](/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) pour rendre plus difficile pour les applications non autorisées de modifier des données dans des dossiers contrôlés.
 
@@ -100,13 +100,13 @@ Les modifications administratives apportées aux autorisations étendues peuvent
 
 En outre, pour la protection des informations sensibles dans votre client Microsoft 365, formez vos utilisateurs à :
 
-- Créer des lieux de communication et de collaboration avec des autorisations strictes (l’ensemble minimal de comptes d’utilisateurs pour l’accès et les actions minimales autorisées pour chacun d’eux). 
+- Créez des lieux de communication et de collaboration avec des autorisations strictes (l’ensemble minimal de comptes d’utilisateurs pour l’accès et les actions minimales autorisées pour chaque compte). 
 - Appliquer les étiquettes de niveau de confidentialité correctes aux informations sensibles.
 - Évaluer l’accès contrôlé aux dossiers.
 
 ## <a name="resulting-configuration"></a>Configuration résultante
 
-Voici la protection contre les rançongiciels de votre client pour les étapes 1 à 5.
+Voici la protection contre les rançongiciels pour votre client pour les étapes 1 à 5.
 
 ![Protection contre les rançongiciels pour votre client Microsoft 365 après l’étape 5](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step5.png)
 
@@ -119,6 +119,7 @@ Informations clés de Microsoft :
 - [Se protéger rapidement contre les rançongiciels et les attaques](/security/compass/protect-against-ransomware)
 - [Rapport de défense numérique Microsoft 2021](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (voir les pages 10 à 19)
 - [Rançongiciel : rapport d’analyses sur les menaces constantes et omniprésentes](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) dans le portail Microsoft 365 Defender
+- [Approche et meilleurs pratiques](/security/compass/incident-response-playbook-dart-ransomware-approach) et [étude de cas](/security/compass/dart-ransomware-case-study) sur les rançongiciels de l’équipe de détection et d’intervention (DART) de Microsoft
 
 Microsoft 365 :
 
@@ -128,7 +129,6 @@ Microsoft 365 :
 - [Protéger votre PC Windows 10 contre les rançongiciels](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Gérer les rançongiciels dans SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 - [Rapports d’analyse sur les menaces pour les rançongiciels](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) dans le portail Microsoft 365 Defender
-
 
 Microsoft 365 Defender :
 
