@@ -19,22 +19,22 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: travail à domicile, travail domicile-travail, travail hybride, travail à distance, travail hybride, employés à distance, connectivité hybride, accès à distance, télécommunications, télétravail, télétravail, travail mobile, travail à distance, travail à distance, travail en tout lieu, travail flexible
 description: Traversez les couches d’infrastructure pour que vos travailleurs hybrides accèdent aux ressources locales et Microsoft 365 en toute sécurité.
-ms.openlocfilehash: 3eb70d99e44f296144ea9fa9c79ffd41475888ef
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 0370d30584021ab8560a24c7e54e3a7c7aadeb1f
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61871910"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886253"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Configurez votre infrastructure pour le travail hybride avec Microsoft 365
 
-Pour sécuriser et optimiser la productivité et la collaboration de vos employés, vous devez permettre aux travailleurs sur site et à distance d’accéder facilement et en toute sécurité aux informations, outils et ressources locaux et cloud de votre organisation. Cette solution prévoit le déploiement de couches d'infrastructure clés qui permettent à vos travailleurs de donner le meilleur d'eux-mêmes, où qu'ils soient.
+Pour sécuriser et optimiser la productivité et la collaboration de vos employés, vous devez autoriser les travailleurs sur site et distants à accéder facilement et en toute sécurité aux informations, outils et ressources locaux et basés sur le cloud de votre organisation. Cette solution prévoit le déploiement de couches d'infrastructure clés qui permettent à vos travailleurs de donner le meilleur d'eux-mêmes, où qu'ils soient.
 
 Les travailleurs hybrides peuvent travailler sur site ou à distance dans une combinaison d’emplacements. Permettre aux employés de travailler hors du bureau traditionnel est important pour de nombreuses organisations :
 
 - Embauchez et retenez des employés qui ne souhaitent pas se déplacer ou qui ont besoin d’un environnement de travail flexible.
 - Réduisez les déplacements des travailleurs, en leur laissant plus de temps pour être productifs et s’adonner à des activités qui réduisent le stress en dehors du travail.
-- Économisez sur l’espace de bureau.
+- Économisez de l’espace de bureau.
 
 Microsoft 365 offre les fonctionnalités permettant à vos travailleurs hybrides de travailler sur site ou à distance.
 
@@ -93,7 +93,7 @@ Pour activer les fonctionnalités de Microsoft 365 pour vos travailleurs hybride
 |Windows 365|Prendre en charge les travailleurs à distance qui peuvent uniquement utiliser leurs appareils personnels et non gérés avec des PC Windows 365 Cloud.|Nécessite un abonnement Azure payé séparément|
 |Bureau à distance |Autoriser les employés à se connecter à des ordinateurs Windows sur votre intranet.|Microsoft 365 E3 ou E5|
 |Passerelle des services Bureau à distance|Chiffrer les communications et empêcher les hôtes RDS d’être directement exposés à Internet.|Nécessite des licences Windows Server distinctes|
-|Microsoft Intune|Gérer les appareils et les applications.|Microsoft 365 E3 ou E5|
+|Microsoft Intune|Gérer les appareils et les applications.|Microsoft 365 E3 ou E5|
 |Configuration Manager|Gérer les installations, mises à jour et paramètres logiciels de vos appareils|Nécessite des licences de gestionnaire de configuration distinctes|
 |Analyse des points de terminaison|Déterminer la disponibilité des mises à jour de vos clients Windows.|Nécessite des licences de gestionnaire de configuration distinctes|
 |Windows Autopilot|Configurez et préconfigurez les nouveaux appareils Windows 11 ou 10 pour une utilisation productive.|Microsoft 365 E3 ou E5|

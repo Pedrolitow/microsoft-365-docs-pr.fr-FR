@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware opéré par l'homme, ransomware opéré par l'homme, HumOR, attaque d'extorsion, attaque de ransomware, cryptage, cryptovirologie, zero trust
 description: Utilisez des connexions sécurisées et l’accès conditionnel pour protéger vos ressources Microsoft 365 contre les attaques par rançongiciel.
-ms.openlocfilehash: 23a9833952aca745e869c13139823b4b0a9400bf
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 57fad156a4e7b97d3029c224059041d692224ed2
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60666685"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62887397"
 ---
 # <a name="step-3-protect-identities"></a>Étape 3. Protéger vos identités
 
@@ -42,7 +42,7 @@ Ensuite, implémentez les [Stratégies communes pour les identités et l’accè
 
 Pour les utilisateurs qui se connectent, ces stratégies sont les suivantes :
 
-- Exiger l’authentification multifacteur (MFA) pour les comptes prioritaires (immédiatement) et finalement tous les comptes d’utilisateurs.
+- Exiger l’authentification multifacteur (MFA) pour les [comptes prioritaires](/microsoft-365/admin/setup/priority-accounts) (immédiatement) et finalement tous les comptes d’utilisateurs.
 - Exiger l’utilisation de l’authentification multifacteur pour les connexions à risque élevé.
 - Exiger que les utilisateurs à risque élevé avec des connexions à risque élevé modifient leurs mots de passe.
 
@@ -50,7 +50,7 @@ Pour les utilisateurs qui se connectent, ces stratégies sont les suivantes :
 
 Utilisez les meilleures pratiques ci-après :
 
-- Implémentez le principe du [privilège minimum](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) et utilisez la protection par mot de passe comme décrit dans [Renforcer la sécurité de la connexion](#increase-sign-in-security) pour les comptes d’utilisateur qui utilisent encore des mots de passe pour leur connexion. 
+- Implémentez le principe des [privilèges minimum](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) et utilisez la protection par mot de passe comme décrit dans [Augmenter la sécurité de la connexion](#increase-sign-in-security) pour les comptes d’utilisateur qui utilisent encore des mots de passe pour leurs connexions. 
 - Évitez d’utiliser des comptes de service de niveau administrateur à l’échelle du domaine. 
 - Limitez les privilèges d’administration locaux pour restreindre l’installation de Chevaux de Troie autorisant un accès à distance (RAT) et d’autres applications indésirables.
 - Utilisez l’accès conditionnel Azure AD pour valider explicitement la confiance des utilisateurs et des stations de travail avant d’autoriser l’accès aux portails d’administration. Consultez [cet exemple](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management) pour le Portail Azure.
@@ -69,7 +69,7 @@ Vous devez sensibiliser les utilisateurs de votre organisation aux :
 
 ## <a name="resulting-configuration"></a>Configuration résultante
 
-Voici la protection pour votre client contre les rançongiciels concernant les étapes 1 à 3.
+Voici la protection contre les rançongiciels pour votre client pour les étapes 1 à 3.
 
 ![Protection contre les rançongiciels pour votre client Microsoft 365 après l’étape 3](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step3.png)
 

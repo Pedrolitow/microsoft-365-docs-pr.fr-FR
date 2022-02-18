@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilisez Microsoft Endpoint Manager pour gérer vos appareils de gestion, PC et autres points de terminaison.
-ms.openlocfilehash: 3d4a46a3513078b904afbe2b4f09642f338c8a81
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 03d212071db686079a76115d7cb94d2abb4cde88
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939429"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886413"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Étape 4 : déployer la gestion des points de terminaison pour vos appareils, PC et autres points de terminaison
 
@@ -30,7 +30,7 @@ Avec les travailleurs hybrides, vous devez prendre en charge un nombre croissant
 
 [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) fournit des services et des outils pour gérer les appareils mobiles, les ordinateurs de bureau, les machines virtuelles, les appareils intégrés et les serveurs, en combinant les services suivants, que vous connaissez et utilisez peut-être déjà.
 
-![Composants de gestion des points de terminaison pour Microsoft 365](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
+:::image type="content" source="../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png" alt-text="Composants de gestion des points de terminaison pour Microsoft 365" lightbox="../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png":::
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -38,9 +38,9 @@ Microsoft Intune est un service basé sur le cloud qui se concentre sur la gesti
 
 - **Gestion des périphériques mobiles (MDM) :** Pour les appareils appartenant à l’organisation, vous pouvez exercer un contrôle total, y compris les paramètres, les fonctionnalités et la sécurité. Les appareils sont « inscrits » dans Intune et reçoivent ses stratégies avec les règles et les paramètres. Par exemple, vous pouvez définir les critères de mot de passe et de code confidentiel, créer une connexion VPN, configurer la protection contre les menaces, et bien plus encore.
 
-- **Gestion des applications mobiles (MAM) :** les travailleurs distants ne souhaitent peut-être pas que vous disposiez d’un contrôle total sur leurs appareils personnels, appelés également appareils Apportez votre propre appareil (BYOD). Vous pouvez fournir des options à vos travailleurs hybrides tout en continuant de protéger votre organisation. Par exemple, les employés peuvent inscrire leurs appareils s’ils veulent obtenir un accès total aux ressources de votre organisation. Vous pouvez également utiliser les stratégies de protection des applications qui requièrent l’authentification multifacteur (MFA) pour utiliser ces applications si ces utilisateurs souhaitent seulement accéder à la messagerie ou Microsoft Teams.
+- **GAM :** il est possible que les travailleurs à distance ne souhaitent pas que vous contrôliez complètement leurs appareils personnels, également appelés appareils Apportez votre propre appareil (BYOD). Vous pouvez fournir des options à vos travailleurs hybrides tout en continuant de protéger votre organisation. Par exemple, les employés peuvent inscrire leurs appareils s’ils veulent obtenir un accès total aux ressources de votre organisation. Vous pouvez également utiliser les stratégies de protection des applications qui requièrent l’authentification multifacteur (MFA) pour utiliser ces applications si ces utilisateurs souhaitent seulement accéder à la messagerie ou Microsoft Teams.
 
-Pour plus d’informations, consultez la solution de base[Gérer les points de terminaison avec Intune et Microsoft 365](manage-devices-with-intune-overview.md).
+Pour plus d’informations, voir la solution de fondation [Gérer les appareils avec Intune](manage-devices-with-intune-overview.md).
 
 ## <a name="configuration-manager"></a>Configuration Manager
 
@@ -58,17 +58,9 @@ Si vous souhaitez en savoir plus, consultez la page [Présentation de la cogesti
 
 ## <a name="endpoint-analytics"></a>Analyse des points de terminaison
 
-Endpoint Analytics est un service cloud qui s’intègre à Gestionnaire de configuration et vous fournit des informations et des informations pour vous permettre de prendre des décisions éclairées sur vos clients Windows. Elle combine des données de votre organisation à des données cumulées de millions d’autres appareils connectés aux services de cloud computing Microsoft. 
+Endpoint Analytics vise à améliorer la productivité des utilisateurs et à réduire les coûts de support informatique en fournissant des insights sur l’expérience utilisateur. Ces informations permettent au service informatique d'optimiser l'expérience de l'utilisateur final grâce à un support proactif, et de détecter les régressions de l'expérience utilisateur en évaluant l'impact des changements de configuration sur l'utilisateur.
 
-Avec Endpoint Analytics, vous pouvez :
-
-- Créez un inventaire des applications exécutées au sein de votre organisation.
-- Évaluer la compatibilité des applications avec les dernières mises à jour de fonctionnalités Windows 10.
-- Identifier les problèmes de compatibilité, puis recevoir des suggestions d’atténuation en fonction des analyses de données basées sur le cloud.
-- Créer des groupes pilotes représentant l’ensemble de l’application et du pilote dans un groupe minimal d’appareils.
-- Déployer Windows 10 sur des appareils pilotes et gérés en production.
-
-Pour plus d’informations, voir cette [vue d’ensemble de Endpoint Analytics](/mem/configmgr/desktop-analytics/overview)
+Pour plus d’informations, voir cette [vue d’ensemble de Endpoint Analytics](/mem/analytics/overview)
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 

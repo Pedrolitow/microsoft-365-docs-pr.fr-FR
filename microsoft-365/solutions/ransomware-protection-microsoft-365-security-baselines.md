@@ -2,7 +2,7 @@
 title: Étape 1. Configurer les lignes de base de sécurité
 author: JoeDavies-MSFT
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: josephd
 manager: dansimp
 audience: ITPro
@@ -10,15 +10,20 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
-  - Strat_O365_Enterprise
-  - ransomware
-  - m365solution-ransomware
+- M365-security-compliance
+- Strat_O365_Enterprise
+- ransomware
+- m365solution-ransomware
 ms.custom: seo-marvel-jun2020
-keywords: 'rançongiciel, rançongiciel géré par les humains, rançongiciel géré par l’homme, HumOR, attaque par extorsion, attaque par rançongiciel, chiffrement, cryptovirologie, zéro virus'
-description: "Utilisez les lignes de base de sécurité pour protéger vos ressources Microsoft\_365 contre les attaques par rançongiciel."
+keywords: rançongiciel, rançongiciel géré par les humains, rançongiciel géré par l’homme, HumOR, attaque par extorsion, attaque par rançongiciel, chiffrement, cryptovirologie, zéro virus
+description: Utilisez les lignes de base de sécurité pour protéger vos ressources Microsoft 365 contre les attaques par rançongiciel.
+ms.openlocfilehash: 66218d15a36faa510bd246b46dbc0dcd0f9948fb
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62887519"
 ---
-
 # <a name="step-1-configure-security-baselines"></a>Étape 1. Configurer les lignes de base de sécurité
 
 Pour contrer les attaques par rançongiciels, vous devez d’abord configurer les lignes de base de sécurité définies par Microsoft suivantes :
@@ -52,7 +57,7 @@ Ensuite, utilisez [des règles de réduction de la surface d'attaque](/microsoft
 
 Empêchez l’accès initial à votre client par une attaque basée sur la messagerie avec les paramètres Exchange de ligne de base de courrier :
 
-- Activez l’analyse de courrier par l’Antivirus Microsoft Defender.
+- Activez [Analyse de courrier par l’Antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus).
 - Utilisez Microsoft Defender pour Office 365 pour une [protection améliorée contre le hameçonnage](/microsoft-365/security/office-365-security/anti-phishing-protection) et une couverture contre les nouvelles menaces et les variantes polymorphes.
 - Vérifiez vos paramètres de filtrage de courrier Office 365 pour vous assurer que vous bloquez les e-mails usurpés, le courrier indésirable et les courriers avec des programmes malveillants. Utilisez Defender pour Office 365 pour une protection améliorée contre le hameçonnage et une couverture contre les nouvelles menaces et les variantes polymorphes. Configurez Defender pour Office 365 pour [revérifier les liens sur un clic](/microsoft-365/security/office-365-security/atp-safe-links) et [supprimer les e-mails remis](/microsoft-365/security/office-365-security/zero-hour-auto-purge) en réponse à la veille sur les menaces récemment acquise.
 - Examinez et mettez à jour les tous derniers  [paramètres recommandés pour la sécurité de Protection Exchange Online (EOP) et de Defender pour Office 365](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp).
@@ -62,7 +67,7 @@ Empêchez l’accès initial à votre client par une attaque basée sur la messa
 
 Appliquez les [lignes de base de sécurité](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) pour :
 
-- Microsoft Windows 10
+- Microsoft Windows 11 ou 10
 - Microsoft 365 Apps for enterprise
 - Microsoft Edge
 
@@ -74,7 +79,7 @@ En outre, les paramètres de ligne de base de courrier Exchange peuvent bloquer 
 
 ## <a name="resulting-configuration"></a>Configuration résultante
 
-Voici la protection pour votre client contre les rançongiciels après cette étape.
+Voici la protection contre les rançongiciels pour votre client après cette étape.
 
 ![Protection contre les rançongiciels pour votre client Microsoft 365 après l’étape 1](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step1.png)
 

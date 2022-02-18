@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilisez les services de sécurité et de conformité Microsoft 365 pour protéger vos applications, données et appareils destinés aux travailleurs hybrides.
-ms.openlocfilehash: e1a5c277f9b5f06313fc924756dc72dbf47fad78
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7c898a1ef588ce8eee553490eaa8f5dd452df9e0
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934720"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886389"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>Étape 3 : déployer la sécurité et la conformité pour les travailleurs hybrides
 
@@ -41,7 +41,7 @@ Le travail à distance nécessite les éléments suivants en matière de sécuri
 
 Voici les fonctionnalités de Microsoft 365 qui fournissent des services de sécurité et de conformité aux travailleurs hybrides.
 
-![Utilisez ces services Microsoft 365 pour maintenir votre sécurité et votre conformité.](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
+:::image type="content" source="../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png" alt-text="Utilisez ces services Microsoft 365 pour maintenir votre sécurité et votre conformité" lightbox="../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png":::
 
 ## <a name="security"></a>Sécurité
 
@@ -49,7 +49,7 @@ Protégez vos applications et données grâce aux fonctionnalités de sécurité
 
 |Fonctionnalité|Pourquoi en ai-je besoin ?|Licence|
 |---|---|---|
-|Microsoft Defender pour Office 365|Protégez vos applications et données Microsoft 365 (par exemple, messages électroniques, documents Office et outils de collaboration) contre les attaques. <p> Microsoft Defender pour Office 365 collecte et analyse les signaux de vos applications pour la détection, l’investigation et la correction des risques de sécurité, et protège votre organisation contre les menaces malveillantes posées par les courriers électroniques, les liens (URL) et les outils de collaboration. Il fournit également des outils automatisés d’évaluation et de configuration de la configuration des locataires pour des postures de sécurité standard et strictes.|Microsoft 365 E3 ou E5|
+|Microsoft Defender pour Office 365|Protégez vos applications et données Microsoft 365 (par exemple, messages électroniques, documents Office et outils de collaboration) contre les attaques. <p> Microsoft Defender pour Office 365 collecte et analyse les signaux de vos applications pour la détection, l’investigation et la correction des risques de sécurité, et protège votre organisation contre les menaces malveillantes posées par les courriers électroniques, les liens (URL) et les outils de collaboration. Il fournit également des outils automatisés d’évaluation et de configuration de la configuration des locataires pour des postures de sécurité standard et strictes.|Microsoft 365 E3 ou E5|
 |Protection contre les programmes malveillants|‎Les antivirus Microsoft Defender et Device Guard fournissent une protection contre les programmes malveillants basée sur l’appareil. <p> SharePoint‎ Online analyse automatiquement les chargements de fichiers pour détecter les programmes malveillants connus. <p> Exchange Online Protection‎ (‎EOP‎) sécurise les boîtes aux lettres cloud.|Microsoft 365 E3 ou E5|
 |Microsoft Defender pour point de terminaison|Protégez les appareils de votre organisation contre les cyber-menaces et les violations de données. Détectez, examinez et répondez aux menaces avancées.|Microsoft 365 E5|
 |Defender for Cloud Apps|Protégez vos services cloud (Microsoft 365 et autres applications SaaS) contre les attaques.|Microsoft 365 E5 licences Defender for Cloud Apps individuelles ou individuelles|
@@ -90,7 +90,7 @@ Pour vos travailleurs hybrides, vous avez implémenté :
   - Protection contre les programmes malveillants pour les données de service cloud, la messagerie électronique et les appareils Windows 11 ou 10
 - Conformité
   - Étiquetage cohérent pour les niveaux de confidentialité et de protection
-  - Stratégies de prévention des fuites d’informations
+  - Stratégies pour empêcher la fuite d’informations
   - Respect des réglementations régionales relatives aux données
 
 ## <a name="next-step"></a>Étape suivante
