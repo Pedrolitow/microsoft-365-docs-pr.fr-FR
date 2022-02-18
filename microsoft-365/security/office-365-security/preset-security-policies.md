@@ -16,12 +16,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et stricts aux fonctionnalités de protection d’Exchange Online Protection (EOP) et de Microsoft Defender pour Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9c101b63d0d6839ae0406c738268ed653292575f
-ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
+ms.openlocfilehash: ff81eea4232693662a907695ea0cef0d94941ac6
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62487454"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62887253"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Stratégies de sécurité prédéfini dans EOP et Microsoft Defender pour Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "62487454"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Les stratégies de sécurité prédéfinisées fournissent un emplacement centralisé pour l’application de toutes les stratégies recommandées de courrier indésirable, de programmes malveillants et de hameçonnage aux utilisateurs à la fois. Les paramètres de stratégie ne sont pas configurables. Au lieu de cela, elles sont définies par nous et sont basées sur nos observations et expériences dans les centres de données pour trouver un équilibre entre le fait de conserver du contenu dangereux à l’écart des utilisateurs et d’éviter les interruptions inutiles.
 
@@ -63,10 +63,7 @@ Un profil détermine le niveau de protection. Les profils suivants sont disponib
 
   Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
 
-- **Protection intégrée** (Defender pour Office 365 uniquement) : profil qui active la protection Coffre liens et Coffre pièces jointes uniquement. Ce paramètre fournit effectivement des stratégies par défaut pour Coffre liens et Coffre pièces jointes, qui n’ont jamais eu de stratégies par défaut.
-
-  > [!NOTE]
-  > La **stratégie de sécurité prédéfinies de protection** intégrée est actuellement en disponibilité générale, disponible pour toutes les organisations.
+- **Protection intégrée** (Defender pour Office 365 uniquement) : profil qui active la protection Coffre liens et Coffre pièces jointes uniquement. Ce profil fournit effectivement des stratégies par défaut pour Coffre liens et Coffre pièces jointes, qui n’ont jamais eu de stratégies par défaut.
 
   Pour **la protection intégrée**, la stratégie de sécurité prédéfinit est par défaut pour tous les utilisateurs de Defender Office 365 client. Bien que nous ne le recommandions pas, vous pouvez également configurer des exceptions basées sur les utilisateurs  **, les** groupes et les domaines afin que la protection ne soit pas appliquée à des utilisateurs spécifiques.
 
@@ -125,7 +122,7 @@ Par exemple, si un paramètre de sécurité existe dans la **Protection standard
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
-  **Remarque** : l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux _utilisateurs les_ autorisations et autorisations requises pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  **Remarque** : l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux _utilisateurs les_ autorisations et autorisations requises pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users"></a>Utiliser le portail Microsoft 365 Defender pour affecter des stratégies de sécurité standard et stricte aux utilisateurs
 

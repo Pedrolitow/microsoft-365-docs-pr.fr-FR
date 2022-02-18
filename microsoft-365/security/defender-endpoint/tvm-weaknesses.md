@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12ee0e4464383bb634605ab6553485e1a946c003
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 23b0235382e748071f0d8e060e15624b5332326d
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936991"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62887305"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnérabilités dans mon organisation : Gestion des menaces et des vulnérabilités
 
@@ -45,13 +45,13 @@ La page **Faiblesses** répertorie les vulnérabilités logicielles que vos appa
 > Si aucun ID CVE officiel n’est affecté à une vulnérabilité, le nom de la vulnérabilité est attribué par Gestion des menaces et des vulnérabilités.
 
 > [!TIP]
-> Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour endpoint](configure-vulnerability-email-notifications.md)
+> Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir [Configurer les notifications par courrier électronique de vulnérabilité dans Microsoft Defender pour endpoint](configure-vulnerability-email-notifications.md)
 
 ## <a name="navigate-to-the-weaknesses-page"></a>Accéder à la page Faiblesses
 
 Accédez à la page Faiblesses de différentes manières :
 
-- Sélection des **faiblesses dans le** menu de **navigation** gestion des vulnérabilités dans le portail [Microsoft 365 Defender] (portal-overview.md)
+- Sélection des **faiblesses dans le** menu **de navigation gestion** des vulnérabilités dans [le portail Microsoft 365 Defender](portal-overview.md)
 - Recherche globale
 
 ### <a name="navigation-menu"></a>Menu de navigation
@@ -61,15 +61,15 @@ Go to the **Vulnerability management** navigation menu and select **Weaknesses**
 ### <a name="vulnerabilities-in-global-search"></a>Vulnérabilités dans la recherche globale
 
 1. Go to the global search drop-down menu.
-2. Sélectionnez **Vulnérabilité et** clé dans l’ID CVE (Common Vulnerabilities and Exposures) que vous recherchez, puis sélectionnez l’icône de recherche. La page **Faiblesses** s’ouvre avec les informations CVE que vous recherchez.
+2. **Sélectionnez Vulnérabilité et** clé dans l’ID CVE (Common Vulnerabilities and Exposures) que vous recherchez, puis sélectionnez l’icône de recherche. La page **Faiblesses** s’ouvre avec les informations CVE que vous recherchez.
 ![Zone de recherche globale avec l’option « vulnérabilité » sélectionnée et un exemple CVE.](images/tvm-vuln-globalsearch.png)
 3. Sélectionnez la CVE pour ouvrir un panneau volant avec plus d’informations, notamment la description de la vulnérabilité, les détails, les informations sur les menaces et les appareils exposés.
 
-Pour voir le reste des vulnérabilités dans la page **Faiblesses,** tapez CVE, puis sélectionnez rechercher.
+Pour voir le reste des vulnérabilités dans la page **Faiblesses** , tapez CVE, puis sélectionnez rechercher.
 
 ## <a name="weaknesses-overview"></a>Vue d’ensemble des faiblesses
 
-Corriger les vulnérabilités des appareils exposés afin de réduire les risques pour vos ressources et votre organisation. Si la **colonne Appareils** exposés affiche 0, cela signifie que vous n’êtes pas en danger.
+Corriger les vulnérabilités des appareils exposés afin de réduire les risques pour vos ressources et votre organisation. Si la **colonne Appareils exposés affiche** 0, cela signifie que vous n’êtes pas en danger.
 
 ![Page d’accueil des faiblesses.](images/tvm-weaknesses-overview.png)
 
@@ -78,7 +78,7 @@ Corriger les vulnérabilités des appareils exposés afin de réduire les risque
 Affichez les informations sur les violations et menaces associées dans la colonne **Menace** lorsque les icônes sont colorées en rouge.
 
  > [!NOTE]
- > Toujours hiérarchiser les recommandations associées aux menaces en cours. Ces recommandations sont marquées avec l’icône d’informations sur les menaces ![ Simple dessin d’un bogue rouge.](images/tvm_bug_icon.png) et l’icône d’informations sur la violation, dessin ![ simple d’une flèche qui atteint une cible. ](images/tvm_alert_icon.png) .
+ > Toujours hiérarchiser les recommandations associées aux menaces en cours. Ces recommandations sont marquées avec l’icône d’informations sur les ![menaces Simple dessin d’un bogue rouge.](images/tvm_bug_icon.png) et l’icône d’informations sur la ![violation, dessin simple d’une flèche qui atteint une cible](images/tvm_alert_icon.png).
 
 L’icône Informations sur les violations est mise en surbrillant si une vulnérabilité est trouvée dans votre organisation.
 ![Exemple de texte d’informations sur la violation qui peut s’afficher lorsque vous placez le pointage sur l’icône. Celle-ci indique « une alerte active possible est associée à cette recommandation.](images/tvm-breach-insights.png)
@@ -108,13 +108,13 @@ Les informations sur l’appareil exposé ne seront pas disponibles pour les VC 
 
 ### <a name="top-vulnerable-software-in-the-dashboard"></a>Logiciels les plus vulnérables dans le tableau de bord
 
-1. Go to the [Gestion des menaces et des vulnérabilités dashboard](tvm-dashboard-insights.md) and scroll down to the Top **vulnerable software** widget. Vous verrez le nombre de vulnérabilités trouvées dans chaque logiciel, ainsi que des informations sur les menaces et une vue d’exposition de haut niveau de l’appareil au fil du temps.
+1. Go to the [Gestion des menaces et des vulnérabilités dashboard](tvm-dashboard-insights.md) and scroll down to the **Top vulnerable software** widget. Vous verrez le nombre de vulnérabilités trouvées dans chaque logiciel, ainsi que des informations sur les menaces et une vue d’exposition de haut niveau de l’appareil au fil du temps.
 
     ![Carte logicielle la plus vulnérable avec quatre colonnes : logiciels, faiblesses, menaces, appareils exposés.](images/tvm-top-vulnerable-software500.png)
 
 2. Sélectionnez le logiciel que vous souhaitez examiner pour aller à une page d’exercice.
 
-3. Sélectionnez **l’onglet Vulnérabilités découvertes.**
+3. Sélectionnez **l’onglet Vulnérabilités découvertes** .
 
 4. Sélectionnez la vulnérabilité que vous souhaitez examiner pour plus d’informations sur les détails de la vulnérabilité
 
@@ -132,7 +132,7 @@ Afficher les informations sur les faiblesses associées dans la page de l’appa
 
 3. La page de l’appareil s’ouvre avec des détails et des options de réponse pour l’appareil que vous souhaitez examiner.
 
-4. Sélectionnez **vulnérabilités découvertes.**
+4. Sélectionnez **vulnérabilités découvertes**.
 
    :::image type="content" alt-text="Page Appareil avec détails et options de réponse." source="images/tvm-discovered-vulnerabilities.png" lightbox="images/tvm-discovered-vulnerabilities.png":::
 

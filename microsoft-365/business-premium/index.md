@@ -25,19 +25,18 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Découvrez comment collaborer en toute sécurité dans votre petite entreprise ou votre campagne avec Microsoft 365 Business Premium.
-ms.openlocfilehash: 71ef42c8e95ed241a7e1566197f67c1563ec6101
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 7f53ee3df70e2310e7bb83d676fa18b544e3fb31
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766236"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886279"
 ---
 # <a name="microsoft-365-business-premium-overview"></a>Microsoft 365 Business Premium vue d’ensemble
 
 Dans notre monde actuel, le maintien de la sécurité des données et des communications est une priorité, notamment pour les pratiques médicales et juridiques, les campagnes politiques, ainsi que de nombreuses autres entreprises plus petites. Tirez parti des fonctionnalités de sécurité Microsoft 365 Business Premium pour collaborer en toute sécurité au sein de votre petite entreprise. Cette solution fournit un ensemble de recommandations conçues pour contribuer à vous protéger, vous et vos données. Cette bibliothèque inclut une aide à la configuration et à l’utilisation de cet environnement recommandé, quel que soit votre type d'entreprise.
 
-
-![Microsoft 365 Business Premium protège vos outils de productivité, vos outils de collaboration, le stockage de fichiers, l’e-mail, les appareils et l’identité.](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)
+:::image type="content" source="media/m365-whatisit-securityfocus2.png" alt-text="Microsoft 365 Business Premium protège vos applications, le stockage de fichiers, la messagerie électronique, les appareils et les identités.":::
 
 Cette configuration inclut les conseils suivants sur la productivité, la collaboration, le stockage de fichiers, l’e-mail, les appareils et l’identité pour protéger votre entreprise :
 

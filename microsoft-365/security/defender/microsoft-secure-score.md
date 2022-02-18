@@ -23,18 +23,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 60d804594b3e4f1daad2ea4813a55205c24a3dac
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: d31fa35ddf84b63a115cf3128673794617fcc730
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172162"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886891"
 ---
 # <a name="microsoft-secure-score"></a>Niveau de sécurité Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Vous pouvez le trouver dans https://security.microsoft.com/securescore le portail [Microsoft 365 Defender.](microsoft-365-defender.md#the-microsoft-365-defender-portal)
+Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Vous pouvez le trouver sur https://security.microsoft.com/securescore le [portail Microsoft 365 Defender web](microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
 En suivant les recommandations du Niveau de sécurité, vous pouvez protéger votre organisation contre les menaces. À partir d’un tableau de bord centralisé dans le portail Microsoft 365 Defender, les organisations peuvent surveiller et travailler sur la sécurité de leurs identités, applications et appareils Microsoft 365 données.
 
@@ -43,6 +43,9 @@ Score sécurisé aide les organisations :
 * Rapport sur l'état actuel de la posture de sécurité de l'organisation.
 * Améliorer leur posture de sécurité en leur offrant des possibilités de découverte, de visibilité, de guide et de contrôle.  
 * Comparer avec des critères de référence et établir des indicateurs de performance clés (KPI).
+
+Regardez cette vidéo pour obtenir une vue d’ensemble rapide du score de sécurité.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWUPrP]
 
 Les organisations ont accès à des visualisations robustes des métriques et des tendances, à l’intégration à d’autres produits Microsoft, à la comparaison des scores avec des organisations similaires, et bien plus encore. Le score peut également refléter lorsque des solutions tierces ont traité les actions recommandées.
 
@@ -82,7 +85,7 @@ Il existe actuellement des recommandations pour les produits suivants :
 - Microsoft 365 (y compris Exchange Online)
 - Azure Active Directory
 - Microsoft Defender pour point de terminaison
-- Microsoft Defender pour l’identité
+- Microsoft Defender pour l’identité
 - Defender for Cloud Apps
 - Microsoft Teams
 
