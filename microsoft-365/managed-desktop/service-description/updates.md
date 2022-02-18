@@ -11,12 +11,12 @@ manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5e696f1b89cf03bbd4123252ea967e2aca10ef49
-ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
+ms.openlocfilehash: bf6ead692a82d485f6a8e3b3148bc05484c887a8
+ms.sourcegitcommit: 9f0e84835121ce6228fdc69182c24be7ad1cb20e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62879251"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62896014"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Comment les mises à jour sont gérées dans Microsoft Manged Desktop
 
@@ -36,9 +36,9 @@ Microsoft Manged Desktop utilise quatre groupes Azure AD pour gérer les mises �
 
 | Group | Description |
 | ------ | ------ |
-| Tester | Permet de valider les Microsoft Manged Desktop de stratégie, les mises à jour du système d’exploitation, les mises à jour des fonctionnalités et d’autres modifications Azure AD l’organisation ( « client »). Le groupe Test est : <ul><li>Le meilleur pour les tests ou les utilisateurs qui peuvent fournir des commentaires précoces.</li><li>Exemptez-vous des contrats de niveau de service établis et du support utilisateur.</li><li>Disponible pour valider la compatibilité des applications avec de nouvelles stratégies ou modifications de système d’exploitation.</li></ul> |
+| Tester | Permet de valider les Microsoft Manged Desktop de stratégie, les mises à jour du système d’exploitation, les mises à jour des fonctionnalités et d’autres modifications Azure AD l’organisation ( « client »). Le groupe Test est : <br><ul><li>Le meilleur pour les tests ou les utilisateurs qui peuvent fournir des commentaires précoces.</li><li>Exemptez-vous des contrats de niveau de service établis et du support utilisateur.</li><li>Disponible pour valider la compatibilité des applications avec de nouvelles stratégies ou modifications de système d’exploitation.</li></ul> |
 | Premier | Contient les premiers utilisateurs de logiciels et les appareils qui peuvent faire l’objet de mises à jour pré-publiées. <br><br> Les appareils de ce groupe peuvent être en panne s’il existe des scénarios qui n’ont pas été couverts lors du test dans l’anneau de test. |
-| Rapide | Hiérarchise la vitesse sur la stabilité. Le groupe Rapide est : <ul><li>Utile pour détecter les problèmes de qualité avant qu’ils ne soit proposés au groupe Large.</li> <li>Couche suivante de validation, généralement plus stable que les groupes Test et First.</li></ul> |
+| Rapide | Hiérarchise la vitesse sur la stabilité. Le groupe Rapide est : <br><ul><li>Utile pour détecter les problèmes de qualité avant qu’ils ne soit proposés au groupe Large.</li> <li>Couche suivante de validation, généralement plus stable que les groupes Test et First.</li></ul> |
 | Larges | Ce groupe est le dernier groupe à avoir mis à disposition des mises à jour de fonctionnalités et de qualité. <br><br> Le groupe Large contient la plupart des utilisateurs de l Azure AD organisation, et par conséquent privilégie la stabilité par rapport à la vitesse de déploiement. Le test des applications doit être effectué avec ce groupe, car l’environnement est le plus stable. |
 
 ### <a name="moving-devices-between-update-groups"></a>Déplacement d’appareils entre des groupes de mise à jour
@@ -75,9 +75,9 @@ Mettre à jour les paramètres de déploiement répertoriés ci-dessous :
 | Mises à jour de fonctionnalités pour le système d’exploitation | Zéro jour | 30 jours | 60 jours | 90 jours |
 | Pilotes/microprogramme | Suit la planification des mises à jour qualité. | Suit la planification des mises à jour qualité. | Suit la planification des mises à jour qualité. | Suit la planification des mises à jour qualité. |
 | Définition de l’antivirus | Mise à jour avec chaque analyse. | Mise à jour avec chaque analyse. | Mise à jour avec chaque analyse. | Mise à jour avec chaque analyse. |
-| Applications Microsoft 365 pour Entreprise | [En savoir plus](../get-started/m365-apps.md#updates-to-microsoft-365-apps) | [Si vous souhaitez en savoir plus](../get-started/m365-apps.md#updates-to-microsoft-365-apps) | [En savoir plus](../get-started/m365-apps.md#updates-to-microsoft-365-apps) | [En savoir plus](../get-started/m365-apps.md#updates-to-microsoft-365-apps) |
-| Microsoft Edge | [Si vous souhaitez en savoir plus](../get-started/edge-browser-app.md#updates-to-microsoft-edge) | [En savoir plus](../get-started/edge-browser-app.md#updates-to-microsoft-edge) | [Si vous souhaitez en savoir plus](../get-started/edge-browser-app.md#updates-to-microsoft-edge) | [En savoir plus](../get-started/edge-browser-app.md#updates-to-microsoft-edge) |
-| Microsoft Teams | [En savoir plus](../get-started/teams.md#updates) | [En savoir plus](../get-started/teams.md#updates) | [Si vous souhaitez en savoir plus](../get-started/teams.md#updates) | [En savoir plus](../get-started/teams.md#updates) |
+| Microsoft 365 Apps for enterprise | [En savoir plus](../get-started/m365-apps.md#updates-to-microsoft-365-apps) | [En savoir plus](../get-started/m365-apps.md#updates-to-microsoft-365-apps) | [En savoir plus](../get-started/m365-apps.md#updates-to-microsoft-365-apps) | [En savoir plus](../get-started/m365-apps.md#updates-to-microsoft-365-apps) |
+| Microsoft Edge | [En savoir plus](../get-started/edge-browser-app.md#updates-to-microsoft-edge) | [En savoir plus](../get-started/edge-browser-app.md#updates-to-microsoft-edge) | [En savoir plus](../get-started/edge-browser-app.md#updates-to-microsoft-edge) | [En savoir plus](../get-started/edge-browser-app.md#updates-to-microsoft-edge) |
+| Microsoft Teams | [En savoir plus](../get-started/teams.md#updates) | [En savoir plus](../get-started/teams.md#updates) | [En savoir plus](../get-started/teams.md#updates) | [En savoir plus](../get-started/teams.md#updates) |
 
 >[!NOTE]
 >Ces périodes de report sont conçues intentionnellement pour garantir des normes élevées en matière de sécurité et de performances pour tous les utilisateurs.<br><br> En fonction des données recueillies sur tous les appareils Microsoft Manged Desktop et de l’étendue et de l’impact variables des mises à jour, Microsoft Manged Desktop se réserve la flexibilité nécessaire pour modifier la durée des périodes de report ci-dessus pour tous les groupes de déploiement de manière ponctuelle.

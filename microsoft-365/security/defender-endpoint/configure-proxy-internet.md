@@ -15,14 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b4ae8490fadecf60d4414218f42cac83b9035270
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: d687273a3029f3de080f06f328d4d40853142353
+ms.sourcegitcommit: 9f0e84835121ce6228fdc69182c24be7ad1cb20e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354983"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62896098"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy du dispositif et de connectivité Internet
 
@@ -239,7 +240,7 @@ Le \*point de terminaison de l’URL .blob.core.windows.net peut être remplacé
 
 Vérifiez que la configuration du proxy s’est correctement terminée. WinHTTP peut ensuite découvrir et communiquer via le serveur proxy dans votre environnement, puis le serveur proxy autorise le trafic vers les URL du service Defender for Endpoint.
 
-1. Téléchargez [l’outil Analyseur de client Microsoft Defender pour point](https://aka.ms/mdeanalyzer) de terminaison sur le PC, sur lequel le capteur Defender for Endpoint est en cours d’exécution.
+1. Téléchargez [l’outil Analyseur de client Microsoft Defender pour point](https://aka.ms/mdeanalyzer) de terminaison sur le PC, sur lequel le capteur Defender for Endpoint est en cours d’exécution. Pour les serveurs de niveau bas, utilisez la dernière version d’évaluation disponible pour télécharger [l’outil Microsoft Defender for Endpoint Client Analyzer (bêta](https://aka.ms/BetaMDEAnalyzer)).
 
 2. Extrayez le contenu des MDEClientAnalyzer.zip sur l’appareil.
 

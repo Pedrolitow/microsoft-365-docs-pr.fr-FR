@@ -114,6 +114,8 @@
               href: microsoft-secure-score-whats-coming.md
             - name: Nouveautés
               href: microsoft-secure-score-whats-new.md
+        - name: Protéger vos points de terminaison
+          href: ../defender-endpoint/index.yml
         - name: Protéger vos identités
           items:
             - name: Paramètres et intégrité du capteur
@@ -130,6 +132,8 @@
               href: ../defender-identity/exclusions.md
             - name: Notifications par e-mail et syslog
               href: ../defender-identity/notifications.md
+        - name: Protéger vos charges de travail Office 365
+          href: ../office-365-security/index.yml
     - name: Examiner les menaces et y répondre
       items:
         - name: Vue d’ensemble
