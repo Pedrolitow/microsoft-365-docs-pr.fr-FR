@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Permettez à vos utilisateurs d’être productifs grâce à Teams, Exchange, SharePoint et les autres services Microsoft 365.
-ms.openlocfilehash: 36aa96b1355eec41060881da26f7e709a5058898
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 97a0342347d848a27a8402b5b8506536c95c55c9
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190148"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886229"
 ---
 # <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>Étape 5 : déployer les applications et les services de productivité des travailleurs à distance
 
@@ -30,7 +30,7 @@ Pour être productifs, les employés doivent communiquer et collaborer les uns a
 
 | Fonction TI | Composants de Microsoft 365 | Description |
 |:-------|:-----|:-------|
-| Services de messagerie | Exchange Online | Messagerie Exchange et gestion des calendriers, des contacts et des tâches avec le client Outlook. |
+| Services de messagerie | Exchange Online | Messagerie Exchange et gestion des calendriers, des contacts et des tâches avec le client Outlook. |
 | Conversation d’entreprise, protocole voix sur IP (VOIP) et collaboration en équipe | Microsoft Teams | Maintenez le contact entre vos employés, alors qu’ils doivent travailler séparément grâce à un centre commun de communication pour les réunions, les conversations et le stockage de fichiers pour l’organisation et les départements, mais aussi pour les petites équipes et les particuliers. |
 | Sites intranet, collaboration sur des documents | SharePoint et OneDrive | Stocker et collaborer sur des fichiers dans un navigateur web ou au sein de Teams. |
 | Applications Office de bureau et appareil mobile | Microsoft 365 Apps | Crez de contenu ou collaborez sur du contenu existant avec les versions de Word, PowerPoint, Excel et Outlook, installées sur votre ordinateur local, et qui reçoivent des mises à jour de fonctionnalité et de sécurité régulières. |
@@ -40,7 +40,7 @@ Pour être productifs, les employés doivent communiquer et collaborer les uns a
 
 ## <a name="keep-people-connected-with-microsoft-teams"></a>Rester en contact grâce à Microsoft Teams
 
-Teams vous permet de discuter, d’appeler, de rencontrer et de collaborer avec vos collègues, au sein d’un seul emplacement. Des millions de personnes effectuent leur travail dans Teams tous les jours, car cela leur permet de réunir tous les éléments dont ils ont besoin pour travailler sur site ou à distance au sein d’une plateforme dédiée au travail d’équipe. 
+Teams avec Microsoft Teams permet à votre organisation de discuter, de se rencontrer, d’appeler et de collaborer au même endroit. Des millions de personnes travaillent chaque jour avec des équipes, car il rassemble tout ce dont vous avez besoin pour travailler sur site ou à distance dans un hub pour le travail d’équipe. 
 
 Pour obtenir des instructions détaillées, voir [Prise en charge des travailleurs à distance avec Microsoft Teams](/microsoftteams/support-remote-work-with-teams). 
 
@@ -48,7 +48,7 @@ Regardez les webdiffusions [Permettre le travail hybride avec Microsoft Teams](h
 
 ### <a name="chat-and-conversations"></a>Chat et conversations
 
-Les chats et les conversations thématiques sont au cœur de Teams, avec la prise en charge des conversations à deux et des chats et conversations de groupe. Les travailleurs à distance peuvent partager des informations et leur avis de façon personnalisée en utilisant des gif, des autocollants et des emojis dans les conversations de groupe ou les messages individuels.
+Les chats et les conversations thématiques sont au cœur de Teams, avec la prise en charge des conversations à deux et des chats et conversations de groupe. Les télétravailleurs peuvent partager des informations, des opinions et leur personnalité en utilisant des images, des autocollants et des emojis dans des discussions de groupe ou des messages individuels.
 
 ### <a name="meetings-and-conferencing"></a>Réunions et conférences 
 
@@ -56,7 +56,7 @@ Teams vous permet de gérer les communications et le partage d’informations av
 
 ### <a name="calling"></a>Appel
 
-Teams prend en charge les appels VoIP directs entre les utilisateurs, et même avec d’autres organisations, en utilisant fédération. Il utilise les mêmes codecs que les réunions et offre une excellente qualité audio dans le monde entier sans frais PSTN supplémentaires. Certains utilisateurs peuvent toutefois avoir besoin d’un numéro de téléphone dédié pour prendre des appels externes lorsqu’ils travaillent sur site à distance. Teams peut fournir un service de téléphonie en ligne pour permettre à ces utilisateurs de passer et recevoir des appels téléphoniques.
+Teams prend en charge les appels VoIP directs entre les utilisateurs, et même avec d’autres organisations, en utilisant fédération. Il utilise les mêmes codecs que les réunions et offre un excellent son dans le monde entier sans frais PSTN supplémentaires. Certains utilisateurs peuvent toutefois avoir besoin d’un numéro de téléphone dédié pour prendre des appels externes lorsqu’ils travaillent sur site à distance. Teams peut fournir un service de téléphonie en ligne pour permettre à ces utilisateurs de passer et recevoir des appels téléphoniques.
 
 ### <a name="apps-and-workflows"></a>Applications et flux de travail
 

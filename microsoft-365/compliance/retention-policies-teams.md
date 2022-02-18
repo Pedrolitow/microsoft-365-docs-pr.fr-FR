@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: 7e516d78c781782e24c26ddedfa7b8996bb44fe0
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: d3562126a678e486fd97f3c760841f9ba4de7193
+ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322432"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62859288"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Si vous voyez dans Teams un message concernant la suppression de vos conversations ou messages par une stratégie de rétention, consultez [Messages Teams à propos des stratégies de rétention](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
@@ -65,7 +65,9 @@ Nous ne prenons pas en charge les autres types de boîtes aux lettres, tels que 
 
 Teams utilise un service de conversation fourni par Azure comme espace de stockage principal pour tous les messages (conversations et messages de canaux). Si vous devez supprimer des messages Teams pour des raisons de conformité, les stratégies de rétention pour Teams peuvent supprimer les messages après une période spécifique, en fonction de leur moment de création. Les messages sont ensuite supprimés définitivement des boîtes aux lettres Exchange où ils sont stockés pour des opérations de conformité et du stockage principal utilisé par le service de conversation sous-jacent fourni par Azure. Pour plus d’informations sur l’architecture sous-jacente, voir la page [Sécurité et conformité dans Microsoft Teams](/MicrosoftTeams/security-compliance-overview) et plus précisément, la section [Architecture de protection des informations](/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
 
-Même si les données des conversations et des messages de canal Teams sont stockées dans des boîtes aux lettres, vous devez configurer une stratégie de rétention pour les emplacements des **messages de canal Teams** et des **conversations Teams**. Les conversations et les messages de canal Teams ne sont pas inclus dans les stratégies de rétention configurées pour les boîtes aux lettres d’utilisateurs ou de groupes Exchange. Si un utilisateur est ajouté à une conversation, une copie de tous les messages partagés avec lui est ingérée dans sa boîte aux lettres. La date de création de ces messages ne change pas pour le nouvel utilisateur et reste identique pour tous les utilisateurs.
+Même si les données des conversations et des messages de canal Teams sont stockées dans des boîtes aux lettres, vous devez configurer une stratégie de rétention pour les emplacements des **messages de canal Teams** et des **conversations Teams**. Les conversations et les messages de canal Teams ne sont pas inclus dans les stratégies de rétention configurées pour les boîtes aux lettres d’utilisateurs ou de groupes Exchange. De même, les stratégies de rétention pour Teams n’affectent pas les autres éléments de courrier électronique stockés dans les boîtes aux lettres.
+
+Si un utilisateur est ajouté à une conversation, une copie de tous les messages partagés avec lui est ingérée dans sa boîte aux lettres. La date de création de ces messages ne change pas pour le nouvel utilisateur et reste identique pour tous les utilisateurs.
 
 > [!NOTE]
 > Si un utilisateur est inclus dans une stratégie de rétention active qui conserve des messages Teams et que vous supprimez sa boîte aux lettres, la boîte aux lettres est convertie en [Boîte aux lettres inactive](inactive-mailboxes-in-office-365.md) pour conserver les données Teams. Si vous n’avez pas besoin de conserver ces données Teams pour l’utilisateur, excluez le compte d’utilisateur de la stratégie de rétention et [attendez que cette modification prenne effet](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect) avant de supprimer sa boîte aux lettres. 

@@ -17,34 +17,34 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: rançongiciel, rançongiciel géré par l’homme, rançongiciel géré par l’homme, HumOR, attaque d'extorsion, attaque de rançongiciel, chiffrement, cryptovirologie, confiance zéro
 description: Utilisez Windows Intune en tant que fournisseur MDA et GAM et les fonctionnalités de sécurité Windows 10 pour protéger vos ressources Microsoft 365 contre les attaques par rançongiciel.
-ms.openlocfilehash: adbefb7ac8ec574a69bc59a67cab61cc69d00568
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 918dc75d11157bf6358e68a13d04c9a84c0a3837
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702210"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62887591"
 ---
 # <a name="step-4-protect-devices"></a>Étape 4. Protéger les appareils
 
-Pour protéger les appareils contre la partie d’accès initial d’une attaque par rançongiciel :
+Pour aider à protéger les appareils (endpoints) contre la partie d’accès initiale d’une attaque de ransomware :
 
 - Déployez [Intune](/mem/intune/fundamentals/what-is-intune) en tant que fournisseur de gestion des appareils mobiles (MDM) et de gestion des applications mobiles (GAM) pour vos appareils, puis inscrivez les appareils de votre organisation.
-- Implémentez les [stratégies communes d’accès aux appareils et aux identités](/microsoft-365/security/office-365-security/identity-access-policies) pour valider les informations d’identification du compte d’utilisateur et les exigences de conformité et d’intégrité de l’appareil.
+- Implémentez les [stratégies communes d’identité et d'accès aux appareils](/microsoft-365/security/office-365-security/identity-access-policies) pour valider les informations d’identification du compte utilisateur et appliquer les exigences d’intégrité et de conformité des appareils.
 - Activez la [Protection réseau](/microsoft-365/security/defender-endpoint/network-protection) dans Microsoft Defender pour point de terminaison et Microsoft 365 Defender.
 - Configurez la [vérification du site et du téléchargement](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings) et la [vérification des applications et des fichiers](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings) dans Microsoft Defender SmartScreen pour bloquer ou avertir.
 - Activez [l’analyse par l’Antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus) des fichiers et pièces jointes téléchargés.
 - Définissez le **Niveau de sécurité Bureau à distance** sur **TLS** dans Microsoft Defender pour point de terminaison et Microsoft 365 Defender.
 
-## <a name="windows-10-devices"></a>Appareils Windows 10
+## <a name="windows-11-or-10-devices"></a>Appareils Windows 11 ou 10
 
-Pour vous protéger contre la partie mouvement latéral d’une attaque à partir d’un appareil Windows 10 :
+Pour vous protéger contre le mouvement latéral d’une attaque provenant d’un appareil Windows 11 ou 10 :
 
 - [Activer le Pare-feu Microsoft Defender](https://support.microsoft.com/windows/turn-microsoft-defender-firewall-on-or-off-ec0844f7-aebd-0583-67fe-601ecf5d774f).
-- [Mettez à jour les définitions de l’Antivirus Microsoft Defender](/en-us/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus).
+- [Mettez à jour les définitions de l’Antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus).
 
 Pour réduire l’impact de l’attaque :
 
-- Utilisez une [protection avancée](/Microsoft-365/security/defender-endpoint/attack-surface-reduction#use-advanced-protection-against-ransomware) contre les rançongiciels.
+- Utilisez les [règles de réduction de la surface d’attaque et la protection avancée contre les ransomwares](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#use-advanced-protection-against-ransomware).
 
 Pour vous protéger contre un attaquant qui échappe à vos défenses de sécurité :
 
@@ -65,13 +65,13 @@ Pour vous protéger contre l’exécution de code par une personne malveillante 
 
 Lorsque vous implémentez ces protections, effectuez la gestion des modifications pour les éléments suivants :
 
-- Les [stratégies communes d’accès aux appareils et aux identités](/microsoft-365/security/office-365-security/identity-access-policies) peuvent refuser l’accès aux utilisateurs ayant des appareils non conformes.
+- Les [stratégies communes d’identité et d'accès aux appareils Zero Trust](/microsoft-365/security/office-365-security/identity-access-policies) peuvent refuser l’accès aux utilisateurs qui ont des appareils non conformes.
 - Le téléchargement de fichiers peut avertir les utilisateurs avant le téléchargement ou le bloquer.
 - Certaines macros Office, Excel 4.0, XLM ou VBA peuvent ne plus s’exécuter.
 
 ## <a name="resulting-configuration"></a>Configuration résultante
 
-Voici la protection contre les rançongiciels pour votre client concernant les étapes 1 à 4.
+Voici la protection contre les ransomwares pour votre locataire pour les étapes 1 à 4.
 
 ![Protection contre les rançongiciels pour votre client Microsoft 365 après l’étape 4](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step4.png)
 
