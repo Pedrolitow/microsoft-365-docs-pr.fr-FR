@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Préparez, puis déployez l’extension de la conformité Microsoft.
-ms.openlocfilehash: 04c56c78ac854141e2e9c6e207745b3722537e74
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7b675db1e17e7b7609a7a0394e2dffc8f2a74887
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938828"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909650"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Prise en main de l’extension de la conformité Microsoft
 
@@ -278,8 +278,7 @@ Maintenant que vous avez supprimé Chrome de la liste des navigateurs/applicatio
 
 ### <a name="known-issues-and-limitations"></a>Problèmes et limites connus
 
-1. L'application du Block Override pour la sortie du nuage n'est pas prise en charge.
-2. Le mode Incognito n'est pas pris en charge et doit être désactivé.
+1. Le mode Incognito n'est pas pris en charge et doit être désactivé.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -4,21 +4,26 @@ description: Inscrivez vous-même les appareils afin qu’ils soient gérés par
 ms.service: m365-md
 author: tiaraquan
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
+ms.openlocfilehash: 8aba31c60d587667c4623d18b2a3d0e389681685
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909734"
 ---
-
 # <a name="register-new-devices-yourself"></a>Inscrivez vous-même les nouveaux appareils
 
 Microsoft Manged Desktop pouvez utiliser de nouveaux appareils, ou vous pouvez réutiliser les appareils que vous avez peut-être déjà. Si vous réutilisez des appareils, vous devez les réimager. Vous pouvez inscrire des appareils avec des Microsoft Manged Desktop dans le portail Microsoft Endpoint Manager client.
 
 > [!NOTE]
-> Vous travaillez avec un partenaire pour obtenir des appareils ? Si c’est le cas, vous n’avez pas besoin de vous soucier de l’obtention des hashes matériels ; Ils s’en chargeront pour vous. Assurez-vous que votre partenaire établit une relation avec vous dans [l’Partner Center](https://partner.microsoft.com/dashboard). Votre partenaire peut en savoir plus sur [l’aide de l’Centre partenaires](/partner-center/request-a-relationship-with-a-customer). Une fois cette relation établie, votre partenaire enregistre simplement des appareils en votre nom ; aucune autre action n’est requise de votre part. Si vous souhaitez consulter les détails ou si votre partenaire a des questions, consultez la procédure [d’inscription des appareils pour les partenaires](register-devices-partner.md). Une fois les appareils inscrits, vous pouvez vérifier [l’image](#check-the-image) et [remettre](#deliver-the-device) les appareils à vos utilisateurs.
+> Vous travaillez avec un partenaire pour obtenir des appareils ? Si c’est le cas, vous n’avez pas besoin de vous soucier de l’obtention des hashes matériels ; Ils s’en chargeront pour vous. Assurez-vous que votre partenaire établit une relation avec vous dans [l’Partner Center](https://partner.microsoft.com/dashboard). Votre partenaire peut en savoir plus sur [l’aide de l’Centre partenaires](/partner-center/request-a-relationship-with-a-customer). <br><br>Une fois cette relation établie, votre partenaire enregistre simplement des appareils en votre nom ; aucune autre action n’est requise de votre part. Si vous souhaitez consulter les détails ou si votre partenaire a des questions, consultez la procédure [d’inscription des appareils pour les partenaires](register-devices-partner.md). Une fois les appareils inscrits, vous pouvez vérifier [l’image](#check-the-image) et [remettre](#deliver-the-device) les appareils à vos utilisateurs.
 
 ## <a name="prepare-to-register-brand-new-devices"></a>Préparer l’inscription de nouveaux appareils
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer un extracteur dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: e6598704375aad88efcdbaef700ee0187c4f7e07
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1d0aebf610897d07d051ba9e5f3e218dd582bbad
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665077"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909666"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Créer un extracteur dans Microsoft SharePoint Syntex
 
@@ -42,8 +42,12 @@ Vous devez créer un extracteur pour chaque entité dans le document à extraire
 
 2. À l’écran **Nouvel extracteur d’entités**, tapez le nom de votre extracteur dans le champ **Nom du nouvel extracteur**. Par exemple, nommez-le **Date de démarrage du service** si vous souhaitez extraire la date de démarrage du service à partir de chaque document Renouvellement de contrat. Vous pouvez également choisir de réutiliser une colonne précédemment créée (par exemple, une colonne de métadonnées gérées).
 
+    Par défaut, le type de colonne est **une seule ligne de texte**. Si vous souhaitez modifier le type de colonne, sélectionnez Le **type Advanced settingsColumn** > , puis sélectionnez le type que vous souhaitez utiliser.
+
+    ![Capture d’écran de la partie Paramètres avancés du panneau Nouvel extracteur d’entités affichant l’option Type de colonne.](../media/content-understanding/advanced-settings-column-type.png) 
+
     > [!NOTE]
-    > Pour les extracteurs dont le type de colonne est Une **seule ligne de** texte, la limite de caractères maximale est de 255. Les caractères que vous tapez au-delà de la limite sont tronqués.
+    > Pour les extracteurs dont le type de colonne est Une seule **ligne de** texte, la limite de caractères maximale est de 255. Les caractères que vous tapez au-delà de la limite sont tronqués.
 
 3. Une fois que vous avez terminé, cliquez sur **Créer**.
 

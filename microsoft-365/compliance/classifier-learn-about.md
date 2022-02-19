@@ -1,26 +1,31 @@
 ---
 title: En savoir plus sur les classifieurs avec capacité d’apprentissage
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: null
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-  - M365-security-compliance
-  - m365solution-mip
-  - m365initiative-compliance
+- M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 ms.custom: admindeeplinkMAC
 search.appverid:
-  - MOE150
-  - MET150
+- MOE150
+- MET150
 description: Les classifieurs entraisables peuvent reconnaître différents types de contenu pour l’étiquetage ou l’application de stratégie en lui donnant des exemples positifs et négatifs à examiner.
+ms.openlocfilehash: 50d20c3a40b21696c06064b548d7766684fb12a0
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909638"
 ---
-
 # <a name="learn-about-trainable-classifiers"></a>En savoir plus sur les classifieurs avec capacité d’apprentissage
 
 La classification et l’étiquetage du contenu afin qu’il puisse être protégé et géré correctement constitue le point de départ de la protection des informations. Microsoft 365 trois façons de classifier le contenu.
@@ -70,7 +75,7 @@ Microsoft 365 est livré avec plusieurs classifieurs pré-formés :
 > Nous déconseillons le classificateur **Langage choquant** pré-formé, car il a produit un grand nombre de faux positifs. Ne l’utilisez pas et si vous l’utilisez actuellement, vous devez en déplacer vos processus d’entreprise. Nous vous recommandons plutôt **d’utiliser** les classifieurs  pré-formés contre les menaces **, les** blasphémités et le harcèlement.
 
 - **Cv** : détecte les éléments docx, .pdf, .rtf, .txt qui sont des comptes textuels des qualifications personnelles, pédagogiques, professionnelles, professionnelles et autres informations d’identification personnelle d’un candidat
-- **Code source** : détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 langages de programmation informatique les plus utilisés sur GitHub : ActionScript, C, C#, C++, Chefjure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script.
+- **Code source** : détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 langages de programmation informatique les plus utilisés sur GitHub : ActionScript, C, C#, C++, Chefjure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script. Détecte le contenu dans .msg, .as, .h, .c, .cs, .cc, .cpp, .hpp, .cxx, .hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, .pod, .php, .pho, .php4, .pyc, . R, .r, .rda, . Fichiers RData, .rds, .rb, .scala, .sc, .sh, .swift.
 
 > [!NOTE]
 > Le code source est formé pour détecter quand l’essentiel du texte est du code source. Il ne détecte pas le texte de code source qui est entrecoupé de texte simple.

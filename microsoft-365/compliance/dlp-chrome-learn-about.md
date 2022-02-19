@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: L’extension de la conformité Microsoft étend la surveillance et le contrôle des activités des fichiers et des actions de protection au navigateur Google Chrome
-ms.openlocfilehash: e41343f14e799f354906361fe88f6a99dba12908
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 15c62369bb8b4fc02926fa0e2b0bfc4834c371ac
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950664"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909706"
 ---
 # <a name="learn-about-the-microsoft-compliance-extension"></a>En savoir plus sur l’extension de la conformité Microsoft.
 
@@ -38,7 +38,7 @@ L’extension de la conformité Microsoft vous permet d’auditer et de gérer l
 
 activité |description  | actions de stratégie prises en charge|
 |---------|---------|---------|
-|fichier copié dans le cloud  | Détecte lorsqu'un utilisateur tente de charger un élément sensible dans un domaine de service restreint par le biais du navigateur Chrome. |audit, blocage|
+|fichier copié dans le cloud  | Détecte lorsqu'un utilisateur tente de charger un élément sensible dans un domaine de service restreint par le biais du navigateur Chrome. |audit, blocage avec remplacement, blocage|
 |fichier imprimé  |Détecte quand un utilisateur tente d’imprimer un élément sensible ouvert dans le navigateur Chrome sur une imprimante locale ou réseau |audit, blocage avec remplacement, blocage|
 |Fichier copié dans le Presse-papiers |Détecte quand un utilisateur tente de copier des informations à partir d’un élément sensible en cours d’affichage dans le navigateur Chrome, puis de les coller dans une autre application, processus ou élément. |audit, blocage avec remplacement, blocage|
 |Fichier copié dans un stockage amovible    | Détecte quand un utilisateur tente de copier un élément ou des informations sensibles d’un élément sensible ouvert dans le navigateur Chrome pour un support amovible ou un périphérique USB |audit, blocage avec remplacement, blocage|

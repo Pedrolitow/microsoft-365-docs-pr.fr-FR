@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: Actualisez votre fichier de table source d’informations sensibles.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 79442356066263485c70bf455af5a6a44a0355d4
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 14ef2997da92e0f902fd757a3cbff2735fdeada5
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903709"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909722"
 ---
 # <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>Actualiser votre fichier de table source d’informations sensibles de correspondance exacte 
 
-Vous pouvez actualiser votre base de données d’informations sensibles deux fois par période de 24 heures. Vous devez resserrez et téléchargez votre table de sources d’informations sensibles.
+Vous pouvez actualiser votre base de données d’informations sensibles jusqu’à 5 fois toutes les 24 heures. Vous devez resserrez et téléchargez votre table de sources d’informations sensibles.
 
 1. Réexportez les données sensibles vers une application, telle que Microsoft Excel, et enregistrez le fichier au format .csv, au format .tsv ou au format de canal (|). Conservez le nom de fichier et l’emplacement que vous avez utilisés lorsque vous avez précédemment haché et chargé le fichier. Voir, [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) for details on exporting your sensitive data and getting it into the correct format.
 
