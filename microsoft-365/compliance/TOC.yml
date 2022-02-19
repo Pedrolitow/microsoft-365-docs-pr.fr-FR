@@ -322,7 +322,7 @@
               href: named-entities-learn.md
         - name: Démarrage avec le type d’informations sensibles
           items:
-            - name: 'Démarrage avec des types d’informations sensibles personnalisés : centre de conformité'
+            - name: Créer un type d’informations sensibles personnalisé – Centre de conformité
               href: create-a-custom-sensitive-information-type.md
             - name: Démarrage avec des types d’informations sensibles basés sur des correspondances de données exactes
               href: sit-get-started-exact-data-match-based-sits-overview.md
@@ -344,6 +344,10 @@
               href: sit-modify-edm-schema-configurable-match.md
             - name: Créer des notifications pour les activités de correspondance de données exactes (aperçu)
               href: sit-edm-notifications-activities.md
+            - name: Gérer les types d’informations sensibles personnalisés dans le Centre de conformité
+              href: sit-manage-custom-sits-compliance-center.md
+            - name: Validateurs REGEX de types d’informations sensibles et vérifications supplémentaires
+              href: sit-regex-validators-additional-checks.md
             - name: Créer un type d’informations sensibles personnalisé – PowerShell
               href: create-a-custom-sensitive-information-type-in-scc-powershell.md
             - name: Supprimer un type d’informations sensibles personnalisé – PowerShell
@@ -366,8 +370,8 @@
           items:
             - name: Définitions d’entités des types d’informations sensibles
               href: sensitive-information-type-entity-definitions.md
-            - name: Éléments recherchés par les fonctions DLP
-              href: what-the-dlp-functions-look-for.md
+            - name: Fonctions de type d’informations sensibles
+              href: sit-functions.md
             - name: Référence de filtres de type d’informations sensibles personnalisé
               href: sit-custom-sit-filters.md
     - name: Classifieurs avec capacité d’apprentissage
