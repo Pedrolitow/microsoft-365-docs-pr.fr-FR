@@ -1,25 +1,30 @@
 ---
 title: Configuration de stratégies de filtrage du courrier indésirable
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: null
+ms.date: ''
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: high
 search.appverid:
-  - MET150
+- MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
-  - M365-security-compliance
-ms.custom: null
-description: 'Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.'
+- M365-security-compliance
+ms.custom: ''
+description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.
 ms.technology: mdo
 ms.prod: m365-security
+ms.openlocfilehash: 1ac240f402d230362cb33ea818e62c1e0629eb39
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909746"
 ---
-
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -110,11 +115,11 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
 
 5. Dans la page **Seuil de courrier en nombre et propriétés de courrier indésirable** qui s’affiche, configurez les paramètres suivants :
 
-   - **Seuil de courrier en bloc** : indique le niveau de réclamation en bloc (BCL) d’un message déclenchant l’action spécifiée pour le verdict de filtrage du courrier indésirable **en bloc** (supérieur à la valeur spécifiée, non supérieur ou égal à). Une valeur plus élevée indique que le message est moins souhaité (ce qui peut ressembler au courrier indésirable). La valeur par défaut est 7. Pour plus d’informations, voir [Niveau de réclamation en bloc (BCL) dans Exchange Online PowerShell](bulk-complaint-level-values.md) et [Quelle est la différence entre le courrier indésirable et le courrier en bloc ?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+   - **Seuil de courrier en nombre**: spécifie le niveau de réclamation en bloc (BCL) d’un message qui déclenche l’action spécifiée pour le verdict de filtrage du courrier indésirable **En nombre** que vous configurez sur la page suivante. Une valeur plus élevée indique que le message est moins souhaité (ce qui peut ressembler au courrier indésirable). La valeur par défaut est 7. Pour plus d’informations, voir [Niveau de réclamation en bloc (BCL) dans Exchange Online PowerShell](bulk-complaint-level-values.md) et [Quelle est la différence entre le courrier indésirable et le courrier en bloc ?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
      Par défaut, le paramètre PowerShell uniquement _MarkAsSpamBulkMail_ est `On` dans les stratégies anti-courrier indésirable. Ce paramètre affecte radicalement les résultats d’un verdict de filtrage **en bloc** :
 
-     - **_MarkAsSpamBulkMail_ est activé**: un BCL dont la valeur est supérieure au seuil est convertie en seuil de valeur SCL 6 qui correspond à un seuil de filtrage de **Courrier indésirable**, et l’action pour le verdict de filtrage **en bloc** est pris sur le message.
+     - **_MarkAsSpamBulkMail_ est activé**: un niveau de réclamation en bloc supérieur ou égal au seuil est converti en un niveau de probabilité de courrier indésirable (SCL 6) qui correspond à un verdict de filtrage de **Courrier indésirable**, et l’action pour le verdict de filtrage de **En bloc** est effectuée sur le message.
      - **_MarkAsSpamBulkMail_ est désactivé**: le message est estampillé avec le BCL, mais _aucune action_ n’est prise pour un verdict de filtrage **en bloc**. En effet, le seuil de BCL et le verdict de filtrage **en bloc** ne sont pas pertinents.
 
    - **Augmenter le score de courrier** indésirable, marquer comme courrier **indésirable**<sup>\*</sup> et mode test : paramètres de filtrage avancé du courrier indésirable (ASF) qui sont **désactivés par défaut.**
@@ -539,7 +544,7 @@ Cet exemple définit la priorité de la règle nommée Marketing Department sur 
 Set-HostedContentFilterRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Remarques** :
+**Remarques** :
 
 - Remarque: pour définir la priorité d'une nouvelle règle lors de sa création, utilisez le paramètre _Priorité_ dans l’applet de commandes **New-HostedContentFilterRule**.
 - La stratégie de filtrage anti-courrier indésirable par défaut ne possède pas de règle de filtrage de courrier indésirable correspondante et contient toujours la valeur de priorité non modifiable **La plus faible**.
