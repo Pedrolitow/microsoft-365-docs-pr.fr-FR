@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Découvrez les éléments nonndex dans Exchange et SharePoint que vous pouvez inclure dans une recherche de découverte électronique que vous exécutez dans le Centre de conformité Microsoft 365.
-ms.openlocfilehash: 66133f8f09ae65073ec542264c6aa2a0e1d5e514
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: b1adfaab1008cdfa9e7893273feaba38a71e85ac
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61874015"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62900825"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Éléments partiellement indexés dans eDiscovery
 
@@ -57,11 +57,11 @@ Certains types de fichier, tels que les fichiers Bitmap ou MP3, ne comportent 
   
 Pour obtenir une liste de formats de fichier pris en charge et désactivés, consultez les rubriques suivantes :
   
-- **Exchange**  -  [formats de fichier indexés par Exchange search](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
+-  -  Exchange [Formats de fichier indexés par Exchange search](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
-- **Exchange**  -  [Get-SearchDocumentFormat](/powershell/module/exchange/get-searchdocumentformat)
+-  -  Exchange [Get-SearchDocumentFormat](/powershell/module/exchange/get-searchdocumentformat)
 
-- **SharePoint**  -  [extensions de nom](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) de fichier et types de fichiers analyse par défaut dans SharePoint
+-  -  SharePoint [Des extensions](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) de nom de fichier et des types de fichiers analyse par SharePoint
   
 ## <a name="messages-and-documents-with-partially-indexed-file-types-can-be-returned-in-search-results"></a>Les messages et les documents dont les types de fichiers sont partiellement indexés peuvent être renvoyés dans les résultats de la recherche
 
@@ -69,7 +69,7 @@ Tous les messages électroniques avec une pièce jointe partiellement indexée o
   
 De même, les messages avec des pièces jointes partiellement indexées et des documents d’un type de fichier partiellement indexé sont inclus dans les résultats de recherche lorsque d’autres propriétés de message ou de document, indexées et utilisables dans une recherche, correspondent aux critères de recherche. Les propriétés des messages qui sont indexées pour la recherche comprennent les dates d’envoi et de réception, l’expéditeur et le destinataire, le nom de fichier d’une pièce jointe et le texte dans le corps du message. Les propriétés de document indexées pour la recherche comprennent les dates de création et de modification. Par conséquent, même si une pièce jointe de message peut être un élément partiellement indexé, le message sera inclus dans les résultats de recherche ordinaires si la valeur d’autres propriétés de message ou de document correspond aux critères de recherche.
   
-Pour obtenir la liste des propriétés de messagerie et de document que vous pouvez rechercher à l’aide des outils eDiscovery dans le Centre de conformité Microsoft 365, voir Requêtes par mot clé et conditions de recherche pour [eDiscovery.](keyword-queries-and-search-conditions.md)
+Pour obtenir la liste des propriétés de messagerie et de document que vous pouvez rechercher à l’aide des outils eDiscovery dans le Centre de conformité Microsoft 365, voir Requêtes par mot clé et conditions de recherche pour [eDiscovery](keyword-queries-and-search-conditions.md).
   
 > [!NOTE]
 > Si un élément de boîte aux lettres est déplacé d’un dossier qui est indexé vers un dossier qui n’est pas indexé, un indicateur est définie sur l’unindex de l’élément et l’élément est supprimé de l’index et ne pourra pas faire l’objet d’une recherche. Par la suite, si ce même élément est déplacé vers un dossier indexé, l’indicateur n’est pas réinitialisé. Cela signifie que l’élément reste nonndexé et ne peut pas faire l’objet d’une recherche.
@@ -80,17 +80,17 @@ Votre organisation peut être tenue d’identifier et d’effectuer une analyse 
   
 Gardez les éléments suivants à l’esprit concernant les éléments partiellement indexés :
   
-- Lorsque vous exécutez une recherche de découverte électronique, le nombre total et la taille des éléments de Exchange partiellement indexés (renvoyés par la requête de recherche) sont affichés dans les statistiques de recherche sur la page volante et étiquetés en tant qu’éléments non indexés. Les statistiques sur les éléments partiellement indexés affichés sur la page volante n’incluent pas les éléments partiellement indexés dans les sites SharePoint ou les comptes OneDrive de données.
+- Lorsque vous exécutez une recherche de découverte électronique, le nombre total et la taille des éléments Exchange partiellement indexés (renvoyés par la requête de recherche) sont affichés dans les statistiques de recherche sur la page volante et étiquetés en tant qu’éléments non indexés **.** Les statistiques sur les éléments partiellement indexés affichés sur la page volante n’incluent pas les éléments partiellement indexés dans les sites SharePoint ou les comptes OneDrive de données.
 
 - Si la recherche dont vous exportez les résultats était une recherche d’emplacements de contenu spécifiques ou de tous les emplacements de contenu de votre organisation, seuls les éléments nonndex provenant d’emplacements de contenu qui contiennent des éléments qui correspondent aux critères de recherche seront exportés. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. En effet, l’exportation d’éléments partiellement indexés à partir de nombreux emplacements de l’organisation peut augmenter la probabilité d’erreurs d’exportation et augmenter le temps d’exportation et de téléchargement des résultats de la recherche.
 
-    Pour exporter des éléments partiellement indexés à partir de tous les emplacements de contenu pour une recherche, configurez la recherche pour qu’elle retourne tous les éléments (en supprimant les mots clés de la requête de recherche), puis exportez uniquement les éléments partiellement indexés lorsque vous exportez les résultats de la recherche (en cliquant sur Uniquement les éléments dont le **format n’est** pas reconnu, qui sont chiffrés ou qui n’ont pas été indexés pour d’autres raisons sous **les options** de sortie).
+    Pour exporter des éléments partiellement indexés à partir de tous les emplacements de contenu pour une recherche, configurez la recherche pour qu’elle retourne tous les éléments (en supprimant les mots clés de la requête de recherche), puis exportez uniquement les éléments partiellement indexés lorsque vous exportez les résultats de la recherche (en cliquant sur Uniquement les éléments dont le format n’est pas reconnu, qui sont chiffrés ou qui **n’ont pas été indexés pour d’autres** raisons dans les **options** de sortie).
 
 - Si vous choisissez d’inclure tous les éléments de boîte aux lettres dans les résultats de la recherche, ou si une requête de recherche ne spécifie aucun mot clé ou spécifie uniquement une plage de dates, les éléments partiellement indexés peuvent ne pas être copiés dans le fichier PST qui contient les éléments partiellement indexés. En effet, tous les éléments, y compris les éléments partiellement indexés, seront automatiquement inclus dans les résultats de recherche ordinaires.
 
 - Les éléments partiellement indexés ne peuvent pas être prévisualiser. Vous devez exporter les résultats de la recherche pour afficher les éléments partiellement indexés renvoyés par la recherche.
 
-   En outre, lorsque vous exportez des résultats de recherche et incluez des éléments partiellement indexés dans l’exportation, les éléments partiellement indexés à partir d’éléments SharePoint sont exportés vers un dossier nommé **Uncrawlable**. Lorsque vous exportez des éléments Exchange partiellement indexés, ils sont exportés différemment selon que les éléments partiellement indexés correspondent ou non à la requête de recherche et à la configuration des paramètres d’exportation. 
+   En outre, lorsque vous exportez des résultats de recherche et incluez des éléments partiellement indexés dans l’exportation, les éléments partiellement indexés des éléments SharePoint sont exportés vers un dossier nommé **Uncrawlable**. Lorsque vous exportez des éléments Exchange partiellement indexés, ils sont exportés différemment selon que les éléments partiellement indexés correspondent ou non à la requête de recherche et à la configuration des paramètres d’exportation. 
 
 - Le tableau suivant indique le comportement d’exportation des éléments indexés et partiellement indexés et indique si chacun d’eux est inclus ou non pour les différents paramètres de configuration d’exportation.
 
@@ -109,7 +109,7 @@ Pour contourner cette limitation, nous vous recommandons la procédure suivante.
 
 1. Créez et exécutez une recherche à l’aide d’une requête de recherche qui répond à vos besoins et renvoie les résultats souhaités.
 
-2. Exportez les résultats de la recherche de l’étape 1, mais n’incluez pas d’éléments partiellement indexés dans l’exportation. Pour ce faire, sélectionnez tous les éléments, à l’exception de ceux dont le format n’est pas reconnu, qui sont chiffrés ou qui n’ont pas été indexés pour **d’autres raisons d’exportation.** <sup>1</sup>
+2. Exportez les résultats de la recherche de l’étape 1, mais n’incluez pas d’éléments partiellement indexés dans l’exportation. Pour ce faire, sélectionnez tous les éléments, à l’exception de ceux dont le format n’est pas reconnu, qui sont chiffrés ou qui **n’ont pas été indexés pour d’autres raisons d’exportation** . <sup>1</sup>
 
    ![Exporter les options de sortie.](../media/ExportOutputOptions.png)
 
@@ -118,9 +118,10 @@ Pour contourner cette limitation, nous vous recommandons la procédure suivante.
    ```text
    <original query> AND ((IndexingErrorCode>0 OR IndexingErrorCode<0) AND sent:date1..date2)
    ```
+
    L’ajout de cette clause ren retournera des éléments partiellement indexés qui correspondent à votre requête de recherche d’origine et qui se trouveront dans une plage de dates spécifique. <sup>2</sup>
 
-4. Exportez les résultats de la recherche de l’étape 3 et incluez cette fois des éléments partiellement indexés dans l’exportation. Pour ce faire, vous devez sélectionner tous les éléments, y compris ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour **d’autres raisons d’exportation.**
+4. Exportez les résultats de la recherche de l’étape 3 et incluez cette fois des éléments partiellement indexés dans l’exportation. Pour ce faire, vous devez sélectionner tous les éléments, y compris ceux dont le format n’est pas reconnu, sont chiffrés ou **n’ont pas été indexés pour d’autres raisons d’exportation** .
 
    > [!NOTE]
    > <sup>1 La</sup> sortie de l’étape 2 entraîne l’exportation des éléments indexés uniquement.<br/>
@@ -135,7 +136,7 @@ Utilisez la deuxième recherche que vous avez créée à l’étape 3 et l’exp
 
 Le tableau suivant décrit les limites d’indexation qui peuvent entraîner le retour d’un message électronique en tant qu’élément partiellement indexé dans une recherche eDiscovery dans Microsoft 365.
   
-Pour obtenir la liste des limites d’indexation pour SharePoint documents, voir Limites de recherche [pour SharePoint Online.](/sharepoint/search-limits)
+Pour obtenir la liste des limites d’indexation pour SharePoint documents, voir [Limites de recherche pour SharePoint Online](/sharepoint/search-limits).
   
 |**Limite d’indexation**|**Commentaires**|**Description**|
 |:-----|:-----|:-----|
@@ -159,13 +160,13 @@ Pour obtenir la liste des limites d’indexation pour SharePoint documents, voir
 
 - Bien qu’un type de fichier soit pris en charge pour l’indexation et qu’il soit indexé, il peut y avoir des erreurs d’indexation ou de recherche qui entraînent le retour d’un fichier en tant qu’élément partiellement indexé. Par exemple, la recherche dans un fichier Excel de grande taille peut être partiellement réussie (car les 4 premiers Mo sont indexés), mais échoue car la limite de taille de fichier est dépassée. Dans ce cas, il est possible que le même fichier soit renvoyé avec les résultats de la recherche et en tant qu’élément partiellement indexé.
 
-- Les fichiers chiffrés avec les technologies de chiffrement [Microsoft](encryption.md) et joints à un message électronique qui correspond aux critères d’une recherche peuvent être prévisualisations et déchiffrés lors de l’exportation. Pour l’instant, les fichiers chiffrés avec les technologies de chiffrement Microsoft (et stockés dans SharePoint ou OneDrive Entreprise) sont partiellement indexés.
+- Les fichiers chiffrés avec les [technologies](encryption.md) de chiffrement Microsoft et joints à un message électronique qui correspond aux critères d’une recherche peuvent être prévisualisations et déchiffrés lors de l’exportation. Pour l’instant, les fichiers chiffrés avec les technologies de chiffrement Microsoft (et stockés dans SharePoint ou OneDrive Entreprise) sont partiellement indexés.
 
 - Les messages électroniques chiffrés avec S/MIME sont partiellement indexés. Il s'agit des messages chiffrés avec ou sans pièces jointes.
 
 - Les messages électroniques protégés à l Azure Rights Management sont indexés et seront inclus dans les résultats de la recherche s’ils correspondent à la requête de recherche. Les messages électroniques protégés par des droits sont déchiffrés et peuvent être aperçus et exportés. Cette fonctionnalité nécessite que le rôle déchiffrement RMS, qui est attribué par défaut au groupe de rôles Gestionnaire de découverte électronique, vous soit attribué.
 
-- Si vous créez une mise en attente basée sur une requête associée à un cas eDiscovery, tous les éléments partiellement indexés sont mis en attente. Cela inclut les éléments partiellement indexés qui ne correspondent pas aux critères de requête de recherche pour la attente. Pour plus d’informations sur la création de holds eDiscovery basés sur des requêtes, voir Créer une mise en attente [eDiscovery.](create-ediscovery-holds.md)
+- Si vous créez une mise en attente basée sur une requête associée à un cas eDiscovery, tous les éléments partiellement indexés sont mis en attente. Cela inclut les éléments partiellement indexés qui ne correspondent pas aux critères de requête de recherche pour la attente. Pour plus d’informations sur la création de holds eDiscovery basés sur des requêtes, voir Créer une mise en attente [eDiscovery](create-ediscovery-holds.md).
 
 ## <a name="see-also"></a>Voir aussi
 

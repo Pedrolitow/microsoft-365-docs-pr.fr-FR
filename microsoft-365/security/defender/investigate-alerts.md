@@ -1,26 +1,32 @@
 ---
 title: Examiner les alertes dans Microsoft 365 Defender
-description: 'Examiner les alertes visibles sur les appareils, les utilisateurs et les boîtes aux lettres.'
-keywords: 'incidents, alertes, examiner, analyser, réponse, corrélation, attaque, ordinateurs, appareils, utilisateurs, identités, identité, boîte aux lettres, courrier électronique, 365, microsoft, m365'
+description: Examiner les alertes visibles sur les appareils, les utilisateurs et les boîtes aux lettres.
+keywords: incidents, alertes, examiner, analyser, réponse, corrélation, attaque, ordinateurs, appareils, utilisateurs, identités, identité, boîte aux lettres, courrier électronique, 365, microsoft, m365
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
-  - MOE150
+- MOE150
 ms.technology: m365d
+ms.openlocfilehash: cfa39ca38046c131de2531b4ad6446626895090f
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903950"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
 
@@ -45,14 +51,10 @@ Dans la file d’attente des alertes par défaut, vous pouvez  sélectionner **F
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Exemple de volet de filtres pour la file d’attente d’alertes dans Microsoft 365 Defender portail.":::
 
-<!--
-UPDATE SCREENSHOT
---> 
-
 Vous pouvez filtrer les alertes en fonction de ces critères :
 
 - Severity
-- État
+- Statut
 - Sources de service
 - Entités (les biens touchés)
 - État d’examen automatisé
@@ -106,7 +108,7 @@ Microsoft 365 Defender alertes peuvent être issues de solutions telles que Micr
 
 | Source de l’alerte | Caractère en prédépendant |
 | :---|:--- |
-| Microsoft Defender pour Office 365 | `fa{GUID}` <br> Exemple : `fa123a456b-c789-1d2e-12f1g33h445h6i` |
+| Microsoft Defender pour Office 365 | `fa{GUID}` <br> Exemple : `fa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender pour point de terminaison | `da` ou pour `ed` les alertes de détection personnalisées <br> |
 | Microsoft Defender pour l’identité | `aa{GUID}` <br> Exemple : `aa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender for Cloud Apps |`ca{GUID}` <br> Exemple : `ca123a456b-c789-1d2e-12f1g33h445h6i` |

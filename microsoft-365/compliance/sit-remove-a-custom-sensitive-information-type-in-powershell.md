@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment supprimer un type d’informations sensibles personnalisé à l’aide de PowerShell
-ms.openlocfilehash: bb3bf67a1493ec232a66b2bdc0c784ea52de32f5
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 852f9987b072f05dcf4f322f600bed23bcce7ef2
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914403"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62900969"
 ---
 # <a name="remove-a-custom-sensitive-information-type-using-powershell"></a>Supprimer un type d’informations sensibles personnalisé à l’aide de PowerShell
 
 Dans PowerShell du centre de conformité, il existe deux méthodes pour supprimer des types d’informations sensibles personnalisés :
 
-- **Supprimer des types d’informations sensibles** personnalisés individuels : utilisez la méthode documentée dans Modifier un type d’informations sensibles personnalisé [à l’aide de PowerShell](sit-modify-a-custom-sensitive-information-type-in-powershell.md#modify-a-custom-sensitive-information-type-using-powershell). Vous exportez le package de règles personnalisé qui contient le type d’informations sensibles personnalisé, supprimez le type d’informations sensibles du fichier XML et importez de nouveau le fichier XML mis à jour dans le package de règles personnalisé existant.
+- **Supprimer des types d’informations sensibles** personnalisés individuels : utilisez la méthode documentée dans [Modifier un type d’informations sensibles personnalisé à l’aide de PowerShell](sit-modify-a-custom-sensitive-information-type-in-powershell.md#modify-a-custom-sensitive-information-type-using-powershell). Vous exportez le package de règles personnalisé qui contient le type d’informations sensibles personnalisé, supprimez le type d’informations sensibles du fichier XML et importez de nouveau le fichier XML mis à jour dans le package de règles personnalisé existant.
 
 - **Supprimer un package de règles personnalisé et tous les types d’informations sensibles personnalisés qu’il contient**: cette méthode est présentée dans cette section.
 
@@ -79,4 +79,4 @@ Dans PowerShell du centre de conformité, il existe deux méthodes pour supprime
 
 - [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
 
-- [Éléments recherchés par les fonctions DLP](what-the-dlp-functions-look-for.md)
+- [Fonctions de type d’informations sensibles](sit-functions.md)

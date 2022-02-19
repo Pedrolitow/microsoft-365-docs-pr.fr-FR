@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment modifier des informations sensibles personnalisées à l’aide de PowerShell.
-ms.openlocfilehash: d402586463da1bed13d15dbaa32aece6badc9c72
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 2f1bc44dca9ec4a938c8cd3d4158163f9d5e2e2f
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271489"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62900733"
 ---
 # <a name="modify-a-custom-sensitive-information-type-using-powershell"></a>Modifier un type d’informations sensibles personnalisé à l’aide de PowerShell
 
@@ -66,7 +66,7 @@ Pour vous connecter à PowerShell du centre de conformité, consultez [Se connec
    [System.IO.File]::WriteAllBytes('XMLFileAndPath', $rulepak.SerializedClassificationRuleCollection)
    ```
 
-   Cet exemple exporte le package de règles dans le fichier nommé ExportedRulePackage.xml dans le dossier Documents C:\My Documents folder.
+   Cet exemple exporte le package de règles vers le fichier nommé ExportedRulePackage.xml dans le dossier C:\My Documents.
 
    ```powershell
    [System.IO.File]::WriteAllBytes('C:\My Documents\ExportedRulePackage.xml', $rulepak.SerializedClassificationRuleCollection)
@@ -90,4 +90,4 @@ Pour une syntaxe détaillée et des informations de paramétrage, voir [Set-DlpS
 
 - [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)
 - [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
-- [Éléments recherchés par les fonctions DLP](what-the-dlp-functions-look-for.md)
+- [Fonctions de type d’informations sensibles](sit-functions.md)

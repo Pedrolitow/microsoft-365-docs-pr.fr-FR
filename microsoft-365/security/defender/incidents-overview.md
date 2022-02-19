@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e44d2b76a3814c751fe4a9d82645c732e2f53ca7
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: ac908a03aad2ccbe203877250a84185cb6c8da16
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62073735"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62904384"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Réponse aux incidents avec Microsoft 365 Defender
 
@@ -63,15 +63,15 @@ Le regroupement d’alertes associées dans un incident vous donne une vue compl
 - L’étendue de l’attaque, par exemple le nombre d’appareils, d’utilisateurs et de boîtes aux lettres qui ont été affectés. 
 - Toutes les données associées à l’attaque.
 
-Si [elle est activée,](m365d-enable.md)Microsoft 365 Defender [peut automatiquement](m365d-autoir.md) examiner et résoudre les alertes par le biais de l’automatisation et de l’intelligence artificielle. Vous pouvez également effectuer des étapes de correction supplémentaires pour résoudre l’attaque. 
+[S’il est activé](m365d-enable.md), Microsoft 365 Defender [peuvent automatiquement](m365d-autoir.md) examiner et résoudre les alertes par le biais de l’automatisation et de l’intelligence artificielle. Vous pouvez également effectuer des étapes de correction supplémentaires pour résoudre l’attaque. 
 
 ## <a name="incidents-and-alerts-in-the-microsoft-365-defender-portal"></a>Incidents et alertes dans le portail Microsoft 365 Defender web
 
-Vous gérez les incidents à partir **d’incidents & alertes > incidents** sur le lancement rapide du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender.</a> Voici un exemple.
+Vous gérez les incidents à partir **d’incidents & alertes > incidents** sur le lancement rapide du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender web</a>. Voici un exemple.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Page Incidents dans le portail Microsoft 365 Defender web." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
-La sélection d’un nom d’incident affiche un résumé de l’incident et donne accès aux onglets avec des informations supplémentaires.
+La sélection d’un nom d’incident affiche un résumé de l’incident et donne accès aux onglets avec des informations supplémentaires. Voici un exemple.
 
 :::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exemple de page Résumé d’un incident dans le portail Microsoft 365 Defender web" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
@@ -99,7 +99,7 @@ Les onglets supplémentaires pour un incident sont les suivants :
 
 - Preuve et réponse
 
-  Tous les événements pris en charge et entités suspectes dans les alertes dans l’incident.
+  Tous les événements pris en charge et entités suspectes dans les alertes de l’incident.
 
 - Graph (prévisualisation)
 
@@ -120,15 +120,17 @@ En continu, identifiez les incidents les plus prioritaires pour l’analyse et l
 - [Tri pour](incident-queue.md) déterminer les incidents les plus prioritaires via le filtrage et le tri de la file d’attente d’incidents.
 - [Gestion](manage-incidents.md) des incidents en modifiant leur titre, en les attribuant à un analyste et en ajoutant des balises et des commentaires.
 
-1. Pour chaque incident, lancez une analyse et une analyse d’attaque et [d’alerte](investigate-incidents.md):
+Prenez en compte les étapes suivantes pour votre propre flux de travail de réponse aux incidents :
+
+1. Pour chaque incident, lancez une analyse et une analyse d’attaque et [d’alerte](investigate-incidents.md) :
  
-   1. Affichez le résumé de l’incident pour comprendre sa portée et sa  gravité, ainsi que les entités affectées par les onglets Résumé et **Graph** (aperçu).
+   1. Affichez le résumé de l’incident pour comprendre son étendue et sa gravité, ainsi que les entités affectées par les onglets Résumé **et Graph** (aperçu).
 
-   1. Commencez à analyser les alertes pour comprendre leur origine, leur étendue et leur gravité avec **l’onglet Alertes.**
+   1. Commencez à analyser les alertes pour comprendre leur origine, leur étendue et leur gravité avec **l’onglet Alertes** .
 
-   1. Si nécessaire, rassemblez des informations sur les appareils, les utilisateurs et les boîtes aux lettres touchés à l’aide des onglets **Appareils,** Utilisateurs et Boîtes **aux lettres.**
+   1. Si nécessaire, rassemblez des informations sur les appareils, les utilisateurs et les boîtes aux lettres touchés à l’aide des onglets **Appareils,** Utilisateurs et **Boîtes aux** lettres.
 
-   1. Découvrez comment Microsoft 365 Defender a [automatiquement résolu certaines alertes avec](m365d-autoir.md) l’onglet **Enquêtes.**
+   1. Découvrez comment Microsoft 365 Defender a [automatiquement résolu certaines alertes avec](m365d-autoir.md) l’onglet **Enquêtes**.
    
    1. Si nécessaire, utilisez les informations du jeu de données pour l’incident pour plus d’informations à l’aide de l’onglet Preuve **et** réponse.
 
@@ -145,7 +147,7 @@ En continu, identifiez les incidents les plus prioritaires pour l’analyse et l
 
 Si vous débutez dans l’analyse de la sécurité, consultez [l’introduction](incidents-overview.md) à la réponse à votre premier incident pour plus d’informations et pour passer en détail à un exemple d’incident.
 
-Pour plus d’informations sur la réponse aux incidents entre les produits Microsoft, consultez [cet article.](/security/compass/incident-response-overview)
+Pour plus d’informations sur la réponse aux incidents dans les produits Microsoft, consultez [cet article](/security/compass/incident-response-overview).
 
 ## <a name="example-security-operations-for-microsoft-365-defender"></a>Exemples d’opérations de sécurité pour Microsoft 365 Defender
 
@@ -163,7 +165,7 @@ Les tâches quotidiennes peuvent inclure les tâches suivantes :
 Les tâches mensuelles peuvent inclure les tâches suivantes :
 
 - Examen des [paramètres AIR](m365d-configure-auto-investigation-response.md)
-- Examen de [la gestion des niveaux de sécurité](microsoft-secure-score-improvement-actions.md) et & des [vulnérabilités](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
+- Examen de [la gestion des niveaux de sécurité](microsoft-secure-score-improvement-actions.md) [et & des vulnérabilités](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - Rapports à votre chaîne de gestion de la sécurité informatique
 
 Les tâches trimestrielles peuvent inclure un rapport et un briefing des résultats de sécurité au directeur de la sécurité des informations (CISO).
@@ -172,7 +174,7 @@ Les tâches annuelles peuvent inclure la conduite d’un incident majeur ou d’
 
 Les tâches quotidiennes, mensuelles, trimestrielles et annuelles peuvent être utilisées pour mettre à jour ou affiner des processus, des stratégies et des configurations de sécurité.
 
-Pour [plus d’Microsoft 365 Defender,](integrate-microsoft-365-defender-secops.md) voir Intégration de Microsoft 365 Defender vos opérations de sécurité.
+Pour [ plus d’Microsoft 365 Defender,](integrate-microsoft-365-defender-secops.md) voir Intégration de Microsoft 365 Defender vos opérations de sécurité.
 
 ### <a name="secops-resources-across-microsoft-products"></a>Ressources SecOps sur les produits Microsoft
 
@@ -191,20 +193,20 @@ Vous pouvez configurer des Microsoft 365 Defender pour informer votre personnel 
 - Groupe d’appareils.
 - Uniquement sur la première mise à jour par incident.
 
-La notification par courrier électronique contient des détails importants sur l’incident, tels que le nom de l’incident, sa gravité et ses catégories, entre autres. Vous pouvez également passer directement à l’incident et démarrer votre analyse immédiatement. Pour plus d’informations, voir [Examiner les incidents.](investigate-incidents.md)
+La notification par courrier électronique contient des détails importants sur l’incident, tels que le nom de l’incident, sa gravité et ses catégories, entre autres. Vous pouvez également passer directement à l’incident et démarrer votre analyse immédiatement. Pour plus d’informations, voir [Examiner les incidents](investigate-incidents.md).
 
 Vous pouvez ajouter ou supprimer des destinataires dans les notifications par courrier électronique. Les nouveaux destinataires sont avertis des incidents après leur ajout. 
 
 >[!NOTE]
->Vous avez besoin de l’autorisation « Gérer les paramètres de sécurité » pour configurer les paramètres de notification par courrier électronique. Si vous avez choisi d’utiliser la gestion des autorisations de base, les utilisateurs ayant des rôles Administrateur de sécurité ou Administrateur général peuvent configurer des notifications par courrier électronique pour vous. <br> <br>
+>Vous avez besoin de **l’autorisation Gérer les paramètres de sécurité** pour configurer les paramètres de notification par courrier électronique. Si vous avez choisi d’utiliser la gestion des autorisations de base, les utilisateurs ayant des rôles Administrateur de sécurité ou Administrateur général peuvent configurer des notifications par courrier électronique. <br> <br>
 De même, si votre organisation utilise le contrôle d’accès basé sur un rôle (RBAC), vous pouvez uniquement créer, modifier, supprimer et recevoir des notifications basées sur les groupes d’appareils que vous êtes autorisé à gérer.
 
 ### <a name="create-a-rule-for-email-notifications"></a>Créer une règle pour les notifications par courrier électronique
 
 Suivez ces étapes pour créer une règle et personnaliser les paramètres de notification par courrier électronique.
 
-1. Dans le volet de navigation, sélectionnez Paramètres > Microsoft 365 Defender > **notifications d’incident par courrier électronique.**
-2. Sélectionnez **Ajouter un élément.**
+1. Dans le volet de navigation, sélectionnez Paramètres > Microsoft 365 Defender > **notifications par courrier électronique d’incident**.
+2. **Sélectionnez Ajouter un élément**.
 3. Dans la page **Informations de** base, tapez le nom de la règle et une description, puis sélectionnez **Suivant**.
 4. Dans la **page Paramètres de** notification, configurez :
     - **Gravité de l’alerte** : choisissez les gravités d’alerte qui déclencheront une notification d’incident. Par exemple, si vous souhaitez uniquement être informé des incidents de gravité élevée, sélectionnez **Élevé**.
@@ -215,12 +217,12 @@ Suivez ces étapes pour créer une règle et personnaliser les paramètres de no
 
     :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="Paramètres de notification pour les notifications d’incident par courrier électronique." lightbox="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png":::
 
-5. Sélectionnez **Suivant**. Dans la page **Destinataires,** ajoutez les adresses de messagerie qui recevront les notifications d’incident. Sélectionnez **Ajouter** après avoir tapé chaque nouvelle adresse de messagerie. Pour tester les notifications et vérifier que les destinataires les reçoivent dans les boîtes de réception, **sélectionnez Envoyer un message électronique de test.** 
-6. Sélectionnez **Suivant**. Dans la page **Examiner la règle,** examinez les paramètres de la règle, puis sélectionnez **Créer une règle.** Les destinataires commenceront à recevoir des notifications d’incident par courrier électronique en fonction des paramètres.
+5. Sélectionnez **Suivant**. Dans la page **Destinataires** , ajoutez les adresses de messagerie qui recevront les notifications d’incident. **Sélectionnez Ajouter** après avoir tapé chaque nouvelle adresse de messagerie. Pour tester les notifications et vérifier que les destinataires les reçoivent dans les boîtes de réception, **sélectionnez Envoyer un message électronique de test**. 
+6. Sélectionnez **Suivant**. Dans la page **Examiner la règle** , examinez les paramètres de la règle, puis sélectionnez **Créer une règle**. Les destinataires commenceront à recevoir des notifications d’incident par courrier électronique en fonction des paramètres.
 
-Pour modifier une règle existante, sélectionnez-la dans la liste des règles. Dans le volet avec le  nom de la règle, sélectionnez Modifier la règle et a apporté vos modifications dans les pages De **base,** **Paramètres** de notification et **Destinataires.**
+Pour modifier une règle existante, sélectionnez-la dans la liste des règles. Dans le volet avec le nom de la règle,  sélectionnez Modifier la règle et a apporté vos modifications dans les pages De **base,** **Paramètres de notification** et **Destinataires**.
 
-Pour supprimer une règle, sélectionnez-la dans la liste des règles. Dans le volet avec le nom de la règle, sélectionnez **Supprimer.**
+Pour supprimer une règle, sélectionnez-la dans la liste des règles. Dans le volet avec le nom de la règle, sélectionnez **Supprimer**.
 
 
 ## <a name="training-for-security-analysts"></a>Formation pour les analystes de sécurité
@@ -234,7 +236,7 @@ Utilisez ce module d’apprentissage de Microsoft Learn pour comprendre comment 
 > [!div class="nextstepaction"]
 > [Démarrer >](/learn/modules/defender-investigate-incidents/)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Utilisez les étapes répertoriées en fonction de votre niveau d’expérience ou de votre rôle dans votre équipe de sécurité.
 
@@ -244,8 +246,8 @@ Suivez ce tableau pour connaître votre niveau d’expérience en matière d’a
 
 | Niveau | Étapes |
 |:-------|:-----|
-| **New** | <ol><li> Consultez la procédure pas à pas Répondre à votre premier [incident](first-incident-overview.md) pour obtenir une visite guidée d’un processus classique d’analyse, de correction et de révision post-incident dans le portail Microsoft 365 Defender avec un exemple d’attaque. </li><li> Voir quels incidents doivent [être](incident-queue.md) hiérarchisés en fonction de la gravité et d’autres facteurs. </li><li> [Gérer les incidents,](manage-incidents.md)ce qui inclut le changement de nom, l’affectation, la classification et l’ajout de balises et de commentaires en fonction de votre flux de travail de gestion des incidents.</li></ol> |
-| **Expérimenté** | <ol><li> Commencer avec la file d’attente des incidents à partir de la page **Incidents** du portail Microsoft 365 Defender web. Vous pouvez alors effectuer les opérations suivantes : </li> <ul><li> Voir quels incidents doivent [être](incident-queue.md) hiérarchisés en fonction de la gravité et d’autres facteurs. </li><li> [Gérer les incidents,](manage-incidents.md)ce qui inclut le changement de nom, l’affectation, la classification et l’ajout de balises et de commentaires en fonction de votre flux de travail de gestion des incidents. </li><li> Effectuer [des examens](investigate-incidents.md) des incidents. </li></ul> </li><li> Suivez les menaces émergentes et répondez-y avec [l’analyse des menaces.](threat-analytics.md) </li><li>  Recherchez de manière proactive les menaces avec [le recherche avancée de menaces.](advanced-hunting-overview.md) </li><li> Consultez ces manuels de réponse aux incidents pour obtenir des [instructions détaillées](/security/compass/incident-response-playbooks) sur le hameçonnage, la pulvérisation de mots de passe et les attaques d’octroi de consentement d’application. </li></ol> |
+| **New** | <ol><li> Consultez la procédure pas à pas Répondre à votre premier [incident](first-incident-overview.md) pour obtenir une visite guidée d’un processus classique d’analyse, de correction et de révision post-incident dans le portail Microsoft 365 Defender avec un exemple d’attaque. </li><li> Voir quels incidents [doivent être](incident-queue.md) hiérarchisés en fonction de la gravité et d’autres facteurs. </li><li> [Gérer les incidents](manage-incidents.md), ce qui inclut le changement de nom, l’affectation, la classification et l’ajout de balises et de commentaires en fonction de votre flux de travail de gestion des incidents.</li></ol> |
+| **Expérimenté** | <ol><li> Commencer avec la file d’attente des **incidents** à partir de la page Incidents du portail Microsoft 365 Defender web. Vous pouvez alors effectuer les opérations suivantes : </li> <ul><li> Voir quels incidents [doivent être](incident-queue.md) hiérarchisés en fonction de la gravité et d’autres facteurs. </li><li> [Gérer les incidents](manage-incidents.md), ce qui inclut le changement de nom, l’affectation, la classification et l’ajout de balises et de commentaires en fonction de votre flux de travail de gestion des incidents. </li><li> Effectuer [des examens](investigate-incidents.md) des incidents. </li></ul> </li><li> Suivre les menaces émergentes et y répondre à l’grâce de [l’analyse des menaces](threat-analytics.md). </li><li>  Recherchez de manière proactive les menaces avec [le recherche avancée de menaces](advanced-hunting-overview.md). </li><li> Consultez ces [manuels de réponse aux incidents pour obtenir des instructions détaillées](/security/compass/incident-response-playbooks) sur le hameçonnage, la pulvérisation de mots de passe et les attaques d’octroi de consentement d’application. </li></ol> |
 
 
 ### <a name="security-team-role"></a>Rôle d’équipe de sécurité
@@ -254,8 +256,8 @@ Suivez ce tableau en fonction de votre rôle d’équipe de sécurité.
 
 | Rôle | Étapes |
 |:-------|:-----|
-| Répondeur d’incident (niveau 1) | Commencer avec la file d’attente des incidents à partir de la page **Incidents** du portail Microsoft 365 Defender web. Vous pouvez alors effectuer les opérations suivantes : <ul><li> Voir quels incidents doivent [être](incident-queue.md) hiérarchisés en fonction de la gravité et d’autres facteurs. </li><li> [Gérer les incidents,](manage-incidents.md)ce qui inclut le changement de nom, l’affectation, la classification et l’ajout de balises et de commentaires en fonction de votre flux de travail de gestion des incidents. </li></ul> |
-| Enquêteur ou analyste de sécurité (niveau 2) | <ol><li> Effectuer [des examens](investigate-incidents.md) des incidents à partir de la page **Incidents** du portail Microsoft 365 Defender web. </li><li> Consultez ces manuels de réponse aux incidents pour obtenir des [instructions détaillées](/security/compass/incident-response-playbooks) sur le hameçonnage, la pulvérisation de mots de passe et les attaques d’octroi de consentement d’application. </li></ol> |
-| Analyste de sécurité avancée ou menace (niveau 3) | <ol><li>Effectuer [des examens](investigate-incidents.md) des incidents à partir de la page **Incidents** du portail Microsoft 365 Defender web. </li><li> Suivez les menaces émergentes et répondez-y avec [l’analyse des menaces.](threat-analytics.md) </li><li> Recherchez de manière proactive les menaces avec [le recherche avancée de menaces.](advanced-hunting-overview.md) </li><li> Consultez ces manuels de réponse aux incidents pour obtenir des [instructions détaillées](/security/compass/incident-response-playbooks) sur le hameçonnage, la pulvérisation de mots de passe et les attaques d’octroi de consentement d’application. |
-| Gestionnaire SOC | Découvrez comment intégrer des Microsoft 365 Defender dans votre Centre des opérations [de sécurité (SOC).](integrate-microsoft-365-defender-secops.md) |
+| Répondeur d’incident (niveau 1) | Commencer avec la file d’attente des **incidents** à partir de la page Incidents du portail Microsoft 365 Defender web. Vous pouvez alors effectuer les opérations suivantes : <ul><li> Voir quels incidents [doivent être](incident-queue.md) hiérarchisés en fonction de la gravité et d’autres facteurs. </li><li> [Gérer les incidents](manage-incidents.md), ce qui inclut le changement de nom, l’affectation, la classification et l’ajout de balises et de commentaires en fonction de votre flux de travail de gestion des incidents. </li></ul> |
+| Enquêteur ou analyste de sécurité (niveau 2) | <ol><li> Effectuer [des examens](investigate-incidents.md) des incidents à partir de **la page Incidents** du portail Microsoft 365 Defender web. </li><li> Consultez ces [manuels de réponse aux incidents pour obtenir des instructions détaillées](/security/compass/incident-response-playbooks) sur le hameçonnage, la pulvérisation de mots de passe et les attaques d’octroi de consentement d’application. </li></ol> |
+| Analyste de sécurité avancée ou menace (niveau 3) | <ol><li>Effectuer [des examens](investigate-incidents.md) des incidents à partir de **la page Incidents** du portail Microsoft 365 Defender web. </li><li> Suivre les menaces émergentes et y répondre à l’grâce de [l’analyse des menaces](threat-analytics.md). </li><li> Recherchez de manière proactive les menaces avec [le recherche avancée de menaces](advanced-hunting-overview.md). </li><li> Consultez ces [manuels de réponse aux incidents pour obtenir des instructions détaillées](/security/compass/incident-response-playbooks) sur le hameçonnage, la pulvérisation de mots de passe et les attaques d’octroi de consentement d’application. |
+| Gestionnaire SOC | Découvrez comment intégrer [des Microsoft 365 Defender dans votre Centre des opérations de sécurité (SOC).](integrate-microsoft-365-defender-secops.md) |
 

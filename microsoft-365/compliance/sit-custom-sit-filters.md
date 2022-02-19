@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article présente une liste des filtres qui peuvent être codés dans des types d’informations sensibles personnalisés.
-ms.openlocfilehash: e5f3fb99ec4454410c3719dc3d76356e02f03573
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: bcecc13776b20f8b4c61eaf499a99397931fe498
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818227"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903752"
 ---
 # <a name="custom-sensitive-information-type-filters-reference"></a>Référence de filtres de type d’informations sensibles personnalisé
 
@@ -343,4 +343,4 @@ Les filtres seront appliqués sur **toutes les** instances classées par l’un 
 
 - [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
 
-- [Éléments recherchés par les fonctions DLP](what-the-dlp-functions-look-for.md)
+- [Fonctions de type d’informations sensibles](sit-functions.md)

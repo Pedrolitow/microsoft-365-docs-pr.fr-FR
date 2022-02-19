@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment créer et exécuter une requête dans un jeu à réviser pour organiser le contenu pour une révision plus efficace dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f1f7fa8f811f5a2bda526454ae8b03163cfed187
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ebcb129241565321297b78072a5d02d173552ee1
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206060"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62904170"
 ---
 # <a name="query-and-filter-content-in-a-review-set"></a>Interroger et filtrer du contenu dans un jeu à réviser
 
@@ -52,15 +52,15 @@ Pour ajouter ou supprimer des filtres qui sont affichés pour le jeu à réviser
 
 Les filtres disponibles sont organisés en quatre sections :
 
-- **Recherche**: filtres qui fournissent différentes fonctionnalités de recherche.
+- **Recherche :** filtres qui fournissent différentes fonctionnalités de recherche.
 
-- **Codage analytique &** prédictif : filtre les propriétés générées et ajoutées aux documents lorsque vous exécutez le travail d’analyse de messagerie électronique **Document &** ou que vous utilisez des modèles de codage prédictifs.
+- **Analyse &** codage prédictif : filtre les propriétés générées et ajoutées aux documents lorsque vous exécutez le travail d’analyse du courrier **&** document ou que vous utilisez des modèles de codage prédictifs.
 
 - **ID :** filtre toutes les propriétés d’ID des documents.
 
-- **Propriétés d’élément**: filtre les propriétés de document. 
+- **Propriétés d’élément** : filtre les propriétés de document. 
 
-Développez chaque section et sélectionnez ou désélectionnez des filtres pour les ajouter ou les supprimer dans l’ensemble de filtres. Lorsque vous ajoutez un filtre, il s’affiche dans le jeu de filtres. 
+Développez chaque section et sélectionnez ou désélectionnez des filtres pour les ajouter ou les supprimer dans le jeu de filtres. Lorsque vous ajoutez un filtre, il s’affiche dans le jeu de filtres. 
 
 ![Liste des sections et propriétés de filtre dans le panneau de filtrage.](../media/FilterPanel2.png)
 
@@ -73,17 +73,17 @@ Chaque champ utilisable dans une recherche dans un jeu à réviser possède un f
 
 Il existe plusieurs types de filtres :
 
-- **Texte libre**: un filtre de texte libre est appliqué à des champs de texte tels que « Subject ». Vous pouvez lister plusieurs termes de recherche en les séparant par une virgule.
+- **Texte libre** : un filtre de texte libre est appliqué à des champs de texte tels que « Subject ». Vous pouvez lister plusieurs termes de recherche en les séparant par une virgule.
 
-- **Date**: un filtre de date est utilisé pour les champs de date tels que « Date de dernière modification ».
+- **Date** : un filtre de date est utilisé pour les champs de date tels que « Date de dernière modification ».
 
 - **Options de** recherche : un filtre d’options de recherche fournit une liste des valeurs possibles (chaque valeur est affichée avec une case à cocher que vous pouvez sélectionner) pour des champs particuliers dans l’avis. Ce filtre est utilisé pour les champs, tels que « Expéditeur », où il existe un nombre fini de valeurs possibles dans le jeu à réviser.
 
-- **Mot** clé : une condition de mot clé est une instance spécifique de condition de texte libre que vous pouvez utiliser pour rechercher des termes. Vous pouvez également utiliser un langage de requête de type KQL dans ce type de filtre. Pour plus d’informations, voir les sections Langage de requête et Générateur de requêtes avancé dans cette rubrique.
+- **Mot** clé : une condition de mot clé est une instance spécifique de condition de texte libre que vous pouvez utiliser pour rechercher des termes. Vous pouvez également utiliser un langage de requête de type KQL dans ce type de filtre. Pour plus d’informations, voir les sections Langage de requête et Générateur de requêtes avancé de cet article.
 
 ## <a name="include-and-exclude-filter-relationships"></a>Inclure et exclure des relations de filtre
 
-Vous avez la possibilité de modifier la relation Inclure et exclure pour un filtre particulier. Par exemple, dans le filtre Balise, vous pouvez exclure les éléments **marqués** avec une balise particulière en sélectionnant Égal à aucun des éléments du filtre de ladown. 
+Vous pouvez modifier la relation Inclure et exclure pour un filtre particulier. Par exemple, dans le filtre De balise, vous pouvez exclure les éléments qui sont **marqués** avec une balise particulière en sélectionnant Égal à aucun des éléments dans le filtre de ladown. 
 
 ![Exclure le filtre de balise.](../media/TagFilterExclude.png)
 
@@ -91,7 +91,7 @@ Vous avez la possibilité de modifier la relation Inclure et exclure pour un fil
 
 Une fois que vous êtes satisfait de vos filtres, vous pouvez enregistrer la combinaison de filtres en tant que requête de filtre. Cela vous permet d’appliquer le filtre dans les prochaines sessions de révision.
 
-Pour enregistrer un filtre, **sélectionnez Enregistrer la requête et** nommez-la. Vous ou d’autres réviseurs pouvez exécuter  des requêtes de filtre précédemment enregistrées en sélectionnant la dropdown des requêtes de filtre enregistrées et en sélectionnant une requête de filtre à appliquer aux documents de l’ensemble de révision. 
+Pour enregistrer un filtre, **sélectionnez Enregistrer la requête et** nommez-la. Vous ou d’autres réviseurs pouvez exécuter des requêtes de filtre précédemment  enregistrées en sélectionnant la dropdown requêtes de filtre enregistrées et en sélectionnant une requête de filtre à appliquer aux documents de l’ensemble de révision. 
 
 ![Enregistrez une requête de filtre.](../media/SaveFilterQuery.png)
 
@@ -107,12 +107,32 @@ En plus d’utiliser des filtres, vous pouvez également utiliser un langage de 
 
 Vous pouvez également créer des requêtes plus avancées pour rechercher des documents dans un jeu à réviser.
 
-1. Ouvrez le panneau de filtrage, **sélectionnez Filtres** et **développez** la section Recherche.
+1. Ouvrez le panneau de filtrage, sélectionnez **Filtres** et **développez la** section Recherche.
 
   ![Ajoutez un filtre KQL.](../media/AddKQLFilter.png)
 
-2. Sélectionnez **le filtre KQL,** puis cliquez **sur Ouvrir le générateur de requêtes.**
+2. Sélectionnez **le filtre KQL** , puis cliquez **sur Ouvrir le générateur de requêtes**.
 
-   Dans ce panneau, vous pouvez créer des requêtes KQL complexes à l’aide du générateur de requêtes. Vous pouvez ajouter des conditions ou des groupes de conditions composés de plusieurs conditions connectées logiquement par des **relations AND** ou **OR.**
+   Dans ce panneau, vous pouvez créer des requêtes KQL complexes à l’aide du générateur de requêtes. Vous pouvez ajouter des conditions ou des groupes de conditions composés de plusieurs conditions connectées logiquement par des **relations AND** ou **OR** .
 
    ![Utilisez le générateur de requêtes pour configurer des requêtes de filtre complexes.](../media/ComplexQuery.png)
+
+## <a name="filter-partially-indexed-items"></a>Filtrer les éléments partiellement indexés
+
+Si vous avez sélectionné l’option d’ajout d’éléments partiellement indexés à partir de sources de données supplémentaires lorsque vous avez engagé le brouillon de collection dans un jeu à réviser. Vous souhaiterez probablement identifier et afficher ces éléments pour déterminer si un élément peut être pertinent pour votre enquête et si vous devez corriger l’erreur qui a entraîné l’indexation partielle de l’élément.
+
+Pour l’instant, il n’existe pas d’option de filtre dans un jeu à réviser pour afficher les éléments partiellement indexés. Mais nous y travaillons. En attendant, voici une façon de filtrer et d’afficher les éléments partiellement indexés que vous avez ajoutés à un jeu à réviser.
+
+1. Créer une collection et la valider dans un nouveau jeu à réviser *sans* ajouter d’éléments partiellement indexés à partir des sources de données supplémentaires.
+
+2. Créez une collection en copiant la collection à l’étape 1.
+
+3. Valider la nouvelle collection dans le même jeu à réviser. Mais cette fois, ajoutez les éléments partiellement indexés à partir des sources de données supplémentaires. Étant donné que les éléments de la collection que vous avez créée à l’étape 1 ont déjà été ajoutés au jeu à réviser, seuls les éléments partiellement indexés de la deuxième collection sont ajoutés au jeu à réviser.
+
+4. Une fois que les deux collections ont été ajoutées au jeu à réviser, allez dans le jeu à réviser, puis sélectionnez **Les jeux ManageLoad** > .
+
+5. Copiez ou notez **l’ID de chargement** de la deuxième collection (celle que vous avez créée à l’étape 2). Le nom de la collection est identifié dans la **colonne Informations sur la** source.
+
+6. De retour dans le jeu à réviser, cliquez sur **Filtrer**, développez la section **ID** , puis cochez la case Charger **l’ID** .
+
+7. Développez **le filtre Load Id** , puis cochez la case correspondant à l’ID de chargement correspondant à la deuxième collection pour afficher les éléments partiellement indexés.

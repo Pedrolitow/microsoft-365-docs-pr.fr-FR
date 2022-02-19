@@ -1,5 +1,5 @@
 ---
-title: Commencer à travailler avec des types d’informations sensibles personnalisées
+title: Créer un type d’informations sensibles personnalisé
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,16 +15,16 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour DLP dans le Centre de sécurité & conformité.
+description: Découvrez comment créer, modifier, supprimer et tester des types d’informations sensibles personnalisés dans le Centre de conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 049d6b4045e19f5f9d4de7f52e5e8b99bd81a2b9
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: 2526ab9fdde4e5cedbbf3e831e6ec8ac9a6a5747
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265534"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62900813"
 ---
-# <a name="get-started-with-custom-sensitive-information-types"></a>Commencer à travailler avec des types d’informations sensibles personnalisées
+# <a name="create-custom-sensitive-information-types-in-the-compliance-center"></a>Créer des types d’informations sensibles personnalisés dans le Centre de conformité
 
 Si les types d’informations sensibles pré configurés ne répondent pas à vos besoins, vous pouvez créer vos propres types d’informations sensibles personnalisés que vous définissez entièrement, ou vous pouvez copier un des types pré configurés et le modifier.
 
@@ -42,7 +42,7 @@ Il existe deux façons de créer un type d’informations sensibles :
     - [Expressions régulières](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/) - les types d’informations sensibles Microsoft 365 utilisent le moteur Boost.RegEx 5.1.3
     - listes de mots clés : vous pouvez créer vos propres listes de mots clés lorsque vous définissez votre type d’informations sensibles ou faites votre choix parmi des listes de mots clés existantes.
     - [Dictionnaire de mots clés](create-a-keyword-dictionary.md)
-    - [Fonctions](what-the-dlp-functions-look-for.md)
+    - [Fonctions de type d’informations sensibles](sit-functions.md)
     - [Niveaux de confiance](sensitive-information-type-learn-about.md#more-on-confidence-levels)
  
 - Vous devez avoir une autorisation d’administrateur général ou d’administrateur de conformité pour créer, tester et déployer un type d’informations sensibles personnalisé via l’interface utilisateur. Consulter [À propos des rôles d’administration](/office365/admin/add-users/about-admin-roles) dans Office 365.
@@ -57,7 +57,7 @@ Il existe deux façons de créer un type d’informations sensibles :
 
 Utilisez cette procédure pour créer un type d’informations sensibles que vous définissez entièrement. 
 
-1. Dans le Centre de conformité, go to **Data classification** Sensitive \> **info types** and choose Create sensitive info **type**.
+1. Dans le Centre de conformité, sélectionnez **Classification des** \> **données Types** d’informations sensibles et choisissez **Créer un type d’informations sensibles**.
 
 2. Remplissez les valeurs du **Nom** et de la **Description** puis sélectionnez **Suivant**.
 
@@ -65,13 +65,13 @@ Utilisez cette procédure pour créer un type d’informations sensibles que vou
 
 4. Choisissez le niveau de confiance par défaut pour le motif. Les valeurs sont **Confiance faible,**, **Confiance moyenne,** et **Confiance élevé**.
 
-5. Choisissez et définissez **L’élément principal**. L’élément principal peut être une **Expression régulière** avec un validateur facultatif, une **Liste de mots clés**, un **Dictionnaire de mots clés**, ou l’une des **Fonctions** pré-configurées. Pour obtenir plus d’informations sur les fonctions DLP, consultez l’article [Éléments recherchés par les fonctions DLP](what-the-dlp-functions-look-for.md). Pour plus d’informations sur la date et les validateurs de la checksum, voir Plus d’informations sur les [validateurs d’expression régulière.](#more-information-on-regular-expression-validators)
+5. Choisissez et définissez **L’élément principal**. L’élément principal peut être une **Expression régulière** avec un validateur facultatif, une **Liste de mots clés**, un **Dictionnaire de mots clés**, ou l’une des **Fonctions** pré-configurées. Pour plus d’informations sur les fonctions DLP, voir [Fonctions de type Informations sensibles](sit-functions.md). Pour plus d’informations sur la date et les validateurs de la base de contrôle, voir validateurs d’expression régulière type d’informations [sensibles](sit-regex-validators-additional-checks.md#sensitive-information-type-regular-expression-validators).
 
 6. Remplissez une valeur pour la **Proximité de caractère**.
 
 7. (Facultatif) Ajoutez des éléments de prise en charge si vous en avez. Les éléments de prise en charge peuvent être une expression régulière avec un validateur facultatif, une liste de mots clés, un dictionnaire de mots clés ou l’une des fonctions prédéfinies. Les éléments de prise en charge peuvent avoir leur propre configuration **de proximité des** caractères. 
 
-8. (Facultatif) Ajouter des [**vérifications supplémentaires**](#more-information-on-additional-checks) à partir de la liste des vérifications disponibles.
+8. (Facultatif) Ajouter des [**vérifications supplémentaires**](sit-regex-validators-additional-checks.md#sensitive-information-type-additional-checks) à partir de la liste des vérifications disponibles.
 
 9. Sélectionnez **Créer**.
 
@@ -90,6 +90,22 @@ Utilisez cette procédure pour créer un type d’informations sensibles que vou
 
 Utilisez cette procédure pour créer un type d’informations sensibles basé sur un type d’informations sensibles existant. 
 
+> [!NOTE]
+> Ces sits ne peuvent pas être copiés :
+> - Numéro de permis de conduire canada
+> - Numéro de permis de conduire de l’UE
+> - Numéro d’identification national de l’UE
+> - Numéro de passeport de l’UE
+> - Numéro de sécurité sociale de l’UE ou identification équivalente
+> - Numéro d’identification fiscale de l’UE
+> - Classification internationale des maladie (ICD-10-CM)
+> - Classification internationale des maladie (ICD-9-CM)
+> - Numéro de permis de conduire américain
+
+Vous pouvez également créer des types d’informations sensibles personnalisés à l’aide de PowerShell et de fonctionnalités de correspondance exacte des données. Pour en savoir plus sur ces méthodes, consultez :
+- [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [En savoir plus sur les types d’informations sensibles exacts basés sur la correspondance de données](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+
 1. Dans le centre de conformité, accédez à **Classifications des données** \> **Types d’informations sensibles**, puis sélectionnez le type d’informations sensibles que vous voulez copier.
 
 2. Dans le lanceur, sélectionnez **Copier**.
@@ -104,11 +120,11 @@ Utilisez cette procédure pour créer un type d’informations sensibles basé s
 
 7. Vous pouvez choisir de modifier ou de supprimer les motifs existants et d’en ajouter de nouveaux. Choisissez le niveau de confiance par défaut pour le nouveau motif. Les valeurs sont **Confiance faible,**, **Confiance moyenne,** et **Confiance élevé**.
 
-8. Choisissez et définissez **L’élément principal**. L’élément principal peut être une **Expression régulière**, une **Liste de mots clés**, un **Dictionnaire de mots clés**, ou l’une des **Fonctions** pré-configurées. Consultez, [Éléments recherchés par les fonctions DLP ](what-the-dlp-functions-look-for.md).
+8. Choisissez et définissez **L’élément principal**. L’élément principal peut être une **Expression régulière**, une **Liste de mots clés**, un **Dictionnaire de mots clés**, ou l’une des **Fonctions** pré-configurées. Voir, [Fonctions de type Informations sensibles](sit-functions.md).
 
 9. Remplissez une valeur pour la **Proximité de caractère**.
 
-10. (Facultatif) Si vous avez des **Éléments de prise en charge** ou des [**Contrôles supplémentaires**](#more-information-on-additional-checks), ajoutez les. Si nécessaire, vous pouvez grouper vos **Éléments de prise en charge**.
+10. (Facultatif) Si vous avez des **éléments de prise en charge** ou des [**vérifications supplémentaires**](sit-regex-validators-additional-checks.md#sensitive-information-type-additional-checks) , ajoutez-les. Si nécessaire, vous pouvez grouper vos **Éléments de prise en charge**.
 
 11. Sélectionnez **Créer**.
 
@@ -159,120 +175,15 @@ La limite de nombre d’instances SIT s’applique lorsque des sits sont utilis�
 - Microsoft Defender for Cloud Apps
 - Microsoft Priva
 
-Pour qu’un élément analysé réponde aux critères de règle, le nombre d’instances uniques d’un sit dans un élément unique doit être entre les valeurs min et max. Il s’agit du nombre **d’instances.**
+Pour qu’un élément analysé réponde aux critères de règle, le nombre d’instances uniques d’un sit dans un élément unique doit être entre les valeurs min et max. Il s’agit du nombre **d’instances**.
 
 - **Champ Min** : limite inférieure (nombre minimal) d’instances uniques d’un sit qui doit être trouvée dans un élément pour déclencher une correspondance. Le champ min prend en charge les valeurs de :
     - 1 à 500
 - **Champ** max : limite supérieure du nombre d’instances uniques d’un sit qui se trouvent dans un élément et déclenchent toujours une correspondance. Le champ max prend en charge les valeurs de :
     - 1 à 500 : utilisez cette fonction lorsque vous souhaitez définir une limite supérieure spécifique inférieure ou inférieure à 500 sur le nombre d’instances d’un sit dans un élément.
-    - Tout : permet de répondre aux critères de nombre d’instances uniques lorsqu’un nombre indéfini d’instances uniques d’un sit est trouvé dans un élément analysé et que ce nombre d’instances uniques répond au nombre minimal d’instances uniques ou dépasse le nombre `Any` minimal d’instances uniques. En d’autres termes, les critères de nombre d’instances uniques sont satisfaits tant que la valeur min est remplie.
+    - Tout : `Any` permet de répondre aux critères de nombre d’instances uniques lorsqu’un nombre indéfini d’instances uniques d’un sit est trouvé dans un élément analysé et que ce nombre d’instances uniques répond au nombre minimal d’instances uniques ou dépasse le nombre minimal d’instances uniques. En d’autres termes, les critères de nombre d’instances uniques sont satisfaits tant que la valeur min est remplie.
 
-Par exemple, si vous souhaitez que la règle déclenche une correspondance lorsqu’au moins 500 instances uniques d’un sit sont trouvées dans un seul élément, définissez la valeur **min** sur et la valeur maximale sur `500`  `Any` .
-
-## <a name="modify-custom-sensitive-information-types-in-the-compliance-center"></a>Modifier des types d’informations sensibles personnalisés dans le centre de conformité
-
-1. Dans le centre de conformité, accédez à **Classification de données** \> **Types d’informations sensibles**, puis sélectionnez le type d’informations sensibles dans la liste que vous voulez modifier, puis sélectionnez **Modifier**.
-
-2. Vous pouvez ajouter d’autres motifs, avec des éléments principaux et de prise en charge uniques, des niveaux de confiance, la proximité des caractères et des [**vérifications supplémentaires**](#more-information-on-additional-checks), ou modifier/supprimer les éléments existants.
-
-## <a name="remove-custom-sensitive-information-types-in-the-compliance-center"></a>Supprimer des types d’informations sensibles personnalisés dans le centre de Conformité 
-
-> [!NOTE]
-> Vous pouvez uniquement supprimer des types d’informations sensibles personnalisés ; vous ne pouvez pas supprimer des types d’informations sensibles intégrés.
-
-> [!IMPORTANT]
-> Avant de supprimer un type d’informations sensibles personnalisé, vérifiez qu’aucune stratégie DLP ou règle de flux de courrier Exchange (également appelées règles de transport) ne référence toujours le type d’informations sensibles.
-
-1. Dans le centre de conformité, accédez à **Classification des données** \> **Types d’informations sensibles** puis choisissez le type d’informations sensibles dans la liste que vous voulez supprimer.
-
-2. Dans le lanceur qui s’ouvre, sélectionnez **Supprimer**.
-
-> [!NOTE]
-> Ces sits ne peuvent pas être copiés :
-> - Numéro de permis de conduire canada
-> - Numéro de permis de conduire de l’UE
-> - Numéro d’identification national de l’UE
-> - Numéro de passeport de l’UE
-> - Numéro de sécurité sociale de l’UE ou identification équivalente
-> - Numéro d’identification fiscale de l’UE
-> - Classification internationale des maladie (ICD-10-CM)
-> - Classification internationale des maladie (ICD-9-CM)
-> - Numéro de permis de conduire américain
-
-Vous pouvez également créer des types d’informations sensibles personnalisés à l’aide de PowerShell et de fonctionnalités de correspondance exacte des données. Pour en savoir plus sur ces méthodes, consultez :
-- [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [En savoir plus sur les types d’informations sensibles exacts basés sur la correspondance de données](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
-
-## <a name="more-information-on-regular-expression-validators"></a>Plus d’informations sur les validateurs d’expression régulière
-
-### <a name="checksum-validator"></a>Validateur checksum
-
-Si vous devez exécuter une base de contrôle sur un chiffre dans une expression régulière, vous pouvez utiliser le *validateur de la base de contrôle.* Par exemple, par exemple, vous devez créer une sit pour un numéro de licence à huit chiffres où le dernier chiffre est un chiffre de sommes de contrôle qui est validé à l’aide d’un calcul mod 9. Vous avez installé l’algorithme de sommes de contrôle comme ceci :
-
-```console
-Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8
-Mod value = Sum % 9
-If Mod value == digit 8
-    Account number is valid
-If Mod value != digit 8
-    Account number is invalid
-```
-
-1. Définissez l’élément principal avec cette expression régulière :
-
-   ```console
-   \d{8}
-   ```
-
-2. Ajoutez ensuite le validateur de la checksum.
-
-3. Ajoutez les valeurs de poids séparées par des virgules, la position du chiffre de contrôle et la valeur Mod. Pour plus d’informations sur l’opération Mod sous, consultez [l’opération Mod mode.](https://en.wikipedia.org/wiki/Modulo_operation)
-
-   > [!NOTE]
-   > Si le chiffre de contrôle ne fait pas partie du calcul de la sommes de contrôle, utilisez 0 comme poids pour le chiffre de contrôle. Par exemple, dans le cas ci-dessus, le poids 8 est égal à 0 si le chiffre de contrôle ne doit pas être utilisé pour calculer le chiffre de vérification.  Modulo_operation).
-
-   :::image type="content" alt-text="Capture d’écran du validateur de la checkum configurée." source="../media/checksum-validator.png" lightbox="../media/checksum-validator.png":::
-
-### <a name="date-validator"></a>Validateur de date
-
-Si une valeur de date incorporée dans une expression régulière fait partie d’un nouveau modèle que vous créez, vous pouvez utiliser le *validateur* de date pour tester qu’elle répond à vos critères. Par exemple, dites que vous souhaitez créer un sit pour un numéro d’identification d’employé à neuf chiffres. Les six premiers chiffres sont la date d’embauche au format DDMMYY et les trois derniers sont des numéros générés de manière aléatoire. Pour vérifier que les six premiers chiffres sont au format correct.
-
-1. Définissez l’élément principal avec cette expression régulière :
-
-   ```console
-   \d{9}
-   ```
-
-2. Ajoutez ensuite le validateur de date.
-
-3. Sélectionnez le format de date et le décalage de début. Étant donné que la chaîne de date est les six premiers chiffres, le décalage est `0` .
-
-   :::image type="content" alt-text="Capture d’écran du validateur de date configuré." source="../media/date-validator.png" lightbox="../media/date-validator.png":::
-
-### <a name="functional-processors-as-validators"></a>Processeurs fonctionnels en tant que validateurs
-
-Vous pouvez utiliser des processeurs de fonctions pour certains des sits les plus couramment utilisés comme validateurs. Cela vous permet de définir votre propre expression régulière tout en vous assurant qu’elle passe les vérifications supplémentaires requises par la sit. Par exemple, Func_India_Aadhar s’assure que l’expression régulière personnalisée définie par vous transmet la logique de validation requise pour la carte Aadhar indien. Pour plus d’informations sur les fonctions DLP qui peuvent être utilisées comme validateurs, voir ce que les fonctions [DLP recherchent.](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for) 
-
-### <a name="luhn-check-validator"></a>Validateur de vérification Luhn
-
-Vous pouvez utiliser le validateur de vérification Luhn si vous avez un type d’informations sensibles personnalisé qui inclut une expression régulière qui doit transmettre l’algorithme [Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm).
-
-## <a name="more-information-on-additional-checks"></a>Informations supplémentaires sur les contrôles supplémentaires
-
-Voici des définitions et des exemples pour les contrôles supplémentaires disponibles.
-
-**Exclure des correspondances spécifiques** : ce contrôle vous permet de définir des mots clés à exclure lors de la détection de correspondances au modèle que vous modifiez. Par exemple, vous pouvez exclure les numéros de carte de crédit tels que « 4111111111111111 » afin qu'ils ne soient pas considérés comme des numéros valides.
-
-**Commence ou ne commence pas par les caractères** : ce contrôle vous permet de définir les caractères par lesquels les éléments en correspondance doivent ou non commencer. Par exemple, si vous souhaitez que le modèle détecte uniquement les numéros de carte de crédit qui commencent par 41, 42 ou 43, sélectionnez **Commence par** et ajoutez 41, 42 et 43 à la liste, séparés par des virgules. 
-
-**Se termine ou ne se termine pas par des caractères**: ce contrôle vous permet de définir les caractères par lesquels les éléments en correspondance doivent ou ne doivent pas se terminer. Par exemple, si votre numéro d’ID d’employé ne peut pas se terminer par 0 ou 1, sélectionnez **Ne se termine pas par** et ajoute 0 et 1 à la liste, séparés par des virgules.
-
-**Exclure les caractères en double** : ce contrôle vous permet d’ignorer les correspondances dont tous les chiffres sont identiques. Par exemple, si les six chiffres du numéro d'identification de l'employé ne peuvent pas tous être identiques, vous pouvez sélectionner **Exclure les caractères en double** pour exclure 111111, 222222, 333333, 444444, 555555, 666666, 777777, 888888, 999999 et 000000 de la liste des correspondances valides pour le numéro d'identification de l'employé.
-
-**Inclure ou exclure des préfixes** : ce contrôle vous permet de définir les mots-clés qui doivent ou non se trouver immédiatement avant l'entité correspondante. En fonction de votre sélection, les entités seront mises en correspondance ou non si elles sont précédées des préfixes que vous incluez ici. Par exemple, si vous **Excluez** le préfixe **GUID:**, toute entité précédée de **GUID:** ne sera pas considérée comme une correspondance.
-
-**Inclure ou exclure des suffixes** : ce contrôle vous permet de définir les mots-clés qui doivent ou non se trouver immédiatement après l'entité correspondante. En fonction de votre sélection, les entités seront mises en correspondance ou non si elles sont suivies des suffixes que vous incluez ici. Par exemple, si vous **Excluez** le suffixe **:GUID** , tout texte suivi de **:GUID** ne sera pas pris en compte.
-
+Par exemple, si vous souhaitez que la règle déclenche une correspondance lorsqu’au moins 500 instances uniques d’un sit sont trouvées dans un seul élément, définissez la valeur  **min** `500` `Any`sur et la valeur maximale sur .
 
 > [!NOTE]
 > Microsoft 365 Information Protection prend désormais en charge, les langues de jeu de caractères à double octets pour :
@@ -293,6 +204,6 @@ Voici des définitions et des exemples pour les contrôles supplémentaires disp
 >     2. Document 機密性が高い, 机密的 et document 机密的
 >
 > Lorsque vous créez une regex en utilisant un trait d'union à double octet ou un point à double octet, assurez-vous d'échapper les deux caractères comme on le ferait pour un trait d'union ou un point dans une regex. Voici un exemple regex pour référence :
->    - (?<!\d) ([4][0-9] {3} [ \- ?\-\t]*[0-9] {4} )
+>    - (?<!\d) ([4][0-9]{3} [\-?\-\t]*[0-9]{4})
 >
 > Nous vous recommandons d’utiliser une correspondance de chaîne au lieu d’une correspondance de mot dans une liste de mots clés.

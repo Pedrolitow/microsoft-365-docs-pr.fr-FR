@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 9ef59cc47addce2a8f2171038f5894071549a40b
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: b9cc3e0ab911515d010b1a6e7feaac5cff8aed51
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156483"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903938"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gérer les incidents dans Microsoft 365 Defender
 
@@ -36,9 +36,9 @@ ms.locfileid: "62156483"
 **S’applique à :**
 - Microsoft 365 Defender
 
-La gestion des incidents est essentielle pour s’assurer que les menaces sont contenues et traitées.
+La gestion des incidents est essentielle pour s’assurer que les incidents sont nommés, affectés et marqués pour optimiser le temps dans votre flux de travail d’incident et plus rapidement contenir et traiter les menaces.
 
-Vous pouvez gérer les incidents à partir **d’incidents & alertes** > incidents dans le lancement rapide du portail Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)). Voici un exemple.
+Vous pouvez gérer les incidents à partir **d’incidents & alertes > incidents** sur le lancement rapide du portail Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)). Voici un exemple.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Exemple de file d’attente d’incident." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -60,13 +60,13 @@ Vous pouvez afficher ce volet à partir du lien **Gérer l’incident** sur :
 - Volet des propriétés d’un incident dans la file d’attente des incidents.
 - **Page récapitulatif** d’un incident.
 
-Dans les cas où vous souhaitez déplacer des alertes d’un incident à un autre, vous pouvez également le faire à partir de l’onglet **Alertes,** créant ainsi un incident plus ou moins important qui inclut toutes les alertes pertinentes.
+Dans les cas où vous souhaitez déplacer des alertes d’un incident à un autre, vous pouvez également le faire à partir de l’onglet **Alertes** , créant ainsi un incident plus ou moins important qui inclut toutes les alertes pertinentes.
 
 ## <a name="edit-the-incident-name"></a>Modifier le nom de l’incident
 
 Microsoft 365 Defender attribue automatiquement un nom basé sur les attributs d’alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l’étendue de l’incident. Par exemple : *incident en plusieurs étapes sur plusieurs points de terminaison signalés par plusieurs sources.*
 
-Vous pouvez modifier le nom de l’incident à partir du **champ Nom de l’incident** dans le volet Gérer **l’incident.**
+Vous pouvez modifier le nom de l’incident à partir du **champ Nom de l’incident** dans le volet Gérer **l’incident** .
 
 > [!NOTE]
 > Les incidents qui existaient avant le déploiement de la fonctionnalité de nommage automatique des incidents conserveront leur nom.
@@ -75,17 +75,17 @@ Vous pouvez modifier le nom de l’incident à partir du **champ Nom de l’inci
 
 Vous pouvez ajouter des balises personnalisées à un incident, par exemple pour marquer un groupe d’incidents avec une caractéristique commune. Vous pouvez filtrer ultérieurement la file d’attente des incidents pour tous les incidents qui contiennent une balise spécifique.
 
-Lorsque vous commencez à taper, vous avez la possibilité de sélectionner des balises dans une liste de balises sélectionnées.
+Lorsque vous commencez à taper, vous avez la possibilité de sélectionner des balises dans une liste de balises précédemment utilisées et sélectionnées.
 
 ## <a name="assign-an-incident"></a>Affecter un incident
 
-Si aucun incident n’a encore été  affecté, vous pouvez sélectionner la case Affecter à et spécifier le compte d’utilisateur. Pour ré assigner un incident, supprimez le compte d’affectation actuel en sélectionnant « x » à côté du nom du compte, puis sélectionnez la case Affecter **à.** L’affectation de la propriété d’un incident affecte la même propriété à toutes les alertes qui lui sont associées.
+Si aucun incident n’a encore été affecté, vous pouvez sélectionner  la case Affecter à et spécifier le compte d’utilisateur. Pour ré assigner un incident, supprimez le compte d’affectation actuel en sélectionnant « x » à côté du nom du compte, puis sélectionnez la case Affecter **à** . L’affectation de la propriété d’un incident affecte la même propriété à toutes les alertes qui lui sont associées.
 
 Vous pouvez obtenir la liste des incidents qui vous sont attribués en filtrant la file d’attente des incidents. 
 
-1. Dans la file d’attente des incidents, sélectionnez **Filtres.**
-2. dans la section **Affectation de l’incident,** effacer Sélectionner **tout** et sélectionner Affecté à **moi.**
-3. **Sélectionnez** Appliquer, puis fermez le volet **Filtres.**
+1. Dans la file d’attente des incidents, sélectionnez **Filtres**.
+2. dans la section **Affectation de l’incident** , effacer **Sélectionner tout** et sélectionner **Affecté à moi**.
+3. **Sélectionnez Appliquer**, puis fermez **le volet Filtres**.
 
 Vous pouvez ensuite enregistrer l’URL résultante dans votre navigateur en tant que signet pour afficher rapidement la liste des incidents qui vous sont attribués.
 
@@ -93,25 +93,25 @@ Vous pouvez ensuite enregistrer l’URL résultante dans votre navigateur en tan
 
 Si l’incident a été corrigé, sélectionnez **Résoudre l’incident** pour déplacer le basculement vers la droite. Notez que la résolution d’un incident résout également toutes les alertes liées et actives liées à l’incident.
 
-Un incident qui n’est pas résolu s’affiche comme **étant actif.**
+Un incident qui n’est pas résolu s’affiche comme **étant actif**.
 
 ## <a name="set-the-classification-and-determination"></a>Définir la classification et la détermination
 
-La classification des incidents est la question de savoir s’il s’agit d’une alerte vraie ou d’une fausse alerte, que vous configurez à partir du champ **Classification.** 
+La classification des incidents est la question de savoir s’il s’agit d’une alerte vraie ou d’une fausse alerte, que vous configurez à partir du champ **Classification** . 
 
-S’il s’agissait d’une alerte réelle, vous devez également spécifier le type de menace qu’il s’agissait avec le **champ Détermination.** Spécifier le type de menace permet à votre équipe de sécurité de voir les modèles de menace et d’agir pour défendre votre organisation contre celles-ci. 
+S’il s’agissait d’une alerte réelle, vous devez également spécifier le type de menace qu’il s’agissait avec le **champ Détermination** . Spécifier le type de menace permet à votre équipe de sécurité de voir les modèles de menace et d’agir pour défendre votre organisation contre celles-ci. 
 
 ## <a name="add-comments"></a>Ajouter des commentaires
 
-Vous pouvez ajouter plusieurs commentaires à un incident avec le **champ Commentaire.** Chaque commentaire est ajouté aux événements historiques de l’incident. Vous pouvez voir les commentaires et l’historique d’un incident à partir du lien Commentaires et historique dans la page **Résumé.** 
+Vous pouvez ajouter plusieurs commentaires à un incident avec le **champ Commentaire** . Chaque commentaire est ajouté aux événements historiques de l’incident. Vous pouvez voir les commentaires et l’historique d’un incident  à partir du lien Commentaires et historique dans la page **Résumé**.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
-Pour les nouveaux incidents, commencez votre [enquête.](investigate-incidents.md)
+Pour les nouveaux incidents, commencez votre [enquête](investigate-incidents.md).
 
-Pour les incidents in-process, poursuivez votre [enquête.](investigate-incidents.md)
+Pour les incidents in-process, poursuivez votre [enquête](investigate-incidents.md).
 
-Pour les incidents résolus, effectuez une révision [post-incident.](first-incident-post.md)
+Pour les incidents résolus, effectuez une révision [post-incident](first-incident-post.md).
 
 ## <a name="see-also"></a>Voir aussi
 

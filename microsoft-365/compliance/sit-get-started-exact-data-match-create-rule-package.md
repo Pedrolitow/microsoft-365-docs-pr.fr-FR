@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: Créer des données exactes correspondant au type d’informations sensibles/au package de règles
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8b28669a2791685d172889bf6486b89b9d971e36
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: eb15f54a8a944e1c764a2540f36926dd433fb2d3
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271921"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62900745"
 ---
 # <a name="create-exact-data-match-sensitive-information-typerule-package"></a>Créer des données exactes correspondant au type d’informations sensibles/au package de règles
 
-Vous pouvez créer le type d’informations sensibles EDM (Exact Data Match) à l’aide du schéma [EDM](#use-the-edm-schema-and-sit-wizard) et de l’Assistant SIT dans le Centre de conformité ou créer manuellement le fichier XML du package de [règles.](#create-a-rule-package-manually) Vous pouvez également combiner les deux à l’aide d’une méthode pour créer le schéma et le modifier ultérieurement à l’aide de l’autre méthode.
+Vous pouvez créer un type d’informations sensibles (SIT) de correspondance de données exacte (EDM) à l’aide du schéma [EDM](#use-the-edm-schema-and-sit-wizard) et de l’Assistant SIT dans le Centre de conformité ou créer manuellement le fichier XML du package de [règles.](#create-a-rule-package-manually) Vous pouvez également combiner les deux à l’aide d’une méthode pour créer le schéma et le modifier ultérieurement à l’aide de l’autre méthode.
 
 Si vous n’êtes pas familiarisé avec EDM based SITS ou leur implémentation, vous devez vous familiariser avec :
 
@@ -54,7 +54,7 @@ Effectuez les étapes des articles suivants :
   - Si vous avez sélectionné l’option Delimiters ignorés pour la colonne d’élément principal dans votre schéma, assurez-vous que la fonction SIT personnalisée que vous créez correspondra aux données avec et sans les délimiteurs sélectionnés.
   - Si vous utilisez un sit intégré, assurez-vous qu’il détecte exactement les chaînes que vous souhaitez sélectionner, et n’inclut pas les caractères environnants ou n’exclut aucune partie valide de la chaîne telle qu’elle est stockée dans votre table d’informations sensibles.
 
-Voir [définitions d’entités de type d’informations sensibles](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) et [commencer avec les types d’informations sensibles personnalisés](create-a-custom-sensitive-information-type.md#get-started-with-custom-sensitive-information-types).
+Voir [Définitions d’entités de types d’informations sensibles](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) et [Créer des types d’informations sensibles personnalisés dans le Centre de conformité](create-a-custom-sensitive-information-type.md).
 
 ### <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Utiliser l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8e3d80cf1446541687ee2da1795b37ecf5d71865
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 3854c8891f1cc5175c87b9842d9c30b3164a6f46
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121649"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903633"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Étape 1. Trier et analyser votre premier incident
 
@@ -57,18 +57,18 @@ Dans Microsoft 365 Defender, [les incidents sont identifiés](incidents-overview
 
 La réponse aux incidents Microsoft 365 Defender démarre une fois que vous avez trié la liste des incidents à l’aide de la méthode recommandée de hiérquisation de votre organisation. Pour trier, il faut affecter un niveau d’importance ou d’urgence aux incidents, ce qui détermine ensuite l’ordre dans lequel ils seront examinés.
 
-Un exemple de guide utile pour déterminer l’incident à hiérarchiser dans Microsoft 365 Defender peut être résumé par la formule : *Gravité + Impact = Priorité*.
+Un exemple utile de guide permettant de déterminer l’incident à hiérarchiser dans Microsoft 365 Defender peut être résumé par la formule : *Gravité + Impact = Priorité*.
 
-- **La gravité est** le niveau désigné par Microsoft 365 Defender et ses composants de sécurité intégrés.
+- **La gravité** est le niveau désigné par Microsoft 365 Defender et ses composants de sécurité intégrés.
 - **L’impact** est déterminé par l’organisation et inclut généralement, mais sans s’y limiter, un nombre seuil d’utilisateurs, d’appareils, de services affectés (ou une combinaison d’entre eux) et même un type d’alerte.
 
 Les analystes lancent ensuite des enquêtes basées sur **les** critères de priorité définis par l’organisation.
 
 Les priorités des incidents peuvent varier en fonction de l’organisation. NIST recommande également de prendre en compte l’impact fonctionnel et informationnel de l’incident et la récupérabilité.
 
-Voici une approche de tri :
+Voici une approche de tri à prendre en compte :
 
-1. Go to the [incidents](incidents-overview.md) page to initiate triage. Vous pouvez voir ici une liste des incidents affectant votre organisation. Par défaut, ils sont organisés du plus récent au plus ancien incident. À partir de là, vous pouvez également voir différentes colonnes pour chaque incident indiquant, entre autres, leur gravité, leur catégorie, le nombre d’alertes actives et les entités impactées. Vous pouvez personnaliser l’ensemble des colonnes et trier la file d’attente des incidents en sélectionnant le nom de la colonne. Vous pouvez également filtrer la file d’attente des incidents en fonction de vos besoins. Pour obtenir la liste complète des filtres disponibles, voir [Hiérarchiser les incidents.](incident-queue.md#available-filters)
+1. Go to the [incidents](incidents-overview.md) page to initiate triage. Vous pouvez voir ici une liste des incidents affectant votre organisation. Par défaut, ils sont organisés du plus récent au plus ancien incident. À partir de là, vous pouvez également voir différentes colonnes pour chaque incident indiquant, entre autres, leur gravité, leur catégorie, le nombre d’alertes actives et les entités impactées. Vous pouvez personnaliser l’ensemble des colonnes et trier la file d’attente des incidents en sélectionnant le nom de la colonne. Vous pouvez également filtrer la file d’attente des incidents en fonction de vos besoins. Pour obtenir la liste complète des filtres disponibles, voir [Hiérarchiser les incidents](incident-queue.md#available-filters).
 
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-queue.png" alt-text="Exemple de file d’attente d’incident.":::
 
@@ -80,7 +80,7 @@ Voici une approche de tri :
 
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout.png" alt-text="Exemple de volet latéral d’incident.":::
 
-   Par exemple, en regardant les tactiques [MITRE ATT&CK](https://attack.mitre.org/) utilisées par l’attaquant en fonction des catégories de l’incident, vous pouvez hiérarchiser cet incident car l’attaquant a utilisé des informations d’identification volées, des commandes et contrôles établis, des mouvements latérals et des données exfiltrées. Cela suggère que l’attaquant a déjà été profondeur dans le réseau et éventuellement volé des informations confidentielles.
+   Par exemple, en regardant les tactiques [MITRE ATT&CK](https://attack.mitre.org/) utilisées par l’attaquant en fonction des catégories de l’incident, vous pouvez hiérarchiser cet incident car l’attaquant a utilisé des informations d’identification volées, des commandes et contrôles établis, effectué des mouvements latérals et exfiltré certaines données. Cela suggère que l’attaquant a déjà été profondeur dans le réseau et éventuellement volé des informations confidentielles.
 
    En outre, si votre organisation a implémenté l’infrastructure Confiance zéro, vous considérerez l’accès aux informations d’identification comme une violation de sécurité importante qui vaut la peine d’être hiér donc.
 
@@ -96,29 +96,29 @@ Voici une approche de tri :
 
 ## <a name="analyze-your-first-incident"></a>Analyser votre premier incident
 
-Il est également important de comprendre le contexte qui entoure les alertes. Souvent, une alerte n’est pas un événement indépendant unique. Il existe une chaîne de processus créés, de commandes et d’actions qui n’ont peut-être pas eu lieu en même temps. Par conséquent, un analyste doit rechercher les première et dernière activités de l’entité suspecte dans les chronologies des appareils pour comprendre le contexte des alertes.
+Il est également important de comprendre le contexte qui entoure les alertes. Souvent, une alerte n’est pas un événement indépendant unique. Il existe une chaîne de processus créés, de commandes et d’actions qui n’ont peut-être pas eu lieu en même temps. Par conséquent, vous devez rechercher les première et dernière activités de l’entité suspecte dans les chronologies des appareils pour comprendre le contexte des alertes.
 
-Il existe plusieurs façons de lire et d’analyser des données à l’aide de Microsoft 365 Defender mais l’objectif final pour les analystes est de répondre aux incidents aussi rapidement que possible. Bien Microsoft 365 Defender réduire considérablement le temps moyen de correction [(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) par le biais de la fonctionnalité d’investigation et de réponse automatisée de pointe du secteur, il existe toujours des cas qui nécessitent une analyse manuelle. [](m365d-autoir.md)
+Il existe plusieurs façons de lire et d’analyser des données à l’aide de Microsoft 365 Defender mais l’objectif final pour les analystes est de répondre aux incidents aussi rapidement que possible. Bien Microsoft 365 Defender réduire considérablement le temps moyen de correction [(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) par le biais de la fonctionnalité d’investigation et de réponse automatisée de pointe du secteur, il existe toujours des cas qui nécessitent une analyse manuelle.[](m365d-autoir.md)
 
-Voici un exemple :
+Voici un exemple :
 
-1. Une fois la priorité de tri déterminée, un analyste lance une analyse approfondie en sélectionnant le nom de l’incident. Cette page affiche le résumé de **l’incident** dans lequel les données sont affichées dans des onglets pour faciliter l’analyse. Sous **l’onglet Alertes,** le type d’alertes s’affiche. Les analystes peuvent cliquer sur chaque alerte pour descendre dans la source de détection respective.
+1. Une fois la priorité de tri déterminée, vous pouvez commencer une analyse approfondie en sélectionnant le nom de l’incident. Cette page affiche le résumé de **l’incident** dans lequel les données sont affichées dans des onglets pour faciliter l’analyse. Sous **l’onglet Alertes** , le type d’alertes s’affiche. Les analystes peuvent cliquer sur chaque alerte pour descendre dans la source de détection respective.
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="Exemple de l’onglet Résumé d’un incident.":::
 
     Pour obtenir un guide rapide sur le domaine que couvre chaque source de détection, examinez la section [Détecter](#detection-by-microsoft-365-defender) de cet article.
 
-2. À partir de **l’onglet Alertes,** un analyste peut pivoter vers la source de détection pour effectuer une analyse et un examen plus approfondis. Par exemple, si vous sélectionnez détection de programmes malveillants avec Microsoft Defender pour les applications cloud comme source de détection, l’analyste est ajouté à sa page d’alerte correspondante.
+2. À partir de **l’onglet Alertes** , vous pouvez effectuer un pivot vers la source de détection pour effectuer une analyse et un examen plus approfondis. Par exemple, si vous sélectionnez détection de programmes malveillants avec Microsoft Defender pour les applications cloud comme source de détection, l’analyste est ajouté à sa page d’alerte correspondante.
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-select-alert.png" alt-text="Exemple de sélection d’une alerte d’incident.":::
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png" alt-text="Exemple de page correspondante dans Microsoft Defender pour les applications cloud.":::
 
-3. Pour examiner notre exemple plus en détail, faites défiler vers le bas de la page pour afficher les **utilisateurs affectés.** Pour voir l’activité et le contexte qui entourent la détection de programmes malveillants, sélectionnez la page de l’utilisateur d’An dernier.
+3. Pour examiner notre exemple plus en détail, faites défiler vers le bas de la page pour afficher les **utilisateurs affectés**. Pour voir l’activité et le contexte qui entourent la détection de programmes malveillants, sélectionnez la page de l’utilisateur d’An dernier.
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-page.png" alt-text="Exemple de page d’utilisateur.":::
 
-4. La page de l’utilisateur affiche une liste chronologique des événements commençant par une sign-in à risque à partir d’une alerte d’adresse IP du réseau *TOR.* Bien que le caractère suspect d’une activité dépend de la nature de la façon dont une organisation effectue ses activités, dans la plupart des cas, l’utilisation du routeur de déplacement (TOR), un réseau qui permet aux utilisateurs de parcourir le web de manière anonyme, dans un environnement d’entreprise peut être considérée comme hautement peu probable et inutile pour les opérations en ligne normales.
+4. La page de l’utilisateur affiche une liste chronologique des événements commençant par une *sign-in* à risque à partir d’une alerte d’adresse IP du réseau TOR. Bien que le caractère suspect d’une activité dépend de la nature de la façon dont une organisation effectue ses activités, dans la plupart des cas, l’utilisation du routeur de déplacement (TOR), un réseau qui permet aux utilisateurs de parcourir le web de manière anonyme, dans un environnement d’entreprise peut être considérée comme hautement peu probable et inutile pour les opérations en ligne normales.
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-event-list.png" alt-text="Exemple de liste chronologique des événements pour un utilisateur.":::
 
@@ -126,13 +126,13 @@ Voici un exemple :
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" alt-text="Exemple de détails d’alertes pour Microsoft Defender pour les applications cloud.":::
 
-6. En sélectionnant d’autres alertes, un analyste peut obtenir une image complète de l’attaque.
+6. En sélectionnant d’autres alertes, vous pouvez obtenir une image complète de l’attaque.
 
 ## <a name="next-step"></a>Étape suivante
 
 [![Étape 2 : Découvrez comment corriger les incidents.](../../media/first-incident-overview/first-incident-path-step2.png)](first-incident-remediate.md)
 
-Découvrez comment corriger [les incidents.](first-incident-remediate.md)
+Découvrez comment corriger [les incidents](first-incident-remediate.md).
 
 ## <a name="see-also"></a>Voir aussi
 

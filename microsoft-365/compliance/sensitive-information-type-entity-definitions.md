@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: De nombreux types d’informations sensibles sont prêts à être utilisés dans vos stratégies DLP. Cet article répertorie tous ces types d’informations sensibles et indique ce qu’une stratégie DLP recherche lorsqu’elle détecte chaque type.
-ms.openlocfilehash: 208c36aec9baf1aeee2856869b3a789312305a9b
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: a3d2592af6b7692b5a5e634947deb811412b5650
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766895"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903818"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Définitions d’entités des types d’informations sensibles
 
@@ -79,7 +79,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_aba_routing"></a>Keyword_aba_routing
 
@@ -102,7 +102,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 ## <a name="all-full-names"></a>Tous les noms complets
 
-Il s’agit d’une entité nommée regroupée qui détecte les noms complets des personnes de tous les pays/régions pris en charge, notamment l’Australie, la Chine, le Japon, les États-Unis et les pays de l’UE. Utilisez cette sit pour détecter toutes les correspondances possibles de noms complets.
+Tous les noms complets sont une entité nommée regroupée. Il détecte les noms complets des personnes de tous les pays/régions pris en charge, notamment l’Australie, la Chine, le Japon, les États-Unis et les pays de l’UE. Utilisez cette sit pour détecter toutes les correspondances possibles de noms complets.
 
 ### <a name="format"></a>Format
 
@@ -118,13 +118,13 @@ Non.
 
 ### <a name="description"></a>Description
 
-Cette entité nommée SIT correspond aux noms personnels qu’un être humain identifierait comme nom avec un niveau de confiance élevé. Il utilise trois ressources principales :
+Cette entité nommée SIT correspond aux noms personnels qu’un être humain identifierait comme nom avec un niveau de confiance élevé. Par exemple, si une chaîne est trouvée constituée d’un nom donné et est suivie d’un nom de famille, une correspondance est réalisée avec un niveau de confiance élevé. Il utilise trois ressources principales :
 
 -   Dictionnaire de noms donnés.
 -   Dictionnaire de noms de famille.
 -   Modèles de la façon dont les noms sont formés.
 
-Les trois ressources sont différentes pour chaque pays. Par exemple, pour les noms dans le dictionnaire des États-Unis, si une chaîne est trouvée constituée d’un nom donné et est suivie d’un nom de famille, une correspondance est réalisée avec un niveau de confiance élevé. Les chaînes *De Wilson* déclenchent une correspondance. Les noms communs donnés/de famille ont une confiance plus élevée que les noms plus rares. Toutefois, le modèle autorise également des correspondances partielles. Par exemple, un nom donné du dictionnaire suivi d’un nom de famille qui ne se trouve pas dans le dictionnaire, comme *Celui-là* déclencherait une correspondance partielle. Les correspondances partielles sont moins confiance.
+Les trois ressources sont différentes pour chaque pays.  Les chaînes *De Wilson* déclenchent une correspondance. Les noms communs donnés/de famille ont une confiance plus élevée que les noms plus rares. Toutefois, le modèle autorise également des correspondances partielles. Si un nom donné du dictionnaire est trouvé et qu’il est suivi d’un nom de famille qui ne se trouve pas dans le dictionnaire, une correspondance partielle est déclenchée. Par exemple, *Il déclencherait* une correspondance partielle. Les correspondances partielles sont moins confiance.
 
 En outre, les modèles qu’un être humain pourrait voir comme des indications de noms sont également adaptés à la confiance appropriée. Comme *O. Wilson*, *O.P. Wilson*, *Dr. O. P. Wilson*, *Wilson, O.P.* ou *T. Jr.* correspondrait.
 
@@ -162,7 +162,7 @@ En outre, les modèles qu’un être humain pourrait voir comme des indications 
 
 ## <a name="all-medical-terms-and-conditions"></a>Toutes les conditions médicales
 
-Il s’agit d’une entité nommée regroupée qui détecte des conditions médicales et médicales. Il détecte uniquement les termes anglais. Utilisez cette sit pour détecter toutes les correspondances possibles de conditions médicales.
+Toutes les conditions médicales sont une entité regroupée nommée qui détecte les termes médicaux et les problèmes médicaux. Il détecte uniquement les termes anglais. Utilisez cette sit pour détecter toutes les correspondances possibles de conditions médicales.
 
 ### <a name="format"></a>Format
 
@@ -178,7 +178,7 @@ Non
 
 ### <a name="description"></a>Description
 
-Cette entité nommée regroupée correspond au texte mentionnant les problèmes médicaux présents dans les dictionnaires organisés. Il existe un dictionnaire organisé par langue prise en charge. Les dictionnaires sont issus d’un certain nombre de ressources médicales internationales. Les dictionnaires organisés intègrent autant de problèmes médicaux que possible sans risque de risque élevé de faux positifs. . Chaque entrée contient les différents formulaires où une condition unique est couramment écrite pour garantir une couverture, par exemple :
+Cette entité nommée regroupée correspond au texte mentionnant les problèmes médicaux présents dans les dictionnaires organisés. Il existe un dictionnaire organisé par langue prise en charge. Les dictionnaires sont issus de nombreuses ressources médicales internationales. Les dictionnaires incluent autant de problèmes médicaux que possible sans risque d’un grand nombre de faux positifs. Chaque entrée contient les différents formulaires où une condition unique est couramment écrite pour garantir une couverture, par exemple :
 
 - *TB*
 - *sous-président*
@@ -202,7 +202,7 @@ Cet ensemble d’entités nommées SIT contient ces sits individuels.
 
 ## <a name="all-physical-addresses"></a>Toutes les adresses physiques
 
-Il s’agit d’une entité groupée SIT qui détecte les modèles liés aux adresses physiques de tous les pays/régions pris en charge.
+Toutes les adresses physiques sont une entité groupée SIT, qui détecte les modèles liés aux adresses physiques de tous les pays/régions pris en charge.
 
 ### <a name="format"></a>Format
 
@@ -225,52 +225,52 @@ La correspondance des adresses postales est conçue pour correspondre à des cha
 -   Modèles de codes postaux.
 -   Modèles de formats d’adresse.
 
-Les ressources sont différentes pour chaque pays. Les ressources principales sont les modèles de formats d’adresse utilisés dans un pays donné. Les différents formats sont choisis pour vous assurer que autant d’adresses que possible sont mise en correspondance, sans risque d’un nombre élevé de faux positifs. Ces formats offrent de la flexibilité, par exemple, une adresse peut omettre le code postal ou omettre un nom de ville ou avoir une rue sans suffixe de rue. Dans tous les cas, ces correspondances sont utilisées pour augmenter la confiance de la correspondance.
+Les ressources sont différentes pour chaque pays. Les ressources principales sont les modèles de formats d’adresse utilisés dans un pays donné. Différents formats sont choisis pour vous assurer que le plus d’adresses possibles sont en correspondance. Ces formats offrent de la flexibilité, par exemple, une adresse peut omettre le code postal ou omettre un nom de ville ou avoir une rue sans suffixe de rue. Dans tous les cas, ces correspondances sont utilisées pour augmenter la confiance de la correspondance.
 
-Notez que les modèles sont conçus pour correspondre à des adresses individuelles, et non à des emplacements génériques. Ainsi, les chaînes telles *que Redmond, WA 98052* ou *Main Street, Albuquerque* ne seront pas en correspondance.
+Les modèles sont conçus pour correspondre à des adresses individuelles, et non à des emplacements génériques. Ainsi, les chaînes telles *que Redmond, WA 98052* ou *Main Street, Albuquerque* ne seront pas en correspondance.
 
 ### <a name="contains"></a>Contains
 
 Cette sit d’entité nommée regroupée contient les sits individuels ci-après :
 
-- Adresse physique de l’Australie
-- Adresse physique de l’Autriche
-- Adresse physique belgique
-- Adresse physique du Brésil
-- Adresse physique en Bulgarie
-- Adresse physique du Canada
-- Adresse physique croate
-- Adresse physique de Chypre
-- Adresse physique de la République tchèque
-- Adresse physique du Danemark
-- Adresse physique de l’Estonie
-- Adresse physique de la Finlande
-- Adresse physique de la France
-- Adresse physique de l’Allemagne
-- Adresse physique de grèce
-- Adresse physique hongrie
-- Adresse physique islandais
-- Adresse physique de l’Irlande
-- Adresse physique italie
-- Adresse physique letton
-- Adresse physique du Liechtenstein
-- Adresse physique lituanienne
-- Adresse physique du Luxembourg
-- Adresse physique de Malte
-- Adresse physique des Pays-Bas
-- Adresse physique de la Nouvelle-Zélande
-- Adresse physique norvège
-- Adresse physique de la Pologne
-- Adresse physique du Portugal
-- Adresse physique roumaine
-- Adresse physique de la Slovaquie
-- Adresse physique de slovénie
-- Adresse physique de l’Espagne
-- Adresse physique suède
-- Adresse physique suisse
-- Adresse physique de la Turquie
-- Adresse physique au Royaume-Uni
-- Adresse physique des États-Unis
+- Adresses physiques de l’Australie
+- Adresses physiques d’Autriche
+- Adresses physiques belgiques
+- Adresses physiques du Brésil
+- Adresses physiques en Bulgarie
+- Adresses physiques du Canada
+- Adresses physiques croates
+- Adresses physiques de Chypre
+- Adresses physiques de la République tchèque
+- Adresses physiques du Danemark
+- Adresses physiques estoniennes
+- Adresses physiques en Finlande
+- Adresses physiques en France
+- Adresses physiques en Allemagne
+- Adresses physiques de Grèce
+- Adresses physiques en Hongrie
+- Adresses physiques islandais
+- Adresses physiques d’Irlande
+- Adresses physiques d’Italie
+- Adresses physiques letton
+- Adresses physiques liechtensteinois
+- Adresses physiques lituaniennes
+- Adresses physiques au Luxembourg
+- Adresses physiques de Malte
+- Adresses physiques des Pays-Bas
+- Adresses physiques en Nouvelle-Zélande
+- Adresses physiques norvégiens
+- Adresses physiques en Pologne
+- Adresses physiques du Portugal
+- Adresses physiques roumaines
+- Adresses physiques slovaques
+- Adresses physiques slovènes
+- Adresses physiques d’Espagne
+- Adresses physiques suède
+- Adresses physiques suisse
+- Adresses physiques de Turquie
+- Adresses physiques au Royaume-Uni
+- Adresses physiques des États-Unis
 
 ### <a name="supported-languages"></a>Langues prises en charge
 
@@ -339,7 +339,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
@@ -395,7 +395,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_argentina_unique_tax_key"></a>Keyword_Argentina_Unique_Tax_Key
 
@@ -483,7 +483,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
  </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_australia_bank_account_number"></a>Keyword_australia_bank_account_number
 
@@ -553,7 +553,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_australia_business_number"></a>Keyword_australia_business_number
 
@@ -616,7 +616,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_australia_company_number"></a>Keyword_australia_company_number
 
@@ -676,7 +676,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_australia_drivers_license_number"></a>Keyword_australia_drivers_license_number
 
@@ -793,7 +793,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - Le premier chiffre est compris entre 2 et 6
 - Le neuvième chiffre est un chiffre de contrôle
 - Le dixième chiffre est le chiffre d’émission
-- Le onzième chiffre (facultatif) est le numéro individuel
+- Le 11e chiffre (facultatif) est le numéro individuel
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -817,7 +817,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_australia_medical_account_number"></a>Keyword_Australia_Medical_Account_Number
 
@@ -869,7 +869,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_australia_passport_number"></a>Keyword_australia_passport_number
 
@@ -894,7 +894,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 ## <a name="australia-physical-addresses"></a>Adresses physiques de l’Australie 
 
-Entité nommée dissociée, détecte les modèles liés à l’adresse physique de l’Australie.
+Entité nommée dissociée, détecte les modèles liés à l’adresse physique de l’Australie. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 medium
@@ -936,7 +936,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_australia_tax_file_number"></a>Keyword_australia_tax_file_number
 
@@ -985,7 +985,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -1160,7 +1160,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_austria_eu_national_id_card"></a>Keywords_austria_eu_national_id_card
 
@@ -1222,7 +1222,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -1255,7 +1255,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="austria-physical-addresses"></a>Adresses physiques d’Autriche
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique d’Autriche. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique d’Autriche. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -1306,7 +1306,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_austria_eu_ssn_or_equivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
@@ -1377,7 +1377,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_austria_eu_tax_file_number"></a>Keywords_austria_eu_tax_file_number
 
@@ -1456,7 +1456,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_austria_value_added_tax"></a>Keyword_austria_value_added_tax
 
@@ -1513,7 +1513,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
@@ -1574,7 +1574,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
@@ -1635,7 +1635,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
@@ -1687,7 +1687,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
@@ -1743,7 +1743,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
@@ -1838,7 +1838,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
@@ -1899,7 +1899,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="cep_azure_emulator_storage_account_filter"></a>CEP_azure_emulator_storage_account_filter
 
@@ -1986,7 +1986,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -2167,7 +2167,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_belgium_national_number"></a>Keyword_belgium_national_number
 
@@ -2280,7 +2280,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -2316,7 +2316,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="belgium-physical-addresses"></a>Adresses physiques belgiques
 
-Cette entité nommée dissociée détecte les modèles liés aux adresses physiques en Belgique.
+Cette entité nommée dissociée détecte les modèles liés aux adresses physiques en Belgique. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -2375,7 +2375,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
     </Version>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_belgium_value_added_tax_number"></a>Keyword_belgium_value_added_tax_number
 
@@ -2392,7 +2392,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="blood-test-terms"></a>Termes du test de test pour le sang
 
-Cette entité nommée dissociée détecte les termes liés aux tests sur le sang, tels que *hCG*. Il prend uniquement en charge les termes anglais.
+Cette entité nommée dissociée détecte les termes liés aux tests sur le sang, tels que *hCG*. Il prend uniquement en charge les termes anglais. Il est également inclus dans [toutes les conditions](#all-medical-terms-and-conditions) médicales regroupées nommées SIT d’entité.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -2400,7 +2400,7 @@ Cette entité nommée dissociée détecte les termes liés aux tests sur le sang
 
 ## <a name="brand-medication-names"></a>Noms de marque d’identité
 
-Cette entité nommée dissociée détecte les noms des personnes qui se sont déverrouillées, telles que *Tylenol*. Il prend uniquement en charge les termes anglais.
+Cette entité nommée dissociée détecte les noms des personnes qui se sont déverrouillées, telles que *Tylenol*. Il prend uniquement en charge les termes anglais. Il est également inclus dans [toutes les conditions](#all-medical-terms-and-conditions) médicales regroupées nommées SIT d’entité.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -2455,7 +2455,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_brazil_cpf"></a>Keyword_brazil_cpf
 
@@ -2518,7 +2518,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_brazil_cnpj"></a>Keyword_brazil_cnpj
 
@@ -2589,7 +2589,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_brazil_rg"></a>Keyword_brazil_rg
 
@@ -2605,7 +2605,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 
 ## <a name="brazil-physical-addresses"></a>Adresses physiques du Brésil
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique du Brésil. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique du Brésil. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -2644,7 +2644,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -2824,7 +2824,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -2853,7 +2853,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="bulgaria-physical-addresses"></a>Adresses physiques en Bulgarie
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en provenance de Bulgarie. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en provenance de Bulgarie. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -2910,7 +2910,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_bulgaria_eu_national_id_card"></a>Keywords_bulgaria_eu_national_id_card
 
@@ -3005,7 +3005,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_canada_bank_account_number"></a>Keyword_canada_bank_account_number
 
@@ -3119,7 +3119,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_province_name_drivers_license_name"></a>Keyword_[province_name]_drivers_license_name
 
@@ -3292,7 +3292,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_canada_health_service_number"></a>Keyword_canada_health_service_number
 
@@ -3340,7 +3340,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_canada_passport_number"></a>Keyword_canada_passport_number
 
@@ -3408,7 +3408,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_canada_phin"></a>Keyword_canada_phin
 
@@ -3448,7 +3448,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="canada-physical-addresses"></a>Adresses physiques du Canada
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique du Canada. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique du Canada. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -3509,7 +3509,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_sin"></a>Keyword_sin
 
@@ -3584,7 +3584,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_chile_id_card"></a>Keyword_chile_id_card
 
@@ -3668,7 +3668,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 ### <a name="keyword_china_resident_id"></a>Keyword_china_resident_id
 
@@ -3729,7 +3729,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_cc_verification"></a>Keyword_cc_verification
 
@@ -4027,7 +4027,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -4188,7 +4188,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_croatia_id_card"></a>Keyword_croatia_id_card
 
@@ -4270,7 +4270,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
@@ -4331,7 +4331,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_croatia_oib_number"></a>Keyword_croatia_oib_number
 
@@ -4367,7 +4367,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="croatia-physical-addresses"></a>Adresses physiques croates
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Croatie. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Croatie. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -4407,7 +4407,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -4574,7 +4574,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_cyprus_eu_national_id_card"></a>Keywords_cyprus_eu_national_id_card
 
@@ -4635,7 +4635,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
@@ -4672,7 +4672,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="cyprus-physical-addresses"></a>Adresses physiques de Chypre
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Chypre. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Chypre. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -4724,7 +4724,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_cyprus_eu_tax_file_number"></a>Keywords_cyprus_eu_tax_file_number
 
@@ -4793,7 +4793,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -4973,7 +4973,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
@@ -5052,7 +5052,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
         </Version>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_czech_id_card"></a>Keyword_czech_id_card
 
@@ -5104,7 +5104,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="czech-republic-physical-addresses"></a>Adresses physiques de la République tchèque
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de la République tchèque. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de la République tchèque. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -5143,7 +5143,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -5322,7 +5322,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
@@ -5391,7 +5391,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_denmark_id"></a>Keyword_denmark_id
 
@@ -5468,7 +5468,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 ## <a name="denmark-physical-addresses"></a>Adresses physiques du Danemark
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique du Danemark. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique du Danemark. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -5477,7 +5477,7 @@ Moyen
 
 ## <a name="diseases"></a>Maladie
 
-Cette entité nommée non dissociée détecte le texte qui correspond aux noms des personnes, telles que *le cœur*. Il prend uniquement en charge les termes anglais.
+Cette entité nommée dissociée détecte le texte qui correspond à des noms de famille, tels que *le texte.* Il prend uniquement en charge les termes anglais. Il est également inclus dans [toutes les conditions](#all-medical-terms-and-conditions) médicales regroupées nommées SIT d’entité.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -5532,7 +5532,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_dea_number"></a>Keyword_dea_number
 
@@ -5578,7 +5578,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -5758,7 +5758,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
@@ -5835,7 +5835,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_estonia_eu_national_id_card"></a>Keywords_estonia_eu_national_id_card
 
@@ -5873,7 +5873,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="estonia-physical-addresses"></a>Adresses physiques estoniennes
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de l’Estonie. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de l’Estonie. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -5922,7 +5922,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_eu_debit_card"></a>Keyword_eu_debit_card
 
@@ -6435,7 +6435,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -6612,7 +6612,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_finland_european_health_insurance_number"></a>Keyword_finland_european_health_insurance_number
 
@@ -6675,7 +6675,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 - repairutlaatuinen henkilökohtainen tunnus
 - henkilökohtainen tunnus
@@ -6776,7 +6776,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -6809,7 +6809,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="finland-physical-addresses"></a>Adresses physiques en Finlande
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en Finlande. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en Finlande. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -6848,7 +6848,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_french_drivers_license"></a>Keyword_french_drivers_license
 
@@ -7021,7 +7021,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_france_health_insurance_number"></a>Keyword_France_health_insurance_number
 
@@ -7060,7 +7060,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_france_eu_national_id_card"></a>Keywords_france_eu_national_id_card
 
@@ -7132,7 +7132,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -7172,7 +7172,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="france-physical-addresses"></a>Adresses physiques en France
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de La France. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de La France. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -7223,7 +7223,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_fr_insee"></a>Keyword_fr_insee
 
@@ -7310,7 +7310,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_france_eu_tax_file_number"></a>Keywords_france_eu_tax_file_number
 
@@ -7385,7 +7385,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_france_value_added_tax_number"></a>Keyword_France_value_added_tax_number
 
@@ -7403,7 +7403,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="generic-medication-names"></a>Noms génériques génériques
 
-Cette entité nommée dissociée détecte les noms des génériques, tels que *l’acétominophen*. Il prend uniquement en charge les termes anglais.
+Cette entité nommée dissociée détecte les noms des génériques, tels que *l’acétaminophen*. Il prend uniquement en charge les termes anglais. Il est également inclus dans [toutes les conditions](#all-medical-terms-and-conditions) médicales regroupées nommées SIT d’entité.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -7448,7 +7448,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_german_drivers_license_number"></a>Keyword_german_drivers_license_number
 
@@ -7658,7 +7658,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_germany_id_card"></a>Keyword_germany_id_card
 
@@ -7734,7 +7734,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_german_passport"></a>Keyword_german_passport
 
@@ -7764,7 +7764,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 ## <a name="germany-physical-addresses"></a>Adresses physiques en Allemagne
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en provenance d’Allemagne. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en provenance d’Allemagne. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -7816,7 +7816,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_germany_eu_tax_file_number"></a>Keywords_germany_eu_tax_file_number
 
@@ -7896,7 +7896,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_germany_value_added_tax_number"></a>Keyword_germany_value_added_tax_number
 
@@ -7944,7 +7944,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -8120,7 +8120,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_greece_id_card"></a>Keyword_greece_id_card
 
@@ -8183,7 +8183,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -8207,7 +8207,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="greece-physical-addresses"></a>Adresses physiques de Grèce
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Grèce. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Grèce. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -8258,7 +8258,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_greece_eu_ssn_or_equivalent"></a>Keywords_greece_eu_ssn_or_equivalent
 
@@ -8310,7 +8310,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_greece_eu_tax_file_number"></a>Keywords_greece_eu_tax_file_number
 
@@ -8383,7 +8383,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_hong_kong_id_card"></a>Keyword_hong_kong_id_card
 
@@ -8462,7 +8462,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -8641,7 +8641,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -8722,7 +8722,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_hungary_eu_national_id_card"></a>Keywords_hungary_eu_national_id_card
 
@@ -8737,7 +8737,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="hungary-physical-addresses"></a>Adresses physiques en Hongrie
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Hongrie. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Hongrie. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -8782,7 +8782,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_hungary_eu_ssn_or_equivalent"></a>Keywords_hungary_eu_ssn_or_equivalent
 
@@ -8858,7 +8858,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_hungary_eu_tax_file_number"></a>Keywords_hungary_eu_tax_file_number
 
@@ -8936,7 +8936,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_hungary_value_added_tax_number"></a>Keyword_Hungary_value_added_tax_number
 
@@ -8955,7 +8955,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="iceland-physical-addresses"></a>Adresses physiques islandais
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique islandais. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique islandais. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -8963,7 +8963,7 @@ Moyen
 
 ## <a name="impairments-listed-in-the-us-disability-evaluation-under-social-security"></a>Handicaps répertoriés dans l’évaluation du handicap aux États-Unis dans le cadre de la sécurité sociale
 
-Cette entité nommée non dissociée détecte les noms des troubles répertoriés dans l’évaluation du handicap en vertu de la sécurité sociale pour les États-Unis, telles que les problèmes *de santé*. Il prend uniquement en charge les termes anglais.
+Cette entité nommée non dissociée détecte les noms des troubles répertoriés dans l’évaluation du handicap en vertu de la sécurité sociale pour les États-Unis, telles que les problèmes *de santé*. Il prend uniquement en charge les termes anglais. Il est également inclus dans [toutes les conditions](#all-medical-terms-and-conditions) médicales regroupées nommées SIT d’entité.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -9014,7 +9014,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
         </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number_common"></a>Keywords_eu_driver’s_license_number_common
 
@@ -9184,7 +9184,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_india_gst_number"></a>Keyword_india_gst_number
 
@@ -9238,7 +9238,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_india_permanent_account_number"></a>Keyword_india_permanent_account_number
 
@@ -9289,7 +9289,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
   </Pattern>
 </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_india_aadhar"></a>Keyword_india_aadhar
 - aadhaar
@@ -9339,7 +9339,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
         </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_india_voter_id_card"></a>Keyword_india_voter_id_card
 
@@ -9391,7 +9391,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_indonesia_id_card"></a>Keyword_indonesia_id_card
 
@@ -9496,9 +9496,9 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
-Aucun
+Néant
 
 
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Classification internationale des maladie (ICD-10-CM)
@@ -9537,7 +9537,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 Tout terme issu du dictionnaire Dictionary_icd_10_updated de mots clés, basé sur la classification internationale des maladie, la dixième révision, la modification de la santé [(ICD-10-CM).](https://go.microsoft.com/fwlink/?linkid=852604) Ce type recherche uniquement le terme, et non les codes d’assurance.
 
@@ -9579,7 +9579,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 Tout terme du dictionnaire de mots clés Dictionary_icd_9_updated, qui est basé sur la classification internationale des maladie, la neuvième révision[, la modification génétique (ICD-9-CM).](https://go.microsoft.com/fwlink/?linkid=852605) Ce type recherche uniquement le terme, et non les codes d’assurance.
 
@@ -9639,7 +9639,7 @@ Pour IPv6, une stratégie DLP a une confiance élevée qu’elle a détecté ce 
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_ipaddress"></a>Keyword_ipaddress
 
@@ -9686,7 +9686,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_ipaddress"></a>Keyword_ipaddress
 
@@ -9733,7 +9733,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_ipaddress"></a>Keyword_ipaddress
 
@@ -9781,7 +9781,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -9962,7 +9962,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
@@ -10042,7 +10042,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_ireland_eu_national_id_card"></a>Keywords_ireland_eu_national_id_card
 
@@ -10092,7 +10092,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 ## <a name="ireland-physical-addresses"></a>Adresses physiques d’Irlande
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en provenance d’Irlande. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en provenance d’Irlande. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -10139,7 +10139,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_israel_bank_account_number"></a>Keyword_israel_bank_account_number
 
@@ -10182,7 +10182,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_israel_national_id"></a>Keyword_Israel_National_ID
 
@@ -10243,7 +10243,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -10424,7 +10424,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_italy_eu_national_id_card"></a>Keywords_italy_eu_national_id_card
 
@@ -10514,7 +10514,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
@@ -10547,7 +10547,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="italy-physical-addresses"></a>Adresses physiques d’Italie
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique d’Italie. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique d’Italie. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -10602,7 +10602,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_italy_value_added_tax_number"></a>Keyword_italy_value_added_tax_number
 
@@ -10665,7 +10665,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_jp_bank_account"></a>Keyword_jp_bank_account
 
@@ -10746,7 +10746,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_jp_drivers_license_number"></a>Keyword_jp_drivers_license_number
 
@@ -10833,7 +10833,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_japan_my_number_corporate"></a>Keyword_japan_my_number_corporate
 
@@ -10898,7 +10898,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_japan_my_number_personal"></a>Keyword_japan_my_number_personal
 
@@ -10944,7 +10944,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
@@ -10997,7 +10997,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_jp_residence_card_number"></a>Keyword_jp_residence_card_number
 
@@ -11038,7 +11038,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_jp_resident_registration_number"></a>Keyword_jp_resident_registration_number
 
@@ -11096,7 +11096,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_jp_sin"></a>Keyword_jp_sin
 
@@ -11122,7 +11122,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="lab-test-terms"></a>Termes du test de laboratoire
 
-Cette entité nommée dissociée détecte les termes liés aux tests de laboratoire, tels que *Le C-contrôle*. Il prend uniquement en charge les termes anglais.
+Cette entité nommée dissociée détecte les termes liés aux tests de laboratoire, tels que *Le C-contrôle*. Il prend uniquement en charge les termes anglais. Il est également inclus dans [toutes les conditions](#all-medical-terms-and-conditions) médicales regroupées nommées SIT d’entité.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -11165,7 +11165,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -11348,7 +11348,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
@@ -11444,7 +11444,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_latvia_eu_national_id_card"></a>Keywords_latvia_eu_national_id_card
 
@@ -11512,7 +11512,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="latvia-physical-addresses"></a>Adresses physiques letton
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique letton. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique letton. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -11521,7 +11521,7 @@ Moyen
 
 ## <a name="liechtenstein-physical-addresses"></a>Adresses physiques liechtensteinois
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique du Liechtenstein . 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique du Liechtenstein. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques. 
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -11530,7 +11530,7 @@ Moyen
 
 ## <a name="lifestyles-that-relate-to-medical-conditions"></a>Modes de vie liés à des problèmes médicaux
 
-Cette entité nommée dissociée détecte les termes liés aux modes de vie qui peuvent entraîner une condition médicale, telle que *l’urgence*. Il prend uniquement en charge les termes anglais.
+Cette entité nommée dissociée détecte les termes liés aux modes de vie qui peuvent entraîner une condition médicale, telle que *l’urgence*. Il prend uniquement en charge les termes anglais. Il est également inclus dans [toutes les conditions](#all-medical-terms-and-conditions) médicales regroupées nommées SIT d’entité.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -11570,7 +11570,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -11753,7 +11753,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_lithuania_eu_national_id_card"></a>Keywords_lithuania_eu_national_id_card
 
@@ -11793,7 +11793,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="lithuania-physical-addresses"></a>Adresses physiques lituaniennes
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique lituanien. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique lituanien. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -11849,7 +11849,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -11909,7 +11909,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -12060,7 +12060,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="checksum"></a>Somme de contrôle
 
-oui
+Oui
 
 ### <a name="definition"></a>Définition
 
@@ -12089,7 +12089,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_luxemburg_eu_national_id_card"></a>Keywords_luxemburg_eu_national_id_card
 
@@ -12164,7 +12164,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_luxemburg_eu_tax_file_number"></a>Keywords_luxemburg_eu_tax_file_number
 
@@ -12256,7 +12256,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -12296,7 +12296,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="luxemburg-physical-addresses"></a>Adresses physiques de Premier plan
 
-Cette entité nommée non dissociée détecte les modèles liés à l’adresse physique à partir de DomaineMessage. 
+Cette entité nommée non dissociée détecte les modèles liés à l’adresse physique à partir de DomaineMessage. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -12340,7 +12340,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_malaysia_id_card_number"></a>Keyword_malaysia_id_card_number
 
@@ -12409,7 +12409,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -12585,7 +12585,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_malta_eu_national_id_card"></a>Keywords_malta_eu_national_id_card
 
@@ -12651,7 +12651,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -12680,7 +12680,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="malta-physical-addresses"></a>Adresses physiques de Malte
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Malte. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Malte. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -12741,7 +12741,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_malta_eu_tax_file_number"></a>Keywords_malta_eu_tax_file_number
 
@@ -12778,7 +12778,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 ## <a name="medical-specialities"></a>Spécialités médicales
 
-Cette entité nommée non dissociée détecte les termes liés à des spécialités médicales, telles que *la santé*.  Il prend uniquement en charge les termes anglais.
+Cette entité nommée non dissociée détecte les termes liés à des spécialités médicales, telles que *la santé*.  Il prend uniquement en charge les termes anglais. Il est également inclus dans [toutes les conditions](#all-medical-terms-and-conditions) médicales regroupées nommées SIT d’entité.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -12830,7 +12830,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_mbi_card"></a>Keyword_mbi_card
 
@@ -12885,7 +12885,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_mexico_population_registry_code"></a>Keyword_mexico_population_registry_code
 
@@ -12945,7 +12945,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_netherlands_eu_national_id_card"></a>Keywords_netherlands_eu_national_id_card
 
@@ -13005,7 +13005,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -13185,7 +13185,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -13210,7 +13210,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="netherlands-physical-addresses"></a>Adresses physiques des Pays-Bas
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en provenance des Pays-Bas. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en provenance des Pays-Bas. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -13260,7 +13260,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_netherlands_eu_tax_file_number"></a>Keywords_netherlands_eu_tax_file_number
 
@@ -13352,7 +13352,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_netherlands_value_added_tax_number"></a>Keyword_netherlands_value_added_tax_number
 
@@ -13416,7 +13416,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_new_zealand_bank_account_number"></a>Keyword_new_zealand_bank_account_number
 
@@ -13473,7 +13473,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_new_zealand_drivers_license_number"></a>Keyword_new_zealand_drivers_license_number
 
@@ -13592,7 +13592,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_new_zealand_inland_revenue_number"></a>Keyword_new_zealand_inland_revenue_number
 
@@ -13643,7 +13643,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_nz_terms"></a>Keyword_nz_terms
 
@@ -13656,7 +13656,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="new-zealand-physical-addresses"></a>Adresses physiques en Nouvelle-Zélande
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en Nouvelle-Zélande. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en Nouvelle-Zélande. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -13713,7 +13713,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
     </Version>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_new_zealand_social_welfare_number"></a>Keyword_new_zealand_social_welfare_number
 
@@ -13765,7 +13765,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_norway_id_number"></a>Keyword_norway_id_number
 
@@ -13779,7 +13779,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="norway-physical-addresses"></a>Adresses physiques norvégiens
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en Norvège. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en Norvège. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -13821,7 +13821,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_philippines_id"></a>Keyword_philippines_id
 
@@ -13870,7 +13870,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -14031,7 +14031,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_poland_national_id_passport_number"></a>Keyword_poland_national_id_passport_number
 
@@ -14085,7 +14085,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_pesel_identification_number"></a>Keyword_pesel_identification_number
 
@@ -14157,7 +14157,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -14191,7 +14191,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 ## <a name="poland-physical-addresses"></a>Adresses physiques en Pologne
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique depuis la Pologne. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique depuis la Pologne. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -14245,7 +14245,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_poland_regon_number"></a>Keywords_poland_regon_number
 
@@ -14303,7 +14303,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_poland_eu_tax_file_number"></a>Keywords_poland_eu_tax_file_number
 
@@ -14366,7 +14366,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_portugal_citizen_card"></a>Keyword_portugal_citizen_card
 
@@ -14435,7 +14435,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -14625,7 +14625,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -14661,7 +14661,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="portugal-physical-addresses"></a>Adresses physiques du Portugal
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en provenance du Portugal. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en provenance du Portugal. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -14708,7 +14708,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_portugal_eu_tax_file_number"></a>Keywords_portugal_eu_tax_file_number
 
@@ -14771,7 +14771,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -14953,7 +14953,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -15024,7 +15024,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_romania_eu_national_id_card"></a>Keywords_romania_eu_national_id_card
 
@@ -15080,7 +15080,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="romania-physical-addresses"></a>Adresses physiques roumaines
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Roumanie. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Roumanie. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -15130,7 +15130,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_russia_passport_number_domestic"></a>Keyword_russia_passport_number_domestic
 
@@ -15191,7 +15191,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_russia_passport_number_international"></a>Keywords_russia_passport_number_international
 
@@ -15243,7 +15243,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_saudi_arabia_national_id"></a>Keyword_saudi_arabia_national_id
 
@@ -15294,7 +15294,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_singapore_nric"></a>Keyword_singapore_nric
 
@@ -15344,7 +15344,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -15525,7 +15525,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -15601,7 +15601,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
     </Version>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_slovakia_eu_national_id_card"></a>Keywords_slovakia_eu_national_id_card
 
@@ -15653,7 +15653,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 ## <a name="slovakia-physical-addresses"></a>Adresses physiques slovaques
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de la Slovaquie. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de la Slovaquie. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -15693,7 +15693,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -15878,7 +15878,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -15910,7 +15910,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="slovenia-physical-addresses"></a>Adresses physiques slovènes
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Slovénie. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Slovénie. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -15962,7 +15962,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_slovenia_eu_tax_file_number"></a>Keywords_slovenia_eu_tax_file_number
 
@@ -16037,7 +16037,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_slovenia_eu_national_id_card"></a>Keywords_slovenia_eu_national_id_card
 
@@ -16104,7 +16104,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
@@ -16157,7 +16157,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_south_korea_resident_number"></a>Keyword_south_korea_resident_number
 
@@ -16223,7 +16223,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_spain_eu_national_id_card"></a>Keywords_spain_eu_national_id_card
 
@@ -16302,7 +16302,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -16495,7 +16495,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -16533,7 +16533,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="spain-physical-addresses"></a>Adresses physiques d’Espagne
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique d’Espagne. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique d’Espagne. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -16584,7 +16584,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_spain_eu_passport_number"></a>Keywords_spain_eu_passport_number
 
@@ -16673,7 +16673,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_spain_eu_tax_file_number"></a>Keywords_spain_eu_tax_file_number
 
@@ -16749,7 +16749,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="cep_globalfilter"></a>CEP_GlobalFilter
 
@@ -16786,7 +16786,7 @@ Ce type d’informations sensibles identifie ces mots clés à l’aide d’une 
 
 ## <a name="surgical-procedures"></a>Procédures d’urgence
 
-Cette entité nommée non dissociée détecte les termes liés aux procédures médicales, telles *qu’appendpad*.  Il prend uniquement en charge les termes anglais.
+Cette entité nommée non dissociée détecte les termes liés aux procédures médicales, telles *qu’appendpad*.  Il prend uniquement en charge les termes anglais. Il est également inclus dans [toutes les conditions](#all-medical-terms-and-conditions) médicales regroupées nommées SIT d’entité.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -16830,7 +16830,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -17012,7 +17012,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_swedish_national_identifier"></a>Keywords_swedish_national_identifier
 
@@ -17084,7 +17084,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -17129,7 +17129,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="sweden-physical-addresses"></a>Adresses physiques suède
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Suède. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Suède. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -17190,7 +17190,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_sweden_eu_tax_file_number"></a>Keywords_sweden_eu_tax_file_number
 
@@ -17253,7 +17253,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_swift"></a>Keyword_swift
 
@@ -17295,7 +17295,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="switzerland-physical-addresses"></a>Adresses physiques suisse
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de La Suisse. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de La Suisse. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -17353,7 +17353,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_swiss_ssn_ahv_number"></a>Keyword_swiss_ssn_AHV_number
 
@@ -17418,7 +17418,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_taiwan_national_id"></a>Keyword_taiwan_national_id
 
@@ -17473,7 +17473,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_taiwan_passport"></a>Keyword_taiwan_passport
 
@@ -17519,7 +17519,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_taiwan_resident_certificate"></a>Keyword_taiwan_resident_certificate
 
@@ -17574,7 +17574,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_thai_citizen_id"></a>Keyword_thai_citizen_Id
 
@@ -17621,7 +17621,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_turkish_national_id"></a>Keyword_turkish_national_id
 
@@ -17633,7 +17633,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="turkey-physical-addresses"></a>Adresses physiques de Turquie
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Turquie. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Turquie. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -17642,7 +17642,7 @@ Moyen
 
 ## <a name="types-of-medication"></a>Types d’activités
 
-Cette entité nommée dissociée détecte les noms d’événements, tels que *ceux-ci*.  Il prend uniquement en charge les termes anglais.
+Cette entité nommée dissociée détecte les noms d’événements, tels que *ceux-ci*.  Il prend uniquement en charge les termes anglais. Il est également inclus dans [toutes les conditions](#all-medical-terms-and-conditions) médicales regroupées nommées SIT d’entité.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -17660,7 +17660,7 @@ Combinaison de 18 lettres et chiffres au format spécifié
 18 lettres et chiffres
 - Cinq lettres (ne sensibles à la majuscule) ou le chiffre « 9 » à la place d’une lettre.
 - Un chiffre.
-- Cinq chiffres au format de date MMDDY pour la date de naissance. Le septième caractère est incrémenté de 50 si le pilote est une femme ; pour examen, 51 à 62 au lieu de 01 à 12.
+- Cinq chiffres au format de date MMDDY pour la date de naissance. Le septième caractère est incrémenté de 50 si le pilote est une femme ; par exemple, 51 à 62 au lieu de 01 à 12.
 - Deux lettres (ne sont pas sensibles à la majuscule) ou le chiffre « 9 » à la place d’une lettre.
 - Cinq chiffres.
 
@@ -17692,7 +17692,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -17848,7 +17848,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_uk_electoral"></a>Keyword_uk_electoral
 
@@ -17901,7 +17901,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_uk_nhs_number"></a>Keyword_uk_nhs_number
 
@@ -17980,7 +17980,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_uk_nino"></a>Keyword_uk_nino
 
@@ -18007,7 +18007,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="uk-physical-addresses"></a>Royaume-Uni adresses physiques
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique à partir du Royaume-Uni. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique à partir du Royaume-Uni. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -18053,7 +18053,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_uk_eu_tax_file_number"></a>Keywords_uk_eu_tax_file_number
 
@@ -18106,7 +18106,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_usa_bank_account"></a>Keyword_usa_Bank_Account
 
@@ -18186,7 +18186,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_us_drivers_license_abbreviations"></a>Keyword_us_drivers_license_abbreviations
 
@@ -18352,7 +18352,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_itin"></a>Keyword_itin
 
@@ -18372,7 +18372,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 ## <a name="us-physical-addresses"></a>Adresses physiques des États-Unis
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique des États-Unis. 
+Cette entité nommée dissociée détecte les modèles liés à l’adresse physique des États-Unis. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -18437,7 +18437,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
   </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_ssn"></a>Keyword_ssn
 
@@ -18502,7 +18502,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -18560,7 +18560,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_ukraine_passport_domestic"></a>Keyword_ukraine_passport_domestic
 
@@ -18611,7 +18611,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_ukraine_passport_international"></a>Keyword_ukraine_passport_international
 

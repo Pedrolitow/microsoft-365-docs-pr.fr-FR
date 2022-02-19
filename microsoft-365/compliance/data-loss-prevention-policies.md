@@ -25,17 +25,17 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
 description: documents de référence sur la protection contre la perte de données
-ms.openlocfilehash: 85fa08419b964555ce036b96a78f8c3fe6bab3a1
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 0c7fe1d3ccf1b74641be1d05506f1cc53b743218
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422866"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903527"
 ---
 # <a name="data-loss-prevention-reference"></a>Référence de protection contre la perte de données
 
 > [!IMPORTANT]
-> Il s’agit de la rubrique de référence qui n’est plus la ressource principale pour Microsoft 365 protection contre la perte de données (DLP). L’ensemble de contenu DLP est mis à jour et restructuré. Les rubriques couvertes dans cet article vont passer à de nouveaux articles mis à jour. Pour plus d’informations sur la protection contre la perte de données, voir [En savoir plus sur la protection contre la perte de données.](dlp-learn-about-dlp.md)
+> Il s’agit de la rubrique de référence qui n’est plus la ressource principale pour Microsoft 365 protection contre la perte de données (DLP). L’ensemble de contenu DLP est mis à jour et restructuré. Les rubriques couvertes dans cet article vont passer à de nouveaux articles mis à jour. Pour plus d’informations sur la protection contre la perte de données, voir [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md).
 
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
@@ -73,7 +73,7 @@ With a DLP policy, you can:
 
 Vous créez et gérez des stratégies DLP sur la page Protection contre la perte de données dans le Centre de conformité Microsoft 365.
 
-![Page protection contre la perte de données dans le Centre Office 365 &amp; conformité de la sécurité.](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![Page protection contre la perte de données dans le Centre Office 365 conformité &amp; de la sécurité.](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
 
 <!-- MOVED TO LEARN ABOUT ## What a DLP policy contains
 
@@ -545,7 +545,7 @@ Lorsque vous créez une stratégie DLP qui inclut Microsoft Teams comme emplacem
 
 ## <a name="permissions"></a>Autorisations
 
-Par défaut, les administrateurs globaux, les administrateurs de sécurité et les administrateurs de conformité ont accès à la création et à l’application d’une stratégie DLP. Les autres membres de votre équipe de conformité qui créeront des stratégies DLP ont besoin d’autorisations pour le Centre de &amp; conformité de sécurité. Par défaut, votre administrateur client aura accès à cet emplacement et peut accorder aux responsables de la mise en conformité et aux autres personnes l’accès au Centre de conformité de sécurité, sans leur donner toutes les autorisations d’un administrateur &amp; client. Pour ce faire, nous vous recommandons de :
+Par défaut, les administrateurs globaux, les administrateurs de sécurité et les administrateurs de conformité ont accès à la création et à l’application d’une stratégie DLP. Les autres membres de votre équipe de conformité qui créeront des stratégies DLP ont besoin d’autorisations pour le Centre de &amp; conformité de sécurité. Par défaut, &amp; votre administrateur client aura accès à cet emplacement et peut accorder aux responsables de la mise en conformité et aux autres personnes l’accès au Centre de conformité de sécurité, sans leur donner toutes les autorisations d’un administrateur client. Pour ce faire, nous vous recommandons de :
 
 1. Créer un groupe dans Microsoft 365 et d’y ajouter des responsables de la mise en conformité.
 
@@ -591,6 +591,6 @@ Toutefois, les rapports DLP doivent extraire des données de Microsoft 365, y c
 
 - [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
 
-- [Éléments recherchés par les fonctions DLP](what-the-dlp-functions-look-for.md)
+- [Fonctions de type d’informations sensibles](sit-functions.md)
 
 - [Créer un type d’informations sensibles personnalisé](create-a-custom-sensitive-information-type.md)

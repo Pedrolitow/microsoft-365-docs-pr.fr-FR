@@ -22,12 +22,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b7118d51ce87e26b6752ac767040a26e87464f22
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: a3e1543ed56580983fec5b7eee6366e817d82079
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807475"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62904158"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Exécuter une simulation d’attaque dans Microsoft 365 Defender environnement pilote
 
@@ -62,7 +62,7 @@ Defender for Office 365 with Microsoft 365 E5 or Microsoft Defender for Office 3
 
 1. Créer une simulation
 
-   Pour obtenir des instructions détaillées sur la création et l’envoi d’une nouvelle simulation, voir [Simulation d’une attaque par hameçonnage](/microsoft-365/security/office-365-security/attack-simulation-training).
+   Pour obtenir des instructions détaillées sur la création et le lancement d’une nouvelle simulation, voir [Simulation d’une attaque par hameçonnage](/microsoft-365/security/office-365-security/attack-simulation-training).
 
 2. Créer une charge utile
 
@@ -83,15 +83,15 @@ Voici les simulations defender pour point de terminaison de Microsoft :
 - Document drop backdoor
 - Examen automatisé (porte dérobée)
 
-Il existe d’autres simulations d’Attaque IQ et SafeBreach. Il existe également un ensemble de didacticiels.
+Il existe des simulations supplémentaires provenant de sources tierces. Il existe également un ensemble de didacticiels.
 
 Pour chaque simulation ou didacticiel :
 
-1. Téléchargez et lisez le document de pas à pas correspondant fourni avec votre scénario ou simulation sélectionné.
+1. Téléchargez et lisez le document pas à pas fourni.
 
 2. Téléchargez le fichier de simulation. Vous pouvez choisir de télécharger le fichier ou le script sur le périphérique de test, mais ce n’est pas obligatoire.
 
-3. Exécutez le fichier ou le script de simulation sur le périphérique de test comme indiqué dans le document.
+3. Exécutez le fichier ou le script de simulation sur le périphérique de test comme indiqué dans le document pas à pas.
 
  Pour plus d’informations, voir [Expérience microsoft Defender pour point de terminaison par le biais d’attaques simulées](/microsoft-365/security/defender-endpoint/attack-simulations).
 
@@ -322,11 +322,11 @@ Une fois l’examen terminé et confirmé qu’il a été corrigé, vous résolv
 
 Dans la page **Incident** , sélectionnez **Gérer l’incident**. Définissez l’état **sur Résoudre l’incident** et sélectionnez **Alerte true** pour la classification et **les tests de** sécurité pour la détermination.
 
-![Exemple de page incidents avec le panneau Gérer les incidents ouvert dans lequel vous pouvez cliquer sur le commutateur pour résoudre l’incident.](../../media/mtp/fig16.png)
+![Exemple de page incidents avec le panneau Gérer les incidents ouvert dans lequel vous pouvez résoudre l’incident.](../../media/mtp/fig16.png)
 
 Lorsque l’incident est résolu, il résout toutes les alertes associées dans le portail Microsoft 365 Defender et les portails associés.
 
-Cela termine la simulation d’attaque pour l’analyse des incidents, l’examen automatisé et la résolution des incidents.
+Cela termine les simulations d’attaques pour l’analyse des incidents, l’examen automatisé et la résolution des incidents.
 
 ## <a name="next-step"></a>Étape suivante
 

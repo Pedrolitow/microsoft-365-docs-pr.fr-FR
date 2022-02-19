@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b58e2ddd2b4282bd3abcd36147db89970e21fb19
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 81fdf04686f62acf3a2acce7e1bb400fe1d51aaa
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943291"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62904072"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Étape 2. Corriger votre premier incident
 
@@ -36,15 +36,15 @@ ms.locfileid: "61943291"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender fournit non seulement des fonctionnalités de détection et d’analyse, mais également de contenir et d’éradication des programmes malveillants. Le contenu inclut des étapes pour réduire l’impact de l’attaque, tandis que l’éradication garantit que toutes les traces d’activité de l’attaquant sont supprimées du réseau.  Microsoft 365 Defender propose plusieurs actions de correction qui [](m365d-autoir.md) peuvent être configurées pour corriger automatiquement en fonction de votre système d’exploitation et du type d’attaque.
+Microsoft 365 Defender fournit non seulement des fonctionnalités de détection et d’analyse, mais également de contenir et d’éradication des programmes malveillants. Le contenu inclut des étapes pour réduire l’impact de l’attaque, tandis que l’éradication garantit que toutes les traces d’activité de l’attaquant sont supprimées du réseau. Microsoft 365 Defender propose plusieurs actions de correction qui peuvent être configurées pour corriger automatiquement [](m365d-autoir.md) en fonction du système d’exploitation des appareils concernés et du type d’attaque.
 
-Microsoft 365 Defender propose plusieurs actions de correction que les analystes peuvent lancer manuellement. Les actions sont séparées en deux catégories : Actions sur les appareils et Actions sur les fichiers. Certaines actions peuvent être utilisées pour arrêter immédiatement la menace, tandis que d’autres actions aident à une analyse plus approfondie de l’investigation.
+Microsoft 365 Defender propose plusieurs actions de correction que les analystes peuvent lancer manuellement. Les actions sont séparées en deux catégories : Actions sur les appareils et actions sur les fichiers. Certaines actions peuvent être utilisées pour arrêter immédiatement la menace, tandis que d’autres actions aident à une analyse plus approfondie de l’investigation.
 
 ## <a name="actions-on-devices"></a>Actions sur des appareils
 
 - **Isoler** l’appareil : cette activité bloque immédiatement tout le trafic réseau (internet et interne) pour réduire la propagation des programmes malveillants et permettre aux analystes de poursuivre l’analyse sans qu’un acteur malveillant puisse poursuivre une attaque. La seule connexion autorisée est le cloud du service Microsoft Defender pour l’identité afin que Microsoft Defender pour l’identité puisse continuer à surveiller l’appareil. 
 - **Restreindre l’exécution** de l’application : pour empêcher l’exécution d’une application, une stratégie d’intégrité du code est appliquée, qui autorise uniquement l’exécution des fichiers s’ils sont signés par un certificat émis par Microsoft. Cette méthode de restriction permet d’empêcher une personne malveillante de contrôler des appareils compromis et d’effectuer d’autres activités malveillantes.
-- **Exécuter une analyse antivirus** : une analyse Antivirus Microsoft Defender peut s’exécuter avec d’autres solutions antivirus, que l’Antivirus Defender soit ou non la solution antivirus active. Si un autre produit fournisseur d’antivirus est la solution de protection de point de terminaison principale, vous pouvez exécuter l’Antivirus Defender en mode passif.
+- **Exécuter une analyse antivirus** : une analyse Antivirus Microsoft Defender peut s’exécuter avec d’autres solutions antivirus, que l’Antivirus Defender soit la solution antivirus active ou non. Si un autre produit fournisseur d’antivirus est la solution de protection de point de terminaison principale, vous pouvez exécuter l’Antivirus Defender en mode passif.
 - **Lancer une enquête automatisée** : vous pouvez démarrer une nouvelle enquête automatisée à usage général sur l’appareil. Pendant l’exécution d’un examen, toute autre alerte générée à partir de l’appareil est ajoutée à un examen automatisé en cours jusqu’à ce que l’examen soit terminé. En outre, si la même menace est vue sur d’autres appareils, ces appareils sont ajoutés à l’examen.
 - **Lancer une réponse en direct** : la réponse en direct est une fonctionnalité qui vous permet d’accéder instantanément à un appareil à l’aide d’une connexion Shell distante. Cela vous permet d’approfondir votre travail d’investigation et de prendre des mesures de réponse immédiates pour contenir rapidement les menaces identifiées en temps réel. La réponse dynamique est conçue pour améliorer les enquêtes en vous permettant de collecter des données d’investigation, d’exécuter des scripts, d’envoyer des entités suspectes pour analyse, de corriger les menaces et de chercher de manière proactive les menaces émergentes.
 - **Collecter un package d’examen** : dans le cadre du processus d’examen ou de réponse, vous pouvez collecter un package d’enquête à partir d’un appareil. En collectant le package d’examen, vous pouvez identifier l’état actuel de l’appareil et mieux comprendre les outils et techniques utilisés par l’attaquant. 
@@ -57,7 +57,7 @@ Microsoft 365 Defender propose plusieurs actions de correction que les analystes
 - **Télécharger ou collecter un fichier** : cette action permet aux analystes de télécharger un fichier dans un fichier d’archive protégé .zip mot de passe pour une analyse plus approfondie par l’organisation.
 - **Analyse approfondie** : cette action exécute un fichier dans un environnement cloud sécurisé et entièrement instrumenté. Les résultats de l’analyse approfondie montrent les activités du fichier, les comportements observés et les artefacts associés, tels que les fichiers supprimés, les modifications du Registre et la communication avec les adresses IP. 
 
-En continuant l’exemple dans Détecter, trier et analyser les [incidents,](first-incident-analyze.md#analyze-your-first-incident)un analyste peut corriger cet incident avec les actions ci-après :
+En continuant l’exemple [dans Détecter, trier](first-incident-analyze.md#analyze-your-first-incident) et analyser les incidents, un analyste peut corriger cet incident avec les actions ci-après :
 
 1. Réinitialiser immédiatement le mot de passe du compte d’utilisateur
 2. Isoler l’appareil dans Microsoft 365 Defender jusqu’à ce que l’analyse approfondie soit terminée
@@ -87,13 +87,13 @@ Voici un exemple.
  
 :::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Exemple d’un flux Power Automate processus automatisé personnalisé."::: 
  
-Les playbooks peuvent également être créés lors de la révision [post-incident](first-incident-post.md) pour créer des actions de correction à partir d’incidents afin d’accélérer les actions de correction. 
+Les playbooks peuvent également être créés lors de [la révision post-incident](first-incident-post.md) pour créer des actions de correction à partir d’incidents résolus. 
 
 ## <a name="next-step"></a>Étape suivante
 
 [![Étape 3 : Découvrez comment effectuer une révision post-incident d’un incident.](../../media/first-incident-overview/first-incident-path-step3.png)](first-incident-post.md)
 
-Découvrez comment effectuer [une révision post-incident d’un incident.](first-incident-post.md)
+Découvrez comment effectuer [une révision post-incident d’un incident](first-incident-post.md).
 
 ## <a name="see-also"></a>Voir aussi
 

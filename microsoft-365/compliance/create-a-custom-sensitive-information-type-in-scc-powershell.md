@@ -6,7 +6,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 audience: Admin
-ms.article: article
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez la création et l’importation d’un type d’informations sensibles personnalisé des stratégies dans le centre de conformité.
-ms.openlocfilehash: ffca0717bbefdad90854f118131fe45ae3ce4dfd
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 89c215ca52b255a6e3aed72ff032cdd2475c0d87
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806239"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903860"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Créer un type d’informations sensibles personnalisé à l’aide de PowerShell
 
@@ -235,7 +235,7 @@ Les types d’informations sensibles peuvent également utiliser des fonctions i
 
 Par exemple, un badge d’ID d’employé possède une date d’embauche, afin que cette entité personnalisée puisse utiliser la fonction intégrée pour identifier une date au format couramment utilisé aux États-Unis `Func_us_date` .
 
-Pour obtenir plus d’informations, consultez l’article [Éléments recherchés par les fonctions DLP](what-the-dlp-functions-look-for.md).
+Pour plus d’informations, voir [Fonctions de type d’informations sensibles](sit-functions.md).
 
 ![Marques XML montrant l’élément Match faisant référence à la fonction intégrée.](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
 
@@ -325,7 +325,7 @@ En plus de l’attribut confidenceLevel de chaque modèle, l’entité possède 
 
 ## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>Voulez-vous prendre en charge d’autres langues dans l’interface utilisateur du Centre de conformité ? [élément LocalizedStrings]
 
-Si votre équipe de conformité utilise le Centre de conformité Microsoft 365 pour créer des stratégies avec différents paramètres régionaux et dans différentes langues, vous pouvez fournir des versions localisées du nom et de la description de votre type d’informations sensibles personnalisé. Lorsque votre équipe de conformité utilise Microsoft 365 dans une langue que vous prenez en charge, le nom localisé s’affiche dans l’interface utilisateur.
+Si votre équipe de conformité utilise le centre de conformité Microsoft 365 pour créer des stratégies dans différents paramètres régionaux et dans différentes langues, vous pouvez fournir des versions localisées du nom et de la description de votre type d’informations sensibles personnalisé. Lorsque votre équipe de conformité utilise Microsoft 365 dans une langue que vous prenez en charge, le nom localisé s’affiche dans l’interface utilisateur.
 
 ![Nombre d’instances et configuration de précision de correspondance.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
@@ -912,4 +912,4 @@ Vous pouvez copier ce balisage, l’enregistrer sous la forme d’un fichier XS
 
 - [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)
 - [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
-- [Éléments recherchés par les fonctions DLP](what-the-dlp-functions-look-for.md)
+- [Fonctions de type d’informations sensibles](sit-functions.md)

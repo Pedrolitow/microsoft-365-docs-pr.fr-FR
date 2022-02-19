@@ -1,5 +1,5 @@
 ---
-title: Actualiser votre fichier de table source d’informations sensibles
+title: Actualiser votre fichier exact de table source d’informations sensible aux correspondances de données
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,25 +17,25 @@ search.appverid:
 - MET150
 description: Actualisez votre fichier de table source d’informations sensibles.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fd083b798785f0dbfca8603f8b7bc28fece6004e
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 79442356066263485c70bf455af5a6a44a0355d4
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914785"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903709"
 ---
-# <a name="refresh-your-sensitive-information-source-table-file"></a>Actualiser votre fichier de table source d’informations sensibles 
+# <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>Actualiser votre fichier de table source d’informations sensibles de correspondance exacte 
 
 Vous pouvez actualiser votre base de données d’informations sensibles deux fois par période de 24 heures. Vous devez resserrez et téléchargez votre table de sources d’informations sensibles.
 
-1. Réexportez les données sensibles vers une application, telle que Microsoft Excel, et enregistrez le fichier au format .csv, au format .tsv ou au format de canal (|). Conservez le même nom de fichier et l’emplacement que vous avez utilisés lorsque vous avez précédemment haché et chargé le fichier. Voir, [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) for details on exporting your sensitive data and getting it into the correct format.
+1. Réexportez les données sensibles vers une application, telle que Microsoft Excel, et enregistrez le fichier au format .csv, au format .tsv ou au format de canal (|). Conservez le nom de fichier et l’emplacement que vous avez utilisés lorsque vous avez précédemment haché et chargé le fichier. Voir, [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) for details on exporting your sensitive data and getting it into the correct format.
 
       > [!NOTE]
-      > Si aucune modification n’est apportée à la structure (noms de champs) du fichier de table de sources d’informations sensibles, vous n’avez pas besoin d’apporter des modifications à votre fichier de schéma de base de données lorsque vous actualisez les données. Si vous devez apporter des modifications, assurez-vous de modifier le schéma de base de données et votre package de règles en conséquence. Consultez [la procédure de modification](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) ou de suppression d’un schéma de correspondance exacte des données. See, [Create exact data match sensitive information type/rule package](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) for the steps to edit or remove your EDM SIT/rule package.
+      > Si aucune modification n’est apportée à la structure (noms de champs) du fichier de table de sources d’informations sensibles, vous n’avez pas besoin d’apporter de modifications à votre fichier de schéma de base de données lorsque vous actualisez les données. Si vous devez apporter des modifications, assurez-vous de modifier le schéma de base de données et votre package de règles en conséquence. Consultez [la procédure de modification](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) ou de suppression d’un schéma exact de correspondance de données. See, [Create exact data match sensitive information type/rule package](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) for the steps to edit or remove your EDM SIT/rule package.
 
-2. Utilisez les procédures du hachage et téléchargez la table des sources d’informations sensibles pour obtenir des [types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) d’informations sensibles de correspondance exacte pour télécharger votre fichier source de table d’informations sensibles.
+2. Utilisez les procédures du hachage et téléchargez la [table des sources](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) d’informations sensibles pour obtenir des types d’informations sensibles de correspondance exacte pour télécharger votre fichier source de table d’informations sensibles.
 
-2. Vous pouvez utiliser le [Programmeur des](/windows/desktop/TaskSchd/task-scheduler-start-page) tâches pour automatiser le hachage et charger la table des sources d’informations sensibles pour la procédure exacte de correspondance des types d’informations [sensibles.](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) Vous pouvez planifier des tâches à l’aide de plusieurs méthodes :
+2. Vous pouvez utiliser le [Programmeur des](/windows/desktop/TaskSchd/task-scheduler-start-page) tâches pour automatiser le hachage et charger la table des sources d’informations sensibles pour la procédure exacte des [types d’informations](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) sensibles de correspondance de données. Vous pouvez planifier des tâches à l’aide de plusieurs méthodes :
 
    |Méthode|Procédure|
    |---|---|
