@@ -2,8 +2,8 @@
 title: Quel abonnement ai-je ?
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,29 +16,29 @@ ms.collection:
 - Adm_O365_Setup
 - Adm_TOC
 ms.custom:
+- commerce_subscriptions
 - okr_smb
 - AdminSurgePortfolio
-- commerce_subscriptions
 - AdminTemplateSet
 search.appverid: MET150
 description: Découvrez comment vérifier les abonnements de votre organisation en allant sur la page Vos produits.
 ms.date: 01/21/2021
-ms.openlocfilehash: df18228d8b5b551f8c64246c96aa6f397ec13484
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ad4c21b9cd4fbed746b8a272f56d5cb14be49d28
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153953"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314950"
 ---
 # <a name="what-subscription-do-i-have"></a>Quel abonnement ai-je ?
 
 Si vous êtes un administrateur, vous pouvez vérifier les abonnements de votre organisation en allant au Centre d’administration.
   
-**Vous n’êtes pas administrateur ?** Consultez les Microsoft 365 produit ou licence pour les entreprises [que j’ai ?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
+**Vous n’êtes pas administrateur ?** [Consultez les Microsoft 365 produit ou licence pour les entreprises que j’ai ?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 2. Sous **l’onglet** Produits, vous voyez tous vos abonnements. Chaque ligne d’abonnement inclut des informations sur les licences, l’état de l’abonnement et la facturation.
-3. Si vous souhaitez modifier les colonnes qui apparaissent dans la liste, sélectionnez **Sélectionner des colonnes.** Modifiez la sélection des colonnes, puis sélectionnez **Enregistrer.**
+3. Si vous souhaitez modifier les colonnes qui apparaissent dans la liste, sélectionnez **Sélectionner des colonnes**. Modifiez la sélection des colonnes, puis sélectionnez **Enregistrer**.
 4. Pour plus d’informations sur un abonnement unique, sélectionnez cet abonnement.
 
 ## <a name="related-content"></a>Contenu associé

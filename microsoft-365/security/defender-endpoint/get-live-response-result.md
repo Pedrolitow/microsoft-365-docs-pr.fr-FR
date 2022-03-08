@@ -14,24 +14,22 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ce0fd83e95be6fd1f26b40a5992303162a265c3e
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: bd8b3c997a8efceb2791eca4de0b0e42d47513f8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300453"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314404"
 ---
 # <a name="get-live-response-results"></a>Obtenir des résultats de réponse en direct
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -46,7 +44,7 @@ ms.locfileid: "61300453"
 
 Récupère un résultat de commande de réponse en direct spécifique par son index.
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
@@ -54,7 +52,7 @@ Récupère un résultat de commande de réponse en direct spécifique par son in
 
 Avant de lancer une session sur un appareil, veillez à respecter les conditions suivantes :
 
-- **Vérifiez que vous exécutez une version prise** en charge de Windows .
+- **Vérifiez que vous exécutez une version prise en charge de Windows**.
 
   Les appareils doivent être en cours d’exécution dans l’une des versions suivantes Windows
 
@@ -68,14 +66,14 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
     - [Version 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) avec [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
   - **Windows Server 2019 - Applicable uniquement pour la prévisualisation publique**
-    - Version 1903 ou (avec [KB4515384)](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)ultérieure
-    - Version 1809 [(avec KB4537818)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - Version 1903 ou (avec [KB4515384) ultérieure](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
+    - Version 1809 ( [avec KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
     
   - **Windows Server 2022**  
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, [consultez La mise en place.](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, [consultez La mise en place](apis-intro.md).
 
 |Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation|
 |---|---|---|
@@ -102,7 +100,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie un code de réponse 200, Ok avec un objet qui contient le lien vers le résultat de commande dans la *propriété value.* Ce lien est valide pendant 30 minutes et doit être utilisé immédiatement pour télécharger le package dans un stockage local. Un lien expiré peut être re-créé par un autre appel et il n’est pas nécessaire d’exécuter à nouveau une réponse en direct.
+Si elle réussit, cette méthode renvoie un code de réponse 200, Ok avec un objet qui contient le lien vers le résultat de commande dans la *propriété value* . Ce lien est valide pendant 30 minutes et doit être utilisé immédiatement pour télécharger le package dans un stockage local. Un lien expiré peut être re-créé par un autre appel et il n’est pas nécessaire d’exécuter à nouveau une réponse en direct.
 
 *Propriétés de transcription Runscript :*
 

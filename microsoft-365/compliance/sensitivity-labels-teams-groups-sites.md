@@ -13,16 +13,17 @@ ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkSPO
 search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: d7d5ae1dfea2179c698922c4ddb045de0cd20ce5
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 39caee37f8bf8b2f885824bbdd12ca7b5b372e69
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354959"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320506"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -174,52 +175,11 @@ Restrictions connues pour cette version préliminaire :
     - Flux de travail qui utilisent Power Apps ou Power Automate
     - Applications tierces
 
-### <a name="configure-settings-for-the-default-sharing-link-for-a-site-by-using-powershell-advanced-settings"></a>Configurer les paramètres du lien de partage par défaut d’un site à l’aide des paramètres avancés de PowerShell
+### <a name="configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings"></a>Configurer les paramètres du type de lien de partage par défaut pour un site à l’aide de paramètres avancés PowerShell
 
-Outre les paramètres d’étiquette pour les sites et les groupes que vous pouvez configurer à partir du Centre de conformité, vous pouvez également configurer le type de lien de partage par défaut pour un site et les autorisations de lien de partage.
+Outre les paramètres d’étiquette pour les sites et les groupes que vous pouvez configurer à partir du Centre de conformité, vous pouvez également configurer le type de lien de partage par défaut pour un site. Les étiquettes de confidentialité des documents peuvent également être configurées pour un type de lien de partage par défaut. Ces paramètres qui permettent d’empêcher le sur-partage sont automatiquement sélectionnés lorsque les utilisateurs sélectionnent le bouton **Partager** dans leurs applications Office. 
 
-Pour en savoir plus sur le fonctionnement de ces paramètres, voir [Modifier le type de lien par défaut pour un site](/sharepoint/change-default-sharing-link).
-
-Ces paramètres d’étiquette supplémentaires pour le lien de partage sont actuellement disponibles uniquement en tant que paramètre *AdvancedSettings* PowerShell et les cmdlets [Set-Label](/powershell/module/exchange/set-label) et [New-Label](/powershell/module/exchange/new-labelpolicy) du [Centre de conformité et sécurité PowerShell](/powershell/exchange/scc-powershell) :
-
-- **DefaultSharingScope** : les valeurs disponibles sont :
-    - **SpecificPeople** : définit le lien de partage par défaut pour le site sur le lien « Personnes spécifiques »
-    - **Organisation** : définit le lien de partage par défaut pour le site sur le lien « organisation » ou le lien partageable par l’entreprise
-    - **Tout le monde** : définit le lien de partage par défaut pour le site sur un lien Accès anonyme ou Tout le monde
-
-- **DefaultShareLinkPermission** : les valeurs disponibles sont :
-    - **Affichage** : définit l’autorisation de lien par défaut pour le site sur les autorisations « afficher »
-    - **Modifier** : définit l’autorisation de lien par défaut pour le site sur les autorisations « modifier »
-
-Ces deux paramètres et valeurs sont équivalents aux paramètres *DefaultSharingScope* et *DefaultShareLinkPermission* de la cmdlet [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite).
-
-Exemples PowerShell, où le GUID de l’étiquette de sensibilité est **8faca7b8-8d20-48a3-8ea2-0f96310a848e** :
-
-- Pour définir le type de lien de partage sur SpecificPeople :
-    
-    ````powershell
-    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope="SpecificPeople"}
-    ````
-
-- Pour définir les autorisations de lien de partage sur Modifier :
-    
-    ````powershell
-    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
-    ````
-
-#### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>Conseils PowerShell pour la spécification des paramètres avancés
-
-Bien que vous puissiez spécifier l’étiquette de niveau de sensibilité par son nom, nous vous recommandons d’utiliser le GUID de l’étiquette pour éviter toute confusion par rapport à la spécification du nom d’étiquette ou du nom complet. Pour trouver le GUID :
-
-````powershell
-Get-Label | Format-Table -Property DisplayName, Name, Guid
-````
-
-Pour supprimer l’un de ces paramètres avancés d’une étiquette de confidentialité, utilisez la même syntaxe de paramètre AdvancedSettings, mais spécifiez une valeur de chaîne null. Par exemple :
-
-````powershell
-Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope=""}
-````
+Pour plus d’informations et d’instructions, consultez [Utiliser des étiquettes de confidentialité pour configurer le type de lien de partage par défaut pour les sites et les documents dans SharePoint et OneDrive](sensitivity-labels-default-sharing-link.md).
 
 ## <a name="sensitivity-label-management"></a>Gestion des étiquettes de confidentialité
 
@@ -351,7 +311,7 @@ Cette série de commandes vous permet d’étiqueter plusieurs sites de votre cl
 
 ## <a name="view-and-manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>Afficher et gérer les étiquettes de confidentialité dans le Centre d’administration SharePoint
 
-Pour afficher, trier et effectuer une recherche sur les étiquettes de confidentialité appliquées, utilisez la page **Sites actifs** dans le nouveau Centre d’administration SharePoint. Vous devrez peut-être d’abord ajouter la colonne **sensibilité** :
+Pour afficher, trier et rechercher les étiquettes de confidentialité appliquées, utilisez <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sites actifs**</a> dans le nouveau Centre d’administration SharePoint. Vous devrez peut-être d’abord ajouter la colonne de **Confidentialité**:
 
 ![Colonne Confidentialité de la page Sites actifs.](../media/manage-site-sensitivity-labels.png)
 
@@ -488,7 +448,7 @@ Ces événements d’audit peuvent être consultés dans la catégorie [Activit�
 
 ## <a name="how-to-disable-sensitivity-labels-for-containers"></a>Comment désactiver les étiquettes de confidentialité pour les conteneurs
 
-Vous pouvez désactiver les étiquettes de confidentialité pour Microsoft Teams, les groupes Microsoft 365 et les sites SharePoint en suivant les instructions de [Activer la prise en charge d'une étiquette de confidentialité dans PowerShell](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). Toutefois, pour désactiver cette fonctionnalité, à l’étape 5, spécifiez `$setting["EnableMIPLabels"] = "False"`.
+Vous pouvez désactiver les étiquettes de confidentialité pour Microsoft Teams, les groupes Microsoft 365 et les sites SharePoint en suivant les mêmes instructions de [Activer la prise en charge des étiquettes de confidentialité dans PowerShell](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). Toutefois, pour désactiver la fonctionnalité, à l’étape 5, spécifiez `$setting["EnableMIPLabels"] = "False"`.
 
 En plus de rendre indisponible l’ensemble des paramètres pour les groupes et les sites lorsque vous créez ou modifiez des étiquettes de confidentialité, cette action rétablit la propriété utilisée par les conteneurs pour leur configuration. Activer les étiquettes de confidentialité pour Microsoft Teams, les groupes Microsoft 365 et les sites SharePoint change la propriété utilisée à partir de **Classification** (utilisé pour [Classification de groupe Azure AD](#classic-azure-ad-group-classification)) pour **Sensibilité**. Lorsque vous désactivez les étiquettes de confidentialité pour les conteneurs, les conteneurs ignorent la propriété de Sensibilité et réutilisent la propriété de classification.
 

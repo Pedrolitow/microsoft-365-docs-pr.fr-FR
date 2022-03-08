@@ -27,16 +27,19 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Découvrez comment utiliser Windows AutoPilot pour configurer de nouveaux appareils Windows 10 pour votre entreprise afin qu’ils sont prêts à être utilisés par les employés.
-ms.openlocfilehash: 4b187d5e8f9acc8fb76e77770ec88790394dfbe3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 12e86102633ddfc19960fb561b2a626da29f0560
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165639"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314012"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Utiliser le guide étape par étape pour ajouter des appareils et un profil Autopilot
 
-Vous pouvez utiliser Windows AutoPilot pour configurer de nouveaux appareils **Windows 10** pour votre entreprise afin qu’ils sont prêts à être utilisés lorsque vous les donnez à vos employés.
+> [!NOTE]
+> Microsoft Defender for Business est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Cette offre offre des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender pour les entreprises](../../security/defender-business/mdb-overview.md).
+
+Vous pouvez utiliser Windows AutoPilot pour configurer de nouveaux **appareils Windows 10 pour** votre entreprise afin qu’ils sont prêts à être utilisés lorsque vous les donnez à vos employés.
   
 ## <a name="device-requirements"></a>Configuration requise de l’appareil
 
@@ -48,7 +51,7 @@ Les appareils doivent répondre aux exigences ci-après :
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>Utiliser le guide de configuration pour créer des appareils et des profils
 
-Si vous n’avez pas encore créé de groupes d’appareils ou de profils, la meilleure façon de commencer consiste à utiliser le guide pas à pas. Vous pouvez également ajouter [des appareils et](create-and-edit-autopilot-devices.md) leur attribuer des [profils](create-and-edit-autopilot-profiles.md) sans utiliser le guide. 
+Si vous n’avez pas encore créé de groupes d’appareils ou de profils, la meilleure façon de commencer consiste à utiliser le guide pas à pas. Vous pouvez également ajouter [des appareils et](create-and-edit-autopilot-devices.md) [leur attribuer des profils](create-and-edit-autopilot-profiles.md) sans utiliser le guide. 
   
 1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
@@ -56,11 +59,11 @@ Si vous n’avez pas encore créé de groupes d’appareils ou de profils, la me
 
     ![Dans le Centre d’administration, choisissez les appareils, puis AutoPilot.](../../media/AutoPilot.png)
   
-2. Dans la page **AutoPilot,** cliquez ou appuyez sur **Le guide de démarrage.**
+2. Dans la page **AutoPilot** , cliquez ou appuyez sur **Le guide de démarrage**.
     
     ![Click Start guide for step-by-step instructions for Autopilot.](../../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-3. Sur la page **Télécharger .csv** avec la liste des appareils, accédez à un emplacement où vous avez préparé le fichier .CSV, puis **Ouvrez** \> **suivant**. Le fichier doit avoir trois en-têtes :
+3. Sur la page **Télécharger .csv** liste des appareils, accédez à un emplacement où vous avez préparé le fichier .CSV, puis **ouvrez** \> **suivant**. Le fichier doit avoir trois en-têtes :
     
     - Colonne A : Numéro de série de l'appareil
     
@@ -73,9 +76,9 @@ Si vous n’avez pas encore créé de groupes d’appareils ou de profils, la me
     Pour plus d'informations, voir [Fichier CSV de liste d'appareils](../misc/device-list.md). Vous pouvez également télécharger un exemple de fichier sur la page **Charger un fichier .csv avec la liste des appareils**. 
     
 > [!NOTE]
-> Ce script utilise WMI pour récupérer les propriétés nécessaires pour qu’un client enregistre un appareil Windows Autopilot. Notez qu’il est normal que le fichier CSV résultant ne collecte pas de valeur d’ID de produit (PKID) Windows car cela n’est pas obligatoire pour inscrire un appareil et la valeur PKID étant NULL dans le fichier CSV de sortie est totalement correct. Seuls le numéro de série et le hachage matériel seront remplis.
+> Ce script utilise WMI pour récupérer les propriétés nécessaires pour qu’un client enregistre un appareil Windows Autopilot. Notez qu’il est normal que le fichier CSV résultant ne collecte pas de valeur d’ID de produit (PKID) Windows, car cela n’est pas obligatoire pour inscrire un appareil et la valeur PKID null dans le fichier CSV de sortie est parfaitement correct. Seuls le numéro de série et le hachage matériel seront remplis.
     
-4. Dans la page **Attribuer un profil,** vous pouvez choisir un profil existant ou en créer un nouveau. Si vous n’en avez pas encore, vous serez invité à en créer un. 
+4. Dans la page **Attribuer un profil** , vous pouvez choisir un profil existant ou en créer un nouveau. Si vous n’en avez pas encore, vous serez invité à en créer un. 
     
     Un proﬁl est un ensemble de paramètres qui peuvent être appliqués à un seul appareil ou à un groupe d'appareils.
     
@@ -87,15 +90,15 @@ Si vous n’avez pas encore créé de groupes d’appareils ou de profils, la me
     
     - Connecter vos appareils pour Azure Active Directory comptes et les inscrire automatiquement pour qu’ils soient gérés par Microsoft 365 Business Premium.
     
-    Pour plus d’informations, voir à propos des paramètres de [profil AutoPilot.](autopilot-profile-settings.md) 
+    Pour plus d’informations, voir [à propos des paramètres de profil AutoPilot](autopilot-profile-settings.md). 
     
 5. Les autres paramètres sont **Ignorer les paramètres de confidentialité** et **Ne pas autoriser l'utilisateur à devenir administrateur local**. Ils sont tous les deux définis sur **Désactivé** par défaut. 
     
     Sélectionnez **Suivant**.
     
-6. Vous avez terminé d’indiquer que le profil que vous avez créé (ou choisi) sera appliqué au groupe **d’appareils** que vous avez créé en téléchargeant la liste des appareils. Les paramètres seront en vigueur lorsque les utilisateurs de l’appareil se connectent ensuite. Sélectionnez **Fermer**.
+6. **Vous avez terminé d’indiquer** que le profil que vous avez créé (ou choisi) sera appliqué au groupe d’appareils que vous avez créé en téléchargeant la liste des appareils. Les paramètres seront en vigueur lorsque les utilisateurs de l’appareil se connectent ensuite. Sélectionnez **Fermer**.
 
 ## <a name="related-content"></a>Contenu associé
 
 [À propos des paramètres de profil AutoPilot](autopilot-profile-settings.md) (article)\
-[Options de protection de vos appareils et données d’application](../devices/choose-device-security.md) (article)
+[Options de protection de vos appareils et](../devices/choose-device-security.md) de vos données d’application (article) 10 méthodes principales pour sécuriser les Microsoft 365 [pour les entreprises](../security-and-compliance/secure-your-business-data.md)

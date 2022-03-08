@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6ea0294604d77c812661dbe410772c91df9d66c8
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 7562eca50b905bf70f17844cf8fe3079fbf3fc14
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171922"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314278"
 ---
 # <a name="step-4-define-microsoft-365-defender-roles-responsibilities-and-oversight"></a>Étape 4. Définir Microsoft 365 Defender rôles, responsabilités et supervision
 
@@ -38,7 +38,7 @@ ms.locfileid: "62171922"
 
 Votre organisation doit établir la propriété et la responsabilité des licences Microsoft 365 Defender, des configurations et de l’administration comme tâches initiales avant de pouvoir définir des rôles opérationnels. En règle générale, la propriété des licences, les coûts d’abonnement et l’administration des services Microsoft 365 et Enterprise Security + Mobility (EMS) (qui peuvent inclure Microsoft 365 Defender) ne font pas partie des équipes du Centre des opérations de sécurité (SOC). Les équipes SOC doivent travailler avec ces personnes pour assurer une supervision appropriée des Microsoft 365 Defender. 
 
-De nombreux socs modernes affectent à leurs membres d’équipe des catégories en fonction de leurs compétences et fonctions. Par exemple :
+De nombreux socs modernes affectent à leurs membres d’équipe des catégories en fonction de leurs compétences et fonctions. Par exemple :
 
 - Une équipe d’intelligence des menaces affectée à des tâches liées à la gestion du cycle de vie des fonctions de menace et d’analyse.
 - Une équipe de surveillance composée d’analystes SOC responsables de la maintenance des journaux, des alertes, des événements et des fonctions de surveillance.

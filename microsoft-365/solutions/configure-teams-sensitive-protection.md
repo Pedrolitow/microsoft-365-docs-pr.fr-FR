@@ -17,14 +17,15 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+- admindeeplinkSPO
 recommendations: false
 description: Découvrez comment déployer des équipes avec la protection des données sensibles.
-ms.openlocfilehash: edeeb0fc0f93ae962b85e113734dea1844b11d04
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 42124881ac795c54288dee46e70dc1d5eccef3e3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213420"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314068"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Configurer les équipes avec la protection des données sensibles
 
@@ -119,12 +120,11 @@ Chaque fois que vous créez une équipe avec une étiquette de confidentialité,
 
 Pour mettre à jour le type de lien de partage par défaut du site
 
-1. Ouvrez le [Centre d’administration SharePoint](https://admin.microsoft.com/sharepoint).
-2. Sous **Sites**, cliquez sur **Sites actifs**.
-3. Cliquez sur le site associé à l’équipe.
-4. Sous l’onglet **Stratégies**, sous **Partage externe**, cliquez sur **Modifier**.
-5. Sous Type de lien de partage par défaut, désactivez la case à cocher **Identique au paramètre de niveau organisation**, puis sélectionnez **Personnes spécifiques (uniquement les membres spécifiés par l’utilisateur)**.
-6. Cliquez sur **Enregistrer**.
+1. Ouvrez le Centre d’administration SharePoint et, sous **Sites**, sélectionnez <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sites actifs**</a>.
+1. Sélectionnez le site associé à l’équipe.
+1. Sous l’onglet **Stratégies**, sous **Partage externe**, cliquez sur **Modifier**.
+1. Sous Type de lien de partage par défaut, désactivez la case à cocher **Identique au paramètre de niveau organisation**, puis sélectionnez **Personnes spécifiques (uniquement les membres spécifiés par l’utilisateur)**.
+1. Sélectionnez **Enregistrer**.
 
 Si vous voulez créer un script dans le cadre de votre processus de création d’équipe, vous pouvez utiliser [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) avec les paramètre `-DefaultSharingLinkType Direct` pour modifier le lien de partage par défaut pour *Personnes spécifiques*.
 

@@ -2,13 +2,13 @@
 title: Connecter vos enregistrements DNS web.com à Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services sur web.com microsoft.
-ms.openlocfilehash: b95fd5412b7ddc4363e8d5e4ea345c1f551feef8
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 88b5bbae321c25520732b9f2b903a9f29fd91a35
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586800"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313508"
 ---
 # <a name="connect-your-dns-records-at-webcom-to-microsoft-365"></a>Connecter vos enregistrements DNS web.com à Microsoft 365
 
@@ -45,26 +45,26 @@ Une fois ces enregistrements ajoutés web.com, votre domaine est installé pour 
 > [!IMPORTANT]
 > Vous devez effectuer cette procédure au niveau du bureau d'enregistrement de domaines auprès duquel vous avez acheté et inscrit votre domaine. 
   
-Lorsque vous vous êtes inscrit à web.com, vous avez ajouté un domaine à l’aide du processus **web.com’installation.** 
+Lorsque vous vous êtes inscrit à web.com, vous avez ajouté un domaine à l’aide du processus **web.com’installation** . 
   
-Pour vérifier et créer des enregistrements DNS pour votre domaine dans Microsoft, vous devez d’abord modifier les serveurs de noms de votre bureau d’enregistrement de domaines afin qu’ils utilisent les serveurs de noms web.com.
+Pour vérifier et créer des enregistrements DNS pour votre domaine dans Microsoft, vous devez d’abord modifier les serveurs de noms de votre bureau d’enregistrement de domaines afin qu’ils utilisent les serveurs web.com noms.
   
 Pour modifier vous-même les serveurs de noms de votre domaine sur le site web de votre bureau d'enregistrement de domaines, procédez comme suit.
   
 1. Identifiez la zone sur le site web du bureau d'enregistrement de domaines dans laquelle vous pouvez modifier les serveurs de noms pour votre domaine.
-    
+
 2. Créez deux enregistrements de nameserver à l’aide des valeurs du tableau suivant, ou modifiez les enregistrements de nameserver existants afin qu’ils correspondent à ces valeurs.
-    
+
     |||
     |:-----|:-----|
     |Premier serveur de noms  <br/> |Utilisez la valeur de nameserver fournie par web.com.  <br/> |
     |Deuxième serveur de noms  <br/> |Utilisez la valeur de nameserver fournie par web.com.  <br/> |
-   
+
     > [!TIP]
     > You should use at least two name server records. Si d’autres serveurs de noms sont répertoriés, vous devez les supprimer. 
   
 3. Enregistrez vos modifications.
-    
+
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Ensuite, votre messagerie Microsoft et d’autres services seront tous définies pour fonctionner avec votre domaine. 
   
@@ -77,46 +77,50 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
   
 1. To get started, go to your domains page at web.com by using [this link](https://checkout.web.com/manage-it/index.jsp). Connectez-vous en premier.
   
-1. Sur la page d’accueil, sélectionnez **Noms de domaine.** 
+1. Sur la page d’accueil, sélectionnez **Noms de domaine**.
   
-1. Sous **Actions,** sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste liste.
+1. Sous **Actions**, sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste liste.
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="Sélectionnez Gérer dans la liste liste."::: 
   
-1. Faites défiler vers le bas pour sélectionner **Outils** avancés et en côté **des enregistrements DNS** avancés, sélectionnez **GÉRER**.
-    
+1. Faites défiler vers le bas **pour sélectionner Outils** avancés, puis en côté **des enregistrements DNS avancés**, sélectionnez **GÉRER**.
+
     Vous de devez **peut-être sélectionner Continuer** pour obtenir la page Gérer les enregistrements DNS avancés.
   
     :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="En plus des enregistrements DNS avancés, sélectionnez MANAGE.":::
 
-1. Dans la page Gérer les enregistrements DNS avancés, **sélectionnez + AJOUTER UN ENREGISTREMENT.**
+1. Dans la page Gérer les enregistrements DNS avancés, **sélectionnez + AJOUTER UN ENREGISTREMENT**.
 
-1. Sous **Type,** sélectionnez **TXT** dans la liste liste.
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Sélectionnez + AJOUTER UN ENREGISTREMENT.":::
 
-1. Sélectionnez ou copiez-collez les valeurs du tableau suivant. 
-    
+1. Sous **Type**, sélectionnez **TXT** dans la liste liste.
+
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-TXT.png" alt-text="Sélectionnez TXT dans la liste drop-down Type.":::
+
+1. Sélectionnez ou copiez-collez les valeurs du tableau suivant.
+
     |**Fait référence**|**Valeur TXT**|**TTL (Durée de vie)**|
     |:-----|:-----|:----|
     |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)    |1 heure  <br/> |
   
-5. Sélectionnez **AJOUTER**.
+1. **Sélectionnez AJOUTER**.
   
-6. Patientez quelques minutes avant de vérifier votre nouvel enregistrement TXT, afin que l’enregistrement que vous venons de créer puisse être mis à jour sur Internet.
-    
+    Patientez quelques minutes avant de vérifier votre nouvel enregistrement TXT, afin que l’enregistrement que vous venons de créer puisse être mis à jour sur Internet.
+
 L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez sur Microsoft et demandez l’enregistrement. Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est vérifié.
   
 Pour vérifier l’enregistrement dans Microsoft 365 :
   
-1. Dans le Centre d’administration, go to the **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
-    
-1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer la configuration.** 
+1. Dans le Centre d’administration, Paramètres  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**domaines**</a>.
+
+1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer l’installation**. 
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Sélectionnez Démarrer l’installation.":::
 
 1. Cliquez sur **Continuer**.
   
 1. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
-    
+
 > [!NOTE]
 > L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
   
@@ -124,59 +128,71 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
 1. To get started, go to your domains page at web.com by using [this link](https://checkout.web.com/manage-it/index.jsp). Connectez-vous en premier.
   
-1. Sur la page d’accueil, sélectionnez **Noms de domaine.** 
+1. Sur la page d’accueil, sélectionnez **Noms de domaine**. 
   
-1. Sous **Actions,** sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste liste.
+1. Sous **Actions**, sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste liste.
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="Sélectionnez Gérer dans la liste liste.":::
   
-1. Faites défiler vers le bas pour sélectionner **Outils** avancés et en côté **des enregistrements DNS** avancés, sélectionnez **GÉRER**.
-    
+1. Faites défiler vers le bas **pour sélectionner Outils** avancés, puis en côté **des enregistrements DNS avancés**, sélectionnez **GÉRER**.
+
     Vous de devez **peut-être sélectionner Continuer** pour obtenir la page Gérer les enregistrements DNS avancés.
   
     :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="En plus des enregistrements DNS avancés, sélectionnez MANAGE.":::
 
-1. Dans la page Gérer les enregistrements DNS avancés, **sélectionnez + AJOUTER UN ENREGISTREMENT.**
+1. Dans la page Gérer les enregistrements DNS avancés, **sélectionnez + AJOUTER UN ENREGISTREMENT**.
 
-1. Sous **Type,** sélectionnez **MX** dans la liste liste.
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Sélectionnez + AJOUTER UN ENREGISTREMENT.":::
+
+1. Sous **Type**, sélectionnez **MX** dans la liste liste.
 
 1. Sélectionnez ou copiez-collez les valeurs du tableau suivant. 
-    
+
     | **Fait référence à** | **Mail Server (Serveur de courrier)**|**Priorité**|**TTL**|
     |:-----|:-----|:-----|:-----| 
     | @ |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez-le  *\<domain-key\>*  à partir du Centre d’administration Microsoft.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) | Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.yml). <br/> 1| 1 Hour  <br/> |
-   
-1. Sélectionnez **AJOUTER**.
-  
-1. Si d’autres enregistrements MX sont répertoriés dans la section **Enregistrements MX,** cochez la case en regard de l’enregistrement sous **Supprimer,** puis sélectionnez **Enregistrer.** 
+
+1. **Sélectionnez AJOUTER**.
+
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-mx-add.png" alt-text="Sélectionnez AJOUTER.":::
+
+1. S’il existe d’autres enregistrements MX, supprimez-les tous en sélectionnant l’outil d’édition, puis supprimez **pour chaque** enregistrement. 
+
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-edit.png" alt-text="Sélectionnez Modifier.":::
 
 ## <a name="add-the-cname-record-required-for-microsoft"></a>Ajouter l’enregistrement CNAME requis pour Microsoft
 
 1. To get started, go to your domains page at web.com by using [this link](https://checkout.web.com/manage-it/index.jsp). Connectez-vous en premier.
   
-1. Sur la page d’accueil, sélectionnez **Noms de domaine.** 
+1. Sur la page d’accueil, sélectionnez **Noms de domaine**. 
   
-1. Sous **Actions,** sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste liste.
- 
+1. Sous **Actions**, sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste liste.
+
     :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="Sélectionnez Gérer dans la liste liste.":::
- 
-1. Faites défiler vers le bas pour sélectionner **Outils** avancés et en côté **des enregistrements DNS** avancés, sélectionnez **GÉRER**.
-    
+
+1. Faites défiler vers le bas **pour sélectionner Outils** avancés, puis en côté **des enregistrements DNS avancés**, sélectionnez **GÉRER**.
+
     Vous de devez **peut-être sélectionner Continuer** pour obtenir la page Gérer les enregistrements DNS avancés.
   
     :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="En plus des enregistrements DNS avancés, sélectionnez MANAGE.":::
 
-1. Dans la page Gérer les enregistrements DNS avancés, **sélectionnez + AJOUTER UN ENREGISTREMENT.**
+1. Dans la page Gérer les enregistrements DNS avancés, **sélectionnez + AJOUTER UN ENREGISTREMENT**.
 
-1. Sous **Type,** sélectionnez **CNAME** dans la liste de listes.
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Sélectionnez + AJOUTER UN ENREGISTREMENT.":::
+
+1. Sous **Type**, sélectionnez **CNAME** dans la liste de listes.
+
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname.png" alt-text="Sélectionnez CNAME dans la liste drop-down Type.":::
 
 1. Sélectionnez ou copiez-collez les valeurs du tableau suivant. 
-    
+
     |**Fait référence à** | **Nom de l’hôte** | **Alias to (Alias vers)**|**TTL (Durée de vie)**|
     |:-----|:-----|:-----|:-----|
     | Autre hôte  <br/>| autodiscover  <br/>| autodiscover.outlook.com  <br/> | 1 heure  <br/>  |
+
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname-values.png" alt-text="Tapez ou copiez-collez les valeurs CNAME dans la fenêtre.":::
   
-1. Sélectionnez **AJOUTER**.
+1. **Sélectionnez AJOUTER**.
   
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 
@@ -185,101 +201,115 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
   
 1. To get started, go to your domains page at web.com by using [this link](https://checkout.web.com/manage-it/index.jsp). Connectez-vous en premier.
   
-1. Sur la page d’accueil, sélectionnez **Noms de domaine.** 
+1. Sur la page d’accueil, sélectionnez **Noms de domaine**. 
   
-1. Sous **Actions,** sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste liste.
+1. Sous **Actions**, sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste liste.
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="Sélectionnez Gérer dans la liste liste.":::
   
-1. Faites défiler vers le bas pour sélectionner **Outils** avancés et en côté **des enregistrements DNS** avancés, sélectionnez **GÉRER**.
-    
+1. Faites défiler vers le bas **pour sélectionner Outils** avancés, puis en côté **des enregistrements DNS avancés**, sélectionnez **GÉRER**.
+
     Vous de devez **peut-être sélectionner Continuer** pour obtenir la page Gérer les enregistrements DNS avancés.
   
     :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="En plus des enregistrements DNS avancés, sélectionnez MANAGE.":::
 
-1. Dans la page Gérer les enregistrements DNS avancés, **sélectionnez + AJOUTER UN ENREGISTREMENT.**
+1. Dans la page Gérer les enregistrements DNS avancés, **sélectionnez + AJOUTER UN ENREGISTREMENT**.
 
-1. Sous **Type,** sélectionnez **TXT** dans la liste liste.
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Sélectionnez + AJOUTER UN ENREGISTREMENT.":::
+
+1. Sous **Type**, sélectionnez **TXT** dans la liste liste.
+
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-TXT.png" alt-text="Sélectionnez TXT dans la liste drop-down Type.":::
 
 1. Sélectionnez ou copiez-collez les valeurs du tableau suivant. 
-    
+
     |**Fait référence à**|**Valeur TXT**|**TTL (Durée de vie)**|
     |:-----|:-----|:-----|
     |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.  | 1 Hour  <br/> 
- 
-5. Sélectionnez **AJOUTER**.
+
+1. **Sélectionnez AJOUTER**.
   
 ## <a name="advanced-option-skype-for-business"></a>Option avancée : Skype Entreprise
 
-Sélectionnez cette option uniquement si votre organisation utilise Skype Entreprise pour les services de communication en ligne tels que les conversation, les appels de conférence et les appels vidéo, en plus de Microsoft Teams. Skype nécessite 4 enregistrements : 2 enregistrements SRV pour la communication utilisateur à utilisateur et 2 enregistrements CNAME pour se connecter et connecter des utilisateurs au service.
+Sélectionnez cette option uniquement si votre organisation utilise Skype Entreprise pour les services de communication en ligne tels que la conversation, les appels de conférence et les appels vidéo, en plus des Microsoft Teams. Skype nécessite 4 enregistrements : 2 enregistrements SRV pour la communication utilisateur à utilisateur et 2 enregistrements CNAME pour se connecter et connecter des utilisateurs au service.
 
 ### <a name="add-the-two-required-srv-records"></a>Ajouter les deux enregistrements SRV requis
 
 1. To get started, go to your domains page at web.com by using [this link](https://checkout.web.com/manage-it/index.jsp). Connectez-vous en premier.
   
-1. Sur la page d’accueil, sélectionnez **Noms de domaine.** 
+1. Sur la page d’accueil, sélectionnez **Noms de domaine**. 
   
-1. Sous **Actions,** sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste liste.
+1. Sous **Actions**, sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste liste.
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="Sélectionnez Gérer dans la liste liste.":::
   
-1. Faites défiler vers le bas pour sélectionner **Outils** avancés et en côté **des enregistrements DNS** avancés, sélectionnez **GÉRER**.
-    
+1. Faites défiler vers le bas **pour sélectionner Outils** avancés, puis en côté **des enregistrements DNS avancés**, sélectionnez **GÉRER**.
+
     Vous de devez **peut-être sélectionner Continuer** pour obtenir la page Gérer les enregistrements DNS avancés.
   
     :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="En plus des enregistrements DNS avancés, sélectionnez MANAGE.":::
 
-1. Dans la page Gérer les enregistrements DNS avancés, **sélectionnez + AJOUTER UN ENREGISTREMENT.**
+1. Dans la page Gérer les enregistrements DNS avancés, **sélectionnez + AJOUTER UN ENREGISTREMENT**.
 
-1. Sous **Type,** **sélectionnez SRV** dans la liste liste.
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Sélectionnez + AJOUTER UN ENREGISTREMENT.":::
 
-1. Sélectionnez ou copiez-collez les valeurs du tableau suivant. 
-    
+1. Sous **Type**, **sélectionnez SRV** dans la liste liste.
+
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-srv.png" alt-text="Sélectionnez SRV dans la liste drop-down Type.":::
+
+1. Sélectionnez ou copiez-collez les valeurs du tableau suivant.
+
     | **Type** |**Service**|**Protocol (Protocole)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|**Priorité**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     | SRV |_sip  <br/> |TLS  <br/> |100  <br/> |443  <br/> |sipdir.online.lync.com  <br/> **Cette valeur ne peut pas se terminer par un point (.)** <br/> | 1  <br/> | 1 heure  <br/> |
     | SRV |_sipfederationtls  <br/> |TCP <br/> |100  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> **Cette valeur ne peut pas se terminer par un point (.)** <br/> |1  <br/> | 1 Hour  <br/> |
+
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-srv-add.png" alt-text="Tapez ou copiez-collez les valeurs du tableau dans la fenêtre d’enregistrement SRV.":::
+
+1. **Sélectionnez AJOUTER**.
   
-6. Sélectionnez **AJOUTER**.
-  
-7. Pour ajouter l'autre enregistrement SRV :
-    
-    Dans la section **DNS** avancée, créez un enregistrement en utilisant les valeurs de la deuxième ligne du tableau, puis sélectionnez de nouveau **ADD** pour compléter cet enregistrement. 
-    
+1. Ajoutez l’autre enregistrement SRV en copiant les valeurs de la deuxième ligne du tableau.
+
 > [!NOTE]
 > Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d’autres problèmes suite à l’ajout des enregistrements DNS, consultez la page [Rechercher et corriger les problèmes suite à l’ajout de votre domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
 
-### <a name="add-the-two-required-cname-records"></a>Ajouter les deux enregistrements CNAME requis 
-    
+### <a name="add-the-two-required-cname-records"></a>Ajouter les deux enregistrements CNAME requis
+
 1. To get started, go to your domains page at web.com by using [this link](https://checkout.web.com/manage-it/index.jsp). Connectez-vous en premier.
   
-1. Sur la page d’accueil, sélectionnez **Noms de domaine.** 
-  
-1. Sous **Actions,** sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste liste.
- 
+1. Sur la page d’accueil, sélectionnez **Noms de domaine**.
+
+1. Sous **Actions**, sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste liste.
+
     :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="Sélectionnez Gérer dans la liste liste.":::
- 
-1. Faites défiler vers le bas pour sélectionner **Outils** avancés et en côté **des enregistrements DNS** avancés, sélectionnez **GÉRER**.
+
+1. Faites défiler vers le bas **pour sélectionner Outils** avancés, puis en côté **des enregistrements DNS avancés**, sélectionnez **GÉRER**.
   
     :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="En plus des enregistrements DNS avancés, sélectionnez MANAGE.":::
 
     Vous de devez **peut-être sélectionner Continuer** pour obtenir la page Gérer les enregistrements DNS avancés.
 
-1. Dans la page Gérer les enregistrements DNS avancés, **sélectionnez + AJOUTER UN ENREGISTREMENT.**
+1. Dans la page Gérer les enregistrements DNS avancés, **sélectionnez + AJOUTER UN ENREGISTREMENT**.
 
-1. Sous **Type,** sélectionnez **CNAME** dans la liste de listes.
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Sélectionnez + AJOUTER UN ENREGISTREMENT.":::
+
+1. Sous **Type**, sélectionnez **CNAME** dans la liste de listes.
+
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname.png" alt-text="Sélectionnez CNAME dans la liste drop-down Type.":::
 
 1. Sélectionnez ou copiez-collez les valeurs du tableau suivant. 
-    
+
     | **Type (Type)**|**Fait référence à | Nom d’hôte**|**Alias to (Alias vers)**| **TTL (Durée de vie)** |
     |:-----|:-----|:-----|:-----|:-----|
     | CNAME | Autre hôte | sip  <br/> |sipdir.online.lync.com  <br/> **Cette valeur ne peut pas se terminer par un point (.)** <br/> |1 heure  <br/> |
     | CNAME| Autre hôte | lyncdiscover  <br/> |webdir.online.lync.com  <br/> **Cette valeur ne peut pas se terminer par un point (.)** <br/> | 1 Hour  <br/> |
   
-1. Sélectionnez **AJOUTER**.
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname-values.png" alt-text="Tapez ou copiez-collez les valeurs CNAME dans la fenêtre.":::
+
+1. **Sélectionnez AJOUTER**.
   
-1. À l’aide des étapes précédentes et des valeurs de la deuxième ligne du tableau, ajoutez l’autre enregistrement CNAME.
-    
+1. Ajoutez l’autre enregistrement CNAME en copiant les valeurs de la deuxième ligne du tableau.
+
 > [!NOTE]
 > L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
@@ -291,32 +321,38 @@ Ce service vous permet de sécuriser et de gérer à distance les appareils mobi
 
 1. To get started, go to your domains page at web.com by using [this link](https://checkout.web.com/manage-it/index.jsp). Connectez-vous en premier.
   
-1. Sur la page d’accueil, sélectionnez **Noms de domaine.** 
+1. Sur la page d’accueil, sélectionnez **Noms de domaine**.
   
-1. Sous **Actions,** sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste liste.
- 
+1. Sous **Actions**, sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste liste.
+
     :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="Sélectionnez Gérer dans la liste liste.":::
- 
-1. Faites défiler vers le bas pour sélectionner **Outils** avancés et en côté **des enregistrements DNS** avancés, sélectionnez **GÉRER**.
-    
+
+1. Faites défiler vers le bas **pour sélectionner Outils** avancés, puis en côté **des enregistrements DNS avancés**, sélectionnez **GÉRER**.
+
     Vous de devez **peut-être sélectionner Continuer** pour obtenir la page Gérer les enregistrements DNS avancés.
   
     :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="En plus des enregistrements DNS avancés, sélectionnez MANAGE.":::
 
-1. Dans la page Gérer les enregistrements DNS avancés, **sélectionnez + AJOUTER UN ENREGISTREMENT.**
+1. Dans la page Gérer les enregistrements DNS avancés, **sélectionnez + AJOUTER UN ENREGISTREMENT**.
 
-1. Sous **Type,** sélectionnez **CNAME** dans la liste de listes.
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Sélectionnez + AJOUTER UN ENREGISTREMENT.":::
 
-1. Sélectionnez ou copiez-collez les valeurs du tableau suivant. 
-    
+1. Sous **Type**, sélectionnez **CNAME** dans la liste de listes.
+
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname.png" alt-text="Sélectionnez CNAME dans la liste drop-down Type.":::
+
+1. Sélectionnez ou copiez-collez les valeurs du tableau suivant.
+
     | **Type (Type)**|**Fait référence à | Nom d’hôte**|**Alias to (Alias vers)**| **TTL (Durée de vie)** |
     |:-----|:-----|:-----|:-----|:-----|
     | CNAME | Autre hôte | enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> **Cette valeur ne peut pas se terminer par un point (.)** <br/> | 1 heure  <br/> |
     | CNAME | Autre hôte |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> **Cette valeur ne peut pas se terminer par un point (.)** <br/> | 1 Hour  <br/> |
   
-1. Sélectionnez **AJOUTER**.
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname-values.png" alt-text="Tapez ou copiez-collez les valeurs CNAME du tableau dans la fenêtre.":::
+
+1. **Sélectionnez AJOUTER**.
   
-1. À l’aide des étapes précédentes et des valeurs de la deuxième ligne du tableau, ajoutez l’autre enregistrement CNAME.
-    
+1. Ajoutez l’autre enregistrement CNAME en copiant les valeurs de la deuxième ligne du tableau.
+
 > [!NOTE]
 > L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).

@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 1dd603ae4f9f694b3b17794a71d1d5cc44800584
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 0bab6d8aa8aaef29b67ed8460f2d48e65cd24aa1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074413"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314320"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Examiner les incidents dans Microsoft 365 Defender
 
@@ -50,11 +50,11 @@ Vous pouvez commencer par sélectionner l’incident dans la colonne de coche. V
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Exemple de sélection d’un incident dans la colonne de coche." lightbox="../../media/investigate-incidents/incidents-ss-incident-select.png":::
 
-Lorsque vous le faites, un volet de synthèse s’ouvre avec des informations clés sur l’incident, telles que la gravité, à qui il est affecté, et les catégories [MITRE ATT &trade;&CK](https://attack.mitre.org/) pour l’incident. Voici un exemple.
+Lorsque vous le faites, un volet de synthèse s’ouvre avec des informations clés sur l’incident, telles que la gravité, à qui il est affecté, et les catégories [MITRE ATT&CK&trade;](https://attack.mitre.org/) pour l’incident. Voici un exemple.
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Exemple du volet récapitulatif d’un incident." lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
 
-À partir de là, vous pouvez sélectionner **Ouvrir la page Incident.** Cela ouvre la page principale de l’incident où vous trouverez des informations récapitulatifs et des onglets pour les alertes, les appareils, les utilisateurs, les enquêtes et les preuves.
+À partir de là, vous pouvez sélectionner **Ouvrir la page Incident**. Cela ouvre la page principale de l’incident où vous trouverez des informations récapitulatifs et des onglets pour les alertes, les appareils, les utilisateurs, les enquêtes et les preuves.
 
 Vous pouvez également ouvrir la page principale d’un incident en sélectionnant le nom de l’incident dans la file d’attente des incidents.
 
@@ -62,13 +62,13 @@ Vous pouvez également ouvrir la page principale d’un incident en sélectionna
 
 La page **Résumé** vous donne un aperçu instantané des principaux éléments à noter concernant l’incident.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exemple de page Résumé d’un incident dans le portail Microsoft 365 Defender web" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exemple de page Résumé d’un incident dans le portail Microsoft 365 Defender" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 Les informations sont organisées dans ces sections.
 
 | Section | Description |
 |:-------|:-----|
-| Alertes et catégories | Une vue visuelle et numérique de la progression de l’attaque sur la chaîne d’attaque. Comme avec d’autres produits de sécurité Microsoft, Microsoft 365 Defender est aligné sur l’infrastructure [MITRE ATT&&trade; CK.](https://attack.mitre.org/) La chronologie des alertes indique l’ordre chronologique dans lequel les alertes se sont produites et pour chacune d’elles, leur état et leur nom. |
+| Alertes et catégories | Une vue visuelle et numérique de la progression de l’attaque sur la chaîne d’attaque. Comme avec d’autres produits de sécurité Microsoft, Microsoft 365 Defender est aligné sur l’infrastructure [MITRE ATT&CK&trade;](https://attack.mitre.org/). La chronologie des alertes indique l’ordre chronologique dans lequel les alertes se sont produites et pour chacune d’elles, leur état et leur nom. |
 | Portée |  Affiche le nombre d’appareils, d’utilisateurs et de boîtes aux lettres touchés et répertorie les entités par ordre de niveau de risque et priorité d’examen. |
 | Évidence | Affiche le nombre d’entités affectées par l’incident. |
 | Informations sur l’incident | Affiche les propriétés de l’incident, telles que les balises, l’état et la gravité. |
@@ -78,11 +78,11 @@ Utilisez la page **Résumé pour** évaluer l’importance relative de l’incid
 
 ## <a name="alerts"></a>Alertes
 
-Sous **l’onglet Alertes,** vous pouvez afficher la file d’attente d’alertes pour les alertes liées à l’incident et d’autres informations les concernant, telles que :
+Sous **l’onglet Alertes** , vous pouvez afficher la file d’attente d’alertes pour les alertes liées à l’incident et d’autres informations les concernant, telles que :
 
 - Gravité.
 - Entités impliquées dans l’alerte.
-- Source des alertes (Microsoft Defender pour l’identité, Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Defender pour les applications cloud et gouvernance des applications).
+- Source des alertes (Microsoft Defender pour l’identité, Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Defender pour les applications cloud et le module de gouvernance d’application).
 - Raison pour laquelle ils ont été liés.
 
 Voici un exemple.
@@ -109,9 +109,9 @@ La page d’alerte d’incident contient les sections suivantes :
 
 - Propriétés d’alerte dans le volet droit (état, détails, description, etc.)
 
-Toutes les alertes n’auront pas toutes les sous-sections répertoriées dans la section Article **sur l’alerte.**
+Toutes les alertes n’auront pas toutes les sous-sections répertoriées dans la section Article **sur l’alerte** .
 
-Découvrez comment utiliser la file d’attente d’alertes et les pages d’alerte dans [examiner les alertes.](investigate-alerts.md)
+Découvrez comment utiliser la file d’attente d’alertes et les pages d’alerte dans [examiner les alertes](investigate-alerts.md).
 
 ## <a name="devices"></a>Appareils
 
@@ -119,14 +119,14 @@ Découvrez comment utiliser la file d’attente d’alertes et les pages d’ale
 
 :::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="Exemple de page Appareils pour un incident." lightbox="../../media/investigate-incidents/incident-devices.png":::
 
-Vous pouvez cocher la coche d’un appareil pour voir les détails de l’appareil, les données d’annuaire, les alertes actives et les utilisateurs connectés. Sélectionnez le nom de l’appareil pour voir les détails de l’appareil dans l’inventaire des appareils Microsoft Defender for Endpoint. Voici un exemple.
+Vous pouvez cocher la coche d’un appareil pour voir les détails de l’appareil, les données d’annuaire, les alertes actives et les utilisateurs connectés. Sélectionnez le nom de l’appareil pour voir les détails de l’appareil dans l’inventaire des appareils Defender for Endpoint. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Exemple de page d’appareils pour Microsoft Defender pour point de terminaison." lightbox="../../media/investigate-incidents/incident-devices-details.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Exemple de page d’appareils pour Defender pour le point de terminaison." lightbox="../../media/investigate-incidents/incident-devices-details.png":::
 
-Dans la page appareil, vous pouvez collecter des informations supplémentaires sur l’appareil, telles que toutes ses alertes, une chronologie et des recommandations de sécurité. Par exemple,  à partir de l’onglet Chronologie, vous pouvez parcourir la chronologie de l’ordinateur et afficher tous les événements et comportements observés sur l’ordinateur dans l’ordre chronologique, entrecoupés des alertes.
+Dans la page appareil, vous pouvez collecter des informations supplémentaires sur l’appareil, telles que toutes ses alertes, une chronologie et des recommandations de sécurité. Par exemple, à partir  de l’onglet Chronologie, vous pouvez parcourir la chronologie de l’ordinateur et afficher tous les événements et comportements observés sur l’ordinateur dans l’ordre chronologique, entrecoupés des alertes.
 
 > [!TIP]
-> Vous pouvez faire des analyses à la demande sur une page d’appareil. Dans le portail Microsoft 365 Defender, choisissez Points de **terminaison >'inventaire des appareils.** Sélectionnez un appareil qui a des alertes, puis exécutez une analyse antivirus. Les actions, telles que les analyses antivirus, sont suivis et sont visibles sur la page **d’inventaire des** appareils. Pour plus d’informations, voir [Exécuter Antivirus Microsoft Defender sur les appareils.](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)
+> Vous pouvez faire des analyses à la demande sur une page d’appareil. Dans le portail Microsoft 365 Defender, sélectionnez Points de **terminaison >'inventaire des appareils**. Sélectionnez un appareil qui a des alertes, puis exécutez une analyse antivirus. Les actions, telles que les analyses antivirus, sont suivis et sont visibles sur la page **d’inventaire des** appareils. Pour en savoir plus, [consultez l’analyse de l’Antivirus Run Defender sur les appareils](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
 
 ## <a name="users"></a>Utilisateurs
 
@@ -136,7 +136,7 @@ Dans la page appareil, vous pouvez collecter des informations supplémentaires s
 
 Vous pouvez cocher la coche d’un utilisateur pour voir les détails de la menace, de l’exposition et des informations de contact du compte d’utilisateur. Sélectionnez le nom d’utilisateur pour voir les détails supplémentaires du compte d’utilisateur.
 
-Découvrez comment afficher des informations utilisateur supplémentaires et gérer les utilisateurs d’un incident dans [l’examen des utilisateurs.](investigate-users.md)
+Découvrez comment afficher des informations utilisateur supplémentaires et gérer les utilisateurs d’un incident dans [l’examen des utilisateurs](investigate-users.md).
 
 
 ## <a name="mailboxes"></a>Boîtes aux lettres
@@ -145,11 +145,11 @@ Découvrez comment afficher des informations utilisateur supplémentaires et gé
 
 :::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="Exemple de page Boîtes aux lettres pour un incident." lightbox="../../media/investigate-incidents/incident-mailboxes.png":::
 
-Vous pouvez cocher la coche d’une boîte aux lettres pour voir la liste des alertes actives. Sélectionnez le nom de la boîte aux lettres pour voir des détails supplémentaires sur la page Explorateur de Microsoft Defender pour Office 365.
+Vous pouvez cocher la coche d’une boîte aux lettres pour voir la liste des alertes actives. Sélectionnez le nom de la boîte aux lettres pour voir des détails supplémentaires sur la page Explorateur de Defender pour Office 365.
 
 ## <a name="investigations"></a>Enquêtes
 
-**L’onglet** Enquêtes répertorie toutes les [enquêtes](m365d-autoir.md) automatisées déclenchées par les alertes dans cet incident. Les enquêtes automatisées effectuent des actions de correction ou attendent l’approbation par un analyste des actions, selon la façon dont vous avez configuré vos enquêtes automatisées pour qu’ils s’exécutent dans Microsoft Defender pour Endpoint et Defender pour Office 365.
+**L’onglet** Enquêtes répertorie toutes les [enquêtes](m365d-autoir.md) automatisées déclenchées par les alertes dans cet incident. Les enquêtes automatisées effectuent des actions de correction ou attendent l’approbation par un analyste des actions, selon la façon dont vous avez configuré vos enquêtes automatisées pour qu’ils s’exécutent dans Defender pour Endpoint et Defender pour Office 365.
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Exemple de page Investigations pour un incident." lightbox="../../media/investigate-incidents/incident-investigations.png":::
 
@@ -179,7 +179,7 @@ Chacune des entités analysées est marquée avec un verdict (malveillant, suspe
 
 **L’onglet Graph** affiche l’étendue complète de l’attaque, la façon dont l’attaque s’est propagée sur votre réseau au fil du temps, l’endroit où elle a commencé et la distance à laquelle l’attaquant est passé. Il connecte les différentes entités suspectes faisant partie de l’attaque avec leurs biens connexes tels que les utilisateurs, les appareils et les boîtes aux lettres. 
 
-À  partir Graph’onglet, vous pouvez :
+À partir **Graph’onglet**, vous pouvez :
 
 1. Lire les alertes et les nodes sur le graphique au fil du temps pour comprendre la chronologie de l’attaque.
 
@@ -193,9 +193,9 @@ Chacune des entités analysées est marquée avec un verdict (malveillant, suspe
 
 3. Mettez en surbrillant les alertes en fonction de l’entité à laquelle elles sont liées.
  
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Exemple de mise en surbrillant d’alerte sur Graph page" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Exemple de mise en surbrillrillant d’alerte sur Graph page" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Selon les besoins :
 

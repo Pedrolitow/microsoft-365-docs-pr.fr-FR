@@ -1,7 +1,7 @@
 ---
 title: Kit de laboratoire pour le déploiement de Windows et Office 365
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: greglin
 author: greg-lindsay
 manager: dougeby
@@ -11,20 +11,25 @@ ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
-  - Ent_O365
-  - Strat_O365_Enterprise
-ms.custom: null
-description: Découvrez où accéder aux Windows et Office Kit de laboratoire de déploiement.
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: ''
+description: Découvrez où accéder au kit de laboratoire de déploiement Windows et Office de déploiement.
+ms.openlocfilehash: 7f91fdbd72a496d06377259387f53fbe923f1981
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314446"
 ---
-
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Kit de laboratoire pour le déploiement de Windows et Office 365
 
-Le kit de laboratoire de déploiement Windows et Office 365 est conçu pour vous aider à planifier, tester et valider votre déploiement et la gestion des ordinateurs de bureau exécutant Windows 10 Entreprise ou Windows 11 Entreprise et Applications Microsoft 365 pour les grandes entreprises. Les ateliers du kit utilisent Microsoft Endpoint Configuration Manager, l’outil Office Personnalisation, OneDrive, Windows Autopilot, etc. Ce kit est vivement recommandé pour les organisations qui se préparent aux mises à niveau de bureau. En tant qu’environnement isolé, l’atelier est également idéal pour explorer les mises à jour des outils de déploiement et tester l’automatisation liée au déploiement.
+Le kit de laboratoire de déploiement Windows et Office 365 est conçu pour vous aider à planifier, tester et valider votre déploiement et votre gestion des ordinateurs de bureau exécutant Windows 10 Entreprise ou Windows 11 Entreprise et Applications Microsoft 365 pour les grandes entreprises. Les ateliers du kit couvrent l’utilisation Microsoft Endpoint Configuration Manager, OneDrive, Windows Autopilot, etc. Ce kit est vivement recommandé pour les organisations qui se préparent aux mises à niveau de bureau. En tant qu’environnement isolé, l’atelier est également idéal pour explorer les mises à jour des outils de déploiement et tester l’automatisation liée au déploiement.
 
 **Windows 10 et Windows 11 versions du kit de laboratoire sont désormais disponibles en téléchargement gratuit dans le Centre d’évaluation Microsoft.**
 
 [Télécharger le kit de laboratoire de déploiement Windows 10 et Office 365 de déploiement](https://www.microsoft.com/evalcenter/evaluate-lab-kit)<br>
-[Télécharger le kit de laboratoire Windows 11 déploiement Office 365 et de déploiement](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
+[Télécharger le kit de laboratoire de déploiement Windows 11 et Office 365 de déploiement](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
 
 ## <a name="a-complete-lab-environment"></a>Un environnement de laboratoire complet
 
@@ -34,13 +39,13 @@ L’atelier vous fournit un environnement de laboratoire virtuel configuré auto
 |Windows 10 Lab  |Windows 11 Lab  |
 |---------|---------|
 |Windows 10 Entreprise, version 21H1      | Windows 11 Entreprise        |
-|Microsoft Endpoint Configuration Manager, version 2103     |  Microsoft Endpoint Configuration Manager, version 2111      | 
+|Microsoft Endpoint Configuration Manager version 2103     |  Microsoft Endpoint Configuration Manager, version 2111      | 
 |Kit de déploiement et d’évaluation Windows pour Windows 10     |  Windows kit de déploiement et d’évaluation pour Windows 11      | 
 |Windows Server 2019     |  Windows Server 2022      | 
 
 Les ateliers sont également conçus pour être connectés aux essais pour :
 
-- Microsoft 365 E5
+- Microsoft 365 E5
 - Applications Microsoft 365 for entreprise
 - Office 365 E5 avec Enterprise Mobility + Security (EMS)
 
@@ -72,7 +77,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 - Déploiement géré localement
 - Applications Microsoft 365 pour les grandes entreprises déploiement sur des appareils non joints à AD
 - Enterprise géré à l’aide de Configuration Manager
-- Enterprise gestion à l’aide de Microsoft Intune
+- Enterprise de déploiement géré à l’aide Microsoft Intune
 - Maintenance Applications Microsoft 365 pour les grandes entreprises l’aide de Configuration Manager
 - Maintenance Applications Microsoft 365 pour les grandes entreprises à l’aide d’Intune
 - Déploiement et gestion des objets LOB avec Microsoft Intune
@@ -93,10 +98,10 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 
 ## <a name="download-the-lab"></a>Télécharger l’atelier
 [Télécharger le kit de laboratoire de déploiement Windows 10 et Office 365 de déploiement](https://www.microsoft.com/evalcenter/evaluate-lab-kit)<br>
-[Télécharger le kit de laboratoire Windows 11 déploiement Office 365 et de déploiement](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
+[Télécharger le kit de laboratoire de déploiement Windows 11 et Office 365 de déploiement](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
 
 > [!NOTE]
-> Utilisez une connexion Internet haut débit pour télécharger ce contenu et autorisez l’approvisionnement automatique pendant environ 30 minutes. L’environnement de laboratoire nécessite au moins 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go de mémoire disponible et 300 Go d’espace libre sont recommandés. L Windows 10 exe lab expire le 15 février 2022. L Windows 11 exe lab expire le 11 avril 2022. Les nouvelles versions seront publiées avant expiration.
+> Utilisez une connexion Internet haut débit pour télécharger ce contenu et autorisez l’approvisionnement automatique pendant environ 30 minutes. L’environnement de laboratoire nécessite au moins 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go de mémoire disponible et 300 Go d’espace libre sont recommandés. L Windows 10 exe lab expire le 16 mai 2022. L Windows 11 exe lab expire le 11 avril 2022. Les nouvelles versions seront publiées avant expiration.
 
 ## <a name="additional-guidance"></a>Conseils supplémentaires
 

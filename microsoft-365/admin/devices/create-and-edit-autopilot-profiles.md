@@ -28,24 +28,27 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Apprenez à créer un profil AutoPilot et à l’appliquer à un appareil, ainsi qu’à modifier ou supprimer un profil ou à supprimer un profil d’un appareil.
-ms.openlocfilehash: 481c59797a1959ed72dbe5c7b81f5d2480def490
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 91df801fb1833c9bfe5f1112e6a3cd5fc8efcf5d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165531"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313844"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Créer et modifier des profils AutoPilot
+
+> [!NOTE]
+> Microsoft Defender for Business est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Cette offre offre des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender pour les entreprises](../../security/defender-business/mdb-overview.md).
 
 ## <a name="create-a-profile"></a>Créer un profil
 
 Un profil s'applique à un appareil ou à un groupe d'appareils,
   
-1. In the Centre d'administration Microsoft 365, choose **Devices** \> **AutoPilot**.
+1. Dans la Centre d'administration Microsoft 365, **sélectionnez Appareils** \> **AutoPilot**.
   
-2. Dans la page **AutoPilot,** sélectionnez **l’onglet Profils** \> **Créer un profil.**
+2. Dans la page **AutoPilot** , sélectionnez **l’onglet Profils** Créer \> **un profil**.
     
-3. Dans la page **Créer un** profil, entrez un nom pour le profil qui vous permet de l’identifier, par exemple Marketing. Activer le paramètre de votre choix, puis sélectionnez **Enregistrer.** Pour plus d’informations sur les paramètres de profil AutoPilot, voir à propos des paramètres de profil [AutoPilot.](autopilot-profile-settings.md)
+3. Dans la page **Créer un** profil, entrez un nom pour le profil qui vous aide à l’identifier, par exemple Marketing. Activer le paramètre de votre choix, puis choisir **Enregistrer**. Pour plus d’informations sur les paramètres de profil AutoPilot, voir [à propos des paramètres de profil AutoPilot](autopilot-profile-settings.md).
     
     ![Enter name and turn on settings in the Create profile panel.](../../media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
@@ -55,7 +58,7 @@ Après avoir créé un profil, vous pouvez l’appliquer à un appareil ou à un
   
 1. Sur la page **Préparer Windows**, choisissez l'onglet **Appareils**. 
     
-2. Cochez la case en regard d’un nom d’appareil, puis, dans le panneau Appareil, choisissez un profil dans la liste de listes listes des profils affectés   \> **Enregistrer.**
+2. Cochez la case en regard d’un nom d’appareil, puis, dans le panneau Appareil, \> choisissez un profil dans la liste de listes listes d’enregistrement des profils **affectés**.
     
     ![In the Device panel, select an Assigned profile to apply it.](../../media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
@@ -67,7 +70,7 @@ Lorsque vous avez affecté un profil à un appareil, vous pouvez le mettre à jo
 
 1. Sur la page **Préparer Windows**, choisissez l'onglet **Profils**. 
     
-2. Cochez la case en regard d’un nom d’appareil et, dans le panneau Profil, mettez à jour l’un des paramètres disponibles  \> **Enregistrer.**
+2. Cochez la case en regard d’un nom d’appareil et, dans le panneau Profil, mettez à jour l’un des **paramètres disponibles** Enregistrer. \>
     
     Si vous effectuez cette opération avant qu'un utilisateur connecte l'appareil à Internet, le profil sera appliqué pendant le processus de configuration.
     
@@ -75,7 +78,7 @@ Lorsque vous avez affecté un profil à un appareil, vous pouvez le mettre à jo
 
 1. Sur la page **Préparer Windows**, choisissez l'onglet **Profils**. 
     
-2. Cochez la case en regard d’un nom d’appareil, puis, dans le panneau Profil,  **sélectionnez Supprimer enregistrer le** \> **profil.**
+2. Cochez la case en regard d’un nom d’appareil, puis, dans le panneau Profil, **sélectionnez Supprimer l’enregistrement du** \> **profil**.
     
     Lorsque vous supprimez un profil, il est supprimé de l'appareil ou du groupe d'appareils auquel il a été affecté.
     
@@ -83,5 +86,8 @@ Lorsque vous avez affecté un profil à un appareil, vous pouvez le mettre à jo
 
 1. Sur la page **Préparer Windows**, choisissez l'onglet **Appareils**. 
     
-2. Cochez la case en regard d’un nom d’appareil, puis, dans le panneau Appareil, sélectionnez **Aucun** dans la liste de listes listes de profils affectés   \> **Enregistrer.**
+2. Cochez la case en regard d’un nom d’appareil, puis, dans le panneau  Appareil, sélectionnez **Aucun** \> dans la liste de listes des profils affectés **Enregistrer**.
     
+## <a name="see-also"></a>Voir aussi
+
+[10 principales façons de sécuriser les Microsoft 365 pour les plans d’entreprise](../security-and-compliance/secure-your-business-data.md)

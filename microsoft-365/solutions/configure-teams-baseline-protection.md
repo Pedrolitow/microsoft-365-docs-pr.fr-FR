@@ -18,14 +18,15 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 recommendations: false
 description: Découvrez comment déployer des équipes à l’aide d’un niveau de protection de référence.
-ms.openlocfilehash: ac16f3a1fd70cca22d0cc44e326d173b30cff77f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 21fe46a9df9b67c41ff2c0a21fbbe175295e1fdf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208360"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312738"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configurer les équipes avec la protection de référence
 
@@ -68,10 +69,10 @@ Le partage d’invités est activé par défaut pour les groupes Office 365 et S
 Pour réduire le risque de partager accidentellement des fichiers ou des dossiers avec des personnes externes à votre organisation, nous vous recommandons de modifier le lien de partage par défaut de SharePoint à *Uniquement les membres de votre organisation*. (Si les utilisateurs doivent partager en externe et que vous avez activé le partage d’invités, ils peuvent modifier le type de lien lorsqu’ils partagent le lien.)
 
 Pour modifier le lien de partage par défaut, procédez comme suit :
-1. Ouvrez le [Centre d’administration SharePoint](https://admin.microsoft.com/sharepoint).
-2. Sous **Stratégies**, cliquez sur **Partage**.
-3. Sous **Liens de fichier et de dossier**, sélectionnez **Uniquement les membres de votre organisation**.
-4. Cliquez sur **Enregistrer**.
+
+1. Ouvrez le Centre d’administration SharePoint, sous **Stratégies**, sélectionnez <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Partage**</a>.
+1. Sous **Liens de fichier et de dossier**, sélectionnez **Uniquement les membres de votre organisation**.
+1. Sélectionnez **Enregistrer**.
 
 Pour une expérience de partage d’invités optimale, nous vous recommandons également d’activer [L’intégration de SharePoint et OneDrive à l’aide d’Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview).
 

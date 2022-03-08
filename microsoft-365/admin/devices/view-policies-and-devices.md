@@ -23,32 +23,38 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
-description: Affichez les stratégies et actions des appareils en vous Microsoft 365 pour entreprise.
-ms.openlocfilehash: 95eb5c73c1d81cb9b5c803e58ea74243b22b13d4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Affichez les stratégies et actions de l’appareil en vous Microsoft 365 entreprise.
+ms.openlocfilehash: 55c4eb51164ece4bbb7f3092de25d3ff92f40737
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165315"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313578"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Afficher et gérer les stratégies et les appareils
 
 Cet article s’applique aux Microsoft 365 Business Premium.
 
+> [!NOTE]
+> Microsoft Defender for Business est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Cette offre offre des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender pour les entreprises](../../security/defender-business/mdb-overview.md).
+
 ## <a name="view-and-edit-device-policies"></a>Afficher et modifier des stratégies d’appareil
 
 1.  Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
-2. Dans le navigation  de gauche, sélectionnez \> **Stratégies d’appareils.**
+2. Dans le navigation de gauche, sélectionnez **Stratégies d’appareils**\>.
 
     Sur cette page, vous pouvez créer, modifier, modifier un groupe cible ou supprimer une stratégie.
 
     ![Capture d’écran de la page Stratégies.](../../media/devicepolicies.png)
   
-## <a name="view-and-manage-devices"></a>Afficher et gérer les appareils
+## <a name="view-and-manage-devices"></a>Afficher et gérer des appareils
 
-1. Dans le navigation  de gauche, sélectionnez \> **Gérer les appareils.** 
+1. Dans le navigation de gauche, sélectionnez **Gérer** \> **les appareils**. 
     
     Dans cette page, vous pouvez sélectionner un ou plusieurs appareils et supprimer des données d’entreprise. Pour les appareils Windows 10 pour lesquels vous avez défini des paramètres de protection d'appareil, vous pouvez également choisir de rétablir les paramètres d'usine.
   
    ![Page Gérer les appareils.](../../media/devicesmanage.png)
 
+## <a name="see-also"></a>Voir aussi
+
+[10 principales façons de sécuriser les Microsoft 365 pour les plans d’entreprise](../security-and-compliance/secure-your-business-data.md)

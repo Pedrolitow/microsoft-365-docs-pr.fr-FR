@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
+ms.author: siosulli
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 56c7c2ab6a8023be8a570c5b33c64112d8545df1
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 9045c9a425b78f46d39ebb63664b693bf40252c4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767663"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314381"
 ---
 # <a name="device-discovery-overview"></a>Vue d’ensemble de la découverte d’appareils
 
@@ -52,7 +52,7 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide de la découverte
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWORdQ]
 
-Parallèlement à cette fonctionnalité, une recommandation de sécurité pour intégrer des appareils à Microsoft Defender pour le point de terminaison est disponible dans le cadre de l’expérience de gestion des menaces et des vulnérabilités existante.
+Parallèlement à cette fonctionnalité, une recommandation de sécurité pour intégrer des appareils à Microsoft Defender for Endpoint est disponible dans le cadre de l’expérience Gestion des menaces et des vulnérabilités existante.
 
 ## <a name="discovery-methods"></a>Méthodes de découverte
 
@@ -74,19 +74,21 @@ Vous pouvez modifier et personnaliser vos paramètres de découverte. Pour plus 
 
 ## <a name="device-inventory"></a>Inventaire des appareils
 
-Les appareils qui ont été découverts mais qui n’ont pas encore été intégrés et sécurisés par Microsoft Defender pour le point de terminaison sont répertoriés dans l’inventaire des appareils dans l’onglet Points de terminaison.
+Les appareils qui ont été découverts mais qui n’ont pas encore été intégrés et sécurisés par Microsoft Defender pour le point de terminaison sont répertoriés dans l’inventaire des appareils sous l’onglet Ordinateurs et appareils mobiles.
 
-Vous pouvez utiliser un filtre dans la liste d’inventaire des appareils appelé état d’intégration, qui peut avoir l’une des valeurs suivantes :
+Pour évaluer ces appareils, vous pouvez utiliser un filtre dans la liste d’inventaire des appareils appelé état d’intégration, qui peut avoir l’une des valeurs suivantes :
 
 - Intégré : le point de terminaison est intégré à Microsoft Defender pour le point de terminaison.
 - Peut être intégré : le point de terminaison a été découvert dans le réseau et le système d’exploitation a été identifié comme étant pris en charge par Microsoft Defender pour le point de terminaison, mais il n’est pas actuellement intégré. Nous vous recommandons vivement d’intégrer ces appareils.
 - Non pris en charge : le point de terminaison a été découvert dans le réseau, mais n’est pas pris en charge par Microsoft Defender pour endpoint.
 - Informations insuffisantes : le système n’a pas pu déterminer la prise en charge de l’appareil. L’activation de la découverte standard sur d’autres appareils du réseau peut enrichir les attributs découverts.
 
-![Image du tableau de bord d’inventaire des appareils.](images/2b62255cd3a9dd42f3219e437b956fb9.png)
+![Image du tableau de bord d’inventaire des appareils.](images/device-discovery-inventory.png)
 
 > [!TIP]
 > Vous pouvez toujours appliquer des filtres pour exclure les appareils nonmanagés de la liste d’inventaire des appareils. Vous pouvez également utiliser la colonne d’état d’intégration sur les requêtes API pour filtrer les appareils nonmanagés.
+
+Pour plus d’informations, voir [Inventaire des appareils](machines-view-overview.md).
 
 ## <a name="network-device-discovery"></a>Découverte de périphériques réseau
 
@@ -135,17 +137,7 @@ DeviceNetworkEvents
 | take 10
 ```
 
-## <a name="changed-behavior"></a>Comportement modifié
-
-La section suivante répertorie les modifications que vous observerez dans Microsoft Defender pour le point de terminaison et le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender lorsque</a> cette fonctionnalité est activée.
-
-1. Les appareils qui ne sont pas intégrés à Microsoft Defender pour le point de terminaison sont censés apparaître dans l’inventaire des appareils, le recherche avancée et les requêtes API. Cela peut augmenter considérablement la taille des résultats de la requête.
-    1. Les tables « DeviceInfo » et « DeviceNetworkInfo » dans la recherche avancée vont maintenant contenir l’appareil détecté. Vous pouvez filtrer ces appareils à l’aide de l’attribut « OnboardingStatus ».
-    2. Les appareils détectés sont censés apparaître dans les résultats de requête de l’API de diffusion en continu. Vous pouvez filtrer ces appareils à l’aide du `OnboardingStatus` filtre dans votre requête.
-2. Les appareils non utilisés seront affectés à des groupes d’appareils existants en fonction des critères définis.
-3. Dans de rares cas, la découverte standard peut déclencher des alertes sur les moniteurs réseau ou les outils de sécurité. Veuillez nous faire part de vos commentaires, si vous faites l’expérience de tels événements, afin d’éviter que ces problèmes ne se répètent. Vous pouvez exclure explicitement des cibles spécifiques ou des sous-réseaux entiers d’être activement sondés par la découverte standard.
-
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Configurer la découverte d’appareils](configure-device-discovery.md)
 - [FAQ sur la découverte d’appareils](device-discovery-faq.md)

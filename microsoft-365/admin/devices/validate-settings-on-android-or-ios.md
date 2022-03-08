@@ -24,14 +24,17 @@ search.appverid:
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: Découvrez comment valider les paramètres Microsoft 365 Business Premium protection des applications sur vos appareils Android ou iOS.
-ms.openlocfilehash: 100c4f759578100ae94df24bb7009f4e76a6eb02
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 85d98a4741299327c0e88735cb9593e129fdc929
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165387"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313746"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Valider les paramètres de protection des applications sur les appareils Android ou iOS
+
+> [!NOTE]
+> Microsoft Defender for Business est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Cette offre offre des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender pour les entreprises](../../security/defender-business/mdb-overview.md).
 
 Suivez les instructions des sections suivantes pour valider les paramètres de protection des applications sur les appareils Android ou iOS.
   
@@ -43,11 +46,11 @@ Une fois que vous avez [défini des configurations d'application pour les appare
   
 Tout d’abord, assurez-vous que la stratégie s’applique à l’application dans laquelle vous allez la valider.
   
-1. Dans le centre [Microsoft 365 Business Premium' administration,](https://admin.microsoft.com)allez à  \> **Stratégies modifier la stratégie.**
+1. Dans le centre [Microsoft 365 Business Premium’administration](https://admin.microsoft.com), allez à **Stratégies** \> **modifier la stratégie**.
     
 2. Choisissez **une stratégie** d’application pour Android pour les paramètres que vous avez créés lors de l’installation, ou une autre stratégie que vous avez créée, et vérifiez qu’elle est appliquée pour Outlook, par exemple. 
     
-    ![Shows all the apps for which this policy protects files.](../../media/b3be3ddd-f683-4073-8d7a-9c639a636a2c.png)
+    ![Capture d’écran montrant toutes les applications pour lesquelles cette stratégie protège les fichiers.](../../media/b3be3ddd-f683-4073-8d7a-9c639a636a2c.png)
   
 ### <a name="validate-require-a-pin-or-a-fingerprint-to-access-office-apps"></a>Confirmer le fonctionnement du paramètre Exiger un code confidentiel ou une empreinte pour accéder aux applications Office
 
@@ -55,7 +58,7 @@ Dans le volet **Modifier une stratégie**, sélectionnez **Modifier** en regard 
   
 ![Assurez-vous que la fonction Exiger un code confidentiel ou une empreinte digitale pour accéder Office applications est définie sur On.](../../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
-1. Sur l’appareil Android de l’utilisateur, Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium utilisateur.
+1. Sur l’appareil Android de l’utilisateur, Outlook et connectez-vous avec les informations d’Microsoft 365 Business Premium utilisateur.
     
 2. Vous serez également invité à entrer un code confidentiel ou à utiliser une empreinte digitale.
     
@@ -63,15 +66,15 @@ Dans le volet **Modifier une stratégie**, sélectionnez **Modifier** en regard 
   
 ### <a name="validate-reset-pin-after-number-of-failed-attempts"></a>Confirmer le fonctionnement du paramètre Réinitialiser le code confidentiel après un certain nombre d'échecs successifs
 
-In the **Edit policy** pane, choose **Edit** next to Office documents **access control,** expand **Manage how users access Office files on mobile devices**, and make sure that **Reset PIN after number of failed attempts** is set to some number. Il s’agit de 5 par défaut. 
+Dans le  volet Modifier la stratégie, choisissez  Modifier en plus du contrôle d’accès aux **documents Office**, développez Gérer la façon dont les utilisateurs accèdent aux fichiers **Office** sur les appareils mobiles et assurez-vous que la réinitialisation du code confidentiel après le nombre d’tentatives en échec est définie sur un certain nombre. Il s’agit de 5 par défaut. 
   
-1. Sur l’appareil Android de l’utilisateur, Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium utilisateur.
+1. Sur l’appareil Android de l’utilisateur, Outlook et connectez-vous avec les informations d’Microsoft 365 Business Premium utilisateur.
     
 2. Entrez un code confidentiel incorrect autant de fois que le spécifie la stratégie. Vous verrez une invite qui indique que la limite de tentative de code confidentiel est **atteinte** pour réinitialiser le code confidentiel. 
     
-    ![After too many incorrect PIN attempts, you need to reset your PIN.](../../media/fca6fcb4-bb5c-477f-af5e-5dc937e8b835.png)
+    ![Capture d’écran indiquant qu’après un trop grand nombre de tentatives de code confidentiel incorrectes, vous devez réinitialiser votre code confidentiel.](../../media/fca6fcb4-bb5c-477f-af5e-5dc937e8b835.png)
   
-3. Appuyez sur **Réinitialiser le code confidentiel**. Vous serez invité à vous inscrire avec les informations d’identification Microsoft 365 Business Premium utilisateur, puis à définir un nouveau code confidentiel.
+3. Appuyez sur **Réinitialiser le code confidentiel**. Vous serez invité à vous inscrire avec les informations d’identification Microsoft 365 Business Premium de l’utilisateur, puis à définir un nouveau code confidentiel.
     
 ### <a name="validate-force-users-to-save-all-work-files-to-onedrive-for-business"></a>Confirmer le fonctionnement du paramètre Obliger les utilisateurs à enregistrer tous les fichiers professionnels dans OneDrive Entreprise
 
@@ -94,7 +97,7 @@ Dans le volet **Modifier une stratégie**, sélectionnez **Modifier** en regard 
   
 ### <a name="validate-require-user-to-sign-in-again-if-office-apps-have-been-idle-for-a-specified-time"></a>Confirmer le fonctionnement du paramètre Demander aux utilisateurs de se reconnecter à l'issue d'une période d'inactivité des applications Office
 
-Dans  le volet Modifier  la stratégie, sélectionnez Modifier en plus du contrôle d’accès aux **documents Office,** développez Gérer la façon dont les utilisateurs accèdent aux fichiers **Office** sur les appareils mobiles et assurez-vous que demander aux utilisateurs de se connecter à nouveau une fois que les applications **Office** ont été inactives est définie sur un certain nombre de minutes. Cette valeur est de 30 minutes par défaut. 
+Dans le  volet Modifier la stratégie, sélectionnez Modifier en plus du contrôle d’accès aux **documents Office**, développez Gérer la façon dont les utilisateurs accèdent aux fichiers **Office** sur les appareils mobiles et assurez-vous que les utilisateurs doivent se connecter à nouveau une fois que **les applications Office** ont été inactives est définie sur un certain nombre de minutes. Cette valeur est de 30 minutes par défaut. 
   
 1. Sur l’appareil Android de l’utilisateur, ouvrez Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium utilisateur, puis entrez un code confidentiel si nécessaire.
     
@@ -132,11 +135,11 @@ Une fois que vous avez [défini des configurations d'application pour les appare
   
 Tout d’abord, assurez-vous que la stratégie s’applique à l’application dans laquelle vous allez la valider.
   
-1. Dans le centre [Microsoft 365 Business Premium' administration,](https://admin.microsoft.com)allez à  \> **Stratégies modifier la stratégie.**
+1. Dans le centre [Microsoft 365 Business Premium’administration](https://admin.microsoft.com), allez à **Stratégies** \> **modifier la stratégie**.
     
 2. Choisissez **une stratégie d’application pour iOS** pour les paramètres que vous avez créés lors de l’installation, ou une autre stratégie que vous avez créée, et vérifiez qu’elle est appliquée pour Outlook par exemple. 
     
-    ![Shows all the apps for which this policy protects files.](../../media/842441b8-e7b1-4b86-9edd-d94d1f77b6f4.png)
+    ![Capture d’écran  shows all the apps for which this policy protects files.](../../media/842441b8-e7b1-4b86-9edd-d94d1f77b6f4.png)
   
 ### <a name="validate-require-a-pin-to-access-office-apps"></a>Confirmer le fonctionnement du paramètre Exiger un code confidentiel pour accéder aux applications Office
 
@@ -144,7 +147,7 @@ Dans le volet **Modifier une stratégie**, sélectionnez **Modifier** en regard 
   
 ![Assurez-vous que la fonction Exiger un code confidentiel ou une empreinte digitale pour accéder Office applications est définie sur On.](../../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
-1. Sur l’appareil iOS de l’utilisateur, ouvrez Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium utilisateur.
+1. Sur l’appareil iOS de l’utilisateur, Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium utilisateur.
     
 2. Vous serez également invité à entrer un code confidentiel ou à utiliser une empreinte digitale.
     
@@ -152,15 +155,15 @@ Dans le volet **Modifier une stratégie**, sélectionnez **Modifier** en regard 
   
 ### <a name="validate-reset-pin-after-number-of-failed-attempts"></a>Confirmer le fonctionnement du paramètre Réinitialiser le code confidentiel après un certain nombre d'échecs successifs
 
-In the **Edit policy** pane, choose **Edit** next to Office documents **access control,** expand **Manage how users access Office files on mobile devices**, and make sure that **Reset PIN after number of failed attempts** is set to some number. Il s’agit de 5 par défaut. 
+Dans le  volet Modifier la stratégie, choisissez  Modifier en plus du contrôle d’accès aux **documents Office**, développez Gérer la façon dont les utilisateurs accèdent aux fichiers **Office** sur les appareils mobiles et assurez-vous que la réinitialisation du code confidentiel après le nombre d’tentatives en échec est définie sur un certain nombre. Il s’agit de 5 par défaut. 
   
-1. Sur l’appareil iOS de l’utilisateur, ouvrez Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium utilisateur.
+1. Sur l’appareil iOS de l’utilisateur, Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium utilisateur.
     
 2. Entrez un code confidentiel incorrect autant de fois que le spécifie la stratégie. Vous verrez une invite qui indique que la limite de tentative de code confidentiel est **atteinte** pour réinitialiser le code confidentiel. 
     
-    ![After too many incorrect PIN attempts, you need to reset your PIN.](../../media/fab5c089-a4a5-4e8d-8c95-b8eed1dfa262.png)
+    ![Capture d’écran de la réinitialisation du code confidentiel d’avertissement après un trop grand nombre de tentatives incorrectes.](../../media/fab5c089-a4a5-4e8d-8c95-b8eed1dfa262.png)
   
-3. Appuyez sur **OK**. Vous serez invité à vous inscrire avec les informations d’identification Microsoft 365 Business Premium utilisateur, puis à définir un nouveau code confidentiel.
+3. Appuyez sur **OK**. Vous serez invité à vous inscrire avec les informations d’identification Microsoft 365 Business Premium de l’utilisateur, puis à définir un nouveau code confidentiel.
     
 ### <a name="validate-force-users-to-save-all-work-files-to-onedrive-for-business"></a>Confirmer le fonctionnement du paramètre Obliger les utilisateurs à enregistrer tous les fichiers professionnels dans OneDrive Entreprise
 
@@ -174,13 +177,13 @@ Dans le volet **Modifier une stratégie**, sélectionnez **Modifier** en regard 
     
     ![Tap the Save option after you open an attachment to try to save it.](../../media/b419b070-1530-4f14-86a8-8d89933a2b25.png)
   
-3. Seule une option pour OneDrive Entreprise devrait être affichée. Si ce n’est pas le cas, appuyez **sur** Ajouter **un OneDrive Entreprise** l’écran Ajouter **Stockage compte.** Fournissez la demande de l’utilisateur Microsoft 365 Business Premium se connecte lorsque vous y êtes invité. 
+3. Seule une option pour OneDrive Entreprise devrait être affichée. Si ce n’est pas le cas, appuyez **sur** Ajouter un **compte et OneDrive Entreprise** l’écran **Ajouter Stockage compte**. Fournissez la demande de l’utilisateur Microsoft 365 Business Premium se connecte lorsque vous y êtes invité. 
     
     Appuyez sur **Enregistrer** et sélectionnez **OneDrive Entreprise**.
     
 ### <a name="validate-require-user-to-sign-in-again-if-office-apps-have-been-idle-for-a-specified-time"></a>Confirmer le fonctionnement du paramètre Demander aux utilisateurs de se reconnecter à l'issue d'une période d'inactivité des applications Office
 
-Dans  le volet Modifier  la stratégie, sélectionnez Modifier en plus du contrôle d’accès aux **documents Office,** développez Gérer la façon dont les utilisateurs accèdent aux fichiers **Office** sur les appareils mobiles et assurez-vous que demander aux utilisateurs de se connecter à nouveau une fois que les applications **Office** ont été inactives est définie sur un certain nombre de minutes. Cette valeur est de 30 minutes par défaut. 
+Dans le  volet Modifier la stratégie, sélectionnez Modifier en plus du contrôle d’accès aux **documents Office**, développez Gérer la façon dont les utilisateurs accèdent aux fichiers **Office** sur les appareils mobiles et assurez-vous que les utilisateurs doivent se connecter à nouveau une fois que **les applications Office** ont été inactives est définie sur un certain nombre de minutes. Cette valeur est de 30 minutes par défaut. 
   
 1. Sur l’appareil iOS de l’utilisateur, ouvrez Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium utilisateur, puis entrez un code confidentiel si nécessaire.
     
@@ -202,5 +205,7 @@ Dans le volet **Modifier une stratégie**, sélectionnez **Modifier** en regard 
     
 4. Ouvrez l'application **Photos** à partir de l'écran d'accueil. Vous devriez voir une photo (ou plusieurs si vous avez enregistré plusieurs pièces jointes de fichiers images) enregistrée, mais chiffrée. 
     
----
 
+## <a name="see-also"></a>Voir aussi
+
+[10 principales façons de sécuriser les Microsoft 365 pour les plans d’entreprise](../security-and-compliance/secure-your-business-data.md)

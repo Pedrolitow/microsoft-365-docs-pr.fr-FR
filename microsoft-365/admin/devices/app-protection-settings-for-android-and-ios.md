@@ -26,16 +26,19 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Découvrez comment créer, modifier ou supprimer une stratégie de gestion des applications et protéger les fichiers de travail sur les appareils Android ou iOS.
-ms.openlocfilehash: 3c6a3401fdef42dec19b6d66f4b9fa8cd78106e5
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 6849b24f691f7b567cc55dce2dda21f2a7e93f22
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401209"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313984"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Définir les paramètres de protection des applications pour les appareils Android ou iOS
 
 Cet article s’applique aux Microsoft 365 Business Premium.
+
+> [!NOTE]
+> Microsoft Defender for Business est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Cette offre offre des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender pour les entreprises](../../security/defender-business/mdb-overview.md).
 
 ## <a name="watch-secure-office-apps-on-ios"></a>Regardez : Sécuriser Office applications sur iOS
 
@@ -44,42 +47,42 @@ Cet article s’applique aux Microsoft 365 Business Premium.
 Vous pouvez configurer une stratégie d’accès utilisateur qui oblige les utilisateurs mobiles à entrer un code confidentiel ou une empreinte digitale pour se connecter, et chiffre également les fichiers de travail stockés sur leurs appareils.
 
 1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>.
-1. Sous **Stratégies,** choisissez **Ajouter une stratégie.**
-1. Dans le **volet Ajouter une** stratégie, entrez un nom sous nom de stratégie, puis choisissez le type de stratégie que vous souhaitez sous Type de **stratégie.** 
-1. Activer la gestion de la façon dont les utilisateurs **accèdent Office fichiers sur** les appareils mobiles, puis assurez-vous que les trois paramètres suivants sont actifs :
+1. Sous **Stratégies**, **sélectionnez Ajouter une stratégie**.
+1. Dans le **volet Ajouter une** stratégie, entrez un nom sous nom de **stratégie, puis** choisissez le type de stratégie que vous souhaitez sous **Type de stratégie**.
+1. Activer la **gestion de la façon dont les utilisateurs accèdent Office fichiers sur** les appareils mobiles, puis assurez-vous que les trois paramètres suivants sont actifs :
     - **Exiger un code confidentiel ou une empreinte pour accéder aux applications Office**
     - **Protéger les fichiers de travail en cas de perte ou de vol d’appareils**
     - **Chiffrer les fichiers de travail**
 
 1. Sous **Les fichiers de ces applications** seront protégés, sélectionnez les Office que vous souhaitez protéger sur les appareils mobiles.
-1. Sous Qui obtenir ces **paramètres ?**, tous les utilisateurs sont  sélectionnés par défaut, mais vous pouvez choisir Modifier pour sélectionner les groupes de sécurité que vous avez créés.
+1. Sous Qui vous obtenez ces paramètres ?, tous les **utilisateurs sont sélectionnés** par défaut, mais vous pouvez choisir Modifier  pour sélectionner les groupes de sécurité que vous avez créés.
 1. Pour terminer la création de la stratégie, choisissez **Ajouter**.
-1. Dans la page **Ajouter une stratégie,** choisissez **Fermer.**
-1. Dans la page d’accueil du Centre d’administration,  confirmez que votre nouvelle stratégie a été ajoutée en choisissant Stratégies et en l’avisant sur la page **Stratégies.**
+1. Dans la page **Ajouter une stratégie** , choisissez **Fermer**.
+1. Dans la page d’accueil du Centre d’administration, confirmez que votre nouvelle stratégie  a été ajoutée en choisissant Stratégies et en l’avisant sur la page **Stratégies**.
 
 ## <a name="create-an-app-management-policy"></a>Créer une stratégie de gestion des applications
 
 1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
-2. In the left nav, choose **Devices** \> **Policies** \> **Add**.
+2. Dans le navigation de gauche, choisissez **Ajouter des** **stratégies**\> **d’appareils**\>.
   
 3. Dans le volet **Ajouter une stratégie**, entrez un nom unique pour cette stratégie. 
     
-4. Sous **Type de stratégie**, choisissez Gestion des applications pour **Android** ou Gestion des applications **pour iOS,** en fonction de l’ensemble de stratégies que vous souhaitez créer. 
+4. Sous **Type de stratégie**, choisissez **Gestion des applications pour Android** ou Gestion des applications **pour iOS**, en fonction de l’ensemble de stratégies que vous souhaitez créer. 
     
-5. Développez **Protéger les fichiers professionnels lorsque des appareils sont** perdus ou volés et gérez la façon dont les utilisateurs **accèdent Office fichiers sur les appareils mobiles.** Configurez les paramètres comme vous le souhaitez. Gérer la façon dont les utilisateurs  **accèdent Office fichiers** sur les  appareils mobiles est éteint par défaut, mais nous vous recommandons de l’activer et d’accepter les valeurs par défaut. Pour plus d’informations, voir [Paramètres disponibles.](#available-settings) 
+5. **Développez Protéger les fichiers professionnels lorsque des appareils sont** perdus ou volés et gérez la façon dont les utilisateurs **accèdent Office fichiers sur les appareils mobiles**. Configurez les paramètres comme vous le souhaitez. **Gérer la façon dont les utilisateurs accèdent Office fichiers** sur  les appareils mobiles est éteint par défaut, mais nous vous  recommandons de l’activer et d’accepter les valeurs par défaut. Pour plus d’informations, voir [Paramètres disponibles](#available-settings). 
     
     Vous pouvez toujours utiliser le lien **Réinitialiser les paramètres par défaut** pour rétablir la valeur par défaut. 
     
     ![Capture d’écran de Créer une stratégie avec la gestion des applications pour Android sélectionnée.](../../media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
   
-6. Maintenant, définissez **Qui recevra ces paramètres ?** Si vous ne souhaitez pas  utiliser le groupe de sécurité Par défaut Tous les utilisateurs, choisissez **Modifier,** choisissez les groupes de sécurité qui obtiennent ces paramètres \> **Sélectionner.**
+6. Maintenant, définissez **Qui recevra ces paramètres ?** Si vous ne souhaitez pas utiliser le groupe de  sécurité Par défaut Tous les utilisateurs, choisissez **Modifier, choisissez** les groupes de sécurité qui obtiennent ces paramètres \> **Sélectionner**.
     
 7. Enfin, sélectionnez **Terminé** pour enregistrer la stratégie et l'affecter à des appareils. 
     
 ## <a name="edit-an-app-management-policy"></a>Modifier une stratégie de gestion des applications
 
-1. Sur la carte **Stratégies,** choisissez **Modifier la stratégie.**
+1. Dans la carte **Stratégies** , choisissez **Modifier la stratégie**.
     
 2. Dans le volet **Modifier une stratégie**, sélectionnez la stratégie que vous voulez modifier. 
     
@@ -89,25 +92,25 @@ Vous pouvez configurer une stratégie d’accès utilisateur qui oblige les util
     
 ## <a name="delete-an-app-management-policy"></a>Supprimer une stratégie de gestion des applications
 
-1. Dans la page **Stratégies,** choisissez une stratégie, puis **supprimez.**
+1. Dans la page **Stratégies** , choisissez une stratégie, puis **supprimez**.
     
-2. Dans le **volet Supprimer la stratégie,** choisissez **Confirmer** pour supprimer la ou les stratégies que vous avez choisies. 
+2. Dans le **volet Supprimer la stratégie** , choisissez **Confirmer** pour supprimer la ou les stratégies que vous avez choisies. 
     
 ## <a name="available-settings"></a>Paramètres disponibles
 
 Les tableaux suivants donnent des informations détaillées sur les paramètres disponibles pour protéger les fichiers professionnels sur les appareils et sur les paramètres qui contrôlent la façon dont les utilisateurs accèdent aux fichiers Office à partir de leurs appareils mobiles.
   
- Pour plus d’informations, voir Comment les fonctionnalités [de protection Microsoft 365 Business Premium mappés aux paramètres Intune](map-protection-features-to-intune-settings.md). 
+ Pour plus d’informations, voir [How do protection features in Microsoft 365 Business Premium map to Intune settings](map-protection-features-to-intune-settings.md). 
   
 ### <a name="settings-that-protect-work-files"></a>Paramètres de protection des fichiers professionnels
 
 Les paramètres suivants sont disponibles pour protéger les fichiers professionnels si l'appareil d'un utilisateur est perdu ou volé :
 
 
-|Paramètre  <br/> |Description  <br/> |
+|Setting  <br/> |Description  <br/> |
 |:-----|:-----|
 |Supprimer les fichiers professionnels d'un appareil inactif après tant de jours  <br/> |Si un appareil n’est pas utilisé pendant le nombre de jours que vous spécifiez ici, tous les fichiers de travail stockés sur l’appareil sont supprimés automatiquement.  <br/> |
-|Obliger les utilisateurs à enregistrer tous les fichiers de travail dans OneDrive Entreprise  <br/> |Si ce paramètre est **sur ,** le seul emplacement d’enregistrer disponible pour les fichiers de travail est OneDrive Entreprise.  <br/> |
+|Obliger les utilisateurs à enregistrer tous les fichiers de travail dans OneDrive Entreprise  <br/> |Si ce paramètre est **sur,** le seul emplacement d’enregistrer disponible pour les fichiers de travail est OneDrive Entreprise.  <br/> |
 |Chiffrer les fichiers professionnels  <br/> |Laissez ce paramètre **activé** afin que les fichiers professionnels soient protégés par chiffrement. Même si l’appareil est perdu ou volé, personne ne peut lire les données de votre entreprise.  <br/> |
    
 ### <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>Paramètres qui contrôlent la façon dont les utilisateurs accèdent aux fichiers Office sur appareils mobiles
@@ -115,10 +118,14 @@ Les paramètres suivants sont disponibles pour protéger les fichiers profession
 Les paramètres suivants sont disponibles pour gérer la manière dont les utilisateurs accèdent aux fichiers professionnels Office :
 
 
-|Paramètre  <br/> |Description  <br/> |
+|Setting  <br/> |Description  <br/> |
 |:-----|:-----|
-|Exiger un code confidentiel ou une empreinte pour accéder aux applications Office  <br/> |Si ce  paramètre est Sur, les utilisateurs doivent fournir une autre forme d’authentification, en plus de leur nom d’utilisateur et mot de passe, pour pouvoir utiliser des applications Office sur leurs appareils mobiles.<br/> |
+|Exiger un code confidentiel ou une empreinte pour accéder aux applications Office  <br/> |Si ce paramètre est  Sur, les utilisateurs doivent fournir une autre forme d’authentification, en plus de leur nom d’utilisateur et mot de passe, pour pouvoir utiliser des applications Office sur leurs appareils mobiles.<br/> |
 |Réinitialiser le code confidentiel en cas d'échecs successifs de la connexion  <br/> |Afin d'empêcher un utilisateur non autorisé de deviner un code confidentiel de façon aléatoire, le code confidentiel est réinitialisé après le nombre d'entrées incorrectes que vous spécifiez.  <br/> |
 |Demander aux utilisateurs de se reconnecter à l'issue d'une période d'inactivité des applications Office  <br/> |Ce paramètre détermine la durée pendant combien de temps un utilisateur peut être inactif avant d’être invité à se ré-inscrire.  <br/> |
 |Refuser l'accès aux fichiers de travail sur les appareils « jailbreakés » ou débridés  <br/> |Les utilisateurs intelligents peuvent avoir un appareil jailbreaké ou rooté. Cela signifie que l'utilisateur est en mesure de modifier le système d'exploitation, ce qui peut rendre l'appareil plus vulnérable aux logiciels malveillants. Ces appareils sont bloqués lorsque ce paramètre est **activé**.  <br/> |
-|Ne pas autoriser les utilisateurs à copier le contenu de Office applications dans des applications personnelles  <br/> |Cela est interdit par défaut, mais si le paramètre est **activé**, l'utilisateur peut copier des informations d'un fichier professionnel vers un fichier personnel. Si le paramètre est **désactivé**, l'utilisateur ne peut pas copier d'informations à partir d'un compte professionnel vers une application personnelle ou un compte personnel.  <br/> |
+|Ne pas autoriser les utilisateurs à copier du contenu de Office applications dans des applications personnelles  <br/> |Cela est interdit par défaut, mais si le paramètre est **activé**, l'utilisateur peut copier des informations d'un fichier professionnel vers un fichier personnel. Si le paramètre est **désactivé**, l'utilisateur ne peut pas copier d'informations à partir d'un compte professionnel vers une application personnelle ou un compte personnel.  <br/> |
+
+## <a name="see-also"></a>Voir aussi
+
+[10 principales façons de sécuriser les Microsoft 365 pour les plans d’entreprise](../security-and-compliance/secure-your-business-data.md)

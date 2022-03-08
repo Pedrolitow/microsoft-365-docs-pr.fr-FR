@@ -12,18 +12,17 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment mettre en service et utiliser le modèle de site Centre de contenu dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 342a8b42b8aa8a9bb60867f57379ce00db068c17
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 2650b98decc7977c4343f75b27ed46e2381abdef
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62902605"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314544"
 ---
 # <a name="use-the-content-center-site-template-for-microsoft-sharepoint-syntex"></a>Utiliser le modèle de site Centre de contenu pour Microsoft SharePoint Syntex
 
-Le site SharePoint Syntex content center est un modèle de site prêt à SharePoint et conçu pour vous aider à mieux comprendre SharePoint Syntex fonctionnalités.
+Le site SharePoint Syntex content center est un modèle de site d’instructions prêt à être déployé SharePoint pour vous aider à mieux comprendre SharePoint Syntex fonctionnalités.
 
 Vous allez vous présenter les outils et les informations dont vous aurez besoin pour créer et former vos propres modèles. Vous pourrez ensuite utiliser ce site comme référentiel de contenu central ou comme centre de contrôle pour gérer vos propres modèles SharePoint Syntex web.
 
@@ -38,7 +37,7 @@ Le site Centre de contenu peut être mise en service à partir du [service de Sh
 ![Capture d’écran de la page de mise en service du modèle de site centre de contenu.](../media/content-understanding/content-center-site-provisioning-page.png)
 
 > [!NOTE]
-> Vous devez être un administrateur général ou un administrateur SharePoint dans Microsoft 365 pour mettre en service le site.
+> Vous devez être administrateur général ou administrateur SharePoint administrateur Microsoft 365 pour mettre en service le site.
 
 1. Dans la page principale du SharePoint [de](https://lookbook.microsoft.com/) recherche, dans **le menu Afficher** les conceptions,  >  sélectionnez SharePoint Syntex **SharePoint Syntex centre de contenu**.
 
