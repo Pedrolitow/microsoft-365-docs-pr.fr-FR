@@ -3,8 +3,8 @@ title: Stratégies d’accès aux identités et appareils pour autoriser l’acc
 description: Décrit l’accès conditionnel recommandé et les stratégies associées pour la protection de l’accès des invités et des utilisateurs externes.
 ms.prod: m365-security
 ms.topic: article
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 audience: Admin
 manager: Laurawi
 f1.keywords:
@@ -19,18 +19,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 090f5a81c624b22298c257fae890691c8e5151ee
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 71e4b3d5f2a8cbf147a9aa50dd849be14047e27d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121180"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318170"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Stratégies d’accès invité et d’accès des utilisateurs externes B2B
 
-Cet article traite de l’ajustement des stratégies d’accès aux appareils et aux identités De confiance zéro recommandées pour autoriser l’accès pour les invités et les utilisateurs externes qui ont un compte B2B Azure Active Directory (Azure AD) Business-to-Business (B2B). Ces instructions s’appuient sur les stratégies [communes d’accès aux identités et aux appareils.](identity-access-policies.md)
+Cet article traite de l’ajustement des stratégies d’accès aux appareils et aux identités De confiance zéro recommandées pour autoriser l’accès pour les invités et les utilisateurs externes qui ont un compte B2B Azure Active Directory (Azure AD). Ces instructions s’appuient sur les stratégies [communes d’accès aux identités et aux appareils](identity-access-policies.md).
 
-Ces recommandations sont conçues pour s’appliquer au **niveau de départ** de la protection. Toutefois, vous pouvez également ajuster les recommandations en fonction de vos besoins spécifiques en matière de protection **de** la sécurité d’entreprise **et spécialisée.**
+Ces recommandations sont conçues pour s’appliquer au **niveau de départ** de la protection. Toutefois, vous pouvez également ajuster les recommandations en fonction de vos besoins spécifiques en matière de protection **de** la sécurité d’entreprise **et spécialisée** .
 
 Le fait de fournir un chemin d’accès aux comptes B2B pour s’authentifier auprès de votre client Azure AD ne permet pas à ces comptes d’accéder à l’ensemble de votre environnement. Les utilisateurs B2B et leurs comptes ont accès à des services et des ressources, tels que des fichiers, partagés avec eux par la stratégie d’accès conditionnel.
 
@@ -44,14 +44,14 @@ Le tableau suivant répertorie les stratégies que vous devez créer et mettre �
 
 |Niveau de protection|Stratégies|Informations supplémentaires|
 |---|---|---|
-|**Point de départ**|[Exiger l’mf toujours pour les invités et les utilisateurs externes](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Créez cette stratégie et configurez : <ul><li>Pour **les affectations > utilisateurs** et groupes > inclure, sélectionnez Sélectionner des utilisateurs et des **groupes,** puis sélectionnez Tous les utilisateurs **invités et externes.**</li><li>Pour **les affectations > conditions >** se connectez, laissez toutes les options désactivées pour toujours appliquer l’authentification multifacteur (MFA).</li></ul>|
+|**Point de départ**|[Exiger l’mf toujours pour les invités et les utilisateurs externes](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Créez cette stratégie et configurez : <ul><li>Pour **les affectations > utilisateurs et groupes > inclure**, sélectionnez Sélectionner des utilisateurs et des **groupes, puis** sélectionnez Tous les utilisateurs **invités et externes**.</li><li>Pour **les affectations > conditions >** se connectez, laissez toutes les options désactivées pour toujours appliquer l’authentification multifacteur (MFA).</li></ul>|
 ||[Exiger une mfmf lorsque le risque de se connecte *est moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modifiez cette stratégie pour exclure les invités et les utilisateurs externes.|
 
-Pour inclure ou exclure des invités et des utilisateurs externes dans les stratégies d’accès conditionnel, pour affectations > Utilisateurs et groupes > Inclure ou exclure, vérifier tous les **utilisateurs invités** et  **externes.**
+Pour inclure ou exclure des invités et des utilisateurs externes dans les stratégies d’accès **conditionnel, pour Affectations > Utilisateurs et groupes > Inclure** ou exclure **, vérifiez** Tous les utilisateurs invités **et externes**.
 
 ![capture d’écran des contrôles pour l’exclusion des invités et des utilisateurs externes.](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 ### <a name="guests-and-external-user-access-with-microsoft-teams"></a>Invités et accès des utilisateurs externes avec Microsoft Teams
 
@@ -61,9 +61,9 @@ Microsoft Teams définit les utilisateurs suivants :
 
 - **L’accès** externe est pour un utilisateur externe qui n’a pas de compte B2B. L’accès des utilisateurs externes inclut les invitations, les appels, les conversations et les réunions, mais n’inclut pas l’appartenance à une équipe et l’accès aux ressources de l’équipe.
 
-Pour plus d’informations, voir la [comparaison entre les invités et l’accès des utilisateurs externes pour teams.](/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access)
+Pour plus d’informations, voir la [comparaison entre les invités et l’accès des utilisateurs externes pour teams](/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
 
-Pour plus d’informations sur la sécurisation des stratégies d’accès aux identités et aux appareils pour Teams, voir recommandations de stratégie pour la sécurisation des Teams [conversations, des groupes et des fichiers.](teams-access-policies.md)
+Pour plus d’informations sur la sécurisation des stratégies d’accès aux identités et aux appareils pour Teams, voir recommandations en matière de stratégie pour la [Teams conversations, les groupes et les fichiers](teams-access-policies.md).
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>Exiger l’mf toujours pour les utilisateurs invités et externes
 

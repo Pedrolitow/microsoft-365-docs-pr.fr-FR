@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f6e1bd4653318897ec82d49cd1dccfc0ab4105de
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
+ms.openlocfilehash: 28533f2ad3fcf547cab95812048b3de8af3bcb9a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62218932"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324268"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Configurer et gérer les fonctionnalités de Spécialistes des menaces Microsoft
 
@@ -42,13 +42,13 @@ ms.locfileid: "62218932"
 
 Assurez-vous que Defender pour le point de terminaison est déployé dans votre environnement avec des appareils inscrits, et pas seulement sur une mise en place de laboratoire.
 
-Si vous êtes un client Defender for Endpoint, vous devez demander Spécialistes des menaces Microsoft - Targeted **Attack Notifications** pour obtenir des informations et une analyse spéciales afin d’identifier les menaces les plus critiques, afin de pouvoir y répondre rapidement. Contactez votre équipe de compte ou votre représentant Microsoft pour vous abonner **à Spécialistes des menaces Microsoft - Experts** à la demande pour consulter nos experts en matière de menaces sur les détections et les adversaires pertinents.
+Si vous êtes un client Defender for Endpoint, vous devez demander **Spécialistes des menaces Microsoft - Targeted Attack Notifications** pour obtenir des informations et une analyse spéciales afin d’identifier les menaces les plus critiques, afin de pouvoir y répondre rapidement. Contactez votre équipe de compte ou votre représentant Microsoft pour vous abonner à **Spécialistes des menaces Microsoft - Experts** à la demande pour consulter nos experts en matière de menaces sur les détections et les adversaires pertinents.
 
-## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>Appliquer pour Spécialistes des menaces Microsoft service de notifications d’attaques ciblées
+## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>Appliquer pour Spécialistes des menaces Microsoft - Service de notifications d’attaques ciblées
 
 Si vous êtes déjà un client Defender for Endpoint, vous pouvez l’appliquer via Microsoft 365 Defender portail.
 
-1. Dans le volet de navigation, Paramètres > général > fonctionnalités avancées > Spécialistes des menaces Microsoft - Notifications d’attaque **ciblées.**
+1. Dans le volet de navigation, Paramètres > général > **fonctionnalités avancées > Spécialistes des menaces Microsoft - Notifications d’attaques ciblées**.
 
 2. Cliquez sur **Appliquer**.
 
@@ -58,15 +58,15 @@ Si vous êtes déjà un client Defender for Endpoint, vous pouvez l’appliquer 
 
     ![Image de l Spécialistes des menaces Microsoft application.](images/mte-apply.png)
 
-4. Lisez [la déclaration de confidentialité,](https://privacy.microsoft.com/privacystatement)puis cliquez sur **Envoyer** lorsque vous avez terminé. Vous recevrez un e-mail de bienvenue une fois votre application approuvée.
+4. Lisez [la déclaration de](https://privacy.microsoft.com/privacystatement) confidentialité, puis cliquez **sur Envoyer** lorsque vous avez terminé. Vous recevrez un e-mail de bienvenue une fois votre application approuvée.
 
-    ![Image de la confirmation Spécialistes des menaces Microsoft application.](images/mte-applicationconfirmation.png)
+    ![Image de la Spécialistes des menaces Microsoft de l’application.](images/mte-applicationconfirmation.png)
 
-Lorsqu’il est accepté, vous recevez un  e-mail de bienvenue et le bouton Appliquer change sur un bouton bascule qui est « sur ». Si vous souhaitez vous dérender du service Notifications d’attaques  ciblées, faites glisser le bouton bascule vers le bas et cliquez sur Enregistrer les préférences en bas de la page.
+Lorsqu’il est accepté, vous recevez un e-mail de bienvenue  et le bouton Appliquer change sur un bouton bascule qui est « sur ». Si vous souhaitez vous dérender du service Notifications d’attaques ciblées, faites glisser le bouton bascule vers  le bas et cliquez sur Enregistrer les préférences en bas de la page.
 
 ## <a name="where-youll-see-the-targeted-attack-notifications-from-microsoft-threat-experts"></a>L’endroit où les notifications d’attaque ciblées s’Spécialistes des menaces Microsoft
 
-Vous pouvez recevoir des notifications d’attaques ciblées Spécialistes des menaces Microsoft via le support suivant :
+Vous pouvez recevoir une notification d’attaque ciblée de Spécialistes des menaces Microsoft via le support suivant :
 
 - Page Incidents du portail Defender pour les points **de terminaison**
 - Tableau de bord **Alertes** du portail Defender pour les points de terminaison
@@ -78,13 +78,13 @@ Pour recevoir des notifications d’attaque ciblée par courrier électronique, 
 
 ### <a name="create-an-email-notification-rule"></a>Créer une règle de notification par courrier électronique
 
-Vous pouvez créer des règles pour envoyer des notifications par courrier électronique aux destinataires de la notification. Pour  [plus d’informations,](configure-email-notifications.md) voir Configurer les notifications d’alerte pour créer, modifier, supprimer ou dépanner les notifications par courrier électronique.
+Vous pouvez créer des règles pour envoyer des notifications par courrier électronique aux destinataires de la notification. Pour  [plus d’informations, voir Configurer les notifications](configure-email-notifications.md) d’alerte pour créer, modifier, supprimer ou dépanner les notifications par courrier électronique.
 
 ## <a name="view-the-targeted-attack-notification"></a>Afficher la notification d’attaque ciblée
 
 Vous commencerez à recevoir des notifications d’attaques ciblées Spécialistes des menaces Microsoft votre courrier électronique après avoir configuré votre système pour recevoir une notification par courrier électronique.
 
-1. Cliquez sur le lien dans l’e-mail pour aller dans le contexte d’alerte correspondant dans le tableau de bord balisé avec des **experts en menaces.**
+1. Cliquez sur le lien dans l’e-mail pour aller dans le contexte d’alerte correspondant dans le tableau de bord balisé avec des **experts en menaces**.
 
 2. Dans le tableau de bord, sélectionnez la même rubrique d’alerte que celle que vous avez reçu de l’e-mail pour afficher les détails.
 
@@ -101,9 +101,9 @@ Vous pouvez travailler en partenariat avec Spécialistes des menaces Microsoft q
 > - Les demandes d’alerte relatives aux données d’intelligence contre les menaces personnalisées de votre organisation ne sont actuellement pas pris en charge. Pour plus d’informations, consultez votre équipe de réponse aux incidents ou aux opérations de sécurité.
 > - Vous devez avoir l’autorisation Gérer les **paramètres** de sécurité dans le portail Microsoft 365 Defender pour pouvoir soumettre une demande « Consulter un expert en menaces ».
 
-1. Accédez à la page du portail avec les informations pertinentes que vous souhaitez examiner, par exemple, la page **Incident.** Assurez-vous que la page de l’alerte ou du périphérique approprié est en cours d’affichage avant d’envoyer une demande d’enquête.
+1. Accédez à la page du portail avec les informations pertinentes que vous souhaitez examiner, par exemple, la page **Incident** . Assurez-vous que la page de l’alerte ou du périphérique approprié est en cours d’affichage avant d’envoyer une demande d’enquête.
 
-2. Dans le menu supérieur droit, cliquez sur **le bouton ?** . Ensuite, **sélectionnez Consulter un expert en menaces.**
+2. Dans le menu supérieur droit, cliquez sur **le bouton ?** . Ensuite, **sélectionnez Consulter un expert en menaces**.
 
     ![Image de Spécialistes des menaces Microsoft experts à la demande dans le menu.](images/mte-eod-menu.png)
 
@@ -147,7 +147,7 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide du Microsoft Serv
 - Nous avons détecté un e-mail de hameçonnage qui a remis un document Word malveillant à un utilisateur. Le document Word malveillant a provoqué une série d’événements suspects, qui ont déclenché plusieurs alertes Defender for Endpoint pour les programmes malveillants [nom du programme malveillant]. Avez-vous des informations sur ce programme malveillant ? Si oui, pouvez-vous m’envoyer un lien ?
 - J’ai récemment vu un billet de [référence aux réseaux sociaux, par exemple, Twitter ou blog] sur une menace ciblant mon secteur d’activité. Pouvez-vous m’aider à comprendre quelle protection Defender pour Endpoint offre contre cet acteur des menaces ?
 
-### <a name="microsoft-threat-experts-alert-communications"></a>Spécialistes des menaces Microsoft les communications d’alerte de l’Spécialistes des menaces Microsoft
+### <a name="microsoft-threat-experts-alert-communications"></a>communications Spécialistes des menaces Microsoft’alertes de l’Spécialistes des menaces Microsoft
 
 - Votre équipe de réponse aux incidents peut-elle nous aider à résoudre la notification d’attaque ciblée que nous avons reçu ?
 - J’ai reçu cette notification d’attaque ciblée de Spécialistes des menaces Microsoft. Nous n’avons pas notre propre équipe de réponse aux incidents. Que pouvons-nous faire maintenant et comment contenir l’incident ?
@@ -160,7 +160,7 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide du Microsoft Serv
 
 ### <a name="receive-a-progress-report-about-your-managed-hunting-inquiry"></a>Recevoir un rapport d’avancement sur votre demande de recherche gérée
 
-La réponse de Spécialistes des menaces Microsoft varie en fonction de votre demande. Ils vous envoient un rapport  d’avancement sur votre examen expert en menaces dans un délai de deux jours, pour communiquer l’état de l’enquête dans les catégories suivantes :
+Les réponses des experts microsoft en matière de menaces varient en fonction de votre demande. Ils vous envoient un rapport d’avancement sur  votre examen expert en menaces dans un délai de deux jours, pour communiquer l’état de l’enquête dans les catégories suivantes :
 
 - Plus d’informations sont nécessaires pour poursuivre l’enquête
 - Un fichier ou plusieurs exemples de fichiers sont nécessaires pour déterminer le contexte technique
@@ -172,4 +172,4 @@ Il est essentiel de répondre rapidement pour que l’enquête continue de se d�
 ## <a name="related-topic"></a>Rubrique connexe
 
 - [Vue d’ensemble des spécialistes des menaces Microsoft](microsoft-threat-experts.md)
-- [Spécialistes des menaces Microsoft vue d’ensemble Microsoft 365'ensemble](/microsoft-365/security/mtp/microsoft-threat-experts)
+- [Vue d’ensemble des experts microsoft en matière de menaces dans Microsoft 365](/microsoft-365/security/mtp/microsoft-threat-experts)

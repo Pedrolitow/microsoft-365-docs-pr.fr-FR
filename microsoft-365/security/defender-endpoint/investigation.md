@@ -11,18 +11,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 54cf42f18c6e31a11649dccc2181e88ffb21dd51
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 1749404942b42778ecde99417a8e3501c7c4f4cf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283688"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327222"
 ---
 # <a name="investigation-resource-type"></a>Type de ressource Investigation
 
@@ -41,7 +39,7 @@ ms.locfileid: "61283688"
 
 Représente une entité d’investigation automatisée dans Defender pour le point de terminaison.
 
-Pour plus d’informations, voir [Vue d’ensemble des enquêtes automatisées.](automated-investigations.md)
+Pour plus d’informations, voir [Vue d’ensemble des enquêtes automatisées](automated-investigations.md).
 
 ## <a name="methods"></a>Méthodes
 
@@ -59,7 +57,7 @@ ID|String|Identité de l’entité d’investigation.
 startTime|DateTime Nullable|Date et heure de création de l’enquête.
 endTime|DateTime Nullable|Date et heure de fin de l’enquête.
 cancelledBy|String|ID de l’utilisateur/de l’application qui a annulé cet examen.
-État|Énum|État actuel de l’enquête. Les valeurs possibles sont : « Unknown » (inconnu), « Terminated » (terminé), « SuccessfullyRemediated », 'Suppress', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallySystemigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
+State|Énum|État actuel de l’enquête. Les valeurs possibles sont : « Unknown » (inconnu), « Terminated » (terminé), « SuccessfullyRemediated », 'Suppress', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallySystemigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
 statusDetails|String|Informations supplémentaires sur l’état de l’enquête.
 machineId|String|ID de l’appareil sur lequel l’enquête est exécutée.
 computerDnsName|String|Nom de l’appareil sur lequel l’enquête est exécutée.

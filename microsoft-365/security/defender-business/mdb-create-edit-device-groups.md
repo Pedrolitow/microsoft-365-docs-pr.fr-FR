@@ -17,38 +17,43 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: b13275a68a80cee52a756ef9b9464b5402749c27
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 7a6cd07a4231cd1d3744b638ff80ffdea1346090
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464967"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317442"
 ---
-# <a name="device-groups-in-microsoft-defender-for-business-preview"></a>Groupes d’appareils dans Microsoft Defender entreprise (prévisualisation)
+# <a name="device-groups-in-microsoft-defender-for-business"></a>Groupes d’appareils dans Microsoft Defender entreprise
 
 > [!IMPORTANT]
-> Microsoft Defender pour Entreprise est désormais en prévisualisation et sera progressivement mis en place pour les clients [](https://aka.ms/mdb-preview) et les partenaires qui s’y connectent pour le demander. Nous intégrerons un ensemble initial de clients et de partenaires dans les prochaines semaines et développerons la prévisualisation jusqu’à la disponibilité générale. Notez que la prévisualisation sera lancée avec un [ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et que nous ajouterons régulièrement des fonctionnalités.
+> Microsoft Defender for Business est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. La [prévisualisation inclut un ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et nous ajouterons régulièrement des fonctionnalités.
 > 
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
-Dans Microsoft Defender pour Entreprises (prévisualisation), les stratégies sont appliquées aux appareils via certaines collections appelées groupes d’appareils. 
+Dans Microsoft Defender entreprise, les stratégies sont appliquées aux appareils via certaines collections appelées groupes d’appareils. 
 
 **Cet article décrit** :  
 
 - [Quels sont les groupes d’appareils ?](#what-is-a-device-group)   
 - [Comment créer des groupes d’appareils dans Defender for Business](#create-a-new-device-group)
 
+>
+> **Avez-vous un peu de temps ?**
+> Veuillez consulter notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur Microsoft Defender entreprise</a>. Vos commentaires sont les bienvenus.
+>
+
 ## <a name="what-is-a-device-group"></a>Qu’est-ce qu’un groupe d’appareils ?
 
-Un groupe d’appareils est un ensemble d’appareils regroupés en raison de certains critères spécifiés, tels que la version du système d’exploitation. Les appareils qui répondent aux critères sont inclus dans ce groupe d’appareils, sauf si vous les excluez. Dans Microsoft Defender entreprise (prévisualisation), les stratégies sont appliquées aux appareils à l’aide de groupes d’appareils. 
+Un groupe d’appareils est un ensemble d’appareils regroupés en raison de certains critères spécifiés, tels que la version du système d’exploitation. Les appareils qui répondent aux critères sont inclus dans ce groupe d’appareils, sauf si vous les excluez. Dans Microsoft Defender entreprise, les stratégies sont appliquées aux appareils à l’aide de groupes d’appareils. 
 
-Defender for Business (aperçu) inclut des groupes d’appareils par défaut que vous pouvez utiliser. Les groupes d’appareils par défaut incluent tous les appareils intégrés à Defender pour Entreprise (prévisualisation). Toutefois, vous pouvez également créer des groupes d’appareils pour affecter des stratégies avec des paramètres spécifiques à certains appareils. 
+Defender pour les entreprises inclut des groupes d’appareils par défaut que vous pouvez utiliser. Les groupes d’appareils par défaut incluent tous les appareils intégrés à Defender for Business. Toutefois, vous pouvez également créer des groupes d’appareils pour affecter des stratégies avec des paramètres spécifiques à certains appareils. 
 
 Tous les groupes d’appareils, y compris vos groupes d’appareils par défaut et tous les groupes d’appareils personnalisés que vous définissez, sont stockés dans [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
 
 ## <a name="create-a-new-device-group"></a>Créer un groupe d’appareils
 
-Actuellement, dans Defender pour Entreprises (prévisualisation), vous pouvez créer un groupe d’appareils pendant que vous êtes en train de créer ou de modifier une stratégie, comme décrit dans la procédure suivante : 
+Actuellement, dans Defender pour Entreprises, vous pouvez créer un groupe d’appareils pendant que vous êtes en train de créer ou de modifier une stratégie, comme décrit dans la procédure suivante : 
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
@@ -76,7 +81,7 @@ Actuellement, dans Defender pour Entreprises (prévisualisation), vous pouvez cr
 
 10. À **l’étape Examiner votre stratégie** , examinez tous les paramètres, a apporter les modifications nécessaires, puis choisissez Créer une **stratégie ou mettre** **à jour la stratégie**.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Choisissez une ou plusieurs des tâches suivantes :
 
@@ -84,8 +89,8 @@ Choisissez une ou plusieurs des tâches suivantes :
 
 - [Créer une stratégie](mdb-create-new-policy.md)
 
-- [Afficher et gérer les incidents dans Microsoft Defender entreprise (prévisualisation)](mdb-view-manage-incidents.md)
+- [Afficher et gérer les incidents dans Microsoft Defender entreprise](mdb-view-manage-incidents.md)
 
-- [Répondre aux menaces et les atténuer dans Microsoft Defender entreprise (prévisualisation)](mdb-respond-mitigate-threats.md)
+- [Répondre aux menaces et les atténuer dans Microsoft Defender entreprise](mdb-respond-mitigate-threats.md)
 
 - [Passer en revue les actions de correction dans le centre de mise à jour](mdb-review-remediation-actions.md)

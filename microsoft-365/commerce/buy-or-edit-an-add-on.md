@@ -2,8 +2,8 @@
 title: Acheter ou gérer des modules complémentaires
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -15,18 +15,18 @@ ms.collection:
 - Adm_O365
 search.appverid: MET150
 ms.custom:
+- commerce_purchase
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_purchase
 - AdminTemplateSet
 description: Découvrez comment acheter et gérer des modules pour votre abonnement Microsoft 365 entreprise.
 ms.date: 04/02/2021
-ms.openlocfilehash: 5b7bedc12cd8e8a0813689e42723f981561eb2c1
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: ef24e1f6b743c19adc1e7f3120d76e90ebd82192
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370967"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329276"
 ---
 # <a name="buy-or-manage-add-ons"></a>Acheter ou gérer des modules complémentaires
 
@@ -35,7 +35,7 @@ De Microsoft 365 pour les entreprises ont des modules de développement que vous
 Il existe deux types d’modules :
 
 1. **Les modules add-on traditionnels** sont liés à un abonnement spécifique. Si vous annulez l’abonnement, le module add-on associé est également annulé.
-2. Les abonnements de modules **add-on autonomes** apparaissent en tant qu’abonnements distincts sur la **page** Vos produits et ont leur propre date d’expiration. Contrairement aux modules add-on traditionnels, les abonnements de modules de modules add-on autonomes ne sont pas liés à un abonnement spécifique. Vous gérez un abonnement de modules add-on autonomes de la même manière que tout autre abonnement.
+2. **Les abonnements de modules add-on autonomes** apparaissent en tant qu’abonnements distincts sur **la page Vos** produits et ont leur propre date d’expiration. Contrairement aux modules add-on traditionnels, les abonnements de modules de modules add-on autonomes ne sont pas liés à un abonnement spécifique. Vous gérez un abonnement de modules add-on autonomes de la même manière que tout autre abonnement.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -48,29 +48,29 @@ Utilisez les étapes suivantes pour rechercher et acheter des modules supplémen
 Pour plus d'informations sur les modules complémentaires d'Skype Entreprise, voir [Licences de modules complémentaires Skype Entreprise et Microsoft Teams](/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
 
 1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Acheter des services</a>.
-2. At the bottom of the **Purchase services** page, in the **Add-ons** section, find the add-on that you want to buy, and select **Details**.
-3. Dans la page des détails du produit, sélectionnez **Suivant.**
-4. Si nécessaire, remplissez d’autres informations de commande. Ces informations peuvent inclure la sélection de l’abonnement pour le module complémentaire. Lorsque vous avez terminé, sélectionnez **Check out maintenant.**
+2. En bas de la page Acheter **des services** , dans la section **Modules** , recherchez le module que vous souhaitez acheter, puis sélectionnez **Détails**.
+3. Dans la page détails du produit, sélectionnez **Suivant**.
+4. Si nécessaire, remplissez d’autres informations de commande. Ces informations peuvent inclure la sélection de l’abonnement pour le module complémentaire. Lorsque vous avez terminé, sélectionnez **Partir maintenant**.
 5. Si nécessaire, examinez les informations de commande et de tarification, puis sélectionnez **Suivant**.
-6. Choisissez un mode de paiement, ou ajoutez-en un nouveau, puis sélectionnez **Passer une** commande à La page  >  **d’accueil de l’administrateur.**
+6. Choisissez un mode de paiement, ou ajoutez-en un nouveau, puis **sélectionnez Place orderGo** >  **à Admin Home**.
 
 ## <a name="manage-an-add-on"></a>Gérer un module add-on
 
-Vous gérez un abonnement de modules add-on autonomes de la même façon que vous gérez tout autre abonnement , sur la page **De vos produits.** Par exemple, vous pouvez acheter ou supprimer des [licences,](licenses/buy-licenses.md)gérer la facturation périodique [et](subscriptions/renew-your-subscription.md)modifier ou remplacer des modes de paiement pour les [abonnements](billing-and-payments/manage-payment-methods.md) de modules add-on autonomes.
+Vous gérez un abonnement de modules add-on autonomes de la même façon que vous gérez tout autre abonnement , sur **la page De vos produits** . Par exemple, vous pouvez acheter ou supprimer des [licences](licenses/buy-licenses.md)[, gérer](subscriptions/renew-your-subscription.md) la facturation périodique et modifier ou remplacer des modes de paiement pour les [abonnements](billing-and-payments/manage-payment-methods.md) de modules add-on autonomes.
 
 Pour gérer un module add-on traditionnel, vous devez passer à l’abonnement qui le contient et y apporter des modifications. Utilisez les étapes suivantes pour gérer un module add-on traditionnel.
   
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 2. Sous **l’onglet** Produits, sélectionnez l’abonnement qui contient le module que vous souhaitez mettre à jour.
-3. Dans la page des détails de l’abonnement, la section **Modules ajoutés** répertorie les modules que vous avez achetés. Sélectionnez **Gérer les modules add-ons.**
-4. Dans le volet Gérer les modules  de gestion des modules, dans la liste de listes listes des **modules,** sélectionnez l’module que vous souhaitez modifier.
-5. Entrez une modification de quantité pour l’module add-on, puis sélectionnez **Enregistrer**.
+3. Dans la page des détails de l’abonnement, la section **Modules ajoutés** répertorie les modules que vous avez achetés. **Sélectionnez Gérer les modules add-ons**.
+4. Dans le **volet Gérer les modules** de gestion des modules, dans la liste de listes listes des modules, sélectionnez l’module que vous souhaitez modifier.
+5. Entrez une modification de quantité pour l’module, puis sélectionnez **Enregistrer**.
 
 ## <a name="remove-an-add-on"></a>Supprimer un module complémentaire
 
-Pour supprimer un abonnement de modules [](subscriptions/cancel-your-subscription.md)add-on autonomes, vous annulez l’abonnement, comme tout autre abonnement. Vous pouvez également désactiver [la facturation périodique.](subscriptions/renew-your-subscription.md)
+Pour supprimer un abonnement de modules add-on autonomes, vous annulez l’abonnement [, comme](subscriptions/cancel-your-subscription.md) tout autre abonnement. Vous pouvez également désactiver [la facturation périodique](subscriptions/renew-your-subscription.md).
 
-Vous ne pouvez pas supprimer un module add-on traditionnel. Si vous souhaitez supprimer un module add-on traditionnel, contactez le support technique pour obtenir de l’aide ([Obtenez de l’aide.](../admin/get-help-support.md)
+Vous ne pouvez pas supprimer un module add-on traditionnel. Si vous souhaitez supprimer un module add-on traditionnel, contactez le support technique pour obtenir de [l’aide (obtenir de l’aide](../admin/get-help-support.md).
   
 ## <a name="related-content"></a>Contenu associé
 

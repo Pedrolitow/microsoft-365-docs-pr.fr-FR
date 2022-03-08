@@ -2,8 +2,8 @@
 title: Analyse du courrier électronique dans les enquêtes pour Microsoft Defender pour Office 365
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 93855320f21d537fdd03e81424b6105575f37485
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 5737a2d1974805dc55b85b7ff8f4117cbc1da898
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121206"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318184"
 ---
 # <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a>Analyse du courrier électronique dans les enquêtes pour Microsoft Defender pour Office 365
 
@@ -34,9 +34,9 @@ ms.locfileid: "61121206"
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Lors de l’examen automatisé des alertes, Microsoft Defender pour Office 365 analyse le courrier électronique d’origine pour identifier les menaces et identifie les autres messages électroniques liés à l’e-mail d’origine et potentiellement faisant partie d’une attaque. Cette analyse est importante, car les attaques de courrier électronique se composent rarement d’un seul e-mail.
+Pendant l’examen automatisé des alertes, Microsoft Defender pour Office 365 analyse le courrier électronique d’origine pour identifier les menaces et identifie les autres messages électroniques liés à l’e-mail d’origine et potentiellement faisant partie d’une attaque. Cette analyse est importante, car les attaques de courrier électronique se composent rarement d’un seul e-mail.
 
 L’analyse de messagerie de l’examen automatisé identifie les clusters de messagerie à l’aide des attributs de l’e-mail d’origine pour interroger les messages électroniques envoyés et reçus par votre organisation. Cela est similaire à ce qu’un analyste d’opérations de sécurité recherche les e-mails associés dans l’Explorateur ou la recherche avancée. Plusieurs requêtes sont utilisées pour identifier les e-mails correspondants, car les attaquants morphiquent généralement les paramètres de messagerie pour éviter la détection de sécurité. L’analyse de clustering effectue ces vérifications pour déterminer comment gérer les e-mails impliqués dans l’examen :
 
@@ -78,8 +78,8 @@ Les preuves basées sur un e-mail dans **l’onglet** Preuve et réponse pour un
 
 À partir des callouts numéroées dans la figure :
 
-1. Vous pouvez effectuer des actions de correction, en plus du centre **de correction.**
-2. Vous pouvez prendre des mesures correctives pour les clusters de messagerie avec **un** verdict malveillant (mais pas **suspect).**
+1. Vous pouvez effectuer des actions de correction, en plus du centre **de correction**.
+2. Vous pouvez prendre des mesures correctives pour les clusters de messagerie **avec un verdict** malveillant (mais pas **suspect**).
 3. Pour le verdict de courrier indésirable, le hameçonnage est divisé en hameçonnage normal et à niveau de confiance élevé.
 
    Pour un verdict malveillant, les catégories de menaces sont les programmes malveillants, le hameçonnage à haut niveau de confiance, l’URL malveillante et le fichier malveillant.
@@ -95,6 +95,6 @@ Pour les clusters de messagerie ou de messagerie dans l’onglet **Entités** d�
 
 Dans cet exemple, le courrier électronique est malveillant, mais pas dans une boîte aux lettres.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Afficher les actions de correction en attente ou terminées](air-review-approve-pending-completed-actions.md)

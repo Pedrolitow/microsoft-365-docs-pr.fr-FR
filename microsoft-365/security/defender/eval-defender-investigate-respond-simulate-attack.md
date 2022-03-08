@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -22,12 +22,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a3e1543ed56580983fec5b7eee6366e817d82079
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 3712875579c7d157fe52a5e115d059fc88b4b6d7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62904158"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326494"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Exécuter une simulation d’attaque dans Microsoft 365 Defender environnement pilote
 
@@ -44,19 +44,19 @@ Les services et applications Microsoft 365 créent des alertes lorsqu’ils dét
 >Si vous débutez avec l’analyse de la sécurité et la réponse aux incidents, consultez la procédure pas à pas Répondre à votre premier [incident](first-incident-overview.md) pour obtenir une visite guidée d’un processus classique d’analyse, de correction et de révision post-incident.
 >
 
-## <a name="simulate-attacks-with-the-microsoft-365-defender-portal"></a>Simuler des attaques avec le portail Microsoft 365 Defender client
+## <a name="simulate-attacks-with-the-microsoft-365-defender-portal"></a>Simuler des attaques à l’Microsoft 365 Defender web
 
-Le Microsoft 365 Defender web dispose de fonctionnalités intégrées pour créer des attaques simulées sur votre environnement pilote :
+Le portail Microsoft 365 Defender dispose de fonctionnalités intégrées pour créer des attaques simulées sur votre environnement pilote :
 
 - Formation à la simulation d’attaques Microsoft 365 Defender pour Office 365 à [https://security.microsoft.com/attacksimulator](https://security.microsoft.com/attacksimulator).
   
-  Dans le portail Microsoft 365 Defender, sélectionnez **e-mail & collaboration > formation à la simulation d’attaques**.
+  Dans le portail Microsoft 365 Defender, sélectionnez **Email & collaboration > attack simulation training**.
 
 - Didacticiels d& des simulations pour Microsoft 365 Defender point de terminaison à [https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations).
 
   Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a> sélectionnez Points de **terminaison > didacticiels & simulations**.
 
-### <a name="defender-for-office-365-attack-simulation-training"></a>Formation à la simulation d Office 365 Defender for Office 365
+### <a name="defender-for-office-365-attack-simulation-training"></a>Formation à la simulation d Office 365 Defender for Office 365 Attack
 
 Defender for Office 365 with Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 inclut une formation sur la simulation d’attaques pour les attaques par hameçonnage. Les étapes de base sont les suivantes :
 
@@ -277,7 +277,7 @@ Sélectionnez **l’onglet** Chronologie pour ouvrir la chronologie de l’appar
 
 Le développement de certains des comportements les plus intéressants fournit des détails utiles, tels que les arbre de processus.
 
-Par exemple, faites défiler vers le bas jusqu’à ce que vous trouviez **l’événement d’alerte que l’injection de processus suspect a observé**. Sélectionnez lepowershell.exe injecté dans lnotepad.exe **de processus** inférieur, pour afficher l’arborescence de processus complète de ce comportement sous le graphique **Entités** d’événements dans le volet latéral. Utilisez la barre de recherche pour le filtrage si nécessaire.
+Par exemple, faites défiler vers le bas jusqu’à ce que vous trouviez **l’événement d’alerte que l’injection de processus suspect a observé**. Sélectionnez lepowershell.exe injecté dans l'notepad.exe **de** processus sous celui-ci, pour afficher l’arborescence de processus complète de ce comportement sous le graphique **Entités** d’événements dans le volet latéral. Utilisez la barre de recherche pour le filtrage si nécessaire.
 
 ![Exemple d’arborescence de processus pour le comportement de création de fichier PowerShell sélectionné.](../../media/mtp/fig12.png)
 
@@ -332,8 +332,8 @@ Cela termine les simulations d’attaques pour l’analyse des incidents, l’ex
 
 [![Essayez d Microsoft 365 Defender fonctionnalités de réponse aux incidents.](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step2.png)](eval-defender-investigate-respond-additional.md)
 
-Étape 2 sur 2 : Essayez [d’Microsoft 365 Defender fonctionnalités de réponse aux incidents](eval-defender-investigate-respond-additional.md)
+Étape 2 sur 2 : Essayez [d’Microsoft 365 Defender de réponse aux incidents](eval-defender-investigate-respond-additional.md)
 
 ### <a name="navigation-you-may-need"></a>Navigation dont vous aurez peut-être besoin
 
-[Créer l’Microsoft 365 Defender d’évaluation de la sécurité](eval-create-eval-environment.md)
+[Créer l’environnement d Microsoft 365 Defender évaluation de la sécurité](eval-create-eval-environment.md)

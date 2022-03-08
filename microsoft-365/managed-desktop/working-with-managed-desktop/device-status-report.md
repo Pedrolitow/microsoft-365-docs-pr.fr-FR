@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 14c83d007d2506e0e85c156f4d738f78f91fad75
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: be685d39bbda3b96f689c13a3bc3485c011f1ec8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321026"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319878"
 ---
 # <a name="device-status-report"></a>Rapport d’état de l’appareil
 
@@ -42,4 +42,4 @@ Nous signalons l’état de l’appareil à l’aide des étiquettes suivantes :
 | Actif | Appareils en cours d’utilisation. <ul><li>Ils ont satisfait aux critères d’activité (six heures, deux en continu) pour la dernière version de mise à jour de sécurité.</li> <li>Ils ont vérifié avec Microsoft Intune au moins une fois au cours des cinq derniers jours.</li></ul> |
 | Synchronisé | Appareils utilisés et qui ont été enregistrés avec Intune au cours des 28 derniers jours.
 | Synchronisation non synchronisée | Appareils en cours d’utilisation, mais qui n’ont pas été enregistrés avec Intune au cours des 28 derniers jours. |
-| Other | L’étiquette regroupe plusieurs états d’erreur qui peuvent se produire, généralement lors de l’inscription de l’appareil. Pour plus d’informations, voir [Troubleshooting device registration](../get-started/register-devices-self.md#troubleshooting-device-registration). |
+| Autre | L’étiquette regroupe plusieurs états d’erreur qui peuvent se produire, généralement lors de l’inscription de l’appareil. Pour plus d’informations, voir [Troubleshooting device registration](../get-started/manual-registration.md#troubleshooting-device-registration). |

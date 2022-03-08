@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment ces recommandations de sécurité pour Microsoft 365 Business Premium vos utilisateurs et protège vos données.
-ms.openlocfilehash: 3404422345e682542762029aecd048cf22cc9e9b
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: cf0af6aab22c4a025a0c6b907fc3cade397d0dcc
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767855"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328468"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>Impact de ces recommandations de sécurité sur vos utilisateurs
 
@@ -45,13 +45,13 @@ Tous les utilisateurs doivent connaître et utiliser ces pratiques de messagerie
 - Vérifiez les e-mails légitimes et recherchez les conseils de sécurité du hameçonnage avancé dans Defender pour Office 365 Protection.
 - Ouvrez uniquement les pièces jointes et liens sécurisés, comme vérifié Coffre liens et Coffre pièces jointes.
 
-En savoir plus sur [l’authentification multifacteur](m365-campaigns-multifactor-authentication.md) , [le hameçonnage et d’autres attaques](m365-campaigns-phishing-and-attacks.md).
+En savoir plus sur [l’authentification multifacteur](m365bp-multifactor-authentication.md) , [le hameçonnage et d’autres attaques](m365-campaigns-phishing-and-attacks.md).
 
 Téléchargez [une infographie](m365-campaigns-protect-campaign-infographic.md) avec des conseils pour vous et les membres de votre équipe.
 
 ## <a name="set-up-iphones-and-android-devices"></a>Configurer des appareils iPhone et Android
 
-Tous les utilisateurs que vous ajoutez à votre environnement devront prendre quelques minutes pour configurer les [appareils iPhone et Android](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) pour qu’ils fonctionnent en toute sécurité :
+Tous les utilisateurs que vous ajoutez à votre environnement devront prendre quelques minutes pour configurer les [appareils iPhone et Android](../business/set-up-mobile-devices.md) pour qu’ils fonctionnent en toute sécurité :
 
 - Configurer des appareils pour utiliser l’authentification multifacteur avec l’application d’authentification.
 - Utilisez les applications mobiles Microsoft, notamment Outlook Mobile, Word, OneDrive et d’autres applications Microsoft de l’App Store. Les applications de messagerie natives incluses sur les appareils iPhone et Android ne sont pas pris en charge. 
@@ -63,10 +63,10 @@ Une fois ces paramètres mis en place, vos utilisateurs sont invités à utilise
 
 Il est également important que les utilisateurs conservent leur périphérique de travail principal à jour :
 
-- Installez les dernières versions de Office applications de bureau et gardez-les à jour avec les mises à jour, lorsque vous y être invité.
+- Installez les dernières versions de Office applications de bureau et conservez-les à jour avec les mises à jour, lorsque vous y être invité.
 - Restez informé des mises à jour du système d’exploitation, telles que Windows mises à jour.
 
-Pour [les appareils Windows 10 mac](m365-campaigns-protect-pcs-macs.md) non Windows 10, les utilisateurs ont la responsabilité de s’assurer que les fonctionnalités de sécurité de base sont activées.
+Pour [les appareils Windows 10 mac](m365bp-protect-pcs-macs.md) non Windows 10, les utilisateurs ont la responsabilité de s’assurer que les fonctionnalités de sécurité de base sont activées.
 
 **Activer les fonctionnalités de sécurité de base sur les appareils BYOD Windows 10 et Mac**
 
@@ -78,7 +78,7 @@ Pour en savoir plus sur ces recommandations, voir Protéger votre compte et vos 
 
 ## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>Collaborer à l’aide Microsoft Teams, OneDrive, SharePoint Online et d’autres outils
 
-Vos utilisateurs peuvent être tentés de partager et de stocker des fichiers de votre organisation à des endroits autres que Microsoft 365. Microsoft 365 facilite autant que possible la collaboration et le partage en toute sécurité. Vous pouvez [partager des fichiers et](share-files-and-videos.md) des vidéos directement à partir Microsoft Teams, OneDrive, Stream et même à partir d’un fichier. Le partage à partir de ces outils permet d’éviter la fuite de vos données. Vous pouvez ajouter une protection supplémentaire aux données sensibles pour empêcher le partage à l’extérieur de votre organisation.
+Vos utilisateurs peuvent être tentés de partager et de stocker les fichiers de votre organisation à des endroits autres que Microsoft 365. Microsoft 365 facilite autant que possible la collaboration et le partage en toute sécurité. Vous pouvez [partager des fichiers et des](share-files-and-videos.md) vidéos directement à partir Microsoft Teams, OneDrive, Stream et même à partir d’un fichier. Le partage à partir de ces outils permet d’éviter la fuite de vos données. Vous pouvez ajouter une protection supplémentaire aux données sensibles pour empêcher le partage à l’extérieur de votre organisation.
 
 ## <a name="set-up-managed-windows-10-devices"></a>Configurer des appareils Windows 10 gérés
 

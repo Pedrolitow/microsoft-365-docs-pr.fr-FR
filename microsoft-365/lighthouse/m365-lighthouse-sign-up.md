@@ -16,47 +16,46 @@ ms.custom:
 - M365-Lighthouse
 - intro-get-started
 search.appverid: MET150
-description: Pour les fournisseurs de services gérés (MSP), découvrez comment s’inscrire à Microsoft 365 Lighthouse.
-ms.openlocfilehash: 7eceb0ee205e7de99a7943ba05e6c07f66bd491e
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+description: Pour les fournisseurs de services gérés, découvrez comment vous inscrire à Microsoft 365 Lighthouse.
+ms.openlocfilehash: 2607a131908a06ec4b7072cbf718739e1db00ad7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61641596"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326956"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>S’inscrire à Microsoft 365 Lighthouse
 
-> [!NOTE]
-> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences.](m365-lighthouse-requirements.md) Si votre organisation n’a pas Microsoft 365 Lighthouse, suivez les instructions de cet article pour vous inscrire.
+Cet article fournit des instructions sur la façon de s’inscrire à Microsoft 365 Lighthouse. Microsoft 365 Lighthouse est un portail d’administration qui permet aux fournisseurs de services gérés (MSP) de sécuriser et de gérer les appareils, les données et les utilisateurs à grande échelle pour les petites et moyennes entreprises qui utilisent Microsoft 365 Business Premium ou Microsoft 365 E3. 
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Microsoft 365 Lighthouse est déployé dans le client partenaire uniquement pas dans les locataires du client, mais assurez-vous que vous et vos clients respectez les exigences répertoriées dans Microsoft 365 Lighthouse &mdash; [client.](m365-lighthouse-requirements.md)
+- &mdash;Microsoft 365 Lighthouse est déployé dans le client partenaire uniquement dans les locataires du client, mais assurez-vous que vous et vos clients respectez les exigences répertoriées dans les Microsoft 365 Lighthouse [client](m365-lighthouse-requirements.md).
 
-- Vous devez être administrateur général dans le client partenaire que vous êtes en train de vous inscrire.
+- Vous devez être administrateur général dans le client partenaire à qui vous vous êtes déjà signé.
 
 ## <a name="steps-to-sign-up-for-microsoft-365-lighthouse"></a>Étapes de l’inscription à Microsoft 365 Lighthouse
 
-1. Go to the Centre d'administration Microsoft 365 at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and log in using your partner tenant credentials. 
+1. Go to the Centre d'administration Microsoft 365 at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and sign in using your partner tenant credentials. 
 
-1. Go to **Billing**  >  **Purchase Services** Other  >  **Services**.
+1. Go to **BillingPurchase** >  **ServicesOther** >  Services.
 
-    Si Microsoft 365 Lighthouse n’est pas dans la liste des services, sélectionnez **Voir tous les autres produits de services.**
+    Si Microsoft 365 Lighthouse ne figure pas dans la liste des services, **sélectionnez Voir tous les autres produits de services**.
 
     Si vous rencontrez la page d’erreur Acheter des services, sélectionnez **Afficher** les produits en bas de la page.
 
-1. Sous **Microsoft 365 Lighthouse prévisualisation publique pour** les partenaires, sélectionnez **Détails.** 
+1. Sous **Microsoft 365 Lighthouse**, sélectionnez **Détails**. 
 
-1. Sélectionnez **Acheter**.
+1. **Sélectionnez Acheter**.
 
     > [!NOTE]
     > Le permis de conduire nécessite une licence pour le client partenaire uniquement. Aucune licence par utilisateur supplémentaire n’est requise pour le partenaire et aucune licence n’est requise dans un client. 
 
     Pour vérifier que Le Domaine a bien été ajouté à votre client, recherchez les Microsoft 365 Lighthouse sous **Facturation > vos** produits dans le Centre d'administration Microsoft 365.
 
-1. Si vous n’êtes pas redirigé vers le portail de Lattérique, allez sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a> .
+1. Si vous n’êtes pas redirigé vers le portail de Lattérique, allez sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a>.
 
-1. Sélectionnez **Accepter & continuer à** terminer la modification de l’accord de partenaire.
+1. **Sélectionnez Accepter & continuer à** terminer la modification de l’accord de partenaire.
 
     > [!NOTE]
     > Une fois l’inscription terminée, l’affichage des données client dans le Dossier peut prendre jusqu’à 48 heures.

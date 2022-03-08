@@ -1,13 +1,13 @@
 ---
-title: Gérer les appareils dans Microsoft Defender pour Entreprises (prévisualisation)
-description: Découvrez comment gérer les appareils dans Microsoft Defender entreprise (prévisualisation)
+title: Gérer les appareils dans Microsoft Defender pour les entreprises
+description: Découvrez comment gérer les appareils dans Microsoft Defender entreprise
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 02/14/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,26 +17,29 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 498fa3824ec1e022cbf0abcb0c7789e5e236262e
-ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
+ms.openlocfilehash: e0c564fda55393d9f60bd79081a309bde1e87f02
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62879191"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329346"
 ---
-# <a name="manage-devices-in-microsoft-defender-for-business-preview"></a>Gérer les appareils dans Microsoft Defender pour Entreprises (prévisualisation)
+# <a name="manage-devices-in-microsoft-defender-for-business"></a>Gérer les appareils dans Microsoft Defender pour les entreprises
 
 > [!IMPORTANT]
-> Microsoft Defender pour Entreprise est désormais en prévisualisation et sera progressivement mis en place pour les clients [](https://aka.ms/mdb-preview) et les partenaires qui s’y connectent pour le demander. Nous intégrerons un ensemble initial de clients et de partenaires dans les prochaines semaines et développerons la prévisualisation jusqu’à la disponibilité générale. Notez que la prévisualisation sera lancée avec un [ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et que nous ajouterons régulièrement des fonctionnalités.
+> Microsoft Defender for Business est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. La [prévisualisation inclut un ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et nous ajouterons régulièrement des fonctionnalités.
 > 
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
-Dans Microsoft Defender entreprise (prévisualisation), vous pouvez gérer les appareils comme suit :
+Dans Microsoft Defender entreprise, vous pouvez gérer les appareils comme suit :
 
 - [Afficher la liste des appareils intégrés pour](#view-the-list-of-onboarded-devices) voir leur niveau de risque, leur niveau d’exposition et leur état d’état d’état
+
 - [Prendre des mesures sur un appareil qui présente](#take-action-on-a-device-that-has-threat-detections) des détections de menaces
-- [Intégrer un appareil à Defender for Business (prévisualisation)](#onboard-a-device)  
-- [Hors-carte d’un appareil de Defender for Business (prévisualisation)](#offboard-a-device)
+
+- [Intégrer un appareil à Defender for Business](#onboard-a-device)  
+
+- [Hors-carte d’un appareil de Defender for Business](#offboard-a-device)
 
 >
 > **Avez-vous un peu de temps ?**
@@ -53,7 +56,7 @@ Dans Microsoft Defender entreprise (prévisualisation), vous pouvez gérer les a
 
 3. Sélectionnez un appareil pour ouvrir son panneau volant, où vous pouvez en savoir plus sur son état et prendre des mesures. 
 
-   Si vous n’avez pas encore répertorié d’appareils, intégrer des appareils [à Microsoft Defender pour Entreprises (prévisualisation)](mdb-onboard-devices.md)
+   Si vous n’avez pas encore répertorié d’appareils, intégrer des appareils [à Microsoft Defender pour Entreprises](mdb-onboard-devices.md)
 
 ## <a name="take-action-on-a-device-that-has-threat-detections"></a>Prendre des mesures sur un appareil qui présente des détections de menaces
 
@@ -69,17 +72,17 @@ Dans Microsoft Defender entreprise (prévisualisation), vous pouvez gérer les a
 
 ## <a name="onboard-a-device"></a>Intégrer un appareil
 
-Voir [Appareils intégrés à Microsoft Defender pour Entreprises (prévisualisation).](mdb-onboard-devices.md)
+[Consultez Les appareils intégrés à Microsoft Defender pour Entreprises](mdb-onboard-devices.md).
 
 ## <a name="offboard-a-device"></a>Hors-carte d’un appareil
 
 Voir [Laboarding d’un appareil](mdb-onboard-devices.md#offboarding-a-device).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
-- [Afficher et gérer les incidents dans Microsoft Defender entreprise (prévisualisation)](mdb-view-manage-incidents.md)
+- [Afficher et gérer les incidents dans Microsoft Defender entreprise](mdb-view-manage-incidents.md)
 
-- [Répondre aux menaces et les atténuer dans Microsoft Defender entreprise (prévisualisation)](mdb-respond-mitigate-threats.md)
+- [Répondre aux menaces et les atténuer dans Microsoft Defender entreprise](mdb-respond-mitigate-threats.md)
 
 - [Passer en revue les actions de correction dans le centre de mise à jour](mdb-review-remediation-actions.md)
 

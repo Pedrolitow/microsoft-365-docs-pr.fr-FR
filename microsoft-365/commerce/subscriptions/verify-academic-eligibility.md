@@ -3,10 +3,10 @@ title: Vérifier l’éligibilité scolaire pour Microsoft 365 Éducation abonne
 f1.keywords:
 - CSH
 - FWLink-2135711
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: pablom
+ms.reviewer: pablom, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +15,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_subscriptions
+- AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid: MET150
-description: Découvrez comment vérifier l’éligibilité de votre établissement scolaire Microsoft 365 Éducation tarifs scolaires.
+description: Découvrez comment vérifier l’éligibilité de votre établissement Microsoft 365 Éducation tarifs scolaires.
 ms.date: 07/21/2020
-ms.openlocfilehash: 9b97487c7f1fdc9ccfb0858cd49036dcb43d7f5e
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 178413d79147a388454061fea53901178eec5557
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321134"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328958"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Vérifier l’éligibilité scolaire pour Microsoft 365 Éducation abonnements
 
@@ -71,7 +71,7 @@ Une fois que vous avez Microsoft 365 Éducation d’essai, vous pouvez vérifier
 
 Une fois l’éligibilité de votre établissement scolaire vérifiée, vous pouvez acheter des abonnements au prix scolaire. Vous pouvez également [convertir votre version d’essai gratuite en abonnement payant](../try-or-buy-microsoft-365.md). Si vous souhaitez convertir votre abonnement d’essai, vous devez le faire avant la fin de la période d’essai.
 
-1. Dans la Centre d'administration Microsoft 365, allez à la page **Des services d’achat** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">de facturation</a>.
+1. Dans la Centre d'administration Microsoft 365, allez à la page Des services **d’achat** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">de facturation</a>.
 2. Pour afficher les offres éducation, sélectionnez **l’onglet** Éducation.
 
     > [!NOTE]
@@ -95,11 +95,11 @@ Si votre établissement scolaire n’est pas éligible en tant qu’établisseme
 
 Si vous avez des questions sur la décision d’éligibilité scolaire de votre établissement scolaire, [contactez le support technique](../../admin/get-help-support.md).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Pour découvrir comment déployer des Microsoft 365 pour votre établissement scolaire, consultez [Microsoft 365 Éducation documentation et ressources.](/microsoft-365/education/deploy/) Ensuite, vous pouvez [ajouter des utilisateurs et attribuer des licences en même temps](../../admin/add-users/add-users.md). Si nécessaire, vous pouvez également acheter [d’autres licences pour votre abonnement](../licenses/buy-licenses.md).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Microsoft 365 Éducation documentation pour les administrateurs informatiques](/education/itadmins) (liens d’article)\
 [Microsoft Teams pour l'éducation](https://microsoft.com/education/products/teams/default.aspx) (page produit)\

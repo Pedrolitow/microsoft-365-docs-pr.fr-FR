@@ -13,14 +13,14 @@ ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.technology: mde
-ms.collection: m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 996a96f957d7446b0b951d4f1b3a34c822f64f49
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 85e2da73fd54bd4d24e5ab8c4d104e33b5b4d877
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806659"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326116"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Évaluer l’accès contrôlé aux dossiers
 
@@ -43,7 +43,7 @@ Cet article vous aide à évaluer l’accès contrôlé aux dossiers. Il expliqu
 > Vous pouvez également consulter le site web du scénario de démonstration microsoft Defender pour point de terminaison [sur demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que la fonctionnalité fonctionne et voir comment elle fonctionne.
 
 > [!NOTE]
-> Le site de démonstration Defender for Endpoint demo.wd.microsoft.com est supprimé et sera supprimé à l’avenir.
+> Le site de démonstration Defender pour point de terminaison sur demo.wd.microsoft.com est déconseillé et sera supprimé à l’avenir.
 
 ## <a name="use-audit-mode-to-measure-impact"></a>Utiliser le mode audit pour mesurer l’impact
 
@@ -57,11 +57,11 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 > [!TIP]
 > Si vous souhaitez auditer entièrement le fonctionnement de l’accès contrôlé aux dossiers dans votre organisation, vous devez utiliser un outil de gestion pour déployer ce paramètre sur les appareils de votre réseau.
-Vous pouvez également utiliser une stratégie de groupe, Intune, la gestion des périphériques mobiles (MDM) ou des Microsoft Endpoint Manager pour configurer et déployer le paramètre, comme décrit dans la rubrique principale d’accès contrôlé aux [dossiers](controlled-folders.md).
+Vous pouvez également utiliser une stratégie de groupe, Intune, la gestion des périphériques mobiles (MDM) ou des Microsoft Endpoint Manager pour configurer et déployer le paramètre, comme décrit dans la rubrique principale sur l’accès contrôlé aux [dossiers](controlled-folders.md).
 
 ## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Passer en revue les événements d’accès contrôlé aux dossiers dans Windows’observateur d’événements
 
-Les événements d’accès contrôlé aux dossiers suivants apparaissent dans Windows’Observateur d’événements sous Microsoft/Windows/Windows Defender/Opérationnel.
+Les événements d’accès contrôlé aux dossiers suivants apparaissent dans Windows’observateur d’événements sous Microsoft/Windows/Windows Defender/Opérationnel.
 
 ID d’événement | Description
 -|-

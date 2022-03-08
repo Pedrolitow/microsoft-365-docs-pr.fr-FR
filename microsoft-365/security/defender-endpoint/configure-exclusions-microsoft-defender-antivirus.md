@@ -14,15 +14,13 @@ manager: dansimp
 ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
-ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
-ms.openlocfilehash: 5a26951535b6e2197d8ada45b2108e62f15fda03
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 6ef9cfcec1c54cf9754d7152c098d7ef5b67b456
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245146"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330550"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Configurer et valider des exclusions pour Antivirus Microsoft Defender analyses
 
@@ -31,15 +29,15 @@ ms.locfileid: "62245146"
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
-Vous pouvez exclure certains fichiers, dossiers, processus et fichiers ouverts par le processus de Antivirus Microsoft Defender analyses. Ces exclusions s’appliquent [aux analyses programmées,](scheduled-catch-up-scans-microsoft-defender-antivirus.md)aux analyses à la demande [et](run-scan-microsoft-defender-antivirus.md)à la protection et à la surveillance en temps réel toujours en [temps réel.](configure-real-time-protection-microsoft-defender-antivirus.md) Les exclusions pour les fichiers ouverts par le processus s’appliquent uniquement à la protection en temps réel.
+Vous pouvez exclure certains fichiers, dossiers, processus et fichiers ouverts par processus de Antivirus Microsoft Defender analyses. Ces exclusions s’appliquent [aux analyses programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)[, aux](run-scan-microsoft-defender-antivirus.md) analyses à la demande et à la protection et à la [surveillance en temps réel toujours en temps réel](configure-real-time-protection-microsoft-defender-antivirus.md). Les exclusions pour les fichiers ouverts par le processus s’appliquent uniquement à la protection en temps réel.
 
 ## <a name="configure-and-validate-exclusions"></a>Configurer et valider des exclusions
 
 Pour configurer et valider des exclusions, consultez les procédures suivantes :
 
-- [Configurez et validez les exclusions en fonction du nom de fichier, de l’extension et de l’emplacement du dossier.](configure-extension-file-exclusions-microsoft-defender-antivirus.md) Vous pouvez exclure des fichiers des Antivirus Microsoft Defender en fonction de leur extension de fichier, de leur nom de fichier ou de leur emplacement.
+- [Configurez et validez les exclusions en fonction du nom de fichier, de l’extension et de l’emplacement du dossier](configure-extension-file-exclusions-microsoft-defender-antivirus.md). Vous pouvez exclure des fichiers des Antivirus Microsoft Defender en fonction de leur extension de fichier, de leur nom de fichier ou de leur emplacement.
 
-- [Configurez et validez les exclusions pour les fichiers ouverts par des processus.](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md) Vous pouvez exclure des fichiers des analyses qui ont été ouvertes par un processus spécifique.
+- [Configurez et validez les exclusions pour les fichiers ouverts par des processus](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md). Vous pouvez exclure des fichiers des analyses qui ont été ouvertes par un processus spécifique.
 
 ## <a name="recommendations-for-defining-exclusions"></a>Recommandations définition des exclusions
 

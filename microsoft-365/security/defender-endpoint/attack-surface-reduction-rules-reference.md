@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: f6672bfe090458de9ffecae77b656b6f4a8a912d
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.openlocfilehash: 5ffbe15fe9fa06e7c06546f9452d6c4f2bddfc39
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62825480"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329612"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Référence des règles de réduction de la surface d’attaque
 
@@ -50,7 +50,7 @@ Cet article fournit des informations sur les règles de réduction des attaques 
 Le tableau suivant répertorie les systèmes d’exploitation pris en charge pour les règles de réduction de la surface d’attaque qui sont actuellement des produits de préparation. Les règles sont répertoriées par ordre alphabétique. Sauf indication contraire, la version Windows&nbsp; 10 minimale est la version 1709 (RS3, build 16299) ou ultérieure ; la version minimale de Windows&nbsp; Server est la version 1809 ou ultérieure.
 
 > [!NOTE]
-> Les règles de réduction de la surface d’attaque dans Windows&nbsp; Server2012R2&nbsp;&nbsp; et Windows Server2016&nbsp; sont disponibles pour les appareils intégrés à l’aide du package de solution unifiée&nbsp; moderne. Pour plus d’informations, voir Nouvelle fonctionnalité dans [la solution unifiée moderne pour Windows Server 2012 R2 et 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
+> Les règles de réduction de la surface d’attaque dans Windows&nbsp; Server2012R2&nbsp;&nbsp; et Windows&nbsp; Server2016&nbsp; sont disponibles pour les appareils intégrés à l’aide du package de solution unifiée moderne. Pour plus d’informations, voir Nouvelle fonctionnalité dans [la solution unifiée moderne pour Windows Server 2012 R2 et 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 >
 
 | Nom de la règle | &nbsp;Windows Server 2016 <sup>[[1](#fn1)]<sup></sup> | &nbsp;Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup> |
@@ -62,14 +62,14 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 |[Bloquer le contenu exécutable du client de messagerie et de la messagerie web](#block-executable-content-from-email-client-and-webmail) | v | v |
 |[Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste de confiance](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | v | v |
 |[Bloquer l’exécution de scripts potentiellement obscurcis](#block-execution-of-potentially-obfuscated-scripts) | v | v |
-|[Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | v | N |
+|[Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | N | N |
 |[Empêcher Office applications de créer du contenu exécutable](#block-office-applications-from-creating-executable-content) | v | v |
 |[Empêcher Office applications d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes)  | v | v |
 |[Empêcher Office application de communication de créer des processus enfants](#block-office-communication-application-from-creating-child-processes) | v | v |
 |[Bloquer la persistance via un abonnement à des événements](#block-persistence-through-wmi-event-subscription) \* WMI _Exclusions de fichiers et de dossiers non pris en charge._ | N | N |
 |[Bloquer les créations de processus provenant de commandes PSExec et WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | v | v |
 |[Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v | v |
-|[Bloquer les appels d’API Win32 à partir Office macros](#block-win32-api-calls-from-office-macros) | N | N |
+|[Bloquer les appels d’API Win32 à Office macros](#block-win32-api-calls-from-office-macros) | N | N |
 |[Utiliser la protection avancée contre les ransomware](#use-advanced-protection-against-ransomware) | v | v |
 |  |  |  |
 
@@ -102,7 +102,7 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 |[Bloquer la persistance via un abonnement à des événements WMI](#block-persistence-through-wmi-event-subscription) <br><br> \*_Exclusions de fichiers et de dossiers non pris en charge._ | Y version 1903 (build 18362) ou version ultérieure| v | v <br><br> version 1903 (build 18362) ou version ultérieure |
 |[Bloquer les créations de processus provenant de commandes PSExec et WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y version 1803 ou ultérieure | v <br><br> | v <br><br>  |
 |[Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v | v <br><br> | v <br><br> |
-|[Bloquer les appels d’API Win32 à partir Office macros](#block-win32-api-calls-from-office-macros) | v | v <br><br> | v <br><br> |
+|[Bloquer les appels d’API Win32 à Office macros](#block-win32-api-calls-from-office-macros) | v | v <br><br> | v <br><br> |
 |[Utiliser la protection avancée contre les ransomware](#use-advanced-protection-against-ransomware) | Y version 1803 ou ultérieure | v <br><br> | v <br><br> |
 |  |  |  |  |
 
@@ -126,7 +126,7 @@ Les liens vers des informations sur les versions du système de gestion de la co
 |[Bloquer la persistance via un abonnement à des événements WMI](#block-persistence-through-wmi-event-subscription) |  |  |  |v   | v  |
 |[Bloquer les créations de processus provenant de commandes PSExec et WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | v |   |   |  v | v  |
 |[Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v |   |v <br><br> CB 1802  | v  | v  |
-|[Bloquer les appels d’API Win32 à partir Office macros](#block-win32-api-calls-from-office-macros) | v |   | v <br><br> CB 1710  | v  |  v |
+|[Bloquer les appels d’API Win32 à Office macros](#block-win32-api-calls-from-office-macros) | v |   | v <br><br> CB 1710  | v  |  v |
 |[Utiliser la protection avancée contre les ransomware](#use-advanced-protection-against-ransomware) | v |   | v <br><br> CB 1802 | v  | v  |
 |  |  |  |  |  |  |
 
@@ -163,7 +163,7 @@ Pour les règles dont l'« état de règle » est spécifié :
 |[Bloquer la persistance via un abonnement à des événements WMI](#block-persistence-through-wmi-event-subscription) |  AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé  | N \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé |
 |[Bloquer les créations de processus provenant de commandes PSExec et WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) |   | N | v |
 |[Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé  | N \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé |
-|[Bloquer les appels d’API Win32 à partir Office macros](#block-win32-api-calls-from-office-macros) |   | N | v |
+|[Bloquer les appels d’API Win32 à Office macros](#block-win32-api-calls-from-office-macros) |   | N | v |
 |[Utiliser la protection avancée contre les ransomware](#use-advanced-protection-against-ransomware) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé  | N \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé |
 |   |   |   |   |
   
@@ -265,7 +265,7 @@ LSASS authentifier les utilisateurs qui se connectent sur Windows ordinateur. Mi
 > Dans certaines applications, le code éumène tous les processus en cours d’exécution et tente de les ouvrir avec des autorisations exhaustives. Cette règle refuse l’action d’ouverture du processus de l’application et enregistre les détails dans le journal des événements de sécurité. Cette règle peut générer beaucoup de bruit. Si vous disposez d’une application qui é énumére simplement LSASS, mais n’a aucun impact réel sur les fonctionnalités, il n’est pas nécessaire de l’ajouter à la liste d’exclusions. En soi, cette entrée du journal des événements n’indique pas nécessairement une menace malveillante.
   
 > [!IMPORTANT]
-> L’état par défaut de la règle de réduction de la surface d’attaque (ASR) « Bloquer le vol d’informations d’identification du sous-système de l’autorité de sécurité  locale (Windows lsass.exe) » va changer de Non configuré à Configuré et le mode par défaut à **Bloquer.** Toutes les autres règles de la asr. restent dans leur état par défaut : **Non configuré.** Une logique de filtrage supplémentaire a déjà été incorporée dans la règle pour réduire les notifications des utilisateurs finaux. Les clients peuvent configurer la règle sur **les modes Audit**,  **Avertir** ou Désactivé, ce qui remplacera le mode par défaut. La fonctionnalité de cette règle est la même, que la règle soit configurée en mode par défaut ou si vous activez le mode Blocage manuellement.  
+> L’état par défaut de la règle de réduction de la surface d’attaque (ASR) « Bloquer le vol d’informations d’identification du sous-système de l’autorité de  sécurité locale (lsass.exe) Windows » change de Non configuré à Configuré et le mode par défaut est configuré sur **Bloquer**. Toutes les autres règles de la asr. restent dans leur état par défaut : **Non configuré.** Une logique de filtrage supplémentaire a déjà été incorporée dans la règle pour réduire les notifications des utilisateurs finaux. Les clients peuvent configurer la règle sur **les modes Audit**,  **Avertir** ou Désactivé, ce qui remplacera le mode par défaut. La fonctionnalité de cette règle est la même, que la règle soit configurée en mode par défaut ou si vous activez le mode Blocage manuellement.  
 
 Nom Intune : `Flag credential stealing from the Windows local security authority subsystem`
 
@@ -282,14 +282,14 @@ Dépendances : MDAV
 
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>Bloquer le contenu exécutable du client de messagerie et de la messagerie web
 
-Cette règle empêche le lancement des types de fichiers suivants à partir du courrier électronique ouvert dans l’application Microsoft Outlook ou Outlook.com et d’autres fournisseurs de messagerie web populaires :
+Cette règle empêche le lancement des types de fichiers suivants à partir du courrier électronique ouvert dans l’application Microsoft Outlook, ou Outlook.com et d’autres fournisseurs de messagerie web populaires :
 
 - Fichiers exécutables (tels que .exe, .dll ou .scr)
 - Fichiers de script (tels qu’un fichier .ps PowerShell, Visual Basic .vbs ou javascript .js fichier)
 
 Nom Intune : `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
-Microsoft Endpoint Manager nom de l’Microsoft Endpoint Manager :`Block executable content from email client and webmail`
+Microsoft Endpoint Manager nom complet :`Block executable content from email client and webmail`
 
 GUID : `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
@@ -392,7 +392,7 @@ Dépendances : MDAV, RPC
 
 Cette règle bloque les tentatives d’injection de code Office applications dans d’autres processus.
 
-Les personnes malveillantes peuvent tenter d’Office des applications malveillantes pour migrer du code malveillant vers d’autres processus via l’injection de code, afin que le code puisse être masqué en tant que processus propre.
+Les personnes malveillantes peuvent tenter d Office des applications malveillantes pour migrer du code malveillant vers d’autres processus via l’injection de code, afin que le code puisse être masqué en tant que processus propre.
 
 Il n’existe pas d’objectifs commerciaux légitimes connus pour l’utilisation de l’injection de code.
 
@@ -413,7 +413,7 @@ Dépendances : MDAV
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>Empêcher Office application de communication de créer des processus enfants
 
-Cette règle empêche les Outlook de créer des processus enfants, tout en permettant des fonctions Outlook légitimes.
+Cette règle empêche les Outlook de créer des processus enfants, tout en permettant des Outlook légitimes.
 
 Cette règle protège contre les attaques d’ingénierie sociale et empêche l’exploitation du code d’exploiter les vulnérabilités dans Outlook. Il protège également contre les Outlook et les [attaques par formulaires](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) que les attaquants peuvent utiliser lorsque les informations d’identification d’un utilisateur sont compromises.
 
@@ -492,7 +492,7 @@ Type d’action de recherche avancée :
 
 Dépendances : MDAV
 
-### <a name="block-win32-api-calls-from-office-macros"></a>Bloquer les appels d’API Win32 à partir Office macros
+### <a name="block-win32-api-calls-from-office-macros"></a>Bloquer les appels d’API Win32 à Office macros
 
 Cette règle empêche les macros VBA d’appeler les API Win32.
 

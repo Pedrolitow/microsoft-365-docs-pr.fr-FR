@@ -14,16 +14,14 @@ ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: d331cf93097f66ddc5a464710d67b864419ab05c
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: c5a738584f1705365db1c4fad61f190a42d97660
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464658"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330228"
 ---
 # <a name="client-behavioral-blocking"></a>Blocage comportemental du client
 

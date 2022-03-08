@@ -14,16 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: af522fcd479b2fbcf8d3327f4cb382987cb7ad46
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 4261e32721da86233a0a929a435c318904d6ac12
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218573"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324142"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>Créer un processus de déploiement progressif personnalisé pour les mises à jour De Microsoft Defender
 
@@ -56,23 +56,23 @@ Le tableau suivant répertorie les paramètres de stratégie de groupe disponibl
 ## <a name="group-policy"></a>Stratégie de groupe
 
 > [!NOTE]
-> Un modèle ADMX Defender mis à jour sera publié avec la version 21H2 de Windows 10. Une version non localisée est disponible en téléchargement sur https://github.com/microsoft/defender-updatecontrols .
+> Un modèle ADMX Defender mis à jour sera publié avec la version 21H2 de Windows 10. Une version non localisée est disponible en téléchargement sur https://github.com/microsoft/defender-updatecontrols.
 
 Vous pouvez utiliser la [stratégie de](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN) groupe pour configurer et gérer les Antivirus Microsoft Defender sur vos points de terminaison.
 
 En règle générale, vous pouvez utiliser la procédure suivante pour configurer ou modifier Antivirus Microsoft Defender de stratégie de groupe :
 
-1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la **Console** de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe **à** configurer, puis cliquez sur **Modifier.**
+1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la **Console** de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de **groupe à configurer** , puis cliquez sur **Modifier**.
 
-2. À l’aide de l’Éditeur de gestion des stratégies de groupe, go to **Computer configuration**.
+2. À l’aide de l’Éditeur de gestion des stratégies de groupe, allez **à configuration ordinateur**.
 
-3. Cliquez **sur Modèles d’administration.**
+3. Cliquez **sur Modèles d’administration**.
 
 4. Développez l’arborescence **Windows composants > Antivirus Microsoft Defender**.
 
-5. Développez la section (appelée Emplacement dans le tableau de cette rubrique) qui contient le paramètre que vous souhaitez configurer, double-cliquez sur le paramètre pour l’ouvrir et a apporté des modifications de configuration. 
+5. Développez la section (appelée Emplacement dans  le tableau de cette rubrique) qui contient le paramètre que vous souhaitez configurer, double-cliquez sur le paramètre pour l’ouvrir et a apporté des modifications de configuration.
 
-6. [Déployez l’GPO mis à jour comme vous le faites normalement.](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx)
+6. [Déployez l’GPO mis à jour comme vous le faites normalement](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx).
 
 ## <a name="intune"></a>Intune
 
@@ -80,11 +80,11 @@ Suivez les instructions du lien ci-dessous pour créer une stratégie personnali
 
 [Ajouter des paramètres personnalisés pour Windows 10 appareils dans Microsoft Intune - Documents Microsoft Azure \|](/mem/intune/configuration/custom-settings-windows-10)
 
-Pour plus d’informations sur le programme CSP Defender utilisé pour le processus de déploiement progressif, voir [CSP Defender.](/windows/client-management/mdm/defender-csp)
+Pour plus d’informations sur le programme CSP Defender utilisé pour le processus de déploiement progressif, voir [CSP Defender](/windows/client-management/mdm/defender-csp).
 
 ## <a name="powershell"></a>PowerShell
 
-Utilisez `Set-MpPreference` l’cmdlet pour configurer le déploiement des mises à jour progressives.
+Utilisez l’cmdlet `Set-MpPreference` pour configurer le déploiement des mises à jour progressives.
 
 Utilisez les paramètres suivants :
 

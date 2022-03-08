@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d09898b29b9efda6b6911e9542d75d36a8e38f7e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d97326987af49b9bac44b3578884c72d756d5595
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61867636"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324058"
 ---
 # <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>Intégrer Windows plusieurs sessions dans Azure Virtual Desktop
 
@@ -34,7 +34,7 @@ Microsoft Defender pour point de terminaison prend en charge la surveillance des
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Familiarisez-vous avec les considérations pour [les VDI non persistants.](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1) Bien [qu’Azure Virtual Desktop](/azure/virtual-desktop/overview) ne propose pas d’options de non-persistance, il offre des moyens d’utiliser une image Windows de premier choix qui peut être utilisée pour mettre en service de nouveaux hôtes et redéployer des ordinateurs. Cela augmente la sécurité dans l’environnement et a un impact sur les entrées créées et conservées dans le portail Microsoft Defender pour points de terminaison, ce qui réduit potentiellement la visibilité de vos analystes de sécurité.
+Familiarisez-vous [avec les considérations pour l’ID VDI non persistant](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1). Bien [qu’Azure Virtual Desktop](/azure/virtual-desktop/overview) ne propose pas d’options de non-persistance, il offre des moyens d’utiliser une image Windows de premier choix qui peut être utilisée pour mettre en service de nouveaux hôtes et redéployer des ordinateurs. Cela augmente la sécurité dans l’environnement et a un impact sur les entrées créées et conservées dans le portail Microsoft Defender pour points de terminaison, ce qui réduit potentiellement la visibilité de vos analystes de sécurité.
 
 > [!NOTE]
 > En fonction de votre choix de méthode d’intégration, les appareils peuvent apparaître dans le portail Microsoft Defender pour Endpoint comme :
@@ -61,7 +61,7 @@ Il existe plusieurs façons d’intégrer un ordinateur hôte WVD :
 
 Ce scénario nécessite de placer le script dans une image de base et utilise la stratégie de groupe locale pour s’exécuter au début du processus de démarrage.
 
-Utilisez les instructions de l’outil Intégrer les périphériques [VDI (Virtual Desktop Infrastructure) non persistants.](configure-endpoints-vdi.md)
+Utilisez les instructions de [l’outil Intégrer les périphériques VDI (Virtual Desktop Infrastructure) non persistants](configure-endpoints-vdi.md).
 
 Suivez les instructions pour une entrée unique pour chaque appareil.
 
@@ -71,9 +71,9 @@ Ce scénario utilise un script central et l’exécute à l’aide d’une strat
 
 ##### <a name="download-the-windowsdefenderatponboardingpackagezip-file-from-the-windows-365-defender-portal"></a>Télécharger le fichier WindowsDefenderATPOnboardingPackage.zip à partir du portail Windows 365 Defender
 
-1. Ouvrir le fichier de configuration du package VDI .zip (WindowsDefenderATPOnboardingPackage.zip)
+1. Ouvrez le fichier .zip package de configuration VDI (WindowsDefenderATPOnboardingPackage.zip)
 
-    1. Dans le volet Microsoft 365 Defender navigation du  portail, sélectionnez Paramètres l’intégration des points de \>  \>  terminaison (sous **Gestion des appareils).**
+    1. Dans le volet Microsoft 365 Defender navigation du portail,  \> sélectionnez Paramètres **l’intégration** \> des points de terminaison **(sous** **Gestion des appareils**).
     1. Sélectionnez Windows 10 ou Windows 11 comme système d’exploitation.
     1. Dans le **champ Méthode de** déploiement, sélectionnez les scripts d’intégration VDI pour les points de terminaison non persistants.
     1. Cliquez **sur Télécharger le package** et enregistrez .zip fichier.
@@ -82,15 +82,15 @@ Ce scénario utilise un script central et l’exécute à l’aide d’une strat
 
 ##### <a name="use-group-policy-management-console-to-run-the-script-when-the-virtual-machine-starts"></a>Utiliser la console de gestion des stratégies de groupe pour exécuter le script au démarrage de la machine virtuelle
 
-1. Ouvrez la Console de gestion des stratégies de groupe (GPMC), cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
+1. Ouvrez la Console de gestion des stratégies de groupe (GPMC), cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier**.
 
 2. Dans l’Éditeur de gestion des stratégies de groupe, go to **Computer configuration** \> **Preferences** \> **Control panel settings**.
 
-3. Cliquez avec le bouton droit **sur Tâches programmées,** **cliquez** sur Nouveau, puis sur **Tâche** immédiate (au moins Windows 7).
+3. Cliquez avec le bouton droit **sur Tâches programmées****, cliquez sur** Nouveau, puis sur **Tâche** immédiate (au moins Windows 7).
 
-4. Dans la fenêtre Tâche qui s’ouvre, allez dans **l’onglet** Général. Sous **Options de sécurité,** cliquez **sur Modifier l’utilisateur ou le groupe,** puis tapez SYSTEM. Cliquez **sur Vérifier les noms,** puis sur OK. NT AUTHORITY\SYSTEM apparaît en tant que compte d’utilisateur que la tâche exécutera.
+4. Dans la fenêtre Tâche qui s’ouvre, allez dans **l’onglet** Général. Sous **Options de sécurité,** cliquez **sur Modifier l’utilisateur ou le groupe** , puis tapez SYSTEM. Cliquez **sur Vérifier les noms** , puis sur OK. NT AUTHORITY\SYSTEM apparaît en tant que compte d’utilisateur que la tâche exécutera.
 
-5. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non et cochez la case Exécuter avec **les privilèges les plus élevés.**
+5. **Sélectionnez Exécuter, que l’utilisateur soit** connecté ou non et cochez la case Exécuter avec **les privilèges les plus élevés**.
 
 6. Go to the **Actions** tab and click **New**. **Assurez-vous que démarrer un programme** est sélectionné dans le champ Action. Entrez les informations suivantes :
 
@@ -106,21 +106,21 @@ Ce scénario utilise un script central et l’exécute à l’aide d’une strat
 
 Si vous envisagez de gérer vos ordinateurs à l’aide d’un outil de gestion, vous pouvez intégrer des appareils Microsoft Endpoint Configuration Manager.
 
-Pour plus d’informations, [voir Onboard Windows à l’aide de Configuration Manager.](configure-endpoints-sccm.md)
+Pour plus d’informations, [voir Onboard Windows à l’aide de Configuration Manager](configure-endpoints-sccm.md).
 
 > [!WARNING]
-> Si vous prévoyez d’utiliser la référence des règles de réduction de la [surface](attack-surface-reduction-rules-reference.md)d’attaque, notez que la règle « Bloquer les créations de processus provenant de commandes[PSExec](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)et WMI » ne doit pas être utilisée, car cette règle est incompatible avec la gestion via Microsoft Endpoint Configuration Manager. La règle bloque les commandes WMI que le client Configuration Manager utilise pour fonctionner correctement.
+> Si vous prévoyez d’utiliser la référence des règles de réduction de la [surface](attack-surface-reduction-rules-reference.md) d’attaque, notez que la règle « Bloquer les créations de processus provenant de commandes [PSExec et WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands) » ne doit pas être utilisée, car cette règle est incompatible avec la gestion via Microsoft Endpoint Configuration Manager. La règle bloque les commandes WMI que le client Configuration Manager utilise pour fonctionner correctement.
 
 > [!TIP]
-> Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier que l’appareil est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un appareil [Microsoft Defender pour point de terminaison nouvellement intégré.](run-detection-test.md)
+> Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier que l’appareil est correctement intégré au service. Pour plus d’informations, voir [Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré](run-detection-test.md).
 
 #### <a name="tagging-your-machines-when-building-your-golden-image"></a>Marquage de vos ordinateurs lors de la création de votre image de qualité
 
-Dans le cadre de votre intégration, vous pouvez envisager de définir une balise d’ordinateur pour différencier plus facilement les ordinateurs WVD dans le Centre de sécurité Microsoft. Pour plus d’informations, voir [Ajouter des balises de périphérique en définition d’une valeur de clé de Registre.](machine-tags.md#add-device-tags-by-setting-a-registry-key-value)
+Dans le cadre de votre intégration, vous pouvez envisager de définir une balise d’ordinateur pour différencier plus facilement les ordinateurs WVD dans le Centre de sécurité Microsoft. Pour plus d’informations, voir [Ajouter des balises de périphérique en définition d’une valeur de clé de Registre](machine-tags.md#add-device-tags-by-setting-a-registry-key-value).
 
 #### <a name="other-recommended-configuration-settings"></a>Autres paramètres de configuration recommandés
 
-Lorsque vous construisez votre image de premier niveau, vous pouvez également configurer les paramètres de protection initiaux. Pour plus d’informations, [voir autres paramètres de configuration recommandés.](configure-endpoints-gp.md#other-recommended-configuration-settings)
+Lorsque vous construisez votre image de premier niveau, vous pouvez également configurer les paramètres de protection initiaux. Pour plus d’informations, voir [Autres paramètres de configuration recommandés](configure-endpoints-gp.md#other-recommended-configuration-settings).
 
 En outre, si vous utilisez des profils utilisateur FSlogix, nous vous recommandons d’exclure les fichiers suivants de la protection toujours en cours :
 
@@ -155,7 +155,11 @@ En outre, si vous utilisez des profils utilisateur FSlogix, nous vous recommando
 #### <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
 Remarque sur la gestion des licences : lors de l’utilisation de Windows Enterprise multisessexe, en fonction de vos besoins, vous pouvez choisir d’avoir tous les utilisateurs sous licence via Microsoft Defender pour le point de terminaison (par utilisateur), Windows Enterprise E5, sécurité Microsoft 365 ou Microsoft 365 E5 ou avoir une licence d’utilisation de la VM via Microsoft Defender pour le cloud.
-Les conditions de licence pour Microsoft Defender pour le point de terminaison sont à l’aide des critères de licence [:](minimum-requirements.md#licensing-requirements)
+Les conditions de licence pour Microsoft Defender pour le point de terminaison se trouvent dans : [Conditions de licence](minimum-requirements.md#licensing-requirements).
+
+### <a name="known-issues-and-limitations"></a>Problèmes connus et conseils
+
+Seul Microsoft Edge est pris en charge pour le filtrage web dans Windows 10 multisess session.
 
 #### <a name="related-links"></a>Liens connexes
 

@@ -1,9 +1,9 @@
 ---
 title: Étape 2. Déployer la détection et la réponse des attaques
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: rançongiciel, rançongiciel géré par l’homme, rançongiciel géré par l’homme, HumOR, attaque d'extorsion, attaque de rançongiciel, chiffrement, cryptovirologie, confiance zéro
 description: Utilisez Microsoft 365 Defender et ses sources de signal de sécurité pour protéger vos ressources Microsoft 365 contre les attaques par rançongiciel.
-ms.openlocfilehash: 8459d9ce8a22192d362fd8b3bf95e34c7015f08f
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: bf365693505b658dc61ab349c86541cfb9543de9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886377"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325710"
 ---
 # <a name="step-2-deploy-attack-detection-and-response"></a>Étape 2. Déployer la détection et la réponse des attaques
 

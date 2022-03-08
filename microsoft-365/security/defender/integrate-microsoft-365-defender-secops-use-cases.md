@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3019602f3b6120129243ab7a683da1d01f89bb1e
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 9b4640872f4e4fbdba65b1e29ceee5575e583bac
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172030"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330214"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>Étape 5. Développer et tester des cas d’utilisation
 
@@ -97,15 +97,15 @@ Par exemple, dans l’exemple de scénario anti-hameçonnage, les équipes SOC a
 |:-------|:-----|:-------|:-------|:-------|:-----|:-------|:-------|
 | Équipe Threat Intelligence et Analytics | Les sources de données alimentent correctement les moteurs d’intelligence des menaces. | Analyste/ingénieur threat intelligence | Exigences de flux de données établies, déclencheurs d’intelligence des menaces provenant de sources approuvées | Microsoft Defender pour l’identité, Microsoft Defender pour le point de terminaison | L’équipe Threat Intelligence n’a pas utilisé de script d’automatisation pour lier Microsoft 365 Defender API aux moteurs Intel contre les menaces | Ajouter des Microsoft 365 Defender en tant que sources de données aux moteurs de menaces <BR> <BR> Mettre à jour le carnet d’exemples d’utilisation | N |
 | Équipe de surveillance | Les sources de données alimentent correctement les tableaux de bord de surveillance | Analyste SOC de niveau 1,2 – Surveillance & alertes | Workflow for reporting Security & Compliance Center Secure Score | [Alertes dans le Centre de sécurité & conformité](/microsoft-365/security/office-365-security/alerts)  <br><br> Analyse du score de sécurisation  | Aucun mécanisme pour les analystes SOC permettant de signaler la détection réussie d’une nouvelle variante d’hameçonnage pour améliorer le score de sécurisation <br><br> [Reporting in Security & Compliance Center](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)| Ajouter un processus de suivi de l’amélioration du score de sécurité aux flux de travail de création de rapports | N | 
-| Ingénierie et équipe SecOps | Les mises à jour des contrôles de modification sont réalisées dans les runbooks d’équipe SOC | Ingénieur SOC de niveau 2 | Procédure de notification de contrôle des changements pour les runbooks d’équipe SOC | Modifications approuvées apportées aux appareils de sécurité | Les modifications apportées Microsoft 365 Defender la connectivité à la technologie de sécurité SOC nécessitent une approbation | Ajouter Microsoft Defender pour les applications cloud, Defender pour l’identité, Defender pour le point de terminaison, centre de sécurité & conformité aux runbooks SOC | v |
+| Ingénierie et équipe SecOps | Les mises à jour des contrôles de modification sont réalisées dans les runbooks d’équipe SOC | Ingénieur SOC de niveau 2 | Procédure de notification de contrôle des changements pour les runbooks d’équipe SOC | Modifications approuvées apportées aux appareils de sécurité | Les modifications apportées Microsoft 365 Defender à la technologie de sécurité SOC nécessitent une approbation | Ajouter Microsoft Defender pour les applications cloud, Defender pour l’identité, Defender pour le point de terminaison, centre de sécurité & conformité aux runbooks SOC | v |
 |||||||||
 
-En outre, les équipes SOC auraient pu faire les découvertes décrites dans le tableau ci-dessous en ce qui concerne Gestion des menaces et des vulnérabilités scénario décrit ci-dessus :
+En outre, les équipes SOC auraient pu faire les découvertes décrites dans le tableau ci-dessous en ce qui concerne le scénario Gestion des menaces et des vulnérabilités décrit ci-dessus :
 
 | Équipe SOC | Conditions requises | Personnes pour répondre aux exigences | Processus pour répondre aux exigences | Technologie pertinente | Intervalle identifié | Utiliser le journal des changements de cas | Exempt (Y/N) |
 |:-------|:-----|:-------|:-------|:-------|:-----|:-------|:-------|
 | Supervision SOC | Tous les biens connectés à des réseaux approuvés sont identifiés et catégorisés | Supervision SOC, propriétaires de la bu, propriétaires d’applications, propriétaires de biens, etc. | Système de gestion des biens centralisé pour découvrir et lister les catégories et attributs des biens en fonction du risque. | ServiceNow ou d’autres ressources. <br><br>[Microsoft 365'inventaire des appareils](/security/defender-endpoint/device-discovery) | Seuls 70 % des biens ont été découverts. Microsoft 365 Defender correction effective uniquement pour les ressources connues | Des services de gestion du cycle de vie des biens Microsoft 365 Defender une couverture de 100 % | N |
-| Engineering & SecOps Teams | Les ressources dont l’impact est élevé et les vulnérabilités critiques sont corrigés conformément à la stratégie | Ingénieurs SecOps, analystes SOC : Conformité des &, Ingénierie de la sécurité | Processus défini pour catégoriser les vulnérabilités à risque élevé et critique | [Tableaux de bord de gestion des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | Defender pour le point de terminaison a identifié un impact élevé, des périphériques d’alerte élevés sans plan de correction ou implémentation de l’activité recommandée par Microsoft | Ajouter un flux de travail pour avertir les propriétaires de biens lorsque l’activité de correction est requise dans un délai de 30 jours par stratégie ; Implémenter un système de gestion des tickets pour informer les propriétaires de biens des étapes de correction. | N |
+| Engineering & SecOps Teams | Les ressources dont l’impact est élevé et les vulnérabilités critiques sont corrigés conformément à la stratégie | Ingénieurs SecOps, analystes SOC : conformité de & vulnérabilité, ingénierie de sécurité | Processus défini pour catégoriser les vulnérabilités à risque élevé et critique | [Tableaux de bord de gestion des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | Defender pour le point de terminaison a identifié un impact élevé, des périphériques d’alerte élevés sans plan de correction ou implémentation de l’activité recommandée par Microsoft | Ajouter un flux de travail pour avertir les propriétaires de biens lorsque l’activité de correction est requise dans un délai de 30 jours par stratégie ; Implémenter un système de gestion des tickets pour informer les propriétaires de biens des étapes de correction. | N |
 | Analyse Teams | L’état des menaces et des vulnérabilités est signalé via le portail intranet de l’entreprise | Analyste SOC de niveau 2 | Rapports générés automatiquement à partir de Microsoft 365 Defender la progression de la correction des biens | [Alertes dans le Centre de sécurité & conformité](/microsoft-365/security/office-365-security/alerts) <br><br> Analyse du score de sécurisation | Aucun affichage ou rapport de tableau de bord n’est communiqué aux propriétaires de biens concernant l’état des menaces et des vulnérabilités des biens. | Créez un script d’automatisation pour remplir l’état de correction des vulnérabilités de ressources critiques et à risque élevé pour l’organisation. | N |
 |||||||||
 

@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: bb3759b673475690a49e0909e2da67644990950e
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 45abe5dfa77e9ed224f2d55e15986eba732f2aff
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172294"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326436"
 ---
 # <a name="step-1-plan-for-microsoft-365-defender-operations-readiness"></a>Étape 1. Planifier la préparation Microsoft 365 Defender opérations de gestion
 
@@ -42,7 +42,7 @@ Les sections suivantes décrivent les fonctions principales du SOC.
 
 ## <a name="provide-situational-awareness-of-modern-threats"></a>Assurer une prise en connaissance de cause des menaces modernes
 
-Une équipe SOC se prépare et recherche les menaces nouvelles et entrantes afin de pouvoir travailler avec l’organisation pour établir des contre-mesures et des réponses. Votre équipe SOC doit avoir du personnel hautement formé aux techniques et méthodes d’attaque modernes et comprendre les acteurs des menaces. L’intelligence des menaces [](https://www.microsoft.com/security/blog/2016/11/28/disrupting-the-kill-chain/) et les frameworks partagés tels que la chaîne de cyber-attaque ou [mitre ATT&CK](https://attack.mitre.org/) peuvent aider votre personnel d’analystes de menaces et de observateurs de menaces.
+Une équipe SOC se prépare et recherche les menaces nouvelles et entrantes afin de pouvoir travailler avec l’organisation pour établir des contre-mesures et des réponses. Votre équipe SOC doit avoir du personnel hautement formé aux techniques et méthodes d’attaque modernes et comprendre les acteurs des menaces. L’intelligence des menaces et les [](https://www.microsoft.com/security/blog/2016/11/28/disrupting-the-kill-chain/) frameworks partagés tels que la chaîne de cyber-attaque ou [mitre ATT&CK](https://attack.mitre.org/) peuvent aider votre personnel d’analystes de menaces et de observateurs de menaces.
 
 ## <a name="provide-first-second-and-potentially-third-level-responses-to-cyber-incidents-and-events"></a>Fournir des réponses de premier, deuxième et potentiellement troisième niveau aux cyber incidents et aux événements
 

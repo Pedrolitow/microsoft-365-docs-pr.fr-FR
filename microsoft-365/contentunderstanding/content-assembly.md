@@ -13,18 +13,18 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer automatiquement des documents et d’autres contenus à l’aide de l’assembly de contenu dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 9f8a02a845afa93282158051eb746e0cb9a0171d
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
+ms.openlocfilehash: f2e8c601e8a7242524cb323d099975f6600cce05
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62187280"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318884"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Créer des documents à l’aide de l’assembly de contenu dans Microsoft SharePoint Syntex
 
 Vous pouvez utiliser SharePoint Syntex pour vous aider à générer automatiquement des documents d’entreprise répétitifs standard, tels que des contrats, des déclarations de travail, des contrats de service, des lettres de consentement, des pas de vente et des correspondances. Vous pouvez faire tout cela plus rapidement, de manière plus cohérente et moins sujette aux erreurs à l’aide de l’assembly de contenu SharePoint Syntex.
 
-Avec l’assembly de contenu, vous pouvez utiliser un document existant pour créer un modèle *moderne,* puis utiliser ce modèle pour générer automatiquement du contenu à l’aide de listes SharePoint ou d’entrées utilisateur en tant que source de données.
+Avec l’assembly de contenu, vous pouvez utiliser un document existant pour créer un modèle *moderne, puis* utiliser ce modèle pour générer automatiquement du contenu à l’aide de listes SharePoint ou d’entrées utilisateur en tant que source de données.
 
 > [!NOTE]
 > Vous devez être titulaire d’une licence SharePoint Syntex utilisateur pour accéder aux fonctionnalités d’assembly de contenu et les utiliser. Vous devez également avoir les autorisations pour gérer SharePoint listes.
@@ -33,7 +33,7 @@ Avec l’assembly de contenu, vous pouvez utiliser un document existant pour cr�
 
 Suivez ces étapes pour créer un modèle moderne.
 
-1. Dans une bibliothèque de documents SharePoint, **sélectionnez Créer**  >  **un modèle moderne.** 
+1. Dans une bibliothèque de documents SharePoint, **sélectionnez Modèle** **moderne NewCreate** > . 
  
    ![Capture d’écran de la bibliothèque de documents avec l’option Créer un modèle moderne mise en évidence.](../media/content-understanding/content-assembly-create-template-1.png)
 
@@ -71,9 +71,9 @@ Dans le **panneau Tous les espaces réservé** :
 
    ![Capture d’écran de la visionneuse de modèles affichant le panneau Tous les espaces réservé pour une entrée manuelle.](../media/content-understanding/content-assembly-create-template-5.png)
 
-2. Dans la section **Comment les auteurs remplissent cet** espace réservé, sélectionnez Entrer du texte ou une **date.**
+2. Dans la section **Comment les auteurs remplissent cet espace réservé** , sélectionnez **Entrer du texte ou une date**.
 
-3. Dans le **champ Type d’informations,** sélectionnez le type de données que vous souhaitez associer à l’espace réservé. Actuellement, six options sont disponibles **:** une seule ligne de **texte,** plusieurs lignes de texte, **nombre,** **date** et **heure,** courrier électronique et **lien hypertexte.**
+3. Dans le **champ Type d’informations** , sélectionnez le type de données que vous souhaitez associer à l’espace réservé. Actuellement, six options sont **disponibles : Une** seule ligne de **texte, Plusieurs** lignes de texte, **Nombre**, **Date** et heure, **Courrier** électronique et **Lien hypertexte**.
 
 4. Sélectionnez **Ajouter**.
 
@@ -83,50 +83,50 @@ Dans le **panneau Tous les espaces réservé** :
 
 1. Dans le **champ** Nom, entrez un nom pertinent pour l’espace réservé.
 
-   ![Capture d’écran de la visionneuse de modèles affichant le panneau Tous les espaces réservé pour les entrées à partir d’SharePoint liste.](../media/content-understanding/content-assembly-create-template-6.png)
+   ![Capture d’écran de la visionneuse de modèles affichant le panneau Tous les espaces réservé pour une entrée à partir d SharePoint liste.](../media/content-understanding/content-assembly-create-template-6.png)
 
-2. In the **How authors fill in this placeholder** section, choose Select from choices in a column of a list or **library,** and then choose **Select**.
+2. In the **How authors fill in this placeholder** section, choose **Select from choices in a column of a list or library**, and then choose **Select**.
 
-3. Dans la page Sélectionner une liste pour ajouter une colonne **source,** sélectionnez la liste que vous souhaitez utiliser, puis sélectionnez **Suivant**.
+3. Dans la page **Sélectionner une liste pour ajouter** une colonne source, sélectionnez la liste que vous souhaitez utiliser, puis sélectionnez **Suivant**.
 
    ![Capture d’écran de la page Sélectionner une liste pour ajouter une colonne source affichant des listes.](../media/content-understanding/content-assembly-create-template-7.png)
 
-4. Dans la page Sélectionner une **colonne source** dans la liste existante, sélectionnez le nom de colonne à associer à l’espace réservé, puis sélectionnez **Enregistrer.** 
+4. Dans la page Sélectionner une **colonne source** dans la liste existante, sélectionnez le nom de colonne à associer à l’espace réservé, puis sélectionnez **Enregistrer**. 
 
    ![Capture d’écran de la colonne Sélectionner une source dans la page de liste existante affichant les noms des colonnes.](../media/content-understanding/content-assembly-create-template-8.png)
 
-    Si vous souhaitez voir à nouveau la page d’origine des listes, sélectionnez Le lien Go **to (list name)** en bas de la liste.
+    Si vous souhaitez voir à nouveau la page d’origine des listes, sélectionnez Le **lien Go to (list name)** en bas de la liste.
 
 5. Lorsque vous avez terminé, vous verrez que le champ de liste a été associé à l’espace réservé.
 
    ![Capture d’écran du panneau Tous les espaces réservé affichant le champ de liste associé à l’espace réservé.](../media/content-understanding/content-assembly-create-template-9.png)
 
-6. Si vous souhaitez que les utilisateurs puissent ajouter des entrées manuellement, en plus de choisir dans une liste, sélectionnez Autoriser les auteurs à **ajouter de nouveaux choix.** Dans ce cas, la valeur par défaut pour le type de données d’entrée manuelle est *Une seule ligne de texte*. En outre, les valeurs entrées par les auteurs ne seront utilisées que pour générer le document. Ils ne seront pas ajoutés à la SharePoint liste.
+6. Si vous souhaitez que les utilisateurs puissent ajouter des entrées manuellement, en plus de choisir dans une liste, sélectionnez Autoriser les auteurs à **ajouter de nouveaux choix**. Dans ce cas, la valeur par défaut du type de données d’entrée manuelle est *Une seule ligne de texte*. En outre, les valeurs entrées par les auteurs ne seront utilisées que pour générer le document. Ils ne seront pas ajoutés à la SharePoint liste.
  
 Vous pouvez créer autant d’espaces que nécessaire. Lorsque vous avez terminé, vous pouvez choisir d’enregistrer le modèle en tant que brouillon ou de publier le modèle.
 
-   - **Enregistrer le brouillon** : enregistre le modèle en tant que brouillon et vous pouvez y accéder ultérieurement. Vous pouvez afficher, modifier ou publier des brouillons enregistrés à partir de la section **Modèles** modernes en sélectionnant Nouveau menu Modifier nouveau dans la bibliothèque de  >   documents. 
-   - **Publier** : publie le modèle à utiliser par d’autres utilisateurs de l’organisation pour créer des documents. Vous pouvez afficher, modifier ou  publier des modèles publiés à partir de la section **Modèles** modernes en sélectionnant Nouveau menu Modifier nouveau dans la  >   bibliothèque de documents. 
+   - **Enregistrer le brouillon** : enregistre le modèle en tant que brouillon et vous pouvez y accéder ultérieurement. Vous pouvez afficher, modifier ou publier des brouillons enregistrés à partir de la section **Modèles** modernes en sélectionnant le **menu NewEdit**  >  New dans la bibliothèque de documents. 
+   - **Publier** : publie le modèle à utiliser par d’autres utilisateurs de l’organisation pour créer des documents. Vous pouvez afficher, modifier ou dépublier *des* modèles publiés à partir de la section **Modèles** modernes en sélectionnant le **menu NewEdit**  >  New dans la bibliothèque de documents. 
 
 ## <a name="edit-a-modern-template"></a>Modifier un modèle moderne
 
 Si vous devez modifier un modèle existant ou supprimer ou supprimer un modèle, suivez ces étapes.
 
-1. Dans une bibliothèque de documents SharePoint, sélectionnez **Nouveau**  >  **menu Modifier.** 
+1. Dans une bibliothèque de documents SharePoint, **sélectionnez Le** >  **menu Nouveau.** 
  
    ![Capture d’écran de la bibliothèque de documents avec l’option Modifier le nouveau menu mise en évidence.](../media/content-understanding/content-assembly-edit-template-1.png)
 
-2. Dans le **volet Modifier le nouveau menu,** dans la section **Modèles** modernes, sélectionnez le modèle publié ou brouillon à modifier.
+2. Dans le **volet Modifier le nouveau menu** , dans la section **Modèles** modernes, sélectionnez le modèle publié ou brouillon à modifier.
  
    ![Capture d’écran du panneau De menu Modifier nouveau affichant la section Modèles modernes.](../media/content-understanding/content-assembly-edit-template-2.png)
 
 3. Pour modifier un modèle publié ou un modèle de brouillon :
 
-   - Pour **les modèles publiés,** **sélectionnez Modifier** pour ouvrir le studio de   modèles dans lequel vous pouvez modifier le modèle publié. Vous pouvez également choisir de supprimer ou de supprimer laublish du modèle. 
+   - Pour **les modèles publiés**,  **selectEditto**  ouvrez le studio de modèles dans lequel vous pouvez modifier le modèle publié. Vous pouvez également choisir de supprimer ou de supprimer laublish du modèle. 
  
       ![Capture d’écran de la section Modèles modernes affichant les modèles publiés.](../media/content-understanding/content-assembly-edit-published.png)
 
-   - Pour **les modèles provisoires,** **sélectionnez Modifier** pour ouvrir le studio de   modèles dans lequel vous pouvez modifier le modèle de brouillon. Vous pouvez également choisir de supprimer ou de publier le modèle.
+   - Pour **les modèles provisoires**,  **selectEditto**  ouvrez le studio de modèles dans lequel vous pouvez modifier le modèle de brouillon. Vous pouvez également choisir de supprimer ou de publier le modèle.
  
       ![Capture d’écran de la section Modèles modernes affichant les modèles provisoires.](../media/content-understanding/content-assembly-edit-draft.png)
 
@@ -134,13 +134,13 @@ Si vous devez modifier un modèle existant ou supprimer ou supprimer un modèle,
 
 Vous pouvez utiliser un modèle *moderne publié* pour créer rapidement des documents similaires sans avoir à démarrer à partir de zéro. Pour créer un document à l’aide d’un modèle publié, suivez les étapes suivantes :
 
-1. Dans une bibliothèque de documents SharePoint, sélectionnez **Nouveau,** puis sélectionnez le modèle moderne que vous souhaitez utiliser.
+1. Dans une bibliothèque de documents SharePoint, sélectionnez **Nouveau**, puis sélectionnez le modèle moderne que vous souhaitez utiliser.
  
    ![Capture d’écran de la bibliothèque de documents montrant les choix de modèles modernes dans le menu Nouveau.](../media/content-understanding/content-assembly-create-document-1.png)
 
 2. Le modèle s’ouvre dans le studio de modèles.
 
-3. Dans le **panneau Créer un document à partir d’un** modèle, entrez les informations, puis **sélectionnez Créer un document.**
+3. Dans le **panneau Créer un document à partir d’un** modèle, entrez les informations, puis **sélectionnez Créer un document**.
 
    ![Capture d’écran de la bibliothèque de documents montrant créer un document à partir d’un panneau de modèles.](../media/content-understanding/content-assembly-create-document-2.png)
 
@@ -150,7 +150,7 @@ Vous pouvez utiliser un modèle *moderne publié* pour créer rapidement des doc
       - Valeurs d’espace réservé de remplissage automatique si vous êtes en mesure d’identifier de manière unique un enregistrement pour les espaces réservé associés à la même liste.
 
 > [!NOTE]
-> - Actuellement, seuls Microsoft Word documents (.docx extension) sont pris en charge pour la création d’un modèle. Avant de télécharger le document, assurez-vous que le suivi des modifications n’est pas **activé** ou que les commentaires ne sont pas activés sur le document Word. Si votre document contient des espaces de texte pour les images, assurez-vous qu’ils ne sont pas wrapped texte.
+> - Actuellement, seuls Microsoft Word documents (.docx extension) sont pris en charge pour la création d’un modèle. Avant de télécharger le document, assurez-vous que le suivi des modifications n’est **pas activé ou** que les commentaires ne sont pas activés sur le document Word. Si votre document contient des espaces de texte pour les images, assurez-vous qu’ils ne sont pas wrapped texte. Pour le moment, les **contrôles de** contenu ne sont pas en charge dans Word. Si vous souhaitez créer un modèle à partir d’un document Word avec des contrôles de contenu, supprimez-les avant de créer un modèle moderne.
 >- Le modèle et le document sont associés à une bibliothèque de documents. Pour utiliser le modèle dans une autre bibliothèque de documents, vous devez le créer à nouveau dans cette bibliothèque de documents.
 >- Le document téléchargé utilisé pour créer le modèle moderne sera enregistré en tant que copie distincte et placé dans le répertoire /forms de la bibliothèque de documents. Le fichier d’origine sur le disque n’est pas affecté.
 >- Vous pouvez créer des espaces réservé uniquement pour le texte. Actuellement, les images, les images intelligentes, les tableaux et les listes à puces ne sont pas pris en charge.

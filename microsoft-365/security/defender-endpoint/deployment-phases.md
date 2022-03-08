@@ -17,20 +17,20 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8463d4b9c330d65ad36d60f20e93fbf00d95959e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5715a796e0c7b78ae369f074b5edcb6ccfc8ae90
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164537"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330564"
 ---
 # <a name="deployment-phases"></a>Phases de déploiement
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
@@ -58,7 +58,7 @@ Chaque section correspond à un article distinct de cette solution.
 
 Une fois que vous aurez terminé ce guide, vous serez mis en place avec les autorisations d’accès adéquates, vos points de terminaison seront intégrés et des données de capteur seront signalés au service, et des fonctionnalités telles que la protection nouvelle génération et la réduction de la surface d’attaque seront en place.
 
-Quelle que soit l’architecture et la méthode [](deployment-strategy.md) de déploiement de l’environnement que vous choisissez décrites dans les instructions de déploiement de plan, ce guide va vous prendre en charge lors de l’intégration des points de terminaison.
+Quelle que soit l’architecture et la méthode de déploiement de l’environnement [](deployment-strategy.md) que vous choisissez décrites dans les instructions de déploiement de plan, ce guide va vous prendre en charge lors de l’intégration des points de terminaison.
 
 ## <a name="key-capabilities"></a>Fonctionnalités clés
 
@@ -75,14 +75,14 @@ Bien que Microsoft Defender pour point de terminaison offre de nombreuses foncti
 |Réduction de la surface d'attaque|Fournissez la première ligne de défense dans la pile. En veillant à ce que les paramètres de configuration soient correctement définies et que les techniques d’atténuation des attaques soient appliquées, ces fonctionnalités peuvent résister aux attaques et à l’exploitation.|
 |
 
-Toutes ces fonctionnalités sont disponibles pour les titulaires de licences Microsoft Defender pour les points de terminaison. Pour plus d’informations, voir [Conditions requises pour les licences.](minimum-requirements.md#licensing-requirements)
+Toutes ces fonctionnalités sont disponibles pour les titulaires de licences Microsoft Defender pour les points de terminaison. Pour plus d’informations, voir [Conditions requises pour les licences](minimum-requirements.md#licensing-requirements).
 
 ## <a name="scope"></a>Portée
 
 ### <a name="in-scope"></a>Dans l’étendue
 
-- Utilisation de Microsoft Endpoint Manager et Microsoft Endpoint Manager pour intégrer des points de terminaison dans le service et configurer des fonctionnalités
-- Activation de Defender pour les fonctionnalités de protection évolutive des points de terminaison point de terminaison (PEPT)
+- Utilisation de Microsoft Endpoint Manager et Microsoft Endpoint Configuration Manager pour intégrer des points de terminaison dans le service et configurer des fonctionnalités
+- Activation de Defender pour les fonctionnalités de protection évolutive des points de terminaison de point de terminaison (PEPT)
 - Activation des fonctionnalités DE LAS (Endpoint Endpoint Protection Platform) de Defender for Endpoint
   - Protection de nouvelle génération
   - Réduction de la surface d'attaque

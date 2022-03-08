@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 090c43ea1d2d9f2d158f94d1e509490c3faf4799
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 58ba49a49b41d80bacb31efa780530e44a146fc1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767087"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326760"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Nouveautés de Microsoft Defender pour Endpoint sur Linux
 
@@ -28,6 +28,11 @@ ms.locfileid: "62767087"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+## <a name="1015880-30122012158800"></a>101.58.80 (30.122012.15880.0)
+
+- L’outil en ligne de commande prend désormais en charge la restauration des fichiers mis en quarantaine à un emplacement autre que celui où le fichier a été détecté à l’origine. Cela peut être effectué par le biais `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`de .
+- Correctifs de bogue
 
 ## <a name="1015662-30121122156620"></a>101.56.62 (30.121122.15662.0)
 
@@ -83,7 +88,7 @@ ms.locfileid: "62767087"
 
 - Microsoft Defender pour endpoint sur Linux est désormais disponible en prévisualisation pour les clients du gouvernement des États-Unis. Pour plus d’informations, [voir Microsoft Defender for Endpoint for US Government customers](gov.md).
 - Nous avons résolu un problème dans lequel l’utilisation de Microsoft Defender pour endpoint sur Linux sur des systèmes avec des systèmes de fichiers LINUX a conduit au se bloquer du système d’exploitation
-- Améliorations des performances & d’autres résolutions de bogues
+- Améliorations des performances & autres correctifs de bogues
 
 ## <a name="1012563-30121022125630"></a>101.25.63 (30.121022.12563.0)
 

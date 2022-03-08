@@ -1,8 +1,8 @@
 ---
-title: Évaluation de l’accès continu Microsoft 365 - Microsoft 365 entreprise
+title: Évaluation de l’accès continu pour Microsoft 365 - Microsoft 365 entreprise
 description: Décrit comment l’évaluation de l’accès conditionnel pour Microsoft 365 et Azure AD de manière proactive met fin aux sessions utilisateur actives et applique les modifications de stratégie de client en temps quasi réel.
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.prod: m365-security
 ms.topic: article
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 376b15a6faa84b26ab7e48356e54c0456da16072
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 255618508559e989a356ab404429bc4d87bfe2c6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244666"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324534"
 ---
 # <a name="continuous-access-evaluation-for-microsoft-365"></a>Évaluation de l’accès continu pour Microsoft 365
 
@@ -55,7 +55,7 @@ Microsoft travaille sur des services et des clients Microsoft 365 supplémentair
 L’évaluation de l’accès continu sera incluse dans toutes les versions Office 365 et Microsoft 365. La configuration des stratégies d’accès conditionnel Azure AD Premium P1, qui est incluse dans toutes Microsoft 365 versions.
 
 > [!NOTE]
-> Consultez [cet article pour](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#limitations) les limitations de l’évaluation de l’accès continu.
+> [Consultez cet article pour](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#limitations) les limitations de l’évaluation de l’accès continu.
 
 ## <a name="scenarios-supported-by-microsoft-365"></a>Scénarios pris en charge par Microsoft 365
 
@@ -70,11 +70,11 @@ Les événements critiques sont les suivants :
 - Le mot de passe est modifié
 - Les sessions utilisateur sont révoquées
 - L’authentification multifacteur est activée pour l’utilisateur
-- Augmentation des risques de compte en fonction de l’évaluation de l’accès [à partir Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
+- Risque de compte accru en fonction de l’évaluation de l’accès [à partir de Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
 
 L’évaluation de la stratégie d’accès conditionnel se produit lorsque le compte d’utilisateur ne se connecte plus à partir d’un réseau approuvé.
 
-Les services de Microsoft 365 suivants peuvent actuellement prendre en charge l’évaluation de l’accès continu en écoute des événements Azure AD.
+Les services de Microsoft 365 suivants offrent actuellement une prise en charge de l’évaluation de l’accès continu en Azure AD.
 
 <br>
 
@@ -91,16 +91,16 @@ Les services de Microsoft 365 suivants peuvent actuellement prendre en charge l�
 
 \*SharePoint Office navigateur web prend en charge l’application de stratégies IP instantanées en activant le mode strict. Sans mode strict, la durée de vie du jeton d’accès est d’une heure.
 
-Pour plus d’informations sur la façon de configurer une stratégie d’accès conditionnel, consultez [cet article.](/azure/active-directory/conditional-access/overview)
+Pour plus d’informations sur la façon de configurer une stratégie d’accès conditionnel, consultez [cet article](/azure/active-directory/conditional-access/overview).
 
-## <a name="microsoft-365-clients-supporting-continuous-access-evaluation"></a>Microsoft 365 clients de prise en charge de l’évaluation de l’accès continu
+## <a name="microsoft-365-clients-supporting-continuous-access-evaluation"></a>Microsoft 365 la prise en charge de l’évaluation de l’accès continu
 
 Les clients activés pour l’évaluation de l’accès continu pour Microsoft 365 supportent une demande de revendication, c’est-à-dire une redirection d’une session utilisateur vers Azure AD pour la réauthentisation, lorsqu’un jeton utilisateur mis en cache est rejeté par un service Microsoft 365 activé pour l’évaluation de l’accès continu.
 
 Les clients suivants supportent l’évaluation de l’accès continu sur le web, Win32, iOS, Android et Mac :
 
 - Outlook
-- Teams
+- Équipes
 - Office\*
 - SharePoint
 - OneDrive

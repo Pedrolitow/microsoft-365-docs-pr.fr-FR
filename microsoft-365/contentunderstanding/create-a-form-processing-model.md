@@ -7,14 +7,20 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: null
+search.appverid: ''
 ms.collection:
-  - enabler-strategic
-  - m365initiative-syntex
+- enabler-strategic
+- m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Découvrez comment créer un modèle de traitement de formulaire dans SharePoint Syntex.
+ms.openlocfilehash: 6048eabe8bb57da40d940923e313bd496ec1ecec
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330494"
 ---
-
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Créer un modèle de traitement de formulaire dans Microsoft SharePoint Syntex
 
 </br>
@@ -69,13 +75,13 @@ La première étape de la création d’un modèle de traitement de formulaire c
 
         - Si vous sélectionnez **Une liste existante**, dans la zone **Liste sélectionnée**, choisissez la liste que vous souhaitez utiliser.
 
-4. Lorsque vous créez un modèle de traitement de formulaire, vous créez un nouveau type de contenu SharePoint. Un type de contenu SharePoint représente une catégorie de documents qui ont des caractéristiques communes et qui partagent une collection de colonnes ou de propriétés de métadonnées pour ce contenu spécifique. Les types de contenu SharePoint sont gérés via le Centre d’administration SharePoint.
+4. Lorsque vous créez un modèle de traitement de formulaire, vous créez un nouveau type de contenu SharePoint. Un type de contenu SharePoint représente une catégorie de documents qui ont des caractéristiques communes et qui partagent une collection de colonnes ou de propriétés de métadonnées pour ce contenu spécifique. SharePoint types de contenu sont gérés par le biais <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint’administration centrale</a>.
 
    Pour mapper ce modèle à un type de contenu existant dans la galerie de types de contenu SharePoint, sélectionnez **Paramètres avancés**.
 
     ![Capture d’écran montrant les paramètres avancés dans le panneau Créer un modèle pour traiter les formulaires.](../media/content-understanding/new-form-model-advanced-settings.png) 
 
-   1. Dans la section **Type de contenu** , choisissez de créer un type de contenu ou d’en utiliser un existant. 
+   1. Dans la <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">galerie de types de contenu</a>, choisissez s’il faut créer un type de contenu ou en utiliser un existant. 
 
    2. Pour utiliser un type de contenu existant, sélectionnez **Sélectionnez un**, puis choisissez un type de contenu dans la liste.
 
@@ -141,7 +147,7 @@ Deux flux sont disponibles pour traiter un fichier sélectionné ou un lot de fi
 
     ![Screenshot showing the Automate menu with Extract info highlighted.](../media/content-understanding/automate-extract-info.png)  
 
-- **Extraire des informations à partir de fichiers avec un** modèle de traitement de formulaire : utilisez-les avec des modèles de traitement de formulaire pour lire et extraire des informations d’un lot de fichiers. Traite jusqu’à 5 000 fichiers SharePoint à la fois. Lorsque vous exécutez ce flux, vous pouvez définir certains paramètres. Vous pouvez :
+- **Extraire des informations à partir de fichiers avec un** modèle de traitement de formulaire : utilisez-les avec des modèles de traitement de formulaire pour lire et extraire des informations d’un lot de fichiers. Traite jusqu’à 5 000 SharePoint fichiers à la fois. Lorsque vous exécutez ce flux, vous pouvez définir certains paramètres. Vous pouvez :
 
     - Choisissez d’inclure ou non les fichiers précédemment traitées (la valeur par défaut n’inclut pas les fichiers précédemment traitées).
     - Sélectionnez le nombre de fichiers à traiter (la valeur par défaut est 100 fichiers).
@@ -158,7 +164,7 @@ Lorsqu’un modèle est marqué avec la **date de classification**, vous pouvez 
 
 Pour exécuter le flux :
 
-1. Sélectionnez un fichier, puis sélectionnez **Intégrer** >  **Power Automate** >  **Créer un flux**.
+1. Sélectionnez un fichier, puis **sélectionnez** >  **Intégrer Power Automate** >  **Créer un flux**.
 
 2. Dans le **panneau Créer un flux**, **sélectionnez Envoyer un message électronique après SharePoint Syntex un fichier**.
 

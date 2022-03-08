@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide de la formation sur la simulation d’attaques dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 065b456d5a53a4d803c67ac0ac6ddc270391851a
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 31c8fd7b0369e5af522cd79b9bee7c5ee8460cc5
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295438"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329640"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Simuler une attaque par hameçonnage avec une formation de simulation d’attaque dans Defender pour Office 365
 
@@ -88,7 +88,7 @@ Si vous cliquez **sur Filtre**, les filtres suivants sont disponibles :
   - **Faible**
   - **Moyenne**
   - **Élevée**
-- **Source** : indique si la charge utile a été créée dans votre organisation ou fait partie du catalogue de charges utiles pré-existant de Microsoft. Les valeurs valides sont les suivantes :
+- **Source** : indique si la charge utile a été créée dans votre organisation ou fait partie du catalogue de charges utiles pré-existant de Microsoft. Les valeurs valides sont les suivantes :
   - **Global** (intégré)
   - **Client** (personnalisé)
   - **All**
@@ -361,6 +361,7 @@ Les paramètres suivants sont disponibles :
     - **Sélectionner l’heure de lancement**
 - **Configurez le nombre de jours après la fin de la simulation** : la valeur par défaut est 2.
 - **Activer la remise du fuseau horaire** en fonction de la région : remettre des messages d’attaque simulée à vos employés pendant leurs heures de travail en fonction de leur région.
+- **Affichez la page de données interstitielles de technique drive-by** recueillies : vous pouvez afficher la superposition qui s’affiche pour les attaques de technique d’URL drive-bu. Pour masquer la superposition et aller directement sur la page d’accueil, désélecrez cette option.
 
 Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -374,4 +375,4 @@ Vous pouvez sélectionner **Modifier** dans chaque section pour modifier les par
 
 Lorsque vous avez terminé, cliquez sur **Envoyer**.
 
-![Examinez la page de simulation dans la formation sur la simulation d’attaques sur Microsoft 365 Defender web.](../../media/attack-sim-training-simulations-review-simulation.png)
+![Examinez la page de simulation dans la formation sur la simulation d’attaques dans le portail Microsoft 365 Defender.](../../media/attack-sim-training-simulations-review-simulation.png)

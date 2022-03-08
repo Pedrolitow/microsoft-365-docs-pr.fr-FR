@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: da12be831aa93032b5d087d36e551df0f6370560
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c922213a262fdc9c61d6f79d0205e6ead96fd44a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191514"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326424"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Actions de correction dans Microsoft 365 Defender
 
@@ -50,17 +50,17 @@ Le tableau suivant récapitule les actions de correction actuellement prises en 
 |:---------|:---------|
 |- Collecter le package d’examen <br/>- Isoler l’appareil (cette action peut être annulée)<br/>- Appareil hors-carte <br/>- Exécution du code de publication <br/>- Sortir de la quarantaine <br/>- Exemple de requête <br/>- Restreindre l’exécution du code (cette action peut être annulée) <br/>- Exécuter une analyse antivirus <br/>- Arrêter et mettre en quarantaine      |- Bloquer l’URL (heure du clic)<br/>- Suppression de messages électroniques ou de clusters de suppression (soft)<br/>- E-mail de mise en quarantaine<br/>- Mettre en quarantaine une pièce jointe d’un e-mail<br/>- Désactiver le forwarding de courrier externe          |
 
-Les actions de correction, qu’elles soient en attente d’approbation ou déjà terminées, peuvent être vues dans le centre [de correction.](m365d-action-center.md)
+Les actions de correction, qu’elles soient en attente d’approbation ou déjà terminées, peuvent être vues dans le centre [de correction](m365d-action-center.md).
 
 ## <a name="remediation-actions-that-follow-automated-investigations"></a>Actions de correction qui suivent des enquêtes automatisées
 
-Lorsqu’une enquête automatisée se termine, un verdict est atteint pour chaque élément de preuve impliqué. Selon le verdict, les actions de correction sont identifiées. Dans certains cas, des actions de correction sont effectuées automatiquement. dans d’autres cas, les actions de correction attendent une approbation. Tout dépend de la façon dont [l’examen et la réponse automatisés sont configurés.](m365d-configure-auto-investigation-response.md)
+Lorsqu’une enquête automatisée se termine, un verdict est atteint pour chaque élément de preuve impliqué. Selon le verdict, les actions de correction sont identifiées. Dans certains cas, des actions de correction sont effectuées automatiquement. dans d’autres cas, les actions de correction attendent une approbation. Tout dépend de la façon dont [l’examen et la réponse automatisés sont configurés](m365d-configure-auto-investigation-response.md).
 
 Le tableau suivant répertorie les verdicts et résultats possibles :
 
 | Verdict    | Entités affectées    | Résultats|
 |------|------|------|
-| Malveillant    | Appareils (points de terminaison)    | Des mesures correctives sont prises automatiquement [](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) (en supposant que les groupes d’appareils de votre organisation sont entièrement corrects - corriger **les menaces automatiquement)**|
+| Malveillant    | Appareils (points de terminaison)    | Des mesures correctives sont prises automatiquement (en supposant que [](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) les groupes d’appareils de votre organisation sont entièrement corrects **; corriger les menaces automatiquement**)|
 | Malveillant    | Contenu de l’e-mail (URL ou pièces jointes) | Les actions de correction recommandées sont en attente d’approbation|
 | Suspect    | Appareils ou contenu de l’e-mail | Les actions de correction recommandées sont en attente d’approbation|
 | Aucune menace détectée    | Appareils ou contenu de l’e-mail    | Aucune action de correction n’est nécessaire|
@@ -75,7 +75,7 @@ En plus des actions de correction qui suivent des enquêtes automatisées, votre
 - [Action de recherche](../defender-endpoint/advanced-hunting-overview.md) avancée sur les appareils ou les e-mails
 - [Action de](../office-365-security/threat-explorer.md) l’Explorateur sur le contenu du courrier électronique, telle que le déplacement du courrier électronique vers le courrier indésirable, la suppression possible ou la suppression de courrier électronique
 - Action [de réponse en direct](/windows/security/threat-protection/microsoft-defender-atp/live-response) manuelle, telle que la suppression d’un fichier, l’arrêt d’un processus et la suppression d’une tâche programmée
-- Action de réponse en direct [avec les API microsoft Defender pour](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)les points de terminaison, telles que l’isolation d’un appareil, l’exécution d’une analyse antivirus et l’obtention d’informations sur un fichier
+- Action de réponse en direct [avec les API Microsoft Defender pour les](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis) points de terminaison, telles que l’isolation d’un appareil, l’exécution d’une analyse antivirus et l’obtention d’informations sur un fichier
 
 ## <a name="next-steps"></a>Étapes suivantes
 

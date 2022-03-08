@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f66f98d8de585d8b92fad50f70ad812b861d9202
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: c54d2989941d5c91cc2626941af36cf6cdf205ce
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903894"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329556"
 ---
 # <a name="investigate-and-respond-with-microsoft-365-defender"></a>Examiner et répondre à l’Microsoft 365 Defender
 
@@ -59,13 +59,13 @@ Si votre organisation utilise Microsoft 365 Defender, votre équipe des opérati
 
 Lorsqu’une enquête automatisée se termine, un verdict est atteint pour chaque élément de preuve d’un incident. Selon le verdict, les actions de correction sont identifiées. Dans certains cas, des actions de correction sont prises automatiquement . dans d’autres cas, les actions de correction attendent l’approbation du centre Microsoft 365 Defender actions. 
 
-Pour plus [d’informations, voir](m365d-autoir.md) Examen et réponse automatisés Microsoft 365 Defender’informations.
+Pour plus [d’informations, voir Examen et réponse automatisés Microsoft 365 Defender’informations](m365d-autoir.md).
 
 ## <a name="proactive-search-for-threats-with-advanced-hunting"></a>Recherche proactive des menaces avec le recherche avancée
 
 Il ne suffit pas de répondre aux attaques à mesure qu’elles se produisent. Pour les attaques étendues en plusieurs phases telles que les ransomware, vous devez rechercher de manière proactive les preuves d’une attaque en cours et prendre des mesures pour l’arrêter avant qu’elle ne se termine.
 
-Le recherche avancée est un outil de recherche de menace basé sur une requête dans Microsoft 365 Defender qui vous permet d’explorer jusqu’à 30 jours de données brutes. Vous pouvez inspecter de manière proactive les événements de votre réseau pour localiser les indicateurs et entités de menace. Cet accès flexible aux données Microsoft 365 Defender permet un recherche sans contraintes pour les menaces connues et potentielles.
+Le recherche avancée est un outil de recherche de menace basé sur une requête dans Microsoft 365 Defender qui vous permet d’explorer jusqu’à 30 jours de données brutes. Vous pouvez inspecter de manière proactive les événements de votre réseau pour localiser les indicateurs et entités de menace. Cet accès flexible aux données Microsoft 365 Defender permet un recherche sans contrainte pour les menaces connues et potentielles.
 
 Vous pouvez utiliser les mêmes requêtes de repérage de menaces pour créer des règles de détection personnalisées. Ces règles s’exécutent automatiquement pour vérifier et répondre aux activités suspectées de violation, aux ordinateurs mal configurés et à d’autres conclusions.
 

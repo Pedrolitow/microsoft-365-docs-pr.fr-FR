@@ -11,14 +11,15 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Utilisez la taxonomie du magasin de termes lors de la création d’un extracteur dans votre modèle de compréhension de document via Microsoft SharePoint Syntex.
-ms.openlocfilehash: dd064a1e93692f79b5cfc5417b0b5b09df09c9fd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 909f26026ddf26163a12e1d14c1790f4af93a160
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197484"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328804"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>Tirez parti de la taxonomie du magasin de termes lors de la création d’un extracteur dans Microsoft SharePoint Syntex
 
@@ -36,7 +37,7 @@ Par exemple, votre modèle identifie et classe tous les documents **Contrat** ch
 
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>Utiliser une colonne de métadonnées gérées dans l’extracteur
 
-Les ensembles de termes sont configurés dans le magasin de termes Services de métadonnées gérées (MMS) dans le Centre d’administration SharePoint. Dans l’exemple ci-dessous, *l’ensemble de termes* [Services de contrat](/sharepoint/managed-metadata#term-set) est configuré pour inclure un nombre de termes, y compris *Créatif*.  Les détails indiquent que le terme a trois synonymes (*Conception*, *Graphiques* et *Topographie*). Il convient de les renommer *Créatif*. 
+Les ensembles de termes sont configurés dans le magasin de termes MMS (Managed Metadata Services) du <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centre d’administration SharePoint</a>. Dans l’exemple ci-dessous, *l’ensemble de termes* [Services de contrat](/sharepoint/managed-metadata#term-set) est configuré pour inclure un nombre de termes, y compris *Créatif*.  Les détails indiquent que le terme a trois synonymes (*Conception*, *Graphiques* et *Topographie*). Il convient de les renommer *Créatif*. 
 
    ![Ensemble de termes.](../media/content-understanding/term-store.png)</br>
 

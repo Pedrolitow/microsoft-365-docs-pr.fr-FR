@@ -11,17 +11,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dee6cec53ef6a3412d110837037f1de48fc6e92f
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: b707a6f684df6b9888fb8f2d50c4bba9a6dd3195
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765575"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324170"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Examiner les appareils de la liste Microsoft Defender pour les appareils de point de terminaison
 
@@ -152,7 +150,7 @@ Pour examiner plus en détail l’événement et les événements connexes, [](a
 
 ### <a name="security-recommendations"></a>Recommandations de sécurité
 
-**Les recommandations de sécurité sont générées** à partir de Microsoft Defender pour la fonctionnalité de gestion des menaces [& des vulnérabilités](tvm-dashboard-insights.md) du point de terminaison. La sélection d’une recommandation affiche un panneau dans lequel vous pouvez afficher des détails pertinents, tels que la description de la recommandation et les risques potentiels associés à sa non-adoption. Pour plus [d’informations, voir](tvm-security-recommendation.md) recommandations en matière de sécurité.
+**Des recommandations en matière** de sécurité sont générées à partir de Microsoft Defender pour la fonctionnalité gestion des menaces [& vulnérabilités du point de](tvm-dashboard-insights.md) terminaison. La sélection d’une recommandation affiche un panneau dans lequel vous pouvez afficher des détails pertinents, tels que la description de la recommandation et les risques potentiels associés à sa non-adoption. Pour plus [d’informations, voir](tvm-security-recommendation.md) recommandations en matière de sécurité.
 
 ![Image de l’onglet Recommandations de sécurité.](images/security-recommendations-device.png)
 

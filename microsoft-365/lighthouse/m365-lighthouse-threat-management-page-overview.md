@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Lighthouse Vue d’ensemble de la page Gestion des menaces
+title: vue d Microsoft 365 Lighthouse de la page gestion des menaces
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,37 +16,34 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la page Gestion des menaces.
-ms.openlocfilehash: 6eb5ed0c37295a7683b2eb16068f96f912aefb91
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e57163ba462e241c74a96db78fe701c024a037ff
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178670"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329876"
 ---
-# <a name="microsoft-365-lighthouse-threat-management-page-overview"></a>Microsoft 365 Lighthouse Vue d’ensemble de la page Gestion des menaces 
-
-> [!NOTE]
-> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences.](m365-lighthouse-requirements.md) Si votre organisation n’a pas de Microsoft 365 Lighthouse, voir [S’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+# <a name="microsoft-365-lighthouse-threat-management-page-overview"></a>vue d Microsoft 365 Lighthouse de la page gestion des menaces 
 
 **S’applique à :**
 
 - Windows 10
 
-Antivirus Microsoft Defender protège les clients, les utilisateurs et les appareils contre les menaces logicielles, notamment les virus, les programmes malveillants et les logiciels espions. Il s’agit d’une protection robuste et continue intégrée à Windows 10 et incluse avec Microsoft 365 Business Premium et Microsoft &nbsp; 365 &nbsp; E3.  
+Antivirus Microsoft Defender les clients, les utilisateurs et les appareils contre les menaces logicielles, notamment les virus, les programmes malveillants et les logiciels espions. Il s’agit d’une protection robuste et continue intégrée à Windows 10 et incluse avec Microsoft 365 Business Premium et Microsoft365E3&nbsp;&nbsp;.  
   
-Pour accéder à la page Gestion des  menaces dans Microsoft 365 Lighthouse, sélectionnez Gestion des menaces dans le volet de navigation de gauche pour afficher la posture de sécurité de vos clients contre les menaces. Vous verrez des clients, des utilisateurs et des appareils qui nécessitent votre attention et des recommandations qui vous aideront à réduire les risques.  
+Pour accéder à la page Gestion des menaces dans Microsoft 365 Lighthouse, sélectionnez Gestion des menaces dans le volet de navigation de gauche pour afficher la posture de sécurité de vos clients contre les menaces. Vous verrez des clients, des utilisateurs et des appareils qui nécessitent votre attention et des recommandations qui vous aideront à réduire les risques.  
   
 ## <a name="overview-tab"></a>Onglet Overview  
   
 Sous l’onglet Vue d’ensemble de la page Gestion des menaces, vous pouvez surveiller l’état antivirus de tous vos locataires pour identifier les domaines qui doivent être surveillés.
 
-:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-overview-tab.png" alt-text="Capture d’écran de l’onglet Vue d'>.":::
+:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-overview-tab.png" alt-text="Capture d’écran de l’onglet Vue d’ensemble.":::
 
 ## <a name="threats-tab"></a>Onglet Menaces
 
 Sous l’onglet Menaces de la page Gestion des menaces, vous pouvez voir les menaces actives, atténuées, résolues et autorisées sur tous vos locataires. Vous pouvez également résoudre plusieurs menaces en même temps sur tous vos clients en filtrant et en explorant chaque menace pour savoir quels appareils, utilisateurs ou clients sont affectés.
 
-:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-threats-tab.png" alt-text="Capture d’écran de la page de référence par défaut.>.":::
+:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-threats-tab.png" alt-text="Capture d’écran de la page de référence par défaut.":::
   
 Vous pouvez filtrer les menaces en :
 
@@ -62,10 +59,10 @@ Le tableau suivant répertorie les différents états des menaces et leur défin
 | Actif | La menace est active sur l’appareil. |
 | Aucun état | L’état de la menace n’est pas disponible. Exécutez une analyse complète sur l’appareil pour Antivirus Microsoft Defender la menace. |
 | Échec de l’action | L’appareil n’est pas en danger. Une action a échoué, mais une menace potentielle a été arrêtée et n’est pas active sur l’appareil. Exécutez une analyse complète sur l’appareil. |
-| Étapes manuelles requises | La menace a été arrêtée, mais une étape manuelle doit être effectuée, telle qu’une analyse complète ou un redémarrage de l’appareil. |
+| Étapes manuelles requises | La menace a été arrêtée, mais elle nécessite une étape manuelle, telle qu’une analyse complète ou un redémarrage de l’appareil. |
 | Analyse complète requise | Une analyse complète de l’appareil est requise. |
 | Redémarrage requis | Un redémarrage de l’appareil est requis. |
-| Correction en cas d’échecs non critiques | La menace a été corrigé et aucune autre action n’est nécessaire. |
+| Correction avec défaillances non critiques | La menace a été corrigé et aucune autre action n’est nécessaire. |
 | Mis en quarantaine | La menace a été mise en quarantaine. Aucune autre action n’est nécessaire. |
 | Supprimé | La menace a été correctement supprimée de l’appareil. Aucune autre action n’est nécessaire. |
 | Nettoyé | Antivirus Microsoft Defender des fichiers récupérés et inextérés. Aucune autre action n’est nécessaire. |

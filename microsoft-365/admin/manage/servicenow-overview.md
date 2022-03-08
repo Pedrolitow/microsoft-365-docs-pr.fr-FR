@@ -2,8 +2,8 @@
 title: Vue d’ensemble de l’intégration de la prise en charge Microsoft 365 avec la configuration ServiceNow
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -17,24 +17,24 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guide de configuration et d’installation d’applications certifiées étendues pour ServiceNow.
-ms.openlocfilehash: 99024eabd4009dcdd14b3d999afe5ee1875fe23e
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.openlocfilehash: dc69f6210eda4ba04dfd0aecf9795bfcba2efe22
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62825326"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324324"
 ---
 # <a name="microsoft-365-support-integration-with-servicenow-configuration-overview"></a>Vue d’ensemble de l’intégration de la prise en charge Microsoft 365 avec la configuration ServiceNow
 
 Le contenu suivant s’applique au Microsoft 365 l’application de prise en charge de l’intégration avec une version minimale de **1.0.7**.
 
-**Microsoft 365'intégration du support** technique vous permet d’intégrer Microsoft 365 aide, de support et d’état du service à vos instances ServiceNow. Vous pouvez effectuer des recherches sur les problèmes connus et signalés par Microsoft, résoudre les incidents, effectuer des tâches à l’aide de solutions recommandées par Microsoft et, si nécessaire, faire appel au support technique de Microsoft.
+**Microsoft 365 prise** en charge intégrée vous permet d’intégrer Microsoft 365 aide, de support et d’état du service à vos instances ServiceNow. Vous pouvez effectuer des recherches sur les problèmes connus et signalés par Microsoft, résoudre les incidents, effectuer des tâches à l’aide de solutions recommandées par Microsoft et, si nécessaire, faire appel au support technique de Microsoft.
 
 Pour obtenir la **Microsoft 365 l’application de prise** en charge de l’intégration à partir du magasin ServiceNow, go to the [ServiceNow Store](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
 
 ## <a name="key-features"></a>Principales fonctionnalités
 
-Voici les principales fonctionnalités que vous obtenez avec l’application d’intégration Microsoft 365 support technique dans votre instance ServiceNow :
+Voici les principales fonctionnalités que vous obtenez avec l’application Microsoft 365 prise en charge de l’intégration dans votre instance ServiceNow :
 
 - Incidents d’état du service : informations sur les incidents connus d’état du service Microsoft, notamment l’impact sur l’utilisateur, l’étendue, l’état actuel et la prochaine mise à jour attendue. À l’aide de l’apprentissage automatique, les incidents ServiceNow sont en correspondance avec les incidents d’état du service Microsoft en fonction du champ de description courte.
 
@@ -54,7 +54,7 @@ Voici les principales fonctionnalités que vous obtenez avec l’application d�
 
 Pour poursuivre avec ce guide, assurez-vous que les autorisations suivantes sont disponibles et configurées pour vos environnements pendant tout le processus :
 
-- Azure Active Directory (AAD) qui peut créer des applications Azure AD
+- Azure Active Directory administrateur (AAD) qui peut créer des applications Azure AD utilisateur
 
 - Administrateur ServiceNow
 
@@ -62,7 +62,7 @@ Pour poursuivre avec ce guide, assurez-vous que les autorisations suivantes sont
 
 ### <a name="configuration-highlights"></a>Points forts de la configuration
 
-Pour configurer Microsoft 365 **l’intégration :**
+Pour configurer **l’Microsoft 365 l’intégration** :
 
 - Inscrivez des applications dans Microsoft Azure Active Directory (AAD) pour l’authentification des appels d’API entrants et sortants.
 
@@ -82,14 +82,17 @@ Autorisations requises :
 
 Une fois l Microsoft 365'application d’intégration de support technique installée, deux accès d’étendues croisées d’applications sont créés. Si elles ne sont pas créées correctement, créez-les manuellement.
 
-## <a name="what-configuration-is-right-for-your-organization"></a>Quelle est la configuration qui est la bonne pour votre organisation ?
+## <a name="setup-the-integration"></a>Configurer l’intégration
 
 Une fois que vous avez téléchargé l’application, accédez à l’Assistant Microsoft 365 de configuration dans votre environnement SOFT pour terminer le processus d’installation.
 :::image type="content" source="../../media/154124985-76e13e7d-b32e-4741-830b-bbb110d3ecbf.png" alt-text="Assistant Installation de la chasse":::
 
 Pour en savoir plus sur les étapes à suivre, consultez les pages suivantes :
-- Si votre environnement ServiceNow autorise l’authentification de base (accès avec les informations d’identification de l’utilisateur ServiceNow) pour les appels de service web entrants, suivez les instructions de la procédure [Set up Microsoft 365 pour](servicenow-basic-authentication.md) prendre en charge l’intégration avec l’authentification de base ServiceNow.
+- Si votre environnement ServiceNow autorise l’authentification de base (accès avec les informations d’identification de l’utilisateur ServiceNow) pour les appels de service web entrants, suivez les instructions de la procédure [Set up Microsoft 365 support integration with ServiceNow Basic Authentication](servicenow-basic-authentication.md).
 - Si votre environnement ServiceNow n’autorise PAS l’authentification de base (accès avec les informations d’identification de l’utilisateur ServiceNow) pour les appels de service web entrants, suivez les instructions de la procédure [Set up Microsoft 365 support integration with Azure AD Auth Token](servicenow-aad-oauth-token.md).
   - Cette configuration nécessite un client DSO pour que le jeton AAD auth fonctionne correctement.
 
-Pour comprendre chaque fonctionnalité, consultez la [Microsoft 365 l’intégration](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
+Pour comprendre chaque fonctionnalité, voir Microsoft 365 [l’intégration](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
+
+> [!NOTE]
+> Cette application n’est pas prise en charge dans les environnements réglementés ou restreints.

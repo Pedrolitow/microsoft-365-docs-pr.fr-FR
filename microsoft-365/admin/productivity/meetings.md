@@ -2,8 +2,8 @@
 title: Score de productivité Microsoft - Réunions
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,24 +19,24 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Détails des réunions : les utilisateurs ont un score de productivité.'
-ms.openlocfilehash: 8de609ee167ed48b7c724ee261832d73ef844f8d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 88aae1ac85e9e8f91592bdd17b6a14bb897d9051
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153977"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328566"
 ---
 # <a name="meetings--people-experiences"></a>Réunions : expériences de personnes
 
-Le Score de productivité fournit des informations sur la transformation numérique de votre organisation tout au long de son utilisation des Microsoft 365 et des expériences technologiques qui la supportent. Le score de votre organisation reflète les mesures de l’expérience des personnes et des technologies et peut être comparé aux critères d’organisations similaires aux vôtres. La catégorie réunions fait partie des mesures d’expérience des personnes. Pour en savoir plus, consultez la vue [d’ensemble](https://privacy.microsoft.com/privacystatement)du Score [de](productivity-score.md) productivité et lisez la déclaration de confidentialité de Microsoft.
+Le Score de productivité fournit des informations sur la transformation numérique de votre organisation tout au long de son utilisation des Microsoft 365 et des expériences technologiques qui la supportent. Le score de votre organisation reflète les mesures de l’expérience des personnes et des technologies et peut être comparé aux critères d’organisations similaires aux vôtres. La catégorie réunions fait partie des mesures d’expérience des personnes. Pour en savoir plus, consultez la vue [d’ensemble du Score de](productivity-score.md) productivité et lisez [la déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/privacystatement).
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prerequisites
 
 Pour commencer à connaître les informations sur les réunions, les membres de votre organisation doivent être titulaires d’une licence pour :
 
 - Microsoft Teams
 
-Pour plus d’informations, voir [attribuer des licences aux utilisateurs.](../manage/assign-licenses-to-users.md)
+Pour plus d’informations, consultez [Attribuer des licences aux utilisateurs](../manage/assign-licenses-to-users.md).
 
 Une fois que les utilisateurs ont été actifs Teams au moins une fois au cours des 28 derniers jours, vous commencez à voir les informations.
 
@@ -50,12 +50,12 @@ Nous fournissons un aperçu principal de l’expérience qui contient les mesure
 
 ### <a name="primary-insight"></a>Informations principales
 
-Microsoft Teams s’intégrer Outlook calendrier et fournit un grand nombre de fonctionnalités pour rendre vos réunions plus attrayantes et plus efficaces. L’aperçu principal examine toutes les Microsoft Teams en ligne qui ont eu lieu dans votre organisation. L’aperçu principal suit également le nombre de réunions qui suivent au moins l’une des meilleures pratiques Teams réunions.
+Microsoft Teams s’intégrer Outlook calendrier et offre un grand nombre de fonctionnalités pour rendre vos réunions plus attrayantes et plus efficaces. L’aperçu principal examine toutes les Microsoft Teams en ligne qui ont eu lieu dans votre organisation. L’aperçu principal suit également le nombre de réunions qui suivent au moins l’une des meilleures pratiques Teams réunions.
 
 :::image type="content" source="../../media/primaryinsights-meetings.png" alt-text="Informations sur PRimary pour les réunions avec les meilleures pratiques.":::
 
-1. **En-tête :** Indique le pourcentage de réunions en ligne Microsoft Teams qui ont eu lieu au cours des 28 derniers jours et qui ont eu un partage vidéo ou d’écran au cours de la réunion.
-2. **Corps :** Fournit plus d’informations sur la façon dont le suivi des meilleures pratiques d’engagement au cours d’une réunion, telles que l’utilisation de vidéos ou de partages d’écran, peut rendre les réunions plus efficaces.
+1. **En-tête :** Indique le pourcentage de réunions en ligne Microsoft Teams au cours des 28 derniers jours qui ont fait l’expérience d’un partage vidéo ou d’écran au cours de la réunion.
+2. **Corps :** Fournit plus d’informations sur la façon dont le suivi des meilleures pratiques d’engagement au cours d’une réunion, telles que l’utilisation de la vidéo ou du partage d’écran, peut rendre les réunions plus efficaces.
 3. **Visualisation (état actuel) :**
 
       - Dans ce graphique à barres horizontal, la partie bleue (couleur) représente le pourcentage affiché dans l’en-tête
@@ -67,7 +67,7 @@ Microsoft Teams s’intégrer Outlook calendrier et fournit un grand nombre de f
 
 #### <a name="trend-visualization-of-the-primary-insight"></a>Visualisation de la tendance de l’aperçu principal
 
-Le graphique suivant montre les lignes de tendance du numérateur et du dénominateur de la mesure clé à partir de l’aperçu principal. En d’autres termes, il indique le nombre de réunions Microsoft Teams en ligne avec les meilleures pratiques, telles que le partage vidéo ou d’écran, et le nombre total de réunions Microsoft Teams en ligne organisées au cours des 180 derniers jours. Chaque point de données du graphique en lignes est un agrégat de l’activité des 28 derniers jours.
+Le graphique suivant montre les lignes de tendance du numérateur et du dénominateur de la mesure clé à partir de l’aperçu principal. En d’autres termes, il indique le nombre de réunions Microsoft Teams en ligne avec les meilleures pratiques, telles que le partage vidéo ou d’écran, et le nombre total de réunions Microsoft Teams en ligne tenues au cours des 180 derniers jours. Chaque point de données du graphique en lignes est un agrégat de l’activité des 28 derniers jours.
 
 :::image type="content" source="../../media/number-meeting-over-time.png" alt-text="Graphique montrant le nombre de réunions Teams en ligne au cours des 28 derniers jours.":::
 
@@ -81,16 +81,16 @@ Nous vous fournissons également des informations de support pour vous aider à 
 
 ### <a name="breakdown-of-how-many-meetings-follow-best-practices"></a>Répartition du nombre de réunions selon les meilleures pratiques
 
-:::image type="content" source="../../media/videouse-meetings.png" alt-text="Graphique montrant les principales informations pour les réunions : expériences de personnes.":::
+:::image type="content" source="../../media/videouse-meetings.png" alt-text="Graphique montrant les principales informations sur les réunions : expériences utilisateur.":::
 
 1. **En-tête :**  Met en évidence le pourcentage de réunions Microsoft Teams en ligne qui utilisent les meilleures pratiques vidéo considérées dans les informations et le score principaux.
 2. **Corps :** Approuve les informations sur la valeur de l’utilisation de ces pratiques pendant les réunions pour les rendre plus attrayantes. 
 3. **Visualisation :** La répartition dans la visualisation est destinée à représenter la mesure dans laquelle les réunions Microsoft Teams en ligne suivent chacune des meilleures pratiques suivantes : 
-    - **Vidéo**: la partie colorée et la fraction représentent le pourcentage de réunions Microsoft Teams en ligne pour qui la vidéo est allumée. La fraction est construite à partir de : 
-        - Numérateur : en ligne Microsoft Teams réunions organisées au cours des 28 derniers jours où la vidéo d’au moins un participant a été désactivée. 
+    - **Vidéo** : la partie couleur et la fraction représentent le pourcentage de réunions Microsoft Teams en ligne pour qui la vidéo est allumée. La fraction est construite à partir de : 
+        - Numérateur : Microsoft Teams réunions en ligne tenues au cours des 28 derniers jours où la vidéo d’au moins un participant a été désactivée. 
         - Dénominateur : nombre total de réunions en ligne Microsoft Teams tenues dans votre organisation au cours des 28 derniers jours 
-    - **Partage d’écran**: la partie colorée et la fraction représentent le pourcentage de réunions Microsoft Teams en ligne dans lesquelles les personnes ont utilisé la fonctionnalité de partage d’écran. La fraction inclut : 
-        - Numérateur : en ligne Microsoft Teams réunions tenues au cours des 28 derniers jours, où au moins un participant a partagé son écran.
+    - **Partage d’écran** : la partie couleur et la fraction représentent le pourcentage de réunions Microsoft Teams en ligne au cours des lesquelles les personnes ont utilisé la fonctionnalité de partage d’écran. La fraction inclut : 
+        - Numérateur : en ligne Microsoft Teams réunions tenues au cours des 28 derniers jours au cours des 28 derniers jours où au moins un participant a partagé son écran.
         - Dénominateur : nombre total de réunions en ligne Microsoft Teams au cours des 28 derniers jours au cours des 28 derniers jours
 
 
@@ -101,40 +101,40 @@ Nous vous fournissons également des informations de support pour vous aider à 
 1. **En-tête :** Indique le pourcentage de personnes de votre organisation qui participent à des réunions en ligne Microsoft Teams plus de 20 heures par semaine en moyenne, en fonction de leur activité au cours des 28 derniers jours.
 2. **Corps :** Fournit des détails sur la valeur de l’utilisation des meilleures pratiques de réunion pour rendre les réunions engagées et productives
 3. **Visualisation :** Fournit une vue des membres de votre organisation en fonction de leur temps moyen passé par semaine dans les réunions au cours des 28 derniers jours. Les informations suivantes sont fournies pour chaque catégorie :
-      - **Nombre total de participants à la réunion :** Indique le nombre de personnes de votre organisation qui ont participé à des réunions, en fonction de la plage de durée moyenne de réunion, au cours des 28 derniers jours. Par exemple, la catégorie 6 à 10 heures indique le nombre de personnes qui ont participé à des réunions pendant une moyenne de ce nombre d’heures par semaine au cours des 28 derniers jours.
+      - **Nombre total de participants à la réunion :** Indique le nombre de personnes de votre organisation qui ont participé à des réunions, en fonction de la plage moyenne de durées de réunion, au cours des 28 derniers jours. Par exemple, la catégorie 6 à 10 heures indique le nombre de personnes qui ont participé à des réunions pendant une moyenne de ce nombre d’heures par semaine au cours des 28 derniers jours.
       - **Participants aux réunions avec vidéo :** Pour chaque catégorie, cela indique le nombre de personnes de votre organisation qui ont eu une réunion avec une vidéo au cours des 28 derniers jours.
       - **Participants aux réunions avec partage d’écran :** Pour chaque catégorie, cela indique le nombre de personnes qui ont été dans une réunion qui a inclus le partage d’écran au cours des 28 derniers jours.
 
-### <a name="distribution-of-meeting-length-by-type"></a>Répartition de la durée des réunions par type
+### <a name="distribution-of-meeting-length-by-type"></a>Répartition de la durée de réunion par type
 
-:::image type="content" source="../../media/distribution-meetinglength.png" alt-text="Graphique shows distribution of meeting lengths.":::
+:::image type="content" source="../../media/distribution-meetinglength.png" alt-text="Graphique  shows distribution of meeting lengths.":::
 
-1. **En-tête :** Indique le pourcentage d’instants (non précédemment programmés) Microsoft Teams réunions en ligne au cours des 28 derniers jours qui ont moins de 30 minutes.
+1. **En-tête :** Indique le pourcentage d’instants (non programmés) pendant Microsoft Teams réunions en ligne au cours des 28 derniers jours qui ont moins de 30 minutes.
 2. **Corps :** Fournit des informations sur l’utilisation de réunions instantanées pour résoudre rapidement les problèmes.
 3. **Visualisation :** Fournit la répartition (en minutes) des réunions instantanées et prévues qui ont eu lieu dans votre organisation au cours des 28 derniers jours. La distribution classe chaque réunion en 1 à 15 minutes, 16 à 30 minutes, 31 à 60 minutes et supérieure à 60 minutes.
 
     > [!NOTE]
-    > Les réunions prévues incluent toutes les réunions qui apparaissent dans les calendriers des personnes. Les réunions instantanées incluent les appels, y compris les appels 1:1 et de groupe, ainsi que les réunions démarrées à l’aide de la fonctionnalité Conférence maintenant dans &quot; &quot; Microsoft Teams canaux.
+    > Les réunions prévues incluent toutes les réunions qui apparaissent dans les calendriers des personnes. Les réunions instantanées incluent les appels, y compris les appels 1:1 et de groupe, &quot;&quot; ainsi que les réunions démarrées à l’aide de la fonctionnalité Conférence Microsoft Teams canaux.
 
 
 ### <a name="use-of-different-meeting-types"></a>Utilisation de différents types de réunion
 
-:::image type="content" source="../../media/percentparticipation-meetingtypes.jpg" alt-text="Graphique shows percent participation in different meeting types.":::
+:::image type="content" source="../../media/percentparticipation-meetingtypes.jpg" alt-text="Graphique  shows percent participation in different meeting types.":::
 
-1. **En-tête :** Met en évidence le pourcentage de réunions Microsoft Teams instantanées en ligne au cours des 28 jours précédents qui ont une durée inférieure à 30 minutes.
-2. **Corps :** Fournit des informations sur la valeur de l’utilisation de &quot; Meet now dans la fonctionnalité Microsoft Teams &quot; canal.
+1. **En-tête :** Met en évidence le pourcentage de réunions instantanées Microsoft Teams en ligne au cours des 28 jours précédents qui font moins de 30 minutes.
+2. **Corps :** Fournit des informations sur la valeur de l’utilisation de &quot;Meet now&quot; dans la fonctionnalité Microsoft Teams canal.
 3. **Visualisation :** Indique le type de réunion à laquelle participent les personnes qui participent à des réunions Microsoft Teams en ligne. Chaque type de réunion est représenté sous la forme d’une barre horizontale, où la partie colorée et la fraction représentent les points suivants :
-    - **Appels instantanés 1:1**:
+    - **Appels instantanés 1:1** :
         - Numérateur : nombre de personnes participant à 1:1 appels au cours des 28 derniers jours
         - Dénominateur : nombre de personnes participant à une réunion Microsoft Teams en ligne au cours des 28 derniers jours
-   - **Appels de groupe instantanés**:
+   - **Appels de groupe instantanés** :
         - Numérateur : nombre de personnes participant à des appels de groupe au cours des 28 derniers jours
         - Dénominateur : nombre de personnes participant à une réunion Microsoft Teams en ligne au cours des 28 derniers jours
    - **Instant Meet now in channel**:
-        - Numérateur : le nombre de personnes utilisant la fonctionnalité Conférence maintenant dans Microsoft Teams canaux (pour les réunions &quot; &quot; instantanées) au cours des 28 derniers jours
+        - Numérateur : le nombre de &quot;&quot; personnes utilisant la fonctionnalité Conférence maintenant dans Microsoft Teams canaux (pour les réunions instantanées) au cours des 28 derniers jours
         - Dénominateur : nombre de personnes participant à une réunion Microsoft Teams en ligne au cours des 28 derniers jours
     - **Réunions prévues :**
-        - Numérateur : nombre de personnes participant à des réunions Microsoft Teams en ligne sur leur calendrier (prévu) au cours des 28 derniers jours
+        - Numérateur : nombre de personnes participant à des réunions Microsoft Teams en ligne sur leur calendrier (prévues) au cours des 28 derniers jours
         - Dénominateur : nombre de personnes participant à une réunion Microsoft Teams en ligne au cours des 28 derniers jours
     - **Réunions périodiques programmées :**
         - Numérateur : nombre de personnes participant à des instances de réunions périodiques sur leur calendrier (prévu) au cours des 28 derniers jours
@@ -142,7 +142,7 @@ Nous vous fournissons également des informations de support pour vous aider à 
 
 ## <a name="related-content"></a>Contenu associé
 
-[Microsoft 365'état des applications : expériences technologiques](apps-health.md) (article)\
+[Microsoft 365 santé des applications : expériences technologiques](apps-health.md) (article)\
 [Communication – Expériences des personnes](communication.md) (article)\
 [Collaboration de contenu : expériences de](content-collaboration.md) personnes (article)\
 [Mobilité : expériences de](mobility.md) personnes (article)\

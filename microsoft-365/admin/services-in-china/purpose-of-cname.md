@@ -2,8 +2,8 @@
 title: À quoi sert l'enregistrement CNAME Office 365 pour MSOID ?
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: En savoir plus sur l’enregistrement CNAME « MSOID » dans Office 365 qui vous dirige vers le meilleur serveur pour les processus d’authentification, afin que vous receviez une réponse plus rapide.
 monikerRange: o365-21vianet
-ms.openlocfilehash: e51847065ac3f91f44b8be35932869e9418e8a70
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1b053ac0df7cd770b5627b688e90641688f94141
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188792"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325122"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>À quoi sert l'enregistrement CNAME Office 365 pour MSOID ?
 
@@ -39,8 +39,8 @@ Informations techniques : lorsque vous exécutez une application cliente compati
   
 Si cet enregistrement CNAME est manquant pour votre domaine, ces applications utiliseront un point de terminaison d'authentification par défaut aux États-Unis, ce qui peut ralentir le processus d'authentification. Si cet enregistrement CNAME n'est pas correctement configuré (par exemple, si la valeur **Adresse de pointage** inclut une coquille), ces applications ne pourront pas s'authentifier.
   
- Si Office 365 les enregistrements **DNS** de votre domaine, Office 365 cet enregistrement CNAME pour vous. 
+ **Si Office 365 gère les enregistrements DNS** de votre domaine, Office 365 cet enregistrement CNAME pour vous. 
   
- Si vous gérez des enregistrements DNS pour votre domaine sur votre hôte **DNS,** vous créez cet enregistrement vous-même en suivant les instructions pour votre hôte [DNS.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
+ **Si vous gérez des enregistrements DNS** pour votre domaine sur votre hôte DNS, vous créez cet enregistrement vous-même en suivant les instructions pour votre hôte [DNS](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
   
 Si vous planifiez un déploiement Office 365 et que vous souhaitez en savoir plus sur tous les enregistrements DNS que vous devrez peut-être ajouter ou mettre à jour, lisez-les dans Référence : Enregistrements du système de noms de domaine externe pour [Office 365](../../enterprise/external-domain-name-system-records.md).

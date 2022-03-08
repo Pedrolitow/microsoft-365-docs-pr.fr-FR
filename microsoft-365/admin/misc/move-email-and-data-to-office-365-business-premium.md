@@ -2,8 +2,8 @@
 title: Déplacer le courrier électronique et les données vers Microsoft 365 Business Standard
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,17 +21,17 @@ search.appverid:
 - MOE150
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
-description: Apprenez à déplacer des données vers votre nouvelle identité d’entreprise.
-ms.openlocfilehash: d9729237f05436192928b9f5935053e329f886cb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Apprenez à déplacer des données vers votre nouvelle identité métier.
+ms.openlocfilehash: 65dd8896d421a27c0519542760bb327d4944c52c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164307"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327124"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>Déplacer le courrier électronique et les données vers Microsoft 365 Business Standard
 
-Lorsque vous faites une mise à niveau vers Microsoft 365 Business Standard, nous vous donnez une toute *nouvelle identité d’entreprise.* Vous recevez un nouveau compte de courrier ainsi qu'un compte OneDrive distinct pour vos données professionnelles. 
+Lorsque vous faites une mise à niveau vers Microsoft 365 Business Standard, nous vous donnez une toute *nouvelle identité professionnelle*. Vous recevez un nouveau compte de courrier ainsi qu'un compte OneDrive distinct pour vos données professionnelles. 
   
 Si vous voulez déplacer certaines de vos données personnelles vers votre nouvelle identité de l'entreprise, suivez les instructions ci-dessous.
   
@@ -40,7 +40,7 @@ Si vous voulez déplacer certaines de vos données personnelles vers votre nouve
  **Copier vos données à partir de OneDrive**
 1. Créez un dossier temporaire sur votre disque dur pour stocker temporairement les fichiers que vous souhaitez migrer vers Microsoft 365 entreprise.
     
-2. Accédez à et connectez-vous à l’aide du compte Microsoft que vous utilisez pour accéder [https://onedrive.live.com/](https://onedrive.live.com/) à Microsoft 365 Famille abonnement. 
+2. Accédez à [https://onedrive.live.com/](https://onedrive.live.com/) et connectez-vous à l’aide du compte Microsoft que vous utilisez pour accéder à Microsoft 365 Famille abonnement. 
     
 3. Copiez les fichiers que vous souhaitez utiliser avec Microsoft 365 entreprise dans le dossier local que vous avez créé à l’étape 1.
     
@@ -50,11 +50,11 @@ Si vous voulez déplacer certaines de vos données personnelles vers votre nouve
 2. Sélectionnez l'icône du **lanceur d'applications** dans la partie supérieure gauche, puis choisissez **OneDrive**.
   
     > [!TIP]
-    > La première fois que vous ouvrez OneDrive Entreprise, vous devez configurer votre OneDrive. Si cela se produit, dans la page Bienvenue **dans OneDrive Entreprise,** sélectionnez **Suivant**. Une OneDrive est définie, sélectionnez **Votre OneDrive est prêt.** 
+    > La première fois que vous ouvrez OneDrive Entreprise, vous devez configurer votre OneDrive. Si cela se produit, dans la page Bienvenue **OneDrive Entreprise**, sélectionnez **Suivant**. Une OneDrive est définie, sélectionnez **Votre OneDrive est prêt**. 
   
-3. Vous êtes redirigé vers un dossier OneDrive vide. Si vous souhaitez créer des sous-dossiers, sélectionnez **Nouveau** \> **dossier.**
+3. Vous êtes redirigé vers un dossier OneDrive vide. Si vous souhaitez créer des sous-dossiers, sélectionnez **Nouveau** \> **dossier**.
 
-4. Sélectionnez **Télécharger** pour copier les fichiers à partir de votre disque dur où vous avez copié OneDrive fichiers. 
+4. **Sélectionnez Télécharger** pour copier les fichiers à partir de votre disque dur où vous avez copié OneDrive fichiers. 
   
     > [!NOTE]
     >  Vous pouvez charger des fichiers individuels et des groupes de fichiers (par exemple, tous les fichiers d'un dossier particulier) simultanément, mais vous ne pouvez pas copier un dossier vers OneDrive Entreprise. Au lieu de cela, vous devez créer la structure de dossiers souhaitée sur OneDrive Entreprise. >  Si vous voulez copier des fichiers vers un dossier que vous avez créé à l'étape 4, ouvrez ce dossier avant de charger les fichiers. Dans le cas contraire, les fichiers sont chargés dans le dossier racine. Vous pouvez également déplacer vos fichiers entre des dossiers dans OneDrive Entreprise après les avoir chargés. 
@@ -74,7 +74,7 @@ Si vous voulez déplacer certaines de vos données personnelles vers votre nouve
  **Importer des informations à partir du fichier de données Outlook**
 1. Cela fusionne le courrier électronique, le calendrier, les tâches et les contacts stockés dans le fichier PST dans votre compte de messagerie Microsoft 365 entreprise.
     
-2. Pour importer les informations stockées dans le fichier PST dans votre compte de messagerie Microsoft 365 pour les entreprises, demander à chaque utilisateur d’effectuer les étapes de l’importation du courrier électronique, des contacts et du calendrier à partir d’un fichier [.pst Outlook](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
+2. Pour importer les informations stockées dans le fichier PST dans votre compte de messagerie Microsoft 365 pour les entreprises, demander à chaque utilisateur d’effectuer les étapes d’importation du courrier électronique, des contacts et du calendrier à partir d’un fichier [.pst Outlook](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
     
 ---
 

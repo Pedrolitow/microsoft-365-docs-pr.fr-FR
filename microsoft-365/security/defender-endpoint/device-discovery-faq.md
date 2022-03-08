@@ -13,17 +13,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e364a2cffcd1c18c3d220e0747010a855fafed2a
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 530846d4a7c18900f0697806bb656aa653b71947
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345950"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326158"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Questions fréquemment posées sur la découverte d’appareils
 
@@ -49,7 +47,7 @@ Vous avez la possibilité de désactiver la découverte d’appareils via la pag
 
 Dans ce mode, les points de terminaison intégrés à Microsoft Defender pour point de terminaison peuvent sonder activement les appareils observés dans le réseau pour enrichir les données collectées (avec une quantité négligeable de trafic réseau). Seuls les appareils observés par le mode de découverte de base sont activement sondés en mode standard. Ce mode est vivement recommandé pour créer un inventaire fiable et cohérent des appareils. Si vous choisissez de désactiver ce mode et de sélectionner le mode de découverte de base, vous n’aurez probablement qu’une visibilité limitée des points de terminaison nonmanagés dans votre réseau.
 
- Le mode standard exploite également les protocoles de découverte courants qui utilisent des requêtes multidiffusion dans le réseau pour trouver encore plus d’appareils, en plus de ceux qui ont été ovédés à l’aide de la méthode passive.
+ Le mode standard exploite également les protocoles de découverte courants qui utilisent des requêtes multidiffusion dans le réseau pour trouver encore plus d’appareils, en plus de ceux observés à l’aide de la méthode passive.
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>Puis-je contrôler quels appareils effectuent la découverte standard ?
 
@@ -90,7 +88,7 @@ Comme la découverte d’appareils utilise des méthodes passives pour découvri
 
 Les appareils sont activement sondés lorsque des modifications des caractéristiques de l’appareil sont observées pour s’assurer que les informations existantes sont à jour (en règle générale, les appareils ne sont interrogés qu’une seule fois par période de trois semaines).
 
-## <a name="my-security-tool-raised-alert-on-unicastscannerps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>Mon outil de sécurité a déclenché une alerte UnicastScanner.ps1 l’activité d’analyse des ports initiée par elle, que dois-je faire ?
+## <a name="my-security-tool-raised-alert-on-unicastscannerps1--psscript_guidps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>Mon outil de sécurité a déclenché une alerte sur UnicastScanner.ps1 /PSScript_{GUID}.ps1 activité d’analyse de port initiée par elle, que dois-je faire ?
 
 Les scripts d’analyse actifs sont signés par Microsoft et sont sécurisés. Vous pouvez ajouter le chemin d’accès suivant à votre liste d’exclusions : `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps1`
 
@@ -126,7 +124,7 @@ En règle générale, les appareils non utilisés ne sont sondés qu’une seule
 
 ### <a name="your-windows-device-already-runs-active-discovery"></a>Votre appareil Windows exécute déjà la découverte active
 
-Les fonctionnalités de découverte actives ont toujours été incorporées dans le système d’exploitation Windows pour rechercher des appareils, des points de terminaison et des imprimantes à proximité, pour faciliter les expériences « plug-and-play » et le partage de fichiers entre les points de terminaison du réseau. Des fonctionnalités similaires sont implémentées dans les appareils mobiles, l’équipement réseau et les applications d’inventaire pour n’en citer que quelques-uns.  
+Les fonctionnalités de découverte actives ont toujours été incorporées dans le système d’exploitation Windows pour rechercher des appareils, des points de terminaison et des imprimantes à proximité, pour faciliter les expériences « plug-and-play » et le partage de fichiers entre les points de terminaison dans le réseau. Des fonctionnalités similaires sont implémentées dans les appareils mobiles, l’équipement réseau et les applications d’inventaire pour n’en citer que quelques-uns.  
 
 La découverte standard utilise les mêmes méthodes de découverte pour identifier les appareils et avoir une visibilité unifiée pour tous les appareils de votre réseau dans l’inventaire Microsoft 365 Defender périphériques. Par exemple, la découverte standard identifie les points de terminaison à proximité dans le réseau de la même manière que Windows les imprimantes disponibles dans le réseau. 
 

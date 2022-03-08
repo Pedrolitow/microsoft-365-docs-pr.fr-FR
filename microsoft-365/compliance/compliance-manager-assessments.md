@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des évaluations dans le Gestionnaire de conformité Microsoft pour vous aider à répondre aux exigences de réglementations et de certifications importantes pour votre organisation.
-ms.openlocfilehash: 950178b638b020e9d44301db3a335c73bbb55311
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: 59f2bd89a798567d51c3e28fda574e7b9f0ba326
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62444543"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319529"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Créer et gérer des évaluations dans le Gestionnaire de conformité
 
@@ -180,9 +180,11 @@ En savoir plus sur le suivi et le score des [contrôles et des actions d’amél
 
 Lorsqu’une mise à jour est disponible pour une évaluation, vous verrez une notification et avez la possibilité d’accepter la mise à jour ou de la différer pour une période ultérieure.
 
+Des mises à jour sont disponibles pour les évaluations basées sur des modèles Microsoft, tels que ceux conçus pour être utilisés avec Microsoft 365. Si votre organisation utilise des modèles universels pour évaluer d’autres produits, l’héritage n’est peut-être pas pris en charge. Pour plus d’informations, voir [Étendre les modèles d’évaluation](compliance-manager-templates-extend.md).
+
 ### <a name="what-causes-an-update"></a>Causes d’une mise à jour
 
-Une mise à jour de l’évaluation se produit lorsqu’il existe des modifications de modèle sous-jacentes qui ont une incidence sur le score. Les modifications peuvent impliquer l’ajustement du mappage des contrôles ou d’autres instructions basées sur les modifications réglementaires ou les modifications apportées aux produits. Les mises à jour d’évaluation peuvent provenir de votre organisation (par [](compliance-manager-templates-modify.md) exemple, lorsqu’un modèle personnalisé est modifié, ainsi que de Microsoft.
+Une mise à jour de l’évaluation se produit lorsqu’il existe des modifications de modèle sous-jacentes qui ont une incidence sur le score. Les modifications peuvent impliquer l’ajustement du mappage des contrôles ou d’autres instructions basées sur les modifications réglementaires ou les modifications apportées aux produits. Les mises à jour d’évaluation peuvent provenir de votre organisation (par exemple, lorsqu’un modèle personnalisé est [modifié) ainsi](compliance-manager-templates-modify.md) que de Microsoft.
 
 Si Microsoft met à jour un modèle gestionnaire de conformité que vous avez étendu, votre évaluation héritera de ces mises à jour une fois que vous les aurez acceptées. Votre évaluation conserve les attributs supplémentaires que vous avez appliqués à l’évaluation lorsque vous l’avez étendue.
 
@@ -225,7 +227,7 @@ Si vous êtes en train d’effectuer une évaluation, vous voudrez peut-être vo
 
 ## <a name="export-an-assessment-report"></a>Exporter un rapport d’évaluation
 
-Vous pouvez exporter une évaluation vers un fichier Excel de conformité pour les parties prenantes de votre organisation ou pour les auditeurs externes et les régulateurs. Dans la page détails de votre évaluation,  sélectionnez le bouton Générer un rapport en haut de la page, ce qui crée un fichier Excel que vous pouvez enregistrer et partager.
+Vous pouvez exporter une évaluation vers un fichier Excel pour les parties prenantes de conformité de votre organisation ou pour les auditeurs externes et les régulateurs. Dans la page détails de votre évaluation,  sélectionnez le bouton Générer un rapport en haut de la page, ce qui crée un fichier Excel que vous pouvez enregistrer et partager.
 
 Le rapport est un instantané de l’évaluation à la date et à l’heure de l’exportation. Il contient les détails des contrôles gérés par vous et Microsoft, y compris l’état de l’implémentation, la date de test et les résultats des tests.
 

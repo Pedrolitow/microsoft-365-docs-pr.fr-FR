@@ -11,8 +11,8 @@ ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 manager: dansimp
 audience: ITPro
@@ -23,12 +23,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 362e8360900f53d7bfc9eccf12d1107091860cb9
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: cc57c2b39466e84d5652ef60c56d6951fbe86714
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903621"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324086"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Essayez d Microsoft 365 Defender fonctionnalités de réponse aux incidents dans un environnement pilote
 
@@ -108,11 +108,11 @@ Pour plus d’informations, voir [Gérer les incidents](manage-incidents.md).
 
 ## <a name="examine-automated-investigation-and-response-with-the-action-center"></a>Examiner l’examen et la réponse automatisés avec le centre de gestion de l’action
 
-Selon la façon dont les fonctionnalités d’examen et de réponse automatisées sont configurées pour votre organisation, des mesures correctives sont prises automatiquement ou uniquement après approbation par votre équipe des opérations de sécurité. Toutes les actions, qu’elles soient en attente ou terminées, sont répertoriées dans le centre de [actions, qui](m365d-action-center.md) répertorie les actions de correction en attente et terminées pour vos appareils, le contenu de collaboration des & de messagerie électronique et les identités dans un emplacement unique.
+Selon la façon dont les fonctionnalités d’examen et de réponse automatisées sont configurées pour votre organisation, des mesures correctives sont prises automatiquement ou uniquement après approbation par votre équipe des opérations de sécurité. Toutes les actions, qu’elles soient en attente ou terminées, sont répertoriées dans le centre de [actions, qui](m365d-action-center.md) répertorie les actions de correction en attente et terminées pour vos appareils, le contenu de collaboration des & de messagerie électronique et les identités à un emplacement donné.
 
 Voici un exemple.
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée dans Microsoft 365 Defender.":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée Microsoft 365 Defender.":::
 
 Dans le centre de actions, vous pouvez sélectionner les actions en attente, puis les approuver ou les rejeter dans le volet volant. Voici un exemple.
 
@@ -154,13 +154,13 @@ Une seule boîte aux lettres et périphérique interne est requis pour cette sim
 
     b. Associez le périphérique de test au domaine de test.
 
-    c. [Activer Antivirus Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Si vous avez des difficultés à activer Antivirus Windows Defender, consultez [cette rubrique de résolution des problèmes](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+    c. [Activer Antivirus Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Si vous avez des difficultés à activer Antivirus Windows Defender, [consultez cette rubrique de résolution des problèmes](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
     d. [Intégration à Microsoft Defender pour le point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 ### <a name="run-the-simulation"></a>Exécuter la simulation
 
-1. À partir d’un compte de messagerie externe, envoyez un courrier électronique à la boîte aux lettres identifiée à l’étape 2 de la section des exigences de l’environnement de recherche. Inclure une pièce jointe qui sera autorisée par le biais de toutes les stratégies de filtrage de courrier électronique existantes. Ce fichier n’a pas besoin d’être malveillant ou exécutable. Les types de fichiers suggérés <i> sont.pdf</i>, <i>.exe</i> (si autorisé) ou un type Office de document tel qu’un fichier Word.
+1. À partir d’un compte de messagerie externe, envoyez un courrier électronique à la boîte aux lettres identifiée à l’étape 2 de la section des exigences de l’environnement de recherche. Inclure une pièce jointe qui sera autorisée par le biais de toutes les stratégies de filtrage de courrier électronique existantes. Ce fichier n’a pas besoin d’être malveillant ou exécutable. Les types de fichiers suggérés <i> sont.pdf</i>, <i>.exe</i> (si autorisé) ou un type Office document tel qu’un fichier Word.
 
 2. Ouvrez le courrier électronique envoyé à partir de l’appareil configuré comme défini à l’étape 3 de la section des conditions requises pour l’environnement de recherche. Ouvrez la pièce jointe ou enregistrez le fichier sur l’appareil.
 
@@ -203,7 +203,7 @@ Une seule boîte aux lettres et périphérique interne est requis pour cette sim
 
       ![Exemple de panneau latéral d’inspection de l’enregistrement qui s’ouvre lorsqu’un résultat de recherche avancé est sélectionné.](../../media/advanced-hunting-incident-response-try-2.png)
 
-4. Maintenant que vous avez vérifié que vous pouvez voir le message électronique, ajoutez un filtre pour les pièces jointes. Concentrez-vous sur tous les e-mails avec pièces jointes dans l’environnement. Pour cette simulation, concentrez-vous sur les e-mails entrants, et non sur ceux envoyés à partir de votre environnement. Supprimez tous les filtres que vous avez ajoutés pour localiser votre message et ajoutez « | où **AttachmentCount > 0** et **EmailDirection** == **"Inbound" »**
+4. Maintenant que vous avez vérifié que vous pouvez voir le message électronique, ajoutez un filtre pour les pièces jointes. Concentrez-vous sur tous les e-mails avec pièces jointes dans l’environnement. Pour cette simulation, concentrez-vous sur les e-mails entrants, et non sur ceux envoyés à partir de votre environnement. Supprimez les filtres que vous avez ajoutés pour localiser votre message et ajoutez « | où **AttachmentCount > 0** et **EmailDirection** == **"Inbound" »**
 
    La requête suivante vous montre le résultat avec une liste plus courte que votre requête initiale pour tous les événements de courrier électronique :
 
@@ -303,4 +303,4 @@ Pour [commencer, consultez Obtenir une formation spécialisée sur la recherche]
 
 ### <a name="navigation-you-may-need"></a>Navigation dont vous aurez peut-être besoin
 
-[Créer l’Microsoft 365 Defender d’évaluation de la sécurité](eval-create-eval-environment.md)
+[Créer l’environnement d Microsoft 365 Defender évaluation de la sécurité](eval-create-eval-environment.md)

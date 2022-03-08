@@ -16,14 +16,14 @@ metadata:
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.collection: m365initiative-m365-defender
+  ms.collection: m365-security-compliance
   ms.date: 1/18/2022
-  ms.openlocfilehash: 2ead57e2c4926ad98c890759065d0f08f2ae1958
-  ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+  ms.openlocfilehash: 7699bc28f91d0d4ded4f94c24bacaffe1c342b65
+  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 02/14/2022
-  ms.locfileid: "62806671"
+  ms.lasthandoff: 03/08/2022
+  ms.locfileid: "63328706"
 title: 'Réduction de la surface d’attaque : forum aux questions (FAQ)'
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -40,11 +40,11 @@ sections:
   - question: >
       La réduction de la surface d’attaque fait-elle partie Windows ?
     answer: >
-      Asr était à l’origine une fonctionnalité de la suite de fonctionnalités Exploit Guard introduite en tant que mise à jour majeure de Antivirus Microsoft Defender, dans Windows 10, version 1709. Antivirus Microsoft Defender est le composant anti-programme malveillant natif de Windows. Toutefois, l’ensemble complet des fonctionnalités asr est disponible uniquement avec une licence Windows entreprise. Notez également que les exclusions de règles de RSA sont gérées séparément Antivirus Microsoft Defender exclusions.
+      La fonctionnalité ASR était à l’origine une fonctionnalité de la suite de fonctionnalités Exploit Guard introduite en tant que mise à jour majeure de Antivirus Microsoft Defender, dans Windows 10, version 1709. Antivirus Microsoft Defender est le composant anti-programme malveillant natif de Windows. Toutefois, l’ensemble complet des fonctionnalités asr est disponible uniquement avec une licence Windows entreprise. Notez également que les exclusions de règles de RSA sont gérées séparément Antivirus Microsoft Defender exclusions.
   - question: >
       Ai-je besoin d’une licence d’entreprise pour exécuter des règles de RSA ?
     answer: >
-      L’ensemble complet des règles et fonctionnalités de la fonctionnalité de r asr est uniquement pris en charge si vous disposez d’une licence d’entreprise pour Windows 10 ou Windows 11. Un nombre limité de règles peut fonctionner sans licence d’entreprise. Si vous avez Microsoft 365 Entreprise, définissez Antivirus Microsoft Defender comme solution de sécurité principale et activez les règles via PowerShell. L’utilisation de la fonctionnalité de RSA sans licence d’entreprise n’est pas officiellement prise en charge et vous ne pourrez pas utiliser toutes les fonctionnalités de la asr.
+      L’ensemble complet des règles et fonctionnalités de la fonctionnalité de r asr est pris en charge uniquement si vous disposez d’une licence d’entreprise pour Windows 10 ou Windows 11. Un nombre limité de règles peut fonctionner sans licence d’entreprise. Si vous avez Microsoft 365 Entreprise, définissez Antivirus Microsoft Defender comme solution de sécurité principale et activez les règles via PowerShell. L’utilisation de la fonctionnalité de RSA sans licence d’entreprise n’est pas officiellement prise en charge et vous ne pourrez pas utiliser toutes les fonctionnalités de la asr.
 
 
       Pour en savoir plus sur Windows gestion des licences, voir Windows 10 [Licences](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) en volume et obtenir le guide des licences en [volume pour Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
@@ -98,7 +98,7 @@ sections:
       Différentes règles de la RSA auront des flux de protection différents. Réfléchissez toujours aux protections de la règle asr que vous configurez et à la façon dont le flux d’exécution réel s’exécute.
 
 
-      Exemple : bloquer le vol d’informations d’identification du **sous-système** de l’autorité de sécurité locale Windows lire directement à partir du processus LSASS (Local Security Authority Subsystem) peut être un risque de sécurité, car il peut exposer des informations d’identification d’entreprise.
+      Exemple : bloquer le vol d’informations d’identification du sous-système de l’autorité de sécurité locale **Windows** lire directement à partir du processus LSASS (Local Security Authority Subsystem) peut être un risque de sécurité, car il peut exposer des informations d’identification d’entreprise.
 
 
       Cette règle empêche les processus nontrus d’avoir un accès direct à la mémoire LSASS. Chaque fois qu’un processus tente d’utiliser la fonction OpenProcess() pour accéder à LSASS, avec un droit d’accès de PROCESS_VM_READ, la règle bloque spécifiquement ce droit d’accès.
@@ -119,7 +119,7 @@ sections:
 
       Nous vous recommandons vivement de lire chaque information spécifique à la règle et/ou avertissements, qui sont disponibles dans [notre documentation publique](/microsoft-365/security/defender-endpoint/attack-surface-reduction).
 
-      couvrant plusieurs piliers de la protection, tels que les Office, les informations d’identification, les scripts, le courrier électronique, etc. Toutes les règles asr, à l’exception de la persistance de blocage via l’abonnement aux événements WMI, sont Windows 1709 et ultérieures :
+      couvrant plusieurs piliers de la protection, tels que Office, informations d’identification, scripts, courrier électronique, etc. Toutes les règles asr, à l’exception de la persistance de blocage via l’abonnement aux événements WMI, sont Windows 1709 et ultérieures :
 
 
       * [Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
@@ -156,7 +156,7 @@ sections:
   - question: >
       Le sous-système de l’autorité de sécurité locale est-il activé par défaut ?
     answer: >
-      L’état par défaut de la règle de réduction de la surface d’attaque (ASR) « Bloquer le vol d’informations d’identification du sous-système de l’autorité de sécurité  locale (Windows lsass.exe) » va changer de Non configuré à Configuré et le mode par défaut à **Bloquer.** Toutes les autres règles de la asr. restent dans leur état par défaut : **Non configuré.** Une logique de filtrage supplémentaire a déjà été incorporée dans la règle pour réduire les notifications des utilisateurs finaux. Les clients peuvent configurer la règle sur **les modes Audit**,  **Avertir** ou Désactivé, ce qui remplacera le mode par défaut. La fonctionnalité de cette règle est la même, que la règle soit configurée en mode par défaut ou si vous activez le mode Blocage manuellement.  
+      L’état par défaut de la règle de réduction de la surface d’attaque (ASR) « Bloquer le vol d’informations d’identification du sous-système de l’autorité de  sécurité locale (lsass.exe) Windows » change de Non configuré à Configuré et le mode par défaut est configuré sur **Bloquer**. Toutes les autres règles de la asr. restent dans leur état par défaut : **Non configuré.** Une logique de filtrage supplémentaire a déjà été incorporée dans la règle pour réduire les notifications des utilisateurs finaux. Les clients peuvent configurer la règle sur **les modes Audit**,  **Avertir** ou Désactivé, ce qui remplacera le mode par défaut. La fonctionnalité de cette règle est la même, que la règle soit configurée en mode par défaut ou si vous activez le mode Blocage manuellement.  
   - question: >
       Quelles sont les bonnes recommandations pour la mise en place de la R ASR ?
     answer: >
@@ -185,7 +185,7 @@ sections:
   - question: >
       Les règles DER couvrent-ils toutes les applications par défaut ?
     answer: >
-      Cela dépend de la règle. La plupart des règles de r asr couvrent le comportement des produits et services Microsoft Office, tels que Word, Excel, PowerPoint et OneNote, ou Outlook. Certaines règles de la astérisation, telles que bloquer l’exécution de *scripts potentiellement obscurcis*, sont plus générales.
+      Cela dépend de la règle. La plupart des règles DER couvrent le comportement des produits et services Microsoft Office, tels que Word, Excel, PowerPoint et OneNote, ou Outlook. Certaines règles de la astérisation, telles que bloquer l’exécution de *scripts potentiellement obscurcis*, sont plus générales.
   - question: >
       La RSA prend-elle en charge des solutions de sécurité tierces ?
     answer: >
@@ -218,7 +218,7 @@ sections:
   - question: >
       J’ai récemment activé la règle asr, « Bloquer le vol d’informations d’identification du sous-système de l’autorité de sécurité Windows locale (lsass.exe) » et j’ai reçu un grand nombre de notifications. Que se passe-t-il?
     answer: >
-      Une notification générée par cette règle n’indique pas nécessairement une activité malveillante ; Toutefois, cette règle est toujours utile pour bloquer les activités malveillantes, car les programmes malveillants ciblent souvent lsass.exe pour obtenir un accès illégal aux comptes. Le processus lsass.exe stocke les informations d’identification de l’utilisateur en mémoire après qu’un utilisateur s’est connecté. Windows utilise ces informations d’identification pour valider les utilisateurs et appliquer des stratégies de sécurité locales.
+      Une notification générée par cette règle n’indique pas nécessairement une activité malveillante ; Toutefois, cette règle est toujours utile pour bloquer les activités malveillantes, car les programmes malveillants ciblent souvent lsass.exe pour obtenir un accès illégal aux comptes. Le processus lsass.exe stocke les informations d’identification de l’utilisateur en mémoire une fois qu’un utilisateur s’est connecté. Windows utilise ces informations d’identification pour valider les utilisateurs et appliquer des stratégies de sécurité locales.
 
 
       Étant donné que de nombreux processus légitimes tout au long d’une journée classique appelleront lsass.exe d’informations d’identification, cette règle peut être particulièrement bruyante. Si une application légitime connue génère un nombre excessif de notifications pour cette règle, vous pouvez l’ajouter à la liste d’exclusions. La plupart des autres règles asr génèrent un nombre de notifications relativement plus petit, par rapport à celle-ci, car l’appel sur lsass.exe est caractéristique du fonctionnement normal de nombreuses applications.

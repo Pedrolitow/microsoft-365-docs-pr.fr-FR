@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/07/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,30 +16,35 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 2200c32d910a5afd20a8ff01c6e24625d72ae21c
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 7df23c9f823f5c3c0435743f7a05cf4421704b32
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464589"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329794"
 ---
-# <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business-preview"></a>Gérer vos règles personnalisées pour les stratégies de pare-feu dans Microsoft Defender entreprise (aperçu)
+# <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business"></a>Gérer vos règles personnalisées pour les stratégies de pare-feu dans Microsoft Defender entreprise
 
 > [!IMPORTANT]
-> Microsoft Defender pour Entreprise est désormais en prévisualisation et sera progressivement mis en place pour les clients [](https://aka.ms/mdb-preview) et les partenaires qui s’y connectent pour le demander. Nous intégrerons un ensemble initial de clients et de partenaires dans les prochaines semaines et développerons la prévisualisation jusqu’à la disponibilité générale. Notez que la prévisualisation sera lancée avec un [ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et que nous ajouterons régulièrement des fonctionnalités.
+> Microsoft Defender for Business est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. La [prévisualisation inclut un ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et nous ajouterons régulièrement des fonctionnalités.
 > 
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
 
-Microsoft Defender pour Entreprise (prévisualisation) inclut des stratégies de pare-feu qui aident à protéger vos appareils contre le trafic réseau indésirable. Vous pouvez utiliser des règles personnalisées pour définir des exceptions pour vos stratégies de pare-feu. Autrement dit, vous pouvez utiliser des règles personnalisées pour bloquer ou autoriser des connexions spécifiques.
+Microsoft Defender pour les entreprises inclut des stratégies de pare-feu qui aident à protéger vos appareils contre le trafic réseau indésirable. Vous pouvez utiliser des règles personnalisées pour définir des exceptions pour vos stratégies de pare-feu. Autrement dit, vous pouvez utiliser des règles personnalisées pour bloquer ou autoriser des connexions spécifiques.
 
-Pour en savoir plus sur les stratégies et paramètres de pare-feu, voir [Pare-feu dans Microsoft Defender pour Entreprises (prévisualisation).](mdb-firewall.md)
+Pour en savoir plus sur les stratégies et paramètres de pare-feu, [voir Pare-feu dans Microsoft Defender pour Entreprises](mdb-firewall.md).
 
 **Cet article décrit comment** :
 
 - [Créer une règle personnalisée pour une stratégie de pare-feu](#create-a-custom-rule-for-a-firewall-policy)
 - [Modifier une règle personnalisée pour une stratégie de pare-feu](#edit-a-custom-rule-for-a-firewall-policy)
 - [Supprimer une règle personnalisée](#delete-a-custom-rule)
+
+>
+> **Avez-vous un peu de temps ?**
+> Veuillez consulter notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur Microsoft Defender entreprise</a>. Vos commentaires sont les bienvenus.
+>
 
 ## <a name="create-a-custom-rule-for-a-firewall-policy"></a>Créer une règle personnalisée pour une stratégie de pare-feu
 
@@ -103,10 +108,10 @@ Pour en savoir plus sur les stratégies et paramètres de pare-feu, voir [Pare-f
 
 6. Dans l’écran de confirmation, sélectionnez **Supprimer**. 
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
-- [Afficher et gérer les incidents dans Microsoft Defender entreprise (prévisualisation)](mdb-view-manage-incidents.md)
+- [Afficher et gérer les incidents dans Microsoft Defender entreprise](mdb-view-manage-incidents.md)
 
-- [Répondre aux menaces et les atténuer dans Microsoft Defender entreprise (prévisualisation)](mdb-respond-mitigate-threats.md)
+- [Répondre aux menaces et les atténuer dans Microsoft Defender entreprise](mdb-respond-mitigate-threats.md)
 
 - [Passer en revue les actions de correction dans le centre de mise à jour](mdb-review-remediation-actions.md)

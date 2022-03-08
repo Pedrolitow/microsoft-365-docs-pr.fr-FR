@@ -12,12 +12,12 @@ ms.author: tiaraquan
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: medium
-ms.openlocfilehash: a381bc70e73bf3bbb9f654f5d5dfffd2047f8ab5
-ms.sourcegitcommit: 9f0e84835121ce6228fdc69182c24be7ad1cb20e
+ms.openlocfilehash: c70b15a3d35dc4b19c5961e9fbe0404780c12309
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62895978"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330256"
 ---
 # <a name="privacy"></a>Confidentialité
 
@@ -53,15 +53,15 @@ Microsoft Manged Desktop stocke ses données dans les centres de données Azure 
 
 Les données personnelles obtenues par Microsoft Manged Desktop et d’autres services sont requises pour maintenir le service opérationnel. Si un appareil est supprimé de Microsoft Manged Desktop, nous conserveons les données personnelles pendant un maximum de 30 jours. Toutefois, les données d’alerte, collectées par Microsoft Defender pour endpoint, sont stockées pendant 180 jours à des fins de sécurité. Pour plus d’informations sur la rétention des données, consultez [Conservation, suppression et destruction des données dans Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview).
 
-Microsoft Manged Desktop des équipes des opérations d’ingénierie et des opérations de sécurité se trouvent aux États-Unis et en Inde.
+Microsoft Manged Desktop Engineering Operations et Security Operations se trouvent aux États-Unis et en Inde.
 
 ### <a name="microsoft-windows-10-diagnostic-data"></a>Données de diagnostic Windows 10 Microsoft
 
 Microsoft Manged Desktop utilise Windows 10 données de [diagnostic](/windows/privacy/windows-diagnostic-data) améliorées pour maintenir Windows sécurité, à jour, résoudre les problèmes et améliorer les produits.
 
-Le paramètre de données de diagnostic améliorées inclut des informations plus détaillées sur les appareils inscrits Microsoft Manged Desktop et leurs paramètres, fonctionnalités et état de l’appareil. Lorsque des données de diagnostic améliorées sont sélectionnées, les données, y compris les données de diagnostic requises, sont collectées. Pour plus d’informations, voir [Modifications apportées à Windows données de diagnostic sur](/windows/privacy/changes-to-windows-diagnostic-data-collection) le Windows 10 de données de diagnostic et la collecte de données.
+Le paramètre de données de diagnostic améliorées inclut des informations plus détaillées sur les appareils inscrits dans Microsoft Manged Desktop et leurs paramètres, fonctionnalités et état de l’appareil. Lorsque des données de diagnostic améliorées sont sélectionnées, les données, y compris les données de diagnostic requises, sont collectées. Pour plus d’informations, voir [Modifications apportées à Windows données de diagnostic sur](/windows/privacy/changes-to-windows-diagnostic-data-collection) le Windows 10 de données de diagnostic et la collecte de données.
 
-La terminologie des données de diagnostic va changer dans les futures versions de Windows. Microsoft Manged Desktop s’engage à traiter uniquement les données dont le service a besoin. Bien que cela signifie que le niveau de diagnostic est passé à **Facultatif**, Microsoft Manged Desktop implémente les stratégies de diagnostic limitées pour affiner la collecte de données de diagnostic requise pour le service. Pour plus d’informations, voir [Modifications apportées à Windows de diagnostic.](/windows/privacy/changes-to-windows-diagnostic-data-collection)
+La terminologie des données de diagnostic va changer dans les futures versions de Windows. Microsoft Manged Desktop s’engage à traiter uniquement les données dont le service a besoin. Bien que cela signifie que le niveau de diagnostic est passé à **Facultatif**, Microsoft Manged Desktop implémente les stratégies de diagnostic limitées pour affiner la collecte de données de diagnostic requise pour le service. Pour plus d’informations, voir [Modifications apportées à Windows données de diagnostic](/windows/privacy/changes-to-windows-diagnostic-data-collection).
 
 Microsoft Manged Desktop traite et stocke uniquement les données au niveau du système à partir de Windows 10 données de diagnostic facultatives provenant d’appareils inscrits tels que la fiabilité des applications et des appareils, ainsi que des informations sur les performances. Microsoft Manged Desktop ne pas traiter et stocker les données personnelles des clients, telles que les données de conversation et d’historique du navigateur, les données vocales, textuelles ou vocales.
 
@@ -77,9 +77,9 @@ L’identification des données utilisées Microsoft Manged Desktop données est
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
-Microsoft Intune collecte, traite et partage des données à Microsoft Manged Desktop pour prendre en charge les opérations et les services de l’entreprise. Pour plus d’informations sur les données collectées dans Intune, voir [Collecte de données dans Intune](/mem/intune/protect/privacy-data-collect) 
+Microsoft Intune collecte, traite et partage des données à Microsoft Manged Desktop pour prendre en charge les opérations et les services de l’entreprise. Pour plus d’informations sur les données collectées dans Intune, voir [Collecte de données dans Intune](/mem/intune/protect/privacy-data-collect)
 
-Pour plus d’informations Microsoft Intune des emplacements de données, consultez [l’emplacement Microsoft 365 données client sont stockées](/microsoft-365/enterprise/o365-data-locations). Intune respecte les sélections d’emplacements de stockage réalisées par l’administrateur pour les données client.
+Pour plus d’informations sur Microsoft Intune des emplacements de données, consultez [l’emplacement Microsoft 365 données client sont stockées](/microsoft-365/enterprise/o365-data-locations). Intune respecte les sélections d’emplacements de stockage réalisées par l’administrateur pour les données client.
 
 ### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 
@@ -93,9 +93,9 @@ Microsoft Defender pour le point de terminaison collecte et stocke des informati
 
 Pour plus d’informations sur les emplacements de stockage et de collecte de données de Microsoft Defender for Endpoint, voir Microsoft Defender pour le stockage et la confidentialité des données des [points de terminaison](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect).
 
-### <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
+### <a name="microsoft-365-apps-for-enterprise"></a>Applications Microsoft 365 pour Entreprise
 
-Microsoft 365 Apps for Enterprise collecte et partage des données avec Microsoft Manged Desktop pour s’assurer que ces applications sont à jour avec la dernière version. Ces mises à jour sont basées sur des canaux de mise à jour prédéfin Microsoft Manged Desktop. Pour plus d’informations Microsoft 365 Apps les emplacements de stockage et de collecte de données de l’utilisateur, voir Microsoft Defender pour le stockage et la confidentialité des données [de point de terminaison](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect).
+Microsoft 365 Apps pour Enterprise collecte et partage des données avec Microsoft Manged Desktop pour s’assurer que ces applications sont à jour avec la dernière version. Ces mises à jour sont basées sur des canaux de mise à jour prédéfin Microsoft Manged Desktop. Pour plus d’informations Microsoft 365 Apps les emplacements de stockage et de collecte de données de l’utilisateur, voir Microsoft Defender pour le stockage et la confidentialité des données de [point de terminaison](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect).
 
 ## <a name="major-data-change-notification"></a>Notification de modification majeure des données
 
@@ -103,7 +103,7 @@ Microsoft Manged Desktop suit un processus de contrôle des changements décrit 
 
 Nous informons les clients via Microsoft 365 centre de messages et Microsoft Manged Desktop portail d’administration des incidents de sécurité et des modifications majeures apportées au service.
 
-Les modifications apportées aux types de données recueillies et à l’endroit où elles sont stockées sont considérées comme des modifications importantes. Nous fournirons un minimum de 30 jours de notification avancée de ce changement, comme c’est la pratique standard pour Microsoft 365 et services. Pour plus d’informations, [voir Changements de service et communication](/microsoft-365/managed-desktop/service-description/servicechanges).
+Les modifications apportées aux types de données recueillies et à l’endroit où elles sont stockées sont considérées comme des modifications importantes. Nous fournirons un minimum de 30 jours de notification avancée de ce changement, comme c’est la pratique standard pour Microsoft 365 produits et services. Pour plus d’informations, [voir Changements de service et communication](/microsoft-365/managed-desktop/service-description/servicechanges).
 
 ## <a name="compliance"></a>Conformité
 
@@ -111,7 +111,7 @@ Microsoft Manged Desktop a subi des audits externes et obtenu un ensemble comple
 
 ### <a name="data-subject-requests"></a>Demandes de la personne concernée
 
-Microsoft Manged Desktop suit les réglementations en matière de confidentialité du R GDPR et du CCPA, qui donnent aux sujets de données des droits spécifiques sur leurs données personnelles.
+Microsoft Manged Desktop suit les réglementations en matière de confidentialité du R GDPR et du CCPA, qui donnent aux personnes qui en sont l’objet des droits spécifiques sur leurs données personnelles.
 
 Ces droits sont les suivants :
 
@@ -128,7 +128,7 @@ Pour exercer des demandes des personnes responsables des données sur les donné
 | Demandes de la personne concernée | Description |
 | ------ | ------ |
 | Données provenant de Microsoft Defender pour les alertes de point de terminaison | Votre administrateur de la sécurité peut demander la suppression ou l’extraction de données personnelles liées aux alertes de Microsoft Defender for Endpoint en envoyant une demande de rapport dans le [portail d’administration](https://aka.ms/memadmin). <br><br> Fournissez les informations suivantes : <br><ul><li>Type de demande : demande de modification</li><li>Catégorie : Sécurité</li><li>Sous-catégorie : Autre</li><li>Description : fournissez les noms d’appareils appropriés.</li></ul> |
-| Données provenant de demandes Microsoft Manged Desktop prise en charge | Votre administrateur informatique peut demander la suppression ou l’extraction des demandes de support liées aux données personnelles en envoyant une demande de rapport sur le portail [d’administration](https://aka.ms/memadmin). <br><br> Fournissez les informations suivantes : <ul><li>Type de demande : demande de modification</li><li>Catégorie : Sécurité</li><li>Sous-catégorie : Autre</li><li>Description : fournissez les noms d’appareil ou d’utilisateur appropriés.</li></ul>
+| Données provenant de demandes Microsoft Manged Desktop de support | Votre administrateur informatique peut demander la suppression ou l’extraction des demandes de support liées aux données personnelles en envoyant une demande de rapport sur le portail [d’administration](https://aka.ms/memadmin). <br><br> Fournissez les informations suivantes : <ul><li>Type de demande : demande de modification</li><li>Catégorie : Sécurité</li><li>Sous-catégorie : Autre</li><li>Description : fournissez les noms d’appareil ou d’utilisateur appropriés.</li></ul>
 
 Pour les DSR provenant d’autres produits liés au service, consultez les articles suivants :
 

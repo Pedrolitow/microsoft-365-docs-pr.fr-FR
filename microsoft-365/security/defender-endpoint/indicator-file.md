@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2ee262e2a42bcf4bd03a6d1204b60412d60740d5
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 32de72a201dbb88c9fc0c6d7e61825bf8083fbf9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074365"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325542"
 ---
 # <a name="create-indicators-for-files"></a>Créer des indicateurs pour les fichiers
 
@@ -46,7 +46,7 @@ Il existe trois façons de créer des indicateurs pour les fichiers :
 
 Il est important de comprendre les conditions préalables suivantes avant de créer des indicateurs pour les fichiers :
 
-- Cette fonctionnalité est disponible si votre organisation utilise **Antivirus Microsoft Defender (en mode actif)** et si la protection basée sur **le cloud est activée.** Pour plus d’informations, [voir Gérer la protection basée sur le cloud.](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
+- Cette fonctionnalité est disponible si votre organisation utilise **Antivirus Microsoft Defender (en mode actif)** et si la protection basée sur **le cloud est activée**. Pour plus d’informations, voir [Gérer la protection basée sur le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 
 - La version du client anti-programme malveillant doit être 4.18.1901.x ou version ultérieure. Voir [les versions mensuelles de la plateforme et du moteur](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
@@ -55,39 +55,39 @@ Il est important de comprendre les conditions préalables suivantes avant de cr�
    >[!NOTE]
     >Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) pour que cette fonctionnalité fonctionne. 
 
-- Pour commencer à bloquer des fichiers, vous devez d’abord activer la fonctionnalité « bloquer ou autoriser » [dans](advanced-features.md) Paramètres.
+- Pour commencer à bloquer des fichiers, vous devez d’abord activer la fonctionnalité « bloquer ou autoriser [» dans Paramètres](advanced-features.md).
 
 Cette fonctionnalité est conçue pour empêcher le téléchargement de programmes malveillants (ou de fichiers potentiellement malveillants) à partir du web. Il prend actuellement en charge les fichiers exécutables portables(PE), notamment les fichiers .exe et .dll portables. La couverture sera étendue au fil du temps.
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>Créer un indicateur pour les fichiers à partir de la page paramètres
 
-1. Dans le volet de navigation, sélectionnez **Paramètres** \> **indicateurs de points** de \> **terminaison** (sous **Règles).**
+1. Dans le volet de navigation, sélectionnez **Paramètres** \> **indicateurs de points** \> **de** terminaison (sous **Règles**).
 
-2. Sélectionnez **l’onglet Haits fichier.**
+2. Sélectionnez **l’onglet Haits fichier** .
 
-3. Sélectionnez **Ajouter un indicateur**.
+3. **Sélectionnez Ajouter un élément**.
 
 4. Spécifiez les détails suivants :
     - Indicateur : spécifiez les détails de l’entité et définissez l’expiration de l’indicateur.
     - Action : spécifiez l’action à prendre et fournissez une description.
     - Étendue : définir l’étendue du groupe d’appareils.
 
-5. Examinez les détails dans l’onglet Résumé, puis sélectionnez **Enregistrer.**
+5. Examinez les détails dans l’onglet Résumé, puis sélectionnez **Enregistrer**.
 
 ## <a name="create-a-contextual-indicator-from-the-file-details-page"></a>Créer un indicateur contextuel à partir de la page de détails du fichier
 
-L’une des options lorsque vous prenez des mesures de réponse sur un [fichier consiste](respond-file-alerts.md) à ajouter un indicateur pour le fichier. Lorsque vous ajoutez un hachage d’indicateur pour un fichier, vous pouvez choisir de lancer une alerte et de bloquer le fichier chaque fois qu’un appareil de votre organisation tente de l’exécuter.
+L’une des options lorsque vous prenez [des mesures de réponse sur un fichier consiste](respond-file-alerts.md) à ajouter un indicateur pour le fichier. Lorsque vous ajoutez un hachage d’indicateur pour un fichier, vous pouvez choisir de lancer une alerte et de bloquer le fichier chaque fois qu’un appareil de votre organisation tente de l’exécuter.
 
 Les fichiers automatiquement bloqués par un indicateur ne s’afficheront pas dans le centre de l’action du fichier, mais les alertes resteront visibles dans la file d’attente des alertes.
 
 ## <a name="public-preview-alerting-on-file-blocking-actions"></a>Prévisualisation publique : alerte sur les actions de blocage de fichiers
 
 > [!IMPORTANT]
-> Les informations de cette section **(prévisualisation publique** pour le moteur automatisé d’examen et de correction) concernent la version préliminaire du produit qui peut être considérablement modifié avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
+> Les informations de cette section (**prévisualisation publique** pour le moteur d’investigation et de correction automatisée) concernent la version préliminaire du produit qui peut être considérablement modifié avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
 Les actions actuellement prises en charge pour le ioc de fichier sont autoriser, auditer et bloquer et corriger. Après avoir choisi de bloquer un fichier, vous pouvez choisir si le déclenchement d’une alerte est nécessaire. De cette façon, vous serez en mesure de contrôler le nombre d’alertes à l’attention de vos équipes en matière d’opérations de sécurité et de vous assurer que seules les alertes requises sont élevées.
 
-In Microsoft 365 Defender, go to **Paramètres**  >  **Endpoints**  >  **Indicators**  >  **Add New File Hash**.
+In Microsoft 365 Defender, go to **Paramètres** >  EndpointsIndicatorsAdd >  >  **New File Hash**.
 
 Choisissez de bloquer et de corriger le fichier.
 
@@ -106,14 +106,14 @@ Choisissez si vous souhaitez générer une alerte sur l’événement de blocage
 > - En règle générale, les blocs de fichiers sont appliqués et supprimés en quelques minutes, mais peuvent prendre plus de 30 minutes.
 > - S’il existe des stratégies IoC de fichier en conflit avec le même type d’application et la même cible, la stratégie de hachage le plus sécurisé est appliquée. Une stratégie IoC de hachage de fichier SHA-256 l’emporte sur une stratégie IoC de hachage de fichier SHA-1, qui l’emporte sur une stratégie IoC de hachage de fichier MD5 si les types de hachage définissent le même fichier. Cela est toujours vrai quel que soit le groupe d’appareils.
 > - Dans tous les autres cas, si des stratégies IoC de fichier en conflit avec la même cible d’application sont appliquées à tous les appareils et au groupe de l’appareil, pour un appareil, la stratégie dans le groupe d’appareils l’emporte.
-> - Si la stratégie de groupe EnableFileHashComputation est désactivée, la précision de blocage du fichier IoC est réduite. Toutefois, `EnableFileHashComputation` l’activation peut avoir un impact sur les performances de l’appareil. Par exemple, la copie de fichiers de grande taille à partir d’un partage réseau sur votre appareil local, en particulier sur une connexion VPN, peut avoir un impact sur les performances de l’appareil.
+> - Si la stratégie de groupe EnableFileHashComputation est désactivée, la précision de blocage du fichier IoC est réduite. Toutefois, l’activation `EnableFileHashComputation` peut avoir un impact sur les performances de l’appareil. Par exemple, la copie de fichiers de grande taille à partir d’un partage réseau sur votre appareil local, en particulier sur une connexion VPN, peut avoir un impact sur les performances de l’appareil.
 >
-> Pour plus d’informations sur la stratégie de groupe EnableFileHashComputation, voir [CSP Defender.](/windows/client-management/mdm/defender-csp)
+> Pour plus d’informations sur la stratégie de groupe EnableFileHashComputation, voir [CSP Defender](/windows/client-management/mdm/defender-csp).
 
 ## <a name="public-preview-advanced-hunting-capabilities"></a>Prévisualisation publique : fonctionnalités de recherche avancées
 
 > [!IMPORTANT]
-> Les informations de cette section **(prévisualisation publique** pour le moteur automatisé d’examen et de correction) concernent la version préliminaire du produit qui peut être considérablement modifié avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
+> Les informations de cette section (**prévisualisation publique** pour le moteur automatisé d’examen et de correction) concernent la version préliminaire du produit qui peut être considérablement modifié avant sa commercialisation. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
 Vous pouvez interroger l’activité d’action de réponse à l’avance. Voici un exemple de requête de recherche avancée :
 
@@ -123,7 +123,7 @@ Timestamp > ago(30d)
 | where AdditionalFields contains "EUS:Win32/CustomEnterpriseBlock!cl"
 ```
 
-Pour plus d’informations sur le chasse avancée, consultez la recherche proactive de [menaces avec le chasse avancée.](advanced-hunting-overview.md)
+Pour plus d’informations sur le chasse avancée, voir [La recherche proactive des menaces avec le chasse avancée](advanced-hunting-overview.md).
 
 Vous trouverez ci-dessous des noms de thread supplémentaires qui peuvent être utilisés dans l’exemple de requête ci-dessus :
 
@@ -147,7 +147,10 @@ Le conflit de gestion des stratégies Cert et IoC de fichier suit l’ordre ci-d
 - Sinon, si le fichier est bloqué ou averti par un blocage ou un avertissement de fichier IoC, **puis Bloquer/Avertir**
 - Sinon, si le fichier est autorisé par une stratégie IoC de fichier autorisé, **autorisez**
 - Sinon, si le fichier est bloqué par les règles de la asr, LFA, AV, SmartScreen, puis **Bloquer**
-- Else **Allow** (passe Windows Defender Application Control & AppLocker policy, no IoC rules apply to it)
+- Else **Allow** (passe Windows Defender Application Control & AppLocker, aucune règle IoC ne s’applique à cette stratégie)
+
+>[!NOTE]
+> Dans les situations où Antivirus Microsoft Defender est définie sur **Bloquer**, alors que Defender pour le point de terminaison est définie sur **Autoriser, la** stratégie est définie par défaut sur **Autoriser**.
 
 S’il existe des stratégies IoC de fichier en conflit avec le même type d’application et la même cible, la stratégie de hachage le plus sécurisé (c’est-à-dire plus long) est appliquée. Par exemple, une stratégie IoC de hachage de fichier SHA-256 l’emporte sur une stratégie IoC de hachage de fichier MD5 si les deux types de hachage définissent le même fichier.
 

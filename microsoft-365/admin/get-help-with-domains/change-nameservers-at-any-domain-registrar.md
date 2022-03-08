@@ -2,8 +2,8 @@
 title: Modifier les serveurs de noms pour configurer Microsoft 365 auprès d’un bureau d’enregistrement de domaines
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Découvrez comment ajouter et configurer votre domaine dans Microsoft 365 afin que vos services tels que la messagerie électronique et Skype Entreprise Online utilisent votre propre nom de domaine.
-ms.openlocfilehash: 9158d7b22533ffde9a378b5f680ff5552854bae9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2d591429d74e03eec883b524b8fa36d082cfab93
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164823"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316966"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Modifier les serveurs de noms pour configurer Microsoft 365 auprès d’un bureau d’enregistrement de domaines
 
@@ -39,9 +39,9 @@ ms.locfileid: "60164823"
 
 Suivez ces instructions pour ajouter et configurer votre domaine dans Microsoft 365 afin que vos services tels que le courrier électronique et Teams utilisent votre propre nom de domaine. Pour ce faire, vous devez vérifier votre domaine, puis modifier les serveurs de noms de votre domaine en Microsoft 365 afin que les enregistrements DNS corrects soient mis en place pour vous. Suivez ces étapes si les instructions suivantes décrivent votre situation :
 
-- Vous avez votre propre domaine et souhaitez le configurer pour qu’il fonctionne avec Microsoft 365.
+- Vous avez votre propre domaine et souhaitez le configurer pour fonctionner avec Microsoft 365.
 
-- Vous souhaitez Microsoft 365 gérer vos enregistrements DNS à votre place. Si vous le souhaitez, vous pouvez [gérer vos propres enregistrements DNS](../setup/add-domain.md).
+- Vous souhaitez que Microsoft 365 gère vos enregistrements DNS pour vous. Si vous le souhaitez, vous pouvez [gérer vos propres enregistrements DNS](../setup/add-domain.md).
 
 ## <a name="add-a-txt-or-mx-record-for-verification"></a>Ajouter un enregistrement TXT ou MX à des fins de vérification
 
@@ -73,7 +73,7 @@ Selon que vous créez un enregistrement TXT ou un enregistrement MX, effectuez
 
 |Type d’enregistrement|Alias ou nom d’hôte|Valeur|Durée de vie|
 |---|---|---|---|
-|TXT|Effectuez l'une des opérations suivantes : Tapez **@**, laissez le champ vide ou entrez le nom de votre domaine.  <p> **Remarque**: différents hôtes DNS ont des exigences différentes pour ce champ.|MS=ms *XXXXXXXX* <p> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Microsoft 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|Définissez cette valeur sur **1 heure** ou sur l'équivalent en minutes ( **60** ), en secondes ( **3600** ), etc.|
+|TXT|Effectuez l'une des opérations suivantes : Tapez **@**, laissez le champ vide ou entrez le nom de votre domaine.  <p> **Remarque** : différents hôtes DNS ont des exigences différentes pour ce champ.|MS=ms *XXXXXXXX* <p> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Microsoft 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|Définissez cette valeur sur **1 heure** ou sur l'équivalent en minutes ( **60** ), en secondes ( **3600** ), etc.|
 |||||
 
 **Si vous créez un enregistrement MX, utilisez les valeurs suivantes :**
@@ -106,7 +106,7 @@ Lorsque Microsoft 365 trouve l’enregistrement TXT approprié, votre domaine e
 
 ## <a name="change-your-domains-nameserver-ns-records"></a>Modifier les enregistrements de serveur de noms (NS) de votre domaine
 
-Lorsque vous arrivez à la dernière étape de l’Assistant Configuration des domaines Microsoft 365, il vous reste une tâche. Pour configurer votre domaine avec des services Microsoft 365, tels que le courrier électronique, vous modifiez les enregistrements de serveur de noms (ou NS) de votre domaine auprès de votre bureau d’enregistrement de domaines pour qu’ils pointent vers les serveurs de noms principal et secondaire Microsoft 365. Ensuite, comme Microsoft 365 héberge votre DNS, les enregistrements DNS requis pour vos services sont automatiquement mis en place pour vous. Vous pouvez mettre à jour les enregistrements de serveur de noms vous-même en suivant les étapes fournies éventuellement par votre bureau d'enregistrement de domaines dans l'aide disponible sur son site web. Si vous n'êtes pas familiarisé avec DNS, contactez le support du bureau d'enregistrement de domaines.
+Lorsque vous arrivez à la dernière étape de l’Assistant Configuration des domaines dans Microsoft 365, il vous reste une tâche. Pour configurer votre domaine avec les services Microsoft 365, tels que le courrier électronique, vous modifiez les enregistrements de serveur de noms (ou NS) de votre domaine auprès de votre bureau d’enregistrement de domaines pour qu’ils pointent vers les serveurs de noms principaux et secondaires Microsoft 365. Ensuite, étant donné que Microsoft 365 héberge votre DNS, les enregistrements DNS requis pour vos services sont automatiquement mis en place pour vous. Vous pouvez mettre à jour les enregistrements de serveur de noms vous-même en suivant les étapes fournies éventuellement par votre bureau d'enregistrement de domaines dans l'aide disponible sur son site web. Si vous n'êtes pas familiarisé avec DNS, contactez le support du bureau d'enregistrement de domaines.
 
 ::: moniker range="o365-worldwide"
 
@@ -141,49 +141,49 @@ Pour changer vous-même les serveurs de noms de votre domaine sur le site web de
    - Second nameserver: ns2.dns.partner.microsoftonline.cn
 
    > [!TIP]
-   > Vous devez utiliser au moins deux enregistrements de nameserver. Si d’autres serveurs de noms sont répertoriés, vous pouvez les supprimer ou les remplacer par **ns3.dns.partner.microsoftonline.cn** et **ns4.dns.partner.microsoftonline.cn**.
+   > Vous devez utiliser au moins deux enregistrements de nameserver. Si d’autres serveurs de noms sont répertoriés, vous pouvez les supprimer ou les remplacer par **ns3.dns.partner.microsoftonline.cn et** **ns4.dns.partner.microsoftonline.cn**.
 
 3. Enregistrez vos modifications.
 
 > [!CAUTION]
-> Lorsque vous modifiez les enregistrements NS de votre domaine pour qu’ils pointent vers le Office 365 géré par les serveurs de noms 21Vianet, tous les services actuellement associés à votre domaine sont affectés. Si vous avez ignoré des étapes de l’Assistant, telles que l’ajout d’adresses de messagerie, ou si vous utilisez votre domaine pour des blogs, des paniers ou d’autres services, des étapes supplémentaires sont requises. Dans le cas contraire, cette modification risque d’entraîner un temps d’arrêt du service, par exemple l’absence d’accès à la messagerie ou l’in inaccessible de votre site web actuel.
+> Lorsque vous modifiez les enregistrements NS de votre domaine pour qu’ils pointent vers les serveurs de noms Office 365 gérés par 21Vianet, tous les services actuellement associés à votre domaine sont affectés. Si vous avez ignoré des étapes de l’Assistant, telles que l’ajout d’adresses de messagerie, ou si vous utilisez votre domaine pour des blogs, des paniers ou d’autres services, des étapes supplémentaires sont requises. Dans le cas contraire, cette modification risque d’entraîner un temps d’arrêt du service, par exemple l’absence d’accès à la messagerie ou l’in inaccessible de votre site web actuel.
 
 ::: moniker-end
 
 Voici, par exemple, quelques étapes supplémentaires qui peuvent être nécessaires pour le courrier et l'hébergement du site web :
 
-- Déplacez toutes les adresses de messagerie qui utilisent votre domaine Microsoft 365 avant de modifier vos enregistrements NS.
+- Déplacez toutes les adresses de messagerie qui utilisent votre domaine vers Microsoft 365 avant de modifier vos enregistrements NS.
 
-- Vous souhaitez ajouter un domaine actuellement utilisé avec une adresse de site web, comme `https://www.fourthcoffee.com` ? Vous pouvez suivre les étapes ci-dessous pendant que vous ajoutez le domaine pour que son site web reste hébergé là où le site est hébergé maintenant afin que les personnes continuent d’y avoir accès après avoir changé les enregistrements NS du domaine pour qu’ils pointent vers Microsoft 365.
+- Vous souhaitez ajouter un domaine actuellement utilisé avec une adresse de site web, comme `https://www.fourthcoffee.com`? Vous pouvez suivre les étapes ci-dessous pendant que vous ajoutez le domaine pour que son site web reste hébergé là où le site est hébergé maintenant afin que les personnes continuent d’y avoir accès après avoir changé les enregistrements NS du domaine pour qu’ils pointent vers Microsoft 365.
 
 1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
 
 2. Dans la page **Domaines**, sélectionnez un domaine.
 
-3. Dans la page des détails du domaine, sélectionnez l’onglet **Enregistrements DNS.**
+3. Dans la page des détails du domaine, sélectionnez l’onglet **Enregistrements DNS** .
 
-4. Sélectionnez **Ajouter un enregistrement.**
+4. **Sélectionnez Ajouter un enregistrement**.
 
-5. In the **Add a custom DNS record** pane, from the **Type** dropdown list, select **A (Address)**.
+5. Dans le **volet Ajouter un enregistrement DNS** personnalisé, sélectionnez **A (Adresse**) dans la liste finale **Type**.
 
-6. Dans la **zone Nom d’hôte ou Alias,** tapez **@** .
+6. Dans la **zone Nom d’hôte ou Alias** , tapez **@**.
 
-7. Dans la zone **Adresse IP,** tapez l’adresse IP statique du site web où elle est actuellement hébergée. Par exemple, 172.16.140.1.
+7. Dans la zone **Adresse IP** , tapez l’adresse IP statique du site web où elle est actuellement hébergée. Par exemple, 172.16.140.1.
 
    > [!IMPORTANT]
    > Il doit s’agit _d’une_ adresse IP statique pour le site web, et non _d’une adresse_ IP dynamique. Pour vous assurer que vous pouvez obtenir une adresse IP statique pour votre site web public, vérifiez auprès du site qui héberge votre site web.
 
-8. Si vous souhaitez modifier le paramètre de durée de vie (TTL) de l’enregistrement, sélectionnez une nouvelle durée dans la liste de listes de listes de durée de **vie(TTL).** Dans le cas contraire, continuez à l’étape 9.
+8. Si vous souhaitez modifier le paramètre de durée de vie (TTL) de l’enregistrement, sélectionnez une nouvelle durée dans la liste de listes de listes de durée de vie( **TTL** ). Dans le cas contraire, continuez à l’étape 9.
 
 9. Sélectionnez **Enregistrer**.
 
 De plus, vous pouvez créer un enregistrement CNAME pour aider les clients à trouver votre site web.
 
-1. Sélectionnez **Ajouter un enregistrement.**
-2. In the **Add a custom DNS record** pane, from the **Type** dropdown list, select **CNAME (Alias)**.
-3. Dans la **zone Nom d’hôte ou Alias,** tapez **www**.
-4. Dans la **zone Points d’adresse,** tapez le nom de domaine complet (FQDN) de votre site web. Par exemple, **contoso.5om**.
-5. Si vous souhaitez modifier le paramètre de durée de vie (TTL) de l’enregistrement, sélectionnez une nouvelle durée dans la liste de listes de listes de durée de **vie(TTL).** Dans le cas contraire, continuez à l’étape 6.
+1. **Sélectionnez Ajouter un enregistrement**.
+2. Dans le **volet Ajouter un enregistrement DNS** personnalisé, sélectionnez **CNAME (Alias**) dans la liste de listes listes de type.
+3. Dans la **zone Nom d’hôte ou Alias** , tapez **www**.
+4. Dans la **zone Points d’adresse** , tapez le nom de domaine complet (FQDN) de votre site web. Par exemple, **contoso.5om**.
+5. Si vous souhaitez modifier le paramètre de durée de vie (TTL) de l’enregistrement, sélectionnez une nouvelle durée dans la liste de listes de listes de durée de vie( **TTL** ). Dans le cas contraire, continuez à l’étape 6.
 6. Sélectionnez **Enregistrer**.
 
 Une fois que les enregistrements de serveurs de noms ont été mis à jour pour pointer vers Microsoft, la configuration de votre domaine est terminée. Le courrier électronique est acheminé vers Microsoft et le trafic vers votre adresse de site web continue d’être acheminé vers votre hôte de site web actuel.

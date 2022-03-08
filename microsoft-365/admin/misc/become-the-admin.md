@@ -2,8 +2,8 @@
 title: Effectuer une prise de contrôle d’administrateur interne
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Découvrez comment vérifier la propriété de votre courrier électronique et de votre domaine pour prendre le contrôle d’un compte non pris en charge créé par une inscription d’utilisateur en libre-service dans Microsoft 365.
-ms.openlocfilehash: 1201ea967fb829e43433cb5ed49f073b1d862728
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 06197bb5326cbd19fcd9174554007577e7086dc6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805999"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320156"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Effectuer une prise de contrôle d’administrateur interne
 
@@ -40,14 +40,14 @@ Si vous êtes un administrateur et que vous souhaitez prendre le contrôle d’u
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Lorsqu’un utilisateur s’Microsoft 365 services de messagerie à l’aide d’une adresse de messagerie, un compte est automatiquement créé pour lui. Si un administrateur souhaite gérer les utilisateurs sur le compte ou acheter des services Microsoft 365 supplémentaires, il doit devenir administrateur sur le compte en suivant ces étapes pour effectuer une prise de contrôle par l’administrateur.
+Lorsqu’un utilisateur s’Microsoft 365 services à l’aide d’une adresse de messagerie, un compte est automatiquement créé pour lui. Si un administrateur souhaite gérer les utilisateurs sur le compte ou acheter des services Microsoft 365 supplémentaires, il doit devenir administrateur sur le compte en suivant ces étapes pour effectuer une prise de contrôle par l’administrateur.
 
 ## <a name="step-1-verify-your-email-address"></a>Étape 1 : Vérifier votre adresse de messagerie
 
 > [!NOTE]
-> Si le libre-service est activé dans votre compte, les utilisateurs peuvent s’abonner à des services gratuits tels que Power BI, eux-mêmes. Ces services sont spécifiquement utilisés dans les cas où un abonnement utilisateur libre-service a créé le compte non pris en compte que vous souhaitez prendre en tant qu’administrateur. À l’étape 1, vous créez un compte d’utilisateur pour le domaine que vous souhaitez supprimer à l’aide de Power BI pour lancer l’Assistant Prise de contrôle d’administration afin de pouvoir devenir l’administrateur du compte de domaine non utilisé.
+> Si le libre-service est activé dans votre compte, les utilisateurs peuvent s’abonner à des services gratuits tels que Power BI, eux-mêmes. Ces services sont spécifiquement utilisés dans les cas où un abonnement utilisateur libre-service a créé le compte non pris en compte que vous souhaitez prendre en tant qu’administrateur. À l’étape 1, vous créez un compte d’utilisateur pour le domaine que vous souhaitez supprimer à l’aide de Power BI pour lancer l’Assistant Prise de contrôle de l’administrateur afin de pouvoir devenir l’administrateur du compte de domaine non utilisé.
 
-1. Pour vous inscrire à Power BI, Power BI [site](https://powerbi.com)  >  web et sélectionnez Démarrer l’essai gratuit **gratuit (dans** la zone Partager avec Power BI Pro). 
+1. Pour vous inscrire à Power BI, allez sur le [site](https://powerbi.com) >  Power BI et sélectionnez Démarrer l’essai **gratuit gratuit (** dans la zone Partager avec Power BI Pro). 
 
 2. Inscrivez-vous avec un compte d’utilisateur qui utilise le nom de domaine de votre organisation (comme `powerbiadmin@contoso.com`). Si votre compte est déjà utilisé, connectez-vous à l’aide de votre mot de passe actuel.
 

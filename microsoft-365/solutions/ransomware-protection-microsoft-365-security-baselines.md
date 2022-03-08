@@ -1,9 +1,9 @@
 ---
 title: Étape 1. Configurer les lignes de base de sécurité
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: rançongiciel, rançongiciel géré par les humains, rançongiciel géré par l’homme, HumOR, attaque par extorsion, attaque par rançongiciel, chiffrement, cryptovirologie, zéro virus
 description: Utilisez les lignes de base de sécurité pour protéger vos ressources Microsoft 365 contre les attaques par rançongiciel.
-ms.openlocfilehash: 66218d15a36faa510bd246b46dbc0dcd0f9948fb
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 22092994765e9015421c21f2ee057c63463d594d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62887519"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320184"
 ---
 # <a name="step-1-configure-security-baselines"></a>Étape 1. Configurer les lignes de base de sécurité
 

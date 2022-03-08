@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f18ff452d7f268aa652af097db19f53f2002d8ae
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
+ms.openlocfilehash: 45497f74db9c68959d4b23e013c6ea483e86378a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62187208"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323960"
 ---
-# <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>Étape 3. Planifier l’intégration Microsoft 365 Defender avec votre catalogue de services SOC
+# <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>Étape 3. Planifier l’intégration Microsoft 365 Defender avec votre catalogue de services SOC
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "62187208"
 Un centre des opérations de sécurité (SOC) établi doit avoir un catalogue de services qui peuvent inclure :
 
 - Analyse des intrusions & programmes malveillants
-- Attribution et &'ingénierie inverse
+- Attribution &'ingénierie inverse
 - Veille contre les menaces
 - Analyse
 - Recherche de recherche
@@ -61,13 +61,13 @@ Les composants de Microsoft 365 Defender sont les Microsoft 365 Defender :
 
 - **Microsoft Defender pour** l’identité (anciennement Azure Advanced Threat Protection, également appelé Azure ATP) est une solution de sécurité basée sur le cloud qui utilise les signaux des services de domaine Active Directory (AD DS) pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions internes malveillantes dirigées contre les organisations.
 
-- **Microsoft Defender pour** point de terminaison est une solution globale de sécurité de point de terminaison dans le cloud pour les appareils qui inclut des gestion des vulnérabilités et une évaluation basées sur les risques, la réduction de la surface d’attaque, une protection de nouvelle génération basée sur le comportement et basée sur le cloud, protection évolutive des points de terminaison ( PEPT), l’examen et la correction automatiques, les services de recherche gérés, les API enrichies et la gestion unifiée de la sécurité.
+- **Microsoft Defender pour** point de terminaison est une solution globale de sécurité de point de terminaison dans le cloud pour les appareils, qui inclut des gestion des vulnérabilités et une évaluation basées sur les risques, la réduction de la surface d’attaque, une protection de nouvelle génération basée sur le comportement et basée sur le cloud, protection évolutive des points de terminaison ( PEPT), l’examen et la correction automatiques, les services de recherche gérés, les API enrichies et la gestion unifiée de la sécurité.
 
  - **Microsoft Defender pour Office 365** est un service cloud de filtrage du courrier électronique qui permet de protéger les organisations contre les programmes malveillants et les virus inconnus en offrant une protection zero-day robuste et inclut des fonctionnalités permettant de protéger les organisations contre les liens dangereux en temps réel. Il offre également une gamme complète d’investigation et de recherche, de réponse et de correction, de sensibilisation et de formation, ainsi que de fonctionnalités de posture sécurisée.
 
 - **Microsoft Defender pour les applications cloud** est un courtier de sécurité d’accès au cloud (CASB) qui prend en charge différents modes de déploiement, notamment la collecte de journaux, les connecteurs d’API et le proxy inverse. Il offre une visibilité enrichie, un contrôle sur les déplacements de données et des analyses sophistiquées pour identifier et lutter contre les cybermenaces dans tous les services cloud microsoft et tiers.
 
-Étant donné que Microsoft 365 Defender composants et technologies couvrent différentes fonctions, votre équipe SOC devra déterminer les rôles et responsabilités les plus adaptés pour gérer chaque composant de Microsoft 365 Defender et s’aligner sur la fonction de service.
+Étant donné que Microsoft 365 Defender composants et technologies couvrent différentes fonctions, votre équipe SOC devra déterminer les rôles et responsabilités les mieux adaptés pour gérer chaque composant de Microsoft 365 Defender et s’aligner sur la fonction de service.
 
 Pour intégrer les fonctionnalités de Microsoft 365 Defender, vous devez affiner les services SOC. Pour plus d’informations sur les fonctionnalités de Microsoft 365 Defender, consultez les articles suivants :
 

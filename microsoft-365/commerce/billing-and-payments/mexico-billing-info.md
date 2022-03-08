@@ -2,8 +2,8 @@
 title: Informations de facturation pour Microsoft 365 entreprise au Mexique
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,22 +16,22 @@ ms.collection:
 search.appverid: MET150
 description: En savoir plus sur les informations spécifiques Microsoft 365 pour les entreprises au Mexique.
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 monikerRange: o365-worldwide
 ms.date: 11/20/2020
-ms.openlocfilehash: b60bbf3cd626b81f03c4b0706247d8ada03a8246
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 91bd33e3f8e178136267b95c2e9133b5923ff703
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163658"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325430"
 ---
 # <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>Informations de facturation pour Microsoft 365 entreprise au Mexique
 
-## <a name="1-where-can-i-get-an-invoice-for-my-microsoft-365-for-business-purchase"></a>1. Où puis-je obtenir une facture pour mon achat Microsoft 365 pour les entreprises ?
+## <a name="1-where-can-i-get-an-invoice-for-my-microsoft-365-for-business-purchase"></a>1. Où puis-je obtenir une facture pour mon Microsoft 365 pour les entreprises ?
 
-Votre facture est envoyée à l’adresse e-mail de notification de facturation enregistrée 24 heures après la confirmation de votre achat. Pour télécharger votre facture dans le Centre d'administration Microsoft 365, allez sur la page **Factures** et  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& paiements.</a>
+Votre facture est envoyée à l’adresse e-mail de notification de facturation enregistrée 24 heures après la confirmation de votre achat. Pour télécharger votre facture dans le Centre d'administration Microsoft 365, go to the **BillingBills** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& payments</a> page.
 
 > [!IMPORTANT]
 > Si vous souhaitez que la facture inclue votre RFC, vous devez l’ajouter avant la confirmation d’achat.
@@ -40,11 +40,11 @@ Votre facture est envoyée à l’adresse e-mail de notification de facturation 
 
 ### <a name="during-the-purchase-process-checkout"></a>Pendant le processus d’achat (achat)
 
-Pendant le processus d’achat de l’achat, lorsque vous arrivez à **l’étape 4. Paiement et facturation**, sélectionnez la case à sélectionner pour entrer une RFC. Cette étape est nécessaire afin de pouvoir la voir reflétée dans votre facture d’achat.
+Lors du processus d’achat de l’achat, lorsque vous arrivez à **l’étape 4. Paiement et facturation**, sélectionnez la case à sélectionner pour entrer une RFC. Cette étape est nécessaire afin de pouvoir la voir reflétée dans votre facture d’achat.
 
 ### <a name="for-your-future-purchases"></a>Pour vos futurs achats
 
-Vous pouvez ajouter ou modifier votre RFC afin que les informations sont reflétées à l’avenir Microsoft 365 achats pour les entreprises. Pour ajouter ou modifier votre RFC, go to the **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page.
+Vous pouvez ajouter ou modifier votre RFC afin que les informations sont reflétées à l’avenir Microsoft 365 achats pour les entreprises. Pour ajouter ou modifier votre RFC, go to the **BillingBilling** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">accounts</a> page.
 
 > [!NOTE]
 > Si vous êtes dans un abonnement à facturation récurrente mensuelle ou mensuelle, l’ajout ou la modification de la RFC est reflété sur la facture de vos frais suivants.
@@ -57,7 +57,7 @@ Il est important d’ajouter ou de modifier votre RFC avant d’effectuer votre 
 
 Microsoft Corporation, en tant que résident fiscal aux États-Unis d’Amérique, est uniquement en mesure d’émettre des factures conformément aux lois de la juridiction et n’est pas obligé de fournir une facture électronique CFDI.
 
-## <a name="5-is-the-invoice-i-receive-valid-for-my-accounting-operations-in-mexico"></a>5. La facture que je reçois est-elle valide pour mes opérations comptables au Mexique ?
+## <a name="5-is-the-invoice-i-receive-valid-for-my-accounting-operations-in-mexico"></a>5. La facture que je reçois est-elle valide pour mes opérations de comptabilité au Mexique ?
 
 Une facture générée par des entités étrangères (dans ce cas Microsoft Corporation) qui inclut la RFC respective est valide à des fins fiscales au Mexique. (Nous vous recommandons de consulter votre comptable pour plus d’informations).
 

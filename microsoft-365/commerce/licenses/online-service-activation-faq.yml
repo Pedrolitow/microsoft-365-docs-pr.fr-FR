@@ -1,8 +1,8 @@
 ### YamlMime:FAQ
 metadata:
   title: Activation du service en ligne pour le programme Open - Questions fréquemment posées
-  ms.author: cmcatee
   author: cmcatee-MSFT
+  ms.author: cmcatee
   manager: scotv
   ms.reviewer: racheg, armanv
   ms.date: 07/22/2021
@@ -12,16 +12,16 @@ metadata:
   ms.custom: commerce_vl
   ms.localizationpriority: medium
   description: Activation du service en ligne pour le programme Open - Questions fréquemment posées
-  ms.openlocfilehash: b8570097a056a574a638f2d3c6ed7a7dfe78fa99
-  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.openlocfilehash: e6175dddb97d1a752e64c6264d5d8cdd66f35bf6
+  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 10/06/2021
-  ms.locfileid: "60193518"
+  ms.lasthandoff: 03/08/2022
+  ms.locfileid: "63317233"
 title: Activation du service en ligne pour le programme Open - Questions fréquemment posées
 summary: ''
 sections:
-- name: Généralités
+- name: Général
   questions:
   - question: >
       Comment activer les services en ligne achetés via les programmes Ouverts (abonnement Open, Open Value et Open Value) ?
@@ -46,14 +46,14 @@ sections:
   - question: >
       Je ne vois pas ma commande Azure. Que dois-je faire ?
     answer: >
-      Les commandes Azure sont activées par le biais de clés. Obtenez vos clés via l’onglet Téléchargements et clés dans le VLSC et entrez la clé sur la Prise en main avec Azure dans la page Ouvrir [les licences.](https://azure.microsoft.com/offers/azure-open/)
+      Les commandes Azure sont activées par le biais de clés. Obtenez vos clés via l’onglet Téléchargements et clés dans le VLSC, puis entrez la clé sur la Prise en main avec [Azure dans la page Ouvrir les licences](https://azure.microsoft.com/offers/azure-open/).
   - question: >
       Qu’est-ce qu’un compte scolaire ou scolaire et pourquoi en ai-je besoin pour activer les services en ligne ?
     answer: >
-      Un compte scolaire ou scolaire est destiné aux utilisateurs qui se connectent à l’organisation services Microsoft. La connectez-vous utilise généralement le formulaire username@orgname.com ou username@orgname.onmicrosoft.com, où *orgname* est leur nom de domaine de messagerie de l’organisation.
+      Un compte scolaire ou scolaire est destiné aux utilisateurs qui se connectent à l’organisation services Microsoft. La connectez-vous utilise généralement le formulaire username@orgname.com ou username@orgname.onmicrosoft.com, où *orgname* est le nom de domaine de messagerie de leur organisation.
   - question: >
       Comment savoir si mon organisation dispose déjà d’un compte ?
-    answer: "Le nom de l’organisation associé à votre compte scolaire ou scolaire est tiré de l’ID de licence du service que vous activez. S’il existe un compte, le nom de l’organisation est pré-rempli dans la mise en place du compte d’organisation et déjà lié à votre organisation à partir de l’ordre de service en ligne d’origine. Le processus d’inscription valide si votre organisation dispose d’un compte. \n\nSi le champ **Entreprise** est disponible, terminez le processus d’inscription pour vous inscrire et activer le service. Si ce champ n’est pas disponible, vous devez inscrire l’organisation. Vous devez être administrateur général pour inscrire une organisation pour un compte.\n\nLorsque vous demandez un compte scolaire ou scolaire, votre demande est envoyée à l’administrateur client de votre organisation qui accorde ou refuse votre demande d’inscription. Utilisez ce compte scolaire ou scolaire lorsque vous vous connectez à Microsoft VLSC Online Service Activation.\n"
+    answer: "Le nom de l’organisation associé à votre compte scolaire ou scolaire est tiré de l’ID de licence du service que vous activez. S’il existe un compte, le nom de l’organisation est pré-rempli dans la mise en place du compte d’organisation et déjà lié à votre organisation à partir de l’ordre de service en ligne d’origine. Le processus d’inscription valide si votre organisation dispose d’un compte. \n\nSi le **champ Entreprise est** disponible, terminez le processus d’inscription pour vous inscrire et activer le service. Si ce champ n’est pas disponible, vous devez inscrire l’organisation. Vous devez être administrateur général pour inscrire une organisation pour un compte.\n\nLorsque vous demandez un compte scolaire ou scolaire, votre demande est envoyée à l’administrateur client de votre organisation qui accorde ou refuse votre demande d’inscription. Utilisez ce compte scolaire ou scolaire lorsque vous vous connectez à Microsoft VLSC Online Service Activation.\n"
   - question: >
       Pourquoi le portail d’activation me déconnecte-t-il après avoir activé un service en ligne ?
     answer: "Lors de l’activation des services en ligne dans le cadre du programme Open License, chaque contrat est activé séparément. Pour vous assurer que les licences ne sont pas activées sur le mauvais client, chaque activation est gérée dans une session distincte. \n"
@@ -68,9 +68,9 @@ sections:
   - question: >
       Je vient d’activer mon service en ligne. Pourquoi dois-je toujours activer mon service dans la page Gérer les activations du Centre de gestion des licences en volume ?
     answer: >
-      L’état activé sur la page Gérer les **activations**  peut prendre jusqu’à 24 heures pour que le service que vous avez activé apparaisse.
+      L’état activé sur la page Gérer les **activations** du service activé peut prendre jusqu’à  24 heures.
   - question: >
       Comment contacter le support technique ?
     answer: >
-      Pour obtenir de l’aide sur le téléphone ou le web, [consultez contactez-nous.](/licensing/contact-us) Microsoft répond aux soumissions de formulaires web dans les 24 heures.
+      Pour obtenir de l’aide sur le téléphone ou le web, [consultez la page Contactez-nous](/licensing/contact-us). Microsoft répond aux soumissions de formulaires web dans les 24 heures.
 additionalContent: "\n## <a name=\"additional-resources\"></a>Ressources supplémentaires\n\n- [FAQ sur les clés de produit](product-keys-faq.yml)\n\n- [Faq sur les téléchargements](downloads-faq.yml)"

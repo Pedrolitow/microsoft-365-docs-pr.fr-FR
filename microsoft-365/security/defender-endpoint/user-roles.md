@@ -15,43 +15,43 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a959edf1eaefcb25fd3fb8279e7e03d317c4f12e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6f853df2d37cc41b2effb55ff10418af67df2bd6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168353"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324072"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>Créer et gérer des rôles pour le contrôle d’accès basé sur un rôle
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-roles-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="create-roles-and-assign-the-role-to-an-azure-active-directory-group"></a>Créer des rôles et attribuer le rôle à un groupe Azure Active Directory de gestion
+## <a name="create-roles-and-assign-the-role-to-an-azure-active-directory-group"></a>Créer des rôles et attribuer le rôle à un Azure Active Directory groupe
 
 Les étapes suivantes vous guident sur la création de rôles dans Microsoft 365 Defender. Il part du principe que vous avez déjà créé Azure Active Directory groupes d’utilisateurs.
 
-1. Connectez-vous <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">à Microsoft 365 Defender</a> à l’aide d’un compte attribué à un administrateur de sécurité ou à un rôle d’administrateur général.
+1. Connectez-vous à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> à l’aide d’un compte attribué par un administrateur de sécurité ou un rôle d’administrateur général.
 
-2. Dans le volet de navigation, sélectionnez **Paramètres** rôles de points de \>  \> **terminaison** (sous **Autorisations).**
+2. Dans le volet de navigation, sélectionnez **Paramètres** \> **rôles endpoints** \> **(sous** **Autorisations**).
 
-3. Sélectionnez **Ajouter un élément.**
+3. **Sélectionnez Ajouter un élément**.
 
 4. Entrez le nom de rôle, la description et les autorisations que vous souhaitez attribuer au rôle.
 
-5. Sélectionnez **Suivant** pour attribuer le rôle à un groupe Azure AD sécurité.
+5. **Sélectionnez Suivant** pour attribuer le rôle à un groupe Azure AD sécurité.
 
 6. Utilisez le filtre pour sélectionner le groupe Azure AD que vous souhaitez ajouter à ce rôle.
 
-7. **Enregistrez et fermez.**
+7. **Enregistrez et fermez**.
 
 8. Appliquez les paramètres de configuration.
 
@@ -76,7 +76,7 @@ Les étapes suivantes vous guident sur la création de rôles dans Microsoft 365
     > [!NOTE]
     > Ce paramètre est uniquement disponible dans le rôle d’administrateur Microsoft Defender pour point de terminaison (par défaut).
 
-- Gérer les **paramètres** de sécurité dans Defender pour le cloud : configurer les paramètres de suppression des alertes, gérer les exclusions de dossiers pour l’automatisation, les appareils intégrés et hors-carte, et gérer les notifications par courrier électronique, gérer le laboratoire d’évaluation
+- **Gérer les paramètres** de sécurité dans le Centre de sécurité : configurer les paramètres de suppression des alertes, gérer les exclusions de dossiers pour l’automatisation, les appareils intégrés et hors-carte, gérer les notifications par courrier électronique et gérer le laboratoire d’évaluation
 
 - **Fonctionnalités de réponse en direct**
   - **Commandes de** base :
@@ -89,13 +89,13 @@ Les étapes suivantes vous guident sur la création de rôles dans Microsoft 365
     - Afficher un script à partir de la bibliothèque de fichiers
     - Exécuter un script sur l’appareil distant à partir de la bibliothèque de fichiers
 
-Pour plus d’informations sur les commandes disponibles, voir Examiner les appareils à [l’aide de la réponse Live.](live-response.md)
+Pour plus d’informations sur les commandes disponibles, voir [Examiner les appareils à l’aide de la réponse Live](live-response.md).
 
 ## <a name="edit-roles"></a>Modifier des rôles
 
-1. Connectez-vous à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> compte avec le rôle Administrateur de sécurité ou Administrateur général attribué.
+1. Connectez-vous à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> à l’aide d’un compte attribué par l’administrateur de sécurité ou le rôle d’administrateur général.
 
-2. Dans le volet de navigation, sélectionnez **Paramètres** rôles de points de \>  \> **terminaison** (sous **Autorisations).**
+2. Dans le volet de navigation, sélectionnez **Paramètres** \> **rôles endpoints** \> **(sous** **Autorisations**).
 
 3. Sélectionnez le rôle que vous souhaitez modifier.
 
@@ -103,17 +103,17 @@ Pour plus d’informations sur les commandes disponibles, voir Examiner les appa
 
 5. Modifiez les détails ou les groupes affectés au rôle.
 
-6. Cliquez **sur Enregistrer et fermer.**
+6. Cliquez **sur Enregistrer et fermer**.
 
 ## <a name="delete-roles"></a>Supprimer des rôles
 
-1. Connectez-vous à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> compte avec le rôle Administrateur de sécurité ou Administrateur général attribué.
+1. Connectez-vous à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> à l’aide d’un compte attribué par l’administrateur de sécurité ou le rôle d’administrateur général.
 
-2. Dans le volet de navigation, sélectionnez **Paramètres** rôles de points de \>  \> **terminaison** (sous **Autorisations).**
+2. Dans le volet de navigation, sélectionnez **Paramètres** \> **rôles endpoints** \> **(sous** **Autorisations**).
 
 3. Sélectionnez le rôle que vous souhaitez supprimer.
 
-4. Cliquez sur le bouton de la drop-down et **sélectionnez Supprimer le rôle**.
+4. Cliquez sur le bouton de la déposer et sélectionnez **Supprimer le rôle**.
 
 ## <a name="related-topic"></a>Rubrique connexe
 

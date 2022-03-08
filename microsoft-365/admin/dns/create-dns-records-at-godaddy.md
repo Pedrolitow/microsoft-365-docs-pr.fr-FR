@@ -2,13 +2,13 @@
 title: Connecter vos enregistrements DNS sur GoDaddy pour Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -22,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
-description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online et d’autres services sur GoDaddy pour Microsoft.
-ms.openlocfilehash: ac71bbe1c57e1471e1ff343df75f034cc15c5901
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services sur GoDaddy pour Microsoft.
+ms.openlocfilehash: 728fd6cc34517213b338e3da07e6a275a1a727d3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60647783"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313550"
 ---
 # <a name="connect-your-dns-records-at-godaddy-to-microsoft-365"></a>Connecter vos enregistrements DNS sur GoDaddy pour Microsoft 365
 
@@ -40,7 +40,7 @@ Si GoDaddy est votre fournisseur d'hébergement DNS, suivez les étapes décrite
 
 Vous avez deux options pour la configuration des enregistrements DNS pour votre domaine :
 
-- [**Utiliser l’Connecter**](#use-domain-connect-to-verify-and-set-up-your-domain) Si vous n’avez pas encore installé votre domaine auprès d’un autre fournisseur de services de messagerie, utilisez les étapes de l’Connecter de domaine pour vérifier et configurer automatiquement votre nouveau domaine à utiliser avec Microsoft 365.
+- Utilisez [**Domain Connecter**](#use-domain-connect-to-verify-and-set-up-your-domain) Si vous n’avez pas encore installé votre domaine auprès d’un autre fournisseur de services de messagerie, utilisez les étapes domain Connecter pour vérifier et configurer automatiquement votre nouveau domaine à utiliser avec Microsoft 365.
 
    OR
 
@@ -50,21 +50,21 @@ Vous avez deux options pour la configuration des enregistrements DNS pour votre 
 
 Suivez ces étapes pour vérifier et configurer automatiquement votre domaine GoDaddy avec Microsoft 365 :
 
-1. Dans la Centre d'administration Microsoft 365, **sélectionnez Paramètres** domaines, puis sélectionnez le domaine  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>que vous souhaitez configurer.
+1. Dans la Centre d'administration Microsoft 365, **sélectionnez Paramètres** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>, puis sélectionnez le domaine que vous souhaitez configurer.
 
-1. Sélectionnez les trois points (plus d’actions) > le **programme d’installation de l’installation.**
+1. Sélectionnez les trois points (plus d’actions) > configurer **l’installation**.
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Sélectionnez Démarrer l’installation.":::
 
 1. Comment voulez-vous connecter votre domaine ? page, sélectionnez **Continuer**.
 
-1. Dans la page Ajouter des enregistrements DNS, sélectionnez Ajouter des enregistrements **DNS.**
+1. Dans la page Ajouter des enregistrements DNS, **sélectionnez Ajouter des enregistrements DNS**.
 
-1. Sur la page de connexion GoDaddy, connectez-vous à votre compte, puis sélectionnez **Autoriser.**
+1. Sur la page de connexion GoDaddy, connectez-vous à votre compte, puis sélectionnez **Autoriser**.
 
     Cela termine la configuration de votre domaine pour Microsoft 365.
 
-## <a name="create-dns-records-with-manual-setup"></a>Créer des enregistrements DNS avec la configuration manuelle
+## <a name="create-dns-records-with-manual-setup"></a>Créer des enregistrements DNS avec une configuration manuelle
 
 Une fois ces enregistrements ajoutés sur GoDaddy, votre domaine est installé pour fonctionner avec services Microsoft.
 
@@ -80,17 +80,17 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
 
 1. Pour commencer, accédez à la page de vos domaines sur le site GoDaddy en utilisant [ce lien](https://account.godaddy.com/products/?go_redirect=disabled).
 
-   Si vous êtes invité à vous connecter, utilisez vos informations d’identification, sélectionnez votre nom de connexion en haut à droite, puis sélectionnez **Mes produits**.
+   Si vous êtes invité à vous connecter, utilisez vos informations d’identification, sélectionnez votre nom de connexion en haut à droite, puis mes **produits**.
 
-1. Sous **Domaines,** sélectionnez les trois points en dessous du domaine que vous souhaitez vérifier, puis sélectionnez **Gérer le DNS.**
+1. Sous **Domaines**, sélectionnez les trois points en dessous du domaine que vous souhaitez vérifier, puis sélectionnez **Gérer le DNS**.
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Sélectionnez Gérer le DNS dans la liste liste liste.":::
 
-1. Sous **Enregistrements,** **sélectionnez ADD** (vous de devez peut-être faire défiler vers le bas).
+1. Sous **Enregistrements**, **sélectionnez ADD** (vous de devez peut-être faire défiler vers le bas).
 
    :::image type="content" source="../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png" alt-text="Sélectionnez AJOUTER.":::
 
-1. Choisissez **TXT dans** la liste liste liste.
+1. Choisissez **TXT dans** la liste liste.
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="Sélectionnez TXT dans la liste drop-down Type.":::
 
@@ -98,7 +98,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
 
    |**Type** |**Hôte**|**VALEUR TXT**|**TTL** |
    |:-----|:-----|:-----|:-----|
-   |TXT |@|MS=ms *XXXXXXXX*<br>**Remarque**: il s’agit d’un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|1 heure  <br>|
+   |TXT |@|MS=ms *XXXXXXXX*<br>**Remarque** : il s’agit d’un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|1 heure  <br>|
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-TXT-values.png" alt-text="Remplissez les valeurs du tableau pour l’enregistrement TXT.":::
 
@@ -112,9 +112,9 @@ L’enregistrement étant désormais ajouté sur le site de votre bureau d’enr
   
 Pour vérifier l’enregistrement dans Microsoft 365 :
   
-1. Dans le Centre d’administration, go to the **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+1. Dans le Centre d’administration, Paramètres  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**domaines**</a>.
 
-1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer la configuration.**
+1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer l’installation**.
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Sélectionnez Démarrer l’installation.":::
 
@@ -129,19 +129,19 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
 1. Pour commencer, accédez à la page de vos domaines sur le site GoDaddy en utilisant [ce lien](https://account.godaddy.com/products/?go_redirect=disabled).
 
-   Si vous êtes invité à vous connecter, utilisez vos informations d’identification, sélectionnez votre nom de connexion en haut à droite, puis sélectionnez **Mes produits**.
+   Si vous êtes invité à vous connecter, utilisez vos informations d’identification, sélectionnez votre nom de connexion en haut à droite, puis mes **produits**.
 
-2. Sous **Domaines,** sélectionnez les trois points en dessous du domaine que vous souhaitez vérifier, puis sélectionnez **Gérer le DNS.**
+2. Sous **Domaines**, sélectionnez les trois points en dessous du domaine que vous souhaitez vérifier, puis sélectionnez **Gérer le DNS**.
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Sélectionnez Gérer le DNS dans la liste liste liste.":::
 
-3. Sous **Enregistrements,** sélectionnez **AJOUTER.**
+3. Sous **Enregistrements**, sélectionnez **ADD**.
 
    :::image type="content" source="../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png" alt-text="Sélectionnez AJOUTER.":::
 
 4. Choisissez **MX dans** la liste liste.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="Sélectionnez MX dans la liste drop-down Type.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="Sélectionnez MX dans la liste liste type.":::
 
 5. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant.
 
@@ -159,13 +159,13 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
 1. Pour commencer, accédez à la page de vos domaines sur le site GoDaddy en utilisant [ce lien](https://account.godaddy.com/products/?go_redirect=disabled).
 
-   Si vous êtes invité à vous connecter, utilisez vos informations d’identification, sélectionnez votre nom de connexion en haut à droite, puis sélectionnez **Mes produits**.
+   Si vous êtes invité à vous connecter, utilisez vos informations d’identification, sélectionnez votre nom de connexion en haut à droite, puis mes **produits**.
 
-2. Sous **Domaines,** sélectionnez les trois points en dessous du domaine que vous souhaitez vérifier, puis sélectionnez **Gérer le DNS.**
+2. Sous **Domaines**, sélectionnez les trois points en dessous du domaine que vous souhaitez vérifier, puis sélectionnez **Gérer le DNS**.
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Sélectionnez Gérer le DNS dans la liste liste liste.":::
 
-3. Sous **Enregistrements,** sélectionnez **AJOUTER.**
+3. Sous **Enregistrements**, sélectionnez **ADD**.
 
    :::image type="content" source="../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png" alt-text="Sélectionnez AJOUTER.":::
 
@@ -194,17 +194,17 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
 1. Pour commencer, accédez à la page de vos domaines sur le site GoDaddy en utilisant [ce lien](https://account.godaddy.com/products/?go_redirect=disabled).
 
-   Si vous êtes invité à vous connecter, utilisez vos informations d’identification, sélectionnez votre nom de connexion en haut à droite, puis sélectionnez **Mes produits**.
+   Si vous êtes invité à vous connecter, utilisez vos informations d’identification, sélectionnez votre nom de connexion en haut à droite, puis mes **produits**.
 
-2. Sous **Domaines,** sélectionnez les trois points en dessous du domaine que vous souhaitez vérifier, puis sélectionnez **Gérer le DNS.**
+2. Sous **Domaines**, sélectionnez les trois points en dessous du domaine que vous souhaitez vérifier, puis sélectionnez **Gérer le DNS**.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Sélectionnez Gérer le DNS dans la liste.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Sélectionnez Gérer le DNS dans la liste liste liste.":::
 
-3. Sous **Enregistrements,** sélectionnez **AJOUTER.**
+3. Sous **Enregistrements**, sélectionnez **ADD**.
 
    :::image type="content" source="../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png" alt-text="Sélectionnez AJOUTER.":::
 
-4. Choisissez **TXT dans** la liste liste liste.
+4. Choisissez **TXT dans** la liste liste.
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="Sélectionnez TXT dans la liste drop-down Type.":::
 
@@ -222,23 +222,23 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
 ## <a name="advanced-option-skype-for-business"></a>Option avancée : Skype Entreprise
 
-Sélectionnez cette option uniquement si votre organisation utilise Skype Entreprise pour les services de communication en ligne tels que les conversation, les appels de conférence et les appels vidéo, en plus de Microsoft Teams. Skype nécessite 4 enregistrements : 2 enregistrements SRV pour la communication utilisateur à utilisateur et 2 enregistrements CNAME pour se connecter et connecter des utilisateurs au service.
+Sélectionnez cette option uniquement si votre organisation utilise Skype Entreprise pour les services de communication en ligne tels que la conversation, les appels de conférence et les appels vidéo, en plus des Microsoft Teams. Skype nécessite 4 enregistrements : 2 enregistrements SRV pour la communication utilisateur à utilisateur et 2 enregistrements CNAME pour se connecter et connecter des utilisateurs au service.
 
 ### <a name="add-the-two-required-srv-records"></a>Ajouter les deux enregistrements SRV requis
 
 1. Pour commencer, accédez à la page de vos domaines sur le site GoDaddy en utilisant [ce lien](https://account.godaddy.com/products/?go_redirect=disabled).
 
-   Si vous êtes invité à vous connecter, utilisez vos informations d’identification, sélectionnez votre nom de connexion en haut à droite, puis sélectionnez **Mes produits**.
+   Si vous êtes invité à vous connecter, utilisez vos informations d’identification, sélectionnez votre nom de connexion en haut à droite, puis mes **produits**.
 
-1. Sous **Domaines,** sélectionnez les trois points en dessous du domaine que vous souhaitez vérifier, puis sélectionnez **Gérer le DNS.**
+1. Sous **Domaines**, sélectionnez les trois points en dessous du domaine que vous souhaitez vérifier, puis sélectionnez **Gérer le DNS**.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Sélectionnez Gérer le DNS dans la liste.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Sélectionnez Gérer le DNS dans la liste liste liste.":::
 
-1. Sous **Enregistrements,** sélectionnez **AJOUTER.**
+1. Sous **Enregistrements**, sélectionnez **ADD**.
 
    :::image type="content" source="../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png" alt-text="Sélectionnez AJOUTER.":::
 
-1. Choisissez **SRV** dans la liste de listes.
+1. Choisissez **SRV** dans la liste liste.
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="Sélectionnez SRV dans la liste drop-down Type.":::
 
@@ -266,13 +266,13 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
   
 1. Pour commencer, accédez à la page de vos domaines sur le site GoDaddy en utilisant [ce lien](https://account.godaddy.com/products/?go_redirect=disabled).
 
-   Si vous êtes invité à vous connecter, utilisez vos informations d’identification, sélectionnez votre nom de connexion en haut à droite, puis sélectionnez **Mes produits**.
+   Si vous êtes invité à vous connecter, utilisez vos informations d’identification, sélectionnez votre nom de connexion en haut à droite, puis mes **produits**.
 
-2. Sous **Domaines,** sélectionnez les trois points en dessous du domaine que vous souhaitez vérifier, puis sélectionnez **Gérer le DNS.**
+2. Sous **Domaines**, sélectionnez les trois points en dessous du domaine que vous souhaitez vérifier, puis sélectionnez **Gérer le DNS**.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Sélectionnez Gérer le DNS dans la liste.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Sélectionnez Gérer le DNS dans la liste liste liste.":::
 
-1. Sous **Enregistrements,** sélectionnez **AJOUTER.**
+1. Sous **Enregistrements**, sélectionnez **ADD**.
 
    :::image type="content" source="../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png" alt-text="Sélectionnez AJOUTER.":::
 
@@ -298,19 +298,19 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
   
 ## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Option avancée : Intune et gestion des périphériques mobiles pour Microsoft 365
 
-Ce service vous permet de sécuriser et de gérer à distance les appareils mobiles qui se connectent à votre domaine. La gestion des périphériques mobiles nécessite 2 enregistrements CNAME afin que les utilisateurs peuvent inscrire des appareils au service.
+Ce service vous permet de sécuriser et de gérer à distance les appareils mobiles qui se connectent à votre domaine. La gestion des appareils mobiles nécessite 2 enregistrements CNAME afin que les utilisateurs peuvent inscrire des appareils au service.
 
 ### <a name="add-the-two-required-cname-records"></a>Ajouter les deux enregistrements CNAME requis
 
 1. Pour commencer, accédez à la page de vos domaines sur le site GoDaddy en utilisant [ce lien](https://account.godaddy.com/products/?go_redirect=disabled).
 
-   Si vous êtes invité à vous connecter, utilisez vos informations d’identification, sélectionnez votre nom de connexion en haut à droite, puis sélectionnez **Mes produits**.
+   Si vous êtes invité à vous connecter, utilisez vos informations d’identification, sélectionnez votre nom de connexion en haut à droite, puis mes **produits**.
 
-1. Sous **Domaines,** sélectionnez les trois points en dessous du domaine que vous souhaitez vérifier, puis sélectionnez **Gérer le DNS.**
+1. Sous **Domaines**, sélectionnez les trois points en dessous du domaine que vous souhaitez vérifier, puis sélectionnez **Gérer le DNS**.
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Sélectionnez Gérer le DNS dans la liste liste liste.":::
 
-1. Sous **Enregistrements,** sélectionnez **AJOUTER.**
+1. Sous **Enregistrements**, sélectionnez **ADD**.
 
    :::image type="content" source="../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png" alt-text="Sélectionnez AJOUTER.":::
 

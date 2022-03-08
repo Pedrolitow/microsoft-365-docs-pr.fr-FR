@@ -2,8 +2,8 @@
 title: 'Étape 4 : déployer la gestion des points de terminaison pour vos appareils, PC et autres points de terminaison'
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilisez Microsoft Endpoint Manager pour gérer vos appareils de gestion, PC et autres points de terminaison.
-ms.openlocfilehash: 03d212071db686079a76115d7cb94d2abb4cde88
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: d18a001021486c617aaf0fa04972e9464a5c2016
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886413"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328622"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Étape 4 : déployer la gestion des points de terminaison pour vos appareils, PC et autres points de terminaison
 

@@ -1,7 +1,7 @@
 ---
 title: Intégrer Windows appareils à Microsoft Defender pour le point de terminaison via la stratégie de groupe
 description: Utilisez la stratégie de groupe pour déployer le package de configuration sur Windows afin qu’ils soient intégrés au service.
-keywords: 'configurer des appareils à l’aide de la stratégie de groupe, de la gestion des appareils, configurer Microsoft Defender pour les appareils endpoint, intégrer Microsoft Defender pour les appareils endpoint, stratégie de groupe'
+keywords: configurer des appareils à l’aide de la stratégie de groupe, de la gestion des appareils, configurer Microsoft Defender pour les appareils endpoint, intégrer Microsoft Defender pour les appareils endpoint, stratégie de groupe
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,8 +16,13 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 12/07/2021
 ms.technology: mde
+ms.openlocfilehash: 3b20242247e33f8550ce4d153c2f2618c64d7007
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324338"
 ---
-
 # <a name="onboard-windows-devices-using-group-policy"></a>Intégrer des appareils Windows à l’aide d’une stratégie de groupe 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -60,7 +65,7 @@ Consultez le [fichier PDF](https://download.microsoft.com/download/5/6/0/5609001
 
 5. Dans **l’Éditeur de gestion des stratégies** de groupe, allez à **Configuration** ordinateur, puis **Préférences, puis** aux **paramètres du Panneau de configuration**.
 
-6. Cliquez avec le bouton droit **sur Tâches programmées**, pointez sur **Nouveau**, puis cliquez sur **Tâche immédiate (au moins Windows 7).**
+6. Cliquez avec le bouton droit **sur Tâches programmées**, pointez sur **Nouveau**, puis cliquez sur **Tâche immédiate (au moins Windows 7).**.
 
 7. Dans la **fenêtre** Tâche qui s’ouvre, allez dans **l’onglet** Général. Sous **Options de sécurité,** cliquez **sur Modifier** l’utilisateur ou le groupe, puis tapez SYSTEM, puis cliquez **sur Vérifier les** noms, **puis OK**. NT AUTHORITY\SYSTEM apparaît en tant que compte d’utilisateur que la tâche exécutera.
 
@@ -261,7 +266,7 @@ Créez une stratégie de groupe ou groupez ces paramètres avec les autres strat
 
 ### <a name="monitor-all-files-in-real-time-protection"></a>Surveiller tous les fichiers dans la protection en temps réel
 
-Accédez à **Modèles d’administration** \>  \> des **stratégies** \> de configuration ordinateur **Windows composants** \> **Antivirus Microsoft Defender** \> **protection en temps réel**.
+Accédez  à **Modèles d’administration** \> \> des **stratégies** \> de **configuration ordinateur Windows composants** \> **Antivirus Microsoft Defender** \> **protection en temps réel**.
 
  Étant donné que la valeur « Analyser les fichiers entrants et sortants » (par défaut) est 0, la stratégie de groupe « Configurer la surveillance des activités de programme et de fichiers entrants et sortants » pour le paramètre « bi-directionnel (accès complet) » est désactivée.
 
@@ -269,7 +274,7 @@ Accédez à **Modèles d’administration** \>  \> des **stratégies** \> de con
 
 ### <a name="configure-windows-defender-smartscreen-settings"></a>Configurer Windows Defender paramètres SmartScreen
 
-1. Accédez  aux **modèles d’administration** \> \> des **stratégies** \> de configuration ordinateur **Windows composants** \> **Windows Defender’explorateur SmartScreen**\>.
+1. Accédez aux  **modèles d’administration** \> \> des **stratégies** \> de configuration ordinateur **Windows composants** \> **Windows Defender’explorateur SmartScreen**\>.
 
     :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config windows defender smart screen explorer.":::
  
@@ -279,7 +284,7 @@ Accédez à **Modèles d’administration** \>  \> des **stratégies** \> de con
 
 ### <a name="configure-potentially-unwanted-applications"></a>Configurer les applications potentiellement indésirables
 
-Accédez à  **Modèles d’administration** \> \> des **stratégies** \> **de configuration ordinateur Windows composants** \> **Antivirus Microsoft Defender**.
+Accédez  à **Modèles d’administration** \> \> des **stratégies** \> de **configuration ordinateur Windows composants** \> **Antivirus Microsoft Defender**.
 
 :::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="config d’une application potentiellement indésirable.":::
 
@@ -287,7 +292,7 @@ Accédez à  **Modèles d’administration** \> \> des **stratégies** \> **de c
 
 ### <a name="configure-cloud-deliver-protection-and-send-samples-automatically"></a>Configurer cloud Deliver Protection et envoyer automatiquement des exemples
 
- Accédez à **Modèles d’administration** \> \> des **stratégies** \> de **configuration ordinateur Windows composants** \> **Antivirus Microsoft Defender** \> **MAPS**.
+Accédez  à **Modèles d’administration** \> \> des **stratégies** \> de configuration ordinateur **Windows composants** \> **Antivirus Microsoft Defender** \> **MAPS**.
 
 :::image type="content" source="images/gpo-maps1.png" alt-text="cartes.":::
 
@@ -296,6 +301,12 @@ Accédez à  **Modèles d’administration** \> \> des **stratégies** \> **de c
 :::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="rejoignez Microsoft Maps.":::
 
 :::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="envoyer un exemple de fichier lorsque des analyses plus approfondies sont requises.":::
+
+> [!NOTE]
+> **L’option Envoyer tous les exemples** fournit la plus grande analyse des binaires/scripts/documents, ce qui augmente la posture de sécurité.
+**L’option Envoyer des exemples sûrs** limite le type de binaires/scripts/documents en cours d’analyse et diminue la posture de sécurité. 
+
+Pour plus d’informations, voir [Activer la protection cloud dans Antivirus Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md), la protection cloud et l’envoi d’exemples [dans Antivirus Microsoft Defender.](cloud-protection-microsoft-antivirus-sample-submission.md)
 
 ### <a name="check-for-signature-update"></a>Vérifier la mise à jour des signatures
 
@@ -308,7 +319,7 @@ Accédez  aux **modèles d’administration des stratégies** \> de **configurat
 ### <a name="configure-cloud-deliver-timeout-and-protection-level"></a>Configurer le délai d’entrée et le niveau de protection de la livraison cloud
 
 Accédez à  **Modèles d’administration** \> \> des **stratégies** \> de configuration ordinateur **Windows composants** \> **Antivirus Microsoft Defender** \> **MpEngine**.
-Lorsque vous configurez la stratégie de niveau de protection cloud Antivirus Microsoft Defender stratégie de blocage par **défaut, la** stratégie est désactivée. C’est ce qui est nécessaire pour définir le niveau de protection sur la valeur par défaut de Windows.
+Lorsque vous configurez la stratégie de niveau de protection cloud Antivirus Microsoft Defender **stratégie** de blocage par défaut, la stratégie est désactivée. C’est ce qui est nécessaire pour définir le niveau de protection sur la valeur par défaut de Windows.
 
 :::image type="content" source="images/config-extended-cloud-check.png" alt-text="vérification étendue du cloud de la config;":::
 

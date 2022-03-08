@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d4052ef2e73b7b81630c8013e17cad533383b215
-ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
+ms.openlocfilehash: 3179ab18ab27bb41f5c0b1577d73ff48b3470b98
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "61578530"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326074"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurer Microsoft Defender pour le point de terminaison sur les fonctionnalités iOS
 
@@ -37,21 +37,23 @@ ms.locfileid: "61578530"
 
 ## <a name="conditional-access-with-defender-for-endpoint-on-ios"></a>Accès conditionnel avec Defender pour point de terminaison sur iOS
 
-Microsoft Defender pour endpoint sur iOS, ainsi que Microsoft Intune et Azure Active Directory permet d’appliquer la conformité des appareils et les stratégies d’accès conditionnel en fonction du score de risque de l’appareil. Defender pour point de terminaison est une solution de défense contre les menaces mobiles que vous pouvez déployer pour tirer parti de cette fonctionnalité via Intune.
+Microsoft Defender pour le point de terminaison sur iOS avec Microsoft Intune et Azure Active Directory permet d’appliquer la conformité des appareils et les stratégies d’accès conditionnel en fonction du score de risque de l’appareil. Defender pour point de terminaison est une solution de défense contre les menaces mobiles que vous pouvez déployer pour tirer parti de cette fonctionnalité via Intune.
 
-Pour plus d’informations sur la façon de configurer l’accès conditionnel avec Defender pour Endpoint sur iOS, voir [Defender pour Endpoint et Intune.](/mem/intune/protect/advanced-threat-protection)
+Pour plus d’informations sur la façon de configurer l’accès conditionnel avec Defender pour Endpoint sur iOS, voir [Defender pour Endpoint et Intune](/mem/intune/protect/advanced-threat-protection).
 
 ### <a name="jailbreak-detection-by-microsoft-defender-for-endpoint"></a>Détection de jailbreak par Microsoft Defender pour le point de terminaison
 
-Microsoft Defender pour point de terminaison a la capacité de détecter les appareils non gérés et gérés qui sont jailbreakés. Si un appareil est détecté comme jailbreaké, une alerte à risque élevé est signalée au portail Microsoft 365 Defender et si l’accès conditionnel est configuré en fonction du score de risque de l’appareil, l’appareil ne pourra pas accéder aux données d’entreprise. 
+Microsoft Defender pour point de terminaison a la capacité de détecter les appareils non gérés et gérés qui sont jailbreakés. Si un appareil est détecté comme jailbreaké, une alerte à risque élevé est signalée au portail Microsoft 365 Defender et si l’accès conditionnel est configuré en fonction du score de risque de l’appareil, l’appareil ne pourra pas accéder aux données d’entreprise.
 
 ## <a name="web-protection-and-vpn"></a>Protection web et VPN
 
-Par défaut, Defender pour le point de terminaison sur iOS inclut et active la fonctionnalité de protection web. La [protection web](web-protection-overview.md) permet de sécuriser les appareils contre les menaces web et de protéger les utilisateurs contre les attaques par hameçonnage. Defender pour le point de terminaison sur iOS utilise un VPN pour fournir cette protection. Notez qu’il s’agit d’un VPN local et, contrairement au VPN traditionnel, le trafic réseau n’est pas envoyé à l’extérieur de l’appareil.
+Par défaut, Defender pour le point de terminaison sur iOS inclut et active la fonctionnalité de protection web. La [protection web](web-protection-overview.md) permet de sécuriser les appareils contre les menaces web et de protéger les utilisateurs contre les attaques par hameçonnage. Notez que l’anti-hameçonnage et les indicateurs personnalisés (URL et adresses IP) sont pris en charge dans le cadre de la Protection Web. Le filtrage de contenu web n’est actuellement pas pris en charge sur iOS.
+
+Defender pour le point de terminaison sur iOS utilise un VPN pour fournir cette fonctionnalité. Notez qu’il s’agit d’un VPN local et, contrairement au VPN traditionnel, le trafic réseau n’est pas envoyé à l’extérieur de l’appareil.
 
 Bien qu’il soit activé par défaut, il se peut que vous de soyez dans certains cas dans l’obligation de désactiver le VPN. Par exemple, vous souhaitez exécuter certaines applications qui ne fonctionnent pas lorsqu’un VPN est configuré. Dans ce cas, vous pouvez choisir de désactiver le VPN de l’application sur l’appareil en suivant les étapes ci-dessous :
 
-1. Sur votre appareil iOS, ouvrez **l’application Paramètres,** cliquez ou appuyez sur **Général,** puis **sur VPN.**
+1. Sur votre appareil iOS, ouvrez **l’application Paramètres**, cliquez ou appuyez sur **Général**, puis **sur VPN**.
 1. Cliquez ou appuyez sur le bouton « i » de Microsoft Defender pour le point de terminaison.
 1. Désactivez la **Connecter à la demande** pour désactiver le VPN.
 
@@ -59,7 +61,7 @@ Bien qu’il soit activé par défaut, il se peut que vous de soyez dans certain
     > ![Connexion de la connexion VPN à la demande.](images/ios-vpn-config.png)
 
 > [!NOTE]
-> La protection web n’est pas disponible lorsque le VPN est désactivé. Pour activer à nouveau la Protection Web, ouvrez l’application Microsoft Defender pour point de terminaison sur l’appareil, puis cliquez ou appuyez sur **Démarrer le VPN.**
+> La protection web n’est pas disponible lorsque le VPN est désactivé. Pour activer à nouveau la Protection Web, ouvrez l’application Microsoft Defender pour point de terminaison sur l’appareil, puis cliquez ou appuyez sur **Démarrer le VPN**.
 
 ## <a name="co-existence-of-multiple-vpn-profiles"></a>Coexistence de plusieurs profils VPN
 
@@ -71,14 +73,14 @@ Microsoft Defender pour le point de terminaison peut être configuré pour envoy
 
 Les étapes de configuration des stratégies de protection des applications avec Microsoft Defender for Endpoint sont les suivantes :
 
-1. Configurer la connexion de votre client Microsoft Endpoint Manager microsoft Defender pour le point de terminaison. Dans le Centre d’administration [Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)sélectionnez Connecteurs d’administration des clients et jetons Microsoft Defender pour le point de terminaison (sous Plateforme croisée) ou Sécurité des points de terminaison Microsoft Defender  pour le point de terminaison (sous Programme d’installation) et activer les boutons bascule sous App Protection Policy Paramètres pour \>  \>   \>  **iOS.**
-1. Sélectionnez Enregistrer. Vous devriez voir **que l’état de** la connexion est désormais **activé.**
-1. Créer une stratégie de protection des applications : une fois  la configuration de votre connecteur Microsoft Defender pour point de terminaison terminée, accédez aux stratégies De protection des applications (sous Stratégie) pour créer une stratégie ou mettre à jour une stratégie \>  existante.
-1. Sélectionnez les paramètres de plateforme, **d’applications, de protection** des données et d’accès requis par votre organisation pour votre stratégie.
-1. Dans les conditions **du lancement** \> **conditionnel** de l’appareil, vous trouverez le paramètre Niveau de menace maximum autorisé de **l’appareil.** Il devra être configuré sur Faible, Moyen, Élevé ou Sécurisé. Les actions à votre disposition seront Bloquer **l’accès** ou **Effacer les données.** Vous pouvez voir une boîte de dialogue d’information pour vous assurer que votre connecteur est bien installé avant que ce paramètre prenne effet. Si votre connecteur est déjà installé, vous pouvez ignorer cette boîte de dialogue.
+1. Configurer la connexion de votre client Microsoft Endpoint Manager microsoft Defender pour le point de terminaison. Dans le Centre d’administration [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), sélectionnez **Connecteurs** \> **d’administration** \> des clients et jetons **Microsoft Defender** pour le point de terminaison (sous Plateforme croisée) \> ou Sécurité des points de terminaison **Microsoft Defender pour le** point de terminaison (sous Programme d’installation) et activer les boutons bascule sous App **Protection Policy Paramètres pour iOS**.
+1. Sélectionnez Enregistrer. Vous devriez voir **que l’état de** la connexion est maintenant **activé**.
+1. Créer une stratégie de protection des applications : une fois la configuration de votre connecteur Microsoft Defender pour point  de terminaison terminée, \> accédez aux stratégies De **protection** des applications (sous Stratégie) pour créer une stratégie ou mettre à jour une stratégie existante.
+1. Sélectionnez les paramètres de plateforme, **d’applications, de protection des données et** d’accès requis par votre organisation pour votre stratégie.
+1. Dans **les conditions de lancement conditionnel** \> de l’appareil, vous trouverez le paramètre **Niveau de menace maximum autorisé de l’appareil**. Il devra être configuré sur Faible, Moyen, Élevé ou Sécurisé. Les actions à votre disposition seront Bloquer **l’accès** ou **Effacer les données**. Vous pouvez voir une boîte de dialogue d’information pour vous assurer que votre connecteur est bien installé avant que ce paramètre prenne effet. Si votre connecteur est déjà installé, vous pouvez ignorer cette boîte de dialogue.
 1. Terminez avec Affectations et enregistrez votre stratégie.
 
-Pour plus d’informations sur la stratégie de protection des applications ou de gestion des applications, voir les paramètres de stratégie de protection des [applications iOS.](/mem/intune/apps/app-protection-policy-settings-ios)
+Pour plus d’informations sur la stratégie de protection des applications ou de gestion des applications, voir [les paramètres de stratégie de protection des applications iOS](/mem/intune/apps/app-protection-policy-settings-ios).
 
 ### <a name="deploying-microsoft-defender-for-endpoint-for-mam-or-on-unenrolled-devices"></a>Déploiement de Microsoft Defender pour le point de terminaison pour MAM ou sur des appareils non inscrits
 
@@ -97,12 +99,12 @@ Les clients peuvent désormais activer le contrôle de confidentialité pour le 
 
 Utilisez les étapes suivantes pour activer la confidentialité et ne pas collecter le nom de domaine dans le cadre du rapport d’alerte de hameçonnage.
 
-1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** App  >  **configuration policies**  >  **Add** Managed  >  **devices**.
-1. Nommez la stratégie, **Plateforme > iOS/iPadOS,** sélectionnez le type de profil.
-1. Sélectionnez **Microsoft Defender pour le point de terminaison** comme application cible.
-1. In Paramètres page, select **Use configuration designer** and add **DefenderExcludeURLInReport** as the key and value type as **Boolean**
-   - Pour activer la confidentialité et ne pas collecter le nom de domaine, entrez la valeur en tant que et `true` affectez cette stratégie aux utilisateurs. Par défaut, cette valeur est définie sur `false` .
-   - Pour les utilisateurs dont la clé est définie comme étant , l’alerte de hameçonnage ne contient pas les informations de nom de domaine chaque fois qu’un site malveillant est détecté et bloqué par `true` Defender for Endpoint.
+1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **AppsApp** >  **configuration** **policiesAddManaged** >  >  **devices**.
+1. Nommez la stratégie Platform **> iOS/iPadOS**, sélectionnez le type de profil.
+1. **Sélectionnez Microsoft Defender pour le point de terminaison** comme application cible.
+1. Dans Paramètres page, sélectionnez Utiliser le concepteur de **configuration** et ajoutez **DefenderExcludeURLInReport** comme clé et type de valeur **comme booléen**
+   - Pour activer la confidentialité et ne pas collecter le nom de domaine, entrez la valeur en `true` tant que et affectez cette stratégie aux utilisateurs. Par défaut, cette valeur est définie sur `false`.
+   - Pour les utilisateurs dont la clé est définie `true`comme étant , l’alerte de hameçonnage ne contient pas les informations de nom de domaine chaque fois qu’un site malveillant est détecté et bloqué par Defender for Endpoint.
 1. Cliquez **sur Suivant** et affectez ce profil à des appareils/utilisateurs ciblés.
 
 La mise en place ou la mise hors fonction des contrôles de confidentialité ci-dessus n’aura pas d’impact sur la vérification de la conformité de l’appareil ou l’accès conditionnel.
@@ -116,32 +118,32 @@ Pour protéger les données d’entreprise contre l’accès sur les appareils i
 
 Suivez les étapes ci-dessous pour créer une stratégie de conformité contre les appareils jailbreakés.
 
-1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices**  ->  **Compliance policies** Create  ->  **Policy**. Sélectionnez « iOS/iPadOS » comme plateforme, puis cliquez sur **Créer.**
+1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **DevicesCompliance** ->  **policiesCreate** ->  Policy. Sélectionnez « iOS/iPadOS » comme plateforme, puis cliquez sur **Créer**.
 
     > [!div class="mx-imgBorder"]
     > ![Créer une stratégie.](images/ios-jb-policy.png)
 
 2. Spécifiez un nom de stratégie, par exemple « Stratégie de conformité pour jailbreak ».
-3. Dans la page paramètres de conformité, cliquez  pour développer la **section** État de l’appareil, puis cliquez sur Bloquer pour les **appareils jailbreakés.**
+3. Dans la page paramètres de conformité, cliquez pour développer **la section État** de  l’appareil, puis cliquez sur Bloquer pour les **appareils jailbreakés**.
 
     > [!div class="mx-imgBorder"]
     > ![Stratégie Paramètres.](images/ios-jb-settings.png)
 
-4. Dans la **section Action pour non-conformité,** sélectionnez les actions en conformité avec vos besoins, puis sélectionnez **Suivant**.
+4. Dans la **section Action pour non-conformité** , sélectionnez les actions selon vos besoins, puis sélectionnez **Suivant**.
 
     > [!div class="mx-imgBorder"]
     > ![Actions de stratégie.](images/ios-jb-actions.png)
 
-5. Dans la section **Affectations,** sélectionnez les groupes d’utilisateurs que vous souhaitez inclure pour cette stratégie, puis sélectionnez **Suivant.**
-6. Dans la section **Révision+Créer,** vérifiez que toutes les informations entrées sont correctes, puis sélectionnez **Créer.**
+5. Dans la section **Affectations** , sélectionnez les groupes d’utilisateurs à inclure pour cette stratégie, puis sélectionnez **Suivant**.
+6. Dans la section **Révision+Créer** , vérifiez que toutes les informations entrées sont correctes, puis sélectionnez **Créer**.
 
 ## <a name="configure-custom-indicators"></a>Configurer des indicateurs personnalisés
 
-Defender pour le point de terminaison sur iOS permet aux administrateurs de configurer également des indicateurs personnalisés sur les appareils iOS. Pour plus d’informations sur la configuration des indicateurs personnalisés, voir [Gérer les indicateurs.](/microsoft-365/security/defender-endpoint/manage-indicators)
+Defender pour le point de terminaison sur iOS permet aux administrateurs de configurer également des indicateurs personnalisés sur les appareils iOS. Pour plus d’informations sur la configuration des indicateurs personnalisés, voir [Gérer les indicateurs](/microsoft-365/security/defender-endpoint/manage-indicators).
 
 > [!NOTE]
 > Defender pour le point de terminaison sur iOS prend en charge la création d’indicateurs personnalisés uniquement pour les adresses IP et les URL/domaines.
 
 ## <a name="report-unsafe-site"></a>Signaler un site non sécurisé
 
-Les sites web de hameçonnage usurpent l’identité de sites web dignes de confiance dans le but d’obtenir vos informations personnelles ou financières. Consultez la page [Fournir des commentaires sur la protection](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) du réseau si vous souhaitez signaler un site web qui pourrait être un site de hameçonnage.
+Les sites web de hameçonnage usurpent l’identité de sites web dignes de confiance dans le but d’obtenir vos informations personnelles ou financières. Consultez [la page Fournir des commentaires sur la protection](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) du réseau si vous souhaitez signaler un site web qui pourrait être un site de hameçonnage.

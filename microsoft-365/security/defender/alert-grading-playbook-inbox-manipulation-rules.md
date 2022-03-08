@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: e1bfb37ebf88ffd67a7fcfaddde46141583fb717
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 89d068feb5051a72e7592b7ea365b2e253e35115
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524092"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325976"
 ---
 # <a name="alert-grading-for-suspicious-inbox-manipulation-rules"></a>Notation des alertes pour les règles de manipulation de boîte de réception suspectes
 
@@ -83,7 +83,7 @@ Voici un exemple des détails d’une alerte déclenchée par une règle de mani
 
 Déterminez si les règles semblent suspectes en fonction des paramètres ou critères de règle suivants :
 
-- Keywords
+- Mots clés
 
    L’attaquant peut appliquer la règle de manipulation uniquement aux e-mails contenant certains mots. Vous pouvez trouver ces mots clés sous certains attributs tels que : « BodyContainsWords », « SubjectContainsWords » ou « SubjectOrBodyContainsWords ». 
 

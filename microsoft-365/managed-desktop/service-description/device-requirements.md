@@ -9,23 +9,27 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 5fb600434c8f6d7b62e7fd7408c3567a34c0eda0
-ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
+ms.openlocfilehash: 957203829bfcfeb36696a1a4c34888938712b471
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62202052"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326782"
 ---
 # <a name="device-requirements"></a>Configuration requise de l’appareil
 
-Microsoft Manged Desktop évalue régulièrement les besoins des appareils à inclure dans le service. Cet article décrit la configuration matérielle et logicielle requise pour qu’un appareil fonctionne avec Microsoft Manged Desktop. Vous pouvez consulter la liste des appareils spécifiques déjà approuvés pour une utilisation avec le service en fonction de ces exigences. Filtre des Microsoft Manged Desktop sur le site [Windows Pro d’entreprise](https://www.microsoft.com/en-us/windows/business/devices)
+Microsoft Manged Desktop évalue régulièrement les besoins des appareils à inclure dans le service. Cet article décrit la configuration matérielle et logicielle requise pour qu’un appareil fonctionne avec Microsoft Manged Desktop.
+
+Vous pouvez consulter la liste des appareils spécifiques déjà approuvés pour une utilisation en fonction de ces exigences. Filtrez les Microsoft Manged Desktop dans la page [Windows Pro appareils d’entreprise](https://www.microsoft.com/en-us/windows/business/devices).
 
 > [!NOTE]
-> Ces exigences peuvent changer à tout moment, mais nous vous fournirons un préavis de 30 jours pour toute modification de la configuration matérielle requise. Les exigences les plus récemment modifiées sont marquées par <b>\*</b> . 
+> Ces exigences peuvent changer à tout moment, mais nous vous fournirons un préavis de 30 jours pour toute modification de la configuration matérielle requise. Les exigences les plus récemment modifiées sont marquées par <b>\*</b>.
 
 ## <a name="check-hardware-requirements"></a>Vérifier la configuration matérielle requise
 
-Outre l’examen des spécifications de l’appareil, vous pouvez également utiliser le contrôle d’évaluation de la disponibilité [téléchargeable](../get-ready/readiness-assessment-downloadable.md) pour vérifier qu’un appareil donné répond aux exigences nécessaires. Cet outil vérifie également les paramètres réseau et les points de terminaison qui sont également nécessaires au bon travail du service.
+Outre l’examen des spécifications de l’appareil, vous pouvez également utiliser le contrôle d’évaluation de la disponibilité [téléchargeable pour](../get-ready/readiness-assessment-downloadable.md) vérifier que l’appareil répond aux exigences nécessaires.
+
+Cet outil vérifie également les paramètres réseau et les points de terminaison nécessaires au bon travail du service.
 
 ## <a name="minimum-requirements"></a>Configuration minimale requise
 
@@ -40,33 +44,32 @@ L’appareil doit avoir été effectué par l’un de ces fabricants :
 - Lenovo
 - Microsoft
 
-> [!NOTE] 
-> Depuis le 01 mars 2022, les appareils gérés par Microsoft Manged Desktop doivent être pris en charge par l’OEM. Travaillez avec votre OEM pour savoir quand les appareils de votre portefeuille atteindront la prise en charge de la fin de vie. Les clients sont chargés de s’assurer que les appareils sont remplacés avant la fin de vie. Tous les appareils ne faisant pas partie de la prise en charge OEM continueront d’être gérés par Microsoft Manged Desktop, mais la prise en charge de ces appareils peut être limitée car ils sont exposés à des problèmes de sécurité et de performances qui risquent de ne pas pouvoir être atténués par notre service.
+> [!NOTE]
+> Depuis le 01 mars 2022, les appareils gérés par Microsoft Manged Desktop doivent être pris en charge par l’OEM.<br><br>Travaillez avec votre OEM pour savoir quand les appareils de votre portefeuille atteindront la prise en charge de la fin de vie. Les clients sont chargés de s’assurer que les appareils sont remplacés avant la fin de vie. Tous les appareils en dehors de la prise en charge OEM continueront d’être gérés par Microsoft Manged Desktop, mais la prise en charge de ces appareils peut être limitée car ils sont exposés à des problèmes de sécurité et de performances qui ne peuvent pas être atténués par notre service.
 </b>
 
 ### <a name="installed-software"></a>Logiciels installés
 
 Ce logiciel doit être préinstallé sur l’appareil :
 
-- <b>\*</b>Windows 10 ou Windows 11 : Enterprise, Pro ou Pro Workstation Edition
-- la version 64 bits de Applications Microsoft 365 pour les grandes entreprises 
-- Tous les pilotes de périphérique applicables
-
+- <b>\*</b>Windows 10 ou Windows 11 : Enterprise, Pro ou Pro Édition Station de travail.
+- Version 64 bits de Microsoft 365 Apps pour Enterprise.
+- Tous les pilotes de périphérique applicables.
 
 ### <a name="physical-features"></a>Fonctionnalités physiques
 
 Les appareils doivent avoir les fonctionnalités ci-après :
 
-- Activé pour le démarrage sécurisé UEFI 
-- Module de plateforme fiable 2.0 
-- Capable de la sécurité basée sur la virtualisation 
-- [Intégrité du code protégée par l’hyperviseur](/windows-hardware/drivers/bringup/device-guard-and-credential-guard) prise en charge par le BIOS
+- Activé pour le démarrage sécurisé UEFI.
+- Module de plateforme fiable 2.0.
+- Capable de la sécurité basée sur la virtualisation.
+- [Intégrité du code protégée par l’hyperviseur prise](/windows-hardware/drivers/bringup/device-guard-and-credential-guard) en charge par le BIOS.
 
-Pour plus d’informations sur ces fonctionnalités et les technologies qui y sont associées que le service utilise, voir [Microsoft Manged Desktop technologies.](../intro/technologies.md)
+Pour plus d’informations sur ces fonctionnalités et les technologies associées utilisées par le service, voir [Microsoft Manged Desktop technologies](../intro/technologies.md).
 
 > [!NOTE]
 >- ARM processeurs ne sont pas pris en charge.
->- <b>\*</b>Windows 11 a une configuration [matérielle supplémentaire requise.](/windows/whats-new/windows-11-requirements)
+>- <b>\*</b>Windows 11 configuration matérielle [requise supplémentaire](/windows/whats-new/windows-11-requirements).
 
 Les appareils doivent respecter ou dépasser les limites suivantes pour le stockage et la mémoire :
 
@@ -80,9 +83,9 @@ Si l’appareil a été effectué après le 1er juillet 2020, il doit également
 
 Vos utilisateurs auront une bien meilleure expérience si vous choisissez des appareils dotés de ces fonctionnalités :
 
-- Soit un processeur intel vPro-platform, soit un processeur Pro AMD Ryzen
-- Lecteur de démarrage du type SSD avec une capacité d’au moins 256 Go
-- Mémoire ram (RAM) interne d’au moins 16 Go
-- Prise en charge de la veille moderne
-- L’appareil est de type PC sécurisé
-- Prend en charge la protection DMA du noyau
+- Soit un processeur intel vPro-platform, soit un processeur Pro AMD Ryzen.
+- Lecteur de démarrage du type SSD avec une capacité d’au moins 256 Go.
+- Mémoire d’appareil interne (RAM) d’au moins 16 Go.
+- Prise en charge de la veille moderne.
+- L’appareil est de type PC de type Secured-core.
+- Prend en charge la protection DMA du noyau.

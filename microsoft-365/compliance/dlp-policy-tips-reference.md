@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Découvrez comment ajouter un conseil de stratégie à une stratégie de protection contre la perte de données (DLP) pour informer un utilisateur qu’il travaille avec du contenu en conflit avec une stratégie DLP.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 227a6438bf1eb645e5bd85acfafeb8222d0b1427
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 52bb2fba47c5588dc6a44eb5f8e1d7b745e69e70
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963238"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319376"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>Référence des conseils de stratégie de prévention contre la perte de données
 
@@ -32,23 +32,20 @@ Les conseils de stratégie DLP dans Outlook Web Access sont pris en charge pour 
 
 **Conditions :**
 
-- L’expéditeur est
-- Le domaine de l’expéditeur est
 - Le destinataire est membre de
 - L’en-tête contient des mots ou des expressions
 - L’en-tête correspond aux modèles
-- La taille du document est égale ou supérieure à
 - Le type de message est
-- L’importance du message est
 - Le jeu de caractères de contenu contient des mots
-- L’objet ou le corps contient des mots ou des expressions
-- L’objet ou le corps correspond aux modèles
-- Le jeu de caractères de contenu contient des mots
-- Le contenu est reçu de
 - A l’expéditeur a override le conseil de stratégie
 - La taille du message est égale ou supérieure à
 - L’attribut AD de l’expéditeur contient des mots ou des expressions
 - L’attribut AD de l’expéditeur correspond aux modèles
+- Plages d’adresses IP de l’expéditeur
+- L’attribut Recipient AD contient des mots ou des expressions
+- L’attribut Recipient AD correspond aux modèles
+- Le nom du document contient des mots ou des expressions
+- Le nom du document correspond aux modèles
 - Le contenu du document contient des mots ou des expressions
 - Le contenu du document correspond aux modèles
 
@@ -59,7 +56,7 @@ Les conseils de stratégie DLP dans Outlook Web Access sont pris en charge pour 
 - Rediriger le message vers des utilisateurs spécifiques
 - Ajouter des destinataires à la zone À
 - Ajouter des destinataires à la zone Cc
-- Ajouter des destinataires à la zone Bcc
+- Ajouter des destinataires à la zone  Bcc
 - Ajouter le responsable de l’expéditeur en tant que destinataire
 - Ajouter une clause d’exclusion de responsabilité HTML
 - Prédépender l’objet de l’e-mail
@@ -90,8 +87,8 @@ La liste des types d’informations sensibles pré-détectés pour l’affichage
 - Mot de passe de paramètre de publication Azure  
 - Chaîne de connexion du cache Azure Redis  
 - Azure SAS  
-- Chaîne Service Bus connexion Azure  
-- stockage Azure de compte  
+- Chaîne de connexion Azure Service Bus  
+- stockage Azure de compte d’utilisateur  
 - stockage Azure de compte (générique)  
 - Numéro national belge
 - Numéro CPF Brésil
@@ -204,8 +201,8 @@ La liste des types d’informations sensibles pré-utilisés qui seront détect�
 - Mot de passe de paramètre de publication Azure 
 - Chaîne de connexion du cache Azure Redis 
 - Azure SAS 
-- Chaîne Service Bus connexion Azure 
-- stockage Azure de compte 
+- Chaîne de connexion Azure Service Bus 
+- stockage Azure de compte d’utilisateur 
 - stockage Azure de compte (générique) 
 - Numéro de permis de conduire belgique 
 - Numéro national belge 
@@ -395,16 +392,16 @@ Notez que des types d’informations sensibles personnalisés seront également 
 |**Application et plateforme**|**Prise en charge des conseils de stratégie DLP**|**Types d’informations sensibles pris en charge**|**Prédicats et actions pris en charge**|**Comments**|
 |:--|:--|:--|:--|:--|
 |**Outlook sur le web**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|sous-ensemble||
-|**Outlook Win32 (ver. 2105 build 14026.20000 et canal semi-annuel ver. 2102 build 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|sous-ensemble|sous-ensemble|Voir [Outlook 2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) et les ultérieures prend en charge l’affichage de conseils de stratégie uniquement pour certaines conditions et exceptions et la prise en charge des applications [Outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) et ultérieures et Office sur ordinateur de bureau affichant des conseils de stratégie pour certains types d’informations sensibles uniquement pour plus d’informations sur la prise en charge des types d’informations sensibles et des conditions et actions DLP prises en charge pour afficher les conseils de stratégie DLP sur Outlook  Win32.|
-|**Outlook Mobile (iOS, Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Les conseils de stratégie DLP ne sont pas pris en charge sur Outlook mobile|
-|**client Web SharePoint Online/OneDrive Entreprise Online**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|tous les prédicats et actions SPO/ODB dans la DLP ;||
-|**SharePoint client Win32/OneDrive Entreprise Win32**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Les conseils de stratégie DLP ne sont pas pris en charge SharePoint ou OneDrive applications clientes de bureau|
+|**Outlook Win32 (ver. 2105 build 14026.20000 et canal semi-annuel ver. 2102 build 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|sous-ensemble|sous-ensemble|Voir outlook [2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) et les ultérieures prend en charge l’affichage de conseils de stratégie uniquement pour certaines conditions et exceptions, et la prise en charge [d’Outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) et des applications Office sur bureau affichant des conseils de stratégie pour certains types d’informations sensibles uniquement pour plus d’informations sur la prise en charge des types d’informations sensibles et des conditions et actions DLP prises en charge pour afficher les conseils de stratégie DLP sur Outlook Win32.|
+|**Outlook Mobile (iOS, Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Les conseils de stratégie DLP ne sont pas pris en charge sur Outlook Mobile|
+|**Client Web SharePoint Online/OneDrive Entreprise**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|tous les prédicats et actions SPO/ODB dans la DLP ;||
+|**Client Win32 SharePoint/ OneDrive Entreprise**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Les conseils de stratégie DLP ne sont pas pris en charge sur les applications clientes de bureau SharePoint ou OneDrive|
 |**Word, Excel, PowerPoint Web Client**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|tous les prédicats et actions SPO/ODB dans la DLP ;|Le conseil de stratégie DLP est pris en charge si le document est hébergé sur SPO ou l’application web ODB et que la stratégie DLP est déjà estampillée.|
 |**Word, Excel, PowerPoint Mobile Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Les conseils de stratégie DLP ne sont pas pris en charge dans les applications mobiles pour Office.|
-|**Teams Web/ Teams Desktop/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|tous Teams prédicats dans la stratégie DLP|Les conseils de stratégie s’afficheront lorsqu’un message est marqué comme « Ce message a été marqué. Que puis-je faire ? Lorsque vous cliquez sur le lien, l’utilisateur peut passer en revue les types d’informations sensibles détectés et remplacer ou signaler un problème si autorisé par l’administrateur. Notez qu’aucun conseil de stratégie n’est affiché pour les fichiers. Lorsque le destinataire tente d’accéder au document, il se peut qu’il obtienne un accès refusé s’il n’est pas autorisé.|
-|**Appareils de point de terminaison Win32**|:::image type="icon" source="../media/rightmrk.png" border="false":::|sous-ensemble|Tous les prédicats et actions DLP de point de terminaison dans la stratégie DLP|Voir Protection contre la perte de données sur le point de terminaison [prend en charge les conseils de stratégie pour certains types d’informations sensibles uniquement](#data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types)|
+|**Teams Web/ Teams Desktop/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|Tous les prédicats Teams dans la stratégie DLP|Les conseils de stratégie s’afficheront lorsqu’un message est marqué comme « Ce message a été marqué. Que puis-je faire ? Lorsque vous cliquez sur le lien, l’utilisateur peut passer en revue les types d’informations sensibles détectés et remplacer ou signaler un problème si autorisé par l’administrateur. Notez qu’aucun conseil de stratégie n’est affiché pour les fichiers. Lorsque le destinataire tente d’accéder au document, il se peut qu’il obtienne un accès refusé s’il n’est pas autorisé.|
+|**Appareils de point de terminaison Win32**|:::image type="icon" source="../media/rightmrk.png" border="false":::|sous-ensemble|Tous les prédicats et actions DLP de point de terminaison dans la stratégie DLP|Voir Protection [contre la perte de données sur le point de terminaison prend en charge les conseils de stratégie pour certains types d’informations sensibles uniquement](#data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types)|
 |**Appareils macOS (préversion)**|conseils par défaut uniquement|all|sous-ensemble|Les stratégies de protection contre la perte de données sont appliquées sur les appareils macOS. Les conseils de stratégie personnalisée ne sont pas pris en charge.|
 |**Applications cloud tierces**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Les conseils de stratégie de protection contre la perte de données ne sont pas pris en charge sur les applications cloud tierces|
 |**Sur place**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none||
-|**Word, Excel, PowerPoint Client Win32**|:::image type="icon" source="../media/crsmrk.png" border="false":::|sous-ensemble|sous-ensemble|Veuillez consulter [Outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) et les ultérieures et la prise en charge des applications Office sur le Bureau affichant des conseils de stratégie pour certains types d’informations sensibles uniquement pour la liste des types d’informations sensibles pris en charge</br></br>Les conseils de stratégie pour les applications clientes WXP fonctionnent pour les documents stockés sur des sites SharePoint Online ou OneDrive Entreprise pour toutes les stratégies DLP qui ont exactement les conditions ou actions ci-dessous ou un sous-ensemble de conditions ou d’actions dans la stratégie DLP :</br> <ul><li>Le contenu contient des types d’informations sensibles</li><li>Étendue d’accès (le contenu est partagé en interne/en externe)</li><li>Avertir l’utilisateur (conseils de stratégie/notifications utilisateur)</li><li>Bloquer tout le monde</li><li>Rapports d’incident</li></ul></br> Si une autre condition ou action est présente, le conseil de stratégie DLP pour cette stratégie n’apparaîtra pas dans les applications de bureau de Word, Excel ou PowerPoint.</br>Voir [les conseils de stratégie Excel, PowerPoint et Word](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) pour plus d’informations|
+|**Word, Excel, PowerPoint Win32 Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|sous-ensemble|sous-ensemble|Consultez [outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) et version ultérieure et la prise en charge des applications Office sur bureau affichant des conseils de stratégie pour certains types d’informations sensibles uniquement pour la liste des types d’informations sensibles pris en charge</br></br>Les conseils de stratégie pour les applications clientes WXP fonctionnent pour les documents stockés sur des sites SharePoint Online ou OneDrive Entreprise pour toutes les stratégies DLP qui ont exactement les conditions ou actions ci-dessous ou un sous-ensemble de conditions ou d’actions dans la stratégie DLP :</br> <ul><li>Le contenu contient des types d’informations sensibles</li><li>Étendue d’accès (le contenu est partagé en interne/en externe)</li><li>Avertir l’utilisateur (conseils de stratégie/notifications utilisateur)</li><li>Bloquer tout le monde</li><li>Rapports d’incident</li></ul></br> Si une autre condition ou action est présente, le conseil de stratégie DLP pour cette stratégie n’apparaîtra pas dans les applications de bureau de Word, Excel ou PowerPoint.</br>Voir [les conseils de stratégie dans Excel, PowerPoint et Word](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) pour plus d’informations|
 ||||||

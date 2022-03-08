@@ -15,36 +15,36 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bc9e6814dc599b6a3474a00cd51676bbe708716a
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 177a7965d3e5a2d4ddd2e62bdde95fbc2762645b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166817"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329598"
 ---
 # <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Gérer le processus de déploiement progressif pour les mises à jour De Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Il est important de s’assurer que les composants clients sont à jour pour offrir des fonctionnalités de protection critiques et empêcher les attaques.
 
 Les fonctionnalités sont fournies par le biais de plusieurs composants :
 
 - [Endpoint Detection & Response](overview-endpoint-detection-response.md)
-- [Protection nouvelle génération avec une](microsoft-defender-antivirus-windows.md) protection [cloud](cloud-protection-microsoft-defender-antivirus.md)
+- [Protection nouvelle génération avec une](microsoft-defender-antivirus-windows.md) [protection cloud](cloud-protection-microsoft-defender-antivirus.md)
 - [Réduction de la surface d’attaque](overview-attack-surface-reduction.md)
 
 Les mises à jour sont publiées tous les mois à l’aide d’un processus de publication progressive. Ce processus permet d’activer la détection des échecs précoces pour détecter l’impact à mesure qu’elle se produit et la traiter rapidement avant un déploiement plus important.
 
 > [!NOTE]
-> Pour plus d’informations sur le contrôle des mises à jour quotidiennes de l’intelligence de la sécurité, voir [Planifier Antivirus Microsoft Defender mises à jour de la protection.](manage-protection-update-schedule-microsoft-defender-antivirus.md) Les mises à jour garantissent que la protection nouvelle génération peut se défendre contre les nouvelles menaces, même si la protection assurée par le cloud n’est pas disponible pour le point de terminaison.
+> Pour plus d’informations sur le contrôle des mises à jour quotidiennes de l’intelligence de la sécurité, voir [Planifier Antivirus Microsoft Defender mises à jour de la protection](manage-protection-update-schedule-microsoft-defender-antivirus.md). Les mises à jour garantissent que la protection nouvelle génération peut se défendre contre les nouvelles menaces, même si la protection assurée par le cloud n’est pas disponible pour le point de terminaison.
 
 ## <a name="microsoft-gradual-rollout-model"></a>Modèle de déploiement progressif Microsoft
 
@@ -65,13 +65,13 @@ Si vos ordinateurs reçoivent les mises à jour Defender de Windows Update, le p
 
 Pour les ordinateurs recevant des mises à jour via, par exemple, Windows Server Update Services (WSUS) ou Microsoft Endpoint Configuration Manager (MECM), d’autres options sont disponibles pour toutes les mises à jour Windows, y compris les options de Microsoft Defender pour endpoint.
 
-- En savoir plus sur l’utilisation d’une solution telle que WSUS, MECM pour gérer la distribution et l’application des mises à jour dans Gérer les mises à jour Antivirus Microsoft Defender et appliquer les lignes de base - Windows [sécurité](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
+- En savoir plus sur l’utilisation d’une solution telle que WSUS, MECM pour gérer la distribution et l’application des mises à jour dans Gérer les mises à jour Antivirus Microsoft Defender et appliquer les lignes de base [- Windows sécurité](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
 
 ## <a name="update-channels-for-monthly-updates"></a>Mettre à jour les canaux pour les mises à jour mensuelles
 
 Vous pouvez affecter un ordinateur à un canal de mise à jour pour définir la cadence à laquelle un ordinateur reçoit les mises à jour mensuelles du moteur et de la plateforme.
 
-Pour plus d’informations sur la configuration des mises à jour, voir Créer un processus de déploiement progressif personnalisé pour les mises à jour [de Microsoft Defender.](configure-updates.md)
+Pour plus d’informations sur la configuration des mises à jour, voir Créer un processus de déploiement progressif personnalisé pour [les mises à jour Microsoft Defender](configure-updates.md).
 
 Les canaux de mise à jour suivants sont disponibles :
 
@@ -133,4 +133,4 @@ Pour créer votre propre processus de déploiement progressif personnalisé pour
 - Microsoft Endpoint Manager
 - PowerShell
 
-Pour plus d’informations sur l’utilisation de ces [outils,](configure-updates.md)voir Créer un processus de déploiement progressif personnalisé pour les mises à jour de Microsoft Defender.
+Pour plus d’informations sur l’utilisation de ces outils, voir Créer un processus de déploiement progressif personnalisé pour les mises à jour [de Microsoft Defender](configure-updates.md).

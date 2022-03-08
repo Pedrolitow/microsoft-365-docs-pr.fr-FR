@@ -1,5 +1,5 @@
 ---
-title: Promouvoir votre environnement d Microsoft 365 Defender d’évaluation en production
+title: Étape 7 Promouvoir votre environnement d Microsoft 365 Defender d’évaluation en production
 description: Utilisez cet article pour promouvoir vos evals de MDI, MDO, MDE et Defender pour les applications cloud dans votre environnement en Microsoft 365 Defender ou M365D.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,14 +20,14 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e4b852ef7f252033a67e6aa3f1f8183400c18bdb
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 47f36d965c9b2b6ef5f106c590e47fe0251163d8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943303"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323974"
 ---
-# <a name="promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>Promouvoir votre environnement d Microsoft 365 Defender d’évaluation vers la production
+# <a name="step-7-promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>Étape 7 Promouvoir votre environnement d Microsoft 365 Defender d’évaluation vers la production
 
 **S’applique à :**
 - Microsoft 365 Defender
@@ -52,11 +52,11 @@ Après avoir correctement évalué ou piloté MDO, il peut être promu dans l’
 
 ## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 
-Pour promouvoir l’environnement d’évaluation de Microsoft Defender for Endpoint d’un pilote à un environnement de production, il vous suffit d’intégrer davantage de points de terminaison au service à l’aide de l’un des outils et [méthodes pris en charge.](../defender-endpoint/onboard-configure.md)
+Pour promouvoir l’environnement d’évaluation de Microsoft Defender for Endpoint d’un pilote à un environnement de production, il vous suffit d’intégrer davantage de points de terminaison au service à l’aide de l’un des [outils et méthodes pris en charge](../defender-endpoint/onboard-configure.md).
 
 Utilisez les instructions générales suivantes pour intégrer davantage d’appareils à Microsoft Defender pour endpoint.
 
-1. Vérifiez que l’appareil remplit les [conditions minimales requises.](../defender-endpoint/minimum-requirements.md)
+1. Vérifiez que l’appareil remplit les [conditions minimales requises](../defender-endpoint/minimum-requirements.md).
 2. En fonction de l’appareil, suivez les étapes de configuration fournies dans la section d’intégration du portail Defender for Endpoint.
 3. Utilisez l’outil de gestion et la méthode de déploiement appropriés pour vos appareils.
 4. Exécutez un test de détection pour vérifier que les appareils sont correctement intégrés et qu’ils font des rapports au service.

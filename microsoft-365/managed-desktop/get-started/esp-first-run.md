@@ -1,7 +1,7 @@
 ---
 title: Expérience de première exécution avec le pilote automatique et la page état d’inscription
-description: 'Comment déployer l’expérience ESP, les paramètres utilisés et les modifications de configuration'
-keywords: 'Bureau géré Microsoft, Microsoft 365, service, documentation'
+description: Comment déployer l’expérience ESP, les paramètres utilisés et les modifications de configuration
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: tiaraquan
 ms.author: tiaraquan
@@ -10,15 +10,20 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
+ms.openlocfilehash: ff4e7dc306ea3a017cb94261673d1325bc7cf94e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324590"
 ---
-
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Expérience de première exécution avec le pilote automatique et la page état d’inscription
 
 Microsoft Manged Desktop utilise à la fois [Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot) et la page d’état d’inscription de Microsoft Intune [(ESP)](/windows/deployment/windows-autopilot/enrollment-status) pour offrir la meilleure expérience de première utilisation possible à vos utilisateurs.
 
 ## <a name="initial-deployment"></a>Déploiement initial
 
-Pour fournir l’expérience ESP, vous devez inscrire des appareils dans le service Microsoft Manged Desktop service. Pour plus d’informations sur l’inscription, voir [Inscrire de nouveaux appareils vous-même](../get-started/register-devices-self.md) ou [Étapes pour que les partenaires inscrivent des appareils](../get-started/register-devices-partner.md).
+Pour fournir l’expérience ESP, vous devez inscrire des appareils dans le service Microsoft Manged Desktop service. Pour plus d’informations sur l’inscription, voir [Inscription manuelle](../get-started/manual-registration.md) ou [Inscription du partenaire](../get-started/partner-registration.md).
 La page État de l’inscription et Autopilot pour le déploiement pré-provisioné sont activés par défaut dans Microsoft Manged Desktop.
 
 ## <a name="autopilot-profile-settings"></a>Paramètres de profil Autopilot
@@ -61,7 +66,7 @@ L’expérience se déroule comme suit :
 
 1. L’expérience Autopilot démarre et l’utilisateur entre ses informations d’identification.
 2. L’appareil ouvre la page État de l’inscription et passe par les phases de préparation et de mise en place de l’appareil. La troisième étape (configuration du compte)  est actuellement ignorée dans la configuration Microsoft Manged Desktop,car l’esp utilisateur est désactivée. L’appareil redémarre.
-3. Après le redémarrage, l’appareil ouvre la Windows page de Windows avec **un autre utilisateur**.
+3. Après le redémarrage, l’appareil ouvre la page Windows de la page de Windows avec **un autre utilisateur**.
 4. Les utilisateurs entrent à nouveau leurs informations d’identification et le Bureau s’ouvre.
 
 > [!NOTE]
@@ -72,14 +77,14 @@ L’expérience se déroule comme suit :
 ## <a name="additional-prerequisites-for-autopilot-for-pre-provisioned-deployment"></a>Conditions préalables supplémentaires pour Autopilot pour le déploiement pré-provisioné
 
 - L’appareil doit avoir une connexion réseau câblé.
-- Si vous avez des appareils qui ont été enregistrés à l’aide du portail Microsoft Manged Desktop avant août 2020, désins inscrivez-les et ré-inscrivez-les.
+- Si vous avez des appareils qui ont été enregistrés à l’aide du portail Microsoft Manged Desktop d’août 2020, désins inscrivez-les et ré-inscrivez-les.
 - Les appareils doivent avoir une image d’usine qui inclut la mise à jour cumulative [19H1/19H2 2020.11C](https://support.microsoft.com/topic/november-19-2020-kb4586819-os-builds-18362-1237-and-18363-1237-preview-25cbb849-74af-b8b8-29b8-68aa925e8cc3) de novembre 2020 ou [20H1 2020.11C](https://support.microsoft.com/topic/november-30-2020-kb4586853-os-builds-19041-662-and-19042-662-preview-8fb07fb8-a7dd-ea62-d65e-3305da09f92e) installée, ou doit être réinventée avec la dernière image Microsoft Manged Desktop.
-- Les appareils physiques doivent prendre en charge le TPM 2.0 et l’attestation d’appareil. Les machines virtuelles ne sont pas pris en charge. Le processus de pré-approvisionnement utilise les Windows auto-déploiement Autopilot, le TPM 2.0 est donc requis. Le processus d’attestation de TPM nécessite également l’accès à un ensemble d’URL HTTPS uniques pour chaque fournisseur de TPM. Pour plus d’informations, voir l’entrée relative au mode auto-déploiement Autopilot et au déploiement pré-mis en service d’Autopilot dans Windows la mise en réseau [Autopilot](/mem/autopilot/networking-requirements#tpm).
+- Les appareils physiques doivent prendre en charge le TPM 2.0 et l’attestation d’appareil. Les machines virtuelles ne sont pas pris en charge. Le processus de pré-approvisionnement utilise Windows auto-déploiement Autopilot, le TPM 2.0 est donc requis. Le processus d’attestation de TPM nécessite également l’accès à un ensemble d’URL HTTPS uniques pour chaque fournisseur de TPM. Pour plus d’informations, voir l’entrée relative au mode auto-déploiement Autopilot et au déploiement pré-mis en service d’Autopilot dans Windows la mise en réseau [Autopilot](/mem/autopilot/networking-requirements#tpm).
 
 ## <a name="sequence-of-events-in-autopilot-for-pre-provisioned-deployment"></a>Séquence d’événements dans Autopilot pour le déploiement pré-provisioné
 
 1. L’administrateur informatique réinitialise ou réinitialise l’appareil si nécessaire.
-2. L’administrateur informatique démarre l’appareil, atteint l’expérience « out-of-box experience » et appuie sur la touche Windows cinq fois.
+2. L’administrateur informatique démarre l’appareil, atteint l’expérience « out-of-box experience » et appuie cinq fois sur Windows touche.
 3. L’administrateur informatique sélectionne Windows approvisionnement Autopilot, puis sélectionne **Continuer**. Sur l’Windows de configuration Autopilot, des informations sur l’appareil s’affichent.
 4. L’administrateur informatique sélectionne **Provision** pour démarrer le processus d’approvisionnement.
 5. L’appareil démarre ESP et passe par les phases de préparation et de configuration de l’appareil. Pendant la phase de configuration de l’appareil, **l’installation** de l’application x s’affiche (selon la configuration exacte du profil ESP).
@@ -117,7 +122,7 @@ Vous pouvez demander un autre modèle de nom d’appareil. Toutefois, vous ne po
 - Dans l’idéal, les applications ne doivent pas avoir de dépendances. Si vous avez des applications qui *doivent* avoir des dépendances, assurez-vous de les configurer, de les tester et de les valider dans le cadre de votre évaluation ESP.
 - Microsoft Teams ne peut pas être inclus dans ESP.
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de mise en Microsoft Manged Desktop
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de mise en place du Bureau géré Microsoft
 
 1. Accéder au[Portail d’administration](access-admin-portal.md).
 1. [Ajouter et vérifier des contacts d’administrateur dans le portail d’administration](add-admin-contacts.md).
@@ -125,7 +130,7 @@ Vous pouvez demander un autre modèle de nom d’appareil. Toutefois, vous ne po
 1. Déployez et affectez le[Portail d’entreprise Intune](company-portal.md).
 1. [Attribuer des licences](assign-licenses.md).
 1. [Déployer des applications](deploy-apps.md).
-1. [Configurer les appareils](set-up-devices.md).
+1. [Préparez les appareils](prepare-devices.md).
 1. Configurer l’expérience de première expérience avec Autopilot et la page État de l’inscription (cet article).
 1. [Activer les fonctionnalités de support utilisateur](enable-support.md).
 1. [Préparez vos utilisateurs à utiliser des appareils](get-started-devices.md).

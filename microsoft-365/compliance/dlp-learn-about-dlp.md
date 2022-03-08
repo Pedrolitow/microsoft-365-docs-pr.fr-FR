@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment protéger vos informations sensibles à l’aide Microsoft 365 stratégies et outils de protection contre la perte de données et faire une visite guidée du cycle de vie DLP.
-ms.openlocfilehash: 4d6cd204a6aafc261e6648d6f81ea359a5fcdfb8
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: f64fa30ed0f2eddae03a14451c55f95c9e4249a3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354971"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317680"
 ---
 # <a name="learn-about-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données
 
@@ -30,7 +30,7 @@ Dans Microsoft 365, vous implémentez la protection contre la perte de données 
 
 - Microsoft 365 services tels que Teams, Exchange, SharePoint et OneDrive
 - Office applications telles que Word, Excel et PowerPoint
-- Windows 10, Windows 11 macOS et macOS (Rapport 10.15 et supérieur) points de terminaison
+- Windows 10, Windows 11 et macOS (Rapport 10.15 et supérieur)
 - applications cloud non-Microsoft
 - partages de fichiers locaux et partages de fichiers SharePoint.
 
@@ -69,7 +69,7 @@ Microsoft 365 la surveillance et la protection DLP sont natives aux applications
 
 **Planification de la technologie pour la DLP**
 
-N’oubliez pas que la DLP en tant que technologie peut surveiller et protéger vos données au repos, les données en cours d’utilisation et les données en mouvement sur les services Microsoft 365, les Windows 10, les Windows 11 et les appareils macOS (État 10.15 et supérieur), les partages de fichiers locaux et les SharePoint locaux. Il existe des implications en matière de planification pour les différents emplacements, le type de données que vous souhaitez surveiller et protéger, ainsi que les actions à prendre lorsqu’une correspondance de stratégie se produit.
+N’oubliez pas que la DLP en tant que technologie peut surveiller et protéger vos données au repos, les données en cours d’utilisation et les données en mouvement sur les services Microsoft 365, Windows 10, Windows 11 et macOS (État 10.15 et supérieur), les partages de fichiers locaux et les SharePoint locaux. Il existe des implications en matière de planification pour les différents emplacements, le type de données que vous souhaitez surveiller et protéger, ainsi que les actions à prendre lorsqu’une correspondance de stratégie se produit.
 
 **Planification des processus métiers pour la DLP**
 
@@ -90,7 +90,7 @@ Vous pouvez appliquer des stratégies DLP aux données au repos, aux données en
 - Comptes OneDrive
 - conversation et messages de canal Teams
 - Microsoft Cloud App Security
-- Windows 10, Windows 11 macOS et macOS (État 10.15 et supérieur)
+- Windows 10, Windows 11 et macOS (Rapport 10.15 et supérieur)
 - Référentiels locaux
 - Sites PowerBI
 
@@ -143,8 +143,8 @@ emplacement | Inclure/exclure par|
 |e-mail Exchange| groupes de distribution|
 |sites SharePoint |sites |
 |comptes OneDrive |comptes ou groupes de distribution |
-|conversation et messages de canal Teams |comptes |
-|Windows 10, Windows 11 macOS et macOS (État 10.15 et supérieur) |utilisateurs ou groupe |
+|conversation et messages de canal Teams |compte ou groupe de distribution |
+|Windows 10, Windows 11 et macOS (Rapport 10.15 et supérieur) |utilisateurs ou groupe |
 |Microsoft Cloud App Security |instance |
 |Référentiels locaux| chemin d’accès au fichier de référentiel|
 
@@ -158,8 +158,8 @@ emplacement | Inclure/exclure par|
 
 - SharePoint/Exchange/OneDrive : bloquer l’accès au contenu aux personnes extérieures à votre organisation. Affichez un conseil à l’utilisateur et envoyez-lui une notification par courrier électronique lui avertissant qu’il prend une action qui est interdite par la stratégie DLP.
 - Teams chat et canal : empêcher le partage d’informations sensibles dans la conversation ou le canal
-- appareils Windows 10, Windows 11 et macOS (Contrôle 10.15 et version supérieure) : auditer ou limiter la copie d’un élément sensible sur un périphérique USB à supprimer
-- Office applications : afficher une fenêtre popup pour avertir l’utilisateur qu’il s’engage dans un comportement risqué et bloquer ou bloquer, mais autoriser le remplacement.
+- Windows 10, Windows 11 et macOS (Contrôle 10.15 et version supérieure) : auditer ou limiter la copie d’un élément sensible sur un périphérique USB à supprimer
+- Office applications : affichez une fenêtre popup pour avertir l’utilisateur qu’il s’engage dans un comportement risqué et qu’il bloque ou bloque, mais autorise le remplacement.
 - Partages de fichiers locaux : déplacer le fichier de l’endroit où il est stocké vers un dossier de mise en quarantaine
 
 > [!NOTE]
@@ -219,7 +219,7 @@ Pour en savoir plus sur Microsoft 365 DLP, voir :
 - [En savoir plus sur l’extension de la conformité Microsoft (préversion).](dlp-chrome-learn-about.md)
 - [En savoir plus sur le tableau de bord des alertes de protection contre la perte de données](dlp-alerts-dashboard-learn.md)
 
-Pour savoir comment utiliser la protection contre la perte de données pour se conformer aux réglementations en matière de confidentialité des données, voir [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).
+Pour découvrir comment utiliser la protection contre la perte de données pour se conformer aux réglementations en matière de confidentialité des données, voir [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).
 
 ## <a name="licensing-and-subscriptions"></a>Licences et abonnements
 

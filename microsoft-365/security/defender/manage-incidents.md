@@ -8,25 +8,25 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365-initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: b9cc3e0ab911515d010b1a6e7feaac5cff8aed51
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 3418eac69930819fdb0e3fd8d1bae80312f89a9f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903938"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326410"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gérer les incidents dans Microsoft 365 Defender
 
@@ -48,7 +48,7 @@ Voici comment gérer vos incidents :
 - [Ajouter des balises d’incident](#add-incident-tags)
 - [Affecter l’incident à un compte d’utilisateur](#assign-an-incident)
 - [Les résoudre](#resolve-an-incident)
-- [Définir sa classification et sa détermination](#set-the-classification-and-determination)
+- [Spécifier sa classification](#specify-the-classification)
 - [Ajouter des commentaires](#add-comments)
 
 Vous pouvez gérer les incidents à partir du volet **Gérer les incidents** pour un incident. Voici un exemple.
@@ -95,11 +95,16 @@ Si l’incident a été corrigé, sélectionnez **Résoudre l’incident** pour 
 
 Un incident qui n’est pas résolu s’affiche comme **étant actif**.
 
-## <a name="set-the-classification-and-determination"></a>Définir la classification et la détermination
+## <a name="specify-the-classification"></a>Spécifier la classification
 
-La classification des incidents est la question de savoir s’il s’agit d’une alerte vraie ou d’une fausse alerte, que vous configurez à partir du champ **Classification** . 
+Dans le **champ Classification** , vous spécifiez si l’incident est :
 
-S’il s’agissait d’une alerte réelle, vous devez également spécifier le type de menace qu’il s’agissait avec le **champ Détermination** . Spécifier le type de menace permet à votre équipe de sécurité de voir les modèles de menace et d’agir pour défendre votre organisation contre celles-ci. 
+- **Non définie** (valeur par défaut).
+- **Vrai positif avec** un type de menace. Utilisez cette classification pour les incidents qui indiquent avec précision une menace réelle. Spécifier le type de menace permet à votre équipe de sécurité de voir les modèles de menace et d’agir pour défendre votre organisation contre celles-ci.
+- **Activité d’information attendue avec** un type d’activité. Utilisez les options de cette catégorie pour classer les incidents pour les tests de sécurité, l’activité de l’équipe rouge et le comportement inhabituel attendu des applications et des utilisateurs de confiance.
+- **Les faux positifs** pour les types d’incidents que vous déterminez peuvent être ignorés, car ils sont techniquement imprécis ou faux.
+
+La classification des incidents et la spécification de leur état et de leur type permettent d’affiner Microsoft 365 Defender afin de fournir une meilleure détermination de la détection au fil du temps.
 
 ## <a name="add-comments"></a>Ajouter des commentaires
 

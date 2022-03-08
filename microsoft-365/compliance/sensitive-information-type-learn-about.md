@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Cet article donne une vue d’ensemble des types d’informations sensibles et de la façon dont ils détectent les informations sensibles telles que la sécurité sociale, la carte bancaire ou les numéros de compte bancaire pour identifier les éléments sensibles
-ms.openlocfilehash: 6bc15ae90d591e2f2c4e432dce025201c9f13c18
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: fbe23bbb6c639857367cc0b8467f6084e9116af1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903786"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318842"
 ---
 # <a name="learn-about-sensitive-information-types"></a>En savoir plus sur les types d’informations sensibles
 
@@ -42,7 +42,6 @@ Microsoft fournit un grand nombre de sits pré-configurés ou vous pouvez créer
 - [Étiquettes de rétention](retention.md)
 - [Gestion des risques internes](insider-risk-management.md)
 - [Conformité des communications](communication-compliance.md)
-- [À l’intérieur de la gestion des risques](insider-risk-management-solution-overview.md)
 - [Stratégies de étiquetage automatique](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Microsoft Priva](/privacy/priva)
 
@@ -50,7 +49,7 @@ Microsoft fournit un grand nombre de sits pré-configurés ou vous pouvez créer
 
 ### <a name="built-in-sensitive-information-types"></a>Types d’informations sensibles intégrés
 
-Ces sits sont créées par Microsoft s’affiche dans la console de conformité par défaut. Ces sits ne peuvent pas être modifiés, mais ils peuvent être utilisés comme modèles et copiés pour créer des types d’informations sensibles personnalisés.
+Ces sits sont créées par Microsoft s’affiche dans la console de conformité par défaut. Ces sits ne peuvent pas être modifiés, mais ils peuvent être utilisés comme modèles et copiés pour créer des types d’informations sensibles personnalisés. Voir, [Définitions d’entités de type informations sensibles](sensitive-information-type-entity-definitions.md) pour une liste complète de tous les sits.
 
 ### <a name="named-entity-sensitive-information-types"></a>Types d’informations sensibles d’entité nommée
 
@@ -86,7 +85,7 @@ Chaque entité de type d’informations sensibles est définie par les champs ci
 
 ![Diagramme de preuve corroborante et fenêtre de proximité.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-En savoir plus sur les niveaux de confiance dans cette vidéo
+En savoir plus sur les niveaux de confiance dans cette courte vidéo.
 
 
  > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]  
@@ -188,7 +187,7 @@ Vous pouvez choisir parmi plusieurs options pour créer des types d’informatio
 > - Par exemple, pour détecter un mot clé tel que « 机密的document », utilisez deux variantes du mot clé ; l’un avec un espace entre le texte japonais et anglais et l’autre sans espace entre le texte japonais et l’anglais. Par conséquent, les mots clés à ajouter dans le SIT doivent être « 机密的 document » et « 机密的document ». De la même façon, pour détecter une expression « 東京オリンピック2020 », deux variantes doivent être utilisées : « 東京オリンピック 2020 » et « 東京オリンピック2020 ».
 > 
 > En plus des caractères chinois/japonais/sur deux caractères d’byte, si la liste des mots clés/expressions contient également des mots non chinois/japonais (comme l’anglais uniquement), vous devez créer deux dictionnaires/listes de mots clés. Un pour les mots clés contenant des caractères chinois/japonais/sur deux octets et un autre pour l’anglais uniquement. 
-> - Par exemple, si vous souhaitez créer un dictionnaire/liste de mots clés avec trois phrases « Hautement confidentiel », « 機密 « 機密 « « « 机密secument » et « 机密socument », vous devez créer deux listes de mots clés. 
+> - Par exemple, si vous souhaitez créer un dictionnaire/liste de mots clés avec trois phrases « Hautement confidentiel », « 機密 « 機密sso » et « 机密sydocument », vous devez créer deux listes de mots clés. 
 >     1. Extrêmement confidentiel
 >     2. Document 機密性が高い, 机密的 et document 机密的
 > 

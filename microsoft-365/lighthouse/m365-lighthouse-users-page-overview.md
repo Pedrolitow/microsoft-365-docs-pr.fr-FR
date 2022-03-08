@@ -16,19 +16,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la page Utilisateurs.
-ms.openlocfilehash: d7b20d37aa9669ac6726efab19268018f5d10973
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: fad5ff4b41b43efb68c7e230401b80e50cea95a4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937459"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329936"
 ---
 # <a name="microsoft-365-lighthouse-users-page-overview"></a>vue d Microsoft 365 Lighthouse de la page Utilisateurs 
 
-> [!NOTE]
-> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences.](m365-lighthouse-requirements.md) Si votre organisation n’a pas Microsoft 365 Lighthouse, [consultez s’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
-
-Microsoft 365 Lighthouse vous permet de gérer les utilisateurs sur  plusieurs comptes clients en sélectionnant Utilisateurs dans le volet de navigation de gauche pour ouvrir la page Utilisateurs. À partir de cette page, vous pouvez rechercher des utilisateurs, évaluer et agir sur l’état de sécurité de vos comptes d’utilisateurs. Vous pouvez également afficher des informations sur les utilisateurs à risque et l’état de l’authentification multifacteur et de la réinitialisation du mot de passe en libre-service.  
+Microsoft 365 Lighthouse vous permet de gérer les utilisateurs sur plusieurs comptes clients en sélectionnant Utilisateurs dans le volet de navigation de gauche pour ouvrir la page Utilisateurs. À partir de cette page, vous pouvez rechercher des utilisateurs, évaluer et agir sur l’état de sécurité de vos comptes d’utilisateurs. Vous pouvez également afficher des informations sur les utilisateurs à risque et l’état de l’authentification multifacteur et de la réinitialisation du mot de passe en libre-service.  
   
 ## <a name="search-users-tab"></a>Onglet Utilisateurs de la recherche  
   
@@ -38,13 +35,21 @@ Microsoft 365 Lighthouse vous permet de gérer les utilisateurs sur  plusieurs c
 
 ## <a name="risky-users-tab"></a>Onglet Utilisateurs à risque
 
-L’onglet Utilisateurs à risque affiche les comptes d’utilisateurs au sein de vos clients qui ont été signalés pour un comportement à risque. Sélectionnez l’un des utilisateurs pour afficher plus d’informations sur un risque détecté ou pour atténuer un risque en réinitialisation du mot de passe d’un utilisateur ou en bloquant la signature.
+L’onglet Utilisateurs à risque affiche les comptes d’utilisateurs au sein de vos clients qui ont été signalés pour un comportement à risque. Sélectionnez l’un des utilisateurs pour afficher plus d’informations sur un risque détecté ou pour atténuer un risque en réinitialisation du mot de passe d’un utilisateur ou en bloquant la signature. Pour plus d’informations sur les types de risque et la détection, voir [Qu’est-ce qu’un risque ?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
+
+L’onglet Utilisateurs à risque inclut également les options suivantes :
+- **Exporter :** Sélectionnez cette sélection pour exporter les données de conformité des appareils vers Excel fichier de valeurs séparées par des virgules (.csv).
+- **Actualiser :** Sélectionnez cette sélection pour récupérer les données de conformité des appareils les plus récentes.
+- **Confirmez que les utilisateurs sont compromis :** Sélectionnez cette sélection pour confirmer que l’utilisateur a été compromis.
+- **Ignorer les risques pour les utilisateurs :** Sélectionnez cette sélection pour ignorer les risques pour l’utilisateur.  
+- **Réinitialisez le mot de passe :** Sélectionnez pour modifier ou réinitialiser le mot de passe de l’utilisateur.
+- **Bloquer la connectez-vous :** Sélectionnez cette sélection pour empêcher tout le monde de se signer en tant qu’utilisateur.
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-risky-users-tab.png" alt-text="Capture d’écran de l’onglet Utilisateurs à risque.":::
 
 ## <a name="multifactor-authentication-tab"></a>Onglet Authentification multifacteur
 
-L’onglet Authentification multifacteur fournit des informations détaillées sur l’état de l’authentification multifacteur (MFA) sur vos locataires. Sélectionnez n’importe quel client dans la liste pour voir plus de détails sur ce client, notamment les stratégies d’accès conditionnel qui requièrent l’ation MFA qui sont déjà configurées et les utilisateurs qui n’ont pas encore été inscrits à l’mf.
+L’onglet Authentification multifacteur fournit des informations détaillées sur l’état de l’authentification multifacteur (MFA) sur vos locataires. Sélectionnez n’importe quel client dans la liste pour voir plus de détails sur ce client, notamment les stratégies d’accès conditionnel qui requièrent l’ation MFA qui sont déjà configurées et les utilisateurs qui ne sont pas encore inscrits à l’mf.
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-mfa-tab.png" alt-text="Capture d’écran de l’onglet Authentification multifacteur.":::
 

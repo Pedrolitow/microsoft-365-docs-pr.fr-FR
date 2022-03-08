@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent découvrir comment modifier et supprimer des entrées dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f2662ac41e5df5cf2eb36413d8a58568ff336841
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f1ab3f815cc64af6d1383df228ef7961c3afdcec
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212004"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330186"
 ---
 # <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>Modifier et supprimer des entrées dans la liste verte/rouge du client
 
@@ -36,28 +36,30 @@ Vous pouvez utiliser le portail Microsoft 365 Defender ou PowerShell pour modifi
 
 ## <a name="use-the-microsoft-365-defender-portal"></a>Utiliser le portail Microsoft 365 Defender
 
-### <a name="modify-entries-in-the-tenant-allowblock-list"></a>Modifier des entrées dans la liste d’inscriptions client
+### <a name="modify-entries-in-the-tenant-allowblock-list"></a>Modifier des entrées dans la liste d’inscriptions du client
 
 1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
 2. Sélectionnez l’onglet qui contient le type d’entrée à modifier :
-   - **Expéditeurs)
+   - **Expéditeurs**
+   - **Usurpation**
    - **URL**
    - **Files**
-   - **Usurpation**
 
-3. Sélectionnez l’entrée à modifier, puis cliquez sur ![ Icône Modifier.](../../media/m365-cc-sc-edit-icon.png) **Édition**. Les valeurs que vous pouvez modifier dans le volant qui s’affiche dépendent de l’onglet que vous avez sélectionné à l’étape précédente :
+
+3. Sélectionnez l’entrée à modifier, puis cliquez sur ![Icône Modifier.](../../media/m365-cc-sc-edit-icon.png) **Édition**. Les valeurs que vous pouvez modifier dans le volant qui s’affiche dépendent de l’onglet que vous avez sélectionné à l’étape précédente :
    - **Expéditeurs**
      - **Ne jamais expirer** et/ou date d’expiration.
      - **Note facultative**
+   - **Usurpation**
+     - **Action** : vous pouvez modifier la valeur sur **Autoriser** ou **Bloquer**.
    - **URL**
      - **Ne jamais expirer** et/ou date d’expiration.
      - **Note facultative**
    - **Files**
      - **Ne jamais expirer** et/ou date d’expiration.
      - **Note facultative**
-   - **Usurpation**
-     - **Action**: vous pouvez modifier la valeur sur **Autoriser** ou **Bloquer**.
+
 4. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
 > [!NOTE]
@@ -69,19 +71,19 @@ Vous pouvez utiliser le portail Microsoft 365 Defender ou PowerShell pour modifi
 
 2. Sélectionnez l’onglet qui contient le type d’entrée à supprimer :
    - **Expéditeurs**
+   - **Usurpation**
    - **URL**
    - **Files**
-   - **Usurpation**
+ 
+3. Sélectionnez l’entrée à supprimer, puis cliquez sur ![Icône Supprimer.](../../media/m365-cc-sc-delete-icon.png) **Supprimer**
 
-3. Sélectionnez l’entrée à supprimer, puis cliquez sur ![ Icône Supprimer.](../../media/m365-cc-sc-delete-icon.png) **Supprimer**
-
-4. Dans la boîte de dialogue d’avertissement qui s’affiche, cliquez sur **Supprimer.**
+4. Dans la boîte de dialogue d’avertissement qui s’affiche, cliquez sur **Supprimer**.
 
 ## <a name="use-powershell"></a>Utiliser PowerShell
 
-### <a name="modify-block-file-and-url-entries-in-the-tenant-allowblock-list"></a>Modifier les entrées de blocage de fichiers et d’URL dans la liste d’adresses client autoriser/bloquer
+### <a name="modify-allow-or-block-sender-file-and-url-entries-in-the-tenant-allowblock-list"></a>Modifier les entrées d’expéditeur, de fichier et d’URL dans la liste d’adresses client autoriser/bloquer
 
-Pour modifier les entrées d’expéditeur, de fichier et d’URL de blocage dans la liste d’adresses client autoriser/bloquer, utilisez la syntaxe suivante :
+Pour modifier les entrées d’expéditeur, de fichier et d’URL dans la liste d’adresses client autoriser/bloquer, utilisez la syntaxe suivante :
 
 ```powershell
 Set-TenantAllowBlockListItems -ListType <Sender | FileHash | Url> -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
@@ -95,9 +97,9 @@ Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBw
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
 
-### <a name="remove-url-or-file-entries-from-the-tenant-allowblock-list"></a>Supprimer l’URL ou les entrées de fichier de la liste d’adresses client autoriser/bloquer
+### <a name="remove-allow-or-block-sender-url-or-file-entries-from-the-tenant-allowblock-list"></a>Supprimer les entrées d’expéditeur, d’URL ou de fichier d’envoi de la liste d’adresses client autoriser/bloquer
 
-Pour supprimer des entrées d’expéditeur, de fichier et d’URL de la liste d’adresses client autoriser/bloquer, utilisez la syntaxe suivante :
+Pour supprimer des entrées d’expéditeur, de fichier et d’URL d’autoriser ou de bloquer des entrées de la liste d’adresses client autoriser/bloquer, utilisez la syntaxe suivante :
 
 ```powershell
 Remove-TenantAllowBlockListItems -ListType <Sender | FileHash | Url> -Ids <"Id1","Id2",..."IdN">
@@ -111,7 +113,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
 
-### <a name="modify-allow-or-block-spoofed-sender-entries"></a>Modifier les entrées d’expéditeurs usurpées ou d’autoriser ou bloquer
+### <a name="modify-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list"></a>Modifier les entrées d’expéditeurs usurpées ou d’autoriser ou bloquer à partir de la liste d’adresses client autoriser/bloquer
 
 Pour modifier les entrées d’expéditeurs usurpées dans la liste d’adresses client autoriser/bloquer, utilisez la syntaxe suivante :
 
@@ -119,7 +121,7 @@ Pour modifier les entrées d’expéditeurs usurpées dans la liste d’adresses
 Set-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN"> -Action <Allow | Block>
 ```
 
-Cet exemple modifie l’entrée de l’expéditeur usurpé de l’autoriser à la bloquer.
+Cet exemple modifie l’entrée de l’expéditeur usurpé de l’adresse « allow » à « block ».
 
 ```powershell
 Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -Action Block
@@ -127,9 +129,9 @@ Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdl
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-TenantAllowBlockListSpoofItems](/powershell/module/exchange/set-tenantallowblocklistspoofitems).
 
-### <a name="remove-allow-or-block-spoofed-sender-entries"></a>Supprimer les entrées d’expéditeur usurpées ou d’autoriser ou bloquer
-
-Pour supprimer les entrées d’expéditeurs usurpant l’usurpation d’adresse de client de la liste d’adresses client autoriser/bloquer, utilisez la syntaxe suivante :
+### <a name="remove-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list"></a>Supprimer les entrées d’expéditeurs usurpées ou d’autoriser ou bloquer de la liste d’adresses client
+ 
+Pour supprimer les entrées d’expéditeurs usurpant l’usurpation d’adresse de client de la liste d’expéditeurs bloqués ou d’expéditeurs d’usurpation d’adresses, utilisez la syntaxe suivante :
 
 ```powershell
 Remove-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN">

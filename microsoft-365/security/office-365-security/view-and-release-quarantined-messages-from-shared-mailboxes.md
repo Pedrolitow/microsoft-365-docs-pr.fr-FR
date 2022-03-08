@@ -17,26 +17,23 @@ ROBOTS: NOINDEX
 description: Les utilisateurs peuvent apprendre à afficher et à agir sur les messages mis en quarantaine qui ont été envoyés à des boîtes aux lettres partagées pour qui ils ont des autorisations.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e78a46bca97ea58a88195c9d05e11332528cf3af
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 8d9f83f176675be26fadf3d720dcc78e5146bde3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364867"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324520"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Afficher et libérer les messages mis en quarantaine à partir de boîtes aux lettres partagées
 
-> [!NOTE]
-> Les fonctionnalités décrites dans cet article sont actuellement en prévisualisation, ne sont pas disponibles pour tout le monde et peuvent faire l’objet de changements.
+Les utilisateurs peuvent gérer les messages mis en quarantaine lorsqu’ils sont l’un des destinataires, comme décrit dans Rechercher et libérer les messages mis en quarantaine en tant [qu’utilisateur dans EOP](find-and-release-quarantined-messages-as-a-user.md). Mais qu’en est-il des boîtes aux lettres partagées où l’utilisateur dispose des autorisations Accès total et Envoyer en tant que ou Envoyer de la part de la boîte aux lettres comme décrit dans les boîtes aux lettres partagées [dans Exchange Online](/exchange/collaboration-exo/shared-mailboxes) ?
 
-Les utilisateurs peuvent gérer les messages mis en quarantaine lorsqu’ils sont l’un des destinataires, comme décrit dans Rechercher et libérer les messages mis en quarantaine en tant [qu’utilisateur dans EOP.](find-and-release-quarantined-messages-as-a-user.md) Mais qu’en est-il des boîtes aux lettres partagées où l’utilisateur dispose des autorisations Accès total et Envoyer en tant que ou Envoyer de la part de la boîte aux lettres comme décrit dans les boîtes aux lettres partagées [dans Exchange Online](/exchange/collaboration-exo/shared-mailboxes)? 
-
-Auparavant, la possibilité pour les utilisateurs de gérer les messages mis en quarantaine envoyés à une boîte aux lettres partagée nécessitait aux administrateurs de laisser le mappage automatique activé pour la boîte aux lettres partagée (il est activé par défaut lorsqu’un administrateur donne à un utilisateur l’accès à une autre boîte aux lettres). Toutefois, en fonction de la taille et du nombre de boîtes aux lettres  à qui l’utilisateur a accès, les performances peuvent être réduites lorsque Outlook tente d’ouvrir toutes les boîtes aux lettres à l’accès de l’utilisateur. Pour cette raison, de nombreux administrateurs choisissent de [supprimer le mappage automatique pour les boîtes aux lettres partagées.](/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox)
+Auparavant, la possibilité pour les utilisateurs de gérer les messages mis en quarantaine envoyés à une boîte aux lettres partagée nécessitait aux administrateurs de laisser le mappage automatique activé pour la boîte aux lettres partagée (il est activé par défaut lorsqu’un administrateur donne à un utilisateur l’accès à une autre boîte aux lettres). Toutefois, en fonction de la taille et du nombre de boîtes aux lettres à qui l’utilisateur a accès, les performances peuvent être  réduites lorsque Outlook tente d’ouvrir toutes les boîtes aux lettres à l’accès de l’utilisateur. Pour cette raison, de nombreux administrateurs choisissent de [supprimer le mappage automatique pour les boîtes aux lettres partagées](/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox).
 
 À présent, le mappage automatique n’est plus nécessaire pour que les utilisateurs gèrent les messages mis en quarantaine qui ont été envoyés à des boîtes aux lettres partagées. Cela fonctionne simplement. Il existe deux méthodes différentes pour accéder aux messages mis en quarantaine qui ont été envoyés à une boîte aux lettres partagée :
 
-- Si l’administrateur [](quarantine-policies.md) a configuré des stratégies de mise en quarantaine pour autoriser les notifications de mise en quarantaine (auparavant appelées notifications de courrier indésirable pour l’utilisateur final), tout utilisateur qui a accès aux notifications de mise en quarantaine dans la boîte aux lettres partagée peut cliquer sur le bouton Réviser dans la notification pour passer en quarantaine dans le portail Microsoft 365 Defender.  Notez que cette méthode permet uniquement aux utilisateurs de gérer les messages mis en quarantaine qui ont été envoyés à la boîte aux lettres partagée. Les utilisateurs ne peuvent pas gérer leurs propres messages de mise en quarantaine dans ce contexte.
-- L’utilisateur peut être mis en quarantaine dans  le [portail Microsoft 365 Defender et](find-and-release-quarantined-messages-as-a-user.md) cliquer sur Filtrer pour filtrer les résultats par adresse de destinataire **(adresse** e-mail de la boîte aux lettres partagée). Dans la page principale **de** mise  en quarantaine, vous pouvez cliquer sur la colonne Destinataire pour trier les messages envoyés à la boîte aux lettres partagée.
+- Si l’administrateur a configuré [](quarantine-policies.md) des stratégies de mise en quarantaine pour autoriser les notifications de mise en quarantaine (auparavant appelées notifications de courrier indésirable pour l’utilisateur final), tout utilisateur qui a  accès aux notifications de mise en quarantaine dans la boîte aux lettres partagée peut cliquer sur le bouton Réviser dans la notification pour passer en quarantaine dans le portail Microsoft 365 Defender. Notez que cette méthode permet uniquement aux utilisateurs de gérer les messages mis en quarantaine qui ont été envoyés à la boîte aux lettres partagée. Les utilisateurs ne peuvent pas gérer leurs propres messages de mise en quarantaine dans ce contexte.
+- L’utilisateur peut être mis en quarantaine dans le [portail Microsoft 365 Defender et](find-and-release-quarantined-messages-as-a-user.md) cliquer sur  Filtrer pour filtrer les résultats par adresse de **destinataire (adresse** e-mail de la boîte aux lettres partagée). Dans la page principale **de** mise en quarantaine, vous pouvez  cliquer sur la colonne Destinataire pour trier les messages envoyés à la boîte aux lettres partagée.
 
 ## <a name="things-to-keep-in-mind"></a>Éléments à garder à l’esprit
 
@@ -44,11 +41,11 @@ Auparavant, la possibilité pour les utilisateurs de gérer les messages mis en 
 
 - Le premier utilisateur à agir sur le message mis en quarantaine décide de la fin du message pour toutes les personnes qui utilisent la boîte aux lettres partagée. Par exemple, si une boîte aux lettres partagée est accessible par 10 utilisateurs et qu’un utilisateur décide de supprimer le message de mise en quarantaine, le message est supprimé pour les 10 utilisateurs. De même, si un utilisateur décide de libérer le message, il est publié dans la boîte aux lettres partagée et est accessible par tous les autres utilisateurs de la boîte aux lettres partagée.
 
-- Actuellement, le bouton Bloquer **l’expéditeur** n’est pas disponible dans le volant Détails pour les messages mis en quarantaine qui ont été **envoyés** à la boîte aux lettres partagée.
+- Actuellement, le **bouton Bloquer l’expéditeur** n’est pas disponible dans le volant Détails pour les messages mis en quarantaine qui ont été **envoyés** à la boîte aux lettres partagée.
 
 - En ce qui concerne les opérations de mise en quarantaine pour les boîtes aux lettres partagées, si vous utilisez des groupes de sécurité imbrmbrés pour accorder l’accès à une boîte aux lettres partagée, nous vous recommandons de ne pas utiliser plus de deux niveaux de groupes imbrmbrés. Par exemple, le groupe A est membre du groupe B, qui est membre du groupe C. Pour attribuer des autorisations à une boîte aux lettres partagée, n’ajoutez pas l’utilisateur au groupe A, puis affectez le groupe C à la boîte aux lettres partagée.  
 
-- Pour gérer les messages mis en quarantaine pour la boîte aux lettres partagée dans [Exchange Online PowerShell,](/powershell/exchange/connect-to-exchange-online-powershell)l’utilisateur final doit utiliser la cmdlet [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) avec une adresse de messagerie de boîte aux lettres partagée pour la valeur du paramètre _RecipientAddress_ pour identifier les messages. Par exemple :
+- Pour gérer les messages mis en quarantaine pour la boîte aux lettres partagée dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), l’utilisateur final doit utiliser la cmdlet [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) avec une adresse de messagerie de boîte aux lettres partagée pour la valeur du paramètre _RecipientAddress_ pour identifier les messages. Par exemple :
 
   ```powershell
   Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com

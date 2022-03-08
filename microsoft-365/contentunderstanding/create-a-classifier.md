@@ -11,14 +11,15 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Découvrez comment créer un classifieur dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 1fe4200c68d6458d20a71b834bd2a0b08319ecb2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5e9be6065e0328a412e73680a0200ea7929c8011
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203014"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324870"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Créer un classifieur dans Microsoft SharePoint Syntex
 
@@ -61,7 +62,7 @@ La première étape de création de votre modèle consiste à lui attribuer un n
 
 La création d’un modèle entraîne également celle d’un type de contenu de site. Un type de contenu représente une catégorie de documents qui ont des caractéristiques communes et qui partagent une collection de colonnes ou de propriétés de métadonnées pour ce contenu spécifique. Les types de contenu SharePoint sont gérés via la [galerie des types de contenu](https://support.microsoft.com/office/create-or-customize-a-site-content-type-27eb6551-9867-4201-a819-620c5658a60f). Pour cet exemple, la création du modèle entraîne celle d’un type de contenu *Renouvellement de contrat*.
 
-Sélectionnez **Paramètres avancés** si vous souhaitez mapper ce modèle à un type de contenu d’entreprise existant dans la galerie des types de contenu SharePoint, pour utiliser son schéma. Les types de contenu d’entreprise sont stockés dans le hub Type de contenu au sein du Centre d’administration SharePoint. Ils sont syndiqués sur tous les sites du client. Note : vous pouvez certes utiliser un type de contenu existant pour tirer parti de son schéma et faciliter l’identification et la classification. Néanmoins, vous devez entraîner votre modèle à extraire des informations des fichiers qu’il identifie.</br>
+**Sélectionnez Paramètres** avancés si vous souhaitez mammiser ce modèle à un type de contenu d’entreprise existant dans la galerie de <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">types</a> de contenu SharePoint pour utiliser son schéma. Les types de contenu d’entreprise sont stockés dans le hub Type de contenu au sein du Centre d’administration SharePoint. Ils sont syndiqués sur tous les sites du client. Note : vous pouvez certes utiliser un type de contenu existant pour tirer parti de son schéma et faciliter l’identification et la classification. Néanmoins, vous devez entraîner votre modèle à extraire des informations des fichiers qu’il identifie.</br>
 
 ![Paramètres avancés.](../media/content-understanding/advanced-settings.png)
 

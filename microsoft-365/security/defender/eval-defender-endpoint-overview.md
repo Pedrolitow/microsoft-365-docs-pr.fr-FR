@@ -1,6 +1,6 @@
 ---
-title: Évaluation de la vue d’ensemble de Microsoft Defender for Endpoint, y compris la révision de l’architecture
-description: Étapes de la mise en place d’un laboratoire d Microsoft 365 Defender d’essai ou d’un environnement pilote. Testez et découvrez comment la solution de sécurité est conçue pour protéger les appareils, l’identité, les données et les applications de votre organisation.
+title: Étape 4. Évaluation de la vue d’ensemble de Microsoft Defender for Endpoint, y compris la révision de l’architecture
+description: Étapes de la mise en place d’un Microsoft 365 Defender d’essai ou d’un environnement pilote. Testez et découvrez comment la solution de sécurité est conçue pour protéger les appareils, l’identité, les données et les applications de votre organisation.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,21 +22,21 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1eaca5f9902b9617e47cc70d270f569d3a9dc60a
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 24600644e08bdc2b0a208d68d6da1078543bd2bd
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172126"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325948"
 ---
-# <a name="evaluate-microsoft-defender-for-endpoint-overview"></a>Vue d’ensemble de l’évaluation de Microsoft Defender for Endpoint
+# <a name="step-4-evaluate-microsoft-defender-for-endpoint-overview"></a>Étape 4. Vue d’ensemble de l’évaluation de Microsoft Defender for Endpoint
 
 **S’applique à :**
 
 - Microsoft 365 Defender
 
 
-Cet article décrit le processus d’activer et de piloter Microsoft Defender pour le point de terminaison. Avant de commencer ce processus, assurez-vous [](eval-overview.md) que vous avez examiné le processus global d’évaluation des Microsoft 365 Defender et que vous avez créé l’environnement [d Microsoft 365 Defender d’évaluation.](eval-create-eval-environment.md) 
+Cet article décrit le processus d’activer et de piloter Microsoft Defender pour le point de terminaison. Avant de commencer ce processus, assurez-vous d’avoir examiné le processus [](eval-overview.md) global d’évaluation des Microsoft 365 Defender et que vous avez créé l’environnement [d Microsoft 365 Defender d’évaluation.](eval-create-eval-environment.md) 
 <br>
 
 Utilisez les étapes suivantes pour activer et piloter Microsoft Defender pour le point de terminaison.

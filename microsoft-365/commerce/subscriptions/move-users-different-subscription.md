@@ -2,8 +2,8 @@
 title: Transférer des utilisateurs vers un autre abonnement
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: micurn, nicholak
 audience: Admin
@@ -14,22 +14,22 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_subscriptions
 - AdminSurgePortfolio
 - manage_licenses
-- commerce_subscriptions
 search.appverid: MET150
 description: Découvrez comment déplacer des utilisateurs entre des abonnements.
 ms.date: 07/01/2020
-ms.openlocfilehash: 3ae6aa20c684c2745ef280c51a1203ae87f8da40
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: f1aff383bb4e83b7cefae0f6d15c496ab3117919
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370355"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326270"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Transférer des utilisateurs vers un autre abonnement
 
-Si vous avez plusieurs abonnements, que vous avez des utilisateurs titulaires d’une licence pour un abonnement, mais que vous souhaitez les déplacer vers un autre abonnement, vous pouvez remplacer leur licence existante par une autre.
+Si vous avez plusieurs abonnements, que vous avez des utilisateurs  titulaires d’une licence pour un abonnement, mais que vous souhaitez les déplacer vers un autre abonnement, vous pouvez remplacer leur licence existante par une autre.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -55,11 +55,11 @@ Vous devez être un administrateur global, de licence ou d'utilisateur pour attr
 
 4. Dans le **volet Gérer les licences de** produits, sélectionnez **Remplacer**  et sélectionnez les licences que vous souhaitez attribuer aux utilisateurs.
 
-5. En bas, sélectionnez **Enregistrer les modifications** \> **fermer.**
+5. En bas, sélectionnez **Enregistrer les modifications fermer**\>.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
-Si vous ne comptez pas réattribuer les licences inutilisées à d’autres [utilisateurs,](../../managed-desktop/get-started/assign-licenses.md)envisagez de supprimer les [licences](../../commerce/licenses/buy-licenses.md) de votre abonnement afin de ne pas payer plus de licences que nécessaire.
+Si vous ne comptez pas réattribuer les licences inutilisées à d’autres [utilisateurs](../../managed-desktop/get-started/assign-licenses.md), envisagez de supprimer les [licences](../../commerce/licenses/buy-licenses.md) de votre abonnement afin de ne pas payer plus de licences que nécessaire.
 
 ## <a name="related-content"></a>Contenu associé
 

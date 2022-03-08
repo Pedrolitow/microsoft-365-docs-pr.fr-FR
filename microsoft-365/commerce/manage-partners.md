@@ -1,27 +1,32 @@
 ---
 title: Gérer les relations de partenariat
 f1.keywords:
-  - NOCSH
-ms.author: cmcatee
+- NOCSH
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: 'tugu, jmueller'
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
-  - M365-subscription-management
-  - Adm_O365
+- M365-subscription-management
+- Adm_O365
 ms.custom:
-  - AdminSurgePortfolio
-  - commerce_subscriptions
-  - admindeeplinkMAC
+- commerce_subscriptions
+- AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid: MET150
 description: Découvrez comment travailler avec des fournisseurs de solutions (partenaires) certifiés par Microsoft pour acheter et gérer des produits et des services pour votre organisation ou votre établissement scolaire.
 ms.date: 02/04/2022
+ms.openlocfilehash: c07267989e8df7203cced6c3a21ffd9aa667347f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328972"
 ---
-
 # <a name="manage-partner-relationships"></a>Gérer les relations de partenariat
 
 Vous pouvez travailler avec des fournisseurs de solutions (partenaires) certifiés par Microsoft pour acheter et gérer des produits et des services pour votre organisation ou votre établissement scolaire. Plusieurs étapes sont nécessaires à la mise en place des éléments.
@@ -32,7 +37,7 @@ Vous pouvez travailler avec des fournisseurs de solutions (partenaires) certifi�
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être administrateur global ou administrateur de facturation pour suivre ces étapes. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
+Vous devez être administrateur global ou administrateur de facturation pour suivre ces étapes. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>Que peut faire un partenaire pour mon organisation ou mon établissement scolaire ?
 
@@ -63,7 +68,7 @@ Le partenaire vous contacte et vous donne la possibilité d’en savoir plus à 
 Une fois que vous avez trouvé un partenaire et décidé de travailler avec lui, il vous envoie une invitation par courrier électronique.
 
 1. Dans l’e-mail, sélectionnez le lien vers le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>.
-2. Dans la page **Accepter & autoriser** le partenaire, sélectionnez le lien du contrat **client Microsoft**, puis lisez le document.
+2. Dans la page Accepter **& autoriser** le partenaire, sélectionnez le lien du contrat **client Microsoft**, puis lisez le document.
 3. Cochez la case pour reconnaître que vous avez lu le contrat.
 4. **Sélectionnez Accepter & autoriser**.
 5. La liste des partenaires avec qui vous travaillez s’affiche. Sélectionnez n’importe quel partenaire pour voir les détails.
@@ -88,8 +93,10 @@ Si vous ne souhaitez pas donner de rôles d’administrateur au partenaire, annu
 
 Vous pouvez supprimer des rôles d’administrateur d’un partenaire à tout moment. La suppression des rôles d’administrateur ne supprime pas la relation de partenaire. Ils peuvent toujours travailler avec vous à une autre capacité, par exemple un revendeur. Si vous décidez de ne plus travailler avec un partenaire, contactez-le pour mettre fin à la relation.
 
-1. Dans le Centre d’administration, allez à la page **Paramètres** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">relations de l’utilisateur</a>.
+1. Dans le Centre d’administration, allez à la page **Paramètres** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">relations de l’administrateur</a>.
 2. Dans la page **Relations des** partenaires, sélectionnez la ligne qui contient le nom du partenaire à supprimer.
 3. Sélectionnez la ligne qui contient le nom du partenaire.
 4. Dans la page partenaire, sélectionnez **Supprimer les rôles**.
 5. Dans la **boîte de dialogue Supprimer des rôles** , sélectionnez **Oui**.
+
+Si **l’option Supprimer** des rôles n’est pas disponible, contactez [l’Partner Center](https://partner.microsoft.com/support).

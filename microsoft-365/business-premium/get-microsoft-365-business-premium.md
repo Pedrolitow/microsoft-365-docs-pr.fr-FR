@@ -22,24 +22,24 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Obtenez Microsoft 365 Business Premium pour protéger votre entreprise contre les menaces de cyber-sécurité sur les appareils, la messagerie électronique, les données et les communications.
-ms.openlocfilehash: 041202327c82ddffa02660acf9eb6127d65ada2a
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: Obtenez Microsoft 365 Business Premium pour protéger votre entreprise contre les menaces de cybersécurité sur les appareils, la messagerie électronique, les données et les communications.
+ms.openlocfilehash: 2e6ad120407a7bc84e089b997c990e04d438ab29
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766292"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318506"
 ---
 # <a name="how-to-get-microsoft-365-business-premium"></a>Comment obtenir des Microsoft 365 Business Premium
 
 Cet article explique comment obtenir des Microsoft 365 Business Premium pour votre entreprise. Vous pouvez :
 
-- [Acheter ou essayer Microsoft 365 Business Premium vous-même](#get-microsoft-365-business-premium-on-your-own)
+- [Essayez ou achetez des Microsoft 365 Business Premium vous-même](#get-microsoft-365-business-premium-on-your-own)
 - [Travailler avec un fournisseur de solutions](#work-with-a-microsoft-solution-provider-to-get-microsoft-365-business-premium)
 
 ## <a name="get-microsoft-365-business-premium-on-your-own"></a>Obtenir Microsoft 365 Business Premium vous-même
 
-Voir [Essayer ou acheter un abonnement Microsoft 365 entreprise](../commerce/try-or-buy-microsoft-365.md). Sur le [site Microsoft 365 produits](https://www.aka.ms/office365signup), choisissez **Microsoft 365 Business Premium**.
+Voir [Try or buy a Microsoft 365 for business subscription](../commerce/try-or-buy-microsoft-365.md). Sur le [site Microsoft 365 produits](https://www.aka.ms/office365signup), choisissez **Microsoft 365 Business Premium**.
 
 ## <a name="work-with-a-microsoft-solution-provider-to-get-microsoft-365-business-premium"></a>Travailler avec un fournisseur de solutions Microsoft pour obtenir des Microsoft 365 Business Premium
 

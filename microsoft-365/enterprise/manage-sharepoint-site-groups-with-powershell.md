@@ -19,13 +19,13 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: Dans cet article, recherchez des procédures d’utilisation de PowerShell pour Microsoft 365 gérer SharePoint groupes de sites En ligne.
-ms.openlocfilehash: 26ac87fe258e0340e95be0e83710f7810bc437a8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dans cet article, recherchez des procédures d’utilisation de PowerShell pour Microsoft 365 gérer SharePoint sites En ligne.
+ms.openlocfilehash: deef41118789a9df4353fa188c88d827909dc863
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195376"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328776"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-powershell"></a>Gestion des groupes de sites SharePoint Online avec PowerShell
 
@@ -41,8 +41,8 @@ Les procédures de cet article exigent que vous vous connectiez à SharePoint On
 
 Le SharePoint d’administration SharePoint Online propose des méthodes simples d’utilisation pour la gestion des groupes de sites. Par exemple, supposons que vous vouliez examiner les groupes et les membres du groupe pour le `https://litwareinc.sharepoint.com/sites/finance` site. Voici ce que vous devez faire :
 
-1. Dans le SharePoint d’administration, cliquez sur **Sites actifs,** puis sur l’URL du site.
-2. Dans la page du site, cliquez sur **Paramètres** icône (située dans le coin supérieur droit de la page), puis cliquez sur **Autorisations du site.**
+1. Dans le SharePoint d’administration, sélectionnez <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sites actifs**</a>, puis sélectionnez l’URL du site.
+2. Sur la page du site, sélectionnez <a href="https://go.microsoft.com/fwlink/?linkid=2185072" target="_blank">**Paramètres**</a> (située dans le coin supérieur droit de la page), puis sélectionnez **Autorisations du site**.
 
 Répétez ensuite ce processus pour le prochain site que vous souhaitez consulter.
 
@@ -61,7 +61,7 @@ foreach ($y in $x)
 
 Il existe deux façons d’exécuter ce jeu de commandes dans l’invite de commandes SharePoint Online Management Shell :
 
-- Copiez les commandes dans Bloc-notes (ou un autre éditeur de texte), modifiez la valeur de la variable **$siteURL,** sélectionnez les commandes, puis collez-les dans l’invite de commandes SharePoint Online Management Shell. Lorsque vous le faites, PowerShell s’arrête à une **>>** invite. Appuyez sur Entrée pour exécuter la `foreach` commande.<br/>
+- Copiez les commandes dans Bloc-notes (ou un autre éditeur de texte), modifiez la valeur de la variable **$siteURL**, sélectionnez les commandes, puis collez-les dans l’invite de commandes SharePoint Online Management Shell. Lorsque vous le faites, PowerShell s’arrête à une **>>** invite. Appuyez sur Entrée pour exécuter la `foreach` commande.<br/>
 - Copiez les commandes dans le Bloc-notes (ou un autre éditeur de texte), modifiez la valeur de la variable **$siteURL** et enregistrez ce fichier texte avec un nom et l’extension .ps1 dans un dossier approprié. Ensuite, exécutez le script à partir de l’invite SharePoint Online Management Shell en spécifiant son chemin d’accès et son nom de fichier. Voici un exemple de commande :
 
 ```powershell
@@ -70,11 +70,11 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 Dans les deux cas, quelque chose de ce type doit apparaître :
 
-![SharePoint Groupes de sites en ligne.](../media/SPO-site-groups.png)
+![SharePoint groupes de sites en ligne.](../media/SPO-site-groups.png)
 
-Ce sont tous les groupes qui ont été créés pour le site et tous les utilisateurs `https://litwareinc.sharepoint.com/sites/finance` affectés à ces groupes. Les noms de groupes apparaissent en jaune pour que vous puissiez distinguer les noms de groupes de leurs membres.
+Ce sont tous les groupes qui ont été créés pour le site `https://litwareinc.sharepoint.com/sites/finance`et tous les utilisateurs affectés à ces groupes. Les noms de groupes apparaissent en jaune pour que vous puissiez distinguer les noms de groupes de leurs membres.
 
-Voici un autre exemple de jeu de commandes qui répertorie les groupes et toutes les appartenances aux groupes pour tous vos sites SharePoint Online.
+Autre exemple : voici un jeu de commandes qui répertorie les groupes et toutes les appartenances aux groupes pour tous vos sites SharePoint Online.
 
 ```powershell
 $x = Get-SPOSite

@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c30e6d318801dbfb63f4bfb7b5bbaf64dad24ac0
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 3801fdb4a7aeda5e75c4e36f622f7e76604d96a6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172114"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318730"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Pilote Microsoft Defender pour l’identité
 
@@ -34,7 +34,7 @@ ms.locfileid: "62172114"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Cet article est [l’étape 3 sur 3 dans](eval-defender-identity-overview.md) le processus de configuration de l’environnement d’évaluation de Microsoft Defender pour l’identité. Pour plus d’informations sur ce processus, voir [l’article de présentation.](eval-defender-identity-overview.md)
+Cet article est [l’étape 3 sur 3 dans](eval-defender-identity-overview.md) le processus de configuration de l’environnement d’évaluation de Microsoft Defender pour l’identité. Pour plus d’informations sur ce processus, consultez [l’article de présentation](eval-defender-identity-overview.md).
 
 Utilisez les étapes suivantes pour configurer et configurer le pilote pour Microsoft Defender pour l’identité. Notez que les recommandations n’incluent pas la configuration d’un groupe pilote. La meilleure pratique consiste à installer le capteur sur tous vos serveurs exécutant les services de domaine Active Directory (AD DS) et les services AD FS (Active Directory Federated Services).
 
@@ -49,7 +49,7 @@ Le tableau suivant décrit les étapes de l’illustration.
 
 Microsoft fournit des recommandations d’évaluation de la sécurité pour les clients qui utilisent les services Microsoft Cloud. Le [critère de sécurité Azure](/security/benchmark/azure/overview) (ASB) fournit des recommandations et des meilleures pratiques normatives pour vous aider à améliorer la sécurité des charges de travail, des données et des services sur Azure.
 
-Ces recommandations de référence incluent la ligne [de base de sécurité Azure pour Microsoft Defender pour l’identité.](/security/benchmark/azure/baselines/defender-for-identity-security-baseline) La mise en œuvre de ces recommandations peut prendre un certain temps à planifier et à implémenter. Bien qu’elles augmentent grandement la sécurité de votre environnement d’identité, elles ne doivent pas vous empêcher de continuer à évaluer et à implémenter Microsoft Defender pour l’identité. Ceux-ci sont fournis ici pour votre sensibilisation.
+Ces recommandations de référence incluent [la ligne de base de sécurité Azure pour Microsoft Defender pour l’identité](/security/benchmark/azure/baselines/defender-for-identity-security-baseline). La mise en œuvre de ces recommandations peut prendre un certain temps à planifier et à implémenter. Bien qu’elles augmentent  grandement la sécurité de votre environnement d’identité, elles ne doivent pas vous empêcher de continuer à évaluer et à implémenter Microsoft Defender pour l’identité. Ceux-ci sont fournis ici pour votre sensibilisation.
 
 ## <a name="step-2-try-out-capabilities--walk-through-tutorials-for-identifying-and-remediating-different-attack-types"></a>Étape 2. Tester les fonctionnalités : parcourir des didacticiels pour identifier et corriger différents types d’attaques
 
@@ -66,7 +66,7 @@ Essayez les didacticiels Defender pour l’identité :
 - [Enquêter sur les chemins de déplacement latéral](/defender-for-identity/investigate-lateral-movement-path)
 - [Examiner des entités](/defender-for-identity/investigate-entity)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 [Évaluer Microsoft Defender pour Office 365](eval-defender-office-365-overview.md)
 

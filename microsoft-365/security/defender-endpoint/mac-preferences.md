@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 07e91e5b2cb93a6ba876510b558761f95489f496
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: cb3f38b861f85849165be330e03fe1d96a9c708c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765752"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326704"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur macOS
 
@@ -221,7 +221,7 @@ Le tableau suivant indique les types d’exclusion pris en charge par Defender p
 |Exclusion|Définition|Exemples|
 |---|---|---|
 |Extension de fichier|Tous les fichiers avec l’extension, n’importe où sur l’appareil|`.test`|
-|File|Un fichier spécifique identifié par le chemin d’accès complet|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
+|Fichier|Un fichier spécifique identifié par le chemin d’accès complet|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
 |Folder|Tous les fichiers sous le dossier spécifié (de manière récursive)|`/var/log/` <p> `/var/*/`|
 |Processus|Un processus spécifique (spécifié par le chemin d’accès complet ou le nom de fichier) et tous les fichiers ouverts par celui-ci|`/bin/cat` <p> `cat` <p> `c?t`|
 ||||
@@ -272,7 +272,7 @@ Spécifiez le contenu exclu de l’analyse par extension de fichier.
 |**Clé**|extension|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|extensions de fichier valides|
-|**Comments**|Applicable uniquement si *$type* *est excluFileExtension*|
+|**Comments**|Applicable uniquement si *$type* est *excluFileExtension*|
 |||
 
 ### <a name="process-excluded-from-the-scan"></a>Processus exclu de l’analyse
@@ -555,9 +555,29 @@ Spécifiez si les utilisateurs peuvent envoyer des commentaires à Microsoft en 
 |**Comments**|Disponible dans Microsoft Defender pour Endpoint version 101.19.61 ou supérieure.|
 |||
 
+
+
+#### <a name="control-sign-in-to-consumer-version-of-microsoft-defender"></a>Contrôler la connectez-vous à la version grand public de Microsoft Defender
+
+Spécifiez si les utilisateurs peuvent se connecter à la version grand public de Microsoft Defender.
+
+<br>
+
+****
+
+|Section|Valeur|
+|---|---|
+|**Domaine**|`com.microsoft.wdav`|
+|**Clé**|consumerExperience|
+|**Type de données**|Chaîne|
+|**Valeurs possibles**|activé (par défaut) <p> désactivé|
+|**Comments**|Disponible dans Microsoft Defender pour Endpoint version 101.60.18 ou supérieure.|
+|||
+
+
 ### <a name="endpoint-detection-and-response-preferences"></a>Préférences de détection et de réponse des points de terminaison
 
-Gérez les préférences du composant protection évolutive des points de terminaison (PEPT) de Microsoft Defender pour Endpoint sur macOS.
+Gérez les préférences du composant EDR (Endpoint Detection and Response) de Microsoft Defender for Endpoint sur macOS.
 
 <br>
 
@@ -584,7 +604,7 @@ Spécifiez un nom de balise et sa valeur.
 |Section|Valeur|
 |---|---|
 |**Domaine**|`com.microsoft.wdav`|
-|**Clé**|balises|
+|**Clé**|étiquettes|
 |**Type de données**|Dictionnaire (préférence imbriée)|
 |**Comments**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
 |||
@@ -1064,7 +1084,7 @@ Une fois que vous avez créé le profil de configuration pour votre entreprise, 
 
 ### <a name="jamf-deployment"></a>Déploiement JAMF
 
-À partir de la console JAMF **, ouvrez** \> profils de **configuration** ordinateurs, accédez au profil de configuration que vous souhaitez utiliser, puis sélectionnez Custom **Paramètres**. Créez une entrée avec `com.microsoft.wdav` comme domaine de préférence et téléchargez *le .plist* produit précédemment.
+À partir de la console JAMF **, ouvrez** \> profils de **configuration** ordinateurs, accédez au profil de configuration que vous souhaitez utiliser, puis sélectionnez **Paramètres personnalisés**. Créez une entrée avec `com.microsoft.wdav` comme domaine de préférence et téléchargez *le .plist* produit précédemment.
 
 > [!CAUTION]
 > Vous devez entrer le domaine de préférence correct (`com.microsoft.wdav`) ; sinon, les préférences ne seront pas reconnues par Microsoft Defender pour le point de terminaison.

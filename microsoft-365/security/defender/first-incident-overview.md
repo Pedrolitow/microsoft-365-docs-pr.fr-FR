@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ced4fd4fc56a4aa6d189e9c7761ce661bd477796
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 16654281adf5ca6f31ea2d29aab3387d39424cb1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62904094"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325934"
 ---
 # <a name="responding-to-your-first-incident"></a>Réponse à votre premier incident
 
@@ -38,7 +38,7 @@ ms.locfileid: "62904094"
 
 La stratégie de réponse aux incidents d’une organisation détermine sa capacité à gérer les incidents de sécurité et la cybercriminalité de plus en plus perturbants. Bien que la prise de mesures préventives soit importante, la possibilité d’agir rapidement pour contenir, atténuer et récupérer des incidents détectés peut réduire les dommages et les pertes de l’entreprise.
 
-Cette procédure pas à pas de réponse aux incidents vous montre comment, dans le cadre d’une équipe d’opérations de sécurité (SecOps), vous pouvez effectuer la plupart des étapes clés de réponse aux incidents dans Microsoft 365 Defender. Voici les étapes à effectuer :
+Cette procédure pas à pas de réponse aux incidents montre comment, dans le cadre d’une équipe d’opérations de sécurité (SecOps), vous pouvez effectuer la plupart des étapes clés de réponse aux incidents dans Microsoft 365 Defender. Voici les étapes à effectuer :
 
 - Préparation de votre posture de sécurité
 - Pour chaque incident :

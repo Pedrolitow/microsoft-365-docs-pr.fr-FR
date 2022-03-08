@@ -15,16 +15,14 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 90d6cef5ef34e2249b5da561559a5e9505f1db84
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: bab766fd69b9227f10ba897040faff79e65b1722
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464713"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325780"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Blocage et confinement comportementaux
 
@@ -38,7 +36,7 @@ ms.locfileid: "62464713"
 
 Le paysage actuel des menaces est dépassé par [](/windows/security/threat-protection/intelligence/fileless-threats) les programmes malveillants sans fichier et qui se trouvent en dehors de la région, les menaces hautement polymorphes qui mutent plus rapidement que les solutions traditionnelles peuvent suivre et les attaques gérées par l’homme qui s’adaptent à ce que les adversaires trouvent sur des appareils compromis. Les solutions de sécurité traditionnelles ne sont pas suffisantes pour arrêter ces attaques ; vous avez besoin de fonctionnalités d’intelligence artificielle (IA) et d’apprentissage des appareils (ML), telles que le blocage du comportement et le contenu, incluses dans [Defender pour le point de terminaison](/windows/security).
 
-Les fonctionnalités de blocage du comportement et de blocage du contenu peuvent aider à identifier et à arrêter les menaces, en fonction de leurs comportements et des arbre de traitement, même lorsque la menace a démarré l’exécution. Les composants et fonctionnalités de protection, PEPT et Defender for Endpoint nouvelle génération fonctionnent ensemble dans les fonctionnalités de blocage du comportement et de blocage de contenu.
+Les fonctionnalités de blocage du comportement et de blocage du contenu peuvent aider à identifier et à arrêter les menaces, en fonction de leurs comportements et des arbre de traitement, même lorsque la menace a démarré l’exécution. Les composants et fonctionnalités de protection, PEPT et Defender pour les points de terminaison de nouvelle génération fonctionnent ensemble dans les fonctionnalités de blocage du comportement et de contenu.
 
 :::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Blocage et contenu comportementaux.":::
 
@@ -64,9 +62,9 @@ L’image suivante montre un exemple d’alerte déclenchée par des fonctionnal
 
 - **[Le blocage de boucle de commentaires](feedback-loop-blocking.md)** (également appelé protection rapide) les détections de menaces sont observées par l’intelligence comportementale. Les menaces sont arrêtées et empêchées de s’exécutent sur d’autres points de terminaison. (Le blocage de la boucle de commentaires est activé par défaut.)
 
-- **[La détection et la réponse des](edr-in-block-mode.md)** points de terminaison (PEPT) en mode blocage les artefacts ou comportements malveillants observés par le biais de la protection post-violation sont bloqués et contenus. PEPT en mode bloc fonctionne même si Antivirus Microsoft Defender n’est pas la solution antivirus principale. (PEPT mode bloc n’est pas activé par défaut ; vous l’activez en mode Microsoft 365 Defender.)
+- **[La détection et la réponse des](edr-in-block-mode.md)** points de terminaison (PEPT) en mode blocage les artefacts ou comportements malveillants observés par le biais de la protection post-violation sont bloqués et contenus. PEPT en mode blocage fonctionne même si Antivirus Microsoft Defender n’est pas la solution antivirus principale. (PEPT en mode bloc n’est pas activé par défaut ; vous l’activez en Microsoft 365 Defender.)
 
-Attendez-vous à en savoir plus sur le blocage et le blocage du comportement, car Microsoft continue d’améliorer les fonctionnalités et fonctionnalités de protection contre les menaces. Pour voir ce qui est planifié et déployer maintenant, consultez la [feuille de route Microsoft 365 de travail](https://www.microsoft.com/microsoft-365/roadmap).
+Attendez-vous à en savoir plus sur le blocage et le blocage du comportement, car Microsoft continue d’améliorer les fonctionnalités et fonctionnalités de protection contre les menaces. Pour voir ce qui est planifié et en cours de déploiement maintenant, consultez la [feuille de route Microsoft 365 de l’équipe](https://www.microsoft.com/microsoft-365/roadmap).
 
 ## <a name="examples-of-behavioral-blocking-and-containment-in-action"></a>Exemples de blocage comportemental et de blocage en action
 
@@ -117,7 +115,7 @@ Quelques minutes après le blocage de l’artefact, plusieurs instances du même
 
 Cet exemple montre qu’avec les fonctionnalités de blocage du comportement et de blocage, les menaces sont détectées, contenues et bloquées automatiquement.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [En savoir plus sur Defender pour le point de terminaison](overview-endpoint-detection-response.md)
 

@@ -2,8 +2,8 @@
 title: Configurer l’intégration de la prise en charge avec ServiceNow - Authentification de base
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guide de configuration et d’installation d’applications certifiées étendues pour ServiceNow.
-ms.openlocfilehash: cf9b5149847b51d9d701a49e32624ada3f708a17
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 23fab410b17cea9635c63b0ed0e4225d158dfdc8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321482"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323848"
 ---
 # <a name="configure-support-integration-with-servicenow---basic-authentication"></a>Configurer l’intégration de la prise en charge avec ServiceNow - Authentification de base
 
@@ -46,7 +46,7 @@ Ces conditions préalables sont nécessaires pour configurer l’Microsoft 365 *
 
 1. \[L’administrateur\] ServiceNow a installé le fournisseur OAuth sortant dans ServiceNow.
 
-    Si l’étendue n’est pas définie sur **Global**, **&gt; &gt; Paramètres Applications** de développeur et passez à **Global**.
+    Si l’étendue n’est pas définie sur **Global**, Paramètres **&gt; &gt; Applications** de développeur et passez à **Global**.
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="Interface utilisateur graphique, texte, application, conversation ou message texte Description générés automatiquement":::
 
@@ -68,7 +68,7 @@ Ces conditions préalables sont nécessaires pour configurer l’Microsoft 365 *
 
 1. \[L’administrateur\] ServiceNow a installé le fournisseur OAuth entrant.
 
-    Si l’étendue n’est pas définie sur **Global**, faites-le **&gt; &gt;** en Paramètres Applications de développeur et en passant à **Global**.
+    Si l’étendue n’est pas définie sur **Global**, **&gt; &gt;** faites-le en Paramètres Applications de développeur et en passant à **Global**.
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="Interface utilisateur graphique, texte, application, conversation ou message texte Description générés automatiquement":::
 
@@ -88,7 +88,7 @@ Ces conditions préalables sont nécessaires pour configurer l’Microsoft 365 *
 
 ## <a name="optional-allow-the-services-ip-addresses-to-microsoft-365-support-integration"></a>\[FACULTATIF\] Autoriser les adresses IP du service à prendre en charge Microsoft 365'intégration
 
-Si votre entreprise limite l’accès à Internet avec vos propres stratégies, activez l’accès réseau pour le service de Microsoft 365 en permettant l’intégration des adresses IP ci-dessous pour l’accès à l’API entrante et sortante :
+Si votre entreprise limite l’accès à Internet avec vos propres stratégies, activez l’accès réseau pour le service de prise en charge de Microsoft 365 en permettant les adresses IP ci-dessous pour l’accès à l’API entrante et sortante :
 
 - 52.149.152.32
 
@@ -166,7 +166,7 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
 1. Configurez les paramètres d’intégration de la prise en charge :
 
-    Sélectionnez **l’onglet** Informations de base >'outil de **support** >  **interneServiceNow**, puis entrez la valeur **de l’ID** de l’application sortante dans **l’ID d’application** pour émettre le champ Jeton auth. Cet ID d’application sortante se trouve à l’étape 6 : terminez l’intégration, qui a été créée à l’étape [1 prérequise (Authentification de \#base](#prerequisites-basic-authentication)).
+    Sélectionnez **l’onglet** Informations de base >'outil  >  de support **interneServiceNow**, puis entrez la valeur **de l’ID** de l’application sortante dans **l’ID d’application** pour émettre le champ Jeton auth. Cet ID d’application sortante se trouve à l’étape 6 : terminez l’intégration, qui a été créée à l’étape [1 prérequise (Authentification de \#base](#prerequisites-basic-authentication)).
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
@@ -198,9 +198,19 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
 1. \[ServiceNow Admin\] Test the connection After completing the previous step, click **Test connection**.
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-8.png" lightbox="../../media/ServiceNow-guide/snowbasic-8.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
-    L’Microsoft 365 d’intégration de prise en charge exécutera des tests pour s’assurer que l’intégration fonctionne. En cas de problème avec la configuration, un message d’erreur explique ce qui doit être résolu. Sinon, l’application est prête.
+    L’Microsoft 365 prise en charge de l’intégration exécutera des tests pour s’assurer que l’intégration fonctionne. En cas de problème avec la configuration, un message d’erreur explique ce qui doit être résolu. Sinon, l’application est prête.
      :::image type="content" source="../../media/ServiceNow-guide/snowbasic-9.png" lightbox="../../media/ServiceNow-guide/snowbasic-9.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
+1. \[L’administrateur\] ServiceNow active l’intégration du support Microsoft pour un utilisateur existant.
+
+    Microsoft 365'intégration de la prise en charge est activée pour l’utilisateur avec l’un des rôles ci-après :
+
+    - xmiomsm365assis.insightsuser\_\_\_\_
+
+    - xmiomsm365assis.administrator\_\_\_
+
 1. \[FACULTATIF\] [Utilisateur avec le lien x_mioms_m365_assis.administrator] Lien Administration Microsoft 365 compte.
-    Si un utilisateur a le rôle x_mioms_m365_assis.administrator et utilise différents comptes Microsoft 365 pour gérer un cas de support Microsoft 365, il doit se rendre sur Microsoft 365 support > Link Account pour configurer son e-mail d’administrateur Microsoft 365.
+
+    Si un utilisateur a le rôle x_mioms_m365_assis.administrator et utilise différents comptes Microsoft 365 pour gérer un cas de support Microsoft 365, il doit se rendre sur le support Microsoft 365 > Link Account pour configurer son e-mail d’administrateur Microsoft 365.
+    
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="Interface utilisateur graphique, texte, description de l’application générés automatiquement":::

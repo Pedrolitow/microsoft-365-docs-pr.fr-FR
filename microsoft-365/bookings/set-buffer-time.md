@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: Définissez l’heure tampon avant ou après un rendez-vous dans Microsoft Bookings pour laisser le temps de nettoyer ou de réinitialiser l’équipement.
-ms.openlocfilehash: c3d07be3c858eca5f6e9a672581b386625f5dd80
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a33159b0b5f168bbb61c88bc9b4181e05c8abbb1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164043"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329318"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>Définir l’heure tampon dans Microsoft Bookings
 
@@ -24,22 +24,23 @@ Vous pouvez définir l’heure tampon avant le début des rendez-vous, après la
 
 ## <a name="set-buffer-time-defaults"></a>Définir les valeurs par défaut de l’heure de mémoire tampon
 
-Les valeurs par défaut de l’heure tampon sont définies dans la page **Détails du service** dans Bookings. Comme toutes les valeurs par défaut de service définies sur cette page, ces valeurs par défaut peuvent être modifiées par vous pour une réservation spécifique afin de répondre aux besoins spécifiques du client.
+Les valeurs par défaut de l’heure de la mémoire tampon sont définies dans la page **Détails du service** dans Bookings. Comme toutes les valeurs par défaut de service définies sur cette page, ces valeurs par défaut peuvent être modifiées par vous pour une réservation spécifique afin de répondre aux besoins spécifiques du client.
 
-Le paramètre de durée de la mémoire tampon se trouve juste en dessous **des** s sélectionneurs de durée par défaut dans la page **Détails du** service. Avant de pouvoir la définir pour un service donné, vous devez activer le paramètre de temps tampon en sélectionnant le basculement de l’heure de mémoire tampon. Cela entraîne l’apparition des drop-downs **Avant** et Après, qui sont utilisées pour sélectionner le délai de attente par défaut avant et après chaque réservation, comme illustré ici : 
+Le paramètre de durée de la mémoire tampon se trouve juste en dessous **des s** sélectionneurs de durée par défaut dans la page **Détails du** service. Avant de pouvoir la définir pour un service donné, vous devez activer le paramètre de temps tampon en sélectionnant le basculement de l’heure de mémoire tampon. Cela entraîne l’apparition  des drop-downs **Avant** et Après, qui sont utilisées pour sélectionner le délai de attente par défaut avant et après chaque réservation, comme illustré ici :
 
    ![Image de Bookings avec l’heure tampon activée.](../media/bookings-buffertime.png)
 
-## <a name="buffer-time-and-appointment-timing"></a>Heure de la mémoire tampon et minutage des rendez-vous
+<!--## Buffer time and appointment timing
 
-Pour éviter toute confusion quant au moment où les clients s’attendent à vous rencontrer, Bookings affiche l’heure de la mémoire tampon et l’heure réelle du rendez-vous (l’heure à quoi vos clients prévoient de vous rencontrer) sur votre calendrier, ainsi que des confirmations et rappels par courrier électronique au personnel approprié. Par exemple, voici ce que vous voyez dans Bookings pour un rendez-vous avec un client qui inclut 15 minutes de temps tampon avant rendez-vous.
+To avoid confusion about when customers expect to meet with you, Bookings shows buffer time and actual appointment time (the time your customers expect to meet with you) on your calendar, and in email confirmations and reminders to relevant staff. For example, below is what you’d see in Bookings for an appointment with a customer that includes 15 minutes of pre-appointment buffer time.
 
-Notez que l’événement lui-même (à gauche dans l’image ci-dessous) affiche une ombre plus claire pour l’heure de la mémoire tampon et une ombre plus sombre pour le rendez-vous client réel. La sortie de rendez-vous (qui est ouverte lorsque vous sélectionnez l’événement) indique spécifiquement que le rendez-vous est compris entre 9 h 00 et 10 h 00 avec Katie Jordan et inclut 15 minutes de temps tampon avant le rendez-vous et 0 minute après le rendez-vous. Les confirmations et rappels au personnel font de même référence à une mémoire tampon et à une heure de rendez-vous spécifiques, tandis que le client reçoit uniquement des confirmations et rappels qui font référence à une heure de rendez-vous de 9 h 00 à 10 h 00.
+Note that the event itself (on the left in the image below) shows lighter shading for the buffer time and darker shading for the actual customer appointment. The appointment call-out (which is opened when you select the event) specifically states that the appointment is from 9:00AM to 10:00AM with Katie Jordan and includes 15 minutes of buffer time before the appointment and 0 minutes after the appointment. Confirmations and reminders to staff similarly reference specific buffer and appointment time while the customer would only get confirmations and reminders that reference a 9:00AM to 10:00AM appointment time.
 
-   ![Image de la sortie d’appel du rendez-vous Bookings avec l’heure tampon qui s’affiche.](../media/bookings-buffertime-callout.png)
+   ![Image of Bookings appointment call-out with buffer time showing.](../media/bookings-buffertime-callout.png)
+-->
 
 ## <a name="buffer-time-and-availability"></a>Temps et disponibilité de la mémoire tampon
 
-Vos clients ne voient pas directement et ne peuvent pas modifier les heures de mémoire tampon que vous avez définies. Toutefois, étant donné que l’heure tampon est utilisée pour calculer la durée globale du service, les clients voient que vous et votre personnel pertinent êtes réservé à la fois pendant les heures de tampon et de rendez-vous ordinaires. Les clients voient également uniquement la disponibilité pour vous et votre personnel s’il y a suffisamment de temps pour le rendez-vous et son heure tampon.
+Vos clients ne voient pas directement et ne peuvent pas modifier les heures tampons que vous avez définies. Toutefois, étant donné que l’heure tampon est utilisée pour calculer la durée globale du service, les clients voient que vous et votre personnel pertinent êtes réservé à la fois pendant les heures de tampon et de rendez-vous ordinaires. Les clients voient également uniquement la disponibilité pour vous et votre personnel s’il y a suffisamment de temps pour le rendez-vous et son heure tampon.
 
 Par exemple, un rendez-vous d’une heure avec une durée tampon de 15 minutes avant rendez-vous nécessite un bloc de temps disponible d’au moins 1 heure et 15 minutes. Un rendez-vous pour ce service remplirait donc un bloc de temps de 75 minutes sur votre calendrier et nécessite 75 minutes de disponibilité pour la réservation sans conflit.

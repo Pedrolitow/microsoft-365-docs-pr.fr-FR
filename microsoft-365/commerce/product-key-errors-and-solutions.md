@@ -2,8 +2,8 @@
 title: Vous avez des problèmes avec Microsoft 365 clé de produit pour les entreprises ?
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -17,16 +17,16 @@ search.appverid: MET150
 ROBOTS: NOINDEX
 description: 'Découvrez comment résoudre les problèmes que vous devez résoudre lorsque vous entrez votre clé de produit pour Microsoft 365 entreprise. '
 ms.custom:
+- commerce_purchase
 - okr_smb
 - AdminSurgePortfolio
-- commerce_purchase
 ms.date: 05/01/2021
-ms.openlocfilehash: e315bdb70878b5c424c592872ab8e139960c4c58
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: c8db5e904b56a8ded9b6b90d9273e95b4495c597
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320738"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318478"
 ---
 # <a name="problems-with-your-microsoft-365-for-business-product-key"></a>Vous avez des problèmes avec Microsoft 365 clé de produit pour les entreprises ?
 
@@ -34,7 +34,7 @@ S’il existe un message d’erreur lorsque vous essayez d’échanger une clé 
   
  **Vous avez besoin d’aide immédiatement ?** [Appelez le Support Microsoft](../admin/get-help-support.md).
   
- **Pour obtenir de l’aide sur Microsoft 365 Famille clé Microsoft 365 Personnel produit**, voir Utilisation des clés de produit [avec Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).
+ **Pour obtenir de l’aide Microsoft 365 Famille une clé Microsoft 365 Personnel produit**, voir Utilisation des clés de produit [avec Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).
   
 ## <a name="product-key-error-help-with-microsoft-365-for-business"></a>Aide sur les erreurs de clé de produit Microsoft 365 entreprise
 
@@ -53,7 +53,7 @@ S’il existe un message d’erreur lorsque vous essayez d’échanger une clé 
 > [!NOTE]
 > Lorsque vous achetez Microsoft 365 par le biais d’un partenaire, Microsoft vous envoie un courrier électronique contenant des instructions pour obtenir votre clé de produit et activer votre abonnement dans le Centre de gestion des licences en [volume](https://go.microsoft.com/fwlink/p/?LinkID=282016). Pour en savoir plus sur les licences en volume, consultez l'[aide pour les clients du programme de licence en volume](https://go.microsoft.com/fwlink/p/?LinkId=534992).
   
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Rechercher et entrer votre clé de produit](enter-your-product-key.md) (article)\
 [Renouveler un abonnement](subscriptions/renew-your-subscription.md) (article)\

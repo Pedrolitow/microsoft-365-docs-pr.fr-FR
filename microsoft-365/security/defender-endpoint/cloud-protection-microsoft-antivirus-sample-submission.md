@@ -1,7 +1,7 @@
 ---
 title: Protection cloud et envoi d’exemples dans Antivirus Microsoft Defender
 description: En savoir plus sur la protection et les Antivirus Microsoft Defender
-keywords: Antivirus Microsoft Defender, technologies de nouvelle génération, soumission d’exemples antivirus, antivirus de nouvelle génération, machine learning, anti-programme malveillant, sécurité, defender, cloud, protection livrée par le cloud
+keywords: Antivirus Microsoft Defender, technologies de nouvelle génération, soumission d’exemples antivirus, antivirus de nouvelle génération, apprentissage automatique, logiciel anti-programme malveillant, sécurité, defender, cloud, protection cloud
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -13,14 +13,14 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 10/18/2021
+ms.date: 02/24/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3ffd18a0b2a0e81f2f3a425434f5e786d8dc598d
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 9df9c387f24671d6790d9219590eeac490f2f1aa
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171547"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328132"
 ---
 # <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>Protection cloud et envoi d’exemples dans Antivirus Microsoft Defender
 
@@ -57,7 +57,7 @@ Antivirus Microsoft Defender protection cloud bloquent automatiquement la plupar
       - La requête cloud de métadonnées de fichier peut être le résultat d’un comportement, d’une marque du site web ou d’autres caractéristiques dans le cas où un verdict clair n’est pas déterminé.
       - Une petite charge utile de métadonnées est envoyée, dans le but d’atteindre un verdict de programmes malveillants ou pas de menace. Les métadonnées n’incluent pas d’informations d’identification personnelle (PII). Les informations telles que les noms de fichiers sont hachées.
       - Peut être synchrone ou asynchrone. Pour synchrone, le fichier ne s’ouvre pas tant que le cloud n’a pas rendu de verdict. Pour les données asynchrones, le fichier s’ouvre pendant que la protection cloud effectue son analyse.
-      - Les métadonnées peuvent inclure des attributs PE, des attributs de fichiers statiques, des attributs dynamiques et contextuels, et bien plus encore (voir des exemples de métadonnées envoyées au [service de protection cloud).](#examples-of-metadata-sent-to-the-cloud-protection-service)
+      - Les métadonnées peuvent inclure des attributs PE, des attributs de fichiers statiques, des attributs dynamiques et contextuels, et bien plus encore (voir des exemples de métadonnées envoyées au [service de protection cloud](#examples-of-metadata-sent-to-the-cloud-protection-service)).
 
    2. Après avoir examiné les métadonnées, si Antivirus Microsoft Defender protection cloud ne peut pas parvenir à un verdict de première classe, elle peut demander un échantillon du fichier pour une inspection plus approfondie. Cette demande honore la configuration des paramètres pour l’envoi d’exemples :
 
@@ -80,14 +80,14 @@ Antivirus Microsoft Defender protection cloud bloquent automatiquement la plupar
          - « Ne pas envoyer » équivaut au paramètre « Désactivé » dans la stratégie macOS
          - Les métadonnées sont envoyées pour des détections, même lorsque l’envoi d’échantillons est désactivé
 
-   3. Une fois les métadonnées et/ou les fichiers envoyés à la protection cloud, vous pouvez utiliser des **exemples,** des **détonations** ou des modèles d’apprentissage automatique d’analyse de **big data** pour parvenir à un verdict. La non-fonctionnalité de protection fournie par le cloud limite l’analyse à ce que le client peut fournir par le biais de modèles d’apprentissage automatique locaux et de fonctions similaires.
+   3. Une fois les métadonnées et/ou les fichiers soumis à la protection cloud, vous pouvez utiliser des exemples, des **détonations** ou des **modèles** d’apprentissage automatique d’analyse de **big data** pour parvenir à un verdict. La non-fonctionnalité de protection fournie par le cloud limite l’analyse à ce que le client peut fournir par le biais de modèles d’apprentissage automatique locaux et de fonctions similaires.
 
 > [!IMPORTANT]
-> Le service Bloquer [à la première consultation (BAFS)](configure-block-at-first-sight-microsoft-defender-antivirus.md) fournit une analyse et une détonation pour déterminer si un fichier ou un processus est sécurisé. BAFS peut retarder momentanément l’ouverture d’un fichier jusqu’à ce qu’un verdict soit atteint. Si vous désactivez l’envoi d’échantillons, BAFS est également désactivé et l’analyse de fichier est limitée aux métadonnées uniquement. Nous vous recommandons de conserver l’envoi d’échantillons et BAFS activés. Pour plus d’informations, [voir « Bloquer à la première vue » ?](configure-block-at-first-sight-microsoft-defender-antivirus.md#what-is-block-at-first-sight)
+> [Le service Bloquer à la première consultation (BAFS)](configure-block-at-first-sight-microsoft-defender-antivirus.md) fournit une analyse et une détonation pour déterminer si un fichier ou un processus est sécurisé. BAFS peut retarder momentanément l’ouverture d’un fichier jusqu’à ce qu’un verdict soit atteint. Si vous désactivez l’envoi d’échantillons, BAFS est également désactivé et l’analyse de fichier est limitée aux métadonnées uniquement. Nous vous recommandons de conserver l’envoi d’échantillons et BAFS activés. Pour plus d’informations, [voir « Bloquer à la première vue » ?](configure-block-at-first-sight-microsoft-defender-antivirus.md#what-is-block-at-first-sight)
 
 ## <a name="cloud-protection-levels"></a>Niveaux de protection cloud
 
-La protection cloud est activée par défaut dans Antivirus Microsoft Defender. Nous vous recommandons de maintenir la protection cloud activée, bien que vous pouvez configurer le niveau de protection pour votre organisation. Voir [Spécifier le niveau de protection cloud pour Antivirus Microsoft Defender](specify-cloud-protection-level-microsoft-defender-antivirus.md).
+La protection cloud est activée par défaut dans Antivirus Microsoft Defender. Nous vous recommandons de maintenir la protection cloud activée, bien que vous pouvez configurer le niveau de protection pour votre organisation. Voir [Spécifier le niveau de protection cloud pour les Antivirus Microsoft Defender](specify-cloud-protection-level-microsoft-defender-antivirus.md).
 
 ## <a name="sample-submission-settings"></a>Exemples de paramètres de soumission
 
@@ -122,7 +122,7 @@ En outre, Defender pour point de terminaison a reçu plusieurs certifications de
 - SOC I, II, III
 - et PCI
 
-Pour plus d’informations, consultez les ressources suivantes :
+Pour plus d’informations, reportez-vous aux ressources suivantes :
 
 - [Offres de conformité Azure](/azure/storage/common/storage-compliance-offerings) 
 - [Portail d’approbation de service](https://servicetrust.microsoft.com)
@@ -134,9 +134,11 @@ Il existe deux autres scénarios dans lequel Defender pour le point de terminais
 
 | Scénario | Description |
 |:---|:---|
-|Collection d’exemples de fichiers manuelle dans le portail Microsoft 365 Defender web | Lors de l’intégration d’appareils à Defender pour endpoint, vous pouvez configurer les paramètres [de protection évolutive des points de terminaison (PEPT)](overview-endpoint-detection-response.md). Par exemple, il existe un paramètre permettant d’activer des exemples de collections à partir de l’appareil, qui peuvent facilement être confondus avec les paramètres d’envoi d’exemples décrits dans cet article. <br/><br/>Le paramètre PEPT contrôle la collecte d’exemples de fichiers à partir d’appareils lorsqu’il est demandé via le portail Microsoft 365 Defender et est soumis aux rôles et autorisations déjà établis. Ce paramètre peut autoriser ou bloquer la collecte de fichiers à partir du point de terminaison pour des fonctionnalités telles que l’analyse approfondie dans Microsoft 365 Defender portail. Si ce paramètre n’est pas configuré, la valeur par défaut est d’activer la collection d’échantillons. <br/><br/>En savoir plus sur les paramètres de configuration de Defender pour les points de terminaison, voir : Outils et méthodes d’intégration pour les Windows 10 [dans Defender for Endpoint](configure-endpoints.md) |
-| Analyse automatisée du contenu d’examen et de réponse | Lorsque des [enquêtes](automated-investigations.md) automatisées sont en cours d’exécution sur des appareils (lorsqu’elles sont configurées pour s’exécuter automatiquement en réponse à une alerte ou s’exécutent manuellement), les fichiers identifiés comme suspects peuvent être collectés à partir des points de terminaison pour une inspection plus approfondie. Si nécessaire, la fonctionnalité d’analyse de contenu de fichier pour les examens automatisés peut être désactivée dans Microsoft 365 Defender portail. <br/><br/> Les noms d’extension de fichier peuvent également être modifiés pour ajouter ou supprimer des extensions pour d’autres types de fichiers qui seront automatiquement envoyés au cours d’un examen automatisé. <br/><br/> Pour plus d’informations, voir [Gérer les téléchargements de fichiers d’automatisation.](manage-automation-file-uploads.md) |
+|Collection d’exemples de fichiers manuelle dans le portail Microsoft 365 Defender | Lors de l’intégration d’appareils à Defender pour le point de terminaison, vous pouvez configurer les paramètres de détection et de réponse des points de terminaison [(EDR).](overview-endpoint-detection-response.md) Par exemple, il existe un paramètre permettant d’activer des exemples de collections à partir de l’appareil, qui peuvent facilement être confondus avec les paramètres d’envoi d’exemples décrits dans cet article. <br/><br/>Le paramètre EDR contrôle la collecte d’exemples de fichiers à partir d’appareils lorsqu’il est demandé via le portail Microsoft 365 Defender et est soumis aux rôles et autorisations déjà établis. Ce paramètre peut autoriser ou bloquer la collecte de fichiers à partir du point de terminaison pour des fonctionnalités telles que l’analyse approfondie dans le portail Microsoft 365 Defender. Si ce paramètre n’est pas configuré, la valeur par défaut est d’activer la collection d’échantillons. <br/><br/>En savoir plus sur les paramètres de configuration de Defender for Endpoint, voir : Outils et méthodes d’intégration pour les appareils [Windows 10 dans Defender for Endpoint](configure-endpoints.md) |
+| Analyse automatisée du contenu d’examen et de réponse | Lorsque des [enquêtes](automated-investigations.md) automatisées sont en cours d’exécution sur des appareils (lorsqu’elles sont configurées pour s’exécuter automatiquement en réponse à une alerte ou s’exécutent manuellement), les fichiers identifiés comme suspects peuvent être collectés à partir des points de terminaison pour une inspection plus approfondie. Si nécessaire, la fonctionnalité d’analyse de contenu de fichier pour les examens automatisés peut être désactivée dans le portail Microsoft 365 Defender. <br/><br/> Les noms d’extension de fichier peuvent également être modifiés pour ajouter ou supprimer des extensions pour d’autres types de fichiers qui seront automatiquement envoyés au cours d’un examen automatisé. <br/><br/> Pour plus d’informations, voir [Gérer les téléchargements de fichiers d’automatisation](manage-automation-file-uploads.md). |
 
 ## <a name="see-also"></a>Voir aussi
 
 [Vue d’ensemble de la protection nouvelle génération](next-generation-protection.md)
+
+[Configurez la correction pour les détections de l’Antivirus Microsoft Defender.](configure-remediation-microsoft-defender-antivirus.md)
