@@ -2,8 +2,8 @@
 title: Guide d'essai des évaluations premium de Microsoft Compliance Manager
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Guide d'essai des évaluations premium de Microsoft Compliance Manager.
-ms.openlocfilehash: e03fca9adfad720a4203885e98f2a9474243bbc4
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 7beff27d5d2eb7693f165d479bbc8df6e190d028
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61561119"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321024"
 ---
 # <a name="trial-playbook-microsoft-compliance-manager-premium-assessments"></a>Guide d'essai : évaluations premium de Microsoft Compliance Manager
 
@@ -70,7 +70,7 @@ Il existe deux façons d’activer la version d Premium d’évaluation du modul
 
 ### <a name="enable-trial-via-the-compliance-trial"></a>Activer la version d’évaluation via la version d’essai de conformité
 
-1. Dans le Centre de conformité, sélectionnez **Évaluations** dans le volet de navigation gauche. Les évaluations disponibles s’affichent.
+1. Dans le Centre de conformité, sélectionnez **Essais** dans le volet de navigation de gauche. Les essais disponibles s'affichent.
 1. Sélectionnez **Essayer maintenant** pour les évaluations premium du Gestionnaire de conformité.
 1. Une page d’informations s’offre à vous et vous permet d’en savoir plus avant de définir la version d’essai.
 1. Lorsque vous choisissez **Configurer**, l’application des modifications peut prendre jusqu’à deux heures. Vous devrez vous connectez à nouveau pour voir les modèles disponibles.
@@ -87,7 +87,7 @@ Après avoir démarré la version d’évaluation Premium, vous resterez inform�
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
-**Documents Microsoft** : obtenez des informations détaillées sur le fonctionnement des évaluations Premium du Gestionnaire de conformité et sur la meilleure façon de les implémenter pour votre organisation. Visitez [la documentation.](compliance-manager-templates.md)
+**Microsoft Docs**: Obtenez des informations détaillées sur le fonctionnement des évaluations premium de Compliance Manager et sur la meilleure façon de les mettre en œuvre pour votre organisation. Visitez [Docs](compliance-manager-templates.md).
 
 **Vidéos d’apprentissage** : pour en savoir plus, consultez les vidéos suivantes :
 

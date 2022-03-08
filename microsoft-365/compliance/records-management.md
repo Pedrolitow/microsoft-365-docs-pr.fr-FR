@@ -17,15 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom:
+- admindeeplinkCOMPLIANCE
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: La gestion des enregistrements dans Microsoft 365 vous permet d’appliquer des planifications de rétention dans un plan de gestion de fichiers afin de gérer la rétention, la déclaration d’enregistrements et la destruction de ceux-ci.
-ms.openlocfilehash: d5d4752e76a2a39b1c5fafab964d13ce11873e9b
-ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
+ms.openlocfilehash: c7546216a935960e5c4b66b37bb3308d0a69e89e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62083061"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324814"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Découvrez la gestion des enregistrements dans Microsoft 365
 
@@ -51,7 +52,7 @@ Les fonctionnalités suivantes permettent la prise en charge votre solution de g
 
 Grâce à ces capacités, vous pouvez intégrer les calendriers de rétention et les exigences de votre organisation dans une solution de gestion des documents qui gère la rétention, la déclaration et l'élimination des enregistrements, afin de prendre en charge le cycle de vie complet de votre contenu.
 
-Outre la documentation en ligne, il peut s’avérer utile de télécharger une [série de FAQ](https://aka.ms/MIPC/Blog-RecordsManagementWebinar) à partir d’un webinaire de gestion des enregistrements. L’enregistrement du webinaire réel n’est plus disponible.
+En plus de la documentation en ligne, vous trouverez peut-être utile de télécharger une [série de diapositives des FAQs](https://aka.ms/MIPC/Blog-RecordsManagementWebinar) à partir d’un webinaire de gestion des enregistrements. L’enregistrement du webinaire réel n’est plus disponible.
 
 ## <a name="records"></a>Enregistrements
 
@@ -91,9 +92,9 @@ Une étiquette de rétention standard comporte des paramètres et des actions de
 
 Notes de bas de page :
 
-<sup>1</sup> Autorisé par défaut, mais peut être bloqué par un paramètre client pour les fichiers dont la taille est supérieure à 0 octets : accédez au nœud **Gestion des enregistrements** dans le Centre de conformité Microsoft 365 > **Paramètres de gestion des enregistrements** > **Étiquettes de rétention** > **Autoriser la modification des propriétés de l’enregistrement**, puis désactivez le paramètre **Autoriser les utilisateurs à modifier les propriétés d’enregistrement**.
+<sup>1</sup> Les propriétés de modification d’un enregistrement verrouillé sont autorisées par défaut, mais peuvent être bloquées par un paramètre client dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) > **Gestion des enregistrements** > **Paramètres de gestion des enregistrements** > **Étiquettes de rétention** > **Autoriser la modification des propriétés d’enregistrement**.
 
-<sup>2</sup> Pour SharePoint et OneDrive, peut être bloqué en tant que paramètre client dans le Centre de conformité Microsoft 365 > **Gestion des enregistrements** > **Paramètres de gestion des enregistrements** > **Étiquettes de rétention** > **Suppression des éléments**
+<sup>2</sup> La suppression d’éléments étiquetés dans SharePoint et OneDrive peut être bloquée en tant que paramètre client dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) > **Gestion des enregistrements** > **Paramètres de gestion des enregistrements** > **Étiquettes de rétention** > **Suppression des éléments**.
 
 Lorsque vous appliquez une étiquette de rétention à un élément de liste qui contient une pièce jointe au document, ce document n’hérite pas des paramètres de rétention et peut être supprimé de l’élément de liste. En comparaison, si cet élément de liste a été déclaré comme un enregistrement avec une étiquette de rétention, la pièce jointe au document hériterait des paramètres de rétention et n’a pas pu être supprimée.
 

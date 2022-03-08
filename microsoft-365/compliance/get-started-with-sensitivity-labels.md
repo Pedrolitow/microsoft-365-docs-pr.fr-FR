@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à mettre en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: b5d7a6c18f112b7f35aa2599ff2639894a735f9b
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: adc939d44715bcfaeb97cdbfa530f55a5aeecd4e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171873"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322084"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Pour en savoir plus sur les étiquettes de confidentialité et la façon dont elles peuvent vous aider à protéger les données de votre organisation, voir [Plus d'informations sur les étiquettes de confidentialité](sensitivity-labels.md).
 
@@ -73,7 +73,7 @@ Au lieu d'utiliser les rôles par défaut, vous pouvez créer un groupe de rôle
 > - **Enquêteurs Information Protection**
 > - **Lecteurs Information Protection**
 >
-> Pour obtenir une explication de chacun d’eux et des nouveaux rôles qu’ils contiennent, sélectionnez un groupe de rôles dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> > **Autorisations et rôles** > **Centre de conformité** > **Rôles**, puis passez en revue la description dans le volet de menu volant. Vous pouvez également consulter [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center).
+> Pour une explication de chacun d'eux et des nouveaux rôles qu'ils contiennent, sélectionnez un groupe de rôles dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">centre de conformité Microsoft 365</a> > **Permissions et rôles** > **Centre de conformité** > **Rôles**, puis consultez la description dans le volet volant. Ou, voir [Groupes de rôles dans le centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center).
 
 Pour obtenir des instructions pour ajouter des utilisateurs au groupe de rôles, rôles par défaut ou créer vos propres groupes de rôles, consultez [Autorisations dans le Centre de conformité Microsoft 365](microsoft-365-compliance-center-permissions.md).
 
@@ -99,6 +99,7 @@ Dans tous les scénarios, vous devez [Créer et configurer des étiquettes de co
 |Utiliser la co-édition et l’enregistrement automatique dans les applications de bureau Office lorsque les documents sont chiffrés | [Activer la co-édition pour les fichiers chiffrés avec les étiquettes de confidentialité](sensitivity-labels-coauthoring.md)
 |Appliquer automatiquement des étiquettes de confidentialité aux documents et messages électroniques | [Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md)|
 |Utiliser des étiquettes de confidentialité pour protéger du contenu dans Teams et SharePoint |[Utiliser des étiquettes de confidentialité avec Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](sensitivity-labels-teams-groups-sites.md)|
+|Utiliser des étiquettes de niveau de sensibilité pour configurer le type de lien de partage par défaut pour les sites et les documents individuels SharePoint et OneDrive |[Utilisez les étiquettes de confidentialité pour configurer le type de lien de partage par défaut pour les sites et les documents dans SharePoint et OneDrive](sensitivity-labels-default-sharing-link.md)|
 |Appliquer une étiquette de niveau de sensibilité à un modèle de compréhension de document, afin que les documents identifiés dans une bibliothèque SharePoint soient automatiquement classés et protégés |[Appliquer une étiquette de confidentialité à un modèle dans Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)|
 |Empêcher ou signaler les utilisateurs sur le partage des fichiers ou des courriers électroniques avec une étiquette de confidentialité spécifique |[Utiliser les étiquettes de confidentialité comme condition dans les stratégies de protection contre la perte de données](dlp-sensitivity-label-as-condition.md) |
 |Appliquer une étiquette de rétention pour conserver ou supprimer des fichiers ou des messages électroniques qui ont une étiquette de niveau de sensibilité spécifique|[Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu](apply-retention-labels-automatically.md) |

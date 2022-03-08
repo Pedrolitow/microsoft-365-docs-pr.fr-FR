@@ -16,16 +16,17 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les étapes de configuration de Microsoft 365 nécessaires pour configurer une équipe pour la collaboration entre les tâches, les conversations et la documentation avec les invités dans Teams.
-ms.openlocfilehash: 4128f6cd5293972dd7383eed0802f7969f488d8a
-ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
+ms.openlocfilehash: bb6ccf4f3e17192d86675d99072eca8b836973e2
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60899641"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324548"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborer avec des invités au sein d’une équipe
 
@@ -111,9 +112,9 @@ Si vous voulez autoriser le partage de fichiers et de dossiers avec des personne
 Pour définir les paramètres de partage SharePoint au niveau de l’organisation
 
 1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>, dans le volet de navigation gauche, sous **Centres d’administration**, cliquez sur **SharePoint**.
-2. Dans le Centre d’administration SharePoint, dans le volet de navigation gauche, développez **Stratégies** puis cliquez sur **Partage**.
+2. Dans le Centre d’administration SharePoint, dans le volet de navigation gauche, développez **Stratégies** puis cliquez sur <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Partage**</a>.
 3. Assurez-vous que le partage externe pour SharePoint est **Tout le monde** ou **Invités nouveaux et existants**.
-4. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
+4. Si vous avez apporté des modifications, sélectionnez **Enregistrer**.
 
 
 ## <a name="sharepoint-organization-level-default-link-settings"></a>Paramètres de liaison par défaut au niveau de l’organisation SharePoint
@@ -133,9 +134,9 @@ Choisissez l’un des types de liens suivants qui seront sélectionnés par déf
 
 Pour définir les paramètres de liaison par défaut au niveau de l’organisation SharePoint
 
-1. Accédez à la page Partage dans le Centre d’administration SharePoint.
+1. Accédez à <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Partage**</a> dans le Centre d’administration SharePoint.
 2. Sous **Liens des fichiers et des dossiers**, sélectionnez le lien de partage par défaut que vous voulez utiliser.
-3. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
+3. Si vous avez apporté des modifications, sélectionnez **Enregistrer**.
 
 ## <a name="create-a-team"></a>Créer une équipe
 
@@ -158,11 +159,11 @@ Vérifiez les paramètres de partage au niveau du site pour vous assurer qu’il
 ![Capture d’écran des paramètres de partage externe de site SharePoint.](../media/sharepoint-site-external-sharing-settings.png)
 
 Pour définir les paramètres au niveau du site
-1. Dans le centre d’administration SharePoint, dans le volet de navigation de gauche, développez **Sites** et cliquez sur **Sites actifs**.
+1. Dans le Centre d’administration SharePoint, dans le volet de navigation gauche, développez **Sites** et sélectionnez <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sites actifs**</a>.
 2. Sélectionnez le site de l’équipe que vous venez de créer.
-3. Cliquez sur... puis sélectionnez **Partage**.
+3. Sélectionnez... et choisissez **Partage**.
 4. Assurez-vous que le partage est paramétré sur **Tout le monde** ou **Invités nouveaux et existants**.
-5. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
+5. Si vous avez apporté des modifications, sélectionnez **Enregistrer**.
 
 ## <a name="invite-users"></a>Inviter des utilisateurs
 

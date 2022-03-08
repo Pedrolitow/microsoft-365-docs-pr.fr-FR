@@ -2,8 +2,8 @@
 title: Régler votre abonnement
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,19 +16,19 @@ ms.collection:
 search.appverid: MET150
 description: Utilisez une carte de crédit ou de débit ou un compte bancaire pour payer votre abonnement à Microsoft 365 pour entreprise. Dans certains cas, vous pouvez payer par facture.
 ms.custom:
+- commerce_billing
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-- commerce_billing
 - business_assist
 - AdminTemplateSet
 ms.date: 10/28/2021
-ms.openlocfilehash: 839c7e94a2a89b20eef0779f44d864d69ed3a746
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: fb6948c59505eaa3316dab73708658f7b31c43e7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766787"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326298"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Comment régler un abonnement
 
@@ -69,7 +69,7 @@ Si une vérification du crédit est nécessaire, vous en êtes informé lors de 
 >
 > Si vous le préférez, vous pouvez régler par virement électronique entre les deux comptes. L'Agence et le numéro de compte figure au bas de votre facture. Vous devez entrer votre numéro de facture dans le champ identification du Virement.
 
-Si vous payez votre abonnement par facture, vous recevrez un e-mail vous avertissant de la disponibilité de votre relevé de facturation. Cet e-mail ne contient pas de copie de votre relevé de facturation. Toutefois, vous pouvez choisir de [recevoir les factures de votre organisation en tant que pièces jointes](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). Votre relevé de facturation inclut des détails sur vos modes de paiement ainsi que la destination. Si vous entrez un numéro de bon de commande lors de l’achat d’un abonnement, ce numéro apparaît sur votre relevé de facturation. Pour plus d’informations sur l’accès à vos relevés de facturation, reportez-vous à [Consulter votre facture](view-your-bill-or-invoice.md).
+Si vous payez par facture pour votre abonnement, vous recevez un e-mail lorsque votre relevé de facturation est prêt à être affiché. Cet e-mail ne’ contient pas de copie de votre relevé de facturation. Toutefois, vous pouvez choisir de [recevoir les factures de votre organisation en tant que pièces jointes](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). Votre relevé de facturation inclut des détails sur vos options de paiement et l’emplacement de l’envoi. Si vous entrez un numéro de bon de commande lorsque vous achetez un abonnement, ce numéro apparaît sur votre relevé de facturation. Pour plus d’informations sur l’accès aux relevés de facturation, consultez [Afficher votre facture](view-your-bill-or-invoice.md).
 
 ## <a name="what-if-i-have-an-outstanding-balance"></a>Que se passe-t-il s'il me reste un solde impayé ?
 
@@ -86,7 +86,7 @@ Si vous n’avez pas ajouté le mode de paiement actuellement utilisé pour le r
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>Où envoyer mon chèque ou mon paiement par TEF ?
 
-[Consultez votre facture pour](view-your-bill-or-invoice.md) obtenir des instructions de paiement pour votre pays ou région. Si vous ne connaissez pas le montant que vous devez régler, vous pouvez consulter votre facture et votre historique de facturation en ligne dans l’onglet **Factures** de la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturation et paiements</a>.
+[Consultez votre facture](view-your-bill-or-invoice.md) pour obtenir des instructions de paiement pour votre pays ou région. Si vous ne savez pas combien vous devez, vous pouvez consulter votre historique des factures et des paiements en ligne sous l’onglet **Factures** de la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Factures et paiements</a> .
 
 > [!NOTE]
 > - Le paiement par chèque n'est disponible que pour quelques pays ou régions seulement.
