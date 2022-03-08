@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment rechercher des ressources pour Microsoft SharePoint Syntex.
-ms.openlocfilehash: 665a28c07e5405299cb88ffdce3fbafa1210415a
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: db8526cbf85be1b9db5b95ed0739d0ec948c2faa
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322082"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323162"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Présentation de Microsoft SharePoint Syntex
 
@@ -87,6 +87,7 @@ Les ressources de cette section permettent à vos utilisateurs d’apprendre à 
 |Appliquer une étiquette de rétention à votre modèle|[Appliquer une étiquette de rétention à un modèle de compréhension de document](./apply-a-retention-label-to-a-model.md)|
 |Appliquer une étiquette de confidentialité à votre modèle|[Appliquer une étiquette de confidentialité à un modèle de compréhension de document](./apply-a-sensitivity-label-to-a-model.md)|
 |Utiliser des modèles pré-utilisés pour extraire des informations à partir de documents |[Utiliser un modèle préétacé pour extraire des informations de factures ou de reçus](./prebuilt-models.md)|
+|Créer et former des modèles localement sur SharePoint site |[Créer un modèle sur un site SharePoint local](./create-local-model.md)|
 |Utiliser des modèles entraînés dans d’autres centres de contenu |[Publier et découvrir des modèles de compréhension de documents](./model-discovery.md)|
 |Exécuter des requêtes basées sur les métadonnées sur des bibliothèques de documents|[Rechercher des métadonnées dans les bibliothèques de documents](./metadata-search.md)|
 |Utiliser la taxonomie de la banque de termes de gestion des métadonnées gérées lors de la création d’un extracteur|[Utiliser la taxonomie de la banque de termes lors de la création d’un extracteur](./leverage-term-store-taxonomy.md)|

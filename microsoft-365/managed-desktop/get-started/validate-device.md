@@ -1,18 +1,23 @@
 ---
 title: Valider les nouveaux appareils
-description: 'Avant de commander des appareils, obtenez l’un de chaque modèle et testez-le'
+description: Avant de commander des appareils, obtenez l’un de chaque modèle et testez-le
 ms.service: m365-md
 author: tiaraquan
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
+ms.openlocfilehash: aed391128d0a7bfdd3b6a97c9cc661267b867820
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322280"
 ---
-
 # <a name="validate-new-devices"></a>Valider les nouveaux appareils
 
 Que vous débutiez avec Microsoft Manged Desktop ou un abonné de longue durée, il est recommandé de tester un exemple de tout modèle d’appareil que vous inscrivez pour la première fois dans le service. Cela est vrai si vous commandez de nouveaux appareils ou que vous en utilisez des appareils existants, y compris les appareils recommandés pour Microsoft Manged Desktop.
@@ -32,7 +37,7 @@ La validation des appareils garantit qu’ils offrent l’expérience utilisateu
 **Pour valider les appareils :**
 
 1. Prenez un ou plusieurs exemples de nouveaux modèles en suivant les étapes des articles suivants :
-    - [Configurer les appareils Bureau géré Microsoft](set-up-devices.md)
+    - [Préparer les appareils](prepare-devices.md)
     - [Localiser l’expérience utilisateur](localization.md)
     - [Expérience de première exécution avec le pilote automatique et la page état d’inscription](esp-first-run.md)
     - [Service d’emplacement Windows 10](device-location.md)

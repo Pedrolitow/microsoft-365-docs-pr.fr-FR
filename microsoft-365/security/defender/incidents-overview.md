@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ac908a03aad2ccbe203877250a84185cb6c8da16
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 25cdc0610f11d1bcd7e8c27faa1cdc9453677d51
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62904384"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320875"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Réponse aux incidents avec Microsoft 365 Defender
 
@@ -47,7 +47,7 @@ Les services et applications Microsoft 365 créent des alertes lorsqu’ils dét
 
 Étant donné que le regroupement des alertes individuelles pour obtenir des insights sur une attaque peut s’avérer difficile et fastidieux, Microsoft 365 Defender agrège automatiquement les alertes et leurs informations associées dans un incident.
 
-:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="Comment Microsoft 365 Defender des événements d’entités dans un incident." lightbox="../../media/incidents-overview/incidents.png":::
+:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="Comment Microsoft 365 Defender événements provenant d’entités dans un incident." lightbox="../../media/incidents-overview/incidents.png":::
 
 Regardez cette courte vue d’ensemble des incidents Microsoft 365 Defender (4 minutes).
 
@@ -63,17 +63,17 @@ Le regroupement d’alertes associées dans un incident vous donne une vue compl
 - L’étendue de l’attaque, par exemple le nombre d’appareils, d’utilisateurs et de boîtes aux lettres qui ont été affectés. 
 - Toutes les données associées à l’attaque.
 
-[S’il est activé](m365d-enable.md), Microsoft 365 Defender [peuvent automatiquement](m365d-autoir.md) examiner et résoudre les alertes par le biais de l’automatisation et de l’intelligence artificielle. Vous pouvez également effectuer des étapes de correction supplémentaires pour résoudre l’attaque. 
+[S’il est](m365d-enable.md) activé, Microsoft 365 Defender [peuvent automatiquement](m365d-autoir.md) examiner et résoudre les alertes par le biais de l’automatisation et de l’intelligence artificielle. Vous pouvez également effectuer des étapes de correction supplémentaires pour résoudre l’attaque. 
 
 ## <a name="incidents-and-alerts-in-the-microsoft-365-defender-portal"></a>Incidents et alertes dans le portail Microsoft 365 Defender web
 
-Vous gérez les incidents à partir **d’incidents & alertes > incidents** sur le lancement rapide du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender web</a>. Voici un exemple.
+Vous gérez les incidents à partir **d’incidents & alertes > incidents** dans le lancement rapide du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender web</a>. Voici un exemple.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Page Incidents dans le portail Microsoft 365 Defender web." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 La sélection d’un nom d’incident affiche un résumé de l’incident et donne accès aux onglets avec des informations supplémentaires. Voici un exemple.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exemple de page Résumé d’un incident dans le portail Microsoft 365 Defender web" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exemple de page Résumé d’un incident dans le portail Microsoft 365 Defender" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 Les onglets supplémentaires pour un incident sont les suivants :
 
@@ -105,9 +105,9 @@ Les onglets supplémentaires pour un incident sont les suivants :
 
   Représentation visuelle de l’attaque qui connecte les différentes entités suspectes faisant partie de l’attaque avec leurs biens connexes tels que les utilisateurs, les appareils et les boîtes aux lettres.
 
-Voici la relation entre un incident et ses données et les onglets d’un incident dans Microsoft 365 Defender web.
+Voici la relation entre un incident et ses données et les onglets d’un incident dans Microsoft 365 Defender portail.
 
-:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="Relation d’un incident et de ses données avec les onglets d’un incident dans le portail Microsoft 365 Defender web." lightbox="../../media/incidents-overview/incidents-security-center.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="Relation d’un incident et de ses données avec les onglets d’un incident dans Microsoft 365 Defender portail." lightbox="../../media/incidents-overview/incidents-security-center.png":::
 
 ## <a name="example-incident-response-workflow-for-microsoft-365-defender"></a>Exemple de flux de travail de réponse aux incidents pour Microsoft 365 Defender
 
@@ -124,7 +124,7 @@ Prenez en compte les étapes suivantes pour votre propre flux de travail de rép
 
 1. Pour chaque incident, lancez une analyse et une analyse d’attaque et [d’alerte](investigate-incidents.md) :
  
-   1. Affichez le résumé de l’incident pour comprendre son étendue et sa gravité, ainsi que les entités affectées par les onglets Résumé **et Graph** (aperçu).
+   1. Affichez le résumé de l’incident pour comprendre son étendue et sa gravité, ainsi que les entités affectées par les onglets Résumé et **Graph** (aperçu).
 
    1. Commencez à analyser les alertes pour comprendre leur origine, leur étendue et leur gravité avec **l’onglet Alertes** .
 
@@ -174,7 +174,7 @@ Les tâches annuelles peuvent inclure la conduite d’un incident majeur ou d’
 
 Les tâches quotidiennes, mensuelles, trimestrielles et annuelles peuvent être utilisées pour mettre à jour ou affiner des processus, des stratégies et des configurations de sécurité.
 
-Pour [ plus d’Microsoft 365 Defender,](integrate-microsoft-365-defender-secops.md) voir Intégration de Microsoft 365 Defender vos opérations de sécurité.
+Pour [ plus d’informations, Microsoft 365 Defender intégrer des](integrate-microsoft-365-defender-secops.md) informations à vos opérations de sécurité.
 
 ### <a name="secops-resources-across-microsoft-products"></a>Ressources SecOps sur les produits Microsoft
 

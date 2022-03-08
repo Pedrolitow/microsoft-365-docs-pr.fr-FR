@@ -11,18 +11,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 2e314f15719d4a6a0e75d5fd26ae788e2382b75a
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: b20a8d5f1f33ebe62fa1ec9a5e8c8e05dbddbc2b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217889"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323344"
 ---
 # <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Examiner une adresse IP associée à une alerte Microsoft Defender pour le point de terminaison
 
@@ -55,7 +53,7 @@ La section Détails de l’adresse IP affiche les attributs de l’adresse IP, t
 
 ## <a name="alerts-related-to-this-ip"></a>Alertes associées à cette adresse IP
 
-Les **alertes associées à cette** section IP fournissent une liste d’alertes associées à l’adresse IP.
+Les **alertes associées à cette section IP** fournissent une liste d’alertes associées à l’adresse IP.
 
 ## <a name="ip-in-organization"></a>IP dans l’organisation
 
@@ -71,9 +69,9 @@ La section **Appareils les plus récemment observés** avec ip fournit une vue c
 
 **Examinez une adresse IP externe :**
 
-1. Sélectionnez **l’adresse IP** dans **le** menu déroulant de la barre de recherche.
+1. **Sélectionnez l’adresse IP** dans **le** menu déroulant de la barre de recherche.
 2. Entrez l’adresse IP dans le **champ** Recherche.
-3. Cliquez sur l’icône de recherche ou appuyez sur **Entrée.**
+3. Cliquez sur l’icône de recherche ou appuyez sur **Entrée**.
 
 Des détails sur l’adresse IP sont affichés, notamment : les détails d’inscription (le cas contraire), les adresses IP inversées (par exemple, les domaines), la prévalence des appareils de l’organisation qui ont communiqué avec cette adresse IP (pendant la période sélectionnable) et les périphériques de l’organisation qui ont été observés pour communiquer avec cette adresse IP.
 
@@ -82,9 +80,9 @@ Des détails sur l’adresse IP sont affichés, notamment : les détails d’ins
 
 Utilisez les filtres de recherche pour définir les critères de recherche. Vous pouvez également utiliser la zone de recherche de chronologie pour filtrer les résultats affichés de tous les appareils de l’organisation observés en communication avec l’adresse IP, le fichier associé à la communication et la dernière date observée.
 
-En cliquant sur l’un des noms d’appareils, vous pouvez continuer à examiner les alertes, comportements et événements signalés.
+Si vous cliquez sur l’un des noms d’appareils, vous pouvez continuer à examiner les alertes, comportements et événements signalés.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)

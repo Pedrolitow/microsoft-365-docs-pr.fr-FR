@@ -1,14 +1,12 @@
 ---
 title: Comprendre votre facture
-f1.keywords:
-- CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - MACBillingBillsPaymentsInvoices
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -16,19 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: Découvrez comment lire et comprendre votre facture pour les produits de productivité Microsoft.
-keywords: comptes de facturation, informations sur l’organisation, factures
 ms.date: 05/04/2021
-ms.openlocfilehash: 3f6eaef9e26578f759a64fdf55dfeb6882be2458
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: ce057a9a3fc72ab1ba818047112451f984894d99
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371267"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315804"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Comprendre votre facture
 
@@ -145,7 +142,7 @@ Les instructions de paiement dépendent de votre mode de paiement et sont dispon
 
 Le paiement anticipé Azure est disponible comme mode de paiement uniquement pour les produits et services Azure éligibles
 
-## <a name="need-help-contact-support"></a>Besoin d’aide ? Contacter le support technique
+## <a name="need-help-contact-support"></a>Vous avez besoin d’aide ? Contacter le support technique
 
 Si vous avez des questions ou si vous avez besoin d’aide relativement à vos crédits Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">créer une demande de support avec support Azure</a>.
 

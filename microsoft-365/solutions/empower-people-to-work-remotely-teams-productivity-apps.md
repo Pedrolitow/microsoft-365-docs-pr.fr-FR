@@ -2,8 +2,8 @@
 title: 'Étape 5 : déployer les applications et les services de productivité des travailleurs à distance'
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Permettez à vos utilisateurs d’être productifs grâce à Teams, Exchange, SharePoint et les autres services Microsoft 365.
-ms.openlocfilehash: 97a0342347d848a27a8402b5b8506536c95c55c9
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 31f3c25aa536dce42dfd3ee8677271f1523eb75a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886229"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312906"
 ---
 # <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>Étape 5 : déployer les applications et les services de productivité des travailleurs à distance
 

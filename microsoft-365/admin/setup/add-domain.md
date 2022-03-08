@@ -2,8 +2,8 @@
 title: Ajouter un domaine à Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Utilisez l’Assistant Installation pour ajouter votre domaine à Microsoft 365 dans le Centre d'administration Microsoft 365 en ajoutant un enregistrement DNS à votre hôte DNS.
-ms.openlocfilehash: eb58c8fc69a26157aa7dfb323be03efb81ef76bf
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: fa809486b968c4bc0f8c74e466285ee2ce9ac895
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766535"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321710"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Ajouter un domaine à Microsoft 365
 
@@ -44,7 +44,7 @@ ms.locfileid: "62766535"
 Pour ajouter, modifier ou supprimer des domaines, vous devez  être administrateur de  nom de domaine ou administrateur **général** d’un plan d’entreprise [ou d’entreprise](https://products.office.com/business/office). Ces modifications affectent l’ensemble du client . *Les administrateurs personnalisés* *ou les* utilisateurs réguliers ne pourront pas apporter ces modifications.
 
 > [!TIP]
-> Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de collaborer avec [un spécialiste microsoft des petites entreprises](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Business Assist, vous et vos employés accédez 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
+> Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de [collaborer avec un spécialiste des petites entreprises Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Aide aux entreprises, vos employés et vous avez accès 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
 
 ## <a name="watch-add-a-domain"></a>Regarder : Ajouter un domaine
 
@@ -83,7 +83,7 @@ Suivez ces étapes pour ajouter, configurer ou poursuivre la configuration d’u
     
 5. Choisissez la façon dont vous souhaitez vérifier que vous êtes propriétaire du domaine.
     
-    1. Si votre bureau d’enregistrement de domaines utilise [domain Connecter](#domain-connect-registrars-integrating-with-microsoft-365)[, Microsoft](../get-help-with-domains/domain-connect.md) configurera automatiquement vos enregistrements en vous connectant à votre bureau d’enregistrement et en confirmant la connexion à Microsoft 365. Vous serez renvoyé au Centre d’administration et Microsoft vérifiera ensuite automatiquement votre domaine.
+    1. Si votre bureau d’enregistrement de domaines utilise [domain Connecter](#domain-connect-registrars-integrating-with-microsoft-365)[, Microsoft](../get-help-with-domains/domain-connect.md) configurera vos enregistrements automatiquement en vous connectant à votre bureau d’enregistrement et en confirmant la connexion à Microsoft 365. Vous serez renvoyé au Centre d’administration et Microsoft vérifiera ensuite automatiquement votre domaine.
     2. Vous pouvez utiliser un enregistrement TXT pour vérifier votre domaine. Sélectionnez ceci et **sélectionnez Suivant** pour voir les instructions d’ajout de cet enregistrement DNS au site web de votre bureau d’enregistrement. La vérification peut prendre jusqu’à 30 minutes après l’ajout de l’enregistrement. 
     3. Vous pouvez ajouter un fichier texte au site web de votre domaine. Sélectionnez et téléchargez le .txt à partir de l’Assistant Installation, puis téléchargez le fichier dans le dossier de niveau supérieur de votre site web. Le chemin d’accès au fichier doit ressembler à : `http://mydomain.com/ms39978200.txt`. Nous vous confirmerons que vous êtes propriétaire du domaine en trouvant le fichier sur votre site web.
     
@@ -143,17 +143,17 @@ Dans l’Assistant, nous allons simplement confirmer que vous êtes propriétair
 
 ### <a name="what-happens-to-my-email-and-website"></a>Qu’advient-il de mon courrier électronique et de mon site web ?
 
-Une fois l’installation terminé, l’enregistrement MX de votre domaine est mis à jour pour pointer vers Microsoft 365 et tous les e-mails de votre domaine commenceront à Microsoft 365. Assurez-vous d’avoir ajouté des utilisateurs et de configurer des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui reçoit du courrier électronique sur votre domaine !
+Une fois que vous avez terminé l’installation, l’enregistrement MX de votre domaine est mis à jour pour pointer vers Microsoft 365 et tous les messages électroniques de votre domaine commenceront à Microsoft 365. Assurez-vous d’avoir ajouté des utilisateurs et de configurer des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui reçoit du courrier électronique sur votre domaine !
   
 Si vous avez un site web que vous utilisez dans le cadre de votre activité, il continuera à fonctionner là où il se trouve. Les étapes de Connecter domaine n’affectent pas votre site web.
 
-### <a name="add-an-onmicrosoftcom-domain"></a>Ajouter un domaine onmicrosoft.com domaine
+### <a name="add-an-onmicrosoftcom-domain"></a>Ajouter un onmicrosoft.com de domaine
 
 Chaque Microsoft 365 organisation peut avoir jusqu’à trois onmicrosoft.com domaines.
 
 > [!NOTE]
 > Vous devez être administrateur global ou administrateur de nom de domaine pour ajouter un domaine.
-> La création d’un domaine .onmicrosoft supplémentaire et son utilisation par défaut n’a pas pour résultat de renommer SharePoint Online. Pour apporter des modifications à votre domaine .onmicrosoft SharePoint, vous devez utiliser l’aperçu de changement de nom de domaine [SharePoint](/sharepoint/change-your-sharepoint-domain-name) (actuellement disponible pour tout client avec moins de 1 000 sites).
+> La création d’un domaine .onmicrosoft supplémentaire et son utilisation par défaut n’a pas pour résultat de renommer SharePoint Online. Pour apporter des modifications à votre domaine SharePoint .onmicrosoft, vous devez utiliser l’aperçu de changement de nom de domaine [SharePoint](/sharepoint/change-your-sharepoint-domain-name) (actuellement disponible pour tout client avec moins de 1 000 sites).
 > Si vous utilisez des services Microsoft 365 messagerie, la suppression de votre domaine .onmicrosoft initial n’est pas prise en charge.
 
 

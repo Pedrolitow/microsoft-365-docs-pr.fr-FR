@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 5382118753f3c865f6fceb7cd16a7a7953e7bfad
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 10ecf1f3906e7968328729257feea9c272562ffb
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767602"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322630"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour Point de terminaison sur Mac
 
@@ -31,6 +31,19 @@ ms.locfileid: "62767602"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1015950-20122021159500"></a>101.59.50 (20.122021.15950.0)
+
+- Cette version ajoute la prise en charge de macOS 12.3. À partir de macOS 12.3, [Apple supprime Python 2.7](https://developer.apple.com/documentation/macos-release-notes/macos-12_3-release-notes). Aucune version de Python n’est préinstallée sur macOS par défaut. **ACTION REQUISE** : 
+  - Les utilisateurs doivent mettre à jour Microsoft Defender pour Endpoint pour Mac vers la version 101.59.50 (ou version plus récente) avant de mettre à jour leurs appareils vers macOS Monterey 12.3 (ou version plus récente). Cette version minimale 101.59.50 est une condition préalable à l’élimination des problèmes liés à Python avec Microsoft Defender pour Endpoint pour Mac sur macOS Monterey.
+  - Pour les déploiements à distance, les configurations mdm existantes doivent être mises à jour vers Microsoft Defender pour Endpoint pour Mac version 101.59.50 (ou version plus récente). L’installation d’une version antérieure de Microsoft Defender pour Endpoint pour Mac vers macOS Monterey 12.3 (ou version plus récente) via la gestion des appareils de gestion des appareils de plateformes (MDM) entraîne un échec d’installation.
+
+## <a name="1015910-20122012159100"></a>101.59.10 (20.122012.15910.0)
+
+- L’outil en ligne de commande prend désormais en charge la restauration des fichiers mis en quarantaine à un emplacement autre que celui où le fichier a été détecté à l’origine. Cela peut être effectué par le biais `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`de .
+- Contrôle d’appareil étendu pour gérer les appareils connectés sur Thunderbolt 3
+- Amélioration de la gestion des stratégies de contrôle d’appareil contenant des ID de fournisseur et des ID de produit non valides. Avant cette version, si la stratégie contenait un ou plusieurs ID non valides, la stratégie entière était ignorée. À partir de cette version, seules les parties non valides de la stratégie sont ignorées. Les problèmes avec la stratégie sont faits surface via `mdatp device-control removable-media policy list`.
+- Correctifs de bogue
 
 ## <a name="1015662-20121122156620"></a>101.56.62 (20.121122.15662.0)
 
@@ -305,6 +318,6 @@ ms.locfileid: "62767602"
   > Le mécanisme d’octroi de ce consentement dépend de la façon dont vous avez déployé Microsoft Defender pour endpoint :
   >
   > - Pour les déploiements manuels, consultez les instructions mises à jour dans la [rubrique Déploiement](mac-install-manually.md#how-to-allow-full-disk-access) manuel.
-  > - Pour les déploiements gérés, consultez les instructions mises à jour dans les rubriques de déploiement [basé sur JAMF](mac-install-with-jamf.md) [Microsoft Intune de déploiement](mac-install-with-intune.md#create-system-configuration-profiles) basé sur les logiciels.
+  > - Pour les déploiements gérés, consultez les instructions mises à jour dans les rubriques sur le déploiement [basé sur JAMF](mac-install-with-jamf.md) [et Microsoft Intune](mac-install-with-intune.md#create-system-configuration-profiles) de déploiement basé sur jamf.
 
 - Améliorations des performances & résolutions de bogues

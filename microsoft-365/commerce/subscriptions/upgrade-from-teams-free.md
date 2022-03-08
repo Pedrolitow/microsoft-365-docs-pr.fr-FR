@@ -4,8 +4,8 @@ f1.keywords:
 - NOCSH
 - fwlink 2135143
 - India-only
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
@@ -21,12 +21,12 @@ search.appverid: MET150
 description: Découvrez comment mettre à niveau Microsoft Teams gratuit vers un nouvel abonnement Microsoft 365 entreprise.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/08/2020
-ms.openlocfilehash: 1382ec4e272b7bede184f47ebbaf64780907b40e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a767eb058490f35b58c2e9ab549539afc610a4e7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200628"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321360"
 ---
 # <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>Mise à niveau Microsoft Teams gratuite vers Microsoft 365 entreprise
 
@@ -35,7 +35,7 @@ ms.locfileid: "60200628"
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être un administrateur Microsoft Teams gratuite pour mettre à niveau une organisation Microsoft Teams gratuite. Vous êtes automatiquement un administrateur si vous avez créé l’Microsoft Teams gratuite.
+Vous devez être un administrateur Microsoft Teams gratuite pour mettre à niveau une Microsoft Teams gratuite. Vous êtes automatiquement un administrateur si vous avez créé l’Microsoft Teams gratuite.
 
 ## <a name="step-1-get-your-work-or-school-account-id"></a>Étape 1 : Obtenir votre ID de compte scolaire ou scolaire
 
@@ -49,7 +49,7 @@ Pour commencer le processus, obtenez votre ID de compte scolaire ou scolaire ou 
 
 Une fois que vous avez le compte scolaire ou scolaire sous-jacent pour votre organisation Microsoft Teams gratuite, vous devez réinitialiser le mot de passe du compte.
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>. When prompted to sign in, choose **Forgot my password**.
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>. When prompted to sign in, choose **Forgot my password**.
 2. Terminez la procédure de réinitialisation du mot de passe à l’aide du compte scolaire ou scolaire sous-jacent (celui se terminant par *.onmicrosoft.com*).
 3. Effectuer les étapes de vérification. Vous recevrez un courrier électronique avec un code à utiliser pour définir un nouveau mot de passe.
 4. Entrez le code pour terminer le processus de vérification.
@@ -62,17 +62,17 @@ Utilisez le compte scolaire ou scolaire sous-jacent que vous avez récupéré et
 2. Recherchez le Microsoft 365 produit pour les entreprises que vous souhaitez acheter.
     > [!IMPORTANT]
     > N’oubliez pas d’en choisir une qui inclut Microsoft Teams.
-3. Terminez l’achat. N’oubliez pas d’acheter suffisamment de licences pour tous les utilisateurs de votre organisation Microsoft Teams gratuite que vous souhaitez déplacer vers Microsoft 365 entreprise.
+3. Terminez l’achat. N’oubliez pas d’acheter suffisamment de licences pour tous les utilisateurs de votre organisation Microsoft Teams gratuite qui vous souhaitez passer à Microsoft 365 entreprise.
 
 ## <a name="step-4-assign-new-licenses-to-users"></a>Étape 4 : Attribuer de nouvelles licences aux utilisateurs
 
 Maintenant que vous avez un nouvel abonnement Microsoft 365 entreprise, vous pouvez attribuer des licences aux utilisateurs existants dans votre Microsoft Teams gratuite.
 
-1. Dans le Centre d’administration, allez à **Utilisateurs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actifs.**</a>
-2. Sélectionnez les utilisateurs auxquels vous souhaitez attribuer des licences Microsoft 365 pour les entreprises, puis sélectionnez Gérer **les licences de produits.**
-3. Dans le **volet Gérer les licences de** produits, **sélectionnez Remplacer les attributions de licence existantes.**
-4. Dans le volet Remplacer **les** produits existants, recherchez le produit Microsoft 365 entreprise que vous avez acheté, puis basculez le bouton bascule sur **Sur**.
-5. Sélectionnez **Remplacer,** puis **Fermez.**
+1. Dans le centre d’administration, allez à **Utilisateurs** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actif**</a>.
+2. Sélectionnez les utilisateurs auxquels vous souhaitez attribuer Microsoft 365 licences pour les entreprises, puis sélectionnez Gérer **les licences de produits**.
+3. Dans le **volet Gérer les licences de** produits, **sélectionnez Remplacer les attributions de licence existantes**.
+4. Dans le **volet Remplacer les** produits existants, recherchez le produit Microsoft 365 entreprise que vous avez acheté, puis basculez le bouton bascule sur **Sur**.
+5. **Sélectionnez Remplacer**, puis **Fermer**.
 
 ## <a name="related-content"></a>Contenu associé
 

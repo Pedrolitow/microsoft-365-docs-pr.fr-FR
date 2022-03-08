@@ -44,8 +44,14 @@
           items:
             - name: Vue d’ensemble du tunneling fractionné VPN
               href: microsoft-365-vpn-split-tunnel.md
+            - name: Scénarios courants de tunneling fractionné VPN
+              href: microsoft-365-vpn-common-scenarios.md
             - name: Implémentation du tunneling fractionné VPN
               href: microsoft-365-vpn-implement-split-tunnel.md
+            - name: Sécurisation du trafic multimédia Teams pour le tunneling fractionné VPN
+              href: microsoft-365-vpn-securing-teams.md
+            - name: Diffuser des événements en continu et en direct dans des environnements VPN
+              href: microsoft-365-vpn-stream-and-live-events.md
             - name: Optimisation de Microsoft 365 pour les utilisateurs de Chine
               href: microsoft-365-networking-china.md
             - name: Optimiser le trafic Microsoft 365 pour les travailleurs distants avec le client VPN Windows 10 natif
@@ -148,7 +154,7 @@
                   href: upgrade-from-office-2010-servers-and-products.md
                 - name: Version d’Office 2010 pour le bureau
                   href: /DeployOffice/endofsupport/office-2010-end-support-roadmap
-                - name: Exchange 2010
+                - name: "Exchange\_2010"
                   href: exchange-2010-end-of-support.md
                 - name: SharePoint 2010
                   href: upgrade-from-sharepoint-2010.md
@@ -182,6 +188,8 @@
               href: microsoft-365-mailbox-utilization-service-alerts.md
             - name: Alertes de service pour les retards de source MRS
               href: microsoft-365-mrs-source-delays-service-alerts.md
+            - name: Alertes de service pour les messages en file d’attente pour les destinataires externes
+              href: microsoft-365-external-recipient-service-alerts.md
         - name: Guides de configuration
           href: setup-guides-for-microsoft-365.md
     - name: Plusieurs clients
@@ -362,7 +370,7 @@
               href: upgrade-from-office-2010-servers-and-products.md
             - name: Version d’Office 2010 pour le bureau
               href: /DeployOffice/office-2010-end-support-roadmap
-            - name: Exchange 2010
+            - name: "Exchange\_2010"
               href: exchange-2010-end-of-support.md
             - name: SharePoint 2010
               href: upgrade-from-sharepoint-2010.md
@@ -394,7 +402,7 @@
       items:
         - name: Préparez-vous
           href: configure-services-and-applications.md
-        - name: Exchange Online
+        - name: "Exchange\_Online"
           href: /Exchange/exchange-online
         - name: SharePoint
           href: /sharepoint/sharepoint-online
@@ -416,7 +424,7 @@
           href: view-service-health.md
         - name: Options de support
           href: ../admin/get-help-support.md
-        - name: Exchange Online
+        - name: "Exchange\_Online"
           href: /Exchange/exchange-online
         - name: SharePoint
           href: 'https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a'
@@ -447,7 +455,7 @@
               href: /ProjectOnline/tune-project-online-performance
             - name: Planification de résolution des problèmes de performances
               href: performance-troubleshooting-plan.md
-- name: "Windows\_10"
+- name: Windows 10
   items:
     - name: Comment vérifier l’état de la version
       href: /windows/deployment/update/check-release-health

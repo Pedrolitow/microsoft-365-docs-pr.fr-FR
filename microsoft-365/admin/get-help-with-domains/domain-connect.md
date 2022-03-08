@@ -2,8 +2,8 @@
 title: Utilisation du domaine Connecter
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
 description: Découvrez comment travailler avec les bureaux d’Connecter bureaux d’enregistrement activés et ajouter votre domaine à Microsoft 365.
-ms.openlocfilehash: 6203292332d895d99131c4ab324fc342da9aaeed
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1691d86ebd459ee69faca8d3a21d99b0caa89fca
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164787"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316910"
 ---
 # <a name="using-domain-connect"></a>Utilisation du domaine Connecter
 
@@ -41,7 +41,7 @@ Dans l’Assistant, nous allons simplement confirmer que vous êtes propriétair
 
 ## <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Intégration Connecter bureaux d’enregistrement de domaines Microsoft 365
 
-- [1 &amp; 1 IONOS](https://www.1and1.com/)
+- [11&amp; IONOS](https://www.1and1.com/)
 - [123Reg](https://www.123-reg.co.uk/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress](https://wordpress.com/)
@@ -49,10 +49,10 @@ Dans l’Assistant, nous allons simplement confirmer que vous êtes propriétair
 - [MediaTemple](https://mediatemple.net/)
 - SecureServer ou WildWestDomains (revendeurs GoDaddy utilisant l’hébergement DNS SecureServer)
   - [Hébergement web MadDog](https://maddogwebhosting.com/domains/)
-  - [SondesNames](https://www.cheapnames.com)
+  - [NamesDesSerrables](https://www.cheapnames.com)
 
-## <a name="what-happens-to-my-email-and-website"></a>Qu’arrive-t-il à mon courrier électronique et mon site web ?
+## <a name="what-happens-to-my-email-and-website"></a>Qu’advient-il de mon courrier électronique et de mon site web ?
 
-Une fois l’installation terminé, l’enregistrement MX de votre domaine est mis à jour pour pointer vers Microsoft 365 et tous les e-mails de votre domaine commenceront à Microsoft 365. Assurez-vous d’avoir ajouté des utilisateurs et de configurer des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui reçoit du courrier électronique sur votre domaine !
+Une fois que vous avez terminé l’installation, l’enregistrement MX de votre domaine est mis à jour pour pointer vers Microsoft 365 et tous les messages électroniques de votre domaine commenceront à Microsoft 365. Assurez-vous d’avoir ajouté des utilisateurs et de configurer des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui reçoit du courrier électronique sur votre domaine !
 
 Si vous avez un site web que vous utilisez dans le cadre de votre activité, il continuera à fonctionner là où il se trouve. Les étapes de Connecter domaine n’affectent pas votre site web.

@@ -15,24 +15,21 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse
 search.appverid: MET150
-description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment bloquer la signature utilisateur.
-ms.openlocfilehash: 6fbdad9849b27e60243ace59651b9e5211829a68
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment bloquer un compte d’utilisateur si vous pensez qu’il est compromis afin que les utilisateurs ne peuvent pas se connecter.
+ms.openlocfilehash: be9089ef8c3a86b68ce5370d28a6e9be4472cce0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242096"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320842"
 ---
 # <a name="block-user-sign-in"></a>Bloquer la connectez-vous de l’utilisateur
 
-> [!NOTE]
-> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences.](m365-lighthouse-requirements.md) Si votre organisation n’a pas Microsoft 365 Lighthouse, [consultez s’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
-
-Vous pouvez bloquer un compte d’utilisateur si vous pensez qu’il est compromis. Lorsque vous bloquez quelqu’un, cela empêche immédiatement quiconque de se signer sur ce compte. S’ils sont signés, ils sont automatiquement services Microsoft 60 minutes. Cela n’empêche pas le compte de recevoir des messages et ne supprime aucune donnée.
+Vous pouvez bloquer un compte d’utilisateur si vous pensez qu’il est compromis. Lorsque vous bloquez un compte d’utilisateur, il empêche immédiatement toute personne de se signer sur ce compte. Si un utilisateur tente de se connecter, il se connecte automatiquement à tous les services Microsoft 365 dans un délai de 60 minutes. Le blocage d’un compte d’utilisateur ne supprime aucune donnée et n’empêche pas le compte de recevoir des messages électroniques.
 
 ## <a name="block-sign-in-for-a-user"></a>Bloquer la sign-in pour un utilisateur
 
-1. Dans le volet de navigation de gauche de l’écran, sélectionnez **Utilisateurs.**
+1. Dans le volet de navigation gauche de l’écran, sélectionnez **Utilisateurs**.
 
 2. Sélectionnez **l’onglet Utilisateurs de** la recherche.
 
@@ -40,23 +37,23 @@ Vous pouvez bloquer un compte d’utilisateur si vous pensez qu’il est comprom
 
 4. Dans la liste des résultats de la recherche, sélectionnez l’utilisateur.
 
-5. Dans le volet d’informations de l’utilisateur, **sélectionnez Bloquer la signature.**
+5. Dans le volet d’informations de l’utilisateur, sélectionnez **Bloquer la signature**.
 
-6. Dans le volet Gérer l’état de la signature, sélectionnez Empêcher **les utilisateurs de se connecter.**
+6. Dans le volet Gérer l’état de la signature, sélectionnez Empêcher **les utilisateurs de se connecter**.
 
 7. Sélectionnez **Enregistrer**.
 
-## <a name="block-risky-users"></a>Bloquer les utilisateurs à risque
+## <a name="block-sign-in-for-risky-users"></a>Bloquer la sign-in pour les utilisateurs à risque
 
-1. Dans le volet de navigation de gauche de l’écran, sélectionnez **Utilisateurs.**
+1. Dans le volet de navigation gauche de l’écran, sélectionnez **Utilisateurs**.
 
 2. Sélectionnez **l’onglet Utilisateurs à** risque.
 
-3. Sélectionnez l’utilisateur à risque dans la liste.
+3. Sélectionnez un utilisateur à risque dans la liste.
 
-4. Dans le volet d’informations de l’utilisateur, **sélectionnez Bloquer la signature.**
+4. Dans le volet d’informations de l’utilisateur, sélectionnez **Bloquer la signature**.
 
-5. Dans le volet Gérer l’état de la signature, sélectionnez Empêcher **les utilisateurs de se connecter.**
+5. Dans le volet Gérer l’état de la signature, sélectionnez Empêcher **les utilisateurs de se connecter**.
 
 6. Cliquez sur **Enregistrer**.
 

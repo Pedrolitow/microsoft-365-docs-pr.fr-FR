@@ -36,9 +36,9 @@
       items:
         - name: Présentation
           href: eval-overview.md
-        - name: Créer l’environnement d’évaluation
+        - name: Étape 1. Créer l’environnement d’évaluation
           href: eval-create-eval-environment.md
-        - name: Defender pour l’identité
+        - name: Étape 2. Defender pour l’identité
           items:
             - name: Présentation
               href: eval-defender-identity-overview.md
@@ -48,7 +48,7 @@
               href: eval-defender-identity-enable-eval.md
             - name: Pilote Defender pour Identity
               href: eval-defender-identity-pilot.md
-        - name: Defender pour Office 365
+        - name: "Étape\_3. Defender pour Office 365"
           items:
             - name: Présentation
               href: eval-defender-office-365-overview.md
@@ -58,7 +58,7 @@
               href: eval-defender-office-365-enable-eval.md
             - name: Pilote Defender pour Office
               href: eval-defender-office-365-pilot.md
-        - name: Defender pour point de terminaison
+        - name: "Étape\_4. Defender pour point de terminaison"
           items:
             - name: Présentation
               href: eval-defender-endpoint-overview.md
@@ -68,7 +68,7 @@
               href: eval-defender-endpoint-enable-eval.md
             - name: Pilote Defender pour point de terminaison
               href: eval-defender-endpoint-pilot.md
-        - name: Microsoft Defender for Cloud Apps
+        - name: Étape 5. Microsoft Defender for Cloud Apps
           items:
             - name: Présentation
               href: eval-defender-mcas-overview.md
@@ -78,7 +78,7 @@
               href: eval-defender-mcas-enable-eval.md
             - name: Pilote Microsoft Defender for Cloud Apps
               href: eval-defender-mcas-pilot.md
-        - name: Examiner et répondre
+        - name: Étape 6. Examiner et répondre
           items:
             - name: Présentation
               href: eval-defender-investigate-respond.md
@@ -86,7 +86,7 @@
               href: eval-defender-investigate-respond-simulate-attack.md
             - name: Essayer les fonctionnalités
               href: eval-defender-investigate-respond-additional.md
-        - name: Promouvoir la version d’évaluation en production
+        - name: Étape 7. Promouvoir la version d’évaluation en production
           href: eval-defender-promote-to-production.md
     - name: Prise en main
       items:

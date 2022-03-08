@@ -4,45 +4,43 @@
       href: index.md
     - name: "Obtenir Microsoft\_365 Business Premium"
       href: get-microsoft-365-business-premium.md
-    - name: Obtenir Microsoft 365 pour les campagnes
+    - name: Obtenir des Microsoft 365 campagnes
       href: get-microsoft-365-campaigns.md
-    - name: Comment Microsoft 365 protège vos données
-      href: m365-campaigns-users.md
-- name: Configuration et connexion
+    - name: Comment Microsoft 365 protection de votre organisation
+      href: m365bp-secure-users.md
+- name: Configurer et se connecter
   items:
-    - name: Vue d’ensemble
-      href: microsoft-365-campaigns-setup-overview.md
-    - name: S’inscrire
-      href: m365-campaigns-sign-up.md
-    - name: Configurer
-      href: ../business/set-up.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-    - name: Se connecter
-      href: m365-campaigns-sign-in.md
-    - name: Personnaliser la page de connexion
-      href: m365-customize-sign-in.md
-    - name: Ajout d’utilisateurs
-      href: ../admin/add-users/add-users.md?bc=%2fmicrosoft-365%2fcampaigns%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json
+    - name: Configurer Microsoft 365 Business Premium
+      href: m365bp-setup.md
+    - name: Configurer des Microsoft 365 campagnes
+      items:
+        - name: Vue d’ensemble
+          href: microsoft-365-campaigns-setup-overview.md
+        - name: S’inscrire
+          href: m365-campaigns-sign-up.md
+        - name: Se connecter
+          href: m365-campaigns-sign-in.md
+        - name: Personnaliser la page de connexion
+          href: m365-customize-sign-in.md
 - name: Renforcement de la protection de sécurité
   items:
-    - name: Vue d’ensemble
-      href: m365-campaigns-security-overview.md
     - name: Protéger les comptes d’administrateur
-      href: m365-campaigns-protect-admin-accounts.md
-    - name: Protéger l’accès à vos données
-      href: m365-campaigns-conditional-access.md
+      href: m365bp-protect-admin-accounts.md
+    - name: Activer les paramètres de sécurité par défaut
+      href: m365bp-conditional-access.md
     - name: Se protéger contre les programmes malveillants et les autres menaces
-      href: m365-campaigns-increase-protection.md
-- name: Configuration des appareils pour tous les membres du personnel
+      href: m365bp-increase-protection.md
+- name: Configurer les appareils
   items:
-    - name: Configurez l’authentification multifacteur.
-      href: m365-campaigns-multifactor-authentication.md
-    - name: Configurer des appareils mobiles
-      href: ../business/set-up-mobile-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-    - name: Protéger les PC et les Mac
-      href: m365-campaigns-protect-pcs-macs.md
+    - name: Configurez l’authentification multi-facteurs.
+      href: m365bp-multifactor-authentication.md
     - name: Configuration des appareils Windows gérés
       href: ../business/set-up-windows-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-- name: Protéger le courrier électronique pour tous les membres du personnel
+    - name: Configurer des appareils mobiles
+      href: ../business/set-up-mobile-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Protéger les PC et Mac nonmanagés
+      href: m365bp-protect-pcs-macs.md
+- name: Protéger les e-mails
   items:
     - name: Se protéger contre le hameçonnage et les autres attaques
       href: m365-campaigns-phishing-and-attacks.md
@@ -58,9 +56,9 @@
       href: share-files-and-videos.md
     - name: Créer un site de communication pour votre organisation
       href: create-communications-site.md
-- name: Réinitialiser ou supprimer des données de campagnes marketing sur des appareils
+- name: Réinitialiser ou supprimer des données des appareils
   items:
-    - name: Supprimer les données d’une campagne ou d’une entreprise
+    - name: Supprimer des données des appareils
       href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Rétablissement des paramètres d’usine des appareils
       href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
@@ -68,3 +66,7 @@
   items:
     - name: Répondre à un compte de messagerie compromis
       href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+- name: Référence
+  items:
+    - name: Microsoft Defender pour les PME
+      href: ../security/defender-business/index.yml

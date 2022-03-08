@@ -2,8 +2,8 @@
 title: Paiement de votre abonnement avec un profil de facturation
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,16 +16,16 @@ ms.collection:
 search.appverid: MET150
 description: Découvrez les options de paiement disponibles pour payer votre abonnement avec un profil de facturation.
 ms.custom:
+- commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 ms.date: 10/29/2021
-ms.openlocfilehash: 8e7e53ae188a8b91dbe6ceb1d6db79997348e134
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 42b0852e61e81228d1094bad575e6439c3c77745
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354647"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321528"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Comment payer votre abonnement avec un profil de facturation
 
@@ -51,7 +51,7 @@ Pour disposer de cette option, vous devez :
 
 Si une vérification du crédit est nécessaire, vous en êtes informé lors de l'achat de votre abonnement. Si vous acceptez d'être contacté, vous recevez un courriel contenant de plus amples informations sur la demande d'approbation de crédit. Les vérifications de crédit sont généralement effectuées dans les deux jours ouvrables.
 
-Si votre profil de facturation est dosé par une facture, vous recevez un e-mail lorsque votre relevé de facturation est prêt à être consulté. Cet e-mail ne contient pas de copie de votre relevé de facturation. Toutefois, vous pouvez choisir de recevoir les factures de votre organisation en tant que [pièces jointes.](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments) Votre relevé de facturation inclut des détails sur vos modes de paiement ainsi que la destination. Si vous entrez un numéro de bon de commande dans votre profil de facturation, le numéro apparaît sur votre relevé de facturation. Pour plus d’informations sur l’accès à vos relevés de facturation, reportez-vous à [Consulter votre facture](view-your-bill-or-invoice.md).
+Si votre profil de facturation est dosé par une facture, vous recevez un e-mail lorsque votre relevé de facturation est prêt à être consulté. Cet e-mail ne contient pas de copie de votre relevé de facturation. Toutefois, vous pouvez choisir de [recevoir les factures de votre organisation en tant que pièces jointes](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). Votre relevé de facturation inclut des détails sur vos modes de paiement ainsi que la destination. Si vous entrez un numéro de bon de commande dans votre profil de facturation, le numéro apparaît sur votre relevé de facturation. Pour plus d’informations sur l’accès à vos relevés de facturation, reportez-vous à [Consulter votre facture](view-your-bill-or-invoice.md).
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>Où envoyer mon chèque ou mon paiement par TEF ?
 

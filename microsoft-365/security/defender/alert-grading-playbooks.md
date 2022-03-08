@@ -1,5 +1,5 @@
 ---
-title: Manuels de notation des alertes
+title: Playbooks de notation d’alerte
 description: Examinez les alertes pour les attaques connues et prenez les mesures recommandées pour corriger l’attaque et protéger votre réseau.
 keywords: incidents, alertes, examiner, analyser, réponse, corrélation, attaque, ordinateurs, appareils, utilisateurs, identités, identité, boîte aux lettres, courrier électronique, 365, microsoft, m365
 search.appverid: met150
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,14 +23,14 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: fe0beb88cf613a5a966fc0534dfa4def715e81d2
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 129a4f2efd9a47c09535be3ba0f56504f3da697c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62355149"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328006"
 ---
-# <a name="alert-grading-playbooks"></a>Manuels de notation des alertes
+# <a name="alert-grading-playbooks"></a>Playbooks de notation d’alerte
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -48,7 +48,7 @@ En tant qu’analyste du Centre d’opérations de sécurité ou de recherche su
 >Vous pouvez fournir des commentaires à Microsoft sur les alertes vraies positives et fausses positives, non seulement à la fin de l’enquête, mais également pendant le processus d’examen. Cela peut aider Microsoft à analyser et à classificationr ultérieurement les événements de sécurité.
 >
 
-## <a name="microsoft-defender-for-office-365"></a>Microsoft Defender pour Office 365
+## <a name="microsoft-defender-for-office-365"></a>Microsoft Defender pour Office 365
 
 [Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration. Defender pour Office 365 inclut :
 
@@ -91,12 +91,12 @@ Les alertes Defender pour les applications cloud peuvent être classées comme :
 - Vrai positif non positif (B-TP) pour les activités suspectes mais non malveillantes, telles qu’un test de pénétration ou toute autre action suspecte autorisée. 
 - FP pour les activités non malveillantes confirmées.
 
-## <a name="alert-grading-playbooks"></a>Manuels de notation des alertes
+## <a name="alert-grading-playbooks"></a>Playbooks de notation d’alerte
 
 Consultez ces manuels pour obtenir la procédure à suivre pour obtenir une note plus rapide des alertes pour les menaces suivantes :
 
 - [Activité suspecte de transfert d’e-mail](alert-grading-playbook-email-forwarding.md)
 - [Règles de manipulation de la boîte de réception suspectes](alert-grading-playbook-inbox-manipulation-rules.md)
-- [Règles de forwarding de boîte de réception suspectes](alert-grading-playbook-inbox-forwarding-rules.md)
+- [Règle de transfert de boîte de réception suspect](alert-grading-playbook-inbox-forwarding-rules.md)
 
 Voir [Examiner les alertes](investigate-alerts.md) pour plus d’informations sur la façon d’examiner les alertes à l’Microsoft 365 Defender portail.

@@ -7,8 +7,8 @@ ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 ms.date: 11/24/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 547356fadc05c2359b4c6cd639bc22110bf8be93
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 31b2a7b41c26bdba22e6f364e517471e31e9115c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346277"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313018"
 ---
 # <a name="overview-of-automated-investigations"></a>Vue d’ensemble des enquêtes automatisées
 
@@ -84,7 +84,10 @@ Toutes les actions de correction, en attente ou terminées, sont suivis dans le 
 
 ## <a name="requirements-for-air"></a>Conditions requises pour AIR
 
-Votre organisation doit avoir Defender pour le point de terminaison (voir [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md).
+Votre organisation doit avoir Defender pour le point de terminaison (voir [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md)).
+
+> [!NOTE]
+> L’examen et la réponse automatisés Antivirus Microsoft Defender pour s’exécute en mode passif ou actif. Si Antivirus Microsoft Defender est désactivé ou désinstallé, l’examen et la réponse automatisés ne fonctionnent pas correctement.
 
 Actuellement, AIR prend uniquement en charge les versions de système d’exploitation suivantes :
 
@@ -93,11 +96,11 @@ Actuellement, AIR prend uniquement en charge les versions de système d’exploi
 - Windows Server 2019
 - Windows Server 2022
 - Windows 10, version 1709 (os Build 16299.1085 avec [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) ou version ultérieure
-- Windows 10, version 1803 (os build 17134.704 avec [KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) ou version ultérieure
+- Windows 10 version 1803 (os Build 17134.704 avec [KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) ou version ultérieure
 - Windows 10, version [1803 ou](/windows/release-information/status-windows-10-1809-and-windows-server-2019) ultérieure
 - Windows 11
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [En savoir plus sur les niveaux d’automatisation](automation-levels.md)
 - [Consultez le guide interactif : Examiner et corriger les menaces avec Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)

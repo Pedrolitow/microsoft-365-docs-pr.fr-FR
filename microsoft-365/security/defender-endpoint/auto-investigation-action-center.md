@@ -6,8 +6,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,16 +19,16 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: 2432b01e574e72b7163b1571d1e476bb9a807d30
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 7c300a6d66ae67d481b61a0a35101a0472031266
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170331"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327684"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Visitez le centre de mise en œuvre pour voir les actions de correction
 
-Pendant et après un examen automatisé, les actions de correction des détections de menaces sont identifiées. Selon la menace particulière et la façon dont [Microsoft Defender pour le](/windows/security/threat-protection) point de terminaison est configuré pour votre organisation, certaines actions de correction sont prises automatiquement et d’autres nécessitent une approbation. Si vous faites partie de l’équipe des opérations de sécurité de votre organisation, vous pouvez afficher les [actions](manage-auto-investigation.md#remediation-actions) de correction en attente et terminées dans le centre **de actions.**
+Pendant et après un examen automatisé, les actions de correction des détections de menaces sont identifiées. Selon la menace particulière et la façon dont [Microsoft Defender pour le](/windows/security/threat-protection) point de terminaison est configuré pour votre organisation, certaines actions de correction sont prises automatiquement et d’autres nécessitent une approbation. Si vous faites partie de l’équipe des opérations de sécurité de votre organisation, vous pouvez afficher les [actions](manage-auto-investigation.md#remediation-actions) de correction en attente et terminées dans le centre **de actions**.
 
 
 **S’applique à :**
@@ -38,7 +38,7 @@ Pendant et après un examen automatisé, les actions de correction des détectio
 ## <a name="new-a-unified-action-center"></a>(NOUVEAU!) Un centre de l’action unifié
 
 
-Nous sommes heureux d’annoncer un nouveau centre de travail unifié ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) )!
+Nous sommes heureux d’annoncer un nouveau centre de l’action unifié ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center))!
 
 :::image type="content" source="images/mde-action-center-unified.png" alt-text="Centre de actions dans le portail Microsoft 365 Defender web.":::
 
@@ -46,9 +46,9 @@ Le tableau suivant compare le nouveau centre de l’action unifié au centre de 
 
 |Nouveau centre de l’action unifié  |Centre de l’action précédent  |
 |---------|---------|
-|Répertorie les actions en attente et terminées pour les appareils et le courrier électronique dans un seul emplacement <br/>([Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md) plus Microsoft Defender pour [Office 365](/microsoft-365/security/office-365-security/office-365-atp))|Répertorie les actions en attente et terminées pour les appareils <br/> ([Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md) uniquement)   |
+|Répertorie les actions en attente et terminées pour les appareils et le courrier électronique dans un seul emplacement <br/>([Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md) et [Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/office-365-atp))|Répertorie les actions en attente et terminées pour les appareils <br/> ([Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md) uniquement)   |
 |Se trouve à l’emplacement :<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |Se trouve à l’emplacement :<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
-| Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>choisissez **Centre de l’action.** <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Navigation vers le centre de actions dans le portail Microsoft 365 Defender web."::: | Dans le portail Microsoft 365 Defender, choisissez **Centre d’action**  >  **enquêtes automatisées.** <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Navigation vers le centre de l’action à partir Microsoft 365 Defender portail.":::  |
+| Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender, sélectionnez</a> **Centre de l’action**. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Navigation vers le centre de actions dans le portail Microsoft 365 Defender web."::: | Dans le portail Microsoft 365 Defender, sélectionnez **Centre investigationsAction** >  **automatisé.** <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Navigation vers le centre de l’action à partir Microsoft 365 Defender portail.":::  |
 
 Le centre de mise en œuvre unifié regroupe les actions de correction dans Defender pour Le point de terminaison et Defender pour Office 365. Il définit un langage commun pour toutes les actions de correction et fournit une expérience d’examen unifiée.
 
@@ -59,21 +59,21 @@ Vous pouvez utiliser le centre de l’action unifiée si vous avez les autorisat
 - [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection)
 
 > [!TIP]
-> Pour en savoir plus, consultez [La réglementation requise.](/microsoft-365/security/mtp/prerequisites)
+> Pour plus d’informations, voir [Requirements](/microsoft-365/security/mtp/prerequisites).
 
 ## <a name="using-the-action-center"></a>Utilisation du centre de l’action
 
 Pour obtenir le centre de l’action unifiée dans le portail Microsoft 365 Defender amélioré :
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
-2. Dans le volet de navigation, sélectionnez **Centre de l’action.**
+2. Dans le volet de navigation, sélectionnez **Centre de l’action**.
 
-Lorsque vous visitez le centre de actions, vous voyez deux onglets : **Actions en attente et** **Historique.** Le tableau suivant récapitule ce que vous verrez sur chaque onglet :
+Lorsque vous visitez le centre de actions, vous voyez deux onglets : **Actions en attente et** **Historique**. Le tableau suivant récapitule ce que vous verrez sur chaque onglet :
 
 |Tab|Description|
 |---|---|
-|**Pending**|Affiche une liste d’actions qui nécessitent une attention particulière. Vous pouvez approuver ou rejeter des actions une par une, ou sélectionner plusieurs actions si elles ont le même type d’action (telles que le fichier **de mise en quarantaine).** <p> **CONSEIL**: veillez à examiner et à approuver [(ou rejeter)](manage-auto-investigation.md) les actions en attente dès que possible afin que vos enquêtes automatisées se terminent en temps voulu.|
-|**Historique**|Sert de journal d’audit pour les actions qui ont été entreprises, telles que : <ul><li>Mesures correctives prises à la suite d’enquêtes automatisées</li><li>Actions de correction approuvées par votre équipe des opérations de sécurité</li><li>Commandes qui ont été exécutés et actions de correction appliquées pendant les sessions Live Response</li><li>Mesures correctives prises par les fonctionnalités de protection contre les menaces dans Antivirus Microsoft Defender</li></ul> <p> Fournit un moyen d’annuler certaines actions (voir [Annuler les actions terminées).](manage-auto-investigation.md#undo-completed-actions)|
+|**Pending**|Affiche une liste d’actions qui nécessitent une attention particulière. Vous pouvez approuver ou rejeter des actions une par une, ou sélectionner plusieurs actions si elles ont le même type d’action (par exemple, un fichier **de mise en quarantaine**). <p> **CONSEIL** : veillez à examiner et à approuver (ou rejeter [) les actions](manage-auto-investigation.md) en attente dès que possible afin que vos enquêtes automatisées se terminent en temps voulu.|
+|**Historique**|Sert de journal d’audit pour les actions qui ont été entreprises, telles que : <ul><li>Mesures correctives prises à la suite d’enquêtes automatisées</li><li>Actions de correction approuvées par votre équipe des opérations de sécurité</li><li>Commandes qui ont été exécutés et actions de correction appliquées pendant les sessions Live Response</li><li>Mesures correctives prises par les fonctionnalités de protection contre les menaces dans Antivirus Microsoft Defender</li></ul> <p> Permet d’annuler certaines actions (voir [Annuler les actions terminées](manage-auto-investigation.md#undo-completed-actions)).|
 
 Vous pouvez personnaliser, trier, filtrer et exporter des données dans le centre de gestion de l’action.
 
@@ -84,9 +84,9 @@ Vous pouvez personnaliser, trier, filtrer et exporter des données dans le centr
 - Choisissez les colonnes que vous souhaitez afficher.
 - Spécifiez le nombre d’éléments à inclure sur chaque page de données.
 - Utilisez des filtres pour afficher uniquement les éléments que vous souhaitez voir.
-- Sélectionnez **Exporter** pour exporter les résultats vers .csv fichier.
+- **Sélectionnez Exporter** pour exporter les résultats vers .csv fichier.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Afficher et approuver des actions de correction](manage-auto-investigation.md)
 - [Consultez le guide interactif : Examiner et corriger les menaces avec Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)

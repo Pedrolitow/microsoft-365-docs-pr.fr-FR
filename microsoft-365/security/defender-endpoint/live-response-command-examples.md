@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c91c0c5afc449d2e8fdfc415fae83fcc2c913c6a
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 325146ba7ed40e27c50eaca490c70d3988b1198f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172318"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312641"
 ---
 # <a name="live-response-command-examples"></a>Exemples de commande Live response
 
@@ -34,7 +34,7 @@ ms.locfileid: "62172318"
 
 Découvrez les commandes courantes utilisées dans la réponse en direct et consultez des exemples sur la façon dont elles sont généralement utilisées.
 
-Selon le rôle que vous avez, vous pouvez exécuter des commandes de réponse en direct de base ou avancées. Pour plus d’informations sur les commandes de base et avancées, voir [Examiner les entités sur les appareils à l’aide de la réponse en direct.](live-response.md)
+Selon le rôle que vous avez, vous pouvez exécuter des commandes de réponse en direct de base ou avancées. Pour plus d’informations sur les commandes de base et avancées, voir [Examiner les entités sur les appareils à l’aide de la réponse en direct](live-response.md).
 
 ## `analyze`
 
@@ -117,7 +117,7 @@ getfile c:\Users\user\Desktop\work.txt -auto
 > - Fichiers vides
 > - Fichiers virtuels ou fichiers qui ne sont pas entièrement présents localement
 >
-> Ces types de *fichiers sont pris* en charge par [PowerShell.](/powershell/scripting/overview)
+> Ces types de *fichiers sont pris* en charge [par PowerShell](/powershell/scripting/overview).
 >
 > Utilisez PowerShell comme alternative si vous avez des problèmes à l’aide de cette commande à partir de Live Response.
 
@@ -180,7 +180,7 @@ registry HKEY_CURRENT_USER\Console
 ```
 
 ```console
-# Show information about a specific registry value
+# Show information about a specific registry value (the double backslash \\ indicates a registry value versus key)
 registry HKEY_CURRENT_USER\Console\\ScreenBufferSize
 ```
 
@@ -195,6 +195,11 @@ remediate file c:\Users\user\Desktop\malware.exe
 ```console
 # Remediate process with specific PID
 remediate process 7960
+```
+
+```console
+# Remediate a registry value (the double backslash \\ indicates a registry value versus key)
+remediate registry HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\\SPStartup
 ```
 
 ```console
@@ -216,8 +221,8 @@ run get-process-by-name.ps1 -parameters "-processName Registry"
 
 > [!NOTE]
 >
-> Pour les commandes de longue durée telles que «**exécuter**» ou «**getfile**» , vous pouvez utiliser le symbole ' ' à la fin de la commande pour effectuer cette action en arrière-plan. **&**
-> Cela vous permettra de continuer à examiner l’ordinateur et de revenir à la commande en arrière-plan lorsque vous avez terminé à l’aide de la commande de base «**fg** [».](live-response.md#basic-commands)
+> Pour les commandes de longue durée telles que « **exécuter** » ou « **getfile** » ,**&** vous pouvez utiliser le symbole « » à la fin de la commande pour effectuer cette action en arrière-plan.
+> Cela vous permettra de continuer à examiner l’ordinateur et de revenir à la commande en arrière-plan lorsque vous aurez terminé à l’aide de la commande [de base](live-response.md#basic-commands) « **fg** ».
 
 ## `scheduledtask`
 

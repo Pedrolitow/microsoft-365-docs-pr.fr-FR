@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment gérer les ensembles de révision afin de pouvoir analyser, interroger, afficher, baliser et exporter des données dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 16c6e8aa5f3cf278b90ab7fd338bcac203b7489a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a3aa836782dd464be2e62ca729efd85484c8aebf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206096"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315608"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>Gérer les ensembles de révision dans Advanced eDiscovery
 
@@ -40,11 +40,11 @@ Les ensembles de révision sont un ensemble statique de documents dans lequel vo
 
 ## <a name="create-a-review-set"></a>Créer un jeu à réviser
 
-Les ensembles de révision peuvent être créés sous l’onglet **Ensembles** de révision en cliquant **sur + Ajouter un jeu à réviser.**
+Vous pouvez créer des ensembles de révision sous l’onglet **Ensembles** de révision en cliquant **sur + Ajouter un jeu à réviser**.
 
 ![Ajouter un jeu à réviser.](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
-Dans la page **Ajouter un jeu à réviser,** tapez un nom pour le jeu à réviser, puis cliquez sur **Enregistrer.** Le nouvel ensemble de révision s’affiche dans la liste sous l’onglet **Ensembles de révision.**
+Dans la page **Ajouter un jeu à réviser** , tapez un nom pour le jeu à réviser, puis cliquez sur **Enregistrer**. Le nouvel ensemble de révision s’affiche dans la liste sous l’onglet **Ensembles de révision** .
 
 ![Nouvel ensemble de révision répertorié sous l’onglet Jeu à réviser.](../media/AeDnewreviewset.png)
 
@@ -57,3 +57,6 @@ Il existe trois façons différentes d’ajouter des données à un groupe de r�
 2. [Charger des données non-Microsoft 365 dans un groupe de révision](load-non-Office-365-data-into-a-review-set.md)
 
 3. [Ajouter des données à partir d’un groupe de révision à un autre groupe de révision.](add-data-to-review-set-from-another-review-set.md)
+
+> [!NOTE]
+> Vous ne pouvez pas supprimer des éléments d’un jeu à réviser et vous ne pouvez pas supprimer des ensembles de révision d’un cas. Pour supprimer un jeu à réviser (et supprimer les données qu’il inséraient), vous devez supprimer le Advanced eDiscovery cas où se trouve le jeu à réviser. Pour plus d’informations, consultez [Fermer ou supprimer un cas Advanced eDiscovery](close-or-delete-case.md).

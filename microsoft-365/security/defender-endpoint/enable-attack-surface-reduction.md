@@ -17,12 +17,12 @@ ms.topic: how-to
 ms.collection: m365solution-scenario
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: ec961261c798075e0e38b08a8c8952ca5c51b07b
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 9f5d721148bdbd70347868d8e237a8454b33c346
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766691"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312094"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
@@ -36,7 +36,7 @@ ms.locfileid: "62766691"
 
 [Les règles de réduction de la surface](attack-surface-reduction.md) d’attaque (règles de réduction de la surface d’attaque) permettent d’éviter les actions que les programmes malveillants abusent souvent pour compromettre les appareils et les réseaux.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Fonctionnalités de réduction de la surface d’attaque Windows versions
 
@@ -105,8 +105,8 @@ Les règles de la asr prise en charge des variables d’environnement et des car
    - Les règles de réduction de la surface d’attaque des profils suivants sont évaluées pour chaque appareil auquel les règles s’appliquent :
      - Les appareils > stratégie de configuration > profil endpoint protection > **Protection contre les attaques Microsoft Defender** >  [Réduction de la surface de](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules) attaque.
      - Sécurité des points de terminaison > **stratégie de réduction de** >  la surface d’attaque [Règles de réduction de la surface d’attaque](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune).
-     - La sécurité des points de terminaison > les lignes de base de sécurité > règles de réduction de [la surface BaselineAttack](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules) de  > **Microsoft Defender ATP**.
-   - Paramètres qui n’ont pas de conflits sont ajoutés à un sur-ensemble de stratégies pour l’appareil.
+     - La sécurité des points de terminaison > les lignes de base de sécurité > règles de réduction [de la surface BaselineAttack](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules) de  > **Microsoft Defender ATP**.
+   - Paramètres qui ne sont pas en conflit sont ajoutés à un sur-ensemble de stratégies pour l’appareil.
    - Lorsque plusieurs stratégies ont des paramètres en conflit, ces paramètres ne sont pas ajoutés à la stratégie combinée, tandis que les paramètres qui ne sont pas en conflit sont ajoutés à la stratégie de sur-ensemble qui s’applique à un appareil.
    - Seules les configurations de paramètres conflictuelles sont maintenues en arrière.
 
@@ -162,6 +162,7 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
 
    - Dans **Plateforme**, sélectionnez **Windows 10 et ultérieures**
    - Dans **le type de profil**, **sélectionnez Modèles**
+   - Si les règles de la récurrité de l’aspertorie sont déjà définies par le biais de la sécurité des points de terminaison, dans **le type** **de profil, sélectionnez Paramètres catalogue**.
 
    **Sélectionnez Personnalisé**, **puis Créer.**
 
@@ -285,7 +286,7 @@ Exemple :
 
 2. Dans l’**Éditeur de gestion des stratégies de groupe**, accédez à **Configuration ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** \>  \> **Protection contre les attaques Microsoft Defender réduction de la surface** **d’attaque**\>.
+3. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** \>  \> **Protection contre les attaques Microsoft Defender réduction de la** **surface d’attaque**\>.
 
 4. **Sélectionnez Configurer les règles de réduction de la surface d’attaque** et **Activer**. Vous pouvez ensuite définir l’état individuel de chaque règle dans la section Options. Sélectionnez **Afficher...** et entrez l’ID de  règle dans la colonne Nom de la valeur et  l’état choisi dans la colonne Valeur comme suit :
 
@@ -311,7 +312,7 @@ Exemple :
 > [!div class="mx-imgBorder"]
 > ![ASR enable "User Defined"](images/asr-user-defined.png)
 
-1. **Tapez powershell** dans le menu Démarrer, cliquez avec le **bouton droit sur Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**.
+1. **Tapez powershell** dans le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**.
 
 2. Tapez l’une des cmdlets suivantes. (Reportez-vous à [la référence des](attack-surface-reduction-rules-reference.md) règles de réduction de la surface d’attaque pour plus d’informations, telles que l’ID de règle.)
 

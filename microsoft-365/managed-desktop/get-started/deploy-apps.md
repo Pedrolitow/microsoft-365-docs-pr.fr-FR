@@ -1,7 +1,7 @@
 ---
 title: Déployer les applications sur les appareils
 description: Informations pour l’ajout et le déploiement d’applications sur Microsoft Manged Desktop appareils.
-keywords: 'Microsoft Manged Desktop, Microsoft 365, service, documentation, applications, applications métier, applications métier'
+keywords: Microsoft Manged Desktop, Microsoft 365, service, documentation, applications, applications métier, applications métier
 ms.service: m365-md
 author: tiaraquan
 ms.localizationpriority: medium
@@ -9,8 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
+ms.openlocfilehash: d0c8dbb71a56701cb5ca75aadb1a5bcc7290844f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323358"
 ---
-
 # <a name="deploy-apps-to-devices"></a>Déployer les applications sur les appareils
 
 Une partie de l’intégration à Microsoft Manged Desktop inclut l’ajout et le déploiement d’applications sur les appareils de vos utilisateurs. Une fois que vous utilisez le portail Microsoft Manged Desktop, vous pouvez ajouter et déployer vos applications.
@@ -31,7 +36,7 @@ Vous pouvez ajouter [Win32 ou Windows applications MSI](#lob-apps), ou [Microsof
 
 ### <a name="win32-or-windows-msi-based-apps-to-microsoft-managed-desktop"></a>Win32 ou Windows applications basées sur MSI pour Microsoft Manged Desktop
 
-Vous pouvez ajouter vos applications métier à votre Microsoft Manged Desktop web. Pour plus d’informations sur les conditions requises pour les applications installées Microsoft Manged Desktop appareils mobiles, voir [Microsoft Manged Desktop’application requise](../service-description/mmd-app-requirements.md).
+Vous pouvez ajouter vos applications métier à votre portail Microsoft Manged Desktop métier. Pour plus d’informations sur les conditions requises pour les applications installées Microsoft Manged Desktop appareils mobiles, voir [Microsoft Manged Desktop’application requise](../service-description/mmd-app-requirements.md).
 
 Dans cette procédure, vous allez sélectionner le type d’application que vous souhaitez ajouter, puis configurer et télécharger la source de l’application.
 
@@ -78,12 +83,12 @@ Microsoft Store ajoute l’application **à vos produits** pour votre organisati
 
 ## <a name="step-2-create-azure-ad-groups"></a>Étape 2 : Créer des groupes Azure AD groupes
 
-Créez trois Azure AD pour chaque application. Ce tableau présente les groupes dont vous aurez besoin (disponible, obligatoire et désinstallé).
+Créez trois Azure AD groupes pour chaque application. Ce tableau présente les groupes dont vous aurez besoin (disponible, obligatoire et désinstallé).
 
 Type d’affectation d’application | Utilisation de groupe | Exemple Azure AD nom |
 --- | --- | --- |
-Disponible |  L’application sera disponible à partir Portail d'entreprise application ou site web. | MMD – *nom de l’application* – Disponible |
-Obligatoire |  L’application est installée sur les appareils des groupes sélectionnés. | MMD – *nom de l’application* – Obligatoire |
+Disponible |  L’application sera disponible à partir de Portail d'entreprise’application ou du site web. | MMD – *nom de l’application* – Disponible |
+Requis |  L’application est installée sur les appareils des groupes sélectionnés. | MMD – *nom de l’application* – Obligatoire |
 Désinstaller |  L’application est désinstallée des appareils des groupes sélectionnés. | MMD – *nom de l’application* – Désinstaller |
 
 Ajoutez vos utilisateurs à ces groupes pour :
@@ -112,7 +117,7 @@ Ajoutez vos utilisateurs à ces groupes pour :
 1. Déployez et affectez le[Portail d’entreprise Intune](company-portal.md).
 1. [Attribuer des licences](assign-licenses.md).
 1. Déployer des applications (cet article).
-1. [Configurer les appareils](set-up-devices.md).
+1. [Préparez les appareils](prepare-devices.md).
 1. Configurez l’[Expérience de première exécution avec Autopilot et la page d’état d’inscription](esp-first-run.md).
 1. [Activer les fonctionnalités de support utilisateur](enable-support.md).
 1. [Préparez vos utilisateurs à utiliser des appareils](get-started-devices.md).

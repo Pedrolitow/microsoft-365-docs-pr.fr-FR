@@ -2,8 +2,8 @@
 title: Utiliser AllowSelfServicePurchase pour le module PowerShell MSCommerce
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: mijeffer, pablom
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_ssp
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Découvrez comment utiliser l’cmdlet AllowSelfServicePurchase PowerShell pour activer ou désactiver l’achat en libre-service.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 12/15/2021
-ms.openlocfilehash: ebe01b9ed55b13d1d61ae1a59dca3bdb6373f285
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: a3800f82386fafe509d9bdabb25cd91422cf058d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765779"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315720"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Utiliser AllowSelfServicePurchase pour le module PowerShell MSCommerce
 
@@ -38,7 +38,7 @@ Vous pouvez utiliser le module **PowerShell MSCommerce** pour :
 - Afficher la liste des produits applicables et si l’achat en libre-service est activé ou désactivé
 - Afficher ou modifier le paramètre actuel d’un produit spécifique pour l’activer ou le désactiver
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Pour utiliser le module **PowerShell MSCommerce** , vous devez :
 
@@ -65,7 +65,7 @@ Après avoir installé le module sur votre Windows 10, vous l’importez dans ch
 Import-Module -Name MSCommerce
 ```
 
-## <a name="connect-to-mscommerce-with-your-credentials"></a>Connecter MSCommerce avec vos informations d’identification
+## <a name="connect-to-mscommerce-with-your-credentials"></a>Connecter à MSCommerce avec vos informations d’identification
 
 Pour vous connecter au module PowerShell avec vos informations d’identification, exécutez la commande suivante.
 

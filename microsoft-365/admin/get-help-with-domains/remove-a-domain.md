@@ -2,8 +2,8 @@
 title: Supprimer un domaine
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,22 +24,22 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: Découvrez comment supprimer un ancien domaine d’Microsoft 365 et déplacer des utilisateurs et des groupes vers un autre domaine ou annuler votre abonnement.
-ms.openlocfilehash: 875858804912ab75d0a5a0bab45c9bb1614c82ca
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: Découvrez comment supprimer un ancien domaine de Microsoft 365 et déplacer des utilisateurs et des groupes vers un autre domaine ou annuler votre abonnement.
+ms.openlocfilehash: 3da47275e090296c9b192b4bd60ad19dd8cf4149
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765155"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316826"
 ---
 # <a name="remove-a-domain"></a>Supprimer un domaine
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez.
 
-Supprimez-vous votre domaine, car vous souhaitez l’ajouter à un autre plan Microsoft 365 abonnement ? Ou souhaitez-vous annuler votre abonnement ? Vous pouvez [modifier votre plan ou abonnement](../../commerce/subscriptions/switch-to-a-different-plan.md) ou [annuler votre abonnement](../../commerce/subscriptions/cancel-your-subscription.md).
+Supprimez-vous votre domaine car vous souhaitez l’ajouter à un autre plan d Microsoft 365 abonnement ? Ou souhaitez-vous annuler votre abonnement ? Vous pouvez [modifier votre plan ou abonnement](../../commerce/subscriptions/switch-to-a-different-plan.md) ou [annuler votre abonnement](../../commerce/subscriptions/cancel-your-subscription.md).
 
 > [!TIP]
-> Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de collaborer avec [un spécialiste microsoft des petites entreprises](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Business Assist, vous et vos employés accédez 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
+> Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de [collaborer avec un spécialiste des petites entreprises Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Aide aux entreprises, vos employés et vous avez accès 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
 
 ### <a name="step-1-move-users-to-another-domain"></a>Étape 1 : Déplacer des utilisateurs vers un autre domaine
 
@@ -115,6 +115,9 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 ::: moniker range="o365-worldwide"
 
+> [!NOTE]
+> Si vous supprimez un domaine personnalisé, [consultez supprimer un domaine personnalisé](#remove-a-custom-domain) avant de poursuivre.
+
 1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
 
 ::: moniker-end
@@ -130,6 +133,35 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 3. Dans le volet droit, sélectionnez **Supprimer**.
 
 4. Suivez les invites supplémentaires, puis sélectionnez **Fermer**.
+
+
+
+
+### <a name="remove-a-custom-domain"></a>Supprimer un domaine personnalisé
+
+Si vous annulez votre abonnement et que vous utilisez un domaine personnalisé, vous devez suivre quelques étapes supplémentaires avant de pouvoir annuler votre abonnement. 
+
+#### <a name="change-your-domain-nameserver-records-if-needed"></a>Modifiez les enregistrements du serveur de noms de votre domaine (si applicable)
+
+Si vous avez configuré un domaine personnalisé, vous avez ajouté des enregistrements DNS afin que le domaine fonctionne avec les services Microsoft 365. Avant de supprimer votre domaine, veillez à mettre à jour les enregistrements DNS, tels que de l'enregistrement MX de votre domaine, auprès de votre hôte DNS.
+
+Par exemple, modifiez l'enregistrement MX auprès de votre hôte DNS. Le courrier électronique envoyé à votre domaine n'arrive plus à votre adresse Microsoft, mais parvienne plutôt à votre nouveau fournisseur de courrier. (Un enregistrement MX détermine où le courrier destiné à votre domaine est envoyé).
+
+- Si vos enregistrements de serveur de noms (NS) [pointent vers des serveurs de noms Microsoft 365](../../admin/setup/add-domain.md), la modification de votre enregistrement MX reste sans effet jusqu’à ce que vous modifiez vos enregistrements NS de façon à ce qu'ils pointent vers votre nouvel hôte DNS (voir l'étape 2).
+
+- Avant de mettre à jour l’enregistrement MX, indiquez à vos utilisateurs la date de basculement de leur adresse électronique et le nouveau fournisseur de services de messagerie électronique. De même, si vos utilisateurs souhaitent déplacer leurs courriers Microsoft vers le nouveau fournisseur, des étapes supplémentaires peuvent s’ajouter.
+
+- Le jour où vous modifiez l’enregistrement MX, veillez à enregistrer vos données et à [désinstaller Office si nécessaire](/microsoft-365/commerce/subscriptions/cancel-your-subscription#uninstall-office-optional).[](/microsoft-365/commerce/subscriptions/cancel-your-subscription#save-your-data)
+
+#### <a name="update-your-domain-mx-and-other-dns-records-if-youre-using-a-custom-domain"></a>Mettre à jour l'enregistrement MX et les autres enregistrements DNS de votre domaine (si vous utilisez un domaine personnalisé)
+
+Si vous avez basculé vos enregistrements de serveur de noms (NS) vers Microsoft 365 lors de la configuration de votre domaine, vous devez configurer ou mettre à jour votre enregistrement MX et les autres enregistrements DNS auprès de l'hôte DNS que vous comptez utiliser, puis modifier votre enregistrement NS de façon à ce qu'il pointe vers cet hôte DNS.
+
+Si vous n'avez pas basculé les enregistrements NS lors de la configuration de votre domaine, lorsque vous modifiez l'enregistrement MX, votre courrier électronique commence immédiatement à parvenir à la nouvelle adresse.
+
+Pour modifier vos enregistrements NS, voir [Change nameservers to set up Microsoft 365 with any domain registrar](../../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
+
+
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>Combien de temps faut-il pour qu'un domaine soit supprimé ?
 

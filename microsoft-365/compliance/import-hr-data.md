@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-description: Les administrateurs peuvent configurer un connecteur de données pour importer les données des employés à partir du système des ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser des données RH dans les stratégies de gestion des risques internes pour vous aider à détecter les activités de certains utilisateurs qui peuvent poser une menace interne à votre organisation.
-ms.openlocfilehash: 31dd1ff904796c2ac59405a1e07e65f924d3ef88
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+description: Les administrateurs peuvent configurer un connecteur de données pour importer les données des employés à partir du système des ressources humaines (RH) de leur organisation Microsoft 365. Cela vous permet d’utiliser des données RH dans les stratégies de gestion des risques internes pour vous aider à détecter les activités de certains utilisateurs qui peuvent poser une menace interne à votre organisation.
+ms.openlocfilehash: 64822b8ea5952f4fb6787dfd7832879c2e84c2d4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271533"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320954"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurer un connecteur pour importer des données RH
 
@@ -37,7 +37,7 @@ La configuration d’un connecteur pour les données RH que les stratégies de g
 
 - Déterminez comment récupérer ou exporter les données à partir du système RH de votre organisation (et régulièrement) et ajoutez-les aux fichiers CSV que vous créez à l’étape 1. Le script que vous exécutez à l’étape 4 charge les données RH des fichiers CSV dans le cloud Microsoft.
 
-- Le rôle Importation/Exportation de boîte aux lettres doit être attribué à l’utilisateur qui crée le connecteur RH à l’étape 3 Exchange Online. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, [](/Exchange/permissions-exo/role-groups#create-role-groups) voir [les sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ».
+- Le rôle d’administrateur du connecteur de données doit être attribué à l’utilisateur qui crée le connecteur RH à l’étape 3. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le Centre de conformité Microsoft 365. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et conformité » dans Autorisations dans le Centre de sécurité [& conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le Centre de conformité Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - L’exemple de script que vous exécutez à l’étape 4 charge vos données RH dans le cloud Microsoft afin qu’elles soient utilisées par la solution de gestion des risques internes. Cet exemple de script n’est pas pris en charge dans le cadre d’un programme ou d’un service de support standard Microsoft. L’exemple de script est fourni tel quel, sans garantie d’aucune sorte. Microsoft Corporation décline aussi toute garantie implicite, y compris et sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. La totalité des risques découlant de l’utilisation ou de la performance de l’exemple de script et de la documentation repose sur vous. En aucun cas Microsoft, ses auteurs ou quiconque impliqué dans la création, la production ou la livraison des scripts ne sera responsable de tous dommages quels qu’ils soient (y compris, sans limitation, les dommages pour perte de profits, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
 
@@ -167,7 +167,7 @@ Le tableau suivant décrit chaque colonne du fichier CSV pour les données d’e
 ### <a name="csv-file-for-employee-profile-data-preview"></a>Fichier CSV pour les données de profil des employés (aperçu)
 
 > [!NOTE]
-> La possibilité de créer un connecteur RH pour les données de profil d’employé est en prévisualisation publique. Pour créer un connecteur RH qui prend en charge les données de profil d’employé, allez à la page **Connecteurs** de données dans le Centre de conformité Microsoft 365, sélectionnez l’onglet **Connecteurs**, puis cliquez sur Ajouter **un** >  **connecteurHR (prévisualisation).** Suivez les étapes pour créer un connecteur à [l’étape 3 : créez le connecteur RH](#step-3-create-the-hr-connector).
+> La possibilité de créer un connecteur RH pour les données de profil d’employé est en prévisualisation publique. Pour créer un connecteur RH qui prend en charge les données de profil d’employé, rendez-vous sur la page **Connecteurs** de données dans le Centre de conformité Microsoft 365, sélectionnez l’onglet **Connecteurs**,  >  puis cliquez sur Ajouter un **connecteurHR (prévisualisation).** Suivez les étapes pour créer un connecteur à [l’étape 3 : créez le connecteur RH](#step-3-create-the-hr-connector).
 
 Voici un exemple de fichier CSV pour les données des données de profil d’employé.
 
@@ -248,11 +248,11 @@ L’étape suivante consiste à créer et inscrire une nouvelle application dans
 
 - Azure AD’ID d’application (également appelé *ID* d’application ou *ID client*)
 
-- Azure AD’application secrète (également appelée *la secret client*)
+- Azure AD secrète de l’application (également appelée *secret client*)
 
 - ID de client (également appelé *ID d’annuaire*)
 
-Pour obtenir des instructions détaillées sur la création d’une application dans Azure AD, voir Enregistrer une application avec le [Plateforme d'identités Microsoft](/azure/active-directory/develop/quickstart-register-app).
+Pour obtenir des instructions détaillées sur la création d’une application dans Azure AD, voir [Enregistrer une application](/azure/active-directory/develop/quickstart-register-app) avec le Plateforme d'identités Microsoft.
 
 ## <a name="step-3-create-the-hr-connector"></a>Étape 3 : Créer le connecteur RH
 
@@ -268,7 +268,7 @@ Une fois cette étape terminée, assurez-vous de copier l’ID de travail géné
 
 4. Dans la page **Configuration de la connexion** , faites ce qui suit, puis cliquez sur **Suivant** :
 
-   1. Tapez ou collez l Azure AD’application pour l’application Azure que vous avez créée à l’étape 2.
+   1. Tapez ou collez Azure AD’ID d’application pour l’application Azure que vous avez créée à l’étape 2.
 
    2. Tapez un nom pour le connecteur RH.
 
@@ -338,8 +338,8 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
 
    | Paramètre | Description |
    |:-----|:-----|:-----|
-   |`tenantId`|Il s’agit de l’ID de votre Microsoft 365 que vous avez obtenu à l’étape 2. Vous pouvez également obtenir l’ID de locataire de votre organisation  dans le panneau Vue d’ensemble du centre d Azure AD’administration. Il est utilisé pour identifier votre organisation.|
-   |`appId` |Il s’agit Azure AD’ID d’application pour l’application que vous avez créée Azure AD l’étape 2. Il est utilisé par les Azure AD pour l’authentification lorsque le script tente d’accéder à Microsoft 365 organisation. | 
+   |`tenantId`|Il s’agit de l’ID de votre Microsoft 365 que vous avez obtenu à l’étape 2. Vous pouvez également obtenir l’ID de locataire de votre organisation dans le panneau **Vue** d’ensemble du centre Azure AD’administration. Il est utilisé pour identifier votre organisation.|
+   |`appId` |Il s’agit Azure AD’ID d’application de l’application que vous avez créée Azure AD l’étape 2. Il est utilisé par les Azure AD pour l’authentification lorsque le script tente d’accéder à Microsoft 365 organisation. | 
    |`appSecret`|Il s’agit de Azure AD’application secrète pour l’application que vous avez créée Azure AD l’étape 2. Cette fonction est également utilisée pour l’authentification.|
    |`jobId`|Il s’agit de l’ID de travail pour le connecteur RH que vous avez créé à l’étape 3. Cette fonction permet d’associer les données RH téléchargées vers le cloud Microsoft au connecteur RH.|
    |`filePath`|Il s’agit du chemin d’accès au fichier (stocké sur le même système que le script) que vous avez créé à l’étape 1. Essayez d’éviter les espaces dans le chemin d’accès du fichier . sinon, utilisez des guillemets simples.|
@@ -351,7 +351,7 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
     .\HRConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -filePath 'C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv'
     ```
 
-   Si le chargement réussit, le script affiche le message **Télécharger réussite**.
+   Si le téléchargement réussit, le script affiche le message **Télécharger** réussite.
 
    > [!NOTE]
    > Si vous avez des problèmes lors de l’exécution de la commande précédente [](/powershell/module/microsoft.powershell.core/about/about_execution_policies) en raison des stratégies d’exécution, voir À propos des stratégies d’exécution et [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy) pour obtenir des instructions sur la définition des stratégies d’exécution.

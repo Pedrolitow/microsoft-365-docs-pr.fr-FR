@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour obtenir plus d'informations.
-ms.openlocfilehash: 36176ceee1ace993a95e661ab5d71ee062956692
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 9f54d3b582b08ba38cc6f9f815224f01fcad3dcb
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074401"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315342"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -111,6 +111,7 @@ Voici les rapports disponibles dans tous les environnements basés sur votre abo
 |[Activité de participation à des conférences Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Oui|Oui|Non[^1]|Non[^1]|Oui|
 |[Activité P2P Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Oui|Oui|Non[^1]|Non[^1]|Oui|
 |[Activité Viva Learning](viva-learning-activity.md)|Oui|N/A|N/A|N/A|N/A|
+|[Activité Viva Insights](viva-insights-activity.md)|Oui|Oui|N/A|N/A|N/A|
 
 [^1]: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
 [^2]: The service is not available in the environment so no plan to release the report.

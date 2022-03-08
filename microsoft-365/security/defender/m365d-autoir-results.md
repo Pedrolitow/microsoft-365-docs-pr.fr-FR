@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,12 +23,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: e38de9e864fa063e3e56dc99c1d9c671b6409023
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 05e16a32fb21f682a756c32201a69c192d398184
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940925"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321806"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Détails et résultats d’une enquête automatisée
 
@@ -37,15 +37,15 @@ ms.locfileid: "61940925"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Avec Microsoft 365 Defender, lorsqu’une [](m365d-autoir.md) enquête automatisée s’exécute, des détails sur cet examen sont disponibles pendant et après le processus d’examen automatisé. Si vous disposez des [autorisations](m365d-action-center.md#required-permissions-for-action-center-tasks)nécessaires, vous pouvez afficher ces détails dans une vue des détails de l’enquête qui vous fournit l’état à jour et la possibilité d’approuver les actions en attente. 
+Avec Microsoft 365 Defender, lorsqu’une enquête automatisée s’exécute, des détails sur cet examen sont disponibles pendant et après le processus d’examen automatisé.[](m365d-autoir.md) Si vous disposez des [autorisations](m365d-action-center.md#required-permissions-for-action-center-tasks) nécessaires, vous pouvez afficher ces détails dans une vue des détails de l’enquête qui vous fournit l’état à jour et la possibilité d’approuver les actions en attente. 
 
 ## <a name="new-unified-investigation-page"></a>(NOUVEAU) Page Examen unifié
 
-La page d’examen a récemment été mise à jour pour inclure des informations sur vos appareils, votre courrier électronique et le contenu de collaboration. La nouvelle page d’enquête unifiée définit un langage commun et fournit une expérience unifiée pour les examens automatiques dans Microsoft Defender pour [Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) et [Microsoft Defender pour Office 365](../office-365-security/defender-for-office-365.md). Pour accéder à la page d’enquête unifiée, sélectionnez le lien dans la bannière jaune qui s’affiche :
+La page d’examen a récemment été mise à jour pour inclure des informations sur vos appareils, votre courrier électronique et le contenu de collaboration. La nouvelle page d’enquête unifiée définit un langage commun et fournit une expérience unifiée pour les examens automatiques dans [Microsoft Defender pour Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) et [Microsoft Defender pour Office 365](../office-365-security/defender-for-office-365.md). Pour accéder à la page d’enquête unifiée, sélectionnez le lien dans la bannière jaune qui s’affiche :
 
 - N’importe quelle page d’enquête dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">le Centre Office 365 sécurité & conformité</a>
-- N’importe quelle page d’examen dans Microsoft 365 Defender portail ( [https://security.microsoft.com](https://security.microsoft.com) )
-- Toute expérience d’incident ou de centre d’action <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">dans le portail Microsoft 365 Defender client</a>
+- N’importe quelle page d’examen dans Microsoft 365 Defender portail ([https://security.microsoft.com](https://security.microsoft.com))
+- Toute expérience d’incident ou de centre de Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">de sécurité</a>
 
 ## <a name="open-the-investigation-details-view"></a>Ouvrir la vue Détails de l’examen
 
@@ -56,7 +56,7 @@ Vous pouvez ouvrir une vue Détails de l’examen avant impression comme suit :
 
 ### <a name="select-an-item-in-the-action-center"></a>Sélectionnez un élément dans le centre de notifications
 
-Le centre de [mesures](m365d-action-center.md) amélioré regroupe les actions de correction sur vos appareils, la messagerie & le contenu [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) de collaboration et les identités. [](m365d-remediation-actions.md) Les actions répertoriées incluent les actions de correction qui ont été prises automatiquement ou manuellement. Dans le centre de actions, vous pouvez afficher les actions en attente d’approbation et les actions qui ont déjà été approuvées ou terminées. Vous pouvez également accéder à d’autres détails, tels qu’une page d’enquête.
+Le centre de [mesures](m365d-action-center.md) amélioré regroupe[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) les [actions](m365d-remediation-actions.md) de correction sur vos appareils, la messagerie & le contenu de collaboration et les identités. Les actions répertoriées incluent les actions de correction qui ont été prises automatiquement ou manuellement. Dans le centre de actions, vous pouvez afficher les actions en attente d’approbation et les actions qui ont déjà été approuvées ou terminées. Vous pouvez également accéder à d’autres détails, tels qu’une page d’enquête.
 
 > [!TIP]
 > Vous devez avoir [certaines autorisations pour](m365d-action-center.md#required-permissions-for-action-center-tasks) approuver, rejeter ou annuler des actions.
@@ -68,10 +68,10 @@ Le centre de [mesures](m365d-action-center.md) amélioré regroupe les actions d
 3. Sous l’onglet **En attente** ou **Historique**, sélectionnez un élément. Son volet volant s’ouvre.
 
 4. Examinez les informations dans le volet volant, puis prenez l’une des étapes suivantes :
-   - Sélectionnez **Ouvrir la page Examen** pour afficher plus de détails sur l’enquête.
-   - Sélectionnez **Approuver** pour lancer une action en attente.
-   - Sélectionnez **Rejeter** pour empêcher une action en attente d’être prise.
-   - Sélectionnez **Go hunt** (Aller à la recherche) pour passer [à la recherche avancée](advanced-hunting-overview.md).
+   - **Sélectionnez Ouvrir la page Examen** pour afficher plus de détails sur l’enquête.
+   - **Sélectionnez Approuver** pour lancer une action en attente.
+   - **Sélectionnez Rejeter** pour empêcher une action en attente d’être prise.
+   - **Sélectionnez Go hunt** (Aller à la recherche) pour passer [au recherche avancée](advanced-hunting-overview.md).
 
 ### <a name="open-an-investigation-from-an-incident-details-page"></a>Ouvrez un examen dans une page de détails d’incident
 
@@ -79,13 +79,13 @@ La page Détails de l’incident permet d’afficher des informations détaillé
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in. 
 
-2. Dans le volet de navigation, sélectionnez **Incidents &**  >  **alertes Incidents**. 
+2. Dans le volet de navigation, sélectionnez **Incidents & alertsIncidents** > . 
 
-3. Sélectionnez un élément dans la liste, puis choisissez **Ouvrir la page Incident.**
+3. Sélectionnez un élément dans la liste, puis choisissez **Ouvrir la page Incident**.
 
 4. Sélectionnez **l’onglet** Examens, puis un examen dans la liste. Son volet volant s’ouvre.
 
-5. Sélectionnez **Ouvrir la page Examen.** 
+5. Sélectionnez **Ouvrir la page Examen**. 
 
 Voici un exemple.
 
@@ -104,15 +104,15 @@ Dans la vue Détails de l’examen, vous pouvez consulter des informations sur l
 
 | Tab | Description |
 |:--------|:--------|
-| **Graphique de l'examen** | Fournit une représentation visuelle de l’examen. Décrit les entités et répertorie de menaces détectées, ainsi que les alertes et l’attente d’une approbation.<br/>Vous pouvez sélectionner un élément sur le graphique pour afficher plus de détails. Par exemple, la sélection de l’icône **Preuve** vous permet d’utiliser l’onglet Preuves, où vous pouvez voir les entités détectées et leurs verdicts.  |
+| **Graphique de l'examen** | Fournit une représentation visuelle de l’examen. Décrit les entités et répertorie de menaces détectées, ainsi que les alertes et l’attente d’une approbation.<br/>Vous pouvez sélectionner un élément sur le graphique pour afficher plus de détails. Par exemple, la sélection de l’icône **Preuve** vous permet  d’utiliser l’onglet Preuves, où vous pouvez voir les entités détectées et leurs verdicts. |
 | **Alertes** | Répertorie les alertes associées à l’examen. Les alertes peuvent être dues aux fonctionnalités de protection contre les menaces sur l’appareil d’un utilisateur, dans les applications Office, Microsoft Defender pour les applications cloud et d’autres fonctionnalités Microsoft 365 Defender cloud.|
-| **Appareils** | Répertorie les appareils inclus dans l’examen, ainsi que leur niveau de correction. (Les niveaux de correction correspondent [au niveau d’automatisation des groupes d’appareils.)](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) |
+| **Appareils** | Répertorie les appareils inclus dans l’examen, ainsi que leur niveau de correction. (Les niveaux de correction correspondent [au niveau d’automatisation des groupes d’appareils](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups).) |
 | **Boîtes aux lettres** |Répertorie les boîtes aux lettres qui sont touchées par les menaces détectées.  |
 | **Utilisateurs**  | Répertorie les comptes d’utilisateurs qui sont touchés par les menaces détectées. |
-| **Preuve** | Répertorie les éléments de preuve élevés par des alertes ou des enquêtes. Inclut les verdicts (*malveillants,* *suspects,* inconnus ou aucune menace *trouvée)* et l’état de correction. |
-| **Entities** | Fournit des détails sur chaque entité analysée, y compris un verdict pour chaque type d’entité *(* *malveillant,* suspect ou aucune *menace trouvée).*|
+| **Preuve** | Répertorie les éléments de preuve élevés par des alertes ou des enquêtes. Inclut les verdicts (*malveillants**,* *suspects**, inconnus* ou aucune menace trouvée) et l’état de correction. |
+| **Entities** | Fournit des détails sur chaque entité analysée, y compris un verdict pour chaque type d’entité *(malveillant**, suspect* ou aucune *menace trouvée*).|
 |**Log** | Fournit une vue chronologique et détaillée de toutes les actions d’investigation entreprises après le déclenchement d’une alerte.|
-| **Historique des actions en attente** | Répertorie les éléments qui nécessitent une approbation pour continuer. Go to the Action center ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) to approve pending actions. |
+| **Historique des actions en attente** | Répertorie les éléments qui nécessitent une approbation pour continuer. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) to approve pending actions. |
 
 ## <a name="next-steps"></a>Étapes suivantes
 

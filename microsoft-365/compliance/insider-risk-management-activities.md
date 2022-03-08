@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: a34e876e1ea6f9be9004609daf8afeec97cc4fbb
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: e56fb2e550adb870ed096f90c7d8d9b90c1de249
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295121"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314685"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Examiner les activités de gestion des risques internes
 
@@ -28,7 +28,7 @@ L’étude des activités des utilisateurs à risque est une première étape im
 
 Les rapports d’activité des utilisateurs vous permettent d’examiner les activités de certains utilisateurs pendant une période définie sans avoir à les affecter temporairement ou explicitement à une stratégie de gestion des risques internes. Dans la plupart des scénarios de gestion des risques internes, les utilisateurs sont explicitement définis dans des stratégies et peuvent avoir des alertes de stratégie (selon le déclenchement d’événements) et des scores de risque associés aux activités. Toutefois, dans certains scénarios, vous pouvez examiner les activités des utilisateurs qui ne sont pas explicitement définis dans une stratégie. Ces activités peuvent être pour les utilisateurs pour qui vous avez reçu un conseil sur l’utilisateur et les activités potentiellement risquées, ou les utilisateurs qui n’ont généralement pas besoin d’être affectés à une stratégie de gestion des risques internes.
 
-Une fois que vous avez configuré les indicateurs sur la page de gestion des risques internes **Paramètres**, l’activité des utilisateurs est détectée pour les activités risquées associées aux indicateurs sélectionnés. Il n’est pas nécessaire de configurer une stratégie pour les rapports d’activité des utilisateurs afin de détecter et signaler les activités risquées par les utilisateurs de votre organisation. Les activités incluses dans les rapports d’activité des utilisateurs ne nécessitent pas de déclenchement d’événements pour que les activités soient affichées. Cette configuration signifie que toutes les activités détectées pour l’utilisateur sont disponibles pour révision, qu’elle ait un événement déclencheur ou qu’elle crée une alerte. Les rapports sont créés par utilisateur et peuvent inclure toutes les activités pour une période personnalisée de 90 jours. Plusieurs rapports pour le même utilisateur ne sont pas pris en charge.
+Une fois que vous avez configuré des indicateurs sur la page de gestion des risques internes **Paramètres**, l’activité des utilisateurs est détectée pour les activités risquées associées aux indicateurs sélectionnés. Il n’est pas nécessaire de configurer une stratégie pour les rapports d’activité des utilisateurs afin de détecter et signaler les activités risquées par les utilisateurs de votre organisation. Les activités incluses dans les rapports d’activité des utilisateurs ne nécessitent pas de déclenchement d’événements pour que les activités soient affichées. Cette configuration signifie que toutes les activités détectées pour l’utilisateur sont disponibles pour révision, qu’elle ait un événement déclencheur ou qu’elle crée une alerte. Les rapports sont créés par utilisateur et peuvent inclure toutes les activités pour une période personnalisée de 90 jours. Plusieurs rapports pour le même utilisateur ne sont pas pris en charge.
 
 Après avoir examiné les activités d’un utilisateur, les enquêteurs peuvent ignorer les activités individuelles comme étant anodins, partager ou envoyer par courrier électronique un lien vers le rapport avec d’autres enquêteurs, ou choisir d’affecter temporairement ou explicitement l’utilisateur à une stratégie de gestion des risques internes. Les utilisateurs doivent être affectés au groupe de *rôles Enquêteurs* de gestion des risques internes pour afficher la page Rapports **d’activité des utilisateurs** .  
 
@@ -73,7 +73,7 @@ Le tableau **de bord** d’alerte des risques internes vous permet d’afficher 
 Vous pouvez trier les alertes dans l’un des états suivants :
 
 - **Confirmé :** alerte confirmée et affectée à un cas nouveau ou existant.
-- **Rejeté :** alerte rejetée comme étant anodin dans le processus de tri.
+- **Rejeté :** alerte rejetée comme étant anodin dans le processus de tri. Vous pouvez fournir une raison pour le rejet de l’alerte et inclure des notes qui sont disponibles dans l’historique des alertes de l’utilisateur afin de fournir un contexte supplémentaire pour référence ultérieure ou pour d’autres réviseurs. Ces raisons peuvent aller des activités attendues, des événements sans impact, en réduisant simplement le nombre d’activités d’alerte pour l’utilisateur ou à une raison liée aux notes d’alerte. Les choix de classification des raisons incluent l’activité est attendue pour cet *utilisateur,* l’activité est suffisamment importante pour que je étudie plus en détail et les alertes pour cet utilisateur contiennent *trop d’activité*.
 - **Doit être revue** : nouvelle alerte dans laquelle aucune action de tri n’a encore été entreprise.
 - **Résolu :** alerte qui fait partie d’un cas fermé et résolu.
 
@@ -93,6 +93,7 @@ Selon le nombre et le type de stratégies de gestion des risques internes actif 
 - **Gravité : sélectionnez** un ou plusieurs niveaux de gravité des risques d’alerte pour filtrer la liste d’alertes. Les options disponibles sont *Élevée*, *Moyenne* et *Faible*.
 - **Heure détectée :** sélectionnez les dates de début et de fin de la création de l’alerte. Ce filtre recherche les alertes entre 00:00 UTC à la date de début et 00:00 UTC à la date de fin. Pour filtrer les alertes pour un jour spécifique, entrez la date du jour dans le champ **Date** de début et la date du jour suivant dans le champ **Date de** fin.
 - **Stratégie** : sélectionnez une ou plusieurs stratégies pour filtrer les alertes générées par les stratégies sélectionnées.
+- **Facteurs de risque :** sélectionnez l’un des facteurs de risque pour filtrer la liste d’alertes. Les options sont *les activités d’exfiltration* *cumulative, les* activités incluent le contenu de priorité, les activités de *séquence* et les activités incluent les *domaines nonallués*.
 
 ## <a name="search-alerts-on-the-alert-dashboard"></a>Alertes de recherche sur le tableau de bord d’alerte
 
@@ -116,31 +117,68 @@ Pour trier une alerte de risque interne, effectuer les étapes suivantes :
 
 1. Dans la [Centre de conformité Microsoft 365](https://compliance.microsoft.com), **sélectionnez** l’onglet **Alertes** pour la gestion des risques internes.
 2. Dans le tableau **de bord Alertes**, sélectionnez l’alerte à trier.
-3. Dans **la page** détails de l’alerte, vous pouvez passer en revue les informations sur l’alerte et vous pouvez confirmer l’alerte et créer un nouveau cas, confirmer l’alerte et l’ajouter à un cas existant, ou pour faire disparaître l’alerte. Cette page inclut également l’état actuel de l’alerte et le niveau de gravité du risque d’alerte, répertorié comme élevé, moyen ou faible. Le niveau de gravité peut augmenter ou diminuer au fil du temps si l’alerte n’est pas triée.
+3. Dans la page **détails de l’alerte** , vous pouvez passer en revue les informations sur l’alerte. Vous pouvez confirmer l’alerte et créer un cas, confirmer l’alerte et l’ajouter à un cas existant ou ignorer l’alerte. Cette page inclut également l’état actuel de l’alerte et le niveau de gravité du risque d’alerte, répertorié comme élevé, moyen ou faible. Le niveau de gravité peut augmenter ou diminuer au fil du temps si l’alerte n’est pas triée.
 
-    Les onglets de la page **détails de l’alerte** fournissent plus d’informations pour l’alerte :
-    - **Résumé :** Cet onglet contient des informations générales sur l’alerte.
-        - **Quel a été l’événement** déclencheur ?: affiche l’événement déclencheur le plus récent qui a invité la stratégie à commencer à affecter des scores de risque à l’activité de l’utilisateur.
-        - **Activité qui a généré cette** alerte : affiche l’activité à risque le plus élevé et la correspondance de stratégie pendant la période d’évaluation de l’activité qui a conduit à la générer.
-        - **Informations sur les risques pour l’activité dans cette alerte** : affiche le nombre d’informations sur les risques pour l’alerte. Voici quelques exemples si l’alerte contient des activités de séquence, un risque d’activité d’exfiltration cumulée, une activité qui inclut des événements avec des domaines nonallés, une activité qui inclut des événements avec un contenu prioritaire ou des activités inhabituelles pour l’utilisateur.
-        - **Détails utilisateur :** affiche des informations générales sur l’utilisateur affecté à l’alerte. Si l’anonymisation est activée, le nom d’utilisateur, l’adresse e-mail, l’alias et les champs de l’organisation sont rendus anonymes.
-        - **Détails** de l’alerte : inclut la durée depuis que l’alerte a été générée, les stratégies qui ont généré l’alerte sont répertoriées et le cas généré à partir de l’alerte est répertorié. Pour les nouvelles alertes, le **champ Case** affiche Aucune.
-        - **Contenu détecté : inclut** le contenu associé aux activités à risque pour l’alerte et récapitule les événements d’activité par zones clés. La sélection d’un lien d’activité ouvre l’Explorateur d’activités et affiche plus de détails sur l’activité.
-    - **Explorateur d’activités** : cet onglet ouvre **l’Explorateur d’activités**. Pour plus d’informations, voir la section suivante de cet article.
+Utilisez les sections et onglets suivants dans la page détails de l’alerte pour plus d’informations sur l’alerte :
 
-## <a name="retention-and-item-limits"></a>Limites de rétention et d’éléments
+### <a name="headersummary-section"></a>Section En-tête/Résumé
 
-À mesure que les alertes de gestion des risques internes sont âge, leur valeur pour minimiser l’activité à risque diminue pour la plupart des organisations. À l’inverse, les cas actifs et les artefacts associés (alertes, informations, activités) sont toujours utiles pour les organisations et ne doivent pas avoir de date d’expiration automatique. Cela inclut toutes les alertes et artefacts futurs dans un état actif pour tout utilisateur associé à un cas actif.
+Cette section contient des informations générales sur l’utilisateur et l’alerte. Ces informations sont disponibles pour le contexte lors de l’examen d’informations détaillées sur l’activité détectée incluse dans l’alerte pour l’utilisateur :
 
-Pour réduire le nombre d’éléments plus anciens qui fournissent une valeur actuelle limitée, les limites et rétentions suivantes s’appliquent aux alertes de gestion des risques internes, aux cas et aux rapports d’activité des utilisateurs :
+- **Activité qui a généré cette** alerte : affiche l’activité à risque le plus élevé et la correspondance de stratégie pendant la période d’évaluation de l’activité qui a conduit à la générer.
+- **Événement déclencheur :** affiche l’événement déclencheur le plus récent qui a invité la stratégie à commencer à affecter des scores de risque à l’activité de l’utilisateur.
+- **Profil utilisateur** : affiche des informations générales sur l’utilisateur affecté à l’alerte. Si l’anonymisation est activée, le nom d’utilisateur, l’adresse e-mail, l’alias et les champs de l’organisation sont rendus anonymes.
+- **Historique des alertes** utilisateur : affiche la liste des alertes de l’utilisateur pour les 30 derniers jours. Inclut un lien pour afficher l’historique complet des alertes de l’utilisateur.
 
-|**Item**|**Rétention/limite**|
-|:-------|:------------------|
-| État de révision des alertes avec des besoins | 120 jours après la création de l’alerte, puis supprimé automatiquement |
-| Cas actifs (et artefacts associés) | Rétention indéfinie, ne jamais expirer |
-| Cas résolus (et artefacts associés) | 120 jours à partir de la résolution de cas, puis supprimés automatiquement |
-| Nombre maximal de cas actifs | 100 |
-| Rapports sur les activités des utilisateurs | 120 jours après la détection de l’activité, puis supprimé automatiquement |
+### <a name="all-risk-factors"></a>Tous les facteurs de risque
+
+Cet onglet ouvre le résumé des facteurs de risque pour l’activité d’alerte de l’utilisateur. Les facteurs de risque peuvent vous aider à déterminer le niveau de risque de l’activité de cet utilisateur au cours de votre examen. Les facteurs de risque incluent des résumés pour :
+
+- **Principales activités d’exfiltration** : affiche les activités d’exfiltration avec le nombre ou les événements les plus élevés pour l’alerte.
+- **Activités d’exfiltration cumulatives** : affiche les événements associés aux activités d’exfiltration cumulatives.
+- **Séquences d’activités** : affiche les activités détectées associées aux séquences de risques.
+- **Activité inhabituelle pour cet utilisateur** : affiche les activités de l’utilisateur qui sont considérées comme inhabituelles et un départ par rapport à ses activités habituelles.
+- **Contenu prioritaire** : affiche les activités associées au contenu prioritaire.
+- **Domaines nonallés** : affiche les activités pour les événements associés à des domaines nonallés.
+- **Accès aux enregistrements d’état** d’santé : affiche les activités pour les événements associés à l’accès aux enregistrements d’état de santé.
+
+Avec ces filtres, vous ne verrez que les alertes avec ces facteurs de risque, mais l’activité qui a généré une alerte peut ne pas se faire dans l’une de ces catégories. Par exemple, une alerte contenant des activités de séquence a peut-être été générée simplement parce que l’utilisateur a copié un fichier sur un périphérique USB.
+
+### <a name="content-detected"></a>Contenu détecté
+
+La section sous **l’onglet Tous les facteurs** de risque inclut le contenu associé aux activités de risque pour l’alerte et récapitule les événements d’activité par domaines clés. La sélection d’un lien d’activité ouvre l’Explorateur d’activités et affiche plus de détails sur l’activité.
+
+### <a name="activity-explorer"></a>Explorateur d’activités
+
+Cet onglet ouvre l’Explorateur d’activités. Pour plus d’informations, voir la section Explorateur d’activités de cet article.
+
+### <a name="user-activity"></a>Activité utilisateur
+
+Le **graphique d’activité** utilisateur est l’un des outils les plus puissants pour l’analyse des risques internes et l’examen des alertes et des cas dans la solution de gestion des risques internes. Cet onglet est structuré pour permettre un examen rapide de toutes les activités d’un utilisateur, y compris une chronologie historique de toutes les alertes, les détails de l’alerte, le score de risque actuel pour l’utilisateur et la séquence des événements de risque.  
+
+![Activité des utilisateurs de gestion des risques internes.](../media/insider-risk-user-activities.png)
+
+1. **Filtres de** temps : par défaut, les trois derniers mois d’activités affichés dans le graphique d’activité de l’utilisateur. Vous pouvez facilement filtrer l’affichage graphique en sélectionnant les onglets *6 mois*, *3* mois ou *1* mois sur le graphique en bulles.
+2. **Activité et détails des alertes** de risque : les activités de risque sont affichées visuellement sous forme de bulles de couleur dans le graphique d’activité de l’utilisateur. Les bulles sont créées pour différentes catégories de risques et. Sélectionnez une bulle pour afficher les détails de chaque activité de risque. Les détails sont les suivants :
+    - **Date** de l’activité de risque.
+    - Catégorie **d’activité de risque**. Par exemple, *courrier électronique avec pièces jointes envoyées* à l’extérieur de l’organisation ou fichiers téléchargés à partir *de SharePoint Online*.
+    - **Score de risque** pour l’alerte. Ce score correspond au score numérique du niveau de gravité des risques d’alerte.
+    - Nombre d’événements associés à l’alerte. Des liens vers chaque fichier ou e-mail associé à l’activité de risque sont également disponibles.
+3.  **Filtres et tri (aperçu)** :
+    - **Catégorie de** risque : filtrer les activités selon les catégories de risque suivantes : activités avec des *scores de risque > 15 (* sauf dans une séquence) et activités *de séquence*.
+    - **Type d’activité** : filtrer les activités selon les types suivants : *Access*, *Deletion*, *Collection*, *Exfiltration*, *Contrôle*, *Obfuscation* et *Security*.
+    - **Trier par** : lister les activités de chronologie par *date ou* *score de risque*.
+4. **Séquence de risques (aperçu)** : l’ordre chronologique des activités risquées est un aspect important de l’examen des risques et l’identification de ces activités connexes est un élément important de l’évaluation du risque global pour votre organisation. Les activités d’alerte associées sont affichées avec des lignes de connexion pour souligner que ces activités sont associées à une zone de risque plus importante. Cette vue des activités peut aider les enquêteurs à « connecter les points » pour les activités à risque qui auraient pu être vues comme des événements isolés ou isolés. Sélectionnez n’importe quelle bulle dans l’ordre pour afficher les détails de toutes les activités de risque associées. Les détails sont les suivants :
+
+    - **Nom** de la séquence.
+    - **Plage de** **dates ou de** dates de la séquence.
+    - **Score de risque** pour la séquence. Ce score est le score numérique pour la séquence des niveaux de gravité de risque d’alerte combinés pour chaque activité associée dans la séquence.
+    - **Nombre d’événements associés à chaque alerte dans la séquence**. Des liens vers chaque fichier ou e-mail associé à chaque activité de risque sont également disponibles.
+    - **Afficher les activités dans l’ordre**. Affiche la séquence sous la forme d’une ligne de surbrillon sur le graphique en bulles et développe les détails de l’alerte pour afficher toutes les alertes associées dans la séquence.
+
+4. **Légende de l’activité** de risque : en bas du graphique d’activité de l’utilisateur, une légende codée en couleur vous permet de déterminer rapidement la catégorie de risque pour chaque alerte.
+5. **Chronologie des** activités de risque : la chronologie complète de toutes les alertes de risque associées au cas est répertoriée, y compris tous les détails disponibles dans la bulle d’alerte correspondante.
+6. **Actions de cas** : les options de résolution du cas sont disponibles dans la barre d’outils de l’action de cas. Lors de l’affichage d’un cas, vous pouvez résoudre un cas, envoyer une notification par courrier électronique à l’utilisateur ou faire réamorcer le cas pour une enquête de l’utilisateur ou des données.
 
 ## <a name="activity-explorer"></a>Explorateur d’activités
 
@@ -157,12 +195,13 @@ Utilisez les filtres d’étendue activité et d’informations sur les risques 
     - Toutes les activités scored pour cet utilisateur
     - Activité uniquement avec note dans cette alerte
 
-- **Filtres d’informations sur les risques** : filtres d’activité applicables à toutes les stratégies attribuant des scores de risque.
-    - Activités d’exfiltration cumulatives
-    - Inclut un événement avec un contenu prioritaire
-    - Inclut un événement avec un domaine nonallifié
-    - Activités de séquence
+- **Filtres de facteur de risque** : filtres pour l’activité de facteur de risque applicable à toutes les stratégies attribuant des scores de risque Cela inclut toutes les activités pour toutes les stratégies pour les utilisateurs dans l’étendue.
     - Activité inhabituelle
+    - Inclut les événements avec un contenu prioritaire
+    - Inclut les événements avec un domaine nonallifié
+    - Activités de séquence
+    - Activités d’exfiltration cumulatives
+    - Activités d’accès aux dossiers d’état d’santé
 
 ![Vue d’ensemble de l’Explorateur d’activités de gestion des risques internes.](../media/insider-risk-activity-explorer.png)
 
@@ -173,7 +212,7 @@ Pour utiliser **l’Explorateur d’activités**, complétez les étapes suivant
 3. Dans le **volet d’informations Alertes**, sélectionnez **Ouvrir en affichage étendu**.
 4. Dans la page de l’alerte sélectionnée, sélectionnez l’onglet **Explorateur d’activités** .
 
-Lors de l’examen des activités dans l’Explorateur d’activités, les enquêteurs et les analystes peuvent sélectionner une activité spécifique et ouvrir le volet d’informations sur l’activité. Le volet affiche des informations détaillées sur l’activité que les enquêteurs et les analystes peuvent utiliser pendant le processus de tri des alertes. Les informations détaillées peuvent fournir un contexte pour l’alerte et vous aider à identifier l’étendue complète de l’activité de risque ayant déclenché l’alerte.
+Lors de l’examen des activités dans l’Explorateur d’activités, les enquêteurs et les analystes peuvent sélectionner une activité spécifique et ouvrir le volet d’informations sur l’activité. Le volet affiche des informations détaillées sur l’activité que les enquêteurs et les analystes peuvent utiliser pendant le processus de tri des alertes. Des informations détaillées peuvent fournir un contexte pour l’alerte et vous aider à identifier l’étendue complète de l’activité de risque ayant déclenché l’alerte.
 
 Lorsque vous sélectionnez les événements d’une activité dans la chronologie de l’activité, le nombre d’activités affichées dans l’explorateur peut ne pas correspondre au nombre d’événements d’activité répertoriés dans la chronologie. Voici quelques exemples de la raison pour laquelle cette différence peut se produire :
 
@@ -193,6 +232,20 @@ Lorsque vous sélectionnez les événements d’une activité dans la chronologi
 5. **Sélectionnez Créer un cas** pour créer un nouveau cas ou **sélectionnez Annuler** pour fermer la boîte de dialogue sans créer de cas.
 
 Une fois le cas créé, les enquêteurs et les analystes peuvent gérer le cas et agir sur celui-ci. Pour plus d’informations, consultez l’article [sur la gestion des risques internes](insider-risk-management-cases.md) .
+
+## <a name="retention-and-item-limits"></a>Limites de rétention et d’éléments
+
+À mesure que les alertes de gestion des risques internes sont âge, leur valeur pour minimiser l’activité à risque diminue pour la plupart des organisations. À l’inverse, les cas actifs et les artefacts associés (alertes, informations, activités) sont toujours utiles pour les organisations et ne doivent pas avoir de date d’expiration automatique. Cela inclut toutes les alertes et artefacts futurs dans un état actif pour tout utilisateur associé à un cas actif.
+
+Pour réduire le nombre d’éléments plus anciens qui fournissent une valeur actuelle limitée, les limites et rétentions suivantes s’appliquent aux alertes de gestion des risques internes, aux cas et aux rapports d’activité des utilisateurs :
+
+|**Item**|**Rétention/limite**|
+|:-------|:------------------|
+| État de révision des alertes avec des besoins | 120 jours après la création de l’alerte, puis supprimé automatiquement |
+| Cas actifs (et artefacts associés) | Rétention indéfinie, ne jamais expirer |
+| Cas résolus (et artefacts associés) | 120 jours à partir de la résolution de cas, puis supprimés automatiquement |
+| Nombre maximal de cas actifs | 100 |
+| Rapports sur les activités des utilisateurs | 120 jours après la détection de l’activité, puis supprimé automatiquement |
 
 ## <a name="get-help-managing-your-insider-risk-alert-queue"></a>Obtenir de l’aide pour gérer votre file d’attente d’alertes de risques internes
 

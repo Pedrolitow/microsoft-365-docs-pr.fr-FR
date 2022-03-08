@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 3682087e47db062240b001e8631f73ae8cbc1cda
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.openlocfilehash: 45729a40ecab2548b3125559ac3a971e5134f190
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "62909686"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320800"
 ---
 # <a name="shared-devices"></a>Appareils partagés
 
@@ -49,12 +49,12 @@ Le mode appareil partagé n’est pas un bon choix dans les situations ci-après
 
 Que vous ou un partenaire gèrez l’inscription, vous pouvez choisir d’utiliser le mode appareil partagé.
 
-Si vous inscrivez vous-même des appareils, suivez les étapes de [](../get-started/register-devices-self.md)l’inscription de nouveaux appareils, puis ajoutez-les au groupe Appareils de l’espace de travail moderne **- Mode appareil** partagé.
+Si vous inscrivez vous-même des appareils, suivez les étapes de l’inscription [manuelle, puis](../get-started/manual-registration.md) ajoutez-les au groupe Modern **Workplace Devices - Shared Device Mode** .
 
 > [!WARNING]
 > N’essayez pas de convertir des appareils Microsoft Manged Desktop existants en mode d’appareil partagé en les ajoutant simplement à ce groupe. Les stratégies appliquées peuvent potentiellement entraîner la perte OneDrive fichiers.
 
-Si vous avez un partenaire inscrit des appareils, suivez les étapes de la procédure d’inscription des appareils par les [partenaires, mais](../get-started/register-devices-partner.md) l’append **-Shared** à la balise de groupe, comme indiqué dans le tableau suivant :
+Si vous avez un partenaire inscrit des appareils, suivez les étapes de l’inscription du [partenaire, mais](../get-started/partner-registration.md) append **-Shared** à la balise de groupe, comme indiqué dans le tableau suivant :
 
 | Profil d’appareil | Balise de groupe Autopilot (mode standard) | Balise de groupe (mode appareil partagé) |
 | ----- | ----- | ----- |
@@ -110,7 +110,7 @@ Lorsque l’impression universelle installe une imprimante pour un utilisateur u
 Chaque Microsoft Intune’appareil a un utilisateur principal, qui est affecté lorsqu’un appareil est installé par Autopilot. Toutefois, lorsque des appareils sont partagés, Intune requiert la suppression de l’utilisateur principal.
 
 > [!IMPORTANT]
-> Alors que le mode d’appareil partagé est en prévisualisation publique, veillez à supprimer l’utilisateur principal en suivant les étapes suivantes : connectez-vous au Centre d’administration Microsoft Endpoint Manager, sélectionnez **AppareilsToutes**>**,** sélectionnez un appareil, puis sélectionnez l’utilisateur principal **PropertiesRemove**> et supprimez l’utilisateur répertorié ici.
+> Alors que le mode d’appareil partagé est en prévisualisation publique, veillez à supprimer l’utilisateur principal en suivant les étapes suivantes : connectez-vous au Centre d’administration Microsoft Endpoint Manager, sélectionnez **Périphériques**>, sélectionnez un appareil, puis sélectionnez l’utilisateur principal **PropertiesRemove**> et supprimez l’utilisateur répertorié ici.
 
 ### <a name="deploying-apps-with-company-portal"></a>Déploiement d’applications avec Portail d'entreprise
 
@@ -120,15 +120,15 @@ Microsoft Manged Desktop désactive Portail d'entreprise par défaut pour les ap
 
 - Pour rendre une application accessible aux utilisateurs dans [Portail d'entreprise,](/mem/intune/apps/apps-deploy) affectez un groupe d’utilisateurs à cette application dans Intune, puis ajoutez chaque utilisateur à ce groupe d’utilisateurs.
 - Les appareils ne peuvent pas avoir [d’utilisateur principal](#primary-user).
-- Pour désinstaller une application qu’un utilisateur a installée via Portail d'entreprise, vous devez désinstaller l’application de tous les utilisateurs de cet appareil.
+- Pour désinstaller une application installée par un utilisateur via Portail d'entreprise, vous devez désinstaller l’application de tous les utilisateurs de cet appareil.
 
 > [!CAUTION]
 > Portail d'entreprise ne prend pas en charge les applications affectées à des groupes d’appareils comme disponibles.
 
-### <a name="redeployment-of-microsoft-365-apps-for-enterprise"></a>Redéploiement des Applications Microsoft 365 pour les grandes entreprises
+### <a name="redeployment-of-microsoft-365-apps-for-enterprise"></a>Redéploiement des Microsoft 365 Apps pour Enterprise
 
 Lors de la prévisualisation publique, si Microsoft 365 Apps doit être redéployé, les utilisateurs doivent contacter leur personnel de support local pour demander à un agent d’élever et de réinstaller des Applications Microsoft 365 pour les grandes entreprises sur cet appareil.
 
 ### <a name="microsoft-teams"></a>Microsoft Teams
 
-Lorsqu’un utilisateur démarre Teams pour la première fois, il est invité à mettre à jour l’application avant de pouvoir l’utiliser. Une fois la mise à jour Teams mise à jour est toujours mise à jour en arrière-plan.
+Lorsqu’un utilisateur Teams pour la première fois, il est invité à mettre à jour l’application avant de pouvoir l’utiliser. Une fois la mise à jour Teams mise à jour est toujours mise à jour en arrière-plan.

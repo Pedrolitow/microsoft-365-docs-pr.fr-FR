@@ -1,7 +1,7 @@
 ---
-title: Évaluer le rapport Microsoft 365 utilisateurs actifs
-ms.author: pebaum
-author: pebaum
+title: Évaluer le rapport Microsoft 365 Utilisateurs actifs
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -22,14 +22,14 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Découvrez comment obtenir un rapport Utilisateurs actifs à l’aide du tableau de bord rapports Microsoft 365 dans le Centre d'administration Microsoft 365 et découvrez le nombre de licences de produits utilisées.
-ms.openlocfilehash: 793f83e28c396add9046f2c464efbdfef2b291f8
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 9f8b9f12782727121a878cfa353e42291d340688
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553363"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312892"
 ---
-# <a name="assess-the-microsoft-365-active-users-report"></a>Évaluer le rapport Microsoft 365 utilisateurs actifs
+# <a name="assess-the-microsoft-365-active-users-report"></a>Évaluer le rapport Microsoft 365 Utilisateurs actifs
 
 Le tableau Microsoft 365 de rapports de gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez [la rubrique Présentation des rapports](activity-reports.md).
   
@@ -38,7 +38,7 @@ Par exemple, vous pouvez utiliser le rapport **Utilisateurs actifs** pour déter
 ## <a name="how-to-get-to-the-active-users-report"></a>Accéder au rapport Utilisateurs actifs
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>. 
-2. Dans la page d’accueil  du tableau de bord, cliquez sur le bouton Afficher plus sur la carte Utilisateurs actifs Microsoft 365 Services.
+2. Dans la page d’accueil du tableau de  bord, cliquez sur le bouton Afficher plus sur la carte Utilisateurs actifs Microsoft 365 Services.
 
 ## <a name="interpret-the-active-users-report"></a>Interpréter le rapport Utilisateurs actifs
 
@@ -52,7 +52,7 @@ Vous pouvez afficher les utilisateurs actifs dans le rapport Office 365 en chois
 Le graphique d’activité vous montre le nombre d’activités quotidiennes dans la période de rapport, séparés par produit.
 Le graphique Services présente le nombre d'utilisateurs par type d'activité et service.
 
-- Dans le graphique Utilisateurs, l’axe x affiche la période de rapports sélectionnée et l’axe y affiche les utilisateurs actifs quotidiens séparés et codés en couleur par type de licence.
+- Dans le graphique Utilisateurs, l’axe x affiche la période de rapports sélectionnée et l’axe y affiche les utilisateurs actifs quotidiens séparés et en couleur codés par type de licence.
 Dans le graphique d’activité, l’axe x affiche la période de rapports sélectionnée et l’axe y affiche le nombre d’activités quotidiennes séparés et la couleur codée par type de licence.
 Sur le graphique d'activités Services, l'axe X indique les services individuels que vos utilisateurs sont autorisés à utiliser au cours de la période spécifiée, tandis que l'axe Y indique le nombre d'utilisateurs en fonction de l'état de l'activité, avec un codage couleur selon l'état de l'activité.
 
@@ -65,4 +65,4 @@ Si votre abonnement est géré par 21Vianet, les Yammer.
 
 
 
-Si la politique de votre organisation vous empêche de consulter les rapports sur lesquels figurent des informations propres aux utilisateurs, vous pouvez modifier les paramètres de confidentialité de tous ces rapports. Consultez la section **Comment puis-je masquer les détails** au niveau de l’utilisateur ? dans rapports d’activité [dans le Centre d'administration Microsoft 365](activity-reports.md).  
+Si la politique de votre organisation vous empêche de consulter les rapports sur lesquels figurent des informations propres aux utilisateurs, vous pouvez modifier les paramètres de confidentialité de tous ces rapports. Consultez la section **Comment puis-je masquer les détails** au niveau de l’utilisateur ? dans rapports d’activité dans [le Centre d'administration Microsoft 365](activity-reports.md).  

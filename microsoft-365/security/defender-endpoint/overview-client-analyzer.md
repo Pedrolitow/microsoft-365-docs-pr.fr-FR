@@ -13,29 +13,27 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9b4363b529ce9087e640c9bfaa32c8d21f410710
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 0de2fbe98527d8fe36f2b8c5d5db0453988501a7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531062"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323498"
 ---
 # <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Résoudre les problèmes d’état du capteur à l’aide de Microsoft Defender pour Endpoint Client Analyzer
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender for Endpoint Client Analyzer (MDECA) peut être utile lors du [](/microsoft-365/security/defender-endpoint/onboard-configure) diagnostic des problèmes d’état ou de fiabilité du capteur sur les appareils intégrés exécutant Windows, Linux ou macOS. Par exemple, vous pouvez exécuter l’analyseur sur un ordinateur qui semble défectueux en fonction de l’état d’état du capteur [affiché](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors) (Inactif, Aucune donnée de capteur ou Communications altérées) dans le portail de sécurité.
+Microsoft Defender for Endpoint Client Analyzer (MDECA) peut être utile lors du diagnostic des problèmes d’état ou de fiabilité du capteur [](/microsoft-365/security/defender-endpoint/onboard-configure) sur les appareils intégrés exécutant Windows, Linux ou macOS. Par exemple, vous pouvez exécuter l’analyseur sur un ordinateur qui semble défectueux en fonction de l’état d’état du [capteur affiché (](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors) Inactif, Aucune donnée de capteur ou Communications altérées) dans le portail de sécurité.
 
 Outre les problèmes d’état du capteur évidents, MDECA peut collecter d’autres suivis, journaux et informations de diagnostic pour résoudre des scénarios complexes tels que :
 
 - Compatibilité des applications (AppCompat), performances, connectivité réseau ou
-- Comportement inattendu lié à [endpoint Data Loss Prevention](/microsoft-365/compliance/endpoint-dlp-learn-about).
+- Comportement inattendu lié à [la protection contre la perte de données de point de terminaison](/microsoft-365/compliance/endpoint-dlp-learn-about).
 
 ## <a name="privacy-notice"></a>Avis de confidentialité
 
@@ -49,15 +47,15 @@ Outre les problèmes d’état du capteur évidents, MDECA peut collecter d’au
 
 Pour plus d’informations sur la Exchange fichiers sécurisés, voir Comment utiliser la Exchange fichiers sécurisés pour échanger des fichiers [avec le Support Microsoft](/troubleshoot/azure/general/secure-file-exchange-transfer-files)
 
-Pour plus d’informations sur notre déclaration de confidentialité, voir [déclaration de confidentialité Microsoft.](https://privacy.microsoft.com/privacystatement)
+Pour plus d’informations sur notre déclaration de confidentialité, voir [déclaration de confidentialité Microsoft](https://privacy.microsoft.com/privacystatement).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
-- Avant d’utiliser l’analyseur, nous vous recommandons de vous assurer que la configuration de votre proxy ou pare-feu autorise l’accès aux URL du service Microsoft Defender pour les points [de terminaison.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
+- Avant d’utiliser l’analyseur, nous vous recommandons de vous assurer que votre configuration de proxy ou de pare-feu autorise l’accès aux URL du [service Microsoft Defender pour les points de terminaison](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
-- L’analyseur peut s’exécuter sur les éditions de [Windows,](minimum-requirements.md#supported-windows-versions) [Linux](microsoft-defender-endpoint-linux.md#system-requirements)ou [macOS](microsoft-defender-endpoint-mac.md#system-requirements) avant l’intégration à Microsoft Defender pour Endpoint.
+- L’analyseur peut s’exécuter sur les éditions de [Windows](minimum-requirements.md#supported-windows-versions), [Linux](microsoft-defender-endpoint-linux.md#system-requirements) ou [macOS](microsoft-defender-endpoint-mac.md#system-requirements) prise en charge avant l’intégration à Microsoft Defender pour Endpoint.
 
-- Pour Windows appareils, si vous exécutez l’analyseur directement sur des ordinateurs spécifiques et non à distance via [Live Response,](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log)SysInternals [PsExec.exe](/sysinternals/downloads/psexec) doit être autorisé (au moins temporairement) à s’exécuter. L’analyseur appelle PsExec.exe'outil pour exécuter des vérifications de connectivité cloud en tant que système local et émuler le comportement du service SENSE.
+- Pour Windows appareils, si vous exécutez l’analyseur directement sur des ordinateurs spécifiques et non à distance via [Live Response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log), SysInternals [PsExec.exe](/sysinternals/downloads/psexec) doit être autorisé (au moins temporairement) à s’exécuter. L’analyseur appelle PsExec.exe'outil pour exécuter des vérifications de connectivité cloud en tant que système local et émuler le comportement du service SENSE.
 
     > [!NOTE]
-    > Sur les appareils Windows, si vous utilisez des créations de processus de blocage de processus de réduction de la surface d’attaque (ASR) provenant de commandes [PSExec et WMI,](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)vous pouvez désactiver temporairement la règle ou configurer une exclusion à la règle [de](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) réduction de la surface d’attaque pour permettre à l’analyseur d’exécuter des vérifications de connectivité dans le cloud comme prévu.
+    > Sur les appareils Windows, si vous utilisez des créations de processus de blocage de processus de réduction de la surface d’attaque (ASR) provenant de commandes [PSExec et WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands), il se peut que vous vouliez désactiver temporairement la règle ou configurer une exclusion à la règle [de](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) réduction de la surface d’attaque pour permettre à l’analyseur d’exécuter des vérifications de connectivité dans le cloud comme prévu.

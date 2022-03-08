@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bc7b18088d25e47cd214da2df94ff5eb524f2e78
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: e0e2490fb9026ff23e55990930ddedeb48144b92
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171909"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315972"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Examiner les entités sur les appareils à l’aide de la réponse en direct
 
@@ -43,14 +43,14 @@ Avec la réponse en direct, les analystes peuvent effectuer toutes les tâches s
 - Exécutez des commandes de base et avancées pour faire des investigations sur un appareil.
 - Téléchargez des fichiers tels que des exemples de programmes malveillants et les résultats des scripts PowerShell.
 - Téléchargez des fichiers en arrière-plan (nouveau !).
-- Télécharger un script PowerShell ou un exécutable dans la bibliothèque et exécutez-le sur un appareil à partir d’un niveau client.
+- Télécharger script PowerShell ou exécutable dans la bibliothèque et exécutez-le sur un appareil à partir d’un niveau client.
 - Prendre ou annuler des actions de correction.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
 Avant de lancer une session sur un appareil, veillez à respecter les conditions suivantes :
 
-- **Vérifiez que vous exécutez une version prise** en charge de Windows .
+- **Vérifiez que vous exécutez une version prise en charge de Windows**.
 
   Les appareils doivent être en cours d’exécution dans l’une des versions suivantes Windows
 
@@ -74,26 +74,26 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
   - **Windows Server 2016** - avec [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
 
   - **Windows Server 2019**
-    - Version 1903 ou (avec [KB4515384)](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)ultérieure
-    - Version 1809 [(avec KB4537818)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - Version 1903 ou (avec [KB4515384) ultérieure](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
+    - Version 1809 ( [avec KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
     
   - **Windows Server 2022**
 
        
 
-- **Activez la réponse en direct à partir de la page paramètres avancés.**
+- **Activez la réponse en direct à partir de la page paramètres avancés**.
 
-  Vous devez activer la fonctionnalité de réponse en direct dans la page [Paramètres des fonctionnalités avancées.](advanced-features.md)
+  Vous devez activer la fonctionnalité de réponse en direct dans la page [Paramètres des fonctionnalités avancées](advanced-features.md) .
 
   > [!NOTE]
-  > Seuls les utilisateurs ayant des rôles d’administrateur global ou de sécurité peuvent modifier ces paramètres.
+  > Seuls les utilisateurs  ayant des rôles d’administrateur global ou de sécurité peuvent modifier ces paramètres.
 
 - **Activez la réponse en direct pour les serveurs à partir de la page paramètres avancés** (recommandé).
 
   > [!NOTE]
-  > Seuls les utilisateurs ayant des rôles d’administrateur global ou de sécurité peuvent modifier ces paramètres.
+  > Seuls les utilisateurs  ayant des rôles d’administrateur global ou de sécurité peuvent modifier ces paramètres.
 
-- **Assurez-vous qu’un niveau de correction Automation** est affecté à l’appareil.
+- **Assurez-vous qu’un niveau de correction Automation est affecté à l’appareil**.
 
   Vous devez activer, au moins, le niveau de correction minimal pour un groupe d’appareils donné. Sinon, vous ne pourrez pas établir une session Live Response à un membre de ce groupe.
 
@@ -101,7 +101,7 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
 
   ![Image du message d’erreur.](images/live-response-error.png)
 
-- **Activer l’exécution de scripts non signés de** réponse en direct (facultatif).
+- **Activer l’exécution de scripts non signés de réponse en** direct (facultatif).
 
   >[!IMPORTANT]
   >La vérification des signatures s’applique uniquement aux scripts PowerShell. 
@@ -109,14 +109,14 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
   > [!WARNING]
   > Autoriser l’utilisation de scripts non signés peut augmenter votre exposition aux menaces.
 
-  L’exécution de scripts non signés n’est pas recommandée, car elle peut augmenter votre exposition aux menaces. Si vous devez toutefois les utiliser, vous devez activer le paramètre dans la page [Paramètres des fonctionnalités avancées.](advanced-features.md)
+  L’exécution de scripts non signés n’est pas recommandée, car elle peut augmenter votre exposition aux menaces. Si vous devez toutefois les utiliser, vous devez activer le paramètre dans la page [Paramètres des fonctionnalités avancées](advanced-features.md) .
 
-- **Assurez-vous que vous avez les autorisations appropriées.**
+- **Assurez-vous que vous avez les autorisations appropriées**.
 
-  Seuls les utilisateurs qui ont été mis en service avec les autorisations appropriées peuvent lancer une session. Pour plus d’informations sur les attributions de rôles, voir [Créer et gérer des rôles.](user-roles.md)
+  Seuls les utilisateurs qui ont été mis en service avec les autorisations appropriées peuvent lancer une session. Pour plus d’informations sur les attributions de rôles, voir [Créer et gérer des rôles](user-roles.md).
 
   > [!IMPORTANT]
-  > L’option de téléchargement d’un fichier dans la bibliothèque est uniquement disponible pour les utilisateurs ayant l’autorisation « Gérer Paramètres sécurité ».
+  > L’option de téléchargement d’un fichier dans la bibliothèque est uniquement disponible pour les utilisateurs  ayant l’autorisation « Gérer Paramètres sécurité ».
   > Le bouton est grisé pour les utilisateurs qui n’ont que des autorisations déléguées.
 
   Selon le rôle qui vous a été accordé, vous pouvez exécuter des commandes de réponse en direct de base ou avancées. Les autorisations des utilisateurs sont contrôlées par le rôle personnalisé RBAC.
@@ -140,24 +140,24 @@ Le tableau de bord vous donne également accès à :
 
 1. Connectez-vous Microsoft 365 Defender portail.
 
-2. Accédez **aux points de terminaison >'inventaire** des appareils et sélectionnez un appareil à examiner. La page appareils s’ouvre.
+2. Accédez aux **points de terminaison >'inventaire** des appareils et sélectionnez un appareil à examiner. La page appareils s’ouvre.
 
-3. Lancez la session de réponse en direct en sélectionnant **Lancer une session de réponse en direct.** Une console de commande s’affiche. Patientez pendant que la session se connecte à l’appareil.
+3. Lancez la session de réponse en direct en sélectionnant **Lancer la session de réponse en direct**. Une console de commande s’affiche. Patientez pendant que la session se connecte à l’appareil.
 
-4. Utilisez les commandes intégrées pour faire des enquêtes. Pour plus d’informations, voir [commandes de réponse en direct.](#live-response-commands)
+4. Utilisez les commandes intégrées pour faire des enquêtes. Pour plus d’informations, voir [commandes de réponse En direct](#live-response-commands).
 
-5. Après avoir terminé votre enquête, sélectionnez **Déconnecter la session,** puis sélectionnez **Confirmer**.
+5. Après avoir terminé votre enquête, sélectionnez **Déconnecter la session**, puis **confirmez**.
 
 ## <a name="live-response-commands"></a>Commandes de réponse en direct
 
-Selon le rôle qui vous a été accordé, vous pouvez exécuter des commandes de réponse en direct de base ou avancées. Les autorisations utilisateur sont contrôlées par des rôles personnalisés RBAC. Pour plus d’informations sur les attributions de rôles, voir [Créer et gérer des rôles.](user-roles.md)
+Selon le rôle qui vous a été accordé, vous pouvez exécuter des commandes de réponse en direct de base ou avancées. Les autorisations utilisateur sont contrôlées par des rôles personnalisés RBAC. Pour plus d’informations sur les attributions de rôles, voir [Créer et gérer des rôles](user-roles.md).
 
 > [!NOTE]
 > La réponse en direct est un environnement de ligne de commande interactif basé sur le cloud, de ce fait, une expérience de commande spécifique peut varier en temps de réponse en fonction de la qualité du réseau et de la charge système entre l’utilisateur final et l’appareil cible.
 
 ### <a name="basic-commands"></a>Commandes de base
 
-Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont la possibilité d’exécuter des commandes de réponse **en** direct de base. Pour plus d’informations sur les attributions de rôles, voir [Créer et gérer des rôles.](user-roles.md)
+Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont la possibilité d’exécuter des commandes de **réponse en direct** de base. Pour plus d’informations sur les attributions de rôles, voir [Créer et gérer des rôles](user-roles.md).
 
 <br>
 
@@ -187,7 +187,7 @@ Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont
 
 ### <a name="advanced-commands"></a>Commandes avancées
 
-Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont la possibilité d’exécuter des **commandes** de réponse en direct avancées. Pour plus d’informations sur les attributions de rôles, voir [Créer et gérer des rôles.](user-roles.md)
+Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont la possibilité d’exécuter des **commandes** de réponse en direct avancées. Pour plus d’informations sur les attributions de rôles, voir [Créer et gérer des rôles](user-roles.md).
 
 <br>
 
@@ -209,7 +209,7 @@ Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont
 
 ## <a name="use-live-response-commands"></a>Utiliser des commandes de réponse en direct
 
-Les commandes que vous pouvez utiliser dans la console suivent les mêmes principes que [les commandes Windows.](/windows-server/administration/windows-commands/windows-commands#BKMK_c)
+Les commandes que vous pouvez utiliser dans la console suivent les mêmes principes que [Windows commands](/windows-server/administration/windows-commands/windows-commands#BKMK_c).
 
 Les commandes avancées offrent un ensemble plus robuste d’actions qui vous permettent d’exécuter des actions plus puissantes telles que télécharger et télécharger un fichier, exécuter des scripts sur l’appareil et prendre des mesures correctives sur une entité.
 
@@ -221,18 +221,18 @@ Pour les scénarios où vous souhaitez obtenir un fichier à partir d’un appar
 > Les limites de taille de fichier suivantes s’appliquent :
 >
 > - `getfile` limite : 3 Go
-> - `fileinfo` limite : 10 Go
+> - `fileinfo` limite : 30 Go
 > - `library` limite : 250 Mo
 
 ### <a name="download-a-file-in-the-background"></a>Télécharger un fichier en arrière-plan
 
 Pour permettre à votre équipe des opérations de sécurité de continuer à examiner un appareil touché, les fichiers peuvent désormais être téléchargés en arrière-plan.
 
-- Pour télécharger un fichier en arrière-plan, dans la console de commande de réponse en direct, tapez `download <file_path> &` .
+- Pour télécharger un fichier en arrière-plan, dans la console de commande de réponse en direct, tapez `download <file_path> &`.
 - Si vous attendez le téléchargement d’un fichier, vous pouvez le déplacer vers l’arrière-plan à l’aide de Ctrl + Z.
-- Pour mettre un téléchargement de fichier au premier plan, dans la console de commande de réponse en direct, tapez `fg <command_id>` .
+- Pour mettre un téléchargement de fichier au premier plan, dans la console de commande de réponse en direct, tapez `fg <command_id>`.
 
-Voici quelques exemples :
+Voici quelques exemples :
 
 <br>
 
@@ -241,7 +241,7 @@ Voici quelques exemples :
 |Commande|Comportement|
 |---|---|
 |`getfile "C:\windows\some_file.exe" &`|Commence à télécharger un fichier nommé *some_file.exe* en arrière-plan.|
-|`fg 1234`|Renvoie un téléchargement avec l’ID de commande *1234* au premier plan.|
+|`fg 1234`|Renvoie un téléchargement avec l’ID *de commande 1234* au premier plan.|
 |
 
 ### <a name="put-a-file-in-the-library"></a>Placer un fichier dans la bibliothèque
@@ -254,7 +254,7 @@ Vous pouvez avoir une collection de scripts PowerShell qui peuvent s’exécuter
 
 #### <a name="to-upload-a-file-in-the-library"></a>Pour télécharger un fichier dans la bibliothèque
 
-1. Cliquez **Télécharger fichier vers la bibliothèque.**
+1. Cliquez **Télécharger fichier vers la bibliothèque**.
 
 2. Cliquez **sur Parcourir** et sélectionnez le fichier.
 
@@ -264,7 +264,7 @@ Vous pouvez avoir une collection de scripts PowerShell qui peuvent s’exécuter
 
 5. Si vous le souhaitez, connaissez les paramètres nécessaires pour le script, cochez la case des paramètres de script. Dans le champ de texte, entrez un exemple et une description.
 
-6. Cliquez **sur Confirmer.**
+6. Cliquez sur **Confirmer**.
 
 7. (Facultatif) Pour vérifier que le fichier a été téléchargé vers la bibliothèque, exécutez la `library` commande.
 
@@ -279,9 +279,9 @@ Vous pouvez avoir une collection de scripts PowerShell qui peuvent s’exécuter
 
 Avant de pouvoir exécuter des scripts PowerShell/Bash, vous devez d’abord le télécharger dans la bibliothèque.
 
-Après avoir téléchargé le script dans la bibliothèque, utilisez `run` la commande pour exécuter le script.
+Après avoir téléchargé le script dans la bibliothèque, utilisez la commande `run` pour exécuter le script.
 
-Si vous prévoyez d’utiliser un script PowerShell non signé dans la session, vous devez activer le paramètre dans la page Paramètres des [fonctionnalités avancées.](advanced-features.md)
+Si vous prévoyez d’utiliser un script PowerShell non signé dans la session, vous devez activer le paramètre dans la page [Paramètres des fonctionnalités avancées](advanced-features.md) .
 
 > [!WARNING]
 > Autoriser l’utilisation de scripts non signés peut augmenter votre exposition aux menaces.
@@ -347,10 +347,11 @@ Sélectionnez **l’onglet Journal** de commandes pour voir les commandes utilis
 - Durée
 - Barre d’état et d’entrée ou de sortie
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 
 - Les sessions de réponse en direct sont limitées à 25 sessions de réponse en direct à la fois.
 - La valeur du délai d’inactivité de la session de réponse active est de 30 minutes.
+- Les commandes de réponse en direct individuelles ont une limite de temps de 10 minutes, à l’exception `getfile`de , `findfile``run`et , qui ont une limite de 30 minutes.
 - Un utilisateur peut démarrer jusqu’à 10 sessions simultanées.
 - Un appareil ne peut être connecté qu’à une seule session à la fois.
 - Les limites de taille de fichier suivantes s’appliquent :

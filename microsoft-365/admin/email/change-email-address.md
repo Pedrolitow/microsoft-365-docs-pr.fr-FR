@@ -2,8 +2,8 @@
 title: Changer votre adresse de courrier pour utiliser votre domaine personnalisé
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: Modifiez votre adresse e-mail en une adresse de messagerie conviviale comme tom@fourthcoffee.com en achetant un nom de domaine et en l’ajoutant à Microsoft 365.
-ms.openlocfilehash: f388bfcea3131df6a66733c940ed2f566827d2e5
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 4630b3df4719611440e92801235fde20d7bd95f4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370571"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316420"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Changer votre adresse de courrier pour utiliser votre domaine personnalisé
 
@@ -46,11 +46,11 @@ Votre adresse de messagerie initiale dans Microsoft 365 inclut .onmicrosoft.com,
 
 ::: moniker range="o365-21vianet"
 
-Votre adresse de messagerie initiale dans Office 365 géré par 21Vianet inclut des partner.onmschina.cn, comme tom@fourthcoffee.partner.onmschina.cn. Vous pouvez la modifier en une adresse plus conviviale comme tom@fourthcoffee.cn. Vous aurez besoin de votre propre nom de domaine, comme fourthcoffee.cn d’abord. Si c'est déjà le cas, tant mieux. Sinon, découvrez comment en [acheter un auprès d'un bureau d'enregistrement de domaines](../get-help-with-domains/buy-a-domain-name.md).
+Votre adresse de messagerie initiale dans Office 365 géré par 21Vianet inclut partner.onmschina.cn, comme tom@fourthcoffee.partner.onmschina.cn. Vous pouvez la modifier en une adresse plus conviviale comme tom@fourthcoffee.cn. Vous aurez besoin de votre propre nom de domaine, comme fourthcoffee.cn d’abord. Si c'est déjà le cas, tant mieux. Sinon, découvrez comment en [acheter un auprès d'un bureau d'enregistrement de domaines](../get-help-with-domains/buy-a-domain-name.md).
 
 ::: moniker-end
 
-Lorsque vous modifiez le courrier électronique de votre domaine pour qu’il arrive à Microsoft 365, en mettant à jour l’enregistrement MX de votre domaine lors de l’installation, tous les messages envoyés à ce domaine commenceront à Microsoft 365. Assurez-vous que vous avez ajouté des utilisateurs et créé des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui ont des messages sur votre domaine AVANT de modifier l’enregistrement MX. Vous ne souhaitez pas déplacer le courrier électronique de tous les personnes de votre domaine vers Microsoft 365 ? Vous pouvez prendre des mesures pour [piloter Microsoft 365 avec seulement quelques adresses e-mail à la place.](../misc/pilot-microsoft-365-from-my-custom-domain.md)
+Lorsque vous modifiez le courrier électronique de votre domaine pour qu’il arrive à Microsoft 365, en mettant à jour l’enregistrement MX de votre domaine lors de l’installation, tous les messages envoyés à ce domaine commenceront à Microsoft 365. Assurez-vous que vous avez ajouté des utilisateurs et créé des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui ont des messages sur votre domaine AVANT de modifier l’enregistrement MX. Vous ne souhaitez pas déplacer le courrier électronique de tous les personnes de votre domaine vers Microsoft 365 ? Vous pouvez prendre des mesures pour [piloter Microsoft 365 avec seulement quelques adresses de messagerie à la place](../misc/pilot-microsoft-365-from-my-custom-domain.md).
   
 ## <a name="set-up-business-email-with-a-new-domain"></a>Configurer la messagerie professionnelle avec un nouveau domaine
 
@@ -84,17 +84,17 @@ Vous devez être un Administrateur général pour procéder à ces étapes.
 
 ::: moniker range="o365-21vianet"
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>admin center at .
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn</a>.
 
 ::: moniker-end
 
-2. Go to the **Setup**  >  **Domains** page.
+2. Go to the **SetupDomains**  >  page.
 
 3. Dans la page **Domaines**, sélectionnez **Ajouter un domaine**.
 
 4. Suivez les étapes pour confirmer que vous êtes propriétaire de votre domaine. Vous serez guidé pour que tout soit correctement installé avec votre domaine dans Microsoft 365.
 
-5. Go to **Users**  >  **Active users**.
+5. Go to **UsersActive** >  **users**.
 
 6. Sélectionnez un utilisateur pour modifier son nom d’utilisateur et changez-le en domaine que vous avez ajouté.
 

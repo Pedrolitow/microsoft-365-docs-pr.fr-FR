@@ -2,8 +2,8 @@
 title: Score de productivité Microsoft - Confidentialité
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Protection de la confidentialité par le score de productivité.
-ms.openlocfilehash: 1bbc9c7459d29e9aef8dea102d1d98eed9c30550
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 94e0e1fb3190bc45fb0ad580cd823cb121fb60cf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178226"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320730"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Contrôles de confidentialité pour le score de productivité
 
-Le Score de productivité fournit des informations sur la transformation numérique de votre organisation tout au long de son utilisation des Microsoft 365 et des expériences technologiques qui la supportent.  Le score de votre organisation reflète les mesures de l’expérience des personnes et des technologies et peut être comparé aux critères d’organisations similaires aux vôtres. Pour plus d’informations, consultez la vue [d’ensemble du score de productivité.](productivity-score.md)
+Le Score de productivité fournit des informations sur la transformation numérique de votre organisation tout au long de son utilisation des Microsoft 365 et des expériences technologiques qui la supportent.  Le score de votre organisation reflète les mesures de l’expérience des personnes et des technologies et peut être comparé aux critères d’organisations similaires aux vôtres. Pour plus d’informations, consultez la vue [d’ensemble du Score de productivité](productivity-score.md).
 
-Votre confidentialité est importante pour Microsoft. Pour découvrir comment nous protégeons votre confidentialité, consultez [la déclaration de confidentialité de Microsoft.](https://privacy.microsoft.com/privacystatement) Le Score de productivité vous permet, en tant qu’administrateur informatique de votre organisation, d’accéder aux paramètres de confidentialité pour vous aider à vous assurer que les informations du Score de productivité que vous visualisez sont actionnables, sans compromettre la confiance que votre organisation place dans Microsoft.
+Votre confidentialité est importante pour Microsoft. Pour découvrir comment nous protégeons votre confidentialité, consultez la [déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/privacystatement). Le Score de productivité vous permet, en tant qu’administrateur informatique de votre organisation, d’accéder aux paramètres de confidentialité pour vous aider à vous assurer que les informations du Score de productivité que vous visualisez sont actionnables, sans compromettre la confiance que votre organisation place dans Microsoft.
 
 Dans le domaine des expériences des personnes, les mesures sont disponibles au niveau de l’organisation uniquement. Ce domaine examine la façon dont les utilisateurs Microsoft 365 en regardant les catégories de collaboration, mobilité, réunions, travail d’équipe et communication de contenu. Nous vous permettons d’avoir plusieurs niveaux de contrôles pour vous aider à répondre à vos besoins en matière de politique de confidentialité interne.
 Les contrôles vous donnent :
@@ -50,9 +50,9 @@ Pour afficher l’intégralité du score de productivité, vous devez être l’
 - Lecteur de rapports
 - Lecteur Rapports de synthèse de l’utilisation
 
-Attribuez le rôle lecteur de rapports ou De synthèse de l’utilisation à toute personne responsable de la gestion et de l’adoption des changements, mais pas nécessairement un administrateur informatique. Ce rôle leur donne accès à l’expérience de score de productivité complète dans le Centre d Microsoft 365'administration.
+Attribuez le rôle Lecteur de rapports ou Rapport de synthèse de l’utilisation à toute personne responsable de la gestion et de l’adoption des changements, mais pas nécessairement un administrateur informatique. Ce rôle leur donne accès à l’expérience de score de productivité complète dans le Centre d Microsoft 365'administration.
 
-Le rôle lecteur rapports de synthèse de l’utilisation devra être attribué par le biais des cmdlets PowerShell jusqu’à ce qu’il soit affecté à partir du Centre d'administration Microsoft 365 plus tard en 2020.
+Le rôle lecteur rapports de synthèse de l’utilisation devra être attribué par le biais d’cmdlets PowerShell jusqu’à ce qu’il soit affecté à partir du Centre d'administration Microsoft 365 ultérieurement en 2020.
 
 Pour attribuer le rôle lecteur rapports de synthèse de l’utilisation avec PowerShell :
 
@@ -76,8 +76,8 @@ Vous pouvez également refuser le domaine expériences des personnes du Score de
 
 Pour refuser :
 
-1. Dans le Centre d’administration, Paramètres    >   **Org Paramètres**  >  **Productivity Score**.
-2. Désochez la case qui indique Autoriser **Microsoft 365'utilisation à utiliser pour** les informations sur les expériences utilisateur. Pour comprendre comment modifier les paramètres de partage de données pour Endpoint Analytics dans le Gestionnaire de configuration Intune, sélectionnez **En savoir plus.**
-3. Sélectionnez **Enregistrer.**
+1. Dans le Centre d’administration, Paramètres   >  **Org Paramètres** >  **Score deproductivité**.
+2. Désochez la case qui indique Autoriser **Microsoft 365'utilisation** à utiliser pour les informations d’expérience utilisateur. Pour comprendre comment modifier les paramètres de partage de données pour Endpoint Analytics dans le Gestionnaire de configuration Intune, sélectionnez **En savoir plus**.
+3. **Sélectionnez Enregistrer**.
 
 :::image type="content" source="../../media/orgsettingspageoptout.png" alt-text="Page des paramètres de l’organisation dans laquelle vous pouvez refuser les expériences de personnes.":::

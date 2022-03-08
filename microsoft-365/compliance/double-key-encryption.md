@@ -4,7 +4,7 @@ description: DKE vous permet de protéger les données hautement sensibles tout 
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 01/29/2021
+ms.date: 02/28/2022
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: dd445fae8f344be68726fd9dda6457badc18f5c5
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: b16733a1d42ca245f096038f567be6fbd0c3fb2a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767447"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320604"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Chiffrement à double clé pour Microsoft 365
 
@@ -71,7 +71,7 @@ Les étiquettes de sensibilité DKE sont disponibles pour les utilisateurs finau
 
 ## <a name="supported-environments-for-storing-and-viewing-dke-protected-content"></a>Environnements pris en charge pour le stockage et l’affichage de contenu protégé par le DKE
 
-**Applications pris en charge**. [Applications Microsoft 365 pour les grandes entreprises](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) clients sur Windows, y compris Word, Excel et PowerPoint.
+**Applications pris en charge**. [Applications Microsoft 365 pour les grandes entreprises](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) clients sur Windows, notamment Word, Excel et PowerPoint.
 
 **Prise en charge du contenu en ligne**. Vous pouvez stocker des documents et des fichiers protégés par chiffrement à double clé en ligne dans Microsoft SharePoint et OneDrive Entreprise. Vous devez étiqueter et protéger les documents et les fichiers avec DKE par les applications pris en charge avant de les télécharger vers ces emplacements. Vous pouvez partager du contenu chiffré par courrier électronique, mais vous ne pouvez pas afficher les documents et fichiers chiffrés en ligne. Au lieu de cela, vous devez afficher le contenu protégé à l’aide des applications de bureau et des clients pris en charge sur votre ordinateur local.
 
@@ -81,7 +81,7 @@ Vous devez suivre ces étapes générales pour configurer DKE. Une fois ces éta
 
 1. Déployez le service DKE comme décrit dans cet article.
 
-2. Créez une étiquette avec le chiffrement à double clé. Dans la Centre de conformité Microsoft 365, accédez à Protection des **informations** et créez une étiquette avec chiffrement à double clé. Voir [Restreindre l’accès au contenu à l’aide d’étiquettes de sensibilité pour appliquer le chiffrement](./encryption-sensitivity-labels.md).
+2. Créez une étiquette avec le chiffrement à double clé. Dans la Centre de conformité Microsoft 365, accédez à **Protection des informations** et créez une étiquette avec chiffrement à double clé. Voir [Restreindre l’accès au contenu à l’aide d’étiquettes de sensibilité pour appliquer le chiffrement](./encryption-sensitivity-labels.md).
 
 3. Utilisez des étiquettes de chiffrement à double clé. Protégez les données en sélectionnant l’étiquette Chiffrement à double clé à partir du ruban Niveau de Microsoft Office.
 
@@ -115,7 +115,7 @@ Installez ces éléments prérequis sur l’ordinateur sur lequel vous souhaitez
 
 **SDK .NET Core 3.1**. Téléchargez et installez le SDK à partir [de Download .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1).
 
-**Visual Studio Code**. Téléchargez Visual Studio Code à partir de [https://code.visualstudio.com/](https://code.visualstudio.com). Une fois installé, exécutez Visual Studio Code et **sélectionnez Afficher** \> **les extensions**. Installez ces extensions.
+**Visual Studio Code**. Télécharger Visual Studio Code à partir de [https://code.visualstudio.com/](https://code.visualstudio.com). Une fois installé, exécutez Visual Studio Code et **sélectionnez Afficher** \> **les extensions**. Installez ces extensions.
 
 - C# pour Visual Studio Code
 
@@ -146,7 +146,7 @@ Les instructions suivantes sont destinées aux utilisateurs git ou Visual Studio
    > [!div class="mx-imgBorder"]
    > ![Clonez le référentiel du service de chiffrement à double clé à partir GitHub.](../media/dke-clone.png)
 
-3. Dans Visual Studio Code, **sélectionnez Afficher** \> la **palette de** commandes et **sélectionnez Git: Clone**. Pour passer à l’option dans la liste, `git: clone` commencez à taper pour filtrer les entrées, puis sélectionnez-la dans la liste. Par exemple :
+3. Dans Visual Studio Code, sélectionnez **Afficher** \> la **palette de** commandes et **sélectionnez Git: Clone**. Pour passer à l’option dans la liste, `git: clone` commencez à taper pour filtrer les entrées, puis sélectionnez-la dans la liste. Par exemple :
 
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Code’option GIT:Clone.](../media/dke-vscode-clone.png)
@@ -505,7 +505,7 @@ Pour inscrire le service DKE :
    Par exemple : `https://mydkeservicetest.com`
 
    - L’URL que vous entrez doit correspondre au nom d’hôte où votre service DKE est déployé.
-   - Le domaine doit être [un domaine enregistré](/azure/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains).
+   - Le domaine doit être [un domaine vérifié](/azure/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains).
    - Si vous testez localement avec Visual Studio, utilisez `https://localhost:5001`.
    - Dans tous les cas, le schéma doit être **https**.
 
@@ -581,7 +581,7 @@ Si vous ne migrez pas de contenu, votre contenu protégé HYOK reste inchangé.
 
 Nous sommes conscients que pour certains clients dans des secteurs hautement réglementés, cette implémentation de référence standard à l’aide de clés logicielles peut ne pas être suffisante pour répondre à leurs obligations et besoins de conformité renforcées. Nous avons travaillé en partenariat avec des fournisseurs de modules de sécurité matérielle (HSM) tiers pour prendre en charge les options de gestion des clés améliorées dans le service DKE, notamment :
 
- - [Entrust](https://www.entrust.com/digital-security/hsm/services/packaged-services/double-key-encryption-integration#:~:text=Entrust%20Double%20Key%20Encryption%20for%20Microsoft%20AIP%2C%20offered,trust%20for%20the%20protection%20of%20sensitive%20cryptographic%20keys.)
+- [Entrust](https://www.entrust.com/digital-security/hsm/services/packaged-services/double-key-encryption-integration#:~:text=Entrust%20Double%20Key%20Encryption%20for%20Microsoft%20AIP%2C%20offered,trust%20for%20the%20protection%20of%20sensitive%20cryptographic%20keys.)
 
 - [Tsézé](https://cpl.thalesgroup.com/cloud-security/encryption/double-key-encryption)
 

@@ -1,7 +1,7 @@
 ---
 title: Prise en main du contrôle d’application
 description: Cet article explique comment activer le contrôle d’application
-keywords: 'Bureau géré Microsoft, Microsoft 365, service, documentation'
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: tiaraquan
 ms.author: tiaraquan
@@ -10,8 +10,13 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
+ms.openlocfilehash: a671bf36e957ffc416f51ec531aaeed6ddfa41b3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315398"
 ---
-
 # <a name="get-started-with-app-control"></a>Prise en main du contrôle d’application
 
 Avant d’activer le contrôle d’application dans votre environnement, n’oubliez pas de passer en revue et de comprendre comment Microsoft Manged Desktop l’implémente, ainsi que vos [rôles](../service-description/app-control.md) et responsabilités.
@@ -22,7 +27,7 @@ Vos administrateurs informatiques doivent tester vos applications dans l’annea
 
 ## <a name="initial-deployment-of-apps"></a>Déploiement initial des applications
 
-Lorsque vous déployez des applications pour la première fois, Microsoft Manged Desktop doit évaluer leur comportement actuel. Les étapes exactes d’activation du contrôle d’application varient selon que des appareils ont déjà été déployés dans votre environnement.
+Lorsque vous déployez des applications pour la première fois, Microsoft Manged Desktop devez évaluer leur comportement actuel. Les étapes exactes d’activation du contrôle d’application varient selon que des appareils ont déjà été déployés dans votre environnement.
 
 ### <a name="devices-not-yet-in-use"></a>Appareils pas encore utilisés
 
@@ -41,7 +46,7 @@ Vous pouvez toujours ouvrir une autre demande de support pour suspendre ou reven
 
 Si vous avez déjà au moins Microsoft Manged Desktop appareil en cours d’utilisation, suivez les étapes suivantes :
 
-1. Ouvrez un ticket de service avec Microsoft Manged Desktop opérations de demande d’activer le contrôle d’application. Les opérations déploient une [stratégie d’audit](../service-description/app-control.md#audit-policy) sur tous les appareils.
+1. Ouvrez un ticket de service avec Microsoft Manged Desktop Operations demandant que nous ouvrez le contrôle d’application. Les opérations déploient une [stratégie d’audit](../service-description/app-control.md#audit-policy) sur tous les appareils.
 2. [Testez vos applications](../working-with-managed-desktop/work-with-app-control.md#add-a-new-app) pour voir si certaines d’entre elles sont bloquées. Si une application est bloquée, ouvrez une demande [de signataire](../working-with-managed-desktop/work-with-app-control.md#add-or-remove-a-trusted-signer).
 3. Une fois que vous avez terminé vos tests (quels que soient les résultats), informez les opérations, en notant les demandes de signataire en attente. Les opérations déploieront progressivement des stratégies dans des groupes de déploiement en suivant cette planification :
 
@@ -62,7 +67,7 @@ Vous pouvez toujours ouvrir une autre demande de support pour suspendre ou reven
 1. Déployez et affectez le[Portail d’entreprise Intune](company-portal.md).
 1. [Attribuer des licences](assign-licenses.md).
 1. [Déployer des applications](deploy-apps.md).
-1. [Configurer les appareils](set-up-devices.md).
+1. [Préparez les appareils](prepare-devices.md).
 1. Configurez l’[Expérience de première exécution avec Autopilot et la page d’état d’inscription](esp-first-run.md).
 1. [Activer les fonctionnalités de support utilisateur](enable-support.md).
 1. [Préparez vos utilisateurs à utiliser des appareils](get-started-devices.md).

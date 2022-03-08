@@ -15,28 +15,23 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 774bad728b8cac0eadf71c3b97ceff0b1f9aabc8
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 11f2c6202d31a3715a73b189648dcef0ade79b0b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165185"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322868"
 ---
 # <a name="provide-feedback-on-the-microsoft-defender-for-endpoint-client-analyzer-tool"></a>Fournir des commentaires sur l’outil d’analyseur client Microsoft Defender for Endpoint
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-Si vous avez des commentaires ou des suggestions qui nous aideraient à améliorer l’analyseur client Microsoft Defender pour Endpoint, utilisez l’une des options suivantes pour envoyer vos commentaires :
+Si vous avez des commentaires ou des suggestions qui nous aideraient à améliorer l’analyseur client Microsoft Defender pour Endpoint, utilisez le lien suivant pour envoyer vos commentaires :
 
-1. Portail Microsoft Defender pour les points de terminaison (securitycenter.windows.com) :
+Microsoft 365 Defender portail (security.microsoft.com) :
 
-    ![Image de l’icône de retour de souris.](images/3e2db5015cd4f47436b4765b2303f4f5.png)
-
-2. Microsoft 365 Defender portail (security.microsoft.com) :
-
-    ![Image du bouton Donner un retour d’expérience.](images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png)
+![Image du bouton Donner un retour d’expérience.](images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png)

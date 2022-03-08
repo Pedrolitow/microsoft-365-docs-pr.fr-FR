@@ -2,8 +2,8 @@
 title: Configurer l’intégration Microsoft 365 prise en charge avec Azure AD auth
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -17,18 +17,18 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guide de configuration et d’installation d’applications certifiées étendues pour ServiceNow.
-ms.openlocfilehash: f8bc7ee4647bf14521b9d29f616539acb95e7495
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 9f9985e07989f168f9b27dde1c1d574813c3f349
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295179"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320898"
 ---
 # <a name="configure-microsoft-365-support-integration-with-azure-ad-auth-token"></a>Configurer l’intégration Microsoft 365 prise en charge avec Azure AD auth
 
 ## <a name="prerequisites-azure-ad-auth-token"></a>Prerequisites (Azure AD Auth Token)
 
-Ces conditions préalables sont nécessaires pour configurer la prise en charge Microsoft 365 l’intégration.
+Ces conditions préalables sont nécessaires pour configurer la prise en charge Microsoft 365'intégration.
 
 1. \[AAD admin\] Créez Azure AD application pour le trafic sortant sous votre Microsoft 365 client.
 
@@ -44,7 +44,7 @@ Ces conditions préalables sont nécessaires pour configurer la prise en charge 
 
 1. Obtenez l’ID client de l’application, créez une secret client et obtenez cette valeur.
 
-1. \[AAD admin\] Créez une API Azure AD application pour Rest sous votre Microsoft 365 client.
+1. \[AAD admin\] Créez une API application Azure AD Rest sous votre client Microsoft 365 client.
 
     1. Connectez-vous au [portail Azure](https://portal.azure.com/) à l’Microsoft 365 vos informations d’identification client et allez sur la page d’inscription de l’application pour créer une application.
 
@@ -66,7 +66,7 @@ Ces conditions préalables sont nécessaires pour configurer la prise en charge 
 
 1. \[L’administrateur\] ServiceNow a installé le fournisseur OAuth sortant dans ServiceNow.
 
-    Si l’étendue n’est pas définie sur **Global**, **&gt; &gt;** naviguez jusqu’Paramètres Applications de développeur et basculez vers **Global**.
+    Si l’étendue n’est pas définie sur **Global**, pour ce faire, **&gt; &gt;** naviguez jusqu’Paramètres Applications de développeur et basculez vers **Global**.
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="Interface utilisateur graphique, texte, application, conversation ou message texte Description générés automatiquement":::
 
@@ -76,7 +76,7 @@ Ces conditions préalables sont nécessaires pour configurer la prise en charge 
 
     - ID client : il s’agit de l’ID client de l’application créée à l’étape 1 des conditions préalables (Azure AD auth Token).\#
 
-    - Secret client : il s’agit de la valeur de la secret client de l’application créée à l’étape 1 des conditions préalables (Azure AD auth).\#
+    - Secret client : il s’agit de la valeur de la secret client de l’application créée à l’étape 1 des conditions préalables (Azure AD auth Token).\#
 
     - Type d’octroi par défaut : informations d’identification du client
 
@@ -88,7 +88,7 @@ Ces conditions préalables sont nécessaires pour configurer la prise en charge 
 
 1. \[Administration de ServiceNow\] Pour configurer le fournisseur OIDC dans ServiceNow, consultez la [documentation en ligne](https://docs.servicenow.com/bundle/quebec-platform-administration/page/administer/security/task/add-OIDC-entity.html).
 
-    Si l’étendue n’est pas définie sur **Global**, **&gt; &gt; Paramètres Applications** de développeur et passez à **Global**.
+    Si l’étendue n’est pas définie sur **Global**, Paramètres **&gt; &gt; Applications** de développeur et passez à **Global**.
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="Interface utilisateur graphique, texte, application, conversation ou message texte Description générés automatiquement":::
 
@@ -102,7 +102,7 @@ Ces conditions préalables sont nécessaires pour configurer la prise en charge 
 
     - URL de métadonnées OIDC : `https://login.microsoftonline.com/{microsoft-365-tenant-name}/.well-known/openid-configuration`
 
-    - UserClaim: **appId**
+    - UserClaim: **appid**
 
     - UserField : **ID utilisateur**
 
@@ -132,7 +132,7 @@ Ces conditions préalables sont nécessaires pour configurer la prise en charge 
 
 ## <a name="optional-allow-the-services-ip-addresses-to-microsoft-365-support-integration"></a>\[FACULTATIF\] Autoriser les adresses IP du service à prendre en charge Microsoft 365'intégration
 
-Si votre entreprise limite l’accès à Internet avec vos propres stratégies, activez l’accès réseau pour le service de prise en charge de Microsoft 365 en permettant les adresses IP ci-dessous pour l’accès à l’API entrante et sortante.
+Si votre entreprise limite l’accès à Internet avec vos propres stratégies, activez l’accès réseau pour le service de prise en charge Microsoft 365 en permettant les adresses IP ci-dessous pour l’accès à l’API entrante et sortante.
 
 - 52.149.152.32
 
@@ -188,7 +188,7 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
 1. \[L’administrateur\] ServiceNow configure les paramètres entrants.
     1. Configurez l’application AAD entrante.
-    1. Après avoir suivi les instructions de la section Conditions préalables, cliquez sur Terminé pour passer à l’étape suivante. Dans le cas contraire, suivez les instructions pour créer l’AAD’inscription de l’application pour la connectivité entrante.
+    1. Après avoir suivi les instructions de la section Conditions préalables, cliquez sur Terminé pour passer à l’étape suivante. Sinon, suivez les instructions pour créer l’AAD’application pour la connectivité entrante.
     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-6.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-6.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
     1. Configurez le fournisseur openid externe ServiceNow Connecter (fournisseur OIDC).
     1. Après avoir suivi les instructions de la section Conditions préalables, sélectionnez l’entité nouvellement créée, puis cliquez sur Terminé. Sinon, suivez les instructions pour créer l’entité dans ServiceNow, puis sélectionnez l’inscription de l’application fournisseur OIDC externe.
@@ -210,7 +210,7 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
     1. Configurez les paramètres d’intégration de la prise en charge :
 
-    Sélectionnez **l’onglet** Informations de base >'outil de **support** >  **interneServiceNow**, puis entrez la valeur **de l’ID** de l’application sortante dans **l’ID d’application** pour émettre le champ Jeton auth. Cet ID d’application sortante se trouve à l’étape 6 : terminer l’intégration, qui a été créée dans [prerequisites (Azure AD Auth Token).](#prerequisites-azure-ad-auth-token).
+    Sélectionnez **l’onglet** Informations de base >'outil  >  de support **interneServiceNow**, puis entrez la valeur **de l’ID** de l’application sortante dans **l’ID d’application** pour émettre le champ Jeton auth. Cet ID d’application sortante se trouve à l’étape 6 : terminer l’intégration, qui a été créée dans [prerequisites (Azure AD Auth Token).](#prerequisites-azure-ad-auth-token)
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
@@ -220,15 +220,15 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
     - Point de terminaison **: valeur de point** de terminaison de « Étape 6 - Terminer l’intégration ».
 
-    - Type d’authentification **: sélectionnez AAD auth**.
+    - Type d’authentification **: sélectionnez AAD authentification**.
 
     - ID client : valeur **de l’ID client** de l’étape 6 : terminer l’intégration.
 
     - Secret client : secret du fournisseur OAuth entrant créé à l’étape 2 des conditions préalables (Azure AD auth).\#
 
-    - Nom d’utilisateur  restant : valeur du nom d’utilisateur de l’étape 6 : terminer l’intégration, qui est **l’ID client** de l’application créée à l’étape 3 des conditions préalables (jeton \#d’th Azure AD).
+    - Nom d’utilisateur  restant : valeur du nom d’utilisateur de l’étape 6 : terminer l’intégration, qui est **l’ID client** de l’application créée à l’étape 3 des conditions préalables (jeton d’th Azure AD).\#
 
-    - Mot de passe de l’utilisateur rest : secret d’application de l’application créée à l’étape Azure AD \#3.
+    - Mot de passe de l’utilisateur rest : secret d’application de l’application créée à l’étape 3 des conditions préalables (Azure AD auth).\#
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image31.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image31.png" alt-text="Interface utilisateur graphique, description de l’application générée automatiquement":::
 
@@ -237,12 +237,12 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
     1. **Sélectionnez Suivant** pour terminer l’intégration.
 
    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-10.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-10.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
-    L’Microsoft 365 d’intégration de prise en charge exécutera des tests pour s’assurer que l’intégration fonctionne. En cas de problème avec la configuration, un message d’erreur explique ce qui doit être résolu. Sinon, l’application est prête.
+    L’Microsoft 365 prise en charge de l’intégration exécutera des tests pour s’assurer que l’intégration fonctionne. En cas de problème avec la configuration, un message d’erreur explique ce qui doit être résolu. Sinon, l’application est prête.
     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-11.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-11.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
 1. \[L’administrateur\] ServiceNow active l’intégration du support Microsoft pour un utilisateur existant.
 
-    Microsoft 365 prise en charge de l’intégration est activée pour l’utilisateur avec l’un des rôles ci-après :
+    Microsoft 365'intégration de la prise en charge est activée pour l’utilisateur avec l’un des rôles ci-après :
 
     - xmiomsm365assis.insightsuser\_\_\_\_
 

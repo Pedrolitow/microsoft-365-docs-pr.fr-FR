@@ -2,8 +2,8 @@
 title: Annuler l'assignation des licences aux utilisateurs
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: sinakassaw, nicholak
 audience: Admin
@@ -15,24 +15,24 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- commerce_licensing
 - AdminSurgePortfolio
 - okr_smb
 - manage_licenses
-- commerce_licensing
 - AdminTemplateSet
 search.appverid: MET150
 description: La méthode que vous utilisez pour désattribuer des licences de produits varie selon que vous désattribuez des licences à des utilisateurs spécifiques ou à un produit spécifique.
 ms.date: 09/16/2021
-ms.openlocfilehash: 37475b1cc82b5b17ca15d030a06c31ce0cc3e72b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 7308888c54a30cdd11618cb07a233f8bd55f27c2
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61369947"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321206"
 ---
 # <a name="unassign-licenses-from-users"></a>Annuler l'assignation des licences aux utilisateurs
 
-Vous pouvez désattribuer des licences à des utilisateurs sur la page **Utilisateurs** actifs ou sur la page **Licences.** La méthode que vous utilisez varie selon que vous souhaitez soit désattribuer des licences de produits à des utilisateurs spécifiques, soit désattribuer des licences d’utilisateurs à partir d’un produit spécifique.
+Vous pouvez désattribuer des licences à des utilisateurs sur la page **Utilisateurs** actifs ou sur la page **Licences** . La méthode que vous utilisez varie selon que vous souhaitez soit désattribuer des licences de produits à des utilisateurs spécifiques, soit désattribuer des licences d’utilisateurs à partir d’un produit spécifique.
 
 > [!NOTE]
 > 
@@ -66,9 +66,9 @@ Lorsque vous utilisez la page **Licences** pour désattribuer des licences, vous
 
 3. Sélectionnez les utilisateurs pour lesquels vous souhaitez désattribuer des licences.
 
-4. Sélectionnez **Désattribuer des licences.**
+4. **Sélectionnez Désattribuer des licences**.
 
-5. In the **Unassign licenses** box, select **Unassign**.
+5. Dans la **zone Désattribuer les licences** , **sélectionnez Désattribuer**.
 
 ## <a name="use-the-active-users-page-to-unassign-licenses"></a>Utiliser la page Utilisateurs actifs pour désattribuer des licences
 
@@ -92,7 +92,7 @@ Lorsque vous utilisez la page **Utilisateurs actifs** pour désattribuer des lic
 
 3. Dans le volet de droite, sélectionnez **Licences et applications**.
 
-4. Développez la section **Licences,** désélectionnez les zones des licences que vous souhaitez désattribuer, puis sélectionnez **Enregistrer les modifications.**
+4. Développez **la section Licences** , désélectionnez les zones des licences que vous souhaitez désattribuer, puis sélectionnez **Enregistrer les modifications**.
 
 ### <a name="unassign-licenses-from-multiple-users"></a>Désattribuer des licences à plusieurs utilisateurs
 
@@ -112,22 +112,22 @@ Lorsque vous utilisez la page **Utilisateurs actifs** pour désattribuer des lic
 
 3. Dans la partie supérieure, sélectionnez **Gérer des licences de produits**.
 
-4. Dans le **volet Gérer les licences de** produits, **sélectionnez Désattribuer toutes les modifications**  >  **d’enregistrer.**
+4. Dans le **volet Gérer les licences de** produits, **sélectionnez Désattribuer toutes les modifications** > **.**
 
-5. En bas du volet, sélectionnez **Terminé.**  
+5. En bas du volet, sélectionnez **Terminé**.  
 
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>Qu’advient-il des données d’un utilisateur lorsque vous supprimez sa licence ?
 
 - Lorsqu’une licence est supprimée d’un utilisateur, Exchange données en ligne associées à ce compte sont détenues pendant 30 jours. Après la période de grâce de 30 jours, les données sont supprimées et ne peuvent pas être récupérées.
-- Les fichiers enregistrés dans OneDrive Entreprise ne sont pas supprimés, sauf si l’utilisateur est supprimé du Centre d'administration Microsoft 365 ou supprimé via la synchronisation Active Directory. Pour plus d’informations, [voir OneDrive rétention et suppression.](/onedrive/retention-and-deletion)
+- Les fichiers enregistrés OneDrive Entreprise ne sont pas supprimés, sauf si l’utilisateur est supprimé du Centre d'administration Microsoft 365 ou est supprimé via la synchronisation Active Directory. Pour plus d’informations, [voir OneDrive rétention et suppression](/onedrive/retention-and-deletion).
 - Lorsque la licence est supprimée, la boîte aux lettres de l’utilisateur n’est plus utilisable dans une recherche à l’aide d’un outil eDiscovery tel que la recherche de contenu ou Advanced eDiscovery. Pour plus d’informations, voir « Recherche de boîtes aux lettres déconnectées ou déconnectées » dans la recherche de [contenu dans Microsoft 365](../../compliance/content-search.md).
-- Si vous avez un abonnement Enterprise, comme Office 365 Entreprise E3, Exchange Online vous permet de conserver les données de boîte aux lettres d’un compte d’utilisateur supprimé à l’aide de boîtes aux lettres [inactives.](../../compliance/inactive-mailboxes-in-office-365.md) Pour plus d’informations, voir [Créer et gérer des boîtes aux lettres inactives dans Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
-- Pour savoir comment bloquer l’accès d’un utilisateur aux données Microsoft 365 après la suppression de sa licence et comment accéder aux données par la suite, voir Supprimer un [ancien employé.](../add-users/remove-former-employee.md)
-- Si vous supprimez la licence d’un utilisateur et que des applications Office sont toujours installées, les erreurs d’activation et de produit sans licence s’Office s’Office aux [utilisateurs.](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)
+- Si vous avez un abonnement Enterprise, comme Office 365 Entreprise E3, Exchange Online vous permet de conserver les données de boîte aux lettres d’un compte d’utilisateur supprimé à l’aide de boîtes aux lettres [inactives](../../compliance/inactive-mailboxes-in-office-365.md). Pour plus d’informations, voir [Créer et gérer des boîtes aux lettres inactives dans Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
+- Pour savoir comment bloquer l’accès d’un utilisateur aux données Microsoft 365 après la suppression de sa licence et comment accéder aux données par la suite, voir [Supprimer un ancien employé](../add-users/remove-former-employee.md).
+- Si vous supprimez la licence d’un utilisateur et que des applications Office sont toujours [installées, des erreurs d’activation](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) et de produit sans licence s’Office s’Office'
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
-Si vous ne comptez pas réattribuer les licences inutilisées à d’autres [utilisateurs,](../../managed-desktop/get-started/assign-licenses.md)envisagez de supprimer les [licences](../../commerce/licenses/buy-licenses.md) de votre abonnement afin de ne pas payer plus de licences que nécessaire.
+Si vous ne comptez pas réattribuer les licences inutilisées à d’autres [utilisateurs](../../managed-desktop/get-started/assign-licenses.md), envisagez de supprimer les [licences](../../commerce/licenses/buy-licenses.md) de votre abonnement afin de ne pas payer plus de licences que nécessaire.
 
 ## <a name="related-content"></a>Contenu associé
 

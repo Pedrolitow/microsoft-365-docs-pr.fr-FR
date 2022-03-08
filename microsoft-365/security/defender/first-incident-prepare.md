@@ -1,6 +1,6 @@
 ---
 title: Préparer votre posture de sécurité pour votre premier incident
-description: Définissez la posture Microsoft 365 de sécurité de votre client pour votre premier incident Microsoft 365 Defender.
+description: Définissez la posture Microsoft 365 de sécurité de votre client pour votre premier incident dans Microsoft 365 Defender.
 keywords: incidents, alertes, enquêter, corrélation, attaque, machines, appareils, utilisateurs, identités, identité, boîte de réception, e-mail, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 89f69d0c3bdc1515a83ccf8379435102e78d833c
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: c3b86a133b5126029378018fdac821d5423b2761
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62901037"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321862"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Préparer votre posture de sécurité pour votre premier incident
 
@@ -47,9 +47,9 @@ Microsoft 365 Defender peuvent vous aider à résoudre plusieurs aspects de la p
 
 ## <a name="step-1-implement-zero-trust"></a>Étape 1. Implémenter la confiance zéro
 
-[La](/security/zero-trust/) confiance zéro est une philosophie de sécurité intégrée et une stratégie de bout en bout qui considère la nature complexe de tout environnement moderne, y compris le personnel mobile et les utilisateurs, appareils, applications et données, où qu’ils se trouvent. En fournissant un seul volet de verre pour gérer toutes les détections de manière cohérente, Microsoft 365 Defender permet à votre équipe des opérations de sécurité d’implémenter plus facilement les principes [directeurs](/security/zero-trust/#guiding-principles-of-zero-trust) de la confiance zéro. 
+[La](/security/zero-trust/) confiance zéro est une philosophie de sécurité intégrée et une stratégie de bout en bout qui considère la nature complexe de tout environnement moderne, y compris le personnel mobile et les utilisateurs, appareils, applications et données, où qu’ils se trouvent. En fournissant un volet unique pour gérer toutes les détections de manière cohérente, Microsoft 365 Defender peut faciliter l’application par votre équipe des opérations de sécurité des principes [directeurs](/security/zero-trust/#guiding-principles-of-zero-trust) de la confiance zéro. 
 
-Les composants de Microsoft 365 Defender peuvent afficher des violations de règles qui ont été implémentées pour établir des stratégies d’accès conditionnel pour la confiance zéro en intégrant les données de Microsoft Defender pour Endpoint ou d’autres fournisseurs de sécurité mobile en tant que source d’informations pour les stratégies de conformité des appareils et l’implémentation de stratégies d’accès conditionnel basées sur les appareils. 
+Les composants de Microsoft 365 Defender peuvent afficher des violations de règles qui ont été implémentées pour établir des stratégies d’accès conditionnel pour la confiance zéro en intégrant les données de Microsoft Defender pour Endpoint ou d’autres fournisseurs de sécurité mobile comme source d’informations pour les stratégies de conformité des appareils et l’implémentation de stratégies d’accès conditionnel basées sur les appareils. 
 
 Le risque d’appareil influence directement les ressources qui seront accessibles par l’utilisateur de cet appareil. Le refus d’accès aux ressources en fonction de certains critères est le thème principal de confiance zéro et Microsoft 365 Defender fournit les informations nécessaires pour déterminer les critères de niveau de confiance. Par exemple, Microsoft 365 Defender peut fournir le niveau de version logicielle d’un appareil via la page Gestion des menaces et des vulnérabilités, tandis que les stratégies d’accès conditionnel limitent les appareils qui ont des versions obsolètes ou vulnérables.
 

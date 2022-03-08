@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 0f663ac949419c3a726a0af23eba4a0f14928515
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: 5fc271028e4c20d431c4535fcdbf902bf17cdbb4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281446"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311842"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -107,7 +107,7 @@ Semblable aux appareils Windows 10, vous pouvez ajouter vos propres exclusions p
 
 - Les définitions de chemin de fichier sont insensibles à la casse, c'est `User` donc la même chose que `user`.
 
-- Les valeurs génériques sont prises en charge. Ainsi, une définition de chemin peut contenir un `*` au milieu ou à la fin du chemin. Par exemple : `/Users/*/Library/Application Support/Microsoft/Teams/*`
+- Les valeurs génériques sont prises en charge. Ainsi, une définition de chemin d’accès peut contenir un `*` au milieu du chemin d’accès ou à la fin du chemin d’accès. Par exemple : `/Users/*/Library/Application Support/Microsoft/Teams/*`
 
 #####  <a name="recommended-file-path-exclusions-preview"></a>Exclusions de chemin de fichier recommandées (préversion)
 
@@ -125,7 +125,7 @@ Pour des raisons de performances, Endpoint DLP inclut une liste d'exclusions de 
 
 Les applications non autorisées sont une liste d’applications que vous créez qui ne seront pas autorisées à accéder à un fichier protégé par DLP. Il est disponible pour les appareils Windows 10 et macOS (préversion).
 
-Quand le paramètre **Accès des applications non autorisées** est activé et qu’une application figurant dans la liste non autorisée tente d’accéder à un fichier protégé, l’activité est autorisée, bloquée ou bloquée mais les utilisateurs peuvent remplacer la restriction. Toutes les activités sont auditées et disponibles pour révision dans l’Explorateur d’activités.
+Lorsque le paramètre **Accès par des applications non autorisées** d'une politique est activé, et qu'une application figurant sur la liste des applications non autorisées tente d'accéder à un fichier protégé, l'activité sera autorisée, bloquée, mais les utilisateurs peuvent passer outre la restriction. Toute activité est auditée et peut être examinée dans l'explorateur d'activités.
 
 > [!IMPORTANT]
 > N’incluez pas le chemin d’accès du fichier exécutable, mais uniquement le nom du fichier exécutable (par exemple, browser.exe).
@@ -271,23 +271,23 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 
 3. Dans le cadre de ce scénario, sélectionnez **Confidentialité**, **Données d’informations d’identification personnelles (PII) pour les États-Unis** puis sélectionnez **Suivant**.
 
-4. Désactivez la case à cocher **État** pour tous les emplacements, sauf pour les **Appareils**. Cliquez sur **Suivant**.
+4. Désactivez le champ **État** pour tous les emplacements, à l’exception de **Appareils**. Sélectionnez **Suivant**.
 
 5. Acceptez la sélection par défaut **Vérifier et personnaliser les paramètres du modèle**, puis sélectionnez **Suivant**.
 
 6. Acceptez les valeurs par défaut **Actions de protection** et choisissez **Suivant**.
 
-7. Sélectionnez **Audit ou restreindre les activités sur les appareils Windows** et laissez **Audit uniquement**. Cliquez sur **Suivant**.
+7. Sélectionnez **Auditer ou restreindre les activités sur les appareils Windows** et laissez les actions définies sur **Audit uniquement**. Sélectionnez **Suivant**.
 
-8. Accepter la valeur par défaut **Je veux tester le contenu tout d’abord** et choisir **Afficher les conseils de stratégie en mode test**. Cliquez sur **Suivant**.
+8. Acceptez la valeur par défaut, **Je veux d’abord tester** et sélectionnez **Afficher les conseils de stratégie en mode de test**. Sélectionnez **Suivant**.
 
 9. Passez en revue vos paramètres, puis sélectionnez **Envoyer**.
 
 10. La nouvelle stratégie DLP s’affiche dans la liste de stratégies.
 
-11. Consultez l’Explorateur d’activités pour les données des points de terminaison monitorés. Définissez le filtre d’emplacement pour les appareils et ajoutez la stratégie, puis filtrez par nom de stratégie pour voir l’impact de cette stratégie, consultez [Commencer avec l’Explorateur d’activités,](data-classification-activity-explorer.md)si nécessaire.
+11. Recherchez dans l’explorateur d’activité les données des points de terminaison surveillés. Définissez le filtre d’emplacement pour les appareils et ajoutez la stratégie. Ensuite, filtrez par nom de stratégie pour voir l’impact de cette stratégie ; consultez l’article [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md) si nécessaire.
 
-12. Essayez de partager un test qui contient du contenu qui déclenchera la condition de données d’informations d’identification personnelle (PII) américaine avec une personne extérieure à votre organisation. Cette opération doit déclencher la stratégie.
+12. Tenter de partager un test qui contient un contenu qui déclenchera la condition des données des informations personnelles identifiables pour les États-Unis avec une personne extérieure à votre organisation. Cela devrait déclencher la stratégie.
 
 13. Consultez l’Explorateur d’activités pour l’événement.
 
@@ -312,7 +312,7 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 
 8. Conservez tous vos paramètres précédents en choisissant **suivant** puis **Envoyer** les modifications apportées à la stratégie.
 
-9. Essayez de partager un test qui contient du contenu qui déclenchera la condition de données d’informations d’identification personnelle (PII) américaine avec une personne extérieure à votre organisation. Cette opération doit déclencher la stratégie.
+9. Tenter de partager un test qui contient un contenu qui déclenchera la condition des données des informations personnelles identifiables pour les États-Unis avec une personne extérieure à votre organisation. Cela devrait déclencher la stratégie.
 
 10. Consultez l’Explorateur d’activités pour l’événement.
 
@@ -337,7 +337,7 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 
 8. Conservez tous vos paramètres précédents en choisissant **suivant** puis **Envoyer** les modifications apportées à la stratégie.
 
-9. Essayez de partager un test qui contient du contenu qui déclenchera la condition de données d’informations d’identification personnelle (PII) américaine avec une personne extérieure à votre organisation. Cette opération doit déclencher la stratégie.
+9. Tenter de partager un test qui contient un contenu qui déclenchera la condition des données des informations personnelles identifiables pour les États-Unis avec une personne extérieure à votre organisation. Cela devrait déclencher la stratégie.
 
    Une fenêtre contextuelle semblable à celle-ci s’affiche sur l’appareil client :
 
@@ -453,7 +453,7 @@ Il existe trois procédures.
 
 7. Ouvrez le dossier de quarantaine et vérifiez que le fichier d’origine existe.
  
-8. Consultez l’Explorateur d’activités pour les données des points de terminaison monitorés. Définissez le filtre d’emplacement pour les appareils et ajoutez la stratégie, puis filtrez par nom de stratégie pour voir l’impact de cette stratégie, consultez [Commencer avec l’Explorateur d’activités,](data-classification-activity-explorer.md)si nécessaire.
+8. Recherchez dans l’explorateur d’activité les données des points de terminaison surveillés. Définissez le filtre d’emplacement pour les appareils et ajoutez la stratégie. Ensuite, filtrez par nom de stratégie pour voir l’impact de cette stratégie ; consultez l’article [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md) si nécessaire.
 
 9. Consultez l’Explorateur d’activités pour l’événement.
 
@@ -465,7 +465,7 @@ Il existe trois procédures.
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
 - [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/)
-- [Outils et méthodes d’intégration pour les appareils Windows 10](/microsoft-365/compliance/dlp-configure-endpoints).
+- [Intégrer des appareils Windows 10 et Windows 11 dans la vue d’ensemble Microsoft 365](/microsoft-365/compliance/device-onboarding-overview)
 - [Abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure Active Directory (ADD) adhésion](/azure/active-directory/devices/concept-azure-ad-join)
 - [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

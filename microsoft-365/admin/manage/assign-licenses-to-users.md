@@ -2,8 +2,8 @@
 title: Attribuer des licences aux utilisateurs
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: sinakassaw, nicholak
 audience: Admin
@@ -15,23 +15,23 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- commerce_licensing
 - AdminSurgePortfolio
 - TopSMBIssues
 - SaRA
 - business_assist
 - okr_SMB
 - manage_licenses
-- commerce_licensing
 - AdminTemplateSet
 search.appverid: MET150
 description: Attribuez des licences selon que vous voulez attribuer des licences de produits à des utilisateurs spécifiques ou attribuer des licences d'utilisateurs à un produit spécifique.
 ms.date: 09/16/2021
-ms.openlocfilehash: 4c9cf07ba93c19607e7d6d005439368ab0111229
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: dd0469288ce53ac59663e119022a204130bad3ef
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765935"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316700"
 ---
 # <a name="assign-licenses-to-users"></a>Attribuer des licences aux utilisateurs
 

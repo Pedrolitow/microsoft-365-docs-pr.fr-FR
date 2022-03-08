@@ -2,8 +2,8 @@
 title: Collecter les informations dont vous avez besoin pour créer des enregistrements DNS
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: Collectez les valeurs/informations dont vous avez besoin pour créer des enregistrements DNS afin de connecter votre domaine à Microsoft 365 abonnement.
-ms.openlocfilehash: 81a1bd650e507e7f2c15a16cd5a048181ca6c816
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 672d57babb1b26e42b3fd24da8c9dc841223e41f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371123"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316798"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>Collecter les informations dont vous avez besoin pour créer des enregistrements DNS
 
@@ -49,9 +49,9 @@ ms.locfileid: "61371123"
 
 ::: moniker-end
     
-2. Dans la page **Domaines,** sélectionnez votre domaine, puis sélectionnez **Démarrer la configuration.** Revenez à l'Assistant de configuration de domaines pour afficher la valeur spécifique que vous devez ajouter.
+2. Dans la page **Domaines** , sélectionnez votre domaine, puis **démarrez l’installation**. Revenez à l'Assistant de configuration de domaines pour afficher la valeur spécifique que vous devez ajouter.
     
-3. Dans la page **Vérification du** domaine, sélectionnez Ajouter un enregistrement TXT aux enregistrements **DNS** du domaine, puis sélectionnez **Continuer**.
+3. Dans la page **Vérification du** domaine, sélectionnez Ajouter un enregistrement **TXT aux enregistrements DNS** du domaine, puis sélectionnez **Continuer**.
     
 4. Copiez **la valeur TXT** affichée. Il se ressemble à ceci : **MS=msXXXXXXXX**. 
     
@@ -77,7 +77,7 @@ ms.locfileid: "61371123"
     
 2. Dans la page **Domaines**, sélectionnez votre domaine.
     
-3. Choose **Manage DNS,** select **More Options** Add your own  >  **DNS** and select **Continue** to see the DNS records to add.
+3. Choose **Manage DNS**, select **More OptionsAdd** >  **your own DNS** and select **Continue** to see the DNS records to add.
     
     Il est recommandé de conserver ces informations disponibles tandis que vous apportez des modifications à votre hôte DNS, pour que vous puissiez copier et coller les valeurs.
     

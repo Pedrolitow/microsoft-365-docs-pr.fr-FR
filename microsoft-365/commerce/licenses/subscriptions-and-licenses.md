@@ -2,11 +2,11 @@
 title: Comprendre les abonnements et les licences dans Microsoft 365 entreprise
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: micurn, nicholak
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -14,24 +14,24 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_licensing
 - okr_smb
 - AdminSurgePortfolio
 - manage_licenses
-- commerce_licensing
 - AdminTemplateSet
 search.appverid: MET150
-description: Les applications et les services que vous recevez dépendent du produit Microsoft 365 que vous avez acheté, par exemple, Applications Microsoft 365 pour les PME.
+description: Les applications et les services que vous recevez dépendent du produit Microsoft 365 que vous avez acheté, par exemple Applications Microsoft 365 pour les PME.
 ms.date: 07/01/2020
-ms.openlocfilehash: e380ac61033435a86118f7178da9e014d13ad436
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: fefdca1b1321e19d76a227ecd313708e700b9c01
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524044"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313312"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Comprendre les abonnements et les licences dans Microsoft 365 entreprise
 
-Lorsque vous achetez un abonnement à Microsoft 365 entreprise, vous vous inscrivez pour un ensemble d’applications et de services que vous payez sur une base mensuelle ou annuelle. Les applications et services que vous recevez dans le cadre de votre abonnement dépendent du produit que vous avez acheté, tel que Applications Microsoft 365 pour les PME ou Microsoft 365 Business Standard. Vous pouvez voir ce qui est livré avec chaque produit sur la [Microsoft 365 page](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) pour les petites et moyennes entreprises.
+Lorsque vous achetez un abonnement à Microsoft 365 entreprise, vous vous inscrivez pour un ensemble d’applications et de services que vous payez sur une base mensuelle ou annuelle. Les applications et services que vous recevez dans le cadre de votre abonnement dépendent du produit que vous avez acheté, par exemple, Applications Microsoft 365 pour les PME ou Microsoft 365 Business Standard. Vous pouvez voir ce qui est livré avec chaque produit sur la [Microsoft 365 page](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) pour les petites et moyennes entreprises.
 
 Lorsque vous achetez un abonnement, vous spécifiez le nombre de licences dont vous avez besoin, en fonction du nombre de personnes de votre organisation. Après avoir acheté un abonnement, vous créez des comptes pour les membres de votre organisation, puis attribuez une licence à chaque personne. À mesure que les besoins de votre organisation changent, vous pouvez acheter d’autres licences pour prendre en charge de nouvelles personnes ou réaffecter des licences à d’autres utilisateurs lorsqu’une personne quitte votre organisation.
 

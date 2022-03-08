@@ -1,5 +1,5 @@
 ---
-title: Réinitialiser le mot de passe de l’utilisateur
+title: Réinitialiser un mot de passe utilisateur
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,18 +15,15 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment réinitialiser le mot de passe de l’utilisateur.
-ms.openlocfilehash: 0840725ffb74072d6f5973aa7175066a31fe32bb
-ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
+description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment réinitialiser un mot de passe pour un seul utilisateur ou pour plusieurs utilisateurs à risque sur différents clients.
+ms.openlocfilehash: 5217db990816b8a1ec6ed927f8f9e05827cc215b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62859264"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311548"
 ---
-# <a name="reset-user-password"></a>Réinitialiser le mot de passe de l’utilisateur
-
-> [!NOTE]
-> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences](m365-lighthouse-requirements.md). Si votre organisation n’a pas Microsoft 365 Lighthouse, [consultez s’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+# <a name="reset-a-user-password"></a>Réinitialiser un mot de passe utilisateur
 
 Microsoft 365 Lighthouse vous permet de modifier ou de réinitialiser les mots de passe utilisateur. Vous pouvez réinitialiser le mot de passe d’un seul utilisateur ou de plusieurs utilisateurs à risque sur différents clients.
 

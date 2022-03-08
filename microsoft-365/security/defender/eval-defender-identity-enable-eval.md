@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -21,19 +21,19 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6910336dea0559ad241c240cde09d3929fe2e422
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: ac5c1a1bb541dee61155a55f23a78533c2b5360c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62170974"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311604"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Activer l’environnement d’évaluation pour Microsoft Defender pour l’identité
 
 **S’applique à :**
 - Microsoft 365 Defender
 
-Cet article est [l’étape 2 sur 2](eval-defender-identity-overview.md) dans le processus de configuration de l’environnement d’évaluation de Microsoft Defender pour l’identité. Pour plus d’informations sur ce processus, voir [l’article de présentation.](eval-defender-identity-overview.md)
+Cet article est [l’étape 2 sur 2](eval-defender-identity-overview.md) dans le processus de configuration de l’environnement d’évaluation de Microsoft Defender pour l’identité. Pour plus d’informations sur ce processus, consultez [l’article de présentation](eval-defender-identity-overview.md).
 
 Utilisez les étapes suivantes pour configurer votre environnement Microsoft Defender pour l’identité. 
 
@@ -66,7 +66,7 @@ Ensuite, téléchargez, installez et configurez le capteur Defender for Identity
 |4     | Configurer le capteur       |  [Configurer les paramètres du capteur d’identité Microsoft Defender ](/defender-for-identity/install-step5)   |
 |   |         |         |
 
-## <a name="step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor"></a>Étape 3. Configurer les paramètres du journal des événements et du proxy sur les ordinateurs avec le capteur
+## <a name="step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor"></a>Étape 3. Configurer les paramètres du journal des événements et du proxy sur les ordinateurs avec le capteur
 
 Sur les ordinateurs sur qui vous avez installé le capteur, configurez Windows collection de journaux d’événements et les paramètres proxy Internet pour activer et améliorer les fonctionnalités de détection.
 
@@ -80,11 +80,11 @@ Sur les ordinateurs sur qui vous avez installé le capteur, configurez Windows c
 
 La détection du chemin de déplacement latéral de Microsoft Defender pour l’identité s’appuie sur des requêtes qui identifient les administrateurs locaux sur des ordinateurs spécifiques. Ces requêtes sont effectuées avec le protocole SAM-R, à l’aide du compte Defender for Identity Service. 
 
-Pour vous assurer que Windows clients et serveurs autorisent votre compte Defender for Identity à effectuer sam-R, une modification de la stratégie de groupe doit être apportée pour ajouter le compte de service Defender for Identity en plus des comptes configurés répertoriés dans la stratégie d’accès réseau. Veillez à appliquer des stratégies de groupe à tous les **ordinateurs à l’exception des contrôleurs de domaine.**
+Pour vous assurer que les clients et serveurs Windows autorisent votre compte Defender for Identity à effectuer sam-R, une modification de la stratégie de groupe doit être apportée pour ajouter le compte de service Defender for Identity en plus des comptes configurés répertoriés dans la stratégie d’accès réseau. Veillez à appliquer des stratégies de groupe à tous les **ordinateurs à l’exception des contrôleurs de domaine**.
 
-Pour obtenir des instructions sur la façon de faire, voir Configurer Microsoft Defender pour l’identité pour effectuer des [appels distants à SAM.](/defender-for-identity/install-step8-samr) 
+Pour obtenir des instructions sur la façon de faire, voir [Configurer Microsoft Defender pour l’identité pour effectuer des appels distants à SAM](/defender-for-identity/install-step8-samr). 
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Étape 3 sur 3 : Piloter [Microsoft Defender pour l’identité](eval-defender-identity-pilot.md)
 

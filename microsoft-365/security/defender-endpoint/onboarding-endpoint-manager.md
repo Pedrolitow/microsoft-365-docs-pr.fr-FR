@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0f1e9c88c003551ca74c76d6348465f52fdbd171
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 261cb8af0f1fbb4c118aca649945f66015f1d25c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156387"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322775"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Intégration à l'aide de Microsoft Endpoint Manager
 
@@ -37,21 +37,19 @@ ms.locfileid: "62156387"
 
 Cet article fait partie du guide de déploiement et agit comme un exemple de méthode d’intégration.
 
-Dans la [rubrique Planification,](deployment-strategy.md) plusieurs méthodes ont été fournies pour intégrer des appareils au service. Cette rubrique traite de l’architecture native du cloud.
+Dans la [rubrique Planification](deployment-strategy.md) , plusieurs méthodes ont été fournies pour intégrer des appareils au service. Cette rubrique traite de l’architecture native du cloud.
 
-![Image de l’architecture native du cloud. ](images/cloud-native-architecture.png)
+![Image de l’architecture native du cloud.](images/cloud-native-architecture.png)
  *Diagramme des architectures d’environnement*
 
-Bien que Defender pour point de terminaison prend en charge l’intégration de différents points de terminaison et outils, cet article ne les traite pas. Pour plus d’informations sur l’intégration générale à l’aide d’autres outils et méthodes de déploiement pris en charge, voir [vue d’ensemble de l’intégration.](onboarding.md)
+Bien que Defender pour point de terminaison prend en charge l’intégration de différents points de terminaison et outils, cet article ne les traite pas. Pour plus d’informations sur l’intégration générale à l’aide d’autres outils et méthodes de déploiement pris en charge, voir [vue d’ensemble de l’intégration](onboarding.md).
 
-[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) est une plateforme de solution qui unifie plusieurs services. Il inclut [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)
-
-gestion des appareils basée sur la base de.
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) est une plateforme de solution qui unifie plusieurs services. Il inclut [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) gestion des appareils basée sur la gestion des appareils.
 
 Cette rubrique guide les utilisateurs dans :
 
 - Étape 1 : intégration d’appareils au service en créant un groupe dans Microsoft Endpoint Manager (MEM) pour affecter des configurations sur
-- Étape 2 : Configuration de Defender pour les fonctionnalités de point de terminaison à l’aide de Microsoft Endpoint Manager
+- Étape 2 : Configuration de Defender pour les fonctionnalités de point de terminaison à l’aide Microsoft Endpoint Manager
 
 Ces instructions d’intégration vous guident tout au long des étapes de base suivantes que vous devez suivre lors de l’utilisation Microsoft Endpoint Manager :
 
@@ -65,7 +63,7 @@ Ces instructions d’intégration vous guident tout au long des étapes de base 
 Voici les liens dont vous aurez besoin pour le reste du processus :
 
 - [Portail MEM](https://aka.ms/memac)
-- [Microsoft 365 Defender](https://security.microsoft.com)
+- [Microsoft 365 Defender](https://security.microsoft.com)
 - [Bases de référence de sécurité Intune](/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
 Pour plus d’informations Microsoft Endpoint Manager, consultez les ressources ci-après :
@@ -83,13 +81,13 @@ Dans cette section, nous allons créer un groupe de test pour affecter vos confi
 > [!NOTE]
 > Intune utilise les groupes Azure Active Directory (Azure AD) pour gérer les utilisateurs et les appareils. En tant qu’administrateur Intune, vous pouvez configurer des groupes en fonction des besoins de votre organisation.
 >
-> Pour plus d’informations, consultez [Ajouter des groupes pour organiser les utilisateurs et les appareils](/mem/intune/fundamentals/groups-add).
+> Pour plus d’informations, voir [Ajouter des groupes pour organiser les utilisateurs et les appareils](/mem/intune/fundamentals/groups-add).
 
 ### <a name="create-a-group"></a>Créer un groupe
 
 1. Ouvrez le portail MEM.
 
-2. Ouvrez **groupes > nouveau groupe.**
+2. **Ouvrez Groupes > Nouveau groupe**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal1.](images/66f724598d9c3319cba27f79dd4617a4.png)
@@ -103,7 +101,7 @@ Dans cette section, nous allons créer un groupe de test pour affecter vos confi
 
 5. Dans le **volet Groupes >** tous les groupes, ouvrez votre nouveau groupe.
 
-6. Sélectionnez **membres > ajouter des membres.**
+6. **Sélectionnez Membres > ajouter des membres**.
 
 7. Recherchez l’utilisateur ou l’appareil de test et sélectionnez-le.
 
@@ -129,31 +127,31 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
 
 1. Ouvrez le portail MEM.
 
-2. Accédez à **Endpoint security > endpoint detection and response**. Cliquez sur **Créer un profil.**
+2. Accédez à **Endpoint Security > endpoint detection and response**. Cliquez sur **Créer un profil**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal4.](images/58dcd48811147feb4ddc17212b7fe840.png)
 
-3. Sous **Plateforme, sélectionnez Windows 10 et ultérieure, Profil - Détection** de point de terminaison et réponse > créer.
+3. Sous **Plateforme, sélectionnez Windows 10 et Ultérieure, Profil - Détection de point** de terminaison et réponse > créer.
 
-4. Entrez un nom et une description, puis sélectionnez **Suivant.**
+4. Entrez un nom et une description, puis sélectionnez  **Suivant**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal5.](images/a5b2d23bdd50b160fef4afd25dda28d4.png)
 
-5. Sélectionnez les paramètres selon les besoins, puis sélectionnez **Suivant.**
+5. Sélectionnez les paramètres selon les besoins, puis sélectionnez  **Suivant**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal6.](images/cea7e288b5d42a9baf1aef0754ade910.png)
 
     > [!NOTE]
-    > Dans cette instance, ce système a été rempli automatiquement, car Defender pour le point de terminaison a déjà été intégré à Intune. Pour plus d’informations sur l’intégration, voir [Activer Microsoft Defender pour le point de terminaison dans Intune.](/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp)
+    > Dans cette instance, ce système a été rempli automatiquement, car Defender pour le point de terminaison a déjà été intégré à Intune. Pour plus d’informations sur l’intégration, voir [Activer Microsoft Defender pour le point de terminaison dans Intune](/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp).
     >
     > L’image suivante est un exemple de ce que vous verrez lorsque Microsoft Defender pour le point de terminaison n’est PAS intégré à Intune :
     >
     > ![Image de Microsoft Endpoint Manager portal7.](images/2466460812371ffae2d19a10c347d6f4.png)
 
-6. Ajoutez des balises d’étendue si nécessaire, puis sélectionnez **Suivant.**
+6. Ajoutez des balises d’étendue si nécessaire, puis sélectionnez  **Suivant**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal8.](images/ef844f52ec2c0d737ce793f68b5e8408.png)
@@ -163,7 +161,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal9.](images/fc3525e20752da026ec9f46ab4fec64f.png)
 
-8. Examinez et acceptez, puis sélectionnez **Créer.**
+8. Examinez et acceptez, puis sélectionnez  **Créer**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal10.](images/289172dbd7bd34d55d24810d9d4d8158.png)
@@ -182,29 +180,29 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal12.](images/6b728d6e0d71108d768e368b416ff8ba.png)
 
-3. Sélectionner **la plateforme - Windows 10 et ultérieures - Windows et profil - Antivirus Microsoft Defender > créer**.
+3. **Sélectionnez plateforme - Windows 10 et ultérieures - Windows et profil - Antivirus Microsoft Defender > créer**.
 
-4. Entrez le nom et la description, puis sélectionnez **Suivant.**
+4. Entrez le nom et la description, puis sélectionnez  **Suivant**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal13.](images/a7d738dd4509d65407b7d12beaa3e917.png)
 
-5. Dans la **page Paramètres** de configuration : définissez les configurations dont vous avez besoin pour Antivirus Microsoft Defender (protection cloud, exclusions, Real-Time protection et correction).
+5. Dans la **page Paramètres de configuration** : définissez les configurations dont vous avez besoin pour Antivirus Microsoft Defender (protection cloud, exclusions, Real-Time protection et correction).
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal14.](images/3840b1576d6f79a1d72eb14760ef5e8c.png)
 
-6. Ajoutez des balises d’étendue si nécessaire, puis sélectionnez **Suivant.**
+6. Ajoutez des balises d’étendue si nécessaire, puis sélectionnez  **Suivant**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal15.](images/2055e4f9b9141525c0eb681e7ba19381.png)
 
-7. Sélectionnez les groupes à inclure, affectez à votre groupe de test, puis sélectionnez  **Suivant**.
+7. Sélectionnez les groupes à inclure, affectez-les à votre groupe de test, puis sélectionnez  **Suivant**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal16.](images/48318a51adee06bff3908e8ad4944dc9.png)
 
-8. Examinez et créez, puis sélectionnez **Créer.**
+8. Examinez et créez, puis sélectionnez  **Créer**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal17.](images/dfdadab79112d61bd3693d957084b0ec.png)
@@ -218,31 +216,31 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
 
 1. Ouvrez le portail MEM.
 
-2. Accédez à **Endpoint Security > Attack surface reduction**.
+2. Accédez à **Sécurité des points de terminaison > réduction de la surface d’attaque**.
 
-3. Sélectionnez **Créer une stratégie.**
+3. Sélectionnez  **Créer une stratégie**.
 
-4. Select **Platform - Windows 10 and Later - Profile - Attack surface reduction rules > Create**.
+4. Sélectionner **la plateforme - Windows 10 et ultérieures - Profil - Règles de réduction de la surface d'> créer**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal19.](images/522d9bb4288dc9c1a957392b51384fdd.png)
 
-5. Entrez un nom et une description, puis sélectionnez **Suivant.**
+5. Entrez un nom et une description, puis sélectionnez  **Suivant**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal20.](images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png)
 
-6. Dans la **page Paramètres de configuration**: définissez les configurations dont vous avez besoin pour les règles de réduction de la surface d’attaque, puis sélectionnez  **Suivant**.
+6. Dans la **page Paramètres de configuration** : définissez les configurations dont vous avez besoin pour les règles de réduction de la surface d’attaque, puis sélectionnez  **Suivant**.
 
     > [!NOTE]
     > Nous allons configurer toutes les règles de réduction de la surface d’attaque sur Audit.
     >
-    > Pour plus d’informations, voir [Règles de réduction de la surface d’attaque.](attack-surface-reduction.md)
+    > Pour plus d’informations, voir [Règles de réduction de la surface d’attaque](attack-surface-reduction.md).
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal21.](images/dd0c00efe615a64a4a368f54257777d0.png)
 
-7. Ajoutez des balises d’étendue selon les besoins, puis sélectionnez **Suivant.**
+7. Ajoutez des balises d’étendue selon les besoins, puis sélectionnez  **Suivant**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal22.](images/6daa8d347c98fe94a0d9c22797ff6f28.png)
@@ -252,7 +250,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal23.](images/45cefc8e4e474321b4d47b4626346597.png)
 
-9. Examinez les détails, puis sélectionnez **Créer.**
+9. Examinez les détails, puis sélectionnez  **Créer**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal24.](images/2c2e87c5fedc87eba17be0cdeffdb17f.png)
@@ -266,41 +264,41 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
 
 1. Ouvrez le portail MEM.
 
-2. Accédez à **Endpoint Security > Attack surface reduction**.
+2. Accédez à **Sécurité des points de terminaison > réduction de la surface d’attaque**.
 
-3. Sélectionnez **Créer une stratégie.**
+3. Sélectionnez  **Créer une stratégie**.
 
 4. Select **Windows 10 and Later - Web protection > Create**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal26.](images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png)
 
-5. Entrez un nom et une description, puis sélectionnez **Suivant.**
+5. Entrez un nom et une description, puis sélectionnez  **Suivant**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal27.](images/5be573a60cd4fa56a86a6668b62dd808.png)
 
-6. Dans la **page Paramètres de configuration**: définissez les configurations dont vous avez besoin pour la protection web, puis sélectionnez  **Suivant**.
+6. Dans la **page Paramètres de configuration** : définissez les configurations dont vous avez besoin pour la protection web, puis sélectionnez  **Suivant**.
 
     > [!NOTE]
     > Nous configurons la protection Web sur Bloquer.
     >
-    > Pour plus d’informations, voir [Protection Web.](web-protection-overview.md)
+    > Pour plus d’informations, voir [Web Protection](web-protection-overview.md).
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal28.](images/6104aa33a56fab750cf30ecabef9f5b6.png)
 
-7. Ajoutez **des balises d’étendue comme > suivant**.
+7. Ajoutez **des balises d’étendue > suivante**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal29.](images/6daa8d347c98fe94a0d9c22797ff6f28.png)
 
-8. Sélectionnez **Affecter au groupe de test > suivant**.
+8. **Sélectionnez Affecter pour tester le groupe > suivant**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal30.](images/45cefc8e4e474321b4d47b4626346597.png)
 
-9. Select **Review and Create > Create**.
+9. **Sélectionnez Révision et Créer > créer**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal31.](images/8ee0405f1a96c23d2eb6f737f11c1ae5.png)
@@ -316,7 +314,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
 
 Une fois la stratégie de configuration affectée, l’application prend un certain temps.
 
-Pour plus d’informations sur le minutage, consultez [les informations de configuration d’Intune.](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)
+Pour plus d’informations sur le minutage, consultez [les informations de configuration d’Intune](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 
 Pour vérifier que la stratégie de configuration a été appliquée à votre périphérique de test, suivez le processus suivant pour chaque stratégie de configuration.
 
@@ -335,12 +333,12 @@ Pour vérifier que la stratégie de configuration a été appliquée à votre p�
     > [!div class="mx-imgBorder"]
     > [![Image de Microsoft Endpoint Manager portal35.](images/18a50df62cc38749000dbfb48e9a4c9b.png)](images/18a50df62cc38749000dbfb48e9a4c9b.png#lightbox)
 
-4. Sélectionnez  **État de l’utilisateur** pour voir l’état.
+4. **Sélectionnez État de l’utilisateur** pour voir l’état.
 
     > [!div class="mx-imgBorder"]
     > [![Image de Microsoft Endpoint Manager portal36.](images/4e965749ff71178af8873bc91f9fe525.png)](images/4e965749ff71178af8873bc91f9fe525.png#lightbox)
 
-5. Sélectionnez  **l’état par paramètre** pour voir l’état.
+5. **Sélectionnez l’état par paramètre** pour voir l’état.
 
     > [!TIP]
     > Cet affichage est très utile pour identifier les paramètres qui entrent en conflit avec une autre stratégie.
@@ -360,10 +358,10 @@ Pour vérifier que la stratégie de configuration a été appliquée à votre p�
     > [!div class="mx-imgBorder"]
     > [![Image du panneau Services2.](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
 
-3. Une fois que les services sont en cours d’exécution sur l’appareil, l’appareil apparaît dans Centre de sécurité Microsoft Defender.
+3. Une fois que les services sont en cours d’exécution sur l’appareil, l’appareil apparaît dans Microsoft 365 Defender portail.
 
     > [!div class="mx-imgBorder"]
-    > [![Image de Centre de sécurité Microsoft Defender.](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
+    > [![Image de Microsoft 365 Defender portail.](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
 
 ### <a name="confirm-next-generation-protection"></a>Confirmer la protection nouvelle génération
 
@@ -375,14 +373,14 @@ Pour vérifier que la stratégie de configuration a été appliquée à votre p�
 2. Une fois la stratégie appliquée, vous ne devez pas être en mesure de gérer manuellement les paramètres.
 
     > [!NOTE]
-    > Dans l’image **suivante,** activer la protection cloud et activer la **protection** en temps réel sont affichés comme gérés.
+    > Dans l’image suivante, activer la **protection cloud** et activer la **protection** en temps réel sont affichés comme gérés.
 
     > [!div class="mx-imgBorder"]
     > ![Image du paramètre page2.](images/9341428b2d3164ca63d7d4eaa5cff642.png)
 
 ### <a name="confirm-attack-surface-reduction---attack-surface-reduction-rules"></a>Confirmer la Réduction de la surface d’attaque : règles de réduction de la surface d’attaque
 
-1. Avant d’appliquer la stratégie sur un périphérique de test, stylet une fenêtre PowerShell et tapez `Get-MpPreference` .
+1. Avant d’appliquer la stratégie sur un périphérique de test, stylet une fenêtre PowerShell et tapez `Get-MpPreference`.
 
 2. Cela doit répondre avec les lignes suivantes sans contenu :
 
@@ -394,7 +392,7 @@ Pour vérifier que la stratégie de configuration a été appliquée à votre p�
 
     ![Image de la ligne de commande 1.](images/cb0260d4b2636814e37eee427211fe71.png)
 
-3. Après avoir appliqué la stratégie sur un périphérique de test, ouvrez un Windows PowerShell et tapez `Get-MpPreference` .
+3. Après avoir appliqué la stratégie sur un périphérique de test, ouvrez un Windows PowerShell et tapez `Get-MpPreference`.
 
 4. Cela doit répondre avec les lignes suivantes avec le contenu comme indiqué ci-dessous :
 
@@ -402,13 +400,13 @@ Pour vérifier que la stratégie de configuration a été appliquée à votre p�
 
 ### <a name="confirm-attack-surface-reduction---web-protection"></a>Confirmer la réduction de la surface d’attaque - Protection Web
 
-1. Sur le périphérique de test, ouvrez une Windows PowerShell et tapez `(Get-MpPreference).EnableNetworkProtection` .
+1. Sur le périphérique de test, ouvrez une Windows PowerShell et tapez `(Get-MpPreference).EnableNetworkProtection`.
 
 2. Cela doit répondre avec un 0 comme illustré ci-dessous.
 
     ![Image de la ligne de commande 3.](images/196a8e194ac99d84221f405d0f684f8c.png)
 
-3. Après avoir appliqué la stratégie, ouvrez un Windows PowerShell et tapez `(Get-MpPreference).EnableNetworkProtection` .
+3. Après avoir appliqué la stratégie, ouvrez un Windows PowerShell et tapez `(Get-MpPreference).EnableNetworkProtection`.
 
 4. Cela doit répondre avec un 1 comme illustré ci-dessous.
 

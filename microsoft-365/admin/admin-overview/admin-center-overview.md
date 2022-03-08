@@ -2,8 +2,8 @@
 title: Centre d’administration Microsoft 365 - Vue d’ensemble
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Utilisez la vue simplifiée de Microsoft 365 pour gérer les tâches courantes ou la vue tableau de bord pour les paramètres et les tâches plus complexes.
-ms.openlocfilehash: c6443ef9406f49fe8f27aa5977aac1e046583587
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 92d6188ee843d9c3148e1036894ab9a3819247af
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421809"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315930"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Vue d’ensemble du centre d’administration Microsoft 365
 

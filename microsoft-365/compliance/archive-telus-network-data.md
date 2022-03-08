@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur TeleMessage pour importer et archiver des données SMS à partir du réseau DE DISTRIBUTION dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: d97b460c138704ddddf9ceca0c7483433f8e2489
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 7aca24c39f9eba5dba532f1224ad68d5ff1d4568
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643903"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327390"
 ---
 # <a name="set-up-a-connector-to-archive-telus-network-data"></a>Configurer un connecteur pour archiver les données réseau DE LASER
 
@@ -31,15 +31,15 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 ![Flux de travail d’archivage réseau DUTN.](../media/TelusNetworkConnectorWorkflow.png)
 
-1. Votre organisation travaille avec TeleMessage et LASUS pour configurer un connecteur réseau WORKS. Pour plus d’informations, voir [l’Archiveur réseau DE LASV.](https://www.telemessage.com/office365-activation-for-telus-network-archiver/)
+1. Votre organisation travaille avec TeleMessage et LASUS pour configurer un connecteur réseau WORKS. Pour plus d’informations, voir [l’Archiveur réseau DE LASV](https://www.telemessage.com/office365-activation-for-telus-network-archiver/).
 
 2. En temps réel, les messages SMS provenant du réseau CAS DE votre organisation sont copiés sur le site TeleMessage.
 
 3. Le connecteur réseau RECUR que vous créez dans le Centre de conformité Microsoft 365 se connecte au site TeleMessage tous les jours et transfère les messages SMS des 24 heures précédentes vers un emplacement stockage Azure sécurisé dans le cloud Microsoft. Le connecteur convertit également le contenu des messages SMS au format de message électronique.
 
-4. Le connecteur importe les éléments de communication mobile dans la boîte aux lettres d’un utilisateur spécifique. Un nouveau dossier nommé **ARCHIVEur réseau SMS CAS** est créé dans la boîte aux lettres de l’utilisateur spécifique et les éléments y sont importés. Le connecteur est mappage à l’aide de la valeur de la propriété *d’adresse de messagerie de l’utilisateur.* Chaque message SMS contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant du message SMS.
+4. Le connecteur importe les éléments de communication mobile dans la boîte aux lettres d’un utilisateur spécifique. Un nouveau dossier nommé **ARCHIVEur réseau SMS CAS** est créé dans la boîte aux lettres de l’utilisateur spécifique et les éléments y sont importés. Le connecteur est mappage à l’aide de la valeur de la propriété *d’adresse de messagerie de l’utilisateur* . Chaque message SMS contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant du message SMS.
 
-   Outre le mappage automatique des utilisateurs à l’aide de la valeur de la propriété *d’adresse* de messagerie de l’utilisateur, vous pouvez également implémenter un mappage personnalisé en chargeant un fichier de mappage CSV. Ce fichier de mappage contient le numéro de téléphone mobile et l’adresse Microsoft 365 courrier électronique correspondante pour les utilisateurs de votre organisation. Si vous activez à la fois le mappage utilisateur automatique et le mappage personnalisé, pour chaque élément MAPPING, le connecteur examine d’abord le fichier de mappage personnalisé. S’il ne trouve pas d’utilisateur Microsoft 365 valide correspondant au numéro de téléphone mobile d’un utilisateur, le connecteur utilise les valeurs de la propriété d’adresse de messagerie de l’élément qu’il tente d’importer. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans la propriété d’adresse de messagerie de l’élément PDF, l’élément n’est pas importé.
+   Outre le mappage automatique des utilisateurs à l’aide de la valeur de la propriété *d’adresse de messagerie de l’utilisateur* , vous pouvez également implémenter un mappage personnalisé en chargeant un fichier de mappage CSV. Ce fichier de mappage contient le numéro de téléphone mobile et l’adresse Microsoft 365 courrier électronique correspondante pour les utilisateurs de votre organisation. Si vous activez à la fois le mappage utilisateur automatique et le mappage personnalisé, pour chaque élément MAPPING, le connecteur examine d’abord le fichier de mappage personnalisé. S’il ne trouve pas d’utilisateur Microsoft 365 valide correspondant au numéro de téléphone mobile d’un utilisateur, le connecteur utilise les valeurs de la propriété d’adresse de messagerie de l’élément qu’il tente d’importer. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans la propriété d’adresse de messagerie de l’élément PDF, l’élément n’est pas importé.
 
 ## <a name="before-you-set-up-a-connector"></a>Avant de configurer un connecteur
 
@@ -51,23 +51,23 @@ Certaines des étapes d’implémentation requises pour archiver les données r�
 
 - Enregistrez tous les utilisateurs qui nécessitent l’archivage réseau SMS DE LASV dans le compte TeleMessage. Lors de l’inscription des utilisateurs, n’oubliez pas d’utiliser la même adresse de messagerie que celle utilisée pour Microsoft 365 compte.
 
-- Vos employés doivent avoir des téléphones mobiles d’entreprise et responsables sur le réseau mobileTELUS. Les messages d’archivage Microsoft 365 ne sont pas disponibles pour les appareils BYOD (Bring Your Own Devices) ou d’employés.
+- Vos employés doivent avoir des téléphones mobiles d’entreprise et responsables sur le réseau mobileTELUS. L’archivage des messages Microsoft 365 n’est pas disponible pour les appareils BYOD (Bring Your Own Devices) ou d’employés.
 
-- Le rôle Importation/Exportation de boîte aux lettres doit être attribué à l’utilisateur qui crée un connecteur réseau PRINCIPAL dans Exchange Online. Cela est nécessaire pour ajouter des connecteurs dans la page **Connecteurs** de données dans la Centre de conformité Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
+- Le rôle d’administrateur connecteur de données doit être attribué à l’utilisateur qui crée un connecteur réseau PRINCIPAL. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le Centre de conformité Microsoft 365. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et conformité » dans Autorisations dans le Centre de sécurité [& conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le Centre de conformité Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ce connecteur de données TeleMessage est disponible dans Cloud de la communauté du secteur public environnements dans le cloud Microsoft 365 gouvernement américain. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui sont en dehors de l’infrastructure Microsoft 365 et qui, par conséquent, ne sont pas couverts par les engagements en matière de conformité et de protection des données Microsoft 365. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
+- Ce connecteur de données TeleMessage est disponible dans Cloud de la communauté du secteur public environnements dans Microsoft 365 cloud du gouvernement américain. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui sont en dehors de l’infrastructure Microsoft 365 et qui, par conséquent, ne sont pas couverts par les engagements en matière de conformité et de protection des données Microsoft 365. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
 
 ## <a name="create-a-telus-network-connector"></a>Créer un connecteur réseau DE DISTRIBUTION
 
 Une fois que vous avez rempli les conditions préalables décrites dans la section précédente, vous pouvez créer un connecteur réseau CAS DANS le Centre de conformité Microsoft 365. Le connecteur utilise les informations que vous fournissez pour vous connecter au site TeleMessage et transférer des messages SMS vers les boîtes aux lettres utilisateur correspondantes dans Microsoft 365.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click Data **connectors**  >  **CLICK Network**.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectorsTELUS** >  **Network**.
 
-2. Dans la page **description du produit RÉSEAU DE DISTRIBUTION,** cliquez sur Ajouter un **connecteur**
+2. Dans la page **description du produit RÉSEAU DE DISTRIBUTION** , cliquez **sur Ajouter un connecteur**
 
-3. Dans la page **Conditions d’utilisation,** cliquez sur **Accepter.**
+3. Dans la page **Conditions d’utilisation** , cliquez sur **Accepter**.
 
-4. Dans la page **Connexion à TeleMessage,** sous l’étape 3, entrez les informations requises dans les zones suivantes, puis cliquez sur **Suivant**.
+4. Dans la page **Connexion à TeleMessage** , sous l’étape 3, entrez les informations requises dans les zones suivantes, puis cliquez sur **Suivant**.
 
    - **Nom d’utilisateur :** Votre nom d’utilisateur TeleMessage.
 
@@ -75,7 +75,7 @@ Une fois que vous avez rempli les conditions préalables décrites dans la secti
 
 5. Une fois le connecteur créé, vous pouvez fermer la fenêtre pop-up et passer à la page suivante.
 
-6. Dans la page **Mappage des utilisateurs,** activez le mappage utilisateur automatique et cliquez sur **Suivant**. Si vous avez besoin d’un mappage personnalisé, téléchargez un fichier CSV, puis cliquez sur **Suivant**.
+6. Dans la page **Mappage des utilisateurs** , activez le mappage utilisateur automatique et cliquez sur **Suivant**. Si vous avez besoin d’un mappage personnalisé, téléchargez un fichier CSV, puis cliquez sur **Suivant**.
 
 7. Examinez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
 

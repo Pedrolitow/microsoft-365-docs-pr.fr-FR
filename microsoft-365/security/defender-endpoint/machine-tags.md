@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d4e429ca851a21c3ad4863d11dd90d7223d9c6b3
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 65df8553f5ee3b7dd7876557398e0d4aa22c7bd5
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170535"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323522"
 ---
 # <a name="create-and-manage-device-tags"></a>Créer et gérer des balises d’appareils
 
@@ -31,7 +31,7 @@ ms.locfileid: "61170535"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Ajoutez des balises sur les appareils pour créer une affiliation de groupe logique. Les balises d’appareil prennent en charge le mappage approprié du réseau, ce qui vous permet d’attacher différentes balises pour capturer le contexte et d’activer la création de liste dynamique dans le cadre d’un incident. Les balises peuvent être  utilisées comme filtre dans l’affichage Liste des appareils ou pour grouper des appareils. Pour plus d’informations sur le regroupement d’appareils, voir [Créer et gérer des groupes d’appareils.](machine-groups.md)
+Ajoutez des balises sur les appareils pour créer une affiliation de groupe logique. Les balises d’appareil prennent en charge le mappage approprié du réseau, ce qui vous permet d’attacher différentes balises pour capturer le contexte et d’activer la création de liste dynamique dans le cadre d’un incident. Les balises peuvent être utilisées comme filtre dans  l’affichage Inventaire des appareils ou pour grouper des appareils. Pour plus d’informations sur le regroupement d’appareils, voir [Créer et gérer des groupes d’appareils](machine-groups.md).
 
 Vous pouvez ajouter des balises sur les appareils en utilisant les méthodes suivantes :
 
@@ -49,12 +49,12 @@ Pour ajouter des balises d’appareil à l’aide de l’API, consultez [Ajouter
 
    - **Tableau de bord Opérations de sécurité** : sélectionnez le nom de l’appareil dans la section Principaux appareils avec alertes actives.
    - **File d’attente des alertes** : sélectionnez le nom de l’appareil en regard de l’icône de l’appareil dans la file d’attente des alertes.
-   - **Liste des appareils** : sélectionnez le nom de l’appareil dans la liste des appareils.
+   - **Inventaire des appareils** : sélectionnez le nom de l’appareil dans la liste des appareils.
    - **Zone de recherche** : sélectionnez Appareil dans le menu déroulant et entrez le nom de l’appareil.
 
      Vous pouvez également accéder à la page d’alerte via les Affichages de fichier et d’adresse IP.
 
-2. Sélectionnez **Gérer les balises** dans la ligne des actions de réponse.
+2. **Sélectionnez Gérer les balises** dans la ligne des actions de réponse.
 
     :::image type="content" alt-text="Image du bouton Gérer les balises." source="images/manage-tags-option.png":::
 
@@ -62,7 +62,7 @@ Pour ajouter des balises d’appareil à l’aide de l’API, consultez [Ajouter
 
     :::image type="content" alt-text="Image de l’ajout de balises sur un appareil1." source="images/create-new-tag.png":::
 
-Les balises sont ajoutées à l’affichage de l’appareil et sont également reflétées dans l’affichage Liste **des** appareils. Vous pouvez ensuite utiliser le filtre **Balises** pour voir la liste des appareils appropriés.
+Les balises sont ajoutées à l’affichage appareil et sont également reflétées dans l’affichage **d’inventaire** des appareils. Vous pouvez ensuite utiliser le filtre **Balises** pour voir la liste des appareils appropriés.
 
 > [!NOTE]
 > Le filtrage peut ne pas fonctionner sur les noms de balises qui contiennent des parenthèses.
@@ -82,7 +82,7 @@ Vous pouvez également supprimer des balises de cet affichage.
 > - Windows 10, version 1709 ou ultérieure
 > - Windows Server, version 1803 ou ultérieure
 > - Windows Server 2016
-> - Windows Server 2012 R2
+> - Windows Server 2012 R2
 > - Windows Server 2008 R2 SP1
 > - Windows 8.1
 > - Windows 7 SP1

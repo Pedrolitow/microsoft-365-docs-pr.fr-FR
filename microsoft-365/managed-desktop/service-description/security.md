@@ -8,12 +8,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 7b5f99a6927fd87b1d75bde0dcc5e4fde1ff3a62
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.openlocfilehash: 4a6eb73a172ecfb680cbc48367851e40b1a54401
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "62909698"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315412"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Technologies de sécurité dans Microsoft Manged Desktop
 
@@ -59,7 +59,6 @@ Les clients sont responsables de la sécurité du réseau.
 | ----- | ----- |
 | VPN | Les clients possèdent leur infrastructure VPN, pour s’assurer que des ressources limitées de l’entreprise peuvent être exposées en dehors de l’intranet.<br><br>Exigence minimale : Microsoft Manged Desktop nécessite une solution VPN compatible Windows 10 prise en charge. Si votre organisation a besoin d’une solution VPN, elle doit prendre en charge Windows 10 et être empaqueté et déployable via Intune. Pour plus d’informations, contactez votre éditeur de logiciels.<br><br>Recommandation :<br><ul><li> Microsoft recommande une solution VPN moderne qui pourrait être facilement déployée via Intune pour pousser les profils VPN. Cette approche offre un moyen toujours continu, transparent, fiable et sécurisé d’accéder au réseau d’entreprise. Pour plus d’informations, [voir paramètres VPN dans Intune](/intune/vpn-settings-configure).</li><li>Les clients VPN épais, ou les clients VPN plus anciens, ne sont pas recommandés par Microsoft lors de l’utilisation de Microsoft Manged Desktop car cela peut affecter l’environnement utilisateur.</li><li>Microsoft recommande que le trafic web sortant soit directement vers Internet sans passer par le VPN afin d’éviter tout problème de performances.</li><li>Dans l’idéal, Microsoft recommande d’utiliser Azure Active Directory proxy d’application au lieu d’un VPN.</li></ul>
 
-
 ## <a name="information-security"></a>Sécurité des informations
 
 Vous pouvez configurer ces services facultatifs pour protéger les biens à valeur élevée de l’entreprise.
@@ -67,4 +66,4 @@ Vous pouvez configurer ces services facultatifs pour protéger les biens à vale
 | Service | Description |
 | ----- | ----- |
 | Récupération des données | Les informations stockées dans les dossiers clés de l’appareil sont enregistrées jusqu’OneDrive Entreprise. Microsoft Manged Desktop n’est pas responsable des données qui ne sont pas synchronisées avec OneDrive Entreprise.
-| Protection des informations Windows | Pour les entreprises qui requièrent des niveaux élevés de sécurité des informations, nous vous Windows [protection des informations](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip) et [Azure Information Protection.](https://www.microsoft.com/cloud-platform/azure-information-protection)
+| Protection des informations Windows | Pour les entreprises qui nécessitent des niveaux élevés de sécurité des informations, nous vous recommandons Windows [protection des informations](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip) et [Azure Information Protection.](https://www.microsoft.com/cloud-platform/azure-information-protection)

@@ -8,14 +8,19 @@ audience: admin
 ms.topic: article
 ms.customer: intro-overview
 ms.prod: microsoft-365-enterprise
-search.appverid: null
+search.appverid: ''
 ms.collection:
-  - enabler-strategic
-  - m365initiative-syntex
+- enabler-strategic
+- m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez la compréhension de document dans Microsoft SharePoint Syntex.
+ms.openlocfilehash: 4c4910ac2cec9688af60c6999e67e1be41701ef3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322588"
 ---
-
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Vue d’ensemble de la compréhension de document dans Microsoft SharePoint Syntex
 
 
@@ -49,7 +54,7 @@ Une fois que vous avez publié votre modèle, utilisez le centre de contenu pour
 
 Les modèles de compréhension des documents utilisent la technologie de reconnaissance optique de caractères (OCR) pour analyser les fichiers PDF, les images et les fichiers TIFF. Les fichiers sont analysés lorsque vous formez un modèle avec des exemples de fichiers et lorsque vous l’exécutez sur des fichiers d’une bibliothèque de documents.
 
-Notez les différences suivantes concernant Microsoft Office texte et les fichiers analysés par OCR (PDF, image ou TIFF) :
+Notez les différences suivantes concernant Microsoft Office texte et les fichiers analysés par l’ocr (PDF, image ou TIFF) :
 
 - Fichiers Office : nous avons tronqué à 64 000 caractères (lors de la formation et de l’exécution sur des fichiers dans une bibliothèque de documents).
 
@@ -108,6 +113,7 @@ Les modèles de compréhension des documents suivent les types de fichiers suiva
 ### <a name="supported-languages"></a>Langues prises en charge
 
 Les modèles de compréhension des documents sont en charge dans les langues suivantes :
+- Anglais
 - Français
 - Allemand
 - Italien

@@ -14,14 +14,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom: admindeeplinkCOMPLIANCE
+ms.custom:
+- admindeeplinkCOMPLIANCE
+- admindeeplinkSPO
 description: Configurez l’infrastructure et la sécurité qui permettent à vos employés de travailler à distance de n’importe où et à tout moment.
-ms.openlocfilehash: 602bec66eec26551ae6d98bafdb99466747d8fa9
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 8ea359f2c0de98ac35b90a379e5a60c4578e66cf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524080"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323414"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Configurer une équipe avec une isolation des problèmes de sécurité dans un environnement de test/développement
 
@@ -173,15 +175,14 @@ La **Stratégie d’entreprise** peut prendre un certain temps avant de devenir 
 
 Ensuite, appliquez votre nouvelle étiquette à l’équipe **Stratégie d’entreprise** et mettez à jour le type de lien de partage par défaut pour réduire le risque de partager accidentellement des fichiers et des dossiers avec un public plus large que prévu.
 
-1. Ouvrez le [Centre d’administration SharePoint](https://admin.microsoft.com/sharepoint).
-1. Sous **Sites**, cliquez sur **Sites actifs**.
-1. Cliquez sur la **Stratégie d’entreprise** .
+1. Ouvrez le Centre d’administration SharePoint, sous **Sites**, sélectionnez <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sites actifs**</a>.
+1. Cliquez sur le site **Stratégie d’entreprise** .
 1. Sous l’onglet **Stratégies**, sous **Confidentialité**, cliquez sur **Modifier**.
 1. Sélectionnez l’étiquette **Stratégie d’entreprise**, puis cliquez sur **Enregistrer**.
 1. Sous l’onglet **Stratégies**, sous **Partage externe**, cliquez sur **Modifier**.
 1. Choisissez **Uniquement les personnes de votre organisation**.
 1. Sous Type de lien de **Partage par défaut**, désactivez la case à cocher **Identique au paramètre de niveau organisation**, puis sélectionnez **Personnes disposant d’un accès existant**.
-1. Cliquez sur **Enregistrer**.
+1. Sélectionnez **Enregistrer**.
 
 Ensuite, configurez le partage de sites aux propriétaires uniquement pour l’équipe de **Stratégie d’entreprise**.
 

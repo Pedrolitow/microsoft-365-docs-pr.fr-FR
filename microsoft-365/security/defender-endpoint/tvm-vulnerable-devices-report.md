@@ -16,20 +16,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1f096433534abb91b9cb14b8db2737dacf566624
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 50b30d38a42aab37c295a9f65bd070dd9613927c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167981"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312646"
 ---
 # <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>Rapport sur les appareils vulnérables : Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -44,7 +44,7 @@ Il existe deux colonnes :
 - Tendances (au fil du temps). Peut afficher les 30 derniers jours, 3 mois, 6 mois ou une plage de dates personnalisée.
 - État (informations actuelles)
 
-**Filtre**: vous pouvez filtrer les données par niveaux de gravité de vulnérabilité, disponibilité d’exploitation, âge de vulnérabilité, plateforme du système d’exploitation, version Windows 10 Windows 11 ou groupe d’appareils.
+**Filtre** : vous pouvez filtrer les données par niveaux de gravité de vulnérabilité, disponibilité d’exploitation, âge de vulnérabilité, plateforme du système d’exploitation, version Windows 10 Windows 11 ou groupe d’appareils.
 
 **Exploration :** s’il existe un aperçu que vous souhaitez explorer plus en détail, sélectionnez le graphique à barres approprié pour afficher une liste filtrée d’appareils dans la page d’inventaire des appareils. À partir de là, vous pouvez exporter la liste.
 
@@ -76,9 +76,9 @@ Nombre d’appareils sur chaque système d’exploitation exposés en raison de 
 
 Nombre d’appareils sur chaque version Windows 10 ou Windows 11 qui sont exposés en raison d’applications ou de système d’exploitation vulnérables.
 
-![Un graphique des appareils vulnérables actuels par version Windows 10 et un graphique montrant les appareils vulnérables par Windows 10 version au fil du temps.](images/tvm-report-version.png)lightbox="images/tvm-report-version.png »:::
+:::image type="content" alt-text="Graphique des appareils vulnérables actuels par version Windows 10 et graphique montrant les appareils vulnérables par Windows 10 version au fil du temps." source="images/tvm-report-version.png" lightbox="images/tvm-report-version.png":::
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Recommandations de sécurité](tvm-security-recommendation.md)

@@ -1,6 +1,6 @@
 ---
-title: Afficher ou modifier des stratégies dans Microsoft Defender entreprise (prévisualisation)
-description: Découvrez comment afficher, modifier, créer et supprimer des stratégies de protection nouvelle génération dans Microsoft Defender pour Entreprises (prévisualisation)
+title: Afficher ou modifier des stratégies dans Microsoft Defender entreprise
+description: Découvrez comment afficher, modifier, créer et supprimer des stratégies de protection nouvelle génération dans Microsoft Defender pour les entreprises
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,27 +17,30 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 81cd2774115478f4d85fa1878d7ce8a598600e7f
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 11ab3f20b6e0b96b28dd285d05c2d57dd9455baa
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62465420"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327742"
 ---
-# <a name="view-or-edit-policies-in-microsoft-defender-for-business-preview"></a>Afficher ou modifier des stratégies dans Microsoft Defender entreprise (prévisualisation)
+# <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>Afficher ou modifier des stratégies dans Microsoft Defender entreprise
 
 > [!IMPORTANT]
-> Microsoft Defender pour Entreprise est désormais en prévisualisation et sera progressivement mis en place pour les clients [](https://aka.ms/mdb-preview) et les partenaires qui s’y connectent pour le demander. Nous intégrerons un ensemble initial de clients et de partenaires dans les prochaines semaines et développerons la prévisualisation jusqu’à la disponibilité générale. Notez que la prévisualisation sera lancée avec un [ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et que nous ajouterons régulièrement des fonctionnalités.
+> Microsoft Defender for Business est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. La [prévisualisation inclut un ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et nous ajouterons régulièrement des fonctionnalités.
 > 
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
-Dans Microsoft Defender pour Entreprises (prévisualisation), les paramètres de sécurité sont configurés par le biais de stratégies appliquées aux appareils. Pour simplifier votre configuration, Defender pour entreprise (prévisualisation) inclut des stratégies préconfigurées pour vous aider à protéger les appareils de votre organisation dès qu’ils sont intégrés. Vous pouvez utiliser les stratégies par défaut, modifier des stratégies ou créer vos propres stratégies.
+Dans Microsoft Defender entreprise, les paramètres de sécurité sont configurés par le biais de stratégies appliquées aux appareils. Pour simplifier votre configuration, Defender for Business inclut des stratégies préconfigurées pour protéger les appareils de votre organisation dès qu’ils sont intégrés. Vous pouvez utiliser les stratégies par défaut, modifier des stratégies ou créer vos propres stratégies.
 
 **Cet article décrit comment** :
 
 - [Obtenir une vue d’ensemble de vos stratégies par défaut](#default-policies-in-defender-for-business)
+
 - [Afficher vos stratégies existantes](#view-your-existing-policies)
+
 - [Modifier une stratégie existante](#edit-an-existing-policy)
+
 - [Créer une stratégie](#create-a-new-policy)
 
 >
@@ -47,9 +50,10 @@ Dans Microsoft Defender pour Entreprises (prévisualisation), les paramètres de
 
 ## <a name="default-policies-in-defender-for-business"></a>Stratégies par défaut dans Defender for Business
 
-Dans Defender for Business (prévisualisation), il existe deux principaux types de stratégies pour protéger les appareils de votre organisation :
+Dans Defender for Business, il existe deux principaux types de stratégies pour protéger les appareils de votre organisation :
 
-- **Stratégies de protection nouvelle génération**, qui déterminent la configuration Antivirus Microsoft Defender et d’autres fonctionnalités de protection contre les menaces
+- **Stratégies de protection nouvelle génération**, qui déterminent la façon dont Antivirus Microsoft Defender et d’autres fonctionnalités de protection contre les menaces sont configurées
+
 - **Stratégies de** pare-feu, qui déterminent le trafic réseau autorisé à circuler vers et depuis les appareils de votre organisation
 
 
@@ -79,7 +83,7 @@ Dans Defender for Business (prévisualisation), il existe deux principaux types 
 
    - Pour conserver le groupe d’appareils sélectionné tel quel, choisissez **Suivant**.
    - Pour supprimer un groupe d’appareils de la stratégie, sélectionnez **Supprimer**.
-   - Pour configurer un nouveau groupe d’appareils, **sélectionnez** Créer un groupe, puis configurer votre groupe d’appareils. (Pour obtenir de l’aide sur cette tâche, voir [Groupes d’appareils dans Microsoft Defender entreprise (prévisualisation)](mdb-create-edit-device-groups.md).)
+   - Pour configurer un nouveau groupe d’appareils, **sélectionnez** Créer un groupe, puis configurer votre groupe d’appareils. (Pour obtenir de l’aide sur cette tâche, voir [Groupes d’appareils dans Microsoft Defender pour Entreprises](mdb-create-edit-device-groups.md).)
    - Pour appliquer la stratégie à un autre groupe d’appareils, **sélectionnez Utiliser un groupe existant**.
 
    Une fois que vous avez spécifié les groupes d’appareils qui doivent recevoir la stratégie, choisissez **Suivant**.
@@ -119,9 +123,9 @@ Dans Defender for Business (prévisualisation), il existe deux principaux types 
    - Lorsque vous définissez votre groupe d’appareils, vous spécifiez certains critères, tels que la version du système d’exploitation. Les appareils qui répondent aux critères sont inclus dans ce groupe d’appareils, sauf si vous les excluez. 
    - Tous les groupes d’appareils, y compris les groupes d’appareils par défaut et personnalisés que vous définissez, sont stockés dans Azure Active Directory (Azure AD).
 
-   Pour en savoir plus sur les groupes d’appareils, voir [Groupes d’appareils dans Defender pour Entreprises (prévisualisation).](mdb-create-edit-device-groups.md)
+   Pour en savoir plus sur les groupes d’appareils, voir [Groupes d’appareils dans Defender for Business](mdb-create-edit-device-groups.md).
 
-8. Sous **l’onglet Paramètres de configuration** , spécifiez les paramètres de votre stratégie, puis choisissez **Suivant**. Pour plus d’informations sur les paramètres individuels, voir [Paramètres de configuration de Microsoft Defender pour Entreprise (prévisualisation).](mdb-next-gen-configuration-settings.md)
+8. Sous **l’onglet Paramètres de configuration** , spécifiez les paramètres de votre stratégie, puis choisissez **Suivant**. Pour plus d’informations sur les paramètres individuels, voir [Paramètres de configuration de Microsoft Defender pour les entreprises](mdb-next-gen-configuration-settings.md).
 
 9. Sous **l’onglet Examiner votre stratégie** , examinez les informations générales, les appareils ciblés et les paramètres de configuration. 
 
@@ -129,16 +133,16 @@ Dans Defender for Business (prévisualisation), il existe deux principaux types 
    - Lorsque vous êtes prêt à continuer, choisissez **Créer une stratégie**.
 
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Choisissez une ou plusieurs des tâches suivantes :
 
 - [Gérer les appareils](mdb-manage-devices.md)
 
-- [Créer une stratégie dans Microsoft Defender entreprise (prévisualisation)](mdb-create-new-policy.md)
+- [Créer une stratégie dans Microsoft Defender pour les entreprises](mdb-create-new-policy.md)
 
-- [Afficher et gérer les incidents dans Microsoft Defender entreprise (prévisualisation)](mdb-view-manage-incidents.md)
+- [Afficher et gérer les incidents dans Microsoft Defender entreprise](mdb-view-manage-incidents.md)
 
-- [Répondre aux menaces et les atténuer dans Microsoft Defender entreprise (prévisualisation)](mdb-respond-mitigate-threats.md)
+- [Répondre aux menaces et les atténuer dans Microsoft Defender entreprise](mdb-respond-mitigate-threats.md)
 
 - [Passer en revue les actions de correction dans le centre de mise à jour](mdb-review-remediation-actions.md)

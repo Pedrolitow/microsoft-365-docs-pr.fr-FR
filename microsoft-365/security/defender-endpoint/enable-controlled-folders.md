@@ -14,14 +14,14 @@ ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.technology: mde
-ms.collection: m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: fab57a3cb63823dcd4538f2b4bb381972d310c64
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: d8ff1b5946ccdcbc35a219bc0e656c2e23d6f3ea
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322070"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327642"
 ---
 # <a name="enable-controlled-folder-access"></a>Activer l’accès contrôlé aux dossiers
 
@@ -34,7 +34,7 @@ ms.locfileid: "62322070"
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[L’accès contrôlé aux dossiers](controlled-folders.md) vous permet de protéger les données précieuses contre les applications malveillantes et les menaces, telles que les ransomware. L’accès contrôlé aux dossiers est inclus Windows 10, Windows 11 et Windows Server 2019. L’accès contrôlé aux dossiers est également inclus dans le cadre de la solution moderne et unifiée pour [Windows Server 2012R2 et 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
+[L’accès contrôlé aux dossiers](controlled-folders.md) vous permet de protéger les données précieuses contre les applications malveillantes et les menaces, telles que les ransomware. L’accès contrôlé aux dossiers est inclus Windows 10, Windows 11 et Windows Server 2019. L’accès contrôlé aux dossiers est également inclus dans le cadre de la solution moderne et [unifiée pour Windows Server 2012R2 et 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
 Vous pouvez activer l’accès contrôlé aux dossiers à l’aide de l’une des méthodes ci-après :
 
@@ -66,7 +66,7 @@ Pour plus d’informations sur la désactivation de la fusion de listes locales,
 > *Cette méthode n’est pas disponible Windows Server 2012R2 ou 2016.
 > 
 > Si l’accès contrôlé aux dossiers est configuré avec la stratégie de groupe, PowerShell ou les CSP MDM, l’état change dans l’application Sécurité Windows après un redémarrage de l’appareil.
-> Si la fonctionnalité est définie sur **le mode Audit** avec l’un de ces outils, l’application Sécurité Windows affiche l’état comme **Étant éteint**.
+> Si la fonctionnalité est définie sur **le mode Audit** avec l’un de ces outils, l’application Sécurité Windows affiche l’état « **Off** ».
 > Si vous protégez les données de profil utilisateur, nous vous recommandons de le faire sur le lecteur d’installation Windows par défaut.
 
 ## <a name="endpoint-manager"></a>Gestionnaire de points de terminaison
@@ -75,7 +75,7 @@ Pour plus d’informations sur la désactivation de la fusion de listes locales,
 
 2. Go to **Attack Surface Reduction** \> **Policy**.
 
-3. **Sélectionnez Plateforme**, **sélectionnez Windows 10 et ultérieures**, puis sélectionnez les règles de réduction de **la surface d’attaque de profil Créer**\>.
+3. **Sélectionnez Plateforme**, choisissez **Windows 10 et ultérieures**, puis sélectionnez les règles de réduction de **la surface d’attaque de profil Créer**\>.
 
 4. Nommez la stratégie et ajoutez une description. Sélectionnez **Suivant**.
 
@@ -137,7 +137,7 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 ## <a name="powershell"></a>PowerShell
 
-1. **Tapez powershell** dans le menu Démarrer, cliquez avec le **bouton droit sur Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**.
+1. **Tapez powershell** dans le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**.
 
 2. Entrez l’cmdlet suivante :
 

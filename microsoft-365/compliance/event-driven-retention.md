@@ -1,30 +1,35 @@
 ---
 title: Débuter la rétention lorsqu’un événement se produit
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: null
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
+- M365-security-compliance
 search.appverid:
-  - MOE150
-  - MET150
+- MOE150
+- MET150
 ms.custom:
-  - seo-marvel-apr2020
-  - seo-marvel-may2020
-  - seo-marvel-jun2020
-description: 'Dans une solution de gestion des enregistrements, vous pouvez généralement configurer une étiquette de rétention pour démarrer la période de rétention sur la base d’un événement que vous identifiez.'
+- seo-marvel-apr2020
+- seo-marvel-may2020
+- seo-marvel-jun2020
+description: Dans une solution de gestion des enregistrements, vous pouvez généralement configurer une étiquette de rétention pour démarrer la période de rétention sur la base d’un événement que vous identifiez.
+ms.openlocfilehash: ad5fb2ef567525fa021acb0388ebc5cc98b1148c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313298"
 ---
-
 # <a name="start-retention-when-an-event-occurs"></a>Débuter la rétention lorsqu’un événement se produit
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Lorsque vous conservez du contenu, la période de rétention est souvent basée sur l’ancienneté du contenu. Par exemple, vous pouvez conserver des documents pendant sept ans à compter de leur création, puis les supprimer. Cependant, lorsque vous configurez [étiquettes de rétention](retention.md#retention-labels), vous pouvez baser une période de rétention sur l’occurrence d’un type spécifique d’événement. L’événement déclenche le début de la période de rétention, et les actions de rétention d’une étiquette sont appliquées sur tout le contenu portant l’étiquette en question pour ce type d’événement.
   
@@ -107,7 +112,7 @@ Si vous utilisez un type d’événement existant plutôt que de créer un nouve
 
 ### <a name="step-2-create-a-new-event-type-for-your-label"></a>Étape 2 : Créer un nouveau type d’événement pour votre étiquette
 
-Pour les paramètres de rétention, si vous avez sélectionné **Créer un nouveau type d’événement**, entrez un nom et une description pour votre type d’événement. Sélectionnez ensuite **Suivant**, **Envoyer**, puis **Terminé**.
+Pour les paramètres de rétention, si vous avez sélectionné **Créer un nouveau type d’événement**, entrez un nom et une description pour votre type d’événement. Sélectionnez ensuite **Suivant**, **Envoyer** et **Terminé**.
 
 Une fois de retour dans la page **Définir les paramètres de rétention**, pour **Démarrer la période de rétention sur la base de**, utilisez la liste déroulante pour sélectionner le type d’événement que vous avez créé.
 
@@ -115,7 +120,7 @@ Une fois de retour dans la page **Définir les paramètres de rétention**, pour
 ### <a name="step-3-publish-or-auto-apply-the-event-based-retention-labels"></a>Étape 3 : publier ou appliquer automatiquement les étiquettes de rétention basées sur les événements
 
 Comme pour n’importe quelle étiquette de rétention, vous devez publier ou appliquer automatiquement une étiquette basée sur un événement, de sorte qu’elle soit appliquée au contenu de façon manuelle ou automatique :
-- [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
+- [Publier des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
 - [Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)
 
 ### <a name="step-4-enter-an-asset-id"></a>Étape 4 : saisissez un ID d’élément

@@ -9,18 +9,20 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkSPO
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 ms.localizationpriority: medium
 description: Les administrateurs peuvent découvrir comment administrer SharePoint et OneDrive services dans un environnement multigéogé.
-ms.openlocfilehash: 31d361b2936c3d7bceca7137499c659030717eba
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 126b5de915fba7168b3895bbb05ccef6dcad749b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214191"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312052"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administration d’un environnement multigéographique
 
@@ -28,7 +30,7 @@ Découvrez le fonctionnement des services Microsoft 365 dans un environnement m
 
 ## <a name="administrator-experience"></a>Expérience de l’administrateur
 
-Le [centre SharePoint’administration](https://admin.microsoft.com/sharepoint)  dispose d’un onglet Emplacements géographiques dans le navigation de gauche qui comporte une carte d’emplacements géographiques où vous pouvez afficher et gérer vos emplacements géographiques. Utilisez cette page pour ajouter ou supprimer des emplacements géographiques pour votre client.
+Le centre SharePoint’administration dispose d’un <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank"></a> onglet Emplacements géographiques dans la barre de navigation de gauche qui comporte une carte d’emplacements géographiques où vous pouvez afficher et gérer vos emplacements géographiques. Utilisez cette page pour ajouter ou supprimer des emplacements géographiques pour votre client.
 
 ## <a name="audit-log-search"></a>Recherche de journal d’audit
 
@@ -43,7 +45,7 @@ BCS, le service Banque d’informations sécurisé et les applications ont des i
 
 ## <a name="compliance-admin-center"></a>Centre d’administration de la conformité
 
-Il existe un centre central de conformité pour un client multigéogé : [Microsoft 365'administration de la conformité.](https://compliance.microsoft.com/)
+Il existe un centre central de conformité pour un client multigéogé : [Microsoft 365'administration de la conformité](https://compliance.microsoft.com/).
 
 ## <a name="ediscovery"></a>eDiscovery
 
@@ -63,7 +65,7 @@ L’interface utilisateur ne permettant pas d’appliquer des stratégies de pro
 
 ## <a name="microsoft-power-apps"></a>Microsoft Power Apps
 
-Power Apps pour l’emplacement satellite utilise le point de fin situé à l’emplacement central du client. Microsoft Power Apps n’est pas un service Multi-Géo. 
+Power Apps créé pour l’emplacement satellite utilise le point de fin situé à l’emplacement central du client. Microsoft Power Apps n’est pas un service Multi-Géo. 
 
 ## <a name="power-automate"></a>Power Automate
 
@@ -97,4 +99,4 @@ Pour plus de détails et pour obtenir des instructions de développement, voir [
 
 ## <a name="yammer"></a>Yammer
 
-Yammer n’est pas une charge de travail Multi-Géo. Yammer threads stockés dans Yammer seront placés dans l’emplacement central du client. Yammer est en cours de déploiement d’une modification de stockage de fichiers qui stockera Yammer fichiers dans SharePoint. Yammer fichiers stockés dans SharePoint seront placés sur le site SharePoint associé au groupe Yammer web. SharePoint sites de groupe sont basés sur une logique PDL comme indiqué dans SharePoint [Sites et groupes.](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)
+Yammer n’est pas une charge de travail Multi-Géo. Yammer threads stockés dans Yammer seront placés dans l’emplacement central du client. Yammer est en cours de déploiement d’une modification de stockage de fichiers qui stockera Yammer fichiers dans SharePoint. Yammer fichiers stockés dans SharePoint seront placés sur le site SharePoint associé au groupe Yammer de données. SharePoint sites de groupe sont basés sur une logique PDL comme indiqué dans SharePoint [Sites et groupes](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups).

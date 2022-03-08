@@ -14,21 +14,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 19f4b517682fa58bde7253c074dc4402f6f95bf9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c2ec837ebc9fef0aabd2810dbd22db24597c52da
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163421"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322602"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>Hors-carte des appareils à partir du service Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Plateformes**
 - macOS
@@ -45,13 +45,13 @@ Suivez les instructions correspondantes en fonction de votre méthode de déploi
 >
 > Les données des appareils horsboard (par exemple, Chronologie, Alertes, Vulnérabilités, etc.) restent dans le portail jusqu’à l’expiration de la période de [rétention](data-storage-privacy.md#how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy) configurée.
 >
-> Le profil de l’appareil (sans [](machines-view-overview.md) données) reste dans la liste des appareils pendant 180 jours au plus.
+> Le profil de l’appareil (sans données) reste dans la [](machines-view-overview.md) liste des appareils pendant 180 jours au plus.
 >
 > En outre, les appareils qui ne sont pas actifs au cours des 30 derniers jours ne sont pas factorés sur les données qui reflètent le [score](tvm-exposure-score.md) d’exposition Gestion des menaces et des vulnérabilités de votre organisation et le score de sécurité Microsoft pour les appareils.
 >
-> Pour afficher uniquement les appareils [](machines-view-overview.md#health-state)actifs, vous pouvez filtrer par état d’état d’état, [balises d’appareil](machine-tags.md) ou groupes [d’ordinateurs.](machine-groups.md)
+> Pour afficher uniquement les appareils actifs, vous pouvez filtrer par état d’état du [capteur,](machines-view-overview.md#use-filters-to-customize-the-device-inventory-views) [balises d’appareil](machine-tags.md) ou groupes [d’ordinateurs](machine-groups.md).
 
-## <a name="offboard-windows-devices"></a>Appareils hors Windows
+## <a name="offboard-windows-devices"></a>Appareils hors Windows d’appareil
 
 - [Hors-carte des appareils à l’aide d’un script local](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 - [Appareils de tableau de bord à l’aide de la stratégie de groupe](configure-endpoints-gp.md#offboard-devices-using-group-policy)

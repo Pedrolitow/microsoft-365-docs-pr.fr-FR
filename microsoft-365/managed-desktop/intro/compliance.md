@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: d34807d20f0b203efb3d45b6fe45eddce632e275
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 2606b6c241b364464b4c6f205a3beb13af50a814
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035075"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320380"
 ---
 # <a name="compliance"></a>Conformité
 
@@ -39,14 +39,13 @@ Microsoft Manged Desktop a obtenu les certifications suivantes :
 - [Health Insurance Portability and Accountability Act (HIPAA)](/compliance/regulatory/offering-hipaa-hitech)
 - [Infrastructure de sécurité commune (CSF) HITRUST (Health Information Trust Alliance)](/compliance/regulatory/offering-hitrust)
 
-
 ## <a name="auditor-reports-and-compliance-certificates"></a>Rapports des auditeurs et certificats de conformité
 
-Vous trouverez des informations pertinentes, notamment des exigences techniques et de contrôle, dans le portail d’confiance des services [(STP),](https://servicetrust.microsoft.com/)le référentiel central pour obtenir des informations sur les offres Microsoft Cloud Service client. Vous pouvez télécharger des rapports d’auditeur, des certificats de conformité et bien plus encore à partir de la section [Rapports d’audit](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) du STP.
+Vous trouverez des informations pertinentes, notamment des exigences techniques et de contrôle, dans le portail d’confiance des [services (STP).](https://servicetrust.microsoft.com/) Ce portail est le référentiel central pour ces informations sur Microsoft Cloud Service offres. Vous pouvez télécharger des rapports d’auditeur, des certificats de conformité et bien plus encore à partir de la section [Rapports d’audit](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) du STP.
 
 > [!NOTE]
 > Comme Microsoft Manged Desktop s’exécute sur Azure, les documents pertinents ont généralement des noms de fichiers tels que « Microsoft Azure, Dynamics 365 et d’autres services en ligne ». Dans ces documents, vous pouvez généralement trouver Microsoft Manged Desktop sous la catégorie « Microsoft Online Services » ou « Analyse + Gestion ».
 
-## <a name="shared-responsibility"></a>Responsabilité partagée
+## <a name="shared-responsibility"></a>Rsponsabilité partagée
 
-La conformité des services cloud est une responsabilité partagée entre les fournisseurs de services cloud et leurs clients. Pour plus d’informations, voir [Responsabilité partagée dans le cloud.](/azure/security/fundamentals/shared-responsibility)
+La conformité des services cloud est une responsabilité partagée entre les fournisseurs de services cloud et leurs clients. Pour plus d’informations, voir [Responsabilité partagée dans le cloud](/azure/security/fundamentals/shared-responsibility).

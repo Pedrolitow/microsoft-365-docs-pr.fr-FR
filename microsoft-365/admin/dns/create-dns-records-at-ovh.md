@@ -2,13 +2,13 @@
 title: Connecter vos enregistrements DNS sur OVH pour Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online et les autres services sur OVH pour Microsoft.
-ms.openlocfilehash: 5bf6b052be9297f3d121897f8e8de5ec8fa2a9e4
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 9c181536c418baebd3ba8eb1929095ac2d828ef6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60660753"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314978"
 ---
 # <a name="connect-your-dns-records-at-ovh-to-microsoft-365"></a>Connecter vos enregistrements DNS sur OVH pour Microsoft 365
 
@@ -51,7 +51,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
 
     ![Connexion OVH.](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
 
-1. Sur la page d’accueil du tableau de bord, sous Afficher toute **mon activité,** sélectionnez le nom du domaine à modifier.
+1. Sur la page d’accueil du tableau de bord, sous **Afficher toute mon activité**, sélectionnez le nom du domaine à modifier.
   
 1. Sélectionnez **zone DNS**.
 
@@ -59,7 +59,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
   
 1. Sélectionnez **Ajouter une entrée**.
 
-    ![OVH Ajoutez une entrée.](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
+    ![OVH Ajouter une entrée.](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
 1. Sélectionnez **TXT**
 
@@ -83,9 +83,9 @@ L’enregistrement étant désormais ajouté sur le site de votre bureau d’enr
 
 Pour vérifier l’enregistrement dans Microsoft 365 :
   
-1. Dans le Centre d’administration, go to the **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+1. Dans le Centre d’administration, Paramètres  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**domaines**</a>.
 
-1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer la configuration.** 
+1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer l’installation**. 
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Sélectionnez Démarrer l’installation.":::
 
@@ -102,7 +102,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
     ![Connexion OVH.](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-1. Sur la page d’accueil du tableau de bord, sous Afficher toute **mon activité,** sélectionnez le nom du domaine à modifier.
+1. Sur la page d’accueil du tableau de bord, sous **Afficher toute mon activité**, sélectionnez le nom du domaine à modifier.
   
 1. Sélectionnez **zone DNS**.
 
@@ -110,7 +110,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
   
 1. Sélectionnez **Ajouter une entrée**.
 
-    ![OVH Ajoutez une entrée.](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
+    ![OVH Ajouter une entrée.](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
 1. Sélectionnez **MX**.
 
@@ -135,7 +135,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
     ![Enregistrement MX OVH sélectionnez Confirmer.](../../media/090bfb11-a753-4af0-8982-582a4069a169.png)
 
-1. Supprimez tous les autres enregistrements MX de la liste sur la **page de zone DNS.** Sélectionnez chaque enregistrement et, dans la colonne **Actions,** sélectionnez l’icône **Supprimer de corbeille.**
+1. Supprimez tous les autres enregistrements MX de la liste sur la **page de zone DNS** . Sélectionnez chaque enregistrement et, dans la colonne **Actions** , sélectionnez l’icône **Supprimer de corbeille** .
 
     ![L’ovh supprime l’enregistrement MX.](../../media/892b328b-7057-4828-b8c5-fe26284dc8c2.png)
   
@@ -147,7 +147,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
     ![Connexion OVH.](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-1. Sur la page d’accueil du tableau de bord, sous Afficher toute **mon activité,** sélectionnez le nom du domaine à modifier.
+1. Sur la page d’accueil du tableau de bord, sous **Afficher toute mon activité**, sélectionnez le nom du domaine à modifier.
   
 1. Sélectionnez **zone DNS**.
 
@@ -155,7 +155,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
   
 1. Sélectionnez **Ajouter une entrée**.
 
-    ![OVH Ajoutez une entrée.](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
+    ![OVH Ajouter une entrée.](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
 1. Sélectionnez **CNAME**.
 
@@ -184,7 +184,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
     ![Connexion OVH.](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-1. Sur la page d’accueil du tableau de bord, sous Afficher toute **mon activité,** sélectionnez le nom du domaine à modifier.
+1. Sur la page d’accueil du tableau de bord, sous **Afficher toute mon activité**, sélectionnez le nom du domaine à modifier.
   
 1. Sélectionnez **zone DNS**.
 
@@ -192,7 +192,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
   
 1. Sélectionnez **Ajouter une entrée**.
 
-    ![OVH Ajoutez une entrée.](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
+    ![OVH Ajouter une entrée.](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
 1. Sélectionnez **TXT**.
 
@@ -200,7 +200,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
     |**Sous-domaine**|**TTL**|**Value (Valeur)**|
     |:-----|:-----|:-----|
-    |(laissez vide)  <br/> |3600 secondes  <br/> |v=spf1 include:spf.protection.outlook.com -all <br/**Remarque** : nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correct.           |
+    |(laissez vide)  <br/> |3600 secondes  <br/> |v=spf1 include:spf.protection.outlook.com -all <br/**Note :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correct.           |
 
     ![OVH Ajouter un enregistrement TXT pour SPF.](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)
   
@@ -222,7 +222,7 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
 
     ![Connexion OVH.](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-1. Sur la page d’accueil du tableau de bord, sous Afficher toute **mon activité,** sélectionnez le nom du domaine à modifier.
+1. Sur la page d’accueil du tableau de bord, sous **Afficher toute mon activité**, sélectionnez le nom du domaine à modifier.
   
 1. Sélectionnez **zone DNS**.
 
@@ -230,7 +230,7 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
   
 1. Sélectionnez **Ajouter une entrée**.
 
-    ![OVH Ajoutez une entrée.](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
+    ![OVH Ajouter une entrée.](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
 
 1. Sélectionnez **SRV**.
 
@@ -241,7 +241,7 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
     |_sip._tls|3600 (s.) |100 |  1  | 443 |sipdir.online.lync.com. **Cette valeur DOIT se terminer par un point (.)**><br> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte. | 
     |_sipfederationtls._tcp| 3600 (s.)|100 | 1 | 5061 | sipfed.online.lync.com. **Cette valeur DOIT se terminer par un point (.)**<br> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.    | 
   
-1. Pour ajouter l’autre enregistrement SRV, sélectionnez Ajouter un autre **enregistrement,** créez un enregistrement à l’aide des valeurs de la ligne suivante du tableau, puis sélectionnez Créer **des enregistrements.**
+1. Pour ajouter l’autre enregistrement SRV, sélectionnez Ajouter un autre **enregistrement,** créez un enregistrement à l’aide des valeurs de la ligne suivante du tableau, puis sélectionnez **Créer des enregistrements**.
 
 > [!NOTE]
 > Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d’autres problèmes suite à l’ajout des enregistrements DNS, consultez la page [Rechercher et corriger les problèmes suite à l’ajout de votre domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -252,7 +252,7 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
 
     ![Connexion OVH.](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-1. Sur la page d’accueil du tableau de bord, sous Afficher toute **mon activité,** sélectionnez le nom du domaine à modifier.
+1. Sur la page d’accueil du tableau de bord, sous **Afficher toute mon activité**, sélectionnez le nom du domaine à modifier.
   
 1. Sélectionnez **zone DNS**.
 
@@ -260,7 +260,7 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
   
 1. Sélectionnez **Ajouter une entrée**.
 
-    ![OVH Ajoutez une entrée.](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
+    ![OVH Ajouter une entrée.](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
 
 1. Sélectionnez **CNAME**.
 
@@ -294,7 +294,7 @@ Ce service vous permet de sécuriser et de gérer à distance les appareils mobi
 
     ![Connexion OVH.](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-1. Sur la page d’accueil du tableau de bord, sous Afficher toutes **mes** activités, sélectionnez le nom du domaine à modifier.
+1. Sur la page d’accueil du tableau de bord, sous **Afficher toute mon activité**, sélectionnez le nom du domaine à modifier.
   
 1. Sélectionnez **zone DNS**.
 
@@ -302,13 +302,13 @@ Ce service vous permet de sécuriser et de gérer à distance les appareils mobi
   
 1. Sélectionnez **Ajouter une entrée**.
 
-    ![OVH Ajoutez une entrée.](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
+    ![OVH Ajouter une entrée.](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
 1. Sélectionnez **CNAME**.
 
     ![OVH Ajouter un type d’enregistrement CNAME.](../../media/33c7ac74-18d7-4ae1-9e27-1c0f9773a3c3.png)
 
-1. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs de la première ligne du tableau suivant. Pour affecter une valeur TTL, choisissez **Personnalisé** dans la liste de listes listes, puis tapez la valeur dans la zone de texte. 
+1. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs de la première ligne du tableau suivant. Pour affecter une valeur TTL, sélectionnez **Personnalisé** dans la liste de listes listes, puis tapez la valeur dans la zone de texte. 
   
     |**Sous-domaine**| **TTL (Durée de vie)** | **Cible** | 
     |:-----|:-----|:-----|
@@ -317,7 +317,7 @@ Ce service vous permet de sécuriser et de gérer à distance les appareils mobi
 
 1. Sélectionnez **Suivant**.
 
-    ![OVH Ajoutez des valeurs CNAME et sélectionnez Suivant.](../../media/f9481cb1-559d-4da1-9643-9cacb0d80d29.png)
+    ![OVH Ajouter des valeurs CNAME et sélectionner Suivant.](../../media/f9481cb1-559d-4da1-9643-9cacb0d80d29.png)
   
 1. Sélectionner **Confirmer**.
 

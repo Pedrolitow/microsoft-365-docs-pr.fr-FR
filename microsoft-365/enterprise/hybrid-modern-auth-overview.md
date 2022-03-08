@@ -16,18 +16,18 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Dans cet article, vous allez découvrir l’authentification moderne hybride et les conditions préalables à l’utilisation avec des serveurs Skype Entreprise et Exchange locaux.
-ms.openlocfilehash: f0abb01b7a03405f576a12766b21b3c36113004d
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: efce3b5a04f2e9500330cab87d7ba8e62ca49db0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807307"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312864"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Vue d’ensemble de l’authentification moderne hybride et configuration requise pour l’utiliser avec les serveurs Skype Entreprise et Exchange locaux
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-_L’authentification moderne_ est une méthode de gestion des identités qui offre une authentification et une autorisation utilisateur plus sécurisées. Il est disponible pour les déploiements hybrides Office 365 de serveurs Skype Entreprise locaux et Exchange locaux, ainsi que pour les déploiements hybrides Skype Entreprise domaines séparés. Cet article contient des liens vers des documents connexes sur les conditions préalables, la configuration/la désactivation de l’authentification moderne et à certaines informations relatives aux clients (par exemple, les clients Outlook et Skype).
+_L’authentification moderne_ est une méthode de gestion des identités qui offre une authentification et une autorisation utilisateur plus sécurisées. Il est disponible pour les déploiements hybrides Office 365 d’un serveur Skype Entreprise local et d’un serveur Exchange local et de serveurs Skype Entreprise hybrides. Cet article contient des liens vers des documents connexes sur les conditions préalables, la configuration/la désactivation de l’authentification moderne et à certaines informations relatives aux clients (par exemple, les clients Outlook et Skype).
 
 - [Qu’est-ce que l’authentification moderne ?](hybrid-modern-auth-overview.md#BKMK_WhatisModAuth)
 - [Qu’est-ce qui change lorsque j’utilise l’authentification moderne ?](hybrid-modern-auth-overview.md#BKMK_WhatChanges)
@@ -158,7 +158,7 @@ Vérifiez et cochez les éléments de votre liste avant de continuer :
   |Outlook pour iOS et Android  <br/> | Technologie de synchronisation Microsoft <br/> |Pour plus d’informations, consultez [Utilisation de l’authentification moderne hybride avec Outlook pour iOS et Android](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).  <br/> |
   |Exchange ActiveSync clients (par exemple, messagerie iOS11)  <br/> |Exchange ActiveSync  <br/> |Pour les clients Exchange ActiveSync qui prennent en charge l’authentification moderne, vous devez recréer le profil pour passer de l’authentification de base à l’authentification moderne.  <br/> |
 
-    Les clients et/ou protocoles qui ne sont pas répertoriés (par exemple, POP3) ne permettent pas de prendre en charge l’authentification moderne avec les Exchange locaux et continuent d’utiliser les mécanismes d’authentification hérités même après l’authentification moderne dans l’environnement.
+    Les clients et/ou protocoles qui ne sont pas répertoriés (par exemple, POP3) ne permettent pas de prendre en charge l’authentification moderne avec des Exchange en local et continuent d’utiliser les mécanismes d’authentification hérités même après l’authentification moderne dans l’environnement.
 
 - **Conditions préalables générales**
   - Les scénarios de forêt de ressources nécessitent une relation d’confiance double avec la forêt de comptes pour s’assurer que des recherche SID correctes sont effectuées lors des demandes d’authentification moderne hybride. 
@@ -169,7 +169,8 @@ Vérifiez et cochez les éléments de votre liste avant de continuer :
     > [!NOTE]
     > L’authentification moderne hybride n’est pas prise en charge avec l’[Agent hybride](/exchange/hybrid-deployment/hybrid-agent).
 
-  - Assurez-vous qu’un utilisateur de test local et un utilisateur de test hybride homed in Office 365 peuvent se connecter au client de bureau Skype Entreprise (si vous souhaitez utiliser l’authentification moderne avec Skype) et Microsoft Outlook (si vous souhaitez utiliser l’authentification moderne avec Exchange).
+  - Assurez-vous qu’un utilisateur de test local, ainsi qu’un utilisateur de test hybride hébergé dans Office 365, peut se connecter au client de bureau Skype Entreprise (si vous voulez utiliser l’authentification moderne avec Skype) et Microsoft Outlook (si vous souhaitez utiliser une authentification moderne avec Exchange).
+  - Assurez-vous que le paramètre SignInOptions dans Microsoft Office n’est pas configuré sur son paramètre le plus restrictif. Pour plus d’informations, [voir How to allow Office to connect to the Internet](/office365/troubleshoot/access-management/office-feature-disabled).
 
 ## <a name="what-else-do-i-need-to-know-before-i-begin"></a>Que dois-je savoir d’autre avant de commencer ?
 <a name="BKMK_Whatelse"> </a>

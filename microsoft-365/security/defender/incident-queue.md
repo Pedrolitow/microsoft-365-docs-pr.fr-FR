@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fafb48af3aa0c38146073a0682323496bc0431e2
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 38bfde92a2988cd8bdbca770402af96a4b9c5134
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903962"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321825"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Hiérarchiser les incidents dans Microsoft 365 Defender
 
@@ -39,7 +39,7 @@ ms.locfileid: "62903962"
 
 Microsoft 365 Defender l’analyse de corrélation et regroupe les alertes associées et les enquêtes automatisées de différents produits dans un incident. Microsoft 365 Defender déclenche également des alertes uniques sur les activités qui peuvent uniquement être identifiées comme malveillantes en raison de la visibilité de bout en bout dont dispose Microsoft 365 Defender sur l’ensemble de la suite de produits. Cette vue offre à vos analystes de sécurité un niveau d’attaque plus large, qui leur permet de mieux comprendre et de gérer les menaces complexes au sein de votre organisation.
 
-La **file d’attente Incident** affiche un ensemble d’incidents qui ont été créés sur des appareils, des utilisateurs et des boîtes aux lettres. Elle vous aide à trier les incidents afin de hiérarchiser et de créer une décision de réponse cyber-sécurité. C’est également ce qu’on appelle le triage des incidents.
+La **file d’attente Incident** affiche un ensemble d’incidents qui ont été créés sur des appareils, des utilisateurs et des boîtes aux lettres. Il vous permet de trier les incidents afin de hiérarchiser et de créer une décision de réponse à la cybersécurité informée, un processus appelé triage des incidents.
 
 Vous pouvez vous rendre dans la file d’attente des **incidents à partir d’incidents & alertes > incidents** sur le lancement rapide du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender web</a>. Voici un exemple.
 
@@ -58,15 +58,17 @@ Par exemple : *incident en plusieurs étapes sur plusieurs points de terminaison
 > [!NOTE]
 > Les incidents qui existaient avant le déploiement de la dénomination automatique des incidents ne seront pas modifiés.
 
-La file d’attente des incidents expose également plusieurs options de filtrage qui, lorsqu’elles sont appliquées, vous permettent d’effectuer un large éventail de tous les incidents existants dans votre environnement ou de décider de vous concentrer sur un scénario ou une menace spécifique. L’application de filtres dans la file d’attente des incidents permet de déterminer le type d’incident nécessitant une attention immédiate. 
+La file d’attente des incidents propose également plusieurs options de filtrage qui, lorsqu’elles sont appliquées, vous permettent d’effectuer un large éventail de tous les incidents existants dans votre environnement ou de décider de vous concentrer sur un scénario ou une menace spécifique. L’application de filtres dans la file d’attente des incidents permet de déterminer le type d’incident nécessitant une attention immédiate. 
+
+La **liste Filtres** au-dessus de la liste des incidents affiche les filtres actuellement appliqués.
 
 ## <a name="available-filters"></a>Filtres disponibles
 
-Dans la file d’attente des incidents par défaut, vous pouvez sélectionner **Filtres** pour afficher un volet Filtres, à partir duquel vous pouvez afficher un ensemble filtré d’incidents. Voici un exemple.
+Dans la file d’attente des incidents par défaut, vous  pouvez sélectionner **Filtrer** pour voir un volet Filtre, à partir duquel vous spécifiez un ensemble filtré d’incidents. Voici un exemple.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Exemple du volet filtres de la file d’attente des incidents." lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
-Le filtre par défaut consiste à afficher toutes les alertes et tous les incidents avec l’état **Nouveau** et **En cours** .
+Vous pouvez également voir **le volet Filtre** en sélectionnant l’un des filtres dans la liste **Filtres** au-dessus de la liste des incidents.
 
 Ce tableau répertorie les noms de filtres disponibles.
 
@@ -74,21 +76,27 @@ Ce tableau répertorie les noms de filtres disponibles.
 |:-------|:-----|
 | État | **Sélectionnez Nouveau**, **En cours** ou **Résolu**. |
 | Severity | La gravité d’un incident indique l’impact qu’il peut avoir sur vos ressources. Plus la gravité est élevée, plus l’impact est important et nécessite généralement l’attention la plus immédiate. **Sélectionnez Haut**, **Moyen**, **Bas** **ou Informationnel**. |
-| Affectation d’incident | Sélectionnez Affecté à tout le monde, Affecté à moi ou Non attribué. |
+| Affectation d’incident | Sélectionnez le ou les utilisateurs affectés. |
 | Plusieurs sources de service  | Spécifiez si le filtre est pour plusieurs sources de service. |
-| Sources de service  | Filtrez pour voir uniquement les incidents qui contiennent des alertes de : Gouvernance des applications, Microsoft 365 Defender, Microsoft Defender pour Office 365, Microsoft Defender pour le point de terminaison, Microsoft Defender pour l’identité, Microsoft Defender pour les applications cloud. |
+| Sources de service  | Spécifiez les incidents qui contiennent des alertes provenant de : Gouvernance des applications, Microsoft 365 Defender, Microsoft Defender pour Office 365, Microsoft Defender pour le point de terminaison, Microsoft Defender pour l’identité, Microsoft Defender pour les applications cloud. |
 | Balises | Sélectionnez un ou plusieurs noms de balises dans la liste. |
 | Plusieurs catégories  | Spécifiez si le filtre s’agit de plusieurs catégories. |
 | Catégories | Choisissez des catégories pour vous concentrer sur des tactiques, des techniques ou des composants d’attaque spécifiques. |
-| Plateforme du système d’exploitation | Limitez l’affichage de la file d’attente des incidents par système d’exploitation. |
-| Classification | Filtrer les incidents en fonction des classifications définies des alertes associées. Sélectionnez **Alerte vraie**, **Alertes fausses** ou Non **définies**. |
-| État de l’examen | Filtrer les incidents selon l’état de l’examen automatisé.  |
-| Menace associée | Filtrer les incidents par une menace nommée.  |
-| Actors | Filtrer les incidents par un acteur de menace nommé.  |
-| Confidentialité des données | Certaines attaques se concentrent sur le ciblage de données sensibles ou précieuses. En appliquant un filtre pour déterminer si des données confidentielles sont impliquées dans l’incident, vous pouvez rapidement déterminer si des informations sensibles ont été compromises et hiérarchiser les problèmes. <br><br>Ce filtre n’est disponible que si Protection des données Microsoft est allumé.|
+| Entités | Spécifiez le nom d’un bien tel qu’un nom d’utilisateur, d’appareil, de boîte aux lettres ou d’application. |
+| Confidentialité des données | Certaines attaques se concentrent sur le ciblage de données sensibles ou précieuses. En appliquant un filtre pour des étiquettes de sensibilité spécifiques, vous pouvez rapidement déterminer si des informations sensibles ont potentiellement été compromises et hiérarchiser la façon de résoudre ces incidents. <br><br> Ce filtre n’est disponible que si Protection des données Microsoft est allumé. |
+| Groupes d'appareils | Spécifiez un [nom de groupe d’appareils](/windows/security/threat-protection/microsoft-defender-atp/machine-groups) . |
+| Plateforme du système d’exploitation | Spécifiez les systèmes d’exploitation des appareils. |
+| Classification | Spécifiez l’ensemble des classifications des alertes associées. |
+| État d’examen automatisé | Spécifiez l’état de l’examen automatisé.  |
+| Menace associée | Spécifiez une menace nommée.  |
+| Actors | Spécifiez un acteur de menace nommé.  |
 |||
 
-## <a name="save-defined-filters-as-urls"></a>Enregistrer les filtres définis en tant qu’URL
+Le filtre par défaut consiste à afficher toutes les alertes et tous les incidents dont l’état est **Nouveau** et En cours et avec une gravité **faible, moyenne** ou  **élevée**.
+
+Vous pouvez rapidement supprimer un filtre en sélectionnant **le X** dans le nom d’un filtre dans la **liste Filtres** . 
+
+## <a name="save-custom-filters-as-urls"></a>Enregistrer des filtres personnalisés en tant qu’URL
 
 Une fois que vous avez configuré un filtre utile dans la file d’attente des incidents, vous pouvez mettre en signet l’URL de l’onglet du navigateur ou l’enregistrer en tant que lien sur une page Web, un document Word ou un lieu de votre choix. Cela vous permettra d’accéder en un seul clic aux vues clés de la file d’attente des incidents, telles que :
 
@@ -104,6 +112,26 @@ Une fois que vous avez configuré un filtre utile dans la file d’attente des i
 - Incidents avec un acteur spécifique
 
 Une fois que vous avez compilé et stocké votre liste d’affichages de filtre utiles en tant qu’URL, vous pouvez l’utiliser pour traiter et hiérarchiser [](manage-incidents.md) rapidement les incidents dans votre file d’attente et les gérer pour une affectation et une analyse ultérieures.
+
+## <a name="search-for-incidents"></a>Rechercher des incidents
+
+Dans la **zone Rechercher le nom ou l’ID** au-dessus de la liste des incidents, vous pouvez taper l’ID d’incident ou le nom de l’incident. Lorsque vous sélectionnez un incident dans la liste des résultats de la recherche, le portail Microsoft 365 Defender ouvre un nouvel onglet avec les propriétés de l’incident, à partir duquel vous pouvez commencer votre [enquête](investigate-incidents.md).
+
+## <a name="search-for-impacted-assets"></a>Rechercher les biens touchés
+
+Vous pouvez nommer un bien en&mdash; tant qu’utilisateur, périphérique, boîte aux lettres ou nom d’application&mdash; et rechercher tous les incidents connexes. 
+
+## <a name="specify-a-time-range"></a>Spécifier une plage de temps
+
+La liste des incidents par défaut est celle des incidents qui se sont produits au cours des six derniers mois. Vous pouvez spécifier une nouvelle plage de temps à partir de la zone de baisse en de côté de l’icône de calendrier en sélectionnant :
+
+ - 1 jour
+ - 3 jours
+ - 1 semaine
+ - 30 jours
+ - 30 jours
+ - 6 mois
+ - Plage personnalisée dans laquelle vous pouvez spécifier des dates et des heures
 
 ## <a name="next-steps"></a>Étapes suivantes
 

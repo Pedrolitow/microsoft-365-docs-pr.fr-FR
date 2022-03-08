@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: bff8af115f23db7fe152ed6ee06e62d128f2b9e4
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: a368102b6cb4eabaadd459fd185d18e3a7dc7381
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241998"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323400"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîtes aux lettres entre locataires (prévisualisation)
 
@@ -31,14 +31,14 @@ Les administrateurs peuvent utiliser la cmdlet New-MigrationBatch, disponible vi
 
 Les utilisateurs qui migrent doivent être présents dans le système d’Exchange Online client cible en tant que MailUsers, marqués avec des attributs spécifiques pour activer les déplacements entre clients. Les déplacements du système échouent pour les utilisateurs qui ne sont pas correctement configurer dans le client cible.
 
-Lorsque les déplacements sont terminés, la boîte aux lettres de l’utilisateur source est convertie en MailUser et l’adresse cible (affichée sous le nom ExternalEmailAddress dans Exchange) est estampillée avec l’adresse de routage vers le client de destination. Ce processus laisse l’utilisateur mailuser hérité dans le client source et autorise la coexistence et le routage du courrier. Lorsque les processus d’entreprise le permettent, le client source peut supprimer la source MailUser ou les convertir en contact de messagerie.
+Lorsque les déplacements sont terminés, la boîte aux lettres de l’utilisateur source est convertie en MailUser et l’adresse cible (affichée sous externalEmailAddress dans Exchange) est estampillée avec l’adresse de routage vers le client de destination. Ce processus laisse l’utilisateur mailuser hérité dans le client source et autorise la coexistence et le routage du courrier. Lorsque les processus d’entreprise le permettent, le client source peut supprimer la source MailUser ou les convertir en contact de messagerie.
 
-Les migrations Exchange boîtes aux lettres entre les locataires sont uniquement pris en charge pour les locataires hybrides ou cloud, ou toute combinaison des deux.
+Les migrations de boîtes aux lettres entre Exchange client sont uniquement pris en charge pour les locataires hybrides ou cloud, ou toute combinaison des deux.
 
-Cet article décrit le processus de déplacement de boîtes aux lettres entre les locataires et fournit des instructions sur la préparation des locataires sources et cibles pour les déplacements de contenu de boîtes aux lettres Exchange Online client.
+Cet article décrit le processus de déplacement de boîtes aux lettres entre les locataires et fournit des instructions sur la préparation des locataires sources et cibles pour les déplacements de contenu de boîte Exchange Online de boîtes aux lettres.
 
    > [!NOTE]
-   > Nous avons récemment mis à jour nos étapes de configuration pour permettre la migration de boîtes aux lettres entre clients afin de ne plus nécessiter Azure Key Vault ! Si vous débutez avec cette prévisualisation, aucune action n’est requise et vous pouvez continuer et suivre les étapes détaillées dans ce document. Si vous avez commencé à configurer vos locataires à l’aide de la méthode AKV précédente, nous vous recommandons vivement d’arrêter ou de supprimer cette configuration pour commencer à utiliser cette nouvelle méthode. Si vous avez des migrations de boîtes aux lettres en cours avec la méthode AKV précédente, patientez jusqu’à ce que vos migrations existantes soient terminées et suivez les étapes ci-dessous pour activer la nouvelle méthode simplifiée. Les étapes de configuration requises d’Azure Key Vault sont archivées, mais elles sont trouvées **[ici,](https://github.com/microsoft/cross-tenant/wiki/V1-Content#cross-tenant-mailbox-migration-preview)** pour référence.
+   > Nous avons récemment mis à jour nos étapes de configuration pour permettre la migration de boîtes aux lettres entre clients afin de ne plus nécessiter Azure Key Vault ! Si vous débutez avec cette prévisualisation, aucune action n’est requise et vous pouvez continuer et suivre les étapes détaillées dans ce document. Si vous avez commencé à configurer vos locataires à l’aide de la méthode AKV précédente, nous vous recommandons vivement d’arrêter ou de supprimer cette configuration pour commencer à utiliser cette nouvelle méthode. Si vous avez des migrations de boîtes aux lettres en cours avec la méthode AKV précédente, patientez jusqu’à ce que vos migrations existantes soient terminées et suivez les étapes ci-dessous pour activer la nouvelle méthode simplifiée. Les étapes d’installation requises d’Azure Key Vault sont archivées, mais vous pouvez les **[trouver ici](https://github.com/microsoft/cross-tenant/wiki/V1-Content#cross-tenant-mailbox-migration-preview)**, pour référence.
 
 ## <a name="preparing-source-and-target-tenants"></a>Préparation des locataires sources et cibles
 
@@ -48,9 +48,9 @@ Avant de commencer, assurez-vous que vous avez les autorisations nécessaires po
 
 En outre, au moins un groupe de sécurité à messagerie dans le client source est requis. Ces groupes sont utilisés pour cibler la liste des boîtes aux lettres qui peuvent passer du client source (ou parfois appelé ressource) au client cible. Cela permet à l’administrateur client source de restreindre ou d’étendue l’ensemble spécifique de boîtes aux lettres qui doivent être déplacées, ce qui empêche la migration des utilisateurs non voulus. Les groupes imbrmbrés ne sont pas pris en charge.
 
-Vous devrez également communiquer avec votre société partenaire de confiance (avec laquelle vous déplacerez des boîtes aux lettres) pour obtenir leur ID Microsoft 365 client approuvé. Cet ID de client est utilisé dans le champ Organization Relationship DomainName.
+Vous devrez également communiquer avec votre société partenaire de confiance (avec laquelle vous déplacerez des boîtes aux lettres) pour obtenir son ID Microsoft 365 client approuvé. Cet ID de client est utilisé dans le champ Organization Relationship DomainName.
 
-Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) puis allez à [https://aad.portal.azure.com/\#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) . Cliquez sur l’icône de copie de la propriété ID de client pour la copier dans le Presse-papiers.
+Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) puis allez à [https://aad.portal.azure.com/\#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties). Cliquez sur l’icône de copie de la propriété ID de client pour la copier dans le Presse-papiers.
 
 ### <a name="configuration-steps-to-enable-your-tenants-for-cross-tenant-mailbox-migrations"></a>Étapes de configuration pour activer vos locataires pour les migrations de boîtes aux lettres entre locataires
 
@@ -59,13 +59,13 @@ Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'
 
 ### <a name="prepare-the-target-destination-tenant-by-creating-the-migration-application-and-secret"></a>Préparer le client cible (destination) en créant l’application de migration et la question secrète
 
-1. Connectez-vous à votre portail Azure AD client cible ( ) avec <https://portal.azure.com> vos informations d’identification d’administrateur client cible
+1. Connectez-vous à votre portail Azure AD client cible (<https://portal.azure.com>) avec vos informations d’identification d’administrateur client cible
 
    ![Azure Logon](../media/tenant-to-tenant-mailbox-move/74f26681e12df3308c7823ee7d527587.png)
 
 2. Cliquez sur Afficher sous Gérer Azure Active Directory.
 
-   ![bouton Azure Active Directory](../media/tenant-to-tenant-mailbox-move/109ac3dfbac2403fb288f085767f393b.png)
+   ![Azure Active Directory bouton](../media/tenant-to-tenant-mailbox-move/109ac3dfbac2403fb288f085767f393b.png)
 
 3. Dans la barre de navigation de gauche, sélectionnez Inscriptions d’applications.
 
@@ -73,7 +73,7 @@ Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'
 
    ![Nouvelle application](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
 
-5. Dans la page Enregistrer une application, sous Types de comptes pris en charge, sélectionnez Comptes dans n’importe quel répertoire d’organisation (n’importe quel Azure AD - Multi-client). Ensuite, sous URI de redirection (facultatif), sélectionnez Web et entrez <https://office.com> . Enfin, sélectionnez Enregistrer.
+5. Dans la page Enregistrer une application, sous Types de comptes pris en charge, sélectionnez Comptes dans n’importe quel répertoire d’organisation (n’importe quel Azure AD - Multi-client). Ensuite, sous URI de redirection (facultatif), sélectionnez Web et entrez <https://office.com>. Enfin, sélectionnez Enregistrer.
 
    ![Inscription de l’application](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
 
@@ -114,7 +114,7 @@ Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'
       > [!NOTE]
       > Il s’agit du mot de passe qui sera utilisé lors de la création de votre point de terminaison de migration. Il est extrêmement important de copier ce mot de passe dans le Presse-papiers ou de copier ce mot de passe dans un emplacement sécurisé/secret. C’est la seule fois que vous pourrez voir ce mot de passe ! Si vous la perdez ou si vous devez la réinitialiser, vous pouvez vous connecter à notre portail Azure, vous connecter aux inscriptions d’application, rechercher votre application de migration, sélectionner des certificats Secrets & et créer une nouvelle question secrète pour votre application.
 
-19. Maintenant que vous avez créé l’application de migration et la question secrète, vous devez consentir à l’application. Pour consentir à l’application, revenir à la page d’accueil Azure Active Directory, cliquez sur les applications Enterprise dans le navigation de gauche, recherchez votre application de migration que vous avez créée, sélectionnez-la, puis sélectionnez Autorisations sur le navigation de gauche.
+19. Maintenant que vous avez créé l’application de migration et la question secrète, vous devez consentir à l’application. Pour consentir à l’application, revenir à la page d’accueil de Azure Active Directory, cliquez sur Enterprise applications dans le navigation de gauche, recherchez votre application de migration que vous avez créée, sélectionnez-la, puis sélectionnez Autorisations sur le navigation de gauche.
 
 20. Cliquez sur le bouton Accorder le consentement administrateur pour [votre client].
 
@@ -131,18 +131,18 @@ Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'
     > [!NOTE]
     > Vous aurez besoin de l’ID d’application de l’application de migration de boîtes aux lettres que vous avez créée.
     >
-    > Vous devrez remplacer sourcetenant.onmicrosoft.com dans l’exemple ci-dessus par vos locataires sources onmicrosoft.com nom correct.
+    > Vous devrez remplacer sourcetenant.onmicrosoft.com dans l’exemple ci-dessus par vos locataires source onmicrosoft.com nom correct.
     >
     > Vous devrez également remplacer [application_id_of_the_app_you_just_created] par l’ID d’application de l’application de migration de boîte aux lettres que vous avez créée.
 
-### <a name="prepare-the-target-tenant-by-creating-the-exchange-online-migration-endpoint-and-organization-relationship"></a>Préparer le client cible en créant le point de terminaison de migration Exchange Online relation organisationnelle
+### <a name="prepare-the-target-tenant-by-creating-the-exchange-online-migration-endpoint-and-organization-relationship"></a>Préparer le client cible en créant le point de terminaison de migration Exchange Online la relation organisationnelle
 
 1. Créez une connexion PowerShell distante au client Exchange Online cible.
 
 2. Créer un point de terminaison de migration pour les déplacements de boîtes aux lettres entre locataires
 
    > [!NOTE]
-   > Vous aurez besoin de l’ID d’application de l’application de migration de boîte aux lettres que vous avez créée et du mot de passe (la question secrète) que vous avez configuré au cours de ce processus. En outre, selon la Microsoft 365 instance cloud que vous utilisez votre point de terminaison peut être différente. Reportez-vous à la page [Microsoft 365](/microsoft-365/enterprise/microsoft-365-endpoints) points de terminaison et sélectionnez l’instance correcte pour votre client et consultez l’Exchange Online Optimiser l’adresse requise et remplacer le cas échéant.
+   > Vous aurez besoin de l’ID d’application de l’application de migration de boîte aux lettres que vous avez créée et du mot de passe (la question secrète) que vous avez configuré au cours de ce processus. En outre, selon la Microsoft 365 instance cloud que vous utilisez votre point de terminaison peut être différente. Reportez-vous à [la page Microsoft 365](/microsoft-365/enterprise/microsoft-365-endpoints) points de terminaison et sélectionnez l’instance correcte pour votre client et consultez l’Exchange Online Optimiser l’adresse requise et remplacer le cas échéant.
 
    ```powershell
    
@@ -183,12 +183,12 @@ Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'
 
    > [!NOTE]
    > Vous aurez besoin de l’ID d’application de l’application de migration de boîtes aux lettres que vous avez créée.
-   > Vous devrez remplacer sourcetenant.onmicrosoft.com dans l’exemple ci-dessus par vos locataires sources onmicrosoft.com nom correct.
+   > Vous devrez remplacer sourcetenant.onmicrosoft.com dans l’exemple ci-dessus par vos locataires source onmicrosoft.com nom correct.
    > Vous devrez également remplacer [application_id_of_the_app_you_just_created] par l’ID d’application de l’application de migration de boîte aux lettres que vous avez créée.
 
 2. Acceptez l’application lorsque la fenêtre pop-up s’affiche. Vous pouvez également vous connecter à votre portail Azure Active Directory et trouver l’application sous Enterprise applications.
 
-3. Créez un nouvel objet de relation organisationnelle ou modifiez-le sur votre client cible (destination) à partir d’une Exchange Online Remote PowerShell.
+3. Créez un nouvel objet de relation organisationnelle ou modifiez-le sur votre client cible (destination) à partir d’une Exchange Online PowerShell distante.
 
    ```powershell
    $targetTenantId="[tenant id of your trusted partner, where the mailboxes are being moved to]"
@@ -207,14 +207,23 @@ Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'
    ```
    
 > [!NOTE]
-> L’ID de client que vous entrez comme $sourceTenantId et $targetTenantId est le GUID et non le nom de domaine du client. Pour obtenir un exemple d’ID de client et des informations sur la recherche de votre ID de client, voir Rechercher [votre ID Microsoft 365 client.](/onedrive/find-your-office-365-tenant-id)
+> L’ID de client que vous entrez comme $sourceTenantId et $targetTenantId est le GUID et non le nom de domaine du client. Pour obtenir un exemple d’ID de client et des informations sur la recherche de votre ID de client, voir Rechercher [votre ID Microsoft 365 client client](/onedrive/find-your-office-365-tenant-id).
    
 ### <a name="how-do-i-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
 Vous pouvez vérifier la configuration de la migration de boîtes aux lettres entre les locataires en exécutant la cmdlet [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) sur le point de terminaison de migration entre locataires que vous avez créé sur votre client cible.
 
    > [!NOTE]
-   > Test-MigrationServerAvailability -Endpoint « [the name of your cross-tenant migration endpoint] » -TestMailbox « [email address of a source mailbox that is part of your migration scope] »
+   >
+   > - Client cible :
+   > 
+   > Test-MigrationServerAvailability -Endpoint « [le nom de votre point de terminaison de migration entre locataires] »
+   >
+   > Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
+   >
+   > - Client source :
+   > 
+   > Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability 
 
 ### <a name="move-mailboxes-back-to-the-original-source"></a>Déplacer les boîtes aux lettres vers la source d’origine
 
@@ -233,7 +242,7 @@ Assurez-vous que les objets et attributs suivants sont définies dans l’organi
    - L’utilisateur de messagerie cible doit avoir les attributs de la boîte aux lettres source ou affectés avec le nouvel objet User :
       - ExchangeGUID (flux direct de la source à la cible) : le GUID de boîte aux lettres doit correspondre. Le processus de déplacement ne se poursuit pas s’il n’est pas présent sur l’objet cible.
       - ArchiveGUID (flux direct de la source à la cible) : le GUID d’archivage doit correspondre. Le processus de déplacement ne se poursuit pas s’il n’est pas présent sur l’objet cible. (Cette demande est requise uniquement si la boîte aux lettres source est activée pour l’archivage).
-      - LegacyExchangeDN (flow as proxyAddress, « x500: « ) : LegacyExchangeDN doit être présent sur mailUser cible en tant que \<LegacyExchangeDN> x500 : proxyAddress. En outre, vous devez également copier toutes les adresses x500 de la boîte aux lettres source vers l’utilisateur de messagerie cible. Les processus de déplacement ne se déroulent pas s’ils ne sont pas présents sur l’objet cible.
+      - LegacyExchangeDN (flow as proxyAddress, « x500:\<LegacyExchangeDN> ») : LegacyExchangeDN doit être présent sur mailUser cible en tant que x500 : proxyAddress. En outre, vous devez également copier toutes les adresses x500 de la boîte aux lettres source vers l’utilisateur de messagerie cible. Les processus de déplacement ne se déroulent pas s’ils ne sont pas présents sur l’objet cible.
       - UserPrincipalName : UPN s’alignera sur la nouvelle identité ou la société cible de l’utilisateur (par exemple, user@northwindtraders.onmicrosoft.com).
       - Adresse SMTP principale : l’adresse SMTP principale s’alignera sur la société NEW de l’utilisateur (par exemple, user@northwind.com).
       - TargetAddress/ExternalEmailAddress : MailUser référencera la boîte aux lettres actuelle de l’utilisateur hébergée dans le client source (par exemple, user@contoso.onmicrosoft.com). Lors de l’affectation de cette valeur, vérifiez que vous avez/attribuez également PrimarySMTPAddress, sinon cette valeur définira PrimarySMTPAddress, ce qui provoquera des échecs de déplacement.
@@ -279,7 +288,7 @@ Assurez-vous que les objets et attributs suivants sont définies dans l’organi
    - msExchSafeRecipientsHash : écrit en ligne les données d’expéditeurs sécurisés et bloqués des clients vers Active Directory local.
    - msExchSafeSendersHash : écrit en ligne les données d’expéditeurs sécurisés et bloqués des clients vers Active Directory local.
 
-2. Si la boîte aux lettres source est sur LitigationHold et que la taille des éléments récupérables de la boîte aux lettres source est supérieure à la taille par défaut de notre base de données (30 Go), les déplacements ne se déroulent pas car le quota cible est inférieur à la taille de boîte aux lettres source. Vous pouvez mettre à jour l’objet MailUser cible pour faire passer les indicateurs de boîte aux lettres ELC de l’environnement source à la cible, ce qui déclenche l’extension du quota de MailUser par le système cible à 100 Go, ce qui permet le déplacement vers la cible. Ces instructions ne fonctionnent que pour l’identité hybride en cours d’exécution Azure AD Connecter, car les commandes pour marquer les indicateurs ELC ne sont pas exposées aux administrateurs client.
+2. Si la boîte aux lettres source est sur LitigationHold et que la taille des éléments récupérables de la boîte aux lettres source est supérieure à la taille par défaut de notre base de données (30 Go), les déplacements ne se déroulent pas car le quota cible est inférieur à la taille de boîte aux lettres source. Vous pouvez mettre à jour l’objet MailUser cible pour faire passer les indicateurs de boîte aux lettres ELC de l’environnement source à la cible, ce qui déclenche l’extension du quota de MailUser par le système cible à 100 Go, ce qui permet le déplacement vers la cible. Ces instructions fonctionnent uniquement pour l’identité hybride en cours d’exécution Azure AD Connecter, car les commandes pour marquer les indicateurs ELC ne sont pas exposées aux administrateurs client.
 
     > [!NOTE]
     > EXEMPLE – EN L’ABSENCE DE GARANTIE
@@ -291,14 +300,14 @@ Assurez-vous que les objets et attributs suivants sont définies dans l’organi
     if ($source.LitigationHoldEnabled) {$ELCValue = $ELCValue + 8} if ($source.SingleItemRecoveryEnabled) {$ELCValue = $ELCValue + 16} if ($ELCValue -gt 0) {Set-ADUser -Server $domainController -Identity $destination.SamAccountName -Replace @{msExchELCMailboxFlags=$ELCValue}}
     ```
 
-3. Les locataires cibles non hybrides peuvent modifier le quota sur le dossier Éléments récupérables des utilisateurs de messagerie avant la migration en exécutant la commande suivante pour activer la attente pour litige sur l’objet MailUser et en augmentant le quota à 100 Go : `Set-MailUser -EnableLitigationHoldForMigration` Notez que cela ne fonctionne pas pour les locataires dans un mode hybride.
+3. Les locataires cibles non hybrides peuvent modifier le quota sur le dossier Éléments récupérables des utilisateurs de messagerie avant la migration en exécutant la commande suivante pour activer la attente pour litige sur l’objet MailUser et en augmentant le quota à 100 `Set-MailUser -EnableLitigationHoldForMigration`Go : Notez que cela ne fonctionne pas pour les locataires dans un mode hybride.
 
 4. Les utilisateurs de l’organisation cible doivent être titulaires d’une licence Exchange Online abonnements applicables à l’organisation. Vous pouvez appliquer une licence avant un déplacement de boîte aux lettres, mais seulement une fois que l’utilisateur de messagerie cible est correctement installé avec ExchangeGUID et les adresses proxy. L’application d’une licence avant l’application d’ExchangeGUID entraîne la mise en service d’une nouvelle boîte aux lettres dans l’organisation cible.
 
     > [!NOTE]
     > Lorsque vous appliquez une licence à un objet Mailbox ou MailUser, toutes les adresses proxy de type SMTP sont nettoyées pour garantir que seuls les domaines vérifiés sont inclus dans le tableau Exchange EmailAddresses.
 
-5. Vous devez vous assurer que le MailUser cible n’a aucun ExchangeGuid précédent qui ne correspond pas à l’ExchangeGuid source. Cela peut se produire si l’utilisateur utilisateur à messagerie cible a été précédemment titulaire d’une licence Exchange Online et a fourni une boîte aux lettres. Si la cible MailUser a déjà été titulaire d’une licence ExchangeGuid ou qu’elle avait un ExchangeGuid qui ne correspond pas à l’ExchangeGuid source, vous devez effectuer un nettoyage de l’UI de cloud. Pour ces meus cloud, vous pouvez exécuter `Set-User <identity> -PermanentlyClearPreviousMailboxInfo` .
+5. Vous devez vous assurer que le MailUser cible n’a aucun ExchangeGuid précédent qui ne correspond pas à l’ExchangeGuid source. Cela peut se produire si l’utilisateur utilisateur à messagerie cible a été précédemment titulaire d’une licence Exchange Online et a fourni une boîte aux lettres. Si la cible MailUser a déjà été titulaire d’une licence ExchangeGuid ou qu’elle avait un ExchangeGuid qui ne correspond pas à l’ExchangeGuid source, vous devez effectuer un nettoyage de l’UI de cloud. Pour ces meus cloud, vous pouvez exécuter `Set-User <identity> -PermanentlyClearPreviousMailboxInfo`.
 
     > [!CAUTION]
     > Ce processus est irréversible. Si l’objet possède une boîte aux lettres supprimée (softDeleted), il ne peut pas être restauré après ce point. Une fois effacé, toutefois, vous pouvez synchroniser l’objet ExchangeGuid correct avec l’objet cible et MRS connectera la boîte aux lettres source à la boîte aux lettres cible nouvellement créée. (Référencez le blog EHLO sur le nouveau paramètre.)
@@ -338,7 +347,7 @@ Assurez-vous que les objets et attributs suivants sont définies dans l’organi
 
 ### <a name="perform-mailbox-migrations"></a>Effectuer des migrations de boîtes aux lettres
 
-Les migrations entre Exchange boîtes aux lettres sont lancées à partir du client cible en tant que lots de migration. Il s’agit de la manière dont fonctionnent les lots de migration par embarquement lors de la migration de Exchange en local vers Microsoft 365.
+Les migrations de boîtes aux lettres Exchange entre les locataires sont lancées à partir du client cible en tant que lots de migration. Il s’agit de la manière dont fonctionnent les lots de migration par embarquement lors de la migration de Exchange en local vers Microsoft 365.
 
 ### <a name="create-migration-batches"></a>Créer des lots de migration
 
@@ -363,9 +372,9 @@ L’envoi de lot de migration est également pris en charge à partir du nouveau
 
 ### <a name="update-on-premises-mailusers"></a>Mettre à jour les mailusers locaux
 
-Une fois que la boîte aux lettres passe de la source à la cible, vous devez vous assurer que les utilisateurs de messagerie locaux, à la fois dans la source et la cible, sont mis à jour avec la nouvelle adresse cible. Dans les exemples, le targetDeliveryDomain utilisé dans le déplacement **est contoso.onmicrosoft.com**. Mettez à jour les utilisateurs de messagerie avec cette adresse cible.
+Une fois que la boîte aux lettres passe de la source à la cible, vous devez vous assurer que les utilisateurs de messagerie locaux, à la fois dans la source et la cible, sont mis à jour avec la nouvelle adresse cible. Dans les exemples, le targetDeliveryDomain utilisé dans le déplacement est **contoso.onmicrosoft.com**. Mettez à jour les utilisateurs de messagerie avec cette adresse cible.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Devons-nous mettre à jour RemoteMailboxes dans la source sur site après le déplacement ?**
 
@@ -381,7 +390,7 @@ Non, le contenu Teams de conversation ne migre pas entre les locataires.
 
 **Comment puis-je voir uniquement les déplacements qui sont des déplacements inter-locataires, et non mes déplacements d’intégration et de off-embarquement ?**
 
-Utilisez le _paramètre Flags._ Voici un exemple.
+Utilisez le _paramètre Flags_ . Voici un exemple.
 
 ```powershell
 Get-MoveRequest -Flags "CrossTenant"
@@ -445,15 +454,15 @@ Il existe une matrice de rôles basée sur l’hypothèse de tâches déléguée
 
 **Comment cibler l’adresse SMTP sélectionnée pour targetAddress (TargetDeliveryDomain) sur la boîte aux lettres convertie (en conversion MailUser) ?**
 
-Exchange déplacements de boîtes aux lettres à l’aide du service MRS tissent l’adresse cible sur la boîte aux lettres source d’origine lors de la conversion en MailUser en correspondant à une adresse e-mail (proxyAddress) sur l’objet cible. Le processus prend la valeur -TargetDeliveryDomain transmise à la commande de déplacement, puis recherche un proxy correspondant pour ce domaine côté cible. Lorsque nous trouvons une correspondance, le proxyAddress correspondant est utilisé pour définir ExternalEmailAddress (targetAddress) sur l’objet de boîte aux lettres convertie (désormais MailUser).
+Exchange déplacements de boîtes aux lettres à l’aide du service MRS façonnaient l’adresse cible sur la boîte aux lettres source d’origine lors de la conversion en MailUser en correspondant à une adresse de messagerie (proxyAddress) sur l’objet cible. Le processus prend la valeur -TargetDeliveryDomain transmise à la commande de déplacement, puis recherche un proxy correspondant pour ce domaine côté cible. Lorsque nous trouvons une correspondance, le proxyAddress correspondant est utilisé pour définir ExternalEmailAddress (targetAddress) sur l’objet de boîte aux lettres convertie (désormais MailUser).
 
 **Comment les autorisations de boîte aux lettres sont-ils en cours de transition ?**
 
 Les autorisations de boîte aux lettres incluent Envoyer de la part de et Accès aux boîtes aux lettres :
 
-- Send On Behalf Of (AD:publicDelegates) stocke le nom DN des destinataires ayant accès à la boîte aux lettres d’un utilisateur en tant que délégué. Cette valeur est stockée dans Active Directory et ne se déplace actuellement pas dans le cadre de la transition de boîte aux lettres. Si publicDelegates est définie sur la boîte aux lettres source, vous devrez le restamper sur la boîte aux lettres cible une fois la conversion de l’utilisateur à l’utilisateur à boîte aux lettres terminée dans l’environnement cible en cours `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>` d’exécution.
+- Send On Behalf Of (AD:publicDelegates) stocke le nom DN des destinataires ayant accès à la boîte aux lettres d’un utilisateur en tant que délégué. Cette valeur est stockée dans Active Directory et ne se déplace actuellement pas dans le cadre de la transition de boîte aux lettres. Si publicDelegates est définie sur la boîte aux lettres source, vous devrez le restamper sur la boîte aux lettres cible une fois la conversion `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>`de l’utilisateur à l’utilisateur à boîte aux lettres terminée dans l’environnement cible en cours d’exécution.
 
-- Les autorisations de boîte aux lettres stockées dans la boîte aux lettres sont déplacées avec la boîte aux lettres lorsque le principal et le délégué sont déplacés vers le système cible. Par exemple, l’utilisateur TestUser_7 accès total à la boîte aux lettres TestUser_8 dans le client SourceCompany.onmicrosoft.com. Une fois le déplacement de la boîte aux TargetCompany.onmicrosoft.com terminé, les mêmes autorisations sont définies dans le répertoire cible. Des exemples *d’utilisation de Get-MailboxPermission* TestUser_7 dans les clients source et cible sont présentés ci-dessous. Exchange cmdlets sont précédées du préfixe source et cible en conséquence.
+- Les autorisations de boîte aux lettres stockées dans la boîte aux lettres sont déplacées avec la boîte aux lettres lorsque le principal et le délégué sont déplacés vers le système cible. Par exemple, l’utilisateur TestUser_7 accès total à la boîte aux lettres TestUser_8 dans le client SourceCompany.onmicrosoft.com. Une fois le déplacement de la boîte TargetCompany.onmicrosoft.com terminé, les mêmes autorisations sont définies dans le répertoire cible. Des exemples *d’utilisation de Get-MailboxPermission* TestUser_7 dans les clients source et cible sont présentés ci-dessous. Exchange cmdlets sont précédées du préfixe source et cible en conséquence.
 
 Voici un exemple de sortie de l’autorisation de boîte aux lettres avant un déplacement.
 
@@ -515,11 +524,11 @@ Ne dépassez pas 2 000 boîtes aux lettres par lot. Nous vous recommandons vivem
 
 **Que se passe-t-il si j’utilise le chiffrement de service avec la clé client ?**
 
-La boîte aux lettres sera déchiffrée avant le déplacement. Assurez-vous que la clé client est configurée dans le client cible si elle est toujours requise. Pour [plus d’informations,](/microsoft-365/compliance/customer-key-overview) voir ici.
+La boîte aux lettres sera déchiffrée avant le déplacement. Assurez-vous que la clé client est configurée dans le client cible si elle est toujours requise. Pour [plus d’informations](/microsoft-365/compliance/customer-key-overview) , voir ici.
 
 **Quelle est la durée de migration estimée ?**
 
-Pour vous aider à planifier [](/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) votre migration, le tableau présenté ici présente les instructions relatives à la fin des migrations de boîtes aux lettres en bloc ou individuelles. Ces estimations sont basées sur une analyse des données des migrations de clients précédentes. Étant donné que chaque environnement est unique, votre vitesse de migration exacte peut varier.
+Pour vous aider à planifier votre migration, le tableau [](/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) présenté ici présente les instructions relatives à la fin des migrations de boîtes aux lettres en bloc ou individuelles. Ces estimations sont basées sur une analyse des données des migrations de clients précédentes. Étant donné que chaque environnement est unique, votre vitesse de migration exacte peut varier.
 
 N’oubliez pas que cette fonctionnalité est actuellement en prévisualisation et le SLA, et que les niveaux de service applicables ne s’appliquent pas aux problèmes de performances ou de disponibilité pendant l’état d’aperçu de cette fonctionnalité.
 
@@ -539,7 +548,7 @@ Actuellement, la fonctionnalité migrations de boîtes aux lettres entre locatai
 
 Non, après une migration de boîtes aux lettres entre les locataires, eDiscovery par rapport à la boîte aux lettres de l’utilisateur migré dans la source ne fonctionne pas. Cela est dû au fait qu’il n’existe plus de boîte aux lettres dans la source à rechercher, car la boîte aux lettres a été miggrée vers le client cible et appartient maintenant au client cible. eDiscovery, la migration post-boîte aux lettres peut uniquement être effectuée dans le client cible (où la boîte aux lettres existe maintenant). Si une copie de la boîte aux lettres source doit être persistante dans le client source après la migration, l’administrateur de la source peut copier le contenu dans une autre boîte aux lettres avant la migration pour les futures opérations eDiscovery sur les données.
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 - **Problème : la fonctionnalité de Teams post-migration dans le client source sera limitée.** Une fois la boîte aux lettres migrée vers le client cible, Teams dans le client source n’aura plus accès à la boîte aux lettres de l’utilisateur. Ainsi, si un utilisateur se connecte à Teams avec les informations d’identification du client source, il y aura une perte de fonctionnalités telles que l’impossibilité de mettre à jour votre image de profil, aucune application de calendrier et l’impossibilité de rechercher et rejoindre des équipes publiques.
 
@@ -558,13 +567,13 @@ Non, après une migration de boîtes aux lettres entre les locataires, eDiscover
     ```
 
    > [!NOTE]
-   > *L contoso.onmicrosoft.com’adresse* de messagerie *n’est* pas présente dans le tableau EmailAddresses/proxyAddresses.
+   > L *contoso.onmicrosoft.com’adresse* de messagerie *n’est* pas présente dans le tableau EmailAddresses/proxyAddresses.
 
 - **Problème : les objets MailUser avec des adresses SMTP principales « externes » sont modifiés/réinitialisés sur les domaines revendiqués par l’entreprise « internes »**
 
-  Les objets MailUser sont des pointeurs vers des boîtes aux lettres non locales. Dans le cas des migrations de boîtes aux lettres entre locataires, nous utilisons des objets MailUser pour représenter la boîte aux lettres source (du point de vue de l’organisation cible) ou la boîte aux lettres cible (du point de vue de l’organisation source). Les utilisateurs de messagerie auront une adresse ExternalEmailAddress (targetAddress) qui pointe vers l’adresse smtp de la boîte aux lettres réelle (ProxyTest@fabrikam.onmicrosoft.com) et l’adresse PRIMARYSMTP qui représente l’adresse SMTP affichée de l’utilisateur de boîte aux lettres dans l’annuaire. Certaines organisations choisissent d’afficher l’adresse SMTP principale en tant qu’adresse SMTP externe, et non en tant qu’adresse propriétaire/vérifiée par le client local (par exemple, fabrikam.com plutôt que contoso.com).  Toutefois, une fois qu’un objet plan de service Exchange est appliqué à MailUser via des opérations de gestion des licences, l’adresse SMTP principale est modifiée pour s’afficher en tant que domaine vérifié par l’organisation locale (contoso.com). Il existe deux raisons possibles :
+  Les objets MailUser sont des pointeurs vers des boîtes aux lettres non locales. Dans le cas des migrations de boîtes aux lettres entre locataires, nous utilisons des objets MailUser pour représenter la boîte aux lettres source (du point de vue de l’organisation cible) ou la boîte aux lettres cible (du point de vue de l’organisation source). Les utilisateurs de messagerie auront une adresse ExternalEmailAddress (targetAddress) qui pointe vers l’adresse smtp de la boîte aux lettres réelle (ProxyTest@fabrikam.onmicrosoft.com) et l’adresse PRIMARYSMTP qui représente l’adresse SMTP affichée de l’utilisateur de boîte aux lettres dans l’annuaire. Certaines organisations choisissent d’afficher l’adresse SMTP principale en tant qu’adresse SMTP externe, et non en tant qu’adresse propriétaire/vérifiée par le client local (par exemple, fabrikam.com plutôt que comme contoso.com).  Toutefois, une fois qu’un objet plan de service Exchange est appliqué à MailUser via des opérations de gestion des licences, l’adresse SMTP principale est modifiée pour s’afficher en tant que domaine vérifié par l’organisation locale (contoso.com). Il existe deux raisons possibles :
 
-  - Lorsqu’un plan de service Exchange est appliqué à un mailuser, le processus Azure AD commence à appliquer le nettoyage de proxy pour s’assurer que l’organisation locale n’est pas en mesure d’envoyer du courrier, de l’usurpation ou du courrier à partir d’un autre client. Toute adresse SMTP sur un objet destinataire avec ces plans de service sera supprimée si l’adresse n’est pas vérifiée par l’organisation locale. Comme c’est le cas dans l’exemple, le domaine Fabikam.com n’est PAS vérifié par le client contoso.onmicrosoft.com, de sorte que le nettoyage supprime ce fabrikam.com domaine. Si vous souhaitez rendre persistants ces domaines externes sur MailUser, avant la migration ou après la migration, vous devez modifier vos processus de migration afin d’obtenir des licences par bande une fois le déplacement terminé ou avant le déplacement pour vous assurer que la marque externe attendue est appliquée aux utilisateurs. Vous devez vous assurer que l’objet de boîte aux lettres est correctement titulaire d’une licence pour ne pas affecter le service de messagerie.
+  - Lorsqu’un plan de service Exchange est appliqué à un mailuser, le processus Azure AD commence à appliquer le nettoyage de proxy pour s’assurer que l’organisation locale n’est pas en mesure d’envoyer du courrier, de l’usurpation ou du courrier à partir d’un autre client. Toute adresse SMTP sur un objet destinataire avec ces plans de service sera supprimée si l’adresse n’est pas vérifiée par l’organisation locale. Comme c’est le cas dans l’exemple, le domaine Fabikam.com n’est PAS vérifié par le client contoso.onmicrosoft.com, de sorte que le nettoyage supprime ce fabrikam.com domaine. Si vous souhaitez rendre persistants ces domaines externes sur MailUser, avant la migration ou après la migration, vous devez modifier vos processus de migration afin d’obtenir des licences par bande une fois le déplacement terminé ou avant le déplacement pour vous assurer que la  marque externe attendue est appliquée aux utilisateurs. Vous devez vous assurer que l’objet de boîte aux lettres est correctement titulaire d’une licence pour ne pas affecter le service de messagerie.
   - Un exemple de script pour supprimer les plans de service sur un MailUser dans le contoso.onmicrosoft.com client est illustré ici.
 
     ```powershell

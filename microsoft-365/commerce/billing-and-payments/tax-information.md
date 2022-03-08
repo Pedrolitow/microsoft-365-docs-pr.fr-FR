@@ -2,8 +2,8 @@
 title: Informations fiscales
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
@@ -16,17 +16,17 @@ ms.collection:
 search.appverid: MET150
 description: 'Découvrez le nombre de taxes qui vous seront facturées pour votre abonnement Microsoft 365 entreprise dans différentes régions. '
 ms.custom:
+- commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 - AdminTemplateSet
 ms.date: 03/17/2021
-ms.openlocfilehash: 391a3f3d59b5583a89db4e0b2a3d54b3e488f729
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 421abe7b69323be783831d9ce5de45c21ec98536
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372407"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313396"
 ---
 # <a name="tax-information"></a>Informations fiscales
 
@@ -112,17 +112,17 @@ Lorsque vous achetez Microsoft 365 services dans la région EMEA, cet achat peut
 
 Vous pouvez bénéficier d’une tva à taux zéro si :
   
-- Vous êtes dans un État membre **de l’Union européenne en dehors de l’Irlande :** Vous pouvez fournir votre numéro de TVA local valide. Cela permet à Microsoft Ireland Operations Ltd. de tvar la transaction. Toutefois, vous pouvez avoir une obligation de comptabilité de TVA locale. Si vous avez des préoccupations, consultez vos conseillers fiscaux. Pour obtenir des instructions, voir [Ajouter votre numéro de TVA.](#add-your-vat-id)
+- **Vous êtes dans un État membre de l’Union européenne en dehors de l’Irlande :** Vous pouvez fournir votre numéro de TVA local valide. Cela permet à Microsoft Ireland Operations Ltd. de tvar la transaction. Toutefois, vous pouvez avoir une obligation de comptabilité de TVA locale. Si vous avez des préoccupations, consultez vos conseillers fiscaux. Pour obtenir des instructions, voir [Ajouter votre numéro de TVA](#add-your-vat-id).
 
 - **Vous êtes en Irlande et vous avez la certification d’exonération de TVA valide :** Microsoft Ireland Operations Ltd. peut être autorisé à exempter la transaction de la TVA. Si ce n’est pas le cas, Microsoft Ireland Operations Ltd. applique le taux actuel de TVA pour l’Irlande, que vous fournissiez ou non un numéro de TVA.
 
-- **Vous êtes en Arménie, en Bélarus, en Norvège, en Turquie** ou aux Émirats arabes unis : Vous pouvez fournir votre numéro de TVA local. Cela donne droit à Microsoft Ireland Operations Ltd. à la TVA de la transaction. Toutefois, vous avez peut-être une obligation de comptabilité de TVA locale. Veuillez donc contacter votre conseiller fiscal si vous avez des préoccupations. Pour obtenir des instructions, voir [Ajouter votre numéro de TVA.](#add-your-vat-id)
+- **Vous êtes en Arménie, en Bélarus, en Norvège, en Turquie ou aux Émirats arabes unis :** Vous pouvez fournir votre numéro de TVA local. Cela donne droit à Microsoft Ireland Operations Ltd. à la TVA de la transaction. Toutefois, vous avez peut-être une obligation de comptabilité de TVA locale. Veuillez donc contacter votre conseiller fiscal si vous avez des préoccupations. Pour obtenir des instructions, voir [Ajouter votre numéro de TVA](#add-your-vat-id).
 
 ## <a name="asia-pacific-countries-apac"></a>Pays d'Asie-Pacifique (APAC)
 
 Si vous êtes facturé par le bureau des ventes régionales de Microsoft, « Microsoft Regional Sales Pte. Ltd. » apparaît sur votre facture et vous pouvez être facturé pour toute valeur ajoutée applicable, ventes ou taxes similaires.
   
-Si vous êtes facturé à partir de l’un des emplacements suivants, la taxe locale actuelle est appliquée. L’emplacement est inclus [sur votre facture](view-your-bill-or-invoice.md):
+Si vous êtes facturé à partir de l’un des emplacements suivants, la taxe locale actuelle est appliquée. L’emplacement est inclus [sur votre facture](view-your-bill-or-invoice.md) :
   
 - Inde
 - Japon
@@ -134,21 +134,21 @@ Si vous êtes facturé à partir de l’un des emplacements suivants, la taxe lo
 
 Aux États-Unis, au Canada, au Mexique, au Chili et en Colombie, différents taux d’imposition s’appliquent en fonction de la nature du produit et de votre emplacement.
   
-Si votre facturation est effectuée[](view-your-bill-or-invoice.md)par Microsoft Corporation (consultez votre facture et que vous vous êtes inscrit à Microsoft 365 en dehors des États-Unis, du Canada, de Porto Rico, du Chili et de la Colombie, les taxes ne sont généralement pas facturées.
+Si votre facturation est effectuée par Microsoft [Corporation (](view-your-bill-or-invoice.md)consultez votre facture et que vous vous êtes inscrit à Microsoft 365 en dehors des États-Unis, du Canada, de Porto Rico, du Chili et de la Colombie, les taxes ne sont généralement pas facturées.
 
 ## <a name="add-your-vat-id"></a>Ajouter votre numéro de TVA
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 2. Sur l’onglet **Produits**, sélectionnez l’abonnement que vous souhaitez mettre à jour.
-3. Dans la page détails de l’abonnement, dans la section **Adresse d’utilisation du service,** **sélectionnez Modifier l’adresse d’utilisation du service.**
-4. Dans le **volet Modifier l’adresse** d’utilisation du service, dans la zone numéro de TVA, entrez votre numéro de TVA, y compris le préfixe, et sans espace. 
-5. Cliquez sur **Enregistrer**.
+3. Dans la page détails de l’abonnement, dans la section **Adresse d’utilisation du service** , **sélectionnez Modifier l’adresse d’utilisation du service**.
+4. Dans le **volet Modifier l’adresse** d’utilisation du  service, dans la zone numéro de TVA, entrez votre numéro de TVA, y compris le préfixe, et sans espace.
+5. Sélectionnez **Enregistrer**.
 
 ## <a name="how-taxes-are-calculated"></a>Comment les taxes sont calculées
 
 Les taxes sur les ventes sont calculées par rapport au prix unitaire, puis agrégées.
 
-Par exemple :
+Par exemple :
 
 >*(taux d’impôt sur le prix unitaire X) X quantité = taxe totale sur les ventes*
 

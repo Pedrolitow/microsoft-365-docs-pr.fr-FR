@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: Dans cet article, découvrez l’ajout d’emplacements satellites et la configuration de votre client pour Microsoft 365 Multi-Geo.
-ms.openlocfilehash: 232791705dacfa9442304434559b67a4b01ca7dd
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: 9842ff2295a64f544940f579d732c688735ae341
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818251"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312080"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Configuration de client multigéographique dans Microsoft 365
 
@@ -44,17 +44,15 @@ Vous devez ajouter un emplacement satellite à chaque emplacement géographique 
 
 Pour ajouter un emplacement satellite
 
-1. Ouvrez le Centre d’administration SharePoint.
+1. Ouvrez le Centre d’administration SharePoint. et allez à <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank">**emplacements géographiques**</a>.
 
-2. Accédez à l’onglet **Emplacements géographiques**.
+1. Sélectionnez **Ajouter un emplacement**.
 
-3. Cliquez sur **Ajouter un emplacement**.
+1. Sélectionnez l’emplacement à ajouter, puis sélectionnez **Suivant**.
 
-4. Sélectionnez l’emplacement à ajouter, puis cliquez sur **Suivant**.
+1. Tapez le domaine que vous souhaitez utiliser avec l’emplacement géographique, puis sélectionnez **Ajouter**.
 
-5. Saisissez le domaine que vous souhaitez utiliser avec l’emplacement géographique, puis cliquez sur **Ajouter**.
-
-6. Cliquez sur **Fermer**.
+1. Sélectionnez **Fermer**.
 
 La configuration peut prendre jusqu’à 72 heures selon la taille de votre client. Une fois que la configuration d’un emplacement satellite est terminée, vous recevez un e-mail de confirmation. Lorsque le nouvel emplacement géographique s’affiche en bleu sur la carte sur l’onglet **Emplacements géographiques** dans le centre d’administration OneDrive, vous pouvez définir l’emplacement des données par défaut des utilisateurs sur cet emplacement géographique. 
 

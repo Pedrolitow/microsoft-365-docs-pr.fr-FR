@@ -14,24 +14,22 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6e8146a5e73cb056f6e22ec975f909c281d0890a
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: e81c235105a7c7479a917c7cb7cc404e2553f2f1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300957"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323512"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>Exécuter des commandes de réponse en direct sur un appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
@@ -47,7 +45,7 @@ ms.locfileid: "61300957"
 
 Exécute une séquence de commandes de réponse en direct sur un appareil
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 
 1. Les limites de taux pour cette API sont de 10 appels par minute (les demandes supplémentaires sont répondues par HTTP 429).
 
@@ -67,7 +65,7 @@ Exécute une séquence de commandes de réponse en direct sur un appareil
 
 Avant de lancer une session sur un appareil, veillez à respecter les conditions suivantes :
 
-- **Vérifiez que vous exécutez une version prise** en charge de Windows .
+- **Vérifiez que vous exécutez une version prise en charge de Windows**.
 
   Les appareils doivent être en cours d’exécution dans l’une des versions suivantes Windows
 
@@ -81,14 +79,14 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
     - [Version 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) avec [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
   - **Windows Server 2019 - Applicable uniquement pour la prévisualisation publique**
-    - Version 1903 ou (avec [KB4515384)](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)ultérieure
-    - Version 1809 [(avec KB4537818)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - Version 1903 ou (avec [KB4515384) ultérieure](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
+    - Version 1809 ( [avec KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
     
   - **Windows Server 2022**
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, [consultez La mise en place.](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, [consultez La mise en place](apis-intro.md).
 
 |Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation|
 |---|---|---|

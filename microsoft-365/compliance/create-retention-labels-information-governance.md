@@ -1,24 +1,29 @@
 ---
 title: Créer des étiquettes de rétention pour les exceptions à vos stratégies de rétention
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: null
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
-  - SPO_Content
+- M365-security-compliance
+- SPO_Content
 search.appverid:
-  - MOE150
-  - MET150
+- MOE150
+- MET150
 description: Instructions pour créer des étiquettes de rétention pour les exceptions aux stratégies de rétention pour la gouvernance des informations afin de pouvoir conserver ce dont vous avez besoin et supprimer ce dont vous n’avez pas besoin.
+ms.openlocfilehash: 699df2a62204115c60271a5d5aa70613db48c7d5
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327264"
 ---
-
 # <a name="create-retention-labels-for-exceptions-to-your-retention-policies"></a>Créer des étiquettes de rétention pour les exceptions à vos stratégies de rétention
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
@@ -27,9 +32,11 @@ Dans le cadre de votre stratégie d'informations de gouvernance pour conserver c
 
 Alors que les stratégies de rétention s'appliquent automatiquement à tous les éléments au niveau du conteneur (tels que les sites SharePoint, les boîtes aux lettres des utilisateurs, etc.), les étiquettes de rétention s'appliquent à des éléments individuels, tels qu'un document SharePoint ou un message électronique.
 
-Veillez à bien comprendre les [principes de rétention](retention.md#the-principles-of-retention-or-what-takes-precedence) avant d’utiliser des étiquettes de rétention pour compléter une stratégie de rétention pour des éléments SharePoint, OneDrive ou Exchange spécifiques. En règle générale, vous utiliserez des étiquettes de rétention pour conserver des éléments spécifiques plus longtemps qu’une stratégie de rétention appliquée, mais elles peuvent également être utilisées pour appliquer une période de suppression différente.
+Veillez à bien comprendre les [principes de rétention](retention.md#the-principles-of-retention-or-what-takes-precedence) avant d’utiliser des étiquettes de rétention pour compléter une stratégie de rétention pour des éléments SharePoint, OneDrive ou Exchange spécifiques. En règle générale, vous utilisez des étiquettes de rétention pour conserver des éléments spécifiques plus longtemps qu’une stratégie de rétention appliquée, mais elles peuvent également être utilisées pour remplacer la suppression automatique à la fin de la période de rétention ou appliquer une autre période de suppression.
 
 Par exemple : la majorité du contenu de vos sites SharePoint doit être conservée pendant trois ans, ce qui est couvert par une stratégie de rétention. Toutefois, certains documents de contrat doivent être conservés pendant sept ans. Ces exceptions peuvent être traitées avec des étiquettes de rétention. Après avoir affecté la stratégie de rétention à tous les sites SharePoint, vous appliquez les étiquettes de rétention aux documents du contrat. Tous les éléments SharePoint seront conservés pendant trois ans, et uniquement les documents de contrat seront conservés pendant sept ans.
+
+Pour plus d’exemples sur la façon dont les étiquettes de rétention peuvent être utilisées comme exceptions aux stratégies de rétention, consultez [Combinaison des stratégies de rétention et des étiquettes de rétention](retention.md#combining-retention-policies-and-retention-labels).
 
 Les étiquettes de rétention offrent également plus de fonctionnalités que les stratégies de rétention. Pour plus d’informations, consultez [Comparer les fonctionnalités des stratégies de rétention et des étiquettes de rétention](retention.md#compare-capabilities-for-retention-policies-and-retention-labels).
 

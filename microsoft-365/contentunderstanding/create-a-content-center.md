@@ -8,17 +8,18 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.custom: admindeeplinkSPO
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer un centre de contenu dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: e44ed9433562bdfe8da471bd08c4711bc405b92d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0bab102ae440b8cf2c797458e7602c61794d0d06
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205952"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311590"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Créer un centre de contenu dans Microsoft SharePoint Syntex
 
@@ -46,7 +47,7 @@ Un administrateur SharePoint peut créer un site de centre de contenu comme ils 
 
 Pour créer un nouveau centre de contenu, procédez comme suit :
 
-1. Dans le Centre d’administration Microsoft 365, accédez à la page [Centre d’administration SharePoint **Sites** actifs](https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true).
+1. Sur le Centre d'administration Microsoft 365, allez dans le Centre <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">d SharePoint’administration > **sites actifs**</a>.
 
 2. Dans la page **Sites actifs**, cliquez sur **Créer**, puis sélectionnez **Autres options**.
 
@@ -59,7 +60,7 @@ Pour créer un nouveau centre de contenu, procédez comme suit :
 
 5. Sélectionnez **Terminé**.
  
-Une fois que vous avez créé un site de centre de contenu, celui-ci est répertorié sur la page **Sites actifs** dans le centre d’administration SharePoint. 
+Une fois que vous avez créé un site de centre de contenu, celui-ci est répertorié sur les <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**sites actifs**</a> dans SharePoint’administration centrale. 
 
 ### <a name="give-access-to-additional-users"></a>Accorder l’accès à d’autres utilisateurs
  

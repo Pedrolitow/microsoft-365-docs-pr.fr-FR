@@ -16,22 +16,22 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e20b993d577f144e80c99479bac7bf70e484f785
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a32c8c91350218da619de18e0b1b398a93bf7fda
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168881"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312642"
 ---
 # <a name="resources"></a>Ressources
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -77,7 +77,7 @@ Si vous pouvez reproduire un problème, augmentez d’abord le niveau de journal
 
 Si une erreur se produit lors de l’installation, le programme d’installation signale uniquement un échec général.
 
-Le journal détaillé sera enregistré dans `/var/log/microsoft/mdatp/install.log` .
+Le journal détaillé sera enregistré dans `/var/log/microsoft/mdatp/install.log`.
 Si vous avez des problèmes lors de l’installation, envoyez-nous ce fichier afin que nous aidions à diagnostiquer la cause.
 
 ## <a name="uninstall"></a>Désinstaller
@@ -96,7 +96,7 @@ Des tâches importantes, telles que le contrôle des paramètres du produit et l
 
 ### <a name="global-options"></a>Options globales
 
-Par défaut, l’outil en ligne de commande produit le résultat dans un format lisible par l’homme. En outre, l’outil prend également en charge la sortie du résultat en tant que JSON, ce qui est utile pour les scénarios d’automatisation. Pour modifier la sortie en JSON, passez `--output json` à l’une des commandes ci-dessous.
+Par défaut, l’outil en ligne de commande produit le résultat dans un format lisible par l’homme. En outre, l’outil prend également en charge la sortie du résultat en tant que JSON, ce qui est utile pour les scénarios d’automatisation. Pour modifier la sortie en JSON, passez à `--output json` l’une des commandes ci-dessous.
 
 ### <a name="supported-commands"></a>Commandes prises en charge
 
@@ -142,9 +142,9 @@ Le tableau suivant répertorie les commandes pour certains des scénarios les pl
 |Gestion de la mise en quarantaine|Supprimer tous les fichiers de la quarantaine|`mdatp threat quarantine remove-all`|
 |Gestion de la mise en quarantaine|Ajouter un fichier détecté comme une menace en quarantaine|`mdatp threat quarantine add --id [threat-id]`|
 |Gestion de la mise en quarantaine|Supprimer de la quarantaine un fichier détecté comme une menace|`mdatp threat quarantine remove --id [threat-id]`|
-|Gestion de la mise en quarantaine|Restaurer un fichier de la quarantaine|`mdatp threat quarantine restore --id [threat-id]`|
+|Gestion de la mise en quarantaine|Restaurer un fichier de la quarantaine|`mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`|
 |Détection et réponse des points de terminaison|Définir la prévisualisation (inutilisée)|`mdatp edr early-preview [enable|disable]`|
 |Détection et réponse des points de terminaison|Définir l’ID de groupe|`mdatp edr group-ids --group-id [group-id]`|
-|Détection et réponse des points de terminaison|Définir/supprimer une balise, uniquement `GROUP` prise en charge|`mdatp edr tag set --name GROUP --value [tag]`|
+|Détection et réponse des points de terminaison|Définir/supprimer une balise, uniquement prise en `GROUP` charge|`mdatp edr tag set --name GROUP --value [tag]`|
 |Détection et réponse des points de terminaison|Exclusions de listes (racine)|`mdatp edr exclusion list [processes|paths|extensions|all]`|
 |

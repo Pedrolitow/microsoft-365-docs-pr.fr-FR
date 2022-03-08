@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur de données de découverte électronique Slack fourni par Microsoft pour importer et archiver des données de messagerie instantanée.
-ms.openlocfilehash: 71369f2330193120f252d108641e99434c9fba78
-ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
+ms.openlocfilehash: 58401130726a7211eaad5b5c25985b534b68b0b8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61612804"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312360"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>Configurer un connecteur pour archiver des données de découverte électronique Slack (aperçu)
 
@@ -37,53 +37,53 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 ## <a name="before-you-set-up-a-connector"></a>Avant de configurer un connecteur
 
-- Votre organisation a besoin de l’abonnement Enterprise Grid pour Slack. Pour plus d’informations, voir [Les abonnements et fonctionnalités Slack.](https://slack.com/intl/en-gb/help/articles/115003205446-Slack-subscriptions-and-features-)
+- Votre organisation a besoin de l’abonnement Enterprise Grid pour Slack. Pour plus d’informations, voir [Abonnements et fonctionnalités Slack](https://slack.com/intl/en-gb/help/articles/115003205446-Slack-subscriptions-and-features-).
 
-- L’utilisateur qui crée le connecteur  de données doit avoir le rôle d’application Propriétaires de l’organisation dans son organisation Slack. Pour plus d’informations, voir [Types de rôles dans Slack.](https://slack.com/intl/en-gb/help/articles/360018112273-Types-of-roles-in-Slack)
+- L’utilisateur qui crée le connecteur de données doit avoir le rôle **d’application Propriétaires** de l’organisation dans son organisation Slack. Pour plus d’informations, voir [Types de rôles dans Slack](https://slack.com/intl/en-gb/help/articles/360018112273-Types-of-roles-in-Slack).
 
-- Obtenez le nom d’utilisateur et le mot de passe du compte d’entreprise Slack de votre organisation. Vous utilisez ces informations d’identification pour vous inscrire à ce compte lorsque vous créez le connecteur de données. Il est également recommandé que l’approvisionnement automatisé des utilisateurs dans votre organisation Slack soit configuré pour utiliser l' sign-on unique (SSO).
+- Obtenez le nom d’utilisateur et le mot de passe du compte d’entreprise Slack de votre organisation. Vous utilisez ces informations d’identification pour vous inscrire à ce compte lorsque vous créez le connecteur de données. Il est également recommandé que l’approvisionnement automatisé des utilisateurs dans votre organisation Slack soit configuré pour utiliser l’sign-on unique (SSO). [Rôles dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- L’utilisateur qui crée le connecteur de découverte électronique Slack doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs** de données dans la Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
+- L’utilisateur qui crée le connecteur slack eDiscovery doit avoir le rôle d’administrateur du connecteur de données. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le Centre de conformité Microsoft 365. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et conformité » dans Autorisations dans le Centre de sécurité [& conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le Centre de conformité Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## <a name="step-1-create-a-slack-ediscovery-connector"></a>Étape 1 : Créer un connecteur de découverte électronique Slack
 
 1. Go to <https://compliance.microsoft.com> and click **Data connectors** on the left navigation pane.
 
-2. Sous **l’onglet** Vue d’ensemble, cliquez sur **Filtrer** et sélectionnez **Par Microsoft,** puis appliquez le filtre.
+2. Sous **l’onglet** Vue d’ensemble, cliquez sur **Filtrer** et sélectionnez Par **Microsoft**, puis appliquez le filtre.
 
 3. Cliquez **sur Slack eDiscovery (aperçu).**
 
-4. Dans la page de description du produit **Slack eDiscovery (aperçu),** cliquez **sur Ajouter un connecteur.**
+4. Dans la page de description du produit **Slack eDiscovery (aperçu** ), cliquez **sur Ajouter un connecteur**.
 
-5. Dans la page **De l’Assistant** Conditions d’utilisation, cliquez sur **Accepter.**
+5. Dans la page **Assistant Conditions d’utilisation** , cliquez sur **Accepter**.
 
 6. Entrez un nom unique qui identifie le connecteur, puis cliquez sur **Suivant**. Le nom que vous entrez identifie le connecteur sur la page **Connecteurs de données** après sa création.
 
 ## <a name="step-2-sign-into-your-slack-organization"></a>Étape 2 : Connectez-vous à votre organisation Slack
 
-1. Dans la page Assistant Se **connectez-vous à Slack,** cliquez sur Se connectez-vous **à Slack** pour vous inscrire à l’espace de travail Slack de votre organisation.
+1. Dans la page **Assistant Se connectez-vous à Slack** , cliquez sur **Se connectez-vous à Slack** pour vous inscrire à l’espace de travail Slack de votre organisation.
 
-2. Dans la page Se **connectez à** votre espace de travail Slack, tapez le nom de l’espace de travail à partir de qui vous souhaitez archiver des données, puis cliquez sur **Continuer**.
+2. Dans la page Se **connectez à votre** espace de travail Slack, tapez le nom de l’espace de travail à partir de qui vous souhaitez archiver les données, puis cliquez sur **Continuer**.
 
    Une page s’affiche avec le nom de votre espace de travail Slack et une invite de se connecte.
 
-3. Cliquez sur le lien dans la chaîne que les propriétaires de **l’organisation peuvent également se connecter ici.**
+3. Cliquez sur le lien dans la chaîne que les propriétaires de **l’organisation peuvent également se connecter ici**.
 
-4. Dans la page de la signature de l’espace de travail, entrez l’adresse e-mail et le mot de passe du compte d’entreprise Slack de votre organisation, puis cliquez sur **Se connectez.**
+4. Dans la page de connectez-vous à l’espace de travail, entrez l’adresse e-mail et le mot de passe du compte d’entreprise Slack de votre organisation, puis cliquez sur **Se connectez**.
 
    Une fois que vous êtes connecté, une page s’affiche pour demander l’autorisation d’accès à votre organisation Slack par l’application connecteur.
 
 5. Cliquez **sur Autoriser** pour autoriser l’application à administrer votre organisation.
 
-   Une fois **que** vous avez cliqué sur Autoriser, la page Slack se ferme et les utilisateurs **eDiscovery de Slack** pour Microsoft 365 page utilisateurs dans l’Assistant Connecteur s’affiche.
+   Une **fois que vous** avez cliqué sur Autoriser, la page Slack se ferme et les utilisateurs **eDiscovery de Slack** Microsoft 365 page utilisateurs dans l’Assistant Connecteur s’affiche.
 
 ## <a name="step-3-map-users-and-select-data-types-to-import"></a>Étape 3 : Ma cartographier les utilisateurs et sélectionner les types de données à importer
 
 1. Configurez l’une des options suivantes ou les deux pour ma besoins des utilisateurs de Slack Microsoft 365 boîtes aux lettres.
 
-   - **Mappage utilisateur automatique**. Sélectionnez cette option pour maser automatiquement les noms d’utilisateurs Slack Microsoft 365 boîtes aux lettres. Le connecteur utilise la valeur de la propriété *Email,* que contient chaque message ou élément Slack. Cette propriété est remplie avec l’adresse e-mail de chaque participant du message. Si le connecteur peut associer les adresses e-mail aux utilisateurs Microsoft 365 correspondants, l’élément est importé dans la boîte Microsoft 365 aux lettres de ces utilisateurs. Pour utiliser cette option, vous devez avoir configuré l' sso pour votre organisation Slack.
+   - **Mappage utilisateur automatique**. Sélectionnez cette option pour maser automatiquement les noms d’utilisateurs Slack Microsoft 365 boîtes aux lettres. Le connecteur utilise la valeur de la propriété *Email* , que contient chaque message ou élément Slack. Cette propriété est remplie avec l’adresse e-mail de chaque participant du message. Si le connecteur peut associer les adresses e-mail aux utilisateurs Microsoft 365 correspondants, l’élément est importé dans la boîte Microsoft 365 aux lettres de ces utilisateurs. Pour utiliser cette option, vous devez avoir configuré l’sso pour votre organisation Slack.
 
-   - **Mappage utilisateur personnalisé**. Vous avez également la possibilité d’utiliser le mappage utilisateur personnalisé à la place (ou en plus) du mappage utilisateur automatique. Avec cette option, vous devez créer, puis télécharger un fichier CSV qui masgue l’ID de membre Slack des utilisateurs à leur adresse Microsoft 365 courrier électronique. Pour ce faire, cliquez sur Télécharger le modèle de mappage **CSV,** remplir le fichier CSV avec l’ID de membre Slack et l’adresse de messagerie Microsoft 365 pour tous les utilisateurs de votre organisation, puis sélectionnez et téléchargez le fichier CSV dans l’Assistant. N’oubliez pas de ne pas modifier les en-tête de colonne dans le fichier CSV. Voici un exemple de fichier de mappage CSV :
+   - **Mappage utilisateur personnalisé**. Vous avez également la possibilité d’utiliser le mappage utilisateur personnalisé à la place (ou en plus) du mappage utilisateur automatique. Avec cette option, vous devez créer, puis télécharger un fichier CSV qui masgue l’ID de membre Slack des utilisateurs à leur adresse Microsoft 365 courrier électronique. Pour ce faire, cliquez sur Télécharger le modèle de mappage **CSV**, remplir le fichier CSV avec l’ID de membre Slack et l’adresse de messagerie Microsoft 365 pour tous les utilisateurs de votre organisation, puis sélectionnez et téléchargez le fichier CSV dans l’Assistant. N’oubliez pas de ne pas modifier les en-tête de colonne dans le fichier CSV. Voici un exemple de fichier de mappage CSV :
 
      |**ExternalUserId**  | **O365UserMailbox**   |
      |:-------------------|:-----------------------|
@@ -93,15 +93,15 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
      |||
 
    > [!TIP]
-   > Les ID de membre des utilisateurs peuvent être obtenus en cliquant sur ... Bouton Plus dans le profil d’un utilisateur, puis sélection **de copier l’ID du membre.** Vous pouvez également utiliser la méthode API Slack [users.list](https://api.slack.com/methods/users.list) pour obtenir les ID de tous les membres d’une équipe Slack.
+   > Les ID de membre des utilisateurs peuvent être obtenus en cliquant sur ... Bouton Plus dans le profil d’un utilisateur, puis sélection de **l’ID du membre Copier**. Vous pouvez également utiliser la méthode API Slack [users.list](https://api.slack.com/methods/users.list) pour obtenir les ID de tous les membres d’une équipe Slack.
 
    Si vous activez le mappage utilisateur automatique et fournissez un fichier de mappage personnalisé, le connecteur recherche d’abord le fichier de mappage personnalisé pour ma mappage de l’utilisateur Slack à une boîte aux lettres Microsoft 365 personnalisée. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide qui correspond à l’utilisateur Slack, le connecteur utilise la propriété *Email* de l’élément Slack. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans la propriété *Email* de l’élément de message, l’élément n’est pas importé.
 
-2. Dans la page **Sélectionner des types de données à importer,** sélectionnez les types de données Slack que vous souhaitez importer. Si vous souhaitez importer des messages de tous les canaux, sélectionnez toutes les options. Dans le cas contraire, sélectionnez uniquement les types de données que vous souhaitez importer.
+2. Dans la page **Sélectionner des types de données à importer** , sélectionnez les types de données Slack que vous souhaitez importer. Si vous souhaitez importer des messages de tous les canaux, sélectionnez toutes les options. Dans le cas contraire, sélectionnez uniquement les types de données que vous souhaitez importer.
 
      Outre les messages Slack, vous pouvez également spécifier d’autres types de contenu Slack à importer dans Microsoft 365. 
 
-3. Après avoir configuré les types de données à importer, cliquez sur **Suivant,** examinez les paramètres du connecteur, puis cliquez sur **Terminer** pour créer le connecteur.
+3. Après avoir configuré les types de données à importer, cliquez sur **Suivant**, examinez les paramètres du connecteur, puis cliquez sur **Terminer** pour créer le connecteur.
 
 ## <a name="step-4-monitor-the-slack-ediscovery-connector"></a>Étape 4 : Surveiller le connecteur de découverte électronique Slack
 
@@ -109,9 +109,9 @@ Après avoir créé le connecteur de découverte électronique Slack, vous pouve
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and click **Data connectors** in the left nav.
 
-2. Cliquez sur **l’onglet Connecteurs,** puis sélectionnez le connecteur **slack eDiscovery** pour afficher la page de présentation, qui contient les propriétés et les informations sur le connecteur.
+2. Cliquez sur **l’onglet Connecteurs** , puis sélectionnez le connecteur **slack eDiscovery** pour afficher la page de présentation, qui contient les propriétés et les informations sur le connecteur.
 
-3. Sous **État du connecteur avec source,** cliquez sur le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur.  Ce journal contient des données qui ont été importées dans le cloud Microsoft.
+3. Sous **État du connecteur avec source**, **cliquez sur le** lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des données qui ont été importées dans le cloud Microsoft.
 
 ## <a name="known-issues"></a>Problèmes détectés
 

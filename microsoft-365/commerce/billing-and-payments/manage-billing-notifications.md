@@ -2,8 +2,8 @@
 title: Gérer les notifications de facturation et les pièces jointes de facture
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: prkalid, guyb
 audience: Admin
@@ -14,35 +14,35 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 search.appverid:
 - MET150
 description: Découvrez comment gérer les personnes qui reçoivent des e-mails de notification de facturation et des pièces jointes de facture.
 ms.date: 03/17/2021
-ms.openlocfilehash: 0f33029d874ee3564eed272cbc670aacaf10b283
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 11fecb1f5f33810c2bef2425fda845981c2c3193
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189680"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321570"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Gérer les notifications de facturation et les pièces jointes de facture
 
-La **page Notifications de facturation** vous permet de gérer les personnes qui reçoivent les e-mails de notification de facturation pour votre organisation. La page fournit également la possibilité de recevoir les factures de votre organisation en tant que [pièces jointes.](#receive-your-organizations-invoices-as-email-attachments)
+La **page Notifications de facturation** vous permet de gérer les personnes qui reçoivent les e-mails de notification de facturation pour votre organisation. La page offre également la possibilité de recevoir les factures de votre organisation en tant que pièces [jointes.](#receive-your-organizations-invoices-as-email-attachments)
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
 Vous devez être un administrateur global pour suivre les étapes décrites dans cet article. Les administrateurs de facturation peuvent apporter certaines de ces modifications, comme indiqué dans les sections ci-dessous. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
-## <a name="change-the-language-you-receive-email-in"></a>Modifier la langue de réception du courrier électronique
+## <a name="change-the-language-you-receive-email-in"></a>Modifier la langue dans qui vous recevez le courrier électronique
 
 Les e-mails de notification de facturation sont envoyés dans la langue par défaut de votre organisation. Pour modifier la langue préférée, utilisez les étapes suivantes.
 
-1. Dans la Centre d'administration Microsoft 365, allez à **la** page Notifications de  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">facturation.</a>
-2. Dans la **section Paramètres de notification de facturation,** **sélectionnez Modifier les paramètres de notification.**
-3. Dans le **volet Paramètres de notification de facturation,** sous Langue par défaut, sélectionnez la langue que vous souhaitez utiliser, puis  **sélectionnez Enregistrer.**
+1. Dans la Centre d'administration Microsoft 365, go to the **BillingBilling** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">notifications</a> page.
+2. Dans la **section Paramètres de notification de facturation** , **sélectionnez Modifier les paramètres de notification**.
+3. Dans le **volet Paramètres de notification de facturation**,  sous Langue par défaut, sélectionnez la langue que vous souhaitez utiliser, puis sélectionnez **Enregistrer**.
 
 ## <a name="change-who-receives-billing-notifications"></a>Modifier les personnes qui reçoivent des notifications de facturation
 
@@ -51,18 +51,18 @@ Les notifications de facturation de votre organisation sont envoyées à l’adr
 ### <a name="assign-admin-roles-by-using-the-billing-notifications-page"></a>Attribuer des rôles d’administrateur à l’aide de la page Notifications de facturation
 
 1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifications de facturation</a>.
-2. Dans la section **Administrateurs recevant des notifications de facturation,** sélectionnez le lien Administrateur de facturation ou Administrateur **général** dans le texte de description. 
-3. Dans le volet droit, sous l’onglet **Administrateurs affectés,** sélectionnez **Ajouter.**
-4. Dans le **volet Ajouter des administrateurs,** tapez le nom d’affichage ou le nom d’utilisateur de l’utilisateur, puis sélectionnez l’utilisateur dans la liste des suggestions.
+2. Dans la section **Administrateurs recevant des notifications de facturation**,  sélectionnez le lien Administrateur de facturation ou **Administrateur général dans** le texte de description.
+3. Dans le volet droit, sous l’onglet **Administrateurs affectés** , sélectionnez **Ajouter**.
+4. Dans le **volet Ajouter des administrateurs** , tapez le nom d’affichage ou le nom d’utilisateur de l’utilisateur, puis sélectionnez l’utilisateur dans la liste des suggestions.
 5. Ajoutez plusieurs utilisateurs jusqu’à ce que vous avez terminé.
 6. Sélectionnez **Enregistrer**. L’utilisateur est ajouté à la liste des administrateurs affectés.
 
 ### <a name="remove-admin-roles-by-using-the-billing-notifications-page"></a>Supprimer des rôles d’administrateur à l’aide de la page Notifications de facturation
 
 1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifications de facturation</a>.
-2. Dans la section **Administrateurs recevant des notifications de facturation,** sélectionnez le lien Administrateur de facturation ou Administrateur **général** dans le texte de description. 
-3. Dans le volet droit, sous l’onglet **Administrateurs affectés,** sélectionnez les utilisateurs à supprimer du rôle, puis sélectionnez **Supprimer.**
-4. Dans la zone de confirmation, sélectionnez **Supprimer.** L’utilisateur est supprimé de la liste des administrateurs affectés.
+2. Dans la section **Administrateurs recevant des notifications de facturation**,  sélectionnez le lien Administrateur de facturation ou **Administrateur général dans** le texte de description.
+3. Dans le volet droit, sous l’onglet **Administrateurs affectés** , sélectionnez les utilisateurs à supprimer du rôle, puis sélectionnez **Supprimer**.
+4. Dans la zone de confirmation, sélectionnez **Supprimer**. L’utilisateur est supprimé de la liste des administrateurs affectés.
 
 ## <a name="change-the-email-addresses-for-admins"></a>Modifier les adresses de messagerie des administrateurs
 
@@ -72,27 +72,27 @@ Pour modifier l’adresse de messagerie principale et de remplacement d’autres
 > Les administrateurs de facturation peuvent modifier leurs propres adresses de messagerie principale et de remplacement, mais pas pour d’autres administrateurs.
 
 1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifications de facturation</a>.
-2. Dans la section **Administrateurs recevant des notifications de facturation,** sélectionnez un nom.
-3. Dans le volet droit, ajoutez ou mettez à jour l’adresse de messagerie principale et de remplacement si nécessaire, puis sélectionnez **Enregistrer**.
+2. Dans la section **Administrateurs recevant des notifications de facturation** , sélectionnez un nom.
+3. Dans le volet droit, ajoutez ou mettez à jour l’adresse de messagerie principale et de remplacement selon vos besoins, puis sélectionnez **Enregistrer**.
 
 ## <a name="change-your-organizations-contact-email"></a>Modifier le courrier électronique de contact de votre organisation
 
 En plus de vos administrateurs globaux et de facturation, nous envoyons des notifications de facturation à l’adresse e-mail du contact de votre organisation. Pour modifier l’adresse e-mail, utilisez les étapes suivantes.
 
 1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifications de facturation</a>.
-2. Sous **Contact de l’organisation recevant des notifications de facturation,** sélectionnez le contact de l’organisation.
-3. Dans le volet droit, tapez l’adresse de messagerie que vous souhaitez utiliser, puis sélectionnez **Enregistrer.**
+2. Sous **Contact de l’organisation recevant des notifications de facturation**, sélectionnez le contact de l’organisation.
+3. Dans le volet droit, tapez l’adresse de messagerie que vous souhaitez utiliser, puis sélectionnez **Enregistrer**.
 
 ## <a name="receive-your-organizations-invoices-as-email-attachments"></a>Recevoir les factures de votre organisation en tant que pièces jointes
 
 > [!NOTE]
 > Les administrateurs de facturation peuvent également suivre les étapes de cette section.
 
-Vous pouvez avoir une copie de la facture de votre organisation attachée sous forme de fichier PDF aux courriers électroniques de notification de facture lorsqu’une nouvelle facture est prête. Utilisez les étapes suivantes pour recevoir des factures en pièce jointe.
+Vous pouvez avoir une copie de la facture de votre organisation attachée sous forme de fichier PDF aux courriers électroniques de notification de facture lorsqu’une nouvelle facture est prête. Utilisez les étapes suivantes pour recevoir des factures en tant que pièces jointes.
 
 1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifications de facturation</a>.
-2. Sous **Paramètres de notification de facturation,** **sélectionnez Modifier les paramètres de notification.**
-3. Dans le **volet Paramètres de notification de** facturation, sous Joindre un **PDF** à vos e-mails de facture, cochez la case, puis sélectionnez **Enregistrer.**
+2. Sous **Paramètres de notification de facturation**, **sélectionnez Modifier les paramètres de notification**.
+3. Dans le **volet Paramètres de notification de** facturation, sous **Joindre un PDF** à vos e-mails de facture, cochez la case, puis sélectionnez **Enregistrer**.
 
 Pour arrêter de recevoir la pièce jointe de la facture à tout moment, suivez les étapes ci-dessus et clear the **Attach a PDF to your invoice emails** checkbox in step 3.
 
@@ -108,21 +108,21 @@ Les e-mails de notification de facturation sont envoyés aux adresses de message
 - Collaborateur de profil de facturation
 - Gestionnaire de factures
 
-Pour en savoir plus sur les rôles de profil de facturation et comment les gérer, voir Comprendre les rôles d’administration du contrat [client Microsoft dans Azure.](/azure/cost-management-billing/manage/understand-mca-roles)
+Pour en savoir plus sur les rôles de profil de facturation et comment les gérer, voir Comprendre les rôles d’administration du contrat [client Microsoft dans Azure](/azure/cost-management-billing/manage/understand-mca-roles).
 
 Pour modifier les personnes qui reçoivent les notifications de facturation de votre organisation, utilisez les étapes suivantes pour modifier les rôles attribués aux utilisateurs.
 
-1. Dans le Centre d’administration, allez sur la page **Factures**&  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">paiements.</a>
+1. Dans le Centre d’administration, allez sur la page **Facturation** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& paiements</a>.
 2. Sous **l’onglet Profil** de facturation, sélectionnez un profil de facturation.
-3. Dans la section **Rôles de profil de** facturation, attribuez ou supprimez des rôles pour le propriétaire du **profil de** facturation, le collaborateur de **profil** de facturation ou le gestionnaire **de factures.**
+3. Dans la section **Rôles de profil de** facturation, attribuez ou supprimez des rôles pour le propriétaire du **profil** de facturation, le collaborateur de **profil** de facturation ou le **gestionnaire de factures**.
 
 ### <a name="receive-invoices-as-email-attachments"></a>Recevoir des factures en tant que pièces jointes d’e-mail
 
 Pour recevoir vos factures en pièce jointe à vos notifications de facture, utilisez les étapes suivantes pour activer ce paramètre pour un profil de facturation spécifique.
 
-1. Dans le Centre d’administration, allez sur la page **Factures**&  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">paiements.</a>
+1. Dans le Centre d’administration, allez sur la page **Facturation** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& paiements</a>.
 2. Sélectionnez **l’onglet Profils** de facturation, puis sélectionnez un profil de facturation dans la liste.
-3. Dans la page des détails du profil de facturation, sous Obtenir les factures dans les pièces **jointes** des e-mails, basculez sur **Sur**.
+3. Dans la page des détails du profil de facturation, sous Obtenir les factures dans les pièces **jointes**, basculez sur **Sur**.
 
 ## <a name="related-content"></a>Contenu associé
 

@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: fe4a5e97704cbf1d4851484397e7c4424c099d3c
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 2349fb9ac736653b9a74c42aecf5e71cc95381ca
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524188"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321514"
 ---
 # <a name="alert-grading-for-suspicious-email-forwarding-activity"></a>Notation des alertes pour une activité de forwarding de courrier suspecte
 
@@ -103,7 +103,7 @@ Lors de l’étude de cette alerte, vous devez déterminer :
 
 ### <a name="is-the-user-account-and-its-mailbox-compromised"></a>Le compte d’utilisateur et sa boîte aux lettres sont-ils compromis ?
 
-En regardant le comportement passé de l’expéditeur et les activités récentes, vous devez être en mesure de déterminer si le compte de l’utilisateur doit être considéré comme compromis ou non. Vous pouvez voir les détails des alertes à partir de la page de l’utilisateur dans le portail Microsoft 365 Defender web. 
+En regardant le comportement passé de l’expéditeur et les activités récentes, vous devez être en mesure de déterminer si le compte de l’utilisateur doit être considéré comme compromis ou non. Vous pouvez voir les détails des alertes à partir de la page de l’utilisateur dans Microsoft 365 Defender portail. 
 
 Vous pouvez également analyser ces activités supplémentaires pour la boîte aux lettres concernée :
 
@@ -141,7 +141,7 @@ L’Explorateur de menaces offre une expérience d’examen interactive pour les
  
     :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-recipients-list.png" alt-text="Exemple de liste de destinataires" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-recipients-list.png":::
 
-    - Qui d’autres messages électroniques ont été transmis à ces destinataires ?
+    - Qui’autres ont-ils transmis des courriers électroniques à ces destinataires ?
 
     - Combien de messages électroniques ont été transmis à ces destinataires ?
 
@@ -251,7 +251,7 @@ IdentityLogonEvents
 
 ### <a name="investigating-forwarding-rules"></a>Étude des règles de forwarding
 
-Vous pouvez également rechercher des règles de Exchange à l’aide du centre d’administration, en fonction du type de règle (valeur FT dans l’alerte).
+Vous pouvez également rechercher des règles de Exchange suspectes à l’aide du Centre d’administration Exchange, en fonction du type de règle (valeur FT dans l’alerte).
 
 - ETR 
 

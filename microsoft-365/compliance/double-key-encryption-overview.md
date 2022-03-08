@@ -4,7 +4,7 @@ description: Questions fréquemment posées sur le chiffrement à double clé po
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 12/11/2020
+ms.date: 02/28/2022
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 8cdc4d71609430dd7bcb19edc3b55c49a3b9401d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 269937e78ffee6956df5a4dc8dc978fa30043912
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200532"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320982"
 ---
 # <a name="double-key-encryption-frequently-asked-questions"></a>Double key Encryption frequently asked questions
 
@@ -35,7 +35,7 @@ Le DKE vous aide à répondre aux exigences réglementaires dans le cadre de plu
 
 Vous devez utiliser le client d’étiquetage unifié Azure Information Protection pour protéger les documents avec le chiffrement à double clé. Actuellement, vous ne pouvez pas utiliser Microsoft Office l’étiquetage de sensibilité intégré.
 
-## <a name="what-microsoft-365-apps-can-i-use-with-dke"></a>Quelles Microsoft 365 Apps puis-je utiliser avec DKE ?
+## <a name="what-microsoft-365-apps-can-i-use-with-dke"></a>Quels Microsoft 365 Apps puis-je utiliser avec DKE ?
 
 Vous pouvez utiliser des étiquettes DKE pour protéger les documents à l’aide des versions de bureau de Word, Excel et PowerPoint sur Windows. Assurez-vous que vous utilisez *.12711 ou version ultérieure (versions de bureau de Word, PowerPoint et Excel) sur Windows.
 
@@ -49,11 +49,11 @@ Vous pouvez partager des documents chiffrés à double clé avec des utilisateur
 
 - Vous avez l’autorisation requise pour accéder à votre clé dans votre service de chiffrement à double clé.
 
-- Avoir l’autorisation requise pour accéder à votre clé dans Microsoft Azure.
+- Vous avez l’autorisation requise pour accéder à votre clé dans Microsoft Azure.
 
 ## <a name="what-happens-to-documents-that-are-protected-with-hyok"></a>Qu’advient-il des documents protégés par HYOK ?
 
-Le déploiement du chiffrement à double clé n’affectera pas votre configuration HYOK existante. Toutefois, nous vous recommandons de commencer à utiliser le chiffrement à double clé en parallèle avec HYOK.
+Le déploiement du chiffrement à double clé n’affecte pas votre configuration HYOK existante. Toutefois, nous vous recommandons de commencer à utiliser le chiffrement à double clé en parallèle avec HYOK.
 
 ## <a name="can-i-run-double-key-encryption-in-my-non-microsoft-air-gapped-environment"></a>Puis-je exécuter le chiffrement à double clé dans mon environnement non-Microsoft ?
 
@@ -73,8 +73,8 @@ Non. Vous ne pouvez pas ajouter DKE à une étiquette après l’avoir créé. A
 
 ## <a name="how-do-i-roll-my-dke-keys"></a>Comment faire pour déployer mes clés DKE ?
 
-Pour obtenir des instructions sur le déploiement (également appelé rotation ou rekeying) de la clé que vous stockez dans Azure, voir Opérations pour votre clé de [client Azure Information Protection.](/azure/information-protection/operations-customer-managed-tenant-key)
+Pour obtenir des instructions sur le déploiement (également appelé rotation ou rekeying) de la clé que vous stockez dans Azure, voir Opérations pour votre clé de [client Azure Information Protection](/azure/information-protection/operations-customer-managed-tenant-key).
 
 Pour [plus d’informations](double-key-encryption.md#tenant-and-key-settings) sur la création d’une clé pour le service DKE, voir paramètres de client et de clé.
 
-Lorsque vous créez une clé, vous définissez un nom et un GUID. Ensuite, si vous faites pivoter une clé, vous conservez l’ancien enregistrement avec le nom et le GUID, mais ajoutez un nouvel enregistrement avec le même nom mais un GUID différent. La nouvelle clé est définie comme étant active afin que l’API de clé publique commence à la renvoyer pour le nouveau chiffrement. Les deux clés sont disponibles pour le déchiffrement afin que le nouveau contenu et l’ancien contenu soient déchiffrés.
+Lorsque vous créez une clé, vous définissez un nom et un GUID. Ensuite, si vous faites pivoter une clé, vous conservez l’ancien enregistrement avec le nom et le GUID, mais vous ajoutez un nouvel enregistrement avec le même nom mais un GUID différent. La nouvelle clé est définie comme étant active afin que l’API de clé publique commence à la renvoyer pour le nouveau chiffrement. Les deux clés sont disponibles pour le déchiffrement afin que le nouveau contenu et l’ancien contenu soient déchiffrés.

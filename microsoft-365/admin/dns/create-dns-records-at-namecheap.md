@@ -1,14 +1,14 @@
 ---
-title: Connecter vos enregistrements DNS chez Namecheap pour Microsoft 365
+title: Connecter vos enregistrements DNS sur Namecheap pour Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -21,15 +21,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
-description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services sur Namecheap pour Microsoft.
-ms.openlocfilehash: 31938656e17104d1388b53c05b6ccf3af9afc30f
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services chez Namecheap pour Microsoft.
+ms.openlocfilehash: 146b76ef95a725faa3457eaf1795b153133cef92
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587028"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314992"
 ---
-# <a name="connect-your-dns-records-at-namecheap-to-microsoft-365"></a>Connecter vos enregistrements DNS chez Namecheap pour Microsoft 365
+# <a name="connect-your-dns-records-at-namecheap-to-microsoft-365"></a>Connecter vos enregistrements DNS sur Namecheap pour Microsoft 365
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
@@ -47,30 +47,30 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
 > [!NOTE]
 > Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. Vous pouvez éventuellement le supprimer ultérieurement. 
   
-1. To get started, go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). You’ll be prompted to Sign in and Continue.
+1. To get started, go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). Vous serez invité à vous inscrire et à continuer.
 
      :::image type="content" source="../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png" alt-text="Connectez-vous à Namecheap.":::
 
-1. Sur la page d’accueil, sous **Compte,** choisissez **Liste** des domaines dans la liste. 
+1. Sur la page d’accueil, sous **Compte**, sélectionnez **Liste** des domaines dans la liste liste liste. 
 
-     :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="Sélectionnez Liste de domaines dans la liste de listes listes.":::
+     :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="Sélectionnez Liste de domaines dans la liste liste liste.":::
 
-1. Dans la page Liste des domaines, sélectionnez le domaine à modifier, puis sélectionnez **Gérer.**
+1. Dans la page Liste des domaines, sélectionnez le domaine à modifier, puis sélectionnez **Gérer**.
 
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="Sélectionnez Gérer.":::
 
-1. Sélectionnez **DNS avancé.**
+1. **Sélectionnez DNS avancé**.
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="Sélectionnez DNS avancé.":::
 
-1. Dans la section **ENREGISTREMENTS HÔTES,** **sélectionnez AJOUTER UN NOUVEL ENREGISTREMENT.**
+1. Dans la section **ENREGISTREMENTS HÔTES** , **sélectionnez AJOUTER UN NOUVEL ENREGISTREMENT**.
 
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="Sélectionnez AJOUTER UN NOUVEL ENREGISTREMENT.":::
 
-1. Dans la **baisse Type,** sélectionnez **Enregistrement TXT.**
+1. Dans la **baisse Type** , sélectionnez **Enregistrement TXT**.
     
     > [!NOTE]
-    > La **drop-down** Type s’affiche automatiquement lorsque vous sélectionnez **AJOUTER UN NOUVEL ENREGISTREMENT.** 
+    > La **drop-down** Type s’affiche automatiquement lorsque vous sélectionnez **AJOUTER UN NOUVEL ENREGISTREMENT**. 
 
      :::image type="content" source="../../media/a5b40973-19b5-4c32-8e1b-1521aa971836.png" alt-text="Sélectionnez Enregistrement TXT.":::
 
@@ -94,9 +94,9 @@ L’enregistrement étant désormais ajouté sur le site de votre bureau d’enr
 
 Pour vérifier l’enregistrement dans Microsoft 365 :
   
-1. Dans le Centre d’administration, go to the **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+1. Dans le Centre d’administration, Paramètres  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**domaines**</a>.
     
-1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer la configuration.** 
+1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer l’installation**. 
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Sélectionnez Démarrer l’installation.":::
 
@@ -109,29 +109,29 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
   
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient transférés vers Microsoft
   
-1. To get started, go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). You’ll be prompted to Sign in and Continue.
+1. To get started, go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). Vous serez invité à vous inscrire et à continuer.
 
      :::image type="content" source="../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png" alt-text="Connectez-vous à Namecheap.":::
 
-1. Sur la page d’accueil, sous **Compte,** choisissez **Liste** des domaines dans la liste. 
+1. Sur la page d’accueil, sous **Compte**, sélectionnez **Liste** des domaines dans la liste liste liste. 
 
-     :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="Sélectionnez Liste de domaines dans la liste.":::
+     :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="Sélectionnez Liste de domaines dans la liste liste liste.":::
 
-1. Dans la page **Liste des** domaines, sélectionnez le domaine à modifier, puis sélectionnez **Gérer.**
+1. Dans la page **Liste des** domaines, sélectionnez le domaine à modifier, puis sélectionnez **Gérer**.
 
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="Sélectionnez Gérer.":::
 
-1. Sélectionnez **DNS avancé.**
+1. **Sélectionnez DNS avancé**.
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="Sélectionnez DNS avancé.":::
 
-1. Dans la section **PARAMÈTRES DU COURRIER,** sélectionnez  **MX personnalisé** dans la liste de listes de listes bas de courrier. 
+1. Dans la section **PARAMÈTRES DU COURRIER**, sélectionnez **MX personnalisé** dans la liste de listes de listes bas de courrier. 
     
     (Vous devrez peut-être faire défiler la page vers le bas.)
 
      :::image type="content" source="../../media/40199e2c-42cf-4c3f-9936-3cbe5d4e81a4.png" alt-text="Sélectionnez MX personnalisé."::: 
 
-1. Sélectionnez **Ajouter un nouvel enregistrement.**
+1. **Sélectionnez Ajouter un nouvel enregistrement**.
 
      :::image type="content" source="../../media/8d169b81-ba48-4d51-84ea-a08fa1616457.png" alt-text="AJOUTEZ UN NOUVEL ENREGISTREMENT.":::
 
@@ -163,30 +163,30 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
   
 ## <a name="add-the-cname-record-required-for-microsoft"></a>Ajouter l’enregistrement CNAME requis pour Microsoft
 
-1. To get started, go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). You’ll be prompted to Sign in and Continue.
+1. To get started, go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). Vous serez invité à vous inscrire et à continuer.
 
      :::image type="content" source="../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png" alt-text="Connectez-vous à Namecheap.":::
 
-1. Sur la page d’accueil, sous **Compte,** choisissez **Liste** des domaines dans la liste. 
+1. Sur la page d’accueil, sous **Compte**, sélectionnez **Liste** des domaines dans la liste liste liste. 
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="Sélectionnez Liste des domaines.":::
 
-1. Dans la page **Liste des** domaines, sélectionnez le domaine à modifier, puis sélectionnez **Gérer.**
+1. Dans la page **Liste des** domaines, sélectionnez le domaine à modifier, puis sélectionnez **Gérer**.
 
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="Sélectionnez Gérer.":::
 
-1. Sélectionnez **DNS avancé.**
+1. **Sélectionnez DNS avancé**.
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="Sélectionnez DNS avancé.":::
 
-1. Dans la section **ENREGISTREMENTS HÔTES,** **sélectionnez AJOUTER UN NOUVEL ENREGISTREMENT.**
+1. Dans la section **ENREGISTREMENTS HÔTES** , **sélectionnez AJOUTER UN NOUVEL ENREGISTREMENT**.
 
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="Sélectionnez AJOUTER UN NOUVEL ENREGISTREMENT.":::
 
-1. Dans la **boîte de** drop-down Type, sélectionnez **Enregistrement CNAME.**
+1. Dans la **baisse Type** , sélectionnez **Enregistrement CNAME**.
     
     > [!NOTE]
-    > La **drop-down** Type s’affiche automatiquement lorsque vous sélectionnez **AJOUTER UN NOUVEL ENREGISTREMENT.** 
+    > La **drop-down** Type s’affiche automatiquement lorsque vous sélectionnez **AJOUTER UN NOUVEL ENREGISTREMENT**. 
 
      :::image type="content" source="../../media/0898f3b2-06ab-4364-a86a-a603a25b39f4.png" alt-text="Sélectionnez Enregistrement CNAME.":::
 
@@ -205,30 +205,30 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de n’avoir qu’un seul *enregistrement*  SPF qui inclut les deux ensembles de valeurs. 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de n’avoir qu’un *seul enregistrement*  SPF qui inclut les deux ensembles de valeurs. 
 
-1. To get started, go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). You’ll be prompted to Sign in and Continue.
+1. To get started, go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). Vous serez invité à vous inscrire et à continuer.
     
-1. Sur la page d’accueil, sous **Compte,** choisissez **Liste** des domaines dans la liste. 
+1. Sur la page d’accueil, sous **Compte**, sélectionnez **Liste** des domaines dans la liste liste liste. 
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="Sélectionnez Liste des domaines.":::
 
-1. Dans la page **Liste des** domaines, sélectionnez le domaine à modifier, puis sélectionnez **Gérer.**
+1. Dans la page **Liste des** domaines, sélectionnez le domaine à modifier, puis sélectionnez **Gérer**.
 
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="Sélectionnez Gérer.":::
 
-1. Sélectionnez **DNS avancé.**
+1. **Sélectionnez DNS avancé**.
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="Sélectionnez DNS avancé.":::
 
-1. Dans la section **ENREGISTREMENTS HÔTES,** **sélectionnez AJOUTER UN NOUVEL ENREGISTREMENT.**
+1. Dans la section **ENREGISTREMENTS HÔTES** , **sélectionnez AJOUTER UN NOUVEL ENREGISTREMENT**.
 
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="Sélectionnez AJOUTER UN NOUVEL ENREGISTREMENT.":::
 
-1. Dans la **baisse Type,** sélectionnez **Enregistrement TXT.**
+1. Dans la **baisse Type** , sélectionnez **Enregistrement TXT**.
     
     > [!NOTE]
-    > La **drop-down** Type s’affiche automatiquement lorsque vous sélectionnez **AJOUTER UN NOUVEL ENREGISTREMENT.** 
+    > La **drop-down** Type s’affiche automatiquement lorsque vous sélectionnez **AJOUTER UN NOUVEL ENREGISTREMENT**. 
 
      :::image type="content" source="../../media/c5d1fddb-28b5-48ec-91c9-3e5d3955ac80.png" alt-text="Sélectionnez Enregistrement TXT.":::
 
@@ -248,7 +248,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
 ## <a name="advanced-option-skype-for-business"></a>Option avancée : Skype Entreprise
 
-Sélectionnez cette option uniquement si votre organisation utilise Skype Entreprise pour les services de communication en ligne tels que les conversation, les appels de conférence et les appels vidéo, en plus de Microsoft Teams. Skype nécessite 4 enregistrements : 2 enregistrements SRV pour la communication utilisateur à utilisateur et 2 enregistrements CNAME pour se connecter et connecter des utilisateurs au service.
+Sélectionnez cette option uniquement si votre organisation utilise Skype Entreprise pour les services de communication en ligne tels que la conversation, les appels de conférence et les appels vidéo, en plus des Microsoft Teams. Skype nécessite 4 enregistrements : 2 enregistrements SRV pour la communication utilisateur à utilisateur et 2 enregistrements CNAME pour se connecter et connecter des utilisateurs au service.
 
 ### <a name="add-the-two-required-srv-records"></a>Ajouter les deux enregistrements SRV requis
 
@@ -256,26 +256,26 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
 
      :::image type="content" source="../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png" alt-text="Connectez-vous à Namecheap.":::
 
-1. Sur la page d’accueil, sous **Compte,** choisissez **Liste** des domaines dans la liste. 
+1. Sur la page d’accueil, sous **Compte**, sélectionnez **Liste** des domaines dans la liste liste liste. 
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="Choisissez Liste des domaines.":::
 
-1. Dans la page **Liste des** domaines, sélectionnez le domaine à modifier, puis sélectionnez **Gérer.**
+1. Dans la page **Liste des** domaines, sélectionnez le domaine à modifier, puis sélectionnez **Gérer**.
 
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="Sélectionnez Gérer.":::
 
-1. Sélectionnez **DNS avancé.**
+1. **Sélectionnez DNS avancé**.
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="Sélectionnez DNS avancé.":::
 
-1. Dans la section **ENREGISTREMENTS HÔTES,** **sélectionnez AJOUTER UN NOUVEL ENREGISTREMENT.**
+1. Dans la section **ENREGISTREMENTS HÔTES** , **sélectionnez AJOUTER UN NOUVEL ENREGISTREMENT**.
 
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="Sélectionnez AJOUTER UN NOUVEL ENREGISTREMENT.":::
 
-1. Dans la **drop-down Type,** sélectionnez **Enregistrement SRV.**
+1. Dans la **baisse Type** , sélectionnez **Enregistrement SRV**.
     
     > [!NOTE]
-    > La **drop-down** Type s’affiche automatiquement lorsque vous sélectionnez **AJOUTER UN NOUVEL ENREGISTREMENT.** 
+    > La **drop-down** Type s’affiche automatiquement lorsque vous sélectionnez **AJOUTER UN NOUVEL ENREGISTREMENT**. 
 
      :::image type="content" source="../../media/fd55cd7c-2243-4de1-8d39-2c3f7ea3ae51.png" alt-text="Sélectionnez le type d’enregistrement SRV.":::
 
@@ -299,14 +299,14 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
 
 ### <a name="add-the-two-required-cname-records"></a>Ajouter les deux enregistrements CNAME requis 
   
-1. Dans la section **ENREGISTREMENTS HÔTES,** **sélectionnez AJOUTER UN NOUVEL ENREGISTREMENT.**
+1. Dans la section **ENREGISTREMENTS HÔTES** , **sélectionnez AJOUTER UN NOUVEL ENREGISTREMENT**.
     
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="Sélectionnez AJOUTER UN NOUVEAU NOM.":::
 
-1. Dans la **boîte de** drop-down Type, sélectionnez **CNAME**.
+1. Dans la **boîte de** bas type, sélectionnez **CNAME**.
     
     > [!NOTE]
-    > La **drop-down** Type s’affiche automatiquement lorsque vous sélectionnez **AJOUTER UN NOUVEL ENREGISTREMENT.** 
+    > La **drop-down** Type s’affiche automatiquement lorsque vous sélectionnez **AJOUTER UN NOUVEL ENREGISTREMENT**. 
 
      :::image type="content" source="../../media/fd55cd7c-2243-4de1-8d39-2c3f7ea3ae51.png" alt-text="Sélectionnez CNAME.":::
 
@@ -338,26 +338,26 @@ Ce service vous permet de sécuriser et de gérer à distance les appareils mobi
 
      :::image type="content" source="../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png" alt-text="Connectez-vous à Namecheap.":::
 
-1. Sur la page d’accueil, sous **Compte,** choisissez **Liste** des domaines dans la liste liste liste. 
+1. Sur la page d’accueil, sous **Compte**, sélectionnez **Liste** des domaines dans la liste liste liste. 
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="Sélectionnez Liste des domaines.":::
 
-1. Dans la page **Liste des** domaines, sélectionnez le domaine à modifier, puis sélectionnez **Gérer.**
+1. Dans la page **Liste des** domaines, sélectionnez le domaine à modifier, puis sélectionnez **Gérer**.
     
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="Sélectionnez Gérer.":::
 
-1. Sélectionnez **DNS avancé.**
+1. **Sélectionnez DNS avancé**.
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="Sélectionnez Gérer les enregistrements DNS dans la liste liste.":::
 
-1. Dans la section **ENREGISTREMENTS HÔTES,** **sélectionnez AJOUTER UN NOUVEL ENREGISTREMENT.**
+1. Dans la section **ENREGISTREMENTS HÔTES** , **sélectionnez AJOUTER UN NOUVEL ENREGISTREMENT**.
     
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="Sélectionnez AJOUTER UN NOUVEL ENREGISTREMENT.":::
 
-1. Dans la **boîte de** drop-down Type, sélectionnez **Enregistrement CNAME.**
+1. Dans la **baisse Type** , sélectionnez **Enregistrement CNAME**.
     
     > [!NOTE]
-    > La **drop-down** Type s’affiche automatiquement lorsque vous sélectionnez **AJOUTER UN NOUVEL ENREGISTREMENT.** 
+    > La **drop-down** Type s’affiche automatiquement lorsque vous sélectionnez **AJOUTER UN NOUVEL ENREGISTREMENT**. 
   
      :::image type="content" source="../../media/0898f3b2-06ab-4364-a86a-a603a25b39f4.png" alt-text="Sélectionnez Enregistrement CNAME.":::
 
@@ -370,7 +370,7 @@ Ce service vous permet de sécuriser et de gérer à distance les appareils mobi
        
      :::image type="content" source="../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png" alt-text="Copiez et collez les valeurs du tableau.":::
 
-1. Sélectionnez **le contrôle Enregistrer les modifications.** 
+1. Sélectionnez **le contrôle Enregistrer les modifications** . 
 
      :::image type="content" source="../../media/91a5cce4-ca41-41ec-b976-aafe681a4d68.png" alt-text="Sélectionnez le contrôle Enregistrer les modifications.":::
 

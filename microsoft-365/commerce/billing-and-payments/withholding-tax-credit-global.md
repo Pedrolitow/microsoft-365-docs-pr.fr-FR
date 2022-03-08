@@ -2,8 +2,8 @@
 title: Demander un crédit pour la retenue d’impôt sur votre compte (clients globaux)
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller, martinl, melmar
 audience: Admin
@@ -16,22 +16,22 @@ ms.collection:
 search.appverid: MET150
 description: Découvrez comment demander un crédit sur votre compte pour la retenue d’impôt que vous avez payée. Cet article s’applique aux clients internationaux, à l’exception de l’Inde.
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 monikerRange: o365-worldwide
 ms.date: 05/27/2021
-ms.openlocfilehash: c2f12293593d39e5e7a738c914ba7bab79316a4a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a38cff7648666db7b6817882355ff756d1070c17
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158609"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322294"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-global-customers"></a>Demander un crédit pour la retenue d’impôt sur votre compte (clients globaux)
 
 > [!NOTE]
 >
-> Si votre organisation est basée en Inde, consultez Demander un crédit pour la retenue d’impôt sur votre [compte (clients en Inde).](withholding-tax-credit-india.md)
+> Si votre organisation est basée en Inde, consultez Demander un crédit pour la retenue d’impôt sur votre [compte (clients de l’Inde).](withholding-tax-credit-india.md)
 
 Certains clients reçoivent des factures Web Direct (Azure et Microsoft 365) facturées par une entité Microsoft située dans un pays étranger. Si votre organisation effectue des paiements 2 frontières à cette entité, l’autorité fiscale de votre pays peut vous obliger à refuser une partie du paiement 2 frontière en tant que retenue d’impôt sur le revenu (WHT). Si vous avez retenu les taxes requises par votre autorité fiscale lors du versement de paiements à Microsoft, cet article explique le processus de revendication d’un crédit pour l’impôt retenu.
 
@@ -41,18 +41,18 @@ Si vous avez retenu des taxes lors du versement du paiement et déposé l’imp�
 
 Votre requête WHT doit inclure les éléments suivants :
 
-- Copie complète du formulaire de retenue [d’impôt](https://download.microsoft.com/download/a/a/f/aaf8306b-79d4-455b-975f-41ce9e67b9cb/wht%20credit%20form%20-%20global.docx) (rempli par le client)
+- Copie complète du formulaire [de retenue d’impôt](https://download.microsoft.com/download/a/a/f/aaf8306b-79d4-455b-975f-41ce9e67b9cb/wht%20credit%20form%20-%20global.docx) (rempli par le client)
 - Une copie signée ou analysée du certificat ou du reçu de retenue d’impôt
 
 Envoyez la demande WHT en ouvrant un ticket avec le support Microsoft.
 
 ## <a name="for-customers-who-pay-by-credit-card"></a>Pour les clients qui paient par carte de crédit
 
-Si votre mode de paiement est une carte bancaire et que vous avez effectué un paiement complet à Microsoft et que vous avez également payé wht à l’autorité fiscale concernée, vous devez soumettre une demande WHT pour demander le remboursement du montant des taxes.
+Si votre mode de paiement est une carte bancaire et que vous avez effectué un paiement complet à Microsoft et que vous avez également payé WHT à l’autorité fiscale concernée, vous devez soumettre une demande WHT pour demander le remboursement du montant des taxes.
 
 Votre requête WHT doit inclure les éléments suivants :
 
-- Copie complète du formulaire de retenue [d’impôt](https://download.microsoft.com/download/a/a/f/aaf8306b-79d4-455b-975f-41ce9e67b9cb/wht%20credit%20form%20-%20global.docx) (rempli par le client)
+- Copie complète du formulaire [de retenue d’impôt](https://download.microsoft.com/download/a/a/f/aaf8306b-79d4-455b-975f-41ce9e67b9cb/wht%20credit%20form%20-%20global.docx) (rempli par le client)
 - Une copie signée ou analysée du certificat ou du reçu de retenue d’impôt
 
 Envoyez la demande WHT en ouvrant un ticket avec le support Microsoft.
@@ -73,7 +73,7 @@ En cas de problème avec votre demande, l’équipe de révision peut exiger des
 
 Une fois votre demande approuvée, elle est reflétée dans le cycle de facturation suivant. Le montant wht payé est inclus dans la section paiement de votre facture suivante. Le montant est également affiché sous le montant payé dans le portail client.
 
-**Pour les clients qui paient par carte de crédit :** Une fois votre demande approuvée, votre sur-paiement est remboursé sur votre carte de crédit.
+**Pour les clients qui paient par carte de crédit :** Une fois votre demande approuvée, votre paiement surpayé est remboursé sur votre carte de crédit.
 
 > [!IMPORTANT]
 >

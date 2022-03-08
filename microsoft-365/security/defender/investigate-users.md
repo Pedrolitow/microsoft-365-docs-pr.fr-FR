@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: bfb8e1fb42dcde1a3140e0990221536c1b76b4f8
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: d49ef6b31e6446f3452d0efdce2e918813eabcc6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62904006"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327538"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>Examiner les utilisateurs dans Microsoft 365 Defender
 
@@ -43,7 +43,7 @@ Pour obtenir un résumé rapide d’un compte d’utilisateur pour l’incident,
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Exemple de volet récapitulatif du compte d’utilisateur pour un incident." lightbox="../../media/investigate-users/incidents-ss-user-pane.png":::
 
 > [!NOTE]
-> La page utilisateur affiche Azure Active Directory organisation (Azure AD) ainsi que des groupes, ce qui vous aide à comprendre les groupes et les autorisations associés à un utilisateur.
+> La page utilisateur affiche Azure Active Directory (Azure AD) ainsi que des groupes, ce qui vous aide à comprendre les groupes et les autorisations associés à un utilisateur.
 
 Dans ce volet, vous pouvez examiner les informations sur les menaces des utilisateurs, notamment les incidents actuels, les alertes actives et le niveau de risque, ainsi que l’exposition des utilisateurs, les comptes, les appareils, etc.
 

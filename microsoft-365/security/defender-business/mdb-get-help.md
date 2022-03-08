@@ -1,5 +1,5 @@
 ---
-title: Obtenir de l’aide et du support pour Microsoft Defender pour les entreprises (prévisualisation)
+title: Obtenir de l’aide et du support pour Microsoft Defender pour les entreprises
 f1.keywords: NOCSH
 ms.author: deniseb
 author: denisebmsft
@@ -14,25 +14,25 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MET150
 ms.reviewer: inbadian, shlomiakirav
-description: Découvrez comment obtenir de l’aide ou contacter le support technique dans Microsoft Defender Pour Entreprises (prévisualisation)
-ms.date: 02/07/2022
-ms.openlocfilehash: 70810b62dc896fa5c080b32ca1c0adf5a6ed6427
-ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
+description: Découvrez comment obtenir de l’aide ou contacter le support dans Microsoft Defender entreprise
+ms.date: 02/24/2022
+ms.openlocfilehash: 49d93af068b5231da516b54d001d587cd513da10
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62520498"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323036"
 ---
-# <a name="get-help-and-support-for-microsoft-defender-for-business-preview"></a>Obtenir de l’aide et du support pour Microsoft Defender pour les entreprises (prévisualisation)
+# <a name="get-help-and-support-for-microsoft-defender-for-business"></a>Obtenir de l’aide et du support pour Microsoft Defender pour les entreprises
 
 > [!IMPORTANT]
-> Microsoft Defender pour Entreprise est désormais en prévisualisation et sera progressivement mis en place pour les clients [](https://aka.ms/mdb-preview) et les partenaires qui s’y connectent pour le demander. Nous intégrerons un ensemble initial de clients et de partenaires dans les prochaines semaines et développerons la prévisualisation jusqu’à la disponibilité générale. Notez que la prévisualisation sera lancée avec un [ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et que nous ajouterons régulièrement des fonctionnalités.
+> Microsoft Defender for Business est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. La [prévisualisation inclut un ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et nous ajouterons régulièrement des fonctionnalités.
 > 
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
 ## <a name="get-help-and-support"></a>Obtenir de l’aide et de l’assistance
 
-Si vous avez besoin d’aide avec Microsoft Defender pour Entreprises (prévisualisation), sélectionnez l’icône d’aide (?) dans le coin supérieur droit de l’écran. Tapez votre question ou votre problème. Plusieurs options, telles que des réponses rapides ou des articles d’aide, sont répertoriées.
+Si vous avez besoin d’aide avec Microsoft Defender pour les entreprises, sélectionnez l’icône Aide (?) dans le coin supérieur droit de l’écran. Tapez votre question ou votre problème. Plusieurs options, telles que des réponses rapides ou des articles d’aide, sont répertoriées.
 
 Si vous ne voyez pas la réponse à votre question, vous pouvez ouvrir un ticket de support.
 
@@ -43,6 +43,6 @@ Si vous ne voyez pas la réponse à votre question, vous pouvez ouvrir un ticket
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Microsoft Defender Pour Entreprises (prévisualisation) : questions et réponses fréquemment posées](mdb-faq.yml)
+- [Microsoft Defender pour les entreprises - Questions et réponses fréquemment posées](mdb-faq.yml)
 
-- [Résolution des problèmes de Microsoft Defender pour Les Entreprises (prévisualisation)](mdb-troubleshooting.yml) 
+- [Résolution des problèmes de Microsoft Defender pour les entreprises](mdb-troubleshooting.yml) 

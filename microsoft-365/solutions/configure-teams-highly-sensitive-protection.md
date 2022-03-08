@@ -17,14 +17,15 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+- admindeeplinkSPO
 recommendations: false
 description: Découvrez comment déployer des équipes avec la protection des données hautement sensibles.
-ms.openlocfilehash: 27d2183a3f6f5f43f4461bc83fe3b33ac9f4f56e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 053f92f0a3f7551d747c81b13b3832798c7e953c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169358"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312595"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configurer des équipes avec la protection des données hautement sensibles
 
@@ -129,12 +130,11 @@ Chaque fois que vous créez une équipe avec une étiquette de haute confidentia
 
 Pour mettre à jour le type de lien de partage par défaut du site
 
-1. Ouvrez le [Centre d’administration SharePoint](https://admin.microsoft.com/sharepoint).
-2. Sous **Sites**, cliquez sur **Sites actifs**.
-3. Cliquez sur le site associé à l’équipe.
-4. Sous l’onglet **Stratégies**, sous **Partage externe**, cliquez sur **Modifier**.
-5. Sous Type de lien de partage par défaut, désactivez la case à cocher **Identique au paramètre de niveau organisation**, puis sélectionnez **Personnes disposant d’un accès existant**.
-6. Cliquez sur **Enregistrer**.
+1. Ouvrez le Centre d’administration SharePoint et, sous **Sites**, sélectionnez <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sites actifs**</a>.
+1. Sélectionnez le site associé à l’équipe.
+1. Sous l’onglet **Stratégies**, sous **Partage externe**, cliquez sur **Modifier**.
+1. Sous Type de lien de partage par défaut, désactivez la case à cocher **Identique au paramètre de niveau organisation**, puis sélectionnez **Personnes disposant d’un accès existant**.
+1. Sélectionnez **Enregistrer**.
 
 #### <a name="private-channels"></a>Canaux privés
 

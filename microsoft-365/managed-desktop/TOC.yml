@@ -112,16 +112,23 @@
           href: get-started/localization.md
         - name: Valider les nouveaux appareils
           href: get-started/validate-device.md
-        - name: Configurer les appareils
-          href: get-started/set-up-devices.md
+        - name: Préparer vos appareils
+          href: null
           items:
-            - name: Inscrivez vous-même les nouveaux appareils
-              href: get-started/register-devices-self.md
+            - name: Prise en main
+              href: get-started/prepare-devices.md
+            - name: Inscription de l’appareil
+              href: null
               items:
-                - name: Procédure permettant aux partenaires d’inscrire des appareils
-                  href: get-started/register-devices-partner.md
-            - name: Inscrivez vous-même les appareils existant
-              href: get-started/register-reused-devices-self.md
+                - name: Méthodes d’inscription des appareils
+                  href: get-started/device-registration-methods.md
+                  items:
+                    - name: Inscription manuelle
+                      href: get-started/manual-registration.md
+                    - name: Inscription du partenaire
+                      href: get-started/partner-registration.md
+                    - name: Inscription manuelle pour les appareils existants
+                      href: get-started/manual-registration-existing-devices.md
         - name: Activer les fonctionnalités de support utilisateur
           href: get-started/enable-support.md
         - name: Préparer vos utilisateurs à l’utilisation des appareils
@@ -184,5 +191,5 @@
               href: working-with-managed-desktop/config-setting-deploy.md
         - name: Prévisualiser et tester Windows 11 avec Microsoft Managed Desktop
           href: working-with-managed-desktop/test-win11-mmd.md
-    - name: Historique des modifications de la documentation relative au Bureau géré Microsoft
+    - name: Historique des modifications
       href: change-history-managed-desktop.md

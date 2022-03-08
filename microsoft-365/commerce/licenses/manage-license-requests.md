@@ -2,11 +2,11 @@
 title: Gérer les demandes de licence
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: micurn, nicholak
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -14,30 +14,30 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_licensing
 - MACBillingLicensesRequests
 - AdminSurgePortfolio
-- commerce_licensing
 search.appverid: MET150
 description: Découvrez comment examiner et approuver ou refuser les demandes de licence des utilisateurs pour votre abonnement Microsoft 365 entreprise.
 ms.date: 06/07/2021
-ms.openlocfilehash: 279894f8e6ffb3209a1b4f2a5201e62428f33b83
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7932383afe109e707a5c35914e50c665d0bf1885
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179666"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321472"
 ---
 # <a name="manage-license-requests"></a>Gérer les demandes de licence
 
 > [!NOTE]
-> Les informations de cet article s’appliquent uniquement aux produits achetés en libre-service. Pour en savoir plus, consultez [le FAQ sur l’achat en libre-service.](../subscriptions/self-service-purchase-faq.yml)
+> Les informations de cet article s’appliquent uniquement aux produits achetés en libre-service. Pour en savoir plus, consultez [le FAQ sur les achats en libre-service](../subscriptions/self-service-purchase-faq.yml).
 
 Si vous désactivez les achats en libre-service dans votre organisation, vous pouvez utiliser les demandes de licences pour gérer le processus de demande de licence pour vos utilisateurs. Lorsqu’un utilisateur tente d’effectuer un achat en libre-service pour un produit que vous avez bloqué, il peut soumettre une demande de licence à vous, l’administrateur. Lorsqu’ils font une demande, ils peuvent ajouter les noms d’autres utilisateurs qui ont également besoin de licences pour le produit.
 
 > [!NOTE]
 > Si vous bloquez les utilisateurs d’effectuer des achats en libre-service, Microsoft ne leur envoie pas de courriers électroniques marketing. En outre, s’ils utilisent une version d’essai d’un produit, ils ne voient pas d’invite pour l’acheter. Pour plus d’informations, voir [Gérer les achats en libre-service (administrateur).](../subscriptions/manage-self-service-purchases-admins.md)
 
-Pour voir et gérer les demandes de licence, l’administrateur utilise **l’onglet Demandes** dans la page **Licences.** La liste affiche le nom du produit qui est demandé, le nom de la personne qui demande une licence, la date demandée et l’état de la demande. Les administrateurs peuvent filtrer la liste pour afficher les demandes en attente ou terminées. Les demandes sont maintenues pendant 30 jours.
+Pour voir et gérer les demandes de licence, l’administrateur utilise **l’onglet Demandes** sur la page **Licences** . La liste affiche le nom du produit qui est demandé, le nom de la personne qui demande une licence, la date demandée et l’état de la demande. Les administrateurs peuvent filtrer la liste pour afficher les demandes en attente ou terminées. Les demandes sont maintenues pendant 30 jours.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -48,32 +48,32 @@ Vous devez être un administrateur global pour effectuer les tâches de cet arti
 Si votre organisation possède son propre processus de demande, vous pouvez l’utiliser à la place. Vous créez un message qui s’affiche pour les utilisateurs lorsqu’ils demandent une licence.
 
 > [!IMPORTANT]
-> Si vous utilisez votre propre processus de demande, aucune demande n’est affichée sous **l’onglet Demandes.** Les demandes existantes avant l’ajout de votre message continuent d’apparaître jusqu’à ce que vous les approuviez ou les refusez.
+> Si vous utilisez votre propre processus de demande, aucune demande n’est affichée sous **l’onglet Demandes** . Les demandes existantes avant l’ajout de votre message continuent d’apparaître jusqu’à ce que vous les approuviez ou les refusez.
 
-1. Dans le Centre d’administration, allez à la page   >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences de facturation,</a> puis sélectionnez **l’onglet Demandes.**
-2. Sélectionnez **Utiliser votre processus de demande existant à la place.**
-3. Dans le volet droit, dans la zone **Message,** tapez le message que les utilisateurs doivent voir lorsqu’ils demandent une licence. Si vous souhaitez également inclure un lien vers la stratégie de votre organisation ou une autre documentation, entrez l’URL dans la zone de texte Lien vers la **documentation (facultatif).**
+1. Dans le centre d’administration, allez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a> > , puis sélectionnez **l’onglet Demandes**.
+2. **Sélectionnez Utiliser votre processus de demande existant à la place**.
+3. Dans le volet droit, dans la zone **Message** , tapez le message que les utilisateurs doivent voir lorsqu’ils demandent une licence. Si vous souhaitez également inclure un lien vers la stratégie de votre organisation ou une autre documentation, entrez l’URL dans la zone de texte Lien vers la **documentation (** facultative).
 4. Sélectionnez **Enregistrer**.
 
-Lorsque vous revenir à la liste **demandes,** vous voyez le message Que vous utilisez **votre propre processus** de demande de licence . Pour apporter des modifications au message envoyé aux utilisateurs, sélectionnez Utiliser votre processus **de demande existant à la place.**
+Lorsque vous revenir à la liste **demandes** , vous voyez le message **Que vous utilisez votre propre processus de demande de licence**. Pour apporter des modifications au message envoyé aux utilisateurs, sélectionnez Utiliser votre processus **de demande existant à la place**.
 
 ## <a name="stop-using-your-own-request-process"></a>Arrêter d’utiliser votre propre processus de demande
 
-1. Dans le Centre d’administration, allez à la page   >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences de facturation,</a> puis sélectionnez **l’onglet Demandes.**
-2. Sélectionnez **Utiliser votre processus de demande existant à la place.**
+1. Dans le centre d’administration, allez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a> > , puis sélectionnez **l’onglet Demandes**.
+2. **Sélectionnez Utiliser votre processus de demande existant à la place**.
 3. Dans le volet droit, cochez la case Utiliser le processus de demande de **mon** organisation.
 4. Sélectionnez **Enregistrer**.
 
 ## <a name="approve-or-deny-a-license-request"></a>Approuver ou refuser une demande de licence
 
-1. Dans le Centre d’administration, allez à la page   >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences de facturation,</a> puis sélectionnez **l’onglet Demandes.**
+1. Dans le centre d’administration, allez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a> > , puis sélectionnez **l’onglet Demandes**.
 2. Sélectionnez la ligne qui contient la demande à réviser. Le volet droit affiche des détails sur les utilisateurs qui souhaitent obtenir des licences pour le produit.
-3. Pour refuser l’intégralité de la demande, sélectionnez **N’approuvez pas** et, dans la boîte de dialogue, sélectionnez Ne **pas approuver.**
-4. Pour refuser la demande à certains utilisateurs, mais en approuver d’autres, sélectionnez le X par le nom des utilisateurs que vous souhaitez supprimer. Leurs noms sont déplacés sous **Ne pas affecter à ces utilisateurs.**
+3. Pour refuser l’intégralité de la demande, sélectionnez Ne pas **approuver** et, dans la boîte de dialogue, sélectionnez Ne **pas approuver**.
+4. Pour refuser certains utilisateurs de la demande, mais approuver d’autres, sélectionnez le X par le nom des utilisateurs que vous souhaitez supprimer. Leurs noms sont déplacés sous **Ne pas affecter à ces utilisateurs**.
 5. Si vous avez plusieurs produits, sous Sélectionner un **produit,** sélectionnez celui pour qui vous souhaitez attribuer des licences.
-6. Pour refuser l’accès des utilisateurs à certains services et applications, développez Activer ou désactiver les applications et **services,** puis cochez les cases de ceux que vous souhaitez exclure.
+6. Pour refuser l’accès des utilisateurs à certains services et applications, développez Activer ou désactiver les applications et **services**, puis cochez les cases de ceux que vous souhaitez exclure.
 7. En bas du volet, tapez un message facultatif dans la zone de texte.
-8. Lorsque vous avez terminé, sélectionnez **Approuver.** Le volet droit affiche les détails de la demande.
+8. Lorsque vous avez terminé, sélectionnez **Approuver**. Le volet droit affiche les détails de la demande.
 9. Fermez le volet droit.
     Les utilisateurs reçoivent un courrier électronique qui indique que leur demande a été approuvée ou refusée.
 

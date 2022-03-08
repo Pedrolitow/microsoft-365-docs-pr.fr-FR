@@ -13,23 +13,21 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6b345eb898b84de9f15772e11fdc92e1af5dde6a
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ab6a23d1f2c8893a86fb6432ab9fece95a10006c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167009"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322882"
 ---
 # <a name="understand-the-client-analyzer-html-report"></a>Comprendre le rapport HTML de l’analyseur client
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 L’analyseur client produit un rapport au format HTML. Découvrez comment consulter le rapport pour identifier les problèmes potentiels de capteur afin de pouvoir les résoudre.
 
@@ -51,11 +49,11 @@ Utilisez l’exemple suivant pour comprendre le rapport.
 
 -   Lors **de la vérification du résumé** des résultats, vous aurez un nombre agrégé d’erreurs, d’avertissements ou d’événements d’information détectés par l’analyseur.
 
--   Dans **résultats détaillés,** vous verrez une liste (triée par gravité) avec les résultats et les instructions basées sur les observations réalisées par l’analyseur.
+-   Dans **résultats détaillés** , vous verrez une liste (triée par gravité) avec les résultats et les instructions basées sur les observations réalisées par l’analyseur.
 
 ## <a name="open-a-support-ticket-to-microsoft-and-include-the-analyzer-results"></a>Ouvrir un ticket de support pour Microsoft et inclure les résultats de l’analyseur
 
-Pour inclure les fichiers de résultats de l’analyseur lors de l’ouverture d’un [ticket de support,](contact-support.md#open-a-service-request)veillez à utiliser la section **Pièces jointes** et à inclure le `MDEClientAnalyzerResult.zip` fichier :
+Pour inclure les fichiers de résultats de l’analyseur lors de l’ouverture d’un [ticket de support](contact-support.md#open-a-service-request), veillez à utiliser la section **Pièces jointes** et à inclure le `MDEClientAnalyzerResult.zip` fichier :
 
 ![Image de l’invite de pièce jointe.](images/508c189656c3deb3b239daf811e33741.png)
 

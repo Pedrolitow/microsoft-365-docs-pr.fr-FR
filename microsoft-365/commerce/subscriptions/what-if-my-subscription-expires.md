@@ -2,8 +2,8 @@
 title: Qu’arrive-t-il à mes données et à mon accès à la fin de mon abonnement ?
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,18 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_subscriptions
+- AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: Découvrez ce qu’il advient de vos données lorsque votre abonnement Microsoft 365 Business atteint sa date d’expiration, est désactivé, ou que vous procédez à sa résiliation.
 ms.date: 09/16/2021
-ms.openlocfilehash: 0f31665c64ca3c8ffee50069b607d27ffbf48d20
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 8baebd55217dd5cd38228cca26a7504e5021f06b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322565"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322182"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 Business ?
 
@@ -134,7 +134,7 @@ Les administrateurs et les utilisateurs n'ont plus accès aux services ou applic
 
 - **Acheter Microsoft 365.** Quand votre version d'évaluation arrive à expiration, elle passe au stade Expiré. Celle-ci vous offre un délai supplémentaire de 30 jours (pour la plupart des versions d'évaluation et dans la plupart des pays et régions) pour acheter Microsoft 365. Pour plus d’informations sur la conversion de votre version d’évaluation en abonnement payant, consultez [Acheter un abonnement à partir de votre version d’évaluation gratuite](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial).
 - **Prolongez votre version d'évaluation.** Vous avez besoin de davantage de temps pour évaluer Microsoft 365 ? Dans certains cas, vous pouvez [prolonger votre version d'évaluation](../extend-your-trial.md).
-- **Annuler la version d’évaluation ou la laisser expirer.** Si vous décidez de ne pas acheter Microsoft 365, vous pouvez laisser expirer ou [annuler](cancel-your-subscription.md) votre version d'évaluation. Veillez à sauvegarder les données que vous souhaitez conserver. Peu de temps après la phase expirée de 30 jours, les informations et les données de votre compte d'évaluation sont définitivement supprimées.
+- **Annulez la période d'essai ou laissez-la expirer.** Si vous décidez de ne pas acheter Microsoft 365, vous pouvez laisser votre version d'essai expirer ou [l'annuler](cancel-your-subscription.md). Sauvegardez les données que vous souhaitez conserver. Peu après la phase d'expiration de 30 jours, les informations et les données de votre compte d'essai sont définitivement effacées.
 
 > [!NOTE]
 >

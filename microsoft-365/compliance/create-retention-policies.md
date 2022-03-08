@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 115dcce1e99583ab0c3345da683be0b826b24ff7
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 37e94d43f2cfeab0e1135c42de34726ee5895714
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524068"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320590"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Utilisez une stratégie de rétention pour gérer les données de votre organisation en décidant de manière proactive s'il faut conserver le contenu, le supprimer ou le conserver puis le supprimer.
 
@@ -92,7 +92,7 @@ Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez égal
 
 5. Pour **Décider si vous souhaitez conserver le contenu, supprimez-le ou les deux** pages, spécifiez les options de configuration pour conserver et supprimer le contenu.
 
-   Vous pouvez créer une stratégie de rétention qui conserve uniquement le contenu sans le supprimer, conserve puis supprime le contenu après une période donnée, ou supprime simplement le contenu après une période donnée. Si vous souhaitez en savoir plus, voir [Paramètres pour la conservation et la suppression du contenu](retention-settings.md#settings-for-retaining-and-deleting-content).
+   Vous pouvez créer une politique de conservation qui se contente de conserver le contenu sans le supprimer, de le conserver puis de le supprimer après une période donnée ou de le supprimer après une période donnée. Pour plus d'informations, voir [Paramètres de conservation et de suppression du contenu](retention-settings.md#settings-for-retaining-and-deleting-content).
 
 6. Terminez l’assistant pour enregistrer vos paramètres.
 
@@ -156,7 +156,7 @@ Il est possible qu’une stratégie de conservation appliquée aux groupes Micro
 
 5. Pour **Décider si vous souhaitez conserver le contenu, supprimez-le ou les deux** pages, spécifiez les options de configuration pour conserver et supprimer le contenu. 
     
-    Vous pouvez créer une stratégie de rétention qui conserve uniquement le contenu sans le supprimer, conserve puis supprime le contenu après une période donnée, ou supprime simplement le contenu après une période donnée. Si vous souhaitez en savoir plus, voir [Paramètres pour la conservation et la suppression du contenu](retention-settings.md#settings-for-retaining-and-deleting-content).
+    Vous pouvez créer une politique de conservation qui se contente de conserver le contenu sans le supprimer, de le conserver puis de le supprimer après une période donnée ou de le supprimer après une période donnée. Pour plus d'informations, voir [Paramètres de conservation et de suppression du contenu](retention-settings.md#settings-for-retaining-and-deleting-content).
 
 6. Terminez l’assistant pour enregistrer vos paramètres.
 
@@ -164,7 +164,7 @@ Pour en savoir plus sur le fonctionnement des stratégies de rétention pour Yam
 
 #### <a name="additional-retention-policies-needed-to-support-yammer"></a>Stratégies de rétention supplémentaires requises pour la prise en charge de Yammer
 
-Yammer est bien plus que des messages de la communauté et des messages privés. Pour conserver et supprimer des courriers électroniques pour votre réseau Yammer, configurez une stratégie de rétention supplémentaire qui inclut les groupes Microsoft 365 utilisés pour Yammer, à l’aide de l'emplacement **Groupes Microsoft 365**. 
+Yammer est bien plus que des messages de la communauté et des messages privés. Pour conserver et supprimer des courriers électroniques pour votre réseau Yammer, configurez une stratégie de rétention supplémentaire qui inclut les groupes Microsoft 365 utilisés pour Yammer, à l’aide de l'emplacement **Groupes Microsoft 365**. 
 
 Pour conserver et supprimer des fichiers stockés dans Yammer, vous avez besoin d’une stratégie de rétention qui inclut l’emplacement des groupes **Microsoft 365** ou les **emplacements OneDrive comptes** :
 
@@ -204,7 +204,7 @@ Utilisez les instructions suivantes pour les stratégies de rétention qui s’a
 
 5. Pour **Décider si vous souhaitez conserver le contenu, supprimez-le ou les deux** pages, spécifiez les options de configuration pour conserver et supprimer le contenu.
     
-    Vous pouvez créer une stratégie de rétention qui conserve uniquement le contenu sans le supprimer, conserve puis supprime le contenu après une période donnée, ou supprime simplement le contenu après une période donnée. Si vous souhaitez en savoir plus, voir [Paramètres pour la conservation et la suppression du contenu](retention-settings.md#settings-for-retaining-and-deleting-content) sur cette page.
+    Vous pouvez créer une stratégie de rétention qui conserve uniquement le contenu sans le supprimer, conserve puis supprime le contenu après une période donnée, ou supprime simplement le contenu après une période donnée. Si vous souhaitez en savoir plus, consultez [Paramètres pour la conservation et la suppression du contenu](retention-settings.md#settings-for-retaining-and-deleting-content) sur cette page.
 
 6. Terminez l’assistant pour enregistrer vos paramètres.
 
@@ -214,15 +214,23 @@ Lorsque vous créez et soumettez une stratégie de rétention, l’application d
   
 ![Diagramme de l’application de la stratégie de rétention.](../media/retention-policy-timings.png)
 
-Tout d’abord, la stratégie de rétention doit être distribuée aux emplacements que vous avez sélectionnés, puis appliquée au contenu. Vous pouvez toujours vérifier l’état de distribution de la stratégie de rétention en la sélectionnant dans la page **Stratégies de rétention** dans le Centre de conformité. Dans le volet volant, si vous voyez l’état de **Désactivé (Erreur)** et, dans les détails des emplacements, un message indiquant que le déploiement de la stratégie (pour SharePoint) ou le redéploiement de la stratégie (pour OneDrive) prend plus de temps que prévu, essayez d’exécuter la [commande Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell pour réessayer la distribution de stratégie :
+Tout d’abord, la stratégie de rétention doit être distribuée aux emplacements que vous avez sélectionnés, puis appliquée au contenu. Vous pouvez toujours vérifier l’état de distribution de la stratégie de rétention en la sélectionnant dans la page **Stratégies de rétention** dans le Centre de conformité. Dans le volet volant, si vous voyez **(Error)** inclus dans l'état, et dans les détails des emplacements, un message indiquant que le déploiement de la stratégie prend plus de temps que prévu ou que vous devez essayer de redéployer la stratégie, essayez d'exécuter la commande PowerShell [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) ou [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) pour réessayer la distribution de la stratégie :
 
 1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 
-2. Exécutez la commande suivante :
+2. Exécutez une des commandes suivantes :
     
-    ```PowerShell
-    Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
-    ```
+    - Pour les emplacements de la politique **les messages du canal privé Teams**, **les messages d’utilisateurs Yammer** ainsi que **les messages de la communauté Yammer**:
+    
+        ```PowerShell
+        Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
+    
+    - Pour tous les autres emplacements de politique, tels que les **e-mails Exchange**, **les sites SharePoint**, **les messages du canal Teams**, etc :
+    
+        ```PowerShell
+        Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
 
 ## <a name="updating-retention-policies"></a>Mise à jour des stratégies de rétention
 

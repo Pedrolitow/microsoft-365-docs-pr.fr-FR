@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 81fdf04686f62acf3a2acce7e1bb400fe1d51aaa
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 2837b6009c143ea724d8c13d2548eeeca80e431d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62904072"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321318"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Étape 2. Corriger votre premier incident
 
@@ -44,7 +44,7 @@ Microsoft 365 Defender propose plusieurs actions de correction que les analystes
 
 - **Isoler** l’appareil : cette activité bloque immédiatement tout le trafic réseau (internet et interne) pour réduire la propagation des programmes malveillants et permettre aux analystes de poursuivre l’analyse sans qu’un acteur malveillant puisse poursuivre une attaque. La seule connexion autorisée est le cloud du service Microsoft Defender pour l’identité afin que Microsoft Defender pour l’identité puisse continuer à surveiller l’appareil. 
 - **Restreindre l’exécution** de l’application : pour empêcher l’exécution d’une application, une stratégie d’intégrité du code est appliquée, qui autorise uniquement l’exécution des fichiers s’ils sont signés par un certificat émis par Microsoft. Cette méthode de restriction permet d’empêcher une personne malveillante de contrôler des appareils compromis et d’effectuer d’autres activités malveillantes.
-- **Exécuter une analyse antivirus** : une analyse Antivirus Microsoft Defender peut s’exécuter avec d’autres solutions antivirus, que l’Antivirus Defender soit la solution antivirus active ou non. Si un autre produit fournisseur d’antivirus est la solution de protection de point de terminaison principale, vous pouvez exécuter l’Antivirus Defender en mode passif.
+- **Exécuter une analyse antivirus** : une analyse Antivirus Microsoft Defender peut s’exécuter avec d’autres solutions antivirus, que l’Antivirus Defender soit ou non la solution antivirus active. Si un autre produit fournisseur d’antivirus est la solution de protection de point de terminaison principale, vous pouvez exécuter l’Antivirus Defender en mode passif.
 - **Lancer une enquête automatisée** : vous pouvez démarrer une nouvelle enquête automatisée à usage général sur l’appareil. Pendant l’exécution d’un examen, toute autre alerte générée à partir de l’appareil est ajoutée à un examen automatisé en cours jusqu’à ce que l’examen soit terminé. En outre, si la même menace est vue sur d’autres appareils, ces appareils sont ajoutés à l’examen.
 - **Lancer une réponse en direct** : la réponse en direct est une fonctionnalité qui vous permet d’accéder instantanément à un appareil à l’aide d’une connexion Shell distante. Cela vous permet d’approfondir votre travail d’investigation et de prendre des mesures de réponse immédiates pour contenir rapidement les menaces identifiées en temps réel. La réponse dynamique est conçue pour améliorer les enquêtes en vous permettant de collecter des données d’investigation, d’exécuter des scripts, d’envoyer des entités suspectes pour analyse, de corriger les menaces et de chercher de manière proactive les menaces émergentes.
 - **Collecter un package d’examen** : dans le cadre du processus d’examen ou de réponse, vous pouvez collecter un package d’enquête à partir d’un appareil. En collectant le package d’examen, vous pouvez identifier l’état actuel de l’appareil et mieux comprendre les outils et techniques utilisés par l’attaquant. 
@@ -52,7 +52,7 @@ Microsoft 365 Defender propose plusieurs actions de correction que les analystes
 
 ## <a name="actions-on-files"></a>Actions sur les fichiers
 
-- **Arrêter et mettre en quarantaine un** fichier : cette action inclut l’arrêt des processus en cours d’exécution, la mise en quarantaine des fichiers et la suppression de données persistantes, telles que les clés de Registre. Cette action prend effet sur les appareils Windows 11 ou Windows 10, version 1703 ou ultérieure, où le fichier a été observé au cours des 30 derniers jours. 
+- **Arrêter et mettre en quarantaine un** fichier : cette action inclut l’arrêt des processus en cours d’exécution, la mise en quarantaine des fichiers et la suppression de données persistantes, telles que les clés de Registre. Cette action prend effet sur les appareils avec Windows 11 ou Windows 10, version 1703 ou ultérieure, où le fichier a été observé au cours des 30 derniers jours. 
 - **Ajoutez des indicateurs pour bloquer** ou autoriser les fichiers : empêchez toute propagation supplémentaire d’une attaque dans votre organisation en interdit les fichiers potentiellement malveillants ou les programmes malveillants suspects. Cette opération empêche la lecture, l’écriture ou l’exécution du fichier sur les appareils de votre organisation.
 - **Télécharger ou collecter un fichier** : cette action permet aux analystes de télécharger un fichier dans un fichier d’archive protégé .zip mot de passe pour une analyse plus approfondie par l’organisation.
 - **Analyse approfondie** : cette action exécute un fichier dans un environnement cloud sécurisé et entièrement instrumenté. Les résultats de l’analyse approfondie montrent les activités du fichier, les comportements observés et les artefacts associés, tels que les fichiers supprimés, les modifications du Registre et la communication avec les adresses IP. 
@@ -81,11 +81,11 @@ En outre, des corrections automatisées peuvent être créées à l’aide de ma
 - Demander une action du responsable avant de désactiver un compte
 - Désactiver les règles de boîte de réception malveillantes
 
-Les playbooks utilisent Power Automate créer des flux d’automatisation de processus automatisés personnalisés pour automatiser certaines activités une fois que des critères spécifiques ont été déclenchés. Les organisations peuvent créer des manuels à partir de modèles existants ou à partir de zéro. 
+Les playbooks utilisent Power Automate pour créer des flux d’automatisation de processus automatisés personnalisés afin d’automatiser certaines activités une fois que des critères spécifiques ont été déclenchés. Les organisations peuvent créer des manuels à partir de modèles existants ou à partir de zéro. 
 
 Voici un exemple.
  
-:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Exemple d’un flux Power Automate processus automatisé personnalisé."::: 
+:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Exemple de flux d Power Automate processus automatisé personnalisé."::: 
  
 Les playbooks peuvent également être créés lors de [la révision post-incident](first-incident-post.md) pour créer des actions de correction à partir d’incidents résolus. 
 

@@ -15,14 +15,14 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.collection: m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 8873a8f374280834970d14f72c2e6677292f7702
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: ea3e45a5469c9769f55f9ce90f799c54556de814
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807439"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322896"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Protéger les dossiers importants avec accès contrôlé aux dossiers
 
@@ -66,7 +66,7 @@ Les [dossiers protégés incluent les dossiers](#review-controlled-folder-access
 Vous pouvez utiliser le [mode audit pour](audit-windows-defender.md) évaluer l’impact de l’accès contrôlé aux dossiers sur votre organisation s’il était activé. Vous pouvez également consulter le site web Windows Defender test au [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que la fonctionnalité fonctionne et voir comment elle fonctionne.
 
 > [!NOTE]
-> Le site de démonstration Defender for Endpoint demo.wd.microsoft.com est supprimé et sera supprimé à l’avenir.
+> Le site de démonstration Defender pour point de terminaison sur demo.wd.microsoft.com est déconseillé et sera supprimé à l’avenir.
 
 L’accès contrôlé aux dossiers est pris en charge sur les versions suivantes de Windows :
 
@@ -139,7 +139,7 @@ Le tableau suivant indique les événements liés à l’accès contrôlé aux d
 
 Vous pouvez utiliser l’application Sécurité Windows pour afficher la liste des dossiers protégés par un accès contrôlé aux dossiers.
 
-1. Sur votre Windows 10 ou Windows 11, ouvrez l’application Sécurité Windows’application.
+1. Sur votre Windows 10 ou Windows 11, ouvrez l’Sécurité Windows app.
 2. Sélectionnez **Protection contre les virus et les menaces**.
 3. Sous Protection **contre les ransomware**, **sélectionnez Gérer la protection contre les ransomware**.
 4. Si l’accès contrôlé aux dossiers est désactivé, vous devez l’activer. **Sélectionnez les dossiers protégés**.

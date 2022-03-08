@@ -11,13 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: 7e5acdde2d60db88b68273d0f1158ae1694a523e
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 4a7a84023f3155c2b6f1405a3da5d8c5776d0047
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61559951"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322056"
 ---
 # <a name="push-content-types-to-a-hub"></a>Envoyer (push) des types de contenu à un hub
 
@@ -34,7 +35,7 @@ Pour que cette fonctionnalité soit opérationnelle, les types de contenu envoy�
 
 Pour envoyer (push) des types de contenu à un hub
 
-1. Dans le Centre d’administration SharePoint, développez **Services de contenu**, puis sélectionnez **Galerie de types de contenus**.
+1. Dans le Centre d’administration SharePoint, développez **services de contenu**, puis sélectionnez <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">**Galerie de types de contenu**</a>.
 2. Sélectionnez le type de contenu à envoyer (push) à des hubs.
 3. Sélectionnez **Modifier** dans la barre de commandes.
 4. Sélectionnez sur **Choisir les sites hub**.

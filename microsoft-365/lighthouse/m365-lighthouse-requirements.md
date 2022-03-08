@@ -15,18 +15,15 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Pour les fournisseurs de services gérés, obtenez la liste des conditions requises pour utiliser Microsoft 365 Lighthouse.
-ms.openlocfilehash: 8a502e056d570ef81e1bdb02321f0492c2b50395
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+description: Pour les fournisseurs de services gérés , obtenez la liste des conditions requises pour utiliser Microsoft 365 Lighthouse.
+ms.openlocfilehash: 51dd2404f03dc58d5975a37c386ba9c8f1333763
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371891"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327250"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Conditions requises pour Microsoft 365 Lighthouse
-
-> [!NOTE]
-> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux exigences répertoriées dans cet article. Si votre organisation n’a pas Microsoft 365 Lighthouse, [consultez s’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Microsoft 365 Lighthouse est un portail d’administration qui permet aux fournisseurs de services gérés (MSP) de sécuriser et de gérer les appareils, les données et les utilisateurs à grande échelle pour les petites et moyennes entreprises (SMB).  
 
@@ -34,20 +31,20 @@ Les MSP doivent être inscrits au programme fournisseur de solutions Cloud (CSP)
 
 En outre, chaque client MSP doit être éligible à l’aide de la sécurité en se contentant des conditions suivantes : 
  
-- Privilèges d’administrateur délégués (DAP) pour le MSP 
+- Privilèges d’administration délégués (DAP) ou privilèges d’administration délégués granulaires (GDAP) pour le MSP 
 - Au moins une licence Microsoft 365 Business Premium ou Microsoft 365 E3 licence 
-- Moins de 500 utilisateurs sous licence  
+- Moins de 1 000 utilisateurs sous licence  
 
-## <a name="requirements-for-enablingdevice-management"></a>Conditions requises pour l’activation de la gestion des appareils   
+## <a name="requirements-for-enablingdevice-management"></a>Conditions requises pour l’activation de la gestion des appareils
 
-Pour afficher les appareils clients sur les pages de gestion des appareils, un MSP doit :    
+Pour afficher les appareils clients sur les pages de gestion des appareils, un MSP doit :
 
 - Inscrire tous les appareils clients dans Microsoft Endpoint Manager (MEM).Pour plus d’informations, voir [Inscrire des appareils dans Microsoft Intune](/mem/intune/enrollment/).
-- Affecter des stratégies de conformité à tous les appareils clients.Pour plus d’informations, [voir Créer une stratégie de conformité dans Microsoft Intune](/mem/intune/protect/create-compliance-policy). 
+- Affecter des stratégies de conformité à tous les appareils clients.Pour plus d’informations, voir [Créer une stratégie de conformité dans Microsoft Intune](/mem/intune/protect/create-compliance-policy). 
 
 ## <a name="requirements-for-enabling-usermanagement"></a>Conditions requises pour l’activation de la gestion des utilisateurs 
 
-Pour que les données client s’afficheront dans les rapports sur les pages de gestion des utilisateurs, y compris les utilisateurs à risque, l’authentification multifacteur et la réinitialisation du mot de passe, les clients doivent avoir des licences pour Azure Active Directory Premium P1 ou une ultérieure. Azure AD Premium P1 est inclus dans les Microsoft 365 Business Premium et Microsoft 365 E3.   
+Pour que les données client s’afficheront dans les rapports sur les pages de gestion des utilisateurs, y compris les utilisateurs à risque, l’authentification multifacteur et la réinitialisation du mot de passe, les clients doivent avoir des licences pour Azure Active Directory Premium P1 ou une licence ultérieure. Azure AD Premium P1 est inclus dans les Microsoft 365 Business Premium et Microsoft 365 E3.   
 
 ## <a name="requirements-for-enablingthreat-management"></a>Conditions requises pour activer la gestion des menaces 
 
@@ -60,11 +57,11 @@ Antivirus Microsoft Defender fait partie du système d Windows d’exploitation 
 > [!NOTE] 
 > Si vous utilisez une solution antivirus non Microsoft et que vous n’utilisez pas Antivirus Microsoft Defender, Antivirus Microsoft Defender est désactivé automatiquement. Lorsque vous désinstallez la solution antivirus non Microsoft, Antivirus Microsoft Defender est activé automatiquement pour protéger vos appareils Windows contre les menaces.    
 
-## <a name="related-content"></a>Contenu associé   
+## <a name="related-content"></a>Contenu associé
 
-[Configurer la Microsoft 365 Lighthouse du portail d’entreprise](m365-lighthouse-configure-portal-security.md) (article)\
+[Configurer la sécurité Microsoft 365 Lighthouse portail d’entreprise](m365-lighthouse-configure-portal-security.md) (article)\
 [Microsoft 365 Lighthouse vue d’ensemble de la page de conformité des](m365-lighthouse-device-compliance-page-overview.md) appareils (article)\
-[Microsoft 365 Lighthouse de la page Utilisateurs](m365-lighthouse-users-page-overview.md) (article)\
+[Microsoft 365 Lighthouse vue d’ensemble de la page Utilisateurs](m365-lighthouse-users-page-overview.md) (article)\
 [Microsoft 365 Lighthouse de la page Gestion des menaces](m365-lighthouse-threat-management-page-overview.md) (article)\
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml)   (article)
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
 

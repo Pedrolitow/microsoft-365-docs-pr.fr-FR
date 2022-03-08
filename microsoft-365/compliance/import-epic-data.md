@@ -13,13 +13,13 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur de données pour importer des données d’enregistrements de santé électroniques (EHR) à partir du système de Contrôle de votre organisation vers Microsoft 365. Cela vous permet d’utiliser des données EHR dans les stratégies de gestion des risques internes pour vous aider à détecter l’activité d’accès non autorisé aux données des patients par vos employés.
-ms.openlocfilehash: 0da7386aa2b230492fedd5fdac5477d204aa63a8
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+description: Les administrateurs peuvent configurer un connecteur de données pour importer des données d’enregistrements de santé électroniques (EHR) à partir du système de contrôle d’accès de votre organisation Microsoft 365. Cela vous permet d’utiliser des données EHR dans les stratégies de gestion des risques internes pour vous aider à détecter l’activité d’accès non autorisé aux données des patients par vos employés.
+ms.openlocfilehash: 364d172b35411bd532d781eafc6e8a59c1339ce7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321122"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311772"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Configurer un connecteur pour importer les données d’audit EHR d’Ehr (prévisualisation)
 
@@ -31,7 +31,7 @@ La configuration d’un connecteur de Connecteur comprend les tâches suivantes 
 
 - Création d’un fichier texte avec tous les champs requis tels que définis dans le schéma du connecteur.
 
-- Création d’une instance de connecteur Dent dans le Centre de conformité Microsoft 365.
+- Création d’une instance de connecteur Connecteur de connecteur dans le Centre de conformité Microsoft 365.
 
 - Exécution d’un script pour pousser les enregistrements d’audit EHR d’Ehr vers le point de terminaison de l’API.
 
@@ -39,7 +39,7 @@ La configuration d’un connecteur de Connecteur comprend les tâches suivantes 
 
 ## <a name="before-you-set-up-the-connector"></a>Avant de configurer le connecteur
 
-- Le rôle Importation/Exportation de boîte aux lettres doit être attribué à l’utilisateur qui crée le connecteur Connecteur à l’étape 3 Exchange Online. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, [](/Exchange/permissions-exo/role-groups#create-role-groups) voir [les sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ».
+- Le rôle d’administrateur du connecteur de données doit être attribué à l’utilisateur qui crée le connecteur de Connecteur de données à l’étape 3. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le Centre de conformité Microsoft 365. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et conformité » dans Autorisations dans le Centre de sécurité [& conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le Centre de conformité Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - Vous devez déterminer comment récupérer ou exporter les données à partir du système EHR de Votre organisation (quotidiennement) et créer un fichier texte décrit à l’étape 2. Le script que vous exécutez à l’étape 4 envoie les données du fichier texte au point de terminaison de l’API.
 
@@ -51,11 +51,11 @@ La première étape consiste à créer et inscrire une nouvelle application dans
 
 - Azure AD’ID d’application (également appelé *ID* d’application ou *ID client*)
 
-- Azure AD’application secrète (également appelée *la secret client*)
+- Azure AD secrète de l’application (également appelée *secret client*)
 
 - ID de client (également appelé *ID d’annuaire*)
 
-Pour obtenir des instructions détaillées sur la création d’une application dans Azure AD, voir Enregistrer une application avec le [Plateforme d'identités Microsoft](\azure\active-directory\develop\quickstart-register-app).
+Pour obtenir des instructions détaillées sur la création d’une application dans Azure AD, voir [Enregistrer une application](\azure\active-directory\develop\quickstart-register-app) avec le Plateforme d'identités Microsoft.
 
 ## <a name="step-2-prepare-a-text-file-with-epic-ehr-audit-records"></a>Étape 2 : Préparer un fichier texte avec les enregistrements d’audit EHR d’Ehr
 
@@ -66,7 +66,7 @@ L’étape suivante consiste à créer un fichier texte qui contient des informa
 
 Le tableau suivant répertorie les champs requis pour activer les scénarios de gestion des risques internes. Un sous-ensemble de ces champs est obligatoire. Ces champs sont mis en surbrill plan avec un astérisque (*). Si l’un des champs obligatoires est manquant dans le fichier texte, le fichier n’est pas validé et les données du fichier ne sont pas importées.
 
-|Field|Catégorie|
+|Champ|Catégorie|
 |:----|:----------|
 | ACCESS_LOG. *<br/>ACCESS_TIME ACCESS_LOG_METRIC. METRIC_NAME*<br/>ACCESS_LOG. WORKSTATION_ID<br/>ZCMETRIC\_\_ GROUP.NAME<br/>ZCACCESS\_\_ ACTION.NAME |Ces champs sont utilisés pour identifier les événements d’activité d’accès dans votre système EHR d’Ehr d’Ehr.|
 | PATIENT. PAT_MRN_ID<br/>PATIENT. PAT_FIRST_NAME* <br/>PATIENT. PAT_MIDDLE_NAME <br/>PATIENT. PAT_LAST_NAME* <br/>PATIENT. ADD_LINE_1* <br/>PATIENT. ADD_LINE_2  <br/>PATIENT. CITY* <br/>PATIENT.ZIP*  <br/>ZC_STATE.NAME <br/>ZC_COUNTRY.NAME <br/>CLARITY_DEP. DEPARTMENT_NAME              | Ces champs sont utilisés pour identifier les informations de profil de patient.|
@@ -90,7 +90,7 @@ L’étape suivante consiste à créer un connecteur Connecteur dans le Centre d
 
 4. Dans la page **Configuration de la connexion** , faites ce qui suit, puis cliquez sur **Suivant** :
 
-    1. Tapez ou collez l Azure AD’application pour l’application Azure que vous avez créée à l’étape 2.
+    1. Tapez ou collez Azure AD’ID d’application pour l’application Azure que vous avez créée à l’étape 2.
 
     2. Tapez un nom pour le connecteur Connecteur de Connecteur.
 
@@ -145,9 +145,9 @@ Le tableau suivant décrit les paramètres à utiliser avec ce script et leurs v
 
 |Paramètre  |Description|
 |:----------|:----------|
-|tenantId|Il s’agit de l’ID de votre Microsoft 365 que vous avez obtenu à l’étape 1. Vous pouvez également obtenir l’ID de locataire de votre organisation  dans le panneau Vue d’ensemble du centre d Azure AD’administration. Il est utilisé pour identifier votre organisation.|
+|tenantId|Il s’agit de l’ID de votre Microsoft 365 que vous avez obtenu à l’étape 1. Vous pouvez également obtenir l’ID de locataire de votre organisation dans le panneau **Vue** d’ensemble du centre Azure AD’administration. Il est utilisé pour identifier votre organisation.|
 |appId|Il s’agit Azure AD’ID d’application pour l’application que vous avez créée Azure AD l’étape 1. Il est utilisé par les Azure AD pour l’authentification lorsque le script tente d’accéder à Microsoft 365 organisation.|
-|appSecret|Il s’agit de la Azure AD’application secrète de l’application que vous avez créée Azure AD l’étape 1. Cette fonction est également utilisée pour l’authentification.|
+|appSecret|Il s’agit de Azure AD’application secrète pour l’application que vous avez créée Azure AD l’étape 1. Cette fonction est également utilisée pour l’authentification.|
 |jobId|Il s’agit de l’ID de travail pour le connecteur Connecteur de Connecteur que vous avez créé à l’étape 3. Il permet d’associer les enregistrements d’audit EHR d’Ehr d’Ehr qui sont téléchargés vers le cloud Microsoft au connecteur de Connecteur de Connecteur.|
 |filePath|Il s’agit du chemin d’accès au fichier texte (stocké sur le même système que le script) que vous avez créé à l’étape 2. Essayez d’éviter les espaces dans le chemin d’accès du fichier . sinon, utilisez des guillemets simples.|
 |||
@@ -158,7 +158,7 @@ Voici un exemple de syntaxe pour le script Connecteur de Connecteur à l’aide 
 .\EpicConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -filePath 'C:\Users\contosoadmin\Desktop\Data\epic_audit_records.txt'
 ```
 
-Si le chargement réussit, le script affiche le message **Télécharger réussite**.
+Si le téléchargement réussit, le script affiche le message **Télécharger** réussite.
 
 > [!NOTE]
 > Si vous avez des problèmes lors de l’exécution de la commande précédente [](/powershell/module/microsoft.powershell.core/about/about_execution_policies) en raison des stratégies d’exécution, voir À propos des stratégies d’exécution et [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy) pour obtenir des instructions sur la définition des stratégies d’exécution.

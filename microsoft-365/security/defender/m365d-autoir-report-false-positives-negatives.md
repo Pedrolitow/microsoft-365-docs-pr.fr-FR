@@ -1,6 +1,6 @@
 ---
 title: Corriger les faux positifs ou les faux négatifs dans Microsoft 365 Defender
-description: Un problème a-t-il été manqué ou détecté à tort par AIR Microsoft 365 Defender ? Découvrez comment soumettre des faux positifs ou des faux négatifs à Microsoft pour analyse.
+description: Un problème a-t-il été manqué ou détecté à tort par AIR dans Microsoft 365 Defender ? Découvrez comment soumettre des faux positifs ou des faux négatifs à Microsoft pour analyse.
 keywords: automatisé, examen, alerte, correction, faux positif, faux négatif
 search.appverid: met150
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,15 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: how-to
-ms.custom: autoir
+ms.custom:
+- autoir
+- admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: df2effa41977624530b5f9ea8881f7f5aaeef82f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 67246d7f7876457e6553818b469987a2b5a59eb0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209104"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321792"
 ---
 # <a name="address-false-positives-or-false-negatives-in-microsoft-365-defender"></a>Corriger les faux positifs ou les faux négatifs dans Microsoft 365 Defender
 
@@ -47,27 +49,27 @@ Les sections suivantes décrivent comment effectuer ces tâches.
 
 |Élément manqué ou détecté de manière erronée |Service  |Procédure  |
 |---------|---------|---------|
-|- Message électronique <br/>- Pièce jointe d’un e-mail <br/>- URL dans un message électronique<br/>- URL dans un fichier Office de données      |[Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[Soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et de fichiers à Microsoft pour analyse](../office-365-security/admin-submission.md)         |
+|- Message électronique <br/>- Pièce jointe d’un e-mail <br/>- URL dans un message électronique<br/>- URL dans un fichier Office de données      |[Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[Soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et de fichiers à Microsoft pour analyse](../office-365-security/admin-submission.md)         |
 |Fichier ou application sur un appareil    |[Microsoft Defender pour point de terminaison](/windows/security/threat-protection)         |[Envoyer un fichier à Microsoft pour analyse des programmes malveillants](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Ajuster une alerte pour éviter que les faux positifs ne se répètent
 
 |Scénario |Service |Procédure |
 |--------|--------|--------|
-|- Une alerte est déclenchée par un usage légitime <br/>- Une alerte est inexacte    |[Microsoft Cloud App Security](/cloud-app-security)<br/> ou <br/>[Protection Azure contre les menaces](/azure/security/fundamentals/threat-detection)         |[Gérer les alertes dans le portail Sécurité des applications cloud web](/cloud-app-security/managing-alerts)         |
-|Un fichier, une adresse IP, une URL ou un domaine est traité comme un programme malveillant sur un appareil, même s’il est sûr|[Microsoft Defender pour point de terminaison](/windows/security/threat-protection) |[Créer un indicateur personnalisé avec une action « Autoriser »](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
+|- Une alerte est déclenchée par un usage légitime <br/>- Une alerte est inexacte    |[Microsoft Defender for Cloud Apps](/cloud-app-security)<br/> ou <br/>[Protection Azure contre les menaces](/azure/security/fundamentals/threat-detection)         |[Gérer les alertes dans le portail Defender pour les applications cloud](/cloud-app-security/managing-alerts)         |
+|Un fichier, une adresse IP, une URL ou un domaine est traité comme un programme malveillant sur un appareil, même s’il est sécurisé|[Microsoft Defender pour point de terminaison](/windows/security/threat-protection) |[Créer un indicateur personnalisé avec une action « Autoriser »](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>Annuler une action de correction qui a été prise sur un appareil
 
 Si une action de correction a été entreprise sur une entité (par exemple, un appareil ou un message électronique) et que l’entité concernée n’est pas réellement une menace, votre équipe des opérations de sécurité peut annuler l’action de correction dans le centre de [correction.](m365d-action-center.md)
 
-1. Accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous. 
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in. 
 2. Dans le volet de navigation, choisissez **Centre de notifications**. 
 3. Sous **l’onglet** Historique, sélectionnez une action à annuler. Son volet volant s’ouvre.
-4. Dans le volet volant, sélectionnez **Annuler.**
+4. Dans le volet volant, sélectionnez **Annuler**.
 
 > [!TIP]
-> Voir [Annuler les actions terminées.](m365d-autoir-actions.md#undo-completed-actions)
+> Voir [Annuler les actions terminées](m365d-autoir-actions.md#undo-completed-actions).
 
 ## <a name="see-also"></a>Voir aussi
 

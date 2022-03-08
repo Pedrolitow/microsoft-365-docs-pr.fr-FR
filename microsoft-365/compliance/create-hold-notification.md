@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Utilisez l’outil Communications dans Advanced eDiscovery cas pour envoyer, collecter et suivre des notifications de mise en attente légale.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3d4f8529486a4e17a1c21cc861b8d3694e6486c7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5c0bda35ffe2547e1c30b4bbf0a6c7d0d0563b7b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158225"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315655"
 ---
 # <a name="create-a-legal-hold-notice"></a>Créer une notification de non-droit
 
@@ -36,40 +36,38 @@ Cet article décrit les étapes du flux de travail de notification de mise en at
 
 La première étape consiste à spécifier les détails appropriés pour les notifications de conservation légale ou d’autres communications de dépositaire.
 
-![Page Communication de nom.](../media/NameCommunication.PNG)
+![Page Communication du nom.](../media/NameCommunication.PNG)
 
 1. Dans la Centre de conformité Microsoft 365, go to **eDiscovery > Advanced** to display the list of cases in your organization.
 
-2. Sélectionnez un cas, cliquez sur **l’onglet Communications,** puis sur **Nouvelle communication.**
+2. Sélectionnez un cas, cliquez sur **l’onglet Communications** , puis sur **Nouvelle communication**.
 
-3. Dans la page **Communication de** nom, spécifiez les détails de communication suivants (obligatoires).
+3. Dans la page **Communication de nom** , spécifiez les paramètres de communication suivants.
 
-    - **Nom**: il s’agit du nom de la communication.
+    - **Nom** : il s’agit du nom de la communication.
 
-    - **Responsable de l’émission**: la liste de listes listes affiche la liste des membres de cas. Pour plus d’informations sur l’ajout de nouveaux membres à un cas, voir [Créer un Advanced eDiscovery cas.](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) Chaque avis envoyé aux dépositaires sera envoyé au nom du responsable de l’émission spécifié.
+    - **Responsable de l’émission** : la liste de listes listes affiche les utilisateurs de votre organisation qui peuvent être sélectionnés comme responsables de l’émission pour la communication. Chaque communication envoyée aux dépositaires sera envoyée au nom du responsable de l’émission sélectionné. La liste des utilisateurs dans la liste est constituée des membres du cas et des responsables de l’émission à l’échelle de l’organisation. Ces responsables de l’émission sont ajoutés par un administrateur eDiscovery et sont disponibles dans tous Advanced eDiscovery cas de votre organisation. Pour plus d’informations, [voir Gérer les responsables de l’émission](advanced-ediscovery-issuing-officers.md).
 
-> [!NOTE]
-> Le responsable de l’émission doit avoir une boîte **aux lettres active** pour s’afficher dans la boîte aux lettres du responsable de l’émission.
-
+    - **Select communication template**: The drop-down list displays the templates from the Communications library on the Advanced eDiscovery settings page. Si vous sélectionnez un modèle, il s’affichera sur  le contenu du portail Définir comme point de départ pour le texte de la notification que vous créez. Si vous ne sélectionnez pas de modèle, vous devez créer l’avis vous-même à partir de zéro. Pour plus d’informations sur les modèles de communication, voir [Gérer les modèles de communications des dépositaires](advanced-ediscovery-communications-library.md).
 
 4. Cliquez sur **Suivant**.
 
 ## <a name="step-2-define-the-portal-content"></a>Étape 2 : Définir le contenu du portail
 
-Ensuite, vous pouvez créer et ajouter le contenu de l’avis de attente. Dans la page **Définir le contenu du portail** dans l’Assistant Créer une **communication,** spécifiez le contenu de l’avis de attente. Ce contenu est automatiquement intégré aux notifications d’émission, de ré émission, de rappel et d’escalade. En outre, ce contenu s’affiche dans le portail de conformité du dépositaire.
+Ensuite, vous pouvez créer et ajouter le contenu de l’avis de attente. Dans la page **Définir le contenu du portail** dans l’Assistant Créer **une communication** , spécifiez le contenu de l’avis de attente. Ce contenu est automatiquement appendé aux notifications d’émission, de ré-émission, de rappel et d’escalade. En outre, ce contenu s’affiche dans le portail de conformité du dépositaire. Si vous avez sélectionné un modèle dans la bibliothèque communications, il s’affiche et fournit un point de départ pour l’avis que vous créez.
 
-![Page de contenu du portail.](../media/PortalContent.PNG)
+![Page Contenu du portail.](../media/PortalContent.PNG)
 
 Pour créer le contenu du portail :
 
-1. Tapez (ou coupez-collez à partir d’un autre document) votre avis de non-attente dans la boîte de texte du contenu du portail.
+1. Tapez (ou coupez-collez à partir d’un autre document) votre avis de non-attente dans la boîte de texte du contenu du portail. Si vous avez sélectionné un modèle de communication dans la page précédente de l’Assistant, le modèle s’affiche. Vous pouvez modifier le contenu du modèle si nécessaire.
 
 2. Insérez des variables de fusion dans votre avis pour personnaliser l’avis et partager le portail de conformité des dépositaires.
 
 3. Cliquez sur **Suivant**.
 
   > [!TIP]
-  > Pour en savoir plus sur la façon de personnaliser le contenu et le format du contenu du portail, voir [Utiliser l’éditeur de communications.](using-communications-editor.md)
+  > Pour en savoir plus sur la façon de personnaliser le contenu et le format du contenu du portail, voir [Utiliser l’éditeur de communications](using-communications-editor.md).
 
 ## <a name="step-3-set-the-required-notifications"></a>Étape 3 : Définir les notifications requises
 
@@ -83,9 +81,9 @@ Une fois la communication créée, la **notification d’émission** est initié
 
 Pour créer une notification d’émission :
 
-1. Dans la vignette **Émission,** cliquez sur **Modifier.**
+1. Dans la vignette **Émission** , cliquez sur **Modifier**.
 
-2. Si nécessaire, ajoutez des membres de cas ou du personnel supplémentaires aux **champs Cc** et **Cci.** Pour ajouter plusieurs utilisateurs à ces champs, séparez les adresses de messagerie par un point-virgule.
+2. Si nécessaire, ajoutez des membres de cas ou du personnel supplémentaires aux **champs Cc** et **Cci** . Pour ajouter plusieurs utilisateurs à ces champs, séparez les adresses de messagerie par un point-virgule.
 
 3. Spécifiez **l’objet** de l’avis (obligatoire).
 
@@ -95,22 +93,22 @@ Pour créer une notification d’émission :
 
 ### <a name="re-issuance-notification"></a>Re-Issuance notification
 
-Au fur et à mesure de la progression du cas, les dépositaires peuvent être tenus de conserver des données supplémentaires ou inférieures aux instructions précédemment. Une fois que vous avez mis à jour le contenu du portail, la notification de nouvelle émission est envoyée et avertit les dépositaires des modifications apportées à leurs obligations de conservation.
+Au fur et à mesure de l’avancement du cas, les dépositaires peuvent être tenus de conserver des données supplémentaires ou inférieures aux instructions précédemment. Une fois que vous avez mis à jour le contenu du portail, la notification de réédité est envoyée et avertit les dépositaires des modifications apportées à leurs obligations de conservation.
 
-Pour créer une notification de nouvelle émission :
+Pour créer une notification de réédité :
 
-1. Dans la **vignette Réédition,** cliquez sur **Modifier.**
+1. Dans la **vignette Réédition** , cliquez sur **Modifier**.
 
-2. Si nécessaire, ajoutez des membres de cas ou du personnel supplémentaires aux **champs Cc** et **Cci.** Pour ajouter plusieurs utilisateurs à ces champs, séparez les adresses de messagerie par un point-virgule.
+2. Si nécessaire, ajoutez des membres de cas ou du personnel supplémentaires aux **champs Cc** et **Cci** . Pour ajouter plusieurs utilisateurs à ces champs, séparez les adresses de messagerie par un point-virgule.
 
 3. Spécifiez **l’objet** de l’avis (obligatoire).
 
-4. Spécifiez le contenu ou les instructions supplémentaires que vous souhaitez fournir au dépositaire (obligatoire). Le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis de nouvelle émission.
+4. Spécifiez le contenu ou les instructions supplémentaires que vous souhaitez fournir au dépositaire (obligatoire). Le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis de réédité.
 
 5. Cliquez sur **Enregistrer**.
 
 > [!NOTE]
-> Si le contenu du portail est modifié (dans la **page** Définir le contenu du portail dans l’Assistant Modifier la **communication),** la notification de rééd émission est automatiquement envoyée à tous les dépositaires affectés à l’avis. Une fois la notification envoyée, les dépositaires sont invités à ré-accusé de réception de leur notification de conservation. Si vous avez mis en place des flux de travail de rappel ou d’escalade, ceux-ci seront également ré-démarrer. Pour plus d’informations sur les autres événements de gestion de cas qui déclenchent des communications, voir [Événements qui déclenchent des notifications.](#events-that-trigger-notifications)
+> Si le contenu du portail est modifié (dans **la page Définir** le contenu du portail dans l’Assistant Modifier la **communication** ), la notification de rééd émission est automatiquement envoyée à tous les dépositaires affectés à l’avis. Une fois la notification envoyée, les dépositaires sont invités à ré-accusé de réception de leur notification de conservation. Si vous avez mis en place des flux de travail de rappel ou d’escalade, ceux-ci seront également de nouveau démarrer. Pour plus d’informations sur les autres événements de gestion de cas qui déclenchent des communications, voir [Événements qui déclenchent des notifications](#events-that-trigger-notifications).
 
 ### <a name="release-notification"></a>Notification de publication
 
@@ -118,9 +116,9 @@ Une fois qu’un problème est résolu ou si un dépositaire n’est plus soumis
 
 Pour créer une notification de publication :
 
-1. Dans la vignette **Release,** cliquez sur **Modifier.**
+1. Dans la vignette **Release** , cliquez sur **Modifier**.
 
-2. Si nécessaire, ajoutez des membres de cas ou du personnel supplémentaires aux **champs Cc** et **Cci.** Pour ajouter plusieurs utilisateurs à ces champs, séparez les adresses de messagerie par un point-virgule.
+2. Si nécessaire, ajoutez des membres de cas ou du personnel supplémentaires aux **champs Cc** et **Cci** . Pour ajouter plusieurs utilisateurs à ces champs, séparez les adresses de messagerie par un point-virgule.
 
 3. Spécifiez **l’objet** de l’avis (obligatoire).
 
@@ -140,9 +138,9 @@ Une fois que vous avez envoyé une notification de conservation, vous pouvez sui
 
 Pour planifier des rappels :
 
-1. Dans la vignette **Rappel,** cliquez sur **Modifier.**
+1. Dans la vignette **Rappel** , cliquez sur **Modifier**.
 
-2. Activez le **flux de** travail Rappel en **activé** le basculement d’état (obligatoire).
+2. Activez le **flux de travail Rappel** **en activé le** basculement d’état (obligatoire).
 
 3. Spécifiez **l’intervalle de rappel (en jours)** (obligatoire). Il s’agit du nombre de jours d’attente avant l’envoi de la première notification de rappel et du suivi. Par exemple, si vous définissez l’intervalle de rappel sur sept jours, le premier rappel sera envoyé sept jours après l’émission initiale de la notification de mise en attente. Tous les rappels suivants sont également envoyés tous les sept jours.
 
@@ -160,7 +158,7 @@ Dans certains cas, vous aurez peut-être besoin de moyens supplémentaires pour 
 
 Pour planifier des escalades :
 
-1. Dans la vignette **Escalade,** cliquez sur **Modifier.**
+1. Dans la vignette **Escalade** , cliquez sur **Modifier**.
 
 2. Activez le flux **de** travail d’escalade en activé **le** basculement d’état.
 
@@ -172,11 +170,11 @@ Pour planifier des escalades :
 
 6. Spécifiez le contenu ou les instructions supplémentaires que vous souhaitez fournir au dépositaire (obligatoire). Le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis d’escalade.
 
-7. Cliquez **sur Enregistrer** et allez à l’étape suivante.
+7. Cliquez **sur Enregistrer** et passer à l’étape suivante.
 
 ## <a name="step-5-assign-custodians-to-receive-notifications"></a>Étape 5 : Affecter des dépositaires pour recevoir des notifications
 
-Une fois que vous avez finalisé le contenu pour les notifications, sélectionnez les dépositaires à qui vous souhaitez envoyer des notifications.
+Une fois que vous avez finalisé le contenu des notifications, sélectionnez les dépositaires à qui vous souhaitez envoyer des notifications.
 
 ![Page Sélectionner les dépositaires.](../media/SelectCustodians.PNG)
 
@@ -193,7 +191,7 @@ Pour ajouter des dépositaires :
 
 ## <a name="step-6-review-settings"></a>Étape 6 : Examiner les paramètres
 
-Après avoir passé en  revue les paramètres et cliqué sur Envoyer pour terminer la communication, le système démarre automatiquement le flux de travail de communication en envoyant l’avis d’émission.
+Après avoir passé en revue les paramètres  et cliqué sur Envoyer pour terminer la communication, le système démarre automatiquement le flux de travail de communication en envoyant l’avis d’émission.
 
 ## <a name="events-that-trigger-notifications"></a>Événements qui déclenchent des notifications
 
@@ -202,7 +200,7 @@ Le tableau suivant décrit les événements dans le processus de gestion des cas
 |Type de communication|Déclencher |
 |:---------|:---------|
 |Avis d’émission|Création initiale de la notification. Vous pouvez également renvoyer manuellement une notification de mise en attente. |
-|Notifications de réé émission|Mise à jour du contenu du portail sur la page **Définir le** contenu du portail dans **l’Assistant Modifier la communication.**|
+|Notifications de réédité|Mise à jour du contenu du portail sur la page **Définir le contenu du** portail dans **l’Assistant Modifier la communication** .|
 |Avis de publication|Le dépositaire est libéré du cas.|
 |Reminders|Intervalle et nombre de rappels configurés pour le rappel.|
 |Escalades|Intervalle et nombre de rappels configurés pour l’escalade.|

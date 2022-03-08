@@ -1,18 +1,23 @@
 ---
 title: Préparer vos utilisateurs à l’utilisation des appareils
 description: Informations pour vous aider à préparer vos utilisateurs à utiliser des appareils
-keywords: 'Microsoft Manged Desktop, appareil, mise en Microsoft 365'
+keywords: Microsoft Manged Desktop, appareil, mise en Microsoft 365
 ms.service: m365-md
 author: tiaraquan
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
+ms.openlocfilehash: 02bcb482de675e94c9b7c4f8eec80aae2f943ebe
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323134"
 ---
-
 # <a name="get-your-users-ready-to-use-devices"></a>Préparer vos utilisateurs à l’utilisation des appareils
 
 Une fois qu Microsoft Manged Desktop appareil est entre les mains de votre utilisateur, la mise en main est rapide et facile. Les appareils sont pré-configurés avec la version actuelle de Windows et les configurations, et les applications sont installées à partir du cloud à mesure que l’utilisateur termine l’installation.
@@ -46,7 +51,7 @@ Téléchargez simplement [le Microsoft Manged Desktop - Commencer à utiliser vo
 1. Déployez et affectez le[Portail d’entreprise Intune](company-portal.md).
 1. [Attribuer des licences](assign-licenses.md).
 1. [Déployer des applications](deploy-apps.md).
-1. [Configurer les appareils](set-up-devices.md).
+1. [Préparez les appareils](prepare-devices.md).
 1. Configurez l’[Expérience de première exécution avec Autopilot et la page d’état d’inscription](esp-first-run.md).
 1. [Activer les fonctionnalités de support utilisateur](enable-support.md).
 1. Préparez vos utilisateurs à utiliser des appareils (cet article).

@@ -2,8 +2,8 @@
 title: Modifier l'adresse de votre organisation, le contact technique et d'autres informations de profil
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
@@ -15,25 +15,25 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- commerce_billing
 - AdminSurgePortfolio
-- commcerce_billing
 - AdminTemplateSet
 - admindeeplinkMAC
 search.appverid: MET150
 description: A apporter des modifications au profil de votre organisation, telles que le nom de l’organisation, l’adresse, le téléphone, le contact technique et le courrier électronique.
 ms.date: 02/11/2022
-ms.openlocfilehash: bec86787c3918bf794345178a15c9401bdc7ae06
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 4c5fdda4a2f089afc7e63a570290fdc08dc46440
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766595"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316644"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Modifier l'adresse de votre organisation, le contact technique et d'autres informations de profil
   
 Vous pouvez apporter des modifications au profil de votre organisation, telles que le nom, l’adresse, le téléphone et le contact technique de votre organisation. **Pour mettre à jour ces informations, vous devez être un administrateur général.**
   
-Pour modifier l’adresse associée à votre facture ou abonnement, voir [Modifier vos adresses de facturation pour Microsoft 365 entreprise](../../commerce/billing-and-payments/change-your-billing-addresses.md).
+Pour modifier l’adresse associée à votre facture ou à votre abonnement, consultez Modifier vos [adresses de facturation Microsoft 365 pour les entreprises](../../commerce/billing-and-payments/change-your-billing-addresses.md).
 
 ## <a name="change-organization-settings-for-cloud-pcs"></a>Modifier les paramètres d’organisation pour les PC cloud
 

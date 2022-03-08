@@ -9,19 +9,19 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: b5f52c1aee2586d325149c6656674fef16200773
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: 5668dcb0dd2b7f48a52fd2377dec3d666d17a013
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62444628"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315454"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Ajouter et vérifier des contacts d’administrateur dans le portail d’administration
 
 Il existe plusieurs façons Microsoft Manged Desktop service communique avec les clients. Pour simplifier la communication et nous assurer que nous vérifions avec les bonnes personnes, vous devez fournir un ensemble de contacts d’administrateur. Microsoft Manged Desktop les opérations ito-américaines contacteront ces personnes pour obtenir de l’aide pour résoudre les problèmes.
 
 > [!IMPORTANT]
-> Vous avez peut-être déjà ajouté ces contacts dans le portail d’administration. Si c’est le cas, prenez le temps de vérifier que la liste des contacts est exacte, Microsoft Manged Desktop être en  mesure de les joindre en cas d’incident grave.
+> Vous avez peut-être déjà ajouté ces contacts dans le portail d’administration. Si c’est le cas, prenez le temps de vérifier que la liste des contacts est exacte, Microsoft Manged Desktop être  en mesure de les joindre en cas d’incident grave.
 
 ## <a name="admin-contact-areas-of-focus"></a>Zones de contact d’administration prioritaires
 
@@ -31,9 +31,9 @@ Les contacts d’administrateur doivent être la meilleure personne ou le meille
 | ----- | ----- |
 | Empaquetage d’application | Résolution des problèmes d’empaquetage d’application. |
 | Appareils | L’état de l’appareil, la résolution des problèmes Microsoft Manged Desktop appareils. |
-| Sécurité | Résolution des problèmes de sécurité avec Microsoft Manged Desktop appareils. |
-| Service d’aide à l’information | Dans les cas où notre personnel de support remet des tickets d’utilisateur en dehors de Microsoft Manged Desktop les zones de support. |
-| Autres | Pour les problèmes non couverts par d’autres domaines. |
+| Sécurité | Résolution des problèmes de sécurité avec Microsoft Manged Desktop périphériques. |
+| Service d’aide à l’information | Dans les cas où notre personnel de support remet des tickets d’utilisateur en dehors de Microsoft Manged Desktop de support technique. |
+| Autre | Pour les problèmes non couverts par d’autres domaines. |
 
 > [!IMPORTANT]
 > **Toute personne que vous choisissez pour ces contacts doit avoir les connaissances et l’autorité nécessaires pour prendre des décisions pour Microsoft Manged Desktop environnement.**
@@ -61,7 +61,7 @@ Les contacts d’administrateur sont requis lorsque vous [envoyez une demande de
 1. Déployez et affectez le[Portail d’entreprise Intune](company-portal.md).
 1. [Attribuer des licences](assign-licenses.md).
 1. [Déployer des applications](deploy-apps.md).
-1. [Configurer les appareils](set-up-devices.md).
+1. [Préparez les appareils](Prepare-devices.md).
 1. Configurez l’[Expérience de première exécution avec Autopilot et la page d’état d’inscription](esp-first-run.md).
 1. [Activer les fonctionnalités de support utilisateur](enable-support.md).
 1. [Préparez vos utilisateurs à utiliser des appareils](get-started-devices.md).

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: Cet article vous montre comment diagnostiquer des problèmes courants avec votre site SharePoint Online à l’aide des outils de développement Internet Explorer.
-ms.openlocfilehash: acd5fc05f933e5d47b5bb14c2d3317ea3a6e0186
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: a3ad33b147a20cd5b072f7f3ccc1b9272a58ef54
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128735"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321500"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnostic des problèmes de performances avec SharePoint Online
 
@@ -38,9 +38,9 @@ Il existe quatre façons différentes d’identifier qu’une page d’un site S
 
 - Comparaison à une ligne de base non personnalisée
 
-- SharePoint d’en-tête de réponse en ligne
+- SharePoint en-tête de réponse en ligne
 
-Cette rubrique décrit comment utiliser chacune de ces méthodes pour diagnostiquer les problèmes de performances. Une fois que vous avez compris la cause du problème, vous pouvez travailler à une solution à l’aide des articles sur l’amélioration des performances SharePoint que vous pouvez trouver sur https://aka.ms/tune .  
+Cette rubrique décrit comment utiliser chacune de ces méthodes pour diagnostiquer les problèmes de performances. Une fois que vous avez compris la cause du problème, vous pouvez travailler à une solution à l’aide des articles sur l’amélioration des performances SharePoint que vous pouvez trouver sur https://aka.ms/tune.  
 
 ## <a name="use-the-site-and-page-performance-diagnostic-from-the-microsoft-365-admin-center"></a>Utiliser le diagnostic des performances du site et de la page à partir Administration Microsoft 365 site
 
@@ -48,6 +48,9 @@ Cette rubrique décrit comment utiliser chacune de ces méthodes pour diagnostiq
 > Si vous êtes un administrateur et que vous avez des difficultés avec les performances dans SharePoint, sélectionnez Exécuter les **tests** ci-dessous, qui remplit le diagnostic des performances du site et de la page dans le Centre Administration Microsoft 365. Ces tests vérifient votre configuration et recommandent rapidement les étapes suivantes pour améliorer SharePoint performances de votre client.
 >> [!div class="nextstepaction"]
 >> [Exécuter des tests : vérifier SharePoint performances](https://aka.ms/PillarSiteandPagePerf)
+
+> [!NOTE] 
+> Cette fonctionnalité n’est pas disponible pour Microsoft 365 administration, Microsoft 365 géré par 21Vianet ou Microsoft 365 Germany.
   
 ## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>Utilisation de la barre d’outils F12 pour diagnostiquer les performances dans SharePoint Online
 <a name="F12ToolInfo"> </a>
@@ -58,7 +61,7 @@ Dans cet article, nous utilisons Internet Explorer 11. Les versions des outils d
 
 - [Utilisation des outils de développement F12](/previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v=vs.85))
 
-Pour faire monter les outils de développement, appuyez **sur F12,** puis cliquez sur Wi-Fi icône :
+Pour faire monter les outils de développement, appuyez **sur F12** , puis cliquez sur Wi-Fi icône :
   
 ![Capture d’écran de l’icône Wifi des outils de développement F12.](../media/27acacbb-5688-459a-aa2f-5c8c5f17b76e.png)
   
@@ -68,7 +71,7 @@ Sous **l’onglet** Réseau, appuyez sur le bouton vert pour charger une page. L
   
 Vous pouvez également voir les heures de téléchargement des fichiers sur le côté droit, comme illustré dans cette capture d’écran.
   
-![Diagramme montrant le temps nécessaire au chargement des pages demandées à partir SharePoint.](../media/d71ad1fa-9018-4fae-82eb-c1838e7db0ff.png)
+![Diagramme montrant le temps nécessaire au chargement des pages demandées à partir de SharePoint.](../media/d71ad1fa-9018-4fae-82eb-c1838e7db0ff.png)
   
 Cela vous donne une représentation visuelle de la durée de chargement du fichier. La ligne verte représente le moment où la page est prête à être rendue par le navigateur. Cela peut vous donner un aperçu rapide des différents fichiers qui peuvent être à l’origine de chargements de page lents sur votre site.
   
@@ -84,15 +87,15 @@ Dans SharePoint Online, vous pouvez accéder aux informations renvoyées au navi
 
 ### <a name="to-view-sharepoint-response-header-information"></a>Pour afficher les SharePoint’en-tête de réponse
   
-1. Assurez-vous que les outils F12 sont installés. Pour plus d’informations sur le téléchargement et l’installation de ces outils, voir Nouveautés [des outils F12.](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85))
+1. Assurez-vous que les outils F12 sont installés. Pour plus d’informations sur le téléchargement et l’installation de ces outils, voir Nouveautés [des outils F12](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85)).
 
-2. Dans les outils F12, sous **l’onglet** Réseau, appuyez sur le bouton vert pour charger une page.
+2. Dans les outils F12, **sous l’onglet** Réseau, appuyez sur le bouton vert pour charger une page.
 
-3. Cliquez sur l’un des fichiers .aspx renvoyés par l’outil, puis cliquez sur **DÉTAILS.**
+3. Cliquez sur l’un des fichiers .aspx renvoyés par l’outil, puis cliquez sur **DÉTAILS**.
 
     ![Affiche les détails de l’en-tête de réponse.](../media/1f8a044a-caf8-4613-be2b-7e064141ac8a.png)
   
-4. Cliquez **sur En-têtes de réponse.**
+4. Cliquez sur **En-têtes de réponse**.
 
     ![Diagramme montrant l’URL de l’en-tête de réponse.](../media/efc7076e-447e-447e-882a-ae3aa721e2c3.png)
   
