@@ -14,16 +14,17 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Dans cet article, vous allez découvrir les meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés.
-ms.openlocfilehash: 40bf61820f28656e6f038e76f066e9b122b30177
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ffe1219c468deef8c78e51e410e862ec52532483
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149633"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323834"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés
 
@@ -42,21 +43,19 @@ Une fois qu' un lien *Tout le monde* arrive à expiration, il ne peut plus être
 
 Pour définir une date d’expiration pour les liens Tout le monde dans l’organisation
 
-1. Ouvrez le [Centre d’administration SharePoint](https://admin.microsoft.com/sharepoint).
-2. Dans le volet de navigation de gauche, développez **Stratégies**, puis cliquez sur **Partage**.
-3. Sous **Sélectionnez les options d’expiration et d’autorisations pour tous les liens**, sélectionnez la case à cocher **Ces liens doivent expirer dans ce nombre de jours**.</br>
+1. Ouvrez le Centre d’administration SharePoint, développez **Stratégies**, puis sélectionnez <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Partage**</a>.
+1. Sous **Sélectionnez les options d’expiration et d’autorisations pour tous les liens**, sélectionnez la case à cocher **Ces liens doivent expirer dans ce nombre de jours**.</br>
    ![Capture d’écran des paramètres d’expiration du lien Tout le monde au niveau de l’organisation dans Microsoft Office SharePoint Online.](../media/sharepoint-organization-anyone-link-expiration.png)
-4. Tapez un nombre de jours dans la zone, puis cliquez sur **Enregistrer**.
+1. Tapez un nombre de jours dans la zone, puis cliquez sur **Enregistrer**.
 
 Pour définir une date d’expiration pour les liens Tout le monde sur un site spécifique
 
-1. Ouvrez le [Centre d’administration SharePoint](https://admin.microsoft.com/sharepoint).
-2. Dans le volet de navigation gauche, développez **Sites**, puis cliquez sur **Sites actifs**.
-3. Sélectionnez le site à modifier, puis cliquez sur **Partager**.
-4. Sous **Paramètres avancés pour les liens Tout le monde**, sous **Expiration des liens Tout le monde**, désactivez la case à cocher **Identique au paramètre de niveau organisation** .</br>
+1. Ouvrez le Centre d’administration SharePoint, développez **Sites**, puis sélectionnez <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sites actifs**</a>.
+1. Sélectionnez le site à modifier, puis sélectionnez **Partage**.
+1. Sous **Paramètres avancés pour les liens Tout le monde**, sous **Expiration des liens Tout le monde**, désactivez la case à cocher **Identique au paramètre de niveau organisation** .</br>
    ![Capture d’écran des paramètres d’expiration du lien Tout le monde au niveau du site dans Microsoft Office SharePoint Online.](../media/sharepoint-organization-anyone-link-expiration-site.png)
-5. Sélectionnez l’option **Ces liens doivent expirer dans ce nombre de jours** , puis tapez un nombre de jours dans la zone.
-6. Cliquez sur **Enregistrer**.
+1. Sélectionnez l’option **Ces liens doivent expirer dans ce nombre de jours** , puis tapez un nombre de jours dans la zone.
+1. Sélectionnez **Enregistrer**.
 
 Notez qu’une fois qu' un lien *Tout le monde* arrive à expiration, le fichier ou dossier peut être repartagé avec un nouveau lien *Tout le monde*.
 
@@ -70,9 +69,8 @@ Si vous voulez autoriser le partage non authentifié, mais que vous craignez que
 
 Pour définir des autorisations pour les liens Tout le monde dans l’organisation
 
-1. Ouvrez le [Centre d’administration SharePoint](https://admin.microsoft.com/sharepoint).
-2. Dans la barre de navigation de gauche, cliquez sur **Partage**.
-3. Sous **Paramètres avancés pour les liens Tout le monde**, sélectionnez les autorisations d’accès aux fichiers et dossiers que vous souhaitez.</br>
+1. Ouvrez le Centre d’administration SharePoint, puis sélectionnez <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Partage**</a>.
+1. Sous **Paramètres avancés pour les liens Tout le monde**, sélectionnez les autorisations d’accès aux fichiers et dossiers que vous souhaitez.</br>
    ![Capture d’écran des paramètres d’autorisation du lien Tout le monde au niveau de l’organisation dans Microsoft Office SharePoint Online.](../media/sharepoint-organization-anyone-link-permissions.png)
 
 Lorsque les liens *Tout le monde* sont paramétrés sur **Vue**, les utilisateurs peuvent encore partager des fichiers et des dossiers avec des invités et leur octroyer des autorisations de modification à l’aide des liens *Personnes spécifiques*. Ces liens nécessitent que les personnes extérieures à votre organisation s’authentifient en tant qu’invités. Vous pouvez effectuer le suivi et l’audit de l’activité des invités sur les fichiers et dossiers partagés avec ces liens.
@@ -84,23 +82,22 @@ Lorsque le partage *Tout le monde* est activé pour votre organisation, le lien 
 Vous pouvez réduire ce risque en modifiant le paramètre de lien par défaut en un lien qui fonctionne uniquement pour les personnes internes à votre organisation. Les utilisateurs qui souhaitent partager des documents avec des personnes non authentifiées doivent ensuite sélectionner cette option.
 
 Pour définir le lien de partage de fichier et de dossier par défaut pour l’organisation
-1. Ouvrez le [Centre d’administration SharePoint](https://admin.microsoft.com/sharepoint).
-2. Dans la barre de navigation de gauche, cliquez sur **Partage**.
-3. Sous **Liens de fichier et de dossier**, sélectionnez **Uniquement les membres de votre organisation**.
+1. Ouvrez le Centre d’administration SharePoint, puis sélectionnez <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Partage**</a>.
+1. Sous **Liens de fichier et de dossier**, sélectionnez **Uniquement les membres de votre organisation**.
 
    ![Capture d’écran du paramètre de type de lien par défaut de Microsoft Office SharePoint Online.](../media/sharepoint-default-sharing-link-company-link.png)
 
-4. Cliquez sur **Enregistrer**
+1. Sélectionnez **Enregistrer**.
 
 Pour définir le lien de partage de fichier et de dossier par défaut pour un site spécifique
-1. Ouvrez le [Centre d’administration SharePoint](https://admin.microsoft.com/sharepoint).
-2. Dans le volet de navigation gauche, développez **Sites**, puis cliquez sur **Sites actifs**.
-3. Sélectionnez le site à modifier, puis cliquez sur **Partager**.
-4. Sous **Type de lien de partage par défaut**, désactivez la case à cocher **Identique au paramètre de niveau organisation**.
+
+1. Ouvrez le Centre d’administration SharePoint, développez **Sites**, puis sélectionnez <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sites actifs**</a>.
+1. Sélectionnez le site à modifier, puis sélectionnez **Partage**.
+1. Sous **Type de lien de partage par défaut**, désactivez la case à cocher **Identique au paramètre de niveau organisation**.
 
    ![Capture d’écran des paramètres de type de lien par défaut au niveau du site de Microsoft Office SharePoint Online.](../media/sharepoint-organization-anyone-link-permissions-site.png)
 
-5. Sélectionnez l’option **Uniquement les membres de votre organisation** , puis cliquez sur **Enregistrer**.
+1. Sélectionnez l’option **Uniquement les membres de votre organisation**, puis sélectionnez **Enregistrer**.
 
 ## <a name="prevent-unauthenticated-sharing-of-sensitive-content"></a>Empêcher le partage non authentifié de contenu sensible
 
@@ -119,7 +116,7 @@ Création d’une stratégie DLP
 
    ![Capture d’écran des options de conditions, types d’informations sensibles, étiquettes de confidentialité et étiquettes de rétention.](../media/limit-accidental-exposure-dlp-conditions.png)
 
-10. Sous **Actions** cliquez sur **Ajouter une action**, puis sélectionnez **Restreindre l’accès ou chiffrer le contenu dans des emplacements Microsoft 365**.
+10. Sous **Actions** cliquez sur **Ajouter une action**, puis sélectionnez **Restreindre l’accès ou chiffrer le contenu dans des emplacements Microsoft 365**.
 11. Activez la case à cocher **Restreindre l’accès ou chiffrer le contenu dans des emplacements Microsoft 365** , puis sélectionnez l’option **Uniquement les personnes autorisées à accéder au contenu via les options « Tout le monde avec lien »**.
 
       ![Capture d’écran des options d’action de règle de protection contre la perte de données.](../media/limit-accidental-exposure-dlp-anyone-links.png)

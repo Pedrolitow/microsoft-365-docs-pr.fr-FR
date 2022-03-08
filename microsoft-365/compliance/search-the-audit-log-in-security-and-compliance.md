@@ -21,12 +21,12 @@ description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le 
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 5d5c7820a28977bb894c30915dc26f12016bb58c
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.openlocfilehash: 71b7bb5d5588f19ff4134c133377b3e9ca83c780
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62825492"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319348"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -104,7 +104,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
   - Pour les utilisateurs auxquels toute autre licence Office 365 ou Microsoft 365 (non E5) est attribuée, les enregistrements d’audit sont conservés pendant 90 jours. Pour obtenir la liste des abonnements Office 365 et Microsoft 365 prenant en charge la journalisation d’audit unifiée, voir [la description de service du Centre de sécurité et conformité](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
     > [!NOTE]
-    > Même lorsque l’audit de boîtes aux lettres est activé par défaut, vous remarquerez peut-être que les événements d’audit de boîtes aux lettres de certains utilisateurs sont introuvables dans les recherches du journal d’audit dans le Centre de conformité Microsoft 365 ou via l’API Activité de gestion Office 365. Pour plus d’informations, consultez la rubrique [Plus d’informations sur la journalisation d’audit de boîtes aux lettres](enable-mailbox-auditing.md#more-information).
+    > Même lorsque l'audit des boîtes aux lettres activé par défaut est activé, vous pouvez remarquer que les événements d'audit des boîtes aux lettres pour certains utilisateurs ne sont pas trouvés dans les recherches de journaux d'audit dans le Centre de conformité Microsoft 365 ou via l'API d'activité de gestion d'Office 365. Pour plus d'informations, affichez[Plus d'informations sur la journalisation de l'audit des boîtes aux lettres](enable-mailbox-auditing.md#more-information).
 
 - Si vous souhaitez désactiver la recherche dans le journal d’audit pour votre organisation, vous pouvez exécuter la commande suivante dans une session PowerShell distante connectée à votre organisation Exchange Online :
 
@@ -128,7 +128,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
 
 - Azure Active Directory (Azure AD) est le service d’annuaire pour Microsoft 365. Le journal d’audit unifié contient les activités des utilisateurs, des groupes, des applications, des domaines et des annuaires effectuées dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a> ou le portail de gestion Azure. Pour consulter la liste complète des événements Azure AD, voir [Événements de rapport d’audit d’Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
-- Après la survenue d’un événement, le renvoi de l'enregistrement de journal d’audit correspondant dans les résultats de la recherche d'un journal peut prendre jusqu’à 30 minutes, voir 24 heures. Le tableau suivant répertorie les délais en fonction des services dans Microsoft 365.
+- Il peut s'écouler jusqu'à 30 minutes ou jusqu'à 24 heures après qu'un événement se soit produit pour que l'enregistrement du journal d'audit correspondant soit renvoyé dans les résultats d'une recherche dans le journal d'audit. Le tableau suivant indique le temps nécessaire pour les différents services de Microsoft 365.
 
   |Service ou fonctionnalité Microsoft 365|30 minutes|24 heures|
   |---|:---:|:---:|
@@ -201,7 +201,7 @@ Pour effectuer une recherche dans le journal d’audit dans Microsoft 365, vous 
 
 4. Cliquez sur **Rechercher** pour effectuer la recherche à l’aide de vos critères de recherche. 
 
-   Les résultats de recherche sont chargés, puis affichés sur une nouvelle page. Une fois la recherche terminée, le nombre de résultats détectés est affiché. Un maximum de 5 000 événements s’affichent par incréments de 150 événements. Si plus de 5 000 événements correspondent aux critères de recherche, les 5 000 événements les plus récents sont affichés.
+   Les résultats de recherche sont chargés, puis affichés sur une nouvelle page. Une fois la recherche terminée, le nombre de résultats détectés est affiché. Un maximum de 50 000 événements sera affiché par tranches de 150 événements.
 
    ![Le nombre de résultats affichés une fois la recherche terminée.](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
@@ -217,11 +217,11 @@ Pour effectuer une recherche dans le journal d’audit dans Microsoft 365, vous 
 
 - Cliquez sur **Effacer** pour effacer les critères de recherche actuels. La plage de dates reprend la valeur par défaut des sept derniers jours. Vous pouvez également cliquer sur **Effacer tout pour afficher les résultats correspondant à toutes les activités** pour annuler toutes les activités sélectionnées.
 
-- Si 5 000 résultats sont détectés, vous pouvez partir du principe que plus de 5 000 événements correspondent aux critères de recherche. Vous pouvez affiner les critères de recherche et relancer la recherche pour renvoyer moins de résultats. Vous pouvez également exporter tous les résultats de recherche en sélectionnant **Exporter les résultats** > \> **Télécharger tous les résultats**.
+- Si 50 000 résultats sont trouvés, vous pouvez probablement supposer qu'il y a plus de 50 000 événements qui répondent aux critères de recherche. Vous pouvez affiner les critères de recherche et relancer la recherche pour renvoyer moins de résultats. Vous pouvez également exporter tous les résultats de recherche en sélectionnant **Exporter les résultats** > \> **Télécharger tous les résultats**.
 
 ### <a name="step-2-view-the-search-results"></a>Étape 2 : consulter les résultats de la recherche
 
-Les résultats d’une recherche dans le journal d’audit apparaissent sous **Résultats** sur la page **Recherche dans le journal d’audit**. Comme indiqué précédemment, un maximum de 5 000 événements (les plus récents) peut s’afficher, par incréments de 150. Pour afficher davantage d’événements, vous pouvez utiliser la barre de défilement du volet **Résultats** ou appuyer sur **Maj+Fin** afin d’afficher les 150 événements suivants.
+Les résultats d’une recherche dans le journal d’audit apparaissent sous **Résultats** sur la page **Recherche dans le journal d’audit**. Comme indiqué précédemment, un maximum de 50 000 événements (les plus récents) sont affichés par tranches de 150 événements. Pour afficher davantage d’événements, vous pouvez utiliser la barre de défilement du volet Résultats ou appuyer sur **Maj+Fin** afin d’afficher les 150 événements suivants.
 
 Les résultats contiennent les informations suivantes sur chaque événement renvoyé par la recherche :
 
@@ -430,8 +430,8 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
-|Fichier consulté|FileAccessed|Le compte d’utilisateur ou système consulte un fichier.|
-|(aucun)|FileAccessedExtended|Cet événement est lié à l’activité « Fichier consulté » (FileAccessed). Un événement FileAccessedExtended est consigné lorsque la même personne accède à un fichier pendant une période prolongée (jusqu'à 3 heures). <br/><br/> L’objectif de la journalisation des événements FileAccessedExtended consiste à réduire le nombre d’événements FileAccessed enregistrés lorsqu’un fichier est consulté de manière continue. Cela permet de réduire le bruit généré par l’enregistrement de plusieurs événements FileAccessed pour ce qui est en fait l’activité d’un seul et même utilisateur et vous permettre de vous concentrer sur l’événement FileAccessed initial (plus important).|
+|Fichier consulté|FileAccessed|Le compte d’utilisateur ou système consulte un fichier. Lorsqu'un utilisateur accède à un fichier, l'événement FileAccessed n'est plus enregistré pour le même utilisateur et pour le même fichier pendant les cinq minutes suivantes.|
+|(aucun)|FileAccessedExtended|Cet événement est lié à l'activité « Fichier consulté » (FileAccessed). Un événement FileAccessedExtended est enregistré lorsque la même personne accède à un fichier pendant une période prolongée (jusqu'à 3 heures). <br/><br/> L’objectif de la journalisation des événements FileAccessedExtended consiste à réduire le nombre d’événements FileAccessed enregistrés lorsqu’un fichier est consulté de manière continue. Cela permet de réduire le bruit généré par l’enregistrement de plusieurs événements FileAccessed pour ce qui est en fait l’activité d’un seul et même utilisateur et vous permettre de vous concentrer sur l’événement FileAccessed initial (plus important).|
 |Étiquette de rétention modifiée pour un fichier|ComplianceSettingChanged|Une étiquette de rétention a été appliquée à un document ou supprimée de celui-ci. Cet événement est déclenché lorsqu’une étiquette de rétention est appliquée manuellement ou automatiquement à un message.|
 |État de l’enregistrement modifié sur verrouillé|LockRecord|État de l’enregistrement d’une étiquette de rétention qui classifie un document en tant qu’enregistrement verrouillé. Cela signifie que le document ne peut pas être modifié ou supprimé. Seuls les utilisateurs ayant au moins l’autorisation de collaborateur pour un site peuvent changer le statut d’enregistrement d’un document.|
 |Modifier l’état de l’enregistrement sur verrouillé|UnlockRecord|État de l’enregistrement d’une étiquette de rétention qui classifie un document en tant qu’enregistrement déverrouillé. Cela signifie que le document peut être modifié ou supprimé. Seuls les utilisateurs ayant au moins l’autorisation de collaborateur pour un site peuvent changer le statut d’enregistrement d’un document.|
@@ -446,8 +446,8 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 |Détection d’un programme malveillant dans le fichier|FileMalwareDetected|Le moteur antivirus de SharePoint détecte un programme malveillant dans un fichier.|
 |Extraction de fichier ignorée|FileCheckOutDiscarded|Un utilisateur ignore (ou annule) un fichier extrait. Les modifications qu’il a apportées au fichier le temps de son extraction sont ignorées et ne sont pas enregistrées dans la version du document dans la bibliothèque de documents.|
 |Fichier téléchargé|FileDownloaded|Un utilisateur télécharge un document à partir d’un site.|
-|Fichier modifié|FileModified|Le compte d’utilisateur ou système modifie le contenu ou les propriétés d’un document sur un site.|
-|(aucun)|FileModifiedExtended|Cet événement est lié à l’activité « Fichier modifié » (FileModified). Un événement FileModifiedExtended est consigné lorsque la même personne modifie un fichier pendant une période prolongée (jusqu'à 3 heures). <br/><br/> L’objectif de la journalisation des événements FileModifiedExtended consiste à réduire le nombre d’événements FileModified enregistrés lorsqu’un fichier est modifié de manière continue. Cela permet de réduire le bruit généré par l’enregistrement de plusieurs événements FileModified pour ce qui est en fait l’activité d’un seul et même utilisateur et vous permettre de vous concentrer sur l’événement FileModified initial (plus important).|
+|Fichier modifié|FileModified|Le compte d’utilisateur ou système modifie le contenu ou les propriétés d’un document sur un site. Le système attend cinq minutes avant d'enregistrer un autre événement FileModified lorsque le même utilisateur modifie le contenu ou les propriétés du même document.|
+|(aucun)|FileModifiedExtended|Cet événement est lié à l'activité « Fichier modifié » (FileModified). Un événement FileModifiedExtended est enregistré lorsque la même personne modifie un fichier pendant une période prolongée (jusqu'à 3 heures). <br/><br/> L’objectif de la journalisation des événements FileModifiedExtended consiste à réduire le nombre d’événements FileModified enregistrés lorsqu’un fichier est modifié de manière continue. Cela permet de réduire le bruit généré par l’enregistrement de plusieurs événements FileModified pour ce qui est en fait l’activité d’un seul et même utilisateur et vous permettre de vous concentrer sur l’événement FileModified initial (plus important).|
 |Fichier déplacé|FileMoved|Un utilisateur déplace un document de son emplacement actuel sur un site vers un nouvel emplacement.|
 |(aucun)|FilePreviewed|Un utilisateur affiche l’aperçu de fichiers sur un site SharePoint ou OneDrive Entreprise. Ces événements se produisent généralement dans des volumes élevés basés sur une activité unique, comme l’affichage d’une galerie d’images.|
 |Requête de recherche effectuée|SearchQueryPerformed|Un compte d’utilisateur ou système effectue une recherche dans SharePoint ou OneDrive Entreprise. Certains scénarios courants dans lesquels un compte de service effectue une requête de recherche incluent l’application d’une stratégie de rétention et de conservation eDiscovery aux sites et comptes OneDrive, et lors de l'application automatique d'étiquettes de rétention ou de confidentialité au contenu du site.|
@@ -459,9 +459,9 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 |Fichier renommé|FileRenamed|Un utilisateur renomme un document sur un site.|
 |Fichier restauré|FileRestored|Un utilisateur restaure un document à partir de la Corbeille d’un site.|
 |Fichier téléchargé|FileUploaded|Un utilisateur charge un document vers un dossier sur un site.|
-|Page affichée|PageViewed|Un utilisateur affiche une page sur un site. Ceci n’inclut pas l’utilisation d’un navigateur web pour afficher les fichiers dans une bibliothèque de documents.|
-|(aucun)|PageViewedExtended|Cet événement est lié à l’activité « Page affichée » (PageViewed). Un événement PageViewedExtended est consigné lorsque la même personne affiche une page web pendant une période prolongée (jusqu'à 3 heures). <br/><br/> L’objectif de la journalisation des événements PageViewedExtended consiste à réduire le nombre d’événements PageViewed enregistrés lorsqu’une page est affichée de manière continue. Cela permet de réduire le bruit généré par l’enregistrement de plusieurs événements PageViewed pour ce qui est en fait l’activité d’un seul et même utilisateur et vous permettre de vous concentrer sur l’événement PageViewed initial (plus important).|
-|Affichage signalé par le client|ClientViewSignaled|Le client d’un utilisateur (comme un site web ou une application mobile) signale que la page indiquée a été consultée par l’utilisateur. Cette activité est souvent journalisée à la suite d’un événement PagePrefetched pour une page. <br/><br/>**Remarque**: les événements ClientViewSignaled étant signalés par le client, plutôt que le serveur, il est possible que l’événement ne soit pas consigné par le serveur et, par conséquent, qu’il n’apparaisse pas dans le journal d’audit. Il est également possible que les informations dans l’enregistrement d’audit ne soient pas dignes de confiance. Toutefois, comme l’identité de l’utilisateur est validée par le jeton utilisé pour créer le signal, l’identité de l’utilisateur répertoriée dans l’enregistrement d’audit correspondant est exacte. |
+|Page affichée|PageViewed|Un utilisateur affiche une page sur un site. Ceci n’inclut pas l’utilisation d’un navigateur web pour afficher les fichiers dans une bibliothèque de documents. Une fois qu'un utilisateur a consulté une page, l'événement PageViewed n'est plus enregistré pour le même utilisateur et pour la même page pendant les cinq minutes suivantes.|
+|(aucun)|PageViewedExtended|Cet événement est lié à l'activité « Page affichée » (PageViewed). Un événement PageViewedExtended est enregistré lorsque la même personne affiche une page web pendant une période prolongée (jusqu'à 3 heures). <br/><br/> L’objectif de la journalisation des événements PageViewedExtended consiste à réduire le nombre d’événements PageViewed enregistrés lorsqu’une page est affichée de manière continue. Cela permet de réduire le bruit généré par l’enregistrement de plusieurs événements PageViewed pour ce qui est en fait l’activité d’un seul et même utilisateur et vous permettre de vous concentrer sur l’événement PageViewed initial (plus important).|
+|Affichage signalé par le client|ClientViewSignaled|Le client d’un utilisateur (comme un site web ou une application mobile) signale que la page indiquée a été consultée par l’utilisateur. Cette activité est souvent journalisée à la suite d’un événement PagePrefetched pour une page. <br/><br/>**Remarque**: les événements ClientViewSignaled étant signalés par le client, plutôt que le serveur, il est possible que l’événement ne soit pas consigné par le serveur et, par conséquent, qu’il n’apparaisse pas dans le journal d’audit. Il est également possible que les informations dans l’enregistrement d’audit ne soient pas dignes de confiance. Toutefois, comme l’identité de l’utilisateur est validée par le jeton utilisé pour créer le signal, l’identité de l’utilisateur répertoriée dans l’enregistrement d’audit correspondant est exacte. Le système attend cinq minutes avant d'enregistrer le même événement lorsque le client du même utilisateur signale que la page a été consultée à nouveau par l'utilisateur.|
 |(aucun)|PagePrefetched|Le client d’un utilisateur (comme un site web ou une application mobile) demande la page indiquée afin de vous aider à améliorer les performances lorsque l’utilisateur y accède. Cet événement est enregistré pour indiquer que le contenu de la page a été remis au client de l’utilisateur. Cet événement n’indique pas si l’utilisateur a accédé à la page. <br/><br/> Lorsque le contenu de la page est affiché par le client (conformément à la requête de l’utilisateur), un événement ClientViewSignaled est généré. Tous les clients ne prennent pas en charge l’indication d’une pré-récupération ; par conséquent, certaines activités préalablement récupérées peuvent être enregistrées en tant qu’événements PageViewed.|
 ||||
 
@@ -469,15 +469,15 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 
 **Des activités non-utilisateur peuvent-elles déclencher des enregistrements d’audit FilePreviewed contenant un agent utilisateur tel que « OneDriveMpc-Transform_Thumbnail » ?**
 
-Nous ne connaissons pas de situations dans lesquelles les actions non-utilisateur génèrent des événements de ce type. Les actions d’utilisateur telles que l’ouverture d’une carte de profil utilisateur (en cliquant sur son nom ou son adresse e-mail dans un message dans Outlook sur le web) génèrent des événements similaires.
+Nous n'avons pas connaissance de scénarios dans lesquels des actions non utilisateur génèrent des événements comme ceux-ci. Les actions des utilisateurs, comme l'ouverture d'une carte de profil utilisateur (en cliquant sur leur nom ou leur adresse e-mail dans un message dans Outlook sur le web) génèrent des événements similaires.
 
 **Les appels à OneDriveMpc-Transform_Thumbnail sont-ils toujours déclenchés intentionnellement par l’utilisateur ?**
 
-Non. Mais des événements similaires peuvent être enregistrés suite à une récupération préalable du navigateur.
+Non, mais des événements similaires peuvent être enregistrés à la suite de la pré-extraction du navigateur.
 
 **Si un événement FilePreviewed provenant d’une adresse IP enregistrée par Microsoft s’affiche, cela signifie-t-il que l’aperçu s’affiche sur l’écran de l’appareil de l’utilisateur ?**
 
-Non. L’événement a peut-être été consigné suite à la récupération préalable du navigateur.
+Non. L'événement a peut-être été enregistré à la suite d'une pré-extraction du navigateur.
 
 **Y a-t-il des scénarios dans lesquels un utilisateur consultant un aperçu d’un document génère des événements FileAccessed ?**
 
@@ -524,7 +524,7 @@ Le tableau suivant décrit les activités liées à la façon dont les utilisate
 |:-----|:-----|:-----|
 |Liste créée|ListCreated|Un utilisateur a créé une liste SharePoint.|
 |Colonne de liste créée|ListColumnCreated|Un utilisateur a créé une colonne de liste SharePoint. Une colonne de liste est une colonne jointe à une ou plusieurs listes SharePoint.|
-|Type de contenu de liste créé|ListContentTypeCreated|Un utilisateur a créé un type de contenu de liste. Un type de contenu de liste est un type de contenu attaché à une ou plusieurs listes SharePoint.|
+|Type de contenu de liste créé|ListContentTypeCreated|Un utilisateur a créé un type de contenu de liste. Un type de contenu de liste est un type de contenu associé à une ou plusieurs listes SharePoint.|
 |Élément de liste créé|ListItemCreated|Un utilisateur a créé un élément dans une liste SharePoint existante.|
 |Colonne de site créée|SiteColumnCreated|Un utilisateur a créé une colonne de site SharePoint. Une colonne de site est une colonne qui n’est pas jointe à une liste. Une colonne de site est également une structure de métadonnées pouvant être utilisée par n’importe quelle liste d’un site Web donné.|
 |Type de contenu de site créé|ContentType du site créé|Un utilisateur a créé un type de contenu de site. Un type de contenu de site est un type de contenu attaché au site parent.|
@@ -543,7 +543,7 @@ Le tableau suivant décrit les activités liées à la façon dont les utilisate
 |Élément de liste mis à jour|ListItemUpdated|Un utilisateur a mis à jour un élément de liste SharePoint en modifiant une ou plusieurs propriétés.|
 |Colonne de site mise à jour|SiteColumnUpdated|Un utilisateur a mis à jour une colonne de site SharePoint en modifiant une ou plusieurs propriétés.|
 |Type de contenu de site mis à jour|SiteContentTypeUpdated|Un utilisateur a mis à jour un type de contenu de site en modifiant une ou plusieurs propriétés.|
-|Élément de liste consulté|ListItemViewed|Un utilisateur a affiché un élément de liste Microsoft Office SharePoint Online.|
+|Élément de liste consulté|ListItemViewed|Un utilisateur a affiché un élément de liste Microsoft Office SharePoint Online. Lorsqu'un utilisateur visualise un élément de liste, l'événement ListItemViewed n'est plus enregistré pour le même utilisateur et pour le même élément de liste pendant les cinq minutes suivantes.|
 ||||
 
 ### <a name="sharing-and-access-request-activities"></a>Activités de demande d’accès et de partage
@@ -610,7 +610,7 @@ Le tableau suivant répertorie les événements liés à l’attribution d’aut
 |Paramètre de demande d’accès modifié|WebRequestAccessModified|Les paramètres de demande d’accès ont été modifiés sur un site.|
 |Paramètre «les membres peuvent partagés» modifié|WebMembersCanShareModified|Le paramètre **les membres peuvent partager** a été modifié sur un site.|
 |Modification du niveau d’autorisation sur une collection de sites|PermissionLevelModified|Un niveau d’autorisation a été modifié sur une collection de sites.|
-|Autorisations de site modifiées|SitePermissionsModified|L'administrateur ou le propriétaire du site (ou le compte système) modifie le niveau d'autorisation attribué à un groupe sur un site. Cette activité est également enregistrée si toutes les autorisations sont supprimées d'un groupe.<br/><br/> **Remarque**: cette opération est déconseillée dans SharePoint Online. Pour rechercher des événements connexes, vous pouvez rechercher d’autres activités liées à une autorisation, telles que **Administrateur de collection de sites ajoutée**, **Utilisateur ou groupe ajouté à un groupe SharePoint**, **Utilisateur autorisé à créer des groupes**, **Groupe créé** et **Groupe supprimé**.|
+|Autorisations de site modifiées|SitePermissionsModified|L'administrateur ou le propriétaire du site (ou le compte système) modifie le niveau d'autorisation attribué à un groupe sur un site. Cette activité est également enregistrée si toutes les autorisations sont supprimées d'un groupe.<br/><br/> **REMARQUE** : cette opération est obsolète dans SharePoint Online. Pour rechercher des événements associés, vous pouvez rechercher d'autres activités liées aux autorisations, comme **Administrateur de collection de sites ajouté**, **Utilisateur ou groupe ajouté à un groupe SharePoint**, **Utilisateur autorisé à créer des groupes**, **Groupe créé**, et **Groupe supprimé.**|
 |Suppression d’un niveau d’autorisation dans une collection de sites|PermissionLevelRemoved|Un niveau d’autorisation a été supprimé d’une collection de sites.|
 |Administrateur de collection de site supprimé|SiteCollectionAdminRemoved|L’administrateur de collection de sites ou le propriétaire supprime une personne en tant qu’administrateur de collection de sites pour un site. Cette activité est également enregistrée lorsqu’un administrateur se supprime de la liste des administrateurs de collections de sites pour le compte OneDrive d’un utilisateur (en modifiant le profil utilisateur dans le centre d’administration SharePoint).  Pour renvoyer cette activité dans les résultats de la recherche dans le journal d’audit, vous devez rechercher toutes les activités.|
 |Utilisateur ou groupe supprimé au groupe SharePoint|RemovedFromGroup|L’utilisateur a supprimé un membre ou un invité d’un groupe SharePoint. Il s’agit peut-être d’une action intentionnelle ou du résultat d’une autre activité (par exemple, événement d’annulation de partage).|
@@ -669,19 +669,19 @@ Le tableau suivant répertorie les activités qui peuvent être enregistrées pa
 |Éléments de boîte aux lettres consultés|MailItemsAccessed|Les messages sont lus ou consultés dans la boîte aux lettres. Les enregistrements d’audit pour cette activité sont déclenchés de deux manières : lorsqu’un client de courrier (par exemple, Outlook) effectue une opération de liaison sur des messages ou lorsque des protocoles de courrier (par exemple, Exchange ActiveSync ou IMAP) synchronisent des éléments dans un dossier de courrier. Cette activité est uniquement enregistrée pour les utilisateurs disposant d’une licence Office 365 ou Microsoft 365 E5. L’analyse des enregistrements d’audit pour cette activité est utile lorsque vous êtes à la recherche d'un compte de messagerie compromis. Pour plus d'informations, voir la section "Événements d'audit avancé" dans [Audit avancé](advanced-audit.md#advanced-audit-events). |
 |Autorisations de boîtes aux lettres de délégué ajoutées|Add-MailboxPermission|Un administrateur a attribué l’autorisation de boîte aux lettres FullAccess à un utilisateur (appelé délégué) à la boîte aux lettres d’une autre personne. L’autorisation FullAccess permet au délégué d’ouvrir la boîte aux lettres d’un autre utilisateur ainsi que de lire et de gérer le contenu de la boîte aux lettres. L’enregistrement d’audit de cette activité est également généré lorsqu’un compte système dans le service Microsoft 365 effectue régulièrement des tâches de maintenance pour le compte de votre organisation. Une tâche courante effectuée par un compte système consiste à mettre à jour les autorisations pour les boîtes aux lettres système. Pour plus d’informations, voir [Comptes système dans les enregistrements d’audits de boîte aux lettres Exchange.](#system-accounts-in-exchange-mailbox-audit-records)|
 |Utilisateur ajouté ou supprimé avec accès délégué au dossier calendrier|UpdateCalendarDelegation|Un utilisateur a été ajouté ou supprimé en tant que délégué au calendrier de la boîte aux lettres d’un autre utilisateur. La délégation de calendrier donne à une autre personne les mêmes autorisations d’organisation pour gérer le calendrier du propriétaire de la boîte aux lettres.|
-|Autorisations ajoutées au dossier|AddFolderPermissions|Une autorisation de dossier a été ajoutée. Les autorisations de dossier contrôlent quels utilisateurs de votre organisation peuvent accéder aux dossiers dans une boîte aux lettres et aux messages situés dans ces dossiers.|
+|Autorisations ajoutées au dossier|AddFolderPermissions|Une autorisation de dossier a été ajoutée. Les autorisations de dossier déterminent quels utilisateurs de votre organisation peuvent accéder aux dossiers dans une boîte aux lettres et aux messages situés dans ces dossiers.|
 |Messages copiés vers un autre dossier|Copy|Un message a été copié vers un autre dossier.|
 |Élément de boîte aux lettres créé|Créer|Un élément est créé dans le dossier Calendrier, Contacts, Notes ou Tâches de la boîte aux lettres.  Par exemple, une nouvelle demande de réunion est créée. Notez que la création, l’envoi ou la réception d’un message ne sont pas audités. De même, la création d’un dossier de boîte aux lettres n’est pas auditée.|
 |Nouvelle règle de boîte de réception créée dans Outlook Web App|New-InboxRule|Un propriétaire de boîte aux lettres ou un autre utilisateur ayant accès à la boîte aux lettres a créé une règle de boîte de réception dans Outlook Web App.|
 |Messages supprimés du dossier Éléments supprimés|SoftDelete|Un message a été supprimé définitivement ou non du dossier Éléments supprimés. Ces éléments sont déplacés vers le dossier Éléments récupérables. Les messages sont également déplacés vers le dossier Éléments récupérables lorsqu’un utilisateur les sélectionne et appuie sur **Maj+Suppr**.|
-|Message étiqueté en tant qu’enregistrement|ApplyRecordLabel|Un message a été classifié en tant qu’enregistrement. Ceci se produit lorsqu’une étiquette de rétention qui classifie le contenu en tant qu’enregistrement est manuellement ou automatiquement appliquée à un message.|
+|Message étiqueté en tant qu’enregistrement|ApplyRecordLabel|Un message a été classé comme étant un enregistrement. Cela se produit lorsqu'une étiquette de rétention qui classe le contenu en tant qu'enregistrement est appliquée manuellement ou automatiquement à un message.|
 |Messages déplacés vers un autre dossier|Move|Un message a été déplacé vers un autre dossier.|
 |Messages déplacés vers le dossier Éléments supprimés|MoveToDeletedItems|Un message a été supprimé et déplacé vers le dossier Éléments supprimés.|
-|Autorisation de dossier modifiée|UpdateFolderPermissions|Une autorisation de dossier a été modifiée. Les autorisations de dossier contrôlent quels utilisateurs de votre organisation peuvent accéder aux dossiers de boîte aux lettres et aux messages du dossier.|
+|Autorisation de dossier modifiée|UpdateFolderPermissions|Une autorisation de dossier a été modifiée. Les autorisations de dossier déterminent quels utilisateurs de votre organisation peuvent accéder aux dossiers de boîte aux lettres et aux messages du dossier.|
 |Règle de boîte de réception modifiée à partir d’Outlook Web App|Set-InboxRule|Un propriétaire de boîte aux lettres ou un autre utilisateur ayant accès à la boîte aux lettres a modifié une règle de boîte de réception dans Outlook Web App.|
 |Messages supprimés définitivement de la boîte aux lettres|HardDelete|Un courrier a été supprimé définitivement du dossier Éléments récupérables (supprimé définitivement de la boîte aux lettres).|
 |Autorisations de boîtes aux lettres de délégué supprimées|Remove-MailboxPermission|Un administrateur a supprimé l’autorisation FullAccess (qui était attribuée à un délégué) à partir de la boîte lettres d’un autre utilisateur. Une fois l’autorisation FullAccess supprimée, le délégué ne peut pas ouvrir l’autre boîte aux lettres ni accéder au contenu.|
-|Autorisations supprimées du dossier|RemoveFolderPermissions|Une autorisation de dossier a été supprimée. Les autorisations de dossier contrôlent quels utilisateurs de votre organisation peuvent accéder aux dossiers dans une boîte aux lettres et aux messages situés dans ces dossiers.|
+|Autorisations supprimées du dossier|RemoveFolderPermissions|Une autorisation de dossier a été supprimée. Les autorisations de dossier déterminent quels utilisateurs de votre organisation peuvent accéder aux dossiers dans une boîte aux lettres et aux messages situés dans ces dossiers.|
 |Message envoyé|Envoyer|Un message a été envoyé, répondu ou transféré. Cette activité est uniquement enregistrée pour les utilisateurs disposant d’une licence Office 365 ou Microsoft 365 E5. Pour plus d'informations, voir la section « Événements d'audit avancé » dans [Audit avancé](advanced-audit.md#advanced-audit-events).|
 |Message envoyé à l’aide d’autorisations Envoyer en tant que|SendAs|Un message a été envoyé à l'aide de l'autorisation SendAs. Cela signifie qu'un autre utilisateur a envoyé le message comme s'il provenait du propriétaire de la boîte aux lettres.|
 |Message envoyé à l’aide d’autorisations Envoyer de la part de|SendOnBehalf|Un message a été envoyé à l’aide de l’autorisation SendOnBehalf. Cela signifie qu’un autre utilisateur a envoyé le message de la part du propriétaire de la boîte aux lettres. Le message indique au destinataire de la part de qui le message a été envoyé et qui a envoyé réellement le message.|
@@ -713,7 +713,7 @@ Le tableau suivant répertorie les activités d’administration des utilisateur
 |Réinitialiser le mot de passe de l’utilisateur|Réinitialiser un mot de passe d’utilisateur.|Un administrateur réinitialise le mot de passe d’un utilisateur.|
 |Propriété définie qui force l’utilisateur à changer de mot de passe.|Définir la modification forcée d’un mot de passe d’utilisateur.|Un administrateur a défini la propriété qui force un utilisateur à modifier son mot de passe lors de sa prochaine connexion à Microsoft 365.|
 |Propriétés de licence définies|Définir des propriétés de licence.|Un administrateur modifie les propriétés d’une licence attribuée à un utilisateur.|
-|Utilisateur mis à jour|Mettre à jour un utilisateur.|Un administrateur modifie une ou plusieurs propriétés d’un compte d’utilisateur. Pour obtenir la liste des propriétés utilisateur qui peuvent être mises à jour, voir la section « Attributs de "Mettre à jour l’utilisateur" » dans [Événements de rapport d’audit d’Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).|
+|Utilisateur mis à jour|Mettre à jour un utilisateur.|L'administrateur modifie une ou plusieurs propriétés d'un compte d'utilisateur. Pour obtenir la liste des propriétés utilisateur qui peuvent être mises à jour, consultez la section « Mettre à jour les attributs utilisateur » dans les [Événements de rapport d'audit Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).|
 ||||
 
 ### <a name="azure-ad-group-administration-activities"></a>Activités d’administration des groupes Azure AD
@@ -777,7 +777,7 @@ Le tableau suivant répertorie les activités liées à l’annuaire et au domai
 |Partenaire ajouté à l’annuaire|Ajouter un partenaire à une entreprise.|Un partenaire (administrateur délégué) a été ajouté à votre organisation.|
 |Domaine supprimé de l’entreprise|Supprimer un domaine d’une entreprise.|Un domaine a été supprimé de votre organisation.|
 |Partenaire supprimé de l’annuaire|Supprimer un partenaire d’une entreprise.|Un partenaire (administrateur délégué) a été supprimé de votre organisation.|
-|Définition des informations sur la société|Définir des informations d’une entreprise.|Les informations de l’entreprise ont été mises à jour pour votre organisation. Cela inclut les adresses de messagerie pour les messages liés à un abonnement envoyés par Microsoft 365, ainsi que les notifications techniques relatives aux services Microsoft 365.|
+|Définition des informations sur la société|Définir des informations d’une entreprise.|Mise à jour des informations relatives à l'entreprise pour votre organisation. Cela inclut les courriers électroniques pour les courriers électroniques liés à l'abonnement envoyés par Microsoft 365 et les notifications techniques concernant les services Microsoft 365.|
 |Définition de l’authentification de domaine|Définir une authentification de domaine.|Le paramètre d’authentification de domaine a été modifié pour votre organisation.|
 |Paramètres de fédération mis à jour pour un domaine|Définir des paramètres de fédération sur un domaine.|Les paramètres de la fédération (partage externe) ont été modifiés pour votre organisation.|
 |Stratégie de mot de passe définie|Définir une stratégie de mot de passe.|Les contraintes de longueur et de caractères applicables aux mots de passe utilisateur ont été modifiées dans votre organisation.|
@@ -789,7 +789,7 @@ Le tableau suivant répertorie les activités liées à l’annuaire et au domai
 
 ### <a name="ediscovery-activities"></a>Activités de découverte électronique
 
-Les activités liées à la recherche de contenu et la découverte électronique effectuées dans le centre de sécurité et conformité ou via l’exécution des cmdlets PowerShell correspondantes sont enregistrées dans le journal d’audit. Cela inclut les activités suivantes :
+Les activités Recherche de contenu et eDiscovery, effectuées dans le centre de sécurité et de conformité ou en exécutant les cmdlets PowerShell correspondantes, sont enregistrées dans le journal d'audit. Cela comprend les activités suivantes :
 
 - création et gestion des cas de découverte électronique ;
 
@@ -940,7 +940,7 @@ Si une activité Forms est réalisée par un co-auteur ou un répondant anonyme,
 |Formulaire créé|CreateForm|Le propriétaire du formulaire crée un nouveau formulaire. <br><br>La propriété DataMode:string indique que le formulaire actuel est défini pour synchroniser avec un classeur Excel existant ou nouveau si la valeur de propriété est égal à DataSync. La propriété ExcelWorkbookLink:string indique l’ID du classeur Excel associé du formulaire actuel.|
 |Formulaire modifié|EditForm|Le propriétaire du formulaire modifie un formulaire tel que la création, la suppression ou la modification d’une question. La propriété *EditOperation:string* indique le nom de l’opération de modification. Voici les opérations possibles :<br/>– CreateQuestion<br/>– CreateQuestionChoice <br/>– DeleteQuestion <br/>– DeleteQuestionChoice <br/>– DeleteFormImage <br/>– DeleteQuestionImage <br/>– UpdateQuestion <br/>– UpdateQuestionChoice <br/>– UploadFormImage/Bing/Onedrive <br/>– UploadQuestionImage <br/>– ChangeTheme <br><br>FormImage inclut tout emplacement au sein duquel l’utilisateur peut charger une image, par exemple dans une requête ou en tant que thème d’arrière-plan.|
 |Formulaire déplacé|MoveForm|Le propriétaire du formulaire déplace un formulaire. <br><br>La propriété DestinationUserId:string indique l'ID d'utilisateur de la personne qui a déplacé le formulaire. La propriété NewFormId:String est le nouvel ID du formulaire nouvellement copié. La propriété IsDelegateAccess:boolean indique que l’action de déplacement du formulaire actuel est effectuée via la page de délégué administrateur.|
-|Formulaire supprimé|DeleteForm|Un propriétaire d’un formulaire supprime une équipe. Cela inclut SoftDelete (option de suppression utilisée et formulaire déplacé vers la corbeille) et HardDelete (corbeille vidée).|
+|Formulaire supprimé|DeleteForm|Le propriétaire du formulaire supprime un formulaire. Cela inclut SoftDelete (option de suppression utilisée et formulaire déplacé vers la corbeille) et HardDelete (la corbeille est vidée).|
 |Formulaire consulté (moment de la création)|ViewForm|Le propriétaire du formulaire ouvre un formulaire existant pour modification. <br><br>La propriété AccessDenied:boolean indique que l’accès du formulaire actuel est refusé en raison de la vérification d’autorisation. La propriété FromSummaryLink:boolean indique que la demande actuelle provient de la page de lien du résumé.|
 |Formulaire prévisualisé|PreviewForm|Propriétaire du formulaire affiche un aperçu d’un formulaire à l’aide de la fonction d’aperçu.|
 |Données exportées|ExportForm|Le propriétaire du formulaire exporte les résultats vers Excel. <br><br>La propriété ExportFormat:string indique si le fichier Excel est téléchargé ou en ligne.|
@@ -1008,7 +1008,7 @@ Le tableau suivant répertorie les événements qui résultent de l’utilisatio
 |:-----|:-----|:-----|
 |Étiquette de confidentialité appliquée au site|SensitivityLabelApplied|Une étiquette de confidentialité a été appliquée à un site SharePoint ou Teams.|
 |Suppression de l'étiquette de confidentialité sur le site|SensitivityLabelRemoved|Une étiquette de confidentialité a été supprimée sur un site SharePoint ou Teams.|
-|Étiquette de confidentialité appliquée au fichier|FileSensitivityLabelApplied|Une étiquette de niveau de confidentialité a été appliquée à un document à l’aide des Microsoft 365 Apps Office sur le Web. ou une stratégie d’étiquetage automatique.|
+|Étiquette de confidentialité appliquée au fichier|FileSensitivityLabelApplied|Une étiquette de confidentialité a été appliquée à un document en utilisant les applications Microsoft 365, Office sur le web ou une stratégie d'étiquetage automatique.|
 |Étiquette de confidentialité modifiée appliquée au fichier|FileSensitivityLabelChanged<br /><br>SensitivityLabelUpdated|Une étiquette de niveau de confidentialité différente a été appliquée à un document. <br /><br>Les opérations de cette activité sont différentes en fonction de la façon dont l’étiquette a été modifiée :<br /> Office sur le Web ou une stratégie d’étiquetage automatique (FileSensitivityLabelChanged) <br /> Microsoft 365 Apps (SensitivityLabelUpdated)|
 |Étiquette de confidentialité modifiée sur un site|SensitivityLabelChanged|Une étiquette de niveau de confidentialité différente a été appliquée à un site Microsoft Office SharePoint Online ou Teams.|
 |Suppression de l'étiquette de confidentialité sur le document|FileSensitivityLabelRemoved|Une étiquette de confidentialité a été supprimée d’un document à l’aide d’applications Microsoft 365, d’Office sur le Web, d’une stratégie d’étiquetage automatique ou de l’applet de commande [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile).|
@@ -1033,7 +1033,7 @@ Le tableau suivant décrit les activités de configuration des [stratégies de r
 | Étendue adaptative mise à jour | SetAdaptiveScope | L’administrateur a modifié la description ou la requête pour une étendue adaptative existante. |
 | Paramètres mis à jour pour une stratégie de rétention | SetRetentionComplianceRule | L’administrateur a modifié les paramètres de rétention d’une stratégie de rétention existante. Les paramètres de rétention incluent la durée de conservation des éléments et ce qu’il advient des éléments à l’expiration de la période de rétention (comme la suppression d’éléments, la conservation des éléments ou leur conservation puis leur suppression). Cette activité correspond également à l’exécution du cmdlet [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule). |
 | Étiquette de rétention mise à jour |SetComplianceTag  | Un administrateur a mis à jour une étiquette de rétention existante.|
-| Stratégie de rétention mise à jour |SetRetentionCompliancePolicy |Un administrateur a mis à jour une stratégie de rétention existante. Les mises à jour qui déclenchent cet événement incluent l’ajout ou l’exclusion d’emplacements de contenu auxquels la stratégie de rétention est appliquée.|
+| Stratégie de rétention mise à jour |SetRetentionCompliancePolicy |L'administrateur a mis à jour une stratégie de rétention existante. Les mises à jour qui déclenchent cet événement incluent l'ajout ou l'exclusion d'emplacements de contenu auxquels la stratégie de rétention est appliquée.|
 ||||
 
 ### <a name="briefing-email-activities"></a>Activités de récapitulatif des tâches par courrier électronique
@@ -1116,7 +1116,7 @@ Voici quelques conseils pour rechercher des activités d’administrateur Exchan
 
 - Pour afficher les événements du journal d’audit de l’administrateur Exchange, cliquez sur la colonne **Activité** pour trier les noms de cmdlet par ordre alphabétique.
 
-- Pour obtenir des informations sur les cmdlets exécutées, les paramètres et valeurs de paramètres utilisés et les objets affectés, vous devez exporter les résultats de recherche et sélectionner l’option **Télécharger tous les résultats**. Pour plus d’informations, voir [Exporter, configurer et afficher des enregistrements du journal d’audit](export-view-audit-log-records.md).
+- Pour obtenir des informations sur la cmdlet exécutée, les paramètres et les valeurs de paramètre utilisés et les objets affectés, vous pouvez exporter les résultats de la recherche en sélectionnant l'option **Télécharger tous les résultats**. Si vous souhaitez en savoir plus, consultez l'article [Exporter, configurer et afficher les enregistrements du journal d'audit](export-view-audit-log-records.md).
 
 - Vous pouvez également utiliser la `Search-UnifiedAuditLog -RecordType ExchangeAdmin` commande dans Exchange Online PowerShell pour renvoyer uniquement les enregistrements d’audit du journal d’audit de l’administrateur Exchange. L’exécution de l’entrée de journal d’audit correspondante dans les résultats de la recherche peut prendre jusqu’à 30 minutes après l’exécution d’une applet de commande Exchange. Pour plus d’informations, voir [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog). Pour plus d’informations sur l’exportation des résultats de recherche renvoyés par l’applet de commande **Search-UnifiedAuditLog** vers un fichier CSV, voir la section «conseils pour l'exportation et l’affichage du journal d’audit» dans [exporter, configurer et afficher les enregistrements du journal d’audit.](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
@@ -1160,7 +1160,7 @@ Dans la plupart des services, l’audit est activé par défaut une fois que vou
 
 **Le service d’audit prend-il en charge la suppression des doublons d’enregistrements ?**
 
-Non. Le pipeline de service d’audit est presque en temps réel et ne peut donc pas prendre en charge la déduplication.
+Non. Le pipeline de services d'audit fonctionne quasiment en temps réel et ne peut donc pas prendre en charge la déduplication.
 
 **Où sont stockées les données d’audit ?**
 

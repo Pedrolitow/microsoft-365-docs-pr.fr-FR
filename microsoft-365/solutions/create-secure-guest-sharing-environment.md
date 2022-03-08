@@ -14,16 +14,17 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les options disponibles pour créer un environnement de partage d’invités sécurisé dans Microsoft 365, offrant un accès invité pour une collaboration améliorée.
-ms.openlocfilehash: ae616bcaa78aa759ca5b1f1be4b1beaf8d709a00
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 97b9c3c26fce137ad4471bbf080d4b7340c8b622
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807607"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323792"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Créer un environnement de partage d’invités sécurisé
 
@@ -180,8 +181,8 @@ Pour restreindre l'accès des invités au web uniquement pour les groupes et Mic
 
 Pour limiter l'accès web uniquement aux invités pour SharePoint
 
-1. Dans le [Centre d’administration SharePoint](https://admin.microsoft.com/sharepoint), développez **Stratégies** et cliquez sur **Contrôle d’accès**.
-2. Cliquez **Appareils non gérés**.
+1. Dans le **Centre d’administration SharePoint**, développez **Stratégies** et cliquez sur <a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank">Contrôle d’accès</a>.
+2. **Sélectionnez appareils non utilisés**.
 3. Sélectionnez l’option **Autoriser un accès limité, uniquement sur le web**, puis cliquez sur **Enregistrer**.
 
 Notez que ce paramètre dans le Centre d’administration SharePoint crée une stratégie d’accès conditionnel de prise en charge dans Azure AD.

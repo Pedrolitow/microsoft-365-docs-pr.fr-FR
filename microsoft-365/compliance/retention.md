@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: b0d179a412a2e0470db844a7e9b422c8ae89db34
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: ac57859d7f27b22060b88189e79d386791535c9e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320678"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319390"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -264,13 +264,38 @@ Utilisez le tableau suivant pour savoir si vous devez utiliser une stratégie ou
 
 ### <a name="combining-retention-policies-and-retention-labels"></a>Combinaison de stratégies de rétention et d’étiquettes de rétention
 
-Vous ne devez pas choisir entre les stratégies de rétention uniquement et les étiquettes de rétention uniquement. Les deux méthodes peuvent être utilisées ensemble et se complètent en fait l’une l’autre pour une solution plus complète. Par exemple :
+Vous ne devez pas choisir entre les stratégies de rétention uniquement et les étiquettes de rétention uniquement. Les deux méthodes peuvent être utilisées ensemble et se complètent en fait l’une l’autre pour une solution plus complète.
+
+Les exemples suivants ne sont que quelques-unes des façons dont vous pouvez combiner des stratégies de rétention et des étiquettes de rétention pour le même emplacement.
+
+Pour plus d’informations sur la façon dont les stratégies de rétention et les étiquettes de rétention fonctionnent ensemble et sur la façon de déterminer leur résultat combiné, consultez la section de cette page qui explique les [principes de rétention et ce qui est prioritaire](#the-principles-of-retention-or-what-takes-precedence).
+
+**Exemple permettant aux utilisateurs de remplacer la suppression automatique**
+
+Scénario : par défaut, le contenu des comptes OneDrive des utilisateurs est automatiquement supprimé au bout de cinq ans, mais les utilisateurs doivent avoir la possibilité de le remplacer pour des documents spécifiques.
 
 1. Vous créez et configurez une stratégie de rétention qui supprime automatiquement le contenu cinq ans après sa dernière modification, et l’appliquez à tous les comptes OneDrive.
 
 2. Vous créez et configurez une étiquette de rétention qui conserve du contenu de façon définitive et l’ajoutez à une stratégie d’étiquette que vous publiez sur tous les comptes OneDrive. Vous expliquez aux utilisateurs comment appliquer manuellement cette étiquette à des documents spécifiques, qui ne doivent pas être supprimés automatiquement, même s’ils n’ont pas été modifiés depuis cinq ans.
 
-Pour plus d’informations sur la façon dont les stratégies et les étiquettes de rétention fonctionnent conjointement, et sur la manière de déterminer le résultat de leur combinaison, voir la section suivante, qui explique les principes de la rétention et l’application des priorités.
+**Exemple pour conserver des éléments plus longtemps**
+
+Scénario : par défaut, les éléments SharePoint sont automatiquement conservés puis supprimés après cinq ans, mais les documents de certaines bibliothèques doivent être conservés pendant dix ans.
+
+1. Vous créez et configurez une stratégie de rétention qui conserve et supprime automatiquement le contenu au bout de cinq ans, puis appliquez la stratégie à toutes les instances SharePoint et Groupes Microsoft 365.
+
+2. Vous créez et configurez une étiquette de rétention qui conserve automatiquement le contenu pendant dix ans. Vous publiez cette étiquette pour les administrateurs de site SharePoint, afin qu’ils puissent l’appliquer en tant qu’étiquette par défaut pour être héritée par tous les éléments dans des bibliothèques de documents spécifiques.
+
+**Exemple de suppression d’éléments sur une période plus courte**
+
+Scénario : par défaut, les e-mails ne sont pas conservés, mais sont automatiquement supprimés après dix ans. Toutefois, les e-mails liés à un projet spécifique qui a un nom de code de préversion doivent être automatiquement supprimés au bout d’un an.
+
+1. Vous créez et configurez une stratégie de rétention qui supprime automatiquement le contenu après dix ans et appliquez la stratégie à tous les destinataires Exchange.
+
+2. Vous créez et configurez une étiquette de rétention qui supprime automatiquement le contenu au bout d’un an. Les options d’application de cette étiquette aux e-mails pertinents sont les suivantes :
+    - Vous créez une stratégie d’étiquetage automatique qui identifie le contenu à l’aide du nom de code du projet comme mot clé et appliquez la stratégie à tous les destinataires Exchange
+    - Vous publiez l’étiquette et indiquez aux utilisateurs impliqués dans le projet comment créer une règle automatique dans Outlook qui applique cette étiquette
+    - Vous publiez l’étiquette et demandez aux utilisateurs de créer un dossier dans Outlook pour tous les e-mails liés au projet et ils appliquent l’étiquette publiée au dossier, puis créez une règle Outlook pour déplacer tous les e-mails liés au projet vers ce dossier
 
 ## <a name="how-long-it-takes-for-retention-settings-to-apply"></a>Combien de temps est nécessaire pour appliquer les paramètres de rétention
 
@@ -293,7 +318,7 @@ Lorsque vous créez une stratégie de rétention ou une stratégie d’étiquett
     
     Exemple : les messages électroniques et les documents OneDrive pour les cadres nécessitent une période de rétention plus longue que les utilisateurs standard. Vous créez une stratégie de rétention avec une étendue adaptative qui utilise la fonction d’attribut Azure AD « Executive », puis sélectionnez les emplacements des comptes de messagerie Exchange et OneDrive pour la stratégie. Il n’est pas nécessaire de spécifier des adresses e-mail ou des URL OneDrive pour ces utilisateurs, car l’étendue adaptative récupère automatiquement ces valeurs. Pour les nouveaux cadres, il n’est pas nécessaire de reconfigurer la stratégie de rétention, car ces nouveaux utilisateurs avec leurs valeurs correspondantes pour les e-mails et les OneDrive sont automatiquement pris en compte.
 
-- Une **étendue statique** n’utilise pas de requêtes et est limitée dans la configuration dans la façon dont elle peut s’appliquer à toutes les instances pour un emplacement spécifié, ou utiliser l’inclusion et les exclusions pour des instances spécifiques pour cet emplacement. Ces trois choix sont parfois appelés « à l’échelle de l’organisation », « inclut » et « exclut » respectivement.
+- Une **étendue statique** n’utilise pas de requêtes et est limitée dans la configuration, car elle peut s’appliquer à toutes les instances pour un emplacement spécifié, ou utiliser l’inclusion et les exclusions pour des instances spécifiques pour cet emplacement. Ces trois choix sont parfois appelés « org-wide », « includes » et « excludes », respectivement.
     
     Exemple : les messages électroniques et les documents OneDrive pour les cadres nécessitent une période de rétention plus longue que les utilisateurs standard. Vous créez une stratégie de rétention avec une étendue statique qui sélectionne les Exchange et les OneDrive de comptes pour la stratégie. Pour l’emplacement de messagerie Exchange, vous pouvez identifier un groupe qui contient uniquement les cadres. Vous spécifiez donc ce groupe pour la stratégie de rétention, et l’appartenance au groupe avec les adresses de messagerie respectives est récupérée lors de la création de la stratégie. Pour l'emplacement des comptes OneDrive, vous devez identifier et ensuite spécifier des URL OneDrive individuels pour chaque cadre. Pour les nouveaux cadres, vous devez reconfigurer la stratégie de rétention pour ajouter les nouvelles adresses e-mail et OneDrive URL. Vous devez également mettre à jour les URL OneDrive lors de chaque modification du nom d’utilisateur principal (UPN) d’un cadre.
     
@@ -301,15 +326,15 @@ Lorsque vous créez une stratégie de rétention ou une stratégie d’étiquett
 
 Avantages de l’utilisation des étendues adaptatives :
 
-- Aucune limite sur le nombre [d’éléments par stratégie.](retention-limits.md#maximum-number-of-items-per-policy) Bien que les stratégies adaptatives soient toujours soumises au [nombre maximal](retention-limits.md#maximum-number-of-policies-per-tenant) de stratégies par client, une configuration plus flexible entraîne probablement beaucoup moins de stratégies.
+- Aucune limite sur le [nombre d’éléments par stratégie](retention-limits.md#maximum-number-of-items-per-policy). Bien que les stratégies adaptatives soient toujours soumises aux limitations de [nombre maximal de stratégies par locataire](retention-limits.md#maximum-number-of-policies-per-tenant), la configuration plus flexible entraînera probablement beaucoup moins de stratégies.
 
-- Ciblage plus puissant pour vos besoins de rétention Par exemple, vous pouvez affecter différents paramètres de rétention aux utilisateurs en fonction de leur emplacement géographique en utilisant des attributs Azure AD existants sans la surcharge administrative de création et de maintenance de groupes à cet effet.
+- Un ciblage plus puissant pour vos exigences de rétention. Par exemple, vous pouvez attribuer différents paramètres de rétention aux utilisateurs en fonction de leur emplacement géographique en utilisant les attributs Azure AD existants, sans avoir à créer et à gérer des groupes à cette fin.
 
 - L’appartenance basée sur une requête offre une résilience contre les changements d’entreprise qui peuvent ne pas être reflétés de manière fiable dans l’appartenance à un groupe ou les processus externes qui reposent sur la communication entre les services.
 
 - Une stratégie de rétention unique peut inclure des emplacements pour Microsoft Teams et Yammer, alors que lorsque vous utilisez une étendue statique, ces emplacements nécessitent leur propre stratégie de rétention.
     
-- Vous pouvez appliquer des paramètres de rétention spécifiques aux boîtes aux lettres inactives. Cette configuration n’est pas possible avec une étendue statique, car au moment de l’attribution de la stratégie, les étendues statiques ne prennent pas en charge l’inclusion spécifique de destinataires avec des boîtes aux lettres inactives.
+- Vous pouvez appliquer des paramètres de rétention spécifiques aux seules boîtes aux lettres inactives. Cette configuration n'est pas possible avec une portée statique car, au moment où la politique est attribuée, les portées statiques ne prennent pas en charge l'inclusion spécifique des destinataires dont les boîtes aux lettres sont inactives.
 
 Avantages de l’utilisation d’étendues statiques :
 
@@ -334,7 +359,7 @@ Vous pouvez configurer plusieurs stratégies de rétention pour Microsoft 365 de
 
 Vous devez spécifier l’adresse e-mail exacte d’un utilisateur, l’URL exacte d’un site ou l’adresse e-mail exacte de Microsoft 365 groupe.
 
-L’option pour les sites inclut OneDrive comptes. Pour plus d’informations sur la spécification de l’URL du compte OneDrive d’un utilisateur, voir Obtenir la liste de toutes les URL de OneDrive [utilisateur dans votre organisation.](/onedrive/list-onedrive-urls)
+L'option pour les sites inclut les comptes OneDrive. Pour savoir comment spécifier l'URL du compte OneDrive d'un utilisateur, consultez la section [Obtenir une liste de toutes les URL OneDrive des utilisateurs dans votre organisation](/onedrive/list-onedrive-urls).
 
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Principes de rétention et priorité
 
@@ -614,4 +639,4 @@ Si vous avez configuré des sites SharePoint pour des stratégies de type de con
 
 ## <a name="configuration-guidance"></a>Instructions de configuration
 
-Consultez [Démarrage avec la gouvernance des informations](get-started-with-information-governance.md). Cet article présente des informations sur les abonnements, les autorisations, et des liens vers des instructions de configuration de bout en bout pour des scénarios de rétention.
+Voir [Démarrez avec la gouvernance de l'information](get-started-with-information-governance.md). Cet article contient des informations sur les abonnements et les autorisations, ainsi que des liens vers des conseils de configuration de bout en bout pour les scénarios de conservation.

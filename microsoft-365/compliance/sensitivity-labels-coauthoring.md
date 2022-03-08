@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Activez un paramètre qui permet la co-édition et l’enregistrement automatique dans les applications de bureau pour les documents étiquetés et chiffrés dans SharePoint et OneDrive.
-ms.openlocfilehash: 8be6fc228a623f3a1f76efdf56354ba30beb9650
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 252d32e0f301bf332bf8143082ec86be2f1072ea
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767687"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320044"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Activer la co-édition pour les fichiers chiffrés avec les étiquettes de confidentialité
 
@@ -41,11 +41,11 @@ Pour lire l’annonce de la publication, consultez le billet de blog [la co-édi
 
 Avant d'activer le paramètre de prise en charge de la co-édition pour les applications de bureau Office, il est important de comprendre que cette action apporte des modifications aux métadonnées d'étiquetage qui sont enregistrées et lues dans les fichiers Office.
 
-Les métadonnées d’étiquetage incluent des informations qui identifient votre client et l’étiquette de confidentialité qui vous a été appliquée. Ce paramètre modifie le format des métadonnées et l'emplacement des fichiers Word, Excel et PowerPoint. Vous n’avez pas besoin d’effectuer d’action pour les fichiers chiffrés ou les e-mails ; la modification des métadonnées pour les fichiers chiffrés est rétrocompatible et il n’y a aucune modification pour les e-mails. Toutefois, vous devez connaître les modifications de métadonnées pour les fichiers chiffrés qui peuvent être automatiquement mis à niveau, mais qui ne sont pas rétrocompatibles.
+Les métadonnées d’étiquetage incluent des informations qui identifient votre client et l’étiquette de confidentialité qui vous a été appliquée. Ce paramètre modifie le format des métadonnées et l'emplacement des fichiers Word, Excel et PowerPoint. Vous n’avez pas besoin d’effectuer d’action pour les fichiers chiffrés ou les e-mails, car la modification des métadonnées pour les fichiers chiffrés est à compatibilité descendante et il n’y a aucune modification pour les e-mails. Toutefois, vous devez connaître les modifications de métadonnées pour les fichiers chiffrés qui peuvent être automatiquement mis à niveau, mais qui ne sont pas rétrocompatibles.
 
 Cette modification affecte à la fois les dossiers nouvellement étiquetés et les dossiers déjà étiquetés. Lorsque vous utilisez des applications et des services qui prennent en charge le paramètre de co-édition :
 - Pour les fichiers nouvellement étiquetés, seuls le nouveau format et le nouvel emplacement sont utilisés pour les métadonnées d'étiquetage.
-- Pour les fichiers déjà étiquetés, la prochaine fois que le fichier est ouvert et enregistré, si le fichier possède des métadonnées dans l’ancien format et dans l’ancien emplacement, il est copié dans le nouveau format et le nouvel emplacement.
+- Pour les fichiers déjà étiquetés, la prochaine fois que le fichier est ouvert et enregistré, si le fichier a des métadonnées dans l’ancien format et l’ancien emplacement, ces informations sont copiées dans le nouveau format et le nouvel emplacement.
 
 Pour en savoir plus sur le changement de métadonnées à partir des ressources suivantes :
 
@@ -81,8 +81,8 @@ Avant d’activer cette fonctionnalité, assurez-vous de comprendre les conditio
 - Microsoft 365 Apps for enterprise :
     - **Windows** : version minimale 2107 du Canal actuel ou du Canal Enterprise mensuel
     - **macOS** : version minimale 16.51
-    - **iOS** : pas encore pris en charge
-    - **Android** : pas encore pris en charge
+    - **iOS**: désormais en préversion lorsque vous [choisissez](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) la version minimale 2.58
+    - **Android**: désormais en préversion lorsque vous [choisissez](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) la version minimale 16.0.14931
 
 - Tous les outils opérationnels, applications et services de votre client doivent prendre en charge la nouvelle [métadonnée d’étiquetage](#metadata-changes-for-sensitivity-labels). Si vous utilisez l’une des versions suivantes, vérifiez les versions minimales requises :
     
@@ -107,6 +107,12 @@ Les services Microsoft 365 prennent automatiquement en charge les nouvelles mét
 - [Stratégies de protection contre la perte de données qui utilisent des étiquettes de confidentialité en tant que conditions](dlp-sensitivity-label-as-condition.md)
 - [Microsoft Defender for Cloud Apps configuré pour appliquer des étiquettes de confidentialité](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
 
+### <a name="opt-in-to-the-preview-of-co-authoring-for-ios-and-android"></a>Participer à la préversion de la co-édition pour iOS et Android
+
+Pour essayer l'avant-première de la co-rédaction pour iOS et Android, vous devez avoir les versions minimales indiquées dans la section précédente, et également demander que votre locataire soit ajouté à l'aperçu : [Consentement à l'activation de la co-création pour les fichiers cryptés avec des étiquettes de sensibilité sur mobile](https://ncv.microsoft.com/5Oob3oDj1O)
+
+Pour plus d’informations, consultez l’annonce de billet de blog suivante : [La co-édition sur Microsoft Information Protection de documents chiffrés est désormais en préversion publique sur les appareils mobiles](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/co-authoring-on-microsoft-information-protection-encrypted/ba-p/3081369)
+
 ## <a name="limitations"></a>Limites
 
 Avant d’activer le paramètre de client pour la co-édition de fichiers chiffrés avec des étiquettes de niveau de confidentialité, assurez-vous de comprendre les limitations suivantes de cette fonctionnalité.
@@ -115,14 +121,14 @@ Avant d’activer le paramètre de client pour la co-édition de fichiers chiffr
     
     Spécifique à Excel : les métadonnées pour une étiquette de confidentialité qui n’applique pas le chiffrement peuvent être supprimées d’un fichier si quelqu’un modifie et enregistre ce fichier à l’aide d’une version d’Excel qui ne prend pas en charge les modifications des métadonnées pour les étiquettes de niveau de sécurité.
 
-- Les applications Office pour iOS et Android ne sont pas pris en charge actuellement.
+- La prise en charge des applications Office pour iOS et Android est actuellement en [préversion](https://office.com/insider).
 
 - La co-création et l'enregistrement automatique ne sont pas pris en charge et ne fonctionnent pas pour les documents Office étiquetés et chiffrés qui utilisent l'une des [configurations suivantes pour le chiffrement](encryption-sensitivity-labels.md#configure-encryption-settings) :
     - **Autoriser les utilisateurs à attribuer des autorisations lorsqu'ils appliquent l'étiquette** et la case à cocher **Dans Word, PowerPoint et Excel, inviter les utilisateurs à spécifier les autorisations** est sélectionnée. Cette configuration est parfois appelée « autorisations définies par l'utilisateur ».
     - **L’expiration de l'accès des utilisateurs au contenu** est définie sur une valeur autre que **Jamais**.
     - **Chiffrement à double clé** est sélectionnée.
     
-    Pour les étiquettes avec l’une de ces configurations de chiffrement, les étiquettes s’affichent dans les applications Office. Toutefois, lorsque les utilisateurs sélectionnent ces étiquettes et que personne d'autre ne modifie le document, ils sont avertis que la co-édition et l'enregistrement automatique ne seront pas disponibles. Si quelqu’un d’autre modifie le document, un message indique à l’utilisateur que les étiquettes ne peuvent pas être appliquées.
+    Pour les étiquettes avec l’une de ces configurations de chiffrement, les étiquettes s’affichent dans les applications Office. Toutefois, lorsque les utilisateurs sélectionnent ces étiquettes et que personne d’autre ne modifie le document, ils sont avertis que la co-création et l’enregistrement automatique ne seront pas disponibles. Si quelqu’un d’autre modifie le document, un message indique à l’utilisateur que les étiquettes ne peuvent pas être appliquées.
 
 - Si vous utilisez le client d’étiquette unifiée Azure Information Protection : consultez la documentation de ce client d' [pour plus d’informations requises ou de limitations](/azure/information-protection/known-issues#known-issues-for-co-authoring). 
     > [!NOTE]
@@ -156,7 +162,7 @@ Une fois que vous avez activé la co-édition de fichiers avec des étiquettes d
 
 ![Option indiquant que la co-édition est activée pour les étiquettes de confidentialité.](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
-Comme vous le voyez sur la capture d'écran lorsque ce paramètre a été activé, vous pouvez contacter le [Support Microsoft](../admin/get-help-support.md) et demander à ce que ce paramètre soit désactivé. Cette demande peut prendre plusieurs jours et vous devrez prouver que vous êtes un administrateur général pour votre client. Attendez-vous à ce que les frais de support habituels s'appliquent. 
+Comme vous le voyez sur la capture d'écran lorsque ce paramètre a été activé, vous pouvez contacter le [Support Microsoft](../admin/get-help-support.md) et demander à ce que ce paramètre soit désactivé. Cette demande peut prendre plusieurs jours et vous devrez prouver que vous êtes un administrateur général pour votre locataire. Attendez-vous à ce que les frais de support habituels s'appliquent. 
 
 Si un ingénieur du support technique désactive ce paramètre pour votre client :
 

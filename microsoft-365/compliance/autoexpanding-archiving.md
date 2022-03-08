@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Découvrez l'archivage en auto-expansion, qui fournit un stockage d’archivage supplémentaire pour Exchange Online boîtes aux lettres.
-ms.openlocfilehash: 527eea4f0fe97ba689cb70bddb78091112e1f353
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 1b4b8d81868cc97fc8e8faf5b0dc449e4c07a868
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241334"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328860"
 ---
 # <a name="learn-about-auto-expanding-archiving"></a>En savoir plus sur l’archivage à extension automatique
 
@@ -48,7 +48,7 @@ Voici une vue d’ensemble rapide du processus.
 2. Un administrateur active l’archivage en auto-expansion pour la boîte aux lettres. Lorsque la boîte aux lettres d’archivage (y compris le dossier Éléments récupérables) atteint 90 Go, elle est convertie en archivage en auto-expansion et Microsoft 365 ajoute de l’espace de stockage à l’archive jusqu’à ce qu’elle atteigne une taille maximale de 1,5 To. La mise en service de l’espace de stockage supplémentaire peut prendre jusqu’à 30 jours.
 
    > [!NOTE]
-   > Si une boîte aux lettres est placée en conservation ou affectée à une stratégie de rétention, le quota de stockage de la boîte aux lettres d’archivage est augmenté jusqu’à 110 Go lorsque l’archivage en auto-expansion est activé. De même, le quota d’avertissement d’archivage est augmenté jusqu’à 100 Go.
+   > Si une boîte aux lettres est placée en conservation ou affectée à une stratégie de rétention, le quota de stockage de la boîte aux lettres d’archivage est augmenté à 110 Go lorsque l’archivage à extension automatique est activé. De même, le quota d’avertissement d’archivage est augmenté à 100 Go.
 
 3. Microsoft 365 ajoute automatiquement plus d’espace de stockage si nécessaire.
 
@@ -92,11 +92,11 @@ Voici quelques éléments à prendre en compte lorsque vous utilisez Outlook ou 
 
 - Si une boîte aux lettres d’archivage possède au moins une zone de stockage en auto-expansion, vous ne pouvez pas supprimer un dossier de la boîte aux lettres d’archivage ou de l’archive auxiliaire. En d’autres termes, une fois qu’une zone de stockage en auto-expansion a été mise en service, vous ne pouvez supprimer aucun dossier dans l’archive.
 
-- Vous pouvez supprimer des éléments dans une zone de archivage en auto-expansion. Toutefois, vous ne pouvez pas utiliser la fonctionnalité Récupérer les éléments supprimés pour récupérer un élément une fois l’archivage en auto-expansion activé pour une boîte aux lettres.
+- Vous pouvez supprimer des éléments dans une zone de stockage développée automatiquement. Toutefois, vous ne pouvez pas utiliser la fonctionnalité Récupérer les éléments supprimés pour récupérer un élément après l’activation de l’archivage à extension automatique pour une boîte aux lettres.
 
-- La recherche d’archivage en auto-expansion est disponible dans Outlook pour le web (OWA). Comme pour les archives en ligne, vous pouvez rechercher des éléments qui ont été déplacés vers une zone de stockage supplémentaire. Lorsque l’archive est sélectionnée en tant qu’étendue de recherche dans OWA, toutes les archives (y compris les archivage en auto-expansion) et leurs sous-documents correspondants sont recherchés.
+- La recherche d’archivage en auto-expansion est disponible dans Outlook pour le web (OWA). Comme pour les archives en ligne, vous pouvez rechercher des éléments qui ont été déplacés vers une zone de stockage supplémentaire. Lorsque l’archive est sélectionnée en tant qu’étendue de recherche dans OWA, toutes les archives (y compris les archivage en auto-expansion) et leurs sous-documents correspondants sont recherchés. Notez que la recherche n’est pas prise en charge pour la fonctionnalité d’archivage à extension automatique dans une situation d’archivage cloud uniquement (boîte aux lettres principale toujours locale).
 
-- La recherche d’archive en auto-expansion est disponible dans Outlook bureau dans le canal actuel (prévisualisation). Dans cet aperçu, l’étendue boîte aux lettres actuelle est disponible, ce qui vous permet d’effectuer des recherches dans l’archive en auto-expansion. Pour plus d’informations à ce sujet et d’autres fonctionnalités de support Microsoft Search, consultez [Comment Outlook pour Windows connecté à Exchange Online utilise Microsoft Search](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045). 
+- La recherche d’archives développée automatiquement est disponible dans Outlook pour Windows dans le canal d’entreprise mensuel. Avec cette mise à jour, l’étendue de la boîte aux lettres actuelle est disponible, ce qui vous permet de rechercher dans l’archive développée automatiquement. Notez que la recherche n’est pas prise en charge pour la fonctionnalité d’archivage à extension automatique dans une situation d’archivage cloud uniquement (boîte aux lettres principale toujours locale). Pour plus d’informations à ce sujet et d’autres fonctionnalités de support Microsoft Search, consultez [Comment Outlook pour Windows connecté à Exchange Online utilise Microsoft Search](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045). 
 
 - Le nombre d’éléments Outlook et le nombre de lecture/non lus (en Outlook et Outlook sur le web) dans une archive en auto-expansion peuvent ne pas être exacts.
 

@@ -396,6 +396,8 @@
       items:
         - name: En savoir plus sur les étiquettes de niveau de confidentialité
           href: sensitivity-labels.md
+        - name: Pourquoi choisir l'étiquetage intégré MIP pour les applications Office ?
+          href: sensitivity-labels-aip.md
         - name: Prise en main des étiquettes de confidentialité
           href: get-started-with-sensitivity-labels.md
         - name: Créer et publier des étiquettes de confidentialité
@@ -410,6 +412,8 @@
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: Activer la co-édition pour les documents chiffrés par des étiquettes de confidentialité
           href: sensitivity-labels-coauthoring.md
+        - name: Définir le type de lien de partage par défaut en utilisant les étiquettes de confidentialité
+          href: sensitivity-labels-default-sharing-link.md
         - name: Gérer les étiquettes de confidentialité dans les applications Office
           href: sensitivity-labels-office-apps.md
     - name: Chiffrement
@@ -774,7 +778,7 @@
               href: export-a-content-search-report.md
             - name: Utiliser un script pour ajouter des utilisateurs à une conversation eDiscovery
               href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
-            - name: Créer un rapport sur les conservations eDiscovery
+            - name: Utiliser un script pour créer un rapport sur les prises
               href: create-a-report-on-holds-in-ediscovery-cases.md
             - name: Afficher les statistiques de mot clé pour les résultats de recherche
               href: view-keyword-statistics-for-content-search.md
@@ -830,8 +834,15 @@
               href: manage-hold-notification.md
             - name: Reconnaitre une notification de conservation
               href: acknowledge-hold-notification.md
+            - name: Gérer les responsables de l’émission
+              href: advanced-ediscovery-issuing-officers.md
+            - name: Gérer les modèles de communication des consignataires
+              href: advanced-ediscovery-communications-library.md
         - name: Gérer les suspensions
           href: managing-holds.md
+          items:
+            - name: Utiliser un script pour créer un rapport sur les prises
+              href: create-a-report-on-holds-in-ediscovery-cases.md
         - name: Gérer les erreurs de traitement
           href: processing-data-for-case.md
           items:
@@ -1036,8 +1047,10 @@
           href: compliance-manager-templates-format-excel.md
         - name: Liste des modèles de Gestionnaire de conformité
           href: compliance-manager-templates-list.md
-        - name: Affectation et exécution d’actions d’amélioration
+        - name: Travailler avec des actions d'amélioration
           href: compliance-manager-improvement-actions.md
+        - name: Créer et gérer des stratégies d'alerte
+          href: compliance-manager-alert-policies.md
         - name: Comment votre score de conformité est calculé
           href: compliance-score-calculation.md
         - name: Outil Analyseur de configuration de la conformité

@@ -2,8 +2,8 @@
 title: 'Étape 2 : fournir l’accès à distance aux applications et services locaux'
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Assurez-vous que vos employés à distance peuvent accéder aux ressources locales tout en optimisant l’accès aux services cloud de Microsoft 365.
-ms.openlocfilehash: 11fb3e37efe67103780fc4d234837da3bc15d97f
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 6baaa8c4e3935676278ff411d0282b82143056fc
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886299"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328650"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Étape 2 : fournir l’accès à distance aux applications et services locaux
 
@@ -67,7 +67,7 @@ Pour plus d’informations et de conseils, voir [Optimiser la connectivité d’
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>Déployer l’accès à distance lorsque toutes vos applications sont des applications web et que vous avez une identité hybride
 
-Si vos employés distants n’utilisent pas de client VPN classique et que vos comptes d’utilisateurs et groupes locaux sont synchronisés avec Azure AD, vous pouvez utiliser le proxy d’application Azure AD pour fournir un accès à distance sécurisé pour les applications web hébergées sur des serveurs intranet locaux. Les applications web incluent les sites SharePoint Server, les serveurs Outlook Web Access ou toute autre application métier basée sur le web.
+Si vos travailleurs à distance n’utilisent pas de client VPN traditionnel et que vos comptes et groupes d’utilisateurs locaux sont synchronisés avec Azure AD, vous pouvez utiliser Azure AD Proxy d'application pour fournir un accès à distance sécurisé pour les applications web hébergées sur des serveurs locaux. Les applications web incluent des sites SharePoint Server, des serveurs Outlook Accès web ou toute autre application métier web.
 
 Voici les composants du proxy d’application Azure AD.
 
