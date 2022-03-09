@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez créer une conservation associée à un cas eDiscovery principal dans Microsoft 365 conserver le contenu pertinent pour un examen ou un dossier juridique.
-ms.openlocfilehash: 0d80197becdeb07c917602ff27a1ad9b2c882029
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 976c0e47195c520620cfa57e996cee42df509593
+ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322112"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63406034"
 ---
 # <a name="create-an-ediscovery-hold"></a>Créer une suspension de cas eDiscovery
 
@@ -81,6 +81,9 @@ Pour créer une attente eDiscovery associée à un cas core eDiscovery :
 10. Après avoir configuré une attente basée sur une requête, cliquez sur **Suivant**.
 
 11. Examinez vos paramètres (et modifiez-les si nécessaire), puis cliquez sur **Envoyer**.
+
+> [!NOTE]
+> Lorsque vous créez une mise en attente basée sur une requête, tout le contenu provenant d’emplacements sélectionnés est initialement mis en attente. Par la suite, tout contenu qui ne correspond pas à la requête spécifiée est effacé de la attente tous les sept à 14 jours. Toutefois, une attente basée sur une requête n’effacera pas le contenu si plus de cinq attentes de n’importe quel type sont appliquées à un emplacement de contenu, ou si un élément présente des problèmes d’indexation.
 
 ## <a name="query-based-holds-placed-on-sites"></a>Des mises en garde basées sur des requêtes sont placées sur des sites
 

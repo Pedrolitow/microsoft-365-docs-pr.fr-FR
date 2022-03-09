@@ -2,8 +2,8 @@
 title: Vue d’ensemble
 description: Comprendre la base de test
 search.appverid: MET150
-author: mansipatel-usl
-ms.author: mapatel
+author: Tinacyt
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
@@ -14,16 +14,16 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: b235fcb0de470f23afd75d8abd91d07451d040bd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8d7539dfeecf1e34a639bc506f312c35a4243323
+ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174122"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63405922"
 ---
 # <a name="what-is-test-base-for-microsoft-365"></a>Qu’est-ce que la Base de Microsoft 365 ?
 
-La base de test Microsoft 365 (Base de test) est le service de validation de Microsoft basé dans l’environnement Azure sécurisé.
+Test Base for Microsoft 365 (Test Base) est le service de validation de Microsoft basé dans l’environnement Azure sécurisé.
 Avec la base de test, les éditeurs de logiciels (SV) et les intégrateurs de système peuvent accélérer la validation de leurs applications par rapport aux builds de fonctionnalités et de sécurité Windows pré-publiées. Il s’agit d’une collaboration très engagée entre les partenaires de sv et Microsoft qui permet de tester, de valider et de mettre à jour conjointement.
 
 La base de test offre une excellente opportunité de créer et de maintenir un service de validation sécurisé sur Azure, où les clients et les partenaires peuvent mettre en place et tester les charges de travail de leur application par rapport à nos mises à jour de sécurité pré-publiées.
@@ -32,7 +32,7 @@ Avec la base de test, les SV offrent une meilleure visibilité sur les problème
 
 Ce nouveau service permettra aux SV de simplifier et d’améliorer l’efficacité des tests. Enterprise clients bénéficieront des tests sv et Microsoft dans un environnement de collaboration et seront plus certain que leurs applications fonctionneront comme prévu.
 
-**Avantages La base de test offre aux entreprises et à leurs partenaires sv les suivants**:
+**Avantages De la base de test, les entreprises et leurs partenaires sv incluent** :
 
 - Un déploiement plus rapide des mises à jour de sécurité pour sécuriser vos appareils ;
 - réduction des coûts de validation des mises à jour en hébergeant les modifications du système d’exploitation et l’application dans le même environnement ;
@@ -45,23 +45,23 @@ Ce guide est divisé en quatre (4) parties pour garantir une expérience sans ac
 
 1. Vue **d’ensemble** qui fournit des instructions détaillées et détaillées sur la façon de télécharger votre application via notre portail d’intégration en libre-service.
 
-2. La section **Démarrage rapide,** qui fournit des informations sur le format de la structure de dossiers compressés et ce que vous devez savoir lors de la préparation de vos scripts de test.
+2. La section **Démarrage rapide** , qui fournit des informations sur le format de la structure de dossiers compressés et ce que vous devez savoir lors de la préparation de vos scripts de test.
 
 3. Guide **de la how-to** qui fournit un plan détaillé sur l’utilisation de Test Base pour déduire les résultats des tests.
 
 4. La section **Référence** qui fournit des réponses aux questions typiques que nous recevons de nos clients.
 
-## <a name="test-base-is-in-public-preview"></a>La base de test est en prévisualisation publique !
+## <a name="test-base-has-reached-general-availability"></a>La base de test a atteint la disponibilité générale
 
-La base de test a été officiellement déclarée lors de la `Public Preview` conférence Microsoft Inspire en juillet 2021.
+La base de test a été officiellement déclarée disponibilité générale lors de la conférence Microsoft Ignite de novembre 2021. 
 
-Cela signifie que toute personne ayant un compte Azure d’entreprise valide peut intégrer ses garanties de test et commencer rapidement à tester ses applications sur le service.
+Cela signifie que toute personne  ayant un compte Azure d’entreprise valide peut intégrer ses garanties de test et commencer rapidement à tester ses applications sur le service.
 
 ## <a name="who-should-onboard"></a>Qui devez-vous intégrer ?
 
 Nous encourageons tous les éditeurs de logiciels, les intégrateurs de système (SIS) à intégrer leurs applications, leurs binaires et leurs scripts de test sur le service.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Suivre le lien pour commencer
 > [!div class="nextstepaction"]

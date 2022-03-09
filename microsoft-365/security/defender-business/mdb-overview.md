@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/01/2022
+ms.date: 03/08/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 81afceeaf1307c2f65d718d009294720d7f6f3d9
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4070cb273a64f34468f313f79c9c51c400bfe7db
+ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323712"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63406205"
 ---
 # <a name="overview-of-microsoft-defender-for-business"></a>Vue d’ensemble de Microsoft Defender pour les entreprises
 
@@ -36,7 +36,7 @@ Microsoft Defender pour Entreprise est une nouvelle solution de sécurité de po
 
 Regardez la vidéo suivante pour en savoir plus sur Defender entreprise :
 
-[:::image type="content" source="media/mdb-youtubevideo1.jpg" alt-text="Capture d’écran de la vidéo YouTube sur Defender entreprise.":::](https://aka.ms/MDB-MicrosoftMechanics)
+> [!VIDEO https://www.youtube.com/embed/umhUNzMqZto]
 
 Cet article décrit les fonctionnalités incluses dans Defender for Business, avec des liens pour en savoir plus sur ces fonctionnalités.
 
@@ -78,7 +78,7 @@ Avec Defender entreprise, vous pouvez protéger les appareils et les données ut
    - [Afficher ou modifier des stratégies de sécurité](mdb-view-edit-policies.md)
    - [Gérer des règles personnalisées pour les stratégies de pare-feu](mdb-custom-rules-firewall.md)  
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [En savoir plus sur le processus de configuration simplifié dans Microsoft Defender entreprise](mdb-simplified-configuration.md)
 

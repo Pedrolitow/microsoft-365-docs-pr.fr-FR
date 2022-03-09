@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Utilisez la recherche de contenu dans le Centre de conformité Microsoft 365 pour effectuer une collection ciblée, qui recherche des éléments dans une boîte aux lettres ou un dossier de site spécifique.
-ms.openlocfilehash: 9de0c562f570a3028c7a96698241ac1be06b8ec1
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: a72984e3d4363dfd5d89e6167621dd65c9d57653
+ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321950"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63406020"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Utiliser la recherche de contenu pour les collections ciblées
 
@@ -39,7 +39,7 @@ L’outil de recherche de contenu dans le Centre de conformité Microsoft 365 n
 
 - Vous devez également avoir le rôle Destinataires de courrier dans votre Exchange Online organisation. Cela est nécessaire pour exécuter la cmdlet **Get-MailboxFolderStatistics** , qui est incluse dans le script. Par défaut, le rôle Destinataires de courrier est attribué aux groupes de rôles Gestion de l’organisation et Gestion des destinataires dans Exchange Online. Pour plus d’informations sur l’attribution d’autorisations dans Exchange Online, voir [Gérer les membres du groupe de rôles](/exchange/manage-role-group-members-exchange-2013-help). Vous pouvez également créer un groupe de rôles personnalisé, lui attribuer le rôle Destinataires de messagerie, puis ajouter les membres qui doivent exécuter le script à l’étape 1. Pour plus d'informations, consultez la rubrique [Gérer des groupes de rôles](/Exchange/permissions-exo/role-groups).
 
-- Le script de cet article prend en charge l’authentification moderne. Vous pouvez utiliser le script tel qu’il est si vous êtes un Microsoft 365 ou une Microsoft 365 Cloud de la communauté du secteur public organisation. Si vous êtes une organisation Office 365 Germany, une organisation Microsoft 365 Cloud de la communauté du secteur public High ou une organisation DoD Microsoft 365, vous devez modifier le script pour l’exécuter correctement. Plus précisément, `Connect-ExchangeOnline` vous devez modifier la ligne et utiliser le paramètre *ExchangeEnvironmentName* (et la valeur appropriée pour le type de votre organisation) pour vous connecter à Exchange Online PowerShell.  En outre, `Connect-IPPSSession` vous devez modifier la ligne et utiliser les paramètres *ConnectionUri* et *AzureADAuthorizationEndpointUri* (et les valeurs appropriées pour le type de votre organisation) pour vous connecter au Centre de sécurité & conformité PowerShell. Pour plus d’informations, voir les exemples dans Connecter pour Exchange Online [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) et Connecter au Centre de sécurité [& conformité PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+- Le script de cet article prend en charge l’authentification moderne. Vous pouvez utiliser le script tel qu’il est si vous êtes un Microsoft 365 ou une Microsoft 365 Cloud de la communauté du secteur public organisation. Si vous êtes une organisation Office 365 Germany, une organisation Microsoft 365 Cloud de la communauté du secteur public High ou une organisation DoD Microsoft 365, vous devez modifier le script pour l’exécuter correctement. Plus précisément, `Connect-ExchangeOnline` vous devez modifier la ligne et utiliser le paramètre *ExchangeEnvironmentName* (et la valeur appropriée pour le type de votre organisation) pour vous connecter à Exchange Online PowerShell.  En outre, `Connect-IPPSSession` vous devez modifier la ligne et utiliser les paramètres *ConnectionUri* et *AzureADAuthorizationEndpointUri* (et les valeurs appropriées pour le type de votre organisation) pour vous connecter au Centre de sécurité & conformité PowerShell. Pour plus d’informations, voir les exemples dans [Connecter pour Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) et Connecter au Centre de sécurité [& conformité PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
 
 - Chaque fois que vous exécutez le script, une nouvelle session PowerShell distante est créée. Cela signifie que vous pouvez utiliser toutes les sessions PowerShell distantes à votre disposition. Pour éviter que cela ne se produise, exécutez la commande suivante pour déconnecter vos sessions PowerShell distantes actives.
 
@@ -57,7 +57,7 @@ L’outil de recherche de contenu dans le Centre de conformité Microsoft 365 n
 
 Le script que vous exécutez lors de cette première étape retourne une liste de dossiers de boîtes aux lettres ou de dossiers SharePoint et OneDrive Entreprise, ainsi que l’ID ou le chemin d’accès correspondant à chaque dossier. Lorsque vous exécutez ce script, il vous invite à fournir les informations suivantes.
 
-- **Adresse de messagerie ou URL du site** : tapez l’adresse e-mail du dépositaire pour renvoyer la liste Exchange dossiers de boîte aux lettres et les ID de dossier. Ou tapez l’URL d’un site SharePoint ou d’un site OneDrive Entreprise pour renvoyer la liste des chemins d’accès pour le site spécifié. Voici quelques exemples :
+- **Adresse de messagerie ou URL du site** : tapez l’adresse e-mail du dépositaire pour renvoyer la liste Exchange dossiers de boîte aux lettres et les ID de dossier. Ou tapez l’URL d’un site SharePoint ou d’un site OneDrive Entreprise pour renvoyer la liste des chemins d’accès pour le site spécifié. Voici quelques exemples :
 
   - **Exchange** :`stacig@contoso.onmicrosoft.com`
 
@@ -195,7 +195,7 @@ Pour afficher une liste de dossiers de boîtes aux lettres ou de noms de lien de
 
 ### <a name="script-output-for-mailbox-folders"></a>Sortie de script pour les dossiers de boîte aux lettres
 
-Si vous obtenez des ID de dossier de boîte aux lettres, le script se connecte à Exchange Online PowerShell, exécute la cmdlet **Get-MailboxFolderStatisics**, puis affiche la liste des dossiers de la boîte aux lettres spécifiée. Pour chaque dossier de la boîte aux lettres, le script affiche le nom du dossier dans la colonne **FolderPath** et l’ID de dossier dans la colonne **FolderQuery** . En outre, le script ajoute le préfixe **folderId** (qui est le nom de la propriété de boîte aux lettres) à l’ID de dossier. Étant donné que **la propriété folderid** est une propriété utilisable dans une recherche, vous l’utiliserez dans une requête de recherche à l’étape  `folderid:<folderid>` 2 pour rechercher ce dossier. Le script affiche un maximum de 100 dossiers de boîte aux lettres.
+Si vous obtenez des ID de dossier de boîte aux lettres, le script se connecte à Exchange Online PowerShell, exécute la cmdlet **Get-MailboxFolderStatisics**, puis affiche la liste des dossiers de la boîte aux lettres spécifiée. Pour chaque dossier de la boîte aux lettres, le script affiche le nom du dossier dans la colonne **FolderPath** et l’ID de dossier dans la colonne **FolderQuery** . En outre, le script ajoute le préfixe **folderId** (qui est le nom de la propriété de boîte aux lettres) à l’ID de dossier. Étant donné que **la propriété folderid** est une propriété utilisable dans une recherche, vous l’utiliserez dans une requête de recherche à l’étape  `folderid:<folderid>` 2 pour rechercher ce dossier. 
 
 > [!IMPORTANT]
 > Le script de cet article inclut une logique de codage qui convertit les valeurs d’ID de dossier de 64 caractères renvoyées par **Get-MailboxFolderStatistics** au même format de 48 caractères qui est indexé pour la recherche. Si vous exécutez simplement la cmdlet **Get-MailboxFolderStatistics** dans PowerShell pour obtenir un ID de dossier (au lieu d’exécuter le script dans cet article), une requête de recherche qui utilise cette valeur d’ID de dossier échoue. Vous devez exécuter le script pour obtenir les ID de dossier correctement formatés qui peuvent être utilisés dans une recherche de contenu.
@@ -208,7 +208,7 @@ L’exemple de l’étape 2 montre la requête utilisée pour rechercher le sous
 
 ### <a name="script-output-for-site-folders"></a>Sortie de script pour les dossiers de site
 
-Si vous recherchez le chemin d’accès de la propriété **documentlink** à partir de sites SharePoint ou OneDrive Entreprise, le script se connecte à Security & Compliance PowerShell, crée une recherche de contenu qui recherche des dossiers dans le site, puis affiche la liste des dossiers situés dans le site spécifié. Le script affiche le nom de chaque dossier et ajoute le préfixe **de documentlink** à l’URL du dossier. Étant donné que **la propriété documentlink** est une propriété utilisable dans une recherche, vous utiliserez la paire propriété:valeur dans une requête de recherche à l’étape `documentlink:<path>` 2 pour rechercher ce dossier. Le script affiche un maximum de 200 dossiers de site. S’il y a plus de 200 dossiers de site, les plus récents sont affichés.
+Si vous recherchez le chemin d’accès de la propriété **documentlink** à partir de sites SharePoint ou OneDrive Entreprise, le script se connecte à Security & Compliance PowerShell, crée une recherche de contenu qui recherche des dossiers dans le site, puis affiche la liste des dossiers situés dans le site spécifié. Le script affiche le nom de chaque dossier et ajoute le préfixe **de documentlink** à l’URL du dossier. Étant donné que **la propriété documentlink** est une propriété utilisable dans une recherche, vous utiliserez la paire propriété:valeur dans une requête de recherche à l’étape `documentlink:<path>` 2 pour rechercher ce dossier. Le script affiche un maximum de 100 dossiers de site. S’il y a plus de 100 dossiers de site, les plus récents sont affichés.
 
 Voici un exemple de sortie renvoyée par le script pour les dossiers de site.
 
@@ -270,7 +270,7 @@ Voici quelques exemples d’utilisation des propriétés  `folderid`  `documentl
   documentlink:"<path>/*" AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 Gardez les points suivants à l’esprit lorsque vous utilisez le script de cet article pour effectuer des collections ciblées.
 
