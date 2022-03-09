@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6e7ab69717256be5d95e69d2342fbe78b00531c5
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: 2e337ef74975bd761de89b4aaae03379344efeed
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "62428743"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311898"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Lorsque vous créez une étiquette de sensibilité, vous pouvez restreindre l’accès au contenu auquel l’étiquette sera appliquée. Par exemple, avec les paramètres de chiffrement d’une étiquette de sensibilité, vous pouvez protéger le contenu comme suit :
 
@@ -193,6 +193,8 @@ Lorsque vous attribuez des autorisations, vous pouvez choisir :
 - Assurez-vous de bien comprendre la [configuration requise et les limitations](#requirements-and-limitations-for-add-any-authenticated-users) de ce paramètre avant de le sélectionner.
 
 - Tout utilisateur spécifique ou groupe de sécurité à extension messagerie, groupe de distribution ou groupe Microsoft 365 ([auparavant groupe Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) dans Azure AD. Le groupe Microsoft 365 peut avoir un abonnement [dynamique](/azure/active-directory/users-groups-roles/groups-create-rule). Notez qu’il n’est pas possible d’utiliser un [groupe de distribution dynamique d’Exchange](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups), car ce type de groupe n’est pas synchronisé avec Azure AD et vous ne pouvez pas utiliser de groupe de sécurité non activé par e-mail.
+    
+    Dans un groupe spécifié pris en charge pour cette option, chaque [utilisateur est authentifié individuellement](/azure/information-protection/prepare#azure-information-protection-requirements-for-user-accounts) par le service Azure Information Protection avant de pouvoir ouvrir le contenu chiffré.
 
 - Tout domaine ou adresse de courrier. Utilisez cette option pour définir tous les utilisateurs d’une autre organisation qui utilisent Azure Active Directory, en entrant un nom de domaine dans cette organisation. Vous pouvez également utiliser cette option pour les fournisseurs de réseaux sociaux en entrant leur nom de domaine tel que, par exemple, **gmail.com**, **hotmail.com** ou **outlook.com**.
 
@@ -429,7 +431,7 @@ Le chiffrement de vos documents et messages électroniques les plus confidentiel
 
 - Lorsque les utilisateurs autorisés ouvrent des documents chiffrés dans leurs applications Office, ils voient le nom et la description de l’étiquette dans une barre de messages jaune en haut de leur application. Lorsque les autorisations de chiffrement s’étendent à des personnes extérieures à votre organisation, examinez attentivement les noms d’étiquettes et les descriptions qui seront visibles dans cette barre de messages lors de l’ouverture du document.
 
-- Pour permettre à plusieurs utilisateurs de modifier un fichier chiffré au même moment, ils doivent tous utiliser Office pour le web.  Ou, pour Windows et Mac, vous avez [activé la co-création pour les fichiers chiffrés avec des étiquettes de sensibilité](sensitivity-labels-coauthoring.md) et les utilisateurs ont les [versions minimales requises](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) de Word, Excel et PowerPoint. Si ce n’est pas le cas et que le fichier est déjà ouvert :
+- Pour que plusieurs utilisateurs modifient un fichier chiffré en même temps, ils doivent tous utiliser Microsoft Office sur le web ou vous avez activé la [co-création pour les fichiers chiffrés avec des étiquettes de confidentialité](sensitivity-labels-coauthoring.md) et tous les utilisateurs disposent [d’applications Office qui la prise en charge](sensitivity-labels-coauthoring.md#prerequisites). Si ce n’est pas le cas et que le fichier est déjà ouvert :
 
   - Dans les applications Office (Windows, Mac, Android et iOS), les utilisateurs remarquent le message **Fichier en cours d'utilisation** incluant le nom de la personne ayant extrait le fichier. Ils peuvent ensuite afficher une copie en lecture seule, enregistrer et modifier une copie du fichier, et recevoir une notification lorsque le fichier est disponible.
   - Dans Office pour le web, les utilisateurs remarquent un message d’erreur indiquant qu’ils ne peuvent pas modifier le document avec d’autres personnes. Puis, ils peuvent sélectionner **Ouvrir en Mode Lecture**.
@@ -440,7 +442,7 @@ Le chiffrement de vos documents et messages électroniques les plus confidentiel
 
 - Si une étiquette qui applique le chiffrement est ajoutée à l’aide d’une application Office lorsque le document est [extrait dans SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de)et que l’utilisateur annule alors l’extraction, le document reste étiqueté et chiffré.
 
-- Sauf si vous avez [activé la co-création pour les fichiers chiffrés avec des étiquettes de confidentialité](sensitivity-labels-coauthoring.md), les actions suivantes pour les fichiers chiffrés ne sont pas prises en charge à partir des applications Office (Windows, Mac, Android et iOS) et les utilisateurs voient un message d’erreur indiquant qu’un problème s’est produit. Les fonctionnalités de SharePoint peuvent toutefois être utilisées en tant qu'alternative :
+- Sauf si vous avez [activé la co-création pour les fichiers chiffrés avec des étiquettes de confidentialité](sensitivity-labels-coauthoring.md), les actions suivantes pour les fichiers chiffrés ne sont pas prises en charge à partir des applications Office (Windows, Mac, Android et iOS) et les utilisateurs voient un message d’erreur indiquant qu’un problème s’est produit. Cependant, la fonctionnalité SharePoint peut être utilisée comme alternative :
 
   - Les utilisateurs peuvent également effectuer ces actions à l’aide d’Office sur le web lorsque vous [activez et configurez le contrôle de version d'une liste ou d'une bibliothèque](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37).
   - Les utilisateurs peuvent également [renommer un fichier, un dossier ou un lien dans une bibliothèque de documents](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) dans SharePoint.

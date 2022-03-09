@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 02/09/2022
+ms.date: 03/07/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 5d464fe0b43aa4395b81723d945019d5450a7fc0
-ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
+ms.openlocfilehash: e19b6400643b29005a6c92323f58f7dc996db49e
+ms.sourcegitcommit: ad6d9fd5ad050c72622a32a191997fe6d7b2deee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62520426"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63353900"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 
@@ -76,7 +76,7 @@ Pour plus d’informations, [voir Gérer les sources pour les mises à jour Anti
 
 ## <a name="monthly-platform-and-engine-versions"></a>Versions mensuelles de la plateforme et du moteur
 
-Pour plus d’informations sur la mise à jour ou l’installation de la mise à jour de la plateforme, voir [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).
+Pour plus d’informations sur la mise à jour ou l’installation de la mise à jour de plateforme, voir [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).
 
 Toutes nos mises à jour contiennent
 
@@ -104,7 +104,8 @@ Version de mise à jour des informations de sécurité : 1.357.8.0 <br/>
 - Remplacé `ScanScheduleTime` par une nouvelle `ScanScheduleOffest` cmdlet [dans Set-MpPreference](/powershell/module/defender/set-mppreference). Cette stratégie configure le nombre de minutes après minuit pour effectuer une analyse programmée.
 - Ajout du paramètre `-ServiceHealthReportInterval` [à Set-MpPreference](/powershell/module/defender/set-mppreference). Cette stratégie configure l’intervalle de temps (en minutes) pour effectuer une analyse programmée.
 - Ajout du paramètre `AllowSwitchToAsyncInspection` [à Set-MpPreference](/powershell/module/defender/set-mppreference). Cette stratégie permet une optimisation des performances, qui permet aux flux réseau inspectés de manière synchrone, de passer à l’inspection asynchrone une fois qu’ils ont été vérifiés et validés.
-- Mises à jour de l’Analyseur de performances v2 : prise en charge de PowerShell à distance et PowerShell 7.x ajoutée. Consultez [l’analyseur de performances pour Antivirus Microsoft Defender](tune-performance-defender-antivirus.md).
+- Mises à jour de l’Analyseur de performances v2 : prise en charge de PowerShell à distance et PowerShell 7.x ajoutée. Voir [Analyseur de performances pour Antivirus Microsoft Defender](tune-performance-defender-antivirus.md).
+- Correction d’un bogue de paquets potentiel en double dans Antivirus Microsoft Defender pilote système d’inspection du réseau.
 
 ### <a name="known-issues"></a>Problèmes connus
 
@@ -406,7 +407,7 @@ Aucun problème connu
 - Télémétrie améliorée des événements d’analyse
 - Amélioration de la surveillance du comportement pour les analyses de mémoire
 - Amélioration de l’analyse des flux de macros
-- Ajouté à `AMRunningMode` la Get-MpComputerStatus cmdlet PowerShell
+- Ajouté à `AMRunningMode` lGet-MpComputerStatus cmdlet PowerShell
 - [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) est ignoré. Antivirus Microsoft Defender s’arrête automatiquement lorsqu’il détecte un autre programme antivirus.
 
 
@@ -612,11 +613,11 @@ Les mises à jour de la plateforme et du moteur sont fournies à une cadence men
 Pendant la phase de support technique (uniquement), les incidents de support commercialement raisonnables sont fournis par le biais du support technique du service clientèle Microsoft & et des offres de support géré de Microsoft (telles que le support Premier). Si un incident de support nécessite une escalade vers le développement pour obtenir des conseils supplémentaires, nécessite une mise à jour non de sécurité ou nécessite une mise à jour de sécurité, les clients sont invités à mettre à niveau vers la dernière version de plateforme ou une mise à jour intermédiaire (*).
 
 > [!NOTE]
-> Si vous déployez manuellement Antivirus Microsoft Defender Platform Update, ou si vous utilisez un script ou un produit de gestion non Microsoft pour déployer Antivirus Microsoft Defender Platform Update, assurez-vous que la version `4.18.2001.10` est installée à partir du catalogue [Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=4.18.2001.10) avant l’installation de la dernière version de Platform Update (N-2).
+> Si vous déployez manuellement Antivirus Microsoft Defender Platform Update, ou si vous utilisez un script ou un produit de gestion non Microsoft pour déployer Antivirus Microsoft Defender Platform Update, assurez-vous que la version est installée à partir du catalogue [Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=4.18.2001.10) avant l’installation de la dernière version `4.18.2001.10` de Platform Update (N-2).
 
 ### <a name="platform-version-included-with-windows-10-releases"></a>Version de plateforme incluse dans Windows 10 versions
 
-Le tableau ci-dessous fournit les versions Antivirus Microsoft Defender de plateforme et de moteur qui sont livrées avec les versions les Windows 10 les plus récentes :<br/><br/>
+Le tableau ci-dessous fournit les versions Antivirus Microsoft Defender de plateforme et de moteur qui sont livrées avec les dernières versions Windows 10 disponibles :<br/><br/>
 
 |Windows 10 version  |Version de la plateforme  |Version du moteur |Phase de prise en charge |
 |:---|:---|:---|:---|
@@ -633,11 +634,26 @@ Pour obtenir Windows 10 de publication, consultez la [Windows de faits sur le cy
 
 ## <a name="updates-for-deployment-image-servicing-and-management-dism"></a>Mises à jour pour la gestion et la maintenance des images de déploiement (DISM)
 
-Nous vous recommandons de mettre à jour vos images d’installation de Windows 10 (éditions Enterprise, Pro et Famille), Windows Server 2019, Windows Server 2022 et Windows Server 2016 OS avec les dernières mises à jour antivirus et anti-programme malveillant. La mise à jour de vos images d’installation du système d’exploitation permet d’éviter un écart de protection.
+Nous vous recommandons de mettre à jour vos images d’installation Windows 10 (Enterprise, Pro et Éditions Famille), Windows Server 2019, Windows Server 2022 et les images d’installation du système d’exploitation Windows Server 2016 avec les dernières mises à jour antivirus et anti-programme malveillant. La mise à jour de vos images d’installation du système d’exploitation permet d’éviter un écart de protection.
 
 Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Windows images d’installation du système d’exploitation](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220305.1</summary>
+
+&ensp;Version du package **: 20220305.1**<br/>
+&ensp;Version de la plateforme **: 4.18.2201.10**<br/>
+&ensp;Version du moteur **: 1.1.18900.3**<br/>
+&ensp;Version de signature **: 1.359.1405.0**<br/>
+
+### <a name="fixes"></a>Correctifs
+- Aucun
+
+### <a name="additional-information"></a>Informations supplémentaires
+- Aucun
+
+<br/>
+</details><details>
 <summary>20220203.1</summary>
 
 &ensp;Version du package **: 20220203.1**<br/>
@@ -895,7 +911,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 
 | Article | Description  |
 |:---|:---|
-|[Mise à jour de Microsoft Defender Windows images d’installation du système d’exploitation](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Passer en revue les packages de mise à jour anti-programme malveillant pour vos images d’installation du système d’exploitation (fichiers WIM et VHD). Obtenez Antivirus Microsoft Defender mises à jour de Windows 10 (éditions Enterprise, Pro et Famille), Windows Server 2019, Windows Server 2022 et Windows Server 2016 images d’installation.  |
+|[Mise à jour de Microsoft Defender Windows images d’installation du système d’exploitation](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Passer en revue les packages de mise à jour anti-programme malveillant pour vos images d’installation du système d’exploitation (fichiers WIM et VHD). Obtenez Antivirus Microsoft Defender mises à jour de Windows 10 (Enterprise, Pro et éditions Famille), Windows Server 2019, Windows Server 2022 et Windows Server 2016 images d’installation.  |
 |[Gérer le téléchargement et l’application des mises à jour de protection](manage-protection-updates-microsoft-defender-antivirus.md) | Les mises à jour de la protection peuvent être livrées via de nombreuses sources. |
 |[Gérer le moment où les mises à jour de la protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md) | Vous pouvez planifier le téléchargement des mises à jour de la protection. |
 |[Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) | Si un point de terminaison manque une mise à jour ou une analyse programmée, vous pouvez forcer une mise à jour ou une analyse la prochaine fois qu’un utilisateur se signe. |

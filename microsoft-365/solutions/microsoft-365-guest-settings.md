@@ -16,15 +16,16 @@ f1.keywords: NOCSH
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 ms.localizationpriority: high
 recommendations: false
 description: Découvrez les paramètres de partage d’invités disponibles dans Microsoft 365 qui peuvent affecter le partage avec les personnes extérieures à votre organisation.
-ms.openlocfilehash: bf0a85f43733ac90d55dde9ded38efd273a9c485
-ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
+ms.openlocfilehash: 2b6aac7a02c6c7c5feda041a2b06147c67dfa285
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2022
-ms.locfileid: "61660109"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316532"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Informations de référence sur les paramètres de partage d’invités de Microsoft 365
 
@@ -68,7 +69,7 @@ Le Centre d’administration Microsoft 365 comporte des paramètres de niveau or
 
 | Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
-|Autoriser les utilisateurs à ajouter de nouveaux invités à l’organisation|Activé|Lorsque ce paramètre est défini sur **Oui**, les membres Azure AD peuvent inviter des invités via Azure AD. Quand il est défini sur **Non**, ils ne le peuvent pas. Lorsqu’il est défini sur **Oui**, les membres de Groupes Microsoft 365 peuvent inviter des invités avec l’approbation du propriétaire. Quand il est défini sur **Non**, les membres de Groupes Microsoft 365 peuvent inviter des invités avec l’approbation du propriétaire, à la condition que celui-ci soit administrateur global. <p> Notez que l’option **Les membres peuvent inviter** fait référence aux membres d’Azure AD (par opposition aux invités), non à des membres de site ou de groupe dans Microsoft 365. <p> Il produit le même effet que le paramètre **Les membres peuvent inviter** dans les paramètres de relations organisationnelles Azure Active Directory.|
+|Autoriser les utilisateurs à ajouter de nouveaux invités à l’organisation|Activé|Lorsque ce paramètre est défini sur **Oui**, les membres Azure AD peuvent inviter des invités via Azure AD. Quand il est défini sur **Non**, ils ne le peuvent pas. Lorsqu'il est défini sur **Oui**, les membres du groupe Microsoft 365 peuvent inviter des invités avec l'approbation du propriétaire ; Lorsqu'il est défini sur **Non**, les membres du groupe Microsoft 365 peuvent inviter des invités avec l’approbation du propriétaire, mais les propriétaires doivent être des administrateurs généraux pour approuver. <p> Notez que l’option **Les membres peuvent inviter** fait référence aux membres d’Azure AD (par opposition aux invités), non à des membres de site ou de groupe dans Microsoft 365. <p> Il produit le même effet que le paramètre **Les membres peuvent inviter** dans les paramètres de relations organisationnelles Azure Active Directory.|
 
 ### <a name="microsoft-365-groups"></a>Groupes Microsoft 365
 
@@ -133,7 +134,7 @@ Le commutateur d’accès invité principal de Teams, **Autoriser l’accès inv
 |Supprimer des messages envoyés|Activé|Lorsque ce paramètre est **Activé**, les invités peuvent supprimer des messages qu’ils ont envoyés. Quand il est **Désactivé**, ils ne le peuvent pas.|
 |Conversation|Activé|Lorsque ce paramètre est **Activé**, les invités peuvent utiliser la conversation dans Teams. Quand il est **Désactivé**, ils ne le peuvent pas.|
 |Utiliser des images Giphy dans les conversations|Activé|Lorsque ce paramètre est **Activé**, les invités peuvent utiliser des images Giphy dans les conversations. Quand il est **Désactivé**, ils ne le peuvent pas.|
-|Évaluation du contenu Giphy|Modéré|Lorsque ce paramètre est défini sur **Autoriser tout le contenu**, les invités peuvent insérer les images Giphy de leur choix dans les conversations, quelle que soit l’évaluation du contenu. Lorsque ce paramètre est défini sur **Modéré**, les invités peuvent insérer des images Giphy dans les conversations, mais sont modérément restreints en lien avec le contenu adulte. Lorsque ce paramètre est défini sur **Strict**, les invités peuvent insérer des images Giphy dans les conversations, mais ne peuvent pas insérer de contenu adulte.|
+|Évaluation du contenu Giphy|Modéré|Lorsqu’il est défini sur **Autoriser tout le contenu**, les invités peuvent insérer tous les Gifs dans les chats, quelle que soit la classification du contenu. Lorsque ce paramètre est défini sur **Modéré**, les invités peuvent insérer des images Giphy dans les conversations, mais sont modérément restreints en lien avec le contenu adulte. Lorsque ce paramètre est défini sur **Strict**, les invités peuvent insérer des images Giphy dans les conversations, mais ne peuvent pas insérer de contenu adulte.|
 |Utiliser des mèmes dans les conversations|Activé|Lorsque ce paramètre est **Activé**, les invités peuvent utiliser des mèmes dans les conversations. Quand il est **Désactivé**, ils ne le peuvent pas.|
 |Utiliser des autocollants dans les conversations|Activé|Lorsque ce paramètre est **Activé**, les invités peuvent utiliser des autocollants dans les conversations. Quand il est **Désactivé**, ils ne le peuvent pas.|
 |Autoriser le lecteur immersif à afficher les messages|Activé|Lorsque ce paramètre est **Activé**, les invités peuvent afficher des messages dans le lecteur immersif. Quand il est **Désactivé**, ils ne le peuvent pas.|
@@ -148,7 +149,7 @@ Ces paramètres affectent tous les sites au sein de l’organisation. Ils n’af
 
 Étant donné que OneDrive est une hiérarchie de sites au sein de SharePoint, les paramètres de partage au niveau de l’organisation affectent directement OneDrive tout comme les autres sites SharePoint.
 
-**Navigation :** Centre d’administration SharePoint > Partage
+**Navigation :** Centre d’administration SharePoint > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Partage**</a>
 
 ![Capture d’écran des paramètres de partage SharePoint au niveau de l’organisation.](../media/external-sharing.png)
 
@@ -159,7 +160,7 @@ Ces paramètres affectent tous les sites au sein de l’organisation. Ils n’af
 
 ### <a name="sharepoint-and-onedrive-advanced-sharing-settings"></a>Paramètres de partage avancé de SharePoint et OneDrive
 
-**Navigation :** Centre d’administration SharePoint > Partage
+**Navigation :** Centre d’administration SharePoint > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Partage**</a>
 
 ![Capture d’écran des paramètres de partage supplémentaires au niveau de l’organisation dans SharePoint.](../media/external-sharing.png)
 
@@ -176,7 +177,7 @@ Ces paramètres affectent tous les sites au sein de l’organisation. Ils n’af
 
 Lorsque des fichiers et dossiers sont partagés sur SharePoint et OneDrive, les destinataires du partage reçoivent un lien contenant des autorisations sur ces fichiers ou dossiers, au lieu de se voir accorder un accès direct à ceux-ci. Plusieurs types de liens sont disponibles et vous pouvez choisir le type de lien par défaut présenté aux utilisateurs qui partagent un fichier ou dossier. Vous pouvez également définir des autorisations et des options d’expiration pour les liens *Tout le monde*.
 
-**Navigation :** Centre d’administration SharePoint > Partage
+**Navigation :** Centre d’administration SharePoint > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Partage**</a>
 
 ![Capture d’écran des paramètres de partage de fichiers et dossiers au niveau de l’organisation dans SharePoint.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
@@ -199,7 +200,10 @@ Vous pouvez définir des autorisations de partage d’invités pour chaque site 
 
 Si une étiquette de confidentialité est appliquée au site, celle-ci peut contrôler les paramètres de partage externe. Pour plus d’informations, voir [Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les groupes Office 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
 
-**Navigation :** Centre d’administration SharePoint > Sites actifs > sélectionnez le site> Onglet des stratégies > Modifier le partage externe
+> [!NOTE]
+> Les paramètres de partage des sites de canal peuvent uniquement être modifiés à l’aide de l’cmdlet [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) PowerShell.
+
+**Navigation :** Centre d’administration SharePoint > <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sites actifs**</a> > sélectionnez le site > Onglet des **Stratégies** > **Modifier le paramètre de partage externe**
 
 ![Capture d’écran des paramètres de partage externe de site SharePoint.](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -211,7 +215,7 @@ Si une étiquette de confidentialité est appliquée au site, celle-ci peut cont
 
 Vous pouvez définir les valeurs par défaut pour le type de lien et les autorisations, ainsi que les paramètres d’expiration sur les liens *Tout le monde* de chaque site. Lorsqu’ils sont définis au niveau du site, ces paramètres remplacent les ceux au niveau de l’organisation. Notez que si les liens *Tout le monde* sont désactivés au niveau de l’organisation, *Tout le monde* n’est pas un type de lien disponible au niveau du site.
 
-**Navigation :** Centre d’administration SharePoint > Sites actifs > sélectionnez le site> Onglet des stratégies > Modifier le partage externe
+**Navigation :** Centre d’administration SharePoint > <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sites actifs**</a> > sélectionnez le site > Onglet des **Stratégies** > **Modifier le paramètre de partage externe**
 
 ![Capture d’écran des paramètres de partage SharePoint au niveau du site.](../media/sharepoint-site-link-sharing-settings.png)
 
