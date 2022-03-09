@@ -15,14 +15,15 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - admindeeplinkCOMPLIANCE
+- admindeeplinkSPO
 recommendations: false
 description: Découvrez comment créer une équipe avec une étiquette de confidentialité unique pour la sécurité.
-ms.openlocfilehash: 293ac9a1a28757dacba39d30e619ac41be786e04
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 2ca2e6320ddd119c4dcb20db2f816c9e9a4453ae
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785881"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324394"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configurer une équipe avec l’isolation de sécurité
 
@@ -160,11 +161,11 @@ Pour publier une étiquette de niveau de sensibilité :
 Une fois l’étiquette publiée, vous devez l’appliquer à l’équipe pour que les paramètres de partage et d’appareils gérés soient pris en compte. Pour ce faire, dans le Centre d’administration SharePoint. Notez que l'étiquette peut prendre un certain temps avant de devenir disponible une fois qu'elle a été publiée.
 
 Pour appliquer l’étiquette de confidentialité, procédez comme suit :
-1. Ouvrez le [Centre d’administration SharePoint](https://admin.microsoft.com/sharepoint).
-2. Sous **Sites**, cliquez sur **Sites actifs**.
-3. Cliquez sur le site associé à l’équipe.
-4. Sous l’onglet **Stratégies**, sous **Confidentialité**, cliquez sur **Modifier**.
-5. Sélectionnez l’étiquette que vous avez créée, puis cliquez sur **Enregistrer**.
+
+1. Ouvrez le Centre d’administration SharePoint et, sous **Sites**, sélectionnez <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sites actifs**</a>.
+1. Sélectionnez le site associé à l’équipe.
+1. Sous l’onglet **Stratégies**, sous **Confidentialité**, cliquez sur **Modifier**.
+1. Sélectionnez l’étiquette que vous avez créée, puis cliquez sur **Enregistrer**.
 
 ## <a name="sharepoint-settings"></a>Paramètres de SharePoint
 
@@ -186,13 +187,13 @@ Le paramètre de partage d’invités que vous avez choisi lors de la création 
 Nous mettrons également à jour le type de lien de partage par défaut pour réduire le risque de partager accidentellement des fichiers et des dossiers avec un public plus large que prévu.
 
 Pour mettre à jour les paramètres du site
-1. Ouvrez le [Centre d’administration SharePoint](https://admin.microsoft.com/sharepoint).
-2. Sous **Sites**, cliquez sur **Sites actifs**.
-3. Cliquez sur le site associé à l’équipe.
-4. Sous l’onglet **Stratégies**, sous **Partage externe**, cliquez sur **Modifier**.
-5. Si vous avez autorisé le partage d’invités lorsque vous avez créé l’étiquette de confidentialité, assurez-vous de sélectionner **Invités nouveaux et existants**. Si vous n’avez pas autorisé le partage lors de la création de l’étiquette, sélectionnez **Uniquement les membres de votre organisation**.
-6. Sous Type de lien de partage par défaut, désactivez la case à cocher **Identique au paramètre de niveau organisation**, puis sélectionnez **Personnes disposant d’un accès existant**.
-7. Cliquez sur **Enregistrer**.
+
+1. Ouvrez le Centre d’administration SharePoint et, sous **Sites**, sélectionnez <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sites actifs**</a>
+1. Sélectionnez le site associé à l’équipe.
+1. Sous l’onglet **Stratégies**, sous **Partage externe**, cliquez sur **Modifier**.
+1. Si vous avez autorisé le partage d’invités lorsque vous avez créé l’étiquette de confidentialité, assurez-vous de sélectionner **Invités nouveaux et existants**. Si vous n’avez pas autorisé le partage lors de la création de l’étiquette, sélectionnez **Uniquement les membres de votre organisation**.
+1. Sous Type de lien de partage par défaut, désactivez la case à cocher **Identique au paramètre de niveau organisation**, puis sélectionnez **Personnes disposant d’un accès existant**.
+1. Sélectionnez **Enregistrer**.
 
 #### <a name="private-channels"></a>Canaux privés
 

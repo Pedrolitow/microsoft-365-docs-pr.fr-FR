@@ -196,7 +196,7 @@
 
 
 ### [Configurer les paramètres du portail]()
-#### [Préférences de configuration](preferences-setup.md)
+#### [Configurer les paramètres généraux de Defender pour point de terminaison](preferences-setup.md)
 #### [Général]()
 ##### [Vérifier l’emplacement du stockage de données et mettre à jour les paramètres de conservation des données](data-retention-settings.md)
 ##### [Configurer des notifications d’alerte](configure-email-notifications.md)
@@ -259,6 +259,12 @@
 #### [Permettre l'intégration des données Corelight](corelight-integration.md)
 #### [Forum aux questions sur la découverte d’appareils](device-discovery-faq.md)
 
+### [Inventaire des appareils]()
+#### [Inventaire des appareils](machines-view-overview.md)
+#### [Exclure des appareils](exclude-devices.md)
+#### [Marqueurs d’événement de la chronologie d’appareil](device-timeline-event-flag.md)
+#### [Gérer des balises et un groupe d’appareils](machine-tags.md)
+
 ### [Appareils de réseau](network-devices.md)
 
 ### [Création de rapports de pare-feu d’hôte dans Microsoft Defender pour point de terminaison](host-firewall-reporting.md)
@@ -320,6 +326,7 @@
 #### [Utilisez une analyse périodique limitée dans Antivirus Microsoft Defender](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [Ajuster la performance de l’Antivirus Microsoft Defender](tune-performance-defender-antivirus.md)
 #### [Compatibilité avec d’autres produits de sécurité](microsoft-defender-antivirus-compatibility.md)
+#### [Rechercher les noms de détection des programmes malveillants pour Microsoft Defender pour point de terminaison](find-defender-malware-name.md)
 
 #### [Obtenir votre antivirus et vos mises à jour anti-programmes malveillants](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Gérer les sources des mises à jour de la protection antivirus Microsoft Defender](manage-protection-updates-microsoft-defender-antivirus.md)
@@ -413,11 +420,6 @@
 ##### [Examiner un domaine](investigate-domain.md)
 ###### [Examiner des événements de connexion qui se produisent d’arrière vers l’avant des proxys](investigate-behind-proxy.md)
 ##### [Examiner un compte d’utilisateur](investigate-user.md)
-
-#### [Liste des appareils]()
-##### [Afficher et organiser la liste des appareils](machines-view-overview.md)
-##### [Marqueurs d’événement de la chronologie d’appareil](device-timeline-event-flag.md)
-##### [Gérer des balises et un groupe d’appareils](machine-tags.md)
 
 #### [Prendre des mesures de réponse]()
 ##### [Prendre des mesures de réponse sur un appareil]()
@@ -548,6 +550,12 @@
 ###### [IP]()
 ####### [Obtenir des alertes liées à l’IP](get-ip-related-alerts.md)
 ####### [Obtenir des statistiques d’IP](get-ip-statistics.md)
+
+###### [Bibliothèque de réponse en direct]()
+####### [Les méthodes et les propriétés de la bibliothèque de réponse en direct](live-response-library-methods.md)
+####### [Répertorier les fichiers d’une bibliothèque](list-library-files.md)
+####### [Charger dans la bibliothèque de réponse en direct](upload-library.md)
+####### [Supprimer de la bibliothèque](delete-library.md)
 
 
 ###### [Ordinateur]()

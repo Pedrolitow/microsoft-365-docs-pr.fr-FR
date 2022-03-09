@@ -58,8 +58,6 @@
           href: office-365-ti.md
         - name: Réponse aux incidents de sécurité Office 365
           href: office365-security-incident-response-overview.md
-        - name: 'Conseils de Sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations Agile'
-          href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
     - name: Déployer
       items:
         - name: Protéger contre les menaces
@@ -296,7 +294,7 @@
           href: air-report-false-positives-negatives.md
         - name: Révision par l’administrateur des messages signalés
           href: admin-review-reported-message.md
-        - name: Récupérer après une attaque par rançongiciel
+        - name: Récupérer d’une attaque ransonmware
           href: recover-from-ransomware.md
         - name: Corriger les e-mails malveillants
           href: remediate-malicious-email-delivered-office-365.md
@@ -312,6 +310,8 @@
           href: manage-quarantined-messages-and-files.md
         - name: Stratégies de mise en quarantaine
           href: quarantine-policies.md
+        - name: Libérer les messages mis en quarantaine à partir de boîtes aux lettres partagées
+          href: view-and-release-quarantined-messages-from-shared-mailboxes.md
         - name: Supprimer les utilisateurs bloqués du portail des utilisateurs restreints
           href: removing-user-from-restricted-users-portal-after-spam.md
         - name: Utiliser le portail Retirer d’une liste pour vous supprimer de la liste des expéditeurs bloqués

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes de rétention.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 464cbe5af7ea08755ec3d49949d4707448566b27
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 2e028bae676b949c662a86178bac5e8ccdc557bf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241406"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317708"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Utiliser le plan de gestion de fichiers pour créer et gérer des étiquettes de rétention
 
@@ -117,9 +117,9 @@ Lorsque vous sélectionnez **Choisir** pour chacun de ces descripteurs facultati
 
 1. Dans la page **Plan de fichiers**, sélectionnez **+ Créer une étiquette** >  **Étiquette de rétention**
 
-2. Suivez les invites pour le processus de configuration.
+2. Suivez les invites pour le processus de configuration. Faites attention au nom que vous choisissez, car il ne peut pas être modifié après l’enregistrement de l’étiquette.
     
-    
+    Pour plus d’informations sur les paramètres de rétention, voir Paramètres pour [conserver et supprimer du contenu.](retention-settings.md#settings-for-retaining-and-deleting-content)
     
     Pour utiliser l’étiquette de rétention pour déclarer des enregistrements, sélectionnez **Marquer les éléments comme enregistrements**, ou **Marquer les éléments comme enregistrements réglementaires**. Pour plus d’information, voir [Configuration d’étiquettes de rétention pour déclarer des enregistrements](declare-records.md#configuring-retention-labels-to-declare-records).
 
@@ -129,7 +129,7 @@ Lorsque vous sélectionnez **Choisir** pour chacun de ces descripteurs facultati
 
 ## <a name="edit-retention-labels"></a>Modifier les étiquettes de rétention
 
-Pour modifier une étiquette de rétention existante, sélectionnez-la dans la page **Plan de fichiers**, puis sélectionnez l’option **Modifier l’étiquette** pour démarrer le processus de Modifier la rétention qui vous permet de modifier la description de l’étiquette et les paramètres éligibles.
+Pour modifier une étiquette de rétention existante, sélectionnez-la dans la page **Plan de gestion de fichiers**, puis sélectionnez l’option **Modifier l’étiquette** pour démarrer le processus de rétention de modification qui vous permet de modifier la description de l’étiquette et tous les paramètres éligibles.
 
 Certains paramètres ne peuvent pas être modifiés après la création et l’enregistrement de l’étiquette, notamment :
 - Nom de l’étiquette de rétention et paramètres de rétention à l’exception de la période de rétention. Cependant, vous ne pouvez pas modifier la période de rétention lorsque la période de rétention est basée sur la période d’étiquetage des éléments.
@@ -217,5 +217,5 @@ Utilisez les informations suivantes pour vous aider à remplir le modèle télé
 ## <a name="next-steps"></a>Prochaines étapes
 
 Maintenant que vous avez créé des étiquettes de rétention, elles sont prêtes à être ajoutées aux éléments en les publiant ou en les appliquant automatiquement :
-- [Publier des étiquettes de rétention et les appliquer dans des applications](create-apply-retention-labels.md)
+- [Publier des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
 - [Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)

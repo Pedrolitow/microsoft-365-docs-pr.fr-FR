@@ -2,8 +2,8 @@
 title: Piloter Microsoft 365 depuis mon domaine personnalisé
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment piloter la fonctionnalité de messagerie depuis mon domaine personnalisé vers une boîte aux lettres Microsoft 365 à l’aide de deux comptes de test uniquement.
-ms.openlocfilehash: bde6daacba3e7adad1a69748074638e651445d8f
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: cc977afd32c1b3b660ec01285c36132a8e1d27b2
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421329"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323736"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Piloter Microsoft 365 depuis mon domaine personnalisé
 
