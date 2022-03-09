@@ -1,9 +1,9 @@
 ---
 title: Étape 4. Protéger les appareils
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: rançongiciel, rançongiciel géré par l’homme, rançongiciel géré par l’homme, HumOR, attaque d'extorsion, attaque de rançongiciel, chiffrement, cryptovirologie, confiance zéro
 description: Utilisez Windows Intune en tant que fournisseur MDA et GAM et les fonctionnalités de sécurité Windows 10 pour protéger vos ressources Microsoft 365 contre les attaques par rançongiciel.
-ms.openlocfilehash: 918dc75d11157bf6358e68a13d04c9a84c0a3837
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 0d7b9a5e125c3f0478948340dce5677a3ae65395
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62887591"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318072"
 ---
 # <a name="step-4-protect-devices"></a>Étape 4. Protéger les appareils
 
@@ -58,7 +58,7 @@ Pour vous protéger contre l’exécution de code par une personne malveillante 
 - Activer [Antivirus Microsoft Defender](/mem/intune/user-help/turn-on-defender-windows).
 - [Bloquez les appels d’API Win32 dans les macros Office](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules#block-win32-api-calls-from-office-macros).
 - Migrez tous les anciens classeurs nécessitant des macros Excel 4.0 vers le format de macro VBA mis à jour en utilisant [ce processus](https://www.microsoft.com/microsoft-365/blog/2010/02/16/migrating-excel-4-macros-to-vba/).
-- [Désactivez l’utilisation de macros non signées](https://support.microsoft.com/topic/enable-or-disable-macros-in-office-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6). Assurez-vous que toutes les macros internes ayant des besoins métier sont connectées et tirent parti des [emplacements fiables](/deployoffice/security/designate-trusted-locations-for-files-in-office) pour vous assurer que les macros inconnues ne s’exécutent pas dans votre environnement.
+- [Désactiver l’utilisation de macros non signées](https://support.microsoft.com/topic/enable-or-disable-macros-in-office-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6). Assurez-vous que toutes les macros internes ayant des besoins métier sont signées et qu’elles tirent parti d’[emplacements approuvés](/deployoffice/security/designate-trusted-locations-for-files-in-office) pour vous assurer que les macros inconnues ne s’exécuteront pas dans votre environnement.
 - Arrêtez les macros XME ou VBA malveillantes en veillant à ce que l’analyse des macros runtime par [l’interface d’analyse des logiciels malveillants](https://www.microsoft.com/security/blog/2021/03/03/xlm-amsi-new-runtime-defense-against-excel-4-0-macro-malware/) (AMSI) soit activée. Cette fonctionnalité (activée par défaut) est activée si le paramètre de stratégie de groupe pour **l’étendue d’analyse de temps d’exécution des macros** est définie sur **Activer pour tous les fichiers** ou **Activer pour les fichiers de confiance basse**. Obtenez les fichiers de modèles de stratégie de groupe les plus récents.
 
 ## <a name="impact-on-users-and-change-management"></a>Impact sur les utilisateurs et la gestion des modifications

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instructions pour publier des étiquettes de rétention afin de pouvoir ensuite les appliquer dans les applications pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas.
-ms.openlocfilehash: 8a190020ce79431471b446c53b584c033c44e13a
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 17a49e2cdeffde5ed3dff91c3dac64e1ddf333ed
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354683"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319432"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publier des étiquettes de rétention et les appliquer dans des applications
 
@@ -64,7 +64,7 @@ Déterminez avant de créer votre stratégie d’étiquette de rétention si ell
     - Si vous utilisez la gouvernance des informations :
         - **Solutions** > **Gouvernance d’informations** > **Stratégies d’étiquette** onglet > **Publier des étiquettes**
     
-    Vous ne voyez pas immédiatement votre solution dans le volet de navigation ? Sélectionnez tout d’abord **Afficher tout**. 
+    Votre solution n’apparaît pas immédiatement dans le volet de navigation ? Sélectionnez d’abord **Afficher tout**. 
 
 2. Suivez les invites pour créer la stratégie d’étiquette de rétention. Faites attention au nom que vous choisissez pour la stratégie, car cela ne peut pas être modifié une fois la stratégie enregistrée.
 
@@ -84,21 +84,29 @@ Pour modifier une stratégie d’étiquette de rétention existante (le type de 
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>Lorsque les étiquettes de rétention sont disponibles à l’application
 
-Si vous publiez des étiquettes de rétention sur SharePoint ou OneDrive, ces étiquettes apparaissent généralement pour que les utilisateurs les sélectionnent dans un délai d’un jour. Vous pouvez toutefois autoriser jusqu’à sept jours. 
+Si vous publiez des étiquettes de rétention sur SharePoint ou OneDrive, ces étiquettes apparaissent généralement pour que les utilisateurs les sélectionnent dans un délai d’un jour. Toutefois, vous pouvez autoriser jusqu’à sept jours. 
 
 Si vous publiez des étiquettes de rétention dans Exchange, l’affichage de ces étiquettes de rétention pour les utilisateurs peut prendre jusqu’à sept jours, et la boîte aux lettres doit contenir au moins 10 Mo de données.
 
 ![Diagramme du moment où les étiquettes publiées prennent effet.](../media/retention-labels-published-timings.png)
 
-Si les étiquettes n’apparaissent pas après sept jours, consultez l’**État** de la stratégie d’étiquette en sélectionnant celle-ci dans la page des **Stratégies d’étiquette** dans le centre de conformité. Si l’état de **Désactivé (erreur)** s’affiche, ainsi qu’un message dans les détails des emplacements indiquant que le déploiement de la stratégie (SharePoint) ou le redéploiement de la stratégie (OneDrive) prend plus de temps que prévu, exécutez une commande PowerShell [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) pour réessayer la distribution de la stratégie :
+Si les étiquettes n’apparaissent pas après sept jours, consultez l’**État** de la stratégie d’étiquette en sélectionnant celle-ci dans la page des **Stratégies d’étiquette** dans le centre de conformité. Si vous voyez **(erreur)** inclus dans l’état et que les détails des emplacements affichent un message indiquant qu’il faut plus de temps que prévu pour déployer la stratégie ou pour essayer de redéployer la stratégie, essayez d’exécuter la commande [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) ou [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell pour réessayer la distribution de stratégie :
 
-1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell)
+1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 
-2. Exécutez la commande suivante :
+2. Exécutez une des commandes suivantes :
     
-    ``` PowerShell
-    Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
-   ```
+    - Pour les emplacements de la politique **les messages du canal privé Teams**, **les messages d’utilisateurs Yammer** ainsi que **les messages de la communauté Yammer**:
+    
+        ```PowerShell
+        Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
+    
+    - Pour tous les autres emplacements de politique, tels que les **e-mails Exchange**, **les sites SharePoint**, **les messages du canal Teams**, etc :
+    
+        ```PowerShell
+        Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
 
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>Vérifier l’état des étiquettes de rétention publiées dans Exchange
 

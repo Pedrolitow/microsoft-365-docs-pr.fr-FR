@@ -1,9 +1,9 @@
 ---
 title: Étape 3. Protéger vos identités
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware opéré par l'homme, ransomware opéré par l'homme, HumOR, attaque d'extorsion, attaque de ransomware, cryptage, cryptovirologie, zero trust
 description: Utilisez des connexions sécurisées et l’accès conditionnel pour protéger vos ressources Microsoft 365 contre les attaques par rançongiciel.
-ms.openlocfilehash: 57fad156a4e7b97d3029c224059041d692224ed2
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 548e0649d7180ef39f693049210a91c1e0dce312
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62887397"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320226"
 ---
 # <a name="step-3-protect-identities"></a>Étape 3. Protéger vos identités
 
@@ -53,7 +53,7 @@ Utilisez les meilleures pratiques ci-après :
 - Implémentez le principe des [privilèges minimum](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) et utilisez la protection par mot de passe comme décrit dans [Augmenter la sécurité de la connexion](#increase-sign-in-security) pour les comptes d’utilisateur qui utilisent encore des mots de passe pour leurs connexions. 
 - Évitez d’utiliser des comptes de service de niveau administrateur à l’échelle du domaine. 
 - Limitez les privilèges d’administration locaux pour restreindre l’installation de Chevaux de Troie autorisant un accès à distance (RAT) et d’autres applications indésirables.
-- Utilisez l’accès conditionnel Azure AD pour valider explicitement la confiance des utilisateurs et des stations de travail avant d’autoriser l’accès aux portails d’administration. Consultez [cet exemple](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management) pour le Portail Azure.
+- Utilisez l’accès conditionnel Azure AD pour valider explicitement la confiance des utilisateurs et des stations de travail avant d’autoriser l’accès aux portails d’administration. Voir [cet exemple](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management) du portail Azure.
 - Activez la gestion des mots de passe de l’administrateur local.
 - Déterminez l’endroit où les comptes à privilèges élevés se connectent et exposent des informations d’identification. Les comptes à privilèges élevés ne doivent pas être présents sur les stations de travail.
 - Désactivez le stockage local des mots de passe et des informations d’identification.

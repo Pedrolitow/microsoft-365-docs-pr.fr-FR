@@ -12,17 +12,19 @@ ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-ms.custom: admindeeplinkCOMPLIANCE
+ms.custom:
+- admindeeplinkCOMPLIANCE
+- admindeeplinkSPO
 search.appverid:
 - MOE150
 - MET150
 description: Comment vous pouvez utiliser les étiquettes de rétention pour gérer le cycle de vie des documents dans SharePoint en utilisant des métadonnées pour classifier le contenu, appliquer automatiquement les étiquettes et utiliser la rétention basée sur les événements pour démarrer la période de rétention.
-ms.openlocfilehash: 586f9074628ed3c4c272715378b1ba413ebdd3ec
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 35c43a96e07fe52d9e5e0cc0a72195353b6f5da6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753666"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327166"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Utiliser les étiquettes de rétention pour gérer le cycle de vie des documents stockés dans SharePoint
 
@@ -148,7 +150,7 @@ Fondamentalement, nous voulons dire à Microsoft 365 d'appliquer **l'étiquette 
 
 Lorsque SharePoint indexe le contenu, il génère automatiquement des propriétés analysées pour chaque colonne de site. Pour ce scénario, nous sommes intéressés par les propriétés **Type de document** et **État**. Nous avons besoin de documents dans la bibliothèque qui sont du bon type de contenu et dont les colonnes du site sont remplies pour la recherche afin de créer les propriétés analysées.
 
-Dans le centre d'administration de SharePoint, ouvrez la configuration de recherche et sélectionnez **Gérer le schéma de recherche** pour afficher et configurer les propriétés analysées.
+Dans le <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centre d’administration SharePoint</a>, ouvrez la configuration de la recherche, puis sélectionnez **Gérer le schéma de recherche** pour afficher et configurer les propriétés analysées.
 
 ![Propriétés analysées dans le schéma de recherche.](../media/SPRetention8.png)
 
@@ -179,7 +181,7 @@ Pour plus d’informations sur les propriétés gérées et analysées, voir [A 
 
 KQL ne peut pas utiliser les propriétés analysées dans les requêtes de recherche. Elle doit utiliser une propriété gérée. Dans un scénario de recherche typique, nous créons une propriété gérée et la mettons en correspondance avec la propriété analysée dont nous avons besoin. Toutefois, pour l'application automatique des étiquettes de conservation, vous pouvez uniquement spécifier des propriétés gérées prédéfinies dans KQL, et non des propriétés gérées personnalisées. Il existe un ensemble de propriétés gérées prédéfinies dans le système pour les chaînes *RefinableString00* à *RefinableString199* que vous pouvez utiliser.         Pour obtenir la liste complète, voir [Propriétés gérées non utilisées par défaut](/sharepoint/manage-search-schema#default-unused-managed-properties). Ces propriétés gérées par défaut sont généralement utilisées pour définir des affinements de recherche.
 
-Pour que la requête KQL applique automatiquement l'étiquette de conservation correcte au contenu du document du produit, nous faisons correspondre les propriétés analysées **ows\_ Document\_x0020\_Type* et *ows\_\_Statut** à deux propriétés gérées raffinées.                Dans notre environnement de test pour ce scénario, **RefinableString00** et **RefinableString01** ne sont pas utilisés.            Nous l'avons déterminé en examinant **la gestion des propriétés** dans **le schéma de recherche** du centre d'administration de SharePoint.             
+Pour que la requête KQL applique automatiquement l'étiquette de conservation correcte au contenu du document du produit, nous faisons correspondre les propriétés analysées **ows\_ Document\_x0020\_Type* et *ows\_\_Statut** à deux propriétés gérées raffinées.                Dans notre environnement de test pour ce scénario, **RefinableString00** et **RefinableString01** ne sont pas utilisés.            Nous avons déterminé cela en examinant les **Propriétés gérées** dans **Gérer les schémas de recherche** dans le <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centre d’administration SharePoint</a>.
 
 [ ![Propriétés gérées dans schéma de recherche.](../media/SPRetention12.png) ](../media/SPRetention12.png#lightbox)
 
@@ -317,7 +319,7 @@ Cette liste décrit les paramètres dans la propriété **Body** de l'action qui
 
 ### <a name="putting-it-all-together"></a>Tout mettre ensemble
 
-Maintenant, l'étiquette de rétention est créée et appliquée automatiquement, et le flux est configuré et créé. Lorsque la valeur de la colonne **En production** pour le produit widget de rotation de la liste Produits est remplacée de **_Oui_*_ à _*_Non_*_, le flux est déclenché pour créer l’événement. Pour afficher cet événement dans le centre de conformité, accédez à _* Gestion des enregistrements** > **Événements**.
+À présent, l’étiquette de rétention est créée et appliquée automatiquement, et le flux est configuré et créé. Lorsque la valeur de la colonne **En production** pour le produit De widget de rotation dans la liste Produits passe de **_Oui_*_ à _*_Non_*_, le flux est déclenché pour créer l’événement. Pour voir cet événement dans le Centre de conformité, accédez à _* Gestion des enregistrements** > **Événements**.
 
 [ ![L'événement qui a été déclenché par le flux est affiché sur la page Événements dans le centre de conformité.](../media/SPRetention28.png) ](../media/SPRetention28.png#lightbox)
 

@@ -9,14 +9,15 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.service: ''
 ms.collection: enabler-strategic
+ms.custom: admindeeplinkSPO
 search.appverid: ''
 ms.localizationpriority: high
-ms.openlocfilehash: 6f472754484d7bb41485b94d65689009d2c615fd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c7a23b8da32f5ae9132a41661a1141f34df48a6b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189212"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318198"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>Importer un ensemble de termes avec un format SKOS
 
@@ -24,7 +25,7 @@ Importer un ensemble de termes avec un format basé sur SKOS. Si vous souhaitez 
 
 Nous vous recommandons d’inclure moins de 20 000 termes dans vos fichiers d’importation. Les fichiers plus volumineux peuvent augmenter le temps de validation et d’importation.
 
-1. Dans le Centre d’administration SharePoint, développez **Services de contenu**, puis cliquez sur **Magasin de termes**.
+1. Dans le Centre d’administration SharePoint, développez **Services de contenu**, puis cliquez sur <a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">**Magasin de termes**</a>.
 
 2. Sélectionnez le groupe de termes où vous souhaitez importer l’ensemble de termes.
 

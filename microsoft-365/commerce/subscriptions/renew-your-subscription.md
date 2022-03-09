@@ -2,8 +2,8 @@
 title: Renouveler Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_subscriptions
 - SaRA
 - AdminSurgePortfolio
-- commerce_subscriptions
 - AdminTemplateSet
 search.appverid: MET150
 description: Découvrez comment renouveler la plupart des abonnements Microsoft 365 Entreprises en activant ou en désactivant la facturation récurrente.
 ms.date: 05/04/2021
-ms.openlocfilehash: 2fe78acab6423bbedefe2cad9dc7ae7ae3efe449
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b50e92bf71d4c172b55aa69db33fc3572d660684
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370079"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330158"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Renouveler Microsoft 365 pour les entreprises
 
@@ -60,7 +60,7 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 
 2. Sélectionnez l’abonnement pour lequel gérer la facturation récurrente.
 3. Sur la page Détails de l’abonnement, sous **Paramètres d’abonnement et de paiement**, sélectionnez **Modifier la facturation récurrente**.
-4. Dans le volet **Modifier les paramètres de facturation récurrente** , sélectionnez **Activer**, **Activer, mais procédez au renouvellement une fois**, ou **Désactiver**.
+4. Dans le volet **Modifier les paramètres de facturation récurrente**, sélectionnez **Activer**, **Activer, mais procédez au renouvellement une fois**, ou **Désactiver**.
 5. Sélectionnez **Enregistrer**.
 
     > [!NOTE]
