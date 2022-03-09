@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Rapports dans le Centre d’administration - Activité Learning administration
+title: Centre d'administration Microsoft 365 rapports d’Learning journal
 ms.author: efrene
 author: efrene
 manager: scotv
@@ -18,27 +18,27 @@ search.appverid:
 - MOE150
 - GEA150
 description: Découvrez comment obtenir un rapport d’activité Microsoft 365 Learning à l’aide du tableau de bord Microsoft 365 rapports dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 64ea4da8e87d1ba1b09a7f85617c6972ce26308e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 382513700f6008aa2b89f32f23f31b19cce63cab
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60651409"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400390"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---viva-learning-activity"></a>Microsoft 365 Rapports dans le Centre d’administration - Activité Learning administration
+# <a name="microsoft-365-reports-in-the-admin-center---viva-learning-activity"></a>Microsoft 365 rapports dans le Centre d’administration - Activité Learning vidéo
 
 En tant qu’administrateur Microsoft 365, le tableau de bord Rapports vous présente la vue d’ensemble de l’activité sur différents produits de votre organisation. Il vous permet d'explorer pour obtenir des informations plus précises sur les activités spécifiques de chaque produit. Consultez les rapports d’activité dans le Centre d'administration Microsoft 365. 
 
 Par exemple, vous pouvez comprendre l’activité de vos utilisateurs Learning licence en regardant leurs interactions. Il vous permet également de comprendre le type de fonctionnalités utilisées dans l’Learning app.
 
-## <a name="how-do-i-get-to-the-to-the-viva-learning-activity-report"></a>Comment puis-je obtenir le rapport d’activité Learning Duserer ?  
+## <a name="how-do-i-get-to-the-to-the-viva-learning-activity-report"></a>Comment puis-je me rendre au rapport d’activité Learning Dossier ?  
 
-1. Dans le Centre d’administration, allez sur la page **Utilisation**  >  **des** rapports. 
-2. Dans la page d’accueil du tableau de bord, **sélectionnez** le bouton Afficher plus sur la carte Learning numéro. 
+1. Dans le Centre d’administration, allez sur la page **ReportsUsage** > . 
+2. Dans la page d’accueil du tableau de bord, **sélectionnez le** bouton Afficher plus sur la carte Learning numéro. 
 
-## <a name="interpret-the-microsoft-365-apps-usage-report"></a>Interpréter le rapport d Microsoft 365 Apps d’utilisation
+## <a name="interpret-the-microsoft-365-apps-usage-report"></a>Interpréter le rapport Microsoft 365 Apps’utilisation des données
 
-Vous pouvez obtenir une vue de l’activité de base  de Learning utilisateur en regardant les graphiques d’activités utilisateurs **et utilisateurs** actifs.
+Vous pouvez obtenir une vue de l’activité de base de Learning de votre utilisateur en regardant les  graphiques des utilisateurs actifs et **des activités utilisateur**.
 
 ![Microsoft 365 Apps d’utilisation.](../../media/viva-learning-charts.png)
 

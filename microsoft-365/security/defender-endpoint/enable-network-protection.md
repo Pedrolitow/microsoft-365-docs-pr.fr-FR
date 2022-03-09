@@ -1,7 +1,7 @@
 ---
 title: Activer la protection du réseau
 description: Activez la protection réseau avec la stratégie de groupe, PowerShell ou Gestion des périphériques mobiles et Configuration Manager.
-keywords: Protection ANetwork, attaques, site web malveillant, ip, domaine, domaines, activer, activer
+keywords: Protection du réseau, attaques, site web malveillant, ip, domaine, domaines, activer, activer
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,17 +10,17 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: ''
+ms.reviewer: mkaminska
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: acf474f472450456014a581366c8860d87607a79
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b21b2f2a69ab9a85f1f5003104969364ae9c6e78
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322644"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401145"
 ---
 # <a name="turn-on-network-protection"></a>Activer la protection du réseau
 
@@ -57,7 +57,8 @@ Si la clé est manquante, accédez à **SOFTWARE** \> **Microsoft** \> **Windows
    - 2 ou **mode Audit**
 
     :::image type="content" alt-text="Clé de Registre protection du réseau." source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
-
+    
+    
 ## <a name="enable-network-protection"></a>Activer la protection du réseau
 
 Activez la protection réseau à l’aide de l’une des méthodes ci-après :
@@ -90,7 +91,10 @@ Activez la protection réseau à l’aide de l’une des méthodes ci-après :
 
 Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) (CSP) pour activer ou désactiver la protection réseau ou activer le mode audit.
 
-### <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
+[Mettez à jour la plateforme anti-programme malveillant Microsoft Defender vers la dernière version](https://support.microsoft.com/topic/update-for-microsoft-defender-antimalware-platform-92e21611-8cf1-8e0e-56d6-561a07d144cc) avant d’activer ou de désactiver la protection réseau ou d’activer le mode audit.
+
+
+### <a name="microsoft-endpoint-manager"></a>Gestionnaire de point de terminaison Microsoft
 
 1. Connectez-vous au Microsoft Endpoint Manager’administration centrale (https://endpoint.microsoft.com).
 
@@ -163,6 +167,7 @@ Confirmez que la protection réseau est activée sur un ordinateur local à l’
 6. Terminez le reste des étapes et enregistrez la stratégie. 
 
 7. Dans le ruban, **sélectionnez Déployer** pour déployer la stratégie dans une collection.
+
 
 > [!IMPORTANT]
 > Une fois que vous avez déployé une stratégie Exploit Guard à partir de Configuration Manager, les paramètres Exploit Guard ne seront pas supprimés des clients si vous supprimez le déploiement. `Delete not supported` est enregistré dans exploitGuardHandler.log du client Configuration Manager si vous supprimez le déploiement Exploit Guard du client. <!--CMADO8538577-->

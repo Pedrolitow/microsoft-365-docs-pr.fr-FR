@@ -1,5 +1,5 @@
 ---
-title: Exporter des documents d’un jeu à réviser
+title: Documents d'exportation provenant d'un ensemble d'examens
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment sélectionner et exporter du contenu à partir d’un ensemble Advanced eDiscovery révision pour les présentations ou les avis externes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dba9708bfda6d1b98a2861615e56518067822100
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6384d45121fc39d120d6906e46594b8b04124471
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175166"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401061"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>Exporter des documents à partir d’un groupe de révision dans Advanced eDiscovery
 
@@ -30,9 +30,9 @@ L’exportation permet aux utilisateurs de personnaliser le contenu inclus dans 
 
 Exporter les documents d’un jeu à réviser :
 
-1. Dans la Centre de conformité Microsoft 365, ouvrez le cas Advanced eDiscovery,  sélectionnez l’onglet Ensembles de révision, puis sélectionnez le jeu à réviser à exporter.
+1. Dans la Centre de conformité Microsoft 365, ouvrez le cas Advanced eDiscovery, sélectionnez l’onglet Ensembles  de révision, puis sélectionnez le jeu à réviser à exporter.
 
-2. Dans le jeu à réviser, cliquez sur **Exporter l’action.**  >  
+2. Dans le jeu à réviser, cliquez **sur** **ActionExport** > .
 
    L’outil Exporter affiche la page de menu volant avec les paramètres pour configurer l’exportation. Certaines options sont sélectionnées par défaut, mais vous pouvez les modifier. Consultez la section suivante pour obtenir des descriptions des options d’exportation que vous pouvez configurer.
 
@@ -47,9 +47,9 @@ Exporter les documents d’un jeu à réviser :
 
 Utilisez les options suivantes pour configurer l’exportation. Toutes les options ne sont pas autorisées pour certaines options de sortie, notamment l’exportation de fichiers texte et de fichiers pdf expurgées qui ne sont pas autorisées lors de l’exportation au format PST.
 
-- **Nom d’exportation**: nom de la tâche d’exportation. Il sera utilisé pour nommer les fichiers ZIP qui seront téléchargés.
+- **Nom d’exportation** : nom de la tâche d’exportation. Il sera utilisé pour nommer les fichiers ZIP qui seront téléchargés.
 
-- **Description**: champ de texte libre pour ajouter une description.
+- **Description** : champ de texte libre pour ajouter une description.
 
 - **Exporter ces documents**
 
@@ -59,15 +59,15 @@ Utilisez les options suivantes pour configurer l’exportation. Toutes les optio
   
   - Tous les documents du jeu à réviser : cette option exporte tous les documents du jeu à réviser.
 
-- **Options de** sortie : le contenu exporté peut être téléchargé directement via un navigateur web ou peut être envoyé à un stockage Azure client. Les deux premières options permettent le téléchargement direct.
+- **Options de** sortie : le contenu exporté peut être téléchargé directement par le biais d’un navigateur web ou peut être envoyé à un stockage Azure client. Les deux premières options permettent le téléchargement direct.
   
   - Rapports uniquement : seuls le fichier récapitulatif et le fichier de chargement sont créés.
   
-  - Fichiers libres et fichiers PST (le courrier électronique est ajouté aux fichiers PST lorsque cela est possible) : les fichiers sont exportés dans un format qui ressemble à la structure de répertoires d’origine visible par les utilisateurs dans leurs applications natives.  Pour plus d’informations, voir la section Sur les fichiers libres et [la structure d’exportation PST.](#loose-files-and-pst-export-structure)
+  - Fichiers libres et fichiers PST (le courrier électronique est ajouté aux fichiers PST lorsque cela est possible) : les fichiers sont exportés dans un format qui ressemble à la structure de répertoires d’origine visible par les utilisateurs dans leurs applications natives.  Pour plus d’informations, voir la section [Sur les fichiers libres et la structure d’exportation PST](#loose-files-and-pst-export-structure) .
   
   - Structure du répertoire condensé : les fichiers sont exportés et inclus dans le téléchargement.
   
-  - Structure de répertoire condensée exportée vers votre compte stockage Azure : les fichiers sont exportés vers le compte stockage Azure de votre organisation. Pour cette option, vous devez fournir l’URL du conteneur dans votre compte stockage Azure pour exporter les fichiers. Vous devez également fournir le jeton de signature d’accès partagé (SAS) pour stockage Azure compte. Pour plus d’informations, [voir Exporter des documents dans une révision définie sur un compte stockage Azure.](download-export-jobs.md)
+  - Structure de répertoire condensée exportée vers votre compte stockage Azure : les fichiers sont exportés vers le compte stockage Azure de votre organisation. Pour cette option, vous devez fournir l’URL du conteneur dans votre compte stockage Azure pour exporter les fichiers. Vous devez également fournir le jeton de signature d’accès partagé (SAS) pour stockage Azure compte. Pour plus d’informations, [voir Exporter des documents dans une révision définie sur un compte stockage Azure client](download-export-jobs.md).
 
 - **Include**
   
@@ -79,7 +79,7 @@ Utilisez les options suivantes pour configurer l’exportation. Toutes les optio
 
   - Fichiers PDF de conversation au lieu de messages de conversation individuels : cochez cette case pour exporter les conversations dans un fichier PDF. Tous les messages de conversation de la même conversation sont exportés dans le même fichier PDF. Si vous ne cochez pas cette case, chaque message unique d’une conversation est exporté en tant qu’élément autonome. Le fichier est exporté au même format que dans la boîte aux lettres. Pour une conversation spécifique, vous recevez plusieurs fichiers .msg.
 
-Les sections suivantes décrivent la structure des dossiers pour les fichiers libres et les options de structure de répertoire condensé. Les exportations sont partitionées dans des fichiers ZIP avec une taille maximale de contenu non compressé de 75 Go. Si la taille de l’exportation est inférieure à 75 Go, l’exportation se compose d’un fichier récapitulatif et d’un fichier ZIP unique. Pour les exportations dont la taille est supérieure à 75 Go de données non compressées, plusieurs fichiers ZIP sont créés. Une fois téléchargés, les fichiers ZIP peuvent être décompressés dans un seul emplacement pour recréer l’exportation complète.
+Les sections suivantes décrivent la structure de dossiers pour les fichiers libres et les options de structure de répertoire condensé. Les exportations sont partitionées dans des fichiers ZIP avec une taille maximale de contenu non compressé de 75 Go. Si la taille de l’exportation est inférieure à 75 Go, l’exportation se compose d’un fichier récapitulatif et d’un fichier ZIP unique. Pour les exportations dont la taille est supérieure à 75 Go de données non compressées, plusieurs fichiers ZIP sont créés. Une fois téléchargés, les fichiers ZIP peuvent être décompressés dans un seul emplacement pour recréer l’exportation complète.
 
 ### <a name="loose-files-and-pst-export-structure"></a>Fichiers libres et structure d’exportation PST
 
@@ -87,13 +87,17 @@ Si vous sélectionnez cette option d’exportation, le contenu exporté est orga
 
 - Summary.csv : inclut un résumé du contenu exporté à partir du jeu à réviser
 
-- Dossier racine : ce dossier nommé [Nom d’exportation] x de z.zip est répété pour chaque partition de fichier ZIP.
+- Dossier racine : ce dossier nommé [Nom d’exportation] x de z.zip est répété pour chaque partition de fichier ZIP. Le dossier racine contient les éléments suivants :
   
   - Export_load_file_x de z.csv : le fichier de métadonnées.
   
   - Avertissements et erreurs x de z.csv : ce fichier inclut des informations sur les erreurs rencontrées lors de la tentative d’exportation à partir du jeu à réviser.
   
-  - Exchange : ce dossier contient tout le contenu des Exchange stockés dans des fichiers PST. Les fichiers PDF rédigés ne peuvent pas être inclus dans cette option. Si une pièce jointe est sélectionnée dans le jeu à réviser, le courrier électronique parent est exporté avec la pièce jointe jointe.
+  - Exchange : ce dossier contient tout le contenu des Exchange stockés dans des fichiers PST. Les fichiers PDF rédigés ne peuvent pas être inclus dans cette option. Si une pièce jointe est sélectionnée dans le jeu à réviser, le message électronique parent est exporté avec la pièce jointe jointe. Ce dossier peut également contenir les éléments suivants : 
+
+    - Messages protégés par la Gestion des droits de l’information (IRM) qui ont été décodés. 
+    - Messages corrigés par erreur. 
+    - Pièces jointes ou liens modernes référencés dans les messages. 
   
   - SharePoint : ce dossier contient tout le contenu natif de SharePoint dans un format de fichier natif. Les fichiers PDF rédigés ne peuvent pas être inclus dans cette option.
 
@@ -107,7 +111,7 @@ Si vous sélectionnez cette option d’exportation, le contenu exporté est orga
   
   - Avertissements et erreurs x de z.csv : ce fichier inclut des informations sur les erreurs rencontrées lors de la tentative d’exportation à partir du jeu à réviser.
 
-  - NativeFiles : ce dossier contient tous les fichiers natifs qui ont été exportés. Les fichiers natifs sont remplacés par des fichiers PDF rédigés si vous avez sélectionné l’option Remplacer les natifs rédigés par des fichiers *pdf convertis.*
+  - NativeFiles : ce dossier contient tous les fichiers natifs qui ont été exportés. Les fichiers natifs sont remplacés par des fichiers PDF rédigés si vous avez sélectionné l’option Remplacer les *natifs rédigés par des fichiers PDF convertis* .
   
   - Error_files : ce dossier contient des fichiers dont l’extraction ou une autre erreur de traitement s’est produite. Les fichiers sont placés dans des dossiers distincts, ExtractionError ou ProcessingError. Ces fichiers sont répertoriés dans le fichier de chargement.
 
@@ -115,4 +119,4 @@ Si vous sélectionnez cette option d’exportation, le contenu exporté est orga
 
 ### <a name="condensed-directory-structure-exported-to-your-azure-storage-account"></a>Structure de répertoire condensé exportée vers votre compte stockage Azure client
 
-Cette option utilise la même structure générale que la *structure* du répertoire condensé, mais le contenu n’est pas compressé et les données sont enregistrées dans stockage Azure compte. Cette option est généralement utilisée lorsque vous travaillez avec un fournisseur eDiscovery tiers. Pour plus d’informations sur l’utilisation de cette option, voir Exporter des documents dans une révision [définie sur un compte stockage Azure.](download-export-jobs.md)
+Cette option utilise la même structure générale que la *structure* du répertoire condensé, mais le contenu n’est pas compressé et les données sont enregistrées dans stockage Azure compte. Cette option est généralement utilisée lorsque vous travaillez avec un fournisseur eDiscovery tiers. Pour plus d’informations sur l’utilisation de cette option, voir [Export documents in a review set to an stockage Azure account](download-export-jobs.md).

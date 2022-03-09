@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Déclarer des enregistrements à l’aide d’étiquettes de rétention.
-ms.openlocfilehash: 7c1599bd40059559b9e0d19383a08fe2382e6442
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 93e51698109819f4743dd4b5b45f5a5177739a2a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241698"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324842"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Déclarer des enregistrements à l’aide d’étiquettes de rétention
 
@@ -69,6 +69,11 @@ Pour instructions complètes :
 
 - [Appliquer une étiquette de rétention au contenu automatiquement](apply-retention-labels-automatically.md) (non pris en charge pour les enregistrements réglementaires)
 
+## <a name="tenant-setting-for-editing-record-properties"></a>Paramètre du client pour la modification des propriétés d’enregistrement
+
+Si vous utilisez des étiquettes de rétention pour déclarer des éléments en tant qu’enregistrements (plutôt que des enregistrements réglementaires) dans SharePoint et OneDrive, déterminez si vous devez modifier le paramètre de locataire par défaut qui permet aux utilisateurs de modifier les propriétés pour un [fichier verrouillé](record-versioning.md)lorsque les fichiers sont supérieurs à 0 octets.
+
+Pour modifier cette valeur par défaut, accédez au [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) > **Gestion des enregistrements** > **Paramètres de gestion des enregistrements** > **Étiquettes de rétention** > **Autorisez la modification des propriétés d’enregistrement** puis désactivez le paramètre **Autorisez les utilisateurs à modifier les propriétés d’enregistrement**.
 
 ## <a name="applying-the-configured-retention-label-to-content"></a>Application de l’étiquette de rétention configurée au contenu
 
@@ -95,4 +100,4 @@ Pour plus d’informations sur la recherche de ces événements, consultez [Effe
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour une liste des scénarios pris en charge par la gestion des documents, voir [Scénarios communs pour la gestion des documents](get-started-with-records-management.md#common-scenarios).
+Comprendre comment utiliser le [contrôle de version des enregistrements pour mettre à jour les enregistrements stockés dans SharePoint ou OneDrive](record-versioning.md).

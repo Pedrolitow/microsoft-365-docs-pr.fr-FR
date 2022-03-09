@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Rapports dans le Centre d’administration - Activité des formulaires
+title: Centre d'administration Microsoft 365 d’activité des formulaires
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,15 +19,15 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Découvrez comment obtenir un rapport d’activité Microsoft Forms à l’aide du tableau Microsoft 365 de rapports microsoft dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 900ae6c273d47785296b94622060f2fe3b6dc0ca
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+description: Découvrez comment obtenir un rapport d’activité Microsoft Forms à l’aide Microsoft 365 tableau de bord rapports dans le Centre d'administration Microsoft 365.
+ms.openlocfilehash: 7b44dfe9fe8582a9efa7d768e9136b77f5d4219b
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60652871"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400910"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365 Rapports dans le Centre d’administration - Activité des formulaires
+# <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365 rapports dans le Centre d’administration - Activité des formulaires
 
 Le tableau Microsoft 365 de rapports de gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer des rapports au niveau de chaque produit afin d'obtenir des informations plus précises sur les activités au sein de chaque produit. Consultez [la rubrique Présentation des rapports](activity-reports.md).
   
@@ -36,15 +36,15 @@ Par exemple, vous pouvez comprendre l’activité de chaque utilisateur titulair
 ## <a name="how-to-get-to-the-forms-activity-report"></a>Comment obtenir le rapport d’activité Formulaires
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>. 
-2. Dans la page d’accueil du tableau de bord, cliquez sur **le** bouton Afficher plus sur la carte Forms.
+2. Dans la page d’accueil du tableau de bord, cliquez **sur le bouton** Afficher plus sur la carte Formulaires.
   
 ## <a name="interpret-the-forms-activity-report"></a>Interpréter le rapport d’activité Forms
 
 Vous pouvez afficher les activités dans le rapport Forms en choisissant **l’onglet** Activité.<br/>![Microsoft 365- Rapport d’activité Microsoft Forms.](../../media/275fb0a1-b9d9-4233-8aaf-e7df73cc705f.png)
 
-Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Rapport d’activité des formulaires : choisissez des colonnes.](../../media/0c9b0b69-5dc7-43ea-8e2c-54407b6ce2ab.png)
+**Sélectionnez Sélectionner des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Rapport d’activité des formulaires : choisissez des colonnes.](../../media/0c9b0b69-5dc7-43ea-8e2c-54407b6ce2ab.png)
 
-Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant le lien **Exporter**. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
 
 Le **rapport d’activité** forms permet d’afficher les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date du jour (et non la date à laquelle le rapport a été généré).
   

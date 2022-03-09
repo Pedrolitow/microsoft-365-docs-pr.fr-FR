@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e3f4efb5c52acb40ecb30ac17a8b144de9eaa106
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 0e7253993a1c05bd25e6dd13865826c42dd7603a
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245386"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400249"
 ---
 # <a name="take-response-actions-on-a-file"></a>Prendre des mesures de réponse sur un fichier
 
@@ -35,7 +35,7 @@ ms.locfileid: "62245386"
 
 Répondez rapidement aux attaques détectées en arrêtant et en bloquant des fichiers ou en bloquant un fichier. Après avoir pris des mesures sur les fichiers, vous pouvez vérifier les détails de l’activité dans le centre de l’action.
 
-Les actions de réponse sont disponibles sur la page de profil détaillée d’un fichier. Une fois sur cette page, vous pouvez basculer entre la nouvelle et l’ancienne mise en page en faisant basculer **la nouvelle page de fichier.** Le reste de cet article décrit la mise en page la plus nouvelle.
+Les actions de réponse sont disponibles sur la page de profil détaillée d’un fichier. Une fois sur cette page, vous pouvez basculer entre la nouvelle et l’ancienne mise en page en faisant basculer la **nouvelle page fichier**. Le reste de cet article décrit la mise en page la plus nouvelle.
 
 Les actions de réponse s’exécutent le long de la partie supérieure de la page de fichiers et incluent :
 
@@ -53,7 +53,7 @@ Certaines actions nécessitent certaines autorisations. Le tableau suivant décr
 
 ****
 
-|Permission|Fichiers PE|Fichiers non PE|
+|Autorisation|Fichiers PE|Fichiers non PE|
 |---|:---:|:---:|
 |Afficher les données|X|X|
 |Examen des alertes|&#x2611;|X|
@@ -61,7 +61,7 @@ Certaines actions nécessitent certaines autorisations. Le tableau suivant décr
 |Réponse en direct avancée|&#x2611;|&#x2611;|
 |
 
-Pour plus d’informations sur les rôles, voir Créer et gérer des rôles pour le contrôle [d’accès basé sur les rôles.](user-roles.md)
+Pour plus d’informations sur les rôles, voir [Créer et gérer des rôles pour le contrôle d’accès basé sur les rôles](user-roles.md).
 
 ## <a name="stop-and-quarantine-files-in-your-network"></a>Arrêter et mettre en quarantaine des fichiers de votre réseau
 
@@ -70,11 +70,11 @@ Vous pouvez contenir une attaque dans votre organisation en arrêtant le process
 > [!IMPORTANT]
 > Vous pouvez uniquement prendre cette action si :
 >
-> - L’appareil sur qui vous exécutez l’action s’exécute Windows 10, version 1703 ou ultérieure et Windows 11
+> - L’appareil sur qui vous exécutez l’action Windows 10, version 1703 ou ultérieure et Windows 11
 > - Le fichier n’appartient pas aux éditeurs tiers de confiance ou n’est pas signé par Microsoft
 > - Antivirus Microsoft Defender doit au moins être en cours d’exécution en mode passif. Pour plus d’informations, [voir Antivirus Microsoft Defender compatibilité.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 
-**L’action** Arrêter et mettre en quarantaine le fichier inclut l’arrêt des processus en cours d’exécution, la mise en quarantaine des fichiers et la suppression de données persistantes telles que les clés de Registre.
+**L’action Arrêter et mettre en quarantaine le** fichier inclut l’arrêt des processus en cours d’exécution, la mise en quarantaine des fichiers et la suppression de données persistantes telles que les clés de Registre.
 
 Cette action prend effet sur les appareils Windows 10, version 1703 ou ultérieure et Windows 11, où le fichier a été observé au cours des 30 derniers jours.
 
@@ -89,7 +89,7 @@ Cette action prend effet sur les appareils Windows 10, version 1703 ou ultérieu
    - **Zone de recherche** : **sélectionnez Fichier** dans le menu déroulant et entrez le nom du fichier
 
    > [!NOTE]
-   > L’action d’arrêt et de mise en quarantaine du fichier est limitée à un maximum de 1 000 appareils. Pour arrêter un fichier sur un plus grand nombre d’appareils, voir [Ajouter un indicateur pour bloquer ou autoriser un fichier.](#add-indicator-to-block-or-allow-a-file)
+   > L’action d’arrêt et de mise en quarantaine du fichier est limitée à un maximum de 1 000 appareils. Pour arrêter un fichier sur un plus grand nombre d’appareils, voir [Ajouter un indicateur pour bloquer ou autoriser un fichier](#add-indicator-to-block-or-allow-a-file).
 
 2. Go to the top bar and select **Stop and Quarantine File**.
 
@@ -110,7 +110,7 @@ Cette action prend effet sur les appareils Windows 10, version 1703 ou ultérieu
 
 4. Sélectionnez l’un des indicateurs d’état pour afficher plus d’informations sur l’action. Par exemple, **sélectionnez Échec pour** voir où l’action a échoué.
 
-#### <a name="notification-on-device-user"></a>Notification sur l’utilisateur de l’appareil
+#### <a name="notification-on-device-userf"></a>Notification sur l’appareil userf
 
 Lorsque le fichier est supprimé d’un appareil, la notification suivante s’affiche :
 
@@ -130,7 +130,7 @@ Vous pouvez récupérer et supprimer un fichier de la quarantaine si vous avez d
 
    1. Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
 
-2. Entrez la commande suivante, puis appuyez sur **Entrée**:
+2. Entrez la commande suivante, puis appuyez sur **Entrée** :
 
    ```dos
    "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
@@ -154,15 +154,15 @@ Par défaut, vous devez être en mesure de télécharger les fichiers en quarant
 
 ### <a name="download-quarantined-files"></a>Télécharger les fichiers mis en quarantaine
 
-Les fichiers qui ont été mis en quarantaine par Antivirus Microsoft Defender ou votre équipe de sécurité seront enregistrés conformément à vos [exemples de configurations d’envoi.](enable-cloud-protection-microsoft-defender-antivirus.md) Votre équipe de sécurité peut télécharger les fichiers directement à partir de la page de détails du fichier via le bouton « Télécharger le fichier ». **Cette fonctionnalité d’aperçu est « allumée » par défaut.**
+Les fichiers qui ont été mis en quarantaine par Antivirus Microsoft Defender ou votre équipe de sécurité seront enregistrés conformément à vos [configurations d’envoi d’exemples](enable-cloud-protection-microsoft-defender-antivirus.md). Votre équipe de sécurité peut télécharger les fichiers directement à partir de la page de détails du fichier via le bouton « Télécharger le fichier ». **Cette fonctionnalité d’aperçu est « allumée » par défaut**.
 
-L’emplacement dépend des paramètres géographiques de votre organisation (UE, Royaume-Uni ou États-Unis). Un fichier mis en quarantaine ne sera collecté qu’une seule fois par organisation. En savoir plus sur la protection des données de Microsoft à partir du portail d’confiance des services à https://aka.ms/STP l’aide de .
+L’emplacement dépend des paramètres géographiques de votre organisation (UE, Royaume-Uni ou États-Unis). Un fichier mis en quarantaine ne sera collecté qu’une seule fois par organisation. En savoir plus sur la protection des données de Microsoft à partir du portail d’confiance des services à l’aide de https://aka.ms/STP.
 
-Si ce paramètre est allumé, les équipes de sécurité peuvent examiner les fichiers potentiellement dangereux et examiner les incidents rapidement et de manière moins risquée. Toutefois, si vous devez désactiver ce  paramètre, Paramètres les fonctionnalités avancées des points de terminaison téléchargent les fichiers mis en quarantaine pour \>  \>  \>  ajuster le paramètre. [En savoir plus sur les fonctionnalités avancées](advanced-features.md)
+Si ce paramètre est allumé, les équipes de sécurité peuvent examiner les fichiers potentiellement dangereux et examiner les incidents rapidement et de manière moins risquée. Toutefois, si  vous devez désactiver ce paramètre, \> Paramètres les **fonctionnalités** \>  \> avancées des points de terminaison téléchargent les fichiers mis en quarantaine pour ajuster le paramètre. [En savoir plus sur les fonctionnalités avancées](advanced-features.md)
 
 #### <a name="backing-up-quarantined-files"></a>Backing up quarantined files
 
-Les utilisateurs peuvent être invités à fournir un consentement explicite avant de la backing up the quarantined file, depending on your [sample submission configuration](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-protection).
+Il se peut que les utilisateurs soient invités à donner leur consentement explicite avant de la backing up du fichier mis en quarantaine, en fonction de votre [exemple de configuration d’envoi](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-protection).
 
 Cette fonctionnalité ne fonctionne pas si l’envoi d’exemples est désactivé. Si la soumission automatique d’échantillons est définie pour demander l’autorisation à l’utilisateur, seuls les exemples que l’utilisateur accepte d’envoyer seront collectés.
 
@@ -177,7 +177,7 @@ Cette fonctionnalité ne fonctionne pas si l’envoi d’exemples est désactiv�
 
 ### <a name="collect-files"></a>Collecter des fichiers
 
-Si un fichier n’est pas déjà stocké par Microsoft Defender pour le point de terminaison, vous ne pouvez pas le télécharger. Au lieu de cela, vous verrez un **bouton** Collecter le fichier au même emplacement. Si un fichier n’a pas été vu dans l’organisation au cours des 30 derniers **jours,** le fichier de collecte est désactivé.
+Si un fichier n’est pas déjà stocké par Microsoft Defender pour le point de terminaison, vous ne pouvez pas le télécharger. Au lieu de cela, vous verrez **un bouton Collecter** le fichier au même emplacement. Si un fichier n’a pas été vu dans l’organisation au cours des 30 derniers **jours, le** fichier de collecte est désactivé.
 > [!Important]
 > Un fichier mis en quarantaine comme menace réseau potentielle peut ne pas être récupérable. Si un utilisateur tente de restaurer le fichier après sa mise en quarantaine, il se peut que ce fichier ne soit pas accessible. Cela peut être dû au fait que le système n’a plus d’informations d’identification réseau pour accéder au fichier. En règle générale, cela est le résultat d’une connexion temporaire à un système ou à un dossier partagé et les jetons d’accès ont expiré.
 
@@ -187,7 +187,7 @@ Empêcher toute propagation supplémentaire d’une attaque dans votre organisat
 
 > [!IMPORTANT]
 >
-> - Cette fonctionnalité est disponible si votre organisation utilise Antivirus Microsoft Defender protection cloud est activée. Pour plus d’informations, [voir Gérer la protection cloud.](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
+> - Cette fonctionnalité est disponible si votre organisation utilise Antivirus Microsoft Defender protection cloud est activée. Pour plus d’informations, [voir Manage cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 >
 > - La version du client anti-programme malveillant doit être 4.18.1901.x ou version ultérieure.
 > - Cette fonctionnalité est conçue pour empêcher le téléchargement de programmes malveillants (ou de fichiers potentiellement malveillants) à partir du web. Il prend actuellement en charge les fichiers exécutables portables(PE), notamment les fichiers _.exe_ et _.dll_ portables. La couverture sera étendue au fil du temps.
@@ -201,7 +201,7 @@ Empêcher toute propagation supplémentaire d’une attaque dans votre organisat
 
 ### <a name="enable-the-block-file-feature"></a>Activer la fonctionnalité bloquer les fichiers
 
-Pour commencer à bloquer des fichiers, vous devez d’abord [activer  ](advanced-features.md) la fonctionnalité Bloquer ou autoriser dans Paramètres.
+Pour commencer à bloquer des fichiers, vous devez d’abord [activer la ](advanced-features.md) fonctionnalité Bloquer ou autoriser dans Paramètres.
 
 ### <a name="allow-or-block-file"></a>Autoriser ou bloquer un fichier
 
@@ -211,9 +211,9 @@ Les fichiers automatiquement bloqués par un indicateur ne s’afficheront pas d
 
 Pour plus [d’informations sur](manage-indicators.md) le blocage et l’augmentation des alertes sur les fichiers, voir gérer les indicateurs.
 
-Pour arrêter le blocage d’un fichier, supprimez l’indicateur. Vous pouvez le faire via l’action **Modifier l’indicateur** sur la page de profil du fichier. Cette action sera visible à la  même position que l’action Ajouter un indicateur, avant que vous n’ajoutiez l’indicateur.
+Pour arrêter le blocage d’un fichier, supprimez l’indicateur. Vous pouvez le faire via l’action **Modifier l’indicateur** sur la page de profil du fichier. Cette action sera visible à la même position que **l’action Ajouter** un indicateur, avant que vous n’ajoutiez l’indicateur.
 
-Vous pouvez également modifier les indicateurs à partir de la page **Paramètres,** sous **Indicateurs** \> **de règles.** Les indicateurs sont répertoriés dans cette zone par le hachage de leur fichier.
+Vous pouvez également modifier les indicateurs à partir de **la page Paramètres**, sous **Indicateurs** \> **de règles**. Les indicateurs sont répertoriés dans cette zone par le hachage de leur fichier.
 
 ## <a name="consult-a-threat-expert"></a>Consulter un spécialiste des menaces
 
@@ -243,7 +243,7 @@ L’analyse approfondie prend actuellement en charge l’analyse complète des f
 
 L’analyse approfondie d’un fichier prend plusieurs minutes. Une fois l’analyse de fichier terminée, l’onglet Analyse approfondie se met à jour pour afficher un résumé et la date et l’heure des derniers résultats disponibles.
 
-Le résumé de l’analyse approfondie inclut une liste des comportements *observés,* dont certains peuvent indiquer une activité malveillante, et des éléments *observables,* y compris les IP contactés et les fichiers créés sur le disque. Si rien n’est trouvé, ces sections afficheront un bref message.
+Le résumé de l’analyse approfondie inclut une liste des comportements observés, dont certains peuvent indiquer une activité malveillante, et des éléments *observables*, y compris les IP contactés et les fichiers *créés* sur le disque. Si rien n’est trouvé, ces sections afficheront un bref message.
 
 Les résultats d’une analyse approfondie sont en correspondance avec les informations sur les menaces et les correspondances génèrent des alertes appropriées.
 
@@ -256,7 +256,7 @@ Utilisez la fonctionnalité d’analyse approfondie pour examiner les détails d
 > [!NOTE]
 > Seuls les fichiers Windows 10 et Windows 11 peuvent être collectés automatiquement.
 
-Vous pouvez également soumettre un exemple via le portail du Centre de sécurité [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx) si le fichier n’a  pas été observé sur un appareil Windows 10 (ou Windows 11) et attendre que le bouton Envoyer pour analyse approfondie devienne disponible.
+Vous pouvez également soumettre un exemple via le portail du Centre de sécurité [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx) si le fichier n’a pas été observé sur un appareil Windows 10 (ou Windows 11) et attendre que le bouton Envoyer  pour analyse approfondie devienne disponible.
 
 > [!NOTE]
 > En raison des flux de traitement principal dans le portail centre de sécurité Microsoft, il peut y avoir jusqu’à 10 minutes de latence entre l’envoi de fichier et la disponibilité de la fonctionnalité d’analyse approfondie dans Defender pour le point de terminaison.
@@ -269,7 +269,7 @@ Vous pouvez également soumettre un exemple via le portail du Centre de sécurit
     - **Liste des appareils** : sélectionnez les liens de fichiers dans la **section Description** **ou Détails** de **l’appareil dans l’organisation**
     - **Zone de recherche** : **sélectionnez Fichier** dans le menu déroulant et entrez le nom du fichier
 
-2. Dans **l’onglet Analyse approfondie** de l’affichage de fichier, sélectionnez **Envoyer.**
+2. Dans **l’onglet Analyse approfondie** de l’affichage de fichier, sélectionnez **Envoyer**.
 
    ![Vous pouvez uniquement envoyer des fichiers PE dans la section Détails du fichier.](images/submit-file.png)
 
@@ -279,7 +279,7 @@ Vous pouvez également soumettre un exemple via le portail du Centre de sécurit
    Une barre de progression s’affiche et fournit des informations sur les différentes étapes de l’analyse. Vous pouvez ensuite afficher le rapport une fois l’analyse effectuée.
 
 > [!NOTE]
-> Selon la disponibilité de l’appareil, la durée de collecte des échantillons peut varier. Il existe un délai d'3 heures pour la collecte d’exemples. La collecte échoue et l’opération est abandonnée s’il n’existe pas de Windows 10 en ligne (ou Windows 11) à ce moment-là. Vous pouvez soumettre de nouveau des fichiers pour une analyse approfondie afin d’obtenir des données récentes sur le fichier.
+> Selon la disponibilité de l’appareil, la durée de collecte des échantillons peut varier. Il existe un délai d'3 heures pour la collecte d’exemples. La collecte échoue et l’opération est abandonnée s’il n’existe aucun Windows 10 (ou aucun Windows 11) en ligne à ce moment-là. Vous pouvez soumettre de nouveau des fichiers pour une analyse approfondie afin d’obtenir des données récentes sur le fichier.
 
 ### <a name="view-deep-analysis-reports"></a>Afficher des rapports d’analyse approfondie
 
@@ -301,7 +301,7 @@ Les détails fournis peuvent vous aider à déterminer s’il existe des indicat
 
 Si vous êtes face à un problème lors de la tentative d’soumission d’un fichier, essayez chacune des étapes de dépannage suivantes.
 
-1. Assurez-vous que le fichier en question est un fichier PE. Les fichiers PE ont généralement des extensions _.exe_ ou _.dll_ (programmes ou applications exécutables).
+1. Assurez-vous que le fichier en question est un fichier PE. Les fichiers PE ont généralement _des_ extensions _.exeou.dll_ (programmes ou applications exécutables).
 
 2. Assurez-vous que le service a accès au fichier, qu’il existe toujours et qu’il n’a pas été endommagé ou modifié.
 
@@ -318,9 +318,9 @@ Si vous êtes face à un problème lors de la tentative d’soumission d’un fi
       Value = 1 - allow sample collection
     ```
 
-5. Modifiez l’unité d’organisation via la stratégie de groupe. Pour plus d’informations, [voir Configurer avec la stratégie de groupe.](configure-endpoints-gp.md)
+5. Modifiez l’unité d’organisation via la stratégie de groupe. Pour plus d’informations, voir [Configurer avec la stratégie de groupe](configure-endpoints-gp.md).
 
-6. Si ces étapes ne résolvent pas le problème, contactez [winatp@microsoft.com](mailto:winatp@microsoft.com).
+6. Si ces étapes ne résolvent pas le problème, contactez le support technique.
 
 ## <a name="related-topics"></a>Voir aussi
 

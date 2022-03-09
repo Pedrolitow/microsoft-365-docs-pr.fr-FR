@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 rapports dans le Centre d’administration - Activité Informations journal
+title: Centre d'administration Microsoft 365 rapports d’Informations journal
 ms.author: efrene
 author: efrene
 manager: scotv
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Découvrez comment obtenir un rapport d’Microsoft 365 Apps d’utilisation pour l’activité Informations Pare-Microsoft 365 dans le tableau de bord rapports Centre d'administration Microsoft 365.
-ms.openlocfilehash: 1e9fd70b0fa50efba2984ca7aa75a5c8670100ad
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: bb7f36c1db632fc1745c9dbe8f63f9e6f20909b4
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319110"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400670"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---viva-insights-activity"></a>Microsoft 365 rapports dans le Centre d’administration - Activité Informations journal
 

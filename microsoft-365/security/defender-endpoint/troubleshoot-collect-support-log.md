@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b6d4b6f78cc677f9be5f664d86d8734ebd8df2f7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a0d0f470a2af18dab298ba3a1af642362590da4c
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168401"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401159"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>Collecter les journaux de support dans Microsoft Defender pour le point de terminaison à l’aide d’une réponse en direct
 
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
@@ -35,19 +35,17 @@ Lorsque vous contactez le support technique, vous pouvez être invité à fourni
 
 Cette rubrique fournit des instructions sur la façon d’exécuter l’outil via Live Response.
 
-1. Télécharger le script approprié
-   - Journaux de capteur client Microsoft Defender pour point de terminaison uniquement : [LiveAnalyzer.ps1 script](https://aka.ms/MDELiveAnalyzer).
-      - Taille approximative du package de résultats : ~100Kb
-   - Capteur client microsoft Defender pour point de terminaison et journaux antivirus : [LiveAnalyzer+MDAV.ps1 script](https://aka.ms/MDELiveAnalyzerAV).
-       - Taille approximative du package de résultats : ~10 Mo
+1. Téléchargez et récupèrez les scripts requis disponibles dans le sous-répertoire « Outils » de l’analyseur de [client Microsoft Defender for Endpoint](https://aka.ms/BetaMDEAnalyzer). <br>
+Par exemple, pour obtenir le capteur de base et les journaux d’état de l’appareil, récupérer « . \Tools\MDELiveAnalyzer.ps1 »<br>
+Si vous avez également besoin des journaux de prise en charge de l’Antivirus Defender (MpSupportFiles.cab), puis récupérer « . \Tools\MDELiveAnalyzerAV.ps1 » 
 
 2. Lancez [une session Live Response](live-response.md#initiate-a-live-response-session-on-a-device) sur l’ordinateur que vous devez examiner.
 
-3. Sélectionnez **Télécharger fichier vers la bibliothèque.**
+3. Sélectionnez **Télécharger fichier vers la bibliothèque**.
 
     ![Image du fichier de téléchargement.](images/upload-file.png)
 
-4. Sélectionnez **Choisir un fichier.**
+4. **Sélectionnez Choisir un fichier**.
 
     ![Image du bouton de choix du fichier 1.](images/choose-file.png)
 
@@ -66,9 +64,9 @@ Cette rubrique fournit des instructions sur la façon d’exécuter l’outil vi
 
 > [!NOTE]
 >
-> - La dernière version d’aperçu de MDEClientAnalyzer peut être téléchargée ici [https://aka.ms/Betamdeanalyzer](https://aka.ms/Betamdeanalyzer) :
+> - La dernière version d’aperçu de MDEClientAnalyzer peut être téléchargée ici : [https://aka.ms/Betamdeanalyzer](https://aka.ms/Betamdeanalyzer)
 >
-> - Le script LiveAnalyzer télécharge le package de dépannage sur l’ordinateur de destination à partir https://mdatpclientanalyzer.blob.core.windows.net de :
+> - Le script LiveAnalyzer télécharge le package de dépannage sur l’ordinateur de destination à partir de : https://mdatpclientanalyzer.blob.core.windows.net
 >
 >   Si vous ne pouvez pas autoriser l’ordinateur à atteindre l’URL ci-dessus, téléchargez MDEClientAnalyzerPreview.zip fichier dans la bibliothèque avant d’exécutez le script LiveAnalyzer :
 >
@@ -78,9 +76,9 @@ Cette rubrique fournit des instructions sur la façon d’exécuter l’outil vi
 >   GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip"
 >   ```
 >
-> - Pour plus d’informations sur la collecte de données localement sur un ordinateur au cas où l’ordinateur ne communique pas avec Microsoft Defender pour les services cloud de point de terminaison ou n’apparaît pas dans le portail Microsoft Defender pour endpoint comme prévu, voir Vérifier la connectivité client à Microsoft Defender pour les URL de service de point de [terminaison.](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)
+> - Pour plus d’informations sur la collecte de données localement sur un ordinateur au cas où l’ordinateur ne communique pas avec Microsoft Defender pour les services cloud de point de terminaison ou n’apparaît pas comme prévu dans le portail Microsoft Defender pour points de terminaison, voir Vérifier la connectivité [client à Microsoft Defender](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls) pour les URL de service De point de terminaison.
 > 
-> - Comme décrit dans les exemples de commandes de réponse [Live,](live-response-command-examples.md)vous pouvez utiliser le symbole « & » à la fin de la commande pour collecter les journaux en tant qu’action en arrière-plan :
+> - Comme décrit dans les exemples de commandes de réponse [Live](live-response-command-examples.md), vous pouvez utiliser le symbole « & » à la fin de la commande pour collecter les journaux en tant qu’action en arrière-plan :
 >   ```console
 >   Run MDELiveAnalyzer.ps1&
 >   ```

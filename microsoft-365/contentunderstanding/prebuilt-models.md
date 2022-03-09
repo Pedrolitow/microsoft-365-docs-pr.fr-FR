@@ -7,14 +7,19 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: null
+search.appverid: ''
 ms.collection:
-  - enabler-strategic
-  - m365initiative-syntex
+- enabler-strategic
+- m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer et configurer un modèle pré-SharePoint Syntex.
+ms.openlocfilehash: 7867fe197fd53e6095f51869fc5aaad18af9157b
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401047"
 ---
-
 # <a name="use-a-prebuilt-model-to-extract-info-from-invoices-or-receipts-in-microsoft-sharepoint-syntex"></a>Utilisez un modèle préétacé pour extraire des informations de factures ou de reçus dans Microsoft SharePoint Syntex
 
 Les modèles pré-conçus sont préentraînés pour reconnaître les documents et les informations structurées dans les documents. Au lieu de devoir créer un modèle personnalisé à partir de zéro, vous pouvez itérer sur un modèle pré-formé existant pour ajouter des champs spécifiques qui correspondent aux besoins de votre organisation. 
@@ -124,6 +129,9 @@ Pour renommer un extracteur à partir du panneau **Extracteurs** :
 - Pour enregistrer les modifications et revenir à la page d’accueil du modèle, dans le panneau **Extracteurs** , **sélectionnez Enregistrer et quitter**.
 
 - Si vous êtes prêt à appliquer le modèle à une bibliothèque, dans la zone de document, sélectionnez **Suivant**. Dans le **panneau Ajouter à la bibliothèque** , choisissez la bibliothèque à laquelle vous souhaitez ajouter le modèle, puis sélectionnez **Ajouter**.
+
+> [!TIP]
+> Vous pouvez modifier l’affichage dans votre bibliothèque de documents pour qu’il corresponde à vos besoins ou préférences. Pour plus d’informations, [voir Modifier l’affichage dans une bibliothèque de documents](apply-a-model.md#change-the-view-in-a-document-library).
 
 ## <a name="see-also"></a>Voir aussi
 

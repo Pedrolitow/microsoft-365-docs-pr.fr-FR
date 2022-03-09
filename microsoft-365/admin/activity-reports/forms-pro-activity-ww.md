@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Rapports dans le Centre d’administration - Activité voix client Dynamics 365
+title: Rapports d’activité de voix client Microsoft Dynamics 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,15 +19,15 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Découvrez comment obtenir un rapport d’activité Microsoft Dynamics 365 Customer Voice à l’aide du tableau de bord Microsoft 365 rapports de microsoft Dynamics 365 dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: d143728f8170ae9c12a6d007e9e256a23f7ff74d
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+description: Découvrez comment obtenir un rapport d’activité Microsoft Dynamics 365 Customer Voice à l’aide du tableau de bord rapports Microsoft 365 microsoft Dynamics 365 dans le Centre d'administration Microsoft 365.
+ms.openlocfilehash: fb3f631db84dbd974123863956d5505f02c382d6
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60650468"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400879"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Microsoft 365 Rapports dans le Centre d’administration - Activité voix client Dynamics 365
+# <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Microsoft 365 dans le Centre d’administration - Activité Voix Client Dynamics 365
 
 Le tableau Microsoft 365 de rapports de gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer des rapports au niveau de chaque produit afin d'obtenir des informations plus précises sur les activités au sein de chaque produit. Consultez [la rubrique Présentation des rapports](activity-reports.md).
   
@@ -36,15 +36,15 @@ Par exemple, vous pouvez comprendre l’activité de chaque utilisateur titulair
 ## <a name="how-to-get-to-the-dynamics-365-customer-voice-activity-report"></a>Comment obtenir le rapport d’activité Dynamics 365 Customer Voice
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>. 
-2. Dans la page d’accueil du tableau de bord, cliquez sur le bouton Afficher **plus** sur la carte Dynamics 365 Customer Voice.
+2. Dans la page d’accueil du tableau de bord, cliquez sur le bouton **Afficher plus sur** la carte Dynamics 365 Customer Voice.
   
 ## <a name="interpret-the-dynamics-365-customer-voice-activity-report"></a>Interpréter le rapport d’activité de Dynamics 365 Customer Voice
 
-Vous pouvez afficher les activités dans le rapport Dynamics 365 Customer Voice en choisissant l’onglet **Activité.**<br/>![Microsoft 365 - Rapport d’activité de Microsoft Dynamics 365 Customer Voice.](../../media/a7e57d18-1ac8-4d4b-bd70-83361505dc3e.png)
+Vous pouvez afficher les activités dans le rapport Dynamics 365 Customer Voice en choisissant **l’onglet** Activité.<br/>![Microsoft 365- Rapport d’activité de Microsoft Dynamics 365 Customer Voice.](../../media/a7e57d18-1ac8-4d4b-bd70-83361505dc3e.png)
 
-Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Rapport d’activité Dynamics 365 Customer Voice : choisissez des colonnes.](../../media/5ab66f4b-32eb-4c9b-9683-1157ae9e2c0a.png)
+**Sélectionnez Sélectionner des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Rapport d’activité Dynamics 365 Customer Voice : choisissez des colonnes.](../../media/5ab66f4b-32eb-4c9b-9683-1157ae9e2c0a.png)
 
-Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant le lien **Exporter**. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
 
 Le rapport d’activité de **Dynamics 365 Customer Voice** permet d’afficher les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date du jour (et non la date à laquelle le rapport a été généré).
   

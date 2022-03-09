@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Utilisez la mobilité et la sécurité de base intégrées pour supprimer des informations des appareils inscrits.
-ms.openlocfilehash: ed658abc55d065e6d271893dc80a293e19373a34
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d5f610e2a9180f1d147f68e6aabf4a7291787033
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165879"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400167"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Effacement d’un appareil mobile dans Basic Mobility and Security
 
@@ -36,23 +36,23 @@ Les appareils mobiles peuvent stocker des informations organisationnelles sensib
 
 - **Réinitialisation** aux usine : supprime toutes les données sur l’appareil mobile d’un utilisateur, y compris les applications installées, les photos et les informations personnelles. Une fois l’effacement terminé, l’appareil est rétabli à ses paramètres d’usine.
 
-- **Supprimer des données d’entreprise**: supprime uniquement les données de l’organisation et laisse les applications installées, les photos et les informations personnelles sur l’appareil mobile d’un utilisateur.
+- **Supprimer des données d’entreprise** : supprime uniquement les données de l’organisation et laisse les applications installées, les photos et les informations personnelles sur l’appareil mobile d’un utilisateur.
 
-- **Lorsqu’un appareil est** réinitialisé (réinitialisation d’usine ou suppression des données d’entreprise), l’appareil est supprimé de la liste des appareils gérés.
+- **Lorsqu’un appareil est réinitialisé (** réinitialisation d’usine ou suppression des données d’entreprise), l’appareil est supprimé de la liste des appareils gérés.
     
-- **Réinitialiser** automatiquement un appareil : vous pouvez configurer une stratégie de mobilité et de sécurité de base qui réinitialise automatiquement un appareil après que l’utilisateur a tenté sans succès d’entrer le mot de passe de l’appareil un certain nombre de fois. Pour ce faire, suivez les étapes de la procédure de création de stratégies de sécurité des appareils [dans la mobilité et la sécurité de base.](create-device-security-policies.md)
+- **Réinitialiser** automatiquement un appareil : vous pouvez configurer une stratégie de mobilité et de sécurité de base qui réinitialise automatiquement un appareil après que l’utilisateur a tenté sans succès d’entrer le mot de passe de l’appareil un certain nombre de fois. Pour ce faire, suivez les étapes de la procédure  [inCrémenter des stratégies de sécurité des appareils dans la mobilité et la sécurité de base](create-device-security-policies.md).
     
-- **Si vous souhaitez connaître l’expérience** utilisateur lorsque vous effacez son appareil, voir   [quel est l’impact sur l’utilisateur et l’appareil ?](#whats-the-user-and-device-impact)
+- **Si vous souhaitez connaître l’expérience** utilisateur lorsque vous effacez son appareil, voyez   [l’impact sur l’utilisateur et l’appareil](#whats-the-user-and-device-impact).
 
 ## <a name="wipe-a-mobile-device"></a>Effacer un appareil mobile
 
-1. Go to the [Centre d'administration Microsoft 365](../../admin/admin-overview/about-the-admin-center.md).
+1. Go to the  [Centre d'administration Microsoft 365](../../admin/admin-overview/about-the-admin-center.md).
 
 2. Tapez Gestion des appareils mobiles dans le champ de recherche, puis sélectionnez **Gestion des** appareils mobiles dans la liste des résultats.
 
     :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Option de gestion des appareils mobiles Basic Mobility and Secruity.":::
 
-3. Sélectionnez **Gérer les appareils.**
+3. Sélectionnez **Gérer les appareils**.
 
 4. Sélectionnez l’appareil que vous voulez réinitialiser.
 
@@ -60,9 +60,9 @@ Les appareils mobiles peuvent stocker des informations organisationnelles sensib
 
 6. Sélectionnez le type de réinitialisation à distance que vous voulez effectuer.
 
-    - Pour réinitialiser entièrement l’appareil et restaurer ses paramètres d’usine, sélectionnez **Réinitialisation aux paramètres d’usine.**
-    - Pour faire une effacement sélective et supprimer uniquement Microsoft 365'organisation, **sélectionnez Supprimer les données de l’entreprise.**
-    - Pour supprimer l’appareil de votre organisation, **sélectionnez Supprimer l’appareil.**
+    - Pour réinitialiser entièrement l’appareil et rétablir ses paramètres d’usine, sélectionnez **Réinitialisation aux paramètres d’usine**.
+    - Pour faire une effacement sélective et supprimer uniquement Microsoft 365'organisation, **sélectionnez Supprimer les données de l’entreprise**.
+    - Pour supprimer l’appareil de votre organisation, **sélectionnez Supprimer l’appareil**.
 
 7. Cliquez sur **Oui** pour confirmer.
 
@@ -82,11 +82,11 @@ Effacez un appareil pour les raisons suivantes :
 
 La effacement est envoyée immédiatement à l’appareil mobile et l’appareil est marqué comme non conforme dans Azure Active Directory. Bien que toutes les données sont supprimées lorsqu’un appareil est réinitialisé aux paramètres d’usine par défaut, le tableau suivant décrit le contenu supprimé pour chaque type d’appareil lorsqu’un appareil est supprimé lorsque vous supprimez des données d’entreprise.
 
-|**Impact sur le contenu**|**iOS 10 et les ultérieures**|**Android 5 et version ultérieure**|
+|**Impact sur le contenu**|**iOS**|**Android**|
 |:-----|:-----|:-----|
-|Microsoft 365 données d’application sont effacées si l’appareil est protégé par les stratégies Intune App Protection. Les applications ne sont pas supprimées. Pour les appareils non protégés par les stratégies de gestion des applications mobiles (MAM), Outlook et OneDrive ne suppriment pas les données mises en cache.<br/>**Remarque** Pour appliquer des stratégies intune App Protection, vous devez avoir une licence Intune.|Oui|Oui|
+|Microsoft 365 données d’application sont effacées si l’appareil est protégé par les stratégies Intune App Protection. Les applications ne sont pas supprimées. Pour les appareils non protégés par les stratégies de gestion des applications mobiles (MAM), les Outlook et OneDrive ne suppriment pas les données mises en cache.<br/>**Remarque** Pour appliquer des stratégies intune App Protection, vous devez avoir une licence Intune.|Oui|Oui|
 |Les paramètres de stratégie appliqués par Basic Mobility and Security aux appareils ne sont plus appliqués ; les utilisateurs peuvent modifier les paramètres.|Oui|Oui|
-|Les profils de messagerie créés par Basic Mobility and Security sont supprimés et les messages électroniques mis en cache sur l’appareil sont supprimés.|Oui|N/D|
+|Les profils de messagerie créés par Basic Mobility and Security sont supprimés et les messages électroniques mis en cache sur l’appareil sont supprimés.|Oui|N/A|
 
 > [!NOTE]
 > Portail d'entreprise’application est disponible dans l’App Store pour iOS et le Play Store pour les appareils Android.

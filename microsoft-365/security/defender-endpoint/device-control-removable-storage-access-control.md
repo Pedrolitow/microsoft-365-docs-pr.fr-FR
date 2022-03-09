@@ -15,12 +15,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 02/07/2022
-ms.openlocfilehash: 86ae312247d0e796364da61201f7b01d4fec816f
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: a0bca99258bd256797437cdc4756910fc713cf26
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464419"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401177"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Contrôle d’appareil amovible Microsoft Defender for Endpoint Stockage Access Control
 
@@ -28,7 +28,7 @@ ms.locfileid: "62464419"
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
-> La gestion des stratégies de groupe et la gestion des stratégies personnalisées/OMA-URI Intune de ce produit sont désormais généralement disponibles (4.18.2106) : consultez le blog Tech Community : Protéger votre stockage et votre imprimante amovibles avec [Microsoft Defender pour Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806).
+> La gestion des stratégies de groupe et la gestion des stratégies personnalisées/OMA-URI Intune de ce produit sont désormais généralement disponibles (4.18.2106) : consultez le blog Tech Community : Protéger votre stockage amovible et votre imprimante avec [Microsoft Defender pour endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806).
 
 
 Microsoft Defender for Endpoint Device Control Removable Stockage Access Control vous permet d’accomplir la tâche suivante :
@@ -54,6 +54,7 @@ Microsoft Defender for Endpoint Device Control Removable Stockage Access Control
 |Création de stratégie|Permet de créer une stratégie pour appliquer chaque groupe de médias amovible|Étapes 2 et 3 de la section Déploiement [d’une stratégie via OMA-URI](#deploying-policy-via-oma-uri) | Étape 2 de la section Déploiement [d’une stratégie via une stratégie de groupe](#deploying-policy-via-group-policy) |
 |Application par défaut|Vous permet de définir l’accès par défaut (Refuser ou Autoriser) aux médias amovibles s’il n’existe aucune stratégie|Étape 4 de la section Déploiement [d’une stratégie via OMA-URI](#deploying-policy-via-oma-uri) | Étape 3 de la section Déploiement [d’une stratégie via une stratégie de groupe](#deploying-policy-via-group-policy) |
 |Activer ou désactiver le contrôle d’accès Stockage amovible|Si vous définissez Disable, la stratégie Demovable Stockage Access Control est désactivée sur cet ordinateur.| Étape 5 de la section Déploiement [d’une stratégie via OMA-URI](#deploying-policy-via-oma-uri) | Étape 4 de la section Déploiement [d’une stratégie via une stratégie de groupe](#deploying-policy-via-group-policy) |
+|Capturer les informations de fichier|Vous permet de créer une stratégie pour capturer des informations de fichier lorsque l’accès en écriture se produit| Étape 2 et 6 de la section Déploiement [d’une stratégie via OMA-URI](#deploying-policy-via-oma-uri) | Étape 2 et 5 de la section Déploiement [d’une stratégie via une stratégie de groupe](#deploying-policy-via-group-policy) |
 
 ## <a name="prepare-your-endpoints"></a>Préparer vos points de terminaison
 
@@ -65,7 +66,7 @@ Déployez le contrôle d’Stockage amovible sur les appareils Windows 10 et Win
 
 - **4.18.2107** ou ultérieure : ajouter la prise en charge de l’appareil portable Windows (WPD) (pour les appareils mobiles, tels que les tablettes) ; ajouter AccountName dans le recherche avancée [](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
-- **4.18.2111** ou version ultérieure : ajoutez « Activer ou désactiver le contrôle d’accès Stockage amovible », « Application par défaut » et durée de mise à jour de la stratégie de l’ordinateur client via PowerShell.
+- **4.18.2111** ou version ultérieure : ajouter « Activer ou désactiver le contrôle d’accès Stockage amovible » , « Application par défaut » , heure de mise à jour de la stratégie de l’ordinateur client via PowerShell, informations sur les fichiers
 
 :::image type="content" source="images/powershell.png" alt-text="Interface PowerShell.":::
 
@@ -86,7 +87,7 @@ Vous pouvez utiliser les propriétés suivantes pour créer un groupe de stockag
 |Nom de la propriété|Description|Options|
 |---|---|---|
 |**GroupId**|GUID, un ID unique, représente le groupe et sera utilisé dans la stratégie.||
-|**DescriptorIdList**|List the device properties you want to use to cover in the group. Pour chaque propriété d’appareil, voir [Propriétés de l’appareil](device-control-removable-storage-protection.md) pour plus d’informations. Toutes les propriétés sont sensibles à la cas. |**PrimaryId**: `RemovableMediaDevices`, , `CdRomDevices``WpdDevices`<p>**BusId** : par exemple, USB, SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId** : InstancePathId est une chaîne qui identifie de manière unique l’appareil dans le système, par exemple, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. Le numéro à la fin (par exemple, &0) représente l’emplacement disponible et peut changer d’appareil à appareil. Pour de meilleurs résultats, utilisez un caractère générique à la fin. Par exemple, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**PID**<p>**VID_PID**<p>0751_55E0 : correspondre à cette paire VID/PID exacte<p>55E0 : faire correspondre n’importe quel média avec PID=55E0 <p>0751 : faire correspondre n’importe quel média avec VID=0751|
+|**DescriptorIdList**|List the device properties you want to use to cover in the group. Pour chaque propriété d’appareil, voir [Propriétés de l’appareil](device-control-removable-storage-protection.md) pour plus d’informations. Toutes les propriétés sont sensibles à la cas. |**PrimaryId**: `RemovableMediaDevices`, , `CdRomDevices``WpdDevices`<p>**BusId** : par exemple, USB, SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId** : InstancePathId est une chaîne qui identifie de manière unique l’appareil dans le système, par exemple, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. Le numéro à la fin (par exemple, &0) représente l’emplacement disponible et peut changer d’appareil à appareil. Pour de meilleurs résultats, utilisez un caractère générique à la fin. Par exemple : `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**PID**<p>**VID_PID**<p>0751_55E0 : correspondre à cette paire VID/PID exacte<p>55E0 : faire correspondre n’importe quel média avec PID=55E0 <p>0751 : faire correspondre n’importe quel média avec VID=0751|
 |**MatchType**|Lorsqu’il existe plusieurs propriétés d’appareil utilisées dans `DescriptorIDList`le , MatchType définit la relation.|**MatchAll** : tous les attributs `DescriptorIdList` sous la relation **Will be And** ; par exemple, `DeviceID` `InstancePathID`si l’administrateur met et, pour chaque clé USB connectée, le système vérifie si la clé USB correspond aux deux valeurs. <p> **MatchAny :** les attributs sous la relation DescriptorIdList seront **Or** ; par exemple, si `DeviceID` `InstancePathID`l’administrateur met et, pour chaque clé USB connectée, le système fait l’application tant que la clé USB a une valeur **DeviceID** ou **InstanceID** identique. |
 
 ### <a name="access-control-policy"></a>Politique de contrôle d’accès
@@ -99,11 +100,11 @@ Vous pouvez utiliser les propriétés suivantes pour créer un groupe de stockag
 | **IncludedIdList** | Groupe(s) à appliquer à la stratégie. Si plusieurs groupes sont ajoutés, la stratégie est appliquée à n’importe quel média de tous ces groupes.|L’ID de groupe/GUID doit être utilisé à cette instance. <p> L’exemple suivant illustre l’utilisation de GroupID : <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
 | **ExcludedIDList** | Les groupes à qui la stratégie ne sera pas appliquée. | L’ID de groupe/GUID doit être utilisé à cette instance. |
 | **ID d’entrée** | Un policyRule peut avoir plusieurs entrées ; chaque entrée avec un GUID unique indique à Device Control une restriction.| |
-| **Type (Type)** | Définit l’action pour les groupes de stockage amovibles dans IncludedIDList. <p>Application : autoriser ou refuser <p>Audit : AuditAllowed ou AuditDenied<p> | Autoriser<p>Refuser <p>AuditAllowed : définit la notification et l’événement lorsque l’accès est autorisé <p>AuditDenied : définit la notification et l’événement lorsque l’accès est refusé ; doit fonctionner avec **l’entrée** de refus.<p> Lorsqu’il existe des types de conflit pour le même média, le système applique le premier de la stratégie. Allow et **Deny** sont un exemple de **type de conflit**. |
+| **Type** | Définit l’action pour les groupes de stockage amovibles dans IncludedIDList. <p>Application : autoriser ou refuser <p>Audit : AuditAllowed ou AuditDenied<p> | Autoriser<p>Refuser <p>AuditAllowed : définit la notification et l’événement lorsque l’accès est autorisé <p>AuditDenied : définit la notification et l’événement lorsque l’accès est refusé ; doit fonctionner avec **l’entrée** de refus.<p> Lorsqu’il existe des types de conflit pour le même média, le système applique le premier de la stratégie. Allow et **Deny** sont un exemple de **type de conflit**. |
 | **Sid** | Le sid d’utilisateur local ou le groupe sid d’utilisateur ou le sid de l’objet AD, définit s’il faut appliquer cette stratégie sur un utilisateur ou un groupe d’utilisateurs spécifique ; une entrée peut avoir un maximum d’un Sid et une entrée sans sid signifie appliquer la stratégie sur l’ordinateur. |  |
 | **ComputerSid** | Le sid d’ordinateur local ou le groupe sid d’ordinateur ou le sid de l’objet AD, définit s’il faut appliquer cette stratégie sur un ordinateur ou un groupe d’ordinateurs spécifique ; une entrée peut avoir un maximum d’un ComputerSid et une entrée sans ComputerSid signifie appliquer la stratégie sur l’ordinateur. Si vous souhaitez appliquer une entrée à un utilisateur spécifique et à un ordinateur spécifique, ajoutez Sid et ComputerSid dans la même entrée. |  |
-| **Options** | Définit s’il faut afficher la notification ou non |**0 ou 4 :** lorsque le type Autoriser ou Refuser est sélectionné. <p>0 : rien<p>4 : désactivez **AuditAllowed** et **AuditDenied** pour cette entrée. Même si **le blocage** se produit et que le paramètre AuditDenied est configuré, le système n’affiche pas de notification. <p> Lorsque type **AuditAllowed est** sélectionné : <p>0 : rien <p>1 : rien <p>2 : événement d’envoi<p>3 : événement d’envoi <p> Lorsque type **AuditDenied** est sélectionné : <p>0 : rien <p>1 : afficher la notification <p>2 : événement d’envoi<p>3 : afficher la notification et envoyer un événement |
-|AccessMask|Définit l’accès. | **1-7** : <p>1 : lecture <p>2 : Écriture <p>3 : Lecture et écriture <p>4 : Exécuter <p>5 : Lecture et exécution<p>6 : Écriture et exécution <p>7 : Lecture et écriture et exécution |
+| **Options** | Définit s’il faut afficher la notification ou non |**Lorsque le type d’autoriser est sélectionné** : <p>0 : rien<p>4 : désactivez **AuditAllowed** et **AuditDenied** pour cette entrée. Même si **l’autoriser** se produit et que le paramètre AuditAllowed est configuré, le système n’envoie pas d’événement. <p>8 : capturer des informations de fichier et avoir une copie du fichier en tant que preuve de l’accès en écriture. <p>16 : capturer les informations de fichier pour l’accès en écriture. <p>**Lorsque le refus de type est sélectionné** : <p>0 : rien<p>4 : désactivez **AuditDenied** pour cette entrée. Même si **le blocage** se produit et que le paramètre AuditDenied est configuré, le système n’affiche pas de notification. <p>**Lorsque type **AuditAllowed est** sélectionné** : <p>0 : rien <p>1 : rien <p>2 : événement d’envoi<p>3 : événement d’envoi <p> **Lorsque type **AuditDenied** est sélectionné** : <p>0 : rien <p>1 : afficher la notification <p>2 : événement d’envoi<p>3 : afficher la notification et envoyer un événement |
+|AccessMask|Définit l’accès. | **Accès au niveau du disque** : <p>1 : lecture <p>2 : Écriture <p>4 : Exécuter <p>**Accès au niveau du système de fichiers** : <p>8 : Lecture du système de fichiers <p>16 : Écriture du système de fichiers <p>32 : Exécution du système de fichiers <p><p>Vous pouvez avoir plusieurs accès en faisant une opération OR binaire, par exemple, AccessMask pour la lecture et l’écriture et l’exécution sera 7 ; AccessMask pour lecture et écriture est 3.|
 
 ## <a name="common-removable-storage-access-control-scenarios"></a>Scénarios courants Stockage contrôle d’accès des périphériques amovibles
 
@@ -149,7 +150,7 @@ La fonctionnalité de contrôle d Stockage’accès amovible vous permet d’app
 
 ### <a name="licensing"></a>Licences
 
-Avant de commencer avec le contrôle d’accès Stockage amovible, vous devez confirmer [Microsoft 365 abonnement.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) Pour accéder au contrôle d’accès Stockage et l’utiliser, vous devez Microsoft 365 E3 ou Microsoft 365 E5.
+Avant de commencer avec le contrôle d’accès Stockage amovible, vous devez confirmer [votre abonnement Microsoft 365'accès.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) Pour accéder au contrôle d’accès Stockage et l’utiliser, vous devez Microsoft 365 E3 ou Microsoft 365 E5.
 
 ### <a name="deploying-policy-via-group-policy"></a>Déploiement d’une stratégie via une stratégie de groupe
 
@@ -162,12 +163,14 @@ Avant de commencer avec le contrôle d’accès Stockage amovible, vous devez co
 2. Combinez toutes les règles dans `<PolicyRules>` `</PolicyRules>` un fichier xml.
 
     Si vous souhaitez limiter un utilisateur spécifique, utilisez la propriété SID dans l’entrée. S’il n’existe aucun SID dans l’entrée de stratégie, l’entrée est appliquée à l’instance de connexion de tout le monde pour l’ordinateur.
+    
+    Si vous souhaitez surveiller les informations de fichier pour l’accès en écriture, utilisez le bon AccessMask avec l’option de droite (8 ou 16) ; voici l’exemple [d’informations de fichier de capture](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Audit%20File%20Information.xml).
 
     L’image suivante illustre l’utilisation de la propriété SID et un exemple de scénario 1 : empêcher l’accès en écriture et en exécution à tous les [usbs](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs) approuvés, sauf autoriser.
 
     :::image type="content" source="images/usage-sid-property.png" alt-text="Écran affichant un code qui indique l’utilisation de l’attribut de propriété SID.":::
 
-3. Enregistrez les fichiers XML  \> de règle et de groupe sur le dossier de partage réseau et placez le chemin d’accès du dossier de partage réseau dans le paramètre de stratégie de groupe : **Modèles** \> d’administration de configuration  ordinateur **Windows Composants** \> **Antivirus Microsoft Defender** \> **Contrôle d’appareil : « Définir des groupes de stratégies de contrôle d’appareil » et « Définir des règles de stratégie de contrôle d’appareil** ».
+3. Enregistrez les fichiers XML  \> de règle et de groupe sur le dossier de partage réseau et placez le chemin d’accès du dossier de partage réseau dans le paramètre de stratégie de groupe : **Modèles** \> d’administration  de configuration ordinateur **Windows Composants** \> **Antivirus Microsoft Defender** \> **Contrôle de périphérique : « Définir des groupes de stratégies de contrôle d’appareil » et « Définir des règles de stratégie de contrôle d’appareil** ».
 
    Si vous ne trouvez pas l’UX de configuration de stratégie dans la stratégie de groupe, vous pouvez télécharger les fichiers [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) et [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) en sélectionnant **Raw** , puis **Enregistrer** sous.
 
@@ -189,13 +192,19 @@ Avant de commencer avec le contrôle d’accès Stockage amovible, vous devez co
 
     :::image type="content" source="images/148609685-4c05f002-5cbe-4aab-9245-83e730c5449e.png" alt-text="Contrôle d’appareil activé ou désactivé dans le code PowerShell":::
 
+6. Définissez l’emplacement d’une copie du fichier : si vous souhaitez obtenir une copie du fichier lors de l’accès en écriture, vous devez définir l’emplacement où le système peut enregistrer la copie.
+    
+    Vous devez déployer cette option en même temps que accessMask et Option , voir l’étape 2 ci-dessus.
+
+    :::image type="content" source="../../media/define-device-control-policy-rules.png" alt-text="Stratégie de groupe : définir locaiton pour les preuves de fichier":::
+
 ## <a name="deploying-and-managing-policy-via-intune-oma-uri"></a>Déploiement et gestion d’une stratégie via Intune OMA-URI
 
 La fonctionnalité Stockage contrôle d’accès amovible vous permet d’appliquer une stratégie via OMA-URI à l’utilisateur ou à l’appareil, ou aux deux.
 
 ### <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
-Avant de commencer avec le contrôle d’accès Stockage amovible, vous devez confirmer [Microsoft 365 abonnement.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) Pour accéder au contrôle d’accès Stockage et l’utiliser, vous devez Microsoft 365 E3 ou Microsoft 365 E5.
+Avant de commencer avec le contrôle d’accès Stockage amovible, vous devez confirmer [votre abonnement Microsoft 365'accès.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) Pour accéder au contrôle d’accès Stockage et l’utiliser, vous devez Microsoft 365 E3 ou Microsoft 365 E5.
 
 ### <a name="permission"></a>Autorisation
 
@@ -209,7 +218,7 @@ Pour le déploiement de stratégie dans Intune, le compte doit être autorisé �
 
 ### <a name="deploying-policy-via-oma-uri"></a>Déploiement d’une stratégie via OMA-URI
 
-Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> **Devices** \> **Configuration profiles** \> **Create profile** \> **Platform: Windows 10 and later & Profile: Custom**
+Microsoft Endpoint Manager centre d’administration  **des appareils (**<https://endpoint.microsoft.com/>) \> \> Profils de **configuration** \> \> des appareils Créer une plateforme de profil **: Windows 10 profil et & profil : personnalisé**
 
 1. Pour chaque groupe, créez une règle OMA-URI :
 
@@ -236,6 +245,8 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
       `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bc544a991-5786-4402-949e-a032cb790d0e%7d/RuleData`
 
     - Type de données : chaîne (fichier XML)
+       
+    Si vous souhaitez surveiller les informations de fichier pour l’accès en écriture, utilisez le bon AccessMask avec l’option de droite (8 ou 16) ; voici l’exemple [d’informations de fichier de capture](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20File%20Information.xml).
 
 3. Application par défaut : vous permet de définir l’accès par défaut (Refuser ou Autoriser) aux médias amovibles s’il n’existe aucune stratégie. Par exemple, vous avez uniquement une stratégie (refuser ou autoriser) pour RemovableMediaDevices, mais vous n’avez pas de stratégie pour CdRomDevices ou WpdDevices, et vous définissez refuser par défaut via cette stratégie, l’accès en lecture/écriture/exécution à CdRomDevices ou WpdDevices sera bloqué.
 
@@ -263,6 +274,16 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
 
     :::image type="content" source="images/148609770-3e555883-f26f-45ab-9181-3fb1ff7a38ac.png" alt-text="Contrôle d’accès Stockage dans le code PowerShell":::
 
+5. Définissez l’emplacement d’une copie du fichier : si vous souhaitez obtenir une copie du fichier lors de l’accès en écriture, vous devez définir l’emplacement où le système peut enregistrer la copie.
+    
+    - OMA-URI : `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation`
+
+    - Type de données : String
+    
+    Vous devez déployer cette option avec accessMask et l’option de votre choix ( voir l’étape 2 ci-dessus).
+
+    :::image type="content" source="../../media/device-control-oma-uri-edit-row.png" alt-text="Définir locaiton pour la preuve de fichier":::
+    
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>Déploiement et gestion d’une stratégie à l’aide de l’interface utilisateur Intune
 
 Cette fonctionnalité est disponible dans le Centre d’administration Microsoft Endpoint Manager (<https://endpoint.microsoft.com/>). Go to **Endpoint SecurityAttack** >  **Surface** **ReductionCreate** >  Policy. Choose **Platform: Windows 10 and later** with **Profile: Device Control**.
@@ -306,14 +327,13 @@ Nous avons validé un groupe USB avec 100 000 supports , jusqu’à 7 Mo. La str
 
 La raison la plus courante est qu’il n’existe pas de [version requise du client anti-programme malveillant](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints).
 
-Une autre raison peut être que le fichier XML n’est pas correctement formaté, par exemple, si vous n’utilisez pas la mise en forme markdown correcte pour le caractère « & » dans le fichier XML, ou que l’éditeur de texte peut ajouter une 0xEF 0xBB 0xBF de marque d’ordre d’byte au début des fichiers, ce qui entraîne le non-bon de l’examen XML. Une solution simple consiste à télécharger [l’exemple de fichier](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (sélectionnez **Raw** , puis **Enregistrer sous**), puis à mettre à jour.
+Une autre raison peut être que le fichier XML n’est pas correctement formaté, par exemple, en n’utilisant pas la mise en forme markdown correcte pour le caractère « & » dans le fichier XML, ou que l’éditeur de texte peut ajouter une 0xEF 0xBB 0xBF d’ordre d’byte au début des fichiers, ce qui entraîne le non-bon de l’examen XML. Une solution simple consiste à télécharger [l’exemple de fichier](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (sélectionnez **Raw** , puis **Enregistrer sous**), puis à mettre à jour.
 
 Si vous déployez et gérez la stratégie via la stratégie de groupe, veillez à combiner toutes les stratégies PolicyRule dans un fichier XML au sein d’un nœud parent appelé PolicyRules et tous les groupes dans un fichier XML au sein d’un nœud parent appelé Groupes ; si vous gérez par le biais d’Intune, conservez un seul fichier XML PolicyRule, la même chose, un fichier XML de groupe 1.
 
 ### <a name="there-is-no-configuration-ux-for-define-device-control-policy-groups-and-define-device-control-policy-rules-on-my-group-policy"></a>Il n’existe aucune expérience d’expérience de configuration pour « Définir des groupes de stratégies de contrôle d’appareil » et « Définir des règles de stratégie de contrôle d’appareil » dans ma stratégie de groupe
 
 Nous ne déportons pas l’UX de configuration de la stratégie de groupe, mais vous pouvez toujours obtenir les fichiers adml et admx associés en cliquant sur « Raw » et « Save as » dans les fichiers [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) et [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) .
-
 
 ### <a name="how-can-i-know-whether-the-latest-policy-has-been-deployed-to-the-target-machine"></a>Comment savoir si la dernière stratégie a été déployée sur l’ordinateur cible ?
 

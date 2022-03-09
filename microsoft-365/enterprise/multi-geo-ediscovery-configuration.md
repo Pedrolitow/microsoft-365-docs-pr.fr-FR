@@ -13,20 +13,20 @@ ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 ms.collection: Strat_SP_gtc
 description: Découvrez comment utiliser le paramètre Region pour configurer eDiscovery pour une utilisation dans des emplacements satellites Microsoft 365 multigéogé.
-ms.openlocfilehash: 1bdf03a7c639e659d1b4ec12c691c65863318ad7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b0366470984abbdc0ed0b3e407ca8ef6b5a5743f
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177266"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400935"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Configuration eDiscovery dans Microsoft 365 Multi-Geo
 
-[Advanced eDiscovery permettent](../compliance/overview-ediscovery-20.md) à un administrateur eDiscovery multigéogé de rechercher toutes les régions géographiques sans avoir à utiliser un filtre de sécurité « Région ». Les données sont exportées vers l’instance Azure de l’emplacement central du client multigéogé. 
+[Advanced eDiscovery permettent](../compliance/overview-ediscovery-20.md) à un administrateur eDiscovery multigéogé de rechercher toutes les régions géographiques sans avoir à utiliser un filtre de sécurité « Région ». Les données sont exportées vers l’instance Azure de l’emplacement central du client multigéogé. Il en va de même avec l’application d’une conservation à un dépositaire, mais les statistiques de conservation à l’intérieur de la conservation n’apparaîtront pas sans le filtre de sécurité « Région ». Les statistiques de la période de attente 0 ne signifient pas que la attente a échoué tant que l’état de la attente est sur (réussite).
 
 Sans fonctionnalités eDiscovery avancées, un gestionnaire eDiscovery ou un administrateur d’un client multigéogé ne pourra mener eDiscovery qu’à l’emplacement central de ce client. Pour prendre en charge la possibilité d’effectuer eDiscovery pour des emplacements satellites, un nouveau paramètre de filtre de sécurité de conformité nommé « Region » est disponible via PowerShell. Ce paramètre peut être utilisé par les locataires dont l’emplacement central se trouve en Amérique du Nord, en Europe ou en Asie-Pacifique. Advanced eDiscovery est recommandé pour les locataires dont l’emplacement central n’est pas situé en Amérique du Nord, en Europe ou en Asie-Pacifique et qui doivent effectuer eDiscovery sur plusieurs emplacements géographiques satellites. 
 
-L’administrateur général Microsoft 365 doit affecter les autorisations de gestionnaire eDiscovery pour autoriser d’autres personnes à mettre en place un processus eDiscovery, et affecter un paramètre "Région" dans le filtre de sécurité de conformité correspondant pour définir la région concernée par le processus comme emplacement satellite. Sinon, aucun processus eDiscovery n’est mis en place à l’emplacement satellite.
+L’administrateur général Microsoft 365 doit attribuer des autorisations de gestionnaire eDiscovery pour permettre à d’autres personnes d’effectuer eDiscovery et affecter un paramètre « Region » dans le filtre de sécurité de conformité applicable pour spécifier la région pour effectuer eDiscovery en tant qu’emplacement satellite. Sinon, aucune découverte électronique n’est effectuée pour l’emplacement satellite. Un seul filtre de sécurité « Région » par utilisateur est pris en charge, de sorte que toutes les régions doivent se trouver dans le même filtre de sécurité.
 
 Quand un gestionnaire ou un administrateur eDiscovery est défini pour un emplacement satellite particulier, ce gestionnaire ou cet administrateur eDiscovery peut uniquement effectuer des actions de recherche eDiscovery dans les sites SharePoint et OneDrive situés dans cet emplacement satellite. Si un gestionnaire ou un administrateur eDiscovery tente de rechercher des sites SharePoint ou OneDrive en dehors de l’emplacement satellite spécifié, aucun résultat n’est renvoyé. Par ailleurs, lorsque le gestionnaire ou l’administrateur eDiscovery d’un emplacement satellite déclenche une exportation, les données sont exportées vers l’instance Azure de cette région. Ainsi, les entreprises respectent les règles de conformité en interdisant l’exportation de contenu au-delà de frontières contrôlées.
 
