@@ -1,24 +1,29 @@
 ---
 title: Configurer les paramètres de rétention pour conserver ou supprimer automatiquement du contenu
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: null
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
-  - SPO_Content
+- M365-security-compliance
+- SPO_Content
 search.appverid:
-  - MOE150
-  - MET150
+- MOE150
+- MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
+ms.openlocfilehash: decf8f53f30c7f29636e50900fe994aae25e6552
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326984"
 ---
-
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
@@ -56,7 +61,9 @@ Lorsque vous choisissez d’utiliser des étendues adaptatives, vous êtes invit
 |**Microsoft Office SharePoint Online** : s’applique à :  <br/> Sites Microsoft Office SharePoint Online <br/> Comptes OneDrive |URL du site <br/>Nom du site <br/> Propriétés personnalisées Microsoft Office SharePoint Online : RefinableString00 : RefinableString99 |
 |**Groupes Microsoft 365** : s’applique à :  <br/> - Groupes Microsoft 365 <br/> Messages du canal Teams <br/> Messages de la communauté Yammer |Nom <br/> Nom <br/> Description <br/> Adresses de messagerie <br/> Alias <br/> Attributs personnalisés Exchange : attributs personnalisés1 : attributs personnalisés15 |
 
-Les noms de propriétés des sites sont basés sur les propriétés gérées par le site Microsoft Office SharePoint Online, et les noms d’attributs pour les utilisateurs et les groupes sont basés sur les [propriétés de destinataires pouvant être filtrées](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) qui correspondent aux attributs Azure AD. Par exemple :
+Les noms des propriétés des sites sont basés sur les propriétés gérées des sites SharePoint. Pour plus d'informations sur les attributs personnalisés, voir [Utilisation de propriétés de site SharePoint personnalisées pour appliquer la rétention Microsoft 365 avec des étendues de politique adaptative](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
+
+Les noms d'attributs des utilisateurs et des groupes sont basés [sur les propriétés](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) filtrables des destinataires qui correspondent aux attributs d'Azure AD. Par exemple :
 
 - **Alias** correspond au nom LDAP **mailNickname**, qui s’affiche comme **e-mail** dans le centre d’administration Azure AD.
 - **Adresses e-mail** correspond au nom LDAP **adresses proxy**, qui s’affiche sous la forme **adresse proxy** dans le centre d’administration Azure AD.
@@ -72,7 +79,9 @@ Une stratégie unique de rétention peut avoir une ou plusieurs étendues adapta
 
 #### <a name="to-configure-an-adaptive-scope"></a>Pour configurer une étendue adaptative
 
-Avant de configurer votre étendue adaptative, utilisez la section précédente pour identifier le type d’étendue à créer et les attributs et valeurs que vous allez utiliser. Vous devrez peut-être collaborer avec d’autres administrateurs pour confirmer ces informations et, pour les sites Microsoft Office SharePoint Online, confirmer que les propriétés sont indexées.
+Avant de configurer votre portée adaptative, utilisez la section précédente pour identifier le type de portée à créer et les attributs et valeurs que vous utiliserez. Vous devrez peut-être travailler avec d'autres administrateurs pour confirmer ces informations. 
+
+Pour les sites SharePoint, une configuration SharePoint supplémentaire peut être nécessaire si vous prévoyez d'utiliser des [propriétés de site personnalisées](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
 1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), accédez à l’un des emplacements suivants :
     
@@ -82,7 +91,7 @@ Avant de configurer votre étendue adaptative, utilisez la section précédente 
     - Si vous utilisez la solution de gouvernance des informations :
        - **Solutions** > **Gouvernance des informations** > **Étendues adaptatives** onglet > + **Créer une étendue**
     
-    Votre solution n’apparaît pas immédiatement dans le volet de navigation ? Sélectionnez tout d’abord **Afficher tout**. 
+    Vous ne voyez pas immédiatement votre solution dans le volet de navigation ? Sélectionnez d'abord **Afficher tout**. 
 
 2. Suivez les invites de la configuration pour sélectionner d’abord le type d’étendue, puis sélectionnez les attributs ou propriétés que vous souhaitez utiliser pour générer l’appartenance dynamique, puis tapez les valeurs d’attribut ou de propriété.
     
@@ -104,19 +113,31 @@ Avant de configurer votre étendue adaptative, utilisez la section précédente 
     - Pour **utilisateur** et étendues de **groupe Microsoft 365**, utilisez [Syntaxe de filtrage OPATH](/powershell/exchange/recipient-filters). Par exemple, pour créer une étendue utilisateur qui définit son appartenance par département, pays et état :
     
         ![Exemple d’étendue adaptative avec requête avancée.](../media/example-adaptive-scope-advanced-query.png)
+        
+        L'un des avantages de l'utilisation du générateur de requêtes avancées pour ces champs d'application est un choix plus large d'opérateurs de requête :
+        - **et**
+        - **ou**
+        - **pas**
+        - **eq** (égal à)
+        - **ne** (n’est pas égal à)
+        - **lt** (inférieur à)
+        - **gt** (supérieur à)
+        - **like**(comparaison de chaînes)
+        - **n’aime pas**(comparaison de chaînes)
     
     - Pour les **sites Microsoft Office SharePoint Online** étendues, utilisez le langage KQL (Keyword Query Language). Vous connaissez peut-être déjà l’utilisation de KQL pour rechercher Microsoft Office SharePoint Online à l’aide de propriétés de site indexées. Pour vous aider à spécifier ces requêtes KQL, consultez [En savoir plus sur la syntaxe KQL](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
-    
-    L’un des avantages de l’utilisation du générateur de requêtes avancé est un choix plus large d’opérateurs de requête :
-    - **et**
-    - **ou**
-    - **pas**
-    - **eq** (égal à)
-    - **ne** (n’est pas égal à)
-    - **lt** (inférieur à)
-    - **gt** (supérieur à)
-    - **j'aime** (comparaison de chaînes
-    - **n’aime pas** (comparaison de chaînes
+        
+        Par exemple, comme les champs d'application des sites SharePoint incluent automatiquement tous les types de sites SharePoint, qui comprennent les sites Microsoft 365 connectés à un groupe et les sites OneDrive, vous pouvez utiliser la propriété SiteTemplate du site indexé pour inclure ou exclure des types de **sites spécifiques**. Les modèles que vous pouvez spécifier :
+        - SITEPAGEPUBLISHING pour les sites de communication modernes
+        - GROUPE pour les sites connectés à un groupe Microsoft 365
+        - TEAMCHANNEL pour les sites de canaux privés Microsoft Teams
+        - STS pour un site d'équipe SharePoint classique
+        - SPSPERS pour les sites OneDrive
+        
+        Ainsi, pour créer une portée adaptative qui inclut uniquement les sites de communication modernes et exclut les sites Microsoft 365 connectés à un groupe et les sites OneDrive, spécifiez la requête KQL suivante :
+        ````console
+        SiteTemplate=SITEPAGEPUBLISHING
+        ````
     
     Vous pouvez [valider ces requêtes avancées](#validating-advanced-queries)indépendamment de la configuration de l’étendue.
     
@@ -196,7 +217,7 @@ Lorsque vous choisissez d’utiliser des étendues statiques, vous devez décide
 
 À l'exception de Skype for Business, par défaut, toutes les instances des emplacements sélectionnés sont automatiquement incluses dans la politique sans que vous ayez à les spécifier.
 
-Par exemple, **tous les destinataires** pour l’emplacement **de messagerie Exchange**. Avec ce paramètre par défaut, toutes les boîtes aux lettres utilisateur existantes sont incluses dans la stratégie, et toutes les nouvelles boîtes aux lettres créées après l’application de la stratégie héritent automatiquement de la stratégie.
+Par exemple, Tous les **destinataires** pour l'emplacement de la **messagerie Exchange**. Avec ce paramètre par défaut, toutes les boîtes aux lettres utilisateur existantes seront incluses dans la stratégie, et toute nouvelle boîte aux lettres créée après l'application de la stratégie héritera automatiquement de celle-ci.
 
 #### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Une stratégie avec des inclusions ou des exclusions spécifiques
 
@@ -207,9 +228,9 @@ Pour utiliser la configuration optionnelle afin de définir vos paramètres de c
 > [!WARNING]
 > Si vous configurez des instances à inclure, et supprimez la dernière, la configuration revient à **tous** pour l’emplacement.  Assurez-vous qu'il s'agit bien de la configuration que vous souhaitez avant d'enregistrer la stratégie.
 >
-> Par exemple, si vous spécifiez un site SharePoint à inclure dans votre stratégie de rétention qui est configurée pour supprimer les données, puis supprimez le site, par défaut, tous les sites SharePoint sont soumis à la stratégie de rétention qui supprime définitivement les données. Il en va de même pour les destinataires Exchange, les comptes OneDrive, les utilisateurs de la conversation Teams, etc.
+> Par exemple, si vous spécifiez un site SharePoint à inclure dans votre stratégie de conservation configurée pour supprimer les données, puis que vous supprimez ce site unique, tous les sites SharePoint seront alors soumis par défaut à la stratégie de conservation qui supprime définitivement les données. Il en va de même pour les inclusions de destinataires Exchange, de comptes OneDrive, d'utilisateurs de chats Teams.
 >
-> Dans ce scénario, désactivez le paramètre emplacement si vous ne souhaitez pas que le paramètre **Tout** pour l’emplacement soit soumis à la stratégie de rétention. Vous pouvez également spécifier les instances à exempter de la stratégie.
+> Dans ce scénario, désactivez l'emplacement si vous ne voulez pas que le paramètre **Tout** de l'emplacement soit soumis à la stratégie de conservation. Vous pouvez également spécifier d'exclure les instances qui seront exemptées de la stratégie.
 
 ## <a name="locations"></a>Emplacements
 
@@ -290,7 +311,7 @@ Pour revenir à la valeur par défaut de la boîte aux lettres et du site ShareP
 
 Lorsque vous configurez une stratégie d’application automatique qui utilise des types d’informations sensibles et sélectionnez l’emplacement **Groupes Microsoft 365** :
 
-- Microsoft 365 boîtes aux lettres de groupe ne sont pas incluses. Pour inclure ces boîtes aux lettres dans votre stratégie, sélectionnez l'**emplacement messagerie Exchange** à la place.
+- Les boîtes aux lettres de groupe Microsoft 365 ne sont pas incluses. Pour inclure ces boîtes aux lettres dans votre stratégie, sélectionnez plutôt l'emplacement de la **messagerie Exchange**.
 
 #### <a name="what-happens-if-a-microsoft-365-group-is-deleted-after-a-policy-is-applied"></a>Que se passe-t-il si un groupe Microsoft 365 est supprimé après l'application d'une stratégie
 
@@ -313,7 +334,7 @@ Au contraire de Courrier Exchange, il est impossible de basculer l’état de l�
 
 Après avoir sélectionné cette option **Modifier**, dans le volet **Skype Entreprise**, vous pouvez inclure rapidement tous les utilisateurs en sélectionnant la zone masquée avant la colonne **Nom**. Toutefois, il est important de comprendre que chaque utilisateur compte comme une inclusion particulière dans la stratégie. Par conséquent, si vous incluez 1 000 utilisateurs en sélectionnant cette zone équivaut à sélectionner manuellement 1 000 utilisateurs à inclure, ce qui est le maximum pris en charge pour Skype Entreprise.
 
-Notez que le dossier Outlook **Historique des conversations** est un composant qui n’a rien à voir avec l’archivage de Skype. L’**historique des conversations** peut être désactivé par l’utilisateur final, mais l’archivage de Skype s’effectue par le stockage d’une copie des conversations Skype dans un dossier masqué qui n’est pas accessible par l’utilisateur mais est visible par eDiscovery.
+Sachez que **l'historique des conversations**, un dossier dans Outlook, est une fonction qui n'a rien à voir avec l'archivage de Skype. **L'historique des conversations** peut être désactivé par l'utilisateur final, mais l'archivage de Skype se fait en stockant une copie des conversations Skype dans un dossier caché inaccessible à l'utilisateur mais disponible pour l'eDiscovery.
 
 ## <a name="settings-for-retaining-and-deleting-content"></a>Paramètres pour la conservation et la suppression de contenu
 
@@ -321,7 +342,7 @@ En choisissant les paramètres de conservation et de suppression de contenu, vot
 
 - Conserver uniquement
 
-    Pour cette configuration, choisissez **Conserver les éléments sur une période spécifique** et **À la fin de la période : ne rien faire**. Ou bien sélectionnez **Conserver les éléments indéfiniment**.
+    Pour cette configuration, choisissez **Conserver les éléments sur une période spécifique** et **À la fin de la période : ne rien faire** sélectionnez **Conserver les éléments à l’infini**.
 
 - Conserver puis supprimer
 
@@ -372,9 +393,9 @@ Pour utiliser la configuration optionnelle afin de définir vos paramètres de c
 > [!WARNING]
 > Si vous configurez inclut et supprimez ensuite le dernier, la configuration revient à **Tout** pour l’emplacement.  Assurez-vous qu'il s'agit bien de la configuration que vous souhaitez avant d'enregistrer la stratégie.
 >
-> Par exemple, si vous spécifiez un site SharePoint à inclure dans votre stratégie de rétention qui est configurée pour supprimer les données, puis supprimez le site, par défaut, tous les sites SharePoint sont soumis à la stratégie de rétention qui supprime définitivement les données. Il en va de même pour les destinataires Exchange, les comptes OneDrive, les utilisateurs de la conversation Teams, etc.
+> Par exemple, si vous spécifiez un site SharePoint à inclure dans votre stratégie de conservation configurée pour supprimer les données, puis que vous supprimez ce site, tous les sites SharePoint seront alors soumis par défaut à la stratégie de conservation qui supprime définitivement les données. Il en va de même pour les inclusions de destinataires Exchange, de comptes OneDrive, d'utilisateurs de chats Teams.
 >
-> Dans ce scénario, désactivez le paramètre emplacement si vous ne souhaitez pas que le paramètre **Tout** pour l’emplacement soit soumis à la stratégie de rétention. Vous pouvez également spécifier les exclusions à exempter de la stratégie.
+> Dans ce scénario, désactivez l'emplacement si vous ne voulez pas que le paramètre **Tout** de l'emplacement soit soumis à la politique de conservation. Vous pouvez également spécifier des exclusions pour être exempté de la stratégie.
 
 ## <a name="updating-policies-for-retention"></a>Mise à jour des stratégies pour la rétention
 
