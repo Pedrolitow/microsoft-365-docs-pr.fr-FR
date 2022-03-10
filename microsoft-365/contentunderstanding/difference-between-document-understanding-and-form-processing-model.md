@@ -1,5 +1,5 @@
 ---
-title: Différence entre la compréhension de document et les modèles de traitement de formulaire
+title: Différences entre la compréhension des documents et les modèles de traitement des formulaires
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Découvrez la principale différence entre un modèle de compréhension de document et un modèle de traitement de formulaire.
-ms.openlocfilehash: 8a97c4a2c03d95a5ba9724423a405cb49d4a90fe
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+description: Découvrez les principales différences entre un modèle de compréhension de document et un modèle de traitement de formulaire.
+ms.openlocfilehash: 0605beb2b034343cc53e32058905870f75f811a4
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818515"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419289"
 ---
-# <a name="difference-between-document-understanding-and-form-processing-models"></a>Différence entre la compréhension de document et les modèles de traitement de formulaire 
+# <a name="differences-between-document-understanding-and-form-processing-models"></a>Différences entre la compréhension des documents et les modèles de traitement des formulaires 
 
 La compréhension de contenu dans Microsoft SharePoint Syntex vous permet d’identifier et de classer les documents téléchargés dans les bibliothèques de documents SharePoint, ainsi que d’extraire les informations pertinentes de chaque fichier.  Par exemple, lorsque les fichiers sont téléchargés vers une bibliothèque de documents SharePoint, tous les fichiers identifiés comme *Bons de commande* sont classés comme tels, puis affichés dans une vue personnalisée de la bibliothèque de documents. De plus, vous pouvez extraire des informations spécifiques de chaque fichier (par exemple, le *Numéro de bon de commande* et le *Total*) et les afficher sous forme de colonne dans la vue de votre bibliothèque de documents. 
 

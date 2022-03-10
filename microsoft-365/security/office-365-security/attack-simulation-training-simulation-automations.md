@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des simulations automatisées qui contiennent des techniques et des charges utiles spécifiques qui se lancent lorsque les conditions spécifiées sont remplies dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: a7b49baf23734bccf42df8215e384593ad48d30a
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 47732960ad5fac9884f388836ea23a2b9283c93c
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62887061"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419345"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatisations de simulation pour la formation à la simulation d’attaques
 
@@ -33,7 +33,7 @@ Pour créer une automatisation de simulation, faites les étapes suivantes :
 
 2. Sous **l’onglet Automatisations de** simulation, sélectionnez Créer ![une icône d’automatisation.](../../media/m365-cc-sc-create-icon.png) **Créez l’automatisation**.
 
-   ![Créez un bouton d’automatisation sous l’onglet Automatisations de simulation dans la formation à la simulation d’attaques dans Microsoft 365 Defender portail.](../../media/attack-sim-training-sim-automations-create.png)
+   ![Créez un bouton d’automatisation sous l’onglet Automatisations de simulation dans la formation à la simulation d’attaques Microsoft 365 Defender portail.](../../media/attack-sim-training-sim-automations-create.png)
 
 3. L’Assistant Création s’ouvre. Le reste de cet article décrit les pages et les paramètres qu’elles contiennent.
 
@@ -91,7 +91,7 @@ Si vous cliquez **sur Filtre**, les filtres suivants sont disponibles :
   - **Faible**
   - **Moyenne**
   - **Élevée**
-- **Source** : indique si la charge utile a été créée dans votre organisation ou fait partie du catalogue de charges utiles pré-existant de Microsoft. Les valeurs valides sont les suivantes :
+- **Source** : indique si la charge utile a été créée dans votre organisation ou fait partie du catalogue de charges utiles pré-existant de Microsoft. Les valeurs valides sont les suivantes :
   - **Global**
   - **Client**
   - **All**
@@ -258,19 +258,20 @@ Dans la **page d’accueil** , vous configurez la page web vers qui l’utilisat
 
     Vous devez configurer les paramètres supplémentaires suivants sur la **page d’accueil** :
 
-    - **Indicateurs de charge utile** : ce paramètre n’est pas disponible si vous  avez précédemment  sélectionné une pièce jointe anti-programme malveillant ou un lien vers un programme malveillant dans la page Sélectionner des techniques d’ingénierie [sociale](#select-one-or-more-social-engineering-techniques).
-
-      **Sélectionnez Ajouter des indicateurs de charge utile à la messagerie pour** aider les utilisateurs à découvrir comment identifier les messages d’hameçonnage.
+    - **Indicateurs de charge utile** : ce paramètre n’est disponible que si les deux conditions suivantes sont vraies :
+      - Vous avez précédemment sélectionné **la recherche d’informations** d’identification **, le** lien en pièce jointe ou l’URL **drive-by** dans la page Sélectionner [des techniques d’ingénierie sociale](#select-one-or-more-social-engineering-techniques) .
+      - Après avoir ajouté la balise **Dynamique nommée** **Insérer du contenu de courrier** dans le contenu de la page.
 
     - Contenu de la page : deux onglets sont disponibles :
 
       - **Texte** : un éditeur de texte enrichi est disponible pour créer votre page d’accueil. Outre les paramètres de police et de mise en forme classiques, les paramètres suivants sont disponibles :
         - **Balise dynamique :** sélectionnez l’une des balises suivantes :
-          - **Username**
-          - **Nom de l’expéditeur de l’e-mail**
-          - **Adresse de messagerie de l’expéditeur**
-          - **Sujet de l’e-mail**
-          - **Contenu de l’e-mail**
+          - **Insérer un nom**
+          - **Insérer le nom de l’expéditeur**
+          - **Insérer le courrier électronique de l’expéditeur**
+          - **Insérer l’objet de l’e-mail**
+          - **Insérer du contenu de courrier électronique**
+          - **Insérer une date**
         - **À utiliser par défaut** : sélectionnez l’un des 5 modèles de page d’accueil disponibles pour commencer. Vous pouvez modifier le texte et la disposition dans la zone d’édition. Pour rétablir le texte et la mise en page par défaut de la page d’accueil du modèle, cliquez sur **Réinitialiser à la valeur par défaut**.
         - **Lien de formation** : dans la boîte de dialogue Nom de  **l’URL** de formation qui s’affiche, entrez un titre de lien pour le lien de formation, puis cliquez sur Confirmer pour ajouter le lien à la page d’accueil.
       - **Code** : vous pouvez afficher et modifier directement le code HTML.
@@ -391,7 +392,7 @@ Dans la page **Détails du lancement** , configurez les paramètres supplémenta
 - **Utilisez des charges utiles uniques parmi les simulations au sein** d’une automatisation : par défaut, ce paramètre n’est pas sélectionné.
 - **Répétition de cible :** par défaut, ce paramètre n’est pas sélectionné. Si vous le sélectionnez, configurez le paramètre suivant qui s’affiche :
   - **Entrez le nombre maximal de fois qu’un** utilisateur peut être ciblé dans cette automatisation : entrez une valeur de 1 à 10.
-- **Envoyez un e-mail de simulation** basé sur le paramètre de fuseau horaire actuel de l’utilisateur à partir Outlook application web : par défaut, ce paramètre n’est pas sélectionné.
+- **Envoyez un e-mail de simulation** basé sur le paramètre de fuseau horaire actuel de l’utilisateur à partir Outlook application web : Par défaut, ce paramètre n’est pas sélectionné.
 - **Affichez la page de données interstitielles de technique drive-by** recueillies : ce paramètre n’est disponible que si vous avez sélectionné **l’URL Drive-by** dans la page Sélectionner des techniques d’ingénierie **[sociale](#select-one-or-more-social-engineering-techniques)** . Par défaut, le paramètre est sur (![icône Bascule sur).](../../media/scc-toggle-on.png)).
 
 ## <a name="review-simulation-automation"></a>Passer en revue l’automatisation de simulation

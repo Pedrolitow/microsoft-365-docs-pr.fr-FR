@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide de la formation sur la simulation d’attaques dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 31c8fd7b0369e5af522cd79b9bee7c5ee8460cc5
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 17e4bb55ee2c571c2e66b648d277f0a896551f39
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329640"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419359"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Simuler une attaque par hameçonnage avec une formation de simulation d’attaque dans Defender pour Office 365
 
@@ -88,7 +88,7 @@ Si vous cliquez **sur Filtre**, les filtres suivants sont disponibles :
   - **Faible**
   - **Moyenne**
   - **Élevée**
-- **Source** : indique si la charge utile a été créée dans votre organisation ou fait partie du catalogue de charges utiles pré-existant de Microsoft. Les valeurs valides sont les suivantes :
+- **Source** : indique si la charge utile a été créée dans votre organisation ou fait partie du catalogue de charges utiles pré-existant de Microsoft. Les valeurs valides sont les suivantes :
   - **Global** (intégré)
   - **Client** (personnalisé)
   - **All**
@@ -252,8 +252,6 @@ Les pages d’accueil organisées par Microsoft sont disponibles en 12 langues :
     - **Ajouter le logo** : cliquez **sur Parcourir** pour rechercher et sélectionner un .png, .jpeg ou .gif fichier. Pour supprimer le logo, cliquez sur **Supprimer**.
     - **Ajouter des indicateurs de charge utile** à l’e-mail : ce paramètre n’est pas disponible  si vous avez précédemment sélectionné une pièce jointe anti-programme malveillant ou un lien vers un programme malveillant dans la page [Sélectionner une technique](#select-a-social-engineering-technique).
 
-      **Sélectionnez Ajouter des indicateurs de charge utile à la messagerie pour** aider les utilisateurs à découvrir comment identifier les messages d’hameçonnage.
-
     Vous pouvez afficher un aperçu des résultats en cliquant sur le bouton Ouvrir le panneau **d’aperçu** en bas de la page.
 
   - **Utilisez une URL personnalisée :** ce paramètre n’est pas disponible si vous avez  précédemment sélectionné  pièce jointe programme malveillant ou Lien vers un programme malveillant dans la page [Sélectionner une technique](#select-a-social-engineering-technique).
@@ -261,18 +259,19 @@ Les pages d’accueil organisées par Microsoft sont disponibles en 12 langues :
     Si vous **sélectionnez Utiliser une URL** personnalisée, vous devez ajouter l’URL dans la zone Entrer **l’URL de la page** d’accueil personnalisée qui s’affiche. Aucune autre option n’est disponible sur la page.
 
   - **Créez votre propre page d’accueil** : cette valeur est associée aux options suivantes pour configurer :
-    - **Ajouter des indicateurs de charge utile** à l’e-mail : ce paramètre n’est pas disponible  si vous avez précédemment sélectionné une pièce jointe anti-programme malveillant ou un lien vers un programme malveillant dans la page [Sélectionner une technique](#select-a-social-engineering-technique).
-
-      **Sélectionnez Ajouter des indicateurs de charge utile à la messagerie pour** aider les utilisateurs à découvrir comment identifier les messages d’hameçonnage.
+    - **Ajouter des indicateurs de charge utile à** l’e-mail : ce paramètre n’est disponible que si les deux conditions suivantes sont vraies :
+      - Vous avez précédemment sélectionné **la recherche d’informations** d’identification, le lien **en pièce jointe** ou l’URL **drive-by** dans la page [Sélectionner une technique](#select-a-social-engineering-technique) .
+      - Après avoir ajouté la balise **Dynamique nommée** **Insérer du contenu de courrier** dans le contenu de la page.
 
     - Contenu de la page : deux onglets sont disponibles :
       - **Texte** : un éditeur de texte enrichi est disponible pour créer votre page d’accueil. Outre les paramètres de police et de mise en forme classiques, les paramètres suivants sont disponibles :
         - **Balise dynamique :** sélectionnez l’une des balises suivantes :
-          - **Username**
-          - **Nom de l’expéditeur de l’e-mail**
-          - **Adresse de messagerie de l’expéditeur**
-          - **Sujet de l’e-mail**
-          - **Contenu de l’e-mail**
+          - **Insérer un nom**
+          - **Insérer le nom de l’expéditeur**
+          - **Insérer le courrier électronique de l’expéditeur**
+          - **Insérer l’objet de l’e-mail**
+          - **Insérer du contenu de courrier électronique**
+          - **Insérer une date**
         - **À utiliser par défaut** : sélectionnez un modèle disponible pour commencer. Vous pouvez modifier le texte et la disposition dans la zone d’édition. Pour rétablir le texte et la mise en page par défaut de la page d’accueil du modèle, cliquez sur **Réinitialiser à la valeur par défaut**.
     - **Code** : vous pouvez afficher et modifier directement le code HTML.
 
@@ -375,4 +374,4 @@ Vous pouvez sélectionner **Modifier** dans chaque section pour modifier les par
 
 Lorsque vous avez terminé, cliquez sur **Envoyer**.
 
-![Examinez la page de simulation dans la formation sur la simulation d’attaques dans le portail Microsoft 365 Defender.](../../media/attack-sim-training-simulations-review-simulation.png)
+![Examinez la page de simulation dans la formation sur la simulation d’attaques sur Microsoft 365 Defender web.](../../media/attack-sim-training-simulations-review-simulation.png)

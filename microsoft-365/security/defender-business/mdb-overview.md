@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/08/2022
+ms.date: 03/09/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 4070cb273a64f34468f313f79c9c51c400bfe7db
-ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
+ms.openlocfilehash: 7f6e395c7ade55cfbc7f53db1f4e93e6af215238
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63406205"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419098"
 ---
 # <a name="overview-of-microsoft-defender-for-business"></a>Vue d’ensemble de Microsoft Defender pour les entreprises
 
@@ -34,7 +34,7 @@ ms.locfileid: "63406205"
 
 Microsoft Defender pour Entreprise est une nouvelle solution de sécurité de point de terminaison conçue spécialement pour les petites et moyennes entreprises (jusqu’à 300 employés). Grâce à cette solution de sécurité de point de terminaison, les appareils de votre organisation sont mieux protégés contre les ransomware, programmes malveillants, hameçonnages et autres menaces. 
 
-Regardez la vidéo suivante pour en savoir plus sur Defender entreprise :
+Regardez la vidéo suivante pour en savoir plus sur Defender entreprise : <br/><br/>
 
 > [!VIDEO https://www.youtube.com/embed/umhUNzMqZto]
 
@@ -78,7 +78,7 @@ Avec Defender entreprise, vous pouvez protéger les appareils et les données ut
    - [Afficher ou modifier des stratégies de sécurité](mdb-view-edit-policies.md)
    - [Gérer des règles personnalisées pour les stratégies de pare-feu](mdb-custom-rules-firewall.md)  
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [En savoir plus sur le processus de configuration simplifié dans Microsoft Defender entreprise](mdb-simplified-configuration.md)
 

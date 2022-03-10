@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/03/2022
+ms.date: 03/09/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: e4b28078c79b47ae48af590457d6721b0b470659
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a078b2a88fdde3af840cff64414fec0a712ae92e
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317400"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419303"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils à Microsoft Defender pour Les Entreprises
 
@@ -71,8 +71,6 @@ Le tableau suivant décrit les méthodes les plus couramment utilisées pour int
 | **Microsoft Intune** ou **Microsoft Endpoint Manager**<br/>(*disponible pour les clients qui utilisent Microsoft Intune ou Endpoint Manager*) | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) [gestion des](/mem/intune/enrollment/device-enrollment) périphériques mobiles font partie des Endpoint Manager. Microsoft 365 Business Premium clients ont déjà Microsoft Intune et peuvent utiliser cette option.<br/><br/>Si vous utilisiez déjà Endpoint Manager avant d’obtenir Defender entreprise, vous pouvez choisir de continuer à utiliser Endpoint Manager pour intégrer et gérer les appareils<br/><br/>Pour utiliser cette méthode, voir [Microsoft Endpoint Manager](#microsoft-endpoint-manager). | Windows <br/>macOS<br/>iOS<br/>Système d’exploitation Android | 
 | **Configuration de la sécurité de Microsoft Defender pour les entreprises** <br/>(*utilise le portail Microsoft 365 Defender)*) | Pour utiliser cette option, vous configurez certains paramètres pour faciliter la communication entre Defender for Business et Endpoint Manager. Ensuite, vous devez intégrer des appareils dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) à l’aide d’un package que vous téléchargez et exécutez sur chaque appareil. Une relation d’confiance est établie entre les appareils et Azure Active Directory (Azure AD), et les stratégies de sécurité de Defender for Business sont poussées vers les appareils.<br/><br/>Pour en savoir plus, [consultez la configuration de la sécurité de Microsoft Defender entreprise](#microsoft-defender-for-business-security-configuration). | Windows <br/>macOS |
 
-
-
 > [!IMPORTANT]
 > Si un problème se produit et que votre processus d’intégration échoue, consultez [La résolution des problèmes de Microsoft Defender entreprise](mdb-troubleshooting.yml).
 
@@ -86,7 +84,7 @@ Pour en savoir plus sur l’intégration automatique, consultez l’étape 2 de 
 
 ## <a name="local-script-in-defender-for-business"></a>Script local dans Defender for Business
 
-Vous pouvez utiliser un script local pour intégrer des Windows mac. Lorsque vous exécutez le script d’intégration sur un appareil, il crée une relation d’confiance avec Azure Active Directory, inscrit l’appareil dans Microsoft Endpoint Manager et l’intégrera à Defender for Business. Cette méthode est utile pour l’intégration d’appareils dans Defender for Business. Vous pouvez intégrer jusqu’à 10 appareils à la fois.
+Vous pouvez utiliser un script local pour intégrer des Windows mac. Lorsque vous exécutez le script d’intégration sur un appareil, il crée une relation d’confiance avec Azure Active Directory (si cette confiance n’existe pas encore), inscrit l’appareil dans Microsoft Endpoint Manager (s’il n’est pas déjà inscrit), puis l’insérait à Defender pour Entreprise. Cette méthode est utile pour l’intégration d’appareils dans Defender for Business. Vous pouvez intégrer jusqu’à 10 appareils à la fois.
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
@@ -101,7 +99,7 @@ Vous pouvez utiliser un script local pour intégrer des Windows mac. Lorsque vou
    - Windows : intégrer [des appareils Windows à l’aide d’un script local](../defender-endpoint/configure-endpoints-script.md#onboard-devices)
    - Appareils macOS : [déploiement manuel de Microsoft Defender pour endpoint sur macOS](../defender-endpoint/mac-install-manually.md#client-configuration)
 
-## <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
+## <a name="microsoft-endpoint-manager"></a>Gestionnaire de point de terminaison Microsoft
 
 Si vous utilisiez déjà Endpoint Manager (qui inclut Microsoft Intune et Gestion des appareils mobiles), avant d’obtenir Defender pour Entreprise, vous pouvez continuer à utiliser Endpoint Manager pour intégrer les appareils de votre organisation. Avec Endpoint Manager, vous pouvez intégrer des ordinateurs, des tablettes et des téléphones, y compris des appareils iOS et Android.
 
@@ -114,7 +112,7 @@ Voir [Inscription des appareils dans Microsoft Intune](/mem/intune/enrollment/de
 
 La configuration de la sécurité de Microsoft Defender pour les entreprises a été conçue sur une fonctionnalité appelée Gestion de la sécurité [pour Microsoft Defender pour point de terminaison (prévisualisation).](/mem/intune/protect/mde-security-integration) Il vous permet d’intégrer des appareils à Defender for Business dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) sans que ces appareils soient entièrement inscrits au Microsoft Endpoint Manager préalablement. 
 
-Cette méthode vous permet d’intégrer des appareils et de gérer vos stratégies antivirus et de pare-feu dans le Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Voici le principe de fonctionnement :
+Cette méthode vous permet d’intégrer des appareils et de gérer vos stratégies antivirus et de pare-feu dans le Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Voici comment tout fonctionne :
 
 1. Vous téléchargez un package d’intégration à partir du portail Microsoft 365 Defender, puis exécutez le package sur vos appareils pour intégrer ces appareils à Defender for Business.
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6d4d76a45d69994c82c2027f57d5c3b045e82397
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 03ac5ed0d63fb88639e9b7e1b55987bf328476e1
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765059"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419070"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Conditions minimales requises pour Microsoft Defender pour le point de terminaison
 
@@ -73,6 +73,11 @@ L’accès à Defender pour le point de terminaison s’fait par le biais d’un
 - Windows 11 Professionnel Éducation
 - Windows 10 Entreprise
 - [Windows 10 Entreprise LTSC 2016 (ou une ultérieure)](/windows/whats-new/ltsc/)
+- Windows 10 Entreprise loT
+
+    >[!NOTE]
+    >Alors que Windows 10 IoT Entreprise est un système d’exploitation pris en charge dans Microsoft Defender pour Endpoint et permet aux fabricants OEM/ODM de le distribuer dans le cadre de leur produit ou solution, les clients doivent suivre les instructions de l’OEM/ODM concernant les logiciels installés par l’hôte et la prise en charge.
+
 - Windows 10 Éducation
 - Windows 10 Professionnel
 - Windows 10 Professionnel Éducation
@@ -98,7 +103,7 @@ Pour plus d’informations sur les versions Windows 10, voir (/windows/release-h
 >
 > Les ordinateurs virtuels Windows 10 Entreprise 2016 LTSB peuvent rencontrer des problèmes de performances s’ils sont exécutés sur des plateformes de virtualisation autres que Microsoft.
 >
-> Pour les environnements virtuels, nous vous recommandons Windows 10 Entreprise LTSC 2019 ou une ultérieure.
+> Pour les environnements virtuels, nous vous recommandons d Windows 10 Entreprise LTSC 2019 ou une ultérieure.
 
 Lorsque les composants sont à jour sur les systèmes d’exploitation Microsoft Windows, la prise en charge de Microsoft Defender for Endpoint suit le cycle de vie du système d’exploitation respectif. Pour plus d’informations, voir [FAQ sur le cycle de vie](/lifecycle/faq/general-lifecycle). De nouvelles fonctionnalités sont généralement fournies uniquement sur les systèmes d’exploitation qui n’ont pas encore atteint la fin de leur cycle de vie. Les mises à jour de l’intelligence de la sécurité (mises à jour de définition et de moteur) et la logique de détection continueront d’être fournies jusqu’au minimum :
 
@@ -182,9 +187,9 @@ Avant d’intégrer des appareils, le service de données de diagnostic doit êt
 
 ## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Antivirus Microsoft Defender configuration requise
 
-L’agent Defender for Endpoint dépend de la capacité des Antivirus Microsoft Defender à analyser des fichiers et à fournir des informations les concernant.
+L’agent Defender for Endpoint dépend de la capacité de l’Antivirus Microsoft Defender analyser les fichiers et de fournir des informations les concernant.
 
-Configurez les mises à jour d’intelligence de sécurité sur les appareils Defender for Endpoint, Antivirus Microsoft Defender est le logiciel anti-programme malveillant actif ou non. Pour plus d’informations, voir [Gérer Antivirus Microsoft Defender mises à jour et appliquer les lignes de base](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
+Configurez les mises à jour d’intelligence de sécurité sur les appareils Defender for Endpoint, Antivirus Microsoft Defender est le logiciel anti-programme malveillant actif ou non. Pour plus d’informations, [voir Gérer Antivirus Microsoft Defender mises à jour et appliquer les lignes de base](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
 
 Lorsque Antivirus Microsoft Defender n’est pas le logiciel anti-programme malveillant actif dans votre organisation et que vous utilisez le service Defender for Endpoint, Antivirus Microsoft Defender passe en mode passif.
 
@@ -199,9 +204,9 @@ Si vous intégrer des serveurs et que Antivirus Microsoft Defender n’est pas l
 
 Si vous exécutez Antivirus Microsoft Defender comme produit anti-programme malveillant principal sur vos appareils, l’agent Defender pour Endpoint est correctement intégré.
 
-Si vous exécutez un client anti-programme malveillant tiers et que vous utilisez des solutions de gestion des périphériques mobiles ou des Microsoft Endpoint Manager (branche actuelle), vous devez vous assurer que le pilote ELAM Antivirus Microsoft Defender est activé. Pour plus d’informations, voir [Vérifier que Antivirus Microsoft Defender n’est pas désactivé par la stratégie](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+Si vous exécutez un client anti-programme malveillant tiers et que vous utilisez des solutions de gestion des périphériques mobiles ou des Microsoft Endpoint Manager (branche actuelle), vous devez vous assurer que le pilote ELAM Antivirus Microsoft Defender est activé. Pour plus d’informations, voir [s’assurer Antivirus Microsoft Defender n’est pas désactivé par la stratégie](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Configurer Microsoft Defender pour le déploiement de point de terminaison](production-deployment.md)
 - [Intégration des appareils](onboard-configure.md)

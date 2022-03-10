@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 6802947e786f13a577a6f3bf58ea3001599ee4d8
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: f617338448b71541d5ab0d914ab1a3198d4f486c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766079"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319647"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -69,7 +69,7 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
 
     Spécifique à l’étiquetage automatique pour Exchange :
     
-    - Contrairement à l’étiquetage manuel ou à l’étiquetage automatique avec les applications Office, les pièces jointes PDF et les pièces jointes Office sont également analysées pour les conditions que vous spécifiez dans votre stratégie d’étiquetage automatique. En cas de correspondance, l’e-mail est étiqueté, mais pas la pièce jointe.
+    - Contrairement à l’étiquetage manuel ou à l’étiquetage automatique avec les applications Office, les pièces jointes au format PDF ainsi que les pièces jointes Office sont également analysées pour les conditions que vous spécifiez dans votre stratégie d’étiquetage automatique. Lorsqu’une correspondance est trouvée, l’e-mail est étiqueté, mais pas la pièce jointe.
         - Pour les fichiers PDF, si l’étiquette applique le chiffrement, ces fichiers sont chiffrés à l’aide du [Chiffrement de messages Office 365 (OME)](ome.md) lorsque votre client est [activé pour les pièces jointes PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
         - Ces fichiers Office sont pris en charge dans Word, PowerPoint et Excel. Si l’étiquette applique le chiffrement, elles sont chiffrées à l’aide de [chiffrement de messages Office 365 (OME)](ome.md).
     - Si vous disposez de règles de flux de messagerie Exchange ou de stratégies de protection contre la perte de données (DLP) qui appliquent le chiffrement IRM : l’étiquette est appliquée lorsque le contenu est identifié par ces règles ou ces stratégies et par une stratégie d’étiquetage automatique. Si cette étiquette applique le chiffrement, les paramètres IRM des règles de flux de messagerie Exchange ou des stratégies de protection contre la perte de données sont ignorés. Toutefois, si cette étiquette n’applique pas le chiffrement, les paramètres IRM des règles de flux de messagerie ou des stratégies de protection contre la perte de données sont appliqués en plus de l’étiquette.
@@ -124,7 +124,7 @@ Comportement par défaut indiquant si l’étiquetage automatique remplace une �
 - L’étiquetage automatique remplace une [étiquette de confidentialité de priorité inférieure](sensitivity-labels.md#label-priority-order-matters) qui a été appliquée automatiquement, mais pas une étiquette de priorité plus élevée.
     
     > [!TIP]
-    > Par exemple, l’étiquette de confidentialité en haut de la liste dans le centre de conformité est nommée **Public** avec un numéro de commande (priorité) de 0, et l’étiquette de confidentialité en bas de la liste est nommée **Hautement confidentiel** avec un numéro de commande (priorité de 4). L’étiquette **Hautement confidentiel** peut remplacer l’étiquette **Public**, mais pas l’inverse.
+    > Par exemple, l’étiquette de confidentialité en haut de la liste dans le centre de conformité est nommée **Public** avec un numéro de commande (priorité) de 0, et l’étiquette de confidentialité en bas de la liste est nommée **Très Confidentiel** avec un numéro de commande (priorité de 4). L’étiquette **Très Confidentiel** peut remplacer l’étiquette **Public** mais pas l’inverse.
 
 Pour les stratégies d’étiquetage automatique des e-mails uniquement, vous pouvez sélectionner un paramètre pour toujours remplacer une étiquette de confidentialité existante, quelle que soit la façon dont elle a été appliquée.
 
@@ -311,7 +311,7 @@ Dans tous les cas, les fichiers correspondants sont étiquetés jusqu’à ce qu
 
 5. Pour la page **Nommer votre stratégie d’étiquetage automatique** : donnez un nom unique et éventuellement une description pour vous aider à identifier l’étiquette, les emplacements et les conditions appliqués automatiquement qui identifient le contenu à étiqueter.
 
-6. Pour la page **Choisir les emplacements dans lesquels vous souhaitez appliquer l’étiquette** : sélectionner et spécifier les emplacements pour Exchange, SharePoint et OneDrive. Si vous ne souhaitez pas conserver la valeur par défaut **Tous** pour les emplacements de votre choix, sélectionnez le lien pour choisir des instances spécifiques. Ensuite, sélectionnez **Suivant**.
+6. Pour la page **Choisir les emplacements dans lesquels vous souhaitez appliquer l’étiquette** : sélectionner et spécifier les emplacements pour Exchange, SharePoint et OneDrive. Si vous ne souhaitez pas conserver la valeur par défaut de **Tout** pour les emplacements choisis, sélectionnez le lien pour choisir des instances spécifiques à inclure, ou sélectionnez le lien pour choisir des instances spécifiques à exclure. Ensuite, sélectionnez **Suivant**.
 
     ![Page Choisir des emplacements pour la configuration de l’étiquetage automatique.](../media/locations-auto-labeling-wizard.png)
     
@@ -354,7 +354,7 @@ Dans tous les cas, les fichiers correspondants sont étiquetés jusqu’à ce qu
     
     - **Remplacez automatiquement les étiquettes existantes ayant la même priorité ou une priorité inférieure**: applicable aux e-mails entrants et sortants, lorsque vous sélectionnez ce paramètre, une étiquette de confidentialité correspondante est toujours appliquée. Si vous ne sélectionnez pas ce paramètre, une étiquette de confidentialité correspondante ne sera pas appliquée aux e-mails qui ont une étiquette de confidentialité existante avec une [priorité plus élevée](sensitivity-labels.md#label-priority-order-matters) ou qui ont été étiquetés manuellement.
     
-    - **Appliquer le chiffrement aux e-mails reçus en dehors de votre organisation**: lorsque vous sélectionnez cette option, vous devez affecter un [propriétaire Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) pour vous assurer qu’une personne autorisée de votre organisation dispose de [droits de contrôle total d’utilisation](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) pour les e-mails envoyés à partir de votre organisation et vos étiquettes de stratégie avec chiffrement. Ce rôle peut être nécessaire pour supprimer ultérieurement le chiffrement ou attribuer différents droits d’utilisation pour les utilisateurs de votre organisation.
+    - **Application du chiffrement aux e-mails reçus en dehors de votre organisation** : lorsque vous sélectionnez cette option, vous devez attribuer un [propriétaire de Gestion des droits](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) pour vous assurer qu’une personne autorisée de votre organisation dispose [des droits utilisateur](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) de contrôle total pour les e-mails envoyés en dehors de votre organisation et vos étiquettes de stratégie avec chiffrement. Ce rôle peut être nécessaire pour supprimer ultérieurement le chiffrement ou attribuer différents droits d’utilisation pour les utilisateurs de votre organisation.
         
         Pour **Affecter un propriétaire Rights Management**, spécifiez un utilisateur unique par une adresse e-mail appartenant à votre organisation. Ne spécifiez pas de contact de messagerie, de boîte aux lettres partagée ou de type de groupe, car ceux-ci ne sont pas pris en charge pour ce rôle.
 

@@ -1,5 +1,5 @@
 ---
-title: Créer un type d’informations sensibles personnalisé
+title: Créer des types d’informations sensibles personnalisés
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer, modifier, supprimer et tester des types d’informations sensibles personnalisés dans le Centre de conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2526ab9fdde4e5cedbbf3e831e6ec8ac9a6a5747
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: e21e77fdd113942618c021f69c2cf8be64ac742f
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62900813"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419112"
 ---
 # <a name="create-custom-sensitive-information-types-in-the-compliance-center"></a>Créer des types d’informations sensibles personnalisés dans le Centre de conformité
 
@@ -206,4 +206,6 @@ Par exemple, si vous souhaitez que la règle déclenche une correspondance lorsq
 > Lorsque vous créez une regex en utilisant un trait d'union à double octet ou un point à double octet, assurez-vous d'échapper les deux caractères comme on le ferait pour un trait d'union ou un point dans une regex. Voici un exemple regex pour référence :
 >    - (?<!\d) ([4][0-9]{3} [\-?\-\t]*[0-9]{4})
 >
+> Les caractères spéciaux sur deux caractères ne doivent pas être utilisés dans le mot clé.
+> 
 > Nous vous recommandons d’utiliser une correspondance de chaîne au lieu d’une correspondance de mot dans une liste de mots clés.
