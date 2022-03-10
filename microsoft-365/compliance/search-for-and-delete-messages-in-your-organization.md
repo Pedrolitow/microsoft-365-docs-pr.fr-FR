@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilisez la fonctionnalité de recherche et de purge dans le Centre de sécurité et de conformité Microsoft 365 pour rechercher et supprimer un message électronique dans toutes les boîtes aux lettres de votre organisation.
-ms.openlocfilehash: 33c65cb61be14d72631fd3a272b68f2dad2ffea6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9361f7dea0e1b12d50733b9b1d1e91ac15577ab9
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204226"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400991"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Rechercher et supprimer des messages électroniques
 
@@ -36,8 +36,8 @@ Vous pouvez utiliser la fonctionnalité de recherche de contenu pour rechercher 
 
 - Messages qui contiennent des données sensibles
 
-> [!CAUTION]
-> La fonction Rechercher et vider est puissante et permet à toute personne qui reçoit les autorisations nécessaires de supprimer des messages électroniques dans des boîtes aux lettres de votre organisation.
+> [!TIP]
+> Si votre organisation dispose d’un abonnement Defender pour Office 365 Plan 2, nous vous recommandons d’utiliser la procédure détaillée dans [Corriger le courrier malveillant remis dans Office 365](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365), plutôt que de suivre la procédure décrite dans cet article.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -64,7 +64,7 @@ L’étape suivante consiste à se connecter au Centre de sécurité et conformi
 
 ## <a name="step-2-create-a-content-search-to-find-the-message-to-delete"></a>Étape 2 : créer une Recherche de contenu pour rechercher les messages à supprimer
 
-La seconde étape consiste à créer et exécuter une Recherche de contenu pour rechercher le message à supprimer des boîtes aux lettres de votre organisation. Vous pouvez créer la recherche à l’aide du Centre de sécurité et conformité Microsoft 365 ou en exécutant les cmdlets **New-ComplianceSearch** et **Start-ComplianceSearch** dans PowerShell Sécurité et conformité. Les messages qui correspondent à la requête pour cette recherche sont supprimés par l’exécution de la commande **New-ComplianceSearchAction -Purge** à l’[étape 3](#step-3-delete-the-message). Pour plus d’informations sur la création d’une Recherche de contenu et sur la configuration de requêtes de recherche, consultez les rubriques suivantes :
+La deuxième étape consiste à créer et exécuter une recherche de contenu pour rechercher le message à supprimer des boîtes aux lettres de votre organisation. Vous pouvez créer la recherche à l’aide du Centre de conformité Microsoft 365 ou en exécutant les cmdlets **New-ComplianceSearch** et **Start-ComplianceSearch** dans PowerShell Sécurité et conformité. Les messages qui correspondent à la requête pour cette recherche sont supprimés en exécutant la commande **New-ComplianceSearchAction -Purge** à l’[étape 3](#step-3-delete-the-message). Pour plus d’informations sur la création d’une recherche de contenu et la configuration de requêtes de recherche, consultez les rubriques suivantes :
 
 - [Recherche de contenu dans Office 365](content-search.md)
 
@@ -145,7 +145,7 @@ Pour plus d’informations, voir [New-ComplianceSearchAction](/powershell/module
 
 - **Comment obtenir l’état de l’opération de recherche et de suppression ?**
 
-  Exécutez la commande **Get-ComplianceSearchAction** pour obtenir l’état de l’opération de suppression. L’objet créé lorsque vous exécutez le cmdlet **New-ComplianceSearchAction** est nommé à l’aide de ce format : `<name of Content Search>_Purge`.
+  Exécutez **Get-ComplianceSearchAction** pour obtenir l’état de l’opération de suppression. L’objet créé lorsque vous exécutez la cmdlet **New-ComplianceSearchAction** est nommé à l’aide de ce format :  `<name of Content Search>_Purge`.
 
 - **Que se passe-t-il lorsque vous avez supprimé un message ?**
 
