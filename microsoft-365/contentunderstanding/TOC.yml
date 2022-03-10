@@ -40,7 +40,7 @@
           href: model-usage-analytics.md
         - name: Utiliser la taxonomie du magasin de termes lors de la création d’un extracteur
           href: leverage-term-store-taxonomy.md
-        - name: Mode d’accessibilité Syntex de SharePoint
+        - name: Mode d’accessibilité
           href: accessibility-mode.md
     - name: Traitement des formulaires
       items:
