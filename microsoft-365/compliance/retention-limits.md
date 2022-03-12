@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Comprendre le nombre maximal de stratégies et d’éléments par stratégie pour les stratégies de rétention et les stratégies d’étiquette de rétention
-ms.openlocfilehash: f7b445ab8fd0afe5fb893933c3475385e09bc84e
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 4cd8fc5f141f9e039a271e8534e156e4df0582e9
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767435"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419126"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Limites des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -39,7 +39,8 @@ Un maximum de 1 000 étiquettes de rétention sont supportés par client.
 
 Un client unique peut avoir un maximum de 10 000 stratégies (n’importe quelle configuration). Ce nombre maximal inclut les différentes stratégies de rétention et d’autres stratégies de conformité, telles que les stratégies de protection contre la perte de données, les obstacles à l’information, les conservations eDiscovery et les étiquettes de confidentialité. Toutefois, cette valeur maximale exclut :
 
-- Étiqueter les stratégies SharePoint et OneDrive qui ne font que supprimer, plutôt que de les conserver ou de les conserver, puis les supprimer. L'exception est l'application automatique de politiques d'étiquetage pour les pièces jointes dans le cloud, qui sont toujours incluses dans le maximum de 10 000.
+- Stratégies d’étiquetage automatique pour SharePoint et OneDrive, sauf s’il s’agit de pièces jointes cloud.
+- Les stratégies d’étiquette SharePoint et OneDrive qui ne font que supprimer, plutôt que de les conserver ou de les conserver, puis les supprimer.
 - Exchange stratégies de rétention à partir de [la gestion des enregistrements de messagerie (MRM).](/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
 
 Dans cette limite de 10 000 stratégies, il existe également des limites sur le nombre maximal de stratégies de rétention par charge de travail :

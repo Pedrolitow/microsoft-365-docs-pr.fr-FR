@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveillez et gérez la destruction de contenu lorsque vous utilisez une révision avant destruction ou que des éléments marqués comme enregistrement sont automatiquement supprimés selon les paramètres que vous avez configurés.
-ms.openlocfilehash: 5ee5af04b399d7f7d0ba94dc3b943d259d57ff34
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 2d078eb00ffa6d2dd8279c7e5eb65a8fcfb6fa53
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942343"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419182"
 ---
 # <a name="disposition-of-content"></a>Destruction de contenu
 
@@ -49,7 +49,7 @@ En outre :
 
 - Pour afficher le contenu des éléments pendant le processus de disposition, ajoutez des utilisateurs au groupe de rôles **Content Explorer Content Viewer**. Si les utilisateurs ne disposent pas des autorisations de ce groupe de rôles, ils peuvent toujours sélectionner une action de révision de la disposition pour terminer la révision de la disposition, mais doivent le faire sans pouvoir afficher le contenu de l'élément à partir du mini-volet d'aperçu du centre de conformité.
 
-- Par défaut, chaque personne qui accède à la page de **Disposition** voit uniquement les éléments qu’elle est affectée à réviser. Pour qu’un administrateur de gestion des enregistrements puisse voir tous les éléments affectés à tous les utilisateurs et toutes les étiquettes de rétention configurées pour la révision de la destruction : accédez à **Paramètres de gestion des enregistrements** > **Disposition** pour sélectionner et activer un groupe de sécurité à extension messagerie qui contient les comptes d’administrateur.
+- Par défaut, chaque personne qui accède à la page **Disposition** ne voit que les éléments qu'elle est chargée de réviser. Pour qu'un administrateur de gestion des enregistrements puisse voir tous les éléments attribués à tous les utilisateurs et toutes les étiquettes de rétention qui sont configurées pour l'examen de disposition : accédez à **Paramètres de gestion des enregistrements** > **Disposition** pour sélectionner, puis activer un groupe de sécurité à extension messagerie qui contient le comptes administrateur.
     
     Les groupes de sécurité et les groupes Microsoft 365 qui ne sont pas à extension messagerie ne prennent pas en charge cette fonctionnalité et ne sont pas affichés dans la liste à sélectionner. Si vous devez créer un nouveau groupe de sécurité compatible avec la messagerie, utilisez le lien vers le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration de Microsoft 365</a> pour créer le nouveau groupe. 
     
@@ -187,7 +187,7 @@ Comme vous pouvez le voir dans l’exemple affiché, les actions prises en charg
   
 - **Approuver la destruction** :
     - Lorsque cette action est sélectionnée pour une étape intermédiaire de la révision avant destruction (vous avez configuré plusieurs étapes) : l’élément se déplace vers la prochaine étape de la destruction.
-    - Lorsque cette action est sélectionnée pour l’étape finale de la révision avant destruction ou qu’il n’existe qu’une seule étape avant destruction : l’élément est marqué comme éligible pour une suppression définitive. La durée exacte pour cette destruction dépend de la charge de travail. Pour plus d’informations, voir [Fonctionnement des paramètres de rétention avec le contenu en place](retention.md#how-retention-settings-work-with-content-in-place).
+    - Lorsque cette action est sélectionnée pour l’étape finale de la révision de destruction ou qu’il n’existe qu’une seule étape de destruction : l’élément est marqué comme éligible pour une suppression définitive, qui se produit ensuite dans les 7 jours.
 - **Attribuer un nouveau libellé** :
     - Lorsque cette action est sélectionnée, l’élément quitte le procession de révision avant destruction pour l’étiquette d’origine. L’élément est ensuite soumis aux paramètres de rétention de la nouvelle étiquette de rétention sélectionnée.
 - **Étendre** :

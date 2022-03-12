@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 5fc271028e4c20d431c4535fcdbf902bf17cdbb4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cecd489aa5ceb5f0d5d233a4bf09caa24dee6f8b
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311842"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419154"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -168,7 +168,7 @@ Empêchez les fichiers sensibles, qui correspondent à vos stratégies, d’êtr
 
 #### <a name="unallowed-browsers"></a>Navigateurs non autorisés
 
-Pour les appareils Windows vous ajoutez des navigateurs, identifiés par leur nom exécutable, qui ne pourront pas accéder aux fichiers qui correspondent aux conditions d’une stratégie DLP appliquée dans laquelle la restriction de téléchargement vers les services cloud est définie pour bloquer ou bloquer le remplacement. Lorsque ces navigateurs ne peuvent pas accéder à un fichier, les utilisateurs finaux voient une notification toast leur demandant d’ouvrir le fichier via Microsoft Edge.
+Pour les appareils Windows vous ajoutez des navigateurs, identifiés par leur nom exécutable, qui ne pourront pas accéder aux fichiers qui correspondent aux conditions d’une stratégie DLP appliquée dans laquelle la restriction de téléchargement vers les services cloud est définie pour bloquer ou bloquer le remplacement. Lorsque ces navigateurs ne peuvent pas accéder à un fichier, les utilisateurs finaux voient une notification toast leur demandant d’ouvrir le fichier via Microsoft Edge ou d’afficher un message personnalisé s’il en a été configuré.
 
 Pour les appareils macOS, vous devez ajouter le chemin d’accès complet au fichier. Pour trouver le chemin complet des applications Mac :
 

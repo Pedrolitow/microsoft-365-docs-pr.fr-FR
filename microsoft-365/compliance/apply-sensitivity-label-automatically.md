@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: f617338448b71541d5ab0d914ab1a3198d4f486c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ab47315fe56124f54b1404ceebc015a715eb74ee
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319647"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419317"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -315,7 +315,11 @@ Dans tous les cas, les fichiers correspondants sont étiquetés jusqu’à ce qu
 
     ![Page Choisir des emplacements pour la configuration de l’étiquetage automatique.](../media/locations-auto-labeling-wizard.png)
     
-    Pour spécifier des comptes OneDrive individuels, consultez [Obtenir la liste de toutes les URL OneDrive des utilisateurs de votre organisation.](/onedrive/list-onedrive-urls)
+    Plus d’informations sur les emplacements :
+    
+    - Si vous choisissez **Exchange** et que vous souhaitez étiqueter le courrier entrant en dehors de votre organisation, vous devez conserver la valeur par défaut **Tout** inclus. Pour que cette configuration soit étendue à des utilisateurs spécifiques de votre organisation, choisissez **règles avancées** à l’étape suivante. Configurez ensuite les conditions pour inclure des destinataires spécifiques dans votre organisation afin d’atteindre l’exigence d’étendue pour un sous-ensemble d’utilisateurs.
+    
+    - Pour spécifier des comptes OneDrive individuels, consultez [Obtenir la liste de toutes les URL OneDrive des utilisateurs de votre organisation.](/onedrive/list-onedrive-urls)
 
 7. Pour la page **Configurer des règles communes ou avancées** : conservez la valeur par défaut de **Règles communes** pour définir des règles qui identifient le contenu à étiqueter dans tous vos emplacements sélectionnés. Si vous avez besoin de règles différentes par emplacement, sélectionnez **Règles avancées**. Sélectionnez ensuite **Suivant**.
 
@@ -323,7 +327,7 @@ Dans tous les cas, les fichiers correspondants sont étiquetés jusqu’à ce qu
     - Vous pouvez sélectionner des types d’informations sensibles intégrés et personnalisés.
     - Pour les options partagées, vous pouvez choisir **uniquement avec des personnes au sein de mon organisation** ou **avec des personnes extérieures à mon organisation**.
 
-    Si votre seul emplacement est **Exchange**, ou si vous sélectionnez **Règles avancées**, vous pouvez sélectionner d'autres conditions :
+    Si votre seul emplacement est **Exchange**, et vous avez sélectionné **Règles avancées**, vous pouvez sélectionner d'autres conditions :
     - L’adresse IP de l’expéditeur est
     - Le domaine du destinataire est
     - Le destinataire est
