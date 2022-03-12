@@ -19,12 +19,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: fc236ea646e9da487c5e2e1178ddf9ca460cb4ae
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c44d710b4067ec12b0234c88e02d2d89729819a6
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325136"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449679"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Examiner et corriger les alertes de conformité des communications
 
@@ -138,7 +138,7 @@ Après avoir examiné les informations de base du message, il est temps d’ouvr
 Maintenant que vous avez examiné les détails du message pour l’alerte, vous pouvez choisir plusieurs actions de correction :
 
 - **Résoudre** : la sélection du contrôle **Résoudre** supprime immédiatement le message de la file d’attente des **alertes** en attente et aucune autre action ne peut être prise sur le message. En sélectionnant **Résoudre**, vous avez essentiellement fermé l’alerte sans classification supplémentaire. Tous les messages résolus sont affichés dans **l’onglet Résolu** .
-- **Signaler une erreur de classification (aperçu)** : vous pouvez toujours résoudre un message comme mal classé à tout moment pendant le flux de travail de révision du message. Une classification incorrecte signifie que l’alerte ne peut pas être actionnable ou que l’alerte a été générée de manière incorrecte par le processus d’alerte et tous les classifieurs entraisables. La résolution de l’élément comme étant mal classé envoie le contenu du message, les pièces jointes et l’objet du message (y compris les métadonnées) à Microsoft afin d’améliorer les classifieurs entraisables. Les données envoyées à Microsoft ne contiennent pas d’informations qui peuvent identifier ou être utilisées pour identifier les utilisateurs de votre organisation. D’autres actions ne peuvent pas être prises sur le message et tous les messages mal classés sont affichés dans **l’onglet Résolu** .
+- **Signaler une erreur de classification** : vous pouvez toujours résoudre un message comme mal classé à tout moment pendant le flux de travail de révision du message. Une classification incorrecte signifie que l’alerte ne peut pas être actionnable ou que l’alerte a été générée de manière incorrecte par le processus d’alerte et tous les classifieurs entraisables. La résolution de l’élément comme étant mal classé envoie le contenu du message, les pièces jointes et l’objet du message (y compris les métadonnées) à Microsoft afin d’améliorer les classifieurs entraisables. Les données envoyées à Microsoft ne contiennent pas d’informations qui peuvent identifier ou être utilisées pour identifier les utilisateurs de votre organisation. D’autres actions ne peuvent pas être prises sur le message et tous les messages mal classés sont affichés dans **l’onglet Résolu** .
 - **Power Automate (aperçu)** : utilisez un flux Power Automate pour automatiser les tâches de traitement d’un message d’alerte. Par défaut, la conformité des communications inclut le gestionnaire de notifications lorsqu’un utilisateur dispose d’un modèle de flux d’alerte de conformité des *communications* que les réviseurs peuvent utiliser pour automatiser le processus de notification pour les utilisateurs avec des alertes de message. Pour plus d’informations sur la création et la gestion Power Automate flux de communication en conformité, consultez la section Étape 5 : Power Automate **flux** de travail dans cet article.
 - **Marquez le** message comme étant *conforme,* *non* conforme ou aussi *discutable* en ce qui concerne les stratégies et les normes de votre organisation. L’ajout de balises et de commentaires de marquage vous permet de micro-filtrer les alertes de stratégie pour les escalades ou dans le cadre d’autres processus de révision interne. Une fois le marquage terminé, vous pouvez également choisir de résoudre le message pour le déplacer hors de la file d’attente de révision.
 - **Notifier** : vous pouvez utiliser le contrôle **Notify** pour affecter un modèle de notification personnalisé à l’alerte et pour envoyer une notification d’avertissement à l’utilisateur. Choisissez le modèle d’avis approprié configuré dans la zone **Paramètres** de conformité des  communications, puis sélectionnez Envoyer un rappel par courrier électronique à l’utilisateur qui a envoyé le message et résoudre le problème.
@@ -156,7 +156,7 @@ Les détails des messages peuvent être exportés ou téléchargés si vous avez
 
 [Microsoft Power Automate](/power-automate/getting-started) est un service de flux de travail qui automatise les actions entre les applications et les services. En utilisant des flux à partir de modèles ou créés manuellement, vous pouvez automatiser les tâches courantes associées à ces applications et services. Lorsque vous activez Power Automate pour la conformité des communications, vous pouvez automatiser des tâches importantes pour les alertes et les utilisateurs. Vous pouvez configurer des flux Power Automate pour avertir les responsables lorsque les utilisateurs ont des alertes de conformité des communications et d’autres applications.
 
-Les clients  titulaires Microsoft 365 abonnements qui incluent la conformité des communications n’ont pas besoin de licences Power Automate supplémentaires pour utiliser le modèle de conformité des communications par Power Automate par défaut recommandé. Le modèle par défaut peut être personnalisé pour prendre en charge votre organisation et couvrir les principaux scénarios de conformité des communications. Si vous choisissez d’utiliser des fonctionnalités Power Automate premium dans ces modèles, de créer un modèle personnalisé à l’aide du connecteur de conformité Microsoft 365 ou d’utiliser des modèles Power Automate pour d’autres domaines de conformité dans Microsoft 365, vous devrez peut-être des Power Automate licences.
+Les clients Microsoft 365 abonnements qui incluent la conformité des communications n’ont pas besoin de licences Power Automate supplémentaires pour utiliser le modèle de conformité des communications par Power Automate par défaut recommandé. Le modèle par défaut peut être personnalisé pour prendre en charge votre organisation et couvrir les principaux scénarios de conformité des communications. Si vous choisissez d’utiliser des fonctionnalités Power Automate premium dans ces modèles, de créer un modèle personnalisé à l’aide du connecteur de conformité Microsoft 365 ou d’utiliser des modèles Power Automate pour d’autres domaines de conformité dans Microsoft 365, vous devrez peut-être des Power Automate licences.
 
 > [!IMPORTANT]
 > Recevez-vous des invites pour une validation de licence supplémentaire lors du test Power Automate flux ? Votre organisation n’a peut-être pas encore reçu de mises à jour de service pour cette fonctionnalité d’aperçu. Des mises à jour sont déployées et toutes les organisations  titulaires d’abonnements Microsoft 365 qui incluent la conformité des communications doivent avoir une prise en charge des licences pour les flux créés à partir des modèles Power Automate recommandés d’ici le 30 octobre 2020.
@@ -262,7 +262,7 @@ Si vous souhaitez créer plus qu’un simple message électronique texte pour le
 
 ## <a name="unresolve-messages-preview"></a>Messages non résolus (aperçu)
 
-Lorsque les messages sont résolus, ils sont supprimés de  l’affichage Onglet En attente et affichés dans **l’affichage Onglet** Résolu. Les actions d’investigation et de correction ne sont pas disponibles pour les messages en *affichage* Résolu. Toutefois, dans certains cas, vous devrez prendre des mesures supplémentaires sur un message qui a été résolu par erreur ou qui doit faire l’objet d’un examen plus approfondie après la résolution initiale. Vous pouvez utiliser la fonctionnalité de commande non résolue pour déplacer un ou plusieurs messages  de l’affichage Résolu vers *l’affichage En* attente.
+Lorsque les messages sont résolus, ils sont supprimés de l’affichage Onglet En attente et affichés  dans **l’affichage Onglet** Résolu. Les actions d’investigation et de correction ne sont pas disponibles pour les messages en *affichage* Résolu. Toutefois, dans certains cas, vous devrez prendre des mesures supplémentaires sur un message qui a été résolu par erreur ou qui doit faire l’objet d’un examen plus approfondie après la résolution initiale. Vous pouvez utiliser la fonctionnalité de commande non résolue pour déplacer un ou plusieurs messages  de l’affichage Résolu vers *l’affichage En* attente.
 
 Pour non-résolu les messages, effectuer les étapes suivantes :
 

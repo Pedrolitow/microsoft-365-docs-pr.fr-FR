@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez où accéder au kit de laboratoire de déploiement Windows et Office de déploiement.
-ms.openlocfilehash: 7f91fdbd72a496d06377259387f53fbe923f1981
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f5b2bad3828ef30da822be102010124ccb26091e
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314446"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450715"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Kit de laboratoire pour le déploiement de Windows et Office 365
 
@@ -45,7 +45,7 @@ L’atelier vous fournit un environnement de laboratoire virtuel configuré auto
 
 Les ateliers sont également conçus pour être connectés aux essais pour :
 
-- Microsoft 365 E5
+- Microsoft 365 E5
 - Applications Microsoft 365 for entreprise
 - Office 365 E5 avec Enterprise Mobility + Security (EMS)
 
@@ -101,7 +101,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 [Télécharger le kit de laboratoire de déploiement Windows 11 et Office 365 de déploiement](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
 
 > [!NOTE]
-> Utilisez une connexion Internet haut débit pour télécharger ce contenu et autorisez l’approvisionnement automatique pendant environ 30 minutes. L’environnement de laboratoire nécessite au moins 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go de mémoire disponible et 300 Go d’espace libre sont recommandés. L Windows 10 exe lab expire le 16 mai 2022. L Windows 11 exe lab expire le 11 avril 2022. Les nouvelles versions seront publiées avant expiration.
+> Utilisez une connexion Internet haut débit pour télécharger ce contenu et autorisez l’approvisionnement automatique pendant environ 30 minutes. L’environnement de laboratoire nécessite au moins 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go de mémoire disponible et 300 Go d’espace libre sont recommandés. L Windows 10 exe lab expire le 16 mai 2022. L Windows 11 exe lab expire le 6 mai 2022. Les nouvelles versions seront publiées avant expiration.
 
 ## <a name="additional-guidance"></a>Conseils supplémentaires
 

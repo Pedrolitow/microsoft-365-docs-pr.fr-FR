@@ -7,27 +7,27 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 01/06/2022
+ms.date: 03/10/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 7184317c3048c4b9d81e7c40ba90f9f93b0c057f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 15956fa92729ce3a4c295b3199c3806154de9d34
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328720"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449160"
 ---
 # <a name="view-and-manage-incidents-in-microsoft-defender-for-business"></a>Afficher et gérer les incidents dans Microsoft Defender entreprise
 
 > [!IMPORTANT]
-> Microsoft Defender for Business est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. La [prévisualisation inclut un ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et nous ajouterons régulièrement des fonctionnalités.
+> Microsoft Defender for Business est en déploiement [Microsoft 365 Business Premium clients,](../../business-premium/index.md) à partir du 1er mars 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. La [prévisualisation inclut un ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et nous ajouterons régulièrement des fonctionnalités.
 > 
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
@@ -69,11 +69,11 @@ Microsoft Defender pour les entreprises affecte une gravité d’alerte en fonct
 | Scénario | Gravité de l’alerte | Reason |
 |:---|:---|:---|
 | Antivirus Microsoft Defender détecte et arrête une menace avant qu’elle ne soit endommagée. | Informatif | La menace a été arrêtée avant d’être endommagée. |
-| Antivirus Microsoft Defender détecte les programmes malveillants qui s’exécutaient au sein de votre organisation. Le programme malveillant est arrêté et corrigé. | Petite | Bien que certains dommages ont pu être causés à un point de terminaison individuel, le programme malveillant ne pose désormais aucune menace pour votre organisation. |
+| Antivirus Microsoft Defender détecte les programmes malveillants qui s’exécutaient au sein de votre organisation. Le programme malveillant est arrêté et corrigé. | Faible | Bien que certains dommages ont pu être causés à un point de terminaison individuel, le programme malveillant ne pose désormais aucune menace pour votre organisation. |
 | Les programmes malveillants en exécution sont détectés par Microsoft Defender pour les entreprises. Le programme malveillant est bloqué presque immédiatement. | Moyenne ou élevée | Le programme malveillant représente une menace pour les points de terminaison individuels et pour votre organisation. |
 | Un comportement suspect est détecté, mais aucune action de correction n’est encore prise. | Faible, Moyen ou Élevé | La gravité dépend du degré auquel le comportement pose une menace pour votre organisation. |
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Répondre aux menaces et les atténuer dans Microsoft Defender entreprise](mdb-respond-mitigate-threats.md)
 

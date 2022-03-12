@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4492b50cfdfb0125a9079eb1f4a4945b6e06e011
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 0922c827330fff25d7da1bbc69147c7a50f474df
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807463"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449718"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>Intégrer des appareils et configurer les fonctionnalités de Microsoft Defender pour point de terminaison
 
@@ -59,7 +59,7 @@ Le tableau suivant répertorie les outils disponibles en fonction du point de te
 
 | Point de terminaison     | Options de l’outil                       |
 |--------------|------------------------------------------|
-| **Fenêtres**  |  [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Gestionnaire de périphériques mobiles](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration de à Microsoft Defender pour le cloud](configure-server-endpoints.md#integration-with-azure-defender)  |
+| **Fenêtres**  |  [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Gestionnaire de périphériques mobiles](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration de à Microsoft Defender pour le cloud](configure-server-endpoints.md#integration-with-azure-defender)  |
 | **MacOS**    | [Scripts locaux](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Gestion des appareils mobiles](mac-install-with-other-mdm.md) |
 | **Serveur Linux** | [Script local](linux-install-manually.md) <br> [Sondent](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Microsoft Endpoint Manager](ios-install.md)               |
@@ -82,13 +82,13 @@ Après l’intégration des appareils, vous devez configurer les autres fonction
 | [Configurer les Spécialistes des menaces Microsoft (MTE)](configure-microsoft-threat-experts.md) | Spécialistes des menaces Microsoft est un service de recherche géré qui fournit des centres d’opérations de sécurité (SOC) avec une analyse et une surveillance de niveau expert pour les aider à s’assurer que les menaces critiques dans leurs environnements uniques ne sont pas manquées.      |
 
 
-## <a name="supported-capabilities-for-windows-devices"></a>Fonctionnalités d’Windows pris en charge
+## <a name="supported-capabilities-for-windows-devices"></a>Fonctionnalités prise en charge pour Windows appareils
 
 |Système d’exploitation  |Windows 10 & 11  |Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup>  |<sup>Windows Server 2016[[1](#fn1)]<sup></sup>   |Windows Server 2019 & 2022|Windows Server 1803+|
 |---------|---------|---------|---------|---------|---------|
 |**Prévention**    |         |         |         |         |         |
 |Règles de réduction de la surface d’attaque     |    v     |   v      |    v     |    v     |    v     |
-|Contrôle des appareils     |     v    |    N     |    N     |    N     |    N     |  
+|Contrôle d’appareil     |     v    |    N     |    N     |    N     |    N     |  
 |Pare-feu     |      v   |    v     |     v    |    v    |    v   |
 |Protection du réseau     |      v   |    v     |     v    |    v    |    v   |
 |Protection de nouvelle génération     |      v   |    v     |     v    |    v    |    v   |
@@ -96,7 +96,7 @@ Après l’intégration des appareils, vous devez configurer les autres fonction
 |Web Protection     |       v   |    v     |     v    |    v    |    v   |
 |||||||
 |**Détection**     |         |         |         |||
-|Repérage avancé     |      v   |    v     |     v    |    v    |    v   |
+|Recherche avancée     |      v   |    v     |     v    |    v    |    v   |
 |Indicateurs de fichiers personnalisés     |      v   |    v     |     v    |    v    |    v   |
 |Indicateurs réseau personnalisés     |      v   |    v     |     v    |    v    |    v   |
 |PEPT blocage & mode passif     |      v   |    v     |     v    |    v    |    v   |
@@ -109,7 +109,7 @@ Après l’intégration des appareils, vous devez configurer les autres fonction
 |Fonctionnalités de réponse aux fichiers : collecter un fichier, analyse approfondie, bloquer un fichier, arrêter et mettre en quarantaine des processus     |      v   |    v     |     v    |    v    |    v   |
 |Réponse en direct    |      v   |    v     |     v    |    v    |    v   |
 
-(<a id="fn1">1</a>) Fait référence à la solution moderne et unifiée pour Windows Server 2012 et 2016. Pour plus d’informations, [voir Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
+(<a id="fn1">1</a>) Fait référence à la solution moderne et unifiée pour Windows Server 2012 R2 et 2016. Pour plus d’informations, [voir Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
 
 >[!NOTE]
 >Windows 7, 8.1, Windows Server 2008 R2 incluent la prise en charge du capteur PEPT et de l’antivirus utilisant System Center Endpoint Protection (SCEP).

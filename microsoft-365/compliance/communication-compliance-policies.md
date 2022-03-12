@@ -2,27 +2,32 @@
 title: Stratégies de conformité des communications
 description: En savoir plus sur les stratégies de conformité des communications.
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 f1_keywords:
-  - ms.o365.cc.SupervisoryReview
+- ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-  - Strat_O365_IP
-  - M365-security-compliance
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
-  - MET150
-  - MOE150
+- MET150
+- MOE150
+ms.openlocfilehash: 33961088105e838add3634024bb85807a6550eb7
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450729"
 ---
-
 # <a name="communication-compliance-policies"></a>Stratégies de conformité des communications
 
-## <a name="policies"></a>Stratégies
+## <a name="policies"></a>Politiques
 
 > [!IMPORTANT]
 > L’utilisation de PowerShell pour créer et gérer les stratégies de conformité des communications n’est pas prise en charge. Pour créer et gérer ces stratégies, vous devez utiliser les contrôles de gestion des stratégies dans la [solution Microsoft 365 conformité des communications](https://compliance.microsoft.com/supervisoryreview).
@@ -35,7 +40,7 @@ Les modèles de stratégie sont des paramètres de stratégie prédéfincés que
 
 |**Catégorie**|**Modèle de stratégie**|**Détails**|
 |:-----|:-----|:-----|
-| **Texte inapproprié** | Détecter le texte inapproprié | - Emplacements : Exchange Online, Microsoft Teams, Yammer, Skype Entreprise <br> - Direction : entrant, sortant, interne <br> - Pourcentage d’avis : 100 % <br> - Conditions : classifieurs de menace, de discrimination (prévisualisation) et de harcèlement ciblé |
+| **Texte inapproprié** | Détecter le texte inapproprié | - Emplacements : Exchange Online, Microsoft Teams, Yammer, Skype Entreprise <br> - Direction : entrant, sortant, interne <br> - Pourcentage d’avis : 100 % <br> - Conditions : classifieurs de menace, de discrimination et de harcèlement ciblé |
 | **Images inappropriées** | Détecter les images inappropriées | - Emplacements : Exchange Online, Microsoft Teams, Yammer, Skype Entreprise <br> - Direction : entrant, sortant, interne <br> - Pourcentage d’avis : 100 % <br> - Conditions : classifieurs d’image pour adultes et racy |
 | **Informations sensibles** | Surveiller les informations sensibles | - Emplacements : Exchange Online, Microsoft Teams, Yammer, Skype Entreprise <br> - Direction : entrant, sortant, interne <br> - Pourcentage d’avis : 10 % <br> - Conditions : informations sensibles, modèles de contenu pré-personnalisés et types, option de dictionnaire personnalisé, pièces jointes dont la taille est supérieure à 1 Mo |
 | **Conformité réglementaire** | Surveiller la conformité réglementaire | - Emplacements : Exchange Online, Microsoft Teams, Yammer, Skype Entreprise <br> - Direction : entrant, sortant <br> - Pourcentage d’avis : 10 % <br> - Conditions : option de dictionnaire personnalisé, pièces jointes dont la taille est supérieure à 1 Mo |
@@ -114,7 +119,7 @@ Vous avez la possibilité d’inclure des types d’informations sensibles dans 
 - Type d’informations personnalisé
 
 > [!IMPORTANT]
-> Les sits ont deux façons différentes de définir les paramètres de nombre d’instances uniques max. Pour plus d’informations, voir [Nombre d’instances prises en charge pour SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> Les sits ont deux façons différentes de définir les paramètres de nombre d’instances uniques max. Pour plus d’informations, consultez [Valeurs prises en charge par le nombre d’instances pour SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
 
 Pour en savoir plus sur les détails des informations sensibles et les modèles inclus dans les types par défaut, voir Définitions d’entités de [types d’informations sensibles](sensitive-information-type-entity-definitions.md).
 
@@ -138,7 +143,7 @@ Les classifieurs intégrés et globaux analysent les messages envoyés ou reçus
 Les classifieurs intégrés et globaux entraisables de conformité des communications analysent les communications pour les termes, les images et les sentiments pour les types de langage et de contenu suivants :
 
 - **Images pour adultes** : recherche les images qui sont explicites de manière sexuelle.
-- **Discrimination (prévisualisation)** : recherche les propos explicites de discrimination et est particulièrement sensible au langage de discrimination à l’égard des communautés américaines/noires d’Afrique par rapport aux autres communautés.
+- **Discrimination** : recherche le langage de discrimination explicite et est particulièrement sensible au langage de discrimination à l’encontre des communautés américaine/noire d’Afrique par rapport aux autres communautés.
 - **Images de requête** : recherche les images qui décrivent la violence et les violences.
 - **Blasphémité** : recherche les expressions expressions expressions qui insérons la plupart des personnes.
 - **Images racées** : recherche les images qui sont sexuellement sexuellement en nature, mais qui contiennent un contenu moins explicite que les images considérées comme adulte.
@@ -162,7 +167,7 @@ Vous pouvez activer la reconnaissance optique de caractères (OCR) dans de nouve
 
 Les images de 50 Ko à 4 Mo dans les formats d’image suivants sont analysées et traitées :
 
-- .jpg/.jpeg (groupe d’experts conjoint)
+- .jpg/.jpeg (groupe d’experts en exercice commun)
 - .png (graphiques réseau portables)
 - .bmp (bitmap)
 - .tiff (format de fichier d’image de balise)
@@ -200,7 +205,7 @@ Chaque mot que vous entrez et séparez par une virgule est appliqué séparémen
 
 > [!IMPORTANT]
 >
-> Lors de l’importation d’un fichier de dictionnaire personnel, chaque mot ou expression doit être séparé par un retour chariot et sur une ligne distincte. Par exemple :
+> Lors de l’importation d’un fichier de dictionnaire personnel, chaque mot ou expression doit être séparé par un retour chariot et sur une ligne distincte. Par exemple :
 >
 > *banker* <br>
 > *confidentiel* <br>
@@ -222,7 +227,7 @@ Si vous souhaitez réduire la quantité de contenu à réviser, vous pouvez spé
 
 ## <a name="alert-policies"></a>Stratégies d’alerte
 
-Après avoir configuré une stratégie, une stratégie d’alerte correspondante est automatiquement créée et des alertes sont générées pour les messages qui correspondent aux conditions définies dans la stratégie. La réception des alertes des indicateurs d’activité peut prendre jusqu’à 24 heures après le démarrage de la création d’une stratégie. Par défaut, tous les déclencheurs d’alerte de correspondance de stratégie se voit attribuer un niveau de gravité moyen dans la stratégie d’alerte associée. Les alertes sont générées pour une stratégie de conformité des communications une fois que le niveau de seuil du déclencheur d’agrégation est atteint dans la stratégie d’alerte associée. Une seule notification par courrier électronique est envoyée toutes les 24 heures pour toutes les alertes, quel que soit le nombre de messages individuels qui correspondent aux conditions de stratégie. Par exemple, contoso a activé une stratégie de contenu inappropriée et, pour le 1er janvier, 100 correspondances de stratégie ont généré 6 alertes. Une notification par courrier électronique unique pour les 6 alertes est envoyée à la fin du 1er janvier.
+Après avoir configuré une stratégie, une stratégie d’alerte correspondante est automatiquement créée et des alertes sont générées pour les messages qui correspondent aux conditions définies dans la stratégie. La réception des alertes des indicateurs d’activité peut prendre jusqu’à 24 heures après le démarrage de la création d’une stratégie. Par défaut, tous les déclencheurs d’alerte de correspondance de stratégie se voit attribuer un niveau de gravité moyen dans la stratégie d’alerte associée. Les alertes sont générées pour une stratégie de conformité des communications une fois que le niveau de seuil du déclencheur d’agrégation est atteint dans la stratégie d’alerte associée. Une seule notification par courrier électronique est envoyée toutes les 24 heures pour toutes les alertes, quel que soit le nombre de messages individuels qui correspondent aux conditions de stratégie. Par exemple, contoso a activé une stratégie de contenu inappropriée et, pour le 1er janvier, 100 correspondances de stratégie ont généré six alertes. Une notification par courrier électronique unique pour les six alertes est envoyée à la fin du 1er janvier.
 
 Pour les stratégies de conformité des communications, les valeurs de stratégie d’alerte suivantes sont configurées par défaut :
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 24158e4a9da9ce48382f08b6dbe701c5640972d4
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: b9a083404da3ad4edc3ccf2f88e1c459dc6f08e2
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321314"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450561"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis
 
@@ -48,7 +48,7 @@ Microsoft Defender pour le point de terminaison pour les clients du gouvernement
 
 |GCC|GCC High|DoD|
 |---|---|---|
-|Microsoft 365 Cloud de la communauté du secteur public G5|Microsoft 365 E5 pour Cloud de la communauté du secteur public Élevé|Microsoft 365 G5 pour DOD|
+|Microsoft 365 Cloud de la communauté du secteur public G5|Microsoft 365 E5 pour Cloud de la communauté du secteur public High|Microsoft 365 G5 pour DOD|
 |Microsoft 365 sécurité G5 Cloud de la communauté du secteur public|Microsoft 365 sécurité G5 pour Cloud de la communauté du secteur public élevé|Microsoft 365 G5 pour DOD|
 |Microsoft Defender pour le point de terminaison - Cloud de la communauté du secteur public|Microsoft Defender for Endpoint for Cloud de la communauté du secteur public High|Microsoft Defender pour point de terminaison pour DOD|
 |Windows 10 Entreprise E5 Cloud de la communauté du secteur public|Windows 10 Entreprise E5 pour Cloud de la communauté du secteur public élevé|Windows 10 Entreprise E5 pour DOD|
@@ -77,11 +77,11 @@ Les URL du portail Microsoft Defender pour les points de terminaison pour les cl
 |Type de client|URL du portail|
 |---|---|
 |GCC|<https://security.microsoft.com>|
-|GCC High|<https://securitycenter.microsoft.us>|
-|DoD|<https://securitycenter.microsoft.us>|
+|GCC High|<https://security.microsoft.us>|
+|DoD|<https://security.microsoft.us>|
 |
 > [!NOTE]
-> Si vous êtes un client Cloud de la communauté du secteur public et que vous êtes en train de passer de Microsoft Defender for Endpoint commercial à Cloud de la communauté du secteur public, https://transition.security.microsoft.com utilisez cette procédure pour accéder à vos données commerciales Microsoft Defender for Endpoint.
+> Si vous êtes un client Cloud de la communauté du secteur public et que vous êtes en train de passer de Microsoft Defender for Endpoint commercial à Cloud de la communauté du secteur public, https://transition.security.microsoft.com utilisez pour accéder à vos données commerciales Microsoft Defender for Endpoint.
 
 ## <a name="endpoint-versions"></a>Versions des points de terminaison
 
@@ -104,7 +104,7 @@ Windows 10, version 1903 (avec [KB4586819](https://support.microsoft.com/help/45
 Windows 10, version 1809 ([avec KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 1803 (avec [KB4598245](https://support.microsoft.com/help/4598245) <sup>1</sup>)|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 1709|![Non.](images/svg/check-no.svg) <br /> Remarque : ne sera pas pris en charge|![Oui](images/svg/check-yes.svg) avec [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> Remarque : [Deprecated](/lifecycle/announcements/revised-end-of-service-windows-10-1709), please upgrade|![Non](images/svg/check-no.svg) <br /> Remarque : ne sera pas pris en charge
-Windows 10, version 1703 et antérieures|![Non.](images/svg/check-no.svg) <br /> Remarque : ne sera pas pris en charge|![Non](images/svg/check-no.svg) <br /> Remarque : ne sera pas pris en charge|![Non](images/svg/check-no.svg) <br /> Remarque : ne sera pas pris en charge
+Windows 10, version 1703 et antérieure|![Non.](images/svg/check-no.svg) <br /> Remarque : ne sera pas pris en charge|![Non](images/svg/check-no.svg) <br /> Remarque : ne sera pas pris en charge|![Non](images/svg/check-no.svg) <br /> Remarque : ne sera pas pris en charge
 Windows Server 2022|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2019 (avec [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2016 (moderne) <sup>2</sup>|![Oui.](images/svg/check-yes.svg) <br /> Préversion publique|![Oui](images/svg/check-yes.svg) <br /> Préversion publique|![Oui](images/svg/check-yes.svg) <br /> Préversion publique
@@ -113,7 +113,7 @@ Windows Server 2016 (hérité) <sup>3</sup>|![Oui.](images/svg/check-yes.svg)|![
 Windows Server 2012 R2 (hérité) <sup>3</sup>|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 (hérité) <sup>3</sup>|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 8.1 Entreprise (Hérité) <sup>3</sup>|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows 8 Professionnel (Hérité) <sup>3</sup>|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows 8 Professionnel (hérité) <sup>3</sup>|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 7 SP1 Enterprise (hérité) <sup>3</sup>|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 7 SP1 Pro (hérité) <sup>3</sup>|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Linux|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
@@ -125,9 +125,9 @@ iOS|![Non.](images/svg/check-no.svg) En cours de développement|![Non](images/sv
 > [!NOTE]
 > <sup>1</sup> Le correctif doit être déployé avant l’intégration de l’appareil afin de configurer Defender pour endpoint dans l’environnement correct.
 >
-> <sup>2</sup> Découvrez la [solution moderne unifiée pour Windows 2016 et 2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview). Si vous avez précédemment intégré vos serveurs à l’aide de MMA, suivez les instructions fournies dans la [migration](server-migration.md) de serveur pour migrer vers la nouvelle solution.
+> <sup>2</sup> Découvrez la [solution moderne unifiée Windows 2016 et 2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview). Si vous avez précédemment intégré vos serveurs à l’aide de MMA, suivez les instructions fournies dans la [migration](server-migration.md) de serveur pour migrer vers la nouvelle solution.
 >
-> <sup>3</sup> Lorsque vous utilisez [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) vous devez choisir « Azure US Government » sous « Azure Cloud » si vous utilisez l’Assistant [Installation, ou](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard) si vous utilisez une ligne de [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) commande ou un [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation), définissez le paramètre « OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE » sur 1. <br /> La version minimale prise en charge par MMA est 10.20.18029 (mars 2020).
+> <sup>3</sup> Lorsque vous utilisez [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) vous devez choisir « Azure US Government » sous « Azure Cloud » si vous utilisez l’Assistant [Installation, ou](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard) si vous utilisez une ligne de commande [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) ou un [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation), définissez le paramètre « OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE » sur 1. <br /> La version minimale prise en charge par MMA est 10.20.18029 (mars 2020).
 
 ### <a name="os-versions-when-using-microsoft-defender-for-servers"></a>Versions du système d’exploitation lors de l’utilisation de Microsoft Defender pour les serveurs
 
@@ -142,7 +142,7 @@ Version du système d'exploitation|GCC|GCC High|DoD
 Windows Server 2022|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2019|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2016|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows Server 2012 R2|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows Server 2012 R2|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 |
 
@@ -191,6 +191,6 @@ Voici les lacunes connues :
 |Nom de la fonctionnalité|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
 |Évaluations réseau|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
-|Découverte du réseau|![Oui](images/svg/check-yes.svg)|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
-|Rapports : Réduction de la surface d’attaque, Contrôle d’appareil, État de l’appareil, Pare-feu|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
+|Découverte du réseau|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
+|Rapports : Contrôle d’appareil, état de l’appareil, pare-feu|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
 |Filtrage du contenu web|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|

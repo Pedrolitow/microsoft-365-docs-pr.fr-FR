@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f78f5e78067b3d8273d0ca9a3c7474eef66ed4fb
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 6fb3141b33948c5c452096c83a2f02657c199575
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301089"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450547"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Planifier une mise à jour de Microsoft Defender pour point de terminaison (Linux)
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Pour exécuter une mise à jour sur Microsoft Defender pour endpoint sur Linux, voir Déployer les mises à jour [de Microsoft Defender pour Endpoint sur Linux.](/microsoft-365/security/defender-endpoint/linux-updates)
+Pour exécuter une mise à jour sur Microsoft Defender pour endpoint sur Linux, voir Déployer les mises à jour [de Microsoft Defender pour Endpoint sur Linux](/microsoft-365/security/defender-endpoint/linux-updates).
 
 Linux (et Unix) ont un outil appelé **crontab** (semblable au Programmeur des tâches) pour pouvoir exécuter des tâches programmées.
 
@@ -92,7 +92,7 @@ CRON_TZ=America/Los_Angeles
 > #<a name="rhel-and-variants-centos-and-oracle-linux"></a>! RHEL et variantes (CentOS et Oracle Linux)
 >
 > ```bash
-> 0 6 * * sun [ $(date +%d) -le 15 ] && sudo yum update mdatp >> ~/mdatp_cron_job.log
+> 0 6 * * sun [ $(date +%d) -le 15 ] && sudo yum update mdatp -y >> ~/mdatp_cron_job.log
 > ```
 
 > #<a name="sles-and-variants"></a>! SLES et variantes
@@ -108,11 +108,11 @@ CRON_TZ=America/Los_Angeles
 > ```
 
 > [!NOTE]
-> Dans les exemples ci-dessus, nous la fixons à 00 minutes, 6 heures (heure au format 24 heures), n’importe quel jour du mois, n’importe quel mois, le dimanche. [$(date + d) -le 15] == Ne s’exécute pas, sauf s’il est égal ou inférieur au \% 15e jour (3e semaine). Cela signifie qu’il s’exécutera tous les 3e dimanche (7) du mois à 6 h 00. Pacifique (UTC -8).
+> Dans les exemples ci-dessus, nous la fixons à 00 minutes, 6 heures (heure au format 24 heures), n’importe quel jour du mois, n’importe quel mois, le dimanche. [$(date +\%d) -le 15] == Ne s’exécute pas, sauf s’il est égal ou inférieur au 15e jour (3e semaine). Cela signifie qu’il s’exécutera tous les 3e dimanche (7) du mois à 6 h 00. Pacifique (UTC -8).
 
 Appuyez sur « Échap »
 
-Tapez `:wq` " w/o les guillemets doubles.
+Tapez «`:wq` » avec les guillemets doubles.
 
 > [!NOTE]
 > w == write, q == quit

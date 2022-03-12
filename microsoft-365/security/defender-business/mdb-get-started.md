@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 267e293cf2a1d7b7755a58cddc7fb04af138e4ae
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e6ad964e250b9ae3bc01de02a4d51675beaf9c80
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329374"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449511"
 ---
 # <a name="get-started-using-the-microsoft-365-defender-portal"></a>Commencer à utiliser le portail Microsoft 365 Defender web
 
 > [!IMPORTANT]
-> Microsoft Defender for Business est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. La [prévisualisation inclut un ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et nous ajouterons régulièrement des fonctionnalités.
+> Microsoft Defender for Business est en déploiement [Microsoft 365 Business Premium clients,](../../business-premium/index.md) à partir du 1er mars 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. La [prévisualisation inclut un ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et nous ajouterons régulièrement des fonctionnalités.
 > 
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
@@ -57,7 +57,7 @@ Prenez le temps de vous familiariser avec votre portail Microsoft 365 Defender w
 
 Utilisez la barre de navigation sur le côté gauche de l’écran pour accéder à vos incidents, afficher les rapports et gérer vos stratégies de sécurité. Le tableau suivant décrit les éléments que vous verrez dans votre barre de navigation.
 
-| Élément | Description |
+| Item | Description |
 |:---|:---|
 | **Accueil** | Vous prend à votre page d’accueil dans Microsoft 365 Defender. La page d’accueil inclut des cartes qui mettent en évidence les menaces actives détectées, ainsi que des recommandations pour sécuriser les données et les appareils de votre organisation. <br/><br/>Recommandations sont inclus dans Defender for Business peut économiser du temps et des efforts pour votre équipe de sécurité. Recommandations sont basées sur les meilleures pratiques du secteur. Pour en savoir plus sur les recommandations, voir [Recommandations en](../defender-endpoint/tvm-security-recommendation.md) matière de sécurité - Gestion des menaces et des vulnérabilités. |
 | **Incidents** | Vous permet d’avoir accès à votre liste des incidents récents. Lorsque des alertes sont déclenchées, des incidents sont créés. Un incident peut inclure plusieurs alertes. Veillez à passer régulièrement en revue vos incidents. <br/><br/>Pour en savoir plus sur les incidents, voir [Afficher et gérer les incidents dans Microsoft Defender pour Les entreprises](mdb-view-manage-incidents.md).|
@@ -83,7 +83,7 @@ Consultez le module d’apprentissage, Détecter et répondre aux problèmes [de
 > [!NOTE]
 > Bien que le module d’apprentissage (Détecter et répondre aux problèmes de sécurité) soit en fait pour Microsoft Defender pour Endpoint, les concepts de base et le flux global sont [similaires](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/) à ce que vous verrez dans Defender pour Entreprise.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Maintenant que vous avez une vue d’ensemble de Defender for Business, essayez une ou plusieurs des tâches suivantes :
 

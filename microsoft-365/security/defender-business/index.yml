@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft Defender pour les PME
-summary: Microsoft Defender for Business est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who sign up at https://aka.ms/mdb-preview.
+summary: À compter du 1er mars 2022, Microsoft Defender entreprise est inclus dans Microsoft 365 Business Premium. Defender for Business as a standalone subscription is currently in preview, and will roll out gradually to customers and IT Partners who sign up at https://aka.ms/mdb-preview.
 metadata:
   title: Documentation microsoft defender pour les entreprises
   description: Obtenir une vue d’ensemble et des informations de configuration pour Microsoft Defender pour les entreprises
@@ -14,15 +14,15 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
-  ms.date: 02/24/2022
-  ms.openlocfilehash: 2e941e8f72198a72fd15121f29e6dc55630398ee
-  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+  ms.date: 03/10/2022
+  ms.openlocfilehash: eb00a4fc76315360c789afacad4b77da3d28c323
+  ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 03/08/2022
-  ms.locfileid: "63317148"
+  ms.lasthandoff: 03/12/2022
+  ms.locfileid: "63450743"
 landingContent:
-- title: Vue d’ensemble
+- title: Aperçu
   linkLists:
   - linkListType: overview
     links:
@@ -108,7 +108,7 @@ landingContent:
     links:
     - text: Comment obtenir de l’aide ou contacter le support technique
       url: mdb-get-help.md
-    - text: Questions fréquemment posées
+    - text: Foire aux questions
       url: mdb-faq.yml
     - text: Résolution des problèmes
       url: mdb-troubleshooting.yml

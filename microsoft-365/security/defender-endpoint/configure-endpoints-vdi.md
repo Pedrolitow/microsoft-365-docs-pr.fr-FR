@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 02/14/2022
 ms.technology: mde
-ms.openlocfilehash: 3e430d44789a1f3c43ec55a20ee7e06521f2dcaf
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 7342f368063c2c9024c4942c33a2e41f28eebd36
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807631"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449819"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Intégrer des appareils VDI (Virtual Desktop Infrastructure) non persistants dans Microsoft 365 Defender
 
@@ -63,7 +63,10 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 > [!WARNING]
 > Pour les environnements où il existe des configurations de ressources faibles, la procédure de démarrage VDI peut ralentir l’intégration du capteur Defender for Endpoint.
 
-### <a name="for-windows-10-or-windows-11-or-windows-server-2019-or-windows-server-2022"></a>Pour Windows 10, Windows 11, Windows Server 2019 ou Windows Server 2022
+### <a name="for-windows-10-or-windows-11-or-windows-server-2012-r2-and-later"></a>Pour Windows 10, Windows 11, ou Windows Server 2012 R2 et ultérieures
+
+> [!NOTE]
+> Windows Server 2016 et Windows Server 2012 R2 doivent être préparés en appliquant d’abord le package d’installation à l’aide des instructions des serveurs [Windows](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2012-r2-and-windows-server-2016) intégrés pour que cette fonctionnalité fonctionne.
 
 1.  Ouvrez le fichier de package de configuration VDI .zip (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender:</a>
 
@@ -109,7 +112,10 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 
 7. Utilisez la fonction de recherche en entrant le nom de l’appareil et sélectionnez **Appareil** comme type de recherche.
 
-## <a name="for-downlevel-skus-windows-server-2008-r22012-r22016"></a>Pour les S SKUs de niveau bas (Windows Server 2008 R2/2012 R2/2016)
+## <a name="for-downlevel-skus-windows-server-2008-r2"></a>Pour les SSO de niveau bas (Windows Server 2008 R2)
+
+> [!NOTE]
+> Ces instructions pour les autres versions Windows server s’appliquent également si vous exécutez le précédent Microsoft Defender for Endpoint pour Windows Server 2016 et Windows Server 2012 R2 qui nécessite le MMA. Les instructions de migration vers la nouvelle solution unifiée se font dans les [scénarios de migration de serveur dans Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
 > [!NOTE]
 > Le Registre suivant n’est pertinent que lorsque l’objectif est d’obtenir une entrée unique pour chaque appareil.

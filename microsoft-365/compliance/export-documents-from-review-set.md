@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment sélectionner et exporter du contenu à partir d’un ensemble Advanced eDiscovery révision pour les présentations ou les avis externes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6384d45121fc39d120d6906e46594b8b04124471
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 61de8fed9c5bcb00daf3a8273f3ebfc86fe75a35
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401061"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449455"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>Exporter des documents à partir d’un groupe de révision dans Advanced eDiscovery
 
@@ -93,11 +93,14 @@ Si vous sélectionnez cette option d’exportation, le contenu exporté est orga
   
   - Avertissements et erreurs x de z.csv : ce fichier inclut des informations sur les erreurs rencontrées lors de la tentative d’exportation à partir du jeu à réviser.
   
-  - Exchange : ce dossier contient tout le contenu des Exchange stockés dans des fichiers PST. Les fichiers PDF rédigés ne peuvent pas être inclus dans cette option. Si une pièce jointe est sélectionnée dans le jeu à réviser, le message électronique parent est exporté avec la pièce jointe jointe. Ce dossier peut également contenir les éléments suivants : 
+  - Exchange : ce dossier contient tout le contenu des Exchange stockés dans des fichiers PST. Les fichiers PDF rédigés ne peuvent pas être inclus dans cette option. Si une pièce jointe est sélectionnée dans le jeu à réviser, le message électronique parent est exporté avec la pièce jointe jointe.
+  
+    Le Exchange peut également contenir un sous-dossier nommé mailboxname_loosefiles.zip, qui contient les éléments suivants :
 
-    - Messages protégés par la Gestion des droits de l’information (IRM) qui ont été décodés. 
-    - Messages corrigés par erreur. 
-    - Pièces jointes ou liens modernes référencés dans les messages. 
+    - Messages protégés par la Gestion des droits de l’information (IRM) qui ont été décodés.
+    - Messages corrigés par erreur.
+    - Pièces jointes ou liens modernes référencés dans les messages.
+    - Éléments chiffrés (qui ne sont pas inclus dans les fichiers PST du Exchange dossier).
   
   - SharePoint : ce dossier contient tout le contenu natif de SharePoint dans un format de fichier natif. Les fichiers PDF rédigés ne peuvent pas être inclus dans cette option.
 

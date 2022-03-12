@@ -18,13 +18,13 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: 'La prévention des pertes de données du Point de terminaison Microsoft 365 étend la surveillance des activités des fichiers et des actions de protection de ces aux points de terminaison. Les fichiers sont visibles dans les solutions de conformité '
-ms.openlocfilehash: 7d8bc4dcb9d2852894ca838d88ae8ff2f5226298
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+description: 'La protection contre la perte de données des points de terminaison de Microsoft 365 étend la surveillance des activités de fichiers et les actions de protection pour ces fichiers aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité '
+ms.openlocfilehash: 83608f005b9024583142515094b2d958b8f5d915
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271561"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450343"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données de point de terminaison Microsoft 365
 
@@ -81,8 +81,33 @@ Si vous souhaitez surveiller les données des correspondances de stratégie uniq
 > [!TIP]
 > Pour vous assurer que les activités sont auditées pour tous les types de fichiers pris en charge, créez une [stratégie DLP personnalisée](create-test-tune-dlp-policy.md).
 
-
 Le DLP du point de terminaison contrôle l’activité basée sur le type MIME, de sorte que les activités sont capturées même si l’extension de fichier est modifiée.
+
+### <a name="file-types-preview"></a>Types de fichiers (aperçu)
+
+Les types de fichiers sont un regroupement de formats de fichiers utilisés pour protéger des flux de travail ou des domaines d’activité spécifiques. Vous pouvez utiliser un ou plusieurs types de fichiers comme conditions dans vos stratégies DLP.
+
+|Type de fichier |Application  |extensions de fichier surveillées  |
+|---------|---------|---------|
+|traitement de texte |Word, PDF | .doc, .docx,  .docm, .dot, .dotx, .dotm, .docb, .pdf |
+|feuille de calcul    |Excel, CSV, TSV |.xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .csv, .tsv         |
+|présentation |PowerPoint|.ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx|
+|archive  |outils d’archivage et de compression de fichiers | .zip, .zipx, .rar, .7z, .tar, .gz        |
+|email    |Outlook |.pst, .ost, .msg         |
+
+### <a name="file-extensions-preview"></a>Extensions de fichier (aperçu)
+
+Si les types de fichiers ne couvrent pas les extensions de fichier que vous devez lister en tant que condition dans une stratégie, vous pouvez utiliser des extensions de fichier séparées par des virgules à la place.
+
+> [!IMPORTANT]
+> Les extensions de fichier et les options de types de fichiers ne peuvent pas être utilisés comme conditions dans la même règle. Si vous souhaitez les utiliser comme conditions dans la même stratégie, elles doivent être dans des règles distinctes. 
+
+> [!IMPORTANT]
+> Ces versions Windows prennent en charge les types de fichiers et les fonctionnalités d’extension de fichier suivants :
+>- Windows 10 versions 20H1/20H2/21H1 (KB 5006738)
+>- Windows 10 versions 19H1/19H2 (KB 5007189)
+>- Windows 10 RS5 (KB 5006744)
+
 
 ## <a name="whats-different-in-endpoint-dlp"></a>Différences avec Endpoint DLP
 

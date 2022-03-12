@@ -17,21 +17,21 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 4fbc4dc4b5b8628b075d5e6d5a91f760e322a6cf
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c943841a89acb7052f63ba76898e9b23e5dc3b4c
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329808"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449497"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>Afficher et modifier vos stratégies et paramètres de sécurité dans Microsoft Defender entreprise
 
 > [!IMPORTANT]
-> Microsoft Defender for Business est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. La [prévisualisation inclut un ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et nous ajouterons régulièrement des fonctionnalités.
+> Microsoft Defender for Business est en déploiement [Microsoft 365 Business Premium clients,](../../business-premium/index.md) à partir du 1er mars 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. La [prévisualisation inclut un ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et nous ajouterons régulièrement des fonctionnalités.
 > 
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Aperçu
 
 Une fois que vous avez intégré les appareils de votre organisation à Microsoft Defender pour Entreprises, l’étape suivante consiste à afficher et, si nécessaire, à modifier vos stratégies et paramètres de sécurité. Les stratégies de sécurité sont les suivantes :
 
@@ -145,8 +145,8 @@ Le tableau suivant décrit les paramètres à afficher (et, si nécessaire, modi
 | Catégorie | Setting | Description |
 |:---|:---|:---|
 | **Centre de sécurité** | **Fuseau horaire** | Sélectionnez le fuseau horaire à utiliser pour les dates et heures affichées dans les incidents, les menaces détectées et les examens automatisés & correction. Vous pouvez utiliser l’heure UTC ou votre fuseau horaire local (*recommandé*).  |
-| **Microsoft 365 Defender** | **Account** | Afficher des détails, tels que l’endroit où vos données sont stockées, votre ID de client et l’ID de votre organisation (organisation). |
-| **Microsoft 365 Defender**  | **Fonctionnalités en préversion**  | Activer les fonctionnalités d’aperçu pour essayer les fonctionnalités à venir et les nouvelles fonctionnalités. Vous pouvez être parmi les premiers à afficher un aperçu des nouvelles fonctionnalités et à fournir des commentaires. |
+| **Microsoft 365 Defender** | **Account** | Afficher des détails, tels que l’endroit où vos données sont stockées, votre ID de client et l’ID de votre organisation (organisation). |
+| **Microsoft 365 Defender**  | **Fonctionnalités en préversion**  | Activer les fonctionnalités d’aperçu pour essayer les fonctionnalités à venir et les nouvelles fonctionnalités. Vous pouvez être parmi les premiers à afficher un aperçu des nouvelles fonctionnalités et à fournir des commentaires. |
 | **Points de terminaison**  | **Notifications par courrier électronique** | Configurer ou modifier vos règles de notification par courrier électronique. Lorsque des vulnérabilités sont détectées ou qu’une alerte est créée, les destinataires spécifiés dans vos règles de notification par courrier électronique reçoivent un e-mail. [En savoir plus sur les notifications par courrier électronique](mdb-email-notifications.md). |
 | **Points de terminaison**   | **Gestion des appareils** >  **Intégration** | Intégrer des appareils à Defender for Business à l’aide d’un script téléchargeable. Pour en savoir plus, [consultez Intégrer des appareils à Microsoft Defender pour Entreprises](mdb-onboard-devices.md).   |  
 | **Points de terminaison**  |  **Gestion des appareils** >  **Offboarding** | Déboardez (supprimez) les appareils de Defender for Business. Lorsque vousboardez un appareil, il n’envoie plus de données à Defender for Business, mais les données reçues avant laboarding sont conservées. Pour en savoir plus, consultez [Laboarding d’un appareil](mdb-onboard-devices.md#offboarding-a-device).  |
@@ -160,7 +160,7 @@ Le tableau suivant décrit les paramètres à afficher (et, si nécessaire, modi
 3. Dans la liste des paramètres, sélectionnez un élément à afficher ou à modifier.
 
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Procédez à une ou plusieurs des tâches suivantes :
 

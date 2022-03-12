@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Apprenez comment et pourquoi renommer un extracteur dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 0b5c52e00b287b6f4b41e7c8c3070261bccfda96
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 850359f71e7ca08b16265f93741ab2498e87d032
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195448"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450281"
 ---
 # <a name="rename-an-extractor-in-microsoft-sharepoint-syntex"></a>Renommer un extracteur dans Microsoft SharePoint Syntex
 
@@ -37,15 +37,15 @@ Suivez ces étapes pour renommer un extracteur d'entité.
 
 2. Sur la page **Modèles**, dans la colonne **Nom**, sélectionnez le modèle pour lequel vous souhaitez renommer un extracteur.
 
-3. Sous **'entité**, sélectionnez le nom de l’extracteur que vous voulez renommer, puis sélectionnez **Renommer**.</br>
+3. Sous **'entité**, sélectionnez le nom de l’extracteur que vous voulez renommer, puis sélectionnez **Renommer**.
 
-    ![Capture d'écran de la section Extracteurs d'entités montrant un extracteur sélectionné avec l'option Renommer en surbrillance.](../media/content-understanding/entity-extractor-rename.png) </br>
+    ![Capture d'écran de la section Extracteurs d'entités montrant un extracteur sélectionné avec l'option Renommer en surbrillance.](../media/content-understanding/entity-extractor-rename.png) 
 
 4. Sur **le panneau de l'extracteur** d'entité Renommer :
 
-   a. Sous **Nouveau nom**, saisissez le nouveau nom de l'extracteur.</br>
+   a. Sous **Nouveau nom**, saisissez le nouveau nom de l'extracteur.
 
-    ![Capture d'écran montrant le panneau de l'extracteur d'entités.](../media/content-understanding/rename-entity-extractor-panel.png) </br>
+    ![Capture d'écran montrant le panneau de l'extracteur d'entités.](../media/content-understanding/rename-entity-extractor-panel.png) 
 
    b. (Facultatif) Sous **Paramètres avancés**, sélectionnez si vous voulez associer une colonne de site existante.
 

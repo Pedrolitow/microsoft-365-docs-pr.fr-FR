@@ -17,17 +17,17 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: 6d31f7ea4dcec4cc17eb182843b6aa4e9013542f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c7b7848eb9bd02c75304ffea4347beb19b873b3a
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329822"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449833"
 ---
 # <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Comparer Microsoft Defender entreprise à Microsoft 365 Business Premium
 
 > [!IMPORTANT]
-> Microsoft Defender for Business est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. La [prévisualisation inclut un ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et nous ajouterons régulièrement des fonctionnalités.
+> Microsoft Defender for Business est en déploiement [Microsoft 365 Business Premium clients,](../../business-premium/index.md) à partir du 1er mars 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. La [prévisualisation inclut un ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et nous ajouterons régulièrement des fonctionnalités.
 > 
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
@@ -61,7 +61,7 @@ Le tableau suivant compare les fonctionnalités de sécurité et les fonctionnal
 | Fonctionnalité/fonctionnalité | [Microsoft Defender pour les PME](mdb-overview.md)<br/>(autonome ; actuellement en prévisualisation) | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(inclut Defender pour les entreprises) |
 |:---|:---|:---|
 | Protection de la messagerie | Oui <br/>- [Analyse du courrier électronique avec Antivirus Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md) | Oui <br/>- [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) <br/>- [Analyse du courrier électronique avec Antivirus Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md) |
-| Protection anti-courrier indésirable | Oui <br/>- Pour les appareils | Oui <br/>- Pour les appareils<br/>- Pour Microsoft 365 de courrier électronique, tel que des messages et des pièces jointes |
+| Protection contre lepam | Oui <br/>- Pour les appareils | Oui <br/>- Pour les appareils<br/>- Pour Microsoft 365 de courrier électronique, tel que des messages et des pièces jointes |
 | Protection anti-programme malveillant | Oui<br/>- Pour les appareils | Oui <br/>- Pour les appareils<br/>- Pour Microsoft 365 de courrier électronique, tel que des messages et des pièces jointes |
 | [Protection de nouvelle génération](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (protection antivirus et anti-programme malveillant) | Oui<br/>- Antivirus Microsoft Defender est inclus dans Windows 10 et ultérieures  | Oui <br/>- Antivirus Microsoft Defender est inclus dans Windows 10 et ultérieures<br/>- Stratégies de protection nouvelle génération pour les appareils intégrés |
 | [Réduction de la surface d’attaque](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(Règles de asr dans Windows 10 ou ultérieure et protection pare-feu) | Oui  | Oui  |
@@ -100,7 +100,7 @@ Le tableau suivant compare les fonctionnalités de sécurité de Defender pour E
 
 (<a id="fn3">3</a>) Pendant le programme d’aperçu, les Windows clients sont pris en charge dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Voir les conditions requises pour Microsoft Defender pour les entreprises](mdb-requirements.md)
 

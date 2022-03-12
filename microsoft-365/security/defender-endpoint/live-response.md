@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e0e2490fb9026ff23e55990930ddedeb48144b92
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 882454e00517624c3bc43e87308007b00ece9507
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315972"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449717"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Examiner les entités sur les appareils à l’aide de la réponse en direct
 
@@ -87,6 +87,8 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
 
   > [!NOTE]
   > Seuls les utilisateurs  ayant des rôles d’administrateur global ou de sécurité peuvent modifier ces paramètres.
+  > 
+  > L’examen automatisé doit être activé dans les [paramètres des fonctionnalités](advanced-features.md) avancées avant d’activer la réponse en direct.
 
 - **Activez la réponse en direct pour les serveurs à partir de la page paramètres avancés** (recommandé).
 
@@ -277,7 +279,7 @@ Vous pouvez avoir une collection de scripts PowerShell qui peuvent s’exécuter
 
 ## <a name="run-a-script"></a>Exécuter un script
 
-Avant de pouvoir exécuter des scripts PowerShell/Bash, vous devez d’abord le télécharger dans la bibliothèque.
+Avant de pouvoir exécuter un script PowerShell/Bash, vous devez d’abord le télécharger dans la bibliothèque.
 
 Après avoir téléchargé le script dans la bibliothèque, utilisez la commande `run` pour exécuter le script.
 
@@ -332,7 +334,7 @@ La réponse en direct prend en charge les types de sortie au format JSON et tabl
 
 La réponse en direct prend en charge le système de sortie vers l’CLI et le fichier. L’CLI est le comportement de sortie par défaut. Vous pouvez canaliser la sortie vers un fichier à l’aide de la commande suivante : [command] > [filename].txt.
 
-Exemple :
+Exemple :
 
 ```console
 processes > output.txt
@@ -347,7 +349,7 @@ Sélectionnez **l’onglet Journal** de commandes pour voir les commandes utilis
 - Durée
 - Barre d’état et d’entrée ou de sortie
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 
 - Les sessions de réponse en direct sont limitées à 25 sessions de réponse en direct à la fois.
 - La valeur du délai d’inactivité de la session de réponse active est de 30 minutes.

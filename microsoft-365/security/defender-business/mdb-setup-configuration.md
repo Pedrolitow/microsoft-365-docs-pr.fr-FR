@@ -17,17 +17,17 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: f2d361e2e017886b70d7d373ecc03ebc43405f2a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ec001f0a1576b767f93d74b7ef865e3912d397f1
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323694"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449791"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business"></a>Installer et configurer Microsoft Defender pour les entreprises
 
 > [!IMPORTANT]
-> Microsoft Defender for Business est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. La [prévisualisation inclut un ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et nous ajouterons régulièrement des fonctionnalités.
+> Microsoft Defender for Business est en déploiement [Microsoft 365 Business Premium clients,](../../business-premium/index.md) à partir du 1er mars 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. La [prévisualisation inclut un ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et nous ajouterons régulièrement des fonctionnalités.
 > 
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
@@ -50,7 +50,7 @@ Microsoft Defender pour Entreprise offre une configuration simplifiée, conçue 
 | 4 | [Intégration des appareils](mdb-onboard-devices.md)     | Microsoft Defender pour Les Entreprises est installé de sorte que vous pouvez choisir parmi plusieurs options pour intégrer les appareils de votre organisation. [Consultez Les appareils intégrés à Microsoft Defender pour Entreprises](mdb-onboard-devices.md).         |
 | 5 | [Configurer vos paramètres et stratégies de sécurité](mdb-configure-security-settings.md) | Vous pouvez choisir parmi plusieurs options pour configurer vos paramètres et stratégies de sécurité, notamment un processus de configuration simplifié ou un Microsoft Endpoint Manager. Voir [Configurer vos paramètres et stratégies de sécurité](mdb-configure-security-settings.md). |
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Procédez comme il se doit pour :
 

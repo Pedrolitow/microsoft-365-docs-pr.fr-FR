@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/02/2022
+ms.date: 03/10/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 8c7100774057d399667a3176670a55d5b4479c73
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 2cc157e363c42b94cac750b19a6122ed0a22c3de
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419028"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450757"
 ---
 # <a name="use-the-wizard-to-set-up-microsoft-defender-for-business"></a>Utiliser l’Assistant pour configurer Microsoft Defender pour les entreprises
 
 > [!IMPORTANT]
-> Microsoft Defender for Business est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. La [prévisualisation inclut un ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et nous ajouterons régulièrement des fonctionnalités.
+> Microsoft Defender for Business est en déploiement [Microsoft 365 Business Premium clients,](../../business-premium/index.md) à partir du 1er mars 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. La [prévisualisation inclut un ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et nous ajouterons régulièrement des fonctionnalités.
 > 
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
@@ -55,7 +55,7 @@ L’Assistant est conçu pour vous aider à configurer Defender pour Entreprise 
 
    - Si vous utilisez déjà Microsoft Intune (partie de Microsoft Endpoint Manager) et que votre organisation dispose d’appareils inscrits dans Endpoint Manager, vous êtes invité à utiliser l’intégration automatique pour une partie ou la plupart de [](mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager) vos appareils Windows inscrits. L’intégration automatique définit une connexion entre Endpoint Manager et Defender pour Entreprise, puis intègre Windows appareils à Defender pour Entreprise en toute transparence.
 
-   - Si vous n’utilisez pas déjà Endpoint Manager ou si vous avez des appareils non Windows inscrits dans Endpoint Manager, vous pouvez intégrer manuellement des appareils à Defender for Business. 
+   - Si vous n’utilisez pas déjà Endpoint Manager ou si vous avez des appareils non Windows inscrits dans Endpoint Manager, vous pouvez intégrer manuellement des appareils à [Defender for Business](mdb-onboard-devices.md#local-script-in-defender-for-business). 
    
 3. **Configurez vos stratégies de sécurité**. Defender pour les entreprises inclut des stratégies de sécurité par défaut pour la protection nouvelle génération et la protection pare-feu qui peuvent être appliquées aux appareils de votre organisation. Ces stratégies par défaut utilisent les paramètres recommandés et sont conçues pour fournir une protection forte pour vos appareils. 
 
@@ -77,7 +77,7 @@ Si vous choisissez de ne pas utiliser l’Assistant, ou si l’Assistant est fer
 
 4. [Gérez vos stratégies de sécurité](mdb-configure-security-settings.md), qui incluent la protection nouvelle génération, la protection pare-feu et le filtrage de contenu web.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Configurer des notifications par courrier électronique pour votre équipe de sécurité](mdb-email-notifications.md)
 
