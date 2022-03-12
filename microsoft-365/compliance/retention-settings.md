@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: decf8f53f30c7f29636e50900fe994aae25e6552
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 2fd9f2655b13d8c9ac829108d3563a6a4322f3bc
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326984"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449244"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -127,7 +127,7 @@ Pour les sites SharePoint, une configuration SharePoint supplémentaire peut êt
     
     - Pour les **sites Microsoft Office SharePoint Online** étendues, utilisez le langage KQL (Keyword Query Language). Vous connaissez peut-être déjà l’utilisation de KQL pour rechercher Microsoft Office SharePoint Online à l’aide de propriétés de site indexées. Pour vous aider à spécifier ces requêtes KQL, consultez [En savoir plus sur la syntaxe KQL](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
         
-        Par exemple, comme les champs d'application des sites SharePoint incluent automatiquement tous les types de sites SharePoint, qui comprennent les sites Microsoft 365 connectés à un groupe et les sites OneDrive, vous pouvez utiliser la propriété SiteTemplate du site indexé pour inclure ou exclure des types de **sites spécifiques**. Les modèles que vous pouvez spécifier :
+        Par exemple, étant donné que les étendues d'application des sites SharePoint incluent automatiquement tous les types de sites SharePoint, qui comprennent les sites Microsoft 365 connectés à un groupe et les sites OneDrive, vous pouvez utiliser la propriété de site indexée **SiteTemplate** pour inclure ou exclure des types de sites spécifiques. Les modèles que vous pouvez spécifier :
         - SITEPAGEPUBLISHING pour les sites de communication modernes
         - GROUPE pour les sites connectés à un groupe Microsoft 365
         - TEAMCHANNEL pour les sites de canaux privés Microsoft Teams
@@ -367,6 +367,14 @@ Exemples :
 Vous pouvez choisir si vous souhaitez que le contenu soit supprimé de façon définitive à la fin de la période de rétention :
 
 ![Page Paramètres de rétention.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
+
+Avant de configurer la rétention, familiarisez-vous tout d’abord avec les limites de capacité et de stockage pour les charges de travail respectives :
+
+- Pour SharePoint et OneDrive, les éléments conservés sont stockés dans la bibliothèque de conservation et de préservation du site, qui est incluse dans le quota de stockage du site. Pour plus d’informations, consultez [Gérer les limites de stockage de site](/sharepoint/manage-site-collection-storage-limits) de la documentation SharePoint.
+
+- Pour Exchange, Teams et Yammer, où les messages conservés sont stockés dans des boîtes aux lettres, consultez [Limites Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) et activez [Archivage à extension automatique](autoexpanding-archiving.md).
+    
+    Dans les cas extrêmes où un volume élevé d’e-mails est supprimé sur une courte période, soit par des utilisateurs, soit automatiquement à partir des paramètres de stratégie, vous devrez peut-être également configurer Exchange pour déplacer plus fréquemment des éléments du dossier Éléments récupérables de la boîte aux lettres principale de l’utilisateur vers le dossier Éléments récupérables de leur boîte aux lettres d’archivage. Pour obtenir des instructions pas à pas, consultez [Augmenter le quota d’éléments récupérables pour les boîtes aux lettres en attente](increase-the-recoverable-quota-for-mailboxes-on-hold.md).
 
 ### <a name="deleting-content-thats-older-than-a-specific-age"></a>Suppression du contenu antérieur à une date spécifique
 

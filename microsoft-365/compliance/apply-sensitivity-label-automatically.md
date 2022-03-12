@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: ab47315fe56124f54b1404ceebc015a715eb74ee
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 166905abb1dc08bcf9fe34e80c3ff3f44813501b
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419317"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449805"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -315,11 +315,13 @@ Dans tous les cas, les fichiers correspondants sont étiquetés jusqu’à ce qu
 
     ![Page Choisir des emplacements pour la configuration de l’étiquetage automatique.](../media/locations-auto-labeling-wizard.png)
     
-    Plus d’informations sur les emplacements :
+    Si vous modifiez les paramètres par défaut à l’aide de **Inclus** ou **Exclus** :
     
-    - Si vous choisissez **Exchange** et que vous souhaitez étiqueter le courrier entrant en dehors de votre organisation, vous devez conserver la valeur par défaut **Tout** inclus. Pour que cette configuration soit étendue à des utilisateurs spécifiques de votre organisation, choisissez **règles avancées** à l’étape suivante. Configurez ensuite les conditions pour inclure des destinataires spécifiques dans votre organisation afin d’atteindre l’exigence d’étendue pour un sous-ensemble d’utilisateurs.
+    - Pour l’emplacement **Exchange** , la stratégie est appliquée en fonction de l’adresse de l’expéditeur des destinataires spécifiés. La plupart du temps, vous souhaiterez conserver la valeur par défaut de **Tous** inclus avec **Aucun** exclu. Cette configuration convient même si vous testez un sous-ensemble d’utilisateurs. Au lieu de spécifier votre sous-ensemble d’utilisateurs ici, utilisez les règles avancées de l’étape suivante pour configurer des conditions afin d’inclure ou d’exclure des destinataires dans votre organisation. Dans le cas contraire, lorsque vous modifiez les paramètres par défaut ici :
+        -  Si vous modifiez la valeur par défaut de **Tous** inclus et choisissez à la place des utilisateurs ou des groupes spécifiques, les e-mails envoyés en dehors de votre organisation seront exemptés de la stratégie. 
+        -  Si vous conservez la valeur par défaut de **Tous** inclus, mais spécifiez des utilisateurs ou des groupes à exclure, les e-mails envoyés par ces utilisateurs exclus seront exemptés de la stratégie, mais pas les e-mails qu’ils reçoivent.
     
-    - Pour spécifier des comptes OneDrive individuels, consultez [Obtenir la liste de toutes les URL OneDrive des utilisateurs de votre organisation.](/onedrive/list-onedrive-urls)
+    - Pour les comptes OneDrive, consultez [Obtenir une liste de toutes les URL OneDrive utilisateur de votre organisation](/onedrive/list-onedrive-urls) pour vous aider à spécifier des comptes OneDrive individuels à inclure ou exclure.
 
 7. Pour la page **Configurer des règles communes ou avancées** : conservez la valeur par défaut de **Règles communes** pour définir des règles qui identifient le contenu à étiqueter dans tous vos emplacements sélectionnés. Si vous avez besoin de règles différentes par emplacement, sélectionnez **Règles avancées**. Sélectionnez ensuite **Suivant**.
 
