@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment utiliser la fonctionnalité de gestion des coûts dans le Centre d'administration Microsoft 365 pour afficher, analyser et gérer les coûts pour votre organisation.
 ms.date: 03/09/2022
-ms.openlocfilehash: 0308b5f13d514bcd1f489508e1b95ac36f77040e
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 64531e7b7422c3267f053e1ef098a92bfe6bed28
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450877"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468747"
 ---
 # <a name="use-cost-management-in-the-microsoft-365-admin-center"></a>Utiliser la gestion des coûts dans le Centre d'administration Microsoft 365
 
@@ -35,7 +35,7 @@ Vous devez être un administrateur global ou de facturation pour effectuer les �
 
 ## <a name="what-is-cost-management"></a>Qu’est-ce que la gestion des coûts ?
 
-En règle générale, la gestion des coûts est une méthodologie utilisée pour planifier et contrôler le budget d’une organisation. Dans la Centre d'administration Microsoft 365, les fonctionnalités de gestion des coûts permettent de réduire les coûts et les frais généraux nécessaires à la gestion des biens de votre organisation. Dans le cadre de cette fonctionnalité, Microsoft introduit de nouveaux produits et services qui utilisent un modèle de facturation de paiement à l’utilisation, où vous payez uniquement pour ce que vous utilisez. Vous pouvez utiliser les nouvelles fonctionnalités de gestion des coûts pour :
+La gestion des coûts est une méthodologie utilisée pour planifier et contrôler le budget d’une organisation. Microsoft introduit de nouveaux produits et services qui utilisent un modèle de facturation de paiement à l’aide de l’utilisation, où vous payez uniquement pour ce que vous utilisez. Dans la Centre d'administration Microsoft 365, les fonctionnalités de gestion des coûts permettent de réduire les coûts et les frais généraux nécessaires pour gérer les biens de votre organisation et d’assurer le suivi de vos frais de paiement à l’utilisation variables. Vous pouvez également :
 
 - Télécharger les données de coût et d’utilisation utilisées pour générer votre facture mensuelle
 - Appliquer de manière proactive l’analyse des données à vos coûts

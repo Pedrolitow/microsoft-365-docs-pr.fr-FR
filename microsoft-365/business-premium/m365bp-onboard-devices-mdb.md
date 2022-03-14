@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/08/2022
+ms.date: 03/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 4e6d689a040963453bd3beac32593220e04f94dc
-ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
+ms.openlocfilehash: 417deb0d865743e73b9d895a3d4ddb48016facde
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63406534"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468947"
 ---
 # <a name="onboard-managed-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils gérés à Microsoft Defender pour Entreprises
 
@@ -78,7 +78,6 @@ Si votre organisation utilise des appareils Android, utilisez cette méthode.
 
 Voir [Inscription des appareils dans Microsoft Intune](/mem/intune/enrollment/device-enrollment).
 
-PROCÉDURES NÉCESSAIRES ICI
 
 ## <a name="run-a-detection-test-on-a-windows-device"></a>Exécuter un test de détection sur un Windows périphérique
 

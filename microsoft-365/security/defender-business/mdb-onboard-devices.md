@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/10/2022
+ms.date: 03/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 545e0e3a12fda1c45bac27f9c71d4e465ca05b7e
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 6b475a1f56f66c6ec9e1ed09b5311515c5eb31c8
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450603"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468693"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils à Microsoft Defender pour Les Entreprises
 
@@ -61,7 +61,7 @@ Le tableau suivant décrit les méthodes les plus couramment utilisées pour int
 |---------|---------|---------|
 | **Intégration automatique**<br/>(*disponible pour les clients qui utilisent déjà Microsoft Endpoint Manager*) | *Microsoft 365 Business Premium clients ont déjà Microsoft Intune et peuvent utiliser cette option*. L’intégration automatique définit une connexion entre Defender entreprise et Microsoft Endpoint Manager, puis Windows appareils à Defender for Business. Pour utiliser cette option, vos appareils doivent déjà être inscrits Endpoint Manager.<br/><br/>Pour en savoir plus, [consultez l’intégration automatique](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager). | Windows |
 | **Script local** <br/> | Cette option vous permet d’intégrer manuellement des appareils individuels à Defender for Business. Vous pouvez intégrer jusqu’à 10 appareils à la fois à l’aide du script local.<br/><br/>Pour plus d’informations, [voir script local dans Defender for Business](#local-script-in-defender-for-business). | Windows <br/>macOS |
-| **Microsoft Intune** ou **Microsoft Endpoint Manager**<br/>(*disponible pour les clients qui utilisent Microsoft Intune ou Endpoint Manager*) | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) [gestion des](/mem/intune/enrollment/device-enrollment) périphériques mobiles font partie des Endpoint Manager. (Microsoft 365 Business Premium clients ont déjà Microsoft Intune.)<br/><br/>Si vous utilisiez déjà Endpoint Manager avant d’obtenir Defender entreprise, vous pouvez choisir de continuer à utiliser Endpoint Manager pour intégrer et gérer les appareils<br/><br/>Pour utiliser cette méthode, voir [Microsoft Endpoint Manager](#microsoft-endpoint-manager). | Windows <br/>macOS<br/>iOS<br/>Système d’exploitation Android | 
+| **Microsoft Intune** ou **Microsoft Endpoint Manager**<br/>(*disponible pour les clients qui utilisent Microsoft Intune ou Endpoint Manager*) | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) [gestion des](/mem/intune/enrollment/device-enrollment) périphériques mobiles font partie des Endpoint Manager. (Microsoft 365 Business Premium clients ont déjà Microsoft Intune.)<br/><br/>Si vous utilisiez déjà Endpoint Manager avant d’obtenir Defender entreprise, vous pouvez choisir de continuer à utiliser Endpoint Manager pour intégrer et gérer vos appareils.<br/><br/>Pour utiliser cette méthode, voir [Microsoft Endpoint Manager](#microsoft-endpoint-manager). | Windows <br/>macOS<br/>iOS<br/>Système d’exploitation Android | 
 | **Configuration de la sécurité de Microsoft Defender pour les entreprises** <br/>(*utilise le portail Microsoft 365 Defender)*) | Pour utiliser cette option, vous configurez certains paramètres pour faciliter la communication entre Defender for Business et Endpoint Manager. Ensuite, vous devez intégrer des appareils dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) à l’aide d’un package que vous téléchargez et exécutez sur chaque appareil. Une relation d’confiance est établie entre les appareils et Azure Active Directory (Azure AD), et les stratégies de sécurité de Defender for Business sont poussées vers les appareils.<br/><br/>Pour en savoir plus, [consultez la configuration de la sécurité de Microsoft Defender entreprise](#microsoft-defender-for-business-security-configuration). | Windows <br/>macOS |
 
 > [!IMPORTANT]

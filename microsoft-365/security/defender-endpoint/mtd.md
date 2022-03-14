@@ -17,18 +17,19 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ce5d8fcf693b6586c134b8fe2381d3881e68d9d3
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 07cd42d1ab1c6b945525b1e9ed4b463ee76376e1
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767598"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468933"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender pour le point de terminaison - Défense contre les menaces mobiles
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -58,7 +59,7 @@ Toutes ces fonctionnalités sont disponibles pour les titulaires de licences Mic
 
 ## <a name="overview-and-deploy"></a>Vue d’ensemble et déploiement
 
-Le déploiement de Microsoft Defender pour Endpoint sur mobile peut être effectué via Microsoft Endpoint Manager (MEM). Regardez cette vidéo pour obtenir une vue d’ensemble rapide des fonctionnalités et du déploiement de MTD :
+Le déploiement de Microsoft Defender for Endpoint sur mobile peut être effectué via Microsoft Endpoint Manager (MEM). Regardez cette vidéo pour obtenir une vue d’ensemble rapide des fonctionnalités et du déploiement de MTD :
 
 <br/>
 
@@ -75,7 +76,7 @@ Le tableau suivant récapitule comment déployer Microsoft Defender pour Endpoin
 |Type d’inscription     |Détails      |
 |--------------------|-------------|
 |Android Enterprise avec Intune Unified Endpoint Manager (Microsoft Endpoint Manager)|[Déployer sur les appareils Enterprise Android](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
-|Administrateur d’appareil avec Endpoint Manager (Microsoft Endpoint Manager)|[Déployer sur les appareils inscrits à l’administrateur de périphérique](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
+|Administrateur d’appareil avec Endpoint Manager (Microsoft Endpoint Manager) Intune|[Déployer sur les appareils inscrits à l’administrateur de périphérique](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
 |Appareils BYOD OR non gérés gérés par d’autres gestionnaires de points de terminaison unifiés/stratégie de protection des applications d’installation (MAM)|[Configurer les signaux de risque Defender dans la stratégie de protection des applications (MAM)](android-configure-mam.md)|
 
 **iOS**
@@ -83,7 +84,7 @@ Le tableau suivant récapitule comment déployer Microsoft Defender pour Endpoin
 |Type d’inscription     |Détails      |
 |--------------------|-------------|
 |Appareils supervisés avec l’Endpoint Manager unifiée Intune (Microsoft Endpoint Manager)|1. Déployer [en tant qu’application du store iOS](ios-install.md)<br/>2. Configuration [de la protection web sans VPN pour les appareils iOS supervisés](ios-install.md#complete-deployment-for-supervised-devices)|
-|Appareils BYOD (Unsupervised) inscrits auprès de l’UEM Intune (Microsoft Endpoint Manager)|[Déployer en tant qu’application du Store iOS](ios-install.md)|
+|Appareils BYOD (Unsupervised) inscrits avec l’UEM (Microsoft Endpoint Manager) Intune|[Déployer en tant qu’application du Store iOS](ios-install.md)|
 |Appareils BYOD OR non gérés gérés par d’autres uems/stratégie de protection des applications d’installation (MAM)|[Configurer les signaux de risque Defender dans la stratégie de protection des applications (MAM)](ios-install-unmanaged.md)|
 
 ### <a name="end-user-onboarding"></a>Intégration de l’utilisateur final

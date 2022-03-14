@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 02/07/2022
-ms.openlocfilehash: a0bca99258bd256797437cdc4756910fc713cf26
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.date: 03/09/2022
+ms.openlocfilehash: f696cd3631573bdb2206c665340f35601e4624ac
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401177"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468983"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Contrôle d’appareil amovible Microsoft Defender for Endpoint Stockage Access Control
 
@@ -35,18 +35,14 @@ Microsoft Defender for Endpoint Device Control Removable Stockage Access Control
 
 - audit, autoriser ou empêcher l’accès en lecture, écriture ou exécution au stockage amovible avec ou sans exclusion
 
-<br/><br/>
-
 |Privilège|Autorisation|
 |---|---|
-|Accès|Lecture, Écriture, Exécution|
+|Access|Lecture, Écriture, Exécution|
 |Action Mode|Auditer, autoriser, empêcher|
 |Prise en charge du programme CSP|Oui|
 |Prise en charge des GPO|Oui|
 |Prise en charge basée sur l’utilisateur|Oui|
 |Prise en charge basée sur l’ordinateur|Oui|
-
-<br/><br/>
 
 |Fonctionnalité|Description|Déployer via Intune|Déployer par le biais d’une stratégie de groupe|
 |---|---|---|---|
@@ -68,6 +64,8 @@ Déployez le contrôle d’Stockage amovible sur les appareils Windows 10 et Win
 
 - **4.18.2111** ou version ultérieure : ajouter « Activer ou désactiver le contrôle d’accès Stockage amovible » , « Application par défaut » , heure de mise à jour de la stratégie de l’ordinateur client via PowerShell, informations sur les fichiers
 
+- **4.18.2201** ou version ultérieure : prise en charge d’une copie de fichier écrite dans un stockage autorisé via OMA-URI
+
 :::image type="content" source="images/powershell.png" alt-text="Interface PowerShell.":::
 
 > [!NOTE]
@@ -82,17 +80,13 @@ Vous pouvez utiliser les propriétés suivantes pour créer un groupe de stockag
 
 ### <a name="removable-storage-group"></a>Groupe de Stockage amovible
 
-<br/><br/>
-
 |Nom de la propriété|Description|Options|
 |---|---|---|
 |**GroupId**|GUID, un ID unique, représente le groupe et sera utilisé dans la stratégie.||
-|**DescriptorIdList**|List the device properties you want to use to cover in the group. Pour chaque propriété d’appareil, voir [Propriétés de l’appareil](device-control-removable-storage-protection.md) pour plus d’informations. Toutes les propriétés sont sensibles à la cas. |**PrimaryId**: `RemovableMediaDevices`, , `CdRomDevices``WpdDevices`<p>**BusId** : par exemple, USB, SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId** : InstancePathId est une chaîne qui identifie de manière unique l’appareil dans le système, par exemple, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. Le numéro à la fin (par exemple, &0) représente l’emplacement disponible et peut changer d’appareil à appareil. Pour de meilleurs résultats, utilisez un caractère générique à la fin. Par exemple : `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**PID**<p>**VID_PID**<p>0751_55E0 : correspondre à cette paire VID/PID exacte<p>55E0 : faire correspondre n’importe quel média avec PID=55E0 <p>0751 : faire correspondre n’importe quel média avec VID=0751|
+|**DescriptorIdList**|List the device properties you want to use to cover in the group. Pour chaque propriété d’appareil, voir [Propriétés de l’appareil](device-control-removable-storage-protection.md) pour plus d’informations. Toutes les propriétés sont sensibles à la cas. |**PrimaryId**: `RemovableMediaDevices`, , `CdRomDevices``WpdDevices`<p>**BusId** : par exemple, USB, SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId** : InstancePathId est une chaîne qui identifie de manière unique l’appareil dans le système, par exemple, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. Le numéro à la fin (par exemple, &0) représente l’emplacement disponible et peut changer d’appareil à appareil. Pour de meilleurs résultats, utilisez un caractère générique à la fin. Par exemple : `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**PID**<p>**VID_PID**<p>`0751_55E0`: faire correspondre cette paire VID/PID exacte<p>`_55E0`: faire correspondre n’importe quel média avec PID=55E0 <p>`0751_`: faire correspondre n’importe quel média avec VID=0751|
 |**MatchType**|Lorsqu’il existe plusieurs propriétés d’appareil utilisées dans `DescriptorIDList`le , MatchType définit la relation.|**MatchAll** : tous les attributs `DescriptorIdList` sous la relation **Will be And** ; par exemple, `DeviceID` `InstancePathID`si l’administrateur met et, pour chaque clé USB connectée, le système vérifie si la clé USB correspond aux deux valeurs. <p> **MatchAny :** les attributs sous la relation DescriptorIdList seront **Or** ; par exemple, si `DeviceID` `InstancePathID`l’administrateur met et, pour chaque clé USB connectée, le système fait l’application tant que la clé USB a une valeur **DeviceID** ou **InstanceID** identique. |
 
 ### <a name="access-control-policy"></a>Politique de contrôle d’accès
-
-<br/><br/>
 
 | Nom de la propriété | Description | Options |
 |---|---|---|
@@ -164,7 +158,7 @@ Avant de commencer avec le contrôle d’accès Stockage amovible, vous devez co
 
     Si vous souhaitez limiter un utilisateur spécifique, utilisez la propriété SID dans l’entrée. S’il n’existe aucun SID dans l’entrée de stratégie, l’entrée est appliquée à l’instance de connexion de tout le monde pour l’ordinateur.
     
-    Si vous souhaitez surveiller les informations de fichier pour l’accès en écriture, utilisez le bon AccessMask avec l’option de droite (8 ou 16) ; voici l’exemple [d’informations de fichier de capture](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Audit%20File%20Information.xml).
+    Si vous souhaitez surveiller les informations de fichier pour l’accès en écriture, utilisez le bon AccessMask avec l’option de droite (16) ; voici l’exemple [d’informations de fichier de capture](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Audit%20File%20Information.xml).
 
     L’image suivante illustre l’utilisation de la propriété SID et un exemple de scénario 1 : empêcher l’accès en écriture et en exécution à tous les [usbs](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs) approuvés, sauf autoriser.
 
@@ -181,6 +175,7 @@ Avant de commencer avec le contrôle d’accès Stockage amovible, vous devez co
 4. Application par défaut : vous permet de définir l’accès par défaut (Refuser ou Autoriser) aux médias amovibles s’il n’existe aucune stratégie. Par exemple, vous avez uniquement une stratégie (refuser ou autoriser) pour RemovableMediaDevices, mais vous n’avez pas de stratégie pour CdRomDevices ou WpdDevices, et vous définissez refuser par défaut via cette stratégie, l’accès en lecture/écriture/exécution à CdRomDevices ou WpdDevices sera bloqué.
 
    - Une fois ce paramètre déployé, vous verrez **l’option Autoriser ou** **Refuser par défaut**.
+   - Prenez en compte AccessMask au niveau du disque et au niveau du système de fichiers lors de la configuration de ce paramètre, par exemple, si vous souhaitez refuser par défaut mais autoriser un stockage spécifique, vous devez autoriser l’accès au niveau du disque et au niveau du système de fichiers, vous devez définir AccessMask sur 63.
 
     :::image type="content" source="images/148609579-a7df650b-7792-4085-b552-500b28a35885.png" alt-text="Code PowerShell autoriser ou refuser par défaut":::
 
@@ -188,13 +183,13 @@ Avant de commencer avec le contrôle d’accès Stockage amovible, vous devez co
 
     :::image type="content" source="images/148608318-5cda043d-b996-4146-9642-14fccabcb017.png" alt-text="Paramètres de contrôle d’appareil":::
 
-   - Une fois ce paramètre déployé, vous verrez « Activé » ou « Désactivé » : « Désactivé » signifie que cette machine n’a pas de stratégie de contrôle d’accès Stockage amovible en cours d’exécution.
+   - Une fois ce paramètre déployé, l’effet **Activé** ou **Désactivé s’active**. Désactivée signifie que cette machine n’a pas de stratégie Stockage contrôle d’accès amovible en cours d’exécution.
 
     :::image type="content" source="images/148609685-4c05f002-5cbe-4aab-9245-83e730c5449e.png" alt-text="Contrôle d’appareil activé ou désactivé dans le code PowerShell":::
 
 6. Définissez l’emplacement d’une copie du fichier : si vous souhaitez obtenir une copie du fichier lors de l’accès en écriture, vous devez définir l’emplacement où le système peut enregistrer la copie.
     
-    Vous devez déployer cette option en même temps que accessMask et Option , voir l’étape 2 ci-dessus.
+    Déployez-le avec accessMask et Option , voir l’étape 2 ci-dessus.
 
     :::image type="content" source="../../media/define-device-control-policy-rules.png" alt-text="Stratégie de groupe : définir locaiton pour les preuves de fichier":::
 
@@ -246,7 +241,7 @@ Microsoft Endpoint Manager centre d’administration  **des appareils (**<https:
 
     - Type de données : chaîne (fichier XML)
        
-    Si vous souhaitez surveiller les informations de fichier pour l’accès en écriture, utilisez le bon AccessMask avec l’option de droite (8 ou 16) ; voici l’exemple [d’informations de fichier de capture](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20File%20Information.xml).
+    Si vous souhaitez surveiller les informations de fichier pour l’accès en écriture, utilisez le bon AccessMask avec l’option de droite (16) ; voici l’exemple [d’informations de fichier de capture](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20File%20Information.xml).
 
 3. Application par défaut : vous permet de définir l’accès par défaut (Refuser ou Autoriser) aux médias amovibles s’il n’existe aucune stratégie. Par exemple, vous avez uniquement une stratégie (refuser ou autoriser) pour RemovableMediaDevices, mais vous n’avez pas de stratégie pour CdRomDevices ou WpdDevices, et vous définissez refuser par défaut via cette stratégie, l’accès en lecture/écriture/exécution à CdRomDevices ou WpdDevices sera bloqué.
 
@@ -258,6 +253,7 @@ Microsoft Endpoint Manager centre d’administration  **des appareils (**<https:
       `DefaultEnforcementDeny = 2`
 
     - Une fois ce paramètre déployé, vous verrez **l’option Autoriser ou** **Refuser par défaut**.
+    - Prenez en compte AccessMask au niveau du disque et au niveau du système de fichiers lors de la configuration de ce paramètre, par exemple, si vous souhaitez refuser par défaut mais autoriser un stockage spécifique, vous devez autoriser l’accès au niveau du disque et au niveau du système de fichiers, vous devez définir AccessMask sur 63.
 
     :::image type="content" source="images/148609590-c67cfab8-8e2c-49f8-be2b-96444e9dfc2c.png" alt-text="Code PowerShell d’application par défaut":::
 
@@ -276,7 +272,7 @@ Microsoft Endpoint Manager centre d’administration  **des appareils (**<https:
 
 5. Définissez l’emplacement d’une copie du fichier : si vous souhaitez obtenir une copie du fichier lors de l’accès en écriture, vous devez définir l’emplacement où le système peut enregistrer la copie.
     
-    - OMA-URI : `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation`
+    - OMA-URI : `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation;**username**;**password**`
 
     - Type de données : String
     
@@ -295,7 +291,7 @@ Le [portail Microsoft 365 Defender affiche](https://security.microsoft.com/advan
 - Microsoft 365 de rapports E5
 
 ```kusto
-//events triggered by RemovableStoragePolicyTriggered
+//RemovableStoragePolicyTriggered: event triggered by Disk level enforcement
 DeviceEvents
 | where ActionType == "RemovableStoragePolicyTriggered"
 | extend parsed=parse_json(AdditionalFields)
@@ -315,9 +311,32 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
+```kusto
+//RemovableStorageFileEvent: event triggered by File level enforcement, information of files written to removable storage 
+DeviceEvents
+| where ActionType contains "RemovableStorageFileEvent"
+| extend parsed=parse_json(AdditionalFields)
+| extend Policy = tostring(parsed.Policy) 
+| extend PolicyRuleId = tostring(parsed.PolicyRuleId) 
+| extend MediaClassName = tostring(parsed.ClassName)
+| extend MediaInstanceId = tostring(parsed.InstanceId)
+| extend MediaName = tostring(parsed.MediaName)
+| extend MediaProductId = tostring(parsed.ProductId) 
+| extend MediaVendorId = tostring(parsed.VendorId) 
+| extend MediaSerialNumber = tostring(parsed.SerialNumber) 
+| extend DuplicatedOperation = tostring(parsed.DuplicatedOperation)
+| extend FileEvidenceLocation = tostring(parsed.TargetFileLocation) 
+| project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, 
+    ActionType, Policy, PolicyRuleId, DuplicatedOperation, 
+    MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber,
+    FileName, FolderPath, FileSize, FileEvidenceLocation,
+    AdditionalFields
+| order by Timestamp desc
+```
+    
 :::image type="content" source="images/block-removable-storage.png" alt-text="Écran illustrant le blocage du stockage amovible.":::
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="what-is-the-removable-storage-media-limitation-for-the-maximum-number-of-usbs"></a>Quelle est la limite du support de stockage amovible pour le nombre maximal de objets de première utilisation ?
 

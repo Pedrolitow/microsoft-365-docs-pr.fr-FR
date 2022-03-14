@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/07/2022
+ms.date: 03/14/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: e19b6400643b29005a6c92323f58f7dc996db49e
-ms.sourcegitcommit: ad6d9fd5ad050c72622a32a191997fe6d7b2deee
+ms.openlocfilehash: 2f6f2135e81bf99f6391b75067ad89d1af3a712c
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63353900"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468707"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 
@@ -42,7 +42,7 @@ Le Antivirus Microsoft Defender à jour est essentiel pour garantir que vos appa
 
 ## <a name="security-intelligence-updates"></a>Mises à jour de l’intelligence de la sécurité
 
-Antivirus Microsoft Defender utilise la protection fournie par le [cloud](cloud-protection-microsoft-defender-antivirus.md) (également appelée Microsoft Advanced Protection Service ou MAPS) et télécharge régulièrement les mises à jour de l’intelligence de sécurité pour fournir une protection.
+Antivirus Microsoft Defender utilise la protection fournie par le [cloud](cloud-protection-microsoft-defender-antivirus.md) (également appelée Microsoft Advanced Protection Service ou MAPS) et télécharge régulièrement les mises à jour dynamiques de l’intelligence de sécurité pour fournir une protection supplémentaire. Ces mises à jour dynamiques ne prennent pas la place de mises à jour d’informations de sécurité régulières via la mise à jour de l’intelligence de sécurité KB2267602.
 
 > [!NOTE]
 > Les mises à jour sont publiées sous les Ko suivants :

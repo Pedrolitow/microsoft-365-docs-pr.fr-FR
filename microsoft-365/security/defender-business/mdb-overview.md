@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/09/2022
+ms.date: 03/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 17f4ad39c89aa6990ec041e975a257fdab513d20
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 6db82c1dcc9afceebcb9fff891cb90ddafa95f21
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450040"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468721"
 ---
 # <a name="overview-of-microsoft-defender-for-business"></a>Vue d’ensemble de Microsoft Defender pour les entreprises
 
@@ -53,7 +53,7 @@ Avec Defender entreprise, vous pouvez protéger les appareils et les données ut
 
 - **Solution de sécurité facile à utiliser**. Defender for Business offre des expériences simplifiées qui vous guident vers des actions avec des recommandations et des informations sur la sécurité de vos points de terminaison. Aucune connaissance spécialisée n’est requise, car Defender entreprise offre une configuration pilotée par l’Assistant et des stratégies de sécurité par défaut conçues pour aider à protéger les appareils de votre organisation dès le premier jour.
 
-- **Flexibilité pour votre environnement**. Defender pour les entreprises peut travailler avec votre environnement d’entreprise, que vous utilisiez Microsoft Cloud, une technologie sur site ou des solutions de productivité autres que Microsoft. Defender for Business fonctionne avec des composants intégrés à Windows et avec des applications pour les appareils macOS, iOS et Android.
+- **Flexibilité pour votre environnement**. Defender pour les entreprises peut travailler avec votre environnement d’entreprise, que vous utilisiez Microsoft Intune ou que vous débutiez dans Microsoft Cloud. Defender for Business fonctionne avec des composants intégrés à Windows et avec des applications pour les appareils macOS, iOS et Android.
 
 - **Intégration à Microsoft 365 Lighthouse**. Si vous êtes un fournisseur de services gérés (MSP) qui utilise [Microsoft 365 Lighthouse,](../../lighthouse/m365-lighthouse-overview.md) d’autres fonctionnalités sont disponibles. Si vos clients utilisent Microsoft 365 Business Premium avec Defender pour les entreprises, vous pouvez afficher les incidents de sécurité et les alertes entre les clients qui sont intégrés à Microsoft 365 Lighthouse.
 
