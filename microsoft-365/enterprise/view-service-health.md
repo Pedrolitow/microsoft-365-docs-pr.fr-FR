@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Afficher l’état d’intégrité des services Microsoft 365 avant de contacter le support technique pour vérifier qu’aucune interruption de service n’est en cours.
-ms.openlocfilehash: d5af62bd31bc5fe6c3a3f04657d6cf0ea6083eaa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4a72132872c890f755cb537e06c42412aa17fb9f
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166789"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468773"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Comment vérifier l’intégrité du service Microsoft 365
 
@@ -48,7 +48,7 @@ Si vous ne parvenez pas à vous connecter au Centre d’administration, vous pou
     > [!NOTE]
     > Les personnes qui se voient attribuer le rôle d’administrateur général ou d’administrateur du support technique peuvent afficher l’intégrité du service. Pour afficher l’état du service, les administrateurs Exchange, SharePoint et Skype Entreprise doivent aussi disposer d’un rôle d’administrateur portant sur ce service. Pour plus d’informations sur les rôles qui peuvent afficher l’intégrité du service, consultez [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles).
 
-2. Pour ouvrir l’état du service, dans le Centre d’administration, accédez à **État** > **État du service** ou cliquez sur la carte **État du service** dans le **tableau de bord d’accueil**. La carte du tableau de bord indique s'il existe un problème lié au service actif et mène à la page détaillée d'**état du service**.
+2. Pour afficher la santé du service, dans la navigation de gauche du centre d'administration, allez à **Santé** > **Santé du service**, ou sélectionnez la carte **Santé du service** sur le **tableau de bord d'accueil**. La carte du tableau de bord indique s'il existe un problème lié au service actif et mène à la page détaillée d'**état du service**.
 
 3. Dans la page d’**intégrité du service**, l’état d’intégrité de chaque service cloud est affiché dans un format de tableau.
 
