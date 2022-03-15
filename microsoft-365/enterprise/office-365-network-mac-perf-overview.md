@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Vue d’ensemble de la connectivité réseau dans le centre Administration Microsoft 365 de connexion
-ms.openlocfilehash: 3a0f2b8d54c90884a79e79288d173aa5e17c0ef2
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: c2f44ba97cb3d70dbe065df4a5b631f569460bff
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450313"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494539"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Connectivité réseau dans le centre Administration Microsoft 365 de connexion
 
@@ -39,13 +39,11 @@ Le Administration Microsoft 365 inclut désormais des mesures de connectivité r
 
 Lorsque vous accédez pour la première fois à la page de performances réseau, vous devez configurer vos emplacements pour voir la carte des performances globales du réseau, une évaluation réseau étendue à l’ensemble du client, le pourcentage de vos utilisateurs travaillant à distance par rapport au site, ainsi qu’une liste des problèmes actuels pour prendre des mesures et/ou pour poursuivre la recherche. À partir du volet Vue d’ensemble, vous pouvez descendre dans le volet pour afficher des mesures et des problèmes de performances réseau spécifiques par emplacement. Pour plus d’informations, [voir Vue d’ensemble des performances réseau dans Administration Microsoft 365 Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
-Vous pouvez être invité à participer à la prévisualisation publique pour cette fonctionnalité au nom de votre organisation. L’acceptation se produit généralement immédiatement, après quoi vous voyez la page de connectivité réseau.
-
 Pour accéder à la page de connectivité réseau, vous devez être administrateur de l’organisation dans Microsoft 365. Le rôle d’administration lecteur de rapports aura un accès en lecture à ces informations. Pour configurer des emplacements et d’autres éléments de connectivité réseau, un administrateur doit avoir le rôle Administrateur du support technique.
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>Conditions préalables à l’apparition des évaluations de la connectivité réseau
 
-To get started, turn on your location opt-in setting to automatically collect data from devices using Windows Location Services, go to your Locations list to add or upload location data, or run the Microsoft 365 network connectivity test from your office locations. La connectivité réseau peut être évaluée au sein de l’organisation, toute amélioration de la conception réseau devra être effectuée pour des emplacements de bureau spécifiques. Les informations de connectivité réseau sont fournies pour chaque emplacement de bureau une fois ces emplacements déterminés. Il existe trois options pour obtenir des évaluations réseau à partir de vos bureaux :
+To get started, turn on your location opt-in setting to automatically collect data from devices using Windows Location Services, go to your Locations list to add or upload location data, or run the Microsoft 365 network connectivity test from your office locations. Ces trois options pour les informations d’emplacement du bureau sont détaillées ci-dessous. La connectivité réseau peut être évaluée au sein de l’organisation, toute amélioration de la conception réseau devra être effectuée pour des emplacements de bureau spécifiques. Les informations de connectivité réseau sont fournies pour chaque emplacement de bureau une fois ces emplacements déterminés. Il existe trois options pour obtenir des évaluations réseau à partir de vos bureaux :
 
 ### <a name="1-enable-windows-location-services"></a>1. Activer les services Windows localisation
 
@@ -91,9 +89,6 @@ Les échantillons de mesure et les emplacements de bureau doivent commencer à a
 **Les évaluations réseau** regroupent de nombreuses mesures de performances réseau dans un instantané de l’état de votre réseau d’entreprise, représenté par une valeur de points de 0 à 100. Les évaluations réseau sont limitées à l’ensemble du client et à chaque emplacement géographique à partir duquel les utilisateurs se connectent à votre client, ce qui permet aux administrateurs Microsoft 365 de saisir instantanément un gestalt de l’état du réseau de l’entreprise et d’obtenir rapidement un rapport détaillé pour n’importe quel emplacement de bureau global.
 
 Les entreprises complexes avec plusieurs bureaux et des architectures de périmètre réseau non triviales peuvent tirer parti de ces informations lors de leur intégration initiale à Microsoft 365 ou pour résoudre les problèmes de performances réseau détectés avec la croissance de l’utilisation. Cela n’est généralement pas nécessaire pour les petites entreprises utilisant Microsoft 365 ou les entreprises qui ont déjà une connectivité réseau simple et directe. Les entreprises de plus de 500 utilisateurs et de plusieurs bureaux devraient en tirer le meilleur parti.
-
->[!IMPORTANT]
->Les informations sur le réseau, les recommandations en matière de performances et les évaluations dans le Centre Administration Microsoft 365 sont actuellement en état de prévisualisation et sont uniquement disponibles pour les locataires Microsoft 365 qui ont été inscrits au programme d’aperçu des fonctionnalités.
 
 ## <a name="enterprise-network-connectivity-challenges"></a>Enterprise de connectivité réseau
 
@@ -218,7 +213,7 @@ La Microsoft 365 service frontal est un point d’entrée sur le réseau mondial
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>Qu’est-ce qu’une Microsoft 365 service frontal optimale ?
 
-Une porte d Microsoft 365 service optimale est celle qui est la plus proche de la sortie de votre réseau, généralement dans votre ville ou votre région. Utilisez l Microsoft 365 de test de connectivité [(prévisualisation)](office-365-network-mac-perf-onboarding-tool.md) pour déterminer l’emplacement de votre Microsoft 365 service en cours d’utilisation et la porte d’entrée de service optimale. Si l’outil détermine que votre porte frontale en cours d’utilisation est optimale, vous vous connectez de manière optimale au réseau global de Microsoft.
+Une porte d Microsoft 365 service optimale est celle qui est la plus proche de la sortie de votre réseau, généralement dans votre ville ou votre région. Utilisez l [Microsoft 365 de test](office-365-network-mac-perf-onboarding-tool.md) de connectivité pour déterminer l’emplacement de votre Microsoft 365 service en cours d’utilisation et la porte d’entrée de service optimale. Si l’outil détermine que votre porte frontale en cours d’utilisation est optimale, vous vous connectez de manière optimale au réseau global de Microsoft.
 
 ### <a name="what-is-an-internet-egress-location"></a>Qu’est-ce qu’un emplacement de sortie Internet ?
 

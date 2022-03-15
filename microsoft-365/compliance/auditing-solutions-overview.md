@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Découvrez comment auditer les activités des utilisateurs et administrateurs de votre organisation Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff7a456317827fc629d4e704037ad7586bad9f0d
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 92fb008e7fe03b4871b8838d78965c1508a20fdc
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221363"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494525"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Audit de solutions dans Microsoft 365
 
@@ -65,7 +65,7 @@ L’Audit avancé s’appuie sur les fonctionnalités de l’audit de base en fo
 
 - **Rétention plus longue des enregistrements d’audit**. Les enregistrements d'audit Exchange, SharePoint et Azure Active Directory sont conservés par défaut pendant un an. Par défaut, les enregistrements d’audit pour toutes les autres activités sont conservés pendant 90 jours. Vous pouvez utiliser des stratégies de rétention du journal d’audit pour configurer des périodes de rétention plus longues.
 
-- **Événements d’audit avancé importants et essentiels**. Des enregistrements d’audit pour des événements essentiels peuvent aider votre organisation à mener des recherches de sécurité et de conformité en fournissant une visibilité à des événements tels que le moment où les éléments de courrier ont été accédés, ou les moments où des éléments de courrier ont été répondus et envoyés, ou quand et ce qu’un utilisateur a recherché dans Exchange Online et SharePoint Online. Ces événements importants peuvent vous aider à identifier les violations possibles et déterminer l’étendue de la compromission.
+- **Événements d’audit avancé essentiels et importants** les enregistrements d’audit pour des événements essentiels peuvent aider votre organisation à mener des recherches de sécurité et de conformité en fournissant une visibilité à des événements tels que le moment où les éléments de courrier ont été accédés, ou les moments où des éléments de courrier ont été répondus et envoyés, ou quand et ce qu’un utilisateur a recherché dans Exchange Online et SharePoint Online. Ces événements essentiels peuvent vous permettre d’identifier des violations possibles et de déterminer l’étendue de la compromission.
 
 - **Bande passante supérieure à l’API Activité de gestion Office 365**. L’audit avancé offre aux organisations davantage de bande passante pour accéder aux journaux d’audit via l’API Activité de gestion Office 365. Si toutes les organisations (qui disposent d'un audit de base ou d'un audit avancé) se voient initialement attribuer une base de référence de 2 000 demandes par minute, cette limite augmentera de manière dynamique en fonction du nombre de sièges de l'organisation et de son abonnement aux licences. Ainsi, les organisations disposant d'un Audit avancé obtiennent environ deux fois plus de bande passante que les organisations disposant d'un audit de base.
 
@@ -98,6 +98,8 @@ Les sections suivantes identifient les licences requises pour l’Audit de base 
 
 ### <a name="basic-audit"></a>Audit de base
 
+- Abonnement Microsoft 365 Business Basic
+- Abonnement Microsoft 365 Apps for business
 - Abonnement Microsoft 365 Entreprise E3
 - Microsoft 365 Business Premium
 - Abonnement Microsoft 365 Éducation A3

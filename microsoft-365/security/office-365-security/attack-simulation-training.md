@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide de la formation sur la simulation d’attaques dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 17e4bb55ee2c571c2e66b648d277f0a896551f39
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 5ce7b58410ea53e4f11d746ebc4583b125f1ade6
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419359"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494427"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Simuler une attaque par hameçonnage avec une formation de simulation d’attaque dans Defender pour Office 365
 
@@ -249,7 +249,7 @@ Les pages d’accueil organisées par Microsoft sont disponibles en 12 langues :
 - **Sélectionnez la préférence de page d’accueil** : les valeurs disponibles sont les suivantes :
   - **Utilisez la page d’accueil par** défaut de Microsoft : il s’agit de la valeur par défaut à configurer avec les options suivantes :
     - **Sélectionnez la mise en page d’accueil** : sélectionnez l’un des modèles disponibles.
-    - **Ajouter le logo** : cliquez **sur Parcourir** pour rechercher et sélectionner un .png, .jpeg ou .gif fichier. Pour supprimer le logo, cliquez sur **Supprimer**.
+    - **Ajouter le logo** : cliquez **sur Parcourir** pour rechercher et sélectionner un .png, .jpeg ou .gif fichier. La taille du logo doit être de 210 x 70 au maximum pour éviter toute distorsion. Pour supprimer le logo, cliquez sur **Supprimer**.
     - **Ajouter des indicateurs de charge utile** à l’e-mail : ce paramètre n’est pas disponible  si vous avez précédemment sélectionné une pièce jointe anti-programme malveillant ou un lien vers un programme malveillant dans la page [Sélectionner une technique](#select-a-social-engineering-technique).
 
     Vous pouvez afficher un aperçu des résultats en cliquant sur le bouton Ouvrir le panneau **d’aperçu** en bas de la page.

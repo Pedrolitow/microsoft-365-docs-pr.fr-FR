@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 08ab4e4e0d85dec56de8285659cead3e1dfcb468
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3fdab6896edf704c4daa83ec993c0716c54d0f43
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321332"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494567"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de sécurité de messagerie dans le portail Microsoft 365 Defender messagerie
 
@@ -34,15 +34,37 @@ ms.locfileid: "63321332"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-De nombreux rapports sont disponibles sur le portail Microsoft 365 Defender <https://security.microsoft.com> pour vous aider à voir comment les fonctionnalités de sécurité du courrier électronique, telles que les fonctionnalités anti-courrier indésirable, anti-programme malveillant et chiffrement dans Microsoft 365 protègent votre organisation. Si vous avez les [autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez afficher et télécharger ces rapports comme décrit dans cet article.
+De nombreux rapports sont disponibles sur le portail Microsoft 365 Defender <https://security.microsoft.com> pour vous aider à voir comment les fonctionnalités de sécurité du courrier électronique, telles que les fonctionnalités anti-courrier indésirable et anti-programme malveillant dans Microsoft 365 protègent votre organisation. Si vous avez les [autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez afficher et télécharger ces rapports comme décrit dans cet article.
 
 > [!NOTE]
 >
 > Certains rapports de la page **rapports de collaboration & courrier** électronique nécessitent Microsoft Defender pour Office 365. Pour plus d’informations sur ces rapports, voir [View Defender pour Office 365 rapports dans le portail Microsoft 365 Defender web](view-reports-for-mdo.md).
 >
 > Les rapports liés au flux de messagerie sont désormais dans le centre Exchange’administration. Pour plus d’informations sur ces rapports, voir [Rapports de flux de messagerie dans le nouveau centre d Exchange’administration.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
+
+## <a name="email-security-report-changes-in-the-microsoft-365-defender-portal"></a>Modifications apportées au rapport de sécurité du courrier électronique dans le portail Microsoft 365 Defender messagerie
+
+Les rapports Exchange Online Protection (EOP) et Microsoft Defender pour Office 365 dans le portail Microsoft 365 Defender qui ont été remplacés, déplacés ou supprimés sont décrits dans le tableau suivant.
+
+<br>
+
+****
+
+|Rapport et cmdlets supprimés|Nouveau rapport et nouvelles cmdlets|ID du centre de messages|Date|
+|---|---|:---:|:---:|
+|**traçage d’URL** <p> Get-URLTrace|[Rapport sur la protection des URL](view-reports-for-mdo.md#url-protection-report) <p> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|Juin 2021|
+|**Rapport de courrier électronique envoyé et reçu** <p> Get-MailTrafficReport <br> Get-MailDetailReport|[Rapport sur l’état de la protection contre les menaces](#threat-protection-status-report) <br> [Rapport d’état du flux de messagerie](#mailflow-status-report) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|Juin 2021|
+|**Rapport de forwarding** <p> aucune cmdlet|[Rapport sur les messages transmis automatiquement dans le EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) <p> aucune cmdlet|MC250533|Juin 2021|
+|**Coffre types de fichiers pièces jointes** <p> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Rapport d’état de la protection contre les menaces : afficher les données par courrier électronique malveillant \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|Juin 2021|
+|**Coffre de disposition des messages de pièces jointes** <p> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Rapport d’état de la protection contre les menaces : afficher les données par courrier électronique malveillant \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|Juin 2021|
+|**Programmes malveillants détectés dans le rapport de courrier électronique** <p> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[Rapport d’état de la protection contre les menaces : afficher les données par courrier électronique malveillant \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|Juin 2021|
+|**Rapport de détection du courrier indésirable** <p> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[Rapport d’état de la protection contre les menaces : afficher les données par courrier \> indésirable](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|Octobre 2021|
+|Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|TBA|Mai 2022|
+|**Exchange de règles de transport** <p> Get-MailTrafficPolicyReport <br> Get-MailDetailTransportRuleReport|[Exchange de règles de transport dans le EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> aucune cmdlet|MC316157|Avril 2022|
+|Get-MailTrafficTopReport|[Rapport d’état de la protection contre les menaces : afficher les données par courrier électronique malveillant \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <p> **Remarque** : il n’existe aucun remplacement pour les fonctionnalités de rapport de chiffrement dans Get-MailTrafficTopReport.|MC315742|Avril 2022|
+|
 
 ## <a name="compromised-users-report"></a>Rapport utilisateurs compromis
 
@@ -175,12 +197,12 @@ Dans la page **Rapport d’état du flux de** messagerie, l’onglet **Type** es
 Le tableau de détails sous le graphique présente les informations suivantes :
 
 - **Direction**
-- **Type (Type)**
+- **Type**
 - **24 heures**
 - **3 jours**
 - **7 jours**
 - **15 jours**
-- **30 jours**
+- **30 jours**
 
 Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Filtrer** et en sélectionnant une ou plusieurs des valeurs suivantes dans le volant qui s’affiche :
 
@@ -786,7 +808,7 @@ Dans le tableau de détails sous le graphique, les informations suivantes sont d
 - **Nom de fichier des pièces jointes**
 - **Charge de travail**
 - **Technologie de détection**
-- **La taille des fichiers**
+- **Taille du fichier**
 - **Dernier utilisateur en cours de modification**
 
 Si vous cliquez **sur Filtre**, les filtres suivants sont disponibles :

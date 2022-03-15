@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 offre trois outils eDiscovery que vous pouvez utiliser pour rechercher et exporter du contenu trouvé dans différents emplacements tels que les boîtes aux lettres Exchange, les sites SharePoint et OneDrive Entreprise, les groupes Microsoft 365, Microsoft Teams et Skype Entreprise conversations. Core eDiscovery et Advanced eDiscovery de nombreuses fonctionnalités supplémentaires pour vous aider à gérer vos enquêtes.
-ms.openlocfilehash: b6a6ea04c4ebfa65fae192654d1cdf16873d3a77
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: e92619ff0ecbfcdbdf1a7f41eb4cd35282a6f2d9
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903774"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494511"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Solutions eDiscovery dans Microsoft 365
 
-La découverte électronique, ou eDiscovery, est le processus d'identification et de livraison d'informations électroniques qui peuvent être utilisées comme preuves dans des affaires juridiques. Vous pouvez utiliser les outils eDiscovery dans Microsoft 365 pour rechercher du contenu dans Exchange Online, OneDrive Entreprise, SharePoint Online, Microsoft Teams, Microsoft 365 Groupes et Yammer équipes. Vous pouvez rechercher des boîtes aux lettres et des sites dans la même recherche eDiscovery, puis exporter les résultats de la recherche. Vous pouvez utiliser les cas eDiscovery principaux pour identifier, conserver et exporter le contenu trouvé dans les boîtes aux lettres et les sites. Si votre organisation dispose d’un abonnement Office 365 E5 ou Microsoft 365 E5 (ou d’abonnements de modules supplémentaires E5 associés), vous pouvez gérer davantage les dépositaires et analyser le contenu à l’aide de la solution Advanced eDiscovery riche en fonctionnalités dans Microsoft 365.
+La découverte électronique, ou eDiscovery, est le processus d'identification et de livraison d'informations électroniques qui peuvent être utilisées comme preuves dans des affaires juridiques. Vous pouvez utiliser les outils eDiscovery dans Microsoft 365 pour rechercher du contenu dans Exchange Online, OneDrive Entreprise, SharePoint Online, Microsoft Teams, Microsoft 365 Groupes et Yammer équipes. Vous pouvez rechercher des boîtes aux lettres et des sites dans la même recherche eDiscovery, puis exporter les résultats de la recherche. Vous pouvez utiliser les cas eDiscovery principaux pour identifier, conserver et exporter le contenu trouvé dans les boîtes aux lettres et les sites. Si votre organisation dispose d’un abonnement Office 365 E5 ou Microsoft 365 E5 (ou d’abonnements de modules supplémentaires E5 associés), vous pouvez gérer davantage les dépositaires et analyser le contenu à l’aide de la solution Advanced eDiscovery enrichie en fonctionnalités dans Microsoft 365.
 
 ## <a name="ediscovery-solutions"></a>Solutions eDiscovery
 
@@ -45,7 +45,7 @@ Microsoft 365 propose trois solutions eDiscovery : la recherche de contenu, core
 
 ## <a name="comparison-of-key-capabilities"></a>Comparaison des principales fonctionnalités
 
-Le tableau suivant compare les principales fonctionnalités disponibles dans la recherche de contenu, la découverte électronique principale et Advanced eDiscovery.
+Le tableau suivant compare les principales fonctionnalités disponibles dans la recherche de contenu, core eDiscovery et Advanced eDiscovery.
 
 |Fonctionnalité|Recherche de contenu|Core eDiscovery|Advanced eDiscovery|
 |:------|:-------------|:-------------|:-------------|
@@ -84,7 +84,7 @@ Voici une description de chaque fonctionnalité eDiscovery.
 
 - **Exporter les résultats de recherche**. Exporter les résultats de la recherche vers un ordinateur local de votre organisation en deux étapes. Lorsque vous exportez des résultats de recherche, les éléments sont copiés à partir de leur emplacement de contenu d’origine dans Microsoft 365 vers un emplacement de recherche fourni stockage Azure Microsoft. Vous pouvez ensuite télécharger ces éléments sur un ordinateur local.
 
-- **Autorisations basées sur les rôles**. Utilisez les autorisations d’accès basé sur un rôle (RBAC) pour contrôler les tâches liées à la découverte électronique que différents utilisateurs peuvent effectuer. Vous pouvez utiliser des groupes de rôles eDiscovery intégrés ou créer des groupes de rôles personnalisés qui attribuent des autorisations eDiscovery spécifiques.
+- **Autorisations basées sur les rôles**. Utilisez les autorisations d’accès basé sur un rôle (RBAC) pour contrôler les tâches liées à la découverte électronique que différents utilisateurs peuvent effectuer. Vous pouvez utiliser un groupe de rôles eDiscovery intégré ou créer des groupes de rôles personnalisés qui attribuent des autorisations eDiscovery spécifiques.
 
 - **Gestion des cas**. Les cas eDiscovery dans core eDiscovery et Advanced eDiscovery vous permet d’associer des recherches et des exportations spécifiques à un examen spécifique. Vous pouvez également affecter des membres à un cas pour contrôler qui peut accéder au cas et afficher le contenu du cas.
 
@@ -116,7 +116,7 @@ Voici une description de chaque fonctionnalité eDiscovery.
 
 - **Modèles de codage prédictifs**. Utilisez des modèles de codage prédictif pour réduire et réduire les volumes importants de contenu de cas à un ensemble pertinent d’éléments que vous pouvez hiérarchiser pour révision. Pour ce faire, vous devez créer et former vos propres modèles de codage prédictifs qui vous permettent de hiérarchiser l’examen des éléments les plus pertinents d’un jeu à réviser. Le système utilise la formation pour appliquer des scores de prédiction à chaque élément du jeu à réviser. Cela vous permet de filtrer les éléments en fonction du score de prédiction, ce qui vous permet d’examiner d’abord les éléments les plus pertinents (ou non pertinents).
 
-- **Métadonnées de document calculées**. De nombreuses fonctionnalités Advanced eDiscovery, telles que l’indexation avancée, le thread de conversation, l’analyse et le codage prédictif, ajoutent des propriétés de métadonnées pour réviser les documents. Ces métadonnées contiennent des informations relatives à la fonction exécutée par une fonctionnalité spécifique. Lorsque vous examinez des documents, vous pouvez filtrer sur les propriétés de métadonnées pour afficher les documents qui correspondent à vos critères de filtre. Ces métadonnées peuvent être importées dans des applications de révision tierces après l’exportation des documents des ensembles de révision.
+- **Métadonnées de document calculées**. De nombreuses fonctionnalités Advanced eDiscovery, telles que l’indexation avancée, le thread de conversation, l’analyse et le codage prédictif, ajoutent des propriétés de métadonnées pour passer en revue les documents. Ces métadonnées contiennent des informations relatives à la fonction exécutée par une fonctionnalité spécifique. Lorsque vous examinez des documents, vous pouvez filtrer sur les propriétés de métadonnées pour afficher les documents qui correspondent à vos critères de filtre. Ces métadonnées peuvent être importées dans des applications de révision tierces après l’exportation des documents des ensembles de révision.
 
 - **Transparence des travaux de longue durée**. Les travaux dans Advanced eDiscovery sont généralement des processus de longue durée qui sont déclenchés par des actions de l’utilisateur, telles que l’ajout de dépositaires à un cas, l’ajout de contenu à un jeu à réviser, l’exécution de l’analyse et la formation des modèles de codage prédictif. Vous pouvez suivre l’état de ces travaux et obtenir des informations de support si vous devez faire passer les problèmes au support MS.
 
@@ -124,7 +124,7 @@ Voici une description de chaque fonctionnalité eDiscovery.
 
 ## <a name="ediscovery-subscription-comparison"></a>Comparaison des abonnements eDiscovery
 
-Les sections suivantes indiquent les exigences d’abonnement minimales pour la recherche de contenu, la découverte électronique principale et les Advanced eDiscovery. Les abonnements qui la prise en charge de core eDiscovery prisent également en charge la recherche de contenu. Les abonnements qui Advanced eDiscovery également la recherche de contenu et core eDiscovery.
+Les sections suivantes indiquent les exigences d’abonnement minimales pour la recherche de contenu, la découverte électronique principale et les Advanced eDiscovery. Les abonnements qui la prise en charge de core eDiscovery prisent également en charge la recherche de contenu. Les abonnements qui Advanced eDiscovery également la recherche de contenu et la découverte électronique principale.
 
 ### <a name="content-search"></a>Recherche de contenu
 
@@ -132,6 +132,8 @@ Les sections suivantes indiquent les exigences d’abonnement minimales pour la 
 - Microsoft 365 abonnement G1
 - Microsoft 365 F1 abonnement F3, ou module de sécurité F5
 - Microsoft 365 Business Premium abonnement
+- Microsoft 365 Business Standard
+- Microsoft 365 Business Basic
 - Abonnement Office 365 Éducation A1
 - Office 365 E1 abonnement
 
@@ -141,7 +143,7 @@ Les sections suivantes indiquent les exigences d’abonnement minimales pour la 
 - Microsoft 365 E3 abonnement
 - Microsoft 365 G3 abonnement
 - Microsoft 365 Business Premium abonnement
-- Microsoft 365 de conformité F5 ou du module & conformité F5
+- Microsoft 365 de conformité F5 ou de conformité F5 & conformité F5
 - Microsoft 365 Éducation abonnement A3 ou Office 365 Éducation A3
 - Office 365 E3 abonnement
 
@@ -153,7 +155,7 @@ Les sections suivantes indiquent les exigences d’abonnement minimales pour la 
 - Microsoft 365 abonnement G5
 - Microsoft 365 abonnement G5 avec le module de conformité G5
 - Microsoft 365 abonnement G5 avec la découverte électronique G5 et le module d’audit
-- Microsoft 365 de conformité F5 ou du module & conformité F5
+- Microsoft 365 de conformité F5 ou de conformité F5 & conformité F5
 - Microsoft 365 Éducation abonnement A5 ou Office 365 Éducation A5
 
 ## <a name="get-started-with-ediscovery"></a>Mise en place d’eDiscovery

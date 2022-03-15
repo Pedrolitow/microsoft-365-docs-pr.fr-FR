@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des simulations automatisées qui contiennent des techniques et des charges utiles spécifiques qui se lancent lorsque les conditions spécifiées sont remplies dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 47732960ad5fac9884f388836ea23a2b9283c93c
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 029dce5b7f0b5c6e62b064aa9155d7b07c6a80d7
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419345"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63495023"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatisations de simulation pour la formation à la simulation d’attaques
 
@@ -247,7 +247,7 @@ Dans la **page d’accueil** , vous configurez la page web vers qui l’utilisat
     Vous devez configurer les paramètres supplémentaires suivants sur la **page d’accueil** :
 
     - **Sélectionnez la mise en page d’accueil** : sélectionnez l’un des 5 modèles de page d’accueil disponibles.
-    - **Ajouter un logo** : cliquez sur **Parcourir** pour rechercher et sélectionner un fichier .png, .jpeg ou .gif à ajouter à toutes les charges utiles sélectionnées par Microsoft. Pour supprimer le logo, cliquez sur **Supprimer**.
+    - **Ajouter un logo** : cliquez sur **Parcourir** pour rechercher et sélectionner un fichier .png, .jpeg ou .gif à ajouter à toutes les charges utiles sélectionnées par Microsoft. La taille du logo doit être de 210 x 70 au maximum pour éviter toute distorsion. Pour supprimer le logo, cliquez sur **Supprimer**.
     - **Indicateurs de charge utile** : ce paramètre n’est pas disponible si vous  avez précédemment  sélectionné une pièce jointe anti-programme malveillant ou un lien vers un programme malveillant dans la page Sélectionner des techniques d’ingénierie [sociale](#select-one-or-more-social-engineering-techniques).
 
       **Sélectionnez Ajouter des indicateurs de charge utile à la messagerie pour** aider les utilisateurs à découvrir comment identifier les messages d’hameçonnage.

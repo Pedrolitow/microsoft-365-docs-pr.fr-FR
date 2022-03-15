@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer automatiquement des documents et d’autres contenus à l’aide de l’assembly de contenu dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: f2e8c601e8a7242524cb323d099975f6600cce05
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 240b67ea2ca8c1119654096c365e958995e9c946
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318884"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494553"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Créer des documents à l’aide de l’assembly de contenu dans Microsoft SharePoint Syntex
 
@@ -62,6 +62,9 @@ Suivez ces étapes pour créer un modèle moderne.
 
    - [Entrer du texte ou sélectionner une date](#associate-a-placeholder-by-entering-text-or-selecting-a-date)
    - [Sélection parmi les choix dans une colonne d’une liste ou d’une bibliothèque](#associate-a-placeholder-by-selecting-from-choices-in-a-column-of-a-list-or-library)
+
+   > [!NOTE]
+   > Actuellement, vous ne pouvez pas ajouter d’espaces réservé à une cellule de tableau ou dans un tableau.   
 
 ### <a name="associate-a-placeholder-by-entering-text-or-selecting-a-date"></a>Associer un espace réservé en entrant du texte ou en sélectionnant une date 
 

@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 de test de connectivité réseau
-ms.openlocfilehash: 602ab10c9741126360861586776863cb43ce162e
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 8704da93d8f7ec95460ae5a275289176bccb0c22
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806203"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494497"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365 de test de connectivité réseau
 
@@ -36,13 +36,13 @@ L Microsoft 365 de test de connectivité réseau se trouve à l’emplacement .<
 
 Les informations réseau dans le centre Administration Microsoft 365 sont basées sur des mesures régulières dans le produit pour votre client Microsoft 365, agrégées chaque jour. En comparaison, les informations réseau du test Microsoft 365 de connectivité réseau sont exécutés localement dans l’outil.
 
-Les tests dans le produit sont limités et l’exécution de tests locaux pour l’utilisateur collecte davantage de données, ce qui donne des informations plus approfondies. Les informations réseau dans le centre Administration Microsoft 365 montrent qu’il existe un problème de réseau à un emplacement de bureau spécifique. Le test Microsoft 365 de connectivité peut aider à identifier la cause première de ce problème et à fournir une action d’amélioration des performances ciblée.
+Les tests dans le produit sont limités et l’exécution de tests locaux pour l’utilisateur collecte davantage de données, ce qui donne des informations plus approfondies. Les informations réseau du Centre Administration Microsoft 365 montrent qu’il existe un problème de réseau à un emplacement de bureau spécifique. Le test Microsoft 365 de connectivité peut aider à identifier la cause première de ce problème et à fournir une action d’amélioration des performances ciblée.
 
-Nous vous recommandons d’utiliser ces informations ensemble, où l’état de la qualité de la mise en réseau peut être évalué pour chaque emplacement de bureau dans le Centre Administration Microsoft 365 et des informations plus spécifiques peuvent être trouvées après le déploiement des tests basés sur le test de connectivité Microsoft 365.
+Nous vous recommandons d’utiliser ces informations ensemble, où l’état de la qualité réseau peut être évalué pour chaque emplacement de bureau dans le Centre Administration Microsoft 365 et des informations plus spécifiques peuvent être trouvées après le déploiement des tests basés sur le test de connectivité Microsoft 365.
 
 ## <a name="what-happens-at-each-test-step"></a>Que se passe-t-il à chaque étape de test ?
 
-### <a name="office-location-identification"></a>Office d’emplacement
+### <a name="office-location-identification"></a>Office’emplacement
 
 Lorsque vous cliquez sur le *bouton Exécuter le test* , nous montrons la page de test en cours d’exécution et identifions l’emplacement du bureau. Vous pouvez taper votre emplacement par ville, état et pays ou choisir de le détecter pour vous. Si vous détectez l’emplacement du bureau, l’outil demande la latitude et la longitude au navigateur web et limite la précision à 300 mètres sur 300 mètres avant d’être utilisé. Il n’est pas nécessaire d’identifier l’emplacement plus précisément que le bâtiment pour mesurer les performances du réseau.
 
@@ -52,7 +52,7 @@ Après l’identification de l’emplacement du bureau, nous  exécuterons un te
 
 ### <a name="download-the-advanced-tests-client-application"></a>Télécharger l’application cliente de tests avancés
 
-Ensuite, nous commençons le téléchargement de l’application cliente de tests avancés. Nous dépendons de l’utilisateur pour lancer l’application cliente et .NET Core doit également être installé.
+Ensuite, nous commençons le téléchargement de l’application cliente de tests avancés. Nous dépendons de l’utilisateur pour lancer l’application cliente et .NET 6.0 Runtime doit également être installé.
 
 Le test de connectivité réseau Microsoft 365 se déroule en deux parties : le site <https://connectivity.office.com> web et une application cliente Windows téléchargeable qui exécute des tests de connectivité réseau avancés. La plupart des tests nécessitent l’application à exécuter. Il remplit de nouveau les résultats dans la page web au cours de son application.
 
@@ -97,7 +97,7 @@ Vous pouvez partager votre rapport de test avec n’importe qui en donnant accè
 
 ## <a name="network-connectivity-test-results"></a>Résultats des tests de connectivité réseau
 
-Les résultats sont affichés dans les **onglets Résumé** **et** Détails. L’onglet résumé présente une carte du périmètre réseau détecté et une comparaison de l’évaluation réseau avec d’autres Microsoft 365 à proximité. Il permet également le partage du rapport de test. Voici à quoi ressemble l’affichage des résultats récapitulatifs :
+Les résultats sont affichés dans les **onglets Résumé** **et** Détails. L’onglet résumé présente une carte du périmètre réseau détecté et une comparaison de l’évaluation du réseau avec d’autres Microsoft 365 à proximité. Il permet également le partage du rapport de test. Voici à quoi ressemble l’affichage des résultats récapitulatifs :
 
 > [!div class="mx-imgBorder"]
 > ![Résultats récapitulatifs de l’outil de test de connectivité réseau.](../media/m365-mac-perf/m365-mac-perf-summary-page.png)
@@ -169,11 +169,11 @@ Cette section présente les résultats des tests liés aux Exchange Online.
 
 #### <a name="exchange-service-front-door-location"></a>Exchange l’emplacement de la porte d’entrée du service
 
-La porte d’entrée du service Exchange en cours d’utilisation est identifiée de la même manière que Outlook et nous mesureons la latence TCP du réseau à partir de l’emplacement de l’utilisateur. La latence TCP est affichée et la porte d’Exchange service en cours d’utilisation est comparée à la liste des meilleures portes d’entrée de service pour l’emplacement actuel. Il s’agit d’une information réseau si l’une des meilleures Exchange service frontal(s) n’est pas en cours d’utilisation.
+La porte d’entrée du service Exchange en cours d’utilisation est identifiée de la même manière que Outlook et nous mesureons la latence TCP du réseau à partir de l’emplacement de l’utilisateur. La latence TCP est affichée et la porte d’Exchange service en cours d’utilisation est comparée à la liste des meilleures portes d’entrée de service pour l’emplacement actuel. Il s’agit d’une information réseau si l’une des meilleures Exchange service frontal n’est pas en cours d’utilisation.
 
 L’utilisation de l’une des meilleures porte d’entrée du service Exchange peut être causée par une rétrograder du réseau avant la sortie du réseau d’entreprise, auquel cas nous recommandons une sortie locale et directe du réseau. Cela peut également être dû à l’utilisation d’un serveur de résolution récursif DNS distant, auquel cas nous vous recommandons d’aligner le serveur de résolution récursif DNS avec la sortie réseau.
 
-Nous calculons une amélioration potentielle de la latence TCP (ms) sur le Exchange frontal du service. Pour ce faire, il s’agit de la latence du réseau d’emplacements du bureau de l’utilisateur testée et de la soustraction de la latence du réseau de l’emplacement actuel aux Exchange le service frontal. La différence représente l’opportunité potentielle d’amélioration.
+Nous calculons une amélioration potentielle de la latence TCP (ms) sur le Exchange frontal du service. Pour ce faire, il s’agit de la latence du réseau d’emplacements du bureau de l’utilisateur testée et de la soustraction de la latence du réseau de l’emplacement actuel aux Exchange frontal du service. La différence représente l’opportunité potentielle d’amélioration.
 
 #### <a name="best-exchange-service-front-doors-for-your-location"></a>Meilleure Exchange ou porte d’entrée du service pour votre emplacement
 
@@ -209,7 +209,7 @@ Cette section présente les résultats des tests liés aux Microsoft Teams.
 
 #### <a name="media-connectivity-audio-video-and-application-sharing"></a>Connectivité multimédia (audio, vidéo et partage d’application)
 
-Cela teste la connectivité UDP au Microsoft Teams service frontal. Si ce blocage est bloqué, Microsoft Teams peut toujours fonctionner à l’aide de TCP, mais l’audio et la vidéo seront altérés. En savoir plus sur ces mesures du réseau UDP, qui s’appliquent également aux Microsoft Teams qualité des médias et performances de connectivité réseau [dans Skype Entreprise Online](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance).
+Cela teste la connectivité UDP au Microsoft Teams frontal du service. Si ce blocage est bloqué, Microsoft Teams peut toujours fonctionner à l’aide de TCP, mais l’audio et la vidéo seront altérés. En savoir plus sur ces mesures du réseau UDP, qui s’appliquent également aux Microsoft Teams qualité des médias et performances de [connectivité réseau dans Skype Entreprise Online](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance).
 
 #### <a name="packet-loss"></a>Perte de paquets
 
@@ -225,7 +225,7 @@ Indique la gigue UDP mesurée, qui doit être inférieure à **30 ms**.
 
 #### <a name="connectivity"></a>Connectivité
 
-Nous testons la connectivité HTTP à partir de l’emplacement du bureau de l’utilisateur vers tous les points Microsoft 365 réseau requis. Ceux-ci sont publiés sur [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md). Un aperçu réseau est affiché pour tous les points de terminaison réseau requis, qui ne peuvent pas être connectés.
+Nous testons la connectivité HTTP à partir de l’emplacement du bureau de l’utilisateur vers tous les points de terminaison Microsoft 365 réseau requis. Ceux-ci sont publiés sur [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md). Un aperçu réseau est affiché pour tous les points de terminaison réseau requis, qui ne peuvent pas être connectés.
 
 La connectivité peut être bloquée par un serveur proxy, un pare-feu ou un autre périphérique de sécurité réseau sur le périmètre du réseau d’entreprise. La connectivité au port TCP 80 est testée avec une demande HTTP et la connectivité au port TCP 443 est testée avec une demande HTTPS. En l’absence de réponse, le nom de groupe est marqué comme un échec. S’il existe un code de réponse HTTP 407, le FQDN est marqué comme un échec. S’il existe un code de réponse HTTP 403, nous vérifions l’attribut serveur de la réponse et s’il s’agit d’un serveur proxy, nous le marquerons comme un échec. Vous pouvez simuler les tests effectués avec l Windows de ligne de commande curl.exe.
 
@@ -246,10 +246,39 @@ Une fois que vous êtes signé, vous pouvez passer en revue les rapports précé
 
 ## <a name="network-health-status"></a>État d’état du réseau
 
-Cela indique les problèmes d’état de santé importants avec le réseau mondial de Microsoft, ce qui peut avoir un impact sur Microsoft 365 clients.
+Cela indique tous les problèmes d’état d’santé importants avec le réseau mondial de Microsoft, ce qui peut avoir un impact sur Microsoft 365 clients.
 
 > [!div class="mx-imgBorder"]
 > ![État d’état du réseau.](../media/m365-mac-perf/m365-mac-perf-status-page.png)
+
+## <a name="testing-from-the-command-line"></a>Test à partir de la ligne de commande
+
+Nous fournissons un exécutable de ligne de commande qui peut être utilisé par vos outils de déploiement et d’exécution à distance et nous exécutons les mêmes tests que dans le site web de l’outil de test de connectivité réseau Microsoft 365.
+
+L’outil de test de ligne de commande peut être téléchargé ici : ![Outil de ligne de commande](https://connectivity.office.com/api/AnonymousConnectivityTest/DownloadStandAloneRichClient)
+
+Vous pouvez l’exécuter en double-cliquant sur l’exécutable dans l’Explorateur de fichiers Windows, ou vous pouvez le démarrer à partir d’une invite de commandes, ou vous pouvez le planifier avec le programmeur de tâches.
+
+La première fois que vous lancez l’exécutable, vous êtes invité à accepter le contrat de licence utilisateur final (EULA) avant d’effectuer le test. Si vous avez déjà lu et accepté le LLA, vous pouvez créer un fichier vide appelé Microsoft-365-Network-Connectivity-Test-EULA-accepted.txt dans le répertoire de travail actuel pour le processus exécutable lors de son lancement. Pour accepter le LLA, vous pouvez taper « y » et appuyer sur Entrée dans la fenêtre de ligne de commande lorsque vous y êtes invité.
+
+L’exécutable accepte un paramètre de ligne de commande de /h pour afficher un lien vers cette documentation d’aide.
+
+### <a name="results"></a>Résultats
+Les résultats sont écrits dans un fichier JSON dans un dossier appelé TestResults qui est créé dans le répertoire de travail actuel du processus, sauf s’il existe déjà. Le format de nom de fichier pour la sortie est connectivity_test_result_YYYY-MM-DD-HH-MM-SS.json. Les résultats sont dans des nodes JSON qui correspondent à la sortie affichée sur la page web pour le site web de l’outil de test Microsoft 365 connectivité réseau. Un nouveau fichier de résultats est créé chaque fois que vous l’exécutez et l’exécutable autonome ne télécharge pas les résultats vers votre client Microsoft pour les afficher dans les pages Connectivité réseau du Centre d’administration.
+
+### <a name="launching-from-windows-file-explorer"></a>Lancement à partir Windows’Explorateur de fichiers
+Vous pouvez simplement double-cliquer sur l’exécutable pour démarrer le test et une fenêtre d’invite de commandes s’affiche.
+
+### <a name="launching-from-the-command-prompt"></a>Lancement à partir de l’invite de commandes
+Dans une CMD.EXE'invite de commandes, vous pouvez taper le chemin d’accès et le nom de l’exécutable pour l’exécuter. Le nom de fichier est Microsoft.Connectivity.Test.exe
+
+### <a name="launching-from-windows-task-scheduler"></a>Lancement à partir du Windows de tâches
+Dans Windows Scheduler de tâches, vous pouvez ajouter une tâche pour lancer le test autonome exécutable. Vous devez spécifier le répertoire de travail actuel de la tâche à l’endroit où vous avez créé le fichier accepté par le CLA, car l’exécutable bloquera jusqu’à ce que le CLA soit accepté. Vous ne pouvez pas accepter de manière interactive le CLA si le processus est démarré en arrière-plan sans console.
+
+### <a name="more-details-on-the-standalone-executable"></a>Plus de détails sur l’exécutable autonome
+L’outil de ligne de commande Windows services de localisation pour rechercher les informations du pays de la ville des utilisateurs pour déterminer certaines distances. Si Windows services de localisation est désactivé dans le panneau de contrôle, les évaluations basées sur l’emplacement de l’utilisateur seront vides. Dans Windows Paramètres les « services de localisation » doivent être sur et « Laisser les applications de bureau accéder à votre emplacement » doivent également l’être.
+
+L’outil de ligne de commande tente d’installer le .NET Framework s’il n’est pas déjà installé. Il télécharge également le exécutable de test principal à partir de l Microsoft 365 de test de connectivité réseau et lance ce test.
 
 ## <a name="faq"></a>FAQ
 
@@ -257,20 +286,20 @@ Voici des réponses à certaines de nos questions fréquemment posées.
 
 ### <a name="what-is-required-to-run-the-advanced-test-client"></a>Qu’est-ce qui est requis pour exécuter le client de test avancé ?
 
-Le client de test avancé requiert .NET Core 3.1 Desktop Runtime. Si vous exécutez le client de test avancé sans celui installé, vous serez dirigé vers la page du programme d’installation [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1). N’oubliez pas d’installer Desktop Runtime et non le SDK ou le ASP.NET Core Runtime, qui sont plus haut sur la page. Les autorisations d’administrateur sur l’ordinateur sont requises pour installer .NET Core.
+Le client de test avancé nécessite .NET 6.0 Runtime. Si vous exécutez le client de test avancé sans celui installé, vous serez dirigé vers la page du programme d’installation [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime?utm_source=getdotnetcore). Assurez-vous de l’installer à partir de la colonne Exécuter les applications de bureau pour Windows. Les autorisations d’administrateur sur l’ordinateur sont requises pour installer .NET 6.0 Runtime.
 
-Le client de test avancé utilise SignalR pour communiquer avec la page web. Pour cela, vous devez vous assurer que la connectivité du port TCP 443 **connectivity.service.signalr.net** est ouverte. Cette URL n’est pas publiée <https://aka.ms/o365ip> dans la car cette connectivité n’est pas requise pour un utilisateur Microsoft 365'application cliente.
+Le client de test avancé utilise SignalR pour communiquer avec la page web. Pour cela, vous devez vous assurer que la connectivité du port TCP 443 **connectivity.service.signalr.net** est ouverte. Cette URL n’est pas publiée dans <https://aka.ms/o365ip> le parce que cette connectivité n’est pas requise pour un Microsoft 365'application cliente.
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>Qu’est-ce Microsoft 365 service frontal ?
 
-La Microsoft 365 service frontal est un point d’entrée sur le réseau mondial de Microsoft où Office clients et services terminent leur connexion réseau. Pour une connexion réseau optimale à Microsoft 365, il est recommandé que votre connexion réseau soit terminée sur la porte d’Microsoft 365 la plus proche de votre ville ou de votre ville.
+La Microsoft 365 service frontal est un point d’entrée sur le réseau mondial de Microsoft où les clients et les services Office terminent leur connexion réseau. Pour une connexion réseau optimale à Microsoft 365, il est recommandé que votre connexion réseau soit terminée sur la porte d’Microsoft 365 la plus proche de votre ville ou de votre ville.
 
 > [!NOTE]
-> Microsoft 365 service frontal n’a pas de relation directe avec le produit **Azure Front Door Service** disponible sur azure marketplace.
+> Microsoft 365 service frontal n’a pas de relation directe avec le produit **Azure Front Door Service** disponible sur Azure Marketplace.
 
 ### <a name="what-is-the-best-microsoft-365-service-front-door"></a>Quelle est la meilleure Microsoft 365 service frontal ?
 
-Une meilleure Microsoft 365 service frontal (anciennement appelée porte frontale de service optimale) est celle qui est la plus proche de la sortie de votre réseau, généralement dans votre ville ou région. Utilisez l Microsoft 365 de performances réseau pour déterminer l’emplacement de votre Microsoft 365 service en cours d’utilisation et la ou les meilleures porte d’entrée du service. Si l’outil détermine que votre porte frontale en cours d’utilisation est l’une des meilleures, vous devez vous attendre à une excellente connectivité au réseau mondial de Microsoft.
+Une meilleure porte d’Microsoft 365 service (anciennement appelée porte frontale de service optimale) est celle qui est la plus proche de la sortie réseau, généralement dans votre ville ou région. Utilisez l Microsoft 365 de performances réseau pour déterminer l’emplacement de votre Microsoft 365 service en cours d’utilisation et la ou les meilleures porte d’entrée du service. Si l’outil détermine que votre porte frontale en cours d’utilisation est l’une des meilleures, vous devez vous attendre à une excellente connectivité au réseau mondial de Microsoft.
 
 ### <a name="what-is-an-internet-egress-location"></a>Qu’est-ce qu’un emplacement de sortie Internet ?
 

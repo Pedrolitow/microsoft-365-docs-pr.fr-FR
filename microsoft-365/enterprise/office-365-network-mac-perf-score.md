@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365'évaluation du réseau
-ms.openlocfilehash: d7fea3d4f2dfbe846a873b6ce0ea34d8373bcc12
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: 5ff858ef652c7fc536310c9d27887863d156fb5d
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327555"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63495009"
 ---
 # <a name="microsoft-365-network-assessment"></a>Microsoft 365'évaluation du réseau
 
-Dans le centre Administration Microsoft 365, les évaluations  réseau regroupent de nombreuses mesures de performances réseau dans un instantané de l’état du périmètre de votre réseau d’entreprise. Une évaluation réseau vous indique l’impact de la conception de réseau responsable du client sur Office 365 l’expérience utilisateur. Les évaluations réseau sont limitées à l’ensemble du client et à chaque emplacement géographique à partir duquel les utilisateurs se connectent à votre client. Les évaluations permettent aux administrateurs Microsoft 365 d’avoir instantanément une idée de l’état du réseau de l’entreprise et d’obtenir rapidement un rapport détaillé pour n’importe quel emplacement de bureau global.
+Dans le centre Administration Microsoft 365, les évaluations réseau regroupent de nombreuses  mesures de performances réseau dans un instantané de l’état du périmètre de votre réseau d’entreprise. Une évaluation réseau vous indique l’impact de la conception de réseau responsable du client sur Office 365 l’expérience utilisateur. Les évaluations réseau sont limitées à l’ensemble du client et à chaque emplacement géographique à partir duquel les utilisateurs se connectent à votre client. Les évaluations offrent aux administrateurs Microsoft 365 un moyen simple d’obtenir instantanément une idée de l’état du réseau de l’entreprise et d’obtenir rapidement un rapport détaillé pour n’importe quel emplacement de bureau global.
 
 La valeur des points d’évaluation réseau est de 0 à 100 et est une moyenne de la latence TCP, de la vitesse de téléchargement et des mesures de qualité de connexion UDP. Ces mesures sont compilées une fois par jour. Les mesures de performances pour les réseaux microsoft sont exclues de ces mesures pour s’assurer que les résultats de l’évaluation sont non ambigus et spécifiques au réseau d’entreprise.
 
@@ -41,9 +41,6 @@ Une très faible valeur d’évaluation du réseau suggère que Microsoft 365 cl
 | 20                 | Les utilisateurs peuvent se plaindr       |
 | 0                  | Problèmes réseau : sujet de discussion courant |
 
->[!IMPORTANT]
->Les informations sur le réseau, les recommandations en matière de performances et les évaluations dans le Centre Administration Microsoft 365 sont actuellement en état de prévisualisation et sont uniquement disponibles pour les locataires Microsoft 365 qui ont été inscrits au programme d’aperçu des fonctionnalités.
-
 ## <a name="network-assessment-panel"></a>Panneau d’évaluation du réseau
 
 Chaque évaluation réseau, qu’elle soit limitée au client ou à un emplacement de bureau spécifique, affiche un panneau avec des détails sur l’évaluation. Ce panneau présente un graphique à barres de l’évaluation sous la mesure d’un pourcentage et en tant que points totaux pour chaque charge de travail de composant, y compris uniquement les charges de travail où les données de mesure ont été reçues. Pour une évaluation du réseau d’emplacements de bureau, nous montrons également une comparaison avec le pourcentage de clients Microsoft 365 dans chacun des cinq bureaux qui ont signalé des données dans la même ville que votre bureau.
@@ -59,13 +56,13 @@ La **répartition de l’évaluation** dans le panneau affiche l’évaluation p
 
 Une évaluation du réseau mesure la conception du périmètre réseau d’un emplacement de bureau sur le réseau de Microsoft. Il est préférable d’améliorer le périmètre réseau à chaque emplacement de bureau.
 
-Nous montrons une valeur d’évaluation réseau pour l’ensemble Microsoft 365 client sur la page vue d’ensemble des performances réseau. Cette valeur est une moyenne pondérée des évaluations réseau pour tous les bureaux. Il existe également une valeur d’évaluation réseau spécifique pour chaque emplacement de bureau détecté sur la page récapitulatif de cet emplacement.
+Nous montrons une valeur d’évaluation réseau pour l’ensemble Microsoft 365 client dans la page vue d’ensemble des performances réseau. Cette valeur est une moyenne pondérée des évaluations réseau pour tous les bureaux. Il existe également une valeur d’évaluation réseau spécifique pour chaque emplacement de bureau détecté sur la page récapitulatif de cet emplacement.
 
 ## <a name="exchange-online"></a>Exchange Online
 
 Par Exchange Online, la latence TCP entre l’ordinateur client et la porte d’Exchange service est mesurée. Cette latence peut être impactée par la distance parcourue par le réseau sur les réseaux lan et wan des clients. Elle peut également être impactée par les services ou les périphériques intermédiaires réseau, qui retardent la connectivité ou entraînent la réentrence des paquets. Elle est également impactée par la distance de la porte d’Exchange service la plus proche. La médiane (également appelée 50e centile ou mesure P50) est prise pour toutes les mesures des trois jours précédents.
 
-L Exchange Online’évaluation est réalisée à l’aide du tableau suivant. Un nombre de latence TCP entre les seuils est affecté de manière linéaire au sein de la bande.
+Le Exchange Online d’évaluation est effectué à l’aide du tableau suivant. Un nombre de latence TCP entre les seuils est affecté de manière linéaire au sein de la bande.
 
 | Latence TCP   | Points |
 | :------------ | :----- |
@@ -78,9 +75,9 @@ L Exchange Online’évaluation est réalisée à l’aide du tableau suivant. U
 
 ## <a name="sharepoint-online"></a>SharePoint Online
 
-Par SharePoint en ligne, la vitesse de téléchargement disponible pour un utilisateur pour accéder à un document à partir SharePoint ou OneDrive est mesurée. Cela peut être impacté par la bande passante disponible sur les circuits réseau entre l’ordinateur client et le réseau de Microsoft. Il est également souvent touché par la congestion du réseau qui existe dans les goulots d’étranglement sur les périphériques réseau complexes ou dans une couverture médiocre Wi-Fi zones. La vitesse de téléchargement est mesurée en mégaoctets par seconde, ce qui représente environ un dixième d’un circuit évalué en mégabits par seconde. Le mégaoctet par seconde est utile, car vous pouvez voir directement quel fichier de taille peut être téléchargé en 1 seconde. Le 25e centile (également appelé mesure P25) est pris pour toutes les mesures des trois jours précédents. Ce 25e centile permet de réduire l’impact d’une congestion variable au fil du temps.
+Par SharePoint online, la vitesse de téléchargement disponible pour un utilisateur pour accéder à un document à partir SharePoint ou OneDrive est mesurée. Cela peut être impacté par la bande passante disponible sur les circuits réseau entre l’ordinateur client et le réseau de Microsoft. Il est également souvent touché par la congestion du réseau qui existe dans les goulots d’étranglement sur les périphériques réseau complexes ou dans une couverture médiocre Wi-Fi zones. La vitesse de téléchargement est mesurée en mégaoctets par seconde, ce qui représente environ un dixième d’un circuit évalué en mégabits par seconde. Le mégaoctet par seconde est utile, car vous pouvez voir directement quel fichier de taille peut être téléchargé en 1 seconde. Le 25e centile (également appelé mesure P25) est pris pour toutes les mesures des trois jours précédents. Ce 25e centile permet de réduire l’impact d’une congestion variable au fil du temps.
 
-L SharePoint en ligne est réalisée à l’aide du tableau suivant. Tout numéro de vitesse de téléchargement entre les seuils est affecté de manière linéaire au sein de la bande.
+L’évaluation SharePoint Online est réalisée à l’aide du tableau suivant. Tout numéro de vitesse de téléchargement entre les seuils est affecté de manière linéaire au sein de la bande.
 
 | Vitesse de téléchargement | Points |
 | :------------- | :----- |
