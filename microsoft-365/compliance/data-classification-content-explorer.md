@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur de contenu vous permet d’afficher des éléments étiquetés en mode natif.
-ms.openlocfilehash: fb7448ffd4ed56deb41bbb1d128608b88e9617ea
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 61d262c04d4a304506bc521d155be71f81d219ca
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61871826"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468759"
 ---
 # <a name="get-started-with-content-explorer"></a>Prise en main de l’explorateur de contenu
 
@@ -70,7 +70,7 @@ L’accès à l’explorateur de contenu est fortement restreint, car il vous pe
 
 Il existe deux rôles qui accordent l’accès à l’Explorateur de contenu via le <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Centre de conformité Microsoft 365</a> :
 
-- **Visionneuse de liste de l’explorateur de contenu** : l’appartenance à ce groupe de rôle vous permet d’afficher chaque élément et son emplacement dans la liste. Le rôle `data classification list viewer` a été pré-attribué à ce groupe de rôles.
+- **Visionneuse de contenu de l’Explorateur de contenu** : l’appartenance à ce groupe de rôles vous permet d’afficher le contenu de chaque élément de la liste. Le rôle `data classification list viewer` a été pré-attribué à ce groupe de rôles.
 
 - **Visionneuse de contenu de l’Explorateur de contenu** : l’appartenance à ce groupe de rôles vous permet d’afficher le contenu de chaque élément de la liste. Le rôle `data classification content viewer` a été pré-attribué à ce groupe de rôles.
 
@@ -91,7 +91,7 @@ Voici une liste des rôles Microsoft Information Protection (MIP) qui sont en pr
 - Enquêteur Information Protection
 - Lecteur Information Protection
 
-Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir plus, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir plus sur ces groupes, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Protection des informations
 - Administrateurs Information Protection
@@ -105,10 +105,7 @@ L’Explorateur de contenu présente un instantané actuel des éléments qui on
 
 ### <a name="sensitive-information-types"></a>Types d’informations sensibles
 
-Une [stratégie DLP](dlp-learn-about-dlp.md) peut contribuer à protéger les informations sensibles, définies selon des **types d’informations sensibles**. Microsoft 365 inclut des [définitions pour de nombreux types d’informations sensibles courants](sensitive-information-type-entity-definitions.md) provenant de nombreuses régions différentes qui sont prêtes à l’emploi. Par exemple, un numéro de carte bancaire, des numéros de compte bancaire, des numéros d’identification nationaux et des numéros de service Windows Live ID.
-
-> [!NOTE]
-> Actuellement, l’explorateur de contenu n’analyse pas les types d’informations sensibles dans Exchange Online.
+Une [stratégie DLP](dlp-learn-about-dlp.md) peut aider à protéger les informations sensibles, définies selon des type d’**informations sensibles**. Microsoft 365 inclut des [définitions pour de nombreux types d’informations sensibles courantes](sensitive-information-type-entity-definitions.md) de nombreuses régions différentes qui sont prêtes à être utilisées. Par exemple, un numéro de carte de crédit, des numéros de compte bancaire, des numéros de carte d’identité nationale et des numéros de service Windows Live ID.
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
@@ -134,29 +131,26 @@ Le contrôle des **exportations** crée un fichier .csv qui contient une liste d
 ![Contrôle des exportations de la classification des données.](../media/data_classification_export_control.png)
 
 
+> [!NOTE]
+> La mise à jour des nombres dans l’Explorateur de contenu peut prendre jusqu’à *sept jours*.
+
 ### <a name="search"></a>Rechercher
 
-Lorsque vous explorez un emplacement, par exemple, un dossier Exchange, ou un site SharePoint ou OneDrive, l’outil de **recherche** s’affiche.
+Lorsque vous explorez dans un emplacement, tel qu'un dossier Exchange ou Teams, ou un site SharePoint ou OneDrive, l'outil de **recherche** apparaît.
 
 ![Outil de recherche dans l’explorateur de contenu.](../media/data_classification_search_tool.png)
 
-
 L’étendue de l’outil de recherche définie ce qui s’affiche dans le volet **Tous les emplacements** et ce que vous pouvez rechercher varie en fonction de l’emplacement sélectionné. 
 
-Lorsque **Exchange** est l’emplacement sélectionné, vous pouvez effectuer une recherche sur l’adresse de messagerie complète de la boîte aux lettres, par exemple `user@domainname.com`.
+Lorsque **Exchange** ou **Teams** est l’emplacement sélectionné, vous pouvez effectuer une recherche sur l’adresse e-mail complète de la boîte aux lettres, par exemple `user@domainname.com`.
 
 Lorsque **SharePoint** ou **OneDrive** sont les emplacement sélectionnés, l’outil de recherche s’affiche lorsque vous explorez les noms, les dossiers et les fichiers du site. 
 
-> [!NOTE]
-> **OneDrive** Nous avons écouté vos précieux commentaires sur l’intégration de OneDrive pendant notre programme d’évaluation. Sur la base de ces commentaires, la fonctionnalité OneDrive restera en préversion jusqu’à ce que tous les correctifs soient en place. En fonction de votre client, certains utilisateurs peuvent ne pas voir OneDrive comme un emplacement. Nous apprécions votre soutien sans faille sur ce projet.
-
 Vous pouvez effectuer une recherche sur les éléments suivants :
-
 
 |valeur|exemple  |
 |---------|---------|
 |nom complet du site    |`https://contoso.onmicrosoft.com/sites/sitename`    |
-|nom du dossier racine : obtient tous les sous-dossiers    | `/sites`        |
 |nom du fichier    |    `RES_Resume_1234.txt`     |
 |texte au début du nom de fichier| `RES`|
 |texte après un caractère de soulignement (_) dans le nom de fichier|`Resume` ou `1234`| 
