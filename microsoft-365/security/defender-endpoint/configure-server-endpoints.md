@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5f0b846fdbfaa76250ae64ae281afc9592a24eb4
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 6f6ada6604190ccba270b287201d94ba2acbf6d2
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450323"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504846"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer Windows serveurs au service Microsoft Defender for Endpoint
 
@@ -161,7 +161,7 @@ Pour plus d’informations, [voir Intégration à Microsoft Defender pour le clo
 > [!NOTE]
 > Bien que cette méthode d’intégration Windows Server 2012 R2 et Windows Server 2016 soit en prévisualisation, vous pouvez choisir de continuer à utiliser la méthode d’intégration précédente à l’aide de Microsoft Monitoring Agent (MMA). Pour plus d’informations, [voir Installer et configurer des points de terminaison à l’aide de MMA](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma).
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Conditions préalables
 
 **Conditions préalables pour Windows Server 2012 R2**
 
@@ -298,6 +298,8 @@ Vous pouvez utiliser le [script d’installation pour](server-migration.md#insta
     ```  
 
      >[!NOTE]
+    >Si vous devez résoudre les problèmes d’installation de l’agent, ajoutez « -etl -log » aux paramètres install.ps1 script.
+    >
     >Le paramètre de stratégie d’exécution recommandé est `Allsigned`. Cela nécessite l’importation du certificat de signature du script dans le magasin Éditeurs de confiance de l’ordinateur local si le script s’exécute en tant que SYSTÈME sur le point de terminaison.
 
     \\Remplacez servername-or-dfs-space\share-name par le chemin d’accès UNC, à l’aide du nom de domaine complet (FQDN) du serveur de fichiers, du fichier *install.ps1* partagé. Le package dmd4ws.msi doit être placé dans le même répertoire.  Assurez-vous également que les autorisations du chemin d’accès UNC autorisent l’accès en lecture au compte d’ordinateur qui installe la plateforme.
@@ -392,7 +394,7 @@ Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test d
 
 Suivez les étapes de [l’étape Exécuter un test](run-detection-test.md) de détection sur un appareil nouvellement intégré pour vérifier que le serveur fait des rapports à Defender pour le service Endpoint.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Une fois les appareils intégrés au service, vous devez configurer les composants individuels de Microsoft Defender pour le point de terminaison. Suivez [l’ordre d’adoption](prepare-deployment.md#adoption-order) pour être guidé sur l’activation des différents composants.
 
@@ -413,7 +415,7 @@ Pour les autres versions Windows serveur, vous avez deux options pour Windows se
 >[!NOTE]
 > Ces instructions de déboardage pour d’autres versions de serveur Windows s’appliquent également si vous exécutez le précédent Microsoft Defender for Endpoint pour Windows Server 2016 et Windows Server 2012 R2 qui nécessite le MMA. Instructions to migrate to the new unfiied solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Intégrer des versions antérieures de Windows](onboard-downlevel.md)
 - [Intégrer des appareils Windows 10](configure-endpoints.md)

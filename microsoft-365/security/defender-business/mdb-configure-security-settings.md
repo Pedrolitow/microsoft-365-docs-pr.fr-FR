@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 03/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: c943841a89acb7052f63ba76898e9b23e5dc3b4c
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 5673ac38577dbd87019a954eb388d6ab8f050328
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449497"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504768"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>Afficher et modifier vos stratégies et paramètres de sécurité dans Microsoft Defender entreprise
 
@@ -36,7 +36,9 @@ ms.locfileid: "63449497"
 Une fois que vous avez intégré les appareils de votre organisation à Microsoft Defender pour Entreprises, l’étape suivante consiste à afficher et, si nécessaire, à modifier vos stratégies et paramètres de sécurité. Les stratégies de sécurité sont les suivantes :
 
 - **[Stratégies de protection nouvelle génération](#view-or-edit-your-next-generation-protection-policies)**, qui déterminent la protection antivirus et anti-programme malveillant pour les appareils de votre organisation
+
 - **[Protection et règles de pare-feu](#view-or-edit-your-firewall-policies-and-custom-rules)**, qui déterminent le trafic réseau autorisé à circuler vers ou depuis les appareils de votre organisation
+
 - **[Filtrage de contenu Web](#set-up-web-content-filtering)**, qui empêche les utilisateurs de visiter certains sites web (URL) en fonction de catégories, telles que le contenu pour adultes ou la responsabilité légale.
 
 Dans Defender entreprise, les stratégies de sécurité sont appliquées aux appareils via des groupes [d’appareils](mdb-create-edit-device-groups.md#what-is-a-device-group). 
@@ -72,11 +74,11 @@ Le tableau suivant peut vous aider à choisir l’endroit où gérer vos straté
 
 | Option | Description |
 |:---|:---|
-| **Utiliser le Microsoft 365 Defender web** (*recommandé*) | Le Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) peut être votre magasin unique pour la gestion des appareils, des stratégies de sécurité et des paramètres de sécurité de votre organisation. Vous pouvez accéder à vos stratégies et paramètres de sécurité, utiliser votre tableau de bord gestion des menaces [&](mdb-view-tvm-dashboard.md) vulnérabilités, et afficher et gérer les [incidents](mdb-view-manage-incidents.md) au même endroit.  |
-| **Utiliser Microsoft Endpoint Manager** | Si votre organisation utilise déjà Endpoint Manager (qui inclut Microsoft Intune) pour gérer les stratégies de sécurité, vous pouvez continuer à utiliser Endpoint Manager pour gérer les appareils et les stratégies de sécurité. Pour plus d’informations, voir [Gérer la sécurité des appareils avec les stratégies de sécurité des points de terminaison Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>Si vous décidez de basculer vers le processus de configuration simplifiée dans [Defender for Business](mdb-simplified-configuration.md) pour utiliser le portail Microsoft 365 Defender à la place, vous serez invité à supprimer les stratégies de sécurité existantes dans Endpoint Manager afin d’éviter les conflits [](mdb-troubleshooting.yml) de stratégie ultérieurement. |
+| **Utiliser le Microsoft 365 Defender web** (*recommandé*) | Le Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) peut être votre magasin unique pour la gestion des appareils, des stratégies de sécurité et des paramètres de sécurité de votre organisation. Vous pouvez accéder à vos stratégies et paramètres de sécurité, utiliser votre tableau de bord gestion des menaces [&](mdb-view-tvm-dashboard.md) vulnérabilités, et afficher et gérer les [incidents](mdb-view-manage-incidents.md) au même endroit. <br/><br/>Si vous utilisez Microsoft Endpoint Manager, les appareils que vous intégrerez à Defender pour Entreprise et vos stratégies de sécurité sont visibles dans Endpoint Manager. Pour en savoir plus, consultez les articles suivants :<br/><br/>- [Paramètres et paramètres par défaut de Defender for Business Microsoft Endpoint Manager](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-endpoint-manager)<br/><br/>- [Pare-feu dans Microsoft Defender pour les entreprises](mdb-firewall.md)   |
+| **Utiliser Microsoft Endpoint Manager** | Si votre organisation utilise déjà Endpoint Manager (qui inclut Microsoft Intune) pour gérer les stratégies de sécurité, vous pouvez continuer à utiliser Endpoint Manager pour gérer les appareils et les stratégies de sécurité. Pour plus d’informations, voir [Gérer la sécurité des appareils avec les stratégies de sécurité des points de terminaison Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>Si vous décidez de basculer vers le processus de configuration simplifiée dans [Defender pour](mdb-simplified-configuration.md) les entreprises, vous serez invité à supprimer les [stratégies de sécurité existantes](mdb-troubleshooting.yml) dans Endpoint Manager afin d’éviter les conflits de stratégie ultérieurement. |
 
-> [!NOTE]
-> Si vous gérez nos stratégies de sécurité dans le portail Microsoft 365 Defender, vous pouvez  afficher ces stratégies dans Endpoint Manager, répertoriées en tant que stratégies antivirus ou pare-feu. Lorsque vous affichez vos stratégies de pare-feu dans Endpoint Manager, deux stratégies sont répertoriées : une stratégie pour la protection de votre pare-feu et une autre pour les règles personnalisées.
+> [!IMPORTANT]
+> Si vous gérez des stratégies de sécurité dans le portail Microsoft 365 Defender, vous  pouvez afficher ces stratégies dans Endpoint Manager, répertoriées en tant que stratégies antivirus ou pare-feu. Lorsque vous affichez vos stratégies de pare-feu dans Endpoint Manager, deux stratégies sont répertoriées : une stratégie pour la protection de votre pare-feu et une autre pour les règles personnalisées.
 
 ## <a name="view-or-edit-your-next-generation-protection-policies"></a>Afficher ou modifier vos stratégies de protection nouvelle génération
 
@@ -101,9 +103,13 @@ Selon que vous utilisez le portail Microsoft 365 Defender ou Microsoft Endpoint 
 Le filtrage de contenu Web permet à votre équipe de sécurité de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu, telles que :
 
 - Contenu pour adultes : sites liés à des activités sexuelles, à des jeux d’argent, à la nudité, à la créativité, à du matériel explicite ou à la violence
+
 - Bande passante élevée : télécharger des sites, des sites de partage d’images ou des hôtes d’égal à égal
+
 - Responsabilité légale : sites qui incluent des images d’abus enfants, promeuvent des activités illégales, encouragent le plagiarisme ou la violence scolaire, ou qui promeuvent des activités dangereuses
+
 - Événement : sites qui fournissent des salles de conversation web, des jeux en ligne, des e-mails web ou des réseaux sociaux
+
 - Non catégorisé : sites qui n’ont pas de contenu ou qui sont nouvellement inscrits
 
 Tous les sites web de ces catégories ne sont pas malveillants, mais ils peuvent être problématiques pour votre organisation en raison de réglementations de conformité, d’utilisation de la bande passante ou d’autres problèmes. En outre, vous pouvez créer une stratégie d’audit uniquement pour mieux comprendre si votre équipe de sécurité doit bloquer les catégories de sites web.
@@ -160,7 +166,7 @@ Le tableau suivant décrit les paramètres à afficher (et, si nécessaire, modi
 3. Dans la liste des paramètres, sélectionnez un élément à afficher ou à modifier.
 
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Procédez à une ou plusieurs des tâches suivantes :
 

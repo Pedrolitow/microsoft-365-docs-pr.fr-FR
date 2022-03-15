@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 ms.custom: admindeeplinkMAC
 description: Découvrez les demandes Customer Lockbox qui vous permettent de contrôler comment un ingénieur du support technique Microsoft peut accéder à vos données lorsque vous êtes en situation de problème.
-ms.openlocfilehash: 4788a17df4a4d11245fa65342002cab1dc5716fa
-ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
+ms.openlocfilehash: 532b1b78c40725fa3558768a6b65beda9b8e05b2
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62520474"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504830"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Customer Lockbox dans Office 365
 
-Cet article fournit des instructions de déploiement et de configuration pour Customer Lockbox. Customer Lockbox prend en charge les demandes d’accès aux données dans Exchange Online, SharePoint Online et OneDrive Entreprise. Pour recommander la prise en charge d’autres services, envoyez une [demande Office 365 UserVoice](https://feedbackportal.microsoft.com/feedback/).
+Cet article fournit des instructions de déploiement et de configuration pour Customer Lockbox. Customer Lockbox prend en charge les demandes d’accès aux données dans Exchange Online, SharePoint Online et OneDrive Entreprise. Pour recommander la prise en charge d’autres services, envoyez une demande sur le [portail de commentaires](https://feedbackportal.microsoft.com).
 
 Pour voir les options de gestion des licences pour vos utilisateurs afin de bénéficier des offres de conformité Microsoft 365, consultez les conseils de gestion des licences Microsoft 365 pour la conformité & [sécurité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
@@ -106,7 +106,7 @@ Vous pouvez activer les contrôles Customer Lockbox dans le Centre d’administr
 
 ## <a name="auditing-customer-lockbox-requests"></a>Audit des demandes d’accès au Customer Lockbox
 
-Les enregistrements d’audit qui correspondent aux demandes Customer Lockbox sont enregistrés dans le journal Microsoft 365'audit. Vous pouvez accéder à ces journaux à l’aide de l’outil de recherche du journal [d’audit](search-the-audit-log-in-security-and-compliance.md) dans Centre de conformité Microsoft 365. Les actions liées à l’acceptation ou au refus d’une demande Customer Lockbox et les actions effectuées par les ingénieurs Microsoft (lorsque les demandes d’accès sont approuvées) sont également enregistrées dans le journal d’audit. Vous pouvez rechercher et consulter ces enregistrements d’audit.
+Les enregistrements d’audit qui correspondent aux demandes Customer Lockbox sont enregistrés dans le journal Microsoft 365'audit. Vous pouvez accéder à ces journaux à l’aide de l’outil de recherche du journal [d’audit](search-the-audit-log-in-security-and-compliance.md) dans le Centre de conformité Microsoft 365. Les actions liées à l’acceptation ou au refus d’une demande Customer Lockbox et les actions effectuées par les ingénieurs Microsoft (lorsque les demandes d’accès sont approuvées) sont également enregistrées dans le journal d’audit. Vous pouvez rechercher et consulter ces enregistrements d’audit.
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>Rechercher dans le journal d’audit l’activité liée aux demandes Customer Lockbox
 
@@ -150,7 +150,7 @@ Avant de pouvoir utiliser le journal d’audit pour suivre les demandes de Custo
 
 Vous pouvez également exporter les résultats de recherche du journal d’audit vers un fichier CSV, puis ouvrir le fichier dans Excel pour utiliser les fonctionnalités de filtrage et de tri afin de faciliter la recherche et l’affichage des enregistrements d’audit liés à une demande d’accès customer Lockbox.
 
-Pour exporter des enregistrements d’audit, utilisez les étapes précédentes pour effectuer des recherches dans le journal d’audit. Lorsque la recherche est terminée, sélectionnez **Exporter > Télécharger** tous les résultats en haut de la page des résultats de la recherche. Une fois le processus d’exportation terminé, vous pouvez télécharger le fichier CSV sur votre ordinateur local. Pour obtenir des instructions plus détaillées, voir [Exporter, configurer et afficher les enregistrements du journal d’audit](export-view-audit-log-records.md).
+Pour exporter des enregistrements d’audit, utilisez les étapes précédentes pour effectuer des recherches dans le journal d’audit. Lorsque la recherche est terminée, sélectionnez **Exporter > télécharger** tous les résultats en haut de la page des résultats de la recherche. Une fois le processus d’exportation terminé, vous pouvez télécharger le fichier CSV sur votre ordinateur local. Pour obtenir des instructions plus détaillées, voir [Exporter, configurer et afficher les enregistrements du journal d’audit](export-view-audit-log-records.md).
 
 Après avoir téléchargé le fichier, vous pouvez l’ouvrir dans Excel puis filtrer dans la colonne **Opérations** pour afficher les enregistrements d’audit pour les activités **Set-AccessToCustomerDataRequest**. Vous pouvez également filtrer sur la **colonne UserIds** (à l’aide de la valeur **Opérateur Microsoft**) pour afficher les enregistrements d’audit pour les activités effectuées par les ingénieurs Microsoft.
 
@@ -159,9 +159,9 @@ Après avoir téléchargé le fichier, vous pouvez l’ouvrir dans Excel puis fi
 
 ### <a name="use-powershell-to-search-and-export-audit-records"></a>Utiliser PowerShell pour rechercher et exporter des enregistrements d’audit
 
-Une alternative à l’utilisation de l’outil de recherche d’audit dans Centre de conformité Microsoft 365 consiste à exécuter la cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell. L’un des avantages de l’utilisation de PowerShell est que vous pouvez rechercher spécifiquement les activités **set-AccessToCustomerDataRequest** ou les activités effectuées par les ingénieurs Microsoft liées à une demande Customer Lockbox.
+Une alternative à l’utilisation de l’outil de recherche d’audit dans le Centre de conformité Microsoft 365 consiste à exécuter la cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell. L’un des avantages de l’utilisation de PowerShell est que vous pouvez rechercher spécifiquement les activités **set-AccessToCustomerDataRequest** ou les activités effectuées par les ingénieurs Microsoft liées à une demande Customer Lockbox.
 
-Après vous [être connecté Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), exécutez l’une des commandes suivantes. Remplacez les espaces réservé par une plage de dates spécifique.
+Après vous [être connecté à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), exécutez l’une des commandes suivantes. Remplacez les espaces réservé par une plage de dates spécifique.
 
 #### <a name="search-for-set-accesstocustomerdatarequest-activities"></a>Rechercher des Set-AccessToCustomerDataRequest de recherche
 
@@ -227,7 +227,7 @@ Le contenu client est les données créées par les utilisateurs Microsoft 365 s
 
 - Informations dans le corps d’un fichier SharePoint
 
-- Skype Entreprise du fichier de présentation
+- Skype Entreprise fichier de présentation
 
 - Messages instantanés (IM) ou conversations vocales
 

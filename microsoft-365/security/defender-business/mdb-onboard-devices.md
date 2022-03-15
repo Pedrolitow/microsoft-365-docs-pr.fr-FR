@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 6b475a1f56f66c6ec9e1ed09b5311515c5eb31c8
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: c5de66418b242beb975cce0d6ece299753360c99
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468693"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504791"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils à Microsoft Defender pour Les Entreprises
 
@@ -33,36 +33,44 @@ ms.locfileid: "63468693"
 
 Avec Microsoft Defender entreprise, vous avez le choix entre plusieurs options pour intégrer les appareils de votre organisation. Cet article vous présente vos options et inclut une vue d’ensemble du fonctionnement de l’intégration.
 
-## <a name="what-to-do"></a>Procédure
-
-1. Consultez les options [d’intégration des appareils](#device-onboarding-methods) et sélectionnez l’une des méthodes suivantes : 
-
-   - [Intégration automatique pour les appareils Windows inscrits dans Microsoft Endpoint Manager](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)
-   - [Script local pour les Windows et Mac](#local-script-in-defender-for-business)
-   - [Microsoft Endpoint Manager (Microsoft Intune)](#microsoft-endpoint-manager)
-   - [Configuration de la sécurité de Microsoft Defender pour les entreprises](#microsoft-defender-for-business-security-configuration)
-
-2. [Exécutez un test de détection](#run-a-detection-test) pour les appareils Windows intégrés.
-
-3. [Consultez les étapes suivantes](#next-steps). 
-
-Cet article inclut également des informations sur l’exécution [d’un test de détection pour Windows appareils mobiles](#run-a-detection-test) et laboarding [d’un appareil](#offboarding-a-device).
-
 >
 > **Avez-vous un peu de temps ?**
 > Veuillez consulter notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur Microsoft Defender entreprise</a>. Vos commentaires sont les bienvenus.
 >
 
+## <a name="get-the-device-onboarding-guide"></a>Obtenir le guide d’intégration d’appareil
+
+Utilisez le guide et les informations suivants pour choisir la meilleure option pour votre organisation.
+
+[:::image type="content" source="media/mdb-device-onboarding.png" alt-text="Capture d’écran du diagramme d’intégration d’appareil":::](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) <br/>
+[PDF](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) | [Visio](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.vsdx)
+
+## <a name="what-to-do"></a>Procédure
+
+1. [Consultez les options d’intégration des appareils](#device-onboarding-methods) et sélectionnez une méthode. 
+
+   - [Utiliser l’intégration automatique pour Windows appareils déjà inscrits dans Microsoft Endpoint Manager](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)
+   - [Utiliser un script local pour intégrer des Windows ou macOS](#local-script-in-defender-for-business)
+   - [Utiliser Microsoft Endpoint Manager pour intégrer des appareils Windows, macOS ou mobiles](#microsoft-endpoint-manager)
+   - [En savoir plus sur l’intégration d’appareils avec la configuration de sécurité de Microsoft Defender entreprise](#microsoft-defender-for-business-security-configuration)
+
+2. [Exécutez un test de détection](#run-a-detection-test) sur les appareils Windows nouvellement intégrés.
+
+3. [Consultez les étapes suivantes](#next-steps). 
+
+Cet article inclut également des informations [sur laboardage d’un appareil](#offboarding-a-device).
+
 ## <a name="device-onboarding-methods"></a>Méthodes d’intégration d’appareil
 
-Le tableau suivant décrit les méthodes les plus couramment utilisées pour intégrer des appareils à Defender for Business. 
+Defender for Business vous propose plusieurs méthodes différentes pour l’intégration d’appareils, que vous utilisiez déjà Microsoft Endpoint Manager ou que vous vouliez simplement une expérience d’intégration simplifiée. Les méthodes les plus couramment utilisées pour intégrer des appareils à Defender for Business sont les suivantes :
 
-| Méthode d’intégration  | Description  | Système d’exploitation |
-|---------|---------|---------|
-| **Intégration automatique**<br/>(*disponible pour les clients qui utilisent déjà Microsoft Endpoint Manager*) | *Microsoft 365 Business Premium clients ont déjà Microsoft Intune et peuvent utiliser cette option*. L’intégration automatique définit une connexion entre Defender entreprise et Microsoft Endpoint Manager, puis Windows appareils à Defender for Business. Pour utiliser cette option, vos appareils doivent déjà être inscrits Endpoint Manager.<br/><br/>Pour en savoir plus, [consultez l’intégration automatique](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager). | Windows |
-| **Script local** <br/> | Cette option vous permet d’intégrer manuellement des appareils individuels à Defender for Business. Vous pouvez intégrer jusqu’à 10 appareils à la fois à l’aide du script local.<br/><br/>Pour plus d’informations, [voir script local dans Defender for Business](#local-script-in-defender-for-business). | Windows <br/>macOS |
-| **Microsoft Intune** ou **Microsoft Endpoint Manager**<br/>(*disponible pour les clients qui utilisent Microsoft Intune ou Endpoint Manager*) | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) [gestion des](/mem/intune/enrollment/device-enrollment) périphériques mobiles font partie des Endpoint Manager. (Microsoft 365 Business Premium clients ont déjà Microsoft Intune.)<br/><br/>Si vous utilisiez déjà Endpoint Manager avant d’obtenir Defender entreprise, vous pouvez choisir de continuer à utiliser Endpoint Manager pour intégrer et gérer vos appareils.<br/><br/>Pour utiliser cette méthode, voir [Microsoft Endpoint Manager](#microsoft-endpoint-manager). | Windows <br/>macOS<br/>iOS<br/>Système d’exploitation Android | 
-| **Configuration de la sécurité de Microsoft Defender pour les entreprises** <br/>(*utilise le portail Microsoft 365 Defender)*) | Pour utiliser cette option, vous configurez certains paramètres pour faciliter la communication entre Defender for Business et Endpoint Manager. Ensuite, vous devez intégrer des appareils dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) à l’aide d’un package que vous téléchargez et exécutez sur chaque appareil. Une relation d’confiance est établie entre les appareils et Azure Active Directory (Azure AD), et les stratégies de sécurité de Defender for Business sont poussées vers les appareils.<br/><br/>Pour en savoir plus, [consultez la configuration de la sécurité de Microsoft Defender entreprise](#microsoft-defender-for-business-security-configuration). | Windows <br/>macOS |
+- **L’intégration** automatique Windows appareils déjà inscrits dans Microsoft Endpoint Manager. L’intégration automatique définit une connexion entre Defender entreprise et Microsoft Endpoint Manager, puis Windows appareils à Defender for Business. Pour utiliser cette option, vos appareils doivent déjà être inscrits Endpoint Manager. Pour en savoir plus, [consultez l’intégration automatique](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager).
+
+- **Script local pour** intégrer manuellement Windows appareils macOS à Defender for Business. Vous pouvez intégrer jusqu’à 10 appareils à la fois à l’aide du script local. Pour plus d’informations, [voir script local dans Defender for Business](#local-script-in-defender-for-business).
+
+- **Microsoft Intune** ou **Microsoft Endpoint Manager** pour intégrer Windows, macOS et appareils mobiles. Vous pouvez inscrire des appareils dans Endpoint Manager, puis intégrer vos appareils à Defender for Business. [Microsoft 365 Business Premium](../../business-premium/index.md) clients ont déjà des [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), et les deux Microsoft Intune [gestion](/mem/intune/enrollment/device-enrollment) des appareils mobiles font désormais partie de Endpoint Manager. Pour utiliser cette méthode, voir [Microsoft Endpoint Manager](#microsoft-endpoint-manager).
+
+- **Configuration de la sécurité De Microsoft Defender entreprise pour** intégrer les appareils directement dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Pour utiliser cette option, vous configurez certains paramètres pour faciliter la communication entre Defender for Business et Endpoint Manager. Ensuite, vous devez intégrer des appareils dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) à l’aide d’un package que vous sélectionnez, téléchargez et exécutez sur chaque appareil. Une relation d’confiance est établie entre les appareils et Azure Active Directory (Azure AD), et les stratégies de sécurité de Defender for Business sont poussées vers les appareils. Pour en savoir plus, [consultez la configuration de la sécurité de Microsoft Defender entreprise](#microsoft-defender-for-business-security-configuration). 
 
 > [!IMPORTANT]
 > Si un problème se produit et que votre processus d’intégration échoue, consultez [La résolution des problèmes de Microsoft Defender entreprise](mdb-troubleshooting.yml).
@@ -72,12 +80,13 @@ Le tableau suivant décrit les méthodes les plus couramment utilisées pour int
 L’option d’intégration automatique s’applique Windows appareils uniquement. L’intégration automatique est disponible si les conditions suivantes sont remplies :
 
 - Votre organisation utilisait déjà Microsoft Endpoint Manager, Microsoft Intune ou la gestion des périphériques mobiles (MDM) dans Microsoft Intune avant d’obtenir Defender pour les entreprises
+
 - Vous avez déjà Windows des appareils inscrits dans Endpoint Manager
 
 Si Windows appareils sont déjà inscrits dans Endpoint Manager, Defender entreprise détecte ces appareils pendant que vous êtes en train de configurer Defender pour les entreprises. Vous serez invité à vous demander si vous souhaitez utiliser l’intégration automatique pour l’ensemble ou une partie de Windows appareils. Vous pouvez intégrer tous les Windows en même temps, ou sélectionner des appareils spécifiques pour commencer, puis ajouter d’autres appareils ultérieurement.
 
 > [!TIP]
-> Nous vous recommandons de sélectionner l’option « Tous les appareils inscrits ». Ainsi, lorsque Windows sont inscrits Endpoint Manager ultérieurement, ils sont automatiquement intégrés à Defender for Business.
+> Nous vous recommandons de sélectionner l’option « Tous les appareils inscrits ». Ainsi, lorsque Windows sont inscrits Endpoint Manager ultérieurement, ils sont automatiquement intégrés à Defender for Business. En outre, si vous gérez les stratégies et paramètres de sécurité dans Endpoint Manager, nous vous recommandons de basculer vers le portail Microsoft 365 Defender pour gérer vos appareils, stratégies et paramètres. Pour plus d’informations, voir [Choisir où gérer les stratégies et les appareils de sécurité](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
 
 Pour en savoir plus sur l’intégration automatique, consultez l’étape 2 de l’Assistant pour [configurer Microsoft Defender pour les entreprises](mdb-use-wizard.md).
 
@@ -170,7 +179,7 @@ Si vous souhaitez mettre hors service un appareil, utilisez l’une des procédu
 > [!IMPORTANT]
 > Laboarding d’un appareil entraîne l’arrêt de l’envoi de données à Defender for Business. Toutefois, les données reçues avant laboarding sont conservées pendant six (6) mois au plus.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Procédez comme il se doit pour :
 

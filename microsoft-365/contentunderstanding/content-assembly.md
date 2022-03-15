@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer automatiquement des documents et d’autres contenus à l’aide de l’assembly de contenu dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 240b67ea2ca8c1119654096c365e958995e9c946
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: 9da2aa91443ffe1dd3bbd632b5284ce8f7622069
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494553"
+ms.locfileid: "63504568"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Créer des documents à l’aide de l’assembly de contenu dans Microsoft SharePoint Syntex
 
@@ -64,7 +64,7 @@ Suivez ces étapes pour créer un modèle moderne.
    - [Sélection parmi les choix dans une colonne d’une liste ou d’une bibliothèque](#associate-a-placeholder-by-selecting-from-choices-in-a-column-of-a-list-or-library)
 
    > [!NOTE]
-   > Actuellement, vous ne pouvez pas ajouter d’espaces réservé à une cellule de tableau ou dans un tableau.   
+   > Vous pouvez créer des espaces réservé pour le texte uniquement. Actuellement, les images, les images intelligentes, les tableaux et les listes à puces ne sont pas pris en charge.   
 
 ### <a name="associate-a-placeholder-by-entering-text-or-selecting-a-date"></a>Associer un espace réservé en entrant du texte ou en sélectionnant une date 
 
@@ -156,7 +156,7 @@ Vous pouvez utiliser un modèle *moderne publié* pour créer rapidement des doc
 > - Actuellement, seuls Microsoft Word documents (.docx extension) sont pris en charge pour la création d’un modèle. Avant de télécharger le document, assurez-vous que le suivi des modifications n’est **pas activé ou** que les commentaires ne sont pas activés sur le document Word. Si votre document contient des espaces de texte pour les images, assurez-vous qu’ils ne sont pas wrapped texte. Pour le moment, les **contrôles de** contenu ne sont pas en charge dans Word. Si vous souhaitez créer un modèle à partir d’un document Word avec des contrôles de contenu, supprimez-les avant de créer un modèle moderne.
 >- Le modèle et le document sont associés à une bibliothèque de documents. Pour utiliser le modèle dans une autre bibliothèque de documents, vous devez le créer à nouveau dans cette bibliothèque de documents.
 >- Le document téléchargé utilisé pour créer le modèle moderne sera enregistré en tant que copie distincte et placé dans le répertoire /forms de la bibliothèque de documents. Le fichier d’origine sur le disque n’est pas affecté.
->- Vous pouvez créer des espaces réservé uniquement pour le texte. Actuellement, les images, les images intelligentes, les tableaux et les listes à puces ne sont pas pris en charge.
+>- Vous pouvez créer des espaces réservé pour le texte uniquement. Actuellement, les images, les images intelligentes, les tableaux et les listes à puces ne sont pas pris en charge.
 >- Une fois qu’un document est créé à partir d’un modèle, il n’est pas associé au modèle.
 
 

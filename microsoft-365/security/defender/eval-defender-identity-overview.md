@@ -1,6 +1,6 @@
 ---
-title: Étape 2. Évaluer la Microsoft 365 Defender vue d’ensemble de l’identité, configurer l’évaluation
-description: Étapes de l’évaluation de Microsoft 365 Defender pour l’identité, y compris les exigences, l’activation ou l’activation de l’évaluation et la mise en place du pilote ou du test.
+title: Étape 2. Vue d’ensemble des Microsoft 365 Defender évaluation de l’identité
+description: Utilisez Microsoft 365 Defender’identité dans votre Microsoft 365 Defender XDR. Étapes de l’évaluation de Microsoft 365 Defender pour l’identité, y compris les exigences, l’activation ou l’activation de l’évaluation et la mise en place du pilote ou du test.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 37b387d1e38ca3e49406773820a63a6e0d239356
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 2438e7690230af88eae72e0864184e771bdd4135
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311576"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504808"
 ---
 # <a name="step-2-evaluate-microsoft-defender-for-identity-overview"></a>Étape 2. Vue d’ensemble de l’évaluation de Microsoft Defender pour l’identité
 
@@ -35,14 +35,17 @@ ms.locfileid: "63311576"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Cet article décrit le processus permettant d’activer et de piloter Microsoft Defender pour l’identité. Avant de commencer ce processus, assurez-vous d’avoir examiné le processus [](eval-overview.md) global d’évaluation des Microsoft 365 Defender et que vous avez créé l’environnement [d Microsoft 365 Defender d’évaluation.](eval-create-eval-environment.md) 
+> [!NOTE]
+> Cet article fait également partie de la solution Microsoft 365 Defender XDR dont nous parlons dans cette [vue d’ensemble](eval-overview.md).
+
+ Avant de démarrer le processus qui active et pilote Microsoft Defender pour l’identité, si vous avez l’intention d’évaluer Microsoft 365 Defender en tant que *solution XDR (eXtended Detection and Response*), assurez-vous que vous avez passé en revue le processus depuis le début : l’évaluation des [Microsoft 365 Defender](eval-overview.md) y compris la création de la [ Microsoft 365 Defender d’évaluation](eval-create-eval-environment.md).
 <br>
 
-Utilisez les étapes suivantes pour activer et piloter Microsoft Defender pour l’identité.
+Utilisez les étapes ci-dessous pour activer et piloter Microsoft Defender pour l’identité.
 
 ![Étapes d’ajout de Microsoft Defender for Identity à l’environnement d’évaluation Defender.](../../media/defender/m365-defender-identity-eval-steps.png)
 
-Le tableau suivant décrit les étapes de l’illustration.
+Ce tableau décrit les étapes de l’illustration.
 
 | |Étape  |Description  |
 |---------|---------|---------|

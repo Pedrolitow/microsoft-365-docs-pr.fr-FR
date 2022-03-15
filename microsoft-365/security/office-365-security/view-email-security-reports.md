@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3fdab6896edf704c4daa83ec993c0716c54d0f43
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: 0703e1f23d9d54a907b39382438f85f544a5b6de
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494567"
+ms.locfileid: "63504860"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de sécurité de messagerie dans le portail Microsoft 365 Defender messagerie
 
@@ -485,6 +485,9 @@ Lorsque vous avez terminé de configurer les filtres, cliquez sur **Appliquer**,
 
 ![Affichage de la technologie de détection pour le courrier d’hameçonnage dans le rapport d’état de la protection contre les menaces.](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
+> [!NOTE]
+> À compter de mai 2021, les détections de hameçonnage dans le courrier électronique ont été mises à jour pour inclure les pièces **jointes des messages** qui contiennent des URL de hameçonnage. Cette modification peut déplacer une partie du volume **\>** **\>** de détection en dehors des données d’affichage par l’affichage Des programmes malveillants de messagerie et dans l’affichage des données par hameçonnage de messagerie. En d’autres termes, les pièces jointes de messages avec des URL de hameçonnage qui étaient traditionnellement identifiées comme programmes malveillants peuvent être identifiées comme du hameçonnage à la place.
+
 Dans **l’affichage des données par hameçonnage de messagerie électronique \>** et répartition du graphique par technologie de détection, les informations suivantes sont affichées dans le graphique :
 
 - **Réputation malveillante d’URL**<sup>\*</sup> : réputation d’URL malveillante générée à partir de Defender pour Office 365 détonations dans d’autres Microsoft 365 clients.
@@ -599,6 +602,9 @@ Dans la page **État de la protection contre les** menaces, l’icône ![Créer 
 ### <a name="view-data-by-email--malware-and-chart-breakdown-by-detection-technology"></a>Afficher les données par programme malveillant et \> répartition des graphiques par technologie de détection
 
 ![Affichage de la technologie de détection pour les programmes malveillants dans le rapport d’état de la protection contre les menaces.](../../media/threat-protection-status-report-malware-detection-tech-view.png)
+
+> [!NOTE]
+> À compter de mai 2021, les détections de programmes malveillants dans le courrier  électronique ont été mises à jour pour inclure des URL dangereuses dans les pièces jointes des messages. Cette modification peut déplacer une partie du volume **\>** de détection en dehors des données d’affichage par hameçonnage de messagerie et dans l’affichage des données par l’affichage **Des \>** programmes malveillants de messagerie. En d’autres termes, les URL dangereuses dans les pièces jointes des messages qui étaient traditionnellement identifiées comme hameçonnage maintenant peuvent être identifiées comme des programmes malveillants à la place.
 
 Dans **l’affichage des données par programme malveillant par courrier électronique \>** et **répartition des** graphiques par technologie de détection, les informations suivantes sont affichées dans le graphique :
 
@@ -1165,7 +1171,7 @@ Lorsque vous avez terminé la configuration des filtres, cliquez sur **Exporter*
 
 Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données contiennent plus de 150 000 lignes, plusieurs .csv sont créés.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Protection contre le courrier indésirable et les programmes malveillants dans EOP](anti-spam-and-anti-malware-protection.md)
 

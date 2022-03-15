@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 de test de connectivité réseau
-ms.openlocfilehash: 8704da93d8f7ec95460ae5a275289176bccb0c22
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: e464b4e651276f8b36f54e91ea0bfc7b7b52d69b
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494497"
+ms.locfileid: "63504548"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365 de test de connectivité réseau
 
@@ -255,7 +255,7 @@ Cela indique tous les problèmes d’état d’santé importants avec le réseau
 
 Nous fournissons un exécutable de ligne de commande qui peut être utilisé par vos outils de déploiement et d’exécution à distance et nous exécutons les mêmes tests que dans le site web de l’outil de test de connectivité réseau Microsoft 365.
 
-L’outil de test de ligne de commande peut être téléchargé ici : ![Outil de ligne de commande](https://connectivity.office.com/api/AnonymousConnectivityTest/DownloadStandAloneRichClient)
+L’outil de test de ligne de commande peut être téléchargé ici : [Outil de ligne de commande](https://connectivity.office.com/api/AnonymousConnectivityTest/DownloadStandAloneRichClient)
 
 Vous pouvez l’exécuter en double-cliquant sur l’exécutable dans l’Explorateur de fichiers Windows, ou vous pouvez le démarrer à partir d’une invite de commandes, ou vous pouvez le planifier avec le programmeur de tâches.
 
@@ -305,7 +305,7 @@ Une meilleure porte d’Microsoft 365 service (anciennement appelée porte front
 
 L’emplacement de sortie Internet est l’emplacement où votre trafic réseau quitte votre réseau d’entreprise et se connecte à Internet. Il s’agit également de l’emplacement où vous avez un périphérique de traduction d’adresses réseau (NAT) et généralement où vous vous connectez à un fournisseur de services Internet (ISP). Si vous voyez une longue distance entre votre emplacement et votre emplacement de sortie Internet, cela peut identifier un backhaul wan significatif.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Connectivité réseau dans le centre Administration Microsoft 365 de connexion](office-365-network-mac-perf-overview.md)
 
