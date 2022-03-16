@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 62616ed20513ee023986525b4f097c96ae3107ba
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f80ab9fcb0a3e057a20c22ff05c3a960cdf7eab4
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330606"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512933"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Prise en charge des paramètres de gestion des risques internes
 
@@ -37,6 +37,7 @@ Les paramètres de gestion des risques internes s’appliquent à toutes les str
 - Power Automate flux de données (prévisualisation)
 - Microsoft Teams (aperçu)
 - Analyse
+- Notifications de l’administrateur
 
 Avant de commencer et de créer des stratégies de gestion des risques internes, il est important de comprendre ces paramètres et de choisir les niveaux de configuration les mieux conformes aux besoins de conformité de votre organisation.
 
@@ -265,7 +266,7 @@ Les champs et valeurs suivants sont exportés pour les alertes de gestion des ri
 | PolicyId | GUID de la stratégie de gestion des risques internes qui a déclenché l’alerte. |
 | Severity | Gravité de l’alerte. Les valeurs *sont Élevée*, *Moyenne* ou *Faible*. |
 | Source | Source de l’alerte. La valeur est Office 365 *security & compliance*. |
-| Statut | État de l’alerte. Les valeurs sont *actives* *(révision* nécessaire en cas de risque *interne), Examen* *(confirmé* dans le risque interne), *Résolu* *(résolu* en cas de risque *interne), Rejeté* *(rejeté* dans le risque interne). |
+| État | État de l’alerte. Les valeurs sont *actives* *(révision* nécessaire en cas de risque *interne), Examen* *(confirmé* dans le risque interne), *Résolu* *(résolu* en cas de risque *interne), Rejeté* *(rejeté* dans le risque interne). |
 | Version | Version du schéma d’alerte de sécurité et de conformité. |
 
 Les champs et valeurs suivants sont exportés pour les alertes de gestion des risques internes pour le schéma commun de [l’API Activité Office 365 gestion des informations](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema).
@@ -530,7 +531,7 @@ L’analyse recherche les événements d’activité à risque provenant de plus
 - **Azure Active Directory** : inclus dans toutes les analyses, Azure Active Directory’historique permet d’identifier les activités à risque associées aux utilisateurs avec des comptes d’utilisateurs supprimés.
 - **Microsoft 365 connecteur** de données RH : s’ils sont configurés, les événements de connecteur RH permettent d’identifier les activités à risque associées aux utilisateurs qui ont des dates de résiliation anticipées ou à venir.
 
-Les analyses des analyses sont basées sur les mêmes signaux d’activité de risque utilisés par les stratégies de gestion des risques internes et signalent les résultats en fonction des activités des utilisateurs à une seule et de la séquence. Toutefois, l’évaluation des risques pour l’analyse est basée sur 30 jours d’activité au plus, tandis que les stratégies de risque internes utilisent l’activité quotidienne pour obtenir des informations. Lorsque vous activez et exécutez l’analyse pour la première fois dans votre organisation, vous voyez les résultats de l’analyse pour une journée. Si vous laissez l’analyse activée, vous verrez les résultats de chaque analyse quotidienne ajoutés aux rapports d’analyse pour une plage maximale des 30 jours d’activité précédents.
+Les analyses des analyses sont basées sur les mêmes signaux d’activité de risque utilisés par les stratégies de gestion des risques internes et signalent les résultats en fonction des activités des utilisateurs à une seule et de la séquence. Toutefois, l’évaluation des risques pour l’analyse est basée sur 10 jours d’activité au plus, tandis que les stratégies de risque internes utilisent l’activité quotidienne pour obtenir des informations. Lorsque vous activez et exécutez l’analyse pour la première fois dans votre organisation, vous voyez les résultats de l’analyse pour une journée. Si vous laissez l’analyse activée, vous verrez les résultats de chaque analyse quotidienne ajoutés aux rapports d’analyse pour une plage maximale des 10 jours d’activité précédents.
 
 ### <a name="enable-analytics-and-start-your-scan"></a>Activer l’analyse et démarrer votre analyse
 
@@ -545,7 +546,9 @@ Pour activer l’analyse des risques internes, vous suivrez les étapes suivante
 
 ### <a name="viewing-analytics-insights-and-creating-new-policies"></a>Affichage des analyses et création de stratégies
 
-Une fois la première analyse terminée pour votre organisation, vous pouvez afficher les informations et les recommandations concernant les activités potentiellement risquées de vos utilisateurs. Les analyses quotidiennes se poursuivent, sauf si vous la désactiver pour votre organisation. Pour afficher les risques potentiels pour votre organisation, consultez  l’onglet Vue d’ensemble et sélectionnez **Afficher les résultats** sur la carte d’analyse des **risques internes**. Si l’analyse de votre organisation n’est pas terminée, vous verrez un message vous messageant que l’analyse est toujours active.
+Une fois la première analyse terminée pour votre organisation, les membres du groupe  de rôles Administrateur de la gestion des risques internes reçoivent automatiquement une notification par courrier électronique et peuvent afficher les informations initiales et les recommandations concernant les activités potentiellement risquées de vos utilisateurs. Les analyses quotidiennes se poursuivent sauf si vous la désactiver pour votre organisation. Les notifications par courrier électronique aux administrateurs sont fournies pour chacune des trois catégories dans l’étendue pour l’analyse (fuites de données, vol et exfiltration) après la première instance d’activité dans votre organisation. Les notifications par courrier électronique ne sont pas envoyées aux administrateurs pour la détection de l’activité de suivi résultant des analyses quotidiennes.  >  Si les analyses dans la gestion des risques internes **Paramètres** >  **Analytics** sont désactivées, puis réactivées dans votre organisation, les notifications automatiques par courrier électronique sont réinitialisées et les  e-mails sont envoyés aux membres du groupe de rôles Administrateur de la gestion des risques internes pour obtenir de nouvelles informations d’analyse.
+
+Pour afficher les risques potentiels pour votre organisation, consultez  l’onglet Vue d’ensemble et sélectionnez **Afficher les résultats** sur la carte d’analyse des **risques internes**. Si l’analyse de votre organisation n’est pas terminée, vous verrez un message vous messageant que l’analyse est toujours active.
 
 ![Fiche prête pour les rapports d’analyse de la gestion des risques internes.](../media/insider-risk-analytics-ready-card.png)
 
@@ -575,11 +578,17 @@ Pour désactiver l’analyse des risques internes, complétez les étapes suivan
 
 Les notifications d’administrateur envoient automatiquement une notification par courrier électronique aux utilisateurs inclus dans les groupes de rôles Insider *Risk Management*, *Insider Risk Management Analysts* et *Insider Risk Management Investigators* lorsque la première alerte est générée pour une nouvelle stratégie. Cette option est activée par défaut pour toutes les organisations et les stratégies sont vérifiées toutes les 24 heures pour les alertes de première heure. Les notifications ne sont pas envoyées pour les alertes qui se produisent dans les stratégies après la première alerte.
 
+Si vous avez activé l’analyse de la gestion des risques internes pour votre organisation,  les membres du groupe de rôles Administrateur de la gestion des risques internes reçoivent automatiquement une notification par courrier électronique pour obtenir des informations d’analyse initiales sur les fuites de données, le vol et les activités d’exfiltration.
+
 Si vous préférez désactiver les notifications d’administrateur, complétez les étapes suivantes :
 
 1. Dans la [Centre de conformité Microsoft 365](https://compliance.microsoft.com), allez aux paramètres de risque **Insider Risk** **managementInsider** > .
 2. Sélectionnez la page **Notifications de l’administrateur** .
-3. Clear the **Send a notification email when the first alert is generated for a new policy** checkbox.
+3. Cochez la case pour les options suivantes, le cas échéant :
+    - **Envoyer un courrier électronique de notification lorsque la première alerte est générée pour une nouvelle stratégie**
+    - **Envoyer une notification par courrier électronique lorsqu’un nouvel aperçu est disponible dans Analytics**
+    - **Envoyer une notification par courrier électronique lorsque l’analyse est désactivée**
+
 4. **Sélectionnez Enregistrer** pour configurer et quitter.
 
 ![Paramètres de notifications de l’administrateur de la gestion des risques internes.](../media/insider-risk-admin-notifications.png)

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 4f92c50ad971de439541a7b8ea2e8f9fb5312c48
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: deae4e7449f142cbdbb9ef4d41953824499bedca
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449395"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512683"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Obtenir Microsoft Defender pour les entreprises
 
@@ -80,7 +80,7 @@ Voici comment vous inscrire :
 
 4. Remplissez le formulaire avec vos informations de contact. 
 
-   - Si vous êtes un client qui travaille avec un partenaire Microsoft, dans la zone Autre, remplissez le nom de l’organisation du partenaire. Sélectionnez ensuite **Submit (Envoyer)**.
+   - Si vous êtes un client qui travaille avec un partenaire Microsoft, dans la zone Autre, remplissez le nom de la société du partenaire. Sélectionnez ensuite **Submit (Envoyer)**.
    - Si vous êtes un partenaire Microsoft, veillez à indiquer votre type de partenariat et des informations sur les clients avec qui vous envisagez de travailler.
 
 5. Lorsque vous avez terminé de remplir le formulaire, sélectionnez **Envoyer**.
@@ -103,7 +103,7 @@ Lorsque vous êtes prêt à commencer votre version d’essai, vous travaillerez
 | Le Centre d'administration Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Utilisez le Centre d'administration Microsoft 365 pour activer votre version d’essai et vous connectez pour la première fois.<br/><br/> Vous utiliserez également la Centre d'administration Microsoft 365 pour : <br/>- Ajouter ou supprimer des utilisateurs<br/>- Attribuer des licences utilisateur<br/>- Afficher vos produits et services<br/>- Effectuer les tâches de configuration de votre abonnement Microsoft 365 abonnement <br/><br/> Pour plus d’informations, voir [Vue d’ensemble Centre d'administration Microsoft 365](../../admin/admin-overview/admin-center-overview.md).      |
 | Le Microsoft 365 Defender de données ([https://security.microsoft.com](https://security.microsoft.com))     | Utilisez le portail Microsoft 365 Defender pour configurer Defender pour les entreprises. <br/><br/>Vous utiliserez le portail Microsoft 365 Defender pour : <br/>- Afficher vos appareils et stratégies de protection des appareils<br/>- Afficher les menaces détectées et prendre des mesures<br/>- Afficher les recommandations de sécurité et gérer vos paramètres de sécurité <br/><br/>Pour plus d’informations, voir [Commencer à utiliser le Microsoft 365 Defender web](mdb-get-started.md).        |
 
-Si votre organisation utilise Microsoft 365 Business Premium, vous avez Microsoft Intune (partie de Microsoft Endpoint Manager) et vous pouvez utiliser le Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)). Endpoint Manager vous permet également de gérer les appareils et de configurer les paramètres de sécurité. Pour en savoir plus, voir Microsoft Intune est un fournisseur de gestion des appareils mobiles et [de gestion des appareils mobiles pour vos appareils](/mem/intune/fundamentals/what-is-intune).
+Si votre société utilise Microsoft 365 Business Premium, vous avez Microsoft Intune (partie de Microsoft Endpoint Manager) et vous pouvez utiliser le Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)). Endpoint Manager vous permet également de gérer les appareils et de configurer les paramètres de sécurité. Pour en savoir plus, voir Microsoft Intune est un fournisseur de gestion des appareils mobiles et [de gestion des appareils mobiles pour vos appareils](/mem/intune/fundamentals/what-is-intune).
 
 ## <a name="activate-your-trial"></a>Activer votre version d’essai
 

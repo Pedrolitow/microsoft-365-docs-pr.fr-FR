@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 6db82c1dcc9afceebcb9fff891cb90ddafa95f21
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: 14b93f27c2d7bd0255fb08164072ba160af6be1b
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468721"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512445"
 ---
 # <a name="overview-of-microsoft-defender-for-business"></a>Vue d’ensemble de Microsoft Defender pour les entreprises
 
@@ -32,7 +32,7 @@ ms.locfileid: "63468721"
 > 
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
-Microsoft Defender pour Entreprise est une nouvelle solution de sécurité de point de terminaison conçue spécialement pour les petites et moyennes entreprises (jusqu’à 300 employés). Grâce à cette solution de sécurité de point de terminaison, les appareils de votre organisation sont mieux protégés contre les ransomware, programmes malveillants, hameçonnages et autres menaces. 
+Microsoft Defender pour Entreprise est une nouvelle solution de sécurité de point de terminaison conçue spécialement pour les petites et moyennes entreprises (jusqu’à 300 employés). Grâce à cette solution de sécurité de point de terminaison, les appareils de votre entreprise sont mieux protégés contre les ransomware, programmes malveillants, hameçonnages et autres menaces. 
 
 Regardez la vidéo suivante pour en savoir plus sur Defender entreprise : <br/><br/>
 
@@ -51,7 +51,7 @@ Avec Defender entreprise, vous pouvez protéger les appareils et les données ut
 
 - **Enterprise niveau de sécurité.** Defender pour les entreprises offre de puissantes fonctionnalités de sécurité de point de terminaison à partir de notre solution [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md) de pointe et optimise ces fonctionnalités pour les administrateurs informatiques afin de prendre en charge les petites et moyennes entreprises.
 
-- **Solution de sécurité facile à utiliser**. Defender for Business offre des expériences simplifiées qui vous guident vers des actions avec des recommandations et des informations sur la sécurité de vos points de terminaison. Aucune connaissance spécialisée n’est requise, car Defender entreprise offre une configuration pilotée par l’Assistant et des stratégies de sécurité par défaut conçues pour aider à protéger les appareils de votre organisation dès le premier jour.
+- **Solution de sécurité facile à utiliser**. Defender for Business offre des expériences simplifiées qui vous guident vers des actions avec des recommandations et des informations sur la sécurité de vos points de terminaison. Aucune connaissance spécialisée n’est requise, car Defender pour les entreprises offre une configuration pilotée par l’Assistant et des stratégies de sécurité par défaut conçues pour aider à protéger les appareils de votre entreprise dès le premier jour.
 
 - **Flexibilité pour votre environnement**. Defender pour les entreprises peut travailler avec votre environnement d’entreprise, que vous utilisiez Microsoft Intune ou que vous débutiez dans Microsoft Cloud. Defender for Business fonctionne avec des composants intégrés à Windows et avec des applications pour les appareils macOS, iOS et Android.
 

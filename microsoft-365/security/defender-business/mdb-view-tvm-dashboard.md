@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/10/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 807ed67a789364928b00431f9d7a5abb98eba137
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 7d529ffac45484f585cf654d30cb5522bbdffcd5
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449903"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512291"
 ---
 # <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Utiliser votre tableau de bord gestion & des menaces et des vulnérabilités dans Microsoft Defender pour Les entreprises
 
@@ -33,7 +33,7 @@ ms.locfileid: "63449903"
 
 Microsoft Defender pour les entreprises inclut un tableau de bord de gestion des menaces & vulnérabilités conçu pour économiser du temps et des efforts pour votre équipe de sécurité. En plus de fournir un score d’exposition, vous pouvez également afficher des informations sur les appareils exposés et des recommandations de sécurité. Vous pouvez utiliser votre tableau de bord gestion & des menaces pour :
 
-- Afficher votre score d’exposition, qui est associé aux appareils de votre organisation
+- Afficher votre score d’exposition, qui est associé aux appareils de votre entreprise
 
 - Affichez vos principales recommandations en matière de sécurité, telles que la protection contre les problèmes de communication avec les appareils, l’actualisation de la protection contre le pare-feu ou la mise à Antivirus Microsoft Defender définitions
 

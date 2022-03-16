@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 5/8/2019
+ms.date: 03/04/2022
 search.appverid:
 - MET150
 ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
@@ -19,16 +19,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Une fois que vous avez terminé la configuration chiffrement de messages Office 365 (OME), découvrez comment personnaliser votre déploiement de plusieurs manières.
-ms.openlocfilehash: c402b5f414e81fbb7403d56a7314c9255c8cf1b4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 49a3957eb4bc2cf1123f04ab0dea77d2adb638b0
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192222"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512169"
 ---
 # <a name="manage-office-365-message-encryption"></a>Gérer le chiffrement de messages Office 365
 
-Une fois que vous avez terminé la configuration chiffrement de messages Office 365 (OME), vous pouvez personnaliser la configuration de votre déploiement de plusieurs manières. Par exemple, vous pouvez configurer s’il faut activer  les codes de passe à temps partiel, afficher le bouton Chiffrer dans Outlook sur le web, etc. Les tâches de cet article décrivent comment.
+Une fois que vous avez terminé la configuration chiffrement de messages Office 365 (OME), vous pouvez personnaliser la configuration de votre déploiement de plusieurs manières. Par exemple, vous pouvez configurer s’il faut activer les codes de passe à temps partiel,  afficher le bouton Chiffrer dans Outlook sur le web, etc. Les tâches de cet article décrivent comment.
 
 ## <a name="manage-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>Déterminer si les destinataires des comptes Google, Yahoo et Microsoft peuvent utiliser ces comptes pour se connecter au portail chiffrement de messages Office 365 web
 
@@ -86,7 +86,7 @@ Si le destinataire d’un message chiffré par OME n’utilise pas Outlook, quel
 
 En tant qu’administrateur, vous pouvez décider d’afficher ou non ce bouton pour les utilisateurs finaux.
   
-### <a name="to-manage-whether-the-encrypt-button-appears-in-outlook-on-the-web"></a>Pour déterminer si le bouton Chiffrer s’affiche dans Outlook sur le web
+### <a name="to-manage-whether-the-encrypt-button-appears-in-outlook-on-the-web"></a>Pour déterminer si le bouton Chiffrer apparaît dans Outlook sur le web
   
 1. Utilisez un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -120,7 +120,7 @@ Pour plus d’informations et pour une vue de l’expérience client, voir Affic
   
 1. Utilisez un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Exécutez la cmdlet Set-ActiveSyncOrganizations avec le paramètre AllowRMSSupportForUnenlightenedApps :
+2. Exécutez lSet-ActiveSyncOrganizations cmdlet avec le paramètre AllowRMSSupportForUnenlightenedApps :
 
    ```powershell
    Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps <$true|$false>
@@ -139,19 +139,19 @@ Pour plus d’informations et pour une vue de l’expérience client, voir Affic
    ```
 
 > [!NOTE]
-> Les stratégies de boîte aux lettres individuelles (OWA/ActiveSync) remplacent ces paramètres (par exemple, si -IRMEnabled est définie sur False dans la stratégie de boîte aux lettres OWA ou activeSync, ces configurations ne s’appliquent pas).
+> Les stratégies de boîte aux lettres individuelles (OWA/ActiveSync) remplacent ces paramètres (c’est-à-dire, si -IRMEnabled est définie sur False dans la stratégie de boîte aux lettres OWA respective ou la stratégie de boîte aux lettres ActiveSync, ces configurations ne s’appliquent pas).
 
 ## <a name="enable-service-side-decryption-of-email-attachments-for-web-browser-mail-clients"></a>Activer le déchiffrement côté service des pièces jointes pour les clients de messagerie de navigateur web
 
 Normalement, lorsque vous utilisez le chiffrement Office 365 messages, les pièces jointes sont automatiquement chiffrées. En tant qu’administrateur, vous pouvez appliquer le déchiffrement côté service pour les pièces jointes de courrier que les utilisateurs téléchargent à partir d’un navigateur web.
   
-Lorsque vous utilisez le déchiffrement côté service, le service envoie une copie déchiffrée du fichier à l’appareil. Le message est toujours chiffré. La pièce jointe conserve également les informations sur les droits d’utilisation, même si le navigateur n’applique pas de droits d’utilisation côté client à l’utilisateur. L’utilisateur peut copier ou imprimer la pièce jointe même s’il n’en avait pas à l’origine les droits. Toutefois, si l’utilisateur tente d’effectuer une action qui nécessite le serveur de messagerie Microsoft 365, telle que le forwarding de la pièce jointe, le serveur n’autorise pas l’action si l’utilisateur n’en avait pas à l’origine le droit d’utilisation.
+Lorsque vous utilisez le déchiffrement côté service, le service envoie une copie déchiffrée du fichier à l’appareil. Le message est toujours chiffré. La pièce jointe conserve également les informations sur les droits d’utilisation, même si le navigateur n’applique pas les droits d’utilisation côté client à l’utilisateur. L’utilisateur peut copier ou imprimer la pièce jointe même s’il n’en avait pas à l’origine les droits. Toutefois, si l’utilisateur tente d’effectuer une action qui nécessite le serveur de messagerie Microsoft 365, telle que le forwarding de la pièce jointe, le serveur n’autorise pas l’action si l’utilisateur n’en avait pas à l’origine le droit d’utilisation.
   
 Que vous setiez ou non le déchiffrement côté service des pièces jointes, les utilisateurs ne peuvent pas afficher les pièces jointes des messages chiffrés et protégés par des droits dans l’application de messagerie iOS.
   
 Si vous choisissez de ne pas autoriser les pièces jointes déchiffrées, qui est la valeur par défaut, les utilisateurs reçoivent un message qui indique qu’ils ne sont pas en droit d’afficher la pièce jointe.
   
-Pour plus d’informations sur la façon dont Microsoft 365 implémente le chiffrement pour les e-mails et les pièces jointes avec l’option Encrypt-Only, voir l’option Chiffrer uniquement pour [les e-mails.](/azure/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
+Pour plus d’informations sur la façon dont Microsoft 365 implémente le chiffrement pour les e-mails et les pièces jointes avec l’option Encrypt-Only, voir l’option Chiffrer uniquement pour les [e-mails.](/azure/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
   
 ### <a name="to-manage-whether-email-attachments-are-decrypted-on-download-from-a-web-browser"></a>Pour déterminer si les pièces jointes sont déchiffrées lors du téléchargement à partir d’un navigateur web
   
@@ -163,7 +163,7 @@ Pour plus d’informations sur la façon dont Microsoft 365 implémente le chiff
    Set-IRMConfiguration -DecryptAttachmentForEncryptOnly <$true|$false>
    ```
 
-   Par exemple, pour configurer le service afin de déchiffrer les pièces jointes lorsqu’un utilisateur les télécharge à partir d’un navigateur web :
+   Par exemple, pour configurer le service pour déchiffrer les pièces jointes lorsqu’un utilisateur les télécharge à partir d’un navigateur web :
 
    ```powershell
    Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true
@@ -175,7 +175,7 @@ Pour plus d’informations sur la façon dont Microsoft 365 implémente le chiff
    Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $false
    ```
 
-## <a name="ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail"></a>Vérifier que tous les destinataires externes utilisent le portail OME pour lire les messages chiffrés
+## <a name="ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail"></a>S’assurer que tous les destinataires externes utilisent le portail OME pour lire les messages chiffrés
 
 Vous pouvez utiliser des modèles de personnalisation pour obliger les destinataires à recevoir un message de wrapper qui les dirige vers la lecture de messages chiffrés dans le portail OME au lieu d’utiliser Outlook ou Outlook sur le web. Vous pouvez le faire si vous souhaitez mieux contrôler la façon dont les destinataires utilisent le courrier qu’ils reçoivent. Par exemple, si des destinataires externes visualisent le courrier électronique dans le portail web, vous pouvez définir une date d’expiration pour le courrier électronique et révoquer le courrier électronique. Ces fonctionnalités sont uniquement pris en charge via le portail OME. Vous pouvez utiliser l’option Chiffrer et l’option Ne pas forwarder lors de la création des règles de flux de messagerie.
 
@@ -193,9 +193,9 @@ Vous pouvez utiliser des modèles de personnalisation pour obliger les destinata
 
    - `mail flow rule name` est le nom que vous souhaitez utiliser pour la nouvelle règle de flux de messagerie.
 
-   - `option name` est soit `Encrypt` `Do Not Forward` ou .
+   - `option name` est soit `Encrypt` ou `Do Not Forward`.
 
-   - `template name` est le nom que vous avez donné au modèle de personnalisation, par exemple `OME Configuration` .
+   - `template name` est le nom que vous avez donné au modèle de personnalisation, par exemple `OME Configuration`.
 
    Pour chiffrer tous les messages externes à l’aide du modèle « Configuration OME » et appliquer lEncrypt-Only option :
 
@@ -211,23 +211,23 @@ Vous pouvez utiliser des modèles de personnalisation pour obliger les destinata
 
 ## <a name="customize-the-appearance-of-email-messages-and-the-ome-portal"></a>Personnaliser l’apparence des messages électroniques et du portail OME
 
-Pour plus d’informations sur la façon dont vous pouvez personnaliser OME pour votre organisation, voir Ajouter la marque de votre organisation [à vos messages chiffrés.](add-your-organization-brand-to-encrypted-messages.md)
+Pour plus d’informations sur la façon dont vous pouvez personnaliser OME pour votre organisation, voir Ajouter la marque de votre organisation [à vos messages chiffrés](add-your-organization-brand-to-encrypted-messages.md). Pour permettre le suivi et la révocation des messages chiffrés, vous devez ajouter votre personnalisation au portail OME.
   
 ## <a name="disable-the-new-capabilities-for-ome"></a>Désactiver les nouvelles fonctionnalités pour OME
 
-Nous espérons qu’elle n’y arrive pas, mais si nécessaire, la désactivation des nouvelles fonctionnalités pour OME est très simple. Tout d’abord, vous devez supprimer toutes les règles de flux de messagerie que vous avez créées qui utilisent les nouvelles fonctionnalités OME. Pour plus d’informations sur la suppression des règles de flux de messagerie, voir [Gérer les règles de flux de messagerie.](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) Ensuite, complétez ces étapes dans Exchange Online PowerShell.
+Nous espérons qu’elle n’y arrive pas, mais si nécessaire, la désactivation des nouvelles fonctionnalités pour OME est très simple. Tout d’abord, vous devez supprimer toutes les règles de flux de messagerie que vous avez créées qui utilisent les nouvelles fonctionnalités OME. Pour plus d’informations sur la suppression des règles de flux de messagerie, voir [Manage mail flow rules](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules). Ensuite, complétez ces étapes dans Exchange Online PowerShell.
   
 ### <a name="to-disable-the-new-capabilities-for-ome"></a>Pour désactiver les nouvelles fonctionnalités pour OME
   
 1. À l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Si vous avez  activé le bouton Chiffrer dans Outlook sur le web, désactivez-le en exécutant la cmdlet Set-IRMConfiguration avec le paramètre SimplifiedClientAccessEnabled. Sinon, ignorez cette étape.
+2. Si vous avez activé le  bouton Chiffrer dans Outlook sur le web, désactivez-le en exécutant l'Set-IRMConfiguration cmdlet avec le paramètre SimplifiedClientAccessEnabled. Sinon, ignorez cette étape.
 
    ```powershell
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
    ```
 
-3. Désactivez les nouvelles fonctionnalités pour OME en exécutant la cmdlet Set-IRMConfiguration avec le paramètre AzureRMSLicensingEnabled définie sur false :
+3. Désactivez les nouvelles fonctionnalités pour OME en exécutant l'Set-IRMConfiguration cmdlet avec le paramètre AzureRMSLicensingEnabled définie sur false :
 
    ```powershell
    Set-IRMConfiguration -AzureRMSLicensingEnabled $false

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 5673ac38577dbd87019a954eb388d6ab8f050328
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: bccbc7cf33d8be285bac801512de974f0277cf06
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504768"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512459"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>Afficher et modifier vos stratégies et paramètres de sécurité dans Microsoft Defender entreprise
 
@@ -33,11 +33,11 @@ ms.locfileid: "63504768"
 
 ## <a name="overview"></a>Aperçu
 
-Une fois que vous avez intégré les appareils de votre organisation à Microsoft Defender pour Entreprises, l’étape suivante consiste à afficher et, si nécessaire, à modifier vos stratégies et paramètres de sécurité. Les stratégies de sécurité sont les suivantes :
+Une fois que vous avez intégré les appareils de votre entreprise à Microsoft Defender pour Entreprises, l’étape suivante consiste à afficher et, si nécessaire, à modifier vos stratégies et paramètres de sécurité. Les stratégies de sécurité sont les suivantes :
 
-- **[Stratégies de protection nouvelle génération](#view-or-edit-your-next-generation-protection-policies)**, qui déterminent la protection antivirus et anti-programme malveillant pour les appareils de votre organisation
+- **[Stratégies de protection nouvelle génération](#view-or-edit-your-next-generation-protection-policies)**, qui déterminent la protection antivirus et anti-programme malveillant pour les appareils de votre entreprise
 
-- **[Protection et règles de pare-feu](#view-or-edit-your-firewall-policies-and-custom-rules)**, qui déterminent le trafic réseau autorisé à circuler vers ou depuis les appareils de votre organisation
+- **[Protection et règles de pare-feu](#view-or-edit-your-firewall-policies-and-custom-rules)**, qui déterminent le trafic réseau autorisé à circuler vers ou depuis les appareils de votre entreprise
 
 - **[Filtrage de contenu Web](#set-up-web-content-filtering)**, qui empêche les utilisateurs de visiter certains sites web (URL) en fonction de catégories, telles que le contenu pour adultes ou la responsabilité légale.
 
@@ -74,8 +74,8 @@ Le tableau suivant peut vous aider à choisir l’endroit où gérer vos straté
 
 | Option | Description |
 |:---|:---|
-| **Utiliser le Microsoft 365 Defender web** (*recommandé*) | Le Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) peut être votre magasin unique pour la gestion des appareils, des stratégies de sécurité et des paramètres de sécurité de votre organisation. Vous pouvez accéder à vos stratégies et paramètres de sécurité, utiliser votre tableau de bord gestion des menaces [&](mdb-view-tvm-dashboard.md) vulnérabilités, et afficher et gérer les [incidents](mdb-view-manage-incidents.md) au même endroit. <br/><br/>Si vous utilisez Microsoft Endpoint Manager, les appareils que vous intégrerez à Defender pour Entreprise et vos stratégies de sécurité sont visibles dans Endpoint Manager. Pour en savoir plus, consultez les articles suivants :<br/><br/>- [Paramètres et paramètres par défaut de Defender for Business Microsoft Endpoint Manager](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-endpoint-manager)<br/><br/>- [Pare-feu dans Microsoft Defender pour les entreprises](mdb-firewall.md)   |
-| **Utiliser Microsoft Endpoint Manager** | Si votre organisation utilise déjà Endpoint Manager (qui inclut Microsoft Intune) pour gérer les stratégies de sécurité, vous pouvez continuer à utiliser Endpoint Manager pour gérer les appareils et les stratégies de sécurité. Pour plus d’informations, voir [Gérer la sécurité des appareils avec les stratégies de sécurité des points de terminaison Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>Si vous décidez de basculer vers le processus de configuration simplifiée dans [Defender pour](mdb-simplified-configuration.md) les entreprises, vous serez invité à supprimer les [stratégies de sécurité existantes](mdb-troubleshooting.yml) dans Endpoint Manager afin d’éviter les conflits de stratégie ultérieurement. |
+| **Utiliser le Microsoft 365 Defender web** (*recommandé*) | Le Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) peut être votre magasin unique pour la gestion des appareils, des stratégies de sécurité et des paramètres de sécurité de votre entreprise. Vous pouvez accéder à vos stratégies et paramètres de sécurité, utiliser votre tableau de bord gestion des menaces [&](mdb-view-tvm-dashboard.md) vulnérabilités, et afficher et gérer les [incidents](mdb-view-manage-incidents.md) au même endroit. <br/><br/>Si vous utilisez Microsoft Endpoint Manager, les appareils que vous intégrerez à Defender pour Entreprise et vos stratégies de sécurité sont visibles dans Endpoint Manager. Pour en savoir plus, consultez les articles suivants :<br/><br/>- [Paramètres et paramètres par défaut de Defender for Business Microsoft Endpoint Manager](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-endpoint-manager)<br/><br/>- [Pare-feu dans Microsoft Defender pour les entreprises](mdb-firewall.md)   |
+| **Utiliser Microsoft Endpoint Manager** | Si votre entreprise utilise déjà Endpoint Manager (qui inclut Microsoft Intune) pour gérer les stratégies de sécurité, vous pouvez continuer à utiliser Endpoint Manager pour gérer les appareils et les stratégies de sécurité. Pour plus d’informations, voir [Gérer la sécurité des appareils avec les stratégies de sécurité des points de terminaison Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>Si vous décidez de basculer vers le processus de configuration simplifiée dans [Defender pour](mdb-simplified-configuration.md) les entreprises, vous serez invité à supprimer les [stratégies de sécurité existantes](mdb-troubleshooting.yml) dans Endpoint Manager afin d’éviter les conflits de stratégie ultérieurement. |
 
 > [!IMPORTANT]
 > Si vous gérez des stratégies de sécurité dans le portail Microsoft 365 Defender, vous  pouvez afficher ces stratégies dans Endpoint Manager, répertoriées en tant que stratégies antivirus ou pare-feu. Lorsque vous affichez vos stratégies de pare-feu dans Endpoint Manager, deux stratégies sont répertoriées : une stratégie pour la protection de votre pare-feu et une autre pour les règles personnalisées.
@@ -112,7 +112,7 @@ Le filtrage de contenu Web permet à votre équipe de sécurité de suivre et de
 
 - Non catégorisé : sites qui n’ont pas de contenu ou qui sont nouvellement inscrits
 
-Tous les sites web de ces catégories ne sont pas malveillants, mais ils peuvent être problématiques pour votre organisation en raison de réglementations de conformité, d’utilisation de la bande passante ou d’autres problèmes. En outre, vous pouvez créer une stratégie d’audit uniquement pour mieux comprendre si votre équipe de sécurité doit bloquer les catégories de sites web.
+Tous les sites web de ces catégories ne sont pas malveillants, mais ils peuvent être problématiques pour votre entreprise en raison de réglementations de conformité, d’utilisation de la bande passante ou d’autres problèmes. En outre, vous pouvez créer une stratégie d’audit uniquement pour mieux comprendre si votre équipe de sécurité doit bloquer les catégories de sites web.
 
 Le filtrage de contenu Web est disponible sur les principaux navigateurs web, avec des blocs exécutés par Windows Defender SmartScreen (Microsoft Edge) et la Protection du réseau (Chrome, Firefox, Firefox et Opera). Pour plus d’informations, [voir Conditions préalables pour le filtrage de contenu web](../defender-endpoint/web-content-filtering.md#prerequisites).
 
@@ -153,7 +153,7 @@ Le tableau suivant décrit les paramètres à afficher (et, si nécessaire, modi
 | **Centre de sécurité** | **Fuseau horaire** | Sélectionnez le fuseau horaire à utiliser pour les dates et heures affichées dans les incidents, les menaces détectées et les examens automatisés & correction. Vous pouvez utiliser l’heure UTC ou votre fuseau horaire local (*recommandé*).  |
 | **Microsoft 365 Defender** | **Account** | Afficher des détails, tels que l’endroit où vos données sont stockées, votre ID de client et l’ID de votre organisation (organisation). |
 | **Microsoft 365 Defender**  | **Fonctionnalités en préversion**  | Activer les fonctionnalités d’aperçu pour essayer les fonctionnalités à venir et les nouvelles fonctionnalités. Vous pouvez être parmi les premiers à afficher un aperçu des nouvelles fonctionnalités et à fournir des commentaires. |
-| **Points de terminaison**  | **Notifications par courrier électronique** | Configurer ou modifier vos règles de notification par courrier électronique. Lorsque des vulnérabilités sont détectées ou qu’une alerte est créée, les destinataires spécifiés dans vos règles de notification par courrier électronique reçoivent un e-mail. [En savoir plus sur les notifications par courrier électronique](mdb-email-notifications.md). |
+| **Points de terminaison**  | **Notifications par e-mail** | Configurer ou modifier vos règles de notification par courrier électronique. Lorsque des vulnérabilités sont détectées ou qu’une alerte est créée, les destinataires spécifiés dans vos règles de notification par courrier électronique reçoivent un e-mail. [En savoir plus sur les notifications par courrier électronique](mdb-email-notifications.md). |
 | **Points de terminaison**   | **Gestion des appareils** >  **Intégration** | Intégrer des appareils à Defender for Business à l’aide d’un script téléchargeable. Pour en savoir plus, [consultez Intégrer des appareils à Microsoft Defender pour Entreprises](mdb-onboard-devices.md).   |  
 | **Points de terminaison**  |  **Gestion des appareils** >  **Offboarding** | Déboardez (supprimez) les appareils de Defender for Business. Lorsque vousboardez un appareil, il n’envoie plus de données à Defender for Business, mais les données reçues avant laboarding sont conservées. Pour en savoir plus, consultez [Laboarding d’un appareil](mdb-onboard-devices.md#offboarding-a-device).  |
 
@@ -166,7 +166,7 @@ Le tableau suivant décrit les paramètres à afficher (et, si nécessaire, modi
 3. Dans la liste des paramètres, sélectionnez un élément à afficher ou à modifier.
 
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Procédez à une ou plusieurs des tâches suivantes :
 

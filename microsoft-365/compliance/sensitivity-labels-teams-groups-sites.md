@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 39caee37f8bf8b2f885824bbdd12ca7b5b372e69
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 46daf3ecd4c918196fa7a50f8e8869bdd54c945e
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320506"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504812"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -327,7 +327,7 @@ Vous pouvez également modifier et appliquer une étiquette à partir de cette p
 
 ## <a name="support-for-sensitivity-labels"></a>Prise en charge des étiquettes de confidentialité
 
-Lorsque vous utilisez des centres d’administration qui prennent en charge les étiquettes de confidentialité, vous voyez toutes les étiquettes de confidentialité pour votre client. En comparaison, les applications utilisateur et les services qui filtrent les étiquettes de confidentialité en fonction des stratégies de publication peuvent vous faire voir un sous-ensemble de ces étiquettes.
+Lorsque vous utilisez des centres d’administration qui prennent en charge les étiquettes de confidentialité, à l’exception du portail Azure Active Directory, vous pouvez afficher toutes les étiquettes de confidentialité de votre client. En comparaison, les applications utilisateur et les services qui filtrent les étiquettes de confidentialité en fonction des stratégies de publication peuvent vous faire voir un sous-ensemble de ces étiquettes. Le portail Azure Active Directory filtre également les étiquettes en fonction des stratégies de publication.
 
 Les applications et services suivants prennent en charge les étiquettes de confidentialité configurées pour les sites et les paramètres de groupe :
 
@@ -335,9 +335,9 @@ Les applications et services suivants prennent en charge les étiquettes de conf
 
   - Centre d’administration SharePoint
   - Centre d’administration Microsoft Teams
-  - Portail Azure Active Directory
   - Centre d’administration Microsoft 365
   - Centre de conformité Microsoft 365
+  - Portail Azure Active Directory
 
 - Utiliser les applications et services :
 
@@ -359,7 +359,7 @@ Les applications et services suivants ne prennent actuellement pas en charge les
   - Dynamics 365
   - Yammer
   - Project
-  - Power BI
+  - Power BI
 
 ## <a name="classic-azure-ad-group-classification"></a>Classification classique de groupes Azure Active Directory
 

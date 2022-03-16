@@ -145,9 +145,9 @@
               href: add-users/remove-former-employee-step-1.md
             - name: 'Étape 2 : Enregistrer le contenu de la boîte aux lettres d''un ancien employé'
               href: add-users/remove-former-employee-step-2.md
-            - name: Étape 3. Réinitialiser et bloquer l'appareil mobile d'un ancien employé
+            - name: Étape 3. Réinitialiser et bloquer l’appareil mobile d’un ancien employé
               href: add-users/remove-former-employee-step-3.md
-            - name: Étape 4. Transférer l'adresse e-mail d'un ancien employé à un autre employé ou la convertir en boîte aux lettres partagée
+            - name: Étape 4. Transférer l’e-mail d’un ancien employé à un autre employé ou convertir en boîte aux lettres partagée
               href: add-users/remove-former-employee-step-4.md
             - name: Étape 5. Accorder à un autre employé l’accès aux données OneDrive et Outlook
               href: add-users/remove-former-employee-step-5.md
@@ -344,12 +344,12 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Gérer et surveiller les comptes de priorité
           href: setup/priority-accounts.md
+        - name: Activer le délai d’expiration de la session inactive
+          href: manage/idle-session-timeout-web-apps.md
         - name: Activer l’authentification moderne pour Office 2013
           href: security-and-compliance/enable-modern-authentication.md
         - name: Conditions préalables pour la protection des données
           href: security-and-compliance/pre-requisites-for-data-protection.md
-        - name: Fonctionnalités de sécurité
-          href: security-and-compliance/secure-your-business-data.md
         - name: Renforcer la protection contre les menaces
           href: security-and-compliance/increase-threat-protection.md
         - name: Menaces détectées par l’antivirus Microsoft Defender

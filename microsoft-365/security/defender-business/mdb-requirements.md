@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 3fd3f272fee91e8ca14d667d953b65b1122284db
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: d7336e06aa970ac9fc08cafcb50f8bbed040c8a8
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468679"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512305"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>Exigences de Microsoft Defender pour les entreprises
 
@@ -56,7 +56,7 @@ Le tableau suivant répertorie les conditions de base requises pour configurer e
 | Autorisations  | Pour vous inscrire à Microsoft Defender pour les entreprises, vous devez être un administrateur global.<br/><br/>Pour accéder au portail Microsoft 365 Defender, les utilisateurs doivent avoir l’un des rôles suivants [Azure AD](mdb-roles-permissions.md) affectés : <br/>- Lecteur sécurité<br/>- Administrateur de sécurité<br/>- Administrateur général<br/><br/>Pour en savoir plus, consultez [Rôles et autorisations dans Microsoft Defender entreprise](mdb-roles-permissions.md). |
 | Configuration requise pour le navigateur | Microsoft Edge ou Google Chrome |
 | Système d’exploitation | Pour gérer les appareils dans Microsoft Defender entreprise, vos appareils doivent être en cours d’exécution sur l’un des systèmes d’exploitation suivants : <br/>- Windows 10 Business ou ultérieure <br/>- Windows 10 Professional ou ultérieure <br/>- Windows 10 Entreprise ou ultérieure <br/><br/>Assurez-vous [que la KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) est installée. <br/><br/>Si vous gérez déjà des appareils dans Microsoft Intune (ou Microsoft Endpoint Manager), vous pouvez intégrer ces appareils à Defender for Business. |
-| Intégration à Microsoft Endpoint Manager  | Si vous prévoyez d’intégrer des appareils à l’aide de la configuration de sécurité [de Microsoft Defender](mdb-onboard-devices.md#microsoft-defender-for-business-security-configuration) entreprise, les conditions suivantes doivent être remplies :<br/><br/>Les conditions préalables doivent être remplies [pour la gestion de la sécurité pour Microsoft Defender pour le point de terminaison](/mem/intune/protect/mde-security-integration).<br/>- Azure AD doivent être configurées de telle manière que l’relation d’confiance soit créée entre les appareils de votre organisation et les Azure AD. <br/>- La gestion de la sécurité doit être activée dans Defender pour les Microsoft Endpoint Manager.<br/><br/>Les appareils doivent pouvoir se connecter aux URL suivantes :<br/>- `enterpriseregistration.windows.net`(pour l’inscription dans Azure AD)<br/>- `login.microsoftonline.com`(pour l’inscription dans Azure AD)<br/>- `*.dm.microsoft.com` (Le caractère générique (*) prend en charge les points de terminaison du service cloud qui sont utilisés pour l’inscription, l’enregistrement et les rapports, et peut changer à mesure que le service est à l’échelle.) |
+| Intégration à Microsoft Endpoint Manager  | Si vous prévoyez d’intégrer des appareils à l’aide de la configuration de sécurité [de Microsoft Defender](mdb-onboard-devices.md#microsoft-defender-for-business-security-configuration) entreprise, les conditions suivantes doivent être remplies :<br/><br/>Les conditions préalables doivent être remplies [pour la gestion de la sécurité pour Microsoft Defender pour le point de terminaison](/mem/intune/protect/mde-security-integration).<br/>- Azure AD doivent être configurées de telle manière que l’relation d’confiance soit créée entre les appareils de votre entreprise et les Azure AD. <br/>- La gestion de la sécurité doit être activée dans Defender pour les Microsoft Endpoint Manager.<br/><br/>Les appareils doivent pouvoir se connecter aux URL suivantes :<br/>- `enterpriseregistration.windows.net`(pour l’inscription dans Azure AD)<br/>- `login.microsoftonline.com`(pour l’inscription dans Azure AD)<br/>- `*.dm.microsoft.com` (Le caractère générique (*) prend en charge les points de terminaison du service cloud qui sont utilisés pour l’inscription, l’enregistrement et les rapports, et peut changer à mesure que le service est à l’échelle.) |
 
 > [!NOTE]
 > [Azure Active Directory (Azure AD) permet](/azure/active-directory/fundamentals/active-directory-whatis) de gérer les autorisations utilisateur et les groupes d’appareils. Azure AD est inclus dans votre abonnement Defender entreprise. 

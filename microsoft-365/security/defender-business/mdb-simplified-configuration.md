@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/01/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 5a2e38768ed1b2cf554aefde68ccb133aa13c6a4
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 5a5b78515176de74fd97430b638782c3e453d917
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449126"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512739"
 ---
 # <a name="the-simplified-configuration-process-in-microsoft-defender-for-business"></a>Processus de configuration simplifié dans Microsoft Defender entreprise
 
@@ -31,9 +31,9 @@ ms.locfileid: "63449126"
 > 
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
-Microsoft Defender pour Entreprises propose un processus de configuration simplifié, conçu en particulier pour les petites et moyennes entreprises. Cette expérience tire le risque de l’intégration et de la gestion des appareils, avec une expérience de l’assistant et des stratégies par défaut conçues pour protéger les appareils de votre organisation dès le premier jour. **Nous vous recommandons d’utiliser le processus de configuration simplifié; toutefois, vous n’êtes pas limité à cette option**.
+Microsoft Defender pour Entreprises propose un processus de configuration simplifié, conçu en particulier pour les petites et moyennes entreprises. Cette expérience tire le risque de l’intégration et de la gestion des appareils, avec une expérience de l’assistant et des stratégies par défaut conçues pour protéger les appareils de votre entreprise dès le premier jour. **Nous vous recommandons d’utiliser le processus de configuration simplifié; toutefois, vous n’êtes pas limité à cette option**.
 
-En ce qui concerne l’intégration d’appareils et la configuration des paramètres de sécurité pour les appareils de votre organisation, vous pouvez choisir parmi plusieurs expériences : 
+En ce qui concerne l’intégration d’appareils et la configuration des paramètres de sécurité pour les appareils de votre entreprise, vous pouvez choisir parmi plusieurs expériences : 
 
 - Processus de configuration simplifié dans Microsoft Defender entreprise (*recommandé*) 
 - Microsoft Endpoint Manager, qui inclut Microsoft Intune (inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md))
@@ -59,16 +59,16 @@ Le tableau suivant décrit chaque expérience :
 
 | Expérience de portail  | Description  |
 |---------|---------|
-| Expérience de configuration simplifiée dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) <br/>(*Il s’agit de l’option recommandée pour la plupart des clients*)  | L’expérience de configuration simplifiée inclut une expérience similaire à celle d’un Assistant pour vous aider à configurer Defender pour les entreprises. La configuration simplifiée inclut également des stratégies et des paramètres de sécurité par défaut pour vous aider à protéger les appareils de votre organisation dès qu’ils sont intégrés à Defender for Business. <br/><br/>Avec cette expérience, votre équipe de sécurité utilise le portail Microsoft 365 Defender pour : <br/>- Installer et configurer Defender pour les entreprises <br/>- Afficher et gérer les incidents<br/>- Répondre aux menaces et les atténuer<br/>- Afficher les rapports<br/>- Examiner les actions en attente ou terminées <br/><br/> Le portail Microsoft 365 Defender est votre magasin unique pour les paramètres de sécurité et les fonctionnalités de protection contre les menaces de votre organisation. Vous obtenez une expérience simplifiée pour vous aider à démarrer rapidement et efficacement. Pour plus d’informations, [voir Utiliser l’Assistant pour configurer Microsoft Defender pour les entreprises](mdb-use-wizard.md).<br/><br/>De plus, vous pouvez modifier vos paramètres ou définir de nouvelles stratégies en fonction des besoins de votre organisation.<br/><br/>Pour plus d’informations, voir [Afficher ou modifier des stratégies d’appareil dans Microsoft Defender entreprise](mdb-view-edit-policies.md). |
-| Le centre Microsoft Endpoint Manager’administration centrale ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  | Microsoft Endpoint Manager inclut Microsoft Intune, un fournisseur de gestion des périphériques mobiles (MDM) basé sur le cloud et de gestion des applications mobiles (MAM) pour les applications et les appareils. [Microsoft 365 Business Premium](../../business-premium/index.md) clients ont déjà Endpoint Manager. <br/><br/>De nombreuses organisations utilisent Intune pour gérer leurs appareils, tels que les téléphones mobiles, les tablettes et les ordinateurs portables. Pour en savoir plus, voir Microsoft Intune est un fournisseur de gestion des appareils mobiles et [de gestion des appareils mobiles pour vos appareils](/mem/intune/fundamentals/what-is-intune). <br/><br/>Si vous utilisez déjà Microsoft Intune ou Microsoft Endpoint Manager, vous pouvez continuer à utiliser cette solution. |
+| Expérience de configuration simplifiée dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) <br/>(*Il s’agit de l’option recommandée pour la plupart des clients*)  | L’expérience de configuration simplifiée inclut une expérience similaire à celle d’un Assistant pour vous aider à configurer Defender pour les entreprises. La configuration simplifiée inclut également des stratégies et des paramètres de sécurité par défaut pour vous aider à protéger les appareils de votre entreprise dès qu’ils sont intégrés à Defender for Business. <br/><br/>Avec cette expérience, votre équipe de sécurité utilise le portail Microsoft 365 Defender pour : <br/>- Installer et configurer Defender pour les entreprises <br/>- Afficher et gérer les incidents<br/>- Répondre aux menaces et les atténuer<br/>- Afficher les rapports<br/>- Examiner les actions en attente ou terminées <br/><br/> Le Microsoft 365 Defender de sécurité est votre magasin unique pour les paramètres de sécurité et les fonctionnalités de protection contre les menaces de votre entreprise. Vous obtenez une expérience simplifiée pour vous aider à démarrer rapidement et efficacement. Pour plus d’informations, [voir Utiliser l’Assistant pour configurer Microsoft Defender pour les entreprises](mdb-use-wizard.md).<br/><br/>De plus, vous pouvez modifier vos paramètres ou définir de nouvelles stratégies en fonction des besoins de votre entreprise.<br/><br/>Pour plus d’informations, voir [Afficher ou modifier des stratégies d’appareil dans Microsoft Defender entreprise](mdb-view-edit-policies.md). |
+| Le centre Microsoft Endpoint Manager’administration centrale ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  | Microsoft Endpoint Manager inclut Microsoft Intune, un fournisseur de gestion des périphériques mobiles (MDM) basé sur le cloud et de gestion des applications mobiles (MAM) pour les applications et les appareils. [Microsoft 365 Business Premium](../../business-premium/index.md) clients ont déjà Endpoint Manager. <br/><br/>De nombreuses entreprises utilisent Intune pour gérer leurs appareils, tels que les téléphones mobiles, les tablettes et les ordinateurs portables. Pour en savoir plus, voir Microsoft Intune est un fournisseur de gestion des appareils mobiles et [de gestion des appareils mobiles pour vos appareils](/mem/intune/fundamentals/what-is-intune). <br/><br/>Si vous utilisez déjà Microsoft Intune ou Microsoft Endpoint Manager, vous pouvez continuer à utiliser cette solution. |
 | Votre solution de gestion des appareils non-Microsoft  | Si vous utilisez une solution de gestion des appareils et de productivité non Microsoft, vous pouvez continuer à utiliser cette solution avec Defender pour Les Entreprises. <br/><br/>Lorsque les appareils sont intégrés à Defender for Business, leur état et leurs alertes s’Microsoft 365 Defender portail. Pour en savoir plus, consultez [les options de l’outil d’intégration et de configuration de Defender pour Endpoint](../defender-endpoint/onboard-configure.md). |
 
 
 ## <a name="why-we-recommend-using-the-simplified-configuration-process"></a>Pourquoi nous vous recommandons d’utiliser le processus de configuration simplifié
 
-**Nous vous recommandons d’utiliser le processus de configuration simplifié dans Microsoft Defender entreprise** pour la plupart des clients. Le processus de configuration simplifié est simplifié, en particulier pour les petites et moyennes entreprises. Defender pour les entreprises est conçu pour vous aider à protéger les appareils de votre organisation le premier jour, sans nécessiter une expertise technique approfondie ou des connaissances spéciales. Avec les stratégies et paramètres de sécurité par défaut, vos appareils sont protégés dès qu’ils sont intégrés.
+**Nous vous recommandons d’utiliser le processus de configuration simplifié dans Microsoft Defender entreprise** pour la plupart des clients. Le processus de configuration simplifié est simplifié, en particulier pour les petites et moyennes entreprises. Defender pour les entreprises est conçu pour vous aider à protéger les appareils de votre entreprise le premier jour, sans nécessiter une expertise technique approfondie ou des connaissances spéciales. Avec les stratégies et paramètres de sécurité par défaut, vos appareils sont protégés dès qu’ils sont intégrés.
 
-Defender for Business est conçu pour fournir une protection renforcée tout en vous faisant gagner du temps et des efforts dans la configuration de vos paramètres de sécurité. L’expérience simplifiée du portail Microsoft 365 Defender facilite l’intégration et la gestion des appareils. En outre, les stratégies par défaut sont incluses afin que les appareils de votre organisation soient protégés dès qu’ils sont intégrés. Vous pouvez conserver vos paramètres par défaut tels qu’ils sont ou apporter des modifications en fonction des besoins de votre entreprise. Vous pouvez également ajouter de nouvelles stratégies pour gérer les appareils selon vos besoins.
+Defender for Business est conçu pour fournir une protection renforcée tout en vous faisant gagner du temps et des efforts dans la configuration de vos paramètres de sécurité. L’expérience simplifiée du portail Microsoft 365 Defender facilite l’intégration et la gestion des appareils. En outre, les stratégies par défaut sont incluses afin que les appareils de votre entreprise soient protégés dès qu’ils sont intégrés. Vous pouvez conserver vos paramètres par défaut tels qu’ils sont ou apporter des modifications en fonction des besoins de votre entreprise. Vous pouvez également ajouter de nouvelles stratégies pour gérer les appareils selon vos besoins.
 
 ## <a name="next-steps"></a>Prochaines étapes
 

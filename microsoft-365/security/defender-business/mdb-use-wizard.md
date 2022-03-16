@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/10/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 2cc157e363c42b94cac750b19a6122ed0a22c3de
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: b55af496881489279a7a6f96ed386ab2a26c2fa5
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450757"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512599"
 ---
 # <a name="use-the-wizard-to-set-up-microsoft-defender-for-business"></a>Utiliser l’Assistant pour configurer Microsoft Defender pour les entreprises
 
@@ -51,13 +51,13 @@ L’Assistant est conçu pour vous aider à configurer Defender pour Entreprise 
    - Un administrateur de sécurité peut afficher et modifier les paramètres de sécurité. 
    - Un lecteur de sécurité peut uniquement afficher des informations dans les rapports. 
 
-2. **Intégrer et configurer Windows appareils.** Au cours de cette étape, vous pouvez intégrer rapidement les appareils Windows de votre organisation à Defender for Business. L’intégration immédiate d’appareils permet de protéger ces appareils dès le premier jour. Pour [plus d’informations, voir Appareils](mdb-onboard-devices.md) intégrés à Microsoft Defender entreprise.
+2. **Intégrer et configurer Windows appareils.** Au cours de cette étape, vous pouvez intégrer rapidement les appareils Windows de votre entreprise à Defender for Business. L’intégration immédiate d’appareils permet de protéger ces appareils dès le premier jour. Pour [plus d’informations, voir Appareils](mdb-onboard-devices.md) intégrés à Microsoft Defender entreprise.
 
-   - Si vous utilisez déjà Microsoft Intune (partie de Microsoft Endpoint Manager) et que votre organisation dispose d’appareils inscrits dans Endpoint Manager, vous êtes invité à utiliser l’intégration automatique pour une partie ou la plupart de [](mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager) vos appareils Windows inscrits. L’intégration automatique définit une connexion entre Endpoint Manager et Defender pour Entreprise, puis intègre Windows appareils à Defender pour Entreprise en toute transparence.
+   - Si vous utilisez déjà Microsoft Intune (partie de Microsoft Endpoint Manager) et que votre entreprise dispose d’appareils inscrits dans Endpoint Manager, vous êtes invité à utiliser l’intégration automatique pour une partie ou la plupart de vos [](mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager) appareils Windows inscrits. L’intégration automatique définit une connexion entre Endpoint Manager et Defender pour Entreprise, puis intègre Windows appareils à Defender pour Entreprise en toute transparence.
 
    - Si vous n’utilisez pas déjà Endpoint Manager ou si vous avez des appareils non Windows inscrits dans Endpoint Manager, vous pouvez intégrer manuellement des appareils à [Defender for Business](mdb-onboard-devices.md#local-script-in-defender-for-business). 
    
-3. **Configurez vos stratégies de sécurité**. Defender pour les entreprises inclut des stratégies de sécurité par défaut pour la protection nouvelle génération et la protection pare-feu qui peuvent être appliquées aux appareils de votre organisation. Ces stratégies par défaut utilisent les paramètres recommandés et sont conçues pour fournir une protection forte pour vos appareils. 
+3. **Configurez vos stratégies de sécurité**. Defender pour les entreprises inclut des stratégies de sécurité par défaut pour la protection nouvelle génération et la protection pare-feu qui peuvent être appliquées aux appareils de votre entreprise. Ces stratégies par défaut utilisent les paramètres recommandés et sont conçues pour fournir une protection forte pour vos appareils. 
 
    Vous pouvez également créer vos propres stratégies de sécurité si vous le souhaitez. Et, si vous utilisez déjà Endpoint Manager, vous pouvez continuer à l’utiliser pour gérer vos stratégies de sécurité. 
 

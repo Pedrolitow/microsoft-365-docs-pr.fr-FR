@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, obtenez de l’aide pour résoudre les problèmes et les messages d’erreur.
-ms.openlocfilehash: da1a247c789754f75642caff78418a0b405ec5b0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e39eea66222852d8f331aa6bc68b386bea3da763
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330821"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63513031"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>Résoudre les problèmes et les messages d’erreur dans Microsoft 365 Lighthouse
 
@@ -128,16 +128,10 @@ Pour les clients ayant des relations DAP, l’administrateur partenaire doit vou
 
 **Résolution :** Lorsqu’un appareil client est ajouté, autorisez 4 heures pour que les données de l’appareil apparaissent dans le Périphérique.
 
-Si les données n’apparaissent toujours pas dans les pages de conformité des appareils et de gestion des menaces après avoir suivi les instructions de résolution, contactez le support technique. Pour plus d’informations, voir [Obtenir de l’aide et de l’aide pour Microsoft 365 Etant.](m365-lighthouse-get-help-and-support.md)
-
-### <a name="there-are-no-windows-365-business-cloud-pcs-in-lighthouse"></a>Il n’y a pas de PC cloud Windows 365 Business en cours de mise en place  
-
-**Cause** : la technologie Ne prend actuellement pas en charge l’affichage et la gestion des PC cloud Windows 365 Business.
-
-**Résolution :** Vous pouvez afficher et gérer vos PC cloud Windows 365 Business dans le Centre d’administration [Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) ou à l’adresse .[https://windows365.microsoft.com](https://windows365.microsoft.com)
+Si les données n’apparaissent toujours pas dans les pages de conformité des appareils et de gestion des menaces après avoir suivi les instructions de résolution, contactez le support technique. Pour plus d’informations, voir [Obtenir de l’aide et du support pour Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
 ## <a name="related-content"></a>Contenu associé
 
-[Problèmes connus avec le microsoft 365 - Île](m365-lighthouse-known-issues.md) (article)\
-[FORUM AUX QUESTIONS Microsoft 365 Faq](m365-lighthouse-faq.yml) (article)\
-[Obtenir de l’aide et de l’aide pour Microsoft 365(](m365-lighthouse-get-help-and-support.md) article)
+[Problèmes connus avec Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (article)\
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
+[Obtenir de l’aide et du support Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (article)

@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e337ef74975bd761de89b4aaae03379344efeed
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ac50568f9ce995f658e6b06c3a2b13b666211810
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311898"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512347"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Lorsque vous créez une étiquette de sensibilité, vous pouvez restreindre l’accès au contenu auquel l’étiquette sera appliquée. Par exemple, avec les paramètres de chiffrement d’une étiquette de sensibilité, vous pouvez protéger le contenu comme suit :
 
@@ -252,7 +252,7 @@ Pour plus d’informations, reportez-vous à [Émetteur Rights Management et pro
 > [!NOTE]
 > Cette fonctionnalité est actuellement prise en charge uniquement par le client de l’étiquetage unifié de la Protection d’Information Azure.
 
-Sélectionnez cette option une fois que vous avez configuré le service Chiffrement à double clé et que vous devez l’utiliser pour les fichiers auxquels cette étiquette est appliquée.
+Ne sélectionnez cette option qu'après avoir configuré le service de cryptage à double clé et que vous devez utiliser ce cryptage à double clé pour les fichiers auxquels ce label sera appliqué. Une fois l'étiquette configurée et enregistrée, vous ne pourrez plus la modifier.
 
 Pour consulter des informations supplémentaires, la configuration requise et des instructions de configuration, voir [Chiffrement à double clé](double-key-encryption.md).
 
@@ -431,7 +431,7 @@ Le chiffrement de vos documents et messages électroniques les plus confidentiel
 
 - Lorsque les utilisateurs autorisés ouvrent des documents chiffrés dans leurs applications Office, ils voient le nom et la description de l’étiquette dans une barre de messages jaune en haut de leur application. Lorsque les autorisations de chiffrement s’étendent à des personnes extérieures à votre organisation, examinez attentivement les noms d’étiquettes et les descriptions qui seront visibles dans cette barre de messages lors de l’ouverture du document.
 
-- Pour que plusieurs utilisateurs modifient un fichier chiffré en même temps, ils doivent tous utiliser Microsoft Office sur le web ou vous avez activé la [co-création pour les fichiers chiffrés avec des étiquettes de confidentialité](sensitivity-labels-coauthoring.md) et tous les utilisateurs disposent [d’applications Office qui la prise en charge](sensitivity-labels-coauthoring.md#prerequisites). Si ce n’est pas le cas et que le fichier est déjà ouvert :
+- Pour que plusieurs utilisateurs modifient un fichier chiffré en même temps, ils doivent tous utiliser Microsoft Office sur le web ou vous avez activé la [co-création pour les fichiers chiffrés avec des étiquettes de confidentialité](sensitivity-labels-coauthoring.md) et tous les utilisateurs disposent [d’applications Office qui la prise en charge](sensitivity-labels-coauthoring.md#prerequisites). Si ce n’est pas le cas, mais que les fichiers sont déjà ouverts :
 
   - Dans les applications Office (Windows, Mac, Android et iOS), les utilisateurs remarquent le message **Fichier en cours d'utilisation** incluant le nom de la personne ayant extrait le fichier. Ils peuvent ensuite afficher une copie en lecture seule, enregistrer et modifier une copie du fichier, et recevoir une notification lorsque le fichier est disponible.
   - Dans Office pour le web, les utilisateurs remarquent un message d’erreur indiquant qu’ils ne peuvent pas modifier le document avec d’autres personnes. Puis, ils peuvent sélectionner **Ouvrir en Mode Lecture**.

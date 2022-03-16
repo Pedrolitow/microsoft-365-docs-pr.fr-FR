@@ -7,18 +7,18 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: e8fc4782d106e46061bf0c75cb3d5ed5400e9980
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 336a0d053f2fe3a14626ffe4aa2c7df56eecebda
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449370"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512879"
 ---
 # <a name="set-up-email-notifications"></a>Configurer les notifications par courrier électronique
 
@@ -61,7 +61,7 @@ Lorsque vous définissez des notifications par courrier électronique, vous pouv
 
 ## <a name="view-and-edit-email-notifications"></a>Afficher et modifier les notifications par courrier électronique
 
-Pour afficher ou modifier les paramètres de notification par courrier électronique pour votre organisation, suivez les étapes suivantes :
+Pour afficher ou modifier les paramètres de notification par courrier électronique pour votre entreprise, suivez les étapes suivantes :
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 

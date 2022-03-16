@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: fdac3d71ee69618b7e0dc6d878eed558cf323b65
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 9644df7d4681a3f425c82f2f47bdb2ad50c75483
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450659"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512753"
 ---
 # <a name="firewall-in-microsoft-defender-for-business"></a>Pare-feu dans Microsoft Defender pour les entreprises
 
@@ -32,7 +32,7 @@ ms.locfileid: "63450659"
 
 Microsoft Defender pour les entreprises inclut des fonctionnalités de pare-feu avec [Windows Defender pare-feu](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). La protection pare-feu permet de sécuriser les appareils avec des règles qui déterminent le trafic réseau autorisé à entrer ou à circuler à partir d’appareils. 
 
-Vous pouvez utiliser la protection pare-feu pour spécifier s’il faut autoriser ou bloquer les connexions sur des appareils à différents emplacements. Par exemple, vos paramètres de pare-feu peuvent autoriser les connexions entrantes sur les appareils connectés au réseau interne de votre organisation, mais empêcher ces connexions lorsque l’appareil se trouve sur un réseau avec des appareils non utilisés.
+Vous pouvez utiliser la protection pare-feu pour spécifier s’il faut autoriser ou bloquer les connexions sur des appareils à différents emplacements. Par exemple, vos paramètres de pare-feu peuvent autoriser les connexions entrantes sur les appareils connectés au réseau interne de votre entreprise, mais empêcher ces connexions lorsque l’appareil se trouve sur un réseau avec des appareils non utilisés.
 
 **Cet article décrit** :
 
@@ -47,10 +47,10 @@ Vous pouvez utiliser la protection pare-feu pour spécifier s’il faut autorise
 
 ## <a name="default-firewall-settings-in-defender-for-business"></a>Paramètres de pare-feu par défaut dans Defender pour les entreprises
 
-Microsoft Defender pour les entreprises inclut des stratégies et des paramètres de pare-feu par défaut pour protéger les appareils de votre organisation dès le premier jour. Dès que les appareils de votre organisation sont intégrés à Microsoft Defender pour Entreprises, votre stratégie de pare-feu par défaut fonctionne comme suit :
+Microsoft Defender pour les entreprises inclut des stratégies et des paramètres de pare-feu par défaut pour protéger les appareils de votre entreprise dès le premier jour. Dès que les appareils de votre entreprise sont intégrés à Microsoft Defender pour Entreprises, votre stratégie de pare-feu par défaut fonctionne comme suit :
 
 - Les connexions sortantes à partir d’appareils sont autorisées par défaut, quel que soit l’emplacement.
-- Lorsque des appareils sont connectés au réseau de votre organisation, toutes les connexions entrantes sont bloquées par défaut.
+- Lorsque des appareils sont connectés au réseau de votre entreprise, toutes les connexions entrantes sont bloquées par défaut.
 - Lorsque des appareils sont connectés à un réseau public ou privé, toutes les connexions entrantes sont bloquées par défaut.
 
 Dans Microsoft Defender entreprise, vous pouvez définir des exceptions pour bloquer ou autoriser les connexions entrantes. Vous définissez ces exceptions en créant des règles personnalisées. Voir [Gérer les règles personnalisées pour les stratégies de pare-feu](mdb-custom-rules-firewall.md).
@@ -61,7 +61,7 @@ Microsoft Defender pour les entreprises inclut une protection pare-feu par Windo
 
 | Setting | Description |
 |--|--|
-| **Réseau de domaine** | Le profil réseau de domaine s’applique au réseau de votre organisation. Les paramètres de pare-feu de votre réseau de domaine s’appliquent aux connexions entrantes qui sont lancées sur d’autres appareils qui se connectent au même réseau. Par défaut, les connexions entrantes sont définies sur **Bloquer tout**.  |
+| **Réseau de domaine** | Le profil réseau de domaine s’applique au réseau de votre entreprise. Les paramètres de pare-feu de votre réseau de domaine s’appliquent aux connexions entrantes qui sont lancées sur d’autres appareils qui se connectent au même réseau. Par défaut, les connexions entrantes sont définies sur **Bloquer tout**.  |
 | **Réseau public** | Le profil de réseau public s’applique à un réseau que vous pouvez utiliser dans un emplacement public, tel qu’un café ou un aéroport. Les paramètres de pare-feu pour les réseaux publics s’appliquent aux connexions entrantes qui sont lancées sur d’autres appareils qui se connectent au même réseau. Étant donné qu’un réseau public peut inclure des appareils que vous ne connaissez pas ou ne faites pas confiance, les connexions entrantes sont définies sur Bloquer **tout** par défaut.  |
 | **Réseau privé** | Le profil de réseau privé s’applique à un réseau dans un emplacement privé, tel que votre domicile. Les paramètres de pare-feu pour les réseaux privés s’appliquent aux connexions entrantes qui sont lancées sur d’autres appareils qui se connectent au même réseau. En règle générale, sur un réseau privé, il est supposé que tous les autres appareils sur le même réseau sont des appareils de confiance. Toutefois, par défaut, les connexions entrantes sont définies sur **Bloquer tout**. |
 | **Règles personnalisées** | [Les règles personnalisées](mdb-custom-rules-firewall.md) vous permettent de bloquer ou d’autoriser des connexions spécifiques. Par exemple, supposons que vous vouliez bloquer toutes les connexions entrantes sur les appareils connectés à un réseau privé, à l’exception des connexions via une application spécifique sur un appareil. Dans ce cas, vous définissez **le réseau** privé pour bloquer toutes les connexions entrantes, puis vous ajoutez une règle personnalisée pour définir l’exception. <br/><br/>Vous pouvez utiliser des règles personnalisées pour définir des exceptions pour des fichiers ou des applications spécifiques, une adresse IP ou une plage d’adresses IP. <br/><br/>Selon le type de règle personnalisée que vous créez, voici quelques exemples de valeurs que vous pouvez utiliser : <br/><br/>Chemin d’accès au fichier d’application : `C:\Windows\System\Notepad.exe or %WINDIR%\Notepad.exe` <br/><br/>IP : une adresse IPv4/IPv6 valide, telle que ou `192.168.1.0``192.168.1.0/24` <br/><br/>IP : plage d’adresses IPv4/IPv6 valide, formatée `192.168.1.0-192.168.1.9` comme (sans espace inclus) |

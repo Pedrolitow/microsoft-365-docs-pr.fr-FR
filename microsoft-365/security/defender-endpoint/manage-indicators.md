@@ -15,20 +15,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c241438e2cd9a0a5bd9bb018d671340c22ef7d0d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 00685ee4540949028b8bb438dd8a4965e2e9a5e7
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163541"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63513057"
 ---
 # <a name="create-indicators"></a>Créer des indicateurs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -59,7 +59,7 @@ Lors de la création d’un indicateur (IoC), une ou plusieurs des actions suiva
 
 - Allow : l’IoC sera autorisé à s’exécuter sur vos appareils.
 - Audit : une alerte est déclenchée lors de l’ioC.
-- Avertir : l’IoC invite un avertissement que l’utilisateur peut contourner (Defender pour les applications cloud uniquement)
+- Avertir : l’IoC invite un avertissement que l’utilisateur peut contourner 
 - Bloquer l’exécution : l’IoC n’est pas autorisé à s’exécuter.
 - Bloquer et corriger : l’IoC n’est pas autorisé à s’exécuter et une action de correction est appliquée à l’IoC.
 
@@ -77,8 +77,8 @@ Le tableau ci-dessous indique exactement les actions disponibles par type d’in
 | Type IoC | Actions disponibles |
 |:---|:---|
 | [Files](indicator-file.md) | Autoriser <br> Audit <br> Bloquer et corriger |
-| [Adresses IP](indicator-ip-domain.md) | Autoriser <br> Audit <br> Bloquer l’exécution |
-| [URL et domaines](indicator-ip-domain.md) | Autoriser <br> Audit <br> Bloquer l’exécution |
+| [Adresses IP](indicator-ip-domain.md) | Autoriser <br> Audit <br> Bloquer l’exécution <br> Avertir |
+| [URL et domaines](indicator-ip-domain.md) | Autoriser <br> Audit <br> Bloquer l’exécution<br> Avertir |
 | [Certificats](indicator-certificates.md) | Autoriser <br> Bloquer et corriger |
 
 Les fonctionnalités des IOC pré-existants ne changeront pas. Toutefois, les indicateurs ont été renommés pour correspondre aux actions de réponse prises en charge en cours :
@@ -93,7 +93,7 @@ Le schéma de l’API IoC et les ID de menace à l’avance de recherche ont ét
 >
 > Le format d’importation de nouveaux indicateurs (IOC) a changé en fonction des nouvelles actions mises à jour et des paramètres d’alerte. Nous vous recommandons de télécharger le nouveau format CSV disponible en bas du panneau d’importation.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
 - [Créer un IoC contextuel](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)
 - [Utiliser l’API d’indicateurs microsoft Defender pour les points de terminaison](ti-indicator.md)

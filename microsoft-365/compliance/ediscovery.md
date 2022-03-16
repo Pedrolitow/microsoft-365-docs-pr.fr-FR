@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 offre trois outils eDiscovery que vous pouvez utiliser pour rechercher et exporter du contenu trouvé dans différents emplacements tels que les boîtes aux lettres Exchange, les sites SharePoint et OneDrive Entreprise, les groupes Microsoft 365, Microsoft Teams et Skype Entreprise conversations. Core eDiscovery et Advanced eDiscovery de nombreuses fonctionnalités supplémentaires pour vous aider à gérer vos enquêtes.
-ms.openlocfilehash: e92619ff0ecbfcdbdf1a7f41eb4cd35282a6f2d9
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: cccc30dd649dc5abe74c551434e904236ecf9d35
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494511"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512487"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Solutions eDiscovery dans Microsoft 365
 
@@ -132,8 +132,8 @@ Les sections suivantes indiquent les exigences d’abonnement minimales pour la 
 - Microsoft 365 abonnement G1
 - Microsoft 365 F1 abonnement F3, ou module de sécurité F5
 - Microsoft 365 Business Premium abonnement
-- Microsoft 365 Business Standard
-- Microsoft 365 Business Basic
+- Microsoft 365 Business Standard abonnement
+- Abonnement Microsoft 365 Business Basic
 - Abonnement Office 365 Éducation A1
 - Office 365 E1 abonnement
 

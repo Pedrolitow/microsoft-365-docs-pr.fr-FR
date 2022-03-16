@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment configurer des rôles pour gérer les clients.
-ms.openlocfilehash: 82203c7faa361bf512c3184616b47760655083d4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 948e6909f0fc8d743c84662de6c8a2d9c0bc88e3
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331154"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512239"
 ---
 # <a name="set-up-roles-to-manage-customer-tenants"></a>Configurer des rôles pour gérer les clients
 
@@ -30,6 +30,9 @@ Les fournisseurs de services gérés (MSP) peuvent permettre un accès granulair
 Si les techniciens MSP accèdent toujours aux environnements clients avec les rôles Agent du service d’assistance ou Agent d’administration accordés via des privilèges d’administration délégués (DAP), consultez [DAP dans l’article sur le DAP dans cet](#dap-in-lighthouse) article. Si GDAP et DAP coexistent, les rôles accordés aux utilisateurs via GDAP prévalent pour les clients où une relation GDAP a été établie.
 
 ## <a name="set-up-gdap-in-lighthouse"></a>Configurer GDAP en île
+
+> [!NOTE]
+> Le GDAP est actuellement en [prévisualisation](/partner-center/announcements/2022-february#6) technique (prévisualisation publique) pour permettre aux partenaires d’attribuer des autorisations granulaires avant que le GDAP ne soit généralement disponible.
 
 Les étapes de haut niveau ci-dessous sont nécessaires pour créer une relation GDAP avec un client. Pour plus d’informations sur GDAP, voir [Introduction aux privilèges d’administration délégués granulaires.](/partner-center/gdap-introduction)
 
@@ -74,7 +77,7 @@ Pour certaines actions dans le Groupement, les attributions de rôles dans le cl
 | Membre du client partenaire avec au moins un rôle Azure AD affecté avec le jeu de propriétés suivant : **microsoft.office365.supportTickets/allEntities/allTasks**<br>(Pour obtenir la liste complète des rôles Azure AD, voir Azure AD [rôles intégrés](/azure/active-directory/roles/permissions-reference). | Créer des demandes de service d’accès. |
 | Membre du client partenaire qui répond aux *deux* conditions suivantes : <ul><li>A au moins un rôle Azure AD affecté avec le jeu de propriétés suivant : **microsoft.office365.serviceHealth/allEntities/allTasks**<br>(Pour obtenir la liste complète des rôles Azure AD, voir Azure AD [rôles intégrés](/azure/active-directory/roles/permissions-reference)</li><li>Au moins un rôle délégué DAP est attribué (agent d’administration ou agent d’aide)</li></ul> | Afficher les informations d’état du service. |
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Une fois les rôles créés, vous devez configurer une sécurité supplémentaire du portail De Lattérité, en particulier l’authentification multifacteur (MFA) et éventuellement Azure AD Identity Management (PIM). Pour plus d’informations, [voir Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md).
 

@@ -18,12 +18,12 @@ ms.date: 03/14/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 3a0701880a5712de4ec930e49397bf2ef4b8e637
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: 25d01c597da0f3a3e108eeee27d3a0dfe5b58eb7
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468855"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512529"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Antivirus Microsoft Defender compatibilité avec d’autres produits de sécurité
 
@@ -153,13 +153,13 @@ Le tableau de cette section récapitule les fonctionnalités qui fonctionnent ac
  | [Protection du réseau](network-protection.md)  | Oui | Non | Non | Non | 
  | [Règles de réduction de la surface d’attaque](attack-surface-reduction.md)  | Oui | Non | Non  | Non | 
  | [Disponibilité limitée de l’analyse périodique](limited-periodic-scanning-microsoft-defender-antivirus.md) | Non | Non | Oui | Non | 
- | [Informations sur l’analyse et la détection des fichiers](review-scan-results-microsoft-defender-antivirus.md) | Oui | Oui | Non | Oui | 
- | [Correction des menaces](configure-remediation-microsoft-defender-antivirus.md) | Oui | Voir la remarque <sup>[[5](#fn5)]</sup> | Non | Oui | 
+ | [Informations sur l’analyse et la détection des fichiers](review-scan-results-microsoft-defender-antivirus.md) | Oui | Oui<sup>[[5](#fn5)]</sup> | Non | Oui | 
+ | [Correction des menaces](configure-remediation-microsoft-defender-antivirus.md) | Oui | Oui | Non | Oui | 
  | [Mises à jour de l’intelligence de la sécurité](manage-updates-baselines-microsoft-defender-antivirus.md) | Oui | Oui | Non | Oui | 
 
 (<a id="fn4">4</a>) En règle générale, lorsque Antivirus Microsoft Defender est en mode passif, la protection en temps réel ne fournit aucun blocage ou application, même si elle est activée et en mode passif.
 
-(<a id="fn5">5</a>) Lorsque Antivirus Microsoft Defender est en mode passif, les fonctionnalités de correction des menaces ne sont actives que lors d’analyses programmées ou à la demande.
+(<a id="fn5">5</a>) Lorsque Antivirus Microsoft Defender est en mode passif, les analyses ne sont pas programmées.
 
 > [!NOTE]
 > [Microsoft 365 protection contre](/microsoft-365/compliance/endpoint-dlp-learn-about) la perte de données de point de terminaison continue de fonctionner normalement lorsque Antivirus Microsoft Defender est en mode actif ou passif.

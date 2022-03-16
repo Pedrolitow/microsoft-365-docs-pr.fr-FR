@@ -1,13 +1,13 @@
 ---
 title: Comparer les fonctionnalités de sécurité Microsoft 365 plans pour les petites et moyennes entreprises
-description: Comprendre les différences entre Defender pour Entreprise et Defender pour le point de terminaison. Le fait de connaître les informations incluses dans chaque plan peut vous aider à prendre une décision éclairée pour votre organisation.
+description: Comprendre les différences entre Defender pour Entreprise et Defender pour le point de terminaison. Le fait de connaître les informations incluses dans chaque plan peut vous aider à prendre une décision éclairée pour votre entreprise.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 02/27/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: c7b7848eb9bd02c75304ffea4347beb19b873b3a
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: edad91bde18b4bf9a86e0ab02ffc28df675f4c10
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449833"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512501"
 ---
 # <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Comparer Microsoft Defender entreprise à Microsoft 365 Business Premium
 
