@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Découvrez comment utiliser l’adresse IP et le service web d’URL Office 365 pour mieux identifier et différencier le trafic réseau d’Office 365.
-ms.openlocfilehash: 5af1ca60a6e7b7f28ad1d5c3268c85fb399fb926
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: e4976bafbedc8f5289e2992569bbd5de28e9de75
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806551"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494483"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Service web d’URL et d’adresses IP Office 365
 
@@ -63,8 +63,8 @@ Pour plus d’informations, voir :
 
 Ces paramètres sont communs à toutes les méthodes de service web :
 
-- **format=\<JSON \| CSV\>** – par défaut, le format de données renvoyé est JSON. Utilisez ce paramètre facultatif pour renvoyer les données au format de valeurs séparées par des virgules (CSV).
-- **ClientRequestId =\<guid\>** – un GUID requis que vous générez pour association client. Générer un GUID unique pour chaque ordinateur appelant le service Web (les scripts inclus sur cette page génèrent un GUID pour vous). N’utilisez pas les GUID illustrés dans les exemples suivants, car ils peuvent être bloqués par le service web à l’avenir. Format GUID est _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, où x représente un nombre hexadécimal.
+- **format=\<JSON \| CSV\>**  : Par défaut, le format de données retourné est JSON. Utilisez ce paramètre facultatif pour renvoyer les données au format de valeurs séparées par des virgules (CSV).
+- **ClientRequestId=\<guid\>**  : Une chaîne de requête GUID obligatoire que vous générez pour l’association client. Vous devez générer un GUID pour chaque ordinateur qui appelle le service web (les scripts inclus sur cette page génèrentvun GUID pour vous). N’utilisez pas les GUID illustrés dans les exemples suivants, car ils peuvent être bloqués par le service web à l’avenir. Le format du GUID est _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, où x représente un nombre hexadécimal.
 
   Pour générer un GUID, vous pouvez utiliser la commande PowerShell [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid) ou utiliser un service en ligne tel que [générateur de GUID en ligne](https://www.guidgenerator.com/).
 
@@ -77,14 +77,14 @@ Un numéro de version est attribué aux données de chaque instance publiée, et
 Les paramètres pour la méthode web de version sont :
 
 - **AllVersions=\<true \| false\>** – par défaut, la version renvoyée est la dernière version. Inclure ce paramètre facultatif pour demander toutes les versions publiées depuis que le service web a été publié.
-- **Format=\<JSON \| CSV \| RSS\>** – outre les formats JSON et CSV, la méthode web version prend également en charge RSS. Vous pouvez utiliser ce paramètre facultatif conjointement avec le paramètre _AllVersions = true_ pour demander un flux RSS qui peut être utilisé avec Outlook ou d’autres lecteurs de RSS.
-- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** – ce paramètre facultatif spécifie l’instance vers laquelle renvoyer la version. Si cet argument est omis, toutes les instances sont renvoyées. Les instances valides sont : Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
+- **Format =\<JSON \| CSV \| RSS\>** : Outre les formats JSON et CSV, la méthode web de version prend également en charge RSS. Vous pouvez l’utiliser, ainsi que le paramètre _allVersions = true_ pour demander un flux RSS qui peut être utilisé avec Outlook ou d’autres lecteurs RSS.
+- **Instance=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>**  : Ce paramètre facultatif spécifie l’instance pour laquelle renvoyer la version. S’il est omis, toutes les instances sont renvoyées. Les instances valides sont : Worldwide, China, USGovDoD, USGovGCCHigh.
 
 La méthode web de version n’est pas limitée en débit et ne renvoie jamais de codes de réponse HTTP 429. La réponse à la méthode web de version inclut un en-tête Cache-Control qui recommande la mise en cache des données pendant 1 heure. Le résultat de la méthode web de version peut être un enregistrement unique ou un tableau d’enregistrements. Les éléments de chaque enregistrement sont les suivants :
 
 - instance – nom court de l’instance de service Office 365.
 - dernière – dernière version pour les points de terminaison de l’instance spécifiée.
-- versions – liste de toutes les versions précédentes pour l’instance spécifiée. Cet élément est inclus uniquement si le paramètre _AllVersions_ est true.
+- versions : Une liste de toutes les versions précédentes pour l’instance spécifiée. Cet élément est inclus uniquement si le paramètre _AllVersions_ est true.
 
 ### <a name="version-web-method-examples"></a>Exemples de méthode web de version
 
@@ -108,10 +108,6 @@ Cet URI renvoie la dernière version de chaque instance du service Office 365. E
  },
  {
   "instance": "China",
-  "latest": "2018063000"
- },
- {
-  "instance": "Germany",
   "latest": "2018063000"
  }
 ]
@@ -180,10 +176,10 @@ Les points de terminaison de la méthode web renvoient tous les enregistrements 
 
 Les paramètres pour les points de terminaison de la méthode web sont :
 
-- **ServiceAreas=\<Common \| Exchange \| SharePoint \| Skype\>** – liste des zones de service séparées par des virgules. Éléments valides sont _Common_, _Exchange_, _SharePoint_, et _Skype_. Étant donné que les éléments _Common_ de zone de service sont une condition préalable pour toutes les autres zones de service, le service web les inclura toujours. Si vous n’incluez pas ce paramètre, toutes les zones de service sont renvoyées.
-- **TenantName=\<tenant_name\>** – nom de votre client Office 365. Le service web prend votre nom fourni et l’insère en plusieurs parties d’URL qui incluent le nom de client. Si vous ne fournissez pas de nom de client, ces composants d’URL ont le caractère générique (\*).
+- **ServiceAreas\<Common \| Exchange \| SharePoint \| Skype\>**  : Liste de valeurs séparées par des virgules pour les zones de service. Les éléments valides sont : _Common_, _Exchange_, _SharePoint_, _Skype_.. Étant donné que les éléments de la zone de service _Common_ sont une condition préalable pour toutes les autres zones de service, le service web les inclura toujours. Si vous n’incluez pas ce paramètre, toutes les zones de service sont renvoyées.
+- **TenantName=\<tenant_name\>**  :. Votre nom du client Office 365. Le service web prend le nom que vous avez fourni et l’insère dans des parties des URL qui incluent le nom du client. Si vous ne fournissez pas le nom du client, ces parties d’URL ont le caractère générique (\*).
 - **NoIPv6=\<true \| false\>** – définissez cette option sur _true_ pour exclure les adresses IPv6 du résultat, par exemple, si vous n’utilisez pas IPv6 dans votre réseau.
-- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** – ce paramètre facultatif spécifie l’instance vers laquelle renvoyer les points de terminaison. Les instances valides sont : _Worldwide_, _China_, _Germany_, _USGovDoD_, and _USGovGCCHigh_.
+- **Instance=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>** : Ce paramètre obligatoire spécifie l’instance à partir de laquelle retourner les points de terminaison. Les instances valides sont : _Worldwide_, _China_, _USGovDoD_, et _USGovGCCHigh_.
 
 Si vous appelez la méthode web points de terminaison un trop grand nombre de fois à partir de la même adresse IP du client, vous pouvez recevoir le code de réponse HTTP _429 (Trop de requêtes)_. Si vous recevez ce code de réponse, patientez 1 heure avant de renouveler votre demande, ou générez un nouveau GUID pour la demande. Nous recommandons de ne rappeler la méthode web points de terminaison uniquement lorsque la méthode web indique qu’une nouvelle version est disponible.
 
@@ -191,14 +187,14 @@ Le résultat de la méthode web des points de terminaison est un tableau d’enr
 
 - id – l’ID non modifiable de l’ensemble de points de terminaison.
 - serviceArea – la zone de service dont il fait partie : _Common_, _Exchange_, _SharePoint_, ou _Skype_.
-- URL – URL pour l’entité de point de terminaison. Tableau JSON d’enregistrements DNS. Omis si vide.
-- tcpPorts – ports TCP pour l’entité de point de terminaison. Tous les éléments port sont mis en forme en tant que liste de ports séparés par des virgules ou plages de ports séparés par un tiret (-). Les ports s’appliquent à toutes les adresses IP et toutes les URL du point de terminaison défini pour une catégorie donnée. Omis si vide.
-- udpPorts – ports UDP pour les plages d’adresses IP dans cet ensemble de points de terminaison.  Omis si vide.
-- ips – plages d’adresses IP associées à cet ensemble de points de terminaison tel qu’associées aux ports TCP ou UDP répertoriés. Un tableau JSON des plages d’adresses IP.  Omis si vide.
-- Catégorie – catégorie de connectivité pour l’entité de point de terminaison. Les valeurs valides sont : _Optimiser_, _Autoriser_, and _Défaut_. Si vous recherchez la sortie de la méthode Web de points de terminaison pour la catégorie d’une adresse IP ou d’une URL spécifique, il est possible que votre requête renvoie plusieurs catégories. Dans ce cas, suivez la recommandation pour la catégorie de priorité la plus élevée. Par exemple, si le point de terminaison apparaît dans les deux options _optimiser_ et _autoriser_, vous devez respecter les conditions requises pour _optimiser_. Obligatoire.
+- urls: URL pour l’ensemble de points de terminaison. Un tableau JSON des enregistrements DNS. Omis si vide.
+- tcpPorts : ports TCP pour l’ensemble de points de terminaison. Tous les éléments de ports sont au format de liste de ports séparés par des virgules ou de plages de port séparées par un tiret (-). Les ports s’appliquent à toutes les adresses IP et toutes les URL dans cet ensemble de points de terminaison pour cette catégorie. Omis si vide.
+- udpPorts : ports UDP pour les plages d’adresses IP dans cet ensemble de points de terminaison. Omis si vide.
+- ips : plages d’adresses IP associées à cet ensemble de points de terminaison tel qu’associées aux ports TCP ou UDP répertoriés. Un tableau JSON des plages d’adresses IP. Omis si vide.
+- category : catégorie de connectivité pour le jeu de points de terminaison. Les valeurs valides sont _Optimize_, _Allow_, et _Default_. Si vous recherchez la sortie de la méthode web, les points de terminaison pour la catégorie d’une adresse IP ou d’une URL spécifique, il est possible que votre requête puisse renvoyer plusieurs catégories. Dans ce cas, vous devez suivre les recommandations pour la catégorie ayant la priorité la plus élevée. Par exemple, si le point de terminaison s’affiche dans _Optimize_ et _Allow_, vous devez suivre la configuration requise pour _Optimize_. Obligatoire.
 - expressRoute : _True_ si cet ensemble de points de terminaison est routé sur ExpressRoute, _False_ si ce n’est pas le cas.
 - required : _True_ si cet ensemble de points de terminaison est obligatoire pour disposer d’une connectivité et prendre en charge Office 365._False_ si cet ensemble de points de terminaison est facultatif.
-- notes – pour les points de terminaison facultatifs, ce texte décrit les fonctionnalités Office 365 qui seront indisponibles si les adresses IP ou les URL dans cet ensemble de points de terminaison ne sont pas accessibles sur la couche réseau. Omis si vide.
+- notes : pour les points de terminaison facultatifs, ce texte décrit les fonctionnalités Office 365 qui seront indisponibles si les adresses IP ou les URL dans cet ensemble de points de terminaison ne sont pas accessibles sur la couche réseau.Omis si blancs.
 
 ### <a name="endpoints-web-method-examples"></a>Exemples de méthodes web de points de terminaison
 
@@ -267,9 +263,9 @@ Le résultat de la méthode web de modifications est un tableau d’enregistreme
   —MovedIpOrUrl — nous avons déplacé une adresse IP ou une URL entre cet ensemble de points de terminaison et un autre emplacement.  En général, aucune action n’est requise.
   — RemovedDuplicateIpOrUrl – nous avons supprimé une adresse IP ou une URL en double, mais celle-ci est toujours publiée pour Office 365.  En général, aucune action n’est requise.
   — OtherNonPriorityChanges – nous avons modifié un élément moins critique que toutes les autres options, comme un champ de note.
-- version – version de l’entité de point de terminaison publiée dans laquelle la modification a été introduite. Le format des numéros de version est _JJNN/MM/AAAA_, où _NN_ est un nombre entier incrémenté si plusieurs versions doivent être publiées un même jour.
-- previous – sous-structure détaillant les valeurs précédentes des éléments modifiés sur le point de terminaison défini. Elle ne sera pas incluse pour les nouveaux ensembles de points de terminaison ajoutés. Inclut _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ et _notes_.
-- current – une sous-structure détaillant les valeurs mises à jour des éléments de modifications dans l’ensemble des points de terminaison. Inclut _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ et _notes_.
+- version : la version de l’ensemble de points de terminaison publié dans laquelle la modification a été introduite. Les numéros de version sont au format _YYYYMMDDNN_, où _NN_ est un nombre naturel incrémenté si plusieurs versions doivent être publiées sur un seul jour.
+- previous : une sous-structure détaillant les valeurs précédentes des éléments modifiés sur l’ensemble de points de terminaison. Cela ne sera pas inclus pour les ensembles de points de terminaison nouvellement ajoutés. Inclut _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_, et _notes_.
+- current : une sous-structure détaillant les valeurs mises à jour des éléments de modifications sur l’ensemble de points de terminaison. Inclut _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_, et _notes_.
 - add – sous-structure détaillant les éléments à ajouter aux collections d’ensembles de points de terminaison.  Omis s’il n’y a aucun ajout.
   – effectiveDate – définit les données lorsque les ajouts seront disponibles dans le service.
   – ips – éléments à ajouter au tableau d’adresses _ips_.
@@ -528,7 +524,7 @@ else {
 
 ## <a name="example-python-script"></a>Exemple de Script Python
 
-Voici un script Python, testé avec Python 3.6.3 sur Windows 10, que vous pouvez exécuter pour voir si des actions doivent être effectuées pour les données mises à jour. Ce script vérifie le numéro de version pour les points de terminaison instance Office 365 dans le monde. Lorsqu’il y a une modification, ce dernier télécharge les points de terminaison et les filtres pour les points de terminaison catégorie _Autoriser_ et _Optimiser_. Il utilise également une unique ClientRequestId au sein de plusieurs appels et enregistre la dernière version trouvée dans un fichier temporaire. Appelez ce script une fois par heure pour rechercher une mise à jour de version.
+Voici un script Python, testé avec Python 3.6.3 sur Windows 10, que vous pouvez exécuter pour voir s’il y a des actions à exécuter pour les données mises à jour. Ce script vérifie le numéro de version pour les points de terminaison de l’instance Worldwide d’Office 365. Lorsqu’une modification a lieu, il télécharge les points de terminaison et les filtre en fonction de la catégorie _Allow_ et _Optimize_. Il utilise aussi un ClientRequestId unique dans plusieurs appels et enregistre la dernière version trouvée dans un fichier temporaire. Vous devez appeler ce script une fois toutes les heures afin de rechercher une mise à jour de version.
 
 ```python
 import json
