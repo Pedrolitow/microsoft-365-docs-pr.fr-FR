@@ -10,19 +10,19 @@ ms.topic: how-to
 ms.date: 03/08/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ab20237605e567aff63662100acfc136483c8d33
-ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
+ms.openlocfilehash: a5a0b932e88fb4c4232e4afca8f2307e40088e6b
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63406514"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526123"
 ---
 # <a name="device-groups-in-microsoft-365-business-premium"></a>Groupes d’appareils dans Microsoft 365 Business Premium
 

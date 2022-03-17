@@ -11,25 +11,25 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 description: Découvrez comment publier un document SharePoint Syntex modèles de présentation avec PowerShell.
-ms.openlocfilehash: 215a073ea5cabe7c701d24a9b8972268c4dd21ff
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: 5169e5ea5839cd5c341baa2477fd82281f5e5d76
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159696"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526483"
 ---
 # <a name="publish-document-understanding-models-with-powershell"></a>Publier des modèles de présentation de documents avec PowerShell
 
 > [!IMPORTANT]
 > Les SharePoint Syntex PowerShell et tous les autres composants PnP sont des outils open source soutenus par une communauté active qui les aide. Il n’existe aucun contrat de niveau de service pour la prise en charge des outils open source des canaux de support Microsoft officiels.
 
-SharePoint Syntex modèles sont généralement déployés dans des bibliothèques de documents au sein de votre client. Pour ce faire, vous pouvez utiliser le site du centre de contenu, mais également à l’aide de [PowerShell PnP,](https://pnp.github.io/powershell/) comme expliqué dans cet article.
+SharePoint Syntex modèles sont généralement déployés dans des bibliothèques de documents au sein de votre client. Pour ce faire, vous pouvez utiliser le site du centre de contenu, mais également à l’aide de [PowerShell PnP](https://pnp.github.io/powershell/) , comme expliqué dans cet article.
 
 ## <a name="listing-the-available-models-in-a-content-center"></a>Liste des modèles disponibles dans un centre de contenu
 
-Pour obtenir une vue d’ensemble des modèles ajoutés au site de centre de contenu SharePoint Syntex actuel, utilisez la cmdlet [Get-PnPSyntexModel](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModel.html) :
+Pour obtenir une vue d’ensemble des modèles ajoutés au site de centre de contenu SharePoint Syntex actuel, utilisez l’cmdlet [Get-PnPSyntexModel](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModel.html) :
 
 ```PowerShell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"

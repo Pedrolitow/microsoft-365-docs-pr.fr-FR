@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Créer des données exactes correspondant au type d’informations sensibles/au package de règles
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eb15f54a8a944e1c764a2540f36926dd433fb2d3
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: e44d18bc1a779ace95fb2f64171ff0bf91de57ed
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62900745"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526039"
 ---
 # <a name="create-exact-data-match-sensitive-information-typerule-package"></a>Créer des données exactes correspondant au type d’informations sensibles/au package de règles
 
@@ -106,7 +106,7 @@ Cette procédure vous montre comment créer un fichier au format XML appelé pac
 
 1. Créez un package de règles au format XML (avec codage Unicode) similaire à l’exemple suivant. (vous pouvez copier, modifier et utiliser notre exemple).
 
-   Lorsque vous définissez votre package de règles, veillez à référencer correctement vos fichiers de **edm.xml** table de sources d’informations sensibles et de schéma .csv, .tsv ou pipe (|) délimités par des informations sensibles. Vous pouvez copier, modifier et utiliser notre exemple. Dans cet exemple de xml, les champs suivants doivent être personnalisés pour créer votre type sensible EDM :
+   Lorsque vous définissez votre package de règles, veillez à référencer correctement votre fichier de table de sources d’informations sensibles .csv, .tsv ou pipe (|) délimité par des informations sensibles **** et votre fichier de schémaedm.xmlinformations sensibles. Vous pouvez copier, modifier et utiliser notre exemple. Dans cet exemple de xml, les champs suivants doivent être personnalisés pour créer votre type sensible EDM :
 
    - **RulePack id & ExactMatch id** : utilisez [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid) pour générer un GUID.
 

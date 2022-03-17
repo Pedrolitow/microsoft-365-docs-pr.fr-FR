@@ -10,19 +10,19 @@ ms.topic: overview
 ms.date: 03/08/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 95bce75fdee629a40907afda04999c6abf1c0e5b
-ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
+ms.openlocfilehash: ba322493b3900c099ab5525f052604604ef0ac23
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63406528"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525262"
 ---
 # <a name="view-and-edit-your-device-protection-policies"></a>Afficher et modifier vos stratégies de protection des appareils
 

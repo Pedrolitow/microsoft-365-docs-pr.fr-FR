@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Commencer à créer des types d’informations sensibles basés sur des correspondances de données exactes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 469cc7262ff1eef92d9a03e04070dc353e12b445
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: a75650484368b6ccbaf6f6d39aeead133403f5b8
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110498"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526275"
 ---
 # <a name="get-started-with-exact-data-match-based-sensitive-information-types"></a>Démarrage avec des types d’informations sensibles basés sur des correspondances de données exactes
 
@@ -58,7 +58,7 @@ Voir la [description du service de protection contre la perte de données](/offi
 |---|---|
 |[Phase 1 : Exportation des données sources pour le type d’informations sensibles de correspondance exacte](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)|-Accès en lecture aux données sensibles|
 |[Phase 2 : Création du schéma pour les types d’informations sensibles basés sur la correspondance exacte des données](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)|- Accès à l’Assistant Type d’informations sensibles dans le Centre d'administration Microsoft 365 </br>- accès à Centre d'administration Microsoft 365 [via Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) |
-|[Phase 3 : hachage et chargement de la table des sources d’informations sensibles pour les types d’informations sensibles de correspondance exacte des données](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|-Groupe de sécurité personnalisé et compte d’utilisateur </br>- **Hachage et chargement à partir d’un** ordinateur : accès administrateur local à un ordinateur avec un accès Internet direct et pour héberger l’agent Télécharger EDM </br>- Hachage et chargement à partir d’ordinateurs distincts : accès administrateur local à un ordinateur avec accès Internet direct et héberger l’agent EDM Télécharger pour le chargement et l’accès administrateur local à un ordinateur sécurisé pour héberger l’agent EDM Télécharger afin de hachage de la table des sources d’informations sensibles </br>- Accès en lecture au fichier de table des sources d’informations sensibles </br> fichier de schéma |
+|[Phase 3 : hachage et chargement de la table des sources d’informations sensibles pour les types d’informations sensibles de correspondance exacte des données](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|-Groupe de sécurité personnalisé et compte d’utilisateur </br>- **Hachage et chargement à partir** d’un ordinateur : accès administrateur local à un ordinateur avec un accès Internet direct et pour héberger l’agent Télécharger EDM </br>- Hachage et chargement à partir d’ordinateurs distincts : accès administrateur local à un ordinateur avec accès Internet direct et héberger l’agent EDM Télécharger pour le chargement et l’accès administrateur local à un ordinateur sécurisé pour héberger l’agent EDM Télécharger afin de hachage de la table des sources d’informations sensibles </br>- Accès en lecture au fichier de table des sources d’informations sensibles </br> fichier de schéma |
 |[Phase 4 : Créer un package de règles/type d’informations sensibles de correspondance exacte de données](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) |- Accès au Centre Microsoft 365 conformité de l’application |
 |[Tester un type d’informations sensibles correspondant exactement aux données](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)| - Accès au Centre Microsoft 365 conformité de l’application
 

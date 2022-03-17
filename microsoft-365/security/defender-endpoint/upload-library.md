@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: reference
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b2c50999b7aab3588239f3965e41543680c9aad6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 84ec7e361cccdc886650b0710f738a4315c4db8d
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330852"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63527057"
 ---
 #  <a name="upload-files-to-the-live-response-library"></a>Télécharger fichiers dans la bibliothèque de réponses en direct  
 
@@ -74,7 +74,7 @@ POST https://api.securitycenter.microsoft.com/api/libraryfiles
 
 |  Nom   |    Type    |       Description                         |
 |-----------------|--------|--------------------------------|
-| Autorisation   | String | \<token>Porteur. Obligatoire.      |
+| Autorisation   | Chaîne | \<token>Porteur. Obligatoire.      |
 | Content-Type    | string | multipart/form-data. Obligatoire. |
 
 ## <a name="request-body"></a>Corps de la demande
@@ -84,8 +84,8 @@ Dans le corps de la demande, fournissons un objet de données de formulaire avec
 | Paramètre         |     Type         |       Description                                        |
 |-----------------------|--------------|------------------------------------------------------------|
 | Fichier                  | Contenu du fichier | Fichier à télécharger dans la bibliothèque de réponses en direct. Obligatoire |
-| Description           | String       | Description du fichier.                                  |
-| ParametersDescription | String       | (Facultatif) Paramètres requis pour l’exécuter. La valeur par défaut est une chaîne vide.                |
+| Description           | Chaîne       | Description du fichier.                                  |
+| ParametersDescription | Chaîne       | (Facultatif) Paramètres requis pour l’exécuter. La valeur par défaut est une chaîne vide.                |
 | OverrideIfExists      | Booléen      | (Facultatif) S’il faut remplacer le fichier s’il existe déjà. La valeur par défaut est une chaîne vide.          |
 
 

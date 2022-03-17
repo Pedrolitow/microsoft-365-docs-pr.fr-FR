@@ -1,5 +1,5 @@
 ---
-title: Intégration et intégration d’appareils macOS dans des solutions Microsoft 365 conformité à l’aide Microsoft Intune (prévisualisation)
+title: Intégration et intégration d’appareils macOS dans Microsoft 365 solutions de conformité à l’aide Microsoft Intune (prévisualisation)
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -8,18 +8,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Découvrez comment intégrer et utiliser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide Microsoft Intune (prévisualisation)
-ms.openlocfilehash: bab39cf101cb4fcae15f93ecc74bc52d81cadd91
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 5f8dd27490992e15d53dfc10311ce7b23b99683a
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327388"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526511"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview"></a>intégrer et déclasser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide d’Intune (préversion)
 
@@ -174,13 +174,13 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 
 ### <a name="get-the-device-onboarding-package"></a>Obtenir le package d’intégration d’appareil
 
-1. Dans **le Centre de conformité****, Paramètres** >  **Device Onboarding et** choisissez **Intégration**.
+1. Dans **le Centre de conformité****, Paramètres** >  **l’intégration de dévice** et choisissez **Intégration**.
  
 1. Pour **sélectionner le système d’exploitation afin de démarrer le processus d’intégration,** **choisissez macOS**.
  
-1. Pour **la méthode Deployment**, choisissez **Gestion des appareils mobiles/Microsoft Intune**.
+1. Pour **la méthode Déploiement,** choisissez **Gestion des appareils mobiles/Microsoft Intune**.
  
-1. Choisissez **Télécharger le package d’intégration**. Il contient le code d’intégration dans *DeviceComplianceOnboarding.xml* fichier.
+1. Choisissez **Télécharger le package d’intégration**. Celui-ci contient le code d’intégration dans *DeviceComplianceOnboarding.xml* fichier.
 
 ### <a name="deploy-the-onboarding-package"></a>Déployer le package d’intégration
 
@@ -234,7 +234,7 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 
 ### <a name="get-the-installation-package"></a>Obtenir le package d’installation
 
-1. Dans **le Centre de conformité****, Paramètres** >  **Device Onboarding et** choisissez **Intégration**.
+1. Dans **le Centre de conformité****, Paramètres** >  **l’intégration de dévice** et choisissez **Intégration**.
  
 1. Pour **sélectionner le système d’exploitation afin de démarrer le processus d’intégration,** choisissez **macOS**
  

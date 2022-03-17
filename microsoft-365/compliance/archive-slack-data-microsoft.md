@@ -9,15 +9,15 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur de données de découverte électronique Slack fourni par Microsoft pour importer et archiver des données de messagerie instantanée.
-ms.openlocfilehash: 58401130726a7211eaad5b5c25985b534b68b0b8
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 2bd4df859d5bb3a4ccd048c83a864d44f81f33bc
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312360"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525070"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>Configurer un connecteur pour archiver des données de découverte électronique Slack (aperçu)
 

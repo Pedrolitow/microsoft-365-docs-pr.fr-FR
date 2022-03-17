@@ -10,19 +10,19 @@ ms.topic: overview
 ms.date: 03/14/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 417deb0d865743e73b9d895a3d4ddb48016facde
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: 44015c7cf568b968a4910433faa7700d550586fb
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468947"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63527125"
 ---
 # <a name="onboard-managed-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils gérés à Microsoft Defender pour Entreprises
 

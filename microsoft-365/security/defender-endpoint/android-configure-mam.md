@@ -11,27 +11,27 @@ ms.pagetype: security
 ms.author: shthota
 author: shthota
 manager: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2382dc157120b34bf100cf320807e2683f64bbb8
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5c18d5e9fbf628f5d4e4373b866fa300c193ac30
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165173"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525527"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-risk-signals-using-app-protection-policies-mam"></a>Configurer Microsoft Defender pour les signaux de risque de point de terminaison à l’aide des stratégies de protection des applications (MAM)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 
@@ -40,8 +40,8 @@ Microsoft Defender pour endpoint sur Android, qui protège déjà les utilisateu
 Les informations sur les menaces Microsoft Defender pour Endpoint sur Android sont utilisées par les stratégies intune App Protection pour protéger ces applications. Les stratégies de protection des applications (APP) sont des règles qui garantissent que les données d’une organisation sont sécurisées ou restent dans une application managée. Une application gérée dispose de stratégies de protection des applications qui lui sont appliquées et peut être gérée par Intune.  
 
 Microsoft Defender pour point de terminaison sur Android prend en charge les deux configurations de MAM
-- **Intune MDM + MAM**: les administrateurs informatiques peuvent uniquement gérer les applications à l’aide des stratégies de protection des applications sur les appareils inscrits auprès de la gestion des périphériques mobiles Intune.
-- **MAM sans** inscription d’appareils : MAM sans inscription d’appareil, ou MAM-WE, permet aux administrateurs informatiques de gérer les applications à l’aide de stratégies de [protection](/mem/intune/app/app-protection-policy) des applications sur les appareils non inscrits auprès de la gestion des appareils mobiles Intune. Cela signifie que les applications peuvent être gérées par Intune sur des appareils inscrits auprès de fournisseurs EMM tiers. Pour gérer les applications à l’aide des deux configurations ci-dessus, les clients doivent utiliser Intune [dans Microsoft Endpoint Manager’administration centrale](https://go.microsoft.com/fwlink/?linkid=2109431)
+- **Intune MDM + MAM** : les administrateurs informatiques peuvent uniquement gérer les applications à l’aide des stratégies de protection des applications sur les appareils inscrits auprès de la gestion des périphériques mobiles Intune.
+- **MAM sans** inscription d’appareils : MAM sans inscription d’appareil, ou MAM-WE, permet aux administrateurs informatiques de gérer les applications à l’aide de stratégies de [protection](/mem/intune/app/app-protection-policy) des applications sur les appareils non inscrits auprès de la gestion des appareils mobiles Intune. Cela signifie que les applications peuvent être gérées par Intune sur des appareils inscrits auprès de fournisseurs EMM tiers. Pour gérer les applications à l’aide des deux configurations ci-dessus, les clients doivent utiliser Intune [dans Microsoft Endpoint Manager’administration.](https://go.microsoft.com/fwlink/?linkid=2109431)
 
 Pour activer cette fonctionnalité, un administrateur doit configurer la connexion entre Microsoft Defender pour Endpoint et Intune, créer la stratégie de protection des applications et appliquer la stratégie sur les appareils et applications ciblés. 
  
@@ -54,9 +54,9 @@ Les utilisateurs finaux doivent également prendre des mesures pour installer Mi
 
   a. Go to security.microsoft.com. 
 
-  b. Sélectionnez **Paramètres > points de terminaison> fonctionnalités** avancées > Microsoft Intune connexion est allumée.
+  b. **Sélectionnez Paramètres > points de terminaison> fonctionnalités avancées > Microsoft Intune connexion** est allumée.
 
-  c. Si la connexion n’est pas allumée, sélectionnez le basculement pour l’activer, puis **sélectionnez Enregistrer les préférences.**
+  c. Si la connexion n’est pas allumée, sélectionnez le basculement pour l’activer, puis **sélectionnez Enregistrer les préférences**.
 
   ![Image de Defender pour point de terminaison -Connecteur Intune](images/enable-intune-connection.png)
 
@@ -92,20 +92,20 @@ Les stratégies de protection des applications (APP) sont des règles qui garant
 Étant donné que la gestion des applications mobiles ne nécessite pas de gestion des appareils, vous pouvez protéger les données d’entreprise à la fois sur les appareils gérés et non gérés. La gestion est centrée autour de l’identité de l’utilisateur, ce qui supprime la nécessité de gérer les appareils. Les entreprises peuvent utiliser des stratégies de protection des applications avec ou sans mdm en même temps. Considérons, par exemple, un employé qui utilise à la fois un téléphone fourni par l’entreprise et sa propre tablette personnelle. Le téléphone de l’entreprise est inscrit dans la gestion des périphériques de gestion des périphériques multi-appareils et protégé par les stratégies de protection des applications, tandis que l’appareil personnel est protégé uniquement par les stratégies de protection des applications.
 
     b. Sélectionner des applications<br>
-    Une application gérée est une application à laquelle des stratégies de protection d’application sont appliquées et pouvant être gérée par Intune. Toute application qui a été intégrée au [SDK Intune](/mem/intune/developer/app-sdk) ou enveloppée par le App Wrapping Tool [Intune](/mem/intune/developer/apps-prepare-mobile-application-management) peut être gérée à l’aide de stratégies de protection des applications Intune. Voir la liste officielle des [applications protégées Microsoft Intune](/mem/intune/apps/apps-supported-intune-apps) qui ont été construites à l'aide de ces outils et sont disponibles pour un usage public.
+    Une application gérée est une application à laquelle sont appliquées des stratégies de protection des applications et qui peut être gérée par Intune. Toute application qui a été intégrée au [SDK Intune](/mem/intune/developer/app-sdk) ou enveloppée par le App Wrapping Tool [Intune](/mem/intune/developer/apps-prepare-mobile-application-management) peut être gérée à l’aide de stratégies de protection des applications Intune. Voir la liste officielle des [applications protégées Microsoft Intune](/mem/intune/apps/apps-supported-intune-apps) qui ont été construites à l'aide de ces outils et sont disponibles pour un usage public.
 
     *Exemple : Outlook en tant qu’application gérée*
 
     ![Image Outlook en tant qu’application gérée](images/managed-app.png)
 
  3. Définissez les exigences de sécurité de la signature pour votre stratégie de protection. <br>
-Sélectionnez **Paramètre > niveau de menace** d’appareil autorisé maximum dans Les **conditions** d’appareil et entrez une valeur. Ensuite,  **sélectionnez Action : « Bloquer l’accès**». Microsoft Defender pour point de terminaison sur Android partage ce niveau de menace d’appareil.
+**Sélectionnez Paramètre > niveau de menace** d’appareil autorisé maximum dans **Les conditions** d’appareil, puis entrez une valeur. Sélectionnez  **Ensuite Action : « Bloquer l’accès** ». Microsoft Defender pour point de terminaison sur Android partage ce niveau de menace d’appareil.
 
     ![Image du lancement conditionnel](images/conditional-launch.png)
 
 
 - **Affecter des groupes d’utilisateurs auxquels la stratégie doit être appliquée.**<br>
-  Sélectionnez **Groupes inclus.** Ajoutez ensuite les groupes appropriés. 
+  Sélectionnez **Groupes inclus**. Ajoutez ensuite les groupes appropriés. 
 
     ![Image des assigments](images/assignment.png)
 
@@ -122,19 +122,19 @@ Sélectionnez **Paramètre > niveau de menace** d’appareil autorisé maximum d
 
 2. Cliquez sur **Continuer**. Un écran s’affiche, qui recommande le téléchargement et la configuration de Microsoft Defender pour Endpoint sur l’application Android.
 
-3. Sélectionnez **Télécharger.** Vous serez redirigé vers l’App Store (Google Play). 
+3. Sélectionnez **Télécharger**. Vous serez redirigé vers l’App Store (Google Play). 
 
 4.  Installez l’application Microsoft Defender pour point de terminaison (mobile) et lancez à nouveau l’écran d’intégration de l’application gérée.
 
   ![Installer MDE et relancer l’écran d’intégration d’application gérée](images/download-mde.png)
 
-5.  Cliquez **sur Continuer > lancer.** Le flux d’intégration/activation de l’application Microsoft Defender for Endpoint est lancé. Suivez les étapes pour terminer l’intégration. Vous serez automatiquement redirigé vers l’écran d’intégration d’application gérée, ce qui indique maintenant que l’appareil est sain.
+5.  Cliquez **sur Continuer > lancement**. Le flux d’intégration/activation de l’application Microsoft Defender for Endpoint est lancé. Suivez les étapes pour terminer l’intégration. Vous serez automatiquement redirigé vers l’écran d’intégration d’application gérée, ce qui indique maintenant que l’appareil est sain.
 
-6. Sélectionnez **Continuer** à vous connecter à l’application gérée. 
+6. **Sélectionnez Continuer** à vous connecter à l’application gérée. 
 
 
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
 - [Vue d’ensemble de Microsoft Defender pour point de terminaison Android](microsoft-defender-endpoint-android.md)
 - [Déployer Microsoft Defender pour point de terminaison Android via Microsoft Intune](android-intune.md)

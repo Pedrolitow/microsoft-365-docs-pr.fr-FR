@@ -12,16 +12,16 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Utilisez ces procédures pour tirer parti des entités nommées dans vos stratégies de protection contre la perte de données
-ms.openlocfilehash: f3dac4efa1b0cf84971ac4d07f78144b438d1161
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 5adb410689e597395f1b13152ed62af75fa111d6
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271513"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525220"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>Utiliser des entités nommées dans vos politiques de prévention des pertes de données (aperçu)
 
@@ -38,8 +38,8 @@ Vous devez avoir l’un de ces abonnements
 
 - Protection et gouvernance des informations
 - Microsoft 365 E5 Conformité
-- Office 365 E5
-- Microsoft 365 E5
+- Office 365 E5
+- Microsoft 365 E5
 
 Pour plus d’informations sur les licences, voir [la description du service](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer).
 

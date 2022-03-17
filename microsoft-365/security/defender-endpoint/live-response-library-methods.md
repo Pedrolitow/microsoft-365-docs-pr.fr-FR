@@ -1,5 +1,5 @@
 ---
-title: Méthodes et propriétés de la bibliothèque de réponses en direct
+title: Les méthodes et les propriétés de la bibliothèque de réponse en direct
 description: Découvrez comment utiliser les méthodes et propriétés de la bibliothèque de réponses en direct.
 keywords: api, api de graphique, api pris en charge, obtenir, appareils
 search.product: eADQiWindows 10XVcnh
@@ -12,21 +12,21 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: reference
 ms.technology: m365d
-ms.openlocfilehash: 74f4fbe69135433597492854428b34449fbd0260
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c9eb1de08be8905a41b172a19a33db58dbdc19b9
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319143"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525847"
 ---
-#  <a name="live-response-library-methods-and-properties"></a>Méthodes et propriétés de la bibliothèque de réponses en direct
+#  <a name="live-response-library-methods-and-properties"></a>Les méthodes et les propriétés de la bibliothèque de réponse en direct
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -45,7 +45,7 @@ ms.locfileid: "63319143"
 
 | **Méthode**          | **Type renvoyé**         | **Description**                         |
 |---------------------|-------------------------|-----------------------------------------|
-| Lister les fichiers de bibliothèque  | Collection de fichiers bibliothèque | List library file entities              |
+| Répertorier les fichiers d’une bibliothèque  | Collection de fichiers bibliothèque | List library file entities              |
 | Télécharger bibliothèque   | Entité de fichier bibliothèque     | Télécharger fichier dans la bibliothèque de réponses en direct |
 | Supprimer de la bibliothèque | Aucun contenu              | Supprimer l’entité de fichier bibliothèque              |
 

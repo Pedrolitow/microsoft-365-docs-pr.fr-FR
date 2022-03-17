@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b125689f6eaf2bad5ebfef9977417abdea051f3b
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: ebcfea808e64c89772f36fb22f5dfd75e6e8e27f
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401131"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525805"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
@@ -41,7 +41,7 @@ Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Comment installer Microsoft Defender pour endpoint sur Linux
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Configuration requise
 
 - Accès au portail Microsoft 365 Defender web
 - Distribution Linux à l’aide [du gestionnaire système](https://systemd.io/)
@@ -85,6 +85,7 @@ Si vous avez des échecs d’installation, reportez-vous à Résolution des prob
   - Debian 9 ou supérieur
   - SUSE Linux Enterprise Server 12 ou supérieur
   - Oracle Linux 7.2 ou supérieur
+  - Oracle Linux 8.x
   - Amazon Linux 2
   - Fedora 33 ou supérieure
 

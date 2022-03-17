@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/15/2022
+ms.date: 03/16/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: be3dcfd23c0fb77604cec140a4b1d3606f6ee345
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: c6454704c6cabfd5136eeec565c3c57dca044250
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63513043"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526893"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 
@@ -85,20 +85,28 @@ Toutes nos mises à jour contiennent
 - Améliorations de l’intégration (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary>Février-2022 (plateforme : 4.18.xxxx.xx | Moteur : 1.1.19000.8)</summary>
+<summary>Février-2022 (plateforme : 4.18.2202.4 | Moteur : 1.1.19000.8)</summary>
 
-&ensp;Version de mise à jour des informations de sécurité **: 1.357.x.x**<br/>
+&ensp;Version de mise à jour des informations de sécurité **: 1.361.14.0**<br/>
 &ensp;Publication : **14 mars 2022**<br/>
-&ensp;Plateforme : **4.18.xxxx.xx**<br/>
+&ensp;Plateforme : **4.18.2202.4**<br/>
 &ensp;Moteur : **1.1.19000.8**<br/>
 &ensp;Phase de prise en charge **: Mises à jour critiques et de sécurité**<br/>
 
 Version du moteur : 1.1.19000.8 <br/>
-Version de mise à jour des informations de sécurité : 1.357.x.x <br/>
+Version de mise à jour des informations de sécurité : 1.361.14.0 <br/>
 
 ### <a name="whats-new"></a>Nouveautés
 
-- Bientôt disponible
+- Améliorations apportées à la logique de surveillance de la détection et du comportement
+- Correction des détections de réduction de la surface d’attaque lors du déclenchement de faux positifs
+- Ajout d’un correctif qui améliore la fidélité des alertes de détection PEPT et de repérage avancé
+- Defender ne prend plus en charge les notifications personnalisées sur les fenêtres de toast. GPO/Intune/SCCM et documents modifiés pour refléter cette modification.
+- Améliorations apportées à la capture des informations et de la copie des fichiers écrits dans un stockage amovible. Pour plus d’informations, voir [Microsoft Defender for Endpoint Device Control Removable Stockage Access Control, média de stockage amovible](device-control-removable-storage-access-control.md).
+- Amélioration de la sortie du trafic lorsque le service SmartScreen est inaccessible 
+- Améliorations de la connectivité pour les clients utilisant des proxies avec des exigences d’authentification
+- Bogue de mise à jour de périphérique VDI fixe pour les partages de fichiers réseau 
+- PEPT en mode bloc prend désormais en charge le ciblage d’appareil granulaire avec de nouveaux CSP. Voir [Endpoint detection and response (PEPT) in block mode](edr-in-block-mode.md).
 
 ### <a name="known-issues"></a>Problèmes connus
 
@@ -671,7 +679,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucune
+- Aucun
 
 <br/>
 </details><details>
@@ -683,10 +691,10 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.357.32.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucune
+- Aucun
 <br/>
 </details><details>
 <summary>20220105.1</summary>
@@ -697,7 +705,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.355.1482.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -714,7 +722,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucune
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2111.02</summary>
@@ -742,7 +750,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucune
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2109.01</summary>
@@ -756,7 +764,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucune
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2108.01</summary>
@@ -770,7 +778,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucune
 <br/>
 </details><details>
 <summary>1.1.2107.02</summary>
@@ -781,7 +789,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.343.658.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucune
@@ -795,7 +803,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.339.1923.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucune
@@ -809,7 +817,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.339.42.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucune
@@ -837,7 +845,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.331.2302.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -851,10 +859,10 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.331.174.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucune
 <br/>
 </details><details>
 <summary>1.1.2101.02</summary>
@@ -879,7 +887,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.1991.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -893,7 +901,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.658.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Signatures Antivirus Microsoft Defender actualisées

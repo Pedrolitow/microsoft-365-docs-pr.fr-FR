@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7045ff8931def0f7aef2c1ac40ea76ec839c7ad0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 003c7cee09499fdec46f7d588e792878e0d3be66
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312644"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525359"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Déployer Microsoft Defender pour le point de terminaison sur iOS
 
@@ -117,7 +117,7 @@ Ensuite, configurez le mode supervisé pour l’application Defender for Endpoin
 
 1. Dans la page **Vérifier + créer**, quand vous avez terminé, choisir **Créer**. Le nouveau profil s’affiche dans la liste des profils de configuration.
 
-1. Ensuite, pour les fonctionnalités anti-hameçonnage améliorées, vous pouvez déployer un profil personnalisé sur les appareils iOS supervisés. Suivez les étapes ci-dessous :
+1. Vous devez ensuite déployer un profil personnalisé sur les appareils iOS supervisés. Il s’agit des fonctionnalités anti-hameçonnage améliorées. Suivez les étapes ci-dessous :
 
     - Télécharger le profil de config à partir de [https://aka.ms/mdeiosprofilesupervised](https://aka.ms/mdeiosprofilesupervised)
     - Accéder à **DevicesiOS** -> **/iPadOSConfiguration** ->  **profilesCreate Profile** -> 

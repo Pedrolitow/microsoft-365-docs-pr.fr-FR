@@ -15,15 +15,15 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.date: 11/29/2021
+ms.date: 03/16/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 6b6e9f9c379d4d0a659b49b9b9ce9b22b6e5ee04
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 6c3df0efe5c565497803ecdd84716ec70e590afd
+ms.sourcegitcommit: b67385243fb56ad20f2a6f1c40be46f5691c1c2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322658"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63527825"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Détection et réponse de point de terminaison (EDR) en mode bloc
 
@@ -63,15 +63,24 @@ L’image suivante montre une instance de logiciel indésirable qui a été dét
 
 ## <a name="enable-edr-in-block-mode"></a>Activer PEPT en mode bloc
 
+> [!IMPORTANT]
+> À partir de la version de plateforme 4.18.2202.X, vous pouvez désormais définir PEPT en mode blocage pour cibler des groupes d’appareils spécifiques à l’aide de CSP Intune. Vous pouvez continuer à définir des PEPT à l’échelle du client en mode <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">bloc dans Microsoft 365 Defender portail.</a> Veuillez noter que PEPT en mode blocage est principalement recommandé pour les appareils exécutant MDAV en mode passif (un antivirus tiers est actif). 
+
 > [!TIP]
 > Assurez-vous que [les conditions requises](#requirements-for-edr-in-block-mode) sont remplies avant d’PEPT en mode bloc.
+
+### <a name="security-portal"></a>Portail de sécurité 
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) and sign in.
 2. Choisissez **Paramètres** \> **fonctionnalités générales** \> avancées **des points de** \> **terminaison**.
 3. Faites défiler vers le bas, puis activez **Activer PEPT en mode bloc**.
 
-> [!IMPORTANT]
-> PEPT en mode bloc ne peut être allumé que dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> et est appliqué à l’échelle du client. Vous ne pouvez pas définir PEPT en mode blocage pour cibler des groupes d’appareils ou des utilisateurs spécifiques. Vous ne pouvez pas utiliser les clés de Registre, les Microsoft Intune ou la stratégie de groupe pour activer ou désactiver les PEPT en mode blocage.
+### <a name="intune"></a>Intune
+
+Pour créer une stratégie personnalisée dans Intune, voir [Deploy OMA-URIs to target a CSP through Intune, and a comparison to on-premises](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune).
+
+Pour plus d’informations sur le CSP Defender utilisé pour PEPT en mode bloc, voir « Configuration/PassiveRemediation » sous [CSP Defender](/windows/client-management/mdm/defender-csp).
+
 
 ## <a name="requirements-for-edr-in-block-mode"></a>Conditions requises pour PEPT en mode bloc
 

@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Créer le schéma pour les types d’informations sensibles basés sur des correspondances de données exactes
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d10d399d0e1d9930a6132f802fb1482ad2f18c6
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 6bd411411c3075259bd3b9fc74ec3f558171fce7
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272041"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526289"
 ---
 # <a name="create-the-schema-for-exact-data-match-based-sensitive-information-types"></a>Créer le schéma pour les types d’informations sensibles basés sur des correspondances de données exactes
 
@@ -85,7 +85,7 @@ Vous pouvez utiliser cet Assistant pour simplifier le processus de création de 
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Utiliser l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles
 
-1. Dans le centre Microsoft 365 conformité de votre client, allez à La **classification** >  des **donnéesExact correspond aux** **schémasEDM** > .
+1. Dans le centre Microsoft 365 conformité pour votre client, allez à **La classification** >  des **donnéesExact correspond aux** **schémasEDM** > .
 
 2. Choisissez **Créer un schéma EDM** pour ouvrir le menu volant de configuration de l’Assistant de schéma.
 
@@ -181,7 +181,7 @@ L’indicateur `ignoredDelimiters` ne prend pas en charge :
 >
 > Le nombre de colonnes dans votre table de sources d’informations sensibles et le nombre de champs de votre schéma doivent correspondre, l’ordre n’a pas d’importance.
 
-1. Définissez le schéma au format XML (comme dans notre exemple ci-dessous). Nommez ce fichier de **edm.xml** et configurez-le de telle façon que pour chaque colonne de la table des sources d’informations sensibles, une ligne utilise la syntaxe :
+1. Définissez le schéma au format XML (comme dans notre exemple ci-dessous). Nommez ce fichier de **edm.xml** et configurez-le de telle manière que pour chaque colonne de la table des sources d’informations sensibles, une ligne utilise la syntaxe :
 
       `\<Field name="" searchable=""/\>`.
 

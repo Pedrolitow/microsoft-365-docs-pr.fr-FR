@@ -11,18 +11,18 @@ metadata:
   ms.date: 02/24/2022
   ms.prod: m365-security
   ms.technology: mdb
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.reviewer: inbadian, shlomiakirav
   f1.keywords: NOCSH
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: ac8690f70ae681ed07fd3e85c0e86ac49cbc0038
-  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+  ms.openlocfilehash: c2df6feacacb6ff6502acdba64be6720547dcdbb
+  ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 03/08/2022
-  ms.locfileid: "63328146"
+  ms.lasthandoff: 03/17/2022
+  ms.locfileid: "63526785"
 title: Résolution des problèmes de Microsoft Defender pour les entreprises
 summary: "Microsoft Defender for Business est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. La [prévisualisation inclut un ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et nous ajouterons régulièrement des fonctionnalités.\n\nCertaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. \n\nUtilisez cet article comme guide pour résoudre les problèmes que vous pourriez rencontrer dans Microsoft Defender pour les entreprises. \n"
 sections:

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Définissez les rôles et les autorisations utilisateur du Gestionnaire de conformité Microsoft et configurez des tests automatisés des actions. Gérer l’historique des utilisateurs et filtrer l’affichage de votre tableau de bord.
-ms.openlocfilehash: 070c8fea309ea7c01b82be068acc40a7dcb830ff
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a6a0d7c12b0f798b88d460517866c55862c56740
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330480"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525014"
 ---
 # <a name="get-started-with-compliance-manager"></a>Prise en main du Gestionnaire de conformité
 
@@ -124,8 +124,6 @@ Les paramètres du Gestionnaire de conformité du Centre de conformité Microsof
 Le Gestionnaire de conformité détecte les signaux provenant d’autres solutions de conformité Microsoft 365 à lesquelles votre organisation s’abonne, notamment la gouvernance des informations, la protection des informations, la protection contre la perte de données, la conformité des communications et la gestion des risques internes. Dans la page de détails de chaque action d’amélioration, le champ Logique  de test sous l’onglet Test affiche les éléments requis dans l’autre solution afin que l’action passe et gagne des points vers votre score de conformité.
 
 Le Gestionnaire de conformité détecte également les signaux provenant d’actions d’amélioration complémentaires qui sont également surveillées par [le Score de sécurité Microsoft](../security/defender/microsoft-secure-score.md). À l’aide de ces signaux, le Gestionnaire de conformité peut tester automatiquement certaines actions d’amélioration pour vous, ce qui permet d’optimiser l’efficacité de vos activités de conformité. Lorsqu’une action d’amélioration est correctement testée et implémentée, vous recevez le nombre total de points, qui est crédité à votre score de conformité global.
-
-Dans la page de détails de chaque action d’amélioration
 
 Les tests automatiques sont désactivés par défaut pour les organisations qui ont été nouvelles dans le Gestionnaire de conformité. Lorsque vous déployez Microsoft 365 ou Office 365, la collecte complète des données et leur facteur dans votre score de conformité prennent environ sept jours. Lorsque le test automatisé est allumé, la date de test de l’action n’est pas mise à jour, mais son état de test est mis à jour. Lorsque de nouvelles évaluations sont créées, les scores incluent automatiquement les scores de contrôle Microsoft et l’intégration du Score de sécurisation.
 

@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: reference
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bd5c77911c889bb52e04981c96be239ff17575f2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 23625c8b7160d604df5f3a8b1b1387fc31027acf
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330841"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526813"
 ---
 #  <a name="delete-a-file-from-the-live-response-library"></a>Supprimer un fichier de la bibliothèque de réponses en direct  
 
@@ -67,7 +67,7 @@ SUPPRIMER https://api.securitycenter.microsoft.com/api/libraryfiles/{fileName}
 
 | Nom            | Type   | Description               |
 |-----------------|--------|---------------------------|
-| Autorisation   | String | Porteur\<token>\. Obligatoire. |
+| Autorisation   | Chaîne | Porteur\<token>\. Obligatoire. |
 
 ## <a name="request-body"></a>Corps de la demande
 

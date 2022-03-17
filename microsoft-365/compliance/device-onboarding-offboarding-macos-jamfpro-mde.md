@@ -8,18 +8,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Découvrez comment intégrer et désinsser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide de JAMF Pro pour les clients Microsoft Defender pour les points de terminaison (prévisualisation)
-ms.openlocfilehash: cfe008e7d1334be58e9aabf45d441b2553cb0fe2
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 7e2109f52590cc4d9ad23700fa4b51a09ae4b5db
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963310"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526469"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview"></a>Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de JAMF Pro pour les clients de Microsoft Defender pour point de terminaison (aperçu)
 
@@ -56,7 +56,7 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 |Préférence MDE |[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/schema/schema.json)
 
 > [!TIP]
-> Vous pouvez télécharger les fichiers *.mobileconfig* individuellement ou dans un seul fichier [combiné qui](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) contient :
+> Vous pouvez télécharger les fichiers *.mobileconfig* individuellement ou dans un [seul fichier combiné qui](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) contient :
 > - accessibility.mobileconfig
 > - fulldisk.mobileconfig
 >
@@ -79,21 +79,21 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 
 ### <a name="update-the-configuration-profile-for-grant-full-disk-access"></a>Mettre à jour le profil de configuration pour accorder un accès disque total
 
-1. Mettez à jour le profil d’accès disque complet existant avec le **fichier fulldisk.mobileconfig.**
+1. Mettez à jour le profil d’accès disque complet existant avec le **fichier fulldisk.mobileconfig** .
 
-1. Télécharger le **fichier fulldisk.mobileconfig** sur JAMF. Reportez-vous [au déploiement de profils de configuration personnalisés à l’aide](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html)de JAMF Pro .
+1. Télécharger **le fichier fulldisk.mobileconfig** sur JAMF. Reportez-vous [au déploiement de profils de configuration personnalisés à l’aide de jamf Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
 ### <a name="grant-accessibility-access-to-dlp"></a>Accorder l’accès à l’accessibilité à la DLP
 
 1. Utilisez le fichier accessibility.mobileconfig que vous avez téléchargé précédemment.
 
-1. Télécharger à JAMF comme décrit dans le déploiement de profils de configuration personnalisés à l’aide de [Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+1. Télécharger jamf comme décrit dans [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ### <a name="check-the-macos-device"></a>Vérifier l’appareil macOS 
 
 1. Redémarrez l’appareil macOS.
 
-1. Ouvrez **les profils de préférences**  >  **système.**
+1. **Ouvrez System PreferencesProfiles** > .
 
 1. Vous devriez voir :
     - Accessiblity
@@ -114,7 +114,7 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 
 Pour utiliser un appareil macOS, suivez les étapes ci-après.
 
- 1. Sous **MDE Preference Domain Properties,** supprimez les valeurs de ces paramètres
+ 1. Sous **MDE Preference Domain Properties** , supprimez les valeurs de ces paramètres
     - Fonctionnalités 
         - Utiliser les extensions système
         - Utiliser la protection contre la perte de données

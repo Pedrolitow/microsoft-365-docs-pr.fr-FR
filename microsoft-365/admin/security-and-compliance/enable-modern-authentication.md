@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Découvrez comment définir des clés de Registre pour activer l’authentification moderne pour les appareils sur Microsoft Office 2013.
-ms.openlocfilehash: 010dce00762e4e73d21a9da668a7ac9606d731f9
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: c390e3b9858a4d7d8fc37ea5c5e6f1901d5e20fb
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504752"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525110"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Activer l'authentification moderne pour Office 2013 sur les appareils Windows
 
@@ -78,7 +78,7 @@ Créez ou modifiez les clés de Registre suivantes pour forcer Outlook à utilis
    HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\
    ```
 
-8. Si les clés du tableau ci-dessus existent déjà, modifiez les valeurs si nécessaire, puis quittez l’Éditeur du Registre. Si ce n’est pas le cas, dans le menu Édition, pointez sur **Nouveau** , puis sélectionnez **Valeur DWORD** pour créer les clés manquantes. 
+8. Si les *clés EnableADAL* et *Version* existent déjà, modifiez les valeurs si nécessaire, puis quittez l’Éditeur du Registre. Si ce n’est pas le cas, dans le menu Édition, pointez sur **Nouveau** , puis sélectionnez **Valeur DWORD** pour créer les clés manquantes. 
 
 9. Par exemple, si la *clé EnableADAL* est manquante, tapez *EnableADAL*, puis appuyez sur **Entrée.**
 

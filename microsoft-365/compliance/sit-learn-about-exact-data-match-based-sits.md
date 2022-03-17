@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 description: Découvrez les types d’informations sensibles exacts basés sur les correspondances de données.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d6b8b2bb5387257bf016e751713b9cba61de9691
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: 21e6f3c12d7c401562a1ee1915e1e1c266724b1b
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426470"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526919"
 ---
 # <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>En savoir plus sur les types d’informations sensibles exacts basés sur la correspondance de données
 
 Les [types](sensitive-information-type-learn-about.md) d’informations sensibles permettent d’identifier les éléments sensibles afin de pouvoir les empêcher d’être partagés par inadvertance ou de manière inappropriée, pour faciliter la recherche de données pertinentes dans eDiscovery et pour appliquer des actions de gouvernance à certains types d’informations. Vous définissez un type d’informations sensibles personnalisé (SIT) basé sur :
 
 - modèles
-- preuve de mot clé telle *que l’employé,* le numéro *de sécurité sociale* ou *l’ID*
+- preuve de mot clé telle *que l’employé*, *le numéro de sécurité sociale* *ou l’ID*
 - caractère à proximité de la preuve dans un modèle particulier
 - niveaux de confiance
 
@@ -64,10 +64,10 @@ Lorsque vous travaillez avec des sits EDM, il est utile de comprendre quelques c
 
 Le schéma est un fichier xml qui définit :
 
-- Nom du schéma, plus loin appelé *DataStore*. 
+- Nom du schéma, appelé *datastore*. 
 - Noms de champ que contient votre table de sources d’informations sensibles. Il existe un mappage 1:1 du nom du champ de schéma au nom de colonne de la table source d’informations sensibles.
 - Champs utilisables dans une recherche.
-- Tous les paramètres de modification de recherche, appelés correspondance *configurables,* tels que l’ignorer les délimiteurs et la cas dans les valeurs de recherche.
+- Tous les paramètres de modification de recherche, appelés correspondance *configurables*, tels que l’ignorer les délimiteurs et la cas dans les valeurs de recherche.
 
 ### <a name="sensitive-information-source-table"></a>Tableau des sources d’informations sensibles
 
@@ -94,11 +94,11 @@ Proximité : nombre de caractères entre l’élément principal et l’élémen
 
 ### <a name="you-supply-your-own-schema-and-data"></a>Vous fournissez vos propres schémas et données
 
-Microsoft 365 est livré avec plus de [200 SITS](sensitive-information-type-entity-definitions.md) avec des schémas prédéfinits, des modèles regex, des mots clés et des niveaux de confiance. Avec les sits EDM, vous êtes responsable de la définition du schéma, ainsi que des champs principaux et secondaires qui identifient les éléments sensibles. Étant donné que le schéma et les valeurs de données principales [](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) et secondaires sont hautement sensibles, vous les [](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) chiffrez via une fonction de hachage qui inclut une valeur salt générée de manière aléatoire ou fournie automatiquement. Ces valeurs hachées sont ensuite téléchargées vers le service, afin que vos données sensibles ne soient jamais ouvertes.
+[Microsoft 365 est livré avec plus de 200 SITS](sensitive-information-type-entity-definitions.md) avec des schémas prédéfinits, des modèles regex, des mots clés et des niveaux de confiance. Avec les sits EDM, vous êtes responsable de la définition du schéma, ainsi que des champs principaux et secondaires qui identifient les éléments sensibles. Étant donné que le schéma et les valeurs de données principales et secondaires sont hautement sensibles, vous les chiffrez [](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) via une fonction de hachage qui inclut une valeur salt générée de [](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) manière aléatoire ou fournie automatiquement. Ces valeurs hachées sont ensuite téléchargées vers le service, afin que vos données sensibles ne soient jamais ouvertes.
 
 ### <a name="primary-and-secondary-support-elements"></a>Éléments de prise en charge principaux et secondaires
 
-Lorsque vous créez un sit EDM, vous définissez un champ *d’élément principal* dans le package de règles. Les champs principaux sont les éléments pour lesquels tout votre contenu sera recherché et qui doivent suivre un modèle défini pour être identifiés. Lorsque l’élément principal est trouvé dans les éléments analysés, EDM recherche ensuite les éléments secondaires ou de prise en charge, qui n’ont pas besoin de suivre un modèle, et leur proximité par rapport à l’élément principal.  EDM nécessite que l’élément principal soit tout d’abord découvrable via un SIT existant. Consultez les [définitions d’entités](sensitive-information-type-entity-definitions.md) de types d’informations sensibles pour obtenir la liste complète des sits disponibles. Vous devez trouver l’une de celles qui détectent la classe que votre EDM SIT doit détecter. Par exemple, si votre schéma SIT EDM a le numéro de sécurité sociale américain comme élément principal, lorsque vous créez votre schéma EDM, vous l’avez associé au numéro de sécurité sociale [(SSN)](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) SIT des États-Unis.
+Lorsque vous créez un sit EDM, vous définissez un champ *d’élément principal* dans le package de règles. Les champs principaux sont les éléments pour lesquels tout votre contenu sera recherché et qui doivent suivre un modèle défini pour être identifiés. Lorsque l’élément principal est trouvé dans les éléments analysés, EDM recherche ensuite les éléments  secondaires ou de prise en charge, qui n’ont pas besoin de suivre un modèle, et leur proximité par rapport à l’élément principal. EDM nécessite que l’élément principal soit tout d’abord découvrable via un SIT existant. Consultez les [définitions d’entités de types d’informations sensibles](sensitive-information-type-entity-definitions.md) pour obtenir la liste complète des sits disponibles. Vous devez trouver l’une de celles qui détectent la classe que votre EDM SIT doit détecter. Par exemple, si votre schéma SIT EDM a le numéro de sécurité sociale américain comme élément principal, lorsque vous créez votre schéma EDM, vous l’avez associé au numéro de sécurité sociale [(SSN)](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) SIT des États-Unis.
 
 
 ## <a name="how-matching-works"></a>Fonctionnement de la correspondance

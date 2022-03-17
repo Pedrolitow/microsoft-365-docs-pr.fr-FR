@@ -1,5 +1,5 @@
 ---
-title: Scénarios d’utilisation courants pour les types d’informations sensibles
+title: Scénarios d’usage courants pour les types d’informations sensibles
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 description: Comment implémenter des scénarios de cas d’utilisation des types d’informations sensibles courants
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cd11c4843d91923f1ca5e171cc8bfc8e1c64c73d
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 39afa17fc7bf258848de9d5554b3dd56a1ce21b5
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272285"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525735"
 ---
-# <a name="common-usage-scenarios-for-sensitive-information-types"></a>Scénarios d’utilisation courants pour les types d’informations sensibles
+# <a name="common-usage-scenarios-for-sensitive-information-types"></a>Scénarios d’usage courants pour les types d’informations sensibles
 
 Cet article explique comment implémenter certains scénarios courants d’utilisation de type d’informations sensibles (SIT). Vous pouvez utiliser ces procédures comme exemples et les adapter à vos besoins spécifiques.
 
@@ -56,7 +56,7 @@ Contoso basé en Australie trouve que les numéros de téléphone dans les signa
 
 **Solution suggérée**
 
-Ajoutez un groupe « non » dans les éléments de prise en charge à l’aide d’une liste de mots clés contenant des mots clés couramment utilisés dans la signature d’e-mails tels que « Téléphone », « Mobile », « e-mail », « Merci » etc. Conservez la proximité de cette liste de mots clés à une valeur plus petite comme 50 caractères pour une meilleure précision. Pour plus d’informations, [consultez La mise en place des types d’informations sensibles personnalisés](create-a-custom-sensitive-information-type.md).
+Ajoutez un groupe « non » dans les éléments de prise en charge à l’aide d’une liste de mots clés contenant des mots clés couramment utilisés dans la signature d’e-mails tels que « Téléphone », « Mobile », « e-mail », « Merci et merci », etc. Conservez la proximité de cette liste de mots clés à une valeur plus petite comme 50 caractères pour une meilleure précision. Pour plus d’informations, [consultez La mise en place des types d’informations sensibles personnalisés](create-a-custom-sensitive-information-type.md).
 
 ## <a name="unable-to-trigger-aba-routing-policy"></a>Impossible de déclencher la stratégie de routage ABA
 

@@ -1,5 +1,5 @@
 ---
-title: Intégrer et mettre hors service des appareils macOS dans des solutions de conformité à l’aide Microsoft Intune microsoft Defender pour les clients endpoint (prévisualisation)
+title: Intégrer et mettre hors service des appareils macOS dans des solutions de conformité à l’Microsoft Intune microsoft Defender pour les clients endpoint (prévisualisation)
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -8,18 +8,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Découvrez comment intégrer et mettre hors service des appareils macOS dans Microsoft 365 solutions de conformité à l’aide Microsoft Intune pour les clients MDE (prévisualisation)
-ms.openlocfilehash: 0486c08734e049a82550c1fb596b0e3d789126b8
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: 6cc4362e924f291c6a8396bff342c6f628e33be3
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159528"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526553"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview"></a>Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide d'Intune pour les clients de Microsoft Defender pour point de terminaison (aperçu)
 
@@ -35,7 +35,7 @@ ms.locfileid: "62159528"
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Assurez-vous que vos appareils macOS sont [intégrés à Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) et inscrits dans [l’application Portail d'entreprise.](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp) 
+- Assurez-vous que [vos appareils macOS sont intégrés à Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) et inscrits dans [l Portail d'entreprise appl;](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp) 
 - Assurez-vous que vous avez accès au [centre Microsoft Endpoint Manager de données](https://endpoint.microsoft.com/#home)
 - Cela prend en charge la version macOS De qua l ment 10.15 et les versions supérieures
 - Installer le navigateur Edge v95+ sur vos appareils macOS 
@@ -52,7 +52,7 @@ Utilisez ces étapes pour intégrer un appareil macOS aux solutions de conformit
 accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 
 > [!TIP]
-> Vous pouvez télécharger les fichiers *.mobileconfig* individuellement ou dans un seul fichier [combiné qui](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) contient :
+> Vous pouvez télécharger les fichiers *.mobileconfig* individuellement ou dans un [seul fichier combiné qui](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) contient :
 > - accessibility.mobileconfig
 > - fulldisk.mobileconfig
 > 
@@ -61,7 +61,7 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 
 ### <a name="create-system-configuration-profiles"></a>Créer des profils de configuration système
 
-1. Ouvrez le **centre Microsoft Endpoint Manager**  >  **profils de**  >  **configuration des appareils.**
+1. Ouvrez le **Microsoft Endpoint Manager profils** **centerDevicesConfiguration** >  > .
 
 1. Choose: **Create profile**. 
 
@@ -78,17 +78,17 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 
 1. Sélectionnez **Suivant**
 
-1. Sous **l’onglet Affectations,** ajoutez le groupe sur qui vous souhaitez déployer ces configurations et choisissez **Suivant.**
+1. Sous **l’onglet Affectations** , ajoutez le groupe vers qui vous souhaitez déployer ces configurations et choisissez **Suivant**.
 
 1. Examinez vos paramètres et choisissez **Créer** pour déployer la configuration.
 
-1. Ouvrez **les**  >  **profils de configuration des** appareils , vous devriez voir vos profils créés ici.
+1. **Ouvrez les** **profils DevicesConfiguration** > , vous devriez voir vos profils créés ici.
 
-1. Dans la page **Profils** de configuration, choisissez le profil que vous  avez créé, dans cet exemple *AccessibilityformacOS,* puis choisissez État de l’appareil pour voir la liste des appareils et l’état de déploiement du profil de configuration.
+1. Dans la page **Profils** de configuration, choisissez le profil que vous avez créé, dans cet exemple *AccessibilityformacOS*, puis choisissez État de l’appareil pour voir la liste des appareils et l’état de déploiement du profil de configuration.
 
 ### <a name="update-configuration-profiles"></a>Mettre à jour les profils de configuration
 
-1. Mettez à jour le profil d’accès disque complet existant avec le **fichier fulldisk.mobileconfig.**
+1. Mettez à jour le profil d’accès disque complet existant avec le **fichier fulldisk.mobileconfig** .
 
 1. Mettre à jour le profil de préférences MDE avec ces valeurs
    
@@ -107,7 +107,7 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 > [!IMPORTANT]
 > Laboarding empêche l’appareil d’envoyer des données de capteur au portail, mais les données de l’appareil, y compris la référence aux alertes qu’il a eues, seront conservées pendant 6 mois.
 
-1. Dans **Microsoft Endpoint Manager, ouvrez** **les** profils de configuration des appareils, vous devez y voir vos  >  profils créés.
+1. Dans **Microsoft Endpoint Manager,** ouvrez les profils **DevicesConfiguration** > , vous devez y voir vos profils créés.
 
 2. Dans la page **Profils de** configuration, choisissez le profil de préférences MDE.
 

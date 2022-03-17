@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre comment utiliser l’Analyseur de configuration de conformité Microsoft pour être rapidement opérationnel avec le Gestionnaire de conformité Microsoft.
-ms.openlocfilehash: 3c5230a8a9998c4b924e5a9d4a9565ae1c97db89
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a679f0483431313672ac0dfa1101eb9909b6c060
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325108"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525152"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Analyseur de configuration de la conformité Microsoft pour le Gestionnaire de conformité (prévisualisation)
 
@@ -77,9 +77,7 @@ Après avoir installé MCCA, vous pouvez exécuter MCCA et générer un rapport.
 
 3. Une fois que MCCA s’exécute, il vérifie la version initiale et demande des informations d’identification. À l’invite d’entrée du nom d’utilisateur, connectez-vous à l’Microsoft 365 de votre compte de messagerie (affichez les rôles éligibles [à la création de rapports](#role-based-reporting)). Entrez ensuite votre mot de passe à l’invite de mot de passe.
 
-Votre rapport prendra ensuite environ 2 à 5 minutes pour être généré. Une fois l’application effectuée, une fenêtre de navigateur s’ouvre et affiche votre rapport HTML. Chaque fois que vous exécutez l’outil, il vous demande vos informations d’identification et génère un nouveau rapport. Ce rapport est stocké localement dans le répertoire suivant :
-
-C:\Users\<username>\AppData\Local\Microsoft\MCCA. 
+Votre rapport prendra ensuite environ 2 à 5 minutes pour être généré. Une fois l’application effectuée, une fenêtre de navigateur s’ouvre et affiche votre rapport HTML. Chaque fois que vous exécutez l’outil, il vous demande vos informations d’identification et génère un nouveau rapport. Ce rapport est stocké localement dans le répertoire C: \ Utilisateurs \ *nom* d’utilisateur \ AppData \ Local \ Microsoft \ MCCA.
 
 Vous pouvez accéder aux rapports générés précédemment à partir de ce répertoire.
 

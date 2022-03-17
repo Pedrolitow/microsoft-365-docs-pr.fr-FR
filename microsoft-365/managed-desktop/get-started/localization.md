@@ -1,19 +1,24 @@
 ---
 title: Localiser l’expérience utilisateur
 description: Comment trouver des appareils pour les utilisateurs
-keywords: 'Bureau géré Microsoft, Microsoft 365, service, documentation'
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: tiaraquan
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
+ms.openlocfilehash: c429a072d6ceb2d5d1472533649e30d1fc1a0078
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525000"
 ---
-
 # <a name="localize-the-user-experience"></a>Localiser l’expérience utilisateur
 
 Les utilisateurs Microsoft Manged Desktop peuvent sélectionner la langue de leur choix pendant le processus d’installation (expérience « out-of-box experience ») ou par la suite.
@@ -25,7 +30,7 @@ Pendant l’installation, les utilisateurs peuvent sélectionner la langue de le
 | Attribut | Description |
 | ------ | ------ |
 | Windows 10 de langue | <ul><li>Langue d’affichage</li><li>Langue du clavier</li><li>Fonctionnalités liées à la langue à la demande</li><ul> |
-| Microsoft 365 Apps des fonctionnalités Enterprise langue | <ul><li>Langue d’affichage</li><li>Outils de preuve et de authoring</li></ul> |
+| Microsoft 365 Apps pour les fonctionnalités Enterprise langue | <ul><li>Langue d’affichage</li><li>Outils de preuve et de authoring</li></ul> |
 
 > [!NOTE]
 > Les utilisateurs peuvent uniquement obtenir des fonctionnalités liées à la langue à la demande en sélectionnant la langue pendant le processus d’installation.
@@ -37,9 +42,14 @@ Les utilisateurs peuvent sélectionner la langue de leur choix pour Windows 10 e
 | Fonctionnalité | Description |
 | ------ | ------ |
 | Windows 10 de langue | <ul><li>Langue d’affichage</li><li>Langue du clavier</li><ul> |
-| Microsoft 365 Apps des fonctionnalités Enterprise langue | <ul><li>Langue d’affichage</li><li>Outils de preuve et de authoring</li></ul> |
+| Microsoft 365 Apps pour les fonctionnalités Enterprise langue | <ul><li>Langue d’affichage</li><li>Outils de preuve et de authoring</li></ul> |
 
-Pour rendre les [langues](#supported-languages) Microsoft 365 Apps Enterprise prise en charge disponibles pour vos utilisateurs, ajoutez-les au groupe Espace de travail **Office-Language_Packs** moderne. Les langues seront disponibles dans le Portail d'entreprise Intune.
+## <a name="install-more-languages"></a>Installer d’autres langues
+
+> [!NOTE]
+> Depuis le 16 mars 2022, nous allons supprimer progressivement le groupe Modern Workplace-Office-Language_Packs qui vous permet d’ajouter des langues à Microsoft Office. La transition vers la nouvelle méthode (voir ci-dessous) sera terminée en avril 2022. Si vous avez des problèmes pendant cette période de transition, contactez le [support technique](../working-with-managed-desktop/admin-support.md).
+
+Par défaut, Microsoft Office exige que les utilisateurs soient administrateurs. Microsoft Manged Desktop déploie une stratégie Office pour permettre aux utilisateurs standard d’installer des packs d’accessoires linguistiques directement à partir de leurs applications Office. Pour plus d’informations, voir [Autoriser les utilisateurs qui ne sont pas administrateurs à installer des langues supplémentaires](/deployoffice/overview-deploying-languages-microsoft-365-apps#allow-users-who-arent-admins-to-install-additional-languages).
 
 ## <a name="supported-languages"></a>Langues prises en charge
 
@@ -93,12 +103,6 @@ Si vous reutilisez des appareils existants, vous devrez peut-être travailler av
 Si vos utilisateurs ont besoin d’une langue autre que celle répertoriée ici, déposez une demande de [support](../working-with-managed-desktop/admin-support.md) à l’aide du [portail d’administration](access-admin-portal.md).
 
 ## <a name="languages-for-support-and-operations"></a>Langues pour la prise en charge et les opérations
-
-### <a name="user-support"></a>Support pour les utilisateurs
-
-Microsoft Manged Desktop ne fournit une prise en charge qu’en anglais. Si les utilisateurs choisissent une autre langue dans l’application Aide, ils obtiennent le support des canaux de support microsoft généraux, au lieu d’être directement Microsoft Manged Desktop. Pour plus d’informations, voir [Obtenir de l’aide pour les utilisateurs](../working-with-managed-desktop/end-user-support.md).
-
-Si vos utilisateurs ont besoin d’une prise en charge dans d’autres langues, vous devrez le fournir via des sources de support non-Microsoft ou à partir de votre propre organisation.
 
 ### <a name="admin-support-and-operations"></a>Support et opérations de l’administrateur
 

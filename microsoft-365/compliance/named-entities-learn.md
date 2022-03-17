@@ -12,30 +12,30 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment les entités nommées vous aident à détecter les éléments sensibles contenant des noms de personnes, des adresses physiques et des termes médicaux via des stratégies de protection contre la perte de données
-ms.openlocfilehash: 002905264d789e7ebe0b163a80fe033c028a6b4b
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 79f375fecf09a6f7ffe4c1a97b8d6864fbfb3e13
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110846"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63524864"
 ---
 # <a name="learn-about-named-entities-preview"></a>Découvrez les entités nommées (aperçu).
 
 > [!IMPORTANT]
 > La fonctionnalité entités nommées est en cours de déploiement et apparaît dans votre client lorsqu’elle est disponible pour vous. Recherchez-les dans l’Explorateur de contenu et dans le flux de authoring de stratégie de protection contre la perte de données (DLP). 
 
-*Les entités nommées* sont [des types d’informations sensibles](sensitive-information-type-learn-about.md) (SIT). Ce sont des classifieurs complexes basés sur des modèles et des dictionnaires que vous pouvez utiliser pour détecter des noms de personnes, des adresses physiques et des conditions médicales. Vous pouvez les voir dans le Centre de conformité > classification des > **types d’informations sensibles.** Voici une liste partielle des endroits où vous pouvez utiliser les sits :
+*Les entités nommées* sont [des types d’informations sensibles](sensitive-information-type-learn-about.md) (SIT). Ce sont des classifieurs complexes basés sur des modèles et des dictionnaires que vous pouvez utiliser pour détecter des noms de personnes, des adresses physiques et des conditions médicales. Vous pouvez les voir dans le Centre de conformité > **classification des > types d’informations sensibles**. Voici une liste partielle des endroits où vous pouvez utiliser les sits :
 
 - [Stratégies de protection contre la perte de données (DLP)](dlp-learn-about-dlp.md) 
 - [Étiquettes de confidentialité](sensitivity-labels.md)
 - [Gestion des risques internes](insider-risk-management-solution-overview.md)
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
 
-DLP fait un usage spécial des entités nommées dans les modèles de stratégie *améliorés,* qui sont des stratégies DLP pré-configurées que vous pouvez personnaliser pour les besoins de votre organisation. Vous pouvez également créer [vos propres stratégies DLP](create-test-tune-dlp-policy.md) à partir d’un modèle [vide](create-a-dlp-policy-from-a-template.md) et utiliser une entité nommée SIT comme condition.
+DLP fait un usage spécial des entités *nommées dans les modèles de stratégie améliorés*, qui sont des stratégies DLP pré-configurées que vous pouvez personnaliser pour les besoins de votre organisation. Vous pouvez également créer [vos propres stratégies DLP](create-test-tune-dlp-policy.md) à partir d’un modèle [vide](create-a-dlp-policy-from-a-template.md) et utiliser une entité nommée SIT comme condition.
 
 <!-- There are many other SITs that detect strings like social security, credit card, or bank account numbers to identify sensitive items. For more information, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md).-->
 
@@ -43,13 +43,13 @@ DLP fait un usage spécial des entités nommées dans les modèles de stratégie
 
 ## <a name="examples-of-named-entity-sits"></a>Exemples de sits d’entité nommée
 
-Les sits d’entité nommée ont deux noms *:* regroupés et *dissociés*
+Les sits d’entité nommée ont deux *noms :* regroupés et *dissociés*
 
 Les sits d’entité nommée regroupées détectent toutes les correspondances possibles. Utilisez-les comme critères généraux dans vos stratégies DLP pour détecter les éléments sensibles.
 
 Les sits d’entité nommée dissociées ont un focus plus étroit, comme un seul pays. Utilisez-les lorsque vous avez besoin d’une stratégie DLP avec une portée de détection plus étroite.
  
-Voici quelques exemples de SIT d’entité nommée. Vous pouvez les trouver tous les 52 dans le Centre de conformité > classification des données > **types d’informations sensibles.**
+Voici quelques exemples de SIT d’entité nommée. Vous pouvez les trouver tous les 52 dans le Centre de conformité > classification des > **types d’informations sensibles**.
 
 |Entité nommée |Description  |Bundled/Unbundled  |
 |---------|---------|---------|
@@ -62,7 +62,7 @@ Voici quelques exemples de SIT d’entité nommée. Vous pouvez les trouver tous
 
 ## <a name="examples-of-enhanced-dlp-policies"></a>Exemples de stratégies DLP améliorées
 
-Voici quelques exemples de stratégies DLP améliorées qui utilisent des sits d’entité nommée. Vous pouvez les trouver tous les 10 dans le Centre de conformité > protection contre la perte de **> créer une stratégie.** Les modèles améliorés peuvent être utilisés dans DLP et l’étiquetage automatique.
+Voici quelques exemples de stratégies DLP améliorées qui utilisent des sits d’entité nommée. Vous pouvez les trouver tous les 10 dans le Centre de conformité > protection contre la **perte de > créer une stratégie**. Les modèles améliorés peuvent être utilisés dans DLP et l’étiquetage automatique.
 
 |Catégorie de stratégie  |Modèle  |Description  |
 |---------|---------|---------|

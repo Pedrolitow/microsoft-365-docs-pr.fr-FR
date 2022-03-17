@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8bf51b744e294e4bb2740b3e437305629eb23c2a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 2ed9d25336cd7e8162849aa5d1d1a3e3382063fc
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934248"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526675"
 ---
 # <a name="integration-with-microsoft-defender-for-cloud"></a>Intégration de à Microsoft Defender pour le cloud
 
@@ -31,11 +31,11 @@ ms.locfileid: "61934248"
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender pour le cloud
 
-Microsoft Defender pour le point de terminaison peut s’intégrer à Microsoft Defender pour le Cloud pour fournir une solution de protection Windows serveur complète. Avec cette intégration, Microsoft Defender pour le Cloud peut utiliser la puissance de Defender for Endpoint pour fournir une détection améliorée des menaces pour Windows serveurs.
+Microsoft Defender pour le point de terminaison peut s’intégrer à Microsoft Defender pour le Cloud pour fournir une solution de protection Windows complète. Avec cette intégration, Microsoft Defender pour le Cloud peut utiliser la puissance de Defender for Endpoint pour fournir une détection améliorée des menaces pour Windows serveurs.
 
 Les fonctionnalités suivantes sont incluses dans cette intégration :
 
-- Intégration automatisée : le capteur Defender for Endpoint est automatiquement activé sur les serveurs Windows intégrés à Microsoft Defender pour le Cloud. Pour plus d’informations sur l’intégration de Microsoft Defender pour le cloud, voir Utiliser la [licence Microsoft Defender pour point de terminaison intégrée.](/azure/security-center/security-center-wdatp)
+- Intégration automatisée : le capteur Defender for Endpoint est automatiquement activé sur les serveurs Windows intégrés à Microsoft Defender pour le Cloud. Pour plus d’informations sur l’intégration de Microsoft Defender pour le cloud, voir [Utiliser la licence Microsoft Defender pour point de terminaison intégrée](/azure/security-center/security-center-wdatp).
 
     > [!NOTE]
     > L’intégration entre Microsoft Defender pour les serveurs et Microsoft Defender pour point de terminaison a été étendue pour prendre en charge [Windows Server 2019 et Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
@@ -52,6 +52,6 @@ La surveillance des points de terminaison de serveur utilisant cette intégratio
 
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 - [Intégrer des versions antérieures de Windows](onboard-downlevel.md)
 - [Intégration Windows Server 2012 R2, 2016, SAC version 1803 et 2019](configure-server-endpoints.md)

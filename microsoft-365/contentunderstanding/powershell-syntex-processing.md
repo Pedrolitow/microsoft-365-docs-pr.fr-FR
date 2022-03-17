@@ -11,14 +11,14 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 description: Découvrez comment utiliser PowerShell pour demander le traitement par un modèle SharePoint Syntex document.
-ms.openlocfilehash: f6e013bddbec3c0f12bb8665de538967adfff116
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: 8f66a0cc5e59ad2ccb6b92d98cfaee8ce84470f2
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159672"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526441"
 ---
 # <a name="use-powershell-to-request-processing-by-a-document-understanding-model"></a>Utiliser PowerShell pour demander le traitement par un modèle de présentation de document
 
@@ -38,7 +38,7 @@ Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/finance"
 Request-PnPSyntexClassifyAndExtract -List "Documents"
 ```
 
-Pour un traitement de priorité inférieure, vous pouvez également envisager d’utiliser le paramètre -OffPeak, qui placera les fichiers en file d’attente pour traitement en dehors des heures d’ouverture où se trouve votre client. Pour [plus d’informations, voir Request-PnPSyntexClassifyAndExtract.](https://pnp.github.io/powershell/cmdlets/Request-PnPSyntexClassifyAndExtract.html)
+Pour un traitement de priorité inférieure, vous pouvez également envisager d’utiliser le paramètre -OffPeak, qui placera les fichiers en file d’attente pour traitement en dehors des heures d’ouverture où se trouve votre client. Pour [plus d’informations, voir Request-PnPSyntexClassifyAndExtract](https://pnp.github.io/powershell/cmdlets/Request-PnPSyntexClassifyAndExtract.html) .
 
 ## <a name="request-processing-of-all-items-in-a-library"></a>Demande de traitement de tous les éléments d’une bibliothèque
 
