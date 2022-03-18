@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: Découvrez comment utiliser la recherche avancée de métadonnées pour rechercher des éléments dans SharePoint bibliothèques de documents à l’aide SharePoint Syntex.
-ms.openlocfilehash: b5dffe0cd0bf481c1243d87450110d545578a06b
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 87edac08dd057c0e9dea2ce36f4339f9c0bb5344
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806903"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526525"
 ---
 # <a name="search-for-metadata-in-document-libraries-in-microsoft-sharepoint-syntex"></a>Rechercher des métadonnées dans les bibliothèques de documents dans Microsoft SharePoint Syntex
 
@@ -50,4 +50,4 @@ La recherche avancée de métadonnées vous permet d’utiliser les métadonnée
    |Type de fichier     |Effectuez une recherche par type de fichier sélectionné (par exemple, document Word ou PDF).        |
    |Type de contenu  |Recherchez par type de contenu sélectionné. Cette option s’affiche uniquement si un type de contenu non par défaut est appliqué à la bibliothèque. Les types de contenu par défaut sont les *documents* et les *dossiers*.        |
 
-3. Sélectionner **Rechercher**. Les documents qui correspondent à votre recherche de métadonnées sont affichés sur la page de résultats. 
+3. Sélectionnez **Rechercher**. Les documents qui correspondent à votre recherche de métadonnées sont affichés sur la page de résultats. 

@@ -16,8 +16,6 @@
               href: microsoft-365-security-center-mdo.md
             - name: Redirection de Defender pour Point de terminaison vers Microsoft 365 Defender
               href: microsoft-365-security-mde-redirection.md
-            - name: Redirection du Centre de sécurité et conformité Office 365 vers Microsoft 365 Defender
-              href: microsoft-365-security-mdo-redirection.md
         - name: intégration de Microsoft 365 Defender à Microsoft Sentinel
           href: microsoft-365-defender-integration-with-azure-sentinel.md
         - name: Microsoft Defender 365 pour les clients du gouvernement des États-Unis

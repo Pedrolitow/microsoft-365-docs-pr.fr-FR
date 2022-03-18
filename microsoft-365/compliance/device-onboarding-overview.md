@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Intégrer des appareils Windows 10 et Windows 11 dans Microsoft 365
-ms.openlocfilehash: 4e2e94dcb8b366a5ffda651b910a611ce9e921a1
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: dc2324f9ab8105d51730071f84397c8648c9a9de
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327204"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525056"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>Vue d’ensemble de l’intégration des appareils Windows 10 et Windows 11 dans Microsoft 365
 
@@ -109,7 +109,7 @@ Assurez-vous que les appareils Windows que vous devez intégrer répondent à ce
 
 Vous devez activer la surveillance des appareils et intégrer vos points de terminaison avant de pouvoir surveiller et protéger les éléments sensibles sur un appareil. Ces deux actions sont effectuées dans le portail de conformité Microsoft 365.
 
-Lorsque vous voulez intégrer des appareils qui n’ont pas encore été intégrés, vous devez télécharger et déployer les scripts appropriés sur ces appareils. Suivez les procédures d’intégration d’appareil ci-dessous.
+Lorsque vous souhaitez intégrer des appareils qui n’ont pas encore été intégrés, vous téléchargerez le script approprié et le déployez sur ces appareils. Suivez la procédure pour Intégrer des appareils.
 
 Si vous disposez déjà d’appareils incorporés dans [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/), ceux-ci apparaissent déjà dans la liste des périphériques gérés.
 
@@ -128,7 +128,7 @@ Dans ce scénario de déploiement, vous allez intégrer des appareils Windows 10
 3. Sélectionnez **Gestion des appareils** pour ouvrir la liste des **Appareils**. 
 
 > [!NOTE]
-> Si vous avez précédemment déployé Microsoft Defender pour le point de terminaison, tous les appareils qui ont été intégrés au cours de ce processus sont répertoriés dans la liste **Appareils.** Il n’est pas nécessaire de les intégrer à nouveau.
+> Si vous avez précédemment déployé Microsoft Defender pour point de terminaison, tous les appareils qui ont été intégrés au cours de ce processus sont répertoriés dans la liste **Appareils.**. Il n’est pas nécessaire de les intégrer à nouveau.
 
 4. Sélectionnez **Intégration** pour lancer le processus d’intégration.
 

@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0703e1f23d9d54a907b39382438f85f544a5b6de
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: b1d7d3dab26d4f9034294b2780875d33cb2fbef3
+ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504860"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63557939"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de sécurité de messagerie dans le portail Microsoft 365 Defender messagerie
 
@@ -89,11 +89,13 @@ Le tableau de détails sous le graphique présente les informations suivantes :
 - **Heure de création**
 - **ID d'utilisateur**
 - **Action**
+- **Balises** : pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur](user-tags.md).
 
 Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Filtrer** et en sélectionnant une ou plusieurs des valeurs suivantes dans le volant qui s’affiche :
 
 - **Date (UTC)** : **date de début et date** **de fin**.
 - **Activité** : **restreint ou** **suspect**
+- **Balise** : **tout ou** la balise utilisateur spécifiée (y compris les comptes de priorité).
 
 Lorsque vous avez terminé de configurer les filtres, cliquez sur **Appliquer**, **Annuler** ou **Effacer les filtres**.
 
@@ -202,7 +204,7 @@ Le tableau de détails sous le graphique présente les informations suivantes :
 - **3 jours**
 - **7 jours**
 - **15 jours**
-- **30 jours**
+- **30 jours**
 
 Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Filtrer** et en sélectionnant une ou plusieurs des valeurs suivantes dans le volant qui s’affiche :
 
@@ -520,7 +522,7 @@ Dans le tableau de détails sous le graphique, les informations suivantes sont d
 - **Technologie de détection**
 - **État de remise**
 - **IP de l’expéditeur**
-- **Tags**
+- **Balises** : pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur](user-tags.md).
 
 Si vous cliquez **sur Filtre**, les filtres suivants sont disponibles :
 
@@ -531,7 +533,7 @@ Si vous cliquez **sur Filtre**, les filtres suivants sont disponibles :
   - **All**
   - **Entrant**
   - **Sortant**
-- **Balise** : **tout ou** la balise utilisateur spécifiée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur](user-tags.md).
+- **Balise** : **tout ou** la balise utilisateur spécifiée (y compris les comptes de priorité).
 - **Domaine** : **tout** ou [un domaine accepté](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Type de stratégie** :
   - **All**
@@ -572,7 +574,7 @@ Dans le tableau de détails sous le graphique, les informations suivantes sont d
 - **Technologie de détection**
 - **État de remise**
 - **IP de l’expéditeur**
-- **Tags**
+- **Balises** : pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur](user-tags.md).
 
 Si vous cliquez **sur Filtre**, les filtres suivants sont disponibles :
 
@@ -582,7 +584,7 @@ Si vous cliquez **sur Filtre**, les filtres suivants sont disponibles :
   - **All**
   - **Entrant**
   - **Sortant**
-- **Balise** : **tout ou** la balise utilisateur spécifiée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur](user-tags.md).
+- **Balise** : **tout ou** la balise utilisateur spécifiée (y compris les comptes de priorité).
 - **Domaine** : **tout** ou [un domaine accepté](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Type de stratégie** :
   - **All**
@@ -627,7 +629,7 @@ Dans le tableau de détails sous le graphique, les informations suivantes sont d
 - **Technologie de détection**
 - **État de remise**
 - **IP de l’expéditeur**
-- **Tags**
+- **Balises** : pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur](user-tags.md).
 
 Si vous cliquez **sur Filtre**, les filtres suivants sont disponibles :
 
@@ -638,7 +640,7 @@ Si vous cliquez **sur Filtre**, les filtres suivants sont disponibles :
   - **All**
   - **Entrant**
   - **Sortant**
-- **Balise** : **tout ou** la balise utilisateur spécifiée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur](user-tags.md).
+- **Balise** : **tout ou** la balise utilisateur spécifiée (y compris les comptes de priorité).
 - **Domaine** : **tout** ou [un domaine accepté](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Type de stratégie** :
   - **All**
@@ -677,7 +679,7 @@ Dans le tableau de détails sous le graphique, les informations suivantes sont d
 - **Technologie de détection**
 - **État de remise**
 - **IP de l’expéditeur**
-- **Tags**
+- **Balises** : pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur](user-tags.md).
 
 Si vous cliquez **sur Filtre**, les filtres suivants sont disponibles :
 
@@ -706,7 +708,7 @@ Si vous cliquez **sur Filtre**, les filtres suivants sont disponibles :
   - **All**
   - **Entrant**
   - **Sortant**
-- **Balise** : **tout ou** la balise utilisateur spécifiée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur](user-tags.md).
+- **Balise** : **tout ou** la balise utilisateur spécifiée (y compris les comptes de priorité).
 - **Domaine** : **tout** ou [un domaine accepté](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Type de stratégie** :
   - **All**
@@ -750,7 +752,7 @@ Dans le tableau de détails sous le graphique, les informations suivantes sont d
 - **Technologie de détection**
 - **État de remise**
 - **IP de l’expéditeur**
-- **Tags**
+- **Balises** : pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur](user-tags.md).
 
 Si vous cliquez **sur Filtre**, les filtres suivants sont disponibles :
 
@@ -779,7 +781,7 @@ Si vous cliquez **sur Filtre**, les filtres suivants sont disponibles :
   - **All**
   - **Entrant**
   - **Sortant**
-- **Balise** : **tout ou** la balise utilisateur spécifiée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur](user-tags.md).
+- **Balise** : **tout ou** la balise utilisateur spécifiée (y compris les comptes de priorité).
 - **Domaine** : **tout** ou [un domaine accepté](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Type de stratégie** :
   - **All**
@@ -852,7 +854,7 @@ Dans le tableau de détails sous le graphique, les informations suivantes sont d
 - **Destinataires**
 - **Remplacement du système**
 - **IP de l’expéditeur**
-- **Tags**
+- **Balises** : pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur](user-tags.md).
 
 Si vous cliquez **sur Filtre**, les filtres suivants sont disponibles :
 
@@ -863,7 +865,7 @@ Si vous cliquez **sur Filtre**, les filtres suivants sont disponibles :
   - **All**
   - **Entrant**
   - **Sortant**
-- **Balise** : **tout ou** la balise utilisateur spécifiée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur](user-tags.md).
+- **Balise** : **tout ou** la balise utilisateur spécifiée (y compris les comptes de priorité).
 - **Domaine** : **tout** ou [un domaine accepté](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Type de stratégie** : **Tous**
 - **Nom de la stratégie (affichage tableau détails uniquement)** : **Tous**
@@ -890,7 +892,7 @@ Dans le tableau de détails sous le graphique, les informations suivantes sont d
 - **Destinataires**
 - **Remplacement du système**
 - **IP de l’expéditeur**
-- **Tags**
+- **Balises** : pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur](user-tags.md).
 
 Si vous cliquez **sur Filtre**, les filtres suivants sont disponibles :
 
@@ -1040,7 +1042,7 @@ Le tableau de détails sous le graphique présente les informations suivantes :
 - **Sender**
 - **Raison signalée**
 - **Résultat rescan**
-- **Tags**
+- **Balises** : pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur](user-tags.md).
 
 Pour envoyer un message à Microsoft pour analyse, sélectionnez l’entrée du message dans le tableau, cliquez sur Envoyer à **Microsoft** pour analyse, puis sélectionnez l’une des valeurs suivantes dans la liste liste suivante :
 

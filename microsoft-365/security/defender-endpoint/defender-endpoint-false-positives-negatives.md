@@ -23,12 +23,12 @@ ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
-ms.openlocfilehash: e7d401d4501f046455382039593d304494de5295
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 0352fde9756efce3011db24c915f287c358f313b
+ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62463421"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63557906"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Résoudre les faux positifs/négatifs dans Microsoft Defender pour point de terminaison
 
@@ -74,8 +74,6 @@ Avant de classer ou de supprimer une alerte, déterminez si l’alerte est exact
 3. Sélectionnez une alerte pour plus de détails sur l’alerte. ( [Consultez les alertes de révision dans Microsoft Defender pour le point de terminaison](review-alerts.md).)
 
 4. En fonction de l’état de l’alerte, prenez les étapes décrites dans le tableau suivant :
-
-<br/><br/>
 
    |État de l’alerte|Procédure|
    |---|---|
@@ -269,7 +267,7 @@ Avant de créer des indicateurs pour les fichiers, assurez-vous que les conditio
 
 - Antivirus Microsoft Defender est configuré avec la protection basée sur le cloud activée (voir [Gérer la protection basée sur le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus))
 - La version du client anti-programme malveillant est 4.18.1901.x ou version ultérieure
-- Les appareils s’exécutent Windows 10 version 1703 ou ultérieure, ou Windows 11 ; Windows Server 2016, Windows Server 2019 ou Windows Server 2022
+- Les appareils s’exécutent Windows 10 version 1703 ou ultérieure, ou Windows 11 ; Windows Server 2016, ou Windows Server 2019 ou Windows Server 2022
 - La [fonctionnalité Bloquer ou autoriser est désactivée](/microsoft-365/security/defender-endpoint/advanced-features)
 
 #### <a name="indicators-for-ip-addresses-urls-or-domains"></a>Indicateurs pour les adresses IP, les URL ou les domaines
@@ -290,9 +288,9 @@ Lorsque vous [créez un](/microsoft-365/security/defender-endpoint/indicator-cer
 
 Avant de créer des indicateurs pour les certificats d’application, assurez-vous que les conditions suivantes sont remplies :
 
-- Antivirus Microsoft Defender est configuré avec la protection basée sur le cloud activée (voir [Gérer la protection basée sur le cloud).](deploy-manage-report-microsoft-defender-antivirus.md)
+- Antivirus Microsoft Defender est configuré avec la protection basée sur le cloud activée (voir [Gérer la protection basée sur le cloud)](deploy-manage-report-microsoft-defender-antivirus.md)
 - La version du client anti-programme malveillant est 4.18.1901.x ou version ultérieure
-- Les appareils s’exécutent Windows 10 version 1703 ou ultérieure, ou Windows 11 ; Windows Server 2016, Windows Server 2019 ou Windows Server 2022
+- Les appareils s’exécutent Windows 10 version 1703 ou ultérieure, ou Windows 11 ; Windows Server 2016, ou Windows Server 2019 ou Windows Server 2022
 - Les définitions de protection contre les virus et menaces sont à jour
 
 > [!TIP]
@@ -308,11 +306,11 @@ Si vous avez un fichier qui a été détecté à tort comme malveillant ou a ét
 
 1. Examinez les recommandations ici : [Envoyer des fichiers pour analyse](/windows/security/threat-protection/intelligence/submission-guide).
 
-2. Visitez le Renseignement de sécurité Microsoft de soumission (<https://www.microsoft.com/wdsi/filesubmission>) et soumettez vos fichiers.
+2. Visitez le [Renseignement de sécurité Microsoft site de soumission](https://www.microsoft.com/wdsi/filesubmission) (https://www.microsoft.com/wdsi/filesubmission)et soumettez vos fichiers).
 
 ### <a name="submit-a-fileless-detection-for-analysis"></a>Soumettre une détection sans fichier pour analyse
 
-Si un problème a été détecté comme programme malveillant en fonction du comportement et que vous n’avez pas de fichier, `Mpsupport.cab` vous pouvez soumettre votre fichier pour analyse. Vous pouvez obtenir le *fichier.cab* à l’aide de l’outil Utilitaire Command-Line de protection contre les programmes malveillants (MPCmdRun.exe) de Microsoft sur Windows 10 ou Windows 11.
+Si un problème a été détecté comme programme malveillant en fonction du comportement et que vous n’avez pas de fichier, `Mpsupport.cab` vous pouvez soumettre votre fichier pour analyse. Vous pouvez obtenir le *fichier.cab* à l’aide de l’outil Utilitaire de protection Command-Line Microsoft (MPCmdRun.exe) sur Windows 10 ou Windows 11.
 
 1. Go to ` C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`, and then run `MpCmdRun.exe` as an administrator.
 
@@ -322,7 +320,7 @@ Si un problème a été détecté comme programme malveillant en fonction du com
 
 3. Examinez les recommandations ici : [Envoyer des fichiers pour analyse](/windows/security/threat-protection/intelligence/submission-guide).
 
-4. Visitez le site Renseignement de sécurité Microsoft soumission (<https://www.microsoft.com/wdsi/filesubmission>) et envoyez vos .cab de soumission.
+4. Visitez le [site Renseignement de sécurité Microsoft soumission (](https://www.microsoft.com/wdsi/filesubmission)https://www.microsoft.com/wdsi/filesubmission)et soumettez vos fichiers .cab dossiers.
 
 ### <a name="what-happens-after-a-file-is-submitted"></a>Que se passe-t-il après l’dépôt d’un fichier ?
 
@@ -343,7 +341,7 @@ Pour vérifier les mises à jour relatives à votre soumission, connectez-vous [
 
 Microsoft Defender pour point de terminaison offre un large éventail d’options, notamment la possibilité d’affiner les paramètres de différentes fonctionnalités et fonctionnalités. Si vous avez de nombreux faux positifs, veillez à passer en revue les paramètres de protection contre les menaces de votre organisation. Vous devrez peut-être effectuer quelques ajustements pour :
 
-- [Protection fournie par le cloud](#cloud-delivered-protection)
+- [Protection cloud](#cloud-delivered-protection)
 - [Correction des applications potentiellement indésirables](#remediation-for-potentially-unwanted-applications)
 - [Examen et correction automatisés](#automated-investigation-and-remediation)
 
@@ -354,9 +352,9 @@ Vérifiez votre niveau de protection dans le cloud pour Antivirus Microsoft Defe
 > [!TIP]
 > Pour en savoir plus sur la configuration de votre protection cloud, voir [Spécifier le niveau de protection remis par le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).
 
-Nous vous recommandons [d’utiliser Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour modifier ou définir vos paramètres de protection cloud; toutefois, vous pouvez utiliser d’autres méthodes, telles que la stratégie de [groupe (voir](/azure/active-directory-domain-services/manage-group-policy) [Gérer Microsoft Defender pour Endpoint](manage-mde-post-migration.md)).
+Nous vous [recommandons d’utiliser Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour modifier ou définir vos paramètres de protection cloud; toutefois, vous pouvez utiliser d’autres méthodes, telles que la stratégie de [groupe (voir](/azure/active-directory-domain-services/manage-group-policy) [Gérer Microsoft Defender pour Endpoint](manage-mde-post-migration.md)).
 
-#### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>Utiliser Microsoft Endpoint Manager pour examiner et modifier les paramètres de protection cloud (pour les stratégies existantes)
+#### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>Utilisez Microsoft Endpoint Manager pour examiner et modifier les paramètres de protection cloud (pour les stratégies existantes)
 
 1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
 
@@ -374,7 +372,7 @@ Nous vous recommandons [d’utiliser Microsoft Endpoint Manager](/mem/endpoint-m
 
 2. Choisissez **Antivirus de sécurité de point** \> **de** \> **terminaison + Créer une stratégie**.
 
-3. Pour **la** plateforme, sélectionnez une option, puis pour **profil,** sélectionnez **Antivirus** ou **Antivirus Microsoft Defender** (l’option spécifique dépend de ce que vous avez sélectionné pour **la plateforme**).) Ensuite, **sélectionnez Créer**.
+3. Pour **platform**, sélectionnez une option, puis pour **Profil,** sélectionnez **Antivirus** ou **Antivirus Microsoft Defender** (l’option spécifique dépend de ce que vous avez sélectionné pour **platform**.) Ensuite, **sélectionnez Créer**.
 
 4. Sous **l’onglet Informations de** base, spécifiez un nom et une description pour la stratégie. Sélectionnez **Suivant**.
 
@@ -398,7 +396,7 @@ Les applications potentiellement indésirables (PUA) sont une catégorie de logi
 
 Selon les applications utilisées par votre organisation, vous pouvez obtenir des faux positifs suite à vos paramètres de protection PUA. Si nécessaire, envisagez d’utiliser la protection PUA en mode audit pendant un certain temps, ou appliquez la protection PUA à un sous-ensemble d’appareils de votre organisation. La protection PUA peut être configurée pour Microsoft Edge navigateur et pour Antivirus Microsoft Defender.
 
-Nous vous [recommandons d’Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour modifier ou définir les paramètres de protection PUA; toutefois, vous pouvez utiliser d’autres méthodes, telles que la stratégie de [groupe (voir](/azure/active-directory-domain-services/manage-group-policy) [Gérer Microsoft Defender pour Endpoint](manage-mde-post-migration.md)).
+Nous vous recommandons [d’utiliser Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour modifier ou définir les paramètres de protection PUA ; toutefois, vous pouvez utiliser d’autres méthodes, telles que la stratégie de [groupe (voir](/azure/active-directory-domain-services/manage-group-policy) [Gérer Microsoft Defender pour Endpoint](manage-mde-post-migration.md).
 
 #### <a name="use-microsoft-endpoint-manager-to-edit-pua-protection-for-existing-configuration-profiles"></a>Utiliser Microsoft Endpoint Manager pour modifier la protection PUA (pour les profils de configuration existants)
 
@@ -446,7 +444,7 @@ Selon le niveau [d’automatisation](/microsoft-365/security/defender-endpoint/a
 > [!IMPORTANT]
 > Nous vous recommandons *d’utiliser l’automatisation complète* pour l’examen et la correction automatisés. Ne pas désactiver ces fonctionnalités en raison d’un faux positif. Au lieu de cela, utilisez des indicateurs « autoriser » pour définir des [exceptions](#indicators-for-microsoft-defender-for-endpoint) et conservez l’investigation et la correction automatisées pour prendre les mesures appropriées automatiquement. Le [suivi de ces conseils](automation-levels.md#levels-of-automation) permet de réduire le nombre d’alertes que votre équipe des opérations de sécurité doit gérer.
 
-## <a name="still-need-help"></a>Encore besoin d’aide ?
+## <a name="still-need-help"></a>Encore besoin d’aide ?
 
 Si vous avez passé en revue toutes les étapes de cet article et que vous avez toujours besoin d’aide, contactez le support technique.
 

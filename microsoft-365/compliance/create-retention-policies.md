@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 37e94d43f2cfeab0e1135c42de34726ee5895714
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ddd0553405aa92a1eb7a7978398392b780a0a2ea
+ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320590"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63557808"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Utilisez une stratégie de rétention pour gérer les données de votre organisation en décidant de manière proactive s'il faut conserver le contenu, le supprimer ou le conserver puis le supprimer.
 
@@ -103,8 +103,6 @@ Pour obtenir des détails techniques sur le fonctionnement de la rétention pour
 #### <a name="known-configuration-issues"></a>Problèmes de configuration connus
 
 - Bien que vous puissiez sélectionner l’option pour démarrer la période de rétention lorsque les éléments ont été modifiés pour la dernière fois, la valeur **Lorsque les éléments ont été créés** est toujours utilisée. Pour les messages qui sont modifiés, une copie du message d’origine est enregistrée avec son timestamp d’origine pour identifier les cas où ce message avant modification a été créé, et le message après modification dispose d’un timestamp plus nouveau.
-
-- Lorsque vous sélectionnez **Modifier** pour l’emplacement **Messages du canal Teams**, vous devriez voir les groupes Microsoft 365 qui ne sont pas également des équipes. Ne pas sélectionner ces groupes.
 
 - Lorsque vous sélectionnez **Modifier** pour l’emplacement des conversations Teams, vous devriez voir les invités et utilisateurs qui n’utilisent pas de boîte aux lettres. Les stratégies de rétention ne sont pas conçues pour ces utilisateurs. Ne les sélectionnez pas.
 
