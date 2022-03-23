@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Documentation de sécurité Office 365
-summary: Microsoft 365 Defender portail regroupe plusieurs technologies de sécurité dans une console d’administration complète, avec des améliorations pour protéger votre entreprise.
+summary: Le portail Microsoft 365 Defender regroupe plusieurs technologies de sécurité dans une seule console d'administration complète, avec des améliorations pour protéger votre entreprise.
 metadata:
   title: Documentation de sécurité Office 365
   description: 'En savoir plus sur Microsoft Defender pour point de terminaison : comment il protège les points de terminaison contre les menaces informatiques et offre aux équipes des opérations de sécurité des fonctionnalités de correction des menaces.'
@@ -15,7 +15,7 @@ metadata:
   ms.localizationpriority: high
   ms.openlocfilehash: 199f3005de41d8b97b6ae110740d687d5d4692e9
   ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: fr-FR
   ms.lasthandoff: 11/19/2021
   ms.locfileid: "61106418"
@@ -76,9 +76,9 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Qu’est-ce que Microsoft Defender pour les applications cloud ?
+    - text: Qu'est-ce que Microsoft Defender pour les applications cloud ?
       url: /cloud-app-security/what-is-cloud-app-security
-    - text: Mise en place de Microsoft Defender pour les applications cloud
+    - text: Démarrer avec Microsoft Defender pour les applications cloud
       url: /cloud-app-security/getting-started-with-cloud-app-security
 - title: Gestion de la sécurité
   linkLists:
@@ -90,5 +90,5 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Qu’est-ce que Microsoft Sentinel ?
+    - text: Qu’est-ce que Azure Sentinel ?
       url: /azure/sentinel/overview

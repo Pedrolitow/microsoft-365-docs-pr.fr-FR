@@ -213,7 +213,7 @@ additionalContent:
           links:
             - text: Outlook pour iOS et Android
               url: 'https://resources.techcommunity.microsoft.com/outlook-mobile-adoption/'
-            - text: "Exchange\_Online"
+            - text: Exchange Online
               url: /Exchange/exchange-online
             - text: Plus concernant Exchange >
               url: /Exchange

@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Ressources Microsoft 365 Business Premium
-summary: 'Pour les entreprises de 300 employés au plus, Microsoft 365 Business Premium vous permet d’être productif n’importe où avec Office applications et réunions en ligne. Sécurisez votre entreprise avec des fonctionnalités de sécurité avancées et simplifiez votre configuration et votre gestion informatiques avec une solution unique.'
+summary: "Pour les entreprises comptant jusqu’à 300\_employés, Microsoft\_365 Business Premium vous permet d’être productif partout avec les applications Office et les réunions en ligne. Sécurisez votre entreprise avec des fonctionnalités de sécurité avancées et simplifiez votre configuration et votre gestion informatiques avec une solution unique."
 brand: m365
 metadata:
   title: Ressources Microsoft 365 Business Premium
-  description: Documentation relative à la configuration et à l’Microsoft 365 Business Premium.
+  description: "Documentation sur la configuration et l’utilisation de Microsoft\_365 Business Premium."
   ms.service: o365-administration
   ms.topic: hub-page
   ms.collection: collection
@@ -15,7 +15,7 @@ metadata:
   ms.author: efrene
   ms.date: 03/01/2022
 productDirectory:
-  title: Productivité et sécurité avec les Microsoft 365 Business Premium
+  title: "Productivité et sécurité avec Microsoft\_365 Business Premium"
   items:
     - title: Regarder
       imageSrc: 'https://docs.microsoft.com/office/media/icons/video-play.svg'
@@ -23,15 +23,15 @@ productDirectory:
       url: 'https://aka.ms/M365BPvideo'
     - title: Quelles sont les nouveautés ?
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
-      summary: Découvrez les nouvelles fonctionnalités de Defender for Business dans business Premium et Microsoft 365 Lighthouse.
+      summary: "Découvrez les nouvelles fonctionnalités de Defender for Business dans Business Premium et Microsoft\_365 Lighthouse."
       url: 'https://aka.ms/SMBsecurityFebBlog'
     - title: Téléchargez gratuitement le kit de partenaires
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: Recommandations pratiques et accès aux ressources de marché pour les partenaires pour la sécurisation du travail hybride.
+      summary: Recommandations pratiques et ressources de commercialisation des partenaires pour sécuriser le travail hybride.
       url: 'https://aka.ms/SMBSecurityKit'
     - title: Participer à la série de webinaires partenaires
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: 'Découvrez comment stimuler la vente et développer votre activité avec Microsoft 365 Business Premium, Microsoft Defender entreprise et Microsoft 365 Lighthouse.'
+      summary: "Découvrez comment augmenter la vente et développer votre activité avec Microsoft\_365 Business Premium, Microsoft Defender pour les PME et Microsoft\_365 Lighthouse."
       url: 'https://aka.ms/M365MDBseries'
 conceptualContent:
   items:
@@ -42,13 +42,13 @@ conceptualContent:
           text: "Vue d’ensemble de la sécurité de Microsoft\_365 Business Premium"
         - url: ../business-video/index.yml
           itemType: video
-          text: Microsoft 365 formation pour les entreprises
+          text: "Formation Microsoft\_365 Entreprise"
         - url: 'https://go.microsoft.com/fwlink/?linkid=2164213'
           itemType: overview
-          text: Comparer les Microsoft 365 pour les plans pour les entreprises
+          text: "Comparer Microsoft\_365 pour les plans d’entreprise"
         - url: ../admin/misc/microsoft-365-business-faqs.yml
           itemType: reference
-          text: FAQ Microsoft 365 pour les entreprises
+          text: "FAQ Microsoft\_365 pour les entreprises"
     - title: Configurer Microsoft 365 Business Premium
       links:
         - url: ../business-premium/get-microsoft-365-business-premium.md
@@ -56,69 +56,69 @@ conceptualContent:
           text: "1. Obtenir Microsoft\_365 Business Premium"
         - url: ../admin/setup/plan-your-setup.md
           itemType: how-to-guide
-          text: 2. Planifier votre processus d’installation
+          text: 2. Planifier votre installation
         - url: ../business-premium/m365bp-setup.md
           itemType: how-to-guide
           text: 3. Configurer Microsoft 365 Business Premium
         - url: ../admin/security-and-compliance/secure-your-business-data.md
           itemType: how-to-guide
-          text: 4. 10 méthodes de sécurisation Microsoft 365 pour les entreprises
-    - title: Qu’est-ce Microsoft 365 Lighthouse ?
+          text: "4. 10 principales façons de sécuriser les Microsoft\_365 pour les entreprises"
+    - title: "Qu’est-ce que Microsoft\_365 Lighthouse\_?"
       links:
         - url: ../lighthouse/m365-lighthouse-overview.md
           itemType: overview
-          text: Vue d’Microsoft 365 Lighthouse (pour les partenaires)
+          text: Vue d’ensemble de Microsoft 365 Lighthouse (pour les partenaires)
         - url: ../lighthouse/m365-lighthouse-sign-up.md
           itemType: how-to-guide
-          text: Comment s’inscrire et devenir un CSP Microsoft
+          text: Comment s’inscrire et devenir un fournisseur de solutions Microsoft Cloud Microsoft
         - url: ../lighthouse/m365-lighthouse-configure-portal-security.md
           itemType: how-to-guide
-          text: Configurer et sécuriser votre portail de Latr.
+          text: Configurer et sécuriser votre portail Lighthouse
         - url: ../lighthouse/m365-lighthouse-deploy-standard-tenant-configurations-overview.md
           itemType: overview
           text: Utiliser les lignes de base pour les clients
         - url: ../lighthouse/m365-lighthouse-faq.yml
           itemType: reference
-          text: MICROSOFT 365 LIGHTHOUSE FAQ
+          text: FAQ Microsoft 365 Lighthouse
     - title: Ressources destinées aux partenaires (en anglais uniquement)
       links:
         - url: 'https://aka.ms/M365BPPartnerPlaybook'
           itemType: how-to-guide
-          text: Voir la série Microsoft 365 Business Premium playbook et de préparation du partenaire
+          text: Consultez le Microsoft 365 Business Premium Partner Playbook and Readiness Series (en anglais)
         - url: 'https://aka.ms/M365MDBseries'
           itemType: video
-          text: Rejoignez la série de webinaires partenaires !
+          text: "Participez à la série de webinaires du partenaire\_!"
         - url: 'https://partner.microsoft.com'
           itemType: overview
           text: Microsoft Partner Network
         - url: 'https://docs.microsoft.com/partner-center/overview'
           itemType: overview
-          text: Mise en place de l’Partner Center
+          text: Démarrage avec Espace partenaires
     - title: Protéger les appareils de votre entreprise
       links:
         - url: ../security/defender-business/mdb-overview.md
           itemType: overview
-          text: Vue d’ensemble de Microsoft Defender pour les entreprises
+          text: Vue d’ensemble de Microsoft Defender pour les PME
         - url: ../security/defender-business/mdb-setup-configuration.md
           itemType: overview
-          text: Configurer Et configurer Defender pour les entreprises
+          text: Installer et configurer Defender pour les PME
         - url: ../security/defender-business/compare-mdb-m365-plans.md
           itemType: overview
-          text: Comparer les fonctionnalités de sécurité dans Microsoft 365 plans
+          text: "Comparer les fonctions de sécurité des plans Microsoft\_365"
         - url: ../security/defender-business/mdb-faq.yml
           itemType: reference
-          text: FAQ sur Defender pour les entreprises
-    - title: Protéger le contenu de vos e-mails et Office fichiers
+          text: FAQ Defender pour les PME
+    - title: Protéger le contenu de vos e-mails et fichiers Office
       links:
         - url: ../security/office-365-security/defender-for-office-365.md
           itemType: overview
-          text: Vue d’ensemble de Microsoft Defender pour Office 365
+          text: "Vue d’ensemble de Microsoft Defender pour Office\_365"
         - url: ../security/office-365-security/protect-against-threats.md
           itemType: how-to-guide
-          text: Configurer Et configurer Defender pour Office 365
+          text: Installer et configurer Defender pour Office 365
         - url: ../security/office-365-security/anti-malware-protection-faq-eop.yml
           itemType: reference
-          text: FORUM AUX QUESTIONS sur Defender Office 365
+          text: "FAQ sur Defender pour Office\_365"
     - title: Assistance et communauté
       links:
         - url: 'https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog'
@@ -132,7 +132,7 @@ conceptualContent:
           text: Envoyer des commentaires
         - url: 'https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB'
           itemType: overview
-          text: Tech Community pour les petites et moyennes entreprises
+          text: Communauté technique pour les petites et moyennes entreprises
     - title: Procédures
       links:
         - url: ../admin/manage/find-your-partner-or-reseller.md
@@ -140,10 +140,10 @@ conceptualContent:
           text: Trouver un partenaire Microsoft pour aider mon entreprise
         - url: ../commerce/subscriptions/upgrade-to-different-plan.md
           itemType: how-to-guide
-          text: Changer d’Microsoft 365 plan
+          text: "Passer à un autre plan Microsoft\_365"
         - url: ../admin/setup/migrate-email-and-contacts-admin.md
           itemType: how-to-guide
           text: Migrer le courrier électronique et les contacts vers Microsoft 365
         - url: ../admin/get-help-support.md
           itemType: how-to-guide
-          text: Contactez le support technique Microsoft 365
+          text: "Contacter le support pour Microsoft\_365"

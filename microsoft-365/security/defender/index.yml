@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft 365 Defender
-summary: Découvrez les solutions de sécurité robustes dans Microsoft 365 Defender afin de mieux protéger votre entreprise sur les surfaces d’attaque.
+summary: Découvrez les solutions de sécurité robustes de Microsoft 365 Defender afin de mieux protéger votre entreprise sur toutes les surfaces d'attaque.
 metadata:
-  title: Microsoft 365 Defender documentation
-  description: Découvrez les solutions de sécurité robustes dans Microsoft 365 Defender afin de mieux protéger votre entreprise sur les surfaces d’attaque.
+  title: Documentation Microsoft 365 Defender
+  description: Découvrez les solutions de sécurité robustes de Microsoft 365 Defender afin de mieux protéger votre entreprise sur toutes les surfaces d'attaque.
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -16,7 +16,7 @@ metadata:
   ms.localizationpriority: high
   ms.openlocfilehash: 473a0b6ca9641c12c7ae9b8d9aeba1e0e9d477d8
   ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: fr-FR
   ms.lasthandoff: 12/30/2021
   ms.locfileid: "61645167"
@@ -41,7 +41,7 @@ landingContent:
     links:
     - text: Créer un laboratoire d’essai
       url: eval-overview.md
-    - text: Exécuter le projet pilote en production
+    - text: Exécuter un projet pilote en production
       url: eval-overview.md
 - title: Prise en main
   linkLists:
@@ -83,15 +83,15 @@ landingContent:
       url: ../defender-endpoint/microsoft-defender-endpoint.md
     - text: Defender pour Point de terminaison dans Microsoft 365 Defender
       url: microsoft-365-security-center-mde.md
-    - text: Redirection de Defender pour le point de terminaison dans Microsoft 365 Defender
+    - text: Redirection de Defender pour point de terminaison dans Microsoft 365 Defender
       url: ../defender/microsoft-365-security-mde-redirection.md
 - title: Microsoft Defender for Cloud Apps
   linkLists:
   - linkListType: overview
     links:
-    - text: Qu’est-ce que Microsoft Defender pour les applications cloud ?
+    - text: Qu'est-ce que Microsoft Defender pour les applications cloud ?
       url: /cloud-app-security/what-is-cloud-app-security
-    - text: Mise en place de Microsoft Defender pour les applications cloud
+    - text: Démarrer avec Microsoft Defender pour les applications cloud
       url: /cloud-app-security/getting-started-with-cloud-app-security
 - title: Gérer les incidents et les alertes
   linkLists:
@@ -103,7 +103,7 @@ landingContent:
       url: threat-analytics.md
     - text: Enquêtes et réponses automatisées
       url: m365d-autoir.md
-    - text: Recherche des menaces
+    - text: Recherche de menaces
       url: advanced-hunting-overview.md
 - title: Référence
   linkLists:
