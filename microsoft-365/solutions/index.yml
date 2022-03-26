@@ -16,7 +16,7 @@ metadata:
   ms.localizationpriority: high
   ms.openlocfilehash: 4116d78dd5e231ac0674057f5a183b6f5b5d347c
   ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: fr-FR
   ms.lasthandoff: 02/12/2022
   ms.locfileid: "62766799"
@@ -29,7 +29,7 @@ landingContent:
       url: empower-people-to-work-remotely.md
     - text: Configurer la collaboration sécurisée avec Microsoft 365
       url: setup-secure-collaboration-with-teams.md
-    - text: Déployer la protection contre les ransomware
+    - text: Déployer la protection contre les rançongiciels
       url: ransomware-protection-microsoft-365.md
     - text: Déployer la protection des informations pour la confidentialité des données
       url: information-protection-deploy.md
@@ -59,7 +59,7 @@ landingContent:
       url: ../admin/add-users/remove-former-employee.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: Migrer vos partages de fichiers vers Microsoft 365
       url: /sharepointmigration/mm-get-started?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-- title: Guides de solutions de réunion et de communication
+- title: Guides des solutions de réunion et de communication
   linkLists:
   - linkListType: deploy
     links:
@@ -127,7 +127,7 @@ landingContent:
       url: ../security/defender-endpoint/defender-endpoint-false-positives-negatives.md
   - linkListType: how-to-guide
     links:
-    - text: Passer d’une solution de protection de point de terminaison non-Microsoft à Microsoft Defender pour point de terminaison
+    - text: Passer d’une solution de protection des points de terminaison non Microsoft à Microsoft Defender pour point de terminaison
       url: ../security/defender-endpoint/switch-to-mde-overview.md
 - title: Ressources pour la charge de travail
   linkLists:

@@ -1,8 +1,8 @@
 ### YamlMime:Landing
-title: Documentation microsoft Defender pour Office 365 documentation
+title: Documentation Microsoft Defender pour Office 365
 summary: Découvrez les solutions de sécurité robustes de Defender pour Office 365 mieux protéger vos outils de messagerie et de collaboration.
 metadata:
-  title: Documentation sur la sécurité Office 365 Microsoft Defender for
+  title: Documentation sur la sécurité de Microsoft Defender pour Office 365
   description: Découvrez les solutions de sécurité robustes de Defender pour Office 365 mieux protéger vos outils de messagerie et de collaboration.
   services: office-365-security-compliance
   ms.prod: m365-security
@@ -16,12 +16,12 @@ metadata:
   ms.localizationpriority: high
   ms.openlocfilehash: c132c68ba56dedd7ae38ba4c922f815f316bb062
   ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: fr-FR
   ms.lasthandoff: 12/30/2021
   ms.locfileid: "61645191"
 landingContent:
-- title: Defender for Office 365 & Exchange Online Protection
+- title: Defender pour Office 365 & Exchange Online Protection
   linkLists:
   - linkListType: overview
     links:
@@ -29,7 +29,7 @@ landingContent:
       url: overview.md
     - text: Configurer avec des stratégies de sécurité prédéfini dans EOP et Defender pour Office 365
       url: preset-security-policies.md
-- title: Mise en place de Defender pour Office 365
+- title: Prise en main de Defender pour Office 365
   linkLists:
   - linkListType: get-started
     links:
@@ -47,11 +47,11 @@ landingContent:
       url: office-365-evaluation.md
     - text: Basculer vers Exchange Online Protection
       url: switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
-- title: Configuration de la protection de l’authentification de messagerie
+- title: Configuration de la protection de l’authentification par e-mail
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Configurer SPF pour empêcher l’usurpation d’identité
+    - text: Configurer SPF pour empêcher l’usurpation
       url: set-up-spf-in-office-365-to-help-prevent-spoofing.md
     - text: Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé
       url: use-dkim-to-validate-outbound-email.md
@@ -63,7 +63,7 @@ landingContent:
     links:
     - text: Vue d’ensemble d’Exchange Online Protection
       url: exchange-online-protection-overview.md
-    - text: Paramètres recommandés pour EOP et Microsoft Defender pour la Office 365 pour la configuration
+    - text: Paramètres recommandés pour la configuration d’EOP et pour la sécurité Microsoft Defender pour Office 365 pour la configuration
       url: recommended-settings-for-eop-and-office365.md
 - title: Empêcher
   linkLists:
@@ -101,7 +101,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Rapports et suivi des messages dans EOP
+    - text: Création de rapports et suivi des messages dans EOP
       url: reporting-and-message-trace-in-exchange-online-protection.md
     - text: Afficher le journal d’audit de l’administrateur
       url: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
@@ -109,11 +109,11 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Corriger les messages malveillants remis dans Office 365
+    - text: Corriger les courriers malveillants remis dans Office 365
       url: remediate-malicious-email-delivered-office-365.md
     - text: Répondre à un compte de messagerie compromis
       url: responding-to-a-compromised-email-account.md
-    - text: Corriger les Outlook et les attaques par injection de formulaires personnalisés
+    - text: Corriger les règles Outlook et les attaques par injection de formulaires personnalisés
       url: detect-and-remediate-outlook-rules-forms-attack.md
     - text: Envoyer des faux positifs/faux négatifs
       url: admin-submission.md
@@ -121,9 +121,9 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Fonctionnement de l’investigation et de la réponse automatisées (AIR) dans Defender pour Office 365
+    - text: Fonctionnement des enquêtes et des réponses automatisées (AIR) dans Defender pour Office 365
       url: automated-investigation-response-office.md
-    - text: Prise en main air dans Defender pour Office 365
+    - text: Démarrer avec AIR dans Defender pour Office 365
       url: office-365-air.md
     - text: Adresse des comptes d’utilisateur compromis avec AIR
       url: address-compromised-users-quickly.md

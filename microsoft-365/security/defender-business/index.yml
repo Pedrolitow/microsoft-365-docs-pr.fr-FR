@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft Defender pour les PME
-summary: À compter du 1er mars 2022, Microsoft Defender entreprise est inclus dans Microsoft 365 Business Premium. Defender for Business as a standalone subscription is currently in preview, and will roll out gradually to customers and IT Partners who sign up at https://aka.ms/mdb-preview.
+summary: À compter du 1er mars 2022, Microsoft Defender pour les PME est inclus dans Microsoft 365 Business Premium. Defender pour les PME en tant qu’abonnement autonome est actuellement en préversion et sera déployé progressivement pour les clients et les partenaires informatiques qui s’inscrivent à https://aka.ms/mdb-preview.
 metadata:
-  title: Documentation microsoft defender pour les entreprises
-  description: Obtenir une vue d’ensemble et des informations de configuration pour Microsoft Defender pour les entreprises
+  title: Documentation Microsoft Defender pour les PME
+  description: Obtenir une vue d’ensemble et des informations de configuration pour Microsoft Defender pour les PME
   ms.prod: 365-security
   ms.technology: mdb
   ms.topic: landing-page
@@ -17,20 +17,20 @@ metadata:
   ms.date: 03/10/2022
   ms.openlocfilehash: eb00a4fc76315360c789afacad4b77da3d28c323
   ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: fr-FR
   ms.lasthandoff: 03/12/2022
   ms.locfileid: "63450743"
 landingContent:
-- title: Aperçu
+- title: Vue d’ensemble
   linkLists:
   - linkListType: overview
     links:
-    - text: Qu’est-ce que Defender pour Entreprises ?
+    - text: Qu’est-ce que Defender pour les PME ?
       url: mdb-overview.md
     - text: Processus de configuration simplifié
       url: mdb-simplified-configuration.md
-    - text: Comparer les plans pour les petites et moyennes entreprises
+    - text: Comparer les offres pour les petites et moyennes entreprises
       url: compare-mdb-m365-plans.md
     - text: Intégration à Microsoft 365 Lighthouse
       url: mdb-lighthouse-integration.md
@@ -38,23 +38,23 @@ landingContent:
   linkLists:
   - linkListType: get-started
     links:
-    - text: Obtenir Defender pour les entreprises
+    - text: Obtenir Defender pour les PME
       url: get-defender-business.md
     - text: Utiliser l’Assistant Installation
       url: mdb-use-wizard.md
     - text: Naviguer dans le portail
       url: mdb-get-started.md
-    - text: Afficher votre tableau de bord gestion & des menaces et des vulnérabilités
+    - text: Afficher votre tableau de bord Gestion des menaces et des vulnérabilités
       url: mdb-view-tvm-dashboard.md
-    - text: Essayer des didacticiels et des simulations
+    - text: Essayer des didacticiels et les simulations
       url: mdb-tutorials.md
-- title: Configurer et configurer
+- title: Installer et configurer
   linkLists:
   - linkListType: deploy
     links:
     - text: Vue d’ensemble de la configuration
       url: mdb-setup-configuration.md
-    - text: 'Étape 1 : examiner les conditions requises'
+    - text: 'Étape 1 : passer en revue les exigences'
       url: mdb-requirements.md
     - text: 'Étape 2 : attribuer des rôles et des autorisations'
       url: mdb-roles-permissions.md
@@ -64,7 +64,7 @@ landingContent:
       url: mdb-onboard-devices.md
     - text: 'Étape 5 : configurer des stratégies de sécurité'
       url: mdb-view-edit-policies.md
-- title: Afficher les menaces et y répondre
+- title: Afficher et répondre aux menaces
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -86,7 +86,7 @@ landingContent:
       url: mdb-custom-rules-firewall.md
   - linkListType: reference
     links:
-    - text: Ordre des stratégies
+    - text: Ordre de stratégie
       url: mdb-policy-order.md
     - text: Paramètres de protection nouvelle génération
       url: mdb-next-gen-configuration-settings.md

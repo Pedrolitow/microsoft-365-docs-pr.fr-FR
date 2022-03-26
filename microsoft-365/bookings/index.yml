@@ -27,7 +27,7 @@ additionalContent:
         - title: Ajouter du personnel aux réservations
           summary: 'Créez votre liste de membres du personnel et gérez les détails des membres du personnel tels que le nom, le numéro de téléphone et l’adresse e-mail.'
           url: add-staff.md
-        - title: 'Planifier des fermetures d’entreprise, des congés et des congés'
+        - title: 'Planifier des fermetures d’entreprise, des congés et des vacances'
           summary: Planifier les fermetures de bureau et les congés des employés du calendrier Bookings afin que les employés soient marqués comme indisponibles pour les réservations aux heures spécifiées.
           url: schedule-closures-time-off-vacation.md
         - title: Heures de travail des employés dans Microsoft Bookings

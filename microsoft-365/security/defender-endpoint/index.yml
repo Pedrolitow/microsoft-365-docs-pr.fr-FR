@@ -3,7 +3,7 @@ title: Documentation Microsoft Defender pour point de terminaison
 summary: Microsoft Defender pour point de terminaison fournit une protection préventive, une détection après violation, un examen automatisé et une réponse.
 metadata:
   title: Documentation Microsoft Defender pour point de terminaison
-  description: Découvrez Microsoft Defender pour point de terminaison et optimisez les fonctionnalités de sécurité intégrées pour protéger les appareils, détecter une activité malveillante et corriger des menaces# Requis, la description de l’article qui est affichée dans les résultats de la recherche. > 160 caractères.
+  description: Découvrez Microsoft Defender pour point de terminaison et maximisez les fonctionnalités de sécurité intégrées pour protéger les appareils, détecter les activités malveillantes et remédier aux menaces# Requis ; description de l’article qui s’affiche dans les résultats de la recherche. < 160 caractères.
   services: office-365-security-compliance
   ms.prod: m365-security
   ms.technology: mde
@@ -16,18 +16,18 @@ metadata:
   ms.localizationpriority: high
   ms.openlocfilehash: d141c9f8b6109bd55bd64e5839db552fc13588de
   ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: fr-FR
   ms.lasthandoff: 12/30/2021
   ms.locfileid: "61643029"
 landingContent:
-- title: Microsoft Defender pour point de terminaison
+- title: Microsoft Defender pour point de terminaison
   linkLists:
   - linkListType: overview
     links:
     - text: Qu’est-ce que Microsoft Defender pour point de terminaison ?
       url: microsoft-defender-endpoint.md
-    - text: Qu’est-ce que Defender for Endpoint Plan 1 ?
+    - text: Qu'est-ce que Defender pour Endpoint Plan 1 ?
       url: defender-endpoint-plan-1.md
     - text: Comparer Defender for Endpoint Plan 1 à Plan 2
       url: defender-endpoint-plan-1-2.md
@@ -35,7 +35,7 @@ landingContent:
     links:
     - text: Nouveautés dans Microsoft Defender pour point de terminaison
       url: whats-new-in-microsoft-defender-endpoint.md
-    - text: Annonce de Microsoft Defender pour Endpoint Plan 1
+    - text: Annonce de Microsoft Defender pour point de terminaison Plan 1
       url: defender-endpoint-plan-1.md
   - linkListType: video
     links:
@@ -55,7 +55,7 @@ landingContent:
       url: deployment-phases.md
     - text: Intégration des appareils pris en charge
       url: onboard-configure.md
-    - text: Configurer Defender pour Endpoint Plan 1
+    - text: Installer et configurer Defender pour Endpoint Plan 1
       url: mde-p1-setup-configuration.md
   - linkListType: how-to-guide
     links:

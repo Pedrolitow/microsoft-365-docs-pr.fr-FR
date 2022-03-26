@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Base de test pour la documentation Microsoft 365 de test
-summary: Test Base for Microsoft 365 est un service Azure qui facilite les tests d’applications pilotés par les données. Grâce à la puissance des données et du cloud, il permet aux professionnels de l’informatique de tirer parti de tests intelligents de n’importe où dans le monde. Il vous aidera à tester vos applications sans avoir à vous soucier de la difficulté, de l’engagement de temps et de la dépense liée à la configuration et à la maintenance d’environnements de test complexes. Plus important encore, il vous permettra d’accéder aux mises à jour Windows pré-publiées sur des machines virtuelles sécurisées (VM) et à l’intelligence de premier niveau pour vos applications.
+title: Base de test pour la documentation Microsoft 365
+summary: Base de test pour Microsoft 365 est un service Azure qui facilite les tests pilotés par les données des applications. Grâce à la puissance des données et du cloud, il permet aux professionnels de l’informatique de tirer parti de tests intelligents depuis n’importe où dans le monde. Il vous aidera à tester vos applications sans les contraintes, l’engagement de temps et les dépenses de configuration et de maintenance d’environnements de test complexes. Plus important encore, il vous donne accès aux mises à jour Windows en préversion sur les machines virtuelles sécurisées et à l’intelligence de classe mondiale pour vos applications.
 metadata:
   title: Base de test pour la documentation M365
-  description: Test Base for Microsoft 365 est un service Azure qui facilite les tests d’applications pilotés par les données. Grâce à la puissance des données et du cloud, il permet aux professionnels de l’informatique de tirer parti de tests intelligents de n’importe où dans le monde.
+  description: Base de test pour Microsoft 365 est un service Azure qui facilite les tests pilotés par les données des applications. Grâce à la puissance des données et du cloud, il permet aux professionnels de l’informatique de tirer parti de tests intelligents depuis n’importe où dans le monde.
   ms.service: service
   ms.subservice: subservice
   ms.topic: landing-page
@@ -13,20 +13,20 @@ metadata:
   ms.date: 03/29/2021
   ms.openlocfilehash: 186c9196fde901ee3898e88f9a6891f9c447a1d7
   ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: fr-FR
   ms.lasthandoff: 02/17/2022
   ms.locfileid: "62887643"
 landingContent:
-- title: À propos de la base de test
+- title: À propos de Base de test
   linkLists:
   - linkListType: overview
     links:
-    - text: Qu’est-ce que la base de test ?
+    - text: Qu’est-ce que Base de test ?
       url: overview.md
   - linkListType: get-started
     links:
-    - text: Créer un compte de base de test
+    - text: Créer un compte Base de test
       url: createAccount.md
   - linkListType: tutorial
     links:
@@ -36,21 +36,21 @@ landingContent:
   linkLists:
   - linkListType: quickstart
     links:
-    - text: Créer un compte de base de test
+    - text: Créer un compte Base de test
       url: createAccount.md
     - text: Créer un package
       url: buildpackage.md
     - text: Téléchargement du package
       url: uploadApplication.md
-    - text: Télécharger vos binaires
+    - text: Charger vos fichiers binaires
       url: binaries.md
     - text: Définir vos tâches de test
       url: testtask.md
     - text: Choisir vos options de test
       url: testoptions.md
-    - text: Passer en revue vos sélections
+    - text: Vérifier vos sélections
       url: review.md
-    - text: Recommandations en matière de package de test
+    - text: Instructions relatives aux packages de test
       url: contentguideline.md
     - text: Analyse de la régression de la mémoire
       url: memory.md
