@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez le rapport SharePoint’utilisation du site pour connaître le nombre de fichiers stockés par les utilisateurs dans les sites SharePoint, le nombre d’utilisateurs activement utilisés et le stockage total utilisé.
-ms.openlocfilehash: da857d1814bf0aa27532d3f730d352c6edeb66e9
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: ae25562924f569431b3a6d7eda3099f69cd912b1
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400682"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754228"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365 rapports dans le Centre d’administration - Utilisation SharePoint site
 
@@ -80,7 +80,7 @@ Le **SharePoint’utilisation du site** peut être vu pour les tendances des 7, 
 |Stratégie d’appareil non gestion  | Stratégie d’accès au site pour les appareils non utilisés.  |
 |Emplacement géographique  | Emplacement géographique du site.  |
 |Fichiers  |Nombre de fichiers sur le site. |
-|Fichiers actifs  | Nombre de fichiers actifs sur le site.<br/> REMARQUE : si des fichiers ont été supprimés pendant la période spécifiée pour le rapport, le nombre de fichiers actifs affichés dans le rapport peut être supérieur au nombre actuel de fichiers sur le site.  |
+|Fichiers actifs  | Nombre de fichiers actifs sur le site. Un fichier est considéré comme actif s’il a été enregistré, synchronisé, modifié ou partagé au cours de la période spécifiée.<br/> REMARQUE : si des fichiers ont été supprimés pendant la période spécifiée pour le rapport, le nombre de fichiers actifs affichés dans le rapport peut être supérieur au nombre actuel de fichiers sur le site.  |
 |Stockage utilisé (Mo)  |Quantité de stockage actuellement utilisée sur le site.  |
 |Stockage alloué (Mo)  |Quantité maximale de stockage allouée au site.  |
 |Vues de page  |Nombre de fois où des pages ont été vues sur le site.  |

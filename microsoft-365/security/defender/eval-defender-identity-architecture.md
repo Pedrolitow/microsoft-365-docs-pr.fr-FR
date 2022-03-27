@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e534211008ea560642ba306844b9223170ac0140
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: de49205fe20cd5685279c0a5f9d138147f24bb8d
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323218"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754165"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Passer en revue les exigences en matière d’architecture et les concepts clés de Microsoft Defender pour l’identité
 
@@ -46,13 +46,13 @@ Defender pour l’identité protège vos utilisateurs Active Directory locaux et
 
 Le diagramme suivant illustre l’architecture de base de Defender for Identity. 
 
-![Architecture de Microsoft Defender pour l’identité.](../../media/defender/m365-defender-identity-architecture.png)
+:::image type="content" source="../../media/defender/m365-defender-identity-architecture.png" alt-text="Architecture des identités pour Microsoft Defender pour l’identité" lightbox="../../media/defender/m365-defender-identity-architecture.png":::
 
 Dans cette illustration :
+
 - Les capteurs installés sur les contrôleurs de domaine AD analysent les journaux et le trafic réseau et les envoient à Microsoft Defender pour identité pour analyse et rapport.
 -  Les capteurs peuvent également utiliser les services AD FS (Active Directory Federation Services) lorsque Azure AD est configuré pour utiliser l’authentification fédérée (ligne pointillée dans l’illustration). 
 - Microsoft Defender pour l’identité partage des signaux Microsoft 365 Defender pour la détection et la réponse étendues (XDR).
-
 
 Les capteurs Defender for Identity peuvent être installés directement sur les serveurs suivants :
 
@@ -66,7 +66,6 @@ Pour une analyse plus approfondie de l’architecture de Defender pour l’ident
 
 Le tableau suivant a identifié les concepts clés à comprendre lors de l’évaluation, de la configuration et du déploiement de Microsoft Defender pour l’identité.
 
-
 |Concept  |Description |Plus d’informations  |
 |---------|---------|---------|
 | Activités surveillées | Defender for Identity surveille les signaux générés au sein de votre organisation pour détecter les activités suspectes ou malveillantes et vous aide à déterminer la validité de chaque menace potentielle afin de pouvoir trier et répondre efficacement.  |  [Activités surveillées de Microsoft Defender pour l’identité](/defender-for-identity/monitored-activities)       |
@@ -78,15 +77,13 @@ Le tableau suivant a identifié les concepts clés à comprendre lors de l’év
 | Groupes de rôles    | Defender pour l’identité offre des groupes basés sur des rôles et un accès délégué pour protéger les données en fonction des besoins spécifiques de votre organisation en matière de sécurité et de conformité, notamment les administrateurs, les utilisateurs et les visiteurs.        |  [Groupes de rôles dans Microsoft Defender pour Identity](/defender-for-identity/role-groups)       |
 | Portail d’administration    |  Outre le portail Microsoft 365 Defender, le portail Defender pour l’identité peut être utilisé pour surveiller les activités suspectes et y répondre.      | [Travailler avec le portail Microsoft Defender pour l’identité](/defender-for-identity/workspace-portal)        |
 | Intégration de Microsoft Defender pour les applications cloud   | Microsoft Defender pour les applications cloud s’intègre à Microsoft Defender pour l’identité pour fournir l’analyse comportementale de l’entité utilisateur (UEBA) dans un environnement hybride : application cloud et local   | Intégration de Microsoft Defender pour l’identité  |
-| | | |
-
 
 ## <a name="review-prerequisites"></a>Examiner les conditions préalables
 
 Defender pour l’identité nécessite un travail prérequis pour vous assurer que vos composants d’identité et de réseau locaux répondent aux exigences minimales. Utilisez cet article comme liste de vérification pour vous assurer que votre environnement est prêt : [conditions préalables de Microsoft Defender pour l’identité](/defender-for-identity/prerequisites).
 
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Étape 2 sur 3 : activer [l’environnement d’évaluation Defender for Identity](eval-defender-identity-enable-eval.md)
 

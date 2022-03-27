@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: Découvrez comment configurer Teams pour améliorer la sécurité du partage de fichiers à l’aide de trois niveaux de protection, en équilibrant la sécurité grâce à la facilité de collaboration.
-ms.openlocfilehash: 279e338af6db4d82291209deb66e1ea1eef74630
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 116675ac6736e1761286226a8bf724915627574f
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202332"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712718"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurer Teams avec trois niveaux de protection
 
@@ -55,6 +55,7 @@ Le tableau suivant récapitule les configurations pour chaque niveau. Utilisez c
 |Équipe privé ou publique|Public|Private|Private|Private|
 |Qui a accès ?|Tous les membres de l’organisation, y compris les utilisateurs B2B.|Uniquement les membres de l’équipe. D’autres personnes peuvent demander l’accès au site associé.|Uniquement les membres de l’équipe.|Uniquement les membres de l’équipe.|
 |Canaux privés|Les propriétaires et les membres peuvent créer des canaux privés|Les propriétaires et les membres peuvent créer des canaux privés|Seuls les propriétaires peuvent créer des canaux privés.|Seuls les propriétaires peuvent créer des canaux privés.|
+|Canaux partagés|Les propriétaires et les membres peuvent créer des canaux partagés|Les propriétaires et les membres peuvent créer des canaux partagés|Seuls les propriétaires peuvent créer des canaux partagés|Seuls les propriétaires peuvent créer des canaux partagés|
 |Accès invité au niveau du site|**Nouveaux invités et invités existants** (par défaut).|**Nouveaux invités et invités existants** (par défaut).|**Invités nouveaux et existants** ou **Uniquement les membres de votre organisation** en fonction des besoins de votre équipe.|**Invités nouveaux et existants** ou **Uniquement les membres de votre organisation** en fonction des besoins de votre équipe.|
 |Paramètres de partage de site|**Sélectionnez les propriétaires et membres du site, et les personnes disposant des autorisations de modification peuvent partager des fichiers et des dossiers, mais seuls les propriétaires de site peuvent partager le site**.|**Sélectionnez les propriétaires et membres du site, et les personnes disposant des autorisations de modification peuvent partager des fichiers et des dossiers, mais seuls les propriétaires de site peuvent partager le site**.|**Sélectionnez les propriétaires et membres du site, et les personnes disposant des autorisations de modification peuvent partager des fichiers et des dossiers, mais seuls les propriétaires de site peuvent partager le site**.|**Seuls les propriétaires du site peuvent partager des fichiers, des dossiers et le site**.<br>Demandes d’accès **Désactivées**.|
 |Accès à un appareil non géré au niveau du site|**Accès complet à partir des applications de bureau, des applications mobiles et du web** (par défaut).|**Accès complet à partir des applications de bureau, des applications mobiles et du web** (par défaut).|**Autoriser un accès limité, web uniquement**.|**Bloquer l’accès**.|
@@ -69,7 +70,7 @@ Les équipes pour une protection sensible et hautement sensible sont des équipe
 
 ## <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
-Les niveaux sensitives et hautement sensitives utilisent des étiquettes de confidentialité pour renforcer la sécurisation de l’équipe et de ses fichiers. Pour implémenter ces niveaux, vous devez activer [Étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les groupes Office 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
+Les niveaux sensitives et hautement sensitives utilisent des étiquettes de confidentialité pour renforcer la sécurisation de l’équipe et de ses fichiers. Pour mettre en œuvre ces niveaux, vous devez activer [les étiquettes de sensibilité pour protéger le contenu dans Microsoft Teams, Office 365 Groups et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 Bien que le niveau de ligne de base ne nécessite aucune étiquette de confidentialité, vous pouvez créer une étiquette « général » et exiger que toutes les équipes soient étiquetées. Cela permettra de s'assurer que les utilisateurs font un choix conscient en matière de sensibilité lorsqu'ils créent une équipe. Si vous prévoyez de déployer les niveaux sensibles ou hautement sensibles, nous vous recommandons de créer une étiquette « général » que vous pouvez utiliser pour les équipes de référence et pour les fichiers qui ne sont pas sensibles.
 
@@ -94,15 +95,24 @@ Les équipes n’ont pas d’option d’autorisation en lecture seule, le site S
 
 Par défaut, les propriétaires et les membres de l’équipe peuvent partager des fichiers et des dossiers avec des personnes externes à l’équipe. Cela peut inclure des personnes extérieures à votre organisation, si vous avez autorisé le partage d’invités. Dans les trois niveaux, nous mettons à jour le type de lien de partage par défaut afin d'éviter les surpartages accidentels. Dans le niveau hautement sensible, nous limitons ce partage uniquement aux propriétaires d’équipe.
 
-## <a name="guest-sharing"></a>Partage d’invités
+## <a name="sharing-with-people-outside-your-organization"></a>Partage avec des personnes extérieures à votre organisation
 
-Si vous avez besoin de collaborer avec des personnes extérieures à votre organisation, nous vous recommandons de configurer [Intégration de SharePoint et OneDrive avec Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) pour optimiser le partage et l’administration.
+Si vous devez partager le contenu de Teams avec des personnes extérieures à votre organisation, deux options s'offrent à vous :
 
-Le partage d’invités Teams est activé par défaut, mais vous pouvez le désactiver si nécessaire dans les niveaux sensibles et hautement sensibles à l’aide d’une étiquette de confidentialité.
+- **Partage d'invité** - Le partage d'invité utilise la collaboration Azure AD B2B qui permet aux utilisateurs de partager des fichiers, des dossiers, des sites, des groupes et des équipes avec des personnes extérieures à votre organisation. Ces personnes accèdent aux ressources partagées en utilisant des comptes invités dans votre répertoire.
+- **Canaux partagés** - Les canaux partagés utilisent la connexion directe Azure AD B2B qui permet aux utilisateurs de partager des ressources dans votre organisation avec des personnes d'autres organisations Azure AD. Ces personnes accèdent aux canaux partagés dans Teams à l’aide de leur propre compte professionnel ou scolaire. Aucun compte invité n’est créé dans votre organisation.
 
-Dans le niveau hautement sensible, nous configurons l’étiquette de confidentialité pour chiffrer les fichiers auxquels elle est appliquée. Si vous voulez que les invités aient accès à ces fichiers, vous devez leur attribuer des autorisations lors de la création de l’étiquette.
+Le partage invité et les canaux partagés sont utiles en fonction de la situation. Voir [Planifier la collaboration externe](plan-external-collaboration.md) pour plus d’informations sur chacun d’eux et sur la façon de choisir les scénarios à utiliser pour un scénario donné.
+
+Si vous prévoyez d'utiliser le partage entre invités, nous vous recommandons de configurer [l'intégration de SharePoint et de OneDrive avec Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) pour une expérience de partage et d'administration optimale.
+
+Le partage d’invités Teams est activé par défaut, mais vous pouvez le désactiver si nécessaire dans les niveaux sensibles et hautement sensibles à l’aide d’une étiquette de confidentialité. Les canaux partagés sont activés par défaut, mais nécessitent la mise en place de relations inter-organisationnelles pour chaque organisation avec laquelle vous souhaitez collaborer. Voir [Collaborer avec des participants externes dans un canal](collaborate-teams-direct-connect.md) pour plus de détails.
+
+Dans le niveau hautement sensible, nous configurons l’étiquette de confidentialité pour chiffrer les fichiers auxquels elle est appliquée. Si vous voulez que les invités aient accès à ces fichiers, vous devez leur attribuer des autorisations lors de la création de l’étiquette. Les participants externes aux canaux partagés ne peuvent pas recevoir d'autorisations pour les étiquettes de sensibilité et ne peuvent pas accéder au contenu crypté par une étiquette de sensibilité.
 
 Nous vous recommandons vivement de laisser le partage des invités activé pour le niveau de référence et pour les niveaux sensibles ou hautement sensibles si vous avez besoin de collaborer avec des personnes extérieures à votre organisation. Les fonctionnalités de partage d’invités de Microsoft 365 fournissent une expérience de partage bien plus sécurisée et régie que l’envoi de fichiers sous forme de pièces jointes dans des messages électroniques. Elle réduit également le risque d'informatique parallèle lorsque les utilisateurs utilisent des produits de consommation non réglementés pour les partager avec des collaborateurs externes légitimes.
+
+Si vous collaborez régulièrement avec d’autres organisations qui utilisent Azure AD, les canaux partagés peuvent être une bonne option. Les canaux partagés apparaissent de manière transparente dans le client Teams de l'autre organisation et permettent aux participants externes d'utiliser leur compte utilisateur habituel pour leur organisation plutôt que de devoir se connecter séparément en utilisant un compte invité.
 
 Reportez-vous aux références suivantes pour créer un environnement de partage d’invités sécurisé et productif pour votre organisation :
 

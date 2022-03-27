@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: ddd0553405aa92a1eb7a7978398392b780a0a2ea
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: 94388a375c3c50d97e696637ef6ef4ebefc96aab
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63557808"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63715490"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -73,6 +73,9 @@ Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez égal
 
 ### <a name="retention-policy-for-teams-locations"></a>Stratégie de rétention pour les emplacements Teams
 
+> [!NOTE]
+> Les politiques de rétention prennent désormais en charge les [canaux partagés](/MicrosoftTeams/shared-channels), actuellement en aperçu. Lorsque vous configurez les paramètres de rétention pour l'emplacement **des messages du canal Teams**, si une équipe a des canaux partagés, ils héritent des paramètres de rétention de leur équipe parente.
+
 1. À partir du [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) sélectionnez **Information Governance** > **Stratégies de rétention**.
 
 2. Sélectionnez **nouvelle stratégie de rétention** pour démarrer la configuration **Créer une stratégie de rétention** et nommez votre nouvelle stratégie de rétention.
@@ -84,7 +87,7 @@ Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez égal
     - Si vous **avez** choisi Adaptatif : dans la page Choisir les étendues et les **emplacements** de stratégie adaptative, sélectionnez Ajouter des **étendues** et sélectionnez une ou plusieurs étendues adaptatives qui ont été créées. Sélectionnez ensuite un ou plusieurs emplacements. Les emplacements que vous pouvez sélectionner dépendent des [types d’étendue](retention-settings.md#configuration-information-for-adaptive-scopes) ajoutés. Par exemple, si vous avez uniquement **ajouté un type d’étendue** d’utilisateur, vous pourrez sélectionner Teams **conversations,** mais pas Teams **messages de canal.** 
     
     - Si vous avez choisi **Statique :** dans la **page** Choisir les emplacements à appliquer à la stratégie, sélectionnez un ou plusieurs emplacements pour Teams :
-        - **Message de canal Teams** : messages provenant de conversations de canal standard et de réunions de canal standard, mais pas de [canaux privés](/microsoftteams/private-channels) qui ont leur propre emplacement de stratégie.
+        - **Message de canal d'équipe** : messages provenant de chats de canal standard et partagé, et de réunions de canal standard et partagé, mais pas de [canaux privés](/microsoftteams/private-channels) qui ont leur propre emplacement de politique.
         - **Conversations Teams** : messages provenant de conversations privées individuelles, de conversations de groupe et de conversations de réunion.
         - **Messages de canal privé Teams** : messages provenant de conversations de canal privé et de réunions de canal privé.
         
@@ -224,7 +227,7 @@ Tout d’abord, la stratégie de rétention doit être distribuée aux emplaceme
         Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
         ```
     
-    - Pour tous les autres emplacements de politique, tels que les **e-mails Exchange**, **les sites SharePoint**, **les messages du canal Teams**, etc :
+    - Pour tous les autres emplacements de politique, tels que les **courriels Exchange**, **les sites SharePoint** et **les messages du canal Teams** :
     
         ```PowerShell
         Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution

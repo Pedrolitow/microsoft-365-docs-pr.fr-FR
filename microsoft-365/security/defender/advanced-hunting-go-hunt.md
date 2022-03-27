@@ -20,43 +20,45 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e14f2d5e35585cf5b0edfe433084fa7c8a1d5280
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 3d1ec22febe0c0072a4eed2a9b8fece3687762d7
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221063"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754273"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Recherche rapide des informations sur l’entité ou les événements avec la recherche de go
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
 
-Avec *l’action de recherche* go, vous pouvez rapidement examiner les événements et différents types d’entités à l’aide de puissantes fonctionnalités de recherche avancée [basées](advanced-hunting-overview.md) sur des requêtes. Cette action exécute automatiquement une requête de recherche avancée pour rechercher des informations pertinentes sur l’événement ou l’entité sélectionné.
+Avec *l’action de recherche* go, vous pouvez rapidement examiner les événements et différents types d’entités à l’aide de puissantes fonctionnalités de recherche avancée [basées sur](advanced-hunting-overview.md) des requêtes. Cette action exécute automatiquement une requête de recherche avancée pour rechercher des informations pertinentes sur l’événement ou l’entité sélectionné.
 
-*L’action de recherche* est disponible dans différentes sections de Defender for Cloud chaque fois que les détails de l’événement ou de l’entité sont affichés. Par exemple, vous pouvez utiliser *la recherche dans* les sections suivantes :
+*L’action de* recherche est disponible dans différentes sections de Defender for Cloud. Cette action est disponible pour afficher une fois que les détails de l’événement ou de l’entité sont affichés. Par exemple, vous pouvez utiliser l’option *aller à la* recherche dans les sections suivantes :
 
-- Dans la [page Incident,](investigate-incidents.md#summary)vous pouvez consulter les détails sur les utilisateurs, les appareils et de nombreuses autres entités associées à un incident. Lorsque vous sélectionnez une entité, vous obtenez des informations supplémentaires ainsi que différentes actions que vous pouvez prendre sur cette entité. Dans l’exemple ci-dessous, une boîte aux lettres est sélectionnée, affichant des détails sur la boîte aux lettres ainsi que l’option de recherche pour plus d’informations sur la boîte aux lettres.
+- Dans la [page Incident](investigate-incidents.md#summary), vous pouvez consulter les détails sur les utilisateurs, les appareils et de nombreuses autres entités associées à un incident. Lorsque vous sélectionnez une entité, vous obtenez des informations supplémentaires et les différentes actions que vous pouvez prendre sur cette entité. Dans l’exemple ci-dessous, une boîte aux lettres est sélectionnée, affichant des détails sur la boîte aux lettres et l’option de recherche pour plus d’informations sur la boîte aux lettres.
 
-    :::image type="content" source="../../media/go-hunt-1-incident.png" alt-text="Page **Boîtes aux lettres** avec l’option **Go hunt** dans le portail Microsoft 365 Defender web" lightbox="../../media/go-hunt-1-incident.png":::
+    :::image type="content" source="../../media/go-hunt-1-incident.png" alt-text="Page Boîtes aux lettres avec l’option Aller à la recherche dans le Microsoft 365 Defender web" lightbox="../../media/go-hunt-1-incident.png":::
 
-- Dans la page Incident, vous pouvez également accéder à une liste d’entités sous l’onglet **Preuves.** La sélection de l’une de ces entités permet de trouver rapidement des informations sur cette entité.
+- Dans la page Incident, vous pouvez également accéder à une liste d’entités sous l’onglet **Preuves** . La sélection de l’une de ces entités permet de trouver rapidement des informations sur cette entité.
 
-    :::image type="content" source="../../media/go-hunt-2-entity.png" alt-text="L’option Aller à la recherche d’un élément de preuve dans la page **Incident** dans Microsoft 365 Defender portail" lightbox="../../media/go-hunt-2-entity.png":::
+    :::image type="content" source="../../media/go-hunt-2-entity.png" alt-text="L’option Aller à la recherche d’un élément de preuve dans la page Incident dans Microsoft 365 Defender portail" lightbox="../../media/go-hunt-2-entity.png":::
 
 
 - Lorsque vous affichez la chronologie d’un appareil, vous pouvez sélectionner un événement dans la chronologie pour afficher des informations supplémentaires sur cet événement. Une fois qu’un événement est sélectionné, vous avez la possibilité de chercher d’autres événements pertinents dans le hunting avancé.
 
-    :::image type="content" source="../../media/go-hunt-3-event.png" alt-text="L’option **Recherche d’événements connexes** sur la page d’un événement dans l’onglet **Chronologies** dans Microsoft 365 Defender portail" lightbox="../../media/go-hunt-3-event.png":::
+    :::image type="content" source="../../media/go-hunt-3-event.png" alt-text="Option De recherche d’événements associés sur la page d’un événement dans l’onglet Chronologies Microsoft 365 Defender portail" lightbox="../../media/go-hunt-3-event.png":::
 
-La sélection **de la** fonction De recherche ou de recherche pour les événements connexes transmet différentes requêtes, selon que vous avez sélectionné une entité ou un événement. 
+La sélection **de la fonction De recherche** **ou de** recherche pour les événements connexes transmet différentes requêtes, selon que vous avez sélectionné une entité ou un événement.
 
 ## <a name="query-for-entity-information"></a>Requête d’informations sur l’entité
-Lorsque vous utilisez *go hunt* to query for information about a user, device, or any other type of entity, the query checks all relevant schema tables for any events involving that entity. Pour que les résultats restent gérables, la requête est limitée à la même période que l’activité la plus tôt au cours des 30 derniers jours qui implique l’entité et est associée à l’incident.
+Vous pouvez utiliser *la recherche d’informations* sur un utilisateur, un appareil ou tout autre type d’entité. La requête vérifie toutes les tables de schéma pertinentes pour tout événement impliquant cette entité afin de renvoyer des informations. Pour que les résultats restent gérables, la requête est :
+- à peu près à la même période que l’activité la plus tôt au cours des 30 derniers jours qui implique l’entité
+- associé à l’incident.
 
 Voici un exemple de requête go hunt pour un appareil :
 
@@ -72,7 +74,7 @@ and DeviceName == deviceName
 | take 100
 ```
 ### <a name="supported-entity-types"></a>Types d’entités pris en charge
-Vous pouvez utiliser *la recherche après* avoir sélectionné l’un des types d’entités ci-après :
+Vous pouvez utiliser l’option *aller à la recherche* après avoir sélectionné l’un des types d’entités ci-après :
 
 - Fichiers
 - Messages électroniques
@@ -98,7 +100,7 @@ search in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents, DeviceRegistryEv
 ```
 
 ## <a name="adjust-the-query"></a>Ajuster la requête
-Avec une certaine connaissance du langage [de requête,](advanced-hunting-query-language.md)vous pouvez ajuster la requête à votre préférence. Par exemple, vous pouvez ajuster cette ligne, qui détermine la taille de la fenêtre de temps :
+Avec une certaine connaissance du langage [de requête](advanced-hunting-query-language.md), vous pouvez ajuster la requête à votre préférence. Par exemple, vous pouvez ajuster cette ligne, qui détermine la taille de la fenêtre de temps :
 
 ```kusto
 Timestamp between ((selectedTimestamp - 1h) .. (selectedTimestamp + 1h))
@@ -109,9 +111,9 @@ En plus de modifier la requête pour obtenir des résultats plus pertinents, vou
 - [Créer une règle de détection personnalisée](custom-detection-rules.md)
 
 >[!NOTE]
->Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
+>Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de [Microsoft Defender pour le point de terminaison](advanced-hunting-migrate-from-mde.md).
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Rubriques associées
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)

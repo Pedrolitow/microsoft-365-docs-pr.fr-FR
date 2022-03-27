@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5737a2d1974805dc55b85b7ff8f4117cbc1da898
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5c4d1be31742d21f6e7919a8db4a3d2aff75f66e
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318184"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775387"
 ---
 # <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a>Analyse du courrier électronique dans les enquêtes pour Microsoft Defender pour Office 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "63318184"
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Pendant l’examen automatisé des alertes, Microsoft Defender pour Office 365 analyse le courrier électronique d’origine pour identifier les menaces et identifie les autres messages électroniques liés à l’e-mail d’origine et potentiellement faisant partie d’une attaque. Cette analyse est importante, car les attaques de courrier électronique se composent rarement d’un seul e-mail.
 
@@ -95,6 +95,6 @@ Pour les clusters de messagerie ou de messagerie dans l’onglet **Entités** d�
 
 Dans cet exemple, le courrier électronique est malveillant, mais pas dans une boîte aux lettres.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Afficher les actions de correction en attente ou terminées](air-review-approve-pending-completed-actions.md)

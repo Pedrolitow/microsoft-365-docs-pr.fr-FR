@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment intégrer et désinsser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide de JAMF Pro pour les clients Microsoft Defender pour les points de terminaison (prévisualisation)
-ms.openlocfilehash: 7e2109f52590cc4d9ad23700fa4b51a09ae4b5db
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: f260d901f8f02c2c02007b2cc0d49ab9ee57dafd
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526469"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716318"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview"></a>Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de JAMF Pro pour les clients de Microsoft Defender pour point de terminaison (aperçu)
 
@@ -37,9 +37,8 @@ Vous pouvez utiliser jamf Pro pour intégrer des appareils macOS dans Microsoft 
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Assurez-vous que vos [appareils macOS sont Azure AD joints](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
-- Assurez-vous que [vos appareils macOS sont gérés via JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) 
-- Installer le navigateur Edge v95+ sur vos appareils macOS 
+- Assurez-vous que vos appareils macOS sont gérés via [JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) et sont associés à une identité (Azure AD UPN jointe) via JAMF Connecter ou Intune.
+- Installer le navigateur Edge v95+ sur vos appareils macOS
 
 ## <a name="onboard-devices-into-microsoft-365-compliance-solutions-using-jamf-pro"></a>Intégrer des appareils dans des solutions Microsoft 365 conformité à l’aide de JAMF Pro
 

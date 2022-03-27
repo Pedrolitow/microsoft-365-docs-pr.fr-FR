@@ -1,25 +1,30 @@
 ---
 title: Playbook d'essai des solutions de conformité Microsoft 365
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
-ROBOTS: 'NOINDEX, NOFOLLOW'
+ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
-  - MOE150
-  - MET150
+- MOE150
+- MET150
 description: Playbook d'essai des solutions de conformité Microsoft 365.
+ms.openlocfilehash: 896e3fe81c74cc2a594ab88807e0b9505fed1a18
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754258"
 ---
-
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>Manuel d'essai : solutions de conformité Microsoft 365
 
-Bienvenue dans le playbook d'essai des solutions de conformité Microsoft 365. Ce playbook vous aidera à tirer le meilleur parti de votre essai gratuit de 90 jours en vous aidant à découvrir les capacités robustes et complètes des produits de conformité et de sécurité Microsoft 365.
+Bienvenue dans le guide opérationnel d’essai des solutions de conformité Microsoft 365. Ce guide opérationnel vous aidera à tirer le meilleur parti de votre essai gratuit de 90 jours en vous aidant à découvrir des fonctionnalités robustes et complètes de Microsoft 365 produits de conformité et de sécurité.
 
 Essayer chaque solution vous aidera à prendre des décisions éclairées pour répondre aux besoins de conformité de votre organisation.
 
@@ -73,7 +78,7 @@ Les stratégies de rétention du journal d’audit font partie des nouvelles fon
 
 1. Avant de créer une stratégie de conservation des journaux d'audit – [éléments clés à connaître](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) avant de créer votre stratégie.
 1. [Créer une stratégie de rétention de journal d’audit](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
-1. [Gérer les stratégies de rétention des journaux d'audit dans le centre de conformité Microsoft 365](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center) – Les stratégies de rétention des journaux d'audit sont répertoriées dans l'onglet Stratégies de rétention d'audit (également appelé tableau de bord). Vous pouvez utiliser le tableau de bord pour afficher, modifier, et supprimer des stratégies de rétention d’audit.
+1. [Gérer les stratégies de rétention des journaux d'audit dans le centre de conformité Microsoft 365](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center) – Les stratégies de rétention des journaux d'audit sont répertoriées dans l'onglet Stratégies de rétention d'audit (également appelé tableau de bord). Vous pouvez utiliser le tableau de bord pour afficher, modifier et supprimer les politiques de conservation des audits.
 1. Créez et gérez des stratégies de rétention des journaux d'audit sur PowerShell : vous pouvez également utiliser le Centre de sécurité et de conformité PowerShell pour [créer et gérer des stratégies de rétention des journaux d'audit](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell). L’une des raisons de l’utilisation de PowerShell est la création d’une stratégie pour un type ou une activité d’enregistrement qui n’est pas disponible dans l’interface utilisateur.
 
 ## <a name="communication-compliance"></a>Conformité des communications
@@ -93,7 +98,7 @@ La conformité de la communication vous aide à identifier intelligemment les vi
 > [!TIP]
 > Meilleure pratique d'essai : configuration dans les 30 premiers jours
 
-Pour utiliser cette fonctionnalité, activez l'audit afin que votre organisation puisse commencer à enregistrer l'activité des utilisateurs et des administrateurs dans votre organisation. Lorsque vous activez cette option, l'activité est enregistrée dans le journal d'audit et peut être consultée dans un rapport. Pour en savoir plus, voir [Activer ou désactiver la recherche dans le journal d'audit](turn-audit-log-search-on-or-off.md).
+Pour utiliser cette fonctionnalité, activez l'audit afin que votre organisation puisse commencer à enregistrer l'activité des utilisateurs et des administrateurs dans votre organisation. Lorsque vous activez cette option, l'activité est enregistrée dans le journal d'audit et peut être consultée dans un rapport. Pour plus d’informations, consultez [Activer ou désactiver la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md).
 
 ### <a name="step-3-create-a-communication-compliance-policy"></a>Étape 3 : [Créer une politique de conformité des communications](communication-compliance-policies.md)
 
@@ -231,7 +236,7 @@ De plus en plus d'organisations utilisent la solution Advanced eDiscovery dans M
 
 1. Gérer Advanced eDiscovery – [découvrir comment configurer Advanced eDiscovery, gérer les cas à l'aide du Centre de sécurité et de conformité, gérer un flux de travail dans Advanced eDiscovery et analyser les résultats de la recherche Advanced eDiscovery](/learn/modules/manage-advanced-ediscovery).
 1. [Créer un cas eDiscovery à l’aide du nouveau format de cas d’Advance eDiscovery](advanced-ediscovery-new-case-format.md)
-1. [Fermer ou supprimer un cas](close-or-delete-case.md) – Lorsque l'affaire judiciaire ou l'enquête est terminée, vous pouvez fermer ou supprimer. Vous pouvez également rouvrir un dossier clos.
+1. [Fermer ou supprimer un cas](close-or-delete-case.md) – Lorsque l'affaire judiciaire ou l'enquête est terminée, vous pouvez fermer ou supprimer.
 
 ### <a name="step-3-optional-settings"></a>Étape 3 (facultative) : Paramètres
 
@@ -271,7 +276,7 @@ Implémentez Microsoft Information Protection et les étiquettes de confidential
 > [!TIP]
 > Meilleures pratiques d'essai : Jour 1
 
-Les clients éligibles peuvent activer les étiquettes et les politiques par défaut pour Microsoft Information Protection. Lorsque vous activez la configuration par défaut dans l'essai, il faudra environ 2 minutes pour configurer toutes les stratégies pour votre locataire et jusqu'à 24 heures pour voir les résultats de ces stratégies par défaut.
+Les clients éligibles peuvent activer les étiquettes et les stratégies par défaut pour Microsoft Information Protection. Lorsque vous activez la configuration par défaut dans la version d’évaluation, il faut environ 2 minutes pour configurer toutes les stratégies de votre client et jusqu’à 24 heures pour voir les résultats de ces stratégies par défaut.
 
 En choisissant la configuration par défaut, en 1 clic, se configure automatiquement :
 
@@ -311,7 +316,7 @@ Lorsque vous êtes prêt à exécuter la stratégie sans simulation, sélectionn
 
 **Détecter et corriger les risques d'initiés**
 
-Tirez parti de l’intelligence artificielle pour vous aider à identifier, trier et corriger rapidement les risques internes. À l'aide des journaux de Microsoft 365 et des services Azure, vous pouvez définir des politiques qui surveillent les signaux de risque d'initiés, puis prendre des mesures correctives telles que la promotion de la formation des utilisateurs ou le lancement d'une enquête.
+Tirez parti de l’intelligence artificielle pour vous aider à identifier, trier et corriger rapidement les risques internes. À l’aide des journaux d’Microsoft 365 et des services Azure, vous pouvez définir des stratégies qui surveillent les signaux de risque interne, puis prendre des mesures correctives telles que la promotion de l’éducation des utilisateurs ou l’ouverture d’une enquête.
 
 ### <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>Étape 1 (obligatoire) : [Activer les autorisations pour la gestion des risques internes](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)
 
@@ -429,6 +434,6 @@ Identifiez et protégez de manière proactive les risques de confidentialité te
 
 **Qu'inclut-il ?** : pour une liste complète des solutions et fonctionnalités de conformité Microsoft 365 répertoriées par niveau de produit, consultez la [matrice des fonctionnalités](https://go.microsoft.com/fwlink/?linkid=2139145).
 
-**Bibliothèque de contenu technique de sécurité Microsoft** : explorez cette bibliothèque pour trouver des guides interactifs et d'autres contenus d'apprentissage correspondant à vos besoins. [Visiter la bibliothèque](/security/content-library).
+**Bibliothèque de contenu technique de sécurité Microsoft** : explorez cette bibliothèque pour trouver des guides interactifs et d'autres contenus d'apprentissage correspondant à vos besoins. [Visitez la bibliothèque](/security).
 
-**Ressources de sécurité Microsoft** : De l'antimalware à Zero Trust, obtenez toutes les ressources pertinentes pour les besoins de sécurité de votre organisation. [Visiter les ressources](/security/business/resources).
+**ressources de sécurité Microsoft**: du logiciel anti-programme malveillant à la confiance zéro, obtenez toutes les ressources pertinentes pour les besoins de sécurité de votre organisation. [Visitez ressources](/security/business/resources).

@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Référence de configuration et composant de stratégie DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: d94277ac4ee3bd78feecf660e03d60a5720d1b43
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4888569318fd24d25368dc1c923a1efced9f4126
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319418"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63675435"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Référence de stratégie de protection contre la perte de données
 
@@ -397,17 +397,54 @@ Les actions disponibles dans une règle dépendent des emplacements qui ont ét�
 
 - Auditer ou restreindre les activités sur Windows appareils
 
-> [!NOTE]
-> Les appareils offrent la possibilité **d’auditer** une **activité, de** la bloquer ou de la bloquer avec **le remplacement d’une** activité.
+Pour utiliser ces paramètres, vous devez configurer les options dans les **paramètres DLP** et dans la stratégie dans laquelle vous souhaitez les utiliser. Pour plus [d’informations, voir applications restreintes et groupes](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) d’applications.
 
-L’emplacement des appareils fournit de nombreuses sous-activités (conditions) et actions. Pour en savoir plus, [consultez Les activités de point de terminaison que vous pouvez surveiller et sur qui vous pouvez agir](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on). 
+L’emplacement des appareils fournit de nombreuses sous-activités (conditions) et actions. Pour en savoir plus, [consultez Les activités de point de terminaison que vous pouvez surveiller et sur qui vous pouvez agir](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on).
 
-#### <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
+Lorsque vous sélectionnez **Auditer** ou restreindre les activités sur les appareils Windows, vous pouvez limiter les activités des utilisateurs par domaine de service ou navigateur, et limiter les actions prises par DLP :
+
+- Toutes les applications
+- Par une liste d’applications restreintes que vous définissez
+- Ay a restricted app group (preview) that you define.
+
+##### <a name="service-domain-and-browser-activities"></a>Activités de domaine de service et de navigateur
+
+Lorsque vous configurez les domaines de **service cloud Autoriser/** Bloquer et la liste des **navigateurs** non autorisé (voir [Restrictions](dlp-configure-endpoint-settings.md#browser-and-domain-restrictions-to-sensitive-data) de navigateur et de domaine sur les données sensibles) et qu’un utilisateur tente de télécharger un fichier protégé vers un domaine de service cloud ou d’y accéder à partir d’un navigateur non autorisé, vous pouvez configurer l’action `Audit only`de stratégie sur , `Block with override``Block` ou l’activité.
+
+##### <a name="file-activities-for-all-apps"></a>Activités de fichier pour toutes les applications
+
+Avec **l’option Activités de fichier pour toutes** les applications, vous  sélectionnez Ne pas restreindre les activités de fichier ou appliquer des **restrictions à des activités spécifiques**. Lorsque vous choisissez d’appliquer des restrictions à des activités spécifiques, les actions que vous sélectionnez ici sont appliquées lorsqu’un utilisateur a accédé à un élément protégé par DLP. Vous pouvez indiquer à DLP , `Audit only``Block with override`( `Block` les actions) sur ces activités utilisateur :
+
+- **Copier dans le Presse-papiers**
+- **Copier sur un lecteur amovible USB** 
+- **Copier sur un partage réseau**
+- **Print**
+- **Copier ou déplacer à l’aide d’une application Bluetooth non conforme**
+- **Services de bureau à distance**
+
+
+##### <a name="restricted-app-activities"></a>Activités d’application restreintes  
+
+Précédemment appelée Applications nonallées, vous définissez une liste d’applications dans les paramètres DLP de point de terminaison sur qui vous souhaitez placer des restrictions. Lorsqu’un utilisateur tente d’accéder à un fichier protégé par DLP à l’aide d’une application qui figure dans la liste, `Audit only`vous pouvez soit , soit `Block with override``Block` l’activité. Les actions DLP définies dans **les activités** d’applications restreintes sont indérialées si l’application est membre d’un groupe d’applications restreintes. Ensuite, les actions définies dans le groupe d’applications restreintes sont appliquées.
+
+##### <a name="file-activities-for-apps-in-restricted-app-groups-preview"></a>Activités de fichier pour les applications dans les groupes d’applications restreints (aperçu)
+
+Vous définissez vos groupes d’applications restreintes dans les paramètres DLP de point de terminaison et ajoutez des groupes d’applications restreintes à vos stratégies. Lorsque vous ajoutez un groupe d’applications restreintes à une stratégie, vous devez sélectionner l’une des options ci-après :
+
+- Ne pas limiter l’activité des fichiers
+- Appliquer des restrictions à toutes les activités
+- Appliquer des restrictions à une activité spécifique
+
+Lorsque vous sélectionnez l’une des options Appliquer des *restrictions* et qu’un utilisateur tente d’accéder à un fichier protégé par DLP à l’aide d’une application qui se trouve dans le groupe d’applications restreint, `Audit only`vous pouvez soit , `Block with override``Block` soit par activité. Les actions DLP que vous définissez ici remplacent les  actions définies dans les activités d’application restreintes et les activités de fichier pour toutes les **applications** pour l’application.
+
+Pour plus [d’informations, voir applications restreintes et groupes](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) d’applications. 
+
+#### <a name="microsoft-defender-for-cloud-apps-actions"></a>Actions De Microsoft Defender pour les applications cloud
 
 - Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
 - Restreindre les applications tierces
 
-#### <a name="on-premises-repositories"></a>Référentiels locaux
+#### <a name="on-premises-repositories-actions"></a>Actions des référentiels locaux
 
 - Restreindre l’accès ou supprimer des fichiers locaux
 

@@ -21,18 +21,21 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les étapes de configuration de Microsoft 365 nécessaires pour configurer une équipe pour la collaboration entre les tâches, les conversations et la documentation avec les invités dans Teams.
-ms.openlocfilehash: bb6ccf4f3e17192d86675d99072eca8b836973e2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0fd723a86f79f97703eca96c0693882fbc05f13a
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324548"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712903"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborer avec des invités au sein d’une équipe
 
 Si vous devez collaborer avec des invités au sein de documents, de tâches et de conversations, nous vous recommandons d’utiliser Microsoft Teams. Teams fournit toutes les fonctionnalités de collaboration disponibles dans Office et SharePoint avec une conversation permanente et un ensemble personnalisable et extensible d’outils de collaboration dans une expérience utilisateur unifiée.
 
 Dans cet article, nous allons suivre les étapes de configuration de Microsoft 365 nécessaires pour configurer une équipe en collaboration avec des invités. Une fois que vous avez configuré l'accès invité, vous pouvez inviter des personnes à des équipes en suivant les étapes de la section [Ajouter des invités à une équipe dans Teams](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f).
+
+> [!NOTE]
+> [Les canaux partagés](collaborate-teams-direct-connect.md) offrent une expérience plus transparente que les comptes invités lors de la collaboration avec d'autres organisations Microsoft 365. Les canaux partagés vous permettent de collaborer avec des personnes extérieures à votre organisation en utilisant les canaux Teams sans que les participants externes aient besoin de se connecter à votre organisation. Nous vous recommandons d'examiner [le plan de collaboration externe](plan-external-collaboration.md) pour voir si les canaux partagés sont une meilleure option que la collaboration avec des invités pour un scénario donné.
 
 ## <a name="video-demonstration"></a>Démonstration vidéo
 
@@ -195,5 +198,3 @@ Pour inviter à une équipe
 [Créer un extranet B2B avec des invités gérés](b2b-extranet.md)
 
 [Intégration de SharePoint et de OneDrive à Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)
-
-[Les options de partage sont grisées lors du partage à partir de SharePoint ou OneDrive](/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

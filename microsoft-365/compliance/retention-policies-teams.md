@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: d3562126a678e486fd97f3c760841f9ba4de7193
-ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
+ms.openlocfilehash: fc870050b8ef69a908553617d755412d95efa288
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62859288"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63714871"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Si vous voyez dans Teams un message concernant la suppression de vos conversations ou messages par une stratégie de rétention, consultez [Messages Teams à propos des stratégies de rétention](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
@@ -42,6 +42,9 @@ Pour les autres charges de travail, consultez:
 - [Découvrir la rétention pour Exchange](retention-policies-exchange.md)
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Éléments composant la rétention et la suppression
+
+> [!NOTE]
+> Les politiques de rétention prennent désormais en charge les [canaux partagés](/MicrosoftTeams/shared-channels), actuellement en aperçu. Tous les canaux partagés héritent des paramètres de rétention du canal parent.
 
 Les messages de conversation, les messages de canal et les messages de canal privé Teams peuvent être supprimés à l’aide de stratégies de rétention pour Teams. En plus du texte contenu dans les messages, les éléments suivants peuvent être conservés pour des raisons de conformité : images incorporées, tableaux, liens hypertexte et liens vers d’autres messages et fichiers Teams, et [contenu de carte](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Les messages de conversation et les messages de canal privé incluent tous les noms des personnes dans la conversation, et les messages de canal incluent le nom de l’équipe et le titre du message (le cas indiqué). 
 
@@ -60,6 +63,7 @@ Ces boîtes aux lettres apparaissent dans la liste en fonction de leur attribut 
 - **UserMailbox** : ces boîtes aux lettres stockent des données de messages des utilisateurs de Teams basé sur le cloud.
 - **MailUser** : ces boîtes aux lettres stockent des données pour [des utilisateurs de Teams locale](search-cloud-based-mailboxes-for-on-premises-users.md).
 - **GroupMailbox** : ces boîtes aux lettres stockent des données de canaux standard Teams.
+- **SubstrateGroup** : ces boîtes aux lettres stockent les données de message pour les canaux partagés Teams.
 
 Nous ne prenons pas en charge les autres types de boîtes aux lettres, tels que la boîte aux lettre RoomMailbox utilisée pour les salles de conférence Teams, dans le cadre des stratégies de rétention Teams.
 

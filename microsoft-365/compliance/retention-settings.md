@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: 2fd9f2655b13d8c9ac829108d3563a6a4322f3bc
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 3b2833b2b6293845379f9f5aeffd3bd46610e2a8
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449244"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63713072"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -59,7 +59,7 @@ Lorsque vous choisissez d’utiliser des étendues adaptatives, vous êtes invit
 |:-----|:-----|
 |**Utilisateurs** : s’applique à :  <br/> E-mail Exchange <br/> Comptes OneDrive <br/> Conversations Teams <br/> Messages d’un canal privé Teams <br/> Messages utilisateur Yammer| Prénom <br/> Nom  <br/>Nom d’affichage <br/> Fonction <br/> Service <br/> Bureau <br/>Rue <br/> Ville <br/>Département ou région <br/>Code postal <br/> Pays ou région <br/> Adresses de messagerie <br/> Alias <br/> Attributs personnalisés Exchange : attributs personnalisés1 : attributs personnalisés15|
 |**Microsoft Office SharePoint Online** : s’applique à :  <br/> Sites Microsoft Office SharePoint Online <br/> Comptes OneDrive |URL du site <br/>Nom du site <br/> Propriétés personnalisées Microsoft Office SharePoint Online : RefinableString00 : RefinableString99 |
-|**Groupes Microsoft 365** : s’applique à :  <br/> - Groupes Microsoft 365 <br/> Messages du canal Teams <br/> Messages de la communauté Yammer |Nom <br/> Nom <br/> Description <br/> Adresses de messagerie <br/> Alias <br/> Attributs personnalisés Exchange : attributs personnalisés1 : attributs personnalisés15 |
+|**Groupes Microsoft 365** : s’applique à :  <br/> - Groupes Microsoft 365 <br/> - Messages de canal Teams (standard et partagés) <br/> Messages de la communauté Yammer |Nom <br/> Nom <br/> Description <br/> Adresses de messagerie <br/> Alias <br/> Attributs personnalisés Exchange : attributs personnalisés1 : attributs personnalisés15 |
 
 Les noms des propriétés des sites sont basés sur les propriétés gérées des sites SharePoint. Pour plus d'informations sur les attributs personnalisés, voir [Utilisation de propriétés de site SharePoint personnalisées pour appliquer la rétention Microsoft 365 avec des étendues de politique adaptative](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 

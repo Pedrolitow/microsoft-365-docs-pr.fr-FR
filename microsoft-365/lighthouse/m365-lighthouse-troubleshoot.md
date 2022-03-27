@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, obtenez de l’aide pour résoudre les problèmes et les messages d’erreur.
-ms.openlocfilehash: e39eea66222852d8f331aa6bc68b386bea3da763
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 49e6657815ed71476a3dc79d778f7e1fbacfa1f4
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63513031"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775453"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>Résoudre les problèmes et les messages d’erreur dans Microsoft 365 Lighthouse
 
@@ -53,11 +53,14 @@ Cet article décrit les messages d’erreur et les problèmes que vous pouvez re
 
 **Cause :** Les locataires de vos clients ne répondent pas aux critères suivants :
 
-  - Doit avoir des privilèges d’administrateur délégués (DAP) ou délégués granulaires (GDAP) pour le fournisseur de services gérés (MSP)
-  - Doit avoir au moins une licence Microsoft 365 Business Premium ou Microsoft 365 E3 licence
+  - Doit avoir délégué (DAP) pour que le fournisseur de services gérés (MSP) puisse gérer le client client*
+  - Doit avoir au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3 ou une licence Windows 365 Entreprise
   - Ne doit pas avoir plus de 1 000 utilisateurs sous licence 
 
-**Résolution :** Le tableau suivant décrit les différents statuts de client qui nécessitent une action et explique comment les résoudre.<br><br>
+**Résolution :** Le tableau suivant décrit les différents statuts de client qui nécessitent une action et explique comment les résoudre.
+
+*Des privilèges d’administration délégués (DAP) sont requis pour intégrer des clients à l’entreprise. Nous vous recommandons également d’établir des privilèges d’administration délégués granulaires (GDAP) avec vos clients pour permettre un accès délégué plus sécurisé. Bien que DAP et GDAP coexistent, GDAP est prioritaire pour les clients où les deux modèles sont en place. Bientôt, les clients  ayant uniquement GDAP (et pas de DAP) pourront intégrer le groupe.<br><br>
+
 
 | État | Description | Résolution |
 |--|--|--|

@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 5ffbe15fe9fa06e7c06546f9452d6c4f2bddfc39
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 77edaa3d71911bd0594e707996c320285dddabc5
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329612"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754114"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Référence des règles de réduction de la surface d’attaque
 
@@ -77,7 +77,7 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 
 _Fin de la prévisualisation publique : systèmes d’exploitation pris en charge_
 
-## <a name="supported-operating-systems"></a>Systèmes d’exploitation pris en charge
+## <a name="supported-operating-systems"></a>Systèmes d’exploitation pris en charge 
 
 Le tableau suivant répertorie les systèmes d’exploitation pris en charge pour les règles actuellement publiées à la disponibilité générale. Les règles sont répertoriées par ordre alphabétique.
 
@@ -112,7 +112,7 @@ Les liens vers des informations sur les versions du système de gestion de la co
 
 |Nom de la règle | Intune | Gestionnaire de point de terminaison Microsoft |Microsoft Endpoint Configuration Manager |Stratégie de groupe<sup>[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
-|[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v  | Y MEM OMA-URI |   | v  |  v |
+|[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v  | Y MEM OMA-URI |   | v  |  v  |
 |[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | v |   | v | v  | v  |
 |[Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes) | v |   |v <br><br> CB 1710 | v  | v  |
 |[Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité locale (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | v  |   | v <br><br>CB 1802 | v  | v  |
@@ -178,7 +178,7 @@ _Le mode Avertissement_ est un type de blocage qui avertit les utilisateurs des 
 
 Si vous cliquez sur le bouton autoriser, le bloc sera supprimé pendant 24 heures. Au bout de 24 heures, l’utilisateur final doit autoriser à nouveau le blocage. Le mode d’avertissement pour les règles de récupération automatique est uniquement pris en charge pour les appareils RS5+ (1809+). Si le contournement est affecté à des règles de récupération automatique sur des appareils avec des versions antérieures, la règle sera en mode bloqué.
 
-Vous pouvez également définir une règle en mode d’avertissement via PowerShell en spécifiant simplement l’AttackSurfaceReductionRules_Actions comme « Avertir ». Par exemple :
+Vous pouvez également définir une règle en mode d’avertissement via PowerShell en spécifiant simplement l’AttackSurfaceReductionRules_Actions comme « Avertir ». Par exemple :
 
 ```powershell
 -command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 

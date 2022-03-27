@@ -37,15 +37,15 @@
           href: manage-devices-with-intune-app-protection.md
         - name: Étape 2. Inscrire des appareils dans la gestion
           href: manage-devices-with-intune-enroll.md
-        - name: "Étape\_3. Configurer les stratégies de conformité"
+        - name: Étape 3. Configurer des stratégies de conformité
           href: manage-devices-with-intune-compliance-policies.md
-        - name: Étape 4. Exiger des appareils sains et conformes
+        - name: Étape 4. Exiger des appareils intègres et conformes
           href: manage-devices-with-intune-require-compliance.md
-        - name: Étape 5. Déployer les profils d’appareils
+        - name: Étape 5. Déployer des profils d’appareil
           href: manage-devices-with-intune-configuration-profiles.md
-        - name: Étape 6. Surveiller le risque et la conformité des appareils aux lignes de base de sécurité
+        - name: Étape 6. Surveiller les risques et la conformité des appareils aux bases de référence de sécurité
           href: manage-devices-with-intune-monitor-risk.md
-        - name: "Étape\_7. Implémenter la protection contre la perte de données (DLP) avec les fonctionnalités de protection des informations"
+        - name: Étape 7. Implémenter la protection contre la perte de données (DLP) avec des fonctionnalités de protection des informations
           href: manage-devices-with-intune-dlp-mip.md
     - name: Configurer la collaboration sécurisée avec Microsoft 365
       items:
@@ -67,7 +67,9 @@
           items:
             - name: Vue d’ensemble du partage externe
               href: collaborate-with-people-outside-your-organization.md
-            - name: Scénarios de configuration
+            - name: Planifier la collaboration externe
+              href: plan-external-collaboration.md
+            - name: Configuration
               items:
                 - name: Collaborer sur des documents
                   href: collaborate-on-documents.md
@@ -75,18 +77,32 @@
                   href: collaborate-in-site.md
                 - name: Collaborer en équipe
                   href: collaborate-as-team.md
+                - name: Collaborer dans un canal
+                  href: collaborate-teams-direct-connect.md
+                - name: Activer les canaux partagés avec toutes les organisations
+                  href: allow-direct-connect-with-all-organizations.md
                 - name: Créer un extranet B2B
                   href: b2b-extranet.md
-                - name: Limiter le partage
-                  href: microsoft-365-limit-sharing.md
-            - name: Scénarios de sécurité
+                - name: Approuver l’accès conditionnel d’autres organisations
+                  href: trust-conditional-access-from-other-organizations.md
+            - name: Limiter le partage
               items:
-                - name: Partage non authentifié
-                  href: best-practices-anonymous-sharing.md
+                - name: Limiter les personnes autorisées à inviter des invités
+                  href: limit-who-can-invite-guests.md
+                - name: Limiter les personnes pouvant être invitées par une organisation
+                  href: limit-invitations-from-specific-organization.md
+                - name: Limiter le partage d’invités à des organisations spécifiques
+                  href: limit-guest-sharing-to-specific-organization.md
+                - name: Limiter les organisations où les utilisateurs peuvent être invités
+                  href: limit-organizations-where-users-have-guest-accounts.md
                 - name: Limiter l’exposition accidentelle
                   href: share-limit-accidental-exposure.md
-                - name: Sécuriser l’environnement de partage avec les invités
-                  href: create-secure-guest-sharing-environment.md
+                - name: Limiter le partage
+                  href: microsoft-365-limit-sharing.md
+            - name: Sécuriser l’environnement de partage avec les invités
+              href: create-secure-guest-sharing-environment.md
+            - name: Partage non authentifié
+              href: best-practices-anonymous-sharing.md
             - name: Référence de partage externe
               href: microsoft-365-guest-settings.md
     - name: "Déployer la protection contre les rançongiciels pour votre client Microsoft\_365"
@@ -133,7 +149,7 @@
               href: tenant-management-tenants.md
             - name: Étape 2. Mise en réseau optimale
               href: tenant-management-networking.md
-            - name: Étape 3. Identité
+            - name: "Étape\_3. Identité"
               href: tenant-management-identity.md
             - name: Étape 4. Migration
               href: tenant-management-migration.md
@@ -147,9 +163,9 @@
                   href: ../admin/add-users/remove-former-employee-step-1.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: 'Étape 2 : Enregistrer le contenu de la boîte aux lettres d''un ancien employé'
                   href: ../admin/add-users/remove-former-employee-step-2.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-                - name: Étape 3. Réinitialiser et bloquer l'appareil mobile d'un ancien employé
+                - name: Étape 3. Réinitialiser et bloquer l’appareil mobile d’un ancien employé
                   href: ../admin/add-users/remove-former-employee-step-3.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-                - name: Étape 4. Transférer l'adresse e-mail d'un ancien employé à un autre employé ou la convertir en boîte aux lettres partagée
+                - name: Étape 4. Transférer l’e-mail d’un ancien employé à un autre employé ou convertir en boîte aux lettres partagée
                   href: ../admin/add-users/remove-former-employee-step-4.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: Étape 5. Accorder à un autre employé l’accès aux données OneDrive et Outlook
                   href: ../admin/add-users/remove-former-employee-step-5.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
@@ -376,7 +392,7 @@
           href: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams
     - name: Commerce
       items:
-        - name: Présentation
+        - name: Vue d’ensemble
           href: retail-overview.md
         - name: Teams pour la vente au détail
           href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-retail-landing-page

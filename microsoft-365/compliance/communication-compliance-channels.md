@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9cc2b77c9983fecc6e58be515fe316c6c5239fef
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 35bd11ac88859c3e587771552a02097a2f090a44
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317778"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712881"
 ---
 # <a name="detect-channel-signals-with-communication-compliance"></a>Détecter les signaux des canaux à l’aide de la conformité des communications
 
@@ -33,7 +33,14 @@ Avec les stratégies de conformité des communications, vous pouvez choisir d’
 
 Les communications de conversation dans les canaux publics Microsoft Teams privés et les conversations individuelles peuvent être analysées. Lorsque les utilisateurs sont affectés à une stratégie de conformité des communications dont la couverture Microsoft Teams est sélectionnée, les communications de conversation des utilisateurs sont automatiquement surveillées dans toutes les Microsoft Teams dont les utilisateurs sont membres. Microsoft Teams couverture est automatiquement incluse pour les modèles de stratégie prédéfin définis et est sélectionnée par défaut dans le modèle de stratégie personnalisé. Teams conversations correspondant aux conditions de stratégie de conformité des communications peuvent prendre jusqu’à 48 heures.
 
-Pour les canaux privés et de conversation privée, les stratégies de conformité des communications prisent en charge l’analyse moderne des pièces jointes. Les pièces jointes modernes sont des fichiers provenant de [sites OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) ou [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations) qui sont inclus dans Teams messages. Le texte est automatiquement extrait de ces pièces jointes pour un traitement automatisé et des correspondances potentielles avec les conditions de stratégie de conformité des communications actives et les classifieurs. Aucune configuration supplémentaire n’est nécessaire pour la détection et le traitement des pièces jointes modernes. Le texte est extrait uniquement pour les pièces jointes correspondant aux conditions de stratégie. Le texte n’est pas extrait pour les pièces jointes des messages avec des correspondances de stratégie, même si la pièce jointe a également une correspondance de stratégie.
+Pour les canaux privés et de conversation privée, les stratégies de conformité des communications prisent en charge les canaux [partagés](/MicrosoftTeams/shared-channels) et l’analyse moderne des pièces jointes. La prise en charge des canaux partagés Teams est gérée automatiquement et ne nécessite pas de modifications supplémentaires de configuration de la conformité des communications. Le tableau suivant récapitule le comportement de conformité des communications lors du partage Teams canaux avec des groupes et des utilisateurs :
+
+|**Scénario**|**Comportement de conformité des communications**|
+|:-----------|:------------------------------------|
+| **Partager un canal avec une équipe interne** | Les stratégies de conformité des communications s’appliquent aux utilisateurs dans l’étendue et à tous les messages dans le canal partagé |
+| **Partager un canal avec une équipe externe** | Les stratégies de conformité des communications s’appliquent aux utilisateurs internes dans l’étendue et aux messages dans le canal partagé de l’organisation interne |
+
+Les pièces jointes modernes sont des fichiers provenant de [sites OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) ou [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations) qui sont inclus dans Teams messages. Le texte est automatiquement extrait de ces pièces jointes pour un traitement automatisé et des correspondances potentielles avec les conditions de stratégie de conformité des communications actives et les classifieurs. Aucune configuration supplémentaire n’est nécessaire pour la détection et le traitement des pièces jointes modernes. Le texte est extrait uniquement pour les pièces jointes correspondant aux conditions de stratégie. Le texte n’est pas extrait pour les pièces jointes des messages avec des correspondances de stratégie, même si la pièce jointe a également une correspondance de stratégie.
 
 L’analyse moderne des pièces jointes est prise en charge pour les types de fichiers suivants :
 
@@ -53,7 +60,7 @@ Utilisez les configurations de gestion de groupe suivantes pour superviser les c
 - **Pour Teams communications** de canal : affectez chaque canal Microsoft Teams ou groupe Microsoft 365 que vous souhaitez analyser et qui contient un utilisateur spécifique à la stratégie de conformité des communications. Si vous ajoutez le même utilisateur à d’autres canaux Microsoft Teams ou à des groupes Microsoft 365, veillez à ajouter ces nouveaux canaux et groupes à la stratégie de conformité des communications. Si un membre du canal est un utilisateur supervisé au sein d’une stratégie et que *le sens du* trafic entrant est configuré dans une stratégie, tous les messages envoyés au sein du canal sont soumis à un examen et à des correspondances de stratégie potentielles (même pour les utilisateurs du canal qui ne sont pas explicitement supervisés). Par exemple, l’utilisateur A est le propriétaire ou un membre d’un canal. L’utilisateur B et l’utilisateur C sont membres du même canal et utilisent un langage qui correspond à la stratégie de contenu inappropriée qui supervise uniquement l’utilisateur A. L’utilisateur B et l’utilisateur C créent des correspondances de stratégie pour les conversations au sein du canal, même s’ils ne sont pas directement supervisés dans la stratégie de contenu inappropriée. Teams conversations entre l’utilisateur B et l’utilisateur C qui se trouve en dehors du canal qui inclut l’utilisateur A ne sont pas soumises à la stratégie de contenu inappropriée qui inclut l’utilisateur A. Pour exclure les membres du canal de la surveillance lorsque d’autres membres du canal sont explicitement supervisés, désactiver le paramètre d’orientation *des communications* entrantes dans la stratégie de conformité des communications applicable.
 - Pour Teams communications de conversation avec des **environnements de messagerie hybrides** : la conformité des communications peut surveiller les messages de conversation pour les utilisateurs des organisations avec un déploiement local Exchange ou un fournisseur de messagerie externe ayant activé Microsoft Teams. Vous devez créer un groupe de distribution pour les utilisateurs avec des boîtes aux lettres externes ou sur site à surveiller. Lorsque vous créez une stratégie de conformité des communications, vous affectez ce groupe  de distribution en tant que sélection d’utilisateurs et de groupes Supervisés dans l’Assistant Stratégie. Pour plus d’informations sur les exigences et les limitations relatives à l’activation de la prise en charge du stockage en nuage et du Teams pour les utilisateurs locaux, voir Rechercher des données de [conversation Teams pour les utilisateurs](search-cloud-based-mailboxes-for-on-premises-users.md) locaux.
 
-## <a name="exchange-email"></a>E-mails Exchange
+## <a name="exchange-email"></a>Messagerie électronique Exchange
 
 Les boîtes aux lettres hébergées sur Exchange Online dans le cadre de votre abonnement Microsoft 365 ou Office 365 sont toutes éligibles pour l’analyse des messages. Exchange messages électroniques et pièces jointes correspondant aux conditions de stratégie de conformité des communications peuvent prendre jusqu’à 24 heures. Les types de pièces jointes prises en charge pour la conformité des communications sont les mêmes que les [types de fichiers pris en charge pour les inspections du contenu des règles de flux de messagerie Exchange](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 

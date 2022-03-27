@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les options disponibles pour créer un environnement de partage d’invités sécurisé dans Microsoft 365, offrant un accès invité pour une collaboration améliorée.
-ms.openlocfilehash: 97b9c3c26fce137ad4471bbf080d4b7340c8b622
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 13190f2dba0f2cb1f4817a1a831b8d78359e1b81
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323792"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63715138"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Créer un environnement de partage d’invités sécurisé
 
@@ -68,7 +68,7 @@ Les invités doivent maintenant s'inscrire à l'authentification multifacteur av
 
 ### <a name="more-information"></a>Plus d’informations
 
-[Planifier le déploiement d’une authentification multifacteur Azure AD](/azure/active-directory/authentication/howto-mfa-getstarted)
+[Planification d’un déploiement d’authentification multifacteur Azure AD](/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## <a name="set-up-a-terms-of-use-for-guests"></a>Configurer les conditions d’utilisation pour les invités
 
@@ -143,7 +143,7 @@ Configurer une révision d’accès des invités
 13. Tapez un **nom de révision**, puis examinez les paramètres.
 14. Cliquez sur **Créer**.
 
-Il est important de noter que pour les emplacements SharePoint et OneDrive, les documents sont bloqués de manière proactive juste après la détection d’informations sensibles, que le document soit partagé ou non, pour tous les utilisateurs externes, tandis que les utilisateurs internes continueront d’avoir accès au document.
+Il est important de noter que pour les emplacements SharePoint et OneDrive, les documents sont bloqués de manière proactive juste après la détection d’informations sensibles, que le document soit partagé ou non, pour tous les invités, tandis que les utilisateurs internes continueront d’avoir accès au document.
 
 ### <a name="more-information"></a>Plus d’informations
 
@@ -283,7 +283,10 @@ Création d’une stratégie DLP
 13. Sélectionnez vos options de test, puis cliquez sur **Suivant**.
 14. Cliquez sur **Envoyer**, puis sur **Terminé**.
 
-Il est important de noter que cette stratégie ne supprime pas l’accès si l’invité est membre du site ou de l’équipe. Si vous comptez utiliser des documents hautement sensibles dans un site ou une équipe comptant des membres invités, envisagez d'utiliser des c[anaux privés dans Teams ](https://support.microsoft.com/office/de3e20b0-7494-439c-b7e5-75899ebe6a0e)et d'autoriser uniquement les membres de votre organisation dans les canaux privés.
+Il est important de noter que cette stratégie ne supprime pas l’accès si l’invité est membre du site ou de l’équipe. Si vous envisagez d’avoir des documents hautement sensibles dans un site ou une équipe avec des membres invités, envisagez les options suivantes :
+
+- Utilisez les[canaux privés](/MicrosoftTeams/private-channels) et autorisez uniquement les membres de votre organisation dans les canaux privés.
+- Utilisez les[canaux partagés](/MicrosoftTeams/shared-channels) pour collaborer avec des personnes extérieures à votre organisation tout en ayant uniquement des personnes de votre organisation dans l’équipe elle-même.
 
 ## <a name="additional-options"></a>Options supplémentaires
 

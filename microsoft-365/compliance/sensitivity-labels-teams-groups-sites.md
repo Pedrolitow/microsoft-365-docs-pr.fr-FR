@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 46daf3ecd4c918196fa7a50f8e8869bdd54c945e
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: b5eb295e83e2a87a538201fe58c221f3f9400f97
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504812"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63714914"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -57,6 +57,9 @@ Avant d’activer les étiquettes de confidentialité pour les conteneurs et de 
 Une fois que vous avez activé et configuré des étiquettes de confidentialité pour les conteneurs, les utilisateurs peuvent également voir et appliquer des étiquettes de confidentialité aux sites d’équipe Microsoft, aux groupes Microsoft 365 et aux sites SharePoint. Par exemple, lorsque vous créez un nouveau site d’équipe à partir de SharePoint :
 
 ![Étiquette de confidentialité lors de la création d’un site d’équipe à partir de SharePoint.](../media/sensitivity-labels-new-team-site.png)
+
+> [!NOTE]
+> Les étiquettes de confidentialité pour les conteneurs prennent en charge les[canaux partagés Teams](/MicrosoftTeams/shared-channels), actuellement en préversion. Si une équipe a des canaux partagés, elle hérite automatiquement des paramètres d’étiquette de confidentialité de son équipe parente, et cette étiquette ne peut pas être supprimée ou remplacée par une autre étiquette.
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>Comment activer les étiquettes de confidentialité pour les conteneurs et synchroniser les étiquettes
 

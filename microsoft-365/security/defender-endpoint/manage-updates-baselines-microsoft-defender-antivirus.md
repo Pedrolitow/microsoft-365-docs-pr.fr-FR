@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/16/2022
+ms.date: 03/22/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: c6454704c6cabfd5136eeec565c3c57dca044250
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: c334a3829d28ad7b65f0f0db3bd9599570db8337
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526893"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716187"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 
@@ -668,6 +668,21 @@ Nous vous recommandons de mettre à jour vos images d’installation Windows 10 
 Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Windows images d’installation du système d’exploitation](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220321.1</summary>
+
+&ensp;Version du package **: 20220321.1**<br/>
+&ensp;Version de la plateforme **: 4.18.2202.4**<br/>
+&ensp;Version du moteur **: 1.1.19000.8**<br/>
+&ensp;Version de signature **: 1.351.337.0**<br/>
+
+### <a name="fixes"></a>Correctifs
+- Aucun
+
+### <a name="additional-information"></a>Informations supplémentaires
+- Aucun
+
+<br/>
+</details><details>
 <summary>20220305.1</summary>
 
 &ensp;Version du package **: 20220305.1**<br/>
@@ -691,7 +706,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.357.32.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -705,7 +720,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.355.1482.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -778,7 +793,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucune
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2107.02</summary>
@@ -789,10 +804,10 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.343.658.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucune
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2106.01</summary>
@@ -806,7 +821,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucune
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2105.01</summary>
@@ -820,7 +835,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucune
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2104.01</summary>
@@ -831,7 +846,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.335.232.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -845,7 +860,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.331.2302.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -859,10 +874,10 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.331.174.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucune
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2101.02</summary>
@@ -876,7 +891,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucune
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2012.01</summary>
@@ -901,7 +916,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.658.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Signatures Antivirus Microsoft Defender actualisées
@@ -915,7 +930,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.344.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -929,7 +944,7 @@ Pour plus d’informations, voir [Mise à jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.2216.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Ajout de la prise en charge Windows 10 images d’installation du système d’exploitation RS1 ou ultérieure.

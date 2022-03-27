@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: Découvrez comment déployer des équipes avec la protection des données hautement sensibles.
-ms.openlocfilehash: 053f92f0a3f7551d747c81b13b3832798c7e953c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 02b74d6f2a2e168f07a095207dcdc1bb6785aa8f
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312595"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63715210"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configurer des équipes avec la protection des données hautement sensibles
 
@@ -119,6 +119,10 @@ Pour restreindre la création d’un canal privé
 
 Vous pouvez également utiliser les [stratégies d’équipes](/MicrosoftTeams/teams-policies) pour contrôler qui peut créer des canaux privés.
 
+## <a name="shared-channel-settings"></a>Paramètres de canal partagé
+
+Les[canaux partagés](/MicrosoftTeams/shared-channels) n’ont pas de paramètres au niveau de l’équipe. Les paramètres de canal partagé que vous configurez dans le Centre d’administration Teams et Azure AD seront disponibles pour toutes les équipes, quel que soit le niveau de confidentialité.
+
 ## <a name="sharepoint-settings"></a>Paramètres de SharePoint
 
 Chaque fois que vous créez une équipe avec une étiquette de haute confidentialité, vous devez procéder de deux étapes dans SharePoint :
@@ -136,9 +140,7 @@ Pour mettre à jour le type de lien de partage par défaut du site
 1. Sous Type de lien de partage par défaut, désactivez la case à cocher **Identique au paramètre de niveau organisation**, puis sélectionnez **Personnes disposant d’un accès existant**.
 1. Sélectionnez **Enregistrer**.
 
-#### <a name="private-channels"></a>Canaux privés
-
-Si vous ajoutez des canaux privés à l’équipe, chaque canal privé crée un site SharePoint avec les paramètres de partage par défaut. Ces sites ne sont pas visibles dans le Centre d’administration SharePoint. vous devez donc utiliser l’applet de commande PowerShell SPOSite pour mettre à jour les paramètres de partage d’invités.
+Notez que si vous ajoutez des canaux privés ou partagés à l’équipe, chacun crée un site SharePoint avec les paramètres de partage par défaut. Vous pouvez les mettre à jour dans le Centre d’administration SharePoint en sélectionnant les sites associés à l’équipe.
 
 ### <a name="site-sharing-settings"></a>Paramètres de partage de site
 

@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b251789795cbb55cd5d79dc686449e4c87aa6f9f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4a2b68e3e85b2c621a002ce762b7ec59ce31c891
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316126"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712749"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Lorsque vous avez [publié](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) des étiquettes de niveau de confidentialité du Centre de conformité ou du Centre d’étiquettes équivalent Microsoft 365, elles commencent à apparaître dans les applications Office pour que les utilisateurs classifient et protègent les données dès qu’elles sont créées ou modifiées.
 
@@ -75,7 +75,7 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 |[Audit de l’activité des utilisateurs liée à une étiquette](#auditing-labeling-activities)                      | Canal actuel : 2011+ <br /><br> Canal Entreprise mensuel : 2011+ <br /><br> Canal d’entreprise semestriel | 16.43+ | 2.46+ | 16.0.13628+ | Oui |
 |[Demander aux utilisateurs d'appliquer une étiquette à leurs e-mails et documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Canal actuel : 2101+ <br /><br> Canal Entreprise mensuel : 2101+ <br /><br> Canal d’entreprise semestriel | 16.45+         | 2.47+ | 16.0.13628+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de types d’informations sensibles                    | Canal actuel : 2009+ <br /><br> Canal Enterprise mensuel : 2009+ <br /><br> Semi-Annual Enterprise canal : 2102+ | 16.44+ | En cours de révision | En cours de révision | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de classifieurs pouvant être formés                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2018+ | 16.49+ | En cours de révision | En cours de révision | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de classifieurs pouvant être formés                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.49+ | En cours de révision | En cours de révision | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Prise en charge de la co-édition et de l'enregistrement automatique](sensitivity-labels-coauthoring.md) pour les documents étiquetés et chiffrés | Canal actuel : 2107+ <br /><br> Canal mensuel des entreprises : 2107+ <br /><br> Canal d’entreprise semi-annuel : 2202+ |  16.51+ | Aperçu : 2.58+ lorsque vous [Inclure](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | Aperçu : 16.0.14931+ lorsque vous [Inclure](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 
 
@@ -98,7 +98,7 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 |[Permettre aux utilisateurs d’attribuer des autorisations : <br /> – Ne pas transférer](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Canal actuel : 1910+ <br /><br> Canal Entreprise mensuel : 1910+ <br /><br> Semi-Annual Enterprise canal : 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Oui               |
 |[Permettre aux utilisateurs d’attribuer des autorisations : <br /> – Chiffrer uniquement](encryption-sensitivity-labels.md#let-users-assign-permissions)  | Canal actuel : 2011+ <br /><br> Canal Entreprise mensuel : 2011+ <br /><br> Canal d’entreprise semestriel | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | Oui |
 |[Demander aux utilisateurs d'appliquer une étiquette à leurs e-mails et documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Canal actuel : 2101+ <br /><br> Canal Entreprise mensuel : 2101+ <br /><br> Canal d’entreprise semestriel | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Oui                |
-|[Audit de l’activité des utilisateurs liée à une étiquette](#auditing-labeling-activities) | Canal actuel : 2011+ <br /><br> Canal Entreprise mensuel : 2011+ <br /><br> Canal d’entreprise semi-annuel : 2202+ | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | Oui |
+|[Audit de l’activité des utilisateurs liée à une étiquette](#auditing-labeling-activities) | Canal actuel : 2011+ <br /><br> Canal Entreprise mensuel : 2011+ <br /><br> Canal Entreprise semestriel : 2022+ | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | Oui |
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de types d’informations sensibles                    | Canal actuel : 2009+ <br /><br> Canal Enterprise mensuel : 2009+ <br /><br> Semi-Annual Enterprise canal : 2102+ | 16.44+ <sup>\*</sup>                    | En cours de révision           | En cours de révision               | Oui |
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de classifieurs pouvant être formés                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.49+ | En cours de révision           | En cours de révision               | Oui |
 |[Paramètres différents pour l’étiquette par défaut et l’étiquette obligatoire](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Oui |

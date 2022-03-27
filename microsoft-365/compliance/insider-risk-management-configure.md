@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: e21d2904ec2afdcd57b69267f99af6a0726dca56
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cdd368e7e78458067b9f363d41f7931ac5a2c0cd
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314628"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754204"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -50,7 +50,7 @@ Si vous n’avez pas de plan Microsoft 365 Entreprise E5 et que vous souhaitez e
 
 ## <a name="recommended-actions-preview"></a>Actions recommandées (aperçu)
 
-Les actions recommandées peuvent aider votre organisation à démarrer rapidement et à utiliser au mieux les fonctionnalités de gestion des risques internes. Incluses dans **la page Vue** d’ensemble, les actions recommandées vous aident à suivre les étapes de configuration et de déploiement des stratégies et à prendre des mesures d’investigation pour les actions des utilisateurs qui génèrent des alertes à partir de correspondances de stratégie.
+Les actions recommandées peuvent aider votre organisation à gérer rapidement les risques internes. Incluses dans la page **Vue d’ensemble** , les actions recommandées vous guident tout au long des étapes de configuration et de déploiement des stratégies.
 
 ![Actions recommandées par la gestion des risques internes.](../media/insider-risk-recommended-actions.png)
 
@@ -62,9 +62,6 @@ Les recommandations suivantes sont disponibles pour vous aider à démarrer ou �
 - **Recherchez les risques internes potentiels** : exécutez une analyse pour découvrir les risques internes potentiels qui se produisent dans votre organisation. Après avoir évalué les résultats, examinez les stratégies recommandées à configurer.
 - **Attribuer des autorisations** à d’autres personnes : si d’autres membres de l’équipe sont chargés de gérer les fonctionnalités de risque internes, vous devez les attribuer aux groupes de rôles appropriés.
 - Créez votre première stratégie : pour recevoir des alertes sur les activités potentiellement risquées, vous devez configurer des stratégies basées sur des modèles prédéfinie qui définissent les activités utilisateur que vous souhaitez détecter et examiner.
-- Passer en revue l’utilisateur dont l’activité  est en cours d’évaluation : le tableau de bord Utilisateurs vous permet d’afficher les utilisateurs dont l’activité se voit attribuer des scores de risque, que cette activité a atteint ou non le seuil pour générer une alerte.
-- **Examiner les alertes** : après qu’un événement déclencheur s’est produit pour un utilisateur, les stratégies commencent à affecter des scores de risque à l’activité détectée. Si un score de risque atteint les seuils d’une stratégie, vous verrez une alerte contenant une répartition détaillée de toutes les activités en cours d’évaluation pour cet utilisateur.
-- **Examiner un cas :** les cas sont créés manuellement à partir d’alertes lorsque des recherches plus approfondies sont nécessaires pour identifier les risques internes potentiels. Chaque cas est étendue à un seul utilisateur et plusieurs alertes de l’utilisateur peuvent être ajoutées à un cas existant ou à un nouveau cas.
 
 Chaque action recommandée incluse dans cette expérience possède quatre attributs :
 
@@ -319,7 +316,7 @@ Les stratégies de gestion des risques internes incluent les utilisateurs attrib
 22. Sélectionnez **Suivant** pour continuer.
 23. Sur la page **Évaluation**, examinez les paramètres choisis pour la stratégie et toute suggestion ou tout avertissement pour vos sélections. Sélectionnez **Modifier** pour changer toute valeur de stratégie ou **Soumettre** pour créer et activer la stratégie.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Après avoir effectué ces étapes pour créer votre première stratégie de gestion des risques internes, vous commencerez à recevoir des alertes des indicateurs d’activité après environ 24 heures. Configurez des stratégies supplémentaires selon vos besoins à l’aide des instructions de l’étape 4 de cet article ou des étapes de création [d’une stratégie de risque interne](insider-risk-management-policies.md#create-a-new-policy).
 

@@ -21,25 +21,29 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: ce75fff753acfa9d5e183154e09805b04d7523da
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 41583a89abc3418799263dc46643fbe06a07e818
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321432"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712837"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **S’applique à :**
+
 - Microsoft 365 Defender
+
+>[!Note]
+>Cet article décrit les alertes de sécurité dans Microsoft 365 Defender. Toutefois, vous pouvez utiliser des alertes d’activité pour envoyer des notifications par courrier électronique à vous-même ou à d’autres administrateurs lorsque les utilisateurs effectuent des activités spécifiques dans Microsoft 365. Pour plus d’informations, voir [Créer des alertes d’activité - Microsoft 365 conformité | Microsoft Docs](../../compliance/create-activity-alerts.md).
 
 Les alertes sont la base de tous les incidents et indiquent l’occurrence d’événements malveillants ou suspects dans votre environnement. Les alertes font généralement partie d’une attaque plus large et fournissent des indices sur un incident.
 
-Dans Microsoft 365 Defender, les alertes associées sont regroupées pour former des [incidents](incidents-overview.md). Les incidents fournissent toujours le contexte plus large d’une attaque, mais l’analyse des alertes peut être utile lorsque des analyses plus approfondies sont nécessaires. 
+Dans Microsoft 365 Defender, les alertes associées sont regroupées pour former des [incidents](incidents-overview.md). Les incidents fournissent toujours le contexte plus large d’une attaque, mais l’analyse des alertes peut être utile lorsque des analyses plus approfondies sont nécessaires.
 
-La **file d’attente Alertes** affiche l’ensemble actuel des alertes. Vous arrivez à la file d’attente des **alertes à partir d’incidents & alertes > alertes** sur le lancement rapide du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender web</a>.
+La **file d’attente Alertes** affiche l’ensemble actuel des alertes. Vous arrivez à la file d’attente des **alertes à partir d’incidents & alertes > alertes** sur le lancement rapide du [portail Microsoft 365 Defender web](https://go.microsoft.com/fwlink/p/?linkid=2077139).
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Exemple de file d’attente d’alertes dans le Microsoft 365 Defender web":::
 
@@ -54,7 +58,7 @@ Dans la file d’attente des alertes par défaut, vous pouvez  sélectionner **F
 Vous pouvez filtrer les alertes en fonction de ces critères :
 
 - Severity
-- Statut
+- État
 - Sources de service
 - Entités (les biens touchés)
 - État d’examen automatisé
@@ -108,7 +112,7 @@ Microsoft 365 Defender alertes peuvent être issues de solutions telles que Micr
 | :---|:--- |
 | Microsoft Defender pour Office 365 | `fa{GUID}` <br> Exemple : `fa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender pour point de terminaison | `da` ou pour `ed` les alertes de détection personnalisées <br> |
-| Microsoft Defender pour l’identité | `aa{GUID}` <br> Exemple : `aa123a456b-c789-1d2e-12f1g33h445h6i` |
+| Microsoft Defender pour Identity | `aa{GUID}` <br> Exemple : `aa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender for Cloud Apps |`ca{GUID}` <br> Exemple : `ca123a456b-c789-1d2e-12f1g33h445h6i` |
 
 ### <a name="analyze-affected-assets"></a>Analyser les ressources affectées
@@ -204,7 +208,7 @@ Pour obtenir un processus détaillé pas à pas, regardez la vidéo [ici](https:
 
 Cette vidéo décrit également comment connecter l’automatisation de l’alimentation à Defender pour les applications cloud.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si nécessaire pour les incidents in-process, poursuivez votre [enquête](investigate-incidents.md).
 
