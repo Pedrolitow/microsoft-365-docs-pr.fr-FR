@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, obtenez de l’aide pour résoudre les problèmes et les messages d’erreur.
-ms.openlocfilehash: 49e6657815ed71476a3dc79d778f7e1fbacfa1f4
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 957177dd20817f9b3d5fbc378f22b19eeaef1f7f
+ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775453"
+ms.locfileid: "64403674"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>Résoudre les problèmes et les messages d’erreur dans Microsoft 365 Lighthouse
 
@@ -53,7 +53,7 @@ Cet article décrit les messages d’erreur et les problèmes que vous pouvez re
 
 **Cause :** Les locataires de vos clients ne répondent pas aux critères suivants :
 
-  - Doit avoir délégué (DAP) pour que le fournisseur de services gérés (MSP) puisse gérer le client client*
+  - Doit avoir délégué (DAP) pour que le fournisseur de services gérés (MSP) puisse gérer le client*
   - Doit avoir au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3 ou une licence Windows 365 Entreprise
   - Ne doit pas avoir plus de 1 000 utilisateurs sous licence 
 
@@ -62,7 +62,7 @@ Cet article décrit les messages d’erreur et les problèmes que vous pouvez re
 *Des privilèges d’administration délégués (DAP) sont requis pour intégrer des clients à l’entreprise. Nous vous recommandons également d’établir des privilèges d’administration délégués granulaires (GDAP) avec vos clients pour permettre un accès délégué plus sécurisé. Bien que DAP et GDAP coexistent, GDAP est prioritaire pour les clients où les deux modèles sont en place. Bientôt, les clients  ayant uniquement GDAP (et pas de DAP) pourront intégrer le groupe.<br><br>
 
 
-| État | Description | Résolution |
+| Statut | Description | Résolution |
 |--|--|--|
 | Inactif | Le client a été mis hors carte à la demande du MSP et n’est plus géré dans le Groupement. | Vous devez réactiver le client. Dans la page **Locataires** , sélectionnez les trois points (autres actions) en côté du client que vous souhaitez réactiver, puis sélectionnez **Activer le client**. Il faut entre 24 et 48 heures pour que les données initiales du client apparaissent dans le Groupement. |
 | Inéligible - DAP ou GDAP n’est pas installé | Vous n’avez pas de privilèges d’administrateur DAP ou GDAP mis en place avec le client, ce qui est requis par le Propriétaire. | Configurer des privilèges d’administrateur DAP ou GDAP dans l’Microsoft Partner Center. |

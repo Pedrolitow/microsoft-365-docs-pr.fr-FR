@@ -342,7 +342,7 @@
               href: customize-a-built-in-sensitive-information-type.md
             - name: Modifier le schéma de correspondance des données exactes pour utiliser la correspondance configurable
               href: sit-modify-edm-schema-configurable-match.md
-            - name: Créer des notifications pour les activités de correspondance de données exactes (aperçu)
+            - name: Créer des notifications pour les activités de correspondance de données exactes
               href: sit-edm-notifications-activities.md
             - name: Gérer les types d’informations sensibles personnalisés dans le Centre de conformité
               href: sit-manage-custom-sits-compliance-center.md
@@ -517,6 +517,8 @@
               href: dlp-policy-reference.md
         - name: Prise en main de la protection contre la perte de données
           items:
+            - name: Configurer les paramètres de protection contre la perte de données de point de terminaison
+              href: dlp-configure-endpoint-settings.md
             - name: Prise en main de la stratégie DLP par défaut
               href: get-started-with-the-default-dlp-policy.md
             - name: Création d’une stratégie DLP à partir d’un modèle
@@ -533,6 +535,8 @@
               href: dlp-chrome-get-started.md
             - name: Prise en main du tableau de bord des alertes de protection contre la perte de données
               href: dlp-alerts-dashboard-get-started.md
+            - name: Démarrage avec des stratégies de protection contre la perte de données pour Power BI (préversion)
+              href: dlp-powerbi-get-started.md
         - name: Utiliser la DLP
           items:
             - name: DLP et Microsoft Teams

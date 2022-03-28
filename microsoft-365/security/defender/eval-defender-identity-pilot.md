@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3801fdb4a7aeda5e75c4e36f622f7e76604d96a6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: bba910b46c4b4769e67ae00af0381e129139dfe5
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318730"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754557"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Pilote Microsoft Defender pour l’identité
 
@@ -38,7 +38,7 @@ Cet article est [l’étape 3 sur 3 dans](eval-defender-identity-overview.md) le
 
 Utilisez les étapes suivantes pour configurer et configurer le pilote pour Microsoft Defender pour l’identité. Notez que les recommandations n’incluent pas la configuration d’un groupe pilote. La meilleure pratique consiste à installer le capteur sur tous vos serveurs exécutant les services de domaine Active Directory (AD DS) et les services AD FS (Active Directory Federated Services).
 
-![Étapes d’ajout de Microsoft Defender for Identity à l’environnement d’évaluation Defender.](../../media/defender/m365-defender-identity-pilot-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-identity-pilot-steps.png" alt-text="Étapes de pilotage de Microsoft Defender pour l’identité dans l’environnement d’évaluation de Microsoft Defender" lightbox="../../media/defender/m365-defender-identity-pilot-steps.png":::
 
 Le tableau suivant décrit les étapes de l’illustration.
 
@@ -66,7 +66,7 @@ Essayez les didacticiels Defender pour l’identité :
 - [Enquêter sur les chemins de déplacement latéral](/defender-for-identity/investigate-lateral-movement-path)
 - [Examiner des entités](/defender-for-identity/investigate-entity)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 [Évaluer Microsoft Defender pour Office 365](eval-defender-office-365-overview.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Diffuser en continu des événements Microsoft Defender for Endpoint à votre Stockage client
+title: Diffuser des événements Microsoft Defender for Endpoint vers votre compte Stockage de données
 description: Découvrez comment configurer Microsoft Defender pour le point de terminaison pour diffuser des événements de recherche avancée vers Stockage compte.
 keywords: exportation de données brutes, API de diffusion en continu, API, Hubs d’événements, stockage Azure, compte de stockage, recherche avancée, partage de données brutes
 ms.prod: m365-security
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: a9db98456cc971b4ac4179cd4f3460dfe2137b91
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 77220c8e34cfcbcdb6b1ca527786696bb67e5d79
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156248"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465777"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurer Microsoft Defender pour le point de terminaison pour diffuser des événements de recherche avancée vers Stockage compte
 
@@ -36,31 +36,31 @@ ms.locfileid: "62156248"
 
 1. Créez [un Stockage dans](/azure/storage/common/storage-account-overview) votre client.
 
-2. Connectez-vous à votre client [Azure,](https://ms.portal.azure.com/)allez à Abonnements > Votre abonnement > fournisseurs de ressources **> s’inscrire à Microsoft.insights**.
+2. Connectez-vous à [votre client Azure](https://ms.portal.azure.com/), > Abonnements > fournisseurs de ressources > **s’inscrire à Microsoft.insights**.
 
 ## <a name="enable-raw-data-streaming"></a>Activer la diffusion en continu des données brutes
 
-1. Connectez-vous [Microsoft 365 Defender](https://security.microsoft.com) en tant **qu’administrateur** général * ou _* Administrateur de _sécurité_**.
+1. Connectez-vous [Microsoft 365 Defender](https://security.microsoft.com) en **tant qu’administrateur** général ou _*_administrateur de_ sécurité**.
 
 2. Go to [Data export settings page](https://security.microsoft.com/interoperability/dataexport) in Microsoft 365 Defender.
 
-3. Cliquez sur **Ajouter des paramètres d’exportation de données.**
+3. Cliquez sur **Ajouter des paramètres d’exportation de données**.
 
 4. Choisissez un nom pour vos nouveaux paramètres.
 
-5. Choose **Forward events to stockage Azure**.
+5. **Sélectionnez Les événements Forward à stockage Azure**.
 
-6. Tapez votre **ID Stockage de ressource de compte.** Pour obtenir votre ID de ressource de compte **Stockage,** go to your Stockage account page on [Azure portal](https://ms.portal.azure.com/) properties tab copy the text under Stockage account resource \> \> **ID:**
+6. Tapez votre **ID Stockage de compte de compte.** Pour obtenir votre **ID** de ressource de compte Stockage, go to your Stockage account page on [Azure portal](https://ms.portal.azure.com/) \> properties tab \> copy the text under **Stockage account resource ID**:
 
-   :::image type="content" alt-text="Image de l’ID1 de ressource du hub d’événements." source="images/storage-account-resource-id.png" lightbox="images/storage-account-resource-id.png":::
+   :::image type="content" source="images/storage-account-resource-id.png" alt-text="Hubs d’événements avec ID1 de ressource" lightbox="images/storage-account-resource-id.png":::
 
-7. Choisissez les événements que vous souhaitez diffuser en continu, puis cliquez sur **Enregistrer.**
+7. Choisissez les événements que vous souhaitez diffuser en continu, puis cliquez sur **Enregistrer**.
 
 ## <a name="the-schema-of-the-events-in-the-storage-account"></a>Schéma des événements dans le compte Stockage client
 
 - Un conteneur d’objets blob est créé pour chaque type d’événement :
 
-  :::image type="content" alt-text="Image de l’ID2 de ressource du hub d’événements." source="images/storage-account-event-schema.png" lightbox="images/storage-account-event-schema.png":::
+  :::image type="content" source="images/storage-account-event-schema.png" alt-text="Hubs d’événements avec ID2 de ressource" lightbox="images/storage-account-event-schema.png":::
 
 - Le schéma de chaque ligne d’un objet blob est le JSON suivant :
 
@@ -77,15 +77,15 @@ ms.locfileid: "62156248"
 
 - Chaque ligne contient le nom de l’événement, le moment où Defender pour le point de terminaison a reçu l’événement, le client qu’il appartient (vous recevez uniquement les événements de votre client) et l’événement au format JSON dans une propriété appelée « properties ».
 
-- Pour plus d’informations sur le schéma des événements De Microsoft Defender pour point de [terminaison, voir vue d’ensemble de la recherche avancée.](advanced-hunting-overview.md)
+- Pour plus d’informations sur le schéma des événements Microsoft Defender for Endpoint, consultez [la vue d’ensemble de la recherche avancée](advanced-hunting-overview.md).
 
-- Dans la recherche avancée, la table **DeviceInfo** comporte une colonne nommée **MachineGroup** qui contient le groupe de l’appareil. Ici, chaque événement est également décorée avec cette colonne. Pour plus [d’informations,](machine-groups.md) voir Groupes d’appareils.
+- Dans la recherche avancée, la table **DeviceInfo** comporte une colonne nommée **MachineGroup** qui contient le groupe de l’appareil. Ici, chaque événement est également décorée avec cette colonne. Pour plus [d’informations](machine-groups.md) , voir Groupes d’appareils.
 
 ## <a name="data-types-mapping"></a>Mappage des types de données
 
 Pour obtenir les types de données pour nos propriétés d’événements, vous pouvez :
 
-1. Connectez-vous [Microsoft 365 Defender](https://security.microsoft.com) et allez à la [page Recherche avancée.](https://security.microsoft.com/hunting-package)
+1. Connectez-vous [Microsoft 365 Defender](https://security.microsoft.com) et allez à la [page Recherche avancée](https://security.microsoft.com/hunting-package).
 
 2. Exécutez la requête suivante pour obtenir le mappage des types de données pour chaque événement :
 
@@ -97,9 +97,9 @@ Pour obtenir les types de données pour nos propriétés d’événements, vous 
 
 - Voici un exemple d’événement Device Info :
 
-  ![Image de l’ID3 de ressource du hub d’événements.](images/data-types-mapping-query.png)
+  :::image type="content" source="images/data-types-mapping-query.png" alt-text="Hubs d’événements avec ID3 de ressource" lightbox="images/data-types-mapping-query.png":::
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Vue d’ensemble du chasse avancée](advanced-hunting-overview.md)
 - [API de diffusion en continu De Microsoft Defender pour les points de terminaison](raw-data-export.md)

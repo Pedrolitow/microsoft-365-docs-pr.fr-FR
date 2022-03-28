@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: f80ab9fcb0a3e057a20c22ff05c3a960cdf7eab4
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 4b14f2def771294bdfa05109d6060242736f26d5
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512933"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754709"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Prise en charge des paramètres de gestion des risques internes
 
@@ -576,11 +576,15 @@ Pour désactiver l’analyse des risques internes, complétez les étapes suivan
 
 ## <a name="admin-notifications"></a>Notifications de l’administrateur
 
-Les notifications d’administrateur envoient automatiquement une notification par courrier électronique aux utilisateurs inclus dans les groupes de rôles Insider *Risk Management*, *Insider Risk Management Analysts* et *Insider Risk Management Investigators* lorsque la première alerte est générée pour une nouvelle stratégie. Cette option est activée par défaut pour toutes les organisations et les stratégies sont vérifiées toutes les 24 heures pour les alertes de première heure. Les notifications ne sont pas envoyées pour les alertes qui se produisent dans les stratégies après la première alerte.
+Les notifications d’administrateur envoient automatiquement une notification par courrier électronique aux groupes de rôles de gestion des risques internes sélectionnables. Vous pouvez activer les notifications et attribuer les groupes de rôles qui recevront les notifications pour les scénarios suivants :
+
+- Envoyez un e-mail de notification lorsque la première alerte est générée pour une nouvelle stratégie. Les stratégies sont vérifiées toutes les 24 heures pour les alertes de première heure et les notifications ne sont pas envoyées sur les alertes suivantes pour la stratégie.
+- Envoyez un courrier électronique quotidien lorsque de nouvelles alertes de gravité élevée sont générées. Les stratégies sont vérifiées toutes les 24 heures pour les alertes de gravité élevée.
+- Envoyer un e-mail hebdomadaire résumant les stratégies qui ont des avertissements non résolus
 
 Si vous avez activé l’analyse de la gestion des risques internes pour votre organisation,  les membres du groupe de rôles Administrateur de la gestion des risques internes reçoivent automatiquement une notification par courrier électronique pour obtenir des informations d’analyse initiales sur les fuites de données, le vol et les activités d’exfiltration.
 
-Si vous préférez désactiver les notifications d’administrateur, complétez les étapes suivantes :
+Si vous préférez désactiver les notifications d’administration et d’analyse, complétez les étapes suivantes :
 
 1. Dans la [Centre de conformité Microsoft 365](https://compliance.microsoft.com), allez aux paramètres de risque **Insider Risk** **managementInsider** > .
 2. Sélectionnez la page **Notifications de l’administrateur** .
@@ -590,5 +594,3 @@ Si vous préférez désactiver les notifications d’administrateur, complétez 
     - **Envoyer une notification par courrier électronique lorsque l’analyse est désactivée**
 
 4. **Sélectionnez Enregistrer** pour configurer et quitter.
-
-![Paramètres de notifications de l’administrateur de la gestion des risques internes.](../media/insider-risk-admin-notifications.png)

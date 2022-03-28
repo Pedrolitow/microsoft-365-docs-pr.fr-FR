@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 65df8553f5ee3b7dd7876557398e0d4aa22c7bd5
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b0b94e4905a780be9a608c8e91967b47a4db7160
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323522"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465748"
 ---
 # <a name="create-and-manage-device-tags"></a>Créer et gérer des balises d’appareils
 
@@ -56,11 +56,12 @@ Pour ajouter des balises d’appareil à l’aide de l’API, consultez [Ajouter
 
 2. **Sélectionnez Gérer les balises** dans la ligne des actions de réponse.
 
-    :::image type="content" alt-text="Image du bouton Gérer les balises." source="images/manage-tags-option.png":::
+    :::image type="content" source="images/manage-tags-option.png" alt-text="Image du bouton Gérer les balises" lightbox="images/manage-tags-option.png":::
+    
 
 3. Tapez pour rechercher ou créer des balises
 
-    :::image type="content" alt-text="Image de l’ajout de balises sur un appareil1." source="images/create-new-tag.png":::
+    :::image type="content" source="images/create-new-tag.png" alt-text="Ajout de balises sur device1" lightbox="images/create-new-tag.png":::
 
 Les balises sont ajoutées à l’affichage appareil et sont également reflétées dans l’affichage **d’inventaire** des appareils. Vous pouvez ensuite utiliser le filtre **Balises** pour voir la liste des appareils appropriés.
 
@@ -71,7 +72,7 @@ Les balises sont ajoutées à l’affichage appareil et sont également reflét�
 
 Vous pouvez également supprimer des balises de cet affichage.
 
-:::image type="content" alt-text="Image de l’ajout de balises sur un appareil2." source="images/new-tag-label-display.png":::
+:::image type="content" source="images/new-tag-label-display.png" alt-text="Ajout de balises sur device2" lightbox="images/new-tag-label-display.png":::
 
 ## <a name="add-device-tags-by-setting-a-registry-key-value"></a>Ajouter des balises d’appareil en définition d’une valeur de clé de Registre
 
@@ -81,7 +82,7 @@ Vous pouvez également supprimer des balises de cet affichage.
 > - Windows 11
 > - Windows 10, version 1709 ou ultérieure
 > - Windows Server, version 1803 ou ultérieure
-> - Windows Server 2016
+> - Windows Server 2016
 > - Windows Server 2012 R2
 > - Windows Server 2008 R2 SP1
 > - Windows 8.1

@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: En savoir plus sur l’intégration d’appareils macOS dans des solutions de conformité
-ms.openlocfilehash: 93a930f13a17c19c3ff7209295ddada648b9575a
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 783179ae749ac7cd6de671435927ba5bbdbdacad
+ms.sourcegitcommit: 9d563faeaa50b59b0b468dbb373d886e5270f58e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526567"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64387012"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview-preview"></a>Intégration des appareils macOS dans la vue d'ensemble de Microsoft 365 (aperçu)
 
@@ -27,14 +27,14 @@ Les appareils MacOS peuvent être intégrés à des solutions Microsoft 365 conf
 
 **S’applique à :**
 
-- [Protection contre la perte de données de point de terminaison (DLP) pour Microsoft 365](./endpoint-dlp-learn-about.md)
+- [Protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
 - [Gestion des risques internes](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
 Avant de commencer avec endpoint DLP sur les appareils macOS (Contrôle 10.15 ou ultérieur), vous devez vous familiariser avec les articles suivants :
 
-- [Découvrir la protection contre la perte de données des point de terminaison de Microsoft 365](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
+- [Découvrir la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
 - [Prise en main la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
 
 Si vous n’êtes pas du tout familiarisé avec la DLP, vous devez également vous familiariser avec les articles suivants :
@@ -87,12 +87,9 @@ Lorsque vous voulez intégrer des appareils qui n’ont pas encore été intégr
    > [!NOTE]
    > Bien que l’activation de l’intégration des appareils dure généralement environ 60 secondes, patientez jusqu’à 30 minutes avant de contacter le support Microsoft.
 
-2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Appareils intégrés**.
+2. Ouvrez la page paramètres du Centre de conformité et **sélectionnez Activer la surveillance des appareils macOS**.
 
-   > [!div class="mx-imgBorder"]
-   > ![activer la gestion des appareils.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
-
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 L’intégration d’appareils Microsoft 365 solutions de conformité est nécessaire pour recevoir la télémétrie du capteur DLP et appliquer des stratégies de protection contre la perte de données. 
 
@@ -106,5 +103,5 @@ Rubrique | Description
 
 ## <a name="related-topics"></a>Sujets associés
 
-- [Utilisation de la prévention des pertes de données sur les points de terminaison](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
+- [Utilisation des points de terminaison protection contre la perte de données](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
 - [Matrice de prise en charge des conseils de stratégie DLP dans les applications Microsoft](dlp-policy-tips-reference.md#support-matrix-for-dlp-policy-tips-across-microsoft-apps)

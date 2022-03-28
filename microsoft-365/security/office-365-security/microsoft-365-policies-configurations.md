@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-zero-trust
 ms.technology: mdo
-ms.openlocfilehash: abfd2603d4b374899ba3ff17d1be977043c5d5ab
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c8bf111acd41ede8a493672234de4e4a33ccd105
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313032"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775849"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>Configurations des identités Zéro confiance et de l’accès aux appareils
 
@@ -39,7 +39,7 @@ Pour faire face à ce nouveau monde de l’informatique, Microsoft recommande vi
 
 - Utiliser l’accès selon le privilège minimum
 
-  Limitez l’accès des utilisateurs avec un accès juste-à-temps et juste-suffisant (JIT/JEA), des stratégies adaptatives basées sur les risques et la protection des données.  
+  Limitez l’accès des utilisateurs avec un accès juste-à-temps et juste-suffisant (JIT/JEA), des stratégies adaptatives basées sur les risques et la protection des données.
 
 - Supposer une violation
 
@@ -157,7 +157,6 @@ Azure AD offre une suite complète de fonctionnalités de gestion des identités
 |[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|Vous permet de détecter les vulnérabilités potentielles affectant les identités de votre organisation et de configurer une stratégie de correction automatisée en cas de risque de communication faible, moyen et élevé, ainsi que de risque pour l’utilisateur. Ces instructions s’appuient sur cette évaluation des risques pour appliquer des stratégies d’accès conditionnel pour l’authentification multifacteur. Ces instructions incluent également une stratégie d’accès conditionnel qui oblige les utilisateurs à modifier leur mot de passe si une activité à risque élevé est détectée pour leur compte.|Microsoft 365 E5, Microsoft 365 E3 avec le module de sécurité E5, EMS E5 ou Azure AD Premium P2 licences|
 |[Réinitialisation du mot de passe en libre-service (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|Autorisez vos utilisateurs à réinitialiser leurs mots de passe en toute sécurité et sans intervention du service d’aide, en fournissant la vérification de plusieurs méthodes d’authentification que l’administrateur peut contrôler.|Microsoft 365 E3 ou E5|
 |[Azure AD protection par mot de passe](/azure/active-directory/authentication/concept-password-ban-bad)|Détectez et bloquez les mots de passe faibles connus, leurs variantes et d’autres termes faibles propres à votre organisation. Les listes générales par défaut de mots de passe interdits sont automatiquement appliquées à tous les utilisateurs d’un client Azure AD. Vous pouvez définir d’autres entrées dans une liste personnalisée de mots de passe interdits. Lorsque les utilisateurs modifient ou réinitialisent leurs mots de passe, ces listes sont vérifiées de façon à garantir l’utilisation de mots de passe forts.|Microsoft 365 E3 ou E5|
-|
 
 Voici les composants de l’accès aux appareils et aux identités de confiance zéro, notamment Intune et Azure AD objets, paramètres et sous-services.
 
@@ -199,7 +198,6 @@ Le tableau suivant récapitule nos recommandations pour l’utilisation de ces f
 |**Appliquer la modification du mot de passe**|Pour les utilisateurs à risque élevé|Pour les utilisateurs à risque élevé|Pour les utilisateurs à risque élevé|
 |**Appliquer la protection des applications Intune**|Oui|Oui|Oui|
 |**Appliquer l’inscription Intune pour l’appareil dont l’organisation est propriétaire**|Exiger un PC conforme ou joint à un domaine, mais autoriser les téléphones et tablettes BYOD (Bring-your-own devices)|Exiger un appareil conforme ou joint à un domaine|Exiger un appareil conforme ou joint à un domaine|
-|
 
 ## <a name="device-ownership"></a>Propriété des appareils
 

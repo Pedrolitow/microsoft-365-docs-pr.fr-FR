@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Cet article contient des informations de référence sur l’outil eDiscovery de recherche de contenu dans le Centre de conformité Microsoft 365 pour vous aider à en savoir plus sur la recherche de contenu.
-ms.openlocfilehash: 0688f3119b500f8e11675aa101d92942a3063e8b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3f2918c378d94fd65d4a89afed50957a2da40a7d
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175406"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716373"
 ---
 # <a name="feature-reference-for-content-search"></a>Référence des fonctionnalités pour la recherche du contenu
 
@@ -80,7 +80,7 @@ Gardez les points suivants à l’esprit lors de la recherche de contenu dans le
 
 - Pour rechercher du contenu se trouvant dans Teams et Groupes Microsoft 365, vous devez spécifier la boîte aux lettres et le site SharePoint qui sont associés à une équipe ou à un groupe.
 
-- Le contenu provenant de canaux privés est stocké dans la boîte aux lettres de chaque utilisateur, et non dans celle de l’équipe. Pour rechercher du contenu dans des canaux privés, voir [Découverte automatique des canaux privés](/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels).
+- Le contenu provenant de canaux privés est stocké dans la boîte aux lettres de chaque utilisateur, et non dans celle de l’équipe. Pour rechercher du contenu dans les canaux privés, affichez [eDiscovery des canaux privés et partagés](/microsoftteams/ediscovery-investigation#ediscovery-of-private-and-shared-channels).
 
 - Lancez le **cmdlet Get-UnifiedGroup** dans Exchange Online pour afficher les propriétés d'une équipe ou d'un groupe Microsoft 365. C'est un bon moyen d'obtenir l'URL du site qui est associé à une équipe ou à un groupe. Par exemple, la commande suivante affiche les propriétés sélectionnées pour un groupe Microsoft 365 nommé Senior Leadership Team :
 

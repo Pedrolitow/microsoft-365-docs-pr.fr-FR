@@ -19,13 +19,13 @@ ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
-description: Cet article explique comment configurer l’audit avancé afin que vous pouvez effectuer des enquêtes d’investigation lorsque des comptes d’utilisateur sont compromis ou pour enquêter sur d’autres incidents liés à la sécurité.
-ms.openlocfilehash: 34ae98eaafcc3eeb3d6a25a457f017999b8c6078
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Cet article explique comment configurer l’audit avancé afin de pouvoir effectuer des enquêtes d’investigation lorsque des comptes d’utilisateur sont compromis ou pour enquêter sur d’autres incidents liés à la sécurité.
+ms.openlocfilehash: dafe53161e04f28f2f5e4ff8dcfa71bab6c1a1f1
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192066"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754590"
 ---
 # <a name="set-up-advanced-audit-in-microsoft-365"></a>Configurer l’audit avancé dans Microsoft 365
 
@@ -37,11 +37,11 @@ Si votre organisation dispose d’un abonnement et d’une licence d’utilisate
 
 Les fonctionnalités d’audit avancées telles que la possibilité d’enregistrer des événements importants tels que MailItemsAccessed et envoyer nécessitent une licence E5 appropriée attribuée aux utilisateurs. De plus, l’application/plan de service d’audit avancé doit être activé pour ces utilisateurs. Pour vérifier que l’application d’audit avancée est attribuée aux utilisateurs, procédez comme suit pour chaque utilisateur :
 
-1. Dans la Centre d'administration Microsoft 365, sélectionnez **Utilisateurs** actifs  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank"></a>et sélectionnez un utilisateur.
+1. Dans la Centre d'administration Microsoft 365, sélectionnez **utilisateurs UsersActive** >  et sélectionnez un utilisateur.<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank"></a>
 
 2. Dans la page déroulante des propriétés de l’utilisateur, cliquez sur **Licences et applications**.
 
-3. Dans la section **Licences,** vérifiez qu’une licence E5 est attribuée à l’utilisateur ou qu’une licence de module add-on appropriée lui est attribuée. Pour obtenir la liste des licences qui la prise en charge de l’audit avancé, consultez [la liste des licences d’audit avancée requises.](auditing-solutions-overview.md#advanced-audit-1)
+3. Dans la section **Licences** , vérifiez qu’une licence E5 est attribuée à l’utilisateur ou qu’une licence de module add-on appropriée lui est attribuée. Pour obtenir la liste des licences qui prisent en charge l’audit avancé, consultez [la liste des licences d’audit avancé requises](auditing-solutions-overview.md#advanced-audit-1).
 
 4. Développez la section **Applications** et vérifiez que la case à cocher **Audit avancé Microsoft 365** est activée.
 
@@ -49,13 +49,11 @@ Les fonctionnalités d’audit avancées telles que la possibilité d’enregist
 
    La journalisation des enregistrements d’audit pour MailItemsAccessed et Send commence dans les 24 heures. Vous devez effectuer l’étape 3 pour démarrer la journalisation de deux autres événements d’audit avancé : SearchQueryInitiatedExchange et SearchQueryInitiatedSharePoint.
 
-Pour les organisations qui attribuent des licences à des groupes d’utilisateurs à l’aide d’une gestion de licences basée sur les groupes, vous devez désactiver l’attribution des licences pour Microsoft 365 audit avancé pour le groupe. Une fois que vous avez enregistré vos modifications, vérifiez que l’audit avancé Microsoft 365 est désactivé pour le groupe. Réactivez ensuite l’attribution des licences pour le groupe. Pour obtenir des instructions sur la gestion des licences basée sur les groupes, voir [Attribuer des licences aux utilisateurs par appartenance aux groupes dans Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign).
-
 En outre, si vous avez personnalisé les actions de boîte aux lettres qui sont enregistrées sur des boîtes aux lettres utilisateur ou des boîtes aux lettres partagées, les nouveaux événements d’audit avancé publiés par Microsoft ne seront pas automatiquement audités sur ces boîtes aux lettres. Pour plus d’informations sur la modification des actions de boîte aux lettres auditées pour chaque type de connexion, consultez la section « Modifier ou restaurer les actions de boîte aux lettres enregistrées par défaut » dans [Gérer l’audit de boîte aux lettres](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
 
 ## <a name="step-2-enable-advanced-audit-events"></a>Étape 2 : Activer les événements d’audit avancé
 
-Vous devez activer deux événements d’audit avancé (SearchQueryInitiatedExchange et SearchQueryInitiatedSharePoint) pour être enregistrés lorsque les utilisateurs effectuent des recherches dans Exchange Online et SharePoint Online. Pour permettre à ces deux événements d’être audités pour les utilisateurs, exécutez la commande suivante (pour chaque utilisateur) [dans Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
+Vous devez activer la journalité de deux événements d’audit avancé (SearchQueryInitiatedExchange et SearchQueryInitiatedSharePoint) lorsque les utilisateurs effectuent des recherches dans Exchange Online et SharePoint Online. Pour permettre à ces deux événements d’être audités pour les utilisateurs, exécutez la commande suivante (pour chaque utilisateur) [dans Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) :
 
 ```powershell
 Set-Mailbox <user> -AuditOwner @{Add="SearchQueryInitiated"}
@@ -67,7 +65,7 @@ Dans un environnement multigé géographique, vous devez exécuter la commande *
 Get-Mailbox <user identity> | FL MailboxLocations
 ```
 
-Si la commande permettant d’activer l’audit des requêtes de recherche a été précédemment exécuté dans une forêt différente de celle dans laquelle se trouve la boîte aux lettres de l’utilisateur, vous devez supprimer la valeur SearchQueryInitiated de la boîte aux lettres de l’utilisateur en l’exécutant, puis l’ajouter à la boîte aux lettres de l’utilisateur dans la forêt où se trouve la boîte aux lettres de `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}` l’utilisateur.
+Si la commande permettant d’activer l’audit des requêtes de recherche a été précédemment exécuté dans une forêt différente de celle dans laquelle se trouve la boîte aux lettres de l’utilisateur, vous devez supprimer la valeur SearchQueryInitiated de la boîte aux lettres de l’utilisateur en l’exécutant `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}` , puis l’ajouter à la boîte aux lettres de l’utilisateur dans la forêt où se trouve la boîte aux lettres de l’utilisateur.
 
 ## <a name="step-3-set-up-audit-retention-policies"></a>Étape 3 : Configurer des stratégies de rétention d’audit
 
@@ -75,4 +73,4 @@ En plus de la stratégie par défaut qui conserve les enregistrements d’audit 
 
 ## <a name="step-4-search-for-advanced-audit-events"></a>Étape 4 : Rechercher des événements d’audit avancés
 
-Maintenant que l’audit avancé est installé pour votre organisation, vous pouvez rechercher des événements d’audit avancés essentiels et d’autres activités lors de la conduite d’enquêtes légales. Après avoir effectué les étapes 1 et 2, vous pouvez rechercher dans le journal d’audit les événements d’audit avancés et d’autres activités pendant les enquêtes d’investigation des comptes compromis et d’autres types d’enquêtes de sécurité ou de conformité. Pour plus d’informations sur la conduite d’une investigation d’investigation d’utilisateurs compromis à l’aide de l’événement d’audit avancé MailItemsAccessed, voir [Utiliser l’audit](mailitemsaccessed-forensics-investigations.md)avancé pour examiner les comptes compromis.
+Maintenant que l’audit avancé est installé pour votre organisation, vous pouvez rechercher des événements d’audit avancés essentiels et d’autres activités lors de la conduite d’enquêtes légales. Après avoir effectué les étapes 1 et 2, vous pouvez rechercher dans le journal d’audit les événements d’audit avancés et d’autres activités pendant les enquêtes d’investigation de comptes compromis et d’autres types d’enquêtes de sécurité ou de conformité. Pour plus d’informations sur la conduite d’une investigation d’investigation d’utilisateurs compromis à l’aide de l’événement d’audit avancé MailItemsAccessed, voir [Utiliser l’audit](mailitemsaccessed-forensics-investigations.md) avancé pour examiner les comptes compromis.

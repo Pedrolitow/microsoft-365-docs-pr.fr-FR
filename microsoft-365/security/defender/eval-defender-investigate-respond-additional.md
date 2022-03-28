@@ -23,12 +23,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cc57c2b39466e84d5652ef60c56d6951fbe86714
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0ad2fc9a1566e7816b3ff806b7d07ac29347cc89
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324086"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754786"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Essayez d Microsoft 365 Defender fonctionnalités de réponse aux incidents dans un environnement pilote
 
@@ -51,7 +51,8 @@ Une fois que vous avez effectué une réponse [aux incidents](eval-defender-inve
 
 Vous pouvez vous rendre dans la file d’attente des **incidents à partir d’incidents & alertes > incidents** sur le lancement rapide du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender web</a>. Voici un exemple.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Exemple de file d’attente d’incident.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Section Incidents & alertes dans le portail Microsoft 365 Defender" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+
 
 La section **Incidents et alertes les plus récents** présente un graphique du nombre d’alertes reçues et d’incidents créés au cours des dernières 24 heures.
 
@@ -63,7 +64,7 @@ Pour examiner la liste des incidents et hiérarchiser leur importance pour l’a
 
 Dans la file d’attente des incidents par défaut, sélectionnez **Filtres** pour voir un volet **Filtres** , à partir duquel vous pouvez spécifier un ensemble spécifique d’incidents. Voici un exemple.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Exemple du volet filtres de la file d’attente des incidents.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Volet Filtres de la section Incidents & alertes dans le portail Microsoft 365 Defender" lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
 Pour plus d’informations, voir [Hiérarchiser les incidents](incident-queue.md).
 
@@ -71,7 +72,7 @@ Pour plus d’informations, voir [Hiérarchiser les incidents](incident-queue.md
 
 Vous pouvez gérer les incidents à partir du volet **Gérer les incidents** pour un incident. Voici un exemple.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Exemple du volet Gérer les incidents d’un incident.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Volet Gérer les incidents de la section Incidents & alertes dans le portail Microsoft 365 Defender" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
 
 Vous pouvez afficher ce volet à partir du lien **Gérer l’incident** sur :
 
@@ -112,11 +113,12 @@ Selon la façon dont les fonctionnalités d’examen et de réponse automatisée
 
 Voici un exemple.
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée Microsoft 365 Defender.":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée dans le portail Microsoft 365 Defender web" lightbox="../../media/m3d-action-center-unified.png":::
 
 Dans le centre de actions, vous pouvez sélectionner les actions en attente, puis les approuver ou les rejeter dans le volet volant. Voici un exemple.
 
-:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Approuver ou rejeter une action.":::
+:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Volet affichant les options d’approbation ou de rejet d’une action dans le portail Microsoft 365 Defender web" lightbox="../../media/air-actioncenter-itemselected.png":::
+
 
 Approuver (ou rejeter) les actions en attente dès que possible afin que vos enquêtes automatisées se poursuivent et se terminent en temps voulu.
 
@@ -187,7 +189,7 @@ Une seule boîte aux lettres et périphérique interne est requis pour cette sim
       > [!NOTE]
       > Consultez l’étape suivante pour les options de filtrage afin de limiter le retour de données.
 
-      ![Exemple de résultats de requête de recherche avancée.](../../media/advanced-hunting-incident-response-try-1.png)
+      :::image type="content" source="../../media/advanced-hunting-incident-response-try-1.png" alt-text="Page Recherche avancée dans le portail Microsoft 365 Defender web" lightbox="../../media/advanced-hunting-incident-response-try-1.png":::
 
         > [!NOTE]
         > Le recherche avancée affiche les résultats de la requête sous la mesure de données tabulaires. Vous pouvez également choisir d’afficher les données dans d’autres types de formats tels que les graphiques.
@@ -201,7 +203,7 @@ Une seule boîte aux lettres et périphérique interne est requis pour cette sim
 
    1. Cliquez sur les lignes résultantes de la requête pour pouvoir inspecter l’enregistrement.
 
-      ![Exemple de panneau latéral d’inspection de l’enregistrement qui s’ouvre lorsqu’un résultat de recherche avancé est sélectionné.](../../media/advanced-hunting-incident-response-try-2.png)
+      :::image type="content" source="../../media/advanced-hunting-incident-response-try-2.png" alt-text="Section Inspecter l’enregistrement de la page Recherche avancée dans le portail Microsoft 365 Defender" lightbox="../../media/advanced-hunting-incident-response-try-2.png":::
 
 4. Maintenant que vous avez vérifié que vous pouvez voir le message électronique, ajoutez un filtre pour les pièces jointes. Concentrez-vous sur tous les e-mails avec pièces jointes dans l’environnement. Pour cette simulation, concentrez-vous sur les e-mails entrants, et non sur ceux envoyés à partir de votre environnement. Supprimez les filtres que vous avez ajoutés pour localiser votre message et ajoutez « | où **AttachmentCount > 0** et **EmailDirection** == **"Inbound" »**
 
@@ -259,40 +261,41 @@ Les détections personnalisées exécutent la requête en fonction de la fréque
 
 1. Dans la page de requête, supprimez les lignes 7 et 8 ajoutées à l’étape 7 des instructions de repérage Go, puis cliquez sur **Créer une règle de détection**.
 
-   ![Exemple d’endroit où vous pouvez cliquer sur créer une règle de détection dans la page de repérage avancé.](../../media/advanced-hunting-incident-response-try-3.png)
+   :::image type="content" source="../../media/advanced-hunting-incident-response-try-3.png" alt-text="Section Modification de requête de la page Recherche avancée dans le portail Microsoft 365 Defender" lightbox="../../media/advanced-hunting-incident-response-try-3.png":::
 
    > [!NOTE]
    > Si vous cliquez **sur Créer une règle de détection** et que vous avez des erreurs de syntaxe dans votre requête, votre règle de détection ne sera pas enregistrée. Vérifiez votre requête pour vous assurer qu’il n’y a aucune erreur.
 
 2. Remplissez les champs requis avec les informations qui permettront à l’équipe de sécurité de comprendre l’alerte, pourquoi elle a été générée et les actions que vous attendez qu’elle prenne.
 
-   ![Exemple de page de création de règle de détection dans laquelle vous pouvez définir les détails de l’alerte.](../../media/mtp/fig23.png)
+   :::image type="content" source="../../media/mtp/fig23.png" alt-text="Page Détails de l’alerte dans le portail Microsoft 365 Defender web" lightbox="../../media/mtp/fig23.png":::
 
    Veillez à remplir les champs avec clarté pour aider l’utilisateur suivant à prendre une décision éclairée sur cette alerte de règle de détection.
 
 3. Sélectionnez les entités qui sont impactées dans cette alerte. Dans ce cas, sélectionnez **Appareil et** boîte **aux lettres**.
 
-   ![Exemple de page créer une règle de détection dans laquelle vous pouvez choisir les paramètres des entités impactées.](../../media/mtp/fig24.png)
+   :::image type="content" source="../../media/mtp/fig24.png" alt-text="Page de détails des entités impactées dans le portail Microsoft 365 Defender données" lightbox="../../media/mtp/fig24.png":::
 
 4. Déterminez les actions à prendre si l’alerte est déclenchée. Dans ce cas, exécutez une analyse antivirus, même si d’autres actions peuvent être prises.
 
-   ![Exemple de page créer une règle de détection dans laquelle vous pouvez exécuter une analyse antivirus lorsqu’une alerte est déclenchée pour aider à résoudre les menaces.](../../media/mtp/fig25.png)
+   :::image type="content" source="../../media/mtp/fig25.png" alt-text="Page Actions dans le portail Microsoft 365 Defender web" lightbox="../../media/mtp/fig25.png":::
 
 5. Sélectionnez l’étendue de la règle d’alerte. Étant donné que cette requête implique des appareils, les groupes d’appareils sont pertinents dans cette détection personnalisée en fonction du contexte microsoft Defender pour point de terminaison. Lors de la création d’une détection personnalisée qui n’inclut pas les appareils en tant qu’entités touchées, l’étendue ne s’applique pas.
 
-   ![Exemple de page de création de règle de détection dans laquelle vous pouvez définir l’étendue de la règle d’alerte gère vos attentes pour les résultats que vous verrez.](../../media/mtp/fig26.png)
+   :::image type="content" source="../../media/mtp/fig26.png" alt-text="Page Étendue dans le portail Microsoft 365 Defender web" lightbox="../../media/mtp/fig26.png":::
+
 
    Pour ce projet pilote, vous pouvez limiter cette règle à un sous-ensemble d’appareils de test dans votre environnement de production.
 
 6. Sélectionnez **Créer**. Sélectionnez ensuite **des règles de détection personnalisées** dans le panneau de navigation.
 
-   ![Exemple d’option de règles de détection personnalisées dans le menu.](../../media/mtp/fig27a.png)
+   :::image type="content" source="../../media/mtp/fig27a.png" alt-text="Option règles de détection personnalisées dans le portail Microsoft 365 Defender client" lightbox="../../media/mtp/fig27a.png":::
 
-   ![Exemple de page de règles de détection qui affiche les détails de la règle et de l’exécution.](../../media/mtp/fig27b.png)
+   :::image type="content" source="../../media/mtp/fig27b.png" alt-text="Page affichant les règles de détection et les détails d’exécution dans le portail Microsoft 365 Defender web" lightbox="../../media/mtp/fig27b.png":::
 
    À partir de cette page, vous pouvez sélectionner la règle de détection, qui ouvre une page de détails.
 
-   ![Exemple de page de pièces jointes dans laquelle vous pouvez voir l’état de l’exécution de la règle, les alertes et actions déclenchées, modifier la détection, etc.](../../media/mtp/fig28.png)
+   :::image type="content" source="../../media/mtp/fig28.png" alt-text="Page affichant les détails des alertes déclenchées dans le portail Microsoft 365 Defender web" lightbox="../../media/mtp/fig28.png":::
 
 
 ### <a name="expert-training-on-advanced-hunting"></a>Formation experte sur le chasse avancée

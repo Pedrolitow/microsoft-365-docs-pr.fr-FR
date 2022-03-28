@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment configurer la sécurité du portail.
-ms.openlocfilehash: 8f8ec851d2ce6795565530e120f3704128336ea2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: dd99330d520b409a93cfd5d1ca777c17b9ef4373
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323120"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775937"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>Configurer la sécurité Microsoft 365 Lighthouse portail d’entreprise
 
@@ -37,7 +37,7 @@ Lorsque les utilisateurs accèdent à l’mf pour la première fois, ils sont in
 
 ## <a name="set-up-role-based-access-control"></a>Configurer le contrôle d’accès basé sur un rôle
 
-Le contrôle d’accès basé sur un rôle (RBAC) accorde l’accès aux ressources ou aux informations en fonction des rôles utilisateur. L’accès aux données et paramètres du client dans le centre d’informations est limité à des rôles spécifiques du programme fournisseur de solutions Cloud (CSP). Pour configurer des rôles RBAC dans le contrôle d’accès, nous vous recommandons d’utiliser des privilèges d’administration délégués granulaires (GDAP) pour implémenter des affectations granulaires pour les utilisateurs.
+Le contrôle d’accès basé sur un rôle (RBAC) accorde l’accès aux ressources ou aux informations en fonction des rôles utilisateur. L’accès aux données et paramètres du client dans le centre d’informations est limité à des rôles spécifiques du programme fournisseur de solutions Cloud (CSP). Pour configurer des rôles RBAC dans le contrôle d’accès, nous vous recommandons d’utiliser des privilèges d’administration délégués granulaires (GDAP) pour implémenter des affectations granulaires pour les utilisateurs. Des privilèges d’administration délégués (DAP) sont toujours requis pour que le client puisse intégrer correctement, mais les clients GDAP uniquement pourront bientôt intégrer sans dépendance sur DAP. Les autorisations GDAP prévalent lorsque DAP et GDAP coexistent pour un client. 
 
 Pour commencer à travailler avec GDAP, voir [Configurer des rôles pour gérer les clients](m365-lighthouse-set-up-roles.md).
 

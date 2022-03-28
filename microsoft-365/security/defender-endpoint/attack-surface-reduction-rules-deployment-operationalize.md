@@ -16,14 +16,16 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
+ms.collection:
+- m365solution-scenario
+- M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 3229cd0a98714819009e7d50baab0872f3a67c43
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 9a3e8ab38c807b8cf3ea54bb5a18a5405d0b3c49
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766583"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465352"
 ---
 # <a name="step-4-operationalize-asr-rules"></a>Étape 4 : Opérationnaliser les règles ASR
 
@@ -42,7 +44,7 @@ Un examen cohérent et régulier des rapports est un aspect essentiel de la main
 L’une des fonctionnalités les plus puissantes de [Microsoft 365 Defender](https://security.microsoft.com) est la recherche avancée. Si vous n’êtes pas familiarisé avec le chasse avancée, voir : [recherchez de manière proactive les menaces avec le chasse avancée](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview).
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender de recherche avancée](images/asr-defender365-advanced-hunting2.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting2.png" alt-text="Page Recherche avancée dans le portail Microsoft 365 Defender web" lightbox="images/asr-defender365-advanced-hunting2.png":::
 
 Le repérage avancé est un outil de repérage de menaces basé sur une requête (Kusto Query Language) qui vous permet d’explorer jusqu’à 30 jours des données capturées (brutes) collectées par Microsoft Defender ATP Endpoint Detection and Response (PEPT) à partir de tous vos ordinateurs. Grâce à la recherche avancée, vous pouvez inspecter de manière proactive les événements afin de localiser des indicateurs et des entités intéressants. L’accès flexible aux données facilite le repérage sans contrainte pour les menaces connues et potentielles.
 
@@ -53,10 +55,10 @@ Grâce à la recherche avancée, il est possible d’extraire des informations s
 Les événements asr présentés dans le portail de chasse sont limitées à des processus uniques visibles toutes les heures. L’heure de l’événement ASR est la première fois que l’événement est vu dans cette heure.
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender ligne de commande de requête de recherche avancée](images/asr-defender365-advanced-hunting3.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting3.png" alt-text="Ligne de commande de requête de recherche avancée dans le portail Microsoft 365 Defender de recherche" lightbox="images/asr-defender365-advanced-hunting3.png":::
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender de requête de recherche avancée](images/asr-defender365-advanced-hunting4.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting4.png" alt-text="La requête de recherche avancée entraîne l’Microsoft 365 Defender de recherche" lightbox="images/asr-defender365-advanced-hunting4.png":::
 
 L’exemple ci-dessus indique que 187 événements ont été enregistrés pour AsrLsassCredentialTheft :
 
@@ -68,10 +70,10 @@ L’exemple ci-dessus indique que 187 événements ont été enregistrés pour A
 Si vous souhaitez vous concentrer sur la règle AsrOfficeChildProcess et obtenir des détails sur les fichiers et processus impliqués, modifiez le filtre pour ActionType et remplacez la ligne de synthèse par une projection des champs souhaités (dans ce cas, il s’agit de DeviceName, FileName, FolderPath, etc.).
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender requête de recherche avancée axée sur](images/asr-defender365-advanced-hunting4b.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting4b.png" alt-text="Exemple de requête de recherche avancée axée sur le portail Microsoft 365 Defender" lightbox="images/asr-defender365-advanced-hunting4b.png":::
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender résultats de requête de recherche avancée](images/asr-defender365-advanced-hunting5b.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting5b.png" alt-text="La requête de recherche avancée axée sur les résultats dans le portail Microsoft 365 Defender recherche" lightbox="images/asr-defender365-advanced-hunting5b.png":::
 
 Le véritable avantage de la recherche avancée est que vous pouvez mettre en forme les requêtes à votre convenance. La mise en forme de votre requête vous permet de voir l’histoire exacte de ce qui se passe, que vous vouliez épingler quelque chose sur un ordinateur individuel ou que vous vouliez extraire des informations de l’ensemble de votre environnement.
 

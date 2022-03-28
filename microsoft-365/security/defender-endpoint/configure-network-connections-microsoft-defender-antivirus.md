@@ -16,12 +16,12 @@ ms.date: 02/03/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f29cf5f77acd52a4ff3ccc8384f3c64861e48b64
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 1029549339d5c54334690bf5577a46f2d2be6bf6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806035"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465308"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurer et valider les connexions réseau à un antivirus Microsoft Defender
 
@@ -37,7 +37,7 @@ Pour garantir Antivirus Microsoft Defender protection assurée par le cloud fonc
 
 
 > [!NOTE]
-> Le site de démonstration Defender for Endpoint demo.wd.microsoft.com est supprimé et sera supprimé à l’avenir.
+> Le site de démonstration Defender pour point de terminaison sur demo.wd.microsoft.com est déconseillé et sera supprimé à l’avenir.
 
 ## <a name="allow-connections-to-the-microsoft-defender-antivirus-cloud-service"></a>Autoriser les connexions au service Antivirus Microsoft Defender cloud
 
@@ -60,7 +60,7 @@ Assurez-vous qu’il n’existe aucune règle de pare-feu ou de filtrage réseau
 |---|---|
 |Antivirus Microsoft Defender service de protection cloud est appelé Microsoft Active Protection Service (MAPS).<p> Le Antivirus Microsoft Defender utilise le service MAPS pour fournir une protection fournie par le cloud.|`*.wdcp.microsoft.com` <p> `*.wdcpalt.microsoft.com` <p> `*.wd.microsoft.com`|
 |Microsoft Update Service (MU) et Windows Update Service (WU) <p>Ces services permettent d’assurer la veille sur la sécurité et les mises à jour des produits.|`*.update.microsoft.com` <p> `*.delivery.mp.microsoft.com`<p> `*.windowsupdate.com` <p> Pour plus d’informations, voir [Points de terminaison de connexion pour Windows update](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
-|Security intelligence updates Alternate Download Location (ADL)<p>Il s’agit d’un autre emplacement pour Antivirus Microsoft Defender mises à jour de l’intelligence de sécurité, si l’intelligence de sécurité installée est hors service (au moins sept jours après).|`*.download.microsoft.com` <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
+|Security intelligence updates Alternate Download Location (ADL)<p>Il s’agit d’un autre emplacement pour les mises à jour Antivirus Microsoft Defender’intelligence de sécurité, si l’intelligence de sécurité installée est hors service (au moins sept jours après).|`*.download.microsoft.com` <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
 |Stockage de soumission de programmes malveillants <p>Il s’agit d’un emplacement de téléchargement pour les fichiers envoyés à Microsoft via le formulaire de soumission ou l’envoi automatique d’exemples.|`ussus1eastprod.blob.core.windows.net` <p> `ussus2eastprod.blob.core.windows.net` <p> `ussus3eastprod.blob.core.windows.net` <p> `ussus4eastprod.blob.core.windows.net` <p> `wsus1eastprod.blob.core.windows.net` <p> `wsus2eastprod.blob.core.windows.net` <p> `ussus1westprod.blob.core.windows.net` <p> `ussus2westprod.blob.core.windows.net` <p> `ussus3westprod.blob.core.windows.net` <p> `ussus4westprod.blob.core.windows.net` <p> `wsus1westprod.blob.core.windows.net` <p> `wsus2westprod.blob.core.windows.net` <p> `usseu1northprod.blob.core.windows.net` <p> `wseu1northprod.blob.core.windows.net` <p> `usseu1westprod.blob.core.windows.net` <p> `wseu1westprod.blob.core.windows.net` <p> `ussuk1southprod.blob.core.windows.net` <p> `wsuk1southprod.blob.core.windows.net` <p> `ussuk1westprod.blob.core.windows.net` <p> `wsuk1westprod.blob.core.windows.net`|
 |Liste de révocation de certificats (CRL) <p> Windows cette liste lors de la création de la connexion SSL à MAPS pour la mise à jour de la liste de liste de niveau de service.|`http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p> `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs`|
 |Magasin de symboles <p>Antivirus Microsoft Defender utiliser le magasin de symboles pour restaurer certains fichiers critiques pendant les flux de correction.|`https://msdl.microsoft.com/download/symbols`|
@@ -82,7 +82,7 @@ Utilisez l’argument suivant avec l Antivirus Microsoft Defender de ligne de co
 > [!NOTE]
 > Ouvrez l’invite de commandes en tant qu’administrateur. Cliquez avec le bouton droit sur l’élément dans le menu **Démarrer** , cliquez sur Exécuter **en** tant qu’administrateur et cliquez sur **Oui** à l’invite d’autorisations. Cette commande ne fonctionne que sur Windows 10 version 1703 ou supérieure, ou sur Windows 11.
 
-Pour plus d’informations, [voir Gérer Antivirus Microsoft Defender’aide de lmpcmdrun.exe de ligne de commande.](command-line-arguments-microsoft-defender-antivirus.md)
+Pour plus d’informations, [voir Manage Antivirus Microsoft Defender with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus.md).
 
 ### <a name="attempt-to-download-a-fake-malware-file-from-microsoft"></a>Tentative de téléchargement d’un fichier de programmes malveillants factices à partir de Microsoft
 
@@ -95,24 +95,24 @@ Si vous êtes correctement connecté, un avertissement s’Antivirus Microsoft D
 
 Si vous utilisez Microsoft Edge, vous verrez également un message de notification :
 
-:::image type="content" source="../../media/wdav-bafs-edge.png" alt-text="Capture d’écran de la notification de détection de programmes malveillants Azure IoT Edge.":::
+:::image type="content" source="../../media/wdav-bafs-edge.png" alt-text="Notification de détection de programmes malveillants dans Edge" lightbox="../../media/wdav-bafs-edge.png":::
 
 Un message similaire se produit si vous utilisez Internet Explorer :
 
-:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="Notification De Microsoft Defender AV que des programmes malveillants ont été détectés.":::
+:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="Notification de l’Antivirus Microsoft Defender qui a détecté un programme malveillant" lightbox="../../media/wdav-bafs-ie.png":::
 
 #### <a name="view-the-fake-malware-detection-in-your-windows-security-app"></a>Afficher la détection de programmes malveillants factices dans Sécurité Windows application
 
 1. Dans la barre des tâches, sélectionnez l’icône Bouclier, ouvrez **l’Sécurité Windows** app. Sinon, recherchez **l’exemple Démarrer** pour *la sécurité*.
 
-2. **Sélectionnez Virus & protection contre les** menaces, puis sélectionnez **Historique de la protection**.
+2. **Sélectionnez Virus & protection contre les menaces**, puis sélectionnez **Historique de la protection**.
 
 3. Sous la section **Menaces en quarantaine** , **sélectionnez Consulter l’historique complet** pour voir les programmes malveillants factices détectés.
 
    > [!NOTE]
-   > Les versions Windows 10 antérieures à la version 1703 ont une interface utilisateur différente. Voir [Antivirus Microsoft Defender dans l’application Sécurité Windows’application.](microsoft-defender-security-center-antivirus.md)
+   > Les versions Windows 10 versions antérieures à la version 1703 ont une interface utilisateur différente. Voir [Antivirus Microsoft Defender dans l’application Sécurité Windows’application.](microsoft-defender-security-center-antivirus.md)
 
-   Le Windows journal des événements affiche également [Windows Defender’ID d’événement client 1116](troubleshoot-microsoft-defender-antivirus.md).
+   Le Windows d’événements Windows Defender [l’ID d’événement client 1116](troubleshoot-microsoft-defender-antivirus.md).
 
 ## <a name="see-also"></a>Voir aussi
 

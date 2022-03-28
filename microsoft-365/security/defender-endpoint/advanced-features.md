@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 56a836e14051e3f621fb42fd518fb2cf5efe8bed
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 94e5b18ab1090f6fb76cb7734e90411b93b444e7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327698"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465452"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurer des fonctionnalités avancées dans Defender pour le point de terminaison
 
@@ -69,11 +69,11 @@ L’activation de cette fonctionnalité vous permet d’exécuter des scripts no
 
 Les applications potentiellement indésirables (PUA) sont une catégorie de logiciels qui peuvent ralentir votre ordinateur, afficher des publicités inattendues ou, au pire, installer d’autres logiciels, ce qui peut être inattendu ou indésirable.
 
-Activer cette fonctionnalité afin que les applications potentiellement indésirables (PUA) soient corrigés sur tous les appareils de votre client, même si la protection PUA n’est pas configurée sur les appareils. Cela permet de protéger les utilisateurs contre l’installation accidentelle d’applications indésirables sur leur appareil. Lorsqu’elle est désactivée, la correction dépend de la configuration de l’appareil.
+Activer cette fonctionnalité afin que les applications potentiellement indésirables (PUA) soient corrigés sur tous les appareils de votre client, même si la protection PUA n’est pas configurée sur les appareils. Cette activation de la fonctionnalité permet de protéger les utilisateurs contre l’installation accidentelle d’applications indésirables sur leur appareil. Lorsqu’elle est désactivée, la correction dépend de la configuration de l’appareil.
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>Limiter la corrélation aux groupes d’appareils dans l’étendue
 
-Cette configuration peut être utilisée dans les scénarios où les opérations SOC locales souhaitent limiter les corrélations d’alertes uniquement aux groupes d’appareils accessibles. En  allumer ce paramètre, un incident composé d’alertes entre les groupes d’appareils ne sera plus considéré comme un incident unique. Le SOC local peut ensuite prendre des mesures sur l’incident, car il a accès à l’un des groupes d’appareils impliqués. Toutefois, le soc global verra plusieurs incidents différents par groupe d’appareils au lieu d’un incident. Nous vous déconseillons d’allumer ce paramètre, sauf si cela l’emporte sur les avantages de la corrélation d’incidents dans l’ensemble de l’organisation.
+Cette configuration peut être utilisée dans les scénarios où les opérations SOC locales souhaitent limiter les corrélations d’alertes uniquement aux groupes d’appareils accessibles. En  allumer ce paramètre, un incident composé d’alertes que les groupes d’appareils croisés ne seront plus considérés comme un incident unique. Le SOC local peut ensuite prendre des mesures sur l’incident, car il a accès à l’un des groupes d’appareils impliqués. Toutefois, le soc global verra plusieurs incidents différents par groupe d’appareils au lieu d’un incident. Nous vous déconseillons d’allumer ce paramètre, sauf si cela l’emporte sur les avantages de la corrélation d’incidents dans l’ensemble de l’organisation.
 
 > [!NOTE]
 > La modification de ce paramètre a une incidence sur les corrélations d’alertes futures uniquement.
@@ -109,7 +109,7 @@ Pour activer **ou bloquer les fichiers** :
 
 1. Basculez le paramètre entre **« On** » et **« Off ».**
  
-    :::image type="content" source="../../media/alloworblockfile.png" alt-text="Image des paramètres avancés pour la fonctionnalité bloquer les fichiers.":::
+    :::image type="content" source="../../media/alloworblockfile.png" alt-text="Écran Points de terminaison" lightbox="../../media/alloworblockfile.png":::
 
 1. **Sélectionnez Enregistrer les préférences** en bas de la page.
 
@@ -147,7 +147,7 @@ Pour plus d’informations, voir [Examiner un compte d’utilisateur](investigat
 
 ## <a name="skype-for-business-integration"></a>Skype Entreprise’intégration
 
-L’activation de l Skype Entreprise’intégration vous permet de communiquer avec les utilisateurs à l’aide Skype Entreprise, du courrier électronique ou du téléphone. Cela peut être pratique lorsque vous devez communiquer avec l’utilisateur et atténuer les risques.
+L’activation de l Skype Entreprise’intégration vous permet de communiquer avec les utilisateurs à l’aide Skype Entreprise, du courrier électronique ou du téléphone. Cette activation peut être pratique lorsque vous devez communiquer avec l’utilisateur et atténuer les risques.
 
 > [!NOTE]
 > Lorsqu’un appareil est isolé du réseau, vous pouvez choisir d’activer les communications Outlook et Skype dans une fenêtre pop-up qui permet de communications à l’utilisateur pendant qu’il est déconnecté du réseau. Ce paramètre s’applique Skype et Outlook communication lorsque les appareils sont en mode d’isolation.
@@ -213,7 +213,7 @@ Defender pour le point de terminaison peut être intégré [à Microsoft Intune]
 > [!IMPORTANT]
 > Vous devez activer l’intégration sur Intune et Defender pour le point de terminaison pour utiliser cette fonctionnalité. Pour plus d’informations sur les étapes spécifiques, voir [Configure Conditional Access in Defender for Endpoint](configure-conditional-access.md).
 
-Cette fonctionnalité est disponible uniquement si vous disposez des fonctionnalités suivantes :
+Cette fonctionnalité est disponible uniquement si vous disposez des conditions préalables suivantes :
 
 - Un client sous licence pour Enterprise Mobility + Security E3, et Windows E5 (ou Microsoft 365 Entreprise E5)
 - Un environnement Microsoft Intune actif, avec des appareils Windows gérés par Intune [Azure AD joints](/azure/active-directory/devices/concept-azure-ad-join/).
@@ -242,7 +242,7 @@ Vous aurez accès aux fonctionnalités à venir, sur lesquelles vous pourrez nou
 
 Sauvegardez les fichiers mis en quarantaine dans un emplacement sécurisé et conforme afin qu’ils soient téléchargés directement à partir de la quarantaine. Le **bouton Télécharger** le fichier sera toujours disponible dans la page du fichier. Ce paramètre est allumé par défaut. [En savoir plus sur les conditions requises](respond-file-alerts.md#download-quarantined-files)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Mettre à jour les paramètres de rétention des données](data-retention-settings.md)
 - [Configurer des notifications d’alerte](configure-email-notifications.md)

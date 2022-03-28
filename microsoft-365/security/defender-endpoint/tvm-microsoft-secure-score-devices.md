@@ -16,20 +16,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ccd5164839244250c5e2d908f41c35a706e0f49d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 97ce614a77b85ae6e22e771a413ae5bce51abce7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165557"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465792"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>Niveau de sécurité Microsoft pour les appareils
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -58,7 +58,7 @@ La réflexion des modifications dans le tableau de bord peut prendre jusqu’à 
 
 2. Faites défiler vers **le bas jusqu’au score de sécurité Microsoft** et basculez le paramètre sur **Sur**.
 
-3. Sélectionnez **Enregistrer les préférences.**
+3. Sélectionnez **Enregistrer les préférences**.
 
 ## <a name="how-it-works"></a>Fonctionnement
 
@@ -76,25 +76,25 @@ Les données de la carte Degré de sécurisation Microsoft pour les appareils so
 
 Améliorez votre configuration de la sécurité en remédiant aux problèmes de la liste des recommandations de sécurité. À mesure que vous le faites, votre score de sécurité Microsoft pour les appareils s’améliore et votre organisation devient plus résiliente contre les menaces et les vulnérabilités de cybersécurité.
 
-1. Dans la carte Score de sécurité Microsoft pour les appareils du tableau de bord Gestion des menaces et des vulnérabilités, sélectionnez l’une des catégories. Vous verrez la liste des recommandations relatives à cette catégorie. Il vous permet d’aller à la page [**Recommandations en matière de sécurité.**](tvm-security-recommendation.md) Si vous souhaitez voir toutes les recommandations de sécurité, une fois que vous êtes sur la page Recommandations de sécurité, effacer le champ de recherche.
+1. Dans la carte Score de sécurité Microsoft pour les appareils du tableau Gestion des menaces et des vulnérabilités, sélectionnez l’une des catégories. Vous verrez la liste des recommandations relatives à cette catégorie. Il vous permet d’aller à la page [**Recommandations en matière de sécurité**](tvm-security-recommendation.md) . Si vous souhaitez voir toutes les recommandations de sécurité, une fois que vous êtes sur la page Recommandations de sécurité, effacer le champ de recherche.
 
-2. Sélectionnez un élément dans la liste. Le panneau volant s’ouvre avec les détails relatifs à la recommandation. Sélectionnez **les options de correction.**
+2. Sélectionnez un élément dans la liste. Le panneau volant s’ouvre avec les détails relatifs à la recommandation. Sélectionnez **les options de correction**.
 
-   :::image type="content" alt-text="Les recommandations de sécurité associées aux contrôles de sécurité." source="images/security-controls.png":::
+   :::image type="content" source="images/security-controls.png" alt-text="Recommandations en matière de sécurité liées aux contrôles de sécurité" lightbox="images/security-controls.png":::
 
 3. Lisez la description pour comprendre le contexte du problème et ce qu’il faut faire ensuite. Sélectionnez une date d’échéance, ajoutez des notes et sélectionnez Exporter toutes les données d’activité de correction vers **CSV** afin de pouvoir les joindre à un e-mail pour le suivi.
 
 4. **Envoyer une demande**. Vous verrez un message de confirmation vous confirmant que la tâche de correction a été créée.
 
-   :::image type="content" alt-text="Confirmation de la création de la tâche de correction." source="images/remediation-task-created.png":::
+   :::image type="content" source="images/remediation-task-created.png" alt-text="Confirmation de la création de la tâche de correction" lightbox="images/remediation-task-created.png":::
 
 5. Enregistrez votre fichier CSV.
 
-   :::image type="content" alt-text="Enregistrez le fichier csv." source="images/tvm_save_csv_file.png":::
+   :::image type="content" source="images/tvm_save_csv_file.png" alt-text="Page contenant l’option d’enregistrer le fichier CSV" lightbox="images/tvm_save_csv_file.png":::
 
 6. Envoyez un courrier électronique de suivi à votre administrateur informatique et laissez le temps que vous avez alloué à la correction de se propager dans le système.
 
-7. Examinez **à nouveau la carte Score de sécurité Microsoft** pour les appareils dans le tableau de bord. Le nombre de recommandations en matière de contrôles de sécurité va diminuer. Lorsque vous **sélectionnez les contrôles** de sécurité pour revenir à la page **Recommandations** de sécurité, l’élément que vous avez traité n’y figure plus. Votre score de sécurité Microsoft pour les appareils doit augmenter.
+7. Examinez **à nouveau la carte Score de sécurité Microsoft pour les** appareils dans le tableau de bord. Le nombre de recommandations en matière de contrôles de sécurité va diminuer. Lorsque vous **sélectionnez les contrôles** de sécurité pour revenir à la page **Recommandations** de sécurité, l’élément que vous avez traité n’y figure plus. Votre score de sécurité Microsoft pour les appareils doit augmenter.
 
 > [!IMPORTANT]
 >Pour augmenter les taux de détection de l’évaluation des vulnérabilités, téléchargez les mises à jour de sécurité obligatoires suivantes et déployez-les sur votre réseau :
@@ -107,9 +107,9 @@ Améliorez votre configuration de la sécurité en remédiant aux problèmes de 
 > Pour télécharger les mises à jour de sécurité :
 >
 > 1. Go to [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/home.aspx).
-> 2. Key-in the security update KB number that you need to download, then click **Search**.
+> 2. Touchez le numéro de la ko de mise à jour de sécurité que vous devez télécharger, puis cliquez sur **Rechercher**.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Tableau de bord](tvm-dashboard-insights.md)

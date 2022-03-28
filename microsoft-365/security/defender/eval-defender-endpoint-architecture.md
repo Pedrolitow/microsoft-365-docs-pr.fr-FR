@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7a7e7a397f9cf9f89b75eb1f515e37a5386a73b1
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: b1381e7c2be2224818c72fb8e269ad65ffcacfc8
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171934"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755021"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>Passer en revue les exigences en matière d’architecture de point de terminaison et les concepts clés de Microsoft Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "62171934"
 
 Cet article vous guide dans le processus de configuration de l’évaluation de Microsoft Defender pour l’environnement Endpoint.
 
-Pour plus d’informations sur ce processus, voir [l’article de présentation.](eval-defender-endpoint-overview.md)
+Pour plus d’informations sur ce processus, consultez [l’article de présentation](eval-defender-endpoint-overview.md).
 
 Avant d’activer Microsoft Defender pour le point de terminaison, veillez à bien comprendre l’architecture et à répondre aux exigences.
 
@@ -42,7 +42,7 @@ Avant d’activer Microsoft Defender pour le point de terminaison, veillez à bi
 
 Le diagramme suivant illustre l’architecture et les intégrations de Microsoft Defender pour les points de terminaison. 
 
-![Étapes d’ajout de Microsoft Defender pour Office’environnement d’évaluation Defender.](../../media/defender/m365-defender-endpoint-architecture.png)
+:::image type="content" source="../../media/defender/m365-defender-endpoint-architecture.png" alt-text="Étapes d’ajout de Microsoft Defender pour Office à l’environnement d’évaluation Defender" lightbox="../../media/defender/m365-defender-endpoint-architecture.png":::
 
 Le tableau suivant décrit l’illustration.
 
@@ -50,8 +50,8 @@ Appel | Description
 :---|:---|
 1 | Les appareils sont pris en charge via l’un des outils de gestion pris en charge. 
 2 | Les appareils connectés fournissent des données de signal de point de terminaison à Microsoft Defender et y répondent.
-3 | Les appareils gérés sont joints et/ou inscrits Azure Active Directory.
-4 | Les appareils joints Windows domaine sont synchronisés avec les Azure Active Directory à l’aide Azure Active Directory Connecter.
+3 | Les appareils gérés sont joints et/ou inscrits dans Azure Active Directory.
+4 | Les appareils joints Windows domaine sont synchronisés avec les Azure Active Directory à l’Azure Active Directory Connecter.
 5 | Les alertes, enquêtes et réponses de Microsoft Defender pour les points de terminaison sont gérées Microsoft 365 Defender.
 
 ## <a name="understand-key-concepts"></a>Comprendre les concepts clés
@@ -65,11 +65,11 @@ Réduction de la surface d’attaque | Réduisez vos surfaces d’attaque en ré
 Détection et réponse des points de terminaison | Les fonctionnalités de détection et de réponse des points de terminaison fournissent des détections d’attaques avancées quasiment en temps réel et actionnables. | [Vue d’ensemble protection évolutive des points de terminaison fonctionnalités](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
 Blocage et blocage du comportement | Les fonctionnalités de blocage du comportement et de blocage du contenu peuvent aider à identifier et à arrêter les menaces, en fonction de leurs comportements et des arbre de traitement, même lorsque la menace a démarré l’exécution. | [Blocage et confinement comportementaux](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment)
 Examen et réponse automatisés | L’examen automatisé utilise différents algorithmes d’inspection basés sur des processus utilisés par les analystes de sécurité et conçus pour examiner les alertes et prendre des mesures immédiates pour résoudre les violations. | [Utiliser des enquêtes automatisées pour examiner et corriger les menaces](/microsoft-365/security/defender-endpoint/automated-investigations)
-Repérage avancé | Le recherche avancée est un outil de recherche de menace basé sur une requête qui vous permet d’explorer jusqu’à 30 jours de données brutes afin de pouvoir inspecter de manière proactive les événements de votre réseau afin de localiser les indicateurs et entités de menace. | [Vue d’ensemble du chasse avancée](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)
+Recherche avancée | Le recherche avancée est un outil de recherche de menace basé sur une requête qui vous permet d’explorer jusqu’à 30 jours de données brutes afin de pouvoir inspecter de manière proactive les événements de votre réseau afin de localiser les indicateurs et entités de menace. | [Vue d’ensemble du chasse avancée](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)
 Analyses de menaces | L’analyse des menaces est un ensemble de rapports d’experts en matière de sécurité Microsoft couvrant les menaces les plus pertinentes. | [Suivre et répondre aux menaces émergentes](/microsoft-365/security/defender-endpoint/threat-analytics)
 
 
-Pour plus d’informations sur les fonctionnalités incluses avec Microsoft Defender pour le point de terminaison, voir Qu’est-ce [que Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
+Pour plus d’informations sur les fonctionnalités incluses avec Microsoft Defender pour le point de terminaison, voir Qu’est-ce [que Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) .
 
 ## <a name="siem-integration"></a>Intégration SIEM
 
