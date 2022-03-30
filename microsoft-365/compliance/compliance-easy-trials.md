@@ -6,7 +6,7 @@ ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: À propos des essais de solutions de conformité
-ms.openlocfilehash: 8cfa95b5998d78a2128e2e99ac6b23babf11f3ff
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 247080c374cd99c93e538e46ed0894ad24e501cd
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271789"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679827"
 ---
 # <a name="about-the-compliance-solutions-trial"></a>À propos de la version d’essai des solutions de conformité
 
@@ -53,7 +53,7 @@ Vous pouvez prolonger l’essai dans les 15 derniers jours de la période d’es
 
 Les administrateurs peuvent désactiver l’essai à tout moment en allant sur la carte de conformité.
 
-Si vous décidez de ne pas vous inscrire à une fonctionnalité qui fait partie de la version d’essai des solutions de conformité, sauf indication contraire pour la solution, vos données d’essai seront conservées pendant une période de temps, généralement de 180 jours, avant d’être définitivement supprimées. Vous pouvez continuer à accéder aux données recueillies pendant l’essai jusqu’à ce moment-là.
+Si vous décidez de ne pas vous inscrire à une fonctionnalité qui fait partie de la version d’évaluation des solutions de conformité, sauf indication contraire pour la solution, vos données d’évaluation seront conservées pendant une période de temps, généralement 180 jours, avant d’être définitivement supprimées. Vous pouvez continuer à accéder aux données collectées pendant l’essai jusqu’à cette date.
 
 ## <a name="availability"></a>Disponibilité
 
@@ -69,7 +69,7 @@ Vous vous demandez ce que vous pouvez faire dans votre version d’essai gratuit
 
 - **Conformité des communications**
 
-  La conformité des communications vous permet de résoudre les problèmes de conformité modernes liés aux communications internes et externes en vous aidant à capturer automatiquement les messages inappropriés, à examiner les violations de stratégie possibles et à prendre des mesures pour corriger le problème. En savoir plus sur la [conformité des communications](communication-compliance.md)
+  La conformité des communications vous aide à surmonter les défis de conformité modernes liés aux communications internes et externes en vous aidant à capturer automatiquement les messages inappropriés, à examiner les violations de stratégie possibles et à prendre des mesures pour y remédier. En savoir plus sur la [Conformité des communications](communication-compliance.md)
 
 - **Gestionnaire de conformité**
 

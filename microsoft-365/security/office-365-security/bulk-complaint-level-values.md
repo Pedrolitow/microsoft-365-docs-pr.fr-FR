@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent en savoir plus sur les valeurs BCL (bulk complaint level) utilisées dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 93eed15773acc505b0106510d3774d862c50e67a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8c50ca25a355ca142e36c67d03fad42c3aa461a2
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149777"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679871"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>Niveau de réclamation en bloc (BCL) dans EOP
 
@@ -31,17 +31,15 @@ ms.locfileid: "60149777"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, EOP affecte un niveau de réclamation en bloc (BCL) aux messages entrants provenant de publipostages en masse. Le bcl est ajouté au message dans un en-tête X et est similaire au niveau de confiance du courrier indésirable [(SCL)](spam-confidence-levels.md) utilisé pour identifier les messages comme courrier indésirable. Une valeur BCL supérieure indique qu’un message en nombre est plus susceptible de générer des réclamations (et est donc plus susceptible d’être du courrier indésirable). Microsoft utilise des sources internes et tierces pour identifier le courrier en nombre et déterminer le bcl approprié.
 
 Les publipostages en nombre varient selon les modèles d’envoi, la création de contenu et les pratiques d’acquisition des destinataires. Les expéditeurs de courrier en nombre de bonne qualité envoient les messages souhaités avec du contenu pertinent à leurs abonnés. Ces messages entraînent peu de réclamations de la part des destinataires. D'autres vers de publipostage en bloc envoient des messages non sollicités qui s'apparentent fortement à du courrier indésirable et entraînent de nombreuses réclamations de la part des destinataires. Les messages provenant d’un publipostage en masse sont appelés courriers en masse ou gris.
 
- Le filtrage du  courrier indésirable marque les messages en tant que messages électroniques en bloc en fonction du seuil BCL (valeur par défaut ou valeur que vous spécifiez) et prend l’action spécifiée sur le message (l’action par défaut consiste à remettre le message dans le dossier Courrier indésirable du destinataire). Pour plus d’informations, voir Configurer des [stratégies anti-courrier](configure-your-spam-filter-policies.md) indésirable et quelle est la différence entre le courrier indésirable et le [courrier en nombre ?](what-s-the-difference-between-junk-email-and-bulk-email.md)
+ Le filtrage du courrier indésirable marque  les messages en tant que messages électroniques en nombre en fonction du seuil BCL (valeur par défaut ou valeur que vous spécifiez) et prend l’action spécifiée sur le message (l’action par défaut consiste à remettre le message dans le dossier Courrier indésirable du destinataire). Pour plus d’informations, voir [Configurer des stratégies anti-courrier](configure-your-spam-filter-policies.md) indésirable et quelle est la différence entre le courrier indésirable [et le courrier en nombre ?](what-s-the-difference-between-junk-email-and-bulk-email.md)
 
 Les seuils BCL sont décrits dans le tableau suivant.
-
-****
 
 |BCL|Description|
 |:---:|---|
@@ -49,6 +47,5 @@ Les seuils BCL sont décrits dans le tableau suivant.
 |1, 2, 3|Le message provient d'un expéditeur en bloc qui génère peu de réclamations.|
 |4, 5, 6, 7<sup>\*</sup>|Le message provient d'un expéditeur en bloc qui génère un nombre moyen de réclamations.|
 |8, 9|Le message est provenant d’un expéditeur en bloc qui génère un nombre élevé de réclamations.|
-|
 
 <sup>\*</sup> Il s’agit de la valeur de seuil par défaut utilisée dans les stratégies anti-courrier indésirable.

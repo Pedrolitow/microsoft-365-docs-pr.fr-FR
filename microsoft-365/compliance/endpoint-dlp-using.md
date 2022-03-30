@@ -18,238 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: cecd489aa5ceb5f0d5d233a4bf09caa24dee6f8b
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: aeb85b883738e94f2d7161cb2bc3434edbb16428
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419154"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680025"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
-
-Cet article vous guide dans quatre scénarios dans lesquels vous créez et modifiez une stratégie DLP qui utilise des appareils comme emplacement.
-
-## <a name="dlp-settings"></a>Paramètres DLP
-
-Avant de commencer, vous devez configurer vos paramètres DLP. Les paramètres sont appliqués à toutes les stratégies DLP pour les appareils. Vous devez les configurer si vous envisagez de créer des stratégies qui appliquent :
-
-- restrictions de sortie dans le Cloud
-- restrictions relatives aux applications non autorisées
-
-Ou
-
-- Si vous souhaitez exclure l’analyse des chemins d’accès aux fichiers bruyants
-
-  > [!div class="mx-imgBorder"]
-  > ![Paramètres DLP.](../media/endpoint-dlp-1-using-dlp-settings.png)
-
-### <a name="endpoint-dlp-windows-1011-and-macos-settings"></a>Paramètres de point de terminaison DLP Windows 10/11 et macOS
-
-|Setting |Windows 10, 1809 et ultérieures, Windows 11  |macOS Catalina 10.15 ou version ultérieure (préversion)  |Notes  |
-|---------|---------|---------|---------|
-|Exclusions de chemin d’accès de fichier     |Pris en charge         |Pris en charge         |macOS inclut une liste recommandée d'exclusions activée par défaut          |
-|Applications non autorisées     |Pris en charge         |Pris en charge         |         |
-|Applications Bluetooth non autorisées    |Pris en charge         |Non pris en charge         |         |
-|Restrictions de navigateur et de domaine aux éléments sensibles      |Pris en charge         |Pris en charge         |         |
-|Paramètres supplémentaires pour Endpoint DLP     |Pris en charge         |Pris en charge         |Seules les justifications commerciales par défaut sont prises en charge pour les appareils macOS         |
-|Toujours auditer l’activité des fichiers pour les appareils     |Pris en charge         |Pris en charge         |         |
-|Mise en quarantaine automatique des fichiers provenant d'applications non autorisées | Pris en charge | Non pris en charge| |
-|Classification avancée | Pris en charge | Non pris en charge| |
-|Justification métier dans les conseils de stratégie | Pris en charge | Pris en charge| |
-
-### <a name="advanced-classification-scanning-and-protection"></a>Analyse et protection avancées de la classification
-
-L'analyse et la protection par classification avancée permettent au service de classification des données basé sur le cloud Microsoft 365, plus avancé, d'analyser les éléments, de les classer et de renvoyer les résultats à la machine locale. Cela signifie que vous pouvez tirer parti de la [classification de correspondance exacte](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) des données, des techniques de classification des [entités nommées (aperçu)](named-entities-learn.md#learn-about-named-entities-preview) dans vos stratégies DLP.
-
-Dans la classification avancée, le contenu est envoyé de l'appareil local aux services cloud pour analyse et classification. Si l'utilisation de la bande passante est un problème, vous pouvez définir une limite dans ce paramètre global qui est appliqué par périphérique sur la quantité pouvant être utilisée sur une période de 24 heures. Si vous définissez une limite d'utilisation de la bande passante et qu'elle est dépassée, DLP arrête d'envoyer le contenu de l'utilisateur vers le cloud et la classification des données se poursuit localement sur l'appareil. Lorsque l'utilisation cumulée de la bande passante tombe en dessous de la limite de 24 heures glissantes, la communication avec les services cloud reprendra.
-
-Si l'utilisation de la bande passante n'est pas un problème, vous ne pouvez pas définir de limite et autoriser une utilisation illimitée.
-
-Ces versions Windows la prise en charge de l’analyse et de la protection avancées de la classification :
-
-- Windows 10 versions 20H1/20H2/21H1 (KB 5006738)
-- Windows 10 versions 19H1/19H2 (KB 5007189)
-- Windows 10 RS5 (KB 5006744)
-
-> [!NOTE]
-> La prise en charge de la classification avancée est disponible pour les types de Office (Word, Excel, PowerPoint) et PDF.
-
-> [!NOTE]
-> L'évaluation de la stratégie DLP se produit toujours dans le cloud, même si le contenu utilisateur n'est pas envoyé.
-
-### <a name="file-path-exclusions"></a>Exclusions de chemin d’accès de fichier
-
-Ouvrir le [Centre de conformité Prévention](https://compliance.microsoft.com) > **des pertes de données** > **Paramètres DLP de point de terminaison** > **Exclusions de chemin de fichier**.
-
-Vous pouvez exclure certains chemins de la surveillance DLP, des alertes DLP et de l’application de stratégie DLP sur vos appareils, car ils sont trop bruyants ou ne contiennent pas les fichiers qui vous intéressent. Les fichiers stockés dans ces emplacements ne seront pas audités et tous les fichiers créés ou modifiés dans ces emplacements ne seront pas soumis à l’application de stratégie DLP. Vous pouvez configurer les exclusions de chemin d’accès dans les paramètres DLP.
-
-#### <a name="windows-10-devices"></a>Appareils Windows 10
-
-Vous pouvez utiliser cette logique pour créer vos chemins d'exclusion pour les appareils Windows 10 :
-
-- Chemin d’accès au fichier valide qui se termine par `\`, ce qui signifie uniquement les fichiers directement sous dossier. <br/>Par exemple : `C:\Temp\`
-
-- Chemin d’accès au fichier valide qui se termine par `\*`, ce qui signifie uniquement les fichiers sous sous-dossiers, en plus des fichiers directement sous dossier. <br/>Par exemple : `C:\Temp\*`
-
-- Chemin d’accès au fichier valide qui se termine sans `\` ou `\*`, ce qui signifie tous les fichiers directement sous dossier et tous les sous-dossiers. <br/>Par exemple : `C:\Temp`
-
-- Chemin d’accès avec caractère générique entre `\` de chaque côté. <br/>Par exemple : `C:\Users\*\Desktop\`
-
-- Chemin d’accès avec caractère générique entre `\` de chaque côté et avec `(number)` pour donner le nombre exact de sous-dossiers. <br/>Par exemple : `C:\Users\*(1)\Downloads\`
-
-- Un chemin d’accès avec des variables d’environnement système. <br/>Par exemple : `%SystemDrive%\Test\*`
-
-- Un mélange de tous les éléments ci-dessus. <br/>Par exemple : `%SystemDrive%\Users\*\Documents\*(2)\Sub\`
-
-#### <a name="macos-devices-preview"></a>Appareils macOS (préversion)
-
-Semblable aux appareils Windows 10, vous pouvez ajouter vos propres exclusions pour les appareils macOS.
-
-- Les définitions de chemin de fichier sont insensibles à la casse, c'est `User` donc la même chose que `user`.
-
-- Les valeurs génériques sont prises en charge. Ainsi, une définition de chemin d’accès peut contenir un `*` au milieu du chemin d’accès ou à la fin du chemin d’accès. Par exemple : `/Users/*/Library/Application Support/Microsoft/Teams/*`
-
-#####  <a name="recommended-file-path-exclusions-preview"></a>Exclusions de chemin de fichier recommandées (préversion)
-
-Pour des raisons de performances, Endpoint DLP inclut une liste d'exclusions de chemins de fichiers recommandées pour les appareils macOS. Ces exclusions sont activées par défaut. Vous pouvez les désactiver si vous le souhaitez en activant la bascule **Inclure les exclusions de chemin de fichier recommandées pour Mac**. La liste inclut :
-
-- /Applications/*
-- /System/*
-- /usr/*
-- /Library/*
-- /private/*
-- /opt/*
-- /Users/*/Library/Application Support/Microsoft/Teams/*
-
-### <a name="unallowed-apps"></a>Applications non autorisées
-
-Les applications non autorisées sont une liste d’applications que vous créez qui ne seront pas autorisées à accéder à un fichier protégé par DLP. Il est disponible pour les appareils Windows 10 et macOS (préversion).
-
-Lorsque le paramètre **Accès par des applications non autorisées** d'une politique est activé, et qu'une application figurant sur la liste des applications non autorisées tente d'accéder à un fichier protégé, l'activité sera autorisée, bloquée, mais les utilisateurs peuvent passer outre la restriction. Toute activité est auditée et peut être examinée dans l'explorateur d'activités.
-
-> [!IMPORTANT]
-> N’incluez pas le chemin d’accès du fichier exécutable, mais uniquement le nom du fichier exécutable (par exemple, browser.exe).
-
-#### <a name="macos-devices-preview"></a>Appareils macOS (préversion)
-
-Tout comme sur les appareils Windows, vous pourrez désormais empêcher les applications macOS d'accéder aux données sensibles en les définissant dans la liste des **applications non autorisées**. 
-
-> [!NOTE]
-> Notez que les applications multiplateformes doivent être saisies avec leurs chemins uniques respectifs au système d'exploitation sur lequel elles s'exécutent.
-
-Pour trouver le chemin complet des applications Mac :
-
-1. Sur l'appareil macOS, ouvrez **Activity Monitor**. Recherchez et double-cliquez sur le processus que vous souhaitez restreindre
-
-2. Choisissez l'onglet **Ouvrir les fichiers et les ports**.
-  
-3. Pour les applications macOS, vous avez besoin du nom complet du chemin d’accès, notamment le nom de l’application.
-
-#### <a name="protect-sensitive-data-from-cloud-synchronization-apps"></a>Protéger les données sensibles des applications de synchronisation cloud
-
-Pour empêcher la synchronisation d’éléments sensibles avec le cloud par des applications de synchronisation cloud, comme *onedrive.exe*, ajoutez l’application de synchronisation cloud à la liste **Applications non autorisées** . Lorsqu'une application de synchronisation cloud non autorisée tente d'accéder à un élément protégé par une stratégie DLP bloquante, DLP peut générer des notifications répétées. Vous pouvez éviter ces notifications répétées en activant l’option de **Mise en quarantaine automatique** sous **Applications non autorisées**.  
-
-##### <a name="auto-quarantine-preview"></a>Mise en quarantaine automatique (préversion)
-
-> [!NOTE]
-> La quarantaine automatique est prise en charge dans Windows 10 uniquement
-
-Lorsqu’elle est activée, la mise en quarantaine automatique se déclenche lorsqu’une application non autorisée tente d’accéder à un élément sensible protégé par DLP. La mise en quarantaine automatique déplace l’élément sensible vers un dossier configuré par l’administrateur et peut laisser un fichier **.txt** espace réservé à la place de l’original. Vous pouvez configurer le texte dans le fichier d’espace réservé pour indiquer aux utilisateurs où l’élément a été déplacé et d’autres informations pertinentes.  
-
-Vous pouvez utiliser la mise en quarantaine automatique pour empêcher une chaîne infinie de notifications DLP pour l’utilisateur et les administrateurs. Consultez le [Scénario 4 : Éviter les boucles de notifications DLP à partir d’applications de synchronisation cloud avec mise en quarantaine automatique (préversion)](#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview).
-
-### <a name="unallowed-bluetooth-apps"></a>Applications Bluetooth non autorisées
-
-Empêchez les utilisateurs de transférer des fichiers protégés par vos stratégies via des applications Bluetooth spécifiques.
-
-### <a name="browser-and-domain-restrictions-to-sensitive-data"></a>Restrictions de navigateurs et de domaines vers des données sensibles
-
-Empêchez les fichiers sensibles, qui correspondent à vos stratégies, d’être partagés avec des domaines de service cloud sans restriction.
-
-#### <a name="unallowed-browsers"></a>Navigateurs non autorisés
-
-Pour les appareils Windows vous ajoutez des navigateurs, identifiés par leur nom exécutable, qui ne pourront pas accéder aux fichiers qui correspondent aux conditions d’une stratégie DLP appliquée dans laquelle la restriction de téléchargement vers les services cloud est définie pour bloquer ou bloquer le remplacement. Lorsque ces navigateurs ne peuvent pas accéder à un fichier, les utilisateurs finaux voient une notification toast leur demandant d’ouvrir le fichier via Microsoft Edge ou d’afficher un message personnalisé s’il en a été configuré.
-
-Pour les appareils macOS, vous devez ajouter le chemin d’accès complet au fichier. Pour trouver le chemin complet des applications Mac :
-
-1. Sur l'appareil macOS, ouvrez **Activity Monitor**. Recherchez et double-cliquez sur le processus que vous souhaitez restreindre
-
-2. Choisissez l'onglet **Ouvrir les fichiers et les ports**.
-  
-3. Pour les applications macOS, vous avez besoin du nom complet du chemin d’accès, notamment le nom de l’application.
-
-#### <a name="service-domains"></a>Domaines de service
-
-> [!NOTE]
-> Le paramètre **Domaines de service** s’applique uniquement aux fichiers chargés à l’aide de Microsoft Edge ou Google Chrome avec [l’extension de conformité Microsoft](dlp-chrome-learn-about.md#learn-about-the-microsoft-compliance-extension) installée.
-
-Vous pouvez déterminer si les fichiers sensibles protégés par vos stratégies peuvent être téléchargés vers des domaines de service spécifiques à partir de Microsoft Edge.
-
-Si le mode de liste est paramétré sur **Bloquer**, l’utilisateur ne peut pas télécharger des éléments sensibles dans ces domaines. Lorsqu’une action de téléchargement est bloquée parce qu’un élément correspond à une stratégie DLP, DLP génère un avertissement ou bloque le téléchargement de l’élément sensible.
-
-Si le mode liste est défini sur **Autoriser**, les utilisateurs pourront charger des éléments sensibles **_uniquement_** vers ces domaines, et l’accès au chargement vers tous les autres domaines n’est pas autorisé.
-
-> [!IMPORTANT]
-> Lorsque le mode de restriction de service est configuré sur « Autoriser », vous devez configurer au moins un domaine de service avant l’application des restrictions.
-
-Utiliser le format de nom de domaine complet du domaine de service sans la fin `.` 
-
-Par exemple :
-
- `www.contoso.com` 
-
-Les caractères génériques ne sont pas pris en charge.
-
-### <a name="additional-settings-for-endpoint-dlp"></a>Paramètres supplémentaires pour le point de terminaison DLP
-
-#### <a name="business-justification-in-policy-tips"></a>Justification métier dans les conseils de stratégie
-
-Vous pouvez contrôler l’interaction des utilisateurs avec l’option de justification métier dans les notifications de conseil de stratégie DLP. Cette option s’affiche lorsque les utilisateurs effectuent une activité protégée par le paramètre **Bloquer avec remplacement** dans une stratégie DLP. Il s’agit d’un paramètre global. Vous pouvez choisir l’une des options suivantes :
-
-- **Afficher les options par défaut et la zone de texte personnalisée** : par défaut, les utilisateurs peuvent sélectionner une justification intégrée ou entrer leur propre texte.
-- **Afficher uniquement les options par défaut** : les utilisateurs peuvent uniquement sélectionner une justification intégrée.
-- **Afficher uniquement la zone de texte personnalisée** : les utilisateurs peuvent uniquement entrer leur propre justification. Seule la zone de texte apparaîtra dans la notification de conseil de politique d'utilisateur final. 
-
-##### <a name="customizing-the-options-in-the-drop-down-menu"></a>Personnalisation des options dans le menu déroulant
-
-Vous pouvez créer jusqu’à cinq options personnalisées qui s’affichent lorsque les utilisateurs interagissent avec le conseil de notification de stratégie en sélectionnant le **menu déroulant Personnaliser les options**. 
-
-
-|Option |Texte par défaut  |
-|---------|---------|
-|Option 1    | **Cela fait partie d’un flux de travail métier établi**  ou vous pouvez entrer un texte personnalisé        |
-|Option 2  |**Mon responsable a approuvé cette action** ou vous pouvez entrer un texte personnalisé         |
-|Option 3   |**Accès urgent requis ; Je notifierai mon responsable séparément** ou vous pourrez entrer un texte personnalisé          |
-|Afficher l’option de faux positif     |**Les informations de ces fichiers ne sont pas sensibles** ou vous pouvez entrer un texte personnalisé          |
-|Option 5    |**Autre** ou vous pouvez entrer un texte personnalisé         |
-
-<!--See [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
-
-### <a name="always-audit-file-activity-for-devices"></a>Toujours auditer l’activité des fichiers pour les appareils
-
-Lors de l’intégration d’appareils, l’activité DLP pour les fichiers Office, PDF et CSV est automatiquement auditée par défaut et peut être consultée dans l’explorateur d’activité. Activez cette fonctionnalité si vous souhaitez que cette activité soit auditée uniquement lorsque des appareils intégrés sont inclus dans une stratégie active.
-
-L’activité des fichiers sera toujours auditée pour les appareils intégrés, qu’ils soient inclus ou non dans une stratégie active.
-
-## <a name="tying-dlp-settings-together"></a>Lier les paramètres DLP ensemble
-
-Avec les points de terminaison DLP et le navigateur Chromium Edge, vous pouvez limiter le partage involontaire des éléments sensibles aux applications et services Cloud non autorisés. Le Chromium Edge comprend les conditions dans lesquelles un élément est limité par une stratégie DLP de point de terminaison et applique les restrictions d’accès.
-
-Lorsque vous utilisez le point de terminaison DLP comme emplacement dans une stratégie DLP correctement configurée et dans le navigateur Microsoft Edge, les navigateurs non autorisé que vous avez définis dans ces paramètres ne pourront pas accéder aux éléments sensibles qui correspondent à vos contrôles de stratégie DLP. Au lieu de cela, les utilisateurs sont redirigés vers des Microsoft Edge qui, avec leur compréhension des restrictions DLP imposées, peuvent bloquer ou restreindre les activités lorsque les conditions de la stratégie DLP sont remplies.
-
-Pour utiliser cette restriction, vous devrez configurer trois éléments importants :
-
-1. Spécifier les emplacements ,services, domaines, adresses IP, avec lesquels vous ne souhaitez pas partager les éléments sensibles.
-
-2. Ajoutez les navigateurs qui ne sont pas autorisés à accéder à certains éléments sensibles lorsqu’une correspondance de la stratégie DLP se produit.
-
-3. Configurez les stratégies DLP pour définir les types d’éléments sensibles pour lesquels le téléchargement doit être limité à ces emplacements en activant **Télécharger vers les services Cloud** et **Accès à partir d’un navigateur non autorisé**.
-
-Vous pouvez continuer à ajouter de nouveaux services, applications et stratégies pour développer et augmenter vos restrictions afin de répondre aux besoins de votre entreprise et de protéger les données sensibles. 
-
-Cette configuration vous permet de garantir la sécurité de vos données tout en évitant les restrictions inutiles qui empêchent les utilisateurs d’accéder aux éléments non sensibles et de les empêcher de les partager.
-
-## <a name="endpoint-dlp-policy-scenarios"></a>Scénarios de stratégie DLP pour les points de terminaison
 
 Pour vous familiariser avec les fonctionnalités de point de terminaison DLP et la manière dont elles se trouvent dans les stratégies DLP, nous avons rassemblé certains scénarios que vous pouvez suivre.
 
@@ -261,7 +37,7 @@ Pour vous familiariser avec les fonctionnalités de point de terminaison DLP et 
 >- [Création d’une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)
 >- [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 
-### <a name="scenario-1-create-a-policy-from-a-template-audit-only"></a>Scénario 1 : créer une stratégie à partir d’un modèle, audit uniquement
+## <a name="scenario-1-create-a-policy-from-a-template-audit-only"></a>Scénario 1 : créer une stratégie à partir d’un modèle, audit uniquement
 
 Ces scénarios nécessitent que les appareils soient déjà intégrés et reportés dans l’Explorateur d’activités. Si vous n’avez pas encore intégré d’appareils, consultez l’article [Prise en main de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md).
 
@@ -287,11 +63,11 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 
 11. Recherchez dans l’explorateur d’activité les données des points de terminaison surveillés. Définissez le filtre d’emplacement pour les appareils et ajoutez la stratégie. Ensuite, filtrez par nom de stratégie pour voir l’impact de cette stratégie ; consultez l’article [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md) si nécessaire.
 
-12. Tenter de partager un test qui contient un contenu qui déclenchera la condition des données des informations personnelles identifiables pour les États-Unis avec une personne extérieure à votre organisation. Cela devrait déclencher la stratégie.
+12. Essayez de partager un élément de test dont le contenu déclenchera la condition relative aux données américaines d'informations personnelles identifiables (PII) avec une personne extérieure à votre organisation. Cela devrait déclencher la politique.
 
 13. Consultez l’Explorateur d’activités pour l’événement.
 
-### <a name="scenario-2-modify-the-existing-policy-set-an-alert"></a>Scénario 2 : modifier la stratégie existante, créer une alerte
+## <a name="scenario-2-modify-the-existing-policy-set-an-alert"></a>Scénario 2 : modifier la stratégie existante, créer une alerte
 
 1. Ouvrir[Page de protection contre la perte de données](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
@@ -303,8 +79,7 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 
 5. Faites défiler vers le bas jusqu’à la section **Rapports d’incident** et configurez **Envoyer une alerte aux administrateurs lorsqu’une correspondance de règle se produit** sur **Activé**. Les alertes par courrier électronique sont envoyées automatiquement à l’administrateur et à toute autre personne que vous ajoutez à la liste des destinataires. 
 
-   > [!div class="mx-imgBorder"]
-   > ![activer les rapports d’incident.](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+![activer les rapports d’incident.](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
    
 6. Dans le cadre de ce scénario, sélectionnez **Envoyer une alerte chaque fois qu’une activité correspond à la règle**.
 
@@ -312,11 +87,11 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 
 8. Conservez tous vos paramètres précédents en choisissant **suivant** puis **Envoyer** les modifications apportées à la stratégie.
 
-9. Tenter de partager un test qui contient un contenu qui déclenchera la condition des données des informations personnelles identifiables pour les États-Unis avec une personne extérieure à votre organisation. Cela devrait déclencher la stratégie.
+9. Essayez de partager un élément de test dont le contenu déclenchera la condition relative aux données américaines d'informations personnelles identifiables (PII) avec une personne extérieure à votre organisation. Cela devrait déclencher la politique.
 
 10. Consultez l’Explorateur d’activités pour l’événement.
 
-### <a name="scenario-3-modify-the-existing-policy-block-the-action-with-allow-override"></a>Scénario 3 : modifier la stratégie existante, bloquer l’action avec l’option autoriser le remplacement
+## <a name="scenario-3-modify-the-existing-policy-block-the-action-with-allow-override"></a>Scénario 3 : modifier la stratégie existante, bloquer l’action avec l’option autoriser le remplacement
 
 1. Ouvrir[Page de protection contre la perte de données](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
@@ -337,7 +112,7 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 
 8. Conservez tous vos paramètres précédents en choisissant **suivant** puis **Envoyer** les modifications apportées à la stratégie.
 
-9. Tenter de partager un test qui contient un contenu qui déclenchera la condition des données des informations personnelles identifiables pour les États-Unis avec une personne extérieure à votre organisation. Cela devrait déclencher la stratégie.
+9. Essayez de partager un élément de test dont le contenu déclenchera la condition relative aux données américaines d'informations personnelles identifiables (PII) avec une personne extérieure à votre organisation. Cela devrait déclencher la politique.
 
    Une fenêtre contextuelle semblable à celle-ci s’affiche sur l’appareil client :
 
@@ -346,9 +121,9 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 
 10. Consultez l’Explorateur d’activités pour l’événement.
 
-### <a name="scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview"></a>Scénario 4 : évitez de boucler les notifications DLP à partir d’applications de synchronisation cloud avec mise en quarantaine automatique (préversion).
+## <a name="scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview"></a>Scénario 4 : évitez de boucler les notifications DLP à partir d’applications de synchronisation cloud avec mise en quarantaine automatique (préversion).
 
-#### <a name="before-you-begin"></a>Avant de commencer
+### <a name="before-you-begin"></a>Avant de commencer
 
 Dans ce scénario, la synchronisation des fichiers avec l’étiquette de confidentialité **Hautement confidentiel** sur OneDrive est bloquée. Il s’agit d’un scénario complexe avec plusieurs composants et procédures. Vous aurez besoin de :
 
@@ -362,7 +137,7 @@ Il existe trois procédures.
 2. Créez une stratégie qui bloque les éléments sensibles qui ont l’étiquette de confidentialité **Hautement confidentiel** .
 3. Créez un document Word sur l’appareil Windows 10 cible de la stratégie, appliquez l’étiquette et copiez-le dans le dossier OneDrive local des comptes d’utilisateurs en cours de synchronisation.  
 
-#### <a name="configure-endpoint-dlp-unallowed-app-and-auto-quarantine-settings"></a>Configurer l’application DLP de point de terminaison non autorisée et les paramètres de mise en quarantaine automatique
+### <a name="configure-endpoint-dlp-unallowed-app-and-auto-quarantine-settings"></a>Configurer l’application DLP de point de terminaison non autorisée et les paramètres de mise en quarantaine automatique
 
 1. Ouvrir [Paramètres DLP de point de terminaison](https://compliance.microsoft.com/datalossprevention?viewid=globalsettings)
 
@@ -397,7 +172,7 @@ Il existe trois procédures.
 
 9. Cliquez sur **Enregistrer**.
 
-#### <a name="configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential"></a>Configurer une stratégie pour bloquer la synchronisation OneDrive des fichiers avec l’étiquette de confidentialité Hautement confidentiel
+### <a name="configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential"></a>Configurer une stratégie pour bloquer la synchronisation OneDrive des fichiers avec l’étiquette de confidentialité Hautement confidentiel
 
 1. Ouvrez la [page de protection contre la perte de données](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
@@ -429,7 +204,7 @@ Il existe trois procédures.
 
 11. La nouvelle stratégie DLP s’affiche dans la liste des stratégies.
 
-#### <a name="test-auto-quarantine-on-the-windows-10-device"></a>Tester la mise en quarantaine automatique sur l’appareil Windows 10
+### <a name="test-auto-quarantine-on-the-windows-10-device"></a>Tester la mise en quarantaine automatique sur l’appareil Windows 10
 
 1. Connectez-vous à l’ordinateur Windows 10 avec le compte d’utilisateur que vous avez spécifié dans [Configurez une stratégie pour bloquer la synchronisation OneDrive des fichiers avec l’étiquette de confidentialité Hautement confidentiel](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential) à l’étape 5.
 
@@ -457,6 +232,23 @@ Il existe trois procédures.
 
 9. Consultez l’Explorateur d’activités pour l’événement.
 
+## <a name="scenario-5-restrict-unintentional-sharing-to-unallowed-cloud-apps-and-services"></a>Scénario 5 : Limiter le partage involontaire à des applications et services en nuage non autorisés.
+
+Avec Endpoint DLP et le navigateur Web Edge, vous pouvez restreindre le partage involontaire d'éléments sensibles vers des applications et services en nuage non autorisés. Edge comprend quand un élément est restreint par une politique DLP et applique les restrictions d'accès.
+
+Lorsque vous sélectionnez **Appareils** comme emplacement dans une politique DLP correctement configurée et que vous utilisez le navigateur Microsoft Edge, les navigateurs non autorisés que vous avez définis dans ces paramètres ne pourront pas accéder aux éléments sensibles qui correspondent aux contrôles de votre politique DLP. Au lieu de cela, les utilisateurs sont redirigés vers des Microsoft Edge qui, avec leur compréhension des restrictions DLP imposées, peuvent bloquer ou restreindre les activités lorsque les conditions de la stratégie DLP sont remplies.
+
+Pour utiliser cette restriction, vous devrez configurer trois éléments importants :
+
+1. Spécifier les emplacements ,services, domaines, adresses IP, avec lesquels vous ne souhaitez pas partager les éléments sensibles.
+
+2. Ajoutez les navigateurs qui ne sont pas autorisés à accéder à certains éléments sensibles lorsqu’une correspondance de la stratégie DLP se produit.
+
+3. Configurez les stratégies DLP pour définir les types d’éléments sensibles pour lesquels le téléchargement doit être limité à ces emplacements en activant **Télécharger vers les services Cloud** et **Accès à partir d’un navigateur non autorisé**.
+
+Vous pouvez continuer à ajouter de nouveaux services, applications et stratégies pour développer et augmenter vos restrictions afin de répondre aux besoins de votre entreprise et de protéger les données sensibles. 
+
+Cette configuration vous permet de garantir la sécurité de vos données tout en évitant les restrictions inutiles qui empêchent les utilisateurs d’accéder aux éléments non sensibles et de les empêcher de les partager.
 ## <a name="see-also"></a>Voir aussi
 
 - [Découvrir la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md)

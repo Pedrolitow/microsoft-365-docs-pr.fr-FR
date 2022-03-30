@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Playbook d'essai des solutions de conformité Microsoft 365.
-ms.openlocfilehash: 896e3fe81c74cc2a594ab88807e0b9505fed1a18
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: e0d48ba9c4a5ca50869b64d6312fe845ef9bf50c
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754258"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679893"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>Manuel d'essai : solutions de conformité Microsoft 365
 
@@ -434,6 +434,6 @@ Identifiez et protégez de manière proactive les risques de confidentialité te
 
 **Qu'inclut-il ?** : pour une liste complète des solutions et fonctionnalités de conformité Microsoft 365 répertoriées par niveau de produit, consultez la [matrice des fonctionnalités](https://go.microsoft.com/fwlink/?linkid=2139145).
 
-**Bibliothèque de contenu technique de sécurité Microsoft** : explorez cette bibliothèque pour trouver des guides interactifs et d'autres contenus d'apprentissage correspondant à vos besoins. [Visitez la bibliothèque](/security).
+**Bibliothèque de contenu technique de sécurité Microsoft** : explorez cette bibliothèque pour trouver des guides interactifs et d'autres contenus d'apprentissage correspondant à vos besoins. [Visitez la bibliothèque](/security/content-library).
 
 **ressources de sécurité Microsoft**: du logiciel anti-programme malveillant à la confiance zéro, obtenez toutes les ressources pertinentes pour les besoins de sécurité de votre organisation. [Visitez ressources](/security/business/resources).

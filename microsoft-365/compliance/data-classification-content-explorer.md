@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur de contenu vous permet d’afficher des éléments étiquetés en mode natif.
-ms.openlocfilehash: 61d262c04d4a304506bc521d155be71f81d219ca
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: f402df53c19da78435e22717577b351fc302d0f4
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468759"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679959"
 ---
 # <a name="get-started-with-content-explorer"></a>Prise en main de l’explorateur de contenu
 
@@ -34,15 +34,7 @@ L’Explorateur de contenu de la classification des données vous permet d’aff
 
 ## <a name="prerequisites"></a>Configuration requise
 
-Chaque compte qui accède et utilise la classification de données doit posséder une licence pour l’un des abonnements suivants :
-
-- Microsoft 365 (E5)
-- Office 365 (E5)
-- Complément Conformité avancée (E5)
-- Complément Threat Intelligence avancé (E5)
-- Microsoft 365 E5/A5, Protection des informations et gouvernance
-- Conformité Microsoft 365 E5/A5
-
+Pour les exigences de licence, afficher [Information Protection : Analyse de la classification des données : Over Content & Activity Explorer](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)
 
 ### <a name="permissions"></a>Autorisations
 
