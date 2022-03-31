@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2438e7690230af88eae72e0864184e771bdd4135
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: d77bb5f61127475c8c7c00e58af6c19013aaffe2
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504808"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755427"
 ---
 # <a name="step-2-evaluate-microsoft-defender-for-identity-overview"></a>Étape 2. Vue d’ensemble de l’évaluation de Microsoft Defender pour l’identité
 
@@ -43,14 +43,12 @@ ms.locfileid: "63504808"
 
 Utilisez les étapes ci-dessous pour activer et piloter Microsoft Defender pour l’identité.
 
-![Étapes d’ajout de Microsoft Defender for Identity à l’environnement d’évaluation Defender.](../../media/defender/m365-defender-identity-eval-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-identity-eval-steps.png" alt-text="Étapes d’ajout de Microsoft Defender pour l’identité à l’environnement d’évaluation Microsoft Defender" lightbox="../../media/defender/m365-defender-identity-eval-steps.png":::
 
 Ce tableau décrit les étapes de l’illustration.
 
-| |Étape  |Description  |
+| Numéro de série|Étape  |Description  |
 |---------|---------|---------|
 |1|[Passer en revue les exigences en matière d’architecture et les concepts clés](eval-defender-identity-architecture.md)    | Comprenez l’architecture de Defender for Identity et assurez-vous que votre environnement répond aux conditions préalables de l’architecture.       |
 |2|[Activer l’environnement d’évaluation](eval-defender-identity-enable-eval.md)     |   Suivez les étapes pour configurer l’environnement d’évaluation.      |
 |3|[Configurer le pilote](eval-defender-identity-pilot.md)     |   Découvrez les paramètres de référence pour votre environnement d’identité et essayez les didacticiels Defender pour l’identité.     |
-||||
-

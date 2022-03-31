@@ -324,7 +324,6 @@
 ##### [Planifier des analyses à l’aide de PowerShell](schedule-antivirus-scans-powershell.md)
 ##### [Planifier des analyses à l’aide de WMI](schedule-antivirus-scans-wmi.md)
 #### [Utilisez une analyse périodique limitée dans Antivirus Microsoft Defender](limited-periodic-scanning-microsoft-defender-antivirus.md)
-#### [Ajuster la performance de l’Antivirus Microsoft Defender](tune-performance-defender-antivirus.md)
 #### [Compatibilité avec d’autres produits de sécurité](microsoft-defender-antivirus-compatibility.md)
 #### [Rechercher les noms de détection des programmes malveillants pour Microsoft Defender pour point de terminaison](find-defender-malware-name.md)
 
@@ -364,9 +363,13 @@
 ##### [Exclusions pour Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [Erreurs courantes à éviter](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
-#### Résolution des problèmes de l’antivirus Microsoft Defender
+#### Diagnostics et performances pour Antivirus Microsoft Defender
+##### [Intégrité de l’appareil et rapports sur la conformité](machine-reports.md)
+##### [Résoudre les problèmes de performances liés à la protection en temps réel](troubleshoot-performance-issues.md) 
 ##### [Résoudre des problèmes de rapports antivirus Microsoft Defender dans Conformité de la mise à jour](troubleshoot-reporting.md)
-##### [Résoudre des problèmes de performance](troubleshoot-performance-issues.md)
+##### [Ajuster la performance de l’Antivirus Microsoft Defender](tune-performance-defender-antivirus.md)
+
+#### Résolution des problèmes de l’antivirus Microsoft Defender
 ##### [Consulter les journaux d'événements et les codes d'erreur pour résoudre les problèmes liés à l'antivirus Microsoft Defender.](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Résoudre des problèmes de l’antivirus Microsoft Defender lors de la migration à partir d’une solution tierce](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
@@ -456,7 +459,6 @@
 #### [Compte-rendu]()
 ##### [Power BI : comment utiliser des API – Exemples](api-power-bi.md)
 ##### [Rapports de protection contre les menaces](threat-protection-reports.md)
-#### [Intégrité de l’appareil et rapports sur la conformité](machine-reports.md)
 
 ### [Repérage avancé]()
 #### [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)

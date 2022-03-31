@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 06952be112f4eb28867a4a0cd4bffbee0c664b5c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 96db917808094487039a13740cba80ad751f062f
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61935608"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755513"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Utiliser des requêtes partagées dans un repérage avancé
 
@@ -38,7 +38,7 @@ ms.locfileid: "61935608"
 
 Les requêtes de [repérage avancé](advanced-hunting-overview.md) peuvent être partagées entre les utilisateurs au sein de la même organisation. Vous pouvez également trouver des requêtes partagées publiquement sur GitHub. Ces requêtes vous permettent d’effectuer rapidement des scénarios de repérage de menace spécifiques sans avoir à créer des requêtes.
 
-![Image des requêtes partagées.](../../media/shared-query-1.png)
+:::image type="content" source="../../media/shared-query-1.png" alt-text="Informations sur les requêtes partagées dans le portail Microsoft 365 Defender web" lightbox="../../media/shared-query-1.png":::
 
 ## <a name="save-modify-and-share-a-query"></a>Enregistrer, modifier et partager une requête
 Vous pouvez enregistrer une requête nouvelle ou existante pour qu’elle soit uniquement accessible à vous-même ou partagée avec d’autres utilisateurs au sein de votre organisation. 
@@ -49,7 +49,7 @@ Vous pouvez enregistrer une requête nouvelle ou existante pour qu’elle soit u
     
 3. Entrez un nom pour la requête. 
 
-   ![Image de l’enregistrement d’une requête.](../../media/shared-query-2.png)
+   :::image type="content" source="../../media/shared-query-2.png" alt-text="Nouvelle requête sur le point d’être enregistrée dans le portail Microsoft 365 Defender" lightbox="../../media/shared-query-2.png":::
 
 4. Sélectionnez le dossier dans lequel vous voulez enregistrer la requête.
     - **Requêtes partagées** : partagées avec tous les utilisateurs de votre organisation
@@ -60,12 +60,12 @@ Vous pouvez enregistrer une requête nouvelle ou existante pour qu’elle soit u
 ## <a name="delete-or-rename-a-query"></a>Supprimer ou renommer une requête
 1. Sélectionnez les trois points à droite d’une requête que vous souhaitez renommer ou supprimer.
 
-    ![Image de la requête suppression.](../../media/shared-query-3.png)
+    :::image type="content" source="../../media/shared-query-3.png" alt-text="Options d’une requête partagée dans la page Recherche avancée du portail Microsoft 365 Defender" lightbox="../../media/shared-query-3.png":::
 
 2. Sélectionnez **Supprimer** et confirmer la suppression. Ou sélectionnez **Renommer** et attribuer un nouveau nom à la requête.
 
 ## <a name="create-a-direct-link-to-a-query"></a>Créer un lien direct vers une requête
-Pour générer un lien qui ouvre votre requête directement dans l’éditeur de requête de recherche avancée, finalisez votre requête et sélectionnez **le lien partager.**
+Pour générer un lien qui ouvre votre requête directement dans l’éditeur de requête de recherche avancée, finalisez votre requête et sélectionnez **Le lien partager**.
 
 ## <a name="access-queries-in-the-github-repository"></a>Accéder aux requêtes dans le référentiel GitHub  
 Les chercheurs en matière de sécurité Microsoft partagent régulièrement des requêtes de repérage avancée dans un [référentiel public désigné sur GitHub](https://aka.ms/hunting-queries). Ce référentiel est ouvert aux contributions. Si vous souhaitez contribuer, [ veuillez rejoindre GitHub gratuitement](https://github.com/).
@@ -74,7 +74,7 @@ Les chercheurs en matière de sécurité Microsoft partagent régulièrement des
 >Les chercheurs en matière de sécurité Microsoft proposent également des requêtes de repérage avancé que vous pouvez utiliser pour localiser les activités et indicateurs associés aux menaces émergentes. Ces requêtes sont fournies dans le cadre des rapports [d’analyse](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) des menaces Microsoft 365 Defender.
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques associées
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: adaf1a7798c9e2e7b016a85577c1f62995a7a78e
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 4fff094b06dfa265f9fc44c568216582083ce1d9
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172054"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755468"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>Pilote Microsoft Defender pour le point de terminaison
 
@@ -34,7 +34,7 @@ Cet article vous guide dans le processus d’exécution d’un pilote pour Micro
 
 Utilisez les étapes suivantes pour configurer le pilote de Microsoft Defender pour Endpoint. 
 
-![Étapes d’ajout de Microsoft Defender for Identity à l’environnement d’évaluation Defender.](../../media/defender/m365-defender-endpoint-pilot-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-endpoint-pilot-steps.png" alt-text="Étapes d’ajout de Microsoft Defender pour l’identité à l’environnement d’évaluation Microsoft Defender" lightbox="../../media/defender/m365-defender-endpoint-pilot-steps.png":::
 
 - Étape 1. Vérifier le groupe pilote
 - Étape 2. Tester les fonctionnalités
@@ -44,7 +44,7 @@ Lorsque vous pilotez Microsoft Defender pour endpoint, vous pouvez choisir d’i
 Vous pouvez ensuite essayer des fonctionnalités disponibles, telles que l’exécution de simulations d’attaques et l’analyse de la façon dont Defender pour le point de terminaison surface les activités malveillantes et vous permet d’effectuer une réponse efficace. 
 
 ## <a name="step-1-verify-pilot-group"></a>Étape 1. Vérifier le groupe pilote
-Après avoir effectué les étapes d’intégration décrites dans la [section](eval-defender-endpoint-enable-eval.md) Activer l’évaluation, vous devez voir les appareils dans la liste d’inventaire des appareils environ après une heure. 
+Après avoir effectué les étapes d’intégration décrites dans [la section Activer](eval-defender-endpoint-enable-eval.md) l’évaluation, vous devez voir les appareils dans la liste d’inventaire des appareils environ après une heure. 
 
 Lorsque vous voyez vos appareils intégrés, vous pouvez passer aux fonctionnalités d’essai. 
 
@@ -64,19 +64,19 @@ Les menaces gestion des vulnérabilités vous aident à vous concentrer sur les 
 ### <a name="run-a-simulation"></a>Exécuter une simulation
 Microsoft Defender pour point de terminaison est livré avec des [scénarios](https://securitycenter.windows.com/tutorials) d’attaque « Faites-le vous-même » que vous pouvez exécuter sur vos appareils pilotes.  Chaque document inclut les exigences en matière de système d’exploitation et d’application, ainsi que des instructions détaillées propres à un scénario d’attaque. Ces scripts sont sûrs, documentés et faciles à utiliser. Ces scénarios reflèteront les fonctionnalités de Defender for Endpoint et vous feront découvrir l’expérience d’examen.
 
-Pour exécuter l’une des simulations fournies, vous avez besoin d’au moins [un appareil intégré.](../defender-endpoint/onboard-configure.md)
+Pour exécuter l’une des simulations fournies, vous avez besoin d’au moins [un appareil intégré](../defender-endpoint/onboard-configure.md).
 
-1. Dans **les**  >  **simulations d'& didacticiels,** sélectionnez les scénarios d’attaque disponibles que vous souhaitez simuler :
+1. Dans HelpSimulations  > **& didacticiels**, sélectionnez les scénarios d’attaque disponibles que vous souhaitez simuler :
 
    - **Scénario 1 : le document abandonne la porte dérobée** : simule la remise d’un document leurre d’ingénierie sociale. Le document lance une porte dérobée spécialement conçue pour donner le contrôle aux attaquants.
 
-   - **Scénario 2** : script PowerShell dans une attaque sans fichier : simule une attaque sans fichier qui s’appuie sur PowerShell, présentant la réduction de la surface d’attaque et la détection de l’apprentissage de l’activité de mémoire malveillante.
+   - **Scénario 2 : script PowerShell** dans une attaque sans fichier : simule une attaque sans fichier qui s’appuie sur PowerShell, présentant la réduction de la surface d’attaque et la détection de l’apprentissage de l’activité de mémoire malveillante.
 
    - **Scénario 3 : réponse** automatisée aux incidents : déclenche une enquête automatisée, qui recherche et remédie automatiquement aux artefacts de violation pour mettre à l’échelle votre capacité de réponse aux incidents.
 
 2. Téléchargez et lisez le document de la walkthrough correspondant fourni avec votre scénario sélectionné.
 
-3. Téléchargez le fichier de simulation ou copiez le script de simulation en naviguant vers l’aide  >  **simulations & didacticiels**. Vous pouvez choisir de télécharger le fichier ou le script sur le périphérique de test, mais ce n’est pas obligatoire.
+3. Téléchargez le fichier de simulation ou copiez le script de simulation en naviguant vers **HelpSimulations** >  **& didacticiels**. Vous pouvez choisir de télécharger le fichier ou le script sur le périphérique de test, mais ce n’est pas obligatoire.
 
 4. Exécutez le fichier ou le script de simulation sur le périphérique de test comme indiqué dans le document pas à pas.
 

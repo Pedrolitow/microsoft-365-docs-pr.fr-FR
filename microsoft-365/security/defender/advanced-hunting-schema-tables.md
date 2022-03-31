@@ -1,5 +1,5 @@
 ---
-title: Tables de données dans le schéma Microsoft 365 Defender de recherche avancée
+title: Tables de données dans le Microsoft 365 Defender de recherche avancée
 description: Découvrez les tableaux du schéma de repérage avancé pour comprendre les données sur lesquelles vous pouvez exécuter des requêtes de repérage de menace
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, data
 search.product: eADQiWindows 10XVcnh
@@ -18,45 +18,48 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cd087ef92a261904ce43951f2a29bb64639405ac
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: a496e0e293e72821016d6efa5fbd9622f669ab0b
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786029"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755533"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Comprendre le schéma de repérage avancé
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **S’applique à :**
+
 - Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Le [schéma de recherche](advanced-hunting-overview.md) avancée est composé de plusieurs tables qui fournissent des informations sur les événements ou sur les appareils, les alertes, les identités et d’autres types d’entités. Pour générer efficacement des requêtes qui s’étendent sur plusieurs tables, vous devez comprendre les tables et les colonnes du schéma de repérage avancé.
 
-## <a name="get-schema-information-in-the-security-center"></a>Obtenir des informations de schéma dans le centre de sécurité
+<a name="get-schema-information-in-the-security-center"></a>
+
+## <a name="get-schema-information"></a>Obtenir des informations de schéma
+
 Lors de la construction de requêtes, utilisez la référence de schéma intégrée pour obtenir rapidement les informations suivantes sur chaque table du schéma :
 
-- **Description des tableaux**: type de données contenues dans la table et source de ces données.
-- **Colonnes**— toutes les colonnes du tableau.
-- **Types d’action**: valeurs possibles dans la `ActionType` colonne représentant les types d’événements pris en charge par le tableau. Ces informations sont fournies uniquement pour les tables qui contiennent des informations sur les événements.
-- **Exemple de requête**: exemples de requêtes qui présentent la façon dont la table peut être utilisée.
+- **Description des tableaux** : type de données contenues dans la table et source de ces données.
+- **Colonnes** — toutes les colonnes du tableau.
+- **Types d’action** : valeurs possibles dans la colonne `ActionType` représentant les types d’événements pris en charge par le tableau. Ces informations sont fournies uniquement pour les tables qui contiennent des informations sur les événements.
+- **Exemple de requête** : exemples de requêtes qui présentent la façon dont la table peut être utilisée.
 
 ### <a name="access-the-schema-reference"></a>Accéder à la référence de schéma
-Pour accéder rapidement à la  référence de schéma, sélectionnez l’action de référence Afficher en regard du nom de la table dans la représentation de schéma. Vous pouvez également sélectionner une **référence de schéma** pour rechercher une table.
+Pour accéder rapidement à la référence de schéma, sélectionnez **l’action de** référence Afficher en regard du nom de la table dans la représentation de schéma. Vous pouvez également sélectionner une **référence de schéma** pour rechercher une table.
 
-![Image montrant comment accéder à la référence de schéma dans le portail.](../../media/understand-schema-1.png)
+:::image type="content" source="../../media/understand-schema-1.png" alt-text="Page Référence du schéma sur la page Recherche avancée du portail Microsoft 365 Defender" lightbox="../../media/understand-schema-1.png":::
 
 ## <a name="learn-the-schema-tables"></a>Découvrir les tableaux de schéma
-La référence suivante répertorie les tableaux du schéma. Chaque nom de tableau renvoie à une page décrivant les noms des colonnes de ce tableau. Les noms de table et de colonne sont également répertoriés dans le centre de sécurité dans le cadre de la représentation de schéma sur l’écran de recherche avancée.
+La référence suivante répertorie les tableaux du schéma. Chaque nom de tableau renvoie à une page décrivant les noms des colonnes de ce tableau. Les noms de table et de colonne sont également répertoriés dans Defender pour cloud dans le cadre de la représentation de schéma sur l’écran de recherche avancée.
 
 | Nom du tableau | Description |
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Fichiers, adresses IP, URL, utilisateurs ou appareils associés à des alertes |
-| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Alertes de Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Microsoft Cloud App Security et Microsoft Defender pour l’identité, y compris les informations de gravité et la catégorisation des menaces  |
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Alertes de Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Microsoft Defender pour les applications cloud et Microsoft Defender pour l’identité, y compris les informations de gravité et la catégorisation des menaces  |
 | **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Événements impliquant des comptes et des objets dans Office 365 et d’autres applications et services cloud |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Plusieurs types d’événements, y compris les événements déclenchés par des contrôles de sécurité tels que l’Antivirus Windows Defender et la protection contre les exploits |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | Informations de certificat des fichiers signés obtenus à partir d’événements de vérification de certificat sur les points de terminaison |
@@ -82,7 +85,7 @@ La référence suivante répertorie les tableaux du schéma. Chaque nom de table
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Événements d’authentification sur Active Directory et les services en ligne Microsoft |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Requêtes pour les objets Active Directory, tels que les utilisateurs, les groupes, les appareils et les domaines |
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques associées
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)

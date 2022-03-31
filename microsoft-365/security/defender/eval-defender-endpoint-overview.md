@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 24600644e08bdc2b0a208d68d6da1078543bd2bd
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 05dbf222762837f2916a76cc5b183a99cd981101
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325948"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755118"
 ---
 # <a name="step-4-evaluate-microsoft-defender-for-endpoint-overview"></a>Étape 4. Vue d’ensemble de l’évaluation de Microsoft Defender for Endpoint
 
@@ -41,7 +41,7 @@ Cet article décrit le processus d’activer et de piloter Microsoft Defender po
 
 Utilisez les étapes suivantes pour activer et piloter Microsoft Defender pour le point de terminaison.
 
-![Étapes d’ajout de Microsoft Defender for Endpoint à l’environnement d’évaluation Defender.](../../media/defender/m365-defender-endpoint-eval-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-endpoint-eval-steps.png" alt-text="Étapes d’ajout de Microsoft Defender for Endpoint à l’environnement d’évaluation Microsoft Defender" lightbox="../../media/defender/m365-defender-endpoint-eval-steps.png":::
 
 
 Le tableau suivant décrit les étapes de l’illustration.
@@ -50,6 +50,4 @@ Le tableau suivant décrit les étapes de l’illustration.
 |---------|---------|
 | [Étape 1. Passer en revue les exigences en matière d’architecture et les concepts clés](eval-defender-endpoint-architecture.md)    | Comprendre l’architecture de Defender for Endpoint et les fonctionnalités à votre disposition.       |
 |[Étape 2. Activer l’environnement d’évaluation](eval-defender-endpoint-enable-eval.md)     |   Suivez les étapes de configuration de l’environnement d’évaluation.      |
-|[Étape 3. Configurer le pilote ](eval-defender-endpoint-pilot.md)    |    Vérifiez votre groupe pilote, exécutez des simulations et familiarisez-vous avec les fonctionnalités clés et les tableaux de bord.     |
-
-
+|[Étape 3. Configurer le pilote ](eval-defender-endpoint-pilot.md)    |    Vérifiez votre groupe pilote, exécutez des simulations et familiarisez-vous avec les fonctionnalités clés et les tableaux de bord. |

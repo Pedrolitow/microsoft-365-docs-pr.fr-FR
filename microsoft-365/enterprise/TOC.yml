@@ -181,15 +181,22 @@
       items:
         - name: "État d'intégrité du service Microsoft\_365"
           href: microsoft-365-service-health.md
-        - name: Surveillance d’Exchange Online.
-          href: microsoft-365-exchange-monitoring.md
+        - name: Surveillance Microsoft 365
+          href: microsoft-365-monitoring.md
           items:
-            - name: Alertes de service pour l’utilisation de la boîte aux lettres
-              href: microsoft-365-mailbox-utilization-service-alerts.md
-            - name: Alertes de service pour les retards de source MRS
-              href: microsoft-365-mrs-source-delays-service-alerts.md
-            - name: Alertes de service pour les messages en file d’attente pour les destinataires externes
-              href: microsoft-365-external-recipient-service-alerts.md
+            - name: Surveillance d’Exchange Online.
+              href: microsoft-365-exchange-monitoring.md
+              items:
+                - name: Alertes de service pour l’utilisation de la boîte aux lettres
+                  href: microsoft-365-mailbox-utilization-service-alerts.md
+                - name: Alertes de service pour les retards de source MRS
+                  href: microsoft-365-mrs-source-delays-service-alerts.md
+                - name: Alertes de service pour les messages en file d’attente pour les destinataires externes
+                  href: microsoft-365-external-recipient-service-alerts.md
+            - name: Surveillance de Microsoft 365 Apps
+              href: microsoft-365-apps-monitoring.md
+            - name: Surveillance Microsoft 365 Teams
+              href: microsoft-365-teams-monitoring.md
         - name: Guides de configuration
           href: setup-guides-for-microsoft-365.md
     - name: Plusieurs clients
@@ -402,7 +409,7 @@
       items:
         - name: Préparez-vous
           href: configure-services-and-applications.md
-        - name: "Exchange\_Online"
+        - name: Exchange Online
           href: /Exchange/exchange-online
         - name: SharePoint
           href: /sharepoint/sharepoint-online

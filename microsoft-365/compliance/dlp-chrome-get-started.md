@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Préparez, puis déployez l’extension de la conformité Microsoft.
-ms.openlocfilehash: 7b675db1e17e7b7609a7a0394e2dffc8f2a74887
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.openlocfilehash: 5ffd04ee0b89c2e920f55c3e6fbefbab4c82983e
+ms.sourcegitcommit: db2ed146b46ade9ea62eed9cb8efff5fea7a35e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "62909650"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "64481383"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Prise en main de l’extension de la conformité Microsoft
 
@@ -49,7 +49,7 @@ Pour utiliser l’extension de la conformité Microsoft, l’appareil doit être
 
 Avant de commencer, vous devez confirmer votre [abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) et tous les modules complémentaires. Pour accéder à la fonctionnalité de points de terminaison DLP et l’utiliser, vous devez disposer de l’un de ces abonnements ou modules complémentaires.
 
-- Microsoft 365 E5
+- Microsoft 365 E5
 - Microsoft 365 A5 (EDU)
 - Microsoft 365 E5 Conformité
 - Microsoft 365 A5 Conformité
@@ -60,12 +60,12 @@ Pour obtenir des instructions détaillées sur les licences, consultez [instruct
 
 - Votre organisation doit avoir une licence pour la DLP de point de terminaison
 - Vos appareils doivent exécuter Windows 10 x64 build 1809 ou version ultérieure.
-- La version client Antimalware doit être 4.18.2101.9 ou ultérieure. Vérifiez votre version actuelle à l’aide de l’application **Sécurité Windows**, sélectionnez l’icône **Paramètres**, puis **À propos de**.
+- L’appareil doit avoir la version du client Antimalware 4.18.2202.x ou ultérieure. Vérifiez votre version actuelle à l’aide de l’application **Sécurité Windows**, sélectionnez l’icône **Paramètres**, puis **À propos de**.
 
 
 ### <a name="permissions"></a>Autorisations
 
-Les données du point de terminaison DLP peuvent être affichées dans [l’Explorateur d’activités](data-classification-activity-explorer.md). Il existe sept rôles qui accordent l’autorisation à l’Explorateur d’activités, le compte que vous utilisez pour accéder aux données doit être membre de l’un d’eux.
+Les données de la protection contre la perte de données du point de terminaison peuvent être affichées dans [Explorateur d’activités](data-classification-activity-explorer.md). Il existe sept rôles qui accordent l’autorisation à l’Explorateur d’activités. Le compte que vous utilisez pour accéder aux données doit être membre de l’un d’eux.
 
 - Administrateur global
 - Administrateur de mise en conformité
@@ -108,7 +108,7 @@ Le déploiement de l’extension de la conformité Microsoft est un processus en
 
 ### <a name="prepare-infrastructure"></a>Préparation de l'infrastructure
 
-Si vous déployez l'extension de conformité Microsoft sur tous vos appareils Windows 10 contrôlés, vous devez supprimer Google Chrome des listes des applications et des navigateurs non autorisés. Pour plus d'informations, voir [Navigateurs non autorisés ](endpoint-dlp-using.md#unallowed-browsers). Si vous ne le déployez que sur quelques appareils, vous pouvez laisser Chrome sur la liste des navigateurs non autorisés ou des applications non autorisées. L'extension de conformité Microsoft contournera les restrictions des deux listes pour les ordinateurs sur lesquels elle est installée.
+Si vous déployez l'extension de conformité Microsoft sur tous vos appareils Windows 10 contrôlés, vous devez supprimer Google Chrome des listes des applications et des navigateurs non autorisés. Pour plus d'informations, voir [Navigateurs non autorisés ](dlp-configure-endpoint-settings.md#unallowed-browsers). Si vous ne le déployez que sur quelques appareils, vous pouvez laisser Chrome sur la liste des navigateurs non autorisés ou des applications non autorisées. L'extension de conformité Microsoft contournera les restrictions des deux listes pour les ordinateurs sur lesquels elle est installée.
 
 ### <a name="prepare-your-devices"></a>Préparer vos appareils
 
@@ -121,40 +121,13 @@ Si vous déployez l'extension de conformité Microsoft sur tous vos appareils Wi
 
 Il s'agit de la méthode recommandée.
 
-1. Connectez-vous à l'ordinateur Windows 10 sur lequel vous souhaitez installer l'extension de conformité Microsoft, puis exécutez ce script PowerShell en tant qu'administrateur.
+1. Accédez à [Extension de la conformité Microsoft : Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
 
-   ```powershell
-   Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-   ```
-
-2. Accédez à [Extension de la conformité Microsoft : Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
-
-3. Installez l’extension à l’aide des instructions de la page Chrome Web Store.
+2. Installez l’extension à l’aide des instructions de la page Chrome Web Store.
 
 ### <a name="deploy-using-microsoft-endpoint-manager"></a>Déployez à l'aide de Microsoft Endpoint Configuration Manager
 
 Utilisez cette méthode de configuration pour les déploiements à l'échelle de l'entreprise.
-
-##### <a name="enabling-required-registry-value-via-microsoft-endpoint-manager"></a>Activation de la clé de Registre requise via Microsoft Endpoint Manager
-
-1. Créez un script PowerShell avec le contenu suivant :
-
-    ```powershell
-    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-    ```
-
-2. Connectez-vous au [Centre d’administration Microsoft Endpoint Manager](https://endpoint.microsoft.com).
-
-3. Accédez à **Appareils** > **Scripts** puis sélectionnez **Ajouter**.
-
-4. Accédez à l’emplacement du script créé lorsque vous y avez été invité.
-
-5. Sélectionnez les paramètres suivants :
-    1. Exécuter ce script à l’aide des informations d’identification connectées : NON
-    1. Appliquer la vérification de la signature de script : NON
-    1. Exécuter un script dans l’hôte PowerShell 64 bits : OUI
-
-6. Sélectionnez les groupes d’appareils appropriés et appliquez la stratégie.
 
 #### <a name="microsoft-endpoint-manager-force-install-steps"></a>Étapes de l'installation forcée de Microsoft Endpoint Manager
 
@@ -186,39 +159,7 @@ Avant d'ajouter l'extension de la conformité Microsoft à la liste des extensio
 
 ### <a name="deploy-using-group-policy"></a>Déployer à l’aide d’une stratégie de groupe
 
-Si vous ne voulez pas utiliser Microsoft Endpoint Manager, vous pouvez utiliser des stratégies de groupe pour déployer l’extension de la conformité Microsoft au sein de votre organisation
-
-1. Vos appareils doivent être gérables via une stratégie de groupe, et vous devez importer tous les ADMX Chrome dans le Store central de stratégies de groupe. Pour plus d’informations, reportez-vous à l’article [Comment créer et gérer le magasin central des modèles d’administration de stratégie de groupe dans Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
-
-2. Créez un script PowerShell en utilisant cette commande PowerShell :
-
-    ```powershell
-    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-    ```
-
-3. Ouvrez la **Console de gestion des stratégies de groupe** et accédez à votre unité d’organisation.
-
-4. Cliquez avec le bouton droit et sélectionnez **Créer un GPO dans ce domaine et lier ici**. Lorsque vous y êtes invité, attribuez un nom descriptif à cet objet de stratégie de groupe (GPO) et terminez sa création.
-
-5. Cliquez avec le bouton droit sur le GPO, puis sélectionnez **Modifier**.
-
-6. Accédez à **Configuration de l'ordinateur** > **Préférences** > **Panneau de configuration Paramètres** > **Tâches planifiées**.
-
-7. Créez une tâche immédiate en faisant un clic droit et en sélectionnant **Nouveau** > **Tâche immédiate (au moins Windows 7)**.
-
-8. Donnez un nom et une description à la tâche.
-
-9. Sélectionnez le compte correspondant pour exécuter la tâche immédiate (par exemple, NT Authority).
-
-10. Sélectionnez **Exécuter avec les autorisations maximales**.
-
-11. Configurez la stratégie pour Windows 10.
-
-12. Dans l’onglet **Actions** , sélectionnez l’action **Démarrer un programme**.
-
-13. Entrez le chemin d’accès au programme/script créé à l’étape 1.
-
-14. Sélectionnez **Appliquer**.
+Si vous ne souhaitez pas utiliser Microsoft Endpoint Manager, vous pouvez utiliser des stratégies de groupe pour déployer l’extension de conformité Microsoft au sein de votre organisation.
 
 #### <a name="adding-the-chrome-extension-to-the-forceinstall-list"></a>Ajout de l'extension Chrome à la liste de ForceInstall
 

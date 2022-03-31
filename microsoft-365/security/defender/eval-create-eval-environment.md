@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: d81d33a01802ebdf8ef0ea67a9ee74fc69b79384
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: 98d2ee2394e4384fbf8d7b2b3832d11a847b8521
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504730"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755162"
 ---
 # <a name="step-1-create-the-microsoft-365-defender-evaluation-environment-for-greater-cyber-security"></a>Étape 1. Créer l’environnement d Microsoft 365 Defender d’évaluation pour une cybersécurité accrue
 
@@ -54,15 +54,15 @@ La seconde consiste à [configurer votre environnement de laboratoire d Microsof
 2. **Sélectionnez Acheter des services** dans le menu de navigation.
 3. Faites défiler vers le bas jusqu Office 365 section et sélectionnez le bouton **Détails** sous Office 365 E5 licence.
 
-   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="La Office 365 section contient un bouton Détails à cliquer.":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="Bouton Détails dans le portail Microsoft 365 Defender web" lightbox="../../media/mdo-eval/2_mdo-eval-license-details.png":::
 
 4. Sélectionnez **Démarrer le lien d’essai** gratuit.
 
-   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="Cliquez sur « Démarrer l’essai gratuit » (frais de 35 $).":::
+   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="Bouton Démarrer la version d’essai gratuite sur Microsoft 365 Defender web" lightbox="../../media/mdo-eval/3-m365-purchase-button.png":::
 
 5. Confirmez votre demande et cliquez sur **le bouton Essayer maintenant** .
 
-   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="Il existe un bouton « Essayer maintenant » dans le panneau « Check out, confirm your order » (pour une version d’Office 365 E5 d’un mois pour 25 utilisateurs).":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="Bouton Essayer maintenant dans le portail Microsoft 365 Defender web" lightbox="../../media/mdo-eval/4_mdo-trial-order.png":::
 
 ## <a name="go-to-the-next-step"></a>Passer à l’étape suivante
 

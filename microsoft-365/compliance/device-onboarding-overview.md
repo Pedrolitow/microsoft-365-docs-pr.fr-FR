@@ -19,23 +19,23 @@ ms.collection:
 search.appverid:
 - MET150
 description: Intégrer des appareils Windows 10 et Windows 11 dans Microsoft 365
-ms.openlocfilehash: dc2324f9ab8105d51730071f84397c8648c9a9de
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: ea1038554349b6c035c52bd3d3429d71d7d866bc
+ms.sourcegitcommit: 9d563faeaa50b59b0b468dbb373d886e5270f58e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525056"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64387130"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>Vue d’ensemble de l’intégration des appareils Windows 10 et Windows 11 dans Microsoft 365
 
 **S’applique à :**
 
-- [Protection contre la perte de données de point de terminaison (DLP) pour Microsoft 365](./endpoint-dlp-learn-about.md)
+- [Protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
 - [Gestion des risques internes](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
-Microsoft 365 la protection contre la perte de données de point de terminaison (DLP) et la gestion des risques internes nécessitent que les appareils Windows 10 Windows et Windows 11 soient intégrés au service afin qu’ils puissent envoyer des données de surveillance aux services.
+La protection contre la perte de données de point de terminaison (DLP) et la gestion des risques internes nécessitent que les appareils Windows 10 Windows et Windows 11 soient intégrés au service afin qu’ils puissent envoyer des données de surveillance aux services.
  
-Microsoft 365 point de terminaison DLP vous permet de surveiller les appareils Windows 10 ou Windows 11 et de détecter les situations d’utilisation et de partage des éléments sensibles. Ainsi, vous bénéficiez de la visibilité et du contrôle dont vous avez besoin pour vous assurer qu’ils sont utilisés et protégés correctement, et pour éviter tout comportement risqué susceptible de les compromettre. Si vous souhaitez en savoir plus sur les offres DLP de Microsoft, veuillez consulter la rubrique [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md). Pour en savoir plus sur le point de terminaison DLP, voir [En savoir plus sur la protection contre la perte de données de point de terminaison.](endpoint-dlp-learn-about.md)
+La protection contre la perte de données (DLP) de point de terminaison vous permet de surveiller les appareils Windows 10 ou Windows 11 et de détecter quand les éléments sensibles sont utilisés et partagés. Ainsi, vous bénéficiez de la visibilité et du contrôle dont vous avez besoin pour vous assurer qu’ils sont utilisés et protégés correctement, et pour éviter tout comportement risqué susceptible de les compromettre. Si vous souhaitez en savoir plus sur les offres DLP de Microsoft, veuillez consulter la rubrique [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md). Pour en savoir plus sur le point de terminaison DLP, voir [En savoir plus sur la protection contre la perte de données de point de terminaison.](endpoint-dlp-learn-about.md)
 
 La gestion des risques internes utilise l’ensemble des indicateurs de service et tiers pour vous aider à identifier, trier et agir rapidement sur l’activité des utilisateurs à risque. À l’aide des journaux de Microsoft 365 et de Microsoft Graph, la gestion des risques internes vous permet de définir des stratégies spécifiques pour identifier les indicateurs de risque et prendre des mesures pour atténuer ces risques. Pour plus d’informations, voir [En savoir plus sur la gestion des risques internes dans Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365).
 
@@ -120,10 +120,7 @@ Dans ce scénario de déploiement, vous allez intégrer des appareils Windows 10
    > [!NOTE]
    > Bien que l’activation de l’intégration des appareils dure généralement environ 60 secondes, patientez jusqu’à 30 minutes avant de contacter le support Microsoft.
 
-2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Appareils intégrés**.
-
-   > [!div class="mx-imgBorder"]
-   > ![activer la gestion des appareils.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+2. Ouvrez la page de paramètres du centre de conformité et sélectionnez **Activer la surveillance d’appareils Windows**.
 
 3. Sélectionnez **Gestion des appareils** pour ouvrir la liste des **Appareils**. 
 

@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Référence de configuration et composant de stratégie DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 4888569318fd24d25368dc1c923a1efced9f4126
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 9b9658db71ea9945cedb746ec688eff5018a4ba4
+ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63675435"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64520613"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Référence de stratégie de protection contre la perte de données
 
@@ -101,15 +101,15 @@ mise à jour : 23/06/2021
 
 Une stratégie DLP peut rechercher et protéger des éléments qui contiennent des informations sensibles à plusieurs emplacements.
 
-|Emplacement  |Inclure/exclure l’étendue  |État des données  |Conditions préalables supplémentaires |
+|Lieu  |Inclure/exclure l’étendue  |État des données  |Conditions préalables supplémentaires |
 |---------|---------|---------|---------|
 |Exchange en ligne |groupe de distribution | data-in-motion| Non |
 |SharePoint sites en ligne   |sites       | données au repos </br> données en cours d’utilisation | Non|
 |Les comptes OneDrive Entreprise| compte ou groupe de distribution |données au repos </br> données en cours d’utilisation|Non|
 |conversation et messages de canal Teams     | compte ou groupe de distribution |data-in-motion </br> données en cours d’utilisation |  Non       |
 |Microsoft Defender for Cloud Apps   | instance d’application cloud       |données au repos         | - [Utiliser des stratégies de protection contre la perte de données pour les applications cloud non Microsoft](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|Appareils  |utilisateurs ou groupe         |données au repos </br>  données en cours d’utilisation </br>  data-in-motion         |- [En savoir plus sur Microsoft 365 protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Mise en place de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Configurer les paramètres de proxy d’appareil et de connexion Internet pour la Protection des informations](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
-|Référentiels locaux (partages de fichiers et SharePoint)    |référentiel         | données au repos         | - [En savoir plus sur Microsoft 365 protection contre la perte de données sur site](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Mise en place du scanneur local de protection contre la perte de données](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
+|Appareils  |utilisateurs ou groupe         |données au repos </br>  données en cours d’utilisation </br>  data-in-motion         |- [En savoir plus sur Microsoft 365 protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Démarrage protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Configurer les paramètres de proxy d’appareil et de connexion Internet pour Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
+|Référentiels locaux (partages de fichiers et SharePoint)    |référentiel         | données au repos         | - [En savoir plus sur Microsoft 365 protection contre la perte de données sur site](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Démarrage avec le scanneur local de protection contre la perte de données](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
 |PowerBI| espaces de travail | données en cours d’utilisation | Non|
 
 Si vous décidez d’inclure des groupes de distribution particuliers dans Exchange, la stratégie DLP est uniquement étendue aux membres de ceux-ci. De manière identique, l’exclusion d’un groupe de distribution exclut tous ses membres de l’évaluation de la stratégie. Vous pouvez choisir de limiter une stratégie aux membres des listes de distribution, aux groupes de distribution dynamiques et aux groupes de sécurité. Une stratégie DLP ne peut pas contenir plus de 50 inclusions et exclusions de ce genre.
@@ -125,7 +125,7 @@ Les stratégies DLP détectent les éléments sensibles en les faisant correspon
 > [!IMPORTANT]
 > Lorsque vous sélectionnez plusieurs emplacements pour une stratégie, une valeur « non » pour une catégorie de définition de contenu est prioritaire sur la valeur « oui ». Par exemple, lorsque vous sélectionnez SharePoint sites uniquement, la stratégie prendra en charge la détection d’éléments sensibles par une ou plusieurs valeurs SIT, par étiquette de confidentialité ou par étiquette de rétention. Toutefois, lorsque vous sélectionnez ***SharePoint sites et*** Teams les emplacements des messages de conversation et de canal, la stratégie ne prendra en charge que la détection d’éléments sensibles par SIT.
 
-|Emplacement| Le contenu peut être défini par SIT| Le contenu peut être défini comme étiquette de sensibilité| Le contenu peut être défini par une étiquette de rétention|
+|Lieu| Le contenu peut être défini par SIT| Le contenu peut être défini comme étiquette de sensibilité| Le contenu peut être défini par une étiquette de rétention|
 |---------|---------|---------|---------|
 |Exchange en ligne|Oui| Oui| Non|
 |SharePoint sites en ligne| Oui| Oui| Oui|
@@ -297,7 +297,7 @@ Les options de contexte disponibles changent en fonction de l’emplacement que 
 - Le contenu contient
 - Consultez les [activités de point de terminaison que vous pouvez surveiller et sur](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
-##### <a name="conditions-microsoft-defender-for-cloud-apps-supports"></a>Conditions que Microsoft Defender pour les applications cloud prend en charge
+##### <a name="conditions-microsoft-defender-for-cloud-apps-supports"></a>Conditions Microsoft Defender for Cloud Apps prend en charge
 
 - Le contenu contient
 - Le contenu est partagé à partir Microsoft 365
@@ -405,33 +405,33 @@ Lorsque vous sélectionnez **Auditer** ou restreindre les activités sur les app
 
 - Toutes les applications
 - Par une liste d’applications restreintes que vous définissez
-- Ay a restricted app group (preview) that you define.
+- Un groupe d’applications restreint (prévisualisation) que vous définissez.
 
 ##### <a name="service-domain-and-browser-activities"></a>Activités de domaine de service et de navigateur
 
 Lorsque vous configurez les domaines de **service cloud Autoriser/** Bloquer et la liste des **navigateurs** non autorisé (voir [Restrictions](dlp-configure-endpoint-settings.md#browser-and-domain-restrictions-to-sensitive-data) de navigateur et de domaine sur les données sensibles) et qu’un utilisateur tente de télécharger un fichier protégé vers un domaine de service cloud ou d’y accéder à partir d’un navigateur non autorisé, vous pouvez configurer l’action `Audit only`de stratégie sur , `Block with override``Block` ou l’activité.
 
-##### <a name="file-activities-for-all-apps"></a>Activités de fichier pour toutes les applications
+##### <a name="file-activities-for-all-apps"></a>Activités de fichiers pour toutes les applications
 
 Avec **l’option Activités de fichier pour toutes** les applications, vous  sélectionnez Ne pas restreindre les activités de fichier ou appliquer des **restrictions à des activités spécifiques**. Lorsque vous choisissez d’appliquer des restrictions à des activités spécifiques, les actions que vous sélectionnez ici sont appliquées lorsqu’un utilisateur a accédé à un élément protégé par DLP. Vous pouvez indiquer à DLP , `Audit only``Block with override`( `Block` les actions) sur ces activités utilisateur :
 
 - **Copier dans le Presse-papiers**
 - **Copier sur un lecteur amovible USB** 
-- **Copier sur un partage réseau**
+- **Copier vers un partage réseau**
 - **Print**
 - **Copier ou déplacer à l’aide d’une application Bluetooth non conforme**
 - **Services de bureau à distance**
 
 
-##### <a name="restricted-app-activities"></a>Activités d’application restreintes  
+##### <a name="restricted-app-activities"></a>Activités d'application restreintes  
 
 Précédemment appelée Applications nonallées, vous définissez une liste d’applications dans les paramètres DLP de point de terminaison sur qui vous souhaitez placer des restrictions. Lorsqu’un utilisateur tente d’accéder à un fichier protégé par DLP à l’aide d’une application qui figure dans la liste, `Audit only`vous pouvez soit , soit `Block with override``Block` l’activité. Les actions DLP définies dans **les activités** d’applications restreintes sont indérialées si l’application est membre d’un groupe d’applications restreintes. Ensuite, les actions définies dans le groupe d’applications restreintes sont appliquées.
 
-##### <a name="file-activities-for-apps-in-restricted-app-groups-preview"></a>Activités de fichier pour les applications dans les groupes d’applications restreints (aperçu)
+##### <a name="file-activities-for-apps-in-restricted-app-groups-preview"></a>Activités de fichiers pour les applications dans des groupes d’applications restreintes (préversion)
 
 Vous définissez vos groupes d’applications restreintes dans les paramètres DLP de point de terminaison et ajoutez des groupes d’applications restreintes à vos stratégies. Lorsque vous ajoutez un groupe d’applications restreintes à une stratégie, vous devez sélectionner l’une des options ci-après :
 
-- Ne pas limiter l’activité des fichiers
+- Ne restreignez pas l'activité des fichiers
 - Appliquer des restrictions à toutes les activités
 - Appliquer des restrictions à une activité spécifique
 
@@ -439,7 +439,7 @@ Lorsque vous sélectionnez l’une des options Appliquer des *restrictions* et q
 
 Pour plus [d’informations, voir applications restreintes et groupes](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) d’applications. 
 
-#### <a name="microsoft-defender-for-cloud-apps-actions"></a>Actions De Microsoft Defender pour les applications cloud
+#### <a name="microsoft-defender-for-cloud-apps-actions"></a>Microsoft Defender for Cloud Apps actions
 
 - Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
 - Restreindre les applications tierces
@@ -480,7 +480,7 @@ Par exemple, si vous sélectionnez Exchange et Appareils comme emplacements, ces
 - Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
 - Auditer ou restreindre les activités sur Windows appareils
 
-Si vous sélectionnez Appareils et Microsoft Defender pour les applications cloud, ces actions seront disponibles :
+Si vous sélectionnez Périphériques et Microsoft Defender for Cloud Apps, ces actions seront disponibles :
 
 - Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
 - Auditer ou restreindre les activités sur Windows appareils
@@ -531,9 +531,9 @@ Vous pouvez activer/désactiver les notifications des utilisateurs pour différe
 
 et personnalisez le texte de l’e-mail, l’objet et le texte du conseil de stratégie.
 
-![Options de configuration des conseils de stratégie et de notification utilisateur disponibles pour Exchange, SharePoint, OneDrive, Teams Chat et canal et Defender pour les applications cloud](../media/dlp-user-notification-non-devices.png)
+![Options de configuration des conseils de stratégie et de notification utilisateur disponibles pour Exchange, SharePoint, OneDrive, Teams Chat et canal et les applications Defender pour le cloud](../media/dlp-user-notification-non-devices.png)
 
-Si vous avez sélectionné Uniquement les appareils, vous obtenez les mêmes options que pour Exchange, SharePoint, OneDrive, Teams Chat et Channel et Defender pour les applications cloud, ainsi que la possibilité de personnaliser le titre et le contenu de la notification qui s’affiche sur l’appareil Windows 10.
+Si vous avez sélectionné Uniquement les appareils, vous obtenez les mêmes options que pour les applications Exchange, SharePoint, OneDrive, Teams Chat et Canal et Defender pour le cloud, ainsi que la possibilité de personnaliser le titre et le contenu de la notification qui s’affiche sur le Windows 10 appareil.
 
 ![Options de configuration de notification utilisateur et de conseil de stratégie disponibles pour les appareils](../media/dlp-user-notification-devices.png)  
 
