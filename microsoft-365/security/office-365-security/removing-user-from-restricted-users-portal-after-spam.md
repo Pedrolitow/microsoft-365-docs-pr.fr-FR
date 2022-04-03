@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 66b810f7bb6381d405ee7ffc0d6b1cf7a10f2bf2
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c375d77c3aa64d996a8d8d2f8dce538829eaa3b2
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941431"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568311"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>Supprimer les utilisateurs bloqués du portail Utilisateurs restreints dans Microsoft 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "61941431"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Si un utilisateur dépasse l’une des limites d’envoi sortant, comme spécifié dans [les limites de service](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) ou dans [les stratégies anti-courrier indésirable sortantes](configure-the-outbound-spam-policy.md), l’utilisateur ne peut pas envoyer d’e-mails, mais il peut continuer à en recevoir.
 
@@ -43,7 +43,7 @@ L'utilisateur est ajouté à la page **Utilisateurs restreints** dans le portail
 
 > «Votre message n’a pas pu être remis parce que vous n’avez pas été reconnu comme expéditeur valide. Le plus souvent, il est possible que votre adresse de messagerie soit susceptible d’envoyer du courrier indésirable et qu’elle ne soit plus autorisée à envoyer du courrier électronique.  Contactez votre administrateur pour obtenir de l’aide. Le serveur distant a renvoyé' 550 5.1.8 accès refusé, expéditeur sortant incorrect».
 
-Les administrateurs peuvent supprimer des utilisateurs de la page Utilisateurs restreints dans Microsoft 365 Defender ou dans Exchange Online PowerShell.
+Les administrateurs peuvent supprimer des utilisateurs de la page **Utilisateurs restreints** dans Microsoft 365 Defender ou dans Exchange Online PowerShell.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -93,9 +93,9 @@ La stratégie d’alerte par défaut nommée **Utilisateur pour lequel l’envoi
 > [!IMPORTANT]
 > Pour que les alertes fonctionnent, la recherche dans le journal d’audit doit être activée. Pour plus d’informations, voir [Activer ou désactiver la recherche dans le journal d’audit](../../compliance/turn-audit-log-search-on-or-off.md).
 
-1. Dans le portail Microsoft 365 Defender, accédez à **Courrier électronique et stratégies de collaboration** \> **Stratégies & règles** \> **Alerte**.
+1. Dans le portail Microsoft 365 Defender sur <https://security.microsoft.com>, accédez à **E-mail et collaboration** \> **Stratégies & règles** \> **Alerte**. Pour accéder directement à la page **Stratégie d’alerte**, utilisez <https://security.microsoft.com/alertpolicies>.
 
-2. Dans la page **Stratégie d’alerte**, recherchez et sélectionnez l’alerte nommée **Utilisateur restreint pour l’envoi d’e-mail**. Vous pouvez trier les stratégies par nom ou utiliser la **Zone de recherche** pour rechercher la stratégie.
+2. Dans la page **Stratégie d’alerte**, recherchez et sélectionnez l’alerte nommée **Utilisateur restreint pour l’envoi d’e-mail**. Vous pouvez trier les stratégies par nom ou utiliser la zone de **recherche** pour rechercher la stratégie.
 
 3. Dans le menu volant **Utilisateur restreint pour l’envoi d’e-mail** qui s’affiche, vérifiez ou configurez les paramètres suivants :
    - **État** : vérifiez que l’alerte est activée ![Activer](../../media/scc-toggle-on.png).

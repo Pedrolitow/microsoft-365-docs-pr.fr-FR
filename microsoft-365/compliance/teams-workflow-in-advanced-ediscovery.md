@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Découvrez comment conserver, collecter, réviser et exporter du contenu à partir de Microsoft Teams dans Advanced eDiscovery.
-ms.openlocfilehash: 68a255dda7aa9b879c9e608eb99c9575ba691c16
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 9565beea342fe9587195d632fdc94cdc746faf5e
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63716217"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568113"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams"></a>Advanced eDiscovery flux de travail pour le contenu dans Microsoft Teams
 
@@ -41,14 +41,13 @@ Il existe cinq catégories de contenu Teams que vous pouvez collecter et traiter
 
 Une condition préalable à la gestion du contenu Teams dans Advanced eDiscovery consiste à comprendre le type de contenu Teams que vous pouvez collecter, traiter et examiner dans Advanced eDiscovery et où ce contenu est stocké dans Microsoft 365. Le tableau suivant répertorie Teams type de contenu et l’endroit où chacun d’eux est stocké.
 
-||Emplacement des messages de conversation et des publications  |Emplacement des fichiers et des pièces jointes |
-|:---------|:---------|:---------|
-|Teams conversations 1:1     |Les messages des conversations 1:1 sont stockés dans la boîte aux lettres Exchange Online de tous les participants à la conversation. |Les fichiers partagés dans une conversation 1:1 sont stockés dans le compte OneDrive Entreprise de la personne qui a partagé le fichier. |
-|Teams de groupe     |Les messages des conversations de groupe sont stockés dans la boîte Exchange Online de tous les participants à la conversation. |Les fichiers partagés dans des conversations de groupe sont stockés dans OneDrive Entreprise compte de la personne qui a partagé le fichier. |
-|Équipes et canaux     |Tous les messages et publications de canal sont stockés dans la boîte Exchange Online boîte aux lettres associée à l’équipe.|Les fichiers partagés dans un canal sont stockés dans le site SharePoint Online associé à l’équipe.           |
-|Canaux privés     |Les messages envoyés dans un canal privé sont stockés dans Exchange Online boîtes aux lettres de tous les membres du canal privé.|Les fichiers partagés dans un canal privé sont stockés dans un site SharePoint Online dédié associé au canal privé.|
-|Canaux partagés     |Les messages envoyés dans un canal partagé sont stockés dans une boîte aux lettres système associée au canal partagé. <sup>1</sup>|Les fichiers partagés dans un canal partagé sont stockés dans un site SharePoint Online dédié associé au canal partagé.|
-||||
+|&nbsp;|Emplacement des messages de conversation et des publications|Emplacement des fichiers et des pièces jointes|
+|---|---|---|
+|Teams conversations 1:1|Les messages des conversations 1:1 sont stockés dans la boîte aux lettres Exchange Online de tous les participants à la conversation.|Les fichiers partagés dans une conversation 1:1 sont stockés dans le compte OneDrive Entreprise de la personne qui a partagé le fichier.|
+|Teams de groupe|Les messages des conversations de groupe sont stockés dans la boîte Exchange Online de tous les participants à la conversation.|Les fichiers partagés dans des conversations de groupe sont stockés dans OneDrive Entreprise compte de la personne qui a partagé le fichier.|
+|Équipes et canaux|Tous les messages et publications de canal sont stockés dans la boîte Exchange Online boîte aux lettres associée à l’équipe.|Les fichiers partagés dans un canal sont stockés dans le site SharePoint Online associé à l’équipe.|
+|Canaux privés|Les messages envoyés dans un canal privé sont stockés dans Exchange Online boîtes aux lettres de tous les membres du canal privé.|Les fichiers partagés dans un canal privé sont stockés dans un site SharePoint Online dédié associé au canal privé.|
+|Canaux partagés|Les messages envoyés dans un canal partagé sont stockés dans une boîte aux lettres système associée au canal partagé. <sup>1</sup>|Les fichiers partagés dans un canal partagé sont stockés dans un site SharePoint Online dédié associé au canal partagé.|
 
 > [!NOTE]
 > <sup>1 Pour</sup> rechercher (et conserver) les messages envoyés dans un canal partagé, vous devez rechercher ou spécifier la boîte aux lettres Exchange Online’équipe parente.
@@ -196,11 +195,10 @@ Lorsque le contenu de Teams conversations est ajouté à un jeu à réviser, les
 
 Le tableau suivant décrit comment les différents types de contenu Teams conversation sont regroupés par famille et conversation.
 
-| Teams type de contenu|Grouper par famille  |Grouper par conversation  |
-|:---------|:---------|:---------|
-|Teams 1:1 et conversations de groupe   | Une transcription et toutes ses pièces jointes et éléments extraits partagent le **même FamilyId**. Chaque transcription possède un **FamilyId** unique. |Tous les fichiers de transcription et leurs éléments de famille dans la même conversation partagent le même **ConversationId**. Cela inclut les éléments suivants :<br/><br/>  - Tous les éléments et pièces jointes extraits de toutes les transcriptions qui partagent le même **ConversationId**. <br/> - Toutes les transcriptions pour la même conversation<br/> - Toutes les copies de dépositaire de chaque transcription<br/> - Transcriptions des collections suivantes de la même conversation <br/><br/>  Pour Teams 1:1 et les conversations de groupe, vous pouvez avoir plusieurs fichiers de transcription, chacun correspondant à une période différente dans la conversation. Étant donné que ces fichiers de transcription sont issus de la même conversation avec les mêmes participants, ils partagent le même **ConversationId**.|
-|Conversations de canal standard, privées et partagées    | Chaque billet et toutes les réponses et pièces jointes sont enregistrés dans sa propre transcription. Cette transcription et toutes ses pièces jointes et éléments extraits partagent le **même FamilyId**.         |Chaque billet et ses pièces jointes et éléments extraits ont un **ConversationId** unique. S’il existe des collections ou de nouvelles réponses ultérieures provenant du même billet, les transcriptions delta résultant de ces collections auront également le même **ConversationId**.|
-||||
+|Teams type de contenu|Grouper par famille|Grouper par conversation|
+|---|---|---|
+|Teams 1:1 et conversations de groupe|Une transcription et toutes ses pièces jointes et éléments extraits partagent le **même FamilyId**. Chaque transcription possède un **FamilyId** unique.|Tous les fichiers de transcription et leurs éléments de famille dans la même conversation partagent le même **ConversationId**. Cela inclut les éléments suivants : <ul><li>Tous les éléments et pièces jointes extraits de toutes les transcriptions qui partagent le même **ConversationId**.</li><li>Toutes les transcriptions d’une même conversation</li><li>Toutes les copies de dépositaire de chaque transcription</li><li>Transcriptions des collections suivantes de la même conversation</li></ul> <br/> Pour Teams 1:1 et les conversations de groupe, vous pouvez avoir plusieurs fichiers de transcription, chacun correspondant à une période différente dans la conversation. Étant donné que ces fichiers de transcription sont issus de la même conversation avec les mêmes participants, ils partagent le même **ConversationId**.|
+|Conversations de canal standard, privées et partagées|Chaque billet et toutes les réponses et pièces jointes sont enregistrés dans sa propre transcription. Cette transcription et toutes ses pièces jointes et éléments extraits partagent le **même FamilyId**.|Chaque billet et ses pièces jointes et éléments extraits ont un **ConversationId** unique. S’il existe des collections ou de nouvelles réponses ultérieures provenant du même billet, les transcriptions delta résultant de ces collections auront également le même **ConversationId**.|
 
 Utilisez le **contrôle Groupe** dans la barre de commandes d’un jeu à réviser pour afficher Teams contenu groupé par famille ou conversation.
 
@@ -237,11 +235,10 @@ Voici la logique utilisée par Advanced eDiscovery pour inclure des fichiers de 
 
 - Requêtes qui utilisent uniquement des plages de dates
 
-| Teams type de contenu|Requêtes avec paramètres de recherche  |Requêtes avec plages de dates  |
-|:---------|:---------|:---------|
-|Teams 1:1 et conversations de groupe   |Les messages publiés 12 heures avant et 12 heures après les éléments réactifs sont regroupés avec l’élément réactif dans un fichier de transcription unique.   |Les messages dans une fenêtre de 24 heures sont regroupés dans un fichier de transcription unique.|
-|Conversations de canal de Teams standard, privées et partagées    |Chaque billet contenant des éléments réactifs et toutes les réponses correspondantes sont regroupés dans un fichier de transcription unique. |Chaque billet contenant des éléments réactifs et toutes les réponses correspondantes sont regroupés dans un fichier de transcription unique.|
-||||
+|Teams type de contenu|Requêtes avec paramètres de recherche|Requêtes avec plages de dates|
+|---|---|---|
+|Teams 1:1 et conversations de groupe|Les messages publiés 12 heures avant et 12 heures après les éléments réactifs sont regroupés avec l’élément réactif dans un fichier de transcription unique.|Les messages dans une fenêtre de 24 heures sont regroupés dans un fichier de transcription unique.|
+|Conversations de canal de Teams standard, privées et partagées|Chaque billet contenant des éléments réactifs et toutes les réponses correspondantes sont regroupés dans un fichier de transcription unique.|Chaque billet contenant des éléments réactifs et toutes les réponses correspondantes sont regroupés dans un fichier de transcription unique.|
 
 ### <a name="deduplication-of-teams-content"></a>Déduplication du contenu Teams contenu
 
@@ -267,19 +264,18 @@ Dans les grands ensembles de révision avec des milliers ou des millions d’él
 
 Le tableau suivant décrit les propriétés de métadonnées pour Teams contenu.
 
-|Propriété de métadonnées  |Description  |
-|:---------|:---------|
-|ContainsEditedMessage      | Indique si un fichier de transcription contient un message modifié. Les messages modifiés sont identifiés lors de l’affichage du fichier de transcription.|
+|Propriété de métadonnées|Description|
+|---|---|
+|ContainsEditedMessage|Indique si un fichier de transcription contient un message modifié. Les messages modifiés sont identifiés lors de l’affichage du fichier de transcription.|
 |ConversationId|GUID qui identifie la conversation à qui l’élément est associé. Les fichiers de transcription et les pièces jointes de la même conversation ont la même valeur pour cette propriété.|
-|Nom de la conversation     | Nom de la conversation à qui le fichier de transcription ou la pièce jointe est associé. Pour Teams 1:1 et les conversations de groupe, la valeur de cette propriété est l’UPN de tous les participants de la conversation qui sont concatés. Par exemple, `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams de conversation (standard, privé et partagé) utilisent le format suivant pour le nom de la conversation : `<Team name>,<Channel name>`Par exemple, `eDiscovery vNext, General`.          |
-|ConversationType     | Indique le type de conversation d’équipe. Pour Teams 1:1 et les conversations de groupe, la valeur de cette propriété est `Group`. Pour les conversations de canal standard, privées et partagées, la valeur est `Channel`.|
-|Date | Horodaté du premier message dans le fichier de transcription.|
+|Nom de la conversation|Nom de la conversation à qui le fichier de transcription ou la pièce jointe est associé. Pour Teams 1:1 et les conversations de groupe, la valeur de cette propriété est l’UPN de tous les participants de la conversation qui sont concatés. Par exemple : `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams de conversation (standard, privé et partagé) utilisent le format suivant pour le nom de la conversation : `<Team name>,<Channel name>`Par exemple : `eDiscovery vNext, General`.|
+|ConversationType|Indique le type de conversation d’équipe. Pour Teams 1:1 et les conversations de groupe, la valeur de cette propriété est `Group`. Pour les conversations de canal standard, privées et partagées, la valeur est `Channel`.|
+|Date|Horodaté du premier message dans le fichier de transcription.|
 |FamilyId|GUID qui identifie le fichier de transcription d’une conversation. Les pièces jointes auront la même valeur pour cette propriété que le fichier de transcription qui contient le message à qui le fichier a été joint.|
-|FileClass     |Indique ce type de contenu. Les éléments de Teams conversations ont la valeur `Conversation`. En revanche, Exchange messages électroniques ont la valeur `Email`.|          |
-|MessageKind     | Propriété du type de message. Teams contenu a la valeur `microsoftteams , im`. |
-|Destinataires     | Liste de tous les utilisateurs qui ont reçu un message dans la conversation de transcription.|
-|TeamsChannelName     | Nom Teams canal de la transcription.|
-|||
+|FileClass|Indique ce type de contenu. Les éléments de Teams conversations ont la valeur `Conversation`. En revanche, Exchange messages électroniques ont la valeur `Email`.|
+|MessageKind|Propriété du type de message. Teams contenu a la valeur `microsoftteams , im`.|
+|Destinataires|Liste de tous les utilisateurs qui ont reçu un message dans la conversation de transcription.|
+|TeamsChannelName|Nom Teams canal de la transcription.|
 
 Pour obtenir des descriptions d’Advanced eDiscovery propriétés de métadonnées de document, voir [Champs de métadonnées de document Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
 

@@ -26,19 +26,19 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 28f50cbd362104ba910ed5560e184036fc7f8703
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 15f4d179d3bc5590e014a15622e462932e8dea7c
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754638"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498712"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 > Voulez-vous faire l'expérience de Microsoft 365 Defender? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou [exécuter votre projet pilote en production](m365d-pilot.md?ocid=cx-evalpilot).
@@ -83,15 +83,15 @@ Microsoft 365 Defender’une couche unique entre produits augmente les composant
 
 Voici un exemple de la façon dont le portail Microsoft 365 Defender met en corrélation toutes les alertes associées entre les produits en un seul incident.
 
-:::image type="content" source="../../media/overview-incident.png" alt-text="Exemple de page de vue d’ensemble d’un incident" lightbox="../../media/overview-incident.png":::
+:::image type="content" source="../../media/overview-incident.png" alt-text="Page vue d’ensemble de l’incident" lightbox="../../media/overview-incident.png":::
 
 Voici un exemple de la liste des alertes associées à un incident.
 
-:::image type="content" source="../../media/incident-list.png" alt-text="Exemple de liste d’alertes pour un incident" lightbox="../../media/incident-list.png":::
+:::image type="content" source="../../media/incident-list.png" alt-text="Liste des alertes pour un incident" lightbox="../../media/incident-list.png":::
 
 Voici un exemple de recherche basée sur une requête sur les données brutes des e-mails et des points de terminaison.
 
-:::image type="content" source="../../media/advanced-hunting.png" alt-text="Exemple de recherche avancée et de requête" lightbox="../../media/advanced-hunting.png":::
+:::image type="content" source="../../media/advanced-hunting.png" alt-text=" Page Recherche avancée avec détails de requête" lightbox="../../media/advanced-hunting.png":::
 
 Microsoft 365 Defender fonctionnalités entre produits sont les suivantes :
 
@@ -155,11 +155,11 @@ Microsoft 365 Defender met l’accent sur *l’unité,* la clarté et les object
 
 La centralisation des informations de sécurité crée un endroit unique pour examiner les incidents de sécurité Microsoft 365. Un exemple principal est **incidents** sous **Incidents & alertes** sur le lancement rapide de Microsoft 365 Defender.
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Exemple de page Incidents dans Microsoft 365 Defender" lightbox="../../media/converged-incidents-2.png.png":::
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Page Incidents dans le portail Microsoft 365 Defender web" lightbox="../../media/converged-incidents-2.png.png":::
 
 La sélection d’un nom d’incident affiche une page qui illustre la valeur de la centralisation des informations de sécurité.
 
-:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Exemple de page Résumé d’un incident dans Microsoft 365 Defender" lightbox="../../media/converged-incident-info-3.png":::
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Page Récapitulatif d’un incident dans le portail Microsoft 365 Defender web" lightbox="../../media/converged-incident-info-3.png":::
 
 En haut d’une page d’incident, vous verrez les **onglets** **Résumé,** Alertes **, Appareils****,** Utilisateurs, **Boîtes** aux lettres, **Enquêtes****, Preuves** et réponse, et **Graph données.** Sélectionnez ces onglets pour obtenir des informations plus détaillées. Par exemple, l’onglet Utilisateurs affiche des informations pour les utilisateurs à partir de charges de travail convergées (Microsoft Defender pour le point de terminaison, Microsoft Defender pour l’identité et Microsoft Defender pour les applications cloud) et une gamme de sources telles que les services de domaine Active Directory (AD DS) locaux, les Azure AD et les fournisseurs d’identité tiers. Pour plus d’informations, voir [examiner les utilisateurs](investigate-users.md).
 
@@ -173,11 +173,11 @@ Les contrôles courants et le contenu apparaissent au même endroit ou sont cond
 
 #### <a name="unified-settings"></a>Paramètres unifiés
 
-:::image type="content" source="../../media/converged-add-role-9.png" alt-text="Page Paramètres du portail Microsoft 365 Defender web" lightbox="../../media/converged-add-role-9.png":::
+:::image type="content" source="../../media/converged-add-role-9.png" alt-text="Page Paramètres page de l’Microsoft 365 Defender web" lightbox="../../media/converged-add-role-9.png":::
 
 #### <a name="permissions--roles"></a>Autorisations & rôles
 
-:::image type="content" source="../../media/converged-roles-5.png" alt-text="Page Autorisations & rôles affichant les rôles endpoints & groupes, rôles et groupes d’appareils" lightbox="../../media/converged-roles-5.png":::
+:::image type="content" source="../../media/converged-roles-5.png" alt-text="Rôles Endpoints & groupes affichés sur la page Autorisations & rôles" lightbox="../../media/converged-roles-5.png":::
 
 L’accès Microsoft 365 Defender est configuré avec Azure AD rôles globaux ou à l’aide de rôles personnalisés. Pour Defender pour le point de terminaison, voir Attribuer un accès utilisateur [au portail Microsoft 365 Defender web](/microsoft-365/security/defender-endpoint/assign-portal-access). Pour Defender for Office 365, voir [Autorisations dans les Centre de conformité Microsoft 365 et Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
 

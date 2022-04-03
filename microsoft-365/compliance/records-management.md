@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: La gestion des enregistrements dans Microsoft 365 vous permet d’appliquer des planifications de rétention dans un plan de gestion de fichiers afin de gérer la rétention, la déclaration d’enregistrements et la destruction de ceux-ci.
-ms.openlocfilehash: c7546216a935960e5c4b66b37bb3308d0a69e89e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ce00fdfc6db90b9c65051a31e8768d6cd661072d
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324814"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755680"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Découvrez la gestion des enregistrements dans Microsoft 365
 
@@ -87,8 +87,8 @@ Une étiquette de rétention standard comporte des paramètres et des actions de
 |Déplacer au sein du conteneur <sup>3</sup>|Autorisé |Autorisé | Autorisé| Autorisé|
 |Déplacer sur les conteneurs <sup>3</sup>|Autorisé |Autorisé si jamais déverrouillé | **Bloqué** | **Bloqué**|
 |Ouvert/lu|Autorisé |Autorisé | Autorisé| Autorisé|
-|Modifier l’étiquette|Autorisé |Autorisé – administrateur de conteneur uniquement | Autorisé – administrateur de conteneur uniquement| **Bloqué**
-|Supprimer l’étiquette|Autorisé |Autorisé – administrateur de conteneur uniquement | Autorisé – administrateur de conteneur uniquement| **Bloqué**
+|Modifier l’étiquette|Autorisé |Autorisé – administrateur de conteneur uniquement | **Bloqué**| **Bloqué**
+|Supprimer l’étiquette|Autorisé |Autorisé – administrateur de conteneur uniquement | **Bloqué**| **Bloqué**
 
 Notes de bas de page :
 

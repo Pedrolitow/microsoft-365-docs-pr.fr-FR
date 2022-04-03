@@ -22,18 +22,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9b4640872f4e4fbdba65b1e29ceee5575e583bac
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 6621ca47356f87edd47a905e4edeb592d9b556ff
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330214"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499086"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>Étape 5. Développer et tester des cas d’utilisation
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Les méthodes recommandées pour déployer des Microsoft 365 Defender dans votre centre des opérations de sécurité (SOC) dépendent de l’ensemble actuel d’outils, de processus et de compétences de l’équipe SOC. La maintenance de la cybersécurité sur plusieurs plateformes peut être difficile en raison de la grande quantité de données provenant de dizaines voire de centaines de sources de sécurité. 
@@ -46,7 +46,7 @@ Le SOC doit définir une norme et un processus de haut niveau pour le développe
 
 Les activités de supervision SOC liées au développement de cas d’utilisation sont les suivantes : 
 
-- Conditions requises
+- Configuration requise
 - Besoins en personnel ou en formation
 - Licences logicielles
 - Contrat du fournisseur
@@ -56,7 +56,7 @@ Les activités de supervision SOC liées au développement de cas d’utilisatio
 
 Pour faciliter les processus de création de runbook et de playbook, créez un arbre de décision de cas d’utilisation. Cette figure montre un exemple.
 
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="Processus de décision de cas d’utilisation." lightbox="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="Processus de décision de cas d’utilisation" lightbox="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png":::
 
 Une fois qu’une norme de cas d’utilisation de haut niveau a été définie et approuvée, l’étape suivante consiste à créer et tester un cas d’utilisation réel. Les sections suivantes utilisent les scénarios d’anti-hameçonnage et d’analyse des menaces et des vulnérabilités comme exemples.
 
@@ -64,13 +64,13 @@ Une fois qu’une norme de cas d’utilisation de haut niveau a été définie e
 
 La première étape de la création d’un cas d’utilisation consiste à décrire le flux de travail à l’aide d’un story board. Voici un exemple d’article de haut niveau pour une nouvelle notification d’attaque par hameçonnage à une équipe Threat Intelligence.
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="Exemple d’utilisation du flux de travail de cas pour une campagne anti-hameçonnage." lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="Flux de travail d’un cas d’utilisation pour une campagne anti-hameçonnage" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png":::
 
 ### <a name="invoke-the-use-case-workflow-for-example-1"></a>Appeler le flux de travail de cas d’utilisation par exemple 1
 
 Une fois l’article approuvé, l’étape suivante consiste à appeler le flux de travail de cas d’utilisation. Voici un exemple de processus pour une campagne anti-hameçonnage. 
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="Exemple de flux de travail de cas d’utilisation détaillé pour une campagne anti-hameçonnage." lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="Un flux de travail de cas d’utilisation détaillé pour une campagne anti-hameçonnage" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png":::
 
 ## <a name="use-case-example-2-threat-and-vulnerability-scanning"></a>Exemple d’utilisation 2 : analyse des menaces et des vulnérabilités
 
@@ -78,13 +78,13 @@ Un autre scénario dans lequel un cas d’utilisation peut être utilisé est l�
 
 Voici un exemple de storyboard de haut niveau pour la Gestion des menaces et des vulnérabilités ressources.
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="Exemple d’utilisation du flux de travail de cas pour Gestion des menaces et des vulnérabilités." lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="Un flux de travail de cas d’utilisation pour Gestion des menaces et des vulnérabilités" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png":::
 
 ### <a name="invoke-the-use-case-workflow-for-example-2"></a>Appeler le flux de travail de cas d’utilisation par exemple 2
 
 Voici un exemple de processus pour l’analyse des menaces et des vulnérabilités.
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="Exemple de flux de travail de cas d’utilisation détaillé pour Gestion des menaces et des vulnérabilités." lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="Un flux de travail de cas d’utilisation détaillé pour Gestion des menaces et des vulnérabilités" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png":::
  
 ### <a name="analyze-the-use-case-output-and-lessons-learned"></a>Analyser les résultats des cas d’utilisation et les leçons apprises
 

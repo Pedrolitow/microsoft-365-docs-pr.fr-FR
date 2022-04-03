@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e0cde3a8a852fab426c1e0bf0290f9785aa0b40
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 83e7bd2cc46469cb6a5a6bc8c29a8d21dba20b7f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61896404"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466188"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Gérer les alertes microsoft Defender pour les points de terminaison
 
@@ -33,13 +33,13 @@ ms.locfileid: "61896404"
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)
 
-Defender pour le point de terminaison vous avertit des événements malveillants, attributs et informations contextuelles possibles par le biais d’alertes. Un résumé des nouvelles alertes s’affiche dans le tableau de bord Opérations de sécurité **et** vous pouvez accéder à toutes les alertes dans la file **d’attente des alertes.**
+Defender pour le point de terminaison vous avertit des événements malveillants, attributs et informations contextuelles possibles par le biais d’alertes. Un résumé des nouvelles alertes s’affiche dans le tableau de bord Opérations de **sécurité et vous** pouvez accéder à toutes les alertes de la file **d’attente des alertes**.
 
 Vous pouvez gérer les alertes en sélectionnant une alerte dans la file d’attente des **alertes** ou l’onglet **Alertes** de la page Appareil pour un appareil individuel.
 
-La sélection d’une alerte à l’un de ces endroits fait monter le volet **de gestion des alertes.**
+La sélection d’une alerte à l’un de ces endroits fait monter le volet **de gestion des alertes**.
 
-![Image du volet de gestion des alertes et de la file d’attente des alertes.](images/atp-alerts-selected.png)
+:::image type="content" source="images/atp-alerts-selected.png" alt-text="Volet de gestion des alertes et file d’attente des alertes" lightbox="images/atp-alerts-selected.png":::
 
 ## <a name="link-to-another-incident"></a>Lien vers un autre incident
 
@@ -47,11 +47,11 @@ Vous pouvez créer un incident à partir de l’alerte ou d’un lien vers un in
 
 ## <a name="assign-alerts"></a>Affecter des alertes
 
-Si une alerte n’est pas encore attribuée, vous pouvez sélectionner Affecter à moi **pour** vous attribuer l’alerte.
+Si une alerte n’est pas encore attribuée, vous pouvez sélectionner Affecter à **moi pour vous** attribuer l’alerte.
 
 ## <a name="suppress-alerts"></a>Supprimer des alertes
 
-Dans certains scénarios, vous devrez peut-être supprimer l’apparition d’alertes dans Microsoft 365 Defender. Defender pour le point de terminaison vous permet de créer des règles de suppression pour des alertes spécifiques qui sont connues comme étant superflues, telles que des outils ou des processus connus dans votre organisation.
+Il peut y avoir des scénarios dans lequel vous devez supprimer l’apparition d’alertes dans Microsoft 365 Defender. Defender pour le point de terminaison vous permet de créer des règles de suppression pour des alertes spécifiques qui sont connues comme étant superflues, telles que des outils ou des processus connus dans votre organisation.
 
 Les règles de suppression peuvent être créées à partir d’une alerte existante. Elles peuvent être désactivées et réactivées si nécessaire.
 
@@ -75,9 +75,9 @@ Vous pouvez utiliser les exemples du tableau suivant pour vous aider à choisir 
 
 Créez des règles personnalisées pour contrôler quand les alertes sont supprimées ou résolues. Vous pouvez contrôler le contexte de suppression d’une alerte en spécifiant le titre de l’alerte, l’indicateur de compromis et les conditions. Après avoir spécifié le contexte, vous pourrez configurer l’action et l’étendue de l’alerte.
 
-1. Sélectionnez l’alerte que vous souhaitez supprimer. Le volet gestion  des alertes s’en charge.
+1. Sélectionnez l’alerte que vous souhaitez supprimer. Le volet gestion des alertes **s’en** charge.
 
-2. Sélectionnez **Créer une règle de suppression.**
+2. **Sélectionnez Créer une règle de suppression**.
 
     Vous pouvez créer une condition de suppression à l’aide de ces attributs. Un opérateur AND est appliqué entre chaque condition, de sorte que la suppression se produit uniquement si toutes les conditions sont remplies.
 
@@ -88,7 +88,7 @@ Créez des règles personnalisées pour contrôler quand les alertes sont suppri
     - URL : caractère générique pris en charge
     - Ligne de commande : caractère générique pris en charge
 
-3. Sélectionnez **l’IOC déclenchant l’événement.**
+3. Sélectionnez **l’IOC déclenchant l’événement**.
 
 4. Spécifiez l’action et l’étendue de l’alerte.
 
@@ -102,7 +102,7 @@ Créez des règles personnalisées pour contrôler quand les alertes sont suppri
 
 #### <a name="view-the-list-of-suppression-rules"></a>Afficher la liste des règles de suppression
 
-1. Dans le volet de navigation, sélectionnez **Paramètres** \> **suppression de l’alerte.**
+1. Dans le volet de navigation, **sélectionnez Paramètres** \> **suppression de l’alerte**.
 
 2. La liste des règles de suppression affiche toutes les règles créées par les utilisateurs de votre organisation.
 
@@ -110,11 +110,11 @@ Pour plus d’informations sur la gestion des règles de suppression, voir [Gér
 
 ## <a name="change-the-status-of-an-alert"></a>Modifier l’état d’une alerte
 
-Vous pouvez catégoriser les alertes **(comme Nouveau,** **En cours** ou **Résolu)** en modifiant leur état au fur et à mesure de l’avancement de votre enquête. Cela vous permet d’organiser et de gérer la façon dont votre équipe peut répondre aux alertes.
+Vous pouvez catégoriser les alertes (**nouvelle, en** cours ou **résolue) en** modifiant leur état au fur et à mesure de l’avancement de votre enquête. Cela vous permet d’organiser et de gérer la façon dont votre équipe peut répondre aux alertes.
 
-Par exemple, un responsable  d’équipe peut passer en revue  toutes les nouvelles alertes et décider de les affecter à la file d’attente En cours pour analyse approfondie.
+Par exemple, un responsable d’équipe peut  passer en revue toutes les nouvelles alertes et décider de  les affecter à la file d’attente En cours pour analyse approfondie.
 
-Le responsable de l’équipe peut  également affecter l’alerte à la file d’attente résolue s’il sait que l’alerte est anodin, provenant d’un appareil non pertinent (par exemple, un appareil appartenant à un administrateur de sécurité) ou traité par le biais d’une alerte antérieure.
+Le responsable de l’équipe peut également affecter l’alerte  à la file d’attente résolue s’il sait que l’alerte est anodin, provenant d’un appareil non pertinent (par exemple, un appareil appartenant à un administrateur de sécurité) ou traité par le biais d’une alerte antérieure.
 
 ## <a name="alert-classification"></a>Classification de l’alerte
 
@@ -124,11 +124,11 @@ Vous pouvez choisir de ne pas définir de classification ou de spécifier si une
 
 Vous pouvez ajouter des commentaires et afficher des événements historiques sur une alerte pour voir les modifications précédentes apportées à l’alerte.
 
-Chaque fois qu’une modification ou un commentaire est apporté à une alerte, il est enregistré dans la section Commentaires et **historique.**
+Chaque fois qu’une modification ou un commentaire est apporté à une alerte, il est enregistré dans la section Commentaires et **historique** .
 
 Les commentaires ajoutés apparaissent instantanément dans le volet.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Gérer des règles de suppression](manage-suppression-rules.md)
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)

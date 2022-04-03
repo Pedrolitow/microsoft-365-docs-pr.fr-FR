@@ -1,7 +1,7 @@
 ---
 title: Alertes du service MRS
-ms.author: markjjo
-author: markjjo
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 ms.date: ''
 audience: Admin
@@ -16,18 +16,18 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Utilisez les alertes du service de migration de boîtes aux lettres pour surveiller les retards dans les demandes de migration de boîtes aux lettres dans votre organisation.
-ms.openlocfilehash: 25c569030bd5da914dc6eb7ec0e58ebadfe4d766
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 6b4b618bae602c7c06b2d6371e39cc865d0a3407
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937873"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64567981"
 ---
-# <a name="service-alerts-for-mrs-source-delays-in-exchange-online-monitoring"></a>Alertes de service pour les retards de la source MRS dans Exchange Online surveillance
+# <a name="service-alerts-for-mrs-source-delays-in-exchange-online-monitoring"></a>Alertes de service pour les retards de source MRS dans la surveillance Exchange Online
 
 Les alertes du service de réplication de boîte aux lettres (MRS) source vous informent des limitations de stockage ou des problèmes d’utilisation élevée du processeur côté client (source de migration) qui peuvent retarder les migrations de boîtes aux lettres dans votre organisation Microsoft 365. Ces alertes de service incluent également des liens vers des ressources Microsoft pour vous aider à résoudre ces problèmes.
 
-Ces alertes de service sont affichées dans le Centre d'administration Microsoft 365. Pour afficher ces alertes de service, consultez la Exchange Online d’état du service d’état, puis cliquez sur  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a>  >   **l’onglet Problèmes** actifs.
+Ces alertes de service sont affichées dans le Centre d'administration Microsoft 365. Pour afficher ces alertes de service,<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a> >  >  État des services **Exchange Online** puis cliquez sur **l’onglet Problèmes** actifs.
 
 ## <a name="what-do-these-service-alerts-indicate"></a>Qu’indiquent ces alertes de service ?
 
@@ -50,19 +50,19 @@ La liste suivante décrit chaque colonne de l’exemple précédent.
 
 - **QueueHours :** durée de la migration en file d’attente.
 
-- **DelayInHours**: durée de retard de la migration.
+- **DelayInHours** : durée de retard de la migration.
 
-- **SourceServer**: serveur local d’où provient la migration.
+- **SourceServer :** serveur local dont provient la migration.
 
-- **RemoteDatabaseName**: nom de la base de données dont provient la migration.
+- **RemoteDatabaseName** : nom de la base de données dont provient la migration.
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 Pour plus d’informations sur les migrations de boîtes aux lettres et mrs, consultez les articles suivants :
 
 - [Déplacements de boîtes aux lettres Exchange](/exchange/recipients/mailbox-moves)
 
-- [Microsoft 365 et Office 365 meilleures pratiques et performances de migration](/exchange/mailbox-migration/office-365-migration-best-practices)
+- [meilleures pratiques Microsoft 365 et Office 365 migration](/exchange/mailbox-migration/office-365-migration-best-practices)
 
 - [Analyse des performances de migration des boîtes aux lettres](https://techcommunity.microsoft.com/t5/exchange-team-blog/mailbox-migration-performance-analysis/ba-p/587134)
 

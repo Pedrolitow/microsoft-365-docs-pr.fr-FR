@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous utilisez le client d'étiquetage unifié Azure Information Protection (AIP), comprenez les avantages d'utiliser l'étiquetage intégré pour les applications Office plutôt que le module complémentaire AIP.
-ms.openlocfilehash: 88849422d295cc7caf2eb39837f7f1bb82b7a378
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 38aee57720f38793f4f61cc871a9bee556e28690
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319157"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498602"
 ---
 # <a name="why-choose-mip-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Pourquoi choisir l'étiquetage intégré MIP plutôt que le module complémentaire AIP pour les applications Office ?
 
@@ -58,7 +58,7 @@ Maintenant que le client AIP est en [mode maintenance](https://techcommunity.mic
 - Les modules complémentaires sont moins stables car ils peuvent entrer en conflit avec d'autres modules complémentaires, ce qui peut entraîner la suspension ou le plantage des applications Office ou la désactivation automatique du module complémentaire.
 - En tant que module complémentaire, il fonctionne plus lentement et peut être désactivé par les utilisateurs pour contourner les exigences d'étiquetage.
 - Toute correction de bogue nécessitera la réinstallation du client Azure Information Protection.
-- L'expérience d'étiquetage pour les utilisateurs est légèrement différente des étiquettes intégrées que les utilisateurs ont sur leurs autres appareils (macOS, iOS, Android), et lorsqu'ils utilisent Office pour le web. Cette différence peut augmenter les coûts de formation et d'assistance.
+- L’expérience d’étiquetage des utilisateurs est légèrement différente des étiquettes intégrées que les utilisateurs ont sur leurs autres appareils (macOS, iOS, Android) et lorsqu’ils utilisent Office pour le web. Cette différence peut augmenter les coûts de formation et de support.
 - Il existe déjà de nouvelles fonctionnalités d'étiquetage Office publiées qui [ne sont prises en charge que par l'étiquetage intégré](#features-supported-only-by-built-in-labeling-for-office-apps), et la liste augmente en permanence.
 
 Utilisez le complément AIP pour vos applications Windows Office uniquement si vous l'avez déjà déployé auprès des utilisateurs et que vous avez besoin de temps pour les faire migrer vers l'étiquetage intégré. Ou encore, les utilisateurs ont besoin d'une fonctionnalité qui n'est pas prise en charge par l'étiquetage intégré. Utilisez les [informations de parité des fonctionnalités](#feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps) de cette page pour vous aider à identifier ces fonctionnalités.
@@ -68,10 +68,10 @@ Utilisez le complément AIP pour vos applications Windows Office uniquement si v
 > [!NOTE]
 > De nombreuses nouvelles fonctionnalités d’étiquetage sont en cours de planification ou de développement. Attendez-vous donc à ce que la liste de cette section augmente au fil du temps.
 
-Certaines fonctionnalités ne sont prises en charge que par l'étiquetage intégré des applications Office, et ne seront pas prises en charge par le complément AIP. Cela inclut ce qui suit :
+Certaines fonctionnalités sont uniquement prises en charge par l’étiquetage intégré pour les applications Office et ne sont pas prises en charge par le complément AIP. Il s’agit notamment des éléments suivants :
 
 - Pour l’étiquetage automatique et recommandé :
-    - Accès à des services de classification intelligente des [classifieurs entraînables](classifier-learn-about.md), une la correspondance exacte des données [(EDM)](sit-learn-about-exact-data-match-based-sits.md) et des [entités nommées](named-entities-learn.md)
+    - Accès aux services de classification intelligents qui incluent [les classifieurs entraînables](classifier-learn-about.md), [la correspondance exacte des données (EDM)](sit-learn-about-exact-data-match-based-sits.md) et [les entités nommées](named-entities-learn.md)
     - Détection d'informations sensibles au moment de la saisie des utilisateurs
     - Dans Word, les utilisateurs peuvent examiner et supprimer le contenu sensible identifié.
 - Pour les étiquettes qui permettent aux utilisateurs d'attribuer des permissions, différentes permissions (lecture ou modification) peuvent être accordées aux utilisateurs ou aux groupes.
@@ -110,7 +110,7 @@ Vous pouvez également désactiver ou supprimer de manière interactive le compl
 Quelle que soit la méthode choisie, les modifications prennent effet au redémarrage des applications Office.
 
 > [!NOTE]
-> Les étiquettes intégrées nécessitent une édition d'abonnement des applications Office. Si vous disposez d'éditions autonomes d'Office, parfois appelées «Office Perpetual», nous vous recommandons de passer à Microsoft 365 Apps for Enterprise pour bénéficier des [dernières fonctionnalités d'étiquetage](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+> Les étiquettes intégrées nécessitent une édition d’abonnement des applications Office. Si vous disposez d’éditions autonomes d’Office, parfois appelées « Office Perpetual », nous vous recommandons d’effectuer une mise à niveau vers Microsoft 365 Apps for Enterprise pour tirer parti des [dernières fonctionnalités d’étiquetage](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
 N'oubliez pas que lorsque vous utilisez cette méthode pour désactiver le complément AIP, vous pouvez toujours utiliser le client AIP pour étendre l'étiquetage au-delà des applications Office.
 
@@ -118,7 +118,7 @@ N'oubliez pas que lorsque vous utilisez cette méthode pour désactiver le compl
 
 De nombreuses fonctions d'étiquetage prises en charge par le complément AIP sont désormais prises en charge par l'étiquetage intégré. Pour une liste plus détaillée des capacités, des versions minimales éventuellement nécessaires et des informations de configuration, voir [Gérer les étiquettes de sensibilité dans les applications Office](sensitivity-labels-office-apps.md).
 
-D'autres fonctionnalités sont prévues et en cours de développement. Si une fonctionnalité spécifique vous intéresse, consultez la feuille de route de [Microsoft 365 et envisagez](https://aka.ms/MIPC/Roadmap) de vous joindre à l'aperçu privé de [Microsoft Information Protection in Office](https://aka.ms/MIP/PreviewRing).
+D’autres fonctionnalités sont planifiées et en cours de développement. S’il existe une fonctionnalité spécifique qui vous intéresse, consultez la [feuille de route Microsoft 365](https://aka.ms/MIPC/Roadmap) et envisagez de rejoindre le [Microsoft Information Protection dans Office Private Preview](https://aka.ms/MIP/PreviewRing).
 
 Utilisez les informations suivantes pour vous aider à identifier si vous utilisez une fonctionnalité du complément AIP qui n'est pas encore prise en charge par l'étiquetage intégré :
 

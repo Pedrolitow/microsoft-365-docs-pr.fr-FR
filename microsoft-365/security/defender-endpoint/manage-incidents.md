@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 45c08c5a3c304a23b5761d96a4d9aceb1b4f1562
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: a84f7ba72acb4caf3e229f0bed4d997e123cc7ae
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766823"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466210"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-incidents"></a>Gérer Microsoft Defender pour les incidents de point de terminaison
 
@@ -42,8 +42,7 @@ La gestion des incidents est une partie importante de chaque opération de cyber
 
 La sélection d’un incident dans la file **d’attente Incidents** ouvre le volet Gestion des incidents dans lequel vous pouvez ouvrir la page incident pour plus d’informations.
 
-
-![Image du volet de gestion des incidents.](images/atp-incidents-mgt-pane-updated.png)
+:::image type="content" source="images/atp-incidents-mgt-pane-updated.png" alt-text="Volet de gestion des incidents" lightbox="images/atp-incidents-mgt-pane-updated.png":::
 
 Vous pouvez affecter des incidents à vous-même, modifier l’état et la classification, les renommer ou commenter pour suivre leur progression.
 
@@ -55,8 +54,7 @@ Vous pouvez affecter des incidents à vous-même, modifier l’état et la class
 > Les incidents qui existaient avant le déploiement de la dénomination automatique des incidents conserveront leurs noms.
 >
 
-
-![Image de la page de détails de l’incident.](images/atp-incident-details-updated.png)
+:::image type="content" source="images/atp-incident-details-updated.png" alt-text="Page des détails de l’incident" lightbox="images/atp-incident-details-updated.png":::
 
 ## <a name="assign-incidents"></a>Attribuer des incidents
 Si aucun incident n’a encore été affecté, vous pouvez  sélectionner Affecter à moi pour vous attribuer l’incident. Cette action suppose l’appropriation non seulement de l’incident, mais aussi de toutes les alertes associées.
@@ -81,7 +79,7 @@ Les commentaires ajoutés apparaissent instantanément dans le volet.
 
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 - [File d’attente des incidents](/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [Afficher et organiser la file d’attente des incidents](view-incidents-queue.md)
 - [Examiner des incidents](investigate-incidents.md)

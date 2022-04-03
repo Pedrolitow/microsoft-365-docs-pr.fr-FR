@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: 9b37e353af74b7a01c0647f99b149f5fac0ae8a3
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 59ebfb9ffb925cc5937802a31902e7c2342fc740
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524176"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755661"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de déploiement zéro trust Microsoft 365
 
@@ -36,13 +36,7 @@ Une approche de confiance zéro s’étend à l’ensemble du patrimoine numéri
 
 Cette illustration fournit une représentation des principaux éléments qui contribuent à la confiance zéro.
 
-<!---
-[![Zero Trust security architecture](../media/zero-trust/zero-trust-architecture.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/zero-trust/zero-trust-architecture.png)
--->
-
-:::image type="content" source="../media/zero-trust/zero-trust-architecture.png" alt-text="Architecture de sécurité de confiance zéro" lightbox="../media/zero-trust/zero-trust-architecture.png":::
-
-
+:::image type="content" source="../media/zero-trust/zero-trust-architecture.png" alt-text="Architecture de sécurité Confiance zéro" lightbox="../media/zero-trust/zero-trust-architecture.png":::
 
 Dans cette illustration :
 - L’application de la stratégie de sécurité est au centre d’une architecture de confiance zéro. Cela inclut l’authentification multifacteur avec accès conditionnel qui prend en compte les risques de compte d’utilisateur, l’état de l’appareil et d’autres critères et stratégies que vous définissez.
@@ -82,7 +76,7 @@ Accédez [**_à la protection d’accès_**](office-365-security/microsoft-365-p
 
 
 
-|Inclut  |Configuration requise  |N’inclut pas  |
+|Inclut  |Conditions préalables  |N’inclut pas  |
 |---------|---------|---------|
 |Stratégies d’accès aux identités et appareils recommandées pour trois niveaux de protection :<br>- Point de départ<br>- Enterprise (recommandé)<br>- Spécialisé<br><br>Recommandations supplémentaires pour :<br>- Utilisateurs externes (invités)<br>- Microsoft Teams<br>- SharePoint Online<br>- Microsoft Defender pour les applications cloud| Microsoft E3 ou E5<br><br>Azure Active Directory dans l’un de ces modes :<br>- Cloud uniquement<br>- Hybride avec authentification de synchronisation de hachage de mot de passe (PHS)<br>- Hybride avec authentification directe (PTA)<br>- Fédéré     |Inscription des appareils pour les stratégies qui nécessitent des appareils gérés. Voir « Gérer les points de terminaison avec Intune » pour inscrire des appareils |
 | | | |
@@ -103,22 +97,22 @@ Ensuite, inscrivez vos appareils à la gestion et commencez à les protéger ave
 Go to [**_Manage devices with Intune_**](../solutions/manage-devices-with-intune-overview.md) for prescriptive guidance to accomplish this. 
 
 
-|Inclut  |Configuration requise  |N’inclut pas  |
+|Inclut  |Conditions préalables  |N’inclut pas  |
 |---------|---------|---------|
-|Inscrire des appareils avec Intune<br>- Appareils d’entreprise<br>- Autopilot/automated<br>- inscription<br><br>Configurer des stratégies<br>- Stratégies de protection des applications<br>- Stratégies de conformité<br>- Stratégies de profil d’appareil | Inscrire les points de terminaison avec Azure AD     | Configuration des fonctionnalités de protection des informations, notamment :<br>- Types d’informations sensibles<br>- Étiquettes<br>- Stratégies DLP<br>Pour ces fonctionnalités, voir l’étape 5. Protéger et régir les données (plus loin dans cet article).       |
+|Inscrire des appareils avec Intune<br>- Appareils d’entreprise<br>- Autopilot/automated<br>- inscription<br><br>Configurer des stratégies<br>- Stratégies de protection des applications<br>- Stratégies de conformité<br>- Stratégies de profil d’appareil | Inscrire des points de terminaison avec Azure AD     | Configuration des fonctionnalités de protection des informations, notamment :<br>- Types d’informations sensibles<br>- Étiquettes<br>- Stratégies DLP<br>Pour ces fonctionnalités, voir l’étape 5. Protéger et régir les données (plus loin dans cet article).       |
 |    |         |         |
 
-## <a name="step-3-add-zero-trust-identity-and-device-access-protection--enterprise-policies"></a>Étape 3. Ajouter une protection d’identité et d’accès aux appareils de confiance Enterprise stratégies
+## <a name="step-3-add-zero-trust-identity-and-device-access-protection--enterprise-policies"></a>Étape 3. Ajouter une protection d’identité et d’accès aux appareils de confiance Enterprise stratégies
 
 Une fois les appareils inscrits à la gestion, vous pouvez désormais implémenter l’ensemble complet des stratégies d’accès aux appareils et aux identités Zero Trust recommandées, nécessitant des appareils conformes.
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png" alt-text="Stratégies d’accès et d’identité de confiance zéro avec la gestion des appareils" lightbox="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png":::
 
-Revenir aux [**_stratégies communes d’accès aux_**](office-365-security/identity-access-policies.md) appareils et aux identités et ajouter les stratégies dans le Enterprise niveau.  
+Revenir aux [**_stratégies communes d’accès aux_**](office-365-security/identity-access-policies.md) appareils et aux identités et ajouter les stratégies au Enterprise niveau.  
 
-:::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.png" alt-text="Stratégies d’accès et d’identité Enterprise confiance zéro — niveau de confiance Enterprise (recommandé)" lightbox="../media/zero-trust/identity-access-enterprise-tier.png":::
+:::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.png" alt-text="Stratégies d’accès et d’identité Enterprise confiance zéro ( niveau recommandé)" lightbox="../media/zero-trust/identity-access-enterprise-tier.png":::
 
-## <a name="step-4-evaluate-pilot-and-deploy-microsoft-365-defender"></a>Étape 4. Évaluer, piloter et déployer des Microsoft 365 Defender
+## <a name="step-4-evaluate-pilot-and-deploy-microsoft-365-defender"></a>Étape 4. Évaluer, piloter et déployer des Microsoft 365 Defender
 
 Microsoft 365 Defender est une solution XDR (détection et réponse étendue) qui collecte, met en corrélation et analyse automatiquement les données de signal, de menace et d’alerte à partir de votre environnement Microsoft 365, y compris les points de terminaison, la messagerie électronique, les applications et les identités.
 
@@ -126,7 +120,7 @@ Microsoft 365 Defender est une solution XDR (détection et réponse étendue) qu
 
 Go to [**_Evaluate and pilot Microsoft 365 Defender_**](defender/eval-overview.md) for a methodical guide to piloting and deploying Microsoft 365 Defender components. 
 
-|Inclut  |Configuration requise  |N’inclut pas  |
+|Inclut  |Conditions préalables  |N’inclut pas  |
 |---------|---------|---------|
 | Configurer l’environnement d’évaluation et pilote pour tous les composants :<br>- Defender pour l’identité<br>- Defender for Office 365<br>- Defender pour le point de terminaison<br>- Microsoft Defender pour les applications cloud<br><br>Protéger contre les menaces<br><br> Examiner les menaces et y répondre   | Consultez les instructions pour en savoir plus sur les exigences en matière d’architecture pour chaque composant de Microsoft 365 Defender.        | Azure AD Identity Protection n’est pas inclus dans ce guide de solution. Elle est incluse à l’étape 1 : Configurer la protection d’accès aux appareils et aux identités de confiance zéro.        |
 |    |         |         |
@@ -144,7 +138,8 @@ Bien que ce travail soit représenté en haut de la pile de déploiement illustr
 
 Protection des données Microsoft fournit une infrastructure, un processus et des fonctionnalités que vous pouvez utiliser pour atteindre vos objectifs métier spécifiques.
 
-![Protection des données Microsoft framework (MIP)](../media/zero-trust/mip-solution-overview.png)
+:::image type="content" source="../media/zero-trust/mip-solution-overview.png" alt-text="Infrastructure Protection des données Microsoft de gestion" lightbox="../media/zero-trust/mip-solution-overview.png":::
+
 
 Pour plus d’informations sur la façon de planifier et de déployer la protection des informations, voir [**_Deploy a Protection des données Microsoft solution_**](../compliance/information-protection-solution.md). 
 

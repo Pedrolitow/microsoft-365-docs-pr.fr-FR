@@ -1,7 +1,7 @@
 ---
 title: Prendre des mesures de réponse sur un appareil dans Microsoft Defender pour le point de terminaison
-description: 'Prendre des mesures de réponse sur un appareil, telles que l’isolation des appareils, la collecte d’un package d’enquête, la gestion des balises, l’exécution d’une analyse antivirus et la restriction de l’exécution de l’application.'
-keywords: 'répondre, isoler, isoler l’appareil, collecter un package d’enquête, centre de mesures, restreindre, gérer les balises, analyse antivirus, restreindre l’application'
+description: Prendre des mesures de réponse sur un appareil, telles que l’isolation des appareils, la collecte d’un package d’enquête, la gestion des balises, l’exécution d’une analyse antivirus et la restriction de l’exécution de l’application.
+keywords: répondre, isoler, isoler l’appareil, collecter un package d’enquête, centre de mesures, restreindre, gérer les balises, analyse antivirus, restreindre l’application
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,8 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
+ms.openlocfilehash: 3878b2c7d73d528b765eb061484490e43fffb9f8
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466166"
 ---
-
 # <a name="take-response-actions-on-a-device"></a>Prendre des mesures de réponse sur un appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -40,6 +45,7 @@ Les actions de réponse s’exécutent le long de la partie supérieure d’une 
 - Centre de notifications
 
 [![Image des actions de réponse.](images/response-actions.png)](images/response-actions.png#lightbox)
+
 
  Vous pouvez trouver des pages d’appareil à partir de l’une des vues suivantes :
 
@@ -92,11 +98,11 @@ Autre solution :
 
 1. **Sélectionnez le centre de réponse** dans la section Actions de réponse de la page de l’appareil.
 
-    ![Image du bouton Centre de l’action.](images/action-center-package-collection.png)
+   :::image type="content" source="images/action-center-package-collection.png" alt-text="Option Centre de l’action" lightbox="images/action-center-package-collection.png":::
 
 2. Dans le volant du centre de l’action, sélectionnez **package de collection de packages disponible** pour télécharger le fichier zip.
 
-    ![Image du bouton télécharger le package.](images/collect-package.png)
+   :::image type="content" source="images/collect-package.png" alt-text="Option de package de téléchargement" lightbox="images/collect-package.png":::
 
 Le package contient les dossiers suivants :
 
@@ -108,7 +114,7 @@ Le package contient les dossiers suivants :
 |---|---|
 |Autoruns|Contient un ensemble de fichiers qui représentent chacun le contenu du Registre d’un point d’entrée de démarrage automatique connu (ASEP) pour vous aider à identifier la persistance de l’attaquant sur l’appareil. <p> <div class="alert"><b>REMARQUE :</b> Si la clé de Registre est in trouvée, le fichier contient le message suivant : « ERREUR : Le système n’a pas pu trouver la clé de Registre ou la valeur spécifiée. »<div>|
 |Programmes installés|Ce .CSV contient la liste des programmes installés qui peuvent vous aider à identifier ce qui est actuellement installé sur l’appareil. Pour plus d’informations, [voir Win32_Product classe.](https://go.microsoft.com/fwlink/?linkid=841509)|
-|Connexions réseau|Ce dossier contient un ensemble de points de données liés aux informations de connectivité qui peuvent vous aider à identifier la connectivité à des URL suspectes, l’infrastructure de commande et de contrôle (C&C), tout mouvement latéral ou les connexions distantes. <ul><li>ActiveNetConnections.txt : affiche les statistiques de protocole et les connexions réseau TCP/IP actuelles. Permet de rechercher une connectivité suspecte d’un processus.</li><li>Arp.txt : affiche les tables de cache ARP (Address Resolution Protocol) actuelles pour toutes les interfaces. Le cache ARP peut révéler d’autres hôtes sur un réseau qui ont été compromis ou des systèmes suspects sur le réseau qui ont pu être utilisés pour exécuter une attaque interne.</il><li>DnsCache.txt : affiche le contenu du cache du programme de résolution du client DNS, qui inclut à la fois les entrées préchargés à partir du fichier Hosts local et les enregistrements de ressource récemment obtenus pour les requêtes de noms résolues par l’ordinateur. Cela peut vous aider à identifier les connexions suspectes.</li><li>IpConfig.txt : affiche la configuration TCP/IP complète pour toutes les cartes. Les adaptateurs peuvent représenter des interfaces physiques, telles que des cartes réseau installées, ou des interfaces logiques, telles que des connexions d’accès à des appels.</li><li>FirewallExecutionLog.txt et pfirewall.log</li></ul><p><div class="alert"><b>REMARQUE :</b> Le fichier pfirewall.log doit exister dans %windir%\system32\logfiles\firewall\pfirewall.log, afin qu’il soit inclus dans le package d’enquête. Pour plus d’informations sur la création du fichier journal du pare-feu, voir [Configurer le pare-feu Windows Defender avec le journal de sécurité avancée](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
+|Connexions réseau|Ce dossier contient un ensemble de points de données liés aux informations de connectivité qui peuvent vous aider à identifier la connectivité aux URL suspectes, l’infrastructure de commande et de contrôle (C&C) de l’attaquant, tout mouvement latéral ou les connexions distantes. <ul><li>ActiveNetConnections.txt : affiche les statistiques de protocole et les connexions réseau TCP/IP actuelles. Permet de rechercher une connectivité suspecte d’un processus.</li><li>Arp.txt : affiche les tables de cache ARP (Address Resolution Protocol) actuelles pour toutes les interfaces. Le cache ARP peut révéler d’autres hôtes sur un réseau qui ont été compromis ou des systèmes suspects sur le réseau qui ont pu être utilisés pour exécuter une attaque interne.</il><li>DnsCache.txt : affiche le contenu du cache du programme de résolution du client DNS, qui inclut à la fois les entrées préchargés à partir du fichier Hosts local et les enregistrements de ressource récemment obtenus pour les requêtes de noms résolues par l’ordinateur. Cela peut vous aider à identifier les connexions suspectes.</li><li>IpConfig.txt : affiche la configuration TCP/IP complète pour toutes les cartes. Les adaptateurs peuvent représenter des interfaces physiques, telles que des cartes réseau installées, ou des interfaces logiques, telles que des connexions d’accès à des appels.</li><li>FirewallExecutionLog.txt et pfirewall.log</li></ul><p><div class="alert"><b>REMARQUE :</b> Le fichier pfirewall.log doit exister dans %windir%\system32\logfiles\firewall\pfirewall.log, afin qu’il soit inclus dans le package d’enquête. Pour plus d’informations sur la création du fichier journal du pare-feu, voir [Configurer le pare-feu Windows Defender avec le journal de sécurité avancée](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
 |Fichiers de préréférion|Windows préréférents sont conçus pour accélérer le processus de démarrage de l’application. Il peut être utilisé pour suivre tous les fichiers récemment utilisés dans le système et rechercher des traces pour les applications qui ont pu être supprimées, mais qui se trouvent toujours dans la liste des fichiers de préréférion. <ul><li>Dossier de préréférion : contient une copie des fichiers de préréférion à partir de `%SystemRoot%\Prefetch`. REMARQUE : il est suggéré de télécharger une visionneuse de fichiers de préréférion pour afficher les fichiers de préréférion.</li><li>PrefetchFilesList.txt : contient la liste de tous les fichiers copiés qui peuvent être utilisés pour suivre s’il y a eu des échecs de copie dans le dossier de préréférion.</li></ul>|
 |Processus|Contient un fichier .CSV répertoriant les processus en cours d’exécution et permet d’identifier les processus en cours d’exécution sur l’appareil. Cela peut être utile lors de l’identification d’un processus suspect et de son état.|
 |Tâches programmées|Contient un fichier .CSV répertoriant les tâches programmées, qui peut être utilisé pour identifier les routines exécutées automatiquement sur un appareil choisi afin de rechercher du code suspect qui a été mis en place pour s’exécuter automatiquement.|
@@ -122,7 +128,7 @@ Le package contient les dossiers suivants :
 |CollectionSummaryReport.xls|Ce fichier est un résumé de la collection de packages d’enquête, il contient la liste des points de données, la commande utilisée pour extraire les données, l’état d’exécution et le code d’erreur en cas d’échec. Vous pouvez utiliser ce rapport pour savoir si le package inclut toutes les données attendues et identifier s’il y a eu des erreurs.|
 |
 
-## <a name="run-microsoft-defender-antivirus-scan-on-devices"></a>Exécuter une Antivirus Microsoft Defender sur des appareils
+## <a name="run-microsoft-defender-antivirus-scan-on-devices"></a>Exécuter une analyse Antivirus Microsoft Defender sur les appareils
 
 Dans le cadre du processus d’examen ou de réponse, vous pouvez lancer à distance une analyse antivirus pour identifier et corriger les programmes malveillants qui peuvent être présents sur un appareil compromis.
 
@@ -132,7 +138,7 @@ Dans le cadre du processus d’examen ou de réponse, vous pouvez lancer à dist
 
 Vous avez sélectionné Exécuter **l’analyse antivirus**, sélectionnez le type d’analyse que vous souhaitez exécuter (rapide ou complet) et ajoutez un commentaire avant de confirmer l’analyse.
 
-![Image de notification pour sélectionner une analyse rapide ou complète et ajouter un commentaire.](images/run-antivirus.png)
+:::image type="content" source="images/run-antivirus.png" alt-text="Notification pour sélectionner une analyse rapide ou complète et ajouter un commentaire" lightbox="images/run-antivirus.png":::
 
 Le centre de données affiche les informations d’analyse et la chronologie de l’appareil inclut un nouvel événement, reflétant qu’une action d’analyse a été envoyée sur l’appareil. Les alertes De l’Antivirus Microsoft Defender reflètent toutes les détections qui ont été détectées pendant l’analyse.
 
@@ -148,9 +154,9 @@ Le centre de données affiche les informations d’analyse et la chronologie de 
 En plus de contenir une attaque en arrêtant les processus malveillants, vous pouvez également verrouiller un appareil et empêcher l’exécution de tentatives ultérieures de programmes potentiellement malveillants.
 
 >[!IMPORTANT]
-> - Cette action est disponible pour les appareils sur Windows 10, version 1709 ou ultérieure, Windows 11 et Windows Server 2016. 
+> - Cette action est disponible pour les appareils Windows 10, version 1709 ou ultérieure, Windows 11 et Windows Server 2016. 
 > - Cette fonctionnalité est disponible si votre organisation utilise Antivirus Microsoft Defender.
-> - Cette action doit respecter les formats de stratégie d Windows Defender’intégrité du code du contrôle d’application et les exigences de signature. Pour plus d’informations, voir [Formats de stratégie d’intégrité du code et signature](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)).
+> - Cette action doit respecter les formats de stratégie d Windows Defender’intégrité du code application Control et les exigences de signature. Pour plus d’informations, voir [Formats de stratégie d’intégrité du code et signature](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)).
 
 Pour empêcher l’exécution d’une application, une stratégie d’intégrité du code est appliquée qui autorise uniquement l’exécution des fichiers s’ils sont signés par un certificat émis par Microsoft. Cette méthode de restriction permet d’empêcher une personne malveillante de contrôler des appareils compromis et d’effectuer d’autres activités malveillantes.
 
@@ -159,13 +165,13 @@ Pour empêcher l’exécution d’une application, une stratégie d’intégrit�
 
 Une fois que vous avez sélectionné Restreindre l’exécution **d’application** sur la page de l’appareil, tapez un commentaire, puis sélectionnez **Confirmer**. Le centre de données affiche les informations d’analyse et la chronologie de l’appareil inclut un nouvel événement.
 
-![Image de la notification de restriction d’application.](images/restrict-app-execution.png)
+:::image type="content" source="images/restrict-app-execution.png" alt-text="Notification de restriction d’application" lightbox="images/restrict-app-execution.png":::
 
 ### <a name="notification-on-device-user"></a>Notification sur l’utilisateur de l’appareil
 
 Lorsqu’une application est restreinte, la notification suivante s’affiche pour informer l’utilisateur qu’une application n’est pas en cours d’exécution :
 
-![Image de restriction d’application.](images/atp-app-restriction.png)
+:::image type="content" source="images/atp-app-restriction.png" alt-text="Message de restriction d’application" lightbox="images/atp-app-restriction.png":::
 
 >[!NOTE]
 >La notification n’est pas disponible Windows Server 2016 et Windows Server 2012 R2.
@@ -189,7 +195,7 @@ Sur Windows 10 version 1709 ou ultérieure, vous aurez davantage de contrôle su
 
 Une fois que vous avez sélectionné **Isoler l’appareil** sur la page de l’appareil, tapez un commentaire, puis sélectionnez **Confirmer**. Le centre de données affiche les informations d’analyse et la chronologie de l’appareil inclut un nouvel événement.
 
-![Image de l’appareil isolé.](images/isolate-device.png)
+:::image type="content" source="images/isolate-device.png" alt-text="Page de détails d’un appareil isolé" lightbox="images/isolate-device.png":::
 
 > [!NOTE]
 > L’appareil reste connecté au service Defender for Endpoint même s’il est isolé du réseau. Si vous avez choisi d’activer Outlook et Skype Entreprise communication, vous serez en mesure de communiquer avec l’utilisateur pendant que l’appareil est isolé.
@@ -198,7 +204,7 @@ Une fois que vous avez sélectionné **Isoler l’appareil** sur la page de l’
 
 Lorsqu’un appareil est isolé, la notification suivante s’affiche pour informer l’utilisateur que l’appareil est isolé du réseau :
 
-![Image d’aucune connexion réseau.](images/atp-notification-isolate.png)
+:::image type="content" source="images/atp-notification-isolate.png" alt-text="Message sans connexion réseau" lightbox="images/atp-notification-isolate.png":::
 
 ## <a name="consult-a-threat-expert"></a>Consulter un spécialiste des menaces
 
@@ -217,7 +223,8 @@ Le **centre de données fournit** des informations sur les actions qui ont été
 
 Tous les autres détails connexes sont également affichés, par exemple, date/heure de soumission, utilisateur d’envoi et si l’action a réussi ou échoué.
 
-![Image du centre de actions avec des informations.](images/action-center-details.png)
+:::image type="content" source="images/action-center-details.png" alt-text="Centre de actions avec des informations" lightbox="images/action-center-details.png":::
+
 
 ## <a name="see-also"></a>Voir aussi
 

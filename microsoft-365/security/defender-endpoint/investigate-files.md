@@ -15,12 +15,12 @@ ms.collection: m365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 6f93a5ec90404ca28fd47d4115a8ebf8d488216e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0cb7523036d6660d4b5556fdfd07e443a359b208
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322042"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466232"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Examiner un fichier associé à une alerte Microsoft Defender pour le point de terminaison
 
@@ -74,13 +74,13 @@ La carte de prévalence du fichier indique où le fichier a été vu sur les app
 > [!NOTE]
 > Différents utilisateurs peuvent voir des valeurs différentes dans les appareils de *la section Organisation* de la carte de prévalence du fichier. En effet, la carte affiche des informations en fonction de l’étendue RBAC dont dispose un utilisateur. Cela signifie que si un utilisateur a obtenu une visibilité sur un ensemble spécifique d’appareils, il verra uniquement le fichier de prévalence organisationnelle sur ces appareils.
 
-![Image des informations de fichier.](images/atp-file-information.png)
+:::image type="content" source="images/atp-file-information.png" alt-text="Informations sur le fichier" lightbox="images/atp-file-information.png":::
 
 ## <a name="alerts"></a>Alertes
 
 **L’onglet Alertes** fournit une liste des alertes associées au fichier. Cette liste couvre la plupart des informations de la file d’attente des alertes, à l’exception du groupe d’appareils, s’il y en a, à qui appartient l’appareil concerné. Vous pouvez choisir le type d’informations affiché en sélectionnant  Personnaliser les colonnes dans la barre d’outils au-dessus des en-têtes de colonne.
 
-![Image des alertes associées à la section du fichier.](images/atp-alerts-related-to-file.png)
+:::image type="content" source="images/atp-alerts-related-to-file.png" alt-text="Les alertes associées à la section de fichier" lightbox="images/atp-alerts-related-to-file.png":::
 
 ## <a name="observed-in-organization"></a>Observé dans l’organisation
 
@@ -89,7 +89,7 @@ La carte de prévalence du fichier indique où le fichier a été vu sur les app
 > [!NOTE]
 > Cet onglet affiche un nombre maximal de 100 appareils. Pour voir tous _les_ appareils avec le fichier, exportez l’onglet dans un fichier CSV en sélectionnant **Exporter** à partir du menu Actions au-dessus des en-têtes de colonne de l’onglet.
 
-![Image de l’appareil observé le plus récent avec le fichier.](images/atp-observed-machines.png)
+:::image type="content" source="images/atp-observed-machines.png" alt-text="Appareils les plus récemment observés avec le fichier" lightbox="images/atp-observed-machines.png":::
 
 Utilisez le curseur ou le sélecteur de plage pour spécifier rapidement une période à vérifier pour les événements impliquant le fichier. Vous pouvez spécifier une fenêtre de temps aussi petite qu’un seul jour. Cela vous permettra de voir uniquement les fichiers qui ont communiqué avec cette adresse IP à ce moment-là, ce qui réduit considérablement les recherches et les défilements inutiles.
 
@@ -97,15 +97,15 @@ Utilisez le curseur ou le sélecteur de plage pour spécifier rapidement une pé
 
 **L’onglet** Analyse approfondie vous permet de soumettre le fichier pour analyse [approfondie, afin](respond-file-alerts.md#deep-analysis) de découvrir plus de détails sur le comportement du fichier, ainsi que l’effet qu’il a au sein de vos organisations. Une fois le fichier soumis, le rapport d’analyse approfondie s’affiche dans cet onglet une fois que les résultats sont disponibles. Si l’analyse approfondie n’a trouvé rien, le rapport est vide et l’espace de résultats reste vide.
 
-![Image de l’onglet Analyse approfondie.](images/submit-file.png)
+:::image type="content" source="images/submit-file.png" alt-text="Onglet Analyse approfondie" lightbox="images/submit-file.png":::
 
 ## <a name="file-names"></a>Noms de fichiers
 
 **L’onglet Noms** de fichiers répertorie tous les noms que le fichier a été observé pour utiliser, au sein de vos organisations.
 
-![Image de l’onglet Noms de fichiers.](images/atp-file-names.png)
+:::image type="content" source="images/atp-file-names.png" alt-text="Onglet Noms de fichiers" lightbox="images/atp-file-names.png":::
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Afficher et organiser la file d’attente de Microsoft Defender pour les points de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)

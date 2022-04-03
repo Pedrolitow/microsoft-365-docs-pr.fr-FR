@@ -18,18 +18,18 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6f6ada6604190ccba270b287201d94ba2acbf6d2
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: 14c759cd243b8da9f338b777e430d4de9f735fc1
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504846"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498910"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer Windows serveurs au service Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Windows Server 2012 R2
 - Windows Server 2016
@@ -53,7 +53,7 @@ Pour obtenir des instructions sur la façon de télécharger et d’utiliser Sé
 
 Vous devez effectuer les étapes générales suivantes pour intégrer correctement les serveurs.
 
-![Illustration du flux d’intégration pour Windows serveurs et Windows 10 appareils](images/server-onboarding-tools-methods.png)
+:::image type="content" source="images/server-onboarding-tools-methods.png" alt-text="Illustration du flux d’intégration pour Windows serveurs et Windows 10 appareils" lightbox="images/server-onboarding-tools-methods.png":::
 
 **Windows Server 2012 R2 et Windows Server 2016 (prévisualisation)**
 
@@ -89,7 +89,7 @@ Le nouveau package de solution unifiée facilite l’intégration des serveurs e
 - [Fonctionnalités de réponse étendues sur](/microsoft-365/security/defender-endpoint/respond-machine-alerts) les appareils et les [fichiers](/microsoft-365/security/defender-endpoint/respond-file-alerts)
 - [PEPT mode blocage](/microsoft-365/security/defender-endpoint/edr-in-block-mode)
 - [Réponse en direct](/microsoft-365/security/defender-endpoint/live-response)
-- [Examen et réponse automatisés (AIR)](/microsoft-365/security/defender-endpoint/automated-investigations)
+- [Enquêtes et réponses automatisées (AIR)](/microsoft-365/security/defender-endpoint/automated-investigations)
 - [Protection contre la falsification](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection)
 
 Selon le serveur que vous intégrerez, la solution unifiée installe Antivirus Microsoft Defender et/ou le capteur PEPT.. Le tableau suivant indique quel composant est installé et ce qui est intégré par défaut.
@@ -97,7 +97,7 @@ Selon le serveur que vous intégrerez, la solution unifiée installe Antivirus M
 |Version du serveur|AV|PEPT|
 |----|----|----|
 |Windows Server 2012 R2 SP1|![Oui.](images/svg/check-yes.svg)|![Oui.](images/svg/check-yes.svg)|
-|Windows Server 2016|Intégré|![Oui.](images/svg/check-yes.svg)|
+|Windows Server 2016|Intégré|![Oui.](images/svg/check-yes.svg)|
 |Windows Server 2019 ou une ultérieure|Intégré|Intégré|
 
 Si vous avez précédemment intégré vos serveurs à l’aide de MMA, suivez les instructions fournies dans la [migration](server-migration.md) de serveur pour migrer vers la nouvelle solution.
@@ -324,16 +324,7 @@ Les étapes suivantes ne s’appliquent que si vous utilisez une solution anti-p
     - Type : `REG_DWORD`
     - Valeur : `1`
 
-2. Exécutez la commande PowerShell suivante pour vérifier que le mode passif a été configuré :
-
-    ```powershell
-    Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
-    ```
-
-3. Confirmez qu’un événement récent contenant l’événement en mode passif est trouvé :
-
-    ![Image du résultat de vérification du mode passif](images/atp-verify-passive-mode.png)
-
+       :::image type="content" source="images/atp-verify-passive-mode.png" alt-text="Résultat de vérification du mode passif" lightbox="images/atp-verify-passive-mode.png":::
 > [!IMPORTANT]
 >
 > - Lorsque vous utilisez Microsoft Defender pour le Cloud pour surveiller les serveurs, un client Defender pour endpoint est automatiquement créé (aux États-Unis pour les utilisateurs américains, dans l’UE pour les utilisateurs européens et au Royaume-Uni pour les utilisateurs au Royaume-Uni).
@@ -394,7 +385,7 @@ Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test d
 
 Suivez les étapes de [l’étape Exécuter un test](run-detection-test.md) de détection sur un appareil nouvellement intégré pour vérifier que le serveur fait des rapports à Defender pour le service Endpoint.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Une fois les appareils intégrés au service, vous devez configurer les composants individuels de Microsoft Defender pour le point de terminaison. Suivez [l’ordre d’adoption](prepare-deployment.md#adoption-order) pour être guidé sur l’activation des différents composants.
 
@@ -412,8 +403,8 @@ Pour les autres versions Windows serveur, vous avez deux options pour Windows se
 - Désinstaller l’agent MMA
 - Supprimer la configuration de l’espace de travail Defender pour le point de terminaison
 
->[!NOTE]
-> Ces instructions de déboardage pour d’autres versions de serveur Windows s’appliquent également si vous exécutez le précédent Microsoft Defender for Endpoint pour Windows Server 2016 et Windows Server 2012 R2 qui nécessite le MMA. Instructions to migrate to the new unfiied solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
+> [!NOTE]
+> Ces instructions de déboardage pour d’autres versions de serveur Windows s’appliquent également si vous exécutez le précédent Microsoft Defender for Endpoint pour Windows Server 2016 et Windows Server 2012 R2 qui nécessite le MMA. Les instructions de migration vers la nouvelle solution unifiée se font dans les [scénarios de migration de serveur dans Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
 ## <a name="related-topics"></a>Sujets associés
 

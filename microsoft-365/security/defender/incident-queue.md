@@ -23,18 +23,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 38bfde92a2988cd8bdbca770402af96a4b9c5134
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 40178e42737bdfea756db55658aaeb988ad4f19f
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321825"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498734"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Hiérarchiser les incidents dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Microsoft 365 Defender l’analyse de corrélation et regroupe les alertes associées et les enquêtes automatisées de différents produits dans un incident. Microsoft 365 Defender déclenche également des alertes uniques sur les activités qui peuvent uniquement être identifiées comme malveillantes en raison de la visibilité de bout en bout dont dispose Microsoft 365 Defender sur l’ensemble de la suite de produits. Cette vue offre à vos analystes de sécurité un niveau d’attaque plus large, qui leur permet de mieux comprendre et de gérer les menaces complexes au sein de votre organisation.
@@ -43,7 +43,7 @@ La **file d’attente Incident** affiche un ensemble d’incidents qui ont été
 
 Vous pouvez vous rendre dans la file d’attente des **incidents à partir d’incidents & alertes > incidents** sur le lancement rapide du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender web</a>. Voici un exemple.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Exemple de file d’attente d’incident." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Section Incident montrant la file d’attente des incidents dans le Microsoft 365 Defender web." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 La section **Incidents et alertes les plus récents** présente un graphique du nombre d’alertes reçues et d’incidents créés au cours des dernières 24 heures.
 
@@ -66,7 +66,7 @@ La **liste Filtres** au-dessus de la liste des incidents affiche les filtres act
 
 Dans la file d’attente des incidents par défaut, vous  pouvez sélectionner **Filtrer** pour voir un volet Filtre, à partir duquel vous spécifiez un ensemble filtré d’incidents. Voici un exemple.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Exemple du volet filtres de la file d’attente des incidents." lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Volet Filtres de la file d’attente des incidents dans le Microsoft 365 Defender web." lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
 Vous pouvez également voir **le volet Filtre** en sélectionnant l’un des filtres dans la liste **Filtres** au-dessus de la liste des incidents.
 
@@ -133,7 +133,7 @@ La liste des incidents par défaut est celle des incidents qui se sont produits 
  - 6 mois
  - Plage personnalisée dans laquelle vous pouvez spécifier des dates et des heures
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Une fois que vous avez déterminé quel incident nécessite la priorité la plus élevée, sélectionnez-le et :
 

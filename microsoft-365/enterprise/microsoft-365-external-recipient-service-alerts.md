@@ -1,7 +1,7 @@
 ---
 title: Alertes du service des destinataires externes
-ms.author: markjjo
-author: markjjo
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 ms.date: ''
 audience: Admin
@@ -19,18 +19,18 @@ ms.custom:
 f1.keywords:
 - NOCSH
 description: Utilisez les alertes du service des destinataires externes pour surveiller les boîtes aux lettres en attente qui atteignent leur quota de boîte aux lettres.
-ms.openlocfilehash: 931be51ee51bd5557633415004eed9a1c7e77888
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8db8e090ec5430f13153bc3edf5b3315c041d9cf
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331174"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568003"
 ---
 # <a name="service-alerts-for-messages-pending-delivery-to-external-recipients-in-exchange-online-monitoring"></a>Alertes de service pour les messages en attente de remise à des destinataires externes dans Exchange Online surveillance
 
 Les alertes de service informent les administrateurs de la file d’envoi de messages à des destinataires externes en dehors Exchange Online. Ces alertes peuvent nécessiter des actions de correction en dehors de Microsoft, mais elles peuvent vous fournir les informations nécessaires à la correction.
 
-Ces alertes de service sont affichées dans le Centre d'administration Microsoft 365. Pour afficher ces alertes de service, allez sur **HealthService** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**health**</a> >  **Exchange Online** puis cliquez sur **l’onglet Problèmes** actifs. Le nom de ces alertes de service est « Message Queueing to External Recipients Above Thresholds ».
+Ces alertes de service sont affichées dans le Centre d'administration Microsoft 365. Pour afficher ces alertes de service,<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a> >  >  État des services **Exchange Online** puis cliquez sur **l’onglet Problèmes** actifs. Le nom de ces alertes de service est « Message Queueing to External Recipients Above Thresholds ».
 
 ![Alerte de service pour les messages en attente de remise à des destinataires externes affichés dans Exchange Online tableau de bord de surveillance.](../media/microsoft-365-exchange-monitoring/ExternalRecipientsServiceAlerts1.png)
 

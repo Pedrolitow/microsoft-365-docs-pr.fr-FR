@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d9f1b4619670c1998dbac584bf7ef4e1d1f940b6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b969efd9d83fa34ded01f8be7db7aaf4db971128
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314215"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498638"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Évaluer votre posture de sécurité avec le Niveau de sécurité Microsoft
 
@@ -46,7 +46,7 @@ Pour vous aider à trouver les informations dont vous avez besoin plus rapidemen
 
 Dans la page vue d’ensemble du score de sécurité Microsoft, affichez la répartition des points entre ces groupes et les points disponibles. Vous pouvez également obtenir une vue globale du score total, de la tendance historique de votre score sécurisé avec des comparaisons de critères et des actions d’amélioration hiérarchisées qui peuvent être prises pour améliorer votre score.
 
-![Page d’accueil Du score sécurisé.](../../media/secure-score/secure-score-home-page.png)
+:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="Page d’accueil Du score de sécurité dans le portail Microsoft 365 Defender sécurisé" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
 ## <a name="check-your-current-score"></a>Vérifier votre score actuel
 
@@ -62,7 +62,7 @@ Voici les scores que vous pouvez ajouter à votre vue de votre score global pour
 
 Cette vue ressemblera à ce à quoi elle ressemblera si vous avez inclus tous les affichages de score possibles :
 
-![Votre score sécurisé, y compris le score planifié, le score de licence actuel et le score réalisable.](../../media/secure-score/secure-score-achievable.png)
+:::image type="content" source="../../media/secure-score/secure-score-achievable.png" alt-text="Votre score sécurisé, y compris le score planifié, le score de licence actuel et le score réalisable dans le portail Microsoft 365 Defender" lightbox="../../media/secure-score/secure-score-achievable.png":::
 
 ## <a name="take-action-to-improve-your-score"></a>Prendre des mesures pour améliorer votre score
 
@@ -76,7 +76,7 @@ Le classement est basé sur le nombre de points à atteindre, les difficultés d
 
 Lorsque vous sélectionnez une action d’amélioration spécifique, un volant de page complète s’affiche.  
 
-![Exemple de volant d’action d’amélioration.](../../media/secure-score/secure-score-improvement-action-details.png)
+:::image type="content" source="../../media/secure-score/secure-score-improvement-action-details.png" alt-text="Le volant d’une action d’amélioration dans le portail Microsoft 365 Defender web" lightbox="../../media/secure-score/secure-score-improvement-action-details.png":::
 
 Pour effectuer l’action, vous avez plusieurs options :
 

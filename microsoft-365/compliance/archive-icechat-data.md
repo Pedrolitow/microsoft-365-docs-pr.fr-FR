@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de l’outil ICE Chat dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: c340cbb65d7efaa5cbc14ca977879c09b585031a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c29a39c8c398a0d8721931cbcb770aa18d0f3c4b
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324884"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568091"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Configurer un connecteur pour archiver les données ICE Chat
 
@@ -121,14 +121,20 @@ La dernière étape consiste à créer un connecteur de conversation ICE dans le
 
 7. Une fois la connexion validée, cliquez sur **Suivant**.
 
-8. Dans la page **Mappage des utilisateurs externes Microsoft 365 utilisateurs**, activez le mappage automatique des utilisateurs et fournissez un mappage utilisateur personnalisé selon les besoins. Vous pouvez télécharger une copie du fichier CSV de mappage utilisateur sur cette page. Vous pouvez ajouter les mappages utilisateur au fichier, puis le télécharger.
+8. Dans la page **Définir l’utilisateur** , spécifiez les utilisateurs pour qui importer des données.
+
+     - **Tous les utilisateurs de votre organisation**. Sélectionnez cette option pour importer des données pour tous les utilisateurs.
+
+     - **Uniquement les utilisateurs en attente pour litige**. Sélectionnez cette option pour importer des données uniquement pour les utilisateurs dont les boîtes aux lettres sont placées en attente pour litige. Cette option importe les données dans les boîtes aux lettres utilisateur dont la propriété LitigationHoldEnabled a la valeur True. Pour plus d’informations, [voir Créer une attente pour litige](create-a-litigation-hold.md).
+
+9. Dans la page **Mappage des utilisateurs externes Microsoft 365 utilisateurs**, activez le mappage automatique des utilisateurs et fournissez un mappage utilisateur personnalisé selon les besoins. Vous pouvez télécharger une copie du fichier CSV de mappage utilisateur sur cette page. Vous pouvez ajouter les mappages utilisateur au fichier, puis le télécharger.
 
    > [!NOTE]
    > Comme indiqué précédemment, le fichier CSV du fichier de mappage personnalisé contient l’ID de conversation ICE et l’adresse Microsoft 365 boîte aux lettres correspondante pour chaque utilisateur. Si vous activez le mappage utilisateur automatique et fournissez un mappage personnalisé, pour chaque élément de conversation, le connecteur examinera d’abord le fichier de mappage personnalisé. S’il ne trouve pas d’utilisateur Microsoft 365 valide correspondant à l’identit de conversation ICE d’un utilisateur, le connecteur importe l’élément dans les boîtes aux lettres des utilisateurs spécifiés dans les propriétés *SenderEmail* et *RecipientEmail* de l’élément de conversation. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide par mappage utilisateur automatique ou personnalisé, l’élément n’est pas importé.
 
-9. Cliquez **sur** Suivant, examinez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
+10. Cliquez **sur** Suivant, examinez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
 
-10. Go to the **Data connectors** page to see the progress of the import process for the new connector.
+11. Go to the **Data connectors** page to see the progress of the import process for the new connector.
 
 ## <a name="set-up-a-connector-using-private-keys"></a>Configurer un connecteur à l’aide de clés privées
 
@@ -196,11 +202,17 @@ Une fois que votre site ICE Chat SFTP est configuré, l’étape suivante consis
 
 7. Une fois la connexion validée, cliquez sur **Suivant**.
 
-8. Dans la page **Mappage des utilisateurs ICE Chat Microsoft 365** utilisateurs, activez le mappage automatique des utilisateurs et fournissez un mappage utilisateur personnalisé selon les besoins.
+8. Dans la page **Définir l’utilisateur** , spécifiez les utilisateurs pour qui importer des données.
+
+     - **Tous les utilisateurs de votre organisation**. Sélectionnez cette option pour importer des données pour tous les utilisateurs.
+
+     - **Uniquement les utilisateurs en attente pour litige**. Sélectionnez cette option pour importer des données uniquement pour les utilisateurs dont les boîtes aux lettres sont placées en attente pour litige. Cette option importe les données dans les boîtes aux lettres utilisateur dont la propriété LitigationHoldEnabled a la valeur True. Pour plus d’informations, [voir Créer une attente pour litige](create-a-litigation-hold.md).
+
+9. Dans la page **Mappage des utilisateurs ICE Chat Microsoft 365** utilisateurs, activez le mappage automatique des utilisateurs et fournissez un mappage utilisateur personnalisé selon les besoins.
 
    > [!NOTE]
    > Comme indiqué précédemment, le fichier CSV du fichier de mappage personnalisé contient l’ID de conversation ICE et l’adresse Microsoft 365 boîte aux lettres correspondante pour chaque utilisateur. Si vous activez le mappage utilisateur automatique et fournissez un mappage personnalisé, pour chaque élément de conversation, le connecteur examinera d’abord le fichier de mappage personnalisé. S’il ne trouve pas d’utilisateur Microsoft 365 valide correspondant à l’identit de conversation ICE d’un utilisateur, le connecteur importe l’élément dans les boîtes aux lettres des utilisateurs spécifiés dans les propriétés *SenderEmail* et *RecipientEmail* de l’élément de conversation. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide par mappage utilisateur automatique ou personnalisé, l’élément n’est pas importé.
 
-9. Cliquez **sur** Suivant, examinez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
+10. Cliquez **sur** Suivant, examinez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
 
-10. Go to the **Data connectors** page to see the progress of the import process for the new connector. Cliquez sur le connecteur pour afficher la page volante, qui contient des informations sur le connecteur.
+11. Go to the **Data connectors** page to see the progress of the import process for the new connector. Cliquez sur le connecteur pour afficher la page volante, qui contient des informations sur le connecteur.

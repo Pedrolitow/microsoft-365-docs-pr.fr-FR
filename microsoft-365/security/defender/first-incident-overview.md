@@ -22,18 +22,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 16654281adf5ca6f31ea2d29aab3387d39424cb1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3034c6020c3d7d04164e37beb1c1186e9aa30958
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325934"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499108"
 ---
 # <a name="responding-to-your-first-incident"></a>Réponse à votre premier incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 La stratégie de réponse aux incidents d’une organisation détermine sa capacité à gérer les incidents de sécurité et la cybercriminalité de plus en plus perturbants. Bien que la prise de mesures préventives soit importante, la possibilité d’agir rapidement pour contenir, atténuer et récupérer des incidents détectés peut réduire les dommages et les pertes de l’entreprise.
@@ -52,7 +52,7 @@ Les incidents dans Microsoft 365 Defender sont les points de départ logiques po
 
 ## <a name="next-step"></a>Étape suivante
 
-[![Préparez votre organisation et votre Microsoft 365 client.](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
+:::image type="content" source="../../media/first-incident-overview/first-incident-path.png" alt-text="Option de correction dans Répondre à votre première page d’incident" lightbox="../../media/first-incident-overview/first-incident-path.png":::
 
 Assurez-vous que votre organisation et Microsoft 365 client sont [prêts pour la gestion des incidents](first-incident-prepare.md).
 
@@ -64,7 +64,7 @@ Conseils de réponse aux incidents pour Microsoft 365 Defender :
 - [Enquêter sur des incidents](investigate-incidents.md)
 - [Gérer les incidents](manage-incidents.md)
 
-Exemples supplémentaires de réponses aux premiers incidents :
+Plus d’exemples de réponses aux premiers incidents :
 
 - [Courriers hameçons](first-incident-path-phishing.md)
 - [Attaque de base d’identité](first-incident-path-identity.md)
