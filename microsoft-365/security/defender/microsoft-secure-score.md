@@ -23,12 +23,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d31fa35ddf84b63a115cf3128673794617fcc730
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: ed80d57d25fea2f3c19b6fe6363f993569c68a92
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886891"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499445"
 ---
 # <a name="microsoft-secure-score"></a>Niveau de sécurité Microsoft
 
@@ -36,7 +36,7 @@ ms.locfileid: "62886891"
 
 Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Vous pouvez le trouver sur https://security.microsoft.com/securescore le [portail Microsoft 365 Defender web](microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
-En suivant les recommandations du Niveau de sécurité, vous pouvez protéger votre organisation contre les menaces. À partir d’un tableau de bord centralisé dans le portail Microsoft 365 Defender, les organisations peuvent surveiller et travailler sur la sécurité de leurs identités, applications et appareils Microsoft 365 données.
+En suivant les recommandations du Niveau de sécurité, vous pouvez protéger votre organisation contre les menaces. À partir d’un tableau de bord centralisé dans le portail Microsoft 365 Defender, les organisations peuvent surveiller et travailler sur la sécurité de leurs identités, applications et appareils Microsoft 365 de sécurité.
 
 Score sécurisé aide les organisations :  
 
@@ -49,7 +49,7 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide du score de sécu
 
 Les organisations ont accès à des visualisations robustes des métriques et des tendances, à l’intégration à d’autres produits Microsoft, à la comparaison des scores avec des organisations similaires, et bien plus encore. Le score peut également refléter lorsque des solutions tierces ont traité les actions recommandées.
 
-![Page d’accueil Du score sécurisé.](../../media/secure-score/secure-score-home-page.png)
+:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="Page d’accueil Du score de sécurité Microsoft dans le portail Microsoft 365 Defender microsoft" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
 ## <a name="how-it-works"></a>Comment ça marche
 
@@ -85,7 +85,7 @@ Il existe actuellement des recommandations pour les produits suivants :
 - Microsoft 365 (y compris Exchange Online)
 - Azure Active Directory
 - Microsoft Defender pour point de terminaison
-- Microsoft Defender pour l’identité
+- Microsoft Defender pour l’identité
 - Defender for Cloud Apps
 - Microsoft Teams
 

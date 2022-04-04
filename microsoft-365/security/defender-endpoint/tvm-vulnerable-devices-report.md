@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 50b30d38a42aab37c295a9f65bd070dd9613927c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: fa5280d9c6f396e8e164397210c1b58dfcfc8d9b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312646"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466716"
 ---
 # <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>Rapport sur les appareils vulnérables : Gestion des menaces et des vulnérabilités
 
@@ -52,33 +52,33 @@ Il existe deux colonnes :
 
 Chaque appareil est compté une seule fois en fonction de la vulnérabilité la plus grave trouvée sur cet appareil.
 
-:::image type="content" alt-text="Graphique des niveaux de gravité de vulnérabilité actuels de l’appareil et graphique montrant les niveaux au fil du temps." source="images/tvm-report-severity.png" lightbox="images/tvm-report-severity.png":::
+:::image type="content" source="images/tvm-report-severity.png" alt-text=" Graphiques montrant les niveaux de gravité actuels de vulnérabilité de l’appareil et les niveaux au fil du temps." lightbox="images/tvm-report-severity.png":::
 
 ## <a name="exploit-availability-graphs"></a>Exploiter les graphiques de disponibilité
 
 Chaque appareil est compté une seule fois en fonction du niveau d’exploitation connu le plus élevé.
 
-:::image type="content" alt-text="Un graphique de la disponibilité actuelle de l’exploitation des appareils et un graphique montrant la disponibilité au fil du temps." source="images/tvm-report-exploit-availability.png" lightbox="images/tvm-report-exploit-availability.png":::
+:::image type="content" source="images/tvm-report-exploit-availability.png" alt-text="Graphiques montrant la disponibilité actuelle de l’exploitation des appareils et la disponibilité au fil du temps" lightbox="images/tvm-report-exploit-availability.png":::
 
 ## <a name="vulnerability-age-graphs"></a>Graphiques de l’âge de vulnérabilité
 
 Chaque appareil est compté une seule fois sous la date de publication de la vulnérabilité la plus ancienne. Les vulnérabilités plus anciennes ont plus de chances d’être exploitées.
 
-:::image type="content" alt-text="Graphique de l’âge actuel de vulnérabilité de l’appareil et graphique montrant l’âge au fil du temps." source="images/tvm-report-age.png" lightbox="images/tvm-report-age.png":::
+:::image type="content" source="images/tvm-report-age.png" alt-text="Graphiques montrant l’âge actuel de vulnérabilité de l’appareil et l’âge au fil du temps" lightbox="images/tvm-report-age.png":::
 
 ## <a name="vulnerable-devices-by-operating-system-platform-graphs"></a>Appareils vulnérables par graphiques de plateforme de système d’exploitation
 
 Nombre d’appareils sur chaque système d’exploitation exposés en raison de vulnérabilités logicielles.
 
-:::image type="content" alt-text="Un graphique des appareils vulnérables actuels par plateforme de système d’exploitation et un graphique montrant les appareils vulnérables par les plateformes de système d’exploitation au fil du temps." source="images/tvm-report-os.png" lightbox="images/tvm-report-os.png":::
+:::image type="content" source="images/tvm-report-os.png" alt-text="Graphiques montrant les appareils vulnérables actuels par plateforme de système d’exploitation et les appareils vulnérables par les plateformes de système d’exploitation au fil du temps" lightbox="images/tvm-report-os.png":::
 
 ## <a name="vulnerable-devices-by-windows-version-graphs"></a>Appareils vulnérables en Windows graphiques de version
 
 Nombre d’appareils sur chaque version Windows 10 ou Windows 11 qui sont exposés en raison d’applications ou de système d’exploitation vulnérables.
 
-:::image type="content" alt-text="Graphique des appareils vulnérables actuels par version Windows 10 et graphique montrant les appareils vulnérables par Windows 10 version au fil du temps." source="images/tvm-report-version.png" lightbox="images/tvm-report-version.png":::
+:::image type="content" source="images/tvm-report-version.png" alt-text="Graphiques montrant les appareils vulnérables actuels en Windows 10 version et les appareils vulnérables par Windows 10 version au fil du temps" lightbox="images/tvm-report-version.png":::
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Recommandations de sécurité](tvm-security-recommendation.md)

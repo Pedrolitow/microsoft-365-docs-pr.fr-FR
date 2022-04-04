@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 473d58cde13f1f776c31184b2b50e74e23810b22
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: dac2a68249d90b212e6bbcaacdec84918560deb5
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807031"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755817"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Créer et gérer des règles de détection personnalisées
 
@@ -42,9 +42,9 @@ Les règles de détection personnalisées sont des règles que vous pouvez conce
 
 Pour gérer les détections personnalisées, vous devez disposer de l’un des rôles suivants:
 
-- **Administrateur de sécurité** : les utilisateurs Azure Active Directory [ce](/azure/active-directory/roles/permissions-reference#security-administrator) rôle peuvent gérer les paramètres de sécurité dans le portail Microsoft 365 Defender et d’autres portails et services.
+- **Administrateur de sécurité** : les utilisateurs ayant [ce rôle Azure Active Directory gérer](/azure/active-directory/roles/permissions-reference#security-administrator) les paramètres de sécurité dans le portail Microsoft 365 Defender et d’autres portails et services.
 
-- **Opérateur de sécurité** : les utilisateurs dotés de [ce rôle Azure Active Directory](/azure/active-directory/roles/permissions-reference#security-operator) peuvent gérer les alertes et avoir un accès global en lecture seule aux fonctionnalités liées à la sécurité, y compris toutes les informations du portail Microsoft 365 Defender. Ce rôle est suffisant pour la gestion des détections personnalisées uniquement si le contrôle d’accès basé sur un rôle (RBAC) est désactivé dans Microsoft Defender pour point de terminaison. Si vous avez configuré RBAC, vous avez également besoin de l’autorisation gérer les **paramètres** de sécurité pour Defender for Endpoint.
+- **Opérateur de** sécurité : les utilisateurs dotés de ce [rôle Azure Active Directory](/azure/active-directory/roles/permissions-reference#security-operator) peuvent gérer les alertes et avoir un accès global en lecture seule aux fonctionnalités liées à la sécurité, y compris toutes les informations du portail Microsoft 365 Defender. Ce rôle est suffisant pour la gestion des détections personnalisées uniquement si le contrôle d’accès basé sur un rôle (RBAC) est désactivé dans Microsoft Defender pour point de terminaison. Si vous avez configuré RBAC, vous avez également besoin de l’autorisation gérer les **paramètres** de sécurité pour Defender for Endpoint.
 
 Vous pouvez également gérer les détections personnalisées qui s’appliquent aux données de solutions Microsoft 365 Defender spécifiques si vous avez des autorisations pour elles. Si vous avez uniquement des autorisations de gestion des Microsoft 365 Defender pour Office, par exemple, vous pouvez créer des détections personnalisées `Email` à l’aide de tableaux, mais pas de `Identity` tableaux.  
 
@@ -59,7 +59,7 @@ Pour gérer les autorisations requises, un **administrateur général** peut :
 ## <a name="create-a-custom-detection-rule"></a>Créer une règle de détection personnalisée
 ### <a name="1-prepare-the-query"></a>1. Préparez la requête.
 
-Dans le portail Microsoft 365 Defender, allez à la recherche avancée  et sélectionnez une requête existante ou créez une nouvelle requête. Lorsque vous utilisez une nouvelle requête, exécutez la requête pour identifier les erreurs et comprendre les résultats possibles.
+Dans le portail Microsoft 365 Defender' recherche avancée, sélectionnez  une requête existante ou créez une nouvelle requête. Lorsque vous utilisez une nouvelle requête, exécutez la requête pour identifier les erreurs et comprendre les résultats possibles.
 
 >[!IMPORTANT]
 >Pour empêcher le service de retourner trop d’alertes, chaque règle est limitée à la génération de 100 alertes uniquement chaque fois qu’il s’exécute. Avant de créer une règle, ajustez votre requête pour éviter les alertes pour une activité quotidienne normale.
@@ -160,7 +160,7 @@ Ces actions sont appliquées aux appareils dans la colonne `DeviceId`des résult
 Lorsqu’il est sélectionné, vous pouvez choisir d’appliquer **l’action** `SHA1`de fichier de mise en quarantaine sur les fichiers dans la colonne , , `InitiatingProcessSHA1`ou dans `SHA256``InitiatingProcessSHA256` la colonne des résultats de la requête. Cette action supprime le fichier de son emplacement actuel et place une copie en quarantaine.
 
 #### <a name="actions-on-users"></a>Actions sur les utilisateurs
-Lorsque cette option est sélectionnée, l’action **Marquez l’utilisateur comme compromis** est effectuée sur les utilisateurs de la colonne`AccountObjectId`, `InitiatingProcessAccountObjectId` ou `RecipientObjectId`colonne des résultats de la requête. Cette action définit le niveau de risque des utilisateurs sur « élevé » Azure Active Directory, déclenchant les stratégies de [protection des identités correspondantes](/azure/active-directory/identity-protection/overview-identity-protection).
+Lorsque cette option est sélectionnée, l’action **Marquez l’utilisateur comme compromis** est effectuée sur les utilisateurs de la colonne`AccountObjectId`, `InitiatingProcessAccountObjectId` ou `RecipientObjectId`colonne des résultats de la requête. Cette action définit le niveau de risque des utilisateurs sur « élevé » Azure Active Directory, déclenchant les stratégies [de protection des identités correspondantes](/azure/active-directory/identity-protection/overview-identity-protection).
 
 > [!NOTE]
 > L’action autoriser ou bloquer des règles de détection personnalisées n’est actuellement pas prise en charge sur Microsoft 365 Defender.
@@ -188,7 +188,7 @@ Vous conservez le contrôle sur l’étendue ou la spécificité de vos détecti
 Vous pouvez afficher la liste des règles de détection personnalisées existantes, vérifier leurs précédentes séries et passer en revue les alertes qu’elles ont déclenchées. Vous pouvez également exécuter une règle à la demande et la modifier.
 
 >[!TIP]
-> Les alertes élevées par des détections personnalisées sont disponibles sur les alertes et les API d’incident. Pour plus d’informations, voir [API Microsoft 365 Defender pris en charge](api-supported.md).
+> Les alertes élevées par des détections personnalisées sont disponibles sur les alertes et les API d’incident. Pour plus d’informations, [voir API Microsoft 365 Defender pris en charge](api-supported.md).
 
 ### <a name="view-existing-rules"></a>Afficher les règles existantes
 
@@ -203,7 +203,7 @@ Pour afficher toutes les règles de détection personnalisées existantes, **acc
 
 Pour afficher des informations complètes sur une règle de détection personnalisée, sélectionnez **les** règles de détection **HuntingCustom** > , puis sélectionnez le nom de la règle. Vous pouvez ensuite afficher des informations générales sur la règle, y compris des informations sur son état d’exécution et son étendue. La page fournit également la liste des alertes et actions déclenchées.
 
-![Page de détails de règle de détection personnalisée.](../../media/custom-detect-rules-view.png)<br>
+:::image type="content" source="../../media/custom-detect-rules-view.png" alt-text="Page des détails de la règle de détection personnalisée dans le portail Microsoft 365 Defender client" lightbox="../../media/custom-detect-rules-view.png":::<br>
 *Détails des règles de détection personnalisées*
 
 Vous pouvez également effectuer les actions suivantes sur la règle à partir de cette page:

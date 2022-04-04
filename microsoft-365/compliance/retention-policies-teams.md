@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: fc870050b8ef69a908553617d755412d95efa288
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: f2b3b5a61eabbffc50da34b14baa20e025b8da0f
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63714871"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568519"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -100,7 +100,7 @@ Pour les deux voies du diagramme :
 > [!NOTE]
 > Les messages stockés dans les boîtes aux lettres, y compris les dossiers masqués, peuvent faire l’objet de recherches au moyen des outils eDiscovery. Tant que les messages ne sont pas définitivement supprimés du dossier SubstrateHolds, ils peuvent toujours faire l’objet de recherches au moyen des outils eDiscovery.
 
-Lorsque les messages sont définitivement supprimés du dossier SubstrateHolds, une opération de suppression est communiquée au service de conversation Azure principal, qui relaie ensuite la même opération à l’application cliente Teams. Les retards dans cette communication ou mise en cache peuvent expliquer pourquoi, pendant un court laps de temps, les utilisateurs affectés à la stratégie peuvent toujours voir ces messages dans leur application Teams, mais les données de ces messages ne sont pas renvoyées dans les recherches de découverte électronique.
+Lorsque la période de rétention expire et qu'un message est déplacé vers le dossier SubstrateHolds, une opération de suppression est communiquée au service de conversation backend Azure, qui relaie ensuite la même opération à l'application cliente Teams. Les retards dans cette communication ou la mise en cache peuvent expliquer pourquoi, pendant une courte période, les utilisateurs continuent de voir ces messages dans leur application Teams.
 
 Dans ce scénario où le service de conversation Azure reçoit une commande de suppression en raison d’une stratégie de rétention, le message correspondant dans l’application cliente Teams est supprimé pour tous les utilisateurs de la conversation. Certains de ces utilisateurs peuvent être issus d’une autre organisation, avoir une stratégie de rétention avec une période de rétention plus longue ou aucune stratégie de rétention qui leur est affectée. Pour ces utilisateurs, les copies des messages sont toujours stockées dans leurs boîtes aux lettres et restent utilisables dans une recherche de découverte électronique jusqu’à ce que les messages soient définitivement supprimés par une autre stratégie de rétention.
 

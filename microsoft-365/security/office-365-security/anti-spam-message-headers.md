@@ -18,12 +18,12 @@ description: Les administrateurs peuvent en savoir plus sur les champs d’en-t�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8eaf567e4cbceae66a5acd1fa1a45565f15a4804
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 33cebd8cfd0d61b09a5d4976baec9708082c8ca3
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60884000"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679431"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>En-têtes de message anti-courrier indésirable dans Microsoft 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "60884000"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Dans toutes les organisations Microsoft 365, Exchange Online Protection (EOP) analyse tous les messages entrants à la recherche de courrier indésirable, de programmes malveillants et d’autres menaces. Les résultats de ces analyses sont ajoutés aux champs d’en-tête suivants dans les messages :
 
@@ -60,8 +60,6 @@ Les champs et valeurs individuels sont décrits dans le tableau suivant.
 > [!NOTE]
 > L’en-tête **X-Forefront-Antispam-Report** contient de nombreux champs et valeurs d’en-tête différents. Les champs qui ne sont pas décrits dans le tableau sont exclusivement utilisés par l’équipe Microsoft de lutte contre les courriers indésirables à des fins de diagnostic.
 
-****
-
 |Champ|Description|
 |---|---|
 |`ARC`|Le protocole `ARC` contient les champs suivants : <ul><li>`AAR` : enregistre le contenu de l'en-tête **Authentication-Results** à partir de DMARC.</li><li>`AMS` : inclut les signature de chiffrement du message.</li><li>`AS`: comprend les signatures cryptographiques des en-têtes de message. Ce champ contient une balise de validation de la chaîne appelée`"cv="`, qui comprend le résultat de la validation de la chaîne (**none**, **pass**, ou **échec**).</li></ul>|
@@ -87,18 +85,14 @@ Les champs et valeurs individuels sont décrits dans le tableau suivant.
 |`SFV:SPM`|Le message a été marqué comme courrier indésirable par le filtrage du courrier indésirable.|
 |`SRV:BULK`|Le message a été identifié comme courrier en bloc par le filtrage du courrier indésirable et le seuil de niveau de réclamation en bloc (BCL). Lorsque le paramètre _MarkAsSpamBulkMail_ est `On` (il est activé par défaut), un message électronique en bloc est marqué comme courrier indésirable (SCL 6). Pour plus d’informations, consultez [Configurer les stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md).|
 |`X-CustomSpam: [ASFOption]`|Le message correspondait à une option avancée de filtrage de courrier indésirable (ASF). Pour afficher la valeur de l’en-tête X pour chaque paramètre ASF, consultez [Paramètres de filtre de courrier indésirable avancé](advanced-spam-filtering-asf-options.md).|
-|
 
 ## <a name="x-microsoft-antispam-message-header-fields"></a>Champs d’en-tête de message X-Microsoft-Antispam
 
 Le tableau suivant décrit certains champs utiles de l’en-tête **X-Microsoft-Antispam** des messages. Les autres champs de cet en-tête sont exclusivement utilisés par l’équipe Microsoft de lutte contre les courriers indésirables à des fins de diagnostic.
 
-****
-
 |Champ|Description|
 |---|---|
 |`BCL`|Niveau de réclamation en bloc (BCL) du message. Un niveau BCL supérieur indique qu’un courrier en nombre est susceptible de générer des plaintes (et par conséquent plus susceptible d’être du courrier indésirable). Pour plus d’informations, consultez [Niveau de réclamation en bloc (BCL)](bulk-complaint-level-values.md).|
-|
 
 ## <a name="authentication-results-message-header"></a>En-tête de message Authentication-results
 
@@ -151,8 +145,6 @@ La liste suivante décrit le texte ajouté à l’en-tête **Authentication-Resu
 
 Le tableau ci-dessous décrit les champs et les valeurs possibles pour chaque vérification d’authentification de messagerie électronique.
 
-****
-
 |Champ|Description|
 |---|---|
 |`action`|Indique l’action effectuée par le filtre de courrier indésirable en fonction des résultats de la vérification DMARC. Par exemple : <ul><li>**oreject** ou **o.reject** : signifie « override reject » (ignorer le rejet). Microsoft 365 utilise cette action lorsqu’il reçoit un message qui échoue aux vérifications de DMARC et qui sont issus d’un domaine dont l’enregistrement TXT DMARC a pour stratégie p=reject (rejet). Au lieu de supprimer ou de rejeter le message, Microsoft 365 le marque comme courrier indésirable. Pour obtenir des explications sur cette configuration de Microsoft 365, reportez-vous à la section [Gestion des messages électroniques entrants qui échouent aux vérifications de DMARC dans Microsoft 365](use-dmarc-to-validate-email.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc).</li><li>**pct.quarantine** indique qu’un pourcentage inférieur à 100 % des messages n’ayant pas satisfait les vérifications DMARC seront remis malgré tout. Cela signifie que le message n’a pas satisfait les vérifications DMARC et que la stratégie a été définie de manière à mettre les messages en quarantaine, mais que le champ pct n’a pas été défini sur 100 % et que le système a déterminé aléatoirement de ne pas appliquer l’action DMARC conformément à la stratégie du domaine spécifié.</li><li>**pct.reject** indique qu’un pourcentage inférieur à 100 % des messages n’ayant pas satisfait les vérifications DMARC seront remis malgré tout. Cela signifie que le message n’a pas satisfait les vérifications DMARC et que la stratégie a été définie de manière à rejeter les messages, mais que le champ pct n’a pas été défini sur 100 % et que le système a déterminé aléatoirement de ne pas appliquer l’action DMARC conformément à la stratégie du domaine spécifié.</li><li>**permerror** indique qu’une erreur permanente s’est produite lors de l’évaluation DMARC, par exemple, qu’un enregistrement TXT DMARC mal formé a été détecté dans le système DNS. Toute tentative de renvoyer le message produira sans doute le même résultat. Essayez plutôt de contacter le propriétaire du domaine pour résoudre le problème.</li><li>**temperror** indique qu’une erreur temporaire s’est produite lors de l’évaluation DMARC. Vous pouvez demander à l’expéditeur de réessayer de renvoyer son message plus tard pour qu’il soit traité correctement.</li></ul>|
@@ -163,5 +155,4 @@ Le tableau ci-dessous décrit les champs et les valeurs possibles pour chaque v�
 |`header.from`|Domaine de l’adresse `5322.From` dans l’en-tête de l’e-mail (également appelée adresse de l’expéditeur ou P2). Le destinataire voit l'adresse From dans les clients de messagerie.|
 |`reason`|Raison pour laquelle l’authentification composite a réussi ou échoué. La valeur est un code à 3 chiffres. Par exemple : <ul><li>**000**: Le message a échoué à l'authentification explicite (`compauth=fail`). Par exemple, le message a reçu un échec DMARC et déclenché une action de mise en quarantaine ou de rejet.</li><li>**001**: Le message a échoué à l'authentification implicite (`compauth=fail`). Cela signifie que le domaine d’envoi n’a pas publié d’enregistrement d’authentification de courrier ou, s’il la fait, que sa stratégie en cas d’échec était plus faible (erreur SPF récupérable ou neutre, stratégie DMARC de `p=none`).</li><li>**002** : signifie que l’organisation a une stratégie pour la paire expéditeur/domaine qui interdit explicitement l’envoi d’e-mails usurpés, ce paramètre étant défini manuellement par un administrateur.</li><li>**010** : le message a échoué au filtrage DMARC, et déclenché une action de rejet ou de mise en quarantaine, et que le domaine d’envoi est l’un des domaines acceptés de l’organisation (cela fait partie de l’usurpation self-to-self, ou intra-organisationnelle).</li><li>**1xx** ou **7xx** : il s’agit de l’authentification réussie du message (`compauth=pass`). Les deux derniers chiffres sont des codes internes utilisés par Microsoft 365.</li><li>**2xx** : il s’agit de l’authentification implicite avec transfert logiciel (`compauth=softpass`). Les deux derniers chiffres sont des codes internes utilisés par Microsoft 365.</li><li>**3xx** : le message n’a pas été vérifié pour l’authentification composite (`compauth=none`).</li><li>**4xx** ou **9xx** : le message a contourné l’authentification composite(`compauth=none`). Les deux derniers chiffres sont des codes internes utilisés par Microsoft 365.</li><li>**6xx** : le message a échoué à l’authentification de courrier implicite et que le domaine d’envoi est l’un des domaines acceptés de l’organisation (cela fait partie de l’usurpation de soi à soi ou intra-organisation).</li></ul>|
 |`smtp.mailfrom`|Domaine de l’adresse `5321.MailFrom` (également appelée adresse MAIL FROM, expéditeur P1 ou expéditeur d’enveloppe). Il s’agit de l’adresse e-mail utilisée pour les rapports de non-remise (également appelés notifications d’échec de remise ou notifications de non-remise).|
-|`spf`|Décrit les résultats de la vérification SPF pour le message. Les valeurs admises sont les suivantes : <ul><li>`pass (IP address)` : indique que le message a réussi la vérification SPF et fournit l’adresse IP de l’expéditeur. Le client est autorisé à envoyer ou à relayer le courrier électronique avec le domaine de l’expéditeur.</li><li>`fail (IP address)` : indique que le message a échoué à la vérification SPF et fournit l’adresse IP de l’expéditeur. Dans ce cas, on parle parfois d’_échec sévère_.</li><li>`softfail (reason)` : l’enregistrement SPF a désigné l’hôte comme n’étant pas autorisé à envoyer, mais est en transition.</li><li>`neutral` : l’enregistrement SPF indique explicitement qu’il ne déclare pas si l’adresse IP est autorisée à envoyer.</li><li>`none` : le domaine ne possède pas d’enregistrement SPF ou l’enregistrement SPF ne correspond à aucun résultat.</li><li>`temperror` : une erreur temporaire s’est produite. Par exemple, une erreur DNS. Cette même vérification peut être effectuée ultérieurement.</li><li>`permerror` : une erreur permanente est survenue. Par exemple, un enregistrement SPF mal mis en forme dans le domaine.</li></ul>|
-|
+|`spf`|Décrit les résultats de la vérification SPF pour le message. Les valeurs admises sont les suivantes : <ul><li>`pass (IP address)` : indique que le message a réussi la vérification SPF et fournit l’adresse IP de l’expéditeur. Le client est autorisé à envoyer ou à relayer le courrier électronique avec le domaine de l’expéditeur.</li><li>`fail (IP address)`: La vérification SPF du message a échoué et inclut l'adresse IP de l'expéditeur. Ceci est parfois appelé _hard fail_.</li><li>`softfail (reason)` : l’enregistrement SPF a désigné l’hôte comme n’étant pas autorisé à envoyer, mais est en transition.</li><li>`neutral` : l’enregistrement SPF indique explicitement qu’il ne déclare pas si l’adresse IP est autorisée à envoyer.</li><li>`none` : le domaine ne possède pas d’enregistrement SPF ou l’enregistrement SPF ne correspond à aucun résultat.</li><li>`temperror` : une erreur temporaire s’est produite. Par exemple, une erreur DNS. Cette même vérification peut être effectuée ultérieurement.</li><li>`permerror` : une erreur permanente est survenue. Par exemple, un enregistrement SPF mal mis en forme dans le domaine.</li></ul>|

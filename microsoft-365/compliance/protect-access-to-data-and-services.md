@@ -7,21 +7,21 @@ author: brendacarter
 manager: laurawi
 ms.date: 4/17/2018
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: Découvrez comment protéger l’accès des utilisateurs et des appareils aux données Microsoft 365 services et se défendre contre la perte de données.
+description: Découvrez comment protéger l’accès des utilisateurs et des appareils aux Microsoft 365 et aux services et se défendre contre la perte de données.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 121c5b8f1168e9986693fea128aa66626b3e31fe
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: 48f483422fda158c02429aec642f60e05b8c933a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818539"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679585"
 ---
 # <a name="protect-user-and-device-access"></a>Protéger l’accès aux appareils et l’accès des utilisateurs
 
@@ -61,9 +61,9 @@ L’authentification multifacteur (MFA) et les stratégies d’accès conditionn
 
 L’implémentation de la conformité des appareils Intune nécessite l’inscription de l’appareil. La gestion des appareils vous permet de vous assurer qu’ils sont sains et conformes avant de leur permettre d’accéder aux ressources de votre environnement. Voir [Inscrire des appareils pour la gestion dans Intune](/mem/intune/user-help/enroll-windows-10-device)
 
-## <a name="step-4-configure-sharepoint-device-access-policies"></a>Étape 4 : Configurer les stratégies SharePoint’accès aux appareils
+## <a name="step-4-configure-sharepoint-device-access-policies"></a>Étape 4 : Configurer des stratégies SharePoint’accès aux appareils
 
-Microsoft vous recommande de protéger le contenu des sites SharePoint avec du contenu sensible et hautement réglementé avec des contrôles d’accès aux appareils. Pour plus d’informations, voir [Recommandations de stratégie pour la sécurisation SharePoint sites et fichiers.](../security/office-365-security/sharepoint-file-access-policies.md)
+Microsoft vous recommande de protéger le contenu des sites SharePoint avec du contenu sensible et hautement réglementé avec des contrôles d’accès aux appareils. Pour plus d’informations, voir [Recommandations de stratégie pour sécuriser SharePoint sites et fichiers.](../security/office-365-security/sharepoint-file-access-policies.md)
 
 
 

@@ -21,18 +21,18 @@ ms.collection:
 - m365solution-ransomware
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 79dee9b6750e21d9b2482d4a0482d87d7fc7434b
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: e90661932880ee146b8b1b81f8412e97d674749d
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61220931"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755744"
 ---
 # <a name="hunt-for-ransomware"></a>Repérer des menaces de ransomware
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Les ransomware sont rapidement devenu de simples programmes malveillants de produits affectant des utilisateurs individuels d’ordinateurs et une menace d’entreprise qui affecte gravement les secteurs et les institutions gouvernementales. Bien [que Microsoft 365 Defender](microsoft-365-defender.md) offre de nombreuses fonctionnalités qui détectent et bloquent les ransomware et les activités d’intrusion associées, l’utilisation de vérifications proactives de signes de compromission peut aider à maintenir la protection de votre réseau.
@@ -48,17 +48,17 @@ Les chercheurs en matière de sécurité Microsoft ont observé divers artefacts
 |--|--|--|
 | Arrêter les processus | _taskkill.exe_, _net stop_ | Assurez-vous que les fichiers ciblés pour le chiffrement ne sont pas verrouillés par différentes applications. |
 | Désactiver les services | _sc.exe_ | - Assurez-vous que les fichiers ciblés pour le chiffrement ne sont pas verrouillés par différentes applications.<br>- Empêcher les logiciels de sécurité de perturber le chiffrement et d’autres activités de ransomware.<br>- Empêcher le logiciel de sauvegarde de créer des copies récupérables.  |
-| Supprimer des journaux et des fichiers | _cipher.exe_, _wevtutil,_ _fsutil.exe_ | Supprimer les preuves d’investigation. |
-| Supprimer des copies de l’ombre  | _vsadmin.exe,_ _wmic.exe_ | Supprimez les copies de l’ombre du lecteur qui peuvent être utilisées pour récupérer des fichiers chiffrés. |
+| Supprimer des journaux et des fichiers | _cipher.exe_, _wevtutil_, _fsutil.exe_ | Supprimer les preuves d’investigation. |
+| Supprimer des copies de l’ombre  | _vsadmin.exe_, _wmic.exe_ | Supprimez les copies de l’ombre du lecteur qui peuvent être utilisées pour récupérer des fichiers chiffrés. |
 | Supprimer et arrêter des sauvegardes | _wbadmin.exe_ | Supprimez les sauvegardes existantes et arrêtez les tâches de sauvegarde programmées, ce qui empêche la récupération après le chiffrement. |
 | Modifier les paramètres de démarrage | _bcdedit.exe_ | Désactiver les avertissements et les réparations automatiques après les échecs de démarrage qui peuvent être causés par le processus de chiffrement. |
-| Désactiver les outils de récupération | _schtasks.exe,_ _regedit.exe_, | Désactiver la restauration du système et d’autres options de récupération système. |
+| Désactiver les outils de récupération | _schtasks.exe_, _regedit.exe_, | Désactiver la restauration du système et d’autres options de récupération système. |
 
 ## <a name="check-for-individual-signs-of-ransomware-activity"></a>Vérifier les signes individuels d’activité de ransomware
 De nombreuses activités qui constituent un comportement de ransomware, y compris les activités décrites dans la section précédente, peuvent être anodins. Lorsque vous utilisez les requêtes suivantes pour localiser un ransomware, exécutez plusieurs requêtes pour vérifier si les mêmes appareils présentent différents signes d’activité de ransomware possibles.
 
 ### <a name="stopping-multiple-processes-using-_taskkillexe_"></a>Arrêt de plusieurs processus à _l’aidetaskkill.exe_
-Cette requête recherche les tentatives d’arrêt d’au moins 10 processus distincts à l’aidetaskkill.exe _utilitaire._ [Exécuter la requête](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RS2vCUBCFz7rgfwiuIkit3eumVSgtpYvuS9SLDTY2eLUvxN_eb8YHKlFkyNzJzDkn505aailRX7mmGlFlmhNBhUrOSGeuT3L0s6QqNaMagolEcMyCbApjx2e8TYhcH8Q1mB-emq50z_lF39gvBzo9-gEF-6Yhlyh9653ejCfRK6zCsaZfuJOu-x2jkqqN-0Yls-8-gp6dZ52OVuT6Sad1plulyN0KIkMt15_zt7zHDe8OBwv3btoJToa7Tnp0T8Ou9WzfT761gPOm3_FQ16Zxp2qcCdg33_rlyokG-iXv7_4BRNMnhkortmvTW6rqnZ7bgP2Vtm70D3d9wcFaAgAA&runQuery=true&timeRangeId=week)
+Cette requête recherche les tentatives d’arrêt d’au moins 10 processus distincts à l’aide _taskkill.exeutilitaire._ [Exécuter la requête](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RS2vCUBCFz7rgfwiuIkit3eumVSgtpYvuS9SLDTY2eLUvxN_eb8YHKlFkyNzJzDkn505aailRX7mmGlFlmhNBhUrOSGeuT3L0s6QqNaMagolEcMyCbApjx2e8TYhcH8Q1mB-emq50z_lF39gvBzo9-gEF-6Yhlyh9653ejCfRK6zCsaZfuJOu-x2jkqqN-0Yls-8-gp6dZ52OVuT6Sad1plulyN0KIkMt15_zt7zHDe8OBwv3btoJToa7Tnp0T8Ou9WzfT761gPOm3_FQ16Zxp2qcCdg33_rlyokG-iXv7_4BRNMnhkortmvTW6rqnZ7bgP2Vtm70D3d9wcFaAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Find attempts to stop processes using taskkill.exe
@@ -70,7 +70,7 @@ DeviceProcessEvents
 ```
   
 ### <a name="stopping-processes-using-_net-stop_"></a>Arrêt des processus à _l’aide d’un arrêt net_
-Cette requête recherche les tentatives d’arrêt d’au moins 10 processus distincts à l’aide de la _commande net stop._ [Exécuter la requête](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RQUvDUBCE5yz0P4ScUijWereXVkGQIti7aA1pqakhL7VVxN_ebzc1NBChPLJv2Z2ZN5sdaqhId1ppozeyF1WcVLkK7kCl0gcx-F2QFSrJFmACJ3XMlmgKGfmGWnXC6OlCU2qfIIz12OLfUk_h2FuG_IG505JayRdpDit3bIW33B2M3WeGSqIRrvudTJvpnWzmPKvc6JcYHx1eEvd8savV07e9TchzTt198AlNZ0kluNLfjHHjIPAvak4J_tvx9XtPR6ypbn1icxShvGgqyVkO-hrAm7VUrRcaTWOs6T_7hs7XjfSqL-Lpvu5BDLxjqKRjI9a9Juvew__T2x5HutIB3T1qt4QCAAA&runQuery=true&timeRangeId=week)
+Cette requête recherche les tentatives d’arrêt d’au moins 10 processus distincts à l’aide de la _commande net stop_ . [Exécuter la requête](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RQUvDUBCE5yz0P4ScUijWereXVkGQIti7aA1pqakhL7VVxN_ebzc1NBChPLJv2Z2ZN5sdaqhId1ppozeyF1WcVLkK7kCl0gcx-F2QFSrJFmACJ3XMlmgKGfmGWnXC6OlCU2qfIIz12OLfUk_h2FuG_IG505JayRdpDit3bIW33B2M3WeGSqIRrvudTJvpnWzmPKvc6JcYHx1eEvd8savV07e9TchzTt198AlNZ0kluNLfjHHjIPAvak4J_tvx9XtPR6ypbn1icxShvGgqyVkO-hrAm7VUrRcaTWOs6T_7hs7XjfSqL-Lpvu5BDLxjqKRjI9a9Juvew__T2x5HutIB3T1qt4QCAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Find attempts to stop processes using net stop
@@ -97,7 +97,7 @@ CipherList = make_set(ProcessCommandLine) by DeviceId, bin(Timestamp, 1m)
 ```
 
 ### <a name="clearing-of-forensic-evidence-from-event-logs-using-_wevtutil_"></a>Effacement des preuves d’investigation des journaux des événements à _l’aide de wevtutil_
-Cette requête recherche les tentatives d’effacer au moins 10 entrées du journal des journaux des événements à l’aide _de wevtutil_. [Exécuter la requête](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWRTU_CQBCG37OJ_2HDqSQkwMGjXgoHEg4cUI-m2hUaqGu6BaPxx_vsEFCTxmA225nOvB_tzFBDOc0VOBuyZ2JD3CnKEwMVpzfyPbVWlba8t9Sdnsi9CsPXdLfWf7Wq4xm0QuVSF5oYv4LhtQAfLIucKXWvF5gH5Ke5rak1prKEVRu2xalG3emGW6AdlGmsUv1O5m-fnLzmFHiV_G9FTKg1lUjs6Z5vucPvljsD0TOXhP6_Vm7841dFZnPAN2A_DDu36eSnCSbNnc3B6Zpb4nasZGf59zWA963orZdcEiKelBNvQ_fBNny-utOj3nn-3OUMxMA6CZV1bCt1r8i6d_TXFNKWxxrpC48hm8miAgAA&runQuery=true&timeRangeId=week)
+Cette requête recherche les tentatives d’effacer au moins 10 entrées de journaux des journaux d’événements à l’aide _de wevtutil_. [Exécuter la requête](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWRTU_CQBCG37OJ_2HDqSQkwMGjXgoHEg4cUI-m2hUaqGu6BaPxx_vsEFCTxmA225nOvB_tzFBDOc0VOBuyZ2JD3CnKEwMVpzfyPbVWlba8t9Sdnsi9CsPXdLfWf7Wq4xm0QuVSF5oYv4LhtQAfLIucKXWvF5gH5Ke5rak1prKEVRu2xalG3emGW6AdlGmsUv1O5m-fnLzmFHiV_G9FTKg1lUjs6Z5vucPvljsD0TOXhP6_Vm7841dFZnPAN2A_DDu36eSnCSbNnc3B6Zpb4nasZGf59zWA963orZdcEiKelBNvQ_fBNny-utOj3nn-3OUMxMA6CZV1bCt1r8i6d_TXFNKWxxrpC48hm8miAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Look for use of wevtutil to clear multiple logs
@@ -137,7 +137,7 @@ and ProcessCommandLine has 'disable'
 ```
 
 ### <a name="backup-deletion"></a>Suppression de sauvegarde
-Cette requête identifie l’utilisation de _wmic.exe_ pour supprimer des instantanés de clichés instantanés avant le chiffrement. [Exécuter la requête](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWS2wqCQBCG_-ugd5CupTfoqgMIEV70AqFLGp5QyYLo2fsavEjxwlhWZ7-df2Z2dndyuitVxD9UrdKshrGHOxVqsZda6CVPnRJYzfR0QJVhnXRRbmSjN98VXrlFXEMfzNWkfphti50zLmSMdURfmFcCaSxqY3aMX4eqVKUn1OsV_8eLWX_rbwcVVhblBovY8bT76U-AxoedWeeWp7WzV0YDMqSQFNZavuuopnHH_Iku-lbJnLPMyxnYDTp4bZ5P9M5uNpsZIWSn7l_CuNoPSggb4z4CAAA&runQuery=true&timeRangeId=week)
+Cette requête identifie l’utilisation _dewmic.exepour_ supprimer des instantanés de clichés instantanés avant le chiffrement. [Exécuter la requête](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWS2wqCQBCG_-ugd5CupTfoqgMIEV70AqFLGp5QyYLo2fsavEjxwlhWZ7-df2Z2dndyuitVxD9UrdKshrGHOxVqsZda6CVPnRJYzfR0QJVhnXRRbmSjN98VXrlFXEMfzNWkfphti50zLmSMdURfmFcCaSxqY3aMX4eqVKUn1OsV_8eLWX_rbwcVVhblBovY8bT76U-AxoedWeeWp7WzV0YDMqSQFNZavuuopnHH_Iku-lbJnLPMyxnYDTp4bZ5P9M5uNpsZIWSn7l_CuNoPSggb4z4CAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 DeviceProcessEvents
@@ -153,7 +153,7 @@ Au lieu d’utiliser plusieurs requêtes séparément, vous pouvez également ut
 - Balance la présence de ces signes
 - Identifie les appareils ayant plus de chances d’être la cible de ransomware 
 
-Lorsqu’elle est exécuté, cette requête consolidée renvoie une liste d’appareils qui ont présenté plusieurs signes d’attaque. Le nombre de chaque type d’activité de ransomware est également indiqué. Pour exécuter cette requête consolidée, copiez-la directement dans l’éditeur de [requête de recherche avancée.](https://security.microsoft.com/advanced-hunting) 
+Lorsqu’elle est exécuté, cette requête consolidée renvoie une liste d’appareils qui ont présenté plusieurs signes d’attaque. Le nombre de chaque type d’activité de ransomware est également indiqué. Pour exécuter cette requête consolidée, copiez-la directement dans [l’éditeur de requête de recherche avancée](https://security.microsoft.com/advanced-hunting). 
 
 ```kusto
 // Find attempts to stop processes using taskkill.exe
@@ -230,23 +230,23 @@ ScDisable = iff(make_set(ScDisableUse) contains "1", 1, 0), TotalEvidenceCount =
 ### <a name="understand-and-tweak-the-query-results"></a>Comprendre et ajuster les résultats de la requête
 La requête consolidée renvoie les résultats suivants :
 
-- **DeviceId**: identifie l’appareil concerné 
+- **DeviceId** : identifie l’appareil concerné 
 - **TimeStamp :** premier signe d’activité de ransomware observé sur l’appareil
-- **Signes d’activité spécifiques**: nombre pour chaque signe affiché dans plusieurs colonnes, comme _BcdEdit_ ou _FsUtil_
+- **Signes d’activité** spécifiques : nombre pour chaque signe affiché dans plusieurs colonnes, comme _BcdEdit_ ou _FsUtil_
 - **TotalEvidenceCount :** nombre de signes observés
 - **UniqueEvidenceCount :** nombre de types de signes observés
 
-:::image type="content" source="../../media/advanced-hunting-ransomware-query.png" alt-text="Exemple de requête consolidée pour une activité de ransomware dans le portail Microsoft 365 Defender web":::
+:::image type="content" source="../../media/advanced-hunting-ransomware-query.png" alt-text="Exemple de requête consolidée pour une activité de ransomware dans le portail Microsoft 365 Defender web" lightbox="../../media/advanced-hunting-ransomware-query.png":::
 
 *Résultats de requête montrant les appareils affectés et le nombre de différents signes d’activité de ransomware*
 
-Par défaut, le résultat de la requête répertorie uniquement les appareils qui ont plus de deux types d’activité de ransomware. Pour voir tous les appareils avec tout signe d’activité de ransomware, modifiez l’opérateur suivant et définissez le nombre `where` sur zéro (0). Pour voir moins d’appareils, définissez un nombre supérieur. 
+Par défaut, le résultat de la requête répertorie uniquement les appareils qui ont plus de deux types d’activité de ransomware. Pour voir tous les appareils avec tout signe d’activité de ransomware, `where` modifiez l’opérateur suivant et définissez le nombre sur zéro (0). Pour voir moins d’appareils, définissez un nombre supérieur. 
 
 ```kusto
 | where UniqueEvidenceCount > 2
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Rubriques associées
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)
@@ -254,7 +254,7 @@ Par défaut, le résultat de la requête répertorie uniquement les appareils qu
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)
 
-## <a name="additional-ransomware-resources"></a>Ressources supplémentaires sur les rançongiciels
+## <a name="more-ransomware-resources"></a>Ressources supplémentaires sur les ransomware
 
 Informations clés de Microsoft :
 
@@ -279,7 +279,7 @@ Microsoft Azure :
 - [Défenses Azure pour les attaques par rançongiciel](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [Optimisez la résilience aux ransomwares avec Azure et Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Plan de sauvegarde et de restauration pour se protéger contre les rançongiciels](/security/compass/backup-plan-to-protect-against-ransomware)
-- [Protéger contre les ransomware avec Microsoft Azure sauvegarde](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vidéo de 26 minutes)
+- [Se protéger contre les rançongiciels avec la Sauvegarde Microsoft Azure](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vidéo de 26 minutes)
 - [Récupération d’une compromission d’identité systémique](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Détection avancée d’attaques à plusieurs niveaux dans Azure Sentinel](/azure/sentinel/fusion#ransomware)
 - [Détection de fusion pour les ransomware dans Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
@@ -290,7 +290,7 @@ Microsoft Defender for Cloud Apps :
 
 Billets de blog de l’équipe de sécurité Microsoft :
 
-- [3 étapes pour empêcher et récupérer à partir d’un rançongiciel (septembre 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [Trois étapes pour empêcher et récupérer à partir d’un ransomware (septembre 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
 - [Guide de la lutte contre les ransomware gérés par des personnes : Partie 1 (septembre 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
 
   Étapes clés sur la façon dont l’équipe de détection et de réponse de Microsoft (CAS) effectue des enquêtes sur les incidents de ransomware.

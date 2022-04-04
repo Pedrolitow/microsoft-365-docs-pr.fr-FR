@@ -7,7 +7,7 @@ author: chrfox
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Cette page d’accueil fournit des liens et des informations de planification pour la sécurité et la conformité dans Office 365.
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3138671bce7c2a659d0d7981c32e88d7ffdac0b8
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 2a238f4d4c5598e9628bb6bb7adb607b7c24c6cb
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110366"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679519"
 ---
 # <a name="plan-for-security-amp-compliance"></a>Planifier la conformité de &amp; la sécurité
 
@@ -56,15 +56,15 @@ Examiner et planifier les fonctionnalités de protection des fichiers organisée
   
 [PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
   
-## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>Étape 5 : Tirer parti du Centre Microsoft 365 conformité &amp; de la sécurité
+## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>Étape 5 : Tirer parti du Centre Microsoft 365 conformité de &amp; la sécurité
 
-Le Centre de conformité de sécurité vous offre une vue unique des contrôles que vous utiliserez pour gérer l’éventail de la sécurité Microsoft 365, y compris la gestion des menaces, la gouvernance des données et la recherche et &amp; l’examen. 
+Le Centre &amp; de conformité de sécurité vous offre une vue unique des contrôles que vous utiliserez pour gérer l’éventail de la sécurité Microsoft 365, y compris la gestion des menaces, la gouvernance des données et la recherche et l’examen. 
   
 - [Go to the Security &amp; Compliance Center](./microsoft-365-compliance-center.md)
     
-- [Autorisations dans le Centre de &amp; conformité de sécurité](~/security/office-365-security/protect-against-threats.md)
+- [Autorisations dans le Centre de conformité de &amp; sécurité](~/security/office-365-security/protect-against-threats.md)
     
-- [Accorder aux utilisateurs l’accès au Centre de &amp; conformité de la sécurité](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [Accorder aux utilisateurs l’accès au Centre de conformité de &amp; la sécurité](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>Étape 6 : Utiliser des scénarios de sécurité de bout en bout comme points de départ
 
@@ -81,5 +81,5 @@ Configurer vos paramètres de sécurité et de conformité dans ces centres d’
 |**Abonnement**|**URL de gestion**|**Tableaux de bord et centres d’administration**|
 |:-----|:-----|:-----|
 |Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Centre d’administration Microsoft 365  <br/>  Security &amp; Compliance Center  <br/>  Centre d’administration Exchange  <br/>  SharePoint centre d’administration et OneDrive Entreprise’administration centrale  <br/> |
-|Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Gestion des applications mobiles Microsoft  <br/>  Microsoft Intune  <br/> |
-|Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Defender pour les applications cloud  <br/> |
+|Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Gestion des applications mobiles Microsoft  <br/>  Microsoft Intune  <br/> |
+|Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Defender for Cloud Apps  <br/> |

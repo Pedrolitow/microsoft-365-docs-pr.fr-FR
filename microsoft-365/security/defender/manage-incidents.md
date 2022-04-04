@@ -21,26 +21,26 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 3418eac69930819fdb0e3fd8d1bae80312f89a9f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 14332b2787b59e2ef192741dc97e59a7c7cb5418
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326410"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499504"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gérer les incidents dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 La gestion des incidents est essentielle pour s’assurer que les incidents sont nommés, affectés et marqués pour optimiser le temps dans votre flux de travail d’incident et plus rapidement contenir et traiter les menaces.
 
 Vous pouvez gérer les incidents à partir **d’incidents & alertes > incidents** sur le lancement rapide du portail Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)). Voici un exemple.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Exemple de file d’attente d’incident." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Page Incidents dans le portail Microsoft 365 Defender web" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 Voici comment gérer vos incidents :
 
@@ -53,7 +53,7 @@ Voici comment gérer vos incidents :
 
 Vous pouvez gérer les incidents à partir du volet **Gérer les incidents** pour un incident. Voici un exemple.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Exemple du volet Gérer les incidents d’un incident." lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Volet Gérer les incidents dans le portail Microsoft 365 Defender web" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
 
 Vous pouvez afficher ce volet à partir du lien **Gérer l’incident** sur :
 
@@ -110,7 +110,7 @@ La classification des incidents et la spécification de leur état et de leur ty
 
 Vous pouvez ajouter plusieurs commentaires à un incident avec le **champ Commentaire** . Chaque commentaire est ajouté aux événements historiques de l’incident. Vous pouvez voir les commentaires et l’historique d’un incident  à partir du lien Commentaires et historique dans la page **Résumé**.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Pour les nouveaux incidents, commencez votre [enquête](investigate-incidents.md).
 

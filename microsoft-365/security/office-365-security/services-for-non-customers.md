@@ -17,12 +17,12 @@ ms.collection:
 description: Pour préserver la confiance des utilisateurs dans l'utilisation de la messagerie électronique, Microsoft a mis en place diverses stratégies et technologies pour aider à protéger ses utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2894d565a08cf500199b123a0acd738de129faf0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7af1a901bf9b3b27f08a7a3d36de69d49c2c85e9
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174182"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679563"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Services pour les non-clients qui envoient des messages Microsoft 365
 
@@ -35,15 +35,12 @@ Cette vue d’ensemble fournit des informations sur les avantages que nous fourn
 
 ## <a name="sender-solutions"></a>Solutions de l'expéditeur
 
-****
-
 |Service|Avantages|
 |---|---|
 |Ce contenu d'aide en ligne|Fournit : <ul><li>Point de départ pour toute question liée à la transmission des communications aux utilisateurs EOP.</li><li>Inclut un guide en ligne simple avec nos stratégies et exigences.</li><li>Vue d’ensemble des filtres de courrier indésirable et des technologies d’authentification employés par Microsoft.</li><ul>|
 |[Support technique Microsoft](#microsoft-support)|Offre un support autonome et de transmission à une instance supérieure pour les problèmes de remise.|
 |[Portail de liste d’adresses IP de courrier indésirable](#anti-spam-ip-delist-portal)|Un outil permettant d'envoyer une demande de suppression d'adresse IP de la liste. Avant d'envoyer cette demande, il incombe à l'expéditeur de s'assurer que tout autre courrier provenant de l'adresse IP en question n'est pas abusif ou malveillant.|
-|[Création de rapport de courrier indésirable et de mauvaise utilisation pour le courrier indésirable provenant d'Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Empêche l’envoi de courrier indésirable et d’autres messages indésirables Exchange Online et encombrer Internet et votre système de messagerie.|
-|
+|[Création de rapport de courrier indésirable et de mauvaise utilisation pour le courrier indésirable provenant d'Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Empêche l’envoi de courrier indésirable Exchange Online courrier indésirable et encombrer Internet et votre système de messagerie.|
 
 ## <a name="microsoft-support"></a>Support technique Microsoft
 
@@ -53,7 +50,7 @@ Microsoft propose plusieurs options de support pour les personnes qui ont des di
 
 - Consultez les problèmes les plus courants que rencontrent les non clients dans [Résolution des problèmes de messages envoyés à Office 365](troubleshooting-mail-sent-to-office-365.md).
 
-- Utilisez le [Microsoft 365 de](https://sender.office.com) liste pour soumettre une demande de suppression de votre adresse IP de la liste des expéditeurs bloqués.
+- Utilisez le [Microsoft 365 de liste pour](https://sender.office.com) soumettre une demande de suppression de votre adresse IP de la liste des expéditeurs bloqués.
 
 - Lisez les [forums de la communauté Microsoft](https://community.office365.com/f/).
 
@@ -63,8 +60,8 @@ Microsoft propose plusieurs options de support pour les personnes qui ont des di
 
 ## <a name="anti-spam-ip-delist-portal"></a>Portail de liste d’adresses IP de courrier indésirable
 
-Il s’agit d’un portail en libre-service que vous pouvez utiliser pour vous supprimer de la liste Microsoft 365 expéditeurs bloqués. Utilisez ce portail si vous recevez un message d’erreur lorsque vous essayez d’envoyer un message électronique à un destinataire dont l’adresse de messagerie est en Microsoft 365 et que vous ne le pensez pas. Pour plus d'informations, voir [Utilisation du portail Supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+Il s’agit d’un portail en libre-service que vous pouvez utiliser pour vous supprimer de la Microsoft 365 des expéditeurs bloqués. Utilisez ce portail si vous recevez un message d’erreur lorsque vous essayez d’envoyer un message électronique à un destinataire dont l’adresse de messagerie est en Microsoft 365 et que vous ne le pensez pas. Pour plus d'informations, voir [Utilisation du portail Supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Création de rapport de courrier indésirable et de mauvaise utilisation pour le courrier indésirable provenant d'Exchange Online
 
-Parfois, Microsoft 365 est utilisé par des tiers pour envoyer du courrier indésirable, en violation de nos conditions d’utilisation et de notre stratégie. Si vous recevez un courrier indésirable de Office 365, vous pouvez signaler ces messages à Microsoft. Pour obtenir des instructions, [reportez-vous aux messages et fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md)
+Parfois, Microsoft 365 est utilisé par des tiers pour envoyer du courrier indésirable, en violation de nos conditions d’utilisation et de notre stratégie. Si vous recevez un courrier indésirable de Office 365, vous pouvez signaler ces messages à Microsoft. Pour obtenir des instructions, [reportez-vous aux messages et fichiers envoyés à Microsoft](report-junk-email-messages-to-microsoft.md).

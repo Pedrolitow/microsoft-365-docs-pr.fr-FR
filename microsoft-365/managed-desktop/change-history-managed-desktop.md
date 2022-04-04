@@ -13,16 +13,31 @@ f1.keywords:
 ms.author: tiaraquan
 ms.article: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 57b4119c1c96132b2f9a5c715cb498f228802fcc
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c979ace1b5d3f1fa807384c769c5711c9fc2fda7
+ms.sourcegitcommit: f941967b8bc2c24401795e41fd155365a0dbc645
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329850"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63761497"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications de la documentation relative au Bureau géré Microsoft
 
-Cet article répertorie les articles nouveaux et mis à jour de la [documentation Microsoft Manged Desktop documentation.](index.yml) Les articles « mis à jour » ont subi des ajouts matériels ou des corrections . Des correctifs mineurs tels que la correction de fautes de frappe, de style ou de mise en forme ne sont pas répertoriés. Vous pouvez toujours afficher l’historique des validations spécifiques (y compris les détails des modifications) en visitant le [repo sur GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+Cet article répertorie les articles nouveaux et mis à jour de la [documentation Microsoft Manged Desktop documentation.](index.yml) Les articles « mis à jour » ont des ajouts matériels ou des corrections . Des correctifs mineurs tels que la correction de fautes de frappe, de style ou de mise en forme ne sont pas répertoriés. Vous pouvez toujours afficher l’historique des validations spécifiques (y compris les détails des modifications) en visitant le [repo sur GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+## <a name="march-2022"></a>Mars 2022
+
+Article nouveau ou modifié | Description
+--- | ---
+| [Référence des paramètres configurables](working-with-managed-desktop/config-setting-ref.md) | Ajout d’exigences supplémentaires relatives aux proxys |
+| [Localiser l’expérience utilisateur](get-started/localization.md) | Ajout d’une remarque à la section Installer d’autres langues |
+| [Référence des paramètres configurables](working-with-managed-desktop/config-setting-ref.md) | Ajout d’une remarque sur edge hérité |
+
+## <a name="february-2022"></a>Février 2022
+
+Article nouveau ou modifié | Description
+--- | ---
+| [Rapport des mesures de service](working-with-managed-desktop/service-metrics-report.md) | Ajout du rapport de mesures service |
+| [Microsoft Edge](get-started/edge-browser-app.md) | Article mis à jour |
 
 ## <a name="october-2021"></a>Octobre 2021
 
@@ -58,7 +73,7 @@ Article nouveau ou modifié | Description
 
 Article nouveau ou modifié | Description
 --- | ---
-[Images d’un appareil](service-description/device-images.md)| Article mis à jour
+[Images d’appareil](service-description/device-images.md)| Article mis à jour
 [Résoudre les problèmes détectés par l’outil de préparation et d’évaluation](get-ready/readiness-assessment-fix.md) | Article mis à jour
 [Rôles et responsabilités de Bureau géré Microsoft](intro/roles-and-responsibilities.md) | Article mis à jour
 [Activer les fonctionnalités de support utilisateur](get-started/enable-support.md) | Nouvel article
@@ -113,14 +128,14 @@ Article nouveau ou modifié | Description
 [Microsoft Manged Desktop cycle de vie du produit](service-description/device-lifecycle.md) | Article mis à jour
 [Microsoft Manged Desktop appareils](service-description/device-list.md) |Article mis à jour
 
-## <a name="march-2021"></a>mars 2021
+## <a name="march-2021"></a>Mars 2021
 
 Article nouveau ou modifié | Description
 --- | ---
 [Aide administrateur pour le Bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Article mis à jour
 [Expérience de première exécution avec le pilote automatique et la page état d’inscription](get-started/esp-first-run.md) | Article mis à jour
 [Service d’emplacement Windows 10](get-started/device-location.md) | Nouvel article
-[Images d’un appareil](service-description/device-images.md) | Nouvel article
+[Images d’appareil](service-description/device-images.md) | Nouvel article
 [Microsoft Manged Desktop régions pris en charge](service-description/regions-languages.md) | Article mis à jour
 [Localiser l’expérience utilisateur](get-started/localization.md) | Nouvel article
 
@@ -158,7 +173,7 @@ Article nouveau ou modifié | Description
 [Utiliser les rapports](working-with-managed-desktop/reports.md) | Article mis à jour
 [Confidentialité et données personnelles](service-description/privacy-personal-data.md) | Article mis à jour
 [Conformité](intro/compliance.md) | Article mis à jour
-[Configuration requise](get-ready/prerequisites.md) | Article mis à jour
+[Conditions préalables](get-ready/prerequisites.md) | Article mis à jour
 [Configuration réseau](get-ready/network.md) | Article mis à jour
 
 ## <a name="november-2020"></a>Novembre 2020
@@ -177,7 +192,7 @@ Article nouveau ou modifié | Description
 
 Article nouveau ou modifié | Description
 --- | ---
-[Configuration requise](get-ready/prerequisites.md) | Article mis à jour
+[Conditions préalables](get-ready/prerequisites.md) | Article mis à jour
 Utiliser les informations | Article mis à jour
 [Procédure permettant aux partenaires d’inscrire des appareils](get-started/partner-registration.md) | Article mis à jour
 [Accéder au portail d’administration](get-started/access-admin-portal.md) | Article mis à jour
@@ -396,22 +411,22 @@ Article nouveau ou modifié | Description
 
 Article nouveau ou modifié | Description
 --- | ---
-[Déployer des applications pour les appareils bureau géré Microsoft](get-started/deploy-apps.md) | Nouvel article.
-[Gérer les applications pour bureau géré Microsoft](working-with-managed-desktop/manage-apps.md) | Mise à jour avec des informations sur la mise à jour ou la revenir à une version antérieure des applications métier.
+[Déployer des applications pour Microsoft Manged Desktop appareils mobiles](get-started/deploy-apps.md) | Nouvel article.
+[Gérer les applications pour Microsoft Manged Desktop](working-with-managed-desktop/manage-apps.md) | Mise à jour avec des informations sur la mise à jour ou la revenir à une version antérieure des applications métier.
 
 ## <a name="december-2018"></a>Décembre 2018
 
 Article nouveau ou modifié | Description
 --- | ---
-[Opérations et surveillance pour bureau géré Microsoft](service-description/operations-and-monitoring.md) | Ajout d’un tableau de l’équilibre des responsabilités et mise à jour d’autres tables.
+[Opérations et surveillance des Microsoft Manged Desktop](service-description/operations-and-monitoring.md) | Ajout d’un tableau de l’équilibre des responsabilités et mise à jour d’autres tables.
 [Aide administrateur pour le Bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Types de prise en charge mis à jour, explications de gravité et détails supplémentaires.
 
 ## <a name="november-2018"></a>Novembre 2018
 
 Article nouveau ou modifié | Description
 --- | ---
-[Prise en charge du Bureau géré Microsoft](service-description/support.md)<br />et [prise en charge des utilisateurs pour le Bureau géré Microsoft](working-with-managed-desktop/end-user-support.md) | Mise à jour pour inclure l’Australie.
+[Prise en charge des Microsoft Manged Desktop](service-description/support.md)<br />et [prise en charge des utilisateurs pour Microsoft Manged Desktop](working-with-managed-desktop/end-user-support.md) | Mise à jour pour inclure l’Australie.
 
 ## <a name="october-30-2018"></a>mardi 30 octobre 2018
 
-Contenu réorganisé : section ajoutée pour la [description du service Bureau géré Microsoft](service-description/index.md).
+Contenu réorganisé : section ajoutée pour la description [Microsoft Manged Desktop service](service-description/index.md).

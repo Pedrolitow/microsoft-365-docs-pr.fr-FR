@@ -23,21 +23,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 40178e42737bdfea756db55658aaeb988ad4f19f
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 2d5477122a29c672a947a2022f49da3abeb7003b
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498734"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568541"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Hiérarchiser les incidents dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender l’analyse de corrélation et regroupe les alertes associées et les enquêtes automatisées de différents produits dans un incident. Microsoft 365 Defender déclenche également des alertes uniques sur les activités qui peuvent uniquement être identifiées comme malveillantes en raison de la visibilité de bout en bout dont dispose Microsoft 365 Defender sur l’ensemble de la suite de produits. Cette vue offre à vos analystes de sécurité un niveau d’attaque plus large, qui leur permet de mieux comprendre et de gérer les menaces complexes au sein de votre organisation.
+Microsoft 365 Defender l’analyse de corrélation et regroupe les alertes associées et les enquêtes automatisées de différents produits dans un incident. Microsoft 365 Defender déclenche également des alertes uniques sur les activités qui peuvent uniquement être identifiées comme malveillantes en raison de la visibilité de bout en bout dans Microsoft 365 Defender a sur toute la suite de produits. Cette vue offre à vos analystes de sécurité un niveau d’attaque plus large, qui leur permet de mieux comprendre et de gérer les menaces complexes au sein de votre organisation.
 
 La **file d’attente Incident** affiche un ensemble d’incidents qui ont été créés sur des appareils, des utilisateurs et des boîtes aux lettres. Il vous permet de trier les incidents afin de hiérarchiser et de créer une décision de réponse à la cybersécurité informée, un processus appelé triage des incidents.
 
@@ -78,7 +78,7 @@ Ce tableau répertorie les noms de filtres disponibles.
 | Severity | La gravité d’un incident indique l’impact qu’il peut avoir sur vos ressources. Plus la gravité est élevée, plus l’impact est important et nécessite généralement l’attention la plus immédiate. **Sélectionnez Haut**, **Moyen**, **Bas** **ou Informationnel**. |
 | Affectation d’incident | Sélectionnez le ou les utilisateurs affectés. |
 | Plusieurs sources de service  | Spécifiez si le filtre est pour plusieurs sources de service. |
-| Sources de service  | Spécifiez les incidents qui contiennent des alertes provenant de : Gouvernance des applications, Microsoft 365 Defender, Microsoft Defender pour Office 365, Microsoft Defender pour le point de terminaison, Microsoft Defender pour l’identité, Microsoft Defender pour les applications cloud. |
+| Sources de service  | Spécifier les incidents qui contiennent des alertes à partir de : Gouvernance d’application, Microsoft 365 Defender, Microsoft Defender pour Office 365, Microsoft Defender pour point de terminaison, Microsoft Defender pour Identity, Microsoft Defender for Cloud Apps. |
 | Balises | Sélectionnez un ou plusieurs noms de balises dans la liste. |
 | Plusieurs catégories  | Spécifiez si le filtre s’agit de plusieurs catégories. |
 | Catégories | Choisissez des catégories pour vous concentrer sur des tactiques, des techniques ou des composants d’attaque spécifiques. |
@@ -105,7 +105,7 @@ Une fois que vous avez configuré un filtre utile dans la file d’attente des i
 - Incidents non signés
 - Incidents non signés de gravité élevée
 - Incidents qui m’ont été attribués
-- Incidents qui m’ont été attribués et pour Microsoft Defender pour le point de terminaison
+- Incidents qui m’ont été attribués et pour Microsoft Defender pour point de terminaison
 - Incidents avec une ou plusieurs balises spécifiques
 - Incidents avec une catégorie de menace spécifique
 - Incidents avec une menace associée spécifique

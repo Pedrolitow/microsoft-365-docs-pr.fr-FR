@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-overview
-ms.openlocfilehash: 50dbe395bee852601aae8e834514c6bbac3dd84d
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: d7e7f7d7c22da007187db5df8bd773dca798597c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245050"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466298"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Vue d’ensemble de Microsoft Defender pour Endpoint Plan 1
 
@@ -33,11 +33,11 @@ ms.locfileid: "62245050"
 Microsoft Defender pour point de terminaison est une plateforme de sécurité de point de terminaison d’entreprise conçue pour aider des organisations telles que la vôtre à prévenir, détecter, examiner et répondre aux menaces avancées. Nous sommes heureux d’annoncer que Defender pour Point de terminaison est désormais disponible dans deux plans : 
 
 - **Defender for Endpoint Plan 1**, décrit dans cet article ; et 
-- **[Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)**, généralement disponible, et anciennement [appelé Defender for Endpoint](microsoft-defender-endpoint.md).
+- **[Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)**, généralement disponible et anciennement [appelé Defender for Endpoint](microsoft-defender-endpoint.md).
 
 Les zones vertes de l’image suivante illustrent ce qui est inclus dans Defender pour Endpoint Plan 1 :
 
-:::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="Diagramme Defender for Endpoint Plan 1":::
+:::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="Ce qui est inculé avec Defender pour Endpoint Plan 1" lightbox="../../media/mde-p1/mde-p1-overview-diagram.png":::
 
 Utilisez ce guide pour :
 
@@ -54,11 +54,11 @@ Utilisez ce guide pour :
 
 Defender pour endpoint Plan 1 inclut les fonctionnalités suivantes :
 
-- **[Protection nouvelle génération qui inclut](#next-generation-protection)** une protection antivirus et anti-programme malveillant robuste et de pointe du secteur
-- **[Actions de réponse manuelles,](#manual-response-actions)** telles que l’envoi d’un fichier en quarantaine, que votre équipe de sécurité peut prendre sur des appareils ou des fichiers lorsque des menaces sont détectées
+- **[Protection nouvelle génération qui inclut une protection](#next-generation-protection)** antivirus et anti-programme malveillant robuste et de pointe du secteur
+- **[Actions de réponse manuelles](#manual-response-actions)**, telles que l’envoi d’un fichier en quarantaine, que votre équipe de sécurité peut prendre sur des appareils ou des fichiers lorsque des menaces sont détectées
 - **[Fonctionnalités de réduction de la surface](#attack-surface-reduction)** d’attaque qui renforcent les appareils, empêchent les attaques zero-day et offrent un contrôle granulaire sur l’accès et les comportements des points de terminaison
 - **[Configuration et gestion centralisées avec](#centralized-management)** le portail Microsoft 365 Defender et l’intégration avec Microsoft Endpoint Manager
-- **[Protection pour une variété de plateformes,](#cross-platform-support)** notamment Windows, macOS, iOS et Android
+- **[Protection pour une variété de plateformes](#cross-platform-support)**, notamment Windows, macOS, iOS et Android
 
 Les sections suivantes fournissent plus de détails sur ces fonctionnalités. 
 
@@ -68,9 +68,9 @@ La nouvelle génération de protection inclut une protection antivirus et anti-p
 
 - Protection antivirus en temps réel, heuristique et basée sur le comportement 
 - Protection cloud, qui inclut la détection et le blocage quasi instantanés des menaces nouvelles et émergentes 
-- Mises à jour de produits et de protection dédiées, y compris les mises à jour relatives Antivirus Microsoft Defender 
+- Mises à jour de produits et de protection dédiées, y compris les mises à jour liées Antivirus Microsoft Defender 
 
-Pour plus d’informations, voir [vue d’ensemble de la protection nouvelle génération.](next-generation-protection.md)
+Pour plus d’informations, voir [vue d’ensemble de la protection nouvelle génération](next-generation-protection.md).
 
 ## <a name="manual-response-actions"></a>Actions de réponse manuelles
 
@@ -100,9 +100,9 @@ Les surfaces d’attaque de votre organisation sont tous les endroits où vous �
 - [Pare-feu réseau](#network-firewall)
 - [Contrôle d’application](#application-control)
 
-Pour en savoir plus sur les fonctionnalités de réduction de la surface d’attaque dans Defender pour le point de terminaison, voir Vue d’ensemble de la [réduction de la surface d’attaque.](overview-attack-surface-reduction.md)
+Pour en savoir plus sur les fonctionnalités de réduction de la surface d’attaque dans Defender pour le point de terminaison, voir Vue d’ensemble [de la réduction de la surface d’attaque](overview-attack-surface-reduction.md).
 
-### <a name="attack-surface-reduction-rules"></a>Règles de réduction de la surface d’attaque
+### <a name="attack-surface-reduction-rules"></a>Règles de réduction des surfaces d'attaque
 
 Les règles de réduction de la surface d’attaque ciblent certains comportements logiciels considérés comme risqués. Ces comportements sont les suivants :
 
@@ -112,19 +112,19 @@ Les règles de réduction de la surface d’attaque ciblent certains comportemen
 
 Les applications d’entreprise légitimes peuvent présenter de tels comportements logiciels ; Toutefois, ces comportements sont souvent considérés comme risqués, car ils sont couramment abusés par des personnes malveillantes par le biais de programmes malveillants. Les règles de réduction de la surface d’attaque peuvent limiter les comportements à risque et contribuer à la sécurité de votre organisation.
 
-Pour plus d’informations, voir Utiliser les règles de réduction [de la surface d’attaque pour empêcher l’infection par des programmes malveillants.](attack-surface-reduction.md)
+Pour plus d’informations, voir [Utiliser les règles de réduction de la surface d’attaque pour empêcher l’infection par des programmes malveillants](attack-surface-reduction.md).
 
 ### <a name="ransomware-mitigation"></a>Atténuation des ransomware
 
 Avec l’accès contrôlé aux dossiers, vous obtenez une atténuation par ransomware. L’accès contrôlé aux dossiers permet uniquement aux applications de confiance d’accéder aux dossiers protégés sur vos points de terminaison. Les applications sont ajoutées à la liste des applications de confiance en fonction de leur prévalence et de leur réputation. Votre équipe des opérations de sécurité peut également ajouter ou supprimer des applications de la liste des applications de confiance.
 
-Pour plus d’informations, voir [Protéger les dossiers importants avec un accès contrôlé aux dossiers.](controlled-folders.md)
+Pour plus d’informations, voir [Protéger les dossiers importants avec un accès contrôlé aux dossiers](controlled-folders.md).
 
 ### <a name="device-control"></a>Contrôle d’appareil
 
 Parfois, les menaces qui pèsent sur les appareils de votre organisation se font sous la forme de fichiers sur des lecteurs amovibles, tels que des lecteurs USB. Defender pour le point de terminaison inclut des fonctionnalités qui permettent d’empêcher les menaces provenant de périphériques non autorisés de compromettre vos appareils. Vous pouvez configurer Defender pour le point de terminaison pour bloquer ou autoriser les appareils et fichiers amovibles sur les appareils amovibles. 
 
-Pour en savoir plus, [consultez Les périphériques USB de contrôle et les supports amovibles.](control-usb-devices-using-intune.md)
+Pour en savoir plus, [consultez Les périphériques USB de contrôle et les supports amovibles](control-usb-devices-using-intune.md).
 
 ### <a name="web-protection"></a>Protection Web
 
@@ -133,13 +133,13 @@ Grâce à la protection web, vous pouvez protéger les appareils de votre organi
 - [La protection contre](web-threat-protection.md) les menaces web empêche l’accès aux sites de hameçonnage, aux vecteurs de programmes malveillants, aux sites d’exploitation, aux sites non protégés ou à faible réputation et aux sites que vous bloquez explicitement.
 - [Le filtrage de contenu Web](web-content-filtering.md) empêche l’accès à certains sites en fonction de leur catégorie. Les catégories peuvent inclure du contenu pour adultes, des sites de divertissement, des sites de responsabilité juridique, etc.
 
-Pour en savoir plus, consultez [la protection web.](web-protection-overview.md)
+Pour en savoir plus, consultez [la protection web](web-protection-overview.md).
 
 ### <a name="network-protection"></a>Protection réseau
 
 Grâce à la protection du réseau, vous pouvez empêcher votre organisation d’accéder à des domaines dangereux qui pourraient héberger des tentatives d’hameçonnage, des attaques et d’autres contenus malveillants sur Internet. 
 
-Pour en savoir plus, [consultez Protéger votre réseau.](network-protection.md)
+Pour plus d’informations, [voir Protéger votre réseau](network-protection.md).
 
 ### <a name="network-firewall"></a>Pare-feu réseau
 
@@ -149,7 +149,7 @@ Grâce à la protection du pare-feu réseau, vous pouvez définir des règles qu
 - Protéger les données sensibles et la propriété intellectuelle
 - Étendre votre investissement en matière de sécurité
 
-Pour plus d’informations, [voir Windows Defender Pare-feu avec une sécurité avancée.](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
+Pour plus d’informations, [voir Windows Defender Pare-feu avec une sécurité avancée](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
 
 ### <a name="application-control"></a>Contrôle d’application
 
@@ -165,26 +165,26 @@ Pour plus d’informations, [voir Microsoft 365 Defender portail.](portal-overvi
 
 ### <a name="role-based-access-control"></a>Contrôle d'accès basé sur les rôles
 
-À l’aide du contrôle d’accès basé sur un rôle (RBAC), votre administrateur de sécurité peut créer des rôles et des groupes pour accorder un accès approprié au portail Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ). Avec RBAC, vous avez un contrôle fin sur les personnes qui peuvent accéder à Defender for Cloud, ainsi que sur ce qu’elles peuvent voir et faire. 
+À l’aide du contrôle d’accès basé sur un rôle (RBAC), votre administrateur de sécurité peut créer des rôles et des groupes pour accorder un accès approprié au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Avec RBAC, vous avez un contrôle fin sur les personnes qui peuvent accéder à Defender for Cloud, ainsi que sur ce qu’elles peuvent voir et faire. 
 
-Pour plus d’informations, voir [Gérer l’accès au portail à l’aide du contrôle d’accès basé sur les rôles.](rbac.md)
+Pour plus d’informations, voir [Gérer l’accès au portail à l’aide du contrôle d’accès basé sur les rôles](rbac.md).
 
 ### <a name="reporting"></a>Reporting
 
-Le portail Microsoft 365 Defender ( ) fournit un accès facile aux informations sur les menaces détectées et les actions à prendre pour [https://security.microsoft.com](https://security.microsoft.com) y remédier. 
+Le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) fournit un accès facile aux informations sur les menaces détectées et les actions à prendre pour y remédier. 
 
 - La page **d’accueil** inclut des cartes pour afficher en un coup d’œil les utilisateurs ou appareils à risque, le nombre de menaces détectées et les alertes/incidents qui ont été créés.
 - La section **Incidents & alertes** répertorie tous les incidents qui ont été créés suite à des alertes déclenchées. Les alertes et les incidents sont générés lorsque des menaces sont détectées sur plusieurs appareils.
 - Le centre **de mise en œuvre répertorie** les actions correctives qui ont été prises. Par exemple, si un fichier est mis en quarantaine ou qu’une URL est bloquée, chaque action est répertoriée dans le centre de actions sous **l’onglet** Historique.
 - La section **Rapports** inclut des rapports qui indiquent les menaces détectées et leur état. 
 
-Pour en savoir plus, [consultez La mise en place de Microsoft Defender pour Endpoint Plan 1.](mde-plan1-getting-started.md)
+Pour en savoir plus, [consultez La mise en place de Microsoft Defender pour Endpoint Plan 1](mde-plan1-getting-started.md).
 
 ### <a name="apis"></a>API
 
 Avec les API Defender for Endpoint, vous pouvez automatiser les flux de travail et les intégrer aux solutions personnalisées de votre organisation. 
 
-Pour en savoir plus, [consultez l’api Defender pour les points de terminaison.](management-apis.md) 
+Pour en savoir plus, [consultez l’api Defender pour les points de terminaison](management-apis.md). 
 
 ## <a name="cross-platform-support"></a>Prise en charge sur plusieurs plateformes
 
@@ -197,9 +197,9 @@ La plupart des organisations utilisent différents appareils et systèmes d’ex
 - iOS
 - Système d’exploitation Android
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Comparer Microsoft Defender pour endpoint Plan 1 à Plan 2](defender-endpoint-plan-1-2.md)
-- [Configurer Defender pour Endpoint Plan 1](mde-p1-setup-configuration.md)
+- [Installer et configurer Defender pour Endpoint Plan 1](mde-p1-setup-configuration.md)
 - [Mise en place de Defender pour Endpoint Plan 1](mde-plan1-getting-started.md)
 - [Gérer Defender pour endpoint Plan 1](mde-p1-maintenance-operations.md)

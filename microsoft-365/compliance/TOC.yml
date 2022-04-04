@@ -535,8 +535,6 @@
               href: dlp-chrome-get-started.md
             - name: Prise en main du tableau de bord des alertes de protection contre la perte de données
               href: dlp-alerts-dashboard-get-started.md
-            - name: Démarrage avec des stratégies de protection contre la perte de données pour Power BI (préversion)
-              href: dlp-powerbi-get-started.md
         - name: Utiliser la DLP
           items:
             - name: DLP et Microsoft Teams

@@ -10,17 +10,17 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 02/11/2022
+ms.date: 03/18/2022
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9ff523e55efa872002e53f74a631def4c65b9929
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: d21fab14788a0402ddc314e2598dfcdf10830924
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818239"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679453"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guide de déploiement de l’antivirus Microsoft Defender dans un environnement VDI (Virtual Desktop Infrastructure)
 
@@ -52,9 +52,9 @@ Vous pouvez également télécharger le Antivirus Microsoft Defender de livre bl
 > Le site de démonstration Defender pour point de terminaison sur demo.wd.microsoft.com est déconseillé et sera supprimé à l’avenir.
 
 > [!IMPORTANT]
-> Bien que l’environnement VDI puisse être hébergé sur Windows Server 2012 ou Windows Server 2016, les machines virtuelles doivent au minimum être en Windows 10, 1607, en raison de l’augmentation des technologies et des fonctionnalités de protection qui ne sont pas disponibles dans les versions antérieures de Windows.
+> Bien que l’environnement VDI puisse être hébergé sur Windows Server 2012 ou Windows Server 2016, les machines virtuelles doivent au minimum être en Windows 10 1607, en raison de l’augmentation des technologies et des fonctionnalités de protection qui ne sont pas disponibles dans les versions antérieures de Windows.
 >
-> Il existe des améliorations en matière de performances et de fonctionnalités dans le fonctionnement de Microsoft Defender AV sur des machines virtuelles dans Windows 10 Insider Preview, build 18323 (et version ultérieure). Nous identifierons dans ce guide si vous devez utiliser une build Insider Preview ; Si elle n’est pas spécifiée, la version minimale requise pour une protection et des performances Windows 10 1607.
+> Il existe des améliorations en matière de performances et de fonctionnalités dans le fonctionnement de Microsoft Defender AV sur des machines virtuelles dans Windows 10 Insider Preview, build 18323 (et version ultérieure). Nous identifierons dans ce guide si vous devez utiliser une build Insider Preview ; Si elle n’est pas spécifiée, la version minimale requise pour une protection et des performances meilleures est Windows 10 1607.
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>Configurer un partage de fichiers VDI dédié
 
@@ -102,7 +102,7 @@ New-Item -ItemType Directory -Force -Path $vdmpath | Out-Null
 
 Invoke-WebRequest -Uri 'https://go.microsoft.com/fwlink/?LinkID=121721&arch=x64' -OutFile $vdmpackage
 
-cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
+cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
 ```
 
 Vous pouvez définir une tâche programmée de sorte qu’elle s’exécute une fois par jour de sorte que chaque fois que le package est téléchargé et décompressé, les VM reçoivent la nouvelle mise à jour.
@@ -201,7 +201,7 @@ Parfois, Antivirus Microsoft Defender notifications peuvent être envoyées à p
 
 4. Déployez votre objet de stratégie de groupe comme vous le faites habituellement.
 
-La suppression des notifications empêche l’affichage Antivirus Microsoft Defender notifications dans le centre de notifications sur Windows 10 lorsque des analyses sont réalisées ou que des actions de correction sont prises. Toutefois, votre équipe des opérations de sécurité verra les résultats de l’analyse dans le portail Microsoft 365 Defender pendant que l’attaque a été détectée et arrêtée, des alertes, telles qu’une « alerte d’accès initial », ont été déclenchées [et sont](/microsoft-365/security/defender/microsoft-365-defender) apparues sur le portail Microsoft 365 Defender.
+La suppression des notifications empêche les notifications de Antivirus Microsoft Defender de s’afficher dans le centre de notifications sur Windows 10 lorsque des analyses sont réalisées ou que des actions de correction sont prises. Toutefois, votre équipe des opérations de sécurité verra les résultats de l’analyse dans le portail Microsoft 365 Defender pendant que l’attaque a été détectée et arrêtée, et des alertes, telles qu’une « alerte d’accès initial », ont été déclenchées [et sont](/microsoft-365/security/defender/microsoft-365-defender) apparues sur le portail Microsoft 365 Defender.
 
 > [!TIP]
 > Pour ouvrir le Centre de Windows 10 ou Windows 11, prenez l’une des étapes suivantes :
@@ -217,7 +217,7 @@ La désactivation d’une analyse après une mise à jour empêche l’analyse d
 > [!IMPORTANT]
 > L’exécution d’analyses après une mise à jour permet de s’assurer que vos VM sont protégées avec les dernières mises à jour d’informations de sécurité. La désactivation de cette option réduit le niveau de protection de vos VM et ne doit être utilisée que lors de la création ou du déploiement de l’image de base.
 
-1. Dans votre Éditeur de stratégie de groupe, Windows **composants** \>  \> Antivirus Microsoft Defender **mises à jour de l’intelligence de la sécurité**.
+1. Dans votre Éditeur de stratégie de groupe, Windows **composants** \>  \> Antivirus Microsoft Defender **mises à jour security intelligence**.
 
 2. **Sélectionnez Activer l’analyse après la mise à jour des informations de** sécurité, puis modifiez le paramètre de stratégie.
 
@@ -231,7 +231,7 @@ Cette stratégie empêche l’exécution d’une analyse immédiatement après u
 
 ## <a name="scan-vms-that-have-been-offline"></a>Analyser les ordinateurs VM qui ont été hors connexion
 
-1. Dans votre Éditeur de stratégie de groupe, Windows **composants** \> **Antivirus Microsoft Defender** \> **scan**.
+1. Dans votre Éditeur de stratégie de groupe, Windows **composants** \> **Antivirus Microsoft Defender** \> **Scan**.
 
 2. **Sélectionnez Activer l’analyse rapide de rattrapage**, puis modifiez le paramètre de stratégie.
 

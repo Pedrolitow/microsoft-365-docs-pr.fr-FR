@@ -20,18 +20,18 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e29ccfc963c0bfc2e730744a131a5c9485c72e42
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 364e83d03da53f5e6ffa8cecda4847e13c38f60e
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449413"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499482"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>Comprendre le rapport d’analyste dans l’analyse des menaces dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
@@ -42,7 +42,7 @@ ms.locfileid: "63449413"
 
 Chaque [rapport d’analyse des](threat-analytics.md) menaces inclut des sections dynamiques et une section écrite complète appelée rapport _d’analyste_. Pour accéder à cette section, ouvrez le rapport sur la menace de suivi et sélectionnez **l’onglet Rapport d’analyste** .
 
-![Image de la section du rapport d’analyste d’un rapport d’analyse des menaces.](../../media/threat-analytics/ta_analystreport_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_analystreport_mtp.png" alt-text="Section du rapport d’analyste d’un rapport d’analyse des menaces" lightbox="../../media/threat-analytics/ta_analystreport_mtp.png":::
 
 _Section Rapport d’analyste d’un rapport d’analyse des menaces_
 
@@ -108,7 +108,7 @@ Les requêtes de recherche avancées dans les rapports d’analyste ont été ex
 >[!NOTE]
 > L’analyse des menaces est également disponible [dans Microsoft Defender pour le point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics). Toutefois, il ne dispose pas de l’intégration de données entre Microsoft Defender pour Office et Microsoft Defender pour le point de terminaison qui Microsoft 365 Defender l’analyse des menaces.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Vue d’ensemble des analyses de menaces](threat-analytics.md)
 - [Rechercher de manière proactive les menaces avec le recherche avancée](advanced-hunting-overview.md)

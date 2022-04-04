@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 71e4b3d5f2a8cbf147a9aa50dd849be14047e27d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 28b389292ed733318e5796a1be3ed9c11d2df462
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318170"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466606"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Stratégies d’accès invité et d’accès des utilisateurs externes B2B
 
@@ -38,7 +38,7 @@ Le fait de fournir un chemin d’accès aux comptes B2B pour s’authentifier au
 
 Ce diagramme montre les stratégies à ajouter ou à mettre à jour parmi les stratégies d’accès aux identités et appareils courantes, pour l’accès des invités B2B et des utilisateurs externes.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png" alt-text="Résumé des mises à jour de stratégie pour la protection de l’accès invité." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png" alt-text="Résumé des mises à jour de stratégie pour la protection de l’accès invité" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png":::
 
 Le tableau suivant répertorie les stratégies que vous devez créer et mettre à jour. Les stratégies courantes sont liées aux instructions de configuration associées dans l’article Des stratégies communes d’accès aux appareils [et aux](identity-access-policies.md) identités.
 
@@ -49,7 +49,7 @@ Le tableau suivant répertorie les stratégies que vous devez créer et mettre �
 
 Pour inclure ou exclure des invités et des utilisateurs externes dans les stratégies d’accès **conditionnel, pour Affectations > Utilisateurs et groupes > Inclure** ou exclure **, vérifiez** Tous les utilisateurs invités **et externes**.
 
-![capture d’écran des contrôles pour l’exclusion des invités et des utilisateurs externes.](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png" alt-text="Contrôles pour l’exclusion des invités et des utilisateurs externes" lightbox="../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png":::
 
 ## <a name="more-information"></a>Plus d’informations
 
@@ -81,7 +81,7 @@ Une seule organisation peut gérer un appareil. Si vous n’excluez pas les invi
 
 ## <a name="next-step"></a>Étape suivante
 
-![Étape 4 : Stratégies pour Microsoft 365 applications cloud et Microsoft Defender pour les applications cloud.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="Stratégies pour les Microsoft 365 cloud et Microsoft Defender pour les applications cloud" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 
 Configurer des stratégies d’accès conditionnel pour :
 

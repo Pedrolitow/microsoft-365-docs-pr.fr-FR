@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: Étapes préalables à la migration d’un service ou d’un appareil de protection tiers vers Microsoft Defender pour Office 365 protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f8a35fa7e8ac469a87861d25f45e7078eb4be940
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 019f7152f0f892abd19bb09ffa9449874b00340c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886401"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466584"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-1-prepare"></a>Migrer vers Microsoft Defender pour Office 365 - Phase 1 : Préparer
 
@@ -33,7 +33,7 @@ ms.locfileid: "62886401"
 
 <br>
 
-|![Phase 1 : Préparer.](../../media/phase-diagrams/prepare.png) <br> Phase 1 : préparation|[![Phase 2 : configuration](../../media/phase-diagrams/setup.png)](migrate-to-defender-for-office-365-setup.md) <br> [Phase 2 : configuration](migrate-to-defender-for-office-365-setup.md)|[![Phase 3 : intégration](../../media/phase-diagrams/onboard.png)](migrate-to-defender-for-office-365-onboard.md) <br> [Phase 3 : intégration](migrate-to-defender-for-office-365-onboard.md)|
+|![Phase 1 : Préparer.](../../media/phase-diagrams/prepare.png) <br> Phase 1 : préparation|[![Phase 2 : configuration](../../media/phase-diagrams/setup.png#lightbox)](migrate-to-defender-for-office-365-setup.md) <br> [Phase 2 : configuration](migrate-to-defender-for-office-365-setup.md)|[![Phase 3 : intégration](../../media/phase-diagrams/onboard.png#lightbox)](migrate-to-defender-for-office-365-onboard.md) <br> [Phase 3 : intégration](migrate-to-defender-for-office-365-onboard.md)|
 |---|---|---|
 |*Vous êtes là !*|||
 
@@ -61,7 +61,7 @@ Au lieu de déplacer les anciens paramètres de manière Microsoft 365, nous vou
 
 ## <a name="check-your-existing-protection-configuration-in-microsoft-365"></a>Vérifiez votre configuration de protection existante dans Microsoft 365
 
-Comme nous l’avons indiqué précédemment, il est impossible de désactiver complètement toutes les fonctionnalités de protection du courrier remis en Microsoft 365, même lorsque vous utilisez un service de protection tiers. Par exemple, il n’est pas rare qu’une Microsoft 365 organisation dispose d’au moins certaines fonctionnalités de protection du courrier électronique configurées. Par exemple :
+Comme nous l’avons indiqué précédemment, il est impossible de désactiver complètement toutes les fonctionnalités de protection du courrier remis en Microsoft 365, même lorsque vous utilisez un service de protection tiers. Par exemple, il n’est pas rare qu’Microsoft 365 organisation dispose d’au moins certaines fonctionnalités de protection du courrier électronique configurées. Par exemple :
 
 - Dans le passé, vous n’utilisiez pas le service de protection tiers avec Microsoft 365. Vous avez peut-être utilisé et configuré certaines fonctionnalités de protection Microsoft 365 sont actuellement ignorées. Toutefois, ces paramètres peuvent prendre effet lorsque vous « activez la numérotation » pour activer les fonctionnalités de protection Microsoft 365.
 - Il se peut que vous Microsoft 365 une protection contre les faux positifs (messages positifs marqués comme faux) ou les faux négatifs (courrier indésirable autorisé) qui ont été mis en place par le biais de votre service de protection existant.
@@ -77,13 +77,13 @@ Examinez vos fonctionnalités de protection existantes dans Microsoft 365 et env
   - Nous vous recommandons vivement de configurer la signature DKIM Microsoft 365. Pour plus d’informations, [voir Utiliser DKIM pour valider le courrier sortant](use-dkim-to-validate-outbound-email.md).
   - Si vous ne routez pas le courrier directement à partir de Microsoft 365, vous devez modifier ce routage en supprimant ou en modifiant le connecteur sortant.
 
-- L’Microsoft 365 pour relayer le courrier électronique à partir de vos serveurs de messagerie locaux peut être un projet complexe en soi. Un exemple simple est un petit nombre d’applications ou d’appareils qui envoient la plupart de leurs messages à des destinataires internes et qui ne sont pas utilisés pour les publipostages de masse. Pour [plus d’informations](/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) , voir ce guide. Les environnements plus étendus devront être plus réfléchis. Les messages électroniques et les messages marketing qui pourraient être considérés comme du courrier indésirable par les destinataires ne sont pas autorisés.
+- L Microsoft 365 pour relayer le courrier électronique à partir de vos serveurs de messagerie locaux peut être un projet complexe en soi. Un exemple simple est un petit nombre d’applications ou d’appareils qui envoient la plupart de leurs messages à des destinataires internes et qui ne sont pas utilisés pour les publipostages de masse. Pour [plus d’informations](/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) , voir ce guide. Les environnements plus étendus devront être plus réfléchis. Les messages électroniques et les messages marketing qui pourraient être considérés comme du courrier indésirable par les destinataires ne sont pas autorisés.
 
 - Defender pour Office 365 ne dispose pas de fonctionnalité pour l’agrégation des rapports DMARC. Visitez le [catalogue DEA (Microsoft Intelligent Security Association)](https://www.microsoft.com/misapartnercatalog) pour afficher les fournisseurs tiers qui proposent des rapports DMARC pour Microsoft 365.
 
 ## <a name="move-features-that-modify-messages-into-microsoft-365"></a>Déplacer des fonctionnalités qui modifient des messages Microsoft 365
 
-Vous devez transférer toutes les personnalisations ou fonctionnalités qui modifient les messages d’une Microsoft 365. Par exemple, votre service de protection existant ajoute une balise **Externe** à l’objet ou au corps des messages provenant d’expéditeurs externes. Toute fonctionnalité d’habillage de lien entraîne également des problèmes avec certains messages. Si vous utilisez une telle fonctionnalité aujourd’hui, vous devez hiérarchiser le déploiement des liens Coffre comme alternative pour minimiser les problèmes.
+Vous devez transférer toutes les personnalisations ou fonctionnalités qui modifient les messages de quelque manière que ce soit dans Microsoft 365. Par exemple, votre service de protection existant ajoute une balise **Externe** à l’objet ou au corps des messages provenant d’expéditeurs externes. Toute fonctionnalité d’habillage de lien entraîne également des problèmes avec certains messages. Si vous utilisez une telle fonctionnalité aujourd’hui, vous devez hiérarchiser le déploiement des liens Coffre comme alternative à la réduction des problèmes.
 
 Si vous ne désactiverez pas les fonctionnalités de modification des messages dans votre service de protection existant, vous pouvez vous attendre à ce que les résultats négatifs suivants s’Microsoft 365 :
 
@@ -114,7 +114,7 @@ Si vous avez des simulations de hameçonnage tierces actives, vous devez empêch
   - [La veille contre l’usurpation](anti-spoofing-protection.md) d’informations ne fonctionne pas correctement.
   - Vous recevrez probablement un nombre élevé de faux positifs (bon courrier marqué comme faux positif).
 
-  En fin de compte, c’est vous qui décidez d’empêcher la remise du courrier électronique dans le dossier Courrier indésirable en faveur de la remise en quarantaine. Toutefois, une chose est certaine : si l’expérience de Defender pour Office 365 est différente de celle utilisée par vos utilisateurs, vous devez les informer et leur fournir une formation de base. Intégrez les connaissances du pilote et assurez-vous que les utilisateurs sont préparés à tout nouveau comportement pour la remise du courrier électronique.
+  En fin de compte, c’est vous qui décidez d’empêcher la remise du courrier électronique dans le dossier Courrier indésirable en faveur de la remise en quarantaine. Toutefois, une chose est sûre : si l’expérience de Defender pour Office 365 est différente de celle utilisée par vos utilisateurs, vous devez les informer et leur fournir une formation de base. Intégrez les connaissances du pilote et assurez-vous que les utilisateurs sont préparés à tout nouveau comportement pour la remise du courrier électronique.
 
 - **Courrier en nombre souhaité et courrier indésirable :** de nombreux systèmes de protection permettent aux utilisateurs d’autoriser ou de bloquer les messages électroniques en nombre pour eux-mêmes. Ces paramètres ne migrent pas facilement vers Microsoft 365, vous devez envisager de travailler avec des vip et leur personnel pour recréer leurs configurations existantes dans Microsoft 365.
 

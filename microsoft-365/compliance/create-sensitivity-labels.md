@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Une exigence pour l’ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les données de votre organisation.'
-ms.openlocfilehash: b5bc61de14f54d65e4ce5eb6f7ae78303626c123
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 5c80147c18cff8c27f8c205ab1ed600e892f7335
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938948"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499570"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
@@ -150,7 +150,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 5. Suivez les invites pour configurer les paramètres de stratégie.
 
-    Les paramètres de stratégie qui s’affichent correspondent à l’étendue des étiquettes que vous avez sélectionnées. Par exemple, si vous avez sélectionné des étiquettes dont l’étendue est uniquement **Fichiers et e-mails**, vous ne voyez pas les paramètres de stratégie **Appliquer cette étiquette par défaut aux groupes et sites** et **Demander aux utilisateurs d’appliquer une étiquette à leurs groupes et sites**.
+    Les paramètres de stratégie que vous voyez correspondent à l’étendue des étiquettes que vous avez sélectionnées. Par exemple, si vous avez sélectionné des étiquettes qui ont uniquement le **Files & e-mails** étendue, vous ne voyez pas les paramètres de stratégie **Appliquez cette étiquette par défaut aux groupes et sites** et **Demander les utilisateurs à appliquer une étiquette à leurs groupes et sites**.
 
     Si vous souhaitez en savoir plus sur ces paramètres, veuillez consulter la rubrique [Fonction des stratégies d’étiquette](sensitivity-labels.md#what-label-policies-can-do) depuis les informations générales, puis utiliser l’aide de l’Assistant pour les paramètres individuels.
 
@@ -168,20 +168,17 @@ Pour modifier une stratégie d'étiquette existante, sélectionnez-la, puis choi
 
 Ce bouton démarre la **Créer une stratégie** configuration, ce qui vous permet de modifier les étiquettes incluses et les paramètres d’étiquette. Une fois la configuration terminée, toutes les modifications sont automatiquement répliquées vers les utilisateurs et services sélectionnés.
 
-Lorsque vous utilisez l’étiquette intégrée pour les applications Office sur Windows, macOS, iOS et Android, les utilisateurs voient de nouvelles étiquettes dans un délai de quatre heures et dans un délai d’une heure pour Word, Excel et PowerPoint sur le web lorsque vous actualisez le navigateur. Veuillez toutefois patienter jusqu'à 24 heures pour que les modifications s’appliquent aux applications et aux services.
-
-La mise à jour d’autres applications et services prenant en charge les étiquettes de confidentialité peut intervenir plus souvent que 24 heures avec leurs propres calendriers et déclencheurs de mise à jour pour les mises à jour de stratégie. Consultez leur documentation pour plus de détails. Par exemple, pour le client de l’étiquetage unifié d’Azure Information Protection, consultez la ligne **Mise à jour de stratégie** dans le tableau des [Comparaisons détaillées pour les clients Azure Information Protection](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients).
-
-> [!TIP]
-> N’oubliez pas de prendre en compte les dépendances de minutage qui peuvent parfois retarder le fonctionnement des étiquettes de confidentialité et des stratégies d’étiquette. Par exemple, le remplissage d’un nouveau groupe et les modifications d’appartenance au groupe, la latence de réplication réseau et les restrictions de bande passante, et [mise en cache de l’appartenance au groupe par le service Azure Information Protection](/azure/information-protection/prepare#group-membership-caching-by-azure-information-protection) pour les étiquettes qui appliquent le chiffrement.
-> 
-> Avec de nombreuses dépendances externes qui ont chacune leurs propres cycles de minutage, il ’ est judicieux d’attendre 24 heures avant de passer du temps à dépanner les étiquettes et les stratégies d’étiquette pour les modifications récentes.
-
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Paramètres de stratégie d’étiquette supplémentaires dans le Centre de sécurité et conformité PowerShell
 
 Des paramètres de stratégie d’étiquette supplémentaires sont disponibles dans l’applet de commande [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) depuis le [Centre de sécurité et conformité PowerShell](/powershell/exchange/scc-powershell).
 
 Le client de l’étiquetage unifié d’Azure Information Protection prend en charge de nombreux [paramètres avancés](/azure/information-protection/rms-client/clientv2-admin-guide-customizations), notamment la migration depuis d’autres solutions d’étiquetage et les messages contextuels dans Outlook qui avertissent, justifient ou bloquent l’envoi d’e-mails. Pour obtenir la liste complète, voir [Paramètres avancés disponibles pour les stratégies d’étiquette](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) depuis le guide d’administration de ce client.
+
+## <a name="when-to-expect-new-labels-and-changes-to-take-effect"></a>Quand s’attendre à ce que de nouvelles étiquettes et modifications prennent effet
+
+Pour les étiquettes et les paramètres de stratégie d’étiquette, attendez 24 heures pour que les modifications se propagent dans les services. Avec de nombreuses dépendances externes qui ont chacune leurs propres cycles de minutage, il ’ est judicieux d’attendre 24 heures avant de passer du temps à dépanner les étiquettes et les stratégies d’étiquette pour les modifications récentes.
+
+Toutefois, dans certains scénarios, les modifications apportées aux étiquettes et aux stratégies d’étiquette peuvent prendre effet beaucoup plus rapidement ou dépasser 24 heures. Par exemple, pour les étiquettes de confidentialité nouvelles et supprimées pour Word, Excel et PowerPoint sur le web, les mises à jour peuvent être répliquées dans l’heure. Toutefois, pour les configurations qui dépendent du remplissage d’un nouveau groupe et de nouvelles modifications d’appartenance à un groupe, ou de la latence de réplication réseau et des restrictions de bande passante, ces modifications peuvent prendre de 24 à 48 heures.
 
 ## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>Utiliser PowerShell pour les étiquettes de confidentialité ainsi que leurs stratégies
 

@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: a156b2a4514c3dfa090bcf43285abfbcfaa1f46e
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 91cd06188a8337f3d0df0b9c67d7c98e389e4351
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766967"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466767"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Passer en revue les alertes dans Microsoft Defender pour le point de terminaison
 
@@ -53,19 +53,19 @@ Notez l’état de détection de votre alerte.
 
 - Interdit : la tentative d’action suspecte a été évitée. Par exemple, un fichier n’a pas été écrit sur le disque ou exécuté.
 
-  ![Une page d’alerte indiquant que la menace a été empêchée.](images/detstat-prevented.png)
+  :::image type="content" source="images/detstat-prevented.png" alt-text="Page montrant la prévention d’une menace" lightbox="images/detstat-prevented.png":::
 
 - Bloqué : un comportement suspect a été exécuté, puis bloqué. Par exemple, un processus a été exécuté, mais comme il a par la suite présenté des comportements suspects, le processus a été interrompu.
 
-  ![Page d’alerte indiquant que la menace a été bloquée.](images/detstat-blocked.png)
+  :::image type="content" source="images/detstat-blocked.png" alt-text="Page montrant le blocage d’une menace" lightbox="images/detstat-blocked.png":::
 
 - Détecté : une attaque a été détectée et est éventuellement toujours active.
 
-  ![Page d’alerte indiquant que la menace a été détectée.](images/detstat-detected.png)
+  :::image type="content" source="images/detstat-detected.png" alt-text="Page montrant la détection d’une menace" lightbox="images/detstat-detected.png":::
 
 Vous pouvez ensuite consulter les *détails* de l’enquête automatisée dans le volet d’informations de votre alerte pour voir quelles actions ont déjà été entreprises, ainsi que lire la description de l’alerte pour les actions recommandées.
 
-![Extrait du volet d’informations avec la description de l’alerte et les sections d’examen automatique mises en évidence.](images/alert-air-and-alert-description.png)
+:::image type="content" source="images/alert-air-and-alert-description.png" alt-text="Volet d’informations avec la description de l’alerte et les sections d’examen automatique mises en évidence" lightbox="images/alert-air-and-alert-description.png":::
 
 Les autres informations disponibles dans le volet d’informations à l’ouverture de l’alerte incluent les techniques MITRE, la source et des détails contextuels supplémentaires.
 
@@ -75,13 +75,13 @@ La sélection d’un appareil ou d’une carte utilisateur dans les sections res
 
 - **Pour les appareils**, le volet d’informations affiche des informations sur l’appareil lui-même, telles que Domaine, Système d’exploitation et IP. Les alertes actives et les utilisateurs connectés sur cet appareil sont également disponibles. Vous pouvez prendre des mesures immédiates en isolant l’appareil, en limitant l’exécution de l’application ou en exécutant une analyse antivirus. Vous pouvez également collecter un package d’enquête, lancer une enquête automatisée ou vous rendre sur la page de l’appareil pour l’examiner du point de vue de l’appareil.
 
-   ![Extrait du volet d’informations lorsqu’un appareil est sélectionné.](images/device-page-details.png)
+   :::image type="content" source="images/device-page-details.png" alt-text="Volet d’informations lorsqu’un appareil est sélectionné" lightbox="images/device-page-details.png":::
 
 - Pour les utilisateurs **, le** volet d’informations affiche des informations détaillées sur l’utilisateur, telles que le nom SAM et le SID de l’utilisateur, ainsi que les types d’accès effectués par cet utilisateur, ainsi que les alertes et incidents qui lui sont associés. Vous pouvez sélectionner *Ouvrir la page utilisateur pour* poursuivre l’examen du point de vue de cet utilisateur.
 
-   ![Extrait du volet d’informations lorsqu’un utilisateur est sélectionné.](images/user-page-details.png)
+   :::image type="content" source="images/user-page-details.png" alt-text="Volet d’informations lorsqu’un utilisateur est sélectionné" lightbox="images/user-page-details.png":::
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Afficher et organiser la file d’attente des incidents](view-incidents-queue.md)
 - [Enquêter sur des incidents](investigate-incidents.md)

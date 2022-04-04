@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 496d9bf729eaaff6cf12e9734ae80eedacf98a63
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 9a700cd57b7843625f40289b43acd0e7a7eda45a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806119"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466672"
 ---
 # <a name="device-control-printer-protection"></a>Protection de l’Imprimante de Contrôle d’Appareil
 
@@ -34,7 +34,7 @@ Microsoft Defender pour endpoint Device Control Printer Protection empêche les 
 
 Avant de commencer à vous lancer avec printer Protection, vous devez [confirmer votre abonnement Microsoft 365 abonnement](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1). Pour accéder à printer Protection et l’utiliser, vous devez avoir les informations suivantes :
 
-- Microsoft 365 E3 pour le déploiement des fonctionnalités/stratégies
+- Microsoft 365 E3 pour le déploiement de fonctionnalités/stratégies
 - Microsoft 365 E5 de rapports
 
 ## <a name="permission"></a>Autorisation
@@ -70,7 +70,7 @@ Vous pouvez déployer la stratégie via la stratégie de groupe ou Intune.
 
 ****
 
-|Title|Description|Prise en charge du programme CSP | Prise en charge des GPO | Prise en charge basée sur l’utilisateur | Prise en charge basée sur l’ordinateur |
+|Titre|Description|Prise en charge du programme CSP | Prise en charge des GPO | Prise en charge basée sur l’utilisateur | Prise en charge basée sur l’ordinateur |
 |---|---|:---:|:---:|:---:|:---:|
 |**Activer les restrictions d’impression des contrôles d’appareil**|Empêcher les personnes d’imprimer via une imprimante non d’entreprise|Oui|Oui|Oui|Oui|
 |**Liste des appareils d’impression connectés usb approuvés**\*|Autoriser une imprimante USB spécifique|Oui|Oui|Oui|Oui|
@@ -94,7 +94,7 @@ Pour Intune, la protection de l’imprimante de contrôle d’appareil prend act
 
 Chaîne de prise en charge du programme CSP avec `<enabled/>`:
 
-:::image type="content" source="../../media/customeditrow.png" alt-text="ligne d’édition personnalisée.":::
+:::image type="content" source="../../media/customeditrow.png" alt-text="Page Personnalisée" lightbox="../../media/customeditrow.png":::
 
 ### <a name="scenario-2-allow-specific-approved-usb-printers-using-intune"></a>Scénario 2 : autoriser des imprimantes USB approuvées spécifiques à l’aide d’Intune
 
@@ -108,7 +108,7 @@ Chaîne de prise en charge du programme CSP avec `<enabled/>`:
 
 La chaîne de prise en charge du programme CSP avec des imprimantes USB approuvées via la propriété « ApprovedUsbPrintDevices » (par exemple :`<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872"/>`
 
-:::image type="content" source="../../media/editrow.png" alt-text="modifier la ligne.":::
+:::image type="content" source="../../media/editrow.png" alt-text="Volet Modifier la ligne" lightbox="../../media/editrow.png":::
 
 ## <a name="deploy-policy-via-group-policy"></a>Déployer une stratégie via une stratégie de groupe
 
@@ -124,7 +124,7 @@ Si l’appareil n’est pas joint à Intune, vous pouvez également déployer la
 
   Imprimantes du Panneau \> de configuration Des modèles \> \> d’administration de configuration utilisateur : activer les restrictions d’impression des contrôles d’appareil
 
-:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="activer les restrictions d’impression de l’appareil.":::
+:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="Volet Activer les restrictions d’impression des contrôles d’appareil" lightbox="../../media/enable-device-ctrl-printing-restrictions.png":::
 
 ### <a name="scenario-2-allow-specific-approved-usb-printers-using-group-policy"></a>Scénario 2 : autoriser des imprimantes USB approuvées spécifiques à l’aide de la stratégie de groupe
 
@@ -136,11 +136,11 @@ Si l’appareil n’est pas joint à Intune, vous pouvez également déployer la
 
   Imprimantes du Panneau \> de configuration Des modèles \> \> d’administration de configuration utilisateur : liste des appareils d’impression connectés à USB approuvés
 
-:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="liste des périphériques d’impression connectés usb approuvés.":::
+:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="Liste des appareils d’impression connectés usb approuvés" lightbox="../../media/list-of-approved-connected-print-devices.png":::
 
 ## <a name="view-device-control-printer-protection-data-in-microsoft-defender-for-endpoint-portal"></a>Afficher les données de protection des imprimantes des contrôles d’appareil dans le portail Microsoft Defender pour les points de terminaison
 
-Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender affiche</a> l’impression bloquée par la stratégie Device Control Printer Protection ci-dessus.
+Le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender affiche</a> l’impression bloquée par la stratégie Device Control Printer Protection ci-dessus.
 
 ```kusto
 DeviceEvents
@@ -154,7 +154,7 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
- :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="recherche avancée.":::
+ :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="recherche avancée" lightbox="../../media/device-control-advanced-hunting.png":::
 
  Vous pouvez utiliser l’événement PnP pour rechercher l’imprimante USB utilisée dans l’organisation :
 
@@ -175,4 +175,4 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
- :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="recherche avancée":::
+ :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="Page Recherche avancée" lightbox="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png":::

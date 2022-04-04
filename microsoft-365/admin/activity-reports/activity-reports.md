@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour obtenir plus d'informations.
-ms.openlocfilehash: 8dd72f1f153bb9052317afca1d0370645d8ad85b
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: c9d79b12d4a33282540274cf9f0688e071261469
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400977"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679331"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -94,7 +94,7 @@ Voici les rapports disponibles dans tous les environnements basés sur votre abo
 |[Activations d’Office](microsoft-office-activations-ww.md)|Oui|Oui|Oui|Oui|Oui|
 |[Utilisateurs actifs](active-users-ww.md)|Oui|Oui|Oui|Oui|Oui|
 |[Groupes Microsoft 365](office-365-groups-ww.md)|Oui|Oui|Oui|Oui|Oui|
-|[Utilisation des applications Microsoft 365](microsoft365-apps-usage-ww.md)|Oui|Oui|Non[^1]|Non[^1]|Non[^1]|
+|[Utilisation des applications Microsoft 365](microsoft365-apps-usage-ww.md)|Oui|Oui|Non[^1]|Non[^1]|Oui
 |[Activité des utilisateurs de OneDrive Entreprise](onedrive-for-business-activity-ww.md)|Oui|Oui|Oui|Oui|Oui|
 |[Utilisation de OneDrive Entreprise](onedrive-for-business-usage-ww.md)|Oui|Oui|Oui|Oui|Oui|
 |[Utilisation du site SharePoint](sharepoint-site-usage-ww.md)|Oui|Oui|Oui|Oui|Oui|

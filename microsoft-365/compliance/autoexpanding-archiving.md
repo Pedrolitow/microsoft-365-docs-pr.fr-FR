@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Découvrez l'archivage en auto-expansion, qui fournit un stockage d’archivage supplémentaire pour Exchange Online boîtes aux lettres.
-ms.openlocfilehash: 1b4b8d81868cc97fc8e8faf5b0dc449e4c07a868
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b55c0504f04f896377c1e1b0a4dccdacdb8bbc37
+ms.sourcegitcommit: f941967b8bc2c24401795e41fd155365a0dbc645
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328860"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63761541"
 ---
 # <a name="learn-about-auto-expanding-archiving"></a>En savoir plus sur l’archivage à extension automatique
 
@@ -79,6 +79,10 @@ Les captures d’écran suivantes montrent une liste de dossiers avant et après
 ## <a name="outlook-requirements-for-accessing-items-in-an-auto-expanded-archive"></a>Conditions requises d’Outlook pour accéder aux éléments dans une archive en auto-expansion
 
 Pour accéder aux messages stockés dans une archive en auto-expansion, les utilisateurs doivent utiliser l’un des clients Outlook suivants :
+
+- Outlook dans le cadre de Microsoft 365 Apps for enterprise (anciennement Office 365 ProPlus)
+
+- Outlook dans le cadre de Microsoft 365 Apps for business (anciennement Office 365 Business)
 
 - Outlook 2016 ou Outlook 2019 pour Windows
 

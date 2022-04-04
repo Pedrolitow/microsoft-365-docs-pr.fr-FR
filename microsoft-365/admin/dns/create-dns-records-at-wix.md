@@ -22,37 +22,37 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services via Wix pour Microsoft.
-ms.openlocfilehash: 9a9e230a46967ab6c012199e7f4fc6426fdc67bf
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 13dd84c9e7704a0680c2a3f0ca2e456767f6d231
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314852"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568497"
 ---
 # <a name="connect-your-dns-records-at-wix-to-microsoft-365"></a>Connecter vos enregistrements DNS sur Wix to Microsoft 365
 
-**[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
-  
+**[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez.
+
 Si Wix est votre fournisseur d’hébergement DNS, suivez les étapes de cet article pour vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online, etc.
 
 Une fois ces enregistrements ajoutés sur Wix, votre domaine est installé pour fonctionner avec services Microsoft.
-  
+
 > [!NOTE]
->  L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
+> L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="add-a-txt-record-for-verification"></a>Ajouter un enregistrement TXT à des fins de vérification
 
 Avant d’utiliser votre domaine avec Microsoft, nous devons nous assurer qu’il vous appartient. Votre capacité à vous connecter à votre compte auprès de votre bureau d’enregistrement de domaines et à créer l’enregistrement DNS prouve à Microsoft que vous êtes propriétaire du domaine.
-  
+
 > [!NOTE]
-> Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine, il n’a pas d’autre fonction. Vous pouvez le supprimer ultérieurement si vous le souhaitez. 
+> Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine, il n’a pas d’autre fonction. Vous pouvez le supprimer ultérieurement si vous le souhaitez.
 
 > [!NOTE]
 > WIX ne prend pas en charge les entrées DNS pour les sous-domaine.
-  
+
 1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Avant toute chose, vous serez invité à vous connecter.
 
-2. **Sélectionnez Domaines** > **...**, puis **gérez les enregistrements DNS** dans la liste liste.
+2. **Sélectionnez Domaines** \> **...**, puis **gérez les enregistrements DNS** dans la liste liste.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="Sélectionnez Gérer les enregistrements DNS dans la liste liste.":::
 
@@ -60,12 +60,11 @@ Avant d’utiliser votre domaine avec Microsoft, nous devons nous assurer qu’i
 
    :::image type="content" source="../../media/dns-wix/wix-domains-TXT-add-record.png" alt-text="Sélectionnez Ajouter un enregistrement.":::
 
-4. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant.
+4. In the boxes for the new record, type or copy and paste the values from the following table.
 
-   ||||
-   |:-----|:-----|:-----|
-   | **Nom d’hôte **<br/> | **VALEUR TXT** <br/> | **TTL** <br/> |
-   |Rempli automatiquement (laisser vide)  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|1 heure <br/> |          |
+   |Nom d’hôte|TXT Value|TTL (Durée de vie)|
+   |---|---|---|
+   |Rempli automatiquement (laisser vide)|MS=*msXXXXXXXX* <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|1 heure|
 
 5. **SelectSave**.
 
@@ -74,32 +73,32 @@ Avant d’utiliser votre domaine avec Microsoft, nous devons nous assurer qu’i
    Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
 
 
-L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez sur Microsoft et demandez l’enregistrement. Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est vérifié. 
+L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez sur Microsoft et demandez l’enregistrement. Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est vérifié.
 
 Pour vérifier l’enregistrement dans Microsoft 365 :
-  
+
 1. Dans le Centre d’administration, Paramètres  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**domaines**</a>.
 
-1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer l’installation**. 
+1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer l’installation**.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Sélectionnez Démarrer l’installation.":::
 
 1. Cliquez sur **Continuer**.
-  
+
 1. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
 
 > [!NOTE]
 > L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
-  
+
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient transférés vers Microsoft
 
 1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Avant toute chose, vous serez invité à vous connecter.
 
-1. **Sélectionnez Domaines** > **...**, puis **gérez les enregistrements DNS** dans la liste liste.
+1. **Sélectionnez Domaines** \> **...**, puis **gérez les enregistrements DNS** dans la liste liste.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="Sélectionnez Gérer les enregistrements DNS dans la liste liste.":::
 
-1. Sous **MX (échange de courrier),** **sélectionnez Modifier les enregistrements MX**. 
+1. Sous **MX (échange de courrier),** **sélectionnez Modifier les enregistrements MX**.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-edit-mx-records.png" alt-text="Sélectionnez Modifier les enregistrements MX.":::
 
@@ -109,13 +108,13 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
 1. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant :
 
-   | **Host Name** | **Points to (Pointe vers)** | **Priorité** | **TTL** |
-   |:-----|:-----|:-----|:-----|
-   |Rempli automatiquement <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre *\<domain-key\>* depuis votre compte Microsoft.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.yml). | 1 heure|
+   |Nom d’hôte|Points to |Priority (Priorité)|TTL (Durée de vie)|
+   |---|---|---|---|
+   |Rempli automatiquement|*\<domain-key\>*.mail.protection.outlook.com <br/> **Remarque :** Obtenez votre compte *\<domain-key\>* Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|0 <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.yml).|1 heure|
 
 1. Si d’autres enregistrements MX sont répertoriés, supprimez chacun d’eux.
 
-   :::image type="content" source="../../media/dns-wix/wix-domains-mx-delete.png" alt-text="Sélectionnez Supprimer.":::
+  :::image type="content" source="../../media/dns-wix/wix-domains-mx-delete.png" alt-text="Sélectionnez Supprimer.":::
 
 1. Sélectionnez **Enregistrer**.
 
@@ -123,7 +122,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
 1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Avant toute chose, vous serez invité à vous connecter.
 
-2. **Sélectionnez Domaines** > **...**, puis **gérez les enregistrements DNS** dans la liste liste. 
+2. **Sélectionnez Domaines** \> **...**, puis **gérez les enregistrements DNS** dans la liste liste.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="Sélectionnez Gérer les enregistrements DNS dans la liste liste.":::
 
@@ -133,9 +132,9 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
 4. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant :
 
-   | **Host Name (Nom d'hôte)** | **Valeur** | **TTL** |
-   |:-----|:-----|:-----|
-   |autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 heure  <br/> |
+   |Nom d’hôte|Valeur|Durée de vie|
+   |---|---|---|
+   |autodiscover|autodiscover.outlook.com|1 heure|
 
 5. Sélectionnez **Enregistrer**.
 
@@ -146,11 +145,11 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel de manière à n’avoir *qu’un seul* enregistrement SPF incluant les deux ensembles de valeurs.  
-  
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de n’avoir qu’un *seul enregistrement* SPF qui inclut les deux ensembles de valeurs.
+
 1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Avant toute chose, vous serez invité à vous connecter.
 
-2. **Sélectionnez Domaines** > **...**, puis **gérez les enregistrements DNS** dans la liste liste. 
+2. **Sélectionnez Domaines** \> **...**, puis **gérez les enregistrements DNS** dans la liste liste.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="Sélectionnez Gérer les enregistrements DNS dans la liste liste.":::
 
@@ -158,13 +157,13 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
    :::image type="content" source="../../media/dns-wix/wix-domains-TXT-add-record.png" alt-text="Sélectionnez + Ajouter un enregistrement.":::
 
-   **Remarque** : Wix fournit une ligne SPF dans l’éditeur DNS. Ignorez cette ligne et utilisez la **ligne TXT (Texte)** pour entrer les valeurs SPF ci-dessous. 
+   **Remarque** : Wix fournit une ligne SPF dans l’éditeur DNS. Ignorez cette ligne et utilisez la **ligne TXT (Texte)** pour entrer les valeurs SPF ci-dessous.
 
 4. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant :
 
-   | **Host Name (Nom d'hôte)** | **Valeur** | **TTL** |
-   |:-----|:-----|:-----|
-   |[laissez ce vide]  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.<br/> | 1 Hour |
+   |Nom d’hôte|Valeur|Durée de vie|
+   |---|---|---|
+   |[laissez ce vide]|v=spf1 include:spf.protection.outlook.com -all <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.|1 Hour|
 
 5. Sélectionnez **Enregistrer**.
 
@@ -180,7 +179,7 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
 
 1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Avant toute chose, vous serez invité à vous connecter.
 
-1. **Sélectionnez Domaines** > **...**, puis **gérez les enregistrements DNS** dans la liste liste.
+1. **Sélectionnez Domaines** \> **...**, puis **gérez les enregistrements DNS** dans la liste liste.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="Sélectionnez Gérer les enregistrements DNS dans la liste liste.":::
 
@@ -190,47 +189,47 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
 
 1. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs de la première ligne du tableau :
 
-   | **Service** | **Protocol (Protocole)** | **Nom de l’hôte** | **Weight (Poids)** | **Port (Port)** | **Target (Cible)** | **Priorité** | **TTL** |
-   |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-   |sip  |tls  |Rempli automatiquement |1  |443   |sipdir.online.lync.com |100 |1 Hour |
-   |sipfed|tcp |Rempli automatiquement|1 |5061 |sipfed.online.lync.com|100 | 1 Hour |
+   |Service|Protocole|Nom d’hôte|Pondération|Port|Target|Priority (Priorité)|TTL (Durée de vie)|
+   |---|---|---|---|---|---|---|---|
+   |sip|tls|Rempli automatiquement|1|443|sipdir.online.lync.com|100|1 Hour|
+   |sipfed|tcp|Rempli automatiquement|1|5061|sipfed.online.lync.com|100|1 Hour|
 
 1. Sélectionnez **Enregistrer**.
-  
+
    :::image type="content" source="../../media/dns-wix/wix-domains-srv-save.png" alt-text="Sélectionnez Enregistrer.":::
 
 1. Ajoutez l’autre enregistrement SRV en copiant les valeurs de la deuxième ligne du tableau.
 
 > [!NOTE]
-> Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d’autres problèmes suite à l’ajout des enregistrements DNS, consultez la page [Rechercher et corriger les problèmes suite à l’ajout de votre domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
+> Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d’autres problèmes suite à l’ajout des enregistrements DNS, consultez la page [Rechercher et corriger les problèmes suite à l’ajout de votre domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
 
 ### <a name="add-the-two-required-cname-records"></a>Ajouter les deux enregistrements CNAME requis
 
 1. **Sélectionnez + Ajoutez-en** une autre dans la ligne **CNAME (Alias)** de l’éditeur DNS, puis entrez les valeurs de la première ligne du tableau suivant.
 
-   |**Type**|**Host (Hôte)**|**Valeur**|**TTL**|
-   |:-----|:-----|:-----|:-----|
-   |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |1 heure  <br/> |
-   |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |1 Hour  <br/> |
-  
+   |Type|Hôte|Valeur|Durée de vie|
+   |---|---|---|---|
+   |CNAME|sip|sipdir.online.lync.com. <br/> **Cette valeur DOIT se terminer par un point (.)**|1 heure|
+   |CNAME|lyncdiscover|webdir.online.lync.com. <br/> **Cette valeur DOIT se terminer par un point (.)**|1 Hour|
+
 1. Sélectionnez **Enregistrer**.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-cname-save.png" alt-text="Sélectionnez Enregistrer.":::
-  
+
 1. Ajoutez l’autre enregistrement CNAME en copiant les valeurs de la deuxième ligne du tableau.
 
 > [!NOTE]
-> L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  
-## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Option avancée : Intune et gestion des périphériques mobiles pour Microsoft 365
+> L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-Ce service vous permet de sécuriser et de gérer à distance les appareils mobiles qui se connectent à votre domaine. La gestion des périphériques mobiles nécessite deux enregistrements CNAME afin que les utilisateurs peuvent inscrire des appareils au service.
+## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Option avancée : Intune et mobile Gestion des appareils pour Microsoft 365
 
-### <a name="add-the-two-required-cname-records"></a>Ajouter les deux enregistrements CNAME requis
+Ce service vous permet de sécuriser et de gérer à distance les appareils mobiles qui se connectent à votre domaine. Mobile Gestion des appareils deux enregistrements CNAME afin que les utilisateurs peuvent inscrire des appareils au service.
+
+### <a name="add-the-two-required-cname-records-for-mobile-device-management"></a>Ajoutez les deux enregistrements CNAME requis pour Mobile Gestion des appareils
 
 1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Avant toute chose, vous serez invité à vous connecter.
 
-1. **Sélectionnez Domaines** > **...**, puis **gérez les enregistrements DNS** dans la liste liste.
+1. **Sélectionnez Domaines** \> **...**, puis **gérez les enregistrements DNS** dans la liste liste.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="Sélectionnez Gérer les enregistrements DNS dans la liste liste.":::
 
@@ -240,15 +239,15 @@ Ce service vous permet de sécuriser et de gérer à distance les appareils mobi
 
 1. Entrez les valeurs de la première ligne du tableau suivant.
 
-    |**Type**|**Host (Hôte)**|**Valeur**|**TTL**|
-    |:-----|:-----|:-----|:-----|
-    |CNAME  <br/> |enterpriseregistration <br/> |enterpriseregistration.windows.net.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |1 heure  <br/> |
-    |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment.manage.microsoft.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |1 Hour  <br/> |
-  
+    |Type|Hôte|Valeur|Durée de vie|
+    |---|---|---|---|
+    |CNAME|enterpriseregistration|enterpriseregistration.windows.net. <br/> **Cette valeur DOIT se terminer par un point (.)**|1 heure|
+    |CNAME|enterpriseenrollment|enterpriseenrollment.manage.microsoft.com. <br/> **Cette valeur DOIT se terminer par un point (.)**|1 Hour|
+
 1. Sélectionnez **Enregistrer**.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-cname-save.png" alt-text="Sélectionnez Enregistrer.":::
-  
+
 1. Ajoutez l’autre enregistrement CNAME en copiant les valeurs de la deuxième ligne du tableau.
 
 > [!NOTE]

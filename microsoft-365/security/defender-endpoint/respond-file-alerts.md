@@ -14,19 +14,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0e7253993a1c05bd25e6dd13865826c42dd7603a
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 5c5a457d960f7dd7906c7d26a099d242507fbe86
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400249"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499196"
 ---
 # <a name="take-response-actions-on-a-file"></a>Prendre des mesures de réponse sur un fichier
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
+
+- [Microsoft Defender pour point de terminaison Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -49,17 +51,12 @@ Vous pouvez également soumettre des fichiers pour analyse approfondie, afin d�
 
 Certaines actions nécessitent certaines autorisations. Le tableau suivant décrit l’action que certaines autorisations peuvent prendre sur les fichiers exécutables portables (PE) et non PE :
 
-<br>
-
-****
-
 |Autorisation|Fichiers PE|Fichiers non PE|
 |---|:---:|:---:|
 |Afficher les données|X|X|
 |Examen des alertes|&#x2611;|X|
 |Base de la réponse en direct|X|X|
 |Réponse en direct avancée|&#x2611;|&#x2611;|
-|
 
 Pour plus d’informations sur les rôles, voir [Créer et gérer des rôles pour le contrôle d’accès basé sur les rôles](user-roles.md).
 
@@ -93,15 +90,15 @@ Cette action prend effet sur les appareils Windows 10, version 1703 ou ultérieu
 
 2. Go to the top bar and select **Stop and Quarantine File**.
 
-   ![Image de l’action d’arrêt et de mise en quarantaine du fichier.](images/atp-stop-quarantine-file.png)
+   :::image type="content" source="images/atp-stop-quarantine-file.png" alt-text="Action d’arrêt et de mise en quarantaine du fichier" lightbox="images/atp-stop-quarantine-file.png":::
 
 3. Spécifiez une raison, puis sélectionnez **Confirmer**.
 
-   ![Image de la fenêtre modale de fichier d’arrêt et de mise en quarantaine.](images/atp-stop-quarantine.png)
+   :::image type="content" source="images/atp-stop-quarantine.png" alt-text="Page Du fichier d’arrêt et de mise en quarantaine" lightbox="images/atp-stop-quarantine.png":::
 
    Le centre de données affiche les informations de soumission :
 
-   ![Image du centre de mise en quarantaine et d’arrêt des fichiers.](images/atp-stopnquarantine-file.png)
+   :::image type="content" source="images/atp-stopnquarantine-file.png" alt-text="Centre de mise en quarantaine et d’arrêt" lightbox="images/atp-stopnquarantine-file.png":::
 
    - **Heure de soumission** : indique quand l’action a été envoyée.
    - **Réussite** : indique le nombre d’appareils sur lequel le fichier a été arrêté et mis en quarantaine.
@@ -114,7 +111,7 @@ Cette action prend effet sur les appareils Windows 10, version 1703 ou ultérieu
 
 Lorsque le fichier est supprimé d’un appareil, la notification suivante s’affiche :
 
-![Image de la notification sur l’utilisateur de l’appareil.](images/atp-notification-file.png)
+:::image type="content" source="images/atp-notification-file.png" alt-text="La notification d’un utilisateur sur l’appareil" lightbox="images/atp-notification-file.png":::
 
 Dans la chronologie de l’appareil, un nouvel événement est ajouté pour chaque appareil où un fichier a été arrêté et mis en quarantaine.
 
@@ -150,7 +147,7 @@ La sélection **du fichier de téléchargement** dans les actions de réponse vo
 
 Par défaut, vous devez être en mesure de télécharger les fichiers en quarantaine.
 
-![Image de l’action de téléchargement du fichier.](images/atp-download-file-action.png)
+:::image type="content" source="images/atp-download-file-action.png" alt-text="Action de téléchargement de fichier" lightbox="images/atp-download-file-action.png":::
 
 ### <a name="download-quarantined-files"></a>Télécharger les fichiers mis en quarantaine
 
@@ -232,7 +229,7 @@ Le **centre de données fournit** des informations sur les actions qui ont été
 
 Tous les autres détails connexes sont également affichés, tels que la date/l’heure de soumission, l’utilisateur qui envoie l’envoi, et si l’action a réussi ou échoué.
 
-![Image du centre de actions avec des informations.](images/action-center-details.png)
+:::image type="content" source="images/action-center-details.png" alt-text="Centre de actions avec des informations" lightbox="images/action-center-details.png":::
 
 ## <a name="deep-analysis"></a>Analyse profonde
 
@@ -256,10 +253,10 @@ Utilisez la fonctionnalité d’analyse approfondie pour examiner les détails d
 > [!NOTE]
 > Seuls les fichiers Windows 10 et Windows 11 peuvent être collectés automatiquement.
 
-Vous pouvez également soumettre un exemple via le portail du Centre de sécurité [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx) si le fichier n’a pas été observé sur un appareil Windows 10 (ou Windows 11) et attendre que le bouton Envoyer  pour analyse approfondie devienne disponible.
+Vous pouvez également soumettre un exemple via le portail [Microsoft 365 Defender](https://www.microsoft.com/security/portal/submission/submit.aspx) si le fichier n’a pas été observé sur un appareil Windows 10 (ou Windows 11) et attendre que le bouton Envoyer pour analyse approfondie devienne  disponible.
 
 > [!NOTE]
-> En raison des flux de traitement principal dans le portail centre de sécurité Microsoft, il peut y avoir jusqu’à 10 minutes de latence entre l’envoi de fichier et la disponibilité de la fonctionnalité d’analyse approfondie dans Defender pour le point de terminaison.
+> En raison des flux de traitement principal dans le portail Microsoft 365 Defender, il peut y avoir jusqu’à 10 minutes de latence entre l’envoi de fichiers et la disponibilité de la fonctionnalité d’analyse approfondie dans Defender for Endpoint.
 
 ### <a name="submit-files-for-deep-analysis"></a>Envoyer des fichiers pour analyse approfondie
 
@@ -271,7 +268,7 @@ Vous pouvez également soumettre un exemple via le portail du Centre de sécurit
 
 2. Dans **l’onglet Analyse approfondie** de l’affichage de fichier, sélectionnez **Envoyer**.
 
-   ![Vous pouvez uniquement envoyer des fichiers PE dans la section Détails du fichier.](images/submit-file.png)
+   :::image type="content" source="images/submit-file.png" alt-text="Bouton Envoyer des fichiers PE" lightbox="images/submit-file.png":::
 
    > [!NOTE]
    > Seuls les fichiers PE sont pris en _charge,.exe_ et _.dll_ fichiers.
@@ -295,7 +292,7 @@ Les détails fournis peuvent vous aider à déterminer s’il existe des indicat
 1. Sélectionnez le fichier que vous avez soumis pour analyse approfondie.
 2. Sélectionnez **l’onglet Analyse** approfondie. S’il existe des rapports précédents, le résumé du rapport s’affiche dans cet onglet.
 
-    ![Le rapport d’analyse approfondie présente des informations détaillées sur un certain nombre de catégories.](images/analysis-results-nothing500.png)
+   :::image type="content" source="images/analysis-results-nothing500.png" alt-text="Rapport d’analyse approfondie affichant des informations détaillées sur un certain nombre de catégories" lightbox="images/analysis-results-nothing500.png":::
 
 #### <a name="troubleshoot-deep-analysis"></a>Résoudre les problèmes d’analyse approfondie
 
@@ -322,7 +319,7 @@ Si vous êtes face à un problème lors de la tentative d’soumission d’un fi
 
 6. Si ces étapes ne résolvent pas le problème, contactez le support technique.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Prendre des mesures de réponse sur un appareil](respond-machine-alerts.md)
 - [Examiner des fichiers](investigate-files.md)

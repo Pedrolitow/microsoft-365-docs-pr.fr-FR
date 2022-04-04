@@ -13,18 +13,28 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b0a89bc8a79f3ea2c5c0b3c1f01039944565a75c
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: cdff93ed308767256df1adf8dcf9ce2f3eb095a4
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62900757"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755797"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>Illustrations du cloud Microsoft pour les architectes informatiques
 
-Ces affiches d’architecture cloud vous donnent des informations sur les services cloud de Microsoft, notamment les solutions Microsoft 365, Azure Active Directory (Azure AD), Microsoft Intune, Microsoft Dynamics 365 et les solutions hybrides locales et cloud. 
+Ces affiches sur l’architecture cloud vous donnent des informations sur les services cloud de Microsoft, notamment les solutions Microsoft 365, Azure Active Directory (Azure AD), Microsoft Intune, Microsoft Dynamics 365 et les solutions hybrides locales et cloud. 
 
 Les décideurs informatiques et les architectes peuvent utiliser ces ressources pour déterminer les solutions idéales pour leurs charges de travail et prendre des décisions sur les composants d’infrastructure principaux tels que la mise en réseau, l’identité et la sécurité.
+
+<a name="zero trust"></a>
+### <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de déploiement zéro trust Microsoft 365
+
+
+Cette illustration fournit un plan de déploiement pour la création d’une sécurité De confiance zéro avec Microsoft 365. La confiance zéro est un nouveau modèle de sécurité qui suppose une violation et vérifie chaque demande comme si elle provenait d’un réseau non contrôlé. Quel que soit l’origine de la demande ou la ressource à laquelle elle accède, le modèle de confiance zéro nous apprend à « ne jamais faire confiance, toujours vérifier ».
+
+| Élément | Description |
+|:-----|:-----|
+|[![Illustration du plan Microsoft 365 de confiance zéro.](../media/solutions-architecture-center/m365-zero-trust-deployment-plan-thumb.png) ](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> Mise à jour de mars 2022 | Utilisez cette illustration avec cet article : [Microsoft 365 plan de déploiement Confiance zéro](../security/Microsoft-365-zero-trust.md) <br/><br/>**Guides de solution associés** <br/> <ul><li>[Déployer votre infrastructure d’identité pour Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Configurations recommandées pour les identités et l’accès aux appareils](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[Gérer des appareils avec Intune](manage-devices-with-intune-overview.md)</li><li>[Évaluer et piloter Microsoft 365 Defender](../security/defender/eval-overview.md)</li><li>[Déployer une solution Microsoft Information Protection](../compliance/information-protection-solution.md)</li><li>[Déployer la protection des informations pour les réglementations en matière de confidentialité des Microsoft 365](information-protection-deploy.md)</li></ul>
 
 <a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Attaques courantes et fonctionnalités Microsoft pour protéger votre organisation
