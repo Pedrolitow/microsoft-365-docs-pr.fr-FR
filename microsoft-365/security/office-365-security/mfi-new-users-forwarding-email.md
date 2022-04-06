@@ -13,12 +13,12 @@ description: Les administrateurs peuvent apprendre à utiliser les informations 
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 35ec1573096ecce392979cba11c6e55b1a1adcce
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 7e7f97f2f246be609db813f1d42ef6aed6a152a9
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681763"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470260"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nouveaux utilisateurs qui envoient des informations sur le courrier électronique dans le Centre de sécurité & conformité
 
@@ -35,11 +35,11 @@ Il est suspect lorsque de nouveaux comptes d’utilisateurs de votre organisatio
 
 Cette information apparaît uniquement lorsque le problème est détecté et apparaît sur la page du rapport [de forwarding](view-mail-flow-reports.md#forwarding-report) .
 
-![Nouveaux utilisateurs qui envoient des informations sur le courrier électronique.](../../media/mfi-new-users-forwarding-email.png)
+:::image type="content" source="../../media/mfi-new-users-forwarding-email.png" alt-text="Informations sur les nouveaux utilisateurs qui ont transmis le courrier électronique" lightbox="../../media/mfi-new-users-forwarding-email.png":::
 
 Lorsque vous cliquez sur le widget, un volant s’affiche, dans lequel vous trouverez plus de détails sur les messages transmis, y compris un lien vers le rapport de [modifications](#forwarding-modifications-report) de report, comme décrit plus loin dans cet article.
 
-![Volant d’informations qui s’affiche après avoir cliqué sur l’aperçu du courrier électronique nouveaux utilisateurs.](../../media/mfi-new-users-forwarding-email-details.png)
+:::image type="content" source="../../media/mfi-new-users-forwarding-email-details.png" alt-text="Le volant Détails qui s’affiche après avoir cliqué sur l’aperçu du courrier électronique nouveaux utilisateurs" lightbox="../../media/mfi-new-users-forwarding-email-details.png":::
 
 Vous pouvez également vous rendre sur cette page de détails lorsque vous sélectionnez l’aperçu après avoir cliqué sur Afficher tout dans la zone Recommandations  & informations les plus **détaillées** **(** \> Tableau de bord de **rapports ou ).** <https://protection.office.com/insightdashboard>
 
@@ -67,11 +67,11 @@ Les graphiques suivants sont disponibles dans l’affichage de rapport :
 
 - **Afficher les données pour : Nouveaux utilisateurs de forwarding** :
 
-  ![Affichage des nouveaux utilisateurs de forwarding dans le rapport de modifications de forwarding.](../../media/forwarding-modifications-report-new-forwarding-users.png)
+    :::image type="content" source="../../media/forwarding-modifications-report-new-forwarding-users.png" alt-text="Affichage Nouveaux utilisateurs de forwarding dans le rapport de modifications de forwarding" lightbox="../../media/forwarding-modifications-report-new-forwarding-users.png":::
 
 - **Afficher les données pour : Nouveaux domaines de forwarding** :
 
-  ![Nouvel affichage des domaines transmis dans le rapport de modifications de forwarding.](../../media/forwarding-modifications-report-new-forwarded-domains.png)
+    :::image type="content" source="../../media/forwarding-modifications-report-new-forwarded-domains.png" alt-text="Affichage Nouveaux domaines transmis dans le rapport de modifications de forwarding" lightbox="../../media/forwarding-modifications-report-new-forwarded-domains.png":::
 
 Si vous cliquez sur **Filtres** dans un affichage de rapport, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin**.
 
@@ -109,7 +109,7 @@ Si vous sélectionnez une ligne dans le tableau, un volant **Détails** s’affi
 - **Date de début**
 - **Recommandation** : à partir de là, vous pouvez cliquer sur le lien pour gérer l’utilisateur dans le Centre d'administration Microsoft 365.
 
-![Détails du tableau détails de l’affichage Nouveaux utilisateurs de forwarding dans le rapport de modifications de forwarding.](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
+  :::image type="content" source="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png" alt-text="The Details flyout from the details table of the New forwarding users view in the Forwarding modifications report" lightbox="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png":::
 
 Pour revenir à l’affichage Rapports, cliquez **sur Afficher le rapport**.
 

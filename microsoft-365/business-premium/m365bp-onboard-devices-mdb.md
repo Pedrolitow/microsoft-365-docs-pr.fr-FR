@@ -1,13 +1,13 @@
 ---
-title: Intégrer les appareils de votre organisation à Microsoft Defender entreprise
-description: Intégrer les appareils de votre organisation à Microsoft Defender entreprise
+title: Intégrer les appareils de votre organisation pour Microsoft Defender pour les PME
+description: Intégrer les appareils de votre organisation pour Microsoft Defender pour les PME
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/14/2022
+ms.date: 04/01/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,39 +17,43 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 44015c7cf568b968a4910433faa7700d550586fb
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: e9810b453136025e094ef8a0e88bff526f2c5a51
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63527125"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634776"
 ---
-# <a name="onboard-managed-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils gérés à Microsoft Defender pour Entreprises
+# <a name="onboard-managed-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils gérés à Microsoft Defender pour les PME
 
-Intégrer des appareils à Microsoft Defender pour Les Entreprises pour les protéger avec une protection nouvelle génération (antivirus, logiciel anti-programme malveillant et protection cloud), une protection pare-feu, le filtrage de contenu web, etc. 
+Intégrer des appareils à Microsoft Defender pour les PME pour les protéger avec une protection nouvelle génération (antivirus, logiciel anti-programme malveillant et protection cloud), une protection pare-feu, le filtrage de contenu web et bien plus encore. 
 
 Pour intégrer des appareils, vous pouvez choisir parmi plusieurs options :
 
 - [Utiliser l’intégration automatique pour Windows appareils déjà inscrits dans Microsoft Endpoint Manager](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-microsoft-endpoint-manager)
+
 - [Utiliser un script local pour intégrer des appareils Windows macOS](#use-a-local-script-to-onboard-windows-and-macos-devices)
+
 - [Utilisez Endpoint Manager pour](#use-microsoft-endpoint-manager-to-enroll-devices) inscrire des appareils (Windows, macOS, iOS et Android), puis appliquer des stratégies Defender entreprise à ces appareils
 
 Cet article inclut également les articles suivants :
 
 - [Comment exécuter un test de détection sur un Windows périphérique](#run-a-detection-test-on-a-windows-device)
+
 - [Comment intégrer progressivement des appareils](#onboard-devices-gradually)
+
 - [Comment faire pour quitter un appareil si](#offboard-a-device) un appareil est remplacé ou si quelqu’un quitte l’organisation
 
 > [!IMPORTANT]
-> Si un problème se produit et que votre processus d’intégration échoue, consultez [La résolution des problèmes de Microsoft Defender entreprise](../security/defender-business/mdb-troubleshooting.yml).
+> Si un problème se passe et que votre processus d’intégration échoue, consultez [Microsoft Defender pour les PME résolution des problèmes](../security/defender-business/mdb-troubleshooting.yml).
 
 ## <a name="use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-microsoft-endpoint-manager"></a>Utiliser l’intégration automatique pour Windows appareils déjà inscrits dans Microsoft Endpoint Manager
 
-L’option d’intégration automatique s’applique Windows appareils uniquement. L’intégration automatique est disponible si votre organisation utilisait déjà Microsoft Endpoint Manager, Microsoft Intune ou la gestion des périphériques mobiles (MDM) dans Microsoft Intune avant d’obtenir Defender pour les entreprises et que vous avez déjà inscrit Windows appareils Endpoint Manager. 
+L’option d’intégration automatique s’applique Windows appareils uniquement. L’intégration automatique est disponible si votre organisation utilisait déjà Microsoft Endpoint Manager, Microsoft Intune ou mobile Gestion des appareils (MDM) dans Microsoft Intune avant d’obtenir Defender pour les entreprises et que vous en avez déjà Windows  les appareils inscrits dans Endpoint Manager. 
 
 Si Windows appareils sont déjà inscrits dans Endpoint Manager, Defender entreprise détecte ces appareils pendant que vous êtes en train de configurer Defender pour les entreprises. Vous serez invité à vous demander si vous souhaitez utiliser l’intégration automatique pour l’ensemble ou une partie de Windows appareils. Vous pouvez intégrer tous les Windows en même temps, ou sélectionner des appareils spécifiques pour commencer, puis ajouter d’autres appareils ultérieurement.
 
-Pour en savoir plus sur l’intégration automatique, consultez l’étape 2 de l’Assistant pour [configurer Microsoft Defender pour les entreprises](../security/defender-business/mdb-use-wizard.md).
+Pour en savoir plus sur l’intégration automatique, consultez l’étape 2 de l’Assistant pour [configurer Microsoft Defender pour les PME](../security/defender-business/mdb-use-wizard.md).
 
 ## <a name="use-a-local-script-to-onboard-windows-and-macos-devices"></a>Utiliser un script local pour intégrer des appareils Windows macOS
 
@@ -68,11 +72,12 @@ Vous pouvez intégrer jusqu’à 10 appareils à la fois avec cette méthode.
 5. Suivez les instructions des articles suivants :
 
    - Windows : intégrer [des appareils Windows à l’aide d’un script local](../security/defender-endpoint/configure-endpoints-script.md#onboard-windows-devices-using-a-local-script)
-   - Appareils macOS : [déploiement manuel de Microsoft Defender pour endpoint sur macOS](../security/defender-endpoint/mac-install-manually.md#download-installation-and-onboarding-packages)
+
+   - Appareils macOS : [déploiement manuel pour Microsoft Defender pour point de terminaison sur macOS](../security/defender-endpoint/mac-install-manually.md#download-installation-and-onboarding-packages)
 
 ## <a name="use-microsoft-endpoint-manager-to-enroll-devices"></a>Utiliser Microsoft Endpoint Manager pour inscrire des appareils
 
-Si vous utilisiez déjà Endpoint Manager (qui inclut Microsoft Intune et Gestion des appareils mobiles), avant d’obtenir Defender pour Entreprise, vous pouvez continuer à utiliser Endpoint Manager pour intégrer les appareils de votre organisation. Avec Endpoint Manager, vous pouvez intégrer des ordinateurs, des tablettes et des téléphones, y compris des appareils iOS et Android.
+Si vous utilisiez déjà Endpoint Manager (qui inclut Microsoft Intune et Mobile Gestion des appareils), avant d’obtenir Defender pour Entreprise, vous pouvez continuer à utiliser Endpoint Manager pour intégrer les appareils de votre organisation. Avec Endpoint Manager, vous pouvez intégrer des ordinateurs, des tablettes et des téléphones, y compris des appareils iOS et Android.
 
 Si votre organisation utilise des appareils Android, utilisez cette méthode.
 
@@ -131,6 +136,7 @@ Si vous souhaitez hors d’un appareil, suivez les étapes suivantes :
 7. Exécutez le script sur chaque appareil que vous souhaitez hors d’board. Vous avez besoin d’aide pour cette tâche ? Consultez les ressources suivantes :   
 
    - Windows : hors [Windows à l’aide d’un script local](../security/defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script)
+   
    - Appareils macOS : [désinstallation sur macOS](../security/defender-endpoint/mac-resources.md#uninstalling)
 
 > [!IMPORTANT]

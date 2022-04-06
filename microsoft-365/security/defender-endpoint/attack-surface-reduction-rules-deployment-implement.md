@@ -20,19 +20,20 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 2ca83735eab465e3a5ec6b25156143fde1719c0a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c85dcb985210167e04b51092d66fb59080280581
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683118"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477344"
 ---
 # <a name="step-3-implement-asr-rules"></a>Étape 3 : Mettre en œuvre les règles ASR
 
 L’application de règles de réduction de la surface d’attaque déplace le premier anneau de test dans un état fonctionnel activé.
 
 > [!div class="mx-imgBorder"]
-> ![Étapes d’implémentation des règles asr](images/asr-rules-implementation-steps.png)
+> :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="Procédure d’implémenter des règles de la asr." lightbox="images/asr-rules-implementation-steps.png":::
+  
 
 ## <a name="step-1-transition-asr-rules-from-audit-to-block"></a>Étape 1 : Transition des règles de la asr de l’audit au blocage
 

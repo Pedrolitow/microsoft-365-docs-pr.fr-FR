@@ -13,16 +13,22 @@ f1.keywords:
 ms.author: tiaraquan
 ms.article: article
 ms.localizationpriority: medium
-ms.openlocfilehash: e697d9caf2b35dd0dedb9632b968cb095b792520
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: 60847c3455c65ebc4393950c766f2c4d0c3165ef
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595037"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634314"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications de la documentation relative au Bureau géré Microsoft
 
 Cet article répertorie les articles nouveaux et mis à jour de la [documentation Microsoft Managed Desktop documentation.](index.yml) Les articles « mis à jour » ont des ajouts matériels ou des corrections . Des correctifs mineurs tels que la correction de fautes de frappe, de style ou de mise en forme ne sont pas répertoriés. Vous pouvez toujours afficher l’historique des validations spécifiques (y compris les détails des modifications) en visitant le [repo sur GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+## <a name="april-2022"></a>Avril 2022
+
+Article nouveau ou modifié | Description
+--- | ---
+| [Teams](get-started/teams.md) | Mise à jour Microsoft Intune section modifications |
 
 ## <a name="march-2022"></a>Mars 2022
 

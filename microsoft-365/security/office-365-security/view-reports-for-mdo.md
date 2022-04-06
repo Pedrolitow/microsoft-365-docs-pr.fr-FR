@@ -16,27 +16,27 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Les administrateurs peuvent découvrir comment rechercher et utiliser les rapports Defender pour Office 365 qui sont disponibles dans le portail Microsoft 365 Defender web.
+description: Les administrateurs peuvent découvrir comment rechercher et utiliser les rapports Defender for Office 365 disponibles dans le portail Microsoft 365 Defender web.
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bcc77aaac71c8f8b4c3d3635b596a56ac12a3d7d
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: fbedc796fe257db700fa77f2d7b361ae188939ae
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507488"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476266"
 ---
-# <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Afficher Defender pour Office 365 rapports sur le portail Microsoft 365 Defender web
+# <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de Office 365 Defender dans le portail Microsoft 365 Defender web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft Defender pour Office 365 organisations (par exemple, Microsoft 365 E5 abonnements ou Microsoft Defender pour Office 365 Plan 1 ou Microsoft Defender pour Office 365 les modules de développement plan 2) contiennent de nombreux rapports de sécurité. Si vous avez les [autorisations nécessaires](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), vous pouvez afficher et télécharger ces rapports dans le portail Microsoft 365 Defender web.
+Les organisations Microsoft Defender pour Office 365 (par exemple, les abonnements Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 1 ou Microsoft Defender pour les modules de Office 365 Plan 2) contiennent de nombreux rapports de sécurité. Si vous avez les [autorisations nécessaires](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), vous pouvez afficher et télécharger ces rapports dans le portail Microsoft 365 Defender web.
 
 ## <a name="view-and-download-reports"></a>Consulter et télécharger les rapports
 
@@ -54,7 +54,7 @@ Microsoft Defender pour Office 365 organisations (par exemple, Microsoft 365 E5 
 
 > [!NOTE]
 >
-> Les rapports de sécurité de messagerie qui ne nécessitent pas Defender pour Office 365 sont décrits dans l’affichage des rapports de sécurité de messagerie [dans le portail Microsoft 365 Defender messagerie](view-email-security-reports.md).
+> Les rapports de sécurité de messagerie qui ne nécessitent pas Defender pour Office 365 sont décrits dans l’affichage des rapports de sécurité de messagerie dans [le portail Microsoft 365 Defender messagerie](view-email-security-reports.md).
 >
 > Les rapports liés au flux de messagerie sont désormais dans le Centre d’administration Exchange(EAC). Pour plus d’informations sur ces rapports, voir [Rapports de flux de messagerie dans le nouveau centre d Exchange’administration.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
@@ -120,15 +120,15 @@ Dans la page principale du rapport, l’icône ![Exporter.](../../media/m365-cc-
 
 ## <a name="threat-protection-status-report"></a>Rapport sur l’état de la protection contre les menaces
 
-Le **rapport d’état de la protection** contre les menaces est un affichage unique qui regroupe des informations sur le contenu malveillant et les e-mails malveillants détectés et bloqués par [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) et Microsoft Defender pour Office 365. Pour plus d’informations, consultez le [rapport d’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report).
+Le rapport d’état **de la protection** contre les menaces est un affichage unique qui regroupe des informations sur le contenu malveillant et les e-mails malveillants détectés et bloqués par [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) et Microsoft Defender pour Office 365. Pour plus d’informations, consultez le [rapport d’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report).
 
 ## <a name="top-senders-and-recipients-report"></a>Rapport sur les principaux expéditeurs et destinataires
 
-Le **rapport Des principaux expéditeurs et destinataires** affiche les principaux destinataires des fonctionnalités de protection Defender pour Office 365 EOP. Pour plus d’informations, consultez [le rapport des principaux expéditeurs et destinataires](view-email-security-reports.md#top-senders-and-recipients-report).
+Le **rapport Sur les principaux expéditeurs et destinataires** affiche les principaux destinataires pour EOP et Defender pour les fonctionnalités Office 365 protection des données. Pour plus d’informations, consultez [le rapport des principaux expéditeurs et destinataires](view-email-security-reports.md#top-senders-and-recipients-report).
 
 ## <a name="url-protection-report"></a>Rapport sur la protection des URL
 
-Le **rapport sur la protection des URL** fournit des affichages récapitulatifs et des tendances pour les menaces détectées et les actions entreprises sur les clics d’URL dans le cadre [Coffre liens.](safe-links.md) Ce rapport n’aura pas de données de clic provenant d’utilisateurs pour lequel la stratégie Coffre liens a été appliquée lorsque l’option Suivre les **clics** utilisateur n’est pas sélectionnée.
+Le **rapport sur la protection des URL** fournit des affichages récapitulatifs et des tendances pour les menaces détectées et les actions entreprises sur les clics d’URL dans le cadre [Coffre liens.](safe-links.md) Ce rapport ne dispose pas des données de clic des utilisateurs pour lequel l’option Ne pas suivre les **clics** utilisateur est sélectionnée pour la stratégie de liens Coffre appliquée.
 
 Pour afficher le rapport, ouvrez le [portail Microsoft 365 Defender](https://security.microsoft.com),  \>  \> et consultez la & collaboration **de rapports e-mail & rapports de collaboration**. Dans la page **& de collaboration** , recherchez la **page Protection des URL** , puis cliquez sur **Afficher les détails**. Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/URLProtectionActionReport>.
 
@@ -217,8 +217,8 @@ Outre les rapports décrits dans cet article, plusieurs autres rapports sont dis
 
 |Rapport|Rubrique|
 |---|---|
-|**Détections** en Microsoft Defender pour Office 365 **explorer (plan** 2) ou en temps réel (Microsoft Defender pour Office 365 Plan 1)|[Explorateur de menaces (et détections en temps réel)](threat-explorer.md)|
-|Rapports de sécurité de messagerie ne nécessitant pas d’Defender pour Office 365|[Afficher les rapports de sécurité de messagerie dans le portail Microsoft 365 Defender messagerie](view-email-security-reports.md)|
+|**Explorateur** (Microsoft Defender pour Office 365 Plan 2) ou **détections** en temps réel (Microsoft Defender pour Office 365 Plan 1)|[Explorateur de menaces (et détections en temps réel)](threat-explorer.md)|
+|Rapports de sécurité de messagerie qui ne nécessitent pas Defender pour Office 365|[Afficher les rapports de sécurité de messagerie dans le portail Microsoft 365 Defender messagerie](view-email-security-reports.md)|
 |Rapports de flux de messagerie dans le Centre Exchange’administration Centrale (EAC)|[Rapports de flux de messagerie dans le nouveau centre Exchange’administration](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
 
 Cmdlets de rapports PowerShell :
@@ -233,14 +233,14 @@ Cmdlets de rapports PowerShell :
 |État du flux de messagerie|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
 |Utilisateurs usurpés|[Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport)|
 
-## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Quelles autorisations sont nécessaires pour afficher les rapports de Defender pour Office 365'accès ?
+## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Quelles autorisations sont nécessaires pour afficher les rapports Defender for Office 365 ?
 
 Pour afficher et utiliser les rapports décrits dans cet article, vous devez être membre de l’un des groupes de rôles suivants dans le portail Microsoft 365 Defender:
 
 - **Gestion de l'organisation**
 - **Administrateur de la sécurité**
 - **Lecteur sécurité**
-- **Lecteur global**
+- **Lecteur général**
 
 Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
@@ -248,7 +248,7 @@ Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 3
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Que se passe-t-il si les rapports n’affichent pas de données ?
 
-Si vous ne voyez pas de données dans vos rapports Defender pour Office 365, vérifiez que vos stratégies sont correctement définies. Votre organisation doit avoir défini [des stratégies Coffre](set-up-safe-links-policies.md) liens et des [stratégies Coffre pièces jointes](set-up-safe-attachments-policies.md) pour que Defender pour Office 365 protection soit en place. Consultez également [La protection contre le courrier indésirable et les programmes malveillants](anti-spam-and-anti-malware-protection.md).
+Si vous ne voyez pas de données dans votre defender pour Office 365 rapports, vérifiez que vos stratégies sont correctement définies. Votre organisation doit avoir [défini des stratégies Coffre](set-up-safe-links-policies.md) liens et des [stratégies Coffre pièces jointes](set-up-safe-attachments-policies.md) pour que Defender pour Office 365 protection soit en place. Consultez également [La protection contre le courrier indésirable et les programmes malveillants](anti-spam-and-anti-malware-protection.md).
 
 ## <a name="related-topics"></a>Sujets associés
 

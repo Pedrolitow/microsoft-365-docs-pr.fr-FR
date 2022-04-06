@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f4a3e227dd43a812bea64e227e315d207eb6fc7b
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 2de9f0a3a0d860b2513c8947a1fe92563b516444
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421449"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476596"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>Atténuer les vulnérabilités du jour zéro : Gestion des menaces et des vulnérabilités
 
@@ -46,15 +46,15 @@ Une fois qu’une vulnérabilité zéro jour a été trouvée, les informations 
 > [!NOTE]
 > La fonctionnalité de vulnérabilité de 0 jour est actuellement disponible uniquement pour Windows produits.
 
-### <a name="threat-and-vulnerability-management-dashboard"></a>Tableau de bord des menaces gestion des vulnérabilités de sécurité
+### <a name="threat-and-vulnerability-management-dashboard"></a>Tableau de bord des menaces gestion des vulnérabilités des menaces
 
 Recherchez des recommandations avec une balise « zero-day » dans la carte « Recommandations de sécurité les plus importantes ».
 
-![Recommandations les plus importantes avec une balise « zero-day ».](images/tvm-zero-day-top-security-recommendations.png)
+:::image type="content" source="images/tvm-zero-day-top-security-recommendations.png" alt-text="Principales recommandations avec une balise « zero-day »" lightbox="images/tvm-zero-day-top-security-recommendations.png":::
 
 Recherchez les principaux logiciels avec la balise « zero-day » dans la carte « Logiciels les plus vulnérables ».
 
-![Logiciels les plus vulnérables avec une balise « zero-day ».](images/tvm-zero-day-top-software.png)
+:::image type="content" source="images/tvm-zero-day-top-software.png" alt-text="Logiciels les plus vulnérables avec une balise « zero-day »" lightbox="images/tvm-zero-day-top-software.png":::
 
 ### <a name="weaknesses-page"></a>Page Faiblesses
 
@@ -64,19 +64,19 @@ Recherchez la vulnérabilité nommée « zero-day » ainsi qu’une description 
 
 - Si aucun ID CVE n’est affecté à cette vulnérabilité, vous la trouverez sous un nom interne temporaire qui ressemble à « TVM-XXXX-XXXX ». Le nom sera mis à jour une fois qu’un ID CVE officiel a été affecté, mais le nom interne précédent peut toujours être recherché et trouvé dans le panneau latéral.
 
-:::image type="content" alt-text="Exemple de jour zéro pour CVE-2020-17087 dans la page faiblesses." source="images/tvm-zero-day-weakness-name.png" lightbox="images/tvm-zero-day-weakness-name.png":::
+:::image type="content" source="images/tvm-zero-day-weakness-name.png" alt-text="Exemple de jour zéro pour CVE-2020-17087 dans la page Faiblesses" lightbox="images/tvm-zero-day-weakness-name.png":::
 
 ### <a name="software-inventory-page"></a>Page Inventaire logiciel
 
 Recherchez les logiciels avec la balise « zero-day ». Filtrez par la balise « zero day » pour voir uniquement les logiciels avec des vulnérabilités zero-day.
 
-:::image type="content" alt-text="Exemple de jour zéro Windows Server 2016 dans la page d’inventaire logiciel." source="images/tvm-zero-day-software-inventory.png" lightbox="images/tvm-zero-day-software-inventory.png":::
+:::image type="content" source="images/tvm-zero-day-software-inventory.png" alt-text="Exemple de jour zéro d’Windows Server 2016 dans la page d’inventaire logiciel" lightbox="images/tvm-zero-day-software-inventory.png":::
 
 ### <a name="software-page"></a>Page de logiciels
 
 Recherchez une balise « zero-day » pour chaque logiciel affecté par la vulnérabilité « zero-day ».
 
-:::image type="content" alt-text="Exemple de jour zéro pour Windows Server 2016 page de logiciels." source="images/tvm-zero-day-software-page.png" lightbox="images/tvm-zero-day-software-page.png":::
+:::image type="content" source="images/tvm-zero-day-software-page.png" alt-text="Exemple de jour zéro dans la page Windows Server 2016 logiciels" lightbox="images/tvm-zero-day-software-page.png":::
 
 ### <a name="security-recommendations-page"></a>Page Recommandations en matière de sécurité
 
@@ -84,7 +84,7 @@ Afficher des suggestions claires sur les options de correction et d’atténuati
 
 S’il existe un logiciel avec une vulnérabilité zéro jour et des vulnérabilités supplémentaires à résoudre, vous recevrez une recommandation sur toutes les vulnérabilités.
 
-:::image type="content" alt-text="Exemple de jour zéro de Windows Server 2016 dans la page recommandations de sécurité." source="images/tvm-zero-day-security-recommendation.png" lightbox="images/tvm-zero-day-security-recommendation.png":::
+:::image type="content" source="images/tvm-zero-day-security-recommendation.png" alt-text="Exemple de jour zéro de Windows Server 2016 dans la page recommandations de sécurité." lightbox="images/tvm-zero-day-security-recommendation.png":::
 
 ## <a name="addressing-zero-day-vulnerabilities"></a>Résoudre les vulnérabilités du jour zéro
 
@@ -94,7 +94,7 @@ Il y aura un lien vers les options d’atténuation et les solutions de contourn
 
 Ouvrez les options de correction et choisissez le type d’attention. Une option de correction « attention requise » est recommandée pour les vulnérabilités du jour zéro, dans la mesure où une mise à jour n’a pas encore été publiée. Vous ne pourrez pas sélectionner une date d’échéance, car aucune action spécifique n’est à effectuer. S’il existe des vulnérabilités plus anciennes pour ce logiciel que vous souhaitez mettre à jour, vous pouvez remplacer l’option de correction « Attention requise » et choisir « mettre à jour ».
 
-![Exemple de flyout zero day Windows Server 2016 dans la page recommandations de sécurité.](images/tvm-zero-day-recommendation-flyout400.png)
+:::image type="content" source="images/tvm-zero-day-recommendation-flyout400.png" alt-text="L’exemple d’un volant d’un jour Windows Server 2016 dans la page recommandations de sécurité" lightbox="images/tvm-zero-day-recommendation-flyout400.png":::
 
 ## <a name="track-zero-day-remediation-activities"></a>Suivre les activités de correction du jour zéro
 

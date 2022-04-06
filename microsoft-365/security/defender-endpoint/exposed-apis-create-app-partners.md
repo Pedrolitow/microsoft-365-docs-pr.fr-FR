@@ -16,20 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2705eb4e3010a06c707ad071a907da90dc0ec1fc
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 454d385c66a0019ba6059a2b8038907dd630b443
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165365"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469864"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Accès des partenaires via les API microsoft Defender pour les points de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :** 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :** 
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -52,11 +52,11 @@ Les étapes suivantes vous guident pour créer une application Azure AD, obtenir
 
 ## <a name="create-the-multi-tenant-app"></a>Créer l’application multi-client
 
-1. Connectez-vous à votre [client Azure avec](https://portal.azure.com) un utilisateur ayant le rôle **Administrateur** général.
+1. Connectez-vous à votre [client Azure avec](https://portal.azure.com) un utilisateur ayant **le rôle Administrateur** général.
 
-2. Accédez à **Azure Active Directory** \> **inscription de l’application Nouvelle** \> **inscription.**
+2. Accédez à **Azure Active Directory** \> **inscription de l’application Nouvelle** \> **inscription**.
 
-   ![Image de la Microsoft Azure et de la navigation vers l’inscription de l’application.](images/atp-azure-new-app2.png)
+   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Navigation vers le volet d’inscription de l’application" lightbox="images/atp-azure-new-app2.png":::
 
 3. Dans le formulaire d’inscription :
 
@@ -66,48 +66,48 @@ Les étapes suivantes vous guident pour créer une application Azure AD, obtenir
 
    - URI de redirection - type : Web, URI : https://portal.azure.com
 
-   ![Image de l’Microsoft Azure d’application partenaire.](images/atp-api-new-app-partner.png)
+     :::image type="content" source="images/atp-api-new-app-partner.png" alt-text="Page d Microsoft Azure’inscription d’applications partenaires" lightbox="images/atp-api-new-app-partner.png":::
 
 4. Autorisez votre application à accéder à Microsoft Defender pour le point de terminaison et à l’affecter avec le jeu minimal d’autorisations requis pour terminer l’intégration.
 
-   - Dans la page de votre application, sélectionnez **Autorisations api** Ajouter des API d’autorisation que mon \>  \>  organisation utilise > type **WindowsDefenderATP** et sélectionnez **sur WindowsDefenderATP**.
+   - Dans la page de votre application, sélectionnez **Autorisations** \>  \> d’API Ajouter des API d’autorisation que **mon organisation >** **tapez WindowsDefenderATP** et sélectionnez **sur WindowsDefenderATP**.
 
-   - **Remarque**: *WindowsDefenderATP* n’apparaît pas dans la liste d’origine. Commencez à écrire son nom dans la zone de texte pour l’voir apparaître.
+   - **Remarque** : *WindowsDefenderATP* n’apparaît pas dans la liste d’origine. Commencez à écrire son nom dans la zone de texte pour l’voir apparaître.
 
-     ![ajouter une autorisation.](images/add-permission.png)
+     :::image type="content" source="images/add-permission.png" alt-text="Option Ajouter une autorisation" lightbox="images/add-permission.png":::
 
 ### <a name="request-api-permissions"></a>Demander des autorisations d’API
 
-Pour déterminer l’autorisation qui vous est nécessaire, appelez la section **Autorisations** de l’API que vous souhaitez appeler. Par exemple :
+Pour déterminer l’autorisation qui vous est nécessaire, appelez **la section Autorisations** de l’API que vous souhaitez appeler. Par exemple :
 
-- Pour [exécuter des requêtes avancées,](run-advanced-query-api.md)sélectionnez l’autorisation « Exécuter des requêtes avancées »
-- Pour [isoler un appareil,](isolate-machine.md)sélectionnez l’autorisation « Isoler l’ordinateur »
+- Pour [exécuter des requêtes avancées](run-advanced-query-api.md), sélectionnez l’autorisation « Exécuter des requêtes avancées »
+- Pour [isoler un appareil](isolate-machine.md), sélectionnez l’autorisation « Isoler l’ordinateur »
 
-Dans l’exemple suivant, nous allons utiliser **l’autorisation** « Lire toutes les alertes » :
+Dans l’exemple suivant, nous allons utiliser **l’autorisation « Lire toutes les alertes** » :
 
 1. Choose **Application permissions** \> **Alert.Read.All** > select on **Add permissions**
 
-   ![autorisations d’application.](images/application-permissions.png)
+   :::image type="content" source="images/application-permissions.png" alt-text="Option qui permet d’ajouter une autorisation" lightbox="images/application-permissions.png":::
 
 2. Sélectionnez **Accorder le consentement**
 
-   - **Remarque**: chaque fois que vous ajoutez une autorisation, vous devez sélectionner l’autorisation **Accorder le consentement** pour que la nouvelle autorisation prenne effet.
+   - **Remarque** : chaque fois que vous ajoutez une autorisation, vous devez sélectionner l’autorisation **Accorder le consentement** pour que la nouvelle autorisation prenne effet.
 
-   ![Image d’octroi d’autorisations.](images/grant-consent.png)
+   :::image type="content" source="images/grant-consent.png" alt-text="Option qui autorise l’octroi du consentement" lightbox="images/grant-consent.png":::
 
 3. Ajoutez une secret à l’application.
 
-   - Select **Certificates & secrets,** add description to the secret and select **Add**.
+   - **Sélectionnez Certificats & secrets**, ajoutez une description à la secret et sélectionnez **Ajouter**.
 
-    **Important**: après avoir cliqué sur Ajouter, **copiez la valeur de secret générée.** Vous ne pourrez plus récupérer une fois que vous êtes parti !
+    **Important** : après avoir cliqué sur Ajouter, **copiez la valeur de secret générée**. Vous ne pourrez plus récupérer une fois que vous êtes parti !
 
-    ![Image de la clé de création de l’application.](images/webapp-create-key2.png)
+     :::image type="content" source="images/webapp-create-key2.png" alt-text="Clé de création d’application" lightbox="images/webapp-create-key2.png":::
 
 4. Notez votre ID d’application :
 
    - Dans la page de votre application, allez à **Vue d’ensemble** et copiez les informations suivantes :
 
-   ![Image de l’ID d’application créé.](images/app-id.png)
+     :::image type="content" source="images/app-id.png" alt-text="ID de création de l’application" lightbox="images/app-id.png":::
 
 5. Ajoutez l’application au client de votre client.
 
@@ -125,7 +125,7 @@ Dans l’exemple suivant, nous allons utiliser **l’autorisation** « Lire tout
 
    Après avoir cliqué sur le lien de consentement, connectez-vous avec l’administrateur général du client du client et consentez à l’application.
 
-   ![Image de consentement.](images/app-consent-partner.png)
+   :::image type="content" source="images/app-consent-partner.png" alt-text="Bouton Accepter" lightbox="images/app-consent-partner.png":::
 
    En outre, vous devrez demander à votre client son ID de locataire et l’enregistrer pour une utilisation ultérieure lors de l’acquisition du jeton.
 
@@ -173,7 +173,7 @@ return $token
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     ```
 
-- Copiez/collez le code ci-dessous dans votre application (n’oubliez pas de mettre à jour les trois variables : `tenantId` `appId` , et `appSecret` )
+- Copiez/collez le code ci-dessous dans votre application (n’oubliez pas de mettre à jour les trois variables : `tenantId`, `appId`et `appSecret`)
 
     ```console
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
@@ -223,15 +223,15 @@ Vérifiez que vous avez reçu un jeton correct :
 - Dans la capture d’écran ci-dessous, vous pouvez voir un jeton décodé acquis à partir d’une application avec plusieurs autorisations pour Microsoft Defender pour le point de terminaison :
 - La revendication « tid » est l’ID de client à qui appartient le jeton.
 
-![Image de validation de jeton.](images/webapp-decoded-token.png)
+:::image type="content" source="images/webapp-decoded-token.png" alt-text="Page de validation de jeton" lightbox="images/webapp-decoded-token.png":::
 
 ## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>Utiliser le jeton pour accéder à l’API Microsoft Defender for Endpoint
 
-- Choisissez l’API que vous souhaitez utiliser, pour plus d’informations, voir API De Microsoft Defender pris en charge pour [les points de terminaison](exposed-apis-list.md)
+- Choisissez l’API que vous souhaitez utiliser, pour plus d’informations, voir [API De Microsoft Defender pris en charge pour les points de terminaison](exposed-apis-list.md)
 - Définissez l’en-tête Authorization dans la requête Http que vous envoyez à « Bearer {token} » (le porteur est le schéma d’autorisation)
 - Le délai d’expiration du jeton est de 1 heure (vous pouvez envoyer plusieurs demandes avec le même jeton)
 
-- Exemple d’envoi d’une demande pour obtenir une liste d’alertes à **l’aide C#**
+- Exemple d’envoi d’une demande pour obtenir une liste d’alertes à l’aide **C#**
 
     ```csharp
     var httpClient = new HttpClient();

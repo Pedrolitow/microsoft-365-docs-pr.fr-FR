@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine pour tous les utilisateurs dans Exchange Online Protection (EOP). Les administrateurs des organisations avec Microsoft Defender pour Office 365 peuvent également gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive Entreprise et Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7787943ad16a3ae641b475b01b7e1dd8bb7f51d2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 449886f6272c81f9947fd3e7ea869e565326578f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318212"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469644"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell
 
@@ -33,7 +33,7 @@ ms.locfileid: "63318212"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, la quarantaine contient des messages potentiellement dangereux ou indésirables. Pour plus d’informations, voir [Messages électroniques mis en quarantaine dans EOP](quarantine-email-messages.md).
 
@@ -94,7 +94,7 @@ Vous affichez et gérez les messages mis en quarantaine dans le portail Microsof
 4. Pour filtrer les résultats, cliquez sur **Filtrer**. Les filtres suivants sont disponibles dans le menu déroulant **Filtres** qui apparaît :
    - **ID du message** : l’identificateur global unique du message.
 
-     Par exemple, vous avez [](message-trace-scc.md) utilisé le suivi des messages pour rechercher un message qui a été envoyé à un utilisateur de votre organisation, et vous déterminez que le message a été mis en quarantaine au lieu d’être remis. N’oubliez pas d’inclure la valeur complète de l’ID du message, qui peut inclure des crochets (\<\>). Par exemple : `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
+     Par exemple, vous avez [](message-trace-scc.md) utilisé le suivi des messages pour rechercher un message qui a été envoyé à un utilisateur de votre organisation, et vous déterminez que le message a été mis en quarantaine au lieu d’être remis. N’oubliez pas d’inclure la valeur complète de l’ID du message, qui peut inclure des crochets (\<\>). Par exemple : `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
 
    - **Adresse de l’expéditeur**
    - **Adresse du destinataire**
@@ -141,7 +141,7 @@ Une fois le message spécifique mis en quarantaine trouvé, sélectionnez-le pou
 
 Lorsque vous sélectionnez un message mis en quarantaine dans la liste, les informations suivantes sont disponibles dans le flyout de détails qui apparaît.
 
-![Les détails du menu volant d'un message en quarantaine.](../../media/quarantine-message-details-flyout.png)
+:::image type="content" source="../../media/quarantine-message-details-flyout.png" alt-text="Le volant de détails d’un message mis en quarantaine" lightbox="../../media/quarantine-message-details-flyout.png":::
 
 - **ID du message** : l’identificateur global unique pour le message. Disponible dans le **champ d’en-tête Message-ID dans l’en-tête** du message.
 - **Adresse de l’expéditeur**
@@ -162,13 +162,13 @@ Pour donner suite au message, consultez la section suivante.
 > [!NOTE]
 > Pour rester dans le menu déroulant des détails, mais changer le message en quarantaine que vous regardez, utilisez les flèches haut et bas en haut du menu déroulant.
 >
-> ![Les flèches vers le haut et les flèches vers le bas des détails du menu flottant d'un message en quarantaine.](../../media/quarantine-message-details-flyout-up-down-arrows.png)
+> :::image type="content" source="../../media/quarantine-message-details-flyout-up-down-arrows.png" alt-text="Flèches haut et bas dans le volant des détails d’un message mis en quarantaine" lightbox="../../media/quarantine-message-details-flyout-up-down-arrows.png":::
 
 ### <a name="take-action-on-quarantined-email"></a>Effectuer une action sur les messages mis en quarantaine
 
 Après avoir sélectionné un message en quarantaine dans la liste, les actions suivantes sont disponibles dans le flyout des détails :
 
-![Actions disponibles dans les détails du menu flottant d'un message en quarantaine.](../../media/quarantine-message-details-flyout-actions.png)
+:::image type="content" source="../../media/quarantine-message-details-flyout-actions.png" alt-text="Actions disponibles dans le volant des détails d’un message mis en quarantaine" lightbox="../../media/quarantine-message-details-flyout-actions.png":::
 
 - ![Icône de version d’e-mail](../../media/m365-cc-sc-check-mark-icon.png) **Publier un e-mail**<sup>\*</sup> : dans le volet volant qui s’affiche, configurez les options suivantes :
   - **Ajoutez un expéditeur à la liste d’adresses** de votre organisation : sélectionnez cette option pour empêcher la mise en quarantaine des messages provenant de l’expéditeur.
@@ -234,7 +234,7 @@ Si vous ne libérez pas ou ne supprimez pas le message, il sera supprimé après
 > [!NOTE]
 > Sur un appareil mobile, le texte de description n'est pas disponible sur les icônes d'action.
 >
-> ![Détails d'un message en quarantaine avec les actions disponibles mises en évidence](../../media/quarantine-message-details-flyout-mobile-actions.png)
+> :::image type="content" source="../../media/quarantine-message-details-flyout-mobile-actions.png" alt-text="Détails d’un message mis en quarantaine avec les actions disponibles mises en évidence" lightbox="../../media/quarantine-message-details-flyout-mobile-actions.png":::
 >
 > Les icônes dans l'ordre et leurs descriptions correspondantes sont résumées dans le tableau suivant :
 >
@@ -253,7 +253,7 @@ Si vous ne libérez pas ou ne supprimez pas le message, il sera supprimé après
 
 Lorsque vous sélectionnez plusieurs messages mis en quarantaine dans la liste (jusqu'à 100) en cliquant dans la zone vide à gauche de la première colonne, la liste déroulante **Actions en vrac** s'affiche et vous permet d'effectuer les actions suivantes :
 
-![Liste déroulante d'actions groupées pour les messages en quarantaine.](../../media/quarantine-message-bulk-actions.png)
+:::image type="content" source="../../media/quarantine-message-bulk-actions.png" alt-text="Liste de listes de listes des actions en bloc pour les messages en quarantaine" lightbox="../../media/quarantine-message-bulk-actions.png":::
 
 - ![Icône de version d’e-mail](../../media/m365-cc-sc-check-mark-icon.png) **Messages de** libération : libère les messages à tous les destinataires. Dans le volant qui s’affiche, vous pouvez choisir les options suivantes, qui sont les mêmes que lorsque vous publiez un seul message :
   - **Ajouter un expéditeur à la liste d’adresses de votre organisation**
@@ -312,7 +312,7 @@ Une fois que vous avez trouvé un fichier spécifique mis en quarantaine, sélec
 
 Lorsque vous sélectionnez un fichier en quarantaine dans la liste, les informations suivantes sont disponibles dans le volant de détails qui s’ouvre :
 
-![Le volant de détails d’un fichier mis en quarantaine.](../../media/quarantine-file-details-flyout.png)
+:::image type="content" source="../../media/quarantine-file-details-flyout.png" alt-text="Le volant de détails d’un fichier mis en quarantaine" lightbox="../../media/quarantine-file-details-flyout.png":::
 
 - **Nom de fichier**
 - **URL du** fichier : URL qui définit l’emplacement du fichier (par exemple, dans SharePoint Online).
@@ -333,13 +333,13 @@ Pour prendre des mesures sur le fichier, consultez la section suivante.
 > [!NOTE]
 > Pour rester dans le volant des détails, mais modifier le fichier mis en quarantaine que vous regardez, utilisez les flèches haut et bas en haut du volant.
 >
-> ![Flèches vers le haut et vers le bas dans le volant des détails d’un fichier mis en quarantaine.](../../media/quarantine-file-details-flyout-up-down-arrows.png)
+> :::image type="content" source="../../media/quarantine-file-details-flyout-up-down-arrows.png" alt-text="Flèches vers le haut et vers le bas dans le volant des détails des fichiers mis en quarantaine" lightbox="../../media/quarantine-file-details-flyout-up-down-arrows.png":::
 
 ### <a name="take-action-on-quarantined-files"></a>Prendre des mesures sur les fichiers mis en quarantaine
 
 Une fois que vous avez sélectionné un fichier mis en quarantaine dans la liste, les actions suivantes sont disponibles dans le volant de détails :
 
-![Actions disponibles dans le volant des détails d’un fichier mis en quarantaine.](../../media/quarantine-file-details-flyout-actions.png)
+:::image type="content" source="../../media/quarantine-file-details-flyout-actions.png" alt-text="Actions dans le volant de détails d’un fichier mis en quarantaine" lightbox="../../media/quarantine-file-details-flyout-actions.png":::
 
 - ![Icône Libérer le fichier.](../../media/m365-cc-sc-check-mark-icon.png) **Fichier de publication**<sup>\*</sup> : dans le volet volant qui s’affiche, turn on or turn off **Report files to Microsoft for analysis**, and then click **Release**.
 - ![Icône Libérer le fichier.](../../media/m365-cc-sc-check-mark-icon.png)
@@ -355,7 +355,7 @@ Si vous ne relâchez pas ou ne supprimez pas le fichier, il sera supprimé à l�
 
 Lorsque vous sélectionnez plusieurs fichiers mis en quarantaine dans la liste (jusqu’à 100) en cliquant dans la zone vierge à gauche de  la colonne Objet, la liste de listes de listes des **actions** en bloc s’affiche où vous pouvez prendre les mesures suivantes :
 
-![Liste de listes des actions en bloc pour les fichiers en quarantaine.](../../media/quarantine-file-bulk-actions.png)
+:::image type="content" source="../../media/quarantine-file-bulk-actions.png" alt-text="Liste de listes des actions en bloc pour les fichiers en quarantaine" lightbox="../../media/quarantine-file-bulk-actions.png":::
 
 - ![Icône Libérer le fichier.](../../media/m365-cc-sc-check-mark-icon.png) **Fichier de publication** : dans le volet volant qui s’affiche, turn on or turn off **Report files to Microsoft for analysis**, and then click **Release**.
 - ![Supprimer de l’icône de mise en quarantaine.](../../media/m365-cc-sc-delete-icon.png) **Supprimer de la quarantaine** : une fois que vous avez cliqué sur **Oui** dans l’avertissement qui s’affiche, le fichier est immédiatement supprimé.

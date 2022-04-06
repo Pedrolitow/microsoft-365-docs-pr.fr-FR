@@ -18,31 +18,31 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a4668969982563bdc050a8e71b00980d52a7e6ff
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: b8847fb9132ee037a3103bf86aabd14d21fb482f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166181"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469424"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Intégration à l'aide de Microsoft Endpoint Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Cet article fait partie du guide de déploiement et agit comme un exemple de méthode d’intégration.
 
-Dans la [rubrique Planification,](deployment-strategy.md) plusieurs méthodes ont été fournies pour intégrer des appareils au service. Cette rubrique traite de l’architecture de cogestion.
+Dans la [rubrique Planification](deployment-strategy.md) , plusieurs méthodes ont été fournies pour intégrer des appareils au service. Cette rubrique traite de l’architecture de cogestion.
 
-![Image de l’architecture native du cloud. ](images/co-management-architecture.png)
- *Diagramme des architectures d’environnement*
+:::image type="content" source="images/co-management-architecture.png" alt-text="Architecture native du cloud" lightbox="images/co-management-architecture.png":::
+*Diagramme des architectures d’environnement*
 
-Bien que Defender pour point de terminaison prend en charge l’intégration de différents points de terminaison et outils, cet article ne les traite pas. Pour plus d’informations sur l’intégration générale à l’aide d’autres outils et méthodes de déploiement pris en charge, voir [vue d’ensemble de l’intégration.](onboarding.md)
+Bien que Defender pour point de terminaison prend en charge l’intégration de différents points de terminaison et outils, cet article ne les traite pas. Pour plus d’informations sur l’intégration générale à l’aide d’autres outils et méthodes de déploiement pris en charge, voir [vue d’ensemble de l’intégration](onboarding.md).
 
 Cette rubrique guide les utilisateurs dans :
 
@@ -57,7 +57,7 @@ Ces instructions d’intégration vous guident tout au long des étapes de base 
 > [!NOTE]
 > Seuls Windows appareils sont couverts dans cet exemple de déploiement.
 
-## <a name="step-1-onboard-windows-devices-using-microsoft-endpoint-configuration-manager"></a>Étape 1 : Intégrer des appareils Windows l’aide Microsoft Endpoint Configuration Manager
+## <a name="step-1-onboard-windows-devices-using-microsoft-endpoint-configuration-manager"></a>Étape 1 : Intégrer des Windows à l’aide Microsoft Endpoint Configuration Manager
 
 ### <a name="collection-creation"></a>Création de collection
 
@@ -71,41 +71,41 @@ Tout système qui reçoit cette configuration requise conserve cette configurati
 
 Suivez les étapes ci-dessous pour intégrer des points de terminaison à l’aide Microsoft Endpoint Configuration Manager.
 
-1. Dans Microsoft Endpoint Configuration Manager console, accédez à **Assets and Compliance \> Overview Device \> Collections**.
+1. Dans Microsoft Endpoint Configuration Manager console, accédez à **Assets and Compliance \> Overview \> Device Collections**.
 
-    ![Image de l Microsoft Endpoint Configuration Manager 1.](images/configmgr-device-collections.png)
+    :::image type="content" source="images/configmgr-device-collections.png" alt-text="Assistant Microsoft Endpoint Configuration Manager 1" lightbox="images/configmgr-device-collections.png":::
 
-2. Cliquez avec le bouton **droit sur La collection d’appareils,** puis **sélectionnez Créer une collection d’appareils.**
+2. Cliquez avec le bouton **droit sur La collection d’appareils** , puis **sélectionnez Créer une collection d’appareils**.
 
-    ![Image de Microsoft Endpoint Configuration Manager Wizard2.](images/configmgr-create-device-collection.png)
+    :::image type="content" source="images/configmgr-create-device-collection.png" alt-text="Assistant Microsoft Endpoint Configuration Manager 2" lightbox="images/configmgr-create-device-collection.png":::
 
-3. Fournissez **un nom** et **limitez la collection,** puis sélectionnez **Suivant**.
+3. Fournissez **un nom** et **limitez la collection**, puis sélectionnez **Suivant**.
 
-    ![Image de l Microsoft Endpoint Configuration Manager Wizard3.](images/configmgr-limiting-collection.png)
+    :::image type="content" source="images/configmgr-limiting-collection.png" alt-text="Assistant Microsoft Endpoint Configuration Manager 3" lightbox="images/configmgr-limiting-collection.png":::
 
-4. Sélectionnez **Ajouter une règle** et choisissez Règle de **requête.**
+4. **Sélectionnez Ajouter une règle** et **sélectionnez Règle de requête**.
 
-    ![Image de Microsoft Endpoint Configuration Manager Wizard4.](images/configmgr-query-rule.png)
+    :::image type="content" source="images/configmgr-query-rule.png" alt-text="Assistant Microsoft Endpoint Configuration Manager 4" lightbox="images/configmgr-query-rule.png":::
 
-5. Cliquez **sur Suivant** dans **l’Assistant Adhésion** directe et cliquez sur Modifier **l’instruction de requête.**
+5. Cliquez **sur Suivant** dans **l’Assistant Adhésion** directe, puis sur **Modifier l’instruction de requête**.
 
-     ![Image de l Microsoft Endpoint Configuration Manager Wizard5.](images/configmgr-direct-membership.png)
+    :::image type="content" source="images/configmgr-direct-membership.png" alt-text="Assistant Microsoft Endpoint Configuration Manager 5" lightbox="images/configmgr-direct-membership.png":::
 
-6. Sélectionnez **Critères,** puis sélectionnez l’icône étoile.
+6. **Sélectionnez Critères**, puis sélectionnez l’icône étoile.
 
-     ![Image de Microsoft Endpoint Configuration Manager Wizard6.](images/configmgr-criteria.png)
+    :::image type="content" source="images/configmgr-criteria.png" alt-text="Assistant Microsoft Endpoint Configuration Manager 6" lightbox="images/configmgr-criteria.png":::
 
-7. Conservez le type de critère comme **valeur simple,**  choisissez où en tant que système d’exploitation - numéro de **build**, opérateur supérieur ou égal à et valeur **14393** et cliquez sur **OK**.
+7. Conservez le type de critère comme **valeur simple**, choisissez l’endroit où en tant que  système d’exploitation - numéro de **build**, opérateur supérieur ou égal à et valeur **14393**, puis cliquez sur **OK**.
 
-    ![Image de l’Assistant Microsoft Endpoint Configuration Manager 7.](images/configmgr-simple-value.png)
+    :::image type="content" source="images/configmgr-simple-value.png" alt-text="Assistant Microsoft Endpoint Configuration Manager 7" lightbox="images/configmgr-simple-value.png":::
 
-8. Sélectionnez **Suivant** et **Fermez.**
+8. **Sélectionnez Suivant** et **Fermer**.
 
-    ![Image de l Microsoft Endpoint Configuration Manager wizard8.](images/configmgr-membership-rules.png)
+    :::image type="content" source="images/configmgr-membership-rules.png" alt-text="Assistant Microsoft Endpoint Configuration Manager 8" lightbox="images/configmgr-membership-rules.png":::
 
 9. Sélectionnez **Suivant**.
 
-    ![Image de l Microsoft Endpoint Configuration Manager wizard9.](images/configmgr-confirm.png)
+    :::image type="content" source="images/configmgr-confirm.png" alt-text="Assistant Microsoft Endpoint Configuration Manager 9" lightbox="images/configmgr-confirm.png":::
 
 Après avoir effectué cette tâche, vous avez maintenant une collection d’appareils avec tous les Windows de terminaison dans l’environnement.
 
@@ -121,67 +121,67 @@ Cette section vous guide dans la configuration des fonctionnalités suivantes à
 
 #### <a name="windows-10-and-windows-11"></a>Windows 10 et Windows 11
 
-À partir du portail Microsoft 365 Defender, il est possible de télécharger la stratégie qui peut être utilisée pour créer la stratégie dans System Center Configuration Manager et déployer cette stratégie sur Windows 10 et `.onboarding` Windows 11 périphériques.
+À partir du portail Microsoft 365 Defender il est possible `.onboarding` de télécharger la stratégie qui peut être utilisée pour créer la stratégie dans System Center Configuration Manager et déployer cette stratégie sur Windows 10 et Windows 11 périphériques.
 
-1. À partir <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">d Microsoft 365 Defender portail,</a> [sélectionnez Paramètres puis Intégration.](https://security.microsoft.com/preferences2/onboarding)
+1. À partir d <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail</a>, [sélectionnez Paramètres puis Intégration](https://security.microsoft.com/preferences2/onboarding).
 
 2. Sous Méthode de déploiement, sélectionnez la version prise **en charge de Microsoft Endpoint Configuration Manager**.
 
-    ![Image de Microsoft Defender pour l’Assistant Intégration de point de terminaison10.](images/mdatp-onboarding-wizard.png)
+    :::image type="content" source="images/mdatp-onboarding-wizard.png" alt-text="Assistant Microsoft Endpoint Configuration Manager 10" lightbox="images/mdatp-onboarding-wizard.png":::
 
-3. Sélectionnez **le package de téléchargement.**
+3. Sélectionnez **Télécharger le package**.
 
-    ![Image de Microsoft Defender pour l’Assistant Intégration de point de terminaison11.](images/mdatp-download-package.png)
+   :::image type="content" source="images/mdatp-download-package.png" alt-text="Assistant Microsoft Endpoint Configuration Manager 11" lightbox="images/mdatp-download-package.png":::
 
 4. Enregistrez le package dans un emplacement accessible.
-5. In Microsoft Endpoint Configuration Manager, navigate to: **Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**.
+5. Dans Microsoft Endpoint Configuration Manager, accédez à : Présentation des ressources et de la **conformité >'> Endpoint Protection > stratégies Microsoft Defender ATP**.
 
-6. Cliquez avec le bouton **droit sur Stratégies Microsoft Defender ATP** et **sélectionnez Créer une stratégie Microsoft Defender ATP.**
+6. Cliquez avec le bouton **droit sur Stratégies Microsoft Defender ATP** et **sélectionnez Créer une stratégie Microsoft Defender ATP**.
 
-    ![Image de l Microsoft Endpoint Configuration Manager 12.](images/configmgr-create-policy.png)
+    :::image type="content" source="images/configmgr-create-policy.png" alt-text="Assistant Microsoft Endpoint Configuration Manager 12" lightbox="images/configmgr-create-policy.png":::
 
 7. Entrez le nom et la description, vérifiez que **l’intégration** est sélectionnée, puis sélectionnez **Suivant**.
 
-    ![Image de Microsoft Endpoint Configuration Manager Wizard13.](images/configmgr-policy-name.png)
+    :::image type="content" source="images/configmgr-policy-name.png" alt-text="Assistant Microsoft Endpoint Configuration Manager 13" lightbox="images/configmgr-policy-name.png":::
 
 8. Cliquez sur **Parcourir**.
 
 9. Accédez à l’emplacement du fichier téléchargé à l’étape 4 ci-dessus.
 
 10. Cliquez sur **Suivant**.
-11. Configurez l’agent avec les exemples appropriés (**Aucun** ou **Tous les types de fichiers).**
+11. Configurez l’agent avec les exemples appropriés (**aucun** ou **tous les types de fichiers**).
 
-    ![Image des paramètres de configuration1.](images/configmgr-config-settings.png)
+    :::image type="content" source="images/configmgr-config-settings.png" alt-text="Paramètres de configuration1" lightbox="images/configmgr-config-settings.png":::
 
-12. Sélectionnez la télémétrie appropriée **(Normale** ou **Accélérée),** puis cliquez sur **Suivant**.
+12. Sélectionnez la télémétrie appropriée (**Normale** ou **Accélérée**), puis cliquez sur **Suivant**.
 
-    ![Image des paramètres de configuration2.](images/configmgr-telemetry.png)
+    :::image type="content" source="images/configmgr-telemetry.png" alt-text="Paramètres de configuration2" lightbox="images/configmgr-telemetry.png":::
 
 13. Vérifiez la configuration, puis cliquez sur **Suivant**.
 
-     ![Image des paramètres de configuration3.](images/configmgr-verify-configuration.png)
+    :::image type="content" source="images/configmgr-verify-configuration.png" alt-text="Paramètres de configuration3" lightbox="images/configmgr-verify-configuration.png":::
 
 14. Cliquez **sur Fermer** une fois l’Assistant terminé.
 
-15. Dans la console Microsoft Endpoint Configuration Manager, cliquez avec le bouton droit sur la stratégie Defender for Endpoint que vous avez créée et sélectionnez **Déployer.**
+15. Dans la console Microsoft Endpoint Configuration Manager, cliquez avec le bouton droit sur la stratégie Defender for Endpoint que vous avez créée et sélectionnez **Déployer**.
 
-     ![Image des paramètres de configuration4.](images/configmgr-deploy.png)
+    :::image type="content" source="images/configmgr-deploy.png" alt-text="Paramètres de configuration4" lightbox="images/configmgr-deploy.png":::
 
-16. Dans le panneau droit, sélectionnez la collection créée précédemment et cliquez sur **OK.**
+16. Dans le panneau droit, sélectionnez la collection créée précédemment et cliquez sur **OK**.
 
-    ![Image des paramètres de configuration5.](images/configmgr-select-collection.png)
+    :::image type="content" source="images/configmgr-select-collection.png" alt-text="Paramètres de configuration5" lightbox="images/configmgr-select-collection.png":::
 
 #### <a name="previous-versions-of-windows-client-windows-7-and-windows-81"></a>Versions précédentes de Windows Client (Windows 7 et Windows 8.1)
 
 Suivez les étapes ci-dessous pour identifier l’ID d’espace de travail Defender pour le point de terminaison et la clé d’espace de travail, qui seront requis pour l’intégration des versions précédentes de Windows.
 
-1. Dans un <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a> **sélectionnez** Paramètres l’intégration des points de \>  \>  terminaison (sous Gestion **des appareils).**
+1. Dans un <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender, sélectionnez</a> \> Paramètres **l’intégration** \> des points de terminaison **(sous** **Gestion des appareils**).
 
-2. Sous le système **d’exploitation, Windows 7 SP1 et 8.1**.
+2. Sous système **d’exploitation, Windows 7 SP1 et 8.1**.
 
-3. Copiez **l’ID d’espace de travail** et la clé **d’espace de travail** et enregistrez-les. Ils seront utilisés plus tard dans le processus.
+3. Copiez **l’ID d’espace de travail** et la **clé d’espace de travail** et enregistrez-les. Ils seront utilisés plus tard dans le processus.
 
-    ![Image de l’intégration.](images/91b738e4b97c4272fd6d438d8c2d5269.png)
+   :::image type="content" source="images/91b738e4b97c4272fd6d438d8c2d5269.png" alt-text="Le processus d’intégration" lightbox="images/91b738e4b97c4272fd6d438d8c2d5269.png":::
 
 4. Installez le Microsoft Monitoring Agent (MMA).
 
@@ -190,18 +190,18 @@ Suivez les étapes ci-dessous pour identifier l’ID d’espace de travail Defen
    - SSO serveur : Windows Server 2008 SP1 ou plus nouveau
    - SSK client : Windows 7 SP1 et ultérieures
 
-   L’agent MMA doit être installé sur Windows appareils mobiles. Pour installer l’agent, certains systèmes doivent télécharger la mise à jour pour l’expérience client et la [télémétrie](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry) de diagnostic afin de collecter les données avec MMA. Ces versions système incluent, sans s’y limiter, les éléments suivants :
+   L’agent MMA doit être installé sur Windows appareils. Pour installer l’agent, certains systèmes doivent télécharger la mise à jour pour l’expérience client et la [télémétrie de diagnostic](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry) afin de collecter les données avec MMA. Ces versions système incluent, sans s’y limiter, les éléments suivants :
 
    - Windows 8.1
-   - Windows 7
-   - Windows Server 2016
-   - Windows Server 2012 R2
+   - Windows 7
+   - Windows Server 2016
+   - Windows Server 2012 R2
    - Windows Server 2008 R2
 
    Plus précisément, pour Windows 7 SP1, les correctifs suivants doivent être installés :
 
    - Installer [KB4074598](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
-   - Installez la [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (ou **ultérieure)** ou [la KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework). N’installez pas les deux sur le même système.
+   - Installez la [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (ou **ultérieure) ou** [la KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework). N’installez pas les deux sur le même système.
 
 5. Si vous utilisez un proxy pour vous connecter à Internet, consultez la section Configurer les paramètres du proxy.
 
@@ -211,43 +211,43 @@ Une fois terminé, vous devriez voir les points de terminaison intégrés dans l
 
 L’antivirus Microsoft Defender est une solution de protection contre les programmes malveillants intégrée qui offre une protection nouvelle génération pour les ordinateurs de bureau, les ordinateurs portables et les serveurs.
 
-1. Dans la console Microsoft Endpoint Configuration Manager, accédez à **Assets and Compliance \> Overview Endpoint Protection \> \> Antimalware Polices** et choisissez Créer une stratégie **anti-programme malveillant.**
+1. Dans la console Microsoft Endpoint Configuration Manager, accédez à **Assets and Compliance \> Overview \> Endpoint Protection \> Antimalware Polices** et choisissez Créer une stratégie **anti-programme malveillant**.
 
-    ![Image de la stratégie anti-programme malveillant.](images/9736e0358e86bc778ce1bd4c516adb8b.png)
+   :::image type="content" source="images/9736e0358e86bc778ce1bd4c516adb8b.png" alt-text="La stratégie anti-programme malveillant" lightbox="images/9736e0358e86bc778ce1bd4c516adb8b.png":::
 
-2. Select **Scheduled scans**, **Scan settings**, **Default actions**, **Real-time protection**, Exclusion **settings**, **Advanced**, **Threat overrides**, Cloud Protection **Service** and Security **intelligence updates** and choose **OK**.
+2. Sélectionnez Analyses **programmées**, **Paramètres** d’analyse, **Actions** par défaut, **Protection** en temps réel, **Paramètres** d’exclusion **, Avancé**, **Remplacements de menaces**, Services **de protection cloud** et mises à jour de l’intelligence de la **sécurité** , puis choisissez **OK**.
 
-    ![Image du volet de protection nouvelle génération 1.](images/1566ad81bae3d714cc9e0d47575a8cbd.png)
+   :::image type="content" source="images/1566ad81bae3d714cc9e0d47575a8cbd.png" alt-text="Volet de protection nouvelle génération1" lightbox="images/1566ad81bae3d714cc9e0d47575a8cbd.png":::
 
     Dans certains secteurs d’activité ou certains clients d’entreprise, certains peuvent avoir des besoins spécifiques sur la configuration de l’antivirus.
 
     [Analyse rapide par rapport à l’analyse complète et à l’analyse personnalisée](/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
 
-    Pour plus d’informations, [voir Sécurité Windows’infrastructure de configuration.](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
+    Pour plus d’informations, [voir Sécurité Windows’infrastructure de configuration](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework).
   
-    ![Image du volet de protection nouvelle génération2.](images/cd7daeb392ad5a36f2d3a15d650f1e96.png)
+    :::image type="content" source="images/cd7daeb392ad5a36f2d3a15d650f1e96.png" alt-text="Volet de protection nouvelle génération2" lightbox="images/cd7daeb392ad5a36f2d3a15d650f1e96.png":::
 
-    ![Image du volet de protection nouvelle génération 3.](images/36c7c2ed737f2f4b54918a4f20791d4b.png)
+    :::image type="content" source="images/36c7c2ed737f2f4b54918a4f20791d4b.png" alt-text="Volet de protection nouvelle génération 3" lightbox="images/36c7c2ed737f2f4b54918a4f20791d4b.png":::
 
-    ![Image du volet de protection nouvelle génération 4.](images/a28afc02c1940d5220b233640364970c.png)
+    :::image type="content" source="images/a28afc02c1940d5220b233640364970c.png" alt-text="Volet de protection nouvelle génération 4" lightbox="images/a28afc02c1940d5220b233640364970c.png":::
 
-    ![Image du volet de protection nouvelle génération5.](images/5420a8790c550f39f189830775a6d4c9.png)
+    :::image type="content" source="images/5420a8790c550f39f189830775a6d4c9.png" alt-text="Volet de protection nouvelle génération5" lightbox="images/5420a8790c550f39f189830775a6d4c9.png":::
 
-    ![Image du volet de protection nouvelle génération 6.](images/33f08a38f2f4dd12a364f8eac95e8c6b.png)
+    :::image type="content" source="images/33f08a38f2f4dd12a364f8eac95e8c6b.png" alt-text="Volet de protection nouvelle génération6" lightbox="images/33f08a38f2f4dd12a364f8eac95e8c6b.png":::
 
-    ![Image du volet de protection nouvelle génération7.](images/41b9a023bc96364062c2041a8f5c344e.png)
+    :::image type="content" source="images/41b9a023bc96364062c2041a8f5c344e.png" alt-text="Volet de protection nouvelle génération7" lightbox="images/41b9a023bc96364062c2041a8f5c344e.png":::
 
-    ![Image du volet de protection nouvelle génération8.](images/945c9c5d66797037c3caeaa5c19f135c.png)
+    :::image type="content" source="images/945c9c5d66797037c3caeaa5c19f135c.png" alt-text="Volet de protection nouvelle génération8" lightbox="images/945c9c5d66797037c3caeaa5c19f135c.png":::
 
-    ![Image du volet de protection nouvelle génération9.](images/3876ca687391bfc0ce215d221c683970.png)
+    :::image type="content" source="images/3876ca687391bfc0ce215d221c683970.png" alt-text="Volet de protection nouvelle génération9" lightbox="images/3876ca687391bfc0ce215d221c683970.png":::
 
-3. Cliquez avec le bouton droit sur la stratégie anti-programme malveillant nouvellement créée et sélectionnez **Déployer.**
+3. Cliquez avec le bouton droit sur la stratégie anti-programme malveillant nouvellement créée, puis sélectionnez **Déployer**.
 
-    ![Image du volet de protection nouvelle génération 10.](images/f5508317cd8c7870627cb4726acd5f3d.png)
+    :::image type="content" source="images/f5508317cd8c7870627cb4726acd5f3d.png" alt-text="Volet de protection nouvelle génération10" lightbox="images/f5508317cd8c7870627cb4726acd5f3d.png":::
 
-4. Ciblez la nouvelle stratégie anti-programme malveillant sur Windows collection de programmes malveillants, puis cliquez sur **OK.**
+4. Ciblez la nouvelle stratégie anti-programme malveillant sur Windows collection de programmes malveillants, puis cliquez sur **OK**.
 
-     ![Image du volet de protection nouvelle génération 11.](images/configmgr-select-collection.png)
+    :::image type="content" source="images/configmgr-select-collection.png" alt-text="Volet de protection nouvelle génération11" lightbox="images/configmgr-select-collection.png":::
 
 Après avoir terminé cette tâche, vous avez configuré Antivirus Windows Defender.
 
@@ -255,35 +255,35 @@ Après avoir terminé cette tâche, vous avez configuré Antivirus Windows Defen
 
 Le pilier de réduction de la surface d’attaque de Defender pour le point de terminaison inclut l’ensemble de fonctionnalités disponible sous Exploit Guard. Règles de réduction de la surface d’attaque (ASR), Accès contrôlé aux dossiers, Protection du réseau et Exploit Protection.
 
-Toutes ces fonctionnalités fournissent un mode audit et un mode bloc. En mode audit, il n’y a pas d’impact sur l’utilisateur final. Tout ce qu’il fait, c’est collecter des données de télémétrie supplémentaires et les rendre disponibles dans Microsoft 365 Defender portail. L’objectif d’un déploiement est de déplacer pas à pas les contrôles de sécurité en mode blocage.
+Toutes ces fonctionnalités fournissent un mode audit et un mode bloc. En mode audit, il n’y a pas d’impact sur l’utilisateur final. Tout ce qu’il fait, c’est collecter des données de télémétrie supplémentaires et les rendre disponibles dans le Microsoft 365 Defender web. L’objectif d’un déploiement est de déplacer pas à pas les contrôles de sécurité en mode blocage.
 
 Pour définir des règles de récupération de l’accès en mode audit :
 
-1. Dans la console Microsoft Endpoint Configuration Manager, accédez à La vue d’ensemble des ressources et de la **conformité Endpoint Protection Windows Defender Exploit \> \> \> Guard** et choisissez Créer une stratégie **Exploit Guard.**
+1. Dans la console Microsoft Endpoint Configuration Manager, **\> \> accédez à La vue d’ensemble des ressources et de la conformité Endpoint Protection \> Windows Defender Exploit Guard** et choisissez Créer une stratégie Exploit Guard.
 
-   ![Image de Microsoft Endpoint Configuration Manager console0.](images/728c10ef26042bbdbcd270b6343f1a8a.png)
+   :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="Console Microsoft Endpoint Configuration Manager 0" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
 
-2. Sélectionnez **Réduction de la surface d’attaque.**
+2. Sélectionnez **Réduction de la surface d’attaque**.
 
-3. Définissez les règles sur **Audit** et cliquez sur **Suivant.**
+3. Définissez les règles sur **Audit** et cliquez sur **Suivant**.
 
-    ![Image de Microsoft Endpoint Configuration Manager console1.](images/d18e40c9e60aecf1f9a93065cb7567bd.png)
+   :::image type="content" source="images/d18e40c9e60aecf1f9a93065cb7567bd.png" alt-text="La console Microsoft Endpoint Configuration Manager 1" lightbox="images/d18e40c9e60aecf1f9a93065cb7567bd.png":::
 
 4. Confirmez la nouvelle stratégie Exploit Guard en cliquant sur **Suivant**.
 
-    ![Image de Microsoft Endpoint Configuration Manager console2.](images/0a6536f2c4024c08709cac8fcf800060.png)
+   :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="La console Microsoft Endpoint Configuration Manager 2" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
 
-5. Une fois la stratégie créée, cliquez sur **Fermer.**
+5. Une fois la stratégie créée, cliquez sur **Fermer**.
 
-    ![Image de Microsoft Endpoint Configuration Manager console3.](images/95d23a07c2c8bc79176788f28cef7557.png)
+   :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="La console Microsoft Endpoint Configuration Manager 3" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
 
-6. Cliquez avec le bouton droit sur la stratégie nouvellement créée et choisissez **Déployer.**
+6. Cliquez avec le bouton droit sur la stratégie nouvellement créée et choisissez **Déployer**.
 
-    ![Image de Microsoft Endpoint Configuration Manager console4.](images/8999dd697e3b495c04eb911f8b68a1ef.png)
+   :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="La console Microsoft Endpoint Configuration Manager 4" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
-7. Ciblez la stratégie sur la collection de Windows nouvellement créée, puis cliquez sur **OK.**
+7. Ciblez la stratégie sur la collection de Windows nouvellement créée, puis cliquez sur **OK**.
 
-    ![Image de Microsoft Endpoint Configuration Manager console5.](images/0ccfe3e803be4b56c668b220b51da7f7.png)
+   :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="La console Microsoft Endpoint Configuration Manager 5" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
 Après avoir effectué cette tâche, vous avez correctement configuré les règles de la asr en mode audit.
 
@@ -295,77 +295,77 @@ Vous trouverez ci-dessous des étapes supplémentaires pour vérifier si les rè
 
 3. Cliquez **sur Aller à la gestion de la surface d’attaque** dans le panneau De gestion de la surface d’attaque.
 
-    ![Image de la gestion de la surface d’attaque.](images/security-center-attack-surface-mgnt-tile.png)
+   :::image type="content" source="images/security-center-attack-surface-mgnt-tile.png" alt-text="Gestion de la surface d’attaque" lightbox="images/security-center-attack-surface-mgnt-tile.png":::
 
 4. Cliquez sur **l’onglet Configuration** dans les rapports de règles de réduction de la surface d’attaque. Il présente la vue d’ensemble de la configuration des règles de la asr et l’état des règles de la asr sur chaque appareil.
 
-    ![Capture d’écran des règles de réduction de la surface d’attaque reports1.](images/f91f406e6e0aae197a947d3b0e8b2d0d.png)
+   :::image type="content" source="images/f91f406e6e0aae197a947d3b0e8b2d0d.png" alt-text="Règles de réduction de la surface d’attaque reports1" lightbox="images/f91f406e6e0aae197a947d3b0e8b2d0d.png":::
 
 5. Cliquez sur chaque appareil pour obtenir les détails de configuration des règles de la asr.
 
-    ![Capture d’écran des règles de réduction de la surface d’attaque reports2.](images/24bfb16ed561cbb468bd8ce51130ca9d.png)
+   :::image type="content" source="images/24bfb16ed561cbb468bd8ce51130ca9d.png" alt-text="Règles de réduction de la surface d’attaque reports2" lightbox="images/24bfb16ed561cbb468bd8ce51130ca9d.png":::
 
-Pour [plus d’informations, voir](/microsoft-365/security/defender-endpoint/configure-machines-asr) Optimiser le déploiement et les détections de règles asr.
+Pour [plus d’informations, voir Optimiser le déploiement et les détections](/microsoft-365/security/defender-endpoint/configure-machines-asr) de règles asr.
 
 #### <a name="set-network-protection-rules-in-audit-mode"></a>Définir des règles de protection du réseau en mode audit
 
-1. Dans la console Microsoft Endpoint Configuration Manager, accédez à La vue d’ensemble des ressources et de la **conformité Endpoint Protection Windows Defender Exploit \> \> \> Guard** et choisissez Créer une stratégie **Exploit Guard.**
+1. Dans la console Microsoft Endpoint Configuration Manager, **\> \> accédez à La vue d’ensemble des ressources et de la conformité Endpoint Protection \> Windows Defender Exploit Guard** et choisissez Créer une stratégie Exploit Guard.
 
-    ![Capture d’System Center Configuration Manager1.](images/728c10ef26042bbdbcd270b6343f1a8a.png)
+   :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="Le System Center Configuration Manager1" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
 
-2. Sélectionnez **Protection du réseau.**
+2. Sélectionnez **Protection du réseau**.
 
-3. Définissez le paramètre sur **Audit et** cliquez sur **Suivant.**
+3. Définissez le paramètre sur **Audit,** puis cliquez sur **Suivant**.
 
-    ![Capture d’System Center Configuration Manager2.](images/c039b2e05dba1ade6fb4512456380c9f.png)
+   :::image type="content" source="images/c039b2e05dba1ade6fb4512456380c9f.png" alt-text="Le System Center Configuration Manager2" lightbox="images/c039b2e05dba1ade6fb4512456380c9f.png":::
 
-4. Confirmez la nouvelle stratégie Exploit Guard en cliquant sur **Suivant.**
+4. Confirmez la nouvelle stratégie Exploit Guard en cliquant sur **Suivant**.
 
-    ![Capture d’écran d’Exploit Guard policy1.](images/0a6536f2c4024c08709cac8fcf800060.png)
+   :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="La stratégie Exploit Guard1" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
 
-5. Une fois la stratégie créée, cliquez sur **Fermer.**
+5. Une fois la stratégie créée, cliquez sur **Fermer**.
 
-    ![Capture d’écran d’Exploit Guard policy2.](images/95d23a07c2c8bc79176788f28cef7557.png)
+   :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="La stratégie Exploit Guard2" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
 
-6. Cliquez avec le bouton droit sur la stratégie nouvellement créée et choisissez **Déployer.**
+6. Cliquez avec le bouton droit sur la stratégie nouvellement créée et choisissez **Déployer**.
 
-    ![Capture d’écran de Microsoft Endpoint Configuration Manager1.](images/8999dd697e3b495c04eb911f8b68a1ef.png)
+   :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="Le Microsoft Endpoint Configuration Manager-1" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
-7. Sélectionnez la stratégie sur la collection de Windows nouvellement créée et choisissez **OK.**
+7. Sélectionnez la stratégie sur la collection de Windows nouvellement créée et choisissez **OK**.
 
-    ![Capture d’écran de Microsoft Endpoint Configuration Manager2.](images/0ccfe3e803be4b56c668b220b51da7f7.png)
+   :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="Le Microsoft Endpoint Configuration Manager-2" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
 Après avoir effectué cette tâche, vous avez correctement configuré la Protection du réseau en mode audit.
 
 #### <a name="to-set-controlled-folder-access-rules-in-audit-mode"></a>Pour définir des règles d’accès contrôlé aux dossiers en mode Audit
 
-1. Dans la console Microsoft Endpoint Configuration Manager, accédez à La vue d’ensemble des ressources et de la   >    >  **conformité Endpoint Protection**  >  **Windows Defender Exploit Guard,** puis choisissez Créer une stratégie **Exploit Guard.**
+1. Dans la console Microsoft Endpoint Configuration Manager, accédez à **Assets and** **ComplianceOverview** >  >  **Endpoint Protection** >  **Windows Defender Exploit Guard**, puis choisissez Créer une stratégie **Exploit Guard**.
 
-    ![Capture d’écran de Microsoft Endpoint Configuration Manager3.](images/728c10ef26042bbdbcd270b6343f1a8a.png)
+   :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="Le Microsoft Endpoint Configuration Manager-3" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
 
-2. Sélectionnez **Accès contrôlé aux dossiers.**
+2. **Sélectionnez Accès contrôlé aux dossiers**.
 
-3. Définissez la configuration sur **Audit et** cliquez sur **Suivant.**
+3. Définissez la configuration sur **Audit,** puis cliquez sur **Suivant**.
 
-    ![Capture d’écran de Microsoft Endpoint Configuration Manager4.](images/a8b934dab2dbba289cf64fe30e0e8aa4.png)
+   :::image type="content" source="images/a8b934dab2dbba289cf64fe30e0e8aa4.png" alt-text="Le Microsoft Endpoint Configuration Manager-4" lightbox="images/a8b934dab2dbba289cf64fe30e0e8aa4.png":::
 
 4. Confirmez la nouvelle stratégie Exploit Guard en cliquant sur **Suivant**.
 
-    ![Capture d’écran de Microsoft Endpoint Configuration Manager5.](images/0a6536f2c4024c08709cac8fcf800060.png)
+   :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="Le Microsoft Endpoint Configuration Manager-5" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
 
-5. Une fois la stratégie créée, cliquez sur **Fermer.**
+5. Une fois la stratégie créée, cliquez sur **Fermer**.
 
-    ![Capture d’écran de Microsoft Endpoint Configuration Manager6.](images/95d23a07c2c8bc79176788f28cef7557.png)
+   :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="Le Microsoft Endpoint Configuration Manager-6" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
 
-6. Cliquez avec le bouton droit sur la stratégie nouvellement créée et choisissez **Déployer.**
+6. Cliquez avec le bouton droit sur la stratégie nouvellement créée et choisissez **Déployer**.
 
-    ![Capture d’écran de Microsoft Endpoint Configuration Manager7.](images/8999dd697e3b495c04eb911f8b68a1ef.png)
-
-
-7. Ciblez la stratégie sur la collection de Windows nouvellement créée, puis cliquez sur **OK.**
+   :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="Le Microsoft Endpoint Configuration Manager-7" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
 
-    ![Capture d’écran de Microsoft Endpoint Configuration Manager8.](images/0ccfe3e803be4b56c668b220b51da7f7.png)
+7. Ciblez la stratégie sur la collection de Windows nouvellement créée, puis cliquez sur **OK**.
+
+
+:::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="Le Microsoft Endpoint Configuration Manager-8" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
 Vous avez maintenant configuré l’accès contrôlé aux dossiers en mode audit.
 

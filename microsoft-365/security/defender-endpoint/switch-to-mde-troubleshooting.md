@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 03/28/2022
+ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 30218ea9b3b5ecbec20fdbc3364546d25c80bcab
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: 8334ce03bac5b7d4518433f83ab34d5f86e71339
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507511"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634160"
 ---
 # <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>Résolution des problèmes lors du basculement vers Microsoft Defender pour point de terminaison
 
@@ -41,28 +41,8 @@ Lorsque vous basculez vers Defender pour le point de terminaison, vous commencez
 
 Pour résoudre ce problème, prenez les mesures suivantes :
 
-1. [Définissez la clé de Registre DisableAntiSpyware sur false](#set-the-disableantispyware-registry-key-to-false).
-2. [Ajoutez Microsoft Defender pour point de terminaison à la liste d’exclusions](#add-microsoft-defender-for-endpoint-to-the-exclusion-list).
-3. [Définissez Antivirus Microsoft Defender le mode passif manuellement](#set-microsoft-defender-antivirus-to-passive-mode-manually).
-
-### <a name="set-the-disableantispyware-registry-key-to-false"></a>Définir la clé de Registre DisableAntiSpyware sur false
-
-La clé de Registre [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) a été utilisée dans le passé pour désactiver Antivirus Microsoft Defender et déployer un autre produit antivirus, tel que Mc Antivirus, Symantec ou d’autres. **En règle générale,** vous ne devez pas avoir cette clé de Registre sur vos appareils et points de terminaison Windows ; toutefois,  `DisableAntiSpyware` si vous avez configuré, voici comment définir sa valeur sur false :
-
-1. Sur votre Windows server, ouvrez l’Éditeur du Registre.
-
-2. Naviguer vers`HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
-
-3. Dans ce dossier, recherchez une entrée DWORD appelée **DisableAntiSpyware**.
-   - Si vous ne voyez pas cette entrée, vous êtes prêt.
-   - Si vous voyez **DisableAntiSpyware**, passer à l’étape 4.
-
-4. Cliquez avec le bouton droit sur le DWORD DisableAntiSpyware, puis choisissez **Modifier**.
-
-5. Définissez la valeur sur `0`. (Cette action définit la valeur de la clé de Registre sur *false*.)
-
-> [!TIP]
-> Pour en savoir plus sur cette clé de Registre, voir [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware).
+1. [Ajoutez Microsoft Defender pour point de terminaison à la liste d’exclusions](#add-microsoft-defender-for-endpoint-to-the-exclusion-list).
+2. [Définissez Antivirus Microsoft Defender le mode passif manuellement](#set-microsoft-defender-antivirus-to-passive-mode-manually).
 
 ### <a name="add-microsoft-defender-for-endpoint-to-the-exclusion-list"></a>Ajouter Microsoft Defender pour point de terminaison à la liste d’exclusions
 

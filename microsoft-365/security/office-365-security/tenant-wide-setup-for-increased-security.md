@@ -21,12 +21,12 @@ ms.custom:
 description: Cette rubrique vous dirige vers la configuration recommandée pour les paramètres à l’échelle du client qui affectent la sécurité de Microsoft 365 environnement.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94da7316c5e749cf6dcc5e038c185bea4790765f
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 96f31d0fb9eb3ef9d6eaec396fdac8fe96b96c3d
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682876"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476354"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurer votre locataire Microsoft 365 pour renforcer la sécurité
 
@@ -125,10 +125,10 @@ Vous pouvez également utiliser Microsoft Defender pour les applications cloud p
 Plus d’informations :
 
 - [Déployer Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security)
-- [Plus d’informations sur Microsoft Defender pour les applications cloud](https://www.microsoft.com/cloud-platform/cloud-app-security)
+- [Plus d’informations sur Microsoft Defender for Cloud Apps](https://www.microsoft.com/cloud-platform/cloud-app-security)
 - [Qu’est-ce que Defender pour les applications cloud ?](/cloud-app-security/what-is-cloud-app-security)
 
-![Tableau de bord Defender pour les applications cloud.](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
+:::image type="content" source="../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png" alt-text="Tableau de bord Defender pour les applications cloud" lightbox="../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png":::
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 

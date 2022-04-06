@@ -18,12 +18,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le hameçonnage signalés par les utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 525b761b09a68c3e44443cec7bf718d9eaa4d8d1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 9a38943b492e6bdae151a7906d1c8146a649949d
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327208"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634028"
 ---
 # <a name="user-reported-message-settings"></a>Paramètres des messages signalés par l’utilisateur
 
@@ -32,7 +32,7 @@ ms.locfileid: "63327208"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres Exchange Online, vous pouvez spécifier une boîte aux lettres pour recevoir des messages que les utilisateurs signalent comme malveillants ou non malveillants. Lorsque les utilisateurs signalent des messages à l’aide des différentes options de création de rapports, vous pouvez utiliser cette boîte aux lettres pour intercepter des messages (envoyer à la boîte aux lettres personnalisée uniquement) ou recevoir des copies de messages (envoyer à la boîte aux lettres personnalisée et Microsoft). Cette fonctionnalité fonctionne avec les options de rapport de message suivantes :
 
@@ -71,7 +71,7 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
 
   - **Administrateur de la gestion** **de l’organisation** ou de la sécurité [dans les autorisations du Microsoft 365 Defender web](permissions-microsoft-365-security-center.md).
 
-- Vous devez accéder à Exchange Online PowerShell. Si le compte que vous essayez d’utiliser n’a pas accès à Exchange Online PowerShell, vous recevrez une erreur qui ressemble à ceci lorsque vous spécifiez la boîte aux lettres de soumission :
+- Vous devez accéder à Exchange Online PowerShell. Si le compte que vous essayez d’utiliser n’a pas accès à Exchange Online PowerShell, vous recevrez une erreur de ce genre lors de la spécification de la boîte aux lettres de soumission :
 
   > Spécifier une adresse de messagerie dans votre domaine
 
@@ -141,10 +141,10 @@ Pour identifier correctement les messages joints d’origine, les messages envoy
 Si vous souhaitez spécifier la raison signalée des messages joints d’origine, les messages envoyés à la boîte aux lettres personnalisée (ne modifiez pas la pièce jointe) doivent commencer par l’un des préfixes suivants dans l’objet (titre de l’enveloppe) :
 
 - 1| ou courrier indésirable :
-- 2| ou non indésirable
-- 3| ou hameçonnage
+- 2| ou pas de courrier indésirable :
+- 3| ou hameçonnage :
 
-Par exemple :
+Par exemple :
 
 `3|This part is ignored by the system` <br>
 `Not Junk:This part of the subject is ignored as well`

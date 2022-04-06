@@ -17,22 +17,43 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez les nouveautés du gestionnaire de conformité et les nouveautés à venir. Découvrez les évaluations mises à jour, les nouveaux modèles d’évaluation, les nouvelles actions, etc.
-ms.openlocfilehash: 48aed2e173231e3945bcdd3de73052de9f970a5b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0f368be06b33f485ff687c998615fb8578845daf
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317652"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634204"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Nouveautés du Gestionnaire de conformité Microsoft
 
 **Dans cet article :** Découvrez les mises à jour récentes dans le Gestionnaire de conformité.
 
-## <a name="february-2022"></a>Février 2022
+## <a name="march-2022"></a>Mars 2022
+
+### <a name="new-templates-available"></a>Nouveaux modèles disponibles
+
+Le Gestionnaire de conformité a publié les nouveaux modèles d’évaluation suivants :
+
+**Global**
+- ISO 37301
+- NIST 800-207 - Architecture Confiance nulle de l’architecture
+- SIG 2022
+
+**Gouvernement américain**
+- CMMC v2 Niveau 1
+- CMMC v2 Niveau 2
+
+**Amérique du Nord**
+- Information Security Management Act - Province de Colombie-Britannique, CA
+
+Consultez notre [liste complète des modèles d’évaluation](compliance-manager-templates-list.md).
 
 ### <a name="continuous-compliance-assessment-of-improvement-actions"></a>Évaluation continue de la conformité des actions d’amélioration
 
 Nous ajoutons des tests automatisés et la génération de preuves pour plus de 35 actions d’amélioration dans le Gestionnaire de conformité qui n’étaient pas précédemment couvertes par le Niveau de sécurité. Grâce à l’évaluation continue de la conformité, vous pouvez recevoir des mises à jour sur les actions d’amélioration que vous avez effectuées si elles sont pertinentes pour vos évaluations de conformité et si vous êtes autorisé à accéder aux solutions appropriées. L’évaluation continue de la conformité donne également aux utilisateurs une visibilité sur la logique de notation de vos actions d’amélioration et fournit des informations et des preuves sur la raison pour laquelle vous avez reçu un certain score. Cette fonctionnalité fonctionne parallèlement aux intégrations existantes avec Microsoft 365 Secure Score, et toutes les actions automatisées que vous avez précédemment configurées continueront de fonctionner telle quelle. En savoir plus sur [les paramètres de test automatisés](compliance-manager-setup.md#set-up-automated-testing).
+
+## <a name="february-2022"></a>Février 2022
+
 ### <a name="alerts-and-alert-policies"></a>Alertes et stratégies d’alerte
 
 Les utilisateurs peuvent désormais définir des alertes pour les modifications apportées au Gestionnaire de conformité qu’une organisation souhaite suivre. À l’aide d’un Assistant d’installation facile, vous pouvez créer des stratégies d’alerte pour créer des notifications lorsque les types d’événements suivants se produisent : une modification du score d’action d’amélioration, une modification d’affectation d’action d’amélioration, un changement d’état de test ou d’implémentation dans une action d’amélioration et un téléchargement ou suppression de fichiers dans l’onglet Documents d’une action d’amélioration. Pour en savoir plus, consultez les [alertes et les stratégies d’alerte du Gestionnaire de conformité](compliance-manager-alert-policies.md).
@@ -43,18 +64,18 @@ Votre organisation peut désormais obtenir des recommandations du Gestionnaire d
 
 ## <a name="november-2021"></a>Novembre 2021
 
-### <a name="zero-trust-integration-for-the-data-protection-baseline-template"></a>Intégration de confiance zéro pour le modèle de référence de la protection des données
+### <a name="zero-trust-integration-for-the-data-protection-baseline-template"></a>Confiance nulle’intégration du modèle de base de la protection des données
 
-La confiance zéro est une approche proactive et intégrée de la sécurité sur toutes les couches du patrimoine numérique qui vérifie explicitement et en permanence chaque transaction, déclare le moindre privilège et s’appuie sur l’intelligence, la détection avancée et la réponse en temps réel aux menaces. Le modèle de base de la protection des données du Gestionnaire de conformité, inclus pour tous les utilisateurs, intègre désormais 57 nouveaux contrôles et 36 nouvelles actions pour la confiance zéro alignées sur les familles de contrôles suivantes :
+Confiance nulle est une approche proactive et intégrée de la sécurité sur toutes les couches du patrimoine numérique qui vérifie explicitement et en permanence chaque transaction, déclare le moindre privilège et s’appuie sur l’intelligence, la détection avancée et la réponse en temps réel aux menaces. Le modèle de base de la protection des données du Gestionnaire de conformité, inclus pour tous les utilisateurs, intègre désormais 57 nouveaux contrôles et 36 nouvelles actions pour les Confiance nulle alignées sur les familles de contrôles suivantes :
 
-- Application de confiance zéro
-- Conseils de développement d’application De confiance zéro
-- Point de terminaison d’une confiance zéro
-- Données de confiance zéro
-- Identité de confiance zéro
-- Infrastructure de confiance zéro
-- Réseau de confiance zéro
-- Visibilité, automatisation et orchestration de confiance zéro
+- Confiance nulle Application
+- Confiance nulle de développement d’applications
+- Confiance nulle point de terminaison
+- Confiance nulle données
+- Confiance nulle Identity
+- Confiance nulle infrastructure
+- Confiance nulle réseau
+- Confiance nulle visibilité, automatisation et orchestration
 
 ### <a name="new-preview-templates"></a>Nouveaux modèles d’aperçu
 
@@ -92,7 +113,7 @@ Le Gestionnaire de conformité peut désormais travailler de pair avec Microsoft
 
 Nous avons ajouté la possibilité de créer des évaluations pour les produits autres que Microsoft 365, en fonction des nouvelles versions universelles de nos modèles. Pour en savoir plus, commencez [par utiliser les modèles d’évaluation](compliance-manager-templates.md).
 
-## <a name="may-2021"></a>Mai 2021
+## <a name="may-2021"></a>Mai 2021
 
 ### <a name="new-assessment-templates"></a>Nouveaux modèles d’évaluation
 
@@ -111,7 +132,7 @@ Consultez la liste complète des [modèles d’évaluation](compliance-manager-t
 
 Le Gestionnaire de conformité est désormais disponible pour les clients doD du gouvernement américain, en plus des clients modérés et Cloud de la communauté du secteur public du gouvernement américain Community (Cloud de la communauté du secteur public).
 
-## <a name="march-2021"></a>mars 2021
+## <a name="march-2021"></a>Mars 2021
 
 ### <a name="active-and-inactive-templates"></a>Modèles actifs et inactifs
 

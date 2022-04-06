@@ -1,5 +1,5 @@
 ---
-title: 'Stratégies de document sécurisées recommandées : Microsoft 365 pour les | Microsoft Docs'
+title: 'Stratégies de document sécurisées recommandées : Microsoft 365 pour les | Documents Microsoft'
 description: Décrit les recommandations de Microsoft sur l’application de stratégies de sécurisation de l’accès aux fichiers SharePoint.
 ms.author: dansimp
 author: dansimp
@@ -19,16 +19,16 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 6effe1ffefaf7faeb90258163c539cdddcec2679
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 4425ee0a4ee9abb7c87be7ed45d9f5c94b84cdc6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569994"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477014"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Recommandations de stratégie pour la sécurisation SharePoint sites et fichiers
 
-Cet article explique comment implémenter les stratégies Confiance nulle’identité et d’accès aux appareils recommandées pour protéger SharePoint et OneDrive Entreprise. Ces instructions s’appuient sur les stratégies [communes d’accès aux identités et aux appareils](identity-access-policies.md).
+Cet article explique comment implémenter les stratégies recommandées d’accès aux identités et aux appareils de confiance zéro pour protéger les SharePoint et OneDrive Entreprise. Ces instructions s’appuient sur les stratégies [communes d’accès aux identités et aux appareils](identity-access-policies.md).
 
 Ces recommandations sont basées sur trois niveaux différents de sécurité et de protection pour les fichiers SharePoint qui peuvent être appliqués en fonction de la granularité de vos **besoins : point** de **départ, entreprise** et sécurité **spécialisée.** Vous pouvez en savoir plus sur ces niveaux de sécurité et les systèmes d’exploitation clients recommandés, référencés par ces recommandations [dans la vue d’ensemble](microsoft-365-policies-configurations.md).
 
@@ -60,7 +60,7 @@ Le tableau suivant répertorie les stratégies que vous devez réviser et mettre
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint"></a>Utiliser les restrictions appliquées par l’application dans SharePoint
 
-Si vous implémentez des contrôles d’accès dans SharePoint, des stratégies d’accès conditionnel sont créées dans Azure AD pour indiquer à Azure AD d’appliquer les stratégies que vous configurez dans SharePoint. Par défaut, cette stratégie s’applique à tous les utilisateurs, mais affecte uniquement l’accès aux sites que vous spécifiez à l’aide de PowerShell lorsque vous créez les contrôles d’accès dans SharePoint. La stratégie peut également être étendue à des utilisateurs, des groupes ou des sites spécifiques.
+Si vous implémentez des contrôles d’accès dans SharePoint, vous devez créer cette stratégie d’accès conditionnel dans Azure AD pour indiquer à Azure AD d’appliquer les stratégies que vous configurez dans SharePoint. Cette stratégie s’applique à tous les utilisateurs, mais affecte uniquement l’accès aux sites que vous spécifiez à l’aide de PowerShell lorsque vous créez les contrôles d’accès dans SharePoint.
 
 Pour configurer cette stratégie, voir « Bloquer ou limiter l’accès à des collections de sites SharePoint ou des comptes OneDrive spécifiques » dans Contrôler l’accès à partir d’appareils non [utilisés](/sharepoint/control-access-from-unmanaged-devices).
 

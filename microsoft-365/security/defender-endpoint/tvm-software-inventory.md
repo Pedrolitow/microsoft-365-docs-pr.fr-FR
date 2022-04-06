@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e6bf614730caa9060a334c0a01c2dfe64b24df78
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cbd4634e779fe2bf853aaf014b59b1e7e1c1928f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325269"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470040"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>Inventaire logiciel : Gestion des menaces et des vulnérabilités
 
@@ -32,7 +32,7 @@ ms.locfileid: "63325269"
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -66,7 +66,7 @@ La **page Inventaire** logiciel s’ouvre avec une liste des logiciels installé
 
 Par défaut, l’affichage est filtré par **code produit (CPE) : Disponible**. Vous pouvez également filtrer l’affichage liste en fonction des faiblesses trouvées dans le logiciel, des menaces qui lui sont associées et des balises telles que si le logiciel a atteint la fin de la prise en charge.
 
-:::image type="content" alt-text="Exemple de page d’accueil pour l’inventaire logiciel." source="images/software-inventory-page.png" lightbox="images/tvm-software-inventory.png":::
+:::image type="content" source="images/tvm-software-inventory.png" alt-text="Page d’accueil de l’inventaire logiciel" lightbox="images/tvm-software-inventory.png":::
 
 Sélectionnez le logiciel que vous souhaitez examiner. Un panneau volant s’ouvre avec une vue plus compacte des informations sur la page. Vous pouvez soit approfondir l’examen et sélectionner la **page Ouvrir un** logiciel, soit signaler toute incohérence technique en sélectionnant **l’imprécision du rapport**.
 
@@ -74,7 +74,7 @@ Sélectionnez le logiciel que vous souhaitez examiner. Un panneau volant s’ouv
 
 Les logiciels qui ne sont actuellement pas pris en charge par les menaces & gestion des vulnérabilités peuvent être présents dans la page d’inventaire logiciel. Comme elle n’est pas prise en charge, seules des données limitées seront disponibles. Filtrez selon les logiciels non pris en place avec l’option « Non disponible » dans la section « Faiblesse ».
 
-:::image type="content" alt-text="Filtre logiciel non pris en temps et place." source="images/tvm-unsupported-software-filter.png" lightbox="images/tvm-unsupported-software-filter.png":::
+:::image type="content" source="images/tvm-unsupported-software-filter.png" alt-text="Filtre logiciel non pris en" lightbox="images/tvm-unsupported-software-filter.png":::
 
 Les informations suivantes indiquent que les logiciels ne sont pas pris en charge :
 
@@ -97,7 +97,7 @@ Voir la preuve de l’endroit où nous avons détecté un logiciel spécifique s
 
 Sélectionnez un nom de logiciel pour ouvrir le volant et recherchez la section appelée « Preuve logicielle ».
 
-:::image type="content" alt-text="Exemple de preuve logicielle de Windows 10 de la liste des appareils, montrant le chemin d’accès au Registre des preuves logicielles." source="images/tvm-software-evidence.png" lightbox="images/tvm-software-evidence.png":::
+:::image type="content" source="images/tvm-software-evidence.png" alt-text="Le Windows 10 de la liste des appareils" lightbox="images/tvm-software-evidence.png":::
 
 ## <a name="software-pages"></a>Pages logicielles
 
@@ -117,7 +117,7 @@ Vous pouvez afficher les pages logicielles de différentes manières :
   - Les appareils sur qui le logiciel est installé (ainsi que le nom de l’appareil, le domaine, le système d’exploitation, et bien plus encore).
   - Liste des versions des logiciels (y compris le nombre d’appareils sur lesquels la version est installée, le nombre de vulnérabilités découvertes et les noms des appareils installés).
 
-    :::image type="content" alt-text="Page d’exemples de logiciels Visual Studio 2017 avec les détails logiciels, les faiblesses, les appareils exposés, etc." source="images/tvm-software-page-example.png" lightbox="images/tvm-software-page-example.png":::
+    :::image type="content" source="images/tvm-software-page-example.png" alt-text="La Visual Studio 2017 avec les détails logiciels, les faiblesses, les appareils exposés, et bien plus encore" lightbox="images/tvm-software-page-example.png":::
 
 ## <a name="report-inaccuracy"></a>Inaccuracy de rapport
 

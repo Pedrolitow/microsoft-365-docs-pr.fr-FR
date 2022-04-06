@@ -14,12 +14,12 @@ description: Suivez le chemin d’accès d’un message entrant via la pile de f
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 62d7ac9f13f59fce3b635f6d1dace2f22ee7f503
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: e7be5c66e0ca3841a8bc4fd76555feaeafb1bd17
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683820"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469028"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Protection contre les menaces étape par étape dans Microsoft Defender pour Office 365
 
@@ -34,7 +34,7 @@ Malheureusement, les blocs Edge qui étaient *une fois* critiques sont maintenan
 
 Les blocs Edge sont conçus pour être automatiques. Dans le cas d’un faux positif, les expéditeurs sont avertis et leur dire comment résoudre leur problème. Les connecteurs de partenaires de confiance avec une réputation limitée peuvent garantir la livrabilité ou des substitutions temporaires peuvent être mises en place lors de l’intégration de nouveaux points de terminaison.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="La phase 1 du filtrage dans Defender pour Office 365 est La Protection Edge.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="Le filtrage Phase-1 dans Defender pour les Office 365" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png":::
 
 1. **La limitation du** réseau protège l’infrastructure Office 365 et les clients contre les attaques par déni de service (DOS) en limitant le nombre de messages qui peuvent être envoyés par un ensemble spécifique d’infrastructure.
 
@@ -52,7 +52,7 @@ Les blocs Edge sont conçus pour être automatiques. Dans le cas d’un faux pos
 
 Les fonctionnalités d’intelligence de l’expéditeur sont essentielles pour détecter le courrier indésirable, le courrier indésirable, l’emprunt d’identité et les messages usurpés non autorisés, et également prendre en compte la détection du hameçonnage. La plupart de ces fonctionnalités sont configurables individuellement.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="La phase 2 du filtrage dans Defender pour Office 365 est l’intelligence de l’expéditeur.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="La phase 2 du filtrage dans Defender pour Office 365'intelligence de l’expéditeur" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png":::
 
 1. **Les déclencheurs et** alertes de détection de compromission de compte sont déclenchés lorsqu’un compte présente un comportement anormal, cohérent avec la compromission. Dans certains cas, le compte d’utilisateur est bloqué et empêché d’envoyer d’autres messages électroniques jusqu’à ce que le problème soit résolu par l’équipe des opérations de sécurité d’une organisation.
 
@@ -82,7 +82,7 @@ Les fonctionnalités d’intelligence de l’expéditeur sont essentielles pour 
 
 Dans cette phase, la pile de filtrage commence à gérer le contenu spécifique du courrier, y compris ses liens hypertexte et ses pièces jointes.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="La phase 3 du filtrage dans MDO est le filtrage de contenu.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="Le filtrage Phase-3 dans MDO est le filtrage de contenu" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png":::
 
 1. **Les règles de** transport (également appelées règles de flux de messagerie ou règles de transport Exchange) permettent à un administrateur d’prendre un large éventail d’actions lorsqu’une plage de conditions également étendue est remplie pour un message. Tous les messages qui circulent dans votre organisation sont évalués par rapport aux règles de flux de messagerie/règles de transport activées.
 
@@ -110,7 +110,7 @@ Dans cette phase, la pile de filtrage commence à gérer le contenu spécifique 
 
 La dernière étape a lieu après la remise du courrier ou du fichier, agissant sur le courrier qui se trouve dans différentes boîtes aux lettres et fichiers et liens qui apparaissent dans les clients tels que Microsoft Teams.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="La phase 4 du filtrage dans Defender pour Office 365 protection post-remise.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Le filtrage Phase-4 dans Defender pour Office 365 protection post-remise" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png":::
 
 1. Les **Liens fiables** sont la protection au moment du clic de Defender pour Office 365. Chaque URL de chaque message est enveloppée pour pointer vers les serveurs de liens Coffre Microsoft. Lorsqu’un utilisateur clique sur une URL, elle est vérifiée par rapport à la dernière réputation, avant que l’utilisateur soit redirigé vers le site cible. L’URL est en bac à sable asynchrone pour mettre à jour sa réputation.
 
@@ -134,7 +134,7 @@ La dernière étape a lieu après la remise du courrier ou du fichier, agissant 
 
 Le diagramme final (comme pour toutes les parties du diagramme qui le compose) peut être changé à mesure que le produit *croît et se développe*. Signetz cette page et **utilisez l’option** de commentaires que vous trouverez en bas si vous devez demander après les mises à jour. Pour vos enregistrements, il s’agit de la pile avec toutes les phases dans l’ordre :
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Toutes les phases de filtrage dans Defender Office 365 dans l’ordre, 1 à 4.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Toutes les phases de filtrage dans Defender Office 365 dans l’ordre, de 1 à 4" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png":::
 
 ## <a name="more-information"></a>Plus d’informations
 

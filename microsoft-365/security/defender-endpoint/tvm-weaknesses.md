@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 23b0235382e748071f0d8e060e15624b5332326d
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: a2f3db3a28755c5e2bce46f7134eb1c977d1aa0a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62887305"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476640"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnérabilités dans mon organisation : Gestion des menaces et des vulnérabilités
 
@@ -37,7 +37,7 @@ ms.locfileid: "62887305"
 > [!IMPORTANT]
 > Les menaces et gestion des vulnérabilités peuvent aider à identifier les vulnérabilités Log4j dans les applications et les composants. [En savoir plus](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM).
 
-Les menaces et gestion des vulnérabilités utilisent les mêmes signaux dans Defender pour la protection des points de terminaison pour analyser et détecter les vulnérabilités.
+Les menaces et gestion des vulnérabilités utilisent les mêmes signaux dans Defender pour la protection des points de terminaison de point de terminaison pour analyser et détecter les vulnérabilités.
 
 La page **Faiblesses** répertorie les vulnérabilités logicielles que vos appareils sont exposés en répertoriant l’ID CVE (Common Vulnerabilities and Exposures). Vous pouvez également afficher la gravité, la notation des vulnérabilités courantes (CVSS), la prévalence dans votre organisation, la violation correspondante, les informations sur les menaces, etc.
 
@@ -51,7 +51,7 @@ La page **Faiblesses** répertorie les vulnérabilités logicielles que vos appa
 
 Accédez à la page Faiblesses de différentes manières :
 
-- Sélection des **faiblesses dans le** menu **de navigation gestion** des vulnérabilités dans [le portail Microsoft 365 Defender](portal-overview.md)
+- Sélection des **faiblesses dans le** menu **de navigation gestion** des vulnérabilités du [portail Microsoft 365 Defender](portal-overview.md)
 - Recherche globale
 
 ### <a name="navigation-menu"></a>Menu de navigation
@@ -62,7 +62,9 @@ Go to the **Vulnerability management** navigation menu and select **Weaknesses**
 
 1. Go to the global search drop-down menu.
 2. **Sélectionnez Vulnérabilité et** clé dans l’ID CVE (Common Vulnerabilities and Exposures) que vous recherchez, puis sélectionnez l’icône de recherche. La page **Faiblesses** s’ouvre avec les informations CVE que vous recherchez.
-![Zone de recherche globale avec l’option « vulnérabilité » sélectionnée et un exemple CVE.](images/tvm-vuln-globalsearch.png)
+
+:::image type="content" source="images/tvm-vuln-globalsearch.png" alt-text="Zone de recherche globale avec la vulnérabilité de l’option de la zone de dropdown sélectionnée" lightbox="images/tvm-vuln-globalsearch.png":::
+
 3. Sélectionnez la CVE pour ouvrir un panneau volant avec plus d’informations, notamment la description de la vulnérabilité, les détails, les informations sur les menaces et les appareils exposés.
 
 Pour voir le reste des vulnérabilités dans la page **Faiblesses** , tapez CVE, puis sélectionnez rechercher.
@@ -71,7 +73,7 @@ Pour voir le reste des vulnérabilités dans la page **Faiblesses** , tapez CVE,
 
 Corriger les vulnérabilités des appareils exposés afin de réduire les risques pour vos ressources et votre organisation. Si la **colonne Appareils exposés affiche** 0, cela signifie que vous n’êtes pas en danger.
 
-![Page d’accueil des faiblesses.](images/tvm-weaknesses-overview.png)
+:::image type="content" source="images/tvm-weaknesses-overview.png" alt-text="Page d’accueil Faiblesses" lightbox="images/tvm-weaknesses-overview.png":::
 
 ### <a name="breach-and-threat-insights"></a>Informations sur les violations et les menaces
 
@@ -94,7 +96,7 @@ Si vous sélectionnez une CVE, un panneau volant s’ouvre avec plus d’informa
 - La catégorie « Fonctionnalité du système d’exploitation » s’affiche dans les scénarios pertinents
 - Vous pouvez passer à la recommandation de sécurité associée pour chaque CVE avec appareil exposé
 
- ![Exemple de volant de faiblesse.](images/tvm-weakness-flyout400.png)
+ :::image type="content" source="images/tvm-weakness-flyout400.png" alt-text="Page description de la vulnérabilité" lightbox="images/tvm-weakness-flyout400.png":::
 
 ### <a name="software-that-isnt-supported"></a>Logiciel non pris en charge
 
@@ -110,7 +112,7 @@ Les informations sur l’appareil exposé ne seront pas disponibles pour les VC 
 
 1. Go to the [Gestion des menaces et des vulnérabilités dashboard](tvm-dashboard-insights.md) and scroll down to the **Top vulnerable software** widget. Vous verrez le nombre de vulnérabilités trouvées dans chaque logiciel, ainsi que des informations sur les menaces et une vue d’exposition de haut niveau de l’appareil au fil du temps.
 
-    ![Carte logicielle la plus vulnérable avec quatre colonnes : logiciels, faiblesses, menaces, appareils exposés.](images/tvm-top-vulnerable-software500.png)
+   :::image type="content" source="images/tvm-top-vulnerable-software500.png" alt-text="Colonne Faiblesses dans la page Des logiciels les plus vulnérables" lightbox="images/tvm-top-vulnerable-software500.png":::
 
 2. Sélectionnez le logiciel que vous souhaitez examiner pour aller à une page d’exercice.
 
@@ -118,7 +120,7 @@ Les informations sur l’appareil exposé ne seront pas disponibles pour les VC 
 
 4. Sélectionnez la vulnérabilité que vous souhaitez examiner pour plus d’informations sur les détails de la vulnérabilité
 
-    ![Windows vue d’ensemble de l’accès à l’avant vers le bas pour Server 2019.](images/windows-server-drilldown.png)
+   :::image type="content" source="images/windows-server-drilldown.png" alt-text="Vue d Windows exerreur vers le bas de Windows Server 2019" lightbox="images/windows-server-drilldown.png":::
 
 ### <a name="discover-vulnerabilities-in-the-device-page"></a>Découvrir les vulnérabilités dans la page d’appareil
 
@@ -128,13 +130,13 @@ Afficher les informations sur les faiblesses associées dans la page de l’appa
 
 2. Dans la page **Inventaire des** appareils, sélectionnez le nom de l’appareil que vous souhaitez examiner.
 
-    ![Liste des appareils avec l’appareil sélectionné à examiner.](images/tvm_machinetoinvestigate.png)
+   :::image type="content" source="images/tvm_machinetoinvestigate.png" alt-text="Liste des appareils avec un appareil sélectionné à examiner" lightbox="images/tvm_machinetoinvestigate.png":::
 
 3. La page de l’appareil s’ouvre avec des détails et des options de réponse pour l’appareil que vous souhaitez examiner.
 
 4. Sélectionnez **vulnérabilités découvertes**.
 
-   :::image type="content" alt-text="Page Appareil avec détails et options de réponse." source="images/tvm-discovered-vulnerabilities.png" lightbox="images/tvm-discovered-vulnerabilities.png":::
+   :::image type="content" source="images/tvm-discovered-vulnerabilities.png" alt-text="Page Appareil avec les détails et les options de réponse." lightbox="images/tvm-discovered-vulnerabilities.png":::
 
 5. Sélectionnez la vulnérabilité que vous souhaitez examiner pour ouvrir un panneau volant avec les détails CVE, tels que : description de la vulnérabilité, informations sur les menaces et logique de détection.
 
@@ -144,7 +146,7 @@ Comme pour la preuve logicielle, nous montrons maintenant la logique de détecti
 
 La catégorie « Fonctionnalité du système d’exploitation » est également affichée dans les scénarios pertinents. Une CVE affecterait les appareils qui exécutent un système d’exploitation vulnérable uniquement si un composant de système d’exploitation spécifique est activé. Supposons que Windows Server 2019 ou Windows Server 2022 présente une vulnérabilité dans son composant DNS. Avec cette nouvelle fonctionnalité, nous n’attacherons cette CVE qu’aux appareils Windows Server 2019 et Windows Server 2022 avec la fonctionnalité DNS activée dans leur système d’exploitation.
 
-:::image type="content" alt-text="Exemple de logique de détection qui répertorie les logiciels détectés sur l’appareil et les ko." source="images/tvm-cve-detection-logic.png":::
+:::image type="content" source="images/tvm-cve-detection-logic.png" alt-text="Exemple de logique de détection qui répertorie les logiciels détectés sur l’appareil et les ko" lightbox="images/tvm-cve-detection-logic.png":::
 
 ## <a name="report-inaccuracy"></a>Inaccuracy de rapport
 

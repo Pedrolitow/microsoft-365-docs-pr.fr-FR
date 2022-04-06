@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment utiliser des canaux partagés avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: 1e14e83f82574f0ef944db56929fda8aded90d16
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 9fa58be15eab0844fa92d408320902c23f36de93
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63715992"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468880"
 ---
 # <a name="collaborate-with-external-participants-in-a-channel"></a>Collaborer avec des participants externes dans un canal
 
@@ -84,7 +84,7 @@ Pour configurer les paramètres entrants d’une organisation
 1. Dans [Azure Active Directory](https://aad.portal.azure.com), sélectionnez **Identités externes**, puis sélectionnez **Paramètres d’accès entre locataires (préversion)**.
 1. Sélectionnez le lien d’accès entrant pour l’organisation que vous souhaitez modifier.
 1. Sous l’onglet **Connexion directe B2B**, choisissez **Personnaliser les paramètres**.
-1. Sous l’onglet **Utilisateurs et groupes externes** , choisissez **Autoriser l’accès** et **Tous les utilisateurs et groupes**.
+1. Sous l’onglet **Utilisateurs et groupes externes** , choisissez **Autoriser l’accès** et **Tous les utilisateurs et groupes**. (Vous pouvez choisir **Sélectionner des utilisateurs et des groupes externes** si vous souhaitez limiter l’accès à des utilisateurs et groupes spécifiques, tels que ceux qui ont signé un accord de confidentialité.)
 1. Sous l’onglet **Applications**, sélectionnez **Autoriser l’accès** et **Sélectionner des applications**.
 1. Sélectionnez **Ajouter des applications Microsoft**.
 1. Sélectionnez l’application **Office 365**, puis choisissez **Sélectionner**.

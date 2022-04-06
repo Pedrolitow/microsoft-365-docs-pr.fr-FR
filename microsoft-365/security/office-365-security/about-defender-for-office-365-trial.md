@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent en savoir plus sur le mode d’essai de Microsoft Defender pour Office 365
-ms.openlocfilehash: 40ad151dfa4ee26bf1e6177dda170cc2998c7c7e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: f1bb280502908143171cbc7b08df7080d0040df2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683864"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477102"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>À propos de la version d’Office 365 Microsoft Defender
 
@@ -74,7 +74,7 @@ Dans le cadre de la configuration de la version d’essai, les licences Defender
 
 La carte de licence de l’essai affiche les informations suivantes :
 
-![La carte de licence dans microsoft Defender pour Office 365 d’essai.](../../media/mdo-trial-licensing-card.png)
+:::image type="content" source="../../media/mdo-trial-licensing-card.png" alt-text="La carte de licence dans la version d’Office 365 Microsoft Defender" lightbox="../../media/mdo-trial-licensing-card.png":::
 
 - **Section Type d’utilisation** :
   - **Version** d’essai : nombre de licences d’essai Defender Office 365 disponibles.
@@ -126,7 +126,7 @@ Defender pour Office 365 aide les organisations à sécuriser leur entreprise en
 
 Vous pouvez également en savoir plus sur Defender for Office 365 dans [ce guide interactif](https://aka.ms/MS365D.InteractiveGuide).
 
-![Diagramme conceptuel Microsoft Defender Office 365'équipe.](../../media/microsoft-defender-for-office-365.png)
+:::image type="content" source="../../media/microsoft-defender-for-office-365.png" alt-text="Diagramme conceptuel De Microsoft Defender Office 365" lightbox="../../media/microsoft-defender-for-office-365.png":::
 
 ### <a name="prevention"></a>Prévention
 

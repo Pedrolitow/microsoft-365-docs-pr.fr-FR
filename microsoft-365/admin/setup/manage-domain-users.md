@@ -24,13 +24,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Synchronisez les utilisateurs contrôlés par domaine avec Microsoft 365 entreprise.
-ms.openlocfilehash: e49a3095cff77692e58d1b70ca1169dc8fd4802a
-ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
+description: Synchronisez les utilisateurs contrôlés par un domaine avec Microsoft 365 entreprise.
+ms.openlocfilehash: 6a00b76113a750f306ef6545f1b38fcf9f9b2202
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62202064"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634534"
 ---
 # <a name="synchronize-domain-users-to-microsoft-365"></a>Synchroniser les utilisateurs de domaine avec Microsoft 365
 
@@ -38,23 +38,23 @@ ms.locfileid: "62202064"
 
 Avant de synchroniser vos utilisateurs et ordinateurs à partir du domaine Active Directory local, examinez Préparer la synchronisation d’annuaires [Microsoft 365](../../enterprise/prepare-for-directory-synchronization.md). En particulier :
 
-   - Assurez-vous qu’il n’existe aucun doublon dans votre répertoire pour les attributs suivants : **mail,** **proxyAddresses** et **userPrincipalName**. Ces valeurs doivent être uniques et les doublons doivent être supprimés.
+   - Assurez-vous qu’il n’existe aucun doublon dans votre répertoire pour les attributs suivants : **mail**, **proxyAddresses** et **userPrincipalName**. Ces valeurs doivent être uniques et les doublons doivent être supprimés.
    
-   - Nous vous recommandons de configurer l’attribut **userPrincipalName** (UPN) pour chaque compte d’utilisateur local afin qu’il corresponde à l’adresse de messagerie principale correspondant à l’utilisateur Microsoft 365 sous licence. Par exemple : *mary.shelley@contoso.com* au lieu *de mary@contoso.local*
+   - Nous vous recommandons de configurer l’attribut **userPrincipalName** (UPN) pour chaque compte d’utilisateur local afin qu’il corresponde à l’adresse de messagerie principale correspondant à l’utilisateur Microsoft 365 sous licence. Par exemple : *mary.shelley@contoso.com* au lieu de *mary@contoso.local*
    
-   - Si le domaine Active Directory se termine par un suffixe non routable tel que *.local* ou *.lan,* au lieu d’un suffixe routable Internet tel *que .com* ou *.org,* ajustez d’abord le suffixe UPN des comptes d’utilisateurs locaux, comme décrit dans Préparer un domaine [non routable](../../enterprise/prepare-a-non-routable-domain-for-directory-synchronization.md)pour la synchronisation d’annuaires. 
+   - Si le domaine Active Directory se termine par un suffixe non routable tel que *.local* ou *.lan*, au lieu d’un suffixe routable Internet tel *que .com* ou *.org*, ajustez d’abord le suffixe UPN des comptes d’utilisateurs locaux comme décrit dans Préparer un domaine [non routable](../../enterprise/prepare-a-non-routable-domain-for-directory-synchronization.md) pour la synchronisation d’annuaires. 
 
-**L’IdFix** d’exécuter à l’étape quatre (4) ci-dessous permet également de s’assurer que votre annuaire Active Directory local est prêt pour la synchronisation d’annuaires.
+**L’IdFix** d’exécuter à l’étape quatre (4) ci-dessous, permet également de s’assurer que votre Active Directory local est prêt pour la synchronisation d’annuaires.
 
 ## <a name="2-install-and-configure-azure-ad-connect"></a>2. Installer et configurer les Azure AD Connecter
 
 Pour synchroniser vos utilisateurs, groupes et contacts à partir d’Active Directory local dans Azure Active Directory, installez Azure Active Directory Connecter et configurer la synchronisation d’annuaires. 
 
- 1. Dans le centre [d’administration,](https://go.microsoft.com/fwlink/p/?linkid=2024339)sélectionnez **Le programme d’installation** dans le navigation gauche.
+ 1. Dans le centre [d’administration](https://go.microsoft.com/fwlink/p/?linkid=2024339), sélectionnez **Le programme d’installation** dans le navigation gauche.
 
- 2. Sous **Se connectez-vous et sécurité,** **sélectionnez Ajouter ou synchroniser des utilisateurs à votre compte Microsoft.**
+ 2. Sous **Se connectez-vous et sécurité**, **sélectionnez Ajouter ou synchroniser des utilisateurs à votre compte Microsoft**.
 
- 3. On the **Add or sync users to your Microsoft account** page, choose Get **started**.
+ 3. Dans la page **Ajouter ou synchroniser des utilisateurs avec** votre compte Microsoft, **choisissez Démarrage**.
 
  4. Lors de la première étape, exécutez l’outil IdFix pour préparer la synchronisation d’annuaires.
 
@@ -63,9 +63,9 @@ Pour synchroniser vos utilisateurs, groupes et contacts à partir d’Active Dir
 
 Voir [Configurer la synchronisation d’annuaires pour Microsoft 365](../../enterprise/set-up-directory-synchronization.md) pour en savoir plus.
 
-Lorsque vous configurez vos options pour Azure AD Connecter, nous vous recommandons d’activer la synchronisation  de mot de **passe,** l’personnalisation transparente et la fonctionnalité d’écriture sur écriture automatique du mot de passe, qui est également prise en charge dans Microsoft 365 entreprise.
+Lorsque vous configurez vos options pour Azure AD Connecter, nous vous recommandons d’activer la synchronisation de mot de **passe,** l’personnalisation transparente et la fonctionnalité  d’écriture sur écriture automatique du mot de passe, également prise en charge dans Microsoft 365 entreprise.
 
 > [!NOTE]
 > Il existe quelques étapes supplémentaires pour l’écriture de mot de passe au-delà de la case à cocher Azure AD Connecter. Pour plus d’informations, [voir How-to: configure password writeback](/azure/active-directory/authentication/howto-sspr-writeback). 
 
-Si vous souhaitez également gérer les appareils Windows 10 joints à un domaine, voir Activer les appareils Windows 10 joints à un domaine à gérer par [Microsoft 365 Business Premium](manage-windows-devices.md) pour configurer une joint Azure AD hybride.
+Si vous souhaitez également gérer les appareils Windows 10 joints à un domaine, voir Activer les appareils Windows 10 joints à un domaine à gérer par [Microsoft 365 Business Premium](../../business-premium/m365bp-manage-windows-devices.md) pour configurer une joint Azure AD hybride.

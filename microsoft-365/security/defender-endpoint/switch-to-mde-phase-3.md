@@ -21,14 +21,14 @@ ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 03/28/2022
+ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 1397c34e8e4a7f1fcb20df192409bd57bc50f40b
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: 4f387ae01af51292667f810176970f3607b489b3
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507118"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634402"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Passer à Microsoft Defender pour point de terminaison - Phase 3 : Intégration
 
@@ -58,7 +58,7 @@ ms.locfileid: "64507118"
 
 3. Dans la **liste Sélectionner le système d’exploitation pour démarrer le** processus d’intégration, sélectionnez un système d’exploitation.
 
-4. Sous **Méthode de déploiement**, sélectionnez une option. Suivez les liens et invites pour intégrer les appareils de votre organisation. Vous avez besoin d’aide ? Voir [méthodes d’intégration](#onboarding-methods) (dans cet article).
+4. Sous **Méthode de déploiement**, sélectionnez une option. Suivez les liens et invites pour intégrer les appareils de votre organisation. Besoin d’aide ? Voir [méthodes d’intégration](#onboarding-methods) (dans cet article).
 
 > [!NOTE]
 > Si un problème se passe lors de l’intégration, voir [Résoudre Microsoft Defender pour point de terminaison problèmes d’intégration](troubleshoot-onboarding.md). Cet article explique comment résoudre les problèmes d’intégration et les erreurs courantes sur les points de terminaison.
@@ -72,7 +72,7 @@ Les méthodes de déploiement varient en fonction du système d’exploitation e
 
 |Systèmes d’exploitation  |Méthodes  |
 |---------|---------|
-|Windows 10 ou ultérieure<br/><br/>Windows Server 2019 ou une ultérieure<br/><br/>Windows Server, version 1803 ou ultérieure<br/><br/>Windows Server 2012 R2 et 2016<sup>[[1](#fn1)]<sup>  |   [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md)<br><br/>   [Stratégie de groupe](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft Endpoint Manager/ Mobile Gestion des appareils (Intune)](configure-endpoints-mdm.md)<br>    [Scripts VDI](configure-endpoints-vdi.md) <br><br> **REMARQUE** : un script local convient pour une preuve de concept, mais ne doit pas être utilisé pour le déploiement de production. Pour un déploiement de production, nous vous recommandons d’utiliser stratégie de groupe, Microsoft Endpoint Configuration Manager ou Intune. |
+|Windows 10 ou ultérieure<br/><br/>Windows Server 2019 ou une ultérieure<br/><br/>Windows Server, version 1803 ou ultérieure<br/><br/>Windows Server 2012 R2 et 2016<sup>[[1](#fn1)]<sup>  |   [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md)<br><br/>   [Stratégie de groupe](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft Endpoint Manager/ Mobile Gestion des appareils (Intune)](configure-endpoints-mdm.md)<br>    [Scripts VDI](configure-endpoints-vdi.md) <br><br> **REMARQUE** : un script local convient pour une preuve de concept, mais ne doit pas être utilisé pour le déploiement de production. Pour un déploiement de production, nous vous recommandons d’utiliser stratégie de groupe, Microsoft Endpoint Configuration Manager ou Intune. |
 |Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) ou [Microsoft Defender pour le cloud](/azure/security-center/security-center-wdatp) <br><br> **REMARQUE** : Microsoft Monitoring Agent est désormais l’agent Azure Log Analytics. Pour en savoir plus, consultez la vue [d’ensemble de l’agent Log Analytics](/azure/azure-monitor/platform/log-analytics-agent).  |
 |Windows 8,1 Entreprise<br/><br/>Windows 8.1 Professionnel<br/><br/>Windows 7 SP1 Pro<br/><br/>Windows 7 SP1| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **REMARQUE** : Microsoft Monitoring Agent est désormais l’agent Azure Log Analytics. Pour en savoir plus, consultez la vue [d’ensemble de l’agent Log Analytics](/azure/azure-monitor/platform/log-analytics-agent).  
 | macOS (voir [La requise pour le système)](microsoft-defender-endpoint-mac.md) | [Script local](mac-install-manually.md)<br/><br/>[Microsoft Endpoint Manager](mac-install-with-intune.md)<br/><br/>[JAMF Pro](mac-install-with-jamf.md)<br/><br/>[Mobile Gestion des appareils](mac-install-with-other-mdm.md)   |
@@ -80,19 +80,15 @@ Les méthodes de déploiement varient en fonction du système d’exploitation e
 | iOS | [Microsoft Endpoint Manager](ios-install.md)     |
 |Android  | [Microsoft Endpoint Manager](android-intune.md)  | 
 
-
 (<a id="fn1">1</a>) les Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
-
 
 ## <a name="run-a-detection-test"></a>Exécuter un test de détection
 
 Pour vérifier que vos appareils intégrés sont correctement connectés à Defender for Endpoint, vous pouvez exécuter un test de détection.
 
-<br/><br/>
-
 |Système d’exploitation|Aide|
 |---|---|
-|Windows 10 ou ultérieure<br/><br/>Windows Server 2022<br/><br/>Windows Server 2019<br/><br/>Windows Server, version 1803 ou ultérieure<br/><br/>Windows Server 2016<br/><br/>Windows Server 2012 R2|Voir [Exécuter un test de détection](run-detection-test.md).<br/><br/>Visitez le site de démonstration defender pour point de terminaison (<https://demo.wd.microsoft.com>) et essayez un ou plusieurs des scénarios. Par exemple, essayez le **scénario de démonstration de la protection** cloud.|
+|Windows 10 ou ultérieure<br/><br/>Windows Server 2022<br/><br/>Windows Server 2019<br/><br/>Windows Server, version 1803 ou ultérieure<br/><br/>Windows Server 2016<br/><br/>Windows Server 2012 R2|Voir [Exécuter un test de détection](run-detection-test.md).<br/><br/>Visitez le site de démonstration defender pour point de terminaison (<https://demo.wd.microsoft.com>) et essayez un ou plusieurs des scénarios. Par exemple, essayez le **scénario de démonstration de la protection** cloud.|
 |macOS (voir [La requise pour le système)](microsoft-defender-endpoint-mac.md)|Téléchargez et utilisez l’application CASER sur <https://aka.ms/mdatpmacosdiy>. <br/><br/> Pour plus d’informations, [voir Defender for Endpoint sur macOS](microsoft-defender-endpoint-mac.md).|
 |Linux (voir [La exigences du système](microsoft-defender-endpoint-linux.md#system-requirements))|1. Exécutez la commande suivante et recherchez le résultat **1** : `mdatp health --field real_time_protection_enabled`<br/><br/>2. Ouvrez une fenêtre Terminal et exécutez la commande suivante : `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`<br/><br/>3. Exécutez la commande suivante pour lister les menaces détectées : `mdatp threat list`.<br/><br/>Pour plus d’informations, [voir Defender for Endpoint sur Linux](microsoft-defender-endpoint-linux.md).|
 
@@ -102,8 +98,6 @@ Pour vérifier que vos appareils intégrés sont correctement connectés à Defe
 ## <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints"></a>Vérifier que Antivirus Microsoft Defender est en mode passif sur vos points de terminaison
 
 Maintenant que vos points de terminaison ont été intégrés à Defender pour le point de terminaison, l’étape suivante consiste à vous assurer que Antivirus Microsoft Defender est en cours d’exécution en mode passif. Vous pouvez utiliser l’une des méthodes suivantes, comme décrit dans le tableau suivant :
-
-<br/><br/>
 
 |Méthode|Procédure|
 |---|---|
@@ -120,12 +114,12 @@ Maintenant que vos points de terminaison ont été intégrés à Defender pour l
 
 Pour définir Antivirus Microsoft Defender en mode passif sur Windows Server, version 1803 ou plus récente, ou Windows Server 2019 ou Windows Server 2022, suivez les étapes suivantes :
 
-1. Ouvrez l’Éditeur du Registre, puis accédez à :
-
-   `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
+1. Ouvrez l’Éditeur du Registre, puis accédez à `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
 2. Modifiez (ou créez) une entrée DWORD appelée **ForceDefenderPassiveMode** et spécifiez les paramètres suivants :
+
    - Définissez la valeur DWORD sur **1**.
+
    - Sous **Base**, **sélectionnez Hexadécimal**.
 
 > [!NOTE]
@@ -146,6 +140,7 @@ Le Antivirus Microsoft Defender à jour est essentiel pour garantir que vos appa
 Il existe deux types de mises à jour liées au Antivirus Microsoft Defender à jour :
 
 - Mises à jour de l’intelligence de la sécurité
+
 - Mises à jour de produit
 
 Pour obtenir vos mises à jour, suivez les instructions de La Antivirus Microsoft Defender mises à jour [et appliquez les lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md).
@@ -155,6 +150,7 @@ Pour obtenir vos mises à jour, suivez les instructions de La Antivirus Microsof
 Si, à ce stade, vous avez :
 
 - Les appareils de votre organisation ont été intégrés à Defender for Endpoint, et
+
 - Antivirus Microsoft Defender est installé et activé,
 
 Ensuite, l’étape suivante consiste à désinstaller votre solution de protection anti-programme malveillant, antivirus et point de terminaison non-Microsoft. Lorsque vous désinstallez votre solution non Microsoft, Antivirus Microsoft Defender passe du mode passif au mode actif. Dans la plupart des cas, cela se produit automatiquement. 
@@ -169,15 +165,18 @@ Pour obtenir de l’aide sur la désinstallation de votre solution non-Microsoft
 Maintenant que vous avez intégré Defender pour le point de terminaison et que vous avez désinstallé votre ancienne solution non-Microsoft, l’étape suivante consiste à vous assurer que Defender pour le point de terminaison fonctionne correctement. Une bonne façon d’effectuer cette tâche consiste à visiter le site de démonstration Defender for Endpoint ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)). Essayez un ou plusieurs scénarios de démonstration sur cette page, y compris au moins les scénarios suivants :
 
 - Protection fournie par le cloud
+
 - Applications potentiellement indésirables (PUA)
+
 - Protection du réseau (NP)
 
 > [!NOTE]
 > Le site de démonstration Defender pour point de terminaison sur demo.wd.microsoft.com est déconseillé et sera supprimé à l’avenir.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 **Félicitations** ! Vous avez terminé votre [migration vers Defender pour endpoint](switch-to-mde-overview.md#the-migration-process) !
 
 - [Visitez votre tableau de bord des opérations](security-operations-dashboard.md) de sécurité dans Microsoft 365 Defender portail ([https://security.microsoft.com](https://security.microsoft.com)).
+
 - [Gérer Defender pour le point de terminaison, après la migration](manage-mde-post-migration.md).

@@ -24,27 +24,30 @@ search.appverid:
 - MET150
 - MOE150
 description: Protégez-vous contre le hameçonnage et les autres attaques à l’Microsoft 365.
-ms.openlocfilehash: b1a6b5a80b00df010d4733c1b7cb8ce1d16a95d9
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 09e72221e23f4f0d1e2f4a5e7dcb81abff46dcf2
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767920"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634248"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Protégez-vous contre le hameçonnage et d’autres attaques
 
 Microsoft 365 Business Premium comprend de nombreuses protections pour vous protéger contre les attaques, mais il existe des choses que vous pouvez faire vous-même pour limiter et réduire les risques d’attaques en ligne.
 
 - **Courrier indésirable ou courrier indésirable** Il existe de nombreuses raisons pour lesquelles vous pouvez recevoir du courrier indésirable et tous les courriers indésirables ne sont pas identiques. Toutefois, vous pouvez réduire ce qui vous arrive, et ainsi réduire les risques d’attaques, en filtrant le courrier indésirable.
+
 - **Hameçonnage** Une tentative de hameçonnage est un e-mail qui semble légitime mais qui tente d’obtenir vos informations personnelles ou de voler votre argent.
+
 - **Usurpation d’usurpation** Les scammers peuvent également utiliser une technique appelée usurpation d’adresse pour faire apparaître l’usurpation d’adresse comme si vous avez reçu un e-mail de vous-même. 
+
 - **Les** programmes malveillants sont des logiciels malveillants qui peuvent être installés sur votre ordinateur, généralement installés après avoir cliqué sur un lien ou ouvert un document à partir d’un e-mail. Il existe différents types de programmes malveillants (par exemple, ransomware, lorsque votre ordinateur est pris en charge), mais vous ne souhaitez en avoir aucun. 
 
 ## <a name="best-practices"></a>Meilleures pratiques
 
 ### <a name="reduce-spam-mail"></a>Réduire le courrier indésirable
 
-Suivez ces [10 conseils pour réduire le courrier indésirable](https://support.microsoft.com/en-us/office/10-tips-on-how-to-help-reduce-spam-55f756e8-688b-41c3-a086-8f68ccc592f6).
+Suivez ces [10 conseils pour réduire le courrier indésirable](https://support.microsoft.com/office/10-tips-on-how-to-help-reduce-spam-55f756e8-688b-41c3-a086-8f68ccc592f6).
 
 ### <a name="report-it"></a>Signalez-le !
 
@@ -78,5 +81,6 @@ Téléchargez cette infographie avec des conseils pour vous et les membres de vo
 En savoir plus sur les façons de :
 
 - [Conservez la sécurité de vos fichiers et communications avec Office](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f).
+
 - [Restez sécurisé et privé au travail](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d).
   

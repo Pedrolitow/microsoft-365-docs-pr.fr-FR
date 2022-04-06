@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: b21b2f2a69ab9a85f1f5003104969364ae9c6e78
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 4c3b74179294d0b028dd07c3a6f4f28e844237d3
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401145"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469930"
 ---
 # <a name="turn-on-network-protection"></a>Activer la protection du réseau
 
@@ -56,9 +56,8 @@ Si la clé est manquante, accédez à **SOFTWARE** \> **Microsoft** \> **Windows
    - 1 ou **Sur**
    - 2 ou **mode Audit**
 
-    :::image type="content" alt-text="Clé de Registre protection du réseau." source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
-    
-    
+    :::image type="content" source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" alt-text="Clé de Registre protection du réseau" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
+
 ## <a name="enable-network-protection"></a>Activer la protection du réseau
 
 Activez la protection réseau à l’aide de l’une des méthodes ci-après :
@@ -98,7 +97,7 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 1. Connectez-vous au Microsoft Endpoint Manager’administration centrale (https://endpoint.microsoft.com).
 
-2. Go to **DevicesConfiguration** >  **profilesCreate** >  profile.
+2. Allez dans **Appareils** > **Profils de configuration** > **Créer un profil**.
 
 3. Dans le **volant Créer un profil** , sélectionnez **Plateforme** et choisissez le **type de profil** **en tant que modèles**.
 

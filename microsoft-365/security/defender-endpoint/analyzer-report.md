@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ab6a23d1f2c8893a86fb6432ab9fece95a10006c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 1f843c62d44ed7c25f07568cc0ee92709fb080a7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322882"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468896"
 ---
 # <a name="understand-the-client-analyzer-html-report"></a>Comprendre le rapport HTML de l’analyseur client
 
@@ -35,27 +35,25 @@ Utilisez l’exemple suivant pour comprendre le rapport.
 
  Exemple de sortie de l’analyseur sur un ordinateur intégré à l’ID d’organisation expiré et ne parvient pas à atteindre l’une des URL de point de terminaison Microsoft Defender requises :
 
-![Image du résultat de l’analyseur client.](images/147cbcf0f7b6f0ff65d200bf3e4674cb.png)
+:::image type="content" source="images/147cbcf0f7b6f0ff65d200bf3e4674cb.png" alt-text="Page Résultats de l’analyseur de client MDE" lightbox="images/147cbcf0f7b6f0ff65d200bf3e4674cb.png":::
 
 - En haut, la version de script et le runtime de script sont répertoriés pour référence
 - La section **Informations sur l’appareil** fournit des identificateurs de système d’exploitation et d’appareil de base pour identifier de manière unique l’appareil sur lequel l’analyseur s’est exécuté.
 - Les **détails de sécurité des** points de terminaison fournissent des informations générales sur Microsoft Defender pour les processus liés aux points de terminaison, notamment les Antivirus Microsoft Defender et le processus de capteur. Si les processus importants ne sont pas en ligne comme prévu, la couleur est rouge.
-
-  ![Image du résultat détaillé de l’analyseur client](images/85f56004dc6bd1679c3d2c063e36cb80.png)
-
+  
 -   Les **détails de sécurité des** points de terminaison fournissent des informations générales sur Microsoft Defender pour les processus liés aux points de terminaison, notamment les Antivirus Microsoft Defender et le processus de capteur. Si les processus importants ne sont pas en ligne comme prévu, la couleur est rouge.
 
-  ![Image du résultat détaillé de l’analyseur client.](images/85f56004dc6bd1679c3d2c063e36cb80.png)
+    :::image type="content" source="images/85f56004dc6bd1679c3d2c063e36cb80.png" alt-text="Page Résumé des résultats de vérification" lightbox="images/85f56004dc6bd1679c3d2c063e36cb80.png":::
 
--   Lors **de la vérification du résumé** des résultats, vous aurez un nombre agrégé d’erreurs, d’avertissements ou d’événements d’information détectés par l’analyseur.
+-   Dans **le résumé des** résultats de vérification, vous aurez un nombre agrégé d’erreurs, d’avertissements ou d’événements d’information détectés par l’analyseur.
 
--   Dans **résultats détaillés** , vous verrez une liste (triée par gravité) avec les résultats et les instructions basées sur les observations réalisées par l’analyseur.
+-   Dans **résultats détaillés**, vous verrez une liste (triée par gravité) avec les résultats et les instructions basées sur les observations réalisées par l’analyseur.
 
 ## <a name="open-a-support-ticket-to-microsoft-and-include-the-analyzer-results"></a>Ouvrir un ticket de support pour Microsoft et inclure les résultats de l’analyseur
 
 Pour inclure les fichiers de résultats de l’analyseur lors de l’ouverture d’un [ticket de support](contact-support.md#open-a-service-request), veillez à utiliser la section **Pièces jointes** et à inclure le `MDEClientAnalyzerResult.zip` fichier :
 
-![Image de l’invite de pièce jointe.](images/508c189656c3deb3b239daf811e33741.png)
+:::image type="content" source="images/508c189656c3deb3b239daf811e33741.png" alt-text="Une invite de pièce jointe" lightbox="images/508c189656c3deb3b239daf811e33741.png":::
 
 > [!NOTE]
 > Si la taille du fichier est supérieure à 25 Mo, l’ingénieur du support technique affecté à votre cas fournira un espace de travail sécurisé dédié pour charger des fichiers volumineux pour analyse.

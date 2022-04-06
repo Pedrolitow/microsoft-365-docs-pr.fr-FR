@@ -15,12 +15,12 @@ ms.collection: m365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: feebff9361f1504e94069e82a3de87a2e1d95c0c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 76b0b7405c8dc1c434fbc9f991903b25d8b9d4f4
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312648"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469336"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Examiner un compte d’utilisateur dans Microsoft Defender pour le point de terminaison
 
@@ -53,7 +53,7 @@ Lorsque vous examinez une entité de compte d’utilisateur, vous voyez :
 - Alertes associées à cet utilisateur
 - Observé dans l’organisation (appareils connectés)
 
-![Image de la page de détails de l’entité du compte d’utilisateur.](images/atp-user-details-view.png)
+:::image type="content" source="images/atp-user-details-view.png" alt-text="Page des détails de l’entité du compte d’utilisateur" lightbox="images/atp-user-details-view.png":::
 
 ### <a name="user-details"></a>Détails de l’utilisateur
 
@@ -69,7 +69,7 @@ La vue d’ensemble, les alertes et les observations dans l’organisation sont 
 >Pour les appareils Linux, les informations sur les utilisateurs connectés ne sont pas affichées.
 
 
-### <a name="overview"></a>Vue d’ensemble
+### <a name="overview"></a>Présentation
 
 **L’onglet** Vue d’ensemble affiche les détails des incidents et une liste des appareils sur qui l’utilisateur s’est connecté. Vous pouvez les développer pour voir les détails des événements de connexion pour chaque appareil.
 
@@ -99,7 +99,7 @@ Vous pouvez filtrer les résultats selon les périodes suivantes :
 - 30 jours
 - 6 mois
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)

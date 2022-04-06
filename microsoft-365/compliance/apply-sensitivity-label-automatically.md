@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 80f3b5c69e482301dd8c4e926959087c7149a529
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 21ee443ba9bab0ac7071377befee5d6e6143a398
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499658"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634622"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -275,18 +275,6 @@ Le déploiement simulé s’exécute comme le paramètre WhatIf pour PowerShell.
 Le mode simulation vous permet également d’augmenter progressivement l’étendue de votre stratégie d’étiquetage automatique avant de procéder au déploiement. Par exemple, vous pouvez commencer avec un seul emplacement, comme un site SharePoint, avec une seule bibliothèque de documents. Ensuite, avec des modifications itératives, augmentez l’étendue sur plusieurs sites, puis sur un autre emplacement, comme OneDrive.
 
 Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du temps nécessaire à l’exécution de votre stratégie d’étiquetage automatique et pour vous aider à planifier et à programmer l’exécution sans le mode simulation.
-
-#### <a name="deleted-onedrive-accounts-and-simulation-results"></a>Comptes OneDrive supprimés et résultats de simulation
-
-Attendez-vous à des différences d’affichage possibles dans les résultats de la simulation lorsque les comptes OneDrive supprimés sont toujours à [l’étape de rétention du processus de suppression](/onedrive/retention-and-deletion#the-onedrive-deletion-process). Par exemple, un employé a quitté l’organisation et son responsable dispose d’un accès temporaire aux fichiers OneDrive de cet utilisateur.
-
-Dans ce scénario, si le compte OneDrive a été spécifié par URL dans la stratégie d’étiquetage automatique, les fichiers correspondants du compte OneDrive supprimé sont inclus dans les résultats de la simulation.
-
-Toutefois, si le compte OneDrive n’a pas été spécifié par l’URL, mais a été inclus dans le paramètre par défaut **Tous** :
-- Lorsque l’emplacement SharePoint est inclus dans la stratégie, les fichiers correspondants du compte OneDrive supprimé s’affichent en tant qu’éléments SharePoint dans les résultats de la simulation.
-- Lorsque l’emplacement SharePoint n’est pas inclus dans la stratégie, les fichiers correspondants du compte OneDrive supprimé ne sont pas inclus dans les résultats de la simulation.
-
-Dans tous les cas, les fichiers correspondants sont étiquetés jusqu’à ce que le compte OneDrive soit définitivement supprimé. Les différences d’affichage répertoriées s’appliquent uniquement aux résultats de simulation.
 
 ### <a name="creating-an-auto-labeling-policy"></a>Création d’une stratégie d’étiquetage automatique
 

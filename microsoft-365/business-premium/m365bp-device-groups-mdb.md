@@ -17,16 +17,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: a5a0b932e88fb4c4232e4afca8f2307e40088e6b
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 2cc874580dad24e1b3d5349d6075956a9e518704
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526123"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634644"
 ---
 # <a name="device-groups-in-microsoft-365-business-premium"></a>Groupes d’appareils dans Microsoft 365 Business Premium
 
-Microsoft 365 Business Premium la protection des points de terminaison via Microsoft Defender pour Entreprises. Les stratégies de protection des appareils sont appliquées aux appareils via certaines collections appelées groupes d’appareils. 
+Microsoft 365 Business Premium la protection des points de terminaison via Microsoft Defender pour les PME. Les stratégies de protection des appareils sont appliquées aux appareils via certaines collections appelées groupes d’appareils. 
 
 **Cet article décrit** :  
 
@@ -41,7 +41,7 @@ Avec votre abonnement, vous avez des groupes d’appareils par défaut que vous 
 
 Tous les groupes d’appareils, y compris vos groupes d’appareils par défaut et tous les groupes d’appareils personnalisés que vous définissez, sont stockés dans [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
 
-## <a name="how-do-i-create-a-new-device-group"></a>Comment créer un groupe d’appareils ?
+## <a name="how-do-i-create-a-new-device-group"></a>Comment faire créer un groupe d’appareils ?
 
 Vous pouvez créer un groupe d’appareils pendant que vous êtes en train de créer ou de modifier une stratégie de protection des appareils. 
 
@@ -52,10 +52,11 @@ Vous pouvez créer un groupe d’appareils pendant que vous êtes en train de cr
 3. Prenez l’une des actions suivantes :
 
     1. Sélectionnez une stratégie existante, puis sélectionnez **Modifier**.
+    
     2. Choisissez **+ Ajouter** pour créer une stratégie.
 
     > [!TIP]
-    > Pour obtenir de l’aide sur la création ou la modification d’une stratégie, voir Afficher ou modifier des stratégies [dans Microsoft Defender entreprise](m365bp-view-edit-create-mdb-policies.md).
+    > Pour obtenir de l’aide sur la création ou la modification d’une stratégie, voir Afficher ou modifier des [stratégies dans Microsoft Defender pour les PME](m365bp-view-edit-create-mdb-policies.md).
 
 4. Dans **l’étape Informations générales** , examinez les informations, modifiez si nécessaire, puis choisissez **Suivant**.
 
@@ -67,7 +68,7 @@ Vous pouvez créer un groupe d’appareils pendant que vous êtes en train de cr
 
 8. À **l’étape Groupes d’appareils** , examinez la liste des groupes d’appareils pour la stratégie. Si nécessaire, supprimez un groupe de la liste. Sélectionnez **Suivant**.
 
-9. Dans la page **Paramètres de configuration** , examinez et modifiez les paramètres selon vos besoins, puis choisissez **Suivant**. Pour plus d’informations sur ces paramètres, voir [Comprendre les paramètres de configuration nouvelle génération dans Microsoft Defender pour Les entreprises](../security/defender-business/mdb-next-gen-configuration-settings.md).
+9. Dans la page **Paramètres de configuration** , examinez et modifiez les paramètres selon vos besoins, puis choisissez **Suivant**. Pour plus d’informations sur ces paramètres, voir [Comprendre les paramètres de configuration nouvelle génération dans Microsoft Defender pour les PME](../security/defender-business/mdb-next-gen-configuration-settings.md).
 
 10. À **l’étape Examiner votre stratégie** , examinez tous les paramètres, a apporter les modifications nécessaires, puis choisissez Créer une **stratégie ou mettre** **à jour la stratégie**.
 

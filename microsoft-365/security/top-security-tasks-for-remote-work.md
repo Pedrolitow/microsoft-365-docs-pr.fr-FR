@@ -17,18 +17,19 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: Protégez vos données et courriers électroniques d’entreprise contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: 1277d001118dda764aa9b2a968f1024d5befcac1
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 7f5c52eb0768adc4c64251ed7c3f34cccdf9cd57
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755060"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469446"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 tâches principales pour les équipes de sécurité pour prendre en charge le travail à domicile
 
 Si vous êtes comme [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) et que vous vous retrouvez soudainement à prendre en charge un personnel principalement basé à domicile, nous voulons vous aider à vous assurer que votre organisation travaille en toute sécurité. Cet article hiérarchise les tâches pour aider les équipes de sécurité à implémenter les fonctionnalités de sécurité les plus importantes aussi rapidement que possible.
 
-:::image type="content" source="../media/security/security-support-remote-work.png" alt-text="Les 12 premières tâches pour les équipes de sécurité pour prendre en charge le travail à domicile" lightbox="../media/security/security-support-remote-work.png":::
+:::image type="content" source="../media/security/security-support-remote-work.png" alt-text="Principales tâches à effectuer pour prendre en charge le travail à domicile" lightbox="../media/security/security-support-remote-work.png":::
+
 
 Si vous êtes une petite ou moyenne entreprise utilisant l’une des plans d’entreprise de Microsoft, consultez plutôt les ressources ci-après :
 
@@ -122,9 +123,7 @@ Vous devez travailler avec votre administrateur Exchange Online et votre adminis
 
 Maintenant que Microsoft Defender pour Office 365 et Microsoft Defender pour l’identité sont configurés, vous pouvez afficher les signaux combinés de ces fonctionnalités dans un tableau de bord. [Microsoft 365 Defender](./defender/microsoft-365-defender.md) regroupe les alertes, les incidents, les enquêtes et réponses automatisées, ainsi que le recherche avancée sur les charges de travail (Microsoft Defender pour l’identité, Defender pour Office 365, Microsoft Defender pour le point de terminaison et Microsoft Defender pour les applications cloud) dans un seul volet de la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail</a>.
 
-<!--
-:::image type="content" source="../media/top-ten-security-remote-work-mtp-dashboard.png" alt-text="The MTP dashboard in the Microsoft 365 Defender portal" lightbox="../media/top-ten-security-remote-work-mtp-dashboard.png":::
---> 
+:::image type="content" source="../media/top-ten-security-remote-work-mtp-dashboard.png" alt-text="Tableau de Microsoft 365 Defender de bord" lightbox="../media/top-ten-security-remote-work-mtp-dashboard.png":::
 
 Une fois que vous avez configuré un ou plusieurs de vos services Defender pour Office 365, activer MTP. De nouvelles fonctionnalités sont continuellement ajoutées à MTP . envisagez d’opter pour la réception des fonctionnalités d’aperçu.
 

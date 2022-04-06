@@ -13,18 +13,18 @@ ms.localizationpriority: medium
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Feuille de route pour configurer vos services cloud pour Microsoft 365.
-ms.openlocfilehash: fa3939bcbd97262afd63cf5f385cdb8fe7c79ba7
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: a4c097841729c61201e74c203931c0465153d313
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61369887"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634886"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>Feuille de route des services cloud pour Microsoft 365
 
 Pour bénéficier des avantages en matière de créativité, de travail d’équipe et de productivité de Microsoft 365 entreprise, déployez les services cloud qui correspondent le mieux aux besoins de votre organisation.
 
-Si vous avez des déploiements basés sur un serveur existants pour Exchange, SharePoint ou Skype Entreprise et que vous souhaitez migrer l’ensemble de votre organisation vers Microsoft 365 pour entreprise, consultez la feuille de route des logiciels client et [serveur.](client-server-software-roadmap-microsoft-365.md) Cette feuille de route inclut Microsoft Office produits clients, les produits Office Server locaux et les appareils Windows &ndash; Microsoft.
+Si vous avez des déploiements basés sur un serveur existants pour Exchange, SharePoint ou Skype Entreprise et que vous souhaitez migrer l’ensemble de votre organisation vers Microsoft 365 pour entreprise, consultez la feuille de route des logiciels client et [serveur.](client-server-software-roadmap-microsoft-365.md) Cette feuille de route inclut Microsoft Office produits clients, les produits Office Server locaux et les appareils Microsoft Windows client.
 
 ## <a name="deploy"></a>Déployer
 
@@ -33,10 +33,9 @@ Pour déployer vos services cloud :
 - [Préparer vos services](configure-services-and-applications.md)
 - [Migrer vos données sur site vers Microsoft 365](migrate-data-to-office-365.md)
 - Configurer vos services cloud pour vos utilisateurs
-  - [Exchange Online](/Exchange/exchange-online)
-  - [SharePoint Online](/sharepoint/sharepoint-online)
-  - [Skype Entreprise](/SkypeForBusiness/skype-for-business-online)
-  - [Microsoft Teams](/MicrosoftTeams/Teams-overview)
+  - [Exchange Online](/Exchange/exchange-online)
+  - [SharePoint](/sharepoint/sharepoint-online)
+  - [Microsoft Teams](/MicrosoftTeams/Teams-overview)
   - [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
 - [Former vos utilisateurs](/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
@@ -47,10 +46,10 @@ Pour gérer vos services cloud :
 - [Vérifier l’état de votre service](view-service-health.md)
 - [Comprendre vos options de support](../admin/get-help-support.md)
 - Administrer vos services cloud
-  - [Exchange Online](/Exchange/exchange-online)
-  - [SharePoint Online](https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a)
-  - [Skype Entreprise](/SkypeForBusiness/skype-for-business-online)
-  - [Microsoft Teams](//MicrosoftTeams/quality-of-experience-review-guide)
+  - [Exchange Online](/Exchange/exchange-online)
+  - [SharePoint](https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a)
+  - [Skype Entreprise](/SkypeForBusiness/skype-for-business-online)
+  - [Teams](/MicrosoftTeams/quality-of-experience-review-guide)
   - [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
 - [Optimisation des performances pour vos services cloud](tune-microsoft-365-performance.md)
 
@@ -58,9 +57,9 @@ Pour gérer vos services cloud :
 
 Pour plus d’informations sur le déploiement ou la gestion des services cloud Microsoft 365 Microsoft :
 
-1. Go to [Microsoft IT Showcase](https://www.microsoft.com/itshowcase).
-2. Sélectionnez **le contenu de recherche.**
-3. Sous **Affiner les résultats,** sélectionnez **Pro** sous **Audience,** puis sous **Produit**, sélectionnez un service cloud.
+1. Allez à [Microsoft IT Showcase](https://www.microsoft.com/itshowcase).
+2. Sélectionnez **le contenu de recherche**.
+3. Sous **Affiner les résultats**, sélectionnez **Pro** sous **Audience**, puis sous **Produit**, sélectionnez un service cloud.
 
 ## <a name="next-step"></a>Étape suivante
 

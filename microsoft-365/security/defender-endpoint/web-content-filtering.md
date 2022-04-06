@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 24cdf18ad510902a533834da2f3595acaa9b33d7
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: be2352ef44d8e9f7430cde39a71c7b7b1167a874
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595255"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634094"
 ---
 # <a name="web-content-filtering"></a>Filtrage du contenu web
 
@@ -52,7 +52,7 @@ Le filtrage de contenu Web est disponible sur les principaux navigateurs web, av
 
 Avant d’essayer cette fonctionnalité, assurez-vous que vous disposez des conditions suivantes :
 
-- Votre abonnement inclut l’un des Windows 10 Entreprise suivants : Windows 10 Entreprise E5, Microsoft 365 E5, Microsoft 365 E5 Sécurité, Microsoft 365 E3 + Microsoft 365 E5 Sécurité module, ou la Microsoft Defender pour point de terminaison licence autonome. 
+- Votre abonnement inclut l’un des Windows 10 Entreprise E5, Microsoft 365 E5, Microsoft 365 E5 Sécurité, Microsoft 365 E3 ou le Microsoft Defender pour point de terminaison licence autonome. 
 
 - Vous avez accès à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail.</a>
 

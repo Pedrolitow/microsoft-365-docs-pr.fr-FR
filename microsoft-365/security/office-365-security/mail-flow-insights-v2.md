@@ -14,12 +14,12 @@ description: Les administrateurs peuvent en savoir plus sur les informations et 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 176681b5fe780f0aeb4a0c8502b3e919e7ebcadc
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: b5cc3eba5807838b0a797f606d8a6aa3c152f60c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682524"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476464"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de messagerie dans le centre de sécurité et conformité
 
@@ -32,7 +32,7 @@ ms.locfileid: "63682524"
 
 Les administrateurs peuvent utiliser le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité pour découvrir les tendances, les informations et prendre des mesures pour résoudre les problèmes liés au flux de messagerie dans leur organisation.
 
-![Tableau de bord flux de messagerie dans le Centre de sécurité & conformité.](../../media/mail-flow-dashboard-v2.png)
+:::image type="content" source="../../media/mail-flow-dashboard-v2.png" alt-text="Tableau de bord flux de messagerie dans le Centre de sécurité & conformité" lightbox="../../media/mail-flow-dashboard-v2.png":::
 
 Les informations disponibles sont les :
 

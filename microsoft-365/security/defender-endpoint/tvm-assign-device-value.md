@@ -16,19 +16,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cb8c0bd0870ea240e64c33dfac2fd6c00156def8
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ff6d61e02ff923cc9406412c81e9a67799e6880a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166637"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477217"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>Affecter une valeur d’appareil - Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,7 +38,7 @@ ms.locfileid: "61166637"
 
 La définition de la valeur d’un appareil vous permet de différencier les priorités des biens. La valeur de l’appareil est utilisée pour incorporer le risque d’exposition d’un bien individuel dans le calcul Gestion des menaces et des vulnérabilités score d’exposition. Les appareils affectés en tant que « valeur élevée » recevront plus de poids.
 
-Vous pouvez également utiliser [l’API définir la valeur de l’appareil.](set-device-value.md)
+Vous pouvez également utiliser [l’API définir la valeur de l’appareil](set-device-value.md).
 
 Options de valeur d’appareil :
 
@@ -57,12 +57,13 @@ Exemples d’appareils à attribuer à une valeur élevée :
 
 1. Accédez à n’importe quelle page d’appareil. L’endroit le plus simple est l’inventaire des appareils.
 
-2. Sélectionnez **la valeur de** l’appareil à trois points près de la barre d’actions en haut de la page.
+2. **Sélectionnez la valeur de** l’appareil à trois points près de la barre d’actions en haut de la page.
 
-    ![Exemple de la valeur de l’appareil.](images/tvm-device-value-dropdown.png)
+   :::image type="content" source="images/tvm-device-value-dropdown.png" alt-text="Option Valeur de l’appareil" lightbox="images/tvm-device-value-dropdown.png":::
 
 3. Un volant s’affiche avec la valeur actuelle de l’appareil et sa valeur. Examinez la valeur de l’appareil et choisissez celle qui convient le mieux à votre appareil.
-![Exemple de volant de valeur d’appareil.](images/tvm-device-value-flyout.png)
+
+:::image type="content" source="images/tvm-device-value-flyout.png" alt-text="Page Valeur de l’appareil" lightbox="images/tvm-device-value-flyout.png":::
 
 ## <a name="how-device-value-impacts-your-exposure-score"></a>Impact de la valeur de l’appareil sur votre score d’exposition
 
@@ -73,7 +74,7 @@ Le score d’exposition est une moyenne pondérée sur tous les appareils. Si vo
 - Les appareils à valeur élevée ont un poids de NumberOfAssets / 10.
     - Si vous avez 100 appareils, chaque appareil à valeur élevée aura un poids de 10 (100/10)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Score d’exposition](tvm-exposure-score.md)

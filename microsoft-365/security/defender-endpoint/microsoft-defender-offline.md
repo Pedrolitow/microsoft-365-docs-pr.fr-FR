@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender hors ligne dans Windows
-description: Vous pouvez utiliser Microsoft Defender hors ligne directement à partir de l’application Antivirus Windows Defender’application. Vous pouvez également gérer la façon dont elle est déployée dans votre réseau.
+description: Vous pouvez utiliser Microsoft Defender hors ligne directement à partir de l’Antivirus Windows Defender app. Vous pouvez également gérer la façon dont elle est déployée dans votre réseau.
 keywords: analyse, defender, hors connexion
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 75179fc3daf8e375ace6cc4c1566abf1e18cdfaa
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: ccb65b865afdf2a0ec0210c3593daee1cb5c09b6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560195"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476838"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Exécuter et examiner les résultats d’une analyse en mode Microsoft Defender hors ligne
 
@@ -31,7 +31,7 @@ ms.locfileid: "61560195"
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender hors ligne est un outil d’analyse anti-programme malveillant qui vous permet de démarrer et d’exécuter une analyse à partir d’un environnement approuvé. L’analyse s’exécute en dehors du noyau Windows normal afin qu’elle puisse cibler les programmes malveillants qui tentent de contourner l’shell Windows, tels que les virus et rootkits qui infectent ou contournent l’enregistrement de démarrage maître (MBR).
+Microsoft Defender hors ligne est un outil d’analyse anti-programme malveillant qui vous permet de démarrer et d’exécuter une analyse à partir d’un environnement approuvé. L’analyse s’exécute en dehors du noyau Windows normal afin qu’elle puisse cibler les programmes malveillants qui tentent de contourner l’shell Windows, tels que les virus et rootkits qui infectent ou éviennent l’enregistrement de démarrage maître (MBR).
 
 Vous pouvez utiliser Microsoft Defender hors ligne si vous suspectez une infection par un programme malveillant ou si vous souhaitez confirmer un nettoyage complet du point de terminaison après une attaque par programme malveillant.
 
@@ -57,9 +57,9 @@ Pour exécuter Microsoft Defender hors ligne à partir du point de terminaison, 
 Microsoft Defender hors ligne utilise les mises à jour de protection les plus récentes disponibles sur le point de terminaison ; elle est mise à jour chaque fois que Antivirus Windows Defender est mis à jour.
 
 > [!NOTE]
-> Avant d’exécution d’une analyse hors connexion, vous devez essayer de mettre à jour la protection de l’Antivirus Microsoft Defender. Vous pouvez forcer une mise à jour à l’aide de la stratégie de groupe ou, toutefois, vous déployez normalement les mises à jour sur les points de terminaison, ou vous pouvez télécharger et installer manuellement les dernières mises à jour de protection à partir du [Centre de protection Microsoft contre les programmes malveillants](https://www.microsoft.com/security/portal/definitions/adl.aspx).
+> Avant d’exécution d’une analyse hors connexion, vous devez essayer de mettre à jour la protection de l’Antivirus Microsoft Defender. Vous pouvez forcer une mise à jour à l’aide de la stratégie de groupe ou toutefois déployer normalement des mises à jour sur les points de terminaison, ou vous pouvez télécharger et installer manuellement les dernières mises à jour de la protection à partir du [Centre de protection Microsoft contre les programmes malveillants](https://www.microsoft.com/security/portal/definitions/adl.aspx).
 
-Pour plus [d’informations, consultez](manage-protection-updates-microsoft-defender-antivirus.md) la rubrique Gérer Antivirus Microsoft Defender d’informations sur la sécurité.
+Pour plus [d’informations, consultez la rubrique Gérer Antivirus Microsoft Defender d’informations](manage-protection-updates-microsoft-defender-antivirus.md) sur la sécurité.
 
 ## <a name="usage-scenarios"></a>Scénarios d'utilisation
 
@@ -69,21 +69,21 @@ La nécessité d’effectuer une analyse hors connexion sera également Microsof
 
 L’invite peut se produire via une notification, semblable à ce qui suit :
 
-:::image type="content" source="../../media/notification.png" alt-text="Notification d’Microsoft Defender hors ligne.":::
+:::image type="content" source="../../media/notification.png" alt-text="Notification d’Microsoft Defender hors ligne" lightbox="../../media/notification.png":::
 
 L’utilisateur est également informé dans le client Windows Defender client.
 
 Dans Configuration Manager, vous pouvez identifier l’état des points de terminaison en naviguant vers Monitoring **> Overview > Security > Endpoint Protection Status > System Center Endpoint Protection Status**.
 
-Microsoft Defender hors ligne analyses sont indiquées sous  l’état de correction des programmes malveillants comme **analyse hors connexion requise.**
+Microsoft Defender hors ligne analyses sont indiquées sous État de correction  des programmes malveillants comme **analyse hors connexion requise**.
 
-:::image type="content" source="../../media/sccm-wdo.png" alt-text="Microsoft Defender hors ligne’analyse est requise.":::
+:::image type="content" source="../../media/sccm-wdo.png" alt-text="Indicateur d’une analyse de Microsoft Defender hors ligne" lightbox="../../media/sccm-wdo.png":::
 
 ## <a name="configure-notifications"></a>Configurer les notifications
 
 Microsoft Defender hors ligne notifications sont configurées dans le même paramètre de stratégie que les autres notifications de Microsoft Defender AV.
 
-Pour plus d’informations sur les notifications Windows Defender, consultez la rubrique Configurer les notifications qui apparaissent [sur les points de terminaison.](configure-notifications-microsoft-defender-antivirus.md)
+Pour plus d’informations sur les notifications Windows Defender, consultez la rubrique Configurer les notifications qui apparaissent [sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md).
 
 ## <a name="run-a-scan"></a>Effectuer une analyse
 
@@ -106,11 +106,11 @@ Utilisez les cmdlets suivantes :
 Start-MpWDOScan
 ```
 
-Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter les [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Antivirus Defender.
+Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir utiliser les [cmdlets PowerShell pour configurer et exécuter les cmdlets Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et [Antivirus Defender](/powershell/module/defender/).
 
 ### <a name="use-windows-management-instruction-wmi-to-run-an-offline-scan"></a>Utiliser Windows Management Instruction (WMI) pour exécuter une analyse hors connexion
 
-Utilisez la [**MSFT_MpWDOScan**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) pour exécuter une analyse hors connexion.
+Utilisez la [**MSFT_MpWDOScan**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) classe pour exécuter une analyse hors connexion.
 
 L’extrait de script WMI suivant exécute immédiatement une analyse Microsoft Defender hors ligne, ce qui entraîne le redémarrage du point de terminaison, l’analyse hors connexion, puis le redémarrage et le démarrage dans Windows.
 
@@ -124,18 +124,18 @@ Pour plus d’informations, voir les informations suivantes :
 
 ### <a name="use-the-windows-defender-security-app-to-run-an-offline-scan"></a>Utiliser l’application Windows Defender security pour exécuter une analyse hors connexion
 
-1. Ouvrez l Sécurité Windows application en cliquant sur l’icône de bouclier dans la barre des tâches ou en recherchant Defender pour cloud dans le menu **Démarrer.**
+1. Ouvrez l Sécurité Windows application en cliquant sur l’icône de bouclier dans la barre des tâches ou en recherchant **Defender pour cloud dans le menu Démarrer**.
 
 2. Cliquez sur la **vignette & protection** contre les virus contre les menaces (ou sur l’icône de bouclier dans la barre de menus de gauche), puis sur l’étiquette **d’analyse** avancée :
 
-3. Sélectionnez **Microsoft Defender hors ligne scan,** puis cliquez **sur Analyser maintenant.**
+3. Sélectionnez **Microsoft Defender hors ligne scan,** puis cliquez **sur Analyser maintenant**.
 
     > [!NOTE]
-    > Dans Windows 10 version 1607, l’analyse hors connexion peut  être exécuté à partir du Windows Defender de sécurité Windows Paramètres Update & ou à partir du \>  \>  client Windows Defender.
+    > Dans Windows 10 version 1607,  \> l’analyse hors connexion peut être exécuté à partir du Windows Defender de sécurité Windows Paramètres **Update &** \> ou à partir du client Windows Defender.
 
 ## <a name="review-scan-results"></a>Passer en revue les résultats de l’analyse
 
-Microsoft Defender hors ligne résultats de l’analyse sont répertoriés dans la section Historique [d’analyse de l Sécurité Windows app.](microsoft-defender-security-center-antivirus.md)
+Microsoft Defender hors ligne résultats de l’analyse sont répertoriés dans la [section Historique d’analyse de l Sécurité Windows app.](microsoft-defender-security-center-antivirus.md)
 
 ## <a name="related-articles"></a>Articles connexes
 

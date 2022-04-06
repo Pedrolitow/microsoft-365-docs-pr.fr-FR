@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 01/21/2021
+ms.date: 04/01/2022
 audience: ITPro
 ms.topic: article
 ms.prod: m365-security
@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Les clients Microsoft Defender pour Office 365 E5 et P1 et P2 peuvent désormais obtenir une vue à 360 degrés de chaque courrier électronique avec une page d’entité de messagerie.
-ms.openlocfilehash: d75ebd9b54fc5e7919154a4f65e0d5fc0e77e117
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+description: Microsoft Defender pour Office 365 clients E5 et P1 et P2 peuvent désormais obtenir une vue à 360 degrés de chaque courrier électronique avec une page d’entité de messagerie.
+ms.openlocfilehash: 1b74c4c79d05a4a52434810527c92de801b329f0
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475452"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634820"
 ---
 # <a name="the-email-entity-page"></a>Page de l’entité d’e-mail
 
@@ -32,7 +32,7 @@ ms.locfileid: "64475452"
 - [Utiliser les onglets de page d’entité de messagerie](#use-email-entity-page-tabs)
 - [Nouvelle page de l’entité de messagerie](#new-to-the-email-entity-page)
 
-Les administrateurs de Microsoft Defender pour Office 365 E5 et de Defender pour Office P1 et P2 ont une vue à 360 degrés du courrier électronique à l’aide de la **page** Entité de messagerie. Cette page de messagerie a été créée pour améliorer les informations livrées dans le volant « [Détails des e-mails » de l’Explorateur de menaces](threat-explorer-views.md).
+Les administrateurs Microsoft Defender pour Office 365 E5 et Defender pour Office P1 et P2 ont une vue à 360 degrés du courrier électronique à l’aide de la **page** Entité de messagerie. Cette page de messagerie a été créée pour améliorer les informations livrées dans le volant « [Détails des e-mails » de l’Explorateur de menaces](threat-explorer-views.md).
 
 ## <a name="reach-the-email-entity-page"></a>Atteindre la page d’entité de messagerie
 
@@ -88,7 +88,7 @@ Les administrateurs peuvent afficher un aperçu des e-mails dans les boîtes aux
 
 Ces détails sont spécifiques aux pièces jointes et URL des e-mails. Les utilisateurs peuvent voir ces détails en allant dans l’Explorateur  et en appliquant le filtre de technologie de détection au détonation de fichier ou à la détonation d’URL. Les e-mails filtrés pour la détonation de fichiers contiennent un fichier malveillant avec des détails de détonation, et ceux filtrés pour les URL contiennent une URL malveillante et ses détails de détonation.
 
-Les utilisateurs voient des détails de détonation enrichis pour les pièces jointes ou URL malveillantes connues trouvées dans leurs e-mails, qui ont été détonées pour leur client spécifique. Il comprend la chaîne de détonation, le résumé de la détonation, la capture d’écran et les détails du comportement observé pour aider les clients à comprendre pourquoi la pièce jointe ou l’URL a été considérée comme malveillante et désaxtée.
+Les utilisateurs voient des détails de détonation enrichis pour les pièces jointes ou URL malveillantes connues trouvées dans leurs e-mails, qui ont été détonées pour leur client spécifique. Il inclut la chaîne de détonation, le résumé de détonation, la capture d’écran et les détails du comportement observé pour aider les clients à comprendre pourquoi la pièce jointe ou l’URL a été considérée comme malveillante et détonée.
 
 1. *Chaîne de détonation*. Une détonation de fichier ou d’URL unique peut déclencher plusieurs détonations. La chaîne de détonation suit le chemin d’accès des détonations, y compris le fichier ou l’URL malveillant d’origine à l’origine du verdict, ainsi que tous les autres fichiers ou URL affectés par la détonation. Ces URL ou fichiers joints peuvent ne pas être directement présents dans l’e-mail, mais il est important d’inclure cette analyse pour déterminer pourquoi le fichier ou l’URL a été trouvé comme malveillant.  
 
@@ -119,6 +119,14 @@ Les utilisateurs voient des détails de détonation enrichis pour les pièces jo
 - *Niveau de réclamation en bloc (BCL)* : niveau de réclamation en bloc (BCL) du message. Une valeur BCL supérieure indique qu’un message en nombre est plus susceptible de générer des réclamations (résultat naturel si le courrier électronique est susceptible d’être du courrier indésirable).
 
 - *Niveau de confiance du courrier indésirable (SCL)* : niveau de confiance du courrier indésirable (SCL) du message. Plus cette valeur est élevée, plus il est probable que le message est un courrier indésirable.
+
+- *Type de client* : indique le type de client à partir duquel le courrier électronique a été envoyé comme REST.
+
+- *Forwarding*: For scenarios with autoforwaridng, it indicates the forwarding user as well as the forwarding type like ETR or SMTP forwarding. 
+
+- *Liste de distribution* : affiche la liste de distribution, si le destinataire a receieved l’e-mail en tant que membre de la liste. Il affiche la liste de distribution de niveau supérieur si des listes de distribution imbrmbrées sont impliquées.  
+
+- *À, Cc* : indique les adresses répertoriées dans les champs À et Cc d’un e-mail. Les informations de ces champs sont limitées à 5 000 caractères. 
 
 - *Nom de domaine* : est le nom de domaine de l’expéditeur.
 

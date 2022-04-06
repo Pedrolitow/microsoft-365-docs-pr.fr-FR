@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment les paramètres de sécurité par défaut peuvent aider à protéger votre organisation contre les attaques liées aux identités en fournissant des paramètres de sécurité préconfigurés pour Microsoft 365 Business Premium.
-ms.openlocfilehash: dfd0d3edff541d828b70d383641aaf66c93826b6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 9684dc2be113d6f511f1a84e8865ac04a6881ecc
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331124"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634666"
 ---
 # <a name="turn-on-security-defaults-for-microsoft-365-business-premium"></a>Activer les paramètres de sécurité par défaut pour Microsoft 365 Business Premium
 
@@ -76,9 +76,13 @@ Les valeurs par défaut de sécurité sont disponibles pour tous les clients, ta
 Si vous souhaitez utiliser l’accès conditionnel pour configurer des stratégies équivalentes à celles activées par défaut de sécurité, consultez les guides pas à pas suivants :
 
 - [Exiger l’authentification multifacteur pour les administrateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
+
 - [Exiger l’mf pour la gestion Azure](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
+
 - [Bloquer l’authentification héritée](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+
 - [Exiger l’authentification multifacteur pour tous les utilisateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
+
 - [Exiger Azure AD’inscription à](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) l’ation MFA : nécessite Azure AD Identity Protection, qui fait partie de Azure Active Directory Premium P2
 
 Pour en savoir plus sur l’accès conditionnel, voir [qu’est-ce que l’accès conditionnel ?](/azure/active-directory/conditional-access/overview) Pour plus d’informations sur la création de stratégies d’accès conditionnel, voir [Créer une stratégie d’accès conditionnel](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy).

@@ -1,5 +1,5 @@
 ---
-title: Images d’un appareil
+title: Images d’appareil
 description: Exigences relatives aux images lors de la commande de nouveaux appareils ou de la réutilisation d’appareils existants
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -12,32 +12,37 @@ ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: f1d00c12512b70ffd62372aaeae787acf1911573
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 294531305321901dfa704462471d1573b9cb4b88
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330284"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64635106"
 ---
-# <a name="device-images"></a>Images d’un appareil
+# <a name="device-images"></a>Images d’appareil
 
 Que vous commandez de [nouveaux](#new-devices) appareils [](#existing-devices) ou réutilisiez des appareils existants, plusieurs options s’offrent à vous pour vous assurer que l’image de l’appareil répond aux exigences [de l’appareil](device-requirements.md#check-hardware-requirements).
 
 ## <a name="new-devices"></a>les nouveaux périphériques et
 
-Lorsque vous commandez un nouvel appareil auprès d’un fabricant [approuvé, suivez](device-requirements.md#minimum-requirements) ces étapes pour vous assurer qu’ils expédient des appareils avec la configuration Microsoft Manged Desktop image et logicielle appropriées.
+Lorsque vous commandez un nouvel appareil auprès d’un fabricant [approuvé, suivez](device-requirements.md#minimum-requirements) ces étapes pour vous assurer qu’ils expédient des appareils avec la configuration Microsoft Managed Desktop image et logicielle appropriées.
 
 Chaque fois que vous prévoyez d’inscrire un modèle d’appareil particulier dans le service pour la première fois, vous devez tester un exemple pour vous assurer qu’il offre l’expérience utilisateur que vous attendez. Pour plus d’informations, voir [Valider les nouveaux appareils](/microsoft-365/managed-desktop/get-started/validate-device).
+
+### <a name="windows-10-pro"></a>Windows 10 Professionnel
+Si vous commandez des appareils avec Windows 10, travaillez directement avec votre représentant commercial OEM. Depuis le 1er novembre 2022, les fabricants OEM peuvent uniquement vendre des Windows 10 Professionnel sous la Windows 11 Professionnel avec Windows 10 Professionnel licence rétrogradation. Pour plus d’informations, [voir Windows 10 dates de prise](/lifecycle/products/windows-10-enterprise-and-education?msclkid=4a74c7b9b04111eca478c6fdafbc51a5) en charge des dates de retrait Windows 10 versions.
+
+Pour les clients qui souhaitent passer à Windows 11, vous trouverez plus d’informations sur le processus [recommandé ici](/microsoft-365/managed-desktop/intro/win11-overview). 
 
 ### <a name="dell"></a>Dell
 
 Travaillez directement avec le représentant commercial Dell.
 
-Le représentant s’assure que l’image approuvée par Microsoft Manged Desktop est appliquée aux appareils dans votre ordre. Pour plus d’informations sur les appareils Dell, l’image et le processus de commande, contactez MMD_at_dell@dell.com.
+Le représentant s’assure que l’image approuvée par Microsoft Managed Desktop est appliquée aux appareils dans votre ordre. Pour plus d’informations sur les appareils Dell, l’image et le processus de commande, contactez MMD_at_dell@dell.com.
 
 ### <a name="hp"></a>HP
 
-Lorsque vous commandez de nouveaux appareils auprès de HP, n’oubliez pas d’utiliser la référence SKU spécifique répertoriée dans la section Exigences supplémentaires pour chaque modèle trouvé dans la page Acheter [Windows Pro appareils métier](https://www.microsoft.com/windows/business/devices#view-all-filter). Filtrez l’affichage pour lister les Microsoft Manged Desktop périphériques.
+Lorsque vous commandez de nouveaux appareils auprès de HP, n’oubliez pas d’utiliser la référence SKU spécifique répertoriée dans la section Exigences supplémentaires pour chaque modèle trouvé dans la page Acheter [Windows Pro appareils métier](https://www.microsoft.com/windows/business/devices#view-all-filter). Filtrez l’affichage pour lister les Microsoft Managed Desktop appareils.
 
 Si vous commandez un appareil à partir de HP qui a été approuvé à titre [d’exception](customizing.md), mais qui n’est pas répertorié dans la page Liste des appareils, demandez la référence SKU à utiliser pour votre modèle. Nous allons travailler avec HP pour vous obtenir ces informations à l’aide de votre demande d’exception. Vous pouvez également contacter HP directement pour toute question sur les appareils et les instructions de commande des appareils à l’aide des adresses suivantes :
 
@@ -50,11 +55,11 @@ Si vous commandez un appareil à partir de HP qui a été approuvé à titre [d�
 
 Lorsque vous commandez des appareils à partir de Lenovo, vous devez indiquer un numéro de partie spécifique dans l’ordre. Contactez votre représentant commercial Lenovo ou votre partenaire de canal Lenovo et demandez-lui de créer *un « modèle* d’offre spéciale » avec un système qui répond à nos besoins [en matière d’appareils](device-requirements.md#minimum-requirements).
 
-Pour inclure une image pré-chargée compatible avec Microsoft Manged Desktop, demandez au représentant commercial de faire référence au « numéro de la partie de bloc de construction système *SBB0Q94938 - MmD Enablement* ». Travaillez en partenariat avec votre représentant commercial Lenovo ou votre partenaire de canal Lenovo pour les services recommandés, le support et les services d’imagerie.
+Pour inclure une image pré-chargée compatible avec Microsoft Managed Desktop, demandez au représentant commercial de référencer « Numéro de la partie de bloc de construction système *SBB0Q94938 - MmD Enablement* ». Travaillez en partenariat avec votre représentant commercial Lenovo ou votre partenaire de canal Lenovo pour les services recommandés, le support et les services d’imagerie.
 
 ### <a name="microsoft"></a>Microsoft
 
-Tous les appareils Microsoft qui répondent aux exigences de l’appareil sont avec une image qui fonctionne avec Microsoft Manged Desktop. Aucune autre étape n’est requise.
+Tous les appareils Microsoft qui répondent aux exigences de l’appareil sont produits avec une image qui fonctionne avec Microsoft Managed Desktop. Aucune autre étape n’est requise.
 
 Pour obtenir la dernière image disponible dans l’usine sur un appareil Microsoft, faites appel à votre spécialiste Surface pour utiliser le processus « Po à basculement » surface.
 
@@ -67,7 +72,7 @@ Vous pouvez réutiliser des appareils existants tant qu’ils répondent aux deu
 
 Suivez les étapes pertinentes pour votre fabricant.
 
-Vous pouvez réimager des appareils avec une image du fabricant ou à l’aide Microsoft Manged Desktop « image universelle ». Pour obtenir une image de fabricant appropriée, commandez au moins un [nouvel appareil](#new-devices) du modèle que vous reutilisez. Ensuite, vous pouvez obtenir l’image à partir de cet appareil et l’appliquer à d’autres appareils du même modèle.
+Vous pouvez réimager des appareils avec une image du fabricant ou à l’aide Microsoft Managed Desktop « image universelle ». Pour obtenir une image de fabricant appropriée, commandez au moins un [nouvel appareil](#new-devices) du modèle que vous reutilisez. Ensuite, vous pouvez obtenir l’image à partir de cet appareil et l’appliquer à d’autres appareils du même modèle.
 
 > [!NOTE]
 > Il vous incombe de créer, tester et déployer des images. Nous vous recommandons également d’utiliser les images appropriées fournies par le fabricant autant que possible au lieu d’images personnalisées . cela inclut l'« image universelle ».
@@ -100,9 +105,9 @@ Ces images utilisent l’Windows recovery environment (WinRE). Il s’agit d’u
 
 ### <a name="universal-image"></a>Image universelle
 
-Microsoft Manged Desktop a créé une image contenant des Windows Pro et des Microsoft 365 Apps pour Enterprise que vous pouvez utiliser avec Microsoft Manged Desktop.
+Microsoft Managed Desktop a créé une image contenant des Windows Pro et des Microsoft 365 Apps pour Enterprise que vous pouvez utiliser avec Microsoft Managed Desktop.
 
-Toutefois, il est préférable d’utiliser des images adaptées aux Microsoft Manged Desktop fournies par le fabricant autant que possible, même si cela signifie qu’une version Windows plus ancienne doit être mise à jour une fois que l’utilisateur s’est mis en ligne. L’utilisation Microsoft Manged Desktop’image universelle doit être une option finale.
+Toutefois, il est préférable d’utiliser des images adaptées aux Microsoft Managed Desktop fournies par le fabricant autant que possible, même si cela signifie qu’une version Windows plus ancienne doit être mise à jour une fois que l’utilisateur s’est mis en ligne. L’utilisation Microsoft Managed Desktop’image universelle doit être une option finale.
 
 - Nous mettez à jour l’image avec les mises à jour de qualité mensuelles les Windows les plus récentes tous les 30 à 60 jours, et Microsoft 365 Apps les mises à jour Enterprise au moins deux fois par an.
 - L’image contient un package d’approvisionnement de récupération pour s’assurer que Microsoft 365 Apps pour Enterprise est restaurée après Windows scénarios de récupération.

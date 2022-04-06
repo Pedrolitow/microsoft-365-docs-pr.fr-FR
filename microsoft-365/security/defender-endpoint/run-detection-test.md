@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 41ba14fd2e4a9e3726e4ef4287812cf8d3ffb2d1
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 1d8459633d00d759fda1584e0084cd8ed4e12633
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767238"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477256"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré
 
@@ -56,8 +56,8 @@ Exécutez le script PowerShell suivant sur un appareil nouvellement intégré po
 
    1. Cliquez avec le bouton droit **sur Invite de** commandes et **sélectionnez Exécuter en tant qu’administrateur**.
 
-      ![Fenêtre menu Démarrer pointant sur Exécuter en tant qu’administrateur.](images/run-as-admin.png)
-
+      :::image type="content" source="images/run-as-admin.png" alt-text="Le menu Démarrer pointant sur Exécuter en tant qu’administrateur" lightbox="images/run-as-admin.png":::
+    
 3. À l’invite, copiez et exécutez la commande suivante :
 
    ```powershell
@@ -66,7 +66,7 @@ Exécutez le script PowerShell suivant sur un appareil nouvellement intégré po
 
 La fenêtre d’invite de commandes se ferme automatiquement. Si elle réussit, une nouvelle alerte s’affiche dans le portail pour l’appareil intégré dans environ dix minutes.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Intégrer des appareils Windows 10](configure-endpoints.md)
 - [Serveurs intégrés](configure-server-endpoints.md)

@@ -1,5 +1,5 @@
 ---
-title: Configurer et configurer Microsoft Defender pour point de terminaison Plan 1
+title: Configurer Microsoft Defender pour Endpoint Plan 1
 description: Découvrez comment configurer Defender pour Endpoint Plan 1. Examinez les conditions requises, planifiez votre déploiement et définissez votre environnement.
 search.appverid: MET150
 author: denisebmsft
@@ -16,14 +16,14 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 741450f2573e0d750a1d3de5012f97cf16a0780d
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: e2a8f7166e1fa3a05b95b1a48dbf91b30ef34224
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569089"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470370"
 ---
-# <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Configurer et configurer Microsoft Defender pour point de terminaison Plan 1
+# <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Configurer Microsoft Defender pour Endpoint Plan 1
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -32,7 +32,7 @@ Cet article explique comment configurer Defender pour Endpoint Plan 1. Que vous 
 
 ## <a name="the-setup-and-configuration-process"></a>Processus d’installation et de configuration
 
-:::image type="content" source="images/mde-p1-deploymentflow.png" alt-text="Flux de configuration et de déploiement pour Microsoft Defender pour point de terminaison Plan 1" lightbox="images/mde-p1-deploymentflow.png":::
+:::image type="content" source="images/mde-p1-deploymentflow.png" alt-text="Flux de configuration et de déploiement de Microsoft Defender pour Endpoint Plan 1" lightbox="images/mde-p1-deploymentflow.png":::
 
 Le processus d’installation et de configuration général de Defender pour Endpoint Plan 1 est le suivant : <br/><br/>
 
@@ -53,7 +53,7 @@ Le tableau suivant répertorie les conditions de base requises pour Defender pou
 
 | Conditions requises | Description |
 |:---|:---|
-| Conditions d'octroi de licence | Defender pour Endpoint Plan 1 |
+| Conditions d'octroi de licence | Defender for Endpoint Plan 1 (anciennement appelé Microsoft Defender for Endpoint Lite)|
 | Configuration requise pour le navigateur | Microsoft Edge <br/> Internet Explorer version 11 <br/> Google Chrome |
 | Systèmes d’exploitation | Windows 10, version 1709 ou ultérieure <br/>macOS : 11.5 (Big Sur), 10.15.7 (Contrôle), ou 10.14.6 (Mojave) <br/>iOS <br/>Système d’exploitation Android  |
 | Datacenter | L’un des emplacements de centre de données suivants : <br/>- Union européenne <br/>- Royaume-Uni <br/>- États-Unis |
@@ -66,7 +66,7 @@ Lorsque vous planifiez votre déploiement, vous pouvez choisir parmi différente
 | Méthode | Description |
 |:---|:---|
 | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (inclus dans Microsoft Endpoint Manager) | Utiliser Intune pour gérer les points de terminaison dans un environnement natif cloud |
-| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) et [Configuration Manager](/mem/configmgr/core/understand/introduction) (inclus dans Microsoft Endpoint Manager) | Utiliser Intune et Configuration Manager pour gérer les points de terminaison et les charges de travail qui couvrent un environnement local et cloud |
+| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) configuration [manager](/mem/configmgr/core/understand/introduction) (inclus dans Microsoft Endpoint Manager) | Utiliser Intune et Configuration Manager pour gérer les points de terminaison et les charges de travail qui couvrent un environnement local et cloud |
 | [Configuration Manager](/mem/configmgr/core/understand/introduction) | Utiliser Configuration Manager pour protéger les points de terminaison locaux avec la puissance basée sur le cloud de Defender for Endpoint |
 | Script local téléchargé à partir du portail Microsoft 365 Defender | Utiliser des scripts locaux sur les points de terminaison pour exécuter un pilote ou intégrer seulement quelques appareils |
 
@@ -77,7 +77,7 @@ Pour en savoir plus sur les options de déploiement, voir [Planifier votre defen
 **[Obtenir l’affiche de déploiement](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)**
 
 > [!TIP]
-> Pour plus d’informations sur la planification de votre déploiement, voir [Plan your Microsoft Defender pour point de terminaison deployment](deployment-strategy.md).
+> Pour plus d’informations sur la planification de votre déploiement, voir [Plan your Microsoft Defender for Endpoint deployment](deployment-strategy.md).
 
 ## <a name="set-up-your-tenant-environment"></a>Configurer votre environnement client
 
@@ -102,9 +102,9 @@ Microsoft recommande d’attribuer uniquement aux utilisateurs le niveau d’aut
 
 Le tableau suivant décrit les rôles clés à prendre en compte pour Defender for Endpoint dans votre organisation : <br/><br/>
 
-| Rôle | Description |
+| Role | Description |
 |:---|:---|
-| Administrateurs globaux (également appelés administrateurs globaux) <br/><br/> *En tant que meilleure pratique, limitez le nombre d’administrateurs globaux.* | Les administrateurs globaux peuvent effectuer toutes sortes de tâches. La personne qui a inscrit votre entreprise à Microsoft 365 ou à Microsoft Defender pour point de terminaison Plan 1 est un administrateur général par défaut. <br/><br/> Les administrateurs globaux peuvent accéder/modifier les paramètres sur tous les portails Microsoft 365, tels que : <br/>- Le Centre d'administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender portail ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- centre Microsoft Endpoint Manager’administration centrale ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  |
+| Administrateurs globaux (également appelés administrateurs globaux) <br/><br/> *En tant que meilleure pratique, limitez le nombre d’administrateurs globaux.* | Les administrateurs globaux peuvent effectuer toutes sortes de tâches. La personne qui a inscrit votre entreprise à Microsoft 365 ou Microsoft Defender pour Endpoint Plan 1 est un administrateur général par défaut. <br/><br/> Les administrateurs globaux peuvent accéder/modifier les paramètres sur tous les portails Microsoft 365, tels que : <br/>- Le Centre d'administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender portail ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- centre Microsoft Endpoint Manager’administration centrale ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  |
 | Administrateurs de sécurité (également appelés administrateurs de sécurité) | Les administrateurs de sécurité peuvent effectuer des tâches d’opérateur de sécurité ainsi que les tâches suivantes : <br/>- Surveiller les stratégies liées à la sécurité <br/>- Gérer les menaces et alertes de sécurité <br/>- Afficher les rapports |
 | Opérateur de sécurité | Les opérateurs de sécurité peuvent effectuer des tâches de lecteur de sécurité ainsi que les tâches suivantes : <br/>- Afficher des informations sur les menaces détectées <br/>- Examiner les menaces détectées et y répondre  |
 | Lecteur Sécurité | Les lecteurs de sécurité peuvent effectuer les tâches suivantes : <br/>- Afficher les stratégies liées à la sécurité dans Microsoft 365 services <br/>- Afficher les menaces et alertes de sécurité <br/>- Afficher les rapports  |
@@ -119,8 +119,8 @@ Lorsque vous êtes prêt à intégrer les points de terminaison de votre organis
 
 |Système d’exploitation de point de terminaison | Méthodes d’intégration|
 |---|---|
-| Windows 10 | [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Mobile Gestionnaire de périphériques](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md)  |
-| macOS | [Scripts locaux](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Gestion des appareils](mac-install-with-other-mdm.md) |
+| Windows 10 | [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Gestionnaire de périphériques mobiles](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md)  |
+| macOS | [Scripts locaux](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Gestion des appareils mobiles](mac-install-with-other-mdm.md) |
 | iOS |[Basée sur l’application](ios-install.md) |
 | Android | [Microsoft Endpoint Manager](android-intune.md) |
 
@@ -138,7 +138,7 @@ Pour configurer votre protection nouvelle génération dans Microsoft Endpoint M
 
 2. **Sélectionnez Endpoint** **securityAntivirus** > , puis sélectionnez une stratégie existante. (Si vous n’avez pas de stratégie existante, créez-en une.)
 
-3. Définissez ou modifiez vos paramètres de configuration antivirus. Besoin d’aide ? Reportez-vous aux ressources suivantes : <br/>
+3. Définissez ou modifiez vos paramètres de configuration antivirus. Vous avez besoin d’aide ? Reportez-vous aux ressources suivantes : <br/>
 
    - [Paramètres pour Windows 10 Antivirus Microsoft Defender stratégie dans Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
    - [Configurer Defender pour endpoint sur les fonctionnalités iOS](ios-configure-features.md)
@@ -258,7 +258,7 @@ Vous pouvez configurer Defender pour le point de terminaison pour bloquer ou aut
 10. Sous **l’onglet Révision + créer** , examinez les paramètres de votre stratégie, puis choisissez **Créer**. La stratégie sera appliquée à tous les points de terminaison qui ont été prochainement intégrés à Defender for Endpoint.
 
 > [!TIP]
-> Pour plus d’informations, voir [Comment contrôler des périphériques USB et d’autres supports amovibles](control-usb-devices-using-intune.md) à l’aide Microsoft Defender pour point de terminaison.
+> Pour plus d’informations, voir Comment contrôler des périphériques USB et d’autres supports amovibles à l’aide [de Microsoft Defender for Endpoint](control-usb-devices-using-intune.md).
 
 ### <a name="network-protection"></a>Protection réseau
 
@@ -293,7 +293,7 @@ Grâce à la protection du réseau, vous pouvez protéger votre organisation con
 8. Sous **l’onglet Révision + créer** , examinez les paramètres de votre stratégie, puis choisissez **Créer**. La stratégie sera appliquée à tous les points de terminaison qui ont été prochainement intégrés à Defender for Endpoint.
 
 > [!TIP]
-> Vous pouvez utiliser d’autres méthodes, telles que Windows PowerShell ou stratégie de groupe, pour activer la protection du réseau. Pour plus d’informations, voir [Activer la protection réseau](enable-network-protection.md).
+> Vous pouvez utiliser d’autres méthodes, telles que Windows PowerShell ou une stratégie de groupe, pour activer la protection du réseau. Pour plus d’informations, voir [Activer la protection réseau](enable-network-protection.md).
 
 ### <a name="web-protection"></a>Protection Web
 
@@ -399,8 +399,8 @@ Pour vous aider à planifier votre déploiement WDAC, consultez les ressources s
 
 - [Windows Defender de contrôle d’application dans différents scénarios : types d’appareils](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Maintenant que vous avez passé par le processus d’installation et de configuration, l’étape suivante consiste à commencer à utiliser Defender pour Endpoint. 
 
-- [Démarrage avec Defender pour Endpoint Plan 1](mde-plan1-getting-started.md)
+- [Mise en place de Defender pour Endpoint Plan 1](mde-plan1-getting-started.md)

@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: de9121320e339ecff2b665737a6b4ccebe5e0fd0
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 5b6662a3268fa6ab83c103eb84cd1d77ab06d37d
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933778"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476398"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Recherche de menaces dans l’Explorateur de menaces pour Microsoft Defender Office 365
 
@@ -34,16 +34,16 @@ Contenu de cet article :
 - [Améliorations de l’expérience de recherche de menaces](#improvements-to-threat-hunting-experience)
 
 > [!NOTE]
-> Cela fait partie d’une série de **3** articles sur l’Explorateur de menaces **,** la sécurité du courrier électronique et les détections de l’Explorateur et en temps réel **(telles** que les différences entre les outils et les autorisations nécessaires pour les exploiter). Les deux autres articles de cette série sont la sécurité de la messagerie avec [l’Explorateur](email-security-in-microsoft-defender.md) de menaces et l’Explorateur de menaces et [les détections en temps réel.](real-time-detections.md)
+> Cela fait partie d’une série de **3 articles** sur l’Explorateur de menaces **(Explorateur),** la sécurité du **courrier électronique et** les détections de l’Explorateur et en temps réel ( **telles** que les différences entre les outils et les autorisations nécessaires pour les exploiter). Les deux autres articles de cette série sont la sécurité de la messagerie avec [l’Explorateur](email-security-in-microsoft-defender.md) de menaces et [l’Explorateur de menaces et les détections en temps réel](real-time-detections.md).
 
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Si votre organisation dispose de [Microsoft Defender](defender-for-office-365.md)pour Office 365 et que vous disposez des [autorisations,](#required-licenses-and-permissions)vous pouvez utiliser l’Explorateur ou les  **détections** en temps réel pour détecter et corriger les menaces.
+Si votre organisation dispose de [Microsoft Defender pour Office 365](defender-for-office-365.md) et que vous disposez des [autorisations](#required-licenses-and-permissions), vous pouvez utiliser l’Explorateur ou les **détections** en temps réel pour détecter et corriger les menaces.
 
-In the Microsoft 365 Defender portal at <https://security.microsoft.com> , go to Email & **collaboration,** and then choose **Explorer** or **Real-time detections**. Pour aller directement à la page, utilisez <https://security.microsoft.com/threatexplorer> ou <https://security.microsoft.com/realtimereports> .
+Dans le portail Microsoft 365 Defender à <https://security.microsoft.com>l’adresse , go to **Email & collaboration**, and then choose **Explorer** or **Real-time detections**. Pour aller directement à la page, utilisez ou <https://security.microsoft.com/threatexplorer> <https://security.microsoft.com/realtimereports>.
 
 Avec ces outils, vous pouvez :
 
@@ -52,97 +52,98 @@ Avec ces outils, vous pouvez :
 - Démarrer un processus d’examen et de réponse automatisé à partir d’un affichage dans l’Explorateur
 - Examiner les e-mails malveillants, et bien plus encore
 
-Pour plus d’informations, [voir Sécurité du courrier électronique avec l’Explorateur de menaces.](email-security-in-microsoft-defender.md)
+Pour plus d’informations, [voir Sécurité du courrier électronique avec l’Explorateur de menaces](email-security-in-microsoft-defender.md).
 
 ## <a name="threat-explorer-walk-through"></a>Exploration pas à pas de l’Explorateur de menaces
 
 Dans Microsoft Defender pour Office 365, il existe deux plans d’abonnement : Plan 1 et Plan 2. Les outils de recherche de menaces gérés manuellement existent dans les deux plans, sous des noms différents et avec des fonctionnalités différentes.
 
-Defender pour Office 365 Plan 1 utilise les détections en temps réel, qui est un *sous-ensemble* de l’outil de repérage de l’Explorateur de menaces *(également* appelé *Explorateur)* dans le Plan 2. Dans cette série d’articles, la plupart des exemples ont été créés à l’aide de l’Explorateur de menaces complet. Les administrateurs doivent tester les étapes des détections en temps réel pour voir où elles s’appliquent.
+Defender pour Office 365 Plan 1 utilise les détections en temps réel, qui est un *sous-ensemble* de l’outil de repérage de l’Explorateur de menaces *(également* appelé *Explorateur) dans* le Plan 2. Dans cette série d’articles, la plupart des exemples ont été créés à l’aide de l’Explorateur de menaces complet. Les administrateurs doivent tester les étapes des détections en temps réel pour voir où elles s’appliquent.
 
-Une fois que vous êtes passé à l’Explorateur, par  défaut, vous arrivez sur la **page** Programmes malveillants, mais utilisez la page d’affichage pour vous familiariser avec vos options.  Si vous recherchez du hameçonnage ou si vous êtes en train d’entrer dans une campagne contre les menaces, choisissez ces affichages.
-
-> [!div class="mx-imgBorder"]
-> ![Afficher la vue dans l’Explorateur de menaces.](../../media/view-drop-down.png)
-
-Une fois qu’une personne des opérations de sécurité (Sec Ops) sélectionne les données qu’elle souhaite voir, si  l’étendue est un affichage étroit comme les **soumissions** utilisateur ou une vue plus large, comme Tous les e-mails, elle peut utiliser le bouton Expéditeur pour filtrer davantage. N’oubliez pas de sélectionner Actualiser pour terminer vos actions de filtrage.
+Une fois que vous êtes passé à  **l’Explorateur**, par défaut, vous arrivez sur **la page Programmes** malveillants, mais utilisez la page d’affichage pour vous familiariser avec vos options. Si vous recherchez du hameçonnage ou si vous êtes en train d’entrer dans une campagne contre les menaces, choisissez ces affichages.
 
 > [!div class="mx-imgBorder"]
-> ![Bouton Expéditeur dans l’Explorateur de menaces.](../../media/sender-drop-down.png)
+> :::image type="content" source="../../media/view-drop-down.png" alt-text="Affichage dans l’Explorateur de menaces" lightbox="../../media/view-drop-down.png":::
 
-L’affinage du focus dans l’Explorateur ou la détection en temps réel peut être pensé en couches. Le premier est **View**. Le second peut être pensé comme un focus *filtré.* Par exemple, vous pouvez revenir sur les étapes que vous avez prises pour rechercher une menace en enregistrant vos décisions comme celle-ci : pour trouver le problème dans l’Explorateur, j’ai choisi l’affichage programmes malveillants avec le focus filtre **destinataire.** Cela facilite le retracage de vos étapes.
+Une fois qu’une personne des opérations de sécurité (Sec Ops) sélectionne les données qu’elle souhaite voir, si l’étendue est un affichage étroit comme les **envois d’utilisateurs** ou une  vue plus large, comme Tous les e-mails **, elle** peut utiliser le bouton Expéditeur pour filtrer davantage. N’oubliez pas de sélectionner Actualiser pour terminer vos actions de filtrage.
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="../../media/sender-drop-down.png" alt-text="Bouton Expéditeur dans l’Explorateur de menaces" lightbox="../../media/sender-drop-down.png":::
+
+
+L’affinage du focus dans l’Explorateur ou la détection en temps réel peut être pensé en couches. Le premier est **View**. Le second peut être pensé comme un focus *filtré*. Par exemple, vous pouvez revenir sur les étapes que vous avez prises pour rechercher une menace en enregistrant vos décisions comme ceci : Pour trouver le problème dans l’Explorateur, j’ai choisi l’affichage Programmes malveillants avec le **focus filtre destinataire**. Cela facilite le retracage de vos étapes.
 
 > [!TIP]
-> Si Sec Ops utilise des balises pour marquer les comptes qu’ils considèrent comme cibles à valeur élevée, elles peuvent effectuer des sélections telles que l’affichage d’hameçonnage avec un focus de filtre *Tags (inclure* une plage de dates si elle est utilisée).  Cela leur montrera toutes les tentatives de hameçonnage dirigées vers leurs cibles utilisateur à valeur élevée pendant une période de temps (par exemple, les dates où certaines attaques par hameçonnage se produisent beaucoup pour leur secteur d’activité).
+> Si Sec Ops utilise  des balises pour marquer des comptes qu’ils considèrent comme des cibles à valeur élevée, elles peuvent effectuer des sélections telles que l’affichage d’hameçonnage avec un focus de filtre *Tags (* inclure une plage de dates si elle est utilisée). Cela leur montrera toutes les tentatives de hameçonnage dirigées vers leurs cibles utilisateur à valeur élevée pendant une période de temps (par exemple, les dates où certaines attaques par hameçonnage se produisent beaucoup pour leur secteur d’activité).
 
-Les affinements peuvent être effectués sur des plages de dates à l’aide des contrôles de plage de dates. Ici, vous pouvez voir l’Explorateur en affichage **Programmes** malveillants, avec le focus du filtre **Technologie** de détection. Mais c’est le **bouton Filtre avancé** qui permet aux équipes Sec Ops d’être approfondies.
-
-> [!div class="mx-imgBorder"]
-> ![Filtre avancé dans l’Explorateur de menaces.](../../media/advanced-filter.png)
-
-Le fait **de** cliquer sur le filtre avancé fait apparaître un panneau qui permet aux chercheurs sec Ops de créer eux-mêmes des requêtes, ce qui leur permet d’inclure ou d’exclure les informations dont ils ont besoin. Le graphique et le tableau de la page Explorateur reflètent leurs résultats.
+Les affinements peuvent être effectués sur des plages de dates à l’aide des contrôles de plage de dates. Ici, vous pouvez voir l’Explorateur en affichage **Programmes** malveillants, avec le focus **du filtre Technologie** de détection. Mais c’est le **bouton Filtre avancé** qui permet aux équipes Sec Ops d’être approfondies.
 
 > [!div class="mx-imgBorder"]
-> ![Résultats d’une requête.](../../media/threat-explorer-chart-table.png)
+> :::image type="content" source="../../media/advanced-filter.png" alt-text="Filtre avancé dans l’Explorateur de menaces" lightbox="../../media/advanced-filter.png":::
+
+Le **fait de cliquer** sur le filtre avancé fait apparaître un panneau qui permet aux chercheurs sec Ops de créer eux-mêmes des requêtes, ce qui leur permet d’inclure ou d’exclure les informations dont ils ont besoin. Le graphique et le tableau de la page Explorateur reflètent leurs résultats.
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="../../media/threat-explorer-chart-table.png" alt-text="Résultats d’une requête" lightbox="../../media/threat-explorer-chart-table.png":::
 
 Utilisez le **bouton Options** de colonne pour obtenir le type d’informations sur le tableau qui serait le plus utile :
 
 > [!div class="mx-imgBorder"]
-> ![Bouton Options de colonne mis en surbrillant.](../../media/threat-explorer-column-options.png)
+> :::image type="content" source="../../media/threat-explorer-column-options.png" alt-text="Bouton Options de colonne mis en évidence" lightbox="../../media/threat-explorer-column-options.png":::
 
 > [!div class="mx-imgBorder"]
-> ![Options disponibles dans colonnes.](../../media/column-options.png)
+> :::image type="content" source="../../media/column-options.png" alt-text="Options disponibles dans colonnes" lightbox="../../media/column-options.png":::
 
-Dans la même façon, veillez à tester vos options d’affichage. Différents publics réagissent bien aux différentes présentations des mêmes données. Pour certains visiteurs, **la** carte Origines du courrier électronique peut montrer qu’une menace est répandue ou discrète plus rapidement que l’option  d’affichage Campagne juste à côté. Sec Ops peut utiliser ces affichages pour mieux faire ressortir la nécessité d’une sécurité et d’une protection, ou pour une comparaison ultérieure, afin de démontrer l’efficacité de leurs actions.
-
-> [!div class="mx-imgBorder"]
-> ![Carte des origines du courrier électronique.](../../media/threat-explorer-email-origin-map.png)
+Dans la même façon, veillez à tester vos options d’affichage. Différents publics réagissent bien aux différentes présentations des mêmes données. Pour certains visiteurs **, la carte** Origines du courrier électronique peut montrer qu’une menace est répandue ou discrète plus rapidement que l’option d’affichage Campagne juste à côté. Sec Ops peut utiliser ces affichages pour mieux faire ressortir la nécessité d’une sécurité et d’une protection, ou pour une comparaison ultérieure, afin de démontrer l’efficacité de leurs actions.
 
 > [!div class="mx-imgBorder"]
-> ![Options d’affichage de campagne.](../../media/threat-explorer-campaign-display.png)
+> :::image type="content" source="../../media/threat-explorer-email-origin-map.png" alt-text="Carte origines du courrier électronique" lightbox="../../media/threat-explorer-email-origin-map.png":::
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="../../media/threat-explorer-campaign-display.png" alt-text="Options d’affichage campagne" lightbox="../../media/threat-explorer-campaign-display.png":::
 
 ### <a name="email-investigation"></a>Examen par courrier électronique
 
 Lorsque vous voyez un e-mail suspect, cliquez sur le nom pour développer le volant sur la droite. Ici, la bannière qui permet à Sec Ops de voir la [page d’entité de](mdo-email-entity-page.md) messagerie est disponible.
 
-La page d’entité de messagerie regroupe le contenu qui se trouve sous **Détails,** **Pièces jointes,** **Appareils,** mais inclut des données plus organisées. Cela inclut des éléments tels que les résultats DMARC, l’affichage en texte simple de l’en-tête de l’e-mail avec une option de copie, les informations de verdict sur les pièces jointes qui ont été détonées en toute sécurité et les fichiers supprimés (il peut s’agir d’adresses IP contactées et de captures d’écran de pages ou de fichiers). Les URL et leurs verdicts sont également répertoriés avec des détails similaires signalés.
+La page d’entité de messagerie regroupe le contenu qui se trouve sous **Détails**, Pièces **jointes****, Appareils**, mais inclut des données plus organisées. Cela inclut des éléments tels que les résultats DMARC, l’affichage en texte simple de l’en-tête de l’e-mail avec une option de copie, les informations de verdict sur les pièces jointes qui ont été détonées en toute sécurité et les fichiers supprimés (il peut s’agir d’adresses IP contactées et de captures d’écran de pages ou de fichiers). Les URL et leurs verdicts sont également répertoriés avec des détails similaires signalés.
 
-Lorsque vous atteignez cette étape, la page d’entité de messagerie sera essentielle à l’étape finale , à savoir la *correction.*
+Lorsque vous atteignez cette étape, la page d’entité de messagerie sera essentielle à l’étape *finale ( correction*).
 
 > [!div class="mx-imgBorder"]
-> ![Page de l’entité de messagerie.](../../media/threat-explorer-email-entity-page.png)
+> :::image type="content" source="../../media/threat-explorer-email-entity-page.png" alt-text="Page de l’entité de messagerie" lightbox="../../media/threat-explorer-email-entity-page.png":::
 
 > [!TIP]
-> Pour en savoir plus sur la page d’entité de messagerie enrichie (voir ci-dessous sous l’onglet Analyse), y compris les résultats des pièces jointes détonées, les résultats pour les URL incluses et l’aperçu de courrier électronique sécurisé, cliquez [ici.](mdo-email-entity-page.md) 
+> Pour en savoir plus sur la page d’entité de messagerie enrichie (voir ci-dessous sous l’onglet Analyse), y compris les résultats des pièces jointes détonées, les résultats pour les URL incluses et l’aperçu de courrier électronique sécurisé, cliquez [ici.](mdo-email-entity-page.md)
 
 > [!div class="mx-imgBorder"]
-> ![Onglet Analyse de la page d’entité de messagerie.](../../media/threat-explorer-analysis-tab.png)
+> :::image type="content" source="../../media/threat-explorer-analysis-tab.png" alt-text="Onglet Analyse de la page entité de messagerie" lightbox="../../media/threat-explorer-analysis-tab.png":::
 
 ### <a name="email-remediation"></a>Correction de courrier électronique
 
-Une fois qu’une personne Sec Ops détermine qu’un e-mail est une menace, l’étape suivante de détection de l’Explorateur ou en temps réel traite la menace et la remédie. Pour ce faire, vous pouvez revenir à l’Explorateur de menaces, cocher la case du message électronique à l’aide du problème et utiliser le bouton **Actions.**
+Une fois qu’une personne Sec Ops détermine qu’un e-mail est une menace, l’étape suivante de détection de l’Explorateur ou en temps réel traite la menace et la remédie. Pour ce faire, vous pouvez revenir à l’Explorateur de menaces, cocher la case du message électronique à l’aide du problème et utiliser le bouton **Actions** .
 
 > [!div class="mx-imgBorder"]
-> ![Bouton Actions dans l’Explorateur de menaces.](../../media/threat-explorer-email-actions-button.png)
+> :::image type="content" source="../../media/threat-explorer-email-actions-button.png" alt-text="Bouton Actions dans l’Explorateur de menaces" lightbox="../../media/threat-explorer-email-actions-button.png":::
 
 Ici, l’analyste peut prendre des mesures telles que signaler le courrier comme courrier indésirable, hameçonnage ou programme malveillant, contacter des destinataires ou d’autres enquêtes qui peuvent inclure le déclenchement de manuels d’investigation et de réponse automatisées (ou AIR) (si vous avez l’offre 2). Sinon, le courrier peut également être signalé comme étant propre.
 
 > [!div class="mx-imgBorder"]
-> ![Les actions sont dans la baisse.](../../media/threat-explorer-email-actions-drop-down.png)
+> :::image type="content" source="../../media/threat-explorer-email-actions-drop-down.png" alt-text="Le drop down Actions" lightbox="../../media/threat-explorer-email-actions-drop-down.png":::
 
 ## <a name="improvements-to-threat-hunting-experience"></a>Améliorations de l’expérience de recherche de menaces
 
 ### <a name="alert-id"></a>ID d’alerte
 
-Lors de la navigation à partir  d’une alerte dans l’Explorateur de menaces, l’affichage est filtré par **L’ID d’alerte**. Cela s’applique également dans la détection en temps réel. Les messages pertinents pour l’alerte spécifique, ainsi qu’un total de messages électroniques (un nombre) sont affichés. Vous pourrez voir si un message faisait partie d’une alerte, ainsi que naviguer de ce message vers l’alerte associée.
+Lors de la navigation à partir d’une alerte dans  l’Explorateur de menaces, l’affichage est filtré par **ID d’alerte**. Cela s’applique également dans la détection en temps réel. Les messages pertinents pour l’alerte spécifique, ainsi qu’un total de messages électroniques (un nombre) sont affichés. Vous pourrez voir si un message faisait partie d’une alerte, ainsi que naviguer de ce message vers l’alerte associée.
 
 Enfin, l’ID d’alerte est inclus dans l’URL, par exemple : `https://https://security.microsoft.com/viewalerts`
 
 > [!div class="mx-imgBorder"]
-> ![Filtrage de l’ID d’alerte.](../../media/AlertID-Filter.png)
+> :::image type="content" source="../../media/AlertID-Filter.png" alt-text="Filtre de l’ID d’alerte" lightbox="../../media/AlertID-Filter.png":::
 
 > [!div class="mx-imgBorder"]
-> ![ID d’alerte dans le volant d’informations.](../../media/AlertID-DetailsFlyout.png)
+> :::image type="content" source="../../media/AlertID-DetailsFlyout.png" alt-text="ID d’alerte dans le flyout d’informations" lightbox="../../media/AlertID-DetailsFlyout.png":::
 
 ### <a name="extending-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants"></a>Extension de la rétention et de la limite de recherche des données de l’Explorateur (et détections en temps réel) pour les clients d’essai
 
@@ -155,9 +156,9 @@ Le nombre d’enregistrements d’e-mails qui peuvent être exportés à partir 
 ### <a name="tags-in-threat-explorer"></a>Balises dans l’Explorateur de menaces
 
 > [!NOTE]
-> La fonctionnalité de balises utilisateur est en prévisualisation et n’est peut-être pas disponible pour tout le monde. En outre, les aperçus sont sujets à modification. Pour plus d’informations sur la planification de publication, consultez la feuille de Microsoft 365 de publication.
+> La fonctionnalité de balises utilisateur est en prévisualisation et n’est peut-être pas disponible pour tout le monde. En outre, les aperçus sont sujets à modification. Pour plus d’informations sur la planification de publication, consultez la feuille Microsoft 365 feuille de route.
 
-Les balises utilisateur identifient des groupes spécifiques d’utilisateurs dans Microsoft Defender Office 365. Pour plus d’informations sur les balises, notamment la gestion des licences et la configuration, voir [Balises utilisateur.](user-tags.md)
+Les balises utilisateur identifient des groupes spécifiques d’utilisateurs dans Microsoft Defender Office 365. Pour plus d’informations sur les balises, notamment la gestion des licences et la configuration, voir [Balises utilisateur](user-tags.md).
 
 Dans l’Explorateur de menaces, vous pouvez voir les informations sur les balises utilisateur dans les expériences suivantes.
 
@@ -166,7 +167,7 @@ Dans l’Explorateur de menaces, vous pouvez voir les informations sur les balis
 Lorsque les analystes voient la colonne **Balises** dans la grille de courrier, ils voient toutes les balises qui ont été appliquées aux boîtes aux lettres de l’expéditeur ou du destinataire. Par défaut, les balises système *telles que les comptes* de priorité sont affichées en premier.
 
 > [!div class="mx-imgBorder"]
-> ![Filtrer les balises dans l’affichage Grille du courrier électronique.](../../media/tags-grid.png)
+> :::image type="content" source="../../media/tags-grid.png" alt-text="Balises Filter en affichage Grille de courrier électronique" lightbox="../../media/tags-grid.png":::
 
 #### <a name="filtering"></a>Filtrage
 
@@ -175,21 +176,21 @@ Les balises peuvent être utilisées comme filtres. Recherchez parmi les comptes
 [![Filtrer les balises.](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![Ne pas filtrer les balises.](../../media/tags-filter-not.png)
+> :::image type="content" source="../../media/tags-filter-not.png" alt-text="Balises qui n’ont pas été filtrées" lightbox="../../media/tags-filter-not.png":::
 
 #### <a name="email-detail-flyout"></a>Flyout des détails des e-mails
 
-Pour afficher les balises individuelles de l’expéditeur et du destinataire, sélectionnez un e-mail pour ouvrir le volant des détails du message. Sous **l’onglet Résumé,** les balises de l’expéditeur et du destinataire sont affichées séparément. Les informations relatives aux balises individuelles pour l’expéditeur et le destinataire peuvent être exportées en tant que données CSV.
+Pour afficher les balises individuelles de l’expéditeur et du destinataire, sélectionnez un e-mail pour ouvrir le volant des détails du message. Sous **l’onglet Résumé** , les balises de l’expéditeur et du destinataire sont affichées séparément. Les informations relatives aux balises individuelles pour l’expéditeur et le destinataire peuvent être exportées en tant que données CSV.
 
 > [!div class="mx-imgBorder"]
-> ![Balises de détails du courrier électronique.](../../media/tags-flyout.png)
+> :::image type="content" source="../../media/tags-flyout.png" alt-text="Balises Détails de l’e-mail" lightbox="../../media/tags-flyout.png":::
 
-Les informations sur les balises sont également affichées dans le volant des clics d’URL. Pour le voir, consultez l’affichage Hameçonnage ou Tous les messages > **URL** ou **l’onglet Clics d’URL.** Sélectionnez un volant d’URL individuel pour afficher des détails supplémentaires sur les clics pour cette URL, y compris les balises associées à ce clic.
+Les informations sur les balises sont également affichées dans le volant des clics d’URL. Pour le voir, consultez l’affichage Hameçonnage ou Tous les messages > **URL** ou **l’onglet Clics d’URL** . Sélectionnez un volant d’URL individuel pour afficher des détails supplémentaires sur les clics pour cette URL, y compris les balises associées à ce clic.
 
 ### <a name="updated-timeline-view"></a>Affichage de chronologie mis à jour
 
 > [!div class="mx-imgBorder"]
-> ![Balises d’URL.](../../media/tags-urls.png)
+> :::image type="content" source="../../media/tags-urls.png" alt-text="Balises d’URL" lightbox="../../media/tags-urls.png":::
 >
 Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4).
 
@@ -202,11 +203,11 @@ Les principales familles de programmes malveillants indiquent **les utilisateurs
 Les opérations de sécurité peuvent exporter la liste des utilisateurs ciblés, jusqu’à une limite de 3 000, ainsi que le nombre de tentatives réalisées, pour l’analyse hors connexion pour chaque affichage de courrier électronique. En outre, la sélection du nombre de tentatives (par exemple, 13 tentatives dans l’image ci-dessous) ouvre une vue filtrée dans l’Explorateur de menaces, afin que vous pouvez voir plus de détails sur les messages électroniques et les menaces pour cet utilisateur.
 
 > [!div class="mx-imgBorder"]
-> ![Utilisateurs les plus ciblés.](../../media/Top_Targeted_Users.png)
+> :::image type="content" source="../../media/Top_Targeted_Users.png" alt-text="Les utilisateurs les plus ciblés" lightbox="../../media/Top_Targeted_Users.png":::
 
 ### <a name="exchange-transport-rules"></a>Exchange transport
 
-L’équipe des opérations de sécurité pourra voir toutes les règles de transport Exchange (ou règles de flux de messagerie) appliquées à un message, dans l’affichage Grille de messagerie. Sélectionnez **les options Colonne** dans la grille, puis Exchange règle de transport **à** partir des options de colonne. L Exchange des règles de transport est également visible dans le volant **Détails** de l’e-mail.
+L’équipe des opérations de sécurité pourra voir toutes les règles de transport Exchange (ou règles de flux de messagerie) appliquées à un message, dans l’affichage Grille de messagerie. **Sélectionnez les options Colonne** dans la grille, puis **ajoutez Exchange de transport à** partir des options de colonne. L Exchange des règles de transport est également visible dans le volant **Détails** de l’e-mail.
 
 Les noms et LES GUID des règles de transport appliquées au message s’affichent. Les analystes pourront rechercher des messages à l’aide du nom de la règle de transport. Il s’agit d’une recherche CONTAINS, ce qui signifie que vous pouvez également effectuer des recherches partielles.
 
@@ -223,7 +224,7 @@ Les noms et LES GUID des règles de transport appliquées au message s’affiche
 > Dans la grille de courrier électronique, le volant Détails et le CSV exporté, les ETR sont présentés avec un nom/GUID, comme illustré ci-dessous.
 >
 > > [!div class="mx-imgBorder"]
-> > ![Exchange transport.](../../media/ETR_Details.png)
+> > :::image type="content" source="../../media/ETR_Details.png" alt-text="Règles du transport Exchange transport" lightbox="../../media/ETR_Details.png":::
 
 ### <a name="inbound-connectors"></a>Connecteurs entrants
 
@@ -232,7 +233,7 @@ Les connecteurs sont un ensemble d’instructions qui personnalisent la façon d
 La recherche de connecteurs est une requête CONTAINS, ce qui signifie que les recherches partielles par mot clé peuvent fonctionner :
 
 > [!div class="mx-imgBorder"]
-> ![Détails du connecteur.](../../media/Connector_Details.png)
+> :::image type="content" source="../../media/Connector_Details.png" alt-text="Détails du connecteur" lightbox="../../media/Connector_Details.png":::
 
 ## <a name="required-licenses-and-permissions"></a>Licences et autorisations requises
 
@@ -246,7 +247,7 @@ Pour afficher et utiliser les détections de l’Explorateur ou en temps réel, 
 
 - Dans le portail Microsoft 365 Defender:
   - Gestion de l’organisation
-  - Administrateur de sécurité (peut être affecté dans le centre d’administration Azure Active Directory de sécurité ( <https://aad.portal.azure.com> )
+  - Administrateur de sécurité (peut être affecté dans le Centre d’administration Azure Active Directory de sécurité (<https://aad.portal.azure.com>)
   - Lecteur de sécurité
 - Dans Exchange Online :
   - Gestion de l’organisation
@@ -260,7 +261,7 @@ Pour en savoir plus sur les rôles et les autorisations, consultez les ressource
 - [Autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 - [Rechercher et d’examiner l’e-mail malveillant qui a été distribué](investigate-malicious-email-that-was-delivered.md)
 - [Afficher les fichiers malveillants détectés dans SharePoint Online, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md)

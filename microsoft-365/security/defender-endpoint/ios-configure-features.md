@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 85ddada93e20e36648fccdb0fe9b2b34ab473212
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c52fac7c5680d8e5f814098410dc2e1993328d2f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681477"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476904"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurer Microsoft Defender pour le point de terminaison sur les fonctionnalités iOS
 
@@ -58,7 +58,7 @@ Bien qu’il soit activé par défaut, il se peut que vous de soyez dans certain
 1. Désactivez la **Connecter à la demande** pour désactiver le VPN.
 
     > [!div class="mx-imgBorder"]
-    > ![Connexion de la connexion VPN à la demande.](images/ios-vpn-config.png)
+    > :::image type="content" source="images/ios-vpn-config.png" alt-text="Bouton bascule pour l’option de Connecter VPN à la demande" lightbox="images/ios-vpn-config.png":::
 
 > [!NOTE]
 > La protection web n’est pas disponible lorsque le VPN est désactivé. Pour activer à nouveau la Protection Web, ouvrez l’application Microsoft Defender pour point de terminaison sur l’appareil, puis cliquez ou appuyez sur **Démarrer le VPN**.
@@ -121,18 +121,18 @@ Suivez les étapes ci-dessous pour créer une stratégie de conformité contre l
 1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **DevicesCompliance** ->  **policiesCreate** ->  Policy. Sélectionnez « iOS/iPadOS » comme plateforme, puis cliquez sur **Créer**.
 
     > [!div class="mx-imgBorder"]
-    > ![Créer une stratégie.](images/ios-jb-policy.png)
+    > :::image type="content" source="images/ios-jb-policy.png" alt-text="Onglet Créer une stratégie" lightbox="images/ios-jb-policy.png":::
 
 2. Spécifiez un nom de stratégie, par exemple « Stratégie de conformité pour jailbreak ».
 3. Dans la page paramètres de conformité, cliquez pour développer **la section État** de  l’appareil, puis cliquez sur Bloquer pour les **appareils jailbreakés**.
 
     > [!div class="mx-imgBorder"]
-    > ![Stratégie Paramètres.](images/ios-jb-settings.png)
+    > :::image type="content" source="images/ios-jb-settings.png" alt-text="Onglet Paramètres de conformité" lightbox="images/ios-jb-settings.png":::
 
-4. Dans la **section Action pour non-conformité** , sélectionnez les actions selon vos besoins, puis sélectionnez **Suivant**.
+4. Dans la **section Actions pour non-conformité** , sélectionnez les actions selon vos besoins, puis sélectionnez **Suivant**.
 
     > [!div class="mx-imgBorder"]
-    > ![Actions de stratégie.](images/ios-jb-actions.png)
+    > :::image type="content" source="images/ios-jb-actions.png" alt-text="Onglet Actions pour non-conformité" lightbox="images/ios-jb-actions.png":::
 
 5. Dans la section **Affectations** , sélectionnez les groupes d’utilisateurs à inclure pour cette stratégie, puis sélectionnez **Suivant**.
 6. Dans la section **Révision+Créer** , vérifiez que toutes les informations entrées sont correctes, puis sélectionnez **Créer**.

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3fe3139f12b863b54d336e52939ffbb3057df6b4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 81c3a3a6d1d35551eec34d0fe12aba2f1fc6ec5e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316000"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469688"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>Chronologie des événements : Gestion des menaces et des vulnérabilités
 
@@ -53,18 +53,18 @@ Dans le tableau de bord Gestion des menaces et des vulnérabilités, pointez sur
 
 Si aucun événement n’affecte vos appareils ou votre score pour les appareils, aucun ne s’affiche.
 
-![Pointage du score d’exposition.](images/tvm-event-timeline-exposure-score350.png) 
-![ Le score de sécurité Microsoft pour les appareils est survolé.](images/tvm-event-timeline-device-hover360.png)
+:::image type="content" source="images/tvm-event-timeline-exposure-score350.png" alt-text="Pointage du score d’exposition" lightbox="images/tvm-event-timeline-exposure-score350.png":::
+:::image type="content" source="images/tvm-event-timeline-device-hover360.png" alt-text="Pointage du score de sécurité Microsoft pour les appareils" lightbox="images/tvm-event-timeline-device-hover360.png":::
 
 ### <a name="drill-down-to-events-from-that-day"></a>Descendre dans les événements de ce jour
 
 Si vous **sélectionnez Afficher tous les** événements de ce jour, vous pouvez vous rendre sur la page chronologie des événements avec une plage de dates personnalisée pour ce jour.
 
-![Chronologie des événements : plage de dates personnalisée sélectionnée.](images/tvm-event-timeline-drilldown.png)
+:::image type="content" source="images/tvm-event-timeline-drilldown.png" alt-text="Page Chronologie des événements" lightbox="images/tvm-event-timeline-drilldown.png":::
 
 **Sélectionnez Plage personnalisée** pour modifier la plage de dates en une autre plage personnalisée ou une plage de temps pré-définie.
 
-![Options de plage de dates de chronologie des événements.](images/tvm-event-timeline-dates.png)
+:::image type="content" source="images/tvm-event-timeline-dates.png" alt-text="Options de plage de dates de chronologie des événements" lightbox="images/tvm-event-timeline-dates.png":::
 
 ## <a name="event-timeline-overview"></a>Vue d’ensemble de la chronologie des événements
 
@@ -78,7 +78,7 @@ Fonctionnalités :
 
 Les deux grands nombres en haut de la page indiquent le nombre de nouvelles vulnérabilités et de vulnérabilités exploitables, et non d’événements. Certains événements peuvent avoir plusieurs vulnérabilités et d’autres peuvent avoir plusieurs événements.
 
-![Page Chronologie des événements.](images/tvm-event-timeline-overview-mixed-type.png)
+:::image type="content" source="images/tvm-event-timeline-overview-mixed-type.png" alt-text="Chronologie des événements" lightbox="images/tvm-event-timeline-overview-mixed-type.png":::
 
 ### <a name="columns"></a>Colonnes
 
@@ -110,7 +110,7 @@ Une fois que vous avez sélectionné un événement, un volant s’affiche avec 
 
 La flèche sous « tendance de score » vous permet de déterminer si cet événement a potentiellement augmenté ou réduit le score d’exposition de votre organisation. Un score d’exposition plus élevé signifie que les appareils sont plus vulnérables à l’exploitation.
 
-![Volant de chronologie des événements.](images/tvm-event-timeline-flyout500.png)
+:::image type="content" source="images/tvm-event-timeline-flyout500.png" alt-text="Le flyout de chronologie des événements" lightbox="images/tvm-event-timeline-flyout500.png":::
 
 À partir de là, sélectionnez Go **to related security recommendation** view the recommendation that addresses the new software vulnerability in the [security recommendations page](tvm-security-recommendation.md). Après avoir lu la description et les détails de la vulnérabilité dans la recommandation de sécurité, vous pouvez envoyer une demande de correction et suivre la demande dans la [page de correction](tvm-remediation.md).
 
@@ -120,13 +120,13 @@ Pour ouvrir une page de logiciels, sélectionnez un > sélectionnez le nom du lo
 
 Une page complète s’affiche avec tous les détails d’un logiciel spécifique. Pointez avec la souris sur le graphique pour voir la chronologie des événements pour ce logiciel spécifique.
 
-![Page de logiciels avec un graphique de chronologie des événements.](images/tvm-event-timeline-software2.png)
+:::image type="content" source="images/tvm-event-timeline-software2.png" alt-text="Page de logiciels avec un graphique de chronologie d’événement" lightbox="images/tvm-event-timeline-software2.png":::
 
 Accédez à l’onglet Chronologie des événements pour afficher tous les événements liés à ce logiciel. Vous pouvez également voir les recommandations de sécurité, les vulnérabilités découvertes, les appareils installés et la distribution des versions.
 
-![Page de logiciels avec un onglet Chronologie des événements.](images/tvm-event-timeline-software-pages.png)
+:::image type="content" source="images/tvm-event-timeline-software-pages.png" alt-text="Page logicielle avec un onglet Chronologie des événements" lightbox="images/tvm-event-timeline-software-pages.png":::
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Tableau de bord](tvm-dashboard-insights.md)

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ba52d9587a2ac530eabeacf8c72336751a1a17d7
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 72d1aab8be071b5f4ec66988b35655571625b409
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767567"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477278"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes d’extension du noyau dans Microsoft Defender pour point de terminaison sur macOS
 
@@ -42,7 +42,7 @@ Cet article fournit des informations sur la résolution des problèmes avec l’
 
 Si vous n’avez pas approuvé l’extension du noyau pendant le déploiement/l’installation de Microsoft Defender pour Endpoint sur macOS, l’application affiche une bannière vous invite à l’activer :
 
-   ![Capture d’écran désactivée rtp.](images/mdatp-32-main-app-fix.png)
+:::image type="content" source="images/mdatp-32-main-app-fix.png" alt-text="RTP désactivé" lightbox="images/mdatp-32-main-app-fix.png":::
 
 Vous pouvez également exécuter ```mdatp health```. Il indique si la protection en temps réel est activée mais non disponible. Cela indique que l’extension du noyau n’est pas approuvée pour s’exécuter sur votre appareil.
 
@@ -71,7 +71,7 @@ Si moins de 30 minutes se sont écoulées depuis l’installation du produit, ac
 
 Si vous ne voyez pas cette invite, cela signifie que 30 minutes ou plus se sont écoulées et que l’extension de noyau n’a toujours pas été approuvée pour s’exécuter sur votre appareil :
 
-![Fenêtre de sécurité et de confidentialité après l’expiration de la capture d’écran de l’invite.](images/mdatp-33-securityprivacysettings-noprompt.png)
+:::image type="content" source="images/mdatp-33-securityprivacysettings-noprompt.png" alt-text="Fenêtre de sécurité et de confidentialité après l’expiration de l’invite" lightbox="images/mdatp-33-securityprivacysettings-noprompt.png":::
 
 Dans ce cas, vous devez effectuer les étapes suivantes pour déclencher à nouveau le flux d’approbation.
 

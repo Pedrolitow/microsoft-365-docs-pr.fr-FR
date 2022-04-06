@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 02aacefc21f5789d686a8be03cd46f8fb7196322
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 3ae46425999ff36526330f5c19f2660ecad96c23
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766679"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470128"
 ---
 # <a name="log-in-to-jamf-pro"></a>Connectez-vous à Jamf Pro
 
@@ -35,15 +35,15 @@ ms.locfileid: "62766679"
 
 1. Entrez vos informations d’identification.
 
-    ![Image de Jamf Pro dashboard1.](images/jamf-pro-portal1.png)
+   :::image type="content" source="images/jamf-pro-portal1.png" alt-text="Jamf Pro dashboard1" lightbox="images/jamf-pro-portal1.png":::
 
 2. Sélectionnez **Ordinateurs**.
 
-    ![Image de Jamf Pro dashboard2.](images/jamf-pro-dashboard.png)
+   :::image type="content" source="images/jamf-pro-dashboard.png" alt-text="Jamf Pro dashboard2" lightbox="images/jamf-pro-dashboard.png":::
 
 3. Vous verrez les paramètres disponibles.
 
-     ![Image de Jamf Pro dashboard3.](images/jamfpro-settings.png)
+   :::image type="content" source="images/jamfpro-settings.png" alt-text="Le tableau de bord Pro Jamf3" lightbox="images/jamfpro-settings.png":::
 
 
 ## <a name="next-step"></a>Étape suivante

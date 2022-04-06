@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c0a2bdab641f0289975f1d8475627d3066ecf1f8
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 580f41c24d6d78fb9e5ac7e20eb80e6ae78a505b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934200"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469798"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Examiner des événements de connexion qui se produisent d’arrière vers l’avant des proxys
 
@@ -44,31 +44,31 @@ La surveillance de la connexion réseau derrière un proxy avant est possible en
 
 La protection réseau peut être contrôlée à l’aide des modes suivants :
 
-- **Bloquer**: les utilisateurs ou les applications ne pourront pas se connecter à des domaines dangereux. Vous pourrez voir cette activité dans Microsoft 365 Defender.
-- **Audit**: la connexion aux domaines dangereux ne sera pas bloquée pour les utilisateurs ou les applications. Toutefois, vous verrez toujours cette activité dans Microsoft 365 Defender.
+- **Blocage** : les utilisateurs ou les applications ne pourront pas se connecter à des domaines dangereux. Vous pourrez voir cette activité dans Microsoft 365 Defender.
+- **Audit :** la connexion à des domaines dangereux ne sera pas bloquée pour les utilisateurs ou les applications. Toutefois, vous verrez toujours cette activité dans Microsoft 365 Defender.
 
 
 Si vous désactiver la protection réseau, les utilisateurs ou les applications ne seront pas bloqués pour se connecter à des domaines dangereux. Aucune activité réseau ne s’Microsoft 365 Defender.
 
 Si vous ne la configurez pas, le blocage du réseau est désactivé par défaut.
 
-Pour plus d’informations, voir [Activer la protection réseau.](enable-network-protection.md)
+Pour plus d’informations, voir [Activer la protection réseau](enable-network-protection.md).
 
 ## <a name="investigation-impact"></a>Impact de l’examen
 
 Lorsque la protection réseau est allumée, vous verrez que, sur la chronologie d’un appareil, l’adresse IP continuera à représenter le proxy, tandis que l’adresse cible réelle s’affiche.
 
-![Image des événements réseau sur la chronologie de l’appareil.](images/atp-proxy-investigation.png)
+:::image type="content" source="images/atp-proxy-investigation.png" alt-text="Événements réseau sur la chronologie de l’appareil" lightbox="images/atp-proxy-investigation.png":::
 
 D’autres événements déclenchés par la couche de protection réseau sont désormais disponibles pour faire surface des noms de domaine réels, même derrière un proxy.
 
 Informations sur l’événement :
 
-![Image d’un événement réseau unique.](images/atp-proxy-investigation-event.png)
+:::image type="content" source="images/atp-proxy-investigation-event.png" alt-text="URL d’un événement réseau unique" lightbox="images/atp-proxy-investigation-event.png":::
 
 ## <a name="hunt-for-connection-events-using-advanced-hunting"></a>Recherche des événements de connexion à l’aide de la recherche avancée
 
-Tous les nouveaux événements de connexion sont également disponibles pour la recherche avancée. Étant donné que ces événements sont des événements de connexion, vous pouvez les trouver sous la table DeviceNetworkEvents sous le `ConnecionSuccess` type d’action.
+Tous les nouveaux événements de connexion sont également disponibles pour la recherche avancée. Étant donné que ces événements sont des événements de connexion, vous pouvez les trouver sous la table DeviceNetworkEvents sous le type d’action `ConnecionSuccess` .
 
 L’utilisation de cette requête simple vous montre tous les événements pertinents :
 
@@ -78,7 +78,7 @@ DeviceNetworkEvents
 | take 10
 ```
 
-![Image d’une requête de recherche avancée.](images/atp-proxy-investigation-ah.png)
+:::image type="content" source="images/atp-proxy-investigation-ah.png" alt-text="Requête de recherche avancée" lightbox="images/atp-proxy-investigation-ah.png":::
 
 Vous pouvez également filtrer les événements liés à la connexion au proxy lui-même.
 
@@ -90,6 +90,6 @@ DeviceNetworkEvents
 | take 10
 ```
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Application de la protection réseau avec la stratégie de groupe - CSP de stratégie](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)

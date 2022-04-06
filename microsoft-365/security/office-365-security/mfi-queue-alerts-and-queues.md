@@ -14,12 +14,12 @@ description: Les administrateurs peuvent apprendre à utiliser le widget Files d
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 54bff65b29555fe0c94c86141cd7a10a77c36219
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 62da2d9654174bc2572a6d7cbb3acbd638757a6c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680003"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469468"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Informations sur les files d’attente dans le Centre de conformité & sécurité
 
@@ -43,7 +43,8 @@ Si le volume de courrier en file d’attente dépasse le seuil prédéfiny (la v
 
 - Une alerte s’affiche dans **alertes récentes** le tableau de bord Alertes dans le Centre de sécurité [&](https://protection.office.com) conformité (**Tableau de bord des alertes** \> **ou ).** <https://protection.office.com/alertsdashboard>
 
-  ![Alertes récentes dans le tableau de bord Alertes du Centre de sécurité & conformité.](../../media/mfi-queued-messages-alert.png)
+  :::image type="content" source="../../media/mfi-queued-messages-alert.png" alt-text="Alertes récentes dans le tableau de bord Alertes du Centre de sécurité & conformité" lightbox="../../media/mfi-queued-messages-alert.png":::
+
 
 - Les administrateurs recevront une notification par courrier électronique en fonction de la configuration de la stratégie d’alerte par défaut nommée **Messages différés**. Pour configurer les paramètres de notification pour cette alerte, consultez la section suivante.
 
@@ -57,7 +58,7 @@ Si le volume de courrier en file d’attente dépasse le seuil prédéfiny (la v
 
 3. Dans le **flyout Message qui** s’ouvre, vous pouvez activer ou désactiver l’alerte et configurer les paramètres de notification.
 
-   ![Les messages ont été retardés et la stratégie d’alerte détaille le Centre de sécurité & conformité.](../../media/mfi-queued-messages-alert-policy.png)
+   :::image type="content" source="../../media/mfi-queued-messages-alert-policy.png" alt-text="Les détails de l’alerte Messages ont été retardés" lightbox="../../media/mfi-queued-messages-alert-policy.png":::
 
    - **État** : vous pouvez mettre l’alerte sur ou hors de l’état.
 
@@ -70,7 +71,7 @@ Si le volume de courrier en file d’attente dépasse le seuil prédéfiny (la v
    - **Limite de notification quotidienne** : la valeur par défaut est **Aucune limite**.
    - **Seuil** : la valeur par défaut est 200.
 
-   ![Les paramètres de notification dans les messages ont été retardés, détails de la stratégie d’alerte du Centre de sécurité & conformité.](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
+     :::image type="content" source="../../media/mfi-queued-messages-alert-policy-notification-settings.png" alt-text="Les paramètres de notification dans l’alerte Messages ont été retardés" lightbox="../../media/mfi-queued-messages-alert-policy-notification-settings.png":::
 
 5. Lorsque vous avez terminé, cliquez sur **Enregistrer** et **fermer**.
 
@@ -78,7 +79,7 @@ Si le volume de courrier en file d’attente dépasse le seuil prédéfiny (la v
 
 Même si le volume de messages en file d’attente n’a pas dépassé le seuil et généré une alerte, vous pouvez  toujours utiliser l’aperçu [](mail-flow-insights-v2.md) des files d’attente dans le tableau de bord de flux de messagerie pour voir les messages mis en file d’attente depuis plus d’une heure et agir avant que le nombre de messages mis en file d’attente ne devienne trop élevé.
 
-![Widget Files d’attente dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité.](../../media/mfi-queues-widget.png)
+:::image type="content" source="../../media/mfi-queues-widget.png" alt-text="Widget Files d’attente dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité" lightbox="../../media/mfi-queues-widget.png":::
 
 Si vous cliquez sur le nombre de messages sur le widget,  un message volant Messages mis en file d’attente apparaît avec les informations suivantes :
 
@@ -91,11 +92,11 @@ Si vous cliquez sur le nombre de messages sur le widget,  un message volant Mess
 - **Dernière erreur**
 - **Comment résoudre :** des problèmes courants et des solutions sont disponibles. Si un **lien Résoudre maintenant** est disponible, cliquez dessus pour résoudre le problème. Dans le cas contraire, cliquez sur les liens disponibles pour plus d’informations sur l’erreur et les solutions possibles.
 
-![Détails après avoir cliqué sur l’aperçu files d’attente dans le tableau de bord de flux de messagerie.](../../media/mfi-queues-details.png)
+:::image type="content" source="../../media/mfi-queues-details.png" alt-text="Détails après avoir cliqué sur l’aperçu files d’attente dans le tableau de bord de flux de messagerie" lightbox="../../media/mfi-queues-details.png":::
 
 Le même volant s’affiche lorsque vous cliquez sur Afficher la **file** d’attente dans les détails d’une alerte de retard **de** messages.
 
-![Les messages ont été retardés dans les détails de l’alerte dans le Centre de sécurité & conformité.](../../media/mfi-queued-messages-alert-details.png)
+:::image type="content" source="../../media/mfi-queued-messages-alert-details.png" alt-text="Les détails de l’alerte Messages ont été retardés dans le Centre de conformité & sécurité" lightbox="../../media/mfi-queued-messages-alert-details.png":::
 
 ## <a name="see-also"></a>Voir aussi
 

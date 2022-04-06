@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment ces recommandations de sécurité pour Microsoft 365 Business Premium vos utilisateurs et protège vos données.
-ms.openlocfilehash: cf0af6aab22c4a025a0c6b907fc3cade397d0dcc
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f1c327badefcd7f5d7f1728489a8388e7e7925e8
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328468"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64635150"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>Impact de ces recommandations de sécurité sur vos utilisateurs
 
@@ -42,7 +42,9 @@ Les recommandations de sécurité pour Microsoft 365 dans cette solution compliq
 Tous les utilisateurs doivent connaître et utiliser ces pratiques de messagerie pour sécuriser leur messagerie :
 
 - Configurer le courrier électronique pour utiliser l’authentification multifacteur avec l’application d’authentification.
-- Vérifiez les e-mails légitimes et recherchez les conseils de sécurité du hameçonnage avancé dans Defender pour Office 365 Protection.
+
+- Vérifiez les e-mails légitimes et recherchez les conseils de sécurité de la protection avancée contre le hameçonnage (Defender pour Office 365).
+
 - Ouvrez uniquement les pièces jointes et liens sécurisés, comme vérifié Coffre liens et Coffre pièces jointes.
 
 En savoir plus sur [l’authentification multifacteur](m365bp-multifactor-authentication.md) , [le hameçonnage et d’autres attaques](m365-campaigns-phishing-and-attacks.md).
@@ -54,7 +56,9 @@ Téléchargez [une infographie](m365-campaigns-protect-campaign-infographic.md) 
 Tous les utilisateurs que vous ajoutez à votre environnement devront prendre quelques minutes pour configurer les [appareils iPhone et Android](../business/set-up-mobile-devices.md) pour qu’ils fonctionnent en toute sécurité :
 
 - Configurer des appareils pour utiliser l’authentification multifacteur avec l’application d’authentification.
+
 - Utilisez les applications mobiles Microsoft, notamment Outlook Mobile, Word, OneDrive et d’autres applications Microsoft de l’App Store. Les applications de messagerie natives incluses sur les appareils iPhone et Android ne sont pas pris en charge. 
+
 - Exiger un code confidentiel pour que les utilisateurs déverrouillent leur appareil.
 
 Une fois ces paramètres mis en place, vos utilisateurs sont invités à utiliser l’application d’authentification lors de l’accès aux données de votre organisation sur ces appareils, y compris la messagerie.
@@ -64,6 +68,7 @@ Une fois ces paramètres mis en place, vos utilisateurs sont invités à utilise
 Il est également important que les utilisateurs conservent leur périphérique de travail principal à jour :
 
 - Installez les dernières versions de Office applications de bureau et conservez-les à jour avec les mises à jour, lorsque vous y être invité.
+
 - Restez informé des mises à jour du système d’exploitation, telles que Windows mises à jour.
 
 Pour [les appareils Windows 10 mac](m365bp-protect-pcs-macs.md) non Windows 10, les utilisateurs ont la responsabilité de s’assurer que les fonctionnalités de sécurité de base sont activées.

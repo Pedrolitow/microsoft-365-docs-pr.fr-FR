@@ -15,12 +15,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 03/18/2022
-ms.openlocfilehash: def22b83dc5c84a3b222d4e50f2d2dce8d5d36ef
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8b17fc31e4a25ad66fdb51114d7931f7d934a226
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682744"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470304"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Contrôle d’appareil amovible Microsoft Defender for Endpoint Stockage Access Control
 
@@ -37,7 +37,7 @@ Microsoft Defender for Endpoint Device Control Removable Stockage Access Control
 
 |Privilège|Autorisation|
 |---|---|
-|Access|Lecture, Écriture, Exécution|
+|Accès|Lecture, Écriture, Exécution|
 |Action Mode|Auditer, autoriser, empêcher|
 |Prise en charge du programme CSP|Oui|
 |Prise en charge des GPO|Oui|
@@ -62,11 +62,7 @@ Déployez le contrôle d’Stockage amovible sur les appareils Windows 10 et Win
 
 - **4.18.2107** ou ultérieure : ajouter la prise en charge de l’appareil portable Windows (WPD) (pour les appareils mobiles, tels que les tablettes) ; ajouter AccountName dans le recherche avancée [](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
-- **4.18.2111** ou version ultérieure : ajouter « Activer ou désactiver le contrôle d’accès Stockage amovible » , « Application par défaut » , heure de mise à jour de la stratégie de l’ordinateur client via PowerShell, informations sur les fichiers
-
-- **4.18.2201** ou version ultérieure : prise en charge d’une copie de fichier écrite dans un stockage autorisé via OMA-URI
-
-:::image type="content" source="images/powershell.png" alt-text="Interface PowerShell.":::
+:::image type="content" source="images/powershell.png" alt-text="Interface PowerShell" lightbox="images/powershell.png":::
 
 > [!NOTE]
 > Aucun des Sécurité Windows ne doit être actif, car vous pouvez exécuter le contrôle d’accès Stockage amovible indépendamment de l’état Sécurité Windows’accès.
@@ -83,7 +79,7 @@ Vous pouvez utiliser les propriétés suivantes pour créer un groupe de stockag
 |Nom de la propriété|Description|Options|
 |---|---|---|
 |**ID de groupe**|GUID, un ID unique, représente le groupe et sera utilisé dans la stratégie en tant qu’ID de groupe||
-|**DescriptorIdList**|List the device properties you want to use to cover in the group. Pour chaque propriété d’appareil, voir [Propriétés de l’appareil](device-control-removable-storage-protection.md) pour plus d’informations. Toutes les propriétés sont sensibles à la cas. |**PrimaryId**: `RemovableMediaDevices`, , `CdRomDevices``WpdDevices`<p>**BusId** : par exemple, USB, SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId** : InstancePathId est une chaîne qui identifie de manière unique l’appareil dans le système, par exemple, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. Le numéro à la fin (par exemple, &0) représente l’emplacement disponible et peut changer d’appareil à appareil. Pour de meilleurs résultats, utilisez un caractère générique à la fin. Par exemple, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**PID**<p>**VID_PID**<p>`0751_55E0`: faire correspondre cette paire VID/PID exacte<p>`_55E0`: faire correspondre n’importe quel média avec PID=55E0 <p>`0751_`: faire correspondre n’importe quel média avec VID=0751|
+|**DescriptorIdList**|List the device properties you want to use to cover in the group. Pour chaque propriété d’appareil, voir [Propriétés de l’appareil](device-control-removable-storage-protection.md) pour plus d’informations. Toutes les propriétés sont sensibles à la cas. |**PrimaryId**: `RemovableMediaDevices`, , `CdRomDevices``WpdDevices`<p>**BusId** : par exemple, USB, SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId** : InstancePathId est une chaîne qui identifie de manière unique l’appareil dans le système, par exemple, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. Le numéro à la fin (par exemple, &0) représente l’emplacement disponible et peut changer d’appareil à appareil. Pour de meilleurs résultats, utilisez un caractère générique à la fin. Par exemple : `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**PID**<p>**VID_PID**<p>`0751_55E0`: faire correspondre cette paire VID/PID exacte<p>`_55E0`: faire correspondre n’importe quel média avec PID=55E0 <p>`0751_`: faire correspondre n’importe quel média avec VID=0751|
 |**MatchType**|Lorsqu’il existe plusieurs propriétés d’appareil utilisées dans `DescriptorIDList`le , MatchType définit la relation.|**MatchAll** : tous les attributs `DescriptorIdList` sous la relation **Will be And** ; par exemple, `DeviceID` `InstancePathID`si l’administrateur met et, pour chaque clé USB connectée, le système vérifie si la clé USB correspond aux deux valeurs. <p> **MatchAny :** les attributs sous la relation DescriptorIdList seront **Or** ; par exemple, si `DeviceID` `InstancePathID`l’administrateur met et, pour chaque clé USB connectée, le système fait l’application tant que la clé USB a une valeur **DeviceID** ou **InstanceID** identique. |
 
 ### <a name="access-control-policy"></a>Politique de contrôle d’accès
@@ -152,7 +148,7 @@ Avant de commencer avec le contrôle d’accès Stockage amovible, vous devez co
 
     L’image suivante illustre l’exemple du scénario 1 : empêcher l’accès en écriture et en exécution à tous les [usbs](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs) approuvés mais autorisés.
 
-    :::image type="content" source="images/prevent-write-access-allow-usb.png" alt-text="Écran affichant les paramètres de configuration qui autorisent des usbs approuvés spécifiques sur les appareils.":::
+    :::image type="content" source="images/prevent-write-access-allow-usb.png" alt-text="Paramètres de configuration qui autorisent des usbs approuvés spécifiques sur les appareils" lightbox="images/prevent-write-access-allow-usb.png":::
 
 2. Combinez toutes les règles dans `<PolicyRules>` `</PolicyRules>` un fichier xml.
 
@@ -162,7 +158,7 @@ Avant de commencer avec le contrôle d’accès Stockage amovible, vous devez co
 
     L’image suivante illustre l’utilisation de la propriété SID et un exemple de scénario 1 : empêcher l’accès en écriture et en exécution à tous les [usbs](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs) approuvés, sauf autoriser.
 
-    :::image type="content" source="images/usage-sid-property.png" alt-text="Écran affichant un code qui indique l’utilisation de l’attribut de propriété SID.":::
+    :::image type="content" source="images/usage-sid-property.png" alt-text="Code qui indique l’utilisation de l’attribut de propriété SID" lightbox="images/usage-sid-property.png":::
 
 3. Enregistrez les fichiers XML  \> de règle et de groupe sur le dossier de partage réseau et placez le chemin d’accès du dossier de partage réseau dans le paramètre de stratégie de groupe : **Modèles** \> d’administration  de configuration ordinateur **Windows Composants** \> **Antivirus Microsoft Defender** \> **Contrôle de périphérique : « Définir des groupes de stratégies de contrôle d’appareil » et « Définir des règles de stratégie de contrôle d’appareil** ».
 
@@ -170,7 +166,7 @@ Avant de commencer avec le contrôle d’accès Stockage amovible, vous devez co
 
    - L’ordinateur cible doit pouvoir accéder au partage réseau pour avoir la stratégie. Toutefois, une fois la stratégie lue, la connexion de partage réseau n’est plus nécessaire, même après le redémarrage de l’ordinateur.
 
-    :::image type="content" source="images/device-control.png" alt-text="Écran Contrôle d’appareil.":::
+    :::image type="content" source="images/device-control.png" alt-text="Écran Contrôle d’appareil" lightbox="images/device-control.png":::
 
 4. Application par défaut : vous permet de définir l’accès par défaut (Refuser ou Autoriser) aux médias amovibles s’il n’existe aucune stratégie. Par exemple, vous avez uniquement une stratégie (refuser ou autoriser) pour RemovableMediaDevices, mais vous n’avez pas de stratégie pour CdRomDevices ou WpdDevices, et vous définissez refuser par défaut via cette stratégie, l’accès en lecture/écriture/exécution à CdRomDevices ou WpdDevices sera bloqué.
 
@@ -227,7 +223,7 @@ Microsoft Endpoint Manager centre d’administration  **des appareils (**<https:
 
     - Type de données : chaîne (fichier XML)
 
-      :::image type="content" source="images/xml-data-type-string.png" alt-text="Fichier xml pour le type de données STRING.":::
+      :::image type="content" source="images/xml-data-type-string.png" alt-text="Champ Type de données dans la page Ajouter une ligne" lightbox="images/xml-data-type-string.png":::
 
 2. Pour chaque stratégie, créez également un OMA-URI :
 
@@ -311,30 +307,7 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
-```kusto
-//RemovableStorageFileEvent: event triggered by File level enforcement, information of files written to removable storage 
-DeviceEvents
-| where ActionType contains "RemovableStorageFileEvent"
-| extend parsed=parse_json(AdditionalFields)
-| extend Policy = tostring(parsed.Policy) 
-| extend PolicyRuleId = tostring(parsed.PolicyRuleId) 
-| extend MediaClassName = tostring(parsed.ClassName)
-| extend MediaInstanceId = tostring(parsed.InstanceId)
-| extend MediaName = tostring(parsed.MediaName)
-| extend MediaProductId = tostring(parsed.ProductId) 
-| extend MediaVendorId = tostring(parsed.VendorId) 
-| extend MediaSerialNumber = tostring(parsed.SerialNumber) 
-| extend DuplicatedOperation = tostring(parsed.DuplicatedOperation)
-| extend FileEvidenceLocation = tostring(parsed.TargetFileLocation) 
-| project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, 
-    ActionType, Policy, PolicyRuleId, DuplicatedOperation, 
-    MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber,
-    FileName, FolderPath, FileSize, FileEvidenceLocation,
-    AdditionalFields
-| order by Timestamp desc
-```
-    
-:::image type="content" source="images/block-removable-storage.png" alt-text="Écran illustrant le blocage du stockage amovible.":::
+:::image type="content" source="images/block-removable-storage.png" alt-text="Le blocage du stockage amovible" lightbox="images/block-removable-storage.png":::
 
 ## <a name="frequently-asked-questions"></a>Foire aux questions
 

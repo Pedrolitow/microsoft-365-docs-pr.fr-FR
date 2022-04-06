@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez pourquoi et comment créer une équipe dans Microsoft Teams pour que votre petite entreprise ou votre campagne puisse collaborer.
-ms.openlocfilehash: a8aae7eb1492a45cf80cd5e56b9df7393f08eb7d
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 6c218b24b335dc01aa0b426eb4e95bccef3d20d7
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766312"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634072"
 ---
 # <a name="create-a-team-in-microsoft-teams-so-your-small-business-or-campaign-can-collaborate"></a>Créer une équipe dans Microsoft Teams pour que votre petite entreprise ou votre campagne puisse collaborer
 
@@ -37,22 +37,29 @@ Microsoft Teams est une application de collaboration qui permet à votre personn
 ## <a name="best-practices"></a>Meilleures pratiques
 
 1. Créer des équipes privées pour les informations sensibles.
-1. Créez une équipe à l’échelle de l’organisation pour communiquer avec tous les membres de votre organisation.
-1. Créez des équipes pour des projets spécifiques et appliquez le niveau de protection qui convient en fonction des personnes qui doivent être incluses.
-1. Créez des équipes spécifiques pour la communication avec des partenaires externes afin de les séparer de tout ce qui est sensible pour votre entreprise.
+
+2. Créez une équipe à l’échelle de l’organisation pour communiquer avec tous les membres de votre organisation.
+
+3. Créez des équipes pour des projets spécifiques et appliquez le niveau de protection qui convient en fonction des personnes qui doivent être incluses.
+
+4. Créez des équipes spécifiques pour la communication avec des partenaires externes afin de les séparer de tout ce qui est sensible pour votre entreprise.
 
 Par exemple, une entreprise, un cabinet d’avocats ou un cabinet de soins de santé peut créer les équipes suivantes :
 
 1. **Une équipe professionnelle, d’entreprise ou à l’échelle de la pratique :** Il s’agit pour tout le monde d’utiliser pour les communications au jour le jour et le travail au sein de votre entreprise. Vous pouvez utiliser cette équipe pour publier des annonces ou partager des informations d’intérêt pour l’ensemble de votre entreprise ou de votre pratique.
-1. **Équipes individuelles :** Configurer des équipes pour que des groupes plus petits collaborent sur leur travail quotidien.
-1. **Une équipe ou une équipe de communication externe :** Coordonnez-vous avec vos fournisseurs, partenaires ou clients sans leur permettre d’entrer en ligne de compte. Configurer différents canaux pour des groupes spécifiques.
+
+2. **Équipes individuelles :** Configurer des équipes pour que des groupes plus petits collaborent sur leur travail quotidien.
+
+3. **Une équipe ou une équipe de communication externe :** Coordonnez-vous avec vos fournisseurs, partenaires ou clients sans leur permettre d’entrer en ligne de compte. Configurer différents canaux pour des groupes spécifiques.
 
 ![Diagramme d’une fenêtre Microsoft Teams avec trois équipes distinctes pour assurer une communication et une collaboration sécurisées au sein d’une entreprise.](../media/m365-democracy-teams-business-collab.png)
 
 Les campagnes peuvent également créer les équipes suivantes pour communiquer et collaborer en toute sécurité :
 
 1. **Une équipe de directeurs de campagne :** Définissez-la en tant qu’équipe privée afin que seuls les membres de votre campagne clé y accèdent et discutent des problèmes potentiellement sensibles.
+
 2. **Une équipe de campagne générale :** Tout le monde peut l’utiliser pour les communications et le travail au quotidien. Les individus, les groupes ou les comités peuvent configurer des canaux dans cette équipe pour faire leur travail. Par exemple, les personnes qui planifient des événements peuvent configurer un canal pour discuter et coordonner la logistique des événements de campagne.
+
 3. **Une équipe partenaire :** Coordonnez-vous avec vos fournisseurs, partenaires ou volontaires sans leur permettre d’entrer en ligne de compte.
 
 ![Diagramme d’une fenêtre Microsoft Teams avec trois équipes distinctes pour assurer une communication et une collaboration sécurisées au sein d’une campagne.](../media/m365-democracy-teams-collab.png)
@@ -60,16 +67,23 @@ Les campagnes peuvent également créer les équipes suivantes pour communiquer 
 Lorsque vous créez une équipe, voici les autres choses qui sont créées :
 
 - Un nouveau [groupe Microsoft 365'équipe](/MicrosoftTeams/office-365-groups)
+
 - Un [site SharePoint online et](/MicrosoftTeams/sharepoint-onedrive-interact) une bibliothèque de documents pour stocker des fichiers d’équipe
+
 - Une boîte [Exchange Online](/MicrosoftTeams/exchange-teams-interact) et un calendrier partagés
+
 - Un bloc-notes OneNote
+
 - Liens vers d’autres applications Office 365 telles que planner et Power BI
 
 À l Microsoft Teams, vous pouvez trouver :
 
 1. **Teams : recherchez** les canaux dont vous avez besoin ou créez vos propres canaux. À l’intérieur des canaux, vous pouvez organiser des réunions sur site, avoir des conversations et partager des fichiers.
+
 2. **Réunions :** Consultez tout ce que vous avez aligné pour le jour ou la semaine. Vous aussi, planifier une réunion. Ce calendrier se synchronise avec votre calendrier Outlook jour.
+
 3. **Appels :** Dans certains cas, si votre organisation l’a définie, vous pouvez appeler n’importe qui depuis Microsoft Teams, même s’il n’utilise pas Microsoft Teams.
+
 4. **Activité :** Lisez tous vos messages non lus, vos @mentions, vos réponses, etc.
 
 Utilisez la zone de commande en haut pour rechercher des éléments ou des personnes spécifiques, effectuer des actions rapides et lancer des applications.

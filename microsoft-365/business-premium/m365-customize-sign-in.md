@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Personnalisez votre page de signature avec une notification de confidentialité et de consentement pour Microsoft 365.
-ms.openlocfilehash: 003853e0577b2c23fc8240d2b19918c3235eade8
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 8beff76721ce622d5e1943aea1c16fda90b052f1
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767848"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634688"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Personnaliser votre page de signature avec une notification de confidentialité et de consentement
 
@@ -42,8 +42,11 @@ Pour mettre à jour les éléments personnalisables sur la page de signature, vo
 Les éléments que vous pouvez mettre à jour sont les éléments ci-après :
 
 - **Texte de la page de signature** Un endroit facile pour ajouter la déclaration de confidentialité et de consentement.
+
 - Image d’arrière-plan de la page de signature
+
 - Logo de bannière
+
 - Conseil sur le nom d’utilisateur
 
 Pour obtenir des exemples d’avis de confidentialité et de consentement, voir l’annexe A de la recherche et de la saisie d’ordinateurs et de l’obtention de preuves électroniques [dans des enquêtes pénales](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).

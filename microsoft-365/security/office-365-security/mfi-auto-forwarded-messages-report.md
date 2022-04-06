@@ -13,12 +13,12 @@ description: Les administrateurs peuvent en savoir plus sur le rapport des messa
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 05ad934fbc7736c0cfbb86f7411a2ca73705112f
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 4603e7d895c847513a41dc52764070f970a50d15
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680157"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476376"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Informations sur les messages transmis automatiquement dans le Centre de sécurité & conformité
 
@@ -31,7 +31,7 @@ ms.locfileid: "63680157"
 
 Les informations sur les **messages** transmis automatiquement dans le [](mail-flow-insights-v2.md) tableau de bord de flux de messagerie dans le Centre de sécurité [et conformité &](https://protection.office.com) affichent des informations sur les messages qui sont automatiquement transmis de votre organisation à des destinataires dans des domaines externes.
 
-![Widget de messages transmis automatiquement dans le Centre de sécurité & conformité.](../../media/mfi-auto-forwarded-messages.png)
+:::image type="content" source="../../media/mfi-auto-forwarded-messages.png" alt-text="Le widget, à savoir les messages transmis automatiquement dans le Centre de sécurité & conformité" lightbox="../../media/mfi-auto-forwarded-messages.png":::
 
 ## <a name="auto-forwarded-messages-details"></a>Détails des messages transmis automatiquement
 
@@ -52,7 +52,7 @@ Lorsque vous cliquez sur le nombre de messages dans le widget, un volet volant s
   - **Nouveaux utilisateurs (dernière semaine)**
   - Lien vers le rapport [de modifications de report pour](mfi-new-users-forwarding-email.md#forwarding-modifications-report) plus d’informations.
 
-![Volant de détails pour le rapport des messages transmis automatiquement dans le Centre de sécurité & conformité.](../../media/mfi-auto-forwarded-messages-details.png)
+:::image type="content" source="../../media/mfi-auto-forwarded-messages-details.png" alt-text="Widget de messages transmis automatiquement dans le Centre de sécurité & conformité" lightbox="../../media/mfi-auto-forwarded-messages-details.png":::
 
 ## <a name="insights"></a>Informations
 

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f3c992ad94d63b44d2f89acff6bb295728a0804
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 48deec7763981b10daf1d0c16cbef95d0e2dbaeb
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681433"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476530"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>Examiner les e-mails malveillants qui ont été remis dans Microsoft 365
 
@@ -84,7 +84,7 @@ L’Explorateur de menaces est un rapport puissant qui peut servir à plusieurs 
 
 2. Dans le menu **Affichage** , sélectionnez **Courrier** \> **électronique dans** la liste déroulante.
 
-    ![Menu Affichage de l’Explorateur de menaces et Courrier électronique - Programmes malveillants, hameçonnage, soumissions et toutes les options de messagerie, également Contenu - Programmes malveillants.](../../media/tp-InvestigateMalEmail-viewmenu.png)
+    :::image type="content" source="../../media/tp-InvestigateMalEmail-viewmenu.png" alt-text="Liste de listes de programmes malveillants" lightbox="../../media/tp-InvestigateMalEmail-viewmenu.png":::
 
     La *vue Programmes* malveillants est actuellement la valeur par défaut et capture les e-mails dans lequel une menace de programme malveillant est détectée. *L’affichage* Hameçonnage fonctionne de la même manière, pour le hameçonnage.
 
@@ -104,11 +104,11 @@ L’Explorateur de menaces est un rapport puissant qui peut servir à plusieurs 
 
    Le filtrage avancé est un excellent ajout aux fonctionnalités de recherche. Une valeur BOOlean NOT sur **les filtres** de domaine  **destinataire, expéditeur** et expéditeur permet aux administrateurs d’examiner en excluant les valeurs. Cette option est **l’option Égal à aucune sélection** . Cette option permet aux administrateurs d’exclure les boîtes aux lettres indésirables des enquêtes (par exemple, les boîtes aux lettres d’alerte et les boîtes aux lettres de réponse par défaut) et est utile dans les cas où les administrateurs recherchent un sujet spécifique (par exemple, Attention) dans lequel le destinataire peut être égal à aucun des éléments *defaultMail@contoso.com.* Il s’agit d’une recherche de valeur exacte.
 
-   ![Destinataires - « Ne contient aucun des » filtres avancés.](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
+   :::image type="content" source="../../media/tp-InvestigateMalEmail-AdvancedFilter.png" alt-text="Volet Destinataires" lightbox="../../media/tp-InvestigateMalEmail-AdvancedFilter.png":::
 
    L’ajout d’un filtre d’heure à la date de début et à la date de fin permet à votre équipe de sécurité d’descendre rapidement dans le temps. La durée autorisée la plus courte est de 30 minutes. Si vous pouvez limiter l’action suspecte par période (par exemple, cela s’est produit il y a 3 heures), cela limite le contexte et aide à identifier le problème.
 
-   ![Option de filtrage par heures pour réduire la quantité de données que les équipes de sécurité doivent traiter et dont la durée la plus courte est de 30 minutes.](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
+   :::image type="content" source="../../media/tp-InvestigateMalEmail-FilterbyHours.png" alt-text="Option filtrage par heures" lightbox="../../media/tp-InvestigateMalEmail-FilterbyHours.png":::
 
 6. **Champs de l’Explorateur** de menaces : l’Explorateur de menaces expose un plus grand nombre d’informations de messagerie liées à la sécurité, *telles* que *l’action* de *remise,* l’emplacement de remise, *l’action spéciale*, la *direction*, les remplacements et la menace *d’URL*. Elle permet également à l’équipe de sécurité de votre organisation d’enquêter avec une plus grande certitude.
 
@@ -188,7 +188,7 @@ L’emplacement de remise affiche les résultats des stratégies et des détecti
 
 ## <a name="related-topics"></a>Sujets associés
 
-[Corriger les messages malveillants remis dans Office 365](remediate-malicious-email-delivered-office-365.md)
+[Corriger les courriers malveillants remis dans Office 365](remediate-malicious-email-delivered-office-365.md)
 
 [Microsoft Defender pour Office 365](office-365-ti.md)
 

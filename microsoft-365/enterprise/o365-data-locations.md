@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans le monde
-ms.openlocfilehash: c88eceadf6c00d165b0ac032fab19596abec49e1
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 17675917a737717c352125d23a32b432e681a77f
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525471"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634556"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Emplacement de stockage des données client de Microsoft 365
 
@@ -132,7 +132,7 @@ Les zones géographiques mondiales suivantes peuvent stocker des données au rep
 
 | Zones géographiques mondiales | Emplacements pouvant stocker des données client |
 | --- | --- |
-| Zone géographique mondiale 1 : EMEA (Europe, Moyen-Orient et Afrique) | Autriche, Finlande, France, Irlande, Pays-Bas |
+| Zone géographique mondiale 1 : EMEA (Europe, Moyen-Orient et Afrique) | Autriche, Finlande, France, Irlande, Pays-Bas, Suède |
 | Zone géographique mondiale 2 : Asie et Pacifique | Hong Kong, Japon, Malaisie, Singapour, Corée du Sud |
 | Zone géographique mondiale 3 : Amériques | Brésil, Chili, États-Unis |
 
@@ -145,7 +145,7 @@ Pour les centres de données spécifiques d’un pays ou d’une région, les é
 | Australie | Sydney, Melbourne |
 | Brésil | Rio, Campinas |
 | Canada | Ville de Québec, Toronto |
-| Union européenne | Autriche (Vienne), Finlande (Helsinki), France (Paris, Marseille), Irlande (Dublin), Pays-Bas (Amsterdam) |
+| Union européenne | Autriche (Vienne), Finlande (Helsinki), France (Paris, Marseille), Irlande (Dublin), Pays-Bas (Amsterdam), Suède (Gvleä, Sandviken, Staffanstorp) |
 | France | Paris, Marseille |
 | Allemagne | Frankfort, Berlin |
 | Inde | Chennai, Mumbai, Pune |

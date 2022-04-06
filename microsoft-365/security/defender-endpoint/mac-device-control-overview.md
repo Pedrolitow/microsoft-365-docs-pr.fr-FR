@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5cb41b0bd3f185237055daa2d282f0a1d6975a49
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: fbe693272a2f2893dff5f8614f3f9eff301069fd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765539"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477300"
 ---
 # <a name="device-control-for-macos"></a>Contrôle d’appareil pour macOS
 
@@ -33,7 +33,7 @@ ms.locfileid: "62765539"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Le contrôle d’appareil pour macOS présente les conditions préalables suivantes :
 
@@ -72,7 +72,7 @@ La stratégie de contrôle d’appareil peut être utilisée pour :
 
 Lorsque la stratégie de contrôle d’appareil que vous avez mise en place est appliquée sur un appareil (par exemple, l’accès à un périphérique multimédia amovible est restreint), une notification s’affiche pour l’utilisateur.
 
-![Notification de contrôle d’appareil.](images/mac-device-control-notification.png)
+:::image type="content" source="images/mac-device-control-notification.png" alt-text="Notification de contrôle d’appareil" lightbox="images/mac-device-control-notification.png":::
 
 Lorsque les utilisateurs finaux cliquent sur cette notification, une page web s’ouvre dans le navigateur par défaut. Vous pouvez configurer l’URL qui est ouverte lorsque les utilisateurs finaux cliquent sur la notification.
 
@@ -340,19 +340,20 @@ Pour rechercher l’ID du fournisseur, l’ID de produit et le numéro de série
 1. Branchez le périphérique USB pour lequel vous souhaitez rechercher les identificateurs.
 1. Dans le menu de niveau supérieur de macOS, sélectionnez **À propos de ce Mac**.
 
-    ![À propos de ce Mac.](images/mac-device-control-lookup-1.png)
+   :::image type="content" source="images/mac-device-control-lookup-1.png" alt-text="Page À propos de cet Mac" lightbox="images/mac-device-control-lookup-1.png":::
 
 1. Sélectionnez **Rapport système**.
 
-    ![Rapport système.](images/mac-device-control-lookup-2.png)
+   :::image type="content" source="images/mac-device-control-lookup-2.png" alt-text="Rapport système" lightbox="images/mac-device-control-lookup-2.png":::
 
 1. Dans la colonne de gauche, sélectionnez **USB**.
 
-    ![Affichage de tous les périphériques USB.](images/mac-device-control-lookup-3.png)
+   :::image type="content" source="images/mac-device-control-lookup-3.png" alt-text="Affichage de tous les périphériques USB" lightbox="images/mac-device-control-lookup-3.png":::
+    
 
 1. Sous **Arborescence d’appareils USB**, accédez à l’appareil USB que vous avez branché.
 
-    ![Détails d’un périphérique USB.](images/mac-device-control-lookup-4.png)
+   :::image type="content" source="images/mac-device-control-lookup-4.png" alt-text="Détails d’un périphérique USB" lightbox="images/mac-device-control-lookup-4.png":::
 
 1. L’ID de fournisseur, l’ID de produit et le numéro de série sont affichés. Lorsque vous ajoutez l’ID fournisseur et l’ID de produit à la stratégie de média amovible, vous devez uniquement ajouter la partie après `0x`. Par exemple, dans l’image ci-dessous, l’ID `1000` du fournisseur est et l’ID de produit est `090c`.
 
@@ -401,7 +402,7 @@ Exemple de sortie :
 
 Dans l’exemple ci-dessus, `read` `execute` il n’existe qu’un seul périphérique multimédia amovible branché et il dispose d’autorisations et d’autorisations, conformément à la stratégie de contrôle d’appareil qui a été remis à l’appareil.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Exemples de stratégies de contrôle d’appareil pour Intune](mac-device-control-intune.md)
 - [Exemples de stratégies de contrôle d’appareil pour JAMF](mac-device-control-jamf.md)

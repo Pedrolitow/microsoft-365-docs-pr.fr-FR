@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ceff362daeb2054b6037ea0eecbeafbb9dbed4f3
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 0b9ddf9693a242b3b8c466cfa1616b62c5eb73b9
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767627"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469292"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Déployer les mises à jour de Microsoft Defender pour endpoint sur macOS
 
@@ -40,7 +40,7 @@ Microsoft publie régulièrement des mises à jour logicielles pour améliorer l
 
 Pour mettre à jour Microsoft Defender pour endpoint sur macOS, un programme nommé Microsoft AutoUpdate (MAU) est utilisé. Par défaut, MAU recherche automatiquement les mises à jour quotidiennes, mais vous pouvez la modifier de manière hebdomadaire, mensuelle ou manuelle.
 
-![Capture d’écran MAU.](images/MDATP-34-MAU.png)
+:::image type="content" source="images/MDATP-34-MAU.png" alt-text="MAU" lightbox="images/MDATP-34-MAU.png":::
 
 Si vous décidez de déployer des mises à jour à l’aide de vos outils de distribution de logiciels, vous devez configurer MAU pour vérifier manuellement les mises à jour logicielles. Vous pouvez déployer des préférences pour configurer comment et quand MAU recherche les mises à jour pour les Mac dans votre organisation.
 
@@ -145,7 +145,7 @@ Indiquez si les utilisateurs locaux pourront cliquer sur l’option « Vérifier
 
 ### <a name="disable-insider-checkbox"></a>Désactiver la case à cocher Insider
 
-Définissez la valeur sur True pour que le programme « Rejoindre Office Programme Insider... » case à cocher non disponible/grisée pour les utilisateurs.
+Définissez la valeur sur True pour que le programme « Rejoindre le programme Office Insider... » case à cocher non disponible/grisée pour les utilisateurs.
 
 <br>
 

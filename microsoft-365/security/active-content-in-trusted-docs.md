@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX,NOFOLOW
 description: Les administrateurs peuvent apprendre à créer des stratégies pour bloquer le contenu actif dans Office documents
-ms.openlocfilehash: 89f2e51253d3c2fda0140dd7be8bc86b1fda2cf5
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 33d53ab14fec1b6cd16b8de95befe8bc8a898e16
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682810"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468918"
 ---
 # <a name="manage-active-content-in-office-documents"></a>Gérer le contenu actif dans les documents Office
 
@@ -35,17 +35,17 @@ Auparavant, lorsque les utilisateurs identifiaient des documents comme documents
 
 La logique mise à jour du Centre de confiance est décrite dans le diagramme suivant :
 
-:::image type="content" source="../media/office-trust-center-flow.png" alt-text="Exemple d’un organigramme décrivant la logique du centre de Microsoft 365 Defender de confiance" lightbox="../media/office-trust-center-flow.png":::
+:::image type="content" source="../media/office-trust-center-flow.png" alt-text="Un organigramme décrivant la logique du centre de Microsoft 365 Defender de confiance" lightbox="../media/office-trust-center-flow.png":::
 
 1. Un utilisateur ouvre un document Office qui contient du contenu actif.
 
 2. Si le document est à partir d’un emplacement approuvé, le document est ouvert avec le contenu actif activé. Si le document ne se trouve pas à un emplacement approuvé, l’évaluation se poursuit.
 
-3. C’est là que le comportement mis à jour prend effet :
+3. C’est ici que le comportement mis à jour prend effet :
    - Auparavant, le paramètre évalué suivant aurait été si l’utilisateur avait identifié ce document comme document approuvé. Si c’est le cas, le document s’ouvre avec le contenu actif activé.
    - À présent, le fait que l’utilisateur a identifié ou non le document comme document approuvé n’est pas pris en compte ici (à l’étape 8).
 
-     Il s’agit du changement de comportement fondamental : les stratégies cloud (étape 4), les stratégies de groupe (étape 6) et les paramètres locaux (étape 7) sont vérifiés avant même que la désignation d’un document approuvé par l’utilisateur soit envisagée. Si l’une de ces étapes bloque l’accès au contenu actif et qu’aucune des étapes n’autorise les remplacements par l’utilisateur, l’identification du document par l’utilisateur en tant que document approuvé n’est pas pertinente.
+     Le changement de comportement fondamental est décrit comme suit : les stratégies cloud (étape 4), les stratégies de groupe (étape 6) et les paramètres locaux (étape 7) sont vérifiés avant même que la désignation d’un document approuvé par l’utilisateur soit envisagée. Si l’une de ces étapes bloque l’accès au contenu actif et qu’aucune des étapes n’autorise les remplacements par l’utilisateur, l’identification du document par l’utilisateur en tant que document approuvé n’est pas pertinente.
 
 4. Les stratégies cloud sont vérifiées pour voir si ce type de contenu actif est autorisé ou bloqué. Si le contenu actif n’est pas bloqué, l’évaluation continue à l’étape 6.
 
@@ -78,7 +78,7 @@ Si vous souhaitez en savoir plus, consultez les articles suivants :
 
 ## <a name="configure-trusted-document-settings-in-office-policies"></a>Configurer les paramètres de document approuvé dans Office stratégies
 
-Les administrateurs ont plusieurs façons de configurer les Office dans une organisation. Par exemple :
+Les administrateurs ont plusieurs façons de configurer les Office dans une organisation. Par exemple :
 
 - **Office de stratégie cloud** : configurer une stratégie utilisateur qui s’applique à un utilisateur sur tout appareil accédant à des fichiers dans des applications Office avec son compte Azure AD client. Consultez les étapes de [création d’Office de stratégie cloud](/DeployOffice/overview-office-cloud-policy-service) dans Office [Cloud Policy Service](https://config.office.com/officeSettings/officePolicies).
 - **Office dans Intune** : utilisez le catalogue Intune Paramètres ou des modèles d’administration pour déployer des stratégies HKCU sur des PC Windows 10 : dans le Centre d’administration [MEM](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles)  \> sous Profils de **configuration** des appareils.
@@ -86,7 +86,7 @@ Les administrateurs ont plusieurs façons de configurer les Office dans une orga
   - ***Paramètres catalogue (prévisualisation)*** : voir les instructions d’utilisation [du catalogue Paramètres (prévisualisation).](/mem/intune/configuration/settings-catalog)
 - **Stratégie de groupe** : utilisez votre annuaire Active Directory local pour déployer des objets de stratégie de groupe sur les utilisateurs et les ordinateurs. Pour créer un GPO pour ce paramètre, téléchargez les derniers fichiers de modèle d’administration [(ADMX/ADML) et l’outil de personnalisation Office pour Applications Microsoft 365 pour les grandes entreprises, Office 2019 et Office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
 
-## <a name="known-issues"></a>Problèmes détectés
+## <a name="known-issues"></a>Problèmes connus
 
 - Lorsque la stratégie **VBA Macro notifications** (Access, PowerPoint, Visio, Word) ou **les notifications de macro** (Excel) est définie sur la valeur Désactiver tout sauf les **macros signées** numériquement, la barre de confiance attendue n’est pas affichée et les informations de sécurité en  arrière-plan ne listent pas les détails des macros bloquées, même si le paramètre fonctionne comme prévu. L Office de travail de l’équipe de recherche travaille à résoudre ce problème.
 
@@ -138,12 +138,12 @@ Les tableaux des sections suivantes décrivent les paramètres qui contrôlent l
 |Jscript & VBScript|Outlook|Ne pas autoriser Outlook scripts de modèle objet à s’exécuter pour les dossiers publics|**Enabled**|Non|
 |Jscript & VBScript|Outlook|Ne pas autoriser Outlook scripts de modèle objet à s’exécuter pour les dossiers partagés|**Enabled**|Non|
 |Macros|Excel|Macro Notifications|**Désactiver toutes les macros à l’exception des macros signées numériquement**|**Oui** pour les valeurs suivantes : <ul><li>**Disabled**</li><li>**Non configuré**</li></ul>|
-|Macros|Access <p> PowerPoint <p> Project <p> Éditeur <p> Visio <p> Word|Notification de macro VBA Paramètres|**Désactiver toutes les macros à l’exception des macros signées numériquement** <p> et <p> **Exiger la signature des macros par un éditeur approuvé**|**Oui** pour les valeurs suivantes : <ul><li>**Disabled**</li><li>**Non configuré**</li></ul>|
+|Macros|Accès <p> PowerPoint <p> Project <p> Éditeur <p> Visio <p> Word|Notification de macro VBA Paramètres|**Désactiver toutes les macros à l’exception des macros signées numériquement** <p> et <p> **Exiger la signature des macros par un éditeur approuvé**|**Oui** pour les valeurs suivantes : <ul><li>**Disabled**</li><li>**Non configuré**</li></ul>|
 |Macros|Accès <p> Excel <p> PowerPoint <p> Visio <p> Word|Empêcher l’exécution de macros dans Office fichiers à partir d’Internet|**Enabled**|**Oui** pour les valeurs suivantes : <ul><li>**Disabled**</li><li>**Non configuré**</li></ul>|
 |Macros|Excel|Analyser les macros chiffrées dans Excel de travail Open XML|**Analyser les macros chiffrées (valeur par défaut)**|Non|
 |Macros|Bureau|Autoriser VBA à charger les références typelib par chemin d’accès à partir d’emplacements intranet non confiance|**Disabled**|Non|
 |Macros|Bureau|Automation Security|**Utiliser le niveau de sécurité des macros de l'application**|Non|
-|Macros|Bureau|Désactiver les vérifications de sécurité supplémentaires sur les références de bibliothèque VBA qui peuvent faire référence à des emplacements non sécurisés sur l’ordinateur local|**Disabled**|Non|
+|Macros|Bureau|Désactiver d’autres vérifications de sécurité sur les références de bibliothèque VBA qui peuvent faire référence à des emplacements non sécurisés sur l’ordinateur local|**Disabled**|Non|
 |Macros|Bureau|Étendue de l’analyse d’exécuter les macros|**Activer pour tous les documents**|Non|
 |Macros|Bureau|Faire confiance uniquement aux macros VBA qui utilisent des signatures V3|Il ne s’agit pas d’un paramètre de base de sécurité.|Non|
 |Macros|Outlook|Outlook sécurité des données|**Utiliser la stratégie Outlook de sécurité de l’équipe**|Obligatoire pour activer tous les paramètres Outlook GPO. <p> Mentionné comme une dépendance (cette stratégie ne bloque pas le contenu actif lui-même).|
@@ -162,7 +162,7 @@ Les tableaux des sections suivantes décrivent les paramètres qui contrôlent l
 |---|---|---|---|---|
 |ActiveX|Bureau|Restreindre l’installation ActiveX |excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|Non|
 |Les & extensibilité|Bureau|Gestion des modules complémentaires |excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|Non|
-|Les & extensibilité|Bureau|Bloquer l’activation de Flash dans Office documents|Consultez les fichiers ADMX/ADML du Guide de sécurité Microsoft pour obtenir la liste des killbits COM qui bloquent toute activation de Flash dans Microsoft 365 applications. Les fichiers ADMX/ADML pour les lignes de base de sécurité d’entreprise sont disponibles dans la [Shared Computer Toolkit.](https://www.microsoft.com/download/details.aspx?id=55319)|Non|
+|Les & extensibilité|Bureau|Bloquer l’activation de Flash dans Office documents|Consultez les fichiers ADMX/ADML du Guide de sécurité Microsoft pour obtenir la liste des killbits COM qui bloquent toute activation de Flash sur Microsoft 365 applications. Les fichiers ADMX/ADML pour les lignes de base de sécurité d’entreprise sont disponibles dans la [Shared Computer Toolkit.](https://www.microsoft.com/download/details.aspx?id=55319)|Non|
 |Jscript & VBScript|Bureau|Restreindre l’JScript héritée pour les Office|**Activé** : <p> Accès : 69632 <p> Excel : 69632 <p> OneNote : 69632 <p> Outlook : 69632 <p> PowerPoint : 69632 <p> Project : 69632 <p> Publisher : 69632 <p> Visio : 69632 <p> Word : 69632|Non|
 |Jscript & VBScript|Bureau|Restrictions de sécurité de scripts de fenêtres |excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|Non|
 |

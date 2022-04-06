@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: b9af738d4b1f59705132a84239d06dc762447417
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 04e7617825a3e14eac541b296cbed9f4dd95e206
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683754"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469314"
 ---
 # <a name="customize-controlled-folder-access"></a>Personnaliser l’accès contrôlé aux dossiers
 
@@ -90,7 +90,7 @@ Vous pouvez utiliser l’application Sécurité Windows, la stratégie de groupe
     ```
 3. Répétez l’étape 2 pour chaque dossier que vous souhaitez protéger. Les dossiers protégés sont visibles dans l’Sécurité Windows app.
 
-   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="Fenêtre PowerShell avec cmdlet affichée.":::
+   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="Fenêtre PowerShell avec cmdlet affichée" lightbox="images/cfa-allow-folder-ps.png":::
 
 > [!IMPORTANT]
 > Permet `Add-MpPreference` d’ajouter ou d’ajouter des applications à la liste et non `Set-MpPreference`. L’utilisation `Set-MpPreference` de la cmdlet va supprimer la liste existante.
@@ -120,7 +120,7 @@ Une application ou un service autorisé dispose uniquement d’un accès en écr
 
 4. **Sélectionnez Ajouter une application autorisée et** suivez les invites pour ajouter des applications.
 
-   :::image type="content" source="images/cfa-allow-app.png" alt-text="Ajoutez un bouton d’application autorisé.":::
+   :::image type="content" source="images/cfa-allow-app.png" alt-text="Bouton Ajouter une application autorisée" lightbox="images/cfa-allow-app.png":::
 
 ### <a name="use-group-policy-to-allow-specific-apps"></a>Utiliser une stratégie de groupe pour autoriser des applications spécifiques
 
@@ -149,7 +149,7 @@ Une application ou un service autorisé dispose uniquement d’un accès en écr
 
    Continuez à l’utiliser `Add-MpPreference -ControlledFolderAccessAllowedApplications` pour ajouter d’autres applications à la liste. Les applications ajoutées à l’aide de cette cmdlet s’affichent dans l Sécurité Windows applet.
 
-   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="Cmdlet PowerShell pour autoriser une application.":::
+   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="L’cmdlet PowerShell pour autoriser une application" lightbox="images/cfa-allow-app-ps.png":::
 
 > [!IMPORTANT]
 > Permet `Add-MpPreference` d’ajouter ou d’ajouter des applications à la liste. L’utilisation `Set-MpPreference` de la cmdlet va supprimer la liste existante.

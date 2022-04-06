@@ -1,6 +1,6 @@
 ---
 title: Blocage comportemental du client
-description: Le blocage du comportement client fait partie des fonctionnalités de blocage et de blocage du comportement dans Microsoft Defender pour point de terminaison
+description: Le blocage du comportement client fait partie des fonctionnalités de blocage du comportement et de blocage de contenu chez Microsoft Defender for Endpoint
 keywords: blocage comportemental, protection rapide, comportement du client, Microsoft Defender pour point de terminaison
 ms.pagetype: security
 author: denisebmsft
@@ -16,12 +16,12 @@ ms.custom:
 - edr
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: c5a738584f1705365db1c4fad61f190a42d97660
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8da3f04af66568bbe79dd6a74c38b30a8a1ab891
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330228"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470216"
 ---
 # <a name="client-behavioral-blocking"></a>Blocage comportemental du client
 
@@ -31,11 +31,11 @@ ms.locfileid: "63330228"
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Présentation
 
 Le blocage du comportement client est un composant des fonctionnalités de blocage du comportement et de blocage [de](behavioral-blocking-containment.md) contenu dans Defender for Endpoint. Lorsque des comportements suspects sont détectés sur des appareils (également appelés clients ou points de terminaison), les artefacts (tels que les fichiers ou applications) sont bloqués, vérifiés et corrigés automatiquement.
 
-:::image type="content" alt-text="Protection du cloud et du client." source="images/pre-execution-and-post-execution-detection-engines.png" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
+:::image type="content" source="images/pre-execution-and-post-execution-detection-engines.png" alt-text="Protection du cloud et du client" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
 
 La protection antivirus fonctionne mieux lorsqu’elle est couplée à la protection cloud.
 

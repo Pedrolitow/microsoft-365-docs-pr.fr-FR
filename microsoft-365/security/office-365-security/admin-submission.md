@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour soumettre des courriers électroniques suspects, des messages de hameçonnage suspects, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des pièces jointes de courrier électronique à Microsoft pour une rescannation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 34d608a6ea114fff8005069f3dc2ddc79c4be45e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: d0d699c3344cc16f3e15996139f1d2d8b608ba50
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682634"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477146"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utiliser le portail soumissions pour soumettre des courriers indésirables, du hameçonnage, des URL et des fichiers suspectés à Microsoft
 
@@ -84,7 +84,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 3. Sélectionnez La **marque en tant que et notifier** la drop-down, puis **sélectionnez** Aucune menace trouvée \> comme **hameçonnage** ou **courrier indésirable**.
 
-   :::image type="content" alt-text="Envoyer des messages à partir du portail." source="../../media/unified-submission-user-reported-message.png" lightbox="../../media/unified-submission-user-reported-message.png":::
+   :::image type="content" source="../../media/unified-submission-user-reported-message.png" alt-text="Page Soumissions" lightbox="../../media/unified-submission-user-reported-message.png":::
 
 Le message signalé est marqué comme faux positif ou faux négatif. Une notification par courrier électronique est envoyée automatiquement à partir du portail à l’utilisateur qui a signalé le message.
 
@@ -108,7 +108,7 @@ Le message signalé est marqué comme faux positif ou faux négatif. Une notific
 5. Lorsque vous avez terminé, cliquez sur **Envoyer**.
 
     > [!div class="mx-imgBorder"]
-    > ![Exemple de nouvelle soumission d’URL.](../../media/submission-flyout-email.png)
+    > :::image type="content" source="../../media/submission-flyout-email.png" alt-text="Processus de soumission d’une nouvelle URL" lightbox="../../media/submission-flyout-email.png":::
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Envoyer une URL suspecte à Microsoft
 
@@ -125,7 +125,7 @@ Le message signalé est marqué comme faux positif ou faux négatif. Une notific
 4. Lorsque vous avez terminé, cliquez sur **Envoyer**.
 
     > [!div class="mx-imgBorder"]
-    > ![Exemple de nouvel envoi de courrier électronique.](../../media/submission-url-flyout.png)
+    > :::image type="content" source="../../media/submission-url-flyout.png" alt-text="Processus d’envoi d’un nouveau courrier électronique" lightbox="../../media/submission-url-flyout.png":::
 
 ### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>Envoyer une pièce jointe suspecte à Microsoft
 
@@ -142,7 +142,7 @@ Le message signalé est marqué comme faux positif ou faux négatif. Une notific
 4. Lorsque vous avez terminé, cliquez sur **Envoyer**.
 
     > [!div class="mx-imgBorder"]
-    > ![Exemple de nouvelle soumission de pièce jointe.](../../media/submit-email-attachment-for-analysis.png)
+    > :::image type="content" source="../../media/submission-file-flyout.png" alt-text="Processus d’envoi de nouvelles pièces jointes" lightbox="../../media/submission-file-flyout.png":::
 
 > [!NOTE]
 > Si le filtrage des programmes malveillants a remplacé les pièces jointes des messages par le fichier Text.txt d’alerte de programmes malveillants, vous devez envoyer le message d’origine à partir de la quarantaine qui contient les pièces jointes d’origine. Pour plus d’informations sur la mise en quarantaine et la façon de libérer des messages avec des faux positifs de programmes malveillants, voir Gérer les messages et fichiers mis en quarantaine [en tant qu’administrateur](manage-quarantined-messages-and-files.md).
@@ -178,7 +178,7 @@ Le message signalé est marqué comme faux positif ou faux négatif. Une notific
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
      > [!div class="mx-imgBorder"]
-     > ![Nouvelles options de personnalisation des colonnes pour les envois d’administrateur.](../../media/submit-admin-submissios-customize-columns.png)
+     > :::image type="content" source="../../media/admin-submission-customize-columns.png" alt-text="Nouvelles options de colonne de personnalisation pour les envois d’administrateur" lightbox="../../media/admin-submission-customize-columns.png":::
 
    - Pour filtrer les entrées, cliquez sur **Filtrer**. Les filtres disponibles sont :
      - **Date envoyée :** **date de début** et **date de fin**.
@@ -186,7 +186,7 @@ Le message signalé est marqué comme faux positif ou faux négatif. Une notific
      - **ID de message réseau**
      - **Sender**
      - **Destinataire**
-     - **Name**
+     - **Nom**
      - **Soumis par**
      - **Raison de l’envoi**
      - **État**
@@ -195,7 +195,7 @@ Le message signalé est marqué comme faux positif ou faux négatif. Une notific
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
      > [!div class="mx-imgBorder"]
-     > ![Nouvelles options de filtre pour les soumissions d’administrateurs.](../../media/submit-admin-submissions-view-filters.png)
+     > :::image type="content" source="../../media/admin-submission-filters.png" alt-text="Les options Nouveau filtre pour les soumissions d’administrateur" lightbox="../../media/admin-submission-filters.png":::
 
    - Pour grouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste liste :
      - **Aucune**
@@ -263,7 +263,7 @@ Si une substitution a été trouvée, le résultat doit être disponible en quel
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
      > [!div class="mx-imgBorder"]
-     > ![Nouvelles options de filtre pour les envois d’utilisateurs.](../../media/submit-user-submissions-view-filters.png)
+     > :::image type="content" source="../../media/admin-submission-reported-messages.png" alt-text="Options nouveau filtre pour les soumissions d’utilisateurs" lightbox="../../media/admin-submission-reported-messages.png":::
 
    - Pour grouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste liste :
      - **Aucune**
@@ -298,4 +298,4 @@ Sous **l’onglet Messages** signalés par l’utilisateur, sélectionnez un mes
 - **Déclencher l’examen**
 
 > [!div class="mx-imgBorder"]
-> ![Nouvelles options sur le bouton Action.](../../media/admin-submission-main-action-button.png)
+> :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="Nouvelles options sur le bouton Action" lightbox="../../media/admin-submission-main-action-button.png":::

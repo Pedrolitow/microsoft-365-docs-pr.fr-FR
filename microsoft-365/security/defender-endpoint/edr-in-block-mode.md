@@ -15,15 +15,15 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.date: 04/04/2022
+ms.date: 04/01/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: eb40eaee9043e81331eca98c85f1467111cc37e4
-ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
+ms.openlocfilehash: 898d6de45830068ad300a64a3312cff3d5914323
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/04/2022
-ms.locfileid: "64638353"
+ms.locfileid: "64634292"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Détection et réponse de point de terminaison (EDR) en mode bloc
 
@@ -115,6 +115,10 @@ Vous pouvez également définir une exclusion pour Antivirus Microsoft Defender.
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>Ai-je besoin d’activer PEPT en mode blocage si j’ai Antivirus Microsoft Defender en cours d’exécution sur des appareils ?
 
 L’objectif principal des PEPT en mode blocage est de corriger les détections post-violation qui ont été manquées par un produit antivirus non Microsoft. L’activation de l’PEPT en mode blocage est un avantage minime lorsque Antivirus Microsoft Defender est en mode actif, car la protection en temps réel est d’abord prévue pour détecter et corriger les détections. Nous vous recommandons d’activer PEPT en mode blocage sur les points de terminaison où Microsoft Defender pour antivirus s’exécute en mode passif. PEPT détections peuvent être automatiquement corrigés par la [protection PUA](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) ou par un examen automatisé & [fonctionnalités](automated-investigations.md) de correction en mode blocage.
+
+- Lorsque Antivirus Microsoft Defender est en mode passif, PEPT en mode bloc fournit une autre couche de défense avec Microsoft Defender pour point de terminaison.
+
+- Lorsque Antivirus Microsoft Defender est en mode actif, la PEPT en mode blocage ne fournit pas d’analyse supplémentaire, mais elle permet aux Antivirus Microsoft Defender d’agir automatiquement sur les détections de PEPT comportemental post-violation.
 
 ### <a name="will-edr-in-block-mode-affect-a-users-antivirus-protection"></a>La PEPT en mode blocage affectera-t-elle la protection antivirus d’un utilisateur ?
 
