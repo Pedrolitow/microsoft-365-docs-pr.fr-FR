@@ -1,7 +1,7 @@
 ---
 title: Déployer Microsoft Defender pour le point de terminaison sur les fonctionnalités iOS
 description: Décrit comment déployer Microsoft Defender pour Endpoint sur des appareils iOS non inscrits.
-keywords: 'microsoft, defender, Microsoft Defender pour le point de terminaison, ios, configurer, fonctionnalités, ios'
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, ios, configurer, fonctionnalités, ios
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,11 +12,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
+- m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
+ms.openlocfilehash: b1945059147f87499d131d241c74aaca749fb6e7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474110"
 ---
-
 # <a name="deploy-microsoft-defender-for-endpoint-on-unenrolled-ios-devices"></a>Déployer Microsoft Defender pour endpoint sur des appareils iOS non inscrits
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -49,11 +54,12 @@ Les utilisateurs finaux doivent également prendre des mesures pour installer Mi
 
 1. **Vérifiez que le connecteur est activé**. <br> Sur la [console de sécurité](https://security.microsoft.com) unifiée,  >  Paramètres **Fonctionnalités EndpointsAdvanced** >  et assurez-vous que Microsoft Intune **connexion est activée**.
 
-  ![Image de Defender pour point de terminaison -Connecteur Intune](images/enable-intune-connection.png)
+  :::image type="content" source="images/enable-intune-connection.png" alt-text="Le connecteur Defender pour le point de terminaison - Intune" lightbox="images/enable-intune-connection.png":::
+
   
 2. **Vérifiez que le connecteur est activé sur le portail Intune**. <br> Dans [le Centre d’administration Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), sélectionnez **Endpoint SecurityMicrosoft** >  **Defender for Endpoint** et assurez-vous que l’état de connexion est activé.
 
-  ![Paramètres de l’application](images/app-settings.png)
+  :::image type="content" source="images/app-settings.png" alt-text="Paramètres de l’application" lightbox="images/app-settings.png":::
 
 ### <a name="create-an-app-protection-policy"></a>Créer une stratégie de protection des applications
  
@@ -63,7 +69,7 @@ Microsoft Defender pour le point de terminaison peut être configuré pour envoy
 1. Créer une stratégie <br>
 Les stratégies de protection des applications (APP) sont des règles qui garantissent que les données d’une organisation sont sécurisées ou restent dans une application managée. Une stratégie peut être une règle qui est appliquée lorsque l’utilisateur tente d’accéder à des données « d’entreprise » ou de les déplacer, ou s’il tente un ensemble d’actions interdites ou surveillées lorsqu’il se trouve dans l’application. 
 
-![Image de création de stratégie](images/create-policy.png)
+:::image type="content" source="images/create-policy.png" alt-text="Onglet Créer une stratégie dans l’élément de menu Stratégies de protection des applications" lightbox="images/create-policy.png":::
 
 2. Ajouter des applications <br>
     a. Choisissez la façon dont vous souhaitez appliquer cette stratégie aux applications sur différents appareils. Ajoutez ensuite au moins une application. <br>
@@ -75,12 +81,14 @@ Les stratégies de protection des applications (APP) sont des règles qui garant
 
     *Exemple : Outlook en tant qu’application gérée*
 
-    ![Image Outlook en tant qu’application gérée](images/managed-app.png)
+     :::image type="content" source="images/managed-app.png" alt-text="Élément de menu Outlook Microsoft dans le volet de navigation gauche" lightbox="images/managed-app.png":::
+  
 
  3. Définissez les exigences de sécurité de la signature pour votre stratégie de protection. <br>
-**Sélectionnez Paramètre > niveau de menace** d’appareil autorisé maximum dans **Les conditions** d’appareil et entrez une valeur. Sélectionnez  **Ensuite Action : « Bloquer l’accès** ». Microsoft Defender pour point de terminaison sur iOS partage ce niveau de menace d’appareil.
+**Sélectionnez Paramètre > niveau de menace** d’appareil autorisé maximum dans **Les conditions** d’appareil, puis entrez une valeur. Sélectionnez  **Ensuite Action : « Bloquer l’accès** ». Microsoft Defender pour point de terminaison sur iOS partage ce niveau de menace d’appareil.
 
-    ![Image du lancement conditionnel](images/conditional-launch.png)
+    
+   :::image type="content" source="images/conditional-launch.png" alt-text="Volet Conditions de l’appareil" lightbox="images/conditional-launch.png":::
 
 4. Affecter des groupes d’utilisateurs auxquels la stratégie doit être appliquée.<br>
   Sélectionnez **Groupes inclus**. Ajoutez ensuite les groupes appropriés. 

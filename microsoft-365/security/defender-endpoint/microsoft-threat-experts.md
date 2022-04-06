@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cc9f0f4410e3f62a6f787efd01d899250cd67a93
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 82fbe21e4d18a741da4a098b8e24a303f4d47008
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765671"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473956"
 ---
 # <a name="microsoft-threat-experts"></a>Spécialistes des menaces Microsoft
 
@@ -44,17 +44,17 @@ Ce service de recherche de menace gérée fournit des informations et des donné
 > [!NOTE]
 > Discutez des conditions d’éligibilité avec votre fournisseur de services techniques Microsoft et votre équipe de compte avant de vous appliquer au service de recherche de menaces gérées.
 
-Si vous êtes un client Microsoft Defender pour points de terminaison, vous devez demander **Spécialistes des menaces Microsoft - Notifications** d’attaque ciblées pour obtenir des informations et une analyse spéciales qui vous aident à identifier les menaces les plus critiques dans votre environnement afin de pouvoir y répondre rapidement.
+Si vous êtes un client Microsoft Defender pour points de terminaison, vous devez demander des notifications d’attaques **ciblées Spécialistes des menaces Microsoft** pour obtenir des informations et une analyse spéciales qui vous aident à identifier les menaces les plus critiques dans votre environnement afin de pouvoir y répondre rapidement.
 
-Pour vous inscrire à Spécialistes des menaces Microsoft - Avantages des notifications d’attaques ciblées, \> Paramètres points de terminaison **fonctionnalités générales** \>  \>  \> avancées **Spécialistes des menaces Microsoft - Notifications** d’attaque ciblée à appliquer. Une fois accepté, vous bénéficiez des avantages des notifications d’attaque ciblée.
+Pour vous inscrire à Spécialistes des menaces Microsoft - Avantages des notifications d’attaques ciblées, \> Paramètres points de terminaison **Fonctionnalités générales** \>  \>  \> avancées **Spécialistes des menaces Microsoft - Notifications** d’attaque ciblée à appliquer. Une fois accepté, vous bénéficiez des avantages des notifications d’attaque ciblée.
 
-Contactez votre équipe de compte ou votre représentant Microsoft pour vous abonner à **Spécialistes des menaces Microsoft - Experts** à la demande pour consulter nos experts en matière de menaces sur les détections et les adversaires pertinents auxquels votre organisation fait face.
+Contactez votre équipe de compte ou votre représentant Microsoft pour vous abonner à **Spécialistes des menaces Microsoft - Experts** à la demande pour consulter nos experts en matière de menaces sur les détections et les adversaires pertinents auxquels votre organisation est confrontée.
 
-Pour [plus d’Spécialistes des menaces Microsoft, voir](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#before-you-begin) Configure Spécialistes des menaces Microsoft capabilities.
+Pour [plus d’Spécialistes des menaces Microsoft, voir](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#before-you-begin) Configurer les fonctionnalités de gestion des données.
 
 ## <a name="microsoft-threat-experts---targeted-attack-notification"></a>Spécialistes des menaces Microsoft - Notification d’attaque ciblée
 
-Spécialistes des menaces Microsoft - La notification d’attaque ciblée permet de cibler de manière proactive les menaces les plus importantes pour votre réseau, y compris les intrusions de l’adversaire humain, les attaques par clavier ou les attaques avancées telles que le cyber-espionnage. Ces notifications s’affiche sous la forme d’une nouvelle alerte. Le service de recherche géré inclut :
+Spécialistes des menaces Microsoft - La notification d’attaques ciblées permet de cibler de manière proactive les menaces les plus importantes pour votre réseau, notamment les intrusions de l’adversaire humain, les attaques au clavier ou les attaques avancées telles que le cyber-espionnage. Ces notifications s’affiche sous la forme d’une nouvelle alerte. Le service de recherche géré inclut :
 
 - Analyse et analyse des menaces, ce qui réduit le temps d’activité et les risques pour l’entreprise
 - Intelligence artificielle entraînée pour découvrir et hiérarchiser les attaques connues et inconnues
@@ -73,19 +73,19 @@ L’option de **consulter un expert en** menaces est disponible à plusieurs end
 
 - ***Menu Aide et support***
 
-  ![Capture d’écran de l’option de menu MTE-EOD.](images/mte-eod-menu.png)
+  :::image type="content" source="images/mte-eod-menu.png" alt-text="Élément de menu MTE-EOD" lightbox="images/mte-eod-menu.png":::
 
 - ***Menu Actions de page d’appareil***
 
-  ![Capture d’écran de l’option de menu d’action de page d’appareil MTE-EOD.](images/mte-eod-machines.png)
+  :::image type="content" source="images/mte-eod-machines.png" alt-text="Option de menu Action de page d’appareil MTE-EOD" lightbox="images/mte-eod-machines.png":::
 
 - ***Menu Actions de la page Alertes***
 
-  ![Capture d’écran de l’option de menu d’action de page d’alerte MTE-EOD.](images/mte-eod-alerts.png)
+  :::image type="content" source="images/mte-eod-alerts.png" alt-text="Option de menu Action de page d’alerte MTE-EOD" lightbox="images/mte-eod-alerts.png":::
 
 - ***Menu Actions de la page de fichiers***
 
-  ![Capture d’écran de l’option de menu Action de la page de fichiers MTE-EOD.](images/mte-eod-file.png)
+  :::image type="content" source="images/mte-eod-file.png" alt-text="Option de menu Action de la page de fichiers MTE-EOD" lightbox="images/mte-eod-file.png":::
 
 > [!NOTE]
 > Si vous souhaitez suivre l’état de vos cas d’experts à la demande via le Microsoft Services Hub, faites-en le suivi.
@@ -96,4 +96,4 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide du Microsoft Serv
 
 ## <a name="related-topic"></a>Rubrique connexe
 
-- [Configurer les fonctionnalités Spécialistes des menaces Microsoft de gestion](configure-microsoft-threat-experts.md)
+- [Configurer les Spécialistes des menaces Microsoft de gestion](configure-microsoft-threat-experts.md)

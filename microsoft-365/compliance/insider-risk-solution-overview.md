@@ -1,6 +1,6 @@
 ---
 title: Solutions aux risques internes
-description: Découvrez comment réduire les risques dans votre organisation à l’aide de solutions à risque internes Microsoft 365.
+description: Découvrez comment réduire les risques au niveau de votre organisation grâce aux solutions à risque internes Microsoft 365.
 keywords: Microsoft 365, risques internes, conformité
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: de4fb39219674c23b35672d6d12a8b124e748866
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: 381b9cafe50f8a9aa3788e17668d642b291d5279
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61072806"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594859"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Solutions de risque interne dans Microsoft 365
 
@@ -52,14 +52,14 @@ Pour protéger votre organisation contre les risques internes, utilisez Microsof
 
 ### <a name="communication-compliance"></a>Conformité des communications
 
-La conformité des communications permet de réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. La conformité des communications est disponible dans les abonnements suivants :
+La conformité de la communication permet de minimiser les risques de communication en vous aidant à détecter, capturer et agir sur les messages inappropriés dans votre organisation. La conformité des communications est disponible dans les abonnements suivants :
 
-- Microsoft 365 E5/A5/G5 (version payante ou d’essai)
-- Microsoft 365 E3/A3/G5 + le module Microsoft 365 E5 conformité Microsoft 365 E5/A5/G5
-- Microsoft 365 E3/A3/G5 + le module Microsoft 365 E5/A5/G5 Gestion des risques internes
+- Microsoft 365 E5/A5/F5/G5 (version payante ou d’essai)
+- Microsoft 365 E3/A3/F3/G5 + le module Microsoft 365 E5 conformité Microsoft 365 E5/A5/F5/G5
+- Microsoft 365 E3 abonnement A3/F3/G5 + le module Microsoft 365 E5/A5/F5/G5 Gestion des risques internes
 - Office 365 Entreprise abonnement E5 (version payante ou d’essai)
 - Office 365 A5 abonnement (version payante ou d’essai)
-- Abonnement Office 365 Entreprise E3 + module complémentaire de Conformité avancée Office 365 (désormais indisponible pour les nouveaux abonnements)
+- Office 365 Entreprise abonnement E3 + le module Conformité avancée Office 365 de service (non disponible pour les nouveaux abonnements, voir la remarque)
 
 ### <a name="insider-risk-management"></a>Gestion des risques internes
 
@@ -68,7 +68,7 @@ La gestion des risques internes permet de réduire les risques internes en vous 
 La gestion des risques internes est disponible dans les abonnements suivants :
 
 - Microsoft 365 E5/A5/G5 (version payante ou d’essai)
-- Microsoft 365 E3/A3/G3 + le module Microsoft 365 E5 conformité A5/G5
+- Microsoft 365 E3/A3/G3 + le module Microsoft 365 E5 conformité Microsoft 365 E5/A5/G5
 - Microsoft 365 E3/A3/G3 + le module Microsoft 365 E5/A5/G5 Gestion des risques internes
 - Abonnement Office 365 E3 + Enterprise Mobility and Security E3 + le module complémentaire Microsoft 365 E5 Conformité
 
@@ -80,7 +80,7 @@ Les obstacles aux informations sont disponibles dans les abonnements suivants :
 
 - Microsoft 365 E5/A5 (version payante ou d’essai)
 - Office 365 E5/A5/A3/A1 (version payante ou d’essai)
-- Conformité avancée Office 365 module module (non disponible pour les nouveaux abonnements)
+- Conformité avancée Office 365 de modules (non disponible pour les nouveaux abonnements)
 - Microsoft 365 E3/A3/A1 + le module Microsoft 365 E5 conformité A5
 - Microsoft 365 E3/A3/A1 + le module Microsoft 365 E5/A5 Gestion des risques internes
 
@@ -95,24 +95,24 @@ La gestion des accès privilégiés est disponible dans les abonnements suivants
 - Office 365 Entreprise abonnement E5 (version payante ou d’essai)
 - Office 365 A5 abonnement (version payante ou d’essai)
 - Microsoft 365 E3 abonnement + le module Microsoft 365 E5 Conformité’abonnement
-- Microsoft 365 E3 abonnement + le module complémentaire Microsoft 365 E5 Protection des informations et gouvernance des informations
+- Microsoft 365 E3 abonnement + le module Microsoft 365 E5 Information Protection et de gouvernance
 - Microsoft 365 A3 abonnement + le module Microsoft 365 A5 conformité de l’application
-- Microsoft 365 A3 abonnement + le module complémentaire Microsoft 365 A5 Protection des informations et gouvernance des informations
+- Microsoft 365 A3 abonnement + le module Microsoft 365 A5 Information Protection et de gouvernance
 
-## <a name="deploy-microsoft-365-insider-risk-solutions"></a>Déployer des solutions Microsoft 365 risques internes
+## <a name="deploy-microsoft-365-insider-risk-solutions"></a>Déployer des Microsoft 365 risques internes
 
 Pour protéger votre organisation contre les risques internes, définissez et déployez les solutions Microsoft 365 suivantes :
 
 ![Défense en profondeur de la solution à risque interne.](../media/ir-solution-defense-in-depth.png)
 
-1. Configurer et créer des stratégies [de conformité des communications.](communication-compliance-solution-overview.md)
-2. Configurer et créer des [stratégies de gestion des risques internes.](insider-risk-management-solution-overview.md)
-3. Facultatif : configurer et créer des stratégies [d’obstacle aux informations.](information-barriers-solution-overview.md)
-4. Facultatif : activez et configurez la [gestion des accès privilégiés.](privileged-access-management-solution-overview.md)
+1. Configurer et créer des stratégies [de conformité des communications](communication-compliance-solution-overview.md).
+2. Configurer et créer des [stratégies de gestion des risques internes](insider-risk-management-solution-overview.md).
+3. Facultatif : configurer et créer des stratégies [d’obstacle aux informations](information-barriers-solution-overview.md).
+4. Facultatif : activez et configurez la [gestion des accès privilégiés](privileged-access-management-solution-overview.md).
 
 ## <a name="illustrations-with-examples"></a>Illustrations avec exemples
 
-Pour vous aider à planifier une stratégie intégrée pour l’Microsoft 365 fonctionnalités de risques internes, téléchargez l’ensemble des fonctionnalités de *protection* des informations Microsoft 365 et de conformité. Pour les fonctionnalités de risque internes, consultez les pages d’illustration de l’architecture 5 à 7. N’hésitez pas à les adapter à votre usage personnel.
+Pour vous aider à planifier une stratégie intégrée pour l’Microsoft 365 des fonctionnalités de risques internes, téléchargez l’ensemble d’illustrations des fonctionnalités de *protection* des informations Microsoft 365 et de conformité. Pour les fonctionnalités de risque internes, consultez les pages d’illustration de l’architecture 5 à 7. N’hésitez pas à les adapter à votre usage personnel.
 
 | Élément | Description |
 |:-----|:------------|

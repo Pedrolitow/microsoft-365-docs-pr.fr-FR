@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveillez et gérez la destruction de contenu lorsque vous utilisez une révision avant destruction ou que des éléments marqués comme enregistrement sont automatiquement supprimés selon les paramètres que vous avez configurés.
-ms.openlocfilehash: 2d078eb00ffa6d2dd8279c7e5eb65a8fcfb6fa53
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: dbc713c665367bb973fb8faded24015ad6c2d5c3
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419182"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594815"
 ---
 # <a name="disposition-of-content"></a>Destruction de contenu
 
@@ -187,14 +187,16 @@ Comme vous pouvez le voir dans l’exemple affiché, les actions prises en charg
   
 - **Approuver la destruction** :
     - Lorsque cette action est sélectionnée pour une étape intermédiaire de la révision avant destruction (vous avez configuré plusieurs étapes) : l’élément se déplace vers la prochaine étape de la destruction.
-    - Lorsque cette action est sélectionnée pour l’étape finale de la révision de destruction ou qu’il n’existe qu’une seule étape de destruction : l’élément est marqué comme éligible pour une suppression définitive, qui se produit ensuite dans les 7 jours.
+    - Lorsque cette action est sélectionnée pour l’étape finale de la révision de destruction ou qu’il n’existe qu’une seule étape de destruction : l’élément est marqué comme éligible pour une suppression définitive, qu’un travail de minuteur actionne ensuite dans les 7 jours. Le minutage exact de la suppression définitive de l’élément dépend de la charge de travail. Pour plus d’informations, voir [Fonctionnement de la rétention pour SharePoint et OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) et [Fonctionnement de la rétention pour Exchange](retention-policies-exchange.md#how-retention-works-for-exchange).
+
 - **Attribuer un nouveau libellé** :
     - Lorsque cette action est sélectionnée, l’élément quitte le procession de révision avant destruction pour l’étiquette d’origine. L’élément est ensuite soumis aux paramètres de rétention de la nouvelle étiquette de rétention sélectionnée.
+
 - **Étendre** :
     - Lorsque cette action est sélectionnée, la révision avant destruction est suspendue de manière effective jusqu’à la fin de la période étendue, puis la révision avant destruction est déclenchée à nouveau à partir de la première étape.
+
 - **Ajouter des réviseurs** :
     - Lorsque cette action est sélectionnée, l’utilisateur est invité à spécifier et ajouter d’autres utilisateurs pour la révision.
-    
     > [!NOTE]
     > Cette action n’accorde pas automatiquement les [autorisations requises](#permissions-for-disposition) aux utilisateurs ajoutés. S'ils n'ont pas ces autorisations, ils ne peuvent pas participer à l'examen des dispositions.
 

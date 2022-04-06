@@ -19,12 +19,12 @@ description: Découvrez les rapports intelligents et les informations disponible
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5364733dc6dafb4508ff68447eb0b8af772da359
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 7f7171a7f064b9b5ad83dc21e2369cf2700553c8
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64466386"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683250"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Rapports intelligents et aperçus dans le Centre de sécurité et de conformité
 
@@ -41,7 +41,7 @@ Si vous faites partie de l’équipe de sécurité Microsoft 365 pour les entrep
 
 Les fonctionnalités de surveillance disponibles dans le Centre de sécurité & conformité incluent des rapports intelligents et des informations qui permettent à vos administrateurs de conformité et de sécurité de se concentrer sur les problèmes prioritaires, tels que les attaques de sécurité ou l’augmentation de l’activité suspecte. Dans un tableau de bord, les rapports intelligents et les informations ressemblent à l’image suivante :
 
-:::image type="content" source="../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png" alt-text="Tableau de bord Rapports dans le Centre de sécurité & conformité" lightbox="../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png":::
+![Tableau de bord Rapports dans le Centre de sécurité & conformité.](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
 
 Outre la mise en évidence des problèmes, les rapports intelligents et les informations incluent des recommandations et des liens pour afficher et explorer des données et prendre des mesures rapides. Par exemple, si votre organisation a soudainement un nombre élevé de messages électroniques marqués comme courrier indésirable par les utilisateurs finaux, vous pouvez être invité à revoir vos stratégies anti-courrier indésirable pour vous assurer que le niveau de protection est en place.
 

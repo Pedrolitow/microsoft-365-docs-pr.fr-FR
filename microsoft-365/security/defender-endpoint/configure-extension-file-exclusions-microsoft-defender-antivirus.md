@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.date: 02/27/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: da5add0e1f37a813e6962accbc391be6efba1cb1
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 9a67b05f089fd25e26f22508cbedb8f4b3ce086a
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472988"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595079"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurer et valider des exclusions en fonction de l’extension de fichier et de l’emplacement du dossier
 
@@ -36,10 +36,10 @@ Vous pouvez définir des exclusions pour les Antivirus Microsoft Defender qui s�
 - [Exclusions pour les fichiers ouverts par des processus](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Antivirus Microsoft Defender exclusions ne s’appliquent pas aux autres fonctionnalités de Microsoft Defender pour les points de terminaison, notamment [les protection évolutive des points de terminaison (PEPT),](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) les règles de réduction de la surface d’attaque [(ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction) et l’accès contrôlé aux dossiers[.](/microsoft-365/security/defender-endpoint/controlled-folders) Les fichiers que vous excluez à l’aide des méthodes décrites dans cet article peuvent toujours déclencher PEPT alertes et autres détections.
-> Pour exclure les fichiers à grande étendue, ajoutez-les aux indicateurs [personnalisés](/microsoft-365/security/defender-endpoint/manage-indicators) Microsoft Defender for Endpoint.
+> Antivirus Microsoft Defender exclusions ne s’appliquent pas aux autres fonctionnalités Microsoft Defender pour point de terminaison, notamment [protection évolutive des points de terminaison ( PEPT),](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) les règles de réduction [de la surface d’attaque (ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction) et [l’accès contrôlé aux dossiers](/microsoft-365/security/defender-endpoint/controlled-folders). Les fichiers que vous excluez à l’aide des méthodes décrites dans cet article peuvent toujours déclencher PEPT alertes et autres détections.
+> Pour exclure les fichiers à grande étendue, ajoutez-les au Microsoft Defender pour point de terminaison [indicateurs personnalisés](/microsoft-365/security/defender-endpoint/manage-indicators).
 
-## <a name="before-you-begin"></a>Avant de commencer...
+## <a name="before-you-begin"></a>Avant de commencer
 
 Voir [Recommandations pour définir des exclusions](configure-exclusions-microsoft-defender-antivirus.md) avant de définir vos listes d’exclusions.
 
@@ -52,8 +52,7 @@ Pour exclure certains fichiers de Antivirus Microsoft Defender analyses, vous mo
 >
 > Les exclusions automatiques s’appliquent uniquement Windows Server 2016 et ultérieures. Ces exclusions ne sont pas visibles dans l’application Sécurité Windows et dans PowerShell.
 
-Le tableau suivant répertorie quelques exemples d’exclusions basées sur l’extension de fichier et l’emplacement du dossier. 
-<br/><br/>
+Le tableau suivant répertorie quelques exemples d’exclusions basées sur l’extension de fichier et l’emplacement du dossier.
 
 |Exclusion|Exemples|Liste d’exclusions|
 |---|---|---|
@@ -77,7 +76,7 @@ Le tableau suivant répertorie quelques exemples d’exclusions basées sur l’
 
 - Les exclusions s’appliquent aux analyses [programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)[, aux](run-scan-microsoft-defender-antivirus.md) analyses à la demande et à la [protection](configure-real-time-protection-microsoft-defender-antivirus.md) en temps réel, mais pas à Travers Defender pour le point de terminaison. Pour définir des exclusions dans Defender pour le point de terminaison, utilisez [des indicateurs personnalisés](manage-indicators.md).
 
-- Par défaut, les modifications locales apportées aux listes (par les utilisateurs  ayant des privilèges d’administrateur, y compris les modifications apportées avec PowerShell et WMI) seront fusionnées avec les listes telles que définies (et déployées) par la stratégie de groupe, Configuration Manager ou Intune. Les listes de stratégie de groupe sont prioritaire en cas de conflit. En outre, les modifications apportées à la liste d’exclusions avec la stratégie de groupe sont visibles [dans Sécurité Windows app.](microsoft-defender-security-center-antivirus.md)
+- Par défaut, les modifications locales apportées aux listes (par les utilisateurs  ayant des privilèges d’administrateur, y compris les modifications apportées avec PowerShell et WMI) sont fusionnées avec les listes telles que définies (et déployées) par stratégie de groupe, Configuration Manager ou Intune. Les listes stratégie de groupe sont prioritaire en cas de conflit. En outre, les modifications apportées aux listes d’exclusions stratégie de groupe sont visibles dans [l’Sécurité Windows’application](microsoft-defender-security-center-antivirus.md).
 
 - Pour permettre aux modifications locales de remplacer les paramètres de déploiement géré, configurez la façon dont les [listes d’exclusions définies](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists) localement et globalement sont fusionnées.
 
@@ -85,25 +84,25 @@ Le tableau suivant répertorie quelques exemples d’exclusions basées sur l’
 
 Vous pouvez choisir parmi plusieurs méthodes pour définir des exclusions pour Antivirus Microsoft Defender.
 
-### <a name="use-intune-to-configure-file-name-folder-or-file-extension-exclusions"></a>Utiliser Intune pour configurer des exclusions de nom de fichier, de dossier ou d’extension de fichier
+### <a name="use-intune-to-configure-file-name-folder-or-file-extension-exclusions"></a>Utiliser Intune pour configurer les exclusions de nom de fichier, de dossier ou d’extension de fichier
 
 Consultez les articles suivants :
 
 - [Configurer des paramètres de restriction d’appareils dans Microsoft Intune](/intune/device-restrictions-configure)
-- [Antivirus Microsoft Defender de restriction d’appareil pour Windows 10 dans Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+- [Antivirus Microsoft Defender paramètres de restriction d’appareil pour Windows 10 dans Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
-### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>Utiliser Configuration Manager pour configurer des exclusions de nom de fichier, de dossier ou d’extension de fichier
+### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>Utiliser Configuration Manager pour configurer les exclusions de nom de fichier, de dossier ou d’extension de fichier
 
 Découvrez [comment créer et déployer des stratégies de logiciel anti-programme malveillant : paramètres d’exclusion](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) pour plus d’informations sur la configuration Microsoft Endpoint Manager (branche actuelle).
 
-### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>Utiliser une stratégie de groupe pour configurer des exclusions de dossier ou d’extension de fichier
+### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>Utiliser stratégie de groupe pour configurer des exclusions de dossier ou d’extension de fichier
 
 > [!NOTE]
 > Si vous spécifiez un chemin d’accès complet à un fichier, seul ce fichier est exclu. Si un dossier est défini dans l’exclusion, tous les fichiers et sous-répertoires de ce dossier sont exclus.
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), faites un clic droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier**.
 
-2. Dans **l’Éditeur de gestion des stratégies de** groupe, sélectionnez **Configuration** ordinateur et **sélectionnez Modèles d’administration**.
+2. Dans **l’stratégie de groupe de gestion,** sélectionnez **Configuration** ordinateur et **sélectionnez Modèles d’administration**.
 
 3. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** \>  \> **exclusions**.
 
@@ -111,7 +110,7 @@ Découvrez [comment créer et déployer des stratégies de logiciel anti-program
     1. Définissez l’option **sur Activé**.
     2. Sous la section **Options** , sélectionnez **Afficher**.
     3. Spécifiez chaque dossier sur sa propre ligne sous la **colonne Nom de** la valeur.
-    4. Si vous spécifiez un fichier, veillez à entrer un chemin d’accès complet au fichier, y compris la lettre de lecteur, le chemin d’accès au dossier, le nom de fichier et l’extension. 
+    4. Si vous spécifiez un fichier, veillez à entrer un chemin d’accès complet au fichier, y compris la lettre de lecteur, le chemin d’accès au dossier, le nom de fichier et l’extension.
     5. Entrez **0 dans** la **colonne** Valeur.
 
 5. Sélectionnez **OK**.
@@ -138,8 +137,6 @@ Le format des cmdlets est le suivant :
 
 Le tableau suivant répertorie les cmdlets que vous pouvez utiliser dans la `<cmdlet>` partie de l’cmdlet PowerShell :
 
-<br/><br/>
-
 |Action de configuration|Cmdlet PowerShell|
 |:---|:---|
 |Créer ou overwrite la liste|`Set-MpPreference`|
@@ -147,8 +144,6 @@ Le tableau suivant répertorie les cmdlets que vous pouvez utiliser dans la `<cm
 |Supprimer l’élément de la liste|`Remove-MpPreference`|
 
 Le tableau suivant répertorie les valeurs que vous pouvez utiliser dans la `<exclusion list>` partie de l’cmdlet PowerShell :
-
-<br/><br/>
 
 |Type d’exclusion|Paramètre PowerShell|
 |---|---|
@@ -225,8 +220,6 @@ Le tableau suivant décrit comment les caractères génériques peuvent être ut
 
 Le tableau suivant répertorie et décrit les variables d’environnement de compte système.
 
-<br/><br/>
-
 |Cette variable d’environnement système...|Redirige vers cette|
 |---|---|
 |`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
@@ -295,15 +288,15 @@ Le tableau suivant répertorie et décrit les variables d’environnement de com
 Vous pouvez récupérer les éléments de la liste d’exclusions à l’aide de l’une des méthodes suivantes :
 
 - [Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
-- [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
-- MpCmdRun
-- PowerShell
+- [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
+- [MpCmdRun](command-line-arguments-microsoft-defender-antivirus.md)
+- [PowerShell](/powershell/module/defender)
 - [Sécurité Windows application](microsoft-defender-security-center-antivirus.md)
 
 > [!IMPORTANT]
-> Les modifications apportées aux listes  d’exclusions avec la stratégie de groupe s’afficheront dans les listes de [l Sécurité Windows app.](microsoft-defender-security-center-antivirus.md)
+> Les modifications apportées aux listes d **stratégie de groupe’exclusion s’afficheront** dans les listes de [l Sécurité Windows appl.](microsoft-defender-security-center-antivirus.md)
 >
-> Les modifications apportées dans l Sécurité Windows **appapplment de groupe ne s’afficheront pas** dans les listes de stratégie de groupe.
+> Les modifications apportées dans l Sécurité Windows **appapplment ne s’afficheront** pas dans stratégie de groupe listes.
 
 Si vous utilisez PowerShell, vous pouvez récupérer la liste de deux manières :
 

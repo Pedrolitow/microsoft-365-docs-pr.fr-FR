@@ -8,12 +8,13 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: 8928441e27215e75dc4456116c9a0e7890073852
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 0b7e9045ecc479c2da382979211caaa46e8a01d1
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962614"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683294"
 ---
 # <a name="microsoft-defender-for-identity-directory-services-account-in-microsoft-365-defender"></a>Compte Microsoft Defender pour les services d’annuaire d’identités dans Microsoft 365 Defender
 
@@ -31,11 +32,11 @@ Cet article explique comment configurer le compte [Microsoft Defender for Identi
 
 Pour connecter le [capteur](sensor-health.md#add-a-sensor) à vos domaines Active Directory, vous devez configurer les comptes des services d’annuaire.
 
-1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Paramètres** and then **Identities**.
+1. Dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Paramètres** and then **Identities**.
 
     ![Go to Paramètres, then Identities.](../../media/defender-identity/settings-identities.png)
 
-1. Sélectionnez **des comptes de service d’annuaire.** Vous verrez quels comptes sont associés à quels domaines.
+1. **Sélectionnez des comptes de service d’annuaire**. Vous verrez quels comptes sont associés à quels domaines.
 
     ![Comptes de service d’annuaire.](../../media/defender-identity/directory-service-accounts.png)
 
@@ -43,7 +44,7 @@ Pour connecter le [capteur](sensor-health.md#add-a-sensor) à vos domaines Activ
 
     ![Paramètres du compte.](../../media/defender-identity/account-settings.png)
 
-1. Pour ajouter un nouveau compte  de services d’annuaire, sélectionnez Créer un compte et remplissez le nom de **compte,** le domaine **et** le mot de **passe.** Vous pouvez également choisir s’il s’agit d’un compte de **service** géré de groupe (gMSA) et s’il appartient à un **domaine d’étiquette unique.**
+1. Pour ajouter un nouveau compte de services d’annuaire, sélectionnez Créer un compte et remplissez le **nom du compte****, le** domaine et le mot de **passe**. Vous pouvez également choisir s’il s’agit d’un compte de **service** géré de groupe (gMSA) et s’il appartient à un **domaine d’étiquette unique**.
 
     ![Nouveau compte de service d’annuaire.](../../media/defender-identity/new-directory-service-account.png)
 

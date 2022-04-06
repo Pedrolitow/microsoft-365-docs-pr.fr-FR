@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Comprendre le nombre maximal de stratégies et d’éléments par stratégie pour les stratégies de rétention et les stratégies d’étiquette de rétention
-ms.openlocfilehash: 4cd8fc5f141f9e039a271e8534e156e4df0582e9
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 4c175a9e43440c58f74da334a38bc73dae5b76e4
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419126"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595013"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Limites des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -116,8 +116,16 @@ Exemple de SharePoint :
 
 Pour la [destruction de contenu](disposition.md), il existe des limites à prendre en compte :
 
-- 1 000 000 éléments en attente de destruction par phase pour chaque étiquette de rétention
-
-- Preuve de la destruction pendant un délai maximal de 7 ans après destruction de l’élément, avec une limite de 1 000 000 éléments par étiquette de rétention pour cette période. 
+- Nombres maximum par client :
     
-Si vous avez besoin d’une preuve de destruction supérieure à cette limite de 1 000 000 pour des éléments entrant comme enregistrements, contactez le [Support Microsoft](../admin/get-help-support.md).
+    - 16 000 000 éléments dans l’un des états de révision avant destruction suivants : destruction en attente ou destruction approuvée
+        
+    - 16 000 000 éléments marqués comme enregistrements automatiquement détruits (aucune révision avant destruction)
+
+- Nombres maximum pour chaque étiquette de rétention :
+    
+    - 1 000 000 éléments en attente de destruction par phase pour chaque étiquette de rétention
+    
+    - Preuve de la destruction pendant un délai maximal de 7 ans après destruction de l’élément, avec une limite de 1 000 000 éléments par étiquette de rétention pour cette période. 
+        
+        Si vous avez besoin d’une preuve de destruction supérieure à cette limite de 1 000 000 pour des éléments entrant comme enregistrements, contactez le [Support Microsoft](../admin/get-help-support.md).

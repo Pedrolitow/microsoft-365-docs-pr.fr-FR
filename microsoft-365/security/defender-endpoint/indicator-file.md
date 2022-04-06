@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 32de72a201dbb88c9fc0c6d7e61825bf8083fbf9
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 74859364cb2da004063ffc58922f2d9b399ea8d2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325542"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474220"
 ---
 # <a name="create-indicators-for-files"></a>Créer des indicateurs pour les fichiers
 
@@ -99,7 +99,7 @@ Choisissez si vous souhaitez générer une alerte sur l’événement de blocage
 - Description
 - Actions recommandées
 
-![Paramètres d’alerte pour les indicateurs de fichier.](images/indicators-generate-alert.png)
+:::image type="content" source="images/indicators-generate-alert.png" alt-text="Paramètres d’alerte pour les indicateurs de fichier" lightbox="images/indicators-generate-alert.png":::
 
 > [!IMPORTANT]
 >

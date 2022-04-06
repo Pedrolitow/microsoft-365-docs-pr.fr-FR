@@ -17,18 +17,18 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 805f857a95fab03f8356c5162db1509122e7250a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 21296ec7993b0d65e509d51f62ddae8f3415945c
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680817"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500714"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -44,7 +44,7 @@ Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser
 Microsoft Defender pour le point de terminaison pour Linux inclut des logiciels anti-programme malveillant et des protection évolutive des points de terminaison (PEPT) de logiciels malveillants. 
 
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Conditions préalables
 
 - Accès au portail Microsoft 365 Defender web
 - Distribution Linux à l’aide [du gestionnaire système](https://systemd.io/)
@@ -77,7 +77,7 @@ Si vous avez des échecs d’installation, reportez-vous à Résolution des prob
 
 ### <a name="system-requirements"></a>Configuration requise
 
-- Distributions de serveurs Linux et versions x64 (AMD64/EM64T) prise en charge :
+- Distributions de serveurs Linux et versions x64 (AMD64/EM64T) et x86_64 pris en charge :
 
   - Red Hat Enterprise Linux 6.7 ou supérieur
   - Red Hat Enterprise Linux 7.2 ou supérieur
@@ -129,19 +129,50 @@ Si vous avez des échecs d’installation, reportez-vous à Résolution des prob
        - 2.6.32-754.6.3.el6.x86_64
        - 2.6.32-754.9.1.el6.x86_64
 
+    Pour Red Hat Enterprise Linux 6 et CentOS 6, la liste des versions de noyau pris en charge est la :
+       - Pour 6,7 : 2.6.32-573.* 
+       - Pour 6,8 : 2.6.32-642.* 
+       - Pour 6,9 : 2.6.32-696.* 
+       - Pour 6,10 : 2.6.32.754.2.1.el6.x86_64 2.6.32-754.41.2 :
 
-    > [!NOTE]
-    > Après la publication d’une nouvelle version de package, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique.
+ > [!NOTE]
+ > Après la publication d’une nouvelle version de package, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique.
 
-  - Pour le reste des distributions prise en charge, la version minimale du noyau requise est 3.10.0-327
+  Liste des versions :
 
-- Mécanisme du fournisseur d’événements
-  - Red Hat Enterprise Linux 6 et CentOS 6 : `Talpa` solution basée sur un module noyau
-  - Pour le reste des distributions pris en charge : `Fanotify`
-    - L’option `fanotify` noyau doit être activée
+  - 2.6.32-754.2.1.el6.x86_64 
+  - 2.6.32-754.17.1.el6.x86_64
+  - 2.6.32-754.29.1.el6.x86_64
+  - 2.6.32-754.3.5.el6.x86_64 
+  - 2.6.32-754.18.2.el6.x86_64
+  - 2.6.32-754.29.2.el6.x86_64
+  - 2.6.32-754.6.3.el6.x86_64 
+  - 2.6.32-754.22.1.el6.x86_64
+  - 2.6.32-754.30.2.el6.x86_64
+  - 2.6.32-754.9.1.el6.x86_64 
+  - 2.6.32-754.23.1.el6.x86_64
+  - 2.6.32-754.33.1.el6.x86_64
+  - 2.6.32-754.10.1.el6.x86_64
+  - 2.6.32-754.24.2.el6.x86_64
+  - 2.6.32-754.35.1.el6.x86_64
+  - 2.6.32-754.11.1.el6.x86_64
+  - 2.6.32-754.24.3.el6.x86_64
+  - 2.6.32-754.39.1.el6.x86_64
+  - 2.6.32-754.12.1.el6.x86_64
+  - 2.6.32-754.25.1.el6.x86_64
+  - 2.6.32-754.41.2.el6.x86_64
+  - 2.6.32-754.14.2.el6.x86_64
+  - 2.6.32-754.27.1.el6.x86_64
+  - 2.6.32-754.15.3.el6.x86_64
+  - 2.6.32-754.28.1.el6.x86_64       
 
-      > [!CAUTION]
-      > L’exécution de Defender pour Endpoint sur Linux côte `fanotify`à côte avec d’autres solutions de sécurité basées sur n’est pas prise en charge. Cela peut entraîner des résultats imprévisibles, y compris l’arrêt du système d’exploitation.
+
+- Version minimale du noyau 3.10.0-327
+
+- L’option `fanotify` noyau doit être activée
+
+  > [!CAUTION]
+  > L’exécution de Defender pour Endpoint sur Linux côte `fanotify`à côte avec d’autres solutions de sécurité basées sur n’est pas prise en charge. Cela peut entraîner des résultats imprévisibles, y compris l’arrêt du système d’exploitation.
 
 - Espace disque : 1 Go
 
@@ -195,10 +226,8 @@ La feuille de calcul téléchargeable suivante répertorie les services et les U
 
 |Liste de feuilles de calcul de domaines| Description|
 |---|---|
-|Liste d’URL Microsoft Defender pour les points de terminaison pour les clients commerciaux | Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation pour les clients commerciaux. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Liste d’URL Microsoft Defender pour les points de terminaison pour les clients Gov/Cloud de la communauté du secteur public/DoD| Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation pour les clients Gov/Cloud de la communauté du secteur public/DoD. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
-|
-
+|:::image type="content" source="images/mdatp-urls.png" alt-text="Feuille de calcul d’URL Microsoft Defender pour les points de terminaison" lightbox="images/mdatp-urls.png":::|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> Téléchargez la feuille de [calcul ici](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).|
+|||
 
 > [!NOTE]
 > Pour obtenir une liste d’URL plus spécifique, voir [Configurer les paramètres de proxy et de connectivité Internet](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).

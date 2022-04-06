@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: f024f9d93b44e6d6a679311af914330f0e3db37c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3057e66352b9bd658ddd4958986cbefd61e4e187
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312934"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682942"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Recommandations de stratégie pour la sécurisation SharePoint sites et fichiers
 
@@ -57,7 +57,6 @@ Le tableau suivant répertorie les stratégies que vous devez réviser et mettre
 ||[SharePoint de contrôle d’accès](#sharepoint-access-control-policies) : autoriser l’accès par navigateur uniquement à des sites SharePoint spécifiques à partir d’appareils non utilisés.|Cela empêche la modification et le téléchargement de fichiers. Utilisez PowerShell pour spécifier des sites.|
 |**Sécurité spécialisée**|[*Toujours exiger* l’mf d’fa](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluez SharePoint dans l’affectation des applications cloud.|
 ||[SharePoint de contrôle d’accès](#use-app-enforced-restrictions-in-sharepoint) : bloquer l’accès à des sites SharePoint spécifiques à partir d’appareils non utilisés.|Utilisez PowerShell pour spécifier des sites.|
-|
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint"></a>Utiliser les restrictions appliquées par l’application dans SharePoint
 

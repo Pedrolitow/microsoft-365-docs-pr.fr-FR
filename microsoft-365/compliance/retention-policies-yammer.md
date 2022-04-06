@@ -17,19 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: 3759f39a9ef2067d9719d4cf83d73ee7b67ef125
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 48b7f00df2f01d1b84af1962d91551752334c8b1
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241430"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595101"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Découvrir la rétention pour Yammer
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-> [!NOTE]
-> Cette fonctionnalité est en phase aperçu et est sujette à modifications.
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Les informations contenues dans cet article complètent l’article [Découvrir la rétention](retention.md) car elles contiennent des informations spécifiques à Yammer.
 
@@ -61,11 +58,6 @@ Vous pouvez utiliser une stratégie de rétention pour conserver les données de
 Les copies des messages de la communauté peuvent également être stockées dans le dossier masqué des boîtes aux lettres des utilisateurs lorsqu’ils mentionnent @ des utilisateurs ou informent l’utilisateur d’une réponse. Bien que ces messages proviennent d’un message de la communauté, une stratégie de rétention pour les messages d’utilisateur Yammer, inclut souvent des copies des messages de la communauté. Par conséquent, les messages utilisateur ne sont pas limités aux messages privés.
 
 Ces dossiers masqués ne sont pas conçus pour être directement accessibles aux utilisateurs ou aux administrateurs. Au lieu de cela, ils stockent les données que les administrateurs de conformité peuvent rechercher à l’aide des outils eDiscovery.
-
-> [!IMPORTANT]
-> Étant donné que les copies des messages de la communauté peuvent également être stockées dans des boîtes aux lettres d’utilisateur, une stratégie de rétention avec une action de suppression pour les messages d’utilisateur Yammer peut entraîner le fait que le message de la communauté d’origine n’est plus visible pour les utilisateurs dans l’application Yammer.
-> 
-> Toutefois, une copie du message d’origine est toujours disponible dans le dossier masqué de la boîte aux lettres du groupe de communauté et accessible avec les recherches eDiscovery à des fins de conformité.
 
 Même s’ils sont stockés dans Exchange, les messages Yammer sont inclus uniquement dans une stratégie de rétention configurée pour les emplacements de **messages de la communauté Yammer** ou **les messages utilisateur Yammer**.
 
@@ -185,7 +177,7 @@ Si l’utilisateur a stocké des fichiers dans Yammer, consultez la [section éq
 
 ## <a name="limitations"></a>Limites
 
-Les stratégies de rétention de Yammer sont actuellement en préversion et nous travaillons continuellement sur l’optimisation des fonctionnalités de rétention. En attendant, tenez compte de la limitation suivante lorsque vous utilisez la rétention pour les messages de la communauté Yammer et les messages des utilisateurs:
+Tenez compte de la limitation suivante lorsque vous utilisez la rétention pour les messages de la communauté Yammer et les messages des utilisateurs :
 
 - Lorsque vous sélectionnez **Modifier** pour l’emplacement des **messages des utilisateurs Yammer**, vous devriez voir les invités et les non-utilisateurs de boîte aux lettres. Les stratégies de rétention ne sont pas conçues pour ces utilisateurs. Ne les sélectionnez pas.
 

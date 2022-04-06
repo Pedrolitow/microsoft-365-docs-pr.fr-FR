@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment les administrateurs peuvent configurer et utiliser un connecteur de données pour importer et archiver des données à partir de l’outil de conversation Instant Bloomberg dans Microsoft 365.
-ms.openlocfilehash: 14495a219ce73b8d0cd4e937b4feae9aa2210da1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4205c678a6445203e4a057aab3b7c9d2c1acd1d8
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313326"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569972"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Configurer un connecteur pour archiver des données Instant Bloomberg
 
@@ -135,9 +135,15 @@ La dernière étape consiste à créer un connecteur Instant Bloomberg dans le C
 
     - **Port SFTP :** Numéro de port du site SFTP Bloomberg. Le connecteur utilise ce port pour se connecter au site SFTP.
 
-5. Dans la page **Sélectionner les types de données à importer** , sélectionnez les types de données requis à importer à partir des **messages**
+5. Dans la page Définir **l’utilisateur** , sélectionnez l’une des options suivantes pour spécifier les utilisateurs dont vous souhaitez importer les données.
 
-6. Dans la page **Mappage des utilisateurs Instant Bloomberg Microsoft 365 utilisateurs**, activez le mappage automatique des utilisateurs et fournissez un mappage utilisateur personnalisé selon les besoins.
+    - **Tous les utilisateurs de votre organisation**. Sélectionnez cette option pour importer des données pour tous les utilisateurs.
+
+    - **Uniquement les utilisateurs en attente pour litige**. Sélectionnez cette option pour importer des données uniquement pour les utilisateurs dont les boîtes aux lettres sont placées en attente pour litige. Cette option importe les données dans les boîtes aux lettres utilisateur dont la propriété LitigationHoldEnabled a la valeur True. Pour plus d’informations, [voir Créer une attente pour litige](create-a-litigation-hold.md).
+
+6. Dans la page **Sélectionner les types de données à importer** , sélectionnez les types de données requis à importer à partir des **messages**
+
+7. Dans la page **Mappage des utilisateurs Instant Bloomberg Microsoft 365 utilisateurs**, activez le mappage automatique des utilisateurs et fournissez un mappage utilisateur personnalisé selon les besoins.
 
    > [!NOTE]
    > Le connecteur importe les éléments de message de conversation dans la boîte aux lettres d’un utilisateur spécifique. Un nouveau dossier nommé **InstantBloomberg** est créé dans la boîte aux lettres de l’utilisateur spécifique et les éléments y sont importés. Le connecteur utilise la valeur de la *propriété CorporateEmailAddress* . Chaque message de conversation contient cette propriété et la propriété est remplie avec l’adresse e-mail de chaque participant du message de conversation. Outre le mappage automatique des utilisateurs à l’aide de la valeur de la propriété *CorporateEmailAddress* , vous pouvez également définir un mappage personnalisé en chargeant un fichier de mappage CSV. Le fichier de mappage doit contenir l’UUID Bloomberg et l’adresse Microsoft 365 boîte aux lettres correspondante pour chaque utilisateur. Si vous activez le mappage utilisateur automatique et fournissez un mappage personnalisé, pour chaque élément de conversation, le connecteur examinera d’abord le fichier de mappage personnalisé. S’il ne trouve pas un utilisateur Microsoft 365 valide qui correspond à l’UUID Bloomberg d’un utilisateur, le connecteur utilise la propriété *CorporateEmailAddress* de l’élément de conversation. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou la propriété *CorporateEmailAddress* de l’élément de conversation, l’élément n’est pas importé.
@@ -215,11 +221,17 @@ Une fois votre site SFTP Bloomberg configuré, l’étape suivante consiste à c
 
 7. Une fois la connexion validée, cliquez sur **Suivant**.
 
-8. Dans la page **Mappage des utilisateurs Instant Bloomberg Microsoft 365** utilisateurs, activez le mappage automatique des utilisateurs et fournissez un mappage utilisateur personnalisé selon les besoins.
+8. Dans la page Définir **l’utilisateur** , sélectionnez l’une des options suivantes pour spécifier les utilisateurs dont vous souhaitez importer les données.
+
+    - **Tous les utilisateurs de votre organisation**. Sélectionnez cette option pour importer des données pour tous les utilisateurs.
+
+    - **Uniquement les utilisateurs en attente pour litige**. Sélectionnez cette option pour importer des données uniquement pour les utilisateurs dont les boîtes aux lettres sont placées en attente pour litige. Cette option importe les données dans les boîtes aux lettres utilisateur dont la propriété LitigationHoldEnabled a la valeur True. Pour plus d’informations, [voir Créer une attente pour litige](create-a-litigation-hold.md).
+
+9. Dans la page **Mappage des utilisateurs Instant Bloomberg Microsoft 365** utilisateurs, activez le mappage automatique des utilisateurs et fournissez un mappage utilisateur personnalisé selon les besoins.
 
    > [!NOTE]
    > Le connecteur importe les éléments de message de conversation dans la boîte aux lettres d’un utilisateur spécifique. Un nouveau dossier nommé **InstantBloomberg** est créé dans la boîte aux lettres de l’utilisateur spécifique et les éléments y sont importés. Le connecteur utilise la valeur de la *propriété CorporateEmailAddress* . Chaque message de conversation contient cette propriété et la propriété est remplie avec l’adresse e-mail de chaque participant du message de conversation. Outre le mappage automatique des utilisateurs à l’aide de la valeur de la propriété *CorporateEmailAddress* , vous pouvez également définir un mappage personnalisé en chargeant un fichier de mappage CSV. Le fichier de mappage doit contenir l’UUID Bloomberg et l’adresse Microsoft 365 boîte aux lettres correspondante pour chaque utilisateur. Si vous activez le mappage utilisateur automatique et fournissez un mappage personnalisé, pour chaque élément de conversation, le connecteur examinera d’abord le fichier de mappage personnalisé. S’il ne trouve pas un utilisateur Microsoft 365 valide qui correspond à l’UUID Bloomberg d’un utilisateur, le connecteur utilise la propriété *CorporateEmailAddress* de l’élément de conversation. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou la propriété *CorporateEmailAddress* de l’élément de conversation, l’élément n’est pas importé.
 
-9. Cliquez **sur** Suivant, examinez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
+10. Cliquez **sur** Suivant, examinez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
 
-10. Go to the **Data connectors** page to see the progress of the import process for the new connector. Cliquez sur le connecteur pour afficher la page volante, qui contient des informations sur le connecteur.
+11. Go to the **Data connectors** page to see the progress of the import process for the new connector. Cliquez sur le connecteur pour afficher la page volante, qui contient des informations sur le connecteur.

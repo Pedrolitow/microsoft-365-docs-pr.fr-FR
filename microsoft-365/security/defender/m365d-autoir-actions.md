@@ -23,19 +23,19 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 775781a5df9149ae99f1a051303f5d55c23f1bab
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a77a64e2323cc836df9b19694deb5c32ee877fb8
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323232"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500802"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Afficher et gérer les actions dans le centre de gestion de l’action
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Les fonctionnalités de protection contre les menaces Microsoft 365 Defender peuvent entraîner certaines actions de correction. Voici quelques exemples :
@@ -57,7 +57,7 @@ Il est important d’approuver (ou de refuser) les actions en attente dès que p
 
 3. Dans le centre de actions, sous l’onglet **En attente** , sélectionnez un élément dans la liste. Son volet volant s’ouvre. Voici un exemple.
 
-   :::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Exemple d’approbation ou de rejet d’une action." lightbox="../../media/air-actioncenter-itemselected.png":::
+   :::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Options d’approbation ou de rejet d’une action" lightbox="../../media/air-actioncenter-itemselected.png":::
 
 4. Examinez les informations dans le volet volant, puis prenez l’une des étapes suivantes :
    - **Sélectionnez Ouvrir la page Examen** pour afficher plus de détails sur l’enquête.
@@ -97,7 +97,7 @@ Si vous avez déterminé qu’un appareil ou un fichier n’est pas une menace, 
 
 3. Dans le volet droit de l’écran, sélectionnez Appliquer à **X plus d’instances de ce** fichier, puis **sélectionnez Annuler**.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Consulter les détails et les résultats d'un examen automatisé](m365d-autoir-results.md)
 - [Corriger les faux positifs ou les faux négatifs](m365d-autoir-report-false-positives-negatives.md)

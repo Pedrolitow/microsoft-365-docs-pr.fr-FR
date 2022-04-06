@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: b969efd9d83fa34ded01f8be7db7aaf4db971128
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 8991c2aca277d2a08e5f8924a5e5cb354df6dc1f
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498638"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569431"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Évaluer votre posture de sécurité avec le Niveau de sécurité Microsoft
 
@@ -39,10 +39,10 @@ Pour vous aider à trouver les informations dont vous avez besoin plus rapidemen
 
 - Identité (Azure Active Directory comptes & rôles)
 - Appareil (Microsoft Defender pour point de terminaison, appelé [Score de sécurité Microsoft pour les appareils](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
-- Applications (applications de messagerie et cloud, y compris Office 365 et Microsoft Defender pour les applications cloud)
+- Applications (applications de messagerie et cloud, y compris Office 365 et Microsoft Defender for Cloud Apps)
 
 >[!NOTE]
->Dans la version récente de Microsoft Secure Score, un modèle de score amélioré a été publié, ce qui rend le Score de sécurisation Microsoft temporairement incompatible avec identity secure score et l’API Graph. [Afficher les détails](microsoft-secure-score-whats-new.md)
+>Dans la version récente de Microsoft Secure Score, un modèle de score amélioré a été publié, ce qui rend le Score de sécurisation Microsoft temporairement incompatible avec identity secure score et le API Graph. [Afficher les détails](microsoft-secure-score-whats-new.md)
 
 Dans la page vue d’ensemble du score de sécurité Microsoft, affichez la répartition des points entre ces groupes et les points disponibles. Vous pouvez également obtenir une vue globale du score total, de la tendance historique de votre score sécurisé avec des comparaisons de critères et des actions d’amélioration hiérarchisées qui peuvent être prises pour améliorer votre score.
 
@@ -80,9 +80,9 @@ Lorsque vous sélectionnez une action d’amélioration spécifique, un volant d
 
 Pour effectuer l’action, vous avez plusieurs options :
 
-- **Sélectionnez Gérer** pour passer à l’écran de configuration et effectuer les changements. Vous gagnerez ensuite les points que l’action vaut, visibles dans le volant. La mise à jour des points prend généralement environ 24 heures.
+- **Sélectionnez Gérer dans Microsoft 365 Defender** pour passer à l’écran de configuration et effectuer les changements. Vous gagnerez ensuite les points que l’action vaut, visibles dans le volant. La mise à jour des points prend généralement environ 24 heures.
 
-- **Sélectionnez Partager** pour copier le lien direct vers l’action d’amélioration. Vous pouvez également choisir la plateforme pour partager le lien, telle que le courrier électronique, Microsoft Teams ou Microsoft Planner.
+- **Sélectionnez Partager** pour copier le lien direct vers l’action d’amélioration. Vous pouvez également choisir la plateforme pour partager le lien, telle que le courrier électronique, Microsoft Teams ou Planificateur Microsoft.
 
 **Ajoutez des notes** pour suivre la progression ou tout autre commentaire que vous souhaitez commenter. Si vous ajoutez vos propres **balises à** l’action d’amélioration, vous pouvez filtrer par ces balises.
 

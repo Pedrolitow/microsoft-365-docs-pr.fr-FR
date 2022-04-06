@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser des stratégies de mise en quarantaine pour contrôler ce que les utilisateurs peuvent faire pour mettre en quarantaine les messages.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5133b98609c29e54361b8fe108e8810858f0d8c8
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 0e5f1ea75a24d84f0b6d6b9e003a0123928ac49a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467112"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682832"
 ---
 # <a name="quarantine-policies"></a>Stratégies de mise en quarantaine
 
@@ -225,7 +225,7 @@ Les stratégies de mise en quarantaine par défaut, les groupes d’autorisation
 
    **Remarque** : lorsque vous créez une stratégie, une valeur  de stratégie de mise en quarantaine Select vide indique que la stratégie de mise en quarantaine par défaut pour ce verdict est utilisée. Lorsque vous modifiez ultérieurement la stratégie, les valeurs vides sont remplacées par les noms de stratégie de mise en quarantaine par défaut réels, comme décrit dans le tableau précédent.
 
-   :::image type="content" source="../../media/quarantine-tags-in-anti-spam-policies.png" alt-text="Sélections de stratégie de mise en quarantaine dans une stratégie anti-courrier indésirable" lightbox="../../media/quarantine-tags-in-anti-spam-policies.png":::
+   ![Sélections de stratégie de mise en quarantaine dans une stratégie anti-courrier indésirable.](../../media/quarantine-tags-in-anti-spam-policies.png)
 
 Des instructions complètes pour la création et la modification des stratégies anti-courrier indésirable sont décrites dans Configurer des stratégies [anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
@@ -305,7 +305,7 @@ La veille contre l’usurpation d’adresse est disponible dans EOP et Defender 
 
    **Remarque** : lorsque vous créez une stratégie, une valeur  vide de stratégie Appliquer la quarantaine indique que la stratégie de mise en quarantaine par défaut de cette action est utilisée. Lorsque vous modifiez ultérieurement la stratégie, les valeurs vides sont remplacées par les noms de stratégie de mise en quarantaine par défaut réels, comme décrit dans le tableau précédent.
 
-   :::image type="content" source="../../media/quarantine-tags-in-anti-phishing-policies.png" alt-text="Sélections de stratégie de mise en quarantaine dans une stratégie anti-hameçonnage" lightbox="../../media/quarantine-tags-in-anti-phishing-policies.png":::
+   ![Sélections de stratégie de mise en quarantaine dans une stratégie anti-hameçonnage.](../../media/quarantine-tags-in-anti-phishing-policies.png)
 
 Des instructions complètes pour la création et la modification des stratégies anti-hameçonnage sont disponibles dans les rubriques suivantes :
 
@@ -385,7 +385,7 @@ Si vous préférez utiliser PowerShell pour affecter des stratégies de mise en 
 <New-AntiMalwarePolicy -Name "<Unique name>" | Set-AntiMalwarePolicy -Identity "<Policy name>"> [-QuarantineTag <QuarantineTagName>]
 ```
 
-**Remarques** :
+**Remarques** :
 
 - Lorsque vous créez des stratégies anti-programme malveillant sans utiliser le paramètre QuarantineTag lorsque vous créez une stratégie anti-programme malveillant, la stratégie de mise en quarantaine par défaut pour les détections de programmes malveillants est utilisée (AdminOnlyAccessPolicy).
 
@@ -493,7 +493,7 @@ Les paramètres globaux des stratégies de mise en quarantaine vous permettent d
 
      La capture d’écran suivante montre le nom complet personnalisé dans une notification de mise en quarantaine :
 
-     :::image type="content" source="../../media/quarantine-tags-esn-customization-display-name.png" alt-text="Un nom d’affichage d’expéditeur personnalisé dans une notification de mise en quarantaine" lightbox="../../media/quarantine-tags-esn-customization-display-name.png":::
+     ![Nom complet de l’expéditeur personnalisé dans une notification de mise en quarantaine.](../../media/quarantine-tags-esn-customization-display-name.png)
 
    - **Clause d’exclusion de** responsabilité : ajoutez une clause d’exclusion de responsabilité personnalisée au bas des notifications de mise en quarantaine. Le texte localisé, **une clause d’exclusion** de responsabilité de votre organisation, est toujours inclus en premier, suivi du texte que vous spécifiez.
 
@@ -501,19 +501,19 @@ Les paramètres globaux des stratégies de mise en quarantaine vous permettent d
 
      La capture d’écran suivante montre la clause d’exclusion de responsabilité personnalisée dans une notification de mise en quarantaine :
 
-     :::image type="content" source="../../media/quarantine-tags-esn-customization-disclaimer.png" alt-text="Une clause d’exclusion de responsabilité personnalisée au bas d’une notification de mise en quarantaine" lightbox="../../media/quarantine-tags-esn-customization-disclaimer.png":::
+     ![Une clause d’exclusion de responsabilité personnalisée au bas d’une notification de mise en quarantaine.](../../media/quarantine-tags-esn-customization-disclaimer.png)
 
    - **Choisir la langue** : les notifications de mise en quarantaine sont déjà localisées en fonction des paramètres de langue du destinataire. Vous pouvez spécifier du texte personnalisé dans différentes langues pour le nom **d’affichage** et les valeurs **de clause d’exclusion** de responsabilité.
 
      Sélectionnez au moins une langue dans la première langue, puis cliquez sur **Ajouter**. Vous pouvez sélectionner plusieurs langues en cliquant sur **Ajouter** après chacune d’elles. Une zone de langue de section affiche toutes les langues que vous avez sélectionnées :
 
-     :::image type="content" source="../../media/quarantine-tags-esn-customization-selected-languages.png" alt-text="Langues sélectionnées dans la deuxième langue dans les paramètres globaux de notification de mise en quarantaine des stratégies de mise en quarantaine" lightbox="../../media/quarantine-tags-esn-customization-selected-languages.png":::
+     ![Langues sélectionnées dans la deuxième langue dans les paramètres globaux de notification de mise en quarantaine des stratégies de mise en quarantaine.](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
    - **Utilisez le logo de mon entreprise** : sélectionnez cette option pour remplacer le logo Microsoft par défaut qui est utilisé en haut des notifications de mise en quarantaine. Avant de faire cela, vous devez suivre les instructions dans Personnaliser le thème [Microsoft 365](../../admin/setup/customize-your-organization-theme.md) pour que votre organisation télécharge votre logo personnalisé.
 
      La capture d’écran suivante montre un logo personnalisé dans une notification de mise en quarantaine :
 
-     :::image type="content" source="../../media/quarantine-tags-esn-customization-logo.png" alt-text="Un logo personnalisé dans une notification de mise en quarantaine" lightbox="../../media/quarantine-tags-esn-customization-logo.png":::
+     ![Logo personnalisé dans une notification de mise en quarantaine.](../../media/quarantine-tags-esn-customization-logo.png)
 
    - **Envoyer une notification de courrier indésirable à l’utilisateur final tous les (jours)** : sélectionnez la fréquence des notifications de mise en quarantaine.
 
@@ -581,7 +581,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [v
 
 ## <a name="remove-quarantine-policies-in-the-microsoft-365-defender-portal"></a>Supprimer les stratégies de mise en quarantaine dans le portail Microsoft 365 Defender de mise en quarantaine
 
-**Remarques** :
+**Remarques** :
 
 - Vous ne pouvez pas supprimer les stratégies de mise en quarantaine intégrées nommées AdminOnlyAccessPolicy ou DefaultFullAccessPolicy. Vous pouvez supprimer la stratégie intégrée nommée NotificationEnabledPolicy [(si](#full-access-permissions-and-quarantine-notifications) vous l’avez) et les stratégies de mise en quarantaine personnalisées.
 - Avant de supprimer une stratégie de mise en quarantaine, vérifiez qu’elle n’est pas utilisée. Par exemple, exécutez la commande suivante dans PowerShell :
@@ -648,14 +648,14 @@ Si la stratégie de mise en quarantaine attribue les **autorisations** d’accè
   - **Supprimer de la quarantaine**
   - **Bloquer l’expéditeur**
 
-  :::image type="content" source="../../media/quarantine-tags-quarantined-message-details-limited-access.png" alt-text="Boutons disponibles dans les détails du message mis en quarantaine si la stratégie de mise en quarantaine accorde à l’utilisateur des autorisations d’accès limitées" lightbox="../../media/quarantine-tags-quarantined-message-details-limited-access.png":::
+  ![Boutons disponibles dans les détails du message mis en quarantaine si la stratégie de mise en quarantaine accorde à l’utilisateur des autorisations d’accès limité.](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
 
 - **Notifications de mise en** quarantaine : les boutons suivants sont disponibles :
   - **Bloquer l’expéditeur**
   - **Publication de la demande**
   - **Révision**
 
-  :::image type="content" source="../../media/quarantine-tags-esn-limited-access.png" alt-text="Boutons disponibles dans la notification de mise en quarantaine si la stratégie de mise en quarantaine accorde à l’utilisateur des autorisations d’accès limité" lightbox="../../media/quarantine-tags-esn-limited-access.png":::
+  ![Boutons disponibles dans la notification de mise en quarantaine si la stratégie de mise en quarantaine accorde à l’utilisateur des autorisations d’accès limité.](../../media/quarantine-tags-esn-limited-access.png)
 
 #### <a name="full-access"></a>Accès total
 
@@ -668,14 +668,14 @@ Si la stratégie de mise en quarantaine attribue les **autorisations** d’accè
   - **Supprimer de la quarantaine**
   - **Bloquer l’expéditeur**
 
-  :::image type="content" source="../../media/quarantine-tags-quarantined-message-details-full-access.png" alt-text="Boutons disponibles dans les détails du message mis en quarantaine si la stratégie de mise en quarantaine accorde à l’utilisateur des autorisations d’accès total" lightbox="../../media/quarantine-tags-quarantined-message-details-full-access.png":::
+  ![Boutons disponibles dans les détails du message mis en quarantaine si la stratégie de mise en quarantaine accorde à l’utilisateur des autorisations d’accès total.](../../media/quarantine-tags-quarantined-message-details-full-access.png)
 
 - **Notifications de mise en** quarantaine : les boutons suivants sont disponibles :
   - **Bloquer l’expéditeur**
-  - **Débloquer**
+  - **Version**
   - **Révision**
 
-  :::image type="content" source="../../media/quarantine-tags-esn-full-access.png" alt-text="Boutons disponibles dans la notification de mise en quarantaine si la stratégie de mise en quarantaine accorde à l’utilisateur des autorisations d’accès total" lightbox="../../media/quarantine-tags-esn-full-access.png":::
+  ![Boutons disponibles dans la notification de mise en quarantaine si la stratégie de mise en quarantaine accorde à l’utilisateur des autorisations d’accès total.](../../media/quarantine-tags-esn-full-access.png)
 
 ### <a name="individual-permissions"></a>Autorisations individuelles
 

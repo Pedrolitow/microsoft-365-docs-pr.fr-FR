@@ -1,7 +1,7 @@
 ---
 title: Planifier le déploiement des règles de réduction de la surface d’attaque des règles de réduction de la surface d’attaque
 description: Fournit des conseils pour planifier le déploiement de règles de réduction de la surface d’attaque (ASR).
-keywords: 'Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque'
+keywords: Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -11,16 +11,23 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: 'oogunrinde, sugamar'
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
+ms.collection:
+- m365solution-scenario
+- M365-security-compliance
 ms.date: 1/18/2022
+ms.openlocfilehash: e76ca3c1efd3ceb1cbb0f80cba4867988da51e1e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683074"
 ---
-
-# <a name="step-1-plan-asr-rules-deployment"></a>Étape 1 : Planifier le déploiement des règles de la asr
+# <a name="step-1-plan-asr-rules-deployment"></a>Étape 1 : Planifier le déploiement des règles ASR
 
 Lors du test des règles de réduction de la surface d’attaque (ASR), il est important de commencer par la bonne unité commerciale. Vous souhaiterez commencer par un petit groupe de personnes dans une unité commerciale spécifique. Vous pouvez identifier certains champions de la RSA au sein d’une unité commerciale particulière qui peuvent fournir un impact réel sur les règles de la asr, et vous aider à régler votre implémentation.
 
@@ -75,10 +82,10 @@ Voir : [Créer un plan de déploiement pour Windows](/windows/deployment/update/
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Rubriques supplémentaires dans cette collection de déploiements
 
-[Conditions préalables au déploiement des règles asr](attack-surface-reduction-rules-deployment.md)
+[Prérequis pour le déploiement des règles ASR](attack-surface-reduction-rules-deployment.md)
 
-[Étape 2 : Tester les règles de la asr](attack-surface-reduction-rules-deployment-test.md)
+[Étape 2 : Tester les règles ASR](attack-surface-reduction-rules-deployment-test.md)
 
-[Étape 3 : Implémenter des règles de asr](attack-surface-reduction-rules-deployment-implement.md)
+[Étape 3 : Mettre en œuvre les règles ASR](attack-surface-reduction-rules-deployment-implement.md)
 
-[Étape 4 : Operationalize ASR rules](attack-surface-reduction-rules-deployment-operationalize.md)
+[Étape 4 : Opérationnaliser les règles ASR](attack-surface-reduction-rules-deployment-operationalize.md)

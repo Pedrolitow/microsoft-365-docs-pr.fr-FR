@@ -16,12 +16,12 @@ ms.custom:
 description: Découvrez comment Exchange Online Protection (EOP) peut vous aider à protéger votre organisation de messagerie sur site dans des environnements autonomes et hybrides.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3fb49a24ae378be990efd727450a06889cc50679
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 319b20d548ad83cbf57043909a8dc2ce840db5cd
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473362"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682656"
 ---
 # <a name="exchange-online-protection-overview"></a>Vue d’ensemble d’Exchange Online Protection
 
@@ -45,7 +45,7 @@ Le reste de cet article explique le fonctionnement d’EOP et les fonctionnalit�
 
 Pour comprendre le fonctionnement d'EOP, il est utile devoir comment le courrier entrant est traité :
 
-:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Graphique du courrier électronique provenant d’Internet ou des commentaires des clients qui transitent dans EOP et via la connexion, la protection contre les programmes malveillants, le filtrage de la stratégie de barre oblique de flux de messagerie et le filtrage de contenu, avant le verdict de courrier indésirable ou de mise en quarantaine, ou la remise du courrier de l’utilisateur final" lightbox="../../media/tp_emailprocessingineopt3.png":::
+:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Graphique du courrier électronique provenant d’Internet ou des commentaires des clients passant dans EOP et via la connexion, la protection contre les programmes malveillants, le filtrage des règles de flux de messagerie et la stratégie de contenu, avant le verdict de courrier indésirable ou de mise en quarantaine, ou la remise du courrier de l’utilisateur final.":::
 
 1. Lorsqu’un message entrant entre dans EOP, il passe initialement par le filtrage des connexions, qui vérifie la réputation de l’expéditeur. La majorité du courrier indésirable est arrêté à ce stade et rejeté par EOP. Pour plus d’informations, consultez [Configuration du filtrage des connexions](configure-the-connection-filter-policy.md).
 
@@ -82,7 +82,7 @@ Pour plus d’informations sur les exigences, les limites importantes et la disp
 - Pour obtenir les valeurs recommandées pour les stratégies de protection, voir [Paramètres recommandés pour EOP et Microsoft Defender pour Office 365 sécurité.](recommended-settings-for-eop-and-office365.md)
 - Pour obtenir des instructions rapides sur la configuration des stratégies de protection, voir [Protéger contre les menaces](protect-against-threats.md).
 
-|Fonctionnalité|Comments|
+|Fonctionnalité|Commentaires|
 |---|---|
 |**Protection**||
 |Ant-programme malveillant|[Protection contre les programmes malveillants dans EOP](anti-malware-protection.md) <p> [Forum Aux Questions sur la protection contre les programmes malveillants](anti-malware-protection-faq-eop.yml) <p> [Configurer des stratégies anti-programme malveillant dans EOP](configure-anti-malware-policies.md)|

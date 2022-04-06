@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1d7d3dab26d4f9034294b2780875d33cb2fbef3
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: b6d085d2e3c1e9c1e032f468f56d67a393269fe1
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63557939"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683052"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de sécurité de messagerie dans le portail Microsoft 365 Defender messagerie
 
@@ -48,10 +48,6 @@ De nombreux rapports sont disponibles sur le portail Microsoft 365 Defender <htt
 
 Les rapports Exchange Online Protection (EOP) et Microsoft Defender pour Office 365 dans le portail Microsoft 365 Defender qui ont été remplacés, déplacés ou supprimés sont décrits dans le tableau suivant.
 
-<br>
-
-****
-
 |Rapport et cmdlets supprimés|Nouveau rapport et nouvelles cmdlets|ID du centre de messages|Date|
 |---|---|:---:|:---:|
 |**traçage d’URL** <p> Get-URLTrace|[Rapport sur la protection des URL](view-reports-for-mdo.md#url-protection-report) <p> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|Juin 2021|
@@ -62,9 +58,8 @@ Les rapports Exchange Online Protection (EOP) et Microsoft Defender pour Office 
 |**Programmes malveillants détectés dans le rapport de courrier électronique** <p> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[Rapport d’état de la protection contre les menaces : afficher les données par courrier électronique malveillant \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|Juin 2021|
 |**Rapport de détection du courrier indésirable** <p> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[Rapport d’état de la protection contre les menaces : afficher les données par courrier \> indésirable](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|Octobre 2021|
 |Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|TBA|Mai 2022|
-|**Exchange de règles de transport** <p> Get-MailTrafficPolicyReport <br> Get-MailDetailTransportRuleReport|[Exchange de règles de transport dans le EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> aucune cmdlet|MC316157|Avril 2022|
+|**Exchange de règles de transport** <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange de règles de transport dans le EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|Avril 2022|
 |Get-MailTrafficTopReport|[Rapport d’état de la protection contre les menaces : afficher les données par courrier électronique malveillant \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <p> **Remarque** : il n’existe aucun remplacement pour les fonctionnalités de rapport de chiffrement dans Get-MailTrafficTopReport.|MC315742|Avril 2022|
-|
 
 ## <a name="compromised-users-report"></a>Rapport utilisateurs compromis
 
@@ -204,7 +199,7 @@ Le tableau de détails sous le graphique présente les informations suivantes :
 - **3 jours**
 - **7 jours**
 - **15 jours**
-- **30 jours**
+- **30 jours**
 
 Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Filtrer** et en sélectionnant une ou plusieurs des valeurs suivantes dans le volant qui s’affiche :
 
@@ -341,7 +336,7 @@ Le **rapport sur les détections d’usurpation d’informations** affiche des i
 
 L’affichage agrégé du rapport autorise 90 jours de filtrage, tandis que l’affichage détaillé ne permet que dix jours de filtrage.
 
-Pour afficher le rapport dans le portail Microsoft 365 Defender,  \>  \> consultez l'& **collaboration de rapports e-mail & rapports de collaboration**. Dans la page **& de collaboration** , recherchez les **détections** d’usurpation d’adresses, puis cliquez sur **Afficher les détails**. Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/SpoofMailReportV2>.
+Pour afficher le rapport dans le portail Microsoft 365 Defender,  \>  \> consultez l'& **collaboration de rapports e-mail & rapports de collaboration**. Dans la page **& de collaboration** , recherchez les **détections** d’usurpation d’adresses, puis cliquez sur **Afficher les détails**. Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/SpoofMailReport>.
 
 ![Widget de détections d’usurpation d'& la page rapports de collaboration.](../../media/spoof-detections-widget.png)
 
@@ -1061,7 +1056,7 @@ Pour afficher et utiliser les rapports décrits dans cet article, vous devez êt
 - **Gestion de l'organisation**
 - **Administrateur de la sécurité**
 - **Lecteur de sécurité**
-- **Lecteur général**
+- **Lecteur global**
 
 Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 

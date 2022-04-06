@@ -17,12 +17,12 @@ description: Découvrez comment utiliser l’Explorateur de menaces et le rappor
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 959d3d676f07a7816b622d5db53252c846340d2a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d21773694e1dc9472a9a8ac566c8eaacc00fcab8
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202440"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682854"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Affichages dans l’Explorateur de menaces et détections en temps réel
 
@@ -30,19 +30,17 @@ ms.locfileid: "60202440"
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
 ![Explorateur de menaces.](../../media/explorer.png)
 
-[L’Explorateur](threat-explorer.md) de menaces (et le rapport sur les détections en temps réel) est un outil puissant, quasiment en temps réel, qui permet aux équipes des opérations de sécurité d’examiner les menaces sur le portail Microsoft 365 Defender et de répondre à ces menaces. L’Explorateur (et le rapport de détections en temps réel) affiche des informations sur les programmes malveillants et le hameçonnage suspectés dans le courrier électronique et les fichiers en Office 365, ainsi que d’autres menaces et risques de sécurité pour votre organisation.
+[L’Explorateur](threat-explorer.md) de menaces (et le rapport de détections en temps réel) est un outil puissant, quasiment en temps réel, qui permet aux équipes des opérations de sécurité d’examiner les menaces sur le portail Microsoft 365 Defender et de répondre à ces menaces. L’Explorateur (et le rapport de détections en temps réel) affiche des informations sur les programmes malveillants et le hameçonnage suspectés dans le courrier électronique et les fichiers dans Office 365, ainsi que d’autres menaces et risques de sécurité pour votre organisation.
 
 - Si vous avez [Microsoft Defender pour Office 365](defender-for-office-365.md) Plan 2, vous avez Explorer.
 - Si vous avez Microsoft Defender pour Office 365 Plan 1, vous avez des détections en temps réel.
 
-Lorsque vous ouvrez l’Explorateur pour la première fois (ou le rapport de détections en temps réel), l’affichage par défaut affiche les détections de programmes malveillants de messagerie électronique au cours des 7 derniers jours. Ce rapport peut également afficher les détections de Microsoft Defender pour Office 365, telles que les URL malveillantes détectées par les liens [Coffre](safe-links.md)et les fichiers malveillants détectés par les pièces [jointes Coffre.](safe-attachments.md) Ce rapport peut être modifié pour afficher les données des 30 derniers jours (avec un abonnement Payant Microsoft Defender Office 365 P2). Les abonnements à la version d’essai incluent uniquement les données des sept derniers jours.
-
-****
+Lorsque vous ouvrez l’Explorateur pour la première fois (ou le rapport de détections en temps réel), l’affichage par défaut affiche les détections de programmes malveillants de messagerie électronique au cours des 7 derniers jours. Ce rapport peut également afficher microsoft Defender pour les détections de Office 365, telles que les URL malveillantes détectées par les liens [Coffre](safe-links.md) et les fichiers malveillants détectés par Coffre [pièces jointes](safe-attachments.md). Ce rapport peut être modifié pour afficher les données des 30 derniers jours (avec un abonnement Payant Microsoft Defender Office 365 P2). Les abonnements à la version d’essai incluent uniquement les données des sept derniers jours.
 
 |Abonnement|Utilitaire|Jours de données|
 |---|---|---|
@@ -51,7 +49,6 @@ Lorsque vous ouvrez l’Explorateur pour la première fois (ou le rapport de dé
 |Microsoft Defender pour les tests Office 365 P1 payants Defender pour Office 365 version d’évaluation P2|Threat Explorer|7 |
 |Version d’Office 365 Microsoft Defender pour P2|Threat Explorer|7 |
 |Microsoft Defender pour Office 365 P2 payant|Threat Explorer|30|
-|
 
 > [!NOTE]
 > Nous étendons bientôt la limite de rétention et de recherche des données de l’Explorateur (et des détections en temps réel) pour les clients d’essai de 7 à 30 jours. Cette modification est en cours de suivi dans le cadre de l’élément de feuille de route n. 70544 et est actuellement en phase de déploiement.
@@ -60,11 +57,11 @@ Utilisez le menu **Affichage** pour modifier les informations affichées. Les bu
 
 ![Menu Affichage de l’Explorateur de menaces.](../../media/all-email.png)
 
-Une fois que vous avez sélectionné un affichage, vous pouvez appliquer des filtres et configurer des requêtes pour effectuer une analyse plus approfondie. Les sections suivantes donnent un bref aperçu des différents affichages disponibles dans l’Explorateur (ou détections en temps réel).
+Une fois que vous avez sélectionné un affichage, vous pouvez appliquer des filtres et configurer des requêtes pour effectuer une analyse plus approfondie. Les sections suivantes fournissent une brève vue d’ensemble des différents affichages disponibles dans l’Explorateur (ou détections en temps réel).
 
 ## <a name="email--malware"></a>Courrier électronique > programmes malveillants
 
-Pour afficher ce rapport, dans l’Explorateur (ou détections en temps réel), choisissez **Afficher les** programmes malveillants \> **de** \> **messagerie.** Cet affichage affiche des informations sur les messages électroniques identifiés comme contenant des programmes malveillants.
+Pour afficher ce rapport, dans l’Explorateur (ou détections en temps réel), choisissez **Afficher les programmes malveillants** \> **de** \> **messagerie**. Cet affichage affiche des informations sur les messages électroniques identifiés comme contenant des programmes malveillants.
 
 ![Afficher les données relatives aux e-mails identifiés comme programmes malveillants.](../../media/detection-technology.png)
 
@@ -80,13 +77,13 @@ Sous le graphique, affichez plus de détails sur des messages spécifiques. Lors
 
 ## <a name="email--phish"></a>Hameçonnage > courrier électronique
 
-Pour afficher ce rapport, dans l’Explorateur (ou détections en temps réel), choisissez **Afficher le** \> **hameçonnage de** \> **messagerie.** Cet affichage affiche les messages électroniques identifiés comme tentatives de hameçonnage.
+Pour afficher ce rapport, dans l’Explorateur (ou détections en temps réel), choisissez **Afficher le** \> **hameçonnage de** \> **messagerie**. Cet affichage affiche les messages électroniques identifiés comme tentatives de hameçonnage.
 
 ![Afficher les données relatives aux e-mails identifiés comme tentatives de hameçonnage.](../../media/phish.png)
 
 Cliquez **sur Expéditeur** pour ouvrir votre liste d’options d’affichage. Cette liste permet d’afficher les données par expéditeur, destinataire, domaine de l’expéditeur, adresse IP de l’expéditeur, domaine d’URL, verdict de clic, etc.
 
-Par exemple, pour voir les actions qui ont été entreprises lorsque des personnes  ont cliqué sur des URL identifiées comme tentatives de hameçonnage, choisissez Verdict de clic dans la liste, sélectionnez une ou plusieurs options, puis cliquez sur le bouton Actualiser.
+Par exemple, pour voir les actions qui ont été entreprises lorsque des utilisateurs ont cliqué sur des URL identifiées comme tentatives d’hameçonnage, choisissez Verdict de clic dans la liste, sélectionnez une ou plusieurs options, puis cliquez sur le bouton Actualiser.
 
 ![Cliquez sur options de verdict pour le rapport d’hameçonnage.](../../media/click-verdict.png)
 
@@ -100,13 +97,13 @@ Lorsque vous sélectionnez un élément dans la liste, tel qu’une URL détect�
 
 ## <a name="email--submissions"></a>Envois > courrier électronique
 
-Pour afficher ce rapport, dans l’Explorateur (ou détections en temps réel), choisissez **Afficher les** \>  \> **envois de courrier électronique.** Cette vue affiche les e-mails que les utilisateurs ont signalés comme courrier indésirable, non indésirable ou hameçonnage.
+Pour afficher ce rapport, dans l’Explorateur (ou détections en temps réel), choisissez **Afficher les** \> **envois** \> **de courrier électronique**. Cette vue affiche les messages électroniques que les utilisateurs ont signalés comme courrier indésirable, non indésirable ou hameçonnage.
 
 ![Messages électroniques signalés par les utilisateurs.](../../media/ThreatExplorerEmailUserReportedViewOptions.png)
 
-Cliquez **sur Expéditeur** pour ouvrir votre liste d’options d’affichage. Cette liste permet d’afficher des informations par expéditeur, destinataire, type de rapport (la détermination de l’utilisateur que le courrier était indésirable, non indésirable ou hameçonnage), et bien plus encore.
+Cliquez **sur Expéditeur** pour ouvrir votre liste d’options d’affichage. Cette liste permet d’afficher des informations par expéditeur, destinataires, type de rapport (la détermination de l’utilisateur que le courrier était indésirable, non indésirable ou hameçonnage), et bien plus encore.
 
-Par exemple, pour afficher des informations sur les messages  électroniques signalés comme tentatives d’hameçonnage, cliquez sur Type de rapport de l’expéditeur, sélectionnez Hameçonnage, puis cliquez sur le \> bouton Actualiser. 
+Par exemple, pour afficher des informations sur les messages électroniques signalés comme tentatives d’hameçonnage,  \> cliquez sur **Type** de rapport de l’expéditeur, sélectionnez **Hameçonnage,** puis cliquez sur le bouton Actualiser.
 
 ![Hameçonnage sélectionné pour le filtre Type de rapport.](../../media/ThreatExplorerEmailUserReportedPhishSelected.png)
 
@@ -118,12 +115,12 @@ Sélectionnez un élément dans la liste pour afficher des détails supplémenta
 
 ## <a name="email--all-email"></a>Courrier électronique > tous les messages électroniques
 
-Pour afficher ce rapport, dans l’Explorateur, choisissez **Afficher tous** \> **les messages** \> **électroniques.** Cette vue présente une vue d’ensemble de l’activité de messagerie, y compris les e-mails identifiés comme malveillants en raison de l’hameçonnage ou des programmes malveillants, ainsi que tous les messages non malveillants (courrier électronique normal, courrier indésirable et courrier en nombre).
+Pour afficher ce rapport, dans l’Explorateur, **sélectionnez Afficher tous** \> **les messages** \> **électroniques**. Cette vue présente une vue d’ensemble de l’activité de messagerie, y compris les e-mails identifiés comme malveillants en raison de l’hameçonnage ou des programmes malveillants, ainsi que tous les messages non malveillants (courrier électronique normal, courrier indésirable et courrier en nombre).
 
 > [!NOTE]
 > Si vous obtenez une erreur qui lit trop de données à **afficher,** ajoutez un filtre et, si nécessaire, réduisez la plage de dates que vous affichez.
 
-Pour appliquer un filtre, choisissez **Expéditeur,** sélectionnez un élément dans la liste, puis cliquez sur le bouton Actualiser. Dans notre exemple, nous avons utilisé **la technologie De détection** comme filtre (plusieurs options sont disponibles). Afficher les informations par expéditeur, domaine de l’expéditeur, destinataires, objet, nom de fichier de pièce jointe, famille de programmes malveillants, état de protection (actions prises par vos fonctionnalités et stratégies de protection contre les menaces dans Office 365), technologie de détection (détection des programmes malveillants) et bien plus encore.
+Pour appliquer un filtre, choisissez **Expéditeur**, sélectionnez un élément dans la liste, puis cliquez sur le bouton Actualiser. Dans notre exemple, nous avons utilisé **la technologie De détection** comme filtre (plusieurs options sont disponibles). Afficher les informations par expéditeur, domaine de l’expéditeur, destinataires, objet, nom de fichier de pièce jointe, famille de programmes malveillants, état de protection (actions prises par vos fonctionnalités et stratégies de protection contre les menaces dans Office 365), technologie de détection (détection des programmes malveillants) et bien plus encore.
 
 ![Afficher les données sur le courrier électronique détecté par la technologie de détection.](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png)
 
@@ -131,7 +128,7 @@ Sous le graphique, affichez plus de détails sur des messages électroniques sp�
 
 ## <a name="content--malware"></a>Programme malveillant > contenu
 
-Pour afficher ce rapport, dans l’Explorateur (ou détections en temps réel), choisissez **Afficher les** programmes \> **malveillants de** \> **contenu.** Cette vue affiche les fichiers identifiés comme malveillants par Microsoft Defender pour Office 365 dans [SharePoint Online, OneDrive Entreprise et Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+Pour afficher ce rapport, dans l’Explorateur (ou détections en temps réel), choisissez **Afficher les programmes** \> **malveillants de** \> **contenu**. Cette vue affiche les fichiers identifiés comme malveillants par [Microsoft Defender pour Office 365 dans SharePoint Online, OneDrive Entreprise et Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
 Afficher les informations par famille de programmes malveillants, technologie de détection (détection des programmes malveillants) et charge de travail (OneDrive, SharePoint ou Teams).
 
@@ -143,17 +140,17 @@ Sous le graphique, affichez plus de détails sur des fichiers spécifiques, tels
 
 Avec l’Explorateur (et les détections en temps réel), vous pouvez appliquer un filtre en un clic. Cliquez sur un élément dans la légende et cet élément devient un filtre pour le rapport. Par exemple, supposons que nous regardions la vue Programmes malveillants dans l’Explorateur :
 
-![Allez dans l’Explorateur de gestion \> des menaces.](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![Allez dans l’Explorateur de gestion des \> menaces.](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
-Le fait de **cliquer sur la déstonation atp** dans ce graphique entraîne une vue comme celle-ci :
+Le fait de **cliquer sur la déstonation atp** dans ce graphique entraîne un affichage comme celui-ci :
 
 ![Explorateur filtré pour afficher uniquement Defender pour les Office 365 de détonation.](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
-Dans cette vue, nous regardons maintenant les données pour les fichiers qui ont été désaxtérées par [Coffre pièces jointes](safe-attachments.md). Sous le graphique, nous pouvons voir des détails sur des messages électroniques spécifiques dont les pièces jointes ont été détectées Coffre pièces jointes.
+Dans cette vue, nous regardons maintenant les données des fichiers qui ont été désaxtérées par [Coffre pièces jointes](safe-attachments.md). Sous le graphique, nous pouvons voir des détails sur des messages électroniques spécifiques dont les pièces jointes ont été détectées Coffre pièces jointes.
 
 ![Détails spécifiques sur les messages électroniques avec pièces jointes détectées.](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
 
-La sélection d’un ou de plusieurs éléments active le menu **Actions,** qui propose plusieurs choix parmi lesquels choisir les éléments sélectionnés.
+La sélection d’un ou de plusieurs éléments active le menu **Actions** , qui propose plusieurs choix parmi lesquels choisir les éléments sélectionnés.
 
 ![La sélection d’un élément active le menu Actions.](../../media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png)
 
@@ -164,4 +161,4 @@ La possibilité de filtrer en un clic et d’accéder à des détails spécifiqu
 L’Explorateur (ainsi que le rapport de détections en temps réel) dispose de plusieurs filtres et fonctionnalités d’interrogation puissants qui vous permettent d’explorer des détails, tels que les utilisateurs les plus ciblés, les principales familles de programmes malveillants, la technologie de détection et bien plus encore. Chaque type de rapport offre de nombreuses façons d’afficher et d’explorer des données.
 
 > [!IMPORTANT]
-> N’utilisez pas de caractères génériques, tels qu’un astérisque ou un point d’interrogation, dans la barre de requête de l’Explorateur (ou détections en temps réel). Lorsque vous recherchez des messages électroniques dans le champ Objet, l’Explorateur (ou détections en temps réel) effectue une correspondance partielle et produit des résultats semblables à une recherche par caractères génériques. 
+> N’utilisez pas de caractères génériques, tels qu’un astérisque ou un point d’interrogation, dans la barre de requête de l’Explorateur (ou détections en temps réel). Lorsque vous recherchez des  messages électroniques dans le champ Objet, l’Explorateur (ou détections en temps réel) effectue une correspondance partielle et produit des résultats semblables à une recherche par caractères génériques.

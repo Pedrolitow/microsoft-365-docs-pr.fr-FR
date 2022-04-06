@@ -10,8 +10,8 @@ audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.AdminRoleGroups
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
-ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 47ee051ab30669241a3283f1fb3f8fe86cf67f65
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: c451266d8cc11fc877f1c6c9f1c214959fe41938
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63557833"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683162"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>Autorisations dans le Centre de sécurité et de conformité
 
@@ -63,10 +63,6 @@ Pour savoir comment accorder l’accès au Centre de sécurité & conformité, c
 > [!NOTE]
 > Pour afficher **l’onglet Autorisations** dans le Centre de sécurité & conformité, vous devez être administrateur. Plus précisément, le rôle Gestion des rôles  doit vous être attribué et ce rôle est attribué uniquement au groupe  de rôles Gestion de l’organisation dans le Centre de sécurité & conformité par défaut. En outre, le **rôle gestion des** rôles permet aux utilisateurs d’afficher, de créer et de modifier des groupes de rôles.
 
-<br>
-
-****
-
 |Groupe de rôles|Description|Rôles par défaut attribués|
 |---|---|---|
 |**Administrateurs de simulation d’attaque**|N’utilisez pas ce groupe de rôles dans le Centre de sécurité & conformité. Utilisez le rôle correspondant dans Azure AD.|Administrateur du simulateur d’attaques|
@@ -86,7 +82,7 @@ Pour savoir comment accorder l’accès au Centre de sécurité & conformité, c
 |**Visionneuse de listes de l’Explorateur de contenu**|Afficher tous les éléments dans l’Explorateur de contenu au format liste uniquement.|Visionneuse de listes de classification des données|
 |**Enquêteur de données**|Effectuez des recherches sur les boîtes aux lettres, SharePoint sites en ligne et OneDrive Entreprise emplacements.|Communication <p> Recherche de conformité <p> Consignataire <p> Gestion des examens de données <p> Exporter <p> Aperçu <p> Révision <p> Déchiffrement RMS <p> Recherche et purge|
 |**Gestionnaire eDiscovery**|Les membres peuvent effectuer des recherches et placer des conservations sur les boîtes aux lettres, les sites SharePoint Online et les emplacements OneDrive Entreprise. Les membres peuvent également créer et gérer des cas eDiscovery, ajouter et supprimer des membres à un cas, créer et modifier des recherches de contenu associées à un cas et accéder aux données de cas dans Advanced eDiscovery. <p> Un administrateur eDiscovery est un membre du groupe de rôles Gestionnaire eDiscovery auquel ont été attribuées des autorisations supplémentaires. Outre les tâches qu’un gestionnaire eDiscovery peut effectuer, un administrateur eDiscovery peut :<ul><li>Afficher tous les cas eDiscovery dans l’organisation.</li><li>Gérer tous les cas eDiscovery après s’être ajouté en tant que membre du cas.</li></ul> <p> La principale différence entre un gestionnaire eDiscovery et un administrateur eDiscovery est qu’un administrateur eDiscovery peut accéder à tous les cas répertoriés sur la page cas **eDiscovery** dans le Centre de sécurité & conformité. Un gestionnaire eDiscovery peut uniquement accéder aux cas qu’il a créés ou aux cas dont il est membre. Pour plus d’informations sur la façon de faire d’un utilisateur un administrateur eDiscovery, voir [Attribuer des autorisations eDiscovery](../../compliance/assign-ediscovery-permissions.md) dans le Centre de sécurité & conformité.|Gestion des cas <p> Communication <p> Recherche de conformité <p> Consignataire <p> Exporter <p> Suspension <p> Aperçu <p> Révision <p> Déchiffrement RMS|
-|**Lecteur général**|Les membres ont un accès en lecture seule aux rapports, alertes et peuvent voir la configuration et les paramètres.<p> La principale différence entre le lecteur global et le lecteur de sécurité est qu’un lecteur global peut accéder à la **configuration et aux paramètres**.|Lecteur de sécurité <p> Lecteur d’étiquettes de sensibilité <p> Affichage De l’assurance service <p> Journaux d'audit en affichage seul <p> View-Only gestion des appareils <p> View-Only de conformité DLP <p> View-Only conformité DE LAO <p> View-Only gérer les alertes <p> Afficher uniquement les destinataires <p> View-Only gestion des enregistrement <p> View-Only rétention des données|
+|**Lecteur global**|Les membres ont un accès en lecture seule aux rapports, alertes et peuvent voir la configuration et les paramètres.<p> La principale différence entre le lecteur global et le lecteur de sécurité est qu’un lecteur global peut accéder à la **configuration et aux paramètres**.|Lecteur de sécurité <p> Lecteur d’étiquettes de sensibilité <p> Affichage De l’assurance service <p> Journaux d'audit en affichage seul <p> View-Only gestion des appareils <p> View-Only de conformité DLP <p> View-Only conformité DE LAO <p> View-Only gérer les alertes <p> Afficher uniquement les destinataires <p> View-Only gestion des enregistrement <p> View-Only rétention des données|
 |**Protection des informations**|Contrôle total sur toutes les fonctionnalités de protection des informations, y compris les étiquettes de confidentialité et leurs stratégies, DLP, tous les types de classifieurs, les explorateurs d’activités et de contenu, ainsi que tous les rapports connexes.|Visionneuse de contenu de classification des données <p> Administrateur Information Protection <p> Analyste Information Protection <p> Enquêteur Information Protection <p> Lecteur Information Protection|
 |**Administrateurs Information Protection**|Créer, modifier et supprimer des stratégies DLP, des étiquettes de confidentialité et leurs stratégies, ainsi que tous les types de classifieurs. Gérer les paramètres DLP de point de terminaison et le mode de simulation pour les stratégies d’étiquetage automatique.|Administrateur Information Protection|
 |**Analystes Information Protection**|Accéder et gérer les alertes DLP et l’Explorateur d’activités. Accès en affichage seul aux stratégies DLP, aux étiquettes de confidentialité et à leurs stratégies, ainsi qu’à tous les types de classifieurs.|Visionneuse de listes de classification des données <p> Analyste Information Protection|
@@ -117,7 +113,6 @@ Pour savoir comment accorder l’accès au Centre de sécurité & conformité, c
 |**Utilisateur de la certification de service**|Les membres peuvent accéder à la section Assurance de service dans le Centre de sécurité & conformité. L’assurance de service fournit des rapports et des documents qui décrivent les pratiques de sécurité de Microsoft pour les données client stockées dans Microsoft 365. Il fournit également des rapports d’audit tiers indépendants sur Microsoft 365. Pour plus d’informations, [voir l’assurance de service dans le Centre de sécurité & conformité](../../compliance/service-assurance.md).|Affichage De l’assurance service|
 |**Administrateurs des demandes de droits de l’objet**|Créer des demandes de droits d’objet.|Gestion des cas <p> Administrateur des demandes de droits de l’objet <p> View-Only Case|
 |**Vérification de surveillance**|Les membres peuvent créer et gérer les stratégies qui définissent les communications soumises à vérification dans une organisation. Pour plus d’informations, voir [Configurer des stratégies de conformité des communications pour votre organisation](../../compliance/communication-compliance-configure.md).|Administrateur de la révision de surveillance|
-|
 
 > [!NOTE]
 > <sup>1</sup> Ce groupe de rôles n’attribue pas aux membres les autorisations nécessaires pour effectuer des recherches dans le journal d’audit ou pour utiliser des rapports qui peuvent inclure des données Exchange, telles que les rapports DLP ou Defender pour Office 365. Pour effectuer une recherche dans le journal d’audit ou afficher tous les rapports, un utilisateur doit se voir attribuer des autorisations dans Exchange Online. En effet, la cmdlet sous-jacente utilisée pour les recherches dans le journal d’audit est une cmdlet Exchange Online. Les administrateurs globaux peuvent effectuer des recherches dans le journal d’audit et afficher tous les rapports, car ils sont automatiquement ajoutés en tant que membres du groupe de rôles Gestion de l’organisation dans Exchange Online. Pour plus d’informations, [consultez la recherche dans le journal d’audit dans le Centre de sécurité & conformité](../../compliance/search-the-audit-log-in-security-and-compliance.md).
@@ -169,10 +164,6 @@ Notez que les rôles suivants ne sont pas affectés au groupe de rôles Gestion 
 - Administrateur des demandes de droits de l’objet
 - Administrateur de la révision de surveillance
 - Gestionnaire AllowBlockList du client
-
-<br>
-
-****
 
 |Rôle|Description|Attributions de groupe de rôles par défaut|
 |---|---|---|
@@ -252,4 +243,3 @@ Notez que les rôles suivants ne sont pas affectés au groupe de rôles Gestion 
 |**Afficher uniquement les destinataires**|Afficher des informations sur les utilisateurs et les groupes.|Administrateur de conformité <p> Administrateur de conformité des données <p> Lecteur général <p> Administrateur de flux de messagerie <p> Gestion de l’organisation|
 |**Gestion des enregistrement en affichage seul**|Afficher la configuration de la fonctionnalité de gestion des enregistrements.|Administrateur de conformité <p> Administrateur de conformité des données <p> <p> Lecteur général <p> Gestion de l’organisation|
 |**Gestion de la rétention en affichage seul**|Afficher la configuration des stratégies de rétention, des étiquettes de rétention et des stratégies d’étiquette de rétention.|Administrateur de conformité <p> Administrateur de conformité des données <p> Administrateur général <p> Gestion de l’organisation|
-|

@@ -22,18 +22,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 827b22ea2fb5e0864157dfae6748aa97ee4baf29
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: b6872fb13ba1a32f081b5fcc82fd590f2c196a6c
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499944"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569554"
 ---
-# <a name="step-2-remediate-your-first-incident"></a>Étape 2. Corriger votre premier incident
+# <a name="step-2-remediate-your-first-incident"></a>Étape 2. Corriger votre premier incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Microsoft 365 Defender fournit non seulement des fonctionnalités de détection et d’analyse, mais également de contenir et d’éradication des programmes malveillants. Le contenu inclut des étapes pour réduire l’impact de l’attaque, tandis que l’éradication garantit que toutes les traces d’activité de l’attaquant sont supprimées du réseau. Microsoft 365 Defender propose plusieurs actions de correction qui peuvent être configurées pour corriger automatiquement [](m365d-autoir.md) en fonction du système d’exploitation des appareils concernés et du type d’attaque.
@@ -42,7 +42,7 @@ Microsoft 365 Defender propose plusieurs actions de correction que les analystes
 
 ## <a name="actions-on-devices"></a>Actions sur des appareils
 
-- **Isoler** l’appareil : cette activité bloque immédiatement tout le trafic réseau (internet et interne) pour réduire la propagation des programmes malveillants et permettre aux analystes de poursuivre l’analyse sans qu’un acteur malveillant puisse poursuivre une attaque. La seule connexion autorisée est le cloud du service Microsoft Defender pour l’identité afin que Microsoft Defender pour l’identité puisse continuer à surveiller l’appareil. 
+- **Isoler** l’appareil : cette activité bloque immédiatement tout le trafic réseau (internet et interne) pour réduire la propagation des programmes malveillants et permettre aux analystes de poursuivre l’analyse sans qu’un acteur malveillant puisse poursuivre une attaque. La seule connexion autorisée est le cloud Microsoft Defender pour Identity service de Microsoft Defender pour Identity vous pouvez continuer à surveiller l’appareil. 
 - **Restreindre l’exécution** de l’application : pour empêcher l’exécution d’une application, une stratégie d’intégrité du code est appliquée, qui autorise uniquement l’exécution des fichiers s’ils sont signés par un certificat émis par Microsoft. Cette méthode de restriction permet d’empêcher une personne malveillante de contrôler des appareils compromis et d’effectuer d’autres activités malveillantes.
 - **Exécuter une analyse antivirus** : une analyse Antivirus Microsoft Defender peut s’exécuter avec d’autres solutions antivirus, que l’Antivirus Defender soit ou non la solution antivirus active. Si un autre produit fournisseur d’antivirus est la solution de protection de point de terminaison principale, vous pouvez exécuter l’Antivirus Defender en mode passif.
 - **Lancer une enquête automatisée** : vous pouvez démarrer une nouvelle enquête automatisée à usage général sur l’appareil. Pendant l’exécution d’un examen, toute autre alerte générée à partir de l’appareil est ajoutée à un examen automatisé en cours jusqu’à ce que l’examen soit terminé. En outre, si la même menace est vue sur d’autres appareils, ces appareils sont ajoutés à l’examen.
@@ -64,11 +64,11 @@ En continuant l’exemple [dans Détecter, trier](first-incident-analyze.md#anal
 3. Vérifier que le fichier malveillant a été mis en quarantaine à partir SharePoint
 4. Vérifier les points de terminaison affectés par les programmes malveillants
 5. Reconstruire des systèmes
-6. Recherchez des alertes Microsoft Defender pour les applications cloud similaires pour d’autres utilisateurs
-7. Créer un indicateur personnalisé dans Microsoft Defender pour le point de terminaison pour bloquer une adresse IP tor
-8. Créez une action de gouvernance dans Microsoft Defender pour les applications cloud pour ce type d’alerte, comme celui illustré dans l’image suivante :
+6. Recherchez des alertes de Microsoft Defender for Cloud Apps similaires pour d’autres utilisateurs
+7. Créer un indicateur personnalisé dans Microsoft Defender pour point de terminaison pour bloquer une adresse IP tor
+8. Créez une action de gouvernance dans Microsoft Defender for Cloud Apps pour ce type d’alerte, comme celui illustré dans l’image suivante :
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Actions de gouvernance dans le portail Microsoft Defender pour les applications cloud" lightbox="../../media/first-incident-remediate/first-incident-mcas-governance.png":::
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Actions de gouvernance dans le portail Microsoft Defender for Cloud Apps web" lightbox="../../media/first-incident-remediate/first-incident-mcas-governance.png":::
 
 La plupart des actions de correction peuvent être appliquées et suivis dans Microsoft 365 Defender.
 
@@ -90,8 +90,6 @@ Voici un exemple.
 Les playbooks peuvent également être créés lors de [la révision post-incident](first-incident-post.md) pour créer des actions de correction à partir d’incidents résolus. 
 
 ## <a name="next-step"></a>Étape suivante
-
-[![Étape 3 : Découvrez comment effectuer une révision post-incident d’un incident.](../../media/first-incident-overview/first-incident-path-step3.png)](first-incident-post.md)
 
 Découvrez comment effectuer [une révision post-incident d’un incident](first-incident-post.md).
 

@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment configurer la sécurité du portail.
-ms.openlocfilehash: dd99330d520b409a93cfd5d1ca777c17b9ef4373
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 4d12755ca1b02988dff3f5ba6be6dd0d8da172ad
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775937"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594749"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>Configurer la sécurité Microsoft 365 Lighthouse portail d’entreprise
 
@@ -39,7 +39,7 @@ Lorsque les utilisateurs accèdent à l’mf pour la première fois, ils sont in
 
 Le contrôle d’accès basé sur un rôle (RBAC) accorde l’accès aux ressources ou aux informations en fonction des rôles utilisateur. L’accès aux données et paramètres du client dans le centre d’informations est limité à des rôles spécifiques du programme fournisseur de solutions Cloud (CSP). Pour configurer des rôles RBAC dans le contrôle d’accès, nous vous recommandons d’utiliser des privilèges d’administration délégués granulaires (GDAP) pour implémenter des affectations granulaires pour les utilisateurs. Des privilèges d’administration délégués (DAP) sont toujours requis pour que le client puisse intégrer correctement, mais les clients GDAP uniquement pourront bientôt intégrer sans dépendance sur DAP. Les autorisations GDAP prévalent lorsque DAP et GDAP coexistent pour un client. 
 
-Pour commencer à travailler avec GDAP, voir [Configurer des rôles pour gérer les clients](m365-lighthouse-set-up-roles.md).
+Pour commencer à travailler avec GDAP, voir [Vue d’ensemble des autorisations dans Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 
 Les techniciens MSP peuvent également accéder à l’aide de rôles d’agent d’administration ou d’agent du service d’aide via des privilèges d’administration délégués( DAP).
 

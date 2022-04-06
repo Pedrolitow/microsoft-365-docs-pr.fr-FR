@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 22a8c8cdd5ebcaa8038c37b73aeeb6c5f80d4267
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d740ab4fb999697edc9ce7c8f662f6d5c6681fdf
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61932819"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500494"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Suivez votre historique de score de sécurité Microsoft et répondez aux objectifs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-[Le niveau de sécurité Microsoft](microsoft-secure-score.md) est une mesure de la posture de sécurité d’une organisation, avec un nombre plus élevé indiquant d’autres actions d’amélioration. Vous pouvez le trouver dans https://security.microsoft.com/securescore le portail [Microsoft 365 Defender.](microsoft-365-defender.md#the-microsoft-365-defender-portal)
+[Le niveau de sécurité Microsoft](microsoft-secure-score.md) est une mesure de la posture de sécurité d’une organisation, avec un nombre plus élevé indiquant d’autres actions d’amélioration. Vous pouvez le trouver sur https://security.microsoft.com/securescore le [portail Microsoft 365 Defender web](microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
 ## <a name="gain-insights-into-activity-that-has-affected-your-score"></a>Obtenir des informations sur l’activité qui a affecté votre score
 
@@ -40,13 +40,13 @@ Affichez un graphique du score de votre organisation au fil du temps dans **l’
 
 Sous le graphique se trouve la liste de toutes les actions entreprises dans l’plage de temps sélectionnée et leurs attributs, tels que les points et la catégorie résultants. Vous pouvez personnaliser une plage de dates et filtrer par catégorie.
 
-![Historique des activités.](../../media/secure-score/secure-score-history-activity.png)
+:::image type="content" source="../../media/secure-score/secure-score-history-activity.png" alt-text="Exemple de la page qui décrit l’historique des activités dans le portail Microsoft 365 Defender web" lightbox="../../media/secure-score/secure-score-history-activity.png":::
 
 Si vous sélectionnez l’action d’amélioration associée à une activité, le programme volant d’action d’amélioration complète s’affiche.
 
 Pour afficher tout l’historique de cette action d’amélioration spécifique, sélectionnez le lien d’historique dans le volant.
 
-![Historique des actions d’amélioration.](../../media/secure-score/secure-score-history-flyout.png)
+:::image type="content" source="../../media/secure-score/secure-score-history-flyout.png" alt-text="Volet Historique concernant l’action d’amélioration dans le portail Microsoft 365 Defender web" lightbox="../../media/secure-score/secure-score-history-flyout.png":::
 
 ## <a name="discover-trends-and-set-goals"></a>Découvrir les tendances et définir des objectifs
 
@@ -64,9 +64,9 @@ Il existe deux endroits pour comparer votre score aux organisations qui sont sim
 
 #### <a name="comparison-bar-chart"></a>Graphique à barres de comparaison
 
-Le graphique à barres de comparaison est disponible sous **l’onglet Vue d’ensemble.** Pointez sur le graphique pour afficher le score et l’opportunité de score. 
+Le graphique à barres de comparaison est disponible sous **l’onglet Vue d’ensemble** . Pointez sur le graphique pour afficher le score et l’opportunité de score. 
 
-**Les organisations** comme la vôtre sont un score moyen d’autres locataires dans la même région (à condition que nous 5 ou plus locataires à comparer) avec une taille d’organisation similaire à la vôtre.
+:::image type="content" source="../../media/secure-score/secure-score-comparison-bar.png" alt-text="Exemple de graphique à barres des scores d’une organisation similaire dans le portail Microsoft 365 Defender web" lightbox="../../media/secure-score/secure-score-comparison-bar.png":::
 
 Les données de comparaison sont rendues anonymes, donc nous ne savons pas exactement quels autres clients sont dans la combinaison.
 
@@ -76,7 +76,7 @@ Les données de comparaison sont rendues anonymes, donc nous ne savons pas exact
 
 Dans **l’onglet & des** tendances, comparez le score de sécurisation de votre organisation à celui des autres au fil du temps.
 
-![Graphique en courbes des scores d’une organisation similaire au fil du temps.](../../media/secure-score/secure-score-comparison-trend.png)
+:::image type="content" source="../../media/secure-score/secure-score-comparison-trend.png" alt-text="Exemple d’un graphique en courbes des scores d’une organisation similaire au fil du temps dans le portail Microsoft 365 Defender" lightbox="../../media/secure-score/secure-score-comparison-trend.png":::
 
 ## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 

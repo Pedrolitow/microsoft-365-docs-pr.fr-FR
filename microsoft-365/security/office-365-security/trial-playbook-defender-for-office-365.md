@@ -6,21 +6,21 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.topic: hub-page
-ms.service: O365-seccomp
+ms.topic: conceptual
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
+ms.prod: m365-security
 search.appverid:
 - MOE150
 - MET150
 description: Manuel de solutions de Microsoft Defender pour Office 365
-ms.openlocfilehash: 6b149f7b3fa218050c37f99f5567fd2658f26bc7
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b8a0fedd01a3769f2ccf8952bd9e7bce0974a2f0
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375283"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683206"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>Livre d’essai : Microsoft Defender pour Office 365
 
@@ -90,7 +90,7 @@ Regardez cette vidéo pour en savoir plus : détecter les compromissions et y r�
 
 ### <a name="use-threat-explorer-to-investigate-malicious-email"></a>Utiliser l’Explorateur de menaces pour examiner les e-mails malveillants
 
-Microsoft Defender for Office 365 vous permet d’examiner les activités qui mettent les personnes de votre organisation en danger et de prendre des mesures pour protéger votre organisation. Vous pouvez le faire à l’aide [de l’Explorateur de menaces ou (détections en temps réel).](threat-explorer.md)
+Defender for Office 365 vous permet d'enquêter sur les activités qui mettent en danger les personnes de votre organisation et de prendre des mesures pour protéger votre organisation. Pour ce faire, vous pouvez utiliser [Threat Explorer ou (détections en temps réel)](threat-explorer.md).
 
 - [Rechercher les messages suspects](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered)qui ont été remis : recherchez et supprimez des messages, identifiez l’adresse IP d’un expéditeur de courrier malveillant ou démarrez un incident pour un examen plus approfondie.
 - [Vérifiez l’action de remise et l’emplacement](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location): cette vérification vous permet de connaître l’emplacement des messages électroniques problématiques.
@@ -122,7 +122,7 @@ Répondre efficacement à l’aide de l’examen et de la réponse automatisés 
 
 ### <a name="dive-deep-into-data-with-query-based-hunting"></a>Entrer en profondeur dans les données avec le hunting basé sur une requête
 
-Utilisez le repérage avancé pour écrire des règles de détection personnalisées, inspecter de manière proactive les événements dans votre environnement et localiser les indicateurs de menace. Explorez les données brutes dans votre environnement.
+Utilisez la chasse avancée pour rédiger des règles de détection personnalisées, inspecter de manière proactive les événements dans votre environnement et localiser les indicateurs de menace. Explorez les données brutes de votre environnement.
 
 - [Créer des règles de détection personnalisées](../defender/advanced-hunting-overview.md#get-started-with-advanced-hunting)
 - [Accéder aux requêtes partagées créées](../defender/advanced-hunting-shared-queries.md) par d’autres personnes
@@ -142,6 +142,6 @@ Former vos utilisateurs avec les connaissances adéquates pour identifier les me
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
 - **Guide interactif**: Vous ne connaissez pas Defender pour Office 365? Examinez [le guide interactif](https://mslearn.cloudguides.com/guides/Safeguard%20your%20organization%20with%20Microsoft%20Defender%20for%20Office%20365) pour comprendre comment commencer.
-- **Documents Microsoft Corporation**: obtenez des informations détaillées sur le fonctionnement de Defender for Office 365 et la meilleure façon de l’implémenter pour votre organisation. Visitez [la documentation.](overview.md)
+- **Microsoft docs**: Obtenez des informations détaillées sur le fonctionnement de Defender pour Office 365 et sur la meilleure façon de le mettre en œuvre pour votre organisation. Visitez [Docs](overview.md).
 - **Éléments inclus :** pour obtenir la liste complète des fonctionnalités de sécurité Office 365 courrier électronique répertoriées par niveau de produit, consultez la [matrice des fonctionnalités.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability)
 - **Pourquoi Microsoft Defender pour Office 365**: The [Defender for Office 365 Datasheet](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FCiy) affiche les 10 principales raisons pour lesquelles les clients choisissent Microsoft Corporation.

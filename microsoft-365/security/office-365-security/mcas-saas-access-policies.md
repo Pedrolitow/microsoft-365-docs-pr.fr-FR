@@ -3,7 +3,6 @@ title: 'Stratégies Microsoft Defender pour les applications cloud recommandées
 description: Décrit les stratégies recommandées pour l’intégration à Microsoft Defender pour les applications cloud.
 author: BrendaCarter
 manager: laurawi
-ms.prod: microsoft-365-enterprise
 ms.topic: article
 audience: Admin
 ms.author: bcarter
@@ -15,12 +14,13 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 8d94207be88bd7c9e070057ac1790845a3be17ca
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.prod: m365-security
+ms.openlocfilehash: 95b46e1c92354015ce6f8d9c5b1fa4b6e9642785
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122007"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683316"
 ---
 # <a name="recommended-microsoft-defender-for-cloud-apps-policies-for-saas-apps"></a>Stratégies Microsoft Defender pour les applications cloud recommandées pour les applications SaaS
 
@@ -36,11 +36,11 @@ Ces conseils incluent des recommandations pour ces scénarios :
 
 ## <a name="bring-saas-apps-into-it-management"></a>Faire entrer les applications SaaS dans la gestion des applications it
 
-La première étape de l’utilisation de Defender pour les applications cloud pour gérer les applications SaaS consiste à les découvrir, puis à les ajouter à Azure AD client. Si vous avez besoin d’aide pour la découverte, [consultez Découvrir et gérer les applications SaaS dans votre réseau.](/cloud-app-security/tutorial-shadow-it) Une fois que vous avez découvert les applications, ajoutez-les [à votre Azure AD client.](/azure/active-directory/manage-apps/add-application-portal)
+La première étape de l’utilisation de Defender pour les applications cloud pour gérer les applications SaaS consiste à les découvrir, puis à les ajouter à Azure AD client. Si vous avez besoin d’aide pour la découverte, [consultez Découvrir et gérer les applications SaaS dans votre réseau](/cloud-app-security/tutorial-shadow-it). Une fois que vous avez découvert les applications, [ajoutez-les à votre Azure AD client](/azure/active-directory/manage-apps/add-application-portal).
 
 Vous pouvez commencer à gérer ces éléments en suivant les mesures suivantes :
 
-1. Tout d’abord, dans Azure AD, créez une stratégie d’accès conditionnel et configurez-la pour « Utiliser le contrôle d’application d’accès conditionnel ». Cela redirige la demande vers Defender pour les applications cloud. Vous pouvez créer une stratégie et ajouter toutes les applications SaaS à cette stratégie.
+1. Tout d’abord, Azure AD, créez une stratégie d’accès conditionnel et configurez-la pour « Utiliser le contrôle d’application d’accès conditionnel ». Cela redirige la demande vers Defender pour les applications cloud. Vous pouvez créer une stratégie et ajouter toutes les applications SaaS à cette stratégie.
 1. Ensuite, dans Defender pour les applications cloud, créez des stratégies de session. Créez une stratégie pour chaque contrôle que vous souhaitez appliquer.
 
 Les autorisations d’accès aux applications SaaS sont généralement basées sur les besoins de l’entreprise pour accéder à l’application. Ces autorisations peuvent être très dynamiques. L’utilisation de Defender pour les applications cloud garantit la protection des données d’application, que les utilisateurs soient affectés à un groupe Azure AD associé au point de départ, à l’entreprise ou à une protection de sécurité spécialisée.
@@ -51,7 +51,7 @@ Pour protéger les données au sein de votre collection d’applications SaaS, l
 
 Le tableau suivant répertorie la nouvelle stratégie d’accès conditionnel que vous devez créer dans Azure AD.
 
-|Niveau de protection|Stratégie|Informations supplémentaires|
+|Niveau de protection|Stratégie|Plus d’informations|
 |---|---|---|
 |Tous les niveaux de protection|[Utiliser le contrôle d’application d’accès conditionnel dans Defender pour les applications cloud](/cloud-app-security/proxy-deployment-aad#configure-integration-with-azure-ad)|Cela configure votre IdP (Azure AD) pour qu’il fonctionne avec Defender pour les applications cloud.|
 ||||
@@ -67,7 +67,7 @@ Le tableau suivant répertorie les exemples de stratégies illustrées ci-dessus
 
 Pour obtenir des instructions de bout en bout sur la configuration du contrôle d’application d’accès conditionnel, voir [Deploy Conditional Access App Control for featured apps](/cloud-app-security/proxy-deployment-aad). Cet article vous explique tout au long du processus de création de la stratégie d’accès conditionnel nécessaire dans Azure AD test de vos applications SaaS.
 
-Pour plus d’informations, voir Protéger les applications avec Microsoft Defender pour le contrôle d’application [d’accès conditionnel aux applications cloud.](/cloud-app-security/proxy-intro-aad)
+Pour plus d’informations, voir [Protéger les applications avec Microsoft Defender pour le contrôle d’application d’accès conditionnel aux applications cloud](/cloud-app-security/proxy-intro-aad).
 
 ## <a name="tune-protection-for-specific-saas-apps"></a>Régler la protection pour des applications SaaS spécifiques
 
@@ -86,7 +86,7 @@ Par exemple, vous pouvez protéger votre environnement Box avec les types de mod
 - Application Oauth risquée
 - Activité de partage de fichiers inhabituelle
 
-Voici quelques exemples. Des modèles de stratégie supplémentaires sont ajoutés régulièrement. Pour obtenir des exemples d’application d’une protection supplémentaire à des applications spécifiques, voir [Protection des applications connectées.](/cloud-app-security/protect-connected-apps)
+Voici quelques exemples. Des modèles de stratégie supplémentaires sont ajoutés régulièrement. Pour obtenir des exemples d’application d’une protection supplémentaire à des applications spécifiques, voir [Protection des applications connectées](/cloud-app-security/protect-connected-apps).
 
 [La façon dont Defender pour les applications cloud](/cloud-app-security/protect-box) contribue à protéger votre environnement Box illustre les types de contrôles qui peuvent vous aider à protéger vos données métiers dans Box et d’autres applications avec des données sensibles.
 
@@ -107,4 +107,4 @@ L’illustration et le tableau suivants fournissent plusieurs exemples de strat�
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-Pour plus d’informations sur l’utilisation de Defender pour les applications cloud, voir [la documentation de Microsoft Defender pour les applications cloud.](//cloud-app-security/)
+Pour plus d’informations sur l’utilisation de Defender pour les applications cloud, voir [la documentation de Microsoft Defender pour les applications cloud](//cloud-app-security/).

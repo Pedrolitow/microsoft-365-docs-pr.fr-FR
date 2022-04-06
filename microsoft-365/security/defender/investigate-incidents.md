@@ -23,18 +23,18 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 4bba9797572193199dba0bd4c928693d94bf00de
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 776680db7b2666cc964f82e88cd6af9e6bab7558
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569155"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500252"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Examiner les incidents dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
@@ -52,7 +52,7 @@ Vous pouvez commencer par sélectionner l’incident dans la colonne de coche. V
 
 Lorsque vous le faites, un volet de synthèse s’ouvre avec des informations clés sur l’incident, telles que la gravité, à qui il est affecté, et les catégories [MITRE ATT&CK&trade;](https://attack.mitre.org/) pour l’incident. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Volet qui affiche les détails récapitulatifs d’un incident dans le portail Microsoft 365 Defender web." lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Volet qui affiche les détails récapitulatifs d’un incident dans Microsoft 365 Defender portail." lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
 
 À partir de là, vous pouvez sélectionner **Ouvrir la page Incident**. Cela ouvre la page principale de l’incident où vous trouverez des informations récapitulatifs et des onglets pour les alertes, les appareils, les utilisateurs, les enquêtes et les preuves.
 
@@ -82,7 +82,7 @@ Sous **l’onglet Alertes** , vous pouvez afficher la file d’attente d’alert
 
 - Gravité.
 - Entités impliquées dans l’alerte.
-- La source des alertes (Microsoft Defender pour Identity, Microsoft Defender pour point de terminaison, Microsoft Defender pour Office 365, Defender pour le cloud  Applications et module de gouvernance des applications).
+- Source des alertes (Microsoft Defender pour l’identité, Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Defender pour les applications cloud et le module de gouvernance d’application).
 - Raison pour laquelle ils ont été liés.
 
 Voici un exemple.
@@ -121,7 +121,7 @@ Découvrez comment utiliser la file d’attente d’alertes et les pages d’ale
 
 Vous pouvez cocher la coche d’un appareil pour voir les détails de l’appareil, les données d’annuaire, les alertes actives et les utilisateurs connectés. Sélectionnez le nom de l’appareil pour voir les détails de l’appareil dans l’inventaire des appareils Defender for Endpoint. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Page relative à l’option d’inventaire des appareils dans la Microsoft Defender pour point de terminaison." lightbox="../../media/investigate-incidents/incident-devices-details.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Page relative à l’option d’inventaire des appareils dans Microsoft Defender pour le point de terminaison." lightbox="../../media/investigate-incidents/incident-devices-details.png":::
 
 Dans la page appareil, vous pouvez collecter des informations supplémentaires sur l’appareil, telles que toutes ses alertes, une chronologie et des recommandations de sécurité. Par exemple, à partir  de l’onglet Chronologie, vous pouvez parcourir la chronologie de l’ordinateur et afficher tous les événements et comportements observés sur l’ordinateur dans l’ordre chronologique, entrecoupés des alertes.
 
@@ -145,11 +145,11 @@ Découvrez comment afficher des informations utilisateur supplémentaires et gé
 
 :::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="Page Boîtes aux lettres pour un incident dans le portail Microsoft 365 Defender web." lightbox="../../media/investigate-incidents/incident-mailboxes.png":::
 
-Vous pouvez cocher la coche d’une boîte aux lettres pour voir la liste des alertes actives. Sélectionnez le nom de la boîte aux lettres pour voir d’autres détails de boîte aux lettres dans la page Explorateur pour Defender pour Office 365.
+Vous pouvez cocher la coche d’une boîte aux lettres pour voir la liste des alertes actives. Sélectionnez le nom de la boîte aux lettres pour voir des détails supplémentaires sur la page Explorateur de Defender pour Office 365.
 
 ## <a name="investigations"></a>Enquêtes
 
-**L’onglet** Enquêtes répertorie toutes les [enquêtes](m365d-autoir.md) automatisées déclenchées par les alertes dans cet incident. Les enquêtes automatisées effectueront des actions de correction ou attendront l’approbation par les analystes des actions, selon la façon dont vous avez configuré vos enquêtes automatisées pour qu’ils s’exécutent dans Defender for Endpoint et Defender pour Office 365.
+**L’onglet** Enquêtes répertorie toutes les [enquêtes](m365d-autoir.md) automatisées déclenchées par les alertes dans cet incident. Les enquêtes automatisées effectuent des actions de correction ou attendent l’approbation par un analyste des actions, selon la façon dont vous avez configuré vos enquêtes automatisées pour qu’ils s’exécutent dans Defender pour Endpoint et Defender pour Office 365.
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Page Enquêtes pour un incident dans le portail Microsoft 365 Defender client" lightbox="../../media/investigate-incidents/incident-investigations.png":::
 

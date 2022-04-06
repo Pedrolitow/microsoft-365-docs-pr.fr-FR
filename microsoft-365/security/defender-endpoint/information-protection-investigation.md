@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8a1cafe4cd54b7313e0555127221173e23a41bbf
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 465c149e3ad82384b574b43c66da917a46e4a2ce
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217709"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474154"
 ---
 # <a name="use-sensitivity-labels-to-prioritize-incident-response"></a>Utiliser des étiquettes de confidentialité pour hiérarchiser les réponses aux incidents
 
@@ -43,29 +43,29 @@ Découvrez comment utiliser des étiquettes de sensibilité aux données pour hi
 > [!NOTE]
 > Les étiquettes sont détectées pour Windows 10, version 1809 ou une Windows 11.
 
-1. Dans Microsoft 365 Defender portail, **sélectionnez Incidents &** \> **alertes Incidents**.
+1. Dans Microsoft 365 Defender portail, **sélectionnez Incidents & alertes** \> **Incidents**.
 
 2. Faites défiler vers la droite pour voir la colonne **Sensibilité aux** données. Cette colonne reflète les étiquettes de niveau de sensibilité observées sur les appareils liés aux incidents, ce qui indique si les fichiers sensibles peuvent être touchés par l’incident.
 
-    ![Image de la colonne de sensibilité des données.](images/data-sensitivity-column.png)
+   :::image type="content" source="images/data-sensitivity-column.png" alt-text="Option Hautement confidentiel dans la colonne confidentialité des données" lightbox="images/data-sensitivity-column.png":::
 
     Vous pouvez également filtrer en fonction du **niveau de sensibilité des données**
 
-    ![Image du filtre de sensibilité des données.](images/data-sensitivity-filter.png)
+    :::image type="content" source="images/data-sensitivity-filter.png" alt-text="Filtre de sensibilité des données" lightbox="images/data-sensitivity-filter.png":::
 
 3. Ouvrez la page incident pour examiner plus en détail.
 
-    ![Image des détails de la page d’incident.](images/incident-page.png)
+   :::image type="content" source="images/incident-page.png" alt-text="Détails de la page incident" lightbox="images/incident-page.png":::
 
 4. Sélectionnez **l’onglet Appareils** pour identifier les appareils stockant des fichiers avec des étiquettes de sensibilité.
 
-    ![Image de l’onglet de l’appareil.](images/investigate-devices-tab.png)
+   :::image type="content" source="images/investigate-devices-tab.png" alt-text="Onglet Appareil" lightbox="images/investigate-devices-tab.png":::
 
 5. Sélectionnez les appareils qui stockent des données sensibles et recherchez dans la chronologie pour identifier les fichiers qui peuvent être touchés, puis prenez les mesures appropriées pour vous assurer que les données sont protégées.
 
    Vous pouvez affiner les événements affichés sur la chronologie de l’appareil en recherchant des étiquettes de sensibilité aux données. Cela n’affichera que les événements associés aux fichiers qui ont ce nom d’étiquette.
 
-    ![Image de la chronologie de l’appareil avec des résultats de recherche restreints en fonction de l’étiquette.](images/machine-timeline-labels.png)
+   :::image type="content" source="images/machine-timeline-labels.png" alt-text="Chronologie de l’appareil avec résultats de recherche restreints en fonction de l’étiquette" lightbox="images/machine-timeline-labels.png":::
 
 > [!TIP]
 > Ces points de données sont également exposés par le biais de « DeviceFileEvents » dans le repérage avancé, ce qui permet aux requêtes avancées et à la détection de planifier la détection de prendre en compte les étiquettes de sensibilité et l’état de protection des fichiers.

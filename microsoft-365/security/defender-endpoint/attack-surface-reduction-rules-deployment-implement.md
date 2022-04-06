@@ -1,7 +1,7 @@
 ---
 title: Implémenter le déploiement de règles de réduction de la surface d’attaque (ASR)
 description: Fournit des conseils pour implémenter le déploiement de vos règles de réduction de la surface d’attaque.
-keywords: 'Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque'
+keywords: Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -11,16 +11,23 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: 'oogunrinde, sugamar'
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
+ms.collection:
+- m365solution-scenario
+- M365-security-compliance
 ms.date: 1/18/2022
+ms.openlocfilehash: 2ca83735eab465e3a5ec6b25156143fde1719c0a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683118"
 ---
-
-# <a name="step-3-implement-asr-rules"></a>Étape 3 : Implémenter des règles de asr
+# <a name="step-3-implement-asr-rules"></a>Étape 3 : Mettre en œuvre les règles ASR
 
 L’application de règles de réduction de la surface d’attaque déplace le premier anneau de test dans un état fonctionnel activé.
 
@@ -30,7 +37,7 @@ L’application de règles de réduction de la surface d’attaque déplace le p
 ## <a name="step-1-transition-asr-rules-from-audit-to-block"></a>Étape 1 : Transition des règles de la asr de l’audit au blocage
 
 1. Une fois toutes les exclusions déterminées en mode audit, commencez à définir certaines règles asr en mode « bloquer », en commençant par la règle qui a le moins d’événements déclenchés. Voir « Activer [les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md).
-2. Consultez la page de rapports dans le portail Microsoft 365 Defender' ; voir le rapport [sur la protection contre les menaces dans Microsoft Defender for Endpoint](threat-protection-reports.md). Examinez également les commentaires de vos champions de la asr.
+2. Consultez la page de rapports dans le portail Microsoft 365 Defender de protection contre les menaces ; consultez le rapport sur la protection contre les [menaces dans Microsoft Defender pour Endpoint](threat-protection-reports.md). Examinez également les commentaires de vos champions de la asr.
 3. Affinez les exclusions ou créez de nouvelles exclusions selon les besoins.
 4. Revenir aux règles problématiques vers Audit.
 
@@ -91,7 +98,7 @@ Consultez la rubrique [de référence des règles de réduction de la surface](a
 
 2. Dans **l’Éditeur de gestion des stratégies** de groupe, cliquez sur **Configuration** ordinateur et cliquez **sur Modèles d’administration**.
 
-3. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** \>  \> **Protection contre les attaques Microsoft Defender réduction de la surface** **d’attaque**\>.
+3. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** \>  \> **Protection contre les attaques Microsoft Defender réduction de la** **surface d’attaque**\>.
 
 4. Double-cliquez sur le **paramètre Exclure les fichiers et les** chemins d’accès du paramètre Règles de réduction de la surface d’attaque et définissez l’option **sur Activé**. **Sélectionnez Afficher** et entrez chaque fichier ou dossier dans la **colonne Nom de la** valeur. Entrez **0 dans** la colonne **Valeur** pour chaque élément.
 
@@ -100,7 +107,7 @@ Consultez la rubrique [de référence des règles de réduction de la surface](a
 
 ##### <a name="use-powershell-to-exclude-files-and-folders"></a>Utiliser PowerShell pour exclure des fichiers et des dossiers
 
-1. **Tapez powershell** dans le menu Démarrer, cliquez avec le **bouton droit sur Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**.
+1. **Tapez powershell** dans le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**.
 
 2. Entrez l’cmdlet suivante :
 
@@ -119,14 +126,14 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 ##### <a name="customize-the-notification"></a>Personnaliser la notification
 
-Vous pouvez personnaliser la notification lorsqu’une règle est déclenchée et bloque une application ou un fichier. Consultez l [Sécurité Windows](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center) article.
+Vous pouvez personnaliser la notification lorsqu’une règle est déclenchée et bloque une application ou un fichier. Consultez [l’article Sécurité Windows’article](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center).
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Rubriques supplémentaires dans cette collection de déploiements
 
-[Conditions préalables au déploiement des règles asr](attack-surface-reduction-rules-deployment.md)
+[Prérequis pour le déploiement des règles ASR](attack-surface-reduction-rules-deployment.md)
 
-[Étape 1 : Planifier le déploiement des règles de la asr](attack-surface-reduction-rules-deployment-plan.md)
+[Étape 1 : Planifier le déploiement des règles ASR](attack-surface-reduction-rules-deployment-plan.md)
 
-[Étape 2 : Tester les règles de la asr](attack-surface-reduction-rules-deployment-test.md)
+[Étape 2 : Tester les règles ASR](attack-surface-reduction-rules-deployment-test.md)
 
-[Étape 4 : Operationalize ASR rules](attack-surface-reduction-rules-deployment-operationalize.md)
+[Étape 4 : Opérationnaliser les règles ASR](attack-surface-reduction-rules-deployment-operationalize.md)

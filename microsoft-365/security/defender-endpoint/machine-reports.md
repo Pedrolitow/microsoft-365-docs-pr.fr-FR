@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: eaa9d05fd62127949e6a0b40de8d42a79c446d4d
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: bf89c0e57cbe14980b15ecf6f5a88f6db2b83e84
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170524"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474022"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Rapport d’intégrité et de conformité des appareils dans Microsoft Defender pour point de terminaison
 
@@ -36,7 +36,7 @@ Le rapport d’état des appareils fournit des informations de haut niveau sur l
 
 Le tableau de bord est structuré en deux sections :
 
-:::image type="content" alt-text="Image du rapport de périphérique." source="images/device-reports.png" lightbox="images/device-reports.png":::
+:::image type="content" source="images/device-reports.png" alt-text="Rapport sur l’appareil" lightbox="images/device-reports.png":::
 
 
 <br>
@@ -53,7 +53,7 @@ Le tableau de bord est structuré en deux sections :
 
 Par défaut, les tendances des appareils affichent les informations sur les appareils de la période de 30 jours se terminant par la dernière journée entière. Pour mieux prendre en compte les tendances qui se produisent dans votre organisation, vous pouvez affiner la période de rapport en ajustant la période indiquée. Pour ajuster la période, sélectionnez une plage de temps dans les options de la baisse :
 
-- 30 jours
+- 30 jours
 - Trois mois
 - Six mois
 - Personnalisé
@@ -76,10 +76,10 @@ La section Tendances des appareils vous permet d’aller jusqu’à la liste des
 
 Le rapport est composé de cartes qui affichent les attributs d’appareil suivants :
 
-- **État d’état**: affiche des informations sur l’état du capteur sur les appareils, en fournissant une vue agrégée des appareils actifs, qui rencontrent des problèmes de communication, qui sont inactifs ou où aucune donnée de capteur n’est visible.
-- **État antivirus des appareils Windows 10 actifs**: indique le nombre d’appareils et l’état des Antivirus Microsoft Defender.
-- **Plateformes de système d’exploitation**: affiche la distribution des plateformes de système d’exploitation qui existent au sein de votre organisation.
-- **Windows 10 versions**: affiche la distribution des Windows 10 et leurs versions dans votre organisation.
+- **État d’santé** : affiche des informations sur l’état du capteur sur les appareils, en fournissant une vue agrégée des appareils actifs, qui rencontrent des problèmes de communication, qui sont inactifs ou où aucune donnée de capteur n’est visible.
+- **État antivirus des appareils Windows 10 actifs** : indique le nombre d’appareils et l’état des Antivirus Microsoft Defender.
+- **Plateformes de système d’exploitation** : affiche la distribution des plateformes de système d’exploitation qui existent au sein de votre organisation.
+- **Windows 10 versions** : affiche la distribution des Windows 10 et leurs versions dans votre organisation.
 
 ## <a name="filter-data"></a>Filtrer les données
 
@@ -92,8 +92,8 @@ Vous pouvez sélectionner plusieurs filtres à appliquer à partir des attributs
 
 Par exemple, pour afficher des données sur les Windows 10 avec l’état d’état d’état du capteur actif :
 
-1. Sous **Filtres > l’état d'> du capteur actif.**
-2. Sélectionnez ensuite **les plateformes de système d'> Windows 10**.
+1. Sous **Filtres, >'état d'> du capteur est actif**.
+2. Sélectionnez ensuite **les plateformes de système d> Windows 10**.
 3. Sélectionnez **Appliquer**.
 
 ## <a name="related-topic"></a>Rubrique connexe

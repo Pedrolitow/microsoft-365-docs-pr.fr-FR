@@ -15,21 +15,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d57097d255b9f64782320dbd380f90b7a98573cb
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: df5cbf5297a17dafb80a93ed49c7f7d81bc49d68
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61160495"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474374"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Afficher et organiser la file d’attente d’incidents Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
@@ -47,7 +47,7 @@ Dans la barre de navigation supérieure, vous pouvez :
 - Naviguer entre les pages
 - Appliquer des filtres
 
-![Image de la file d’attente des incidents.](images/atp-incident-queue.png)
+:::image type="content" source="images/atp-incident-queue.png" alt-text="File d’attente Incidents" lightbox="images/atp-incident-queue.png":::
 
 ## <a name="sort-and-filter-the-incidents-queue"></a>Trier et filtrer la file d’attente des incidents
 Vous pouvez appliquer les filtres suivants pour limiter la liste des incidents et obtenir une vue plus centrée.

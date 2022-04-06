@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: ec4aa28c25982ea81662ff26fa19f615d13cd314
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: b659853d9323b4a1503cd75cff66a83cbd06e85e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465396"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682898"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recommandations de stratégie pour la sécurisation des Teams conversations, des groupes et des fichiers
 
@@ -41,7 +41,7 @@ Vous n’avez pas besoin d’activer les services dépendants pour commencer à 
 
 - Groupes Microsoft 365
 - Sites d’équipe SharePoint
-- OneDrive Entreprise
+- OneDrive Entreprise
 - Les boîtes aux lettres Exchange
 - Flux de vidéos et plans du Planificateur (si ces services sont activés)
 
@@ -49,7 +49,7 @@ Vous n’avez pas besoin d’activer les services dépendants pour commencer à 
 
 Pour protéger la conversation, les groupes et le contenu dans Teams, le diagramme suivant illustre les stratégies à mettre à jour à partir des stratégies communes d’accès aux appareils et aux identités. Pour chaque stratégie à mettre à jour, assurez-vous Teams services dépendants sont inclus dans l’affectation des applications cloud.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png" alt-text="Résumé des mises à jour de stratégie pour la protection de l’accès à Teams et à ses services dépendants" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png" alt-text="Résumé des mises à jour de stratégie pour la protection de l’accès Teams et de ses services dépendants." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png":::
 
 Ces services sont les services dépendants à inclure dans l’affectation des applications cloud pour Teams :
 
@@ -77,7 +77,7 @@ Ce tableau répertorie les stratégies qui doivent être réexaminées et les li
 
 À titre de référence, le diagramme suivant illustre les services sur Teams’aide. Pour plus d’informations et d’illustrations, [voir Microsoft Teams services de productivité associés dans Microsoft 365 pour les architectes it.](../../solutions/productivity-illustrations.md)
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png" alt-text="Diagramme montrant Teams dépendances sur SharePoint, OneDrive Entreprise et Exchange" lightbox="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png" alt-text="Diagramme montrant Teams dépendances sur SharePoint, OneDrive Entreprise et Exchange." lightbox="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png":::
 
 ## <a name="guest-and-external-access-for-teams"></a>Accès invité et externe pour Teams
 
@@ -138,9 +138,9 @@ Teams vous permet également d’utiliser des applications à différents endroi
 
 Pour en savoir plus sur les stratégies d’autorisation d’application, consultez Gérer les stratégies [d’autorisation d’application Microsoft Teams](/microsoftteams/teams-app-permission-policies).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="Étape 4 : Stratégies pour Microsoft 365 applications cloud" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
+![Étape 4 : Stratégies pour Microsoft 365 applications cloud.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 Configurer des stratégies d’accès conditionnel pour :
 

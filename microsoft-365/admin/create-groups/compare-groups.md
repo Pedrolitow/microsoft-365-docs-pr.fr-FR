@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Les membres du groupe Microsoft 365 disposent d'une messagerie de groupe et d'un espace de travail partagé pour les conversations, les fichiers et les événements du calendrier, du flux et du planificateur.
-ms.openlocfilehash: cc70fdf534b7240fd914c42f01b2c89843d1372f
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 72da8af8acd0725a5d7509b84f08e4220f7772d4
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805831"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594706"
 ---
 # <a name="compare-groups"></a>Comparer des groupes
 
@@ -64,6 +64,8 @@ Les groupes Microsoft 365 sont accessibles via des applications mobiles comme Ou
 Les membres du groupe peuvent Envoyer en tant que ou Envoyer de la part de l’adresse e-mail du groupe si cette fonction a été [activée par l'administrateur](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md).
 
 Les groupes Microsoft 365 ne prennent pas en charge l’imbrication avec d’autres groupes Microsoft 365 ou avec les groupes de distribution ou de sécurité.
+
+Groupes Microsoft 365 peut être ajouté à l’un des trois groupes SharePoint (propriétaires, membres ou visiteurs) pour accorder des autorisations aux personnes sur le site.
 
 ## <a name="distribution-groups"></a>Groupes de distribution
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a069e3dd3ef99f094f96318277e077c56b7cb974
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: bc16b601181775b3b12f1db0fcceecaa2bca33a8
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766667"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474088"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>Configurer et valider des exclusions pour Microsoft Defender pour le point de terminaison sur macOS
 
@@ -53,7 +53,7 @@ Le tableau suivant indique les types d’exclusion pris en charge par Defender p
 Exclusion|Définition|Exemples
 ---|---|---
 Extension de fichier|Tous les fichiers avec l’extension, n’importe où sur l’ordinateur|`.test`
-File|Un fichier spécifique identifié par le chemin d’accès complet|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`
+Fichier|Un fichier spécifique identifié par le chemin d’accès complet|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`
 Folder|Tous les fichiers sous le dossier spécifié (de manière récursive)|`/var/log/` <p> `/var/*/`
 Processus|Un processus spécifique (spécifié par le chemin d’accès complet ou le nom de fichier) et tous les fichiers ouverts par celui-ci|`/bin/cat` <p> `cat` <p> `c?t`
 
@@ -77,7 +77,7 @@ Pour plus d’informations sur la configuration des exclusions à partir de JAMF
 
 Ouvrez l’application Defender for Endpoint et accédez à **Gérer les paramètres** \> Ajouter ou supprimer une **exclusion...**, comme illustré dans la capture d’écran suivante :
 
-![Capture d’écran Gérer les exclusions.](images/mdatp-37-exclusions.png)
+:::image type="content" source="images/mdatp-37-exclusions.png" alt-text="Page Gérer les exclusions" lightbox="images/mdatp-37-exclusions.png":::
 
 Sélectionnez le type d’exclusion que vous souhaitez ajouter et suivez les invites.
 

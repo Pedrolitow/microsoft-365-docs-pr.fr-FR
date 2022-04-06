@@ -20,12 +20,12 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: Découvrez les paramètres de partage d’invités disponibles dans Microsoft 365 qui peuvent affecter le partage avec les personnes extérieures à votre organisation.
-ms.openlocfilehash: 2b6aac7a02c6c7c5feda041a2b06147c67dfa285
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 9cb6eb52c523bba624af5f830c3c34c4edaf86b8
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316532"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594837"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Informations de référence sur les paramètres de partage d’invités de Microsoft 365
 
@@ -149,7 +149,7 @@ Ces paramètres affectent tous les sites au sein de l’organisation. Ils n’af
 
 Étant donné que OneDrive est une hiérarchie de sites au sein de SharePoint, les paramètres de partage au niveau de l’organisation affectent directement OneDrive tout comme les autres sites SharePoint.
 
-**Navigation :** Centre d’administration SharePoint > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Partage**</a>
+**Navigation :** Centre d'administration SharePoint > **Stratégies** > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Partage**</a>
 
 ![Capture d’écran des paramètres de partage SharePoint au niveau de l’organisation.](../media/external-sharing.png)
 
@@ -160,7 +160,7 @@ Ces paramètres affectent tous les sites au sein de l’organisation. Ils n’af
 
 ### <a name="sharepoint-and-onedrive-advanced-sharing-settings"></a>Paramètres de partage avancé de SharePoint et OneDrive
 
-**Navigation :** Centre d’administration SharePoint > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Partage**</a>
+**Navigation :** Centre d'administration SharePoint > **Stratégies** > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Partage**</a>
 
 ![Capture d’écran des paramètres de partage supplémentaires au niveau de l’organisation dans SharePoint.](../media/external-sharing.png)
 
@@ -177,7 +177,7 @@ Ces paramètres affectent tous les sites au sein de l’organisation. Ils n’af
 
 Lorsque des fichiers et dossiers sont partagés sur SharePoint et OneDrive, les destinataires du partage reçoivent un lien contenant des autorisations sur ces fichiers ou dossiers, au lieu de se voir accorder un accès direct à ceux-ci. Plusieurs types de liens sont disponibles et vous pouvez choisir le type de lien par défaut présenté aux utilisateurs qui partagent un fichier ou dossier. Vous pouvez également définir des autorisations et des options d’expiration pour les liens *Tout le monde*.
 
-**Navigation :** Centre d’administration SharePoint > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Partage**</a>
+**Navigation :** Centre d'administration SharePoint > **Stratégies** > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Partage**</a>
 
 ![Capture d’écran des paramètres de partage de fichiers et dossiers au niveau de l’organisation dans SharePoint.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
