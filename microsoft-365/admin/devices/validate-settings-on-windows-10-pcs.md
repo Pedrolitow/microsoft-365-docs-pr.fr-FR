@@ -27,21 +27,21 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Découvrez comment vérifier que les paramètres Microsoft 365 protection des applications pour les entreprises ont pris effet sur les appareils Windows 10 utilisateurs.
-ms.openlocfilehash: be25acb8414705c48a8763a0530ec2a70565de83
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 47c220b36050376d1eddf7d83435f175e00f88cb
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313592"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64633280"
 ---
 # <a name="validate-device-protection-settings-for-windows-10-pcs"></a>Valider les paramètres de protection des appareils pour Windows 10 PC
 
 > [!NOTE]
-> Microsoft Defender for Business est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Cette offre offre des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender pour les entreprises](../../security/defender-business/mdb-overview.md).
+> Microsoft Defender pour les PME est en Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Cette offre offre des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender pour les entreprises](../../security/defender-business/mdb-overview.md).
 
 ## <a name="verify-that-windows-10-device-policies-are-set"></a>Vérifier que les Windows 10 d’appareil sont définies
 
-Après avoir [installé les stratégies d’appareil](protection-settings-for-windows-10-pcs.md), l’application de la stratégie sur les appareils des utilisateurs peut prendre jusqu’à quelques heures. Vous pouvez confirmer que les stratégies ont pris effet en regardant différents écrans Windows Paramètres sur les appareils des utilisateurs. Étant donné que les utilisateurs ne pourront pas modifier les paramètres Windows Update et Antivirus Microsoft Defender sur leurs appareils Windows 10, de nombreuses options seront grisées.
+Après avoir [installé les stratégies d’appareil](../../business-premium/m365bp-protection-settings-for-windows-10-pcs.md), l’application de la stratégie sur les appareils des utilisateurs peut prendre jusqu’à quelques heures. Vous pouvez confirmer que les stratégies ont pris effet en regardant différents écrans Windows Paramètres sur les appareils des utilisateurs. Étant donné que les utilisateurs ne pourront pas modifier les paramètres Windows Update et Antivirus Microsoft Defender sur leurs appareils Windows 10, de nombreuses options seront grisées.
   
 1. Go to **Paramètres** \> **Update &amp; security** \> **Windows Update** \> **Restart options** and confirm that all settings are grayed out. 
     
@@ -63,8 +63,9 @@ Après avoir [installé les stratégies d’appareil](protection-settings-for-wi
     
     ![Les paramètres de protection contre les virus et les menaces sont grisés.](../../media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
   
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
-[Microsoft 365 documentation et ressources pour les entreprises](/admin)\
-[Définir des configurations d’appareil Windows 10 10 méthodes PCsTop](protection-settings-for-windows-10-pcs.md)
- [pour sécuriser les Microsoft 365 pour les entreprises](../security-and-compliance/secure-your-business-data.md)
+[Microsoft 365 documentation et ressources pour les entreprises](/admin)
+
+[Définir des configurations d’appareil Windows 10 10 méthodes PCsTop](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md)
+ [pour sécuriser les Microsoft 365 pour les entreprises](../../admin/security-and-compliance/secure-your-business-data.md)

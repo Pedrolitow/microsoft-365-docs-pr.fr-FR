@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, obtenez de l’aide pour résoudre les problèmes et les messages d’erreur.
-ms.openlocfilehash: 1bd98a90af19d60aba2e0891c3f993e77523a12c
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 24f282420bb69188106178cefc6fb89968f4fcf6
+ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64632358"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64645031"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>Résoudre les problèmes et les messages d’erreur dans Microsoft 365 Lighthouse
 
@@ -54,7 +54,7 @@ Cet article décrit les messages d’erreur et les problèmes que vous pouvez re
 **Cause :** Les locataires de vos clients ne répondent pas aux critères suivants :
 
   - Doit avoir un accès délégué pour que le fournisseur de services gérés (MSP) puisse gérer le client*
-  - Doit avoir au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3 ou une licence Windows 365 Affaires licence
+  - Doit avoir au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3 ou Windows 365 Affaires licence
   - Ne doit pas avoir plus de 1 000 utilisateurs sous licence 
 
 **Résolution :** Le tableau suivant décrit les différents statuts de client qui nécessitent une action et explique comment les résoudre.
@@ -137,4 +137,4 @@ Si les données n’apparaissent toujours pas dans les pages de conformité des 
 
 [Problèmes connus avec Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
-[Obtenir de l’aide et du support Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (article)
+[Obtenir de l’aide et du support Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (article)

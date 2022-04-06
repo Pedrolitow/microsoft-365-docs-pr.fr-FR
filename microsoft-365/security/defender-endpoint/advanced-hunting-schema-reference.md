@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: 290d302f815de38c4cd84f417118205ed6504fe2
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 2e45a4ae78d0beb9bc57b72a59b9cf1376ac7da7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934260"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468344"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Comprendre le schéma de recherche avancé dans Microsoft Defender pour point de terminaison
 
@@ -39,16 +39,16 @@ Le [schéma de recherche](advanced-hunting-overview.md) avancée est composé de
 
 Lors de la construction de requêtes, utilisez la référence de schéma intégrée pour obtenir rapidement les informations suivantes sur chaque table du schéma :
 
-- **Description des tableaux**: type de données contenues dans la table et source de ces données.
-- **Colonnes**: toutes les colonnes du tableau.
-- **Types d’action**: valeurs possibles dans la `ActionType` colonne représentant les types d’événements pris en charge par le tableau. Cette information est fournie uniquement pour les tables qui contiennent des informations sur les événements.
-- **Exemple de requête**: exemples de requêtes qui présentent la façon dont la table peut être utilisée.
+- **Description des tableaux** : type de données contenues dans la table et source de ces données.
+- **Colonnes** : toutes les colonnes du tableau.
+- **Types d’action** : valeurs possibles dans la colonne `ActionType` représentant les types d’événements pris en charge par le tableau. Ces valeurs sont fournies uniquement pour les tables qui contiennent des informations sur les événements.
+- **Exemple de requête** : exemples de requêtes qui présentent la façon dont la table peut être utilisée.
 
 ### <a name="access-the-schema-reference"></a>Accéder à la référence de schéma
 
-Pour accéder rapidement à la  référence de schéma, sélectionnez l’action de référence Afficher en regard du nom de la table dans la représentation de schéma. Vous pouvez également sélectionner une **référence de schéma** pour rechercher une table.
+Pour accéder rapidement à la référence de schéma, sélectionnez **l’action de** référence Afficher en regard du nom de la table dans la représentation de schéma. Vous pouvez également sélectionner une **référence de schéma** pour rechercher une table.
 
-![Image montrant comment accéder à la référence de schéma dans le portail.](images/ah-reference.png)
+:::image type="content" source="images/ah-reference.png" alt-text="Page De recherche avancée" lightbox="images/ah-reference.png":::
 
 ## <a name="learn-the-schema-tables"></a>Découvrir les tableaux de schéma
 
@@ -81,11 +81,11 @@ Les noms de table et de colonne sont également répertoriés dans le portail Mi
 |
 
 > [!TIP]
-> Utilisez la recherche avancée dans [Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) pour la recherche de menaces à l’aide des données de Defender pour endpoint, Microsoft Defender pour Office 365, Microsoft Defender pour les applications cloud et Microsoft Defender pour l’identité. [Activer Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
+> Utilisez le recherche avancée [sur Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) pour la recherche de menaces à l’aide des données de Defender pour endpoint, Microsoft Defender pour Office 365, Microsoft Defender pour les applications cloud et Microsoft Defender pour l’identité. [Activer Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
 
-En savoir plus sur la façon de déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender dans Migrer des requêtes de recherche avancée à partir de [Microsoft Defender pour point de terminaison.](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
+En savoir plus sur la façon de déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender dans Migrer des requêtes de recherche avancée à partir de [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)

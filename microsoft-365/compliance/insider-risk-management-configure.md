@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: cdd368e7e78458067b9f363d41f7931ac5a2c0cd
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 05375332df6542cd87e986bba68ef7c6753f8e36
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754204"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64637959"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -36,9 +36,9 @@ Pour plus d’informations sur la façon dont les stratégies de risque internes
 
 Avant de commencer à gérer les risques internes, vous devez confirmer votre abonnement [Microsoft 365 et](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) les modules. Pour accéder à la gestion des risques internes et l’utiliser, votre organisation doit avoir l’un des abonnements ou modules suivants :
 
-- Microsoft 365 E5/A5/G5 (version payante ou d’essai)
-- Microsoft 365 E3/A3/G3 + le module Microsoft 365 E5 conformité Microsoft 365 E5/A5/G5
-- Microsoft 365 E3/A3/G3 + le module Microsoft 365 E5/A5/G5 Gestion des risques internes
+- Microsoft 365 E5/A5/F5/G5 (version payante ou d’essai)
+- Microsoft 365 E3/A3/F3/G3 + le module de conformité Microsoft 365 E5/A5/F5/G5
+- Microsoft 365 E3/A3/F3/G3 + le module Microsoft 365 E5/A5/F5/G5 Gestion des risques internes
 - Abonnement Office 365 E3 + Enterprise Mobility and Security E3 + le module complémentaire Microsoft 365 E5 Conformité
 
 L’une des licences ci-dessus doit être attribuée aux utilisateurs inclus dans les stratégies de gestion des risques internes.
@@ -221,13 +221,13 @@ La gestion des risques internes prend en charge l’importation de données util
 
 Pour obtenir [des](import-physical-badging-data.md) instructions pas à pas sur la configuration du connecteur de badging physique pour votre organisation, consultez l’article Configurer un connecteur pour importer des données de mauvaise gestion physiques. Une fois que vous avez configuré le connecteur, revenir à ces étapes de configuration.
 
-### <a name="configure-microsoft-defender-for-endpoint-optional"></a>Configurer Microsoft Defender pour le point de terminaison (facultatif)
+### <a name="configure-microsoft-defender-for-endpoint-optional"></a>Configurer Microsoft Defender pour point de terminaison (facultatif)
 
 [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) est une plateforme de sécurité de point de terminaison d’entreprise conçue pour aider les réseaux d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées. Pour avoir une meilleure visibilité des violations de sécurité dans votre organisation, vous pouvez importer et filtrer les alertes Defender for Endpoint pour les activités utilisées dans les stratégies créées à partir de modèles de stratégie de violation de sécurité de gestion des risques internes.
 
-Si vous créez des stratégies de violation de la sécurité, Microsoft Defender pour point de terminaison doit être configuré dans votre organisation et activer Defender pour le point de terminaison pour l’intégration de la gestion des risques internes dans le Centre de sécurité Defender pour importer les alertes de violation de sécurité. Pour plus d’informations sur les conditions requises, consultez l’article Sur les conditions minimales [requises pour Microsoft Defender pour endpoint](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements) .
+Si vous créez des stratégies de violation de la sécurité, vous devez avoir configuré Microsoft Defender pour point de terminaison dans votre organisation et activer Defender pour endpoint pour l’intégration de la gestion des risques internes dans le Centre de sécurité Defender pour importer les alertes de violation de sécurité. Pour plus d’informations sur les conditions requises, [voir la](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements) Microsoft Defender pour point de terminaison’article.
 
-Consultez l’article Configurer les fonctionnalités avancées dans [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) pour obtenir des instructions pas à pas pour configurer Defender pour Endpoint pour l’intégration de la gestion des risques internes. Une fois que vous avez configuré Microsoft Defender pour le point de terminaison, revenir à ces étapes de configuration.
+Consultez l’article Configurer les fonctionnalités avancées dans [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) pour obtenir des instructions pas à pas pour configurer Defender pour Endpoint pour l’intégration de la gestion des risques internes. Une fois que vous avez configuré le Microsoft Defender pour point de terminaison, revenir à ces étapes de configuration.
 
 ## <a name="step-5-required-configure-insider-risk-settings"></a>Étape 5 (obligatoire) : configurer les paramètres des risques internes
 
@@ -247,7 +247,7 @@ Avant de configurer une stratégie, définissez les paramètres de risque intern
     - [Exclusions de types de fichiers](insider-risk-management-settings.md#file-type-exclusions)
     - [Nombre minimal d’événements quotidiens pour améliorer le score d’activité inhabituelle](insider-risk-management-settings.md#minimum-number-of-daily-events-to-boost-score-for-unusual-activity)
     - [Niveau de volume d’alerte](insider-risk-management-settings.md#alert-volume)
-    - [État d’alerte de Microsoft Defender pour point de terminaison](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
+    - [Microsoft Defender pour point de terminaison’alerte](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [Paramètres de domaine](insider-risk-management-settings.md#domains)
 6. Dans la page **Exporter les alertes**, activez l’exportation des informations d’alerte de risque interne à l’aide des API de gestion Office 365 si nécessaire.
 7. Dans la page **Groupes d’utilisateurs** prioritaires, créez un groupe d’utilisateurs prioritaire et ajoutez des utilisateurs s’ils ne sont pas créés à **l’étape 3**.

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 37eb6edb32c78df7ae23fe7cb52b249f81ca18b3
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 50b22bc5d1cf81754cc690808d67b6026991e296
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682171"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468840"
 ---
 # <a name="asr-rules-deployment-prerequisites"></a>Prérequis pour le déploiement des règles ASR
 
@@ -122,7 +122,7 @@ Certaines règles ne fonctionnent pas correctement si les applications et les sc
 Comme avec toute nouvelle implémentation à grande échelle susceptible d’avoir un impact sur vos opérations métier, il est important d’être méthodique dans la planification et l’implémentation. En raison des fonctionnalités puissantes des règles de protection contre les programmes malveillants dans la prévention des programmes malveillants, une planification et un déploiement attentifs de ces règles sont nécessaires pour s’assurer qu’elles fonctionnent au mieux pour vos flux de travail client uniques. Pour travailler dans votre environnement, vous devez planifier, tester, implémenter et mettre en œuvre les règles de la asr avec soin.  
 
 > [!div class="mx-imgBorder"]
-> ![Phases de déploiement des règles asr](images/asr-rules-deployment-phases.png)
+> :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="Phases de déploiement des règles asr" lightbox="images/asr-rules-deployment-phases.png":::
 
 >[!Note]
 >Pour les clients qui utilisent un système HIPS non Microsoft et qui sont en transition vers microsoft Defender pour les règles de réduction de la surface d’attaque du point de terminaison : Microsoft recommande aux clients d’exécuter leur solution HIPS côte à côte avec leur déploiement de règles de réduction de la surface d’attaque jusqu’au moment où vous basculez du mode Audit au mode Blocage. N’oubliez pas que vous devez joindre votre fournisseur d’antivirus tiers pour obtenir des recommandations d’exclusion.  

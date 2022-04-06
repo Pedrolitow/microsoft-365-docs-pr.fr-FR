@@ -3,31 +3,31 @@
   items:
     - name: Vue d’ensemble
       items:
-        - name: Qu’est-ce que Microsoft Defender pour Les Entreprises ?
+        - name: Qu’est-ce Microsoft Defender pour les PME ?
           href: mdb-overview.md
         - name: Processus de configuration simplifié
           href: mdb-simplified-configuration.md
-        - name: Comparer les plans pour les petites et moyennes entreprises
+        - name: Comparer les offres pour les petites et moyennes entreprises
           href: compare-mdb-m365-plans.md
         - name: Intégration à Microsoft 365 Lighthouse
           href: mdb-lighthouse-integration.md
     - name: Prise en main
       items:
-        - name: Obtenir Defender pour les entreprises
+        - name: Obtenir Defender pour les PME
           href: get-defender-business.md
         - name: Utiliser l’Assistant Installation
           href: mdb-use-wizard.md
-        - name: Commencer à utiliser le portail
+        - name: Démarrage l’aide du portail
           href: mdb-get-started.md
         - name: Afficher votre tableau de bord gestion des vulnérabilités tableau de bord
           href: mdb-view-tvm-dashboard.md
-        - name: Essayer des didacticiels et des simulations
+        - name: Essayer des didacticiels et les simulations
           href: mdb-tutorials.md
-    - name: Configurer Et configurer Defender pour les entreprises
+    - name: Installer et configurer Defender pour les PME
       items:
         - name: Vue d’ensemble de la configuration
           href: mdb-setup-configuration.md
-        - name: 'Étape 1 : examiner les conditions requises'
+        - name: 'Étape 1 : passer en revue les exigences'
           href: mdb-requirements.md
         - name: 'Étape 2 : attribuer des rôles et des autorisations'
           href: mdb-roles-permissions.md
@@ -51,7 +51,7 @@
       items:
         - name: 'Afficher, modifier et créer des stratégies'
           href: mdb-view-edit-create-policies.md
-        - name: Ordre des stratégies
+        - name: Ordre de stratégie
           href: mdb-policy-order.md
         - name: Paramètres de protection nouvelle génération
           href: mdb-next-gen-configuration-settings.md
@@ -69,11 +69,11 @@
       items:
         - name: Comment obtenir de l’aide ou contacter le support technique
           href: mdb-get-help.md
-        - name: Questions fréquemment posées
+        - name: Foire aux questions
           href: mdb-faq.yml
         - name: Résolution des problèmes
           href: mdb-troubleshooting.yml
         - name: Microsoft 365 Business Premium
-          href: /microsoft-365/business-premium
+          href: /microsoft-365/business-premium/
         - name: Microsoft 365 Lighthouse
           href: /microsoft-365/lighthouse/m365-lighthouse-overview

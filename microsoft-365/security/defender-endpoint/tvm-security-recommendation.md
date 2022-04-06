@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 57c1909ff54fea6b9151e212f465abb75bab48f8
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e7ff7a98e8550996068686b5b0805ea3a72cd6ae
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325318"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468564"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Recommandations en matière de sécurité : Gestion des menaces et des vulnérabilités
 
@@ -70,7 +70,8 @@ Go to the **Vulnerability management** navigation menu and select **Recommandati
 
 Dans un jour donné en tant qu’administrateur de la sécurité, vous pouvez consulter le tableau de bord [Gestion des menaces et des vulnérabilités](tvm-dashboard-insights.md) pour voir votre [score](tvm-exposure-score.md) d’exposition côte à côte avec votre score de sécurité [Microsoft pour les appareils](tvm-microsoft-secure-score-devices.md). L’objectif **est de réduire** l’exposition de votre organisation contre les  vulnérabilités et d’augmenter la sécurité des appareils de votre organisation afin d’être plus résiliente contre les attaques contre les menaces de cybersécurité. La liste des recommandations de sécurité les plus importantes peut vous aider à atteindre cet objectif.
 
-![Exemple de carte recommandations de sécurité principales, avec quatre recommandations de sécurité.](images/top-security-recommendations350.png)
+:::image type="content" source="images/top-security-recommendations350.png" alt-text="Carte recommandations de sécurité les plus importantes" lightbox="images/top-security-recommendations350.png":::
+
 
 Les principales recommandations en matière de sécurité présentent les opportunités d’amélioration prioritaires en fonction des facteurs importants mentionnés dans la section précédente : menace, probabilité de violation et valeur. La sélection d’une recommandation vous permet d’accès à la page recommandations de sécurité avec plus de détails.
 
@@ -83,7 +84,7 @@ La couleur du graphique **des appareils exposés** change à mesure que la tenda
 > [!NOTE]
 > Menaces et gestion des vulnérabilités affiche les appareils qui étaient utilisés il y a **30** jours. Ceci est différent du reste de Microsoft Defender pour point de terminaison, où si un appareil n’a pas été utilisé pendant plus de 7 jours, il présente l’état « Inactif ».
 
-![Exemple de page d’accueil pour les recommandations de sécurité.](images/tvmsecrec-updated.png)
+:::image type="content" source="images/tvmsecrec-updated.png" alt-text="Page d’accueil pour les recommandations en matière de sécurité" lightbox="images/tvmsecrec-updated.png":::
 
 ### <a name="icons"></a>Icônes
 
@@ -97,7 +98,7 @@ Les icônes utiles peuvent également attirer rapidement votre attention sur :
 
 Sélectionnez la recommandation de sécurité que vous souhaitez examiner ou traiter.
 
-:::image type="content" alt-text="Exemple de page de recommandation de sécurité." source="images/secrec-flyouteolsw.png" lightbox="images/secrec-flyouteolsw.png":::
+:::image type="content" source="images/secrec-flyouteolsw.png" alt-text="Page volante recommandations en matière de sécurité" lightbox="images/secrec-flyouteolsw.png":::
 
 Dans le volant, vous pouvez choisir l’une des options suivantes :
 
@@ -140,7 +141,7 @@ Lorsqu’une exception est créée pour une recommandation, elle n’est plus ac
 
 Sélectionnez une recommandation de sécurité pour la création d’une exception, puis sélectionnez **Options d’exception**.
 
-![Affichage de l’emplacement du bouton « options d’exception » dans un volant de recommandations de sécurité.](images/tvm-exception-options.png)
+:::image type="content" source="images/tvm-exception-options.png" alt-text="Bouton Options d’exception dans le volant de recommandations de sécurité" lightbox="images/tvm-exception-options.png":::
 
 Remplissez le formulaire et soumettez-le. Pour afficher toutes vos exceptions (actuelles et passées), accédez à [la page Correction](tvm-remediation.md) sous le menu Gestion des vulnérabilités des menaces **&** et sélectionnez l’onglet **Exceptions** . En savoir plus sur la création d’une [exception](tvm-exception.md#create-an-exception)
 
@@ -152,7 +153,7 @@ Vous pouvez signaler un faux positif lorsque vous voyez des informations de reco
 
 2. Sélectionnez les trois points en dehors de la recommandation de sécurité que vous souhaitez signaler, puis sélectionnez **Imprécision du rapport**.
 
-    ![Affichage de l’endroit où le bouton « Signaler l’imprécision » se trouve dans un volant de recommandations de sécurité.](images/report-inaccuracy500.png)
+   :::image type="content" source="images/report-inaccuracy500.png" alt-text="Bouton Manque d’imprécision du rapport" lightbox="images/report-inaccuracy500.png":::
 
 3. Dans le volet de menu volant, sélectionnez la catégorie d’imprécision dans le menu déroulant, remplissez votre adresse e-mail et les détails concernant l’imprécision.
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: Obtenez la dernière version de l’isolation matérielle. Empêcher les attaques actuelles et émergentes telles que les attaques ou les liens malveillants de perturber la productivité des employés et la sécurité de l’entreprise.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: da61ee2f5e29501e033ad44bc3fdb04ee2c042f0
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 1a8f752fd05499c9fec0d0c337c9ffee430f154f
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473318"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64638068"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Application Guard pour les Office administrateurs
 
@@ -29,7 +29,7 @@ ms.locfileid: "64473318"
 
 Protection d'application Microsoft Defender for Office (Application Guard for Office) permet d’empêcher les fichiers non fiables d’accéder aux ressources de confiance, afin de préserver la sécurité de votre entreprise contre les attaques nouvelles et émergentes. Cet article présente aux administrateurs la configuration des appareils pour un aperçu d’Application Guard pour Office. Il fournit des informations sur la exigences système et les étapes d’installation pour activer Application Guard Office sur un appareil.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 ### <a name="minimum-hardware-requirements"></a>Configuration matérielle minimum requise
 
@@ -51,7 +51,7 @@ Pour en savoir plus sur Office canaux de mise à jour, voir [Vue d’ensemble](/
 * Microsoft 365 E5 ou Microsoft 365 E5 Sécurité
 
 > [!NOTE]
-> Applications Microsoft 365 pour les grandes entreprises avec la licence basée sur l’appareil n’ont pas accès à Application Guard pour Office.
+> Applications Microsoft 365 pour les grandes entreprises avec l’activation d’ordinateurs partagés ou la gestion des licences basées sur l’appareil n’ont pas accès à Application Guard Office.
 
 ## <a name="deploy-application-guard-for-office"></a>Déployer Application Guard pour Office
 
@@ -186,15 +186,15 @@ Si vous rencontrez des problèmes lors du lancement d’Application Guard pour O
 
 Vous pouvez également envoyer des commentaires à partir de Office si le problème survient lorsque Office documents sont ouverts dans Application Guard. Reportez-vous [au manuel Office Insider pour](https://insider.office.com/handbook) envoyer vos commentaires.
 
-## <a name="integration-with-microsoft-defender-for-endpoint-and-microsoft-defender-for-office-365"></a>Intégration à Microsoft Defender pour Endpoint et Microsoft Defender pour Office 365
+## <a name="integration-with-microsoft-defender-for-endpoint-and-microsoft-defender-for-office-365"></a>Intégration avec Microsoft Defender pour point de terminaison et Microsoft Defender pour Office 365
 
-Application Guard pour Office est intégré à Microsoft Defender for Endpoint pour fournir une surveillance et une alerte sur les activités malveillantes qui se produisent dans l’environnement isolé.
+Application Guard pour les Office est intégré à Microsoft Defender pour point de terminaison pour fournir une surveillance et une alerte sur les activités malveillantes qui se produisent dans l’environnement isolé.
 
-[Coffre Documents dans Microsoft E365 E5](/microsoft-365/security/office-365-security/safe-docs) est une fonctionnalité qui utilise Microsoft Defender pour point de terminaison pour analyser les documents ouverts dans Application Guard pour les Office. Pour une couche de protection supplémentaire, les utilisateurs ne peuvent pas quitter Application Guard Office tant que les résultats de l’analyse n’ont pas été déterminés.
+[Coffre Documents dans Microsoft E365 E5](/microsoft-365/security/office-365-security/safe-docs) est une fonctionnalité qui utilise Microsoft Defender pour point de terminaison pour analyser les documents ouverts dans Application Guard pour Office. Pour une couche de protection supplémentaire, les utilisateurs ne peuvent pas quitter Application Guard Office tant que les résultats de l’analyse n’ont pas été déterminés.
 
-Microsoft Defender pour point de terminaison est une plateforme de sécurité conçue pour aider les réseaux d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées. Pour plus d’informations sur cette plateforme, voir [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp). Pour en savoir plus sur l’intégration d’appareils à cette plateforme, voir Appareils intégrés [au service Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure).
+Microsoft Defender pour point de terminaison est une plateforme de sécurité conçue pour aider les réseaux d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées. Pour plus d’informations sur cette plateforme, voir [Microsoft Defender pour point de terminaison](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp). Pour en savoir plus sur l’intégration d’appareils à cette plateforme, voir Appareils intégrés [Microsoft Defender pour point de terminaison service](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure).
 
-Vous pouvez également configurer Microsoft Defender pour que Office 365 fonctionne avec Defender for Endpoint. Pour plus d’informations, reportez-vous à [Intégrer Defender pour Office 365 avec Microsoft Defender pour Endpoint](integrate-office-365-ti-with-mde.md).
+Vous pouvez également configurer Microsoft Defender pour Office 365 pour qu’il fonctionne avec Defender for Endpoint. Pour plus d’informations, [reportez-vous Defender pour Office 365 intégrer Microsoft Defender pour point de terminaison](integrate-office-365-ti-with-mde.md).
 
 ## <a name="limitations-and-considerations"></a>Limitations et considérations
 
@@ -234,12 +234,12 @@ Lorsque cette heuristique est remplie, Office pré-crée un conteneur Applicatio
 > [!NOTE]
 > Les conseils nécessaires à l’heuristique pour pré-créer le conteneur sont générés par les applications Office qu’un utilisateur les utilise. Si un utilisateur installe Office sur un nouveau système où Application Guard est activé, Office ne pré-crée pas le conteneur avant la première ouverture d’un document nontrus sur le système. L’utilisateur observe que l’ouverture de ce premier fichier dans Application Guard est plus longue.
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 * La sélection de liens web (`http` ou `https`) n’ouvre pas le navigateur.
 * Le paramètre par défaut de la stratégie de protection de copier-coller consiste à activer l’accès du Presse-papiers au texte uniquement.
 * Le paramètre par défaut de la stratégie de protection des types de fichiers non pris en charge consiste à bloquer l’ouverture de types de fichiers non pris en charge non pris en charge non chiffrés qui sont chiffrés ou dont la gestion des droits de l’information (IRM) est définie. Cela inclut les fichiers qui ont des étiquettes Protection des données Microsoft confidentialité à l’aide du chiffrement (confidentiel ou hautement confidentiel).
 * Les fichiers CSV et HTML ne sont pas pris en charge pour le moment.
 * Application Guard pour Office ne fonctionne actuellement pas avec les volumes compressés NTFS. Si vous voyez une erreur « ERROR_VIRTUAL_DISK_LIMITATION » veuillez essayer de décompresser le volume.
-* Les mises à jour de .NET peuvent entraîner l’échec de l’ouverture des fichiers dans Application Guard. Pour contourner ce cas de défaillance, les utilisateurs peuvent redémarrer leur appareil. En savoir plus sur le problème lors de la réception d’un message d’erreur lors de la tentative d’ouverture Protection d'application Windows Defender [ou Windows bac à sable](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
+* Les mises à jour de .NET peuvent entraîner l’échec de l’ouverture des fichiers dans Application Guard. Pour contourner ce cas de défaillance, les utilisateurs peuvent redémarrer leur appareil. En savoir plus sur le problème lors de la réception d’un message d’erreur lors de la tentative [d’ouverture Protection d'application Windows Defender ou Bac à sable Windows](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
 * Consultez [les questions fréquemment posées : Protection d'application Microsoft Defender pour plus d’informations.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 

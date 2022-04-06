@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Les administrateurs peuvent apprendre à créer des charges utiles personnalisées pour la formation à la simulation d’attaques dans Microsoft Defender Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: d670236aa81f4b5086263a75bbeceb8ca7e1e25f
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8aa81a1940e564e9877af6a1848ff439aea58d8e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679761"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468498"
 ---
 # <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>Créer des charges utiles personnalisées pour la formation à la simulation d’attaques dans Defender Office 365
 
@@ -147,7 +147,7 @@ Dans la page **Configurer la** charge utile, il est temps de créer votre charge
       - **Nom d’insertion** : la valeur ajoutée dans le corps du message est `${userName}`.
       - **Insérer un** e-mail : la valeur ajoutée dans le corps du message est `${emailAddress}`.
 
-      ![La section Message électronique de la page Configurer la charge utile dans l’Assistant Création de la charge utile dans la formation sur la simulation d’attaque dans Microsoft Defender Office 365.](../../media/attack-sim-training-payloads-configure-payload-email-message.png)
+      :::image type="content" source="../../media/attack-sim-training-payloads-configure-payload-email-message.png" alt-text="La section Message électronique de la page Configurer la charge utile dans l’Assistant Création de la charge utile dans la formation sur la simulation d’attaque dans Microsoft Defender Office 365" lightbox="../../media/attack-sim-training-payloads-configure-payload-email-message.png":::
 
       **Contrôle de lien de** hameçonnage : ce contrôle est disponible uniquement si vous avez sélectionné la recherche d’informations d’identification **, le** lien dans la pièce jointe ou **l’URL** de lecteur sur la page **de technique Sélectionner**. Utilisez ce contrôle pour insérer l’URL que vous avez précédemment sélectionnée dans la section Lien **de hameçonnage** .
 
@@ -204,7 +204,7 @@ Dans la page **Ajouter des indicateurs** , cliquez **sur Ajouter un indicateur**
 
   Si vous sélectionnez l’objet du message électronique ou le corps du message comme emplacement pour l’indicateur, un bouton Sélectionner un texte est disponible. Cliquez sur ce bouton pour sélectionner le texte dans l’objet ou le corps du message où vous souhaitez que l’indicateur apparaisse. Lorsque vous avez terminé, cliquez sur **Sélectionner**.
 
-  ![Emplacement du texte sélectionné dans le corps du message à ajouter à un indicateur dans l’Assistant Création de la charge utile dans la formation sur la simulation d’attaque.](../../media/attack-sim-training-payloads-add-indicators-select-location.png)
+  :::image type="content" source="../../media/attack-sim-training-payloads-add-indicators-select-location.png" alt-text="Emplacement du texte sélectionné dans le corps du message à ajouter à un indicateur dans l’Assistant Création de la charge utile dans la formation sur la simulation d’attaque" lightbox="../../media/attack-sim-training-payloads-add-indicators-select-location.png":::
 
   - **Description de l’indicateur** : vous pouvez accepter la description par défaut de l’indicateur ou la personnaliser.
 
@@ -232,7 +232,7 @@ Dans la page principale **de la** charge utile de révision, vous pouvez sélect
 
 Lorsque vous avez terminé, cliquez sur **Envoyer**. Dans la page de confirmation qui s’affiche, cliquez sur **Terminé**.
 
-![Examinez la page de charge utile dans la formation sur la simulation d’attaques Microsoft 365 Defender portail.](../../media/attack-sim-training-payloads-review-payload.png)
+:::image type="content" source="../../media/attack-sim-training-payloads-review-payload.png" alt-text="Page Examiner la charge utile dans la formation sur la simulation d’attaques dans Microsoft 365 Defender web" lightbox="../../media/attack-sim-training-payloads-review-payload.png":::
 
 > [!IMPORTANT]
 > Les charges utiles que vous avez créées auront la valeur **Client** pour la **propriété Source** . Lorsque vous créez des simulations et sélectionnez des charges utiles, veillez à ne pas filtrer le client de valeur **source****.**

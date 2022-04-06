@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis
-description: En savoir plus sur les exigences et fonctionnalités de Microsoft Defender pour endpoint pour le gouvernement des États-Unis disponibles
-keywords: government, gcc, high, requirements, capabilities, defender, Microsoft Defender for Endpoint, endpoint, dod
+description: En savoir plus sur les Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis et les fonctionnalités disponibles
+keywords: government, gcc, high, requirements, capabilities, defender, Microsoft Defender pour point de terminaison, endpoint, dod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 77160c44a3f0eda44e68c43c91aeddc169de24e1
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: b6c9594112e347439945d3c21f61f9272edb935f
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475298"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507364"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis
 
@@ -29,7 +29,7 @@ ms.locfileid: "64475298"
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Microsoft Defender pour le point de terminaison pour les clients du gouvernement des États-Unis, intégré à l’environnement Azure US Government, utilise les mêmes technologies sous-jacentes que Defender pour endpoint dans Azure Commercial.
+Microsoft Defender pour point de terminaison pour les clients du gouvernement américain, intégrés dans l’environnement Azure US Government, utilisent les mêmes technologies sous-jacentes que Defender for Endpoint dans Azure Commercial.
 
 Cette offre est disponible pour les clients Cloud de la communauté du secteur public, Cloud de la communauté du secteur public High et DoD et est basée sur les mêmes prévention, détection, examen et correction que la version commerciale. Toutefois, il existe certaines différences dans la disponibilité des fonctionnalités de cette offre.
 
@@ -38,7 +38,7 @@ Cette offre est disponible pour les clients Cloud de la communauté du secteur p
 
 ## <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
-Microsoft Defender pour le point de terminaison pour les clients du gouvernement des États-Unis nécessite l’une des offres de licence en volume Microsoft suivantes :
+Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis nécessite l’une des offres de licence en volume Microsoft suivantes :
 
 ### <a name="desktop-licensing"></a>Licences de bureau
 
@@ -50,7 +50,7 @@ Microsoft Defender pour le point de terminaison pour les clients du gouvernement
 |---|---|---|
 |Microsoft 365 Cloud de la communauté du secteur public G5|Microsoft 365 E5 pour Cloud de la communauté du secteur public High|Microsoft 365 G5 pour DOD|
 |Microsoft 365 sécurité G5 Cloud de la communauté du secteur public|Microsoft 365 sécurité G5 pour Cloud de la communauté du secteur public élevé|Microsoft 365 G5 pour DOD|
-|Microsoft Defender pour le point de terminaison - Cloud de la communauté du secteur public|Microsoft Defender for Endpoint for Cloud de la communauté du secteur public High|Microsoft Defender pour point de terminaison pour DOD|
+|Microsoft Defender pour point de terminaison - Cloud de la communauté du secteur public|Microsoft Defender pour point de terminaison pour Cloud de la communauté du secteur public High|Microsoft Defender pour point de terminaison pour DOD|
 |Windows 10 Entreprise E5 Cloud de la communauté du secteur public|Windows 10 Entreprise E5 pour Cloud de la communauté du secteur public élevé|Windows 10 Entreprise E5 pour DOD|
 |
 
@@ -62,13 +62,13 @@ Microsoft Defender pour le point de terminaison pour les clients du gouvernement
 
 |GCC|GCC High|DoD|
 |---|---|---|
-|Microsoft Defender pour Endpoint Server Cloud de la communauté du secteur public|Microsoft Defender for Endpoint Server for Cloud de la communauté du secteur public High|Microsoft Defender pour Endpoint Server pour DOD|
+|Microsoft Defender pour point de terminaison Server Cloud de la communauté du secteur public|Microsoft Defender pour point de terminaison Server for Cloud de la communauté du secteur public High|Microsoft Defender pour point de terminaison Server for DOD|
 |Microsoft Defender pour les serveurs|Microsoft Defender pour les serveurs - Gouvernement|Microsoft Defender pour les serveurs - Gouvernement|
 |
 
 ## <a name="portal-urls"></a>URL du portail
 
-Les URL du portail Microsoft Defender pour les points de terminaison pour les clients du gouvernement des États-Unis sont les suivantes :
+Les URL du portail Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis sont les suivantes :
 
 <br />
 
@@ -81,7 +81,7 @@ Les URL du portail Microsoft Defender pour les points de terminaison pour les cl
 |DoD|<https://security.microsoft.us>|
 |
 > [!NOTE]
-> Si vous êtes un client Cloud de la communauté du secteur public et que vous êtes en train de passer de Microsoft Defender for Endpoint commercial à Cloud de la communauté du secteur public, https://transition.security.microsoft.com utilisez pour accéder à vos données commerciales Microsoft Defender for Endpoint.
+> Si vous êtes un Cloud de la communauté du secteur public client et que vous êtes en train de passer de Microsoft Defender pour point de terminaison commercial à Cloud de la communauté du secteur public, https://transition.security.microsoft.com utilisez pour accéder à votre Microsoft Defender pour point de terminaison données commerciales.
 
 ## <a name="endpoint-versions"></a>Versions des points de terminaison
 
@@ -152,9 +152,10 @@ Si un proxy ou un pare-feu bloque tout le trafic par défaut et n'autorise le pa
 
 La feuille de calcul téléchargeable suivante répertorie les services et les URL associées à qui votre réseau doit pouvoir se connecter. Vérifiez qu’il n’existe aucune règle de pare-feu ou de filtrage réseau qui refuserait l’accès  à ces URL ou créerait une règle d’autoriser spécifiquement pour eux.
 
-Liste de feuilles de calcul de domaines|Description
-:-----|:-----
-:::image type="content" source="images/mdatp-urls.png" alt-text="Feuille de calcul URL Microsoft Defender pour les points de terminaison" lightbox="images/mdatp-urls.png":::|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
+|Liste de feuilles de calcul de domaines| Description|
+|---|---|
+|Microsoft Defender pour point de terminaison URL pour les clients commerciaux| Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation pour les clients commerciaux. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Microsoft Defender pour point de terminaison URL pour Gov/Cloud de la communauté du secteur public/DoD | Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation pour les clients Gov/Cloud de la communauté du secteur public/DoD. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 Pour plus d’informations, voir [Configurer les paramètres de proxy d’appareil et de connectivité Internet](configure-proxy-internet.md).
 
@@ -196,7 +197,7 @@ Voici les lacunes connues :
 |Filtrage du contenu web|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
   
 
-Voici les fonctionnalités et lacunes connues pour la défense contre les menaces mobiles [(Microsoft Defender pour point de terminaison sur Android & iOS)](mtd.md) :
+Voici les fonctionnalités et lacunes connues pour la protection contre les menaces mobiles [(Microsoft Defender pour point de terminaison sur Android & iOS)](mtd.md) :
 
 <br />
 

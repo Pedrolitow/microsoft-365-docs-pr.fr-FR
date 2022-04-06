@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6abd2c26f8557277b4c1b13e5189a42fea9a60f1
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1ea1661a89585d46aa5fc234f6f88be66512c1be
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943387"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468696"
 ---
 # <a name="onboard-windows-devices-using-a-local-script"></a>Intégrer les appareils Windows utilisant un script local
 
@@ -49,15 +49,15 @@ Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/r
 
 1.  Ouvrez le fichier de package de configuration de .zip de groupe (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail :</a>
 
-    1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **Endpoints**  >  **Device Management**  >  **Onboarding**.
+    1. Dans le volet de navigation, sélectionnez **Paramètres** >  **EndpointsDevice** >  **managementOnboarding** > .
 
 
 Consultez le [fichier PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) [ou Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) pour voir les différents chemins d’accès dans le déploiement de Defender for Endpoint.
 
 1. Ouvrez le fichier de package de configuration de .zip de groupe (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail :</a>
-    1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Endpoints** \> **Device Management** \> **Onboarding**.
+    1. Dans le volet de navigation, **sélectionnez Paramètres** \> **intégration de** \> la **gestion** \> des appareils des points **de terminaison**.
     2. Sélectionnez Windows 10 ou Windows 11 comme système d’exploitation.
-    3. Dans le **champ Méthode de** déploiement, sélectionnez Script **local.**
+    3. Dans le **champ Méthode de déploiement** , sélectionnez **Script local**.
     4. Cliquez **sur Télécharger le package** et enregistrez .zip fichier.
 
 2. Extrayez le contenu du package de configuration vers un emplacement sur l’appareil que vous souhaitez intégrer (par exemple, le Bureau). Vous devez avoir un fichier nommé *WindowsDefenderATPLocalOnboardingScript.cmd*.
@@ -66,22 +66,22 @@ Consultez le [fichier PDF](https://download.microsoft.com/download/5/6/0/5609001
    1. Accéder à **Démarrer** et taper **cmd**.
    2. Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
 
-    ![Fenêtre menu Démarrer pointant sur Exécuter en tant qu’administrateur.](images/run-as-admin.png)
+    :::image type="content" source="images/run-as-admin.png" alt-text="La fenêtre menu Démarrer pointant sur Exécuter en tant qu’administrateur" lightbox="images/run-as-admin.png":::
 
 4.  Tapez l’emplacement du fichier de script. Si vous avez copié le fichier sur le Bureau, tapez : *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
 
-5.  Appuyez sur **entrée** ou cliquez sur **OK.**
+5.  Appuyez sur **Entrée** ou cliquez sur **OK**.
 
-Pour plus d’informations sur la façon dont vous pouvez vérifier manuellement que l’appareil est conforme et signale correctement les données de capteur, consultez La procédure de résolution des problèmes d’intégration des points de terminaison [dans Microsoft Defender.](troubleshoot-onboarding.md)
+Pour plus d’informations sur la façon de vérifier manuellement que l’appareil est conforme et signale correctement les données du capteur, consultez La procédure de résolution des problèmes d’intégration des points de [terminaison dans Microsoft Defender](troubleshoot-onboarding.md).
 
 > [!TIP]
-> Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier qu’un appareil est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un point de terminaison [Microsoft Defender pour point de terminaison nouvellement intégré.](run-detection-test.md)
+> Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier qu’un appareil est correctement intégré au service. Pour plus d’informations, voir [Exécuter un test de détection sur un point de terminaison Microsoft Defender pour point de terminaison nouvellement intégré](run-detection-test.md).
 
 ## <a name="configure-sample-collection-settings"></a>Configurer des paramètres de collection d’exemples
 
 Pour chaque appareil, vous pouvez définir une valeur de configuration pour déterminer si des échantillons peuvent être collectés à partir de l’appareil lorsqu’une demande est faite via Microsoft 365 Defender pour soumettre un fichier pour analyse approfondie.
 
-Vous pouvez configurer manuellement le paramètre de partage d’exemples sur l’appareil à l’aide de *regedit* ou en créant et en exécutant *un fichier .reg.*
+Vous pouvez configurer manuellement le paramètre de partage d’exemples sur l’appareil à l’aide de *regedit* ou en créant et en exécutant *un fichier .reg* .
 
 La configuration est définie par le biais de l’entrée de clé de Registre suivante :
 
@@ -100,7 +100,7 @@ La valeur par défaut au cas où la clé de Registre n’existe pas est 1.
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>Exécuter un test de détection pour vérifier l’intégration
 
-Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier qu’un appareil est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un appareil [Microsoft Defender pour point de terminaison nouvellement intégré.](run-detection-test.md)
+Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier qu’un appareil est correctement intégré au service. Pour plus d’informations, voir [Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré](run-detection-test.md).
 
 ## <a name="offboard-devices-using-a-local-script"></a>Hors-carte des appareils à l’aide d’un script local
 
@@ -110,9 +110,9 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 > Les stratégies d’intégration et deboarding ne doivent pas être déployées sur le même appareil en même temps, sinon cela provoquera des collisions imprévisibles.
 
 1. Obtenez le package deboarding à partir <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail :</a>
-    1. Dans le volet de navigation, sélectionnez **le Paramètres** de gestion des appareils \> **endpoints.** \>  \> 
+    1. Dans  le volet de navigation, **sélectionnez** \> Paramètres de gestion des appareils **endpoints** \> \>.
     2. Sélectionnez Windows 10 ou Windows 11 comme système d’exploitation.
-    3. Dans le **champ Méthode de** déploiement, sélectionnez Script **local.**
+    3. Dans le **champ Méthode de déploiement** , sélectionnez **Script local**.
     4. Cliquez **sur Télécharger le package** et enregistrez .zip fichier.
 
 2. Extrayez le contenu du .zip vers un emplacement partagé en lecture seule accessible par les appareils. Vous devez avoir un fichier nommé *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
@@ -121,28 +121,28 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
    1. Accéder à **Démarrer** et taper **cmd**.
    2. Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
 
-        ![Fenêtre menu Démarrer pointant sur Exécuter en tant qu’administrateur.](images/run-as-admin.png)
+      :::image type="content" source="images/run-as-admin.png" alt-text="Le Windows menu Démarrer pointant vers l’option Exécuter en tant qu’administrateur" lightbox="images/run-as-admin.png":::
 
 4. Tapez l’emplacement du fichier de script. Si vous avez copié le fichier sur le Bureau, tapez : *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 
-5. Appuyez sur **entrée** ou cliquez sur **OK.**
+5. Appuyez sur **Entrée** ou cliquez sur **OK**.
 
 > [!IMPORTANT]
 > Laboarding empêche l’appareil d’envoyer des données de capteur au portail, mais les données de l’appareil, y compris la référence aux alertes qu’il a eues, seront conservées pendant 6 mois.
 
 ## <a name="monitor-device-configuration"></a>Surveiller la configuration de l’appareil
 
-Vous pouvez suivre les différentes [](troubleshoot-onboarding.md) étapes de vérification dans la résolution des problèmes d’intégration pour vérifier que le script s’est correctement terminé et que l’agent est en cours d’exécution.
+Vous pouvez suivre les différentes étapes de vérification [](troubleshoot-onboarding.md) dans la résolution des problèmes d’intégration pour vérifier que le script s’est correctement terminé et que l’agent est en cours d’exécution.
 
 La surveillance peut également être effectuée directement sur le portail ou à l’aide des différents outils de déploiement.
 
 ### <a name="monitor-devices-using-the-portal"></a>Surveiller les appareils à l’aide du portail
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
-2. Cliquez sur **Inventaire des appareils.**
+2. Cliquez sur **Inventaire des appareils**.
 3. Vérifiez que les appareils apparaissent.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 - [Intégrer des appareils Windows à l’aide d’une stratégie de groupe](configure-endpoints-gp.md)
 - [Intégrer des appareils Windows à l’aide de Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Intégrer les appareils Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)

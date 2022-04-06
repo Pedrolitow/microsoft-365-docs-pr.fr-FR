@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Découvrez comment examiner et gérer les menaces détectées par les Antivirus Microsoft Defender sur vos Windows 10 mobiles.
-ms.openlocfilehash: e0e0613ad7805b8c4bde221aa2192c788fb75106
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c836554445f56a9a915885d55a4490c6bb5bd1a9
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324282"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64633213"
 ---
 # <a name="review-detected-threats-and-take-action"></a>Examiner les menaces détectées et prendre des mesures
 
@@ -32,7 +32,7 @@ Antivirus Microsoft Defender détecte et protège contre les types de menaces su
 - Tentatives d’hameçonnage
 - Tentatives de vol de données
 
-En tant qu’administrateur/professionnel de l’informatique, vous pouvez afficher des informations sur les détections de menaces sur Windows 10 appareils inscrits dans [Intune](/mem/intune/enrollment/device-enrollment) dans le Centre d'administration Microsoft 365. Vous verrez des informations récapitulatifs, telles que :
+En tant qu’administrateur/professionnel de l’informatique, vous pouvez afficher des informations sur les détections de menaces sur les appareils [Windows 10](/mem/intune/enrollment/device-enrollment) inscrits à Intune dans le Centre d'administration Microsoft 365. Vous verrez des informations récapitulatifs, telles que :
 
 - Nombre d’appareils qui ont besoin d’une protection antivirus
 - Nombre d’appareils non conformes aux stratégies de sécurité
@@ -58,7 +58,7 @@ La procédure suivante s’applique aux clients qui ont Microsoft 365 Business P
 
 ## <a name="manage-threat-detections-on-the-active-threats-page"></a>Gérer les détections de menaces dans la page **Menaces actives**
 
-La procédure suivante s’applique aux clients qui ont Microsoft 365 Business Premium. [Windows 10 appareils doivent être sécurisés](../setup/secure-win-10-pcs.md) et [inscrits dans Intune](/mem/intune/enrollment/windows-enrollment-methods).
+La procédure suivante s’applique aux clients qui ont Microsoft 365 Business Premium. [Windows 10 appareils doivent être sécurisés](../setup/secure-win-10-pcs.md) et [inscrits Intune](/mem/intune/enrollment/windows-enrollment-methods).
 
 > [!NOTE]
 > La **carte** **Antivirus Microsoft Defender** la page Menaces actives sont déployées par phases, de sorte que vous n’avez peut-être pas un accès immédiat à ces cartes.
@@ -77,8 +77,8 @@ Lorsque vous affichez des détails sur des menaces ou des appareils spécifiques
 
 | Opération | Description |
 |--|--|
-| Configurer la protection | Vos stratégies de protection contre les menaces doivent être configurées. Sélectionnez le lien vers la page de configuration de votre stratégie.<br><br>Vous avez besoin d’aide ? Voir [Gérer la sécurité des appareils avec les stratégies de sécurité des points de terminaison dans Microsoft Intune](/mem/intune/protect/endpoint-security-policy). |
-| Mettre à jour une stratégie | Vos stratégies de protection antivirus et en temps réel doivent être mises à jour ou configurées. Sélectionnez le lien pour aller à la page de configuration de stratégie.<br><br>Vous avez besoin d’aide ? Voir [Gérer la sécurité des appareils avec les stratégies de sécurité des points de terminaison dans Microsoft Intune](/mem/intune/protect/endpoint-security-policy). |
+| Configurer la protection | Vos stratégies de protection contre les menaces doivent être configurées. Sélectionnez le lien vers la page de configuration de votre stratégie.<br><br>Besoin d’aide ? Voir [Gérer la sécurité des appareils avec les stratégies de sécurité des points de terminaison dans Microsoft Intune](/mem/intune/protect/endpoint-security-policy). |
+| Mettre à jour une stratégie | Vos stratégies de protection antivirus et en temps réel doivent être mises à jour ou configurées. Sélectionnez le lien pour aller à la page de configuration de stratégie.<br><br>Besoin d’aide ? Voir [Gérer la sécurité des appareils avec les stratégies de sécurité des points de terminaison dans Microsoft Intune](/mem/intune/protect/endpoint-security-policy). |
 | Exécuter une analyse rapide | Démarre une analyse antivirus rapide sur l’appareil, en se concentrant sur les emplacements courants où les programmes malveillants peuvent être enregistrés, tels que les clés de Registre et les dossiers Windows de démarrage. |
 | Exécuter une analyse complète | Démarre une analyse antivirus complète sur l’appareil, en se concentrant sur les emplacements courants où les programmes malveillants peuvent être enregistrés, y compris chaque fichier et dossier sur l’appareil. Les résultats sont envoyés [à Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
 | Mettre à jour un antivirus | Nécessite que l’appareil obtienne des mises à jour de [l’intelligence de sécurité](https://go.microsoft.com/fwlink/?linkid=2149926) pour la protection antivirus et anti-programme malveillant. |
@@ -86,7 +86,7 @@ Lorsque vous affichez des détails sur des menaces ou des appareils spécifiques
 
 ## <a name="manage-threat-detections-in-microsoft-endpoint-manager"></a>Gérer les détections de menaces dans Microsoft Endpoint Manager
 
-Vous pouvez utiliser Microsoft Endpoint Manager pour gérer les détections de menaces. Windows 10 appareils doivent [être inscrits dans Intune](/mem/intune/enrollment/windows-enrollment-methods) (partie de Microsoft Endpoint Manager).
+Vous pouvez utiliser Microsoft Endpoint Manager pour gérer les détections de menaces. Windows 10 appareils doivent être [inscrits dans Intune](/mem/intune/enrollment/windows-enrollment-methods) (partie de Microsoft Endpoint Manager).
 
 1. Go to the Microsoft Endpoint Manager admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">https://endpoint.microsoft.com</a> and sign in.
 
@@ -105,7 +105,7 @@ Le tableau suivant décrit les actions que vous pouvez voir dans Microsoft Endpo
 | Redémarrer | Force un Windows 10 à redémarrer dans un délai de cinq minutes.<br><br>**IMPORTANT :** Le propriétaire ou l’utilisateur de l’appareil n’est pas averti automatiquement du redémarrage et risque de perdre du travail non annulé. |
 | Analyse rapide | Démarre une analyse antivirus rapide sur l’appareil, en se concentrant sur les emplacements courants où les programmes malveillants peuvent être enregistrés, tels que les clés de Registre et les dossiers Windows de démarrage. Les résultats sont envoyés [à Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
 | Analyse complète | Démarre une analyse antivirus complète sur l’appareil, en se concentrant sur les emplacements courants où les programmes malveillants peuvent être enregistrés, y compris chaque fichier et dossier sur l’appareil. Les résultats sont envoyés [à Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
-| Synchronisation | Nécessite un appareil pour l’enregistrement avec Intune (partie de Microsoft Endpoint Manager). Lorsque l’appareil est connecté, il reçoit les actions ou stratégies en attente attribuées à l’appareil. |
+| Synchronisation | Nécessite qu’un appareil s’y Intune (partie de Microsoft Endpoint Manager). Lorsque l’appareil est connecté, il reçoit les actions ou stratégies en attente attribuées à l’appareil. |
 | Mettre à jour les signatures | Nécessite que l’appareil obtienne des mises à jour de [l’intelligence de sécurité](https://go.microsoft.com/fwlink/?linkid=2149926) pour la protection antivirus et anti-programme malveillant. |
 
 > [!TIP]
@@ -117,6 +117,6 @@ Si vous avez un fichier qui, selon vous, a été manqué ou classé à tort comm
 
 ## <a name="see-also"></a>Voir aussi
 
-[10 principales façons de sécuriser les Microsoft 365 pour les plans d’entreprise](secure-your-business-data.md)
+[10 principales façons de sécuriser les Microsoft 365 pour les plans d’entreprise](../../admin/security-and-compliance/secure-your-business-data.md)
 
-[Vue d’ensemble de Microsoft Defender entreprise](../../security/defender-business/mdb-overview.md) (Defender entreprise est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022)
+[Vue d’Microsoft Defender pour les PME](../../security/defender-business/mdb-overview.md) (Defender for Business est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022)

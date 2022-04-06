@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: "Créer une boîte aux lettres de salle ou de ressource pour que tous les membres de l'organisation puissent réserver la salle ou l'équipement pour des réunions ou des événements à l'aide d'Outlook. "
-ms.openlocfilehash: 38df6be558c3f590e851460f8065712d73dbf4b0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: afd24a2780478718cb74fdd6681d53a905f96b57
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173078"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64633258"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Boîtes aux lettres de salle et de ressource
 
@@ -63,7 +63,7 @@ Pour utiliser les boîtes aux lettres de salle ou de ressource, ouvrez Outlook �
   
 7. Tapez un message décrivant le but et joignez des fichiers si nécessaire.
     
-8. Pour autoriser d'autres personnes à participer en ligne ou par téléphone à la réunion, sélectionnez **Réunion Skype**.
+8. Pour autoriser d’autres personnes à participer en ligne ou par téléphone à la réunion, sélectionnez **Réunion Teams**.
     
 9. Pour vous assurer que la salle, l’équipement et les personnes que vous avez invités sont disponibles, sélectionnez **Assistant Planification** en haut. Sélectionnez ensuite une heure disponible dans le calendrier.
 
@@ -96,7 +96,7 @@ Pour configurer une boîte aux lettres de salle ou d'équipement, rendez-vous da
     
    - **Emplacement** : numéro ou emplacement de la salle dans un bâtiment ou une région.
     
-   - **Numéro de téléphone** : numéro de téléphone de la salle. Celui-ci est différent du numéro de téléphone de la réunion généré lorsque Skype Entreprise est utilisé.
+   - **Numéro de téléphone** : numéro de téléphone de la salle. Celui-ci est différent du numéro de téléphone de la réunion généré lors de l’utilisation de Microsoft Teams.
     
 4. Sélectionnez **Ajouter**.
     

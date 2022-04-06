@@ -17,22 +17,22 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés( MSP), découvrez comment les Microsoft 365 Lighthouse peuvent vous aider à sécuriser et gérer les clients dans un seul emplacement.
-ms.openlocfilehash: 88b6a3b1afff0905458f5ade7e4e91136b2c9d38
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: fde2ee27692b1d8fb53d46077cf58deb6d9a0550
+ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494469"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64645053"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Vue d’ensemble Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse est un portail d’administration qui permet aux fournisseurs de services gérés (MSP) de sécuriser et de gérer les appareils, les données et les utilisateurs à grande échelle pour les petites et moyennes entreprises qui utilisent Microsoft 365 Business Premium ou Microsoft 365 E3. 
+Microsoft 365 Lighthouse est un portail d’administration qui permet aux fournisseurs de services gérés (MSP) de sécuriser et de gérer les appareils, les données et les utilisateurs à grande échelle pour les clients de petite et moyenne entreprise (SMB) qui utilisent Microsoft 365 Business Premium, Microsoft 365 E3 ou Windows 365 Affaires. 
 
-Cette méthode simplifie l’intégration de clients Microsoft 365 Business Premium et Microsoft 365 E3 en recommandant des lignes de base de configuration de sécurité adaptées aux clients SMB et en fournissant des vues multi-clients dans tous les environnements clients. Grâce au MSP, les MSP peuvent mettre à l’échelle la gestion de leurs clients, se concentrer sur ce qui est le plus important, trouver et examiner rapidement les risques, et prendre des mesures pour mettre leurs clients dans un état sain et sécurisé.
+Cette méthode simplifie l’intégration des clients Microsoft 365 Business Premium, Microsoft 365 E3 et Windows 365 Affaires en recommandant des bases de référence de configuration de sécurité adaptées aux clients SMB et en fournissant des vues multi-clients dans tous les environnements clients. Grâce au MSP, les MSP peuvent mettre à l’échelle la gestion de leurs clients, se concentrer sur ce qui est le plus important, trouver et examiner rapidement les risques, et prendre des mesures pour mettre leurs clients dans un état sain et sécurisé.
 
-Aucun coût supplémentaire n’est associé à l’utilisation de L’Outil de gestion des Microsoft 365 services et des appareils connectés. Il est disponible pour les MSP inscrits au programme fournisseur de solutions Cloud (CSP) et au service des clients SMB avec un abonnement Microsoft 365 Business Premium ou Microsoft 365 E3 client.
+Aucun coût supplémentaire n’est associé à l’utilisation de L’Outil de gestion des Microsoft 365 services et des appareils connectés. Les MSP inscrits au programme fournisseur de solutions Cloud (CSP) peuvent également servir les clients SMB avec un abonnement Microsoft 365 Business Premium, Microsoft 365 E3 ou Windows 365 Affaires client.
 
-L’utilisation de La boutique par les partenaires du canal CSP Microsoft qui ont des clients qui utilisent Microsoft 365 Business Premium ou Microsoft 365 E3 est prise en charge. Cela inclut les partenaires fournisseurs de solutions Microsoft qui transactent directement avec Microsoft et ceux qui par le biais d’un fournisseur indirect (distributeur). 
+L’utilisation de La boutique par les partenaires du canal CSP Microsoft qui ont des clients qui utilisent Microsoft 365 Business Premium, Microsoft 365 E3 ou Windows 365 Affaires est prise en charge. Cela inclut les partenaires fournisseurs de solutions Microsoft qui transactent directement avec Microsoft et ceux qui par le biais d’un fournisseur indirect (distributeur). 
 
 > [!IMPORTANT] 
 > Pour utiliser le MSP, les MSP et leurs clients doivent répondre aux exigences répertoriées dans [Microsoft 365 Lighthouse requises](m365-lighthouse-requirements.md).     
@@ -62,10 +62,10 @@ Ce dernier permet aux MSP de sécuriser et de gérer Microsoft 365 services et p
 > [!NOTE] 
 > Pour plus d’informations sur la façon de s’inscrire, voir [S’inscrire Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [S’inscrire à Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)  
 [vue d Microsoft 365 Lighthouse de la page Des locataires du](m365-lighthouse-tenants-page-overview.md) client (article)   
 [Microsoft 365 Lighthouse vue d’ensemble de la page de conformité des appareils](m365-lighthouse-device-compliance-page-overview.md) (article)   
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)   
-[Microsoft Defender pour les entreprises](../security/defender-business/index.yml) (page de liens)
+[Microsoft Defender pour les PME](../security/defender-business/index.yml) (page de liens)

@@ -14,14 +14,14 @@ search.appverid: MET150
 description: Correction des menaces
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 49cd5f532f41fd05090592136e28ca2462a9efd6
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 3ba8564ef5ecbd261dc47b2f0a48d6d4d77d620a
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681169"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64638303"
 ---
-# <a name="remediate-malicious-email-delivered-in-office-365"></a>Corriger les messages malveillants remis dans Office 365
+# <a name="remediate-malicious-email-delivered-in-office-365"></a>Corriger les courriers malveillants remis dans Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -42,19 +42,21 @@ Les administrateurs peuvent effectuer les actions requises sur les e-mails, mais
 *Le recherche manuel* se produit lorsque les équipes de sécurité identifient les menaces manuellement à l’aide des fonctionnalités de recherche et de filtrage dans l’Explorateur. La correction manuelle du courrier électronique peut être déclenchée par n’importe quel affichage de *courrier électronique (**programmes malveillants*, hameçonnage ou *tous les* e-mails) une fois que vous avez identifié un ensemble d’e-mails qui doivent être corrigés.
 
 > [!div class="mx-imgBorder"]
-> [![Recherche manuelle dans Office 365'Explorateur de menaces par date.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
+> [![Capture d’écran du hunting manuel dans Office 365'Explorateur de menaces par date.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
 
 Les équipes de sécurité peuvent utiliser l’Explorateur pour sélectionner des e-mails de plusieurs manières :
 
 - Sélectionnez les e-mails à la main : utilisez des filtres dans différents affichages. Sélectionnez jusqu’à 100 e-mails à corriger.
 
-- Sélection de requête : sélectionnez une requête entière à l’aide du bouton **Tout sélectionner en** haut. La même requête est également affichée dans les détails de l’envoi de courrier du centre de messages.
+- Sélection de requête : sélectionnez une requête entière à l’aide du bouton **Tout sélectionner en** haut. La même requête est également affichée dans les détails de l’envoi de courrier du centre de messages. Les clients peuvent envoyer un maximum de 200 000 e-mails à partir de l’Explorateur de menaces.  
 
 - Sélection de requête avec exclusion : parfois, les équipes en charge des opérations de sécurité peuvent vouloir corriger les messages électroniques en sélectionnant une requête entière et en excluant manuellement certains e-mails de la requête. Pour ce faire, un administrateur peut utiliser la  case à cocher Sélectionner tout et faire défiler vers le bas pour exclure manuellement les e-mails. La requête peut contenir un maximum de 1 000 e-mails. Le nombre maximal d’exclusions est de 100.
 
 Une fois que les e-mails sont sélectionnés par le biais de l’Explorateur, vous pouvez commencer la correction en prenant des mesures directes ou en les interrogeant pour une action :
 
-- Approbation directe : lorsque des actions telles que le déplacement vers la  boîte de *réception, le* déplacement vers le courrier *indésirable, le* déplacement vers les éléments supprimés *, la* suppression définitive ou la suppression définitive sont sélectionnées par le personnel de sécurité qui a les autorisations appropriées et que les étapes suivantes de la correction sont suivies, le processus de correction commence à exécuter l’action sélectionnée. Un flyout temporaire affiche la correction en cours.
+- Approbation directe : lorsque des actions telles que le déplacement vers la  boîte de *réception, le* déplacement vers le courrier *indésirable, le* déplacement vers les éléments supprimés *, la* suppression définitive ou la suppression définitive sont sélectionnées par le personnel de sécurité qui a les autorisations appropriées et que les étapes suivantes de la correction sont suivies, le processus de correction commence à exécuter l’action sélectionnée.
+> [!NOTE]
+>Au lancement de la correction, une alerte et un examen sont générés en parallèle. L’alerte s’affiche dans la file d’attente des alertes sous le nom « Action administrative envoyée par un administrateur », ce qui suggère que le personnel de sécurité a pris l’action de correction d’une entité. Il présente des détails tels que le nom de la personne qui a effectué l’action, le lien d’examen de prise en charge, l’heure, etc. Il fonctionne vraiment bien de savoir chaque fois qu’une action de nettoyage telle que la correction est effectuée sur des entités. Toutes ces actions peuvent être trcaked sous **l’onglet Actions &** **Centre**  ->  de **soumissionsHistory** \> (prévisualisation publique).
 
 - Approbation en deux étapes : une action d’ajout à la correction peut être prise par les administrateurs qui ne sont pas autorisés à exécuter l’action ou qui doivent attendre. Dans ce cas, les e-mails ciblés sont ajoutés à un conteneur de correction. Une approbation est nécessaire avant l’exécution de la correction.
 
@@ -63,19 +65,27 @@ Une fois que les e-mails sont sélectionnés par le biais de l’Explorateur, vo
 > [!div class="mx-imgBorder"]
 > [![Courrier électronique avec programme malveillant dans la page « Péred » montrant l’heure de l’exécution de Zap.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-Toutes les corrections (approbation directe ou approbation en deux étapes) qui ont été créées dans l’Explorateur, ainsi que les actions approuvées provenant d’enquêtes automatisées sont affichées dans le Centre de gestion des actions. Accédez à ces éléments via le panneau de navigation gauche sous **Centre** \> **de révision**.
+Toutes les corrections (approbations directes) créées dans l’Explorateur, le recherche avancée ou par le biais d’un examen automatisé sont affichées dans le Centre de gestion des actions. Accédez à ces éléments via le panneau de navigation gauche sous **l’onglet Actions &** **Centre de**  ->  **soumissionsHistory**\>.
 
-> [!div class="mx-imgBorder"]
-> [![Centre de mesures avec une liste des menaces par date et gravité.](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
+Toutes les corrections (approbations directes) qui ont été créées dans l’Explorateur ou le recherche avancée ou par le biais d’un examen automatisé sont affichées dans le Centre de gestion des actions. Accédez à ces éléments via le panneau de navigation gauche sous **l’onglet Actions &** **Centre de**  ->  **soumissionsHistory**\>. 
 
-Le centre de mise en œuvre affiche toutes les actions de correction pour les 30 derniers jours. Les actions entreprises via l’Explorateur sont répertoriées par le nom que l’équipe des opérations de sécurité a fourni lors de la création de la correction. Les actions entreprises par le biais d’enquêtes automatisées ont des titres qui commencent par l’alerte associée qui a déclenché l’enquête, telles que « Cluster de courrier Zap... ».
+Actions manuelles en attente d’approbation à l’aide du processus d’approbation en deux étapes (1. ajouter à la correction par un membre de l’équipe d’opération de sécurité, 2. examinées et approuvées par un autre membre de l’équipe d’opérations de sécurité) sont visibles uniquement dans le centre de contrôle de l’action Defender pour Office 365  \> hérité et non dans les incidents/enquêtes et le centre de l’action unifiée.
 
-Ouvrez n’importe quel élément de correction pour afficher des détails à son sujet, notamment son nom, sa date de création, sa description, sa gravité et son état. Il affiche également les deux onglets suivants.
+> [!NOTE]
+> Approbation en deux étapes : actions disponibles uniquement dans le centre de  contrôle de l’action \> **Office**
 
-- **Onglet Envoi du** courrier : affiche le nombre d’e-mails envoyés par le biais de l’Explorateur de menaces ou d’enquêtes automatisées à corriger. Ces e-mails peuvent être actionnables ou ne peuvent pas être actionnables.
+:::image type="content" source="../../media/microsoft-365-defender-action-center-history.png" alt-text="Le centre de mise en œuvre unifié affiche 30 jours d’actions de correction.":::
+
+Le centre de mise en œuvre unifié affiche les actions de correction pour les 30 derniers jours. Les actions entreprises par le biais de l’Explorateur sont répertoriées par le nom fourni par l’équipe des opérations de sécurité lors de la création de la correction, ainsi que par l’ID d’approbation, ID d’examen. Les actions entreprises via des enquêtes automatisées ont des titres qui commencent par l’alerte associée qui a déclenché l’enquête, telle que le cluster de messagerie *Zap*.
+
+Ouvrez n’importe quel élément de correction pour afficher les détails à son sujet, notamment son nom de correction, son ID d’approbation, l’ID d’examen, la date de création, la description, l’état, la source de l’action, le type d’action, décidé par, état. Il ouvre également un volet latéral avec les détails de l’action, les détails du cluster de messagerie, l’alerte et les détails de l’incident.
+
+- *Ouvrir la page Examen* ouvre une investigation d’administration qui contient moins de détails et d’onglets. Il affiche des détails tels que : alerte associée, entité sélectionnée pour la correction, action entreprise, état de la correction, nombre d’entités, journaux, approbation de l’action. Cette enquête assure le suivi de l’examen effectué manuellement par l’administrateur et contient des détails sur les sélections réalisées par l’administrateur. Par conséquent, il s’agit de l’examen d’action de l’administrateur. Il n’est pas nécessaire d’agir sur l’examen et d’alerter son état déjà approuvé.   
+- *Nombre d’e-mails* Affiche le nombre d’e-mails envoyés via l’Explorateur de menaces. Ces e-mails peuvent être actionnables ou ne peuvent pas être actionnables. 
+- *Journaux d’action* Affiche les détails de l’état de correction comme réussite/échec/ déjà dans la destination
 
   > [!div class="mx-imgBorder"]
-  > [![Centre de actions avec des menaces actionnables et non actionnables.](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
+  > [![Capture d’écran du centre de actions avec des menaces actionnables et non actionnables.](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
 
   - **Actionnable :** les e-mails des emplacements de boîtes aux lettres cloud suivants peuvent être actionnables et déplacés :
     - Boîte de réception
@@ -107,14 +117,8 @@ Ouvrez n’importe quel élément de correction pour afficher des détails à so
 
   Les administrateurs peuvent prendre des mesures sur les e-mails mis en quarantaine si nécessaire, mais ils expireront hors de la quarantaine s’ils ne sont pas purgés manuellement. Par défaut, les e-mails mis en quarantaine en raison de contenus malveillants ne sont pas accessibles par les utilisateurs, de sorte que le personnel de sécurité n’a aucune action à prendre pour se débarrasser des menaces en quarantaine. Si les e-mails sont locaux ou externes, l’utilisateur peut être contacté pour traiter le message suspect. Les administrateurs peuvent également utiliser des outils de sécurité/serveur de messagerie distincts pour la suppression. Ces *e-mails* peuvent être identifiés en appliquant l’emplacement de remise = filtre externe sur site dans l’Explorateur. En cas d’échec ou de abandon du courrier électronique ou de courrier non accessible par les utilisateurs, il n’y aura aucun message électronique à atténuer, car ces messages n’atteignent pas la boîte aux lettres.
 
-  L’image suivante montre l’apparence d’une soumission dans le centre de données. Une correction peut contenir plusieurs soumissions. Si plusieurs actions sont approuvées par le biais d’un examen automatisé, chaque action de cluster de courrier ou de courrier électronique apparaît dans la même correction qu’une soumission différente.
-
-  > [!div class="mx-imgBorder"]
-  > [![Panneau volant de cluster de messagerie ZAP.](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
-
-  Sélectionnez un élément de soumission de courrier pour afficher les détails de cette correction, tels que la requête (lorsque la correction est déclenchée par des enquêtes automatisées ou l’Explorateur par le biais de la sélection d’une requête) et les heures de début et de fin de la correction. Il affiche également une liste des messages qui ont été envoyés pour correction. À mesure que les messages sortent de la période de rétention de l’Explorateur, ils disparaissent de cette liste. La liste affiche également les messages individuels qui sont remédiables.
-
-- **Journaux d’action** : cet onglet affiche les messages corrigés, y compris la date approuvée, l’administrateur qui a approuvé l’action, l’action, l’état et le nombre.
+ 
+- **Journaux d’action** : affiche les messages corrigés, réussis, échoués, déjà à destination.
 
   L’état peut être :
 
@@ -139,5 +143,9 @@ Les actions peuvent uniquement être prises sur les messages dans les dossiers B
 Sélectionnez n’importe quel élément dans le journal des actions pour afficher les détails de correction. Si les détails indiquent « réussite » ou « in trouvé dans la boîte aux lettres », cet élément a déjà été supprimé de la boîte aux lettres. Parfois, il y a une erreur système lors de la correction. Dans ce cas, il est bon de réessayer l’action de correction.
 
 En cas de correction de lots importants de courriers électroniques, exportez les messages envoyés pour correction via l’envoi du courrier, ainsi que les messages corrigés via les journaux d’action. La limite d’exportation est augmentée à 100 000 enregistrements.
+
+ Les administrateurs peuvent prendre des mesures correctives, telles que le déplacement de messages électroniques vers le dossier Courrier indésirable, Boîte de réception ou Éléments supprimés, et supprimer des actions telles que la suppression (ou suppression possible) des pages de recherche avancée.
+
+:::image type="content" source="../../media/microsoft-365-defender-advanced-hunting-actions-pane.png" alt-text="Panneau Actions de recherche avancée avec votre choix d’actions.":::
 
 La correction permet d’atténuer les menaces, de répondre aux messages électroniques suspects et de sécuriser une organisation.

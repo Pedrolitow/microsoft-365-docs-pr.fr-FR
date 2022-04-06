@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à utiliser les automatisations de charge utile (collecte de charge utile) pour collecter et lancer des simulations automatisées pour la formation à la simulation d’attaques dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 13215b76646c5358bc9a043b91d3dbd403818684
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: aa223ab1abda110e32a9b9dc55e9dc76a1983321
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526303"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468432"
 ---
 # <a name="payload-automations-for-attack-simulation-training"></a>Automatisations de charge utile pour la formation à la simulation d’attaques
 
@@ -33,7 +33,7 @@ Pour créer une automatisation de charge utile, faites les étapes suivantes :
 
 2. Sous **l’onglet Automatisations de la charge** utile, sélectionnez Créer ![une icône d’automatisation.](../../media/m365-cc-sc-create-icon.png) **Créez l’automatisation**.
 
-   ![Créez un bouton d’automatisation sous l’onglet Automatisations de la charge utile dans la formation à la simulation d’attaques dans Microsoft 365 Defender portail.](../../media/attack-sim-training-payload-automations-create.png)
+   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="Bouton Créer une simulation sous l’onglet Automatisations de la charge utile dans la formation à la simulation d’attaques dans Microsoft 365 Defender portail" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
 3. L’Assistant Création s’ouvre. Le reste de cet article décrit les pages et les paramètres qu’elles contiennent.
 

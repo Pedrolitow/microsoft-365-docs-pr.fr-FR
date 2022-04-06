@@ -1,5 +1,5 @@
 ---
-title: 'Suivis des menaces : nouveautés et remarques'
+title: Suivis des menaces - Nouveaux et remarquables
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,17 +16,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Découvrez les suivis des menaces, y compris les nouveaux suivis à prendre en compte, pour aider votre organisation à rester au fait des problèmes de sécurité.
+description: Découvrez les suivis des menaces, y compris les nouveaux suivis dignes de mention, pour aider votre organisation à se tenir au courant des problèmes de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9015e94869db88be750ca522173a0dc6d55383e7
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: ba038f94e711470242995a8ea0f082cd6d82dcda
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64632796"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64663245"
 ---
-# <a name="threat-trackers---new-and-noteworthy"></a>Suivis des menaces : nouveautés et remarques
+# <a name="threat-trackers---new-and-noteworthy"></a>Suivis des menaces - Nouveaux et remarquables
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,80 +34,80 @@ ms.locfileid: "64632796"
 - [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Office 365 fonctionnalités d’investigation](office-365-ti.md) et de réponse aux menaces permettent à l’équipe de sécurité de votre organisation de découvrir et de prendre des mesures contre les menaces de cybersécurité. Office 365 fonctionnalités d’investigation et de réponse aux menaces incluent des fonctionnalités de suivi des menaces, notamment des suivis à noter. Lisez cet article pour obtenir une vue d’ensemble de ces nouvelles fonctionnalités et des étapes suivantes.
+Office 365 fonctionnalités [d’investigation et de réponse aux](office-365-ti.md) menaces permettent à l’équipe de sécurité de votre organisation de découvrir et d’agir contre les menaces de cybersécurité. Office 365 fonctionnalités d’investigation et de réponse aux menaces incluent les fonctionnalités de suivi des menaces, notamment les suivis dignes de mention. Lisez cet article pour obtenir une vue d’ensemble de ces nouvelles fonctionnalités et des étapes suivantes.
 
 > [!IMPORTANT]
-> Office 365 Threat Intelligence est désormais Microsoft Defender pour Office 365 Plan 2, ainsi que des fonctionnalités de protection contre les menaces supplémentaires. Pour plus d’informations, [voir Microsoft Defender pour Office 365 plans et tarifs](https://products.office.com/exchange/advance-threat-protection), ainsi que [la description Microsoft Defender pour Office 365 service](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Threat Intelligence est désormais Microsoft Defender pour Office 365 plan 2, ainsi que des fonctionnalités supplémentaires de protection contre les menaces. Pour plus d’informations, consultez [Microsoft Defender pour Office 365 plans et tarifs](https://products.office.com/exchange/advance-threat-protection), ainsi que la [description du service Microsoft Defender pour Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-## <a name="what-are-threat-trackers"></a>Que sont les suivis des menaces ?
+## <a name="what-are-threat-trackers"></a>Qu’est-ce que les traceurs de menaces ?
 
-Les suivis des menaces sont des widgets et des vues informatifs qui vous fournissent des renseignements sur différents problèmes de cybersécurité qui peuvent avoir un impact sur votre entreprise. Par exemple, vous pouvez afficher des informations sur les tendances des campagnes anti-programme malveillant à l’aide des suivis des menaces.
+Les suivis de menaces sont des widgets et des vues informatifs qui vous fournissent des informations sur différents problèmes de cybersécurité susceptibles d’avoir un impact sur votre entreprise. Par exemple, vous pouvez afficher des informations sur les campagnes de logiciels malveillants tendance à l’aide de Suivi des menaces.
 
-:::image type="content" source="../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png" alt-text="Exemple de suivi des menaces affichant les campagnes anti-programme malveillant" lightbox="../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png":::
+:::image type="content" source="../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png" alt-text="Exemple de Suivi des menaces montrant des campagnes de programmes malveillants" lightbox="../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png":::
 
-La plupart des pages de suivi incluent des numéros de tendance mis à jour régulièrement, des widgets pour vous aider à comprendre les problèmes les plus importants ou les plus importants, ainsi qu’un lien rapide dans la colonne **Actions** qui vous permet d’afficher des informations plus détaillées.
+La plupart des pages de suivi incluent des nombres de tendances régulièrement mis à jour, des widgets pour vous aider à comprendre quels problèmes sont les plus importants ou qui ont le plus augmenté, et un lien rapide dans la colonne **Actions** qui vous dirige vers l’Explorateur, où vous pouvez afficher des informations plus détaillées.
 
 :::image type="content" source="../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png" alt-text="Exemple d’informations de campagne dans l’Explorateur" lightbox="../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png":::
 
-Les suivis ne sont que quelques-unes des nombreuses fonctionnalités intéressantes que vous obtenez [avec Microsoft Defender pour Office 365 Plan 2](office-365-ti.md). Les suivis des menaces incluent [des suivis à](#noteworthy-trackers) noter, des [suivis](#trending-trackers) de [tendance, des](#tracked-queries) requêtes suivis et [des requêtes enregistrées](#saved-queries).
+Trackers ne sont que quelques-unes des nombreuses fonctionnalités que vous obtenez avec [Microsoft Defender pour Office 365 Plan 2](office-365-ti.md). Les suivis de menaces incluent [les suivis dignes de mention](#noteworthy-trackers), [les suivis de tendance](#trending-trackers), [les requêtes suivies](#tracked-queries) et [les requêtes enregistrées](#saved-queries).
 
-Pour afficher et utiliser vos suivis des menaces pour votre organisation, ouvrez le portail Microsoft 365 Defender <https://security.microsoft.com>à l’adresse e-mail et & suivi des menaces de **collaboration** \> **.** Pour aller directement à la page suivi **des menaces** , utilisez <https://security.microsoft.com/threattrackerv2>.
+Pour afficher et utiliser vos suivis des menaces pour votre organisation, ouvrez le portail Microsoft 365 Defender à <https://security.microsoft.com>l’adresse **e-mail & collaboration** \> **Threat Tracker**. Pour accéder directement à la page suivi des **menaces** , utilisez <https://security.microsoft.com/threattrackerv2>.
 
 > [!NOTE]
-> Pour utiliser les suivis des menaces, vous devez être administrateur général, administrateur de sécurité ou lecteur de sécurité. Voir [Autorisations dans le portail Microsoft 365 Defender web](permissions-microsoft-365-security-center.md).
+> Pour utiliser Threat Trackers, vous devez être un administrateur général, un administrateur de sécurité ou un lecteur de sécurité. Consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-### <a name="noteworthy-trackers"></a>Suivis notables
+### <a name="noteworthy-trackers"></a>Suivis remarquables
 
-Les suivis sont là où vous trouverez des menaces et des risques de taille et de taille moindre que nous pensons que vous devriez connaître. Les suivis notables vous aident à déterminer si ces problèmes existent dans votre environnement Microsoft 365, ainsi qu’un lien vers des articles (comme celui-ci) qui vous donnent plus de détails sur ce qui se passe et comment ils auront une incidence sur l’utilisation de Office 365 par votre organisation. Qu’il s’agit d’une grande nouvelle menace (par exemple, Wannacry, Petya) ou d’une menace existante qui peut créer de nouveaux défis (comme notre autre élément important - Nemucod), c’est là que vous trouverez les nouveaux éléments importants que vous et votre équipe de sécurité devez examiner et examiner régulièrement.
+Les dispositifs de suivi dignes de mention sont là où vous trouverez des menaces et des risques plus grands et plus petits que nous pensons que vous devriez connaître. Les suivis dignes de mention vous aident à déterminer si ces problèmes existent dans votre environnement Microsoft 365, ainsi qu’un lien vers des articles (comme celui-ci) qui vous donnent plus de détails sur ce qui se passe et sur leur impact sur l’utilisation de Office 365 par votre organisation. Qu’il s’agisse d’une nouvelle menace importante (par exemple, Wannacry, Petya) ou d’une menace existante susceptible de créer de nouveaux défis (comme notre autre élément important inaugural , Nemucod), c’est là que vous trouverez de nouveaux éléments importants que vous et votre équipe de sécurité devez examiner régulièrement.
 
-En règle générale, des suivis notables sont publiés pendant quelques semaines seulement lorsque nous identifions les nouvelles menaces et pensons que vous aurez peut-être besoin de la visibilité supplémentaire que fournit cette fonctionnalité. Une fois que le risque le plus élevé pour une menace est passé, nous allons supprimer cet élément à noter. De cette façon, nous pouvons maintenir la liste à jour et à jour avec d’autres nouveaux éléments pertinents.
+En règle générale, les suivis dignes de mention sont publiés pendant quelques semaines seulement lorsque nous identifions les nouvelles menaces et pensons que vous pourriez avoir besoin de la visibilité supplémentaire que cette fonctionnalité fournit. Une fois que le risque le plus élevé pour une menace est passé, nous allons supprimer cet élément digne de mention. De cette façon, nous pouvons maintenir la liste actualisée et à jour avec d’autres nouveaux éléments pertinents.
 
-### <a name="trending-trackers"></a>Suivis des tendances
+### <a name="trending-trackers"></a>Suivis de tendances
 
-Les suivis de tendance (anciennement appelés campagnes) mettent en évidence les nouvelles menaces reçues dans le courrier électronique de votre organisation au cours de la semaine précédente. L’affichage Suivis des tendances fournit des évaluations dynamiques des menaces de courrier électronique qui ont un impact sur l’environnement Office 365 de votre organisation. Cet affichage montre les tendances des programmes malveillants au niveau du client, en identifiant les familles de programmes malveillants à la hausse, à plat ou à la baisse, en donnant aux administrateurs une meilleure idée des menaces qui nécessitent une attention supplémentaire.
+Les suivis de tendance (anciennement campagnes) mettent en évidence les nouvelles menaces reçues dans le courrier électronique de votre organisation au cours de la semaine dernière. La vue Suivis de tendances fournit des évaluations dynamiques des menaces de messagerie qui affectent l’environnement Office 365 de votre organisation. Cette vue montre les tendances des programmes malveillants au niveau du locataire, en identifiant les familles de programmes malveillants à la hausse, à plat ou en baisse, ce qui donne aux administrateurs un meilleur aperçu des menaces qui nécessitent une attention supplémentaire.
 
-:::image type="content" source="../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png" alt-text="Exemple de widget de campagnes anti-programme malveillant à tendance" lightbox="../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png":::
+:::image type="content" source="../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png" alt-text="Exemple de widget de campagnes de logiciels malveillants tendance" lightbox="../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png":::
 
 Les suivis de tendance vous donnent une idée des nouvelles menaces que vous devez examiner pour vous assurer que votre environnement d’entreprise plus large est préparé contre les attaques.
 
-### <a name="tracked-queries"></a>Requêtes de suivi
+### <a name="tracked-queries"></a>Requêtes suivies
 
-Les requêtes de suivi tirent parti de vos requêtes enregistrées pour évaluer régulièrement Microsoft 365 activité au niveau de votre organisation. Cela vous donne une tendance des événements, avec d’autres informations à venir dans les mois à venir. Le suivi des requêtes s’exécute automatiquement, ce qui vous donne des informations à jour sans avoir à vous souvenir de ré-exécuter vos requêtes.
+Les requêtes suivies tirent parti de vos requêtes enregistrées pour évaluer régulièrement Microsoft 365 activité dans votre organisation. Cela vous donne des tendances d’événement, avec d’autres à venir dans les prochains mois. Les requêtes suivies s’exécutent automatiquement, ce qui vous donne des informations à jour sans avoir à vous rappeler de réexécuter vos requêtes.
 
-:::image type="content" source="../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png" alt-text="Exemple de requêtes de suivi avec une requête sélectionnée" lightbox="../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png":::
+:::image type="content" source="../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png" alt-text="Exemple de requêtes suivies avec une sélection" lightbox="../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png":::
 
 ### <a name="saved-queries"></a>Requêtes enregistrées
 
-Les requêtes enregistrées se trouvent également dans la section Suivis. Vous pouvez utiliser des requêtes enregistrées pour stocker les recherches courantes dans l’Explorateur que vous souhaitez revenir plus rapidement et à plusieurs reprises, sans avoir à re-créer la recherche à chaque fois.
+Les requêtes enregistrées se trouvent également dans la section Trackers. Vous pouvez utiliser des requêtes enregistrées pour stocker les recherches d’Explorateur courantes auxquelles vous souhaitez revenir plus rapidement et à plusieurs reprises, sans avoir à recréer la recherche à chaque fois.
 
-:::image type="content" source="../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png" alt-text="Liste des requêtes de suivi avec une requête sélectionnée" lightbox="../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png":::
+:::image type="content" source="../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png" alt-text="Liste des requêtes suivies avec une sélection" lightbox="../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png":::
 
-Vous pouvez toujours enregistrer une requête de suivi à noter ou l’une de vos propres requêtes Explorer à  l’aide du bouton Enregistrer la requête en haut de la page De l’Explorateur. Tout ce qui est enregistré s’affiche dans la liste **des requêtes enregistrées** sur la page Suivi.
+Vous pouvez toujours enregistrer une requête de suivi digne de mention ou l’une de vos propres requêtes d’Explorateur à l’aide du bouton **Enregistrer la requête** en haut de la page Explorateur. Tout ce qui y est enregistré s’affiche dans la liste **des requêtes enregistrées** sur la page Suivi.
 
-## <a name="trackers-and-explorer"></a>Suivis et Explorateur
+## <a name="trackers-and-explorer"></a>Trackers et Explorateur
 
-Que vous examinez les activités de courrier électronique, de contenu ou de Office (bientôt disponible), l’Explorateur et les suivis fonctionnent ensemble pour vous aider à examiner et à suivre les risques et menaces de sécurité. Ensemble, les suivis vous fournissent des informations pour protéger vos utilisateurs en mettant en évidence les problèmes nouveaux, notables et fréquemment recherchés, ce qui garantit que votre entreprise est mieux protégée lors de son déplacement vers le cloud.
+Que vous examiniez l’e-mail, le contenu ou les activités Office (bientôt disponibles), Explorer et Trackers collaborent pour vous aider à examiner et à suivre les risques et menaces de sécurité. Tous ensemble, trackers vous fournissent des informations pour protéger vos utilisateurs en mettant en évidence les nouveaux problèmes notables et fréquemment recherchés, garantissant ainsi que votre entreprise est mieux protégée à mesure qu’elle passe au cloud.
 
-N’oubliez pas que vous pouvez toujours nous faire part de vos commentaires sur cette fonctionnalité ou d’autres fonctionnalités  de sécurité Microsoft 365 en cliquant sur le bouton Commentaires dans le coin inférieur droit.
+N’oubliez pas que vous pouvez toujours nous faire part de vos commentaires sur cette ou d’autres fonctionnalités de sécurité Microsoft 365 en cliquant sur le bouton **Commentaires** dans le coin inférieur droit.
 
 :::image type="content" source="../../media/microsoft-365-defender-portal.png" alt-text="Portail Microsoft 365 Defender" lightbox="../../media/microsoft-365-defender-portal.png":::
 
-## <a name="trackers-and-microsoft-defender-for-office-365"></a>Suivis et Microsoft Defender pour Office 365
+## <a name="trackers-and-microsoft-defender-for-office-365"></a>Trackers et Microsoft Defender pour Office 365
 
-Avec notre menace importante, nous détectons les menaces de programmes malveillants avancées détectées [par Coffre pièces jointes](safe-attachments.md). Si vous êtes un Office 365 Entreprise E5 et que vous n’utilisez pas [Microsoft Defender pour Office 365, vous](defender-for-office-365.md) devez l’être : il est inclus dans votre abonnement. Defender pour Office 365 valeur ajoutée même si vous disposez d’autres outils de sécurité qui filtrent le flux de messagerie avec vos services Office 365 de sécurité. Toutefois, les fonctionnalités [](safe-links.md) de liens de Coffre et de courrier indésirable fonctionnent mieux lorsque votre solution de sécurité de messagerie principale est Office 365.
+Avec notre première menace digne de mention, nous mettons en évidence les menaces avancées de programmes malveillants détectées par [Coffre pièces jointes](safe-attachments.md). Si vous êtes un client Office 365 Entreprise E5 et que vous n’utilisez pas [Microsoft Defender pour Office 365](defender-for-office-365.md), vous devez l’être : il est inclus dans votre abonnement. Defender pour Office 365 offre de la valeur, même si vous disposez d’autres outils de sécurité qui filtrent le flux de courrier électronique avec vos services Office 365. Toutefois, les fonctionnalités anti-courrier indésirable et [liens Coffre](safe-links.md) fonctionnent mieux lorsque votre solution principale de sécurité du courrier électronique passe par Office 365.
 
-:::image type="content" source="../../media/policies.png" alt-text="Le Microsoft Defender pour Office 365 dans le portail Microsoft 365 Defender web" lightbox="../../media/policies.png":::
+:::image type="content" source="../../media/policies.png" alt-text="Le Microsoft Defender pour Office 365 dans le portail Microsoft 365 Defender" lightbox="../../media/policies.png":::
 
-Dans le monde actuel aux menaces, l’exécution des analyses anti-programme malveillant traditionnelles uniquement signifie que vous n’êtes pas suffisamment protégé contre les attaques. Aujourd’hui, les attaquants plus sophistiqués utilisent des outils couramment disponibles pour créer des attaques nouvelles, obscurcies ou retardées qui ne seront pas reconnues par les moteurs anti-programme malveillant basés sur les signatures traditionnels. La fonctionnalité Coffre pièces jointes prend les pièces jointes des e-mails et les détone dans un environnement virtuel pour déterminer s’ils sont sûrs ou malveillants. Ce processus de détonation ouvre chaque fichier dans un environnement d’ordinateur virtuel, puis surveille ce qui se produit une fois le fichier ouvert. Qu’il s’agit d’un fichier PDF et compressé ou d’un document Office, du code malveillant peut être masqué dans un fichier, en l’activant uniquement une fois que la victime l’ouvre sur son ordinateur. En détonant et en analysant le fichier dans le flux de messagerie, les fonctionnalités Defender pour Office 365 trouvent ces menaces en fonction des comportements, de la réputation des fichiers et d’un certain nombre de règles heuristiques.
+Dans le monde de menaces d’aujourd’hui, exécuter uniquement des analyses anti-programmes malveillants traditionnels signifie que vous n’êtes pas assez bien protégé contre les attaques. Les attaquants les plus sophistiqués d’aujourd’hui utilisent des outils couramment disponibles pour créer de nouvelles attaques masquées ou retardées qui ne seront pas reconnues par les moteurs anti-programmes malveillants traditionnels basés sur des signatures. La fonctionnalité Coffre Pièces jointes prend les pièces jointes et les fait exploser dans un environnement virtuel pour déterminer si elles sont sécurisées ou malveillantes. Ce processus de détonation ouvre chaque fichier dans un environnement d’ordinateur virtuel, puis surveille ce qui se passe après l’ouverture du fichier. Qu’il s’agisse d’un fichier PDF et compressé ou d’un document Office, le code malveillant peut être masqué dans un fichier, en l’activant uniquement une fois que la victime l’ouvre sur son ordinateur. En détonant et en analysant le fichier dans le flux de messagerie, Defender pour Office 365 fonctionnalités trouve ces menaces en fonction des comportements, de la réputation des fichiers et d’un certain nombre de règles heuristiques.
 
-Le nouveau filtre contre les menaces à noter met en évidence les éléments qui ont été récemment détectés Coffre pièces jointes. Ces détections représentent des éléments qui sont de nouveaux fichiers malveillants, non trouvés précédemment par les Microsoft 365 dans votre flux de messagerie ou dans le courrier d’autres clients. Faites attention aux éléments du suivi des menaces à prendre en compte, consultez les personnes ciblées par ces derniers et examinez les détails de détonation affichés sous l’onglet Analyse avancée (en cliquant sur l’objet de l’e-mail dans l’Explorateur). Notez que vous trouverez cet onglet uniquement sur les e-mails détectés par la fonctionnalité pièces jointes Coffre . Ce suivi important inclut ce filtre, mais vous pouvez également utiliser ce filtre pour d’autres recherches dans l’Explorateur.
+Le nouveau filtre de menaces notable met en évidence les éléments qui ont été détectés récemment via Coffre pièces jointes. Ces détections représentent les éléments qui sont de nouveaux fichiers malveillants, qui n’ont pas été trouvés précédemment par Microsoft 365 dans votre flux de messagerie ou dans l’e-mail d’autres clients. Faites attention aux éléments du suivi des menaces remarquables, consultez qui a été ciblé par eux et passez en revue les détails de détonation affichés sous l’onglet Analyse avancée (trouvé en cliquant sur l’objet de l’e-mail dans l’Explorateur). Notez que vous trouverez uniquement cet onglet sur les e-mails détectés par la fonctionnalité Coffre Pièces jointes . Ce suivi digne de mention inclut ce filtre, mais vous pouvez également utiliser ce filtre pour d’autres recherches dans l’Explorateur.
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-- Si votre organisation ne Office 365 pas ces fonctionnalités d’investigation et de réponse aux menaces, voir comment obtenir les fonctionnalités Office 365 d’investigation et de réponse aux [menaces ?](office-365-ti.md)
+- Si votre organisation n’a pas encore ces fonctionnalités d’investigation et de réponse aux menaces Office 365, consultez [Comment obtenir Office 365 fonctionnalités d’investigation et de réponse aux menaces ?](office-365-ti.md)
 
-- Assurez-vous que les rôles et autorisations corrects sont attribués à votre équipe de sécurité. Vous devez être un administrateur général ou avoir le rôle Administrateur de la sécurité ou Recherche et purge affecté dans le portail Microsoft 365 Defender de sécurité. Voir [Autorisations dans le portail Microsoft 365 Defender web](permissions-microsoft-365-security-center.md).
+- Assurez-vous que votre équipe de sécurité dispose des rôles et autorisations appropriés. Vous devez être administrateur général ou le rôle Administrateur de sécurité ou Recherche et purge doit être attribué dans le portail Microsoft 365 Defender. Consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-- Observez les nouveaux suivis à afficher dans votre environnement Microsoft 365 de suivi. Si disponible, vous trouverez vos suivis sur **la page suivi** des menaces dans le portail Microsoft 365 Defender à l’Microsoft 365 Defender<https://security.microsoft.com/threattracker>.
+- Surveillez l’affichage des nouveaux trackers dans votre environnement Microsoft 365. Lorsqu’il est disponible, vous trouverez vos suivis sur la page Suivi des **menaces** dans le portail Microsoft 365 Defender à l’adresse <https://security.microsoft.com/threattracker>.
 
-- Si vous ne l’avez pas déjà fait, découvrez et configurez les [](defender-for-office-365.md) Microsoft Defender pour Office 365 pour votre organisation, notamment les liens Coffre [](safe-links.md) et les pièces [jointes Coffre jointes](safe-attachments.md).
+- Si vous ne l’avez pas déjà fait, découvrez et configurez [Microsoft Defender pour Office 365](defender-for-office-365.md) pour votre organisation, notamment [Coffre liens](safe-links.md) et [Coffre pièces jointes](safe-attachments.md).
