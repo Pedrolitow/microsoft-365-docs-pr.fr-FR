@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des simulations automatisées qui contiennent des techniques et des charges utiles spécifiques qui se lancent lorsque les conditions spécifiées sont remplies dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 3ad24a8b6d2be18fb7ef5fd49be7f2197b3be3a7
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: e1e71fc5a901612a132d57afd663364f9a10daf4
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680949"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472438"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatisations de simulation pour la formation à la simulation d’attaques
 
@@ -33,7 +33,7 @@ Pour créer une automatisation de simulation, faites les étapes suivantes :
 
 2. Sous **l’onglet Automatisations de** simulation, sélectionnez Créer ![une icône d’automatisation.](../../media/m365-cc-sc-create-icon.png) **Créez l’automatisation**.
 
-   ![Créez un bouton d’automatisation sous l’onglet Automatisations de simulation dans la formation à la simulation d’attaques Microsoft 365 Defender portail.](../../media/attack-sim-training-sim-automations-create.png)
+   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="Bouton Créer une simulation sous l’onglet Automatisations de simulation dans la formation sur la simulation d’attaques dans Microsoft 365 Defender web" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
 3. L’Assistant Création s’ouvre. Le reste de cet article décrit les pages et les paramètres qu’elles contiennent.
 
@@ -61,7 +61,7 @@ Dans la page Sélectionner des **techniques** d’ingénierie sociale, sélectio
 
 Si vous cliquez sur le lien Afficher les **détails** dans la description, un volant de détails s’ouvre qui décrit la technique et les étapes de simulation qui en résultent.
 
-![Volant de détails pour la technique de la recherche d’informations d’identification dans la page Sélectionner des techniques d’ingénierie sociale.](../../media/attack-sim-training-simulations-select-technique-sim-steps.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-select-technique-sim-steps.png" alt-text="The Details flyout for the credential harvest technique on the Select social engineering techniques page" lightbox="../../media/attack-sim-training-simulations-select-technique-sim-steps.png":::
 
 Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -91,7 +91,7 @@ Si vous cliquez **sur Filtre**, les filtres suivants sont disponibles :
   - **Faible**
   - **Moyenne**
   - **Élevée**
-- **Source** : indique si la charge utile a été créée dans votre organisation ou fait partie du catalogue de charges utiles pré-existant de Microsoft. Les valeurs valides sont les suivantes :
+- **Source** : indique si la charge utile a été créée dans votre organisation ou fait partie du catalogue de charges utiles pré-existant de Microsoft. Les valeurs valides sont les suivantes :
   - **Global**
   - **Client**
   - **All**
@@ -110,7 +110,7 @@ Si vous sélectionnez une charge utile dans la liste en cliquant sur le nom, les
 - **L’onglet** Vue d’ensemble contient un exemple et d’autres détails sur la charge utile.
 - **L’onglet Simulations lancée** contient le nom **simulation**, taux **de clics**, **taux compromis** et **Action**.
 
-![Flyout des détails de la charge utile dans l’entraînement de simulation d’attaque dans Microsoft 365 Defender portail.](../../media/attack-sim-training-simulations-select-payload-details.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details.png" alt-text="Le flyout des détails de la charge utile dans la formation sur la simulation d’attaques dans Microsoft 365 Defender portail" lightbox="../../media/attack-sim-training-simulations-select-payload-details.png":::
 
 Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -140,7 +140,7 @@ Dans la page **Utilisateurs cibles** , sélectionnez qui recevra la simulation. 
         - Sélectionner **tout le titre**
         - Sélectionnez les valeurs de titre existantes.
 
-      ![Filtrage des utilisateurs sur la page Utilisateurs cibles dans la formation à la simulation d’attaques dans Microsoft 365 Defender portail.](../../media/attack-sim-training-simulations-target-users-filter-by-category.png)
+      :::image type="content" source="../../media/attack-sim-training-simulations-target-users-filter-by-category.png" alt-text="Filtrage des utilisateurs sur la page Utilisateurs cibles dans la formation à la simulation d’attaque sur le portail Microsoft 365 Defender cible" lightbox="../../media/attack-sim-training-simulations-target-users-filter-by-category.png":::
 
       Une fois que vous avez identifié vos critères, les utilisateurs concernés sont affichés dans **la section Liste** d’utilisateurs qui s’affiche, où vous pouvez sélectionner une partie ou l’ensemble des destinataires détectés.
 
@@ -178,7 +178,7 @@ Dans la page **Affecter une** formation, vous pouvez affecter des formations pou
       - **7 jours après la fin de la simulation**
   - **Aucune formation** : si vous sélectionnez cette valeur, la seule option de la page est  le bouton Suivant qui vous permet d’accès à la [**page d’accueil**](#landing-page).
 
-![Ajoutez une formation recommandée sur la page d’affectation de formation dans la formation à la simulation d’attaques dans Microsoft 365 Defender portail.](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png" alt-text="Option d’ajout de la formation recommandée sur la page d’affectation d’une formation dans la formation à la simulation d’attaque dans le portail Microsoft 365 Defender web" lightbox="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png":::
 
 ### <a name="training-assignment"></a>Affectation de formation
 
@@ -220,7 +220,7 @@ Pour chaque formation dans la liste, vous devez sélectionner qui obtient la for
 
 Si vous ne souhaitez pas utiliser une formation qui s’affiche, cliquez sur ![Supprimer l’icône.](../../media/m365-cc-sc-delete-icon.png) **Supprimer**
 
-![Page d’affectation de formation dans la formation à la simulation d’attaques dans Microsoft 365 Defender portail.](../../media/attack-sim-training-training-assignment.png)
+:::image type="content" source="../../media/attack-sim-training-training-assignment.png" alt-text="Page d’affectation de formation dans la formation à la simulation d’attaques dans Microsoft 365 Defender web" lightbox="../../media/attack-sim-training-training-assignment.png":::
 
 Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -347,7 +347,7 @@ Sélectionnez la notification à utiliser, puis cliquez sur **Suivant**.
 Dans la page **Planification de simulation** , sélectionnez l’une des valeurs suivantes :
 
 - **Aléatoire :** vous devez toujours sélectionner la planification sur la page suivante, mais les simulations seront lancées à des moments aléatoires avec la planification.
-- **Fixed**
+- **Fixe**
 
 Lorsque vous avez terminé, cliquez sur **Suivant**.
 

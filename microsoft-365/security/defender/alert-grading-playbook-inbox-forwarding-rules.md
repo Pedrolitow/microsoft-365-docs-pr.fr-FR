@@ -1,7 +1,7 @@
 ---
-title: Notation des alertes pour les règles de forwarding de boîte de réception suspectes
-description: Notation des alertes pour les règles de transport de boîte de réception suspectes pour passer en revue les alertes et prendre les mesures recommandées pour corriger l’attaque et protéger votre réseau.
-keywords: incidents, alertes, examiner, analyser, réponse, corrélation, attaque, ordinateurs, appareils, utilisateurs, identités, identité, boîte aux lettres, courrier électronique, 365, microsoft, m365
+title: Classement des alertes pour les règles de transfert de boîte de réception suspectes
+description: Classement des alertes pour les règles de transfert de boîte de réception suspectes pour passer en revue les alertes et prendre les mesures recommandées pour corriger l’attaque et protéger votre réseau.
+keywords: incidents, alertes, examiner, analyser, réponse, corrélation, attaque, machines, appareils, utilisateurs, identités, identité, boîte aux lettres, e-mail, 365, microsoft, m365
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -21,110 +21,108 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 08178a1672e3bdd5b124138f698b42be8181373a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: dca305b88e6e8db25e0a798c4361086bd7cb1e8b
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325500"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64666017"
 ---
-# <a name="alert-grading-for-suspicious-inbox-forwarding-rules"></a>Notation des alertes pour les règles de forwarding de boîte de réception suspectes
+# <a name="alert-grading-for-suspicious-inbox-forwarding-rules"></a>Classement des alertes pour les règles de transfert de boîte de réception suspectes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **S’applique à :**
 - Microsoft 365 Defender
 
-Les acteurs des menaces peuvent utiliser des comptes d’utilisateur compromis à plusieurs fins malveillantes, notamment la lecture de messages électroniques dans la boîte de réception d’un utilisateur, la création de règles de boîte de réception pour transmettre des messages électroniques à des comptes externes, l’envoi de courriers de hameçonnage, entre autres. Les règles de boîte de réception malveillantes sont largement courantes pendant les campagnes de compromission de courrier électronique et de hameçonnage, et il est important de les surveiller de manière cohérente.
+Les acteurs des menaces peuvent utiliser des comptes d’utilisateur compromis à plusieurs fins malveillantes, notamment la lecture d’e-mails dans la boîte de réception d’un utilisateur, la création de règles de boîte de réception pour transférer des e-mails vers des comptes externes, l’envoi de messages de hameçonnage, entre autres. Les règles de boîte de réception malveillantes sont largement courantes pendant les campagnes de compromission de messagerie professionnelle (BEC) et de hameçonnage, et il est important de les surveiller de manière cohérente.
 
-Ce manuel vous permet d’examiner les alertes pour les règles de forwarding de boîte de réception suspectes et de les classer rapidement en tant que vrai positif (TP) ou faux positif (TP). Vous pouvez ensuite prendre des mesures recommandées pour les alertes TP afin de corriger l’attaque. 
+Ce playbook vous permet d’examiner les alertes de règles de transfert de boîte de réception suspectes et de les classer rapidement comme un vrai positif (TP) ou un faux positif (TP). Vous pouvez ensuite prendre les actions recommandées pour les alertes TP afin de corriger l’attaque.
 
-Pour obtenir une vue d’ensemble de la notation des alertes pour Microsoft Defender pour Office 365 et Microsoft Defender pour les applications cloud, consultez [l’article d’introduction](alert-grading-playbooks.md).
+Pour obtenir une vue d’ensemble de la notation des alertes pour Microsoft Defender pour Office 365 et Microsoft Defender for Cloud Apps, consultez [l’article d’introduction](alert-grading-playbooks.md).
 
-Les résultats de l’utilisation de ce manuel sont les :
+Les résultats de l’utilisation de ce playbook sont les suivants :
 
-- Vous avez identifié les alertes associées aux règles de forwarding de boîte de réception comme des activités malveillantes ou malveillantes (FP).
+- Vous avez identifié les alertes associées aux règles de transfert de boîte de réception comme étant des activités malveillantes (TP) ou bénignes (FP).
 
-  Si vous êtes malveillant, vous avez supprimé les règles de forwarding de boîte de réception malveillantes.
+  En cas de malveillance, vous avez supprimé les règles de transfert de boîte de réception malveillantes.
 
-- Vous avez pris les mesures nécessaires si les messages électroniques ont été transmis à une adresse de messagerie malveillante.
+- Vous avez pris les mesures nécessaires si des e-mails ont été transférés vers une adresse e-mail malveillante.
 
-## <a name="inbox-forwarding-rules"></a>Règles de forwarding de boîte de réception
+## <a name="inbox-forwarding-rules"></a>Règles de transfert de boîte de réception
 
-Vous configurez des règles de boîte de réception pour gérer automatiquement les messages électroniques en fonction de critères prédéfinie. Par exemple, vous pouvez créer une règle de boîte de réception pour déplacer tous les messages de votre responsable vers un autre dossier, ou pour déplacer les messages que vous recevez vers une autre adresse de messagerie.
+Vous configurez des règles de boîte de réception pour gérer automatiquement les messages électroniques en fonction de critères prédéfinis. Par exemple, vous pouvez créer une règle de boîte de réception pour déplacer tous les messages de votre responsable vers un autre dossier, ou transférer les messages que vous recevez vers une autre adresse e-mail.
 
 ### <a name="suspicious-inbox-forwarding-rules"></a>Règle de transfert de boîte de réception suspect
 
-Après avoir accédé aux boîtes aux lettres des utilisateurs, les attaquants créent souvent une règle de boîte de réception qui leur permet d’exfiltrer des données sensibles vers une adresse de messagerie externe et de les utiliser à des fins malveillantes. 
+Après avoir accédé aux boîtes aux lettres des utilisateurs, les attaquants créent souvent une règle de boîte de réception qui leur permet d’exfiltrer des données sensibles vers une adresse e-mail externe et de les utiliser à des fins malveillantes.
 
-Les règles de boîte de réception malveillantes automatisent le processus d’exfiltration. Avec des règles spécifiques, chaque courrier électronique de la boîte de réception de l’utilisateur cible qui correspond aux critères de règle est transmis à la boîte aux lettres de l’attaquant. Par exemple, un attaquant peut vouloir collecter des données sensibles liées à la finance. Ils créent une règle de boîte de réception pour transmettre tous les messages électroniques qui contiennent des mots clés, tels que « finance » et « facture » dans l’objet ou le corps du message, à leur boîte aux lettres.
+Les règles de boîte de réception malveillantes automatisent le processus d’exfiltration. Avec des règles spécifiques, chaque e-mail dans la boîte de réception de l’utilisateur cible qui correspond aux critères de règle est transféré vers la boîte aux lettres de l’attaquant. Par exemple, un attaquant peut vouloir collecter des données sensibles liées au financement. Ils créent une règle de boîte de réception pour transférer tous les e-mails contenant des mots clés, tels que « finance » et « invoice » dans l’objet ou le corps du message, à leur boîte aux lettres.
 
-Les règles de forwarding de boîte de réception suspectes peuvent être très difficiles à détecter, car la maintenance des règles de boîte de réception est une tâche courante effectuée par les utilisateurs. Par conséquent, il est important de surveiller les alertes. 
+Les règles de transfert de boîte de réception suspectes peuvent être très difficiles à détecter, car la maintenance des règles de boîte de réception est une tâche courante effectuée par les utilisateurs. Par conséquent, il est important de surveiller les alertes.
 
 ## <a name="workflow"></a>Flux de travail
 
-Voici le flux de travail permettant d’identifier les règles de forwarding de courrier suspectes.
- 
-:::image type="content" source="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-workflow.png" alt-text="Flux de travail d’investigation d’alerte pour les règles de forwarding de boîte de réception" lightbox="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-workflow.png":::
+Voici le flux de travail permettant d’identifier les règles de transfert de courrier suspectes.
 
-## <a name="investigation-steps"></a>Étapes d’examen
+:::image type="content" source="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-workflow.png" alt-text="Flux de travail d’investigation des alertes pour les règles de transfert de boîte de réception" lightbox="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-workflow.png":::
 
-Cette section contient des instructions détaillées pour répondre à l’incident et prendre les mesures recommandées pour protéger votre organisation contre d’autres attaques.
+## <a name="investigation-steps"></a>Étapes d’investigation
+
+Cette section contient des instructions détaillées pas à pas pour répondre à l’incident et prendre les mesures recommandées pour protéger votre organisation contre d’autres attaques.
 
 ### <a name="review-generated-alerts"></a>Passer en revue les alertes générées
 
-Voici un exemple d’alerte de règle de forwarding de boîte de réception dans la file d’attente d’alertes.
+Voici un exemple d’alerte de règle de transfert de boîte de réception dans la file d’attente d’alerte.
 
-:::image type="content" source="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-alert-queue.png" alt-text="Exemple de notification dans la file d’attente d’alertes" lightbox="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-alert-queue.png":::
+:::image type="content" source="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-alert-queue.png" alt-text="Exemple de notification dans la file d’attente des alertes" lightbox="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-alert-queue.png":::
 
-Voici un exemple des détails de l’alerte déclenchée par une règle de forwarding de boîte de réception malveillante.
+Voici un exemple des détails de l’alerte déclenchée par une règle de transfert de boîte de réception malveillante.
 
-:::image type="content" source="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-alert-description.png" alt-text="Détails de l’alerte déclenchée par une règle de forwarding de boîte de réception malveillante" lightbox="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-alert-description.png":::
+:::image type="content" source="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-alert-description.png" alt-text="Détails de l’alerte déclenchée par une règle de transfert de boîte de réception malveillante" lightbox="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-alert-description.png":::
 
-### <a name="investigate-rule-parameters"></a>Examiner les paramètres de règle 
+### <a name="investigate-rule-parameters"></a>Examiner les paramètres de règle
 
 L’objectif de cette étape est de déterminer si les règles semblent suspectes selon certains critères :
 
-Destinataires de la règle de forwarding :
+Destinataires de la règle de transfert :
 
-- Valider l’adresse e-mail de destination n’est pas une boîte aux lettres supplémentaire dont est propriétaire le même utilisateur (en évitant les cas où l’utilisateur a des courriers électroniques auto-transmis entre des boîtes aux lettres personnelles). 
-- Validez que l’adresse e-mail de destination n’est pas une adresse interne ou un sous-domaine appartenant à la société.
+- Valider l’adresse e-mail de destination n’est pas une boîte aux lettres supplémentaire appartenant au même utilisateur (ce qui évite les cas où l’utilisateur transfère automatiquement des e-mails entre des boîtes aux lettres personnelles).
+- Vérifiez que l’adresse e-mail de destination n’est pas une adresse interne ou un sous-domaine appartenant à l’entreprise.
 
-Filtres :
- 
-- Si la règle de boîte de réception contient des filtres qui recherchent des mots clés spécifiques dans l’objet ou le corps de l’e-mail, vérifiez si les mots clés fournis, tels que finance, informations d’identification et réseau, entre autres, semblent liés à une activité malveillante. Vous pouvez trouver ces filtres sous les attributs suivants (qui s’affiche dans la colonne RawEventData) : « BodyContainsWords », « SubjectContainsWords » ou « SubjectOrBodyContainsWords »
-- Si l’attaquant choisit de ne pas définir de filtre pour les messages électroniques, et que la règle de boîte de réception a pour effet de le faire, tous les éléments de boîte aux lettres sont transmis à la boîte aux lettres de l’attaquant, ce comportement est également suspect. 
+Filtres:
+
+- Si la règle de boîte de réception contient des filtres qui recherchent des mots clés spécifiques dans l’objet ou le corps de l’e-mail, vérifiez si les mots clés fournis, tels que la finance, les informations d’identification et la mise en réseau, entre autres, semblent liés à une activité malveillante. Vous trouverez ces filtres sous les attributs suivants (qui s’affichent dans la colonne RawEventData de l’événement) : « BodyContainsWords », « SubjectContainsWords » ou « SubjectOrBodyContainsWords »
+- Si l’attaquant choisit de ne pas définir de filtre pour les messages et que la règle de boîte de réception transfère tous les éléments de boîte aux lettres à la boîte aux lettres de l’attaquant, ce comportement est également suspect.
 
 ### <a name="investigate-ip-address"></a>Examiner l’adresse IP
 
-Examinez les attributs liés à l’adresse IP qui a exécuté l’événement pertinent de création de règle :
+Passez en revue les attributs liés à l’adresse IP qui a effectué l’événement pertinent de création de règle :
 
-1. Recherchez d’autres activités cloud suspectes provenant de la même adresse IP dans le client. Par exemple, une activité suspecte peut être plusieurs tentatives d’ouverture de session qui ont échoué. 
-2. Le isp est-il courant et raisonnable pour cet utilisateur ?
-3. L’emplacement est-il commun et raisonnable pour cet utilisateur ?
+1. Recherchez d’autres activités cloud suspectes provenant de la même adresse IP dans le locataire. Par exemple, l’activité suspecte peut être plusieurs tentatives de connexion ayant échoué.
+2. Le fournisseur de services Internet est-il courant et raisonnable pour cet utilisateur ?
+3. L’emplacement est-il courant et raisonnable pour cet utilisateur ?
 
 ### <a name="investigate-any-suspicious-activity-with-the-user-inbox-before-creating-rules"></a>Examiner toute activité suspecte avec la boîte de réception de l’utilisateur avant de créer des règles
 
-Vous pouvez passer en revue toutes les activités des utilisateurs avant de créer des règles, rechercher des indicateurs de compromission et examiner les actions de l’utilisateur qui semblent suspectes. Par exemple, plusieurs tentatives de signature ont échoué.  
+Vous pouvez examiner toutes les activités des utilisateurs avant de créer des règles, rechercher des indicateurs de compromission et examiner les actions utilisateur qui semblent suspectes. Par exemple, plusieurs connexions ayant échoué.
 
-- Se connecte : 
+- Connexions :
 
-  Vérifier que l’activité de se connectant avant l’événement de création de règle n’est pas suspecte (par exemple, l’emplacement commun, le isp ou l’agent utilisateur). 
+  Vérifiez que l’activité de connexion avant l’événement de création de règle n’est pas suspecte (par exemple, l’emplacement commun, le fournisseur de services Internet ou l’agent utilisateur).
 
-- Autres alertes ou incidents 
+- Autres alertes ou incidents
+  - D’autres alertes se sont-elle déclenchées pour l’utilisateur avant la création de la règle. Si c’est le cas, cela peut indiquer que l’utilisateur a été compromis.
+  - Si l’alerte est corrélée à d’autres alertes pour indiquer un incident, l’incident contient-il d’autres alertes positives véritables ?
 
-   - D’autres alertes se sont-elles déclenchées pour l’utilisateur avant la création de la règle . Si tel est le cas, cela peut indiquer que l’utilisateur a été compromis. 
+## <a name="advanced-hunting-queries"></a>Requêtes de repérage avancées
 
-   - Si l’alerte est en corrélation avec d’autres alertes pour indiquer un incident, l’incident contient-il d’autres alertes positives réelles ? 
+[La chasse avancée](advanced-hunting-overview.md) est un outil de chasse aux menaces basé sur une requête qui vous permet d’inspecter les événements de votre réseau et de localiser les indicateurs de menace.
 
-## <a name="advanced-hunting-queries"></a>Requêtes de recherche avancées
-
-[Le recherche avancée](advanced-hunting-overview.md) est un outil de recherche de menace basé sur une requête qui vous permet d’inspecter les événements de votre réseau et de localiser les indicateurs de menace. 
-
-Exécutez cette requête pour rechercher tous les nouveaux événements de règle de boîte de réception au cours d’une fenêtre de temps spécifique.  
+Exécutez cette requête pour rechercher tous les nouveaux événements de règle de boîte de réception pendant une fenêtre de temps spécifique.
 
 ```kusto
-let start_date = now(-10h); 
+let start_date = now(-10h);
 let end_date = now();
 let user_id = ""; // enter here the user id
 CloudAppEvents
@@ -135,48 +133,48 @@ CloudAppEvents
 | project Timestamp, ActionType, CountryCode, City, ISP, IPAddress, RuleConfig = RawEventData.Parameters, RawEventData
 ```
 
-*RuleConfig contiendra* la configuration de règle.
+*RuleConfig* contiendra la configuration de la règle.
 
-Exécutez cette requête pour vérifier si le isp est courant pour l’utilisateur en regardant l’historique de l’utilisateur.
+Exécutez cette requête pour vérifier si le fournisseur de services Internet est commun à l’utilisateur en examinant l’historique de l’utilisateur.
 
 ```kusto
-let alert_date = now(); //enter alert date 
-let timeback = 30d; 
-let userid = ""; //enter here user id 
-CloudAppEvents 
-| where Timestamp between ((alert_date-timeback)..(alert_date-1h)) 
-| where AccountObjectId == userid 
-| make-series ActivityCount = count() default = 0 on Timestamp  from (alert_date-timeback) to (alert_date-1h) step 12h by ISP 
+let alert_date = now(); //enter alert date
+let timeback = 30d;
+let userid = ""; //enter here user id
+CloudAppEvents
+| where Timestamp between ((alert_date-timeback)..(alert_date-1h))
+| where AccountObjectId == userid
+| make-series ActivityCount = count() default = 0 on Timestamp  from (alert_date-timeback) to (alert_date-1h) step 12h by ISP
 ```
 
-Exécutez cette requête pour vérifier si le pays est commun à l’utilisateur en regardant l’historique de l’utilisateur.
+Exécutez cette requête pour vérifier si le pays est commun à l’utilisateur en examinant l’historique de l’utilisateur.
 
 ```kusto
-let alert_date = now(); //enter alert date 
-let timeback = 30d; 
-let userid = ""; //enter here user id 
-CloudAppEvents 
-| where Timestamp between ((alert_date-timeback)..(alert_date-1h)) 
-| where AccountObjectId == userid 
+let alert_date = now(); //enter alert date
+let timeback = 30d;
+let userid = ""; //enter here user id
+CloudAppEvents
+| where Timestamp between ((alert_date-timeback)..(alert_date-1h))
+| where AccountObjectId == userid
 | make-series ActivityCount = count() default = 0 on Timestamp  from (alert_date-timeback) to (alert_date-1h) step 12h by CountryCode
 ```
 
-Exécutez cette requête pour vérifier si l’agent utilisateur est courant pour l’utilisateur en regardant l’historique de l’utilisateur.
+Exécutez cette requête pour vérifier si l’agent utilisateur est courant pour l’utilisateur en examinant l’historique de l’utilisateur.
 
 ```kusto
-let alert_date = now(); //enter alert date 
-let timeback = 30d; 
-let userid = ""; //enter here user id 
-CloudAppEvents 
-| where Timestamp between ((alert_date-timeback)..(alert_date-1h)) 
-| where AccountObjectId == userid 
+let alert_date = now(); //enter alert date
+let timeback = 30d;
+let userid = ""; //enter here user id
+CloudAppEvents
+| where Timestamp between ((alert_date-timeback)..(alert_date-1h))
+| where AccountObjectId == userid
 | make-series ActivityCount = count() default = 0 on Timestamp  from (alert_date-timeback) to (alert_date-1h) step 12h by UserAgent
 ```
 
-Exécutez cette requête pour vérifier si d’autres utilisateurs ont créé la règle de avance vers la même destination (cela peut indiquer que d’autres utilisateurs sont également compromis).
+Exécutez cette requête pour vérifier si d’autres utilisateurs ont créé une règle de transfert vers la même destination (peut indiquer que d’autres utilisateurs sont également compromis).
 
 ```kusto
-let start_date = now(-10h); 
+let start_date = now(-10h);
 let end_date = now();
 let dest_email = ""; // enter here destination email as seen in the alert
 CloudAppEvents
@@ -188,14 +186,14 @@ CloudAppEvents
 
 ## <a name="recommended-actions"></a>Actions recommandées
 
-1. Désactivez la règle de boîte de réception malveillante. 
-2. Réinitialisez les informations d’identification du compte de l’utilisateur. Vous pouvez également vérifier si le compte d’utilisateur a été compromis avec Microsoft Defender pour les applications cloud, ce qui obtient des signaux de sécurité de Azure Active Directory (Azure AD) Identity Protection.
-3. Recherchez d’autres activités malveillantes effectuées par l’utilisateur touché.
-4. Recherchez d’autres activités suspectes dans le client provenant de la même adresse IP ou du même isp (si ce n’est pas le cas) pour rechercher d’autres utilisateurs compromis.
+1. Désactivez la règle de boîte de réception malveillante.
+2. Réinitialiser les informations d’identification du compte de l’utilisateur. Vous pouvez également vérifier si le compte d’utilisateur a été compromis avec Microsoft Defender for Cloud Apps, qui obtient les signaux de sécurité de Azure Active Directory (Azure AD) Identity Protection.
+3. Recherchez d’autres activités malveillantes effectuées par l’utilisateur concerné.
+4. Recherchez d’autres activités suspectes dans le locataire provenant de la même adresse IP ou du même fournisseur de services Internet (si le fournisseur de services Internet est rare) pour trouver d’autres utilisateurs compromis.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Vue d’ensemble de la notation des alertes](alert-grading-playbooks.md)
+- [Vue d’ensemble du classement des alertes](alert-grading-playbooks.md)
 - [Activité suspecte de transfert d’e-mail](alert-grading-playbook-email-forwarding.md)
 - [Règles de manipulation de la boîte de réception suspectes](alert-grading-playbook-inbox-manipulation-rules.md)
 - [Examiner des alertes](investigate-alerts.md)

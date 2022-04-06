@@ -19,12 +19,12 @@ ms.custom:
 description: Utilisez le nouveau tableau de bord de sécurité pour passer en Office 365 l’état de la protection contre les menaces, et afficher et agir sur les alertes de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1f9706a92cf07f23656e6865fe69f11b04d58544
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 4bc9d813732c4c67531aeb47a673111d62bbf417
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680517"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475738"
 ---
 # <a name="security-dashboard-in-the-security--compliance-center"></a>Tableau de bord de sécurité dans le Centre de sécurité & conformité
 
@@ -50,7 +50,7 @@ Pour afficher le tableau de bord de sécurité dans le Centre de sécurité & co
 
 Le widget Résumé de la gestion des menaces vous indique d’un coup d’œil comment votre organisation a été protégée contre les menaces au cours des sept (7) derniers jours.
 
-![Tableau de bord de sécurité : widget résumé de la gestion des menaces.](../../media/SecDash-ThreatMgmtSummary.png)
+:::image type="content" source="../../media/SecDash-ThreatMgmtSummary.png" alt-text="Le widget Tableau de bord de sécurité - Résumé de la gestion des menaces" lightbox="../../media/SecDash-ThreatMgmtSummary.png":::
 
 Les informations que vous verrez dans le résumé de la gestion des menaces dépendent de ce que comprend votre abonnement. Le tableau suivant décrit les informations incluses pour les Office 365 E3 et Office 365 E5.
 
@@ -64,7 +64,7 @@ Pour afficher ou accéder au widget Résumé de la gestion des menaces, vous dev
 
 Le widget d’état de la protection contre les menaces montre l’efficacité de la protection contre les menaces avec une vue tendance et détaillée du hameçonnage et des programmes malveillants.
 
-![Widget d’état de la protection contre les menaces.](../../media/tpswidget.png)
+:::image type="content" source="../../media/tpswidget.png" alt-text="Widget d’état de la protection contre les menaces" lightbox="../../media/tpswidget.png":::
 
 Les détails varient selon que votre abonnement Microsoft 365 inclut [Exchange Online Protection (](exchange-online-protection-overview.md)EOP) avec ou sans [Microsoft Defender pour Office 365](defender-for-office-365.md).
 
@@ -79,7 +79,7 @@ Pour afficher ou accéder au widget d’état de la protection contre les menace
 
 Le widget Global Weekly Threat Detections indique le nombre de menaces détectées dans les messages électroniques au cours des sept (7) derniers jours.
 
-![Widget Global Weekly Threat Detections.](../../media/globalweeklythreatdetections.png)
+:::image type="content" source="../../media/globalweeklythreatdetections.png" alt-text="Widget Global Weekly Threat Detections" lightbox="../../media/globalweeklythreatdetections.png":::
 
 Les mesures sont calculées comme décrit dans le tableau suivant :
 
@@ -94,13 +94,13 @@ Les mesures sont calculées comme décrit dans le tableau suivant :
 
 Les widgets de programmes malveillants montrent des détails sur les tendances des programmes malveillants et les types de famille de programmes malveillants au cours des sept (7) derniers jours.
 
-![Tendances des programmes malveillants et types de famille.](../../media/malwarewidgetatpe5.png)
+:::image type="content" source="../../media/malwarewidgetatpe5.png" alt-text="Tendances des programmes malveillants et types de famille" lightbox="../../media/malwarewidgetatpe5.png":::
 
 ## <a name="insights"></a>Informations
 
 Informations non seulement les problèmes clés que vous devez examiner, ils incluent également des recommandations et des actions à prendre en compte.
 
-![Informations intelligentes.](../../media/smartinsights.png)
+:::image type="content" source="../../media/smartinsights.png" alt-text="Informations intelligentes" lightbox="../../media/smartinsights.png":::
 
 Par exemple, vous pouvez constater que les messages électroniques de hameçonnage sont remis, car certains utilisateurs ont désactivé leurs options de courrier indésirable. Pour en savoir plus sur le fonctionnement des informations, voir Rapports et informations dans le Centre de sécurité [& conformité](reports-and-insights-in-security-and-compliance.md).
 
@@ -114,7 +114,7 @@ Pour plus d’informations, voir [Commencer à utiliser l’investigation et la 
 
 En bas du tableau de bord de sécurité se trouve une section **Tendances** , qui récapitule les tendances de flux de messagerie pour votre organisation. Les rapports fournissent des informations sur les courriers électroniques classés comme courrier indésirable, programmes malveillants, tentatives de hameçonnage et courrier électronique de qualité. Cliquez sur une vignette pour afficher des informations plus détaillées dans le rapport.
 
-![La section Tendances récapitule les tendances de flux de messagerie pour l’organisation.](../../media/trends.png)
+:::image type="content" source="../../media/trends.png" alt-text="La section Tendances qui récapitule les tendances de flux de messagerie pour l’organisation" lightbox="../../media/trends.png":::
 
 Par ailleurs, si l’abonnement de votre organisation inclut [Defender pour Office 365 Plan 2](office-365-ti.md), vous aurez également un rapport d’alertes de gestion des **menaces récentes** dans cette section qui permet à votre équipe de sécurité d’afficher les alertes de sécurité prioritaires et d’agir sur ces alertes.
 

@@ -1,6 +1,6 @@
 ---
 title: Configurer les paramètres de proxy d’appareil et de connexion Internet
-description: Configurez les paramètres Microsoft Defender pour point de terminaison proxy et Internet pour activer la communication avec le service cloud.
+description: Configurez les paramètres proxy et Internet de Microsoft Defender pour les points de terminaison pour permettre la communication avec le service cloud.
 keywords: configurer, proxy, Internet, connectivité Internet, paramètres, paramètres proxy, netsh, winhttp, serveur proxy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cf68afff79a2d719435e9df3d53400584f162618
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: 870ff3e1c44d9e6c760d2d190389e866ce54fe4e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507342"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472108"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy du dispositif et de connectivité Internet
 
@@ -81,13 +81,13 @@ Le proxy statique est configurable par le biais de la stratégie de groupe ( GP)
 
   Définissez-le **sur Activé et** sélectionnez **Désactiver l’utilisation du proxy authentifié**.
 
-  :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="Volet d’stratégie de groupe paramètre1" lightbox="images/atp-gpo-proxy1.png":::
+  :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="Volet d’état Paramètre1 de la stratégie de groupe" lightbox="images/atp-gpo-proxy1.png":::
 
 - **Modèles d’administration > Windows composants >** collecte de données et builds d’aperçu > configurer les expériences des utilisateurs connectés et la télémétrie :
 
   Configurez le proxy.
 
-  :::image type="content" source="images/atp-gpo-proxy2.png" alt-text="Volet d’stratégie de groupe paramètre2" lightbox="images/atp-gpo-proxy2.png":::
+  :::image type="content" source="images/atp-gpo-proxy2.png" alt-text="Volet d’état Paramètres2 de la stratégie de groupe" lightbox="images/atp-gpo-proxy2.png":::
 
 
 | Stratégie de groupe | Clé du Registre | Entrée de Registre | Valeur |
@@ -99,7 +99,7 @@ Le proxy statique est configurable par le biais de la stratégie de groupe ( GP)
 
 Antivirus Microsoft Defender [protection cloud](cloud-protection-microsoft-defender-antivirus.md) fournit une protection automatisée et quasi instantanée contre les menaces nouvelles et émergentes. Notez que la connectivité est requise pour les [indicateurs personnalisés lorsque](manage-indicators.md) l’Antivirus Defender est votre solution anti-programme malveillant active. Par [PEPT en mode blocage](edr-in-block-mode.md) dispose d’une solution anti-programme malveillant principale lors de l’utilisation d’une solution non Microsoft.
 
-Configurez le proxy statique à l’aide des stratégie de groupe disponibles dans les modèles d’administration :
+Configurez le proxy statique à l’aide de la stratégie de groupe disponible dans les modèles d’administration :
 
 1. **Modèles d'> Windows composants > Antivirus Microsoft Defender > définir un serveur proxy pour la connexion au réseau**. 
 
@@ -121,7 +121,7 @@ Configurez le proxy statique à l’aide des stratégie de groupe disponibles da
 >
 > À des fins de résilience et de nature en temps réel de la protection cloud, Antivirus Microsoft Defender mettre en cache le dernier proxy de travail connu. Assurez-vous que votre solution proxy n’effectue pas d’inspection SSL. Cela va rompre la connexion cloud sécurisée. 
 >
-> Antivirus Microsoft Defender n’utilisera pas le proxy statique pour se connecter à Windows Update ou Microsoft Update pour télécharger les mises à jour. Au lieu de cela, il utilise un proxy à l’échelle du système s’il est configuré pour utiliser Windows Update ou la source de mise à jour interne configurée en fonction de l’ordre de remplacement [configuré](manage-protection-updates-microsoft-defender-antivirus.md). 
+> Antivirus Microsoft Defender n’utilisera pas le proxy statique pour se connecter à Windows update ou Microsoft Update pour télécharger les mises à jour. Au lieu de cela, il utilise un proxy à l’échelle du système s’il est configuré pour utiliser Windows Update ou la source de mise à jour interne configurée en fonction de l’ordre de remplacement [configuré](manage-protection-updates-microsoft-defender-antivirus.md). 
 >
 > Si nécessaire, vous pouvez utiliser des **modèles d’administration > Windows composants > Antivirus Microsoft Defender > définir la config automatique du proxy (.pac)** pour la connexion au réseau. Si vous devez configurer des configurations avancées avec plusieurs proxys, utilisez des modèles d’administration **> Windows Composants > Antivirus Microsoft Defender >** Définissez des adresses pour contourner le serveur proxy et empêcher les Antivirus Microsoft Defender d’utiliser un serveur proxy pour ces destinations. 
 >
@@ -166,7 +166,7 @@ netsh winhttp reset proxy
 
 Pour plus d’informations, voir [la syntaxe, les contextes et le formatage de la commande Netsh](/windows-server/networking/technologies/netsh/netsh-contexts).
 
-## <a name="enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server"></a>Activer l’accès Microsoft Defender pour point de terminaison URL de service dans le serveur proxy
+## <a name="enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server"></a>Activer l’accès aux URL du service Microsoft Defender pour les points de terminaison dans le serveur proxy
 
 Par défaut, si un proxy ou un pare-feu bloque tout le trafic par défaut et n’autorise que des domaines spécifiques, ajoutez les domaines répertoriés dans la feuille téléchargeable à la liste des domaines autorisés.
 
@@ -174,13 +174,14 @@ La feuille de calcul téléchargeable suivante répertorie les services et les U
 
 <br>
 
+**** 
 |Liste de feuilles de calcul de domaines| Description|
 |---|---|
-|Microsoft Defender pour point de terminaison URL pour les clients commerciaux| Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation pour les clients commerciaux. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Microsoft Defender pour point de terminaison URL pour Gov/Cloud de la communauté du secteur public/DoD | Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation pour les clients Gov/Cloud de la communauté du secteur public/DoD. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+|:::image type="content" source="images/mdatp-urls.png" alt-text="Feuille de calcul URL Microsoft Defender pour les points de terminaison" lightbox="images/mdatp-urls.png":::|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
+|
 
 Si l’analyse HTTPS (inspection SSL) est activée pour un proxy ou un pare-feu, excluez les domaines répertoriés dans le tableau ci-dessus de l’analyse HTTPS.
-Dans votre pare-feu, ouvrez toutes les URL où la colonne de géographie est WW. Pour les lignes où la colonne de géographie n’est pas WW, ouvrez les URL vers votre emplacement de données spécifique. Pour vérifier votre paramètre d’emplacement de données, voir Vérifier l’emplacement de stockage des données et mettre à jour les paramètres de rétention des données [pour Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/data-retention-settings).
+Dans votre pare-feu, ouvrez toutes les URL où la colonne de géographie est WW. Pour les lignes où la colonne de géographie n’est pas WW, ouvrez les URL vers votre emplacement de données spécifique. Pour vérifier votre paramètre d’emplacement des données, voir Vérifier l’emplacement de stockage des données et mettre à jour les paramètres de rétention des données [pour Microsoft Defender pour endpoint](/microsoft-365/security/defender-endpoint/data-retention-settings).
 
 > [!NOTE]
 > Windows appareils exécutant la version 1803 ou une version antérieure.`settings-win.data.microsoft.com`  <br>
@@ -209,7 +210,7 @@ Les informations de la liste des informations de configuration du proxy et du pa
 |*.azure-automation.net|Port 443|Sortant|Oui|
 
 > [!NOTE]
-> *Ces exigences de connectivité s’appliquent aux Microsoft Defender pour point de terminaison précédentes de Windows Server 2016 et Windows Server 2012 R2 nécessitant MMA. Les instructions d’intégration de ces systèmes d’exploitation avec la nouvelle solution unifiée se font sur les serveurs [Windows](configure-server-endpoints.md) intégrés ou migrent vers la nouvelle solution unifiée dans les [scénarios de migration de serveur dans Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/server-migration).
+> *Ces exigences de connectivité s’appliquent au point de terminaison Microsoft Defender pour endpoint précédent de Windows Server 2016 et Windows Server 2012 R2 qui nécessite MMA. Les instructions d’intégration de ces systèmes d’exploitation avec la nouvelle solution unifiée se font sur les serveurs [Windows](configure-server-endpoints.md) intégrés ou migrent vers la nouvelle solution unifiée dans les scénarios de migration de serveur dans [Microsoft Defender pour le point de terminaison](/microsoft-365/security/defender-endpoint/server-migration).
 
 > [!NOTE]
 > En tant que solution informatique, la plage d’adresses IP peut changer. Il est recommandé de passer au paramètre de résolution DNS.
@@ -224,7 +225,7 @@ Les informations de la liste des informations de configuration du proxy et du pa
 
 3. Exécutez l’outil TestCloudConnection.exe à partir de « C:\Program Files\Microsoft Monitoring Agent\Agent » pour valider la connectivité et obtenir les URL requises pour votre espace de travail spécifique.
 
-4. Consultez la Microsoft Defender pour point de terminaison url de service pour obtenir la liste complète des conditions requises pour votre [région](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) (reportez-vous à la feuille de calcul URL de service).
+4. Consultez la liste des URL des points de terminaison De Microsoft Defender pour obtenir la liste complète des conditions [requises pour](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) votre région (reportez-vous à la feuille de calcul URL de service).
 
    :::image type="content" source="images/admin-powershell.png" alt-text="L’administrateur dans Windows PowerShell" lightbox="images/admin-powershell.png":::
 
@@ -235,11 +236,11 @@ Le \*point de terminaison de l’URL .blob.core.windows.net peut être remplacé
 > [!NOTE]
 > Dans le cas de l’intégration via Microsoft Defender pour le cloud, plusieurs espaces de travail peuvent être utilisés. Vous devrez effectuer la procédure TestCloudConnection.exe sur l’ordinateur intégré à partir de chaque espace de travail (pour déterminer s’il existe des modifications aux URL *.blob.core.windows.net entre les espaces de travail).
 
-## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>Vérifier la connectivité du client aux URL Microsoft Defender pour point de terminaison service
+## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>Vérifier la connectivité du client aux URL du service Microsoft Defender pour les points de terminaison
 
 Vérifiez que la configuration du proxy s’est correctement terminée. WinHTTP peut ensuite découvrir et communiquer via le serveur proxy dans votre environnement, puis le serveur proxy autorise le trafic vers les URL du service Defender for Endpoint.
 
-1. Téléchargez [l Microsoft Defender pour point de terminaison’analyseur client](https://aka.ms/mdeanalyzer) sur le PC, sur lequel le capteur Defender for Endpoint est en cours d’exécution. Pour les serveurs de niveau bas, utilisez la dernière version d’évaluation disponible en téléchargement [Microsoft Defender pour point de terminaison’outil d’analyseur de client bêta](https://aka.ms/BetaMDEAnalyzer).
+1. Téléchargez [l’outil Analyseur de client Microsoft Defender pour point](https://aka.ms/mdeanalyzer) de terminaison sur le PC, sur lequel le capteur Defender for Endpoint est en cours d’exécution. Pour les serveurs de niveau bas, utilisez la dernière version d’évaluation disponible pour télécharger [l’outil Microsoft Defender for Endpoint Client Analyzer (bêta](https://aka.ms/BetaMDEAnalyzer)).
 
 2. Extrayez le contenu des MDEClientAnalyzer.zip sur l’appareil.
 
@@ -281,10 +282,10 @@ Toutefois, si les résultats du contrôle de la connectivité indiquent un éche
 > [!NOTE]
 > Les vérifications de connectivité cloud de l’outil Analyseur de connectivité ne sont pas compatibles avec les créations de processus de blocage des règles de réduction de la surface d’attaque provenant des commandes [PSExec et WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands). Vous devrez désactiver temporairement cette règle pour exécuter l’outil de connectivité. Vous pouvez également ajouter temporairement des [exclusions DE LAS](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) lors de l’exécution de l’analyseur.
 >
-> Lorsque telemetryProxyServer est défini dans le Registre ou via stratégie de groupe, Defender pour le point de terminaison échoue à accéder au proxy défini.
+> Lorsque telemetryProxyServer est défini dans le Registre ou via une stratégie de groupe, Defender pour le point de terminaison échoue à accéder au proxy défini.
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Utiliser stratégie de groupe paramètres de configuration et de gestion des Antivirus Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md)
+- [Utiliser les paramètres de stratégie de groupe pour configurer et gérer les Antivirus Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md)
 - [Intégrer des appareils Windows 10](configure-endpoints.md)
-- [Résoudre les problèmes Microsoft Defender pour point de terminaison’intégration](troubleshoot-onboarding.md)
+- [Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison](troubleshoot-onboarding.md)

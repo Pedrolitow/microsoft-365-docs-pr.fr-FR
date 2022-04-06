@@ -1,7 +1,7 @@
 ---
 title: 'Informations sur le tableau de bord : Gestion des menaces et des vulnérabilités'
 description: Le tableau Gestion des menaces et des vulnérabilités de bord peut aider SecOps et les administrateurs de sécurité à faire face aux menaces de cybersécurité et à renforcer la résilience de sécurité de leur organisation.
-keywords: Microsoft Defender pour Endpoint-tvm, tableau de bord Microsoft Defender pour Endpoint-tvm, & gestion des vulnérabilités menaces, Gestion des menaces et des vulnérabilités, menaces basées sur les risques & gestion des vulnérabilités , configuration de la sécurité, Score de sécurité Microsoft pour les appareils, score d’exposition
+keywords: Microsoft Defender pour Endpoint-tvm, tableau de bord Microsoft Defender pour Endpoint-tvm, & gestion des vulnérabilités menaces, Gestion des menaces et des vulnérabilités, menaces basées sur les & gestion des vulnérabilités , configuration de la sécurité, Score de sécurité Microsoft pour les appareils, score d’exposition
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fb93b179b9d342a4a0d098ddb889a94371fbabc4
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 76eedd78e6bc6a95450a50c04d4f85b0de46db8e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464302"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472482"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>Informations sur le tableau de bord : Gestion des menaces et des vulnérabilités
 
@@ -40,7 +40,7 @@ Threat and gestion des vulnérabilités is a component of Defender for Endpoint,
 
 - Informations sur la détection et la réponse au point de terminaison en temps réel (EDR) corrélées avec les vulnérabilités de point de terminaison
 - Contexte de vulnérabilité d’appareil précieux pendant les examens d’incident
-- Processus de correction intégrés par Microsoft Intune et Microsoft Endpoint Configuration Manager
+- Processus de correction intégrés par le biais Microsoft Intune et Microsoft Endpoint Configuration Manager
 
 Vous pouvez utiliser la fonctionnalité Gestion des menaces et des vulnérabilités dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender pour</a> :
 
@@ -56,9 +56,9 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide de ce qui se trou
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4r1nv]
 
-## <a name="threat-and-vulnerability-management-dashboard"></a>Tableau de bord des menaces gestion des vulnérabilités de sécurité
+## <a name="threat-and-vulnerability-management-dashboard"></a>Tableau de bord des menaces gestion des vulnérabilités des menaces
 
-:::image type="content" source="../../media/tvmdashboard.png" lightbox="../../media/tvmdashboard.png" alt-text="Tableau de bord de gestion des menaces et des vulnérabilités pour les appareils.":::
+:::image type="content" source="../../media/tvmdashboard.png" alt-text="Tableau de bord de gestion des menaces et des vulnérabilités pour les appareils" lightbox="../../media/tvmdashboard.png":::
 
 <br>
 
@@ -78,7 +78,7 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide de ce qui se trou
 
 Pour plus d’informations sur les icônes utilisées dans l’ensemble du portail, voir [Microsoft Defender pour les icônes de point de terminaison](portal-overview.md#microsoft-defender-for-endpoint-icons).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Score d'exposition](tvm-exposure-score.md)

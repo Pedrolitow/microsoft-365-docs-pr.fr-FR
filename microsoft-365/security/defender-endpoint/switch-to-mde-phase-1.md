@@ -1,6 +1,6 @@
 ---
-title: Basculer vers Microsoft Defender pour le point de terminaison - Préparer
-description: Préparez-vous à passer à Microsoft Defender pour le point de terminaison. Mettez à jour vos appareils et configurez vos connexions réseau.
+title: Basculer vers Microsoft Defender pour point de terminaison - Préparer
+description: Préparez-vous à passer à la Microsoft Defender pour point de terminaison. Mettez à jour vos appareils et configurez vos connexions réseau.
 keywords: migration, Microsoft Defender pour point de terminaison, meilleure pratique
 ms.prod: m365-security
 ms.technology: mde
@@ -21,16 +21,16 @@ ms.topic: article
 ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
-ms.date: 11/30/2021
+ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: aa0bd45c1765e2aa794e00e437bf08a63d1d742f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 33ad09cb87c80aecbaa72ebe9fb2b6523962498f
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64476728"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634424"
 ---
-# <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Basculer vers Microsoft Defender pour le point de terminaison - Phase 1 : Préparer
+# <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Passer à Microsoft Defender pour point de terminaison - Phase 1 : Préparer
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -58,13 +58,11 @@ Il est préférable de maintenir à jour les appareils et points de terminaison 
 
 Maintenez votre solution de protection de point de terminaison existante à jour et assurez-vous que les appareils de votre organisation ont les dernières mises à jour de sécurité.
 
-Vous avez besoin d’aide ? Consultez la documentation de votre fournisseur de solutions.
+Besoin d’aide ? Consultez la documentation de votre fournisseur de solutions.
 
 ### <a name="make-sure-your-organizations-devices-are-up-to-date"></a>Assurez-vous que les appareils de votre organisation sont à jour
 
 Vous avez besoin d’aide pour mettre à jour les appareils de votre organisation ? Consultez les ressources suivantes :
-
-<br/><br/>
 
 |Système d’exploitation|Resource|
 |---|---|
@@ -74,7 +72,7 @@ Vous avez besoin d’aide pour mettre à jour les appareils de votre organisatio
 |Android|[Vérifier & mise à jour de votre version Android](https://support.google.com/android/answer/7680439)|
 |Linux|[Linux 101 : mise à jour de votre système](https://www.linux.com/training-tutorials/linux-101-updating-your-system)|
 
-## <a name="get-microsoft-defender-for-endpoint"></a>Obtenir Microsoft Defender pour le point de terminaison
+## <a name="get-microsoft-defender-for-endpoint"></a>Obtenir Microsoft Defender pour point de terminaison
 
 Maintenant que vous avez mis à jour les appareils de votre organisation, l’étape suivante consiste à obtenir Defender pour le point de terminaison, à attribuer des licences et à vous assurer que le service est mis en service.
 
@@ -99,12 +97,14 @@ Les autorisations sur le portail Microsoft 365 Defender peuvent être accordées
 
 1. Planifiez les rôles et les autorisations de vos administrateurs de sécurité et opérateurs de sécurité. Voir [Contrôle d’accès basé sur un rôle](prepare-deployment.md#role-based-access-control).
 
-2. Configurez et configurez le RBAC. Nous vous recommandons d’utiliser [Intune](/mem/intune/fundamentals/what-is-intune) pour configurer le RBAC, en particulier si votre organisation utilise une combinaison d’appareils Windows 10, macOS, iOS et Android. Voir [la configuration du RBAC à l’aide d’Intune](/mem/intune/fundamentals/role-based-access-control).
+2. Configurez et configurez le RBAC. Nous vous recommandons [d’Intune](/mem/intune/fundamentals/what-is-intune) pour configurer le RBAC, en particulier si votre organisation utilise une combinaison d’appareils Windows 10, macOS, iOS et Android. Voir [la configuration du RBAC à l’aide Intune](/mem/intune/fundamentals/role-based-access-control).
 
-    Si votre organisation nécessite une méthode autre qu’Intune, choisissez l’une des options suivantes :
+    Si votre organisation nécessite une méthode autre que Intune, choisissez l’une des options suivantes :
 
     - [Configuration Manager](/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
-    - [Gestion avancée des stratégies de groupe](/microsoft-desktop-optimization-pack/agpm)
+
+    - [Gestion avancée des stratégie de groupe](/microsoft-desktop-optimization-pack/agpm)
+    
     - [Windows Admin Center](/windows-server/manage/windows-admin-center/overview)
 
 3. Accorder l’accès au Microsoft 365 Defender web. (Vous avez besoin d’aide ? Voir [Gérer l’accès au portail à l’aide de RBAC](rbac.md).
@@ -113,17 +113,14 @@ Les autorisations sur le portail Microsoft 365 Defender peuvent être accordées
 
 Pour activer la communication entre vos appareils et Defender pour le point de terminaison, configurez les paramètres proxy et Internet. Le tableau suivant inclut des liens vers des ressources que vous pouvez utiliser pour configurer vos paramètres proxy et Internet pour différents systèmes d’exploitation et fonctionnalités :
 
-<br/><br/>
-
 |Fonctionnalités|Système d’exploitation|Ressources|
 |---|---|---|
-|[Détection et réponse des points](overview-endpoint-detection-response.md) de terminaison (PEPT)|[Windows 10](/windows/release-health/release-information) ou ultérieure<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>[Windows Server 1803 ou une ultérieure](/windows-server/get-started/whats-new-in-windows-server-1803)|[Configurer les paramètres de proxy et de connectivité Internet de l’ordinateur](configure-proxy-internet.md)|
+|[Détection et réponse des points](overview-endpoint-detection-response.md) de terminaison (PEPT)|[Windows 10](/windows/release-health/release-information) ou ultérieure<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>[Windows Server 1803 ou une ultérieure](/windows-server/get-started/whats-new-in-windows-server-1803)|[Configurer les paramètres de proxy et de connectivité Internet de l’ordinateur](configure-proxy-internet.md)|
 |PEPT|[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Configurer les paramètres de proxy et de connectivité Internet](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
 |PEPT|macOS (voir [La requise pour le système)](microsoft-defender-endpoint-mac.md)|[Defender pour le point de terminaison sur macOS : connexions réseau](microsoft-defender-endpoint-mac.md#network-connections)|
-|[Antivirus Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> Windows Server 2022 <br/><br/> [Windows Server 1803 ou une ultérieure](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[Configurer et valider les connexions réseau à un antivirus Microsoft Defender](configure-network-connections-microsoft-defender-antivirus.md)|
+|[Antivirus Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) ou ultérieure <br/><br/>Windows Server 2022 <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> [Windows Server 1803 ou une ultérieure](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[Configurer et valider les connexions réseau à un antivirus Microsoft Defender](configure-network-connections-microsoft-defender-antivirus.md)|
 |Antivirus|macOS (voir [La requise pour le système)](microsoft-defender-endpoint-mac.md)|[Defender pour le point de terminaison sur macOS : connexions réseau](microsoft-defender-endpoint-mac.md#network-connections)|
 |Antivirus|Linux (voir [La exigences du système](microsoft-defender-endpoint-linux.md#system-requirements))|[Defender pour point de terminaison sur Linux : connexions réseau](microsoft-defender-endpoint-linux.md#network-connections)|
-
 
 ## <a name="next-step"></a>Étape suivante
 

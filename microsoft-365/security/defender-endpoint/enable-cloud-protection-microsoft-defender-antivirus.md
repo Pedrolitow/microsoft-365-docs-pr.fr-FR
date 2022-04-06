@@ -1,7 +1,7 @@
 ---
 title: Activer la protection cloud dans Antivirus Microsoft Defender
 description: Activer la protection cloud pour bénéficier des fonctionnalités de protection rapide et avancée.
-keywords: 'Antivirus Microsoft Defender logiciel anti-programme malveillant, sécurité, cloud, bloquer à la première vue'
+keywords: Antivirus Microsoft Defender logiciel anti-programme malveillant, sécurité, cloud, bloquer à la première vue
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,8 +15,13 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
+ms.openlocfilehash: 78f992e20ee0c0c2505777295ca3ba34a5c4ea66
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470634"
 ---
-
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Activer la protection cloud dans Antivirus Microsoft Defender
 
 **S’applique à :**
@@ -45,7 +50,7 @@ Pour plus d’informations sur les exigences de connectivité réseau spécifiqu
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
-2. Dans le **volet Accueil**, sélectionnez **Configuration de l’appareil > profils.**
+2. Dans le **volet Accueil**, sélectionnez **Configuration de l'> profils.**
 
 3. Sélectionnez **le type de profil restrictions d’appareil** que vous souhaitez configurer. Si vous devez créer un type de profil de **restrictions** d’appareil, voir [Configurer les paramètres de restriction d’appareil dans Microsoft Intune](/intune/device-restrictions-configure).
 
@@ -55,7 +60,7 @@ Pour plus d’informations sur les exigences de connectivité réseau spécifiqu
 
 6. Dans la demande **d’utilisateurs avant la** soumission d’exemples, **sélectionnez Envoyer toutes les données automatiquement**.
 
-Pour plus d’informations sur les profils d’appareil Intune, notamment sur la création et la configuration de leurs paramètres, voir [Quelles sont les Microsoft Intune’appareil ?](/intune/device-profiles)
+Pour plus d’informations sur les profils d’appareil Intune, notamment sur la création et la configuration de leurs paramètres, voir [Quelles sont Microsoft Intune profils d’appareil ?](/intune/device-profiles)
 
 ## <a name="use-microsoft-endpoint-manager-to-turn-on-cloud-protection"></a>Utiliser Microsoft Endpoint Manager pour activer la protection cloud
 
@@ -134,16 +139,18 @@ SubmitSamplesConsent
 
 Pour plus d’informations sur les paramètres autorisés, [voir Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## <a name="turn-on-cloud-protection-on-individual-clients-with-the-windows-security-app"></a>Activer la protection cloud sur des clients individuels avec l’Sécurité Windows client
+## <a name="turn-on-cloud-protection-on-individual-clients-with-the-windows-security-app"></a>Activer la protection cloud sur des clients individuels avec l’application Sécurité Windows cloud
 
 > [!NOTE]
-> Si le paramètre Configurer le remplacement de paramètre local pour la création de rapports sur la stratégie de groupe **Microsoft MAPS** est **désactivé, le** paramètre de protection basée sur le **cloud** dans Windows Paramètres est grisé et indisponible. Les modifications apportées via un objet de stratégie de groupe doivent d’abord être déployées vers les points de terminaison individuels avant que le paramètre soit mis à jour dans les Paramètres Windows.
+> Si le paramètre Configurer le paramètre local de remplacement pour la création de rapports sur la stratégie de groupe **Microsoft MAPS** est **désactivé, le** paramètre de protection basée sur le **cloud** dans Windows Paramètres est grisé et indisponible. Les modifications apportées via un objet de stratégie de groupe doivent d’abord être déployées vers les points de terminaison individuels avant que le paramètre soit mis à jour dans les Paramètres Windows.
 
-1. Ouvrez Sécurité Windows’application en sélectionnant l’icône de bouclier dans la barre des tâches ou en recherchant Sécurité Windows dans **le menu Démarrer**.
+1. Ouvrez l’Sécurité Windows en sélectionnant l’icône de bouclier dans la barre des tâches ou en recherchant Sécurité Windows dans **le menu Démarrer**.
 
 2. Sélectionnez la **vignette & protection** contre les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche), puis, sous Gérer les **paramètres** , sélectionnez **Paramètres de protection** contre & virus.
 
-3. Confirmez que **la protection basée sur le cloud et** **l’envoi** automatique d’échantillons sont tous deux **activés**.
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Paramètres de protection contre & virus" lightbox="../../media/wdav-protection-settings-wdsc.png":::
+
+3. Confirmez que **la protection basée sur le cloud** et **l’envoi** automatique d’échantillons sont **activés**.
 
    > [!NOTE]
    > Si l’envoi automatique d’échantillons a été configuré avec la stratégie de groupe, le paramètre est grisé et indisponible.

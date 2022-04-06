@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: f228d0ca44589b9c140226c2b39984c717c7d9f8
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: e2ebdffa171266fdc0ec77047c9fecc5be9e56ba
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766067"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471162"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Examiner les alertes dans Microsoft Defender pour le point de terminaison
 
@@ -52,7 +52,7 @@ Développez les entités pour afficher les détails en un coup d’œil. La sél
 > [!NOTE]
 > La section de l’article sur l’alerte peut contenir plusieurs alertes, avec des alertes supplémentaires liées à la même arborescence d’exécution apparaissant avant ou après l’alerte que vous avez sélectionnée.
 
-![Exemple d’un article d’alerte avec une alerte en focus et des cartes étendues.](images/alert-story-tree.png)
+:::image type="content" source="images/alert-story-tree.png" alt-text="un article d’alerte avec une alerte en cours et certaines cartes étendues" lightbox="images/alert-story-tree.png":::
 
 ## <a name="take-action-from-the-details-pane"></a>Action à partir du volet d’informations
 
@@ -62,17 +62,17 @@ Une fois que vous avez terminé l’enquête, revenir à l’alerte que vous ave
 
 Si vous la classez comme une alerte réelle, vous pouvez également sélectionner une détermination, comme illustré dans l’image ci-dessous.
 
-![Extrait du volet d’informations avec une alerte résolue et la liste de détermination étendue.](images/alert-details-resolved-true.png)
+:::image type="content" source="images/alert-details-resolved-true.png" alt-text="Volet d’informations avec une alerte résolue et la liste de détermination étendue" lightbox="images/alert-details-resolved-true.png":::
 
 Si vous rencontrez une fausse alerte avec une application métier, créez une règle de suppression pour éviter ce type d’alerte à l’avenir.
 
-![actions et classification dans le volet d’informations avec la règle de suppression mise en évidence.](images/alert-false-suppression-rule.png)
+:::image type="content" source="images/alert-false-suppression-rule.png" alt-text="Actions et classification dans le volet d’informations avec la règle de suppression mise en évidence" lightbox="images/alert-false-suppression-rule.png":::
 
 > [!TIP]
 > Si vous rencontrez des problèmes non décrits ci-dessus, 🙂 utilisez le bouton pour fournir des commentaires ou ouvrir un ticket de support.
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)
 - [Examiner un fichier associé à une alerte Defender for Endpoint](investigate-files.md)

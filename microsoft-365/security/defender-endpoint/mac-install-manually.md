@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1fce7aa103de9fb90cafa88a286cbf33bc753456
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 7793a367b591490f3b70055bc5b437eec798cb28
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765120"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475980"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement manuel de Microsoft Defender pour endpoint sur macOS
 
@@ -49,12 +49,12 @@ Avant de commencer, consultez la [page principale de Microsoft Defender pour poi
 
 Téléchargez les packages d’installation et d’intégration à partir Microsoft 365 Defender portail :
 
-1. Dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail</a>, go to **Paramètres > Endpoints > Device management > Onboarding**.
+1. Dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender,go</a> to **Paramètres > Endpoints > Device management > Onboarding**.
 2. Dans la section 1 de la page, définissez le système d’exploitation sur **macOS** et la méthode Deployment sur **Le script local**.
 3. Dans la section 2 de la page, sélectionnez **Télécharger le package d’installation**. Enregistrez-le sous wdav.pkg dans un répertoire local.
 4. Dans la section 2 de la page, **sélectionnez Télécharger le package d’intégration**. Enregistrez-le WindowsDefenderATPOnboardingPackage.zip dans le même répertoire.
 
-    ![Microsoft 365 Defender capture d’écran du portail.](images/portal-onboarding-macos.png)
+   :::image type="content" source="images/portal-onboarding-macos.png" alt-text="Options de téléchargement des packages d’installation et d’intégration" lightbox="images/portal-onboarding-macos.png":::
 
 5. À partir d’une invite de commandes, vérifiez que vous avez les deux fichiers.
 
@@ -64,20 +64,20 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
 
 1. Accédez au wdav.pkg téléchargé dans Finder et ouvrez-le.
 
-    ![Capture d’écran d’installation de l’application 1.](images/mdatp-28-appinstall.png)
+   :::image type="content" source="images/mdatp-28-appinstall.png" alt-text="Installation de l’application" lightbox="images/mdatp-28-appinstall.png":::
 
 2. **Sélectionnez Continuer**, acceptez les termes du contrat de licence et entrez le mot de passe à l’invite.
 
-    ![Installation de l’application capture d’écran2.](images/mdatp-29-appinstalllogin.png)
+   :::image type="content" source="images/mdatp-29-appinstalllogin.png" alt-text="Installation de l’application" lightbox="images/mdatp-29-appinstalllogin.png":::
 
    > [!IMPORTANT]
    > Vous serez invité à autoriser l’installation d’un pilote microsoft (« Extension système bloquée » ou « L’installation est en attente » ou les deux. Le pilote doit être autorisé à être installé.
 
-   ![Installation de l’application screenshot3.](images/mdatp-30-systemextension.png)
+     :::image type="content" source="images/mdatp-30-systemextension.png" alt-text="Installation de l’application" lightbox="images/mdatp-30-systemextension.png":::
 
 3. **Sélectionnez Ouvrir les préférences de sécurité** ou Ouvrir les préférences système **> sécurité & confidentialité**. Sélectionnez **Autoriser** :
 
-    ![Capture d’écran de la fenêtre Sécurité et confidentialité.](images/mdatp-31-securityprivacysettings.png)
+   :::image type="content" source="images/mdatp-31-securityprivacysettings.png" alt-text="Fenêtre Sécurité et confidentialité" lightbox="images/mdatp-31-securityprivacysettings.png":::
 
    L’installation se poursuit.
 
@@ -93,27 +93,27 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
 
 1. Accédez au wdav.pkg téléchargé dans Finder et ouvrez-le.
 
-    ![Installation de l’application screenshot4.](images/monterey-install-1.png)
+   :::image type="content" source="images/monterey-install-1.png" alt-text="Processus d’installation de l’application" lightbox="images/monterey-install-1.png":::
 
 2. **Sélectionnez Continuer**, acceptez les termes du contrat de licence et entrez le mot de passe à l’invite.
 
 3. À la fin du processus d’installation, vous serez promu pour approuver les extensions système utilisées par le produit. **Sélectionnez Ouvrir les préférences de sécurité**.
 
-    ![Approbation de l’extension système.](images/monterey-install-2.png)
+   :::image type="content" source="images/monterey-install-2.png" alt-text="Approbation de l’extension système" lightbox="images/monterey-install-2.png":::
 
 4. Dans la **fenêtre Sécurité & confidentialité** , sélectionnez **Autoriser**.
 
-    ![Préférences de sécurité d’extension système1.](images/monterey-install-3.png)
+   :::image type="content" source="images/monterey-install-3.png" alt-text="Préférences de sécurité de l’extension système1" lightbox="images/monterey-install-3.png":::
 
 5. Répétez les étapes 3 & 4 pour toutes les extensions système distribuées avec Microsoft Defender pour Endpoint sur Mac.
 
 6. Dans le cadre des fonctionnalités de détection et de réponse des points de terminaison, Microsoft Defender pour Endpoint sur Mac inspecte le trafic de socket et signale ces informations au portail Microsoft 365 Defender. Lorsque vous avez été invité à accorder à Microsoft Defender pour les autorisations de point de terminaison pour filtrer le trafic réseau, sélectionnez **Autoriser**.
 
-    ![Préférences de sécurité des extensions système2.](images/monterey-install-4.png)
+   :::image type="content" source="images/monterey-install-4.png" alt-text="Préférences de sécurité de l’extension système2" lightbox="images/monterey-install-4.png":::
 
-7. **Ouvrez La sécurité des préférences** \> **système & confidentialité** et accédez à l’onglet Confidentialité.  Accordez l’autorisation d’accès disque total à **Microsoft Defender** et Microsoft **Defenders Endpoint Security Extension**.
+7. **Ouvrez La sécurité des** \> préférences **système & confidentialité** et accédez à l’onglet Confidentialité. Accordez l’autorisation d’accès disque total à **Microsoft Defender** et à **l’extension** de sécurité du point de terminaison Microsoft Defenders. 
 
-    ![Accès disque complet.](images/monterey-install-5.png)
+   :::image type="content" source="images/monterey-install-5.png" alt-text="Accès disque complet" lightbox="images/monterey-install-5.png":::
 
 ## <a name="client-configuration"></a>Configuration du client
 
@@ -140,7 +140,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
     Après l’installation, vous verrez l’icône Microsoft Defender dans la barre d’état macOS dans le coin supérieur droit.
 
     > [!div class="mx-imgBorder"]
-    > ![Icône Microsoft Defender dans la capture d’écran de la barre d’état.](images/mdatp-icon-bar.png)
+    > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="Icône Microsoft Defender dans la barre d’état" lightbox="images/mdatp-icon-bar.png":::
 
 ## <a name="how-to-allow-full-disk-access"></a>Comment autoriser l’accès disque total
 
@@ -171,7 +171,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
 
 3. Exécutez un test PEPT de détection pour vérifier que l’appareil est correctement intégré et signaler au service. Effectuez les étapes suivantes sur l’appareil nouvellement intégré :
 
-   1. Dans votre navigateur, tel que Microsoft Edge pour Mac ou Safari.
+   1. Dans votre navigateur, par exemple, Microsoft Edge pour Mac ou Safari.
 
    1. Téléchargez les fichiers MacOS MDATP DIY.zip et https://aka.ms/mdatpmacosdiy extrayez.
 
@@ -217,7 +217,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
 
 12. Go to the Alert Queue.
 
-    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Exemple d’alerte de test PEPT macOS qui affiche la gravité, la catégorie, la source de détection et un menu d’actions réduire.":::
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Alerte de test PEPT macOS qui indique la gravité, la catégorie, la source de détection et un menu d’actions réduire" lightbox="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png":::
 
     Regardez les détails de l’alerte et la chronologie de l’appareil, puis effectuez les étapes d’examen normales.
 

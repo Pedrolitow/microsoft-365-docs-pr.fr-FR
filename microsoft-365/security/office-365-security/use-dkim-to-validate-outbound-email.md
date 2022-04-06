@@ -20,12 +20,12 @@ ms.custom:
 description: Découvrez comment utiliser DKIM (DomainKeys Identified Mail) avec Microsoft 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 25333a1616bb1f4e4e529c17813bdd58f4c768b4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: fd236ff616ab585909b210c9c1b9a8f12b2e9fe2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312948"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472262"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé
 
@@ -34,7 +34,7 @@ ms.locfileid: "63312948"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
  Cet article répertorie les étapes de l’utilisation de DomainKeys Identified Mail (DKIM) avec Microsoft 365 pour vous assurer que les systèmes d’e-mail de destination approuvent les messages sortants envoyés à partir de votre domaine personnalisé.
 
@@ -89,13 +89,15 @@ Une fois votre domaine ajouté, suivez les étapes ci-dessous pour configurer DK
 
 Étape 1 : cliquer sur le domaine sur lequel vous souhaitez configurer DKIM sur la page DKIM (https://security.microsoft.com/dkimv2 ou https://protection.office.com/dkimv2)).
 
-![Page DKIM dans le portail Microsoft 365 Defender avec un domaine sélectionné.](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
+:::image type="content" source="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png" alt-text="Page DKIM dans le portail Microsoft 365 Defender avec un domaine sélectionné" lightbox="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png":::
 
 Étape 2 : faites glisser le bouton bascule pour **Activer**. Vous verrez une fenêtre contextuelle indiquant que vous devez ajouter des enregistrements CNAME.
 
-![Faire glisser le bouton bascule sur Activer pour l’activation de DKIM.](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+:::image type="content" source="../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png" alt-text="Menu volant Détails du domaine avec le bouton Créer des clés DKIM" lightbox="../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png":::
 
 Étape 3 : copier le CNAMES affiché dans la fenêtre contextuelle
+
+:::image type="content" source="../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png" alt-text="Fenêtre contextuelle Publier les noms de cluster qui contient les deux enregistrements CNAME à copier" lightbox="../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png":::
 
 Étape 4 : publier les enregistrements CNAME copiés sur votre fournisseur de services DNS.
 
@@ -110,7 +112,7 @@ TTL: 3600 (or your provider default)
 
 Étape 5 : revenir à la page DKIM pour activer DKIM.
 
-![Faire glisser le bouton bascule sur Activer pour l’activation de DKIM.](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+:::image type="content" source="../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png" alt-text="Bouton bascule pour activer DKIM" lightbox="../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png":::
 
 Si vous voyez l'erreur L’enregistrement CNAME n'existe pas, cela peut être dû à :
 
@@ -248,7 +250,7 @@ Une fois que vous avez publié les enregistrements CNAME dans le système DNS, v
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>Activation de la signature DKIM pour votre domaine personnalisé à l’aide de PowerShell
 
 > [!IMPORTANT]
-> :::image type="content" source="../../media/dkim.png" alt-text="Erreur « Aucune touche DKIM enregistrée pour ce domaine ».":::
+> :::image type="content" source="../../media/dkim.png" alt-text="Aucune clé DKIM enregistrée pour cette erreur de domaine" lightbox="../../media/dkim.png":::
 > Si vous configurez DKIM pour la première fois et que vous voyez l’erreur « Aucune clé DKIM enregistrée pour ce domaine », exécutez la commande à l’étape 2 ci-dessous (par exemple, `Set-DkimSigningConfig -Identity contoso.com -Enabled $true`) pour afficher la clé.
 
 1. [Connectez-vous à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
@@ -408,4 +410,5 @@ Consultez ensuite [**Utiliser DMARC pour valider le courrier**](use-dmarc-to-val
 
 Rotation des clés via PowerShell : [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
 
-[Utiliser DMARC pour valider les messages électroniques](use-dmarc-to-validate-email.md)
+[Utiliser DMARC pour valider les messages électroniques](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide&preserve-view=true)
+

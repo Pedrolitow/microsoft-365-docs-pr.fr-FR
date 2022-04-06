@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 91dd3dc8563e7bd443362c47190139101a5ede61
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: b5d9346746dba3b7b4c75909cb8e36e47c3c9d99
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464321"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472504"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analyseur de performances pour les Antivirus Microsoft Defender
 
@@ -74,7 +74,7 @@ Pour plus d’informations sur les paramètres de ligne de commande et les optio
 
 En fonction de la requête, l’utilisateur peut afficher les données pour le nombre d’analyses, la durée (total/min/average/max/median), le chemin d’accès, le processus et le motif de l’analyse. L’image ci-dessous montre un exemple de sortie pour une requête simple des 10 premiers fichiers pour l’impact de l’analyse. 
 
-:::image type="content" source="images/example-output.png" alt-text="Exemple de sortie pour une requête TopFiles de base":::
+:::image type="content" source="images/example-output.png" alt-text="Exemple de sortie pour une requête TopFiles de base" lightbox="images/example-output.png":::
 
 ### <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>Fonctionnalités supplémentaires : exportation et conversion en CSV et JSON
 
@@ -94,7 +94,7 @@ Pour obtenir des exemples qui décrivent le processus d’exportation et de conv
 ### <a name="requirements"></a>Conditions requises
 Antivirus Microsoft Defender’analyseur de performances présente les conditions préalables suivantes :
 
-- Versions Windows prise en charge : Windows 10, Windows 11 et Windows Server 2016 versions ultérieures
+- Versions Windows prise en charge : Windows 10, Windows 11, et Windows Server 2016 versions ultérieures
 - Version de la plateforme : 4.18.2108.7+
 - Version de PowerShell : PowerShell version 5.1, PowerShell ISE, Remote PowerShell (4.18.2201.10+), PowerShell 7.x (4.18.2201.10+)
 
@@ -149,7 +149,7 @@ $s = New-PSSession -ComputerName Server02 -Credential Domain01\User01
 New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $s
 ```
 
-La commande ci-dessus collecte un enregistrement des performances sur Server02 (comme spécifié par l’argument $s de paramètre Session) et l’enregistre dans le chemin d’accès spécifié : **C:\LocalPathOnServer02\trace.etl** sur Server02.
+La commande ci-dessus collecte un enregistrement des performances sur Server02 (comme spécifié par l’argument $s du paramètre Session) et l’enregistre dans le chemin d’accès spécifié : **C:\LocalPathOnServer02\trace.etl** sur Server02.
 
 #### <a name="parameters-new-mpperformancerecording"></a>Paramètres : New-MpPerformanceRecording
 

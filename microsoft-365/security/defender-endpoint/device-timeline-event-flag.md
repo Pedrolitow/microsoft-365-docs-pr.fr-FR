@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e6661a03043095ed2ae1ece194179d26476a703f
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 44292893249872c1c4b8dc3b4f66d10085fb0a2b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074773"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471184"
 ---
 # <a name="microsoft-defender-for-endpoint-device-timeline-event-flags"></a>Indicateurs d’événement de chronologie d’appareil Microsoft Defender pour point de terminaison
 
@@ -47,23 +47,16 @@ Lors de la navigation dans la chronologie de l’appareil, vous pouvez recherche
 ## <a name="flag-an-event"></a>Indicateur d’un événement
 
 1. Rechercher l’événement que vous souhaitez indicateur
-2. Cliquez sur l’icône d’indicateur dans la colonne Indicateur.
 
-   ![Image de l’indicateur de chronologie de l’appareil.](images/device-flags.png)
+2. Cliquez sur l’icône d’indicateur dans la colonne Indicateur. 
 
-3. Cliquez sur l’icône d’indicateur dans la colonne Indicateur.
-
-   ![Image de l’indicateur de chronologie de l’appareil](images/device-flags.png)
+:::image type="content" source="images/device-flags.png" alt-text="Indicateur de chronologie de l’appareil" lightbox="images/device-flags.png":::
 
 ## <a name="view-flagged-events"></a>Afficher les événements marqués
 
-1. Dans la section **Filtres de** chronologie, activez **les événements marqués.**
+1. Dans la section **Filtres de** chronologie, activez **les événements marqués**.
 2. Cliquez sur **Appliquer**. Seuls les événements marqués sont affichés.
 
-   Vous pouvez appliquer des filtres supplémentaires en cliquant sur la barre d’heure. Cela affiche uniquement les événements antérieurs à l’événement marqué.  
+Vous pouvez appliquer des filtres supplémentaires en cliquant sur la barre d’heure. Cela affiche uniquement les événements antérieurs à l’événement marqué.  
 
-   ![Image de l’indicateur de chronologie de l’appareil avec le filtre sur.](images/device-flag-filter.png)
-
-3. Cliquez sur **Appliquer**. Seuls les événements marqués sont affichés. Vous pouvez appliquer des filtres supplémentaires en cliquant sur la barre d’heure. Cela affiche uniquement les événements antérieurs à l’événement marqué.
-
-   ![Image de l’indicateur de chronologie de l’appareil avec le filtre sur](images/device-flag-filter.png)
+:::image type="content" source="images/device-flag-filter.png" alt-text="Indicateur de chronologie de l’appareil avec le filtre activé" lightbox="images/device-flag-filter.png":::

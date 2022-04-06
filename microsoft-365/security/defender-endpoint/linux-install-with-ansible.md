@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6a2c29d27814b4ed8c199b7a4db1ee10ce37b86c
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 57f0687fce422f26b76fc8b98a06ce0566f90f60
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156220"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476068"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Déployer Microsoft Defender pour point de terminaison sur Linux avec Ansible
 
@@ -45,7 +45,7 @@ Cet article explique comment déployer Defender pour point de terminaison sur Li
 
 Avant de commencer, consultez la page principale de [Defender for Endpoint sur Linux](microsoft-defender-endpoint-linux.md) pour obtenir une description des conditions préalables et de la requise pour la version logicielle actuelle.
 
-En outre, pour le déploiement Ansible, vous devez être familiarisé avec les tâches d’administration Ansible, configurer Ansible et savoir déployer des playbooks et des tâches. Ansible dispose de nombreuses façons d’effectuer la même tâche. Ces instructions supposent la disponibilité des modules Ansible pris en charge, tels que *apt* et *unarchive* pour vous aider à déployer le package. Votre organisation peut utiliser un flux de travail différent. Pour plus d’informations, voir la [documentation Ansible.](https://docs.ansible.com/)
+En outre, pour le déploiement Ansible, vous devez être familiarisé avec les tâches d’administration Ansible, configurer Ansible et savoir déployer des playbooks et des tâches. Ansible dispose de nombreuses façons d’effectuer la même tâche. Ces instructions supposent la disponibilité des modules Ansible pris en charge, tels que *apt* et *unarchive* pour vous aider à déployer le package. Votre organisation peut utiliser un flux de travail différent. Pour plus d’informations [, voir la documentation Ansible](https://docs.ansible.com/) .
 
 - Ansible doit être installé sur au moins un ordinateur (Ansible l’appelle le nœud de contrôle).
 - SSH doit être configuré pour un compte d’administrateur entre le nœud de contrôle et tous les nœuds gérés (sur les appareils sur qui Defender for Endpoint sera installé), et il est recommandé de le configurer avec l’authentification à clé publique.
@@ -73,9 +73,9 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
 
 1. Dans Microsoft 365 Defender portail, go to **Paramètres > Endpoints > Device management > Onboarding**.
 2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez Votre outil de gestion de **configuration Linux préféré** comme méthode de déploiement.
-3. Sélectionnez **Télécharger le package d’intégration.** Enregistrez le fichier sous WindowsDefenderATPOnboardingPackage.zip.
+3. **Sélectionnez Télécharger le package d’intégration**. Enregistrez le fichier sous WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft 365 Defender capture d’écran du portail.](images/portal-onboarding-linux-2.png)
+   :::image type="content" source="images/portal-onboarding-linux-2.png" alt-text="Option Télécharger le package d’intégration" lightbox="images/portal-onboarding-linux-2.png":::
 
 4. À partir d’une invite de commandes, vérifiez que vous avez le fichier. Extrayons le contenu de l’archive :
 
@@ -125,18 +125,18 @@ Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou 
       when: not mdatp_onboard.stat.exists
     ```
 
-- Ajoutez la clé et le référentiel Defender pour points de terminaison `add_apt_repo.yml` :
+- Ajoutez la clé et le référentiel Defender pour points de terminaison : `add_apt_repo.yml`
 
-    Defender pour le point de terminaison sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux.
+    Defender pour le point de terminaison sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous *le nom [canal]*) : *insiders-fast*, *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux.
 
     Le choix du canal détermine le type et la fréquence des mises à jour proposées à votre appareil. Les appareils *internes rapides* sont les premiers à recevoir des mises à jour et de nouvelles fonctionnalités, suivis ultérieurement par les *insiders-slow* et enfin par *prod*.
 
-    Afin d’afficher un aperçu des nouvelles fonctionnalités et de fournir des commentaires préliminaires, il est recommandé de configurer certains appareils dans votre entreprise pour utiliser les *insiders-fast* ou *insider-slow*.
+    Pour prévisualiser les nouvelles fonctionnalités et fournir des commentaires préliminaires, il est recommandé de configurer certains appareils de votre entreprise pour utiliser les *insiders-fast* ou *insider-slow*.
 
     > [!WARNING]
     > Le basculement du canal après l’installation initiale nécessite la réinstallation du produit. Pour basculer le canal de produit : désinstallez le package existant, configurez de nouveau votre appareil pour utiliser le nouveau canal et suivez les étapes de ce document pour installer le package à partir du nouvel emplacement.
 
-    Notez votre distribution et version et identifiez l’entrée la plus proche sous `https://packages.microsoft.com/config/[distro]/` .
+    Notez votre distribution et version et identifiez l’entrée la plus proche sous `https://packages.microsoft.com/config/[distro]/`.
 
     Dans les commandes suivantes, *remplacez [distro]* et *[version]* par les informations que vous avez identifiées.
 
@@ -237,7 +237,7 @@ Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou 
 
 ## <a name="deployment"></a>Déploiement
 
-Exécutez maintenant les fichiers de tâches sous `/etc/ansible/playbooks/` ou dans le répertoire approprié.
+Exécutez maintenant les fichiers de tâches sous ou `/etc/ansible/playbooks/` dans le répertoire approprié.
 
 - Installation :
 

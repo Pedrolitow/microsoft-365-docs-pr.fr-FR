@@ -21,12 +21,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à élever les paramètres de sécurité et à utiliser des rapports, des alertes et des enquêtes pour les comptes prioritaires dans Microsoft 365 organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f27e146df680b36c117816f0a07e45e0345c647a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c997f38e06444aab8ff6de550759959eb8f71d9f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63675413"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470766"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recommandations de sécurité pour les comptes prioritaires dans Microsoft 365
 
@@ -36,7 +36,7 @@ Pour les attaquants, les attaques par hameçonnage ordinaires qui castent un ré
 
 Microsoft 365 et Microsoft Defender pour Office 365 contiennent plusieurs fonctionnalités clés qui fournissent des couches de sécurité supplémentaires pour vos comptes prioritaires. Cet article décrit ces fonctionnalités et leur utilisation.
 
-![Résumé des recommandations de sécurité sous forme d’icône.](../../media/security-recommendations-for-priority-users.png)
+:::image type="content" source="../../media/security-recommendations-for-priority-users.png" alt-text="Résumé des recommandations de sécurité sous forme d’icône" lightbox="../../media/security-recommendations-for-priority-users.png":::
 
 |Tâche|Toutes les Office 365 Entreprise plan|Microsoft 365 E3|Microsoft 365 E5|
 |---|:---:|:---:|:---:|

@@ -1,6 +1,6 @@
 ---
 title: Préparer votre posture de sécurité pour votre premier incident
-description: Définissez la posture Microsoft 365 de sécurité de votre client pour votre premier incident dans Microsoft 365 Defender.
+description: Configurez la posture de sécurité de votre locataire Microsoft 365 pour votre premier incident dans Microsoft 365 Defender.
 keywords: incidents, alertes, enquêter, corrélation, attaque, machines, appareils, utilisateurs, identités, identité, boîte de réception, e-mail, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 92b7efdad61a4738310d5fb469400033f78363a8
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 0dbff9e88ed00dd8aa08fd64543266c3aef75d79
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64570148"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664081"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Préparer votre posture de sécurité pour votre premier incident
 
@@ -36,58 +36,58 @@ ms.locfileid: "64570148"
 **S’applique à :**
 - Microsoft 365 Defender
 
-La préparation de la gestion des incidents implique la configuration d’une protection suffisante du réseau d’une organisation contre différents types d’incidents de sécurité. Pour réduire le risque d’incidents de sécurité, le National Institute of Standards and Technology (NIST) recommande plusieurs pratiques de sécurité, notamment les évaluations des risques, le renforcement de la sécurité de l’hôte, la configuration de réseaux en toute sécurité et la prévention des programmes malveillants. 
+La préparation à la gestion des incidents implique la configuration d’une protection suffisante du réseau d’une organisation contre différents types d’incidents de sécurité. Pour réduire le risque d’incidents de sécurité, le National Institute of Standards and Technology (NIST) recommande plusieurs pratiques de sécurité, notamment les évaluations des risques, le renforcement de la sécurité des hôtes, la configuration sécurisée des réseaux et la prévention des programmes malveillants.
 
-Microsoft 365 Defender peuvent vous aider à résoudre plusieurs aspects de la prévention des incidents : 
+Microsoft 365 Defender pouvez vous aider à résoudre plusieurs aspects de la prévention des incidents :
 
-- Mise en œuvre [d’Confiance nulle](/security/zero-trust/) de gestion
-- Détermination de votre posture de sécurité en attribuant un score avec [le Niveau de sécurité Microsoft](microsoft-secure-score.md)
+- Implémentation d’une [infrastructure Confiance nulle](/security/zero-trust/)
+- Détermination de votre posture de sécurité en attribuant un score avec [microsoft secure score](microsoft-secure-score.md)
 - Prévention des menaces par le biais d’évaluations des vulnérabilités dans [la gestion des menaces et des vulnérabilités](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
-- Comprendre les dernières menaces de sécurité afin de pouvoir les préparer à l’analyse [des menaces](threat-analytics.md)
+- Comprendre les dernières menaces de sécurité afin de pouvoir les préparer avec [l’analytique des menaces](threat-analytics.md)
 
 ## <a name="step-1-implement-zero-trust"></a>Étape 1. Implémenter Confiance nulle
 
-[Confiance nulle](/security/zero-trust/) est une philosophie de sécurité intégrée et une stratégie de bout en bout qui considère la nature complexe de tout environnement moderne, y compris le personnel mobile et les utilisateurs, appareils, applications et données, où qu’ils se trouvent. En fournissant un seul volet de verre pour gérer toutes les détections de manière cohérente, Microsoft 365 Defender permet à votre équipe des opérations de sécurité d’implémenter plus facilement les principes [directeurs](/security/zero-trust/#guiding-principles-of-zero-trust) de Confiance nulle. 
+[Confiance nulle](/security/zero-trust/) est une philosophie de sécurité intégrée et une stratégie de bout en bout qui tient compte de la nature complexe de tout environnement moderne, y compris la main-d’œuvre mobile et les utilisateurs, appareils, applications et données, où qu’ils se trouvent. En fournissant un seul volet de verre pour gérer toutes les détections de manière cohérente, Microsoft 365 Defender pouvez faciliter l’implémentation des [principes directeurs](/security/zero-trust/#guiding-principles-of-zero-trust) de Confiance nulle par votre équipe chargée des opérations de sécurité.
 
-Les composants de Microsoft 365 Defender peuvent afficher des violations de règles qui ont été implémentées pour établir des stratégies d’accès conditionnel pour Confiance nulle en intégrant des données à partir de Microsoft Defender pour point de terminaison  ou d’autres fournisseurs de sécurité mobile en tant que source d’informations pour les stratégies de conformité des appareils et l’implémentation de stratégies d’accès conditionnel basées sur les appareils. 
+Les composants de Microsoft 365 Defender peuvent afficher des violations de règles qui ont été implémentées pour établir des stratégies d’accès conditionnel pour Confiance nulle en intégrant des données de Microsoft Defender pour point de terminaison  ou d’autres fournisseurs de sécurité mobile comme source d’informations pour les stratégies de conformité des appareils et l’implémentation des stratégies d’accès conditionnel basées sur les appareils.
 
-Le risque d’appareil influence directement les ressources qui seront accessibles par l’utilisateur de cet appareil. Le refus d’accès aux ressources en fonction de certains critères est le thème principal de Confiance nulle et Microsoft 365 Defender fournit les informations nécessaires pour déterminer les critères de niveau de confiance. Par exemple, Microsoft 365 Defender peut fournir le niveau de version logicielle d’un appareil via la page Gestion des menaces et des vulnérabilités, tandis que les stratégies d’accès conditionnel limitent les appareils qui ont des versions obsolètes ou vulnérables.
+Le risque d’appareil influence directement les ressources qui seront accessibles par l’utilisateur de cet appareil. Le refus d’accès aux ressources en fonction de certains critères est le thème principal de Confiance nulle et Microsoft 365 Defender fournit les informations nécessaires pour déterminer les critères de niveau de confiance. Par exemple, Microsoft 365 Defender pouvez fournir le niveau de version logicielle d’un appareil via la page Gestion des menaces et des vulnérabilités, tandis que les stratégies d’accès conditionnel limitent les appareils dont les versions sont obsolètes ou vulnérables.
 
-L’automatisation est un élément essentiel de l’implémentation et de la maintenance d’un environnement Confiance nulle tout en réduisant le nombre d’alertes susceptibles de conduire à des événements de réponse aux incidents (IR). Les composants de Microsoft 365 Defender peuvent être automatisés, tels que les [actions](m365d-autoir.md) de correction (appelées enquêtes pour un incident dans le portail Microsoft 365 Defender), les actions de notification et même la création de tickets de support tels que [dans ServiceNow](https://microsoft.service-now.com/sp/).
+L’automatisation est un élément essentiel de l’implémentation et de la maintenance d’un environnement Confiance nulle tout en réduisant le nombre d’alertes susceptibles d’entraîner des événements de réponse aux incidents (IR). Les composants de Microsoft 365 Defender peuvent être automatisés, tels que les [actions de correction](m365d-autoir.md) (appelées investigations pour un incident dans le portail Microsoft 365 Defender), les actions de notification et même la création de tickets de support comme dans [ServiceNow](https://microsoft.service-now.com/sp/).
 
 ## <a name="step-2-determine-your-organizations-security-posture"></a>Étape 2. Déterminer la posture de sécurité de votre organisation
 
-Ensuite, les organisations peuvent utiliser le Niveau de sécurité [Microsoft](microsoft-secure-score.md) dans Microsoft 365 Defender pour déterminer votre posture de sécurité actuelle et prendre en compte des recommandations sur la façon de l’améliorer. Plus le score est élevé, plus l’organisation a mis en place de recommandations de sécurité et d’actions d’amélioration. Les recommandations de niveau de sécurité peuvent être prises sur différents produits et permettre aux organisations d’augmenter leurs scores encore plus élevés. 
+Ensuite, les organisations peuvent utiliser le [score de sécurité Microsoft](microsoft-secure-score.md) dans Microsoft 365 Defender pour déterminer votre posture de sécurité actuelle et envisager des recommandations sur la façon de l’améliorer. Plus le score est élevé, plus les recommandations de sécurité et les actions d’amélioration ont été prises par l’organisation. Les recommandations de degré de sécurisation peuvent être prises sur différents produits et permettre aux organisations d’augmenter encore plus leurs scores.
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Page Score de sécurité Microsoft dans le portail Microsoft 365 Defender web" lightbox="../../media/first-incident-prepare/first-incident-secure-score.png":::
- 
-## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>Étape 3. Évaluer l’exposition aux vulnérabilités de votre organisation
+:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Page Microsoft Secure Score dans le portail Microsoft 365 Defender" lightbox="../../media/first-incident-prepare/first-incident-secure-score.png":::
 
-La prévention des incidents peut contribuer à rationaliser les opérations de sécurité afin de se concentrer sur les incidents de sécurité critiques et importants en cours. Les vulnérabilités logicielles sont souvent un point d’entrée empêchant les attaques qui peuvent entraîner un vol de données, une perte de données ou une perturbation des opérations de l’entreprise. Si aucune attaque n’est en cours, les opérations de sécurité doivent s’efforcer d’atteindre et de maintenir un niveau acceptable d’exposition aux vulnérabilités [dans leur](../defender-endpoint/tvm-exposure-score.md) organisation.
+## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>Étape 3. Évaluer l’exposition aux vulnérabilités de votre organisation
 
-Pour vérifier l’avancement des correctifs logiciels, consultez [la page Gestion](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) des menaces et des vulnérabilités dans Defender pour le point de terminaison, à laquelle vous pouvez accéder à partir de Microsoft 365 Defender via l’onglet **Ressources supplémentaires.**
+La prévention des incidents peut aider à simplifier les efforts des opérations de sécurité pour se concentrer sur les incidents de sécurité critiques et importants en cours. Les vulnérabilités logicielles sont souvent un point d’entrée évitable pour les attaques qui peuvent entraîner un vol de données, une perte de données ou une interruption des opérations commerciales. Si aucune attaque n’est en cours, les opérations de sécurité doivent s’efforcer d’atteindre et de maintenir un niveau acceptable [d’exposition aux vulnérabilités](../defender-endpoint/tvm-exposure-score.md) dans leur organisation.
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Page Menace et vulnérabilité dans le portail Microsoft 365 Defender’entreprise" lightbox="../../media/first-incident-prepare/first-incident-vulnerability.png"::: 
- 
+Pour vérifier la progression de la mise à jour corrective de votre logiciel, visitez la page [Gestion des menaces et des vulnérabilités](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) dans Defender pour point de terminaison, à laquelle vous pouvez accéder à partir de Microsoft 365 Defender sous l’onglet **Plus de ressources**.
+
+:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Page Menaces et vulnérabilités dans le portail Microsoft 365 Defender" lightbox="../../media/first-incident-prepare/first-incident-vulnerability.png":::
+
 ## <a name="4-understand-emerging-threats"></a>4. Comprendre les menaces émergentes
 
-Utilisez [l’analyse](threat-analytics.md) des menaces dans Microsoft 365 Defender portail pour rester à jour avec le paysage actuel des menaces de sécurité. Des chercheurs spécialisés en matière de sécurité Microsoft créent des rapports qui décrivent en détail les dernières cybermenaces afin que vous compreniez en quoi elles peuvent affecter votre abonnement Microsoft 365, vos appareils et vos utilisateurs. Ces rapports peuvent inclure les éléments suivants :
+Utilisez [l’analytique des menaces](threat-analytics.md) dans le portail Microsoft 365 Defender pour rester à jour avec le paysage actuel des menaces de sécurité. Des experts en sécurité Microsoft créent des rapports qui décrivent en détail les dernières cybermenaces afin de comprendre comment elles peuvent affecter votre abonnement, vos appareils et vos utilisateurs Microsoft 365. Ces rapports peuvent inclure :
 
-- Acteurs actifs contre les menaces et leurs campagnes
-- Techniques d’attaques nouvelles et populaires
+- Acteurs de menaces actifs et leurs campagnes
+- Techniques d’attaque populaires et nouvelles
 - Vulnérabilités critiques
 - Surface d'attaque courantes
 - Programmes malveillants répandus
 
-L’analyse des menaces examine également votre configuration et vos alertes pour déterminer la manière dont vous êtes à risque et si des alertes actives s’appliquent à un rapport.
+Analyse des menaces examine également votre configuration et vos alertes pour déterminer le niveau de risque et si des alertes actives s’appliquent à un rapport.
 
-Vous pouvez implémenter les recommandations d’une menace émergente pour renforcer votre posture de sécurité et réduire la surface d’attaque.
+Vous pouvez implémenter les recommandations d’une menace émergente pour renforcer votre posture de sécurité et réduire votre surface d’attaque.
 
-Veillez à consulter régulièrement la section [Analyse](threat-analytics.md) des menaces du portail Microsoft 365 Defender. Pour plus [d’informations, voir l’exemple d’Microsoft 365 Defender](incidents-overview.md#example-security-operations-for-microsoft-365-defender) sécurité pour plus d’informations.
+Prenez le temps de consulter régulièrement la section [Analyse des menaces](threat-analytics.md) du portail Microsoft 365 Defender. Pour plus d’informations, consultez [l’exemple d’opérations de sécurité pour Microsoft 365 Defender](incidents-overview.md#example-security-operations-for-microsoft-365-defender).
 
 ## <a name="next-step"></a>Étape suivante
 
-Découvrez comment trier [et analyser les incidents](first-incident-analyze.md).
+Découvrez comment [trier et analyser les incidents](first-incident-analyze.md).
 
 ## <a name="see-also"></a>Voir aussi
 

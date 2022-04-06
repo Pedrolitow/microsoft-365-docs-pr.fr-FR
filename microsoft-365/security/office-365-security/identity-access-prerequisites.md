@@ -19,18 +19,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 445cb497abfaa0e7e4322268a761aafbaa0e31d6
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8123b3602569ec1effcbf79cb12d242ab19d960e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680905"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472350"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>Travail prérequis pour l’implémentation de stratégies d’accès aux identités et appareils de confiance zéro
 
 Cet article décrit les conditions préalables que les administrateurs doivent respecter pour utiliser les stratégies recommandées d’accès aux identités et aux appareils de confiance zéro et pour utiliser l’accès conditionnel. Il décrit également les valeurs par défaut recommandées pour configurer les plateformes clientes pour une expérience d’sign-on unique (SSO) de meilleure choix.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
 Avant d’utiliser les stratégies d’accès aux appareils et aux identités de confiance zéro recommandées, votre organisation doit respecter les conditions préalables. Les exigences sont différentes pour les différents modèles d’identité et d’authentification répertoriés :
 
@@ -93,11 +93,11 @@ Les clients suivants sont recommandés lorsqu’une stratégie de documents séc
 
 |Plate-forme|Word/Excel/PowerPoint|OneNote|Application OneDrive|Application SharePoint|[Client de synchronisation OneDrive](/onedrive/enable-conditional-access)|
 |---|---|---|---|---|---|
-|Windows 11 ou Windows 10|Pris en charge|Pris en charge|N/A|S/O|Pris en charge|
-|Windows 8.1|Pris en charge|Pris en charge|N/A|S/O|Pris en charge|
+|Windows 11 ou Windows 10|Pris en charge|Pris en charge|N/A|N/A|Pris en charge|
+|Windows 8.1|Pris en charge|Pris en charge|N/A|N/A|Pris en charge|
 |Android|Pris en charge|Pris en charge|Pris en charge|Pris en charge|N/A|
 |iOS|Pris en charge|Pris en charge|Pris en charge|Pris en charge|N/A|
-|macOS|Pris en charge|Pris en charge|N/A|S/O|Non prise en charge|
+|macOS|Pris en charge|Pris en charge|N/A|N/A|Non prise en charge|
 |Linux|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge|
 
 ### <a name="microsoft-365-client-support"></a>Prise en charge du client Microsoft 365
@@ -122,6 +122,6 @@ Voici quelques recommandations supplémentaires :
 
 ## <a name="next-step"></a>Étape suivante
 
-[![Étape 2 : Configurez les stratégies d’accès conditionnel d’accès et d’identité Zero Trust courantes.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
+[![Étape 2 : Configurez les stratégies d’accès conditionnel d’accès et d’identité Zero Trust courantes.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png#lightbox)](identity-access-policies.md)
 
 [Configurer les stratégies courantes d’accès aux appareils et aux identités de confiance zéro](identity-access-policies.md)

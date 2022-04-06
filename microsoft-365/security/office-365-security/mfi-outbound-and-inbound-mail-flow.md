@@ -14,12 +14,12 @@ ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Les administrateurs peuvent en savoir plus sur les informations sur le flux de messagerie sortant et entrant dans le tableau de bord flux de messagerie du Centre de sécurité & conformité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5de9c699a12a7c3f282c4e1752eb23c5842a8c5d
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 3bc9d6c08dfc1c232018d79e988d741505079604
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679607"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475716"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Informations sur le flux de messagerie sortant et entrant dans le Centre de sécurité & conformité
 
@@ -34,7 +34,7 @@ L’aperçu du flux de messagerie sortant et entrant dans [](mail-flow-insights-
 
 Le widget affiche le chiffrement TLS utilisé pour la connexion lorsque des messages sont remis à et depuis votre organisation. Les connexions établies avec d’autres services de messagerie sont chiffrées par TLS lorsque TLS est proposé par les deux côtés. Le widget offre un instantané de la dernière semaine de flux de messagerie.
 
-![Widget de flux de messagerie sortant et entrant dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité.](../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png)
+:::image type="content" source="../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png" alt-text="Widget de flux de messagerie sortant et entrant dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité" lightbox="../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png":::
 
 Les informations du widget sont liées aux connecteurs et à la protection des messages TLS Microsoft 365. Pour plus d'informations, voir les rubriques suivantes :
 
@@ -46,7 +46,7 @@ Les informations du widget sont liées aux connecteurs et à la protection des m
 
 Lorsque vous cliquez sur Afficher les **détails** sur le widget, le volant Message protégé en **transit (par TLS)** vous présente la protection TLS pour les messages entrants et sortants de votre organisation.
 
-![Message protégé en transit (par TLS) qui s’affiche après que vous avez cliqué sur Afficher les détails sur le widget de messagerie sortant et entrant.](../../media/mfi-outbound-and-inbound-mail-flow-report-details.png)
+:::image type="content" source="../../media/mfi-outbound-and-inbound-mail-flow-report-details.png" alt-text="Le flyout Messages protégés en transit (par TLS) qui s’affiche après que vous avez cliqué sur Afficher les détails sur le widget de messagerie sortant et entrant" lightbox="../../media/mfi-outbound-and-inbound-mail-flow-report-details.png":::
 
 Actuellement, TLS 1.2 est la version de TLS la plus sécurisée proposée par Microsoft 365. Souvent, vous devez connaître le chiffrement TLS utilisé pour les audits de conformité. Vous n’avez probablement pas de relation directe avec la plupart des serveurs de messagerie source et de destination (vous ne les possédez pas, et Microsoft non plus), vous n’avez donc pas beaucoup d’options pour améliorer le chiffrement TLS utilisé par ces serveurs.
 

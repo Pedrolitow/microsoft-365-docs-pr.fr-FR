@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-endpointprotect
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a7a9673591f4d77197390541a58169a58b04fe91
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 116960ed6e7d4a765479f0c76715e48ec8312e3b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61872428"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472086"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Déployer Microsoft Defender pour le point de terminaison dans des anneaux
 
@@ -42,7 +42,7 @@ Les anneaux de déploiement peuvent être appliqués dans les scénarios suivant
 
 ## <a name="new-deployments"></a>Nouveaux déploiements
 
-![Image des anneaux de déploiement.](images/deployment-rings.png)
+:::image type="content" source="images/deployment-rings.png" alt-text="Anneaux de déploiement" lightbox="images/deployment-rings.png":::
 
 Une approche basée sur l’anneau permet d’identifier un ensemble de points de terminaison à intégrer et de vérifier que certains critères sont satisfaits avant de poursuivre le déploiement du service sur un plus grand nombre d’appareils. Vous pouvez définir les critères de sortie de chaque anneau et vous assurer qu’ils sont satisfaits avant de passer à l’anneau suivant.
 
@@ -50,7 +50,7 @@ L’adoption d’un déploiement basé sur l’anneau permet de réduire les pro
 
 Le tableau 1 fournit un exemple des anneaux de déploiement que vous pouvez utiliser.
 
-**Tableau 1**:
+**Tableau 1** :
 
 <br>
 
@@ -84,7 +84,7 @@ Le tableau suivant présente les points de terminaison pris en charge et l’out
 
 | Point de terminaison     | Outil de déploiement                       |
 |--------------|------------------------------------------|
-| **Fenêtres**  |  [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br> REMARQUE : si vous souhaitez déployer plus de 10 appareils dans un environnement de production, utilisez plutôt la méthode de stratégie de groupe ou les autres outils pris en charge répertoriés ci-dessous.<br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Gestionnaire de périphériques mobiles](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration de à Microsoft Defender pour le cloud](configure-server-endpoints.md#integration-with-azure-defender)  |
+| **Fenêtres**  |  [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br> REMARQUE : si vous souhaitez déployer plus de 10 appareils dans un environnement de production, utilisez plutôt la méthode de stratégie de groupe ou les autres outils pris en charge répertoriés ci-dessous.<br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Gestionnaire de périphériques mobiles](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration de à Microsoft Defender pour le cloud](configure-server-endpoints.md#integration-with-azure-defender)  |
 | **MacOS**    | [Script local](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Gestion des appareils mobiles](mac-install-with-other-mdm.md) |
 | **Serveur Linux** | [Script local](linux-install-manually.md) <br> [Sondent](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Microsoft Endpoint Manager](ios-install.md)                                |
@@ -96,15 +96,15 @@ Le tableau suivant présente les points de terminaison pris en charge et l’out
 
 Utilisez les documents suivants pour sélectionner l’architecture microsoft Defender pour point de terminaison appropriée qui convient le mieux à votre organisation.
 
-|**Item**|**Description**|
+|**Élément**|**Description**|
 |:-----|:-----|
-|[![Image miniature de la stratégie de déploiement de Point de terminaison Microsoft Defender.](images/mde-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | Le matériel architectural vous aide à planifier votre déploiement pour les architectures suivantes : <ul><li> Cloud-natif </li><li> Cogestion </li><li> Sur site</li><li>Évaluation et intégration locale</li></ul>
+|[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="Stratégie pour le déploiement de Microsoft Defender pour les points de terminaison" lightbox="images/mde-deployment-strategy.png":::](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | Le matériel architectural vous aide à planifier votre déploiement pour les architectures suivantes : <ul><li> Cloud-natif </li><li> Cogestion </li><li> Sur site</li><li>Évaluation et intégration locale</li></ul>
 
 ## <a name="existing-deployments"></a>Déploiements existants
 
 ### <a name="windows-endpoints"></a>Windows de terminaison
 
-Pour Windows serveurs et/ou Windows, vous sélectionnez plusieurs ordinateurs à tester à l’avance (avant le correctif de mardi) à l’aide du programme DE VALIDATION de mise à jour de sécurité **(PROGRAMME).**
+Pour les serveurs Windows et/ou Windows, vous sélectionnez plusieurs ordinateurs à tester à l’avance (avant le correctif de mardi) à l’aide du programme DE VALIDATION de mise à jour de sécurité **(CASP).**
 
 Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
@@ -120,7 +120,8 @@ Avec macOS et Linux, vous pouvez prendre quelques systèmes et les exécuter dan
 
 Le choix du canal détermine le type et la fréquence des mises à jour proposées à votre appareil. Les appareils en version bêta sont les premiers à recevoir des mises à jour et de nouvelles fonctionnalités, suivis plus tard de la prévisualisation et enfin de l’état actuel.
 
-![Image des anneaux internes.](images/insider-rings.png)
+:::image type="content" source="images/insider-rings.png" alt-text="Les anneaux insider" lightbox="images/insider-rings.png":::
+
 
 Pour prévisualiser les nouvelles fonctionnalités et fournir des commentaires préliminaires, il est recommandé de configurer certains appareils de votre entreprise pour qu’ils utilisent la version bêta ou la prévisualisation.
 

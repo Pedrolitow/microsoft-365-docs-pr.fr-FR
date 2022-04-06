@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 28533f2ad3fcf547cab95812048b3de8af3bcb9a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 152c0c54138841d9159c7230fc043307979e4546
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324268"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471822"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Configurer et gérer les fonctionnalités de Spécialistes des menaces Microsoft
 
@@ -52,15 +52,15 @@ Si vous êtes déjà un client Defender for Endpoint, vous pouvez l’appliquer 
 
 2. Cliquez sur **Appliquer**.
 
-    ![Image de Spécialistes des menaces Microsoft paramètres.](images/mte-collaboratewithmte.png)
+   :::image type="content" source="images/mte-collaboratewithmte.png" alt-text="Paramètres Spécialistes des menaces Microsoft paramètres" lightbox="images/mte-collaboratewithmte.png":::
 
 3. Entrez votre nom et votre adresse e-mail afin que Microsoft puisse vous revenir sur votre application.
 
-    ![Image de l Spécialistes des menaces Microsoft application.](images/mte-apply.png)
+   :::image type="content" source="images/mte-apply.png" alt-text="Champ Nom de la page Spécialistes des menaces Microsoft’application" lightbox="images/mte-apply.png":::
 
 4. Lisez [la déclaration de](https://privacy.microsoft.com/privacystatement) confidentialité, puis cliquez **sur Envoyer** lorsque vous avez terminé. Vous recevrez un e-mail de bienvenue une fois votre application approuvée.
 
-    ![Image de la Spécialistes des menaces Microsoft de l’application.](images/mte-applicationconfirmation.png)
+   :::image type="content" source="images/mte-applicationconfirmation.png" alt-text="Message de confirmation Spécialistes des menaces Microsoft’application" lightbox="images/mte-applicationconfirmation.png":::
 
 Lorsqu’il est accepté, vous recevez un e-mail de bienvenue  et le bouton Appliquer change sur un bouton bascule qui est « sur ». Si vous souhaitez vous dérender du service Notifications d’attaques ciblées, faites glisser le bouton bascule vers  le bas et cliquez sur Enregistrer les préférences en bas de la page.
 
@@ -105,15 +105,15 @@ Vous pouvez travailler en partenariat avec Spécialistes des menaces Microsoft q
 
 2. Dans le menu supérieur droit, cliquez sur **le bouton ?** . Ensuite, **sélectionnez Consulter un expert en menaces**.
 
-    ![Image de Spécialistes des menaces Microsoft experts à la demande dans le menu.](images/mte-eod-menu.png)
+    :::image type="content" source="images/mte-eod-menu.png" alt-text="L’Spécialistes des menaces Microsoft de menu Experts à la demande" lightbox="images/mte-eod-menu.png":::
 
     Un écran volant s’ouvre. L’écran suivant indique quand vous êtes sur un abonnement d’essai.
 
-    ![Image de l Spécialistes des menaces Microsoft d’experts à la demande.](images/mte-eod.png)
+    :::image type="content" source="images/mte-eod.png" alt-text="Page Spécialistes des menaces Microsoft experts à la demande" lightbox="images/mte-eod.png":::
 
     L’écran suivant montre quand vous êtes sur un abonnement Spécialistes des menaces Microsoft - Experts à la demande.
 
-    ![Image de l Spécialistes des menaces Microsoft d’abonnement complet Experts à la demande.](images/mte-eod-fullsubscription.png)
+    :::image type="content" source="images/mte-eod-fullsubscription.png" alt-text="Page complète Spécialistes des menaces Microsoft Experts à la demande" lightbox="images/mte-eod-fullsubscription.png":::
 
     Le **champ Rubrique de** la requête est pré-rempli avec le lien vers la page concernée pour votre demande d’enquête. Par exemple, un lien vers la page de détails de l’incident, de l’alerte ou de l’appareil que vous étiez lorsque vous avez effectué la demande.
 
@@ -160,7 +160,7 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide du Microsoft Serv
 
 ### <a name="receive-a-progress-report-about-your-managed-hunting-inquiry"></a>Recevoir un rapport d’avancement sur votre demande de recherche gérée
 
-Les réponses des experts microsoft en matière de menaces varient en fonction de votre demande. Ils vous envoient un rapport d’avancement sur  votre examen expert en menaces dans un délai de deux jours, pour communiquer l’état de l’enquête dans les catégories suivantes :
+La réponse de Spécialistes des menaces Microsoft varie en fonction de votre demande. Ils vous envoient un rapport d’avancement sur  votre examen expert en menaces dans un délai de deux jours, pour communiquer l’état de l’enquête dans les catégories suivantes :
 
 - Plus d’informations sont nécessaires pour poursuivre l’enquête
 - Un fichier ou plusieurs exemples de fichiers sont nécessaires pour déterminer le contexte technique
@@ -172,4 +172,4 @@ Il est essentiel de répondre rapidement pour que l’enquête continue de se d�
 ## <a name="related-topic"></a>Rubrique connexe
 
 - [Vue d’ensemble des spécialistes des menaces Microsoft](microsoft-threat-experts.md)
-- [Vue d’ensemble des experts microsoft en matière de menaces dans Microsoft 365](/microsoft-365/security/mtp/microsoft-threat-experts)
+- [Spécialistes des menaces Microsoft vue d’ensemble Microsoft 365'ensemble](/microsoft-365/security/mtp/microsoft-threat-experts)

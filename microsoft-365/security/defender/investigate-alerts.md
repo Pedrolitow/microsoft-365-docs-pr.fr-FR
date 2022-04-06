@@ -1,7 +1,7 @@
 ---
 title: Examiner les alertes dans Microsoft 365 Defender
-description: Examiner les alertes visibles sur les appareils, les utilisateurs et les boîtes aux lettres.
-keywords: incidents, alertes, examiner, analyser, réponse, corrélation, attaque, ordinateurs, appareils, utilisateurs, identités, identité, boîte aux lettres, courrier électronique, 365, microsoft, m365
+description: Examinez les alertes vues sur les appareils, les utilisateurs et les boîtes aux lettres.
+keywords: incidents, alertes, examiner, analyser, réponse, corrélation, attaque, machines, appareils, utilisateurs, identités, identité, boîte aux lettres, e-mail, 365, microsoft, m365
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -21,53 +21,53 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: c09a3880a9f117d0ce5ce6e5edf3736192fc9c95
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 20ae5bd77b9a4a962093db1e3d92d8f765a9a9a3
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499856"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664697"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
 >[!Note]
->Cet article décrit les alertes de sécurité dans Microsoft 365 Defender. Toutefois, vous pouvez utiliser des alertes d’activité pour envoyer des notifications par courrier électronique à vous-même ou à d’autres administrateurs lorsque les utilisateurs effectuent des activités spécifiques dans Microsoft 365. Pour plus d’informations, voir [Créer des alertes d’activité - Microsoft 365 conformité | Microsoft Docs](../../compliance/create-activity-alerts.md).
+>Cet article décrit les alertes de sécurité dans Microsoft 365 Defender. Toutefois, vous pouvez utiliser des alertes d’activité pour envoyer des notifications par e-mail à vous-même ou à d’autres administrateurs lorsque les utilisateurs effectuent des activités spécifiques dans Microsoft 365. Pour plus d’informations, consultez [Créer des alertes d’activité - Microsoft 365 conformité | Microsoft Docs](../../compliance/create-activity-alerts.md).
 
 Les alertes sont la base de tous les incidents et indiquent l’occurrence d’événements malveillants ou suspects dans votre environnement. Les alertes font généralement partie d’une attaque plus large et fournissent des indices sur un incident.
 
-Dans Microsoft 365 Defender, les alertes associées sont regroupées pour former des [incidents](incidents-overview.md). Les incidents fournissent toujours le contexte plus large d’une attaque, mais l’analyse des alertes peut être utile lorsque des analyses plus approfondies sont nécessaires.
+Dans Microsoft 365 Defender, les alertes associées sont agrégées pour former [des incidents](incidents-overview.md). Les incidents fournissent toujours le contexte plus large d’une attaque. Toutefois, l’analyse des alertes peut être utile lorsque des analyses plus approfondies sont nécessaires.
 
-La **file d’attente Alertes** affiche l’ensemble actuel des alertes. Vous arrivez à la file d’attente des **alertes à partir d’incidents & alertes > alertes** sur le lancement rapide du [portail Microsoft 365 Defender web](https://go.microsoft.com/fwlink/p/?linkid=2077139).
+La **file d’attente Alertes** affiche l’ensemble actuel d’alertes. Vous accédez à la file d’attente d’alertes à partir **des incidents & alertes > alertes** lors du lancement rapide du [portail Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2077139).
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Section Alertes dans le portail Microsoft 365 Defender web" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Section Alertes dans le portail Microsoft 365 Defender" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png":::
 
-Des alertes provenant de différentes solutions de sécurité Microsoft telles que Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365 et Microsoft 365 Defender apparaissent ici.
+Les alertes provenant de différentes solutions de sécurité Microsoft telles que Microsoft Defender pour point de terminaison, Microsoft Defender pour Office 365 et Microsoft 365 Defender apparaissent ici.
 
-Par défaut, la file d’attente des alertes du portail Microsoft 365 Defender affiche les alertes nouvelles et en cours depuis les 30 derniers jours. L’alerte la plus récente se trouve en haut de la liste pour que vous la voyez en premier. 
+Par défaut, la file d’attente d’alertes dans le portail Microsoft 365 Defender affiche les alertes nouvelles et en cours des 30 derniers jours. L’alerte la plus récente se trouve en haut de la liste pour que vous puissiez la voir en premier. 
 
-Dans la file d’attente des alertes par défaut, vous pouvez  sélectionner **Filtrer** pour voir un volet Filtre, à partir duquel vous pouvez spécifier un sous-ensemble des alertes. Voici un exemple.
+Dans la file d’attente d’alertes par défaut, vous pouvez sélectionner **Filtrer** pour afficher un volet **Filtre** , à partir duquel vous pouvez spécifier un sous-ensemble des alertes. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Section Filtres dans le portail Microsoft 365 Defender web." lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Section Filtres dans le portail Microsoft 365 Defender." lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png":::
 
-Vous pouvez filtrer les alertes en fonction de ces critères :
+Vous pouvez filtrer les alertes en fonction des critères suivants :
 
 - Severity
 - État
 - Sources de service
-- Entités (les biens touchés)
-- État d’examen automatisé
+- Entités (ressources impactées)
+- État d’investigation automatisé
 
-## <a name="required-roles-for-defender-for-office-365-alerts"></a>Rôles requis pour Defender pour les alertes Office 365 de sécurité
+## <a name="required-roles-for-defender-for-office-365-alerts"></a>Rôles requis pour les alertes Defender pour Office 365
 
 Vous devez avoir l’un des rôles suivants pour accéder à Microsoft Defender pour Office 365 alertes :
 
-- Pour les Azure Active Directory (Azure AD) globaux :
+- Pour les rôles globaux Azure Active Directory (Azure AD) :
 
    - Administrateur général
 
@@ -79,7 +79,7 @@ Vous devez avoir l’un des rôles suivants pour accéder à Microsoft Defender 
 
    - Lecteur de sécurité
 
-- Office 365 groupes de rôles de conformité & sécurité et conformité
+- Office 365 groupes de rôles de conformité & de sécurité
 
    - Administrateur de conformité
 
@@ -89,126 +89,126 @@ Vous devez avoir l’un des rôles suivants pour accéder à Microsoft Defender 
 
 ## <a name="analyze-an-alert"></a>Analyser une alerte
 
-Pour voir la page principale de l’alerte, sélectionnez le nom de l’alerte. Voici un exemple.
+Pour afficher la page d’alerte principale, sélectionnez le nom de l’alerte. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Détails d’une alerte dans le portail Microsoft 365 Defender web" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Détails d’une alerte dans le portail Microsoft 365 Defender" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png":::
 
-Vous pouvez également sélectionner l’action **Ouvrir la page d’alerte** principale dans le volet Gérer **les** alertes.
+Vous pouvez également sélectionner l’action **Ouvrir la page d’alerte principale** dans le volet **Gérer les alertes** .
 
-Une page d’alerte se compose des sections suivantes : 
+Une page d’alerte est composée des sections suivantes : 
 
-- Article d’alerte, qui est la chaîne d’événements et d’alertes liés à cette alerte dans l’ordre chronologique
-- Détails récapitulatifs
+- Histoire d’alerte, qui est la chaîne d’événements et d’alertes liés à cette alerte dans l’ordre chronologique
+- Détails du résumé
 
-Dans une page d’alerte, vous pouvez sélectionner les ellipses (**...**) en regard de n’importe quelle entité pour voir les actions disponibles, telles que la liaison de l’alerte à un autre incident. La liste des actions disponibles dépend du type d’alerte.
+Dans une page d’alerte, vous pouvez sélectionner les points de suspension (**...**) en regard de n’importe quelle entité pour afficher les actions disponibles, telles que la liaison de l’alerte à un autre incident. La liste des actions disponibles dépend du type d’alerte.
 
 ### <a name="alert-sources"></a>Sources d’alerte
 
-Microsoft 365 Defender alertes peuvent être issues de solutions telles que Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Microsoft Defender pour les applications cloud et le module de gouvernance des applications pour Microsoft Defender pour les applications cloud. Vous remarquerez peut-être des alertes avec des caractères prédépendants dans l’alerte. Le tableau suivant fournit des conseils pour vous aider à comprendre le mappage des sources d’alerte en fonction du caractère prédépendant de l’alerte.
+Microsoft 365 Defender alertes peuvent provenir de solutions telles que Microsoft Defender pour point de terminaison, Microsoft Defender pour Office 365, Microsoft Defender for Cloud Apps et le module complémentaire de gouvernance des applications pour Microsoft Defender for Cloud Apps. Vous remarquerez peut-être des alertes avec des caractères ajoutés dans l’alerte. Le tableau suivant fournit des conseils pour vous aider à comprendre le mappage des sources d’alerte en fonction du caractère ajouté sur l’alerte.
 
 > [!NOTE]
-> - Les GUID prédépendants sont spécifiques uniquement aux expériences unifiées telles que la file d’attente des alertes unifiées, la page des alertes unifiées, l’examen unifié et l’incident unifié.
-> - Le caractère précédé ne modifie pas le GUID de l’alerte. La seule modification du GUID est le composant prédépendant.
+> - Les GUID ajoutés sont spécifiques uniquement aux expériences unifiées telles que la file d’attente des alertes unifiées, la page des alertes unifiées, l’investigation unifiée et l’incident unifié.
+> - Le caractère ajouté ne modifie pas le GUID de l’alerte. La seule modification apportée au GUID est le composant ajouté.
 
-| Source de l’alerte | Caractère en prédépendant |
+| Source de l’alerte | Caractère ajouté |
 | :---|:--- |
 | Microsoft Defender pour Office 365 | `fa{GUID}` <br> Exemple : `fa123a456b-c789-1d2e-12f1g33h445h6i` |
-| Microsoft Defender pour point de terminaison | `da` ou pour `ed` les alertes de détection personnalisées <br> |
+| Microsoft Defender pour point de terminaison | `da` ou `ed` pour les alertes de détection personnalisées <br> |
 | Microsoft Defender pour Identity | `aa{GUID}` <br> Exemple : `aa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender for Cloud Apps |`ca{GUID}` <br> Exemple : `ca123a456b-c789-1d2e-12f1g33h445h6i` |
 
 ### <a name="analyze-affected-assets"></a>Analyser les ressources affectées
 
-La section **Actions entreprises** contient une liste des biens concernés, tels que les boîtes aux lettres, les appareils et les utilisateurs affectés par cette alerte. 
+La section **Actions effectuées** contient une liste des ressources affectées, telles que les boîtes aux lettres, les appareils et les utilisateurs affectés par cette alerte. 
 
-Vous pouvez également sélectionner **Afficher dans le centre de actions** pour  afficher l’onglet  Historique du centre de actions dans le portail Microsoft 365 Defender web. 
+Vous pouvez également sélectionner **Afficher dans le centre d’actions** pour afficher l’onglet **Historique** du **centre d’actions** dans le portail Microsoft 365 Defender. 
 
-### <a name="trace-an-alerts-role-in-the-alert-story"></a>Suivre le rôle d’une alerte dans l’article d’alerte
+### <a name="trace-an-alerts-role-in-the-alert-story"></a>Suivre le rôle d’une alerte dans l’histoire de l’alerte
 
-L’article d’alerte affiche toutes les ressources ou entités associées à l’alerte dans une arborescence de processus. L’alerte dans le titre est celle qui est sélectionnée lorsque vous vous pointez pour la première fois sur la page de votre alerte sélectionnée. Les ressources de l’article d’alerte sont ex expandables et peuvent être cliquées. Ils fournissent des informations supplémentaires et accélèrent votre réponse en vous permettant d’agir directement dans le contexte de la page d’alerte. 
+L’article d’alerte affiche toutes les ressources ou entités associées à l’alerte dans une arborescence de processus. L’alerte dans le titre est celle en question lorsque vous accédez pour la première fois à la page de l’alerte sélectionnée. Les ressources de l’article d’alerte sont extensibles et accessibles en un clic. Ils fournissent des informations supplémentaires et accélèrent votre réponse en vous permettant d’agir correctement dans le contexte de la page d’alerte. 
 
 > [!NOTE]
-> La section de l’article sur l’alerte peut contenir plusieurs alertes, avec des alertes supplémentaires liées à la même arborescence d’exécution apparaissant avant ou après l’alerte que vous avez sélectionnée.
+> La section d’histoire des alertes peut contenir plusieurs alertes, avec des alertes supplémentaires liées à l’arborescence d’exécution qui s’affiche avant ou après l’alerte que vous avez sélectionnée.
 
 ### <a name="view-more-alert-information-on-the-details-page"></a>Afficher plus d’informations sur les alertes sur la page de détails
 
-La page de détails affiche les détails de l’alerte sélectionnée, ainsi que les détails et les actions qui y sont associés. Si vous sélectionnez l’une des ressources ou entités affectées dans l’article d’alerte, la page de détails change pour fournir des informations contextuelles et des actions pour l’objet sélectionné.
+La page de détails affiche les détails de l’alerte sélectionnée, avec les détails et les actions qui y sont associés. Si vous sélectionnez l’une des ressources ou entités affectées dans l’article d’alerte, la page de détails change pour fournir des informations contextuelles et des actions pour l’objet sélectionné.
 
-Une fois que vous avez sélectionné une entité d’intérêt, la page de détails change pour afficher les informations sur le type d’entité sélectionné, les informations historiques lorsqu’elle est disponible et les options d’action sur cette entité directement à partir de la page d’alerte.
+Une fois que vous avez sélectionné une entité d’intérêt, la page de détails change pour afficher des informations sur le type d’entité sélectionné, des informations historiques lorsqu’elle est disponible et des options d’action sur cette entité directement à partir de la page d’alerte.
 
 ## <a name="manage-alerts"></a>Gérer des alertes
 
-Pour gérer une alerte, sélectionnez **Gérer l’alerte** dans la section Détails du résumé de la page d’alerte. Pour une seule alerte, voici un exemple du volet Gérer **les** alertes.
+Pour gérer une alerte, sélectionnez **Gérer l’alerte** dans la section Résumé des détails de la page d’alerte. Pour une seule alerte, voici un exemple du volet **Gérer l’alerte** .
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Section Gérer les alertes dans le portail Microsoft 365 Defender web" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Section Gérer les alertes dans le portail Microsoft 365 Defender" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png":::
 
-Le **volet Gérer les** alertes vous permet d’afficher ou de spécifier :
+Le volet **Gérer les alertes** vous permet d’afficher ou de spécifier :
 
 - État de l’alerte (Nouveau, Résolu, En cours).
-- Compte d’utilisateur qui a reçu l’alerte.
+- Compte d’utilisateur auquel l’alerte a été attribuée.
 - Classification de l’alerte :
 
-   - **Non définie** (valeur par défaut).
+   - **Non défini** (valeur par défaut).
 
-   - **Vrai positif avec** un type de menace. Utilisez cette classification pour les alertes qui indiquent avec précision une menace réelle. Spécifier le type de menace permet à votre équipe de sécurité de voir les modèles de menace et d’agir pour défendre votre organisation contre celles-ci.
+   - **Vrai positif** avec un type de menace. Utilisez cette classification pour les alertes qui indiquent avec précision une menace réelle. Spécifier le type de menace permet à votre équipe de sécurité de voir les modèles de menace et d’agir pour défendre votre organisation contre celles-ci.
 
-   - **Activité d’information attendue avec** un type d’activité. Utilisez les options de cette catégorie pour classer les alertes pour les tests de sécurité, l’activité de l’équipe rouge et le comportement inhabituel attendu des applications et des utilisateurs de confiance.
+   - **Activité informationnelle attendue** avec un type d’activité. Utilisez les options de cette catégorie pour classer les alertes pour les tests de sécurité, l’activité de l’équipe rouge et le comportement inhabituel attendu des applications et des utilisateurs approuvés.
 
-   - **Faux positif pour** les types d’alertes qui ont été créés même en l’absence d’activité malveillante. La classification des alertes comme faux positifs Microsoft 365 Defender améliorer sa qualité de détection.
+   - **Faux positif** pour les types d’alertes qui ont été créés même en l’absence d’activité malveillante. La classification des alertes en tant que faux positifs permet Microsoft 365 Defender d’améliorer sa qualité de détection.
 
-- Commentaire de l’alerte.
+- Commentaire sur l’alerte.
 
 > [!NOTE]
-> Une façon de gérer les alertes par le biais de l’utilisation de balises. La fonctionnalité de marquage de Microsoft Defender pour Office 365 est déployée de manière incrémentielle et est actuellement en prévisualisation. <br>
-> Actuellement, les noms de balise modifiés sont appliqués uniquement aux alertes créées *après la* mise à jour. Les alertes qui ont été générées avant la modification ne reflètent pas le nom de balise mis à jour. 
+> Une façon de gérer les alertes via l’utilisation de balises. La fonctionnalité d’étiquetage pour Microsoft Defender pour Office 365 est déployée de façon incrémentielle et est actuellement en préversion. <br>
+> Actuellement, les noms de balise modifiés sont appliqués uniquement aux alertes créées *après* la mise à jour. Les alertes qui ont été générées avant la modification ne reflètent pas le nom de balise mis à jour. 
 
-Pour gérer un *ensemble d’alertes similaire à* une alerte spécifique, sélectionnez Afficher les **alertes similaires** dans la zone **INSIGHT** de la section détails récapitulatifs de la page d’alerte.
+Pour gérer un *ensemble d’alertes similaire à une alerte spécifique*, sélectionnez **Afficher des alertes similaires** dans la zone **Insight** dans la section Détails du résumé de la page d’alerte.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" alt-text="Gérer une alerte dans le portail Microsoft 365 Defender web":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" alt-text="Gérer une alerte dans le portail Microsoft 365 Defender":::
 
-Dans le **volet Gérer les alertes** , vous pouvez ensuite classer toutes les alertes associées en même temps. Voici un exemple.
+Dans le volet **Gérer les alertes** , vous pouvez ensuite classer toutes les alertes associées en même temps. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" alt-text="Gestion des alertes associées dans le portail Microsoft 365 Defender web":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" alt-text="Gestion des alertes associées dans le portail Microsoft 365 Defender":::
 
-Si des alertes similaires ont déjà été classifiées dans le passé, vous pouvez gagner du temps en utilisant Microsoft 365 Defender recommandations pour découvrir comment les autres alertes ont été résolues. Dans la section Détails du résumé, **sélectionnez Recommandations**.
+Si des alertes similaires ont déjà été classifiées dans le passé, vous pouvez gagner du temps en utilisant Microsoft 365 Defender recommandations pour découvrir comment les autres alertes ont été résolues. Dans la section Détails du résumé, sélectionnez **Recommandations**.
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" alt-text="Exemple de sélection de recommandations pour une alerte":::
 
-**L’onglet Recommandations** fournit des actions et des conseils pour l’examen, la correction et la prévention. Voici un exemple.
+**L’onglet Recommandations** fournit des actions et des conseils à l’étape suivante pour l’examen, la correction et la prévention. Voici un exemple.
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="Exemple de recommandations d’alerte":::
 
 ## <a name="resolve-an-alert"></a>Résoudre une alerte
 
-Une fois que vous avez terminé l’analyse d’une alerte et qu’elle peut être  résolue, allez dans le volet Gérer l’alerte ou des alertes similaires, marquez l’état comme résolu, puis classez-le comme vrai **positif** avec un type de menace, une activité d’information **,** une activité attendue avec un type d’activité ou un **faux positif**.
+Une fois que vous avez terminé l’analyse d’une alerte et qu’elle peut être résolue, accédez au volet **Gérer les alertes** pour l’alerte ou des alertes similaires et marquez l’état **comme Résolu** , puis classifiez-le comme **vrai positif** avec un type de menace, une **activité informationnelle, attendue** avec un type d’activité ou un **Faux positif**.
 
 La classification des alertes permet Microsoft 365 Defender améliorer sa qualité de détection.
 
 ## <a name="use-power-automate-to-triage-alerts"></a>Utiliser Power Automate pour trier les alertes
 
-Les équipes d’opérations de sécurité modernes (SecOps) ont besoin d’automatisation pour fonctionner efficacement. Pour se concentrer sur le recherche et l’investigation des menaces réelles, les équipes SecOps utilisent Power Automate pour trier la liste des alertes et éliminer ceux qui ne sont pas des menaces.  
+Les équipes d’opérations de sécurité modernes (SecOps) ont besoin d’automatisation pour fonctionner efficacement. Pour se concentrer sur la chasse et l’examen des menaces réelles, les équipes SecOps utilisent Power Automate pour trier la liste des alertes et éliminer celles qui ne sont pas des menaces.  
 
 ### <a name="criteria-for-resolving-alerts"></a>Critères de résolution des alertes
 
-- Le message d’in-office de l’utilisateur est allumé
+- Un message d’absence du bureau est activé
 
 - L’utilisateur n’est pas marqué comme étant à risque élevé
 
-Si les deux sont vraies, SecOps marque l’alerte comme un voyage légitime et la résout. Une notification est publiée dans Microsoft Teams une fois l’alerte résolue.
+Si les deux sont vraies, SecOps marque l’alerte comme voyage légitime et la résout. Une notification est publiée dans Microsoft Teams une fois l’alerte résolue.
 
-### <a name="connect-power-automate-to-microsoft-defender-for-cloud-apps"></a>Connecter Power Automate à Microsoft Defender pour les applications cloud
+### <a name="connect-power-automate-to-microsoft-defender-for-cloud-apps"></a>Connecter Power Automate à Microsoft Defender for Cloud Apps
 
-Pour créer l’automatisation, vous aurez besoin d’un jeton d’API avant de pouvoir Power Automate à Microsoft Defender pour les applications cloud.
+Pour créer l’automatisation, vous aurez besoin d’un jeton d’API avant de pouvoir connecter Power Automate à Microsoft Defender for Cloud Apps.
 
-1. Cliquez **Paramètres**, sélectionnez **Extensions de sécurité**, puis cliquez sur Ajouter un jeton **dans** **l’onglet Jetons d’API**.
+1. Cliquez sur **Paramètres**, sélectionnez **Extensions de sécurité**, puis cliquez sur **Ajouter un jeton** dans l’onglet **Jetons d’API**.
 
-2. Fournissez un nom pour votre jeton, puis cliquez sur **Générer**. Enregistrez le jeton, car vous en aurez besoin ultérieurement.
+2. Indiquez un nom pour votre jeton, puis cliquez sur **Générer**. Enregistrez le jeton car vous en aurez besoin ultérieurement.
 
 ### <a name="create-an-automated-flow"></a>Créer un flux automatisé
 
-Pour obtenir un processus détaillé pas à pas, regardez la vidéo [ici](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn).
+Pour connaître le processus détaillé pas à pas, consultez la vidéo [ici](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn).
 
-Cette vidéo décrit également comment connecter l’automatisation de l’alimentation à Defender pour les applications cloud.
+Cette vidéo décrit également comment connecter power automate à Defender pour le cloud Apps.
 
 ## <a name="next-steps"></a>Prochaines étapes
 

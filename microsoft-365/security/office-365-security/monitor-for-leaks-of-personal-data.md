@@ -19,12 +19,12 @@ search.appverid:
 description: Découvrez trois outils qui permettent de surveiller les fuites de données personnelles.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ba164fde38be1e8eed53b71ab568124140deaac5
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 4024640173d6cbbf6817d3fa2b1c24cb7264833c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682700"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470854"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Surveillance des fuites de données personnelles
 
@@ -33,7 +33,7 @@ ms.locfileid: "63682700"
 
 Il existe de nombreux outils qui peuvent être utilisés pour surveiller l’utilisation et le transport des données personnelles. Cette rubrique décrit trois outils qui fonctionnent correctement.
 
-![Outils permettant de surveiller l’utilisation et le transport des données personnelles](../../media/Monitor-for-leaks-of-personal-data-image1.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image1.png" alt-text="Outils permettant de surveiller l’utilisation et le transport des données personnelles" lightbox="../../media/Monitor-for-leaks-of-personal-data-image1.png":::
 
 Dans cette illustration :
 
@@ -62,7 +62,7 @@ Les rapports DLP sont dans le Centre de conformité Microsoft 365. Accédez à l
 
 Pour plus d’informations, consultez la rubrique [Affichage des rapports de protection contre la perte de données](../../compliance/view-the-dlp-reports.md).
 
-![Rapport affichant les correspondances de stratégie DLP.](../../media/Monitor-for-leaks-of-personal-data-image2.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image2.png" alt-text="Rapport montrant les correspondances de stratégie DLP" lightbox="../../media/Monitor-for-leaks-of-personal-data-image2.png":::
 
 ## <a name="audit-log-and-alert-policies"></a>Journal d’audit et stratégies d’alerte
 
@@ -98,7 +98,7 @@ Pour mieux comprendre votre environnement cloud, la fonctionnalité d’examen d
 
 Par exemple, l’illustration suivante présente deux stratégies Defender for Cloud Apps qui peuvent vous aider avec le RGPD.
 
-![Exemples de stratégies Defender for Cloud Apps.](../../media/Monitor-for-leaks-of-personal-data-image3.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image3.png" alt-text="Exemples de stratégies Defender for Cloud Apps." lightbox="../../media/Monitor-for-leaks-of-personal-data-image3.png":::
 
 La première stratégie signale lorsque des fichiers avec un attribut PII prédéfini ou une expression personnalisée que vous choisissez sont partagés en dehors de l’organisation à partir des applications SaaS que vous choisissez.
 
@@ -116,7 +116,7 @@ Si vous n’avez pas encore commencé à utiliser Defender for Cloud Apps, comme
 > [!NOTE]
 > Veillez à activer « Analyser automatiquement les fichiers pour les étiquettes de classification Azure Information Protection » (dans les paramètres généraux) lors de la prise en main de Defender for Cloud Apps ou avant d’attribuer des étiquettes. Après l’installation, Defender for Cloud Apps n'analyse plus les fichiers existants tant qu'ils ne sont pas modifiés.
 
-![Tableau de bord affichant des informations sur les alertes.](../../media/Monitor-for-leaks-of-personal-data-image4.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image4.png" alt-text="Tableau de bord affichant des informations sur les alertes" lightbox="../../media/Monitor-for-leaks-of-personal-data-image4.png":::
 
 Plus d’informations :
 

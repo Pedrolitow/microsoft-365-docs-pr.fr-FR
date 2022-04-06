@@ -1,7 +1,7 @@
 ---
 title: Gérer les paramètres de configuration de Microsoft Defender pour point de terminaison sur les appareils avec Microsoft Endpoint Manager
-description: Découvrez comment activer les paramètres de sécurité dans Microsoft Endpoint Manager via Microsoft Defender for Endpoint.
-keywords: gestion des appareils, configurer Microsoft Defender pour les appareils de point de terminaison, Microsoft Endpoint Manager
+description: Découvrez comment activer les paramètres de sécurité dans Microsoft Endpoint Manager via Microsoft Defender pour point de terminaison.
+keywords: gestion des appareils, configurer Microsoft Defender pour point de terminaison appareils, Microsoft Endpoint Manager
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e21346b48f65016465e669369aa14b3f4c85c23b
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 272425ede6895c84c88aa1c4ea165bc0787238bb
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63527097"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64665885"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>Gérer les paramètres de configuration de Microsoft Defender pour point de terminaison sur les appareils avec Microsoft Endpoint Manager
 
@@ -29,7 +29,7 @@ ms.locfileid: "63527097"
 
 **S’applique à :**
 
-- [Gérer Microsoft Defender pour le point de terminaison sur les appareils avec Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration)
+- [Gérer Microsoft Defender pour point de terminaison sur les appareils avec Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration)
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,13 +38,13 @@ ms.locfileid: "63527097"
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 
-La gestion de la sécurité pour Microsoft Defender pour point de terminaison est une fonctionnalité qui permet aux appareils qui ne sont pas gérés par un Microsoft Endpoint Manager, Microsoft Intune ou Microsoft Endpoint Configuration Manager, de recevoir des configurations de sécurité pour Microsoft Defender. directement à partir Endpoint Manager.
+La gestion de la sécurité pour Microsoft Defender pour point de terminaison est une fonctionnalité pour les appareils qui ne sont pas gérés par un Microsoft Endpoint Manager, Microsoft Intune ou Microsoft Endpoint Configuration Manager, pour recevoir des configurations de sécurité pour Microsoft Defender directement à partir de Endpoint Manager.
 
 
-Pour plus d’informations sur la gestion de la configuration de la sécurité, notamment sur les conditions préalables, les plateformes prise en charge et bien plus encore, voir [Gérer Microsoft Defender pour endpoint](/mem/intune/protect/mde-security-integration) sur les appareils Microsoft Endpoint Manager.
+Pour plus d’informations sur la gestion de la configuration de la sécurité, notamment les prérequis, les plateformes prises en charge et bien plus encore, consultez [Gérer les Microsoft Defender pour point de terminaison sur les appareils avec Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
 
 
 
@@ -53,33 +53,33 @@ Pour plus d’informations sur la gestion de la configuration de la sécurité, 
 >[!NOTE]
 >Cette fonctionnalité est déployée progressivement. 
 
-Pour plus d’informations sur la gestion de la configuration de la sécurité, voir [Gérer Microsoft Defender pour le point](/mem/intune/protect/mde-security-integration) de terminaison sur les appareils Microsoft Endpoint Manager.
+Pour plus d’informations sur la gestion de la configuration de la sécurité, consultez [Gérer les Microsoft Defender pour point de terminaison sur les appareils avec Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
 
-Si vous rencontrez des problèmes d’inscription, voir [Résoudre les problèmes d’intégration de la gestion de la configuration de la sécurité](troubleshoot-security-config-mgt.md).
+Si vous rencontrez des problèmes d’inscription, consultez [Résoudre les problèmes d’intégration de Security Configuration Management](troubleshoot-security-config-mgt.md).
 
 > [!NOTE]
-> Cette fonctionnalité ne s’applique pas aux appareils déjà inscrits à Microsoft Endpoint Manager (Intune ou Configuration Manager). Les appareils inscrits dans Intune continueront de recevoir des stratégies via leur canal de gestion établi.
+> Cette fonctionnalité ne s’applique pas aux appareils qui sont déjà inscrits à Microsoft Endpoint Manager (Intune ou Configuration Manager). Les appareils inscrits dans Intune continueront de recevoir des stratégies via leur canal de gestion établi.
 
 ## <a name="identify-onboarded-devices"></a>Identifier les appareils intégrés
 
-Utilisez les étapes suivantes pour vérifier que vos points de terminaison ont correctement terminé le processus de gestion de la sécurité de Microsoft Defender pour l’intégration des points de terminaison.
+Suivez les étapes suivantes pour vérifier que vos points de terminaison ont terminé le processus de gestion de la sécurité pour Microsoft Defender pour point de terminaison processus d’intégration.
 
-1.  Vérifiez que l’appareil apparaît dans la section Inventaire des [Microsoft 365 Defender.](https://security.microsoft.com/)
+1.  Vérifiez que l’appareil apparaît dans la section Inventaire des [appareils de Microsoft 365 Defender](https://security.microsoft.com/).
 
-2.  Dans le [portail Azure Active Directory,](https://aad.portal.azure.com/#blade/Microsoft_AAD_Devices/DevicesMenuBlade/Devices/menuId/) vérifiez que l’appareil a été correctement inscrit.
+2.  Dans le [portail Azure Active Directory](https://aad.portal.azure.com/#blade/Microsoft_AAD_Devices/DevicesMenuBlade/Devices/menuId/), vérifiez que l’appareil a bien été inscrit.
 
-3.  Dans le [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview), vérifiez que l’appareil a été correctement inscrit en le vérifiant dans la section Appareils **> tous les appareils**.
+3.  Dans le [Microsoft Endpoint Manager Centre d’administration](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview), vérifiez que l’appareil a été correctement inscrit en le recherchant dans la section **Appareils > Tous les appareils**.
 
 
 ## <a name="offboard-devices"></a>Appareils hors-carte
-Pour hors-intégration des appareils qui ont été intégrés via la Gestion de la sécurité pour Microsoft Defender pour le point de terminaison, consultez Les appareils Deboard à partir du [service Microsoft Defender pour point de terminaison](offboard-machines.md).
+Pour déconnecter les appareils qui ont été intégrés via Security Management pour Microsoft Defender pour point de terminaison, consultez [Les appareils hors-carte du service Microsoft Defender pour point de terminaison](offboard-machines.md).
 
 >[!NOTE]
->La désintion [désintion désactive la protection](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) contre les falsifications si elle est activée.
+>Le désintégrage [désactive la protection contre les falsifications](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) si elle est activée.
 
 ## <a name="troubleshooting-security-management"></a>Résolution des problèmes de gestion de la sécurité 
-Pour résoudre les problèmes de gestion de la sécurité pour Microsoft Defender pour l’inscription des points de terminaison, voir Résoudre les problèmes d’intégration liés à la gestion de la sécurité [pour Microsoft Defender pour endpoint](troubleshoot-security-config-mgt.md).
+Pour résoudre les problèmes de gestion de la sécurité pour Microsoft Defender pour point de terminaison problèmes d’inscription, consultez [Résolution des problèmes d’intégration liés à la gestion de la sécurité pour Microsoft Defender pour point de terminaison](troubleshoot-security-config-mgt.md).
 
 ## <a name="related-topic"></a>Rubrique connexe
-- [Résoudre les problèmes d’intégration liés à la gestion de la sécurité pour Microsoft Defender pour le point de terminaison](troubleshoot-security-config-mgt.md)
-- [Gérer Microsoft Defender pour le point de terminaison sur les appareils avec Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-mde-security-configuration-management)
+- [Résoudre les problèmes d’intégration liés à la gestion de la sécurité pour Microsoft Defender pour point de terminaison](troubleshoot-security-config-mgt.md)
+- [Gérer Microsoft Defender pour point de terminaison sur les appareils avec Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-mde-security-configuration-management)

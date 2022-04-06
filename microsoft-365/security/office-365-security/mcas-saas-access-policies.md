@@ -15,12 +15,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 ms.prod: m365-security
-ms.openlocfilehash: 95b46e1c92354015ce6f8d9c5b1fa4b6e9642785
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 7cda1669b4f8441d13f92b09d7390e31f4add529
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683316"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472284"
 ---
 # <a name="recommended-microsoft-defender-for-cloud-apps-policies-for-saas-apps"></a>Stratégies Microsoft Defender pour les applications cloud recommandées pour les applications SaaS
 
@@ -47,7 +47,7 @@ Les autorisations d’accès aux applications SaaS sont généralement basées s
 
 Pour protéger les données au sein de votre collection d’applications SaaS, le diagramme suivant illustre la stratégie d’accès conditionnel Azure AD nécessaire, ainsi que les stratégies suggérées que vous pouvez créer dans Defender pour les applications cloud. Dans cet exemple, les stratégies créées dans Defender pour les applications cloud s’appliquent à toutes les applications SaaS que vous gérez. Ces contrôles sont conçus pour appliquer les contrôles appropriés selon que les appareils sont gérés, ainsi que les étiquettes de niveau de sensibilité qui sont déjà appliquées aux fichiers.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="Stratégies de gestion des applications SaaS dans Defender pour les applications cloud." lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="Stratégies de gestion des applications SaaS dans Defender pour les applications cloud" lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
 
 Le tableau suivant répertorie la nouvelle stratégie d’accès conditionnel que vous devez créer dans Azure AD.
 
@@ -96,7 +96,7 @@ Defender pour les applications cloud peut être un outil précieux pour configur
 
 L’illustration et le tableau suivants fournissent plusieurs exemples de stratégies qui peuvent être configurées pour vous aider à respecter le Règlement général sur la protection des données (R GDPR). Dans ces exemples, les stratégies recherchent des données spécifiques. En fonction de la sensibilité des données, chaque stratégie est configurée pour prendre les mesures appropriées.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-dlp.png" alt-text="Exemple de stratégies Defender pour les applications cloud pour la protection contre la perte de données." lightbox="../../media/microsoft-365-policies-configurations/mcas-dlp.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-dlp.png" alt-text="Page Des stratégies Defender pour les applications cloud pour la protection contre la perte de données" lightbox="../../media/microsoft-365-policies-configurations/mcas-dlp.png":::
 
 |Niveau de protection|Exemples de stratégies|
 |---|---|
@@ -105,6 +105,6 @@ L’illustration et le tableau suivants fournissent plusieurs exemples de strat�
 |Sécurité spécialisée|Alerte lorsque les fichiers avec cette étiquette (« Hautement classé ») sont téléchargés sur les appareils gérés <p> Bloquer les téléchargements de fichiers avec cette étiquette (« Hautement classé ») sur les appareils non utilisés|
 |||
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Pour plus d’informations sur l’utilisation de Defender pour les applications cloud, voir [la documentation de Microsoft Defender pour les applications cloud](//cloud-app-security/).

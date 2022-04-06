@@ -17,16 +17,16 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés, découvrez comment vous inscrire à Microsoft 365 Lighthouse.
-ms.openlocfilehash: 2607a131908a06ec4b7072cbf718739e1db00ad7
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 25ad88edc63d53e3c9110062a64285bbb759a775
+ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326956"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64645177"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>S’inscrire à Microsoft 365 Lighthouse
 
-Cet article fournit des instructions sur la façon de s’inscrire à Microsoft 365 Lighthouse. Microsoft 365 Lighthouse est un portail d’administration qui permet aux fournisseurs de services gérés (MSP) de sécuriser et de gérer les appareils, les données et les utilisateurs à grande échelle pour les petites et moyennes entreprises qui utilisent Microsoft 365 Business Premium ou Microsoft 365 E3. 
+Cet article fournit des instructions sur la façon de s’inscrire à Microsoft 365 Lighthouse. Microsoft 365 Lighthouse est un portail d’administration qui permet aux fournisseurs de services gérés (MSP) de sécuriser et de gérer les appareils, les données et les utilisateurs à grande échelle pour les clients de petite et moyenne entreprise (SMB) qui utilisent Microsoft 365 Business Premium, Microsoft 365 E3 ou Windows 365 Affaires. 
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -60,12 +60,12 @@ Cet article fournit des instructions sur la façon de s’inscrire à Microsoft 
     > [!NOTE]
     > Une fois l’inscription terminée, l’affichage des données client dans le Dossier peut prendre jusqu’à 48 heures.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 [Configurer la sécurité Microsoft 365 Lighthouse portail d’entreprise](m365-lighthouse-configure-portal-security.md) 
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Vue d’Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (article)   
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)   
-[Microsoft 365 Lighthouse et Microsoft Defender pour les entreprises](../security/defender-business/mdb-lighthouse-integration.md) (article)
+[Microsoft 365 Lighthouse and Microsoft Defender pour les PME](../security/defender-business/mdb-lighthouse-integration.md) (article)

@@ -1,7 +1,7 @@
 ---
 title: Étape 4. Définir Microsoft 365 Defender rôles, responsabilités et supervision
-description: Les principes de base de la définition des rôles, des responsabilités et de la supervision lors de l’intégration Microsoft 365 Defender vos opérations de sécurité.
-keywords: incidents, alertes, examiner, corrélation, attaque, appareils, utilisateurs, identités, identité, boîte aux lettres, e-mail, 365, microsoft, Microsoft 365, réponse aux incidents, cyber-attaque, secops, opérations de sécurité, soc
+description: Principes de base de la définition des rôles, des responsabilités et de la supervision lors de l’intégration de Microsoft 365 Defender dans vos opérations de sécurité.
+keywords: incidents, alertes, investigation, corrélation, attaque, appareils, utilisateurs, identités, identité, boîte aux lettres, e-mail, 365, microsoft, Microsoft 365, réponse aux incidents, cyberattaque, étendues, opérations de sécurité, soc
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7562eca50b905bf70f17844cf8fe3079fbf3fc14
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5410db413ece81a39453070985e6c744e8b684a6
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314278"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664059"
 ---
 # <a name="step-4-define-microsoft-365-defender-roles-responsibilities-and-oversight"></a>Étape 4. Définir Microsoft 365 Defender rôles, responsabilités et supervision
 
@@ -36,25 +36,25 @@ ms.locfileid: "63314278"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Votre organisation doit établir la propriété et la responsabilité des licences Microsoft 365 Defender, des configurations et de l’administration comme tâches initiales avant de pouvoir définir des rôles opérationnels. En règle générale, la propriété des licences, les coûts d’abonnement et l’administration des services Microsoft 365 et Enterprise Security + Mobility (EMS) (qui peuvent inclure Microsoft 365 Defender) ne font pas partie des équipes du Centre des opérations de sécurité (SOC). Les équipes SOC doivent travailler avec ces personnes pour assurer une supervision appropriée des Microsoft 365 Defender. 
+Votre organisation doit établir la propriété et la responsabilité des Microsoft 365 Defender licences, configurations et administration en tant que tâches initiales avant de pouvoir définir des rôles opérationnels. En règle générale, la propriété des licences, les coûts d’abonnement et l’administration des services Microsoft 365 et Enterprise Sécurité + Mobilité (EMS) (qui peuvent inclure Microsoft 365 Defender) relèvent des équipes du Centre des opérations de sécurité (SOC). Les équipes de la SOC devraient collaborer avec ces personnes pour assurer une surveillance adéquate des Microsoft 365 Defender. 
 
-De nombreux socs modernes affectent à leurs membres d’équipe des catégories en fonction de leurs compétences et fonctions. Par exemple :
+De nombreuses SOC modernes attribuent à ses membres d’équipe des catégories en fonction de leurs compétences et de leurs fonctions. Par exemple :
 
-- Une équipe d’intelligence des menaces affectée à des tâches liées à la gestion du cycle de vie des fonctions de menace et d’analyse.
-- Une équipe de surveillance composée d’analystes SOC responsables de la maintenance des journaux, des alertes, des événements et des fonctions de surveillance.
-- Une équipe d'& d’ingénierie affectée à l’ingénierie et à l’optimisation des périphériques de sécurité.
+- Une équipe de renseignement sur les menaces affectée aux tâches liées à la gestion du cycle de vie des fonctions d’analyse et de menaces.
+- Une équipe de supervision composée d’analystes SOC chargés de gérer les journaux d’activité, les alertes, les événements et les fonctions de surveillance.
+- Une équipe d’ingénierie & des opérations affectée à l’ingénierie et à l’optimisation des appareils de sécurité.
 
-Les rôles et responsabilités d’équipe SOC pour Microsoft 365 Defender intégreraient naturellement ces équipes.
+Les rôles et responsabilités de l’équipe SOC pour Microsoft 365 Defender s’intégreraient naturellement à ces équipes.
 
-Le tableau suivant décompose les rôles et responsabilités de chaque équipe SOC et la façon dont leurs rôles s’intègrent Microsoft 365 Defender.
+Le tableau suivant présente les rôles et responsabilités de chaque équipe SOC, ainsi que la façon dont leurs rôles s’intègrent à Microsoft 365 Defender.
 
-| Équipe SOC | Rôles et responsabilités | Microsoft 365 Defender tâches  |
+| Équipe SOC | Rôles et responsabilités | tâches Microsoft 365 Defender  |
 |:-------|:-----|:-------|
-| Supervision SOC | <ul><li>Effectue la gouvernance SOC</li><li>Établit des processus quotidiens, hebdomadaires et mensuels</li><li>Formation et sensibilisation</li><li>Embauche du personnel, participe à des groupes d’homologues et à des réunions</li><li>Effectue des exercices d’équipe bleu, rouge et violet</ul>  | <ul><li>Microsoft 365 Defender’accès au portail</li><li>Maintient le registre de mise à jour des fonctionnalités/URL et des licences</li><li>Maintient la communication avec les parties prenantes en matière d’information, juridique, de conformité et de confidentialité</li><li>Participe à des réunions de contrôle des changements pour Microsoft 365 ou Microsoft Azure initiatives</ul> |
-| Threat Intelligence & Analytics  | <ul><li>Gestion des flux Intel contre les menaces</li><li>Attribution de virus et de programmes malveillants</li><li>Modélisation des menaces & catégorisations des événements de menace</li><li>Développement d’attributs contre les menaces internes </li><li>Programme d’intégration Intel contre les menaces avec la gestion des risques</li><li>Intègre des informations sur les données à la science des données, à l’aide à la base de données et à l’analyse au sein des équipes ressources humaines, juridiques, informatiques et de sécurité<ul> | <ul><li>Maintient microsoft Defender pour la modélisation des menaces d’identité</li><li>Maintient Microsoft Defender pour la modélisation Office 365 menaces</li><li>Maintient microsoft Defender pour la modélisation des menaces de point de terminaison</ul> |
-| Analyse | <ul><li>Analystes de niveau 1, 2, 3</li><li>Maintenance et ingénierie des sources de journaux</li><li>Ingestion de la source de données </li><li>SiEM : l’simulation, l’alerte, la corrélation, l’optimisation</li><li>Génération d’événements et d’alertes</li><li>Analyse des événements et des alertes</li><li>Rapports d’événements et d’alertes</li><li>Maintenance du système de gestion des tickets</ul> | Utilise : <ul><li>Centre de sécurité et conformité</li><li>Portail Microsoft 365 Defender</ul> |
-| Ingénierie & SecOps | <ul><li>Gestion des vulnérabilités pour les applications, les systèmes et les points de terminaison</li><li>Automatisation XDR/AUTOMATION</li><li>Tests de conformité</li><li>Hameçonnage et ingénierie DLP</li><li>Ingénierie</li><li>Contrôle de modification des coordonnées</li><li>Coordonnées des mises à jour du runbook</li><li>Test de pénétration<ul> | <ul><li>Microsoft Defender for Cloud Apps</li><li>Defender pour point de terminaison</li><li>Defender pour l’identité</ul> |
-| Computer Security Incident Response Team (CSIRT) | <ul><li>Examine les cyber incidents et y répond</li><li>Effectue des enquêtes légales</li><li>**Peut souvent être isolé de SOC**</ul> | Collaborer et gérer des Microsoft 365 Defender de réponse aux incidents |
+| Surveillance SOC | <ul><li>Exécute la gouvernance SOC</li><li>Établit des processus quotidiens, hebdomadaires et mensuels</li><li>Fournit une formation et une sensibilisation</li><li>Embauche du personnel, participe à des groupes d’homologues et à des réunions</li><li>Effectue des exercices d’équipe bleu, rouge, violet</ul>  | <ul><li>Microsoft 365 Defender contrôles d’accès au portail</li><li>Gère le registre des mises à jour des fonctionnalités/URL et des licences</li><li>Maintient la communication avec les parties prenantes informatiques, juridiques, de conformité et de confidentialité</li><li>Participe aux réunions de contrôle des modifications pour les nouvelles initiatives Microsoft 365 ou Microsoft Azure</ul> |
+| Analyse des & de renseignement sur les menaces  | <ul><li>Gestion des flux Intel sur les menaces</li><li>Attribution de virus et de programmes malveillants</li><li>Modélisation des menaces & catégorisations d’événements de menace</li><li>Développement d’attributs de menace interne </li><li>Intégration d’Intel aux menaces avec le programme de gestion des risques</li><li>Intègre des insights de données à la science des données, à la décisionnel et à l’analytique au sein des équipes RH, juridiques, informatiques et de sécurité<ul> | <ul><li>Maintient Microsoft Defender pour Identity modélisation des menaces</li><li>Maintient Microsoft Defender pour Office 365 modélisation des menaces</li><li>Maintient Microsoft Defender pour point de terminaison modélisation des menaces</ul> |
+| Analyse | <ul><li>Analystes de niveau 1, 2, 3</li><li>Maintenance et ingénierie de la source de journal</li><li>Ingestion de la source de données </li><li>Analyse SIEM, alertes, corrélation, optimisation</li><li>Génération d’événements et d’alertes</li><li>Analyse des événements et des alertes</li><li>Rapports d’événements et d’alertes</li><li>Maintenance du système de tickets</ul> | Utilise: <ul><li>Centre de sécurité et conformité</li><li>Portail Microsoft 365 Defender</ul> |
+| Ingénierie & SecOps | <ul><li>Gestion des vulnérabilités pour les applications, les systèmes et les points de terminaison</li><li>Automatisation XDR/SOAR</li><li>Test de conformité</li><li>Hameçonnage et ingénierie DLP</li><li>Ingénierie</li><li>Contrôle de modification des coordonnées</li><li>Coordonne les mises à jour des runbooks</li><li>Test de pénétration<ul> | <ul><li>Microsoft Defender for Cloud Apps</li><li>Defender pour point de terminaison</li><li>Defender pour l’identité</ul> |
+| Équipe de réponse aux incidents de sécurité informatique (CSIRT) | <ul><li>Enquête et répond aux cyber incidents</li><li>Effectue des investigations judiciaires</li><li>**Peut souvent être isolé de SOC**</ul> | Collaborer et gérer Microsoft 365 Defender playbooks de réponse aux incidents |
 ||||
 
 

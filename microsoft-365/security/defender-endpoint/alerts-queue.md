@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: 63107c50c081eef65e0a56417845b470cc0a294a
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 0d6b012d2e3dbe6778c8d9c70552cf24427f8a3d
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449729"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472042"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison
 
@@ -31,7 +31,7 @@ ms.locfileid: "63449729"
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-alertsq-abovefoldlink)
 
-Les **alertes** indiquent la liste des alertes qui ont été signalées à partir d’appareils de votre réseau. Les alertes les plus récentes sont affichés en haut de la liste pour vous aider à voir les alertes les plus récentes en premier.
+La **file d’attente Alertes** affiche la liste des alertes qui ont été signalées à partir d’appareils de votre réseau. Par défaut, la file d’attente affiche les alertes visibles au cours des 30 derniers jours dans un affichage groupé. Les alertes les plus récentes sont affichées en haut de la liste pour vous aider à voir les alertes les plus récentes en premier.
 
 > [!NOTE]
 > Les alertes sont considérablement réduites grâce à des examens et des corrections automatisés, ce qui permet aux experts en matière d’opérations de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives à valeur élevée. Lorsqu’une alerte contient une entité prise en charge pour une investigation automatisée (par exemple, un fichier) sur un appareil qui dispose d’un système d’exploitation pris en charge, une investigation et une correction automatisées peuvent commencer. Pour plus d’informations sur les enquêtes automatisées, voir [Vue d’ensemble des enquêtes automatisées](automated-investigations.md).
@@ -46,7 +46,7 @@ Dans la barre de navigation supérieure, vous pouvez :
 - Exporter la liste des alertes vers Excel
 - Gérer les alertes
 
-:::image type="content" source="images/alerts-filters.png" alt-text="Image de la liste des alertes" lightbox="images/alerts-filters.png":::
+:::image type="content" source="images/alerts-queue-list.png" alt-text="Page File d’attente des alertes" lightbox="images/alerts-queue-list.png":::
 
 ## <a name="sort-and-filter-alerts"></a>Trier et filtrer les alertes 
 
@@ -54,14 +54,12 @@ Vous pouvez appliquer les filtres suivants pour limiter la liste des alertes et 
 
 ### <a name="severity"></a>Severity
 
-Vous pouvez filtrer les alertes en fonction de leur gravité.  
-
-|Gravité de l’alerte|Description|
-|---|---|
-|Élevé <br> (Rouge)|Alertes couramment associées à des menaces avancées persistantes (APT). Ces alertes indiquent un risque élevé en raison de la gravité des dommages qu’elles peuvent causer sur les appareils. Voici quelques exemples : activités des outils de vol d’informations d’identification, activités de ransomware non associées à un groupe, falsification des capteurs de sécurité ou toute activité malveillante indiquant un adversaire humain.|
-|Moyenne <br> (Orange)|Les alertes provenant protection évolutive des points de terminaison comportements post-violation qui peuvent faire partie d’une menace persistante avancée. Cela inclut les comportements observés typiques des phases d’attaque, la modification anormale du Registre, l’exécution de fichiers suspects, etc. Bien que certaines d’entre elles font partie de tests de sécurité internes, elles nécessitent une enquête, car elles peuvent également faire partie d’une attaque avancée.|
-|Faible <br> (Jaune)|Alertes sur les menaces associées à des programmes malveillants répandus. Par exemple, les outils de piratage, les outils de piratage non malveillants, tels que l’exécution de commandes d’exploration, l’effacement des journaux, etc., qui n’indiquent souvent pas de menace avancée ciblant l’organisation. Elle peut également être le fait d’un outil de sécurité isolé testé par un utilisateur de votre organisation.|
-|Informatif <br> (Gris)|Alertes qui peuvent ne pas être considérées comme dangereuses pour le réseau, mais qui peuvent sensibiliser l’organisation à d’éventuels problèmes de sécurité.|
+Gravité de l’alerte|Description
+---|---
+Élevé <br> (Rouge)|Alertes couramment associées à des menaces avancées persistantes (APT). Ces alertes indiquent un risque élevé en raison de la gravité des dommages qu’elles peuvent causer sur les appareils. Voici quelques exemples : activités des outils de vol d’informations d’identification, activités de ransomware non associées à un groupe, falsification des capteurs de sécurité ou toute activité malveillante indiquant un adversaire humain.
+Moyen <br> (Orange)|Les alertes provenant protection évolutive des points de terminaison comportements post-violation qui peuvent faire partie d’une menace persistante avancée. Ces comportements incluent les comportements observés typiques des phases d’attaque, la modification anormale du Registre, l’exécution de fichiers suspects, etc. Bien que certaines d’entre elles font partie de tests de sécurité internes, elles nécessitent une enquête, car elles peuvent également faire partie d’une attaque avancée.
+Faible <br> (Jaune)|Alertes sur les menaces associées à des programmes malveillants répandus. Par exemple, les outils de piratage, les outils de piratage non malveillants, tels que l’exécution de commandes d’exploration, l’effacement des journaux, etc., qui n’indiquent souvent pas de menace avancée ciblant l’organisation. Elle peut également être le fait d’un outil de sécurité isolé testé par un utilisateur de votre organisation.
+Informatif <br> (Gris)|Alertes qui peuvent ne pas être considérées comme dangereuses pour le réseau, mais qui peuvent sensibiliser l’organisation à d’éventuels problèmes de sécurité.
 
 #### <a name="understanding-alert-severity"></a>Comprendre la gravité des alertes
 
@@ -73,7 +71,7 @@ La gravité de l’alerte Defender pour le point de terminaison représente la g
 
 Par exemple :
 
-- La gravité d’une alerte Defender pour point de terminaison concernant une menace détectée par Antivirus Microsoft Defender qui a été complètement évitée et qui n’a pas infecté l’appareil est classée comme « Informationnelle » car il n’y a eu aucun dommage réel.
+- La gravité d’une alerte Defender pour point de terminaison concernant une menace détectée par Antivirus Microsoft Defender qui a été empêchée et qui n’a pas infecté l’appareil est classée comme « Informationnelle », car il n’y a eu aucun dommages réel.
 - Une alerte concernant un programme malveillant commercial a été détectée lors de l’exécution, mais bloquée et corrigé par Microsoft Defender AV, est classée comme « Faible », car elle a peut-être endommagé l’appareil, mais ne pose aucune menace pour l’organisation.
 - Une alerte concernant les programmes malveillants détectés lors de l’exécution, qui peuvent représenter une menace non seulement pour l’appareil individuel, mais aussi pour l’organisation, même si elle a été finalement bloquée, peut être classée comme « Moyenne » ou « Élevée ».
 - Les alertes de comportement suspectes, qui n’ont pas été bloquées ou corrigés, seront classées « Faible », « Moyenne » ou « Élevée » en fonction des mêmes considérations sur les menaces organisationnelles.
@@ -111,20 +109,18 @@ Vous pouvez filtrer les alertes en fonction des balises affectées aux alertes.
 
 Vous pouvez filtrer les alertes en fonction des stratégies suivantes :
 
-- Activité provenant d’un pays peu fréquent
-- Résultat de la soumission de l’administrateur terminé
-- L’administrateur a déclenché une enquête manuelle sur le courrier électronique
-- Examen de compromission utilisateur déclenchée par l’administrateur
-- Jeton anormal 
-- Voyages inhabituels
-- Création de règle de redirection/transfert
-- Messages de courrier contenant une URL malveillante supprimée après la remise
-- Messages de courrier contenant un fichier malveillant supprimé après la remise
-- E-mail signalé par l’utilisateur en tant que programme malveillant ou hameçonnage
-- Pulvérisation de mots de passe
-- Action de correction prise par l’administrateur sur les e-mails, l’URL ou l’expéditeur
-- Création de service suspecte 
-- Propriétés de sign-in inconnues
+|Source de détection|Valeur d’API|
+|---|---|
+|Capteurs tiers|ThirdPartySensors|
+|Antivirus|WindowsDefenderAv|
+|Examen automatisé|AutomatedIgoigation|
+|Détection personnalisée|CustomDetection|
+|Ti personnalisée|CustomerTI|
+|PEPT|WindowsDefenderAtp|
+|Microsoft 365 Defender|MTP|
+|Microsoft Defender pour Office 365|OfficeATP|
+|Spécialistes des menaces Microsoft|ThreatExperts|
+|SmartScreen|WindowsDefenderSmartScreen|
 
 ### <a name="entities"></a>Entités
 
@@ -136,7 +132,7 @@ Vous pouvez choisir de filtrer les alertes en fonction de leur état d’investi
 
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)
 - [Examiner microsoft Defender pour les alertes de point de terminaison](investigate-alerts.md)

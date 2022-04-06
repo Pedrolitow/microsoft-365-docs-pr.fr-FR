@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: c43fdfe746575837e8e5c8f36992f5fa6e2fec96
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: df79062d1dafcd8d82dfa4ff9b9847ff4fad1775
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679497"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476134"
 ---
 # <a name="evaluate-network-protection"></a>Évaluer la protection du réseau
 
@@ -62,7 +62,7 @@ Activez la protection réseau en mode audit pour voir les adresses IP et les dom
 
     La connexion réseau est autorisée et un message de test s’affiche.
     
-    ![Exemple de notification qui indique connexion bloquée : votre administrateur informatique a Sécurité Windows bloquer cette connexion réseau. Contactez votre service d’aide.](images/np-notif.png)
+    :::image type="content" source="images/np-notif.png" alt-text="Notification de blocage de connexion" lightbox="images/np-notif.png":::
 
 > [!NOTE]
 > Les connexions réseau peuvent être réussies même si un site est bloqué par la protection réseau. Pour plus d’informations, [voir Protection du réseau et](network-protection.md#network-protection-and-the-tcp-three-way-handshake) protocole d’accès TCP triple.

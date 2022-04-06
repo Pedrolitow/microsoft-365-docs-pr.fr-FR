@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 53f338ec713038841ab5cc089c12cebf7fe46131
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c09405043caeea57fdad1c241dfcd70e47ccd6f1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680618"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470729"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>Vue d’ensemble des règles de réduction de la surface d’attaque
 
@@ -53,7 +53,7 @@ Pour plus d’informations sur la configuration des règles de réduction de la 
 
 Vous pouvez évaluer l’impact d’une règle de réduction de la surface d’attaque sur votre réseau en ouvrant la recommandation de sécurité pour [cette règle dans Gestion des menaces et des vulnérabilités](/windows/security/threat-protection/#tvm).
 
-:::image type="content" source="images/asrrecommendation.png" alt-text="Contrôle de sécurité pour la règle de réduction de la surface d’attaque.":::
+:::image type="content" source="images/asrrecommendation.png" alt-text="Recommandation de la asr" lightbox="images/asrrecommendation.png":::
 
 Dans le volet d’informations de recommandation, vérifiez l’impact sur l’utilisateur pour déterminer le pourcentage de vos appareils qui peuvent accepter une nouvelle stratégie autorisant la règle en mode de blocage sans affecter la productivité.
 

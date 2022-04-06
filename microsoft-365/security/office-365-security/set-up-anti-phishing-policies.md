@@ -17,12 +17,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a0f491c099e5a3b67866738267215e79ff6cbeb0
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 5389e83634bc92dd01908b16e8ca0a76dd76c765
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679541"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475694"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -140,9 +140,9 @@ Les paramètres Afficher le premier **contact conseil de sécurité** sont dispo
 - La première fois qu’ils obtiennent un message d’un expéditeur
 - Ils n’obtiennent pas souvent de messages de l’expéditeur.
 
-![Premier contact conseil de sécurité messages avec un destinataire.](../../media/safety-tip-first-contact-one-recipient.png)
+:::image type="content" source="../../media/safety-tip-first-contact-one-recipient.png" alt-text="Le premier contact conseil de sécurité messages avec un destinataire" lightbox="../../media/safety-tip-first-contact-one-recipient.png":::
 
-![Premier contact conseil de sécurité messages avec plusieurs destinataires.](../../media/safety-tip-first-contact-multiple-recipients.png)
+:::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="Le premier contact conseil de sécurité messages avec plusieurs destinataires" lightbox="../../media/safety-tip-first-contact-multiple-recipients.png":::
 
 Cette fonctionnalité ajoute une couche supplémentaire de protection de sécurité contre les attaques d’emprunt d’identité potentielles. Nous vous recommandons donc de l’activer.
 

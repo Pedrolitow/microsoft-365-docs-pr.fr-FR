@@ -20,12 +20,12 @@ ms.custom:
 description: Les utilisateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine dans Exchange Online Protection (EOP) qui auraient dû leur être remis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 35aa801d0d981f68de5c62a1928e1f85d82ee95d
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 44b1d86d441be5582b8c4b3381a383b2e03417a1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682392"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471536"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans EOP
 
@@ -142,7 +142,7 @@ Une fois le message spécifique mis en quarantaine trouvé, sélectionnez-le pou
 
 Lorsque vous sélectionnez un message mis en quarantaine dans la liste, les informations suivantes sont disponibles dans le flyout de détails qui apparaît.
 
-![Les détails du menu volant d'un message en quarantaine.](../../media/quarantine-user-message-details.png)
+:::image type="content" source="../../media/quarantine-user-message-details.png" alt-text="Les détails du menu volant d'un message en quarantaine" lightbox="../../media/quarantine-user-message-details.png":::
 
 Lorsque vous sélectionnez un message électronique dans la liste, les détails de message suivants s’affichent dans le volet déroulant **Détails** :
 
@@ -161,7 +161,7 @@ Pour donner suite au message, consultez la section suivante.
 > [!NOTE]
 > Pour rester dans le menu déroulant des détails, mais changer le message en quarantaine que vous regardez, utilisez les flèches haut et bas en haut du menu déroulant.
 >
-> ![Les flèches vers le haut et les flèches vers le bas des détails du menu flottant d'un message en quarantaine.](../../media/quarantine-message-details-flyout-up-down-arrows.png)
+> :::image type="content" source="../../media/quarantine-message-details-flyout-up-down-arrows.png" alt-text="Les flèches vers le haut et les flèches vers le bas des détails du menu flottant d'un message en quarantaine" lightbox="../../media/quarantine-message-details-flyout-up-down-arrows.png":::
 
 ### <a name="take-action-on-quarantined-email"></a>Effectuer une action sur les messages mis en quarantaine
 
@@ -170,7 +170,7 @@ Pour donner suite au message, consultez la section suivante.
 
 Après avoir sélectionné un message en quarantaine dans la liste, les actions suivantes sont disponibles dans le flyout des détails :
 
-![Actions disponibles dans les détails du menu flottant d'un message en quarantaine.](../../media/quarantine-user-message-details-flyout-actions.png)
+:::image type="content" source="../../media/quarantine-user-message-details-flyout-actions.png" alt-text="Les actions disponibles dans les détails du menu flottant d'un message en quarantaine" lightbox="../../media/quarantine-user-message-details-flyout-actions.png":::
 
 - ![Icône d’e-mail de version.](../../media/m365-cc-sc-check-mark-icon.png) **E-mail de version**<sup>\*</sup> : Transmet le message dans votre boîte de réception.
 
@@ -197,7 +197,8 @@ Si vous ne libérez pas ou ne supprimez pas le message, il sera supprimé après
 > [!NOTE]
 > Sur un appareil mobile, le texte de description n'est pas disponible sur les icônes d'action.
 >
-> ![Détails d'un message en quarantaine avec les actions disponibles mises en évidence](../../media/quarantine-user-message-details-flyout-mobile-actions.png)
+> :::image type="content" source="../../media/quarantine-user-message-details-flyout-mobile-actions.png" alt-text="Les détails d'un message en quarantaine avec les actions disponibles mises en évidence" lightbox="../../media/quarantine-user-message-details-flyout-mobile-actions.png":::
+
 >
 > Les icônes dans l'ordre et leurs descriptions correspondantes sont résumées dans le tableau suivant :
 >
@@ -213,7 +214,7 @@ Si vous ne libérez pas ou ne supprimez pas le message, il sera supprimé après
 
 Lorsque vous sélectionnez plusieurs messages mis en quarantaine dans la liste (jusqu'à 100) en cliquant dans la zone vide à gauche de la première colonne, la liste déroulante **Actions en vrac** s'affiche et vous permet d'effectuer les actions suivantes :
 
-![Liste déroulante d'actions groupées pour les messages en quarantaine.](../../media/quarantine-user-message-bulk-actions.png)
+:::image type="content" source="../../media/quarantine-user-message-bulk-actions.png" alt-text="La liste déroulante d'actions groupées pour les messages en quarantaine" lightbox="../../media/quarantine-user-message-bulk-actions.png":::
 
 - ![Icône de version de l'email](../../media/m365-cc-sc-check-mark-icon.png) **Version des messages** : Transmet le message dans votre boîte de réception.
 - ![Icône Supprimer de la quarantaine](../../media/m365-cc-sc-delete-icon.png) **Supprimer les messages** :  Après avoir cliqué sur **Oui** dans l'avertissement qui apparaît, les messages sont immédiatement supprimés de la quarantaine sans être envoyés aux destinataires d'origine.

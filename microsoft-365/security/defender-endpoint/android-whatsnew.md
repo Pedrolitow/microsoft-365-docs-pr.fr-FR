@@ -1,6 +1,6 @@
 ---
-title: Nouveautés de Microsoft Defender pour Point de terminaison sur Android
-description: Découvrez les principales modifications apportées aux versions précédentes de Microsoft Defender pour Endpoint sur Android.
+title: Nouveautés de Microsoft Defender pour point de terminaison sur Android
+description: Découvrez les principales modifications apportées aux versions précédentes de Microsoft Defender pour point de terminaison sur Android.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, macos, whatsnew
 ms.prod: m365-security
 ms.mktglfcycl: security
@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: d250fefbdcc2c268563b6321ee7d91eca4881063
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 48d6ef27e71f89f6a81ac3c77ea17cf60dc90ee1
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328692"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664565"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Nouveautés de Microsoft Defender pour Point de terminaison sur Android
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,39 +31,39 @@ ms.locfileid: "63328692"
 
 Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-play-store"></a>Microsoft Defender pour le point de terminaison est désormais Microsoft Defender dans le Magasin de lecture
+## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-play-store"></a>Microsoft Defender pour point de terminaison est désormais Microsoft Defender dans le Play Store
 
-Microsoft Defender pour le point de terminaison est désormais disponible en **tant que Microsoft Defender** dans le magasin de lecture. Avec cette mise à jour, l’application sera disponible en  prévisualisation pour les consommateurs de la région des États-Unis . En fonction de la façon dont vous vous connectez à l’application avec votre compte personnel ou personnel, vous aurez accès aux fonctionnalités de Microsoft Defender pour endpoint ou aux fonctionnalités de Microsoft Defender pour les individus. Consultez [ce blog pour](https://www.microsoft.com/en-us/microsoft-365/microsoft-defender-for-individuals) plus d’informations.
+Microsoft Defender pour point de terminaison est désormais disponible en tant que **Microsoft Defender** dans le play store. Avec cette mise à jour, l’application sera disponible en préversion pour **les consommateurs de la région des États-Unis**. En fonction de la façon dont vous vous connectez à l’application avec votre compte professionnel ou personnel, vous aurez accès aux fonctionnalités de Microsoft Defender pour point de terminaison ou aux fonctionnalités de Microsoft Defender pour les particuliers. Pour plus d’informations, consultez [ce blog](https://www.microsoft.com/en-us/microsoft-365/microsoft-defender-for-individuals) .
 
 ## <a name="threat-and-vulnerability-management"></a>Gestion des menaces et des vulnérabilités
 
-Le 25 janvier 2022, nous avons annoncé la disponibilité générale de la gestion des menaces et des vulnérabilités sur Android et iOS. Pour plus d’informations, [consultez la publication techcommunity ici](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
+Le 25 janvier 2022, nous avons annoncé la disponibilité générale de la gestion des menaces et des vulnérabilités sur Android et iOS. Pour plus d’informations, consultez [le billet techcommunity ici](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
 
-## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>Modifications des autorisations à venir pour Microsoft Defender pour le point de terminaison exécutant Android 11 ou version ultérieure (novembre 2021)
+## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>Modifications d’autorisation à venir pour Microsoft Defender pour point de terminaison exécutant Android 11 ou version ultérieure (novembre 2021)
 
-Release Build: 1.0.3501.0301 Release month: Nov 2021 Microsoft Defender for Endpoint has released this update required by [Google](https://developer.android.com/distribute/play-policies#APILevel30) to upgrade to Android API 30. Cette modification invite les utilisateurs à accéder à de nouvelles [autorisations de stockage](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play) pour les appareils exécutant Android 11 ou version ultérieure. Les utilisateurs doivent accepter cette nouvelle autorisation de stockage une fois qu’ils ont mis à jour l’application Defender avec la version 1.0.3501.0301 ou ultérieure. Cela garantit que la fonctionnalité de sécurité de l’application defender pour point de terminaison fonctionne sans interruption. Pour plus d’informations,  examinez les sections suivantes.
+Version de publication : 1.0.3501.0301 Mois de publication : novembre 2021 Microsoft Defender pour point de terminaison a publié cette mise à jour requise par [Google](https://developer.android.com/distribute/play-policies#APILevel30) pour la mise à niveau vers l’API Android 30. Cette modification invite les utilisateurs à accéder à [une nouvelle autorisation de stockage](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play) pour les appareils exécutant Android 11 ou version ultérieure. Les utilisateurs doivent accepter cette nouvelle autorisation de stockage une fois qu’ils ont mis à jour l’application Defender avec la version 1.0.3501.0301 ou ultérieure. Cela garantit que la fonctionnalité de sécurité des applications de Defender pour point de terminaison fonctionne sans interruption. Pour plus d’informations, consultez les sections suivantes.
 
-**Quel sera l’impact sur votre organisation :** Ces modifications  prennent effet si vous utilisez Microsoft Defender pour Endpoint sur les appareils exécutant Android 11 ou version ultérieure et que Vous avez mis à jour Defender pour Endpoint pour publier la build 1.0.3501.0301 ou ultérieure.
+**Comment cela affectera votre organisation :** Ces modifications prendront effet si vous utilisez Microsoft Defender pour point de terminaison sur les appareils exécutant Android 11 ou version ultérieure et que vous mettez à jour Defender pour point de terminaison pour publier la build 1.0.3501.0301 ou ultérieure.
 
 > [!NOTE]
 > Les nouvelles autorisations de stockage ne peuvent pas être configurées par l’administrateur pour « Approuver automatiquement » via Microsoft Endpoint Manager. L’utilisateur doit prendre des mesures pour fournir l’accès à cette autorisation.
 
-- **Expérience utilisateur :** Les utilisateurs recevront une notification indiquant qu’il manque une autorisation pour la sécurité de l’application. Si l’utilisateur refuse cette autorisation, la fonctionnalité « Sécurité de l’application » est désactivée sur l’appareil. Si l’utilisateur n’accepte pas ou ne refuse pas l’autorisation, il continue de recevoir l’invite lors du déverrouillage de son appareil ou de l’ouverture de l’application, jusqu’à ce qu’elle ait été approuvée.
+- **Expérience utilisateur :** Les utilisateurs recevront une notification indiquant qu’il manque une autorisation pour la sécurité des applications. Si l’utilisateur refuse cette autorisation, la fonctionnalité « Sécurité des applications » est désactivée sur l’appareil. Si l’utilisateur n’accepte pas ou refuse l’autorisation, il continue à recevoir l’invite lors du déverrouillage de son appareil ou de l’ouverture de l’application, jusqu’à ce qu’elle ait été approuvée.
 
 > [!NOTE]
-> Si votre organisation affiche un aperçu de la fonctionnalité « Protection contre la falsification » et si les nouvelles autorisations de stockage ne sont pas accordées par l’utilisateur dans les 7 jours suivant la mise à jour vers la dernière version, l’utilisateur risque de perdre l’accès aux ressources d’entreprise.
+> Si votre organisation affiche un aperçu de la fonctionnalité « Protection contre les falsifications » et si les nouvelles autorisations de stockage ne sont pas accordées par l’utilisateur dans les 7 jours suivant la mise à jour vers la dernière version, l’utilisateur risque de perdre l’accès aux ressources d’entreprise.
 
 **Consignes de préparation :**
 
-Informez vos utilisateurs et le helpdesk (le cas échéant) que les utilisateurs devront accepter les nouvelles autorisations lorsqu’ils y seront invités après avoir mis à jour Defender for Endpoint pour créer la version 1.0.3501.0301 ou ultérieure. Pour accepter les autorisations, les utilisateurs doivent :
+Informez vos utilisateurs et le support technique (le cas échéant) que les utilisateurs doivent accepter les nouvelles autorisations lorsqu’ils sont invités à mettre à jour Defender pour point de terminaison pour générer 1.0.3501.0301 ou version ultérieure. Pour accepter les autorisations, les utilisateurs doivent :
 
-1. Appuyez sur la notification Du point de terminaison dans l’application ou ouvrez l’application Defender pour le point de terminaison. Les utilisateurs voient un écran répertoriant les autorisations nécessaires. Une coche verte est manquante en regard de l’autorisation Stockage défaut.
+1. Appuyez sur la notification Defender pour point de terminaison dans l’application ou ouvrez l’application Defender pour point de terminaison. Les utilisateurs verront un écran qui répertorie les autorisations nécessaires. Une coche verte est manquante en regard de l’autorisation Stockage.
 
-2. **Appuyez sur Commencer**.
+2. Appuyez **sur Commencer**.
 
-3. Appuyez sur le basculement pour **autoriser l’accès afin de gérer tous les fichiers.**
+3. Appuyez sur le bouton bascule Autoriser **l’accès pour gérer tous les fichiers.**
 
 4. L’appareil est désormais protégé.
 
   > [!NOTE]
-  > Cette autorisation permet à Microsoft Defender for Endpoint d’accéder au stockage sur l’appareil de l’utilisateur, ce qui permet de détecter et de supprimer les applications malveillantes et indésirables. Microsoft Defender pour le point de terminaison accède/analyse uniquement le fichier de package d’application Android (.apk). Sur les appareils avec un profil de travail, Defender pour le point de terminaison analyse uniquement les fichiers liés au travail.
+  > Cette autorisation permet à Microsoft Defender pour point de terminaison d’accéder au stockage sur l’appareil de l’utilisateur, ce qui permet de détecter et de supprimer les applications malveillantes et indésirables. Microsoft Defender pour point de terminaison accède/analyse uniquement au fichier de package d’application Android (.apk). Sur les appareils dotés d’un profil professionnel, Defender pour point de terminaison analyse uniquement les fichiers liés au travail.
