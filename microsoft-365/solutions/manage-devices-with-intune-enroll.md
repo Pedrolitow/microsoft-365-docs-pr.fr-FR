@@ -18,22 +18,22 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 5810513cd3aa4fccd8ce0100f22c708c53527c42
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: HT
+ms.openlocfilehash: 177c21b46357ca890994751b9f4d7597a57c6b64
+ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321638"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64651276"
 ---
-# <a name="step-2-enroll-devices-into-management-with-intune"></a>Étape 2. Inscrire des appareils dans la gestion avec Intune
+# <a name="step-2-enroll-devices-to-intune"></a>Étape 2. Inscrire des appareils à Intune
 
-Il existe plusieurs façons de sécuriser le point de terminaison, un terme souvent utilisé pour désigner l'entité combinée, notamment les appareils, les applications et l'identité de l'utilisateur. Les politiques de sécurité doivent être appliquées de manière cohérente et fiable non seulement sur les applications, mais aussi sur l'appareil lui-même. L'inscription de l'appareil dans la gestion et l'enregistrement auprès d'un fournisseur d'identité cloud, tel qu'Azure Active Directory Domain Services, est un bon début.
+Il existe plusieurs façons de sécuriser le point de terminaison, un terme souvent utilisé pour désigner l'entité combinée, notamment les appareils, les applications et l'identité de l'utilisateur. Les politiques de sécurité doivent être appliquées de manière cohérente et fiable non seulement sur les applications, mais aussi sur l'appareil lui-même. L’inscription de l’appareil à Intune et l’inscription auprès d’un fournisseur d’identité cloud, tel que Azure Active Directory, constituent un excellent point de départ.
 
 Qu'il s'agisse d'un appareil BYOD personnel ou d'un appareil appartenant à l'entreprise et entièrement géré, il est bon d'avoir une visibilité sur les points de terminaison accédant aux ressources de votre organisation pour vous assurer que vous n'autorisez que des appareils sains et conformes. Cela inclut la santé et la fiabilité des applications mobiles et de bureau qui s'exécutent sur les terminaux. Vous voulez vous assurer que ces applications sont saines et conformes et qu'elles empêchent les données d'entreprise de fuir vers les applications ou les services grand public par le biais d'intentions malveillantes ou de moyens accidentels.
 
 Le processus d'inscription de l'appareil établit une relation entre l'utilisateur, l'appareil et le service Microsoft Intune. L'utilisation de Microsoft Intune en tant que service autonome vous permet d'utiliser une console d'administration Web unique pour gérer les PC Windows, macOS et les plates-formes d'appareils mobiles les plus populaires.
 
-Cet article recommande des méthodes pour inscrire des appareils dans la gestion à l'aide d'Intune. Pour plus d'informations sur ces méthodes et sur la façon de déployer chacune d'entre elles, consultez [Guide de déploiement : Enroll devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment).
+Cet article recommande des méthodes pour inscrire des appareils à Intune. Pour plus d'informations sur ces méthodes et sur la façon de déployer chacune d'entre elles, consultez [Guide de déploiement : Enroll devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment).
 
 ![Étapes de gestion des appareils](../media/devices/intune-mdm-steps-1.png#lightbox)
 

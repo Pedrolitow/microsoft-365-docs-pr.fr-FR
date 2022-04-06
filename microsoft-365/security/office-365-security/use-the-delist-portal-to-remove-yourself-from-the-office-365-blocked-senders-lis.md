@@ -20,12 +20,12 @@ ms.custom:
 description: Dans cet article, vous allez apprendre à utiliser le portail Supprimer de la liste pour vous supprimer de la liste Microsoft 365 les expéditeurs bloqués. Il s’agit de la meilleure réponse pour résoudre les erreurs d’accès 5.7.511.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 58ddb2913ce7ecd047b1d5acb360c8f4c9ff5074
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 627e8f91c9d4730fed6a7fca275e9d53e1dfd7fd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775783"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474792"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list-and-address-57511-access-denied-errors"></a>Utiliser le portail supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués et adresse 5.7.511 Erreurs d’accès refusé
 
@@ -65,7 +65,8 @@ Il existe de bonnes raisons pour que les expéditeurs se placent sur la liste de
 
     Le portail envoie un courrier électronique à l'adresse de messagerie que vous indiquez. Le courrier électronique devrait ressembler à ce qui suit :
 
-    ![Capture d’écran du courrier électronique reçu lorsque vous envoyez une demande via le portail Delist.](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    :::image type="content" source="../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png" alt-text="Courrier électronique reçu lorsque vous envoyez une demande via le portail Delist" lightbox="../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png":::
+
 
 4. Cliquez sur le lien de confirmation dans le courrier électronique envoyé par le portail de suppression de la liste.
 

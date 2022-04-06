@@ -13,12 +13,12 @@ description: Les administrateurs peuvent apprendre à utiliser les informations 
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: df4f9e79439d435059374dd066a5298ba73d329b
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: e23d63a519bf69f94ce4990d8851d673826dcb5c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679651"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475078"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Informations sur les nouveaux domaines transmis par courrier électronique dans le Centre de sécurité & conformité
 
@@ -37,11 +37,12 @@ Les **nouveaux domaines transmis** par courrier électronique dans le Centre de 
 
 Cette information apparaît uniquement lorsque le problème est détecté et apparaît sur la page du rapport [de forwarding](view-mail-flow-reports.md#forwarding-report) .
 
-![Informations sur les nouveaux domaines qui sont transmis par courrier électronique.](../../media/mfi-new-domains-being-forwarded.png)
+:::image type="content" source="../../media/mfi-new-domains-being-forwarded.png" alt-text="Informations sur les nouveaux domaines transmis par courrier électronique" lightbox="../../media/mfi-new-domains-being-forwarded.png":::
+
 
 Lorsque vous cliquez sur le widget, un volant s’affiche, dans lequel vous trouverez plus de détails sur les messages transmis, y compris un lien vers le rapport [de report](view-mail-flow-reports.md#forwarding-report).
 
-![Volant d’informations qui s’affiche après avoir cliqué sur l’aperçu des nouveaux domaines transmis par courrier électronique.](../../media/mfi-new-domains-being-forwarded-details.png)
+:::image type="content" source="../../media/mfi-new-domains-being-forwarded-details.png" alt-text="Le flyout Détails qui s’affiche après avoir cliqué sur l’aperçu des nouveaux domaines transmis par courrier électronique" lightbox="../../media/mfi-new-domains-being-forwarded-details.png":::
 
 Vous pouvez également vous rendre sur cette page de détails lorsque vous sélectionnez l’aperçu après avoir cliqué sur Afficher tout dans la zone Recommandations  & informations les plus **détaillées** **(** \> Tableau de bord de **rapports ou ).** <https://protection.office.com/insightdashboard>
 

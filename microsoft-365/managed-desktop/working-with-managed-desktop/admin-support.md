@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: ad8ae319be7515282dc51e9dd9a519660b5d91f6
-ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
+ms.openlocfilehash: 7f13c11f73d9ddbb9d074782a03fa408ef2c3ec6
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62879119"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595233"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Aide administrateur pour le Bureau géré Microsoft
 
-Vous pouvez envoyer des tickets de support ou des demandes de commentaires à Microsoft à l’aide Microsoft Manged Desktop portail d’administration. Les demandes de support sont toujours prioritaires sur les soumissions de commentaires.
+Vous pouvez envoyer des tickets de support ou des demandes de commentaires à Microsoft à l’aide Microsoft Managed Desktop portail d’administration. Les demandes de support sont toujours prioritaires sur les soumissions de commentaires.
 
 ## <a name="open-a-new-support-request"></a>Ouvrir une nouvelle demande de support
 
@@ -27,7 +27,7 @@ Les demandes de support sont triés et gérés en fonction de la gravité décri
 **Pour ouvrir une nouvelle demande de support :**
 
 1. Connectez-vous [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) et accédez au menu **d’administration du** client.
-2. Dans la **section Microsoft Manged Desktop**, sélectionnez **Demandes de service**.
+2. Dans la **section Microsoft Managed Desktop**, sélectionnez **Demandes de service**.
 3. Dans la section **Demandes de** service, **sélectionnez + Nouvelle demande de support**.
 4. Sélectionnez **le type de** demande qui correspond à l’aide dont vous avez besoin. Le tableau ci-dessous présente les options.
 5. Sélectionnez **le niveau de** gravité. Pour plus d’informations, voir [le tableau des définitions de gravité](#support-request-severity-definitions).
@@ -39,9 +39,9 @@ Les demandes de support sont triés et gérés en fonction de la gravité décri
 
 | Type de demande de support | Champs d’utilisation |
 | ----- | ----- |
-Incident | Vous avez besoin de l Microsoft Manged Desktop des opérations pour examiner un problème d’utilisateur. Par exemple, un impact étendu d’une modification ou d’une panne de service.
-Demande d’informations | Vous planifiez une modification de la mise en réseau, de la configuration du proxy, des systèmes VPN, de l’expiration des certificats ou vous avez simplement besoin d’informations sur le service. Une réponse de l’équipe Microsoft Manged Desktop Operations est recommandée lors de la communication d’un changement au sein de votre organisation.
-Demande de modification | L’équipe Microsoft Manged Desktop opérations de mise à jour doit apporter des changements, par exemple en déplaçant des appareils entre des groupes de mise à jour. Toutes les demandes de modification sont traitées comme des demandes de gravité C.
+Incident | Vous avez besoin de l Microsoft Managed Desktop des opérations pour examiner un problème d’utilisateur. Par exemple, un impact étendu d’une modification ou d’une panne de service.
+Demande d’informations | Vous planifiez une modification de la mise en réseau, de la configuration du proxy, des systèmes VPN, de l’expiration des certificats ou vous avez simplement besoin d’informations sur le service. Une réponse de l’équipe Microsoft Managed Desktop Operations est recommandée lors de la communication d’un changement au sein de votre organisation.
+Demande de modification | L’équipe Microsoft Managed Desktop opérations de mise à jour doit apporter une modification, telle que le déplacement d’appareils entre des groupes de mise à jour. Toutes les demandes de modification sont traitées comme des demandes de gravité C.
 
 > [!IMPORTANT]
 > Lorsque vous créez une demande de support, vous devez fournir un contact principal. Cette personne est chargée de collaborer avec nos ingénieurs de service pour résoudre le problème ou répondre à toute question sur une modification demandée. Nous exigeons également que vous avez préalablement mis en place un [contact](../get-started/add-admin-contacts.md) administrateur qui sera copié sur toutes les notifications de cas pour leur domaine de travail pertinent. Cette personne est invitée à prendre en compte un cas si le contact principal d’un cas est inaccessible.
@@ -57,7 +57,7 @@ La messagerie électronique est l’approche recommandée pour interagir avec no
 **Pour afficher tous vos cas actifs :**
 
 1. Connectez-vous [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) et accédez au menu **Administration des** locataires.
-2. Dans la **section Microsoft Manged Desktop**, sélectionnez **Demande de service**.
+2. Dans la **section Microsoft Managed Desktop**, sélectionnez **Demande de service**.
 3. À partir de cet affichage, vous pouvez exporter l’affichage récapitulatif ou sélectionner n’importe quel cas pour afficher les détails.
 
 ### <a name="edit-case-details"></a>Modifier les détails d’un cas
@@ -75,18 +75,21 @@ Vous pouvez modifier les détails du cas, par exemple, mettre à jour le contact
 
 Une fois qu’un cas est résolu, il ne peut plus être modifié. Si une demande a été résolue pendant moins de 24 heures, vous verrez l’option de **réactivation** au lieu de **Modifier**. Une fois réactivé, vous pouvez à nouveau modifier la demande.  
 
+> [!NOTE]
+> Le niveau de gravité ne peut être définie que pour certains types de demandes de support. Si la sélection d’un niveau de gravité n’était pas une option lorsque vous avez créé la demande de support, vous ne pourrez pas modifier votre demande de support.
+
 ### <a name="provide-feedback"></a>Envoyer des commentaires
 
 Nous vous remercions de vos commentaires et nous l’utilisons pour améliorer l’expérience de support de l’administrateur.
 
-Lorsque vous êtes le contact principal pour une demande de support, vous recevez un courrier électronique de Microsoft Manged Desktop Operations. L’e-mail vous demandera votre expérience une fois votre problème résolu. Les commentaires sont activement surveillés et partagés avec les ingénieurs pour améliorer le service et hiérarchiser les fonctionnalités futures. N’oubliez pas de vous concentrer sur votre expérience et de ne pas inclure d’informations personnelles dans le formulaire de commentaires. Pour plus d’informations sur la confidentialité, voir la [déclaration de confidentialité De Microsoft](https://privacy.microsoft.com/privacystatement).
+Lorsque vous êtes le contact principal pour une demande de support, vous recevez un e-mail de Microsoft Managed Desktop Operations. L’e-mail vous demandera votre expérience une fois votre problème résolu. Les commentaires sont activement surveillés et partagés avec les ingénieurs pour améliorer le service et hiérarchiser les fonctionnalités futures. N’oubliez pas de vous concentrer sur votre expérience et de ne pas inclure d’informations personnelles dans le formulaire de commentaires. Pour plus d’informations sur la confidentialité, voir la [déclaration de confidentialité De Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="support-request-severity-definitions"></a>Définitions de gravité des demandes de prise en charge
 
-Le délai de réponse initial est la période entre le moment où vous envoyez votre demande de support jusqu’à ce qu’un ingénieur Microsoft Manged Desktop vous contacte et commence à travailler sur votre demande de support. Le délai de réponse initial varie en fonction de l’impact commercial de la demande. Elle est basée sur la gravité de la demande.
+Le délai de réponse initial est la période entre le moment où vous envoyez votre demande de support jusqu’à ce qu’un ingénieur Microsoft Managed Desktop vous contacte et commence à travailler sur votre demande de support. Le délai de réponse initial varie en fonction de l’impact commercial de la demande. Elle est basée sur la gravité de la demande.
 
 > [!NOTE]
-> Dans ce tableau, « heures d’assistance de l’administrateur » signifie que le support Microsoft Manged Desktop pour les administrateurs est disponible, pour la plupart des pays, 24 heures sur 24 du lundi au **vendredi**. Gravité Les problèmes A peuvent être travaillés 24 heures sur 24, tous les sept jours de la semaine.
+> Dans ce tableau, « heures d’assistance de l’administrateur » signifie que le support Microsoft Managed Desktop pour les administrateurs est disponible, pour la plupart des pays, 24 heures sur 24 du lundi au **vendredi**. Gravité Les problèmes A peuvent être travaillés 24 heures sur 24, tous les sept jours de la semaine.
 
 | Niveau de gravité | Situation | Temps de réponse initial | Réponse attendue de votre part |
 | ----- | ----- |----- | ----- |
@@ -107,6 +110,6 @@ Vous trouverez ci-dessous une liste de conditions supplémentaires à connaître
 
 ## <a name="more-resources"></a>Plus de ressources
 
-- [Prise en charge des utilisateurs Microsoft Manged Desktop](end-user-support.md).
-- [Prise en charge Microsoft Manged Desktop](../service-description/support.md).
-- Si vous êtes déjà abonné à Microsoft Manged Desktop, vous trouverez des procédures détaillées, des flux de processus, des instructions de travail et des FAQ dans le Guide d’administration Microsoft Manged Desktop. Dans [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), accédez à la section Administration des locataires, sous Microsoft Manged Desktop, sélectionnez Ressources en ligne, puis Autres ressources. Vous trouverez le Guide d’administration ici.
+- [Prise en charge des utilisateurs Microsoft Managed Desktop](end-user-support.md).
+- [Prise en charge Microsoft Managed Desktop](../service-description/support.md).
+- Si vous êtes déjà abonné à Microsoft Managed Desktop, vous trouverez des procédures détaillées, des flux de processus, des instructions de travail et des FAQ dans le Guide d’administration Microsoft Managed Desktop. Dans [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), accédez à la section Administration des locataires, sous Microsoft Managed Desktop, sélectionnez Ressources en ligne, puis Autres ressources. Vous trouverez le Guide d’administration ici.

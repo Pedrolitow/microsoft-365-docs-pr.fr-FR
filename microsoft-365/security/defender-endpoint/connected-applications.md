@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4dd630dd2b35c2fedc0340cd873ff065b2685b41
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 9e15103f4366d0717af9cec44d516b4b16a7160a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300645"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475562"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Applications connectées dans Microsoft Defender pour point de terminaison
 
@@ -38,15 +38,15 @@ Les applications connectées s’intègrent à la plateforme Defender for Endpoi
 
 Les applications utilisent le protocole OAuth 2.0 standard pour s’authentifier et fournir des jetons à utiliser avec les API Microsoft Defender for Endpoint. En outre, les applications Azure Active Directory (Azure AD) permettent aux administrateurs client de définir un contrôle explicite sur les API accessibles à l’aide de l’application correspondante.
 
-Vous devez suivre ces [étapes](/microsoft-365/security/defender-endpoint/apis-intro) pour utiliser les API avec l’application connectée.
+Vous devez suivre ces [étapes pour](/microsoft-365/security/defender-endpoint/apis-intro) utiliser les API avec l’application connectée.
 
-Dans le menu de navigation de gauche, sélectionnez Partenaires **& API** (sous Points de terminaison) > applications  **connectées.**
+Dans le menu de navigation de gauche, sélectionnez Partenaires **& API** (sous Points de terminaison **) >** **applications connectées**.
 
 ## <a name="view-connected-application-details"></a>Afficher les détails de l’application connectée
 
 La page Applications connectées fournit des informations sur Azure AD applications connectées à Microsoft Defender for Endpoint dans votre organisation. Vous pouvez passer en revue l’utilisation des applications connectées : dernière expérience, nombre de demandes au cours des dernières 24 heures et tendances des demandes au cours des 30 derniers jours.
 
-![Image des applications connectées.](images/connected-apps.png)
+:::image type="content" source="images/connected-apps.png" alt-text="Applications connectées" lightbox="images/connected-apps.png":::
  
 ## <a name="edit-reconfigure-or-delete-a-connected-application"></a>Modifier, reconfigurer ou supprimer une application connectée
 

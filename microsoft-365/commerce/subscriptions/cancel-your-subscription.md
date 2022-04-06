@@ -20,13 +20,13 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: Découvrez comment annuler votre Dynamics 365, Intune, Power Platform et Microsoft 365 pour un essai professionnel ou des abonnements payants dans le Centre d'administration Microsoft 365.
-ms.date: 01/20/2022
-ms.openlocfilehash: 82d579cab43b2c1edd7cc3bd898f2397bbd7a435
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.date: 03/31/2022
+ms.openlocfilehash: d6b6c078c5f0d1b44143f3a9cc2d336a0a80fe03
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320086"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595277"
 ---
 # <a name="cancel-your-subscription"></a>Annuler votre abonnement
 
@@ -49,11 +49,11 @@ Si vous souhaitez annuler votre abonnement, le moyen le plus simple consiste à 
 
 ### <a name="if-you-have-a-billing-profile"></a>Si vous avez un profil de facturation
 
-Vous ne pouvez annuler et recevoir un crédit ou un remboursement au prorata que si vous annulez dans les 72 heures suivant le début ou le renouvellement de votre abonnement. Si vous annulez au cours de cette période limitée, le montant calculé au prorata est crédité sur votre prochaine facture ou renvoyé au cours du cycle de facturation suivant.
+Vous ne pouvez annuler et recevoir un crédit ou un remboursement au prorata que si vous annulez dans les sept jours suivant le début ou le renouvellement de votre abonnement. Si vous annulez au cours de cette période limitée, le montant calculé au prorata est crédité sur votre prochaine facture ou renvoyé au cours du cycle de facturation suivant.
 
-Si vous devez annuler dans les 72 heures suivant le début ou le renouvellement de votre abonnement, accédez à [Étapes d’annulation de votre abonnement](#steps-to-cancel-your-subscription) plus loin dans cet article.
+Si vous devez annuler dans les sept jours suivant le début ou le renouvellement de votre abonnement, accédez à [Étapes d’annulation de votre abonnement](#steps-to-cancel-your-subscription) plus loin dans cet article.
 
-Si plus de 72 heures se sont écoulées, [désactivez la facturation périodique](renew-your-subscription.md). Cela vous évite d’être facturé à nouveau pour votre abonnement et vous permet de conserver votre accès à vos produits et services pour le reste de votre abonnement.
+Si plus de sept jours se sont écoulés, [désactivez la facturation périodique](renew-your-subscription.md). Cela vous évite d’être facturé à nouveau pour votre abonnement et vous permet de conserver l’accès à vos produits et services pour le reste de votre abonnement.
 
 ### <a name="if-you-dont-have-a-billing-profile"></a>Si vous n'avez pas de profil de facturation
 
@@ -66,7 +66,7 @@ Les étapes d’annulation de votre abonnement d’essai ou payant dépendent du
 |25 licences ou moins  | [Utilisez les étapes ci-dessous pour annuler](#steps-to-cancel-your-subscription) votre abonnement d’essai ou payant en ligne dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">le Centre d'administration Microsoft 365</a>.        |
 |Plus de 25 licences   | Réduisez le nombre de licences à 25 ou moins, puis [utilisez les étapes ci-dessous pour annuler](#steps-to-cancel-your-subscription).      |
 
-Si vous ne pouvez pas réduire le nombre de licences, [désactivez la facturation périodique](renew-your-subscription.md). Cela vous évite d’être facturé à nouveau pour votre abonnement et vous permet de conserver votre accès à vos produits et services pour le reste de votre abonnement.
+Si vous ne pouvez pas diminuer le nombre de licences, [désactivez la facturation périodique](renew-your-subscription.md). Cela vous évite d’être facturé à nouveau pour votre abonnement et vous permet de conserver l’accès à vos produits et services pour le reste de votre abonnement.
 
 Si vous ne parvenez pas à annuler votre abonnement, [contactez le support](../../admin/get-help-support.md) pour obtenir de l’aide.
 

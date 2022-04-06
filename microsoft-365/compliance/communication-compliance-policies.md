@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 33961088105e838add3634024bb85807a6550eb7
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: d8524715ad0e450671faeaeb0714992e297a02df
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450729"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595183"
 ---
 # <a name="communication-compliance-policies"></a>Stratégies de conformité des communications
 
@@ -82,6 +82,32 @@ Pour copier une stratégie et en créer une, complétez les étapes suivantes :
 3. Dans le **volet Copier la** stratégie, vous pouvez accepter le nom par défaut de la stratégie dans  le champ Nom de la stratégie ou renommer la stratégie. Le nom de la nouvelle stratégie ne peut pas être identique à une stratégie active ou désactivée existante. Remplissez le **champ Description** selon les besoins.
 4. Si vous n’avez pas besoin d’une personnalisation supplémentaire de la stratégie, **sélectionnez Copier la** stratégie pour terminer le processus. Si vous devez mettre à jour la configuration de la nouvelle stratégie, sélectionnez **Personnaliser la stratégie**. L’Assistant Stratégie démarre pour vous aider à mettre à jour et personnaliser la nouvelle stratégie.
 
+## <a name="user-reported-messages-policy"></a>Stratégie de messages signalés par l’utilisateur
+
+Dans le cadre d’une défense à plusieurs niveaux pour détecter et corriger les messages inappropriés dans votre organisation, vous pouvez compléter les stratégies de conformité des communications avec les messages signalés par l’utilisateur Microsoft Teams. Cette fonctionnalité permet aux utilisateurs de votre organisation de signaler eux-mêmes des messages inappropriés, tels que des commentaires ou des messages d’accueil, le partage de contenu pour adultes et le partage d’informations sensibles ou confidentielles, afin de favoriser un environnement de travail sûr et conforme.
+
+Activée par défaut dans le Centre d’administration [Teams](/microsoftteams/manage-teams-in-modern-portal), l’option *Signaler* une préoccupation dans les messages Teams permet aux utilisateurs de votre organisation de soumettre des messages inappropriés pour révision par les réviseurs de conformité des communications pour la stratégie. Ces messages sont pris en charge par une stratégie système par défaut qui prend en charge la Teams des canaux, des groupes et des conversations privées.
+
+![Rapport de conformité des communications un problème.](../media/communication-compliance-report-a-concern-full-menu.png)
+
+Lorsqu’un utilisateur envoie un message Teams conversation pour révision, le message est copié dans la stratégie de message signalée par l’utilisateur. Les messages signalés restent initialement visibles par tous les membres de la conversation et il n’y a aucune notification aux membres de la conversation ou à l’auteur de la notification qu’un message a été signalé dans les conversations de canal, privées ou de groupe. Un utilisateur ne peut pas signaler le même message plusieurs fois et le message reste visible pour tous les utilisateurs inclus dans la session de conversation pendant le processus de révision de stratégie. 
+
+Pendant le processus de révision, les réviseurs de conformité des communications peuvent effectuer toutes les [actions](/microsoft-365/compliance/communication-compliance-investigate-remediate#step-3-decide-on-a-remediation-action) de correction standard sur le message, y compris la suppression du message de la Teams conversation. En fonction de la façon dont les messages sont corrigés, l’expéditeur et les destinataires du message voient différents [messages de notification](/microsoftteams/communication-compliance#act-on-inappropriate-messages-in-microsoft-teams) dans Teams conversations après la révision.
+
+![Stratégie de messages signalés par l’utilisateur en matière de conformité des communications.](../media/communication-compliance-user-reported-messages-policy.png)
+
+Les messages signalés par l’utilisateur Teams conversations sont les seuls messages traitées par la stratégie de message signalé par l’utilisateur et seuls les réviseurs affectés à la stratégie peuvent être modifiés. Toutes les autres propriétés de stratégie ne sont pas modifiables. Lorsque la stratégie est créée, les réviseurs initiaux affectés à la stratégie sont tous membres du groupe de *rôles Administrateurs* de conformité des communications (s’il est rempli avec au moins un utilisateur)  ou tous les membres du groupe de rôles Administrateur global de votre organisation. Le créateur de stratégie est un utilisateur sélectionné de manière aléatoire dans le groupe de *rôles Administrateurs* de conformité des communications (s’il est rempli avec au moins un utilisateur) ou un utilisateur sélectionné de  manière aléatoire dans le groupe de rôles Administrateur global de votre organisation.  
+
+Les administrateurs doivent immédiatement affecter des réviseurs personnalisés à cette stratégie selon le cas pour votre organisation. Il peut s’agir de réviseurs tels que votre responsable de la mise en conformité, un responsable des risques ou des membres de votre service des ressources humaines. Pour personnaliser les réviseurs des messages de conversation envoyés en tant que messages signalés par l’utilisateur, complétez les étapes suivantes :
+
+1. [Connectez-vous Centre de conformité Microsoft 365](https://compliance.microsoft.com/) à l’aide des informations d’identification d’un compte d’administrateur dans Microsoft 365 organisation.
+2. Dans la Centre de conformité Microsoft 365, allez à **Conformité des communications**.
+3. Sous **l’onglet** Stratégie, sélectionnez la stratégie de *messages* signalés par l’utilisateur et sélectionnez **Modifier**.
+4. Dans le **volet Surveiller les messages** signalés par l’utilisateur, attribuez des réviseurs pour la stratégie. Les réviseurs doivent avoir des boîtes aux lettres hébergées Exchange Online. Lorsque des réviseurs sont ajoutés à une stratégie, ils reçoivent automatiquement un message électronique les avertissant de l’affectation à la stratégie et fournissent des liens vers des informations sur le processus de révision.
+5. Sélectionnez **Enregistrer**.
+
+Pour désactiver les utilisateurs de la Teams messages avec *l’option* Signaler un problème, désactivez **l’option De** rapport d’utilisateur final [dans le Centre d Teams’administration.](/microsoftteams/manage-teams-in-modern-portal)
+
 ## <a name="storage-limit-notification-preview"></a>Stockage limite de notification (prévisualisation)
 
 Chaque stratégie de conformité des communications a une taille limite de stockage de 100 Go ou 1 million de messages, selon la première limite atteinte. À mesure que la stratégie approche de ces limites, les e-mails de notification sont automatiquement envoyés  aux utilisateurs affectés aux groupes de rôles Conformité des communications ou *Administrateur* de la conformité des communications. Les messages de notification sont envoyés lorsque la taille de stockage ou le nombre de messages atteint 80, 90 et 95 % de la limite. Lorsque la limite de stratégie est atteinte, la stratégie est automatiquement désactivée et la stratégie cesse de traiter les messages pour les alertes.
@@ -119,7 +145,7 @@ Vous avez la possibilité d’inclure des types d’informations sensibles dans 
 - Type d’informations personnalisé
 
 > [!IMPORTANT]
-> Les sits ont deux façons différentes de définir les paramètres de nombre d’instances uniques max. Pour plus d’informations, consultez [Valeurs prises en charge par le nombre d’instances pour SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> Les sits ont deux façons différentes de définir les paramètres de nombre d’instances uniques max. Pour plus d’informations, voir [Nombre d’instances prises en charge pour SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
 
 Pour en savoir plus sur les détails des informations sensibles et les modèles inclus dans les types par défaut, voir Définitions d’entités de [types d’informations sensibles](sensitive-information-type-entity-definitions.md).
 
@@ -205,7 +231,7 @@ Chaque mot que vous entrez et séparez par une virgule est appliqué séparémen
 
 > [!IMPORTANT]
 >
-> Lors de l’importation d’un fichier de dictionnaire personnel, chaque mot ou expression doit être séparé par un retour chariot et sur une ligne distincte. Par exemple :
+> Lors de l’importation d’un fichier de dictionnaire personnel, chaque mot ou expression doit être séparé par un retour chariot et sur une ligne distincte. Par exemple :
 >
 > *banker* <br>
 > *confidentiel* <br>

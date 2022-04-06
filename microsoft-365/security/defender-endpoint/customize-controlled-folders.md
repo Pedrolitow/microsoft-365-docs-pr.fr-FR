@@ -13,14 +13,14 @@ ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.collection: m365initiative-m365-defender
+ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: c290ad42702ddcb815880fedfe72d9de73065b8d
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: b9af738d4b1f59705132a84239d06dc762447417
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322480"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683754"
 ---
 # <a name="customize-controlled-folder-access"></a>Personnaliser l’accès contrôlé aux dossiers
 
@@ -73,7 +73,7 @@ Vous pouvez utiliser l’application Sécurité Windows, la stratégie de groupe
 
 3. Dans votre Éditeur **de gestion des stratégies de** groupe, allez aux modèles d’administration **des** \> **stratégies de configuration** \> ordinateur.
 
-4. Développez l’arborescence **Windows composants** \> **Antivirus Microsoft Defender** \> **Windows Defender’accès** contrôlé aux **dossiers** Exploit Guard\>. <br/>**REMARQUE** : sur les versions antérieures Windows, vous pouvez voir **Antivirus Windows Defender au lieu** de **Antivirus Microsoft Defender**.
+4. Développez l’arborescence **Windows composants** \>  \> Antivirus Microsoft Defender **Windows Defender’accès** contrôlé aux **dossiers** Exploit Guard\>. <br/>**REMARQUE** : sur les versions antérieures Windows, vous pouvez voir **Antivirus Windows Defender au lieu** de **Antivirus Microsoft Defender**.
 
 5. Double-cliquez **sur Dossiers protégés configurés**, puis définissez l’option **sur Activé**. **Sélectionnez Afficher** et spécifiez chaque dossier à protéger.
 
@@ -81,7 +81,7 @@ Vous pouvez utiliser l’application Sécurité Windows, la stratégie de groupe
 
 ### <a name="use-powershell-to-protect-additional-folders"></a>Utiliser PowerShell pour protéger des dossiers supplémentaires
 
-1. **Tapez PowerShell dans** le menu Démarrer, cliquez avec le **bouton droit sur Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**
+1. **Tapez PowerShell dans** la menu Démarrer, cliquez avec le bouton **droit sur Windows PowerShell puis sélectionnez** **Exécuter en tant qu’administrateur**
 
 2. Tapez l’cmdlet PowerShell suivante, en remplaçant `<the folder to be protected>` par le chemin d’accès du dossier (par exemple :`"c:\apps\"`
 
@@ -128,13 +128,13 @@ Une application ou un service autorisé dispose uniquement d’un accès en écr
 
 2. Dans l’**Éditeur de gestion des stratégies de groupe**, accédez à **Configuration ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence **Windows composants** \> **Antivirus Microsoft Defender** \> **Windows Defender’accès** contrôlé aux **dossiers** Exploit Guard\>.
+3. Développez l’arborescence **Windows composants** \>  \> Antivirus Microsoft Defender **Windows Defender’accès** contrôlé aux **dossiers** Exploit Guard\>.
 
 4. Double-cliquez sur le **paramètre Configurer les applications autorisées** et définissez l’option **sur Activé**. **Sélectionnez Afficher** et entrez chaque application.
 
 ### <a name="use-powershell-to-allow-specific-apps"></a>Utiliser PowerShell pour autoriser des applications spécifiques
 
-1. **Tapez PowerShell dans** le menu Démarrer, cliquez avec le **bouton droit sur Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**
+1. **Tapez PowerShell dans** la menu Démarrer, cliquez avec le bouton **droit sur Windows PowerShell puis sélectionnez** **Exécuter en tant qu’administrateur**
 2. Entrez l’cmdlet suivante :
 
     ```PowerShell

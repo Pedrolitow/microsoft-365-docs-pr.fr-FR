@@ -22,40 +22,40 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c31a6e43e66b6e1ffeace75ac2d8419cc764174f
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 92b7efdad61a4738310d5fb469400033f78363a8
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499130"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64570148"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Préparer votre posture de sécurité pour votre premier incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 La préparation de la gestion des incidents implique la configuration d’une protection suffisante du réseau d’une organisation contre différents types d’incidents de sécurité. Pour réduire le risque d’incidents de sécurité, le National Institute of Standards and Technology (NIST) recommande plusieurs pratiques de sécurité, notamment les évaluations des risques, le renforcement de la sécurité de l’hôte, la configuration de réseaux en toute sécurité et la prévention des programmes malveillants. 
 
 Microsoft 365 Defender peuvent vous aider à résoudre plusieurs aspects de la prévention des incidents : 
 
-- Mise en œuvre [d’une infrastructure de confiance](/security/zero-trust/) zéro
+- Mise en œuvre [d’Confiance nulle](/security/zero-trust/) de gestion
 - Détermination de votre posture de sécurité en attribuant un score avec [le Niveau de sécurité Microsoft](microsoft-secure-score.md)
 - Prévention des menaces par le biais d’évaluations des vulnérabilités dans [la gestion des menaces et des vulnérabilités](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - Comprendre les dernières menaces de sécurité afin de pouvoir les préparer à l’analyse [des menaces](threat-analytics.md)
 
-## <a name="step-1-implement-zero-trust"></a>Étape 1. Implémenter la confiance zéro
+## <a name="step-1-implement-zero-trust"></a>Étape 1. Implémenter Confiance nulle
 
-[La](/security/zero-trust/) confiance zéro est une philosophie de sécurité intégrée et une stratégie de bout en bout qui considère la nature complexe de tout environnement moderne, y compris le personnel mobile et les utilisateurs, appareils, applications et données, où qu’ils se trouvent. En fournissant un volet unique pour gérer toutes les détections de manière cohérente, Microsoft 365 Defender peut faciliter l’application par votre équipe des opérations de sécurité des principes [directeurs](/security/zero-trust/#guiding-principles-of-zero-trust) de la confiance zéro. 
+[Confiance nulle](/security/zero-trust/) est une philosophie de sécurité intégrée et une stratégie de bout en bout qui considère la nature complexe de tout environnement moderne, y compris le personnel mobile et les utilisateurs, appareils, applications et données, où qu’ils se trouvent. En fournissant un seul volet de verre pour gérer toutes les détections de manière cohérente, Microsoft 365 Defender permet à votre équipe des opérations de sécurité d’implémenter plus facilement les principes [directeurs](/security/zero-trust/#guiding-principles-of-zero-trust) de Confiance nulle. 
 
-Les composants de Microsoft 365 Defender peuvent afficher des violations de règles qui ont été implémentées pour établir des stratégies d’accès conditionnel pour la confiance zéro en intégrant les données de Microsoft Defender pour Endpoint ou d’autres fournisseurs de sécurité mobile comme source d’informations pour les stratégies de conformité des appareils et l’implémentation de stratégies d’accès conditionnel basées sur les appareils. 
+Les composants de Microsoft 365 Defender peuvent afficher des violations de règles qui ont été implémentées pour établir des stratégies d’accès conditionnel pour Confiance nulle en intégrant des données à partir de Microsoft Defender pour point de terminaison  ou d’autres fournisseurs de sécurité mobile en tant que source d’informations pour les stratégies de conformité des appareils et l’implémentation de stratégies d’accès conditionnel basées sur les appareils. 
 
-Le risque d’appareil influence directement les ressources qui seront accessibles par l’utilisateur de cet appareil. Le refus d’accès aux ressources en fonction de certains critères est le thème principal de confiance zéro et Microsoft 365 Defender fournit les informations nécessaires pour déterminer les critères de niveau de confiance. Par exemple, Microsoft 365 Defender peut fournir le niveau de version logicielle d’un appareil via la page Gestion des menaces et des vulnérabilités, tandis que les stratégies d’accès conditionnel limitent les appareils qui ont des versions obsolètes ou vulnérables.
+Le risque d’appareil influence directement les ressources qui seront accessibles par l’utilisateur de cet appareil. Le refus d’accès aux ressources en fonction de certains critères est le thème principal de Confiance nulle et Microsoft 365 Defender fournit les informations nécessaires pour déterminer les critères de niveau de confiance. Par exemple, Microsoft 365 Defender peut fournir le niveau de version logicielle d’un appareil via la page Gestion des menaces et des vulnérabilités, tandis que les stratégies d’accès conditionnel limitent les appareils qui ont des versions obsolètes ou vulnérables.
 
-L’automatisation est un élément essentiel de l’implémentation et de la maintenance d’un environnement de confiance zéro, tout en réduisant le nombre d’alertes susceptibles de conduire à des événements de réponse aux incidents (IR). Les composants de Microsoft 365 Defender peuvent être automatisés, tels que les [actions](m365d-autoir.md) de correction (appelées enquêtes pour un incident dans le portail Microsoft 365 Defender), les actions de notification et même la création de tickets de support tels que [dans ServiceNow](https://microsoft.service-now.com/sp/).
+L’automatisation est un élément essentiel de l’implémentation et de la maintenance d’un environnement Confiance nulle tout en réduisant le nombre d’alertes susceptibles de conduire à des événements de réponse aux incidents (IR). Les composants de Microsoft 365 Defender peuvent être automatisés, tels que les [actions](m365d-autoir.md) de correction (appelées enquêtes pour un incident dans le portail Microsoft 365 Defender), les actions de notification et même la création de tickets de support tels que [dans ServiceNow](https://microsoft.service-now.com/sp/).
 
-## <a name="step-2-determine-your-organizations-security-posture"></a>Étape 2. Déterminer la posture de sécurité de votre organisation
+## <a name="step-2-determine-your-organizations-security-posture"></a>Étape 2. Déterminer la posture de sécurité de votre organisation
 
 Ensuite, les organisations peuvent utiliser le Niveau de sécurité [Microsoft](microsoft-secure-score.md) dans Microsoft 365 Defender pour déterminer votre posture de sécurité actuelle et prendre en compte des recommandations sur la façon de l’améliorer. Plus le score est élevé, plus l’organisation a mis en place de recommandations de sécurité et d’actions d’amélioration. Les recommandations de niveau de sécurité peuvent être prises sur différents produits et permettre aux organisations d’augmenter leurs scores encore plus élevés. 
 
@@ -86,8 +86,6 @@ Vous pouvez implémenter les recommandations d’une menace émergente pour renf
 Veillez à consulter régulièrement la section [Analyse](threat-analytics.md) des menaces du portail Microsoft 365 Defender. Pour plus [d’informations, voir l’exemple d’Microsoft 365 Defender](incidents-overview.md#example-security-operations-for-microsoft-365-defender) sécurité pour plus d’informations.
 
 ## <a name="next-step"></a>Étape suivante
-
-[![Étape 1 : Découvrez comment trier et analyser les incidents.](../../media/first-incident-overview/first-incident-path-step1.png)](first-incident-analyze.md)
 
 Découvrez comment trier [et analyser les incidents](first-incident-analyze.md).
 

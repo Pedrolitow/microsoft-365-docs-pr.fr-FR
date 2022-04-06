@@ -12,26 +12,26 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: high
-description: Découvrez comment utiliser la recherche avancée de métadonnées pour rechercher des éléments dans SharePoint bibliothèques de documents à l’aide SharePoint Syntex.
-ms.openlocfilehash: 87edac08dd057c0e9dea2ce36f4339f9c0bb5344
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+description: Découvrez comment utiliser la recherche avancée de métadonnées et la recherche de colonnes de site personnalisées pour rechercher des éléments dans des bibliothèques de documents SharePoint à l’aide SharePoint Syntex.
+ms.openlocfilehash: f010c6944fdcb05fcfe2c254274249b2dcabe99e
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526525"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595386"
 ---
 # <a name="search-for-metadata-in-document-libraries-in-microsoft-sharepoint-syntex"></a>Rechercher des métadonnées dans les bibliothèques de documents dans Microsoft SharePoint Syntex
 
 La fonctionnalité de recherche avancée de métadonnées SharePoint Syntex vous permet d’effectuer des requêtes spécifiques basées sur des métadonnées sur SharePoint bibliothèques de documents. Vous pouvez effectuer des requêtes plus rapides et plus précises basées sur des valeurs de colonne de métadonnées spécifiques, plutôt que de simplement rechercher des mots clés.
 
-La recherche avancée de métadonnées vous permet d’utiliser les métadonnées associées à un document pour vous aider à localiser le fichier dans SharePoint bibliothèque de documents. Cela est particulièrement utile lorsque vous avez un élément spécifique d’informations que vous souhaitez rechercher, comme la dernière modification d’un document, une personne spécifique associée à un fichier ou un type de fichier spécifique.
+La recherche avancée de métadonnées vous permet d’utiliser les métadonnées associées à un document pour vous aider à localiser le fichier dans SharePoint bibliothèque de documents. Cette fonctionnalité est particulièrement utile lorsque vous avez des informations spécifiques à rechercher, comme la dernière modification d’un document, une personne spécifique associée à un fichier ou un type de fichier spécifique.
 
 > [!NOTE]
 > Cette fonctionnalité est disponible uniquement pour les utilisateurs titulaires d’une licence SharePoint Syntex. 
 
 ## <a name="to-use-advanced-metadata-search"></a>Pour utiliser la recherche avancée de métadonnées
 
-1. À partir d SharePoint bibliothèque de **documents, dans la zone** Rechercher dans cette bibliothèque, cliquez ou appuyez sur l’icône de recherche de métadonnées (Capture d’écran de l’icône de recherche ![ de métadonnées.](../media/content-understanding/metadata-search-icon.png)).
+1. À partir d’une bibliothèque de documents SharePoint, dans la zone **Rechercher dans cette bibliothèque**, sélectionnez l’icône de recherche de métadonnées (![Capture d’écran de l’icône de recherche de métadonnées.](../media/content-understanding/metadata-search-icon.png)).
 
     ![Capture d’écran d’une page de bibliothèque de documents affichant la zone de recherche avec l’icône de recherche de métadonnées mise en évidence](../media/content-understanding/metadata-search-box.png)
 
@@ -39,7 +39,7 @@ La recherche avancée de métadonnées vous permet d’utiliser les métadonnée
 
     ![Capture d’écran d’une page de bibliothèque de documents affichant le volet de recherche de métadonnées](../media/content-understanding/metadata-search-pane.png)
 
-   Six champs de recherche de métadonnées sont actuellement disponibles. D’autres champs seront ajoutés à l’avenir.
+   Les champs suivants de recherche de métadonnées sont actuellement disponibles. D’autres champs seront ajoutés à l’avenir.
 
    |Champ    |Utilisez ce champ pour  |
    |---------|---------|
@@ -50,4 +50,13 @@ La recherche avancée de métadonnées vous permet d’utiliser les métadonnée
    |Type de fichier     |Effectuez une recherche par type de fichier sélectionné (par exemple, document Word ou PDF).        |
    |Type de contenu  |Recherchez par type de contenu sélectionné. Cette option s’affiche uniquement si un type de contenu non par défaut est appliqué à la bibliothèque. Les types de contenu par défaut sont les *documents* et les *dossiers*.        |
 
-3. Sélectionnez **Rechercher**. Les documents qui correspondent à votre recherche de métadonnées sont affichés sur la page de résultats. 
+3. Vous pouvez également rechercher des colonnes de site personnalisées dans l’affichage de bibliothèque actuel. Ceci est particulièrement utile si vous avez un modèle en cours d’exécution sur la bibliothèque, car les extracteurs de métadonnées remplissent automatiquement les informations dans les colonnes de site.  
+
+    Pour ajouter une colonne de site personnalisée à votre recherche, sélectionnez **Ajouter d’autres options**, puis sélectionnez le nom de la colonne de site.
+
+    ![Capture d’écran du menu Ajouter d’autres options dans le volet de recherche de métadonnées.](../media/content-understanding/metadata-search-add-more-options.png)
+
+    > [!NOTE]
+    > Actuellement, la possibilité d’ajouter des champs de métadonnées gérés ou des champs de texte multiligne n’est pas disponible. 
+
+4. Sélectionnez **Rechercher**. Les documents qui correspondent à votre recherche de métadonnées sont affichés sur la page de résultats. 

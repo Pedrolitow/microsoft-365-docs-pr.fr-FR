@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 55d01dfe6d0b6fd69bf32016b1b5dd585827e168
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: bd8f48e8396225fc03441cfc7c8ed69fa3f378bb
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282992"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475606"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>API Microsoft Defender pour point de terminaison - Hello World
 
@@ -51,61 +51,61 @@ Cela ne prend que 5 minutes en deux étapes :
 
 ### <a name="do-i-need-a-permission-to-connect"></a>Ai-je besoin d’une autorisation pour me connecter ?
 
-Pour l’étape d’inscription  de l’application, vous devez avoir un rôle d’administrateur général dans votre client Azure Active Directory (Azure AD).
+Pour l’étape d’inscription de l’application, vous devez avoir un rôle d’administrateur général dans votre client Azure Active Directory (Azure AD).
 
 ### <a name="step-1---create-an-app-in-azure-active-directory"></a>Étape 1 : créer une application dans Azure Active Directory
 
 1. Connectez-vous [à Azure](https://portal.azure.com) avec votre **utilisateur administrateur** général.
 
-2. Accédez à **Azure Active Directory** \> **inscription de l’application Nouvelle** \> **inscription.**
+2. Accédez à **Azure Active Directory** \> **inscription de l’application Nouvelle** \> **inscription**.
 
-   :::image type="content" alt-text="Image de la Microsoft Azure et de la navigation vers l’inscription de l’application." source="images/atp-azure-new-app2.png" lightbox="images/atp-azure-new-app2.png":::
+   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Option Inscriptions d’applications sous le volet Gérer dans le portail Azure Active Directory"  lightbox="images/atp-azure-new-app2.png":::
 
-3. Dans le formulaire d’inscription, choisissez un nom pour votre application, puis cliquez sur **Enregistrer.**
+3. Dans le formulaire d’inscription, choisissez un nom pour votre application, puis cliquez sur **Enregistrer**.
 
-4. Autorisez votre application à accéder à Defender pour endpoint et attribuez-lui **l’autorisation** « Lire toutes les alertes » :
+4. Autorisez votre application à accéder à Defender pour endpoint et attribuez-lui **l’autorisation « Lire toutes les alertes** » :
 
-   - Dans la page de votre application, cliquez sur **Autorisations d’API** Ajouter des API d’autorisation que mon \>  \>  organisation > **tapez WindowsDefenderATP** et cliquez sur **WindowsDefenderATP**.
+   - Dans la page de votre application, cliquez sur **Autorisations** \>  \> d’API Ajouter des API d’autorisation que **mon organisation >** **tapez WindowsDefenderATP** et cliquez sur **WindowsDefenderATP**.
 
      > [!NOTE]
      > WindowsDefenderATP n’apparaît pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour qu’il apparaisse.
 
-     :::image type="content" alt-text="Image de l’accès à l’API et de la sélection d’API1." source="images/add-permission.png" lightbox="images/add-permission.png":::
+     :::image type="content" source="images/add-permission.png" alt-text="Option d’autorisations d’API sous le volet Gérer dans le portail Azure Active Directory web" lightbox="images/add-permission.png":::
 
    - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**.
 
-     :::image type="content" alt-text="Image de l’accès à l’API et de la sélection d’API2." source="images/application-permissions.png" lightbox="images/application-permissions.png":::
+     :::image type="content" source="images/application-permissions.png" alt-text="Le type d’autorisation et les volets de paramètres dans la page Demander des autorisations d’API" lightbox="images/application-permissions.png":::
 
      > [!IMPORTANT]
      > Vous devez sélectionner les autorisations pertinentes. « Lire toutes les alertes » n’est qu’un exemple !
 
-     Par exemple :
+     Par exemple :
 
-     - Pour [exécuter des requêtes avancées,](run-advanced-query-api.md)sélectionnez l’autorisation « Exécuter des requêtes avancées ».
-     - Pour [isoler un ordinateur,](isolate-machine.md)sélectionnez l’autorisation « Isoler l’ordinateur ».
+     - Pour [exécuter des requêtes avancées](run-advanced-query-api.md), sélectionnez l’autorisation « Exécuter des requêtes avancées ».
+     - Pour [isoler un ordinateur](isolate-machine.md), sélectionnez l’autorisation « Isoler l’ordinateur ».
      - Pour déterminer l’autorisation qui vous est nécessaire, consultez la section **Autorisations** de l’API que vous souhaitez appeler.
 
-5. Cliquez sur **Accorder le consentement.**
+5. Cliquez sur **Accorder le consentement**.
 
    > [!NOTE]
    > Chaque fois que vous ajoutez une autorisation, vous devez cliquer sur **Accorder le consentement** pour que la nouvelle autorisation prenne effet.
 
-   ![Image d’octroi d’autorisations.](images/grant-consent.png)
+   :::image type="content" source="images/grant-consent.png" alt-text="Option de consentement d’octroi d’autorisation dans Azure Active Directory web" lightbox="images/grant-consent.png":::
 
 6. Ajoutez une secret à l’application.
 
-    Cliquez **sur Certificats & secrets,** ajoutez une description à la secret, puis cliquez sur **Ajouter**.
+    Cliquez **sur Certificats & secrets**, ajoutez une description à la secret, puis cliquez sur **Ajouter**.
 
     > [!IMPORTANT]
-    > Après avoir cliqué sur Ajouter, **copiez la valeur de secret générée.** Vous ne pourrez plus récupérer une fois que vous êtes parti !
+    > Après avoir cliqué sur Ajouter, **copiez la valeur de secret générée**. Vous ne pourrez plus récupérer une fois que vous êtes parti !
 
-    ![Image de la clé de création de l’application.](images/webapp-create-key2.png)
+    :::image type="content" source="images/webapp-create-key2.png" alt-text="Élément de menu Certificats & secrets dans le volet Gérer du portail Azure Active Directory" lightbox="images/webapp-create-key2.png":::
 
 7. Notez votre ID d’application et votre ID de client.
 
    Dans la page de votre application, allez à **Vue d’ensemble** et copiez ce qui suit :
 
-   ![Image de l’ID d’application créé.](images/app-and-tenant-ids.png)
+   :::image type="content" source="images/app-and-tenant-ids.png" alt-text="Volet Détails de l’application sous l’élément de menu Vue d’ensemble du portail Azure Active Directory web" lightbox="images/app-and-tenant-ids.png":::
 
 Terminé ! Vous avez réussi à inscrire une application !
 
@@ -136,14 +136,14 @@ Terminé ! Vous avez réussi à inscrire une application !
    return $token
    ```
 
-- Vérification de la sanité :
+- Vérification de la  sanité :
   - Exécutez le script.
-  - Dans votre navigateur, allez à : <https://jwt.ms/> .
+  - Dans votre navigateur, allez à : <https://jwt.ms/>.
   - Copiez le jeton (le contenu du Latest-token.txt fichier).
   - Coller dans la zone supérieure.
-  - Recherchez la section « rôles ». Recherchez _le rôle Alert.Read.All._
+  - Recherchez la section « rôles ». Recherchez _le rôle Alert.Read.All_ .
 
-  :::image type="content" alt-text="Image jwt.ms." source="images/api-jwt-ms.png" lightbox="images/api-jwt-ms.png":::
+  :::image type="content" source="images/api-jwt-ms.png" alt-text="Volet Jeton décodé pour jwt.ms" lightbox="images/api-jwt-ms.png":::
 
 ### <a name="lets-get-the-alerts"></a>Permet d’obtenir les alertes !
 

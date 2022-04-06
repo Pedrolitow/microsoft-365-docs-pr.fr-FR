@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment utiliser la build IA pour créer des modèles de traitement de formulaires dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: d04de2fc71b0b393e560e354253be42053725416
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: a3a3d1fa0e160b96d487a5eeb03c69f9e4fe7fb3
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450771"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507386"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Vue d’ensemble sur le traitement de formulaires dans Microsoft SharePoint Syntex
 
@@ -46,6 +46,10 @@ Un administrateur Office 365 doit activer le traitement de [](./set-up-content-u
 ### <a name="file-limitations"></a>Limitations de fichier
 
 Lorsque vous utilisez des modèles de traitement de formulaires, veillez à noter les [exigences et les limites d'utilisation des fichiers](/ai-builder/form-processing-model-requirements).
+
+### <a name="supported-languages"></a>Langues prises en charge
+
+Le traitement des formulaires prend en charge les documents dans plus de 73 langues. Pour obtenir la liste des langues, voir [Prise en charge des langues de traitement de formulaire](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support).
 
 ### <a name="multi-geo-environments"></a>Microsoft 365 Multigéographie
 

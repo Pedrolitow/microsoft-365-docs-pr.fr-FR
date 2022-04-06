@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer les autoriser dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3823290e9f239b14e4bf97fe1ae8ef7020561697
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 755a23d7cddbeb2943809681fc90556a2adac25b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314104"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475540"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Ajouter des autorisations dans la liste verte/rouge du client
 
@@ -30,7 +30,7 @@ ms.locfileid: "63314104"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Les administrateurs ne peuvent pas ajouter d’autoriser directement à la liste d’adresses client autoriser/bloquer. Au lieu de cela, vous utilisez le processus de soumission de l’administrateur pour envoyer le message qui a été bloqué afin que l’URL, le fichier et/ou les expéditeurs correspondants soient ajoutés à la liste d’adresses client autoriser/bloquer. Si un bloc du fichier, de l’URL ou de l’expéditeur ne s’est pas produit, l’autoriser ne sera pas créé. Dans la plupart des cas où le message a été déterminé comme faux positif qui a été incorrectement bloqué, les autorise sont conservées aussi longtemps que nécessaire pour donner au système le temps de les autoriser naturellement.
 
@@ -55,9 +55,7 @@ Autoriser les expéditeurs (ou domaines) sur la page **Soumissions** dans Micros
 
 7. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
 
-> [!div class="mx-imgBorder"]
 > ![Envoyez un programme malveillant à Microsoft pour un exemple d’analyse.](../../media/admin-submission-allow-messages.png)
-
 ## <a name="add-url-allows-using-the-submissions-portal"></a>Ajouter une URL autorise l’utilisation du portail soumissions
 
 Autorisez les URL sur la page **Soumissions** dans Microsoft 365 Defender.
@@ -78,7 +76,6 @@ Autorisez les URL sur la page **Soumissions** dans Microsoft 365 Defender.
 
 > [!div class="mx-imgBorder"]
 > ![Envoyer l’URL pour analyse.](../../media/submit-url-for-analysis.png)
-
 ## <a name="add-file-allows-using-the-submissions-portal"></a>Ajouter un fichier permet d’utiliser le portail Soumissions
 
 Autoriser les fichiers sur **la page Soumissions** dans Microsoft 365 Defender.

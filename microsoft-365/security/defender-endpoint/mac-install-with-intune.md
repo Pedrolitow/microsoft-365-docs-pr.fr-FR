@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4979ee5f3953ced1073779fdcabb7eb361d4911a
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: a511405c2d8fb4753debbadf0744d6277639648b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767375"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475254"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement basé sur Intune pour Microsoft Defender pour Endpoint sur macOS
 
@@ -44,7 +44,7 @@ Cette rubrique décrit comment déployer Microsoft Defender pour Endpoint sur ma
 
 Avant de commencer, consultez la [page principale de Microsoft Defender pour point](microsoft-defender-endpoint-mac.md) de terminaison sur macOS pour obtenir une description des conditions préalables et de la requise pour la version logicielle actuelle.
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Présentation
 
 Le tableau suivant récapitule les étapes à suivre pour déployer et gérer Microsoft Defender pour endpoint sur Mac, via Intune. Des étapes plus détaillées sont disponibles ci-dessous.
 
@@ -72,7 +72,7 @@ Téléchargez les packages d’intégration à partir Microsoft 365 Defender por
 
 2. Définissez le système d’exploitation sur **macOS** et la méthode de déploiement sur **Gestion des périphériques mobiles/Microsoft Intune**.
 
-    ![Capture d’écran des paramètres d’intégration.](images/macos-install-with-intune.png)
+   :::image type="content" source="images/macos-install-with-intune.png" alt-text="Page Paramètres d’intégration" lightbox="images/macos-install-with-intune.png":::
 
 3. **Sélectionnez Télécharger le package d’intégration**. _Enregistrez-leWindowsDefenderATPOnboardingPackage.zip_ dans le même répertoire.
 
@@ -103,31 +103,31 @@ Ce profil contient des informations de licence pour Microsoft Defender pour le p
 1. Sélectionnez **PlatformmacOS**=, **typeTemplates**= de profil. **Nom du modèle**= **Personnalisé**. Cliquez sur **Créer**.
 
     > [!div class="mx-imgBorder"]
-    > ![Création d’un profil de configuration personnalisé.](images/mdatp-6-systemconfigurationprofiles-1.png)
+    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-1.png" alt-text="Page de création d’un profil de configuration personnalisé" lightbox="images/mdatp-6-systemconfigurationprofiles-1.png":::
 
 1. Choisissez un nom pour le profil, par exemple« Intégration de Defender pour le cloud ou de point de terminaison pour macOS ». Cliquez sur **Suivant**.
 
     > [!div class="mx-imgBorder"]
-    > ![Profil de configuration personnalisé - nom.](images/mdatp-6-systemconfigurationprofiles-2.png)
+    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-2.png" alt-text="Champ Nom du profil de configuration personnalisé" lightbox="images/mdatp-6-systemconfigurationprofiles-2.png":::
 
 1. Choisissez un nom pour le nom du profil de configuration, par exemple« Defender pour l’intégration de point de terminaison pour macOS ».
 1. Choisissez un [canal de déploiement](/mem/intune/fundamentals/whats-new#new-deployment-channel-setting-for-custom-device-configuration-profiles-on-macos-devices).
 1. Sélectionnez intune/WindowsDefenderATPOnboarding.xml que vous avez extrait du package d’intégration ci-dessus en tant que fichier de profil de configuration.
 
     > [!div class="mx-imgBorder"]
-    > ![Importer une configuration à partir d’un fichier pour le profil de configuration personnalisé.](images/mdatp-6-systemconfigurationprofiles.png)
+    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles.png" alt-text="Importation d’une configuration à partir d’un fichier pour le profil de configuration personnalisé" lightbox="images/mdatp-6-systemconfigurationprofiles.png":::
 
 1. Cliquez sur **Suivant**.
 1. Affectez des appareils sous **l’onglet** Affectation. Cliquez sur **Suivant**.
 
     > [!div class="mx-imgBorder"]
-    > ![Profil de configuration personnalisé : affectation.](images/mdatp-6-systemconfigurationprofiles-2.png)
+    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-2.png" alt-text="Profil de configuration personnalisé - affectation" lightbox="images/mdatp-6-systemconfigurationprofiles-2.png":::
 
 1. Révision et **création**.
 1. **Ouvrez les** \> **profils de configuration** des appareils, vous pouvez y voir votre profil créé.
 
     > [!div class="mx-imgBorder"]
-    > ![Profil de configuration personnalisé : terminé.](images/mdatp-6-systemconfigurationprofiles-3.png)
+    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-3.png" alt-text="Fin du profil de configuration personnalisé" lightbox="images/mdatp-6-systemconfigurationprofiles-3.png":::
 
 ### <a name="approve-system-extensions"></a>Approuver les extensions système
 
@@ -144,7 +144,7 @@ Ce profil est nécessaire pour macOS 10.15 (Genre), ou une nouvelle génération
     |com.microsoft.wdav.netext|UBF8T346G9|
 
     > [!div class="mx-imgBorder"]
-    > ![Paramètres d’extension système.](images/mac-system-extension-intune2.png)
+    > :::image type="content" source="images/mac-system-extension-intune2.png" alt-text="Paramètres de l’extension du système" lightbox="images/mac-system-extension-intune2.png":::
 
 1. Dans **l’onglet Affectations** , affectez ce profil à tous les utilisateurs **& tous les appareils**.
 1. Examinez et créez ce profil de configuration.
@@ -163,7 +163,7 @@ Ce profil est nécessaire pour macOS 10.15 (Îles) ou une ancienne. Il sera igno
 1. **Définissez l’identificateur** d’équipe sur **UBF8T346G9**, puis cliquez sur **Suivant**.
 
     > [!div class="mx-imgBorder"]
-    > ![Paramètres d’extension du noyau.](images/mac-kernel-extension-intune2.png)
+    > :::image type="content" source="images/mac-system-extension-intune2.png" alt-text="Paramètres du noyau de l’extension du système" lightbox="images/mac-system-extension-intune2.png":::
 
 1. Dans **l’onglet Affectations** , affectez ce profil à tous les utilisateurs **& tous les appareils**.
 1. Examinez et créez ce profil de configuration.
@@ -175,7 +175,7 @@ Ce profil est nécessaire pour macOS 10.15 (Îles) ou une ancienne. Il sera igno
    >
    > Ce profil de configuration accorde un accès disque total à Microsoft Defender pour le point de terminaison. Si vous avez précédemment configuré Microsoft Defender pour endpoint via Intune, nous vous recommandons de mettre à jour le déploiement avec ce profil de configuration.
 
-[**Téléchargez fulldisk.mobileconfig à**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) partir de [notre GitHub de données](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
+[**Téléchargez fulldisk.mobileconfig à**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) partir GitHub [référentiel.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
 Suivez les instructions d’intégration du [blob](#onboarding-blob) ci-dessus, en utilisant « Defender for Endpoint Full Disk Access » comme nom de profil et **téléchargé fulldisk.mobileconfig** comme nom de profil de configuration.
 
@@ -183,7 +183,7 @@ Suivez les instructions d’intégration du [blob](#onboarding-blob) ci-dessus, 
 
 Dans le cadre des fonctionnalités de détection et de réponse des points de terminaison, Microsoft Defender for Endpoint sur macOS inspecte le trafic de socket et signale ces informations au portail Microsoft 365 Defender. La stratégie suivante permet à l’extension réseau d’effectuer cette fonctionnalité.
 
-[**Téléchargez netfilter.mobileconfig à**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) partir de [GitHub référentiel.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
+[**Téléchargez netfilter.mobileconfig à partir**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) de [notre GitHub de données](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
 Suivez les instructions d’intégration de [blob](#onboarding-blob) ci-dessus, en utilisant « Defender for Endpoint Network Filter » comme nom de profil et **netfilter.mobileconfig** téléchargé en tant que nom de profil de configuration.
 
@@ -191,7 +191,7 @@ Suivez les instructions d’intégration de [blob](#onboarding-blob) ci-dessus, 
 
 Ce profil permet à Microsoft Defender pour point de terminaison sur macOS et Microsoft Auto Update d’afficher des notifications dans l’interface utilisateur sur macOS 10.15 (Domaine) ou version plus nouvelle.
 
-[**Téléchargez notif.mobileconfig à partir**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) de [notre GitHub de données](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
+[**Téléchargez notif.mobileconfig à partir**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) [de notre GitHub de données](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
 Suivez les instructions d’intégration de [blob](#onboarding-blob) ci-dessus, en utilisant « Defender pour les notifications de point de terminaison » comme nom de profil et téléchargé **notif.mobileconfig** comme nom de profil de configuration.
 
@@ -200,40 +200,40 @@ Suivez les instructions d’intégration de [blob](#onboarding-blob) ci-dessus, 
 Une fois que les modifications Intune sont propagées aux appareils inscrits,  \> vous pouvez les voir répertoriées sous État de l’appareil **de surveillance** :
 
 > [!div class="mx-imgBorder"]
-> ![Affichage de l’état de l’appareil dans le moniteur.](images/mdatp-7-devicestatusblade.png)
+> :::image type="content" source="images/mdatp-7-devicestatusblade.png" alt-text="Affichage de l’état de l’appareil" lightbox="images/mdatp-7-devicestatusblade.png":::
 
 ## <a name="publish-application"></a>Publier l'application
 
 Cette étape permet de déployer Microsoft Defender pour le point de terminaison sur les ordinateurs inscrits.
 
-1. Dans le [centre Microsoft Endpoint Manager’administration](https://endpoint.microsoft.com/), ouvrez **Applications**.
+1. Dans le centre [Microsoft Endpoint Manager’administration](https://endpoint.microsoft.com/), ouvrez **Applications**.
 
     > [!div class="mx-imgBorder"]
-    > ![Prêt à créer une application.](images/mdatp-8-app-before.png)
+    > :::image type="content" source="images/mdatp-8-app-before.png" alt-text="Page de présentation de l’application" lightbox="images/mdatp-8-app-before.png":::
 
 1. Sélectionnez par plateforme > macOS > Ajouter.
 1. Choisissez **App** **typemacOS**=, cliquez sur **Sélectionner**.
 
     > [!div class="mx-imgBorder"]
-    > ![Spécifiez le type d’application.](images/mdatp-9-app-type.png)
+    > :::image type="content" source="images/mdatp-9-app-type.png" alt-text="Type d’application spécifique" lightbox="images/mdatp-9-app-type.png":::
 
 1. Conservez les valeurs par défaut, cliquez sur **Suivant**.
 
     > [!div class="mx-imgBorder"]
-    > ![Propriétés de l’application.](images/mdatp-10-properties.png)
+    > :::image type="content" source="images/mdatp-10-properties.png" alt-text="Page des propriétés de l’application" lightbox="images/mdatp-10-properties.png":::
 
 1. Ajoutez des affectations, cliquez sur **Suivant**.
 
     > [!div class="mx-imgBorder"]
-    > ![Capture d’écran des informations sur les affectations Intune.](images/mdatp-11-assignments.png)
+    > :::image type="content" source="images/mdatp-11-assignments.png" alt-text="Page d’informations sur les affectations Intune" lightbox="images/mdatp-11-assignments.png":::
 
 1. Révision et **création**.
 1. Vous pouvez visiter **Apps** \> **By platform** \> **macOS** pour le voir dans la liste de toutes les applications.
 
     > [!div class="mx-imgBorder"]
-    > ![Liste des applications.](images/mdatp-12-applications.png)
+    > :::image type="content" source="images/mdatp-12-applications.png" alt-text="Page Listes d’applications" lightbox="images/mdatp-12-applications.png":::
 
-Pour plus d’informations, voir [Ajouter Microsoft Defender pour point de terminaison aux appareils macOS à l’aide Microsoft Intune](/mem/intune/apps/apps-advanced-threat-protection-macos).)
+Pour plus d’informations, voir [Ajouter Microsoft Defender pour point](/mem/intune/apps/apps-advanced-threat-protection-macos) de terminaison aux appareils macOS à l’aide Microsoft Intune.)
 
    > [!CAUTION]
    > Vous devez créer tous les profils de configuration requis et les pousser sur tous les ordinateurs, comme expliqué ci-dessus.
@@ -245,11 +245,11 @@ Vous n’avez pas besoin d’une mise en service spéciale pour un appareil Mac 
 1. Confirmez la gestion des appareils.
 
     > [!div class="mx-imgBorder"]
-    > ![Confirmez la capture d’écran de la gestion des appareils.](images/mdatp-3-confirmdevicemgmt.png)
+    > :::image type="content" source="images/mdatp-3-confirmdevicemgmt.png" alt-text="Page Confirmer la gestion des appareils" lightbox="images/mdatp-3-confirmdevicemgmt.png":::
 
     **Sélectionnez Ouvrir les préférences système**, recherchez **Profil** de gestion dans la liste, puis sélectionnez **Approuver...**. Votre profil de gestion s’affiche comme **vérifié** :
 
-    ![Capture d’écran du profil de gestion.](images/mdatp-4-managementprofile.png)
+    :::image type="content" source="images/mdatp-4-managementprofile.png" alt-text="Page Profil de gestion" lightbox="images/mdatp-4-managementprofile.png":::
 
 2. **Sélectionnez Continuer** et terminez l’inscription.
 
@@ -258,25 +258,25 @@ Vous n’avez pas besoin d’une mise en service spéciale pour un appareil Mac 
 3. Dans Intune, ouvrez **Gérer tous** \> **les** \> **appareils**. Ici, vous pouvez voir votre appareil parmi ceux répertoriés :
 
    > [!div class="mx-imgBorder"]
-   > ![Capture d’écran Ajouter des appareils.](images/mdatp-5-alldevices.png)
+   > :::image type="content" source="images/mdatp-5-alldevices.png" alt-text="Page Tous les appareils" lightbox="images/mdatp-5-alldevices.png":::
 
 ## <a name="verify-client-device-state"></a>Vérifier l’état de l’appareil client
 
 1. Une fois les profils de configuration déployés sur vos appareils, ouvrez les **profils de préférences système** \> sur votre appareil Mac.
 
     > [!div class="mx-imgBorder"]
-    > ![Capture d’écran préférences système.](images/mdatp-13-systempreferences.png)
+    > :::image type="content" source="images/mdatp-13-systempreferences.png" alt-text="Page Préférences système" lightbox="images/mdatp-13-systempreferences.png":::
 
-    ![Capture d’écran des profils de préférences système.](images/mdatp-14-systempreferencesprofiles.png)
+   :::image type="content" source="images/mdatp-14-systempreferencesprofiles.png" alt-text="Page Profils de préférences système" lightbox="images/mdatp-14-systempreferencesprofiles.png":::
 
 2. Vérifiez que les profils de configuration suivants sont présents et installés. Le **profil de** gestion doit être le profil système Intune. _Wdav-config_ et _wdav-kext_ sont des profils de configuration système qui ont été ajoutés dans Intune :
 
-    ![Capture d’écran des profils.](images/mdatp-15-managementprofileconfig.png)
+   :::image type="content" source="images/mdatp-15-managementprofileconfig.png" alt-text="Page Profils" lightbox="images/mdatp-15-managementprofileconfig.png":::
 
 3. Vous devez également voir l’icône Microsoft Defender pour point de terminaison dans le coin supérieur droit :
 
     > [!div class="mx-imgBorder"]
-    > ![Icône Microsoft Defender pour point de terminaison dans la capture d’écran de la barre d’état.](images/mdatp-icon-bar.png)
+    > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="Icône de Microsoft Defender pour point de terminaison dans la barre d’état" lightbox="images/mdatp-icon-bar.png":::
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 

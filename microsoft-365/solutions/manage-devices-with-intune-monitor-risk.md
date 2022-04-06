@@ -1,5 +1,5 @@
 ---
-title: Étape 6. Surveiller les risques et la conformité des appareils aux lignes de base de sécurité
+title: Étape 6. Surveiller les risques et la conformité des appareils aux bases de référence de sécurité
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -20,23 +20,25 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: f58611f555b022b69211e39f149effef925dde17
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
-ms.translationtype: HT
+ms.openlocfilehash: e64006873c3419b9c6d93d3b367a5753f5478738
+ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049130"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64651408"
 ---
-# <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>Étape 6. Surveiller les risques et la conformité des appareils aux lignes de base de sécurité
+# <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>Étape 6. Surveiller les risques et la conformité des appareils aux bases de référence de sécurité
 
 Une fois que votre organisation a déployé Microsoft Defender pour point terminaison, vous pouvez obtenir des informations et une protection plus étendues de vos appareils en intégrant Microsoft Intune à Microsoft Defender pour point de terminaison. Pour les appareils mobiles, cela inclut la possibilité de surveiller les risques des appareils en tant que condition d’accès. Pour les appareils Windows, vous pouvez surveiller la conformité de ces appareils aux lignes de base de sécurité. 
+
+Remarque : le déploiement de Microsoft Defender pour point de terminaison inclut des points de terminaison d’intégration. Pour plus d’informations sur l’intégration d’appareils pour Microsoft 365 capabilties, consultez [Inscription d’appareils ou d’appareils d’intégration](manage-devices-with-intune-overview.md#enrolling-devices-vs-onboarding-devices).  
 
 ![Illustration de l’intégration de Defender pour point de terminaison et Microsoft Intune](../media/devices/devices-defender-for-endpoint-steps.png#lightbox)
 
 Dans cette illustration :
 - Microsoft Defender pour point de terminaison augmente considérablement la complexité de la protection contre les menaces pour les appareils. 
 - Bien que Microsoft Intune vous permette de définir des stratégies de protection des applications et de gérer les appareils (y compris les modifications de configuration), Defender pour point de terminaison surveille en permanence vos appareils contre les menaces et peut prendre des mesures automatisées pour corriger les attaques. 
-- Vous pouvez utiliser Intune pour intégrer des appareils à Defender pour point de terminaison. Dans ce cas, vous autorisez également ces appareils à utiliser Microsoft 365 protection contre la perte de données de point de terminaison (DLP).
+- Vous pouvez utiliser Intune pour intégrer des appareils à Defender pour point de terminaison. Dans ce cas, vous autorisez également ces appareils à utiliser Microsoft 365 fonctionnalités de conformité, notamment la protection contre la perte de données de point de terminaison (DLP).
 
 Cet article comprend les étapes suivantes :
 - Connecter Microsoft Intune à Defender pour point de terminaison

@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 0cdf60708e84b0972099330d48f19b22d26766ba
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 53194aac16091b9afd9559b4f372c2d436c198bf
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766833"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474704"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>Nouveaux profils de configuration pour macOS Et les versions plus récentes de macOS
 
@@ -54,7 +54,7 @@ Pour approuver les extensions système, créez la charge utile suivante :
     - **com.microsoft.wdav.epsext**
     - **com.microsoft.wdav.netext**
 
-    ![Capture d’écran des extensions système approuvées.](images/mac-approved-system-extensions.png)
+    :::image type="content" source="images/mac-approved-system-extensions.png" alt-text=" Page Extensions système approuvées" lightbox="images/mac-approved-system-extensions.png":::
 
 ### <a name="privacy-preferences-policy-control"></a>Contrôle de stratégie des préférences de confidentialité
 
@@ -65,7 +65,7 @@ Ajoutez la charge utile JAMF suivante pour accorder un accès disque total à l�
 3. Définir l’exigence de code sur `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
 4. **Définissez l’application ou le service** **sur SystemPolicyAllFiles et** l’accès à **Autoriser**.
 
-    ![Contrôle de stratégie des préférences de confidentialité.](images/mac-system-extension-privacy.png)
+   :::image type="content" source="images/mac-system-extension-privacy.png" alt-text=" Élément de menu Contrôle de stratégie des préférences de confidentialité" lightbox="images/mac-system-extension-privacy.png":::
 
 ### <a name="network-extension-policy"></a>Stratégie d’extension réseau
 
@@ -193,7 +193,7 @@ Pour approuver les extensions système :
    |com.microsoft.wdav.netext|UBF8T346G9|
    |||
 
-   ![Capture d’écran des profils de configuration système.](images/mac-system-extension-intune2.png)
+   :::image type="content" source="images/mac-system-extension-intune2.png" alt-text=" Page Profils de configuration système" lightbox="images/mac-system-extension-intune2.png":::
 
 5. Dans l’onglet `Assignments` , affectez ce profil à **tous les utilisateurs & tous les appareils**.
 6. Examinez et créez ce profil de configuration.
@@ -315,7 +315,7 @@ Pour déployer ce profil de configuration personnalisé :
 3. Ouvrez le profil de configuration et **téléchargezsysext.xml**. Ce fichier a été créé à l’étape précédente.
 4. Sélectionnez **OK**.
 
-    ![Capture d’écran de l’extension système dans Intune.](images/mac-system-extension-intune.png)
+   :::image type="content" source="images/mac-system-extension-intune.png" alt-text=" Extension système dans la page Intune" lightbox="images/mac-system-extension-intune.png":::
 
 5. Dans l’onglet `Assignments` , affectez ce profil à **tous les utilisateurs & tous les appareils**.
 6. Examinez et créez ce profil de configuration.

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 60a389d2422a2d3b2f50f77bc978f9f9bbc4a087
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: bbf7be489f969007badb4d00fb25ce22eb991f55
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62463440"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475342"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Contacter le support Microsoft Defender pour point de terminaison
 
@@ -56,11 +56,11 @@ L’accès au nouveau widget de support peut être effectué de deux manières :
 
 1. Cliquez sur le point d’interrogation en haut à droite du portail, puis sur « Support Microsoft » :
 
-    :::image type="content" source="../../media/contactsupport.png" alt-text="Support Microsoft.":::
+   :::image type="content" source="../../media/contactsupport.png" alt-text="Icône de support Microsoft dans le portail Microsoft 365 Defender web" lightbox="../../media/contactsupport.png":::
 
 2. Vous avez besoin **d’aide en cliquant sur ?**  dans le coin inférieur droit du portail Microsoft 365 Defender:
 
-    ![Image du bouton d’aide nécessaire.](images/need-help-option.png)
+   :::image type="content" source="images/need-help-option.png" alt-text="Bouton Besoin d’aide" lightbox="images/need-help-option.png":::
 
 Deux options s’offrent à vous dans le widget :
 
@@ -71,7 +71,7 @@ Deux options s’offrent à vous dans le widget :
 
 Cette option inclut des articles qui peuvent être liés à la question que vous pouvez poser. Commencez simplement à taper la question dans la zone de recherche et les articles relatifs à votre recherche seront mis en avant.
 
-:::image type="content" source="../../media/contactsupport1.png" alt-text="Comment pouvons-nous vous aider ?":::
+:::image type="content" source="../../media/contactsupport1.png" alt-text="Comment pouvons-nous vous aider ?" lightbox="../../media/contactsupport1.png":::
 
 Si les articles suggérés ne sont pas suffisants, vous pouvez ouvrir une demande de service.
 
@@ -82,17 +82,15 @@ Découvrez comment ouvrir des tickets de support en contactant Defender pour le 
 > [!NOTE]
 > Si vous avez un contrat de support Premier avec Microsoft, la balise Premier s’affiche sur le widget. Si ce n’est pas le cas, contactez votre gestionnaire de comptes Microsoft.
 
-### <a name="contact-support"></a>Contacter l’assistance
+### <a name="contact-support"></a>Contacter le support technique
 
-:::image type="content" source="../../media/contactsupport2.png" alt-text="contacter le support technique 2."::: </br>
-
-:::image type="content" source="../../media/contactsupport2.png" alt-text="contacter le support technique 2":::
+:::image type="content" source="../../media/contactsupport2.png" alt-text="Contact support 2" lightbox="../../media/contactsupport2.png"::: </br>
 
 1. Remplissez un titre et une description pour le problème auquel vous êtes confronté, le numéro de téléphone et l’adresse e-mail où nous pouvons vous joindre.
 2. (Facultatif) Inclure jusqu’à cinq pièces jointes pertinentes pour fournir un contexte supplémentaire pour le cas de support.
 3. Sélectionnez votre fuseau horaire et une autre langue, le cas échéant. La demande est envoyée à l’équipe de support Technique Microsoft. L’équipe répondra prochainement à votre demande de service.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Résoudre des problèmes de service](troubleshoot-mdatp.md)
 - [Vérifier l’état du service](/microsoft-365/enterprise/view-service-health)

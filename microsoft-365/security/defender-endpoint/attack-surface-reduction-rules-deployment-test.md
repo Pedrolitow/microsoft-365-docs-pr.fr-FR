@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 85d1400f390d9666c39ef13ffb484d17cad4a4c8
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 2f3a97da3eff16a639df995d88b9ceda91497f11
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682193"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475408"
 ---
 # <a name="step-2-test-asr-rules"></a>Étape 2 : Tester les règles ASR
 
@@ -34,7 +34,8 @@ Le test des règles de réduction de la surface d’attaque (ASR) vous permet de
 Commencez le déploiement des règles de réduction de la surface d’attaque (ASR) avec l’anneau 1.
 
 > [!div class="mx-imgBorder"]
-> ![Étapes de test des règles asr](images/asr-rules-testing-steps.png)
+> :::image type="content" source="images/asr-rules-testing-steps.png" alt-text="Étapes de test des règles asr" lightbox="images/asr-rules-testing-steps.png":::
+  
 
 ## <a name="step-1-test-asr-rules-using-audit"></a>Étape 1 : Tester les règles de la asr à l’aide de l’audit
 
@@ -44,20 +45,20 @@ Commencez la phase de test en 2013 en 2013, en 2013, en 2013, en 2013. En règle
 
 Vous pouvez utiliser Microsoft Endpoint Manager de point de terminaison (MEM) pour configurer des règles asr personnalisées.
 
-1. Ouvrir [Microsoft Endpoint Manager centre d’administration](https://endpoint.microsoft.com/#home)
+1. Ouvrez [Microsoft Endpoint Manager centre d’administration.](https://endpoint.microsoft.com/#home)
 2. Go to **Endpoint SecurityAttack** >  **surface reduction**.
 3. Sélectionner **Créer une stratégie**.
 4. Dans **Plateforme**, sélectionnez **Windows 10 et ultérieures**, puis dans **Profil**, sélectionnez Règles de réduction **de la surface d’attaque**.
   
     > [!div class="mx-imgBorder"]
-    > ![Configurer le profil des règles de la asr.](images/asr-mem-create-profile.png)
+    > :::image type="content" source="images/asr-mem-create-profile.png" alt-text="Page de création de profil pour les règles de la asr." lightbox="images/asr-mem-create-profile.png":::
 
 5. Cliquez sur **Créer**.
 6. Dans **l’onglet De** base **du volet Créer** un profil, dans  Nom, ajoutez un nom pour votre stratégie. Dans **description** , ajoutez une description pour votre stratégie de règles de asr.
 7. Dans **l’onglet Paramètres de configuration** , sous Règles de réduction de **la surface** d’attaque, définissez toutes les règles en **mode Audit**.
 
     > [!div class="mx-imgBorder"]
-    > ![Définir des règles asr en mode Audit](images/asr-mem-configuration-settings.png)
+    > :::image type="content" source="images/asr-mem-configuration-settings.png" alt-text="Configuration des règles asr en mode Audit" lightbox="images/asr-mem-configuration-settings.png":::
 
     >[!Note]
     >Il existe des variantes dans certaines listes en mode de règles de récupération automatique ; _Bloqués_ _et activés_ fournissent les mêmes fonctionnalités.
@@ -67,12 +68,12 @@ Vous pouvez utiliser Microsoft Endpoint Manager de point de terminaison (MEM) po
 10. Examinez vos paramètres dans le **volet Révision +** Créer. Cliquez **sur Créer** pour appliquer les règles.
 
    > [!div class="mx-imgBorder"]
-   > ![Activer la stratégie de règles asr](images/asr-mem-review-create.png)
+   > :::image type="content" source="images/asr-mem-review-create.png" alt-text="Page Créer un profil" lightbox="images/asr-mem-review-create.png":::
 
 Votre nouvelle stratégie de réduction de la surface d’attaque pour les règles de réduction de la surface d’attaque est répertoriée dans **endpoint security | Réduction de la surface d’attaque**.
 
    > [!div class="mx-imgBorder"]
-   > ![Stratégie de règle ASR répertoriée](images/asr-mem-my-asr-rules.png)
+   > :::image type="content" source="images/asr-mem-my-asr-rules.png" alt-text=" Page Réduction de la surface d’attaque" lightbox="images/asr-mem-my-asr-rules.png":::
 
 ## <a name="step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>Étape 2 : Comprendre la page rapports des règles de réduction de la surface d’attaque dans le portail Microsoft 365 Defender attaque
 
@@ -87,7 +88,7 @@ La page de rapport des règles de réduction de la surface d’attaque **se trou
 Fournit une chronologie de 30 jours des événements d’audit et bloqués détectés.
 
 > [!div class="mx-imgBorder"]
-> ![Onglet Détections des règles de réduction de la surface d’attaque](images/asr-defender365-01.png)
+> :::image type="content" source="images/asr-defender365-01.png" alt-text="Onglet Détections des règles de réduction de la surface d’attaque" lightbox="images/asr-defender365-01.png":::
 
 Le volet Règles de réduction de la surface d’attaque fournit une vue d’ensemble des événements détectés par règle.
 
@@ -95,12 +96,12 @@ Le volet Règles de réduction de la surface d’attaque fournit une vue d’ens
 >Il existe certaines variantes dans les rapports de règles de la asr. Microsoft est en train de mettre à jour le comportement des rapports de règles de la asr afin de fournir une expérience cohérente.
 
 > [!div class="mx-imgBorder"]
-> ![Détections de règles de réduction de la surface d’attaque](images/asr-defender365-01b.png)
+> :::image type="content" source="images/asr-defender365-01b.png" alt-text="Page Règles de réduction de la surface d’attaque" lightbox="images/asr-defender365-01b.png"::: 
 
 Cliquez **sur Afficher les détections** pour ouvrir **l’onglet Détections** .
 
 > [!div class="mx-imgBorder"]
-> ![Détections des règles de réduction de la surface d’attaque](images/asr-defender365-reports-detections.png)
+> :::image type="content" source="images/asr-defender365-reports-detections.png" alt-text="Détections des règles de réduction de la surface d’attaque" lightbox="images/asr-defender365-reports-detections.png":::
 
 Le **volet GroupBy** et **Filter** offre les options suivantes :
 
@@ -116,42 +117,42 @@ Le **volet GroupBy** et **Filter** offre les options suivantes :
 - Éditeur
 
 > [!div class="mx-imgBorder"]
-> ![Filtre GroupBy des règles de réduction de la surface d’attaque](images/asr-defender365-reports-detections.png)
+> :::image type="content" source="images/asr-defender365-reports-detections.png" alt-text="Filtre GroupBy des règles de réduction de la surface d’attaque" lightbox="images/asr-defender365-reports-detections.png":::
 
 **Le** filtre ouvre la page **Filtrer sur les** règles, qui vous permet d’étenduer les résultats uniquement aux règles asr sélectionnées :
 
 > [!div class="mx-imgBorder"]
-> ![Filtre des règles de réduction de la surface d’attaque sur les règles](images/asr-defender365-filter.png)
+> :::image type="content" source="images/asr-defender365-filter.png" alt-text="Filtre des règles de réduction de la surface d’attaque sur les règles" lightbox="images/asr-defender365-filter.png":::
 
 >[!Note]
 >Si vous avez une licence Microsoft Microsoft 365 Security E5 ou A5, Windows E5 ou A5, le lien suivant ouvre l’onglet Microsoft Defender 365 Reports > [Attack surface reductions](https://security.microsoft.com/asr?viewid=detections) > Detections.
 
 ### <a name="configuration-tab"></a>Onglet Configuration
 
-Répertorie, par ordinateur, l’état d’agrégation des règles de asr : Hors, Audit, Bloquer.
+Répertorie, par ordinateur, l’état d’agrégation des règles de la asr : Hors, Audit, Bloquer.
 
 > [!div class="mx-imgBorder"]
-> ![Onglet Configuration des règles de réduction de la surface d’attaque](images/asr-defender365-configurations.png)
+> :::image type="content" source="images/asr-defender365-configurations.png" alt-text="Onglet Configuration des règles de réduction de la surface d’attaque et entrée dans sa page" lightbox="images/asr-defender365-configurations.png":::
 
 Sous l’onglet Configurations, vous pouvez vérifier, par appareil, quelles règles de récupération automatique sont activées et dans quel mode, en sélectionnant l’appareil pour lequel vous souhaitez passer en revue les règles de la asr.
 
 > [!div class="mx-imgBorder"]
-> ![Règles de réduction de la surface d’attaque activées et mode](images/asr-defender365-configurations.settings.png)
+> :::image type="content" source="images/asr-defender365-configurations.settings.png" alt-text="Règles de réduction de la surface d’attaque activées et mode" lightbox="images/asr-defender365-configurations.settings.png":::
 
 Le **lien De mise** en Microsoft Endpoint Manager ouvre le Centre d’administration Microsoft Endpoint Manager, où vous pouvez créer ou modifier une stratégie de protection de point de terminaison pour la asr.
 
 > [!div class="mx-imgBorder"]
-> ![Règles de réduction de la surface d’attaque dans MEM](images/asr-defender365-05b-mem1.png)
+> :::image type="content" source="images/asr-defender365-05b-mem1.png" alt-text="Élément de menu de sécurité *Point de terminaison dans la page Vue d’ensemble" lightbox="images/asr-defender365-05b-mem1.png":::
 
 Dans endpoint security | Vue d’ensemble, sélectionnez **Réduction de la surface d’attaque** :
 
 > [!div class="mx-imgBorder"]
-> ![Réduction de la surface d’attaque dans mem](images/asr-defender365-05b-mem2.png)
+> :::image type="content" source="images/asr-defender365-05b-mem2.png" alt-text="Réduction de la surface d’attaque dans mem" lightbox="images/asr-defender365-05b-mem2.png":::
 
 Le point de terminaison de sécurité | Le volet Réduction de la surface d’attaque s’ouvre :
 
 > [!div class="mx-imgBorder"]
-> ![Volet Asr de sécurité des points de terminaison](images/asr-defender365-05b-mem3.png)
+> :::image type="content" source="images/asr-defender365-05b-mem3.png" alt-text="Volet Réduction de la surface d’attaque du point de terminaison" lightbox="images/asr-defender365-05b-mem3.png":::
 
 >[!Note]
 >Si vous avez une licence Microsoft Defender 365 E5 (ou Windows E5 ?), ce lien ouvre l’onglet [Configurations](https://security.microsoft.com/asr?viewid=configuration) des rapports Microsoft Defender 365 > réductions de la surface d'>.
@@ -164,7 +165,7 @@ Cet onglet fournit une méthode pour sélectionner les entités détectées (par
 > Antivirus Microsoft Defender exclusions av sont honorées par les règles de la asr.  Voir [Configurer et valider les exclusions en fonction de l’extension, du nom ou de l’emplacement](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
 > [!div class="mx-imgBorder"]
-> ![Outil Asr de sécurité des points de terminaison](Images/asr-defender365-06d.png)
+> :::image type="content" source="Images/asr-defender365-06d.png" alt-text="Volet d’exclusion du fichier détecté" lightbox="Images/asr-defender365-06d.png":::
 
 > [!Note]
 >Si vous avez une licence Microsoft Defender 365 E5 (ou Windows E5 ?), ce lien ouvre l’onglet Réductions de la surface d’attaque de Microsoft Defender 365 > > [Exclusions](https://security.microsoft.com/asr?viewid=exclusions).

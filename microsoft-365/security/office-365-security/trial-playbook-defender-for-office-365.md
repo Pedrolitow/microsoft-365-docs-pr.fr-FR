@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Manuel de solutions de Microsoft Defender pour Office 365
-ms.openlocfilehash: b8a0fedd01a3769f2ccf8952bd9e7bce0974a2f0
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 1e943cc36d7a8787a41e16d61b15fe9e2eea129c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683206"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474880"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>Livre d’essai : Microsoft Defender pour Office 365
 
 Bienvenue dans Microsoft Defender pour Office 365 d’essai Ce manuel vous aidera à mettre à jour votre version d’essai gratuite de 90 jours en vous enseignant à protéger votre organisation avec Defender pour Office 365. À l'aide des recommandations de Microsoft Corporation, vous apprendrez comment Defender for Office 365 peut vous aider à définir des politiques de protection, à analyser les menaces qui pèsent sur votre organisation et à répondre aux attaques.
 
-![Représentation graphique de tous les composants de Microsoft Defender pour Office 365](../../media/mdo-trial-playbook-what-is-mdo.png)
+:::image type="content" source="../../media/mdo-trial-playbook-what-is-mdo.png" alt-text="Représentation graphique de tous les composants de Microsoft Defender pour Office 365" lightbox="../../media/mdo-trial-playbook-what-is-mdo.png":::
 
 Ces actions sont des recommandations de l’équipe Microsoft Defender sur les fonctionnalités clés à essayer dans votre version d’essai de 90 jours.
 
@@ -61,7 +61,7 @@ Utilisez les fonctionnalités de rapport dans Defender pour Office 365 pour obte
 - Découvrez où les menaces sont bloquées avec le [rapport d’état du flux de messagerie.](view-email-security-reports.md#mailflow-status-report)
 - [Consultez les](view-reports-for-mdo.md#url-protection-report) liens qui ont été vus par les utilisateurs ou bloqués par le système.
 
-![Envoyez un & des rapports de collaboration dans le portail Microsoft 365 Defender web.](../../media/mdo-trial-playbook-reporting.png)
+:::image type="content" source="../../media/mdo-trial-playbook-reporting.png" alt-text="Rapports de messagerie et de collaboration dans le portail Microsoft 365 Defender" lightbox="../../media/mdo-trial-playbook-reporting.png":::
 
 ## <a name="step-2-intermediate-steps"></a>Étape 2 : Étapes intermédiaires
 
@@ -75,7 +75,7 @@ Protégez vos utilisateurs les plus ciblés et les plus visibles avec la protect
 
 Regardez cette vidéo pour en savoir plus : Protection des comptes de priorité dans [Microsoft Defender pour Office 365 - YouTube](https://www.youtube.com/watch?v=tqnj0TlzQcI&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=11).
 
-![Alertes dans le portail Microsoft 365 Defender web.](../../media/mdo-trial-playbook-alerts.png)
+:::image type="content" source="../../media/mdo-trial-playbook-alerts.png" alt-text="Alertes dans le portail Microsoft 365 Defender" lightbox="../../media/mdo-trial-playbook-alerts.png":::
 
 ### <a name="avoid-costly-breaches-by-preventing-user-compromise"></a>Éviter les violations coûteuses en empêchant la compromission de l’utilisateur
 
@@ -84,7 +84,7 @@ Recevez des alertes sur les compromissions potentielles et limitez automatiqueme
 - Passer en [revue les alertes utilisateur compromises](address-compromised-users-quickly.md#compromised-user-alerts)
 - [Examiner les utilisateurs](address-compromised-users-quickly.md) compromis et y répondre
 
-![Examiner les utilisateurs compromis.](../../media/mdo-trial-playbook-investigation.png)
+:::image type="content" source="../../media/mdo-trial-playbook-investigation.png" alt-text="Examen des utilisateurs compromis" lightbox="../../media/mdo-trial-playbook-investigation.png":::
 
 Regardez cette vidéo pour en savoir plus : détecter les compromissions et y répondre dans [Microsoft Defender Office 365 - YouTube](https://www.youtube.com/watch?v=Pc7y3a-wdR0&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=5).
 
@@ -104,7 +104,7 @@ Affichez une image plus globale des affichages campagne dans Defender pour Offic
 - [Visualisez l’étendue](campaigns.md#campaign-views-in-the-microsoft-365-defender-portal) de l’attaque.
 - [Suivre l’interaction des](campaigns.md#campaign-details) utilisateurs avec ces messages
 
-![Détails de la campagne dans le portail Microsoft 365 Defender web](../../media/mdo-trial-playbook-campaign-details.png)
+  :::image type="content" source="../../media/mdo-trial-playbook-campaign-details.png" alt-text="Détails de la campagne dans le portail Microsoft 365 Defender web" lightbox="../../media/mdo-trial-playbook-campaign-details.png":::
 
 Regardez cette vidéo pour en savoir plus : [Vues de campagne dans Microsoft Defender pour Office 365 - YouTube](https://www.youtube.com/watch?v=DvqzzYKu7cQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=14).
 
@@ -116,7 +116,7 @@ Répondre efficacement à l’aide de l’examen et de la réponse automatisés 
 - [Afficher les détails et les résultats d’une](email-analysis-investigations.md) enquête
 - Éliminer les menaces en [approuvant les actions de correction](air-remediation-actions.md)
 
-![Résultats de l’examen.](../../media/mdo-trial-playbook-investigation-results.png)
+:::image type="content" source="../../media/mdo-trial-playbook-investigation-results.png" alt-text="Résultats de l’enquête" lightbox="../../media/mdo-trial-playbook-investigation-results.png":::
 
 ## <a name="step-3-advanced-content"></a>Étape 3 : Contenu avancé
 
@@ -137,7 +137,7 @@ Former vos utilisateurs avec les connaissances adéquates pour identifier les me
 - [Affecter une formation aux](attack-simulation-training.md#assign-training) utilisateurs en fonction des résultats de simulation
 - [Suivre l’avancement](attack-simulation-training-insights.md) de votre organisation dans les simulations et l’achèvement de la formation
 
-![Informations de formation sur la simulation d’attaques dans le portail Microsoft 365 Defender](../../media/mdo-trial-playbook-attack-simulation-training-results.png)
+  :::image type="content" source="../../media/mdo-trial-playbook-attack-simulation-training-results.png" alt-text="Insights d’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/mdo-trial-playbook-attack-simulation-training-results.png":::
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 

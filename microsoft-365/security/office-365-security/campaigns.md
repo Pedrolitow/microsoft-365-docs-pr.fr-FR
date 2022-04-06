@@ -20,12 +20,12 @@ ms.custom: ''
 description: Découvrez les affichages campagne dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d8fad29e82b647d309d3b7046e36bd03b64de81d
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: eb1e5e6e740accdb9c6102b798df8e60ab47dfff
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682546"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467728"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Affichages des campagnes dans Microsoft Defender pour Office 365
 
@@ -46,7 +46,7 @@ Campaign Views vous permet de voir la présentation d’une attaque plus rapidem
 
 Une campagne est une attaque par e-mail coordonné contre une ou plusieurs organisations. Les attaques par courrier électronique qui volent des informations d’identification et des données d’entreprise sont un secteur d’activité important. À mesure que les technologies augmentent afin d’arrêter les attaques, les attaquants modifient leurs méthodes afin de garantir un succès continu.
 
-Microsoft tire parti des grandes quantités de données anti-hameçonnage, anti-courrier indésirable et anti-programme malveillant dans l’ensemble du service pour vous aider à identifier les campagnes. Nous analysons et classons les informations d’attaque en fonction de plusieurs facteurs. Par exemple :
+Microsoft tire parti des grandes quantités de données anti-hameçonnage, anti-courrier indésirable et anti-programme malveillant dans l’ensemble du service pour vous aider à identifier les campagnes. Nous analysons et classons les informations d’attaque en fonction de plusieurs facteurs. Par exemple :
 
 - **Source de l’attaque** : adresses IP sources et domaines de messagerie de l’expéditeur.
 - **Propriétés du** message : le contenu, le style et le ton des messages.
@@ -59,7 +59,7 @@ Une campagne peut avoir une durée de vie courte ou s’étendre sur plusieurs j
 
 Les affichages des campagnes sont disponibles dans le portail Microsoft 365 Defender à <https://security.microsoft.com> l’adresse **e-mail & campagnes de collaboration**\>, ou directement à l’adresse .<https://security.microsoft.com/campaigns>
 
-![Vue d’ensemble des campagnes dans Microsoft 365 Defender portail.](../../media/campaigns-overview.png)
+:::image type="content" source="../../media/campaigns-overview.png" alt-text="Vue d’ensemble des campagnes dans le Microsoft 365 Defender web" lightbox="../../media/campaigns-overview.png":::
 
 Vous pouvez également obtenir les affichages de campagne à partir des pages :
 
@@ -89,7 +89,7 @@ Le tableau sous le graphique de la page vue d’ensemble affiche les information
 
 - **Type :** cette valeur **est hameçonnage** ou **programme malveillant**.
 
-- **Sous-type** : cette valeur contient plus de détails sur la campagne. Par exemple :
+- **Sous-type** : cette valeur contient plus de détails sur la campagne. Par exemple :
   - **Hameçonnage** : si disponible, marque faisant l’objet d’un hameçonnage par cette campagne. Par exemple, `Microsoft`, `365`, `Unknown`ou `Outlook``DocuSign`.
   - **Programmes** malveillants : par exemple, `HTML/PHISH` ou `HTML/<MalwareFamilyName>`.
 
@@ -113,7 +113,7 @@ Le tableau sous le graphique de la page vue d’ensemble affiche les information
 
 En haut de la page **Campagne** , il existe plusieurs paramètres de filtre et de requête pour vous aider à rechercher et isoler des campagnes spécifiques.
 
-![Filtres de campagne.](../../media/campaign-filters-and-settings.png)
+:::image type="content" source="../../media/campaign-filters-and-settings.png" alt-text="Filtres campagne" lightbox="../../media/campaign-filters-and-settings.png":::
 
 Le filtrage le plus simple que vous pouvez faire est la date/l’heure de début et la date/heure de fin.
 
@@ -151,7 +151,7 @@ Les propriétés filtrables de campagne disponibles dans le bouton **Type** de c
   - **ID de campagne**
   - **Signal d’URL ZAP**
 
-- **URL** :
+- **URLs**:
   - **Domaine d’URL**
   - **Domaine et chemin d’accès d’URL**
   - **URL**
@@ -192,7 +192,7 @@ En haut de l’affichage Détails de la campagne, les informations de campagne s
 - Filtres de date/heure de début et de fin des données/heure pour le flux de campagne, comme décrit dans la section suivante.
 - Chronologie interactive de l’activité de la campagne : la chronologie affiche l’activité tout au long de la durée de vie de la campagne. Vous pouvez pointer sur les points de données dans le graphique pour voir la quantité de messages détectés.
 
-![Informations sur la campagne.](../../media/campaign-details-campaign-info.png)
+:::image type="content" source="../../media/campaign-details-campaign-info.png" alt-text="Informations sur la campagne" lightbox="../../media/campaign-details-campaign-info.png":::
 
 ### <a name="campaign-flow"></a>Flux de la campagne
 
@@ -201,7 +201,7 @@ Au milieu de l’affichage Détails de la campagne, des détails importants sur 
 > [!TIP]
 > Les informations affichées dans le diagramme de flux sont contrôlées par le filtre de plage de dates dans la chronologie, comme décrit dans la section précédente.
 
-![Détails de la campagne qui ne contiennent pas de clics sur l’URL de l’utilisateur.](../../media/campaign-details-no-recipient-actions.png)
+:::image type="content" source="../../media/campaign-details-no-recipient-actions.png" alt-text="Les détails de la campagne qui ne contiennent pas d’URL utilisateur cliquent sur" lightbox="../../media/campaign-details-no-recipient-actions.png":::
 
 Si vous pointez sur une bande horizontale dans le diagramme, vous pouvez voir le nombre de messages associés (par exemple, les messages d’une adresse IP source particulière, les messages provenant de l’adresse IP source en utilisant le domaine d’expéditeur spécifié, etc.).
 

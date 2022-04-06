@@ -15,21 +15,21 @@ ms.assetid: ''
 ms.collection: m365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Les administrateurs peuvent en savoir plus sur les considérations de déploiement et les questions fréquemment posées concernant la simulation d’attaque et la formation dans Microsoft 365 E5 ou Microsoft Defender pour Office 365 plan 2.
+description: Les administrateurs peuvent en savoir plus sur les considérations relatives au déploiement et les questions fréquemment posées concernant la simulation d’attaque et la formation dans Microsoft 365 E5 ou Microsoft Defender pour les Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 380241d44f667a845c47f85062d877192e1a7802
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: 57b4d684e52fd51a2ece279cc7322389a953a17c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60907992"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467794"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Considérations et forum aux questions sur le déploiement de la formation de simulation d’attaque
 
-La formation à la simulation d’attaques permet aux organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2 de mesurer et de gérer les risques d’ingénierie sociale en permettant la création et la gestion de simulations d’hameçonnage optimisées par des charges utiles d’hameçonnage dé -ingisées et réelles. Une formation hyper-ciblée, en partenariat avec la sécurité Dezerre, permet d’améliorer les connaissances et de modifier le comportement des employés.
+La formation à la simulation d’attaques permet aux organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2 de mesurer et de gérer les risques d’ingénierie sociale en permettant la création et la gestion de simulations d’hameçonnage optimisées par des charges utiles d’hameçonnage dé-ingisées réelles. Une formation hyper-ciblée, en partenariat avec la sécurité Dezerre, permet d’améliorer les connaissances et de modifier le comportement des employés.
 
-Pour plus d’informations sur la mise en place de la formation sur la simulation d’attaque, voir [Commencer à utiliser la formation sur la simulation d’attaque.](attack-simulation-training-get-started.md)
+Pour plus d’informations sur la mise en place de la formation sur la simulation d’attaque, voir [Commencer à utiliser la formation sur la simulation d’attaque](attack-simulation-training-get-started.md).
 
 Bien que l’ensemble de l’expérience de création et de planification de simulation ait été conçu pour être fluide et sans friction, l’exécution de simulations à l’échelle de l’entreprise nécessite souvent une planification. Cet article nous aide à relever des défis spécifiques que nous voyons lorsque nos clients exécutent des simulations dans leurs propres environnements.
 
@@ -39,17 +39,17 @@ Bien que l’ensemble de l’expérience de création et de planification de sim
 
 Un service de réputation d’URL peut identifier une ou plusieurs URL utilisées par la formation à la simulation d’attaque comme non sûres. Google Coffre navigation dans Google Chrome bloque certaines URL de hameçonnage simulées avec un message d’avance **de site.** Bien que nous travaillions avec de nombreux fournisseurs de réputation d’URL pour toujours autoriser nos URL de simulation, nous n’avons pas toujours une couverture complète.
 
-![Avertissement d’avance du site dans Google Chrome.](../../media/attack-sim-training-faq-chrome-deceptive-site-message.png)
+:::image type="content" source="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png" alt-text="Avertissement de l’avance du site en cas d’erreur dans Google Chrome" lightbox="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png":::
 
 Notez que ce problème n’affecte pas Microsoft Edge.
 
-Dans le cadre de la phase de planification, veillez à vérifier la disponibilité de l’URL dans vos navigateurs web pris en charge avant d’utiliser l’URL dans une campagne de hameçonnage. Si les URL sont bloquées par la navigation google [Coffre,](https://support.google.com/chrome/a/answer/7532419) suivez ces instructions de Google pour autoriser l’accès aux URL.
+Dans le cadre de la phase de planification, veillez à vérifier la disponibilité de l’URL dans vos navigateurs web pris en charge avant d’utiliser l’URL dans une campagne de hameçonnage. Si les URL sont bloquées par la navigation google [Coffre, suivez](https://support.google.com/chrome/a/answer/7532419) ces instructions de Google pour autoriser l’accès aux URL.
 
 [Reportez-vous à La](attack-simulation-training-get-started.md) formation sur la simulation d’attaque pour obtenir la liste des URL actuellement utilisées par la formation sur la simulation d’attaques.
 
 ### <a name="phishing-simulation-and-admin-urls-blocked-by-network-proxy-solutions-and-filter-drivers"></a>Simulation de hameçonnage et URL d’administrateur bloquées par les solutions proxy réseau et les pilotes de filtre
 
-Les URL de simulation de hameçonnage et les URL d’administrateur peuvent être bloquées ou abandonnées par vos filtres ou périphériques de sécurité intermédiaires. Par exemple :
+Les URL de simulation de hameçonnage et les URL d’administrateur peuvent être bloquées ou abandonnées par vos filtres ou périphériques de sécurité intermédiaires. Par exemple :
 
 - Pare-feu
 - Solutions de pare-feu d’application web (WAF)
@@ -57,7 +57,7 @@ Les URL de simulation de hameçonnage et les URL d’administrateur peuvent êtr
 
 Même si nous avons vu peu de clients bloqués au niveau de cette couche, cela se produit. Si vous rencontrez des problèmes, envisagez de configurer les URL suivantes pour contourner l’analyse par vos périphériques ou filtres de sécurité si nécessaire :
 
-- URL de hameçonnage simulée, comme décrit dans La mise en place à l’aide de la formation de [simulation d’attaque.](attack-simulation-training-get-started.md)
+- URL de hameçonnage simulée, comme décrit dans La mise en place de l’entraînement de [simulation d’attaque](attack-simulation-training-get-started.md).
 - <https://security.microsoft.com/attacksimulator>
 - <https://security.microsoft.com/attacksimulationreport>
 - <https://security.microsoft.com/trainingassignments>
@@ -76,14 +76,14 @@ Seuls les utilisateurs non invités valides avec une boîte aux lettres valide s
 
 ### <a name="attack-simulation-training-reports-do-not-contain-any-activity-details"></a>Les rapports de formation sur la simulation d’attaques ne contiennent pas de détails sur l’activité
 
-La formation sur la simulation d’attaques int mente des informations riches et actionnables qui vous informent de la progression de la préparation aux menaces de vos employés. Si les rapports de formation sur la simulation d’attaque ne sont pas remplis avec des données, vérifiez que la recherche dans le journal d’audit est allumée dans votre organisation (elle est allumée par défaut).
+La formation à la simulation d’attaques int mente des informations riches et actionnables qui vous informent de la progression de la préparation aux menaces de vos employés. Si les rapports de formation sur la simulation d’attaque ne sont pas remplis avec des données, vérifiez que la recherche dans le journal d’audit est allumée dans votre organisation (elle est allumée par défaut).
 
-La recherche dans le journal d’audit est requise par la formation à la simulation d’attaque afin que les événements soient capturés, enregistrés et lus. La fin de la recherche dans le journal d’audit a les conséquences suivantes pour la formation à la simulation d’attaque :
+La recherche dans le journal d’audit est requise par la simulation d’attaque afin que les événements soient capturés, enregistrés et lus. La fin de la recherche dans le journal d’audit a les conséquences suivantes pour la formation à la simulation d’attaque :
 
 - Les données de rapport ne sont pas disponibles dans tous les rapports. Les rapports apparaissent vides.
-- Les affectations de formation sont bloquées, car les données ne sont pas disponibles.
+- Les devoirs de formation sont bloqués, car les données ne sont pas disponibles.
 
-Pour activer ou désactiver la recherche dans le journal d’audit, voir Activer ou désactiver la recherche dans [le journal d’audit.](../../compliance/turn-audit-log-search-on-or-off.md)
+Pour activer ou désactiver la recherche dans le journal d’audit, voir [Activer ou désactiver la recherche dans le journal d’audit](../../compliance/turn-audit-log-search-on-or-off.md).
 
 > [!NOTE]
 > Les détails d’activité vides peuvent également être causés par l’absence de licenceS E5 attribuées aux utilisateurs. Vérifiez qu’au moins une licence E5 est attribuée à un utilisateur actif pour vous assurer que les événements de rapport sont capturés et enregistrés.
@@ -92,17 +92,17 @@ Pour activer ou désactiver la recherche dans le journal d’audit, voir Activer
 
 Les rapports de simulation détaillés ne sont pas mis à jour immédiatement après le lancement d’une campagne. Ne vous inquiétez pas ; ce comportement est attendu.
 
-Chaque campagne de simulation a un cycle de vie. Lors de sa première création, la simulation est dans **l’état Planification.** Lorsque la simulation démarre, elle passe à **l’état En** cours. Une fois terminée, la simulation passe à **l’état** Terminé.
+Chaque campagne de simulation a un cycle de vie. Lors de sa première création, la simulation est dans **l’état Planification** . Lorsque la simulation démarre, elle passe à **l’état En** cours. Une fois terminée, la simulation passe à **l’état** Terminé.
 
-Lorsqu’une simulation est dans **l’état Programmé,** les rapports de simulation sont principalement vides. Au cours de cette étape, le moteur de simulation résout les adresses de messagerie des utilisateurs cibles, développe les groupes de distribution, supprime les utilisateurs invités de la liste, etc. :
+Lorsqu’une simulation est dans **l’état Programmé** , les rapports de simulation sont principalement vides. Au cours de cette étape, le moteur de simulation résout les adresses de messagerie des utilisateurs cibles, développe les groupes de distribution, supprime les utilisateurs invités de la liste, etc. :
 
-![Détails de simulation montrant la simulation dans l’état Programmé.](../../media/attack-sim-training-faq-scheduled-state.png)
+:::image type="content" source="../../media/attack-sim-training-faq-scheduled-state.png" alt-text="Détails de la simulation montrant la simulation à l’état Programmé" lightbox="../../media/attack-sim-training-faq-scheduled-state.png":::
 
-Une fois la simulation entrée dans **l’étape En cours,** vous remarquerez que les informations commencent à s’intégrer dans le rapport :
+Une fois la simulation entrée dans **l’étape En cours** , vous remarquerez que les informations commencent à s’intégrer dans le rapport :
 
-![Détails de simulation montrant la simulation dans l’état En cours.](../../media/attack-sim-training-faq-in-progress-state.png)
+:::image type="content" source="../../media/attack-sim-training-faq-in-progress-state.png" alt-text="Détails de la simulation montrant la simulation dans l’état En cours" lightbox="../../media/attack-sim-training-faq-in-progress-state.png":::
 
-La mise à jour des rapports de simulation individuels après la transition vers l’état **En** cours peut prendre jusqu’à 30 minutes. Les données du rapport continuent de s’établir jusqu’à ce que la simulation atteigne **l’état Terminé.** Les mises à jour de rapports se produisent aux intervalles suivants :
+La mise à jour des rapports de simulation individuels après la transition vers l’état En cours peut prendre jusqu’à 30 **minutes.** Les données du rapport continuent de s’établir jusqu’à ce que la simulation atteigne **l’état Terminé** . Les mises à jour de rapports se produisent aux intervalles suivants :
 
 - Toutes les 10 minutes pour les 60 premières minutes.
 - Toutes les 15 minutes après 60 minutes jusqu’à 2 jours.
@@ -127,7 +127,7 @@ Si les messages signalés par les utilisateurs comme hameçonnage ne sont pas ca
 - junk@office365.microsoft.com
 - abuse@messaging.microsoft.com
 - phish@office365.microsoft.com
-- pas \_ junk@office365.microsoft.com
+- not\_ junk@office365.microsoft.com
 
 ## <a name="other-frequently-asked-questions"></a>Autres questions fréquemment posées
 
@@ -140,13 +140,13 @@ R : Plusieurs options sont disponibles pour les utilisateurs cibles :
 - Sélectionnez des utilisateurs dans un fichier CSV (une adresse de messagerie par ligne).
 - Azure AD de groupe.
 
-Nous avons découvert que les campagnes où les utilisateurs ciblés sont identifiés par Azure AD groupes sont généralement plus faciles à gérer.
+Nous avons constaté que les campagnes où les utilisateurs ciblés sont identifiés par Azure AD groupes sont généralement plus faciles à gérer.
 
 ### <a name="q-are-there-any-limits-in-targeting-users-while-importing-from-a-csv-or-adding-users"></a>Q : Existe-t-il des limites dans le ciblage des utilisateurs lors de l’importation à partir d’un CSV ou de l’ajout d’utilisateurs ?
 
-R : la limite pour importer des destinataires à partir d’un fichier CSV ou ajouter des destinataires individuels à une simulation est de 40 000.
+R : la limite pour l’importation de destinataires à partir d’un fichier CSV ou l’ajout de destinataires individuels à une simulation est de 40 000.
 
-Un destinataire peut être un utilisateur individuel ou un groupe. Un groupe peut contenir des centaines ou des milliers de destinataires, de sorte qu’une limite réelle n’est pas placée sur le nombre d’utilisateurs individuels.
+Un destinataire peut être un utilisateur individuel ou un groupe. Un groupe peut contenir des centaines ou des milliers de destinataires, de sorte qu’aucune limite réelle n’est placée sur le nombre d’utilisateurs individuels.
 
 La gestion d’un fichier CSV de grande taille ou l’ajout de nombreux destinataires individuels peuvent être fastidieux. L’Azure AD groupes de travail simplifie la gestion globale de la simulation.
 
@@ -158,15 +158,15 @@ Cela étant dit, vous pouvez créer votre propre charge utile dans le langage de
 
 ### <a name="q-how-can-i-switch-to-other-languages-for-my-admin-portal-and-training-experience"></a>Q : Comment puis-je basculer vers d’autres langues pour mon portail d’administration et mon expérience de formation ?
 
-R : dans Microsoft 365 ou Office 365, la configuration linguistique est spécifique et centralisée pour chaque compte d’utilisateur. Pour obtenir des instructions sur la modification de votre paramètre de langue, voir Modifier votre langue d’affichage et votre fuseau horaire [dans Microsoft 365 entreprise.](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)
+R : dans Microsoft 365 ou Office 365, la configuration linguistique est spécifique et centralisée pour chaque compte d’utilisateur. Pour obtenir des instructions sur la modification de votre paramètre de langue, voir Modifier votre langue d’affichage et votre fuseau horaire [dans Microsoft 365 entreprise](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b).
 
 Notez que la synchronisation entre tous les services peut prendre jusqu’à 30 minutes.
 
 ### <a name="q-can-i-trigger-a-test-simulation-to-understand-what-it-looks-like-prior-to-launching-a-full-fledged-campaign"></a>Q : Puis-je déclencher une simulation de test pour comprendre à quoi elle ressemble avant de lancer une campagne complète ?
 
-R : Oui! On the very last **Review Simulation** page in the wizard to create a new simulation, there’s an option to Send **a test**. Cette option envoie un exemple de message de simulation de hameçonnage à l’utilisateur actuellement connecté. Après avoir validé le message d’hameçonnage dans votre boîte de réception, vous pouvez soumettre la simulation.
+R : Oui! Dans la toute dernière page **Examiner la simulation** de l’Assistant pour créer une simulation, vous avez la possibilité **d’envoyer un test**. Cette option envoie un exemple de message de simulation de hameçonnage à l’utilisateur actuellement connecté. Après avoir validé le message d’hameçonnage dans votre boîte de réception, vous pouvez soumettre la simulation.
 
-![Envoyez un bouton de test sur la page de simulation Révision.](../../media/attack-sim-training-simulations-review-simulation.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-review-simulation.png" alt-text="Bouton Envoyer un test sur la page de simulation Révision" lightbox="../../media/attack-sim-training-simulations-review-simulation.png":::
 
 ### <a name="q-can-i-target-users-that-belong-to-a-different-tenant-as-part-of-the-same-simulation-campaign"></a>Q : Puis-je cibler des utilisateurs appartenant à un autre client dans le cadre de la même campagne de simulation ?
 
@@ -182,4 +182,4 @@ R : La remise sensible à la région utilise l’attribut TimeZone de la boîte 
 
 À 9 h 00 le même jour, le message de simulation est envoyé à UserB. Avec la remise de région, le message n’est pas envoyé à UserA le même jour, car l’heure de 9:00 AM Pacifique est 12:00 PM Est. Au lieu de cela, le message est envoyé à UserA à 9 h 00 heure de l’Est le jour suivant.
 
-Ainsi, lors de l’exécution initiale d’une campagne avec une remise de région activée, il peut sembler que le message de simulation a été envoyé uniquement aux utilisateurs dans un fuseau horaire spécifique. Toutefois, à mesure que le temps passe et que de plus en plus d’utilisateurs entrent en ligne de compte, les utilisateurs ciblés augmentent.
+Ainsi, lors de l’exécution initiale d’une campagne avec la remise en fonction de la région activée, il peut sembler que le message de simulation a été envoyé uniquement aux utilisateurs dans un fuseau horaire spécifique. Toutefois, à mesure que le temps passe et que de plus en plus d’utilisateurs entrent en ligne de compte, les utilisateurs ciblés augmentent.

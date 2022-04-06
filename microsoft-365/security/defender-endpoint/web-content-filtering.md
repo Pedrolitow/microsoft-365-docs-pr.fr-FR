@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 14d45f4ac22a9707b380d817cb89da1bbee562e2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 24cdf18ad510902a533834da2f3595acaa9b33d7
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326508"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595255"
 ---
 # <a name="web-content-filtering"></a>Filtrage du contenu web
 
@@ -34,7 +34,7 @@ ms.locfileid: "63326508"
 > [!TIP]
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Le filtrage de contenu Web fait partie des fonctionnalités de [protection Web](web-protection-overview.md) de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien qu’ils ne soient pas malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
+Le filtrage de contenu Web fait partie des fonctionnalités [de protection Web](web-protection-overview.md) Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien qu’ils ne soient pas malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
 
 Configurez des stratégies sur vos groupes d’appareils pour bloquer certaines catégories. Le blocage d’une catégorie empêche les utilisateurs au sein de groupes d’appareils spécifiés d’accéder aux URL associées à la catégorie. Pour toute catégorie qui n’est pas bloquée, les URL sont automatiquement auditées. Vos utilisateurs peuvent accéder aux URL sans interruption, et vous allez collecter des statistiques d’accès pour vous aider à créer une décision de stratégie plus personnalisée. Vos utilisateurs voient une notification de blocage si un élément de la page qu’ils voient appelle une ressource bloquée.
 
@@ -44,15 +44,15 @@ Le filtrage de contenu Web est disponible sur les principaux navigateurs web, av
 
 - Les utilisateurs ne peuvent pas accéder aux sites web dans des catégories bloquées, qu’ils naviguent en local ou en de suite.
 
-- Votre équipe de sécurité peut déployer facilement des stratégies pour des groupes d’utilisateurs à l’aide de groupes d’appareils définis dans les paramètres de contrôle d’accès basés sur les [rôles Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/rbac).
+- Votre équipe de sécurité peut déployer facilement des stratégies sur des groupes d’utilisateurs à l’aide de groupes d’appareils définis Microsoft Defender pour point de terminaison paramètres de contrôle d’accès [basés sur les rôles](/microsoft-365/security/defender-endpoint/rbac).
 
 - Votre équipe de sécurité peut accéder aux rapports web dans le même emplacement central, avec une visibilité sur les blocs réels et l’utilisation du web.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Configuration requise
 
 Avant d’essayer cette fonctionnalité, assurez-vous que vous disposez des conditions suivantes :
 
-- Votre abonnement inclut l’une des Windows 10 Entreprise suivantes : Windows 10 Entreprise E5, Microsoft 365 E5, Microsoft 365 E5 Sécurité, Microsoft 365 E3 + Microsoft 365 E5 Sécurité  module ou licence autonome Microsoft Defender pour point de terminaison. 
+- Votre abonnement inclut l’un des Windows 10 Entreprise suivants : Windows 10 Entreprise E5, Microsoft 365 E5, Microsoft 365 E5 Sécurité, Microsoft 365 E3 + Microsoft 365 E5 Sécurité module, ou la Microsoft Defender pour point de terminaison licence autonome. 
 
 - Vous avez accès à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail.</a>
 
@@ -62,7 +62,7 @@ Avant d’essayer cette fonctionnalité, assurez-vous que vous disposez des cond
 
 ## <a name="data-handling"></a>Traitement des données
 
-Les données sont stockées dans la région sélectionnée dans le cadre de vos paramètres de gestion des données [de Microsoft Defender for Endpoint](data-storage-privacy.md). Vos données ne quitteront pas le centre de données dans cette région. En outre, vos données ne seront pas partagées avec des tiers, y compris nos fournisseurs de données.
+Les données sont stockées dans la région sélectionnée dans le cadre de votre Microsoft Defender pour point de terminaison [de gestion des données](data-storage-privacy.md). Vos données ne quitteront pas le centre de données dans cette région. En outre, vos données ne seront pas partagées avec des tiers, y compris nos fournisseurs de données.
 
 ## <a name="turn-on-web-content-filtering"></a>Activer le filtrage de contenu web
 
@@ -134,7 +134,7 @@ Les stratégies peuvent être déployées pour bloquer l’une des catégories p
 
 **Conversation** : sites qui sont principalement des salles de conversation web.
 
-**Jeux :** sites relatifs aux jeux vidéo ou informatiques, y compris les sites qui promeuvent les jeux par le biais de l’hébergement de services en ligne ou d’informations relatives aux jeux.
+**Jeux :** sites relatifs aux jeux vidéo ou informatiques, y compris les sites qui promeuvent les jeux par le biais d’services en ligne ou d’informations relatives aux jeux.
 
 **Messagerie instantanée :** sites qui peuvent être utilisés pour télécharger un logiciel de messagerie instantanée ou une messagerie instantanée client.
 
@@ -203,9 +203,9 @@ Un panneau s’ouvre où vous pouvez sélectionner la priorité et ajouter des d
 
 ### <a name="url-category-lookup"></a>Recherche de catégorie d’URL
 
-Pour déterminer la catégorie d’un site web, vous pouvez utiliser la fonction de recherche d’URL disponible sur le portail Microsoft 365 Defender (<https://security.microsoft.com>) sous **Recherche de points de** \> **terminaison**. Dans les résultats de recherche d’URL, la catégorie de filtrage de contenu web apparaît sous **URL/Détails du domaine**. Les administrateurs peuvent également en litige la catégorie du domaine directement à partir de cette page, comme illustré dans l’image suivante. Si le résultat de catégorie n’est pas affiché, l’URL n’est pas actuellement affectée à une catégorie de filtrage de contenu web existante.
+Pour déterminer la catégorie d’un site web, vous pouvez utiliser la fonction de recherche d’URL disponible sur le portail Microsoft 365 Defender (<https://security.microsoft.com>) sous **Recherche de points de** \> **terminaison**. Dans les résultats de recherche d’URL, la catégorie de filtrage de contenu web apparaît sous **URL/Détails du domaine**. Si le résultat de catégorie n’est pas affiché, l’URL n’est pas actuellement affectée à une catégorie de filtrage de contenu web existante.
 
-![Image des résultats de recherche de catégorie de filtrage de contenu web.](../../media/web-content-filtering-category-lookup.png)
+<!---:::image type="content" source="../../media/web-content-filtering-category-lookup.png" alt-text="The web content filtering category lookup results" lightbox="../../media/web-content-filtering-category-lookup.png":::--->
 
 ## <a name="web-content-filtering-cards-and-details"></a>Cartes et détails de filtrage de contenu Web
 
@@ -217,25 +217,25 @@ Cette carte répertorie les catégories de contenu web parent avec la plus grand
 
 Au cours des 30 premiers jours d’utilisation de cette fonctionnalité, il se peut que votre organisation ne dispose pas de suffisamment de données pour afficher ces informations.
 
-![Image de l’activité web par carte de catégorie.](images/web-activity-by-category600.png)
+:::image type="content" source="images/web-activity-by-category600.png" alt-text="Activité web par carte de catégorie" lightbox="images/web-activity-by-category600.png":::
 
 ### <a name="web-content-filtering--summary-card"></a>Fiche récapitulatif du filtrage du contenu Web
 
 Cette carte affiche la distribution des tentatives d’accès bloqué entre les différentes catégories de contenu web parent. Sélectionnez l’une des barres de couleur pour afficher plus d’informations sur une catégorie web parente spécifique.
 
-![Image de la carte récapitulatif du filtrage du contenu web.](images/web-content-filtering-summary.png)
+:::image type="content" source="images/web-content-filtering-summary.png" alt-text="Carte récapitulatif du filtrage du contenu web" lightbox="images/web-content-filtering-summary.png":::
 
 ### <a name="web-activity-summary-card"></a>Carte récapitulatif des activités web
 
 Cette carte affiche le nombre total de demandes de contenu web dans toutes les URL.
 
-![Image de la carte récapitulatif des activités web.](images/web-activity-summary.png)
+:::image type="content" source="images/web-activity-summary.png" alt-text="Carte récapitulatif des activités web" lightbox="images/web-activity-summary.png":::
 
 ### <a name="view-card-details"></a>Afficher les détails de la carte
 
 Vous pouvez accéder aux **détails du rapport** pour chaque carte en sélectionnant une ligne de tableau ou une barre de couleur dans le graphique de la carte. La page de détails du rapport pour chaque carte contient des données statistiques complètes sur les catégories de contenu web, les domaines de site web et les groupes d’appareils.
 
-![Image des détails du rapport de protection web.](images/web-protection-report-details.png)
+:::image type="content" source="images/web-protection-report-details.png" alt-text="Détails du rapport de protection web" lightbox="images/web-protection-report-details.png":::
 
 - **Catégories Web :** répertorie les catégories de contenu web qui ont connu des tentatives d’accès dans votre organisation. Sélectionnez une catégorie spécifique pour ouvrir un volant de synthèse.
 

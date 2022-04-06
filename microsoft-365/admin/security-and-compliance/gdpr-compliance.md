@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Découvrez comment Microsoft 365 pour les PME peut vous accompagner dans le processus du Règlement général sur la protection des données (RGPD).
-ms.openlocfilehash: 7c8a2c402e362ede4eb9b2f4ec221dd8556052db
-ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
+ms.openlocfilehash: d5c24fe2f2295e99798fcc5382dc284cec01d385
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "64403637"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632402"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>RGPD simplifié : Un guide pour votre petite entreprise
 
@@ -134,7 +134,7 @@ Si vous décidez de stocker des données personnelles dans le cloud, tel que via
 
 #### <a name="microsoft-365-features-that-can-help"></a>Fonctionnalités Microsoft 365 pouvant être utiles
 
-Vous pouvez utiliser [configurer les fonctionnalités de conformité](set-up-compliance.md) pour protéger les informations sensibles de votre entreprise. Le Gestionnaire de conformité peut vous aider à commencer immédiatement ! Par exemple, vous pouvez [configurer une stratégie DLP](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) qui utilise le [modèle RGPD](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
+Vous pouvez utiliser [configurer les fonctionnalités de conformité](../../business-premium/m365bp-set-up-compliance.md) pour protéger les informations sensibles de votre entreprise. Le Gestionnaire de conformité peut vous aider à commencer immédiatement ! Par exemple, vous pouvez [configurer une stratégie DLP](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) qui utilise le [modèle RGPD](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
 
 ### <a name="step-5-keep-documentation-on-your-data-processing-activities"></a>Étape 5 : conserver la documentation sur vos activités de traitement des données
 

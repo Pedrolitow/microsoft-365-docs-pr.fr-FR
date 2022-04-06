@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Découvrez comment Coffre protection des liens dans Defender for Office 365 pour protéger une organisation contre le hameçonnage et d’autres attaques qui utilisent des URL malveillantes. Découvrez Teams Coffre liens et consultez les graphiques des messages Coffre liens.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8bd4773d3f712adf13ac2a006f5d8450c58fc89a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 28215843f8c8edab4125ba46b483c2d596c78532
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682083"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474550"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Coffre liens dans Microsoft Defender pour Office 365
 
@@ -100,21 +100,21 @@ Après Coffre liens réécrit une URL, l’URL reste réécrite, même si le mes
 
 Les paramètres des stratégies Coffre liens qui s’appliquent aux messages électroniques sont décrits dans la liste suivante :
 
-- **Sélectionnez l’action pour** les URL potentiellement malveillantes inconnues dans les messages : active ou désactive l’Coffre liens dans les messages électroniques. La valeur recommandée est **On**. L’turning on this setting results in the following actions.
+- **Sélectionnez l’action pour** les URL potentiellement malveillantes inconnues dans les messages : active ou désactive l’Coffre liens dans les messages électroniques. La valeur recommandée est **Activée**. L’turning on this setting results in the following actions.
 
   - Coffre’analyse des liens est activée dans Outlook (C2R) sur Windows.
   - Les URL sont réécrites et les utilisateurs sont acheminés via Coffre protection des liens lorsqu’ils cliquent sur les URL des messages.
   - Lorsque vous cliquez dessus, les URL sont vérifiées par rapport à la liste des URL malveillantes connues et à la liste « Bloquer les URL [suivantes](#block-the-following-urls-list-for-safe-links) ».
   - Les URL qui n’ont pas de réputation valide sont détonées de manière asynchrone en arrière-plan.
 
-- **Appliquez l’analyse d’URL** en temps réel pour les liens suspects et les liens pointant vers des fichiers : active l’analyse en temps réel des liens, y compris les liens dans les messages électroniques qui pointent vers du contenu téléchargeable. La valeur recommandée est activée.
+- **Appliquer une analyse en temps réel des URL pour détecter les liens suspects et les liens qui pointent vers des fichiers** : Permet d'analyser en temps réel les liens, y compris les liens dans les messages électroniques qui pointent vers du contenu téléchargeable. La valeur recommandée est activée.
   - **Attendez que l’analyse des URL se termine avant de remettre le message** :
     - Activé : les messages qui contiennent des URL sont maintenus jusqu’à la fin de l’analyse. Les messages ne sont remis qu’une fois que les URL sont confirmées comme sûres. Il s’agit de la valeur recommandée.
     - Désactivé : si l’analyse d’URL ne peut pas se terminer, remettre le message quand même.
 
 - Appliquer Coffre Liens vers les **messages** électroniques envoyés au sein de l’organisation : active ou désactive l’analyse des liens Coffre sur les messages envoyés entre des expéditeurs internes et des destinataires internes au sein de la même Exchange Online organisation. La valeur recommandée est activée.
 
-- **Ne pas suivre les clics** de l’utilisateur : active ou désactive le stockage Coffre Données de clic de liens pour les URL sur les messages électroniques. La valeur recommandée consiste à laisser ce paramètre non sélectionné (pour suivre les clics de l’utilisateur).
+- **Ne pas suivre les clics de l’utilisateur** : active ou désactive le stockage Coffre Données de clic de liens pour les URL sur les messages électroniques. La valeur recommandée consiste à laisser ce paramètre non sélectionné (pour suivre les clics de l’utilisateur).
 
   Le suivi des clics d’URL pour les liens dans les messages électroniques envoyés entre des expéditeurs internes et des destinataires internes n’est actuellement pas pris en charge.
 
@@ -159,7 +159,7 @@ Les paramètres des stratégies Coffre liens qui s’appliquent aux messages él
 
 ## <a name="safe-links-settings-for-microsoft-teams"></a>Coffre paramètres de liens pour Microsoft Teams
 
-Vous activez ou désactivez la protection Coffre liens pour les Microsoft Teams dans Coffre de liens. Plus précisément, vous utilisez l’action Sélectionner pour les URL inconnues ou potentiellement **malveillantes dans Microsoft Teams** paramètre. La valeur recommandée est **On**.
+Vous activez ou désactivez la protection Coffre liens pour les Microsoft Teams dans Coffre de liens. Plus précisément, vous utilisez l’action Sélectionner pour les URL inconnues ou potentiellement **malveillantes dans Microsoft Teams** paramètre. La valeur recommandée est **Activée**.
 
 > [!NOTE]
 > Lorsque vous activer ou désactiver la protection Coffre liens pour Teams, la modification peut prendre jusqu’à 24 heures.
@@ -167,7 +167,7 @@ Vous activez ou désactivez la protection Coffre liens pour les Microsoft Teams 
 Les paramètres suivants dans Coffre de liens qui s’appliquent aux liens dans les messages électroniques s’appliquent également aux liens Teams :
 
 - **Appliquer l’analyse d’URL en temps réel pour les liens suspects et les liens qui pointent vers des fichiers**
-- **Ne pas suivre les clics de l’utilisateur**
+- **Ne pas suivre les clics des utilisateurs**
 - **Ne pas autoriser les utilisateurs à accéder à l’URL d’origine**
 
 Ces paramètres sont précédemment expliqués dans les [paramètres Coffre liens pour les messages électroniques](#safe-links-settings-for-email-messages).
@@ -175,22 +175,22 @@ Ces paramètres sont précédemment expliqués dans les [paramètres Coffre lien
 Une fois que vous avez Coffre la protection des liens pour Microsoft Teams, les URL de Teams sont vérifiées par rapport à la liste des liens malveillants connus lorsque l’utilisateur protégé clique sur le lien (protection en temps de clic). Les URL ne sont pas réécrites. Si un lien est jugé malveillant, les utilisateurs auront les expériences suivantes :
 
 - Si vous avez cliqué sur le lien dans une conversation Teams, une conversation de groupe ou à partir de canaux, la page d’avertissement, comme illustré dans la capture d’écran ci-dessous, s’affiche dans le navigateur web par défaut.
-- Si vous avez cliqué sur le lien à partir d’un onglet épinglé, la page d’avertissement s’affiche dans l’interface Teams dans cet onglet. L’option d’ouverture du lien dans un navigateur web est désactivée pour des raisons de sécurité.
-- Selon la configuration du paramètre Ne pas autoriser les utilisateurs à accéder à **l’URL** d’origine de la stratégie, l’utilisateur est autorisé ou non à accéder à l’URL d’origine (continuer quand même (non recommandé **)** dans la capture d’écran). Nous vous recommandons d’activer le paramètre Ne pas autoriser les utilisateurs à accéder au paramètre **d’URL** d’origine afin que les utilisateurs ne peuvent pas accéder à l’URL d’origine.
+- Si le lien a été cliqué depuis un onglet épinglé, la page d'avertissement apparaîtra dans l'interface Teams de cet onglet. L'option permettant d'ouvrir le lien dans un navigateur Web est désactivée pour des raisons de sécurité.
+- En fonction de la configuration du paramètre **Ne pas autoriser les utilisateurs à cliquer sur l'URL d'origine** dans la stratégie, l'utilisateur sera ou non autorisé à cliquer sur l'URL d'origine (**Continuer quand même (non recommandé)** dans la capture d'écran). Nous vous recommandons d’activer le paramètre Ne pas autoriser les utilisateurs à accéder au paramètre **d’URL** d’origine afin que les utilisateurs ne peuvent pas accéder à l’URL d’origine.
 
 Si l’utilisateur qui a envoyé le lien n’est pas inclus dans une stratégie de liens Coffre dans laquelle la protection Teams est activée, l’utilisateur est libre de cliquer sur l’URL d’origine sur son ordinateur ou son appareil.
 
-![A Coffre links for Teams page reporting a malicious link.](../../media/tp-safe-links-for-teams-malicious.png)
+:::image type="content" source="../../media/tp-safe-links-for-teams-malicious.png" alt-text="Une page Coffre liens vers Teams rapport d’un lien malveillant" lightbox="../../media/tp-safe-links-for-teams-malicious.png":::
 
-Cliquer sur le **bouton Revenir en** arrière dans la page d’avertissement permet de renvoyer l’utilisateur à son contexte d’origine ou à son emplacement d’URL. Toutefois, le fait de cliquer à nouveau sur le lien d’origine entraîne Coffre liens de réascanation de l’URL, de sorte que la page d’avertissement réapparaît.
+Cliquer sur le bouton **Revenir en arrière** dans la page d’avertissement permet de renvoyer l’utilisateur à son contexte d’origine ou à son emplacement d’URL. Toutefois, si vous cliquez à nouveau sur le lien original, Safe Links analysera à nouveau l'URL et la page d'avertissement s'affichera à nouveau.
 
 ### <a name="how-safe-links-works-in-teams"></a>Fonctionnement des liens Coffre dans Teams
 
 À un niveau élevé, voici comment fonctionne la protection Coffre liens pour les URL dans Microsoft Teams :
 
-1. Un utilisateur démarre l’Teams’application.
+1. Un utilisateur lance l'application Teams.
 
-2. Microsoft 365 vérifie que l’organisation de l’utilisateur inclut Microsoft Defender pour Office 365 et que l’utilisateur est inclus dans une stratégie de liens Coffre active dans laquelle la protection de Microsoft Teams est activée.
+2. Microsoft 365 vérifie que l'organisation de l'utilisateur inclut Microsoft Defender for Office 365, et que l'utilisateur est inclus dans une politique Safe Links active où la protection pour Microsoft Teams est activée.
 
 3. Les URL sont validées au moment du clic pour l’utilisateur dans les conversations, les conversations de groupe, les canaux et les onglets.
 
@@ -260,7 +260,7 @@ Lorsqu’un utilisateur dans une stratégie de liens Coffre active clique sur un
 
 Vous configurez la liste des URL dans les paramètres globaux pour Coffre liens. Pour obtenir des instructions, [voir Configurer la liste « Bloquer les URL suivantes](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal) ».
 
-**Remarques** :
+**Remarques** :
 
 - Pour obtenir une liste véritablement universelle des URL bloquées partout, voir Gérer la liste d’adresses client [autoriser/bloquer](tenant-allow-block-list.md).
 - Limites pour la **liste Bloquer les URL suivantes** :
@@ -330,33 +330,33 @@ Notez que plusieurs pages d’avertissement ont été mises à jour. Si vous ne 
 
 L’URL cliquée est en cours d’analyse Coffre liens. Vous devrez peut-être patienter quelques instants avant d’essayer à nouveau le lien.
 
-![Notification « Le lien est en cours d’analyse »](../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
+:::image type="content" source="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png" alt-text="Notification de l’analyse du lien" lightbox="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png":::
 
 La page de notification d’origine ressemble à ceci :
 
-![Notification d’origine « Le lien est en cours d’analyse »](../../media/04368763-763f-43d6-94a4-a48291d36893.png)
+:::image type="content" source="../../media/04368763-763f-43d6-94a4-a48291d36893.png" alt-text="Le lien est en cours d’analyse de notification" lightbox="../../media/04368763-763f-43d6-94a4-a48291d36893.png":::
 
 ### <a name="suspicious-message-warning"></a>Avertissement de message suspect
 
 L’URL cliquée se trouvait dans un message électronique semblable à d’autres messages suspects. Nous vous recommandons de vérifier le message électronique avant de passer au site.
 
-![Avertissement « Un lien a été cliqué à partir d’un message suspect »](../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
+:::image type="content" source="../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png" alt-text="Un lien a été cliqué à partir d’un avertissement de message suspect" lightbox="../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png":::
 
 ### <a name="phishing-attempt-warning"></a>Avertissement de tentative de hameçonnage
 
 L’URL cliquée se trouvait dans un message électronique identifié comme une attaque par hameçonnage. Par conséquent, toutes les URL du message électronique sont bloquées. Nous vous recommandons de ne pas passer au site.
 
-![Avertissement « Le lien a été cliqué à partir d’un message de hameçonnage »](../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
+:::image type="content" source="../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png" alt-text="Avertissement signalant qu’un lien a été cliqué à partir d’un message d’hameçonnage" lightbox="../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png":::
 
 ### <a name="malicious-website-warning"></a>Avertissement de site web malveillant
 
 L’URL cliquée pointe vers un site qui a été identifié comme malveillant. Nous vous recommandons de ne pas passer au site.
 
-![Avertissement « Ce site web est considéré comme malveillant »](../../media/058883c8-23f0-4672-9c1c-66b084796177.png)
+:::image type="content" source="../../media/058883c8-23f0-4672-9c1c-66b084796177.png" alt-text="Avertissement signalant que le site web est classé comme malveillant" lightbox="../../media/058883c8-23f0-4672-9c1c-66b084796177.png":::
 
 La page d’avertissement d’origine ressemble à ceci :
 
-![Avertissement « Ce site web a été classé comme malveillant » d’origine](../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png)
+:::image type="content" source="../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png" alt-text="L’avertissement d’origine qui indique que le site web est classé comme malveillant" lightbox="../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png":::
 
 ### <a name="blocked-url-warning"></a>Avertissement d’URL bloquée
 
@@ -364,18 +364,18 @@ L’URL cliquée a été bloquée manuellement par un administrateur de votre or
 
 Il existe plusieurs raisons pour lesquelles un administrateur bloque manuellement des URL spécifiques. Si vous pensez que le site ne doit pas être bloqué, contactez votre administrateur.
 
-![Avertissement « Ce site web a été bloqué par votre administrateur »](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+:::image type="content" source="../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png" alt-text="Avertissement signalant que le site web a été bloqué par votre administrateur" lightbox="../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png":::
 
 La page d’avertissement d’origine ressemble à ceci :
 
-![Avertissement « Ce site web a été bloqué par la stratégie d’URL de votre organisation »](../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
+:::image type="content" source="../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png" alt-text="L’avertissement d’origine qui indique que le site web a été bloqué par la stratégie d’URL de votre organisation" lightbox="../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png":::
 
 ### <a name="error-warning"></a>Avertissement d’erreur
 
 Un type d’erreur s’est produit et l’URL ne peut pas être ouverte.
 
-![Avertissement « Impossible de charger la page à qui vous essayez d’accéder »](../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
+:::image type="content" source="../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png" alt-text="L’avertissement qui indique que la page à qui vous essayez d’accéder ne peut pas être chargée" lightbox="../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png":::
 
 La page d’avertissement d’origine ressemble à ceci :
 
-![Avertissement d’origine « Cette page web n’a pas pu être chargée »](../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png)
+:::image type="content" source="../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png" alt-text="Avertissement signalant que la page web n’a pas pu être chargée" lightbox="../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png":::

@@ -1,5 +1,5 @@
 ---
-title: Configurer des stratégies Coffre de liens dans Microsoft Defender pour Office 365
+title: Configurer les stratégies de la fonctionnalité Liens fiables dans Defender pour Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,17 +16,17 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 ms.custom: ''
-description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies de liens Coffre et des paramètres de liens Coffre globales dans Microsoft Defender pour Office 365.
+description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer Coffre stratégies de liens et les paramètres Coffre liens globaux dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7d4cbaccab3eca371114eec92fe1bf89b2c0e353
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 7a352391a0acc595463a8363da315e8dda2758c1
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312976"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507228"
 ---
-# <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies Coffre de liens dans Microsoft Defender pour Office 365
+# <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurer les stratégies de la fonctionnalité Liens fiables dans Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "63312976"
 > [!IMPORTANT]
 > Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](defender-for-office-365.md). Si vous êtes un utilisateur d’accueil à la recherche d’informations sur les liens sécurisés dans Outlook, consultez [La sécurité advanced Outlook.com](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Coffre links in [Microsoft Defender for Office 365](defender-for-office-365.md) provides URL scanning of inbound email messages in mail flow, and time of click verification of URLs and links in email messages and in other locations. Pour plus d’informations, [Coffre liens vers Microsoft Defender pour Office 365](safe-links.md).
+Coffre liens dans [Microsoft Defender pour Office 365](defender-for-office-365.md) fournit l’analyse des URL des messages électroniques entrants dans le flux de messagerie, ainsi que l’heure de vérification des URL et des liens dans les messages électroniques et à d’autres emplacements. Pour plus d’informations, [voir Coffre liens dans Microsoft Defender pour Office 365](safe-links.md).
 
 Bien qu’il n’existe aucune stratégie de liens Coffre par défaut, la stratégie de sécurité prédéfinit de **protection** intégrée fournit une protection de liens Coffre à tous les destinataires (utilisateurs qui ne sont pas définis dans les stratégies de liens Coffre personnalisées). Pour plus d’informations, voir [Stratégies de sécurité prédéfini dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md).
 
@@ -45,11 +45,11 @@ Vous pouvez également utiliser les procédures de cet article pour créer des s
 
 > [!NOTE]
 >
-> Vous configurez les paramètres globaux pour la protection **Coffre liens en** dehors des stratégies Coffre liens. Pour obtenir des instructions, voir [Configurer les paramètres globaux Coffre liens vers Microsoft Defender pour Office 365](configure-global-settings-for-safe-links.md).
+> Vous configurez les paramètres globaux pour la protection **Coffre liens en** dehors des stratégies Coffre liens. Pour obtenir des instructions, voir [Configurer les paramètres globaux Coffre liens dans Microsoft Defender pour Office 365](configure-global-settings-for-safe-links.md).
 >
-> Les administrateurs doivent prendre en compte les différents paramètres de configuration pour Coffre liens. L’une des options disponibles consiste à inclure des informations d’identification utilisateur dans Coffre liens. Cette fonctionnalité permet aux équipes *d’opérations* de sécurité d’examiner la compromission potentielle de l’utilisateur, de prendre des mesures correctives et de limiter les violations coûteuses.
+> Les administrateurs doivent prendre en compte les différents paramètres de configuration pour Coffre liens. L’une des options disponibles consiste à inclure des informations d’identification utilisateur dans Coffre liens. Cette fonctionnalité permet aux équipes des opérations de sécurité (SecOps) d’examiner la compromission potentielle de l’utilisateur, de prendre des mesures correctives et de limiter les violations coûteuses.
 
-Vous pouvez configurer des stratégies de liens Coffre dans le portail Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 éligibles avec des boîtes aux lettres dans Exchange Online ; EOP Autonome PowerShell pour les organisations sans Exchange Online boîtes aux lettres, mais avec Microsoft Defender pour les abonnements Office 365 modules.
+Vous pouvez configurer les politiques Safe Links dans le portail Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 éligibles avec des boîtes aux lettres dans Exchange Online ; EOP PowerShell autonome pour les organisations sans boîtes aux lettres Exchange Online, mais avec des abonnements complémentaires Microsoft Defender for Office 365).
 
 Les éléments de base d’une stratégie Coffre liens sont les suivants :
 
@@ -85,7 +85,7 @@ Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la strat
 
 - Autorisez jusqu’à 6 heures d’application d’une stratégie nouvelle ou mise à jour.
 
-- [De nouvelles fonctionnalités sont continuellement ajoutées à Microsoft Defender pour Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). À mesure que de nouvelles fonctionnalités sont ajoutées, vous devrez peut-être apporter des ajustements à vos stratégies de liens Coffre existantes.
+- [De nouvelles fonctionnalités sont continuellement ajoutées aux Microsoft Defender pour Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). À mesure que de nouvelles fonctionnalités sont ajoutées, vous devrez peut-être apporter des ajustements à vos stratégies de liens Coffre existantes.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-safe-links-policies"></a>Utiliser le portail Microsoft 365 Defender pour créer des stratégies Coffre liens
 
@@ -123,8 +123,8 @@ La création d’une stratégie de liens Coffre personnalisée dans le portail M
        - **Attendez que l’analyse des URL** se termine avant de remettre le message : sélectionnez cette option pour attendre la fin de l’analyse de l’URL en temps réel avant de remettre le message.
      - **Appliquez Coffre** liens vers les messages électroniques envoyés au sein de l’organisation : sélectionnez cette option pour appliquer la stratégie de liens Coffre aux messages entre les expéditeurs internes et les destinataires internes.
    - **Sélectionnez l’action** pour les URL inconnues ou potentiellement malveillantes dans Microsoft Teams  : sélectionnez Activé pour activer la protection Coffre liens pour les liens dans Teams. Notez que l’application de ce paramètre peut prendre jusqu’à 24 heures.
-   - **Ne pas suivre les clics** de l’utilisateur : laissez ce paramètre désélectionnés pour activer les clics de l’utilisateur de suivi sur les URL des messages électroniques.
-   - **N’autorisez pas les utilisateurs** à cliquer sur l’URL d’origine : sélectionnez cette option pour empêcher les utilisateurs de cliquer jusqu’à l’URL d’origine dans les [pages d’avertissement](safe-links.md#warning-pages-from-safe-links).
+   - **Suivi des clics de** l’utilisateur : laissez cette option sélectionnée pour activer les clics de l’utilisateur de suivi sur les URL des messages électroniques.
+   - **Laissez les utilisateurs cliquer** jusqu’à l’URL d’origine : effacer cette option pour empêcher les utilisateurs de cliquer jusqu’à l’URL d’origine dans les [pages d’avertissement](safe-links.md#warning-pages-from-safe-links).
    - **Ne réécrivez** pas les URL suivantes : permet d’accéder aux URL spécifiées qui seraient autrement bloquées par Coffre liens.
 
      Dans la zone, tapez l’URL ou la valeur que vous souhaitez, puis cliquez sur **Ajouter**. Répétez cette étape autant de fois que nécessaire.
@@ -254,7 +254,7 @@ La création d Coffre de liens dans PowerShell est un processus en deux étapes 
 Pour créer une stratégie de liens sécurisés, utilisez la syntaxe suivante :
 
 ```PowerShell
-New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEnabled <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-DoNotAllowClickThrough <$true | $false>] [-DoNotTrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
+New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSafeLinksForEmail <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-AllowClickThrough <$true | $false>] [-TrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
 ```
 
 > [!NOTE]
@@ -270,11 +270,11 @@ Cet exemple crée une stratégie de liens sécurisés nommée Contoso All avec l
 - Activer l’analyse en temps réel des URL sur lesquelles vous avez cliqué, y compris les liens sur lesquels vous avez cliqué et qui pointent vers des fichiers.
 - Attendez la fin de l’analyse de l’URL avant de remettre le message.
 - Activer l’analyse et la réécriture d’URL pour les messages internes.
-- Suivez les clics utilisateur liés à Coffre Links protection (nous n’utilisons pas le paramètre _DoNotTrackUserClicks_, et la valeur par défaut est $false, ce qui signifie que les clics utilisateur sont suivis).
+- Suivez les clics utilisateur liés à Coffre protection des liens (nous n’utilisons pas le paramètre _TrackUserClicks_ et la valeur par défaut est $true).
 - N’autorisez pas les utilisateurs à accéder à l’URL d’origine en cliquant.
 
 ```PowerShell
-New-SafeLinksPolicy -Name "Contoso All" -IsEnabled $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -DoNotAllowClickThrough $true
+New-SafeLinksPolicy -Name "Contoso All" -EnableSafeLinksForEmail $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -AllowClickThrough $false
 ```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy).
@@ -468,7 +468,7 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule).
 
-Pour vérifier que les liens Coffre sont en cours d’analyse des messages, vérifiez la présence de rapports microsoft Defender Office 365 disponibles. Pour plus d’informations, voir [Afficher les rapports pour Defender pour Office 365](view-reports-for-mdo.md) explorer et Utiliser [dans le portail Microsoft 365 Defender web](threat-explorer.md).
+Pour vérifier que les liens Coffre sont en cours d’analyse des messages, vérifiez les rapports Microsoft Defender pour Office 365 disponibles. Pour plus d’informations, voir [Afficher les rapports pour Defender pour Office 365](view-reports-for-mdo.md) et [Utiliser l’Explorateur dans le portail Microsoft 365 Defender web](threat-explorer.md).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Comment savoir si ces procédures ont fonctionné ?
 

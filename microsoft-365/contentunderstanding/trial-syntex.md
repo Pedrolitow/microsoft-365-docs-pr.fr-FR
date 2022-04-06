@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: ''
 ms.localizationpriority: medium
 description: Découvrez comment planifier, inscrire et exécuter un programme pilote d’essai pour SharePoint Syntex votre organisation.
-ms.openlocfilehash: c3f081654e7661e5c298bab15da90d8337dfc418
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: fc4221b0022aca8a0564c78e64d94028f6483104
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473626"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507096"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>Exécuter une version d’essai de Microsoft SharePoint Syntex
 
@@ -44,7 +44,7 @@ Vous pouvez obtenir la version d’essai à partir de l’une des sources suivan
     2. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**BillingPurchase**</a> >  Services.
     3. Faites défiler la page vers le bas jusqu’à la section **Modules complémentaires**.
     4. Sur la SharePoint Syntex, sélectionnez **Détails**.
-    5. Sélectionnez **Obtenir un essai gratuit**.
+    5. Sélectionnez **Démarrer l’essai gratuit**.
     6. Pour confirmer la version d’essai, suivez les étapes restantes de l’Assistant.
 
 Vous devez être un administrateur Microsoft 365 général ou un administrateur de facturation pour activer une version d’essai.
@@ -112,4 +112,4 @@ Si vous n’achetez pas de licences après la version d’essai :
 
 ## <a name="see-also"></a>Voir aussi
 
-[Adoption SharePoint Syntex Microsoft : commencer](adoption-getstarted.md)
+[Adoption SharePoint Syntex Microsoft : Démarrage](adoption-getstarted.md)

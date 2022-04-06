@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment configurer la sécurité du portail.
-ms.openlocfilehash: 4d12755ca1b02988dff3f5ba6be6dd0d8da172ad
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: 532ce9d6e90ea4d502c6898a105702d525f05a1b
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64594749"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632686"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>Configurer la sécurité Microsoft 365 Lighthouse portail d’entreprise
 
@@ -39,11 +39,11 @@ Lorsque les utilisateurs accèdent à l’mf pour la première fois, ils sont in
 
 Le contrôle d’accès basé sur un rôle (RBAC) accorde l’accès aux ressources ou aux informations en fonction des rôles utilisateur. L’accès aux données et paramètres du client dans le centre d’informations est limité à des rôles spécifiques du programme fournisseur de solutions Cloud (CSP). Pour configurer des rôles RBAC dans le contrôle d’accès, nous vous recommandons d’utiliser des privilèges d’administration délégués granulaires (GDAP) pour implémenter des affectations granulaires pour les utilisateurs. Des privilèges d’administration délégués (DAP) sont toujours requis pour que le client puisse intégrer correctement, mais les clients GDAP uniquement pourront bientôt intégrer sans dépendance sur DAP. Les autorisations GDAP prévalent lorsque DAP et GDAP coexistent pour un client. 
 
-Pour commencer à travailler avec GDAP, voir [Vue d’ensemble des autorisations dans Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
+Pour configurer une relation GDAP, voir [Obtenir des autorisations d’administrateur granulaires pour gérer le service d’un client](/partner-center/gdap-obtain-admin-permissions-to-manage-customer). Pour plus d’informations sur les rôles que nous vous recommandons d’utiliser, voir Vue d’ensemble des [autorisations dans Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 
 Les techniciens MSP peuvent également accéder à l’aide de rôles d’agent d’administration ou d’agent du service d’aide via des privilèges d’administration délégués( DAP).
 
-Pour les actions non liées au client dans le domaine de l’intégration (par exemple, l’intégration, la désactivation/réactivation par le client, la gestion des balises, l’examen des journaux), les techniciens MSP doivent avoir un rôle attribué dans le client partenaire. Le lien de l’article précédent détaille ces rôles et leurs autorisations dans le Journal.
+Pour les actions non liées au client dans le domaine de l’intégration (par exemple, l’intégration, la désactivation/réactivation par le client, la gestion des balises, l’examen des journaux), les techniciens MSP doivent avoir un rôle attribué dans le client partenaire. Voir [Vue d’ensemble des autorisations Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) pour plus d’informations sur les rôles de client partenaire.
 
 ## <a name="set-up-azure-ad-privileged-identity-management-pim"></a>Configurer Azure AD Privileged Identity Management (PIM)
 
@@ -69,7 +69,7 @@ Les MSP peuvent utiliser l’accès conditionnel basé sur les risques pour s’
 > [!NOTE]
 > L’accès conditionnel nécessite Azure AD Premium P2 licence dans le client partenaire. Pour configurer l’accès conditionnel, voir [Configuring Azure Active Directory Conditional Access](/appcenter/general/configuring-aad-conditional-access).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Autorisations de réinitialisation de mot](/azure/active-directory/roles/permissions-reference#password-reset-permissions) de passe (article)\
 [Conditions requises pour Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\

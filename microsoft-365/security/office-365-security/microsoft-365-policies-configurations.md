@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-zero-trust
 ms.technology: mdo
-ms.openlocfilehash: 7e8fbeab380ceac3531e2a288fb5e8fb5f43e166
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 058eaded0e46a4dfe86bd2cdc5624ea0963f34ea
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682370"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474638"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>Configurations des identités Zéro confiance et de l’accès aux appareils
 
@@ -39,7 +39,7 @@ Pour faire face à ce nouveau monde de l’informatique, Microsoft recommande vi
 
 - Utiliser l’accès selon le privilège minimum
 
-  Limitez l’accès des utilisateurs avec un accès juste-à-temps et juste-suffisant (JIT/JEA), des stratégies adaptatives basées sur les risques et la protection des données.  
+  Limitez l’accès des utilisateurs avec un accès juste-à-temps et juste-suffisant (JIT/JEA), des stratégies adaptatives basées sur les risques et la protection des données.
 
 - Supposer une violation
 
@@ -112,7 +112,7 @@ Chaque secteur d’activité possède aussi sa propre réglementation spécialis
 - **Enterprise** : certains clients ont un sous-ensemble de données qui doivent être protégées à des niveaux supérieurs, ou ils peuvent exiger que toutes les données soient protégées à un niveau supérieur. Vous pouvez appliquer une protection accrue à tous les ensembles de données ou à des jeux de données spécifiques dans votre Microsoft 365 de données. Nous vous recommandons de protéger les identités et les appareils qui accèdent à des données sensibles avec des niveaux de sécurité comparables.
 - **Sécurité spécialisée** : selon les besoins, quelques clients ont une petite quantité de données hautement classifiées, constituent des secrets commerciaux ou sont réglementées. Microsoft fournit des fonctionnalités pour aider ces clients à répondre à ces exigences, notamment une protection supplémentaire pour les identités et les appareils.
 
-![Cône de sécurité : tous les clients > certains clients > quelques clients](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png" alt-text="Cône de sécurité" lightbox="../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png":::
 
 Ces instructions vous montrent comment implémenter la protection de confiance zéro pour les identités et les appareils pour chacun de ces niveaux de protection. Utilisez ces conseils au minimum pour votre organisation et ajustez les stratégies pour répondre aux besoins spécifiques de votre organisation.
 
@@ -131,7 +131,7 @@ En outre, consultez la solution [Déployer la protection des informations pour l
 
 L’implémentation d’une stratégie de sécurité nécessite des compromis entre sécurité et productivité. Il est utile d’évaluer l’impact de chaque décision sur l’équilibre de la sécurité, des fonctionnalités et de la facilité d’utilisation.
 
-![Équilibrage de la sécurité, des fonctionnalités et de la facilité d’utilisation.](../../media/microsoft-365-policies-configurations/security-triad.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/security-triad.png" alt-text="L’équilibrage de la sécurité, des fonctionnalités et de la facilité d’utilisation" lightbox="../../media/microsoft-365-policies-configurations/security-triad.png":::
 
 Les recommandations fournies sont basées sur les principes suivants :
 
@@ -160,7 +160,7 @@ Azure AD offre une suite complète de fonctionnalités de gestion des identités
 
 Voici les composants de l’accès aux appareils et aux identités de confiance zéro, notamment Intune et Azure AD objets, paramètres et sous-services.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-components.png" alt-text="Composants de l’accès aux identités et appareils de confiance zéro." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-components.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-components.png" alt-text="Composants de l’accès aux identités et appareils de confiance zéro" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-components.png":::
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -226,7 +226,7 @@ Microsoft recommande de ne pas créer de jeux de stratégies qui s’appliquent 
 
 ## <a name="steps-to-configure-zero-trust-identity-and-device-access"></a>Étapes de configuration de l’accès aux identités et appareils Avec confiance zéro
 
-![Étapes de configuration de l’accès aux identités et appareils avec confiance zéro.](../../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps.png" alt-text="Étapes de configuration de l’accès aux identités et appareils avec confiance zéro" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps.png":::
 
 1. Configurez les fonctionnalités d’identité prérequises et leurs paramètres.
 2. Configurez les stratégies communes d’accès conditionnel aux identités et aux accès.

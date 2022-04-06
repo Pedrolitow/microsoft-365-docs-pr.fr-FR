@@ -1,5 +1,5 @@
 ---
-title: Piloter Microsoft Defender pour les applications cloud avec Microsoft 365 Defender
+title: Pilote Microsoft Defender for Cloud Apps avec Microsoft 365 Defender
 description: Configurer votre laboratoire d Microsoft 365 Defender d’essai ou votre environnement pilote pour tester et tester la solution de sécurité conçue pour protéger les appareils, l’identité, les données et les applications.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,55 +21,54 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9961caee57fade58581e8ddb8b9de7ea0d6aafd8
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 73601660fc4b7ee2f58748d7e59a10aa53157745
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498558"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64570126"
 ---
-# <a name="pilot-microsoft-defender-for-cloud-apps-with-microsoft-365-defender"></a>Piloter Microsoft Defender pour les applications cloud avec Microsoft 365 Defender
+# <a name="pilot-microsoft-defender-for-cloud-apps-with-microsoft-365-defender"></a>Pilote Microsoft Defender for Cloud Apps avec Microsoft 365 Defender
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
-Cet article est [l’étape 3 sur 3](eval-defender-mcas-overview.md) dans le processus de configuration de l’environnement d’évaluation de Microsoft Defender pour les applications cloud. Pour plus d’informations sur ce processus, consultez [l’article de présentation](eval-defender-mcas-overview.md).
+Cet article est [l’étape 3 sur 3](eval-defender-mcas-overview.md) dans le processus de configuration de l’environnement d’évaluation pour Microsoft Defender for Cloud Apps. Pour plus d’informations sur ce processus, consultez [l’article de présentation](eval-defender-mcas-overview.md).
 
-Utilisez les étapes suivantes pour configurer le pilote de Microsoft Defender pour les applications cloud.
+Utilisez les étapes suivantes pour configurer et configurer le pilote pour Microsoft Defender for Cloud Apps.
 
 
-:::image type="content" source="../../media/defender/m365-defender-mcas-pilot-steps.png" alt-text="Étapes de pilotage de Microsoft Defender pour les applications cloud" lightbox="../../media/defender/m365-defender-mcas-pilot-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-mcas-pilot-steps.png" alt-text="Étapes de pilotage du Microsoft Defender for Cloud Apps" lightbox="../../media/defender/m365-defender-mcas-pilot-steps.png":::
 - [Étape 1. Créer le groupe pilote : étendue de votre déploiement pilote à certains groupes d’utilisateurs](#step-1-create-the-pilot-groupscope-your-pilot-deployment-to-certain-user-groups)
 - [Étape 2. Configurer la protection — Contrôle d’application d’accès conditionnel](#step-2-configure-protectionconditional-access-app-control)
 - [Étape 3. Tester les fonctionnalités : parcourir les didacticiels pour protéger votre environnement](#step-3-try-out-capabilitieswalk-through-tutorials-for-protecting-your-environment) 
 
-
 ## <a name="step-1-create-the-pilot-groupscope-your-pilot-deployment-to-certain-user-groups"></a>Étape 1. Créer le groupe pilote : étendue de votre déploiement pilote à certains groupes d’utilisateurs
 
-Microsoft Defender pour les applications cloud vous permet d’étenduer votre déploiement. L’application d’une portée vous permet de sélectionner certains groupes d’utilisateurs à surveiller pour les applications ou à exclure de la surveillance. Vous pouvez inclure ou exclure des groupes d’utilisateurs. Pour l’étendue de votre déploiement pilote, [consultez La portée du déploiement](/cloud-app-security/scoped-deployment).
+Microsoft Defender for Cloud Apps vous permet d’élargir l’étendue de votre déploiement. L’application d’une portée vous permet de sélectionner certains groupes d’utilisateurs à surveiller pour les applications ou à exclure de la surveillance. Vous pouvez inclure ou exclure des groupes d’utilisateurs. Pour l’étendue de votre déploiement pilote, [consultez La portée du déploiement](/cloud-app-security/scoped-deployment).
 
 
-## <a name="step-2-configure-protectionconditional-access-app-control"></a>Étape 2. Configurer la protection — Contrôle d’application d’accès conditionnel
+## <a name="step-2-configure-protectionconditional-access-app-control"></a>Étape 2. Configurer la protection — Contrôle d’application d’accès conditionnel
 
 L’une des protections les plus puissantes que vous pouvez configurer est le contrôle d’application d’accès conditionnel. Cette protection nécessite une intégration avec Azure Active Directory (Azure AD). Il vous permet d’appliquer des stratégies d’accès conditionnel, y compris des stratégies associées (comme la nécessité d’appareils sains), aux applications cloud que vous avez prises en compte. 
 
-La première étape de l’utilisation de Microsoft Defender pour les applications cloud pour gérer les applications SaaS consiste à découvrir ces applications, puis à les ajouter à votre client Azure AD client. Si vous avez besoin d’aide pour la découverte, [consultez Découvrir et gérer les applications SaaS dans votre réseau](/cloud-app-security/tutorial-shadow-it). Une fois que vous avez découvert les applications, [ajoutez ces applications à votre Azure AD client](/azure/active-directory/manage-apps/add-application-portal).
+La première étape de l Microsoft Defender for Cloud Apps pour gérer les applications SaaS consiste à découvrir ces applications, puis à les ajouter à votre Azure AD client. Si vous avez besoin d’aide pour la découverte, [consultez Découvrir et gérer les applications SaaS dans votre réseau](/cloud-app-security/tutorial-shadow-it). Une fois que vous avez découvert les applications, [ajoutez ces applications à votre Azure AD client](/azure/active-directory/manage-apps/add-application-portal).
 
 Vous pouvez commencer à gérer ces applications en exécutant les tâches suivantes :
 
-- Tout d’abord, Azure AD, créez une stratégie d’accès conditionnel et configurez-la pour « Utiliser le contrôle d’application d’accès conditionnel ». Cette configuration permet de rediriger la demande vers Defender pour les applications cloud. Vous pouvez créer une stratégie et ajouter toutes les applications SaaS à cette stratégie.
-- Ensuite, dans Defender pour les applications cloud, créez des stratégies de session. Créez une stratégie pour chaque contrôle que vous souhaitez appliquer.
+- Tout d’abord, Azure AD, créez une stratégie d’accès conditionnel et configurez-la pour « Utiliser le contrôle d’application d’accès conditionnel ». Cette configuration permet de rediriger la demande vers Defender pour le cloud Apps. Vous pouvez créer une stratégie et ajouter toutes les applications SaaS à cette stratégie.
+- Ensuite, dans Defender pour le cloud applications, créez des stratégies de session. Créez une stratégie pour chaque contrôle que vous souhaitez appliquer.
 
-Pour plus d’informations, y compris sur les applications et les clients pris en charge, voir Protéger les applications [avec Microsoft Defender pour](/cloud-app-security/proxy-intro-aad) le contrôle d’accès conditionnel aux applications cloud. 
+Pour plus d’informations, notamment sur les applications et les clients pris en charge, voir Protéger les applications [Microsoft Defender for Cloud Apps contrôle d’application d’accès conditionnel](/cloud-app-security/proxy-intro-aad). 
 
-Pour obtenir des exemples de stratégies, voir [Stratégies Recommandées de Microsoft Defender pour les applications cloud pour les applications SaaS](../office-365-security/mcas-saas-access-policies.md). Ces stratégies s’appuient [](../office-365-security/microsoft-365-policies-configurations.md) sur un ensemble de stratégies communes d’accès aux identités et aux appareils qui sont recommandées comme point de départ pour tous les clients. 
+Pour obtenir des exemples de stratégies, [voir Stratégies Microsoft Defender for Cloud Apps recommandées pour les applications SaaS](../office-365-security/mcas-saas-access-policies.md). Ces stratégies s’appuient [](../office-365-security/microsoft-365-policies-configurations.md) sur un ensemble de stratégies communes d’accès aux identités et aux appareils qui sont recommandées comme point de départ pour tous les clients. 
 
 ## <a name="step-3-try-out-capabilitieswalk-through-tutorials-for-protecting-your-environment"></a>Étape 3. Tester les fonctionnalités : parcourir les didacticiels pour protéger votre environnement 
 
-La documentation de Microsoft Defender pour les applications cloud inclut une série de didacticiels pour vous aider à découvrir les risques et à protéger votre environnement. 
+La documentation Microsoft Defender for Cloud Apps comprend une série de didacticiels pour vous aider à découvrir les risques et à protéger votre environnement. 
 
-Essayez les didacticiels Defender pour les applications cloud :
+Essayez les didacticiels Defender pour le cloud applications :
 
 - [Détecter les activités suspectes de l’utilisateur](/cloud-app-security/tutorial-suspicious-activity)
 - [Examiner les utilisateurs à risque](/cloud-app-security/tutorial-ueba)
@@ -80,12 +79,12 @@ Essayez les didacticiels Defender pour les applications cloud :
 - [Protéger vos fichiers avec la mise en quarantaine de l’administrateur](/cloud-app-security/use-case-admin-quarantine)
 - [Exiger l’authentification par étapes en cas d’action risquée](/cloud-app-security/tutorial-step-up-authentication)
 
-Pour plus d’informations sur le hunting avancé dans microsoft Defender pour les données d’applications cloud, voir la [vidéo](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa).
+Pour plus d’informations sur le Microsoft Defender for Cloud Apps de recherche avancée, voir la [vidéo](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa).
 
 ## <a name="next-steps"></a>Prochaines étapes
 
 [Examiner et répondre à l’Microsoft 365 Defender dans un environnement pilote](eval-defender-investigate-respond.md)
 
-Revenir à la vue d’ensemble [de l’évaluation de Microsoft Defender pour les applications cloud](eval-defender-mcas-overview.md)
+Revenir à la vue d’ensemble de [l’Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)
 
 Revenir à la vue d’ensemble [de l’évaluation et de la Microsoft 365 Defender](eval-overview.md)

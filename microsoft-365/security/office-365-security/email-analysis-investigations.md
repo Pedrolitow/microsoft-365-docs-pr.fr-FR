@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5c4d1be31742d21f6e7919a8db4a3d2aff75f66e
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 49a244e948da14e328ab3db64dc495ab6e5d6dd4
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775387"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468014"
 ---
 # <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a>Analyse du courrier électronique dans les enquêtes pour Microsoft Defender pour Office 365
 
@@ -74,7 +74,7 @@ Pour s’assurer que les actions d’examen sont à jour, toute enquête qui a d
 
 Les preuves basées sur un e-mail dans **l’onglet** Preuve et réponse pour un incident affichent désormais les informations suivantes.
 
-:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example.png" alt-text="Exemple d’informations d’analyse de courrier électronique dans Evidence and Response." lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example.png":::
+:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example.png" alt-text="Informations sur l’analyse du courrier électronique dans Preuve et réponse" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example.png":::
 
 À partir des callouts numéroées dans la figure :
 
@@ -91,10 +91,10 @@ Les preuves basées sur un e-mail dans **l’onglet** Preuve et réponse pour un
 
 Pour les clusters de messagerie ou de messagerie dans l’onglet **Entités** d’un incident, **prevented** signifie qu’il n’y avait aucun courrier malveillant dans la boîte aux lettres pour cet élément (courrier ou cluster). Voici un exemple.
 
-:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="Exemple d’e-mail interdit." lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
+:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="E-mail interdit." lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
 
 Dans cet exemple, le courrier électronique est malveillant, mais pas dans une boîte aux lettres.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Afficher les actions de correction en attente ou terminées](air-review-approve-pending-completed-actions.md)

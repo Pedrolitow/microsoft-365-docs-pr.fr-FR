@@ -9,12 +9,12 @@ ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1d589f2eb34a66dda47532394b987bd4b00b86bf
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c960f0cc1726155e733a0e88386fa7788cfc35e0
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683272"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468058"
 ---
 # <a name="defender-for-identity-entity-tags-in-microsoft-365-defender"></a>Balises d’entité Defender for Identity dans Microsoft 365 Defender
 
@@ -34,11 +34,11 @@ Dans Microsoft 365 Defender, vous pouvez définir trois types de balises d’ent
 
 Pour définir ces balises, dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, **Paramètres puis** **Identités**.
 
-![Go to Paramètres, then Identities.](../../media/defender-identity/settings-identities.png)
+:::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="Option Identités sous la colonne Nom dans la Paramètres page" lightbox="../../media/defender-identity/settings-identities.png":::
 
 Les paramètres de balise s’affichent sous les **balises Entity**.
 
-![Types de paramètres de balise.](../../media/defender-identity/tag-settings.png)
+:::image type="content" source="../../media/defender-identity/tag-settings.png" alt-text="Volet Des balises d’entité" lightbox="../../media/defender-identity/tag-settings.png":::
 
 Pour définir chaque type de balise, suivez les instructions ci-dessous.
 
@@ -50,15 +50,15 @@ Vous pouvez également marquer manuellement les utilisateurs, les appareils ou l
 
 1. Sélectionnez **Sensible**. Vous verrez ensuite les utilisateurs **, périphériques** et groupes sensibles **existants**.
 
-    ![Entités sensibles.](../../media/defender-identity/sensitive-entities.png)
+   :::image type="content" source="../../media/defender-identity/sensitive-entities.png" alt-text="Onglet Appareils dans l’élément de menu Entités sensibles" lightbox="../../media/defender-identity/sensitive-entities.png":::
 
 1. Sous chaque catégorie, **sélectionnez Balise...** pour baliser ce type d’entité. Par exemple, sous **Groupes**, sélectionnez **Groupes de balises.** Un volet s’ouvre avec les groupes que vous pouvez sélectionner pour baliser. Pour rechercher un groupe, entrez son nom dans la zone de recherche.
 
-    ![Ajoutez des groupes.](../../media/defender-identity/add-groups.png)
+   :::image type="content" source="../../media/defender-identity/add-groups.png" alt-text="Option d’ajout d’un groupe" lightbox="../../media/defender-identity/add-groups.png":::
 
 1. Sélectionnez votre groupe, puis cliquez sur **Ajouter une sélection.**
 
-    ![Ajoutez une sélection.](../../media/defender-identity/add-selection.png)
+   :::image type="content" source="../../media/defender-identity/add-selection.png" alt-text="Option Ajouter une sélection" lightbox="../../media/defender-identity/add-selection.png":::
 
 ## <a name="honeytoken-tags"></a>Balises Honeytoken
 
@@ -72,11 +72,11 @@ Vous pouvez marquer des utilisateurs ou des appareils avec **la balise Honeytoke
 
 1. Sous chaque catégorie, **sélectionnez Balise...** pour baliser ce type d’entité. Par exemple, sous **Utilisateurs**, sélectionnez **Utilisateurs de balise.** Un volet s’ouvre avec les groupes que vous pouvez sélectionner pour baliser. Pour rechercher un groupe, entrez son nom dans la zone de recherche.
 
-    ![Ajoutez des utilisateurs.](../../media/defender-identity/add-users.png)
+   :::image type="content" source="../../media/defender-identity/add-users.png" alt-text="Option d’ajout d’utilisateurs" lightbox="../../media/defender-identity/add-users.png":::
 
 1. Sélectionnez votre utilisateur, puis cliquez sur **Ajouter une sélection.**
 
-    ![Ajoutez l’utilisateur sélectionné.](../../media/defender-identity/add-selected-user.png)
+   :::image type="content" source="../../media/defender-identity/add-selected-user.png" alt-text="Option d’ajout d’un utilisateur sélectionné" lightbox="../../media/defender-identity/add-selected-user.png":::
 
 ## <a name="exchange-server-tags"></a>Exchange balises de serveur
 
@@ -84,15 +84,15 @@ Defender pour l’identité considère Exchange serveurs comme des ressources à
 
 1. **Sélectionnez Exchange serveur.** Vous verrez ensuite les appareils existants étiquetés avec la **balise Exchange serveur**.
 
-    ![Exchange serveurs.](../../media/defender-identity/exchange-servers.png)
+   :::image type="content" source="../../media/defender-identity/exchange-servers.png" alt-text="L’Exchange de menu du serveur" lightbox="../../media/defender-identity/exchange-servers.png":::
 
 1. Pour marquer un appareil comme un serveur Exchange, sélectionnez **Balises**.  Un volet s’ouvre avec les appareils que vous pouvez sélectionner pour baliser. Pour rechercher un appareil, entrez son nom dans la zone de recherche.
 
-    ![Ajoutez des appareils.](../../media/defender-identity/add-devices.png)
+   :::image type="content" source="../../media/defender-identity/add-devices.png" alt-text="Option d’ajout d’un appareil" lightbox="../../media/defender-identity/add-devices.png":::
 
 1. Sélectionnez votre appareil, puis cliquez sur **Ajouter une sélection.**
 
-    ![Sélectionnez l’appareil.](../../media/defender-identity/select-device.png)
+   :::image type="content" source="../../media/defender-identity/select-device.png" alt-text="Sélection d’un appareil" lightbox="../../media/defender-identity/select-device.png":::
 
 ## <a name="see-also"></a>Voir aussi
 

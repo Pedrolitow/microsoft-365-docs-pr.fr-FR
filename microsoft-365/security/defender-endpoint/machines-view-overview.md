@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b9275eba3e9131de7262155710a1b5d5e6493b20
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a9753cdc818aefdf33411bd237327310dfc512ab
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326664"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474748"
 ---
 # <a name="device-inventory"></a>Inventaire des appareils
 
@@ -34,7 +34,29 @@ ms.locfileid: "63326664"
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
-L’inventaire des appareils vous permet de découvrir, d’explorer et d’examiner les appareils de votre organisation, notamment les ordinateurs, les serveurs, les appareils mobiles, les appliances réseau et les appareils IoT. Il peut vous aider à découvrir des appareils inconnus et à identifier les lacunes de gestion des appareils dans votre réseau.
+La **liste Appareils affiche** la liste des appareils de votre réseau sur lequel des alertes ont été générées. Par défaut, la file d’attente affiche les appareils visibles au cours des 30 derniers jours.
+
+En un coup d’œil, vous verrez des informations telles que le domaine, le niveau de risque, la plateforme du système d’exploitation et d’autres détails pour faciliter l’identification des appareils les plus exposés.
+
+Vous pouvez choisir parmi plusieurs options pour personnaliser l’affichage liste des appareils. Dans la barre de navigation supérieure, vous pouvez :
+
+- Ajouter ou supprimer des colonnes
+- Exporter la liste entière au format CSV
+- Sélectionner le nombre d’éléments à afficher par page
+- Appliquer des filtres
+
+Pendant le processus d’intégration, la liste **Appareils** est progressivement remplie avec les appareils qui commencent à signaler les données de capteur. Utilisez cette vue pour suivre vos points de terminaison intégrés lors de leur mise en ligne ou téléchargez la liste complète des points de terminaison en tant que fichier CSV pour l’analyse hors connexion.
+
+> [!NOTE]
+> Si vous exportez la liste des appareils, elle contiendra tous les appareils de votre organisation. Le téléchargement peut prendre beaucoup de temps, en fonction de la taille de votre organisation. L’exportation de la liste au format CSV affiche les données de manière non filtrée. Le fichier CSV inclut tous les appareils de l’organisation, quel que soit le filtrage appliqué dans l’affichage lui-même.
+
+:::image type="content" source="images/device-inventory.png" alt-text="Liste des appareils" lightbox="images/device-inventory.png":::
+
+## <a name="sort-and-filter-the-device-list"></a>Trier et filtrer la liste des appareils
+
+Vous pouvez appliquer les filtres suivants pour limiter la liste des alertes et obtenir une vue plus centrée.
+
+### <a name="device-name"></a>Nom du périphérique
 
 Pendant le processus d’intégration de Microsoft Defender pour les points de terminaison, les appareils intégrés à MDE sont progressivement intégrés dans l’inventaire des appareils à mesure qu’ils commencent à signaler les données du capteur. Ensuite, l’inventaire des appareils est rempli par les appareils qui sont découverts dans votre réseau via le processus de découverte d’appareils. L’inventaire des appareils possède trois onglets qui listent les appareils par :
 

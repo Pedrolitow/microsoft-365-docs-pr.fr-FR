@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b707a6f684df6b9888fb8f2d50c4bba9a6dd3195
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 71755add523b3426d144f748ab3582e3a3975dc6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324170"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475232"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Examiner les appareils de la liste Microsoft Defender pour les appareils de point de terminaison
 
@@ -53,7 +53,7 @@ Lorsque vous examinez un appareil spécifique, vous voyez :
 - Onglets (vue d’ensemble, alertes, chronologie, recommandations en matière de sécurité, inventaire logiciel, vulnérabilités découvertes, ko manquants)
 - Cartes (alertes actives, utilisateurs connectés, évaluation de la sécurité)
 
-![Image de l’affichage de l’appareil.](images/specific-device.png)
+:::image type="content" source="images/specific-device.png" alt-text="Affichage de l’appareil" lightbox="images/specific-device.png":::
 
 > [!NOTE]
 > En raison des contraintes de produit, le profil d’appareil ne prend pas en compte toutes les cybermenaces lors de la détermination de la période « Dernière vue » (comme indiqué sur la page de l’appareil également).
@@ -87,17 +87,17 @@ Pour plus d’informations, voir [Examiner les entités utilisateur](investigate
 
 Les onglets fournissent des informations pertinentes sur la sécurité et la prévention des menaces relatives à l’appareil. Dans chaque onglet, vous pouvez personnaliser les colonnes affichées en sélectionnant  Personnaliser les colonnes dans la barre au-dessus des en-têtes de colonne.
 
-### <a name="overview"></a>Vue d’ensemble
+### <a name="overview"></a>Présentation
 
 **L’onglet** Vue d’ensemble affiche les [cartes](#cards) pour les alertes actives, les utilisateurs connectés et l’évaluation de la sécurité.
 
-![Image de l’onglet Vue d’ensemble sur la page de l’appareil.](images/overview-device.png)
+:::image type="content" source="images/overview-device.png" alt-text="Onglet Vue d’ensemble sur la page de l’appareil" lightbox="images/overview-device.png":::
 
 ### <a name="alerts"></a>Alertes
 
 **L’onglet Alertes** fournit une liste des alertes associées à l’appareil. Cette liste est une version filtrée de la file d’attente des [alertes](alerts-queue.md) et affiche une brève description de l’alerte, de la gravité (élevée, moyenne, faible, informationnelle), de l’état dans la file d’attente (nouveau, en cours, résolu), de la classification (non définie, false alerte, alerte vraie), de l’état d’investigation, de la catégorie d’alerte, de la personne qui résout l’alerte et de la dernière activité. Vous pouvez également filtrer les alertes.
 
-![Image des alertes liées à l’appareil.](images/alerts-device.png)
+:::image type="content" source="images/alerts-device.png" alt-text="Onglet des alertes associées à l’appareil" lightbox="images/alerts-device.png":::
 
 Lorsque l’icône de cercle à gauche d’une alerte est sélectionnée, un volant s’affiche. À partir de ce panneau, vous pouvez gérer l’alerte et afficher plus de détails, tels que le numéro d’incident et les appareils associés. Plusieurs alertes peuvent être sélectionnées à la fois.
 
@@ -118,7 +118,7 @@ La chronologie vous permet également d’aller de manière sélective dans les 
 > - [5031](/windows/security/threat-protection/auditing/event-5031) : application bloquée pour accepter les connexions entrantes sur le réseau
 > - [5157](/windows/security/threat-protection/auditing/event-5157) : connexion bloquée
 
-![Image de la chronologie de l’appareil avec des événements.](images/timeline-device.png)
+:::image type="content" source="images/timeline-device.png" alt-text="Chronologie de l’appareil avec événements" lightbox="images/timeline-device.png":::
 
 Voici quelques-unes des fonctionnalités :
 
@@ -146,30 +146,30 @@ Sélectionnez un événement pour afficher les détails pertinents sur cet évé
 
 Pour examiner plus en détail l’événement et les événements connexes, [](advanced-hunting-overview.md) vous pouvez rapidement exécuter une requête de recherche avancée en sélectionnant **Hunt pour les événements connexes**. La requête retourne l’événement sélectionné et la liste des autres événements qui se sont produits au même moment sur le même point de terminaison.
 
-![Image du panneau Détails de l’événement.](images/event-details.png)
+:::image type="content" source="images/event-details.png" alt-text="Panneau Détails de l’événement" lightbox="images/event-details.png":::
 
 ### <a name="security-recommendations"></a>Recommandations de sécurité
 
 **Des recommandations en matière** de sécurité sont générées à partir de Microsoft Defender pour la fonctionnalité gestion des menaces [& vulnérabilités du point de](tvm-dashboard-insights.md) terminaison. La sélection d’une recommandation affiche un panneau dans lequel vous pouvez afficher des détails pertinents, tels que la description de la recommandation et les risques potentiels associés à sa non-adoption. Pour plus [d’informations, voir](tvm-security-recommendation.md) recommandations en matière de sécurité.
 
-![Image de l’onglet Recommandations de sécurité.](images/security-recommendations-device.png)
+:::image type="content" source="images/security-recommendations-device.png" alt-text="Onglet Recommandations en matière de sécurité" lightbox="images/security-recommendations-device.png":::
 
 ### <a name="software-inventory"></a>Inventaire de logiciels
 
 **L’onglet Inventaire** logiciel vous permet d’afficher le logiciel sur l’appareil, ainsi que les faiblesses ou menaces. La sélection du nom du logiciel vous permet d’afficher les recommandations de sécurité, les vulnérabilités découvertes, les appareils installés et la distribution des versions sur la page de détails du logiciel. Voir [l’inventaire logiciel](tvm-software-inventory.md) pour plus d’informations
 
-![Image de l’onglet Inventaire logiciel.](images/software-inventory-device.png)
+:::image type="content" source="images/software-inventory-device.png" alt-text="Onglet Inventaire logiciel" lightbox="images/software-inventory-device.png":::
 
 ### <a name="discovered-vulnerabilities"></a>Vulnérabilités découvertes
 
 **L’onglet Vulnérabilités** découvertes affiche le nom, la gravité et les informations sur les menaces des vulnérabilités découvertes sur l’appareil. La sélection de vulnérabilités spécifiques affiche une description et des détails.
 
-![Image de l’onglet Vulnérabilités découvertes.](images/discovered-vulnerabilities-device.png)
+:::image type="content" source="images/discovered-vulnerabilities-device.png" alt-text="Onglet Vulnérabilités découvertes" lightbox="images/discovered-vulnerabilities-device.png":::
 
 ### <a name="missing-kbs"></a>Ko manquants
 **L’onglet Ko manquant répertorie** les mises à jour de sécurité manquantes pour l’appareil.
 
-![Image de l’onglet kbs manquant.](images/missing-kbs-device.png)
+:::image type="content" source="images/missing-kbs-device.png" alt-text="Onglet Ko manquant" lightbox="images/missing-kbs-device.png":::
 
 ## <a name="cards"></a>Cartes
 
@@ -177,7 +177,7 @@ Pour examiner plus en détail l’événement et les événements connexes, [](a
 
 La carte **Azure Advanced Threat Protection** affiche une vue d’ensemble des alertes liées à l’appareil et à leur niveau de risque, si vous avez activé la fonctionnalité Microsoft Defender pour l’identité et qu’il existe des alertes actives. Plus d’informations sont disponibles dans l’exercice « Alertes ».
 
-![Image de la carte d’alerte active.](images/risk-level-small.png)
+:::image type="content" source="images/risk-level-small.png" alt-text="Carte d’alertes active" lightbox="images/risk-level-small.png":::
 
 > [!NOTE]
 > Vous devez activer l’intégration sur Microsoft Defender pour l’identité et Defender pour le point de terminaison pour utiliser cette fonctionnalité. Dans Defender pour point de terminaison, vous pouvez activer cette fonctionnalité dans les fonctionnalités avancées. Pour plus d’informations sur l’activer, voir [Activer les fonctionnalités avancées](advanced-features.md).
@@ -186,7 +186,7 @@ La carte **Azure Advanced Threat Protection** affiche une vue d’ensemble des a
 
 La **carte Utilisateurs** connectés indique le nombre d’utilisateurs connectés au cours des 30 derniers jours, ainsi que les utilisateurs les plus fréquents et les moins fréquents. La sélection du lien « Afficher tous les utilisateurs » ouvre le volet d’informations, qui affiche des informations telles que le type d’utilisateur, le type de connexion et le moment où l’utilisateur a été vu pour la première fois et pour la dernière fois. Pour plus d’informations, voir [Examiner les entités utilisateur](investigate-user.md).
 
-![Image du volet d’informations de l’utilisateur.](images/logged-on-users.png)
+:::image type="content" source="images/logged-on-users.png" alt-text="Volet d’informations de l’utilisateur" lightbox="images/logged-on-users.png":::
 
 > [!NOTE]
 > La valeur utilisateur « la plus fréquente » est calculée uniquement en fonction des preuves des utilisateurs qui ont ouvert une session interactive.
@@ -196,9 +196,9 @@ La **carte Utilisateurs** connectés indique le nombre d’utilisateurs connect�
 
 La **carte d’évaluation de** la sécurité indique le niveau d’exposition global, les recommandations en matière de sécurité, les logiciels installés et les vulnérabilités découvertes. Le niveau d’exposition d’un appareil est déterminé par l’impact cumulé de ses recommandations de sécurité en attente.
 
-![Image de la carte d’évaluation de la sécurité.](images/security-assessments.png)
+:::image type="content" source="images/security-assessments.png" alt-text="Carte d’évaluation de la sécurité" lightbox="images/security-assessments.png":::
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)

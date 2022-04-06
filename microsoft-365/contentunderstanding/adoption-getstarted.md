@@ -1,8 +1,8 @@
 ---
-title: 'Adoption SharePoint Syntex Microsoft : commencer'
-description: Découvrez comment utiliser et implémenter des SharePoint Syntex votre organisation pour vous aider à résoudre vos problèmes d’entreprise.
-ms.author: samanro
-author: samanro
+title: Commencer à piloter l’adoption de Microsoft SharePoint Syntex
+description: Découvrez comment utiliser et implémenter des SharePoint Syntex votre organisation pour simplifier vos processus d’entreprise.
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.date: ''
 audience: admin
@@ -14,22 +14,22 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: 172c0a681bc8e7c7867e4bcba1c75f94cfc12e60
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 40af6061029785705d262f3b8c5134531e76885f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193158"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467640"
 ---
-# <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Adoption SharePoint Syntex Microsoft : commencer
+# <a name="get-started-driving-adoption-of-microsoft-sharepoint-syntex"></a>Commencer à piloter l’adoption de Microsoft SharePoint Syntex
 
 Pensez aux services de contenu intelligents disponibles dans SharePoint Syntex comme ayant trois parties :
 
-- **Compréhension du contenu :** Créez des modèles d’IA sans code pour classer et extraire des informations du contenu afin d’appliquer automatiquement les métadonnées pour la découverte et la réutilisation des connaissances. En savoir plus sur [la compréhension du contenu.](document-understanding-overview.md)
-- **Traitement de contenu :** Automatisez la capture, l’ingestion et la catégorisation du contenu et rationalisez les processus centrées sur le contenu à l’aide Power Automate. En savoir plus sur [le traitement du contenu.](form-processing-overview.md)
+- **Compréhension du contenu :** Créez des modèles d’IA sans code pour classer et extraire des informations du contenu afin d’appliquer automatiquement les métadonnées pour la découverte et la réutilisation des connaissances. En savoir plus sur [la compréhension du contenu](document-understanding-overview.md).
+- **Traitement de contenu :** Automatisez la capture, l’ingestion et la catégorisation du contenu et rationalisez les processus centrées sur le contenu à l’aide Power Automate. En savoir plus sur [le traitement du contenu](form-processing-overview.md).
 - **Conformité du contenu :** Contrôler et gérer le contenu pour améliorer la sécurité et la gouvernance avec l’intégration Protection des données Microsoft.
 
-Grâce aux nouvelles fonctionnalités et services d’IA, vous pouvez créer des applications de compréhension et de classification du contenu directement dans le flux de gestion de contenu à l’aide SharePoint Syntex. Il existe deux façons de comprendre votre contenu. Le type de modèle que vous utilisez est basé sur le format de fichier et la cas d’utilisation.
+Grâce aux nouvelles fonctionnalités et services d’IA, vous pouvez créer des applications de compréhension et de classification de contenu directement dans le flux de gestion de contenu à l’aide SharePoint Syntex. Il existe deux façons de comprendre votre contenu. Le type de modèle que vous utilisez est basé sur le format de fichier et la cas d’utilisation.
 
 | Traitement des formulaires | Compréhension de document |
 |:-------|:-------|
@@ -40,13 +40,13 @@ Grâce aux nouvelles fonctionnalités et services d’IA, vous pouvez créer des
 | Limité à une seule bibliothèque. | Peut être appliqué à plusieurs bibliothèques. |
 | Formation au format PDF, JPG, PNG, total 50 Mo/500 pp. | Entraînez-vous sur 5 à 10 fichiers PDF, Office ou courrier électronique, avec des exemples négatifs. |
 
-Pour une comparaison plus complète des fonctionnalités, voir Différence entre la compréhension des documents et [les modèles de traitement des formulaires.](difference-between-document-understanding-and-form-processing-model.md)
+Pour une comparaison plus complète des fonctionnalités, voir Différence entre la [compréhension des documents et les modèles de traitement des formulaires](difference-between-document-understanding-and-form-processing-model.md).
 
 ## <a name="identify-pilot-business-scenarios-to-optimize"></a>Identifier les scénarios d’entreprise pilote pour optimiser
 
 Pour vous préparer à l’utilisation SharePoint Syntex dans votre organisation, vous devez d’abord comprendre les scénarios dans lesquels il sera utile. Le « pourquoi » permet de déterminer le modèle qui sera nécessaire et comment structurer votre organisation en fonction de l’endroit où le modèle sera appliqué. Voici quelques scénarios dans lequel la compréhension des documents peut aider votre organisation :
 
-- **Traitement de contenu :** Traiter des contrats, des instructions de travail et d’autres documents de type formulaire. Admission des formulaires, formation du modèle à comprendre et maque les champs, puis exécutez vos formulaires pour collecter automatiquement les données. Pour plus d’informations, voir [Vue d’ensemble du traitement des formulaires.](form-processing-overview.md)
+- **Traitement de contenu :** Traiter les contrats, les instructions de travail et d’autres documents de type formulaire. Admission des formulaires, formation du modèle à comprendre et maque les champs, puis exécutez vos formulaires pour collecter automatiquement les données. Pour plus d’informations, voir [Vue d’ensemble du traitement des formulaires](form-processing-overview.md).
 - **Analyse des factures :** Retirez les détails pertinents de vos factures et assurez-vous qu’elles sont conformes à la stratégie ou qu’elles sont traitées correctement.
 
 Réfléchissez aux façons dont SharePoint Syntex peut aider votre organisation :
@@ -64,7 +64,7 @@ Lorsque vous réfléchissez aux scénarios d’entreprise à prendre en compte, 
 
 Hiérarchiser les scénarios en fonction de l’impact et de la facilité d’implémentation. Faites en sorte que vos scénarios d’impact initiaux soient plus faciles à implémenter. Ne pas hiérarchiser les scénarios à faible impact qui sont difficiles à implémenter.
 
-Utilisez les [exemples de scénarios](adoption-scenarios.md) et les cas d’utilisation pour vous faire des idées sur la façon dont vous pouvez SharePoint Syntex dans votre organisation.
+Utilisez les [exemples de scénarios et les](adoption-scenarios.md) cas d’utilisation pour vous faire des idées sur la façon dont vous pouvez SharePoint Syntex dans votre organisation.
 
 ## <a name="identify-roles--responsibilities"></a>Identifier les rôles & responsabilités
 
@@ -72,11 +72,11 @@ Déterminez qui dans votre organisation créera et gérera les modèles. Les rô
 
 | Administrateur/SharePoint d’informations | Administrateur Power Platform | Responsables d’informations | Propriétaire du modèle |
 |:-------|:-------|:-------|:-------|
-| Rôle AAD| Rôle AAD | Rôle AAD | Champions  |
+| AAD rôle| AAD rôle | AAD rôle | Champions |
 | Configurer le traitement des formulaires | Configurer l’environnement dataverse pour le traitement des formulaires | Recueillir des cas d’utilisation | Recueillir des cas d’utilisation professionnelle |
 | Gérer les centres de contenu et les autorisations| Acheter et allouer des crédits AIB | Établir les meilleures pratiques et examiner l’analyse du modèle | Créer et appliquer des modèles |
 
-Le gestionnaire de connaissances, le propriétaire des processus d’entreprise et le propriétaire du modèle de contenu créent des exemples de modèles et l’adoption de champion dans l’organisation.
+Le gestionnaire de connaissances, le propriétaire des processus métiers et le propriétaire du modèle de contenu créent des exemples de modèles et l’adoption de champion dans l’organisation.
 Autres personnes impliquées : administrateur de conformité, responsables de taxonomie.
 
 Où créeront-ils et appliqueront-ils les modèles ? Existe-t-il des processus ou des référentiels existants qui pourraient être améliorés ?
@@ -121,9 +121,9 @@ Pour vous préparer à l’SharePoint Syntex, vous devez :
 ![Préparation pour la compréhension du contenu.](../media/content-understanding/cu-adoption-readinesschecklist.png)
 
 1. Planifier l’état final
-    - Les modèles de compréhension de document sont les moyens, et non la fin.
+    - Les modèles de compréhension de documents sont les moyens, et non la fin.
     - Planifiez l’exploitation de la valeur des métadonnées extraites avec :
-      - Rechercher
+      - Recherche
       - Filtrage et mise en forme de l’affichage
       - Conformité
       - Automation

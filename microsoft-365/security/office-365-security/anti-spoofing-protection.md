@@ -22,12 +22,12 @@ ms.localizationpriority: high
 description: Les administrateurs peuvent découvrir les fonctionnalités d’usurpation d’identité disponibles dans Exchange Online Protection (EOP), qui peuvent vous aider à atténuer les attaques par hameçonnage d’expéditeurs et de domaines usurpés.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b93f2e1543a70ca7b5dde8ab5e83d48fba5f5a5e
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 140ed15b793b5d6b74b39a35b854b7432a658bc3
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401299"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475166"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protection contre l’usurpation d’identité dans EOP
 
@@ -48,7 +48,7 @@ Les technologies anti-usurpation suivantes sont disponibles dans EOP :
 
   EOP analyse et bloque les messages qui ne peuvent pas être authentifiés par la combinaison de méthodes standard d'authentification de messagerie électronique et de techniques de réputation de l'expéditeur.
 
-  ![Vérifications anti-usurpation d’identité EOP](../../media/eop-anti-spoofing-protection.png)
+  :::image type="content" source="../../media/eop-anti-spoofing-protection.png" alt-text="Contrôles anti-usurpation d’identité EOP" lightbox="../../media/eop-anti-spoofing-protection.png":::
 
 - **Informations sur la veille contre l’usurpation d’identité** : passez en revue les messages des 7 derniers jours usurpant une identité provenant des expéditeurs dans les domaines internes et externes, puis autorisez ou bloquez ces expéditeurs. Pour plus d’informations, voir [Informations sur la veille sur l’usurpation d’identité dans EOP](learn-about-spoof-intelligence.md).
 

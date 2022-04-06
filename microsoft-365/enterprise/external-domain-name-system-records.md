@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Liste de références des enregistrements système de nom de domaine externe à utiliser lorsque vous planifiez d’un déploiement Office 365.
-ms.openlocfilehash: 3ba8345c17446f7f6d2d6b034415288eb994ee79
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
-ms.translationtype: HT
+ms.openlocfilehash: d2c73094da0547fbc02a4520d4361941b829619c
+ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568431"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64651342"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Enregistrements DNS externes pour Office 365
 
@@ -78,7 +78,7 @@ Les clients email qui utilisent la fédération Exchange auront un enregistremen
 |**Enregistrement DNS** <br/> |**Objectif** <br/> |**Valeur à utiliser** <br/> |
 |----------|-----------|------------|
 |**CNAME** <br/> **(Exchange Online)** <br/> |Aide les clients Outlook à se connecter facilement au service Exchange Online en utilisant le service de découverte automatique. La découverte automatique trouve automatiquement l’hôte Exchange Server approprié et configure Outlook pour les utilisateurs.  <br/> |**Alias :** autodiscover  <br/> **Cible :** autodiscover.outlook.com  <br/> |
-|**MX** <br/> **(Exchange Online)** <br/> |Envoie le courrier entrant pour votre domaine vers le service Exchange Online dans Office 365.  <br/> **Remarque :** une fois le courrier électronique envoyé vers Exchange Online, vous devez supprimer les enregistrements MX qui pointent vers votre ancien système.   |**Domaine :** par exemple, contoso.com  <br/> **Serveur de courrier cible :**\<MX token\>.mail.protection.outlook.com  <br/> **Préférence/priorité :** Inférieur à d’autres enregistrements MX (cela garantit que le courrier est remis à Exchange Online) : par exemple, 1 ou « faible »  <br/>  Trouvez votre \<MX token\> en procédant comme suit :  <br/>  Connectez-vous à Office 365, accédez à administrateur Office 365 \> domaines.  <br/>  Dans la colonne Action pour votre domaine, sélectionnez Corriger les problèmes.  <br/>  Dans la section Enregistrements MX, sélectionnez Que faut-il corriger ?  <br/>  Suivez les instructions de cette page pour mettre à jour votre enregistrement MX.  <br/> [Quelle est la priorité MX ?](../admin/setup/domains-faq.yml) <br/> |
+|**MX** <br/> **(Exchange Online)** <br/> |Envoie le courrier entrant pour votre domaine vers le service Exchange Online dans Office 365.  <br/> **Remarque :** une fois le courrier électronique envoyé vers Exchange Online, vous devez supprimer les enregistrements MX qui pointent vers votre ancien système.   |**Domaine :** par exemple, contoso.com  <br/> **Serveur de courrier cible :**\<MX token\>.mail.protection.outlook.com  <br/> **Durée de vie (TTL) :** 3600 <br/> **Préférence/priorité :** Inférieur à d’autres enregistrements MX (cela garantit que le courrier est remis à Exchange Online) : par exemple, 1 ou « faible »  <br/>  Trouvez votre \<MX token\> en procédant comme suit :  <br/>  Connectez-vous à Office 365, accédez à administrateur Office 365 \> domaines.  <br/>  Dans la colonne Action pour votre domaine, sélectionnez Corriger les problèmes.  <br/>  Dans la section Enregistrements MX, sélectionnez Que faut-il corriger ?  <br/>  Suivez les instructions de cette page pour mettre à jour votre enregistrement MX.  <br/> [Quelle est la priorité MX ?](../admin/setup/domains-faq.yml) <br/> |
 |**SPF (TXT)** <br/> **(Exchange Online)**  <br/> |Aide à empêcher d'autres personnes d'utiliser votre domaine pour envoyer des messages indésirables ou malveillants. Les enregistrements SPF fonctionnent en identifiant les serveurs autorisés à envoyer des messages à partir de votre domaine.  <br/> |[Enregistrements DNS externes requis pour SPF](external-domain-name-system-records.md#BKMK_SPFrecords) <br/> |
 |**TXT** <br/> **(Fédération Exchange)** <br/> |Utilisé pour la fédération Exchange en cas de déploiement hybride.  <br/> |**Enregistrement TXT 1 :** par exemple, contoso.com et texte associé personnalisé, texte de hachage de vérification de domaine associé généré de façon personnalisée (par exemple, Y96nu89138789315669824)  <br/> **Enregistrement TXT 2 :** par exemple, exchangedelegation.contoso.com et le texte de hachage de vérification de domaine associé personnalisé (par exemple, Y3259071352452626169)  <br/> |
 |**CNAME** <br/> **(Fédération Exchange)** <br/> |Aide les clients Outlook à se connecter facilement au service Exchange Online en utilisant le service de découverte automatique quand votre société utilise la fédération Exchange. La découverte automatique trouve automatiquement l’hôte Exchange Server approprié et configure Outlook pour vos utilisateurs.  <br/> |**Alias :** par exemple, Autodiscover.service.contoso.com  <br/> **Cible :** autodiscover.outlook.com  <br/> |

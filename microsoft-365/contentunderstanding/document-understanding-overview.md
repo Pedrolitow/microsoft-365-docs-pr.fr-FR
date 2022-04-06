@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez la compréhension de document dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 4c4910ac2cec9688af60c6999e67e1be41701ef3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c7488fcb44116f030d538b416af1f04b33382519
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322588"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507320"
 ---
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Vue d’ensemble de la compréhension de document dans Microsoft SharePoint Syntex
 
@@ -112,7 +112,8 @@ Les modèles de compréhension des documents suivent les types de fichiers suiva
 
 ### <a name="supported-languages"></a>Langues prises en charge
 
-Les modèles de compréhension des documents sont en charge dans les langues suivantes :
+Les modèles de compréhension des documents *sont les* suivants :
+
 - Anglais
 - Français
 - Allemand

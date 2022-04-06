@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e0a8293709da44dc3a46cf565ad099666e8dae24
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 1ba846402bb2ee447ee5f38ff035c119bdc28fc1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217447"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467684"
 ---
 # <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>Utilisez une analyse périodique limitée dans Antivirus Microsoft Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "61217447"
 
 L’analyse périodique limitée est un type spécial de détection et de correction des menaces qui peut être activé lorsque vous avez installé un autre produit antivirus sur un Windows 10 ou Windows 11 périphérique.
 
-Il ne peut être activé que dans certaines situations. Pour plus d’informations sur l’analyse périodique limitée et Antivirus Microsoft Defender avec d’autres produits antivirus, voir Antivirus Microsoft Defender [compatibilité.](microsoft-defender-antivirus-compatibility.md)
+Il ne peut être activé que dans certaines situations. Pour plus d’informations sur l’analyse périodique limitée et Antivirus Microsoft Defender’analyse avec d’autres produits antivirus, voir [Antivirus Microsoft Defender compatibilité.](microsoft-defender-antivirus-compatibility.md)
 
 **Microsoft ne recommande pas l’utilisation de cette fonctionnalité dans les environnements d’entreprise. Il s’agit d’une fonctionnalité principalement destinée aux consommateurs.** Cette fonctionnalité utilise uniquement un sous-ensemble limité des fonctionnalités Antivirus Microsoft Defender pour détecter les programmes malveillants et ne peut pas détecter la plupart des programmes malveillants et des logiciels potentiellement indésirables. En outre, les fonctionnalités de gestion et de rapport seront limitées. Microsoft recommande aux entreprises de choisir leur solution antivirus principale et de l’utiliser exclusivement.
 
@@ -44,11 +44,11 @@ Par défaut, Antivirus Microsoft Defender s’active sur un appareil Windows 10 
 
 Si Antivirus Microsoft Defender est activé, les options habituelles s’affichent pour le configurer sur cet appareil :
 
-![Sécurité Windows’application affichant les options de Microsoft Defender AV, y compris les options d’analyse, les paramètres et les options de mise à jour.](images/vtp-wdav.png)
+:::image type="content" source="images/vtp-wdav.png" alt-text="Application Sécurité Windows affichant les options de Microsoft Defender AV, y compris les options d’analyse, les paramètres et les options de mise à jour" lightbox="images/vtp-wdav.png":::
 
 Si un autre produit antivirus est installé et fonctionne correctement, Antivirus Microsoft Defender se désactive lui-même. L’application Sécurité Windows modifiera la section Protection contre les virus **&** contre les menaces pour afficher l’état du produit antivirus et fournira un lien vers les options de configuration du produit.
 
-Sous les produits antivirus tiers, un nouveau lien s’affiche sous **la forme Antivirus Microsoft Defender options.** Cliquez sur ce lien pour afficher le bouton bascule qui permet une analyse périodique limitée. Notez que l’option périodique limitée est un basculement permettant d’activer ou de désactiver l’analyse périodique. 
+Sous les produits antivirus tiers, un nouveau lien s’affiche sous **la forme Antivirus Microsoft Defender options**. Cliquez sur ce lien pour afficher le bouton bascule qui permet une analyse périodique limitée. Notez que l’option périodique limitée est un basculement permettant d’activer ou de désactiver l’analyse périodique. 
 
 Le fait de faire glisser le commutateur sur **On** affiche les options standard de l’Antivirus Microsoft Defender sous le produit antivirus tiers. L’option d’analyse périodique limitée apparaît en bas de la page.
 

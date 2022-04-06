@@ -1,6 +1,6 @@
 ---
 title: Résolution des problèmes lors du basculement vers Microsoft Defender pour point de terminaison
-description: Découvrez comment résoudre les problèmes lorsque vous basculez vers Microsoft Defender pour le point de terminaison.
+description: Découvrez comment résoudre les problèmes lorsque vous basculez vers Microsoft Defender pour point de terminaison.
 keywords: migration, windows defender, protection avancée des points de terminaison, antivirus, logiciel anti-programme malveillant, mode passif, mode actif, résolution des problèmes
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 01/11/2022
+ms.date: 03/28/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 180adaff84f4154034d8bda04b6a6cbf6ceadc2e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 30218ea9b3b5ecbec20fdbc3364546d25c80bcab
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680451"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507511"
 ---
 # <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>Résolution des problèmes lors du basculement vers Microsoft Defender pour point de terminaison
 
@@ -33,7 +33,7 @@ ms.locfileid: "63680451"
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Cet article fournit des informations de dépannage pour les administrateurs de sécurité qui rencontrent des problèmes lors du passage d’une solution de protection de point de terminaison non-Microsoft à Microsoft Defender pour point de terminaison.
+Cet article fournit des informations de dépannage pour les administrateurs de sécurité qui rencontrent des problèmes lors du passage d’une solution de protection de point de terminaison non-Microsoft à une solution Microsoft Defender pour point de terminaison.
 
 ## <a name="microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server"></a>Antivirus Microsoft Defender est désinstallé sur Windows Server
 
@@ -42,7 +42,7 @@ Lorsque vous basculez vers Defender pour le point de terminaison, vous commencez
 Pour résoudre ce problème, prenez les mesures suivantes :
 
 1. [Définissez la clé de Registre DisableAntiSpyware sur false](#set-the-disableantispyware-registry-key-to-false).
-2. [Ajoutez Microsoft Defender pour le point de terminaison à la liste d’exclusions](#add-microsoft-defender-for-endpoint-to-the-exclusion-list).
+2. [Ajoutez Microsoft Defender pour point de terminaison à la liste d’exclusions](#add-microsoft-defender-for-endpoint-to-the-exclusion-list).
 3. [Définissez Antivirus Microsoft Defender le mode passif manuellement](#set-microsoft-defender-antivirus-to-passive-mode-manually).
 
 ### <a name="set-the-disableantispyware-registry-key-to-false"></a>Définir la clé de Registre DisableAntiSpyware sur false
@@ -64,7 +64,7 @@ La clé de Registre [DisableAntiSpyware](/windows-hardware/customize/desktop/una
 > [!TIP]
 > Pour en savoir plus sur cette clé de Registre, voir [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware).
 
-### <a name="add-microsoft-defender-for-endpoint-to-the-exclusion-list"></a>Ajouter Microsoft Defender pour le point de terminaison à la liste d’exclusions
+### <a name="add-microsoft-defender-for-endpoint-to-the-exclusion-list"></a>Ajouter Microsoft Defender pour point de terminaison à la liste d’exclusions
 
 Certaines exclusions de Defender pour point de terminaison doivent être définies dans votre solution de protection de point de terminaison non Microsoft existante. Veillez à ajouter les exclusions suivantes :
 
@@ -80,7 +80,7 @@ Certaines exclusions de Defender pour point de terminaison doivent être défini
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-manually"></a>Définir Antivirus Microsoft Defender le mode passif manuellement
 
-Sur Windows Server 2019, Windows Server, version 1803 ou plus récente, Windows Server 2016 ou Windows Server 2012 R2, vous devez définir Antivirus Microsoft Defender en mode passif manuellement. Cette action permet d’éviter les problèmes causés par l’installation de plusieurs produits antivirus sur un serveur. Vous pouvez définir Antivirus Microsoft Defender mode passif à l’aide de PowerShell, d’une stratégie de groupe ou d’une clé de Registre.
+Sur Windows Server 2019, Windows Server, version 1803 ou plus récente, Windows Server 2016 ou Windows Server 2012 R2, vous devez définir Antivirus Microsoft Defender en mode passif manuellement. Cette action permet d’éviter les problèmes causés par l’installation de plusieurs produits antivirus sur un serveur. Vous pouvez définir Antivirus Microsoft Defender mode passif à l’aide de PowerShell, stratégie de groupe ou d’une clé de Registre.
 
 Vous pouvez définir Antivirus Microsoft Defender en mode passif en réglant la clé de Registre suivante :
 
@@ -96,6 +96,21 @@ Valeur : `1`
 > Pour que le mode passif fonctionne sur les points de terminaison exécutant Windows Server 2016 et Windows Server 2012 R2, ces points de terminaison doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
 
 Pour plus d’informations, [voir Antivirus Microsoft Defender sur Windows Server](microsoft-defender-antivirus-on-windows-server.md).
+
+## <a name="microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode"></a>Antivirus Microsoft Defender semble être bloqué en mode passif
+
+Si Antivirus Microsoft Defender est bloqué en mode passif, définissez-le manuellement en mode actif en suivant les étapes suivantes :
+
+1. Sur votre Windows, ouvrez l’Éditeur du Registre en tant qu’administrateur.
+
+2. Accédez à `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
+
+3. Définissez ou définissez **une entrée REG_DWORD** appelée `ForceDefenderPassiveMode`et définissez sa valeur sur `0`.
+
+4. Redémarrez l’appareil.
+
+> [!IMPORTANT]
+> Si vous avez encore des difficultés à définir Antivirus Microsoft Defender le mode actif après avoir suivi cette procédure, [contactez le support technique](../../admin/get-help-support.md).
 
 ## <a name="i-am-having-trouble-re-enabling-microsoft-defender-antivirus-on-windows-server-2016"></a>J’ai des difficultés à réactiver Antivirus Microsoft Defender sur Windows Server 2016
 

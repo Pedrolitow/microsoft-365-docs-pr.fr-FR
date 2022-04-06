@@ -1,7 +1,7 @@
 ---
 title: Comment utiliser Power Automate Connector pour configurer une Flow pour les événements
 ms.reviewer: ''
-description: Utilisez Microsoft Defender for Endpoint Flow pour créer un flux qui sera déclenché chaque fois qu’un nouvel événement se produit sur votre client.
+description: Utilisez Microsoft Defender for Endpoint Flow connecteur pour créer un flux qui sera déclenché chaque fois qu’un nouvel événement se produit sur votre client.
 keywords: flux, api pris en charge, api, flux Microsoft, requête, automatisation, automatisation de l’alimentation
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: fdb3876de6f74c95858dee01aba9615198282b16
-ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
+ms.openlocfilehash: 63626978311b679d0f8b520e4b041d92942bd1fd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62202196"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467992"
 ---
 # <a name="how-to-use-power-automate-connector-to-set-up-a-flow-for-events"></a>Comment utiliser Power Automate Connector pour configurer une Flow pour les événements
 
@@ -32,21 +32,16 @@ ms.locfileid: "62202196"
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
 
 L’automatisation des procédures de sécurité est une exigence standard pour chaque centre d’opérations de sécurité moderne. Pour que les équipes SOC fonctionnent de la manière la plus efficace, l’automatisation est un must. Utilisez Microsoft Power Automate pour vous aider à créer des flux de travail automatisés et à créer une automatisation de procédure de bout en bout en quelques minutes. Microsoft Power Automate prend en charge différents connecteurs qui ont été créés exactement pour cela.  
 
 Utilisez cet article pour vous guider dans la création d’automatisations déclenchées par un événement, par exemple lorsqu’une nouvelle alerte est créée dans votre client. L’API Microsoft Defender dispose d’un connecteur Power Automate officiel avec de nombreuses fonctionnalités. 
 
-
-
-:::image type="content" alt-text="Image de modification des informations d’identification1." source="images/api-flow-0.png":::
+:::image type="content" source="images/api-flow-0.png" alt-text="Page Actions dans le portail Microsoft Defender 365" lightbox="images/api-flow-0.png" :::
 
 > [!NOTE]
 > Pour plus d’informations sur les conditions préalables de licence des connecteurs premium, voir [Licensing for premium connectors](/power-automate/triggers-introduction#licensing-for-premium-connectors).
-
 
 ## <a name="usage-example"></a>Exemple d'utilisation
 
@@ -56,15 +51,15 @@ L’exemple suivant montre comment créer une Flow qui est déclenchée chaque f
 
 2. Go to **My flows** \> **New** \> **Automated-from blank**.
 
-    :::image type="content" alt-text="Image de modification des informations d’identification2." source="images/api-flow-1.png":::
+    :::image type="content" source="images/api-flow-1.png" alt-text="Volet Nouveau flux sous l’élément de menu Mes flux dans le portail Microsoft Defender 365" lightbox="images/api-flow-1.png":::
 
 3. Choisissez un nom pour votre Flow, recherchez « Déclencheurs Microsoft Defender ATP » comme déclencheur, puis sélectionnez le nouveau déclencheur Alertes.
 
-    :::image type="content" alt-text="Image de modification des informations d’identification3." source="images/api-flow-2.png":::
+    :::image type="content" source="images/api-flow-2.png" alt-text=" Section Choisir le déclencheur de votre flux dans le portail Microsoft Defender 365" lightbox="images/api-flow-2.png" :::
 
 Vous avez maintenant une Flow qui est déclenchée chaque fois qu’une nouvelle alerte se produit.
 
-:::image type="content" alt-text="Image de modification des informations d’identification4." source="images/api-flow-3.png":::
+:::image type="content" source="images/api-flow-3.png" alt-text="Description du déclencheur" lightbox="images/api-flow-3.png":::
 
 Il vous suffit maintenant de choisir les étapes suivantes.
 Par exemple, vous pouvez isoler l’appareil si la gravité de l’alerte est élevée et envoyer un e-mail à son sujet.
@@ -76,19 +71,19 @@ Le déclencheur d’alerte fournit uniquement l’ID d’alerte et l’ID de l�
 
 2. Choose **Alerts - Get single alert API**.
 
-3. Définissez **l’ID d’alerte** de la dernière étape en tant **qu’entrée.**
+3. Définissez **l’ID d’alerte** de la dernière étape en tant **qu’entrée**.
 
-    :::image type="content" alt-text="Image de modification des informations d’identification5." source="images/api-flow-4.png" lightbox="images/api-flow-4.png":::
+    :::image type="content" source="images/api-flow-4.png" alt-text="Volet Alertes"  lightbox="images/api-flow-4.png":::
 
 ### <a name="isolate-the-device-if-the-alerts-severity-is-high"></a>Isoler l’appareil si la gravité de l’alerte est élevée
 
-1. Ajoutez **condition** en tant que nouvelle étape.
+1. **Ajoutez condition** en tant que nouvelle étape.
 
 2. Vérifiez si la gravité de **l’alerte est égale à** Élevée.
 
    Si oui, ajoutez **l’action Microsoft Defender ATP - Isoler l’ordinateur** avec l’ID de l’ordinateur et un commentaire.
 
-    :::image type="content" alt-text="Image de modification des informations d’identification6." source="images/api-flow-5.png" lightbox="images/api-flow-5.png":::
+    :::image type="content" source="images/api-flow-5.png" alt-text="Volet Actions"  lightbox="images/api-flow-5.png":::
 
 3. Ajoutez une nouvelle étape pour l’envoi par courrier électronique de l’alerte et de l’isolation. Il existe plusieurs connecteurs de messagerie très faciles à utiliser, tels que Outlook ou Gmail.
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 94388a375c3c50d97e696637ef6ef4ebefc96aab
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 5a57093ed4ecd5b87a62701e3c055888ed16a5ca
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63715490"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595320"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -74,7 +74,7 @@ Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez égal
 ### <a name="retention-policy-for-teams-locations"></a>Stratégie de rétention pour les emplacements Teams
 
 > [!NOTE]
-> Les politiques de rétention prennent désormais en charge les [canaux partagés](/MicrosoftTeams/shared-channels), actuellement en aperçu. Lorsque vous configurez les paramètres de rétention pour l'emplacement **des messages du canal Teams**, si une équipe a des canaux partagés, ils héritent des paramètres de rétention de leur équipe parente.
+> Les stratégies de rétention prennent désormais en charge les [canaux partagés](/MicrosoftTeams/shared-channels), actuellement en préversion. Lorsque vous configurez les paramètres de rétention pour l'emplacement **des messages du canal Teams**, si une équipe a des canaux partagés, ils héritent des paramètres de rétention de leur équipe parente.
 
 1. À partir du [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) sélectionnez **Information Governance** > **Stratégies de rétention**.
 
@@ -128,7 +128,7 @@ Il est possible qu’une stratégie de conservation appliquée aux groupes Micro
 ### <a name="retention-policy-for-yammer-locations"></a>Stratégie de rétention pour les emplacements Yammer
 
 > [!NOTE]
-> Les stratégies de rétention pour Yammer sont en préversion et n’avertissent actuellement pas les utilisateurs de la suppression de messages en raison d’une stratégie de rétention.
+> Les stratégies de rétention pour Yammer n’avertissent actuellement pas les utilisateurs de la suppression de messages en raison d’une stratégie de rétention.
 >
 > Pour utiliser cette fonctionnalité, votre réseau Yammer doit être [Mode Natif](/yammer/configure-your-yammer-network/overview-native-mode), et non Mode Hybride.
 
@@ -143,11 +143,6 @@ Il est possible qu’une stratégie de conservation appliquée aux groupes Micro
     - Si vous **avez** choisi Adaptatif : dans la page Choisir les étendues et les **emplacements** de stratégie adaptative, sélectionnez Ajouter des **étendues** et sélectionnez une ou plusieurs étendues adaptatives qui ont été créées. Sélectionnez ensuite un ou plusieurs emplacements. Les emplacements que vous pouvez sélectionner dépendent des [types d’étendue](retention-settings.md#configuration-information-for-adaptive-scopes) ajoutés. Par exemple, si vous avez uniquement ajouté un **type d’étendue d’utilisateur**, vous pourrez sélectionner Yammer **messages** utilisateur, mais pas Yammer messages de **la communauté.** 
     
     - Si vous avez choisi **Statique** : Sur la page **Choisir les emplacements** pour appliquer la politique, basculez sur l'un ou les deux emplacements pour Yammer : **Message de la communauté Yammer** et **Messages de l'utilisateur Yammer**.
-        
-        > [!IMPORTANT]
-        > Bien que vous puissiez créer une stratégie de rétention uniquement pour l’utilisateur de messages Yammer, une stratégie de rétention pour cet emplacement peut supprimer des messages de la communauté de l’application Yammer pour tous les membres de la communauté.
-        > 
-        > Si vous choisissez cette option et que la stratégie de rétention est configurée pour supprimer les messages utilisateur, assurez-vous de bien comprendre cette implication. Pour plus d’informations, voir [Fonctionnement de la rétention avec Yammer](retention-policies-yammer.md#how-retention-works-with-yammer).
         
         Par défaut, tous les utilisateurs et communautés sont sélectionnés, mais vous pouvez les affiner en spécifiant les groupes et les utilisateurs à inclure ou à exclure.
         
