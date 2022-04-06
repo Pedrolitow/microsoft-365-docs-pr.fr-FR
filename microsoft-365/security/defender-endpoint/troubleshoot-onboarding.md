@@ -1,7 +1,7 @@
 ---
 title: Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison
 description: Résoudre les problèmes qui peuvent survenir lors de l’intégration d’appareils ou au service Microsoft Defender for Endpoint.
-keywords: 'résoudre les problèmes d’intégration, les problèmes d’intégration, l’observateur d’événements, la collecte de données et les builds d’aperçu, les données de capteur et les diagnostics'
+keywords: résoudre les problèmes d’intégration, les problèmes d’intégration, l’observateur d’événements, la collecte de données et les builds d’aperçu, les données de capteur et les diagnostics
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,8 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
+ms.openlocfilehash: 9813857bffe62ab26d377d49b2830f55d0f38f93
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473516"
 ---
-
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -26,7 +31,7 @@ ms.technology: mde
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Windows Server 2012 R2
 - Windows Server 2016
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
@@ -84,7 +89,7 @@ Si le script échoue et que l’événement est une erreur, vous pouvez vérifie
 |:---:|---|---|
 |`5`|Des données de désintboarding ont été trouvées mais n’ont pas pu être supprimées|Vérifier les autorisations sur le Registre, plus précisément <p> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.|
 |`10`|Les données d’intégration n’ont pas pu être écrites dans le Registre|Vérifier les autorisations sur le Registre, plus précisément <p> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`. <p> Vérifiez que le script a été exécuté en tant qu’administrateur.|
-|`15`|Échec du démarrage du service SENSE|Vérifiez l’état du service (`sc query sense` commande). Assurez-vous qu’il n’est pas dans un état intermédiaire (*'Pending_Stopped'*, *'Pending_Running'*) et essayez d’exécuter à nouveau le script (avec des droits d’administrateur). <p> Si l’appareil s’Windows 10, version 1607 `sc query sense` `START_PENDING`et que la commande est en cours d’exécution, redémarrez l’appareil. Si le redémarrage de l’appareil ne permet pas de résoudre le problème, faites une mise à niveau vers KB4015217 et tentez à nouveau l’intégration.|
+|`15`|Échec du démarrage du service SENSE|Vérifiez l’état du service (`sc query sense` commande). Assurez-vous qu’il n’est pas dans un état intermédiaire (*'Pending_Stopped'*, 'Pending_Running') et essayez d’exécuter à nouveau le script (avec des droits *d’administrateur*). <p> Si l’appareil est en cours d Windows 10, version 1607 `sc query sense` `START_PENDING`et que la commande est en cours d’exécution, redémarrez l’appareil. Si le redémarrage de l’appareil ne permet pas de résoudre le problème, faites une mise à niveau vers KB4015217 et tentez à nouveau l’intégration.|
 |`15`|Échec du démarrage du service SENSE|Si le message de l’erreur est le suivant : erreur système 577 ou erreur 1058 s’est produite, vous devez activer le pilote ELAM Antivirus Microsoft Defender, voir Vérifier que [Antivirus Microsoft Defender](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy) n’est pas désactivé par une stratégie pour obtenir des instructions.|
 |`30`|Le script n’a pas réussi à attendre le démarrage de l’exécution du service|Le service a peut-être mis plus de temps à démarrer ou a rencontré des erreurs lors de la tentative de démarrage. Pour plus d’informations sur les événements et les erreurs liés à SENSE, voir Passer en revue les événements et les [erreurs à l’aide de l’Observateur d’événements](event-error-codes.md).|
 |`35`|Le script n’a pas trouvé la valeur de Registre d’état d’intégration nécessaire|Lorsque le service SENSE démarre pour la première fois, il écrit l’état d’intégration à l’emplacement du Registre <p> `HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`. <p> Le script n’a pas réussi à le trouver après plusieurs secondes. Vous pouvez le tester manuellement et vérifier s’il est là. Pour plus d’informations sur les événements et les erreurs liés à SENSE, voir Passer en revue les événements et les [erreurs à l’aide de l’Observateur d’événements](event-error-codes.md).|
@@ -150,7 +155,7 @@ Nom du canal : Admin
 
 |ID|Severity|Description de l’événement|Étapes de résolution des problèmes|
 |---|---|---|---|
-|1819|Erreur|Microsoft Defender for Endpoint CSP: Failed to Set Node’s Value. NodeId : (%1), TokenName : (%2), Résultat : (%3).|Téléchargez [la mise à jour cumulative Windows 10 1607](https://go.microsoft.com/fwlink/?linkid=829760).|
+|1819|Error|Microsoft Defender for Endpoint CSP: Failed to Set Node’s Value. NodeId : (%1), TokenName : (%2), Résultat : (%3).|Téléchargez [la mise à jour cumulative Windows 10 1607](https://go.microsoft.com/fwlink/?linkid=829760).|
 |
 
 ## <a name="troubleshoot-onboarding-issues-on-the-device"></a>Résoudre les problèmes d’intégration sur l’appareil
@@ -178,7 +183,7 @@ Si les outils de déploiement utilisés n’indiquent pas une erreur dans le pro
 
 5. Sous **l’onglet Filtre**, sous **Niveau d’événement** : sélectionnez **Critique****, Avertissement** **et Erreur,** puis cliquez sur **OK**.
 
-   ![Image du filtre du journal de l’Observateur d’événements.](images/filter-log.png)
+   :::image type="content" source="images/filter-log.png" alt-text="Filtre du journal de l’Observateur d’événements" lightbox="images/filter-log.png":::
 
 6. Les événements qui peuvent indiquer des problèmes apparaissent dans le **volet** opérationnel. Vous pouvez essayer de les résoudre en fonction des solutions du tableau suivant :
 
@@ -235,7 +240,7 @@ Tout d’abord, vous devez vérifier que le service est prêt à démarrer autom
 
    Si le service est activé, le résultat doit ressembler à la capture d’écran suivante :
 
-   ![Résultat de la commande de requête sc pour diagtrack.](images/windefatp-sc-qc-diagtrack.png)
+   :::image type="content" source="images/windefatp-sc-qc-diagtrack.png" alt-text="Résultat de la commande sc query pour diagtrack" lightbox="images/windefatp-sc-qc-diagtrack.png":::
 
    Si ce n’est `START_TYPE` pas le cas `AUTO_START`, vous devez définir le service pour qu’il démarre automatiquement.
 
@@ -305,7 +310,7 @@ Si la vérification échoue et que votre environnement utilise un proxy pour se 
 
 - Vous pouvez également vérifier les valeurs de clé de Registre précédentes pour vérifier que la stratégie est désactivée, en ouvrant la clé de Registre `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
 
-    ![Image de la clé de Registre pour Antivirus Microsoft Defender.](images/atp-disableantispyware-regkey.png)
+  :::image type="content" source="images/atp-disableantispyware-regkey.png" alt-text="Clé de Registre pour Antivirus Microsoft Defender" lightbox="images/atp-disableantispyware-regkey.png":::
 
    > [!NOTE]
    > Tous Windows Defender services (wdboot, wdfilter, wdnisdrv, wdnissvc et windefend) doivent être dans leur état par défaut. La modification du démarrage de ces services n’est pas pris en compte et peut vous obliger à réimager votre système.
@@ -328,19 +333,19 @@ Si vous rencontrez des problèmes lors de l’intégration d’un serveur, vous 
 
 Vous devrez peut-être également vérifier les choses suivantes :
 
-- Vérifiez qu’un service Microsoft Defender pour points de terminaison est en cours d’exécution dans l’onglet **Processus** dans **le Gestionnaire des tâches**. Par exemple :
+- Vérifiez qu’un service Microsoft Defender pour points de terminaison est en cours d’exécution dans l’onglet **Processus** dans **le Gestionnaire des tâches**. Par exemple :
 
-    ![Image de l’affichage des processus avec Microsoft Defender pour endpoint Service en cours d’exécution.](images/atp-task-manager.png)
+  :::image type="content" source="images/atp-task-manager.png" alt-text="Affichage du processus avec Microsoft Defender for Endpoint Service en cours d’exécution" lightbox="images/atp-task-manager.png":::
 
 - Vérifiez le **Gestionnaire d’opérations** \> **des journaux** des applications et des services de l’Observateur d’événements \> pour voir s’il existe des erreurs.
 
 - Dans **Services**, vérifiez si le **Microsoft Monitoring Agent** est en cours d’exécution sur le serveur. Par exemple :
 
-    ![Image des services.](images/atp-services.png)
+  :::image type="content" source="images/atp-services.png" alt-text="Les services" lightbox="images/atp-services.png":::
 
 - Dans **Microsoft Monitoring Agent** \> **Azure Log Analytics (OMS),** vérifiez les espaces de travail et vérifiez que l’état est en cours d’exécution.
 
-    ![Image de Microsoft Monitoring Agent propriétés.](images/atp-mma-properties.png)
+  :::image type="content" source="images/atp-mma-properties.png" alt-text="Propriétés Microsoft Monitoring Agent propriétés" lightbox="images/atp-mma-properties.png":::
 
 - Vérifiez que les appareils sont reflétés dans la liste **Appareils** du portail.
 
@@ -356,7 +361,7 @@ Les étapes ci-dessous fournissent des conseils pour le scénario suivant :
 - Dans ce scénario, le service SENSE ne démarre pas automatiquement même si le package d’intégration a été déployé
 
 > [!NOTE]
-> Il n’est plus nécessaire que le service SENSE démarre sur les versions Windows suivantes ou plus récentes : Windows 10, version 1809 ou Windows Server 2019 ou Windows Server 2022 avec le rollup de mise à jour du [22 avril 2021](https://support.microsoft.com/kb/5001384). Windows 10, version 1909 avec le [rollup de mise à jour d’avril 2021](https://support.microsoft.com/kb/5001396). Windows 10, version 2004/20H2 avec le rollup de mise à jour [du 28 avril 2021](https://support.microsoft.com/kb/5001391). 
+> L’accès utilisateur après la OOBE n’est plus nécessaire pour que le service SENSE démarre sur les versions Windows suivantes ou plus récentes : Windows 10, version 1809 ou Windows Server 2019, ou Windows Server 2022 avec le rollup de mise à jour du [22 avril 2021](https://support.microsoft.com/kb/5001384). Windows 10, version 1909 avec le [rollup de mise à jour d’avril 2021](https://support.microsoft.com/kb/5001396). Windows 10, version 2004/20H2 avec le déploiement de mise à jour du [28 avril 2021](https://support.microsoft.com/kb/5001391). 
 
 
 > [!NOTE]
@@ -364,121 +369,122 @@ Les étapes ci-dessous fournissent des conseils pour le scénario suivant :
 
 1. Créez une application dans Microsoft Endpoint Configuration Manager.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration1.](images/mecm-1.png)
+   :::image type="content" source="images/mecm-1.png" alt-text="Le Microsoft Endpoint Configuration Manager configuration-1" lightbox="images/mecm-1.png":::
 
 2. **Sélectionnez Spécifier manuellement les informations d’application**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration2.](images/mecm-2.png)
+   :::image type="content" source="images/mecm-2.png" alt-text="Configuration Microsoft Endpoint Configuration Manager-2" lightbox="images/mecm-2.png":::
 
 3. Spécifiez des informations sur l’application, puis sélectionnez **Suivant**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration3.](images/mecm-3.png)
+   :::image type="content" source="images/mecm-3.png" alt-text="Configuration Microsoft Endpoint Configuration Manager-3" lightbox="images/mecm-3.png":::
 
 4. Spécifiez des informations sur le centre logiciel, puis sélectionnez **Suivant**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration4.](images/mecm-4.png)
+   :::image type="content" source="images/mecm-4.png" alt-text="Configuration Microsoft Endpoint Configuration Manager-4" lightbox="images/mecm-4.png":::
 
 5. Dans **les types de déploiement** , **sélectionnez Ajouter**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration5.](images/mecm-5.png)
+   :::image type="content" source="images/mecm-5.png" alt-text="Configuration Microsoft Endpoint Configuration Manager-5" lightbox="images/mecm-5.png":::
 
 6. **Sélectionnez Spécifier manuellement les informations sur le type** de déploiement, puis sélectionnez **Suivant**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration6.](images/mecm-6.png)
+   :::image type="content" source="images/mecm-6.png" alt-text="Configuration Microsoft Endpoint Configuration Manager-6" lightbox="images/mecm-6.png":::
 
 7. Spécifiez des informations sur le type de déploiement, puis sélectionnez **Suivant**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration7.](images/mecm-7.png)
+   :::image type="content" source="images/mecm-7.png" alt-text="Configuration Microsoft Endpoint Configuration Manager-7" lightbox="images/mecm-7.png":::
 
 8. Dans **le programme d’installation** \> **de** contenu, spécifiez la commande : `net start sense`.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration8.](images/mecm-8.png)
+   :::image type="content" source="images/mecm-8.png" alt-text="Configuration Microsoft Endpoint Configuration Manager-8" lightbox="images/mecm-8.png":::
 
 9. Dans **la méthode Detection**, **sélectionnez Configurer les règles pour détecter** la présence de ce type de déploiement, puis **sélectionnez Ajouter une clause**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration9.](images/mecm-9.png)
+   :::image type="content" source="images/mecm-9.png" alt-text="Configuration Microsoft Endpoint Configuration Manager-9" lightbox="images/mecm-9.png":::
 
 10. Spécifiez les détails de règle de détection suivants, puis sélectionnez **OK** :
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration10.](images/mecm-10.png)
+    :::image type="content" source="images/mecm-10.png" alt-text="Le Microsoft Endpoint Configuration Manager configuration-10" lightbox="images/mecm-10.png":::
 
 11. Dans **la méthode Detection,** sélectionnez **Suivant**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration11.](images/mecm-11.png)
+    :::image type="content" source="images/mecm-11.png" alt-text="Le Microsoft Endpoint Configuration Manager configuration-11" lightbox="images/mecm-11.png":::
 
 12. Dans **Expérience utilisateur**, spécifiez les informations suivantes, puis sélectionnez **Suivant** :
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration12.](images/mecm-12.png)
+    :::image type="content" source="images/mecm-12.png" alt-text="Le Microsoft Endpoint Configuration Manager configuration-12" lightbox="images/mecm-12.png":::
 
 13. Dans **Conditions requises**, sélectionnez **Suivant**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration13.](images/mecm-13.png)
+    :::image type="content" source="images/mecm-13.png" alt-text="Configuration Microsoft Endpoint Configuration Manager-13" lightbox="images/mecm-13.png":::
 
 14. Dans **Dépendances**, sélectionnez **Suivant**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration14.](images/mecm-14.png)
+    :::image type="content" source="images/mecm-14.png" alt-text="Le Microsoft Endpoint Configuration Manager configuration-14" lightbox="images/mecm-14.png":::
 
 15. En **résumé**, sélectionnez **Suivant**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration15.](images/mecm-15.png)
+    :::image type="content" source="images/mecm-15.png" alt-text="Configuration Microsoft Endpoint Configuration Manager-15" lightbox="images/mecm-15.png":::
 
 16. À **l’achèvement**, sélectionnez **Fermer**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration16.](images/mecm-16.png)
+    :::image type="content" source="images/mecm-16.png" alt-text="Le Microsoft Endpoint Configuration Manager configuration-16" lightbox="images/mecm-16.png":::
 
 17. Dans **les types de déploiement**, sélectionnez **Suivant**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration17.](images/mecm-17.png)
+    :::image type="content" source="images/mecm-17.png" alt-text="Le Microsoft Endpoint Configuration Manager configuration-17" lightbox="images/mecm-17.png":::
 
 18. En **résumé**, sélectionnez **Suivant**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration18.](images/mecm-18.png)
+    :::image type="content" source="images/mecm-18.png" alt-text="Configuration Microsoft Endpoint Configuration Manager-18" lightbox="images/mecm-18.png":::
 
-    L’état est ensuite affiché : ![Image de Microsoft Endpoint Configuration Manager configuration19.](images/mecm-19.png)
+    L’état s’affiche ensuite : :::image type="content" source="images/mecm-19.png" alt-text="Microsoft Endpoint Configuration Manager configuration-19" lightbox="images/mecm-19.png":::
 
 19. À **l’achèvement**, sélectionnez **Fermer**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration20.](images/mecm-20.png)
+    :::image type="content" source="images/mecm-20.png" alt-text="Le Microsoft Endpoint Configuration Manager configuration-20" lightbox="images/mecm-20.png":::
 
 20. Vous pouvez maintenant déployer l’application en cliquant avec le bouton droit sur l’application et en sélectionnant **Déployer**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration21.](images/mecm-21.png)
+    :::image type="content" source="images/mecm-21.png" alt-text="Le Microsoft Endpoint Configuration Manager configuration-21" lightbox="images/mecm-21.png":::
 
 21. En **général,** **sélectionnez Distribuer automatiquement le contenu pour les dépendances et** **Parcourir**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration22.](images/mecm-22.png)
+    :::image type="content" source="images/mecm-22.png" alt-text="Configuration Microsoft Endpoint Configuration Manager-22" lightbox="images/mecm-22.png":::
 
 22. Dans **Contenu,** sélectionnez **Suivant**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration23.](images/mecm-23.png)
+    :::image type="content" source="images/mecm-23.png" alt-text="Configuration Microsoft Endpoint Configuration Manager-23" lightbox="images/mecm-23.png":::
 
 23. Dans **les paramètres de déploiement**, sélectionnez **Suivant**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration24.](images/mecm-24.png)
+    :::image type="content" source="images/mecm-24.png" alt-text="Le Microsoft Endpoint Configuration Manager configuration-24" lightbox="images/mecm-24.png":::
 
 24. Dans **Planification,** **sélectionnez Dès que possible après le temps disponible**, puis **suivant**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration25.](images/mecm-25.png)
+    :::image type="content" source="images/mecm-25.png" alt-text="Configuration Microsoft Endpoint Configuration Manager-25" lightbox="images/mecm-25.png":::
 
 25. Dans **l’expérience utilisateur**, **sélectionnez Valider les modifications à** l’échéance ou pendant une fenêtre de maintenance (nécessite des redémarrages), puis **sélectionnez Suivant**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration26.](images/mecm-26.png)
+    :::image type="content" source="images/mecm-26.png" alt-text="Le Microsoft Endpoint Configuration Manager configuration-26" lightbox="images/mecm-26.png":::
 
 26. Dans **alertes,** sélectionnez **Suivant**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration27.](images/mecm-27.png)
+    :::image type="content" source="images/mecm-27.png" alt-text="Configuration Microsoft Endpoint Configuration Manager-27" lightbox="images/mecm-27.png":::
 
 27. En **résumé**, sélectionnez **Suivant**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration28.](images/mecm-28.png)
+    :::image type="content" source="images/mecm-28.png" alt-text="Le Microsoft Endpoint Configuration Manager configuration-28" lightbox="images/mecm-28.png":::
+      
 
-    L’état s’affiche ensuite ![Image de Microsoft Endpoint Configuration Manager configuration29.](images/mecm-29.png)
+    L’état s’affiche ensuite Microsoft Endpoint Configuration Manager :::image type="content" source="images/mecm-29.png" alt-text="configuration-29" lightbox="images/mecm-29.png":::
 
 28. À **l’achèvement**, sélectionnez **Fermer**.
 
-    ![Image de Microsoft Endpoint Configuration Manager configuration30.](images/mecm-30.png)
+    :::image type="content" source="images/mecm-30.png" alt-text="Le Microsoft Endpoint Configuration Manager configuration-30" lightbox="images/mecm-30.png":::
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Sujets associés
 
 - [Résoudre des problèmes avec Microsoft Defender pour point de terminaison](troubleshoot-mdatp.md)
 - [Intégration des appareils](onboard-configure.md)

@@ -15,12 +15,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser le plan de flux de messagerie dans le tableau de bord du flux de messagerie dans le Centre de sécurité & conformité pour visualiser et suivre la façon dont les messages circulent vers et depuis leur organisation via des connecteurs et sans utiliser de connecteurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 53c86584680f14c68b8d69ac0a0c2fc51933db28
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: bd8df34c9484b7a2b8aa2bdd57d160e22f71d247
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680135"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473802"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Carte de flux de messagerie dans le Centre de conformité & sécurité
 
@@ -33,7 +33,7 @@ ms.locfileid: "63680135"
 
 Le **plan de flux de messagerie** dans le tableau de bord de flux de messagerie dans le Centre de sécurité [& conformité](https://protection.office.com) donne des informations sur la façon dont le courrier circule dans votre organisation.[](mail-flow-insights-v2.md) Vous pouvez utiliser ces informations pour apprendre des modèles, identifier des anomalies et résoudre les problèmes au moment où ils se produisent.
 
-![Widget de carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité.](../../media/mfi-mail-flow-map-widget.png)
+:::image type="content" source="../../media/mfi-mail-flow-map-widget.png" alt-text="Widget de carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité" lightbox="../../media/mfi-mail-flow-map-widget.png":::
 
 Par défaut, le widget affiche le modèle de flux de messagerie du jour précédent dans un graphique appelé *diagramme Sankey* . Vous pouvez utiliser la flèche gauche ![.](../../media/scc-left-arrow.png) flèche droite pour ![afficher](../../media/scc-right-arrow.png) les informations de différents jours. Chaque couleur représente le flux de messagerie sur un connecteur entrant ou sortant différent (ou sans utiliser de connecteurs). Si vous pointez sur une couleur spécifique, le nombre de messages s’affiche pour ce type de connecteur.
 
@@ -45,11 +45,11 @@ Les graphiques suivants sont disponibles dans l’affichage de rapport :
 
 - **Afficher les données pour : Vue** d’ensemble : il s’agit essentiellement d’une vue plus grande du widget. Si vous pointez sur une couleur spécifique, le nombre de messages s’affiche pour ce type de connecteur.
 
-  ![Vue d’ensemble dans le rapport de carte de flux de messagerie.](../../media/mfi-mail-flow-map-report-overview.png)
+    :::image type="content" source="../../media/mfi-mail-flow-map-report-overview.png" alt-text="Vue d’ensemble dans le rapport de carte de flux de messagerie" lightbox="../../media/mfi-mail-flow-map-report-overview.png":::
 
 - **Afficher les données pour : Détail** : cet affichage affiche des détails sur les connecteurs et les domaines de destination. Les principaux domaines de l’expéditeur et du destinataire sont répertoriés et les autres sont placés dans **Autres**. Si vous pointez sur une couleur et une section spécifiques, le nombre de messages s’affiche.
 
-  ![Affichage détaillé dans le rapport de carte de flux de messagerie.](../../media/mfi-mail-flow-map-report-detail.png)
+    :::image type="content" source="../../media/mfi-mail-flow-map-report-detail.png" alt-text="Affichage Détails dans le rapport de carte de flux de messagerie" lightbox="../../media/mfi-mail-flow-map-report-detail.png":::
 
 Si vous cliquez sur **Filtres** dans un affichage de rapport, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin**.
 
@@ -71,7 +71,7 @@ Si vous cliquez sur **Filtres** dans une vue de table de détails, vous pouvez s
 
 Si vous sélectionnez une ligne, des détails similaires sont affichés dans un volant :
 
-![Détails du tableau détails dans le plan de flux de messagerie.](../../media/mfi-mail-flow-map-view-details-table-details.png)
+:::image type="content" source="../../media/mfi-mail-flow-map-view-details-table-details.png" alt-text="The Details flyout from the details table in the Mail flow map" lightbox="../../media/mfi-mail-flow-map-view-details-table-details.png":::
 
 Pour envoyer par courrier électronique le rapport pour une plage de dates spécifique à un ou plusieurs destinataires, cliquez **sur Demander le téléchargement**.
 

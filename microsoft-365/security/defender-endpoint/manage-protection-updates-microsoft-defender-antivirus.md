@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c2ebb60d3cd5514d003991d26c5070b05e89fb37
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 69c211e02b5bea12431e17bf2256405f96977b53
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354623"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467420"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Gérer les sources des mises à jour de la protection antivirus Microsoft Defender
 
@@ -69,10 +69,10 @@ Il existe cinq emplacements où vous pouvez spécifier l’emplacement où un po
 
 (<a id="fn1">2</a>) Il se peut que votre stratégie et votre Registre l’ont répertoriée en tant qu’intelligence de Centre de protection Microsoft contre les programmes malveillants (MMPC), son ancien nom.
 
-Pour garantir le meilleur niveau de protection, Microsoft Update permet des mises à jour rapides, ce qui signifie des téléchargements plus petits sur une base fréquente. Les sources Windows de mise à jour du service de mise à jour du serveur, de Microsoft Endpoint Configuration Manager et de l’intelligence de sécurité Microsoft offrent des mises à jour moins fréquentes. Par conséquent, le delta peut être plus grand, ce qui entraîne des téléchargements plus importants.
+Pour garantir le meilleur niveau de protection, Microsoft Update permet des mises à jour rapides, ce qui signifie des téléchargements plus petits sur une base fréquente. Les sources Windows service de mise à jour du serveur, Microsoft Endpoint Configuration Manager et microsoft security intelligence updates offrent des mises à jour moins fréquentes. Par conséquent, le delta peut être plus grand, ce qui entraîne des téléchargements plus importants.
 
 > [!IMPORTANT]
-> Si vous avez définie les mises à jour de [la page](https://www.microsoft.com/security/portal/definitions/adl.aspx) d’aide à la sécurité Microsoft comme source de récupération après le service de mise à jour du serveur Windows ou Microsoft Update, les mises à jour sont téléchargées uniquement à partir des mises à jour de l’intelligence de sécurité lorsque la mise à jour actuelle est considérée comme étant hors date. (Par défaut, cela fait sept jours consécutifs que vous ne pouvez pas appliquer les mises à jour à partir du service de mise à jour du serveur Windows ou des services Microsoft Update).
+> Si vous avez définie les mises à jour de [la page](https://www.microsoft.com/security/portal/definitions/adl.aspx) d’aide à la sécurité Microsoft comme source de récupération après le service de mise à jour du serveur Windows ou Microsoft Update, les mises à jour ne sont téléchargées qu’à partir des mises à jour de l’intelligence de sécurité lorsque la mise à jour actuelle est considérée comme non à jour. (Par défaut, cela fait sept jours consécutifs que vous ne pouvez pas appliquer les mises à jour à partir du service de mise à jour du serveur Windows ou des services Microsoft Update).
 > Toutefois, vous pouvez définir [le nombre de jours avant que la protection ne soit signalée comme étant hors date](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).<p>
 > À compter du lundi 21 octobre 2019, les mises à jour de l’intelligence de sécurité seront signées exclusivement par SHA-2. Les appareils doivent être mis à jour pour prendre en charge SHA-2 afin d’obtenir les dernières mises à jour de l’intelligence de sécurité. Pour plus d’informations, voir [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
 
@@ -85,13 +85,13 @@ Chaque source présente des scénarios classiques qui dépendent de la configura
 |Windows Server Update Service|Vous utilisez Windows Server Update Service pour gérer les mises à jour de votre réseau.|
 |Microsoft Update|Vous souhaitez que vos points de terminaison se connectent directement à Microsoft Update. Cela peut être utile pour les points de terminaison qui se connectent de manière irrégulière à votre réseau d’entreprise, ou si vous n’utilisez pas Windows Server Update Service pour gérer vos mises à jour.|
 |Partage de fichiers|Vous avez des appareils non connectés à Internet (tels que des VM). Vous pouvez utiliser votre hôte de vm connecté à Internet pour télécharger les mises à jour sur un partage réseau, à partir duquel les VM peuvent obtenir les mises à jour. Consultez le [guide de déploiement VDI](deployment-vdi-microsoft-defender-antivirus.md) pour savoir comment les partages de fichiers peuvent être utilisés dans les environnements d’infrastructure de bureau virtuel (VDI).|
-|Microsoft Endpoint Manager|Vous utilisez Microsoft Endpoint Manager pour mettre à jour vos points de terminaison.|
+|Gestionnaire de point de terminaison Microsoft|Vous utilisez Microsoft Endpoint Manager pour mettre à jour vos points de terminaison.|
 |Mises à jour des informations de sécurité pour Antivirus Microsoft Defender et d’autres logiciels anti-programme malveillant Microsoft (anciennement appelés MMPC)|[Assurez-vous que vos appareils sont mis à jour pour prendre en charge SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). Antivirus Microsoft Defender mises à jour de l’intelligence de sécurité sont mises à jour via Windows Update et, à compter du lundi 21 octobre 2019, les mises à jour de l’intelligence de sécurité seront signées exclusivement par SHA-2. <br/>Téléchargez les dernières mises à jour de protection en raison d’une infection récente ou pour mettre en service une image de base forte pour le [déploiement VDI](deployment-vdi-microsoft-defender-antivirus.md). Cette option doit généralement être utilisée uniquement comme source de retour final, et non comme source principale. Elle sera utilisée uniquement si les mises à jour ne peuvent pas être téléchargées depuis Windows Server Update Service ou Microsoft Update pendant un [nombre de jours spécifié](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
 
 Vous pouvez gérer l’ordre dans lequel les sources de mise à jour sont utilisées avec la stratégie de groupe, Microsoft Endpoint Configuration Manager, les cmdlets PowerShell et WMI.
 
 > [!IMPORTANT]
-> Si vous définissez Windows Server Update Service comme emplacement de téléchargement, vous devez approuver les mises à jour, quel que soit l’outil de gestion que vous utilisez pour spécifier l’emplacement. Vous pouvez configurer une règle d’approbation automatique avec Windows Server Update Service, ce qui peut être utile lorsque les mises à jour arrivent au moins une fois par jour. Pour plus d’informations, voir [synchroniser les mises à jour de la protection](/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus) des points de terminaison dans Windows server update service.
+> Si vous définissez Windows Server Update Service comme emplacement de téléchargement, vous devez approuver les mises à jour, quel que soit l’outil de gestion que vous utilisez pour spécifier l’emplacement. Vous pouvez configurer une règle d’approbation automatique avec Windows Server Update Service, ce qui peut être utile lorsque les mises à jour arrivent au moins une fois par jour. Pour plus d’informations, voir synchroniser les mises à jour de la protection des points de terminaison dans [Windows server update service](/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
 
 Les procédures de cet article décrivent d’abord comment définir la commande, puis comment configurer **l’option de** partage de fichiers si vous l’avez activée.
 
@@ -109,7 +109,7 @@ Les procédures de cet article décrivent d’abord comment définir la commande
 
    2. Entrez l’ordre des sources, séparés par un seul canal, par exemple : `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC`, comme illustré dans la capture d’écran suivante.
 
-      :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="paramètre de stratégie de groupe répertoriant l’ordre des sources.":::
+      :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="Paramètre de stratégie de groupe répertoriant l’ordre des sources" lightbox="../../media/wdav-order-update-sources.png":::
 
    3. Sélectionnez **OK**. Cela définira l’ordre des sources de mise à jour de la protection.
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender de fuseau horaire
-description: Utilisez les informations contenues ici pour configurer les paramètres Microsoft 365 Defender fuseau horaire et afficher les informations de licence.
+description: Utilisez les informations contenues ici pour configurer les paramètres de fuseau Microsoft 365 Defender et afficher les informations de licence.
 keywords: paramètres, Microsoft Defender, veille contre les menaces de cybersécurité, Microsoft Defender pour le point de terminaison, fuseau horaire, utc, heure locale, licence
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4353bbfc0ce11c4a767ca599ecb23a1ab4f77a56
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: adf693bded45dcb44abd8d1e7892e5edc7b65585
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213987"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467156"
 ---
 # <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defender de fuseau horaire
 
@@ -32,7 +32,8 @@ ms.locfileid: "62213987"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-settings-abovefoldlink)
 
-Utilisez **l’icône 1 des** paramètres de fuseau horaire du menu ![ Fuseau horaire.](images/atp-time-zone.png) pour configurer le fuseau horaire et afficher les informations de licence.
+Utilisez le menu **Fuseau horaire** pour configurer le fuseau horaire et afficher les informations de licence.
+:::image type="content" source="images/atp-time-zone.png" alt-text="Paramètres de fuseau horaire -1" lightbox="images/atp-time-zone.png":::
 
 ## <a name="time-zone-settings"></a>Paramètres de fuseau horaire
 
@@ -42,7 +43,9 @@ Les enquêtes cyberforensiques s’appuient souvent sur des horodatés pour rass
 
 Microsoft Defender pour le point de terminaison peut afficher le temps universel coordonné (UTC) ou l’heure locale.
 
-Votre paramètre de fuseau horaire actuel est affiché dans les paramètres de Microsoft Defender. Vous pouvez modifier le fuseau horaire affiché dans le **menu** Fuseau horaire sous Paramètres > **de sécurité.**
+Votre paramètre de fuseau horaire actuel s’affiche dans le menu Microsoft Defender pour le point de terminaison. Vous pouvez modifier le fuseau horaire affiché dans le menu **Fuseau** horaire.
+
+:::image type="content" source="images/atp-time-zone-menu.png" alt-text="Paramètres de fuseau horaire -2" lightbox="images/atp-time-zone-menu.png":::
 
 ### <a name="utc-time-zone"></a>Fuseau horaire UTC
 
@@ -64,9 +67,10 @@ Le fuseau horaire De Microsoft Defender pour le point de terminaison est défini
 
 Pour définir le fuseau horaire :
 
-1. Cliquez sur le menu **Paramètres** dans l’icône [Microsoft 365 Defender paramètres](https://security.microsoft.com/) de fuseau horaire du ![ portail. ](images/atp-time-zone.png)
-2. Sélectionnez **Centre de sécurité.**
-3. Sélectionnez **Fuseau horaire** et définissez le fuseau horaire sur UTC ou votre fuseau horaire local.
+1. Cliquez sur **le menu Fuseau** horaire.
+   :::image type="content" source="images/atp-time-zone.png" alt-text="Paramètres de fuseau horaire -3" lightbox="images/atp-time-zone.png":::
+1. Sélectionnez **l’indicateur UTC** de fuseau horaire.
+1. **Sélectionnez le fuseau horaire UTC** ou votre fuseau horaire local, par exemple -7:00.
 
 ### <a name="regional-settings"></a>Paramètres régionaux
 
@@ -74,7 +78,7 @@ Pour appliquer différents formats de date pour Microsoft Defender pour le point
 
 #### <a name="internet-explorer-ie-and-microsoft-edge"></a>Internet Explorer (IE) et Microsoft Edge
 
-IE et Microsoft Edge utiliser  les paramètres de région configurés dans l’option **Horloges,** Langue et Région du Panneau de configuration. 
+IE et Microsoft Edge utiliser les paramètres de  région configurés dans l’option **Horloges,** Langue et Région du Panneau de configuration. 
 
 #### <a name="known-issues-with-regional-formats"></a>Problèmes connus avec les formats régionaux
 
@@ -99,4 +103,4 @@ Les formats de date et d’heure suivants ne sont actuellement pas pris en charg
 
 ##### <a name="decimal-symbol-used-in-numbers"></a>Symbole décimal utilisé dans les nombres
 
-Le symbole décimal utilisé est toujours un point, même si une virgule est sélectionnée dans les paramètres de **format** Nombres dans les **paramètres** de région. Par exemple, 15 500 000 sont affichés en tant que 15,5 000.
+Le symbole décimal utilisé est toujours un point, même si une virgule est sélectionnée dans les paramètres **de format** Nombres dans les **paramètres** de région. Par exemple, 15 500 000 sont affichés en tant que 15,5 000.

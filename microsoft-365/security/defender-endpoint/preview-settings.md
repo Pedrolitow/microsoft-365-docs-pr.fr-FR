@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 572794880015f53f6db0a3d449dd3d19987cae21
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 6b29bb45820c0fc74443f14fd2c6866bc026e969
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213989"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467288"
 ---
 # <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>Activer l’expérience d’aperçu dans Microsoft Defender pour le point de terminaison
 
@@ -37,14 +37,14 @@ ms.locfileid: "62213989"
 
 Activez le paramètre d’expérience de préversion pour être parmi les premiers à essayer les fonctionnalités à venir.
 
-1. Dans le volet de navigation, sélectionnez **Paramètres** \> **fonctionnalités avancées des points** de \> **terminaison.**
+1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Fonctionnalités** \> avancées des points **de terminaison**.
 
-    :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="paramètres et image d’expérience d’aperçu.":::
+    :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="Les paramètres et l’expérience d’aperçu" lightbox="../../media/atp-preview-features-new.png":::
 
 
-2. Basculez le paramètre entre **Sur** et **Hors et** sélectionnez Enregistrer **les préférences.**
+2. Basculez le paramètre entre **« Sur** » et « **Éteint »** et sélectionnez Enregistrer **les préférences**.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 - [Mettre à jour les paramètres généraux dans Microsoft Defender pour le point de terminaison](data-retention-settings.md)
 - [Activer les fonctionnalités avancées dans Microsoft Defender pour le point de terminaison](advanced-features.md)
 - [Configurer les notifications par courrier électronique dans Microsoft Defender pour le point de terminaison](configure-email-notifications.md)

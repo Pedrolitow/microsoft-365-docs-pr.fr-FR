@@ -8,14 +8,19 @@ audience: admin
 ms.topic: article
 ms.customer: intro-overview
 ms.prod: microsoft-365-enterprise
-search.appverid: null
+search.appverid: ''
 ms.collection:
-  - enabler-strategic
-  - m365initiative-syntex
+- enabler-strategic
+- m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez les modèles pré-SharePoint Syntex.
+ms.openlocfilehash: 1146e4947392ce0e0848632e55f22e5b8b8d2d91
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569045"
 ---
-
 # <a name="prebuilt-models-overview-in-microsoft-sharepoint-syntex"></a>Vue d’ensemble des modèles pré-SharePoint Syntex
 
 Outre la [compréhension des modèles de document](document-understanding-overview.md) et des modèles de traitement des formulaires[, SharePoint Syntex](form-processing-overview.md) des modèles pré-écrits pour automatiser l’extraction des informations.
@@ -28,9 +33,11 @@ Comme les modèles de compréhension de documents, les modèles pré-créés son
 
 Une fois que vous avez publié votre modèle, utilisez le centre de contenu pour l’appliquer à toute bibliothèque de documents SharePoint à laquelle vous avez accès.  
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 - Formats de fichiers pris en charge : JPEG, PNG, BMP, TIFF et PDF (texte incorporé ou analysé).
+
+- Langues pris en charge : seules les factures de langue anglaise du États-Unis sont actuellement pris en charge. Les reçus de ventes anglais provenant d’Australie, du Canada, États-Unis, de Grande-Zélande et d’Inde sont pris en charge.
 
 - Les PDF textuels sont les meilleurs pour éliminer le risque d’erreur dans l’extraction et l’emplacement des caractères.
 
@@ -46,7 +53,7 @@ Une fois que vous avez publié votre modèle, utilisez le centre de contenu pour
 
 ### <a name="file-limitations"></a>Limitations de fichier
 
-Notez les différences suivantes concernant Microsoft Office texte et les fichiers analysés par OCR (PDF, image ou TIFF) :
+Notez les différences suivantes concernant Microsoft Office texte et les fichiers analysés par l’ocr (PDF, image ou TIFF) :
 
 - Office fichiers : tronqués à 64 000 caractères (lorsqu’ils sont exécutés sur des fichiers d’une bibliothèque de documents).
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: cbf2049841f2987eb71e9c716de133872c1e6a81
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: cfbd91743ed2e61809d9e2b6f0243b5c327bdae4
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156543"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467552"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>Résoudre des problèmes d’abonnement et de portail d’accès
 
@@ -39,7 +39,7 @@ Si vous recevez un message d’erreur, Microsoft 365 Defender fournit une explic
 
 ## <a name="no-subscriptions-found"></a>Aucun abonnement trouvé
 
-Si, lors de l’accès à Microsoft 365 Defender vous obtenez un **message** aucun abonnement trouvé, cela signifie que le Azure Active Directory (Azure AD) utilisé pour se connecter à l’utilisateur sur le portail n’a pas de licence Microsoft Defender pour le point de terminaison.
+Si, lors de l’accès à Microsoft 365 Defender vous obtenez **un message aucun** abonnement trouvé, cela signifie que le Azure Active Directory (Azure AD) utilisé pour se connecter à l’utilisateur sur le portail n’a pas de licence Microsoft Defender pour le point de terminaison.
 
 Raisons potentielles :
 
@@ -48,35 +48,35 @@ Raisons potentielles :
   - Il peut s’agit d’un problème de mise en service de licence.
   - Il se peut que vous avez mis en service par inadvertance la licence sur une autre Microsoft Azure AD que celle utilisée pour l’authentification dans le service.
 
-Dans les deux cas, vous devez contacter le support Microsoft à l’aide du support [général de Microsoft Defender pour](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) les points de terminaison ou du support de licence en [volume.](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx)
+Dans les deux cas, vous devez contacter le support Microsoft au niveau du support [général de Microsoft Defender for Endpoint](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) ou de la prise en charge des [licences en volume](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx).
 
-![Image d’aucun abonnement trouvé.](images/atp-no-subscriptions-found.png)
+:::image type="content" source="images/atp-no-subscriptions-found.png" alt-text="Page Aucun abonnement trouvé" lightbox="images/atp-no-subscriptions-found.png":::
 
 ## <a name="your-subscription-has-expired"></a>Votre abonnement a expiré
 
-Si, lors de l’Microsoft 365 Defender vous obtenez un **message** votre abonnement a expiré, votre abonnement de service en ligne a expiré. L’abonnement Microsoft Defender pour les points de terminaison, comme tout autre abonnement de service en ligne, a une date d’expiration.
+Si, lors de l’Microsoft 365 Defender vous obtenez **un message votre** abonnement a expiré, votre abonnement de service en ligne a expiré. L’abonnement Microsoft Defender pour les points de terminaison, comme tout autre abonnement de service en ligne, a une date d’expiration.
 
-Vous pouvez choisir de renouveler ou de prolonger la licence à tout moment. Lorsque vous accédez au portail après la date d’expiration, un **message** votre abonnement a expiré se présente avec une option pour télécharger le package de la sortie de l’appareil, si vous choisissez de ne pas renouveler la licence.
+Vous pouvez choisir de renouveler ou de prolonger la licence à tout moment. Lorsque vous accédez au portail après la date d’expiration, **un message votre** abonnement a expiré se présente avec une option pour télécharger le package de la sortie de l’appareil, si vous choisissez de ne pas renouveler la licence.
 
 > [!NOTE]
 > Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages de offboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
 
-![Image de l’abonnement expiré.](images/atp-subscription-expired.png)
+:::image type="content" source="images/atp-subscription-expired.png" alt-text="Message de notification expiré de l’abonnement" lightbox="images/atp-subscription-expired.png":::
 
 ## <a name="you-are-not-authorized-to-access-the-portal"></a>Vous n’êtes pas autorisé à accéder au portail
 
 Si vous recevez une demande Vous n’êtes pas autorisé à accéder au **portail,** sachez que Microsoft Defender pour le point de terminaison est un produit de surveillance de la sécurité, d’examen des incidents et de réponse. En tant que tel, l’accès à celui-ci est restreint et contrôlé par l’utilisateur.
-Pour plus d’informations, voir [**Attribuer un accès utilisateur au portail.**](/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection)
+Pour plus d’informations, voir [**Attribuer un accès utilisateur au portail**](/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection).
 
-![Image d’un utilisateur non autorisé à accéder au portail.](images/atp-not-authorized-to-access-portal.png)
+:::image type="content" source="images/atp-not-authorized-to-access-portal.png" alt-text="Message de notification d’accès non autorisé" lightbox="images/atp-not-authorized-to-access-portal.png":::
 
 ## <a name="data-currently-isnt-available-on-some-sections-of-the-portal"></a>Les données ne sont actuellement pas disponibles sur certaines sections du portail
 
 Si le tableau de bord du portail et d’autres sections indiquent un message d’erreur tel que « Les données ne sont actuellement pas disponibles » :
 
-![L’image des données n’est actuellement pas disponible.](images/atp-data-not-available.png)
+:::image type="content" source="images/atp-data-not-available.png" alt-text="Message de notification d’indisponibilité des données" lightbox="images/atp-data-not-available.png":::
 
-Vous devez autoriser tous les sous-domaine sous celui-ci `security.windows.com` sur votre navigateur web. Par exemple : `*.security.windows.com`.
+Vous devez autoriser tous `security.windows.com` les sous-domaine sous celui-ci sur votre navigateur web. Par exemple : `*.security.windows.com`.
 
 ## <a name="portal-communication-issues"></a>Problèmes de communication du portail
 

@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: Effectuer les étapes de migration d’un service ou d’un appareil de protection tiers vers Microsoft Defender pour Office 365 protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3798bdb28bb44b5148574b4c09a372ff564e47e5
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 9160a6fc79ba94e4cb86fb0f96f46e565c0f613c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321434"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467508"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Migrer vers Microsoft Defender pour Office 365 - Phase 3 : Intégration
 
@@ -33,7 +33,7 @@ ms.locfileid: "62321434"
 
 <br>
 
-|[![Phase 1 : Préparer.](../../media/phase-diagrams/prepare.png)](migrate-to-defender-for-office-365-prepare.md) <br> [Phase 1 : préparation](migrate-to-defender-for-office-365-prepare.md)|[![Phase 2 : Configurer.](../../media/phase-diagrams/setup.png)](migrate-to-defender-for-office-365-setup.md) <br> [Phase 2 : configuration](migrate-to-defender-for-office-365-setup.md)|![Phase 3 : Intégration.](../../media/phase-diagrams/onboard.png) <br> Phase 3 : intégration|
+|[![Phase 1 : Préparer.](../../media/phase-diagrams/prepare.png#lightbox)](migrate-to-defender-for-office-365-prepare.md) <br> [Phase 1 : préparation](migrate-to-defender-for-office-365-prepare.md)|[![Phase 2 : Configurer.](../../media/phase-diagrams/setup.png#lightbox)](migrate-to-defender-for-office-365-setup.md) <br> [Phase 2 : configuration](migrate-to-defender-for-office-365-setup.md)|![Phase 3 : Intégration.](../../media/phase-diagrams/onboard.png) <br> Phase 3 : intégration|
 |---|---|---|
 |||*Vous êtes là !*|
 
@@ -52,14 +52,14 @@ Bienvenue dans **la phase 3 : intégration de** **[votre migration vers Microsof
 
 Si votre organisation dispose d’une équipe de réponse à la sécurité, il est maintenant temps de commencer à intégrer Microsoft Defender pour Office 365 dans vos processus de réponse, y compris les systèmes de gestion des tickets. Il s’agit d’un sujet entier en lui-même, mais il est parfois ignoré. L’intervention précoce de l’équipe de réponse à la sécurité garantit que votre organisation est prête à gérer les menaces lorsque vous changez vos enregistrements MX. La réponse aux incidents doit être bien équipé pour gérer les tâches suivantes :
 
-- Découvrez les nouveaux outils et intégrez-les aux flux existants. Par exemple :
+- Découvrez les nouveaux outils et intégrez-les aux flux existants. Par exemple :
   - La gestion par l’administrateur des messages mis en quarantaine est importante. Pour obtenir des instructions, voir [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur](manage-quarantined-messages-and-files.md).
   - Le suivi des messages vous permet de voir ce qui est arrivé aux messages à mesure qu’ils entrent ou quittent Microsoft 365. Pour plus d’informations, voir [Suivi des messages dans le centre d’administration Exchange moderne dans Exchange Online](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
 - Identifiez les risques qui ont pu être laissés dans l’organisation.
 - Régler et personnaliser les [alertes pour](../../compliance/alert-policies.md) les processus organisationnels.
 - Gérez la file d’attente des incidents et remédiez aux risques potentiels.
 
-Si votre organisation a acheté Microsoft Defender pour Office 365 Plan 2, elle doit commencer à se familiariser avec les fonctionnalités telles que l’Explorateur de menaces, la recherche avancée et les incidents. Pour obtenir des formations pertinentes, voir <https://aka.ms/mdoninja>.
+Si votre organisation a acheté Microsoft Defender pour Office 365 Plan 2, elle doit commencer à se familiariser et à utiliser des fonctionnalités telles que l’Explorateur de menaces, la recherche avancée et les incidents. Pour obtenir des formations pertinentes, voir <https://aka.ms/mdoninja>.
 
 Si votre équipe de réponse à la sécurité collecte et analyse les messages non filtrés, vous pouvez configurer une boîte aux lettres SecOps pour recevoir ces messages non filtrés. Pour obtenir des instructions, [voir Configurer les boîtes aux lettres SecOps dans la stratégie de remise avancée](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
@@ -78,8 +78,8 @@ Si votre organisation ne dispose pas d’une équipe de réponse à la sécurit�
 
 Les autorisations dans Defender pour Office 365 sont basées sur le contrôle d’accès basé sur un rôle (RBAC) et sont expliquées dans Les autorisations [dans le portail Microsoft 365 Defender.](permissions-microsoft-365-security-center.md) Voici les points importants à garder à l’esprit :
 
-- Azure AD rôles donnent des autorisations à **toutes les charges** de travail dans Microsoft 365. Par exemple, si vous ajoutez un utilisateur à l’administrateur de sécurité dans le portail Azure, il a des autorisations d’administrateur de sécurité partout.
-- Les & de collaboration dans le portail Microsoft 365 Defender donnent des autorisations sur le portail Microsoft 365 Defender, le Centre de conformité Microsoft 365 et l’ancien Centre de sécurité & conformité. Par exemple, si vous ajoutez un utilisateur à l’administrateur de sécurité dans le portail Microsoft 365 Defender, il n’a  accès qu’au portail Microsoft 365 Defender, au Centre de conformité Microsoft 365 et au Centre de conformité des & de sécurité.
+- Azure AD donnent des autorisations à **toutes les charges** de travail dans Microsoft 365. Par exemple, si vous ajoutez un utilisateur à l’administrateur de sécurité dans le portail Azure, il a des autorisations d’administrateur de sécurité partout.
+- Les & de collaboration dans le portail Microsoft 365 Defender donnent des autorisations sur le portail Microsoft 365 Defender, le Centre de conformité Microsoft 365 et l’ancien Centre de sécurité & conformité. Par exemple, si vous ajoutez un utilisateur à l’administrateur de sécurité dans le portail Microsoft 365 Defender, il n’a  accès à l’administrateur de sécurité que dans le portail Microsoft 365 Defender, le Centre de conformité Microsoft 365 et le Centre de conformité du & de sécurité.
 - De nombreuses fonctionnalités du portail Microsoft 365 Defender sont basées sur des cmdlets PowerShell Exchange Online et nécessitent donc l’appartenance à un groupe de rôles dans les rôles correspondants (techniquement, les groupes de rôles) dans Exchange Online (en particulier, pour l’accès au Exchange Online  Cmdlets PowerShell).
 - Il existe des rôles de collaboration de & de messagerie sur le portail Microsoft 365 Defender qui n’ont pas d’équivalent aux rôles Azure AD et qui sont importants pour les opérations de sécurité (par exemple, le rôle Aperçu et le rôle Recherche et purge).
 
@@ -227,6 +227,6 @@ Félicitations ! Vous avez terminé votre [migration vers Microsoft Defender po
 
 Maintenant, vous commencez le fonctionnement normal et la maintenance de Defender pour Office 365. Surveillez et surveillez les problèmes semblables à ceux que vous avez expérimentés au cours du projet pilote, mais à plus grande échelle. Les [informations sur l’usurpation](learn-about-spoof-intelligence.md) d’identité et l’emprunt d’identité seront très utiles, mais envisagez d’effectuer les activités suivantes régulièrement :[](impersonation-insight.md)
 
-- Examiner les soumissions d’utilisateurs, en [particulier les messages de hameçonnage signalés par l’utilisateur](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)
+- Examiner les soumissions d’utilisateurs, en [particulier les messages de hameçonnage signalés par l’utilisateur](automated-investigation-response-office.md)
 - Passer en revue les remplacements dans le rapport [d’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report).
 - Utilisez [des requêtes de recherche](/microsoft-365/security/defender/advanced-hunting-example) avancée pour rechercher des opportunités de réglage et des messages à risque.

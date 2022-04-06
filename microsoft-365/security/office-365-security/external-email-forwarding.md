@@ -16,12 +16,12 @@ ms.custom:
 description: Cet article couvre des rubriques telles que le forwarding de courrier externe, le forwarding automatique, 5.7.520 Accès refusé, la désactivation du forwarding externe, « Votre administrateur a désactivé le forwarding externe » messages, ainsi que la stratégie anti-courrier indésirable sortant.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14b41f21efe3608096636444afd4b36de3742a85
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8df0ff9902fe22fd44a0d15f7f01e13e791c7b12
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681411"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473604"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Contrôler le forwarding automatique du courrier externe dans Microsoft 365
 
@@ -59,7 +59,7 @@ Pour obtenir des instructions sur la configuration de ces paramètres, voir Conf
 
 ## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>Fonctionnement des paramètres de stratégie de filtrage du courrier indésirable sortant avec d’autres contrôles de transmission automatique du courrier électronique
 
-En tant qu’administrateur, vous avez peut-être déjà configuré d’autres contrôles pour autoriser ou bloquer le forwarding automatique du courrier électronique. Par exemple :
+En tant qu’administrateur, vous avez peut-être déjà configuré d’autres contrôles pour autoriser ou bloquer le forwarding automatique du courrier électronique. Par exemple :
 
 - [Domaines distants permettant](/exchange/mail-flow-best-practices/remote-domains/remote-domains) d’autoriser ou de bloquer le forwarding automatique du courrier électronique vers tout ou partie des domaines externes.
 - Conditions et actions dans Exchange règles de flux de [messagerie (également](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) appelées règles de transport) pour détecter et bloquer les messages automatiquement transmis à des destinataires externes.
@@ -91,7 +91,8 @@ Les informations suivantes sont requises pour créer la règle de flux de messag
 - (Facultatif) **Pour ce faire** (action), vous pouvez configurer une action facultative. Par exemple, vous pouvez utiliser l’action Modifier les propriétés du **message** définir un en-tête de **message**\>, avec le nom d’en-tête **X-Forwarded** et la valeur **True**. Toutefois, la configuration d’une action n’est pas obligatoire.
 - **Définissez cet rue avec le niveau de gravité** sur **la valeur Low**, **Medium** ou **High**. Ce paramètre vous permet d’utiliser le rapport [Exchange règle de transport pour](view-email-security-reports.md#exchange-transport-rule-report) obtenir les détails des utilisateurs qui sont en cours de transport.
 
-![Propriétés de règle de flux de messagerie dans le EAC pour une règle permettant d’identifier les messages transmis.](../../media/mail-flow-rule-for-forwarded-messages.png)
+:::image type="content" source="../../media/mail-flow-rule-for-forwarded-messages.png" alt-text="Propriétés de règle de flux de messagerie dans le EAC pour une règle permettant d’identifier les messages transmis" lightbox="../../media/mail-flow-rule-for-forwarded-messages.png":::
+
 
 ## <a name="blocked-email-forwarding-messages"></a>Messages de courrier bloqués
 

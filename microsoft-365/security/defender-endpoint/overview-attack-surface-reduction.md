@@ -15,14 +15,16 @@ audience: ITPro
 ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
-ms.collection: m365initiative-m365-defender
+ms.collection:
+- m365initiative-m365-defender
+- M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 78fdd5c6c02990943874807c285f8e5eb60ad6ad
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 9c489d28467582e0f95f3fde7440ff43022c44e1
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807583"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682039"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Comprendre et utiliser les fonctionnalités de réduction de la surface d’attaque
 
@@ -51,7 +53,7 @@ Pour configurer la réduction de la surface d’attaque dans votre environnement
 
    1. Passer en revue les stratégies de base Windows. Voir [exemples de stratégies de base](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies).
    2. Consultez le [Windows Defender de conception du contrôle d’application](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide).
-   3. [Reportez-vous au Déploiement Windows Defender de contrôle d’application (WDAC).](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)
+   3. [Reportez-vous au déploiement Windows Defender de contrôle d’application (WDAC).](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)
 
 3. [Activer l’accès contrôlé aux dossiers](enable-controlled-folders.md).
 
@@ -78,7 +80,7 @@ Pour configurer la réduction de la surface d’attaque dans votre environnement
 
 Dans le cadre de l’équipe de sécurité de votre organisation, vous pouvez configurer les fonctionnalités de réduction de la surface d’attaque pour qu’elles s’exécutent en mode audit pour voir comment elles fonctionneront. En mode audit, vous pouvez activer :
 
-- Règles de réduction de la surface d’attaque
+- Règles de réduction des surfaces d'attaque
 - Exploit Protection
 - Protection réseau
 - Accès contrôlé aux dossiers en mode audit
@@ -99,7 +101,7 @@ Vous pouvez activer le mode audit à l’aide de la stratégie de groupe, de Pow
 > Vous pouvez également visiter le site Windows Defender Testground sur [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que les fonctionnalités fonctionnent et voir comment elles fonctionnent.
 
 > [!NOTE]
-> Le site de démonstration Defender for Endpoint demo.wd.microsoft.com est supprimé et sera supprimé à l’avenir.
+> Le site de démonstration Defender pour point de terminaison sur demo.wd.microsoft.com est déconseillé et sera supprimé à l’avenir.
 
 | Options d’audit | Comment activer le mode audit | Comment afficher les événements |
 |---|---|---|
@@ -147,7 +149,7 @@ Vous pouvez également accéder manuellement à la zone d’événement qui corr
 
 #### <a name="copy-the-xml-directly"></a>Copier le XML directement
 
-1. **Tapez l’Observateur** d’événements menu Démarrer et ouvrez l’observateur Windows **événements**.
+1. **Tapez l’Observateur** d’événements menu Démarrer et ouvrez l **Windows’observateur d’événements**.
 
 2. Dans le panneau gauche, sous **Actions**, **sélectionnez Créer un affichage personnalisé...**
 
@@ -215,7 +217,7 @@ Vous pouvez également accéder manuellement à la zone d’événement qui corr
 
 ### <a name="list-of-attack-surface-reduction-events"></a>Liste des événements de réduction de la surface d’attaque
 
-Tous les événements de réduction de la surface d’attaque se trouvent sous Journaux des applications et des **services > Microsoft > Windows**, puis dans le dossier ou le fournisseur répertoriés dans le tableau suivant.
+Tous les événements de réduction de la surface d’attaque se trouvent sous Journaux des applications et des **services > Microsoft > Windows** puis le dossier ou le fournisseur répertoriés dans le tableau suivant.
 
 Vous pouvez accéder à ces événements dans l Windows’observateur d’événements :
 

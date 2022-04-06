@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 36df54090e80de180ffa16f41641daa6b6966eb9
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 2a12a4198b91ab6ec91e0b49b9de3647e25d0be0
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681323"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473846"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Stratégies courantes d’accès aux appareils et aux identités de confiance zéro
 
@@ -76,7 +76,7 @@ Une pratique recommandée consiste à créer un groupe Azure AD pour l’exclusi
 
 Voici un exemple d’attribution de groupe et d’exclusions pour exiger l’ation MFA.
 
-![Exemple d’attribution de groupe et d’exclusions pour les stratégies mfa.](../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png" alt-text="Exemple d’attribution de groupe et d’exclusions pour les stratégies mfa" lightbox="../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png":::
 
 Voici les résultats :
 
@@ -94,7 +94,7 @@ Soyez prudent lorsque vous appliquez des niveaux de protection plus élevés aux
 
 Tous Azure AD groupes créés dans le cadre de ces recommandations doivent être créés en tant que Microsoft 365 groupes. Ceci est important pour le déploiement d’étiquettes de sensibilité lors de la sécurisation des documents Microsoft Teams et SharePoint.
 
-![Exemple de création d’Microsoft 365 groupe.](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png" alt-text="Création d’Microsoft 365 groupe" lightbox="../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png":::
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Exiger l’mf en fonction du risque de la sign-in
 
@@ -190,7 +190,7 @@ Dans la deuxième section **Affectations** :
 
 |Type|Propriétés|Valeurs|Action|
 |---|---|---|---|
-|Access|**Autoriser l’accès**||Sélectionner|
+|Accès|**Autoriser l’accès**||Sélectionner|
 |||**Exiger le changement du mot de passe**|Chèque|
 
 Choisissez **Terminé** pour enregistrer les **paramètres Access** .
@@ -334,8 +334,8 @@ Pour les appareils Enterprise profils de travail Android :
 
 |Niveau de protection  |Stratégie d’appareil |Plus d’informations  |
 |---------|---------|---------|
-|Point de départ     |Profil professionnel : sécurité de base (niveau 1)      |S/O         |
-|Entreprise     |Profil professionnel : sécurité de base (niveau 1)         |S/O         |
+|Point de départ     |Profil professionnel : sécurité de base (niveau 1)      |N/A         |
+|Entreprise     |Profil professionnel : sécurité de base (niveau 1)         |N/A         |
 |Point de départ     |Gestion complète : sécurité renforcée (niveau 2)       |Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.         |
 |Entreprise     |Gestion complète : sécurité renforcée (niveau 2)         |Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.         |
 |Sécurité spécialisée     |Haute sécurité (Niveau 3)         |Les paramètres de stratégie appliqués au niveau 3 incluent tous les paramètres de stratégie recommandés pour les niveaux 1 et 2 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 2.         |
@@ -442,6 +442,6 @@ Pour exiger la conformité pour tous les appareils :
 
 ## <a name="next-step"></a>Étape suivante
 
-[![Étape 3 : Stratégies pour les utilisateurs invités et externes.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
+[![Étape 3 : Stratégies pour les utilisateurs invités et externes.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png#lightbox)](identity-access-policies-guest-access.md)
 
 [En savoir plus sur les recommandations de stratégie pour les utilisateurs invités et externes](identity-access-policies-guest-access.md)

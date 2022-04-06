@@ -16,28 +16,28 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 79c435618f03a8bdbd69638c66b728597cd63cab
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8727baa9bb1935a1186907ca5f3d9d4f82dad6d4
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165989"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473648"
 ---
-# <a name="review-microsoft-defender-antivirus-scan-results"></a>Passer en Antivirus Microsoft Defender résultats d’analyse
+# <a name="review-microsoft-defender-antivirus-scan-results"></a>Examiner les Antivirus Microsoft Defender d’analyse
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Une fois Antivirus Microsoft Defender analyse complète, qu’il s’agit d’une analyse à la demande ou d’une analyse [programmée,](scheduled-catch-up-scans-microsoft-defender-antivirus.md)les résultats sont enregistrés et vous pouvez afficher les résultats. [](run-scan-microsoft-defender-antivirus.md) 
+Une fois Antivirus Microsoft Defender analyse terminée, qu’il s’agit d’une analyse à la demande ou d’une analyse [programmée, les](scheduled-catch-up-scans-microsoft-defender-antivirus.md) résultats sont enregistrés et vous pouvez afficher les résultats.[](run-scan-microsoft-defender-antivirus.md) 
 
 
 ## <a name="use-configuration-manager-to-review-scan-results"></a>Utiliser Configuration Manager pour passer en revue les résultats de l’analyse
 
-Découvrez [comment surveiller l’état Endpoint Protection des ordinateurs.](/configmgr/protect/deploy-use/monitor-endpoint-protection)
+Découvrez [comment surveiller l’état Endpoint Protection’écran](/configmgr/protect/deploy-use/monitor-endpoint-protection).
 
 ## <a name="use-powershell-cmdlets-to-review-scan-results"></a>Utiliser les cmdlets PowerShell pour passer en revue les résultats de l’analyse
 
@@ -47,9 +47,9 @@ L’cmdlet suivante retourne chaque détection sur le point de terminaison. S’
 Get-MpThreatDetection
 ```
 
-:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="Capture d’écran des cmdlets et sorties PowerShell.":::
+:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="Cmdlets et sorties PowerShell" lightbox="../../media/wdav-get-mpthreatdetection.png":::
 
-Vous pouvez `-ThreatID` spécifier de limiter la sortie pour afficher uniquement les détections pour une menace spécifique.
+Vous pouvez spécifier `-ThreatID` de limiter la sortie pour afficher uniquement les détections pour une menace spécifique.
 
 Si vous souhaitez lister les détections de menaces, mais combiner les détections de la même menace en un seul élément, vous pouvez utiliser la cmdlet suivante :
 
@@ -57,16 +57,16 @@ Si vous souhaitez lister les détections de menaces, mais combiner les détectio
 Get-MpThreat
 ```
 
-:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="Code PowerShell.":::
+:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="Le code PowerShell" lightbox="../../media/wdav-get-mpthreat.png":::
 
-Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter les [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Antivirus Defender.
+Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir utiliser les [cmdlets PowerShell pour configurer et exécuter les cmdlets Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et [Antivirus Defender](/powershell/module/defender/).
 
 ## <a name="use-windows-management-instruction-wmi-to-review-scan-results"></a>Utiliser Windows Management Instruction (WMI) pour passer en revue les résultats de l’analyse
 
-Utilisez la [ **méthode Get** des **classes MSFT_MpThreat** et **MSFT_MpThreatDetection**](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) classes.
+Utilisez la [**méthode Get** des **classes MSFT_MpThreat** et **MSFT_MpThreatDetection**](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) classes.
 
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Personnaliser, lancer et passer en revue les résultats des analyses et Antivirus Microsoft Defender correction](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Personnaliser, lancer et examiner les résultats des analyses et Antivirus Microsoft Defender correction](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

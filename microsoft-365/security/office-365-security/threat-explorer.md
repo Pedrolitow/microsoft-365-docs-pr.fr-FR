@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b3ff79ead1e337bb78772109e57d34836d0f4ec9
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 29a00c20333c27fcd8138063f31316241b784572
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681609"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467024"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Détections en temps réel et de l’Explorateur de menaces
 
@@ -41,7 +41,7 @@ Si votre organisation dispose  de [Microsoft Defender pour Office 365](defender-
 
 Les détections en temps réel ou d’explorateur permettent à votre équipe des opérations de sécurité d’examiner et de répondre efficacement aux menaces. Le rapport ressemble à l’image suivante :
 
-![Allez dans l’Explorateur de gestion des \> menaces.](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+:::image type="content" source="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png" alt-text="L’élément de menu Explorateur dans le portail de sécurité & conformité" lightbox="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png":::
 
 Avec ce rapport, vous pouvez :
 
@@ -61,10 +61,10 @@ Nous rendons cette intégration plus pertinente en introduisant l’ID d’alert
 L’ID d’alerte est disponible dans l’URL lorsque vous affichez une alerte individuelle . exemple : `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`.
 
 > [!div class="mx-imgBorder"]
-> ![Filtrage de l’ID d’alerte.](../../media/AlertID-Filter.png)
+> :::image type="content" source="../../media/AlertID-Filter.png" alt-text="Filtrage de l’ID d’alerte" lightbox="../../media/AlertID-Filter.png":::
 
 > [!div class="mx-imgBorder"]
-> ![ID d’alerte dans le volant d’informations.](../../media/AlertID-DetailsFlyout.png)
+> :::image type="content" source="../../media/AlertID-DetailsFlyout.png" alt-text="ID d’alerte dans le flyout d’informations" lightbox="../../media/AlertID-DetailsFlyout.png":::
 
 ### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days"></a>Extension de la limite de rétention et de recherche des données de l’Explorateur (et des détections en temps réel) pour les clients d’essai de 7 à 30 jours
 
@@ -89,7 +89,7 @@ Dans l’Explorateur de menaces, vous pouvez voir les informations sur les balis
 La **colonne Balises** dans la grille de courrier contient toutes les balises qui ont été appliquées aux boîtes aux lettres de l’expéditeur ou du destinataire. Par défaut, les balises système telles que les comptes de priorité sont affichées en premier.
 
 > [!div class="mx-imgBorder"]
-> ![Filtrer les balises dans l’affichage Grille du courrier électronique.](../../media/tags-grid.png)
+> :::image type="content" source="../../media/tags-grid.png" alt-text="Balises Filter en affichage Grille de courrier électronique" lightbox="../../media/tags-grid.png":::
 
 #### <a name="filtering"></a>Filtrage
 
@@ -98,7 +98,7 @@ Vous pouvez utiliser des balises comme filtre. Recherchez uniquement les comptes
 [![Filtrer les balises.](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![Ne pas filtrer les balises.](../../media/tags-filter-not.png)
+> :::image type="content" source="../../media/tags-filter-not.png" alt-text="Balises qui ne sont pas filtrées" lightbox="../../media/tags-filter-not.png":::
 
 #### <a name="email-detail-flyout"></a>Flyout des détails des e-mails
 
@@ -106,14 +106,14 @@ Pour afficher les balises individuelles de l’expéditeur et du destinataire, s
 Les informations sur les balises individuelles pour l’expéditeur et le destinataire s’étendent également aux données CSV exportées, où vous pouvez voir ces détails dans deux colonnes distinctes.
 
 > [!div class="mx-imgBorder"]
-> ![Balises de détails du courrier électronique.](../../media/tags-flyout.png)
+> :::image type="content" source="../../media/tags-flyout.png" alt-text="Balises Détails de l’e-mail" lightbox="../../media/tags-flyout.png":::
 
 Les informations sur les balises sont également affichées dans le volant des clics d’URL. Pour l’afficher, consultez l’affichage Hameçonnage ou Tous les  e-mails, puis l’onglet Url **ou Clics d’URL**. Sélectionnez un volant d’URL individuel pour afficher des détails supplémentaires sur les clics pour cette URL, y compris les balises associées à ce clic.
 
 ### <a name="updated-timeline-view"></a>Affichage de chronologie mis à jour
 
 > [!div class="mx-imgBorder"]
-> ![Balises d’URL.](../../media/tags-urls.png)
+> :::image type="content" source="../../media/tags-urls.png" alt-text="Balises d’URL" lightbox="../../media/tags-urls.png":::
 >
 Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4).
 
@@ -137,12 +137,12 @@ L’ensemble des technologies de détection inclut désormais de nouvelles méth
 Vous pouvez maintenant voir la menace spécifique pour une URL sous l’onglet **Détails du volant de courrier** électronique. La menace peut être *un programme malveillant*, *un hameçonnage*, *un courrier* indésirable ou *aucun*.)
 
 > [!div class="mx-imgBorder"]
-> ![Menaces d’URL.](../../media/URL_Threats.png)
+> :::image type="content" source="../../media/URL_Threats.png" alt-text="Menaces d’URL" lightbox="../../media/URL_Threats.png":::
 
 ### <a name="updated-timeline-view-upcoming"></a>Affichage chronologique mis à jour (à venir)
 
 > [!div class="mx-imgBorder"]
-> ![Affichage de chronologie mis à jour.](../../media/Email_Timeline.png)
+> :::image type="content" source="../../media/Email_Timeline.png" alt-text="Affichage de chronologie mis à jour" lightbox="../../media/Email_Timeline.png":::
 
 L’affichage Chronologie identifie tous les événements de remise et de post-remise. Il inclut des informations sur la menace identifiée à ce moment-là pour un sous-ensemble de ces événements. L’affichage Chronologie fournit également des informations sur toute action supplémentaire prise (par exemple, ZAP ou la correction manuelle), ainsi que le résultat de cette action. Les informations d’affichage de chronologie incluent :
 
@@ -159,7 +159,7 @@ Actuellement, nous faisons surface de l’emplacement de remise dans la grille d
 **L’emplacement de remise d’origine** fournit plus d’informations sur l’endroit où un e-mail a été remis initialement. **L’emplacement de remise le** plus récent état où un e-mail a été envoyé après des actions système telles que *ZAP* ou des actions d’administrateur telles que Déplacer *vers les éléments supprimés*. L’emplacement de remise le plus récent est destiné à indiquer aux administrateurs le dernier emplacement connu après la remise du message ou toute action système/administrateur. Il n’inclut aucune action de l’utilisateur final dans le courrier électronique. Par exemple, si un utilisateur a supprimé un message ou déplacé le message vers l’archive/pst, l’emplacement de « remise » du message ne sera pas mis à jour. Toutefois, si une action du système a mis à jour l’emplacement (par exemple, ZAP et qu’un e-mail est mis en **quarantaine),** l’emplacement de remise le plus récent s’affiche comme « quarantaine ».
 
 > [!div class="mx-imgBorder"]
-> ![Emplacements de remise mis à jour.](../../media/Updated_Delivery_Location.png)
+> :::image type="content" source="../../media/Updated_Delivery_Location.png" alt-text="Emplacements de remise mis à jour" lightbox="../../media/Updated_Delivery_Location.png":::
 
 > [!NOTE]
 > Dans certains cas, l’emplacement **de** remise et **l’action de remise** peuvent s’afficher comme « inconnus » :
@@ -169,7 +169,7 @@ Actuellement, nous faisons surface de l’emplacement de remise dans la grille d
 > - **L’emplacement de remise** le plus récent peut être inconnu si une tentative d’action d’administrateur/système (telle que ZAP) a été tentée, mais que le message n’a pas été trouvé. En règle générale, l’action se produit après que l’utilisateur a déplacé ou supprimé le message. Dans ce cas, vérifiez la colonne **Résultat/Détails** dans l’affichage chronologie. Recherchez l’instruction « Message déplacé ou supprimé par l’utilisateur ».
 
 > [!div class="mx-imgBorder"]
-> ![Emplacements de remise pour la chronologie.](../../media/Updated_Timeline_Delivery_Location.png)
+> :::image type="content" source="../../media/Updated_Timeline_Delivery_Location.png" alt-text="Emplacements de remise pour la chronologie" lightbox="../../media/Updated_Timeline_Delivery_Location.png":::
 
 ### <a name="additional-actions"></a>Actions supplémentaires
 
@@ -179,7 +179,7 @@ Actuellement, nous faisons surface de l’emplacement de remise dans la grille d
 > Dans le cadre des modifications en attente, la valeur « Supprimé par ZAP » actuellement mise en avant dans le filtre Action de remise va disparaître. Vous pouvez rechercher tous les messages électroniques avec la tentative ZAP via des **actions supplémentaires**.
 
 > [!div class="mx-imgBorder"]
-> ![Actions supplémentaires dans l’Explorateur.](../../media/Additional_Actions.png)
+> :::image type="content" source="../../media/Additional_Actions.png" alt-text="Actions supplémentaires dans l’Explorateur" lightbox="../../media/Additional_Actions.png":::
 
 ### <a name="system-overrides"></a>Remplacements système
 
@@ -198,7 +198,7 @@ Actuellement, nous faisons surface de l’emplacement de remise dans la grille d
 [![Remplacements système dans l’Explorateur.](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![Le système remplace la grille dans l’Explorateur.](../../media/System_Overrides_Grid.png)
+> :::image type="content" source="../../media/System_Overrides_Grid.png" alt-text="Le système remplace la grille dans l’Explorateur" lightbox="../../media/System_Overrides_Grid.png":::
 
 ### <a name="improvements-for-the-url-and-clicks-experience"></a>Améliorations apportées à l’URL et aux clics
 
@@ -206,7 +206,7 @@ Les améliorations sont les suivantes :
 
 - Affichez l’URL sur le clic complet (y compris les paramètres de requête qui font partie de l’URL) dans la section **Clics** du volant d’URL. Actuellement, le domaine et le chemin d’accès de l’URL apparaissent dans la barre de titre. Nous étendons ces informations pour afficher l’URL complète.
 
-- Correctifs entre les filtres d’URL (*URL* par rapport au domaine *d’URL* ou au domaine et chemin d’accès de *l’URL*) : les mises à jour affectent la recherche de messages qui contiennent un verdict URL/clic. Nous avons activé la prise en charge des recherches non spécifiques au protocole, afin que vous pouvez rechercher une URL sans utiliser `http`. Par défaut, la recherche d’URL est m’indique http, sauf si une autre valeur est explicitement spécifiée. Par exemple :
+- Correctifs entre les filtres d’URL (*URL* par rapport au domaine *d’URL* ou au domaine et chemin d’accès de *l’URL*) : les mises à jour affectent la recherche de messages qui contiennent un verdict URL/clic. Nous avons activé la prise en charge des recherches non spécifiques au protocole, afin que vous pouvez rechercher une URL sans utiliser `http`. Par défaut, la recherche d’URL est m’indique http, sauf si une autre valeur est explicitement spécifiée. Par exemple :
   - Recherchez avec et sans le `http://` préfixe dans les champs **de filtre URL**, Domaine **d’URL** et Domaine **d’URL et** Chemin d’accès. Les recherches doivent afficher les mêmes résultats.
   - Recherchez le préfixe `https://` dans **l’URL**. Lorsqu’aucune valeur n’est spécifiée, le `http://` préfixe est supposé.
   - `/` est ignoré au début et à la fin du chemin **d’URL**, du domaine **d’URL**, du domaine **d’URL et des champs de chemin d’accès** . `/` à la fin du champ **URL** est ignoré.
@@ -236,14 +236,14 @@ Vous pouvez désormais trier et filtrer des balises utilisateur système ou pers
 > Le filtrage et le tri par balises utilisateur sont actuellement en prévisualisation publique. Cette fonctionnalité peut être considérablement modifiée avant sa publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, en ce qui concerne les informations fournies à son sujet.
 
 > [!div class="mx-imgBorder"]
-> ![Colonne Balises dans l’Explorateur.](../../media/threat-explorer-tags.png)
+> :::image type="content" source="../../media/threat-explorer-tags.png" alt-text="Colonne Balises dans l’Explorateur" lightbox="../../media/threat-explorer-tags.png":::
 
 ### <a name="timezone-improvements"></a>Améliorations apportées au fuseau horaire
 
 Vous verrez le fuseau horaire pour les enregistrements de courrier dans le portail, ainsi que pour les données exportées. Il sera visible dans toutes les expériences telles que la grille de courrier électronique, le flyout détails, la chronologie des e-mails et les e-mails similaires, afin que le fuseau horaire du jeu de résultats soit clair.
 
 > [!div class="mx-imgBorder"]
-> ![Afficher le fuseau horaire dans l’Explorateur.](../../media/TimezoneImprovements.png)
+> :::image type="content" source="../../media/TimezoneImprovements.png" alt-text="Fuseau horaire d’affichage dans l’Explorateur" lightbox="../../media/TimezoneImprovements.png":::
 
 ### <a name="update-in-the-refresh-process"></a>Mise à jour dans le processus d’actualisation
 
@@ -252,21 +252,21 @@ Certains utilisateurs ont commenté la confusion avec l’actualisation automati
 Du point de vue de l’expérience, l’utilisateur peut appliquer et supprimer la plage de filtres différente (du jeu de filtres et de la date) et sélectionner le bouton d’actualisation pour filtrer les résultats après avoir défini la requête. Le bouton Actualiser est désormais mis en avant à l’écran. Nous avons également mis à jour les informations d’outils associées et la documentation sur le produit.
 
 > [!div class="mx-imgBorder"]
-> ![Sélectionnez Actualiser pour filtrer les résultats.](../../media/ManualRefresh.png)
+> :::image type="content" source="../../media/ManualRefresh.png" alt-text="Bouton Actualiser pour filtrer les résultats" lightbox="../../media/ManualRefresh.png":::
 
 ### <a name="chart-drilldown-to-add-to-filters"></a>Chart drilldown to add to filters
 
 Vous pouvez désormais graphiquer les valeurs de légende pour les ajouter en tant que filtres. Sélectionnez le **bouton** Actualiser pour filtrer les résultats.
 
 > [!div class="mx-imgBorder"]
-> ![Descendre dans les graphiques pour filtrer.](../../media/ChartDrilldown.png)
+> :::image type="content" source="../../media/ChartDrilldown.png" alt-text="La recherche dans les graphiques vers le bas pour filtrer" lightbox="../../media/ChartDrilldown.png":::
 
 ### <a name="in-product-information-updates"></a>Mises à jour des informations sur le produit
 
 Des détails supplémentaires sont désormais disponibles dans le produit, tels que le nombre total de résultats de recherche dans la grille (voir ci-dessous). Nous avons amélioré les étiquettes, les messages d’erreur et les info-bulles pour fournir plus d’informations sur les filtres, l’expérience de recherche et le jeu de résultats.
 
 > [!div class="mx-imgBorder"]
-> ![Afficher les informations du produit.](../../media/ProductInfo.png)
+> :::image type="content" source="../../media/ProductInfo.png" alt-text="Informations sur le produit à afficher" lightbox="../../media/ProductInfo.png":::
 
 ## <a name="extended-capabilities-in-threat-explorer"></a>Fonctionnalités étendues dans l’Explorateur de menaces
 
@@ -277,7 +277,7 @@ Aujourd’hui, nous exposons la liste des utilisateurs les plus ciblés dans l�
 Vous pourrez exporter la liste des utilisateurs ciblés, jusqu’à une limite de 3 000, ainsi que le nombre de tentatives d’analyse hors connexion pour chaque affichage de courrier électronique. En outre, la sélection du nombre de tentatives (par exemple, 13 tentatives dans l’image ci-dessous) ouvre une vue filtrée dans l’Explorateur de menaces, afin que vous pouvez voir plus de détails sur les messages électroniques et les menaces pour cet utilisateur.
 
 > [!div class="mx-imgBorder"]
-> ![Utilisateurs les plus ciblés.](../../media/Top_Targeted_Users.png)
+> :::image type="content" source="../../media/Top_Targeted_Users.png" alt-text="Utilisateurs les plus ciblés" lightbox="../../media/Top_Targeted_Users.png":::
 
 ### <a name="exchange-transport-rules"></a>Exchange transport
 
@@ -298,7 +298,7 @@ Vous pourrez voir le GUID et le nom des règles de transport qui ont été appli
 > Dans la grille de courrier électronique, le volant Détails et le CSV exporté, les ETR sont présentés avec un nom/GUID, comme illustré ci-dessous.
 >
 > > [!div class="mx-imgBorder"]
-> > ![Exchange transport.](../../media/ETR_Details.png)
+> > :::image type="content" source="../../media/ETR_Details.png" alt-text="Règles Exchange transport de transport" lightbox="../../media/ETR_Details.png":::
 
 ### <a name="inbound-connectors"></a>Connecteurs entrants
 
@@ -307,7 +307,7 @@ Les connecteurs sont un ensemble d’instructions qui personnalisent la façon d
 La recherche de connecteurs est de nature « contient », ce qui signifie que les recherches partielles par mots clés doivent également fonctionner. Dans l’affichage Grille principale, le volant Détails et le fichier CSV exporté, les connecteurs sont affichés au format Nom/GUID, comme illustré ici :
 
 > [!div class="mx-imgBorder"]
-> ![Détails du connecteur.](../../media/Connector_Details.png)
+> :::image type="content" source="../../media/Connector_Details.png" alt-text="Détails du connecteur" lightbox="../../media/Connector_Details.png":::
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>Nouvelles fonctionnalités dans l’Explorateur de menaces et détections en temps réel
 
@@ -345,7 +345,7 @@ Cet exemple utilise l’Explorateur de menaces.
 
 5. Sélectionnez **l’objet** d’un message sous l’onglet **Email** **tabDetails** >  pour voir des informations supplémentaires sur l’emprunt d’identité sur l’utilisateur ou le domaine, ainsi que *l’emplacement détecté*.
 
-    :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="Volet d’informations de l’Explorateur de menaces pour un utilisateur protégé affichant l’emplacement de détection et la menace détectée (ici l’emprunt d’identité par hameçonnage d’un utilisateur).":::
+    :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="Volet d’informations de l’Explorateur de menaces pour un utilisateur protégé affichant l’emplacement de détection et la menace détectée (emprunt d’identité de hameçonnage d’un utilisateur)" lightbox="../../media/threat-ex-views-impersonated-user-image.png":::
 
 > [!NOTE]
 > À l’étape 3 ou 5, si vous choisissez la technologie de détection  et sélectionnez respectivement  le domaine d’emprunt d’identité ou l’utilisateur de l’emprunt d’identité,  >  les informations de l’onglet Courrier électronique concernant l’utilisateur ou le domaine et l’emplacement détecté s’afficheront uniquement sur les messages relatifs à l’utilisateur ou au domaine répertoriés dans la page stratégie *anti-hameçonnage*. 
@@ -412,7 +412,7 @@ Suivez ce chemin d’accès pour vous rendre au même emplacement dans le rappor
 > L’ID de message réseau maie le clic de retour à des messages spécifiques lorsque vous recherchez sur l’ID via l’Explorateur ou des outils tiers associés. Ces recherches identifient l’e-mail associé à un résultat de clic. L’ID de message réseau corrélé permet une analyse plus rapide et plus puissante.
 
 > [!div class="mx-imgBorder"]
-> ![Clique sur l’onglet dans l’Explorateur.](../../media/tp_ExportClickResultAndNetworkID.png)
+> :::image type="content" source="../../media/tp_ExportClickResultAndNetworkID.png" alt-text="Onglet Clics dans l’Explorateur" lightbox="../../media/tp_ExportClickResultAndNetworkID.png":::
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Voir les programmes malveillants détectés dans la messagerie électronique par la technologie
 
@@ -423,19 +423,19 @@ Supposons que vous vouliez voir les programmes malveillants détectés dans les 
 2. Dans le menu **Affichage** , sélectionnez **Programme malveillant de** \> **messagerie**.
 
    > [!div class="mx-imgBorder"]
-   > ![Menu Afficher pour l’Explorateur.](../../media/ExplorerViewEmailMalwareMenu.png)
+   > :::image type="content" source="../../media/ExplorerViewEmailMalwareMenu.png" alt-text="Menu Affichage de l’Explorateur" lightbox="../../media/ExplorerViewEmailMalwareMenu.png":::
 
 3. Cliquez **sur Expéditeur**, puis choisissez **Technologie de** \> **détection de base**.
 
    Vos technologies de détection sont désormais disponibles en tant que filtres pour le rapport.
 
    > [!div class="mx-imgBorder"]
-   > ![Technologies de détection de programmes malveillants.](../../media/ExplorerEmailMalwareDetectionTech.png)
+   > :::image type="content" source="../../media/ExplorerEmailMalwareDetectionTech.png" alt-text="Technologies de détection des programmes malveillants" lightbox="../../media/ExplorerEmailMalwareDetectionTech.png":::
 
 4. Choisissez une option. Sélectionnez ensuite **le bouton Actualiser** pour appliquer ce filtre.
 
    > [!div class="mx-imgBorder"]
-   > ![Technologie de détection sélectionnée.](../../media/ExplorerEmailMalwareDetectionTechATP.png)
+   > :::image type="content" source="../../media/ExplorerEmailMalwareDetectionTechATP.png" alt-text="Technologie de détection sélectionnée" lightbox="../../media/ExplorerEmailMalwareDetectionTechATP.png":::
 
 Le rapport est actualisé pour afficher les résultats détectés par les programmes malveillants détectés dans le courrier électronique, à l’aide de l’option technologique que vous avez sélectionnée. À partir de là, vous pouvez effectuer une analyse plus approfondie.
 
@@ -450,14 +450,14 @@ Pour passer en revue les URL de hameçonnage dans les messages et cliquer sur le
 2. Dans le menu **Affichage** , sélectionnez **Hameçonnage par** \> **courrier électronique**.
 
    > [!div class="mx-imgBorder"]
-   > ![Afficher le menu de l’Explorateur dans le contexte du hameçonnage.](../../media/ExplorerViewEmailPhishMenu.png)
+   > :::image type="content" source="../../media/ExplorerViewEmailPhishMenu.png" alt-text="Menu Affichage de l’Explorateur dans le contexte de hameçonnage" lightbox="../../media/ExplorerViewEmailPhishMenu.png":::
 
 3. Cliquez **sur Expéditeur**, puis choisissez **URL Verdict** \> **de clic**.
 
 4. Sélectionnez une ou plusieurs options, telles que Blocked et **Block overridden**, puis sélectionnez le bouton Actualiser sur la même ligne que les options à appliquer à ce filtre.  (N’actualisez pas la fenêtre de votre navigateur.)
 
    > [!div class="mx-imgBorder"]
-   > ![URL et verdicts de clic.](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+   > :::image type="content" source="../../media/ThreatExplorerEmailPhishClickVerdictOptions.png" alt-text="URL et verdicts de clic" lightbox="../../media/ThreatExplorerEmailPhishClickVerdictOptions.png":::
 
    Le rapport est actualisé pour afficher deux tables d’URL différentes sous l’onglet URL sous le rapport :
 
@@ -468,7 +468,7 @@ Pour passer en revue les URL de hameçonnage dans les messages et cliquer sur le
    Les deux tableaux d’URL indiquent les PRINCIPALES URL des messages électroniques de hameçonnage par action de remise et emplacement. Les tableaux indiquent les clics d’URL qui ont été bloqués ou visités malgré un avertissement, afin que vous pouvez voir quels liens de mauvaises adresses ont été présentés aux utilisateurs et que l’utilisateur a cliqué. À partir de là, vous pouvez effectuer une analyse plus approfondie. Par exemple, sous le graphique, vous pouvez voir les URL les plus fréquentes dans les messages électroniques bloqués dans l’environnement de votre organisation.
 
    > [!div class="mx-imgBorder"]
-   > ![URL d’explorateur qui ont été bloquées.](../../media/ExplorerPhishClickVerdictURLs.png)
+   > :::image type="content" source="../../media/ExplorerPhishClickVerdictURLs.png" alt-text="URL de l’Explorateur qui ont été bloquées" lightbox="../../media/ExplorerPhishClickVerdictURLs.png":::
 
    Sélectionnez une URL pour afficher des informations plus détaillées.
 
@@ -497,14 +497,14 @@ Supposons que vous vouliez voir les messages électroniques signalés par les ut
 2. Dans le menu **Affichage** , sélectionnez **Envois de** \> **courrier électronique**.
 
    > [!div class="mx-imgBorder"]
-   > ![Afficher le menu de l’Explorateur pour les e-mails.](../../media/explorer-view-menu-email-user-reported.png)
+   > :::image type="content" source="../../media/explorer-view-menu-email-user-reported.png" alt-text="Menu Affichage de l’Explorateur pour les e-mails" lightbox="../../media/explorer-view-menu-email-user-reported.png":::
 
 3. Cliquez **sur Expéditeur**, puis choisissez **Type de** \> **rapport de base**.
 
 4. Sélectionnez une option **, par exemple** Hameçonnage, puis sélectionnez le **bouton Actualiser** .
 
    > [!div class="mx-imgBorder"]
-   > ![Hameçonnage signalé par l’utilisateur.](../../media/EmailUserReportedReportType.png)
+   > :::image type="content" source="../../media/EmailUserReportedReportType.png" alt-text="Hameçonnage signalé par l’utilisateur" lightbox="../../media/EmailUserReportedReportType.png":::
 
 Le rapport est actualisé pour afficher les données sur les messages électroniques signalés par les membres de votre organisation comme tentative de hameçonnage. Vous pouvez utiliser ces informations pour effectuer une analyse plus approfondie et, si nécessaire, ajuster vos stratégies [anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md).
 

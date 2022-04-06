@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 6ab6ff7c043dcceacfbb07d0f6fec5e974999204
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: b4b47b5cd5b7f345d21f2fa60deec736d931c62f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682436"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473428"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recommandations de stratégies pour sécuriser les e-mails
 
@@ -39,7 +39,7 @@ Ces recommandations exigent que vos utilisateurs utilisent des clients de messag
 
 Pour protéger le courrier électronique, le diagramme suivant illustre les stratégies à mettre à jour à partir des stratégies communes d’accès aux appareils et aux identités.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png" alt-text="Résumé des mises à jour de stratégie pour la protection de l’accès Exchange." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png" alt-text="Résumé des mises à jour de stratégie pour la protection de l’accès à Microsoft Exchange" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png":::
 
 Notez l’ajout d’une nouvelle stratégie Exchange Online pour bloquer les clients ActiveSync. Cela force l’utilisation de Outlook mobile.
 
@@ -106,9 +106,9 @@ Grâce aux nouvelles fonctionnalités chiffrement de messages Office 365 (OME), 
 
 Pour plus d’informations, voir [Configurer de chiffrement de messages Office 365 nouvelles fonctionnalités](../../compliance/set-up-new-message-encryption-capabilities.md).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
-![Étape 4 : Stratégies pour Microsoft 365 applications cloud.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="Stratégies pour les applications Microsoft 365 cloud" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 
 Configurer des stratégies d’accès conditionnel pour :
 

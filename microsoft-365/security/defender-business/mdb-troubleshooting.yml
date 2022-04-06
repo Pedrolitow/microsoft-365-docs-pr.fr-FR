@@ -6,8 +6,8 @@ metadata:
   author: denisebmsft
   ms.author: deniseb
   manager: dansimp
-  audience: Admin
-  ms.topic: overview
+  audience: Admin3
+  ms.topic: faq
   ms.date: 02/24/2022
   ms.prod: m365-security
   ms.technology: mdb
@@ -17,16 +17,16 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: c2df6feacacb6ff6502acdba64be6720547dcdbb
-  ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+  ms.openlocfilehash: c87f47be07600e46187f3de0b15a18d2b0db2739
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 03/17/2022
-  ms.locfileid: "63526785"
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63682678"
 title: Résolution des problèmes de Microsoft Defender pour les entreprises
 summary: "Microsoft Defender for Business est en déploiement Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. La [prévisualisation inclut un ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et nous ajouterons régulièrement des fonctionnalités.\n\nCertaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. \n\nUtilisez cet article comme guide pour résoudre les problèmes que vous pourriez rencontrer dans Microsoft Defender pour les entreprises. \n"
 sections:
-- name: Général
+- name: Généralités
   questions:
   - question: Échec de mon processus d’installation et de configuration
     answer: "\nSi vous utilisiez le processus de configuration simplifié dans Defender pour Entreprises et qu’un problème s’est produit, vous pouvez toujours configurer manuellement vos paramètres et stratégies de sécurité.\n\nVoir [Installer et configurer Microsoft Defender pour les entreprises](mdb-setup-configuration.md).\n"

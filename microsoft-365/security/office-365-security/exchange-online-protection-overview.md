@@ -1,5 +1,5 @@
 ---
-title: Exchange Online Protection (EOP)
+title: présentation Exchange Online Protection (EOP)
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,6 +8,7 @@ manager: dansimp
 ms.date: 09/18/2020
 audience: ITPro
 ms.topic: overview
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
@@ -15,12 +16,12 @@ ms.custom:
 description: Découvrez comment Exchange Online Protection (EOP) peut vous aider à protéger votre organisation de messagerie sur site dans des environnements autonomes et hybrides.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef4443c0ee9b029133bb2abfabdd9a2f00a52203
-ms.sourcegitcommit: 9f0e84835121ce6228fdc69182c24be7ad1cb20e
+ms.openlocfilehash: 3fb49a24ae378be990efd727450a06889cc50679
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62896074"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473362"
 ---
 # <a name="exchange-online-protection-overview"></a>Vue d’ensemble d’Exchange Online Protection
 
@@ -29,7 +30,7 @@ ms.locfileid: "62896074"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Exchange Online Protection (EOP) est le service de filtrage informatique qui protège votre organisation contre le courrier indésirable, les programmes malveillants et d’autres menaces de courrier électronique. EOP est inclus dans toutes les organisations Microsoft 365 avec Exchange Online boîtes aux lettres.
 
@@ -44,7 +45,7 @@ Le reste de cet article explique le fonctionnement d’EOP et les fonctionnalit�
 
 Pour comprendre le fonctionnement d'EOP, il est utile devoir comment le courrier entrant est traité :
 
-:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Graphique du courrier électronique provenant d’Internet ou des commentaires des clients passant dans EOP et via la connexion, la protection contre les programmes malveillants, le filtrage des règles de flux de messagerie et la stratégie de contenu, avant le verdict de courrier indésirable ou de mise en quarantaine, ou la remise du courrier de l’utilisateur final.":::
+:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Graphique du courrier électronique provenant d’Internet ou des commentaires des clients qui transitent dans EOP et via la connexion, la protection contre les programmes malveillants, le filtrage de la stratégie de barre oblique de flux de messagerie et le filtrage de contenu, avant le verdict de courrier indésirable ou de mise en quarantaine, ou la remise du courrier de l’utilisateur final" lightbox="../../media/tp_emailprocessingineopt3.png":::
 
 1. Lorsqu’un message entrant entre dans EOP, il passe initialement par le filtrage des connexions, qui vérifie la réputation de l’expéditeur. La majorité du courrier indésirable est arrêté à ce stade et rejeté par EOP. Pour plus d’informations, consultez [Configuration du filtrage des connexions](configure-the-connection-filter-policy.md).
 
@@ -81,10 +82,7 @@ Pour plus d’informations sur les exigences, les limites importantes et la disp
 - Pour obtenir les valeurs recommandées pour les stratégies de protection, voir [Paramètres recommandés pour EOP et Microsoft Defender pour Office 365 sécurité.](recommended-settings-for-eop-and-office365.md)
 - Pour obtenir des instructions rapides sur la configuration des stratégies de protection, voir [Protéger contre les menaces](protect-against-threats.md).
 
-<br>
-
-****
-|Fonctionnalité|Commentaires|
+|Fonctionnalité|Comments|
 |---|---|
 |**Protection**||
 |Ant-programme malveillant|[Protection contre les programmes malveillants dans EOP](anti-malware-protection.md) <p> [Forum Aux Questions sur la protection contre les programmes malveillants](anti-malware-protection-faq-eop.yml) <p> [Configurer des stratégies anti-programme malveillant dans EOP](configure-anti-malware-policies.md)|
@@ -113,7 +111,7 @@ Pour plus d’informations sur les exigences, les limites importantes et la disp
 |Suivi des messages|[Suivi des messages](message-trace-scc.md) <p> [Suivi des messages dans le centre d Exchange’administration de l’utilisateur](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)|
 |Envoyer des & rapports de collaboration|[Afficher les rapports sur la sécurité des e-mails](view-email-security-reports.md)|
 |Rapports de flux de messagerie|[Afficher les rapports sur les flux de courrier](view-mail-flow-reports.md) <p> [Rapports de flux de messagerie dans le centre d Exchange’administration de l’utilisateur](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
-|Informations sur le flux de messagerie|[Informations sur le flux de messagerie](mail-flow-insights-v2.md) <p> [Informations sur le flux de messagerie dans le Centre d Exchange de messagerie](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|
+|Informations sur le flux de messagerie|[Informations sur le flux de messagerie](mail-flow-insights-v2.md) <p> [Informations sur le flux de messagerie dans le centre d’administration Exchange de messagerie](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|
 |Rapports d’audit|[Rapports d’audit dans le centre d Exchange’administration de l’utilisateur](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)|
 |Stratégies d’alerte|[Stratégies d’alerte](../../compliance/alert-policies.md)|
 |**Contrats de niveau de service (SLA) et prise en charge**||

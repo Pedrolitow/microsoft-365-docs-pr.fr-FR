@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4e819a9de9d5ccd66caab4bc13d8b11c1a95ab03
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: bd76eed421f4d926a956508961dc44a643dbb125
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681719"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467090"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Autorisations dans le Portail Microsoft 365 Defender
 
@@ -55,7 +55,7 @@ Un **groupe de rôles** est un ensemble de rôles qui permet aux utilisateurs d�
 
 Le portail Microsoft 365 Defender> inclut des groupes de rôles par défaut pour les tâches et fonctions les plus courantes que vous devrez attribuer. En règle générale, nous vous recommandons d’ajouter simplement des utilisateurs individuels en tant que **membres** aux groupes de rôles par défaut.
 
-![Diagramme montrant la relation entre les groupes de rôles et les rôles et les membres.](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+:::image type="content" source="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png" alt-text="Relation d’un groupe de rôles avec ses rôles et ses membres" lightbox="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png":::
 
 ## <a name="roles-and-role-groups-in-the-microsoft-365-defender-portal"></a>Rôles et groupes de rôles dans le Portail Microsoft 365 Defender
 
@@ -65,7 +65,7 @@ Les types de rôles et de groupes de rôles suivants sont disponibles dans la pa
 
 - **Les rôles de messagerie et de collaboration** : il s’agit des mêmes groupes de rôles que ceux disponibles dans le Centre de sécurité et de conformité, mais vous pouvez les gérer directement dans le Portail Microsoft 365 Defender. Les autorisations que vous attribuez ici sont spécifiques au Portail Microsoft 365 Defender, au Centre de conformité Microsoft 365 et au Centre de sécurité et de conformité, et ne couvrent pas toutes les autorisations nécessaires dans d’autres charges de travail Microsoft 365.
 
-![Page Autorisations et rôles dans le portail Microsoft 365 Defender.](../../media/m365-sc-permissions-and-roles-page.png)
+:::image type="content" source="../../media/m365-sc-permissions-and-roles-page.png" alt-text="Page Autorisations et rôles du portail Microsoft 365 Defender" lightbox="../../media/m365-sc-permissions-and-roles-page.png":::
 
 ### <a name="azure-ad-roles-in-the-microsoft-365-defender-portal"></a>Les rôles d'administration Azure AD dans le Portail Microsoft 365 Defender
 
@@ -73,7 +73,7 @@ Lorsque vous ouvrez le portail Microsoft 365 Defender sur <https://security.micr
 
 Lorsque vous sélectionnez un rôle, un menu volant d’informations contenant la description du rôle et les attributions d’utilisateurs s’affiche. Toutefois, pour gérer ces affectations, vous devez cliquer sur **Gérer les membres dans Azure AD** dans le menu volant des détails.
 
-![Lien pour gérer les autorisations dans Azure Active Directory.](../../media/permissions-manage-in-azure-ad-link.png)
+:::image type="content" source="../../media/permissions-manage-in-azure-ad-link.png" alt-text="Lien permettant de gérer les autorisations dans Azure Active Directory" lightbox="../../media/permissions-manage-in-azure-ad-link.png":::
 
 Pour plus d’informations, consultez [Affichage et attribution des rôles d’administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal).
 

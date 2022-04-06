@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 70a5eba3eb78878cc1f15bdd711a3331e9af870a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: e9cd2388d3551ccc0c180d20a92ec0c513472797
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680883"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473670"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Examen et réponse automatisés (AIR) dans Microsoft Defender pour Office 365
 
@@ -122,7 +122,7 @@ Les autorisations sont accordées par le biais de certains rôles, tels que ceux
 
 Si vous utilisez déjà les fonctionnalités AIR dans Microsoft Defender pour Office 365, vous êtes sur le point de voir des modifications dans le portail Microsoft 365 Defender [amélioré](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée.":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée" lightbox="../../media/m3d-action-center-unified.png":::
 
 Le portail d’Microsoft 365 Defender <https://security.microsoft.com> nouveau et amélioré regroupe les fonctionnalités AIR dans [Microsoft Defender pour Office 365](defender-for-office-365.md) et [dans Microsoft Defender pour le point de terminaison](../defender-endpoint/automated-investigations.md). Avec ces mises à jour et améliorations, votre équipe des opérations de sécurité sera en mesure d’afficher des détails sur les enquêtes automatisées et les actions de correction d’e-mail, le contenu de collaboration, les comptes d’utilisateurs, et les appareils, le tout au même endroit.
 
@@ -138,7 +138,7 @@ Le portail d’Microsoft 365 Defender <https://security.microsoft.com> nouveau e
 
 Le tableau suivant répertorie les modifications et améliorations apportées à AIR dans Microsoft Defender pour Office 365.
 
-|Élément|Qu’est-ce qui change ?|
+|Item|Qu’est-ce qui change ?|
 |---|---|
 |**Page Enquêtes**|La page **Enquêtes mise** à jour est plus cohérente avec ce que vous voyez [dans Microsoft Defender pour le point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). Vous verrez des modifications générales de mise en forme et de style qui s’alignent sur le nouvel affichage **Examens** unifié. Par exemple, le graphique d’investigation a un format plus unifié.|
 |**Onglet Utilisateurs**|**L’onglet** Utilisateurs est désormais **l’onglet Boîtes aux** lettres. Les détails sur les utilisateurs sont répertoriés sous **l’onglet Boîte aux** lettres.|
@@ -149,7 +149,7 @@ Le tableau suivant répertorie les modifications et améliorations apportées à
 |**Centre de notifications**|Le centre **de actions** mis à jour regroupe<https://security.microsoft.com/action-center> les actions en attente et terminées sur les messages électroniques, les appareils et les identités. Pour en savoir plus, consultez le Centre de l’action. (Pour en savoir plus, [consultez le centre de actions](../defender/m365d-action-center.md).)|
 |**Page Incidents**|La page **Incidents** met désormais en corrélation plusieurs enquêtes afin de fournir une meilleure vue consolidée des enquêtes. ([En savoir plus sur les incidents](../defender/incidents-overview.md).)|
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Voir les détails et les résultats d’une enquête automatisée](air-view-investigation-results.md#view-details-of-an-investigation)
 - [Examiner et approuver les actions en attente](air-remediation-actions.md)

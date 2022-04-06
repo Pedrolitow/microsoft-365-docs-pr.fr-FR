@@ -17,12 +17,12 @@ ms.collection:
 description: Découvrez comment activer le message de rapport ou les modules de signalement du hameçonnage pour Outlook et Outlook sur le web, pour des utilisateurs individuels ou pour l’ensemble de votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dc4c03a0ed1f0a03d96776c841203c9131c3067c
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: 758ee81852d9037ce39cbfdc6f2c2d6ad795aff2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468879"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466826"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Activer les compléments Signaler le message ou Signaler l’hameçonnage
 
@@ -93,7 +93,7 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 
 2. Cliquez **SUR OBTENIR MAINTENANT**.
 
-   ![Message de rapport - Obtenez-le maintenant.](../../media/ReportMessageGETITNOW.png)
+   :::image type="content" source="../../media/ReportMessageGETITNOW.png" alt-text="Message du rapport Obtenir maintenant" lightbox="../../media/ReportMessageGETITNOW.png":::
 
 3. Dans la boîte de dialogue qui s’affiche, examinez les conditions d’utilisation et la politique de confidentialité, puis cliquez sur **Continuer**.
 
@@ -104,7 +104,7 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
 - Dans Outlook, l’icône ressemble à ceci :
 
     > [!div class="mx-imgBorder"]
-    > ![Icône signaler le Outlook.](../../media/OutlookReportMessageIcon.png)
+    > :::image type="content" source="../../media/OutlookReportMessageIcon.png" alt-text="Icône du module de message de rapport pour Outlook" lightbox="../../media/OutlookReportMessageIcon.png":::
 
 - Dans Outlook sur le web, l’icône ressemble à ceci :
 
@@ -119,19 +119,20 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
 1. Dans la [Centre d'administration Microsoft 365](https://admin.microsoft.com/AdminPortal/Home?#/homepage), Paramètres  \> **applications intégrées**. Cliquez **sur Obtenir des applications**.
 
     > [!div class="mx-imgBorder"]
-    > ![Centre d'administration Microsoft 365 applications intégrées](../../media/microsoft-365-admin-center-integrated-apps.png)
+    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="Applications Centre d'administration Microsoft 365 intégrées" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
+
 
 2. Dans la page **Microsoft 365 Apps** qui s’affiche, cliquez dans la zone  De recherche, entrez Message **de rapport,**![ puis cliquez sur **Icône Rechercher.**](../../media/search-icon.png) Dans la liste des résultats, recherchez et sélectionnez **Message de rapport**. 
 
 3. La page de détails de l’application s’ouvre. **Sélectionnez Obtenir maintenant**. 
 
     > [!div class="mx-imgBorder"]
-    > ![Report Message add-in](../../media/microsoft-365-admin-center-report-message.png)  
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message.png" alt-text="Le add-in Message de rapport" lightbox="../../media/microsoft-365-admin-center-report-message.png":::
 
 4. Complétez les informations de profil de base, puis cliquez sur **Continuer**. 
 
     > [!div class="mx-imgBorder"]
-    > ![Configuration du profil de l’ajout de message de rapport](../../media/microsoft-365-admin-center-profile-info.png)
+    > :::image type="content" source="../../media/microsoft-365-admin-center-profile-info.png" alt-text="Configuration du profil du module de message de rapport" lightbox="../../media/microsoft-365-admin-center-profile-info.png":::
 
 5. Le **volant Déployer une nouvelle** application s’ouvre. Configurez les paramètres suivants. Cliquez **sur Suivant** pour passer à la page suivante pour terminer l’installation. 
 
@@ -144,13 +145,13 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
      - **Acceptez les demandes d’autorisations** : lisez attentivement les autorisations et fonctionnalités de l’application avant de passer à la page suivante.
 
         > [!div class="mx-imgBorder"]
-        > ![Autorisations d’application](../../media/microsoft-365-admin-center-deploy-new-app.png)
+        > :::image type="content" source="../../media/microsoft-365-admin-center-deploy-new-app.png" alt-text="Page Accepter les demandes d’autorisations" lightbox="../../media/microsoft-365-admin-center-deploy-new-app.png":::
 
      - **Terminer le déploiement** : examinez et terminez le déploiement du add-in. 
      - **Déploiement terminé :** **sélectionnez Terminé** pour terminer l’installation. 
 
         > [!div class="mx-imgBorder"]
-        > ![Déploiement terminé](../../media/microsoft-365-admin-center-deployment-complete.png)
+        > :::image type="content" source="../../media/microsoft-365-admin-center-deployment-complete.png" alt-text="Message de notification du déploiement terminé" lightbox="../../media/microsoft-365-admin-center-deployment-complete.png":::
 
 ## <a name="edit-settings-for-the-report-message-add-in"></a>Modifier les paramètres du add-in Message de rapport
 
@@ -159,7 +160,7 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
 2. Dans le volant qui s’affiche, **sélectionnez Modifier les utilisateurs** pour modifier les paramètres utilisateur.
 
     > [!div class="mx-imgBorder"]
-    > ![Report Message flyout](../../media/microsoft-365-admin-center-report-message-edit.png)
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message-edit.png" alt-text="Le volant Message de rapport" lightbox="../../media/microsoft-365-admin-center-report-message-edit.png":::
 
 3. Pour supprimer le module, sélectionnez **Supprimer l’application** sous **Actions** dans le même flyout. 
 
@@ -194,7 +195,7 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
 1. Dans la [Centre d'administration Microsoft 365](https://admin.microsoft.com/AdminPortal/Home?#/homepage), Paramètres  \> **applications intégrées**. Cliquez **sur Obtenir des applications**.
 
     > [!div class="mx-imgBorder"]
-    > ![Centre d'administration Microsoft 365 applications intégrées](../../media/microsoft-365-admin-center-integrated-apps.png)
+    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="Applications Centre d'administration Microsoft 365 intégrées" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
 
 2. Dans la page **Microsoft 365 Apps** qui s’affiche, cliquez dans la  zone De recherche, entrez Hameçonnage de **rapport,**![ puis cliquez sur **Icône Recherche.**](../../media/search-icon.png) Dans la liste des résultats, recherchez et sélectionnez **Signaler le hameçonnage**. 
  
@@ -211,6 +212,6 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
 2. Dans le volant qui s’affiche, **sélectionnez Modifier les utilisateurs** pour modifier les paramètres utilisateur.
 
     > [!div class="mx-imgBorder"]
-    > ![Signaler le flyout de hameçonnage](../../media/microsoft-365-admin-center-report-phishing-edit.png)
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-phishing-edit.png" alt-text="Le volant signaler le hameçonnage" lightbox="../../media/microsoft-365-admin-center-report-phishing-edit.png":::
 
 3. Pour supprimer le module, sélectionnez **Supprimer l’application** sous **Actions** dans le même flyout. 

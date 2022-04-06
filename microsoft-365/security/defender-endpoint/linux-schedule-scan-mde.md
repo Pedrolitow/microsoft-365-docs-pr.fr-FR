@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ddb02d67866e675febda59fac15e8e494188a47f
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 05e8fccc200b39a606fa67a857631e215c8d4b1c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302503"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467618"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>Planifier des analyses avec Microsoft Defender pour Endpoint (Linux)
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
-Pour exécuter une analyse pour Linux, voir [Commandes pris en charge.](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands)
+Pour exécuter une analyse pour Linux, voir [Commandes pris en charge](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands).
 
 Linux (et Unix) ont un outil appelé **crontab** (semblable au Programmeur des tâches) pour pouvoir exécuter des tâches programmées.
 
@@ -88,14 +88,14 @@ CRON_TZ=America/Los_Angeles
 
 Appuyez sur « Échap »
 
-Type " `:wq` " sans guillemets doubles.
+Tapez «`:wq` » sans guillemets doubles.
 
 > [!NOTE]
 > w == write, q == quit
 
 Pour afficher vos travaux cron, tapez `sudo crontab -l`
 
-:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="linux mdatp.":::
+:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="Page mdatp linux" lightbox="../../media/linux-mdatp-1.png":::
 
 #### <a name="to-inspect-cron-job-runs"></a>Pour inspecter les séries de travail de cron
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 23420223102eafeab7783f7b81ac60c06670626c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 6e3a31343468b79ff1117a60eca6a87825562778
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326368"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466782"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurer microsoft Defender pour le point de terminaison sur les stratégies macOS dans Jamf Pro
 
@@ -54,23 +54,23 @@ Vous devez suivre les étapes suivantes :
 
 2. Sélectionnez macOS comme système d’exploitation et Gestion des périphériques mobiles/Microsoft Intune comme méthode de déploiement.
 
-    ![Image de Microsoft 365 Defender portail.](images/onboarding-macos.png)
+   :::image type="content" source="images/onboarding-macos.png" alt-text="Page Paramètres de l’Centre de sécurité Microsoft Defender" lightbox="images/onboarding-macos.png":::
 
 3. **Sélectionnez Télécharger le package d’intégration** (WindowsDefenderATPOnboardingPackage.zip).
 
 4. Extraire `WindowsDefenderATPOnboardingPackage.zip`.
 
-5. Copiez le fichier à votre emplacement préféré. Par exemple, `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist`.
+5. Copiez le fichier à votre emplacement préféré. Par exemple : `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist`.
 
 ## <a name="step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package"></a>Étape 2 : Créer un profil de configuration dans Jamf Pro à l’aide du package d’intégration
 
 1. Recherchez le fichier `WindowsDefenderATPOnboarding.plist` dans la section précédente.
 
-   ![Image du fichier WindowsDefenderATPOnboarding.](images/plist-onboarding-file.png)
+   :::image type="content" source="images/plist-onboarding-file.png" alt-text="Le Windows Defender d’intégration ATP" lightbox="images/plist-onboarding-file.png":::
 
 2. Connectez-vous à Jamf Pro, accédez à **Profils** **ComputersConfiguration** > , puis sélectionnez **Nouveau**.
 
-    ![Image de création d’un tableau de bord jamf Pro tableau de bord.](images/jamf-pro-configure-profile.png)
+   :::image type="content" source="images/jamf-pro-configure-profile.png" alt-text="Page sur laquelle vous créez un tableau de bord jamf Pro tableau de bord" lightbox="images/jamf-pro-configure-profile.png":::
 
 3. Entrez les détails suivants :
 
@@ -84,43 +84,43 @@ Vous devez suivre les étapes suivantes :
 
 4.  Accédez à la **page Application & custom Paramètres** et sélectionnez **Télécharger** >  **Add**.
 
-    ![Image de configuration de l’application et des paramètres personnalisés.](images/jamfpro-mac-profile.png)
+   :::image type="content" source="images/jamfpro-mac-profile.png" alt-text="Configurer l’application et les paramètres personnalisés" lightbox="images/jamfpro-mac-profile.png":::
 
 5. **Sélectionnez Télécharger fichier (fichier PLIST), puis dans** **Domaine** de préférence, entrez : `com.microsoft.wdav.atp`
 
-    ![Image du fichier de téléchargement plist jamfpro.](images/jamfpro-plist-upload.png)
+   :::image type="content" source="images/jamfpro-plist-upload.png" alt-text="Fichier de téléchargement de la liste plist jamfpro" lightbox="images/jamfpro-plist-upload.png":::
 
-    ![Image du fichier de liste des propriétés de fichier de téléchargement.](images/jamfpro-plist-file.png)
+   :::image type="content" source="images/jamfpro-plist-file.png" alt-text="Fichier de liste des propriétés de fichier de téléchargement" lightbox="images/jamfpro-plist-file.png":::
 
 6. **Sélectionnez Ouvrir** et sélectionnez le fichier d’intégration.
 
-    ![Image du fichier d’intégration.](images/jamfpro-plist-file-onboard.png)
+   :::image type="content" source="images/jamfpro-plist-file-onboard.png" alt-text="Fichier d’intégration" lightbox="images/jamfpro-plist-file-onboard.png":::
 
-7. **Sélectionnez Télécharger**.
+7. Sélectionnez **Télécharger**.
 
-    ![Image du téléchargement d’un fichier plist.](images/jamfpro-upload-plist.png)
+   :::image type="content" source="images/jamfpro-upload-plist.png" alt-text="Fichier plist de téléchargement" lightbox="images/jamfpro-upload-plist.png":::
 
 8. Sélectionnez **l’onglet** Étendue.
 
-    ![Image de l’onglet d’étendue.](images/jamfpro-scope-tab.png)
+   :::image type="content" source="images/jamfpro-scope-tab.png" alt-text="Onglet Étendue" lightbox="images/jamfpro-scope-tab.png":::
 
 9. Sélectionnez les ordinateurs cibles.
 
-    ![Image des ordinateurs cibles.](images/jamfpro-target-computer.png)
+   :::image type="content" source="images/jamfpro-target-computer.png" alt-text="Ordinateurs cibles" lightbox="images/jamfpro-target-computer.png":::
 
-    ![Image des cibles.](images/jamfpro-targets.png)
+   :::image type="content" source="images/jamfpro-targets.png" alt-text="Cibles" lightbox="images/jamfpro-targets.png":::
 
 10. Sélectionnez **Enregistrer**.
 
-    ![Image des ordinateurs cibles de déploiement.](images/jamfpro-deployment-target.png)
+   :::image type="content" source="images/jamfpro-deployment-target.png" alt-text="Le déploiement des ordinateurs cibles" lightbox="images/jamfpro-deployment-target.png":::
 
-    ![Image des ordinateurs cibles sélectionnés.](images/jamfpro-target-selected.png)
+   :::image type="content" source="images/jamfpro-target-selected.png" alt-text="Sélection des ordinateurs cibles" lightbox="images/jamfpro-target-selected.png":::
 
 11. Sélectionnez **Terminé**.
 
-    ![Image des ordinateurs de groupe cibles.](images/jamfpro-target-group.png)
+    :::image type="content" source="images/jamfpro-target-group.png" alt-text="Ordinateurs d’un groupe cible" lightbox="images/jamfpro-target-group.png":::
 
-    ![Liste des profils de configuration.](images/jamfpro-configuration-policies.png)
+    :::image type="content" source="images/jamfpro-configuration-policies.png" alt-text="Liste des profils de configuration" lightbox="images/jamfpro-configuration-policies.png":::
 
 ## <a name="step-3-configure-microsoft-defender-for-endpoint-settings"></a>Étape 3 : Configurer Microsoft Defender pour les paramètres de point de terminaison
 
@@ -140,7 +140,7 @@ Notez que vous devez utiliser exact `com.microsoft.wdav` comme domaine de **pré
 
 2. Créez un profil de configuration sous Ordinateurs -> profils de configuration, entrez les détails suivants sous **l’onglet Général** :
 
-    ![Nouveau profil.](images/644e0f3af40c29e80ca1443535b2fe32.png)
+   :::image type="content" source="images/644e0f3af40c29e80ca1443535b2fe32.png" alt-text="Un nouveau profil" lightbox="images/644e0f3af40c29e80ca1443535b2fe32.png":::
 
     - Nom : paramètres de configuration MDAV MDATP
     - Description :\<blank\>
@@ -150,35 +150,35 @@ Notez que vous devez utiliser exact `com.microsoft.wdav` comme domaine de **pré
 
 3. Faites défiler vers le bas jusqu’à   **l’onglet Application & Custom Paramètres**, sélectionnez **Applications** externes, cliquez sur Ajouter et utiliser le schéma personnalisé comme source à utiliser pour le domaine de préférence.
 
-    ![Ajoutez un schéma personnalisé.](images/4137189bc3204bb09eed3aabc41afd78.png)
+   :::image type="content" source="images/4137189bc3204bb09eed3aabc41afd78.png" alt-text="Ajouter un schéma personnalisé" lightbox="images/4137189bc3204bb09eed3aabc41afd78.png":::
 
 4. Entrez `com.microsoft.wdav` comme domaine de préférence, cliquez sur  Ajouter un schéma **et Télécharger** fichier schema.json téléchargé à l’étape 1. Cliquez sur **Enregistrer**.
 
-    ![Télécharger schéma.](images/a6f9f556037c42fabcfdcb1b697244cf.png)
+   :::image type="content" source="images/a6f9f556037c42fabcfdcb1b697244cf.png" alt-text="Télécharger schéma" lightbox="images/a6f9f556037c42fabcfdcb1b697244cf.png":::
 
 5. Vous pouvez voir tous les paramètres de configuration de Microsoft Defender for Endpoint pris en charge ci-dessous, sous **Propriétés de domaine de préférence**. Cliquez **sur Ajouter/Supprimer des propriétés** pour sélectionner les paramètres à gérer, puis cliquez sur **OK** pour enregistrer vos modifications. (Paramètres non sélectionné ne sera pas inclus dans la configuration gérée, un utilisateur final pourra configurer ces paramètres sur ses ordinateurs.)
 
-    ![Sélectionnez les paramètres gérés.](images/817b3b760d11467abe9bdd519513f54f.png)
+   :::image type="content" source="images/817b3b760d11467abe9bdd519513f54f.png" alt-text="Paramètres gérés choisis" lightbox="images/817b3b760d11467abe9bdd519513f54f.png":::
 
 6. Modifiez les valeurs des paramètres en valeurs souhaitées. Vous pouvez cliquer **sur Plus d’informations** pour obtenir la documentation d’un paramètre particulier. (Vous pouvez cliquer sur **aperçu Plist** pour inspecter l’apparence de la liste de configuration. Cliquez **sur Éditeur de** formulaire pour revenir à l’éditeur visuel.)
 
-    ![Modifier les valeurs des paramètres.](images/a14a79efd5c041bb8974cb5b12b3a9b6.png)
+   :::image type="content" source="images/a14a79efd5c041bb8974cb5b12b3a9b6.png" alt-text="Page sur laquelle vous modifiez les valeurs des paramètres" lightbox="images/a14a79efd5c041bb8974cb5b12b3a9b6.png":::
 
 7. Sélectionnez **l’onglet** Étendue.
 
-    ![Étendue du profil de configuration.](images/9fc17529e5577eefd773c658ec576a7d.png)
+   :::image type="content" source="images/9fc17529e5577eefd773c658ec576a7d.png" alt-text="Étendue du profil de configuration" lightbox="images/9fc17529e5577eefd773c658ec576a7d.png":::
 
 8. **Sélectionnez Le groupe d’ordinateurs de Contoso**.
 
 9. **Sélectionnez Ajouter**, puis **Enregistrer**.
 
-    ![Paramètres de configuration : ajouter.](images/cf30438b5512ac89af1d11cbf35219a6.png)
+   :::image type="content" source="images/cf30438b5512ac89af1d11cbf35219a6.png" alt-text="Page sur laquelle vous pouvez ajouter les paramètres de configuration" lightbox="images/cf30438b5512ac89af1d11cbf35219a6.png":::
 
-    ![Paramètres de configuration : enregistrer.](images/6f093e42856753a3955cab7ee14f12d9.png)
+   :::image type="content" source="images/6f093e42856753a3955cab7ee14f12d9.png" alt-text="Page sur laquelle vous pouvez enregistrer les paramètres de configuration" lightbox="images/6f093e42856753a3955cab7ee14f12d9.png":::
 
 10. Sélectionnez **Terminé**. Vous verrez le nouveau profil **de configuration**.
 
-    ![Paramètres de configuration : terminé.](images/dd55405106da0dfc2f50f8d4525b01c8.png)
+    :::image type="content" source="images/dd55405106da0dfc2f50f8d4525b01c8.png" alt-text="Page sur laquelle vous complétez les paramètres de configuration" lightbox="images/dd55405106da0dfc2f50f8d4525b01c8.png":::
 
 Microsoft Defender pour le point de terminaison ajoute de nouveaux paramètres au fil du temps. Ces nouveaux paramètres seront ajoutés au schéma et une nouvelle version sera publiée sur Github.
 Il vous suffit de télécharger un schéma mis à jour, de modifier le profil de configuration existant et de modifier le schéma sous  l’onglet Application **& Custom Paramètres**.
@@ -318,7 +318,7 @@ Il vous suffit de télécharger un schéma mis à jour, de modifier le profil de
 
 3. Dans le tableau de bord Jamf Pro, ouvrez **Ordinateurs** et leurs **profils de configuration**. Cliquez **sur Nouveau** et passez à **l’onglet** Général.
 
-    ![Nouveau profil.](images/644e0f3af40c29e80ca1443535b2fe32.png)
+   :::image type="content" source="images/644e0f3af40c29e80ca1443535b2fe32.png" alt-text="Page affichant un nouveau profil" lightbox="images/644e0f3af40c29e80ca1443535b2fe32.png":::
 
 4. Entrez les détails suivants :
 
@@ -330,64 +330,65 @@ Il vous suffit de télécharger un schéma mis à jour, de modifier le profil de
     - Méthode de distribution : installer automatiquement (par défaut)
     - Niveau : Niveau ordinateur (par défaut)
 
-    ![Image des paramètres de configuration MDAV MDATP.](images/3160906404bc5a2edf84d1d015894e3b.png)
+    :::image type="content" source="images/3160906404bc5a2edf84d1d015894e3b.png" alt-text="Paramètres de configuration MDAV MDATP" lightbox="images/3160906404bc5a2edf84d1d015894e3b.png":::
 
 5. Dans **Application & personnalisé Paramètres** **sélectionnez Configurer**.
 
-    ![Image de l’application et des paramètres personnalisés.](images/e1cc1e48ec9d5d688087b4d771e668d2.png)
+   :::image type="content" source="images/e1cc1e48ec9d5d688087b4d771e668d2.png" alt-text="L’application et les paramètres personnalisés" lightbox="images/e1cc1e48ec9d5d688087b4d771e668d2.png":::
 
 6. **Sélectionnez Télécharger fichier (fichier PLIST).**
 
-    ![Image du fichier plist des paramètres de configuration.](images/6f85269276b2278eca4bce84f935f87b.png)
+   :::image type="content" source="images/6f85269276b2278eca4bce84f935f87b.png" alt-text="Fichier plist des paramètres de configuration" lightbox="images/6f85269276b2278eca4bce84f935f87b.png":::
 
 7. Dans **Domaine préférences**, entrez `com.microsoft.wdav`, puis sélectionnez **Télécharger fichier PLIST**.
 
-    ![Image du domaine des préférences de paramètres de configuration.](images/db15f147dd959e872a044184711d7d46.png)
+   :::image type="content" source="images/db15f147dd959e872a044184711d7d46.png" alt-text="Domaine des préférences de paramètres de configuration" lightbox="images/db15f147dd959e872a044184711d7d46.png":::
 
 8. **Sélectionnez Choisir un fichier**.
 
-    ![Image des paramètres de configuration choisir un fichier.](images/526e978761fc571cca06907da7b01fd6.png)
+    :::image type="content" source="images/526e978761fc571cca06907da7b01fd6.png" alt-text="Invite à choisir le fichier plist" lightbox="images/526e978761fc571cca06907da7b01fd6.png":::
 
 9. Sélectionnez **le MDATP_MDAV_configuration_settings.plist**, puis sélectionnez **Ouvrir**.
 
-    ![Image des paramètres de configuration mdatpmdav.](images/98acea3750113b8dbab334296e833003.png)
+   :::image type="content" source="images/98acea3750113b8dbab334296e833003.png" alt-text="Paramètres de configuration mdatpmdav" lightbox="images/98acea3750113b8dbab334296e833003.png":::
 
-10. **Sélectionnez Télécharger**.
+10. Sélectionnez **Télécharger**.
 
-    ![Image du téléchargement des paramètres de configuration.](images/0adb21c13206861ba9b30a879ade93d3.png)
+    :::image type="content" source="images/0adb21c13206861ba9b30a879ade93d3.png" alt-text="Téléchargement du paramètre de configuration" lightbox="images/0adb21c13206861ba9b30a879ade93d3.png":::
 
-    ![Image de l’image de téléchargement des paramètres de configuration.](images/f624de59b3cc86e3e2d32ae5de093e02.png)
+    :::image type="content" source="images/f624de59b3cc86e3e2d32ae5de093e02.png" alt-text="Invite à télécharger l’image liée aux paramètres de configuration" lightbox="images/f624de59b3cc86e3e2d32ae5de093e02.png":::
 
     > [!NOTE]
     > Si vous téléchargez le fichier Intune, vous obtenez l’erreur suivante :
     >
-    >![Image du téléchargement de fichiers intune des paramètres de configuration.](images/8e69f867664668796a3b2904896f0436.png)
+    > :::image type="content" source="images/8e69f867664668796a3b2904896f0436.png" alt-text="Invite à télécharger le fichier Intune associé aux paramètres de configuration" lightbox="images/8e69f867664668796a3b2904896f0436.png":::
 
 11. Sélectionnez **Enregistrer**.
 
-    ![Image des paramètres de configuration Enregistrer l’image.](images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png)
+    :::image type="content" source="images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png" alt-text="Option d’enregistrer l’image liée aux paramètres de configuration" lightbox="images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png":::
 
 12. Le fichier est téléchargé.
 
-    ![Image de l’image téléchargée du fichier de paramètres de configuration.](images/33e2b2a1611fdddf6b5b79e54496e3bb.png)
+    :::image type="content" source="images/33e2b2a1611fdddf6b5b79e54496e3bb.png" alt-text="Fichier téléchargé lié aux paramètres de configuration" lightbox="images/33e2b2a1611fdddf6b5b79e54496e3bb.png":::
 
-    ![Image du fichier de paramètres de configuration téléchargé.](images/a422e57fe8d45689227e784443e51bd1.png)
+    :::image type="content" source="images/a422e57fe8d45689227e784443e51bd1.png" alt-text="Page paramètres de configuration" lightbox="images/a422e57fe8d45689227e784443e51bd1.png":::
 
 13. Sélectionnez **l’onglet** Étendue.
 
-    ![Image de l’étendue des paramètres de configuration.](images/9fc17529e5577eefd773c658ec576a7d.png)
+    :::image type="content" source="images/9fc17529e5577eefd773c658ec576a7d.png" alt-text="Étendue des paramètres de configuration" lightbox="images/9fc17529e5577eefd773c658ec576a7d.png":::
 
 14. **Sélectionnez Le groupe d’ordinateurs de Contoso**.
 
 15. **Sélectionnez Ajouter**, puis **Enregistrer**.
 
-    ![Image des paramètres de configuration addsav.](images/cf30438b5512ac89af1d11cbf35219a6.png)
+    :::image type="content" source="images/cf30438b5512ac89af1d11cbf35219a6.png" alt-text="Les paramètres de configuration addsav" lightbox="images/cf30438b5512ac89af1d11cbf35219a6.png":::
 
-    ![Image des paramètres de configuration enregistrer ajouter.](images/6f093e42856753a3955cab7ee14f12d9.png)
+    :::image type="content" source="images/6f093e42856753a3955cab7ee14f12d9.png" alt-text="Notification des paramètres de configuration" lightbox="images/6f093e42856753a3955cab7ee14f12d9.png":::
 
 16. Sélectionnez **Terminé**. Vous verrez le nouveau profil **de configuration**.
 
     ![Image de l’image de profil de configuration des paramètres de configuration.](images/dd55405106da0dfc2f50f8d4525b01c8.png)
+     :::image type="content" source="images/dd55405106da0dfc2f50f8d4525b01c8.png" alt-text="Paramètres du profil de configuration" lightbox="images/dd55405106da0dfc2f50f8d4525b01c8.png":::
 
 ## <a name="step-4-configure-notifications-settings"></a>Étape 4 : Configurer les paramètres de notifications
 
@@ -404,7 +405,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouv
         - **Méthode de distribution** : installer automatiquement *(par défaut)*
         - **Niveau :** niveau ordinateur *(par défaut)*
 
-        ![Image du nouvel écran de profil de configuration macOS.](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+        :::image type="content" source="images/c9820a5ff84aaf21635c04a23a97ca93.png" alt-text="Nouvelle page de profil de configuration macOS" lightbox="images/c9820a5ff84aaf21635c04a23a97ca93.png":::
 
     - Tab **Notifications**, click **Add**, and enter the following values:
         - **ID d’offre groupée** : `com.microsoft.wdav.tray`
@@ -415,31 +416,31 @@ Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouv
         - **Notifications dans le Centre de notifications** : cliquez sur **Afficher**
         - **Icône d’application de badge** : cliquez sur **Afficher**
 
-        ![Image du bac de notifications mdatpmdav des paramètres de configuration.](images/7f9138053dbcbf928e5182ee7b295ebe.png)
+        :::image type="content" source="images/7f9138053dbcbf928e5182ee7b295ebe.png" alt-text="Bac de notifications mdatpmdav des paramètres de configuration" lightbox="images/7f9138053dbcbf928e5182ee7b295ebe.png":::
 
     - Tab **Notifications**, click **Add** one more time, scroll down to **New Notifications Paramètres**
         - **ID d’offre groupée** : `com.microsoft.autoupdate2`
         - Configurer le reste des paramètres sur les mêmes valeurs que ci-dessus
 
-        ![Image des paramètres de configuration mdatpmdav notifications mau.](images/4bac6ce277aedfb4a674f2d9fcb2599a.png)
+        :::image type="content" source="images/4bac6ce277aedfb4a674f2d9fcb2599a.png" alt-text="Les paramètres de configuration mdatpmdav notifications mau" lightbox="images/4bac6ce277aedfb4a674f2d9fcb2599a.png":::
 
         Notez que vous avez maintenant deux « tables » avec des configurations de notification, une pour l’ID d’offre groupée : **com.microsoft.wdav.tray** et une autre pour l’ID d’offre groupée : **com.microsoft.autoupdate2**. Bien que vous pouvez configurer les paramètres d’alerte en fonction de vos besoins, les ID d’offre groupée doivent  être exactement les mêmes  que ceux décrits précédemment, et le commutateur Inclure doit être en cours pour les **notifications**.
 
 3. Sélectionnez **l’onglet** Étendue, puis **Ajoutez**.
 
-    ![Image de l’étendue des paramètres de configuration.](images/441aa2ecd36abadcdd8aed03556080b5.png)
+   :::image type="content" source="images/441aa2ecd36abadcdd8aed03556080b5.png" alt-text="Page sur laquelle vous pouvez ajouter des valeurs pour les paramètres de configuration" lightbox="images/441aa2ecd36abadcdd8aed03556080b5.png":::
 
 4. **Sélectionnez Le groupe d’ordinateurs de Contoso**.
 
 5. **Sélectionnez Ajouter**, puis **Enregistrer**.
 
-    ![Image des paramètres de configuration contoso machine grp save.](images/09a275e321268e5e3ac0c0865d3e2db5.png)
+   :::image type="content" source="images/09a275e321268e5e3ac0c0865d3e2db5.png" alt-text="Page sur laquelle vous pouvez enregistrer des valeurs pour le groupe d’ordinateurs paramètres de configuration contoso" lightbox="images/09a275e321268e5e3ac0c0865d3e2db5.png":::
 
-    ![Image des paramètres de configuration pour ajouter l’enregistrer.](images/4d2d1d4ee13d3f840f425924c3df0d51.png)
+   :::image type="content" source="images/4d2d1d4ee13d3f840f425924c3df0d51.png" alt-text="Page qui affiche la notification d’achèvement des paramètres de configuration" lightbox="images/4d2d1d4ee13d3f840f425924c3df0d51.png":::
 
 6. Sélectionnez **Terminé**. Vous verrez le nouveau profil **de configuration**.
 
-    ![Image du paramètre de configuration terminé img.](images/633ad26b8bf24ec683c98b2feb884bdf.png)
+   :::image type="content" source="images/633ad26b8bf24ec683c98b2feb884bdf.png" alt-text="Paramètres de configuration terminés" lightbox="images/633ad26b8bf24ec683c98b2feb884bdf.png":::
 
 ## <a name="step-5-configure-microsoft-autoupdate-mau"></a>Étape 5 : Configurer la mise à jour automatique Microsoft (AutoUpdate)
 
@@ -468,7 +469,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouv
 
 3. Dans le tableau de bord Pro Jamf, sélectionnez **Général**.
 
-    ![Image de l’image générale du paramètre de configuration.](images/eaba2a23dd34f73bf59e826217ba6f15.png)
+   :::image type="content" source="images/eaba2a23dd34f73bf59e826217ba6f15.png" alt-text="Paramètres de configuration" lightbox="images/eaba2a23dd34f73bf59e826217ba6f15.png":::
 
 4. Entrez les détails suivants :
 
@@ -482,54 +483,53 @@ Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouv
 
 5. Dans **Application & personnalisé Paramètres** **sélectionnez Configurer**.
 
-    ![Image de l’application de paramètre de configuration et des paramètres personnalisés.](images/1f72e9c15eaafcabf1504397e99be311.png)
+   :::image type="content" source="images/1f72e9c15eaafcabf1504397e99be311.png" alt-text="Application de paramètre de configuration et paramètres personnalisés" lightbox="images/1f72e9c15eaafcabf1504397e99be311.png":::
 
 6. **Sélectionnez Télécharger fichier (fichier PLIST).**
 
-    ![Image de la liste plist des paramètres de configuration.](images/1213872db5833aa8be535da57653219f.png)
-
 7. In **Preference Domain** enter: `com.microsoft.autoupdate2`, then select **Télécharger PLIST File**.
 
-    ![Image du domaine préf du paramètre de configuration.](images/1213872db5833aa8be535da57653219f.png)
+   :::image type="content" source="images/1213872db5833aa8be535da57653219f.png" alt-text="Domaine de préférence du paramètre de configuration" lightbox="images/1213872db5833aa8be535da57653219f.png":::
+    
 
 8. **Sélectionnez Choisir un fichier**.
 
-    ![Image du fichier choosefile du paramètre de configuration.](images/335aff58950ce62d1dabc289ecdce9ed.png)
+   :::image type="content" source="images/335aff58950ce62d1dabc289ecdce9ed.png" alt-text="Invite à choisir le fichier concernant le paramètre de configuration" lightbox="images/335aff58950ce62d1dabc289ecdce9ed.png":::
 
 9. **Sélectionnez MDATP_MDAV_MAU_settings.plist**.
 
-    ![Image des paramètres de configuration mdatpmdavmau.](images/a26bd4967cd54bb113a2c8d32894c3de.png)
+   :::image type="content" source="images/a26bd4967cd54bb113a2c8d32894c3de.png" alt-text="Paramètres mdatpmdavmau" lightbox="images/a26bd4967cd54bb113a2c8d32894c3de.png":::
 
-10. **Sélectionnez Télécharger**.
-    ![Image du délimitement de configuration.](images/4239ca0528efb0734e4ca0b490bfb22d.png)
+10. Sélectionnez **Télécharger**.
+    :::image type="content" source="images/4239ca0528efb0734e4ca0b490bfb22d.png" alt-text="Téléchargement du fichier concernant le paramètre de configuration" lightbox="images/4239ca0528efb0734e4ca0b490bfb22d.png":::
 
-    ![Image de la configuration de la configuration de la délimitation.](images/4ec20e72c8aed9a4c16912e01692436a.png)
+    :::image type="content" source="images/4ec20e72c8aed9a4c16912e01692436a.png" alt-text="Page affichant l’option de téléchargement pour le fichier concernant le paramètre de configuration" lightbox="images/4ec20e72c8aed9a4c16912e01692436a.png":::
 
 11. Sélectionnez **Enregistrer**.
 
-    ![Image du paramètre de configuration saveimg.](images/253274b33e74f3f5b8d475cf8692ce4e.png)
+    :::image type="content" source="images/253274b33e74f3f5b8d475cf8692ce4e.png" alt-text="Page affichant l’option d’enregistrer pour le fichier concernant le paramètre de configuration" lightbox="images/253274b33e74f3f5b8d475cf8692ce4e.png":::
 
 12. Sélectionnez **l’onglet** Étendue.
 
-     ![Image du paramètre de configuration scopetab.](images/10ab98358b2d602f3f67618735fa82fb.png)
+    :::image type="content" source="images/10ab98358b2d602f3f67618735fa82fb.png" alt-text="Onglet Étendue pour les paramètres de configuration" lightbox="images/10ab98358b2d602f3f67618735fa82fb.png":::
 
 13. Sélectionnez **Ajouter**.
 
-    ![Image du paramètre de configuration addimg1.](images/56e6f6259b9ce3c1706ed8d666ae4947.png)
+    :::image type="content" source="images/56e6f6259b9ce3c1706ed8d666ae4947.png" alt-text="Option d’ajout de cibles de déploiement" lightbox="images/56e6f6259b9ce3c1706ed8d666ae4947.png":::
 
-    ![Image du paramètre de configuration addimg2.](images/38c67ee1905c4747c3b26c8eba57726b.png)
+    :::image type="content" source="images/38c67ee1905c4747c3b26c8eba57726b.png" alt-text="Page sur laquelle vous ajoutez des valeurs aux paramètres de configuration" lightbox="images/38c67ee1905c4747c3b26c8eba57726b.png":::
 
-    ![Image du paramètre de configuration addimg3.](images/321ba245f14743c1d5d51c15e99deecc.png)
+    :::image type="content" source="images/321ba245f14743c1d5d51c15e99deecc.png" alt-text="Page sur laquelle vous pouvez ajouter des valeurs aux paramètres de configuration" lightbox="images/321ba245f14743c1d5d51c15e99deecc.png":::
 
 14. Sélectionnez **Terminé**.
 
-    ![Image du paramètre de configuration doneimage.](images/ba44cdb77e4781aa8b940fb83e3c21f7.png)
+    :::image type="content" source="images/ba44cdb77e4781aa8b940fb83e3c21f7.png" alt-text="Notification d’achèvement concernant les paramètres de configuration" lightbox="images/ba44cdb77e4781aa8b940fb83e3c21f7.png":::
 
 ## <a name="step-6-grant-full-disk-access-to-microsoft-defender-for-endpoint"></a>Étape 6 : Accorder un accès disque total à Microsoft Defender pour le point de terminaison
 
 1. Dans le tableau de bord Jamf Pro, sélectionnez **Profils de configuration**.
 
-    ![Image du profil de configuration des paramètres de configuration.](images/264493cd01e62c7085659d6fdc26dc91.png)
+   :::image type="content" source="images/264493cd01e62c7085659d6fdc26dc91.png" alt-text="Profil pour lequel les paramètres doivent être configurés" lightbox="images/264493cd01e62c7085659d6fdc26dc91.png":::
 
 2. **Sélectionnez + Nouveau**.
 
@@ -542,11 +542,12 @@ Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouv
     - Méthode de distribution : installer automatiquement
     - Niveau : niveau ordinateur
 
-    ![Image du paramètre de configuration général.](images/ba3d40399e1a6d09214ecbb2b341923f.png)
+    :::image type="content" source="images/ba3d40399e1a6d09214ecbb2b341923f.png" alt-text="Le paramètre de configuration en général" lightbox="images/ba3d40399e1a6d09214ecbb2b341923f.png":::
+    
 
 4. In **Configure Privacy Preferences Policy Control** select **Configure**.
 
-    ![Image du contrôle de la stratégie de confidentialité de la configuration.](images/715ae7ec8d6a262c489f94d14e1e51bb.png)
+   :::image type="content" source="images/715ae7ec8d6a262c489f94d14e1e51bb.png" alt-text="Contrôle de la stratégie de confidentialité de la configuration" lightbox="images/715ae7ec8d6a262c489f94d14e1e51bb.png":::
 
 5. Dans **le contrôle de stratégie préférences de confidentialité**, entrez les détails suivants :
 
@@ -554,11 +555,11 @@ Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouv
     - Type d’identificateur : ID d’offre groupée
     - Conditions requises pour le code : `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
 
-    ![Image des détails du contrôle de stratégie de confidentialité des paramètres de configuration.](images/22cb439de958101c0a12f3038f905b27.png)
+    :::image type="content" source="images/22cb439de958101c0a12f3038f905b27.png" alt-text="Détails du contrôle de stratégie de confidentialité des paramètres de configuration" lightbox="images/22cb439de958101c0a12f3038f905b27.png":::
 
 6. Sélectionnez **+ Ajouter**.
 
-    ![Image du paramètre de configuration pour ajouter la stratégie système à tous les fichiers.](images/bd93e78b74c2660a0541af4690dd9485.png)
+   :::image type="content" source="images/bd93e78b74c2660a0541af4690dd9485.png" alt-text="Le paramètre de configuration permet d’ajouter une stratégie système à tous les fichiers" lightbox="images/bd93e78b74c2660a0541af4690dd9485.png":::
 
     - Sous Application ou service : définir sur **SystemPolicyAllFiles**
 
@@ -566,11 +567,11 @@ Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouv
 
 7. **Sélectionnez Enregistrer** (et non celui en bas à droite).
 
-    ![Image des images d’enregistrer les paramètres de configuration.](images/6de50b4a897408ddc6ded56a09c09fe2.png)
+   :::image type="content" source="images/6de50b4a897408ddc6ded56a09c09fe2.png" alt-text="Opération d’enregistrer pour le paramètre de configuration" lightbox="images/6de50b4a897408ddc6ded56a09c09fe2.png":::
 
 8. Cliquez sur le signe `+` en de côté **d’App Access** pour ajouter une nouvelle entrée.
 
-    ![Image de l’accès à l’application de paramètre de configuration.](images/tcc-add-entry.png)
+   :::image type="content" source="images/tcc-add-entry.png" alt-text="Opération d’enregistrer relative au paramètre de configuration" lightbox="images/tcc-add-entry.png":::
 
 9. Entrez les détails suivants :
 
@@ -580,7 +581,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouv
 
 10. Sélectionnez **+ Ajouter**.
 
-    ![Image de l’entrée tcc epsext du paramètre de configuration.](images/tcc-epsext-entry.png)
+    :::image type="content" source="images/tcc-epsext-entry.png" alt-text="Entrée tcc epsext du paramètre de configuration" lightbox="images/tcc-epsext-entry.png":::
 
     - Sous Application ou service : définir sur **SystemPolicyAllFiles**
 
@@ -588,19 +589,19 @@ Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouv
 
 11. **Sélectionnez Enregistrer** (et non celui en bas à droite).
 
-    ![Image du paramètre de configuration tcc epsext image2.](images/tcc-epsext-entry2.png)
+    :::image type="content" source="images/tcc-epsext-entry2.png" alt-text="L’autre instance du paramètre de configuration tcc epsext" lightbox="images/tcc-epsext-entry2.png":::
 
 12. Sélectionnez **l’onglet** Étendue.
 
-    ![Image de l’étendue du paramètre de configuration.](images/2c49b16cd112729b3719724f581e6882.png)
+    :::image type="content" source="images/2c49b16cd112729b3719724f581e6882.png" alt-text="Page illustrant l’étendue du paramètre de configuration" lightbox="images/2c49b16cd112729b3719724f581e6882.png":::
 
 13. Sélectionnez **+ Ajouter**.
 
-    ![Image de l’image addimage du paramètre de configuration.](images/57cef926d1b9260fb74a5f460cee887a.png)
+    :::image type="content" source="images/57cef926d1b9260fb74a5f460cee887a.png" alt-text="Page illustrant le paramètre de configuration" lightbox="images/57cef926d1b9260fb74a5f460cee887a.png":::
 
 14. **Sélectionnez Groupes d’ordinateurs** > **sous Nom** de > **sélectionnez MachineGroup de Contoso**.
 
-    ![Image du paramètre de configuration contoso machinegrp.](images/368d35b3d6179af92ffdbfd93b226b69.png)
+    :::image type="content" source="images/368d35b3d6179af92ffdbfd93b226b69.png" alt-text="Groupe d’ordinateurs contoso du paramètre de configuration" lightbox="images/368d35b3d6179af92ffdbfd93b226b69.png":::
 
 15. Sélectionnez **Ajouter**.
 
@@ -608,9 +609,9 @@ Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouv
 
 17. Sélectionnez **Terminé**.
 
-    ![Image de donimg des paramètres de configuration.](images/809cef630281b64b8f07f20913b0039b.png)
+    :::image type="content" source="images/809cef630281b64b8f07f20913b0039b.png" alt-text="Paramètre de configuration contoso machine-group" lightbox="images/809cef630281b64b8f07f20913b0039b.png":::
 
-    ![Image du paramètre de configuration donimg2.](images/6c8b406ee224335a8c65d06953dc756e.png)
+    :::image type="content" source="images/6c8b406ee224335a8c65d06953dc756e.png" alt-text="Illustration des paramètres de configuration" lightbox="images/6c8b406ee224335a8c65d06953dc756e.png":::
 
 Vous pouvez également télécharger [fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) et le télécharger dans les profils de configuration JAMF, comme décrit dans [Deploying Custom Configuration Profiles using Jamf Pro| Méthode 2 : Télécharger profil de configuration à Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
@@ -621,7 +622,7 @@ Vous pouvez également télécharger [fulldisk.mobileconfig](https://github.com/
 
 1. Dans les **profils de configuration**, **sélectionnez + Nouveau**.
 
-    ![Capture d’écran d’un billet de réseau social Description généré automatiquement.](images/6c8b406ee224335a8c65d06953dc756e.png)
+   :::image type="content" source="images/6c8b406ee224335a8c65d06953dc756e.png" alt-text="Le billet de réseau social Description généré automatiquement" lightbox="images/6c8b406ee224335a8c65d06953dc756e.png":::
 
 2. Entrez les détails suivants :
 
@@ -633,22 +634,22 @@ Vous pouvez également télécharger [fulldisk.mobileconfig](https://github.com/
     - Méthode de distribution : installer automatiquement
     - Niveau : niveau ordinateur
 
-    ![Image du noyau mdatpmdav des paramètres de configuration.](images/24e290f5fc309932cf41f3a280d22c14.png)
+    :::image type="content" source="images/24e290f5fc309932cf41f3a280d22c14.png" alt-text="Les paramètres de configuration mdatpmdav kernel" lightbox="images/24e290f5fc309932cf41f3a280d22c14.png":::
 
 3. Dans **Configurer les extensions de noyau approuvées, sélectionnez** **Configurer**.
 
-    ![Image de l’ext de noyau approuvé des paramètres de configuration.](images/30be88b63abc5e8dde11b73f1b1ade6a.png)
+   :::image type="content" source="images/30be88b63abc5e8dde11b73f1b1ade6a.png" alt-text="Page affichant les paramètres de configuration des extensions de noyau approuvées" lightbox="images/30be88b63abc5e8dde11b73f1b1ade6a.png":::
 
 4. Dans **Extensions de noyau approuvées,** entrez les détails suivants :
 
     - Nom complet : Microsoft Corp.
     - ID d’équipe : UBF8T346G9
 
-    ![Image de l’extension de noyau appr des paramètres de configuration.](images/39cf120d3ac3652292d8d1b6d057bd60.png)
+    :::image type="content" source="images/39cf120d3ac3652292d8d1b6d057bd60.png" alt-text="Volet Extensions de noyau approuvées" lightbox="images/39cf120d3ac3652292d8d1b6d057bd60.png":::
 
 5. Sélectionnez **l’onglet** Étendue.
 
-    ![Image de l’onglet d’étendue des paramètres de configuration img.](images/0df36fc308ba569db204ee32db3fb40a.png)
+   :::image type="content" source="images/0df36fc308ba569db204ee32db3fb40a.png" alt-text="Onglet Étendue pour la configuration" lightbox="images/0df36fc308ba569db204ee32db3fb40a.png":::
 
 6. Sélectionnez **+ Ajouter**.
 
@@ -656,15 +657,15 @@ Vous pouvez également télécharger [fulldisk.mobileconfig](https://github.com/
 
 8. Sélectionnez **+ Ajouter**.
 
-    ![L’image des paramètres de configuration ajoute des images.](images/0dde8a4c41110dbc398c485433a81359.png)
+   :::image type="content" source="images/0dde8a4c41110dbc398c485433a81359.png" alt-text="Page sur laquelle vous définissez des valeurs supplémentaires pour les paramètres de configuration" lightbox="images/0dde8a4c41110dbc398c485433a81359.png":::
 
 9. Sélectionnez **Enregistrer**.
 
-    ![Image de l’économiserie des paramètres de configuration.](images/0add8019b85a453b47fa5c402c72761b.png)
+   :::image type="content" source="images/0add8019b85a453b47fa5c402c72761b.png" alt-text="Extension de noyau MDAV MDATP" lightbox="images/0add8019b85a453b47fa5c402c72761b.png":::
 
 10. Sélectionnez **Terminé**.
 
-    ![Image des paramètres de configuration doneimag.](images/1c9bd3f68db20b80193dac18f33c22d0.png)
+    :::image type="content" source="images/1c9bd3f68db20b80193dac18f33c22d0.png" alt-text="Page de détails des profils de configuration" lightbox="images/1c9bd3f68db20b80193dac18f33c22d0.png":::
 
 Vous pouvez également télécharger [kext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/kext.mobileconfig) et le télécharger dans les profils de configuration JAMF, comme décrit dans [Deploying Custom Configuration Profiles using Jamf Pro| Méthode 2 : Télécharger profil de configuration à Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
@@ -672,7 +673,7 @@ Vous pouvez également télécharger [kext.mobileconfig](https://github.com/micr
 
 1. Dans les **profils de configuration**, **sélectionnez + Nouveau**.
 
-    ![Capture d’écran d’un billet de réseau social Description généré automatiquement.](images/6c8b406ee224335a8c65d06953dc756e.png)
+   :::image type="content" source="images/6c8b406ee224335a8c65d06953dc756e.png" alt-text="Description du billet de réseau social généré automatiquement" lightbox="images/6c8b406ee224335a8c65d06953dc756e.png":::
 
 2. Entrez les détails suivants :
 
@@ -684,11 +685,11 @@ Vous pouvez également télécharger [kext.mobileconfig](https://github.com/micr
     - Méthode de distribution : installer automatiquement
     - Niveau : niveau ordinateur
 
-    ![Image du nouveau prof des paramètres de configuration.](images/sysext-new-profile.png)
+    :::image type="content" source="images/sysext-new-profile.png" alt-text="Nouveau profil des paramètres de configuration" lightbox="images/sysext-new-profile.png":::
 
 3. Dans **Les extensions système,** **sélectionnez Configurer**.
 
-   ![Image de configuration sysext des paramètres de configuration.](images/sysext-configure.png)
+   :::image type="content" source="images/sysext-configure.png" alt-text="Volet avec l’option Configurer pour les extensions système" lightbox="images/sysext-configure.png":::
 
 4. Dans **les extensions système** , entrez les détails suivants :
 
@@ -699,11 +700,11 @@ Vous pouvez également télécharger [kext.mobileconfig](https://github.com/micr
      - **com.microsoft.wdav.epsext**
      - **com.microsoft.wdav.netext**
 
-    ![Image des paramètres de configuration sysextconfig2.](images/sysext-configure2.png)
+    :::image type="content" source="images/sysext-configure2.png" alt-text="Volet Extensions système MDAV MDATP" lightbox="images/sysext-configure2.png":::
 
 5. Sélectionnez **l’onglet** Étendue.
 
-    ![Image de l’étendue des paramètres de configuration.](images/0df36fc308ba569db204ee32db3fb40a.png)
+   :::image type="content" source="images/0df36fc308ba569db204ee32db3fb40a.png" alt-text="Volet de sélection Ordinateurs cibles" lightbox="images/0df36fc308ba569db204ee32db3fb40a.png":::
 
 6. Sélectionnez **+ Ajouter**.
 
@@ -711,15 +712,15 @@ Vous pouvez également télécharger [kext.mobileconfig](https://github.com/micr
 
 8. Sélectionnez **+ Ajouter**.
 
-   ![Image de l’addima des paramètres de configuration.](images/0dde8a4c41110dbc398c485433a81359.png)
+   :::image type="content" source="images/0dde8a4c41110dbc398c485433a81359.png" alt-text="Volet Nouveau profil de configuration macOS" lightbox="images/0dde8a4c41110dbc398c485433a81359.png":::
 
 9. Sélectionnez **Enregistrer**.
 
-   ![Image de l’étendue sysext des paramètres de configuration.](images/sysext-scope.png)
+   :::image type="content" source="images/sysext-scope.png" alt-text="Affichage des options concernant les extensions système MDAV MDATP" lightbox="images/sysext-scope.png":::
 
 10. Sélectionnez **Terminé**.
 
-    ![Image des paramètres de configuration sysext-final.](images/sysext-final.png)
+    :::image type="content" source="images/sysext-final.png" alt-text="Les paramètres de configuration sysext - final" lightbox="images/sysext-final.png":::
 
 ## <a name="step-9-configure-network-extension"></a>Étape 9 : Configurer l’extension réseau
 
@@ -749,14 +750,11 @@ Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouv
 
         Notez que **l’identificateur**, le filtre de **socket** et le **filtre de socket désignent** les valeurs exactes requises comme indiqué ci-dessus.
 
-        ![Image du paramètre de configuration mdatpmdav.](images/netext-create-profile.png)
-        
- > [!NOTE]
- > Jamf prend en charge les paramètres de filtrage de contenu intégrés qui peuvent être définies directement via l’interface.
+        :::image type="content" source="images/netext-create-profile.png" alt-text="Paramètre de configuration mdatpmdav" lightbox="images/netext-create-profile.png":::
 
 3. Sélectionnez **l’onglet** Étendue.
 
-   ![Image de l’onglet système des paramètres de configuration.](images/0df36fc308ba569db204ee32db3fb40a.png)
+   :::image type="content" source="images/0df36fc308ba569db204ee32db3fb40a.png" alt-text="Onglet Paramètres de configuration" lightbox="images/0df36fc308ba569db204ee32db3fb40a.png":::
 
 4. Sélectionnez **+ Ajouter**.
 
@@ -764,15 +762,15 @@ Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouv
 
 6. Sélectionnez **+ Ajouter**.
 
-    ![Image de l’animation des paramètres de configuration.](images/0dde8a4c41110dbc398c485433a81359.png)
+   :::image type="content" source="images/0dde8a4c41110dbc398c485433a81359.png" alt-text="Adim des paramètres de configuration" lightbox="images/0dde8a4c41110dbc398c485433a81359.png":::
 
 7. Sélectionnez **Enregistrer**.
 
-    ![Image des paramètres de configuration savimg netextscop.](images/netext-scope.png)
+   :::image type="content" source="images/netext-scope.png" alt-text="Volet Filtre de contenu" lightbox="images/netext-scope.png":::
 
 8. Sélectionnez **Terminé**.
 
-    ![Image des paramètres de configuration netextfinal.](images/netext-final.png)
+   :::image type="content" source="images/netext-final.png" alt-text="Texte final des paramètres de configuration" lightbox="images/netext-final.png":::
 
 Vous pouvez également télécharger [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) et le télécharger dans les profils de configuration JAMF comme décrit dans [Deploying Custom Configuration Profiles using Jamf Pro| Méthode 2 : Télécharger profil de configuration à Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
@@ -784,22 +782,22 @@ Suivez les instructions des [analyses de planification avec Microsoft Defender f
 
 1. Accédez à l’endroit où vous avez enregistré `wdav.pkg`.
 
-    ![Image de l’explorateur de fichiers wdav pkg.](images/8dde76b5463047423f8637c86b05c29d.png)
+   :::image type="content" source="images/8dde76b5463047423f8637c86b05c29d.png" alt-text="Package wdav de l’explorateur de fichiers" lightbox="images/8dde76b5463047423f8637c86b05c29d.png":::
 
 2. Renommons-le `wdav_MDM_Contoso_200329.pkg`.
 
-    ![Image de l’explorateur de fichiers 1 wdavmdmpkg.](images/fb2220fed3a530f4b3ef36f600da0c27.png)
+   :::image type="content" source="images/fb2220fed3a530f4b3ef36f600da0c27.png" alt-text="Package wdavmdm de l’explorateur de fichiers 1" lightbox="images/fb2220fed3a530f4b3ef36f600da0c27.png":::
 
 3. Ouvrez le tableau de bord Pro Jamf.
 
-    ![Image des paramètres de configuration jamfpro.](images/990742cd9a15ca9fdd37c9f695d1b9f4.png)
+   :::image type="content" source="images/990742cd9a15ca9fdd37c9f695d1b9f4.png" alt-text="Paramètres de configuration de jamfpro" lightbox="images/990742cd9a15ca9fdd37c9f695d1b9f4.png":::
 
 4. Sélectionnez votre ordinateur et cliquez sur l’icône d’engrenage en haut, puis **sélectionnez Gestion de l’ordinateur**.
 
-    ![Image des paramètres de configuration compmgmt.](images/b6d671b2f18b89d96c1c8e2ea1991242.png)
+   :::image type="content" source="images/b6d671b2f18b89d96c1c8e2ea1991242.png" alt-text="Paramètres de configuration : gestion de l’ordinateur" lightbox="images/b6d671b2f18b89d96c1c8e2ea1991242.png":::
 
 5. Dans **les packages**, **sélectionnez + Nouveau**.
-    ![Une image contenant une description d’volatile a généré automatiquement un nouveau package.](images/57aa4d21e2ccc65466bf284701d4e961.png)
+   :::image type="content" source="images/57aa4d21e2ccc65466bf284701d4e961.png" alt-text="Description de l’observation d’un package généré automatiquement" lightbox="images/57aa4d21e2ccc65466bf284701d4e961.png":::
 
 6. Dans **le nouveau package** , entrez les détails suivants :
 
@@ -808,11 +806,11 @@ Suivez les instructions des [analyses de planification avec Microsoft Defender f
     - Catégorie : Aucun (par défaut)
     - Filename: Choose File
 
-    ![Image de l’onglet général des paramètres de configuration.](images/21de3658bf58b1b767a17358a3f06341.png)
+    :::image type="content" source="images/21de3658bf58b1b767a17358a3f06341.png" alt-text="Onglet Général pour les paramètres de configuration" lightbox="images/21de3658bf58b1b767a17358a3f06341.png":::
 
     Ouvrez le fichier et pointer vers `wdav.pkg` ou `wdav_MDM_Contoso_200329.pkg`.
 
-    ![Capture d’écran d’une description d’ordinateur générée automatiquement.](images/1aa5aaa0a387f4e16ce55b66facc77d1.png)
+    :::image type="content" source="images/1aa5aaa0a387f4e16ce55b66facc77d1.png" alt-text="Écran de l’ordinateur affichant la description d’un package généré automatiquement" lightbox="images/1aa5aaa0a387f4e16ce55b66facc77d1.png":::
 
 7. Sélectionnez **Ouvrir**. Définissez **le nom complet sur** **Microsoft Defender - Protection avancée contre les menaces et Antivirus Microsoft Defender**.
 
@@ -822,71 +820,71 @@ Suivez les instructions des [analyses de planification avec Microsoft Defender f
 
     **Onglet Limitations : conserver les valeurs** par défaut.
 
-     ![Image de l’onglet limitation des paramètres de configuration.](images/56dac54634d13b2d3948ab50e8d3ef21.png)
+    :::image type="content" source="images/56dac54634d13b2d3948ab50e8d3ef21.png" alt-text="Onglet De limitation pour les paramètres de configuration" lightbox="images/56dac54634d13b2d3948ab50e8d3ef21.png":::
 
 8. Sélectionnez **Enregistrer**. Le package est téléchargé vers Jamf Pro.
 
-   ![Image des paramètres de configuration pack upl jamf pro.](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
+   :::image type="content" source="images/33f1ecdc7d4872555418bbc3efe4b7a3.png" alt-text="Processus de téléchargement du pack de paramètres de configuration pour le package lié aux paramètres de configuration" lightbox="images/33f1ecdc7d4872555418bbc3efe4b7a3.png":::
 
    Le déploiement du package peut prendre quelques minutes.
 
-   ![Image de l’upl du pack de paramètres de configuration.](images/1626d138e6309c6e87bfaab64f5ccf7b.png)
+   :::image type="content" source="images/1626d138e6309c6e87bfaab64f5ccf7b.png" alt-text="Instance de téléchargement du package pour les paramètres de configuration" lightbox="images/1626d138e6309c6e87bfaab64f5ccf7b.png":::
 
 9. Accédez à la page **Stratégies** .
 
-    ![Image des paramètres de configuration.](images/f878f8efa5ebc92d069f4b8f79f62c7f.png)
+   :::image type="content" source="images/f878f8efa5ebc92d069f4b8f79f62c7f.png" alt-text="Stratégies de paramètres de configuration" lightbox="images/f878f8efa5ebc92d069f4b8f79f62c7f.png":::
 
 10. **Sélectionnez + Nouveau** pour créer une stratégie.
 
-    ![Image de la nouvelle stratégie des paramètres de configuration.](images/847b70e54ed04787e415f5180414b310.png)
+    :::image type="content" source="images/847b70e54ed04787e415f5180414b310.png" alt-text="Nouvelle stratégie des paramètres de configuration" lightbox="images/847b70e54ed04787e415f5180414b310.png":::
 
 
 11. En **général,** entrez les détails suivants :
 
     - Nom complet : MDATP Onboarding Contoso 200329 v100.86.92 ou ultérieur
 
-    ![Image de configuration settingsmdatponboard.](images/625ba6d19e8597f05e4907298a454d28.png)
+      :::image type="content" source="images/625ba6d19e8597f05e4907298a454d28.png" alt-text="Paramètres de configuration : intégration MDATP" lightbox="images/625ba6d19e8597f05e4907298a454d28.png":::
 
 12. **Sélectionnez L’enregistrement périodique**.
 
-    ![Image des paramètres de configuration récurrent l’enregistrement.](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
+    :::image type="content" source="images/68bdbc5754dfc80aa1a024dde0fce7b0.png" alt-text="L’enregistrement périodique des paramètres de configuration" lightbox="images/68bdbc5754dfc80aa1a024dde0fce7b0.png":::
 
 13. Sélectionnez **Enregistrer**.
 
 14. **Sélectionnez Packages > Configurer**.
 
-    ![Image du pack de paramètres de configuration configuré.](images/8fb4cc03721e1efb4a15867d5241ebfb.png)
+    :::image type="content" source="images/8fb4cc03721e1efb4a15867d5241ebfb.png" alt-text="Option de configuration des packages" lightbox="images/8fb4cc03721e1efb4a15867d5241ebfb.png":::
 
 15. Sélectionnez **le bouton** Ajouter à côté de **Microsoft Defender - Protection avancée contre les menaces et Antivirus Microsoft Defender**.
 
-    ![Image des paramètres de configuration ajoutés par MDATP et MDA.](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
+    :::image type="content" source="images/526b83fbdbb31265b3d0c1e5fbbdc33a.png" alt-text="Option d’ajout de paramètres à MDATP MDA" lightbox="images/526b83fbdbb31265b3d0c1e5fbbdc33a.png":::
 
 16. Sélectionnez **Enregistrer**.
 
-    ![Image de configuration settingssavimg.](images/9d6e5386e652e00715ff348af72671c6.png)
+    :::image type="content" source="images/9d6e5386e652e00715ff348af72671c6.png" alt-text="Option d’enregistrer pour les paramètres de configuration" lightbox="images/9d6e5386e652e00715ff348af72671c6.png":::
 
 17. Sélectionnez **l’onglet** Étendue.
 
-    ![Image de scptab des paramètres de configuration.](images/8d80fe378a31143db9be0bacf7ddc5a3.png)
+    :::image type="content" source="images/8d80fe378a31143db9be0bacf7ddc5a3.png" alt-text="Onglet Étendue associé aux paramètres de configuration" lightbox="images/8d80fe378a31143db9be0bacf7ddc5a3.png":::
 
 18. Sélectionnez les ordinateurs cibles.
 
-    ![Image des paramètres de configuration tgtcomp.](images/6eda18a64a660fa149575454e54e7156.png)
+    :::image type="content" source="images/6eda18a64a660fa149575454e54e7156.png" alt-text="Option d’ajout de groupes d’ordinateurs" lightbox="images/6eda18a64a660fa149575454e54e7156.png":::
 
     **Scope**
 
     Sélectionnez **Ajouter**.
 
-    ![Image des paramètres de configuration ad1img.](images/1c08d097829863778d562c10c5f92b67.png)
+    :::image type="content" source="images/1c08d097829863778d562c10c5f92b67.png" alt-text="Paramètres de configuration - ad1" lightbox="images/1c08d097829863778d562c10c5f92b67.png":::
 
-    ![Image des paramètres de configuration ad2img.](images/216253cbfb6ae738b9f13496b9c799fd.png)
+    :::image type="content" source="images/216253cbfb6ae738b9f13496b9c799fd.png" alt-text="Paramètres de configuration - ad2" lightbox="images/216253cbfb6ae738b9f13496b9c799fd.png":::
 
     **Libre-service**
 
-    ![Image des paramètres de configuration en libre-service.](images/c9f85bba3e96d627fe00fc5a8363b83a.png)
+    :::image type="content" source="images/c9f85bba3e96d627fe00fc5a8363b83a.png" alt-text="Onglet Libre-service pour les paramètres de configuration" lightbox="images/c9f85bba3e96d627fe00fc5a8363b83a.png":::
 
 19. Sélectionnez **Terminé**.
 
-    ![Image des paramètres de configuration do1img.](images/99679a7835b0d27d0a222bc3fdaf7f3b.png)
+    :::image type="content" source="images/99679a7835b0d27d0a222bc3fdaf7f3b.png" alt-text="État d’intégration contoso avec une option pour le terminer" lightbox="images/99679a7835b0d27d0a222bc3fdaf7f3b.png":::
 
-    ![Image des paramètres de configuration do2img.](images/632aaab79ae18d0d2b8e0c16b6ba39e2.png)
+    :::image type="content" source="images/632aaab79ae18d0d2b8e0c16b6ba39e2.png" alt-text="Page Stratégies" lightbox="images/632aaab79ae18d0d2b8e0c16b6ba39e2.png":::

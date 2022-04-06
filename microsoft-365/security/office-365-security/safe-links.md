@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Découvrez comment Coffre protection des liens dans Defender for Office 365 pour protéger une organisation contre le hameçonnage et d’autres attaques qui utilisent des URL malveillantes. Découvrez Teams Coffre liens et consultez les graphiques des messages Coffre liens.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 736efeb805e45170ec6471b57fc35005d0a12311
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8bd4773d3f712adf13ac2a006f5d8450c58fc89a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320324"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682083"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Coffre liens dans Microsoft Defender pour Office 365
 
@@ -41,7 +41,7 @@ ms.locfileid: "63320324"
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
 > Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](defender-for-office-365.md). Si vous utilisez Outlook.com, Microsoft 365 Famille ou Microsoft 365 Personnel et que vous recherchez des informations sur les liens sécurisés dans Outlook, voir Sécurité avancée [Outlook.com](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -84,10 +84,6 @@ Cet article contient des descriptions détaillées des types de liens Coffre sui
 
 Le tableau suivant décrit les scénarios pour les liens Coffre dans les organisations Microsoft 365 et Office 365 qui incluent Defender pour Office 365 (notez que l’absence de licence n’est jamais un problème dans les exemples).
 
-<br>
-
-****
-
 |Scénario|Résultat|
 |---|---|
 |Jean est membre du service marketing. Coffre la protection des liens pour les applications Office 365 est désactivée dans les paramètres globaux des liens Coffre, et il existe une stratégie de liens Coffre qui s’applique aux membres du service marketing. Jean ouvre une présentation PowerPoint un message électronique, puis clique sur une URL dans la présentation.|Jean est protégé par des Coffre liens. <p> Jean est inclus dans une stratégie Coffre liens et la protection Coffre liens pour Office 365 applications est désactivée. <p> Pour plus d’informations sur la configuration requise pour la protection des liens Coffre dans les applications Office 365, voir la section liens [Coffre pour les](#safe-links-settings-for-office-365-apps) applications Office 365 plus loin dans cet article.|
@@ -95,7 +91,6 @@ Le tableau suivant décrit les scénarios pour les liens Coffre dans les organis
 |Dans l’organisation de Pat, aucun administrateur n’a créé de stratégies de liens Coffre, mais la protection Coffre liens pour Office 365 applications est désactivée. Pat ouvre un document Word et clique sur une URL dans le fichier.|Pat n’est pas protégé par Coffre liens. <p> Bien que la protection Coffre liens pour les applications Office 365 soit désactivée globalement, Pat n’est pas inclus dans les stratégies actives de liens Coffre, donc la protection ne peut pas être appliquée.|
 |Dans l’organisation de Lee, `https://tailspintoys.com` est configuré dans la liste Bloquer les URL **suivantes dans les paramètres** globaux Coffre liens. Une stratégie Coffre liens incluant Lee existe déjà. Lee reçoit un message électronique qui contient l’URL `https://tailspintoys.com/aboutus/trythispage`. Lee clique sur l’URL.|L’URL peut être automatiquement bloquée pour Lee ; Cela dépend de l’entrée d’URL dans la liste et du client de messagerie Lee utilisé. Pour plus d’informations, voir la liste « Bloquer les URL [suivantes » Coffre section Liens plus](#block-the-following-urls-list-for-safe-links) loin dans cet article.|
 |Elle et Julia travaillent toutes les deux pour contoso.com. Il y a longtemps, les administrateurs configuraient Coffre des stratégies de liens qui s’appliquent à la fois à Celle-ci et à Julia. Il envoie un e-mail à Julia, sans savoir que le message contient une URL malveillante.|Julia est protégée par des liens Coffre si la stratégie  de liens Coffre qui s’applique à elle est configurée pour s’appliquer aux messages entre des destinataires internes. Pour plus d’informations, [voir la section Coffre liens](#safe-links-settings-for-email-messages) pour les messages électroniques plus loin dans cet article.|
-|
 
 ## <a name="safe-links-settings-for-email-messages"></a>Coffre de liens pour les messages électroniques
 
@@ -281,17 +276,12 @@ Vous configurez la liste des URL dans les paramètres globaux pour Coffre liens.
 
 Le tableau suivant décrit des exemples de valeurs que vous pouvez entrer et leurs résultats :
 
-<br>
-
-****
-
 |Valeur|Résultat|
 |---|---|
 |`contoso.com` <p> ou <p> `*contoso.com*`|Bloque le domaine, les sous-domaines et les chemins d’accès. Par exemple, `https://www.contoso.com`et `https://sub.contoso.com`sont `https://contoso.com/abc` bloqués.|
 |`https://contoso.com/a`|Bloque `https://contoso.com/a` , mais pas les sous-chemins supplémentaires comme `https://contoso.com/a/b`.|
 |`https://contoso.com/a*`|Blocs `https://contoso.com/a` et sous-chemins supplémentaires tels que `https://contoso.com/a/b`.|
 |`https://toys.contoso.com*`|Bloque un sous-domaine (`toys` dans cet exemple), mais autorise les clics vers d’autres URL de domaine (comme ou `https://contoso.com` `https://home.contoso.com`).|
-|
 
 ## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>« Ne pas réécrire les URL suivantes » dans les stratégies Coffre liens
 
@@ -302,7 +292,7 @@ Chaque Coffre de liens contient une liste d’URL Ne pas réécrire les URL **su
 
 Pour ajouter des entrées à la liste dans les stratégies de liens de Coffre nouvelles ou existantes, voir [Créer](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) des stratégies de liens Coffre ou Modifier Coffre [de liens.](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies)
 
-**Remarques** :
+**Remarques** :
 
 - Les clients suivants ne reconnaissent pas la liste Ne pas **réécrire les URL suivantes dans les stratégies** Coffre liens. Les utilisateurs inclus dans les stratégies peuvent être bloqués pour accéder aux URL en fonction des résultats de l’analyse Coffre liens dans ces clients :
   - Microsoft Teams
@@ -323,17 +313,12 @@ Pour ajouter des entrées à la liste dans les stratégies de liens de Coffre no
 
 Le tableau suivant décrit des exemples de valeurs que vous pouvez entrer et leurs résultats :
 
-<br>
-
-****
-
 |Valeur|Résultat|
 |---|---|
 |`contoso.com`|Permet d’accéder à des `https://contoso.com` sous-domaine ou à des chemins d’accès, mais pas à des sous-domaine.|
 |`*.contoso.com/*`|Permet d’accéder à un domaine, des sous-domaines et des chemins d’accès (par exemple, `https://www.contoso.com`, `https://www.contoso.com`, ou `https://maps.contoso.com``https://www.contoso.com/a`). <p> Cette entrée est intrinsèquement meilleure que `*contoso.com*`, car elle n’autorise pas les sites potentiellement frauduleux, comme ou `https://www.falsecontoso.com``https://www.false.contoso.completelyfalse.com`|
 |`https://contoso.com/a`|Permet d’accéder à `https://contoso.com/a`des sous-chemins, mais pas à des sous-chemins comme `https://contoso.com/a/b`|
 |`https://contoso.com/a/*`|Autorise l’accès à `https://contoso.com/a` des sous-chemins d’accès et des sous-chemins tels que `https://contoso.com/a/b`|
-|
 
 ## <a name="warning-pages-from-safe-links"></a>Pages d’avertissement à partir Coffre liens
 

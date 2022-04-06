@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 f1.keywords:
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
 description: En tant qu’administrateur, trouvez de l’aide pour configurer des parties de Skype Entreprise Online, notamment votre réseau, vos réunions et votre messagerie instantanée, ainsi que l’accès externe pour les utilisateurs.
-ms.openlocfilehash: 00ddd9072fccf07d7d0d5d2c148950112d40e075
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3be6eaaf5d39ebb62dcc4a7cc090633147681301
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197220"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682127"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Skype Entreprise Online dans Office 365 - Aide de l'administrateur
 
@@ -69,7 +69,7 @@ Voir aussi :
     
 - [Vous avez besoin d’aide pour vous Skype Entreprise ?](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
     
-- [Vidéo : Connectez-vous et n’Skype Entreprise](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
+- [Vidéo : Connectez-vous et Skype Entreprise](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
     
 - [Définir les options de périphérique audio dans Skype Entreprise](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
     
@@ -81,7 +81,7 @@ Voir aussi :
 
 - [Découvrir Skype Entreprise](https://support.office.com/article/8a3491a3-c095-4718-80cf-cbbe4afe4eba) : Ressources de formation pour vos utilisateurs 
     
-- [Installer les Skype Entreprise](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
+- [Installer Skype Entreprise](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
     
 - [Vidéo : présence et messagerie instantanée dans Skype Entreprise](https://support.office.com/article/c873b869-4ce0-4375-9bea-5de150eaf081)
     
@@ -89,6 +89,6 @@ Voir aussi :
     
 - [Lancement d'une téléconférence avec Skype Entreprise](https://support.office.com/article/8dc8ac52-91ac-4db9-8672-11551fdaf997)
     
- **Pour plus d’articles pour les utilisateurs, [voir Skype Entreprise’aide.](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410)**
+ **Pour plus d’articles pour les utilisateurs, [voir Skype Entreprise’aide](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410).**
   
 

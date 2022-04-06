@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 03ac5ed0d63fb88639e9b7e1b55987bf328476e1
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 754537d11a4c183cd1057b94d583a31543d9e4a5
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419070"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467354"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Conditions minimales requises pour Microsoft Defender pour le point de terminaison
 
@@ -153,7 +153,7 @@ Par défaut, ce service est activé. Il est bon de vérifier que vous obtenez de
 
    Si le service est activé, le résultat doit ressembler à la capture d’écran suivante :
 
-   ![Résultat de la commande de requête sc pour diagtrack.](images/windefatp-sc-qc-diagtrack.png)
+   :::image type="content" source="images/windefatp-sc-qc-diagtrack.png" alt-text="Résultat de la commande de requête sc pour diagtrack" lightbox="images/windefatp-sc-qc-diagtrack.png":::
 
 Vous devez configurer le service pour qu’il démarre automatiquement si le START_TYPE  n’est pas **AUTO_START.**
 
@@ -206,7 +206,7 @@ Si vous exécutez Antivirus Microsoft Defender comme produit anti-programme malv
 
 Si vous exécutez un client anti-programme malveillant tiers et que vous utilisez des solutions de gestion des périphériques mobiles ou des Microsoft Endpoint Manager (branche actuelle), vous devez vous assurer que le pilote ELAM Antivirus Microsoft Defender est activé. Pour plus d’informations, voir [s’assurer Antivirus Microsoft Defender n’est pas désactivé par la stratégie](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
 - [Configurer Microsoft Defender pour le déploiement de point de terminaison](production-deployment.md)
 - [Intégration des appareils](onboard-configure.md)
