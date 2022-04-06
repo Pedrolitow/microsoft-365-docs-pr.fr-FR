@@ -1,7 +1,7 @@
 ---
 title: Implémenter le déploiement de règles de réduction de la surface d’attaque (ASR)
-description: Fournit des conseils pour implémenter le déploiement de vos règles de réduction de la surface d’attaque.
-keywords: Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque
+description: Fournit des conseils pour implémenter votre déploiement de règles de réduction de la surface d’attaque.
+keywords: Déploiement de règles de réduction de la surface d’attaque, déploiement ASR, activer des règles asr, configurer asr, système de prévention des intrusions de l’hôte, règles de protection, règles anti-exploitation, règles d’exploitation, règles de prévention des infections, Microsoft Defender pour point de terminaison, configurer des règles ASR
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -20,116 +20,116 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: c85dcb985210167e04b51092d66fb59080280581
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 675d881c3737b67cfdc0207be85285f71455d65c
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477344"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64666963"
 ---
 # <a name="step-3-implement-asr-rules"></a>Étape 3 : Mettre en œuvre les règles ASR
 
-L’application de règles de réduction de la surface d’attaque déplace le premier anneau de test dans un état fonctionnel activé.
+L’implémentation de règles de réduction de la surface d’attaque (ASR) déplace le premier anneau de test dans un état fonctionnel activé.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="Procédure d’implémenter des règles de la asr." lightbox="images/asr-rules-implementation-steps.png":::
+> :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="Procédure d’implémentation des règles ASR" lightbox="images/asr-rules-implementation-steps.png":::
   
 
-## <a name="step-1-transition-asr-rules-from-audit-to-block"></a>Étape 1 : Transition des règles de la asr de l’audit au blocage
+## <a name="step-1-transition-asr-rules-from-audit-to-block"></a>Étape 1 : Passer des règles ASR de l’audit au bloc
 
-1. Une fois toutes les exclusions déterminées en mode audit, commencez à définir certaines règles asr en mode « bloquer », en commençant par la règle qui a le moins d’événements déclenchés. Voir « Activer [les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md).
-2. Consultez la page de rapports dans le portail Microsoft 365 Defender de protection contre les menaces ; consultez le rapport sur la protection contre les [menaces dans Microsoft Defender pour Endpoint](threat-protection-reports.md). Examinez également les commentaires de vos champions de la asr.
-3. Affinez les exclusions ou créez de nouvelles exclusions selon les besoins.
-4. Revenir aux règles problématiques vers Audit.
+1. Une fois toutes les exclusions déterminées en mode audit, commencez à définir certaines règles ASR sur le mode « bloquer », en commençant par la règle qui a le moins d’événements déclenchés. Voir « [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md).
+2. Consultez la page de création de rapports dans le portail Microsoft 365 Defender ; consultez le [rapport sur la protection contre les menaces dans Microsoft Defender pour point de terminaison](threat-protection-reports.md). Passez également en revue les commentaires de vos champions ASR.
+3. Affinez les exclusions ou créez de nouvelles exclusions si nécessaire.
+4. Rebasculez les règles problématiques vers Audit.
 
   >[!Note]
-  >Pour les règles problématiques (règles créant trop de bruit), il est préférable de créer des exclusions plutôt que de désactiver les règles ou de revenir à Audit. Vous devez déterminer ce qui est le mieux pour votre environnement.
+  >Pour les règles problématiques (règles créant trop de bruit), il est préférable de créer des exclusions plutôt que de désactiver les règles ou de revenir à Audit. Vous devrez déterminer ce qui convient le mieux à votre environnement.
 
   >[!Tip]
-  >Lorsque ce paramètre est disponible, tirez parti du paramètre Du mode Avertissement dans les règles pour limiter les perturbations. L’activation des règles asr en mode Avertissement vous permet de capturer les événements déclenchés et d’afficher leurs perturbations potentielles, sans bloquer l’accès des utilisateurs finaux. En savoir plus : [mode d’avertissement pour les utilisateurs](attack-surface-reduction.md#warn-mode-for-users).
+  >Lorsqu’il est disponible, tirez parti du paramètre de mode d’avertissement dans les règles pour limiter les interruptions. L’activation des règles ASR en mode Avertir vous permet de capturer les événements déclenchés et d’afficher leurs interruptions potentielles, sans bloquer réellement l’accès de l’utilisateur final. En savoir plus : [Mode d’avertissement pour les utilisateurs](attack-surface-reduction.md#warn-mode-for-users).
 
-### <a name="how-does-warn-mode-work"></a>Comment fonctionne le mode Avertissement ?
+### <a name="how-does-warn-mode-work"></a>Comment fonctionne le mode Avertir ?
 
-Le mode Avertissement est en réalité une instruction bloquer, mais avec la possibilité pour l’utilisateur de « débloquer » les exécutions suivantes du flux ou de l’application donné. Le mode Avertissement se débloque sur une combinaison d’appareils, d’utilisateurs, de fichiers et de processus. Les informations du mode avertissement sont stockées localement et ont une durée de 24 heures.
+Le mode d’avertissement est en fait une instruction Block, mais avec l’option permettant à l’utilisateur de « débloquer » les exécutions suivantes du flux ou de l’application donné. Le mode Avertir se débloque sur une combinaison d’appareils, d’utilisateurs, de fichiers et de processus. Les informations du mode d’avertissement sont stockées localement et ont une durée de 24 heures.
 
-### <a name="step-2-expand-deployment-to-ring-n--1"></a>Étape 2 : développer le déploiement pour sonner n + 1
+### <a name="step-2-expand-deployment-to-ring-n--1"></a>Étape 2 : Développer le déploiement pour sonner n + 1
 
-Lorsque vous êtes certain d’avoir correctement configuré les règles asr pour l’anneau 1, vous pouvez élargir l’étendue de votre déploiement à l’anneau suivant (anneau n + 1).
+Lorsque vous êtes certain d’avoir correctement configuré les règles ASR pour l’anneau 1, vous pouvez étendre l’étendue de votre déploiement à l’anneau suivant (anneau n + 1).
 
 Le processus de déploiement, étapes 1 à 3, est essentiellement le même pour chaque anneau suivant :
 
 1. Règles de test dans Audit
-2. Passer en revue les événements d’audit déclenchés par la asr dans le portail Microsoft 365 Defender de recherche
+2. Examiner les événements d’audit déclenchés par ASR dans le portail Microsoft 365 Defender
 3. Créer des exclusions
 4. Révision : affiner, ajouter ou supprimer des exclusions si nécessaire
 5. Définir des règles sur « bloquer »
-6. Examinez la page de rapports dans le portail Microsoft 365 Defender web.
+6. Passez en revue la page de création de rapports dans le portail Microsoft 365 Defender.
 7. Créez des exclusions.
-8. Désactivez les règles problématiques ou revenir à Audit.
+8. Désactivez les règles problématiques ou revenez à Audit.
 
 #### <a name="customize-attack-surface-reduction-rules"></a>Personnaliser les règles de réduction de la surface d’attaque
 
-Lorsque vous continuez à développer le déploiement de vos règles de réduction de la surface d’attaque, il peut s’avérer nécessaire ou utile de personnaliser les règles de réduction de la surface d’attaque que vous avez activées.
+Au fur et à mesure que vous développez votre déploiement de règles de réduction de la surface d’attaque, vous pouvez trouver nécessaire ou avantageux de personnaliser les règles de réduction de la surface d’attaque que vous avez activées.
 
 ##### <a name="exclude-files-and-folders"></a>Exclure des fichiers et des dossiers
 
-Vous pouvez choisir d’exclure les fichiers et dossiers de l’évaluation par les règles de réduction de la surface d’attaque. Lorsqu’il est exclu, l’exécution du fichier n’est pas bloquée même si une règle de réduction de la surface d’attaque détecte que le fichier contient un comportement malveillant.
+Vous pouvez choisir d’exclure les fichiers et dossiers de l’évaluation par les règles de réduction de la surface d’attaque. En cas d’exclusion, l’exécution du fichier n’est pas bloquée même si une règle de réduction de la surface d’attaque détecte que le fichier contient un comportement malveillant.
 
-Par exemple, prenons la règle de ransomware :
+Prenons l’exemple de la règle de ransomware :
 
-La règle de ransomware est conçue pour aider les clients d’entreprise à réduire les risques d’attaques par ransomware tout en assurant la continuité de l’activité. Par défaut, les erreurs de règle de ransomware du côté de la prudence et la protection contre les fichiers qui n’ont pas encore atteint une réputation et une confiance suffisantes. Pour reéphaser, la règle de ransomware se déclenche uniquement sur les fichiers qui n’ont pas acquis une réputation et une prévalence positives suffisantes, en fonction des mesures d’utilisation de millions de nos clients. En règle générale, les blocs sont auto-résolus, car les valeurs « réputation et confiance » de chaque fichier sont mises à niveau de manière incrémentielle à mesure que l’utilisation non problématique augmente.
+La règle de ransomware est conçue pour aider les clients d’entreprise à réduire les risques d’attaques par ransomware tout en assurant la continuité de l’activité. Par défaut, les erreurs de règle de ransomware du côté de la prudence et se protègent contre les fichiers qui n’ont pas encore atteint la réputation et la confiance suffisantes. Pour réemphaser, la règle de ransomware se déclenche uniquement sur les fichiers qui n’ont pas acquis une réputation et une prévalence positives suffisantes, en fonction des métriques d’utilisation de millions de nos clients. En règle générale, les blocs sont auto-résolus, car les valeurs de « réputation et d’approbation » de chaque fichier sont mises à niveau de manière incrémentielle à mesure que l’utilisation non problématique augmente.
 
-Dans les cas où les blocs ne sont pas résolus en temps voulu, les clients peuvent,  à leurs propres risques, utiliser le mécanisme en libre-service ou une fonctionnalité de « liste d’autoriser » basée sur l’indicateur de compromis (IOC) pour débloquer les fichiers eux-mêmes.
+Dans les cas où les blocs ne sont pas auto-résolus en temps voulu, les clients peuvent, _à leurs risques et périls_ , utiliser le mécanisme en libre-service ou une fonctionnalité « liste verte » basée sur l’indicateur de compromission (IOC) pour débloquer eux-mêmes les fichiers.
 
 > [!WARNING]
-> L’exclusion ou le déblocage de fichiers ou de dossiers pourrait potentiellement permettre à des fichiers non sécurisés de s’exécuter et d’infecter vos appareils. L’exclusion des fichiers ou dossiers peut considérablement réduire la protection fournie par les règles de réduction de la surface d’attaque. Les fichiers qui auraient été bloqués par une règle seront autorisés à s’exécuter et aucun rapport ou événement n’est enregistré.
+> L’exclusion ou le déblocage de fichiers ou de dossiers peut potentiellement permettre l’exécution et l’infection de fichiers non sécurisés sur vos appareils. L’exclusion des fichiers ou dossiers peut considérablement réduire la protection fournie par les règles de réduction de la surface d’attaque. Les fichiers qui auraient été bloqués par une règle seront autorisés à s’exécuter, et aucun rapport ou événement n’est enregistré.
 
-Une exclusion s’applique à toutes les règles qui autorisent les exclusions. Vous pouvez spécifier un fichier, un chemin d’accès de dossier ou le nom de domaine complet d’une ressource. Toutefois, vous ne pouvez pas limiter une exclusion à une règle spécifique.
+Une exclusion s’applique à toutes les règles qui autorisent les exclusions. Vous pouvez spécifier un fichier individuel, un chemin d’accès de dossier ou le nom de domaine complet d’une ressource. Toutefois, vous ne pouvez pas limiter une exclusion à une règle spécifique.
 
-Une exclusion est appliquée uniquement au démarrage de l’application ou du service exclu. Par exemple, si vous ajoutez une exclusion pour un service de mise à jour déjà en cours d’exécution, le service de mise à jour continue à déclencher des événements jusqu’à ce que le service soit arrêté et redémarré.
+Une exclusion n’est appliquée qu’au démarrage de l’application ou du service exclu. Par exemple, si vous ajoutez une exclusion pour un service de mise à jour qui est déjà en cours d’exécution, le service de mise à jour continue de déclencher des événements jusqu’à ce que le service soit arrêté et redémarré.
 
-La réduction de la surface d’attaque prend en charge les variables d’environnement et les caractères génériques. Pour plus d’informations sur l’utilisation de caractères génériques, voir les [caractères génériques dans les listes d’exclusions](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) de nom de fichier et de dossier ou d’extension.
-Si vous rencontrez des problèmes avec les règles qui détectent des fichiers qui, selon vous, ne doivent pas être détectés, utilisez le [mode audit pour tester la règle](evaluate-attack-surface-reduction.md).
+La réduction de la surface d’attaque prend en charge les variables d’environnement et les caractères génériques. Pour plus d’informations sur l’utilisation de caractères génériques, consultez [utiliser des caractères génériques dans les listes d’exclusions de nom de fichier et de dossier ou d’extension](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
+Si vous rencontrez des problèmes avec des règles qui détectent des fichiers qui ne doivent pas être détectés, [utilisez le mode audit pour tester la règle](evaluate-attack-surface-reduction.md).
 
-Consultez la rubrique [de référence des règles de réduction de la surface](attack-surface-reduction-rules-reference.md) d’attaque pour plus d’informations sur chaque règle.
+Pour plus d’informations sur chaque règle, consultez la rubrique de référence sur les [règles de réduction de la surface d’attaque](attack-surface-reduction-rules-reference.md) .
 
-##### <a name="use-group-policy-to-exclude-files-and-folders"></a>Utiliser une stratégie de groupe pour exclure des fichiers et des dossiers
+##### <a name="use-group-policy-to-exclude-files-and-folders"></a>Utiliser stratégie de groupe pour exclure des fichiers et des dossiers
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe](https://technet.microsoft.com/library/cc731212.aspx), faites un clic droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier**.
 
-2. Dans **l’Éditeur de gestion des stratégies** de groupe, cliquez sur **Configuration** ordinateur et cliquez **sur Modèles d’administration**.
+2. Dans **l’éditeur de gestion stratégie de groupe**, accédez à **Configuration de l’ordinateur**, puis cliquez sur **Modèles d’administration**.
 
-3. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** \>  \> **Protection contre les attaques Microsoft Defender réduction de la** **surface d’attaque**\>.
+3. Développez l’arborescence pour **Windows composants** \> **Antivirus Microsoft Defender** \> **Protection contre les attaques Microsoft Defender** \> **réduction de la surface d’attaque**.
 
-4. Double-cliquez sur le **paramètre Exclure les fichiers et les** chemins d’accès du paramètre Règles de réduction de la surface d’attaque et définissez l’option **sur Activé**. **Sélectionnez Afficher** et entrez chaque fichier ou dossier dans la **colonne Nom de la** valeur. Entrez **0 dans** la colonne **Valeur** pour chaque élément.
+4. Double-cliquez sur le paramètre **Exclure les fichiers et les chemins d’accès du paramètre Règles de réduction de la surface d’attaque** et définissez l’option **sur Activé**. Sélectionnez **Afficher** et entrez chaque fichier ou dossier dans la colonne **Nom de** la valeur. Entrez **0** dans la colonne **Valeur** de chaque élément.
 
 > [!WARNING]
-> N’utilisez pas de guillemets, car ils  ne sont pas pris en charge pour la colonne Nom de la valeur ou la **colonne** Valeur.
+> N’utilisez pas de guillemets, car ils ne sont pas pris en charge pour la colonne **Nom** de la valeur ou la colonne **Valeur** .
 
 ##### <a name="use-powershell-to-exclude-files-and-folders"></a>Utiliser PowerShell pour exclure des fichiers et des dossiers
 
-1. **Tapez powershell** dans le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**.
+1. Tapez **PowerShell** dans le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** et sélectionnez **Exécuter en tant qu’administrateur**.
 
-2. Entrez l’cmdlet suivante :
+2. Entrez l’applet de commande suivante :
 
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionOnlyExclusions "<fully qualified path or resource>"
     ```
 
-    Continuez à l’utiliser `Add-MpPreference -AttackSurfaceReductionOnlyExclusions` pour ajouter d’autres dossiers à la liste.
+    Continuez à utiliser `Add-MpPreference -AttackSurfaceReductionOnlyExclusions` pour ajouter d’autres dossiers à la liste.
 
     > [!IMPORTANT]
-    > Permet `Add-MpPreference` d’ajouter ou d’ajouter des applications à la liste. L’utilisation `Set-MpPreference` de la cmdlet va supprimer la liste existante.
+    > Permet `Add-MpPreference` d’ajouter ou d’ajouter des applications à la liste. L’utilisation de l’applet `Set-MpPreference` de commande remplace la liste existante.
 
-##### <a name="use-mdm-csps-to-exclude-files-and-folders"></a>Utiliser des CSP mdm pour exclure des fichiers et des dossiers
+##### <a name="use-mdm-csps-to-exclude-files-and-folders"></a>Utiliser des CSP GPM pour exclure des fichiers et des dossiers
 
 Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) (CSP) pour ajouter des exclusions.
 
 ##### <a name="customize-the-notification"></a>Personnaliser la notification
 
-Vous pouvez personnaliser la notification lorsqu’une règle est déclenchée et bloque une application ou un fichier. Consultez [l’article Sécurité Windows’article](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center).
+Vous pouvez personnaliser la notification lorsqu’une règle est déclenchée et bloque une application ou un fichier. Consultez l’article [Sécurité Windows](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center).
 
-## <a name="additional-topics-in-this-deployment-collection"></a>Rubriques supplémentaires dans cette collection de déploiements
+## <a name="additional-topics-in-this-deployment-collection"></a>Rubriques supplémentaires dans cette collection de déploiement
 
 [Prérequis pour le déploiement des règles ASR](attack-surface-reduction-rules-deployment.md)
 

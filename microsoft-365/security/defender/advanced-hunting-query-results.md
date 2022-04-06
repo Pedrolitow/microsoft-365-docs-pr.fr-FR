@@ -1,7 +1,7 @@
 ---
-title: Travailler avec les résultats de requête de recherche avancée dans Microsoft 365 Defender
-description: 100 % des résultats de requête renvoyés par le recherche avancée dans Microsoft 365 Defender
-keywords: repérage avancé, repérage de menace, repérage de cybermenace, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, détections personnalisées, schéma, kusto, visualisation, graphique, filtres, recherche
+title: Utiliser des résultats de requête de chasse avancés dans Microsoft 365 Defender
+description: Tirer le meilleur parti des résultats de requête retournés par la chasse avancée dans Microsoft 365 Defender
+keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, détections personnalisées, schéma, kusto, visualisation, graphique, filtres, exploration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,17 +20,16 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 41427760a0a02f0dafbb9685da457a473698207c
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 0bfec0b56a67b1242d8dfd76b845aa273a76d27e
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755003"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64667249"
 ---
-# <a name="work-with-advanced-hunting-query-results"></a>Travailler avec les résultats de requête de recherche avancée
+# <a name="work-with-advanced-hunting-query-results"></a>Utiliser des résultats de requête de chasse avancés
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **S’applique à :**
 - Microsoft 365 Defender
@@ -38,59 +37,64 @@ ms.locfileid: "63755003"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Bien que vous pouvez construire [](advanced-hunting-overview.md) vos requêtes de recherche avancées pour renvoyer des informations précises, vous pouvez également travailler avec les résultats de la requête pour obtenir des informations supplémentaires et examiner des activités et des indicateurs spécifiques. Vous pouvez prendre les mesures suivantes sur les résultats de votre requête :
+Bien que vous puissiez construire vos requêtes de [chasse avancées](advanced-hunting-overview.md) pour retourner des informations précises, vous pouvez également utiliser les résultats de la requête pour obtenir des informations supplémentaires et examiner des activités et des indicateurs spécifiques. Vous pouvez effectuer les actions suivantes sur les résultats de votre requête :
 
-- Afficher les résultats sous la mesure d’un tableau ou d’un graphique
-- Exporter des tableaux et des graphiques
-- Accès aux informations détaillées sur l’entité
-- Ajustez vos requêtes directement à partir des résultats ou appliquez des filtres
+- Afficher les résultats sous forme de tableau ou de graphique
+- Exporter des tables et des graphiques
+- Explorer les informations détaillées sur l’entité
+- Ajuster vos requêtes directement à partir des résultats ou appliquer des filtres
 
-## <a name="view-query-results-as-a-table-or-chart"></a>Afficher les résultats d’une requête sous la mesure d’un tableau ou d’un graphique
-Par défaut, le recherche avancée affiche les résultats de la requête sous la mesure de données tabulaires. Vous pouvez également afficher les mêmes données qu’un graphique. Le recherche avancée prend en charge les affichages suivants :
+## <a name="view-query-results-as-a-table-or-chart"></a>Afficher les résultats d’une requête sous forme de tableau ou de graphique
+
+Par défaut, la chasse avancée affiche les résultats de la requête sous forme de données tabulaires. Vous pouvez également afficher les mêmes données qu’un graphique. La chasse avancée prend en charge les vues suivantes :
 
 | Type d’affichage | Description |
 |--|--|
-| **Table** | Affiche les résultats de la requête au format tabulaire |
-| **Graphique en colonnes** | Restituer une série d’éléments uniques sur l’axe des x sous forme de barres verticales dont les hauteurs représentent des valeurs numériques d’un autre champ |
-| **Graphique en colonnes empilées** | Restituer une série d’éléments uniques sur l’axe des X sous forme de barres verticales empilées dont les hauteurs représentent des valeurs numériques d’un ou plusieurs autres champs |
-| **Graphique en secteurs** | Restituer les secteurs de section représentant des éléments uniques. La taille de chaque secteur représente les valeurs numériques d’un autre champ. |
-| **Graphique de donut** | Restituer les arcs sectionnels représentant des éléments uniques. La longueur de chaque arc représente les valeurs numériques d’un autre champ. |
-| **Graphique en lignes** | Trace les valeurs numériques d’une série d’éléments uniques et connecte les valeurs tracées |
-| **Graphique en nuages de points** | Trace les valeurs numériques d’une série d’éléments uniques |
-| **Graphique en zone** | Trace les valeurs numériques d’une série d’éléments uniques et remplit les sections sous les valeurs tracées |
+| **Tableau** | Affiche les résultats de la requête au format tabulaire |
+| **Histogramme** | Affiche une série d’éléments uniques sur l’axe des x sous forme de barres verticales dont les hauteurs représentent des valeurs numériques d’un autre champ |
+| **Histogramme empilé** | Affiche une série d’éléments uniques sur l’axe des x sous forme de barres verticales empilées dont les hauteurs représentent des valeurs numériques d’un ou plusieurs autres champs |
+| **Graphique** | Affiche des secteurs sectionnels représentant des éléments uniques. La taille de chaque secteur représente les valeurs numériques d’un autre champ. |
+| **Graphique en anneau** | Affiche des arcs sectionnels représentant des éléments uniques. La longueur de chaque arc représente les valeurs numériques d’un autre champ. |
+| **Graphique en courbes** | Trace des valeurs numériques pour une série d’éléments uniques et connecte les valeurs tracées |
+| **Nuage de points** | Trace des valeurs numériques pour une série d’éléments uniques |
+| **Graphique en aires** | Trace des valeurs numériques pour une série d’éléments uniques et remplit les sections sous les valeurs tracées |
 
-### <a name="construct-queries-for-effective-charts"></a>Créer des requêtes pour des graphiques efficaces
-Lors du rendu des graphiques, le recherche avancée identifie automatiquement les colonnes d’intérêt et les valeurs numériques à agréger. Pour obtenir des graphiques significatifs, construisez vos requêtes pour renvoyer les valeurs spécifiques que vous souhaitez visualiser. Voici quelques exemples de requêtes et les graphiques qui en résultent.
+### <a name="construct-queries-for-effective-charts"></a>Construire des requêtes pour des graphiques effectifs
+
+Lors du rendu des graphiques, la recherche avancée identifie automatiquement les colonnes d’intérêt et les valeurs numériques à agréger. Pour obtenir des graphiques significatifs, construisez vos requêtes pour retourner les valeurs spécifiques que vous souhaitez visualiser. Voici quelques exemples de requêtes et les graphiques résultants.
 
 #### <a name="alerts-by-severity"></a>Alertes par gravité
-Utilisez l’opérateur `summarize` pour obtenir un nombre numérique des valeurs que vous souhaitez graphiquer. La requête ci-dessous utilise l’opérateur `summarize` pour obtenir le nombre d’alertes par gravité.
+
+Utilisez l’opérateur `summarize` pour obtenir un nombre numérique des valeurs que vous souhaitez histifier. La requête ci-dessous utilise l’opérateur `summarize` pour obtenir le nombre d’alertes par gravité.
 
 ```kusto
 AlertInfo
 | summarize Total = count() by Severity
 ```
-Lors de l’affichage des résultats, un graphique en colonnes affiche chaque valeur de gravité en tant que colonne distincte :
 
-:::image type="content" source="../../media/advanced-hunting-column-chart-new.png" alt-text="Exemple d’un graphique qui affiche des résultats de recherche avancés dans le Microsoft 365 Defender web" lightbox="../../media/advanced-hunting-column-chart-new.png":::
-*Résultats de la requête pour les alertes par gravité affichés sous la direction d’un graphique en colonnes*
+Lors du rendu des résultats, un histogramme affiche chaque valeur de gravité sous la forme d’une colonne distincte :
 
+:::image type="content" source="../../media/advanced-hunting-column-chart-new.png" alt-text="Exemple d’un graphique qui affiche les résultats de repérage avancés dans le portail Microsoft 365 Defender" lightbox="../../media/advanced-hunting-column-chart-new.png":::
+*Résultats de la requête pour les alertes par gravité affichées sous la forme d’un histogramme*
 
-#### <a name="phishing-emails-across-top-ten-sender-domains"></a>Courriers électroniques de hameçonnage parmi les dix principaux domaines d’expéditeurs
-Si vous avez affaire à une liste de valeurs qui n’est pas finie, `Top` vous pouvez utiliser l’opérateur pour graphiquer uniquement les valeurs avec le plus grand nombre d’instances. Par exemple, pour obtenir les 10 principaux domaines d’expéditeurs avec le plus de messages de hameçonnage, utilisez la requête ci-dessous :
+#### <a name="phishing-emails-across-top-ten-sender-domains"></a>E-mails d’hameçonnage dans les dix principaux domaines d’expéditeur
+
+Si vous traitez d’une liste de valeurs qui n’est pas finie, vous pouvez utiliser l’opérateur `Top` pour représenter uniquement les valeurs avec le plus d’instances. Par exemple, pour obtenir les 10 principaux domaines d’expéditeur avec le plus d’e-mails de hameçonnage, utilisez la requête ci-dessous :
 
 ```kusto
 EmailEvents
-| where ThreatTypes has "Phish" 
-| summarize Count = count() by SenderFromDomain 
+| where ThreatTypes has "Phish"
+| summarize Count = count() by SenderFromDomain
 | top 10 by Count
 ```
-Utilisez l’affichage graphique en secteurs pour afficher efficacement la distribution dans les principaux domaines :
 
-:::image type="content" source="../../media/advanced-hunting-pie-chart-new.png" alt-text="Graphique en secteurs qui affiche les résultats de recherche avancés dans le Microsoft 365 Defender web" lightbox="../../media/advanced-hunting-pie-chart-new.png":::
-*Graphique en secteurs  shows distribution of phishing emails across top sender domains*
+Utilisez la vue graphique en secteurs pour afficher efficacement la distribution entre les domaines principaux :
 
-#### <a name="file-activities-over-time"></a>Activités de fichier au fil du temps
-À l’aide `summarize` de l’opérateur avec `bin()` la fonction, vous pouvez vérifier les événements impliquant un indicateur particulier au fil du temps. La requête ci-dessous compte les événements `invoice.doc` impliquant le fichier à intervalles de 30 minutes pour afficher les pics d’activité liés à ce fichier :
+:::image type="content" source="../../media/advanced-hunting-pie-chart-new.png" alt-text="Graphique en secteurs qui affiche les résultats de repérage avancés dans le portail Microsoft 365 Defender" lightbox="../../media/advanced-hunting-pie-chart-new.png":::
+*Graphique en secteurs qui montre la distribution des e-mails de hameçonnage entre les domaines d’expéditeur principaux*
+
+#### <a name="file-activities-over-time"></a>Activités de fichiers au fil du temps
+À l’aide de l’opérateur `summarize` avec la `bin()` fonction, vous pouvez rechercher les événements impliquant un indicateur particulier au fil du temps. La requête ci-dessous compte les événements impliquant le fichier `invoice.doc` à intervalles de 30 minutes pour afficher les pics d’activité liés à ce fichier :
 
 ```kusto
 CloudAppEvents
@@ -98,43 +102,45 @@ CloudAppEvents
 | where FileName == "invoice.doc"
 | summarize FileCount = count() by bin(Timestamp, 30m)
 ```
-Le graphique en lignes ci-dessous met clairement en évidence les périodes avec une activité plus importante impliquant `invoice.doc`: 
 
-:::image type="content" source="../../media/line-chart-a.png" alt-text="Graphique en lignes qui affiche les résultats de recherche avancés dans le Microsoft 365 Defender web" lightbox="../../media/line-chart-a.png":::
-*Graphique en lignes montrant le nombre d’événements impliquant un fichier au fil du temps*
+Le graphique en courbes ci-dessous met clairement en évidence les périodes avec plus d’activité impliquant `invoice.doc`:
 
+:::image type="content" source="../../media/line-chart-a.png" alt-text="Graphique en courbes qui affiche les résultats de repérage avancés dans le portail Microsoft 365 Defender" lightbox="../../media/line-chart-a.png":::
+*Graphique en courbes montrant le nombre d’événements impliquant un fichier au fil du temps*
 
-## <a name="export-tables-and-charts"></a>Exporter des tableaux et des graphiques
-Après avoir exécute une requête, **sélectionnez Exporter** pour enregistrer les résultats dans le fichier local. L’affichage choisi détermine la façon dont les résultats sont exportés :
+## <a name="export-tables-and-charts"></a>Exporter des tables et des graphiques
 
-- **Mode Tableau** — Les résultats de la requête sont exportés sous forme tabulaire sous la forme d’Microsoft Excel de travail
-- **N’importe** quel graphique : les résultats de la requête sont exportés en tant qu’image JPEG du graphique rendu
+Après avoir exécuté une requête, sélectionnez **Exporter** pour enregistrer les résultats dans un fichier local. La vue choisie détermine la façon dont les résultats sont exportés :
 
-## <a name="drill-down-from-query-results"></a>Descendre des résultats de requête
-Pour inspecter rapidement un enregistrement dans les résultats de votre requête, sélectionnez la ligne correspondante pour ouvrir le **panneau Inspecter l’enregistrement** . Le panneau fournit les informations suivantes en fonction de l’enregistrement sélectionné :
+- **Vue Table** : les résultats de la requête sont exportés sous forme tabulaire en tant que classeur Microsoft Excel
+- **N’importe quel graphique** : les résultats de la requête sont exportés sous forme d’image JPEG du graphique rendu
 
-- **Ressources :** affichage récapitulé des principaux biens (boîtes aux lettres, appareils et utilisateurs) trouvés dans l’enregistrement, enrichis d’informations disponibles, telles que les niveaux de risque et d’exposition
-- **Tous les détails** : toutes les valeurs des colonnes de l’enregistrement  
+## <a name="drill-down-from-query-results"></a>Explorer les résultats de la requête
 
-:::image type="content" source="../../media/results-inspect-record.png" alt-text="Enregistrement sélectionné avec panneau pour l’inspection de l’enregistrement dans le portail Microsoft 365 Defender web" lightbox="../../media/results-inspect-record.png":::
+Pour inspecter rapidement un enregistrement dans les résultats de votre requête, sélectionnez la ligne correspondante pour ouvrir le panneau **Inspecter l’enregistrement** . Le panneau fournit les informations suivantes en fonction de l’enregistrement sélectionné :
 
-Pour afficher plus d’informations sur une entité spécifique dans les résultats de votre requête, telles qu’un ordinateur, un fichier, un utilisateur, une adresse IP ou une URL, sélectionnez l’identificateur d’entité pour ouvrir une page de profil détaillée pour cette entité.
+- **Ressources** : vue résumée des principales ressources (boîtes aux lettres, appareils et utilisateurs) figurant dans l’enregistrement, enrichie d’informations disponibles, telles que les niveaux de risque et d’exposition
+- **Tous les détails** : toutes les valeurs des colonnes de l’enregistrement
+
+:::image type="content" source="../../media/results-inspect-record.png" alt-text="Enregistrement sélectionné avec panneau permettant d’inspecter l’enregistrement dans le portail Microsoft 365 Defender" lightbox="../../media/results-inspect-record.png":::
+
+Pour afficher plus d’informations sur une entité spécifique dans les résultats de votre requête, telles qu’une machine, un fichier, un utilisateur, une adresse IP ou une URL, sélectionnez l’identificateur d’entité pour ouvrir une page de profil détaillée pour cette entité.
 
 ## <a name="tweak-your-queries-from-the-results"></a>Adaptez vos requêtes à partir des résultats
-Sélectionnez les trois points à droite d’une colonne du **panneau Inspecter les** enregistrement. Vous pouvez utiliser les options suivantes pour :
+
+Sélectionnez les trois points à droite d’une colonne dans le panneau **d’enregistrement Inspecter** . Vous pouvez utiliser les options suivantes pour :
 
 - Rechercher explicitement la valeur sélectionnée (`==`)
 - Exclure la valeur sélectionnée de la requête (`!=`)
-- Obtenir des opérateurs plus avancés pour ajouter la valeur à votre requête, par exemple `contains`, `starts with`et `ends with` 
+- Obtenez des opérateurs plus avancés pour ajouter la valeur à votre requête, par `contains`exemple , `starts with`et `ends with`
 
-:::image type="content" source="../../media/work-with-query-tweak-query.png" alt-text="Volet Type d’action sur la page Inspecter l’enregistrement dans Microsoft 365 Defender portail" lightbox="../../media/work-with-query-tweak-query.png":::
+:::image type="content" source="../../media/work-with-query-tweak-query.png" alt-text="Volet Type d’action sur la page Inspecter l’enregistrement dans le portail Microsoft 365 Defender" lightbox="../../media/work-with-query-tweak-query.png":::
 
+> [!NOTE]
+> Certaines tables de cet article peuvent ne pas être disponibles à Microsoft Defender pour point de terminaison. [Activez Microsoft 365 Defender](m365d-enable.md) pour rechercher des menaces à l’aide de sources de données supplémentaires. Vous pouvez déplacer vos flux de travail de chasse avancés de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de migration [des requêtes de chasse avancées à partir de Microsoft Defender pour point de terminaison](advanced-hunting-migrate-from-mde.md).
 
+## <a name="related-topics"></a>Voir aussi
 
->[!NOTE]
->Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de [Microsoft Defender pour le point de terminaison](advanced-hunting-migrate-from-mde.md).
-
-## <a name="related-topics"></a>Rubriques associées
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
