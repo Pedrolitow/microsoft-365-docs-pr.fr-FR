@@ -1,7 +1,7 @@
 ---
 title: Tester les règles de réduction de la surface d’attaque (ASR)
 description: Fournit des conseils pour tester le déploiement de règles de réduction de la surface d’attaque (ASR).
-keywords: 'Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque'
+keywords: Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -11,16 +11,23 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: 'oogunrinde, sugamar'
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
+ms.collection:
+- m365solution-scenario
+- M365-security-compliance
 ms.date: 1/18/2022
+ms.openlocfilehash: 85d1400f390d9666c39ef13ffb484d17cad4a4c8
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682193"
 ---
-
-# <a name="step-2-test-asr-rules"></a>Étape 2 : Tester les règles de la asr
+# <a name="step-2-test-asr-rules"></a>Étape 2 : Tester les règles ASR
 
 Le test des règles de réduction de la surface d’attaque (ASR) vous permet de déterminer si les règles empêcheront les opérations d’entreprise avant d’activer une règle. En commençant par un petit groupe contrôlé, vous pouvez limiter les interruptions de travail potentielles à mesure que vous développez votre déploiement au sein de votre organisation.
 
@@ -37,7 +44,7 @@ Commencez la phase de test en 2013 en 2013, en 2013, en 2013, en 2013. En règle
 
 Vous pouvez utiliser Microsoft Endpoint Manager de point de terminaison (MEM) pour configurer des règles asr personnalisées.
 
-1. Ouvrir [Microsoft Endpoint Manager’administration centrale](https://endpoint.microsoft.com/#home)
+1. Ouvrir [Microsoft Endpoint Manager centre d’administration](https://endpoint.microsoft.com/#home)
 2. Go to **Endpoint SecurityAttack** >  **surface reduction**.
 3. Sélectionner **Créer une stratégie**.
 4. Dans **Plateforme**, sélectionnez **Windows 10 et ultérieures**, puis dans **Profil**, sélectionnez Règles de réduction **de la surface d’attaque**.
@@ -56,7 +63,7 @@ Vous pouvez utiliser Microsoft Endpoint Manager de point de terminaison (MEM) po
     >Il existe des variantes dans certaines listes en mode de règles de récupération automatique ; _Bloqués_ _et activés_ fournissent les mêmes fonctionnalités.
 
 8. [Facultatif] Dans le volet **Balises d’étendue** , vous pouvez ajouter des informations de balise à des appareils spécifiques. Vous pouvez également utiliser des balises de contrôle d’accès et d’étendue basées sur les rôles pour vous assurer que les administrateurs qui ont les droits d’accès et de visibilité sur les objets Intune de droite. En savoir plus : [utilisez le contrôle d’accès basé sur un rôle (RBAC) et les balises d’étendue pour le service it distribué dans Intune](/mem/intune/fundamentals/scope-tags).
-9. Dans le **volet Affectations** , vous pouvez déployer ou « affecter » le profil à vos groupes d’utilisateurs ou d’appareils. En savoir plus : attribuer [des profils d’appareil dans Microsoft Intune](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
+9. Dans le **volet Affectations** , vous pouvez déployer ou « affecter » le profil à vos groupes d’utilisateurs ou d’appareils. En savoir plus : [attribuer des profils d’appareil dans Microsoft Intune](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
 10. Examinez vos paramètres dans le **volet Révision +** Créer. Cliquez **sur Créer** pour appliquer les règles.
 
    > [!div class="mx-imgBorder"]
@@ -69,7 +76,7 @@ Votre nouvelle stratégie de réduction de la surface d’attaque pour les règl
 
 ## <a name="step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>Étape 2 : Comprendre la page rapports des règles de réduction de la surface d’attaque dans le portail Microsoft 365 Defender attaque
 
-La page de rapport des règles de réduction de la surface d’attaque **se trouve Microsoft 365 Defender règles** de réduction de la surface **portalReportsAttack** >  > . Cette page possède trois onglets :
+La page de rapport des règles de réduction de la surface d’attaque **se trouve Microsoft 365 Defender règles** de réduction de **la surface** **portalReportsAttack** >  > . Cette page possède trois onglets :
 
 - Detections
 - Configuration
@@ -147,7 +154,7 @@ Le point de terminaison de sécurité | Le volet Réduction de la surface d’at
 > ![Volet Asr de sécurité des points de terminaison](images/asr-defender365-05b-mem3.png)
 
 >[!Note]
->Si vous avez une licence Microsoft Defender 365 E5 (ou Windows E5 ?), ce lien ouvre l’onglet [Configurations](https://security.microsoft.com/asr?viewid=configuration) des rapports Microsoft Defender 365 > réductions de la surface d’attaque >.
+>Si vous avez une licence Microsoft Defender 365 E5 (ou Windows E5 ?), ce lien ouvre l’onglet [Configurations](https://security.microsoft.com/asr?viewid=configuration) des rapports Microsoft Defender 365 > réductions de la surface d'>.
 
 ### <a name="add-exclusions"></a>Ajouter des exclusions
 
@@ -160,7 +167,7 @@ Cet onglet fournit une méthode pour sélectionner les entités détectées (par
 > ![Outil Asr de sécurité des points de terminaison](Images/asr-defender365-06d.png)
 
 > [!Note]
->Si vous avez une licence Microsoft Defender 365 E5 (ou Windows E5 ?), ce lien ouvre l’onglet Réductions de la surface d’attaque > Rapports Microsoft Defender 365 > [exclusions](https://security.microsoft.com/asr?viewid=exclusions).
+>Si vous avez une licence Microsoft Defender 365 E5 (ou Windows E5 ?), ce lien ouvre l’onglet Réductions de la surface d’attaque de Microsoft Defender 365 > > [Exclusions](https://security.microsoft.com/asr?viewid=exclusions).
 
 ### <a name="use-powershell-as-an-alternative-method-to-enable-asr-rules"></a>Utiliser PowerShell comme méthode alternative pour activer les règles de la asr
 
@@ -185,7 +192,7 @@ Pour activer toutes les règles de réduction de la surface d’attaque ajoutée
 
 Vous pouvez également utiliser une stratégie de groupe, Intune ou des fournisseurs de services de configuration (CSP) de gestion des périphériques mobiles (CSP) pour configurer et déployer le paramètre. En savoir plus dans l’article principal des règles de [réduction de la surface d’attaque](attack-surface-reduction.md) .
 
-## <a name="use-windows-event-viewer-review-as-an-alternative-to-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>Utiliser la Windows de l’Observateur d’événements comme alternative à la page de rapport des règles de réduction de la surface d’attaque dans Microsoft 365 Defender portail
+## <a name="use-windows-event-viewer-review-as-an-alternative-to-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>Utiliser la Windows de l’Observateur d’événements comme alternative à la page de rapport des règles de réduction de la surface d’attaque dans Microsoft 365 Defender portail d’événements
 
 Pour passer en revue les applications qui auraient été bloquées, ouvrez l’Observateur d’événements et filtrez l’ID d’événement 1121 dans le journal microsoft-Windows-Windows Defender/opérationnel. Le tableau suivant répertorie tous les événements de protection réseau.
 
@@ -197,10 +204,10 @@ ID d’événement | Description
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Rubriques supplémentaires dans cette collection de déploiements
 
-[Conditions préalables au déploiement des règles asr](attack-surface-reduction-rules-deployment.md)
+[Prérequis pour le déploiement des règles ASR](attack-surface-reduction-rules-deployment.md)
 
-[Étape 1 : Planifier le déploiement des règles de la asr](attack-surface-reduction-rules-deployment-plan.md)
+[Étape 1 : Planifier le déploiement des règles ASR](attack-surface-reduction-rules-deployment-plan.md)
 
-[Étape 3 : Implémenter des règles de asr](attack-surface-reduction-rules-deployment-implement.md)
+[Étape 3 : Mettre en œuvre les règles ASR](attack-surface-reduction-rules-deployment-implement.md)
 
-[Étape 4 : Operationalize ASR rules](attack-surface-reduction-rules-deployment-operationalize.md)
+[Étape 4 : Opérationnaliser les règles ASR](attack-surface-reduction-rules-deployment-operationalize.md)

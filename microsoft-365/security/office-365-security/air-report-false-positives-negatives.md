@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 98164fd42a0ed2e2d79e2319823363057d15e7d3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4b1de0e19cbf241936aa02f957cdd0920f2a580a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318604"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682480"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Comment signaler les faux positifs/négatifs dans les fonctionnalités automatisées d’examen et de réponse
 
@@ -35,7 +35,7 @@ ms.locfileid: "63318604"
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Si des fonctionnalités d’investigation et de réponse automatisées [(AIR)](automated-investigation-response-office.md) Office 365 manquées ou détectées à tort, il existe des étapes que votre équipe des opérations de sécurité peut suivre pour résoudre ce problème. Ces actions sont les suivantes :
 
@@ -68,15 +68,10 @@ Dans la plupart des cas, si une action corrective a été prise sur un message �
 
 Avec l’Explorateur de menaces, votre équipe des opérations de sécurité peut trouver un message électronique affecté par une action et éventuellement annuler l’action.
 
-<br>
-
-****
-
 |Scénario|Options d’annuler|En savoir plus|
 |---|---|---|
 |Un message électronique a été acheminé vers le dossier Courrier indésirable d’un utilisateur|<ul><li>Déplacer le message vers le dossier Éléments supprimés de l’utilisateur</li><li>Déplacer le message vers la boîte de réception de l’utilisateur</li><li>Supprimer le message</li></ul>|[Rechercher et examiner les e-mails malveillants qui ont été remis dans Office 365](investigate-malicious-email-that-was-delivered.md)|
 |Un message électronique ou un fichier a été mis en quarantaine|<ul><li>Libérer le courrier électronique ou le fichier</li><li> Supprimer le courrier électronique ou le fichier</li></ul>|[Gérer les messages mis en quarantaine en tant qu’administrateur](manage-quarantined-messages-and-files.md)|
-|
 
 ### <a name="undo-an-action-in-the-action-center"></a>Annuler une action dans le centre de l’action
 

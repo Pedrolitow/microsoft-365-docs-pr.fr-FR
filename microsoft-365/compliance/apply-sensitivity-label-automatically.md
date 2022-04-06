@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 166905abb1dc08bcf9fe34e80c3ff3f44813501b
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 80f3b5c69e482301dd8c4e926959087c7149a529
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449805"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499658"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -201,7 +201,7 @@ Si vous le souhaitez, vous pouvez recommander à vos utilisateurs qu’ils appli
 
 Voici un exemple d’une invite du client de l’étiquetage unifié d’Azure Information Protection lorsque vous configurez une condition pour appliquer une étiquette comme action recommandée avec un conseil de stratégie personnalisé. Vous pouvez choisir le texte qui s’affiche dans le conseil de stratégie.
 
-![Invite à appliquer une étiquette recommandée.](../media/Sensitivity-label-Prompt-for-required-label.png)
+![Invite à appliquer une étiquette recommandée.](../media/Sensitivity-label-prompt-for-required-label.png)
 
 ### <a name="when-automatic-or-recommended-labels-are-applied"></a>Quand les étiquettes automatiques ou recommandées sont appliquées
 

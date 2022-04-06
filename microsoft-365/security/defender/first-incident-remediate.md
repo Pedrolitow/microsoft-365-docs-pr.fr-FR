@@ -22,18 +22,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2837b6009c143ea724d8c13d2548eeeca80e431d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 827b22ea2fb5e0864157dfae6748aa97ee4baf29
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321318"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499944"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Étape 2. Corriger votre premier incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Microsoft 365 Defender fournit non seulement des fonctionnalités de détection et d’analyse, mais également de contenir et d’éradication des programmes malveillants. Le contenu inclut des étapes pour réduire l’impact de l’attaque, tandis que l’éradication garantit que toutes les traces d’activité de l’attaquant sont supprimées du réseau. Microsoft 365 Defender propose plusieurs actions de correction qui peuvent être configurées pour corriger automatiquement [](m365d-autoir.md) en fonction du système d’exploitation des appareils concernés et du type d’attaque.
@@ -68,7 +68,7 @@ En continuant l’exemple [dans Détecter, trier](first-incident-analyze.md#anal
 7. Créer un indicateur personnalisé dans Microsoft Defender pour le point de terminaison pour bloquer une adresse IP tor
 8. Créez une action de gouvernance dans Microsoft Defender pour les applications cloud pour ce type d’alerte, comme celui illustré dans l’image suivante :
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Exemple d’actions de gouvernance dans le portail Microsoft Defender pour les applications cloud.":::
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Actions de gouvernance dans le portail Microsoft Defender pour les applications cloud" lightbox="../../media/first-incident-remediate/first-incident-mcas-governance.png":::
 
 La plupart des actions de correction peuvent être appliquées et suivis dans Microsoft 365 Defender.
 
@@ -85,7 +85,7 @@ Les playbooks utilisent Power Automate pour créer des flux d’automatisation d
 
 Voici un exemple.
  
-:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Exemple de flux d Power Automate processus automatisé personnalisé."::: 
+:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Flux d Power Automate processus automatisé personnalisé" lightbox="../../media/first-incident-remediate/first-incident-power-automate.png"::: 
  
 Les playbooks peuvent également être créés lors de [la révision post-incident](first-incident-post.md) pour créer des actions de correction à partir d’incidents résolus. 
 

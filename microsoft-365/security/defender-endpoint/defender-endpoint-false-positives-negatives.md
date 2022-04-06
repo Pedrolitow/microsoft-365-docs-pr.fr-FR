@@ -23,12 +23,12 @@ ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
-ms.openlocfilehash: 160108e123f5ba38a7c7af8c36ebb17431e860ad
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 214aafec22e26e5c69b40021eecb185a8dbfcbb2
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472966"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681631"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Résoudre les faux positifs/négatifs dans Microsoft Defender pour point de terminaison
 
@@ -40,7 +40,7 @@ ms.locfileid: "64472966"
 
 Dans les solutions de protection des points de terminaison, un faux positif est une entité, telle qu’un fichier ou un processus, qui a été détectée et identifiée comme malveillante, même si l’entité n’est pas réellement une menace. Un faux négatif est une entité qui n’a pas été détectée comme une menace, même si elle est réellement malveillante. Les faux positifs/négatifs peuvent se produire avec n’importe quelle solution de protection contre les menaces, [y compris Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md).
 
-:::image type="content" source="images/false-positives-overview.png" alt-text="Définition des faux positifs et négatifs dans le portail Microsoft Defender pour points de terminaison" lightbox="images/false-positives-overview.png":::
+![Définition des faux positifs et négatifs dans Defender pour le point de terminaison.](images/false-positives-overview.png)
 
 Heureusement, des mesures peuvent être prises pour résoudre et réduire ces types de problèmes. Si vous voyez des faux positifs/[négatifs dans Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender), vos opérations de sécurité peuvent prendre des mesures pour les résoudre à l’aide du processus suivant :
 
@@ -52,7 +52,7 @@ Heureusement, des mesures peuvent être prises pour résoudre et réduire ces ty
 
 Vous pouvez obtenir de l’aide si vous avez encore des problèmes avec des faux positifs/négatifs après avoir effectué les tâches décrites dans cet article. Vous avez [encore besoin d’aide ?](#still-need-help)
 
-:::image type="content" source="images/false-positives-step-diagram.png" alt-text="Étapes à suivre pour corriger les faux positifs et les négatifs" lightbox="images/false-positives-step-diagram.png":::
+![Étapes à suivre pour corriger les faux positifs et les négatifs.](images/false-positives-step-diagram.png)
 
 > [!NOTE]
 > Cet article est destiné à aider les opérateurs de sécurité et les administrateurs de sécurité qui [utilisent Microsoft Defender pour Endpoint](microsoft-defender-endpoint.md).
@@ -162,7 +162,7 @@ Lorsque vous avez terminé de passer en revue et d’annuler les actions qui ont
 ### <a name="remove-a-file-from-quarantine-across-multiple-devices"></a>Supprimer un fichier de la quarantaine sur plusieurs appareils
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/autoir-quarantine-file-1.png" alt-text="Fichier de mise en quarantaine" lightbox="images/autoir-quarantine-file-1.png":::
+> ![Fichier de mise en quarantaine.](images/autoir-quarantine-file-1.png)
 
 1. Dans le volet de navigation gauche du portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender,</a> cliquez sur **Centre de l’action**.
 
@@ -257,7 +257,7 @@ Les indicateurs « Autoriser » peuvent être créés pour :
 - [Adresses IP, URL et domaines](#indicators-for-ip-addresses-urls-or-domains)
 - [Certificats d’application](#indicators-for-application-certificates)
 
-:::image type="content" source="images/false-positives-indicators.png" alt-text="Types d’indicateurs" lightbox="images/false-positives-indicators.png":::
+![Diagramme des types d’indicateurs.](images/false-positives-indicators.png)
 
 #### <a name="indicators-for-files"></a>Indicateurs pour les fichiers
 
@@ -444,7 +444,7 @@ Selon le niveau [d’automatisation](/microsoft-365/security/defender-endpoint/a
 > [!IMPORTANT]
 > Nous vous recommandons *d’utiliser l’automatisation complète* pour l’examen et la correction automatisés. Ne pas désactiver ces fonctionnalités en raison d’un faux positif. Au lieu de cela, utilisez des indicateurs « autoriser » pour définir des [exceptions](#indicators-for-microsoft-defender-for-endpoint) et conservez l’investigation et la correction automatisées pour prendre les mesures appropriées automatiquement. Le [suivi de ces conseils](automation-levels.md#levels-of-automation) permet de réduire le nombre d’alertes que votre équipe des opérations de sécurité doit gérer.
 
-## <a name="still-need-help"></a>Encore besoin d’aide ?
+## <a name="still-need-help"></a>Encore besoin d’aide ?
 
 Si vous avez passé en revue toutes les étapes de cet article et que vous avez toujours besoin d’aide, contactez le support technique.
 

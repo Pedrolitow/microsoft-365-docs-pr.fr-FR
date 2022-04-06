@@ -21,18 +21,18 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 41583a89abc3418799263dc46643fbe06a07e818
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: c09a3880a9f117d0ce5ce6e5edf3736192fc9c95
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63712837"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499856"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
@@ -45,7 +45,7 @@ Dans Microsoft 365 Defender, les alertes associées sont regroupées pour former
 
 La **file d’attente Alertes** affiche l’ensemble actuel des alertes. Vous arrivez à la file d’attente des **alertes à partir d’incidents & alertes > alertes** sur le lancement rapide du [portail Microsoft 365 Defender web](https://go.microsoft.com/fwlink/p/?linkid=2077139).
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Exemple de file d’attente d’alertes dans le Microsoft 365 Defender web":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Section Alertes dans le portail Microsoft 365 Defender web" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png":::
 
 Des alertes provenant de différentes solutions de sécurité Microsoft telles que Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365 et Microsoft 365 Defender apparaissent ici.
 
@@ -53,7 +53,7 @@ Par défaut, la file d’attente des alertes du portail Microsoft 365 Defender a
 
 Dans la file d’attente des alertes par défaut, vous pouvez  sélectionner **Filtrer** pour voir un volet Filtre, à partir duquel vous pouvez spécifier un sous-ensemble des alertes. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Exemple de volet de filtres pour la file d’attente d’alertes dans Microsoft 365 Defender portail":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Section Filtres dans le portail Microsoft 365 Defender web." lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png":::
 
 Vous pouvez filtrer les alertes en fonction de ces critères :
 
@@ -91,7 +91,9 @@ Vous devez avoir l’un des rôles suivants pour accéder à Microsoft Defender 
 
 Pour voir la page principale de l’alerte, sélectionnez le nom de l’alerte. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Exemple de page de détails d’une alerte dans le portail Microsoft 365 Defender web":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Détails d’une alerte dans le portail Microsoft 365 Defender web" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png":::
+
+Vous pouvez également sélectionner l’action **Ouvrir la page d’alerte** principale dans le volet Gérer **les** alertes.
 
 Une page d’alerte se compose des sections suivantes : 
 
@@ -138,7 +140,7 @@ Une fois que vous avez sélectionné une entité d’intérêt, la page de déta
 
 Pour gérer une alerte, sélectionnez **Gérer l’alerte** dans la section Détails du résumé de la page d’alerte. Pour une seule alerte, voici un exemple du volet Gérer **les** alertes.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Exemple du volet Gérer les alertes dans le portail Microsoft 365 Defender web":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Section Gérer les alertes dans le portail Microsoft 365 Defender web" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png":::
 
 Le **volet Gérer les** alertes vous permet d’afficher ou de spécifier :
 

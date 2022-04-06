@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: b708d7aa993bdcd74b6fe00f633e3f7933ff04b8
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 6ab6ff7c043dcceacfbb07d0f6fec5e974999204
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321738"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682436"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recommandations de stratégies pour sécuriser les e-mails
 
@@ -55,7 +55,6 @@ Si vous avez inclus Exchange Online et Outlook dans l’étendue des stratégies
 |**Enterprise**|[Exiger l’mf lorsque le risque de se connecte *est faible*, *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure Exchange Online dans l’affectation des applications cloud|
 ||[Exiger des PC et *des appareils* mobiles conformes](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Inclure Exchange Online dans la liste des applications cloud|
 |**Sécurité spécialisée**|[*Toujours exiger* l’mf d’fa](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure Exchange Online dans l’affectation des applications cloud|
-|
 
 ## <a name="block-activesync-clients"></a>Bloquer les clients ActiveSync
 
@@ -107,7 +106,7 @@ Grâce aux nouvelles fonctionnalités chiffrement de messages Office 365 (OME), 
 
 Pour plus d’informations, voir [Configurer de chiffrement de messages Office 365 nouvelles fonctionnalités](../../compliance/set-up-new-message-encryption-capabilities.md).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 ![Étape 4 : Stratégies pour Microsoft 365 applications cloud.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 

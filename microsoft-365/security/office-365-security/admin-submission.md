@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour soumettre des courriers électroniques suspects, des messages de hameçonnage suspects, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des pièces jointes de courrier électronique à Microsoft pour une rescannation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6a897ba6973dfba86e3d0628088bad419c61c04c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 34d608a6ea114fff8005069f3dc2ddc79c4be45e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324052"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682634"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utiliser le portail soumissions pour soumettre des courriers indésirables, du hameçonnage, des URL et des fichiers suspectés à Microsoft
 
@@ -51,10 +51,10 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 - Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com/>. Pour aller directement à la page **Soumissions** , utilisez <https://security.microsoft.com/reportsubmission>.
 
-- Pour envoyer des messages et des fichiers à Microsoft, vous devez être membre de l’un des groupes de rôles suivants :
+- Pour envoyer des messages et des fichiers à Microsoft, vous devez avoir l’un des rôles suivants :
   - **Administrateur de sécurité** **ou lecteur de sécurité** dans [le portail Microsoft 365 Defender de sécurité](permissions-microsoft-365-security-center.md).
   
-    Notez que l’appartenance à ce groupe de [rôles](#view-user-submissions-to-microsoft) est requise pour afficher les envois d’utilisateurs à la boîte aux lettres personnalisée, comme décrit plus loin dans cet article.
+    Notez qu’un de ces rôles est requis pour afficher les [soumissions d’utilisateurs](#view-user-submissions-to-microsoft) à la boîte aux lettres personnalisée, comme décrit plus loin dans cet article.
 
 - Les administrateurs peuvent envoyer des messages depuis 30 jours s’ils sont toujours disponibles dans la boîte aux lettres et qu’ils ne sont pas purgés par l’utilisateur ou un autre administrateur.
 
@@ -199,7 +199,7 @@ Le message signalé est marqué comme faux positif ou faux négatif. Une notific
 
    - Pour grouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste liste :
      - **Aucune**
-     - **Type (Type)**
+     - **Type**
      - **Raison**
      - **État**
      - **Résultat**

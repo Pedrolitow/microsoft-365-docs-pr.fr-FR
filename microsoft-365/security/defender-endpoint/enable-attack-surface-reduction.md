@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 14dfd8bd911be9eb3932f7664225532e493e8a80
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 929ecd109d110c9a4578b39fbc69ed65c0b7d116
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465374"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682612"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
@@ -158,7 +158,7 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
 1. Ouvrez le Microsoft Endpoint Manager d’administration de l’utilisateur. Dans le menu **Accueil** , cliquez sur  **Appareils**, sélectionnez **Profils de configuration**, puis cliquez **sur Créer un profil**.
 
    > [!div class="mx-imgBorder"]
-   >  :::image type="content" source="images/mem01-create-profile.png" alt-text="Page Créer un profil dans le portail du centre Microsoft Endpoint Manager’administration" lightbox="images/mem01-create-profile.png":::
+   > ![MEM Create Profile.](images/mem01-create-profile.png)
 
 2. Dans **Créer un profil**, dans les deux listes de listes suivantes, sélectionnez les listes suivantes :
 
@@ -169,17 +169,17 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
    **Sélectionnez Personnalisé**, **puis Créer.**
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem02-profile-attributes.png" alt-text="Attributs de profil de règle dans le portail du Microsoft Endpoint Manager’administration" lightbox="images/mem02-profile-attributes.png":::
+   > ![Attributs de profil de règle MEM.](images/mem02-profile-attributes.png)
 
 3. L’outil Modèle personnalisé s’ouvre à **l’étape 1 Informations de base**. Dans **1 Informations de** base, dans **Nom**, tapez un nom pour votre modèle, et dans **Description** , vous pouvez taper une description (facultative).
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem03-1-basics.png" alt-text="Attributs de base dans le portail Microsoft Endpoint Manager centre d’administration" lightbox="images/mem03-1-basics.png":::
+   > ![Attributs de base MEM.](images/mem03-1-basics.png)
 
 4. Cliquez sur **Suivant**. Les **paramètres de configuration de l’étape 2 s’ouvrent** . Pour l’OMA-URI Paramètres, cliquez sur **Ajouter**. Deux options s’affichent maintenant : **Ajouter** et **Exporter**.
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem04-2-configuration-settings.png" alt-text="Paramètres de configuration dans le portail du centre d Microsoft Endpoint Manager’administration" lightbox="images/mem04-2-configuration-settings.png":::
+   > ![Paramètres de configuration MEM.](images/mem04-2-configuration-settings.png)
 
 5. Cliquez **à nouveau sur** Ajouter. La **ligne Ajouter un OMA-URI Paramètres** s’ouvre. Dans **Ajouter une ligne**, faites les choses suivantes :
 
@@ -195,7 +195,7 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
      - 6 : Avertir (activer la règle asr mais autoriser l’utilisateur final à contourner le blocage)
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem05-add-row-oma-uri.png" alt-text="Configuration de l’URI OMA dans le portail Microsoft Endpoint Manager’administration centrale" lightbox="images/mem05-add-row-oma-uri.png":::
+   > ![Configuration OMA URI MEM.](images/mem05-add-row-oma-uri.png)
 
 6. Sélectionnez **Enregistrer**. **Ajouter des fermetures** de ligne. Dans **Personnalisé**, sélectionnez **Suivant**. À **l’étape 3, les balises d’étendue** sont facultatives. Effectuez l'une des opérations suivantes :
 
@@ -209,7 +209,7 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
    - **Ajouter tous les appareils**
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem06-4-assignments.png" alt-text="Les affectations dans le portail Microsoft Endpoint Manager centre d’administration" lightbox="images/mem06-4-assignments.png":::
+   > ![Affectations MEM.](images/mem06-4-assignments.png)
 
 8. Dans **les groupes exclus**, sélectionnez les groupes que vous souhaitez exclure de cette règle, puis sélectionnez **Suivant**.
 
@@ -220,12 +220,12 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
    - Dans **Valeur**, entrez la valeur applicable ou la plage de valeurs
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem07-5-applicability-rules.png" alt-text="Règles d’applicabilité dans le portail Microsoft Endpoint Manager d’administration" lightbox="images/mem07-5-applicability-rules.png":::
+   > ![Règles d’applicabilité MEM.](images/mem07-5-applicability-rules.png)
 
 10. Sélectionnez **Suivant**. À **l’étape 6 Révision + création**, examinez les paramètres et les informations que vous avez sélectionnés et entrés, puis sélectionnez **Créer**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/mem08-6-review-create.png" alt-text="Option Révision et création dans le portail du Microsoft Endpoint Manager’administration" lightbox="images/mem08-6-review-create.png":::
+    > ![Révision et création de MEM.](images/mem08-6-review-create.png)
 
     > [!NOTE]
     > Les règles sont actives et actives en quelques minutes.
@@ -256,7 +256,7 @@ Les valeurs à activer (bloquer), désactiver, avertir ou activer en mode audit 
 
 Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) (CSP) pour ajouter des exclusions.
 
-Exemple :
+Exemple :
 
 `OMA-URI path: ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions`
 
@@ -297,7 +297,7 @@ Exemple :
    - 2 : Audit (évaluer l’impact de la règle asr sur votre organisation si elle est activée)
    - 6 : Avertir (activer la règle asr mais autoriser l’utilisateur final à contourner le blocage)
 
-   :::image type="content" source="images/asr-rules-gp.png" alt-text="Règles asr dans la stratégie de groupe" lightbox="images/asr-rules-gp.png":::
+   :::image type="content" source="images/asr-rules-gp.png" alt-text="Règles asr dans la stratégie de groupe.":::
 
 5. Pour exclure des fichiers et des dossiers des règles de réduction de la surface d’attaque, sélectionnez le paramètre Exclure les fichiers et les chemins d’accès des règles de réduction de la **surface** d’attaque et définissez l’option **sur Activé**. **Sélectionnez Afficher** et entrez chaque fichier ou dossier dans la **colonne Nom de la** valeur. Entrez **0 dans** la colonne **Valeur** pour chaque élément.
 
@@ -312,7 +312,7 @@ Exemple :
 > Le paramètre d’option Défini par l’utilisateur est illustré dans la figure suivante.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-user-defined.png" alt-text="Option Activer pour la sécurité des informations d’identification" lightbox="images/asr-user-defined.png":::
+> ![ASR enable "User Defined"](images/asr-user-defined.png)
 
 1. **Tapez powershell** dans le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**.
 

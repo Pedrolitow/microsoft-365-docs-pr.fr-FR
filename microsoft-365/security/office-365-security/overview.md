@@ -1,5 +1,5 @@
 ---
-title: Office 365 sécurité, y compris Microsoft Defender pour Office 365 et Exchange Online Protection
+title: Sécurité Office 365, notamment Microsoft Defender pour Office 365 et Exchange Online Protection
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -13,28 +13,28 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: La sécurité dans Office 365, de EOP à Defender pour Office 365 Plans 1 et 2, les configurations de sécurité Standard vs Strict, et plus encore. Comprenez ce que vous avez et comment sécuriser vos propriétés.
+description: Sécurité dans Office 365, d’Exchange Online Protection aux plans 1 et 2 de Defender pour Office 365, Standard vs. Configurations de sécurité strictes, et plus. Découvrez ce que vous avez et comment sécuriser vos propriétés.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 20bb1dcf9c34f0f7507d8fec7c9025de03461533
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 31eaa1c2ae44799c15a782d121ad2068eaa40c25
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317022"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681103"
 ---
-# <a name="microsoft-defender-for-office-365-security-overview"></a>Vue d’ensemble de la sécurité Office 365 Microsoft Defender for Office 365
+# <a name="microsoft-defender-for-office-365-security-overview"></a>Vue d’ensemble de la sécurité de Microsoft Defender pour Office 365
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 
-Cet article vous présente votre nouveau Microsoft Defender pour Office 365 de sécurité dans le Cloud. Que vous fassiez partie d'un Centre d'opérations de sécurité, que vous soyez un administrateur de sécurité débutant dans ce domaine ou que vous souhaitiez rafraîchir vos connaissances, nous allons commencer..
+Cet article vous présente vos nouvelles propriétés de sécurité Microsoft Defender pour Office 365 dans le cloud. Que vous fassiez partie d'un Centre d'opérations de sécurité, que vous soyez un administrateur de sécurité débutant dans ce domaine ou que vous souhaitiez rafraîchir vos connaissances, nous allons commencer..
 
 > [!CAUTION]
 > Si vous utilisez **Outlook.com**, **Microsoft 365 Famille** ou **Microsoft 365 Personnel** et que vous avez besoin d’informations sur les *Liens fiables* ou *Pièces jointes fiables* ***cliquez sur ce lien*** : [Sécurité Outlook.com renforcée pour abonnés Microsoft 365](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-## <a name="what-is-defender-for-office-365-security"></a>Qu’est-ce que Defender pour Office 365 sécurité
+## <a name="what-is-defender-for-office-365-security"></a>Présentation de la sécurité de Defender pour Office 365
 
 Tous les abonnements Office 365 offrent des fonctionnalités de sécurité. Les objectifs et les actions que vous pouvez entreprendre dépendent de l'orientation de ces différents abonnements. Dans la sécurité Office 365, trois principaux services de sécurité (ou produits) sont liés à votre type d’abonnement :
 
@@ -52,9 +52,8 @@ Vous avez peut-être l’habitude de voir ces trois composants abordés de cette
 |Exchange Online Protection|Microsoft Defender pour Office 365 Plan 1|Microsoft Defender pour Office 365 Plan 2|
 |---|---|---|
 |Empêche les attaques connues, de grande envergure et basées sur le volume.|Protège la messagerie et la collaboration contre les logiciels malveillants de type « zero-day », le hameçonnage et la compromission de la messagerie professionnelle.|Ajoute des examens après la violation, des recherches et des réponses, ainsi qu’une automatisation et une simulation (pour la formation).|
-|
 
-En termes d’architecture, commençons par réfléchir à chaque élément comme une couche cumulative de sécurité, chacune faisant l’objet d’une mise en avant de la sécurité. D'autres comme ça :
+Mais en termes d’architecture, commençons par considérer chaque élément comme des couches de sécurité cumulatives, chacune avec un accent sur la sécurité. Plus comme ceci :
 
 :::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP et Microsoft Defender pour Office 365 et leurs relations les uns avec les autres grâce au service et à une note pour l’authentification des messages électroniques.":::
 
@@ -62,7 +61,7 @@ Bien que chacun de ces services mette l'accent sur un objectif parmi les suivant
 
 La protection EOP constitue le cœur de la sécurité dans Office 365. Microsoft Defender pour Office 365 Plan 1 contient EOP. Defender pour Office 365 P2 contient P1 et EOP. La structure est cumulée. C’est pourquoi, lors de la configuration de ce produit, vous devez commencer avec EOP et travailler sur Defender pour Office 365.
 
-Bien que la configuration de l'authentification du courrier électronique s'effectue dans le DNS public, il est important de configurer cette fonction pour se défendre contre l'usurpation d'identité. *Si vous disposez d'EOP,* ***vous devez [configurer l'authentification de l’e-mail](email-validation-and-authentication.md)***.
+Bien que la configuration de l’authentification par e-mail ait lieu dans le DNS public, il est important de configurer cette fonctionnalité pour vous défendre contre l’usurpation d’identité. *Si vous avez Exchange Online Protection,****vous devez [configurer l’authentification par e-mail](email-validation-and-authentication.md)***.
 
 Si vous avez un Office 365 E3, ou une version inférieure, vous avez EOP, mais avec l'option d'acheter Defender pour Office 365 P1 par mise à jour. Si vous avez Office 365 E5, vous avez déjà Defender pour Office 365 P2.
 
@@ -85,8 +84,7 @@ Ce qui fait de l'ajout des plans Microsoft Defender pour Office 365 un avantage
 
 |Prévention/détection|Examiner|Répondre|
 |---|---|---|
-|Les technologies comprennent :<ul><li>courrier indésirable</li><li>hameçonnage</li><li>programme malveillant</li><li>courrier en nombre</li><li>veille contre l'usurpation d'identité</li><li>détection d’emprunt d’identité</li><li>Mise en quarantaine de l’administrateur</li><li>Envois de faux positifs et de faux négatifs par l’administrateur et l’utilisateur</li><li>Autoriser/Bloquer pour les URL et fichiers</li><li>Rapports</li></ul>|<li>Recherche de journal d’audit</li><li>Suivi des messages</li>|<li>Purge automatique en heure zéro (ZAP)</li><li>Affinement et test des listes d’autoriser et de blocage</li>|
-|
+|Les technologies comprennent :<ul><li>courrier indésirable</li><li>hameçonnage</li><li>programme malveillant</li><li>courrier en nombre</li><li>veille contre l'usurpation d'identité</li><li>détection d’emprunt d’identité</li><li>Mise en quarantaine de l’administrateur</li><li>Envois de faux positifs et de faux négatifs par l’administrateur et l’utilisateur</li><li>Autoriser/Bloquer pour les URL et fichiers</li><li>Rapports</li></ul>|<li>Recherche de journal d’audit</li><li>Suivi des messages</li>|<li>Purge automatique zéro heure (PAZH)</li><li>Affinement et test des listes d’autoriser et de blocage</li>|
 
 Si vous souhaitez approfondir EOP, **[passez à cet article](exchange-online-protection-overview.md)**.
 
@@ -110,14 +108,14 @@ Gains avec **Defender pour Office 365, Plan 2** (à ce jour) :
 |---|---|---|
 |Les technologies incluent tous les logiciels EOP, Microsoft Defender pour Office 365 P1 ainsi que :<ul><li>Identique</li>|<li>**Explorateur de menaces**</li><li>Suivi des menaces</li><li>Affichages de campagne</li>|<li>Enquêtes et réponses automatisées (AIR)</li><li>AIR à partir de l’Explorateur de menaces</li><li>Enquêtes et réponses automatisées pour les utilisateurs compromis</li><li>API d’intégration SIEM pour les enquêtes automatisées</li>
 
-Ainsi, Microsoft Defender pour Office 365 P2 développe le côté ***enquête et réponse de la maison***, et ajoute une nouvelle force de repérage. Automatisation.
+Par conséquent, Microsoft Defender pour Office 365 P2 s’étend sur le côté ***investigation et réponse*** de la maison, et ajoute une nouvelle force de chasse. Automatisation.
 
-Dans Microsoft Defender pour Office 365 P2, l’outil de repérage principal de l’**Explorateur de menaces** s’appelle la détection en temps réel. Si vous voyez l’Explorateur de menaces lorsque vous accédez au portail Microsoft 365 Defender, vous êtes dans Microsoft Defender pour Office 365 P2.
+Dans Microsoft Defender pour Office 365 P2, l’outil de repérage principal de l’**Explorateur de menaces** s’appelle la détection en temps réel. Si l’explorateur des menaces s’affiche lorsque vous accédez au portail Microsoft 365 Defender, vous êtes dans Microsoft Defender pour Office 365 P2.
 
 Pour en savoir plus sur Microsoft Defender pour Office 365 P1 et P2, **[consulter cet article](defender-for-office-365.md)**.
 
 > [!TIP]
-> EOP et Microsoft Defender pour Office 365 sont également différents en ce qui concerne les utilisateurs finaux. Dans EOP et Defender pour Office 365 P1, le focus est la *Sensibilisation*. Ces deux services incluent donc le *complément Outlook Signaler le message* qui permet aux utilisateurs de signaler les courriers électroniques qu’ils suspectent, pour une analyse approfondie. <p> Dans Defender pour Office 365 P2 (qui contient tous les éléments dans EOP et P1), le focus est déplacé vers *formation supplémentaires* pour les utilisateurs finaux. Ainsi, le Centre des opérations de sécurité a accès à un puissant outil *Simulateur de menace* et aux mesures qu’il fournit aux utilisateurs finaux.
+> Exchange Online Protection et Microsoft Defender pour Office 365 sont également différents en ce qui concerne les utilisateurs finaux. Dans Exchange Online Protection et Defender pour Office 365 P1, le focus est la *sensibilisation*, de sorte que ces deux services incluent donc le *Complément Outlook de signalement de message* afin que les utilisateurs puissent signaler les e-mails qu’ils trouvent suspects, pour une analyse plus approfondie. <p> Dans Defender pour Office 365 P2 (qui contient tous les éléments dans EOP et P1), le focus est déplacé vers *formation supplémentaires* pour les utilisateurs finaux. Ainsi, le Centre des opérations de sécurité a accès à un puissant outil *Simulateur de menace* et aux mesures qu’il fournit aux utilisateurs finaux.
 
 ## <a name="microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet"></a>Fiche d'information sur Microsoft Defender pour Office 365 Plan 1 vs. Plan 2
 
@@ -125,7 +123,7 @@ Cette référence rapide vous aide à comprendre les fonctionnalités fournies a
 
 |Microsoft Defender pour Office 365 Plan 1|Microsoft Defender pour Office 365 Plan 2|
 |---|---|
-|Fonctionnalités de configuration, de protection et de détection : <ul><li>[Pièces jointes fiables](safe-attachments.md)</li><li>[Liens fiables](safe-links.md)</li><li>[Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Protection contre le hameçonnage dans Defender pour Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Détections en temps réel](threat-explorer.md)</li></ul>|Fonctionnalités de Microsoft Defender pour Office 365 Plan 1 <p> --- plus --- <p> Fonctionnalités d’automatisation, d’examen, de correction et de formation : <ul><li>[Suivi des menaces](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Examen et réponse automatisés](office-365-air.md)</li><li>[Formation à la simulation d'attaque](attack-simulation-training.md)</li><li>[Recherchez de manière proactive les menaces avec le recherche avancée dans Microsoft 365 Defender](../defender/advanced-hunting-overview.md)</li><li>[Examiner les incidents dans Microsoft 365 Defender](../defender/investigate-incidents.md)</li><li>[Examiner les alertes dans Microsoft 365 Defender](../defender/investigate-alerts.md)</li></ul>|
+|Fonctionnalités de configuration, de protection et de détection : <ul><li>[Pièces jointes fiables](safe-attachments.md)</li><li>[Liens fiables](safe-links.md)</li><li>[Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Protection contre le hameçonnage dans Defender pour Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Détections en temps réel](threat-explorer.md)</li></ul>|Fonctionnalités de Microsoft Defender pour Office 365 Plan 1 <p> --- plus --- <p> Fonctionnalités d’automatisation, d’examen, de correction et de formation : <ul><li>[Suivi des menaces](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Examen et réponse automatisés](office-365-air.md)</li><li>[Formation à la simulation d'attaque](attack-simulation-training.md)</li><li>[Recherche proactive des menaces avec repérage avancé dans Microsoft 365 Defender](../defender/advanced-hunting-overview.md)</li><li>[Examiner les incidents dans Microsoft 365 Defender](../defender/investigate-incidents.md)</li><li>[Examiner les alertes dans Microsoft 365 Defender](../defender/investigate-alerts.md)</li></ul>|
 
 - Microsoft Defender pour Office 365 Plan 2 est inclus dans Office 365 E5, Office 365 A5 et Microsoft 365 E5.
 
@@ -154,4 +152,4 @@ Découvrir les [Nouveautés Microsoft Defender pour Office 365 (y compris les d�
 
 [Utiliser l’Explorateur de menaces ou la détection en temps réel](threat-explorer.md)
 
-Utiliser une [formation de simulation d’attaque](attack-simulation-training.md)
+Utiliser la [Formation de simulation d’attaque](attack-simulation-training.md)

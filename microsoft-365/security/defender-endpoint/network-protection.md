@@ -15,14 +15,16 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: overview
-ms.collection: m365initiative-m365-defender
+ms.collection:
+- m365initiative-m365-defender
+- M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: b94e7f959c44e44e5b61dfd0536b3c1077d0edc5
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 7b9443cac6543ac14f6d94bd2809b5263be0a860
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807199"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681829"
 ---
 # <a name="protect-your-network"></a>Protéger votre réseau
 
@@ -44,7 +46,7 @@ La protection du réseau étend la protection dans [la protection Web](web-prote
 > Consultez le site testground de Microsoft Defender for Endpoint [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour voir comment fonctionne la protection réseau.
 
 > [!NOTE]
-> Le site de démonstration Defender for Endpoint demo.wd.microsoft.com est supprimé et sera supprimé à l’avenir.
+> Le site de démonstration Defender pour point de terminaison sur demo.wd.microsoft.com est déconseillé et sera supprimé à l’avenir.
 
 ## <a name="requirements-for-network-protection"></a>Conditions requises pour la protection du réseau
 
@@ -89,7 +91,7 @@ DeviceNetworkEvents
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>Passer en revue les événements de protection réseau dans Windows’observateur d’événements
 
-Vous pouvez consulter le journal des Windows pour voir les événements créés lorsque la protection réseau bloque (ou audite) l’accès à une adresse IP ou un domaine malveillant :
+Vous pouvez consulter le journal Windows événements pour voir les événements créés lorsque la protection réseau bloque (ou audite) l’accès à une adresse IP ou un domaine malveillant :
 
 1. [Copiez le XML directement](event-views.md).
 

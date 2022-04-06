@@ -20,12 +20,12 @@ ms.custom:
 description: Les utilisateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine dans Exchange Online Protection (EOP) qui auraient dû leur être remis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1cfdd441cff8481ef1ec7ea5ef3cabc54f062694
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 35aa801d0d981f68de5c62a1928e1f85d82ee95d
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873488"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682392"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans EOP
 
@@ -40,15 +40,11 @@ Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange 
 
 En tant qu’utilisateur ordinaire (et non administrateur), les fonctionnalités **par défaut** à votre disposition en tant que destinataire d’un message mis en quarantaine sont décrites dans le tableau suivant :
 
-<br>
-
-****
-
 |Raison de la mise en quarantaine :|Afficher|Débloquer|Supprimer|
 |---|:---:|:---:|:---:|
 |**Stratégies anti-courrier indésirable**||||
 |En nombre|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
-|Courrier indésirable|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|Courrier indésirable|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
 |Courrier fortement suspecté d’être indésirable|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
 |Hameçonnage|![Coche.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
 |Hameçonnage à haute fiabilité||||
@@ -64,7 +60,6 @@ En tant qu’utilisateur ordinaire (et non administrateur), les fonctionnalités
 |Pièces jointes fiables pour SharePoint, OneDrive et Microsoft Teams qui mettent en quarantaine les fichiers malveillants en tant que programmes malveillants.||||
 |**Règles de flux de messagerie (règles de transport)**||||
 |Règles de flux de messagerie qui met en quarantaine les messages électroniques.||||
-|
 
 _Les stratégies de mise en quarantaine_ définissent ce que les utilisateurs sont autorisés à faire pour les messages mis en quarantaine en fonction de la raison pour laquelle le message a été mis en quarantaine dans les [fonctionnalités prises en charge](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). Les stratégies de mise en quarantaine par défaut appliquent les fonctionnalités historiques comme décrit dans le tableau précédent. Les administrateurs peuvent créer et appliquer des stratégies de mise en quarantaine personnalisées qui définissent des fonctionnalités moins restrictives ou plus restrictives pour les utilisateurs dans les fonctionnalités prises en charge. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
 

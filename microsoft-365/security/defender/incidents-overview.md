@@ -23,19 +23,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 25cdc0610f11d1bcd7e8c27faa1cdc9453677d51
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 233c9993c8cd5978bcdfcbb54db8b9688c3ac056
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320875"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500032"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Réponse aux incidents avec Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 > Voulez-vous faire l'expérience de Microsoft 365 Defender? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou [exécuter votre projet pilote en production](m365d-pilot.md?ocid=cx-evalpilot).
@@ -73,7 +73,7 @@ Vous gérez les incidents à partir **d’incidents & alertes > incidents** dans
 
 La sélection d’un nom d’incident affiche un résumé de l’incident et donne accès aux onglets avec des informations supplémentaires. Voici un exemple.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exemple de page Résumé d’un incident dans le portail Microsoft 365 Defender" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Page Récapitulatif d’un incident dans le portail Microsoft 365 Defender web" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 Les onglets supplémentaires pour un incident sont les suivants :
 
@@ -113,7 +113,7 @@ Voici la relation entre un incident et ses données et les onglets d’un incide
 
 Voici un exemple de flux de travail pour répondre aux incidents dans Microsoft 365 avec le portail Microsoft 365 Defender web.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Exemple de flux de travail de réponse aux incidents pour Microsoft 365." lightbox="../../media/incidents-overview/incidents-example-workflow.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Exemple de flux de travail de réponse aux incidents pour le Microsoft 365 Defender web." lightbox="../../media/incidents-overview/incidents-example-workflow.png":::
 
 En continu, identifiez les incidents les plus prioritaires pour l’analyse et la résolution dans la file d’attente des incidents et préparez-les pour la réponse. Il s’agit d’une combinaison de :
 
@@ -153,7 +153,7 @@ Pour plus d’informations sur la réponse aux incidents dans les produits Micro
 
 Voici un exemple d’opérations de sécurité (SecOps) pour Microsoft 365 Defender.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Exemple d’opérations de sécurité pour Microsoft 365 Defender." lightbox="../../media/incidents-overview/incidents-example-operations.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Exemple d’opérations de sécurité pour Microsoft 365 Defender" lightbox="../../media/incidents-overview/incidents-example-operations.png":::
 
 Les tâches quotidiennes peuvent inclure les tâches suivantes :
 
@@ -215,7 +215,7 @@ Suivez ces étapes pour créer une règle et personnaliser les paramètres de no
     - **Inclure le nom de l’organisation dans l’e-mail** : sélectionnez si vous souhaitez que le nom de votre organisation apparaisse dans la notification par courrier électronique.
     - **Inclure un lien de portail propre au client** : sélectionnez si vous souhaitez ajouter un lien avec l’ID de client dans la notification par courrier électronique pour accéder à un client Microsoft 365 spécifique.
 
-    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="Paramètres de notification pour les notifications d’incident par courrier électronique." lightbox="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png":::
+    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="Page Paramètres de notification pour les notifications d’incident par courrier électronique dans le Microsoft 365 Defender web." lightbox="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png":::
 
 5. Sélectionnez **Suivant**. Dans la page **Destinataires** , ajoutez les adresses de messagerie qui recevront les notifications d’incident. **Sélectionnez Ajouter** après avoir tapé chaque nouvelle adresse de messagerie. Pour tester les notifications et vérifier que les destinataires les reçoivent dans les boîtes de réception, **sélectionnez Envoyer un message électronique de test**. 
 6. Sélectionnez **Suivant**. Dans la page **Examiner la règle** , examinez les paramètres de la règle, puis sélectionnez **Créer une règle**. Les destinataires commenceront à recevoir des notifications d’incident par courrier électronique en fonction des paramètres.
@@ -236,7 +236,7 @@ Utilisez ce module d’apprentissage de Microsoft Learn pour comprendre comment 
 > [!div class="nextstepaction"]
 > [Démarrer >](/learn/modules/defender-investigate-incidents/)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Utilisez les étapes répertoriées en fonction de votre niveau d’expérience ou de votre rôle dans votre équipe de sécurité.
 

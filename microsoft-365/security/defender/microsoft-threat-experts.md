@@ -18,12 +18,12 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 61e98e18466992a0463aa1f97ce2527b943f8abd
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: ebe155d825f9096ded4b1e1f18955b5b24350175
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498668"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682281"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Spécialistes des menaces Microsoft dans Microsoft 365 vue d’ensemble
 
@@ -46,7 +46,7 @@ Spécialistes des menaces Microsoft : les experts à la demande vous offrent des
 
 Si vous avez déjà Microsoft Defender pour les points de terminaison et les Microsoft 365 Defender, vous pouvez demander des notifications d’Spécialistes des menaces Microsoft – Attaques ciblées via leur portail Microsoft 365 Defender web. Go to **Paramètres > Endpoints > General > Advanced features > Spécialistes des menaces Microsoft – Targeted Attack Notifications**, and select **Apply**. Voir [Configurer Spécialistes des menaces Microsoft fonctionnalités pour](./configure-microsoft-threat-experts.md) obtenir une description complète.
 
-:::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="Option Fonctionnalités avancées dans le volet de navigation gauche de la page Points de terminaison du portail Microsoft 365 Defender" lightbox="../../media/mte/mte-collaboratewithmte.png":::
+![Capture d’écran de la page d’application MTE.](../../media/mte/mte-collaboratewithmte.png)
 
 Une fois votre application approuvée, vous commencez à recevoir des notifications d’attaque ciblée chaque fois que les experts en menace détectent une menace pour votre environnement.
 
@@ -74,24 +74,19 @@ Vous pouvez également contacter des experts microsoft en matière de menaces di
 L’option de **consulter un expert en menaces** est disponible à plusieurs endroits dans le portail :
 
 - <i>**Menu Actions de page d’appareil**</i><BR>
-
-:::image type="content" source="../../media/mte/device-actions-mte-highlighted.png" alt-text="Option de menu MTE-EOD dans le menu Action de la page appareil du portail Microsoft 365 Defender" lightbox="../../media/mte/device-actions-mte-highlighted.png":::
+![Capture d’écran de l’option de menu MTE-EOD dans le menu d’action de la page Appareil.](../../media/mte/device-actions-mte-highlighted.png)
 
 - <i>**Menu volant de la page d’inventaire des appareils**</i><BR>
-
-:::image type="content" source="../../media/mte/device-inventory-mte-highlighted.png" alt-text="Option de menu MTE-EOD dans la page Inventaire des appareils du portail Microsoft 365 Defender" lightbox="../../media/mte/device-inventory-mte-highlighted.png":::
+![Capture d’écran de l’option de menu MTE-EOD sur la page d’inventaire des appareils.](../../media/mte/device-inventory-mte-highlighted.png)
 
 - <i>**Menu volant de la page Alertes**</i><BR>
-
-:::image type="content" source="../../media/mte/alerts-actions-mte-highlighted.png" alt-text="Option de menu MTE-EOD dans la page Alertes du portail Microsoft 365 Defender" lightbox="../../media/mte/alerts-actions-mte-highlighted.png":::
+![Capture d’écran de l’option de menu MTE-EOD sur la page d’alerte.](../../media/mte/alerts-actions-mte-highlighted.png)
 
 - <i>**Menu Actions de la page Incidents**</i><BR>
-
-:::image type="content" source="../../media/mte/incidents-action-mte-highlighted.png" alt-text="Option de menu MTE-EOD dans la page Incidents du portail Microsoft 365 Defender" lightbox="../../media/mte/incidents-action-mte-highlighted.png":::
+![Capture d’écran de l’option de menu MTE-EOD sur la page incidents.](../../media/mte/incidents-action-mte-highlighted.png)
 
 - <i>**Page d’inventaire des incidents**</i><BR>
-
-:::image type="content" source="../../media/mte/incidents-inventory-mte-highlighted.png" alt-text="Option de menu MTE-EOD dans la page d’inventaire des incidents du portail Microsoft 365 Defender" lightbox="../../media/mte/incidents-inventory-mte-highlighted.png":::
+![Capture d’écran de l’option de menu MTE-EOD sur la page d’inventaire des incidents.](../../media/mte/incidents-inventory-mte-highlighted.png)
 
 > [!NOTE]
 > Si vous avez un abonnement au support Premier mappé à votre licence Microsoft Defender pour Office 365, vous pouvez suivre l’état de vos cas Experts à la demande via le Microsoft Services Hub.

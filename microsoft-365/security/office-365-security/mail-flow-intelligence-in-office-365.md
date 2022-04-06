@@ -15,12 +15,13 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Les administrateurs peuvent en savoir plus sur les codes d’erreur associés à la remise des messages à l’aide de connecteurs (également appelés renseignements sur le flux de messagerie).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 57d8a9ec9bb40961ecf0b53f52198bde00e8bc03
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 2536120dfc336145ec9fdba1db34a8da1f56c1b4
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933886"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680993"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Renseignements sur le flux de courriers dans EOP
 
@@ -33,7 +34,7 @@ ms.locfileid: "61933886"
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, vous utilisez généralement un connecteur pour router les messages électroniques d’EOP vers votre environnement de messagerie local. Vous pouvez également utiliser un connecteur pour router des messages depuis Microsoft 365 vers une organisation partenaire. Lorsque Microsoft 365 ne peut pas remettre ces messages via le connecteur, ils sont mis en file d’attente Microsoft 365. Microsoft 365 continueront de réessayer de remise pour chaque message pendant 24 heures. Au bout de 24 heures, le message mis en file d’attente expire et le message est renvoyé à l’expéditeur d’origine dans une non-remise (également appelée rapport de non-remise).
 
-Microsoft 365 génère une erreur lorsqu’un message ne peut pas être remis à l’aide d’un connecteur. Les erreurs les plus courantes et leurs solutions sont décrites dans cet article. Collectivement, les erreurs de mise en file d’accès et de notification pour les messages non transmis envoyés via des connecteurs sont appelées informations de _flux de messagerie._
+Microsoft 365 génère une erreur lorsqu’un message ne peut pas être remis à l’aide d’un connecteur. Les erreurs les plus courantes et leurs solutions sont décrites dans cet article. Collectivement, les erreurs de mise en file d’accès et de notification pour les messages non transmis envoyés via des connecteurs sont appelées renseignements _sur le flux de messagerie_.
 
 ## <a name="error-code-450-44312-dns-query-failed"></a>Code d’erreur : 450 4.4.312 Échec de la requête DNS
 
@@ -73,19 +74,19 @@ En règle générale, cette erreur signifie Microsoft 365 a rencontré une erreu
 
 - Si vous avez des boîtes aux lettres dans votre environnement local, vous devez modifier les paramètres de votre pare-feu pour autoriser les connexions entre les adresses IP Microsoft 365 sur le port TCP 25 et vos serveurs de messagerie locaux. Pour obtenir la liste des adresses IP Microsoft 365, voir Microsoft 365 [URL et plages d’adresses IP.](../../enterprise/urls-and-ip-address-ranges.md)
 
-- Si aucun autre message ne doit être remis à  votre environnement local, cliquez sur Corriger maintenant dans l’alerte pour que Microsoft 365 puisse immédiatement rejeter les messages avec des destinataires non valides. Cette action réduira le risque de dépasser le quota de destinataires non valides de votre organisation, ce qui peut avoir des répercussions négatives sur la remise normale des messages. Vous pouvez également suivre les instructions suivantes pour résoudre manuellement le problème :
+- Si aucun autre message ne doit être remis à votre environnement local, cliquez sur Corriger maintenant  dans l’alerte pour que Microsoft 365 puisse immédiatement rejeter les messages avec des destinataires non valides. Cette action réduira le risque de dépasser le quota de destinataires non valides de votre organisation, ce qui peut avoir des répercussions négatives sur la remise normale des messages. Vous pouvez également suivre les instructions suivantes pour résoudre manuellement le problème :
 
-  - Dans le Exchange d’administration, désactivez ou supprimez le connecteur qui fournit le courrier électronique Microsoft 365 votre environnement de messagerie local :
+  - Dans le Exchange d’administration, désactivez ou supprimez le connecteur qui Microsoft 365 à votre environnement de messagerie local :
 
-    1. In the EAC at <https://admin.exchange.microsoft.com> , go to Mail **flow** \> **Connectors**. Pour aller directement à la page **Connecteurs,** utilisez <https://admin.exchange.microsoft.com/#/connectors> .
+    1. Dans le EAC, dans <https://admin.exchange.microsoft.com>, allez **à Connecteurs de flux** \> **de messagerie**. Pour aller directement à la page **Connecteurs** , utilisez <https://admin.exchange.microsoft.com/#/connectors>.
 
-    2. Sélectionnez le  connecteur avec la valeur **De Office 365** et la valeur **À** du serveur de messagerie de votre organisation et faites **l’une** des étapes suivantes :
-       - Supprimez le connecteur en cliquant sur **Supprimer** ![ l’icône Supprimer.](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
-       - Désactivez le connecteur en cliquant sur **Modifier** ![ l’icône Modifier.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) et effacer **l’activer.**
+    2. Sélectionnez le connecteur avec  la valeur **De Office 365** et la valeur **À** du serveur de messagerie de votre organisation et faites **l’une** des étapes suivantes :
+       - Supprimez le connecteur en cliquant sur **Supprimer** ![l’icône Supprimer.](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
+       - Désactivez le connecteur en cliquant sur **Modifier** ![l’icône Modifier.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) et désactiver **l’activer**.
 
-  - Modifiez le domaine accepté dans Microsoft 365 qui est associé à votre environnement de messagerie local de **Relais** interne à Faisant **autorité.** Pour obtenir des instructions, [voir Gérer les domaines acceptés dans Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+  - Modifiez le domaine accepté dans Microsoft 365 qui est associé à votre environnement de messagerie local de **Relais** interne à **Faisant autorité**. Pour obtenir des instructions, voir [Gérer les domaines acceptés dans Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-  **Remarque**: en règle générale, ces modifications prennent entre 30 minutes et une heure pour prendre effet. Après une heure, vérifiez que vous ne recevez plus l’erreur.
+  **Remarque** : en règle générale, ces modifications prennent entre 30 minutes et une heure pour prendre effet. Après une heure, vérifiez que vous ne recevez plus l’erreur.
 
 - Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l’origine de l’erreur, vous devez contacter votre partenaire afin de résoudre le problème.
 
@@ -117,7 +118,7 @@ En règle générale, cette erreur signifie Microsoft 365 a des difficultés à 
 
 ## <a name="error-code-450-47320-certificate-validation-failed"></a>Code d’erreur : 450 4.7.320 Échec de la validation du certificat
 
-En règle générale, cette erreur signifie Microsoft 365'une erreur s’est produite lors de la tentative de validation du certificat du serveur de messagerie de destination. Les détails de l'erreur expliquent cette dernière. Par exemple :
+En règle générale, cette erreur signifie Microsoft 365 une erreur s’est produite lors de la tentative de validation du certificat du serveur de messagerie de destination. Les détails de l'erreur expliquent cette dernière. Par exemple :
 
 - Le certificat est arrivé à expiration.
 - Le sujet du certificat ne concorde pas.

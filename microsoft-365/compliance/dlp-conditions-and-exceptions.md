@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: En savoir plus sur les conditions et les exceptions de stratégie dlp
-ms.openlocfilehash: 771674b82e50987397fc1ae754f0b96719a04ae5
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 9b735d139950399fb80e9063e7d9fdd1176c2d2b
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401115"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500054"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>Conditions, exceptions et actions de stratégie DLP
 
@@ -80,7 +80,7 @@ Pour configurer l’emplacement de l’adresse de l’expéditeur au niveau d’
 |Les propriétés spécifiées de l'expéditeur correspondent à ces modèles de texte|condition : *SenderADAttributeMatchesPatterns* <br/> exception : *ExceptIfSenderADAttributeMatchesPatterns*|Première propriété : `ADAttribute` <p> Deuxième propriété : `Patterns`|Messages dans lesquels l'attribut Active Directory spécifié de l'expéditeur contient des modèles de texte qui correspondent aux expressions régulières spécifiées.|
 |
 
-### <a name="recipients"></a>Recipients
+### <a name="recipients"></a>Destinataires
 
 <br>
 
@@ -154,7 +154,7 @@ Pour configurer l’emplacement de l’adresse de l’expéditeur au niveau d’
 |Avec importance|condition : *WithImportance* <br/> exception : *ExceptIfWithImportance*|Importance|Messages marqués avec le niveau d’importance spécifié.|
 |Le jeu de caractères de contenu contient des mots|condition : *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*|CharacterSets|Messages qui contiennent l'un des noms de jeux de caractères spécifiés.|
 |A remplacement de l’expéditeur|condition : *HasSenderOverride* <br/> exception : *ExceptIfHasSenderOverride*|s/o|Messages dans lesquels l'expéditeur a choisi de remplacer une stratégie de protection contre la perte de données (DLP). Pour plus d’informations sur les stratégies DLP, voir [En savoir plus sur la protection contre la perte de données](./dlp-learn-about-dlp.md)|
-|Correspondances de type de message|condition : *MessageTypeMatches* <br/> exception : *ExceptIfMessageTypeMatches*|MessageType|Messages du type spécifié.|
+|Correspondances de type de message|condition : *MessageTypeMatches* <br/> exception : *ExceptIfMessageTypeMatches*|MessageType|Messages du type spécifié. **Remarque** : les types de messages disponibles sont : réponse automatique, transmission automatique, chiffrement (S/MIME), calendrier, autorisation contrôlée (gestion des droits), messagerie vocale, signature, réception de lecture et demande d’approbation. |
 |La taille du message est supérieure ou égale à|condition : *MessageSizeOver* <br/> exception : *ExceptIfMessageSizeOver*|`Size`|Messages dans lesquels la taille totale (message plus pièces jointes) est supérieure ou égale à la valeur spécifiée. **Remarque**: Les limites de taille des messages dans les boîtes aux lettres sont évaluées avant les règles de flux de messagerie. Si un message est trop volumineux pour une boîte aux lettres, il est refusé avant qu'une règle avec cette condition puisse agir sur le message.|
 |
 

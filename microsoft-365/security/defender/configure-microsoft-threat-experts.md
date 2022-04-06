@@ -17,12 +17,12 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 8a8de691ff08b50b56c34ed9e779cc97d48c5fcd
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 0bf6a6ecf48889228391688e41fb79070c3194a1
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755843"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682215"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Configurer et gérer les fonctionnalités Spécialistes des menaces Microsoft d’Microsoft 365 Defender
 
@@ -52,15 +52,15 @@ Si vous avez déjà Microsoft Defender pour les points de terminaison et les Mic
 
 2. Sélectionnez **Appliquer**.
 
-    :::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="Page Spécialistes des menaces Microsoft paramètres de l’Microsoft 365 Defender web" lightbox="../../media/mte/mte-collaboratewithmte.png":::
+    ![Image de Spécialistes des menaces Microsoft paramètres.](../../media/mte/mte-collaboratewithmte.png)
 
 3. Entrez votre nom et votre adresse e-mail afin que Microsoft puisse vous contacter à propos de votre application.
 
-    :::image type="content" source="../../media/mte/mte-apply.png" alt-text="Page Spécialistes des menaces Microsoft’application dans le portail Microsoft 365 Defender web" lightbox="../../media/mte/mte-apply.png":::
-  
+    ![Image de l Spécialistes des menaces Microsoft application.](../../media/mte/mte-apply.png)
+
 4. Lisez [la déclaration de](https://privacy.microsoft.com/en-us/privacystatement) confidentialité, puis **sélectionnez Envoyer** lorsque vous avez terminé. Vous recevrez un e-mail de bienvenue une fois votre application approuvée.
 
-    :::image type="content" source="../../media/mte/mte-applicationconfirmation.png" alt-text="Confirmation Spécialistes des menaces Microsoft application dans le portail Microsoft 365 Defender web" lightbox="../../media/mte/mte-applicationconfirmation.png":::
+    ![Image de la Spécialistes des menaces Microsoft de l’application.](../../media/mte/mte-applicationconfirmation.png)
 
 5. Une fois que vous avez reçu votre e-mail de bienvenue, vous commencez automatiquement à recevoir des notifications d’attaque ciblée.
 
@@ -105,13 +105,13 @@ Vous pouvez contacter Spécialistes des menaces Microsoft à partir du portail M
 
 2. Dans le menu supérieur, sélectionnez **? Consultez un expert en menaces**.
 
-    :::image type="content" source="../../media/mte/incidents-action-mte-highlighted.png" alt-text="Le Spécialistes des menaces Microsoft Experts à la demande dans le menu du portail Microsoft 365 Defender" lightbox="../../media/mte/incidents-action-mte-highlighted.png":::
+    ![Image de Spécialistes des menaces Microsoft experts à la demande dans le menu.](../../media/mte/incidents-action-mte-highlighted.png)
 
     Un écran volant s’ouvre.
 
     L’en-tête indique si vous êtes sur un abonnement d’essai ou un abonnement complet Spécialistes des menaces Microsoft - Experts à la demande.
 
-    :::image type="content" source="../../media/mte/mte-trial.png" alt-text="Écran d Spécialistes des menaces Microsoft d’abonnement à la version d’essai des experts à la demande dans le portail Microsoft 365 Defender client" lightbox="../../media/mte/mte-trial.png":::
+    ![Image de l’écran Spécialistes des menaces Microsoft d’abonnement à la version d’essai d’Experts à la demande.](../../media/mte/mte-trial.png)
 
     Le **champ De la rubrique** Investigation est déjà rempli avec le lien vers la page pertinente pour votre demande.
 

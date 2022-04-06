@@ -18,12 +18,12 @@ ms.custom:
 ms.date: 03/18/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 151fb8de088531b9a9f053fc2b5d3c433055e21f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 6e6bf499ab348d05cba237fa69b205cb495dccb0
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473120"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681059"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Détection et réponse de point de terminaison (EDR) en mode bloc
 
@@ -48,7 +48,7 @@ ms.locfileid: "64473120"
 
 PEPT mode bloc est intégré aux [menaces](next-gen-threat-and-vuln-mgt.md) & gestion des vulnérabilités. L’équipe de sécurité de votre organisation reçoit une recommandation de sécurité pour activer PEPT en mode blocage s’il n’est pas déjà activé.[](tvm-security-recommendation.md)
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="Recommandation d’activer la PEPT en mode bloc" lightbox="images/edrblockmode-TVMrecommendation.png":::
+:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="pour activer l’PEPT en mode bloc.":::
 
 > [!TIP]
 > Pour obtenir la meilleure protection possible, veillez à déployer **[Microsoft Defender pour les lignes de base de point de terminaison](configure-machines-security-baseline.md)**.
@@ -59,7 +59,7 @@ Lorsque PEPT en mode bloc est allumé et qu’un artefact malveillant est détec
 
 L’image suivante montre une instance de logiciel indésirable qui a été détectée et bloquée par PEPT en mode blocage :
 
-:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="Détection par le PEPT en mode bloc" lightbox="images/edr-in-block-mode-detection.png":::
+:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="PEPT en mode bloc a détecté quelque chose.":::
 
 
 ## <a name="enable-edr-in-block-mode"></a>Activer PEPT en mode bloc
