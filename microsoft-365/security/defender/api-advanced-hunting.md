@@ -21,25 +21,25 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 94ce63f30b0016a920fdca60dd10b486922ffa32
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 05957fcf7cf2b3b03fbc757fc8b21e67156b285a
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172275"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500824"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender API de recherche avancée
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
-[Le recherche avancée](advanced-hunting-overview.md) est un [](advanced-hunting-query-language.md) outil de recherche de menaces qui utilise des requêtes spécialement conçues pour examiner les 30 derniers jours de données d’événement dans Microsoft 365 Defender. Vous pouvez utiliser des requêtes de recherche avancées pour inspecter les activités inhabituelles, détecter les menaces possibles et même répondre aux attaques. L’API de recherche avancée vous permet d’interroger par programmation des données d’événement.
+[Le recherche avancée](advanced-hunting-overview.md) est un outil de recherche de menaces qui utilise des requêtes spécialement conçues pour examiner les 30 derniers jours de données d’événement dans Microsoft 365 Defender.[](advanced-hunting-query-language.md) Vous pouvez utiliser des requêtes de recherche avancées pour inspecter les activités inhabituelles, détecter les menaces possibles et même répondre aux attaques. L’API de recherche avancée vous permet d’interroger par programmation des données d’événement.
 
 ## <a name="quotas-and-resource-allocation"></a>Quotas et allocation de ressources
 
@@ -50,19 +50,19 @@ Les conditions suivantes concernent toutes les requêtes.
 3. Vous pouvez effectuer jusqu’à 45 appels par minute et par client.
 4. Les requêtes sont bloquées si le client a atteint 100 % jusqu’au terme du cycle de 15 minutes suivant.
 5. Si une seule demande s’exécute pendant plus de 10 minutes, elle prend du temps et retourne une erreur.
-6. Un code de réponse HTTP indique que vous avez atteint un quota, soit par nombre de demandes envoyées, soit par temps `429` d’exécution alloué. Lisez le corps de la réponse pour comprendre la limite que vous avez atteinte. 
+6. Un `429` code de réponse HTTP indique que vous avez atteint un quota, soit par nombre de demandes envoyées, soit par temps d’exécution alloué. Lisez le corps de la réponse pour comprendre la limite que vous avez atteinte. 
 
 > [!NOTE]
 > Tous les quotas répertoriés ci-dessus (par exemple, 15 appels par minute) sont par taille de client. Ces quotas sont au minimum.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler l’API de recherche avancée. Pour en savoir plus, notamment sur la façon de choisir les autorisations, voir Les API [Access Microsoft 365 Defender Protection](api-access.md)
+L’une des autorisations suivantes est nécessaire pour appeler l’API de recherche avancée. Pour en savoir plus, notamment sur la façon de choisir les autorisations, voir [Les API Access Microsoft 365 Defender Protection](api-access.md)
 
-Type d’autorisation | Permission | Nom d’affichage de l’autorisation
+Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 -|-|-
-Application | AdvancedHouting.Read.All | Exécuter des requêtes avancées
-Déléguée (compte professionnel ou scolaire) | AdvancedHouting.Read | Exécuter des requêtes avancées
+Application | AdvancedQuery.Read.All| Exécuter des requêtes avancées
+Déléguée (compte professionnel ou scolaire) | AdvancedQuery.Read | Exécuter des requêtes avancées
 
 >[!Note]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
@@ -89,11 +89,11 @@ Dans le corps de la demande, fournissons un objet JSON avec les paramètres suiv
 
 Paramètre | Type | Description
 -|-|-
-Requête | Text | Requête à exécuter. **Remarque : obligatoire**
+Requête | Texte | Requête à exécuter. **Remarque : obligatoire**
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode retourne `200 OK` un objet _QueryResponse_ dans le corps de la réponse.
+Si elle réussit, cette méthode retourne `200 OK`un objet _QueryResponse_ dans le corps de la réponse.
 
 L’objet de réponse contient trois propriétés de niveau supérieur :
 
@@ -103,7 +103,7 @@ L’objet de réponse contient trois propriétés de niveau supérieur :
 
 ## <a name="example"></a>Exemple
 
-Dans l’exemple suivant, un utilisateur envoie la requête ci-dessous et reçoit un objet de réponse API contenant `Stats` `Schema` , et `Results` .
+Dans l’exemple suivant, un utilisateur envoie la requête ci-dessous et reçoit un objet de réponse API contenant `Stats`, `Schema`et `Results`.
 
 ### <a name="query"></a>Requête
 

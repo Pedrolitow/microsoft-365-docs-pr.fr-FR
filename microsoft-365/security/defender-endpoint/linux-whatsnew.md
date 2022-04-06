@@ -1,6 +1,6 @@
 ---
-title: Nouveautés de l’Microsoft Defender pour point de terminaison sur Linux
-description: Liste des principales modifications apportées Microsoft Defender pour point de terminaison sur Linux.
+title: Nouveautés de Microsoft Defender pour Endpoint sur Linux
+description: Liste des principales modifications apportées à Microsoft Defender pour Endpoint sur Linux.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, whatsnew, release
 ms.prod: m365-security
 ms.mktglfcycl: security
@@ -15,18 +15,18 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 45b5bbcc1268c1f425b914a3f8279fe8dcc583f2
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 993820bace174d993ed81fafb7f1f3b1c7645d37
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569950"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500890"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Nouveautés de l’Microsoft Defender pour point de terminaison sur Linux
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Nouveautés de Microsoft Defender pour Endpoint sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 ## <a name="1016274-30122022162740"></a>101.62.74 (30.122022.16274.0)
@@ -46,7 +46,6 @@ ms.locfileid: "64569950"
 ## <a name="1015880-30122012158800"></a>101.58.80 (30.122012.15880.0)
 
 - L’outil en ligne de commande prend désormais en charge la restauration des fichiers mis en quarantaine à un emplacement autre que celui où le fichier a été détecté à l’origine. Cela peut être effectué par le biais `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`de .
-- À partir de cette version, la protection réseau pour Linux peut être évaluée à la demande
 - Correctifs de bogue
 
 ## <a name="1015662-30121122156620"></a>101.56.62 (30.121122.15662.0)
@@ -59,7 +58,7 @@ ms.locfileid: "64569950"
 
 ## <a name="1015257-30121092152570"></a>101.52.57 (30.121092.15257.0)
 
-- Ajout d’une fonctionnalité pour détecter les fioles log4j vulnérables en cours d’utilisation Java applications. L’ordinateur est régulièrement inspecté pour l’exécution Java processus avec des jais log4j chargés. Les informations sont signalées au Microsoft Defender pour point de terminaison principal et sont exposées dans la zone Gestion des vulnérabilités du portail.
+- Ajout d’une fonctionnalité pour détecter les fioles log4j vulnérables en cours d’utilisation Java applications. L’ordinateur est régulièrement inspecté pour l’exécution Java processus avec des jais log4j chargés. Les informations sont signalées au système principal de Microsoft Defender for Endpoint et sont exposées dans la zone Gestion des vulnérabilités du portail.
 
 ## <a name="1014776-30121092147760"></a>101.47.76 (30.121092.14776.0)
 
@@ -68,7 +67,7 @@ ms.locfileid: "64569950"
 
 ## <a name="1014513-30121082145130"></a>101.45.13 (30.121082.14513.0)
 
-- À partir de cette version, nous apportons Microsoft Defender pour point de terminaison prise en charge aux distros suivantes : 
+- À partir de cette version, nous apportons la prise en charge de Microsoft Defender for Endpoint aux distros suivantes : 
   - Versions RHEL6.7-6.10 et CentOS6.7-6.10.
   - Amazon Linux 2
   - Fedora 33 ou supérieure
@@ -101,8 +100,8 @@ ms.locfileid: "64569950"
 
 ## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0)
 
-- Microsoft Defender pour point de terminaison linux est désormais disponible en prévisualisation pour les clients du gouvernement des États-Unis. Pour plus d’informations, [voir Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis](gov.md).
-- Nous avons résolu un problème dans lequel l’utilisation de Microsoft Defender pour point de terminaison sur Linux sur des systèmes avec des systèmes de fichiers PDF a conduit au se bloquer du système d’exploitation
+- Microsoft Defender pour endpoint sur Linux est désormais disponible en prévisualisation pour les clients du gouvernement des États-Unis. Pour plus d’informations, [voir Microsoft Defender for Endpoint for US Government customers](gov.md).
+- Nous avons résolu un problème dans lequel l’utilisation de Microsoft Defender pour endpoint sur Linux sur des systèmes avec des systèmes de fichiers LINUX a conduit au se bloquer du système d’exploitation
 - Améliorations des performances & autres correctifs de bogues
 
 ## <a name="1012563-30121022125630"></a>101.25.63 (30.121022.12563.0)

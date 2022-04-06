@@ -15,21 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez où accéder au kit de laboratoire de déploiement Windows et Office de déploiement.
-ms.openlocfilehash: f5b2bad3828ef30da822be102010124ccb26091e
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 3995d8c0d8baf81a9c4ebfa4efdf587f489a8061
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450715"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501176"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Kit de laboratoire pour le déploiement de Windows et Office 365
 
 Le kit de laboratoire de déploiement Windows et Office 365 est conçu pour vous aider à planifier, tester et valider votre déploiement et votre gestion des ordinateurs de bureau exécutant Windows 10 Entreprise ou Windows 11 Entreprise et Applications Microsoft 365 pour les grandes entreprises. Les ateliers du kit couvrent l’utilisation Microsoft Endpoint Configuration Manager, OneDrive, Windows Autopilot, etc. Ce kit est vivement recommandé pour les organisations qui se préparent aux mises à niveau de bureau. En tant qu’environnement isolé, l’atelier est également idéal pour explorer les mises à jour des outils de déploiement et tester l’automatisation liée au déploiement.
 
-**Windows 10 et Windows 11 versions du kit de laboratoire sont désormais disponibles en téléchargement gratuit dans le Centre d’évaluation Microsoft.**
+**Windows 10 et Windows 11 versions du kit de laboratoire de déploiement sont désormais disponibles en téléchargement gratuit dans le Centre d’évaluation Microsoft.**
 
-[Télécharger le kit de laboratoire de déploiement Windows 10 et Office 365 de déploiement](https://www.microsoft.com/evalcenter/evaluate-lab-kit)<br>
-[Télécharger le kit de laboratoire de déploiement Windows 11 et Office 365 de déploiement](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
+[Télécharger des Windows 11 avec Office 365 kit de laboratoire de déploiement](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)<br>
+[Télécharger les Windows 10 kit de laboratoire Office 365 déploiement](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
 ## <a name="a-complete-lab-environment"></a>Un environnement de laboratoire complet
 
@@ -96,10 +96,6 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 - Antivirus Microsoft Defender  
 - Windows Hello Entreprise    
 
-## <a name="download-the-lab"></a>Télécharger l’atelier
-[Télécharger le kit de laboratoire de déploiement Windows 10 et Office 365 de déploiement](https://www.microsoft.com/evalcenter/evaluate-lab-kit)<br>
-[Télécharger le kit de laboratoire de déploiement Windows 11 et Office 365 de déploiement](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
-
 > [!NOTE]
 > Utilisez une connexion Internet haut débit pour télécharger ce contenu et autorisez l’approvisionnement automatique pendant environ 30 minutes. L’environnement de laboratoire nécessite au moins 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go de mémoire disponible et 300 Go d’espace libre sont recommandés. L Windows 10 exe lab expire le 16 mai 2022. L Windows 11 exe lab expire le 6 mai 2022. Les nouvelles versions seront publiées avant expiration.
 
@@ -114,7 +110,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 ## <a name="related-resources"></a>Ressources connexes
 
 - [Présentation de Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
-- [Office 365 pour les entreprises](https://products.office.com/business/office)
+- [Microsoft 365 pour les entreprises](https://products.office.com/business/office)
 - [Présentation de la suite Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-- [Windows entreprise](https://www.microsoft.com/windows/business)
+- [Windows 11 entreprise](https://www.microsoft.com/windows/business)
 

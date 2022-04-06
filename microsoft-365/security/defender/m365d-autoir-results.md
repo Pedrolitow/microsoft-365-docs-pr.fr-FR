@@ -23,18 +23,18 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 05e16a32fb21f682a756c32201a69c192d398184
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5a95980147c66fa8655f5c1b2ebe8adfff9e87c0
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321806"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501264"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Détails et résultats d’une enquête automatisée
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Avec Microsoft 365 Defender, lorsqu’une enquête automatisée s’exécute, des détails sur cet examen sont disponibles pendant et après le processus d’examen automatisé.[](m365d-autoir.md) Si vous disposez des [autorisations](m365d-action-center.md#required-permissions-for-action-center-tasks) nécessaires, vous pouvez afficher ces détails dans une vue des détails de l’enquête qui vous fournit l’état à jour et la possibilité d’approuver les actions en attente. 
@@ -89,13 +89,13 @@ La page Détails de l’incident permet d’afficher des informations détaillé
 
 Voici un exemple.
 
-:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="Exemple de page d’enquête." lightbox="../../media/mtp-incidentdetails-tabs.png":::
+:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="Page d’examen dans le portail Microsoft 365 Defender recherche" lightbox="../../media/mtp-incidentdetails-tabs.png":::
 
 ## <a name="investigation-details"></a>Détails de l’examen
 
 Utilisez la vue Détails de l’examen pour afficher les activités passées, actuelles et en attente relatives à un examen. Voici un exemple.
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Exemple de détails d’investigation." lightbox="../../media/mtp-air-investdetails.png":::
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Page détails de l’examen dans le portail Microsoft 365 Defender recherche" lightbox="../../media/mtp-air-investdetails.png":::
 
 Dans la vue Détails de l’examen, vous pouvez consulter des informations sur les onglets **Graphique de l'examen**, **Alertes**, **Appareils**, **Identités**, **Principales conclusions**, **Entités**, **Journal** et **Actions en attente**, comme décrit dans le tableau suivant.
 
@@ -114,7 +114,7 @@ Dans la vue Détails de l’examen, vous pouvez consulter des informations sur l
 |**Log** | Fournit une vue chronologique et détaillée de toutes les actions d’investigation entreprises après le déclenchement d’une alerte.|
 | **Historique des actions en attente** | Répertorie les éléments qui nécessitent une approbation pour continuer. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) to approve pending actions. |
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Afficher et gérer les actions de correction](m365d-autoir-actions.md)
 - [En savoir plus sur les actions de correction](m365d-remediation-actions.md)

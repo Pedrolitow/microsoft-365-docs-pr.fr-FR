@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur de données de découverte électronique Slack fourni par Microsoft pour importer et archiver des données de messagerie instantanée.
-ms.openlocfilehash: 2bd4df859d5bb3a4ccd048c83a864d44f81f33bc
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 7882524bb01a1d28c0f4f7c564472961d04baa07
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525070"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501198"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>Configurer un connecteur pour archiver des données de découverte électronique Slack (aperçu)
 
@@ -77,7 +77,15 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
    Une **fois que vous** avez cliqué sur Autoriser, la page Slack se ferme et les utilisateurs **eDiscovery de Slack** Microsoft 365 page utilisateurs dans l’Assistant Connecteur s’affiche.
 
-## <a name="step-3-map-users-and-select-data-types-to-import"></a>Étape 3 : Ma cartographier les utilisateurs et sélectionner les types de données à importer
+## <a name="step-3-specify-the-users-to-import-data-for"></a>Étape 3 : spécifier les utilisateurs pour qui importer des données
+
+Sélectionnez l’une des options suivantes pour spécifier les utilisateurs dont vous souhaitez importer des données de découverte électronique Slack.
+
+- **Tous les utilisateurs de votre organisation**. Sélectionnez cette option pour importer des données pour tous les utilisateurs.
+
+- **Uniquement les utilisateurs en attente pour litige**. Sélectionnez cette option pour importer des données uniquement pour les utilisateurs dont les boîtes aux lettres sont placées en attente pour litige. Cette option importe les données dans les boîtes aux lettres utilisateur dont la propriété LitigationHoldEnabled a la valeur True. Pour plus d’informations, [voir Créer une attente pour litige](create-a-litigation-hold.md).
+
+## <a name="step-4-map-users-and-select-data-types-to-import"></a>Étape 4 : Ma cartographier les utilisateurs et sélectionner les types de données à importer
 
 1. Configurez l’une des options suivantes ou les deux pour ma besoins des utilisateurs de Slack Microsoft 365 boîtes aux lettres.
 
@@ -103,7 +111,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 3. Après avoir configuré les types de données à importer, cliquez sur **Suivant**, examinez les paramètres du connecteur, puis cliquez sur **Terminer** pour créer le connecteur.
 
-## <a name="step-4-monitor-the-slack-ediscovery-connector"></a>Étape 4 : Surveiller le connecteur de découverte électronique Slack
+## <a name="step-5-monitor-the-slack-ediscovery-connector"></a>Étape 5 : Surveiller le connecteur de découverte électronique Slack
 
 Après avoir créé le connecteur de découverte électronique Slack, vous pouvez afficher l’état du connecteur dans le Centre de conformité Microsoft 365.
 
@@ -113,6 +121,6 @@ Après avoir créé le connecteur de découverte électronique Slack, vous pouve
 
 3. Sous **État du connecteur avec source**, **cliquez sur le** lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des données qui ont été importées dans le cloud Microsoft.
 
-## <a name="known-issues"></a>Problèmes détectés
+## <a name="known-issues"></a>Problèmes connus
 
 - Pour l’instant, nous ne ons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

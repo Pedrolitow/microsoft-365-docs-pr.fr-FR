@@ -1,7 +1,7 @@
 ---
-title: Planifier le déploiement des règles de réduction de la surface d’attaque des règles de réduction de la surface d’attaque
-description: Fournit des conseils pour planifier le déploiement de règles de réduction de la surface d’attaque (ASR).
-keywords: Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque
+title: Planifier le déploiement de règles ASR pour la réduction de la surface d’attaque
+description: Fournit des conseils pour planifier le déploiement de vos règles de réduction de la surface d’attaque (ASR).
+keywords: Déploiement de règles de réduction de la surface d’attaque, déploiement ASR, activer des règles asr, configurer asr, système de prévention des intrusions de l’hôte, règles de protection, règles anti-exploitation, règles d’exploitation, règles de prévention des infections, Microsoft Defender pour point de terminaison, configurer des règles ASR
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -20,67 +20,67 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: e76ca3c1efd3ceb1cbb0f80cba4867988da51e1e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 94c66591a99a92ebd9d710de573d32e440386573
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683074"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64663135"
 ---
 # <a name="step-1-plan-asr-rules-deployment"></a>Étape 1 : Planifier le déploiement des règles ASR
 
-Lors du test des règles de réduction de la surface d’attaque (ASR), il est important de commencer par la bonne unité commerciale. Vous souhaiterez commencer par un petit groupe de personnes dans une unité commerciale spécifique. Vous pouvez identifier certains champions de la RSA au sein d’une unité commerciale particulière qui peuvent fournir un impact réel sur les règles de la asr, et vous aider à régler votre implémentation.
+Lors du test des règles de réduction de la surface d’attaque (ASR), il est important de commencer par l’unité commerciale appropriée. Vous souhaiterez commencer par un petit groupe de personnes dans une unité commerciale spécifique. Vous pouvez identifier certains champions ASR au sein d’une unité commerciale particulière qui peuvent fournir un impact réel sur les règles ASR et vous aider à paramétrer votre implémentation.
 
 > [!div class="mx-imgBorder"]
-> ![Étapes de planification des règles asr](images/asr-rules-planning-steps.png)
+> :::image type="content" source="images/asr-rules-planning-steps.png" alt-text="Étapes de planification des règles ASR" lightbox="images/asr-rules-planning-steps.png":::
 
-## <a name="start-with-the-right-business-unit"></a>Commencer avec la bonne unité commerciale
+## <a name="start-with-the-right-business-unit"></a>Commencez par l’unité métier appropriée
 
-La façon dont vous sélectionnez l’unité d’entreprise pour déployer votre déploiement de règles de asr dépend de facteurs tels que :
+La façon dont vous sélectionnez l’unité métier pour déployer votre déploiement de règles ASR dépend de facteurs tels que :
 
 - Taille de l’unité commerciale
-- Disponibilité des champions de règles de la asr.  
-- Distribution et utilisation des :
+- Disponibilité des champions de règles ASR  
+- Distribution et utilisation de :
   - Logiciels
   - Dossiers partagés
   - Utilisation de scripts
-  - Office macros
-  - Autres entités affectées par les règles de la asr.
+  - macros Office
+  - Autres entités affectées par les règles ASR
 
-En fonction des besoins de votre entreprise, vous pouvez décider d’inclure plusieurs unités d’entreprise pour obtenir un large échantillonnage de logiciels, dossiers partagés, scripts, macros, etc. À l’inverse, vous pouvez décider de limiter l’étendue de votre premier déploiement de règles asr à une seule unité commerciale, puis de répéter l’ensemble du processus de déploiement des règles de la asr dans vos autres unités d’entreprise, une par une.
+En fonction des besoins de votre entreprise, vous pouvez décider d’inclure plusieurs unités commerciales pour obtenir un large échantillonnage de logiciels, dossiers partagés, scripts, macros, etc. À l’inverse, vous pouvez décider de limiter l’étendue de votre premier déploiement de règles ASR à une seule unité commerciale, puis de répéter l’intégralité du processus de déploiement des règles ASR à vos autres unités commerciales, une à la fois.
 
-## <a name="identify-asr--rules-champions"></a>Identifier les champions de règles de la asr.
+## <a name="identify-asr--rules-champions"></a>Identifier les champions de règles ASR
 
-Les champions des règles de RSA sont des membres de votre organisation qui vous aideront lors du déploiement initial des règles de la asr lors des phases préliminaires de test et d’implémentation. Vos champions sont généralement des employés qui sont plus techniquesment adap et qui ne sont pas déraillés par des pannes intermittentes de flux de travail. L’implication des champions se poursuit tout au long du développement plus large du déploiement des règles de la asr dans votre organisation. Vos champions de règles asr seront les premiers à découvrir chaque niveau du déploiement des règles de la asr.
+Les champions des règles ASR sont des membres de votre organisation qui vous aideront à déployer vos règles ASR initiales pendant les phases préliminaires de test et d’implémentation. Vos champions sont généralement des employés qui sont plus habiles techniquement et qui ne sont pas déraillés par des interruptions intermittentes de flux de travail. La participation des champions se poursuivra tout au long de l’expansion plus large du déploiement de règles ASR dans votre organisation. Vos champions de règles ASR seront les premiers à connaître chaque niveau du déploiement des règles ASR.
 
-Il est important de fournir un canal de commentaires et de réponse à vos champions de règles de asr pour vous avertir des interruptions de travail liées aux règles de la asr et recevoir les communications liées au déploiement des règles de la asr.
+Il est important de fournir un canal de commentaires et de réponse pour que vos champions des règles ASR vous avertissent des interruptions de travail liées aux règles ASR et reçoivent des communications liées au déploiement des règles ASR.
 
 ## <a name="get-inventory-of-line-of-business-apps-and-understand-the-business-unit-processes"></a>Obtenir l’inventaire des applications métier et comprendre les processus de l’unité métier
 
-Il est essentiel de bien comprendre les applications et les processus par unité d’entreprise utilisés au sein de votre organisation pour réussir le déploiement des règles de la asr. En outre, il est impératif que vous compreniez la façon dont ces applications sont utilisées dans les différentes unités commerciales de votre organisation.
-Pour commencer, vous devez obtenir un inventaire des applications approuvées pour être utilisées dans l’ensemble de l’organisation. Vous pouvez utiliser des outils tels que Microsoft 365 Apps centre d’administration pour vous aider à inventorier les applications logicielles. Voir : [Vue d’ensemble de l’inventaire dans Microsoft 365 Apps’administration centrale](/deployoffice/admincenter/inventory).
+Il est essentiel de bien comprendre les applications et les processus par unité métier utilisés dans votre organisation pour un déploiement réussi des règles ASR. En outre, il est impératif que vous compreniez comment ces applications sont utilisées au sein des différentes unités commerciales de votre organisation.
+Pour commencer, vous devez obtenir un inventaire des applications approuvées pour une utilisation dans l’ensemble de l’organisation. Vous pouvez utiliser des outils tels que le centre d’administration Microsoft 365 Apps pour vous aider à inventorier les applications logicielles. Voir : [Vue d’ensemble de l’inventaire dans le centre d’administration Microsoft 365 Apps](/deployoffice/admincenter/inventory).
 
-## <a name="define-reporting-and-response-team-roles-and-responsibilities"></a>Définir les rôles et responsabilités de l’équipe de signalement et de réponse
+## <a name="define-reporting-and-response-team-roles-and-responsibilities"></a>Définir les rôles et responsabilités de l’équipe de création de rapports et de réponse
 
-Clairement l’articul des rôles et des responsabilités des personnes responsables de la surveillance et de la communication de l’état et de l’activité des règles de la asr. Par conséquent, il est important de déterminer :
+Il est clair que l’articulation des rôles et des responsabilités des personnes responsables de la surveillance et de la communication de l’état et de l’activité des règles ASR est une activité essentielle de la maintenance ASR. Par conséquent, il est important de déterminer :
 
 - La personne ou l’équipe responsable de la collecte des rapports
 - Comment et avec qui les rapports sont partagés
-- Comment l’escalade est traitée pour les menaces nouvellement identifiées ou les blocages indésirables causés par les règles de la astéreur
+- Comment l’escalade est traitée pour les menaces nouvellement identifiées ou les blocages indésirables causés par les règles ASR
 
 Les rôles et responsabilités classiques sont les suivants :
 
-- Administrateurs informatiques : implémentez des règles de asr, gérez les exclusions. Travailler avec différentes unités d’entreprise sur des applications et des processus. Assemblage et partage de rapports aux parties prenantes
-- Analyste certifié du Centre d’opérations de sécurité (CSOC) : responsable de l’investissement de processus bloqués à priorité élevée, afin de déterminer si la menace est valide ou non
-- Responsable de la sécurité des informations (CISO) : responsable de la sécurité globale et de l’état de santé de l’organisation
+- Administrateurs informatiques : implémentez des règles ASR, gérez les exclusions. Travaillez avec différentes unités commerciales sur des applications et des processus. Assemblage et partage de rapports aux parties prenantes
+- Analyste du Centre des opérations de sécurité certifié (CSOC) : Responsable de l’investissement de processus bloqués de priorité élevée, afin de déterminer si la menace est valide ou non
+- Responsable de la sécurité des informations (CISO) : Responsable de la posture de sécurité globale et de l’intégrité de l’organisation
 
 ## <a name="ring-deployment"></a>Déploiement sonnerie
 
-Pour les grandes entreprises, Microsoft recommande de déployer des règles asr dans des « anneaux ». Les anneaux sont des groupes d’appareils qui sont visuellement représentés sous forme de cercles concentriques qui s’imbriquent vers l’extérieur comme des anneaux d’arborescence qui ne se chevauchent pas. Lorsque l’anneau le plus au centre est correctement déployé, vous pouvez passer l’anneau suivant à la phase de test. Une évaluation approfondie de vos unités d’entreprise, de vos règles de RSA, de vos applications et de vos processus est impérative pour définir vos anneaux.
-Dans la plupart des cas, votre organisation a conçu des anneaux de déploiement pour des déploiements par phases Windows mises à jour. Vous pouvez utiliser votre conception d’anneau existante pour implémenter des règles asr.
+Pour les grandes entreprises, Microsoft recommande de déployer des règles ASR dans des « anneaux ». Les anneaux sont des groupes d’appareils qui sont représentés visuellement sous forme de cercles concentriques qui rayonnent vers l’extérieur comme des anneaux d’arbre qui ne se chevauchent pas. Lorsque l’anneau le plus profond est déployé avec succès, vous pouvez passer l’anneau suivant à la phase de test. Une évaluation approfondie de vos unités commerciales, des champions des règles ASR, des applications et des processus est impérative pour définir vos anneaux.
+Dans la plupart des cas, votre organisation aura conçu des anneaux de déploiement pour les déploiements par phases de mises à jour Windows. Vous pouvez utiliser votre conception d’anneau existante pour implémenter des règles ASR.
 Voir : [Créer un plan de déploiement pour Windows](/windows/deployment/update/create-deployment-plan)
 
-## <a name="additional-topics-in-this-deployment-collection"></a>Rubriques supplémentaires dans cette collection de déploiements
+## <a name="additional-topics-in-this-deployment-collection"></a>Rubriques supplémentaires dans cette collection de déploiement
 
 [Prérequis pour le déploiement des règles ASR](attack-surface-reduction-rules-deployment.md)
 

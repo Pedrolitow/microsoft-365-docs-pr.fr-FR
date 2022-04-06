@@ -19,28 +19,28 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d49ef6b31e6446f3452d0efdce2e918813eabcc6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 51bb4f451329a74417c21db0a64aadae6dccbce6
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327538"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500868"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>Examiner les utilisateurs dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
 Une partie de votre enquête sur les incidents peut inclure des comptes d’utilisateur. Vous pouvez voir les détails des comptes d’utilisateurs identifiés dans les alertes d’un incident dans le portail Microsoft 365 Defender à partir **d’Incidents & alerts** \> **_incident_*_ \> _* Users**. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Exemple de page Utilisateurs pour un incident." lightbox="../../media/investigate-incidents/incident-users.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Page Utilisateurs pour un incident dans le portail Microsoft 365 Defender web." lightbox="../../media/investigate-incidents/incident-users.png":::
 
 Pour obtenir un résumé rapide d’un compte d’utilisateur pour l’incident, cochez la coche en regard du nom du compte d’utilisateur. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Exemple de volet récapitulatif du compte d’utilisateur pour un incident." lightbox="../../media/investigate-users/incidents-ss-user-pane.png":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Onglet Utilisateurs pour un incident dans le portail Microsoft 365 Defender web" lightbox="../../media/investigate-users/incidents-ss-user-pane.png":::
 
 > [!NOTE]
 > La page utilisateur affiche Azure Active Directory (Azure AD) ainsi que des groupes, ce qui vous aide à comprendre les groupes et les autorisations associés à un utilisateur.
@@ -51,13 +51,13 @@ En outre, vous pouvez prendre des mesures directement dans le portail Microsoft 
 
 À partir de là, vous pouvez sélectionner La page d’accès à **l’utilisateur** pour voir les détails d’un compte d’utilisateur. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Exemple de page de compte d’utilisateur pour un incident." lightbox="../../media/investigate-users/incidents-ss-user-details.png":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Détails du compte d’utilisateur dans le portail Microsoft 365 Defender web" lightbox="../../media/investigate-users/incidents-ss-user-details.png":::
 
 Vous pouvez également voir cette page en sélectionnant le nom du compte d’utilisateur dans la liste de la page **Utilisateurs** .
 
 Vous pouvez voir l’appartenance à un groupe pour l’utilisateur en sélectionnant le numéro sous **Groupes**.
 
-:::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="Exemple d’appartenance à un groupe pour un utilisateur." lightbox="../../media/investigate-users/user-group-membership.png":::
+:::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="Informations sur l’appartenance à un groupe d’un utilisateur dans le portail Microsoft 365 Defender web" lightbox="../../media/investigate-users/user-group-membership.png":::
 
 En sélectionnant l’icône sous **Responsable**, vous pouvez voir où se trouve l’utilisateur dans l’arborescence de l’organisation.
 
@@ -76,7 +76,7 @@ Cette page affiche des informations spécifiques au risque de sécurité d’un 
 
 Voici un exemple.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Exemple d’actions sur un compte d’utilisateur pour un incident." lightbox="../../media/investigate-users/incidents-ss-user-details-actions.png":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Section qui décrit les actions sur un compte d’utilisateur pour un incident dans le portail Microsoft 365 Defender" lightbox="../../media/investigate-users/incidents-ss-user-details-actions.png":::
 
 ## <a name="view-lateral-movement-paths"></a>Afficher les chemins de déplacement latéral
 
@@ -86,11 +86,11 @@ La carte vous fournit une liste du nombre de sauts entre les ordinateurs ou les 
 
 Si un chemin de mouvement latéral potentiel n’a pas été détecté pour l’entité au cours des deux derniers jours, le graphique ne s’affiche pas. Sélectionnez une date différente à l’aide de l’affichage d’une autre date pour afficher les graphiques des chemins de déplacement latéral précédents découverts pour cette entité. Le rapport de déplacement latéral est toujours disponible pour vous fournir des informations sur les chemins de déplacement latéral potentiels détectés et peut être personnalisé par heure.
 
-:::image type="content" source="../../media/investigate-users/lateral-movement-path.png" alt-text="Exemple de chemin de déplacement latéral pour un utilisateur." lightbox="../../media/investigate-users/lateral-movement-path.png":::
+:::image type="content" source="../../media/investigate-users/lateral-movement-path.png" alt-text="Chemin de déplacement latéral d’un utilisateur dans le portail Microsoft 365 Defender ligne" lightbox="../../media/investigate-users/lateral-movement-path.png":::
 
 Pour plus d’informations, voir [Chemins de déplacement latéral](/defender-for-identity/use-case-lateral-movement-path).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si nécessaire pour les incidents in-process, poursuivez votre [enquête](investigate-incidents.md).
 
