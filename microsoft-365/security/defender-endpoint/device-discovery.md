@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9045c9a425b78f46d39ebb63664b693bf40252c4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 926d23cb4e9abcecd9d34e976dee60851471613b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314381"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472922"
 ---
 # <a name="device-discovery-overview"></a>Vue d’ensemble de la découverte d’appareils
 
@@ -83,7 +83,7 @@ Pour évaluer ces appareils, vous pouvez utiliser un filtre dans la liste d’in
 - Non pris en charge : le point de terminaison a été découvert dans le réseau, mais n’est pas pris en charge par Microsoft Defender pour endpoint.
 - Informations insuffisantes : le système n’a pas pu déterminer la prise en charge de l’appareil. L’activation de la découverte standard sur d’autres appareils du réseau peut enrichir les attributs découverts.
 
-![Image du tableau de bord d’inventaire des appareils.](images/device-discovery-inventory.png)
+:::image type="content" source="images/2b62255cd3a9dd42f3219e437b956fb9.png" alt-text="Tableau de bord d’inventaire des appareils" lightbox="images/2b62255cd3a9dd42f3219e437b956fb9.png":::
 
 > [!TIP]
 > Vous pouvez toujours appliquer des filtres pour exclure les appareils nonmanagés de la liste d’inventaire des appareils. Vous pouvez également utiliser la colonne d’état d’intégration sur les requêtes API pour filtrer les appareils nonmanagés.
@@ -111,14 +111,15 @@ Pour relever le défi de gagner suffisamment de visibilité pour localiser, iden
 Les vulnérabilités et les risques sur vos appareils, ainsi que d’autres périphériques non utilisés détectés dans le réseau font partie des flux TVM actuels sous « Recommandations de sécurité » et représentés dans les pages d’entité sur le portail.
 Recherchez les recommandations de sécurité « SSH » pour rechercher les vulnérabilités SSH liées aux appareils non gérés et gérés.
 
-![Image du tableau de bord recommandations en matière de sécurité.](images/1156c82ffadd356ce329d1cf551e806c.png)
+:::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="Tableau de bord recommandations en matière de sécurité" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
+
 
 ## <a name="use-advanced-hunting-on-discovered-devices"></a>Utiliser le service de recherche avancée sur les appareils détectés
 
 Vous pouvez utiliser des requêtes de recherche avancée pour obtenir une visibilité sur les appareils détectés.
 Recherchez des détails sur les points de terminaison détectés dans la table DeviceInfo ou des informations réseau sur ces appareils dans la table DeviceNetworkInfo.
 
-![Image de l’utilisation avancée du chasse.](images/f48ba1779eddee9872f167453c24e5c9.png)
+:::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="Page de recherche avancée sur laquelle les requêtes peuvent être utilisées" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
 
 La découverte d’appareils tire parti de Microsoft Defender pour les appareils intégrés au point de terminaison en tant que source de données réseau pour attribuer des activités à des appareils non intégrés. Cela signifie que si un appareil intégré De Microsoft Defender pour point de terminaison a communiqué avec un appareil non intégré, les activités sur l’appareil non intégré peuvent être visibles sur la chronologie et via la table DeviceNetworkEvents de recherche avancée.
 

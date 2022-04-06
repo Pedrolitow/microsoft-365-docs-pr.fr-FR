@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des simulations automatisées qui contiennent des techniques et des charges utiles spécifiques qui se lancent lorsque les conditions spécifiées sont remplies dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 327091706ed7c8c2a6f1f1180af7888ed67c1a57
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 3ad24a8b6d2be18fb7ef5fd49be7f2197b3be3a7
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526177"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680949"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatisations de simulation pour la formation à la simulation d’attaques
 
@@ -230,15 +230,10 @@ Dans la **page d’accueil** , vous configurez la page web vers qui l’utilisat
 
 - **Sélectionnez la préférence de page** d’accueil : les valeurs disponibles dépendent de vos sélections précédentes dans la page Sélectionner des [charges](#select-payloads) utiles, comme décrit dans le tableau suivant :
 
-  <br>
-
-  ****
-
   |Sélection dans la page Sélectionner les charges utiles|Valeurs disponibles pour sélectionner la préférence de page d’accueil|
   |---|---|
   |Sélectionner manuellement|Utiliser la page d’accueil par défaut de Microsoft <p> Créer votre propre page d’accueil <p> Utiliser une URL personnalisée <p> **Remarque** : la valeur **Utiliser une URL** personnalisée n’est pas disponible si vous avez  précédemment sélectionné  pièce jointe programme malveillant ou Lien vers un programme malveillant dans la page Sélectionner des techniques d’ingénierie [sociale](#select-one-or-more-social-engineering-techniques).|
   |Randomize|Utiliser la page d’accueil par défaut de Microsoft|
-  |
 
   Les **valeurs de préférence de page d’accueil** Select disponibles et leurs paramètres associés sont décrits dans la liste suivante :
 

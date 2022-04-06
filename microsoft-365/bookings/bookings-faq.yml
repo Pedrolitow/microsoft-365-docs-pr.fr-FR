@@ -5,20 +5,20 @@ metadata:
   author: kwekuako
   manager: scotv
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.service: bookings
   ms.localizationpriority: medium
   description: Questions fréquemment posées sur Microsoft Bookings.
-  ms.openlocfilehash: 5532248b44bdda524399ce713377f5565f20eb7c
-  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+  ms.openlocfilehash: 894296d09b4da5facc0301f85c4102a9965fab00
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 03/08/2022
-  ms.locfileid: "63318058"
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63681499"
 title: Questions fréquemment posées sur Microsoft Bookings
 summary: ''
 sections:
-- name: Général
+- name: Généralités
   questions:
   - question: >
       Qu’est-ce que Microsoft Bookings ?

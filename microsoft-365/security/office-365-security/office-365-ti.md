@@ -21,12 +21,12 @@ ms.custom:
 description: Découvrez les fonctionnalités d’examen et de réponse aux menaces dans Microsoft Defender pour Office 365 plan.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ce7541010999b87e49880446594a79593a16a30a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 91a366b8169c783671145b73f66b0fde93b5fffe
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312962"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680662"
 ---
 # <a name="threat-investigation-and-response"></a>Examen et réponse contre les menaces
 
@@ -113,10 +113,6 @@ Microsoft Defender pour Office 365 utilise le contrôle d’accès basé sur les
 > - [Autorisations dans le Portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md)
 > - [Azure AD rôles intégrés](/azure/active-directory/roles/permissions-reference)
 
-<br>
-
-****
-
 |Activité|Rôles et autorisations|
 |---|---|
 |Utiliser le tableau de bord & gestion des menaces et des vulnérabilités (ou le nouveau tableau [de bord de sécurité](security-dashboard.md) <p> Afficher des informations sur les menaces récentes ou actuelles|Un des éléments suivants : <ul><li>**Administrateur général**</li><li>**Administrateur de la sécurité**</li><li>**Lecteur de sécurité**</li></ul> <p> Ces rôles peuvent être attribués dans Azure Active Directory (<https://portal.azure.com>) ou le Centre d'administration Microsoft 365 (<https://admin.microsoft.com>).|
@@ -124,9 +120,8 @@ Microsoft Defender pour Office 365 utilise le contrôle d’accès basé sur les
 |Afficher les incidents (également appelés investigations) <p> Ajouter des messages électroniques à un incident|Un des éléments suivants : <ul><li>**Administrateur général**</li><li>**Administrateur de la sécurité**</li><li>**Lecteur de sécurité**</li></ul> <p> Ces rôles peuvent être attribués dans Azure Active Directory (<https://portal.azure.com>) ou le Centre d'administration Microsoft 365 (<https://admin.microsoft.com>).|
 |Déclencher des actions de messagerie dans un incident <p> Rechercher et supprimer des messages électroniques suspects|Un des éléments suivants : <ul><li>**Administrateur général**</li><li>**Administrateur de sécurité** plus le **rôle Recherche et purge**</li></ul> <p> Les **rôles Administrateur** général et **Administrateur** de la sécurité peuvent être attribués dans Azure Active Directory (<https://portal.azure.com>) ou le Centre d'administration Microsoft 365 (<https://admin.microsoft.com>). <p> Le **rôle Recherche et purge** doit être attribué dans les rôles de **collaboration** & messagerie dans le portail Microsoft 36 Defender (<https://security.microsoft.com>).|
 |Intégrer Microsoft Defender pour Office 365 Plan 2 à Microsoft Defender pour Endpoint <p> Intégrer Microsoft Defender pour Office 365 Plan 2 à un serveur SIEM|Soit le **rôle Administrateur général,** **soit Administrateur** de sécurité attribué dans Azure Active Directory (<https://portal.azure.com>) ou le rôle Centre d'administration Microsoft 365 (<https://admin.microsoft.com>). <p> --- **plus** --- <p> Rôle approprié attribué dans des applications supplémentaires (par exemple, [Centre de sécurité Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/user-roles) ou votre serveur SIEM).|
-|
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [En savoir plus sur les suivis des menaces : nouveautés et remarques](threat-trackers.md)
 - [Rechercher et examiner les e-mails malveillants qui ont été remis (Office 365 et réponse aux menaces)](investigate-malicious-email-that-was-delivered.md)

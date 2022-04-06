@@ -8,6 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
@@ -15,12 +16,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser l’aperçu corriger les règles de flux de messagerie lent dans le Centre de sécurité & conformité pour identifier et corriger les règles de flux de messagerie inefficaces ou rompues (également appelées règles de transport) dans leur organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9866761e683e15d34d81b8ea0962d974b0b474da
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: af6d727f84cdaaed1b7f7558313ac7d080a13c93
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61935220"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681521"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Résoudre les problèmes de règles de flux de messagerie dans le Centre de sécurité & conformité
 
@@ -37,7 +38,7 @@ Des règles de flux de messagerie inefficaces (également appelées règles de t
 - Conditions qui utilisent une correspondance complexe de modèle d’expression régulière (regex).
 - Conditions qui utilisent la vérification du contenu dans les pièces jointes.
 
-L’aperçu des règles de  correction du flux [](mail-flow-insights-v2.md) de messagerie lent dans la zone Recommandé pour vous du tableau de bord de flux de messagerie dans le Centre de sécurité [&](https://protection.office.com) conformité vous avertit lorsqu’une règle de flux de messagerie prend trop de temps. 
+L’aperçu des règles de correction du flux  de messagerie lent dans la zone [](mail-flow-insights-v2.md) Recommandé pour vous du tableau de bord de flux de messagerie dans le Centre de sécurité & conformité vous [avertit](https://protection.office.com) lorsqu’une règle de flux de messagerie prend trop de temps.
 
 Cette information apparaît uniquement après la détection de la condition (si vous n’avez pas de boucles de messagerie, vous ne verrez pas l’aperçu).
 
@@ -47,15 +48,15 @@ Vous pouvez utiliser cette notification pour vous aider à identifier et affiner
 
 Lorsque vous cliquez **sur Afficher les détails** sur le widget, un flyout s’affiche avec plus d’informations :
 
-- **Règle**: vous pouvez pointer sur le résumé pour voir toutes les conditions, les exceptions et les actions de la règle. Vous pouvez cliquer sur le résumé pour modifier la règle dans le Centre d’administration Exchange (EAC) à l’adresse <https://admin.exchange.microsoft.com/#/transportrules> .
-- **Nombre de messages évalués**: vous pouvez [](message-trace-scc.md) cliquer sur Afficher les exemples de **messages** pour afficher les résultats du suivi des messages pour un échantillon des messages affectés par la règle.
+- **Règle** : vous pouvez pointer sur le résumé pour voir toutes les conditions, les exceptions et les actions de la règle. Vous pouvez cliquer sur le résumé pour modifier la règle dans le Centre d’administration Exchange (EAC) à l’adresse <https://admin.exchange.microsoft.com/#/transportrules>.
+- **Nombre de messages évalués** : vous pouvez cliquer sur Afficher les exemples de [](message-trace-scc.md) **messages** pour afficher les résultats du suivi des messages pour un échantillon des messages affectés par la règle.
 - **Temps moyen passé sur chaque message**
-- **Temps moyen passé sur un message**: valeur intermédiaire qui sépare la moitié supérieure de la moitié inférieure des données de temps.
+- **Temps moyen passé sur un message** : valeur intermédiaire qui sépare la moitié supérieure de la moitié inférieure des données de temps.
 
 ![Volant de détails qui s’affiche après avoir cliqué sur Afficher les détails sur l’aperçu des règles de flux de messagerie lent Fix.](../../media/mfi-fix-slow-mail-flow-rules-details.png)
 
-Pour plus d’informations sur les conditions et les exceptions dans les règles de flux de messagerie, voir conditions et exceptions de règle de flux de messagerie [(prédicats) dans Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
+Pour plus d’informations sur les conditions et les exceptions dans les règles de flux de messagerie, voir [Conditions et exceptions des règles de flux de messagerie (prédicats) dans Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
 ## <a name="see-also"></a>Voir aussi
 
-Pour plus d’informations sur d’autres informations dans le tableau de bord de flux de messagerie, voir Informations sur le flux de messagerie dans le Centre de sécurité [& conformité.](mail-flow-insights-v2.md)
+Pour plus d’informations sur d’autres informations dans le tableau de bord de flux de messagerie, voir Informations sur le flux de messagerie dans le Centre de sécurité [& conformité](mail-flow-insights-v2.md).

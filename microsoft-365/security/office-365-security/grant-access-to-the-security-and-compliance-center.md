@@ -10,22 +10,22 @@ audience: Admin
 ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.PermissionsHelp
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
-ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: Des autorisations doivent être attribuées aux utilisateurs dans le Centre Microsoft 365 sécurité & conformité avant de pouvoir gérer l’une de ses fonctionnalités de sécurité ou de conformité.
+description: Des autorisations doivent être attribuées aux utilisateurs dans le Centre de conformité Microsoft 365 sécurité & avant de pouvoir gérer l’une de ses fonctionnalités de sécurité ou de conformité.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2dcab8a14df6266bea87b3ae876ed9bac8eea1d7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5af3d045b174c4405dc2060fea1db22b3b4066ac
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213468"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680684"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Octroi de l’accès au Centre de conformité et sécurité aux utilisateurs
 
@@ -34,11 +34,11 @@ ms.locfileid: "60213468"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Des autorisations doivent être attribuées aux utilisateurs dans le Centre de sécurité & conformité avant de pouvoir gérer l’une de ses fonctionnalités de sécurité ou de conformité. En tant qu’administrateur global ou membre du groupe de rôles OrganizationManagement dans le Centre de sécurité & conformité, vous pouvez accorder ces autorisations aux utilisateurs. Ceux-ci pourront uniquement gérer les fonctionnalités de sécurité ou de conformité auxquelles vous leur donnez accès.
 
-Pour plus d’informations sur les différentes autorisations que vous pouvez accorder aux utilisateurs dans le Centre de sécurité & conformité, consultez [Autorisations](permissions-in-the-security-and-compliance-center.md)dans le Centre de sécurité & conformité.
+Pour plus d’informations sur les différentes autorisations que vous pouvez accorder aux utilisateurs dans le Centre de sécurité & conformité, consultez Autorisations dans le Centre de sécurité [& conformité](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -48,17 +48,17 @@ Pour plus d’informations sur les différentes autorisations que vous pouvez ac
 
 - Les appartenances aux groupes de rôles ne sont pas partagées entre Exchange Online et le Centre de sécurité & conformité.
 
-- Les partenaires avec autorisation d’accès délégué (DAP) avec des autorisations Administrer au nom de (AOBO) ne peuvent pas accéder au Centre de sécurité & conformité.
+- Les partenaires avec autorisation d’accès délégué avec des autorisations Administrer de la part de (AOBO) ne peuvent pas accéder au Centre de sécurité & conformité.
 
 ## <a name="use-the-security--compliance-center-to-give-another-user-access-to-the-security--compliance-center"></a>Utiliser le Centre de sécurité & conformité pour accorder à un autre utilisateur l’accès au Centre de sécurité & conformité
 
-1. Ouvrez le Centre de sécurité & conformité, puis <https://protection.office.com> allez à **Autorisations.** Pour aller directement à **l’onglet Autorisations,** ouvrez <https://protection.office.com/permissions> .
+1. Ouvrez le Centre de sécurité & conformité <https://protection.office.com> , puis allez à **Autorisations**. Pour aller directement à **l’onglet Autorisations** , ouvrez <https://protection.office.com/permissions>.
 
-2. Dans la liste des groupes de rôles,  choisissez le groupe de rôles, puis cliquez sur Modifier ![ l’icône Modifier. ](../../media/O365-MDM-CreatePolicy-EditIcon.gif)
+2. Dans la liste des groupes de rôles, choisissez le groupe de rôles, ![puis cliquez sur Modifier l’icône Modifier.](../../media/O365-MDM-CreatePolicy-EditIcon.gif)
 
-3. Dans la page des propriétés du groupe de rôles sous **Membres,** cliquez **sur Ajouter** ![ une icône.](../../media/ITPro-EAC-AddIcon.gif) et sélectionnez le nom de l’utilisateur (ou des utilisateurs) que vous souhaitez ajouter.
+3. Dans la page des propriétés du groupe de rôles sous **Membres**, cliquez **sur Icône**![ AjouterAdd.](../../media/ITPro-EAC-AddIcon.gif) et sélectionnez le nom de l’utilisateur (ou des utilisateurs) que vous souhaitez ajouter.
 
-4. Lorsque vous avez sélectionné tous les utilisateurs que vous souhaitez ajouter au groupe de rôles, cliquez sur **Ajouter, \>** puis **SUR OK.**
+4. Lorsque vous avez sélectionné tous les utilisateurs que vous souhaitez ajouter au groupe de rôles, cliquez sur Ajouter **,\>** puis **sur OK**.
 
 5. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
@@ -84,14 +84,14 @@ Pour des problèmes de syntaxe et de paramètres détaillés, voir [Add-RoleGrou
 
 ### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
-Pour vérifier que vous avez bien accordé l’accès au Centre de sécurité & conformité, faites l’une des étapes suivantes :
+Pour vérifier que vous avez bien accordé l’accès au Centre de sécurité & conformité, vous devez suivre l’une des étapes suivantes :
 
-- Dans le Centre de sécurité & conformité, sélectionnez le groupe de **rôles Autorisations.** Dans le volant d’informations qui s’ouvre, vérifiez les membres du groupe de rôles.
+- Dans le Centre de sécurité & conformité, sélectionnez le groupe de **rôles Autorisations** . Dans le volant d’informations qui s’ouvre, vérifiez les membres du groupe de rôles.
 
-- Dans le Centre & de sécurité PowerShell, remplacez-le par le nom du groupe de rôles \<RoleGroupName\> et exécutez la commande suivante :
+- Dans le Centre & de sécurité PowerShell, \<RoleGroupName\> remplacez-le par le nom du groupe de rôles et exécutez la commande suivante :
 
   ```powershell
   Get-RoleGroupMember -Identity "<RoleGroupName>"
   ```
 
-  Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-RoleGroupMember.](/powershell/module/exchange/Get-RoleGroupMember)
+  Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-RoleGroupMember](/powershell/module/exchange/Get-RoleGroupMember).

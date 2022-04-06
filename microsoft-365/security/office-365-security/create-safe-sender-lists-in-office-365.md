@@ -18,12 +18,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour autoriser les messages entrants dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1edcbba31075e9880b8ea2034f4ffde50bb71e9
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 0370b72ccf29469bd88679d589d715d8897c921f
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465726"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681675"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Créer des listes d’expéditeurs sûrs dans EOP
 
@@ -97,12 +97,11 @@ L’exemple suivant suppose que vous avez besoin d’e-contoso.com pour ignorer 
    1. **Modifier les propriétés du message** \> **définir le niveau de confiance du courrier indésirable (SCL)** \> **Contourner le filtrage du courrier indésirable**.
    2. **Modifier les propriétés du message** \> **définir un en-tête de message** : **définissez l’en-tête de** \<CustomHeaderName\> message **sur la valeur** \<CustomHeaderValue\>.
 
-      Par exemple : `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Si vous avez plusieurs domaines dans la règle, vous pouvez personnaliser le texte d’en-tête selon le cas.
+      Par exemple, `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Si vous avez plusieurs domaines dans la règle, vous pouvez personnaliser le texte d’en-tête selon le cas.
 
       Lorsqu’un message ignore le filtrage du courrier indésirable en raison d’une règle de flux de messagerie, `SFV:SKN` la valeur est estampillée dans l’en-tête **X-Forefront-Antispam-Report** . Si le message est issu d’une source qui se trouve sur la liste d’adresses IP permises, la valeur `IPV:CAL` est également ajoutée. Ces valeurs peuvent vous aider à résoudre les problèmes.
 
-      :::image type="content" source="../../media/1-AllowList-SkipFilteringFromContoso.png" alt-text="Paramètres de règle de flux de messagerie dans le EAC pour contourner le filtrage du courrier indésirable" lightbox="../../media/1-AllowList-SkipFilteringFromContoso.png":::
-
+![Paramètres de règle de flux de messagerie dans le EAC pour contourner le filtrage du courrier indésirable.](../../media/1-AllowList-SkipFilteringFromContoso.png)
 
 ## <a name="use-outlook-safe-senders"></a>Utiliser Outlook Coffre expéditeurs
 

@@ -8,7 +8,7 @@ metadata:
   manager: dansimp
   ms.date: 
   audience: ITPro
-  ms.topic: troubleshooting
+  ms.topic: faq
   ms.localizationpriority: medium
   search.appverid:
   - MET150
@@ -20,12 +20,12 @@ metadata:
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 839469f1aa872ff89c4dd488ed441cf51c911a8d
-  ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+  ms.openlocfilehash: ff5b1e7367491e307df0468b49ba8891558275e9
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 01/12/2022
-  ms.locfileid: "61941443"
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63680927"
 title: FAQ sur les messages mis en quarantaine
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -37,29 +37,29 @@ summary: >
 
   - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 
-  - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+  - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
   Cette rubrique fournit des questions fréquemment posées et des réponses sur les messages électroniques mis en quarantaine pour les organisations Microsoft 365 ayant des boîtes aux lettres dans Exchange Online ou les organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online boîtes aux lettres.
 
 
-  Pour obtenir des questions et des réponses sur la protection anti-courrier indésirable, consultez la faq sur la [protection anti-courrier indésirable.](anti-spam-protection-faq.yml)
+  Pour obtenir des questions et des réponses sur la protection anti-courrier indésirable, consultez la [faq sur la protection anti-courrier indésirable](anti-spam-protection-faq.yml).
 
 
-  Pour obtenir des questions et des réponses sur la protection anti-programme malveillant, consultez la [faq sur la protection anti-programme malveillant.](anti-malware-protection-faq-eop.yml)
+  Pour obtenir des questions et des réponses sur la protection anti-programme malveillant, consultez la [faq sur la protection anti-programme malveillant](anti-malware-protection-faq-eop.yml).
 
 
-  Pour obtenir des questions et des réponses sur la protection contre l’usurpation d’informations, consultez la faq sur la protection contre l’usurpation [d’informations.](anti-spoofing-protection-faq.yml)
+  Pour obtenir des questions et des réponses sur la protection contre l’usurpation d’informations, consultez la faq sur la [protection contre l’usurpation d’informations](anti-spoofing-protection-faq.yml).
 sections:
 - name: Ignoré
   questions:
   - question: >
       Comment gérer les messages mis en quarantaine pour les programmes malveillants ?
     answer: >
-      Par défaut, seuls les administrateurs peuvent gérer les messages mis en quarantaine pour les programmes malveillants. Pour plus d’informations, voir Gérer les messages et fichiers mis en [quarantaine en tant qu’administrateur.](manage-quarantined-messages-and-files.md)
+      Par défaut, seuls les administrateurs peuvent gérer les messages mis en quarantaine pour les programmes malveillants. Pour plus d’informations, voir [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur](manage-quarantined-messages-and-files.md).
 
 
-      Toutefois, les administrateurs  peuvent créer et appliquer des stratégies de mise en quarantaine aux stratégies anti-programme malveillant qui définissent davantage de fonctionnalités pour les utilisateurs. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
+      Toutefois, les administrateurs peuvent créer  et appliquer des stratégies de mise en quarantaine aux stratégies anti-programme malveillant qui définissent davantage de fonctionnalités pour les utilisateurs. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
   - question: >
       Comment mettre en quarantaine le courrier indésirable ?
     answer: >
@@ -67,11 +67,11 @@ sections:
   - question: >
       Comment accorder aux utilisateurs l’accès à la mise en quarantaine ?
     answer: >
-      Un utilisateur doit avoir un compte valide pour accéder à ses propres messages en quarantaine. EOP autonome exige que les utilisateurs soient représentés en tant qu’utilisateurs de messagerie dans EOP (créés ou créés manuellement via la synchronisation d’annuaires). Pour plus d’informations sur la gestion des utilisateurs dans des environnements EOP autonomes, voir Gérer les utilisateurs de messagerie dans [EOP autonome.](/exchange/standalone-eop/manage-mail-users-in-eop)
+      Un utilisateur doit avoir un compte valide pour accéder à ses propres messages en quarantaine. EOP autonome exige que les utilisateurs soient représentés en tant qu’utilisateurs de messagerie dans EOP (créés ou créés manuellement via la synchronisation d’annuaires). Pour plus d’informations sur la gestion des utilisateurs dans les environnements EOP autonomes, voir Gérer les utilisateurs de messagerie [dans EOP autonome](/exchange/standalone-eop/manage-mail-users-in-eop).
   - question: >
       Quels messages les utilisateurs finaux peuvent-ils accéder en quarantaine ?
     answer: >
-      Les stratégies de mise en quarantaine définissent si les utilisateurs peuvent accéder aux messages mis en quarantaine en fonction de la raison pour laquelle le message a été mis en quarantaine (pour les [fonctionnalités pris en charge).](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features) Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
+      Les stratégies de mise en quarantaine définissent si les utilisateurs peuvent accéder aux messages mis en quarantaine en fonction de la raison pour laquelle le message a été mis en quarantaine (pour les [fonctionnalités pris en charge](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)). Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
 
 
       Par défaut, les utilisateurs peuvent accéder aux types suivants de messages mis en quarantaine dont ils sont destinataires :
@@ -79,25 +79,25 @@ sections:
 
       - **Stratégies anti-courrier** indésirable : courrier indésirable, courrier électronique en masse et messages d’hameçonnage (pas les messages de hameçonnage à haut niveau de confiance).
 
-      - Stratégies **anti-hameçonnage**: expéditeurs usurpés, protection contre l’usurpation d’identité d’utilisateur (Defender pour Office 365), protection contre l’usurpation d’identité de domaine (Defender pour Office 365) et protection contre l’usurpation d’identité de boîte aux lettres (Defender pour Office 365).
+      - Stratégies **anti-hameçonnage** : expéditeurs usurpés, protection contre l’usurpation d’identité d’utilisateur (Defender pour Office 365), protection contre l’usurpation d’identité de domaine (Defender pour Office 365) et protection contre l’usurpation d’identité de boîte aux lettres (Defender pour Office 365).
 
 
-      Pour plus d’informations, voir [Rechercher et libérer les messages mis en quarantaine en tant qu’utilisateur.](find-and-release-quarantined-messages-as-a-user.md)
+      Pour plus d’informations, voir [Rechercher et libérer les messages mis en quarantaine en tant qu’utilisateur](find-and-release-quarantined-messages-as-a-user.md).
 
 
       Par défaut, les utilisateurs finaux ne peuvent pas accéder aux types de messages mis en quarantaine suivants lorsqu’ils sont destinataires :
 
 
-      - **Stratégies anti-courrier indésirable**: hameçonnage à haut niveau de confiance.
+      - **Stratégies anti-courrier indésirable** : hameçonnage à haut niveau de confiance.
 
       - **Stratégies anti-programme malveillant**
 
-      - **Coffre Attachments (Defender for Office 365)**: messages électroniques provenant de stratégies et de fichiers Coffre Attachments de Coffre Attachments for SharePoint, OneDrive et Microsoft Teams.
+      - **Coffre Attachments (Defender for Office 365)** : messages électroniques provenant de stratégies et de fichiers Coffre Attachments de Coffre Attachments for SharePoint, OneDrive et Microsoft Teams.
 
-      - **Règles de flux de messagerie (règles** de transport) : messages mis en quarantaine en raison de l’action remettre le **message** à l’action de mise en quarantaine hébergée dans les règles de flux de messagerie.
+      - **Règles de flux de messagerie (règles de transport)** : messages mis en quarantaine en raison de l’action remettre le **message** à l’action de mise en quarantaine hébergée dans les règles de flux de messagerie.
 
 
-      Pour plus d’informations, voir Gérer les messages et fichiers mis en [quarantaine en tant qu’administrateur.](manage-quarantined-messages-and-files.md)
+      Pour plus d’informations, voir [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur](manage-quarantined-messages-and-files.md).
   - question: >
       Pendant combien de temps les messages sont-ils mis en quarantaine ?
     answer: >
@@ -115,10 +115,10 @@ sections:
       Les caractères génériques ne sont pas pris en charge dans Microsoft 365 Defender portail. Par exemple, lorsque vous recherchez un expéditeur, vous devez spécifier l’adresse de messagerie complète. Toutefois, vous pouvez utiliser des caractères génériques dans Exchange Online PowerShell ou EOP PowerShell autonome.
 
 
-      Par exemple, copiez le code PowerShell suivant dans le Bloc-notes et enregistrez le fichier en tant que .ps1 à un emplacement facile à trouver (par exemple, C:\Data\QuarantineRelease.ps1).
+      Par exemple, copiez le code PowerShell suivant dans le Bloc-notes et enregistrez le fichier sous .ps1 à un emplacement facile à trouver (par exemple, C:\Data\QuarantineRelease.ps1).
 
 
-      Ensuite, après vous être connecté [à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) [ou Exchange Online Protection PowerShell,](/powershell/exchange/connect-to-exchange-online-protection-powershell)exécutez la commande suivante pour exécuter le script :
+      Ensuite, après vous être connecté [à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) [ou Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell), exécutez la commande suivante pour exécuter le script :
 
 
       ```powershell

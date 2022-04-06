@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3179ab18ab27bb41f5c0b1577d73ff48b3470b98
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 85ddada93e20e36648fccdb0fe9b2b34ab473212
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326074"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681477"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurer Microsoft Defender pour le point de terminaison sur les fonctionnalités iOS
 
@@ -143,6 +143,24 @@ Defender pour le point de terminaison sur iOS permet aux administrateurs de conf
 
 > [!NOTE]
 > Defender pour le point de terminaison sur iOS prend en charge la création d’indicateurs personnalisés uniquement pour les adresses IP et les URL/domaines.
+
+## <a name="configure-option-to-send-in-app-feedback"></a>Configurer l’option pour envoyer des commentaires dans l’application 
+
+Les clients ont désormais la possibilité de configurer la possibilité d’envoyer des données de commentaires à Microsoft dans l’application Defender for Endpoint. Les données de commentaires aident Microsoft à améliorer les produits et à résoudre les problèmes.
+
+> [!NOTE]
+> Pour les clients cloud du gouvernement des États-Unis, la collecte de données de commentaires **est désactivée** par défaut. 
+
+Pour configurer l’option d’envoi de données de commentaires à Microsoft, utilisez les étapes suivantes :
+
+1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **AppsApp** >  **configuration** **policiesAddManaged** >  >  **devices**.
+1. Nommez la stratégie Platform **> iOS/iPadOS**, sélectionnez le type de profil.
+1. **Sélectionnez Microsoft Defender pour le point de terminaison** comme application cible.
+1. Dans Paramètres page, sélectionnez Utiliser le concepteur de **configuration** et **ajoutez DefenderSendFeedback** comme clé et type de valeur en tant que **Boolean**
+   - Pour supprimer la possibilité pour les utilisateurs finaux de fournir des commentaires, `false` définissez la valeur comme et affectez cette stratégie aux utilisateurs. Par défaut, cette valeur est définie sur `true`. Pour les clients du gouvernement américain, la valeur par défaut est définie sur « false ».
+   - `true`Pour les utilisateurs dont la clé est définie comme , il existe une option pour envoyer des données de commentaires à Microsoft au sein de l’application (Menu > Aide & commentaires > envoyer des commentaires à Microsoft)
+1. Cliquez **sur Suivant** et affectez ce profil à des appareils/utilisateurs ciblés.
+
 
 ## <a name="report-unsafe-site"></a>Signaler un site non sécurisé
 

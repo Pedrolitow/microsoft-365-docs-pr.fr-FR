@@ -7,21 +7,21 @@ metadata:
   ms.reviewer: racheg, armanv
   ms.date: 07/22/2021
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.service: o365-administration
   ms.custom: commerce_vl
   ms.localizationpriority: medium
   description: 'Clés de produit : questions fréquemment posées'
-  ms.openlocfilehash: 277c4f624ad9b19a62e0af65e2547e29e4294e6d
-  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+  ms.openlocfilehash: da5e623e2e8bf318217dfb26224037fa81ac4270
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 03/08/2022
-  ms.locfileid: "63316322"
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63680495"
 title: 'Clés de produit : questions fréquemment posées'
 summary: ''
 sections:
-- name: Général
+- name: Généralités
   questions:
   - question: >
       Que sont les clés de produit ?
@@ -73,7 +73,7 @@ sections:
   - question: >
       Qu’est-ce que l’activation en volume ?
     answer: >
-      L’activation en volume est une solution configurable qui permet d’automatiser et de gérer le processus d’activation du produit sur les ordinateurs exécutant Windows systèmes d’exploitation sous licence dans le cadre d’un programme de licence en volume. L’activation en volume est également utilisée avec d’autres logiciels de Microsoft, notamment les suites Office, vendues dans le cadre de contrats de licence en volume et qui la prise en charge de l’activation en volume. Pour plus d’informations, voir :
+      L’activation en volume est une solution configurable qui permet d’automatiser et de gérer le processus d’activation du produit sur les ordinateurs exécutant Windows systèmes d’exploitation sous licence dans le cadre d’un programme de licence en volume. L’activation en volume est également utilisée avec d’autres logiciels de Microsoft, notamment les suites Office, vendues dans le cadre de contrats de licence en volume et qui la prise en charge de l’activation en volume. Pour plus d’informations, reportez-vous aux rubriques suivantes :
         - [Outils permettant de gérer l’activation en volume des Office](/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)
         - [Activation en volume pour Windows 10](/windows/deployment/volume-activation/volume-activation-windows-10)
 

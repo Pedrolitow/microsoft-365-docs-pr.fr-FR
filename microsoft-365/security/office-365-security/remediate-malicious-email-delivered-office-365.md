@@ -4,6 +4,7 @@ author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: article
+ms.collection: M365-security-compliance
 audience: admin
 f1.keywords:
 - NOCSH
@@ -11,16 +12,14 @@ ms.localizationpriority: medium
 MS.collection: ''
 search.appverid: MET150
 description: Correction des menaces
-appliesto:
-- Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0de692b0363508ba59713c182e91980939ef8b00
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 49cd5f532f41fd05090592136e28ca2462a9efd6
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60180782"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681169"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Corriger les messages malveillants remis dans Office 365
 
@@ -29,18 +28,18 @@ ms.locfileid: "60180782"
 **S’applique à**
 - [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
 
-La correction signifie prendre une action prescrite contre une menace. Les e-mails malveillants envoyés à votre organisation peuvent être nettoyés par le système, par le biais d’une purge automatique de zéro heure (ZAP) ou par les équipes de sécurité par le biais d’actions de correction telles que le déplacement vers la boîte de *réception,* le déplacement vers le courrier *indésirable,* le déplacement vers les éléments supprimés, la suppression possible ou la suppression *dure.* Microsoft Defender pour Office 365 Plan 2/E5 permet aux équipes de sécurité de corriger les menaces dans les fonctionnalités de messagerie électronique et de collaboration par le biais d’examens manuels et automatisés.
+La correction signifie prendre une action prescrite contre une menace. Les e-mails malveillants envoyés à votre organisation peuvent être nettoyés par le système, par le biais d’une purge automatique de zéro heure (ZAP) ou par les équipes de sécurité par le biais d’actions de correction telles que le déplacement vers la boîte de *réception, le* déplacement vers le courrier *indésirable, le* déplacement vers les éléments supprimés *, la* suppression possible ou la suppression *définitivement.* Microsoft Defender pour Office 365 Plan 2/E5 permet aux équipes de sécurité de corriger les menaces dans les fonctionnalités de messagerie électronique et de collaboration par le biais d’examens manuels et automatisés.
 
 > [!NOTE]
-> Pour corriger les messages malveillants, les équipes de sécurité ont besoin du rôle *Rechercher* et Vider qui leur est attribué. L’attribution de rôle est effectuée [par le biais des autorisations dans le portail Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)
+> Pour corriger les messages malveillants, les équipes de sécurité ont besoin du rôle *Rechercher* et Vider qui leur est attribué. L’attribution de rôle est effectuée [par le biais des autorisations dans Microsoft 365 Defender portail.](permissions-microsoft-365-security-center.md)
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>Ce que vous devez savoir avant de commencer
 
-Les administrateurs peuvent effectuer les actions requises sur les e-mails, mais pour obtenir ces actions approuvées, le rôle Recherche et purge doit leur être attribué dans les autorisations de **collaboration** de l'& de messagerie sur le portail Microsoft 365 Defender.  Sans le *rôle Rechercher et purger »* ajouté à l’un des groupes de rôles, ils ne pourront pas exécuter l’action.
+Les administrateurs peuvent effectuer les actions requises sur les e-mails, mais pour obtenir ces actions approuvées, le rôle Recherche et purge doit leur être affecté dans les autorisations de **collaboration** de l'& de messagerie sur le portail Microsoft 365 Defender. Sans le *rôle Rechercher et purger ajouté* à l’un des groupes de rôles, ils ne pourront pas exécuter l’action.
 
 ## <a name="manual-and-automated-remediation"></a>Correction manuelle et automatisée
 
-*Le recherche manuel* se produit lorsque les équipes de sécurité identifient les menaces manuellement à l’aide des fonctionnalités de recherche et de filtrage dans l’Explorateur. La correction manuelle du courrier électronique peut être déclenchée par n’importe quel affichage de courrier *électronique*(programme *malveillant,* hameçonnage ou tout e-mail) une fois que vous avez identifié un ensemble d’e-mails qui doivent être corrigés.
+*Le recherche manuel* se produit lorsque les équipes de sécurité identifient les menaces manuellement à l’aide des fonctionnalités de recherche et de filtrage dans l’Explorateur. La correction manuelle du courrier électronique peut être déclenchée par n’importe quel affichage de *courrier électronique (**programmes malveillants*, hameçonnage ou *tous les* e-mails) une fois que vous avez identifié un ensemble d’e-mails qui doivent être corrigés.
 
 > [!div class="mx-imgBorder"]
 > [![Recherche manuelle dans Office 365'Explorateur de menaces par date.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
@@ -51,20 +50,20 @@ Les équipes de sécurité peuvent utiliser l’Explorateur pour sélectionner d
 
 - Sélection de requête : sélectionnez une requête entière à l’aide du bouton **Tout sélectionner en** haut. La même requête est également affichée dans les détails de l’envoi de courrier du centre de messages.
 
-- Sélection de requête avec exclusion : parfois, les équipes en charge des opérations de sécurité peuvent vouloir corriger les messages électroniques en sélectionnant une requête entière et en excluant manuellement certains e-mails de la requête. Pour ce faire, un  administrateur peut utiliser la case à cocher Sélectionner tout et faire défiler vers le bas pour exclure manuellement les e-mails. La requête peut contenir un maximum de 1 000 e-mails. Le nombre maximal d’exclusions est de 100.
+- Sélection de requête avec exclusion : parfois, les équipes en charge des opérations de sécurité peuvent vouloir corriger les messages électroniques en sélectionnant une requête entière et en excluant manuellement certains e-mails de la requête. Pour ce faire, un administrateur peut utiliser la  case à cocher Sélectionner tout et faire défiler vers le bas pour exclure manuellement les e-mails. La requête peut contenir un maximum de 1 000 e-mails. Le nombre maximal d’exclusions est de 100.
 
 Une fois que les e-mails sont sélectionnés par le biais de l’Explorateur, vous pouvez commencer la correction en prenant des mesures directes ou en les interrogeant pour une action :
 
-- Approbation directe : lorsque des actions telles que le déplacement vers la  boîte de *réception,* le déplacement vers le courrier *indésirable,* le déplacement vers les éléments supprimés, la suppression définitive ou la suppression définitive sont sélectionnées par le personnel de sécurité qui a les autorisations appropriées et que les étapes suivantes de la correction sont suivies, le processus de correction commence à exécuter l’action sélectionnée. Un flyout temporaire affiche la correction en cours.
+- Approbation directe : lorsque des actions telles que le déplacement vers la  boîte de *réception, le* déplacement vers le courrier *indésirable, le* déplacement vers les éléments supprimés *, la* suppression définitive ou la suppression définitive sont sélectionnées par le personnel de sécurité qui a les autorisations appropriées et que les étapes suivantes de la correction sont suivies, le processus de correction commence à exécuter l’action sélectionnée. Un flyout temporaire affiche la correction en cours.
 
 - Approbation en deux étapes : une action d’ajout à la correction peut être prise par les administrateurs qui ne sont pas autorisés à exécuter l’action ou qui doivent attendre. Dans ce cas, les e-mails ciblés sont ajoutés à un conteneur de correction. Une approbation est nécessaire avant l’exécution de la correction.
 
 **Les actions d’investigation et de** réponse automatisées sont déclenchées par des alertes ou par des équipes d’opérations de sécurité de l’Explorateur. Il peut s’agir d’actions de correction recommandées qui doivent être approuvées par une équipe des opérations de sécurité. Ces actions sont incluses sous **l’onglet Action** dans l’examen automatisé.
 
 > [!div class="mx-imgBorder"]
-> [![Courrier avec programme malveillant dans la page « Péred » affichant l’heure de l’exécution de Zap.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
+> [![Courrier électronique avec programme malveillant dans la page « Péred » montrant l’heure de l’exécution de Zap.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-Toutes les corrections (approbation directe ou approbation en deux étapes) qui ont été créées dans l’Explorateur, ainsi que les actions approuvées provenant d’enquêtes automatisées sont affichées dans le Centre de gestion des actions. Accédez à ces éléments via le panneau de navigation de gauche sous **Centre** \> **de révision de l’action.**
+Toutes les corrections (approbation directe ou approbation en deux étapes) qui ont été créées dans l’Explorateur, ainsi que les actions approuvées provenant d’enquêtes automatisées sont affichées dans le Centre de gestion des actions. Accédez à ces éléments via le panneau de navigation gauche sous **Centre** \> **de révision**.
 
 > [!div class="mx-imgBorder"]
 > [![Centre de mesures avec une liste des menaces par date et gravité.](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
@@ -78,7 +77,7 @@ Ouvrez n’importe quel élément de correction pour afficher des détails à so
   > [!div class="mx-imgBorder"]
   > [![Centre de actions avec des menaces actionnables et non actionnables.](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
 
-  - **Actionnable**: les e-mails des emplacements de boîte aux lettres cloud suivants peuvent être actionnables et déplacés :
+  - **Actionnable :** les e-mails des emplacements de boîtes aux lettres cloud suivants peuvent être actionnables et déplacés :
     - Boîte de réception
     - Courrier indésirable
     - Dossier supprimé
@@ -87,7 +86,7 @@ Ouvrez n’importe quel élément de correction pour afficher des détails à so
       > [!NOTE]
       > Actuellement, seul un utilisateur ayant accès à la boîte aux lettres peut récupérer des éléments à partir d’un dossier supprimé (récupérable).
 
-  - **Non actionnable**: les messages électroniques aux emplacements suivants ne peuvent pas être actionnables ou déplacés dans les actions de correction :
+  - **Non actionnable** : les messages électroniques aux emplacements suivants ne peuvent pas être actionnables ou déplacés dans les actions de correction :
     - Quarantaine
     - Dossier supprimé définitivement
     - Local/externe
@@ -113,28 +112,28 @@ Ouvrez n’importe quel élément de correction pour afficher des détails à so
   > [!div class="mx-imgBorder"]
   > [![Panneau volant de cluster de messagerie ZAP.](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
 
-  Sélectionnez un élément de soumission de courrier pour afficher les détails de cette correction, par exemple la requête (lorsque la correction est déclenchée par des enquêtes automatisées ou l’Explorateur par le biais de la sélection d’une requête) et les heures de début et de fin de la correction. Il affiche également une liste des messages qui ont été envoyés pour correction. À mesure que les messages sortent de la période de rétention de l’Explorateur, ils disparaissent de cette liste. La liste affiche également les messages individuels qui sont remédiables.
+  Sélectionnez un élément de soumission de courrier pour afficher les détails de cette correction, tels que la requête (lorsque la correction est déclenchée par des enquêtes automatisées ou l’Explorateur par le biais de la sélection d’une requête) et les heures de début et de fin de la correction. Il affiche également une liste des messages qui ont été envoyés pour correction. À mesure que les messages sortent de la période de rétention de l’Explorateur, ils disparaissent de cette liste. La liste affiche également les messages individuels qui sont remédiables.
 
-- **Journaux d’action**: cet onglet affiche les messages corrigés, y compris la date approuvée, l’administrateur qui a approuvé l’action, l’action, l’état et le nombre.
+- **Journaux d’action** : cet onglet affiche les messages corrigés, y compris la date approuvée, l’administrateur qui a approuvé l’action, l’action, l’état et le nombre.
 
   L’état peut être :
 
   - **Démarré :** la correction est déclenchée.
-    - **Mise en file d’attente**: la correction est mise en file d’attente pour l’atténuation des messages électroniques.
-    - **En cours**: l’atténuation est en cours.
+    - **Mise en file d’attente** : la correction est mise en file d’attente pour l’atténuation des messages électroniques.
+    - **En cours :** l’atténuation est en cours.
     - **Terminé :** l’atténuation sur tous les e-mails remédiables s’est terminée correctement ou avec certains échecs.
     - **Échec :** aucune correction n’a réussi.
 
   Comme seuls les e-mails remédiables peuvent être pris en compte, le nettoyage de chaque e-mail s’affiche comme réussi ou a échoué. À partir du nombre total d’e-mails remédiables, les atténuations réussies et échouées sont signalées.
 
-  - **Réussite**: l’action souhaitée sur les e-mails corrects a été accomplie. Par exemple : un administrateur souhaite supprimer des e-mails des boîtes aux lettres, afin qu’il prenne l’action de supprimer les e-mails de la sorte. Si un e-mail remédiable n’est pas trouvé dans le dossier d’origine une fois l’action entreprise, l’état s’affiche comme réussi.
+  - **Réussite :** l’action souhaitée sur les e-mails corrects a été accomplie. Par exemple : un administrateur souhaite supprimer des courriers électroniques des boîtes aux lettres, afin qu’il prenne l’action de supprimer les e-mails de la sorte. Si un e-mail remédiable n’est pas trouvé dans le dossier d’origine une fois l’action entreprise, l’état s’affiche comme réussi.
 
-  - **Échec :** échec de l’action souhaitée sur les e-mails corrects. Par exemple : un administrateur souhaite supprimer des e-mails des boîtes aux lettres, afin qu’il prenne l’action de supprimer les e-mails de la sorte. Si un e-mail remédiable est toujours trouvé dans la boîte aux lettres après que l’action a été prise, l’état s’affiche comme étant un échec.
+  - **Échec :** échec de l’action souhaitée sur les e-mails corrects. Par exemple : un administrateur souhaite supprimer des courriers électroniques des boîtes aux lettres, afin qu’il prenne l’action de supprimer les e-mails de la sorte. Si un e-mail remédiable est toujours trouvé dans la boîte aux lettres après l’action, l’état s’affiche comme étant un échec.
   
-  - **Déjà dans la destination**: l’action souhaitée a déjà été prise sur l’e-mail ou l’e-mail existait déjà dans l’emplacement de destination. Par exemple : un e-mail a été supprimé (à la demande) par l’administrateur via l’Explorateur le premier jour. Ensuite, des messages électroniques similaires s’afficheront le jour 2, qui sont de nouveau supprimés (supprimés de façon souple) par l’administrateur. Lors de la sélection de ces e-mails, l’administrateur finit par sélectionner certains e-mails du premier jour qui sont déjà supprimés (supprimés de la sorte). À présent, ces e-mails ne seront pas retentés, ils s’afficheront simplement comme « déjà dans la destination », car aucune action n’a été prise sur eux comme ils existaient dans l’emplacement de destination.
+  - **Déjà dans la destination** : l’action souhaitée a déjà été prise sur l’e-mail ou l’e-mail existait déjà dans l’emplacement de destination. Par exemple : un e-mail a été supprimé (à la demande) par l’administrateur via l’Explorateur le premier jour. Ensuite, des messages électroniques similaires s’afficheront le jour 2, qui seront supprimés de nouveau de façon souple par l’administrateur. Lors de la sélection de ces e-mails, l’administrateur finit par sélectionner certains messages électroniques du premier jour qui sont déjà supprimés (supprimés de la sorte). À présent, ces e-mails ne seront pas retentés, ils s’afficheront simplement comme « déjà dans la destination », car aucune action n’a été prise sur eux comme ils existaient dans l’emplacement de destination.
 
-  - **Nouveau**: une colonne déjà dans *la destination* a été ajoutée dans le journal des actions. Cette fonctionnalité utilise le dernier emplacement de remise dans l’Explorateur de menaces pour signaler si le courrier a déjà été corrigé. *La destination déjà en cours* permettra aux équipes de sécurité de comprendre le nombre total de messages qui doivent encore être traités.
-                
+  - **Nouveau** : une *colonne déjà dans la destination* a été ajoutée dans le journal des actions. Cette fonctionnalité utilise le dernier emplacement de remise dans l’Explorateur de menaces pour signaler si le courrier a déjà été corrigé. *La destination déjà en cours* permettra aux équipes de sécurité de comprendre le nombre total de messages qui doivent encore être traités.
+
 Les actions peuvent uniquement être prises sur les messages dans les dossiers Boîte de réception, Courrier indésirable, Supprimé et Supprimé (suppression possible) de l’Explorateur de menaces. Voici un exemple de fonctionnement de la nouvelle colonne. Une *action de suppression souple* a lieu sur le message présent dans la boîte de réception, puis le message est géré conformément aux stratégies. Lors de la prochaine suppression, ce message s’affichera sous la colonne « Déjà dans la destination » signalant qu’il n’est pas nécessaire de le traiter à nouveau.
 
 Sélectionnez n’importe quel élément dans le journal des actions pour afficher les détails de correction. Si les détails indiquent « réussite » ou « in trouvé dans la boîte aux lettres », cet élément a déjà été supprimé de la boîte aux lettres. Parfois, il y a une erreur système lors de la correction. Dans ce cas, il est bon de réessayer l’action de correction.

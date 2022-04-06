@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/30/2020
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-solutions
 ms.localizationpriority: medium
 search.appverid:
@@ -18,16 +18,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: Fournit une liste de liens vers des informations utiles pour le déploiement Office charges de travail du serveur dans Microsoft Azure.
-ms.openlocfilehash: a7891e05da6af23f5847d91c21c25f8c9d73cee5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e4f4ddf41174a9bd1a3b4cef9e43087825ee4bbc
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197388"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681587"
 ---
 # <a name="hybrid-solutions"></a>Solutions hybrides
 
-Avec Microsoft Azure, vous pouvez déployer certaines charges de travail Office Server généralement déployées localement dans les services d’infrastructure Azure.
+Avec Microsoft Azure, vous pouvez déployer certaines charges de travail Office Server qui étaient généralement déployées localement dans les services d’infrastructure Azure.
   
 Pour plus Microsoft 365'identité dans Azure :
 
@@ -48,7 +48,7 @@ Pour les charges de travail SharePoint Server 2013 dans Azure :
 - [Sites Internet dans Microsoft Azure qui utilisent SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
   
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
 [Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
   

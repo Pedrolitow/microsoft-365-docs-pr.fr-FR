@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.date: 02/27/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: be22c80e51551b5de2a2aeed2f0dff0db9a8481f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: da5add0e1f37a813e6962accbc391be6efba1cb1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323652"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472988"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurer et valider des exclusions en fonction de l’extension de fichier et de l’emplacement du dossier
 
@@ -334,7 +334,7 @@ Get-MpPreference
 
 Dans l’exemple suivant, les éléments contenus dans la `ExclusionExtension` liste sont mis en surbrillant :
 
-:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Sortie PowerShell pour Get-MpPreference.":::
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Sortie PowerShell pour Get-MpPreference" lightbox="../../media/wdav-powershell-get-exclusions-variable.png":::
 
 Pour plus d’informations, consultez [Utiliser les applets de commande PowerShell pour configurer et exécuter l’antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et les [Applets de commande de l’antivirus Defender](/powershell/module/defender/).
 
@@ -350,7 +350,7 @@ $WDAVprefs.ExclusionPath
 
 Dans l’exemple suivant, la liste est divisée en nouvelles lignes pour chaque utilisation de l’cmdlet `Add-MpPreference` :
 
-:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Sortie PowerShell affichant uniquement les entrées de la liste d’exclusions.":::
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Sortie PowerShell affichant uniquement les entrées de la liste d’exclusions" lightbox="../../media/wdav-powershell-get-exclusions-variable.png":::
 
 Pour plus d’informations, consultez [Utiliser les applets de commande PowerShell pour configurer et exécuter l’antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et les [Applets de commande de l’antivirus Defender](/powershell/module/defender/).
 

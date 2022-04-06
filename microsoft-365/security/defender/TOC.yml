@@ -422,6 +422,61 @@
                   href: ../defender-endpoint/troubleshoot-siem.md
             - name: Comprendre les concepts de veille des menaces
               href: ../defender-endpoint/threat-indicator-concepts.md
+        - name: Veille de sécurité
+          items:
+            - name: Téléchargement du détecteur de sécurité
+              href: ../intelligence/safety-scanner-download.md
+            - name: Comprendre les programmes malveillants et les autres menaces
+              href: ../intelligence/understanding-malware.md
+              items:
+                - name: Prévenir les infections par des logiciels malveillants
+                  href: ../intelligence/prevent-malware-infection.md
+                - name: Noms des programmes malveillants
+                  href: ../intelligence/malware-naming.md
+                - name: Mineurs de monnaie
+                  href: ../intelligence/coinminer-malware.md
+                - name: Exploits et kits d’exploits
+                  href: ../intelligence/exploits-malware.md
+                - name: Menaces sans fichier
+                  href: ../intelligence/fileless-threats.md
+                - name: Programme malveillant macro
+                  href: ../intelligence/macro-malware.md
+                - name: Hameçonnage
+                  href: ../intelligence/phishing.md
+                - name: Rançongiciel
+                  href: /security/compass/human-operated-ransomware
+                - name: Rootkits
+                  href: ../intelligence/rootkits-malware.md
+                - name: Attaques de la chaîne d'approvisionnement
+                  href: ../intelligence/supply-chain-malware.md
+                - name: Fraudes au support technique
+                  href: ../intelligence/support-scams.md
+                - name: Chevaux de Troie
+                  href: ../intelligence/trojans-malware.md
+                - name: Logiciels indésirables
+                  href: ../intelligence/unwanted-software.md
+                - name: Vers informatiques
+                  href: ../intelligence/worms-malware.md
+            - name: Comment Microsoft identifie les programmes malveillants et les application potentiellement indésirables (PUA)
+              href: ../intelligence/criteria.md
+            - name: Envoyer des fichiers à analyser
+              href: ../intelligence/submission-guide.md
+            - name: Programmes de collaboration du secteur d’activité
+              href: ../intelligence/cybersecurity-industry-partners.md
+            - name: Alliance d’informations sur les virus
+              href: ../intelligence/virus-information-alliance-criteria.md
+            - name: Initiative antivirus Microsoft
+              href: ../intelligence/virus-initiative-criteria.md
+            - name: Éradication coordonnée des logiciels malveillants
+              href: ../intelligence/coordinated-malware-eradication.md
+            - name: Programme Bug Bounty de Microsoft
+              href: ../intelligence/microsoft-bug-bounty-program.md
+            - name: Informations pour les développeurs
+              items:
+                - name: FAQ pour les développeurs de logiciels
+                  href: ../intelligence/developer-faq.yml
+                - name: Ressources pour les développeur de logiciels
+                  href: ../intelligence/developer-resources.md
     - name: Documents Microsoft 365 Defender
       items:
         - name: Defender pour Office 365

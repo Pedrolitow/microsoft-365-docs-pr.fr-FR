@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ebcfea808e64c89772f36fb22f5dfd75e6e8e27f
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 805f857a95fab03f8356c5162db1509122e7250a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525805"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680817"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
@@ -40,6 +40,9 @@ Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser
 > L’exécution d’autres produits de protection de point de terminaison tiers avec Microsoft Defender pour Endpoint sur Linux est susceptible de provoquer des problèmes de performances et des effets secondaires imprévisibles. Si la protection des points de terminaison non-Microsoft est une exigence absolue dans votre environnement, vous pouvez toujours tirer parti en toute sécurité de defender pour point de terminaison sur la fonctionnalité Linux PEPT après avoir configuré la fonctionnalité antivirus pour qu’elle s’exécute en [mode passif](linux-preferences.md#enforcement-level-for-antivirus-engine).
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Comment installer Microsoft Defender pour endpoint sur Linux
+
+Microsoft Defender pour le point de terminaison pour Linux inclut des logiciels anti-programme malveillant et des protection évolutive des points de terminaison (PEPT) de logiciels malveillants. 
+
 
 ### <a name="prerequisites"></a>Configuration requise
 

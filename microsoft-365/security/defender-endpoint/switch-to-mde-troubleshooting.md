@@ -13,17 +13,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365solution-scenario
+- M365-security-compliance
 ms.topic: conceptual
 ms.custom: migrationguides
 ms.date: 01/11/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 6729d136da90c674c0d726f2bfe7321a75bdb79a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 180adaff84f4154034d8bda04b6a6cbf6ceadc2e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937171"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680451"
 ---
 # <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>Résolution des problèmes lors du basculement vers Microsoft Defender pour point de terminaison
 
@@ -36,29 +37,29 @@ Cet article fournit des informations de dépannage pour les administrateurs de s
 
 ## <a name="microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server"></a>Antivirus Microsoft Defender est désinstallé sur Windows Server
 
-Lorsque vous basculez vers Defender pour le point de terminaison, vous commencez par votre protection antivirus/anti-programme malveillant non-Microsoft en mode actif. Dans le cadre du processus d’installation, vous configurez Antivirus Microsoft Defender en mode passif. Parfois, votre solution antivirus/anti-programme malveillant non Microsoft peut empêcher l Antivirus Microsoft Defender’exécution sur Windows Server. En fait, il peut ressembler à Antivirus Microsoft Defender a été supprimé de Windows Server.
+Lorsque vous basculez vers Defender pour le point de terminaison, vous commencez par votre protection antivirus/anti-programme malveillant non-Microsoft en mode actif. Dans le cadre du processus d’installation, vous configurez Antivirus Microsoft Defender en mode passif. Parfois, votre solution antivirus/anti-programme malveillant non-Microsoft peut empêcher Antivirus Microsoft Defender’exécution sur Windows Server. En fait, il peut ressembler à Antivirus Microsoft Defender a été supprimé de Windows Server.
 
 Pour résoudre ce problème, prenez les mesures suivantes :
 
 1. [Définissez la clé de Registre DisableAntiSpyware sur false](#set-the-disableantispyware-registry-key-to-false).
-2. [Ajoutez Microsoft Defender pour le point de terminaison à la liste d’exclusions.](#add-microsoft-defender-for-endpoint-to-the-exclusion-list)
-3. [Définissez Antivirus Microsoft Defender le mode passif manuellement.](#set-microsoft-defender-antivirus-to-passive-mode-manually)
+2. [Ajoutez Microsoft Defender pour le point de terminaison à la liste d’exclusions](#add-microsoft-defender-for-endpoint-to-the-exclusion-list).
+3. [Définissez Antivirus Microsoft Defender le mode passif manuellement](#set-microsoft-defender-antivirus-to-passive-mode-manually).
 
 ### <a name="set-the-disableantispyware-registry-key-to-false"></a>Définir la clé de Registre DisableAntiSpyware sur false
 
-La clé de Registre [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) a été utilisée dans le passé pour désactiver Antivirus Microsoft Defender et déployer un autre produit antivirus, tel que Mc Symantec, etc. **En règle générale,** vous ne devez pas avoir cette clé de Registre sur  vos appareils et points de terminaison Windows ; toutefois, si vous avez configuré, voici comment définir sa valeur sur `DisableAntiSpyware` false :
+La clé de Registre [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) a été utilisée dans le passé pour désactiver Antivirus Microsoft Defender et déployer un autre produit antivirus, tel que Mc Antivirus, Symantec ou d’autres. **En règle générale,** vous ne devez pas avoir cette clé de Registre sur vos appareils et points de terminaison Windows ; toutefois,  `DisableAntiSpyware` si vous avez configuré, voici comment définir sa valeur sur false :
 
 1. Sur votre Windows server, ouvrez l’Éditeur du Registre.
 
-2. Accédez à `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
+2. Naviguer vers`HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
 
 3. Dans ce dossier, recherchez une entrée DWORD appelée **DisableAntiSpyware**.
    - Si vous ne voyez pas cette entrée, vous êtes prêt.
-   - Si vous voyez **DisableAntiSpyware,** procédez à l’étape 4.
+   - Si vous voyez **DisableAntiSpyware**, passer à l’étape 4.
 
-4. Cliquez avec le bouton droit sur la DWORD DisableAntiSpyware, puis choisissez **Modifier**.
+4. Cliquez avec le bouton droit sur le DWORD DisableAntiSpyware, puis choisissez **Modifier**.
 
-5. Définissez la valeur sur `0` . (Cette action définit la valeur de la clé de Registre sur *false*.)
+5. Définissez la valeur sur `0`. (Cette action définit la valeur de la clé de Registre sur *false*.)
 
 > [!TIP]
 > Pour en savoir plus sur cette clé de Registre, voir [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware).
@@ -77,7 +78,7 @@ Certaines exclusions de Defender pour point de terminaison doivent être défini
 
 `C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe`
 
-### <a name="set-microsoft-defender-antivirus-to-passive-mode-manually"></a>Définir Antivirus Microsoft Defender mode passif manuellement
+### <a name="set-microsoft-defender-antivirus-to-passive-mode-manually"></a>Définir Antivirus Microsoft Defender le mode passif manuellement
 
 Sur Windows Server 2019, Windows Server, version 1803 ou plus récente, Windows Server 2016 ou Windows Server 2012 R2, vous devez définir Antivirus Microsoft Defender en mode passif manuellement. Cette action permet d’éviter les problèmes causés par l’installation de plusieurs produits antivirus sur un serveur. Vous pouvez définir Antivirus Microsoft Defender mode passif à l’aide de PowerShell, d’une stratégie de groupe ou d’une clé de Registre.
 
@@ -92,9 +93,9 @@ Type : `REG_DWORD`
 Valeur : `1`
 
 > [!NOTE]
-> Pour que le mode passif fonctionne sur les points de terminaison exécutant Windows Server 2016 et Windows Server 2012 R2, ces points de terminaison doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés.](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)
+> Pour que le mode passif fonctionne sur les points de terminaison exécutant Windows Server 2016 et Windows Server 2012 R2, ces points de terminaison doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
 
-Pour plus d’informations, [voir Antivirus Microsoft Defender sur Windows Server.](microsoft-defender-antivirus-on-windows-server.md)
+Pour plus d’informations, [voir Antivirus Microsoft Defender sur Windows Server](microsoft-defender-antivirus-on-windows-server.md).
 
 ## <a name="i-am-having-trouble-re-enabling-microsoft-defender-antivirus-on-windows-server-2016"></a>J’ai des difficultés à réactiver Antivirus Microsoft Defender sur Windows Server 2016
 

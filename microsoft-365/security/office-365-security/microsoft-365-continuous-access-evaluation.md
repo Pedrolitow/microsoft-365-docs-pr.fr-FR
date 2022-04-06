@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 255618508559e989a356ab404429bc4d87bfe2c6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e265fd09fa7442b24868ad7f001701ef567e32bd
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324534"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681565"
 ---
 # <a name="continuous-access-evaluation-for-microsoft-365"></a>Évaluation de l’accès continu pour Microsoft 365
 
@@ -76,10 +76,6 @@ L’évaluation de la stratégie d’accès conditionnel se produit lorsque le c
 
 Les services de Microsoft 365 suivants offrent actuellement une prise en charge de l’évaluation de l’accès continu en Azure AD.
 
-<br>
-
-****
-
 |Type d’application|Exchange|SharePoint|Équipes|
 |---|---|---|---|
 |**Événements critiques :**||||
@@ -87,7 +83,6 @@ Les services de Microsoft 365 suivants offrent actuellement une prise en charge 
 |Risque de l’utilisateur|Pris en charge|Non pris en charge|Non pris en charge|
 |**Évaluation de la stratégie d’accès conditionnel :**||||
 |Stratégie d’emplacement des adresses IP|Pris en charge|Pris en charge\*|Pris en charge|
-|
 
 \*SharePoint Office navigateur web prend en charge l’application de stratégies IP instantanées en activant le mode strict. Sans mode strict, la durée de vie du jeton d’accès est d’une heure.
 
@@ -100,8 +95,8 @@ Les clients activés pour l’évaluation de l’accès continu pour Microsoft 3
 Les clients suivants supportent l’évaluation de l’accès continu sur le web, Win32, iOS, Android et Mac :
 
 - Outlook
-- Équipes
-- Office\*
+- Teams
+- Bureau\*
 - SharePoint
 - OneDrive
 

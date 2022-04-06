@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: a0d0f470a2af18dab298ba3a1af642362590da4c
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 138b532e7786a3d142c3cbbe68f668a4b0e05591
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401159"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472570"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>Collecter les journaux de support dans Microsoft Defender pour le point de terminaison à l’aide d’une réponse en direct
 
@@ -43,15 +43,15 @@ Si vous avez également besoin des journaux de prise en charge de l’Antivirus 
 
 3. Sélectionnez **Télécharger fichier vers la bibliothèque**.
 
-    ![Image du fichier de téléchargement.](images/upload-file.png)
+   :::image type="content" source="images/upload-file.png" alt-text="Fichier de téléchargement" lightbox="images/upload-file.png":::
 
 4. **Sélectionnez Choisir un fichier**.
 
-    ![Image du bouton de choix du fichier 1.](images/choose-file.png)
+   :::image type="content" source="images/choose-file.png" alt-text="Bouton Choisir un fichier -1" lightbox="images/choose-file.png":::
 
 5. Sélectionnez le fichier téléchargé nommé MDELiveAnalyzer.ps1 puis cliquez sur **Confirmer**
 
-   ![Image du bouton de choix du fichier 2.](images/analyzer-file.png)
+   :::image type="content" source="images/analyzer-file.png" alt-text="Bouton Choisir un fichier -2" lightbox="images/analyzer-file.png":::
 
 6. Pendant la session LiveResponse, utilisez les commandes ci-dessous pour exécuter l’analyseur et collecter le fichier de résultats :
 

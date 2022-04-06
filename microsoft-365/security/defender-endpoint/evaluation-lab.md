@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 11927ccd5b132a0ecb3e1a42ddc4622bd5b0d9af
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 2b4c1cd9c37921fbb54633c0fc1bf2e42d308081
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327262"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472878"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratoire d’évaluation de Microsoft Defender for Endpoint
 
@@ -82,22 +82,22 @@ Vous avez déjà un atelier ? Veillez à activer les nouveaux simulateurs de men
 
 1. Dans le volet de navigation, sélectionnez **Évaluation & didacticiels** \> **Laboratoire** d’évaluation, puis sélectionnez **Laboratoire d’installation**.
 
-    :::image type="content" source="../../media/evaluationtutormenu.png" alt-text="Image de la page d’accueil du laboratoire d’évaluation.":::
+   :::image type="content" source="../../media/evaluationtutormenu.png" alt-text="Page d’accueil du laboratoire d’évaluation" lightbox="../../media/evaluationtutormenu.png":::
 
 2. En fonction de vos besoins d’évaluation, vous pouvez choisir de configurer un environnement avec moins d’appareils pendant une période plus longue ou plus d’appareils sur une période plus courte. Sélectionnez votre configuration d’atelier préférée, puis **sélectionnez Suivant**.
 
-    ![Image des options de configuration de l’atelier.](images/lab-creation-page.png)
+    :::image type="content" source="images/lab-creation-page.png" alt-text="Options de configuration de l’atelier" lightbox="images/lab-creation-page.png":::
 
 3. (Facultatif) Vous pouvez choisir d’installer des simulateurs de menaces dans l’atelier.
 
-    ![Image de l’agent des simulateurs d’installation.](images/install-agent.png)
+    :::image type="content" source="images/install-agent.png" alt-text="Page de l’agent des simulateurs d’installation" lightbox="images/install-agent.png":::
 
    > [!IMPORTANT]
    > Vous devez d’abord accepter et donner votre consentement aux conditions générales et aux déclarations de partage d’informations.
 
 4. Sélectionnez l’agent de simulation de menace que vous souhaitez utiliser et entrez vos détails. Vous pouvez également choisir d’installer des simulateurs de menaces ultérieurement. Si vous choisissez d’installer des agents de simulation de menace lors de l’installation de l’atelier, vous profitez de leur installation pratique sur les appareils que vous ajoutez.
 
-    ![Image de la page récapitulatif.](images/lab-setup-summary.png)
+   :::image type="content" source="images/lab-setup-summary.png" alt-text="Page récapitulatif" lightbox="images/lab-setup-summary.png":::
 
 5. Examinez le résumé et sélectionnez **Le laboratoire d’installation**.
 
@@ -121,7 +121,7 @@ Les composants de sécurité suivants sont pré-configurés dans les périphéri
 - [Exploit Protection](enable-exploit-protection.md)
 - [Protection du réseau](network-protection.md)
 - [Détection d’applications potentiellement indésirables](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
-- [Protection fournie par le cloud](cloud-protection-microsoft-defender-antivirus.md)
+- [Protection cloud](cloud-protection-microsoft-defender-antivirus.md)
 - [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 > [!NOTE]
@@ -134,7 +134,9 @@ Les paramètres d’examen automatisé dépendent des paramètres du client. Ell
 
 1. Dans le tableau de bord, sélectionnez **Ajouter un appareil**.
 
-2. Choisissez le type d’appareil à ajouter. Vous pouvez choisir d’ajouter Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 et Linux (Ubuntu). 
+2. Choisissez le type d’appareil à ajouter. Vous pouvez choisir d’ajouter Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 et Linux (Ubuntu).
+
+   :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="Configuration de l’atelier avec options d’appareil" lightbox="../../media/add-machine-optionsnew.png":::
 
    > [!NOTE]
    > En cas de problème lors du processus de création de l’appareil, vous serez averti et vous devrez envoyer une nouvelle demande. Si la création de l’appareil échoue, elle n’est pas comptabilisée dans le quota autorisé global.
@@ -144,13 +146,14 @@ Les paramètres d’examen automatisé dépendent des paramètres du client. Ell
    > [!NOTE]
    > Le mot de passe n’est affiché qu’une seule fois. N’oubliez pas de l’enregistrer pour une utilisation ultérieure.
 
-    :::image type="content" source="../../media/add-machine-eval-lab-new.png" alt-text="Image de l’appareil ajouté avec les détails de connexion.":::
+    :::image type="content" source="../../media/add-machine-eval-lab-new.png" alt-text="L’appareil ajouté avec les détails de connexion" lightbox="../../media/add-machine-eval-lab-new.png":::
 
 4. La mise en place de l’appareil commence. Cela peut prendre jusqu’à 30 minutes environ.
 
 5. Consultez l’état des périphériques de test, les niveaux de risque et d’exposition, ainsi que l’état des installations de simulateur en sélectionnant **l’onglet Appareils** .
 
-    ![Image de l’onglet Appareils.](images/machines-tab.png)
+   :::image type="content" source="images/machines-tab.png" alt-text="Onglet Appareils" lightbox="images/machines-tab.png":::
+    
 
    > [!TIP]
    > Dans la colonne **État du** simulateur, vous pouvez pointer sur l’icône d’informations pour connaître l’état d’installation d’un agent.
@@ -162,7 +165,7 @@ Lorsque tous les appareils existants sont utilisés et supprimés, vous pouvez d
 
 1. Dans le tableau de bord du laboratoire d’évaluation, **sélectionnez Demander plus d’appareils**.
 
-   ![Image de demande pour plus d’appareils.](images/request-more-devices.png)
+   :::image type="content" source="images/request-more-devices.png" alt-text="Option Demander plus d’appareils" lightbox="images/request-more-devices.png":::
 
 2. Choisissez votre configuration.
 3. Envoyez la demande.
@@ -196,11 +199,10 @@ Si vous recherchez une simulation pré-réalisée, vous pouvez utiliser nos scé
 
 1. Connecter sur votre appareil et exécutez une simulation d’attaque en **sélectionnant Connecter**.
 
-    ![Image du bouton de connexion pour les périphériques de test.](images/test-machine-table.png)
+    :::image type="content" source="images/test-machine-table.png" alt-text="Bouton Connecter de test pour les périphériques de test" lightbox="images/test-machine-table.png":::
 
 
-2. Pour **Windows :** enregistrez le fichier RDP et lancez-le en **sélectionnant Connecter**.<br> 
-    ![Image de la connexion bureau à distance.](images/remote-connection.png)
+   :::image type="content" source="images/remote-connection.png" alt-text="Écran de connexion bureau à distance" lightbox="images/remote-connection.png":::
 
     Pour **les appareils Linux** : vous devez utiliser un client SSH local et la commande fournie. 
 
@@ -208,13 +210,13 @@ Si vous recherchez une simulation pré-réalisée, vous pouvez utiliser nos scé
     > [!NOTE]
     > Si vous n’avez pas de copie du mot de passe enregistrée lors de la configuration initiale, vous pouvez réinitialiser  le mot de passe en sélectionnant Réinitialiser le mot de passe dans le menu :
     >
-    > ![Image du mot de passe de réinitialisation.](images/reset-password-test-machine.png)
+    > :::image type="content" source="images/reset-password-test-machine.png" alt-text="Option Réinitialiser le mot de passe" lightbox="images/reset-password-test-machine.png":::
     >
     > L’appareil change son état en « Exécution de la réinitialisation du mot de passe », puis votre nouveau mot de passe vous sera présenté dans quelques minutes.
 
 3. Entrez le mot de passe qui a été affiché lors de l’étape de création de l’appareil.
 
-   ![Image de la fenêtre pour entrer les informations d’identification.](images/enter-password.png)
+   :::image type="content" source="images/enter-password.png" alt-text="Écran sur lequel vous entrez les informations d’identification" lightbox="images/enter-password.png":::
 
 4. Exécutez des simulations d’attaques par vous-même sur l’appareil.
 
@@ -235,7 +237,7 @@ L’exécution de simulations de menaces à l’aide de plateformes tierces est 
 
 2. Sélectionnez un simulateur de menaces.
 
-    ![Image de la sélection du simulateur de menaces.](images/select-simulator.png)
+   :::image type="content" source="images/select-simulator.png" alt-text="Sélection du simulateur de menaces" lightbox="images/select-simulator.png":::
 
 3. Choisissez une simulation ou parcourez la galerie de simulations pour parcourir les simulations disponibles.
 
@@ -249,7 +251,7 @@ L’exécution de simulations de menaces à l’aide de plateformes tierces est 
 
 6. Affichez la progression d’une simulation en sélectionnant **l’onglet Simulations** . Afficher l’état de simulation, les alertes actives et d’autres détails.
 
-    ![Image de l’onglet Simulations.](images/simulations-tab.png)
+   :::image type="content" source="images/simulations-tab.png" alt-text="Onglet Simulations" lightbox="images/simulations-tab.png":::
 
 Après avoir lancé vos simulations, nous vous encourageons à parcourir la barre de progression de l’atelier et à explorer **Microsoft Defender pour le** point de terminaison pour déclencher une investigation et une correction automatisées. Consultez les preuves collectées et analysées par la fonctionnalité.
 
@@ -265,21 +267,21 @@ Une liste d’agents de simulation de menace tiers pris en charge est répertori
 
 Vous pouvez facilement exécuter n’importe quelle simulation disponible directement à partir du catalogue.
 
-![Image du catalogue de simulations.](images/simulations-catalog.png)
+:::image type="content" source="images/simulations-catalog.png" alt-text="Catalogue de simulations" lightbox="images/simulations-catalog.png":::
 
 Chaque simulation est livré avec une description détaillée du scénario d’attaque et des références telles que les techniques d’attaque MITRE utilisées et des exemples de requêtes de recherche avancée que vous exécutez.
 
 **Exemples :**
 
-![Image de description de simulation détaillée1.](images/simulation-details-aiq.png)
+:::image type="content" source="images/simulation-details-aiq.png" alt-text="Exemple de volet de détails de description de simulation pour les méthodes de persistance" lightbox="images/simulation-details-aiq.png":::
 
-![Image de description de simulation détaillée2.](images/simulation-details-sb.png)
+:::image type="content" source="images/simulation-details-sb.png" alt-text="Détails de la description de simulation pour APT29" lightbox="images/simulation-details-sb.png":::
 
 ## <a name="evaluation-report"></a>Rapport d’évaluation
 
 Les rapports de laboratoire résument les résultats des simulations effectuées sur les appareils.
 
-![Image du rapport d’évaluation.](images/eval-report.png)
+:::image type="content" source="images/eval-report.png" alt-text="Rapport d’évaluation" lightbox="images/eval-report.png":::
 
 En un coup d’œil, vous pourrez rapidement voir :
 
@@ -296,4 +298,4 @@ Vos commentaires nous aident à mieux protéger votre environnement contre les a
 
 Faites-nous part de vos commentaires en sélectionnant **Fournir des commentaires**.
 
-![Image de commentaires.](images/send-us-feedback-eval-lab.png)
+:::image type="content" source="images/send-us-feedback-eval-lab.png" alt-text="Page de commentaires" lightbox="images/send-us-feedback-eval-lab.png":::

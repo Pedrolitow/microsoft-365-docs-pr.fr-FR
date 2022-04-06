@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: 59ebfb9ffb925cc5937802a31902e7c2342fc740
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: f8ffdcb817763589dfb43f7389bc44b7a28459f2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755661"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473054"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de déploiement zéro trust Microsoft 365
 
@@ -56,7 +56,7 @@ Microsoft 365 est conçue intentionnellement avec de nombreuses fonctionnalités
 Cette illustration représente le travail de déploiement des fonctionnalités de confiance zéro. Ce travail est divisé en unités de travail qui peuvent être configurées ensemble, en partant du bas et en travaillant jusqu’en haut pour s’assurer que le travail prérequis est terminé.
 
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-deployment-stack.png" alt-text="Pile de déploiement Microsoft 365 de confiance zéro" lightbox="../media/zero-trust/m365-zero-trust-deployment-stack.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-deployment-stack.png" alt-text="Pile de déploiement Microsoft 365 confiance zéro" lightbox="../media/zero-trust/m365-zero-trust-deployment-stack.png":::
 
 Dans cette illustration :
 - La confiance zéro commence par une base de protection des identités et des appareils. 
@@ -68,7 +68,7 @@ Dans cette illustration :
 La première étape consiste à créer votre base de confiance zéro en configurant la protection des identités et de l’accès aux appareils. 
 
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-1b.png" alt-text="Configurer la protection d’accès aux appareils et aux identités de confiance zéro" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-1b.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-1b.png" alt-text="Processus de configuration de la protection des identités et de l’accès aux appareils avec confiance zéro" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-1b.png":::
 
 
 
@@ -84,14 +84,14 @@ Accédez [**_à la protection d’accès_**](office-365-security/microsoft-365-p
 Commencez par implémenter le niveau de départ. Ces stratégies ne nécessitent pas l’inscription d’appareils à la gestion. 
 
 
-:::image type="content" source="../media/zero-trust/identity-access-starting-point-tier.png" alt-text="Stratégies d’accès aux identités et appareils de confiance zéro : niveau de départ" lightbox="../media/zero-trust/identity-access-starting-point-tier.png":::
+:::image type="content" source="../media/zero-trust/identity-access-starting-point-tier.png" alt-text="Stratégies d’accès aux identités et appareils de confiance zéro ( niveau de départ)" lightbox="../media/zero-trust/identity-access-starting-point-tier.png":::
 
 
 ## <a name="step-2-manage-endpoints-with-intune"></a>Étape 2. Gérer les points de terminaison avec Intune
 
 Ensuite, inscrivez vos appareils à la gestion et commencez à les protéger avec des contrôles plus sophistiqués. 
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-2.png" alt-text="Gérer les points de terminaison avec Intune" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-2.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-2.png" alt-text="Élément Gérer les points de terminaison avec Intune" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-2.png":::
 
 
 Go to [**_Manage devices with Intune_**](../solutions/manage-devices-with-intune-overview.md) for prescriptive guidance to accomplish this. 
@@ -110,13 +110,13 @@ Une fois les appareils inscrits à la gestion, vous pouvez désormais implément
 
 Revenir aux [**_stratégies communes d’accès aux_**](office-365-security/identity-access-policies.md) appareils et aux identités et ajouter les stratégies au Enterprise niveau.  
 
-:::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.png" alt-text="Stratégies d’accès et d’identité Enterprise confiance zéro ( niveau recommandé)" lightbox="../media/zero-trust/identity-access-enterprise-tier.png":::
+:::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.png" alt-text="Stratégies d’accès et d’identité de confiance zéro Enterprise niveau (recommandé)" lightbox="../media/zero-trust/identity-access-enterprise-tier.png":::
 
-## <a name="step-4-evaluate-pilot-and-deploy-microsoft-365-defender"></a>Étape 4. Évaluer, piloter et déployer des Microsoft 365 Defender
+## <a name="step-4-evaluate-pilot-and-deploy-microsoft-365-defender"></a>Étape 4. Évaluer, piloter et déployer des Microsoft 365 Defender
 
 Microsoft 365 Defender est une solution XDR (détection et réponse étendue) qui collecte, met en corrélation et analyse automatiquement les données de signal, de menace et d’alerte à partir de votre environnement Microsoft 365, y compris les points de terminaison, la messagerie électronique, les applications et les identités.
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="Ajout de Microsoft 365 Defender à l’architecture de confiance zéro" lightbox="../media/zero-trust/m365-zero-trust-architecture-defender.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="Processus d’ajout de Microsoft 365 Defender à l’architecture de confiance zéro" lightbox="../media/zero-trust/m365-zero-trust-architecture-defender.png":::
 
 Go to [**_Evaluate and pilot Microsoft 365 Defender_**](defender/eval-overview.md) for a methodical guide to piloting and deploying Microsoft 365 Defender components. 
 
@@ -132,13 +132,13 @@ Implémentez Microsoft Information Protection (MIP) pour vous permettre de déco
 Les fonctionnalités MIP sont incluses dans la Conformité Microsoft 365 et vous donnent les outils nécessaires pour vous permettre de connaître vos données, protéger vos données et éviter la perte de vos données.
 
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-info-protect.png" alt-text="Les fonctionnalités de protection des informations protègent les données par le biais de l’application de la stratégie" lightbox="../media/zero-trust/m365-zero-trust-architecture-info-protect.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-info-protect.png" alt-text="Fonctionnalités de protection des informations qui protègent les données par le biais de l’application de la stratégie" lightbox="../media/zero-trust/m365-zero-trust-architecture-info-protect.png":::
 
 Bien que ce travail soit représenté en haut de la pile de déploiement illustrée plus haut dans cet article, vous pouvez commencer ce travail à tout moment. 
 
 Protection des données Microsoft fournit une infrastructure, un processus et des fonctionnalités que vous pouvez utiliser pour atteindre vos objectifs métier spécifiques.
 
-:::image type="content" source="../media/zero-trust/mip-solution-overview.png" alt-text="Infrastructure Protection des données Microsoft de gestion" lightbox="../media/zero-trust/mip-solution-overview.png":::
+:::image type="content" source="../media/zero-trust/mip-solution-overview.png" alt-text="Infrastructure Protection des données Microsoft (MIP)" lightbox="../media/zero-trust/mip-solution-overview.png":::
 
 
 Pour plus d’informations sur la façon de planifier et de déployer la protection des informations, voir [**_Deploy a Protection des données Microsoft solution_**](../compliance/information-protection-solution.md). 

@@ -17,14 +17,16 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.technology: mde
 ms.topic: article
-ms.collection: m365initiative-m365-defender
+ms.collection:
+- m365initiative-m365-defender
+- M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 3f3daaa068f067c8d4ffbbf40a4d8ba1d32d04b9
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 53f338ec713038841ab5cc089c12cebf7fe46131
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766440"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680618"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>Vue d’ensemble des règles de réduction de la surface d’attaque
 
@@ -69,7 +71,7 @@ Le mode Avertissement aide votre organisation à mettre en place des règles de 
 
 ### <a name="requirements-for-warn-mode-to-work"></a>Conditions requises pour que le mode d’avertissement fonctionne
 
-Le mode Avertissement est pris en charge sur les appareils exécutant les versions suivantes de Windows :
+Le mode Avertissement est pris en charge sur les appareils exécutant les versions de Windows :
 
 - [Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809) ou ultérieure
 - Windows 11
@@ -133,7 +135,7 @@ Bien que les règles de réduction de la surface d’attaque ne nécessitent [Wi
 
 Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows Professional ou Windows E3. Toutefois, si vous avez ces licences, vous pouvez utiliser l’Observateur d’événements et les journaux Antivirus Microsoft Defender pour passer en revue vos événements de règle de réduction de la surface d’attaque.
 
-## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>Passer en revue les événements de réduction de la surface d’Microsoft 365 Defender d’attaque
+## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>Passer en revue les événements de réduction de la surface d’attaque dans le Microsoft 365 Defender d’attaque
 
 Defender pour le point de terminaison fournit des rapports détaillés pour les événements et les blocages dans le cadre de scénarios d’investigation d’alerte.
 
@@ -146,7 +148,7 @@ DeviceEvents
 | where ActionType startswith 'Asr'
 ```
 
-## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Passer en revue les événements de réduction de la surface d’Windows l’Observateur d’événements
+## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Passer en revue les événements de réduction de la surface d’Windows dans l’Observateur d’événements
 
 Vous pouvez consulter le journal Windows événements pour afficher les événements générés par les règles de réduction de la surface d’attaque :
 

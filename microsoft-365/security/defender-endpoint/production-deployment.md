@@ -1,7 +1,7 @@
 ---
 title: Configurer Microsoft Defender pour le déploiement de point de terminaison
 description: Découvrez comment configurer le déploiement de Microsoft Defender pour Endpoint
-keywords: 'déployer, configuration, validation de licence, configuration du client, configuration réseau'
+keywords: déployer, configuration, validation de licence, configuration du client, configuration réseau
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,14 +12,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365solution-endpointprotect
-  - m365solution-scenario
+- M365-security-compliance
+- m365solution-endpointprotect
+- m365solution-scenario
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
+ms.openlocfilehash: 8e905db8ba5e868a9913c785bd7f9bc0cc67b39a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472680"
 ---
-
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurer Microsoft Defender pour le déploiement de point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -33,7 +38,7 @@ ms.technology: mde
 
 Le déploiement de Defender pour endpoint est un processus en trois phases :
 
-|[![phase de déploiement : préparer.](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Phase 1 : préparation](prepare-deployment.md) | ![phase de déploiement : configuration](images/phase-diagrams/setup.png)<br>Phase 2 : configuration | [![phase de déploiement : intégration](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Phase 3 : intégration](onboarding.md)|
+|[![phase de déploiement : préparer.](images/phase-diagrams/prepare.png#lightbox)](prepare-deployment.md)<br>[Phase 1 : préparation](prepare-deployment.md) | ![phase de déploiement : configuration](images/phase-diagrams/setup.png#lightbox)<br>Phase 2 : configuration | [![phase de déploiement : intégration](images/phase-diagrams/onboard.png#lightbox)](onboarding.md)<br>[Phase 3 : intégration](onboarding.md)|
 |---|---|---|
 ||*Vous êtes là !*||
 
@@ -43,24 +48,24 @@ Dans ce scénario de déploiement, vous serez guidé dans les étapes suivantes 
 
 - Validation des licences
 - Configuration du client
-- Configuration du réseau
+- Configuration réseau
 
 > [!NOTE]
 > Pour vous guider tout au long d’un déploiement classique, ce scénario couvre uniquement l’utilisation des Microsoft Endpoint Configuration Manager. Defender pour le point de terminaison prend en charge l’utilisation d’autres outils d’intégration, mais ne couvre pas ces scénarios dans le guide de déploiement. Pour plus d’informations, [voir Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md).
 
 ## <a name="check-license-state"></a>Vérifier l’état de la licence
 
-La vérification de l’état de la licence et si elle a été correctement mise en service peut être effectuée par le biais du Centre d’administration ou **du Microsoft Azure web**.
+La vérification de l’état de la licence et si elle a été correctement mise en service peut être effectuée via le Centre d’administration ou par le biais **Microsoft Azure portail.**
 
 1. Pour afficher vos licences, accédez au portail **Microsoft Azure et** accédez à la [section Microsoft Azure licences du portail.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)
 
-   ![Image de la page Gestion des licences Azure.](images/atp-licensing-azure-portal.png)
+   :::image type="content" source="images/atp-licensing-azure-portal.png" alt-text="Page Gestion des licences Azure" lightbox="images/atp-licensing-azure-portal.png":::
 
 1. Vous pouvez également accéder aux abonnements de facturation dans  le Centre \> **d’administration**.
 
     Sur l’écran, vous verrez toutes les licences provisionées et leur état **actuel**.
 
-    ![Image des licences de facturation.](images/atp-billing-subscriptions.png)
+    :::image type="content" source="images/atp-billing-subscriptions.png" alt-text="Page Licences de facturation" lightbox="images/atp-billing-subscriptions.png":::
 
 ## <a name="cloud-service-provider-validation"></a>Validation du fournisseur de services Cloud
 
@@ -70,7 +75,7 @@ Pour accéder aux licences qui sont provisionn es pour votre entreprise et pour 
 
 2. En cliquant sur le **lien du portail** partenaire, l’option **Administrateur** de la part de s’ouvre et vous donne accès au Centre d’administration du client.
 
-   ![Image du portail d’administration O365.](images/atp-O365-admin-portal-customer.png)
+   :::image type="content" source="images/atp-O365-admin-portal-customer.png" alt-text="Le portail Office 365'administration de l’utilisateur" lightbox="images/atp-O365-admin-portal-customer.png":::
 
 ## <a name="tenant-configuration"></a>Configuration du client
 
@@ -81,7 +86,7 @@ L’intégration à Microsoft Defender pour le point de terminaison est facile. 
 ## <a name="data-center-location"></a>Emplacement du centre de données
 Microsoft Defender pour le point de terminaison stockera et traitera les données au même emplacement [que celui](/microsoft-365/security/defender/m365d-enable) utilisé par Microsoft 365 Defender. Si Microsoft 365 Defender n’a pas encore été désactivé, l’intégration à Microsoft Defender pour le point de terminaison active également Microsoft 365 Defender et un nouvel emplacement de centre de données est automatiquement sélectionné en fonction de l’emplacement des services de sécurité Microsoft 365 actifs. L’emplacement du centre de données sélectionné est affiché à l’écran.
 
-## <a name="network-configuration"></a>Configuration du réseau
+## <a name="network-configuration"></a>Configuration réseau
 
 Si l’organisation n’exige pas que les points de terminaison utilisent un proxy pour accéder à Internet, ignorez cette section.
 
@@ -110,13 +115,13 @@ Configurez un proxy statique basé sur le Registre pour autoriser uniquement le 
 2. Créez une stratégie ou modifiez une stratégie existante en fonction des pratiques organisationnelles.
 3. Modifiez la stratégie de groupe et accédez à **Modèles \> d’administration Windows Collection de données des composants et Builds \> d’aperçu Configurer l’utilisation du proxy authentifié pour le service Expériences des utilisateurs connectés \>** et télémétrie.
 
-   ![Image de la configuration de la stratégie de groupe.](images/atp-gpo-proxy1.png)
+   :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="Options relatives à la configuration de la stratégie d’utilisation" lightbox="images/atp-gpo-proxy1.png":::
 
 4. Sélectionnez **Activé**.
 5. **Sélectionnez Désactiver l’utilisation du proxy authentifié**.
-6. Accédez **à Modèles \> d’administration Windows collection de données des composants \> et builds d’aperçu Configurez les expériences \> utilisateur connectées et la télémétrie**.
+6. Accédez **à Modèles \> d’administration Windows collecte de données des composants \> et prévisualisation Permet de configurer les expériences \> utilisateur connectées et la télémétrie**.
 
-    ![Image du paramètre de configuration de la stratégie de groupe.](images/atp-gpo-proxy2.png)
+   :::image type="content" source="images/atp-gpo-proxy2.png" alt-text="Options relatives à la configuration de l’expérience utilisateur connectée et de la télémétrie" lightbox="images/atp-gpo-proxy2.png":::
 
 7. Sélectionnez **Activé**.
 8. Entrez le **nom du serveur proxy**.
@@ -160,7 +165,7 @@ Down-Level comprennent les stations de travail Windows 7 SP1 et Windows 8.1, ai
 
 ### <a name="proxy-service-urls"></a>URL de service proxy
 
-Les URL qui incluent v20 sont nécessaires uniquement si vous avez Windows 10, version 1803 ou Windows 11 périphériques. Par exemple, n’est `us-v20.events.data.microsoft.com` nécessaire que si l’appareil est Windows 10 version 1803 ou Windows 11.
+Les URL qui incluent la version 20 sont nécessaires uniquement si vous avez Windows 10, version 1803 ou Windows 11 périphériques. Par exemple, n’est `us-v20.events.data.microsoft.com` nécessaire que si l’appareil est Windows 10 version 1803 ou Windows 11.
 
 Si un proxy ou un pare-feu bloque le trafic anonyme, comme le capteur Microsoft Defender pour point de terminaison se connecte à partir du contexte système, assurez-vous que le trafic anonyme est autorisé dans les URL répertoriées.
 
@@ -173,10 +178,9 @@ La feuille de calcul téléchargeable suivante répertorie les services et les U
 
 |Liste de feuilles de calcul de domaines| Description|
 |---|---|
-|Liste d’URL Microsoft Defender pour les points de terminaison pour les clients commerciaux | Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation pour les clients commerciaux. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Liste d’URL Microsoft Defender pour les points de terminaison pour les clients Gov/Cloud de la communauté du secteur public/DoD| Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation pour les clients Gov/Cloud de la communauté du secteur public/DoD. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+|:::image type="content" source="images/mdatp-urls.png" alt-text="Feuille de calcul URL Microsoft Defender pour les points de terminaison" lightbox="images/mdatp-urls.png":::|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |
 
 ## <a name="next-step"></a>Étape suivante
 
-![**Phase 3 : Intégration**.](images/onboard.png) <br> [Phase 3 : Intégration :](onboarding.md) intégrer des appareils au service afin que le service Microsoft Defender pour point de terminaison puisse obtenir des données de capteur à partir de ces derniers.
+[![**Phase 3 : Intégration**.](images/onboard.png#lightbox)] <br> [Phase 3 : Intégration :](onboarding.md) intégrer des appareils au service afin que le service Microsoft Defender pour point de terminaison puisse obtenir des données de capteur à partir de ces derniers.

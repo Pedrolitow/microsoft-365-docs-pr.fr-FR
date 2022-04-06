@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 08d15cacdd6b391759aeb1a22abd91c98376cd17
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 36df54090e80de180ffa16f41641daa6b6966eb9
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321752"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681323"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Stratégies courantes d’accès aux appareils et aux identités de confiance zéro
 
@@ -67,7 +67,6 @@ Pour vous donner le temps d’effectuer ces tâches, nous vous recommandons d’
 ||[Définir des stratégies de conformité des appareils](#define-device-compliance-policies)|Une stratégie pour chaque plateforme.|Microsoft 365 E3 ou E5|
 ||[Exiger des PC et des appareils mobiles conformes](#require-compliant-pcs-and-mobile-devices)|Applique la gestion Intune pour les PC (Windows ou macOS) et les téléphones ou tablettes (iOS, iPadOS ou Android).|Microsoft 365 E3 ou E5|
 |**Sécurité spécialisée**|[*Toujours exiger* l’mf d’fa](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 ou E5|
-|
 
 ## <a name="assigning-policies-to-groups-and-users"></a>Attribution de stratégies à des groupes et des utilisateurs
 
@@ -112,14 +111,13 @@ Les tableaux suivants décrivent les paramètres de stratégie d’accès condit
 
 Dans la section **Affectations** :
 
-|Setting|Propriétés|Valeurs|Remarques|
+|Paramètre|Propriétés|Valeurs|Remarques|
 |---|---|---|---|
 |Utilisateurs et groupes|Inclure|**Sélectionnez utilisateurs et groupes > utilisateurs et groupes** : sélectionnez des groupes spécifiques contenant des comptes d’utilisateurs ciblés.|Commencez par le groupe qui inclut les comptes d’utilisateurs pilotes.|
 ||Exclure|**Utilisateurs et groupes** : sélectionnez votre groupe d’exceptions d’accès conditionnel . comptes de service (identités d’application).|L’appartenance doit être modifiée selon les besoins, de manière temporaire.|
 |Applications ou actions cloud|**Applications cloud > Include**|**Sélectionnez les** applications : sélectionnez les applications à appliquer à cette stratégie. Par exemple, sélectionnez Exchange Online.||
 |Conditions|||Configurez des conditions spécifiques à votre environnement et à vos besoins.|
 ||Risque de connexion||Consultez les instructions du tableau suivant.|
-|
 
 ### <a name="sign-in-risk-condition-settings"></a>Paramètres de condition de risque de la signature
 
@@ -130,16 +128,14 @@ Appliquez les paramètres de niveau de risque en fonction du niveau de protectio
 |Point de départ|Élevé, moyen|Vérifiez les deux.|
 |Entreprise|Élevé, moyen, faible|Vérifiez les trois.|
 |Sécurité spécialisée||Laissez toutes les options désactivées pour toujours appliquer l’personnalisation MFA.|
-|
 
 Dans la section **Contrôles d’accès** :
 
-|Setting|Propriétés|Valeurs|Action|
+|Paramètre|Propriétés|Valeurs|Action|
 |---|---|---|---|
 |Accorder|**Grant access**||Sélectionner|
 |||**Exiger l’authentification multifacteur**|Chèque|
 ||**Demander tous les contrôles sélectionnés**||Sélectionner|
-|
 
 **Sélectionnez Sélectionner** pour enregistrer les **paramètres d’octroi**.
 
@@ -155,21 +151,19 @@ Utilisez les paramètres de ces tableaux pour une stratégie d’accès conditio
 
 Dans la section **Affectations** :
 
-|Setting|Propriétés|Valeurs|Remarques|
+|Paramètre|Propriétés|Valeurs|Remarques|
 |---|---|---|---|
 |Utilisateurs et groupes|Inclure|**Sélectionnez utilisateurs et groupes > utilisateurs et groupes** : sélectionnez des groupes spécifiques contenant des comptes d’utilisateurs ciblés.|Commencez par le groupe qui inclut les comptes d’utilisateurs pilotes.|
 ||Exclure|**Utilisateurs et groupes** : sélectionnez votre groupe d’exceptions d’accès conditionnel . comptes de service (identités d’application).|L’appartenance doit être modifiée selon les besoins, de manière temporaire.|
 |Applications ou actions cloud|**Applications cloud > Include**|**Sélectionnez des applications** : sélectionnez les applications correspondant aux clients qui ne permettent pas l’authentification moderne.||
 |Conditions|**Applications clientes**|Choisir **Oui** pour **configurer** <p> Effacer les coches pour les **applications** mobiles **et de navigateur et les clients de bureau**||
-|
 
 Dans la section **Contrôles d’accès** :
 
-|Setting|Propriétés|Valeurs|Action|
+|Paramètre|Propriétés|Valeurs|Action|
 |---|---|---|---|
 |Accorder|**Bloquer l’accès**||Sélectionner|
 ||**Demander tous les contrôles sélectionnés**||Sélectionner|
-|
 
 **Sélectionnez Sélectionner** pour enregistrer les **paramètres d’octroi**.
 
@@ -191,7 +185,6 @@ Dans la section **Affectations** :
 |---|---|---|---|
 |Utilisateurs|Inclure|**Tous les utilisateurs**|Sélectionner|
 |Risque de l’utilisateur|**High**||Sélectionner|
-|
 
 Dans la deuxième section **Affectations** :
 
@@ -199,7 +192,6 @@ Dans la deuxième section **Affectations** :
 |---|---|---|---|
 |Access|**Autoriser l’accès**||Sélectionner|
 |||**Exiger le changement du mot de passe**|Chèque|
-|
 
 Choisissez **Terminé** pour enregistrer les **paramètres Access** .
 
@@ -223,12 +215,11 @@ Pour afficher les recommandations spécifiques pour chaque niveau de configurati
 
 À l’aide des principes décrits dans les configurations d’accès aux identités et aux appareils avec confiance zéro, les [niveaux](microsoft-365-policies-configurations.md) de protection de point de départ et de Enterprise sont étroitement mapés avec les paramètres de protection des données améliorés d’entreprise de niveau 2. Le niveau de protection de la sécurité spécialisé est étroitement map avec les paramètres de protection des données élevées d’entreprise de niveau 3.
 
-|Niveau de protection|Stratégie de protection des applications|Informations supplémentaires|
+|Niveau de protection|Stratégie de protection des applications|Plus d’informations|
 |---|---|---|
 |Point de départ|[Protection améliorée des données de niveau 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.|
 |Entreprise|[Protection améliorée des données de niveau 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.|
 |Sécurité spécialisée|[Niveau 3 de protection des données d’entreprise élevé](/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|Les paramètres de stratégie appliqués au niveau 3 incluent tous les paramètres de stratégie recommandés pour les niveaux 1 et 2 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 2.|
-|
 
 Pour créer une stratégie de protection des applications pour chaque plateforme (iOS et Android) dans Microsoft Endpoint Manager à l’aide des paramètres de l’infrastructure de protection des données, vous pouvez :
 
@@ -309,7 +300,7 @@ Pour les appareils supervisés :
 
 À l’aide des principes décrits dans les configurations d’accès aux identités et aux appareils Avec confiance zéro, les [niveaux](microsoft-365-policies-configurations.md) de protection de point de départ et de Enterprise sont étroitement mapés avec les paramètres de sécurité améliorés de niveau 2. Le niveau de protection de la sécurité spécialisé est étroitement map avec les paramètres de sécurité élevés de niveau 3.
 
-|Niveau de protection  |Stratégie d’appareil |Informations supplémentaires  |
+|Niveau de protection  |Stratégie d’appareil |Plus d’informations  |
 |---------|---------|---------|
 |Point de départ     |Sécurité renforcée (niveau 2)         |Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.         |
 |Entreprise     |Sécurité renforcée (niveau 2)         |Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.         |
@@ -341,10 +332,10 @@ Pour les appareils Android Entreprise entièrement gérés :
 
 Pour les appareils Enterprise profils de travail Android :
 
-|Niveau de protection  |Stratégie d’appareil |Informations supplémentaires  |
+|Niveau de protection  |Stratégie d’appareil |Plus d’informations  |
 |---------|---------|---------|
-|Point de départ     |Profil professionnel : sécurité de base (niveau 1)      |N/A         |
-|Entreprise     |Profil professionnel : sécurité de base (niveau 1)         |N/A         |
+|Point de départ     |Profil professionnel : sécurité de base (niveau 1)      |S/O         |
+|Entreprise     |Profil professionnel : sécurité de base (niveau 1)         |S/O         |
 |Point de départ     |Gestion complète : sécurité renforcée (niveau 2)       |Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.         |
 |Entreprise     |Gestion complète : sécurité renforcée (niveau 2)         |Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.         |
 |Sécurité spécialisée     |Haute sécurité (Niveau 3)         |Les paramètres de stratégie appliqués au niveau 3 incluent tous les paramètres de stratégie recommandés pour les niveaux 1 et 2 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 2.         |
@@ -362,7 +353,6 @@ Pour plus **d'> Windows d’évaluation du service d’attestation** d’état d
 |Exiger BitLocker|Require (Rendre obligatoire)|Sélectionner|
 |Exiger que le démarrage sécurisé soit activé sur l’appareil|Require (Rendre obligatoire)|Sélectionner|
 |Exiger l’intégrité du code|Require (Rendre obligatoire)|Sélectionner|
-|
 
 Pour les **propriétés d’appareil**, spécifiez les valeurs appropriées pour les versions de système d’exploitation en fonction de vos stratégies informatiques et de sécurité.
 
@@ -388,14 +378,12 @@ Pour **la sécurité du** système, consultez ce tableau.
 ||Version minimale du logiciel anti-programme malveillant Microsoft Defender||Type <p> Uniquement pris en charge pour Windows 10 bureau. Microsoft recommande de ne pas avoir plus de cinq versions en retard par rapport à la version la plus récente.|
 ||Signature du logiciel anti-programme malveillant Microsoft Defender à jour|Require (Rendre obligatoire)|Sélectionner|
 ||Protection en temps réel|Require (Rendre obligatoire)|Sélectionner <p> Uniquement pris en charge pour Windows 10 et les ordinateurs de bureau ultérieurs|
-|
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 
 |Type|Propriétés|Valeur|Action|
 |---|---|---|---|
 |Règles Microsoft Defender pour les points de terminaison dans le Centre d Microsoft Endpoint Manager’administration Microsoft Defender|[Exiger que l’appareil soit au niveau ou sous le score de risque de l’ordinateur](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Moyen|Sélectionner|
-|
 
 <!--
 ## Require compliant PCs (but not compliant phones and tablets)

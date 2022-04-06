@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 search.appverid:
@@ -18,13 +18,13 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Résumé : Utilisez PowerShell pour créer de nouveaux sites SharePoint Online, puis ajoutez des utilisateurs et des groupes à ces sites.'
-ms.openlocfilehash: 76411621c0c313a31e4c92417b4472d6fd34ddac
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 'Résumé : Utilisez PowerShell pour créer des sites SharePoint Online, puis ajouter des utilisateurs et des groupes à ces sites.'
+ms.openlocfilehash: 95bd3fb5647a5c6680fd9a07ebdf45e106acb095
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152681"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681367"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>Création de sites SharePoint Online et ajout d’utilisateurs avec PowerShell
 
@@ -34,7 +34,7 @@ Lorsque vous utilisez PowerShell pour Microsoft 365 pour créer des sites ShareP
 
 ## <a name="connect-to-sharepoint-online"></a>Se connecter à SharePoint Online
 
-Les procédures de cette rubrique exigent que vous vous connectiez à SharePoint Online. Pour obtenir des instructions, [voir Connecter pour SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+Les procédures de cette rubrique exigent que vous vous connectiez à SharePoint Online. Pour obtenir des instructions, [voir Connecter to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 ## <a name="step-1-create-new-site-collections-using-powershell"></a>Étape 1 : Créer des collections de sites à l’aide de PowerShell
 
@@ -57,7 +57,7 @@ L’cmdlet PowerShell importe le fichier .csv et le dirige vers une boucle entre
    owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01,25,COMMUNITY#0,10,Community Site
    ```
 
-   Où *le client* est le  nom de votre client et le propriétaire est le nom d’utilisateur de l’utilisateur sur votre client auquel vous souhaitez accorder le rôle d’administrateur principal de collection de sites.
+   Où *le client* est le nom de votre client et  le propriétaire est le nom d’utilisateur de l’utilisateur sur votre client auquel vous souhaitez accorder le rôle d’administrateur principal de collection de sites.
 
    (Vous pouvez appuyer sur Ctrl+H lorsque vous utilisez Bloc-notes pour un remplacement en bloc plus rapide.)
 
@@ -84,7 +84,7 @@ L’cmdlet PowerShell importe le fichier .csv et le dirige vers une boucle entre
    Get-SPOSite -Detailed | Format-Table -AutoSize
    ```
 
-4. Notez les nouvelles collections de sites dans la liste. À l’aide de notre exemple de fichier CSV, vous verrez les collections de sites suivantes : **TeamSite01,** **Blog01,** **Project01** et **Community01**
+4. Notez les nouvelles collections de sites dans la liste. À l’aide de notre exemple de fichier CSV, vous verrez les collections de sites suivantes : **TeamSite01**, **Blog01**, **Project01** et **Community01**
 
 C’est fait. Vous avez créé plusieurs collections de sites à l’aide .csv fichier que vous avez créé et d’Windows PowerShell commande unique. Vous êtes maintenant prêt à créer et à affecter des utilisateurs à ces sites.
 
@@ -128,7 +128,7 @@ Les procédures suivantes continuent à utiliser les exemples de sites TeamSite0
    Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Project01
    ```
 
-   Où *le client* est égal à votre nom de client et le nom *d’utilisateur* est égal au nom d’utilisateur d’un utilisateur existant.
+   Où *le client* est égal à votre nom de client et *le nom d’utilisateur* est égal au nom d’utilisateur d’un utilisateur existant.
 
 4. Enregistrez le fichier sur votre bureau sous **Users.csv**.
 
@@ -155,7 +155,7 @@ Vous êtes maintenant prêt à exécuter le script UsersAndGroup.ps1 pour ajoute
    Set-ExecutionPolicy Bypass
    ```
 
-3. À l’invite de confirmation, appuyez **sur Y**.
+3. À l’invite de confirmation, appuyez sur **Y**.
 
 4. À l’invite de Windows PowerShell, saisissez ou copiez-collez ce qui suit, puis appuyez sur Entrée :
 

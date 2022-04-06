@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment appliquer une étiquette de confidentialité à un modèle dans SharePoint Syntex.
-ms.openlocfilehash: 624b441084b418d2bcfc3ab6b623da0f5a969fe8
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 189db9314e01a52618890daf6b0e5d4e81317de9
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61521113"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681697"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>Appliquer une étiquette de confidentialité à un modèle dans Microsoft SharePoint Syntex
 
@@ -26,7 +26,7 @@ Vous pouvez facilement appliquer une [étiquette de confidentialité](../complia
 
 Les étiquettes de niveau de sensibilité vous permet d’appliquer le chiffrement aux documents identifiés par vos modèles. Par exemple, vous souhaitez que votre modèle identifie non seulement les documents financiers qui contiennent des numéros de compte bancaire ou de carte de crédit téléchargés vers votre bibliothèque de documents, mais également qu’il applique une étiquette de niveau de sensibilité configurée avec des paramètres de chiffrement afin de restreindre l’accès à ce contenu et la façon dont il peut être utilisé. Les modèles SharePoint Syntex respectent les règles [d'ordre des étiquettes](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) et n'écrasent pas non plus une étiquette existante qui a été appliquée manuellement par un utilisateur au fichier. 
 
-Vous pouvez appliquer une étiquette de confidentialité préexistante à votre modèle via les paramètres du modèle sur la page d’accueil de celui-ci. L’étiquette doit déjà être publiée pour pouvoir être sélectionnée dans les paramètres du modèle.
+Vous pouvez appliquer une étiquette de confidentialité préexistante à votre modèle via les paramètres du modèle sur la page d’accueil de celui-ci. L’étiquette doit déjà être publiée pour pouvoir être sélectionnée dans les paramètres du modèle. Les étiquettes s’appliquent aux Office pour Word (.docx), PowerPoint (.pptx) et Excel (.xlsx). 
 
 > [!Important]
 > Pour que les étiquettes de niveau de confidentialité soient disponibles et s’appliquent à votre modèle de compréhension de document, elles doivent être [créées et publiées dans le Centre de conformité Microsoft 365](../admin/security-and-compliance/set-up-compliance.md).

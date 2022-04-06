@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-solutions
 ms.localizationpriority: medium
 search.appverid:
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Pour les adresses IP de destination et les URL pour le trafic Microsoft 365, utilisez cette liste d’articles pour les points de terminaison Internet des différents Microsoft 365 nuages.
-ms.openlocfilehash: ba2cb102bfee3ab49a563b0816b754788dec1015
-ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
+ms.openlocfilehash: 29b9d720209eee66103ceca9384fc8d18c1621ae
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61566650"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681543"
 ---
 # <a name="microsoft-365-endpoints"></a>Points de terminaison Microsoft 365
 
@@ -46,7 +46,7 @@ Il existe actuellement cinq nuages Microsoft 365 différents. Ce tableau vous pe
 | [Microsoft 365 gérés par les points de terminaison 21Vianet](urls-and-ip-address-ranges-21vianet.md) | Les points de terminaison Microsoft 365 gérés par 21Vianet, conçus pour répondre aux besoins des Microsoft 365 en Chine. |
 |||
 
-Pour automatiser l’obtention de la dernière liste de points de terminaison pour votre cloud Microsoft 365, consultez l’adresse IP Office 365 le [service Web d’URL.](microsoft-365-ip-web-service.md)
+Pour automatiser l’obtention de la dernière liste de points de terminaison pour votre cloud Microsoft 365, consultez l’adresse IP Office 365 le [service Web d’URL](microsoft-365-ip-web-service.md).
 
 Pour plus de points de terminaison, voir les articles suivants :
 

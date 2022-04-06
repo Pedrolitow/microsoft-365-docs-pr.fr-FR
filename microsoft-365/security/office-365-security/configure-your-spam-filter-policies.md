@@ -18,12 +18,12 @@ ms.custom: ''
 description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1ac240f402d230362cb33ea818e62c1e0629eb39
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.openlocfilehash: 8550d55553b1c406fa21ce362e201a8bbe3d5aea
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "62909746"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681301"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection
 
@@ -32,7 +32,7 @@ ms.locfileid: "62909746"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Dans les organisations Microsoft 365 ayant des boîtes aux lettres dans Exchange Online ou dans les organisations ayant Exchange Online Protection autonome (EOP) dépourvu de boîtes aux lettres Exchange Online, les courriers électroniques entrants sont automatiquement protégés contre le courrier indésirable par EOP. EOP utilise les stratégies anti-courrier indésirable (également appelées stratégies de filtrage de courrier indésirable ou stratégies de filtrage de contenu) dans le cadre de la défense globale de votre organisation contre le courrier indésirable. Pour plus d’informations, voir [Protection contre le courrier indésirable](anti-spam-protection.md).
 
@@ -80,8 +80,8 @@ Pour améliorer l’efficacité du filtrage du courrier indésirable, vous pouve
 
 - Si vous souhaitez connaître les paramètres recommandés pour l’utilisation des stratégies anti-courrier indésirable, veuillez consulter la section [Paramètres de stratégie anti-courrier indésirable EOP](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
-- Vous ne pouvez pas désactiver complètement le filtrage du courrier indésirable, mais vous pouvez utiliser une règle de flux de messagerie (également appelée règle de transport) pour contourner la plupart du filtrage du courrier indésirable sur les messages entrants (par exemple, si vous routez le courrier électronique via un service ou un appareil de protection tiers avant la remise à Microsoft 365). Pour plus d’informations, consultez [Utiliser des règles de flux de messagerie pour définir le niveau de probabilité de courrier indésirable (SCL) dans les messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
-  - Les messages d’hameçonnage à haut niveau de confiance sont toujours filtrés. Les autres fonctionnalités d’EOP ne sont pas affectées (par exemple, les messages sont toujours analysés pour détecter les programmes malveillants).
+- Vous ne pouvez pas désactiver complètement le filtrage anti-spam, mais vous pouvez utiliser une règle de flux de courrier (également appelée règle de transport) pour contourner la plupart des filtres anti-spam sur les messages entrants (par exemple, si vous acheminez le courrier électronique via un service ou un périphérique de protection tiers avant la livraison à Microsoft 365). Pour plus d'informations, voir [Utiliser les règles de flux de messagerie pour définir le niveau de confiance du spam (SCL) dans les messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+  - Les messages de phishing à haut niveau de confiance sont toujours filtrés. Les autres fonctionnalités d'EOP ne sont pas affectées (par exemple, les messages sont toujours analysés pour détecter les logiciels malveillants).
   - Si vous devez contourner le filtrage du courrier indésirable pour les boîtes aux lettres SecOps ou les simulations d’hameçonnage, n’utilisez pas de règles de flux de messagerie. Pour plus d’informations, consultez [Configurer la remise de simulations d’hameçonnage tierces aux utilisateurs et de messages non filtrés aux boîtes aux lettres SecOps](configure-advanced-delivery.md).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-anti-spam-policies"></a>Utiliser le Portail Microsoft 365 Defender pour créer des stratégies anti-courrier indésirable
@@ -148,10 +148,6 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
      - Une coche ( ![Marque de vérification.](../../media/checkmark.png)) indique que l’action est disponible (toutes les actions ne sont pas disponibles pour les verdicts).
      - Un astérisque ( <sup>\*</sup> ) après la coche indique l’action par défaut pour le verdict de filtrage du courrier indésirable.
 
-     <br>
-
-     ****
-
      |Action|Courrier indésirable|Élevé<br>confiance<br>courrier indésirable|Hameçonnage|Élevé<br>confiance<br>hameçonnage|Courrier en nombre|
      |---|:---:|:---:|:---:|:---:|:---:|
      |**Déplacer le message vers le dossier Courrier indésirable**: le message est remis dans la boîte aux lettres et déplacé vers le dossier Courrier indésirable.<sup>1</sup>|![Marque de vérification](../../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../../media/checkmark.png)<sup>\*</sup>|![Marque de vérification.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)<sup>\*</sup>|
@@ -161,7 +157,6 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
      |**Supprimer le message**: supprime le message entier, pièces jointes comprises.|![Marque de vérification.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)||![Coche](../../media/checkmark.png)|
      |**Mettre en quarantaine le message**: Envoie le message en quarantaine au lieu de le remettre à ses destinataires. <p> Vous pouvez spécifier la durée de la mise en quarantaine ultérieure du message dans la boîte de dialogue de la mise en **Quarantaine**. <p> Vous spécifiez la [stratégie de quarantaine](quarantine-policies.md) qui s'applique aux messages mis en quarantaine pour le verdict du filtre anti-spam dans la zone **Sélectionner une stratégie** qui s'affiche. Pour plus d'informations, voir [Stratégies de quarantaine](quarantine-policies.md).<sup>3</sup>|![Coche.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)<sup>\*</sup>|![Coche](../../media/checkmark.png)<sup>\*</sup>|![Coche](../../media/checkmark.png)|
      |**Aucune action**|||||![Coche](../../media/checkmark.png)|
-     |
 
      > <sup>1</sup> EOP utilise désormais son propre agent de distribution de flux de messagerie pour acheminer les messages vers le dossier Courrier indésirable au lieu d'utiliser la règle de courrier indésirable. Le paramètre _Enabled_ de la cmdlet **Set-MailboxJunkEmailConfiguration** n'a plus d'effet sur le flux de messagerie. Pour plus d’informations, voir [Configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).
      >
@@ -200,7 +195,7 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
      - **Activer ZAP pour les courriers indésirables** : par défaut, l’option ZAP est activée pour les détections de courrier indésirable, mais vous pouvez la désactiver en désactivant la case à cocher.
 
    > [!NOTE]
-   > Les notifications de courrier indésirable de l’utilisateur final ont été remplacées par les notifications de mise en quarantaine dans les _stratégies_ de mise en quarantaine. Les notifications de mise en quarantaine contiennent des informations sur les messages mis en quarantaine pour toutes les fonctionnalités de protection prise en charge (pas seulement les verdicts de stratégie anti-courrier indésirable et anti-hameçonnage). Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
+   > Les notifications de spam de l'utilisateur final ont été remplacées par des _notifications de quarantaine_ dans les politiques de quarantaine. Les notifications de quarantaine contiennent des informations sur les messages mis en quarantaine pour toutes les fonctionnalités de protection prises en charge (pas seulement les verdicts des politiques anti-spam et anti-phishing). Pour plus d'informations, voir [Politiques de quarantaine](quarantine-policies.md).
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -356,7 +351,7 @@ La création d’une stratégie anti-courrier indésirable dans PowerShell est u
 1. Créez la stratégie de filtrage du courrier indésirable.
 2. Créez la règle de filtrage du courrier indésirable qui spécifie la stratégie de filtrage du courrier indésirable à laquelle la règle s’applique.
 
- **Remarques** :
+ **Remarques** :
 
 - Vous pouvez créer une règle de filtrage de courrier indésirable et lui affecter une stratégie de filtrage de courrier indésirable existante, non associée. Une règle de filtrage anti-courrier indésirable ne peut pas être associée à plusieurs stratégies de filtrage de courrier indésirable.
 - Vous pouvez configurer les paramètres suivants sur les nouvelles stratégies de filtrage anti-courrier indésirable dans PowerShell qui ne sont pas disponibles dans le Portail Microsoft 365 Defender tant que vous n’avez pas créé la stratégie :

@@ -15,12 +15,12 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c955ab15640a8c3154e14ba0201946e109f832a9
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 48a411d836669a47479daa68a83a96c3e65b949f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807379"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473230"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activer Bloquer à la première consultation
 
@@ -50,7 +50,7 @@ Lorsque l’Antivirus Microsoft Defender rencontre un fichier suspect, mais non 
 
 L’Antivirus Microsoft Defender utilise plusieurs technologies de prévention et de détection pour fournir une protection exacte, intelligente et en temps réel.
 
-![Liste des moteurs AV de Microsoft Defender.](images/microsoft-defender-atp-next-generation-protection-engines.png)  
+:::image type="content" source="images/microsoft-defender-atp-next-generation-protection-engines.png" alt-text="La liste des moteurs AV de Microsoft Defender" lightbox="images/microsoft-defender-atp-next-generation-protection-engines.png":::
 
 > [!TIP]
 > Pour en savoir plus, consultez [(Blog) Découvrir les technologies avancées au cœur de la protection de nouvelle génération de Microsoft Defender pour point de terminaison](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
@@ -83,7 +83,7 @@ L’Antivirus Microsoft Defender utilise plusieurs technologies de prévention e
    - **Extension de temps pour l’analyse des fichiers dans le cloud** : 50
    - **Demander aux utilisateurs avant la soumission d’échantillons** : Envoyer tous les données sans demande
 
-   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Bloc de configuration Intune à la première consultation.":::
+   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Bloc de configuration Intune à la première consultation" lightbox="../../media/intune-block-at-first-sight.png":::
 
 4. Enregistrez vos paramètres.
 
@@ -108,7 +108,7 @@ L’Antivirus Microsoft Defender utilise plusieurs technologies de prévention e
    - **Niveau de protection par le cloud** : Élevé
    - **Antivirus Microsoft Defender délai d’Antivirus Microsoft Defender** en secondes : 50
 
-   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Paramètres Bloquer à la première consultation dans Endpoint Manager.":::
+   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Paramètres de Bloquer à la première consultation dans le portail Microsoft Endpoint Manager" lightbox="images/endpointmgr-antivirus-cloudprotection.png":::
 
 4. Appliquer un profil Antivirus Microsoft Defender à un groupe, tel que **Tous les utilisateurs**, **Tous les appareils** ou **Tous les utilisateurs et tous les appareils**.
 
@@ -138,7 +138,7 @@ Vous pouvez confirmer que Bloquer à la première consultation est activé sur d
 
 2. Sélectionnez **Protection contre les virus et les menaces**, puis sous **Paramètres de protection contre les virus et les menaces**, sélectionnez **Gérer les paramètres**.
 
-   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Capture d’écran de l’étiquette des paramètres de protection contre les virus et les menaces dans l’application Sécurité Windows":::
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Paramètres de protection contre les menaces et les virus dans l’application Sécurité Windows" lightbox="../../media/wdav-protection-settings-wdsc.png":::
 
 3. Confirmez que les options **Protection assurée par le cloud** et **Envoi automatique d’un échantillon** sont activées.
 

@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Ent_O365
@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: 'Résumé : Comprenez la valeur de PowerShell pour Microsoft 365, comment vous connecter à votre client Microsoft 365 et où obtenir de l’aide.'
-ms.openlocfilehash: 8c0d2020235c1f00797a28bab3e30dca7c8a2198
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f75e93d503a2cdb002178be16e6fb4c246fe7ae8
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198468"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681147"
 ---
 # <a name="get-started-with-powershell-for-microsoft-365"></a>Prise en main de PowerShell pour Microsoft 365
 
@@ -56,6 +56,6 @@ Sélectionnez l’une des rubriques ci-après :
     
     Commencez ici pour vous connecter à la communauté PowerShell et obtenir plus d’informations sur l’utilisation de PowerShell pour Microsoft 365.
     
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
 [Gestion de Microsoft 365 à l’aide de PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)

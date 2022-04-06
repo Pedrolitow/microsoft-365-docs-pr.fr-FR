@@ -19,18 +19,18 @@ description: Pendant et après un examen automatisé dans Microsoft 365, vous po
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 54b9389d323c1e775b50bf63beaa33b0c4b0cae6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: bf9fe34a88444d9d8ec6dccf4b22a507e55dfb00
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314082"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680795"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Détails et résultats d’une enquête automatisée dans Microsoft 365
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 [Lorsqu’un examen automatisé](office-365-air.md) se produit dans [Microsoft Defender pour Office 365](defender-for-office-365.md), des détails sur cet examen sont disponibles pendant et après le processus d’examen automatisé. Si vous avez les autorisations nécessaires, vous pouvez afficher ces détails dans le portail Microsoft 365 Defender web. Les détails de l’examen vous fournissent l’état à jour et la possibilité d’approuver les actions en attente.
 
@@ -40,10 +40,6 @@ ms.locfileid: "63314082"
 ## <a name="investigation-status"></a>État de l’examen
 
 L’état de l’examen indique la progression de l’analyse et des actions. Au cours de l’examen, l’état change pour indiquer si des menaces ont été trouvées et si des actions ont été approuvées.
-
-<br>
-
-****
 
 |État|Description|
 |---|---|
@@ -58,7 +54,6 @@ L’état de l’examen indique la progression de l’analyse et des actions. Au
 |**Échec**|Au moins un analyseur d’examen a rencontré un problème dans lequel il n’a pas pu se terminer correctement. <p> **REMARQUE** En cas d’échec d’un examen après l’approbation des actions correctives, les actions de correction ont peut-être encore réussi. Afficher les détails de l’enquête.|
 |**Mis en file d’attente par limitation**|Un examen est placé dans une file d’attente. Lorsque d’autres enquêtes sont terminées, les enquêtes en file d’attente commencent. La limitation permet d’éviter des performances de service médiocres.  <p> **CONSEIL :** les actions en attente peuvent limiter le nombre de nouvelles enquêtes qui peuvent s’exécuter. Veillez à [approuver (ou rejeter) les actions en attente](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions).|
 |**Terminated By Throttling**|Si un examen est mis trop longtemps dans la file d’attente, il s’arrête. <p> **CONSEIL :** vous pouvez démarrer [une enquête à partir de l’Explorateur de menaces](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
-|
 
 ## <a name="view-details-of-an-investigation"></a>Afficher les détails d’une enquête
 
@@ -99,6 +94,6 @@ Certains types d’alerte déclenchent une enquête automatisée dans Microsoft 
 
 - L’approbation et/ou le rejet de toutes les actions permet à l’examen de se fermer complètement (l’état est corrigé), tout en laissant certaines actions incomplètes, l’état de l’examen passe à un état partiellement corrigé.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Examiner et approuver les actions en attente](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)

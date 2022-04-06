@@ -14,21 +14,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 84893d7f015ec354bc27ac706c00e864705a42e5
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 55a620343aa7cda05def64acc9027925aaa96a1e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165665"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472592"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Rapport sur la protection contre les menaces dans Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
@@ -36,7 +36,7 @@ Le rapport sur la protection contre les menaces fournit des informations de haut
 
 Le tableau de bord est structuré en deux sections :
 
-![Image du rapport sur la protection contre les menaces.](images/threat-protection-reports.png)
+:::image type="content" source="images/threat-protection-reports.png" alt-text="Rapport sur la protection contre les menaces" lightbox="images/threat-protection-reports.png":::
 
 Section|Description
 ---|---
@@ -46,7 +46,7 @@ Section|Description
 ## <a name="alert-trends"></a>Tendances des alertes
 Par défaut, les tendances des alertes affichent les informations d’alerte de la période de 30 jours se terminant par la dernière journée entière. Pour mieux prendre en compte les tendances qui se produisent dans votre organisation, vous pouvez affiner la période de rapport en ajustant la période indiquée. Pour ajuster la période, sélectionnez une plage de temps dans les options de la baisse :
 
-- 30 jours
+- 30 jours
 - 3 mois
 - 6 mois
 - Personnalisé
@@ -69,10 +69,10 @@ Alors que les tendances des alertes indiquent des informations d’alerte de ten
 
 Le rapport est composé de cartes qui affichent les attributs d’alerte suivants :
 
-- **Sources de détection**: affiche des informations sur les capteurs et les technologies de détection qui fournissent les données utilisées par Microsoft Defender pour le point de terminaison pour déclencher des alertes.
-- **Catégories de menaces**: affiche les types de menace ou d’activité d’attaque qui ont déclenché des alertes, indiquant les zones de focus possibles pour vos opérations de sécurité.
+- **Sources de** détection : affiche des informations sur les capteurs et les technologies de détection qui fournissent les données utilisées par Microsoft Defender pour le point de terminaison pour déclencher des alertes.
+- **Catégories de menaces** : indique les types de menace ou d’activité d’attaque qui ont déclenché des alertes, indiquant les zones de focus possibles pour vos opérations de sécurité.
 - **Gravité :** indique le niveau de gravité des alertes, indiquant l’impact potentiel des menaces collectives sur votre organisation et le niveau de réponse nécessaire pour les résoudre.
-- **État**: affiche l’état de résolution des alertes, indiquant l’efficacité de vos réponses d’alerte manuelles et de la correction automatisée (si activée).
+- **État** : affiche l’état de résolution des alertes, indiquant l’efficacité de vos réponses d’alerte manuelles et de la correction automatisée (si activée).
 - **Classification &** détermination : indique comment vous avez classé les alertes lors de leur résolution, si vous les avez classées comme menaces réelles (alertes vraies) ou comme détections incorrectes (fausses alertes). Ces cartes indiquent également la détermination des alertes résolues, fournissant des informations supplémentaires telles que les types de menaces réelles détectées ou les activités légitimes détectées de manière incorrecte.
 
 ## <a name="filter-data"></a>Filtrer les données
@@ -84,7 +84,7 @@ Utilisez les filtres fournis pour inclure ou exclure des alertes avec certains a
 
 Par exemple, pour afficher les données relatives aux alertes de gravité élevée uniquement :
 
-1. Under **Incidents &** \> **alerts Alerts** \> **Filters > Severity**, select **High**.
+1. Sous **Incidents & alertes Filtres** \> d’alertes  \> **> gravité**, sélectionnez **Élevé**.
 2. Assurez-vous que toutes les autres options sous **Gravité** sont désélectionnés.
 3. Sélectionnez **Appliquer**.
 

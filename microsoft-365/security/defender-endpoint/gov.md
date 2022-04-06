@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b9a083404da3ad4edc3ccf2f88e1c459dc6f08e2
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 03d4d22bdce9f18b4883437215ea5cba50b3868e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450561"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681345"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis
 
@@ -118,8 +118,8 @@ Windows 7 SP1 Enterprise (hérité) <sup>3</sup>|![Oui.](images/svg/check-yes.sv
 Windows 7 SP1 Pro (hérité) <sup>3</sup>|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Linux|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 macOS|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Android|![Non.](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement
-iOS|![Non.](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement
+Android|![Oui.](images/svg/check-yes.svg) <br /> Préversion publique|![Oui](images/svg/check-yes.svg) <br /> Préversion publique|![Oui](images/svg/check-yes.svg) <br /> Préversion publique
+iOS|![Oui.](images/svg/check-yes.svg) <br /> Préversion publique|![Oui](images/svg/check-yes.svg) <br /> Préversion publique|![Oui](images/svg/check-yes.svg) <br /> Préversion publique
 |
 
 > [!NOTE]
@@ -141,7 +141,7 @@ Version du système d'exploitation|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
 Windows Server 2022|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2019|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows Server 2016|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows Server 2016|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2012 R2|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 |
@@ -194,3 +194,23 @@ Voici les lacunes connues :
 |Découverte du réseau|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
 |Rapports : Contrôle d’appareil, état de l’appareil, pare-feu|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
 |Filtrage du contenu web|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
+  
+
+Voici les fonctionnalités et lacunes connues pour la défense contre les menaces mobiles [(Microsoft Defender pour point de terminaison sur Android & iOS)](mtd.md) :
+
+<br />
+
+****
+
+|Nom de la fonctionnalité|GCC|GCC High|DoD|
+|---|:---:|:---:|:---:|
+|Protection web (indicateurs anti-hameçonnage et personnalisés)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
+|Protection contre les programmes malveillants (Android uniquement)|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
+|Détection de jailbreak (iOS uniquement)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
+|Accès conditionnel/lancement conditionnel|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
+|Prise en charge de MAM|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
+|Contrôles de confidentialité|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
+|Gestion des menaces et des vulnérabilités (TVM)|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
+|Filtrage du contenu web|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
+  
+

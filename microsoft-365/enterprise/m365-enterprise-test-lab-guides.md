@@ -7,7 +7,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/20/2019
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Servez-vous des guides de laboratoire de test pour configurer les environnements de développement/test, de preuve de concept et de démonstration pour Microsoft 365 pour entreprise.
-ms.openlocfilehash: 71be198b6ad96b6131680c41130a2debfd89693c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 18b243a0fea9cb4864a0375740c4ebadcc44d6c3
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210340"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681653"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Guides de laboratoire de test Microsoft 365 pour entreprise
 
@@ -37,15 +37,15 @@ Vous pouvez également utiliser des TLG pour créer des environnements représen
   
 ![Guides de laboratoire de test pour le cloud Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Pour obtenir une carte visuelle de tous les articles de la pile de guides de laboratoire de test Microsoft 365 pour entreprise, développez le graphique suivant ou allez à [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+Pour obtenir une carte visuelle de tous les articles de la pile Microsoft 365 for enterprise Test Lab Guide, développez le graphique suivant ou allez à [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
-[![Pile Microsoft 365 guide de laboratoire de test d’entreprise.](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
+[![Pile Microsoft 365 guide de laboratoire de test pour entreprise.](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>Configuration de base
 
-Tout d’abord, créez un environnement de test [pour Microsoft 365 entreprise.](/microsoft-365-enterprise/) Vous pouvez créer deux types différents de configurations de base :
+Tout d’abord, créez un environnement de test [pour Microsoft 365 entreprise](/microsoft-365-enterprise/). Vous pouvez créer deux types différents de configurations de base :
 
-- [Configuration](lightweight-base-configuration-microsoft-365-enterprise.md) de base légère : utilisez cette fonctionnalité lorsque vous souhaitez configurer et faire une démonstration des Microsoft 365 pour les fonctionnalités d’entreprise et les fonctionnalités dans un environnement cloud uniquement, qui n’inclut aucun composant local.
+- [Configuration de base](lightweight-base-configuration-microsoft-365-enterprise.md) légère : utilisez cette fonctionnalité lorsque vous souhaitez configurer et faire une démonstration des Microsoft 365 pour les fonctionnalités et fonctionnalités d’entreprise dans un environnement cloud uniquement, qui n’inclut aucun composant local.
 
 - Configuration de [base](simulated-ent-base-configuration-microsoft-365-enterprise.md) d’entreprise simulée : utilisez cette fonctionnalité lorsque vous souhaitez configurer et faire une démonstration des Microsoft 365 pour les fonctionnalités d’entreprise dans un environnement cloud hybride, qui utilise des composants locaux tels qu’un domaine AD DS (Active Directory Domain Services).
 
@@ -69,7 +69,7 @@ Pour obtenir une description des fonctionnalités liées à l’identité, repor
 
 - [Authentification unique transparente Azure AD](single-sign-on-m365-ent-test-environment.md)
   
-   Activez et testez l' sign-on unique transparente Azure AD (SSO transparente) avec un contrôleur de domaine AD DS.
+   Activez et testez Azure AD l’signature unique transparente (SSO) transparente avec un contrôleur de domaine AD DS.
 
 - [Authentification multifacteur](multi-factor-authentication-microsoft-365-test-environment.md)
   

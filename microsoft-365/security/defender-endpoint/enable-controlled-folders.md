@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: d8ff1b5946ccdcbc35a219bc0e656c2e23d6f3ea
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b62ff851cbee58cf3b29a2b4dde6fb1b6107dd85
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327642"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472812"
 ---
 # <a name="enable-controlled-folder-access"></a>Activer l’accès contrôlé aux dossiers
 
@@ -130,7 +130,7 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
    - **Bloquer la modification du disque** uniquement : les tentatives d’écriture d’applications nontrues dans les secteurs de disque sont enregistrées dans Windows journal des événements. Ces journaux se trouvent dans **les journaux des applications** et des services \> de Microsoft \> Windows \> Windows Defender \> ID \> opérationnel 1123.
    - **Auditer la modification** du disque uniquement : seules les tentatives d’écriture dans les secteurs de disque protégés sont enregistrées dans le journal des **événements** \> Windows (sous Journaux des applications et des services **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational** \> **ID 1124**). Les tentatives de modification ou de suppression de fichiers dans des dossiers protégés ne sont pas enregistrées.
 
-      ![Capture d’écran de l’option de stratégie de groupe Activée et mode Audit sélectionnée dans la baisse.](../../media/cfa-gp-enable.png)
+    :::image type="content" source="../../media/cfa-gp-enable.png" alt-text="Option de stratégie de groupe activée et mode Audit sélectionné" lightbox="../../media/cfa-gp-enable.png":::
 
 > [!IMPORTANT]
 > Pour activer entièrement l’accès contrôlé aux dossiers, vous devez définir l’option de stratégie  de groupe sur Activé et sélectionner Bloquer dans le menu déroulant Options.

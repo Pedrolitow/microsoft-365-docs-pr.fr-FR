@@ -13,20 +13,20 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez les principales différences entre un modèle de compréhension de document et un modèle de traitement de formulaire.
-ms.openlocfilehash: 0605beb2b034343cc53e32058905870f75f811a4
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: e5de4c55cc8a559ad03d722b1f7235797db76e07
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419289"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681279"
 ---
 # <a name="differences-between-document-understanding-and-form-processing-models"></a>Différences entre la compréhension des documents et les modèles de traitement des formulaires 
 
-La compréhension de contenu dans Microsoft SharePoint Syntex vous permet d’identifier et de classer les documents téléchargés dans les bibliothèques de documents SharePoint, ainsi que d’extraire les informations pertinentes de chaque fichier.  Par exemple, lorsque les fichiers sont téléchargés vers une bibliothèque de documents SharePoint, tous les fichiers identifiés comme *Bons de commande* sont classés comme tels, puis affichés dans une vue personnalisée de la bibliothèque de documents. De plus, vous pouvez extraire des informations spécifiques de chaque fichier (par exemple, le *Numéro de bon de commande* et le *Total*) et les afficher sous forme de colonne dans la vue de votre bibliothèque de documents. 
+La compréhension du contenu dans Microsoft SharePoint Syntex vous permet d’identifier et de classer les documents téléchargés dans SharePoint bibliothèques de documents, puis d’extraire les informations pertinentes de chaque fichier. Par exemple, lorsque les fichiers sont téléchargés vers une bibliothèque de documents SharePoint, tous les fichiers identifiés comme *Bons de commande* sont classés comme tels, puis affichés dans une vue personnalisée de la bibliothèque de documents. De plus, vous pouvez extraire des informations spécifiques de chaque fichier (par exemple, le *Numéro de bon de commande* et le *Total*) et les afficher sous forme de colonne dans la vue de votre bibliothèque de documents. 
 
 La compréhension de contenu vous permet de créer des *modèles* pour identifier et extraire les informations dont vous avez besoin. Les modèles peuvent vous aider à résoudre des problèmes commerciaux liés à la recherche, aux processus commerciaux, à la conformité et bien d’autres.
 
-Il existe deux types de modèles que vous pouvez utiliser :
+Vous pouvez utiliser deux types de modèles personnalisés :
 
 - les [modèles de compréhension de document](document-understanding-overview.md)
 - les [modèles de traitement de formulaire](form-processing-overview.md)
@@ -52,7 +52,7 @@ Les modèles de compréhension de document sont créés et gérés dans un site 
 > [!NOTE]
 > Si vous souhaitez en savoir plus sur les documents input, consultez l’article [Configuration requise et limitations du modèle de traitement de formulaire](/ai-builder/form-processing-model-requirements). 
 
-Les modèles de traitement de formulaire sont créés dans Power Apps [AI Builder](/ai-builder/overview), mais la création commence directement à partir d’une bibliothèque de documents SharePoint. La création du modèle de traitement de formulaire d’une bibliothèque de documents doit être activée pour qu’un utilisateur puisse créer un modèle de traitement des formulaires pour celle-ci. Les administrateurs peuvent activer la création du modèle de traitement de formulaire dans le contenu comprenant les paramètres d’administration. Les modèles de traitement de formulaire utilisent des flux PowerAutomate pour traiter les fichiers lorsqu’ils sont téléchargés dans la bibliothèque de documents.
+Les modèles de traitement de formulaire sont créés dans Power Apps [AI Builder](/ai-builder/overview), mais la création commence directement à partir d’une bibliothèque de documents SharePoint. La création du modèle de traitement de formulaire d’une bibliothèque de documents doit être activée pour qu’un utilisateur puisse créer un modèle de traitement des formulaires pour celle-ci. Les administrateurs peuvent activer la création du modèle de traitement de formulaire dans le contenu comprenant les paramètres d’administration. Les modèles de traitement de formulaire Power Automate flux pour traiter les fichiers lorsqu’ils sont téléchargés vers la bibliothèque de documents.
 
 Lorsque vous créez un modèle de compréhension de document, vous créez un nouveau [type de contenu SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978), qui est enregistré dans la galerie Types de contenu SharePoint. Vous pouvez également utiliser des types de contenu existants pour définir votre modèle si nécessaire.
 
@@ -79,7 +79,7 @@ Utilisez le tableau suivant pour comprendre quand utiliser le traitement des for
 | Type de classification| Le classificateur réglable est utilisé pour donner des indices au système sur les données à extraire.| Classifieur pouvant être formé avec des extracteurs facultatifs utilisant l’apprentissage automatique pour attribuer l’emplacement du document aux données à extraire.|
 | Emplacements | Formé pour une seule bibliothèque de documents.| Peut être appliqué à plusieurs bibliothèques.|
 | Types de fichiers pris en charge| Entraînez-vous au format PDF, JPG, PNG, un total de 50 Mo et 500 pages.| Entraînez-vous sur 5 à 10 fichiers PDF, Office ou courrier électronique, avec des exemples négatifs.<br>Les fichiers Office sont tronqués à 64 000 caractères. Les fichiers numérisés par OCR sont limités à 20 pages.|
-| Intégration aux métadonnées gérées | Non | Oui, par l’extracteur de l’entité de formation qui fait référence à un champ de métadonnées gérées configurée.|
+| Intégration avec des métadonnées gérées | Non | Oui, par l’extracteur de l’entité de formation qui fait référence à un champ de métadonnées gérées configurée.|
 | Intégration des fonctionnalités de conformité lorsque Microsoft Information Protection est activé | Définir des étiquettes de rétention publiées.<br>Le jeu d’étiquettes de confidentialité est pour bientôt. | Définir des étiquettes de rétention publiées.<br>Définir des étiquettes de confidentialité publiées. |
 | Régions pris en charge| Le traitement des formulaires s’appuie sur la plateforme Power. Pour plus d’informations sur la disponibilité globale de la plateforme Power et du Générateur d’intelligence artificielle, consultez [Disponibilité de la plateforme Power](https://dynamics.microsoft.com/geographic-availability/). | Disponible dans toutes les régions.|
 | Coût transactionnel | Utilise des crédits de générateur d’intelligence artificielle.<br>Les crédits peuvent être achetés par lots de 1M.<br>Plus de 1M de crédits est inclus lorsque vous achetez plus de 300 licences SharePoint Syntex.<br>1M de crédits permet de traiter un fichier de 2 000 pages.<br>| N/A |

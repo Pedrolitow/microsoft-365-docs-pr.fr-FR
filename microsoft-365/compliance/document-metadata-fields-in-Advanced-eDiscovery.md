@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Cet article définit les champs de métadonnées pour les documents dans un jeu à réviser dans un cas Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: a1ce1cf43cb2b5d741731948288ab60f48cf5352
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+description: Cet article définit les champs de métadonnées pour les documents d’un jeu à réviser dans un cas Advanced eDiscovery dans Microsoft 365.
+ms.openlocfilehash: e07afbcfff0c6cae748ac6104879ec25f046cbf5
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62901081"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680728"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Champs de métadonnées des documents dans l'Advanced eDiscovery
 
@@ -51,7 +51,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |Cc|Cc|Email_cc|Champ Cc pour les types de messages. Le format **est DisplayName \<SMTPAddress\>**.|
 |Étiquettes de conformité|ComplianceLabels|Compliance_labels|[Étiquettes de rétention](retention.md) appliquées au contenu Office 365.|
 |Chemin composé|CompoundPath|Compound_path|Chemin lisible par l’homme qui décrit la source de l’élément.|
-|Content*|Content||Texte extrait de l’élément.|
+|Content*|Contenu||Texte extrait de l’élément.|
 |Corps de la conversation|ConversationBody||Corps de conversation de l’élément.|
 |Conversation ID|ConversationId|Conversation_ID|ID de conversation du message. Pour Teams 1:1 et les conversations de groupe, tous les fichiers de transcription et leurs éléments de famille dans la même conversation partagent le même ID de conversation. Pour plus d’informations, [voir Advanced eDiscovery flux de travail pour le contenu Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
 |ID de la famille de conversations|ConversationFamilyID|ConversationFamilyID|ID qui identifie les éléments individuels d’une conversation ainsi que les éléments associés dans la conversation.|
@@ -60,13 +60,13 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |Heure pdf de la conversation|ConversationPdfTime||Date de création de la version PDF de la conversation.|
 |Temps de redéaction de conversation|ConversationRedaction PleinTime||Date à laquelle la version PDF de la conversation a été créée pour la conversation.|
 |Conversation Topic|ConversationTopic||Rubrique de conversation de l’élément.|
-|Conversation Type|ConversationType|ConversationType|Type de conversation. Les valeurs sont les suivantes : <br>**Teams 1:1 et les conversations de groupe et toutes Yammer conversations de groupe :** Groupe<br>**Teams et les canaux privés :** Canal|
+|Conversation Type|ConversationType|ConversationType|Type de conversation. Les valeurs sont les suivantes : <br>**Teams 1:1 et les conversations de groupe et toutes les conversations Yammer:** Groupe<br>**Teams et les canaux privés :** Canal|
 |Contient le message supprimé|ContainsDeletedMessage|ContainsDeletedMessage|Indique si la transcription de conversation inclut un message supprimé|
 |Contient un message modifié|ContainsEditedMessage|ContainsEditedMessage|Indique si la transcription de conversation inclut un message modifié|
 |Teams titre de l’annonce|TeamsAnnouncementTitle|TeamsAnnouncementTitle|Titre d’une [annonce teams](https://support.microsoft.com/office/send-an-announcement-to-a-channel-8f244ea6-235a-4dcc-9143-9c5b801b4992).|
 |||Converted_file_path|Chemin d’accès du fichier d’exportation converti. Pour une utilisation interne à Microsoft uniquement.|
 |Consignataire|Consignataire|Consignataire|Nom du dépositaire à qui l’élément a été associé.|
-|Date|Date|Date|Date est un champ calculé qui dépend du type de fichier.<p>Courrier électronique : date d’envoi<br>Pièces jointes : date de dernière modification du document ; si elle n’est pas disponible, date d’envoi du parent<br>Documents incorporés : date de la dernière modification du document ; si elle n’est pas disponible, date de la dernière modification du parent<br>Documents SPO (inclut les pièces jointes modernes) : SharePoint date de dernière modification ; s’il n’est pas disponible, les documents date de la dernière modification<br>Documents non Office 365 : date de dernière modification<br>Réunions : date de début de la réunion<br>Messagerie vocale : date d’envoi<br>Messagerie instantanée : date d’envoi<br>Teams : date d’envoi|
+|Date|Date|Date|Date est un champ calculé qui dépend du type de fichier.<p>**Courrier électronique** : date d’envoi<br>**Pièces jointes de courrier** électronique : date de la dernière modification du document ; si elle n’est pas disponible, date d’envoi du parent<br>**Documents incorporés** : date de la dernière modification du document ; si elle n’est pas disponible, date de la dernière modification du parent<br>**Documents SPO (pièces jointes modernes)** : date de dernière modification du document ; si elle n’est pas disponible, SharePoint date de dernière modification<br>**Documents non Office 365 :** date de dernière modification<br>**Réunions :** date de début de la réunion<br>**Messagerie vocale :** date d’envoi<br>**Messagerie instantanée** : date d’envoi<br>**Teams** : date d’envoi|
 |Commentaires sur le document|DocComments|Doc_comments|Commentaires des métadonnées du document.|
 |Société de documents||Doc_company|Société à partir des métadonnées du document.|
 |Date de création du document|CreatedTime|Doc_date_created|Créer une date à partir des métadonnées du document.|
@@ -138,7 +138,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |Auteurs O365||O365_authors|Auteur à partir SharePoint.|
 |O365 créé par||O365_created_by|Créé à partir de SharePoint.|
 |Date de création d’O365||O365_date_created|Date de création à partir SharePoint.|
-|O365ModifiedDate||O365_date_modified|Date à laquelle un document (ou une version de document) collecté à partir SharePoint ou OneDrive Entreprise été modifié. Il s’agit de la même date de modification que celle affichée dans l’historique des versions dans les SharePoint et OneDrive utilisateur.|
+|O365ModifiedDate||O365_date_modified|Date à laquelle un document (ou une version de document) collecté à partir SharePoint ou OneDrive Entreprise été modifié. Il s’agit de la même date de modification que celle affichée dans l’historique des versions dans les SharePoint et OneDrive’expérience utilisateur.|
 |O365 modifié par||O365_modified_by|Modifié à partir de SharePoint ou OneDrive.|
 |Autres dépositaires|DedupedCustodians|Deduped_custodians|Liste des dépositaires de documents qui sont des doublons exacts (pour le courrier électronique, en fonction du contenu ; pour les documents, en fonction du hachage).|
 |Autres ID de fichier|DedupedFileIds|Deduped_file_IDs|Liste des ID de fichiers des documents qui sont des doublons exacts (pour le courrier électronique, en fonction du contenu ; pour les documents, en fonction du hachage).|

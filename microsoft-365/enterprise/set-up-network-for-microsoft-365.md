@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/19/2019
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-solutions
 ms.localizationpriority: medium
 search.appverid:
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Trouvez des liens vers des articles avec des informations pour vous aider à configurer votre réseau pour Microsoft 365, notamment une vue d’ensemble de la connectivité réseau et la liste des points de terminaison.
-ms.openlocfilehash: c21a7a09e43957c806bca9dd64d425fcef2415fc
-ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
+ms.openlocfilehash: c6dbc4362648b3695c23f363c0e6925ead97bacb
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61566626"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680839"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>Configurer votre réseau pour Microsoft 365
 
@@ -43,7 +43,7 @@ Consultez les articles suivants pour obtenir une vue d’ensemble de la connecti
 - [Principes de connectivité réseau Microsoft 365](microsoft-365-network-connectivity-principles.md)
 - [Évaluation de la connectivité réseau Microsoft 365](assessing-network-connectivity.md)
 
-Pour obtenir des conseils sur l’amélioration des performances, voir Planification réseau et optimisation des [performances pour Microsoft 365](network-planning-and-performance.md).
+Pour obtenir des conseils sur l’amélioration des performances, voir [Planification réseau et optimisation des performances pour Microsoft 365](network-planning-and-performance.md).
 
 ## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>Prise en charge Microsoft 365 réseau en tant que fournisseur d’équipement réseau
 

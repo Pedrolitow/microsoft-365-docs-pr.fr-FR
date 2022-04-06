@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 1dbcfbff2a45cd3dfbc453f84eaa73e178174aee
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 445cb497abfaa0e7e4322268a761aafbaa0e31d6
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312010"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680905"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>Travail prérequis pour l’implémentation de stratégies d’accès aux identités et appareils de confiance zéro
 
@@ -54,7 +54,6 @@ Le tableau suivant détaille les fonctionnalités prérequises et leur configura
 |[Activez Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection). Azure AD Identity Protection vous permet de détecter les vulnérabilités potentielles affectant les identités de votre organisation et de configurer une stratégie de correction automatisée en cas de risque de communication faible, moyen et élevé et de risque pour l’utilisateur.||Microsoft 365 E5 ou Microsoft 365 E3 avec le module de sécurité E5|
 |**Activez l’authentification** [moderne Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) et pour [Skype Entreprise Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). L’authentification moderne est une condition préalable à l’utilisation de l’authentification multifacteur. L’authentification moderne est activée par défaut Office clients 2016 et 2019, SharePoint et OneDrive Entreprise.||Microsoft 365 E3 ou E5|
 |[Activer l’évaluation de l’accès](microsoft-365-continuous-access-evaluation.md) continu pour Azure AD. L’évaluation de l’accès continu met fin de manière proactive aux sessions utilisateur actives et applique les modifications de stratégie de client en temps quasi réel.||Microsoft 365 E3 ou E5|
-|
 
 ## <a name="recommended-client-configurations"></a>Configurations clientes recommandées
 
@@ -87,7 +86,6 @@ Les clients de messagerie suivants supportent l’authentification moderne et l�
 |**Android**|Outlook pour Android|[La plus récente](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**MacOS**|Outlook|2019 et 2016|
 |**Linux**|Non prise en charge||
-|
 
 ### <a name="recommended-client-platforms-when-securing-documents"></a>Plateformes clientes recommandées pour sécuriser des documents
 
@@ -95,13 +93,12 @@ Les clients suivants sont recommandés lorsqu’une stratégie de documents séc
 
 |Plate-forme|Word/Excel/PowerPoint|OneNote|Application OneDrive|Application SharePoint|[Client de synchronisation OneDrive](/onedrive/enable-conditional-access)|
 |---|---|---|---|---|---|
-|Windows 11 ou Windows 10|Pris en charge|Pris en charge|N/A|N/A|Pris en charge|
-|Windows 8.1|Pris en charge|Pris en charge|N/A|N/A|Pris en charge|
+|Windows 11 ou Windows 10|Pris en charge|Pris en charge|N/A|S/O|Pris en charge|
+|Windows 8.1|Pris en charge|Pris en charge|N/A|S/O|Pris en charge|
 |Android|Pris en charge|Pris en charge|Pris en charge|Pris en charge|N/A|
 |iOS|Pris en charge|Pris en charge|Pris en charge|Pris en charge|N/A|
-|macOS|Pris en charge|Pris en charge|N/A|N/A|Non prise en charge|
+|macOS|Pris en charge|Pris en charge|N/A|S/O|Non prise en charge|
 |Linux|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge|
-|
 
 ### <a name="microsoft-365-client-support"></a>Prise en charge du client Microsoft 365
 
