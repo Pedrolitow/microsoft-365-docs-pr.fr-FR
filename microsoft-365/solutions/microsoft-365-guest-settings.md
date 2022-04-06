@@ -20,12 +20,12 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: Découvrez les paramètres de partage d’invités disponibles dans Microsoft 365 qui peuvent affecter le partage avec les personnes extérieures à votre organisation.
-ms.openlocfilehash: 9cb6eb52c523bba624af5f830c3c34c4edaf86b8
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
-ms.translationtype: HT
+ms.openlocfilehash: 4c472fb20a85c0f00f7623cc63c4d33556b511e2
+ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64594837"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64687241"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Informations de référence sur les paramètres de partage d’invités de Microsoft 365
 
@@ -54,6 +54,37 @@ Azure Active Directory est le service d’annuaire utilisé par Microsoft 365. L
 |Restrictions de collaboration|Autoriser l’envoi d’invitations à tout domaine|Ce paramètre vous permet de spécifier une liste de domaines dont le partage est autorisé ou bloqué. Lorsque des domaines autorisés sont spécifiés, des invitations de partage ne peuvent être envoyées qu’à ces domaines. Lorsque des domaines refusés sont spécifiés, des invitations de partage ne peuvent pas être envoyées à ces domaines. <p> Ce paramètre affecte les expériences de partage Microsoft 365 telles que Teams et SharePoint. Vous pouvez autoriser ou bloquer des domaines de façon plus précise à l’aide de la fonctionnalité de filtrage par domaine dans SharePoint ou Teams.|
 
 Ces paramètres affectent la manière dont les utilisateurs sont invités à l’annuaire. Il n’affectent pas le partage avec des invités figurant déjà dans l’annuaire.
+
+### <a name="cross-tenant-access-settings"></a>Paramètres d’accès entre locataires
+
+**Navigation :** [centre d’administration Azure Active Directory](https://aad.portal.azure.com) > Azure Active Directory > identités externes > paramètres d’accès interlocataire > onglet Paramètres par défaut
+
+Les paramètres par défaut s’appliquent à toutes les organisations Azure AD externes, à l’exception de celles qui ont des paramètres spécifiques à l’organisation. Paramètres d’une organisation spécifique peut être configurée sous l’onglet **Paramètres de l’organisation**. Il existe des paramètres distincts pour les invités (B2B Collaboration) et Azure AD les utilisateurs [de connexion directe B2B](/azure/active-directory/external-identities/b2b-direct-connect-overview).
+
+![Capture d’écran de Azure Active Directory page des paramètres d’accès interlocataire.](../media/azure-ad-cross-tenant-default-settings.png)
+
+**Paramètres d’accès entrant**
+
+Les paramètres d’accès entrant contrôlent si les utilisateurs d’organisations Azure AD externes peuvent accéder aux ressources de votre organisation.
+
+| Paramètre | Par défaut | Description |
+|:-----|:-----|:-----|
+|B2B Collaboration - Utilisateurs et groupes externes|Toutes les autorisations|Détermine les personnes d’autres organisations Azure AD qui peuvent se voir accorder l’accès aux ressources de votre organisation en tant qu’invités.|
+|B2B Collaboration - Applications|Toutes les autorisations|Détermine à quelles applications des invités de votre organisation l’accès peut être accordé.|
+|Connexion directe B2B - utilisateurs et groupes externes|Tous bloqués|Détermine si les personnes d’autres organisations Azure AD peuvent avoir accès aux ressources de votre organisation via B2B Direct Connect.|
+|Connexion directe B2B - applications|Tous bloqués|Détermine à quelles applications de votre organisation les utilisateurs de connexion directe B2B peuvent se voir accorder l’accès.|
+|Paramètres d’approbation|Désactivé|Détermine si vos stratégies d’accès conditionnel acceptent les revendications d’autres organisations Azure AD lorsque des personnes de ces organisations accèdent à vos ressources.|
+
+**Paramètres d’accès sortant**
+
+Les paramètres d’accès sortant contrôlent si vos utilisateurs peuvent accéder aux ressources d’une organisation externe.
+
+| Paramètre | Par défaut | Description |
+|:-----|:-----|:-----|
+|B2B Collaboration - Utilisateurs et groupes externes|Toutes les autorisations|Détermine quels utilisateurs de votre organisation peuvent se voir accorder l’accès aux ressources d’autres organisations Azure AD en tant qu’invités.|
+|B2B Collaboration - Applications|Toutes les autorisations|Détermine les applications d’autres organisations Azure AD auxquels vos utilisateurs peuvent accéder en tant qu’invités.|
+|Connexion directe B2B - utilisateurs et groupes externes|Tous bloqués|Détermine quels utilisateurs de votre organisation peuvent se voir accorder l’accès aux ressources d’autres organisations Azure AD par le biais de la connexion directe B2B.|
+|Connexion directe B2B - applications|Tous bloqués|Détermine les applications d’autres organisations Azure AD aux laquelle vos utilisateurs peuvent accéder via B2B Direct Connect.|
 
 ## <a name="microsoft-365"></a>Microsoft 365
 
@@ -98,7 +129,7 @@ Le commutateur d’accès invité principal de Teams, **Autoriser l’accès inv
 
 | Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
-|Autoriser l’accès invité dans Teams|Désactivé|Active ou désactive l’accès invité dans Teams. Une fois ce paramètre modifié, la prise d’effet de la modification peut prendre jusqu’à 24 heures .|
+|Autoriser l’accès invité dans Teams|Activé|Active ou désactive l’accès invité dans Teams. Une fois ce paramètre modifié, la prise d’effet de la modification peut prendre jusqu’à 24 heures .|
 
 ### <a name="guest-calling"></a>Appel d’invité
 

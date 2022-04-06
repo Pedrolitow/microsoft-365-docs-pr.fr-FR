@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Activez un paramètre qui permet la co-édition et l’enregistrement automatique dans les applications de bureau pour les documents étiquetés et chiffrés dans SharePoint et OneDrive.
-ms.openlocfilehash: 252d32e0f301bf332bf8143082ec86be2f1072ea
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.openlocfilehash: baa2236915d37917e4ed69e5356db31262795d57
+ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320044"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64687204"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Activer la co-édition pour les fichiers chiffrés avec les étiquettes de confidentialité
 
@@ -67,11 +67,6 @@ Consultez la section suivante pour obtenir la liste des applications et services
 
 ## <a name="prerequisites"></a>Prerequisites
 
-> [!IMPORTANT]
-> Cette fonctionnalité nécessite que tous les utilisateurs disposent de Applications Microsoft 365 pour les grandes entreprises. La prise en charge de cette fonctionnalité de co-auteur n’est pas encore disponible avec le Canal Entreprise semestriel pour Office mises à jour. Si vous utilisez ce canal de mise à jour pour vos applications Office, changez-le en Canal actuel ou Canal Enterprise mensuel.
-> 
-> Pour plus d’informations, [afficher Comment configurer et gérer les canaux de mise à jour.](/deployoffice/overview-update-channels#how-to-configure-and-manage-update-channels)
-
 Avant d’activer cette fonctionnalité, assurez-vous de comprendre les conditions préalables suivantes.
 
 - Pour mettre à jour ces informations, vous devez être un administrateur général.
@@ -79,7 +74,7 @@ Avant d’activer cette fonctionnalité, assurez-vous de comprendre les conditio
 - Les étiquettes de confidentialité [doivent être activées pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) pour le client. Si cette fonctionnalité n’est pas déjà activée, elle sera automatiquement activée lorsque vous sélectionnerez le paramètre pour activer la co-édition pour les fichiers avec des étiquettes de niveau de confidentialité.
 
 - Microsoft 365 Apps for enterprise :
-    - **Windows** : version minimale 2107 du Canal actuel ou du Canal Enterprise mensuel
+    - **Windows** : Version minimale 2107 à partir du canal actuel ou du canal Enterprise mensuel, ou version minimale 2202 à partir du canal Semi-Annual Enterprise
     - **macOS** : version minimale 16.51
     - **iOS**: désormais en préversion lorsque vous [choisissez](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) la version minimale 2.58
     - **Android**: désormais en préversion lorsque vous [choisissez](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) la version minimale 16.0.14931
