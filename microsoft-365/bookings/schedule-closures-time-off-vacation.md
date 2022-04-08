@@ -1,5 +1,5 @@
 ---
-title: Planifier des fermetures d’entreprise, des congés et des congés
+title: Planifier des fermetures d’entreprise, des congés et des vacances
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -9,53 +9,60 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: Planifier les fermetures de bureau et les congés des employés du calendrier Bookings afin que les employés soient marqués comme indisponibles pour les réservations aux heures spécifiées.
-ms.openlocfilehash: ea0b9b9870d5331d58b8f0e9f7671853d0e3433b
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 138079643c9fbc86918a071f935ebe96d7989e68
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807043"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714766"
 ---
-# <a name="schedule-business-closures-time-off-and-vacation-time"></a>Planifier des fermetures d’entreprise, des congés et des congés
+# <a name="schedule-business-closures-time-off-and-vacation-time"></a>Planifier des fermetures d’entreprise, des congés et des vacances
 
-Il peut arriver que vous vouliez fermer votre entreprise pour des congés ou des événements d’équipe, ou vos employés auront besoin de congés lorsqu’ils sont maladie, en congés ou indisponibles pour d’autres raisons. Vous pouvez planifier des congés à partir du calendrier Microsoft Bookings et l’employé n’est pas disponible pour les réservations pendant l’heure spécifiée. Une fois l’entreprise rouverte ou les employés reviennent au travail, tous les employés sont répertoriés sur la page de réservation en fonction de leurs heures de travail établies.
+> [!NOTE]
+> Cet article vous aide à interagir avec la dernière version de Microsoft Bookings. Les versions précédentes seront mises hors service dans les prochains mois.
 
-Regardez cette vidéo ou suivez les étapes ci-dessous pour planifier des fermetures d’entreprise ou des fermetures d’employés.
+Parfois, vous voudrez fermer votre entreprise pour des vacances ou des événements d’équipe, ou vos employés auront besoin de congés lorsqu’ils sont malades, en vacances ou indisponibles pour d’autres raisons. Vous pouvez planifier un congé à partir du calendrier Microsoft Bookings, et l’employé ne sera pas disponible pour les réservations pendant l’heure spécifiée. Une fois l’entreprise rouverte ou les employés de retour au travail, tout le monde sera répertorié sur la page de réservation en fonction de leurs heures de travail établies.
+
+Regardez cette vidéo ou suivez les étapes ci-dessous pour planifier les fermetures d’entreprise ou les congés des employés.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TxDC]
 
-## <a name="schedule-ad-hoc-business-closures"></a>Planifier des fermetures d’entreprise ad hoc
+## <a name="schedule-ad-hoc-business-closures"></a>Planifier des fermetures d’entreprises ad hoc
 
-1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis bookings.
+1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis sélectionnez **Bookings**.
 
-1. Dans le volet de navigation, sélectionnez **Congés** \> **du calendrier**.
+1. Choisissez votre calendrier. 
 
-   ![Image de l’affichage calendrier bookings et du bouton Délai d’arrêt.](../media/bookings-calendar-timeoff.png)
+1. Dans le volet de navigation supérieur, **sélectionnez Ajouter un délai d’attente**.
 
-1. Remplissez les détails, y compris un titre, une date et des heures de début et de fin, un emplacement et des notes supplémentaires.
+   ![Image de Bookings bouton Affichage calendrier et délai d’attente.](../media/bookings-calendar-timeoff.png)
 
-1. Sélectionnez **l’événement « Journée toute la journée** ».
+1. Renseignez les détails, notamment un titre, une date et une heure de début et de fin, un emplacement et des notes supplémentaires.
+
+1. Sélectionnez **l’événement Toute la journée**.
 
 1. Sélectionnez tous les membres du personnel.
 
 1. Sélectionnez **Enregistrer**.
 
-Lorsqu’un client tente de planifier le service un jour où le bureau est fermé, il voit un message sur la page de réservation.
+Lorsqu’un client tente de planifier le service un jour où le bureau est fermé, un message s’affiche sur la page de réservation.
 
-   ![Image d’exemple de message que le client voit lors de la tentative de réservation pendant les congés.](../media/bookings-timeoff-message.png)
+   ![Image de l’exemple de message que le client voit lors d’une tentative de réservation pendant un congé.](../media/bookings-timeoff-message.png)
 
-## <a name="schedule-employee-time-off"></a>Planifier les congés des employés
+## <a name="schedule-employee-time-off"></a>Planifier le congé des employés
 
-1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis **bookings**.
+1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis sélectionnez **Bookings**.
 
    ![Image du lanceur d’applications.](../media/bookings-applauncher.png)
 
-1. Dans le volet de navigation, sélectionnez **Congés** \> **du calendrier**.
+1. Choisissez votre calendrier.
 
-   ![Image de l’affichage calendrier bookings et du bouton Délai d’arrêt.](../media/bookings-calendar-timeoff.png)
+1. Dans le volet de navigation supérieur, **sélectionnez Ajouter un délai d’attente**.
 
-1. Remplissez les détails, y compris un titre, une date et des heures de début et de fin, un emplacement et d’autres notes. Si l’employé sera absent pendant une journée entière ou pendant plusieurs jours, sélectionnez **Tout le jour**.
+   ![Image de Bookings bouton Affichage calendrier et délai d’attente.](../media/bookings-calendar-timeoff.png)
 
-1. Sélectionnez le ou les membres du personnel qui prennent des congés.
+1. Renseignez les détails, notamment un titre, une date et une heure de début et de fin, un emplacement et d’autres notes. Si l’employé est absent pendant une journée entière ou plusieurs jours, sélectionnez **Événement de la journée entière**.
+
+1. Sélectionnez le membre du personnel ou les membres qui prennent le congé.
 
 1. Sélectionnez **Enregistrer**.

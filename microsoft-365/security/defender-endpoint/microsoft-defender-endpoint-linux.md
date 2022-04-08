@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dcc4ed070e900f9df892abb58cd05cdad2dca619
-ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.openlocfilehash: 5f04933d54bf02732fea34df25b25e3996e23932
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64687008"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705083"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
@@ -48,6 +48,10 @@ Microsoft Defender pour point de terminaison pour Linux inclut des fonctionnalit
 
 - Accès au portail Microsoft 365 Defender
 - Distribution Linux à l’aide du gestionnaire système [systemd](https://systemd.io/)
+
+  >[!NOTE]
+  >La distribution Linux à l’aide du gestionnaire de système, à l’exception de RHEL/CentOS 6.x, prend en charge SystemV et Upstart.
+
 - Expérience de niveau débutant dans les scripts Linux et BASH
 - Privilèges d’administration sur l’appareil (en cas de déploiement manuel)
 

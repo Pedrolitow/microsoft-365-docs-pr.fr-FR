@@ -23,12 +23,12 @@ ms.custom:
 - AdminTemplateSet
 - business_assist
 - admindeeplinkMAC
-ms.openlocfilehash: 17a3a63dfb3faedb5ff213b24dd14abd57f55bb3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 08d28a5586c92d0e439170807f750150d9fbe17c
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316924"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704776"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Ajouter des enregistrements DNS pour connecter votre domaine
 
@@ -97,14 +97,16 @@ Vous pourrez ajouter plusieurs types d’enregistrements DNS selon les services 
 
 Vous obtiendrez les informations relatives à l’enregistrement MX à partir de l’Assistant Configuration du domaine du centre d’administration.
 
-Sur le site Web de votre fournisseur d’hébergement, créez un nouvel enregistrement MX.
-Vérifiez que les champs sont définis par les valeurs suivantes :
+Sur le site Web de votre fournisseur d’hébergement, créez un nouvel enregistrement MX. Vérifiez que les champs sont définis par les valeurs suivantes :
 
 - Type d’enregistrement : `MX`
 - Priorité : sélectionnez la valeur la plus élevée disponible, généralement `0`.
 - Nom de l’hôte : `@`
 - Adresse de pointage : copiez la valeur à partir du centre d’administration et collez-la ici.
-- TTL : `3600` (ou votre fournisseur par défaut)
+- TTL : `3600`
+
+> [!NOTE]
+> Exchange Online prend en charge uniquement les valeurs TTL inférieures à 6 heures (21 600 secondes).
 
 Sauvegardez l’enregistrement et supprimez tous les autres enregistrements MX.
 

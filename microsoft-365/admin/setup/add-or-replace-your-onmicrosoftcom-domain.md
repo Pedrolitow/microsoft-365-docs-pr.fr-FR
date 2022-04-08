@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 description: Découvrez comment créer un domaine onmicrosoft.com et en faire votre nouveau domaine de secours.
-ms.openlocfilehash: b6fd1f34b1a01eebe7c6717aa9c27fc91c387cd1
-ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.openlocfilehash: 82eca45807405980043b00e8cfe5a221c52fa065
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64690546"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704838"
 ---
 # <a name="add-and-replace-your-onmicrosoftcom-fallback-domain-in-microsoft-365"></a>Ajouter et remplacer votre domaine de secours onmicrosoft.com dans Microsoft 365
 
@@ -93,7 +93,7 @@ Pour ajouter, modifier ou supprimer des domaines, vous **devez** être **adminis
 > [!NOTE]
 > Avant de remplacer votre domaine de secours par un nouveau domaine onmicrosoft.com, vous pouvez envisager de modifier votre domaine onmicrosoft.com SharePoint. La création d’un domaine onmicrosoft supplémentaire et son utilisation en tant que domaine de secours ne renomment pas SharePoint Online. Vos URL SharePoint et OneDrive existantes resteront les mêmes.  Vous pouvez modifier votre domaine SharePoint.onmicrosoft en suivant les étapes PowerShell fournies dans [SharePoint préversion du changement de nom de domaine](/sharepoint/change-your-sharepoint-domain-name) (actuellement disponible pour tout locataire avec moins de 1 000 sites).
 
-Une fois que vous avez créé votre nouveau domaine onmicrsoft.com, procédez comme suit pour le remplacer par votre domaine de secours.
+Une fois que vous avez créé votre nouveau domaine onmicrosoft.com, procédez comme suit pour le remplacer par votre domaine de secours.
 
 1. Dans le Centre d'administration Microsoft 365, sélectionnez **Paramètres**, puis sélectionnez **Domaines**. 
 

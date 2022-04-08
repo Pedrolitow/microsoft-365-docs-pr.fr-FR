@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: a5ffc97c6b2cfd1016da1f218ab2a16c153a5528
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: a39a0a55592ba8f76403f9e8d9aaf7416cb35228
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666281"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714238"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>Comprendre les paramètres de configuration de nouvelle génération dans Microsoft Defender pour les PME
 
@@ -88,7 +88,7 @@ Le tableau suivant décrit les paramètres préconfigurés pour Defender entrepr
 | [Analyser les fichiers réseau](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) | Par défaut, [AllowScanningNetworkFiles](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) n’est pas activé et les fichiers réseau ne sont pas analysés. |
 | [Analyser les messages électroniques](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) | Par défaut, [AllowEmailScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) n’est pas activé et les e-mails ne sont pas analysés. |
 | [Nombre de jours (0 à 90) pour conserver les programmes malveillants mis en quarantaine](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) | Par défaut, [DaysToRetainCleanedMalware](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) , ce paramètre est défini sur zéro (0) jours. Artifacts que les mises en quarantaine ne sont pas supprimées automatiquement.  |
-| [Envoyer le consentement d’exemples](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | Par défaut, [SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) est et envoie automatiquement des exemples sécurisés. Les exemples d’exemples fiables incluent `.bat`, `.scr``.dll`et `.exe` les fichiers qui ne contiennent pas d’informations d’identification personnelle (PII). Si un fichier contient des informations personnelles, l’utilisateur reçoit une demande d’autorisation de la soumission de l’exemple.<br/><br/>[En savoir plus sur la protection cloud et l’envoi d’exemples](../defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission.md) |
+| [Envoyer le consentement d’exemples](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | Par défaut, [SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) est défini pour envoyer automatiquement des échantillons sécurisés. Les exemples d’exemples fiables incluent `.bat`, `.scr``.dll`et `.exe` les fichiers qui ne contiennent pas d’informations d’identification personnelle (PII). Si un fichier contient des informations personnelles, l’utilisateur reçoit une demande d’autorisation de la soumission de l’exemple.<br/><br/>[En savoir plus sur la protection cloud et l’envoi d’exemples](../defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission.md) |
 | [Analyser les lecteurs amovibles](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) | Par défaut, [AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) est configuré pour analyser les lecteurs amovibles, tels que les lecteurs usb sur les appareils.<br/><br/>[En savoir plus sur les paramètres de stratégie anti-programme malveillant](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#list-of-antimalware-policy-settings)   |
 | [Exécuter le temps d’analyse rapide quotidien](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) | Par défaut, [ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) est défini sur 2h00.<br/><br/>[En savoir plus sur les paramètres d’analyse](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings).   |
 | [Rechercher les mises à jour des signatures avant d’exécuter l’analyse](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) | Par défaut, [CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) est configuré pour rechercher les mises à jour du renseignement de sécurité avant d’exécuter des analyses antivirus/anti-programme malveillant.<br/><br/>[En savoir plus sur les paramètres d’analyse et les](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) [mises à jour du renseignement de sécurité](../defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md#security-intelligence-updates).   |

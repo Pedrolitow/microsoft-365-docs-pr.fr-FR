@@ -1,5 +1,5 @@
 ---
-title: Obtenir l’accès à Microsoft Bookings
+title: Accéder à Microsoft Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -9,33 +9,38 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Découvrez comment accéder à la fonctionnalité Bookings dans Microsoft 365.
-ms.openlocfilehash: f77a2b63b9c8ce88b1f9f7236f748713656d688e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e399540711cdf0f5e9556ac1ac8aeed32d00db52
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173942"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714260"
 ---
 # <a name="get-access-to-microsoft-bookings"></a>Accès à Microsoft Bookings
 
-Cette rubrique décrit comment accéder à Bookings pour la première fois. Il vous indique également comment activer ou désactiver Bookings dans votre organisation. Il explique également comment attribuer des licences à vos utilisateurs afin qu’ils accèdent à Bookings et l’utilisent.
+> [!NOTE]
+> Cet article vous aide à interagir avec la dernière version de Microsoft Bookings. Les versions précédentes seront mises hors service dans les prochains mois.
 
-## <a name="access-bookings-for-the-first-time"></a>Accéder aux réservations pour la première fois
+Cette rubrique explique comment accéder à Bookings pour la première fois. Il vous indique également comment activer ou désactiver Bookings dans votre organisation. Il explique également comment vous pouvez attribuer des licences à vos utilisateurs afin qu’ils puissent accéder à Bookings et les utiliser.
 
-Si votre administrateur informatique vous a accordé l’accès à Bookings, vous pouvez accéder à l’application via Office online.
+## <a name="access-bookings-for-the-first-time"></a>Accès Bookings pour la première fois
 
-La première fois que vous utilisez [Bookings,](https://outlook.office.com/bookings/onboarding) vous créez un calendrier et vous définissez votre entreprise.
+Si votre administrateur informatique vous a accordé l’accès à Bookings, vous pouvez accéder à l’application via Office en ligne.
 
-1. Sélectionnez **Obtenir maintenant et** sélectionnez Ajouter un calendrier de **réservation.** S’il ne s’agit pas de votre première fois sur cette page, vous pouvez sélectionner un autre calendrier de réservation ou effectuer une recherche pour un autre calendrier de réservation.
+La première fois que vous utilisez [Bookings](https://outlook.office.com/bookings/onboarding) vous créez un calendrier et configurez votre entreprise.
 
-2. Entrez votre nom d’entreprise et votre type d’entreprise, puis **sélectionnez Continuer.**
+1. Sélectionnez **Démarrage**, entrez votre nom d’entreprise et votre type d’entreprise, puis **sélectionnez Créer un calendrier**.
 
-Vous êtes maintenant prêt à configurer Bookings pour votre organisation. Vous pouvez vous rendre sur la page Bookings avec ce [lien,](https://outlook.office.com/bookings/onboarding)à partir du lanceur d’applications ou de office.com. Utilisez les rubriques suivantes pour continuer à définir vos fonctionnalités Bookings.
+1. Si ce n’est pas votre première fois sur cette page, vous pouvez sélectionner un autre calendrier de réservation ou rechercher un autre calendrier de réservation.
+
+2. Entrez le nom de votre entreprise et le type d’entreprise, puis **sélectionnez Continuer**.
+
+Vous êtes maintenant prêt à configurer Bookings pour votre organisation. Vous pouvez accéder à la page Bookings avec ce [lien](https://outlook.office.com/bookings/onboarding), à partir du lanceur d’applications ou de office.com. Utilisez les rubriques suivantes pour continuer à configurer vos fonctionnalités Bookings.
 
 - [Protégez vos informations](enter-business-information.md)
 - [Ajouter du personnel aux réservations](add-staff.md)
 - [Définir vos offres de service](define-service-offerings.md)
-- [Planifier des fermetures d’entreprise, des congés et des congés](schedule-closures-time-off-vacation.md)
+- [Planifier des fermetures d’entreprise, des congés et des vacances](schedule-closures-time-off-vacation.md)
 - [Définition de vos stratégies de planification](set-scheduling-policies.md)
 - [Définir les heures de travail des employés](employee-hours.md)
 - [Personnaliser et publier votre page de réservation](customize-booking-page.md)

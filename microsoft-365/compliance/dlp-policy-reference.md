@@ -1,5 +1,5 @@
 ---
-title: Référence de stratégie de protection contre la perte de données
+title: Informations de référence sur la stratégie de protection contre la perte de données
 f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
@@ -17,100 +17,100 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 recommendations: false
-description: Référence de configuration et composant de stratégie DLP
+description: Informations de référence sur le composant de stratégie DLP et la configuration
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 9b9658db71ea9945cedb746ec688eff5018a4ba4
-ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
+ms.openlocfilehash: d6bc24f313d1998979a460bcd41e87ccbe8abc5c
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64520613"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704920"
 ---
-# <a name="data-loss-prevention-policy-reference"></a>Référence de stratégie de protection contre la perte de données
+# <a name="data-loss-prevention-policy-reference"></a>Informations de référence sur la stratégie de protection contre la perte de données
 
-Les stratégies de protection contre la perte de données (DLP) ont de nombreux composants à configurer. Pour créer une stratégie efficace, vous devez comprendre l’objectif de chaque composant et la façon dont sa configuration modifie le comportement de la stratégie. Cet article fournit une anatomie détaillée d’une stratégie DLP.
+Les stratégies de protection contre la perte de données (DLP) ont de nombreux composants à configurer. Pour créer une stratégie efficace, vous devez comprendre quel est l’objectif de chaque composant et comment sa configuration modifie le comportement de la stratégie. Cet article fournit une anatomie détaillée d’une stratégie DLP.
 
 ## <a name="policy-templates"></a>Modèles de stratégie 
 
-Les modèles de stratégie DLP sont pré-triés en quatre catégories :
+Les modèles de stratégie DLP sont pré triés en quatre catégories :
 
-- Ceux qui peuvent détecter et protéger les types **d’informations** financières.
-- Ceux qui peuvent détecter et protéger les types d’informations médicales **et médicales** .
-- Ceux qui peuvent détecter et protéger les types **d’informations de** confidentialité.
+- Qui peuvent détecter et protéger les types d’informations **financières** .
+- Celles qui peuvent détecter et protéger les types d’informations **médicales et médicales** .
+- Qui peuvent détecter et protéger les types d’informations de **confidentialité** .
 - Modèle **personnalisé** que vous pouvez utiliser pour créer votre propre stratégie si l’un des autres ne répond pas aux besoins de votre organisation.
 
-Ce tableau répertorie tous les modèles de stratégie et les types d’informations sensibles qu’ils couvrent. 
+Ce tableau répertorie tous les modèles de stratégie et les types d’informations sensibles (SIT) qu’ils couvrent. 
 
 mise à jour : 23/06/2021
 
-|Catégorie| Modèle | SIT |
+|Catégorie| Modèle | S' ASSEOIR |
 |---------|---------|---------|
-|Financier| Données financières en Australie| - [Code SWIFT](sensitive-information-type-entity-definitions.md#swift-code) </br> - [Numéro de fichier fiscal australien](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Numéro de compte bancaire australie](sensitive-information-type-entity-definitions.md#australia-bank-account-number) </br> - [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number)|
-|Financier| Données financières pour le Canada |- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de compte bancaire canada](sensitive-information-type-entity-definitions.md#canada-bank-account-number)|
-|Financier| Données financières pour la France |- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de carte de crédit de l’UE](sensitive-information-type-entity-definitions.md#eu-debit-card-number)|
-|Financier| Données financières en Allemagne |- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de carte de crédit de l’UE](sensitive-information-type-entity-definitions.md#eu-debit-card-number)|
-|Financier| Données financières en Israël |- [Numéro de compte bancaire Israël](sensitive-information-type-entity-definitions.md#israel-bank-account-number) </br> - [Code SWIFT](sensitive-information-type-entity-definitions.md#swift-code) </br> - [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number)|
-|Financier| Données financières au Japon |- [Numéro de compte bancaire Japon](sensitive-information-type-entity-definitions.md#japan-bank-account-number) </br> - [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number)|
+|Financier| Données financières en Australie| - [Code SWIFT](sensitive-information-type-entity-definitions.md#swift-code) </br> - [Numéro de fichier fiscal en Australie](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Numéro de compte bancaire en Australie](sensitive-information-type-entity-definitions.md#australia-bank-account-number) </br> - [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number)|
+|Financier| Données financières du Canada |- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de compte bancaire au Canada](sensitive-information-type-entity-definitions.md#canada-bank-account-number)|
+|Financier| Données financières de la France |- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de carte de débit de l’UE](sensitive-information-type-entity-definitions.md#eu-debit-card-number)|
+|Financier| Données financières en Allemagne |- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de carte de débit de l’UE](sensitive-information-type-entity-definitions.md#eu-debit-card-number)|
+|Financier| Données financières en Israël |- [Numéro de compte bancaire en Israël](sensitive-information-type-entity-definitions.md#israel-bank-account-number) </br> - [Code SWIFT](sensitive-information-type-entity-definitions.md#swift-code) </br> - [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number)|
+|Financier| Données financières au Japon |- [Numéro de compte bancaire au Japon](sensitive-information-type-entity-definitions.md#japan-bank-account-number) </br> - [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number)|
 |Financier| PCI Data Security Standard (PCI DSS)|- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number)|
-|Financier| Loi anti-cybercriminalité en Arabie Saoudite|- [Code SWIFT](sensitive-information-type-entity-definitions.md#swift-code) </br> - [Numéro de compte bancaire international (IBAN)](sensitive-information-type-entity-definitions.md#international-banking-account-number-iban) |
+|Financier| Loi anti-cybercriminalité en Arabie saoudite|- [Code SWIFT](sensitive-information-type-entity-definitions.md#swift-code) </br> - [Numéro de compte bancaire international (IBAN)](sensitive-information-type-entity-definitions.md#international-banking-account-number-iban) |
 |Financier| Données financières en Arabie Saoudite |- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Code SWIFT](sensitive-information-type-entity-definitions.md#swift-code) </br> - [Numéro de compte bancaire international (IBAN)](sensitive-information-type-entity-definitions.md#international-banking-account-number-iban)|
-|Financier| Données financières pour le Royaume-Uni|- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de carte de crédit de l’UE](sensitive-information-type-entity-definitions.md#eu-debit-card-number) </br> - [Code SWIFT](sensitive-information-type-entity-definitions.md#swift-code)|
+|Financier| Données financières du Royaume-Uni|- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de carte de débit de l’UE](sensitive-information-type-entity-definitions.md#eu-debit-card-number) </br> - [Code SWIFT](sensitive-information-type-entity-definitions.md#swift-code)|
 |Financier| Données financières américaines|- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de compte bancaire américain](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [Numéro de routage ABA](sensitive-information-type-entity-definitions.md#aba-routing-number)|
 |Financier| U.S. Federal Trade Commission (FTC) Consumer Rules|- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de compte bancaire américain](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [Numéro de routage ABA](sensitive-information-type-entity-definitions.md#aba-routing-number)|
-|Financier| U.S. Gramm-Leach-Bliley Act (GLBA) Enhanced|- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de compte bancaire américain](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [Numéro d’identification du contribuable individuel (ITIN) des États-Unis](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [Numéro de sécurité sociale (SSN) des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [Numéro de passeport des États-Unis/du Royaume-Uni](sensitive-information-type-entity-definitions.md#usuk-passport-number) </br> -[Numéro de permis de conduire américain](sensitive-information-type-entity-definitions.md#us-drivers-license-number)</br> - [Tous les noms complets](sensitive-information-type-entity-definitions.md#all-full-names)</br> - [Adresses physiques des États-Unis](sensitive-information-type-entity-definitions.md#us-physical-addresses)|
-|Financier| U.S. Gramm-Leach-Bliley Act (GLBA)|- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de compte bancaire américain](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [Numéro d’identification du contribuable individuel (ITIN) des États-Unis](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [Numéro de sécurité sociale (SSN) des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
-|Santé et médical| Australia Health Records Act (HRIP Act) Enhanced |- [Numéro de fichier fiscal australien](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Numéro de compte médical australie](sensitive-information-type-entity-definitions.md#australia-medical-account-number) </br> - [Tous les noms complets](sensitive-information-type-entity-definitions.md#all-full-names) </br> - [Toutes les conditions médicales](sensitive-information-type-entity-definitions.md#all-medical-terms-and-conditions) </br> - [Adresses physiques en Australie](sensitive-information-type-entity-definitions.md#australia-physical-addresses)|
-|Santé et médical| Australia Health Records Act (HRIP Act)|- [Numéro de fichier fiscal australien](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Numéro de compte médical australie](sensitive-information-type-entity-definitions.md#australia-medical-account-number)|
-|Santé et médical| Canada Health Information Act (HIA) |- [Numéro de passeport canada](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [Numéro d’assurance sociale canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro de service de santé canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification personnelle de santé canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
-|Santé et médical| Canada Personal Health Information Act (PHIA)Pér.|- [Numéro d’assurance sociale canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro de service de santé canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification personnelle de santé canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
-|Santé et médical| Canada Personal Health Act (PHIPA)Pér. |- [Numéro de passeport canada](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [Numéro d’assurance sociale canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro de service de santé canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification personnelle de santé canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
-|Santé et médical| U.K. Access to Medical Reports Act|- [Numéro de service de santé national du Royaume-Uni](sensitive-information-type-entity-definitions.md#uk-national-health-service-number) </br> - [Numéro d’assurance national (NINO) du Royaume-Uni](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino)|
-|Santé et médical| U.S. Health Insurance Act (HIPAA) Enhanced|</br> - [Classification internationale des maladie (ICD-9-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-9-cm) </br> - [Classification internationale des maladie (ICD-10-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-10-cm) </br> - [Tous les noms complets](sensitive-information-type-entity-definitions.md#all-full-names) </br> - [Toutes les conditions médicales](sensitive-information-type-entity-definitions.md#all-medical-terms-and-conditions) </br> - [Adresses physiques des États-Unis](sensitive-information-type-entity-definitions.md#us-physical-addresses)|
-|Santé et médical| U.S. Health Insurance Act (HIPAA)| - [Classification internationale des maladie (ICD-9-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-9-cm) </br> - [Classification internationale des maladie (ICD-10-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-10-cm)|
-|Confidentialité| Amélioration de la loi sur la confidentialité en Australie|- [Numéro de permis de conduire australien](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) </br> - [Numéro de passeport australien](sensitive-information-type-entity-definitions.md#australia-passport-number) </br> - [Tous les noms complets](sensitive-information-type-entity-definitions.md#all-full-names) </br> - [Toutes les conditions médicales](sensitive-information-type-entity-definitions.md#all-medical-terms-and-conditions) </br> - [Adresses physiques en Australie](sensitive-information-type-entity-definitions.md#australia-physical-addresses)|
-|Confidentialité| Australia Privacy Act|- [Numéro de permis de conduire australien](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) </br> - [Numéro de passeport australien](sensitive-information-type-entity-definitions.md#australia-passport-number)|
-|Confidentialité| Australia Personally Identifiable Information (PII) Data|- [Numéro de fichier fiscal australien](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Numéro de permis de conduire australien](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)|
-|Confidentialité| Canada Personally Identifiable Information (PII) Data|- [Numéro de permis de conduire canada](sensitive-information-type-entity-definitions.md#canada-drivers-license-number)</br> - [Numéro de compte bancaire canada](sensitive-information-type-entity-definitions.md#canada-bank-account-number) </br> - [Numéro de passeport canada](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [Numéro d’assurance sociale canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro de service de santé canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification personnelle de santé canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
-|Confidentialité| Canada Personal Information Protection Act (PIPA)|- [Numéro de passeport canada](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [Numéro d’assurance sociale canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro de service de santé canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification personnelle de santé canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
-|Confidentialité| Canada Personal Information Protection and Electronic Documents Act (PIPEDA)|- [Numéro de permis de conduire canada](sensitive-information-type-entity-definitions.md#canada-drivers-license-number) </br> - [Numéro de compte bancaire canada](sensitive-information-type-entity-definitions.md#canada-bank-account-number) </br> - [Numéro de passeport canada](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [Numéro d’assurance sociale canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro de service de santé canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification personnelle de santé canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
-|Confidentialité| Loi informatique et liberté en France|- [Carte d’identité nationale (CNI) france](sensitive-information-type-entity-definitions.md#france-national-id-card-cni) </br> - [Numéro de sécurité sociale français (INSEE)](sensitive-information-type-entity-definitions.md#france-social-security-number-insee)|
-|Confidentialité| France Personally Identifiable Information (PII) Data|- [Numéro de sécurité sociale français (INSEE)](sensitive-information-type-entity-definitions.md#france-social-security-number-insee) </br> - [Numéro de permis de conduire français](sensitive-information-type-entity-definitions.md#france-drivers-license-number) </br> - [Numéro de passeport français](sensitive-information-type-entity-definitions.md#france-passport-number) </br> - [Carte d’identité nationale (CNI) france](sensitive-information-type-entity-definitions.md#france-national-id-card-cni)|
-|Confidentialité| Règlement général sur la protection des données (R GDPR) amélioré|- [Adresses physiques d’Autriche](sensitive-information-type-entity-definitions.md#austria-physical-addresses) </br> - [Adresses physiques en Belgique](sensitive-information-type-entity-definitions.md#belgium-physical-addresses)</br> - [Adresses physiques en Bulgarie](sensitive-information-type-entity-definitions.md#bulgaria-physical-addresses)</br> - [Adresses physiques croates](sensitive-information-type-entity-definitions.md#croatia-physical-addresses)</br> - [Adresses physiques postales](sensitive-information-type-entity-definitions.md#cyprus-physical-addresses)</br> - [Adresses physiques de la République tchèque](sensitive-information-type-entity-definitions.md#czech-republic-physical-addresses)</br> - [Adresses physiques du Danemark](sensitive-information-type-entity-definitions.md#denmark-physical-addresses)</br> - [Adresses physiques d’Estonie](sensitive-information-type-entity-definitions.md#estonia-physical-addresses)</br> - [Adresses physiques en Finlande](sensitive-information-type-entity-definitions.md#finland-physical-addresses)</br> - [Adresses physiques en France](sensitive-information-type-entity-definitions.md#france-physical-addresses)</br> - [Adresses physiques en Allemagne](sensitive-information-type-entity-definitions.md#germany-physical-addresses)</br> - [Adresses physiques de Grèce](sensitive-information-type-entity-definitions.md#greece-physical-addresses)</br> - [Adresses physiques en Hongrie](sensitive-information-type-entity-definitions.md#hungary-physical-addresses)</br> - [Adresses physiques pour l’Irlande](sensitive-information-type-entity-definitions.md#ireland-physical-addresses)</br> - [Adresses physiques d’Italie](sensitive-information-type-entity-definitions.md#italy-physical-addresses)</br> - [Adresses physiques letton](sensitive-information-type-entity-definitions.md#latvia-physical-addresses)</br> - [Adresses physiques lituaniennes](sensitive-information-type-entity-definitions.md#lithuania-physical-addresses)</br> - [Adresses physiques du Luxembourg](sensitive-information-type-entity-definitions.md#luxemburg-physical-addresses)</br> - [Adresses physiques de Malte](sensitive-information-type-entity-definitions.md#malta-physical-addresses)</br> - [Adresses physiques des Pays-Bas](sensitive-information-type-entity-definitions.md#netherlands-physical-addresses)</br> - [Adresses physiques en Pologne](sensitive-information-type-entity-definitions.md#poland-physical-addresses)</br> - [Adresses physiques portugais](sensitive-information-type-entity-definitions.md#portugal-physical-addresses)</br> - [Adresses physiques de Roumanie](sensitive-information-type-entity-definitions.md#romania-physical-addresses)</br> - [Adresses physiques slovaques](sensitive-information-type-entity-definitions.md#slovakia-physical-addresses)</br> - [Adresses physiques de Slovénie](sensitive-information-type-entity-definitions.md#slovenia-physical-addresses)</br> - [Adresses physiques d’Espagne](sensitive-information-type-entity-definitions.md#spain-physical-addresses)</br> - [Adresses physiques suède](sensitive-information-type-entity-definitions.md#sweden-physical-addresses)</br> - [Numéro de sécurité sociale d’Autriche](sensitive-information-type-entity-definitions.md#austria-social-security-number)</br> - [Numéro de sécurité sociale français (INSEE)](sensitive-information-type-entity-definitions.md#france-social-security-number-insee)</br> - [Numéro de sécurité sociale grec (AMKA)](sensitive-information-type-entity-definitions.md#greece-social-security-number-amka)</br> - [Numéro de sécurité sociale hongrois (TAJ)](sensitive-information-type-entity-definitions.md#hungary-social-security-number-taj)</br> - [Numéro de sécurité sociale (SSN) Espagne](sensitive-information-type-entity-definitions.md#spain-social-security-number-ssn)</br> - [Carte d’identité Autriche](sensitive-information-type-entity-definitions.md#austria-identity-card)</br> - [Carte d’identité Chypre](sensitive-information-type-entity-definitions.md#cyprus-identity-card)</br> - [Numéro de carte d’identité Allemagne](sensitive-information-type-entity-definitions.md#germany-identity-card-number)</br> - [Numéro de carte d’identité Malte](sensitive-information-type-entity-definitions.md#malta-identity-card-number)</br> - [Carte d’identité nationale (CNI) france](sensitive-information-type-entity-definitions.md#france-national-id-card-cni)</br> - [Carte d’identité nationale grèce](sensitive-information-type-entity-definitions.md#greece-national-id-card)</br> - [ID national (Finlande)](sensitive-information-type-entity-definitions.md#finland-national-id)</br> - [ID national polonais (PESEL)](sensitive-information-type-entity-definitions.md#poland-national-id-pesel)</br> - [ID national suédois](sensitive-information-type-entity-definitions.md#sweden-national-id)</br> - [Numéro d’identification personnelle (OIB) croate](sensitive-information-type-entity-definitions.md#croatia-personal-identification-oib-number)</br> - [Numéro d’identité personnel tchèque](sensitive-information-type-entity-definitions.md#czech-personal-identity-number)</br> - [Numéro d’identification personnel danemark](sensitive-information-type-entity-definitions.md#denmark-personal-identification-number)</br> - [Code d’identification personnelle estonien](sensitive-information-type-entity-definitions.md#estonia-personal-identification-code)</br> - [Numéro d’identification personnel hongrie](sensitive-information-type-entity-definitions.md#hungary-personal-identification-number)</br> - [Numéro d’identification national (personnes physiques)](sensitive-information-type-entity-definitions.md#luxemburg-national-identification-number-natural-persons)</br> - [Numéro d’identification national (personnes non physiques)](sensitive-information-type-entity-definitions.md#luxemburg-national-identification-number-non-natural-persons)</br> - [Code fiscal italien](sensitive-information-type-entity-definitions.md#italy-fiscal-code)</br> - [Code personnel letton](sensitive-information-type-entity-definitions.md#latvia-personal-code)</br> - [Code personnel lituanien](sensitive-information-type-entity-definitions.md#lithuania-personal-code)</br> - [Code numérique personnel (CNP) roumain](sensitive-information-type-entity-definitions.md#romania-personal-numeric-code-cnp)</br> - [Numéro de service des citoyens néerlandais (BSN)](sensitive-information-type-entity-definitions.md#netherlands-citizens-service-bsn-number)</br> - [Numéro de service public personnel (PPS) Irlande](sensitive-information-type-entity-definitions.md#ireland-personal-public-service-pps-number)</br> - [Numéro civile uniforme de Bulgarie](sensitive-information-type-entity-definitions.md#bulgaria-uniform-civil-number)</br> - [Numéro national belgique](sensitive-information-type-entity-definitions.md#belgium-national-number)</br> - [DNI (Espagne)](sensitive-information-type-entity-definitions.md#spain-dni)</br> - [Numéro de citoyen maître unique de Slovénie](sensitive-information-type-entity-definitions.md#slovenia-unique-master-citizen-number)</br> - [Numéro personnel slovaque](sensitive-information-type-entity-definitions.md#slovakia-personal-number)</br> - [Numéro de carte de citoyen portugais](sensitive-information-type-entity-definitions.md#portugal-citizen-card-number)</br> - [Numéro d’ID fiscal de Malte](sensitive-information-type-entity-definitions.md#malta-tax-identification-number)</br> - [Numéro d’identification fiscale autrichen](sensitive-information-type-entity-definitions.md#austria-tax-identification-number)</br> - [Numéro d’identification fiscale à Chypre](sensitive-information-type-entity-definitions.md#cyprus-tax-identification-number)</br> - [Numéro d’identification fiscale français (numéro SPI.)](sensitive-information-type-entity-definitions.md#france-tax-identification-number)</br> - [Numéro d’identification fiscale allemand](sensitive-information-type-entity-definitions.md#germany-tax-identification-number)</br> - [Numéro d’identification fiscale grec](sensitive-information-type-entity-definitions.md#greece-tax-identification-number)</br> - [Numéro d’identification fiscale hongrie](sensitive-information-type-entity-definitions.md#hungary-tax-identification-number)</br> - [Numéro d’identification fiscale pays-Bas](sensitive-information-type-entity-definitions.md#netherlands-tax-identification-number)</br> - [Numéro d’identification fiscale polonais](sensitive-information-type-entity-definitions.md#poland-tax-identification-number)</br> - [Numéro d’identification fiscale portugais](sensitive-information-type-entity-definitions.md#portugal-tax-identification-number)</br> - [Numéro d’identification fiscale slovénien](sensitive-information-type-entity-definitions.md#slovenia-tax-identification-number)</br> - [Numéro d’identification fiscale Espagnol](sensitive-information-type-entity-definitions.md#spain-tax-identification-number)</br> - [Numéro d’identification fiscale suédois](sensitive-information-type-entity-definitions.md#sweden-tax-identification-number)</br> - [Permis de conduire Autriche](sensitive-information-type-entity-definitions.md#austria-drivers-license-number)</br> - [Numéro de permis de conduire belgique](sensitive-information-type-entity-definitions.md#belgium-drivers-license-number)</br> - [Numéro de permis de conduire bulgare](sensitive-information-type-entity-definitions.md#bulgaria-drivers-license-number)</br> - [Numéro de permis de conduire Croate](sensitive-information-type-entity-definitions.md#croatia-drivers-license-number)</br> - [Numéro de permis de conduire de Chypre](sensitive-information-type-entity-definitions.md#cyprus-drivers-license-number)</br> - [Numéro de permis de conduire tchèque](sensitive-information-type-entity-definitions.md#czech-drivers-license-number)</br> - [Numéro de permis de conduire danemark](sensitive-information-type-entity-definitions.md#denmark-drivers-license-number)</br> - [Numéro de permis de conduire Estonie](sensitive-information-type-entity-definitions.md#estonia-drivers-license-number)</br> - [Numéro de permis de conduire Finlande](sensitive-information-type-entity-definitions.md#finland-drivers-license-number)</br> - [Numéro de permis de conduire français](sensitive-information-type-entity-definitions.md#france-drivers-license-number)</br> - [Numéro de permis de conduire allemand](sensitive-information-type-entity-definitions.md#germany-drivers-license-number)</br> - [Numéro de permis de conduire Grec](sensitive-information-type-entity-definitions.md#greece-drivers-license-number)</br> - [Numéro de permis de conduire hongrois](sensitive-information-type-entity-definitions.md#hungary-drivers-license-number)</br> - [Numéro de permis de conduire Irlande](sensitive-information-type-entity-definitions.md#ireland-drivers-license-number)</br> - [Numéro de permis de conduire Italie](sensitive-information-type-entity-definitions.md#italy-drivers-license-number)</br> - [Numéro de permis de conduire letton](sensitive-information-type-entity-definitions.md#latvia-drivers-license-number)</br> - [Numéro de permis de conduire lituanien](sensitive-information-type-entity-definitions.md#lithuania-drivers-license-number)</br> - [Numéro de permis de conduire De Qu’est-ce que vous avez ?](sensitive-information-type-entity-definitions.md#luxemburg-drivers-license-number)</br> - [Numéro de permis de conduire de Malte](sensitive-information-type-entity-definitions.md#malta-drivers-license-number)</br> - [Numéro de permis de conduire néerlandais](sensitive-information-type-entity-definitions.md#netherlands-drivers-license-number)</br> - [Numéro de permis de conduire polonais](sensitive-information-type-entity-definitions.md#poland-drivers-license-number)</br> - [Numéro de permis de conduire Portugal](sensitive-information-type-entity-definitions.md#portugal-drivers-license-number)</br> - [Numéro de permis de conduire roumain](sensitive-information-type-entity-definitions.md#romania-drivers-license-number)</br> - [Numéro de permis de conduire slovaque](sensitive-information-type-entity-definitions.md#slovakia-drivers-license-number)</br> - [Numéro de permis de conduire slovène](sensitive-information-type-entity-definitions.md#slovenia-drivers-license-number)</br> - [Numéro de permis de conduire Espagnol](sensitive-information-type-entity-definitions.md#spain-drivers-license-number)</br> - [Numéro de permis de conduire suédois](sensitive-information-type-entity-definitions.md#sweden-drivers-license-number)</br> - [Numéro de passeport Autriche](sensitive-information-type-entity-definitions.md#austria-passport-number)</br> - [Numéro de passeport belgique](sensitive-information-type-entity-definitions.md#belgium-passport-number)</br> - [Numéro de passeport bulgare](sensitive-information-type-entity-definitions.md#bulgaria-passport-number)</br> - [Numéro de passeport croate](sensitive-information-type-entity-definitions.md#croatia-passport-number)</br> - [Numéro de passeport de Chypre](sensitive-information-type-entity-definitions.md#cyprus-passport-number)</br> - [Numéro de passeport de la République tchèque](sensitive-information-type-entity-definitions.md#czech-passport-number)</br> - [Numéro de passeport danemark](sensitive-information-type-entity-definitions.md#denmark-passport-number)</br> - [Numéro de passeport estonien](sensitive-information-type-entity-definitions.md#estonia-passport-number)</br> - [Numéro de passeport finlande](sensitive-information-type-entity-definitions.md#finland-passport-number)</br> - [Numéro de passeport français](sensitive-information-type-entity-definitions.md#france-passport-number)</br> - [Numéro de passeport allemand](sensitive-information-type-entity-definitions.md#germany-passport-number)</br> - [Numéro de passeport Grec](sensitive-information-type-entity-definitions.md#greece-passport-number)</br> - [Numéro de passeport hongrois](sensitive-information-type-entity-definitions.md#hungary-passport-number)</br> - [Numéro de passeport irlande](sensitive-information-type-entity-definitions.md#ireland-passport-number)</br> - [Numéro de passeport Italie](sensitive-information-type-entity-definitions.md#italy-passport-number)</br> - [Numéro de passeport letton](sensitive-information-type-entity-definitions.md#latvia-passport-number)</br> - [Numéro de passeport lituanien](sensitive-information-type-entity-definitions.md#lithuania-passport-number)</br> - [Numéro de passeport Dem passport](sensitive-information-type-entity-definitions.md#luxemburg-passport-number)</br> - [Numéro de passeport de Malte](sensitive-information-type-entity-definitions.md#malta-passport-number)</br> - [Numéro de passeport néerlandais](sensitive-information-type-entity-definitions.md#netherlands-passport-number)</br> - [Passport polonais](sensitive-information-type-entity-definitions.md#poland-passport-number)</br> - [Numéro de passeport portugais](sensitive-information-type-entity-definitions.md#portugal-passport-number)</br> - [Numéro de passeport roumain](sensitive-information-type-entity-definitions.md#romania-passport-number)</br> - [Numéro de passeport slovaque](sensitive-information-type-entity-definitions.md#slovakia-passport-number)</br> - [Numéro de passeport slovène](sensitive-information-type-entity-definitions.md#slovenia-passport-number)</br> - [Numéro de passeport Espagnol](sensitive-information-type-entity-definitions.md#spain-passport-number)</br> - [Numéro de passeport suédois](sensitive-information-type-entity-definitions.md#sweden-passport-number)</br> - [Numéro de carte de crédit de l’UE](sensitive-information-type-entity-definitions.md#eu-debit-card-number)</br> - [Tous les noms complets](sensitive-information-type-entity-definitions.md#all-full-names)|
-|Confidentialité| Règlement général sur la protection des données (RGPD)|- [Numéro de carte de crédit de l’UE](sensitive-information-type-entity-definitions.md#eu-debit-card-number) </br> - [Numéro de permis de conduire de l’UE](sensitive-information-type-entity-definitions.md#eu-drivers-license-number) </br> - [Numéro d’identification national de l’UE](sensitive-information-type-entity-definitions.md#eu-national-identification-number)</br> - [Numéro de passeport de l’UE](sensitive-information-type-entity-definitions.md#eu-passport-number) </br> - [Numéro de sécurité sociale de l’UE ou identification équivalente](sensitive-information-type-entity-definitions.md#eu-social-security-number-or-equivalent-identification)</br> - [Numéro d’identification fiscale de l’UE](sensitive-information-type-entity-definitions.md#eu-tax-identification-number)|
-|Confidentialité| Germany Personally Identifiable Information (PII) Data|- [Numéro de permis de conduire allemand](sensitive-information-type-entity-definitions.md#germany-drivers-license-number) </br> - [Numéro de passeport allemand](sensitive-information-type-entity-definitions.md#germany-passport-number)| 
-|Confidentialité| Israel Personally Identifiable Information (PII) Data|- [Numéro d’identification national Israël](sensitive-information-type-entity-definitions.md#israel-national-identification-number)| 
-|Confidentialité| Israel Protection of Privacy|- [Numéro d’identification national Israël](sensitive-information-type-entity-definitions.md#israel-national-identification-number)</br> - [Numéro de compte bancaire Israël](sensitive-information-type-entity-definitions.md#israel-bank-account-number)|
-|Confidentialité| Données d’informations d’identification personnelle (PII) améliorées pour le Japon|- [Numéro d’assurance sociale Japon (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin)</br> - [Japan My Number - Personal](sensitive-information-type-entity-definitions.md#japan-my-number---personal)</br> - [Numéro de passeport Japon](sensitive-information-type-entity-definitions.md#japan-passport-number)</br> - [Numéro de permis de conduire Japon](sensitive-information-type-entity-definitions.md#japan-drivers-license-number)</br> - [Tous les noms complets](sensitive-information-type-entity-definitions.md#all-full-names)</br> - [Adresses physiques du Japon](sensitive-information-type-entity-definitions.md#all-physical-addresses)|
-|Confidentialité| Japan Personally Identifiable Information (PII) Data|- [Numéro d’enregistrement du résident japonais](sensitive-information-type-entity-definitions.md#japan-resident-registration-number) </br> - [Numéro d’assurance sociale Japon (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin)|
-|Confidentialité| Protection améliorée des informations personnelles au Japon|- [Numéro d’assurance sociale Japon (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin) </br> - [Japan My Number - Personal](sensitive-information-type-entity-definitions.md#japan-my-number---personal)</br> - [Numéro de passeport Japon](sensitive-information-type-entity-definitions.md#japan-passport-number) </br> - [Numéro de permis de conduire Japon](sensitive-information-type-entity-definitions.md#japan-drivers-license-number)</br> - [Tous les noms complets](sensitive-information-type-entity-definitions.md#all-full-names)</br> - [Adresses physiques du Japon](sensitive-information-type-entity-definitions.md#all-physical-addresses)|
-|Confidentialité| Japan Protection of Personal Information|- [Numéro d’enregistrement du résident japonais](sensitive-information-type-entity-definitions.md#japan-resident-registration-number)</br> - [Numéro d’assurance sociale Japon (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin)|
-|Confidentialité| Données d’identification personnelle (PII) en Arabie Saoudite|- [ID national arabie saoudite](sensitive-information-type-entity-definitions.md#saudi-arabia-national-id)|
-|Confidentialité| U.K. Data Protection Act|- [Numéro d’assurance national (NINO) du Royaume-Uni](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [Numéro de passeport des États-Unis/du Royaume-Uni](sensitive-information-type-entity-definitions.md#usuk-passport-number) </br> - [Code SWIFT](sensitive-information-type-entity-definitions.md#swift-code)|
+|Financier| U.S. Gramm-Leach-Bliley Act (GLBA) Enhanced|- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de compte bancaire américain](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [Numéro d’identification du contribuable (ITIN) des États-Unis](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [Numéro de sécurité sociale (SSN) des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [Numéro de passeport des États-Unis/Du Royaume-Uni](sensitive-information-type-entity-definitions.md#usuk-passport-number) </br> -[Numéro de permis de conduire américain](sensitive-information-type-entity-definitions.md#us-drivers-license-number)</br> - [Tous les noms complets](sensitive-information-type-entity-definitions.md#all-full-names)</br> - [Adresses physiques américaines](sensitive-information-type-entity-definitions.md#us-physical-addresses)|
+|Financier| U.S. Gramm-Leach-Bliley Act (GLBA)|- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de compte bancaire américain](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [Numéro d’identification du contribuable (ITIN) des États-Unis](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [Numéro de sécurité sociale (SSN) des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
+|Santé et médical| Australia Health Records Act (HRIP Act) Enhanced |- [Numéro de fichier fiscal en Australie](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Numéro de compte médical en Australie](sensitive-information-type-entity-definitions.md#australia-medical-account-number) </br> - [Tous les noms complets](sensitive-information-type-entity-definitions.md#all-full-names) </br> - [Toutes les conditions générales médicales](sensitive-information-type-entity-definitions.md#all-medical-terms-and-conditions) </br> - [Adresses physiques de l’Australie](sensitive-information-type-entity-definitions.md#australia-physical-addresses)|
+|Santé et médical| Australia Health Records Act (HRIP Act)|- [Numéro de fichier fiscal en Australie](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Numéro de compte médical en Australie](sensitive-information-type-entity-definitions.md#australia-medical-account-number)|
+|Santé et médical| Canada Health Information Act (HIA) |- [Numéro de passeport du Canada](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [Numéro d’assurance sociale du Canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro du service de santé du Canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification de la santé personnelle du Canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
+|Santé et médical| Canada Personal Health Information Act (PHIA) Manitoba|- [Numéro d’assurance sociale du Canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro du service de santé du Canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification de la santé personnelle du Canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
+|Santé et médical| Canada Personal Health Act (PHIPA) Ontario |- [Numéro de passeport du Canada](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [Numéro d’assurance sociale du Canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro du service de santé du Canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification de la santé personnelle du Canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
+|Santé et médical| U.K. Access to Medical Reports Act|- [Numéro de service de santé national du Royaume-Uni](sensitive-information-type-entity-definitions.md#uk-national-health-service-number) </br> - [Numéro d’assurance nationale du Royaume-Uni (NINO)](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino)|
+|Santé et médical| Loi américaine sur l’assurance maladie (HIPAA) améliorée|</br> - [Classification internationale des maladies (ICD-9-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-9-cm) </br> - [Classification internationale des maladies (ICD-10-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-10-cm) </br> - [Tous les noms complets](sensitive-information-type-entity-definitions.md#all-full-names) </br> - [Toutes les conditions générales médicales](sensitive-information-type-entity-definitions.md#all-medical-terms-and-conditions) </br> - [Adresses physiques américaines](sensitive-information-type-entity-definitions.md#us-physical-addresses)|
+|Santé et médical| U.S. Health Insurance Act (HIPAA)| - [Classification internationale des maladies (ICD-9-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-9-cm) </br> - [Classification internationale des maladies (ICD-10-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-10-cm)|
+|Confidentialité| Australie Privacy Act Enhanced|- [Numéro de permis de conduire en Australie](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) </br> - [Numéro de passeport en Australie](sensitive-information-type-entity-definitions.md#australia-passport-number) </br> - [Tous les noms complets](sensitive-information-type-entity-definitions.md#all-full-names) </br> - [Toutes les conditions générales médicales](sensitive-information-type-entity-definitions.md#all-medical-terms-and-conditions) </br> - [Adresses physiques de l’Australie](sensitive-information-type-entity-definitions.md#australia-physical-addresses)|
+|Confidentialité| Australia Privacy Act|- [Numéro de permis de conduire en Australie](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) </br> - [Numéro de passeport en Australie](sensitive-information-type-entity-definitions.md#australia-passport-number)|
+|Confidentialité| Australia Personally Identifiable Information (PII) Data|- [Numéro de fichier fiscal en Australie](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Numéro de permis de conduire en Australie](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)|
+|Confidentialité| Canada Personally Identifiable Information (PII) Data|- [Numéro de permis de conduire au Canada](sensitive-information-type-entity-definitions.md#canada-drivers-license-number)</br> - [Numéro de compte bancaire au Canada](sensitive-information-type-entity-definitions.md#canada-bank-account-number) </br> - [Numéro de passeport du Canada](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [Numéro d’assurance sociale du Canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro du service de santé du Canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification de la santé personnelle du Canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
+|Confidentialité| Canada Personal Information Protection Act (PIPA)|- [Numéro de passeport du Canada](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [Numéro d’assurance sociale du Canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro du service de santé du Canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification de la santé personnelle du Canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
+|Confidentialité| Canada Personal Information Protection and Electronic Documents Act (PIPEDA)|- [Numéro de permis de conduire au Canada](sensitive-information-type-entity-definitions.md#canada-drivers-license-number) </br> - [Numéro de compte bancaire au Canada](sensitive-information-type-entity-definitions.md#canada-bank-account-number) </br> - [Numéro de passeport du Canada](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [Numéro d’assurance sociale du Canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro du service de santé du Canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification de la santé personnelle du Canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
+|Confidentialité| Loi informatique et liberté en France|- [Carte d’identité nationale de France (CNI)](sensitive-information-type-entity-definitions.md#france-national-id-card-cni) </br> - [Numéro de sécurité sociale en France (INSEE)](sensitive-information-type-entity-definitions.md#france-social-security-number-insee)|
+|Confidentialité| France Personally Identifiable Information (PII) Data|- [Numéro de sécurité sociale en France (INSEE)](sensitive-information-type-entity-definitions.md#france-social-security-number-insee) </br> - [Numéro de permis de conduire en France](sensitive-information-type-entity-definitions.md#france-drivers-license-number) </br> - [Numéro de passeport en France](sensitive-information-type-entity-definitions.md#france-passport-number) </br> - [Carte d’identité nationale de France (CNI)](sensitive-information-type-entity-definitions.md#france-national-id-card-cni)|
+|Confidentialité| Règlement général sur la protection des données (RGPD) amélioré|- [Adresses physiques en Autriche](sensitive-information-type-entity-definitions.md#austria-physical-addresses) </br> - [Adresses physiques belges](sensitive-information-type-entity-definitions.md#belgium-physical-addresses)</br> - [Adresses physiques bulgares](sensitive-information-type-entity-definitions.md#bulgaria-physical-addresses)</br> - [Adresses physiques croates](sensitive-information-type-entity-definitions.md#croatia-physical-addresses)</br> - [Adresses physiques de Chypre](sensitive-information-type-entity-definitions.md#cyprus-physical-addresses)</br> - [Adresses physiques de la République tchèque](sensitive-information-type-entity-definitions.md#czech-republic-physical-addresses)</br> - [Adresses physiques du Danemark](sensitive-information-type-entity-definitions.md#denmark-physical-addresses)</br> - [Adresses physiques estoniennes](sensitive-information-type-entity-definitions.md#estonia-physical-addresses)</br> - [Adresses physiques en Finlande](sensitive-information-type-entity-definitions.md#finland-physical-addresses)</br> - [Adresses physiques de la France](sensitive-information-type-entity-definitions.md#france-physical-addresses)</br> - [Adresses physiques allemandes](sensitive-information-type-entity-definitions.md#germany-physical-addresses)</br> - [Adresses physiques de la Grèce](sensitive-information-type-entity-definitions.md#greece-physical-addresses)</br> - [Adresses physiques en Hongrie](sensitive-information-type-entity-definitions.md#hungary-physical-addresses)</br> - [Adresses physiques de l’Irlande](sensitive-information-type-entity-definitions.md#ireland-physical-addresses)</br> - [Adresses physiques en Italie](sensitive-information-type-entity-definitions.md#italy-physical-addresses)</br> - [Adresses physiques lettones](sensitive-information-type-entity-definitions.md#latvia-physical-addresses)</br> - [Adresses physiques lituaniennes](sensitive-information-type-entity-definitions.md#lithuania-physical-addresses)</br> - [Adresses physiques luxembourgeoises](sensitive-information-type-entity-definitions.md#luxemburg-physical-addresses)</br> - [Adresses physiques de Malte](sensitive-information-type-entity-definitions.md#malta-physical-addresses)</br> - [Adresses physiques des Pays-Bas](sensitive-information-type-entity-definitions.md#netherlands-physical-addresses)</br> - [Adresses physiques en Pologne](sensitive-information-type-entity-definitions.md#poland-physical-addresses)</br> - [Adresses physiques portugaises](sensitive-information-type-entity-definitions.md#portugal-physical-addresses)</br> - [Adresses physiques en Roumanie](sensitive-information-type-entity-definitions.md#romania-physical-addresses)</br> - [Adresses physiques en Slovaquie](sensitive-information-type-entity-definitions.md#slovakia-physical-addresses)</br> - [Adresses physiques slovènes](sensitive-information-type-entity-definitions.md#slovenia-physical-addresses)</br> - [Adresses physiques en Espagne](sensitive-information-type-entity-definitions.md#spain-physical-addresses)</br> - [Adresses physiques en Suède](sensitive-information-type-entity-definitions.md#sweden-physical-addresses)</br> - [Numéro de sécurité sociale en Autriche](sensitive-information-type-entity-definitions.md#austria-social-security-number)</br> - [Numéro de sécurité sociale en France (INSEE)](sensitive-information-type-entity-definitions.md#france-social-security-number-insee)</br> - [Numéro de sécurité sociale en Grèce (AMKA)](sensitive-information-type-entity-definitions.md#greece-social-security-number-amka)</br> - [Numéro de sécurité sociale hongrois (TAJ)](sensitive-information-type-entity-definitions.md#hungary-social-security-number-taj)</br> - [Numéro de sécurité sociale en Espagne (SSN)](sensitive-information-type-entity-definitions.md#spain-social-security-number-ssn)</br> - [Carte d’identité d’Autriche](sensitive-information-type-entity-definitions.md#austria-identity-card)</br> - [Carte d’identité de Chypre](sensitive-information-type-entity-definitions.md#cyprus-identity-card)</br> - [Numéro de carte d’identité d’Allemagne](sensitive-information-type-entity-definitions.md#germany-identity-card-number)</br> - [Numéro de carte d’identité de Malte](sensitive-information-type-entity-definitions.md#malta-identity-card-number)</br> - [Carte d’identité nationale de France (CNI)](sensitive-information-type-entity-definitions.md#france-national-id-card-cni)</br> - [Carte nationale d’ID de Grèce](sensitive-information-type-entity-definitions.md#greece-national-id-card)</br> - [ID national de la Finlande](sensitive-information-type-entity-definitions.md#finland-national-id)</br> - [Poland National ID (PESEL)](sensitive-information-type-entity-definitions.md#poland-national-id-pesel)</br> - [ID national de la Suède](sensitive-information-type-entity-definitions.md#sweden-national-id)</br> - [Numéro d’identification personnelle croate (OIB)](sensitive-information-type-entity-definitions.md#croatia-personal-identification-oib-number)</br> - [Numéro d’identité personnelle tchèque](sensitive-information-type-entity-definitions.md#czech-personal-identity-number)</br> - [Numéro d’identification personnelle du Danemark](sensitive-information-type-entity-definitions.md#denmark-personal-identification-number)</br> - [Code d’identification personnelle de l’Estonie](sensitive-information-type-entity-definitions.md#estonia-personal-identification-code)</br> - [Numéro d’identification personnelle en Hongrie](sensitive-information-type-entity-definitions.md#hungary-personal-identification-number)</br> - [Numéro d’identification national du Luxembourg (personnes physiques)](sensitive-information-type-entity-definitions.md#luxemburg-national-identification-number-natural-persons)</br> - [Numéro d’identification national du Luxembourg (personnes non naturelles)](sensitive-information-type-entity-definitions.md#luxemburg-national-identification-number-non-natural-persons)</br> - [Code fiscal de l’Italie](sensitive-information-type-entity-definitions.md#italy-fiscal-code)</br> - [Code personnel letton](sensitive-information-type-entity-definitions.md#latvia-personal-code)</br> - [Code personnel lituanien](sensitive-information-type-entity-definitions.md#lithuania-personal-code)</br> - [Code numérique personnel roumain (CNP)](sensitive-information-type-entity-definitions.md#romania-personal-numeric-code-cnp)</br> - [Numéro du BSN (Netherlands Citizen’s Service)](sensitive-information-type-entity-definitions.md#netherlands-citizens-service-bsn-number)</br> - [Numéro de service public personnel (PPS) en Irlande](sensitive-information-type-entity-definitions.md#ireland-personal-public-service-pps-number)</br> - [Numéro civil uniforme en Bulgarie](sensitive-information-type-entity-definitions.md#bulgaria-uniform-civil-number)</br> - [Numéro national de belgique](sensitive-information-type-entity-definitions.md#belgium-national-number)</br> - [Espagne DNI](sensitive-information-type-entity-definitions.md#spain-dni)</br> - [Slovénie Unique Master Citizen Number](sensitive-information-type-entity-definitions.md#slovenia-unique-master-citizen-number)</br> - [Numéro personnel en Slovaquie](sensitive-information-type-entity-definitions.md#slovakia-personal-number)</br> - [Numéro de carte de citoyen du Portugal](sensitive-information-type-entity-definitions.md#portugal-citizen-card-number)</br> - [Numéro d’ID fiscal de Malte](sensitive-information-type-entity-definitions.md#malta-tax-identification-number)</br> - [Numéro d’identification fiscale en Autriche](sensitive-information-type-entity-definitions.md#austria-tax-identification-number)</br> - [Numéro d’identification fiscale de Chypre](sensitive-information-type-entity-definitions.md#cyprus-tax-identification-number)</br> - [Numéro d’identification fiscale en France (numéro SPI.)](sensitive-information-type-entity-definitions.md#france-tax-identification-number)</br> - [Numéro d’identification fiscale en Allemagne](sensitive-information-type-entity-definitions.md#germany-tax-identification-number)</br> - [Numéro d’identification fiscale grecque](sensitive-information-type-entity-definitions.md#greece-tax-identification-number)</br> - [Numéro d’identification fiscale en Hongrie](sensitive-information-type-entity-definitions.md#hungary-tax-identification-number)</br> - [Numéro d’identification fiscale aux Pays-Bas](sensitive-information-type-entity-definitions.md#netherlands-tax-identification-number)</br> - [Numéro d’identification fiscale en Pologne](sensitive-information-type-entity-definitions.md#poland-tax-identification-number)</br> - [Numéro d’identification fiscale du Portugal](sensitive-information-type-entity-definitions.md#portugal-tax-identification-number)</br> - [Numéro d’identification fiscale en Slovénie](sensitive-information-type-entity-definitions.md#slovenia-tax-identification-number)</br> - [Numéro d’identification fiscale en Espagne](sensitive-information-type-entity-definitions.md#spain-tax-identification-number)</br> - [Numéro d’identification fiscale en Suède](sensitive-information-type-entity-definitions.md#sweden-tax-identification-number)</br> - [Permis de conduire en Autriche](sensitive-information-type-entity-definitions.md#austria-drivers-license-number)</br> - [Numéro de permis de conduire en Belgique](sensitive-information-type-entity-definitions.md#belgium-drivers-license-number)</br> - [Numéro de permis de conduire en Bulgarie](sensitive-information-type-entity-definitions.md#bulgaria-drivers-license-number)</br> - [Numéro de permis de conduire en Croatie](sensitive-information-type-entity-definitions.md#croatia-drivers-license-number)</br> - [Numéro de permis de conduire de Chypre](sensitive-information-type-entity-definitions.md#cyprus-drivers-license-number)</br> - [Numéro de permis de conduire tchèque](sensitive-information-type-entity-definitions.md#czech-drivers-license-number)</br> - [Numéro de permis de conduire au Danemark](sensitive-information-type-entity-definitions.md#denmark-drivers-license-number)</br> - [Numéro de permis de conduire estonien](sensitive-information-type-entity-definitions.md#estonia-drivers-license-number)</br> - [Numéro de permis de conduire en Finlande](sensitive-information-type-entity-definitions.md#finland-drivers-license-number)</br> - [Numéro de permis de conduire en France](sensitive-information-type-entity-definitions.md#france-drivers-license-number)</br> - [Numéro de permis de conduire allemand](sensitive-information-type-entity-definitions.md#germany-drivers-license-number)</br> - [Numéro de permis de conduire en Grèce](sensitive-information-type-entity-definitions.md#greece-drivers-license-number)</br> - [Numéro de permis de conduire en Hongrie](sensitive-information-type-entity-definitions.md#hungary-drivers-license-number)</br> - [Numéro de permis de conduire en Irlande](sensitive-information-type-entity-definitions.md#ireland-drivers-license-number)</br> - [Numéro de permis de conduire en Italie](sensitive-information-type-entity-definitions.md#italy-drivers-license-number)</br> - [Numéro de permis de conduire letton](sensitive-information-type-entity-definitions.md#latvia-drivers-license-number)</br> - [Numéro de permis de conduire en Lituanie](sensitive-information-type-entity-definitions.md#lithuania-drivers-license-number)</br> - [Numéro de permis de conduire du Luxemburg](sensitive-information-type-entity-definitions.md#luxemburg-drivers-license-number)</br> - [Numéro de permis de conduire de Malte](sensitive-information-type-entity-definitions.md#malta-drivers-license-number)</br> - [Numéro de permis de conduire aux Pays-Bas](sensitive-information-type-entity-definitions.md#netherlands-drivers-license-number)</br> - [Numéro de permis de conduire en Pologne](sensitive-information-type-entity-definitions.md#poland-drivers-license-number)</br> - [Numéro de permis de conduire au Portugal](sensitive-information-type-entity-definitions.md#portugal-drivers-license-number)</br> - [Numéro de permis de conduire en Roumanie](sensitive-information-type-entity-definitions.md#romania-drivers-license-number)</br> - [Numéro de permis de conduire en Slovaquie](sensitive-information-type-entity-definitions.md#slovakia-drivers-license-number)</br> - [Numéro de permis de conduire en Slovénie](sensitive-information-type-entity-definitions.md#slovenia-drivers-license-number)</br> - [Numéro de permis de conduire en Espagne](sensitive-information-type-entity-definitions.md#spain-drivers-license-number)</br> - [Numéro de permis de conduire en Suède](sensitive-information-type-entity-definitions.md#sweden-drivers-license-number)</br> - [Numéro de passeport en Autriche](sensitive-information-type-entity-definitions.md#austria-passport-number)</br> - [Numéro de passeport en Belgique](sensitive-information-type-entity-definitions.md#belgium-passport-number)</br> - [Numéro de passeport en Bulgarie](sensitive-information-type-entity-definitions.md#bulgaria-passport-number)</br> - [Numéro de passeport en Croatie](sensitive-information-type-entity-definitions.md#croatia-passport-number)</br> - [Numéro de passeport de Chypre](sensitive-information-type-entity-definitions.md#cyprus-passport-number)</br> - [Numéro de passeport de la République tchèque](sensitive-information-type-entity-definitions.md#czech-passport-number)</br> - [Numéro de passeport du Danemark](sensitive-information-type-entity-definitions.md#denmark-passport-number)</br> - [Numéro de passeport estonien](sensitive-information-type-entity-definitions.md#estonia-passport-number)</br> - [Numéro de passeport en Finlande](sensitive-information-type-entity-definitions.md#finland-passport-number)</br> - [Numéro de passeport en France](sensitive-information-type-entity-definitions.md#france-passport-number)</br> - [Numéro de passeport allemand](sensitive-information-type-entity-definitions.md#germany-passport-number)</br> - [Numéro de passeport en Grèce](sensitive-information-type-entity-definitions.md#greece-passport-number)</br> - [Numéro de passeport en Hongrie](sensitive-information-type-entity-definitions.md#hungary-passport-number)</br> - [Numéro de passeport en Irlande](sensitive-information-type-entity-definitions.md#ireland-passport-number)</br> - [Numéro de passeport en Italie](sensitive-information-type-entity-definitions.md#italy-passport-number)</br> - [Numéro de passeport letton](sensitive-information-type-entity-definitions.md#latvia-passport-number)</br> - [Numéro de passeport en Lituanie](sensitive-information-type-entity-definitions.md#lithuania-passport-number)</br> - [Numéro de passeport de Luxemburg](sensitive-information-type-entity-definitions.md#luxemburg-passport-number)</br> - [Numéro de passeport maltais](sensitive-information-type-entity-definitions.md#malta-passport-number)</br> - [Numéro de passeport des Pays-Bas](sensitive-information-type-entity-definitions.md#netherlands-passport-number)</br> - [Passeport pologne](sensitive-information-type-entity-definitions.md#poland-passport-number)</br> - [Numéro de passeport du Portugal](sensitive-information-type-entity-definitions.md#portugal-passport-number)</br> - [Numéro de passeport en Roumanie](sensitive-information-type-entity-definitions.md#romania-passport-number)</br> - [Numéro de passeport en Slovaquie](sensitive-information-type-entity-definitions.md#slovakia-passport-number)</br> - [Numéro de passeport en Slovénie](sensitive-information-type-entity-definitions.md#slovenia-passport-number)</br> - [Numéro de passeport en Espagne](sensitive-information-type-entity-definitions.md#spain-passport-number)</br> - [Numéro de passeport en Suède](sensitive-information-type-entity-definitions.md#sweden-passport-number)</br> - [Numéro de carte de débit de l’UE](sensitive-information-type-entity-definitions.md#eu-debit-card-number)</br> - [Tous les noms complets](sensitive-information-type-entity-definitions.md#all-full-names)|
+|Confidentialité| Règlement général sur la protection des données (RGPD)|- [Numéro de carte de débit de l’UE](sensitive-information-type-entity-definitions.md#eu-debit-card-number) </br> - [Numéro de permis de conduire de l’UE](sensitive-information-type-entity-definitions.md#eu-drivers-license-number) </br> - [Numéro d’identification nationale de l’UE](sensitive-information-type-entity-definitions.md#eu-national-identification-number)</br> - [Numéro de passeport de l’UE](sensitive-information-type-entity-definitions.md#eu-passport-number) </br> - [Numéro de sécurité sociale de l’UE ou identification équivalente](sensitive-information-type-entity-definitions.md#eu-social-security-number-or-equivalent-identification)</br> - [Numéro d’identification fiscale de l’UE](sensitive-information-type-entity-definitions.md#eu-tax-identification-number)|
+|Confidentialité| Germany Personally Identifiable Information (PII) Data|- [Numéro de permis de conduire en Allemagne](sensitive-information-type-entity-definitions.md#germany-drivers-license-number) </br> - [Numéro de passeport en Allemagne](sensitive-information-type-entity-definitions.md#germany-passport-number)| 
+|Confidentialité| Israel Personally Identifiable Information (PII) Data|- [Numéro d’identification nationale d’Israël](sensitive-information-type-entity-definitions.md#israel-national-identification-number)| 
+|Confidentialité| Israel Protection of Privacy|- [Numéro d’identification nationale d’Israël](sensitive-information-type-entity-definitions.md#israel-national-identification-number)</br> - [Numéro de compte bancaire en Israël](sensitive-information-type-entity-definitions.md#israel-bank-account-number)|
+|Confidentialité| Amélioration des données d’informations d’identification personnelle (PII) au Japon|- [Numéro d’assurance sociale du Japon (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin)</br> - [Japon Mon numéro - Personnel](sensitive-information-type-entity-definitions.md#japan-my-number---personal)</br> - [Numéro de passeport au Japon](sensitive-information-type-entity-definitions.md#japan-passport-number)</br> - [Numéro de permis de conduire au Japon](sensitive-information-type-entity-definitions.md#japan-drivers-license-number)</br> - [Tous les noms complets](sensitive-information-type-entity-definitions.md#all-full-names)</br> - [Adresses physiques du Japon](sensitive-information-type-entity-definitions.md#all-physical-addresses)|
+|Confidentialité| Japan Personally Identifiable Information (PII) Data|- [Numéro d’inscription des résidents du Japon](sensitive-information-type-entity-definitions.md#japan-resident-registration-number) </br> - [Numéro d’assurance sociale du Japon (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin)|
+|Confidentialité| Amélioration de la protection des informations personnelles au Japon|- [Numéro d’assurance sociale du Japon (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin) </br> - [Japon Mon numéro - Personnel](sensitive-information-type-entity-definitions.md#japan-my-number---personal)</br> - [Numéro de passeport au Japon](sensitive-information-type-entity-definitions.md#japan-passport-number) </br> - [Numéro de permis de conduire au Japon](sensitive-information-type-entity-definitions.md#japan-drivers-license-number)</br> - [Tous les noms complets](sensitive-information-type-entity-definitions.md#all-full-names)</br> - [Adresses physiques du Japon](sensitive-information-type-entity-definitions.md#all-physical-addresses)|
+|Confidentialité| Japan Protection of Personal Information|- [Numéro d’inscription des résidents du Japon](sensitive-information-type-entity-definitions.md#japan-resident-registration-number)</br> - [Numéro d’assurance sociale du Japon (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin)|
+|Confidentialité| Données d’identification personnelle (PII) de l’Arabie saoudite|- [ID national de l’Arabie saoudite](sensitive-information-type-entity-definitions.md#saudi-arabia-national-id)|
+|Confidentialité| U.K. Data Protection Act|- [Numéro d’assurance nationale du Royaume-Uni (NINO)](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [Numéro de passeport des États-Unis/Du Royaume-Uni](sensitive-information-type-entity-definitions.md#usuk-passport-number) </br> - [Code SWIFT](sensitive-information-type-entity-definitions.md#swift-code)|
 |Confidentialité| U.K. Privacy and Electronic Communications Regulations|- [Code SWIFT](sensitive-information-type-entity-definitions.md#swift-code)|
-|Confidentialité| U.K. Personally Identifiable Information (PII) Data|- [Numéro d’assurance national (NINO) du Royaume-Uni](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [Numéro de passeport des États-Unis/du Royaume-Uni](sensitive-information-type-entity-definitions.md#usuk-passport-number)|
-|Confidentialité| U.K. Personal Information Online Code of Practice (PIOCP)|- [Numéro d’assurance national (NINO) du Royaume-Uni](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [Numéro de service de santé national du Royaume-Uni](sensitive-information-type-entity-definitions.md#uk-national-health-service-number) </br> - [Code SWIFT](sensitive-information-type-entity-definitions.md#swift-code)|
-|Confidentialité| U.S Patriot Act Enhanced|- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de compte bancaire américain](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [Numéro d’identification du contribuable individuel (ITIN) des États-Unis](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [Numéro de sécurité sociale (SSN) des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [Tous les noms complets](sensitive-information-type-entity-definitions.md#all-full-names)</br> - [Adresses physiques des États-Unis](sensitive-information-type-entity-definitions.md#us-physical-addresses)|
-|Confidentialité| U.S. Patriot Act|- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de compte bancaire américain](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [Numéro d’identification du contribuable individuel (ITIN) des États-Unis](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [Numéro de sécurité sociale (SSN) des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
-|Confidentialité| Données d’informations d’identification personnelle (PII) améliorées pour les États-Unis|- [Numéro d’identification du contribuable individuel (ITIN) des États-Unis](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [Numéro de sécurité sociale (SSN) des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [Numéro de passeport des États-Unis/du Royaume-Uni](sensitive-information-type-entity-definitions.md#usuk-passport-number)</br> - [Tous les noms complets](sensitive-information-type-entity-definitions.md#all-full-names)</br> - [Adresses physiques des États-Unis](sensitive-information-type-entity-definitions.md#us-physical-addresses)|
-|Confidentialité| U.S. Personally Identifiable Information (PII) Data|- [Numéro d’identification du contribuable individuel (ITIN) des États-Unis](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [Numéro de sécurité sociale (SSN) des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [Numéro de passeport des États-Unis/du Royaume-Uni](sensitive-information-type-entity-definitions.md#usuk-passport-number)|
-|Confidentialité| U.S. State Breach Notification Laws Enhanced|- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de compte bancaire américain](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> -[Numéro de permis de conduire américain](sensitive-information-type-entity-definitions.md#us-drivers-license-number) </br> - [Numéro de sécurité sociale (SSN) des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [Tous les noms complets](sensitive-information-type-entity-definitions.md#all-full-names) </br> - [Numéro de passeport des États-Unis/du Royaume-Uni](sensitive-information-type-entity-definitions.md#usuk-passport-number)</br> - [Toutes les conditions médicales](sensitive-information-type-entity-definitions.md#all-medical-terms-and-conditions)|
+|Confidentialité| U.K. Personally Identifiable Information (PII) Data|- [Numéro d’assurance nationale du Royaume-Uni (NINO)](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [Numéro de passeport des États-Unis/Du Royaume-Uni](sensitive-information-type-entity-definitions.md#usuk-passport-number)|
+|Confidentialité| U.K. Personal Information Online Code of Practice (PIOCP)|- [Numéro d’assurance nationale du Royaume-Uni (NINO)](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [Numéro de service de santé national du Royaume-Uni](sensitive-information-type-entity-definitions.md#uk-national-health-service-number) </br> - [Code SWIFT](sensitive-information-type-entity-definitions.md#swift-code)|
+|Confidentialité| U.S Patriot Act amélioré|- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de compte bancaire américain](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [Numéro d’identification du contribuable (ITIN) des États-Unis](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [Numéro de sécurité sociale (SSN) des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [Tous les noms complets](sensitive-information-type-entity-definitions.md#all-full-names)</br> - [Adresses physiques américaines](sensitive-information-type-entity-definitions.md#us-physical-addresses)|
+|Confidentialité| U.S. Patriot Act|- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de compte bancaire américain](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [Numéro d’identification du contribuable (ITIN) des États-Unis](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [Numéro de sécurité sociale (SSN) des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
+|Confidentialité| Données d’identification personnelle (PII) améliorées aux États-Unis|- [Numéro d’identification du contribuable (ITIN) des États-Unis](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [Numéro de sécurité sociale (SSN) des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [Numéro de passeport des États-Unis/Du Royaume-Uni](sensitive-information-type-entity-definitions.md#usuk-passport-number)</br> - [Tous les noms complets](sensitive-information-type-entity-definitions.md#all-full-names)</br> - [Adresses physiques américaines](sensitive-information-type-entity-definitions.md#us-physical-addresses)|
+|Confidentialité| U.S. Personally Identifiable Information (PII) Data|- [Numéro d’identification du contribuable (ITIN) des États-Unis](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [Numéro de sécurité sociale (SSN) des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [Numéro de passeport des États-Unis/Du Royaume-Uni](sensitive-information-type-entity-definitions.md#usuk-passport-number)|
+|Confidentialité| Les lois sur les notifications de violation de l’État des États-Unis ont été améliorées|- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de compte bancaire américain](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> -[Numéro de permis de conduire américain](sensitive-information-type-entity-definitions.md#us-drivers-license-number) </br> - [Numéro de sécurité sociale (SSN) des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [Tous les noms complets](sensitive-information-type-entity-definitions.md#all-full-names) </br> - [Numéro de passeport des États-Unis/Du Royaume-Uni](sensitive-information-type-entity-definitions.md#usuk-passport-number)</br> - [Toutes les conditions générales médicales](sensitive-information-type-entity-definitions.md#all-medical-terms-and-conditions)|
 |Confidentialité| U.S. State Breach Notification Laws|- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de compte bancaire américain](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> -[Numéro de permis de conduire américain](sensitive-information-type-entity-definitions.md#us-drivers-license-number) </br> - [Numéro de sécurité sociale (SSN) des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
 |Confidentialité| U.S. State Social Security Number Confidentiality Laws|- [Numéro de sécurité sociale (SSN) des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
 
 ## <a name="locations"></a>Emplacements
 
-Une stratégie DLP peut rechercher et protéger des éléments qui contiennent des informations sensibles à plusieurs emplacements.
+Une stratégie DLP peut rechercher et protéger des éléments qui contiennent des informations sensibles sur plusieurs emplacements.
 
-|Lieu  |Inclure/exclure l’étendue  |État des données  |Conditions préalables supplémentaires |
+|Emplacement  |Inclure/exclure l’étendue  |État des données  |Prérequis supplémentaires |
 |---------|---------|---------|---------|
-|Exchange en ligne |groupe de distribution | data-in-motion| Non |
-|SharePoint sites en ligne   |sites       | données au repos </br> données en cours d’utilisation | Non|
-|Les comptes OneDrive Entreprise| compte ou groupe de distribution |données au repos </br> données en cours d’utilisation|Non|
-|conversation et messages de canal Teams     | compte ou groupe de distribution |data-in-motion </br> données en cours d’utilisation |  Non       |
+|e-mail Exchange en ligne |groupe de distribution | données en mouvement| Non |
+|sites en ligne SharePoint   |sites       | données au repos </br> données utilisées | Non|
+|Les comptes OneDrive Entreprise| compte ou groupe de distribution |données au repos </br> données utilisées|Non|
+|conversation et messages de canal Teams     | compte ou groupe de distribution |données en mouvement </br> données utilisées |  Non       |
 |Microsoft Defender for Cloud Apps   | instance d’application cloud       |données au repos         | - [Utiliser des stratégies de protection contre la perte de données pour les applications cloud non Microsoft](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|Appareils  |utilisateurs ou groupe         |données au repos </br>  données en cours d’utilisation </br>  data-in-motion         |- [En savoir plus sur Microsoft 365 protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Démarrage protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Configurer les paramètres de proxy d’appareil et de connexion Internet pour Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
-|Référentiels locaux (partages de fichiers et SharePoint)    |référentiel         | données au repos         | - [En savoir plus sur Microsoft 365 protection contre la perte de données sur site](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Démarrage avec le scanneur local de protection contre la perte de données](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
-|PowerBI| espaces de travail | données en cours d’utilisation | Non|
+|Appareils  |utilisateurs ou groupe         |données au repos </br>  données utilisées </br>  données en mouvement         |- [En savoir plus sur Microsoft 365 protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Démarrage avec protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Configurer les paramètres de proxy d’appareil et de connexion Internet pour Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
+|Référentiels locaux (partages de fichiers et SharePoint)    |Référentiel         | données au repos         | - [En savoir plus sur le scanneur local Microsoft 365 la protection contre la perte de données](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Démarrage avec le scanneur local de protection contre la perte de données](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
+|PowerBI| Espaces | données utilisées | Non|
 
 Si vous décidez d’inclure des groupes de distribution particuliers dans Exchange, la stratégie DLP est uniquement étendue aux membres de ceux-ci. De manière identique, l’exclusion d’un groupe de distribution exclut tous ses membres de l’évaluation de la stratégie. Vous pouvez choisir de limiter une stratégie aux membres des listes de distribution, aux groupes de distribution dynamiques et aux groupes de sécurité. Une stratégie DLP ne peut pas contenir plus de 50 inclusions et exclusions de ce genre.
 
@@ -118,17 +118,17 @@ Si vous optez pour l’inclusion ou l’exclusion de sites SharePoint ou de comp
 
 Si vous choisissez d’inclure ou d’exclure des comptes ou groupes OneDrive spécifiques, une stratégie DLP peut contenir au plus 100 comptes d’utilisateurs ou 50 groupes pour l’inclusion ou l’exclusion.
 
-### <a name="location-support-for-how-content-can-be-defined"></a>Prise en charge de l’emplacement pour la définition du contenu
+### <a name="location-support-for-how-content-can-be-defined"></a>Prise en charge de l’emplacement pour la façon dont le contenu peut être défini
 
-Les stratégies DLP détectent les éléments sensibles en les faisant correspondre à un type d’informations sensibles (SIT), à une étiquette de confidentialité ou à une étiquette de rétention. Chaque emplacement prend en charge différentes méthodes de définition de contenu sensible. Lorsque vous combinez des emplacements dans une stratégie, la façon dont le contenu peut être défini peut changer par rapport à la façon dont il peut être défini par un seul emplacement. 
+Les stratégies DLP détectent les éléments sensibles en les mettant en correspondance avec un type d’informations sensibles (SIT), une étiquette de confidentialité ou une étiquette de rétention. Chaque emplacement prend en charge différentes méthodes de définition de contenu sensible. Lorsque vous combinez des emplacements dans une stratégie, la façon dont le contenu peut être défini peut changer par la façon dont il peut être défini par un emplacement unique. 
 
 > [!IMPORTANT]
-> Lorsque vous sélectionnez plusieurs emplacements pour une stratégie, une valeur « non » pour une catégorie de définition de contenu est prioritaire sur la valeur « oui ». Par exemple, lorsque vous sélectionnez SharePoint sites uniquement, la stratégie prendra en charge la détection d’éléments sensibles par une ou plusieurs valeurs SIT, par étiquette de confidentialité ou par étiquette de rétention. Toutefois, lorsque vous sélectionnez ***SharePoint sites et*** Teams les emplacements des messages de conversation et de canal, la stratégie ne prendra en charge que la détection d’éléments sensibles par SIT.
+> Lorsque vous sélectionnez plusieurs emplacements pour une stratégie, une valeur « non » pour une catégorie de définition de contenu est prioritaire sur la valeur « oui ». Par exemple, lorsque vous sélectionnez SharePoint sites uniquement, la stratégie prend en charge la détection d’éléments sensibles par un ou plusieurs sit, par étiquette de confidentialité ou par étiquette de rétention. Toutefois, lorsque vous sélectionnez SharePoint sites ***et*** Teams emplacements de messages de conversation et de canal, la stratégie prend uniquement en charge la détection des éléments sensibles par SIT.
 
-|Lieu| Le contenu peut être défini par SIT| Le contenu peut être défini comme étiquette de sensibilité| Le contenu peut être défini par une étiquette de rétention|
+|Emplacement| Le contenu peut être défini par SIT| Le contenu peut être défini sur une étiquette de confidentialité| Le contenu peut être défini par une étiquette de rétention|
 |---------|---------|---------|---------|
-|Exchange en ligne|Oui| Oui| Non|
-|SharePoint sites en ligne| Oui| Oui| Oui|
+|e-mail Exchange en ligne|Oui| Oui| Non|
+|sites en ligne SharePoint| Oui| Oui| Oui|
 |Les comptes OneDrive Entreprise| Oui| Oui| Oui|
 |Teams messages de conversation et de canal | Oui| Non| Non|
 |Appareils |Oui | Oui|  Non|
@@ -137,7 +137,7 @@ Les stratégies DLP détectent les éléments sensibles en les faisant correspon
 |PowerBI|Oui | Oui| Non|
 
 > [!NOTE]
-> DLP prend en charge la détection d’étiquettes de confidentialité sur les e-mails et les pièces jointes. Voir, Utiliser des étiquettes de confidentialité comme conditions dans les stratégies [DLP](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
+> DLP prend en charge la détection des étiquettes de confidentialité sur les e-mails et les pièces jointes Voir, [Utiliser les étiquettes de confidentialité comme conditions dans les stratégies DLP](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
 
 ## <a name="rules"></a>Rules
 
@@ -149,15 +149,15 @@ Les stratégies DLP détectent les éléments sensibles en les faisant correspon
 - How do I tune the behavior of a Policy through the tuning of rules
 - what's in a rule-->
 
-Les règles sont la logique métier des stratégies DLP. Elles sont composées des :
+Les règles sont la logique métier des stratégies DLP. Elles se composent des éléments suivantes :
 
-- [**Conditions**](#conditions) qui, lorsqu’elles correspondent, déclenchent la stratégie
+- [**Conditions**](#conditions) qui, lorsqu’elle est mise en correspondance, déclenchent la stratégie
 - [**Exceptions**](#exceptions) aux conditions
-- [**Actions**](#actions) à prendre lorsque la stratégie est déclenchée
-- [**Notifications des utilisateurs**](#user-notifications-and-policy-tips) pour informer vos utilisateurs lorsqu’ils font une chose qui déclenche une stratégie et les informer de la façon dont votre organisation souhaite que les informations sensibles soient traitées
-- [**Les remplacements d’utilisateurs**](#user-overrides) lorsqu’ils sont configurés par un administrateur permettent aux utilisateurs de remplacer de manière sélective une action de blocage
-- [**Rapports d’incident**](#incident-reports) qui avertissent les administrateurs et les autres parties prenantes clés lorsqu’une correspondance de règle se produit
-- [**Options supplémentaires qui**](#additional-options) définissent la priorité pour l’évaluation des règles et peuvent arrêter le traitement des règles et des stratégies.
+- [**Actions**](#actions) à effectuer lorsque la stratégie est déclenchée
+- [**Notifications**](#user-notifications-and-policy-tips) utilisateur pour informer vos utilisateurs lorsqu’ils font quelque chose qui déclenche une stratégie et les aider à les informer sur la façon dont votre organisation souhaite que les informations sensibles soient traitées
+- [**Les remplacements d’utilisateurs**](#user-overrides) lorsqu’ils sont configurés par un administrateur permettent aux utilisateurs de substituer de manière sélective une action de blocage
+- [**Rapports d’incidents**](#incident-reports) qui informent les administrateurs et d’autres parties prenantes clés lorsqu’une correspondance de règle se produit
+- [**Options supplémentaires**](#additional-options) qui définissent la priorité pour l’évaluation des règles et peuvent arrêter le traitement des règles et des stratégies.
 
  Une stratégie contient une ou plusieurs règles. Les règles sont exécutées de façon séquentielle, en commençant par la règle de priorité la plus élevée dans chaque stratégie.
 
@@ -165,18 +165,18 @@ Les règles sont la logique métier des stratégies DLP. Elles sont composées d
 
 #### <a name="hosted-service-workloads"></a>Charges de travail de service hébergées
 
-Pour les charges de travail de service hébergées, telles que Exchange Online, SharePoint Online et OneDrive Entreprise, une priorité est attribuée à chaque règle dans l’ordre dans lequel elle est créée. Cela signifie que la règle créée en premier a la priorité, la règle créée en deuxième a la deuxième priorité, et ainsi de suite. 
+Pour les charges de travail de service hébergées, comme Exchange Online, SharePoint Online et OneDrive Entreprise, chaque règle se voit attribuer une priorité dans l’ordre dans lequel elle est créée. Cela signifie que la règle créée en premier a la première priorité, la règle créée en deuxième a la deuxième priorité, et ainsi de suite. 
   
 ![Règles dans l’ordre de priorité](../media/dlp-rules-in-priority-order.png)
 
-Lorsque des règles sont appliquées au contenu, elles sont traitées dans l’ordre de priorité. Si le contenu correspond à plusieurs règles, la première règle évaluée qui *a l’action* la plus restrictive est appliquée. Par exemple, si le contenu correspond à toutes les règles suivantes, la règle *3* est appliquée car il s’agit de la règle la plus prioritaire et la plus restrictive :
+Lorsque des règles sont appliquées au contenu, elles sont traitées dans l’ordre de priorité. Si le contenu correspond à plusieurs règles, la première règle évaluée avec l’action la *plus* restrictive est appliquée. Par exemple, si le contenu correspond à toutes les règles suivantes, la *règle 3* est appliquée, car il s’agit de la règle la plus prioritaire et la plus restrictive :
   
 - Règle 1 : informe seulement les utilisateurs
 - Règle 2 : informe les utilisateurs, limite l’accès et permet le remplacement de l’utilisateur
 - *Règle 3 : informe les utilisateurs, limite l’accès et ne permet pas le remplacement de l’utilisateur*
 - Règle 4 : restreint l’accès
 
-Les règles 1, 2 et 4 sont évaluées, mais ne sont pas appliquées. Dans cet exemple, les correspondances pour toutes les règles sont enregistrées dans les journaux d’audit et affichées dans les rapports DLP, même si seule la règle la plus restrictive est appliquée.
+Les règles 1, 2 et 4 seraient évaluées, mais pas appliquées. Dans cet exemple, les correspondances pour toutes les règles sont enregistrées dans les journaux d’audit et affichées dans les rapports DLP, même si seule la règle la plus restrictive est appliquée.
 
 Vous pouvez utiliser une règle pour répondre à une exigence de protection particulière, puis utiliser une stratégie DLP pour regrouper des spécifications requises communes en matière de protection, par exemple l’ensemble des règles requises pour se conformer à une réglementation spécifique.
   
@@ -186,54 +186,60 @@ Par exemple, vous pouvez avoir une stratégie DLP qui vous aide à détecter la 
 
 #### <a name="for-endpoints"></a>Pour les points de terminaison
 
-La priorité des règles sur les points de terminaison est également attribuée en fonction de l’ordre dans lequel elle est créée. Cela signifie que la règle créée en premier a la priorité, la règle créée en deuxième a la deuxième priorité, et ainsi de suite. 
+La priorité des règles sur les points de terminaison est également affectée en fonction de l’ordre dans lequel elle est créée. Cela signifie que la règle créée en premier a la première priorité, la règle créée en deuxième a la deuxième priorité, et ainsi de suite. 
 
-Lorsqu’un fichier sur un point de terminaison correspond à plusieurs stratégies DLP, la première règle activée avec des restrictions est celle qui est appliquée au contenu. Par exemple, si le contenu correspond à toutes les règles suivantes, la règle 2 est appliquée car il *s’agit* de la règle de priorité la plus élevée configurée avec une restriction.
-  
-- Règle 1 : informe seulement les utilisateurs
-- *Règle 2 : informe les utilisateurs, limite l’accès et permet le remplacement de l’utilisateur*
-- Règle 3 : informe les utilisateurs, limite l’accès et ne permet pas le remplacement de l’utilisateur
-- Règle 4 : restreint l’accès
+Lorsqu’un fichier sur un point de terminaison correspond à plusieurs stratégies DLP, la première règle activée avec l’application la plus restrictive [sur les activités de point](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on) de terminaison est celle qui est appliquée sur le contenu. Par exemple, si le contenu correspond à toutes les règles suivantes, la règle 2 est prioritaire sur les autres règles, car elle est la plus restrictive.
 
-Les règles 1, 3 et 4 sont évaluées, mais ne sont pas appliquées. Dans cet exemple, les correspondances pour toutes les règles sont enregistrées dans les journaux d’audit et affichées dans les rapports DLP, même si seule la première règle avec restriction est appliquée.
+- Règle 1 : audite uniquement toutes les activités 
+- *Règle 2 : bloque toutes les activités*
+- Règle 3 : bloque toute activité avec l’option permettant à l’utilisateur final de remplacer
 
-Pour les règles qui sont appliquées aux points de terminaison, vous pouvez tirer parti de la possibilité de ré-commander la priorité de la règle pour vous assurer que les restrictions que vous souhaitez appliquer sont appliquées.
+Dans l’exemple ci-dessous, la règle 1 est prioritaire sur les autres règles correspondantes, car elle est la plus restrictive.
+
+- *Règle 1 : bloque l’activité et n’autorise pas le remplacement par l’utilisateur*
+- Règle 2 : bloque l’activité et autorise les remplacements d’utilisateurs
+- Règle 3 : audite uniquement toutes les activités
+- Règle 4 : aucune application
+
+Toutes les autres règles sont évaluées, mais leurs actions ne sont pas appliquées. Les journaux d’audit affichent la règle la plus restrictive appliquée au fichier. S’il existe plusieurs règles qui correspondent et qu’elles sont tout aussi restrictives, la stratégie et la priorité de règle régissent la règle qui serait appliquée sur le fichier.
+
+Pour les points de terminaison, vous pouvez configurer les actions que DLP prend pour toutes les activités prises en charge dans une seule règle pour un ensemble particulier de conditions d’inclusion.
 
 ### <a name="conditions"></a>Conditions
 
-Les conditions sont inclusives et vous permet de définir ce que vous souhaitez que la règle recherche et le contexte dans lequel ces éléments sont utilisés. Ils indiquent à l'&#8212; de règle lorsque vous trouvez un élément qui ressemble  à ceci et est utilisé comme *ceci &#8212; il* s’agit d’une correspondance et les autres actions de la stratégie doivent être prises sur celui-ci. Vous pouvez utiliser les conditions pour affecter différentes actions à différents niveaux de risque. Par exemple, un contenu sensible partagé en interne peut être moins risqué et nécessiter moins d’actions qu’un contenu sensible partagé avec des personnes extérieures à l’organisation.
+Les conditions sont inclusives et vous définissez ce que vous souhaitez que la règle recherche et le contexte dans lequel ces éléments sont utilisés. Ils indiquent à la règle &#8212; lorsque vous trouvez un élément qui ressemble à *ceci* et qui est utilisé comme *cela* &#8212; il s’agit d’une correspondance et les autres actions de la stratégie doivent être effectuées sur celui-ci. Vous pouvez utiliser les conditions pour affecter différentes actions à différents niveaux de risque. Par exemple, un contenu sensible partagé en interne peut être moins risqué et nécessiter moins d’actions qu’un contenu sensible partagé avec des personnes extérieures à l’organisation.
 
 > [!NOTE]
 > Les utilisateurs qui ont des comptes non invités dans le client Active Directory ou Azure Active Directory d’une organisation hôte sont considérés comme des personnes internes à l’organisation. 
 
 #### <a name="content-contains"></a>Le contenu contient
 
- Tous les emplacements de prise **en charge du contenu contiennent** une condition. Vous pouvez sélectionner plusieurs instances de chaque type de contenu et affiner les conditions à l’aide de l’un de **ces opérateurs** (logique OR) ou tous **ces opérateurs** (logiques AND) :
+ Tous les emplacements prennent en charge la condition **contenu contient** . Vous pouvez sélectionner plusieurs instances de chaque type de contenu et affiner les conditions en utilisant l’un **de ces** opérateurs (OR logique) ou **tous ces** opérateurs (AND logiques) :
 
 - [types d’informations sensibles](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
-- [étiquettes de sensibilité](sensitivity-labels.md)
+- [étiquettes de confidentialité](sensitivity-labels.md)
 - [étiquettes de rétention](retention.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
 
-en fonction [du ou des emplacements que](#location-support-for-how-content-can-be-defined) vous choisissez d’appliquer à la stratégie. 
+selon [l’emplacement auquel](#location-support-for-how-content-can-be-defined) vous choisissez d’appliquer la stratégie. 
 
-La règle recherche uniquement la présence des étiquettes **de sensibilité** et des étiquettes **de rétention** que vous choisissez. 
+La règle recherche uniquement la présence d’étiquettes de **confidentialité** et **d’étiquettes de rétention** que vous sélectionnez. 
 
-Les TS ont un niveau de [**confiance**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) prédéfiny que vous pouvez modifier si nécessaire. Pour plus d’informations, [voir Plus sur les niveaux de confiance](sensitive-information-type-learn-about.md#more-on-confidence-levels). 
+Les SIT ont un [**niveau de confiance**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) prédéfini que vous pouvez modifier si nécessaire. Pour plus d’informations, consultez [Plus sur les niveaux de confiance](sensitive-information-type-learn-about.md#more-on-confidence-levels). 
 
 > [!IMPORTANT]
-> Les sits ont deux façons différentes de définir les paramètres de nombre d’instances uniques max. Pour plus d’informations, consultez [Valeurs prises en charge par le nombre d’instances pour SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> Les SIT ont deux façons différentes de définir les paramètres de nombre d’instances uniques max. Pour plus d’informations, voir [Nombre d’instances prises en charge pour SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
 
 #### <a name="condition-context"></a>Contexte de condition
 
 Les options de contexte disponibles changent en fonction de l’emplacement que vous choisissez. Si vous sélectionnez plusieurs emplacements, seules les conditions communes aux emplacements sont disponibles.
 
-##### <a name="conditions-exchange-supports"></a>Conditions Exchange prend en charge
+##### <a name="conditions-exchange-supports"></a>Conditions prises en charge par Exchange
 
 - Le contenu contient
-- Le contenu est partagé à partir Microsoft 365
+- Le contenu est partagé à partir de Microsoft 365
 - Le contenu est reçu de
 - L’adresse IP de l’expéditeur est
-- A l’expéditeur a override le conseil de stratégie
+- L’expéditeur a remplacé l’info-bulle de stratégie
 - L’expéditeur est
 - Le domaine de l’expéditeur est
 - L’adresse de l’expéditeur contient des mots
@@ -260,7 +266,7 @@ Les options de contexte disponibles changent en fonction de l’emplacement que 
 - Le contenu du document correspond aux modèles
 - L’objet contient des mots ou des expressions
 - L’objet correspond aux modèles
-- L’objet ou le corps contient des mots ou des expressions
+- Objet ou corps contient des mots ou des expressions
 - L’objet ou le corps correspond aux modèles
 - Le jeu de caractères de contenu contient des mots
 - L’en-tête contient des mots ou des expressions
@@ -269,52 +275,62 @@ Les options de contexte disponibles changent en fonction de l’emplacement que 
 - Le type de message est
 - L’importance du message est
 
-##### <a name="conditions-sharepoint-supports"></a>Conditions SharePoint prend en charge
+##### <a name="conditions-sharepoint-supports"></a>Conditions prises en charge par SharePoint
  
 - Le contenu contient
-- Le contenu est partagé à partir Microsoft 365
+- Le contenu est partagé à partir de Microsoft 365
+- Document créé par
+- Document créé par un membre de
+- Le nom du document contient des mots ou des expressions
+- Le nom du document correspond aux modèles
+- Taille du document dépassée
+- La propriété du document est
+- L’extension de fichier est
+
+##### <a name="conditions-onedrive-accounts-supports"></a>Conditions prises en charge par les comptes OneDrive
+
+- Le contenu contient
+- Le contenu est partagé à partir de Microsoft 365
+- Document créé par
+- Document créé par un membre de
+- Le nom du document contient des mots ou des expressions
+- Le nom du document correspond aux modèles
+- Taille du document dépassée
+- La propriété du document est
+- L’extension de fichier est
+
+##### <a name="conditions-teams-chat-and-channel-messages-supports"></a>Conditions prises en charge Teams les messages de conversation et de canal
+
+- Le contenu contient
+- Le contenu est partagé à partir de Microsoft 365
+- L’expéditeur est 
+- Le domaine de l’expéditeur est 
+- Le domaine du destinataire est 
+- Le destinataire est 
+
+##### <a name="conditions-devices-supports"></a>Conditions prises en charge par les appareils
+
+- Le contenu contient
+- Consultez les activités de point de terminaison sur [laquelle vous pouvez surveiller et prendre des mesures](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
+
+##### <a name="conditions-microsoft-defender-for-cloud-apps-supports"></a>Conditions prises en charge par Microsoft Defender for Cloud Apps
+
+- Le contenu contient
+- Le contenu est partagé à partir de Microsoft 365
+
+##### <a name="conditions-on-premises-repositories-supports"></a>Les référentiels locaux de conditions prennent en charge
+
+- Le contenu contient
 - L’extension de fichier est
 - La propriété du document est
 
-##### <a name="conditions-onedrive-accounts-supports"></a>Conditions OneDrive les comptes prend en charge
-
-- Le contenu contient
-- Le contenu est partagé à partir Microsoft 365
-- L’extension de fichier est
-- La propriété du document est
-
-##### <a name="conditions-teams-chat-and-channel-messages-supports"></a>Conditions Teams les messages de conversation et de canal
-
-- Le contenu contient
-- Le contenu est partagé à partir Microsoft 365
-- Sender is (Preview)
-- Le domaine de l’expéditeur est (aperçu)
-- Le domaine du destinataire est (Aperçu)
-- Le destinataire est (aperçu)
-
-##### <a name="conditions-devices-supports"></a>Conditions que les appareils prend en charge
-
-- Le contenu contient
-- Consultez les [activités de point de terminaison que vous pouvez surveiller et sur](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
-
-##### <a name="conditions-microsoft-defender-for-cloud-apps-supports"></a>Conditions Microsoft Defender for Cloud Apps prend en charge
-
-- Le contenu contient
-- Le contenu est partagé à partir Microsoft 365
-
-##### <a name="conditions-on-premises-repositories-supports"></a>Conditions des référentiels locaux
-
-- Le contenu contient
-- L’extension de fichier est
-- La propriété du document est
-
-##### <a name="conditions-powerbi-supports"></a>Conditions que PowerBI prend en charge
+##### <a name="conditions-powerbi-supports"></a>Conditions prises en charge par PowerBI
 
 - Le contenu contient
 
 #### <a name="condition-groups"></a>Groupes de conditions
 
-Parfois, vous avez besoin d’une règle pour identifier une seule chose, comme tout le contenu qui contient un numéro de sécurité sociale des États-Unis, qui est défini par une seule sit. Toutefois, dans de nombreux scénarios, où les types d’éléments que vous tentez d’identifier sont plus complexes et, par conséquent, plus difficiles à définir, il est nécessaire d’avoir plus de souplesse dans la définition des conditions.
+Parfois, vous avez besoin d’une règle pour identifier une seule chose, comme tout le contenu qui contient un numéro de sécurité sociale des États-Unis, qui est défini par un sit unique. Toutefois, dans de nombreux scénarios, où les types d’éléments que vous essayez d’identifier sont plus complexes et, par conséquent, plus difficiles à définir, il est nécessaire de disposer d’une plus grande flexibilité dans la définition des conditions.
 
 Par exemple, pour identifier le contenu soumis à la réglementation des États-Unis sur le Health Insurance Act (HIPAA), vous devez rechercher :
   
@@ -324,127 +340,127 @@ Par exemple, pour identifier le contenu soumis à la réglementation des États-
     
 - Le contenu plus difficile à identifier, comme les communications relatives aux soins du patient ou la description des services médicaux fournis. L’identification de ce contenu nécessite des mots clés correspondants à partir de listes de mots clés volumineux, telles que la Classification internationale des maladies (ICD-9-CM ou ICD-10-CM).
     
-Vous pouvez identifier ce type de données en groupant des conditions et en utilisant des opérateurs logiques (AND, OR) entre les groupes.
+Vous pouvez identifier ce type de données en regroupant des conditions et en utilisant des opérateurs logiques (AND, OR) entre les groupes.
     
-Pour la **loi américaine HIPPA (Health Insurance Act),** les conditions sont regroupées comme ceci :
+Pour la **Loi américaine sur l’assurance maladie (HIPPA),** les conditions sont regroupées comme suit :
 
 ![Conditions de stratégie HIPPA](../media/dlp-rules-condition-groups-booleans.png)
 
-Le premier groupe contient les sits qui identifient et individuels, et le deuxième groupe contient les SIT qui identifient le diagnostic médical.
+Le premier groupe contient les SIT qui identifient et individuels, et le deuxième groupe contient les SIT qui identifient le diagnostic médical.
 
 ### <a name="exceptions"></a>Exceptions
 
-Dans les règles, les exceptions définissent les conditions utilisées pour exclure un élément de la stratégie. Logiquement, conditions exclusives évaluées après les conditions inclusives et le contexte. Ils indiquent à l'&#8212; de règle lorsque vous trouvez un élément qui ressemble  à ceci et qui est utilisé  comme ceci et qu’il s’agit d’une correspondance et que les autres actions de la stratégie doivent être prises sur celui-ci sauf ***si... &#8212;*** 
+Dans les règles, les exceptions définissent des conditions utilisées pour exclure un élément de la stratégie. Logiquement, conditions exclusives qui sont évaluées après les conditions inclusives et le contexte. Ils indiquent à la règle &#8212; lorsque vous trouvez un élément qui ressemble à *ceci* et qui est utilisé comme *suit* : il s’agit d’une correspondance et les autres actions de la stratégie doivent être effectuées ***dessus, sauf si***... &#8212; 
 
-Par exemple, en respectant la stratégie HIPPA, nous pouvons modifier la règle pour exclure tout élément contenant un numéro de permis de conduire belgique, comme ceci :
+Par exemple, en respectant la stratégie HIPPA, nous pourrions modifier la règle pour exclure tout élément qui contient un numéro de permis de conduire belge, comme suit :
 
 ![Stratégie HIPPA avec exclusions](../media/dlp-rule-exceptions.png)
 
-Les conditions d’exceptions qui sont pris en charge par l’emplacement sont identiques à toutes les conditions d’inclusion, la seule différence étant la pré-attente de « Sauf si » pour chaque condition prise en charge. Si une règle contient uniquement des exceptions, elle s’applique à tous les messages électroniques ou fichiers qui ne répondent pas aux critères d’exclusion.
+Les conditions d’exception prises en charge par l’emplacement sont identiques à toutes les conditions d’inclusion, la seule différence étant l’attente de « Sauf si » pour chaque condition prise en charge. Si une règle contient uniquement des exceptions, elle s’applique à tous les e-mails ou fichiers qui ne répondent pas aux critères d’exclusion.
 
-Tout comme tous les emplacements, la condition inclusive est prise en charge :
+Tout comme tous les emplacements prennent en charge la condition inclusive :
 
 - Le contenu contient
 
-l’exception serait :
+l’exception serait la suivante :
 
-- **Sauf si le** contenu contient 
+- **Sauf si** le contenu contient 
 
 ### <a name="actions"></a>Actions 
 
-Toutes les _*_actions_*_ définies dans la règle sont appliquées à tout élément qui passe par les filtres ***conditions** _ et _*_exceptions exclusives_*_ inclus. Vous devez configurer les options requises pour prendre en charge l’action. Par exemple, si vous sélectionnez Exchange avec l’action _ *Restreindre* l’accès ou chiffrer le contenu dans les emplacements Microsoft 365*, vous devez choisir parmi les options ci-après :
+Tout élément qui le fait via les filtres inclus ***conditions** _ et _*_exceptions exclusives_*_ aura toutes les _*_actions_*_ définies dans la règle qui lui est appliquée. Vous devrez configurer les options requises pour prendre en charge l’action. Par exemple, si vous sélectionnez Exchange avec l’action _ *Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements**, vous devez choisir parmi les options suivantes :
 
-- Empêcher les utilisateurs d’accéder au contenu SharePoint, OneDrive et Teams partagés
-    - Bloquer tout le monde. Seuls le propriétaire du contenu, le dernier modificateur et l’administrateur de site continueront à y accéder
-    - Bloquez uniquement les personnes extérieures à votre organisation. Les utilisateurs au sein de votre organisation continueront d’y avoir accès.
+- Empêcher les utilisateurs d’accéder au contenu partagé SharePoint, OneDrive et Teams
+    - Bloquez tout le monde. Seuls le propriétaire du contenu, le dernier modificateur et l’administrateur de site continueront d’avoir accès
+    - Bloquez uniquement les personnes extérieures à votre organisation. Les utilisateurs au sein de votre organisation continueront d’avoir accès.
 - Chiffrer les courriers (applicable uniquement au contenu dans Exchange)
 
-Les actions disponibles dans une règle dépendent des emplacements qui ont été sélectionnés. Si vous sélectionnez un seul emplacement pour la stratégie à appliquer, les actions disponibles sont répertoriées ci-dessous.
+Les actions disponibles dans une règle dépendent des emplacements sélectionnés. Si vous sélectionnez un seul emplacement pour la stratégie à appliquer, les actions disponibles sont répertoriées ci-dessous.
 
 > [!IMPORTANT]
-> Pour les emplacements SharePoint Online et OneDrive Entreprise les documents seront bloqués de manière proactive immédiatement après la détection d’informations sensibles, que le document soit partagé ou non, pour tous les utilisateurs externes, tandis que les utilisateurs internes continueront d’avoir accès au document.
+> Pour SharePoint documents en ligne et OneDrive Entreprise emplacements seront bloqués de manière proactive juste après la détection d’informations sensibles, que le document soit partagé ou non, pour tous les utilisateurs externes, tandis que les utilisateurs internes continueront d’avoir accès au document.
 
-#### <a name="exchange-location-actions"></a>Exchange actions d’emplacement
+#### <a name="exchange-location-actions"></a>actions d’emplacement Exchange
 
-- Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
+- Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements
 - Définir des en-têtes
 - Supprimer l’en-tête
 - Rediriger le message vers des utilisateurs spécifiques
-- Transmettre le message pour approbation au responsable de l’expéditeur
-- Transmettre le message pour approbation à des approuveurs spécifiques
+- Transférer le message pour approbation au responsable de l’expéditeur
+- Transférer le message pour approbation à des approbateurs spécifiques
 - Ajouter un destinataire à la zone À
 - Ajouter un destinataire à la zone Cc
-- Ajouter un destinataire à la zone  Bcc
-- Ajouter le responsable de l’expéditeur en tant que destinataire
-- Suppression du chiffrement de messages O365 et de la protection des droits
-- Prédépender l’objet de l’e-mail
-- Modifier l’objet du message électronique
+- Ajouter un destinataire à la zone CCI
+- Ajouter le gestionnaire de l’expéditeur en tant que destinataire
+- Suppression du chiffrement des messages O365 et de la protection des droits
+- Ajouter l’objet de l’e-mail
+- Modifier l’objet de l’e-mail
 - Ajouter une clause d’exclusion de responsabilité HTML
 
-#### <a name="sharepoint-sites-location-actions"></a>SharePoint actions d’emplacement des sites
+#### <a name="sharepoint-sites-location-actions"></a>actions d’emplacement de sites SharePoint
 
-- Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
+- Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements
 
 #### <a name="onedrive-account-location-actions"></a>OneDrive actions d’emplacement de compte
 
-- Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
+- Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements
 
-#### <a name="teams-chat-and-channel-messages-actions"></a>Teams chat et messages de canal
+#### <a name="teams-chat-and-channel-messages-actions"></a>actions de conversation Teams et de messages de canal
 
-- Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
+- Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements
 
 #### <a name="devices-actions"></a>Actions des appareils
 
-- Auditer ou restreindre les activités sur Windows appareils
+- Auditer ou restreindre les activités sur les appareils Windows
 
-Pour utiliser ces paramètres, vous devez configurer les options dans les **paramètres DLP** et dans la stratégie dans laquelle vous souhaitez les utiliser. Pour plus [d’informations, voir applications restreintes et groupes](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) d’applications.
+Pour utiliser ces paramètres, vous devez configurer des options dans **les paramètres DLP** et dans la stratégie dans laquelle vous souhaitez les utiliser. Pour plus d’informations, consultez [applications restreintes et groupes d’applications](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) .
 
-L’emplacement des appareils fournit de nombreuses sous-activités (conditions) et actions. Pour en savoir plus, [consultez Les activités de point de terminaison que vous pouvez surveiller et sur qui vous pouvez agir](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on).
+L’emplacement des appareils fournit de nombreuses sous-activités (conditions) et actions. Pour plus d’informations, consultez [les activités de point de terminaison sur laquelle vous pouvez surveiller et prendre des mesures](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on).
 
-Lorsque vous sélectionnez **Auditer** ou restreindre les activités sur les appareils Windows, vous pouvez limiter les activités des utilisateurs par domaine de service ou navigateur, et limiter les actions prises par DLP :
+Lorsque vous sélectionnez **Auditer ou restreindre les activités sur Windows appareils**, vous pouvez limiter les activités utilisateur par domaine de service ou navigateur, et définir l’étendue des actions effectuées par DLP :
 
 - Toutes les applications
 - Par une liste d’applications restreintes que vous définissez
-- Un groupe d’applications restreint (prévisualisation) que vous définissez.
+- Groupe d’applications restreint (préversion) que vous définissez.
 
 ##### <a name="service-domain-and-browser-activities"></a>Activités de domaine de service et de navigateur
 
-Lorsque vous configurez les domaines de **service cloud Autoriser/** Bloquer et la liste des **navigateurs** non autorisé (voir [Restrictions](dlp-configure-endpoint-settings.md#browser-and-domain-restrictions-to-sensitive-data) de navigateur et de domaine sur les données sensibles) et qu’un utilisateur tente de télécharger un fichier protégé vers un domaine de service cloud ou d’y accéder à partir d’un navigateur non autorisé, vous pouvez configurer l’action `Audit only`de stratégie sur , `Block with override``Block` ou l’activité.
+Lorsque vous configurez les **domaines de service cloud Allow/Block** et la liste **des navigateurs non autorisés** (voir [Navigateur et restrictions de domaine pour les données sensibles](dlp-configure-endpoint-settings.md#browser-and-domain-restrictions-to-sensitive-data)) et qu’un utilisateur tente de charger un fichier protégé dans un domaine de service cloud ou d’y accéder à partir d’un navigateur non autorisé, vous pouvez configurer l’action de stratégie sur `Audit only`, `Block with override`ou `Block` l’activité.
 
 ##### <a name="file-activities-for-all-apps"></a>Activités de fichiers pour toutes les applications
 
-Avec **l’option Activités de fichier pour toutes** les applications, vous  sélectionnez Ne pas restreindre les activités de fichier ou appliquer des **restrictions à des activités spécifiques**. Lorsque vous choisissez d’appliquer des restrictions à des activités spécifiques, les actions que vous sélectionnez ici sont appliquées lorsqu’un utilisateur a accédé à un élément protégé par DLP. Vous pouvez indiquer à DLP , `Audit only``Block with override`( `Block` les actions) sur ces activités utilisateur :
+Avec l’option **Activités de fichier pour toutes les applications** , vous sélectionnez **Ne pas restreindre les activités de fichier** ou **Appliquer des restrictions à des activités spécifiques**. Lorsque vous sélectionnez d’appliquer des restrictions à des activités spécifiques, les actions que vous sélectionnez ici sont appliquées lorsqu’un utilisateur a accédé à un élément protégé DLP. Vous pouvez indiquer à DLP , `Audit only``Block with override``Block` (les actions) sur ces activités utilisateur :
 
 - **Copier dans le Presse-papiers**
 - **Copier sur un lecteur amovible USB** 
 - **Copier vers un partage réseau**
 - **Print**
-- **Copier ou déplacer à l’aide d’une application Bluetooth non conforme**
+- **Copier ou déplacer à l’aide d’une application Bluetooth non autorisée**
 - **Services de bureau à distance**
 
 
 ##### <a name="restricted-app-activities"></a>Activités d'application restreintes  
 
-Précédemment appelée Applications nonallées, vous définissez une liste d’applications dans les paramètres DLP de point de terminaison sur qui vous souhaitez placer des restrictions. Lorsqu’un utilisateur tente d’accéder à un fichier protégé par DLP à l’aide d’une application qui figure dans la liste, `Audit only`vous pouvez soit , soit `Block with override``Block` l’activité. Les actions DLP définies dans **les activités** d’applications restreintes sont indérialées si l’application est membre d’un groupe d’applications restreintes. Ensuite, les actions définies dans le groupe d’applications restreintes sont appliquées.
+Précédemment appelé applications non autorisées, vous définissez une liste d’applications dans les paramètres DLP du point de terminaison sur lesquels vous souhaitez appliquer des restrictions. Lorsqu’un utilisateur tente d’accéder à un fichier protégé DLP à l’aide d’une application figurant dans la liste, vous pouvez `Audit only`soit , `Block with override`soit `Block` l’activité. Les actions DLP **définies dans les activités d’application restreintes sont remplacées** si l’application est membre d’un groupe d’applications restreint. Ensuite, les actions définies dans le groupe d’applications restreintes sont appliquées.
 
 ##### <a name="file-activities-for-apps-in-restricted-app-groups-preview"></a>Activités de fichiers pour les applications dans des groupes d’applications restreintes (préversion)
 
-Vous définissez vos groupes d’applications restreintes dans les paramètres DLP de point de terminaison et ajoutez des groupes d’applications restreintes à vos stratégies. Lorsque vous ajoutez un groupe d’applications restreintes à une stratégie, vous devez sélectionner l’une des options ci-après :
+Vous définissez vos groupes d’applications restreints dans les paramètres DLP du point de terminaison et ajoutez des groupes d’applications restreints à vos stratégies. Lorsque vous ajoutez un groupe d’applications restreint à une stratégie, vous devez sélectionner l’une des options suivantes :
 
 - Ne restreignez pas l'activité des fichiers
 - Appliquer des restrictions à toutes les activités
 - Appliquer des restrictions à une activité spécifique
 
-Lorsque vous sélectionnez l’une des options Appliquer des *restrictions* et qu’un utilisateur tente d’accéder à un fichier protégé par DLP à l’aide d’une application qui se trouve dans le groupe d’applications restreint, `Audit only`vous pouvez soit , `Block with override``Block` soit par activité. Les actions DLP que vous définissez ici remplacent les  actions définies dans les activités d’application restreintes et les activités de fichier pour toutes les **applications** pour l’application.
+Quand vous sélectionnez l’une des options *Appliquer les restrictions* et qu’un utilisateur tente d’accéder à un fichier protégé par DLP à l’aide d’une application qui se trouve dans le groupe d’applications restreintes, vous pouvez `Audit only`, `Block with override`ou `Block` par activité. Les actions DLP que vous définissez ici remplacent les actions **définies dans les activités d’application restreintes** et **les activités de fichier pour toutes les applications** de l’application.
 
-Pour plus [d’informations, voir applications restreintes et groupes](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) d’applications. 
+Pour plus d’informations, consultez [applications restreintes et groupes d’applications](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) . 
 
-#### <a name="microsoft-defender-for-cloud-apps-actions"></a>Microsoft Defender for Cloud Apps actions
+#### <a name="microsoft-defender-for-cloud-apps-actions"></a>actions Microsoft Defender for Cloud Apps
 
-- Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
+- Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements
 - Restreindre les applications tierces
 
-#### <a name="on-premises-repositories-actions"></a>Actions des référentiels locaux
+#### <a name="on-premises-repositories-actions"></a>Actions de référentiels locaux
 
 - Restreindre l’accès ou supprimer des fichiers locaux
 
@@ -455,38 +471,38 @@ Pour plus [d’informations, voir applications restreintes et groupes](dlp-confi
 
 #### <a name="actions-available-when-you-combine-locations"></a>Actions disponibles lorsque vous combinez des emplacements
 
-Si vous sélectionnez Exchange et tout autre emplacement unique pour la stratégie à appliquer, le
+Si vous sélectionnez Exchange et tout autre emplacement unique auquel la stratégie doit être appliquée, le
 
-- Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
+- Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements
 
 et
 
-- toutes les actions pour l’emplacement non Exchange’emplacement
+- toutes les actions pour l’emplacement non Exchange
 
-seront disponibles.
+actions seront disponibles.
 
 Si vous sélectionnez au moins deux emplacements non Exchange pour la stratégie à appliquer, le
 
-- Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
+- Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements
 
 AND
 
-- toutes les actions pour les emplacements non Exchange de recherche 
+- toutes les actions pour les emplacements non Exchange 
 
-seront disponibles.
+actions seront disponibles.
 
-Par exemple, si vous sélectionnez Exchange et Appareils comme emplacements, ces actions seront disponibles :
+Par exemple, si vous sélectionnez Exchange et Appareils comme emplacements, ces actions sont disponibles :
 
-- Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
-- Auditer ou restreindre les activités sur Windows appareils
+- Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements
+- Auditer ou restreindre les activités sur les appareils Windows
 
-Si vous sélectionnez Périphériques et Microsoft Defender for Cloud Apps, ces actions seront disponibles :
+Si vous sélectionnez Appareils et Microsoft Defender for Cloud Apps, ces actions sont disponibles :
 
-- Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
-- Auditer ou restreindre les activités sur Windows appareils
+- Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements
+- Auditer ou restreindre les activités sur les appareils Windows
 - Restreindre les applications tierces
 
-L’application ou non d’une action dépend de la façon dont vous configurez le mode de la stratégie. Vous pouvez choisir d’exécuter la stratégie en mode test avec ou sans afficher de conseil de stratégie en sélectionnant la **première option Tester** . Vous choisissez d’exécuter la stratégie dès qu’une heure après sa création en sélectionnant **l’option Activer** immédiatement, ou vous pouvez choisir de simplement l’enregistrer et d’y revenir ultérieurement en sélectionnant l’option **Désactiver** . 
+L’effet ou non d’une action dépend de la façon dont vous configurez le mode de la stratégie. Vous pouvez choisir d’exécuter la stratégie en mode test avec ou sans afficher l’info-bulle de stratégie en sélectionnant la **première option Tester** . Vous choisissez d’exécuter la stratégie dès qu’une heure après sa création en sélectionnant l’option **Activer immédiatement** , ou vous pouvez choisir de l’enregistrer et d’y revenir plus tard en sélectionnant **l’option Conserver** . 
 
 
 <!-- This section needs to explain that the actions available depend on the locations selected AND that the observed behavior of a policy is produced through an interaction of the configured actions AND the configured status (off, test, apply) of a policy. It will detail the purpose of each of the available actions and the location/desired outcome interaction and provide examples eg. how to use the Restrict Third Party apps in the context of a policy that is applied to endpoints so that users can't use a upload content to a third party site or the interaction of on-premises scanner with restrict access or remove on-premises files.  Also what happens when I select multiple locations? provide abundant examples for most common scenarios-->
@@ -503,71 +519,71 @@ for where they are used/expected behavior-->
 
 <!--You can use notifications and overrides to educate your users about DLP policies and help them remain compliant without blocking their work. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip in the context of the document library that allows them to override the policy if they have a business justification.-->
 
-Lorsqu’un utilisateur tente une action sur un élément sensible dans un contexte qui répond aux conditions et aux exceptions d’une règle, vous pouvez lui en faire part par courrier électronique de notification de l’utilisateur et dans des fenêtres contextibles de conseil de stratégie de contexte. Ces notifications sont utiles car elles permettent d’accroître la sensibilisation et d’informer les personnes sur les stratégies DLP de votre organisation.
+Lorsqu’un utilisateur tente une action sur un élément sensible dans un contexte qui répond aux conditions et exceptions d’une règle, vous pouvez l’informer à ce sujet via des e-mails de notification utilisateur et dans des fenêtres contextuelles de conseil de stratégie. Ces notifications sont utiles, car elles sensibilisent davantage les utilisateurs aux stratégies DLP de votre organisation.
 
-Par exemple, le contenu tel qu’un Excel sur un site OneDrive Entreprise qui contient des informations d’identification personnelle (PII) et qui est partagé avec un invité.
+Par exemple, du contenu tel qu’un classeur Excel sur un site OneDrive Entreprise qui contient des informations d’identification personnelle (PII) et qui est partagé avec un invité.
 
 ![La barre des messages affiche le conseil de stratégie dans Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
 > [!NOTE]
 > Les e-mails de notification sont envoyés sans protection.
 
-Vous pouvez également donner aux personnes la possibilité de remplacer la [stratégie, afin](#user-overrides) qu’elles ne sont pas bloquées s’ils ont des besoins commerciaux valides ou si la stratégie détecte un faux positif.
+Vous pouvez également donner aux utilisateurs la possibilité de [remplacer la stratégie](#user-overrides), afin qu’ils ne soient pas bloqués s’ils ont un besoin commercial valide ou si la stratégie détecte un faux positif.
 
-Les options de configuration des notifications utilisateur et des conseils de stratégie varient en fonction des emplacements d’analyse que vous avez sélectionnés. Si vous avez sélectionné :
+Les options de configuration des notifications utilisateur et des conseils de stratégie varient en fonction des emplacements de surveillance que vous avez sélectionnés. Si vous avez sélectionné :
 
 - Exchange
 - SharePoint
 - OneDrive
-- Teams chat et canal
+- Teams conversation et canal
 - Defender for Cloud Apps
 
 
-Vous pouvez activer/désactiver les notifications des utilisateurs pour différentes applications Microsoft. Consultez la référence des conseils de stratégie de protection [contre la perte de données](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference).
+Vous pouvez activer/désactiver les notifications utilisateur pour différentes applications Microsoft. Consultez [les informations de référence sur les conseils de stratégie de protection contre la perte de données](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
 
-- Vous pouvez activer/désactiver l’avertir les utilisateurs dans **Office 365 service à** l’aide d’un conseil de stratégie.
-    - notifications par courrier électronique à l’utilisateur qui a envoyé, partagé ou modifié le contenu en dernier ;
+- Vous pouvez activer/désactiver **la notification des utilisateurs dans Office 365 service** à l’aide d’un conseil de stratégie.
+    - notifications par e-mail à l’utilisateur qui a envoyé, partagé ou modifié pour la dernière fois le contenu OU
     - avertir des personnes spécifiques
 
-et personnalisez le texte de l’e-mail, l’objet et le texte du conseil de stratégie.
+et personnalisez le texte de l’e-mail, l’objet et le texte de l’info-bulle de stratégie.
 
-![Options de configuration des conseils de stratégie et de notification utilisateur disponibles pour Exchange, SharePoint, OneDrive, Teams Chat et canal et les applications Defender pour le cloud](../media/dlp-user-notification-non-devices.png)
+![Options de configuration de notification utilisateur et de conseil de stratégie disponibles pour Exchange, SharePoint, OneDrive, Teams Conversation et canal, et Defender pour le cloud Apps](../media/dlp-user-notification-non-devices.png)
 
-Si vous avez sélectionné Uniquement les appareils, vous obtenez les mêmes options que pour les applications Exchange, SharePoint, OneDrive, Teams Chat et Canal et Defender pour le cloud, ainsi que la possibilité de personnaliser le titre et le contenu de la notification qui s’affiche sur le Windows 10 appareil.
+Si vous avez sélectionné Appareils uniquement, vous obtiendrez toutes les mêmes options disponibles pour Exchange, SharePoint, OneDrive, Teams Conversation et canal et Defender pour le cloud Apps, ainsi que la possibilité de personnaliser le titre et le contenu de la notification qui s’affiche sur le Windows 10 appareil.
 
 ![Options de configuration de notification utilisateur et de conseil de stratégie disponibles pour les appareils](../media/dlp-user-notification-devices.png)  
 
-Vous pouvez personnaliser le titre et le corps du texte à l’aide de ces paramètres. Le corps de texte prend en charge les éléments ci-après :
+Vous pouvez personnaliser le titre et le corps du texte à l’aide de ces paramètres. Le texte du corps prend en charge les éléments suivants :
 
-|Nom commun  |Paramètre  |Exemple
+|Nom commun  |Parameter  |Exemple
 |---------|---------|---------|
-|nom du fichier     |%%FileName%% | Contoso doc 1 |
+|nom du fichier     |%%FileName%% | Doc 1 de Contoso |
 |nom du processus     |%%ProcessName%% | Word |
 |nom de la stratégie     |%%PolicyName%%| Contoso hautement confidentiel |
-|action | %%AppliedActions%% | pasting document content from the Clipboard to another app |
+|action | %%AppliedActions%% | collage du contenu du document du Presse-papiers à une autre application |
 
 **%%AppliedActions%%** remplace ces valeurs dans le corps du message :
 
 
 |nom commun de l’action |valeur remplacée par le paramètre %%AppliedActions%% |
 |---------|---------|
-|copier dans un stockage à supprimer    |*écriture dans un stockage amovible*         |
-|copier sur le partage réseau     |*écriture sur un partage réseau*         |
-|print     |*impression*         |
-|coller à partir du Presse-papiers  |*pasting from the Clipboard*         |
-|copier via bluetooth   |*transfert via le Bluetooth*         |
-|ouvrir avec une application non officielle     |*ouverture avec cette application*         |
-|copier sur un bureau à distance (RDP)     |*transfert vers le Bureau à distance*         |
-|téléchargement vers un site web nonallifié     |*téléchargement vers ce site*         |
+|copier vers un stockage amovible    |*écriture dans un stockage amovible*         |
+|copier sur un partage réseau     |*écriture dans un partage réseau*         |
+|Imprimer     |*Impression*         |
+|coller à partir du Presse-papiers  |*collage à partir du Presse-papiers*         |
+|copier via bluetooth   |*transfert via Bluetooth*         |
+|ouvrir avec une application non autorisée     |*ouverture avec cette application*         |
+|copier sur un bureau à distance (RDP)     |*transfert vers le bureau à distance*         |
+|chargement vers un site web non autorisé     |*chargement sur ce site*         |
 |accès à l’élément via un navigateur non autorisé     |*ouverture avec ce navigateur*         |
 
 Utilisation de ce texte personnalisé
 
-*%%AppliedActions%% File name %%FileName%% via %%ProcessName%% n’est pas autorisé par votre organisation. Cliquez sur « Autoriser » si vous souhaitez contourner la stratégie %%PolicyName%%* 
+*%%AppliedActions%% Le nom de fichier %%FileName%% via %%ProcessName%% n’est pas autorisé par votre organisation. Cliquez sur « Autoriser » si vous souhaitez contourner la stratégie %%PolicyName%%* 
 
 produit ce texte dans la notification personnalisée :
 
-*le pasting à partir du nom de fichier du Presse-papiers : Contoso doc 1 via WINWORD.EXE n’est pas autorisé par votre organisation. Cliquez sur le bouton Autoriser si vous souhaitez ignorer la stratégie Contoso hautement confidentielle*
+*Collage à partir du nom de fichier du Presse-papiers : contoso doc 1 via WINWORD.EXE n’est pas autorisé par votre organisation. Cliquez sur le bouton « Autoriser » si vous souhaitez contourner la stratégie Contoso hautement confidentielle*
  
 
 > [!NOTE]
@@ -576,8 +592,8 @@ produit ce texte dans la notification personnalisée :
 > [!NOTE]
 > Uniquement le conseil de stratégie de la priorité la plus élevée, la règle la plus restrictive est affichée. Par exemple, un conseil de stratégie à partir d’une règle qui bloque l’accès au contenu est affiché sur un conseil de stratégie à partir d’une règle qui envoie simplement une notification. Cela évite que les personnes voient une cascade de conseils de stratégie.
 
-Pour en savoir plus sur la configuration et l’utilisation des notifications utilisateur et des conseils de stratégie, notamment sur la personnalisation de la notification et du texte du conseil, voir 
-- [Envoyer des notifications par courrier électronique et afficher des conseils de stratégie pour les stratégies DLP](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies).
+Pour en savoir plus sur la configuration et l’utilisation des notifications utilisateur et des conseils de stratégie, notamment sur la personnalisation de la notification et du texte de l’info-bulle, consultez 
+- [Envoyer des notifications par e-mail et afficher des conseils de stratégie pour les stratégies DLP](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies).
   
 <!--The email can notify the person who sent, shared, or last modified the content and, for site content, the primary site collection administrator and document owner. In addition, you can add or remove whomever you choose from the email notification.
   
@@ -603,14 +619,14 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 
 ### <a name="user-overrides"></a>Remplacements par l’utilisateur
 
-L’objectif des substitutions utilisateur est de donner aux **utilisateurs** un moyen de contourner, avec justification, les actions de blocage de stratégie DLP sur des éléments sensibles dans Exchange, SharePoint, OneDrive ou Teams afin qu’ils peuvent poursuivre leur travail. Les substitutions utilisateur sont activées uniquement lorsque les services De notification aux utilisateurs dans **Office 365** avec un conseil de stratégie sont activés, de sorte que les remplacements utilisateur vont de pair avec les notifications et les conseils de stratégie. 
+L’objectif des **remplacements d’utilisateurs** est de donner aux utilisateurs un moyen de contourner, avec justification, les actions de blocage de stratégie DLP sur les éléments sensibles dans Exchange, SharePoint, OneDrive ou Teams afin qu’ils puissent continuer leur travail. Les remplacements d’utilisateurs sont activés uniquement lorsque la notification aux **utilisateurs dans les services Office 365 avec un conseil de stratégie** est activée. Par conséquent, les remplacements utilisateur vont de pair avec les notifications et les conseils de stratégie. 
 
-![Options de substitution utilisateur pour une stratégie DLP](../media/dlp-user-overrides.png)
+![Options de remplacement d’utilisateur pour une stratégie DLP](../media/dlp-user-overrides.png)
 
 > [!NOTE]
-> Les substitutions utilisateur ne sont pas disponibles pour l’emplacement des référentiels locaux.
+> Les remplacements d’utilisateurs ne sont pas disponibles pour l’emplacement des référentiels locaux.
 
-En règle générale, les substitutions utilisateur sont utiles lorsque votre organisation est en cours de déploiement pour la première fois d’une stratégie. Les commentaires que vous obtenez à partir de toutes les justifications de remplacement et l’identification des faux positifs vous aident à ajuster la stratégie. 
+En règle générale, les remplacements d’utilisateurs sont utiles lorsque votre organisation déploie une stratégie pour la première fois. Les commentaires que vous obtenez à partir de toute justification de remplacement et l’identification de faux positifs vous aident à paramétrer la stratégie. 
 
 <!-- This section covers what they are and how to best use them in conjunction with Test/Turn it on right away and link out to where to find the business justification for the override (DLP reports?  https://docs.microsoft.com/en-us/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide)  https://docs.microsoft.com/en-us/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide#view-the-justification-submitted-by-a-user-for-an-override-->
 
@@ -618,9 +634,9 @@ En règle générale, les substitutions utilisateur sont utiles lorsque votre or
  
 <!--![User notifications and user overrides sections of DLP rule editor](../media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)-->
  
-Pour en savoir plus sur les remplacements d’utilisateurs, voir :
+Pour en savoir plus sur les remplacements d’utilisateurs, consultez :
 
-- [Afficher la justification envoyée par un utilisateur pour un remplacement](view-the-dlp-reports.md#view-the-justification-submitted-by-a-user-for-an-override)
+- [Afficher la justification soumise par un utilisateur pour une substitution](view-the-dlp-reports.md#view-the-justification-submitted-by-a-user-for-an-override)
 
 ### <a name="incident-reports"></a>Rapports d’incident
 
@@ -630,21 +646,21 @@ Pour en savoir plus sur les remplacements d’utilisateurs, voir :
 https://docs.microsoft.com/en-us/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide
 https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide-->
 
-Lorsqu’une règle est satisfaite, vous pouvez envoyer un rapport d’incident contenant les détails de l’événement à votre responsable de la mise en conformité (ou une autre personne de votre choix). Le rapport inclut des informations sur l’élément qui a été satisfait, le contenu réel qui correspond à la règle et le nom de la personne qui a modifié le contenu en dernier. Pour les messages électroniques, le rapport inclut également sous forme de pièce jointe le message d’origine qui correspond à une stratégie DLP.
+Lorsqu’une règle est satisfaite, vous pouvez envoyer un rapport d’incident contenant les détails de l’événement à votre responsable de la mise en conformité (ou une autre personne de votre choix). Le rapport contient des informations sur l’élément qui a été mis en correspondance, le contenu réel correspondant à la règle et le nom de la personne qui a modifié le contenu pour la dernière fois. Pour les messages électroniques, le rapport inclut également sous forme de pièce jointe le message d’origine qui correspond à une stratégie DLP.
 
-La protection contre la protection contre la menace (DLP) a pour effet de fournir des informations d’incident à Microsoft 365 services de protection des informations, tels que la gestion des risques internes [Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365). Pour obtenir des informations sur les incidents à la gestion des risques internes,  vous devez définir le niveau de gravité des rapports d’incident sur **Élevé**.
+DLP alimente les informations sur les incidents à d’autres services de protection des informations Microsoft 365, tels que [la gestion des risques internes dans Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365). Pour obtenir des informations sur les incidents à la gestion des risques internes, vous devez définir le niveau de gravité **des rapports d’incident** sur **Élevé**.
 
 <!--![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)-->
 
-Les alertes peuvent être envoyées chaque fois qu’une activité correspond à une règle, qui peut être bruyante ou regroupées en moins d’alertes en fonction du nombre de correspondances ou du volume d’éléments sur une période donnée.
+Les alertes peuvent être envoyées chaque fois qu’une activité correspond à une règle, ce qui peut être bruyant, ou elles peuvent être agrégées en moins d’alertes en fonction du nombre de correspondances ou du volume d’éléments sur une période définie.
 
-![envoyer une alerte chaque fois qu’une règle correspond ou est agrégée au fil du temps dans moins de rapports](../media/dlp-incident-reports-aggregation.png)
+![envoyer une alerte chaque fois qu’une règle correspond ou s’agréger au fil du temps en moins de rapports](../media/dlp-incident-reports-aggregation.png)
 
-La DLP analyse le courrier électronique différemment de SharePoint en ligne ou OneDrive Entreprise éléments. Dans SharePoint Online et OneDrive Entreprise, DLP analyse les éléments existants, ainsi que les nouveaux et génère un rapport d’incident chaque fois qu’une correspondance est trouvée. Dans Exchange Online, DLP analyse uniquement les nouveaux messages électroniques et génère un rapport en cas de correspondance de stratégie. DLP ***ne peut pas*** analyser ou mettre en correspondance les éléments de messagerie existants qui sont stockés dans une boîte aux lettres ou une archive.
+DLP analyse les e-mails différemment de ce qu’il ne fait SharePoint en ligne ou OneDrive Entreprise éléments. Dans SharePoint Online et OneDrive Entreprise, DLP analyse les éléments existants, ainsi que les nouveaux et génère un rapport d’incident chaque fois qu’une correspondance est trouvée. Dans Exchange Online, DLP analyse uniquement les nouveaux messages électroniques et génère un rapport en cas de correspondance de stratégie. DLP ***ne peut pas*** analyser ou mettre en correspondance les éléments de messagerie existants qui sont stockés dans une boîte aux lettres ou une archive.
 
 ### <a name="additional-options"></a>Options supplémentaires
 
-Si vous avez plusieurs règles dans une stratégie, vous pouvez utiliser les **options** supplémentaires pour contrôler d’autres traitements de règles s’il existe une correspondance avec la règle que vous modifiez et définir la priorité pour l’évaluation de la règle.
+Si vous avez plusieurs règles dans une stratégie, vous pouvez utiliser les **options Supplémentaires** pour contrôler le traitement ultérieur des règles s’il existe une correspondance avec la règle que vous modifiez et définir la priorité pour l’évaluation de la règle.
 
 ## <a name="see-also"></a>Voir aussi
 

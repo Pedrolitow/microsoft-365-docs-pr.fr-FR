@@ -8,14 +8,17 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: Utilisez cette page pour créer votre liste de membres du personnel et gérer les détails des membres du personnel, tels que le nom, le numéro de téléphone et l’adresse e-mail.
-ms.openlocfilehash: 03ebf5c21e40d53e87067866e05fc37c2c255331
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
-ms.translationtype: HT
+ms.openlocfilehash: 2df48efe321a91c1eb2df712e954033eb28357aa
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049359"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64713930"
 ---
 # <a name="add-staff-to-bookings"></a>Ajouter du personnel aux réservations
+
+> [!NOTE]
+> Cet article vous aide à interagir avec la dernière version de Microsoft Bookings. Les versions précédentes seront mises hors service dans les prochains mois.
 
 La page Personnel dans Bookings vous permet de créer votre liste de personnel et de gérer les détails des membres du personnel, tels que le nom, le numéro de téléphone et l’adresse e-mail. Vous pouvez également définir des heures de travail pour chaque membre du personnel à partir d’ici.
 
@@ -29,12 +32,9 @@ Bien Bookings est une fonctionnalité de Microsoft 365, tous les membres de votr
 
 ## <a name="steps"></a>Étapes
 
-> [!NOTE]
-> Ces étapes ne sont pas encore disponibles dans la nouvelle expérience Bookings.
+1. Choisissez votre calendrier dans la page d’accueil. 
 
-1. Allez à la [page Gérer le personnel](https://outlook.office.com/bookings/staff) et sélectionnez **Ajouter du personnel**. 
-
-2. Cliquez sur le bouton **Ajouter du personnel**.
+2. Accédez à l’option Personnel dans le volet gauche et **sélectionnez Ajouter un nouveau personnel**.
 
 3. Lorsque vous ajoutez du personnel au sein de votre organisation, tapez son nom dans le **Ajouter des personnes** champ et sélectionnez-les lorsqu’ils apparaissent dans le menu déroulant. Les autres champs sont automatiquement remplis.
 

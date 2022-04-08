@@ -1,5 +1,5 @@
 ---
-title: Ajouter des licences à un abonnement acheté auprès du Centre de gestion des licences en volume
+title: Ajouter des licences à un abonnement VLSC
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -18,18 +18,18 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX
-description: Découvrez comment ajouter des licences à votre abonnement Microsoft 365 acheté par le biais d’un partenaire tiers, reconnu par Microsoft.
+description: Découvrez comment ajouter des licences à votre abonnement Microsoft 365 acheté par le biais du partenaire tiers, reconnu par Microsoft.
 ms.date: 08/27/2021
-ms.openlocfilehash: 9d2b8881be15cdbed1354c5f70e1dc4f4cacc8c3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 56779a263a42ef385b1d6cf4df608b2243495e9a
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320170"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64713820"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>Ajouter des licences à un abonnement acheté auprès du Centre de gestion des licences en volume
 
-Si vous avez acheté votre offre Microsoft 365 entreprise ou Office 365 Entreprise par le biais d’un partenaire tiers, vous devez acheter des licences supplémentaires par le biais de ce partenaire. Si ce partenaire est connu par Microsoft, procédez comme suit pour trouver les informations de contact de votre partenaire.
+Si vous avez acheté votre Microsoft 365 pour les entreprises ou Office 365 Entreprise plan par le biais d’un partenaire tiers, vous devez acheter des licences supplémentaires par le biais de ce partenaire. Si ce partenaire est connu par Microsoft, procédez comme suit pour trouver les informations de contact de votre partenaire.
   
 ::: moniker range="o365-worldwide"
 
@@ -41,6 +41,6 @@ Si vous avez acheté votre offre Microsoft 365 entreprise ou Office 365 Entrepri
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
 ::: moniker-end
 
-2. Sélectionnez l’abonnement auquel vous souhaitez ajouter des licences, puis sélectionnez le lien Centre de gestion des licences en volume **(VLSC** ).
+2. Sélectionnez l’abonnement auquel vous souhaitez ajouter des licences, puis sélectionnez le lien **VLSC (Volume Licensing Service Center).**
 
 3. Suivez les étapes décrites dans le Centre de gestion des licences en volume pour effectuer vos achats.

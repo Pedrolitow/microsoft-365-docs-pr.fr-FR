@@ -8,79 +8,82 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
-description: Suivez ces instructions pour créer votre page À propos de nous, y compris le nom de l’entreprise, l’adresse, le numéro de téléphone, l’URL du site web, le logo et les heures d’ouverture dans Microsoft Bookings.
-ms.openlocfilehash: 313e85166c02afa5a52f4cd4fb6cf25a7077ad26
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Suivez ces instructions pour créer votre page À propos de nous, notamment le nom d’entreprise, l’adresse, le numéro de téléphone, l’URL du site web, le logo et les heures d’ouverture dans Microsoft Bookings.
+ms.openlocfilehash: 9931a5c00147a6f6b9b0cd4ef9550d783b8771fd
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173954"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64715338"
 ---
 # <a name="enter-your-business-information"></a>Protégez vos informations
 
-Dans Microsoft Bookings, la page Informations professionnelles dans l’application web contient tous les détails que vous trouverez généralement sur la page « À propos de nous » d’une entreprise. Ces détails incluent le nom, l’adresse, le numéro de téléphone, l’URL du site web, l’URL de la politique de confidentialité, le logo et les heures d’ouverture.
+> [!NOTE]
+> Cet article vous aide à interagir avec la dernière version de Microsoft Bookings. Les versions précédentes seront mises hors service dans les prochains mois.
 
-Les informations que vous fournissez ici s’affichent sur la page que les clients et les clients utilisent pour réserver des rendez-vous (appelée page de réservation), ainsi que dans les messages et rappels qui leur sont envoyés par Bookings. Un exemple de ces informations sur la page de réservation est mis en évidence ci-dessous.
+Dans Microsoft Bookings, la page Informations professionnelles de l’application web contient tous les détails que vous trouverez généralement sur la page « À propos de nous » d’une entreprise. Ces détails incluent un nom, une adresse, un numéro de téléphone, une URL de site web, une URL de stratégie de confidentialité, un logo et des heures d’ouverture.
+
+Les informations que vous fournissez ici s’affichent sur la page que les clients et les clients utilisent pour réserver des rendez-vous (la page de réservation) et dans les messages et rappels qui leur sont envoyés par Bookings. Vous trouverez ci-dessous un exemple de ces informations sur la page de réservation.
 
    ![Image de l’exemple de page Informations professionnelles dans Microsoft Bookings.](../media/bookings-business-info.png)
 
 > [!NOTE]
-> To get started, see [Get access to Microsoft Bookings](get-access.md). Pour activer ou désactiver bookings, voir [Activer ou désactiver bookings pour votre organisation.](turn-bookings-on-or-off.md)
+> Pour commencer, consultez [Obtenir l’accès à Microsoft Bookings](get-access.md). Pour activer ou désactiver Bookings, consultez [Activer ou désactiver Bookings pour votre organisation](turn-bookings-on-or-off.md).
 
-## <a name="provide-business-name-and-contact-information"></a>Fournir le nom de l’entreprise et les informations de contact
+## <a name="provide-business-name-and-contact-information"></a>Fournir un nom d’entreprise et des informations de contact
 
-1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis **sélectionnez Bookings.**
+1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis sélectionnez **Bookings**.
 
-1. Dans le volet de navigation, sélectionnez **Paramètres**  ->  **informations professionnelles.**
+1. Dans le volet de navigation, sélectionnez **Vos** **informations calendarBusiness** ->  dans le volet gauche.
 
-1. Dans la section **Détails de base,** entrez le nom, l’adresse et le numéro de téléphone de votre entreprise que vous souhaitez utiliser pour votre calendrier Bookings.
+1. Dans la section **Informations de base**, entrez le nom, l’adresse et le numéro de téléphone de votre entreprise que vous souhaitez utiliser pour votre calendrier Bookings.
 
-:::image type="content" source="../media/bookings-business-basic-details.png" alt-text="Screenshot: Page to enter your basic business information":::
+:::image type="content" source="../media/bookings-business-basic-details.png" alt-text="Capture d’écran : Page permettant d’entrer vos informations métier de base":::
 
-Dans **Envoyer des réponses au client,** tapez l’adresse de messagerie préférée dans laquelle les réponses par courrier électronique aux confirmations et rappels de réservation doivent être transmis.
+Dans **Envoyer les réponses du client,** tapez l’adresse e-mail par défaut où les réponses par e-mail aux confirmations de réservation et aux rappels doivent être transférées.
 
-Dans le **champ URL du** site web, entrez l’URL de la page d’accueil de votre entreprise.
+Dans le champ **URL du site web** , entrez l’URL de la page d’accueil de votre entreprise.
 
-Entrez la politique **de confidentialité et** les termes & les URL des **conditions.**
+Entrez la **stratégie de confidentialité** et **les termes & conditions** URL.
 
-1. Dans la section **Logo d’entreprise,** si vous n’avez pas encore chargé votre logo d’entreprise dans l’application Bookings, ajoutez le logo de votre entreprise.
+1. Dans la section **Logo d’entreprise**, si vous n’avez pas encore téléchargé votre logo professionnel dans l’application Bookings, ajoutez le logo de votre entreprise.
 
-1. Dans la section **Définir vos heures d’ouverture,** définissez les heures d’ouverture sur vos heures d’ouverture. Voici les heures pendant lesquelles toutes les réservations sont restreintes. Des restrictions de temps supplémentaires concernant la réservation de rendez-vous peuvent être définies pour chaque service et pour chaque membre du personnel dans les pages **Services** et **personnel.**
+1. Dans la section **Définir vos heures d’ouverture** , définissez les heures d’ouverture sur vos heures opérationnelles. Il s’agit des heures auxquelles toutes les réservations sont limitées. Des restrictions de temps supplémentaires sur le moment où les rendez-vous peuvent être réservés peuvent être définies pour chaque service et pour chaque membre du personnel dans les pages **Services** et **Personnel** .
 
-Dans la page Informations professionnelles, sous Heures d’ouverture, utilisez les dropdowns pour sélectionner les heures de début et de fin de chaque jour. Cliquez **+** pour ajouter des sélecteurs de début et de fin.
+Dans la page Informations professionnelles, sous Heures d’ouverture, utilisez les listes déroulantes pour sélectionner les heures de début et de fin pour chaque jour. Cliquez pour **+** ajouter des sélecteurs de début et de fin.
 
-Par défaut, les heures d’ouverture dans l’application Bookings sont définies sur 8 h 00. à 17 h, du lundi au vendredi. Les heures sont fournies par incréments de 15 minutes. L’application Bookings utilise l’horloge au 12 heures.
+Par défaut, les heures d’ouverture dans l’application Bookings sont définies sur 8 h. à 17 h, du lundi au vendredi. Les heures sont fournies par incréments de 15 minutes. L’application Bookings utilise l’horloge de 12 heures.
 
 1. Sélectionnez **Enregistrer**.
 
-### <a name="how-to-set-hours-for-a-split-shift"></a>Comment définir des heures pour un travail d’équipe fractionner
+### <a name="how-to-set-hours-for-a-split-shift"></a>Comment définir les heures d’un quart de travail fractionné
 
-Vous devrez peut-être bloquer une partie de chaque jour ou semaine pour avoir des réunions du personnel, mettre à jour l’inventaire ou prendre en charge d’autres détails sur le rythme de l’entreprise. L’application Bookings vous permet de limiter les rendez-vous client à vos créneaux horaires spécifiés.
+Vous devrez peut-être bloquer une partie de chaque jour ou semaine pour tenir des réunions du personnel, mettre à jour l’inventaire ou prendre soin d’autres détails sur le rythme de l’entreprise. L’application Bookings vous permet de limiter les rendez-vous client à vos créneaux horaires spécifiés.
 
-Par exemple, vous avez des réunions du personnel tous les jeudis de 13h00 à 14h30 et que vous souhaitez bloquer cette heure pour que tous les membres de votre personnel puisse y participer. Pour cela :
+Par exemple, vous avez des réunions du personnel tous les jeudis de 13h à 14h30 et vous souhaitez bloquer cette heure afin que tous les membres de votre personnel puissent y assister. Pour cela :
 
-1. Dans la page Informations professionnelles, sous Heures d’ouverture, sélectionnez l’heure de début et de fin du jeudi. Dans cet exemple, nous allons définir 8 h 00. à 13 h 00
+1. Dans la page Informations professionnelles, sous Heures d’ouverture, sélectionnez une heure de début et de fin pour les jeudis. Dans cet exemple, nous allons définir 8h00. à 13 h
 
-1. Sélectionnez **+** pour créer une ligne pour jeudi.
+1. Sélectionnez **+** cette option pour créer une ligne pour jeudi.
 
-   ![Image de l’interface utilisateur pendant les heures d’ouverture.](../media/bookings-split-shift.png)
+   ![Image de l’interface utilisateur des heures d’ouverture.](../media/bookings-split-shift.png)
 
-1. Dans la nouvelle ligne, sélectionnez 14:30. pour l’heure de début et 18:00 pour l’heure de fin.
+1. Dans la nouvelle ligne, sélectionnez 14 h 30. pour l’heure de début et 18 h pour l’heure de fin.
 
-   ![Image de l’interface utilisateur pendant les heures d’ouverture avec les heures d’ouverture ajoutées.](../media/bookings-split-shift-hours.png)
+   ![Image de l’interface utilisateur des heures d’ouverture avec des heures ajoutées.](../media/bookings-split-shift-hours.png)
 
 1. Sélectionnez Enregistrer.
 
-    Lorsqu’un client se rend sur votre page de réservation, il voit que votre entreprise est fermée de 1 à 14 h 30 le jeudi.
+    Lorsqu’un client accède à votre page de réservation, il voit que votre entreprise est fermée de 1 à 2h30 le jeudi.
 
 ## <a name="upload-your-logo"></a>Télécharger votre logo
 
-Si vous n’avez pas encore chargé votre logo d’entreprise sur l’application Bookings, vous pouvez le faire à partir de la page Informations professionnelles.
+Si vous n’avez pas encore téléchargé votre logo professionnel dans l’application Bookings, vous pouvez le faire à partir de la page Informations professionnelles.
 
-1. Dans la page Informations professionnelles, sous Télécharger, sélectionnez **Modifier.**
+1. Dans la page Informations professionnelles, sous Télécharger logo, **sélectionnez Modifier**.
 
-1. Sélectionnez **Télécharger photo.**
+1. Sélectionnez **Télécharger photo**.
 
-   ![Image du bouton télécharger une photo.](../media/bookings-upload-photo.png)
+   ![Image du bouton Charger la photo.](../media/bookings-upload-photo.png)
 
 1. Sélectionnez **Enregistrer**.

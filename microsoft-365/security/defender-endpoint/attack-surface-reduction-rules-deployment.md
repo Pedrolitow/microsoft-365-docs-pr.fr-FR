@@ -1,5 +1,5 @@
 ---
-title: Prérequis pour le déploiement des règles ASR
+title: Vue d’ensemble du déploiement des règles de réduction de la surface d’attaque (ASR)
 description: Fournit une vue d’ensemble et des instructions préalables sur le déploiement de règles de réduction de la surface d’attaque (ASR).
 keywords: Déploiement de règles de réduction de la surface d’attaque, déploiement ASR, activer des règles asr, configurer asr, système de prévention des intrusions de l’hôte, règles de protection, règles anti-exploitation, règles d’exploitation, règles de prévention des infections, Microsoft Defender pour point de terminaison, configurer des règles ASR
 search.product: eADQiWindows 10XVcnh
@@ -20,16 +20,14 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 0180bfcef9d478dcf8e334a180ea3df993585e00
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 8743d13939e73e25cefd08724d9a2f8d5a7fa410
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666413"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705535"
 ---
-# <a name="asr-rules-deployment-prerequisites"></a>Prérequis pour le déploiement des règles ASR
-
-## <a name="before-you-begin"></a>Avant de commencer
+# <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>Vue d’ensemble du déploiement des règles de réduction de la surface d’attaque (ASR)
 
 Les surfaces d’attaque sont tous les endroits où votre organisation est vulnérable aux cybermenaces et aux attaques. Les surfaces d’attaque de votre organisation incluent tous les emplacements où un attaquant peut compromettre les appareils ou les réseaux de votre organisation. Réduire votre surface d’attaque signifie protéger les appareils et le réseau de votre organisation, ce qui laisse aux attaquants moins de moyens d’attaquer. La configuration des règles de réduction de la surface d’attaque (ASR), l’une des nombreuses fonctionnalités de sécurité disponibles dans Microsoft Defender pour point de terminaison, peut vous aider.
 
@@ -40,6 +38,8 @@ Les règles ASR ciblent certains comportements logiciels, tels que :
 - Comportements que les applications ne se produisent généralement pas pendant le travail quotidien normal
 
 En réduisant les différentes surfaces d’attaque, vous pouvez empêcher les attaques de se produire en premier lieu.
+
+## <a name="before-you-begin"></a>Avant de commencer
 
 Lors de votre préparation initiale, il est essentiel de comprendre les fonctionnalités des systèmes que vous allez mettre en place. Comprendre les fonctionnalités vous aidera à déterminer les règles ASR les plus importantes pour protéger votre organisation. En outre, vous devez vous occuper de plusieurs prérequis pour préparer votre déploiement ASR.
 
@@ -129,13 +129,13 @@ Comme pour toute nouvelle implémentation à grande échelle susceptible d’avo
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Rubriques supplémentaires dans cette collection de déploiement
 
-[Phase 1 : Planifier](attack-surface-reduction-rules-deployment-plan.md)
+[Tester les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-test.md)
 
-[Phase 2 : Tester](attack-surface-reduction-rules-deployment-test.md)
+[Activer les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-implement.md)
 
-[Phase 3 : Implémenter](attack-surface-reduction-rules-deployment-implement.md)
+[Opérationnaliser les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[Phase 4 : Opérationnaliser](attack-surface-reduction-rules-deployment-operationalize.md)
+[Informations de référence sur les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-reference.md)
 
 ## <a name="reference"></a>Référence
 
@@ -155,7 +155,7 @@ Comme pour toute nouvelle implémentation à grande échelle susceptible d’avo
 
 [Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection des programmes malveillants](attack-surface-reduction.md)
 
-[Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md)
+[Activer les règles de réduction de la surface d’attaque - autres configurations](enable-attack-surface-reduction.md)
 
 [Référence des règles de réduction de la surface d’attaque](attack-surface-reduction-rules-reference.md)
 
