@@ -21,64 +21,64 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment utiliser le s switcher de client et les affichages multi-locataires qui vous donnent la possibilité de gérer les locataires à partir d’un emplacement unique.
-ms.openlocfilehash: d30d352376bb10e142d478e21ddd550577f536ca
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez comment utiliser le sélecteur de locataires et les vues multilocataires qui vous permettent de gérer les locataires à partir d’un emplacement unique.
+ms.openlocfilehash: 0058bdb45b42e2c67b96ff3e30ce1cd04e5658b2
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195172"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64713952"
 ---
-# <a name="multi-tenant-management"></a>Gestion multi-locataires
+# <a name="multi-tenant-management"></a>Gestion multilocataire
 
-La gestion multi-locataires offre une forme unifiée de gestion qui permet aux administrateurs Microsoft 365 partenaires de gérer tous les locataires qu’ils gèrent à partir d’un seul emplacement. Si vous êtes un partenaire qui gère plusieurs locataires, vous pouvez :
+La gestion multilocataire offre une forme unifiée de gestion qui permet Microsoft 365 administrateurs partenaires d’administrer tous les locataires qu’ils gèrent à partir d’un emplacement unique. Si vous êtes un partenaire qui a un rôle d’administrateur délégué et gère plusieurs locataires, vous pouvez :
 
-- Passer rapidement d’un client à l’autre que vous gérez.
-- Évaluer l’état du service, les produits et la facturation sur plusieurs clients.
-- Dans **la** page Tous les clients, vous pouvez voir rapidement l’état de tous les services de vos clients, les demandes de service ouvertes, vos produits et facturation, ainsi que le nombre d’utilisateurs de ce client.
+- Déplacez-vous rapidement entre les locataires que vous gérez.
+- Évaluer l’intégrité du service, les produits et la facturation sur plusieurs locataires.
+- Dans la page **Tous les locataires** , vous pouvez rapidement voir l’intégrité de tous les services de vos locataires, toutes les demandes de service ouvertes, vos produits et facturation, ainsi que le nombre d’utilisateurs dans ce locataire.
 
-## <a name="move-between-tenants"></a>Passer d’un client à l’autre
+## <a name="move-between-tenants"></a>Passer d’un locataire à l’autre
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365,</a>sélectionnez le nom de l’organisation.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>, sélectionnez le nom de l’organisation.
 
-    :::image type="content" source="../../media/macorgswitcher.png" alt-text="S’il s’est multi-locataire.":::
+    :::image type="content" source="../../media/macorgswitcher.png" alt-text="Sélecteur multilocataire.":::
 
-- À partir **du s switcher client,** vous pouvez passer rapidement d’un client à l’autre que vous gérez.
+- À partir du **sélecteur** de locataires, vous pouvez vous déplacer rapidement entre les locataires que vous gérez.
 
-    :::image type="content" source="../../media/yourtenantslist.png" alt-text="Liste de vos locataires avec fonctionnalité de recherche.":::
+    :::image type="content" source="../../media/yourtenantslist.png" alt-text="Votre liste de locataires avec la fonctionnalité de recherche.":::
 
-## <a name="view-all-tenants-page"></a>Page Afficher tous les locataires
+## <a name="view-all-tenants-page"></a>Afficher la page Tous les locataires
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>, dans le navigation gauche, **sélectionnez Tous les locataires.**
-- Dans la page **Tous les locataires,** vous pouvez
-  - Évaluer l’état du service
-  - Passer en revue l’utilisation des licences
-  - Rechercher ou sélectionner le client que vous souhaitez gérer
-  - Vous pouvez également épingler votre client le plus souvent visité en haut de la liste.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>, dans le volet de navigation de gauche, sélectionnez **Tous les locataires**.
+- Dans la page **Tous les locataires** , vous pouvez
+  - Évaluer l’intégrité du service
+  - Examiner l’utilisation des licences
+  - Recherchez ou sélectionnez le locataire que vous souhaitez gérer
+  - Vous pouvez également épingler votre locataire le plus souvent visité en haut de la liste.
 
-Si vous avez marqué un client comme favori, il est automatiquement développé afin que vous pouvez immédiatement afficher les détails de l’état.
+Si vous avez marqué un locataire comme favori, il est automatiquement développé pour vous permettre d’afficher immédiatement les détails de l’état.
 
-## <a name="view-service-health-for-all-accounts"></a>Afficher l’état du service pour tous les comptes
+## <a name="view-service-health-for-all-accounts"></a>Afficher l’intégrité du service pour tous les comptes
 
-L’affichage d’état du service vous indique si des incidents ou des conseils affectent les clients. Il vous indiquera même combien de vos locataires gérés sont affectés.
+La vue d’intégrité du service vous indique si des incidents ou des avis affectent les locataires. Il vous indiquera même le nombre de vos locataires gérés concernés.
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365,</a>dans l’affichage multi-clients, sélectionnez **État du service.**
-2. Dans l’affichage agrégé de la **page** État du service, vous pouvez également voir le nombre total d’incidents, le nombre total d’avis affectant l’un des clients gérés et le nombre de services avec des incidents actifs. Vous pouvez également voir combien de vos locataires sont affectés par les incidents et les avis.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>, dans la vue mutualisée, sélectionnez **Service Health**.
+2. Dans la **vue** agrégée État des services page, vous pouvez également voir le nombre total d’incidents, le nombre total d’avis affectant l’un des locataires gérés et le nombre de services avec des incidents actifs. Vous pouvez également voir combien de vos locataires sont affectés par des incidents et des avis.
 
-    - Vous pouvez utiliser l’option de filtrage pour afficher les problèmes par type de problème ou par service
+    - Vous pouvez utiliser l’option de filtre pour afficher les problèmes par type de problème ou par service
 
-    - Vous pouvez passer en revue les problèmes sous **tous les services** ou tous les **onglets** problèmes.
+    - Vous pouvez passer en revue les problèmes sous **tous les services** ou **tous les** onglets Problèmes.
 
-    :::image type="content" source="../../media/multitenant-servicehealth.png" alt-text="Page d’état du service multi-client.":::
-1. Sélectionnez un incident sous  l’onglet Tous les **services** ou Tous les problèmes pour obtenir plus d’informations sur tout incident sous l’onglet **Vue d’ensemble.** Sélectionnez **l’onglet Locataires affectés** pour obtenir la liste des locataires concernés.
+    :::image type="content" source="../../media/multitenant-servicehealth.png" alt-text="Page État des services multilocataire.":::
+1. Sélectionnez un incident sous l’onglet **Tous les services** ou **Tous les problèmes** pour obtenir plus d’informations sur tout incident sous l’onglet **Vue d’ensemble** . Sélectionnez l’onglet **Locataires affectés** pour obtenir la liste des locataires concernés.
 
-    :::image type="content" source="../../media/tenantsaffected.png" alt-text="Liste des clients affectés par un problème d’état du service.":::
+    :::image type="content" source="../../media/tenantsaffected.png" alt-text="Liste des locataires affectés par un problème d’intégrité du service.":::
 
-La liste des locataires concernés peut être exportée au format CSV afin que les administrateurs peuvent la partager avec les équipes de support technique.
+La liste des locataires affectés peut être exportée au format CSV afin que les administrateurs puissent la partager avec les équipes de support technique.
 
-## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>Afficher un seul client dans le Centre d'administration Microsoft 365
+## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>Afficher un locataire unique dans le Centre d'administration Microsoft 365
 
-Vous pouvez revenir au Centre d'administration Microsoft 365 pour n’importe quel client à partir de la page **Tous les** locataires.
+Vous pouvez revenir à la Centre d'administration Microsoft 365 pour l’un des locataires à partir de la page **Tous les locataires**.
 
-1. Dans la page **Tous les locataires,** sélectionnez le nom du client pour lequel vous souhaitez afficher le Centre d’administration.
-2. Vous êtes dirigé vers le centre d’administration pour ce client.
+1. Dans la page **Tous les locataires** , sélectionnez le nom du locataire pour lequel vous souhaitez afficher le centre d’administration.
+2. Vous êtes dirigé vers le Centre d’administration pour ce locataire.

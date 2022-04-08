@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Correction des menaces
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dbb86061ddd7d94cf37a38d21d99d75eaaa44fae
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 98b425c39cd12aea55714e9ade192e2e770b26cd
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704901"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714841"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Corriger les courriers malveillants remis dans Office 365
 
@@ -42,10 +42,6 @@ Les administrateurs peuvent prendre les mesures nécessaires sur les e-mails, ma
 *La chasse manuelle* se produit lorsque les équipes de sécurité identifient manuellement les menaces à l’aide des fonctionnalités de recherche et de filtrage dans l’Explorateur. La correction manuelle de l’e-mail peut être déclenchée via n’importe quelle vue de messagerie (*programme malveillant*, *hameçonnage* ou *tous les e-mails*) après avoir identifié un ensemble d’e-mails qui doivent être corrigés.
 
 :::image type="content" source="../../media/microsoft-365-defender-threat-explorer-manual-remediation.png" alt-text="Capture d’écran de la chasse manuelle dans Office 365 Explorer par date.":::
-
-*Journaux d’activité des actions* Affiche les détails de l’état de correction, comme réussite, échec et déjà dans la destination.
-
-:::image type="content" source="../../media/microsoft-365-defender-action-center-history.png" alt-text="Le Centre d’actions affiche les détails de l’état de correction, comme le succès, l’échec et déjà dans la destination.":::
 
 Les équipes de sécurité peuvent utiliser l’Explorateur pour sélectionner des e-mails de plusieurs façons :
 
@@ -83,12 +79,11 @@ Le Centre d’actions unifié affiche les actions de correction des 30 derniers 
 
 Ouvrez tout élément de correction pour afficher des détails à son sujet, notamment son nom de correction, son ID d’approbation, son ID d’investigation, sa date de création, sa description, son état, sa source d’action, son type d’action, son état. Il ouvre également un volet latéral avec les détails de l’action, les détails du cluster d’e-mail, les alertes et les détails de l’incident.
 
-- *Ouvrez la page Investigation* pour ouvrir une enquête d’administration qui contient moins de détails et d’onglets. Il affiche des détails tels que : alerte associée, entité sélectionnée pour la correction, action effectuée, état de correction, nombre d’entités, journaux d’activité, approbateur d’action. Cette enquête effectue un suivi de l’enquête effectuée manuellement par l’administrateur et contient des détails sur les sélections effectuées par l’administrateur. Par conséquent, il s’agit de l’enquête sur les actions de l’administrateur. Pas besoin d’agir sur l’enquête et d’alerter son état déjà approuvé.   
-- *Nombre d’e-mails* Affiche le nombre d’e-mails envoyés via l’Explorateur de menaces. Ces e-mails peuvent être actionnables ou non exploitables. 
-- *Journaux d’activité des actions* Affiche les détails de l’état de correction comme réussite/échec/ déjà dans la destination
+- *Ouvrez la page Investigation* pour ouvrir une enquête d’administration qui contient moins de détails et d’onglets. Il affiche des détails tels que : alerte associée, entité sélectionnée pour la correction, action effectuée, état de correction, nombre d’entités, journaux d’activité, approbateur d’action. Cette enquête effectue un suivi de l’enquête effectuée manuellement par l’administrateur et contient des détails sur les sélections effectuées par l’administrateur. Par conséquent, il s’agit de l’enquête sur les actions de l’administrateur. Pas besoin d’agir sur l’enquête et d’alerter son état déjà approuvé.
+- *Nombre d’e-mails* Affiche le nombre d’e-mails envoyés via l’Explorateur de menaces. Ces e-mails peuvent être actionnables ou non exploitables.
+- *Journaux d’activité des actions* Affichez les détails des états de correction tels que le succès, l’échec et déjà dans la destination.
 
-  > [!div class="mx-imgBorder"]
-  > [![Capture d’écran du centre d’actions avec des menaces actionnables et non actionnables.](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
+:::image type="content" source="../../media/microsoft-365-defender-action-center-history-panel.png" alt-text="Centre d’actions avec l’option Déplacer vers la boîte de réception ouverte.":::
 
   - **Actionnable** : les e-mails dans les emplacements de boîte aux lettres cloud suivants peuvent être activés et déplacés :
     - Boîte de réception

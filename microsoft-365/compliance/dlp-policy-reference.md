@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Informations de référence sur le composant de stratégie DLP et la configuration
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: d6bc24f313d1998979a460bcd41e87ccbe8abc5c
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 169fb93f7343fd038af9e7b8ae789dabc871c6aa
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704920"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64713996"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Informations de référence sur la stratégie de protection contre la perte de données
 
@@ -202,8 +202,6 @@ Dans l’exemple ci-dessous, la règle 1 est prioritaire sur les autres règles 
 - Règle 4 : aucune application
 
 Toutes les autres règles sont évaluées, mais leurs actions ne sont pas appliquées. Les journaux d’audit affichent la règle la plus restrictive appliquée au fichier. S’il existe plusieurs règles qui correspondent et qu’elles sont tout aussi restrictives, la stratégie et la priorité de règle régissent la règle qui serait appliquée sur le fichier.
-
-Pour les points de terminaison, vous pouvez configurer les actions que DLP prend pour toutes les activités prises en charge dans une seule règle pour un ensemble particulier de conditions d’inclusion.
 
 ### <a name="conditions"></a>Conditions
 

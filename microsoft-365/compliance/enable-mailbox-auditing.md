@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: La journalisation de l’audit de boîte aux lettres est activée par défaut dans Microsoft 365 (également appelé audit de boîte aux lettres par défaut ou audit de boîte aux lettres activé par défaut). Cela signifie que certaines actions effectuées par les propriétaires de boîtes aux lettres, les délégués et les administrateurs sont automatiquement enregistrées dans un journal d’audit de boîte aux lettres, où vous pouvez rechercher les activités effectuées sur la boîte aux lettres.
-ms.openlocfilehash: 1f566ee46520047e1bc125e505d53911fb07c912
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 9b3c08850ff0cce14fdce13d496642239e817096
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705338"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714326"
 ---
 # <a name="manage-mailbox-auditing"></a>Gérer l’audit de boîte aux lettres
 
@@ -62,10 +62,6 @@ Pour que l’audit des boîtes aux lettres soit désactivé pour des boîtes aux
 
 Le tableau suivant présente les types de boîtes aux lettres actuellement pris en charge par l’audit de boîte aux lettres par défaut :
 
-<br>
-
-****
-
 |Type de boîte aux lettres|Pris en charge|
 |---|:---:|
 |Boîtes aux lettres utilisateur|![Marque de vérification.](../media/checkmark.png)|
@@ -73,7 +69,6 @@ Le tableau suivant présente les types de boîtes aux lettres actuellement pris 
 |boîtes aux lettres de groupe Microsoft 365|![Marque de vérification.](../media/checkmark.png)|
 |Boîtes aux lettres de ressources||
 |Boîtes aux lettres de dossiers publics||
-|
 
 ## <a name="logon-types-and-mailbox-actions"></a>Types d’ouverture de session et actions de boîte aux lettres
 
@@ -98,10 +93,6 @@ Le tableau suivant décrit les actions de boîte aux lettres disponibles dans la
 - Un astérisque ( <sup>\*</sup> ) après la coche indique que l’action de boîte aux lettres est journalisée par défaut pour le type d’ouverture de session.
 - N’oubliez pas qu’un administrateur disposant de l’autorisation d’accès total à une boîte aux lettres est considéré comme un délégué.
 
-<br>
-
-****
-
 |Action de boîte aux lettres|Description|Administrateur|Délégué|Propriétaire|
 |---|---|:---:|:---:|:---:|
 |**AddFolderPermissions**|Bien que cette valeur soit acceptée comme action de boîte aux lettres, elle est déjà incluse dans l’action **UpdateFolderPermissions** et n’est pas auditée séparément. En d’autres termes, n’utilisez pas cette valeur.||||
@@ -111,15 +102,15 @@ Le tableau suivant décrit les actions de boîte aux lettres disponibles dans la
 |**FolderBind**|Un utilisateur a accédé au dossier de boîte aux lettres. Cette action est également enregistrée lorsque l’administrateur ou un délégué ouvre la boîte aux lettres.<br/><br/> **Remarque** : les enregistrements d’audit pour les actions de liaison de dossier effectuées par les délégués sont consolidés. Un enregistrement d’audit est généré pour l’accès individuel aux dossiers au cours d’une période de 24 heures.|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)||
 |**HardDelete**|Un message a été purgé du dossier Éléments récupérables.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|
 |**MailboxLogin**|L’utilisateur s’est connecté à sa boîte aux lettres.|||![Coche](../media/checkmark.png)|
-|**MailItemsAccessed**|**Remarque** : cette valeur est disponible uniquement pour les utilisateurs de l’abonnement aux modules complémentaires conformité E5 ou E5. Pour plus d’informations, consultez [Configurer l’audit avancé dans Microsoft 365](set-up-advanced-audit.md). <p> Les données de messagerie sont accessibles par les protocoles de messagerie et les clients.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
-|**MessageBind**|**Remarque** : cette valeur est disponible uniquement pour les utilisateurs E3 (utilisateurs sans abonnement aux modules complémentaires de conformité E5 ou E5). <p> Un message a été affiché dans le volet d’aperçu ou ouvert par un administrateur.|![Coche](../media/checkmark.png)|||
+|**MailItemsAccessed**|**Remarque** : cette valeur est disponible uniquement pour les utilisateurs de l’abonnement aux modules complémentaires conformité E5 ou E5. Pour plus d’informations, consultez [Configurer l’audit avancé dans Microsoft 365](set-up-advanced-audit.md). <br/><br/> Les données de messagerie sont accessibles par les protocoles de messagerie et les clients.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
+|**MessageBind**|**Remarque** : cette valeur est disponible uniquement pour les utilisateurs E3 (utilisateurs sans abonnement aux modules complémentaires de conformité E5 ou E5). <br/><br/> Un message a été affiché dans le volet d’aperçu ou ouvert par un administrateur.|![Coche](../media/checkmark.png)|||
 |**ModifyFolderPermissions**|Bien que cette valeur soit acceptée comme action de boîte aux lettres, elle est déjà incluse dans l’action **UpdateFolderPermissions** et n’est pas auditée séparément. En d’autres termes, n’utilisez pas cette valeur.||||
 |**Déplacer**|Un message a été déplacé vers un autre dossier.|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|
 |**MoveToDeletedItems**|Un message a été supprimé et déplacé vers le dossier Éléments supprimés.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
 |**RecordDelete**|Un élément étiqueté en tant qu’enregistrement a été supprimé de manière réversible (déplacé vers le dossier Éléments récupérables). Les éléments étiquetés en tant qu’enregistrements ne peuvent pas être supprimés définitivement (supprimés du dossier Éléments récupérables).|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|
 |**RemoveFolderPermissions**|Bien que cette valeur soit acceptée comme action de boîte aux lettres, elle est déjà incluse dans l’action **UpdateFolderPermissions** et n’est pas auditée séparément. En d’autres termes, n’utilisez pas cette valeur.||||
-|**SearchQueryInitiated**|**Remarque** : cette valeur est disponible uniquement pour les utilisateurs de l’abonnement aux modules complémentaires conformité E5 ou E5. Pour plus d’informations, consultez [Configurer l’audit avancé dans Microsoft 365](set-up-advanced-audit.md). <p> Une personne utilise Outlook (Windows, Mac, iOS, Android ou Outlook sur le web) ou l’application Courrier pour Windows 10 pour rechercher des éléments dans une boîte aux lettres.|||![Coche](../media/checkmark.png)|
-|**Send**|**Remarque** : cette valeur est disponible uniquement pour les utilisateurs de l’abonnement aux modules complémentaires conformité E5 ou E5. Pour plus d’informations, consultez [Configurer l’audit avancé dans Microsoft 365](set-up-advanced-audit.md). <p> L’utilisateur envoie un e-mail, répond à un e-mail ou transfère un e-mail.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>||![Coche](../media/checkmark.png)<sup>\*</sup>|
+|**SearchQueryInitiated**|**Remarque** : cette valeur est disponible uniquement pour les utilisateurs de l’abonnement aux modules complémentaires conformité E5 ou E5. Pour plus d’informations, consultez [Configurer l’audit avancé dans Microsoft 365](set-up-advanced-audit.md). <br/><br/> Une personne utilise Outlook (Windows, Mac, iOS, Android ou Outlook sur le web) ou l’application Courrier pour Windows 10 pour rechercher des éléments dans une boîte aux lettres.|||![Coche](../media/checkmark.png)|
+|**Send**|**Remarque** : cette valeur est disponible uniquement pour les utilisateurs de l’abonnement aux modules complémentaires conformité E5 ou E5. Pour plus d’informations, consultez [Configurer l’audit avancé dans Microsoft 365](set-up-advanced-audit.md). <br/><br/> L’utilisateur envoie un e-mail, répond à un e-mail ou transfère un e-mail.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>||![Coche](../media/checkmark.png)<sup>\*</sup>|
 |**SendAs**|Un message a été envoyé à l’aide de l’autorisation SendAs. Cela signifie qu’un autre utilisateur a envoyé le message comme s’il provenait du propriétaire de la boîte aux lettres.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|Un message a été envoyé à l’aide de l’autorisation SendOnBehalf. Cela signifie qu’un autre utilisateur a envoyé le message de la part du propriétaire de la boîte aux lettres. Le message indique au destinataire de la part de qui le message a été envoyé et qui a envoyé réellement le message.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|Un message a été définitivement supprimé ou supprimé (récupérable) du dossier Éléments supprimés. Les éléments supprimés récupérables sont déplacés vers le dossier Éléments récupérables.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
@@ -128,7 +119,6 @@ Le tableau suivant décrit les actions de boîte aux lettres disponibles dans la
 |**UpdateComplianceTag**|Une autre étiquette de rétention est appliquée à un élément de courrier (un élément ne peut avoir qu’une seule étiquette de rétention qui lui est affectée).|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|
 |**UpdateFolderPermissions**|Une autorisation de dossier a été modifiée. Les autorisations de dossier contrôlent quels utilisateurs de votre organisation peuvent accéder aux dossiers dans une boîte aux lettres et aux messages situés dans ces dossiers.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateInboxRules**|Une règle de boîte de réception a été ajoutée, supprimée ou modifiée. Les règles de boîte de réception sont utilisées pour traiter les messages dans la boîte de réception de l’utilisateur en fonction des conditions spécifiées et prendre des mesures lorsque les conditions d’une règle sont remplies, telles que le déplacement d’un message vers un dossier spécifié ou la suppression d’un message.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
-|
 
 > [!IMPORTANT]
 > Si vous avez personnalisé les actions de boîte aux lettres à auditer pour tout type d’ouverture de session *avant* que l’audit de boîte aux lettres par défaut n’ait été activé dans votre organisation, les paramètres personnalisés sont conservés sur la boîte aux lettres et ne sont pas remplacés par les actions de boîte aux lettres par défaut, comme décrit dans cette section. Pour rétablir les valeurs par défaut des actions de boîte aux lettres d’audit (ce que vous pouvez faire à tout moment), consultez la section [Restaurer les actions de boîte aux lettres par défaut](#restore-the-default-mailbox-actions) plus loin dans cet article.
@@ -141,10 +131,6 @@ Le tableau suivant décrit les actions de boîte aux lettres journalisées par d
 
 N’oubliez pas qu’un administrateur disposant de l’autorisation d’accès total à une boîte aux lettres de groupe Microsoft 365 est considéré comme délégué.
 
-<br>
-
-****
-
 |Action de boîte aux lettres|Description|Administrateur|Délégué|Propriétaire|
 |---|---|:---:|:---:|:---:|
 |**Create**|Création d’un élément de calendrier. Notez que la création, l’envoi ou la réception d’un message ne sont pas audités.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>||
@@ -154,7 +140,6 @@ N’oubliez pas qu’un administrateur disposant de l’autorisation d’accès 
 |**SendOnBehalf**|Un message a été envoyé à l’aide de l’autorisation Envoyer de la part de.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|Un message a été définitivement supprimé ou supprimé (récupérable) du dossier Éléments supprimés. Les éléments supprimés récupérables sont déplacés vers le dossier Éléments récupérables.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
 |**Mettre à jour**|Un message ou une de ses propriétés a été modifié.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
-|
 
 ### <a name="verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type"></a>Vérifier que les actions de boîte aux lettres par défaut sont journalisées pour chaque type d’ouverture de session
 
@@ -342,13 +327,13 @@ La valeur **True** indique que la journalisation de l’audit de boîte aux lett
   - Activez manuellement l’audit de boîte aux lettres sur des boîtes aux lettres individuelles (exécutez la commande). `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true` Après cela, vous pouvez utiliser des recherches dans le journal d’audit dans le Centre de conformité Microsoft 365 ou via l’API activité de gestion Office 365.
 
     > [!NOTE]
-    > Si l’audit de boîte aux lettres semble déjà être activé sur la boîte aux lettres, mais que vos recherches ne retournent aucun résultat, remplacez la valeur du paramètre `$false` `$true`_AuditEnabled_ par .
+    > Si l’audit de boîte aux lettres semble déjà être activé sur la boîte aux lettres, mais que vos recherches ne retournent aucun résultat, remplacez la valeur du paramètre `$false` `$true`*AuditEnabled* par .
 
   - Utilisez les applets de commande suivantes dans Exchange Online PowerShell :
     - [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) pour rechercher des utilisateurs spécifiques dans le journal d’audit de boîte aux lettres.
     - [New-MailboxAuditLogSearch](/powershell/module/exchange/new-mailboxauditlogsearch) pour rechercher des utilisateurs spécifiques dans le journal d’audit de boîte aux lettres et envoyer les résultats par e-mail aux destinataires spécifiés.
 
-  - Utilisez le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange (EAC)</a> dans Exchange Online pour effectuer les actions suivantes :
+  - Utilisez le centre d’administration Exchange (EAC) dans Exchange Online pour effectuer les actions suivantes :
     - [Exporter les journaux d’audit de boîte aux lettres](/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
     - [Exécuter un rapport d’accès aux boîtes aux lettres par des non-propriétaires](/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
 

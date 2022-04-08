@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Contrats fréquemment interrogés
+  title: Questions fréquentes (FAQ) sur les contrats
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
@@ -11,134 +11,113 @@ metadata:
   ms.service: o365-administration
   ms.custom: commerce_vl
   ms.localizationpriority: medium
-  description: Questions fréquemment posées sur Centre d'administration Microsoft 365 contrats de licence.
-  ms.openlocfilehash: a38bf6fb9a327ccda557986264d8b9a56454f6f2
-  ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+  description: Forum aux questions sur les contrats de licence Centre d'administration Microsoft 365.
+  ms.openlocfilehash: 16b6abd5d49b1b72fb93f981762140a98105b297
+  ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 03/12/2022
-  ms.locfileid: "63450837"
-title: Contrats fréquemment interrogés
+  ms.lasthandoff: 04/08/2022
+  ms.locfileid: "64714150"
+title: Questions fréquentes sur les contrats
 summary: ''
 sections:
 - name: Général
   questions:
   - question: >
-      Pourquoi puis-je voir la liste Contrats ?
+      Pourquoi puis-je voir la liste des contrats ?
     answer: >
-      Vous pouvez voir la liste Contrats si vous êtes un utilisateur de licence en volume valide. Vous êtes un utilisateur VL si vous répondez à l’une des conditions suivantes :
+      Vous pouvez voir la liste des contrats si vous êtes un utilisateur de licence en volume (VL) valide. Si vous remplissez l’une des conditions suivantes, vous êtes un utilisateur de la bibliothèque de machines virtuelles :
 
 
-      - Vous êtes répertorié en tant que contact pour les contrats dans un formulaire juridique de programme de licences en volume. Les types de contacts incluent contact principal, Correspondant d’avis, Contact d’accès en ligne, Gestionnaire d’assurance logiciel, Gestionnaire des services en ligne ou Gestionnaire d’abonnements.
+      - Vous êtes répertorié en tant que contact pour les contrats dans un formulaire de programme de licence en volume légal. Les types de contacts incluent contact principal, Correspondant d’avis, Contact d’accès en ligne, Gestionnaire de logiciels Assurance, Gestionnaire de services en ligne ou Gestionnaire d’abonnements.
 
-      - Vous êtes un administrateur ayant accès aux contrats.
+      - Vous êtes administrateur et avez accès aux contrats.
   - question: >
       Qu’est-ce qu’un ID de licence ?
     answer: >
-      Un ID de licence identifie le niveau de programme auquel les commandes peuvent être passées par une organisation. Elle peut représenter l’une des façons suivantes :
+      Un ID de licence identifie le niveau de programme auquel les commandes peuvent être passées par une organisation. Il peut représenter l’un des éléments suivants :
 
 
-      - Inscription (Enterprise ou sélectionner des programmes)
+      - Inscription (Enterprise ou Sélectionner des programmes)
 
-      - Agreement (programme Open Value)
+      - Accord (open value program)
 
       - Licence (programme Open License)
 
       - Numéro de client public (PCN) (programme Select Plus)
 
 
-      Les droits et autorisations de site sont déterminés par les ID de licence disponibles pour votre organisation.
+      Les droits d’utilisation et les autorisations de site sont déterminés par les ID de licence disponibles pour votre organisation.
   - question: >
       Où sont mes contrats MPSA ?
     answer: >
-      Les informations de licence du Contrat de produits et services Microsoft (MPSA) sont gérées dans le [Microsoft Business Center](https://businessaccount.microsoft.com/Customer) ou [Microsoft Store pour Entreprises](https://businessstore.microsoft.com/store). Aucune information MPSA n’est affichée dans cette liste de contrats. [Découvrez le MPSA](https://www.microsoft.com/Licensing/MPSA/default.aspx).
+      Les informations de licence du Contrat de produits et services Microsoft (MPSA) sont gérées dans le [Centre d’affaires Microsoft](https://businessaccount.microsoft.com/Customer) ou [dans Microsoft Store pour Entreprises](https://businessstore.microsoft.com/store). Aucune information MPSA n’est affichée dans cette liste de contrats. [En savoir plus sur MPSA](https://www.microsoft.com/Licensing/MPSA/default.aspx).
   - question: >
       Pourquoi certains ID de licence de mon organisation ne sont-ils pas affichés dans la liste ?
     answer: >
-      Un ID de licence s’affiche uniquement si l’utilisateur qui est signé est autorisé à afficher les détails de l’ID de licence. L’autorisation d’afficher un ID de licence spécifique pour le compte de votre organisation vous est accordée pour répondre à l’un des critères suivants :
+      Un ID de licence s’affiche uniquement si l’utilisateur connecté a l’autorisation d’afficher les détails de l’ID de licence. L’autorisation d’afficher un ID de licence spécifique pour le compte de votre organisation vous est accordée en répondant à l’un des critères suivants :
 
 
-      - Vous êtes répertorié en tant que contact pour les contrats dans un formulaire juridique de programme de licences en volume. Les types de contacts incluent contact principal, Correspondant d’avis, Contact d’accès en ligne, Gestionnaire d’assurance logiciel, Gestionnaire des services en ligne ou Gestionnaire d’abonnements.
+      - Vous êtes répertorié en tant que contact pour les contrats dans un formulaire de programme de licence en volume légal. Les types de contacts incluent contact principal, Correspondant d’avis, Contact d’accès en ligne, Gestionnaire de logiciels Assurance, Gestionnaire de services en ligne ou Gestionnaire d’abonnements.
 
       - Vous êtes administrateur et avez accès aux contrats.
 
 
-      Pour plus d’informations sur les rôles d’autorisation VL et leurs actions autorisées, consultez la FAQ [sur les autorisations](https://docs.microsoft.com/licensing/permissions-faq).
+      Pour plus d’informations sur les rôles d’autorisation VL et leurs actions autorisées, consultez la [FAQ sur les autorisations](https://docs.microsoft.com/licensing/permissions-faq).
   - question: >
-      Combien de temps faut-il pour que de nouvelles commandes de licence apparaissent dans la liste des contrats ?
-    answer: "Les licences récemment achetées sont généralement affichées dans la liste dans les 10 heures après que Microsoft a reçu votre commande auprès du partenaire Microsoft. Des retards de quelques jours à quelques semaines peuvent se produire si votre partenaire retarde le forwarding de la commande à Microsoft. Les licences s’affichent dans le résumé lorsque la période de début de couverture de la commande est remplie pour tous les programmes à l’exception d’Open License.\n\nLes données suivantes sont disponibles dans la liste des contacts :\n\n|**Nom de la colonne**|**Description**|\n|:-----|:-----|\n|ID de licence |Contacts clés et licences associées de votre organisation par ID de licence spécifique |\n|Détails du programme parent |Contacts clés et ID de licence associés pour votre organisation par programme de gestion des licences |\n|Détails MBSA |Contacts clés et ID de licence associés pour votre organisation associés à un contrat Microsoft Business and Services (MBSA) | \n|Organisation | L’organisation de licence|\n|Emplacement |Combinaison de la ville et du département de l’organisation de licence |\n|Date de fin |Date de fin de la licence |    \n|Statut |État de la licence| \n"
+      Combien de temps faut-il pour que les nouvelles commandes de licence apparaissent dans la liste des contrats ?
+    answer: "Les licences achetées récemment sont généralement affichées dans la liste dans les 10 heures suivant la réception de votre commande par Microsoft par le partenaire Microsoft. Des retards de quelques jours à quelques semaines peuvent se produire si votre partenaire retarde le transfert du bon de commande à Microsoft. Les licences s’affichent dans le résumé lorsque la période de début de couverture pour la commande est remplie pour tous les programmes à l’exception de la licence open.\n\nLes données suivantes sont disponibles dans la liste des contacts :\n\n|**Nom de la colonne**|**Description**|\n|:-----|:-----|\n|ID de licence |Contacts clés et licences associées de votre organisation par ID de licence spécifique |\n|Détails du programme parent |Contacts clés et ID de licence associés pour votre organisation par programme de licences |\n|Détails de MBSA |Contacts clés et ID de licence associés pour votre organisation associés à un Contrat Entreprise et Services Microsoft (MBSA) | \n|Organisation | L’organisation des licences|\n|Emplacement |La combinaison de la ville et du comté de l’organisation des licences |\n|Date de fin |Date de fin de la licence |    \n|État |État de la licence| \n"
   - question: >
       Qu’est-ce que le résumé des licences ?
-    answer: >
-      Le résumé des licences affiche les droits de licence en volume en temps réel par famille et version de produits Microsoft pour tous les ID de licence actifs et inactifs dans votre jeu d’autorisations.
-
-
-      Le résumé des licences affiche les informations d’achat relatives aux programmes traditionnels de licence en volume Microsoft à partir de 1994. Ces programmes incluent, sans s’y limiter, Open, Open Value, Select, Select Plus et Enterprise.
-
-
-      Les licences achetées dans le cadre du programme MPSA ne sont pas incluses dans le résumé des relations VLSC et peuvent être vues séparément dans le [Centre de gestion Microsoft](https://businessaccount.microsoft.com/customer).
-
-
-      Accéder au résumé des licences et les créer
-
-      1.  Connectez-vous au Centre d’administration Microsoft 365.
-
-      2.  Go to **BillingYour** >  **productsVolume** >  **licensingContracts** > .
-
-
-      Filtrer les ID de licence à afficher dans le résumé de licence
-
-      1.  Utilisez les cases à cocher pour sélectionner les ID de licence à inclure dans ce résumé.
-
-      2.  **Sélectionnez Créer un résumé de licence**. Le résumé des licences est généré uniquement pour les ID de licence sélectionnés.
-- name: Understanding the License Summary
+    answer: "Le résumé des licences affiche les droits de licence en volume en temps réel par famille de produits Microsoft et version pour tous les ID de licence actifs et inactifs dans votre jeu d’autorisations.\n\nLe résumé des licences affiche les informations d’achat relatives aux programmes de licence en volume Microsoft traditionnels à partir de 1994. Ces programmes incluent, sans s’y limiter, Open, Open Value, Select, Select Plus et Enterprise.\n\nLes licences achetées dans le cadre du programme MPSA ne sont pas incluses dans le résumé des relations VLSC et peuvent être affichées séparément dans le [Centre d’affaires Microsoft](https://businessaccount.microsoft.com/customer).\n\nAccéder au récapitulatif de la licence et le créer\n1.  Connectez-vous au Centre d’administration Microsoft 365.\n2.  Accédez à **BillingYour** >  **productsVolume** >  **licensingContracts.** > \n\nFiltrer les ID de licence à afficher dans le résumé des licences\n1.  Utilisez les cases à cocher pour sélectionner les ID de licence à inclure dans ce résumé.\n2.  Sélectionnez **Créer un résumé de la licence**. Le résumé des licences est généré uniquement pour les ID de licence sélectionnés.\n"
+- name: Présentation du résumé des licences
   questions:
   - question: >
       Qu’est-ce qu’un droit de licence ?
     answer: >
-      Un droit de licence représente votre droit d’installer et d’utiliser des produits logiciels, comme détaillé dans le contrat de licence.
+      Un droit de licence représente votre droit d’installer et d’utiliser des produits logiciels, comme indiqué dans le contrat de licence.
   - question: >
       Qu’est-ce que la quantité effective ?
     answer: >
-      La quantité effective est le nombre de droits de licence par produit et version avec mises à niveau. Il permet de déterminer si votre organisation dispose de licences ou d’excédents par produit et version.
+      La quantité effective correspond au nombre de droits de licence par produit et version avec mises à niveau. Il permet de déterminer si votre organisation a des insuffisances de licences ou des excédents par produit et version.
   - question: >
-      Qu’est-ce que la quantité d’Active SA (Software Assurance) ?
+      Qu’est-ce que la quantité Active SA (Software Assurance) ?
     answer: >
-      La quantité sa active est affichée dans le résumé de la licence. Il représente le nombre de licences couvertes par Software Assurance (protection de mise à niveau de version) dans tous les programmes de licence en volume Microsoft. La quantité sa active inclut tous les types de Software Assurance, notamment :
+      La quantité sa active s’affiche dans le résumé des licences. Il représente le nombre de licences couvertes par Software Assurance (protection contre la mise à niveau de version) dans tous les programmes de licences en volume Microsoft. La quantité sa active inclut tous les types de Software Assurance, notamment :
 
       - Licence et Software Assurance (L&SA)
 
       - Software Assurance (SA)
 
-      - Sa Step-Up
+      - SA Step-Up
   - question: >
-      Pourquoi la quantité effective et/ou la quantité sa active sont-ils « 0 » ?
-    answer: "Le résumé des licences est destiné à afficher les licences que votre organisation est autorisée à déployer et à utiliser. \n\nSi la quantité effective dans le relevé de licence généré est indiquée comme zéro, cela signifie que votre organisation n’est pas autorisée à utiliser la licence dans les conditions de l’ensemble des ID de licence sélectionnés pour cette déclaration. \n\nSi la quantité sa active est indiquée comme zéro, cela signifie que les licences sous l’ensemble des ID de licence utilisés pour générer l’instruction n’ont aucune couverture Software Assurance valide ou active. \n\n**REMARQUE** Pour les licences de services en ligne, la quantité sa active est toujours zéro, car les services en ligne ne sont pas associés à des SA. \n"
+      Pourquoi la quantité effective et/ou la quantité sa active sont-elles considérées comme « 0 » ?
+    answer: "Le résumé des licences est destiné à montrer les licences que votre organisation a le droit de déployer et d’utiliser. \n\nSi la quantité effective dans l’instruction de licence générée est indiquée comme zéro, cela signifie que votre organisation n’a pas le droit d’utiliser la licence conformément aux termes de l’ensemble d’ID de licence sélectionnés pour cette instruction. \n\nSi la quantité sa active est indiquée comme zéro, cela signifie que les licences sous l’ensemble des ID de licence utilisés pour générer l’instruction n’ont pas de couverture Software Assurance valide ou active. \n\n>[!NOTE]\n>Pour les licences De services en ligne, la quantité de saa active est toujours égale à zéro, car les services en ligne n’ont pas d’autorités de certification associées. \n"
   - question: >
-      Le résumé des licences inclut-il des informations sur le fabricant de l’équipement d’origine (OEM) ou la licence commerciale ?
+      Le résumé des licences inclut-il les informations de fabricant d’équipement d’origine (OEM) ou de licence de vente au détail ?
     answer: >
-      Non. Le résumé des licences affiche uniquement les licences acquises par votre organisation via des programmes de licences en volume.
+      Non. Le résumé des licences affiche uniquement les licences acquises par votre organisation par le biais de programmes de licences en volume.
   - question: "Le résumé des licences affiche-t-il les logiciels déployés dans mon organisation ? \n"
     answer: >
-      Non. Il n’est pas possible pour Microsoft de fournir une liste de détails de déploiement de produit dans le résumé des licences. Le résumé des licences vous montre les logiciels que votre organisation est autorisée à installer et à utiliser, mais pas les logiciels actuellement déployés.
+      Non. Il n’est pas possible pour Microsoft de fournir une liste des détails de déploiement de produits dans le Résumé des licences. Le résumé des licences vous montre les logiciels que votre organisation a le droit d’installer et d’utiliser, mais pas ce qui est actuellement déployé.
   - question: >
       Qu’est-ce qu’un pool de produits ?
     answer: >
-      Un pool de licences groupe les licences par type de produit. Les licences en volume Microsoft organisent les produits en trois pools :
+      Un pool de licences regroupe les licences par type de produit. La gestion des licences en volume Microsoft organise les produits en trois pools :
 
 
       - Applications (par exemple, éditions de Office)
 
-      - Systèmes (par exemple, versions du Windows d’exploitation)
+      - Systèmes (par exemple, versions du système d’exploitation Windows)
 
-      - Serveurs (par exemple, Exchange Server, SQL Server et Windows Server)
+      - Serveurs (par exemple, Exchange Server, SQL Server et serveur Windows)
   - question: >
-      Qu’est-ce qu’un octroi de licence ?
-    answer: "Parfois, les licences en volume Microsoft offrent une promotion dans laquelle l’achat d’un produit spécifique autorise le client à utiliser un autre produit. Les promotions sont généralement conditionnelles à la couverture Active Software Assurance ou Upgrade Advantage sur le produit acheté. Par exemple :\n\n- Un client achète 1 licence pour Exchange Server 2016.\n- La transaction dispose d’une couverture Active Software Assurance ou Upgrade Advantage pendant l’offre.\n- Microsoft propose une promotion pour 1 licence de Skype Entreprise Server avec un achat de Exchange Server 2016.\n\nL’octroi de licence est ce qui autorise le client à utiliser le produit promotionnel, ou « accorde ». Dans l’exemple ci-dessus, le client est autorisé à utiliser Skype Entreprise Server.\n\nPour plus d’informations sur les octrois de licence, reportez-vous aux [termes du produit Microsoft](https://www.microsoft.com/licensing/terms/welcome/welcomepage). \n"
+      Qu’est-ce qu’une octroi de licence ?
+    answer: "Parfois, Microsoft Volume Licensing offre une promotion où l’achat d’un produit spécifique permet au client d’utiliser un autre produit. Les promotions sont généralement conditionnelles à une couverture Software Assurance ou Upgrade Advantage active sur le produit acheté. Par exemple :\n\n- Un client achète 1 licence pour Exchange Server 2016.\n- La transaction a une couverture Software Assurance ou Upgrade Advantage active pendant l’offre.\n- Microsoft propose une promotion pour 1 licence de Skype Entreprise Server avec un achat de Exchange Server 2016.\n\nL’octroi de licence permet au client d’utiliser le produit promotionnel. Dans l’exemple ci-dessus, l’utilisation de Skype Entreprise Server est accordée au client.\n\nPour plus d’informations sur les octrois de licences, reportez-vous aux [termes du produit Microsoft](https://www.microsoft.com/licensing/terms/welcome/welcomepage). \n"
   - question: >
       Comment puis-je voir mes octrois de licence ?
     answer: >
-      Les octrois de licences sont reflétés dans la liste Contrats et dans les téléchargements & clés. Dans la liste des produits, les produits reçus des octrois de licence sont affichés avec un astérisque (*) pour indiquer qu’ils ne font pas partie de l’achat d’origine.
+      Les octrois de licences sont reflétés dans la liste des contrats et dans les téléchargements & clés. Dans la liste des produits, les produits reçus des licences sont affichés avec un astérisque (*) pour indiquer qu’ils ne faisaient pas partie de l’achat d’origine.
   - question: >
-      Contacter le support assisté
-    answer: Les clients peuvent également [nous contacter](https://docs.microsoft.com/licensing/contact-us) par téléphone ou par formulaire Web. Microsoft répond aux soumissions de formulaires Web dans un délai de 24 heures.
+      Contacter le support technique
+    answer: Les clients peuvent également [nous contacter](https://docs.microsoft.com/licensing/contact-us) par téléphone ou par formulaire web. Microsoft répond aux soumissions de formulaire web dans les 24 heures.
