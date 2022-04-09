@@ -321,6 +321,8 @@
       items:
         - name: "Office\_2013"
           items:
+            - name: Mettre à niveau des serveurs et clients Office 2013
+              href: upgrade-office-2013-clients-servers.md
             - name: "Version d’Office\_2013 pour le bureau"
               href: /DeployOffice/endofsupport/plan-upgrade-older-versions-office
             - name: Exchange Server 2013

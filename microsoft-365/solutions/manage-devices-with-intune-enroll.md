@@ -1,10 +1,10 @@
 ---
-title: Étape 2. Inscrire des appareils dans la gestion avec Intune
+title: Étape 2. Inscrire des appareils dans la gestion avec Intune
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
 - enroll devices into management
-- enroll devices with Intune
+- enroll devices to Intune
 - Intune mobile device platforms
 manager: dougeby
 audience: ITPro
@@ -18,22 +18,22 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 177c21b46357ca890994751b9f4d7597a57c6b64
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
-ms.translationtype: MT
+ms.openlocfilehash: 98c98298b5bb6728a0f8526e0406fb1fe02654f0
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651276"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704711"
 ---
-# <a name="step-2-enroll-devices-to-intune"></a>Étape 2. Inscrire des appareils à Intune
+# <a name="step-2-enroll-devices-to-intune"></a>Étape 2. Inscrire des appareils dans Intune
 
-Il existe plusieurs façons de sécuriser le point de terminaison, un terme souvent utilisé pour désigner l'entité combinée, notamment les appareils, les applications et l'identité de l'utilisateur. Les politiques de sécurité doivent être appliquées de manière cohérente et fiable non seulement sur les applications, mais aussi sur l'appareil lui-même. L’inscription de l’appareil à Intune et l’inscription auprès d’un fournisseur d’identité cloud, tel que Azure Active Directory, constituent un excellent point de départ.
+Il existe plusieurs façons de sécuriser le point de terminaison, un terme souvent utilisé pour désigner l'entité combinée, notamment les appareils, les applications et l'identité de l'utilisateur. Les politiques de sécurité doivent être appliquées de manière cohérente et fiable non seulement sur les applications, mais aussi sur l'appareil lui-même. L'inscription de l'appareil à Intune et son enregistrement auprès d'un fournisseur d'identité en nuage, tel qu'Azure Active Directory, constituent un excellent début.
 
 Qu'il s'agisse d'un appareil BYOD personnel ou d'un appareil appartenant à l'entreprise et entièrement géré, il est bon d'avoir une visibilité sur les points de terminaison accédant aux ressources de votre organisation pour vous assurer que vous n'autorisez que des appareils sains et conformes. Cela inclut la santé et la fiabilité des applications mobiles et de bureau qui s'exécutent sur les terminaux. Vous voulez vous assurer que ces applications sont saines et conformes et qu'elles empêchent les données d'entreprise de fuir vers les applications ou les services grand public par le biais d'intentions malveillantes ou de moyens accidentels.
 
 Le processus d'inscription de l'appareil établit une relation entre l'utilisateur, l'appareil et le service Microsoft Intune. L'utilisation de Microsoft Intune en tant que service autonome vous permet d'utiliser une console d'administration Web unique pour gérer les PC Windows, macOS et les plates-formes d'appareils mobiles les plus populaires.
 
-Cet article recommande des méthodes pour inscrire des appareils à Intune. Pour plus d'informations sur ces méthodes et sur la façon de déployer chacune d'entre elles, consultez [Guide de déploiement : Enroll devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment).
+Cet article recommande des méthodes pour inscrire des périphériques à Intune. Pour plus d'informations sur ces méthodes et sur la façon de déployer chacune d'entre elles, consultez la section [Conseils de déploiement : Inscrire des périphériques dans Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment).
 
 ![Étapes de gestion des appareils](../media/devices/intune-mdm-steps-1.png#lightbox)
 
@@ -47,9 +47,9 @@ Pour obtenir des options supplémentaires, notamment l’inscription d’apparei
 
 ## <a name="ios-and-ipados-enrollment"></a>Inscription iOS et iPadOS
 
-Pour les appareils appartenant à l'utilisateur (BYOD), vous pouvez autoriser les utilisateurs à inscrire leurs appareils personnels pour la gestion Intune à l'aide de l'une des méthodes suivantes.
+Pour les appareils appartenant à l'utilisateur (BYOD), vous pouvez laisser les utilisateurs inscrire leurs appareils personnels à Intune en utilisant l'une des méthodes suivantes.
 - L'inscription de l'appareil est ce que vous pouvez considérer comme une inscription BYOD typique. Elle offre aux administrateurs un large éventail d'options de gestion.
-- L'inscription d’un utilisateur est un processus d'inscription plus rationalisé qui fournit aux administrateurs un sous-ensemble d'options de gestion des appareils. Cette fonctionnalité est actuellement en préversion.
+- L'inscription des utilisateurs est un processus d'inscription simplifié qui offre aux administrateurs un sous-ensemble d'options de gestion des appareils. Cette fonctionnalité est actuellement en phase de prévisualisation.
 
 Pour les organisations qui achètent des appareils pour leurs utilisateurs, Intune prend en charge les méthodes d'inscription d'appareils appartenant à l'entreprise iOS/iPadOS suivantes :
 - Inscription d’appareils automatisée Apple (ADE)
@@ -61,7 +61,7 @@ Pour plus d’informations, consultez [Inscrivez les appareils iOS et iPadOS dan
 
 ## <a name="android-enrollment"></a>Inscription Android 
 
-Il existe plusieurs options pour l'inscription Android selon le type d'appareil, le type d'inscription que vous souhaitez prendre en charge, ainsi que des éléments tels que la version Android que vous utilisez ou même le fabricant (en particulier Samsung). La plupart des organisations utilisent des profils Android Work pour leurs utilisateurs finaux, en particulier dans les scénarios BYOD. 
+Il existe plusieurs options pour l'inscription Android selon le type d'appareil, le type d'inscription que vous souhaitez prendre en charge, ainsi que des éléments tels que la version d'Android que vous utilisez ou même le fabricant (en particulier Samsung). La plupart des organisations utilisent les profils Android Work pour leurs utilisateurs finaux, en particulier dans les scénarios BYOD. 
 
 Avec un profil de travail Android, les informations de l'utilisateur final sont séparées distinctement avec des conteneurs de données ainsi que des applications distinctes pour le travail et l'utilisation personnelle. C'est un moyen idéal pour les utilisateurs d'inscrire leur appareil tout en préservant la confidentialité de leurs propres données et la sécurité des données d'entreprise. 
 

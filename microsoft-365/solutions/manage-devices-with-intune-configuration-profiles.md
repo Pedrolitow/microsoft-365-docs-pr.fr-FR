@@ -1,5 +1,5 @@
 ---
-title: Étape 5. Déployer des profils d’appareil dans Microsoft Intune
+title: Étape 5. Déployer des profils d’appareil dans Microsoft Intune
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -18,14 +18,14 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: d44d70c50db5c086e24af575677d5d51e1b33357
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: dfdffc95c39d471e071db8f83e88b9ba67e143e8
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049250"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731546"
 ---
-# <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>Étape 5. Déployer des profils d’appareil dans Microsoft Intune
+# <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>Étape 5. Déployer des profils d’appareil dans Microsoft Intune
 
 Microsoft Intune inclut des paramètres et fonctionnalités que vous pouvez activer ou désactiver sur différents appareils au sein de votre organisation. Ces paramètres et fonctionnalités sont ajoutés aux « profils de configuration ». Vous pouvez créer des profils pour différents appareils et différentes plateformes, notamment iOS/iPadOS, l’administrateur d’appareil Android, Android Enterprise et Windows. Utilisez ensuite Intune pour appliquer ou « attribuer » le profil aux appareils.
 
@@ -48,7 +48,7 @@ Pour l’instant, déployez simplement la base de référence de sécurité MDM 
 
 Plus tard, lorsque Microsoft Defender pour point de terminaison est installé et que vous avez connecté Intune, déployez les bases de référence de Defender pour point de terminaison. Cette rubrique est traitée dans l’article suivant de cette série : [Étape 6. Surveillez les risques et la conformité des appareils aux bases de référence de sécurité](manage-devices-with-intune-monitor-risk.md).
 
-Il est important de comprendre que ces bases de référence de sécurité ne sont pas conformes au CIS ou NIST, mais reflètent étroitement leurs recommandations. Pour plus d’informations, voir [Les bases de référence de sécurité Intune sont-elles conformes au CIS ou NIST](/mem/intune/protect/security-baselines) ?
+Il est important de comprendre que ces bases de référence de sécurité ne sont pas conformes au CIS ou NIST, mais reflètent étroitement leurs recommandations. Pour plus d’informations, voir [Les bases de référence de sécurité Intune sont-elles conformes au CIS ou NIST ?](/mem/intune/protect/security-baselines#are-the-intune-security-baselines-cis-or-nist-compliant)
 
 ## <a name="customize-configuration-profiles-for-your-organization"></a>Personnaliser les profils de configuration pour votre organisation
 

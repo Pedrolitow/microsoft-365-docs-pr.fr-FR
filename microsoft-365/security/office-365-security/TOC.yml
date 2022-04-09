@@ -96,6 +96,8 @@
           href: configure-global-settings-for-safe-links.md
         - name: Configurer le filtrage du courrier indésirable sortant
           href: configure-the-outbound-spam-policy.md
+        - name: Configurer et évaluer des comptes prioritaires
+          href: configure-review-priority-account.md
         - name: Créer des listes d’expéditeurs bloqués
           href: Create-block-sender-lists-in-office-365.md
         - name: Créer des listes d’expéditeurs approuvés

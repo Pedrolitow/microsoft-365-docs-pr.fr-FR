@@ -9,18 +9,23 @@ ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: Ent_O365
 f1.keywords:
-  - CSH
+- CSH
 ms.custom:
-  - LIL_Placement
-  - O365ITProTrain
-  - Ent_Office_Other
+- LIL_Placement
+- O365ITProTrain
+- Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Connectez-vous à votre client Microsoft 365 à l’aide de PowerShell pour Microsoft 365 afin d’effectuer des tâches de Centre d’administration à partir de la ligne de commande.
+ms.openlocfilehash: 4083ffdf240664947b1d35e726a400f292b6d3bf
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64713490"
 ---
-
 # <a name="connect-to-microsoft-365-with-powershell"></a>Connexion à Microsoft 365 à l’aide de PowerShell
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 PowerShell pour Microsoft 365 vous permet de gérer vos paramètres Microsoft 365 à partir de la ligne de commande. Pour vous connecter à PowerShell, installez le logiciel requis, puis connectez-vous à votre organisation Microsoft 365.
 
@@ -96,6 +101,12 @@ Are you sure you want to install the modules from 'PSGallery'?
 
 Répondez **Oui** ou **Oui à Tout** pour continuer l'installation.
 
+3.  Exécutez cette commande pour importer le module :
+    
+    ```powershell
+    Import-Module  AzureAD
+    ```
+    
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>Étape 2 : connectez-vous à Azure AD avec votre abonnement Microsoft 365
 
 Pour vous connecter à Azure AD avec une authentification multifacteur ou les identifiants d’un compte de votre abonnement Microsoft 365, exécutez l’une des commandes suivantes à partir d’une invite de commandes Windows PowerShell. (elle ne nécessite pas d’élévation de privilèges).
@@ -197,5 +208,5 @@ Pour plus d’informations, consultez [Azure Cloud Shell](/azure/cloud-shell/ove
 ## <a name="see-also"></a>Voir aussi
 
 - [Gestion de Microsoft 365 à l’aide de PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
-- [Prise en main de PowerShell pour Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+- [Prise en main de PowerShell pour Microsoft 365](getting-started-with-microsoft-365-powershell.md)
 - [Connexion à tous les services Microsoft 365 dans une seule fenêtre Windows PowerShell](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md)
