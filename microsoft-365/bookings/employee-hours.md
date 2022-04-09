@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Définir les heures de travail et la disponibilité des employés dans Microsoft Bookings.
-ms.openlocfilehash: 533cf3075c01753061f153d6dcf16bdb02bfa5a3
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: f87a5f13ace9689cd838942e6558529659671238
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714788"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64747267"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Heures de travail des employés dans Microsoft Bookings
 
@@ -27,19 +27,19 @@ Dans la page **Personnel** , vous pouvez personnaliser les heures de travail des
 
 Si vous souhaitez réserver des congés pour les membres du personnel afin que les clients ne puissent pas les réserver pendant qu’ils ne sont pas au bureau, consultez [Planifier les fermetures d’entreprise, les congés et les congés](schedule-closures-time-off-vacation.md) pour obtenir des instructions.
 
-## <a name="customize-employee-working-hours"></a>Personnaliser les heures de travail des employés
+## <a name="watch-set-employee-working-hours"></a>Regarder : Définir les heures de travail des employés
 
 Regardez cette vidéo ou suivez les étapes ci-dessous pour définir les heures de travail d’un employé.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuXUq]
 
+## <a name="customize-employee-working-hours"></a>Personnaliser les heures de travail des employés
+
 1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis sélectionnez **Bookings**.
 
-1. Choisissez votre calendrier. 
+1. Choisissez votre calendrier.
 
 1. Dans le volet de navigation, sélectionnez **Personnel**, puis sélectionnez le membre du personnel dont vous souhaitez définir les heures.
-
-   ![Image de Bookings écran du personnel avec le nom mis en surbrillance.](../media/bookings-staff-name-highlight.png)
 
 1. Sous Heures de travail, désactivez la case à cocher **Utiliser les heures d’ouverture** .
 

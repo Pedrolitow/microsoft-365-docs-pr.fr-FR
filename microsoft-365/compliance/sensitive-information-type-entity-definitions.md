@@ -18,20 +18,20 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: De nombreux types d’informations sensibles sont prêts à être utilisés dans vos stratégies DLP. Cet article répertorie tous ces types d’informations sensibles et indique ce qu’une stratégie DLP recherche lorsqu’elle détecte chaque type.
-ms.openlocfilehash: a3d2592af6b7692b5a5e634947deb811412b5650
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+description: De nombreux types d’informations sensibles sont prêts à être utilisés dans vos stratégies DLP. Cet article répertorie tous ces types d’informations sensibles et montre ce qu’une stratégie DLP recherche lorsqu’elle détecte chaque type.
+ms.openlocfilehash: 298b756a1cdfd63406992c18bf8281375f7f9370
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903818"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746511"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Définitions d’entités des types d’informations sensibles
 
-Cet article répertorie toutes les définitions d’entité de type d’informations sensibles. Chaque définition indique ce qu’une stratégie DLP recherche pour détecter chaque type. Pour en savoir plus sur les types d’informations sensibles, voir [Types d’informations sensibles](sensitive-information-type-learn-about.md)
+Cet article répertorie toutes les définitions d’entité de type d’informations sensibles. Chaque définition montre ce qu’une stratégie DLP recherche pour détecter chaque type. Pour en savoir plus sur les types d’informations sensibles, consultez [Types d’informations sensibles](sensitive-information-type-learn-about.md)
 
 > [!NOTE]
-> Mappage du niveau de confiance (élevé/moyen/faible) avec le nombre de précision (valeur numérique de 1 à 100)
+> Mappage du niveau de confiance (élevé/moyen/faible) avec le numéro de précision (valeur numérique de 1 à 100)
 > - Confiance faible : 65 ou moins
 > - Confiance moyenne : 75
 > - Confiance élevée : 85
@@ -41,7 +41,7 @@ Cet article répertorie toutes les définitions d’entité de type d’informat
 
 ### <a name="format"></a>Format
 
-neuf chiffres qui peuvent être dans un modèle formaté ou sans mise en forme
+neuf chiffres qui peuvent être dans un modèle mis en forme ou non mis en forme
 
 ### <a name="pattern"></a>Modèle
 
@@ -59,11 +59,11 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_aba_routing trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_ABA_Routing est trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_aba_routing trouve un contenu qui correspond au modèle.
 
 ```xml
@@ -84,25 +84,25 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 #### <a name="keyword_aba_routing"></a>Keyword_aba_routing
 
 - numéro aba
-- aba #
-- aba
+- Aba #
+- Aba
 - abarouting #
 - abaroutingnumber
 - americanbankassociationrouting #
 - americanbankassociationroutingnumber
 - bankrouting #
 - bankroutingnumber
-- routage #
+- Routage #
 - routage non
 - numéro de routage
 - numéro de routage
-- routage #
+- Routage #
 - RTN
 
 
 ## <a name="all-full-names"></a>Tous les noms complets
 
-Tous les noms complets sont une entité nommée regroupée. Il détecte les noms complets des personnes de tous les pays/régions pris en charge, notamment l’Australie, la Chine, le Japon, les États-Unis et les pays de l’UE. Utilisez cette sit pour détecter toutes les correspondances possibles de noms complets.
+Tous les noms complets sont une entité nommée groupée. Il détecte les noms complets des personnes de tous les pays/régions pris en charge, notamment l’Australie, la Chine, le Japon, les États-Unis et les pays de l’UE. Utilisez ce SIT pour détecter toutes les correspondances possibles de noms complets.
 
 ### <a name="format"></a>Format
 
@@ -118,15 +118,15 @@ Non.
 
 ### <a name="description"></a>Description
 
-Cette entité nommée SIT correspond aux noms personnels qu’un être humain identifierait comme nom avec un niveau de confiance élevé. Par exemple, si une chaîne est trouvée constituée d’un nom donné et est suivie d’un nom de famille, une correspondance est réalisée avec un niveau de confiance élevé. Il utilise trois ressources principales :
+Cette entité nommée SIT correspond à des noms personnels qu’un humain identifierait en tant que nom avec une confiance élevée. Par exemple, si une chaîne est trouvée composée d’un nom donné et est suivie d’un nom de famille, une correspondance est effectuée avec une confiance élevée. Il utilise trois ressources principales :
 
 -   Dictionnaire de noms donnés.
 -   Dictionnaire de noms de famille.
 -   Modèles de la façon dont les noms sont formés.
 
-Les trois ressources sont différentes pour chaque pays.  Les chaînes *De Wilson* déclenchent une correspondance. Les noms communs donnés/de famille ont une confiance plus élevée que les noms plus rares. Toutefois, le modèle autorise également des correspondances partielles. Si un nom donné du dictionnaire est trouvé et qu’il est suivi d’un nom de famille qui ne se trouve pas dans le dictionnaire, une correspondance partielle est déclenchée. Par exemple, *Il déclencherait* une correspondance partielle. Les correspondances partielles sont moins confiance.
+Les trois ressources sont différentes pour chaque pays.  Les chaînes *Olivia Wilson* déclencherait une correspondance. Les noms donnés/de famille courants bénéficient d’une plus grande confiance que les noms plus rares. Toutefois, le modèle autorise également les correspondances partielles. Si un nom donné du dictionnaire est trouvé et qu’il est suivi d’un nom de famille qui n’est pas dans le dictionnaire, une correspondance partielle est déclenchée. Par exemple, *Tomas Richard* déclencherait un match partiel. La confiance des correspondances partielles est moindre.
 
-En outre, les modèles qu’un être humain pourrait voir comme des indications de noms sont également adaptés à la confiance appropriée. Comme *O. Wilson*, *O.P. Wilson*, *Dr. O. P. Wilson*, *Wilson, O.P.* ou *T. Jr.* correspondrait.
+En outre, les modèles qu’un humain considérerait comme indicatifs de noms sont également mis en correspondance avec la confiance appropriée. Comme *O. Wilson*, *O.P. Wilson*, *Dr. O. P. Wilson*, *Wilson, O.P.* ou *T. Richard, Jr.* serait des correspondances.
 
 ### <a name="supported-languages"></a>Langues prises en charge
 
@@ -160,9 +160,9 @@ En outre, les modèles qu’un être humain pourrait voir comme des indications 
 - Turc
 
 
-## <a name="all-medical-terms-and-conditions"></a>Toutes les conditions médicales
+## <a name="all-medical-terms-and-conditions"></a>Toutes les conditions générales médicales
 
-Toutes les conditions médicales sont une entité regroupée nommée qui détecte les termes médicaux et les problèmes médicaux. Il détecte uniquement les termes anglais. Utilisez cette sit pour détecter toutes les correspondances possibles de conditions médicales.
+Tous les termes et conditions médicales sont une entité nommée groupée qui détecte les conditions médicales et les conditions médicales. Il détecte uniquement les termes anglais. Utilisez ce SIT pour détecter toutes les correspondances possibles de conditions médicales.
 
 ### <a name="format"></a>Format
 
@@ -178,26 +178,26 @@ Non
 
 ### <a name="description"></a>Description
 
-Cette entité nommée regroupée correspond au texte mentionnant les problèmes médicaux présents dans les dictionnaires organisés. Il existe un dictionnaire organisé par langue prise en charge. Les dictionnaires sont issus de nombreuses ressources médicales internationales. Les dictionnaires incluent autant de problèmes médicaux que possible sans risque d’un grand nombre de faux positifs. Chaque entrée contient les différents formulaires où une condition unique est couramment écrite pour garantir une couverture, par exemple :
+Cette entité nommée groupée correspond au texte qui mentionne les conditions médicales présentes dans les dictionnaires organisés. Il existe un dictionnaire organisé par langue prise en charge. Les dictionnaires proviennent de nombreuses ressources médicales internationales. Les dictionnaires incluent autant de conditions médicales que possible sans risquer un grand nombre de faux positifs. Chaque entrée contient les différentes formes dans lesquelles une condition unique est couramment écrite pour garantir la couverture, par exemple :
 
 - *TB*
-- *sous-président*
-- *phthisisquetmonalis*
+- *Tuberculose*
+- *phthisis pulmonalis*
 
 ### <a name="contains"></a>Contains
 
-Cet ensemble d’entités nommées SIT contient ces sits individuels.
+Cette entité nommée groupée SIT contient ces SIT individuels.
 
-- Termes du test de test pour le sang 
-- Types d’activités
-- Maladie
-- Noms génériques génériques
-- Handicaps répertoriés dans l’évaluation du handicap/invalidité aux États-Unis dans le cadre de la sécurité sociale
-- Termes du test de laboratoire
-- Modes de vie liés à des problèmes médicaux
+- Termes de l’analyse de sang 
+- Types de médicaments
+- Maladies
+- Noms de médicaments génériques
+- Déficiences répertoriées dans l’évaluation des incapacités aux États-Unis sous sécurité sociale
+- Termes du test lab
+- Modes de vie liés aux conditions médicales
 - Spécialités médicales
-- Procédures d’urgence
-- Noms de marque d’identité
+- Interventions chirurgicales
+- Noms des médicaments de marque
 
 
 ## <a name="all-physical-addresses"></a>Toutes les adresses physiques
@@ -218,59 +218,59 @@ Non
 
 ### <a name="description"></a>Description
 
-La correspondance des adresses postales est conçue pour correspondre à des chaînes qu’un humain identifierait comme adresse postale. Pour ce faire, il utilise plusieurs ressources principales :
+La correspondance des adresses de rue est conçue pour correspondre à des chaînes qu’un humain identifierait comme adresse de rue. Pour ce faire, il utilise plusieurs ressources principales :
 
--   Dictionnaire des règlement, des décomptes et des régions.
--   Dictionnaire de suffixes de rue, tels que Road, Street ou Avenue.
+-   Dictionnaire d’établissements, de comtés et de régions.
+-   Dictionnaire de suffixes de rue, comme Road, Street ou Avenue.
 -   Modèles de codes postaux.
 -   Modèles de formats d’adresse.
 
-Les ressources sont différentes pour chaque pays. Les ressources principales sont les modèles de formats d’adresse utilisés dans un pays donné. Différents formats sont choisis pour vous assurer que le plus d’adresses possibles sont en correspondance. Ces formats offrent de la flexibilité, par exemple, une adresse peut omettre le code postal ou omettre un nom de ville ou avoir une rue sans suffixe de rue. Dans tous les cas, ces correspondances sont utilisées pour augmenter la confiance de la correspondance.
+Les ressources sont différentes pour chaque pays. Les ressources principales sont les modèles de formats d’adresse utilisés dans un pays donné. Différents formats sont choisis pour s’assurer que autant d’adresses que possible sont mises en correspondance. Ces formats permettent la flexibilité, par exemple, une adresse peut omettre le code postal ou omettre un nom de ville ou avoir une rue sans suffixe de rue. Dans tous les cas, ces correspondances sont utilisées pour augmenter la confiance de la correspondance.
 
-Les modèles sont conçus pour correspondre à des adresses individuelles, et non à des emplacements génériques. Ainsi, les chaînes telles *que Redmond, WA 98052* ou *Main Street, Albuquerque* ne seront pas en correspondance.
+Les modèles sont conçus pour correspondre à des adresses uniques individuelles, et non à des emplacements génériques. Ainsi, les chaînes telles que *Redmond, WA 98052* ou *Main Street, Albuquerque* ne seront pas mises en correspondance.
 
 ### <a name="contains"></a>Contains
 
-Cette sit d’entité nommée regroupée contient les sits individuels ci-après :
+Cette entité nommée groupée SIT contient les SIT individuels suivants :
 
 - Adresses physiques de l’Australie
-- Adresses physiques d’Autriche
-- Adresses physiques belgiques
+- Adresses physiques en Autriche
+- Adresses physiques belges
 - Adresses physiques du Brésil
-- Adresses physiques en Bulgarie
+- Adresses physiques bulgares
 - Adresses physiques du Canada
 - Adresses physiques croates
 - Adresses physiques de Chypre
 - Adresses physiques de la République tchèque
 - Adresses physiques du Danemark
 - Adresses physiques estoniennes
-- Adresses physiques en Finlande
+- Adresses physiques finlandaises
 - Adresses physiques en France
-- Adresses physiques en Allemagne
-- Adresses physiques de Grèce
+- Adresses physiques allemandes
+- Adresses physiques en Grèce
 - Adresses physiques en Hongrie
-- Adresses physiques islandais
+- Adresses physiques islandaises
 - Adresses physiques d’Irlande
-- Adresses physiques d’Italie
-- Adresses physiques letton
-- Adresses physiques liechtensteinois
+- Adresses physiques en Italie
+- Adresses physiques lettones
+- Adresses physiques du Liechtenstein
 - Adresses physiques lituaniennes
-- Adresses physiques au Luxembourg
+- Adresses physiques luxembourgeoises
 - Adresses physiques de Malte
 - Adresses physiques des Pays-Bas
-- Adresses physiques en Nouvelle-Zélande
-- Adresses physiques norvégiens
+- Adresses physiques néo-zélandaises
+- Adresses physiques en Norvège
 - Adresses physiques en Pologne
 - Adresses physiques du Portugal
 - Adresses physiques roumaines
-- Adresses physiques slovaques
+- Adresses physiques en Slovaquie
 - Adresses physiques slovènes
-- Adresses physiques d’Espagne
-- Adresses physiques suède
-- Adresses physiques suisse
-- Adresses physiques de Turquie
-- Adresses physiques au Royaume-Uni
-- Adresses physiques des États-Unis
+- Adresses physiques en Espagne
+- Adresses physiques en Suède
+- Adresses physiques en Suisse
+- Adresses physiques de la Turquie
+- Adresses physiques du Royaume-Uni
+- États-Unis adresses physiques
 
 ### <a name="supported-languages"></a>Langues prises en charge
 
@@ -304,19 +304,19 @@ Cette sit d’entité nommée regroupée contient les sits individuels ci-après
 - Turc
 
 
-## <a name="argentina-national-identity-dni-number"></a>Numéro d’identité nationale (DNI) argentine
+## <a name="argentina-national-identity-dni-number"></a>Numéro d’identité nationale argentine (DNI)
 
 ### <a name="format"></a>Format
 
-Huit chiffres avec ou sans points
+Huit chiffres avec ou sans périodes
 
 ### <a name="pattern"></a>Modèle
 
 Huit chiffres :
 - deux chiffres
-- période facultative
+- une période facultative
 - trois chiffres
-- période facultative
+- une période facultative
 - trois chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -325,7 +325,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_argentina_national_id trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_argentina_national_id est trouvé.
 
@@ -345,16 +345,16 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 - Argentina National Identity number
 - cedula
-- butula
-- dni
+- cédula
+- Dni
 - documento nacional de identidad
 - documento número
 - documento numero
 - registro nacional de las personas
-- rnp
+- Rnp
 
 
-## <a name="argentina-unique-tax-identification-key-cuitcuil"></a>Clé d’identification fiscale unique (PROGRAMME DNS) Argentine
+## <a name="argentina-unique-tax-identification-key-cuitcuil"></a>Clé d’identification fiscale unique argentine (CUIT/CUIL)
 
 ### <a name="format"></a>Format
 
@@ -363,7 +363,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 ### <a name="pattern"></a>Modèle
 
 11 chiffres avec un tiret :
-- deux chiffres dans les 20, 23, 24, 27, 30, 33 ou 34
+- deux chiffres dans 20, 23, 24, 27, 30, 33 ou 34
 - un trait d’union (-)
 - huit chiffres
 - un trait d’union (-)
@@ -375,12 +375,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction `Func_Argentina_Unique_Tax_Key` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction `Func_Argentina_Unique_Tax_Key` recherche le contenu qui correspond au modèle.
 - Un mot clé est `Keyword_Argentina_Unique_Tax_Key` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction `Func_Argentina_Unique_Tax_Key` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction `Func_Argentina_Unique_Tax_Key` recherche le contenu qui correspond au modèle.
 
 ```xml
     <!-- Argentina Unique Tax Identification Key (CUIT/CUIL) -->
@@ -399,53 +399,53 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keyword_argentina_unique_tax_key"></a>Keyword_Argentina_Unique_Tax_Key
 
-- Clave Unica de Identificacion Abscisse
-- LASER
-- code unique d’identification d’identification 
+- Clave Unica de Identificacion Tributaria
+- CUIT
+- code unique d’identification du travail 
 - Clave Única de Identificación Tributaria
-- code d’identification unique
-- C FCD
+- code unique d’identification du travail
+- CUIL
 - Clé d’identification fiscale unique
-- Clé d’identification Unique Identification
-- Clé unique d’identification d’identification
-- Code d’identification de travail unique
-- Code d’identification de travail unique
-- Clé d’identification de travail unique
-- Clé unique d’identification de travail
-- Code unique d’identification fiscale
-- Clé unique d’identification fiscale
+- Clé unique d’identification du travail
+- Clé unique de l’identification du travail
 - Code d’identification de travail unique
 - Code unique d’identification du travail
 - Clé d’identification de travail unique
 - Clé unique d’identification du travail
-- ID de taxe
+- Code unique d’identification fiscale
+- Clé unique d’identification fiscale
+- Code d’identification du travail unique
+- Code unique d’identification du travail
+- Clé d’identification du travail unique
+- Clé unique de l’identification du travail
+- ID d’impôt
 - taxID #
 - taxId
-- Erdnumber
-- numéro de taxe
-- pas de taxe
-- taxe #
-- taxe #
+- taxidnumber
+- numéro d’impôt
+- tax no
+- Taxe #
+- Taxe #
 - ID du contribuable
-- numéro du contribuable
-- pas de taxe
-- contribuable #
-- contribuable #
+- numéro de contribuable
+- contribuable non
+- Contribuable #
+- Contribuable #
 - identité fiscale
 - identification fiscale
 - Número de Identificación Fiscal
-- número de quyente
+- número de contribuyente
 
 
-## <a name="australia-bank-account-number"></a>Numéro de compte bancaire australie
+## <a name="australia-bank-account-number"></a>Numéro de compte bancaire en Australie
 
 ### <a name="format"></a>Format
 
-six à 10 chiffres avec ou sans numéro de succursale bancaire
+6 à 10 chiffres avec ou sans numéro de succursale bancaire
 
 ### <a name="pattern"></a>Modèle
 
-Le numéro de compte est de 6 à 10 chiffres.
+Le numéro de compte est compris entre 6 et 10 chiffres.
 
 Numéro de succursale bancaire en Australie :
 - trois chiffres
@@ -458,13 +458,13 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière Regex_australia_bank_account_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression régulière Regex_australia_bank_account_number recherche du contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_australia_bank_account_number est trouvé.
 - L’expression régulière Regex_australia_bank_account_number_bsb trouve un contenu qui correspond au modèle.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière Regex_australia_bank_account_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression régulière Regex_australia_bank_account_number recherche du contenu qui correspond au modèle.
 
 - Un mot clé figurant dans la liste Keyword_australia_bank_account_number est trouvé.
 
@@ -499,10 +499,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - informations sur la banque
 - informations bancaires
 - noms complets
-- iaea
+- Aiea
 
 
-## <a name="australia-business-number"></a>Numéro d’entreprise Australie
+## <a name="australia-business-number"></a>Numéro d’entreprise en Australie
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 
@@ -514,18 +514,18 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-11 chiffres avec des délimiteur facultatifs
+11 chiffres avec délimiteurs facultatifs
 
 ### <a name="pattern"></a>Modèle
 
-11 chiffres avec des délimiteur facultatifs :
+11 chiffres avec délimiteurs facultatifs :
 
 - deux chiffres
-- trait d’union ou espace facultatif
+- un trait d’union ou un espace facultatif
 - trois chiffres
-- trait d’union ou espace facultatif
+- un trait d’union ou un espace facultatif
 - trois chiffres
-- trait d’union ou espace facultatif
+- un trait d’union ou un espace facultatif
 - trois chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -534,12 +534,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_australian_business_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_australian_business_number recherche le contenu qui correspond au modèle.
 - Un mot clé de Keywords_australian_business_number est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_australian_business_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_australian_business_number recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Australia Business Number -->
@@ -559,14 +559,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 - australie business no
 - numéro d’entreprise
-- abn #
-- businessid #
-- business id
-- abn
+- Abn #
+- Businessid #
+- ID d’entreprise
+- Abn
 - businessno #
 
 
-## <a name="australia-company-number"></a>Numéro de société australien
+## <a name="australia-company-number"></a>Numéro d’entreprise en Australie
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 
@@ -578,11 +578,11 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-neuf chiffres avec des délimiteur
+neuf chiffres avec délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
-neuf chiffres avec des délimiteur :
+neuf chiffres avec délimiteurs :
 
 - trois chiffres
 - un espace
@@ -597,12 +597,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_Australian_Company_Number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_Australian_Company_Number recherche le contenu qui correspond au modèle.
 - Un mot clé de Keyword_Australian_Company_Number est trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_Australian_Company_Number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_Australian_Company_Number recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Australia Company Number -->
@@ -620,16 +620,16 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 #### <a name="keyword_australia_company_number"></a>Keyword_australia_company_number
 
-- can
+- Anc
 - australia company no
 - australia company no #
-- numéro de société australie
-- société australien non
-- société australien non #
-- numéro de société australien
+- numéro d’entreprise australie
+- australian company no
+- australian company no #
+- numéro d’entreprise australien
 
 
-## <a name="australia-drivers-license-number"></a>Numéro de permis de conduire australien
+## <a name="australia-drivers-license-number"></a>Numéro de permis de conduire en Australie
 
 ### <a name="format"></a>Format
 
@@ -639,18 +639,18 @@ neuf lettres et chiffres
 
 neuf lettres et chiffres :
 
-- deux chiffres ou lettres (ne sont pas sensibles à la majuscule) ;
+- deux chiffres ou lettres (non sensibles à la casse)
 - deux chiffres
-- cinq chiffres ou lettres (ne sont pas sensibles à la majuscule)
+- cinq chiffres ou lettres (non sensibles à la casse)
 
 OR
 
-- une à deux lettres facultatives (ne sensibles pas à la majuscule)
+- une à deux lettres facultatives (non sensibles à la casse)
 - quatre à neuf chiffres
 
 OR
 
-- neuf chiffres ou lettres (ne sensibles pas à la majuscule)
+- neuf chiffres ou lettres (non sensibles à la casse)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -658,7 +658,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_australia_drivers_license_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_australia_drivers_license_number est trouvé.
 - Aucun mot clé figurant dans la liste Keyword_australia_drivers_license_number_exclusions n’est trouvé.
@@ -746,7 +746,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keyword_australia_drivers_license_number_exclusions"></a>Keyword_australia_drivers_license_number_exclusions
 
-- aaa
+- Aaa
 - DriverLicense
 - DriverLicenses
 - Permis de conduire
@@ -755,8 +755,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - DriversLicenses
 - Permis de conduire
 - Permis de conduire
-- Permis de conduire
-- Permis de conduire
+- Driver’License
+- Licences de pilote
 - Permis de conduire
 - Permis de conduire
 - Driver’sLicense
@@ -771,8 +771,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - DriversLicenses #
 - #Permis de conduire
 - #Permis de conduire
-- Permis de conduire #
-- Permis de conduire #
+- Driver’License #
+- Licences de pilote #
 - #Permis de conduire
 - #Permis de conduire
 - Driver’sLicense #
@@ -781,7 +781,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - #Permis de conduire
 
 
-## <a name="australia-medical-account-number"></a>Numéro de compte médical australie
+## <a name="australia-medical-account-number"></a>Numéro de compte médical en Australie
 
 ### <a name="format"></a>Format
 
@@ -793,7 +793,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - Le premier chiffre est compris entre 2 et 6
 - Le neuvième chiffre est un chiffre de contrôle
 - Le dixième chiffre est le chiffre d’émission
-- Le 11e chiffre (facultatif) est le numéro individuel
+- 11e chiffre (facultatif) est le nombre individuel
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -801,7 +801,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_australian_medical_account_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_Australia_Medical_Account_Number est trouvé.
 - La somme de contrôle est correcte.
@@ -829,10 +829,10 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - prêt sur carte de crédit
 - département des services sociaux
 - service local
-- sous-programme
+- Medicare
 
 
-## <a name="australia-passport-number"></a>Numéro de passeport australien
+## <a name="australia-passport-number"></a>Numéro de passeport en Australie
 
 ### <a name="format"></a>Format
 
@@ -849,12 +849,12 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière `Regex_australia_passport_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression `Regex_australia_passport_number` régulière recherche le contenu qui correspond au modèle.
 - Un mot clé est `Keyword_australia_passport_number` trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière `Regex_australia_passport_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression `Regex_australia_passport_number` régulière recherche le contenu qui correspond au modèle.
 
 ```xml
     <!-- Australia Passport Number -->
@@ -873,10 +873,10 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 #### <a name="keyword_australia_passport_number"></a>Keyword_australia_passport_number
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -894,13 +894,13 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 ## <a name="australia-physical-addresses"></a>Adresses physiques de l’Australie 
 
-Entité nommée dissociée, détecte les modèles liés à l’adresse physique de l’Australie. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Entité nommée non groupée, détecte les modèles liés à l’adresse physique de l’Australie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 medium
 
 
-## <a name="australia-tax-file-number"></a>Numéro de fichier fiscal australien
+## <a name="australia-tax-file-number"></a>Numéro de fichier fiscal en Australie
 
 ### <a name="format"></a>Format
 
@@ -908,12 +908,12 @@ huit à neuf chiffres
 
 ### <a name="pattern"></a>Modèle
 
-De huit à neuf chiffres sont généralement présentés avec des espaces comme suit :
+Huit à neuf chiffres sont généralement présentés avec des espaces comme suit :
 - trois chiffres
-- espace facultatif
+- un espace facultatif
 - trois chiffres
-- espace facultatif
-- deux à trois chiffres où le dernier chiffre est un chiffre de contrôle
+- un espace facultatif
+- deux à trois chiffres où le dernier chiffre est un chiffre à cocher
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -921,7 +921,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_australian_tax_file_number trouve un contenu qui correspond au modèle.
 - Aucun mot clé figurant dans la liste Keyword_Australia_Tax_File_Number ou Keyword_number_exclusions n’est trouvé.
 - La somme de contrôle est correcte.
@@ -948,14 +948,14 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - retenue à la source
 - déclaration d’impôts individuels
 - numéro de dossier fiscal
-- tfn
+- Tfn
 
 
-## <a name="austria-drivers-license-number"></a>Numéro de permis de conduire autrichen
+## <a name="austria-drivers-license-number"></a>Numéro de permis de conduire en Autriche
 
 ### <a name="format"></a>Format
 
-huit chiffres sans espaces et délimiteur
+huit chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -967,10 +967,10 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 
-- L’expression régulière  `Regex_austria_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_austria_eu_driver's_license_number` est trouvé.
+- L’expression  `Regex_austria_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_austria_eu_driver's_license_number` est trouvé.
 
 ```xml
       <!-- Austria Driver's License Number -->
@@ -987,7 +987,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -1015,12 +1015,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -1031,14 +1031,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -1048,7 +1048,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -1059,17 +1059,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -1080,8 +1080,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -1095,11 +1095,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -1109,7 +1109,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro dl
 
 
-#### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver’s_license_number
+#### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver s_license_number
 
 - fuhrerschein
 - führerschein
@@ -1118,7 +1118,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - Führerscheinnummern
 
 
-## <a name="austria-identity-card"></a>Carte d’identité Autriche
+## <a name="austria-identity-card"></a>Carte d’identité en Autriche
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -1129,15 +1129,15 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-Combinaison de 24 caractères de lettres, chiffres et caractères spéciaux
+Combinaison de 24 caractères de lettres, de chiffres et de caractères spéciaux
 
 ### <a name="pattern"></a>Modèle
 
 24 caractères :
 
--  22 lettres (ne sensibles pas à la majuscule), chiffres, barres obliques inverses, barres obliques ou signes plus
+-  22 lettres (non sensibles à la casse), chiffres, barres obliques, barres obliques ou signes plus
 
-- deux lettres (ne sont pas sensibles à la majuscule), des chiffres, des barres obliques inverses, des barres obliques, des signes plus ou des signes égaux
+- deux lettres (non sensibles à la casse), chiffres, barres obliques inverses, barres obliques, signes plus ou signes égaux
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1145,9 +1145,9 @@ Non applicable
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 
-- L’expression régulière  `Regex_austria_eu_national_id_card` trouve un contenu qui correspond au modèle.
+- L’expression  `Regex_austria_eu_national_id_card` régulière recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_austria_eu_national_id_card` trouvé.
 
 ```xml
@@ -1166,10 +1166,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 - numéro d’identité
 - id national
-- personalausliks republik österreich
+- personalausweis republik österreich
 
 
-## <a name="austria-passport-number"></a>Numéro de passeport autrichen
+## <a name="austria-passport-number"></a>Numéro de passeport en Autriche
 
 ### <a name="format"></a>Format
 
@@ -1179,7 +1179,7 @@ Une lettre suivie d’un espace facultatif et de sept chiffres
 
 Combinaison d’une lettre, de sept chiffres et d’un espace :
 
-- une lettre (ne doit pas être sensible à la cas)
+- une lettre (non sensible à la casse)
 - un espace (facultatif)
 - sept chiffres
 
@@ -1189,14 +1189,14 @@ non applicable
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_austria_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_austria_eu_passport_number` est trouvé.
-- L’expression régulière `Regex_eu_passport_date1` trouve la date au format DD.MM.YYYY ou dans laquelle un `Keywords_eu_passport_date` mot clé est trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_austria_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_austria_eu_passport_number` est trouvé.
+- L’expression `Regex_eu_passport_date1` régulière recherche la date au format DD.MM.AAAA ou un mot clé `Keywords_eu_passport_date` est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_austria_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_austria_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_austria_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_austria_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Austria Passport Number -->
@@ -1226,10 +1226,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -1249,20 +1249,20 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
-## <a name="austria-physical-addresses"></a>Adresses physiques d’Autriche
+## <a name="austria-physical-addresses"></a>Adresses physiques en Autriche
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique d’Autriche. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance d’Autriche. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="austria-social-security-number"></a>Numéro de sécurité sociale autrichen
+## <a name="austria-social-security-number"></a>Numéro de sécurité sociale en Autriche
 
 ### <a name="format"></a>Format
 
@@ -1282,12 +1282,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_austria_eu_ssn_or_equivalent` trouve un contenu qui correspond au modèle.
-- un mot clé est  `Keywords_austria_eu_ssn_or_equivalent` trouvé.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_austria_eu_ssn_or_equivalent` recherche le contenu qui correspond au modèle.
+- un mot clé à partir de  `Keywords_austria_eu_ssn_or_equivalent` est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_austria_eu_ssn_or_equivalent` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_austria_eu_ssn_or_equivalent` recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Austria Social Security Number -->
@@ -1310,32 +1310,32 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_austria_eu_ssn_or_equivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
-- ssn de l’équipe de police
+- ssn autrichien
 - nombre ehic
 - ehic no
 - code d’assurance
 - insurancecode #
 - numéro d’assurance
-- n’assurance
+- assurance no
 - krankenkassennummer
-- krankenversiche sous
+- Krankenversicherung
 - socialsecurityno
 - socialsecurityno #
-- non de sécurité sociale
+- sécurité sociale non
 - numéro de sécurité sociale
 - code de sécurité sociale
-- sozialversicheyousnummer
-- sozialversicheyousnummer #
+- sozialversicherungsnummer
+- sozialversicherungsnummer #
 - soziale sicherheit kein
 - sozialesicherheitkein #
-- ssn #
-- ssn
-- versicheicheichescode
-- versicheicheichesnummer
+- Ssn #
+- Ssn
+- versicherungscode
+- versicherungsnummer
 - zdravstveno zavarovanje
 
 
-## <a name="austria-tax-identification-number"></a>Numéro d’identification fiscale autrichen
+## <a name="austria-tax-identification-number"></a>Numéro d’identification fiscale en Autriche
 
 ### <a name="format"></a>Format
 
@@ -1346,9 +1346,9 @@ neuf chiffres avec trait d’union facultatif et barre oblique
 neuf chiffres avec trait d’union facultatif et barre oblique :
 
 - deux chiffres
-- un trait d’union (facultatif) ;
+- un trait d’union (facultatif)
 - trois chiffres
-- barre oblique (facultative)
+- une barre oblique (facultatif)
 - quatre chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -1357,12 +1357,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_austria_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_austria_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_austria_eu_tax_file_number` trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_austria_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_austria_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Austria Tax Identification Number -->
@@ -1381,26 +1381,26 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 #### <a name="keywords_austria_eu_tax_file_number"></a>Keywords_austria_eu_tax_file_number
 
-- österreich
+- Österreich
 - st.nr.
 - steuernummer
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
-- numéro de taxe
+- Étain #
+- numéro d’impôt
 
 
 ## <a name="austria-value-added-tax"></a>Taxe sur la valeur ajoutée en Autriche
@@ -1414,11 +1414,11 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-Modèle alphanumérique de 11 caractères
+Modèle alphanumérique à 11 caractères
 
 ### <a name="pattern"></a>Modèle
 
-Modèle alphanumérique de 11 caractères :
+Modèle alphanumérique à 11 caractères :
 
 - A ou a
 - T ou t
@@ -1437,12 +1437,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_Austria_Value_Added_Tax trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_Austria_Value_Added_Tax recherche le contenu qui correspond au modèle.
 - Un mot clé de Keyword_Austria_Value_Added_Tax est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_Austria_Value_Added_Tax trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_Austria_Value_Added_Tax recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Austria Value Added Tax -->
@@ -1461,33 +1461,33 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 #### <a name="keyword_austria_value_added_tax"></a>Keyword_austria_value_added_tax
 
 - numéro de tva
-- vat #
-- numéro de tva de tva
+- Tva #
+- numéro de tva autrichien
 - vat no.
 - vatno #
 - numéro de taxe sur la valeur ajoutée
-- tva de tva de tva
+- tva autrichienne
 - mwst
 - umsatzsteuernummer
 - mwstnummer
 - ust.-identifikationsnummer
 - umsatzsteuer-identifikationsnummer
 - numéro d’identification de tva
-- nombre atu
-- numéro uid
+- atu number
+- uid number
 
 
-## <a name="azure-documentdb-auth-key"></a>Clé d’th azure DocumentDB
+## <a name="azure-documentdb-auth-key"></a>Clé d’authentification Azure DocumentDB
 
 ### <a name="format"></a>Format
 
-Chaîne « DocumentDb » suivie des caractères et des chaînes indiqués dans le modèle ci-dessous.
+Chaîne « DocumentDb » suivie des caractères et des chaînes décrits dans le modèle ci-dessous.
 
 ### <a name="pattern"></a>Modèle
 
 - Chaîne « DocumentDb »
-- Toute combinaison de 3 à 200 lettres minuscules ou majuscules, chiffres, symboles, caractères spéciaux ou espaces
-- Supérieur au symbole (>), signe égal (=), guillemets (« ) ou apostrophe (')
+- Toute combinaison comprise entre 3 et 200 lettres minuscules ou majuscules, chiffres, symboles, caractères spéciaux ou espaces
+- Symbole supérieur (>), signe égal (=), guillemet (« ) ou apostrophe (')
 - Toute combinaison de 86 lettres minuscules ou majuscules, chiffres, barre oblique (/) ou signe plus (+)
 - Deux signes égaux (=)
 
@@ -1497,9 +1497,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière CEP_Regex_AzureDocumentDBAuthKey trouve un contenu qui correspond au modèle.
-- L’expression régulière CEP_CommonExampleKeywords trouve pas de contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression régulière CEP_Regex_AzureDocumentDBAuthKey recherche du contenu qui correspond au modèle.
+- L’expression régulière CEP_CommonExampleKeywords ne trouve pas de contenu correspondant au modèle.
 
 ```xml
 <!-- Azure Document DB Auth Key -->
@@ -1519,38 +1519,38 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 
 (Techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
-- contoso
-- fabrikam
-- northwind
-- sandbox
-- onebox
-- localhost
+- Contoso
+- Fabrikam
+- Northwind
+- Sandbox
+- Onebox
+- Localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->Net
 
 
-## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Chaîne de connexion de base de données IAAS Azure et chaîne de connexion SQL azure
+## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Chaîne de connexion de base de données Azure IAAS et chaîne de connexion Azure SQL
 
 ### <a name="format"></a>Format
 
-Chaîne « Serveur », « serveur » ou « source de données » suivie des caractères et des chaînes indiqués dans le modèle ci-dessous, y compris la chaîne « cloudapp.azure ».<!--no-hyperlink-->com » ou « cloudapp.azure.<!--no-hyperlink-->net » ou « database.windows .<!--no-hyperlink-->et la chaîne « Password », « password » ou « pwd ».
+Chaîne « Serveur », « serveur » ou « source de données », suivie des caractères et des chaînes décrits dans le modèle ci-dessous, y compris la chaîne « cloudapp.azure ».<!--no-hyperlink-->com » ou « cloudapp.azure.<!--no-hyperlink-->net » ou « database.windows.<!--no-hyperlink-->net » et la chaîne « Password » ou « password » ou « pwd ».
 
 ### <a name="pattern"></a>Modèle
 
-- chaîne « Serveur », « serveur » ou « source de données »
-- de zéro à deux caractères d’espace blanc
-- signe égal (=)
-- de zéro à deux caractères d’espace blanc
-- toute combinaison de 1 à 200 lettres minuscules ou majuscules, chiffres, symboles, caractères spéciaux ou espaces
-- La chaîne « cloudapp.azure.<!--no-hyperlink-->com », « cloudapp.azure.<!--no-hyperlink-->« database.windows ».<!--no-hyperlink-->net »
-- toute combinaison de 1 à 300 lettres minuscules ou majuscules, chiffres, symboles, caractères spéciaux ou espaces
+- la chaîne « Server », « server » ou « data source »
+- de zéro à deux espaces blancs
+- un signe égal (=)
+- de zéro à deux espaces blancs
+- toute combinaison d’entre 1 et 200 lettres minuscules ou majuscules, chiffres, symboles, caractères spéciaux ou espaces
+- Chaîne « cloudapp.azure.<!--no-hyperlink-->com », « cloudapp.azure.<!--no-hyperlink-->net », ou « database.windows.<!--no-hyperlink-->net »
+- toute combinaison d’entre 1 et 300 lettres minuscules ou majuscules, chiffres, symboles, caractères spéciaux ou espaces
 - la chaîne « Password », « password » ou « pwd »
-- de zéro à deux caractères d’espace blanc
-- signe égal (=)
-- de zéro à deux caractères d’espace blanc
-- un ou plusieurs caractères qui ne sont pas des points-virgules (;), guillemets (« ), ou apostrophe (')
-- point-virgule (;), guillemets (« ), ou apostrophe (')
+- de zéro à deux espaces blancs
+- un signe égal (=)
+- de zéro à deux espaces blancs
+- un ou plusieurs caractères qui ne sont pas un point-virgule (;), guillemets (« ) ou apostrophe (')
+- un point-virgule (;), guillemet (« ), ou apostrophe (')
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1558,9 +1558,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière CEP_Regex_AzureConnectionString trouve un contenu qui correspond au modèle.
-- L’expression régulière CEP_CommonExampleKeywords trouve pas de contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression régulière CEP_Regex_AzureConnectionString recherche du contenu qui correspond au modèle.
+- L’expression régulière CEP_CommonExampleKeywords ne trouve pas de contenu correspondant au modèle.
 
 ```xml
 <!--Azure IAAS Database Connection String and Azure SQL Connection String-->
@@ -1580,18 +1580,18 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 
 (Techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
-- contoso
-- fabrikam
-- northwind
-- sandbox
-- onebox
-- localhost
+- Contoso
+- Fabrikam
+- Northwind
+- Sandbox
+- Onebox
+- Localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->Net
 
 
-## <a name="azure-iot-connection-string"></a>Azure IoT de connexion
+## <a name="azure-iot-connection-string"></a>chaîne de connexion Azure IoT
 
 ### <a name="format"></a>Format
 
@@ -1599,19 +1599,19 @@ Chaîne « HostName » suivie des caractères et des chaînes décrits dans le m
 
 ### <a name="pattern"></a>Modèle
 
-- la chaîne « HostName »
-- de zéro à deux caractères d’espace blanc
-- signe égal (=)
-- de zéro à deux caractères d’espace blanc
-- toute combinaison de 1 à 200 lettres minuscules ou majuscules, chiffres, symboles, caractères spéciaux ou espaces
-- la chaîne « azure-devices.<!--no-hyperlink-->net »
-- toute combinaison de 1 à 200 lettres minuscules ou majuscules, chiffres, symboles, caractères spéciaux ou espaces
-- la chaîne « SharedAccessKey »
-- de zéro à deux caractères d’espace blanc
-- signe égal (=)
-- de zéro à deux caractères d’espace blanc
+- chaîne « HostName »
+- de zéro à deux espaces blancs
+- un signe égal (=)
+- de zéro à deux espaces blancs
+- toute combinaison d’entre 1 et 200 lettres minuscules ou majuscules, chiffres, symboles, caractères spéciaux ou espaces
+- chaîne « azure-devices.<!--no-hyperlink-->net »
+- toute combinaison d’entre 1 et 200 lettres minuscules ou majuscules, chiffres, symboles, caractères spéciaux ou espaces
+- chaîne « SharedAccessKey »
+- de zéro à deux espaces blancs
+- un signe égal (=)
+- de zéro à deux espaces blancs
 - toute combinaison de 43 lettres minuscules ou majuscules, chiffres, barre oblique (/) ou signe plus (+)
-- signe égal (=)
+- un signe égal (=)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1619,9 +1619,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière CEP_Regex_AzureIoTConnectionString trouve un contenu qui correspond au modèle.
-- L’expression régulière CEP_CommonExampleKeywords trouve pas de contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression régulière CEP_Regex_AzureIoTConnectionString recherche du contenu qui correspond au modèle.
+- L’expression régulière CEP_CommonExampleKeywords ne trouve pas de contenu correspondant au modèle.
 
 ```xml
 <!--Azure IoT Connection String-->
@@ -1641,18 +1641,18 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 
 Ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.
 
-- contoso
-- fabrikam
-- northwind
-- sandbox
-- onebox
-- localhost
+- Contoso
+- Fabrikam
+- Northwind
+- Sandbox
+- Onebox
+- Localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->Net
 
 
-## <a name="azure-publish-setting-password"></a>Mot de passe de paramètre de publication Azure
+## <a name="azure-publish-setting-password"></a>Mot de passe du paramètre de publication Azure
 
 ### <a name="format"></a>Format
 
@@ -1660,9 +1660,9 @@ Chaîne « userpwd= » suivie d’une chaîne alphanumérique.
 
 ### <a name="pattern"></a>Modèle
 
-- la chaîne « userpwd= »
+- la chaîne " userpwd= »
 - toute combinaison de 60 lettres minuscules ou chiffres
-- guillemets (« )
+- un guillemet (« )
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1670,9 +1670,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière CEP_Regex_AzurePublishSettingPasswords trouve un contenu qui correspond au modèle.
-- L’expression régulière CEP_CommonExampleKeywords trouve pas de contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression régulière CEP_Regex_AzurePublishSettingPasswords recherche du contenu qui correspond au modèle.
+- L’expression régulière CEP_CommonExampleKeywords ne trouve pas de contenu correspondant au modèle.
 
 
 ```xml
@@ -1693,33 +1693,33 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 
 Ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.
 
-- contoso
-- fabrikam
-- northwind
-- sandbox
-- onebox
-- localhost
+- Contoso
+- Fabrikam
+- Northwind
+- Sandbox
+- Onebox
+- Localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->Net
 
 
-## <a name="azure-redis-cache-connection-string"></a>Chaîne de connexion au cache Azure Redis
+## <a name="azure-redis-cache-connection-string"></a>Chaîne de connexion au cache Redis Azure
 
 ### <a name="format"></a>Format
 
-La chaîne « redis.cache.windows.<!--no-hyperlink-->« net » suivi des caractères et des chaînes décrits dans le modèle ci-dessous, y compris la chaîne « password » ou « pwd ».
+Chaîne « redis.cache.windows.<!--no-hyperlink-->net » suivi des caractères et des chaînes décrits dans le modèle ci-dessous, y compris la chaîne « password » ou « pwd ».
 
 ### <a name="pattern"></a>Modèle
 
-- la chaîne « redis.cache.windows.<!--no-hyperlink-->net »
-- toute combinaison de 1 à 200 lettres minuscules ou majuscules, chiffres, symboles, caractères spéciaux ou espaces
+- chaîne « redis.cache.windows.<!--no-hyperlink-->net »
+- toute combinaison d’entre 1 et 200 lettres minuscules ou majuscules, chiffres, symboles, caractères spéciaux ou espaces
 - la chaîne « password » ou « pwd »
-- de zéro à deux caractères d’espace blanc
-- signe égal (=)
-- de zéro à deux caractères d’espace blanc
+- de zéro à deux espaces blancs
+- un signe égal (=)
+- de zéro à deux espaces blancs
 - toute combinaison de 43 caractères qui sont des lettres minuscules ou majuscules, des chiffres, une barre oblique (/) ou un signe plus (+)
-- signe égal (=)
+- un signe égal (=)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1727,9 +1727,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière CEP_Regex_AzureRedisCacheConnectionString trouve un contenu qui correspond au modèle.
-- L’expression régulière CEP_CommonExampleKeywords trouve pas de contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression régulière CEP_Regex_AzureRedisCacheConnectionString recherche le contenu qui correspond au modèle.
+- L’expression régulière CEP_CommonExampleKeywords ne trouve pas de contenu correspondant au modèle.
 
 ```xml
 <!--Azure Redis Cache Connection String-->
@@ -1749,15 +1749,15 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 
 (Techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
-- contoso
-- fabrikam
-- northwind
-- sandbox
-- onebox
-- localhost
+- Contoso
+- Fabrikam
+- Northwind
+- Sandbox
+- Onebox
+- Localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->Net
 
 
 ## <a name="azure-sas"></a>Azure SAS
@@ -1769,12 +1769,12 @@ Chaîne « sig » suivie des caractères et des chaînes décrits dans le modèl
 ### <a name="pattern"></a>Modèle
 
 - la chaîne « sig »
-- de zéro à deux caractères d’espace blanc
-- signe égal (=)
-- de zéro à deux caractères d’espace blanc
-- toute combinaison de 43 à 53 caractères qui sont des lettres minuscules ou majuscules, des chiffres ou le signe pourcentage (%)
-- la chaîne « %3d »
-- tout caractère qui n’est pas une lettre minuscule ou minuscule, un chiffre ou un signe pourcentage (%)
+- de zéro à deux espaces blancs
+- un signe égal (=)
+- de zéro à deux espaces blancs
+- toute combinaison comprise entre 43 et 53 caractères qui sont des lettres minuscules ou majuscules, des chiffres ou le signe de pourcentage (%)
+- chaîne « %3d »
+- tout caractère qui n’est pas une lettre minuscule ou majuscule, un chiffre ou un signe de pourcentage (%)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1782,8 +1782,8 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière CEP_Regex_AzureSAS trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression régulière CEP_Regex_AzureSAS recherche du contenu qui correspond au modèle.
 
 ```xml
 <!--Azure SAS-->
@@ -1794,27 +1794,27 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 </Entity>
 ```
 
-## <a name="azure-service-bus-connection-string"></a>Chaîne de connexion azure service bus
+## <a name="azure-service-bus-connection-string"></a>Chaîne de connexion Azure Service Bus
 
 ### <a name="format"></a>Format
 
-Chaîne « EndPoint » suivie des caractères et des chaînes indiqués dans le modèle ci-dessous, y compris les chaînes « servicebus.windows ».<!--no-hyperlink-->net » et « SharedAccesKey ».
+Chaîne « EndPoint » suivie des caractères et des chaînes décrits dans le modèle ci-dessous, y compris les chaînes « servicebus.windows.<!--no-hyperlink-->net » et « SharedAccesKey ».
 
 ### <a name="pattern"></a>Modèle
 
-- la chaîne « EndPoint »
-- de zéro à deux caractères d’espace blanc
-- signe égal (=)
-- de zéro à deux caractères d’espace blanc
-- toute combinaison de 1 à 200 lettres minuscules ou majuscules, chiffres, symboles, caractères spéciaux ou espaces
-- la chaîne « servicebus.windows.<!--no-hyperlink-->net »
-- toute combinaison de 1 à 200 lettres minuscules ou majuscules, chiffres, symboles, caractères spéciaux ou espaces
-- la chaîne « SharedAccessKey »
-- de zéro à deux caractères d’espace blanc
-- signe égal (=)
-- de zéro à deux caractères d’espace blanc
+- chaîne « Point de terminaison »
+- de zéro à deux espaces blancs
+- un signe égal (=)
+- de zéro à deux espaces blancs
+- toute combinaison d’entre 1 et 200 lettres minuscules ou majuscules, chiffres, symboles, caractères spéciaux ou espaces
+- chaîne « servicebus.windows .<!--no-hyperlink-->net »
+- toute combinaison d’entre 1 et 200 lettres minuscules ou majuscules, chiffres, symboles, caractères spéciaux ou espaces
+- chaîne « SharedAccessKey »
+- de zéro à deux espaces blancs
+- un signe égal (=)
+- de zéro à deux espaces blancs
 - toute combinaison de 43 caractères qui sont des lettres minuscules ou majuscules, des chiffres, une barre oblique (/) ou un signe plus (+)
-- signe égal (=)
+- un signe égal (=)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1822,9 +1822,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière CEP_Regex_AzureServiceBusConnectionString trouve un contenu qui correspond au modèle.
-- L’expression régulière CEP_CommonExampleKeywords trouve pas de contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression régulière CEP_Regex_AzureServiceBusConnectionString recherche du contenu qui correspond au modèle.
+- L’expression régulière CEP_CommonExampleKeywords ne trouve pas de contenu correspondant au modèle.
 
 ```xml
 <!--Azure Service Bus Connection String-->
@@ -1844,34 +1844,34 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 
 (Techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
-- contoso
-- fabrikam
-- northwind
-- sandbox
-- onebox
-- localhost
+- Contoso
+- Fabrikam
+- Northwind
+- Sandbox
+- Onebox
+- Localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->Net
 
 
 ## <a name="azure-storage-account-key"></a>Clé de compte de stockage Azure
 
 ### <a name="format"></a>Format
 
-Chaîne « DefaultEndpointsProtocol » suivie des caractères et des chaînes indiqués dans le modèle ci-dessous, y compris la chaîne « AccountKey ».
+Chaîne « DefaultEndpointsProtocol » suivie des caractères et des chaînes décrits dans le modèle ci-dessous, y compris la chaîne « AccountKey ».
 
 ### <a name="pattern"></a>Modèle
 
-- la chaîne « DefaultEndpointsProtocol »
-- de zéro à deux caractères d’espace blanc
-- signe égal (=)
-- de zéro à deux caractères d’espace blanc
-- toute combinaison de 1 à 200 lettres minuscules ou majuscules, chiffres, symboles, caractères spéciaux ou espaces
-- la chaîne « AccountKey »
-- de zéro à deux caractères d’espace blanc
-- signe égal (=)
-- de zéro à deux caractères d’espace blanc
+- chaîne « DefaultEndpointsProtocol »
+- de zéro à deux espaces blancs
+- un signe égal (=)
+- de zéro à deux espaces blancs
+- toute combinaison d’entre 1 et 200 lettres minuscules ou majuscules, chiffres, symboles, caractères spéciaux ou espaces
+- chaîne « AccountKey »
+- de zéro à deux espaces blancs
+- un signe égal (=)
+- de zéro à deux espaces blancs
 - toute combinaison de 86 caractères qui sont des lettres minuscules ou majuscules, des chiffres, une barre oblique (/) ou un signe plus (+)
 - deux signes égaux (=)
 
@@ -1881,10 +1881,10 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière CEP_Regex_AzureStorageAccountKey trouve un contenu qui correspond au modèle.
-- L’expression régulière CEP_AzureEmulatorStorageAccountFilter trouve pas de contenu qui correspond au modèle.
-- L’expression régulière CEP_CommonExampleKeywords trouve pas de contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression régulière CEP_Regex_AzureStorageAccountKey recherche du contenu qui correspond au modèle.
+- L’expression régulière CEP_AzureEmulatorStorageAccountFilter ne trouve pas de contenu correspondant au modèle.
+- L’expression régulière CEP_CommonExampleKeywords ne trouve pas de contenu correspondant au modèle.
 
 ```xml
 <!--Azure Storage Account Key-->
@@ -1905,32 +1905,32 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 
 (Techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
-- Eby8vdM02xNOotteFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==
+- Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
 (Techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
-- contoso
-- fabrikam
-- northwind
-- sandbox
-- onebox
-- localhost
+- Contoso
+- Fabrikam
+- Northwind
+- Sandbox
+- Onebox
+- Localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->Net
 
 
-## <a name="azure-storage-account-key-generic"></a>stockage Azure de compte d’utilisateur (générique)
+## <a name="azure-storage-account-key-generic"></a>stockage Azure clé de compte (générique)
 
 ### <a name="format"></a>Format
 
-Toute combinaison de 86 lettres minuscules ou majuscules, chiffres, barre oblique (/) ou signe plus (+), précédé ou suivi des caractères indiqués dans le modèle ci-dessous.
+Toute combinaison de 86 lettres minuscules ou majuscules, chiffres, barre oblique (/) ou signe plus (+), précédée ou suivie des caractères indiqués dans le modèle ci-dessous.
 
 ### <a name="pattern"></a>Modèle
 
-- zéro à l’un des symboles supérieurs (>), apostrophe ('), signe égal (=), guillemets (« ), ou di diétique (#)
+- zéro à l’un des symboles supérieurs (>), apostrophe ('), signe égal (=), guillemet (« ) ou signe numérique (#)
 - toute combinaison de 86 caractères qui sont des lettres minuscules ou majuscules, des chiffres, la barre oblique (/) ou le signe plus (+)
 - deux signes égaux (=)
 
@@ -1940,8 +1940,8 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière CEP_Regex_AzureStorageAccountKeyGeneric trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression régulière CEP_Regex_AzureStorageAccountKeyGeneric recherche du contenu qui correspond au modèle.
 
 ```xml
 <!--Azure Storage Account Key (Generic)-->
@@ -1953,11 +1953,11 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 ```
 
 
-## <a name="belgium-drivers-license-number"></a>Numéro de permis de conduire belgique
+## <a name="belgium-drivers-license-number"></a>Numéro de permis de conduire en Belgique
 
 ### <a name="format"></a>Format
 
-10 chiffres sans espaces et délimiteur
+10 chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -1969,9 +1969,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_belgium_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de `Keywords_eu_driver's_license_number` ou `Keywords_belgium_eu_driver's_license_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_belgium_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou `Keywords_eu_driver's_license_number` `Keywords_belgium_eu_driver's_license_number` est trouvé.
 
 ```xml
       <!-- Belgium Driver's License Number -->
@@ -1988,7 +1988,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -2016,12 +2016,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -2032,14 +2032,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -2049,7 +2049,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -2060,17 +2060,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -2081,8 +2081,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -2096,11 +2096,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -2109,7 +2109,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - dlno
 - numéro dl
 
-#### <a name="keywords_belgium_eu_drivers_license_number"></a>Keywords_belgium_eu_driver’s_license_number
+#### <a name="keywords_belgium_eu_drivers_license_number"></a>Keywords_belgium_eu_driver s_license_number
 
 - rijbewijs
 - rijbewijsnummer
@@ -2124,19 +2124,19 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro permis conduire
 
 
-## <a name="belgium-national-number"></a>Numéro national belgique
+## <a name="belgium-national-number"></a>Numéro national belge
 
 ### <a name="format"></a>Format
 
-11 chiffres plus des délimiteur facultatifs
+11 chiffres plus délimiteurs facultatifs
 
 ### <a name="pattern"></a>Modèle
 
 11 chiffres plus des délimiteurs :
-- six chiffres et deux points facultatifs au format AA. MM.DD pour la date de naissance
-- Délimiteur facultatif de point, tiret, espace
-- trois chiffres séquentiels (impair pour les hommes, même pour les femme)
-- Délimiteur facultatif de point, tiret, espace
+- six chiffres et deux périodes facultatives au format YY. MM.DD pour la date de naissance
+- Délimiteur facultatif à partir d’un point, d’un tiret, d’un espace
+- trois chiffres séquentiels (impairs pour les mâles, même pour les femelles)
+- Délimiteur facultatif à partir d’un point, d’un tiret, d’un espace
 - deux chiffres de vérification
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -2145,12 +2145,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_belgium_national_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_belgium_national_number est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_belgium_national_number trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -2172,27 +2172,27 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 #### <a name="keyword_belgium_national_number"></a>Keyword_belgium_national_number
 
 - belasting aantal
-- bnn #
-- bnn
+- Bnn #
+- Bnn
 - carte d’identité
 - identifiant national
 - identifiantnational #
 - identificatie
-- identification
+- Identification
 - identifikation
 - identifikationsnummer
 - identifizierung
 - identité
 - identiteit
 - identiteitskaart
-- identity
+- Identité
 - inscription
 - numéro national
 - registre national
 - nationalnumber #
 - nationalnumber
-- nif #
-- nif
+- Nif #
+- Nif
 - numéro d’assuré
 - numéro de registre national
 - numéro de sécurité
@@ -2204,40 +2204,40 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - personalausweis
 - personalidnumber #
 - registratie
-- registration
+- Enregistrement
 - registrationsnumme
 - registrierung
 - numéro de sécurité sociale
-- ssn #
-- ssn
+- Ssn #
+- Ssn
 - steuernummer
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
+- Étain #
 
 
-## <a name="belgium-passport-number"></a>Numéro de passeport belgique
+## <a name="belgium-passport-number"></a>Numéro de passeport en Belgique
 
 ### <a name="format"></a>Format
 
-deux lettres suivies de six chiffres sans espace ni délimiteur
+deux lettres suivies de six chiffres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
-deux lettres suivies de six chiffres
+deux lettres et suivies de six chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -2245,14 +2245,14 @@ non applicable
 
 ### <a name="definition"></a>Définition
 
- Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_belgium_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_belgium_eu_passport_number` est trouvé.
-- L’expression régulière `Regex_eu_passport_date2` trouve la date au format JA J.-C. J.-C. ou un mot clé de `Keywords_eu_passport_date` ou `Keywords_belgium_eu_passport_number` est trouvé
+ Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_belgium_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_belgium_eu_passport_number` est trouvé.
+- L’expression `Regex_eu_passport_date2` régulière recherche la date au format MM YY DD ou un mot clé à partir ou `Keywords_eu_passport_date` `Keywords_belgium_eu_passport_number` trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_belgium_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_belgium_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_belgium_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_belgium_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Belgium Passport Number -->
@@ -2284,10 +2284,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -2302,7 +2302,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - paspoort-nr
 - paspoortnummer
 - paspoortnummers
-- Passeport carte
+- Carte Passeport
 - Passeport livre
 - Pass-Nr
 - Passnummer
@@ -2310,13 +2310,13 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
-## <a name="belgium-physical-addresses"></a>Adresses physiques belgiques
+## <a name="belgium-physical-addresses"></a>Adresses physiques belges
 
-Cette entité nommée dissociée détecte les modèles liés aux adresses physiques en Belgique. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés aux adresses physiques en provenance de Belgique. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -2334,19 +2334,19 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-Modèle alphanumérique de 12 caractères
+Modèle alphanumérique à 12 caractères
 
 ### <a name="pattern"></a>Modèle
 
-Modèle alphanumérique de 12 caractères :
+Modèle alphanumérique à 12 caractères :
 
 - une lettre B ou b
 - une lettre E ou e
 - un chiffre 0
 - un chiffre de 1 à 9
-- point ou tiret ou espace facultatif
+- un point ou un trait d’union ou un espace facultatif
 - quatre chiffres
-- point ou tiret ou espace facultatif
+- un point ou un trait d’union ou un espace facultatif
 - quatre chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -2355,12 +2355,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_belgium_value_added_tax_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_belgium_value_added_tax_number recherche le contenu qui correspond au modèle.
 - Un mot clé de Keywords_belgium_value_added_tax_number est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_belgium_value_added_tax_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_belgium_value_added_tax_number recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Belgium Value Added Tax Number -->
@@ -2385,29 +2385,29 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro t.v.a
 - umsatzsteuer-identifikationsnummer
 - umsatzsteuernummer
-- btw
-- btw #
-- vat #
+- Au fait
+- Au fait #
+- Tva #
 
 
-## <a name="blood-test-terms"></a>Termes du test de test pour le sang
+## <a name="blood-test-terms"></a>Termes de l’analyse de sang
 
-Cette entité nommée dissociée détecte les termes liés aux tests sur le sang, tels que *hCG*. Il prend uniquement en charge les termes anglais. Il est également inclus dans [toutes les conditions](#all-medical-terms-and-conditions) médicales regroupées nommées SIT d’entité.
-
-### <a name="confidence-level"></a>Niveau de confiance
-
-Élevé
-
-## <a name="brand-medication-names"></a>Noms de marque d’identité
-
-Cette entité nommée dissociée détecte les noms des personnes qui se sont déverrouillées, telles que *Tylenol*. Il prend uniquement en charge les termes anglais. Il est également inclus dans [toutes les conditions](#all-medical-terms-and-conditions) médicales regroupées nommées SIT d’entité.
+Cette entité nommée non groupée détecte les termes liés aux tests sanguins, tels que *hCG*. Il prend uniquement en charge les termes anglais. Il est également inclus dans les [conditions générales médicales](#all-medical-terms-and-conditions) regroupées sous le nom d’entité SIT.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Élevé
 
+## <a name="brand-medication-names"></a>Noms des médicaments de marque
 
-## <a name="brazil-cpf-number"></a>Numéro CPF Brésil
+Cette entité nommée non groupée détecte les noms des médicaments de marque, tels que *le Tylenol*. Il prend uniquement en charge les termes anglais. Il est également inclus dans les [conditions générales médicales](#all-medical-terms-and-conditions) regroupées sous le nom d’entité SIT.
+
+### <a name="confidence-level"></a>Niveau de confiance
+
+Élevé
+
+
+## <a name="brazil-cpf-number"></a>Numéro CPF du Brésil
 
 ### <a name="format"></a>Format
 
@@ -2415,7 +2415,7 @@ Cette entité nommée dissociée détecte les noms des personnes qui se sont dé
 
 ### <a name="pattern"></a>Modèle
 
-Formaté :
+Formaté:
 - trois chiffres
 - un point
 - trois chiffres
@@ -2424,7 +2424,7 @@ Formaté :
 - un trait d’union
 - deux chiffres qui sont des chiffres de vérification
 
-Non formaté :
+Mémoire:
 - 11 chiffres où les deux derniers sont des chiffres de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -2433,12 +2433,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_brazil_cpf trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_brazil_cpf est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_brazil_cpf trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -2462,15 +2462,15 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - CPF
 - Identification
 - Inscription
-- Chiffre d’affaires
+- Revenus
 - Cadastro de Pessoas Físicas
-- Impossibilitéto
+- Imposto
 - Identificação
 - Inscrição
 - Receita
 
 
-## <a name="brazil-legal-entity-number-cnpj"></a>Numéro d’entité juridique brésil (CNPJ)
+## <a name="brazil-legal-entity-number-cnpj"></a>Numéro d’entité juridique du Brésil (CNPJ)
 
 ### <a name="format"></a>Format
 
@@ -2485,8 +2485,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - trois chiffres
 - un point
 - trois chiffres (ces huit premiers chiffres sont le numéro d’inscription)
-- barre oblique
-- Numéro de succursale à quatre chiffres
+- une barre oblique
+- Numéro de branche à quatre chiffres
 - un trait d’union
 - deux chiffres qui sont des chiffres de vérification
 
@@ -2496,12 +2496,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_brazil_cnpj trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_brazil_cnpj est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_brazil_cnpj trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -2543,11 +2543,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - Empresa
 
 
-## <a name="brazil-national-identification-card-rg"></a>Carte d’identification nationale (RG) brésil
+## <a name="brazil-national-identification-card-rg"></a>Carte d’identification nationale du Brésil (RG)
 
 ### <a name="format"></a>Format
 
-Registro Geral (ancien format) : neuf chiffres
+Registro Geral (ancien format) : Neuf chiffres
 
 Registro de Identidade (RIC) (nouveau format) : 11 chiffres
 
@@ -2560,12 +2560,12 @@ Registro Geral (ancien format) :
 - un point
 - trois chiffres
 - un trait d’union
-- un chiffre qui est un chiffre de vérification
+- un chiffre qui est un chiffre à cocher
 
 Registro de Identidade (RIC) (nouveau format) :
 - 10 chiffres
 - un trait d’union
-- un chiffre qui est un chiffre de vérification
+- un chiffre qui est un chiffre à cocher
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -2573,7 +2573,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_brazil_rg trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_brazil_rg est trouvé.
 - La somme de contrôle est correcte.
@@ -2599,23 +2599,23 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - Número de registro
 - Registro de Identidade
 - Registro Geral
-- RG (ce mot clé est sensible à la cas)
-- RIC (ce mot clé est sensible à la cas)
+- RG (ce mot clé respecte la casse)
+- RIC (ce mot clé respecte la casse)
 
 
 ## <a name="brazil-physical-addresses"></a>Adresses physiques du Brésil
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique du Brésil. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique du Brésil. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
-## <a name="bulgaria-drivers-license-number"></a>Numéro de permis de conduire bulgare
+## <a name="bulgaria-drivers-license-number"></a>Numéro de permis de conduire en Bulgarie
 
 ### <a name="format"></a>Format
 
-neuf chiffres sans espaces et délimiteur
+neuf chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -2627,9 +2627,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_bulgaria_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_bulgaria_eu_driver's_license_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_bulgaria_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_bulgaria_eu_driver's_license_number` est trouvé.
 
 ```xml
       <!-- Bulgaria Driver's License Number -->
@@ -2646,7 +2646,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -2674,12 +2674,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -2690,14 +2690,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -2707,7 +2707,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -2718,17 +2718,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -2739,8 +2739,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -2754,11 +2754,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -2767,7 +2767,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - dlno
 - numéro dl
 
-#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver’s_license_number
+#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver s_license_number
 
 - свидетелство за управление на мпс
 - свидетелство за управление на моторно превозно средство
@@ -2776,11 +2776,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - шофьорски книжки
 
 
-## <a name="bulgaria-passport-number"></a>Numéro de passeport bulgare
+## <a name="bulgaria-passport-number"></a>Numéro de passeport en Bulgarie
 
 ### <a name="format"></a>Format
 
-neuf chiffres sans espaces et délimiteur
+neuf chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -2792,14 +2792,14 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_bulgaria_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_bulgaria_eu_passport_number` est trouvé.
-- L’expression régulière `Regex_eu_passport_date1` trouve la date au format DD.MM.YYYY ou dans laquelle un `Keywords_eu_passport_date` mot clé est trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_bulgaria_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_bulgaria_eu_passport_number` est trouvé.
+- L’expression `Regex_eu_passport_date1` régulière recherche la date au format DD.MM.AAAA ou un mot clé `Keywords_eu_passport_date` est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_bulgaria_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_bulgaria_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_bulgaria_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_bulgaria_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Bulgaria Passport Number -->
@@ -2828,10 +2828,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -2847,19 +2847,19 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
-## <a name="bulgaria-physical-addresses"></a>Adresses physiques en Bulgarie
+## <a name="bulgaria-physical-addresses"></a>Adresses physiques bulgares
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en provenance de Bulgarie. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance de Bulgarie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
-## <a name="bulgaria-uniform-civil-number"></a>Numéro civile uniforme bulgare
+## <a name="bulgaria-uniform-civil-number"></a>Numéro civil uniforme en Bulgarie
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
@@ -2869,15 +2869,15 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-10 chiffres sans espaces et délimiteur
+10 chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
-10 chiffres sans espaces et délimiteur
+10 chiffres sans espaces et délimiteurs
 
-- six chiffres qui correspondent à la date de naissance (AAMMMMDD)
+- six chiffres qui correspondent à la date de naissance (AAAAMMD)
 - deux chiffres qui correspondent à l’ordre de naissance
-- un chiffre qui correspond au sexe : un chiffre pair pour l’homme et un chiffre impair pour la femme
+- un chiffre qui correspond au sexe : un chiffre pair pour un homme et un chiffre impair pour la femme
 - un chiffre de vérification
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -2886,12 +2886,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_bulgaria_eu_national_id_card` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_bulgaria_eu_national_id_card` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_bulgaria_eu_national_id_card` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_bulgaria_eu_national_id_card` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_bulgaria_eu_national_id_card` recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Bulgaria Uniform Civil Number -->
@@ -2914,11 +2914,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_bulgaria_eu_national_id_card"></a>Keywords_bulgaria_eu_national_id_card
 
-- bnn #
-- bnn
-- l’équipe de l’équipe #
-- l’équipe de l’équipe
-- edinen edinen edinenhdanski nomer
+- Bnn #
+- Bnn
+- bucn #
+- bucn
+- edinen grazhdanski nomer
 - egn #
 - egn
 - numéro d’identification
@@ -2926,21 +2926,21 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro national
 - nationalnumber #
 - nationalnumber
-- id personnel
-- non personnel
+- ID personnel
+- personnel non
 - numéro personnel
 - personalidnumber #
 - numéro de sécurité sociale
-- ssn #
-- ssn
-- id civile uniforme
-- non civile uniforme
-- numéro civile uniforme
+- Ssn #
+- Ssn
+- ID civil uniforme
+- non civil uniforme
+- numéro civil uniforme
 - uniformcivilno #
 - uniformcivilno
 - uniformcivilnumber #
 - uniformcivilnumber
-- numéro unique de la nationalité
+- numéro de citoyenneté unique
 - егн #
 - егн
 - единен граждански номер
@@ -2958,7 +2958,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - униформгражданскине. #
 
 
-## <a name="canada-bank-account-number"></a>Numéro de compte bancaire canada
+## <a name="canada-bank-account-number"></a>Numéro de compte bancaire au Canada
 
 ### <a name="format"></a>Format
 
@@ -2966,13 +2966,13 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="pattern"></a>Modèle
 
-Un numéro de compte bancaire canadien est de 7 ou 12 chiffres.
+Un numéro de compte bancaire du Canada est de 7 ou 12 chiffres.
 
 Un numéro de transit de compte bancaire du Canada est indiqué au format suivant :
 - cinq chiffres
 - un trait d’union
 - trois chiffres OU
-- zéro « 0 »
+- un zéro « 0 »
 - huit chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -2981,12 +2981,12 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_canada_bank_account_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_canada_bank_account_number est trouvé.
 - L’expression régulière Regex_canada_bank_account_transit_number trouve un contenu qui correspond au modèle.
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_canada_bank_account_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_canada_bank_account_number est trouvé.
 
@@ -3032,7 +3032,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - dépôt direct
 
 
-## <a name="canada-drivers-license-number"></a>Numéro de permis de conduire canada
+## <a name="canada-drivers-license-number"></a>Numéro de permis de conduire au Canada
 
 ### <a name="format"></a>Format
 
@@ -3040,17 +3040,17 @@ Varie selon la province
 
 ### <a name="pattern"></a>Modèle
 
-Différents modèles couvrent :
+Différents modèles couvrant :
 - Alberta
 - Colombie-britannique
-- Centre d’ment
+- Manitoba
 - Nouveau-Brunswick
-- Île/Île
+- Terre-Neuve-et-Labrador
 - Nouvelle-Écosse
-- Tzé
+- Ontario
 - Île-du-Prince-Édouard
-- Centre d’ment
-- Centre d’ment
+- Québec
+- Saskatchewan
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -3058,7 +3058,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_[province_name]_drivers_license_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_[province_name]_drivers_license_name est trouvé.
 - Un mot clé figurant dans la liste Keyword_canada_drivers_license est trouvé.
@@ -3158,8 +3158,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - Permis de conduire
 - Driver’Lic
 - Driver’Lics
-- Permis de conduire
-- Permis de conduire
+- Driver’License
+- Licences de pilote
 - Permis de conduire
 - Permis de conduire
 - Permis conduire
@@ -3196,7 +3196,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - # identification
 - carte d’identification
 - cartes d’identification
-- identification
+- Identification
 - DL #
 - DLS #
 - CDL #
@@ -3227,8 +3227,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - #Permis de conduire
 - Driver’Lic #
 - Driver’Lics #
-- Permis de conduire #
-- Permis de conduire #
+- Driver’License #
+- Licences de pilote #
 - Permis de conduire #
 - Permis de conduire #
 - #Permis conduire
@@ -3250,17 +3250,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - #Permis de conduire
 - #Permis de conduire
 - Permis de conduire #
-- id #
-- ids #
+- Id #
+- Id #
 - #carte carte d’identification
 - #cartes carte d’identification
 - idcard #
 - #carte d’identification
 - #cartes d’identification
-- identification #
+- Identification #
 
 
-## <a name="canada-health-service-number"></a>Numéro de service de santé canada
+## <a name="canada-health-service-number"></a>Numéro du service de santé du Canada
 
 ### <a name="format"></a>Format
 
@@ -3276,7 +3276,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_canada_health_service_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_canada_health_service_number est trouvé.
 
@@ -3302,12 +3302,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - services spécialisés
 - accident automobile
 - hôpital pour malades
-- sous-traitant
+- Psychiatre
 - indemnisation des salariés
-- disability
+- Handicap
 
 
-## <a name="canada-passport-number"></a>Numéro de passeport canada
+## <a name="canada-passport-number"></a>Numéro de passeport du Canada
 
 ### <a name="format"></a>Format
 
@@ -3323,9 +3323,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_canada_passport_number trouve un contenu qui correspond au modèle.
-- Un mot clé provenant Keyword_canada_passport_number ou Keyword_passport est trouvé.
+- Un mot clé de Keyword_canada_passport_number ou de Keyword_passport est trouvé.
 
 ```xml
 <!-- Canada Passport Number -->
@@ -3358,13 +3358,13 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - Numéro de passeport
 - N° de passeport
 - # Passeport
-- Passport #
+- Passeport #
 - PassportID
 - Passportno
 - passportnumber
 - パスポート
 - パスポート番号
-- « ポ »
+- パのポートのNum
 - パスポート＃
 - Numéro de passeport
 - Passeport n°
@@ -3375,7 +3375,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - Passeportn °
 
 
-## <a name="canada-personal-health-identification-number-phin"></a>Numéro d’identification de santé personnel (PHIN) canada
+## <a name="canada-personal-health-identification-number-phin"></a>Numéro d’identification de la santé personnelle du Canada (PHIN)
 
 ### <a name="format"></a>Format
 
@@ -3391,7 +3391,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_canada_phin trouve un contenu qui correspond au modèle.
 - Au moins deux mots clés de Keyword_canada_phin ou Keyword_canada_provinces sont trouvés.
 
@@ -3430,15 +3430,15 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keyword_canada_provinces"></a>Keyword_canada_provinces
 
-- Tyz
-- Centre d’ment
+- Nunavut
+- Québec
 - Territoires du Nord-Ouest
-- Tzé
+- Ontario
 - Colombie-britannique
 - Alberta
-- Centre d’ment
-- Centre d’ment
-- Tzé
+- Saskatchewan
+- Manitoba
+- Yukon
 - Terre-Neuve-et-Labrador
 - Nouveau-Brunswick
 - Nouvelle-Écosse
@@ -3448,14 +3448,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="canada-physical-addresses"></a>Adresses physiques du Canada
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique du Canada. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non regroupée détecte les modèles liés à l’adresse physique du Canada. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="canada-social-insurance-number"></a>Numéro d’assurance sociale canada
+## <a name="canada-social-insurance-number"></a>Numéro d’assurance sociale du Canada
 
 ### <a name="format"></a>Format
 
@@ -3463,14 +3463,14 @@ neuf chiffres avec des traits d’union ou des espaces facultatifs
 
 ### <a name="pattern"></a>Modèle
 
-Formaté :
+Formaté:
 - trois chiffres
-- trait d’union ou espace
+- un trait d’union ou un espace
 - trois chiffres
-- trait d’union ou espace
+- un trait d’union ou un espace
 - trois chiffres
 
-Non formaté : neuf chiffres
+Non mis en forme : neuf chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -3478,7 +3478,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_canadian_sin trouve un contenu qui correspond au modèle.
 - Au moins deux des modèles suivants :
     - Un mot clé figurant dans la liste Keyword_sin est trouvé.
@@ -3486,7 +3486,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
     - La fonction Func_eu_date trouve une date au format correct.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_unformatted_canadian_sin trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_sin est trouvé.
 - La somme de contrôle est correcte.
@@ -3516,14 +3516,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - assoc
 - assurance sociale
 - numéro d’assurance sociale
-- l’équipe de l
-- ssn
+- Péchés
+- Ssn
 - ssns
 - sécurité sociale
 - numéro d’assurance sociale
 - numéro d’identification nationale
 - id national
-- sin #
+- Péché #
 - ass soc
 - ass sociale
 
@@ -3539,22 +3539,22 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - Date of Birth
 
 
-## <a name="chile-identity-card-number"></a>Numéro de carte d’identité Chili
+## <a name="chile-identity-card-number"></a>Numéro de carte d’identité chilienne
 
 ### <a name="format"></a>Format
 
-sept à huit chiffres plus des délimiteur d’un chiffre ou d’une lettre à cocher
+sept à huit chiffres plus délimiteurs un chiffre ou une lettre de vérification
 
 ### <a name="pattern"></a>Modèle
 
-sept à huit chiffres plus des délimiteurs :
+sept à huit chiffres plus délimiteurs :
 - un à deux chiffres
-- période facultative
+- une période facultative
 - trois chiffres
-- période facultative
+- une période facultative
 - trois chiffres
 - un tiret
-- un chiffre ou une lettre (ne sensible à la cas) qui est un chiffre de contrôle
+- un chiffre ou une lettre (non sensible à la casse) qui est un chiffre à cocher
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -3562,12 +3562,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_chile_id_card trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_chile_id_card est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_chile_id_card trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -3588,45 +3588,45 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keyword_chile_id_card"></a>Keyword_chile_id_card
 
-- butula de identidad
+- cédula de identidad
 - identificación
 - numéro d’identification nationale
 - numéro d’identification nationale
 - id national
 - número de identificación nacional
 - rol único nacional
-- rol únicoio
-- RUN
-- LASER
+- rol único tributario
+- COURIR
+- ORNIÈRE
 - tarjeta de identificación
 - Rol Unico Nacional
-- Rol Unico Ausio
-- RUN #
-- LASER #
+- Rol Unico Tributario
+- COURIR #
+- ORNIÈRE #
 - nationaluniqueroleID #
 - nacional identidad
 - número identificación
 - identidad número
 - numero identificacion
-- identidad numero
-- Identité d’identité d’identité non.
-- Numéro d’identité de l’identité de l'
-- Identité d’identité d’identité d #
+- identidad nombreuses
+- Identité chilienne non.
+- Numéro d’identité chilien
+- Identité chilienne #
 - Registre fiscal unique
-- Rôle unique d’autorité
+- Unique Tributary Role
 - Rôle fiscal unique
-- Numéro unique d’unique unique
+- Numéro de tribut unique
 - Numéro national unique
 - Rôle national unique
-- Rôle national unique
-- Chili identity no.
-- Numéro d’identité Chili
-- Identité chili #
+- Rôle unique national
+- Identité chilienne non.
+- Numéro d’identité chilien
+- Identité chilienne #
 - R.U.T
 - R.U.N
 
 
-## <a name="china-resident-identity-card-prc-number"></a>Numéro de carte d’identité résidente en Chine (RPC)
+## <a name="china-resident-identity-card-prc-number"></a>Numéro de carte d’identité de résident en Chine
 
 ### <a name="format"></a>Format
 
@@ -3638,7 +3638,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - six chiffres qui sont un code d’adresse
 - huit chiffres sous la forme YYYYMMDD, qui sont la date de naissance
 - trois chiffres qui sont un code de commande
-- un chiffre qui est un chiffre de vérification
+- un chiffre qui est un chiffre à cocher
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -3646,12 +3646,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_china_resident_id trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_china_resident_id est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_china_resident_id trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -3688,11 +3688,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="format"></a>Format
 
-14 à 19 chiffres qui peuvent être mis en forme ou non mis en forme (ddddddd) et qui doivent réussir le test Luhn.
+14 à 19 chiffres qui peuvent être mis en forme ou non mis en forme (ddddddddddddddd) et qui doivent réussir le test Luhn.
 
 ### <a name="pattern"></a>Modèle
 
-Détecte les cartes de toutes les principales marques mondiales, notamment Visa, MasterCard, Discover Card, JCB, American Express, cartes-anniversaire, cartes-mémoire, Rupay et China UnionPay.
+Détecte les cartes de toutes les grandes marques du monde entier, y compris Visa, MasterCard, Discover Card, JCB, American Express, cartes cadeaux, cartes de dîner, Rupay et China UnionPay.
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -3700,7 +3700,7 @@ Oui, la vérification Luhn
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_credit_card trouve un contenu qui correspond au modèle.
 - L’une des affirmations suivantes est vraie :
     - Un mot clé figurant dans la liste Keyword_cc_verification est trouvé.
@@ -3708,7 +3708,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
     - La fonction Func_expiration_date trouve une date au format correct.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_credit_card trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -3737,8 +3737,8 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - numéro d’identification de la carte
 - cvn
 - nic
-- cvc2
-- cvv2
+- Cvc2
+- Cvv2
 - pin block
 - code de sécurité
 - numéro de sécurité
@@ -3757,12 +3757,12 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- cod. sicurezza
+- Cod. Sicurezza
 - cod sicurezza
 - n autorizzazione
-- código
-- codigo
-- cod. seg
+- Código
+- Codigo
+- Cod. Seg
 - cod seg
 - código de segurança
 - codigo de seguranca
@@ -3798,9 +3798,9 @@ cód. Segurança
 - data de expiracao
 - data em que expira
 - validade
-- valor
+- Valor
 - vencimento
-- transaction
+- Transaction
 - numéro de transaction
 - numéro de référence
 - セキュリティコード
@@ -3811,20 +3811,20 @@ cód. Segurança
 
 #### <a name="keyword_cc_name"></a>Keyword_cc_name
 
-- amex
+- Amex
 - american express
 - americanexpress
 - americano espresso
 - Visa
-- mastercard
+- Mastercard
 - master card
-- mc
-- mastercards
+- Mc
+- Mastercard
 - master cards
 - diner’s Club
 - diners club
-- 2013
-- discover
+- Dinersclub
+- Découvrir
 - discover card
 - discovercard
 - discover cards
@@ -3834,7 +3834,7 @@ cód. Segurança
 - carte blanche
 - carteblanche
 - carte de crédit
-- cc #
+- Cc #
 - cc#:
 - date d’expiration
 - date d’exp
@@ -3843,33 +3843,33 @@ cód. Segurança
 - date d’exp
 - date expiration
 - carte bancaire
-- carte bancaire
+- Bankcard
 - numéro de carte
 - num de carte
 - cardnumber
 - cardnumbers
 - numéros de carte
-- carte de crédit
+- Creditcard
 - cartes de crédit
 - cartes de crédit
 - ccn
 - titulaire de la carte
-- cardholder
+- Détenteur
 - titulaires de la carte
-- cardholders
+- Titulaires
 - carte de vérification
-- checkcard
+- coche
 - cartes de vérification
-- checkcards
+- cartes de contrôle
 - carte de débit
 - debitcard
 - cartes de débit
-- debitcards
+- cartes de débit
 - carte de retrait
 - atmcard
 - cartes de retrait
-- atmcards
-- enroute
+- cartes d’atmcard
+- Enroute
 - en route
 - type de carte
 - Cardmember Acct
@@ -3882,7 +3882,7 @@ cód. Segurança
 - compte de membre de carte
 - Cardmember Acct.
 - n° carte
-- carte non
+- carte no
 - numéro de carte
 - carte bancaire
 - carte de crédit
@@ -3892,11 +3892,11 @@ cód. Segurança
 - nº de la carte
 - nº de carte
 - kreditkarte
-- 2013
-- kartenber
-- kartenbers
-- kreditkartenhalber
-- kreditkartendit
+- Karte
+- karteninhaber
+- karteninhabers
+- kreditkarteninhaber
+- kreditkarteninstitut
 - kreditkartentyp
 - eigentümername
 - kartennr
@@ -3905,9 +3905,9 @@ cód. Segurança
 - kreditkarten-nummer
 - Carta di credito
 - Carta credito
-- n. carta
+- Â¡n. Carta
 - n carta
-- nr. carta
+- Nr. Carta
 - nr carta
 - numero carta
 - numero della carta
@@ -3928,7 +3928,7 @@ cód. Segurança
 - numero de tarjeta
 - número de tarjeta
 - tarjeta no
-- tarjeta jetente
+- tarjetahabiente
 - cartão de crédito
 - cartão de credito
 - cartao de crédito
@@ -3956,10 +3956,10 @@ cód. Segurança
 - no. do cartao
 
 - rupay
-- union pay
+- salaire des syndicats
 - unionpay
-- l’équipe de l’équipe
-- toys
+- diner’s
+- Diners
 - クレジットカード番号
 - クレジットカードナンバー
 - クレジットカード＃
@@ -3972,8 +3972,8 @@ cód. Segurança
 - アメックス
 - アメリカンエクスプレス
 - アメリカン エクスプレス
-- Visayーs
-- Visa
+- Visaカード
+- Visa カード
 - マスターカード
 - マスター カード
 - マスター
@@ -3993,11 +3993,11 @@ cód. Segurança
 - 银联
 
 
-## <a name="croatia-drivers-license-number"></a>Numéro de permis de conduire croate
+## <a name="croatia-drivers-license-number"></a>Numéro de permis de conduire en Croatie
 
 ### <a name="format"></a>Format
 
-huit chiffres sans espaces et délimiteur
+huit chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -4009,10 +4009,10 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 
-- L’expression régulière  `Regex_croatia_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de `Keywords_eu_driver's_license_number` ou `Keywords_croatia_eu_driver's_license_number` est trouvé.
+- L’expression  `Regex_croatia_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou `Keywords_eu_driver's_license_number` `Keywords_croatia_eu_driver's_license_number` est trouvé.
 
 ```xml
       <!-- Croatia Driver's License Number -->
@@ -4029,7 +4029,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -4057,12 +4057,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -4073,14 +4073,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -4090,7 +4090,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -4101,17 +4101,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -4122,8 +4122,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -4137,11 +4137,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -4157,8 +4157,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - vozačke dozvole
 
 
-## <a name="croatia-identity-card-number"></a>Numéro de carte d’identité Croate
-Cette entité est incluse dans le type d’informations sensibles Numéro d’identification national de l’UE. Il est disponible en tant qu’entité de type d’informations sensibles autonome.
+## <a name="croatia-identity-card-number"></a>Numéro de carte d’identité en Croatie
+Cette entité est incluse dans le type d’informations sensibles numéro d’identification nationale de l’UE. Il est disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
 
@@ -4174,7 +4174,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_croatia_id_card trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_croatia_id_card est trouvé.
 
@@ -4193,40 +4193,40 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 #### <a name="keyword_croatia_id_card"></a>Keyword_croatia_id_card
 
 - majstorski broj građana
-- numéro de citoyen master
+- numéro de citoyen maître
 - nacionalni identifikacijski broj
 - numéro d’identification nationale
-- oib #
-- oib
+- Oib #
+- Oib
 - osobna iskaznica
-- osobni id
+- iD osobni
 - osobni identifikacijski broj
-- numéro d’identification personnel
+- numéro d’identification personnelle
 - porezni broj
 - porezni identifikacijski broj
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
+- Étain #
 
 
-## <a name="croatia-passport-number"></a>Numéro de passeport croate
+## <a name="croatia-passport-number"></a>Numéro de passeport en Croatie
 
 ### <a name="format"></a>Format
 
-neuf chiffres sans espaces et délimiteur
+neuf chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -4238,14 +4238,14 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_croatia_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_croatia_eu_passport_number` est trouvé.
-- L’expression régulière `Regex_eu_passport_date1` trouve la date au format DD.MM.YYYY ou dans laquelle un `Keywords_eu_passport_date` mot clé est trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_croatia_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_croatia_eu_passport_number` est trouvé.
+- L’expression `Regex_eu_passport_date1` régulière recherche la date au format DD.MM.AAAA ou un mot clé `Keywords_eu_passport_date` est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_croatia_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_croatia_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_croatia_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_croatia_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Croatia Passport Number -->
@@ -4274,10 +4274,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -4288,10 +4288,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 #### <a name="keywords_croatia_eu_passport_number"></a>Keywords_croatia_eu_passport_number
 
 - broj putovnice
-- br. Putovnice
+- Br. Putovnice
 - br putovnice
 
-## <a name="croatia-personal-identification-oib-number"></a>Numéro d’identification personnelle (OIB) croate
+## <a name="croatia-personal-identification-oib-number"></a>Numéro d’identification personnelle croate (OIB)
 
 ### <a name="format"></a>Format
 
@@ -4301,7 +4301,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 11 chiffres :
 - 10 chiffres
-- le chiffre final est un chiffre de contrôle
+- chiffre final est un chiffre à cocher
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -4309,12 +4309,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_croatia_oib_number trouve un contenu qui correspond au modèle.
 - Un mot clé de Keywords_croatia_eu_tax_file_number est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_croatia_oib_number trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -4336,49 +4336,49 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 #### <a name="keyword_croatia_oib_number"></a>Keyword_croatia_oib_number
 
 - majstorski broj građana
-- numéro de citoyen master
+- numéro de citoyen maître
 - nacionalni identifikacijski broj
 - numéro d’identification nationale
-- oib #
-- oib
+- Oib #
+- Oib
 - osobna iskaznica
-- osobni id
+- iD osobni
 - osobni identifikacijski broj
-- numéro d’identification personnel
+- numéro d’identification personnelle
 - porezni broj
 - porezni identifikacijski broj
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
+- Étain #
 
 
 ## <a name="croatia-physical-addresses"></a>Adresses physiques croates
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Croatie. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance de Croatie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="cyprus-drivers-license-number"></a>Numéro de permis de conduire à Chypre
+## <a name="cyprus-drivers-license-number"></a>Numéro de permis de conduire chypriote
 
 ### <a name="format"></a>Format
 
-12 chiffres sans espaces et délimiteur
+12 chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -4390,9 +4390,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_cyprus_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_cyprus_eu_driver's_license_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_cyprus_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_cyprus_eu_driver's_license_number` est trouvé.
 
 ```xml
       <!-- Cyprus Driver's License Number -->
@@ -4409,7 +4409,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -4437,12 +4437,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -4453,14 +4453,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -4470,7 +4470,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -4481,17 +4481,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -4502,8 +4502,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -4517,11 +4517,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -4530,14 +4530,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - dlno
 - numéro dl
 
-#### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver’s_license_number
+#### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver s_license_number
 
 - άδεια οδήγησης
 - αριθμό άδειας οδήγησης
 - άδειες οδήγησης
 
 
-## <a name="cyprus-identity-card"></a>Carte d’identité Chypre
+## <a name="cyprus-identity-card"></a>Carte d’identité de Chypre
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -4548,7 +4548,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-10 chiffres sans espaces et délimiteur
+10 chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -4560,8 +4560,8 @@ non applicable
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_cyprus_eu_national_id_card` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_cyprus_eu_national_id_card` régulière recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_cyprus_eu_national_id_card` trouvé.
 
 ```xml
@@ -4578,9 +4578,9 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_cyprus_eu_national_id_card"></a>Keywords_cyprus_eu_national_id_card
 
+- Numéro de carte d’ID
 - numéro de carte d’identité
-- numéro de carte d’identité
-- kimliksi
+- kimlik karti
 - numéro d’identification nationale
 - numéro d’ID personnel
 - ταυτοτητασ
@@ -4590,7 +4590,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="format"></a>Format
 
-une lettre suivie de 6 à 8 chiffres sans espace ni délimiteur
+une lettre suivie de 6 à 8 chiffres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -4602,14 +4602,14 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_cyprus_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_cyprus_eu_passport_number` est trouvé.
-- L’expression régulière `Regex_cyprus_eu_passport_date` trouve la date au format JD/MM/AAA OU un mot clé à partir de `Keywords_cyprus_eu_passport_date` laquelle est trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_cyprus_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_cyprus_eu_passport_number` est trouvé.
+- L’expression `Regex_cyprus_eu_passport_date` régulière recherche la date au format DD/MM/AAAA ou un mot clé `Keywords_cyprus_eu_passport_date` est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_cyprus_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_cyprus_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_cyprus_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_cyprus_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Cyprus Passport Number -->
@@ -4639,10 +4639,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -4660,7 +4660,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - διαβατήριο
 - αριθμός διαβατηρίου
 - Pasaport Kimliği
-- pasaport nucéesı
+- pasaport numarası
 - Pasaport no.
 - Αρ. Διαβατηρίου
 
@@ -4672,13 +4672,13 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="cyprus-physical-addresses"></a>Adresses physiques de Chypre
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Chypre. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non regroupée détecte les modèles liés à l’adresse physique de Chypre. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
-## <a name="cyprus-tax-identification-number"></a>Numéro d’identification fiscale à Chypre
+## <a name="cyprus-tax-identification-number"></a>Numéro d’identification fiscale de Chypre
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
@@ -4696,7 +4696,7 @@ huit chiffres et une lettre :
 
 - un « 0 » ou « 9 »
 - sept chiffres
-- une lettre (ne doit pas être sensible à la cas)
+- une lettre (non sensible à la casse)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -4704,12 +4704,12 @@ non applicable
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_cyprus_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_cyprus_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_cyprus_eu_tax_file_number` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_cyprus_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_cyprus_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Cyprus Tax Identification Number -->
@@ -4730,25 +4730,25 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 - id fiscal
 - code d’identification fiscale
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
+- taxnumber #
+- taxnumber
 - tic #
 - tic
-- tin id
+- iD d’tin
 - tin no
-- tin #
-- velik kimlik kodu
-- veı kimlik nuýsı
+- Étain #
+- vergi kimlik kodu
+- vergi kimlik numarası
 - αριθμός φορολογικού μητρώου
 - κωδικός φορολογικού μητρώου
 - φορολογική ταυτότητα
@@ -4765,7 +4765,7 @@ deux lettres suivies de six chiffres
 
 huit lettres et chiffres :
 
-- lettre 'E' (ne pas sensible à la cas)
+- lettre 'E' (non sensible à la casse)
 - une lettre
 - un espace (facultatif)
 - six chiffres
@@ -4776,9 +4776,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_czech_republic_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_czech_republic_eu_driver's_license_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_czech_republic_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_czech_republic_eu_driver's_license_number` est trouvé.
 
 ```xml
       <Entity id="86b40d3b-d8ea-4c36-aab0-ef9416a6769c" patternsProximity="300" recommendedConfidence="75">
@@ -4795,7 +4795,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -4823,12 +4823,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -4839,14 +4839,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -4856,7 +4856,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -4867,17 +4867,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -4888,8 +4888,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -4903,11 +4903,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -4916,7 +4916,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - dlno
 - numéro dl
 
-#### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver’s_license_number
+#### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver s_license_number
 
 - řidičský prúkaz
 - řidičské průkazy
@@ -4928,11 +4928,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="format"></a>Format
 
-huit chiffres sans espaces ni délimiteur
+huit chiffres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
-huit chiffres sans espaces ni délimiteur
+huit chiffres sans espaces ni délimiteurs
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -4940,14 +4940,14 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_czech_republic_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_czech_republic_eu_passport_number` est trouvé.
-- L’expression régulière `Regex_eu_passport_date1` trouve la date au format DD.MM.YYYY ou dans laquelle un `Keywords_eu_passport_date` mot clé est trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_czech_republic_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_czech_republic_eu_passport_number` est trouvé.
+- L’expression `Regex_eu_passport_date1` régulière recherche la date au format DD.MM.AAAA ou un mot clé `Keywords_eu_passport_date` est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_czech_republic_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_czech_republic_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_czech_republic_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_czech_republic_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Czech Republic Passport Number -->
@@ -4977,10 +4977,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -4990,19 +4990,19 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_czech_republic_eu_passport_number"></a>Keywords_czech_republic_eu_passport_number
 
-- cesnkní pas
+- cestovní pas
 - číslo pasu
-- cesnkní pasu
+- cestovní pasu
 - passeport no
 - čísla pasu
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
-## <a name="czech-personal-identity-number"></a>Numéro d’identité personnel tchèque
+## <a name="czech-personal-identity-number"></a>Numéro d’identité personnelle tchèque
 
 ### <a name="format"></a>Format
 
@@ -5012,13 +5012,13 @@ neuf chiffres avec barre oblique facultative (ancien format) 10 chiffres avec ba
 
 neuf chiffres (ancien format) :
 - six chiffres qui représentent la date de naissance
-- barre oblique facultative
+- une barre oblique facultative
 - trois chiffres
 
 10 chiffres (nouveau format) :
 - six chiffres qui représentent la date de naissance
-- barre oblique facultative
-- quatre chiffres où le dernier chiffre est un chiffre de contrôle
+- une barre oblique facultative
+- quatre chiffres où le dernier chiffre est un chiffre à cocher
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -5026,15 +5026,15 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 
 - La fonction Func_czech_id_card trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_czech_id_card est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 
-- La fonction Func_czech_id_card_new_format trouve un contenu qui correspond au modèle.
+- La fonction Func_czech_id_card_new_format recherche le contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
 ```xml
@@ -5056,12 +5056,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keyword_czech_id_card"></a>Keyword_czech_id_card
 
-- numéro de naissance
-- id de république tchèque
+- nombre de naissances
+- ID de république tchèque
 - czechidno #
 - daňové číslo
 - identifikační číslo
-- identité non
+- identity no
 - numéro d’identité
 - identityno #
 - identityno
@@ -5072,49 +5072,49 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - osobní číslo
 - personalidnumber #
 - numéro d’ID personnel
-- numéro d’identification personnel
+- numéro d’identification personnelle
 - numéro personnel
-- pid #
+- Pid #
 - pid
 - pojištění číslo
 - rč
 - rodne cislo
 - rodné číslo
-- ssn
-- ssn #
+- Ssn
+- Ssn #
 - numéro de sécurité sociale
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
+- Étain #
 - numéro d’identification unique
 
 
 ## <a name="czech-republic-physical-addresses"></a>Adresses physiques de la République tchèque
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de la République tchèque. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la République tchèque. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
-## <a name="denmark-drivers-license-number"></a>Numéro de permis de conduire danois
+## <a name="denmark-drivers-license-number"></a>Numéro de permis de conduire au Danemark
 
 ### <a name="format"></a>Format
 
-huit chiffres sans espaces et délimiteur
+huit chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -5126,9 +5126,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_denmark_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_denmark_eu_driver's_license_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_denmark_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_denmark_eu_driver's_license_number` est trouvé.
 
 ```xml
       <!-- Denmark Driver's License Number -->
@@ -5145,7 +5145,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -5173,12 +5173,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -5189,14 +5189,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -5206,7 +5206,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -5217,17 +5217,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -5238,8 +5238,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -5253,11 +5253,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -5266,17 +5266,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - dlno
 - numéro dl
 
-#### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver’s_license_number
+#### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver s_license_number
 
 - kørekort
 - kørekortnummer
 
 
-## <a name="denmark-passport-number"></a>Numéro de passeport danemark
+## <a name="denmark-passport-number"></a>Numéro de passeport du Danemark
 
 ### <a name="format"></a>Format
 
-neuf chiffres sans espaces et délimiteur
+neuf chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -5288,14 +5288,14 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_denmark_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_denmark_eu_passport_number` est trouvé.
-- L’expression régulière `Regex_eu_passport_date2` trouve la date au format MM AA ou un mot clé à partir de `Keywords_eu_passport_date` laquelle est trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_denmark_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_denmark_eu_passport_number` est trouvé.
+- L’expression `Regex_eu_passport_date2` régulière recherche la date au format JJ MM YY ou un mot clé `Keywords_eu_passport_date` est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_denmark_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_denmark_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_denmark_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_denmark_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Denmark Passport Number -->
@@ -5326,10 +5326,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -5345,11 +5345,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
-## <a name="denmark-personal-identification-number"></a>Numéro d’identification personnel danemark
+## <a name="denmark-personal-identification-number"></a>Numéro d’identification personnelle du Danemark
 
 ### <a name="format"></a>Format
 
@@ -5359,8 +5359,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 10 chiffres :
 - six chiffres au format DDMMYY, qui sont la date de naissance
-- espace ou trait d’union facultatif
-- quatre chiffres où le dernier chiffre est un chiffre de contrôle
+- un espace ou un trait d’union facultatif
+- quatre chiffres où le chiffre final est un chiffre à cocher
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -5368,13 +5368,13 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière Func_denmark_eu_tax_file_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression régulière Func_denmark_eu_tax_file_number recherche du contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_denmark_id est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière Func_denmark_eu_tax_file_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression régulière Func_denmark_eu_tax_file_number recherche du contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
 ```xml
@@ -5396,12 +5396,12 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 #### <a name="keyword_denmark_id"></a>Keyword_denmark_id
 
 - centrale personregister
-- civilet registreringssystem
-- sous-président
-- sous-président #
+- civilt registreringssystem
+- Cpr
+- Cpr #
 - gesundheitskarte nummer
-- gesundheitsversicheheitkarte nummer
-- carte d’état d’état
+- gesundheitsversicherungkarte nummer
+- carte d’intégrité
 - numéro de carte d’assurance maladie
 - numéro d’assurance maladie
 - numéro d’identification
@@ -5417,14 +5417,14 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - numéro d’ID personnel
 - personnummer
 - personnummer #
-- reisekrankenversichenenskartenummer
+- reisekrankenversicherungskartenummer
 - rejsesygesikringskort
-- ssn
-- ssn #
-- id de l’id de l’équipe
-- kode de kode
-- nummer
-- spamtenummer
+- Ssn
+- Ssn #
+- skat id
+- skat kode
+- skat nummer
+- skattenummer
 - numéro de sécurité sociale
 - sundhedsforsikringskort
 - sundhedsforsikringsnummer
@@ -5435,25 +5435,25 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - code fiscal
 - carte d’assurance maladie de voyage
 - uniqueidentityno #
-- numéro de taxe
-- numéro d’enregistrement des taxes
+- numéro d’impôt
+- numéro d’enregistrement fiscal
 - id fiscal
 - numéro d’identification fiscale
-- tld #
-- numéro de taxe #
-- pas de taxe
+- taxid #
+- taxnumber #
+- tax no
 - taxno #
-- numéro de taxe
-- pas d’identification fiscale
-- tin #
-- todno #
-- Erdnumber #
-- pas de taxe #
-- tin id
+- taxnumber
+- identification fiscale non
+- Étain #
+- taxidno #
+- taxidnumber #
+- tax no #
+- iD d’tin
 - tin no
 - cpr.nr
-- letnr
-- butnummer
+- cpnr
+- cprnummer
 - personnr
 - personregister
 - sygesikringsbevis
@@ -5468,16 +5468,16 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 ## <a name="denmark-physical-addresses"></a>Adresses physiques du Danemark
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique du Danemark. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique du Danemark. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="diseases"></a>Maladie
+## <a name="diseases"></a>Maladies
 
-Cette entité nommée dissociée détecte le texte qui correspond à des noms de famille, tels que *le texte.* Il prend uniquement en charge les termes anglais. Il est également inclus dans [toutes les conditions](#all-medical-terms-and-conditions) médicales regroupées nommées SIT d’entité.
+Cette entité nommée non groupée détecte le texte qui correspond aux noms de maladies, tels que *le diabète*. Il prend uniquement en charge les termes anglais. Il est également inclus dans les [conditions générales médicales](#all-medical-terms-and-conditions) regroupées sous le nom d’entité SIT.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -5493,9 +5493,9 @@ deux lettres suivies de sept chiffres
 ### <a name="pattern"></a>Modèle
 
 Le modèle doit inclure tous les éléments suivants :
-- une lettre (ne sensible à la majuscule) de cet ensemble de lettres possibles : abcdefghjklmnprstux, qui est un code de registre
-- une lettre (ne sensible à la cas), qui est la première lettre du nom de famille ou du chiffre « 9 » du registre
-- sept chiffres, dont le dernier est le chiffre de vérification
+- une lettre (non sensible à la casse) de cet ensemble de lettres possibles : A/B/F/G/M/P/R, qui est un code inscrit
+- une lettre (non sensible à la casse), qui est la première lettre du nom ou du chiffre de l’inscrit « 9 »
+- sept chiffres, dont le dernier est le chiffre à cocher
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -5503,12 +5503,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_dea_number trouve un contenu qui correspond au modèle.
-- Un mot clé est `Keyword_dea_number` trouvé
+- Un mot clé à partir de `Keyword_dea_number` est trouvé
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_dea_number trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -5536,10 +5536,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keyword_dea_number"></a>Keyword_dea_number
 
-- dea
-- dea #
-- administration de l’application de la loi sur les anti
-- agence d’application de la loi anti-trafic
+- Dea
+- Dea #
+- administration de l’application des drogues
+- agence de lutte contre les drogues
 
 
 ## <a name="estonia-drivers-license-number"></a>Numéro de permis de conduire estonien
@@ -5552,7 +5552,7 @@ deux lettres suivies de six chiffres
 
 deux lettres et six chiffres :
 
-- les lettres « ET » (ne sont pas sensibles à la majuscule)
+- les lettres « ET » (non sensibles à la casse)
 - six chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -5561,9 +5561,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_estonia_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_estonia_eu_driver's_license_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_estonia_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_estonia_eu_driver's_license_number` est trouvé.
 
 ```xml
       <!-- Estonia Driver's License Number -->
@@ -5580,7 +5580,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -5608,12 +5608,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -5624,14 +5624,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -5641,7 +5641,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -5652,17 +5652,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -5673,8 +5673,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -5688,11 +5688,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -5701,11 +5701,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - dlno
 - numéro dl
 
-#### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver’s_license_number
+#### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver s_license_number
 
 - permis de conduire
 - juhilubade numbrid
-- numéro juhiloa
+- juhiloa number
 - juhiluba
 
 
@@ -5713,7 +5713,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="format"></a>Format
 
-une lettre suivie de sept chiffres sans espace ni délimiteur
+une lettre suivie de sept chiffres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -5725,14 +5725,14 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_estonia_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_estonia_eu_passport_number` est trouvé.
-- L’expression régulière `Regex_eu_passport_date1` trouve la date au format DD.MM.YYYY ou dans laquelle un `Keywords_eu_passport_date` mot clé est trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_estonia_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_estonia_eu_passport_number` est trouvé.
+- L’expression `Regex_eu_passport_date1` régulière recherche la date au format DD.MM.AAAA ou un mot clé `Keywords_eu_passport_date` est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_estonia_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_estonia_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_estonia_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_estonia_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Estonia Passport Number -->
@@ -5762,10 +5762,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -5775,15 +5775,15 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_estonia_eu_passport_number"></a>Keywords_estonia_eu_passport_number
 
-eesti kodaniku pass passi number passinumbrid document number document no dokumendi nr
+eesti kodaniku pass passi number passinumbrid document number no dokumendi nr
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
-## <a name="estonia-personal-identification-code"></a>Code d’identification personnelle estonien
+## <a name="estonia-personal-identification-code"></a>Code d’identification personnelle de l’Estonie
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -5794,15 +5794,15 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-11 chiffres sans espaces et délimiteur
+11 chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
 11 chiffres :
 
-- un chiffre qui correspond à des sexes et des années de naissance (nombre impair d’hommes, même nombre de femme ; 1-2 : 19e s. ; 3-4 : 20e s. ; 5-6 : 21e s.)
-- six chiffres qui correspondent à la date de naissance (AAMMMMDD)
-- trois chiffres qui correspondent à un numéro de série séparant des personnes qui sont né à la même date
+- un chiffre qui correspond au sexe et au siècle de naissance (nombre impair masculin, même nombre féminin ; 1-2 : 19e siècle ; 3-4 : 20e siècle ; 5-6 : 21e siècle)
+- six chiffres qui correspondent à la date de naissance (AAAAMMD)
+- trois chiffres qui correspondent à un numéro de série séparant les personnes nées à la même date
 - un chiffre de vérification
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -5811,12 +5811,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_estonia_eu_national_id_card` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_estonia_eu_national_id_card` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_estonia_eu_national_id_card` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_estonia_eu_national_id_card` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_estonia_eu_national_id_card` recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Estonia Personal Identification Code -->
@@ -5840,7 +5840,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 #### <a name="keywords_estonia_eu_national_id_card"></a>Keywords_estonia_eu_national_id_card
 
 - id-kaart
-- ik
+- Ik
 - isikukood #
 - isikukood
 - maksu id
@@ -5850,30 +5850,30 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro national
 - code personnel
 - numéro d’ID personnel
-- code d’identification personnel
-- numéro d’identification personnel
+- code d’identification personnelle
+- numéro d’identification personnelle
 - personalidnumber #
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
+- Étain #
 
 
 ## <a name="estonia-physical-addresses"></a>Adresses physiques estoniennes
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de l’Estonie. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de l’Estonie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -5896,7 +5896,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_eu_debit_card trouve un contenu qui correspond au modèle.
 - Au moins une des affirmations suivantes est vraie :
     - Un mot clé figurant dans la liste Keyword_eu_debit_card est trouvé.
@@ -5930,7 +5930,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - numéro de carte
 - n° carte
 - numéro de sécurité
-- cc #
+- Cc #
 
 #### <a name="keyword_card_terms_dict"></a>Keyword_card_terms_dict
 
@@ -5940,15 +5940,15 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - american express
 - americanexpress
 - americano espresso
-- amex
+- Amex
 - carte de retrait
 - cartes de retrait
 - atm kaart
 - atmcard
-- atmcards
+- cartes d’atmcard
 - atmkaart
 - atmkaarten
-- bancontact
+- Bancontact
 - carte bancaire
 - bankkaart
 - titulaire de la carte
@@ -5958,8 +5958,8 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - numéros de carte
 - type de carte
 - cardano numerico
-- cardholder
-- cardholders
+- Détenteur
+- Titulaires
 - cardnumber
 - cardnumbers
 - carta bianca
@@ -5984,33 +5984,33 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - ccn
 - carte de vérification
 - cartes de vérification
-- checkcard
-- checkcards
-- sous-tkaart
-- cirrus
-- cirrus-edc-git
+- coche
+- cartes de contrôle
+- chequekaart
+- Cirrus
+- cirrus-edc-maestro
 - controlekaart
 - controlekaarten
 - carte de crédit
 - cartes de crédit
-- carte de crédit
+- Creditcard
 - cartes de crédit
 - debetkaart
 - debetkaarten
 - carte de débit
 - cartes de débit
 - debitcard
-- debitcards
+- cartes de débit
 - debito automatico
 - diners club
-- 2013
-- discover
+- Dinersclub
+- Découvrir
 - discover card
 - discover cards
 - discovercard
 - discovercards
 - débito automático
-- edc
+- Edc
 - eigentümername
 - carte de crédit européenne
 - hoofdkaart
@@ -6018,33 +6018,33 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - in viaggio
 - japanese card bureau
 - japanse kaartdienst
-- jcb
-- kaart
+- Jcb
+- Kaart
 - kaart num
 - kaartaantal
 - kaartaantallen
-- kalououder
-- kalououders
-- 2013
-- kartenber
-- kartenbers
+- kaarthouder
+- kaarthouders
+- Karte
+- karteninhaber
+- karteninhabers
 - kartennr
 - kartennummer
 - kreditkarte
 - kreditkarten-nummer
-- kreditkartenhalber
-- kreditkartendit
+- kreditkarteninhaber
+- kreditkarteninstitut
 - kreditkartennummer
 - kreditkartentyp
-- sous-titre
+- Maestro
 - master card
 - master cards
-- mastercard
-- mastercards
-- mc
+- Mastercard
+- Mastercard
+- Mc
 - mister cash
 - n carta
-- carta
+- Carta
 - no de tarjeta
 - no do cartao
 - no do cartão
@@ -6094,10 +6094,10 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - schede matrici
 - scoprono la scheda
 - scoprono le schede
-- solo
+- Solo
 - supporti di scheda
 - supporto di scheda
-- commutateur
+- Interrupteur
 - tarjeta atm
 - tarjeta credito
 - tarjeta de atm
@@ -6105,17 +6105,17 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - tarjeta de debito
 - tarjeta debito
 - tarjeta no
-- tarjeta jetente
+- tarjetahabiente
 - tipo della scheda
 - ufficio giapponese della
-- scheda
+- Scheda
 - v pay
 - v-pay
-- visa
+- Visa
 - visa plus
 - visa electron
-- visto
-- visum
+- Visto
+- Visum
 - vpay
 
 #### <a name="keyword_card_security_terms_dict"></a>Keyword_card_security_terms_dict
@@ -6138,25 +6138,25 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 
 - codice di sicurezza
 - codice di verifica
-- codigo
+- Codigo
 - codigo de seguranca
 - codigo de segurança
 - crittogramma
-- cryptogram
+- Cryptogramme
 - cryptogramme
 - cv2
 - cvc
-- cvc2
+- Cvc2
 - cvn
-- cvv
-- cvv2
+- Cvv
+- Cvv2
 - cód seguranca
 - cód segurança
 - cód. seguranca
 
 - cód. Segurança
 
-- código
+- Código
 - código de seguranca
 - código de segurança
 - de kaart controle
@@ -6175,7 +6175,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - numero de verificacao
 - numero dell’edizione
 - numero di identificazione della
-- scheda
+- Scheda
 - numero di sicurezza
 - numero van veiligheid
 - numéro de sécurité
@@ -6193,9 +6193,9 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - sicherheitsnummer
 - speldblok
 - veiligheid nr
-- igheidsaantal
-- igheidscode
-- igheidsnummer
+- veiligheidsaantal
+- veiligheidscode
+- veiligheidsnummer
 - verfalldatum
 
 #### <a name="keyword_card_expiration_terms_dict"></a>Keyword_card_expiration_terms_dict
@@ -6213,14 +6213,14 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - datum afloop
 - datum van exp
 - de afloop
-- espira
-- espira
+- Espira
+- Espira
 - date d’exp
 - exp datum
 - expiration
-- expirer
-- expire
-- expiry
+- Expirer
+- Expire
+- Expiration
 - fecha de expiracion
 - fecha de venc
 - gultig bis
@@ -6232,7 +6232,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - valable
 - validade
 - valido hasta
-- valor
+- Valor
 - venc
 - vencimento
 - vencimiento
@@ -6245,7 +6245,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 
 ## <a name="eu-drivers-license-number"></a>Numéro de permis de conduire de l’UE
 
-Ces entités sont dans le numéro de permis de conduire de l’UE et sont des types d’informations sensibles.
+Ces entités se trouvent dans le numéro de permis de conduire de l’UE et sont des types d’informations sensibles.
 
 - [Autriche](#austria-drivers-license-number)
 - [Belgique](#belgium-drivers-license-number)
@@ -6264,7 +6264,7 @@ Ces entités sont dans le numéro de permis de conduire de l’UE et sont des ty
 - [Italie](#italy-drivers-license-number)
 - [Lettonie](#latvia-drivers-license-number)
 - [Lituanie](#lithuania-drivers-license-number)
-- [Qu’est-ce que c’est ?](#luxemburg-drivers-license-number)
+- [Luxembourg](#luxemburg-drivers-license-number)
 - [Malte](#malta-drivers-license-number)
 - [Pays-Bas](#netherlands-drivers-license-number)
 - [Pologne](#poland-drivers-license-number)
@@ -6274,12 +6274,12 @@ Ces entités sont dans le numéro de permis de conduire de l’UE et sont des ty
 - [Slovénie](#slovenia-drivers-license-number)
 - [Espagne](#spain-drivers-license-number)
 - [Suède](#sweden-drivers-license-number)
-- [Royaume-Uni](#uk-drivers-license-number)
+- [ROYAUME-UNI.](#uk-drivers-license-number)
 
 
-## <a name="eu-national-identification-number"></a>Numéro d’identification national de l’UE
+## <a name="eu-national-identification-number"></a>Numéro d’identification nationale de l’UE
 
-Ces entités sont dans le numéro d’identification national de l’UE et sont des types d’informations sensibles.
+Ces entités se trouvent dans le numéro d’identification national de l’UE et sont des types d’informations sensibles.
 
 - [Autriche](#austria-identity-card)
 - [Belgique](#belgium-national-number)
@@ -6298,7 +6298,7 @@ Ces entités sont dans le numéro d’identification national de l’UE et sont 
 - [Italie](#italy-fiscal-code)
 - [Lettonie](#latvia-personal-code)
 - [Lituanie](#lithuania-personal-code)
-- [Qu’est-ce que c’est ?](#luxemburg-national-identification-number-natural-persons)
+- [Luxembourg](#luxemburg-national-identification-number-natural-persons)
 - [Malte](#malta-identity-card-number)
 - [Pays-Bas](#netherlands-citizens-service-bsn-number)
 - [Pologne](#poland-national-id-pesel)
@@ -6307,12 +6307,12 @@ Ces entités sont dans le numéro d’identification national de l’UE et sont 
 - [République de Slovaquie](#slovakia-personal-number)
 - [Slovénie](#slovenia-unique-master-citizen-number)
 - [Espagne](#spain-dni)
-- [Royaume-Uni](#uk-national-insurance-number-nino)
+- [ROYAUME-UNI.](#uk-national-insurance-number-nino)
 
 
 ## <a name="eu-passport-number"></a>Numéro de passeport de l’UE
 
-Ces entités sont dans le numéro de passeport de l’UE et sont des types d’informations sensibles. Ces entités sont dans le lot de numéro de passeport de l’UE.
+Ces entités se trouvent dans le numéro de passeport de l’UE et sont des types d’informations sensibles. Ces entités se trouvent dans l’offre groupée de numéros de passeport de l’UE.
 
 - [Autriche](#austria-passport-number)
 - [Belgique](#belgium-passport-number)
@@ -6331,7 +6331,7 @@ Ces entités sont dans le numéro de passeport de l’UE et sont des types d’i
 - [Italie](#italy-passport-number)
 - [Lettonie](#latvia-passport-number)
 - [Lituanie](#lithuania-passport-number)
-- [Qu’est-ce que c’est ?](#luxemburg-passport-number)
+- [Luxembourg](#luxemburg-passport-number)
 - [Malte](#malta-passport-number)
 - [Pays-Bas](#netherlands-passport-number)
 - [Pologne](#poland-passport-number)
@@ -6341,12 +6341,12 @@ Ces entités sont dans le numéro de passeport de l’UE et sont des types d’i
 - [Slovénie](#slovenia-passport-number)
 - [Espagne](#spain-passport-number)
 - [Suède](#sweden-passport-number)
-- [Numéro de passeport des États-Unis/du Royaume-Uni](#usuk-passport-number)
+- [Numéro de passeport des États-Unis/Du Royaume-Uni](#usuk-passport-number)
 
 
 ## <a name="eu-social-security-number-or-equivalent-identification"></a>Numéro de sécurité sociale de l’UE ou identification équivalente
 
-Ce sont les entités qui sont dans le numéro de sécurité sociale de l’UE ou une identification équivalente et qui sont des types d’informations sensibles.
+Il s’agit des entités figurant dans le numéro de sécurité sociale de l’UE ou d’une identification équivalente et qui sont des types d’informations sensibles.
 
 - [Autriche](#austria-social-security-number)
 - [Belgique](#belgium-national-number)
@@ -6365,7 +6365,7 @@ Ce sont les entités qui sont dans le numéro de sécurité sociale de l’UE ou
 
 ## <a name="eu-tax-identification-number"></a>Numéro d’identification fiscale de l’UE
 
-Ces entités sont du type d’informations sensibles numéro d’identification fiscale de l’UE.
+Ces entités se trouvent dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
 
 - [Autriche](#austria-tax-identification-number)
 - [Belgique](#belgium-national-number)
@@ -6384,7 +6384,7 @@ Ces entités sont du type d’informations sensibles numéro d’identification 
 - [Italie](#italy-fiscal-code)
 - [Lettonie](#latvia-personal-code)
 - [Lituanie](#lithuania-personal-code)
-- [Qu’est-ce que c’est ?](#luxemburg-national-identification-number-non-natural-persons)
+- [Luxembourg](#luxemburg-national-identification-number-non-natural-persons)
 - [Malte](#malta-tax-identification-number)
 - [Pays-Bas](#netherlands-tax-identification-number)
 - [Pologne](#poland-tax-identification-number)
@@ -6394,10 +6394,10 @@ Ces entités sont du type d’informations sensibles numéro d’identification 
 - [Slovénie](#slovenia-tax-identification-number)
 - [Espagne](#spain-tax-identification-number)
 - [Suède](#sweden-tax-identification-number)
-- [Royaume-Uni](#uk-unique-taxpayer-reference-number)
+- [ROYAUME-UNI.](#uk-unique-taxpayer-reference-number)
 
 
-## <a name="finland-drivers-license-number"></a>Numéro de permis de conduire finlande
+## <a name="finland-drivers-license-number"></a>Numéro de permis de conduire en Finlande
 
 ### <a name="format"></a>Format
 
@@ -6418,9 +6418,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_finland_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_finland_eu_driver's_license_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_finland_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_finland_eu_driver's_license_number` est trouvé.
 
 ```xml
       <!-- Finland Driver's License Number -->
@@ -6437,7 +6437,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -6465,12 +6465,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -6481,14 +6481,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -6498,7 +6498,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -6509,17 +6509,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -6530,8 +6530,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -6545,11 +6545,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -6559,20 +6559,20 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro dl
 
 
-#### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver’s_license_number
+#### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver s_license_number
 
 - ajokortti
 - permis de conduire
-- numero ajokortin
+- ajokortin nombreux
 - kuljettaja lic.
 - körkort
 - körkortnummer
 - förare lic.
 - ajokortit
-- numerot ajokortin
+- ajokortin numerot
 
 
-## <a name="finland-european-health-insurance-number"></a>Numéro d’assurance santé européen (Finlande)
+## <a name="finland-european-health-insurance-number"></a>Numéro d’assurance maladie européen en Finlande
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -6583,14 +6583,14 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-Numéro à 20 chiffres
+Nombre à 20 chiffres
 
 ### <a name="pattern"></a>Modèle
 
 Nombre à 20 chiffres :
 
 - 10 chiffres - 8024680246
-- espace ou trait d’union facultatif
+- un espace ou un trait d’union facultatif
 - 10 chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -6599,8 +6599,8 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’Regex_Finland_European_Health_Insurance_Number recherche le contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- Le Regex_Finland_European_Health_Insurance_Number regex recherche le contenu qui correspond au modèle.
 - Un mot clé de Keyword_Finland_European_Health_Insurance_Number est trouvé.
 
 ```xml
@@ -6616,36 +6616,36 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keyword_finland_european_health_insurance_number"></a>Keyword_finland_european_health_insurance_number
 
-- ehic #
-- ehic
+- Ceam #
+- Ceam
 - finlandehicnumber #
 - finska sjukförsäkringskort
-- carte d’état d’état
+- carte d’intégrité
 - carte d’assurance maladie
 - numéro d’assurance maladie
 - hälsokort
-- sairaanhoitkomrtin
+- sairaanhoitokortin
 - sairausvakuutuskortti
 - sairausvakuutusnumero
 - sjukförsäkring nummer
 - sjukförsäkringskort
 - suomen sairausvakuutuskortti
-- terilliskortti
+- terveyskortti
 
 
-## <a name="finland-national-id"></a>ID national (Finlande)
+## <a name="finland-national-id"></a>ID national de la Finlande
 
 ### <a name="format"></a>Format
 
-six chiffres plus un caractère indiquant un xème plus trois chiffres plus un chiffre de contrôle
+six chiffres plus un caractère indiquant un siècle plus trois chiffres plus un chiffre à cocher
 
 ### <a name="pattern"></a>Modèle
 
 Le modèle doit inclure tous les éléments suivants :
 - six chiffres au format DDMMYY, qui sont une date de naissance
-- marqueur de century ('-', '+' ou 'a')
-- numéro d’identification personnel à trois chiffres
-- un chiffre ou une lettre (ne sensible à la cas) qui est un chiffre de contrôle
+- marqueur de siècle ('-', '+' ou 'a')
+- Numéro d’identification personnelle à trois chiffres
+- un chiffre ou une lettre (non sensible à la casse) qui est un chiffre à cocher
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -6653,14 +6653,14 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- la fonction Func_finnish_national_id trouve un contenu qui correspond au modèle
-- un mot clé de Keyword_finnish_national_id trouvé
-- la passe de la passe de contrôle
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- la fonction Func_finnish_national_id recherche du contenu qui correspond au modèle
+- un mot clé de Keyword_finnish_national_id est trouvé
+- la somme de contrôle réussit
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- la fonction Func_finnish_national_id trouve un contenu qui correspond au modèle
-- la passe de la passe de contrôle
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- la fonction Func_finnish_national_id recherche du contenu qui correspond au modèle
+- la somme de contrôle réussit
 
 ```xml
       <!-- Finnish National ID-->
@@ -6677,7 +6677,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-- repairutlaatuinen henkilökohtainen tunnus
+- ainutlaatuinen henkilökohtainen tunnus
 - henkilökohtainen tunnus
 - henkilötunnus
 - henkilötunnusnumero #
@@ -6693,7 +6693,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - kansallisen henkilökortin
 - carte d’identité nationale
 - national id no.
-- id personnel
+- ID personnel
 - code d’identité personnelle
 - personalidnumber #
 - personbeteckning
@@ -6701,32 +6701,32 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro de sécurité sociale
 - sosiaaliturvatunnus
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
-- tunnumero
+- Étain #
+- tunnistenumero
 - tunnus numero
-- tunnusloku
+- tunnusluku
 - tunnusnumero
-- verkomrtti
+- verokortti
 - veronumero
-- verotuntuntun
+- verotunniste
 - verotunnus
 
 
-## <a name="finland-passport-number"></a>Numéro de passeport finlande
+## <a name="finland-passport-number"></a>Numéro de passeport en Finlande
 
 Cette entité est disponible dans le type d’informations sensibles Numéro de passeport de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
 
@@ -6735,7 +6735,7 @@ combinaison de neuf lettres et chiffres
 
 ### <a name="pattern"></a>Modèle
 combinaison de neuf lettres et chiffres :
-- deux lettres (ne sont pas sensibles à la majuscule)
+- deux lettres (non sensibles à la casse)
 - sept chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -6744,14 +6744,14 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière `Regex_finland_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de `Keywords_eu_passport_number` ou `Keyword_finland_passport_number` est trouvé.
-- L’expression régulière `Regex_eu_passport_date1` trouve la date au format DD.MM.YYYY ou dans laquelle un `Keywords_eu_passport_date` mot clé est trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression `Regex_finland_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou `Keywords_eu_passport_number` `Keyword_finland_passport_number` est trouvé.
+- L’expression `Regex_eu_passport_date1` régulière recherche la date au format DD.MM.AAAA ou un mot clé `Keywords_eu_passport_date` est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière `Regex_finland_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de `Keywords_eu_passport_number` ou `Keyword_finland_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression `Regex_finland_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou `Keywords_eu_passport_number` `Keyword_finland_passport_number` est trouvé.
 
 ```xml
       <!-- Finland Passport Number -->
@@ -6780,10 +6780,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -6793,32 +6793,32 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keyword_finland_passport_number"></a>Keyword_finland_passport_number
 
-- suomaomaomaen passi
+- suomalainen passi
 - passin numero
-- passin numero. #
+- passin nombreux. #
 - passin numero #
-- passin numero.
-- passi #
-- numéro passi
+- passin nombreux.
+- Passi #
+- passi number
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
-## <a name="finland-physical-addresses"></a>Adresses physiques en Finlande
+## <a name="finland-physical-addresses"></a>Adresses physiques finlandaises
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en Finlande. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Finlande. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="france-drivers-license-number"></a>Numéro de permis de conduire français
+## <a name="france-drivers-license-number"></a>Numéro de permis de conduire en France
 
-Cette entité est disponible dans le type d’informations sensibles Numéro de permis de conduire de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
+Cette entité est disponible dans le type d’informations sensibles numéro de permis de conduire de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
 
@@ -6834,9 +6834,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- la fonction Func_french_drivers_license trouve un contenu qui correspond au modèle.
-- un mot clé de Keyword_french_drivers_license est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- la fonction Func_français_drivers_license recherche du contenu qui correspond au modèle.
+- Un mot clé keyword_français_drivers_license est trouvé.
 
 ```xml
     <!-- France Driver's License Number -->
@@ -6850,7 +6850,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keyword_french_drivers_license"></a>Keyword_french_drivers_license
+#### <a name="keyword_french_drivers_license"></a>Keyword_français_drivers_license
 
 - driverlic
 - driverlics
@@ -6878,12 +6878,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -6894,14 +6894,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -6911,7 +6911,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -6922,17 +6922,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -6943,8 +6943,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -6958,11 +6958,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -6978,7 +6978,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéros de licence
 
 
-## <a name="france-health-insurance-number"></a>Numéro d’assurance maladie français
+## <a name="france-health-insurance-number"></a>Numéro d’assurance maladie en France
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -6989,16 +6989,16 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-Numéro à 21 chiffres
+Nombre à 21 chiffres
 
 ### <a name="pattern"></a>Modèle
 
 Nombre à 21 chiffres :
 
 - 10 chiffres
-- espace facultatif
+- un espace facultatif
 - 10 chiffres
-- espace facultatif
+- un espace facultatif
 - un chiffre
 
 
@@ -7008,8 +7008,8 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- l’Regex_France_Health_Insurance_Number regex trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- le regex Regex_France_Health_Insurance_Number recherche le contenu qui correspond au modèle.
 - un mot clé de Keyword_France_Health_Insurance_Number est trouvé.
 
 ```xml
@@ -7030,7 +7030,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - carte d’assuré social
 
 
-## <a name="france-national-id-card-cni"></a>Carte d’identité nationale (CNI) france
+## <a name="france-national-id-card-cni"></a>Carte d’identité nationale de France (CNI)
 
 ### <a name="format"></a>Format
 
@@ -7046,7 +7046,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_france_cni trouve un contenu qui correspond au modèle.
 - Un mot clé de Keywords_france_eu_national_id_card est trouvé.
 
@@ -7067,8 +7067,8 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - numéro de carte
 - carte nationale d’identité
 - carte nationale d’idenite no
-- cni #
-- cni
+- Cni #
+- Cni
 - compte bancaire
 - numéro d’identification nationale
 - identité nationale
@@ -7077,7 +7077,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - numéro de carte vitale
 
 
-## <a name="france-passport-number"></a>Numéro de passeport français
+## <a name="france-passport-number"></a>Numéro de passeport en France
 
 Cette entité est disponible dans le type d’informations sensibles Numéro de passeport de l’UE. Il est également disponible en tant qu’entité de type d’informations sensibles autonome.
 
@@ -7089,7 +7089,7 @@ neuf chiffres et lettres
 
 neuf chiffres et lettres :
 - deux chiffres
-- deux lettres (ne sont pas sensibles à la majuscule)
+- deux lettres (non sensibles à la casse)
 - cinq chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -7098,14 +7098,14 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction `Func_fr_passport` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de `Keywords_eu_passport_number` ou `Keywords_france_eu_passport_number` est trouvé.
-- L’expression régulière `Regex_eu_passport_date3` trouve la date au format MM AAA OU un mot clé à partir de `Keywords_eu_passport_date` laquelle est trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction `Func_fr_passport` recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou `Keywords_eu_passport_number` `Keywords_france_eu_passport_number` est trouvé.
+- L’expression `Regex_eu_passport_date3` régulière recherche la date au format DD MM AAAA ou un mot clé `Keywords_eu_passport_date` est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction `Func_fr_passport` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de `Keywords_eu_passport_number` ou `Keywords_france_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction `Func_fr_passport` recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou `Keywords_eu_passport_number` `Keywords_france_eu_passport_number` est trouvé.
 
 
 ```xml
@@ -7136,10 +7136,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -7158,7 +7158,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - passeportn °
 - passeport français
 - passeport livre
-- passeport carte
+- carte passeport
 - numéro passeport
 - passeport n°
 - n° du passeport
@@ -7166,20 +7166,20 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
 ## <a name="france-physical-addresses"></a>Adresses physiques en France
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de La France. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la France. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="france-social-security-number-insee"></a>Numéro de sécurité sociale français (INSEE)
+## <a name="france-social-security-number-insee"></a>Numéro de sécurité sociale en France (INSEE)
 
 ### <a name="format"></a>Format
 
@@ -7198,13 +7198,13 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction `Func_french_insee` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction `Func_french_insee` recherche le contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_fr_insee est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_french_insee ou Func_fr_insee trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_français_insee ou Func_fr_insee recherche du contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
 ```xml
@@ -7229,7 +7229,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 - code sécu
 - d’identité nationale
-- insee
+- Insee
 - fssn #
 - le numéro d’identification nationale
 - le code de la sécurité sociale
@@ -7246,8 +7246,8 @@ n° d’identité
 - n° d’identité
 - 
 n° d’identité
-- ssn
-- ssn #
+- Ssn
+- Ssn #
 - sécurité sociale
 - securité sociale
 - securite sociale
@@ -7257,7 +7257,7 @@ n° d’identité
 - numéro d’assurance sociale
 
 
-## <a name="france-tax-identification-number"></a>Numéro d’identification fiscale français
+## <a name="france-tax-identification-number"></a>Numéro d’identification fiscale en France
 
 ### <a name="format"></a>Format
 
@@ -7285,12 +7285,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_france_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_france_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_france_eu_tax_file_number` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_france_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_france_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- France Tax Identification Number (numéro SPI.) -->
@@ -7316,24 +7316,24 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 - numéro d’identification fiscale
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
+- Étain #
 
 
-## <a name="france-value-added-tax-number"></a>Numéro de taxe sur la valeur ajoutée pour la France
+## <a name="france-value-added-tax-number"></a>Numéro de taxe sur la valeur ajoutée en France
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -7350,14 +7350,14 @@ Modèle alphanumérique de 13 caractères
 
 Modèle alphanumérique de 13 caractères :
 
-- deux lettres - FR (ne sensible à la cas)
-- espace ou trait d’union facultatif
+- deux lettres - FR (ne respectant pas la casse)
+- un espace ou un trait d’union facultatif
 - deux lettres ou chiffres
-- espace, point, tiret ou virgule facultatif
+- un espace, un point, un trait d’union ou une virgule facultatif
 - trois chiffres
-- espace, point, tiret ou virgule facultatif
+- un espace, un point, un trait d’union ou une virgule facultatif
 - trois chiffres
-- espace, point, tiret ou virgule facultatif
+- un espace, un point, un trait d’union ou une virgule facultatif
 - trois chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -7366,12 +7366,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_france_value_added_tax_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_france_value_added_tax_number recherche le contenu qui correspond au modèle.
 - Un mot clé de Keywords_france_value_added_tax_number est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_france_value_added_tax_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_france_value_added_tax_number recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- France Value Added Tax Number -->
@@ -7391,28 +7391,28 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 - numéro de tva
 - vat no
-- vat #
+- Tva #
 - taxe sur la valeur ajoutée
 - siren identification no numéro d’identification taxe sur valeur ajoutée
-- valeur de taxe ajoutée
+- taxe valeur ajoutée
 - taxe sur la valeur ajoutée
 - n° tva
 - numéro de tva
 - numéro d’identification siren
 
 
-## <a name="generic-medication-names"></a>Noms génériques génériques
+## <a name="generic-medication-names"></a>Noms de médicaments génériques
 
-Cette entité nommée dissociée détecte les noms des génériques, tels que *l’acétaminophen*. Il prend uniquement en charge les termes anglais. Il est également inclus dans [toutes les conditions](#all-medical-terms-and-conditions) médicales regroupées nommées SIT d’entité.
+Cette entité nommée non regroupée détecte les noms des médicaments génériques, tels que *l’acétaminophène*. Il prend uniquement en charge les termes anglais. Il est également inclus dans les [conditions générales médicales](#all-medical-terms-and-conditions) regroupées sous le nom d’entité SIT.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Élevé
 
 
-## <a name="germany-drivers-license-number"></a>Numéro de permis de conduire allemand
+## <a name="germany-drivers-license-number"></a>Numéro de permis de conduire en Allemagne
 
-Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles Numéro de permis de conduire de l’UE. Il est également disponible en tant qu’entité de type d’informations sensibles autonome.
+Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles numéro de permis de conduire de l’UE. Il est également disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
 
@@ -7420,7 +7420,7 @@ combinaison de 11 chiffres et lettres
 
 ### <a name="pattern"></a>Modèle
 
-11 chiffres et lettres (ne sensibles pas à la majuscule) :
+11 chiffres et lettres (non sensibles à la casse) :
 - un chiffre ou une lettre
 - deux chiffres
 - six chiffres ou lettres
@@ -7433,7 +7433,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_german_drivers_license trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_german_drivers_license_number est trouvé.
 - La somme de contrôle est correcte.
@@ -7508,12 +7508,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -7524,14 +7524,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -7541,7 +7541,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -7552,17 +7552,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -7573,8 +7573,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -7588,11 +7588,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -7600,19 +7600,19 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - dlno
 
 
-## <a name="germany-identity-card-number"></a>Numéro de carte d’identité Allemagne
+## <a name="germany-identity-card-number"></a>Numéro de carte d’identité en Allemagne
 
 ### <a name="format"></a>Format
 
-depuis le 1er novembre 2010 : neuf à dix lettres et chiffres
+depuis le 1er novembre 2010 : Neuf à onze lettres et chiffres
 
 du 1er avril 1987 au 31 octobre 2010 : 10 chiffres
 
 ### <a name="pattern"></a>Modèle
 
 depuis le 1er novembre 2010 : modèle alphanumérique de 9 à 11 caractères
-- one L, M, N, P, R, T, V, W, X, Y (ne sensible à la cas)
-- huit chiffres ou lettres en C, F, G, H, J, K, L, M, N, P, R, T, V, W, X, Y et Z (sans la case)
+- one L, M, N, P, R, T, V, W, X, Y (ne respectant pas la casse)
+- huit chiffres ou lettres en C, F, G, H, J, K, L, M, N, P, R, T, V, W, X, Y et Z (ne respectant pas la casse)
 - chiffre de vérification facultatif
 - D/D facultatif
 
@@ -7625,17 +7625,17 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction `Func_german_id_card_with_check` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction `Func_german_id_card_with_check` recherche le contenu qui correspond au modèle.
 - Un mot clé est `Keyword_germany_id_card` trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression `Regex_germany_id_card` régulière trouve un contenu qui correspond au modèle (9 caractères sans chiffre de vérification émis avant 2010 ou modèle de 10 chiffres émis posy 2010).
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression `Regex_germany_id_card` régulière recherche du contenu qui correspond au modèle (9 caractères sans chiffre à cocher émis avant 2010 ou 10 chiffres avec le modèle posy 2010).
 - Un mot clé figurant dans la liste Keyword_germany_id_card est trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction `Func_german_id_card_with_check` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction `Func_german_id_card_with_check` recherche le contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
 
@@ -7664,20 +7664,20 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 - ausweis
 - gpid
-- identification
+- Identification
 - identifikation
 - identifizierungsnummer
 - Carte d’identité
 - numéro d’identité
 - id-nummer
-- id personnel
+- ID personnel
 - personalausweis
 - persönliche id nummer
 - persönliche identifikationsnummer
 - persönliche-id-nummer
 
 
-## <a name="germany-passport-number"></a>Numéro de passeport allemand
+## <a name="germany-passport-number"></a>Numéro de passeport en Allemagne
 
 ### <a name="format"></a>Format
 
@@ -7685,8 +7685,8 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 ### <a name="pattern"></a>Modèle
 
-- une lettre en C, F, G, H, J, K (ne sensible à la cas)
-- huit chiffres ou lettres en C, F, G, H, J, K, L, M, N, P, R, T, V, W, X, Y et Z (sans la case)
+- une lettre en C, F, G, H, J, K (ne respectant pas la casse)
+- huit chiffres ou lettres en C, F, G, H, J, K, L, M, N, P, R, T, V, W, X, Y et Z (ne respectant pas la casse)
 - chiffre de vérification facultatif
 - D/D facultatif
 
@@ -7696,17 +7696,17 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction `Func_german_passport_checksum` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de `Keyword_german_passport` ou `Keywords_eu_passport_number_common` est trouvé.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction `Func_german_passport_checksum` recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou `Keyword_german_passport` `Keywords_eu_passport_number_common` est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction `Func_german_passport` trouve un contenu qui correspond au modèle de neuf caractères (sans chiffre de vérification et d/D facultatif).
-- Mot clé à partir de `Keyword_german_passport` ou `Keywords_eu_passport_number_common` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction `Func_german_passport` recherche le contenu qui correspond au modèle de neuf caractères (sans chiffre de vérification et d/D facultatif).
+- Un mot clé à partir ou `Keyword_german_passport` `Keywords_eu_passport_number_common` est trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction `Func_german_passport_checksum` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction `Func_german_passport_checksum` recherche le contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
 ```xml
@@ -7745,15 +7745,15 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - Reisepass-Nr
 - Passnummer
 - reisepässe
-- passeport no.
+- passeport non.
 - passeport no
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -7762,20 +7762,20 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - numéros de passeport
 
 
-## <a name="germany-physical-addresses"></a>Adresses physiques en Allemagne
+## <a name="germany-physical-addresses"></a>Adresses physiques allemandes
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en provenance d’Allemagne. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance d’Allemagne. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="germany-tax-identification-number"></a>Numéro d’identification fiscale allemand
+## <a name="germany-tax-identification-number"></a>Numéro d’identification fiscale en Allemagne
 
 ### <a name="format"></a>Format
 
-11 chiffres sans espaces et délimiteur
+11 chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -7796,12 +7796,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_germany_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_germany_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_germany_eu_tax_file_number` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_germany_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_germany_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Germany Tax Identification Number -->
@@ -7825,27 +7825,27 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - steueridentifikationsnummer
 - steuernummer
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
-- l’équipe de l’équipe #
-- l’équipe de l’équipe
-- butnnummer
+- Étain #
+- Zinn #
+- Zinn
+- zinnnummer
 
 
-## <a name="germany-value-added-tax-number"></a>Numéro de taxe sur la valeur ajoutée en Allemagne
+## <a name="germany-value-added-tax-number"></a>Numéro d’impôt sur la valeur ajoutée en Allemagne
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -7856,19 +7856,19 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-Modèle alphanumérique de 11 caractères
+Modèle alphanumérique à 11 caractères
 
 ### <a name="pattern"></a>Modèle
 
-Modèle alphanumérique de 11 caractères :
+Modèle alphanumérique à 11 caractères :
 
 - une lettre D ou d
 - une lettre E ou e
-- espace facultatif
+- un espace facultatif
 - trois chiffres
-- espace ou virgule facultatif
+- un espace facultatif ou une virgule
 - trois chiffres
-- espace ou virgule facultatif
+- un espace facultatif ou une virgule
 - trois chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -7877,12 +7877,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_germany_value_added_tax_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_germany_value_added_tax_number recherche le contenu qui correspond au modèle.
 - Un mot clé de Keywords_germany_value_added_tax_number est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_germany_value_added_tax_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_germany_value_added_tax_number recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Germany Value Added Tax Number -->
@@ -7902,20 +7902,20 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 - numéro de tva
 - vat no
-- vat #
+- Tva #
 - vat# mehrwertsteuer
 - mwst
 - mehrwertsteuer identifikationsnummer
 - mehrwertsteuer nummer
 
 
-## <a name="greece-drivers-license-number"></a>Numéro de permis de conduire grec
+## <a name="greece-drivers-license-number"></a>Numéro de permis de conduire en Grèce
 
-Cette entité est incluse dans le type d’informations sensibles Numéro de permis de conduire de l’UE. Il est également disponible en tant qu’entité de type d’informations sensibles autonome.
+Cette entité est incluse dans le type d’informations sensibles numéro de permis de conduire de l’UE. Il est également disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
 
-neuf chiffres sans espaces et délimiteur
+neuf chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -7927,9 +7927,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_greece_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_greece_eu_driver's_license_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_greece_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_greece_eu_driver's_license_number` est trouvé.
 
 ```xml
       <!-- Greece Driver's License Number -->
@@ -7946,7 +7946,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -7974,12 +7974,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -7990,14 +7990,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -8007,7 +8007,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -8018,17 +8018,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -8039,8 +8039,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -8054,11 +8054,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -8068,7 +8068,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro dl
 
 
-#### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver’s_license_number
+#### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver s_license_number
 
 - δεια οδήγησης
 - Adeia odigisis
@@ -8076,7 +8076,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - Δίπλωμα οδήγησης
 
 
-## <a name="greece-national-id-card"></a>Carte d’identité nationale grèce
+## <a name="greece-national-id-card"></a>Carte d’identité nationale grecque
 
 ### <a name="format"></a>Format
 
@@ -8100,11 +8100,11 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_greece_id_card trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_greece_id_card est trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_greece_id_card trouve un contenu qui correspond au modèle.
 
 ```xml
@@ -8124,21 +8124,21 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 #### <a name="keyword_greece_id_card"></a>Keyword_greece_id_card
 
-- id grec
-- ID national grec
-- carte d’identité personnelle grec
+- ID grec
+- greek national id
+- carte d’ID personnelle grecque
 - ID de police grec
 - Carte d’identité
-- tautotita
+- Tautotita
 - ταυτότητα
 - ταυτότητας
 
 
-## <a name="greece-passport-number"></a>Numéro de passeport grec
+## <a name="greece-passport-number"></a>Numéro de passeport en Grèce
 
 ### <a name="format"></a>Format
 
-Deux lettres suivies de sept chiffres sans espace ni délimiteur
+Deux lettres suivies de sept chiffres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -8150,14 +8150,14 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_greece_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_greece_eu_passport_number` est trouvé.
-- L’expression `Regex_greece_eu_passport_date` régulière trouve la date au format DD MMM AA (exemple - 28 août 19) ou un mot clé à partir de `Keywords_greece_eu_passport_date` laquelle est trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_greece_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_greece_eu_passport_number` est trouvé.
+- L’expression `Regex_greece_eu_passport_date` régulière trouve la date au format DD MMM YY (exemple - 28 août 19) ou à partir de `Keywords_greece_eu_passport_date` laquelle un mot clé est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_greece_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_greece_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_greece_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_greece_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Greece Passport Number -->
@@ -8187,10 +8187,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -8205,15 +8205,15 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - αριθμός διαβατηριο
 
 
-## <a name="greece-physical-addresses"></a>Adresses physiques de Grèce
+## <a name="greece-physical-addresses"></a>Adresses physiques en Grèce
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Grèce. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Grèce. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
-## <a name="greece-social-security-number-amka"></a>Numéro de sécurité sociale grec (AMKA)
+## <a name="greece-social-security-number-amka"></a>Numéro de sécurité sociale en Grèce (AMKA)
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -8224,13 +8224,13 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-11 chiffres sans espaces et délimiteur
+11 chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
-- Six chiffres comme date de naissance AAMMMMDD
+- Six chiffres comme date de naissance YYMMDD
 - Quatre chiffres
-- un chiffre de vérification
+- un chiffre à cocher
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -8238,12 +8238,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_greece_eu_ssn` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_greece_eu_ssn` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_greece_eu_ssn_or_equivalent` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_greece_eu_ssn` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_greece_eu_ssn` recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Greece Social Security Number (AMKA) -->
@@ -8262,17 +8262,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_greece_eu_ssn_or_equivalent"></a>Keywords_greece_eu_ssn_or_equivalent
 
-- ssn
-- ssn #
-- non de sécurité sociale
+- Ssn
+- Ssn #
+- sécurité sociale non
 - socialsecurityno #
 - numéro de sécurité sociale
-- amka
+- Amka
 - a.m.k.a.
 - Αριθμού Μητρώου Κοινωνικής Ασφάλισης
 
 
-## <a name="greece-tax-identification-number"></a>Numéro d’identification fiscale grec
+## <a name="greece-tax-identification-number"></a>Numéro d’identification fiscale en Grèce
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -8283,7 +8283,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-Neuf chiffres sans espaces et délimiteur
+Neuf chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -8295,9 +8295,9 @@ Non applicable
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 
-- L’expression régulière  `Regex_greece_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+- L’expression  `Regex_greece_eu_tax_file_number` régulière recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_greece_eu_tax_file_number` trouvé.
 
 ```xml
@@ -8314,35 +8314,35 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_greece_eu_tax_file_number"></a>Keywords_greece_eu_tax_file_number
 
-- afm #
-- afm
-- aφμ|aφμ αριΘμός
+- Afm #
+- Afm
+- aφμ|aφμ αός
 - aφμ
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- non au Registre fiscal
-- numéro de Registre fiscal
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- registre fiscal non
+- numéro de registre fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
+- taxnumber #
+- taxnumber
 - taxregistryno #
-- tin id
+- iD d’tin
 - tin no
-- tin #
+- Étain #
 - αριθμός φορολογικού μητρώου
 - τον αριθμό φορολογικού μητρώου
 - φορολογικού μητρώου νο
 
 
-## <a name="hong-kong-identity-card-hkid-number"></a>Numéro de carte d’identité Hong Kong (HKID)
+## <a name="hong-kong-identity-card-hkid-number"></a>Numéro de carte d’identité de Hong Kong (HKID)
 
 ### <a name="format"></a>Format
 
@@ -8351,9 +8351,10 @@ Combinaison de 8 ou 9 lettres et chiffres plus éventuellement des parenthèses 
 ### <a name="pattern"></a>Modèle
 
 Combinaison de 8 ou 9 lettres :
-- 1 à 2 lettres (ne sensibles pas à la majuscule)
+- 1-2 lettres (non sensibles à la casse)
 - Six chiffres
-- Le dernier caractère (un chiffre ou la lettre A), qui est le chiffre de contrôle et est éventuellement entre parenthèses.
+- espace facultatif
+- un caractère de vérification (n’importe quel chiffre ou la lettre A) qui est éventuellement entre parenthèses
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -8361,12 +8362,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_hong_kong_id_card trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_hong_kong_id_card est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_hong_kong_id_card trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -8392,7 +8393,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - HKIDC
 - carte d’identité
 - Carte d’identité
-- carte d’identité hk
+- hk identity card
 - hong kong id
 - 香港身份證
 - 香港永久性居民身份證
@@ -8426,7 +8427,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - 香港特別行政區非永久性居民身分証
 
 
-## <a name="hungary-drivers-license-number"></a>Numéro de permis de conduire hongrois
+## <a name="hungary-drivers-license-number"></a>Numéro de permis de conduire en Hongrie
 
 ### <a name="format"></a>Format
 
@@ -8436,7 +8437,7 @@ Deux lettres suivies de six chiffres
 
 Deux lettres et six chiffres :
 
-- Deux lettres (ne sont pas sensibles à la majuscule)
+- Deux lettres (non sensibles à la casse)
 - Six chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -8445,10 +8446,10 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 
-- L’expression régulière  `Regex_hungary_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_hungary_eu_driver's_license_number` est trouvé.
+- L’expression  `Regex_hungary_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_hungary_eu_driver's_license_number` est trouvé.
 
 ```xml
       <Entity id="9d31c46b-6e6b-444c-aeb1-6dd7e604bb24" patternsProximity="300" recommendedConfidence="75">
@@ -8464,7 +8465,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -8492,12 +8493,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -8508,14 +8509,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -8525,7 +8526,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -8536,17 +8537,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -8557,8 +8558,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -8572,11 +8573,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -8586,18 +8587,18 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro dl
 
 
-#### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver’s_license_number
+#### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver s_license_number
 
 - vezetoi engedely
 - vezetői engedély
 - vezetői engedélyek
 
 
-## <a name="hungary-passport-number"></a>Numéro de passeport hongrois
+## <a name="hungary-passport-number"></a>Numéro de passeport en Hongrie
 
 ### <a name="format"></a>Format
 
-Deux lettres suivies de six ou sept chiffres sans espace ni délimiteur
+Deux lettres suivies de six ou sept chiffres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -8609,14 +8610,14 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_hungary_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_hungary_eu_passport_number` est trouvé.
-- L’expression `Regex_hungary_eu_passport_date` régulière trouve la date au format DD MMM/MMM AA (exemple - 01 MÁR/MAR 12) `Keywords_eu_passport_date` ou un mot clé trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_hungary_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_hungary_eu_passport_number` est trouvé.
+- L’expression `Regex_hungary_eu_passport_date` régulière trouve la date au format DD MMM/MMM YY (exemple - 01 MÁR/MAR 12) ou un mot clé est `Keywords_eu_passport_date` trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_hungary_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_hungary_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_hungary_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_hungary_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Hungary Passport Number -->
@@ -8645,10 +8646,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -8664,11 +8665,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
-## <a name="hungary-personal-identification-number"></a>Numéro d’identification personnel hongrie
+## <a name="hungary-personal-identification-number"></a>Numéro d’identification personnelle en Hongrie
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -8685,10 +8686,10 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 11 chiffres :
 
-- Un chiffre qui correspond au sexe, 1 pour l’homme, 2 pour la femme. D’autres nombres sont également possibles pour les citoyens d’avant 1900 ou les citoyens ayant la double nationalité.
-- Six chiffres qui correspondent à la date de naissance (AAMMMMDD)
+- Un chiffre qui correspond au sexe, 1 pour les hommes, 2 pour les femmes. D’autres chiffres sont également possibles pour les citoyens nés avant 1900 ou les citoyens ayant la double citoyenneté.
+- Six chiffres correspondant à la date de naissance (AAAAMMD)
 - Trois chiffres qui correspondent à un numéro de série
-- Un chiffre de vérification
+- Un chiffre à cocher
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -8696,14 +8697,14 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 
-- La fonction  `Func_hungary_eu_national_id_card` trouve un contenu qui correspond au modèle.
+- La fonction  `Func_hungary_eu_national_id_card` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_hungary_eu_national_id_card` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 
-- La fonction  `Func_hungary_eu_national_id_card` trouve un contenu qui correspond au modèle.
+- La fonction  `Func_hungary_eu_national_id_card` recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Hungary Personal Identification Number -->
@@ -8729,7 +8730,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro d’ID
 - numéro d’identification
 - sz ig
-- sz. ig.
+- Sz. Ig.
 - sz.ig.
 - személyazonosító igazolvány
 - személyi igazolvány
@@ -8737,18 +8738,18 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="hungary-physical-addresses"></a>Adresses physiques en Hongrie
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Hongrie. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance de Hongrie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="hungary-social-security-number-taj"></a>Numéro de sécurité sociale hongrois (TAJ)
+## <a name="hungary-social-security-number-taj"></a>Numéro de sécurité sociale en Hongrie (TAJ)
 
 ### <a name="format"></a>Format
 
-Neuf chiffres sans espaces et délimiteur
+Neuf chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -8760,14 +8761,14 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 
-- La fonction  `Func_hungary_eu_ssn_or_equivalent` trouve un contenu qui correspond au modèle.
+- La fonction  `Func_hungary_eu_ssn_or_equivalent` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_hungary_eu_ssn_or_equivalent` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 
-- La fonction  `Func_hungary_eu_ssn_or_equivalent` trouve un contenu qui correspond au modèle.
+- La fonction  `Func_hungary_eu_ssn_or_equivalent` recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Hungarian Social Security Number (TAJ) -->
@@ -8792,11 +8793,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - hssn #
 - socialsecuritynno
 - hssn
-- taj
-- taj #
-- ssn
-- ssn #
-- non de sécurité sociale
+- Taj
+- Taj #
+- Ssn
+- Ssn #
+- sécurité sociale non
 - áfa
 - közösségi adószám
 - általános forgalmi adó szám
@@ -8805,7 +8806,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - magyar áfa szám
 
 
-## <a name="hungary-tax-identification-number"></a>Numéro d’identification fiscale hongrie
+## <a name="hungary-tax-identification-number"></a>Numéro d’identification fiscale en Hongrie
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -8816,7 +8817,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-10 chiffres sans espace ni délimiteur
+10 chiffres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -8824,7 +8825,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - Un chiffre qui doit être « 8 »
 - Huit chiffres
-- Un chiffre de vérification
+- Un chiffre à cocher
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -8832,14 +8833,14 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 
-- La fonction  `Func_hungary_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+- La fonction  `Func_hungary_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_hungary_eu_tax_file_number` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 
-- La fonction  `Func_hungary_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+- La fonction  `Func_hungary_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Hungary Tax Identification Number -->
@@ -8865,29 +8866,29 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - adóazonosító szám
 - adóhatóság szám
 - adószám
-- tin hongrois
+- fer blanc hongrois
 - hungatiantin #
-- pas d’autorité fiscale
+- l’autorité fiscale n’a pas
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
+- Étain #
 - numéro de tva
 
 
-## <a name="hungary-value-added-tax-number"></a>Numéro de taxe sur la valeur ajoutée de hongrie
+## <a name="hungary-value-added-tax-number"></a>Numéro de taxe sur la valeur ajoutée en Hongrie
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -8914,14 +8915,14 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 
-- La fonction Func_hungarian_value_added_tax_number trouve un contenu qui correspond au modèle.
+- La fonction Func_hungarian_value_added_tax_number recherche le contenu qui correspond au modèle.
 - Un mot clé de Keywords_hungarian_value_added_tax_number est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 
-- La fonction Func_hungarian_value_added_tax_number trouve un contenu qui correspond au modèle.
+- La fonction Func_hungarian_value_added_tax_number recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Hungarian Value Added Tax Number -->
@@ -8940,12 +8941,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keyword_hungary_value_added_tax_number"></a>Keyword_Hungary_value_added_tax_number
 
-- vat
+- Tva
 - numéro de taxe sur la valeur ajoutée
-- vat #
+- Tva #
 - vatno #
 - hungarianvatno #
-- non fiscal.
+- tax no.
 - taxe sur la valeur ajoutée áfa
 - közösségi adószám
 - általános forgalmi adó szám
@@ -8953,37 +8954,37 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - áfa szám
 
 
-## <a name="iceland-physical-addresses"></a>Adresses physiques islandais
+## <a name="iceland-physical-addresses"></a>Adresses physiques islandaises
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique islandais. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non regroupée détecte les modèles liés à l’adresse physique de l’Islande. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
-## <a name="impairments-listed-in-the-us-disability-evaluation-under-social-security"></a>Handicaps répertoriés dans l’évaluation du handicap aux États-Unis dans le cadre de la sécurité sociale
+## <a name="impairments-listed-in-the-us-disability-evaluation-under-social-security"></a>Déficiences répertoriées dans l’évaluation des incapacités aux États-Unis sous sécurité sociale
 
-Cette entité nommée non dissociée détecte les noms des troubles répertoriés dans l’évaluation du handicap en vertu de la sécurité sociale pour les États-Unis, telles que les problèmes *de santé*. Il prend uniquement en charge les termes anglais. Il est également inclus dans [toutes les conditions](#all-medical-terms-and-conditions) médicales regroupées nommées SIT d’entité.
+Cette entité nommée non regroupée détecte les noms des déficiences répertoriées dans l’évaluation des incapacités aux États-Unis sous sécurité sociale, comme la *dystrophie musculaire*. Il prend uniquement en charge les termes anglais. Il est également inclus dans les [conditions générales médicales](#all-medical-terms-and-conditions) regroupées sous le nom d’entité SIT.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Élevé
 
 
-## <a name="india-drivers-license-number"></a>Numéro de permis de conduire Inde
+## <a name="india-drivers-license-number"></a>Numéro de permis de conduire en Inde
 
 ### <a name="format"></a>Format
 
-Modèle alphanumérique de 15 caractères
+Modèle alphanumérique à 15 caractères
 
 ### <a name="pattern"></a>Modèle
 
 15 lettres ou chiffres :
 - deux lettres indiquant le code d’état
 - espace ou tiret facultatif
-- deux chiffres indiquant le code de la ville
+- deux chiffres indiquant le code de ville
 - espace ou tiret facultatif
-- quatre chiffres indiquant l’année du problème
+- quatre chiffres indiquant l’année d’émission
 - espace ou tiret facultatif
 - sept chiffres
 
@@ -8993,12 +8994,12 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière `Regex_india_driving_license` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression `Regex_india_driving_license` régulière recherche le contenu qui correspond au modèle.
 - Un mot clé est `Keywords_eu_driver's_license_number_common` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière `Regex_india_driving_license` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression `Regex_india_driving_license` régulière recherche le contenu qui correspond au modèle.
 
 
 ```xml
@@ -9016,7 +9017,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number_common"></a>Keywords_eu_driver’s_license_number_common
+#### <a name="keywords_eu_drivers_license_number_common"></a>Keywords_eu_driver s_license_number_common
 
 - driverlic
 - driverlics
@@ -9044,12 +9045,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -9060,14 +9061,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -9077,7 +9078,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -9088,17 +9089,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -9109,8 +9110,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -9124,11 +9125,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -9139,22 +9140,22 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 
 
-## <a name="india-gst-number"></a>Numéro de taxe sur l’inde
+## <a name="india-gst-number"></a>Numéro de TPS en Inde
 
 ### <a name="format"></a>Format
 
-Modèle alphanumérique de 15 caractères
+Modèle alphanumérique à 15 caractères
 
 ### <a name="pattern"></a>Modèle
 
 15 lettres ou chiffres :
-- deux chiffres représentant un code d’état valide
-- espace ou tiret facultatif
+- deux chiffres représentant le code d’état valide
+- un espace ou un tiret facultatif
 - dix caractères représentant le numéro de compte permanent (PAN) 
 - une lettre ou un chiffre
-- espace ou tiret facultatif
-- une lettre « z » ou « Z »
-- espace ou tiret facultatif
+- un espace ou un tiret facultatif
+- une lettre 'z' ou 'Z'
+- un espace ou un tiret facultatif
 - un chiffre de vérification
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -9163,12 +9164,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction `Func_india_gst_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction `Func_india_gst_number` recherche le contenu qui correspond au modèle.
 - Un mot clé est `Keyword_india_gst_number` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction `Func_india_gst_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction `Func_india_gst_number` recherche le contenu qui correspond au modèle.
 
 
 ```xml
@@ -9188,13 +9189,13 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keyword_india_gst_number"></a>Keyword_india_gst_number
 
-- gst
+- Tps
 - gstin
 - taxe sur les biens et services
-- taxe sur les biens et services
+- biens et taxe de service
 
 
-## <a name="india-permanent-account-number-pan"></a>Numéro de compte permanent Inde (PAN)
+## <a name="india-permanent-account-number-pan"></a>Numéro de compte permanent de l’Inde (PAN)
 
 ### <a name="format"></a>Format
 
@@ -9203,11 +9204,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 ### <a name="pattern"></a>Modèle
 
 10 lettres ou chiffres :
-- Trois lettres (ne sont pas sensibles à la majuscule)
-- Lettre en C, P, H, F, A, T, B, L, J, G (ne sensible à la cas)
+- Trois lettres (non sensibles à la casse)
+- Lettre en C, P, H, F, A, T, B, L, J, G (non sensible à la casse)
 - Une lettre
 - Quatre chiffres
-- Une lettre qui est un chiffre de vérification alphabétique
+- Lettre qui est un chiffre à cocher alphabétique
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9215,11 +9216,11 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_india_permanent_account_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_india_permanent_account_number est trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_india_permanent_account_number trouve un contenu qui correspond au modèle.
 
 
@@ -9245,7 +9246,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - Permanent Account Number
 - PAN
 
-## <a name="india-unique-identification-aadhaar-number"></a>Numéro d’identification unique inde (Aadhaar)
+## <a name="india-unique-identification-aadhaar-number"></a>Numéro d’identification unique de l’Inde (Aadhaar)
 
 ### <a name="format"></a>Format
 
@@ -9254,7 +9255,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 ### <a name="pattern"></a>Modèle
 
 12 chiffres :
-- Un chiffre qui n’est pas 0 ou 1
+- Chiffre qui n’est pas 0 ou 1
 - Trois chiffres
 - Éventuellement un tiret ou un espace 
 - Quatre chiffres
@@ -9267,12 +9268,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_india_aadhaar trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_india_aadhar est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 
 - La fonction Func_india_aadhaar trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
@@ -9300,7 +9301,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - uidai
 
 
-## <a name="india-voter-id-card"></a>Carte d’ID de votant inde
+## <a name="india-voter-id-card"></a>Carte d’identité de l’électeur indien
 
 ### <a name="format"></a>Format
 
@@ -9318,12 +9319,12 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière `Regex_india_voter_id_card` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression `Regex_india_voter_id_card` régulière recherche le contenu qui correspond au modèle.
 - Un mot clé est `Keyword_india_voter_id_card` trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière `Regex_india_voter_id_card` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression `Regex_india_voter_id_card` régulière recherche le contenu qui correspond au modèle.
 
 
 ```xml
@@ -9343,17 +9344,17 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 #### <a name="keyword_india_voter_id_card"></a>Keyword_india_voter_id_card
 
-- voter
+- Électeur
 - voterid
 - votercard
 - voteridcard
 - carte d’identité de photo électorale
-- LASER
+- ÉPIQUE
 - ECI
-- commmision de l’équipe de certification
+- élection commmision
 
 
-## <a name="indonesia-identity-card-ktp-number"></a>Numéro de carte d’identité (KTP) indonésie
+## <a name="indonesia-identity-card-ktp-number"></a>Numéro de carte d’identité de l’Indonésie (KTP)
 
 ### <a name="format"></a>Format
 
@@ -9377,7 +9378,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 
 - L’expression régulière Regex_indonesia_id_card trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_indonesia_id_card est trouvé.
@@ -9417,51 +9418,51 @@ Le modèle doit inclure tous les éléments suivants :
 Le format pour chaque pays est légèrement différent. Le type d’informations sensibles IBAN recouvre ces 60 pays :
 
 - ad
-- ae
-- al
-- at
+- Ae
+- Al
+- À
 - az
-- ba
+- Ba
 - be
 - bg
-- bh
-- ch
-- cr
+- Bh
+- Ch
+- Cr
 - cy
-- cz
+- Cz
 - de
-- dk
-- à faire
-- ee
+- Dk
+- faire
+- Ee
 - es
 - fi
 - fo
 - fr
-- gb
+- Go
 - ge
-- gi
+- Gi
 - gl
-- gr
+- Gr
 - hr
 - hu
-- ie
+- Ie
 - il
 - is
 - it
-- kw
-- kz
+- Kw
+- Kz
 - lb
-- li
+- Li
 - lt
 - lu
 - lv
-- mc
+- Mc
 - md
 - me
 - mk
 - mr
 - mt
-- mu
+- Mu
 - nl
 - Non
 - pl
@@ -9472,10 +9473,10 @@ Le format pour chaque pays est légèrement différent. Le type d’informations
 - se
 - si
 - sk
-- sm
-- tn
+- Sm
+- Amt
 - tr
-- vg
+- Vg
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9483,7 +9484,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 
 - La fonction Func_iban trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
@@ -9498,10 +9499,10 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 
 ### <a name="keywords"></a>Mots clés
 
-Néant
+None
 
 
-## <a name="international-classification-of-diseases-icd-10-cm"></a>Classification internationale des maladie (ICD-10-CM)
+## <a name="international-classification-of-diseases-icd-10-cm"></a>Classification internationale des maladies (ICD-10-CM)
 
 ### <a name="format"></a>Format
 
@@ -9509,7 +9510,7 @@ Dictionary
 
 ### <a name="pattern"></a>Modèle
 
-Keyword
+Mot clé
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9517,11 +9518,11 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - Un mot clé de Dictionary_icd_10_updated est trouvé.
 - Un mot clé de Dictionary_icd_10_codes est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - Un mot clé de Dictionary_icd_10_ mis à jour est trouvé.
 
 ```xml
@@ -9539,12 +9540,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-Tout terme issu du dictionnaire Dictionary_icd_10_updated de mots clés, basé sur la classification internationale des maladie, la dixième révision, la modification de la santé [(ICD-10-CM).](https://go.microsoft.com/fwlink/?linkid=852604) Ce type recherche uniquement le terme, et non les codes d’assurance.
+Tout terme du dictionnaire de mots clés Dictionary_icd_10_updated, qui est basé sur la [classification internationale des maladies, dixième révision, modification clinique (ICD-10-CM).](https://go.microsoft.com/fwlink/?linkid=852604) Ce type recherche uniquement le terme, pas les codes d’assurance.
 
-Tout terme issu du dictionnaire Dictionary_icd_10_codes de mots clés, basé sur la classification internationale des maladie, la dixième révision, la modification de la santé [(ICD-10-CM).](https://go.microsoft.com/fwlink/?linkid=852604) Ce type recherche uniquement les codes d’assurance, et non la description.
+Tout terme du dictionnaire de mots clés Dictionary_icd_10_codes, qui est basé sur la [classification internationale des maladies, dixième révision, modification clinique (ICD-10-CM).](https://go.microsoft.com/fwlink/?linkid=852604) Ce type recherche uniquement les codes d’assurance, pas la description.
 
 
-## <a name="international-classification-of-diseases-icd-9-cm"></a>Classification internationale des maladie (ICD-9-CM)
+## <a name="international-classification-of-diseases-icd-9-cm"></a>Classification internationale des maladies (ICD-9-CM)
 
 ### <a name="format"></a>Format
 
@@ -9552,7 +9553,7 @@ Dictionary
 
 ### <a name="pattern"></a>Modèle
 
-Keyword
+Mot clé
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9560,11 +9561,11 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - Un mot clé de Dictionary_icd_9_updated est trouvé.
 - Un mot clé de Dictionary_icd_9_codes est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - Un mot clé de Dictionary_icd_9_updated est trouvé.
 
 ```xml
@@ -9581,19 +9582,19 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-Tout terme du dictionnaire de mots clés Dictionary_icd_9_updated, qui est basé sur la classification internationale des maladie, la neuvième révision[, la modification génétique (ICD-9-CM).](https://go.microsoft.com/fwlink/?linkid=852605) Ce type recherche uniquement le terme, et non les codes d’assurance.
+Tout terme du dictionnaire de mots clés Dictionary_icd_9_updated, qui est basé sur la [classification internationale des maladies, neuvième révision, modification clinique (ICD-9-CM).](https://go.microsoft.com/fwlink/?linkid=852605) Ce type recherche uniquement le terme, pas les codes d’assurance.
 
-Tout terme du dictionnaire de mots clés Dictionary_icd_9_codes, qui est basé sur la classification internationale des maladie, la neuvième révision[, la modification génétique (ICD-9-CM).](https://go.microsoft.com/fwlink/?linkid=852605) Ce type recherche uniquement les codes d’assurance, et non la description.
+Tout terme du dictionnaire de mots clés Dictionary_icd_9_codes, qui est basé sur la [classification internationale des maladies, neuvième révision, modification clinique (ICD-9-CM).](https://go.microsoft.com/fwlink/?linkid=852605) Ce type recherche uniquement les codes d’assurance, pas la description.
 
 ## <a name="ip-address"></a>Adresse IP
 
 ### <a name="format"></a>Format
 
 #### <a name="ipv4"></a>IPv4 :
-Modèle complexe qui prend en compte les versions formatées (périodes) et non formatées (sans point) des adresses IPv4
+Modèle complexe qui prend en compte les versions mises en forme (périodes) et non mises en forme (sans périodes) des adresses IPv4
 
 #### <a name="ipv6"></a>IPv6 :
-Modèle complexe qui compte pour les nombres IPv6 formatés (qui incluent les deux-points)
+Modèle complexe qui prend en compte les nombres IPv6 mis en forme (y compris les deux-points)
 
 ### <a name="pattern"></a>Modèle
 
@@ -9603,15 +9604,15 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Pour IPv6, une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Pour IPv6, une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_ipv6_address trouve un contenu qui correspond au modèle.
 - Aucun mot clé figurant dans la liste Keyword_ipaddress n’est trouvé.
 
-Pour IPv4, une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Pour IPv4, une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_ipv4_address trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_ipaddress est trouvé.
 
-Pour IPv6, une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Pour IPv6, une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_ipv6_address trouve un contenu qui correspond au modèle.
 - Aucun mot clé figurant dans la liste Keyword_ipaddress n’est trouvé.
 
@@ -9643,7 +9644,7 @@ Pour IPv6, une stratégie DLP a une confiance élevée qu’elle a détecté ce 
 
 #### <a name="keyword_ipaddress"></a>Keyword_ipaddress
 
-- IP (ce mot clé est sensible à la cas)
+- IP (ce mot clé respecte la casse)
 - ip address
 - adresses IP
 - protocole internet
@@ -9654,7 +9655,7 @@ Pour IPv6, une stratégie DLP a une confiance élevée qu’elle a détecté ce 
 
 ### <a name="format"></a>Format
 
-Modèle complexe qui prend en compte les versions formatées (périodes) et non formatées (sans point) des adresses IPv4
+Modèle complexe qui prend en compte les versions mises en forme (périodes) et non mises en forme (sans périodes) des adresses IPv4
 
 ### <a name="pattern"></a>Modèle
 
@@ -9665,12 +9666,12 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière `Regex_ipv4_address` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression `Regex_ipv4_address` régulière recherche le contenu qui correspond au modèle.
 - Un mot clé est `Keyword_ipaddress` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière `Regex_ipv4_address` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression `Regex_ipv4_address` régulière recherche le contenu qui correspond au modèle.
 
 
 ```xml
@@ -9690,7 +9691,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keyword_ipaddress"></a>Keyword_ipaddress
 
-- IP (sensible à la cas)
+- IP (respect de la casse)
 - ip address
 - adresses IP
 - protocole internet
@@ -9701,7 +9702,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="format"></a>Format
 
-Modèle complexe qui compte pour les nombres IPv6 formatés (qui incluent les deux-points)
+Modèle complexe qui prend en compte les nombres IPv6 mis en forme (y compris les deux-points)
 
 ### <a name="pattern"></a>Modèle
 
@@ -9712,12 +9713,12 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière `Regex_ipv6_address` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression `Regex_ipv6_address` régulière recherche le contenu qui correspond au modèle.
 - Un mot clé est `Keyword_ipaddress` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière `Regex_ipv6_address` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression `Regex_ipv6_address` régulière recherche le contenu qui correspond au modèle.
 
 
 ```xml
@@ -9737,14 +9738,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keyword_ipaddress"></a>Keyword_ipaddress
 
-- IP (sensible à la cas)
+- IP (respect de la casse)
 - ip address
 - adresses IP
 - protocole internet
 - IP-כתובת ה
 
 
-## <a name="ireland-drivers-license-number"></a>Numéro de permis de conduire irlande
+## <a name="ireland-drivers-license-number"></a>Numéro de permis de conduire en Irlande
 
 ### <a name="format"></a>Format
 
@@ -9755,7 +9756,7 @@ Six chiffres suivis de quatre lettres
 Six chiffres et quatre lettres :
 
 - Six chiffres
-- Quatre lettres (ne sont pas sensibles à la majuscule)
+- Quatre lettres (non sensibles à la casse)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9763,10 +9764,10 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 
-- L’expression régulière  `Regex_ireland_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_ireland_eu_driver's_license_number` est trouvé.
+- L’expression  `Regex_ireland_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_ireland_eu_driver's_license_number` est trouvé.
 
 ```xml
       <!-- Ireland Driver's License Number -->
@@ -9783,7 +9784,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -9811,12 +9812,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -9827,14 +9828,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -9844,7 +9845,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -9855,17 +9856,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -9876,8 +9877,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -9891,11 +9892,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -9905,22 +9906,22 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro dl
 
 
-#### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver’s_license_number
+#### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver s_license_number
 
 - ceadúnas tiomána
-- ceadúnée tiomána
+- ceadúnais tiomána
 
-## <a name="ireland-passport-number"></a>Numéro de passeport irlande
+## <a name="ireland-passport-number"></a>Numéro de passeport en Irlande
 
 ### <a name="format"></a>Format
 
-Deux lettres ou chiffres suivis de sept chiffres sans espace ni délimiteur
+Deux lettres ou chiffres suivis de sept chiffres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
 Deux lettres ou chiffres suivis de sept chiffres :
 
-- Deux chiffres ou lettres (ne sont pas sensibles à la majuscule)
+- Deux chiffres ou lettres (non sensibles à la casse)
 - Sept chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -9929,14 +9930,14 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_ireland_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_ireland_eu_passport_number` est trouvé.
-- L’expression `Regex_ireland_eu_passport_date` régulière trouve la date au format DD MMM/MMM AAA (exemple - 01 BEA/MAI 1988) `Keywords_eu_passport_date` ou un mot clé est trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_ireland_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_ireland_eu_passport_number` est trouvé.
+- L’expression `Regex_ireland_eu_passport_date` régulière recherche la date au format DD MMM/MMM YYYY (exemple - 01 BEA/MAY 1988) ou un mot clé est `Keywords_eu_passport_date` trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_ireland_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_ireland_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_ireland_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_ireland_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Ireland Passport Number -->
@@ -9966,10 +9967,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -9980,20 +9981,20 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 #### <a name="keywords_ireland_eu_passport_number"></a>Keywords_ireland_eu_passport_number
 
 - passeport numero
-- uimhreacha pascad
+- uimhreacha pasanna
 - uimhir pas
 - uimhir phas
 - uimhreacha pas
-- uimhir cáemba
-- uimhir cháemba
+- uimhir cárta
+- uimhir chárta
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
-## <a name="ireland-personal-public-service-pps-number"></a>Numéro de service public personnel (PPS) irlande
+## <a name="ireland-personal-public-service-pps-number"></a>Numéro de service public personnel (PPS) en Irlande
 
 ### <a name="format"></a>Format
 
@@ -10007,12 +10008,12 @@ Nouveau format (1er janvier 2013 et après) :
 
 Ancien format (jusqu’au 31 décembre 2012) :
 - sept chiffres
-- une à deux lettres (ne pas prendre en compte la majuscule)
+- une à deux lettres (sans respect de la casse)
 
 Nouveau format (1er janvier 2013 et après) :
 - sept chiffres
-- une lettre (ne sensible à la cas) qui est un chiffre de vérification alphabétique
-- Lettre facultative de la plage A-I ou « W »
+- une lettre (non sensible à la casse) qui est un chiffre à cocher alphabétique
+- Lettre facultative dans la plage A-I ou « W »
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -10020,12 +10021,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_ireland_pps trouve un contenu qui correspond au modèle.
 - Un mot clé de Keywords_ireland_eu_national_id_card est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_ireland_pps trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -10046,26 +10047,26 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 #### <a name="keywords_ireland_eu_national_id_card"></a>Keywords_ireland_eu_national_id_card
 
-- service d’identité client
+- service d’identité du client
 - numéro d’identification
 - numéro d’ID personnel
 - numéro de service public personnel
 - service personnel non
 - phearsanta seirbhíse poiblí
 - pps no
-- nombre pps
+- pps number
 - pps num
 - pps service no
 - ppsn
 - ppsno #
 - ppsno
-- psp
-- non de service public
+- Psp
+- service public non
 - publicserviceno #
 - publicserviceno
-- numéro de revenu et d’assurance sociale
+- chiffre d’affaires et d’assurance sociale
 - rsi no
-- rsi number
+- nombre rsi
 - rsin
 - client seirbhís aitheantais
 - uimh
@@ -10073,33 +10074,33 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - uimhir aitheantais phearsanta
 - uimhir phearsanta seirbhíse poiblí
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
+- Étain #
 
 
 ## <a name="ireland-physical-addresses"></a>Adresses physiques d’Irlande
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en provenance d’Irlande. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de l’Irlande. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="israel-bank-account-number"></a>Numéro de compte bancaire Israël
+## <a name="israel-bank-account-number"></a>Numéro de compte bancaire en Israël
 
 ### <a name="format"></a>Format
 
@@ -10107,14 +10108,14 @@ Moyen
 
 ### <a name="pattern"></a>Modèle
 
-Formaté :
+Formaté:
 - deux chiffres
 - un tiret
 - trois chiffres
 - un tiret
 - huit chiffres
 
-Non formaté :
+Mémoire:
 - 	13 chiffres consécutifs
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -10123,7 +10124,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_israel_bank_account_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_israel_bank_account_number est trouvé.
 
@@ -10149,7 +10150,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - מספר חשבון בנק
 
 
-## <a name="israel-national-identification-number"></a>Numéro d’identification national Israël
+## <a name="israel-national-identification-number"></a>Numéro d’identification nationale d’Israël
 
 ### <a name="format"></a>Format
 
@@ -10165,7 +10166,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_israeli_national_id_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_Israel_National_ID est trouvé.
 - La somme de contrôle est correcte.
@@ -10196,17 +10197,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 -   عدد هوية فريدة من نوعها
 -   idnumber #
 -   numéro d’ID
--   identité non        
+-   identity no        
 -   identitynumber #
 -   numéro d’identité
--   identitynumber       
--   id personnel
--   id unique  
+-   israeliidentitynumber       
+-   ID personnel
+-   ID unique  
 
 
-## <a name="italy-drivers-license-number"></a>Numéro de permis de conduire Italien
+## <a name="italy-drivers-license-number"></a>Numéro de permis de conduire en Italie
 
-Cette entité de type est incluse dans le type d’informations sensibles Numéro de permis de conduire de l’UE. Il est également disponible en tant qu’entité de type d’informations sensibles autonome.
+Cette entité de type est incluse dans le type d’informations sensibles numéro de permis de conduire de l’UE. Il est également disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
 
@@ -10214,11 +10215,11 @@ combinaison de 10 lettres et chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Combinaison de 10 lettres et chiffres :
-- une lettre (ne doit pas être sensible à la cas)
-- la lettre « A » ou « V » (ne sensible pas à la cas)
+une combinaison de 10 lettres et chiffres :
+- une lettre (non sensible à la casse)
+- la lettre « A » ou « V » (non sensible à la casse)
 - sept chiffres
-- une lettre (ne doit pas être sensible à la cas)
+- une lettre (non sensible à la casse)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -10226,9 +10227,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière `Regex_italy_drivers_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de `Keywords_eu_driver's_license_number` ou `Keyword_italy_drivers_license_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression `Regex_italy_drivers_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou `Keywords_eu_driver's_license_number` `Keyword_italy_drivers_license_number` est trouvé.
 
 ```xml
     <!-- Italy Driver's license Number -->
@@ -10245,7 +10246,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -10273,12 +10274,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -10289,14 +10290,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -10306,7 +10307,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -10317,17 +10318,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -10338,8 +10339,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -10353,11 +10354,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -10375,7 +10376,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - patenti guida
 
 
-## <a name="italy-fiscal-code"></a>Code fiscal italien
+## <a name="italy-fiscal-code"></a>Code fiscal de l’Italie
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
@@ -10391,11 +10392,11 @@ combinaison de 16 caractères de lettres et de chiffres dans le modèle spécifi
 
 Combinaison de 16 caractères de lettres et de chiffres :
 - trois lettres qui correspondent aux trois premières consonnes dans le nom de famille
-- trois lettres qui correspondent à la première, la troisième et la quatrième consonne du prénom
+- trois lettres qui correspondent aux première, troisième et quatrième consonnes dans le prénom
 - deux chiffres qui correspondent aux derniers chiffres de l’année de naissance
-- une lettre qui correspond à la lettre du mois de naissance : les lettres sont utilisées dans l’ordre alphabétique, mais seules les lettres A à E, H, L, M, P, R à T sont utilisées (donc, Janvier est A et Octobre est R)
-- deux chiffres qui correspondent au jour du mois de naissance afin de différencier les sexes, 40 sont ajoutés au jour de naissance pour les enfants
-- quatre chiffres qui correspondent à l’indicatif de zone spécifique à l’endroit où la personne est né (les codes nationaux sont utilisés pour les pays étrangers)
+- une lettre qui correspond à la lettre pour le mois de naissance : les lettres sont utilisées par ordre alphabétique, mais seules les lettres A à E, H, L, M, P, R à T sont utilisées (donc, Janvier est A et Octobre est R)
+- deux chiffres qui correspondent au jour du mois de naissance afin de différencier les sexes, 40 sont ajoutés au jour de naissance pour les femmes
+- quatre chiffres qui correspondent à l’indicatif régional spécifique à la municipalité où la personne est née (les codes nationaux sont utilisés pour les pays étrangers)
 - un chiffre de parité
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -10404,12 +10405,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_italy_eu_national_id_card` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_italy_eu_national_id_card` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_italy_eu_national_id_card` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_italy_eu_national_id_card` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_italy_eu_national_id_card` recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Italy Fiscal Code -->
@@ -10436,7 +10437,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numero certificato personale
 - numero di identificazione fiscale
 - numero id personale
-- numero personale
+- nombreuses informations personnelles
 - numéro de certificat personnel
 - code personnel
 - code d’ID personnel
@@ -10444,35 +10445,35 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - personalcodeno #
 - code fiscal
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
 - numéro d’identité fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
+- Étain #
 
 
-## <a name="italy-passport-number"></a>Numéro de passeport Italien
+## <a name="italy-passport-number"></a>Numéro de passeport en Italie
 
 ### <a name="format"></a>Format
 
-deux lettres ou chiffres suivis de sept chiffres sans espace ni délimiteur
+deux lettres ou chiffres suivis de sept chiffres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
 deux lettres ou chiffres suivis de sept chiffres :
 
-- deux chiffres ou lettres (ne sont pas sensibles à la majuscule) ;
+- deux chiffres ou lettres (non sensibles à la casse)
 - sept chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -10481,14 +10482,14 @@ non applicable
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_italy_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_italy_eu_passport_number` est trouvé.
-- L’expression `Regex_italy_eu_passport_date` régulière trouve la date au format DD MMM/MMM AAAY (exemple - 01 GEN/JAN 1988) `Keywords_eu_passport_date` ou un mot clé trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_italy_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_italy_eu_passport_number` est trouvé.
+- L’expression `Regex_italy_eu_passport_date` régulière recherche la date au format DD MMM/MMM YYYY (exemple - 01 GEN/JAN 1988) ou un mot clé à partir de `Keywords_eu_passport_date` laquelle est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_italy_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_italy_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_italy_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_italy_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Italy Passport Number -->
@@ -10518,10 +10519,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -10531,30 +10532,30 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_italy_eu_passport_number"></a>Keywords_italy_eu_passport_number
 
-- italianantporto
-- journal de l’italien
-- numeroporto
+- italiana passaporto
+- passaporto italiana
+- passaporto nombreux
 - numéro passeport
-- numero di numporto
-- numeri deldéporto
+- numero di passaporto
+- numeri del passaporto
 - passeport italien
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
-## <a name="italy-physical-addresses"></a>Adresses physiques d’Italie
+## <a name="italy-physical-addresses"></a>Adresses physiques en Italie
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique d’Italie. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance d’Italie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="italy-value-added-tax-number"></a>Numéro de taxe sur la valeur ajoutée italie
+## <a name="italy-value-added-tax-number"></a>Numéro de taxe sur la valeur ajoutée en Italie
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -10565,11 +10566,11 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-Modèle alphanumérique de 13 caractères avec délimiteur facultatif
+Modèle alphanumérique de 13 caractères avec délimiteurs facultatifs
 
 ### <a name="pattern"></a>Modèle
 
-Modèle alphanumérique de 13 caractères avec des délimiteur facultatifs :
+Modèle alphanumérique de 13 caractères avec délimiteurs facultatifs :
 
 - I ou i
 - T ou t
@@ -10582,12 +10583,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_italy_value_added_tax_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_italy_value_added_tax_number recherche le contenu qui correspond au modèle.
 - Un mot clé de Keywords_italy_value_added_tax_number est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_italy_value_added_tax_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_italy_value_added_tax_number recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Italy Value Added Tax -->
@@ -10608,12 +10609,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 - numéro de tva
 - vat no
-- vat #
-- iva
-- iva #
+- Tva #
+- Iva
+- Iva #
 
 
-## <a name="japan-bank-account-number"></a>Numéro de compte bancaire Japon
+## <a name="japan-bank-account-number"></a>Numéro de compte bancaire au Japon
 
 ### <a name="format"></a>Format
 
@@ -10621,11 +10622,11 @@ sept ou huit chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Numéro de compte bancaire :
+numéro de compte bancaire :
 - sept ou huit chiffres
-- Code de succursale de compte bancaire :
+- code de branche de compte bancaire :
 - quatre chiffres
-- un espace ou un tiret (facultatif) ;
+- un espace ou un tiret (facultatif)
 - trois chiffres
 
 Somme de contrôle
@@ -10634,14 +10635,14 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_jp_bank_account trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_jp_bank_account est trouvé.
 - L’une des affirmations suivantes est vraie :
 - La fonction Func_jp_bank_account_branch_code trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_jp_bank_branch_code est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_jp_bank_account trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_jp_bank_account est trouvé.
 
@@ -10716,7 +10717,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - 支店コード
 - 店番号
 
-## <a name="japan-drivers-license-number"></a>Numéro de permis de conduire Japon
+## <a name="japan-drivers-license-number"></a>Numéro de permis de conduire au Japon
 
 ### <a name="format"></a>Format
 
@@ -10732,7 +10733,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_jp_drivers_license_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_jp_drivers_license_number est trouvé.
 
@@ -10756,9 +10757,9 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driverslicenses
 - driver’slicenses
 - driverlicenses
-- dl #
-- dls #
-- lic #
+- Dl #
+- Dls #
+- Lic #
 - lics #
 - 運転免許証
 - 運転免許
@@ -10787,7 +10788,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - 免許 #
 
 
-## <a name="japan-my-number---corporate"></a>Japan My Number - Corporate
+## <a name="japan-my-number---corporate"></a>Japan My Number - Entreprise
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -10798,13 +10799,13 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-Nombre à 13 chiffres
+Numéro à 13 chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Nombre à 13 chiffres :
+Numéro à 13 chiffres :
 
-- un chiffre d’un à neuf
+- un chiffre de un à neuf
 - 12 chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -10813,12 +10814,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_japanese_my_number_corporate trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_japanese_my_number_corporate recherche le contenu qui correspond au modèle.
 - Un mot clé de Keywords_japanese_my_number_corporate est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_japanese_my_number_corporate trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_japanese_my_number_corporate recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Japanese My Number – Corporate -->
@@ -10849,7 +10850,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - 指定通知書
 
 
-## <a name="japan-my-number---personal"></a>Japan My Number - Personal
+## <a name="japan-my-number---personal"></a>Japon Mon numéro - Personnel
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -10860,16 +10861,16 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-Nombre à 12 chiffres
+Numéro à 12 chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Nombre à 12 chiffres :
+Numéro à 12 chiffres :
 
 - quatre chiffres
-- espace, point ou trait d’union facultatif
+- un espace, un point ou un trait d’union facultatif
 - quatre chiffres
-- espace, point ou trait d’union facultatif
+- un espace, un point ou un trait d’union facultatif
 - quatre chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -10878,12 +10879,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_japanese_my_number_personal trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_japanese_my_number_personal recherche le contenu qui correspond au modèle.
 - Un mot clé de Keywords_japanese_my_number_personal est trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_japanese_my_number_personal trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_japanese_my_number_personal recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Japanese My Number – Personal -->
@@ -10914,7 +10915,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - 通知カード
 
 
-## <a name="japan-passport-number"></a>Numéro de passeport Japon
+## <a name="japan-passport-number"></a>Numéro de passeport au Japon
 
 ### <a name="format"></a>Format
 
@@ -10922,7 +10923,7 @@ deux lettres suivies de sept chiffres
 
 ### <a name="pattern"></a>Modèle
 
-deux lettres (ne faisant pas l’affaire) suivies de sept chiffres
+deux lettres (non sensibles à la casse) suivies de sept chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -10930,7 +10931,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_jp_passport trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_jp_passport est trouvé.
 
@@ -10948,23 +10949,23 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
-- Passport
+- Passeport
 - Numéro de passeport
-- Numéro de passeport
+- Passeport Non.
 - # Passeport
 - パスポート
 - パスポート番号
 - パスポートナンバー
 - パスポート＃
 - パスポート #
-- « ポ »
+- パスポートNo.
 - 旅券番号
 - 旅券番号＃
 - 旅券番号♯
 - 旅券ナンバー
 
 
-## <a name="japan-residence-card-number"></a>Numéro de carte de résidence Japon
+## <a name="japan-residence-card-number"></a>Numéro de carte de séjour au Japon
 
 ### <a name="format"></a>Format
 
@@ -10973,9 +10974,9 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 ### <a name="pattern"></a>Modèle
 
 12 lettres et chiffres :
-- deux lettres (ne sont pas sensibles à la majuscule)
+- deux lettres (non sensibles à la casse)
 - huit chiffres
-- deux lettres (ne sont pas sensibles à la majuscule)
+- deux lettres (non sensibles à la casse)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -10983,8 +10984,8 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière Regex_jp_residence_card_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression régulière Regex_jp_residence_card_number recherche du contenu qui correspond au modèle.
 - Un mot clé de Keyword_jp_residence_card_number est trouvé.
 
 ```xml
@@ -11001,14 +11002,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keyword_jp_residence_card_number"></a>Keyword_jp_residence_card_number
 
-- Numéro de carte de résidence
-- Carte de résidence non
-- Carte de résidence #
+- Numéro de carte de séjour
+- Carte de séjour no
+- Carte de séjour #
 - 在留カード番号
 - 在留カード
 - 在留番号
 
-## <a name="japan-resident-registration-number"></a>Numéro d’enregistrement du résident japonais
+## <a name="japan-resident-registration-number"></a>Numéro d’inscription des résidents du Japon
 
 ### <a name="format"></a>Format
 
@@ -11024,7 +11025,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_jp_resident_registration_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_jp_resident_registration_number est trouvé.
 
@@ -11054,7 +11055,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - 外国人登録証
 
 
-## <a name="japan-social-insurance-number-sin"></a>Numéro d’assurance sociale Japon (SIN)
+## <a name="japan-social-insurance-number-sin"></a>Numéro d’assurance sociale au Japon (SIN)
 
 ### <a name="format"></a>Format
 
@@ -11064,8 +11065,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 7 à 12 chiffres :
 - quatre chiffres
-- un trait d’union (facultatif) ;
-- SIX chiffres OU
+- un trait d’union (facultatif)
+- six chiffres OR
 - 7 à 12 chiffres consécutifs
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -11074,11 +11075,11 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_jp_sin trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_jp_sin est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_jp_sin_pre_1997 trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_jp_sin est trouvé.
 
@@ -11110,7 +11111,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - 雇用保険番号
 - 保険証番号
 - 社会保険番号
-- 保険No.
+- 社会保険No.
 - 社会保険
 - 介護保険
 - 介護保険被保険者番号
@@ -11120,9 +11121,9 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - 厚生年金被保険者整理番号
 
 
-## <a name="lab-test-terms"></a>Termes du test de laboratoire
+## <a name="lab-test-terms"></a>Termes du test lab
 
-Cette entité nommée dissociée détecte les termes liés aux tests de laboratoire, tels que *Le C-contrôle*. Il prend uniquement en charge les termes anglais. Il est également inclus dans [toutes les conditions](#all-medical-terms-and-conditions) médicales regroupées nommées SIT d’entité.
+Cette entité nommée non regroupée détecte les termes liés aux tests en laboratoire, tels que *l’insuline C-peptide*. Il prend uniquement en charge les termes anglais. Il est également inclus dans les [conditions générales médicales](#all-medical-terms-and-conditions) regroupées sous le nom d’entité SIT.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -11139,7 +11140,7 @@ trois lettres suivies de six chiffres
 
 trois lettres et six chiffres :
 
-- trois lettres (ne sont pas sensibles à la majuscule)
+- trois lettres (non sensibles à la casse)
 - six chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -11148,9 +11149,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_latvia_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_latvia_eu_driver's_license_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_latvia_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_latvia_eu_driver's_license_number` est trouvé.
 
 ```xml
       <!-- Latvia Driver's License Number -->
@@ -11167,7 +11168,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -11195,12 +11196,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -11211,14 +11212,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -11228,7 +11229,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -11239,17 +11240,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -11260,8 +11261,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -11275,11 +11276,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -11300,13 +11301,13 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="format"></a>Format
 
-deux lettres ou chiffres suivis de sept chiffres sans espace ni délimiteur
+deux lettres ou chiffres suivis de sept chiffres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
 deux lettres ou chiffres suivis de sept chiffres :
 
-- deux chiffres ou lettres (ne sont pas sensibles à la majuscule) ;
+- deux chiffres ou lettres (non sensibles à la casse)
 - sept chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -11315,14 +11316,14 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_latvia_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_latvia_eu_passport_number` est trouvé.
-- L’expression régulière `Regex_eu_passport_date1` trouve la date au format DD.MM.YYYY ou dans laquelle un `Keywords_eu_passport_date` mot clé est trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_latvia_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_latvia_eu_passport_number` est trouvé.
+- L’expression `Regex_eu_passport_date1` régulière recherche la date au format DD.MM.AAAA ou un mot clé `Keywords_eu_passport_date` est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_latvia_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_latvia_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_latvia_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_latvia_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Latvia Passport Number -->
@@ -11352,10 +11353,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -11374,7 +11375,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
@@ -11392,7 +11393,7 @@ Ancien format
 
 - six chiffres qui correspondent à la date de naissance (DDMMYY)
 - un trait d’union
-- un chiffre qui correspond au xxe anniversaire de naissance ( « 0 » pour le 19e s., « 1 » pour le XXe et « 2 » pour le 21e s.)
+- un chiffre qui correspond au siècle de naissance (« 0 » pour le 19ème siècle, « 1 » pour le 20ème siècle et « 2 » pour le 21ème siècle)
 - quatre chiffres, générés de manière aléatoire
 
 Nouveau format
@@ -11408,12 +11409,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_latvia_eu_national_id_card` ou l’regex `Regex_latvia_eu_national_id_card_new_format` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_latvia_eu_national_id_card` ou l’expression `Regex_latvia_eu_national_id_card_new_format` régulière recherche du contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_latvia_eu_national_id_card` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_latvia_eu_national_id_card` ou l’regex `Regex_latvia_eu_national_id_card_new_format` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_latvia_eu_national_id_card` ou l’expression `Regex_latvia_eu_national_id_card_new_format` régulière recherche du contenu qui correspond au modèle.
 
 ```xml
       <!-- Latvia Personal Code -->
@@ -11449,99 +11450,99 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 #### <a name="keywords_latvia_eu_national_id_card"></a>Keywords_latvia_eu_national_id_card
 
 - numéro d’administration
-- alvs nē
-- numéro de naissance
+- alvas nē
+- nombre de naissances
 - numéro de citoyen
-- numéro civile
+- numéro civil
 - numéro de recensement électronique
 - numéro électronique
 - code fiscal
-- numéro d’utilisateur de la santé
-- id #
+- numéro d’utilisateur de soins de santé
+- Id #
 - id-code
 - numéro d’identification
 - identifikācijas numurs
 - id-number
-- numéro individuel
+- nombre individuel
 - latvija alva
-- identificationālais
+- nacionālais id
 - id national
 - numéro d’identification national
-- numéro d’identité national
+- numéro d’identité nationale
 - numéro d’assurance nationale
-- numéro d’enregistrement national
-- nodokļa numériques
-- nodokļu ID
+- numéro de registre national
+- nodokļa numurs
+- nodokļu id
 - nodokļu identifikācija numurs
 - numéro de certificat personnel
 - code personnel
 - code d’ID personnel
 - numéro d’ID personnel
-- code d’identification personnel
+- code d’identification personnelle
 - identificateur personnel
-- numéro d’identité personnel
+- numéro d’identité personnelle
 - numéro personnel
 - code numérique personnel
 - personalcodeno #
 - personas kods
-- code d’identification de population
+- code d’identification de la population
 - numéro de service public
 - numéro d’enregistrement
-- numéro de revenu
+- numéro de chiffre d’affaires
 - numéro d’assurance sociale
 - numéro de sécurité sociale
-- code fiscal de l’état
+- code fiscal d’état
 - numéro de dossier fiscal
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
-- numéro de votant
+- Étain #
+- numéro de l’électeur
 
 
-## <a name="latvia-physical-addresses"></a>Adresses physiques letton
+## <a name="latvia-physical-addresses"></a>Adresses physiques lettones
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique letton. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
-
-### <a name="confidence-level"></a>Niveau de confiance
-
-Moyen
-
-
-## <a name="liechtenstein-physical-addresses"></a>Adresses physiques liechtensteinois
-
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique du Liechtenstein. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques. 
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance de Lettonie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="lifestyles-that-relate-to-medical-conditions"></a>Modes de vie liés à des problèmes médicaux
+## <a name="liechtenstein-physical-addresses"></a>Adresses physiques du Liechtenstein
 
-Cette entité nommée dissociée détecte les termes liés aux modes de vie qui peuvent entraîner une condition médicale, telle que *l’urgence*. Il prend uniquement en charge les termes anglais. Il est également inclus dans [toutes les conditions](#all-medical-terms-and-conditions) médicales regroupées nommées SIT d’entité.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique du Liechtenstein. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée. 
+
+### <a name="confidence-level"></a>Niveau de confiance
+
+Moyen
+
+
+## <a name="lifestyles-that-relate-to-medical-conditions"></a>Modes de vie liés aux conditions médicales
+
+Cette entité nommée non regroupée détecte les termes liés aux modes de vie qui peuvent entraîner une condition médicale, comme *le tabagisme*. Il prend uniquement en charge les termes anglais. Il est également inclus dans les [conditions générales médicales](#all-medical-terms-and-conditions) regroupées sous le nom d’entité SIT.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Élevé
 
 
-## <a name="lithuania-drivers-license-number"></a>Numéro de permis de conduire lituanien
+## <a name="lithuania-drivers-license-number"></a>Numéro de permis de conduire en Lituanie
 
 ### <a name="format"></a>Format
 
-huit chiffres sans espaces et délimiteur
+huit chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -11553,9 +11554,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_lithuania_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_lithuania_eu_driver's_license_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_lithuania_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_lithuania_eu_driver's_license_number` est trouvé.
 
 ```xml
       <!-- Lithuania Driver's License Number -->
@@ -11572,7 +11573,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -11600,12 +11601,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -11616,14 +11617,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -11633,7 +11634,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -11644,17 +11645,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -11665,8 +11666,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -11680,11 +11681,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -11694,7 +11695,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro dl
 
 
-#### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver’s_license_number
+#### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver s_license_number
 
 - vairuotojo pažymėjimas
 - vairuotojo pažymėjimo numeris
@@ -11712,14 +11713,14 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-11 chiffres sans espaces et délimiteur
+11 chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
-11 chiffres sans espaces et délimiteur :
+11 chiffres sans espaces et délimiteurs :
 
-- un chiffre (1-6) qui correspond au sexe et au century de naissance de la personne
-- six chiffres qui correspondent à la date de naissance (AAMMMMDD)
+- un chiffre (1-6) qui correspond au sexe et au siècle de naissance de la personne
+- six chiffres qui correspondent à la date de naissance (AAAAMMD)
 - trois chiffres qui correspondent au numéro de série de la date de naissance
 - un chiffre de vérification
 
@@ -11729,12 +11730,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_lithuania_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_lithuania_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_lithuania_eu_tax_file_number` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_lithuania_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_lithuania_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Lithuania Personal Code -->
@@ -11759,31 +11760,31 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 - asmeninis skaitmeninis kodas
 - asmens kodas
-- numéro de service des citoyens
-- id mcupsčių
-- mcupsčių identifikavimas numeris
-- mcupsčių identifikavimo numeris
-- mcupsčių numeris
+- numéro de service citoyen
+- mokesčių id
+- mokesčių identifikavimas numeris
+- mokesčių identifikavimo numeris
+- mokesčių numeris
 - numéro d’identification nationale
 - code personnel
 - code numérique personnel
 - piliečio paslaugos numeris
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
+- Étain #
 - unikalus identifikavimo kodas
 - unikalus identifikavimo numeris
 - numéro d’identification unique
@@ -11793,22 +11794,22 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="lithuania-physical-addresses"></a>Adresses physiques lituaniennes
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique lituanien. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance de Lituanie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="lithuania-passport-number"></a>Numéro de passeport lituanien
+## <a name="lithuania-passport-number"></a>Numéro de passeport en Lituanie
 
 ### <a name="format"></a>Format
 
-huit chiffres ou lettres sans espace ni délimiteur
+huit chiffres ou lettres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
-huit chiffres ou lettres (ne sensibles pas à la majuscule)
+huit chiffres ou lettres (non sensibles à la casse)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -11816,14 +11817,14 @@ non applicable
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_lithuania_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_lithuania_eu_passport_number` est trouvé.
-- L’expression régulière `Regex_eu_passport_date3` trouve la date au format MM AAA OU un mot clé à partir de `Keywords_eu_passport_date` laquelle est trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_lithuania_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_lithuania_eu_passport_number` est trouvé.
+- L’expression `Regex_eu_passport_date3` régulière recherche la date au format DD MM AAAA ou un mot clé `Keywords_eu_passport_date` est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_lithuania_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_lithuania_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_lithuania_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_lithuania_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Lithuania Passport Number -->
@@ -11853,10 +11854,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -11872,15 +11873,15 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
-## <a name="luxemburg-drivers-license-number"></a>Numéro de permis de conduire De Qu’est-ce que vous avez ?
+## <a name="luxemburg-drivers-license-number"></a>Numéro de permis de conduire du Luxemburg
 
 ### <a name="format"></a>Format
 
-six chiffres sans espaces et délimiteur
+six chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -11892,9 +11893,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_luxemburg_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_luxemburg_eu_driver's_license_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_luxemburg_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_luxemburg_eu_driver's_license_number` est trouvé.
 
 ```xml
       <!-- Luxemburg Driver's License Number -->
@@ -11911,7 +11912,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -11939,12 +11940,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -11955,14 +11956,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -11972,7 +11973,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -11983,17 +11984,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -12004,8 +12005,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -12019,11 +12020,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -12033,12 +12034,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro dl
 
 
-#### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver’s_license_number
+#### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver s_license_number
 
 - fahrerlaubnis
 - Führerschäin
 
-## <a name="luxemburg-national-identification-number-natural-persons"></a>Numéro d’identification national (personnes physiques)
+## <a name="luxemburg-national-identification-number-natural-persons"></a>Numéro d’identification national du Luxembourg (personnes physiques)
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -12049,7 +12050,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-13 chiffres sans espace ni délimiteur
+13 chiffres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -12060,16 +12061,16 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="checksum"></a>Somme de contrôle
 
-Oui
+oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_luxemburg_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_luxemburg_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_luxemburg_eu_national_id_card` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_luxemburg_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_luxemburg_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 
 
 ```xml
@@ -12104,18 +12105,18 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - identification individuelle
 - identité individuelle
 - numéro d’identification personnel
-- id personnel
+- ID personnel
 - identification personnelle
 - identité personnelle
 - personalidno #
 - personalidnumber #
 - persönliche identifikationsnummer
-- id unique
+- ID unique
 - identité unique
 - uniqueidkey #
 
 
-## <a name="luxemburg-national-identification-number-non-natural-persons"></a>Numéro d’identification national (personnes non physiques)
+## <a name="luxemburg-national-identification-number-non-natural-persons"></a>Numéro d’identification national du Luxembourg (personnes non naturelles)
 
 ### <a name="format"></a>Format
 
@@ -12126,11 +12127,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 11 chiffres
 
 - deux chiffres
-- espace facultatif
+- un espace facultatif
 - trois chiffres
-- espace facultatif
+- un espace facultatif
 - trois chiffres
-- espace facultatif
+- un espace facultatif
 - deux chiffres
 - un chiffre de vérification
 
@@ -12140,12 +12141,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_luxemburg_eu_tax_file_number_non_natural` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_luxemburg_eu_tax_file_number_non_natural` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_luxemburg_eu_tax_file_number` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_luxemburg_eu_tax_file_number_non_natural` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_luxemburg_eu_tax_file_number_non_natural` recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Luxemburg National Identification Number (Non-natural persons) -->
@@ -12169,17 +12170,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 #### <a name="keywords_luxemburg_eu_tax_file_number"></a>Keywords_luxemburg_eu_tax_file_number
 
 - carte de sécurité sociale
-- 2013 non
-- 2013 #
+- non resserr
+- resserr #
 - identifiant d’impôt
 - luxembourg tax identifikatiounsnummer
-- numéro d’dossier
-- numéro d’identification fiscal dernier
+- numéro d’resser
+- numéro d’identification fiscal luxembourgeois
 - numéro d’identification fiscale
 - sécurité sociale
 - sozialunterstützung
 - sozialversécherung
-- sozialversicheèsausweis
+- sozialversicherungsausweis
 - steier id
 - steier identifikatiounsnummer
 - steier nummer
@@ -12187,35 +12188,35 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - steueridentifikationsnummer
 - steuernummer
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
-- l’équipe de l’équipe #
-- l’équipe de l’équipe
+- Étain #
+- Zinn #
+- Zinn
 - zinnzahl
 
 
-## <a name="luxemburg-passport-number"></a>Numéro de passeport Dem passport
+## <a name="luxemburg-passport-number"></a>Numéro de passeport du Luxembourg
 
 ### <a name="format"></a>Format
 
-huit chiffres ou lettres sans espace ni délimiteur
+huit chiffres ou lettres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
-huit chiffres ou lettres (ne sensibles pas à la majuscule)
+huit chiffres ou lettres (non sensibles à la casse)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -12223,14 +12224,14 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_luxemburg_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_luxemburg_eu_passport_number` est trouvé.
-- L’expression régulière `Regex_eu_passport_date3` trouve la date au format MM AAA OU un mot clé à partir de `Keywords_eu_passport_date` laquelle est trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_luxemburg_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_luxemburg_eu_passport_number` est trouvé.
+- L’expression `Regex_eu_passport_date3` régulière recherche la date au format DD MM AAAA ou un mot clé `Keywords_eu_passport_date` est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_luxemburg_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_luxemburg_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_luxemburg_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_luxemburg_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Luxemburg Passport Number -->
@@ -12260,10 +12261,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -12273,9 +12274,9 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_luxemburg_eu_passport_number"></a>Keywords_luxemburg_eu_passport_number
 - ausweisnummer
-- pass luxembourg
-- passeport luxembourg
-- passport luxembourg
+- luxembourg pass
+- luxembourg passeport
+- luxembourg passport
 - no de passeport
 - no-reisepass
 - nr-reisepass
@@ -12290,20 +12291,20 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
-## <a name="luxemburg-physical-addresses"></a>Adresses physiques de Premier plan
+## <a name="luxemburg-physical-addresses"></a>Adresses physiques du Luxembourg
 
-Cette entité nommée non dissociée détecte les modèles liés à l’adresse physique à partir de DomaineMessage. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique à partir de Luxemburg. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="malaysia-identification-card-number"></a>Numéro de carte d’identification malaisien
+## <a name="malaysia-identification-card-number"></a>Numéro de carte d’identification en Malaisie
 
 ### <a name="format"></a>Format
 
@@ -12312,12 +12313,12 @@ Moyen
 ### <a name="pattern"></a>Modèle
 
 12 chiffres :
-- six chiffres au format AAMMMMD, qui sont la date de naissance
+- six chiffres au format YYMMDD, qui sont la date de naissance
 - un tiret (facultatif)
 - code de lieu de naissance à deux lettres
 - un tiret (facultatif)
 - trois chiffres aléatoires
-- code de sexe à un chiffre
+- code de genre à un chiffre
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -12325,7 +12326,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_malaysia_id_card_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_malaysia_id_card_number est trouvé.
 
@@ -12347,7 +12348,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - carte d’application numérique
 - i/c
 - i/c no
-- ic
+- Ic
 - ic no
 - carte d’identité
 - carte d’identification
@@ -12356,31 +12357,31 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - k/p no
 - kad akuan diri
 - kad aplikasi digital
-- kad pengenalan malaisie
-- kp
+- kad pengenalan malaysia
+- Kp
 - kp no
 - mykad
 - mykas
 - mykid
 - mypr
 - mytentera
-- carte d’identité Malaisie
-- carte d’identité de l’identité de l'
+- carte d’identité malaysia
+- carte d’identité malaisienne
 - nric
 - carte d’identification personnelle
 
 
-## <a name="malta-drivers-license-number"></a>Numéro de permis de conduire de Malte
+## <a name="malta-drivers-license-number"></a>Numéro de permis de conduire maltais
 
 ### <a name="format"></a>Format
 
-Combinaison de deux caractères et six chiffres dans le modèle spécifié
+Combinaison de deux caractères et de six chiffres dans le modèle spécifié
 
 ### <a name="pattern"></a>Modèle
 
-combinaison de deux caractères et six chiffres :
+combinaison de deux caractères et de six chiffres :
 
-- deux caractères (chiffres ou lettres, ne sensibles pas à la majuscule)
+- deux caractères (chiffres ou lettres, non sensibles à la casse)
 - un espace (facultatif)
 - trois chiffres
 - un espace (facultatif)
@@ -12392,9 +12393,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_malta_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_malta_eu_driver's_license_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_malta_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_malta_eu_driver's_license_number` est trouvé.
 
 ```xml
       <!-- Malta Driver's License Number -->
@@ -12411,7 +12412,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -12439,12 +12440,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -12455,14 +12456,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -12472,7 +12473,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -12483,17 +12484,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -12504,8 +12505,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -12519,11 +12520,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -12533,7 +12534,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro dl
 
 
-#### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver’s_license_number
+#### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver s_license_number
 
 - liċenzja tas-sewqan
 - liċenzji tas-sewwieq
@@ -12557,7 +12558,7 @@ sept chiffres suivis d’une lettre
 sept chiffres suivis d’une lettre :
 
 - sept chiffres
-- une lettre dans « M, G, A, P, L, H, B, Z » (ne sensible à la cas)
+- une lettre dans « M, G, A, P, L, H, B, Z » (ne respectant pas la casse)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -12565,12 +12566,12 @@ Non applicable
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_malta_eu_national_id_card` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_malta_eu_national_id_card` régulière recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_malta_eu_national_id_card` trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_malta_eu_national_id_card` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_malta_eu_national_id_card` régulière recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Malta Identity Card Number -->
@@ -12589,7 +12590,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 #### <a name="keywords_malta_eu_national_id_card"></a>Keywords_malta_eu_national_id_card
 
-- numéro de service des citoyens
+- numéro de service citoyen
 - id tat-taxxa
 - identifika numru tal-biljett
 - kodiċi numerali personali
@@ -12605,11 +12606,11 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - uniqueidentityno #
 
 
-## <a name="malta-passport-number"></a>Numéro de passeport de Malte
+## <a name="malta-passport-number"></a>Numéro de passeport maltais
 
 ### <a name="format"></a>Format
 
-sept chiffres sans espaces ni délimiteur
+sept chiffres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -12621,14 +12622,14 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_malta_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_malta_eu_passport_number` est trouvé.
-- Un mot clé est `Keywords_eu_passport_date` trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_malta_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_malta_eu_passport_number` est trouvé.
+- Un mot clé à partir de `Keywords_eu_passport_date` est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_malta_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_malta_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_malta_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_malta_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Malta Passport Number -->
@@ -12655,10 +12656,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -12668,19 +12669,19 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_malta_eu_passport_number"></a>Keywords_malta_eu_passport_number
 
-- numru tal-talport
-- numri tal-talport
-- Nru tal-talport
+- numru tal-passaport
+- numri tal-passaport
+- Nru tal-passaport
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
 ## <a name="malta-physical-addresses"></a>Adresses physiques de Malte
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Malte. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de Malte. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -12691,20 +12692,20 @@ Moyen
 
 ### <a name="format"></a>Format
 
-Pour les national(s) d’unité nationale(s) :
+Pour les ressortissants maltais :
 - sept chiffres et une lettre dans le modèle spécifié
 
-Nationaux non-nationaux et entités américaines :
+Ressortissants non maltais et entités maltaises :
 - neuf chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Nationals malaux : sept chiffres et une lettre
+Ressortissants maltais : sept chiffres et une lettre
 
 - sept chiffres
-- une lettre (ne doit pas être sensible à la cas)
+- une lettre (non sensible à la casse)
 
-Personnes étrangères et entités locales : neuf chiffres
+Ressortissants non maltais et entités maltaises : neuf chiffres
 
 - neuf chiffres
 
@@ -12714,12 +12715,12 @@ Non applicable
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’regex  `Regex_malta_eu_tax_file_number`  ou `Regex_malta_eu_tax_file_number_non_maltese_national` trouve le contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_malta_eu_tax_file_number`  régulière ou `Regex_malta_eu_tax_file_number_non_maltese_national` recherche du contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_malta_eu_tax_file_number` trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’regex  `Regex_malta_eu_tax_file_number` ou `Regex_malta_eu_tax_file_number_non_maltese_national` trouve le contenu qui correspond au modèle.
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_malta_eu_tax_file_number` régulière ou `Regex_malta_eu_tax_file_number_non_maltese_national` recherche du contenu qui correspond au modèle.
 
 ```xml
       <!-- Malta Tax ID Number -->
@@ -12745,7 +12746,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 #### <a name="keywords_malta_eu_tax_file_number"></a>Keywords_malta_eu_tax_file_number
 
-- numéro de service des citoyens
+- numéro de service citoyen
 - id tat-taxxa
 - identifika numru tal-biljett
 - kodiċi numerali personali
@@ -12757,42 +12758,42 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - numru tat-taxxa
 - code numérique personnel
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
+- Étain #
 - numéro d’identification unique
 - numéro d’identité unique
 - uniqueidentityno #
 
 ## <a name="medical-specialities"></a>Spécialités médicales
 
-Cette entité nommée non dissociée détecte les termes liés à des spécialités médicales, telles que *la santé*.  Il prend uniquement en charge les termes anglais. Il est également inclus dans [toutes les conditions](#all-medical-terms-and-conditions) médicales regroupées nommées SIT d’entité.
+Cette entité nommée non groupée détecte les termes liés aux spécialités médicales, telles que *la dermatologie*.  Il prend uniquement en charge les termes anglais. Il est également inclus dans les [conditions générales médicales](#all-medical-terms-and-conditions) regroupées sous le nom d’entité SIT.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Élevé
 
-## <a name="medicare-beneficiary-identifier-mbi-card"></a>Carte MBI (Beneficiary Identifier)
+## <a name="medicare-beneficiary-identifier-mbi-card"></a>Carte d’identificateur du bénéficiaire de l’assurance-maladie (MBI)
 
 ### <a name="format"></a>Format
 
-Modèle alphanumérique de 11 caractères
+Modèle alphanumérique à 11 caractères
 
 ### <a name="pattern"></a>Modèle
 
-- un chiffre entre 1 et 9
+- un chiffre compris entre 1 et 9
 - une lettre à l’exclusion de S, L, O, I, B, Z
 - un chiffre ou une lettre à l’exclusion de S, L, O, I, B, Z
 - un chiffre
@@ -12810,12 +12811,12 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_mbi_card` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_mbi_card` régulière recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keyword_mbi_card` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_mbi_card` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_mbi_card` régulière recherche le contenu qui correspond au modèle.
 
 ```xml
     <!-- Medicare Beneficiary Identifier (MBI) card -->
@@ -12834,27 +12835,27 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keyword_mbi_card"></a>Keyword_mbi_card
 
-- mbi
-- mbi #
-- bénéficiaire de l’assurance maladie #
-- identificateur du bénéficiaire de l’assurance maladie
-- no de bénéficiaire de l’assurance maladie
-- numéro de bénéficiaire de l’assurance maladie
-- bénéficiaire de l’assurance maladie #
+- Mbi
+- Mbi #
+- bénéficiaire de l’assurance-maladie #
+- Identificateur du bénéficiaire de l’assurance-maladie
+- bénéficiaire de l’assurance-maladie non
+- numéro de bénéficiaire de l’assurance-maladie
+- bénéficiaire de l’assurance-maladie #
 
 
-## <a name="mexico-unique-population-registry-code-curp"></a>Code curp (Unique Population Registry Code) du Mexique
+## <a name="mexico-unique-population-registry-code-curp"></a>Code du Registre de la population unique du Mexique (CURP)
 
 ### <a name="format"></a>Format
 
-Modèle alphanumérique de 18 caractères
+Modèle alphanumérique à 18 caractères
 
 ### <a name="pattern"></a>Modèle
 
-- quatre lettres (ne sensibles à la majuscule)
+- quatre lettres (ne respectant pas la casse)
 - six chiffres indiquant une date valide
 - une lettre - H/h ou M/m
-- deux lettres indiquant un code d’état américain valide
+- deux lettres indiquant un code d’état mexicain valide
 - trois lettres
 - une lettre ou un chiffre
 - un chiffre
@@ -12865,12 +12866,12 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_mexico_population_registry_code` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_mexico_population_registry_code` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keyword_mexico_population_registry_code` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_mexico_population_registry_code` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_mexico_population_registry_code` recherche le contenu qui correspond au modèle.
 
 ```xml
     <!-- Mexico Unique Population Registry Code (CURP) -->
@@ -12891,8 +12892,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 - Clave Única de Registro de Población
 - Clave Unica de Registro de Poblacion
-- Code de Registre de population unique 
-- code de population unique
+- Code unique du Registre de la population 
+- code de remplissage unique
 - CURP
 - ID personnel
 - Unique ID
@@ -12905,11 +12906,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - clave personal Identidad
 - personal Identidad Clave
 - ClaveÚnica
-- queunica
+- claveunica
 - clavepersonalIdentidad
 
 
-## <a name="netherlands-citizens-service-bsn-number"></a>Numéro de service des citoyens (BSN) des Pays-Bas
+## <a name="netherlands-citizens-service-bsn-number"></a>Numéro de service du citoyen néerlandais (BSN)
 
 ### <a name="format"></a>Format
 
@@ -12917,7 +12918,7 @@ huit ou neuf chiffres contenant des espaces facultatifs
 
 ### <a name="pattern"></a>Modèle
 
-huit à neuf chiffres :
+huit-neuf chiffres :
 - trois chiffres
 - un espace (facultatif)
 - trois chiffres
@@ -12930,7 +12931,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_netherlands_bsn trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_netherlands_bsn est trouvé.
 - La somme de contrôle est correcte.
@@ -12949,21 +12950,21 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 
 #### <a name="keywords_netherlands_eu_national_id_card"></a>Keywords_netherlands_eu_national_id_card
 
-- bsn #
-- bsn
-- butservicenummer
-- numéro de service des citoyens
+- Bsn #
+- Bsn
+- burgerservicenummer
+- numéro de service citoyen
 - numéro de personne
 - numéro personnel
 - code numérique personnel
 - numéro lié à la personne
 - persoonlijk nummer
-- code persoonlijke numerieke
-- persoonsgeègeen
+- persoonlijke numerieke code
+- persoonsgebonden
 - persoonsnummer
 - sociaal-fiscaal nummer
 - numéro social-fiscal
-- sofi
+- Sofi
 - sofinummer
 - uniek identificatienummer
 - uniek identiteitsnummer
@@ -12972,11 +12973,11 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - uniqueidentityno #
 
 
-## <a name="netherlands-drivers-license-number"></a>Numéro de permis de conduire néerlandais
+## <a name="netherlands-drivers-license-number"></a>Numéro de permis de conduire aux Pays-Bas
 
 ### <a name="format"></a>Format
 
-10 chiffres sans espaces et délimiteur
+10 chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -12988,9 +12989,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_netherlands_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_netherlands_eu_driver's_license_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_netherlands_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_netherlands_eu_driver's_license_number` est trouvé.
 
 ```xml
       <!-- Netherlands Driver's License Number -->
@@ -13007,7 +13008,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -13035,12 +13036,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -13051,14 +13052,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -13068,7 +13069,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -13079,17 +13080,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -13100,8 +13101,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -13115,11 +13116,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -13129,7 +13130,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro dl
 
 
-#### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver’s_license_number
+#### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver s_license_number
 
 - permis de conduire
 - rijbewijs
@@ -13139,11 +13140,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - rijbewijsnummers
 
 
-## <a name="netherlands-passport-number"></a>Numéro de passeport néerlandais
+## <a name="netherlands-passport-number"></a>Numéro de passeport des Pays-Bas
 
 ### <a name="format"></a>Format
 
-neuf lettres ou chiffres sans espace ni délimiteur
+neuf lettres ou chiffres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -13155,14 +13156,14 @@ non applicable
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_netherlands_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_netherlands_eu_passport_number` est trouvé.
-- L’expression `Regex_netherlands_eu_passport_date` régulière trouve la date au format DD MMM/MMM AAAY (exemple - 26 MAA/MAR 2012)
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_netherlands_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_netherlands_eu_passport_number` est trouvé.
+- L’expression `Regex_netherlands_eu_passport_date` régulière trouve la date au format DD MMM/MMM AAAA (exemple - 26 MAA/MAR 2012)
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_netherlands_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_netherlands_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_netherlands_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_netherlands_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Netherlands Passport Number -->
@@ -13189,10 +13190,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -13202,7 +13203,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_netherlands_eu_passport_number"></a>Keywords_netherlands_eu_passport_number
 
-- nummer paspoort
+- paspoort nummer
 - paspoortnummers
 - paspoortnummer
 - paspoort nr
@@ -13210,14 +13211,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="netherlands-physical-addresses"></a>Adresses physiques des Pays-Bas
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en provenance des Pays-Bas. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique des Pays-Bas. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="netherlands-tax-identification-number"></a>Numéro d’identification fiscale pays-Bas
+## <a name="netherlands-tax-identification-number"></a>Numéro d’identification fiscale aux Pays-Bas
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -13228,7 +13229,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-neuf chiffres sans espaces ni délimiteur
+neuf chiffres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -13240,12 +13241,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_netherlands_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_netherlands_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_netherlands_eu_tax_file_number` trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_netherlands_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_netherlands_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Netherlands Tax Identification Number -->
@@ -13265,43 +13266,43 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 #### <a name="keywords_netherlands_eu_tax_file_number"></a>Keywords_netherlands_eu_tax_file_number
 
 - btw nummer
-- identification fiscale de l’entreprise
+- hollânske identification fiscale
 - hulandes impuesto id number
 - hulandes impuesto identification
 - identificatienummer belasting
 - identificatienummer van belasting
-- impuesto identification number
+- numéro d’identification impuesto
 - impuesto number
 - nederlands belasting id nummer
 - nederlands belasting identificatie
 - nederlands belasting identificatienummer
 - nederlands belastingnummer
 - nederlandse belasting identificatie
-- identification fiscale pays-Bas
-- identification fiscale de l’Île-du-Nord
-- tin (pays-bas)
-- l’tin des pays-bas
+- identification fiscale aux Pays-Bas
+- l’identification fiscale de netherland
+- boîte pays-bas
+- netherland’s tin
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- identification fiscale tal
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
+- tax identification tal
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
 - tax tal
-- tld #
-- todno #
-- Erdnumber #
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
+- Étain #
 
 
-## <a name="netherlands-value-added-tax-number"></a>Numéro de taxe sur la valeur ajoutée des Pays-Bas
+## <a name="netherlands-value-added-tax-number"></a>Numéro de taxe sur la valeur ajoutée aux Pays-Bas
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -13312,17 +13313,17 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-Modèle alphanumérique de 14 caractères
+Modèle alphanumérique à 14 caractères
 
 ### <a name="pattern"></a>Modèle
 
-Modèle alphanumérique de 14 caractères :
+Modèle alphanumérique à 14 caractères :
 
 - N ou n
 - L ou l
-- espace, point ou trait d’union facultatif
+- espace facultatif, point ou trait d’union
 - neuf chiffres
-- espace, point ou trait d’union facultatif
+- espace facultatif, point ou trait d’union
 - B ou b
 - deux chiffres
 
@@ -13332,12 +13333,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_netherlands_value_added_tax_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_netherlands_value_added_tax_number recherche le contenu qui correspond au modèle.
 - Un mot clé de Keywords_netherlands_value_added_tax_number est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_netherlands_value_added_tax_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_netherlands_value_added_tax_number recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Netherlands Value Added Tax Number -->
@@ -13358,13 +13359,13 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 - numéro de tva
 - vat no
-- vat #
-- welg tafoege tax getal
+- Tva #
+- wearde tafoege tax getal
 - btw nûmer
 - btw-nummer
 
 
-## <a name="new-zealand-bank-account-number"></a>Numéro de compte bancaire nouvelle-Zélande
+## <a name="new-zealand-bank-account-number"></a>Numéro de compte bancaire en Nouvelle-Zélande
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -13375,20 +13376,20 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-Modèle de 14 à 16 chiffres avec délimiteur facultatif
+Modèle à 14 chiffres à 16 chiffres avec délimiteur facultatif
 
 ### <a name="pattern"></a>Modèle
 
-Modèle de 14 à 16 chiffres avec délimiteur facultatif :
+Modèle à 14 chiffres à 16 chiffres avec délimiteur facultatif :
 
 - deux chiffres
-- trait d’union ou espace facultatif
+- un trait d’union ou un espace facultatif
 - trois à quatre chiffres
-- trait d’union ou espace facultatif
+- un trait d’union ou un espace facultatif
 - sept chiffres
-- trait d’union ou espace facultatif
+- un trait d’union ou un espace facultatif
 - deux à trois chiffres
-- trait d’union ou espace des options
+- un trait d’union ou un espace d’options
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -13396,12 +13397,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_new_zealand_bank_account_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_new_zealand_bank_account_number recherche le contenu qui correspond au modèle.
 - Un mot clé de Keywords_new_zealand_bank_account_number est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_new_zealand_bank_account_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_new_zealand_bank_account_number recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- New Zealand Bank Account Number -->
@@ -13427,7 +13428,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - bank_acct_nbr
 
 
-## <a name="new-zealand-drivers-license-number"></a>Numéro de permis de conduire nouvelle-Zélande
+## <a name="new-zealand-drivers-license-number"></a>Numéro de permis de conduire en Nouvelle-Zélande
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -13453,12 +13454,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_newzealand_driver_license_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_newzealand_driver_license_number recherche le contenu qui correspond au modèle.
 - Un mot clé de Keywords_newzealand_driver_license_number est trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_newzealand_driver_license_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_newzealand_driver_license_number recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- New Zealand Driver License Number -->
@@ -13493,16 +13494,16 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - driver’lics
 - permis de conduire
 - permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - driver’slic
 - driver’slics
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - permis de conduire
 - driverlic #
@@ -13525,25 +13526,25 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - driver’lics #
 - permis de conduire #
 - permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - driver’slic #
 - driver’slics #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduite international
 - permis de conduite internationaux
 - nz automobile association
-- association automobile nouvelle-Zélande
+- Association automobile néo-zélandaise
 
 
-## <a name="new-zealand-inland-revenue-number"></a>Numéro de revenu de l’intérieur de la Nouvelle-Zélande
+## <a name="new-zealand-inland-revenue-number"></a>Chiffre d’affaires intérieur de la Nouvelle-Zélande
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -13554,16 +13555,16 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-huit ou neuf chiffres avec des délimiteur facultatifs
+huit ou neuf chiffres avec délimiteurs facultatifs
 
 ### <a name="pattern"></a>Modèle
 
-huit ou neuf chiffres avec des délimiteur facultatifs
+huit ou neuf chiffres avec délimiteurs facultatifs
 
 - deux ou trois chiffres
-- espace ou trait d’union facultatif
+- un espace ou un trait d’union facultatif
 - trois chiffres
-- espace ou trait d’union facultatif
+- un espace ou un trait d’union facultatif
 - trois chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -13572,12 +13573,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_new_zealand_inland_revenue_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_new_zealand_inland_revenue_number recherche le contenu qui correspond au modèle.
 - Un mot clé de Keywords_new_zealand_inland_revenue_number est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_new_zealand_inland_revenue_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_new_zealand_inland_revenue_number recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- New Zealand Inland Revenue Number -->
@@ -13599,12 +13600,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - ird no.
 - ird no #
 - nz ird
-- nouvelle-Zélande ird
-- numéro ird
-- numéro de revenu intérieur
+- nouvelle zélande ird
+- ird number
+- chiffre d’affaires intérieur
 
 
-## <a name="new-zealand-ministry-of-health-number"></a>Numéro de santé du ministère de la Nouvelle-Zélande
+## <a name="new-zealand-ministry-of-health-number"></a>Numéro de ministère de la Santé de Nouvelle-Zélande
 
 ### <a name="format"></a>Format
 
@@ -13612,7 +13613,7 @@ trois lettres et quatre chiffres
 
 ### <a name="pattern"></a>Modèle
 
-- trois lettres (ne sont pas sensibles à la majuscule) à l’exception de « I » et « O »
+- trois lettres (non sensibles à la casse) à l’exception de « I » et « O »
 - quatre chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -13621,12 +13622,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_new_zealand_ministry_of_health_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_nz_terms est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_new_zealand_ministry_of_health_number trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -13649,21 +13650,21 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 - NHI
 - Nouvelle-Zélande
-- Index national de santé
+- National Health Index
 - NHI #
-- Index national de santé #
+- National Health Index #
 
 
-## <a name="new-zealand-physical-addresses"></a>Adresses physiques en Nouvelle-Zélande
+## <a name="new-zealand-physical-addresses"></a>Adresses physiques néo-zélandaises
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en Nouvelle-Zélande. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Nouvelle-Zélande. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="new-zealand-social-welfare-number"></a>Numéro de réseau social nouvelle-zélande
+## <a name="new-zealand-social-welfare-number"></a>Numéro de l’aide sociale en Nouvelle-Zélande
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -13692,12 +13693,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_newzealand_social_welfare_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_newzealand_social_welfare_number recherche le contenu qui correspond au modèle.
 - Un mot clé de Keywords_newzealand_social_welfare_number est trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_newzealand_social_welfare_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_newzealand_social_welfare_number recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Newzealand Social Welfare Number -->
@@ -13717,14 +13718,14 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 #### <a name="keyword_new_zealand_social_welfare_number"></a>Keyword_new_zealand_social_welfare_number
 
-- social social #
-- social social #
-- social social no.
-- numéro social
+- Sociale #
+- Sociale #
+- bien-être social Non.
+- numéro de bien-être social
 - swn #
 
 
-## <a name="norway-identification-number"></a>Numéro d’identification norvégien
+## <a name="norway-identification-number"></a>Numéro d’identification de la Norvège
 
 ### <a name="format"></a>Format
 
@@ -13734,7 +13735,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 11 chiffres :
 - six chiffres au format DDMMYY, qui sont la date de naissance
-- numéro individuel à trois chiffres
+- Nombre individuel à trois chiffres
 - deux chiffres de vérification
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -13743,12 +13744,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_norway_id_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_norway_id_number est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_norway_id_numbe trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -13773,20 +13774,20 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - Norwegian ID Number
 - ID Number
 - Identification
-- Personnummer
+- Personneur
 - Fødselsnummer
 
 
-## <a name="norway-physical-addresses"></a>Adresses physiques norvégiens
+## <a name="norway-physical-addresses"></a>Adresses physiques en Norvège
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en Norvège. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique à partir de la Norvège. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="philippines-unified-multi-purpose-identification-number"></a>Numéro d’identification multi-usage unifié philippines
+## <a name="philippines-unified-multi-purpose-identification-number"></a>Numéro d’identification multi-usage unifié aux Philippines
 
 ### <a name="format"></a>Format
 
@@ -13807,7 +13808,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_philippines_unified_id trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_philippines_id est trouvé.
 
@@ -13831,7 +13832,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - Pinag-isang Multi-Layunin ID
 
 
-## <a name="poland-drivers-license-number"></a>Numéro de permis de conduire polonais
+## <a name="poland-drivers-license-number"></a>Numéro de permis de conduire en Pologne
 
 ### <a name="format"></a>Format
 
@@ -13842,9 +13843,9 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 14 chiffres et deux barres obliques :
 
 - cinq chiffres
-- barre oblique
+- une barre oblique
 - deux chiffres
-- barre oblique
+- une barre oblique
 - sept chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -13853,9 +13854,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_poland_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_poland_eu_driver's_license_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_poland_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_poland_eu_driver's_license_number` est trouvé.
 
 ```xml
       <!-- Poland Driver's License Number -->
@@ -13872,7 +13873,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -13900,12 +13901,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -13916,14 +13917,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -13933,7 +13934,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -13944,17 +13945,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -13965,8 +13966,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -13980,11 +13981,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -13994,13 +13995,13 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro dl
 
 
-#### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver’s_license_number
+#### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver s_license_number
 
 - prawo jazdy
 - prawa jazdy
 
 
-## <a name="poland-identity-card"></a>Carte d’identité pologne
+## <a name="poland-identity-card"></a>Carte d’identité polonaise
 
 ### <a name="format"></a>Format
 
@@ -14008,7 +14009,7 @@ trois lettres et six chiffres
 
 ### <a name="pattern"></a>Modèle
 
-trois lettres (ne faisant pas l’affaire) suivies de six chiffres
+trois lettres (non sensibles à la casse) suivies de six chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -14016,7 +14017,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_polish_national_id trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_polish_national_id_passport_number est trouvé.
 - La somme de contrôle est correcte.
@@ -14053,7 +14054,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="pattern"></a>Modèle
 
-- six chiffres représentant la date de naissance au format AAMMMMDD
+- six chiffres représentant la date de naissance au format YYMMDD
 - quatre chiffres
 - un chiffre de vérification
 
@@ -14063,12 +14064,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_pesel_identification_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_pesel_identification_number est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_pesel_identification_number trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -14091,18 +14092,18 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 - dowód osobisty
 - dowódosobisty
-- numer niepowtarzalny
+- niepowtarzalny numer
 - niepowtarzalnynumer
 - nr.-pesel
 - nr-pesel
 - numer identyfikacyjny
 - pesel
-- tożsamościodowej
+- tożsamości narodowej
 
 
-## <a name="poland-passport-number"></a>Numéro de passeport polonais
+## <a name="poland-passport-number"></a>Numéro de passeport en Pologne
 
-Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles Numéro de passeport de l’UE. Il est également disponible en tant qu’entité de type d’informations sensibles autonome.
+Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles numéro de passeport de l’UE. Il est également disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
 
@@ -14110,7 +14111,7 @@ deux lettres et sept chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Deux lettres (ne faisant pas l’affaire) suivies de sept chiffres
+Deux lettres (non sensibles à la casse) suivies de sept chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -14118,19 +14119,19 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction `Func_polish_passport_number_v2` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction `Func_polish_passport_number_v2` recherche le contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
-- Mot clé à partir de `Keywords_eu_passport_number` ou `Keyword_polish_national_passport_number` est trouvé.
+- Un mot clé à partir ou `Keywords_eu_passport_number` `Keyword_polish_national_passport_number` est trouvé.
 - Un mot clé est `Keywords_eu_passport_date` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction `Func_polish_passport_number_v2` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction `Func_polish_passport_number_v2` recherche le contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
-- Mot clé à partir de `Keywords_eu_passport_number` ou `Keyword_polish_national_passport_number` est trouvé.
+- Un mot clé à partir ou `Keywords_eu_passport_number` `Keyword_polish_national_passport_number` est trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction `Func_polish_passport_number_v2` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction `Func_polish_passport_number_v2` recherche le contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
 ```xml
@@ -14161,10 +14162,10 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -14178,27 +14179,27 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - numery paszportów
 - numery paszportowe
 - nr paszportu
-- nr. paszportu
+- Nr. paszportu
 - nr paszportów
 - n° passeport
 - passeport n°
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
 ## <a name="poland-physical-addresses"></a>Adresses physiques en Pologne
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique depuis la Pologne. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Pologne. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="poland-regon-number"></a>Numéro reGON polonais
+## <a name="poland-regon-number"></a>Numéro REGON de Pologne
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -14209,7 +14210,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-Nombre à 9 chiffres ou 14 chiffres
+9 chiffres ou 14 chiffres
 
 ### <a name="pattern"></a>Modèle
 
@@ -14217,7 +14218,7 @@ neuf chiffres ou 14 chiffres :
 
 - neuf chiffres ou
 - neuf chiffres
-- trait d’union
+- Tiret
 - cinq chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -14226,12 +14227,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_polish_regon_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_polish_regon_number recherche le contenu qui correspond au modèle.
 - Un mot clé de Keywords_polish_regon_number est trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_polish_regon_number trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_polish_regon_number recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Polish REGON Number  -->
@@ -14249,11 +14250,11 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 #### <a name="keywords_poland_regon_number"></a>Keywords_poland_regon_number
 
-- id de régon
-- numéro statistique
-- id statistique
-- non statistique
-- numéro de régon
+- regon id
+- nombre statistique
+- ID statistique
+- statistiques non
+- regon number
 - regonid #
 - regonno #
 - ID d’entreprise
@@ -14265,7 +14266,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - numeruregon #
 
 
-## <a name="poland-tax-identification-number"></a>Numéro d’identification fiscale polonais
+## <a name="poland-tax-identification-number"></a>Numéro d’identification fiscale en Pologne
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -14276,7 +14277,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-11 chiffres sans espace ni délimiteur
+11 chiffres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -14288,8 +14289,8 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_poland_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_poland_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_poland_eu_tax_file_number` trouvé.
 
 
@@ -14312,21 +14313,21 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - numer identyfikacji podatkowej
 - numeridentyfikacjipodatkowej #
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
+- Étain #
 - vat id #
 - vat id
 - vat no
@@ -14336,7 +14337,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - vatno #
 
 
-## <a name="portugal-citizen-card-number"></a>Numéro de carte de citoyen portugais
+## <a name="portugal-citizen-card-number"></a>Numéro de carte de citoyen du Portugal
 
 ### <a name="format"></a>Format
 
@@ -14352,7 +14353,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_portugal_citizen_card trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_portugal_citizen_card est trouvé.
 
@@ -14376,36 +14377,36 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - numéro de document
 - documento de identificação
 - numéro d’ID
-- identification non
+- identification no
 - numéro d’identification
-- carte d’identité non
+- identity card no
 - numéro de carte d’identité
 - carte d’identité nationale
-- nic
+- Nic
 - número bi de portugal
-- número de identificação civile
+- número de identificação civil
 - número de identificação fiscal
 - número do documento
-- numéro bi portugal
+- portugal bi number
 
 
-## <a name="portugal-drivers-license-number"></a>Numéro de permis de conduire portugais
+## <a name="portugal-drivers-license-number"></a>Numéro de permis de conduire au Portugal
 
 ### <a name="format"></a>Format
 
-deux modèles - deux lettres suivies de 5 à 8 chiffres avec des caractères spéciaux
+deux modèles : deux lettres suivies de 5 à 8 chiffres avec des caractères spéciaux
 
 ### <a name="pattern"></a>Modèle
 
-Modèle 1 : deux lettres suivies de 5/6 avec des caractères spéciaux :
-- Deux lettres (ne sont pas sensibles à la majuscule)
+Modèle 1 : Deux lettres suivies de 5/6 avec des caractères spéciaux :
+- Deux lettres (non sensibles à la casse)
 - Un trait d’union 
 - Cinq ou six chiffres
 - Un espace
 - Un chiffre
 
 Modèle 2 : Une lettre suivie de 6/8 chiffres avec des caractères spéciaux :
-- Une lettre (ne doit pas être sensible à la cas)
+- Une lettre (non sensible à la casse)
 - Un trait d’union 
 - Six ou huit chiffres
 - Un espace
@@ -14418,9 +14419,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_portugal_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_portugal_eu_driver's_license_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_portugal_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_portugal_eu_driver's_license_number` est trouvé.
 
 ```xml
       <!-- Portugal Driver's License Number -->
@@ -14437,7 +14438,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -14465,12 +14466,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -14481,14 +14482,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -14498,7 +14499,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -14509,17 +14510,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -14530,8 +14531,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -14545,11 +14546,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -14559,10 +14560,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro dl
 
 
-#### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver’s_license_number
+#### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver s_license_number
 
-- carteira de qua
-- carteira 2016
+- carteira de motorista
+- carteira motorista
 - carteira de habilitação
 - carteira habilitação
 - número de licença
@@ -14573,17 +14574,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - carta de condução
 
 
-## <a name="portugal-passport-number"></a>Numéro de passeport portugais
+## <a name="portugal-passport-number"></a>Numéro de passeport du Portugal
 
 ### <a name="format"></a>Format
 
-une lettre suivie de six chiffres sans espace ni délimiteur
+une lettre suivie de six chiffres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
 une lettre suivie de six chiffres :
 
-- une lettre (ne doit pas être sensible à la cas)
+- une lettre (non sensible à la casse)
 - six chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -14592,14 +14593,14 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_portugal_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_portugal_eu_passport_number` est trouvé.
-- L’expression régulière `Regex_eu_passport_date1` trouve la date au format DD.MM.YYYY ou dans laquelle un `Keywords_eu_passport_date` mot clé est trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_portugal_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_portugal_eu_passport_number` est trouvé.
+- L’expression `Regex_eu_passport_date1` régulière recherche la date au format DD.MM.AAAA ou un mot clé `Keywords_eu_passport_date` est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_portugal_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_portugal_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_portugal_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_portugal_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Portugal Passport Number -->
@@ -14629,10 +14630,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -14642,33 +14643,33 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_portugal_eu_passport_number"></a>Keywords_portugal_eu_passport_number
 
-- número doentporte
-- passport portugais
+- número do passaporte
 - passeport portugais
-- portugueseeporte
-- neporte nº
+- passeport portugais
+- portugais passaporte
+- passaporte nº
 - passeport nº
-- números de quaporte
+- números de passaporte
 - passeports portugais
-- númeroposte
-- númerosposte
+- número passaporte
+- números passaporte
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
 ## <a name="portugal-physical-addresses"></a>Adresses physiques du Portugal
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique en provenance du Portugal. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique du Portugal. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="portugal-tax-identification-number"></a>Numéro d’identification fiscale portugais
+## <a name="portugal-tax-identification-number"></a>Numéro d’identification fiscale du Portugal
 
 ### <a name="format"></a>Format
 
@@ -14677,9 +14678,9 @@ neuf chiffres avec des espaces facultatifs
 ### <a name="pattern"></a>Modèle
 
 - trois chiffres
-- espace facultatif
+- un espace facultatif
 - trois chiffres
-- espace facultatif
+- un espace facultatif
 - trois chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -14688,12 +14689,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_portugal_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_portugal_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_portugal_eu_tax_file_number` trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_portugal_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_portugal_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Portugal Tax Identification Number -->
@@ -14712,31 +14713,31 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 #### <a name="keywords_portugal_eu_tax_file_number"></a>Keywords_portugal_eu_tax_file_number
 
-- cpf #
-- cpf
-- nif #
-- nif
+- Cpf #
+- Cpf
+- Nif #
+- Nif
 - número de identificação fisca
-- numero fiscal
+- nombreuses
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
+- Étain #
 
 
-## <a name="romania-drivers-license-number"></a>Numéro de permis de conduire roumain
+## <a name="romania-drivers-license-number"></a>Numéro de permis de conduire en Roumanie
 
 ### <a name="format"></a>Format
 
@@ -14745,7 +14746,7 @@ un caractère suivi de huit chiffres
 ### <a name="pattern"></a>Modèle
 
 un caractère suivi de huit chiffres :
-- une lettre (ne sensible à la cas) ou un chiffre
+- une lettre (non sensible à la casse) ou un chiffre
 - huit chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -14754,9 +14755,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_romania_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_romania_eu_driver's_license_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_romania_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_romania_eu_driver's_license_number` est trouvé.
 
 ```xml
       <!-- Romania Driver's License Number -->
@@ -14773,7 +14774,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -14801,12 +14802,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -14817,14 +14818,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -14834,7 +14835,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -14845,17 +14846,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -14866,8 +14867,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -14881,11 +14882,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -14894,21 +14895,21 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - dlno
 - numéro dl
 
-#### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver’s_license_number
+#### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver s_license_number
 
-- permis de déréere
-- permisului de quere
-- permisului permetere
-- permisele de quere
-- permisele permetere
-- permiseere
+- permis de conducere
+- permisului de conducere
+- permisului conducere
+- permisele de conducere
+- permisele conducere
+- permis conducere
 
 
-## <a name="romania-passport-number"></a>Numéro de passeport roumain
+## <a name="romania-passport-number"></a>Numéro de passeport en Roumanie
 
 ### <a name="format"></a>Format
 
-huit ou neuf chiffres sans espace et délimiteur
+huit ou neuf chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -14920,14 +14921,14 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_romania_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_romania_eu_passport_number` est trouvé.
-- L’expression `Regex_romania_eu_passport_date` régulière trouve la date au format DD MMM/MMM AA (Exemple - 01 février/10 février) `Keywords_eu_passport_date` ou un mot clé à partir de laquelle est trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_romania_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_romania_eu_passport_number` est trouvé.
+- L’expression `Regex_romania_eu_passport_date` régulière recherche la date au format DD MMM/MMM YY (exemple - 01 FEB/FEB 10) ou un mot clé `Keywords_eu_passport_date` est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_romania_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_romania_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_romania_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_romania_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Romania Passport Number -->
@@ -14957,10 +14958,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -14974,11 +14975,11 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
-## <a name="romania-personal-numeric-code-cnp"></a>Code numérique personnel roumain (CNP)
+## <a name="romania-personal-numeric-code-cnp"></a>Code numérique personnel (CNP) en Roumanie
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -14989,12 +14990,12 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-13 chiffres sans espaces et délimiteur
+13 chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
 - un chiffre de 1 à 9
-- six chiffres représentant la date de naissance (AAMMMMDD)
+- six chiffres représentant la date de naissance (AAAAMMD)
 - deux chiffres, qui peuvent être 01-52 ou 99
 - quatre chiffres
 
@@ -15004,12 +15005,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_romania_eu_national_id_card` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_romania_eu_national_id_card` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_romania_eu_national_id_card` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_romania_eu_national_id_card` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_romania_eu_national_id_card` recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Romania Personal Numerical Code (CNP) -->
@@ -15030,8 +15031,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 - cnp #
 - cnp
-- cod identificare personal
-- cod numérique personnel
+- cod identificare personnel
+- cod numeric personal
 - cod unic identificare
 - codnumericpersonal #
 - codul fiscal nr.
@@ -15039,10 +15040,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - id-ul taxei
 - numéro d’assurance
 - insurancenumber #
-- id national #
+- ID national #
 - id national
 - numéro d’identification nationale
-- număr identificare personal
+- număr identificare personnel
 - număr identitate
 - număr personal unic
 - număridentitate #
@@ -15052,26 +15053,26 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - număru de identificare fiscală
 - numărul de identificare fiscală
 - code numérique personnel
-- pin #
-- pin
-- fichier fiscal non
+- épingler #
+- épingler
+- fichier fiscal no
 - numéro de dossier fiscal
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
+- Étain #
 - numéro d’identification unique
 - numéro d’identité unique
 - uniqueidentityno #
@@ -15080,7 +15081,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="romania-physical-addresses"></a>Adresses physiques roumaines
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Roumanie. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance de Roumanie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -15105,9 +15106,9 @@ Nombre à 10 chiffres
 Nombre à 10 chiffres :
 
 - deux chiffres
-- espace ou trait d’union facultatif
+- un espace ou un trait d’union facultatif
 - deux chiffres
-- espace facultatif
+- un espace facultatif
 - six chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -15116,8 +15117,8 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’Regex_Russian_Passport_Number_Domestic regex trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- Le Regex_Russian_Passport_Number_Domestic regex recherche le contenu qui correspond au modèle.
 - Un mot clé de Keyword_Russian_Passport_Number est trouvé.
 
 ```xml
@@ -15136,8 +15137,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 - numéro de passeport
 - passport no
-- passport #
-- id passport
+- Passeport #
+- iD passport
 - passportno #
 - passportnumber #
 - паспорт нет
@@ -15150,7 +15151,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - номерпаспорта #
 
 
-## <a name="russia-passport-number-international"></a>Numéro de passeport russe international
+## <a name="russia-passport-number-international"></a>Numéro de passeport international de la Russie
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -15165,10 +15166,10 @@ numéro à neuf chiffres
 
 ### <a name="pattern"></a>Modèle
 
-nombre à neuf chiffres :
+Nombre à neuf chiffres :
 
 - deux chiffres
-- espace ou trait d’union facultatif
+- un espace ou un trait d’union facultatif
 - sept chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -15177,8 +15178,8 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’Regex_Russian_Passport_Number_International recherche le contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- Le Regex_Russian_Passport_Number_International regex recherche le contenu qui correspond au modèle.
 - Un mot clé de Keyword_Russian_Passport_Number est trouvé.
 
 ```xml
@@ -15197,8 +15198,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 - numéro de passeport
 - passport no
-- passport #
-- id passport
+- Passeport #
+- iD passport
 - passportno #
 - passportnumber #
 - паспорт нет
@@ -15227,7 +15228,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_saudi_arabia_national_id trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_saudi_arabia_national_id est trouvé.
 
@@ -15253,7 +15254,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - الوطنية الهوية بطاقة رقم
 
 
-## <a name="singapore-national-registration-identity-card-nric-number"></a>Numéro de carte d’identité d’inscription nationale (NRIC) Singapour
+## <a name="singapore-national-registration-identity-card-nric-number"></a>Numéro de carte d’identité d’inscription nationale (NRIC) de Singapour
 
 ### <a name="format"></a>Format
 
@@ -15262,9 +15263,9 @@ neuf lettres et chiffres
 ### <a name="pattern"></a>Modèle
 
 - neuf lettres et chiffres :
-- la lettre « F », « G », « S » ou « T » (ne sensible pas à la cas)
+- la lettre « F », « G », « M », « S » ou « T » (non sensible à la casse)
 - sept chiffres
-- un chiffre de vérification alphabétique
+- un chiffre à cocher alphabétique
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -15272,12 +15273,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_singapore_nric trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_singapore_nric est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_singapore_nric trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -15308,7 +15309,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - 身份證
 
 
-## <a name="slovakia-drivers-license-number"></a>Numéro de permis de conduire slovaque
+## <a name="slovakia-drivers-license-number"></a>Numéro de permis de conduire en Slovaquie
 
 ### <a name="format"></a>Format
 
@@ -15318,7 +15319,7 @@ un caractère suivi de sept chiffres
 
 un caractère suivi de sept chiffres
 
-- une lettre (ne sensible à la cas) ou un chiffre
+- une lettre (non sensible à la casse) ou un chiffre
 - sept chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -15327,9 +15328,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_slovakia_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_slovakia_eu_driver's_license_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_slovakia_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_slovakia_eu_driver's_license_number` est trouvé.
 
 ```xml
       <!-- Slovakia Driver's License Number -->
@@ -15346,7 +15347,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -15374,12 +15375,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -15390,14 +15391,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -15407,7 +15408,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -15418,17 +15419,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -15439,8 +15440,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -15454,11 +15455,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -15468,7 +15469,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro dl
 
 
-#### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver’s_license_number
+#### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver s_license_number
 
 - vodičský preukaz
 - vodičské preukazy
@@ -15476,15 +15477,15 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - vodičských preukazov
 
 
-## <a name="slovakia-passport-number"></a>Numéro de passeport slovaque
+## <a name="slovakia-passport-number"></a>Numéro de passeport en Slovaquie
 
 ### <a name="format"></a>Format
 
-un chiffre ou une lettre suivi de sept chiffres sans espace ni délimiteur
+modèle alphanumérique de huit ou neuf caractères
 
 ### <a name="pattern"></a>Modèle
 
-un chiffre ou une lettre (ne sensible à la cas) suivi de sept chiffres
+une lettre (non sensible à la casse) suivie de sept chiffres ou deux lettres (non sensibles à la casse) suivies de six ou sept chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -15492,14 +15493,14 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_slovakia_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_slovakia_eu_passport_number` est trouvé.
-- L’expression régulière `Regex_eu_passport_date1` trouve la date au format DD.MM.YYYY ou dans laquelle un `Keywords_eu_passport_date` mot clé est trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_slovakia_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_slovakia_eu_passport_number` est trouvé.
+- L’expression `Regex_eu_passport_date1` régulière recherche la date au format DD.MM.AAAA ou un mot clé `Keywords_eu_passport_date` est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_slovakia_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_slovakia_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_slovakia_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_slovakia_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Slovakia Passport Number -->
@@ -15529,10 +15530,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -15550,11 +15551,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
-## <a name="slovakia-personal-number"></a>Numéro personnel slovaque
+## <a name="slovakia-personal-number"></a>Numéro personnel en Slovaquie
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -15580,12 +15581,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_slovakia_eu_national_id_card` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_slovakia_eu_national_id_card` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_slovakia_eu_national_id_card` trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_slovakia_eu_national_id_card` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_slovakia_eu_national_id_card` recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Slovakia Personal Number -->
@@ -15606,16 +15607,16 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 #### <a name="keywords_slovakia_eu_national_id_card"></a>Keywords_slovakia_eu_national_id_card
 
 - azonosító szám
-- numéro de naissance
-- číslo národnej identifikačnej 2013
+- nombre de naissances
+- číslo národnej identifikačnej karty
 - číslo občianského preukazu
 - daňové číslo
 - numéro d’ID
-- identification non
+- identification no
 - numéro d’identification
-- identifikačnáča č
+- identifikačná karta č
 - identifikačné číslo
-- carte d’identité non
+- identity card no
 - numéro de carte d’identité
 - národná identifikačná značka č
 - numéro national
@@ -15626,45 +15627,45 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - rodne cislo
 - rodné číslo
 - numéro de sécurité sociale
-- ssn #
-- ssn
+- Ssn #
+- Ssn
 - személyi igazolvány szám
 - személyi igazolvány száma
 - személyigazolvány szám
-- fichier fiscal non
+- fichier fiscal no
 - numéro de dossier fiscal
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
+- Étain #
 
 
-## <a name="slovakia-physical-addresses"></a>Adresses physiques slovaques
+## <a name="slovakia-physical-addresses"></a>Adresses physiques en Slovaquie
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de la Slovaquie. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance de Slovaquie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="slovenia-drivers-license-number"></a>Numéro de permis de conduire slovène
+## <a name="slovenia-drivers-license-number"></a>Numéro de permis de conduire en Slovénie
 
 ### <a name="format"></a>Format
 
-neuf chiffres sans espaces et délimiteur
+neuf chiffres sans espaces et délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -15676,9 +15677,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_slovenia_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_slovenia_eu_driver's_license_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_slovenia_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_slovenia_eu_driver's_license_number` est trouvé.
 
 ```xml
       <!-- Slovenia Driver's License Number -->
@@ -15695,7 +15696,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -15723,12 +15724,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -15739,14 +15740,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -15756,7 +15757,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -15767,17 +15768,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -15788,8 +15789,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -15803,11 +15804,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -15816,27 +15817,27 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - dlno
 - numéro dl
 
-#### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver’s_license_number
+#### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver s_license_number
 
 - vozniško dovoljenje
-- licence vozniška številka
+- vozniška številka licence
 - vozniških dovoljenj
 - številka vozniškega dovoljenja
 - številke vozniških dovoljenj
 
 
-## <a name="slovenia-passport-number"></a>Numéro de passeport slovène
+## <a name="slovenia-passport-number"></a>Numéro de passeport en Slovénie
 
 ### <a name="format"></a>Format
 
-deux lettres suivies de sept chiffres sans espace ni délimiteur
+deux lettres suivies de sept chiffres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
 deux lettres suivies de sept chiffres :
 
 - la lettre « P »
-- une lettre en minuscules
+- une lettre majuscule
 - sept chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -15845,14 +15846,14 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_slovenia_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_slovenia_eu_passport_number` est trouvé.
-- L’expression régulière `Regex_eu_passport_date1` trouve la date au format DD.MM.YYYY ou dans laquelle un `Keywords_eu_passport_date` mot clé est trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_slovenia_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_slovenia_eu_passport_number` est trouvé.
+- L’expression `Regex_eu_passport_date1` régulière recherche la date au format DD.MM.AAAA ou un mot clé `Keywords_eu_passport_date` est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_slovenia_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_slovenia_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_slovenia_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_slovenia_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Slovenia Passport Number -->
@@ -15882,10 +15883,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -15904,20 +15905,20 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
 ## <a name="slovenia-physical-addresses"></a>Adresses physiques slovènes
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Slovénie. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non regroupée détecte les modèles liés à l’adresse physique de la Slovénie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="slovenia-tax-identification-number"></a>Numéro d’identification fiscale slovène
+## <a name="slovenia-tax-identification-number"></a>Numéro d’identification fiscale en Slovénie
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -15928,7 +15929,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-huit chiffres sans espace ni délimiteur
+huit chiffres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -15942,12 +15943,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_slovenia_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_slovenia_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_slovenia_eu_tax_file_number` trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_slovenia_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_slovenia_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Slovenia Tax Identification Number -->
@@ -15969,27 +15970,27 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - davčna številka
 - identifikacijska številka davka
 - številka davčne datoteke
-- fichier fiscal non
+- fichier fiscal no
 - numéro de dossier fiscal
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
+- Étain #
 
 
-## <a name="slovenia-unique-master-citizen-number"></a>Numéro de citoyen maître unique de Slovénie
+## <a name="slovenia-unique-master-citizen-number"></a>Slovénie Unique Master Citizen Number
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -16000,7 +16001,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-13 chiffres sans espaces ni délimiteur
+13 chiffres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
@@ -16008,7 +16009,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - sept chiffres qui correspondent à la date de naissance (DDMMLLL) où « LLL » correspond aux trois derniers chiffres de l’année de naissance
 - deux chiffres qui correspondent à la zone de naissance « 50 »
-- trois chiffres qui correspondent à une combinaison de sexe et de numéro de série pour les personnes qui sont né le même jour. 000-499 pour les hommes et 500-999 pour les hommes.
+- trois chiffres qui correspondent à une combinaison de sexe et de numéro de série pour les personnes nées le même jour. 000-499 pour les hommes et 500-999 pour les femmes.
 - un chiffre de vérification
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -16017,12 +16018,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_slovenia_eu_national_id_card` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_slovenia_eu_national_id_card` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_slovenia_eu_national_id_card` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_slovenia_eu_national_id_card` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_slovenia_eu_national_id_card` recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Slovenia Unique Master Citizen Number -->
@@ -16048,8 +16049,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro d’identification
 - identifikacijska številka
 - Carte d’identité
-- nacionalna id
-- liste nacionalni potni
+- id de la nacionalna
+- list nacionalni potni
 - id national
 - osebna izkaznica
 - osebni koda
@@ -16068,7 +16069,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - uniqueidentityno #
 
 
-## <a name="south-africa-identification-number"></a>Numéro d’identification Afrique du Sud
+## <a name="south-africa-identification-number"></a>Numéro d’identification de l’Afrique du Sud
 
 ### <a name="format"></a>Format
 
@@ -16077,11 +16078,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 ### <a name="pattern"></a>Modèle
 
 13 chiffres :
-- six chiffres au format AAMMMMD, qui sont la date de naissance
+- six chiffres au format YYMMDD, qui sont la date de naissance
 - quatre chiffres
-- un indicateur de nationalité à un chiffre
-- chiffre « 8 » ou « 9 »
-- un chiffre, qui est un chiffre de la checksum
+- un indicateur de citoyenneté à un chiffre
+- le chiffre « 8 » ou « 9 »
+- un chiffre, qui est un chiffre de somme de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -16089,7 +16090,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_south_africa_identification_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_south_africa_identification_number est trouvé.
 - La somme de contrôle est correcte.
@@ -16113,7 +16114,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 - Identification
 
 
-## <a name="south-korea-resident-registration-number"></a>Numéro d’enregistrement d’un résident sud-coréen
+## <a name="south-korea-resident-registration-number"></a>Numéro d’inscription des résidents sud-coréens
 
 ### <a name="format"></a>Format
 
@@ -16122,12 +16123,12 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 ### <a name="pattern"></a>Modèle
 
 13 chiffres :
-- six chiffres au format AAMMMMD, qui sont la date de naissance
+- six chiffres au format YYMMDD, qui sont la date de naissance
 - un trait d’union
-- un chiffre déterminé par le xème et le sexe
+- un chiffre déterminé par le siècle et le sexe
 - Code de région de naissance à quatre chiffres
-- un chiffre utilisé pour différencier les personnes pour lesquelles les chiffres précédents sont identiques
-- un chiffre de contrôle.
+- un chiffre utilisé pour différencier les personnes pour lesquelles les nombres précédents sont identiques
+- un chiffre à cocher.
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -16135,12 +16136,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_south_korea_resident_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_south_korea_resident_number est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_south_korea_resident_number trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -16168,7 +16169,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - 주민등록번호
 
 
-## <a name="spain-dni"></a>DNI (Espagne)
+## <a name="spain-dni"></a>Espagne DNI
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -16187,7 +16188,7 @@ sept chiffres suivis d’un caractère
 
 - huit chiffres
 - Espace ou trait d’union facultatif
-- une lettre à cocher (ne pas sensible à la cas)
+- une lettre de vérification (non sensible à la casse)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -16195,12 +16196,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction ou  `Func_spain_eu_DL_and_NI_number_citizen` trouve `Func_spain_eu_DL_and_NI_number_foreigner` le contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- `Func_spain_eu_DL_and_NI_number_citizen` Fonction ou `Func_spain_eu_DL_and_NI_number_foreigner` recherche du contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_spain_eu_national_id_card"` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction ou  `Func_spain_eu_DL_and_NI_number_citizen` trouve `Func_spain_eu_DL_and_NI_number_foreigner` le contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- `Func_spain_eu_DL_and_NI_number_citizen` Fonction ou `Func_spain_eu_DL_and_NI_number_foreigner` recherche du contenu qui correspond au modèle.
 
 
 ```xml
@@ -16228,8 +16229,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 #### <a name="keywords_spain_eu_national_id_card"></a>Keywords_spain_eu_national_id_card
 
 - carné de identidad
-- dni #
-- dni
+- Dni #
+- Dni
 - dninúmero #
 - documento nacional de identidad
 - identidad único
@@ -16244,13 +16245,13 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - nienúmero #
 - número de identificación
 - número nacional identidad
-- numéro d’identification personnel
+- numéro d’identification personnelle
 - identité personnelle non
 - numéro d’identité unique
-- uniqueid #
+- Uniqueid #
 
 
-## <a name="spain-drivers-license-number"></a>Numéro de permis de conduire espagnol
+## <a name="spain-drivers-license-number"></a>Numéro de permis de conduire en Espagne
 
 ### <a name="format"></a>Format
 
@@ -16261,7 +16262,7 @@ huit chiffres suivis d’un caractère
 huit chiffres suivis d’un caractère :
 
 - huit chiffres
-- un chiffre ou une lettre (ne pas sensible à la cas)
+- un chiffre ou une lettre (non sensible à la casse)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -16269,12 +16270,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction ou  `Func_spain_eu_DL_and_NI_number_citizen` trouve `Func_spain_eu_DL_and_NI_number_foreigner` le contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_spain_eu_driver's_license_number` est trouvé.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- `Func_spain_eu_DL_and_NI_number_citizen` Fonction ou `Func_spain_eu_DL_and_NI_number_foreigner` recherche du contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_spain_eu_driver's_license_number` est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction ou  `Func_spain_eu_DL_and_NI_number_citizen` trouve `Func_spain_eu_DL_and_NI_number_foreigner` le contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- `Func_spain_eu_DL_and_NI_number_citizen` Fonction ou `Func_spain_eu_DL_and_NI_number_foreigner` recherche du contenu qui correspond au modèle.
 
 ```xml
       <!-- Spain Driver's License Number -->
@@ -16304,7 +16305,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -16332,12 +16333,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -16348,14 +16349,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -16365,7 +16366,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -16376,17 +16377,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -16397,8 +16398,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -16412,11 +16413,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -16426,31 +16427,31 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro dl
 
 
-#### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver’s_license_number
+#### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver s_license_number
 
-- permiso deción
-- permiso casción
-- licencia de qualique
-- licencia caser
-- permiso caser
-- permiso de qualifir
-- permisos de qualif
-- permisos caser
-- carnet d’carnets
-- carnet de carnet d’idées
+- permiso de conducción
+- permiso conducción
+- licencia de conducir
+- licencia conducir
+- permiso conducir
+- permiso de conducir
+- permisos de conducir
+- permisos conducir
+- carnet favorable
+- carnet de conducir
 - licencia de manejo
 - licencia manejo
 
 
-## <a name="spain-passport-number"></a>Numéro de passeport espagnol
+## <a name="spain-passport-number"></a>Numéro de passeport en Espagne
 
 ### <a name="format"></a>Format
 
-combinaison de huit ou neuf caractères de lettres et de chiffres sans espace ni délimiteur
+une combinaison de huit ou neuf caractères de lettres et de nombres sans espaces ni délimiteurs
 
 ### <a name="pattern"></a>Modèle
 
-combinaison de huit ou neuf caractères de lettres et de chiffres :
+une combinaison de lettres et de chiffres de huit ou neuf caractères :
 
 - deux chiffres ou lettres
 - un chiffre ou une lettre (facultatif)
@@ -16462,14 +16463,14 @@ Non applicable
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_spain_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_spain_eu_passport_number` est trouvé.
-- L’expression régulière `Regex_spain_eu_passport_date` trouve la date au format JD-MM-AAA OU un mot clé à partir de `Keywords_eu_passport_date` laquelle est trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_spain_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_spain_eu_passport_number` est trouvé.
+- L’expression `Regex_spain_eu_passport_date` régulière recherche la date au format DD-MM-AAAA ou un mot clé `Keywords_eu_passport_date` est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_spain_eu_passport_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_passport_number` ou `Keywords_spain_eu_passport_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_spain_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_passport_number` `Keywords_spain_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Spain Passport Number -->
@@ -16499,10 +16500,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -16521,26 +16522,26 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - pasaporte no
 - Passeport n°
 - n° Passeport
-- pasaporte no.
+- pasaporte non.
 - pasaporte n°
-- passport espagne
+- passeport espagne
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
-## <a name="spain-physical-addresses"></a>Adresses physiques d’Espagne
+## <a name="spain-physical-addresses"></a>Adresses physiques en Espagne
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique d’Espagne. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance d’Espagne. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="spain-social-security-number-ssn"></a>Numéro de sécurité sociale (SSN) espagnol
+## <a name="spain-social-security-number-ssn"></a>Numéro de sécurité sociale en Espagne (SSN)
 
 
 ### <a name="format"></a>Format
@@ -16551,9 +16552,9 @@ Moyen
 
 11 à 12 chiffres :
 - deux chiffres
-- barre oblique (facultative)
+- une barre oblique (facultatif)
 - sept à huit chiffres
-- barre oblique (facultative)
+- une barre oblique (facultatif)
 - deux chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -16562,12 +16563,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_spanish_social_security_number trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 - - Un mot clé est  `Keywords_spain_eu_ssn_or_equivalent` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_spanish_social_security_number trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -16588,15 +16589,15 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_spain_eu_passport_number"></a>Keywords_spain_eu_passport_number
 
-- ssn
-- ssn #
+- Ssn
+- Ssn #
 - socialsecurityno
-- non de sécurité sociale
+- sécurité sociale non
 - numéro de sécurité sociale
 - número de la seguridad social
 
 
-## <a name="spain-tax-identification-number"></a>Numéro d’identification fiscale espagnol
+## <a name="spain-tax-identification-number"></a>Numéro d’identification fiscale en Espagne
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -16611,34 +16612,34 @@ sept ou huit chiffres et une ou deux lettres dans le modèle spécifié
 
 ### <a name="pattern"></a>Modèle
 
-Personnes physiques espagnoles avec une carte d’identité nationale Espagne :
+Personnes physiques espagnoles avec une carte d’identité nationale d’Espagne :
 
 - huit chiffres
-- une lettre en lettres minuscules (sensible à la cas)
+- une lettre majuscule (respect de la casse)
 
-Personnes non résidentes sans carte d’identité nationale Espagne
+Espagnols non résidents sans carte d’identité nationale d’Espagne
 
-- une lettre minuscule « L » (sensible à la minuscule)
+- une lettre majuscule « L » (respect de la casse)
 - sept chiffres
-- une lettre en lettres minuscules (sensible à la cas)
+- une lettre majuscule (respect de la casse)
 
-Résidents résidants de moins de 14 ans sans carte d’identité nationale Espagne :
+Résidents espagnols âgés de moins de 14 ans sans carte d’identité nationale d’Espagne :
 
-- une lettre minuscule « K » (sensible à la minuscule)
+- une lettre majuscule « K » (respect de la casse)
 - sept chiffres
-- une lettre en lettres minuscules (sensible à la cas)
+- une lettre majuscule (respect de la casse)
 
-Personnes avec un numéro d’identification
+Étrangers avec le numéro d’identification d’un étranger
 
-- une lettre en lettres minuscules qui est « X », « Y » ou « Z » (sensible à la cas)
+- une lettre majuscule qui est « X », « Y » ou « Z » (respectant la casse)
 - sept chiffres
-- une lettre en lettres minuscules (sensible à la cas)
+- une lettre majuscule (respect de la casse)
 
-Personnes sans numéro d’identification
+Étrangers sans numéro d’identification d’étranger
 
-- une lettre en lettres minuscules qui est « M » (sensible à la minuscule)
+- une lettre majuscule qui est « M » (respect de la casse)
 - sept chiffres
-- une lettre en lettres minuscules (sensible à la cas)
+- une lettre majuscule (respect de la casse)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -16646,12 +16647,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction ou  `Func_spain_eu_tax_file_number` trouve `Func_spain_eu_DL_and_NI_number_citizen` le contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- `Func_spain_eu_tax_file_number` Fonction ou `Func_spain_eu_DL_and_NI_number_citizen` recherche du contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_spain_eu_tax_file_number` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction ou  `Func_spain_eu_tax_file_number` trouve `Func_spain_eu_DL_and_NI_number_citizen` le contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- `Func_spain_eu_tax_file_number` Fonction ou `Func_spain_eu_DL_and_NI_number_citizen` recherche du contenu qui correspond au modèle.
 
 ```xml
       <!-- Spain Tax Identification Number -->
@@ -16677,51 +16678,51 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_spain_eu_tax_file_number"></a>Keywords_spain_eu_tax_file_number
 
-- cif
+- Caf
 - cifid #
 - cifnúmero #
-- número de quyente
+- número de contribuyente
 - número de identificación fiscal
 - número de impuesto corporativo
 - spanishcifid #
 - spanishcifid
 - spanishcifno #
 - spanishcifno
-- fichier fiscal non
+- fichier fiscal no
 - numéro de dossier fiscal
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
+- Étain #
 
 
-## <a name="sql-server-connection-string"></a>SQL Server de connexion
+## <a name="sql-server-connection-string"></a>chaîne de connexion SQL Server
 
 ### <a name="format"></a>Format
 
-Chaîne « User Id », « User ID », « uid » ou « UserId » suivie des caractères et des chaînes décrits dans le modèle ci-dessous.
+Chaîne « ID d’utilisateur », « ID utilisateur », « uid » ou « UserId », suivie des caractères et des chaînes décrits dans le modèle ci-dessous.
 
 ### <a name="pattern"></a>Modèle
 
-- la chaîne « User Id », « User ID », « uid » ou « UserId »
-- toute combinaison de 1 à 200 lettres minuscules ou majuscules, chiffres, symboles, caractères spéciaux ou espaces
+- la chaîne « ID utilisateur », « ID utilisateur », « uid » ou « UserId »
+- toute combinaison d’entre 1 et 200 lettres minuscules ou majuscules, chiffres, symboles, caractères spéciaux ou espaces
 - chaîne « Password » ou « pwd » où « pwd » n’est pas précédé d’une lettre minuscule
-- signe égal (=)
-- tout caractère qui n’est pas un signe dollar ($), un symbole de pourcentage (%) supérieur au symbole (>), au symbole (@), des guillemets (« ), un point-virgule (;), accolade gauche([) ou un crochet gauche ({)
-- toute combinaison de 7 à 128 caractères qui ne sont pas des points-virgules (;), barre oblique (/) ou guillemets (« )
-- point-virgule (;) ou guillemets (« )
+- un signe égal (=)
+- tout caractère qui n’est pas un signe dollar ($), un symbole de pourcentage (%), supérieur au symbole (>), au symbole (@), au guillemet (« ), au point-virgule (;), accolade gauche([) ou crochet gauche ({)
+- toute combinaison de 7 à 128 caractères qui ne sont pas un point-virgule (;), barre oblique (/) ou guillemet (« )
+- point-virgule (;) ou guillemet (« )
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -16729,11 +16730,11 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière CEP_Regex_SQLServerConnectionString trouve un contenu qui correspond au modèle.
-- Un mot clé de CEP_GlobalFilter’est pas trouvé.
-- L’expression régulière CEP_PasswordPlaceHolder trouve pas de contenu qui correspond au modèle.
-- L’expression régulière CEP_CommonExampleKeywords trouve pas de contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression régulière CEP_Regex_SQLServerConnectionString recherche du contenu qui correspond au modèle.
+- Un mot clé de CEP_GlobalFilter est introuvable.
+- L’expression régulière CEP_PasswordPlaceHolder ne trouve pas de contenu correspondant au modèle.
+- L’expression régulière CEP_CommonExampleKeywords ne trouve pas de contenu correspondant au modèle.
 
 ```sql
 <!---SQL Server Connection String>
@@ -16753,47 +16754,47 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 
 #### <a name="cep_globalfilter"></a>CEP_GlobalFilter
 
-- un mot de passe
+- certains mots de passe
 - somepassword
 - secretPassword
-- exemple
+- Échantillon
 
 #### <a name="cep_passwordplaceholder"></a>CEP_PasswordPlaceHolder
 
 Ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.
 
-- Mot de passe ou pwd suivi de 0 à 2 espaces, d’un signe égal (=), de 0 à 2 espaces et d’un astérisque (*) -OR-
+- Mot de passe ou pwd suivi de 0-2 espaces, d’un signe égal (=), de 0 à 2 espaces et d’un astérisque (*) -OR-
 - Mot de passe ou pwd suivi de :
-    - Signe Égal (=)
+    - Signe égal (=)
     - Symbole inférieur à (<)
-    - Toute combinaison de 1 à 200 caractères contenant des lettres majuscules ou minuscules, des chiffres, un astérisque (*), un tiret (-), un trait de soulignement (_) ou un espace blanc
-    - Symbole supérieur à (>)
+    - Toute combinaison de 1 à 200 caractères qui sont des lettres majuscules ou minuscules, des chiffres, un astérisque (*), un trait d’union (-), un trait d’union (_), un trait de soulignement (_) ou un caractère d’espace blanc
+    - Supérieur au symbole (>)
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 Ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.
 
-- contoso
-- fabrikam
-- northwind
-- sandbox
-- onebox
-- localhost
+- Contoso
+- Fabrikam
+- Northwind
+- Sandbox
+- Onebox
+- Localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->Net
 
 
-## <a name="surgical-procedures"></a>Procédures d’urgence
+## <a name="surgical-procedures"></a>Interventions chirurgicales
 
-Cette entité nommée non dissociée détecte les termes liés aux procédures médicales, telles *qu’appendpad*.  Il prend uniquement en charge les termes anglais. Il est également inclus dans [toutes les conditions](#all-medical-terms-and-conditions) médicales regroupées nommées SIT d’entité.
+Cette entité nommée non regroupée détecte les termes liés aux procédures chirurgicales, telles que *l’appendectomie*.  Il prend uniquement en charge les termes anglais. Il est également inclus dans les [conditions générales médicales](#all-medical-terms-and-conditions) regroupées sous le nom d’entité SIT.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Élevé
 
 
-## <a name="sweden-drivers-license-number"></a>Numéro de permis de conduire suédois
+## <a name="sweden-drivers-license-number"></a>Numéro de permis de conduire en Suède
 
 ### <a name="format"></a>Format
 
@@ -16813,9 +16814,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_sweden_eu_driver's_license_number` trouve un contenu qui correspond au modèle.
-- Mot clé à partir de  `Keywords_eu_driver's_license_number` ou `Keywords_sweden_eu_driver's_license_number` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- L’expression  `Regex_sweden_eu_driver's_license_number` régulière recherche le contenu qui correspond au modèle.
+- Un mot clé à partir ou  `Keywords_eu_driver's_license_number` `Keywords_sweden_eu_driver's_license_number` est trouvé.
 
 ```xml
       <!-- Sweden Driver's License Number -->
@@ -16832,7 +16833,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -16860,12 +16861,12 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -16876,14 +16877,14 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -16893,7 +16894,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -16904,17 +16905,17 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -16925,8 +16926,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -16940,11 +16941,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -16954,22 +16955,22 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro dl
 
 
-#### <a name="keywords_sweden_eu_drivers_license_number"></a>Keywords_sweden_eu_driver’s_license_number
+#### <a name="keywords_sweden_eu_drivers_license_number"></a>Keywords_sweden_eu_driver s_license_number
 
 - ajokortti
-- permis de déréere
-- numero ajokortin
+- permis de conducere
+- ajokortin nombreux
 - kuljettajat lic.
 - drivere lic.
 - körkort
-- numărul permisului de quere
+- numărul permisului de conducere
 -  שאָפער דערלויבעניש נומער
 - förare lic.
 -  דריווערס דערלויבעניש
 - körkortsnummer
 
 
-## <a name="sweden-national-id"></a>ID national suédois
+## <a name="sweden-national-id"></a>ID national de la Suède
 
 ### <a name="format"></a>Format
 
@@ -16989,13 +16990,13 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction `Func_swedish_national_identifier` trouve un contenu qui correspond au modèle.
-- Un mot clé est `Keywords_swedish_national_identifier` trouvé
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction `Func_swedish_national_identifier` recherche le contenu qui correspond au modèle.
+- Un mot clé à partir de `Keywords_swedish_national_identifier` est trouvé
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction `Func_swedish_national_identifier` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction `Func_swedish_national_identifier` recherche le contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
 
@@ -17018,23 +17019,23 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 - id no
 - numéro d’ID
-- id #
-- identification non
+- Id #
+- identification no
 - numéro d’identification
 - identifikationsnumret #
 - identifikationsnumret
-- gestion identitets
+- identitetshandling
 - document d’identité
-- identité non
+- identity no
 - numéro d’identité
 - id-nummer
-- id personnel
+- ID personnel
 - personnummer #
 - personnummer
-- cubeteidentifikationsnummer
+- skatteidentifikationsnummer
 
 
-## <a name="sweden-passport-number"></a>Numéro de passeport suédois
+## <a name="sweden-passport-number"></a>Numéro de passeport en Suède
 
 ### <a name="format"></a>Format
 
@@ -17050,14 +17051,14 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- l’expression régulière Regex_sweden_passport_number trouve un contenu qui correspond au modèle.
-- mot clé à partir de `Keywords_eu_passport_number` ou `Keyword_sweden_passport` est trouvé.
-- l’expression `Regex_sweden_eu_passport_date` régulière trouve une date au format DD MMM/MMM AA (01 JAN/JAN 12) `Keywords_eu_passport_date` ou un mot clé est trouvé.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- l’expression régulière Regex_sweden_passport_number recherche le contenu qui correspond au modèle.
+- un mot clé à partir ou `Keywords_eu_passport_number` `Keyword_sweden_passport` est trouvé.
+- l’expression `Regex_sweden_eu_passport_date` régulière trouve une date au format DD MMM/MMM YY (01 JAN/JAN 12) ou un mot clé `Keywords_eu_passport_date` est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- l’expression régulière Regex_sweden_passport_number trouve un contenu qui correspond au modèle.
-- mot clé à partir de `Keywords_eu_passport_number` ou `Keyword_sweden_passport` est trouvé.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- l’expression régulière Regex_sweden_passport_number recherche le contenu qui correspond au modèle.
+- un mot clé à partir ou `Keywords_eu_passport_number` `Keyword_sweden_passport` est trouvé.
 
 
 ```xml
@@ -17088,10 +17089,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -17101,8 +17102,8 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keyword_sweden_passport"></a>Keyword_sweden_passport
 
-- carte d’inscription de l’inscription de l'
-- frais de traitement g3
+- carte d’inscription alien
+- Frais de traitement g3
 - entrée multiple
 - Numéro de passeport
 - passeport n °
@@ -17113,30 +17114,30 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - passeportn °
 - passnummer
 - pass nr
-- visa
-- visas visas
+- visa schengen
+- visas schengen
 - entrée unique
-- sverige pass
+- passe sverige
 - exigences en matière de visa
 - traitement des visas
 - type de visa
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date de problème
+- date du problème
 - date d’expiration
 
 
-## <a name="sweden-physical-addresses"></a>Adresses physiques suède
+## <a name="sweden-physical-addresses"></a>Adresses physiques en Suède
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Suède. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Suède. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="sweden-tax-identification-number"></a>Numéro d’identification fiscale suédois
+## <a name="sweden-tax-identification-number"></a>Numéro d’identification fiscale en Suède
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -17153,11 +17154,11 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 10 chiffres et un symbole :
 
-- six chiffres qui correspondent à la date de naissance (AAMMMMDD)
+- six chiffres qui correspondent à la date de naissance (AAAAMMD)
 - signe plus ou signe moins
 - trois chiffres qui rendent le numéro d’identification unique où :
-  - pour les nombres émis avant 1990, le septième et le huitième chiffres identifient le département de naissance ou les personnes étrangères
-  - le chiffre à la neuvième position indique le sexe par impair pour l’homme ou même pour la femme
+  - pour les nombres émis avant 1990, les septième et huitième chiffres identifient le comté de naissance ou les personnes nées à l’étranger
+  - le chiffre à la neuvième position indique le sexe par impair pour les hommes ou même pour les femmes
 - un chiffre de vérification
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -17166,12 +17167,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_sweden_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_sweden_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_sweden_eu_tax_file_number` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_sweden_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_sweden_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Sweden Tax Identification Number -->
@@ -17196,27 +17197,27 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 - numéro d’ID personnel
 - personnummer
-- atomt id nummer
-- identifikation de l’identification
-- bettebetaquets identifikationsnummer
+- skatt id nummer
+- skatt identifikation
+- skattebetalarens identifikationsnummer
 - sverige tin
 - fichier fiscal
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’impôt
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
+- Étain #
 
 
 ## <a name="swift-code"></a>Code SWIFT
@@ -17228,10 +17229,10 @@ quatre lettres suivies de 5 à 31 lettres ou chiffres
 ### <a name="pattern"></a>Modèle
 
 quatre lettres suivies de 5 à 31 lettres ou chiffres :
-- code bancaire à quatre lettres (ne pas sensible à la cas)
-- espace facultatif
+- Code bancaire à quatre lettres (non sensible à la casse)
+- un espace facultatif
 - 4 à 28 lettres ou chiffres (numéro de compte bancaire de base (BBAN))
-- espace facultatif
+- un espace facultatif
 - une à trois lettres ou chiffres (reste du BBAN)
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -17240,7 +17241,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_swift trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_swift est trouvé.
 
@@ -17260,7 +17261,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - organisation internationale de normalisation 9362
 - ISO 9362
 - iso9362
-- swift #
+- Swift #
 - swiftcode
 - swiftnumber
 - swiftroutingnumber
@@ -17270,7 +17271,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro BIC
 - code BIC
 - # bic
-- bic #
+- Bic #
 - code d’identification bancaire
 - Organisation internationale de normalisation 9362
 - rapide #
@@ -17280,29 +17281,29 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - le numéro BIC
 - # <a name="bic"></a>BIC
 - code identificateur de banque
-- SWIFT
-- SWIFT番
-- BIC番
-- BIC
-- SWIFT
-- SWIFT 番
-- BIC 番
-- BIC
+- SWIFTコード
+- SWIFT番号
+- BIC番号
+- BICコード
+- SWIFT コード
+- SWIFT 番号
+- BIC 番号
+- BIC コード
 - 金融機関識別コード
 - 金融機関コード
 - 銀行コード
 
 
-## <a name="switzerland-physical-addresses"></a>Adresses physiques suisse
+## <a name="switzerland-physical-addresses"></a>Adresses physiques en Suisse
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de La Suisse. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Suisse. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="switzerland-ssn-ahv-number"></a>Numéro SSN AHV suisse
+## <a name="switzerland-ssn-ahv-number"></a>Numéro DEV SSN suisse
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -17313,11 +17314,11 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-Nombre à 13 chiffres
+Numéro à 13 chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Nombre à 13 chiffres :
+Numéro à 13 chiffres :
 
 - trois chiffres - 756
 - un point facultatif
@@ -17333,12 +17334,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_swiss_social_security_number_ahv trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_swiss_social_security_number_ahv recherche le contenu qui correspond au modèle.
 - Un mot clé de Keywords_swiss_social_security_number_ahv est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_swiss_social_security_number_ahv trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_swiss_social_security_number_ahv recherche le contenu qui correspond au modèle.
 
 ```xml
       <!-- Swiss SSN AHV Number -->
@@ -17357,27 +17358,27 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keyword_swiss_ssn_ahv_number"></a>Keyword_swiss_ssn_AHV_number
 
-- ahv
-- ssn
+- Avs
+- Ssn
 - pid
 - numéro d’assurance
 - personalidno #
 - numéro de sécurité sociale
 - numéro d’ID personnel
-- n pas d’identification personnelle.
+- identification personnelle non.
 - insuranceno #
 - uniqueidno #
-- n d’identification unique.
-- numéro avs
-- identité personnelle no versicheicheichesnummer
+- identification unique non.
+- avs number
+- identité personnelle pas versicherungsnummer
 - identifikationsnummer
 - einzigartige identität nicht
-- sozialversicheyousnummer
+- sozialversicherungsnummer
 - identification personnelle id
 - numéro de sécurité sociale
 
 
-## <a name="taiwan-national-identification-number"></a>Numéro d’identification national Taïwan
+## <a name="taiwan-national-identification-number"></a>Numéro d’identification nationale de Taïwan
 
 ### <a name="format"></a>Format
 
@@ -17386,7 +17387,7 @@ une lettre (en anglais) suivie de neuf chiffres
 ### <a name="pattern"></a>Modèle
 
 une lettre (en anglais) suivie de neuf chiffres :
-- une lettre (en anglais, ne doit pas être sensible à la cas)
+- une lettre (en anglais, non sensible à la casse)
 - le chiffre « 1 » ou « 2 »
 - huit chiffres
 
@@ -17396,12 +17397,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_taiwanese_national_id trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_taiwanese_national_id est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_taiwanese_national_id trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -17438,7 +17439,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - 簽章
 
 
-## <a name="taiwan-passport-number"></a>Numéro de passeport Taïwan
+## <a name="taiwan-passport-number"></a>Numéro de passeport taïwanais
 
 ### <a name="format"></a>Format
 
@@ -17447,10 +17448,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="pattern"></a>Modèle
 numéro de passeport biométrique :
-- caractère « 3 »
+- le caractère « 3 »
 - huit chiffres
 
-Numéro de passeport non biométrique :
+numéro de passeport non biométrique :
 - neuf chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -17459,7 +17460,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_taiwan_passport trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_taiwan_passport est trouvé.
 
@@ -17487,7 +17488,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - Zhōnghuá Mínguó hùzhào
 
 
-## <a name="taiwan-resident-certificate-arctarc-number"></a>Numéro de certificat taïwanais (ARC/TARC)
+## <a name="taiwan-resident-certificate-arctarc-number"></a>Numéro de certificat de résident taïwanais (ARC/TARC)
 
 ### <a name="format"></a>Format
 
@@ -17496,7 +17497,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 ### <a name="pattern"></a>Modèle
 
 10 lettres et chiffres :
-- deux lettres (ne sont pas sensibles à la majuscule)
+- deux lettres (non sensibles à la casse)
 - huit chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -17505,7 +17506,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_taiwan_resident_certificate trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_taiwan_resident_certificate est trouvé.
 
@@ -17536,7 +17537,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - 台灣地區居留證
 
 
-## <a name="thai-population-identification-code"></a>Code d’identification de population thaï
+## <a name="thai-population-identification-code"></a>Code d’identification de la population thaïlandaise
 
 ### <a name="format"></a>Format
 
@@ -17545,7 +17546,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 ### <a name="pattern"></a>Modèle
 
 13 chiffres :
-- le premier chiffre n’est pas zéro ou neuf
+- premier chiffre n’est pas zéro ou neuf
 - 12 chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -17554,12 +17555,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_Thai_Citizen_Id trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_Thai_Citizen_Id recherche le contenu qui correspond au modèle.
 - Un mot clé de Keyword_Thai_Citizen_Id est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_Thai_Citizen_Id trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_Thai_Citizen_Id recherche le contenu qui correspond au modèle.
 
 ```xml
 <!-- Thai Citizen ID -->
@@ -17585,7 +17586,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - บัตรประชาชน
 - รหัสบัตรประชาชน
 
-## <a name="turkey-national-identification-number"></a>Numéro d’identification national de Turquie
+## <a name="turkey-national-identification-number"></a>Numéro d’identification nationale de la Turquie
 
 ### <a name="format"></a>Format
 
@@ -17601,12 +17602,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_Turkish_National_Id trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_Turkish_National_Id recherche le contenu qui correspond au modèle.
 - Un mot clé de Keyword_Turkish_National_Id est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_Turkish_National_Id trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_Turkish_National_Id recherche le contenu qui correspond au modèle.
 
 ```xml
 <!-- Turkish National Identity -->
@@ -17626,30 +17627,30 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 #### <a name="keyword_turkish_national_id"></a>Keyword_turkish_national_id
 
 - TC Kimlik No
-- TC Kimlik nuýsı
-- Vattcşlık nuşsı
-- Vatşlık no
+- TC Kimlik numarası
+- Vatandaşlık numarası
+- Vatandaşlık no
 
 
-## <a name="turkey-physical-addresses"></a>Adresses physiques de Turquie
+## <a name="turkey-physical-addresses"></a>Adresses physiques de la Turquie
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique de Turquie. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Turquie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Moyen
 
 
-## <a name="types-of-medication"></a>Types d’activités
+## <a name="types-of-medication"></a>Types de médicaments
 
-Cette entité nommée dissociée détecte les noms d’événements, tels que *ceux-ci*.  Il prend uniquement en charge les termes anglais. Il est également inclus dans [toutes les conditions](#all-medical-terms-and-conditions) médicales regroupées nommées SIT d’entité.
+Cette entité nommée non regroupée détecte les noms des médicaments, tels que *l’insuline*.  Il prend uniquement en charge les termes anglais. Il est également inclus dans les [conditions générales médicales](#all-medical-terms-and-conditions) regroupées sous le nom d’entité SIT.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
 Élevé
 
 
-## <a name="uk-drivers-license-number"></a>Royaume-Uni numéro de permis de conduire
+## <a name="uk-drivers-license-number"></a>ROYAUME-UNI. numéro de permis de conduire
 
 ### <a name="format"></a>Format
 
@@ -17658,10 +17659,10 @@ Combinaison de 18 lettres et chiffres au format spécifié
 ### <a name="pattern"></a>Modèle
 
 18 lettres et chiffres
-- Cinq lettres (ne sensibles à la majuscule) ou le chiffre « 9 » à la place d’une lettre.
+- Cinq lettres (sans respect de la casse) ou le chiffre « 9 » à la place d’une lettre.
 - Un chiffre.
-- Cinq chiffres au format de date MMDDY pour la date de naissance. Le septième caractère est incrémenté de 50 si le pilote est une femme ; par exemple, 51 à 62 au lieu de 01 à 12.
-- Deux lettres (ne sont pas sensibles à la majuscule) ou le chiffre « 9 » à la place d’une lettre.
+- Cinq chiffres au format de date MMDDY pour la date de naissance. Le septième caractère est incrémenté de 50 si le conducteur est une femme; par exemple, 51 à 62 au lieu de 01 à 12.
+- Deux lettres (sans respect de la casse) ou le chiffre « 9 » à la place d’une lettre.
 - Cinq chiffres.
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -17670,13 +17671,13 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction `Func_uk_drivers_license` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction `Func_uk_drivers_license` recherche le contenu qui correspond au modèle.
 - Un mot clé est `Keywords_eu_driver's_license_number` trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction `Func_uk_drivers_license` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction `Func_uk_drivers_license` recherche le contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
 ```xml
@@ -17694,7 +17695,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -17722,12 +17723,12 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - permis de conduire
 - driver’lic
 - driver’lics
+- driver’license
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- permis de conduire
-- lic du pilote
-- permis de conduire
+- driver' lic
+- driver' lics
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -17738,14 +17739,14 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - driver’slicenses
 - driver’slicence
 - driver’slicences
-- permis de conduire
-- permis de conduire
+- driver’s lic
+- driver’s lics
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- dl #
-- dls #
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -17755,7 +17756,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - driver lic #
 - driver lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilote #
 - permis de conduire #
 - driverslic #
 - driverslics #
@@ -17766,17 +17767,17 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - drivers lic #
 - drivers lics #
 - permis de conduire #
-- permis de conduire #
+- licences de pilotes #
 - permis de conduire #
 - permis de conduire #
 - driver’lic #
 - driver’lics #
+- driver’license #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- lic du pilote #
-- permis de conduire #
+- driver' lic #
+- driver' lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -17787,8 +17788,8 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - driver’slicenses #
 - driver’slicence #
 - driver’slicences #
-- permis de conduire #
-- permis de conduire #
+- driver’s lic #
+- driver’s lics #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
@@ -17802,11 +17803,11 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - licences driv
 - licence driv
 - licences driv
-- permis de conduire
-- permis de conduire
-- permis de conduire
+- licen du pilote
+- drivers licen
+- licen du conducteur
 - conduite lic
-- permis de conduire
+- conduite licen
 - permis de conduire
 - permis de conduire
 - permis de conduire
@@ -17816,7 +17817,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - numéro dl
 
 
-## <a name="uk-electoral-roll-number"></a>Royaume-Uni numéro de liste électorale
+## <a name="uk-electoral-roll-number"></a>ROYAUME-UNI. numéro de liste électorale
 
 ### <a name="format"></a>Format
 
@@ -17824,7 +17825,7 @@ deux lettres suivies de 1 à 4 chiffres
 
 ### <a name="pattern"></a>Modèle
 
-deux lettres (ne faisant pas l’affaire) suivies de 1 à 4 chiffres
+deux lettres (non sensibles à la casse) suivies de 1 à 4 chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -17832,7 +17833,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_uk_electoral trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_uk_electoral est trouvé.
 
@@ -17858,7 +17859,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - liste électorale
 
 
-## <a name="uk-national-health-service-number"></a>Royaume-Uni numéro de service de santé national
+## <a name="uk-national-health-service-number"></a>ROYAUME-UNI. numéro de service de santé national
 
 ### <a name="format"></a>Format
 
@@ -17879,7 +17880,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_uk_nhs_number trouve un contenu qui correspond au modèle.
 - L’une des affirmations suivantes est vraie :
     - Un mot clé figurant dans la liste Keyword_uk_nhs_number est trouvé.
@@ -17906,7 +17907,7 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 #### <a name="keyword_uk_nhs_number"></a>Keyword_uk_nhs_number
 
 - service national de santé
-- nhs
+- Nhs
 - administration des services de santé
 - administration de la santé
 
@@ -17921,14 +17922,14 @@ Une stratégie DLP a une confiance élevée dans la détection de ce type d’in
 
 - GP
 - DOB
-- D.O.B
+- D.D.N
 - Date of Birth
 - Birth Date
 
 
-## <a name="uk-national-insurance-number-nino"></a>Royaume-Uni numéro d’assurance national (NINO)
+## <a name="uk-national-insurance-number-nino"></a>ROYAUME-UNI. numéro d’assurance nationale (NINO)
 
-Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles Numéro d’identification national de l’UE. Il est également disponible en tant qu’entité de type d’informations sensibles autonome.
+Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles numéro d’identification nationale de l’UE. Il est également disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
 
@@ -17938,9 +17939,9 @@ sept caractères ou neuf caractères séparés par des espaces ou des tirets
 
 deux modèles possibles :
 
-- deux lettres (les NINOs valides utilisent uniquement certains caractères dans ce préfixe, que ce modèle valide ; ne sont pas sensibles à la cas)
+- deux lettres (les objets NINO valides utilisent uniquement certains caractères de ce préfixe, ce que ce modèle valide ; non sensibles à la casse)
 - six chiffres
-- « A » (A), « B », « C » ou « D » (comme le préfixe, seuls certains caractères sont autorisés dans le suffixe ; ne sont pas sensibles à la cas)
+- 'A', 'B', 'C' ou 'D' (comme le préfixe, seuls certains caractères sont autorisés dans le suffixe ; non sensibles à la casse)
 
 OR
 
@@ -17952,7 +17953,7 @@ OR
 - un espace ou un tiret
 - deux chiffres
 - un espace ou un tiret
-- « A » (A), « B » (B), « C » (C) ou « D »
+- 'A', 'B', 'C' ou 'D'
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -17960,11 +17961,11 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_uk_nino trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_uk_nino est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_uk_nino trouve un contenu qui correspond au modèle.
 
 ```xml
@@ -17987,7 +17988,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - numéro d’assurance nationale
 - cotisations sociales
 - loi sur la protection
-- insurance
+- Assurance
 - numéro de sécurité sociale
 - demande d’assurance
 - demande de soins médicaux
@@ -17995,19 +17996,19 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - soins médicaux
 - sécurité sociale
 - grande-bretagne
-- Numéro NI
-- NON.
+- Numéro d’interface de commande
+- Ni Non.
 - NI #
 - NI #
-- insurance #
+- Assurance #
 - insurancenumber
 - nationalinsurance #
 - nationalinsurancenumber
 
 
-## <a name="uk-physical-addresses"></a>Royaume-Uni adresses physiques
+## <a name="uk-physical-addresses"></a>ROYAUME-UNI. adresses physiques
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique à partir du Royaume-Uni. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non regroupée détecte les modèles liés à l’adresse physique à partir du Royaume-Uni. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -18015,7 +18016,7 @@ Moyen
 
 
 
-## <a name="uk-unique-taxpayer-reference-number"></a>Royaume-Uni Numéro de référence du contribuable unique
+## <a name="uk-unique-taxpayer-reference-number"></a>ROYAUME-UNI. Numéro de référence unique du contribuable
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -18026,7 +18027,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-10 chiffres sans espaces et délimiteur
+10 chiffres sans espaces et délimiteurs
 
 
 ### <a name="pattern"></a>Modèle
@@ -18039,8 +18040,8 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction  `Func_uk_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction  `Func_uk_eu_tax_file_number` recherche le contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_uk_eu_tax_file_number` trouvé.
 
 ```xml
@@ -18057,23 +18058,23 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_uk_eu_tax_file_number"></a>Keywords_uk_eu_tax_file_number
 
-- numéro de taxe
+- numéro d’impôt
 - fichier fiscal
 - id fiscal
-- pas d’identification fiscale
+- identification fiscale non
 - numéro d’identification fiscale
-- pas de taxe #
-- pas de taxe
-- numéro d’enregistrement des taxes
-- tld #
-- todno #
-- Erdnumber #
+- tax no #
+- tax no
+- numéro d’enregistrement fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
-- numéro de taxe #
-- numéro de taxe
-- tin id
+- taxnumber #
+- taxnumber
+- iD d’tin
 - tin no
-- tin #
+- Étain #
 
 
 ## <a name="us-bank-account-number"></a>Numéro de compte bancaire américain
@@ -18092,7 +18093,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - L’expression régulière Regex_usa_bank_account_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_usa_Bank_Account est trouvé.
 
@@ -18147,8 +18148,8 @@ Dépend de l’État
 
 ### <a name="pattern"></a>Modèle
 
-dépend de l’état ( par exemple, New York :
-- neuf chiffres formatés comme ddd ddd ddd correspondront.
+dépend de l’état , par exemple, New York :
+- neuf chiffres mis en forme comme ddd ddd ddd ddd correspondent.
 - neuf chiffres comme dddddddddd ne correspondent pas.
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -18157,12 +18158,12 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_new_york_drivers_license_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_[state_name]_drivers_license_name est trouvé.
 - Un mot clé figurant dans la liste Keyword_us_drivers_license est trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_new_york_drivers_license_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_[state_name]_drivers_license_name est trouvé.
 - Un mot clé figurant dans la liste Keyword_us_drivers_license_abbreviations est trouvé.
@@ -18201,11 +18202,12 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - CDL #
 - CDLS #
 - ID #
-- ID #
+- Id #
 - Numéro d’identification
 - Numéros d’identification
 - LIC
 - LIC #
+- DLN
 
 #### <a name="keyword_us_drivers_license"></a>Keyword_us_drivers_license
 
@@ -18227,8 +18229,8 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - Permis de conduire
 - Driver’Lic
 - Driver’Lics
-- Permis de conduire
-- Permis de conduire
+- Driver’License
+- Licences de pilote
 - Permis conduire
 - Permis conduire
 - Permis de conduire
@@ -18266,8 +18268,8 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - #Permis de conduire
 - Driver’Lic #
 - Driver’Lics #
-- Permis de conduire #
-- Permis de conduire #
+- Driver’License #
+- Licences de pilote #
 - #Permis conduire
 - #Permis conduire
 - #Permis de conduire
@@ -18288,19 +18290,19 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 #### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
 
-- abréviation de l’état (par exemple, « NY »)
+- abréviation d’état (par exemple, « NY »)
 - nom de l’état (par exemple, « New York »)
 
 
-## <a name="us-individual-taxpayer-identification-number-itin"></a>Numéro d’identification du contribuable individuel américain (ITIN)
+## <a name="us-individual-taxpayer-identification-number-itin"></a>Numéro d’identification des contribuables américains individuels (ITIN)
 
 ### <a name="format"></a>Format
 
-neuf chiffres qui commencent par un « 9 » et contiennent un « 7 » ou « 8 » comme quatrième chiffre, éventuellement formaté avec des espaces ou des tirets
+neuf chiffres qui commencent par un « 9 » et contiennent « 7 » ou « 8 » comme quatrième chiffre, éventuellement mis en forme avec des espaces ou des tirets
 
 ### <a name="pattern"></a>Modèle
 
-formaté :
+Formaté:
 - le chiffre « 9 »
 - deux chiffres
 - un espace ou un tiret
@@ -18309,7 +18311,7 @@ formaté :
 - un espace ou un tiret
 - quatre chiffres
 
-non formaté :
+Mémoire:
 - le chiffre « 9 »
 - deux chiffres
 - un « 7 » ou « 8 »
@@ -18321,16 +18323,16 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_formatted_itin trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_itin est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_unformatted_itin trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_itin est trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_formatted_itin ou Func_unformatted_itin trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_formatted_itin ou Func_unformatted_itin recherche du contenu qui correspond au modèle.
 
 ```xml
     <!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
@@ -18356,23 +18358,23 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 
 #### <a name="keyword_itin"></a>Keyword_itin
 
-- contribuable
+- Contribuable
 - id fiscal
 - identification fiscale
 - itin
 - i.t.i.n.
-- ssn
-- tin
+- Ssn
+- Étain
 - sécurité sociale
 - contribuable
 - itins
-- tld
+- taxid
 - contribuable individuel
 
 
-## <a name="us-physical-addresses"></a>Adresses physiques des États-Unis
+## <a name="us-physical-addresses"></a>Adresses physiques américaines
 
-Cette entité nommée dissociée détecte les modèles liés à l’adresse physique des États-Unis. Il est également inclus dans l’ensemble [d’adresses physiques](#all-physical-addresses) nommé SIT de toutes les adresses physiques.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique des États-Unis. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -18383,7 +18385,7 @@ Moyen
 
 ### <a name="format"></a>Format
 
-neuf chiffres, qui peuvent être dans un modèle formaté ou sans mise en forme
+neuf chiffres, qui peuvent être dans un modèle mis en forme ou non mis en forme
 
 > [!NOTE]
 > La mise en forme d’un numéro de sécurité sociale émis avant le milieu de l’année 2011 est fixe et certaines parties du numéro doivent se situer dans certaines plages pour qu’il soit valide (mais il n’y a pas de somme de contrôle).
@@ -18402,16 +18404,16 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction `Func_ssn` trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction `Func_ssn` recherche le contenu qui correspond au modèle.
 - Un mot clé est `Keyword_ssn` trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction Func_unformatted_ssn' trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- La fonction Func_unformatted_ssn recherche le contenu qui correspond au modèle.
 - Un mot clé est `Keyword_ssn` trouvé.
 
-Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- La fonction ou `Func_randomized_formatted_ssn` trouve `Func_randomized_unformatted_ssn` le contenu qui correspond au modèle.
+Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- `Func_randomized_formatted_ssn` Fonction ou `Func_randomized_unformatted_ssn` recherche du contenu qui correspond au modèle.
 - Un mot clé est `Keyword_ssn` trouvé.
 
 
@@ -18445,7 +18447,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - numéro de sécurité sociale
 - sécurité sociale #
 - sécurité sociale #
-- non de sécurité sociale
+- sécurité sociale non
 - # sécurité sociale
 - Sécu sociale
 - SSN
@@ -18472,14 +18474,14 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_usa_uk_passport trouve un contenu qui correspond au modèle.
-- Mot clé à partir de `Keywords_eu_passport_number` ou `Keywords_uk_eu_passport_number` est trouvé.
-- Un mot clé est `Keywords_eu_passport_date` trouvé
+- Un mot clé à partir ou `Keywords_eu_passport_number` `Keywords_uk_eu_passport_number` est trouvé.
+- Un mot clé à partir de `Keywords_eu_passport_date` est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 - La fonction Func_usa_uk_passport trouve un contenu qui correspond au modèle.
-- Mot clé à partir de `Keywords_eu_passport_number` ou `Keywords_uk_eu_passport_number` est trouvé.
+- Un mot clé à partir ou `Keywords_eu_passport_number` `Keywords_uk_eu_passport_number` est trouvé.
 
 ```xml
     <!-- U.S. / U.K. Passport Number -->
@@ -18506,10 +18508,10 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passeport #
+- Passeport #
 - passportid
-- passports
+- Passeports
 - passportno
 - passport no
 - passportnumber
@@ -18519,11 +18521,11 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keywords_uk_eu_passport_number"></a>Keywords_uk_eu_passport_number
 
-- passport britannique
+- passeport britannique
 - uk passport
 
 
-## <a name="ukraine-passport-domestic"></a>Passeport ukrainien national
+## <a name="ukraine-passport-domestic"></a>Passeport d’Ukraine intérieur
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -18546,8 +18548,8 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’Regex_Ukraine_Passport_Domestic recherche le contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- Le Regex_Ukraine_Passport_Domestic regex recherche le contenu qui correspond au modèle.
 - Un mot clé de Keyword_Ukraine_Passport_Domestic est trouvé.
 
 ```xml
@@ -18564,7 +18566,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keyword_ukraine_passport_domestic"></a>Keyword_ukraine_passport_domestic
 
-- passport ukraine
+- passeport ukraine
 - numéro de passeport
 - passport no
 - паспорт України
@@ -18572,7 +18574,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - персональний
 
 
-## <a name="ukraine-passport-international"></a>Passeport ukrainien international
+## <a name="ukraine-passport-international"></a>Passeport international de l’Ukraine
 
 Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
 - stratégies de protection contre la perte de données
@@ -18583,7 +18585,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 ### <a name="format"></a>Format
 
-modèle alphanumérique à huit caractères
+Modèle alphanumérique à huit caractères
 
 ### <a name="pattern"></a>Modèle
 
@@ -18597,8 +18599,8 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
-- L’Regex_Ukraine_Passport_International regex trouve un contenu qui correspond au modèle.
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+- Le Regex_Ukraine_Passport_International regex recherche le contenu qui correspond au modèle.
 - Un mot clé de Keyword_Ukraine_Passport_International est trouvé.
 
 ```xml
@@ -18615,7 +18617,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 #### <a name="keyword_ukraine_passport_international"></a>Keyword_ukraine_passport_international
 
-- passport ukraine
+- passeport ukraine
 - numéro de passeport
 - passport no
 - паспорт України

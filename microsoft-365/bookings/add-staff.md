@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: Utilisez cette page pour créer votre liste de membres du personnel et gérer les détails des membres du personnel, tels que le nom, le numéro de téléphone et l’adresse e-mail.
-ms.openlocfilehash: 2df48efe321a91c1eb2df712e954033eb28357aa
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: ca938acf4bfb567d366c7ffd684e8bce8c9eea74
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713930"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746794"
 ---
 # <a name="add-staff-to-bookings"></a>Ajouter du personnel aux réservations
 
@@ -58,7 +58,7 @@ Bien Bookings est une fonctionnalité de Microsoft 365, tous les membres de votr
 
     Par exemple, si un membre du personnel dispose d’une réunion d’équipe ou d’un rendez-vous personnel planifié pour 15h00 un mercredi, Bookings indique que ce membre du personnel n’est pas disponible pour être réservé dans cet intervalle de temps. Cette heure s’affiche comme occupée ou provisoire dans l’affichage Calendrier bookings, comme indiqué dans l’exemple ci-dessous.
 
-    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="Une vue d’un calendrier Bookings.":::
+    :::image type="content" source="media/bookings-busy-tentative-view-2.png" alt-text="Une vue d’un calendrier Bookings.":::
 
 > [!IMPORTANT]
 > Nous vous recommandons vivement de laisser ce paramètre activé (il est activé par défaut) pour éviter les réservations doubles et optimiser la disponibilité de vos membres du personnel.

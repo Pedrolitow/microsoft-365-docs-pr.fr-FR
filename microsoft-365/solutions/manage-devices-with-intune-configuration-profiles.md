@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: dfdffc95c39d471e071db8f83e88b9ba67e143e8
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: fe137e626d5199f1709504d025411586965ae9fd
+ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731546"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64737422"
 ---
 # <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>Étape 5. Déployer des profils d’appareil dans Microsoft Intune
 
@@ -48,7 +48,7 @@ Pour l’instant, déployez simplement la base de référence de sécurité MDM 
 
 Plus tard, lorsque Microsoft Defender pour point de terminaison est installé et que vous avez connecté Intune, déployez les bases de référence de Defender pour point de terminaison. Cette rubrique est traitée dans l’article suivant de cette série : [Étape 6. Surveillez les risques et la conformité des appareils aux bases de référence de sécurité](manage-devices-with-intune-monitor-risk.md).
 
-Il est important de comprendre que ces bases de référence de sécurité ne sont pas conformes au CIS ou NIST, mais reflètent étroitement leurs recommandations. Pour plus d’informations, voir [Les bases de référence de sécurité Intune sont-elles conformes au CIS ou NIST ?](/mem/intune/protect/security-baselines#are-the-intune-security-baselines-cis-or-nist-compliant)
+Il est important de comprendre que ces bases de référence de sécurité ne sont pas conformes au CIS ou NIST, mais reflètent étroitement leurs recommandations. Pour plus d’informations, voir [Les bases de référence de sécurité Intune sont-elles conformes au CIS ou NIST ?](https://docs.microsoft.com/mem/intune/protect/security-baselines#are-the-intune-security-baselines-cis-or-nist-compliant)
 
 ## <a name="customize-configuration-profiles-for-your-organization"></a>Personnaliser les profils de configuration pour votre organisation
 

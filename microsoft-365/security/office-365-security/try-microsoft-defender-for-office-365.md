@@ -19,19 +19,19 @@ ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: ''
-ms.openlocfilehash: 1db0a3ac8dc67c2ad439972341d28460d0f0a6bb
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 95cc11956dfe597b70f18954723f914e057193a6
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731629"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746704"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>Essayer Microsoft Defender pour Office 365
 
 > [!NOTE]
 > La fonctionnalité décrite par cet article est en préversion, n’est pas disponible dans toutes les organisations et est susceptible de changer.
 
-Le portail **d’essais** unifiés dans le portail Microsoft 365 Defender fournit un point d’entrée unique pour les expériences d’évaluation et d’évaluation précédemment distinctes pour Microsoft Defender pour Office 365. L’objectif est de vous permettre d’essayer les fonctionnalités de Defender pour Office 365 Plan 2 pendant 30 jours avant de vous y engager pleinement. Toutefois, il existe des différences dans les expériences d’évaluation en fonction de la nature de votre organisation Microsoft 365 :
+Le portail **d’essais** unifiés dans le portail Microsoft 365 Defender fournit un point d’entrée unique pour les expériences d’évaluation et d’évaluation précédemment distinctes pour Microsoft Defender pour Office 365. L’objectif est de vous permettre d’essayer les fonctionnalités de Defender pour Office 365 Plan 2 pendant 90 jours avant de vous y engager pleinement. Toutefois, il existe des différences dans les expériences d’évaluation en fonction de la nature de votre organisation Microsoft 365 :
 
 - Vous avez déjà Microsoft 365 boîtes aux lettres, mais vous utilisez actuellement un service ou un appareil tiers pour la protection par e-mail. Le courrier provenant d’Internet transite par le service de protection avant la remise dans votre organisation Microsoft 365. Microsoft 365 protection est aussi faible que possible (elle n’est jamais complètement désactivée ; par exemple, la protection contre les programmes malveillants est toujours appliquée).
 
@@ -268,7 +268,7 @@ Les paramètres du Defender pour Office 365 créés spécifiquement pour l’év
 |EnableAuthenticationSoftPassSafetyTip|False|
 |PolicyTag|Blanc|
 |SimilarUsersSafetyTipsCustomText|Blanc|
-|TreatSoftPassAsAuthenticated|True|
+|TreatSoftPassAsAuthenticated|Vrai|
 |UnusualCharactersSafetyTipsCustomText|Blanc|
 |||
 |ExcludedDomains|{}|
@@ -284,7 +284,7 @@ Les paramètres du Defender pour Office 365 créés spécifiquement pour l’év
 |ActionOnError|True|
 |AdminDisplayName|Stratégie d’évaluation|
 |ConfidenceLevelThreshold|80|
-|Activer|True|
+|Activer|Vrai|
 |EnableOrganizationBranding|False|
 |Guid|Valeur GUID|
 |IsBuiltInProtection|False|

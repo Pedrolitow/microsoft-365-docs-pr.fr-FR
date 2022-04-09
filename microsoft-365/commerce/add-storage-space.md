@@ -25,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: Ajoutez le stockage de fichiers dans votre abonnement Microsoft 365. Avec un stockage de fichiers supplémentaire, vous pouvez stocker plus de contenu dans SharePoint.
 ms.date: 04/02/2021
-ms.openlocfilehash: 687233ed91e358c3f48332a0b07aa3213734b71b
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: da66bac2bde52f5bcd899b73e5927008b40227dc
+ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731524"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64737460"
 ---
 # <a name="add-more-sharepoint-storage-to-your-subscription"></a>Ajouter d’autres SharePoint stockage à votre abonnement
 
@@ -112,4 +112,4 @@ Le stockage de fichiers supplémentaire Office 365 est accessible aux abonnement
 
 ## <a name="related-content"></a>Contenu associé
 
-[Gérer les limites de stockage de site](/sharepoint/manage-site-collection-storage-limits) (article)
+[Gérer les limites de stockage de site](/sharepoint/manage-site-collection-storage-limits) (article)\

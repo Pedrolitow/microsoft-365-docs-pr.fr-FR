@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: Suivez ces instructions pour créer votre page À propos de nous, notamment le nom d’entreprise, l’adresse, le numéro de téléphone, l’URL du site web, le logo et les heures d’ouverture dans Microsoft Bookings.
-ms.openlocfilehash: 9931a5c00147a6f6b9b0cd4ef9550d783b8771fd
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 5d0505b0b23515bef0bdcc94206d8f3b856479c4
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715338"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746863"
 ---
 # <a name="enter-your-business-information"></a>Protégez vos informations
 
@@ -25,7 +25,7 @@ Dans Microsoft Bookings, la page Informations professionnelles de l’applicatio
 
 Les informations que vous fournissez ici s’affichent sur la page que les clients et les clients utilisent pour réserver des rendez-vous (la page de réservation) et dans les messages et rappels qui leur sont envoyés par Bookings. Vous trouverez ci-dessous un exemple de ces informations sur la page de réservation.
 
-   ![Image de l’exemple de page Informations professionnelles dans Microsoft Bookings.](../media/bookings-business-info.png)
+   ![Image de l’exemple de page Informations professionnelles dans Microsoft Bookings.](../media/bookings-business-info-2.png)
 
 > [!NOTE]
 > Pour commencer, consultez [Obtenir l’accès à Microsoft Bookings](get-access.md). Pour activer ou désactiver Bookings, consultez [Activer ou désactiver Bookings pour votre organisation](turn-bookings-on-or-off.md).
@@ -34,7 +34,7 @@ Les informations que vous fournissez ici s’affichent sur la page que les clien
 
 1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis sélectionnez **Bookings**.
 
-1. Dans le volet de navigation, sélectionnez **Vos** **informations calendarBusiness** ->  dans le volet gauche.
+1. Dans le volet de navigation, sélectionnez **Vos** **informations calendarBusiness** >  dans le volet gauche.
 
 1. Dans la section **Informations de base**, entrez le nom, l’adresse et le numéro de téléphone de votre entreprise que vous souhaitez utiliser pour votre calendrier Bookings.
 
@@ -66,11 +66,11 @@ Par exemple, vous avez des réunions du personnel tous les jeudis de 13h à 14h3
 
 1. Sélectionnez **+** cette option pour créer une ligne pour jeudi.
 
-   ![Image de l’interface utilisateur des heures d’ouverture.](../media/bookings-split-shift.png)
+   ![Image de l’interface utilisateur des heures d’ouverture.](../media/bookings-split-shift-1.png)
 
 1. Dans la nouvelle ligne, sélectionnez 14 h 30. pour l’heure de début et 18 h pour l’heure de fin.
 
-   ![Image de l’interface utilisateur des heures d’ouverture avec des heures ajoutées.](../media/bookings-split-shift-hours.png)
+   ![Image de l’interface utilisateur des heures d’ouverture avec des heures ajoutées.](../media/bookings-split-shift-hours-1.png)
 
 1. Sélectionnez Enregistrer.
 

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 03/15/2022
+ms.date: 04/08/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: d7651e9ec4ec3cfbf3fe8e853b6de1de9e50dae1
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 76e47f1d4ebb7aa32c65f235ee9b2ede9a051a2d
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714678"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746599"
 ---
 # <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Comparer Microsoft Defender pour les PME à Microsoft 365 Business Premium
 
@@ -87,9 +87,9 @@ Le tableau suivant compare les fonctionnalités de sécurité dans Defender entr
 | [Protection de nouvelle génération](../defender-endpoint/next-generation-protection.md) | Oui | Oui | Oui |
 | [Détection et réponse du point de terminaison](../defender-endpoint/overview-endpoint-detection-response.md) | Oui <sup>[[2](#fn2)]</sup> | Non | Oui |
 | [Examen et réponse automatisés](../defender-endpoint/automated-investigations.md) | Oui <sup>[[2](#fn2)]</sup> | Non | Oui |
-| [Repérage des menaces](../defender-endpoint/advanced-hunting-overview.md) et six mois de conservation des données | Non | Non | Oui |
+| [Repérage des menaces](../defender-endpoint/advanced-hunting-overview.md) et six mois de conservation des données <sup>[[3](#fn3)]</sup> | Non | Non | Oui |
 | [Analyses de menaces](../defender-endpoint/threat-analytics.md) | Oui <sup>[[2](#fn2)]</sup> | Non | Oui |
-| [Prise en charge multiplateforme](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS et Android OS) | Oui <sup>[[3](#fn3)]</sup> | Oui | Oui |
+| [Prise en charge multiplateforme](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS et Android OS) | Oui <sup>[[4](#fn4)]</sup> | Oui | Oui |
 | [Spécialistes des menaces Microsoft](../defender-endpoint/microsoft-threat-experts.md) | Non | Non | Oui |
 | API partenaires | Oui | Oui | Oui |
 | [intégration Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md) <br/>(Pour afficher les incidents de sécurité entre les locataires des clients) | Oui | Non | Non |
@@ -98,7 +98,9 @@ Le tableau suivant compare les fonctionnalités de sécurité dans Defender entr
 
 (<a id="fn2">2</a>) Ces fonctionnalités sont optimisées pour les petites et moyennes entreprises.
 
-(<a id="fn3">3</a>) Pendant le programme de préversion, Windows appareils clients sont pris en charge dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)).
+(<a id="fn3">3</a>) Il n’existe aucun onglet chronologie dans Defender entreprise.
+
+(<a id="fn4">4</a>) Pendant le programme de préversion, Windows appareils clients sont pris en charge dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)).
 
 ## <a name="next-steps"></a>Prochaines étapes
 

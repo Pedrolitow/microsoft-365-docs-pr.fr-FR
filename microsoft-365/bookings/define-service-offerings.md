@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: Instructions pour entrer des informations sur les offres de service, notamment le nom du service, la description, l’emplacement, la durée et la tarification. Vous pouvez également marquer les employés qui sont qualifiés pour fournir le service.
-ms.openlocfilehash: 7d4bd5d8e75610785176f8c527576b0609cf71a4
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 576babc8a1cc64734c3d11f761b3b848d3fb2639
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714392"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746672"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Définir vos offres de service dans Bookings
 
@@ -89,8 +89,6 @@ Vous pouvez également ajouter des informations personnalisées et des URL à la
 
 4. Dans la page **Options de disponibilité** , vous pouvez voir les options que vous avez sélectionnées dans votre **page Booking** pour votre stratégie de planification et la disponibilité de votre personnel. Pour plus d’informations, consultez [Définir vos stratégies de planification](set-scheduling-policies.md).
 
-    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Exemple de définition du nombre maximal de participants dans Bookings.":::
-
 5. **Prix par défaut**  Il s’agit du prix qui s’affiche sur la page Self-Service. Si **le prix non défini** est sélectionné, aucun prix ou référence au coût ou à la tarification n’apparaît.
 
 6. **Notes** Ce champ apparaît dans l’événement de réservation pour le personnel réservé, ainsi que dans l’événement qui apparaît sous l’onglet Calendrier de l’application web Bookings.
@@ -101,7 +99,7 @@ Vous pouvez également ajouter des informations personnalisées et des URL à la
 
 8. Dans la page **Rappels et confirmations** , vous pouvez configurer les rappels et les notifications que vous envoyez. Les rappels et les notifications sont envoyés aux clients, aux membres du personnel ou aux deux, à une heure spécifiée avant le rendez-vous. Plusieurs messages peuvent être créés pour chaque rendez-vous, en fonction de vos préférences.
 
-   :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="Un e-mail de confirmation de Bookings.":::
+   :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="Un e-mail de confirmation de Bookings.":::
 
    Vous pouvez inclure tout texte supplémentaire que vous souhaitez ici, par exemple des informations sur le replanification ou sur ce que les clients doivent apporter pour le rendez-vous. Voici un exemple de texte personnalisé ajouté à l’e-mail de confirmation d’origine, vu dans le champ **Informations supplémentaires sur la confirmation par e-mail** :
 

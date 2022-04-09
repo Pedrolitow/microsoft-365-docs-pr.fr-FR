@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/08/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: cb85f5391a6ee6c25d4f82f6f6819132bb8d3b02
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 830149a1592aa2985b603d2e9f317250c7c2606a
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663047"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746531"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Obtenir Microsoft Defender pour les PME
 
@@ -115,27 +115,16 @@ Lorsque vous recevez votre e-mail d’acceptation, voici comment activer votre a
 
 3. Lorsque vous vous connectez pour la première fois, vous accédez à la Centre d'administration Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)). Consultez [la vue d’ensemble de la Centre d'administration Microsoft 365](../../admin/admin-overview/admin-center-overview.md).
 
-4. Exécutez l’une des procédures suivantes :
+4. Exécutez l’une des procédures suivantes :<br/>
 
-   - Si vous configurez un abonnement Microsoft 365 pour la première fois, **sélectionnez Accéder à la configuration guidée** et effectuez les étapes suivantes :
-
-      a. Installez vos applications Office maintenant ou **choisissez Continuer** à ignorer cette étape. (Vous pourrez installer vos applications Office ultérieurement.)
-
-      b. Si votre entreprise a un domaine, vous pouvez l’ajouter maintenant (cette option est recommandée). Vous pouvez également choisir d’utiliser votre domaine par défaut `.onmicrosoft.com` pour l’instant.
-
-      c. Ajoutez des utilisateurs et attribuez des licences. Une licence est automatiquement attribuée à chaque utilisateur que vous répertoriez. Consultez [Ajouter des utilisateurs et attribuer des licences en même temps](../../admin/add-users/add-users.md).
-
-   - Si vous ajoutez une version d’évaluation à un locataire Microsoft 365 existant, procédez comme suit pour attribuer vos nouvelles licences aux utilisateurs :
-
-      a. Accédez à la Centre d'administration Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) et connectez-vous.
-
-      b. Dans le volet de navigation, choisissez **utilisateurs UsersActive** > . Passez en revue la liste des utilisateurs. 
-
-      c. Pour attribuer des licences, suivez les instructions [fournies dans Affecter des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md).
+   | Scénario | Procedure |
+   |:---|:---|
+   | Vous configurez un abonnement Microsoft 365 pour la première fois. | Sélectionnez **Atteindre la configuration guidée** et effectuez les étapes suivantes :<br/><br/>1. Installez vos applications Office maintenant ou **choisissez Continuer** à ignorer cette étape. (Vous pourrez installer vos applications Office ultérieurement.)<br/><br/>2. Si votre entreprise a un domaine, vous pouvez l’ajouter maintenant (cette option est recommandée). Vous pouvez également choisir d’utiliser votre domaine par défaut `.onmicrosoft.com` pour l’instant.<br/><br/>3. Ajoutez des utilisateurs et attribuez des licences. Une licence est automatiquement attribuée à chaque utilisateur que vous répertoriez. Consultez [Ajouter des utilisateurs et attribuer des licences en même temps](../../admin/add-users/add-users.md). |
+   | Vous ajoutez une version d’évaluation à un locataire Microsoft 365 existant. | 1. Accédez à la Centre d'administration Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) et connectez-vous.<br/><br/>2. Dans le volet de navigation, choisissez **utilisateurs UsersActive** > . Passez en revue la liste des utilisateurs. <br/><br/>3. Pour attribuer des licences, suivez les instructions [fournies dans Affecter des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md). |
 
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-- [Configurez et configurez Microsoft Defender pour les PME](mdb-setup-configuration.md).
+1. [Utilisez l’Assistant Installation dans Microsoft Defender pour les PME](mdb-use-wizard.md) ou [consultez le processus d’installation et de configuration pour Defender entreprise](mdb-setup-configuration.md).
 
-- [Découvrez comment obtenir de l’aide et du support pour Microsoft Defender pour les PME](mdb-get-help.md)
+2. [Découvrez comment obtenir de l’aide et du support pour Defender Entreprise](mdb-get-help.md) (au cas où vous ayiez besoin d’aide)
