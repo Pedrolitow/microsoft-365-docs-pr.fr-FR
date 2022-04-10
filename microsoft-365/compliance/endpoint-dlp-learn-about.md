@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La protection contre la perte de données des points de terminaison de Microsoft 365 étend la surveillance des activités de fichiers et les actions de protection pour ces fichiers aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité '
-ms.openlocfilehash: 031d1d80dd6700939c9d73cc82350b7abc30c132
-ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
+ms.openlocfilehash: f32e84434258ff4b4c5ea6af24f69c607952b56a
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64520780"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714546"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données de point de terminaison Microsoft 365
 
@@ -53,6 +53,16 @@ Microsoft Endpoint DLP vous permet d’auditer et de gérer les types d’activi
 |copier vers appareil Bluetooth|Détecte lorsqu'un utilisateur tente de copier un élément vers une application Bluetooth non autorisée (telle que définie dans la liste des applications Bluetooth non autorisées dans les paramètres DLP de point de terminaison).|Pris en charge|non pris en charge| auditable et restreint|
 |créer un élément|Détecte lorsqu'un utilisateur crée un article|Pris en charge | |vérifiable|
 |renommer un article|Détecte lorsqu'un utilisateur renomme un article|Pris en charge | |vérifiable|
+
+## <a name="best-practice-for-endpoint-dlp-policies"></a>Meilleure pratique pour les stratégies DLP de point de terminaison
+
+Supposons que vous souhaitiez empêcher tous les éléments qui contiennent des numéros de carte de crédit de quitter les points de terminaison des utilisateurs du service Financier. Nous vous recommandons :
+
+- Créez une stratégie et étendez-la aux points de terminaison et à ce groupe d’utilisateurs.
+- Créez une règle dans la stratégie qui détecte le type d’informations que vous souhaitez protéger. Dans ce cas, **content un contenu** défini sur *Type d’informations sensibles**, puis sélectionnez **Carte de crédit**.
+- Définissez les actions de chaque activité sur **Bloquer**.
+
+Consultez [Conception d’une stratégie de protection contre la perte de données](dlp-policy-design.md) pour plus d’informations sur la conception de vos stratégies DLP.
 
 ## <a name="monitored-files"></a>Fichiers analysées
 
