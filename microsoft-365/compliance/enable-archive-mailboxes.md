@@ -23,12 +23,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
 description: Découvrez comment activer ou désactiver les boîtes aux lettres d’archivage pour prendre en charge la conservation des messages, la découverte électronique et les exigences de conservation de votre organisation.
-ms.openlocfilehash: be7939f11c6aea0161f76c3796ca2ff8bd515ba0
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 9e30178dcab731ae61a9db5374218a608e4e47af
+ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241394"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64738355"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Activer des boîtes aux lettres d’archivage dans le Centre conformité
 
@@ -53,15 +53,14 @@ Si vous ne voyez pas la page **Archive** dans le Centre de conformité Microsoft
    > [!NOTE]
    > La page **Archive** affiche au maximum 500 utilisateurs.
 
-3. Dans la liste des boîtes aux lettres, sélectionnez l’utilisateur pour lequel vous voulez activer la boîte aux lettres d’archivage.
+3. Dans la liste des boîtes aux lettres, sélectionnez l’utilisateur pour lequel vous voulez activer la boîte aux lettres d’archivage, et sélectionnez **Archiver l’archivage**.
 
    ![Cliquer sur Activer dans le volet d’informations de l’utilisateur sélectionné pour activer la boîte aux lettres d’archivage.](../media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
 
-4. Dans le volet d’informations de l’utilisateur sélectionné, cliquez sur **Activer**.
 
    Un avertissement s'affiche indiquant que si vous activez la boîte aux lettres d'archivage, les éléments de la boîte aux lettres de l'utilisateur qui sont plus anciens que la stratégie d'archivage attribuée à la boîte aux lettres seront déplacés vers la nouvelle boîte aux lettres d'archivage. La stratégie d'archivage par défaut qui fait partie de la stratégie de rétention attribuée aux boîtes aux lettres Exchange Online déplace les éléments vers la boîte aux lettres d'archivage deux ans après la date à laquelle l'élément a été remis à la boîte aux lettres ou créé par l'utilisateur. Pour plus d'informations, consultez la section **Plus d'informations** de cet article.
 
-5. Cliquez sur **Oui** pour activer la boîte aux lettres d’archivage.
+5. Sélectionnez **Activer** pour activer la boîte aux lettres d’archivage.
 
    La création de la boîte aux lettres d'archivage peut prendre quelques instants. Lorsqu'il est créé, **Archiver la boîte aux lettres : activé** s'affiche dans le volet de détails pour l'utilisateur sélectionné. Vous devrez peut-être cliquer sur **Actualiser** ![icône Actualiser.](../media/O365-MDM-Policy-RefreshIcon.gif) pour mettre à jour les informations dans le volet de détails.
 
@@ -85,13 +84,12 @@ Pour désactiver une boîte aux lettres d’archivage :
    > [!NOTE]
    > La page **Archive** affiche au maximum 500 utilisateurs.
 
-3. Dans la liste des boîtes aux lettres, sélectionnez l’utilisateur pour lequel vous voulez désactiver la boîte aux lettres d’archivage.
+3. Dans la liste des boîtes aux lettres, sélectionnez l’utilisateur pour lequel vous voulez désactiver la boîte aux lettres d’archivage **Désactiver l’archivage**.
 
-4. Dans le volet des détails, cliquez sur **Désactiver**.
 
    Un message d’avertissement s’affiche, indiquant que vous avez 30 jours pour réactiver la boîte aux lettres d’archivage et qu’à l’issue de ce délai, toutes les informations contenues dans l’archive seront définitivement supprimées.
 
-5. Cliquez sur **Oui** pour désactiver la boîte aux lettres d’archivage.
+5. Sélectionnez **Désactiver** pour désactiver la boîte aux lettres d’archivage.
 
    La désactivation de la boîte aux lettres d'archivage peut prendre quelques instants. Lorsqu'il est désactivé, **Archiver la boîte aux lettres : désactivé** s'affiche dans le volet de détails pour l'utilisateur sélectionné. Vous devrez peut-être cliquer sur **Actualiser** ![icône Actualiser.](../media/O365-MDM-Policy-RefreshIcon.gif) pour mettre à jour les informations dans le volet de détails.
 
