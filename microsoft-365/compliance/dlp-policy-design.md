@@ -15,95 +15,94 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment concevoir une stratégie de protection contre la perte de données (DLP)
-ms.openlocfilehash: 14e9fbb5efd20ddcf3d0a47da41a0cce89c88cee
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: af09197784607dd6c8f8d939f4d091b365d51799
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526317"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64760600"
 ---
 # <a name="design-a-data-loss-prevention-policy"></a>Concevoir une stratégie de protection contre la perte de données
 
-Prendre le temps de concevoir une stratégie avant de l’implémenter vous permet d’obtenir les résultats souhaités plus rapidement et avec moins de problèmes inattendus, que de la créer, puis de la régler par essai et erreur uniquement. La documentation de vos conceptions de stratégies vous aidera également dans les communications, les révisions de stratégies, la résolution des problèmes et l’optimisation.
+Prendre le temps de concevoir une stratégie avant de l’implémenter vous permettra d’atteindre les résultats souhaités plus rapidement, et avec moins de problèmes inattendus, que de la créer, puis de la paramétrer par essai et erreur uniquement. La documentation de vos conceptions de stratégie vous aidera également dans les communications, les révisions de stratégie, la résolution des problèmes et le réglage ultérieur.
 
 <!--, but excessive tuning to get the intended results can be time consuming.
 
  if you have to do a lot of tuning to get a policy to yield the intended results can be time consuming .-->
 
-Si vous débutez avec Microsoft 365 DLP, il est utile de lire ces articles avant de commencer à concevoir une stratégie :
+Si vous débutez avec Microsoft 365 DLP, il est utile d’utiliser ces articles avant de commencer à concevoir une stratégie :
 
-- [En savoir plus sur la protection contre la](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) perte de données : cet article vous présente les stratégies de protection contre la perte de données et l’implémentation de La protection contre la perte de données par Microsoft
-- [Planifiez la protection contre la perte de données (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) : vous allez passer en revue cet article :
-    - [Identifier les parties prenantes](dlp-overview-plan-for-dlp.md#identify-stakeholders)
-    - [Décrire les catégories d’informations sensibles à protéger](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
-    - [Définir des objectifs et une stratégie](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
-- [Référence de stratégie de](dlp-policy-reference.md#data-loss-prevention-policy-reference) protection contre la perte de données : cet article présente tous les composants d’une stratégie DLP et la façon dont chacun d’eux influence le comportement d’une stratégie
+- [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) : cet article vous présente la discipline de protection contre la perte de données et l’implémentation de DLP par Microsoft
+- [Planifier la protection contre la perte de données (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) : en suivant cet article, vous allez :
+  - [Identifier les parties prenantes](dlp-overview-plan-for-dlp.md#identify-stakeholders)
+  - [Décrire les catégories d’informations sensibles à protéger](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
+  - [Définir des objectifs et une stratégie](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
+- [Informations de référence sur la stratégie de protection contre la perte](dlp-policy-reference.md#data-loss-prevention-policy-reference) de données : cet article présente tous les composants d’une stratégie DLP et comment chacun d’eux influence le comportement d’une stratégie
 
 ## <a name="policy-design-overview"></a>Vue d’ensemble de la conception de stratégie
 
-[La conception d’une](#policy-design-process) stratégie consiste principalement à définir clairement les besoins de votre entreprise, à les [documenter](#define-intent-for-the-policy) dans une déclaration d’intention de stratégie, puis à ma mappage de ces besoins à la [configuration de la stratégie](#map-business-needs-to-policy-configuration). Vous utiliserez les décisions que vous avez prises lors de la phase de planification pour informer certaines de vos décisions de conception de stratégie. 
+[La conception d’une stratégie](#policy-design-process) consiste principalement à [définir clairement vos besoins métier, à les documenter dans une instruction d’intention de stratégie](#define-intent-for-the-policy) , puis [à mapper ces besoins à la configuration de la stratégie](#map-business-needs-to-policy-configuration). Vous allez utiliser les décisions que vous avez prises au cours de votre phase de planification pour informer certaines de vos décisions de conception de stratégie.
 
-### <a name="define-intent-for-the-policy"></a>Définir l’intention de la stratégie 
+### <a name="define-intent-for-the-policy"></a>Définir l’intention de la stratégie
 
-Vous devez être en mesure de résumer l’objectif de l’entreprise pour chaque stratégie dont vous avez une seule déclaration. Le développement de cette déclaration pilote les conversations dans votre organisation et, lorsqu’elle est complète, elle lie directement la stratégie à un objectif commercial et fournit une feuille de route pour la conception de la stratégie. Les étapes de [l’article Planifier](dlp-overview-plan-for-dlp.md#overview-of-planning-process) la protection contre la perte de données (DLP) vous aideront à prendre en compte votre déclaration d’intention de stratégie.  
+Vous devez être en mesure de résumer l’intention de l’entreprise pour chaque stratégie que vous avez dans une seule instruction. Le développement de cette instruction pilote les conversations au sein de votre organisation et, lorsqu’elle est entièrement étoffée, cette déclaration lie directement la stratégie à un objectif commercial et fournit une feuille de route pour la conception de stratégie. Les étapes décrites dans l’article [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#overview-of-planning-process) vous aideront à commencer votre déclaration d’intention de stratégie.
 
-À partir de la vue [d’ensemble de la configuration](dlp-learn-about-dlp.md#dlp-policy-configuration-overview) des stratégies DLP, n’oubliez pas que toutes les stratégies DLP nécessitent que vous :
+N’oubliez pas, dans la [vue d’ensemble de la configuration de stratégie DLP](dlp-learn-about-dlp.md#dlp-policy-configuration-overview) , que toutes les stratégies DLP nécessitent que vous :
 
-- Choisir ce que vous souhaitez surveiller
-- Choisir l’endroit où vous souhaitez surveiller
-- Choisir les conditions qui doivent correspondre pour qu’une stratégie soit appliquée à un élément
-- Choisir l’action à prendre lorsque les conditions de stratégie sont remplies 
+- Choisir ce que vous voulez surveiller
+- Choisir l’emplacement à surveiller
+- Choisir les conditions qui doivent être mises en correspondance pour qu’une stratégie soit appliquée à un élément
+- Choisir l’action à effectuer lorsque les conditions de stratégie sont remplies
 
-Par exemple, voici un premier brouillon fictif d’une déclaration d’intention qui fournit des réponses aux quatre questions : 
+Par exemple, voici un premier brouillon fictif d’une déclaration d’intention qui fournit des réponses aux quatre questions suivantes :
 
-*« Nous sommes une organisation basée aux États-Unis et nous devons détecter les documents Office qui contiennent des informations sensibles sur les soins de santé couverts par la loi HIPPA qui sont stockées dans OneDrive/SharePoint et se protéger contre le partage de ces informations dans les messages de conversation et de canal Teams et empêcher tout le monde de les partager avec des tiers non autorisés ».* 
+*« Nous sommes une organisation basée aux États-Unis, et nous devons détecter Office documents qui contiennent des informations sensibles sur les soins de santé couverts par l’HIPPA qui sont stockées dans OneDrive/SharePoint et nous protéger contre le partage de ces informations dans Teams des messages de conversation et de canal, et empêcher tout le monde de les partager avec des tiers non autorisés . »*
 
-Lorsque vous développerez une conception de stratégie, vous modifierez et étendrez probablement l’instruction.
+Lorsque vous développez une conception de stratégie, vous allez probablement modifier et étendre l’instruction.
 
-### <a name="map-business-needs-to-policy-configuration"></a>Ma cartographie des besoins de l’entreprise à la configuration de la stratégie
+### <a name="map-business-needs-to-policy-configuration"></a>Mappage des besoins de l’entreprise pour la configuration de la stratégie
 
-Nous allons décomposer l’exemple d’instruction provisoire et la ma mappage sur des points de configuration de stratégie DLP.
+Nous allons décomposer l’exemple d’instruction brouillon et la mapper aux points de configuration de stratégie DLP.
 
 |Statement  |Réponse à la question de configuration et mappage de configuration  |
 |---------|---------|
-| « Nous sommes une organisation américaine et nous devons détecter les documents Office qui contiennent des informations sensibles sur les soins de santé couverts par hippa...  |- **Ce qu’il** faut surveiller : Office documents, utilisez le modèle [HIPAA (Health Insurance Act)](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) des États-Unis </br>- **Conditions** d’une correspondance : (préconfigurée mais modifiable) : l’élément contient le numéro de la SSN et de la Drug Enforcement Agency (DEA) des États-Unis, la classification internationale des maladie (ICD-9-CM), la classification internationale des maladie (ICD-10-CM), le contenu est partagé avec des personnes extérieures à mon organisation.  </br> - dirige les conversations pour clarifier le seuil de déclenchement pour la détection, comme les niveaux de [confiance](sensitive-information-type-learn-about.md#more-on-confidence-levels) et le nombre [d’instances](dlp-policy-reference.md#content-contains) (appelé tolérance de fuite).|
-|... qui sont stockés dans OneDrive/SharePoint et se protègent contre le partage de ces informations Teams messages de conversation et de canal... |- **Emplacement à surveiller** : [](dlp-policy-reference.md#locations) portée de l’emplacement en incluant ou en excluant les sites OneDrive et SharePoint et Teams comptes de conversation/canal ou les groupes de distribution. |
-|... et empêcher tout le monde de partager ces éléments avec des tiers non autorisés. »  | - **Actions à prendre :** [ajouter restreindre](dlp-policy-reference.md#actions) *l’accès ou chiffrer le contenu à Microsoft 365 emplacements* </br> - dirige la conversation sur les actions à prendre lorsqu’une stratégie est déclenchée, y compris les actions de protection telles que les restrictions de partage, les actions de sensibilisation telles que les notifications et les alertes, ainsi que les actions de l’utilisateur qui autorisent les remplacements d’une action bloquante par l’utilisateur |
+| « Nous sommes une organisation américaine, et nous devons détecter Office documents qui contiennent des informations sensibles sur les soins de santé couverts par HIPPA...  |- **Quoi surveiller** : Office docs, utilisez le modèle [HIPAA (Health Insurance Act) des États-Unis](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) </br>- **Conditions d’une correspondance** : (préconfigurée mais modifiable) : l’élément contient le numéro DEA (U.SSN and Drug Enforcement Agency), la Classification internationale des maladies (ICD-9-CM), la Classification internationale des maladies (ICD-10-CM), le contenu est partagé avec des personnes extérieures à mon organisation  </br> - conduit les conversations à clarifier le seuil de déclenchement pour la détection, comme [les niveaux de confiance](sensitive-information-type-learn-about.md#more-on-confidence-levels) et le [nombre d’instances](dlp-policy-reference.md#content-contains) (appelé tolérance de fuite).|
+|... qui sont stockés dans OneDrive/SharePoint et se protègent contre le partage de ces informations Teams les messages de conversation et de canal... |- **Où surveiller** : [étendue de l’emplacement](dlp-policy-reference.md#locations) en incluant ou en excluant OneDrive et SharePoint sites et Teams comptes de conversation/canal ou groupes de distribution. |
+|... et empêcher tout le monde de partager ces éléments avec des tiers non autorisés.  | - **Actions à effectuer** : [vous ajoutez](dlp-policy-reference.md#actions) *Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements* </br> - dirige la conversation sur les actions à entreprendre lorsqu’une stratégie est déclenchée, notamment les actions de protection telles que les restrictions de partage, les actions de sensibilisation telles que les notifications et les alertes, et les actions d’autonomisation des utilisateurs comme autoriser les remplacements d’une action de blocage par l’utilisateur |
 
-Cet exemple ne couvre pas tous les points de configuration d’une stratégie DLP, mais doit être développé. Toutefois, vous devriez penser dans la bonne direction lorsque vous développez vos propres déclarations d’intention de stratégie DLP.
+Cet exemple ne couvre pas tous les points de configuration d’une stratégie DLP. Il doit être développé. Mais il devrait vous faire penser dans la bonne direction que vous développez vos propres déclarations d’intention de stratégie DLP.
 
 > [!IMPORTANT]
-> N’oubliez pas que les emplacements que vous choisissez ont un impact sur l’utilisation des types d’informations sensibles, des étiquettes de sensibilité et des étiquettes de rétention, ainsi que des actions disponibles. Consultez la référence [de stratégie de protection contre la perte de données](dlp-policy-reference.md#data-loss-prevention-policy-reference).
+> N’oubliez pas que les emplacements que vous choisissez ont un impact si vous pouvez utiliser des types d’informations sensibles, des étiquettes de confidentialité et des étiquettes de rétention, ainsi que les actions disponibles. Consultez les [informations de référence sur la stratégie de protection contre la perte de données](dlp-policy-reference.md#data-loss-prevention-policy-reference).
 
 ## <a name="policy-design-process"></a>Processus de conception de stratégie
 
-1. Pour effectuer les étapes suivantes :
-    1. [Planifiez la protection contre la perte de données (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) : vous allez passer en revue cet article :
-        1. [Identifier vos parties prenantes](dlp-overview-plan-for-dlp.md#identify-stakeholders)
-        1. [Décrire les catégories d’informations sensibles à protéger](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
-        1. [Définir des objectifs et une stratégie](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
-        1. [Définir votre plan de déploiement de stratégie](dlp-overview-plan-for-dlp.md#policy-deployment)
+1. Suivez les étapes décrites dans [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) en suivant cet article :
+   1. [Identifier vos parties prenantes](dlp-overview-plan-for-dlp.md#identify-stakeholders)
+   1. [Décrire les catégories d’informations sensibles à protéger](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
+   1. [Définir des objectifs et une stratégie](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
+   1. [Définir votre plan de déploiement de stratégie](dlp-overview-plan-for-dlp.md#policy-deployment)
 
-1. Familiarisez-vous avec la référence de stratégie de protection contre la perte de données afin de comprendre tous les composants d’une stratégie DLP et la façon dont chacun d’eux influence le comportement d’une stratégie.[](dlp-policy-reference.md#data-loss-prevention-policy-reference)
+2. Familiarisez-vous avec [les références](dlp-policy-reference.md#data-loss-prevention-policy-reference) de stratégie de protection contre la perte de données afin de comprendre tous les composants d’une stratégie DLP et comment chacun d’eux influence le comportement d’une stratégie.
 
-1. Familiarisez-vous [avec les modèles de stratégie DLP](what-the-dlp-policy-templates-include.md#what-the-dlp-policy-templates-include).
+3. Familiarisez-vous avec [ce que les modèles de stratégie DLP incluent](what-the-dlp-policy-templates-include.md#what-the-dlp-policy-templates-include).
 
-1. Développez votre déclaration d’intention de stratégie avec vos principales parties prenantes. Reportez-vous à l’exemple plus tôt dans cet article.
+4. Développez votre déclaration d’intention de stratégie avec vos principales parties prenantes. Reportez-vous à l’exemple précédent dans cet article.
 
-1. Déterminez comment cette stratégie s’inscrit dans votre stratégie de stratégie DLP globale.
+5. Déterminez comment cette stratégie s’inscrit dans votre stratégie de stratégie DLP globale.
 
-> [!IMPORTANT]
-> Les stratégies ne peuvent pas être renommées une fois qu’elles sont créées. Si vous devez renommer une stratégie, vous devez en créer une nouvelle avec le nom souhaité et retirer l’ancienne. Décidez donc de la structure d’attribution de noms que toutes vos stratégies utiliseront maintenant. 
+   > [!IMPORTANT]
+   > Les stratégies ne peuvent pas être renommées une fois créées. Si vous devez renommer une stratégie, vous devez en créer une avec le nom souhaité et mettre hors service l’ancienne. Par conséquent, choisissez la structure de nommage que toutes vos stratégies utiliseront maintenant.
 
-6. Mapz les éléments de votre déclaration d’intention de stratégie sur les options de configuration.
+6. Mappez les éléments de votre instruction d’intention de stratégie aux options de configuration.
 
-7. Déterminez le modèle de stratégie à partir duquel vous allez commencer, prédéféré ou personnalisé.
+7. Choisissez le modèle de stratégie à partir duquel vous allez commencer, prédéfini ou personnalisé.
 
-8. Allez dans le modèle et assemblez toutes les informations requises avant de créer la stratégie. Il est probable que vous trouverez certains points de configuration qui ne sont pas couverts dans votre déclaration d’intention de stratégie. C'est d'accord. Revenir à vos parties prenantes pour advenir aux exigences relatives aux points de configuration manquants. 
+8. Parcourez le modèle et assemblez toutes les informations requises avant de créer la stratégie. Il est probable que vous constaterez que certains points de configuration ne sont pas couverts dans votre déclaration d’intention de stratégie. C'est d'accord. Retour à vos parties prenantes de résoudre les exigences relatives aux points de configuration manquants.
 
-9. Documentez la configuration de tous les paramètres de stratégie et examinez-les avec vos parties prenantes. Vous pouvez ré-utiliser le mappage de votre déclaration d’intention de stratégie aux points de configuration, ce qui est désormais complètement fait.
+9. Documentez la configuration de tous les paramètres de stratégie et passez-les en revue avec vos parties prenantes. Vous pouvez réutiliser le mappage de votre instruction d’intention de stratégie aux points de configuration, qui est maintenant entièrement étoffé.
 
-10. [Créez un brouillon](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy) de stratégie et reportez-vous à votre plan [de déploiement de stratégie](dlp-overview-plan-for-dlp.md#policy-deployment) .
+10. [Créez un](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy) brouillon de stratégie et reportez-vous à votre plan de [déploiement de stratégie](dlp-overview-plan-for-dlp.md#policy-deployment) .
 
 <!--## Policy design examples
 
@@ -134,11 +133,11 @@ Cet exemple ne couvre pas tous les points de configuration d’une stratégie DL
 
 
 - whether the protective actions you need are supported throught the associated location or if you need to compromise to extend coverage
-    - also usefule for identifying the most restrictive actions available 
+    - also usefule for identifying the most restrictive actions available
     - (we shouldn't mention here that the "content contains" condition is the primary staple for a DLP policy and should be utilized as a starting point for policy creation. The other workload-specific conditions can be ustilized as an extended or granular control of company's DLP policy. Useful for when "too much" data is being restricted and known sensitive data typically falls under certain conditions.)
     - (We can mention here that their quantitative goal such as "protect X% of data across all locations while maintaining x productivity" can be monitored throught alerts or reports. If protection is too high of working against their established goals, they can come back to policy and tweak their conditions/actions)
-- Finally, you should have a union of what, hwo and when to be covered which will easily map to generating a live policy via Microsoft DLP. 
-- 
+- Finally, you should have a union of what, hwo and when to be covered which will easily map to generating a live policy via Microsoft DLP.
+-
 5. At this stage you should asses how you should start this policy. ***LINK OUT TO DEPLOYING A POLICY COVERED IN THE PLANNING TOPIC TOO***
     - Test: your company is very large, conservative or the actions established are pretty restrictive
     - Test w/ notifications: same as above, but you get to test out investigation cadence or volume
@@ -165,11 +164,10 @@ Here are some examples of more detailed policy intent statement to configuration
 
 -->
 
-
 ## <a name="see-also"></a>Voir aussi
 
 - [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Planifier la protection contre la perte de données (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
-- [Référence de stratégie de protection contre la perte de données](dlp-policy-reference.md#data-loss-prevention-policy-reference)
+- [Informations de référence sur la stratégie de protection contre la perte de données](dlp-policy-reference.md#data-loss-prevention-policy-reference)
 - [Référence des conseils de stratégie de prévention contre la perte de données](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)

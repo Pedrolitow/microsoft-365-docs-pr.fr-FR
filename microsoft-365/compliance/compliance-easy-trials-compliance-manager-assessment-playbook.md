@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Guide d'essai des évaluations premium de Microsoft Compliance Manager.
-ms.openlocfilehash: 47b9e37cb3b73733028254849048cf1f0f058448
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: f50060fa5e9f037fbe1301496f18422684c38d3d
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680069"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759852"
 ---
 # <a name="trial-playbook-microsoft-compliance-manager-premium-assessments"></a>Guide d'essai : évaluations premium de Microsoft Compliance Manager
 

@@ -1,5 +1,5 @@
 ---
-title: Configurer et passer en revue les comptes prioritaires dans Microsoft Defender pour Office 365
+title: Configurer et passer en revue les comptes prioritaires dans Pertahanan Microsoft untuk Office 365
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -17,14 +17,14 @@ ms.custom: ''
 description: Découvrez comment identifier les personnes critiques d’une organisation et ajouter la balise de compte prioritaire pour leur fournir une protection supplémentaire.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bf7a21c03764f7dd55b7a63af5b4173606a78188
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: d48b1ec6c3ee0ba5f73d99b097303a8c989d545e
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731769"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759538"
 ---
-# <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Configurer et passer en revue les comptes prioritaires dans Microsoft Defender pour Office 365
+# <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Configurer et passer en revue les comptes prioritaires dans Pertahanan Microsoft untuk Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "64731769"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans chaque organisation, il existe des personnes critiques, telles que des cadres, des dirigeants, des responsables ou d’autres utilisateurs, qui ont accès à des informations sensibles, propriétaires ou hautement prioritaires. Vous pouvez marquer ces utilisateurs dans Microsoft Defender pour Office 365 en tant que comptes prioritaires, ce qui permet aux équipes de sécurité de hiérarchiser leur attention sur ces personnes critiques. Avec la protection différenciée pour les comptes prioritaires, les utilisateurs marqués comme comptes prioritaires bénéficient d’un niveau de protection plus élevé contre les menaces.
+Dans chaque organisation, il existe des personnes critiques, telles que des cadres, des dirigeants, des responsables ou d’autres utilisateurs, qui ont accès à des informations sensibles, propriétaires ou hautement prioritaires. Vous pouvez marquer ces utilisateurs dans Pertahanan Microsoft untuk Office 365 en tant que comptes prioritaires, ce qui permet aux équipes de sécurité de hiérarchiser leur attention sur ces personnes critiques. Avec la protection différenciée pour les comptes prioritaires, les utilisateurs marqués comme comptes prioritaires bénéficient d’un niveau de protection plus élevé contre les menaces.
 
 Les comptes prioritaires sont plus souvent ciblés par des attaquants et sont généralement attaqués avec des techniques plus sophistiquées. La protection différenciée pour les comptes prioritaires se concentre sur cet ensemble d’utilisateurs spécifique et fournit un niveau de protection plus élevé à l’aide de modèles Machine Learning améliorés. Cette différenciation dans l’apprentissage et la gestion des messages offre le niveau de protection le plus élevé pour ces comptes et contribue à maintenir un faible taux de faux positifs, car un taux élevé de faux positifs peut également avoir un impact négatif sur ces utilisateurs.
 
@@ -52,17 +52,17 @@ La protection de compte prioritaire est activée par défaut pour les utilisateu
 
 ### <a name="enable-the-priority-account-tag"></a>Activer la balise de compte prioritaire
 
-Microsoft Defender pour Office 365 prend en charge les comptes prioritaires en tant que balises qui peuvent être utilisées comme filtres dans les alertes, les rapports et les enquêtes.
+Pertahanan Microsoft untuk Office 365 prend en charge les comptes prioritaires en tant que balises qui peuvent être utilisées comme filtres dans les alertes, les rapports et les enquêtes.
 
-Pour plus d’informations, consultez [les balises utilisateur dans Microsoft Defender pour Office 365](user-tags.md).
+Pour plus d’informations, consultez [les balises utilisateur dans Pertahanan Microsoft untuk Office 365](user-tags.md).
 
 ## <a name="review-differentiated-protection-in-threat-protection-status-report-threat-explorer-and-email-entity-page"></a>Passer en revue la protection différenciée dans le rapport d’état de la protection contre les menaces, l’Explorateur de menaces et la page d’entité de messagerie
 
 ### <a name="threat-protection-status-report"></a>Rapport sur l’état de la protection contre les menaces
 
-Le rapport d’état de la protection contre les menaces est une vue unique qui rassemble des informations sur le contenu malveillant et les e-mails malveillants détectés et bloqués par Microsoft Defender pour Office 365. 
+Le rapport d’état de la protection contre les menaces est une vue unique qui rassemble des informations sur le contenu malveillant et les e-mails malveillants détectés et bloqués par Pertahanan Microsoft untuk Office 365. 
 
-Pour afficher le rapport dans le portail Microsoft 365 Defender, accédez **aux** \> rapports **e-mail &** **rapports de collaboration**\> e-mail & collaboration. Dans la page **e-mail & rapports de collaboration** , recherchez l’état de **la protection contre les menaces**, puis cliquez sur **Afficher les détails**.
+Pour afficher le rapport dans le portail Microsoft 365 Defender, accédez **aux** \> rapports **e-mail &** **rapports de collaboration**\> e-mail & collaboration. Dans la page **e-mail & rapports de collaboration** , recherchez **l’état de la protection contre les menaces**, puis sélectionnez **Afficher les détails**. Accédez à la **vue Courrier indésirable**, **Phish** ou **Malware**, puis utilisez l’icône de filtre pour sélectionner **la protection du compte Priority**.
 
 ### <a name="threat-explorer"></a>Threat Explorer 
 
@@ -81,5 +81,5 @@ Les onglets situés en haut de la page d’entité vous permettent d’examiner 
 
 ## <a name="more-information"></a>Informations supplémentaires
 
-- [Balises utilisateur dans Microsoft Defender pour Office 365](user-tags.md)
+- [Balises utilisateur dans Pertahanan Microsoft untuk Office 365](user-tags.md)
 - [Gérer et surveiller les comptes prioritaires](../../admin/setup/priority-accounts.md)

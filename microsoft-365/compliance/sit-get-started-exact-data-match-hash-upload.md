@@ -15,70 +15,70 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Hachage et chargement de la table des sources d’informations sensibles pour les types d’informations sensibles de correspondance exacte des données.
+description: Hachez et chargez la table source d’informations sensibles pour que les données exactes correspondent aux types d’informations sensibles.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e8726b17a3f87d61c8d63be7137ec8e465a5cd9a
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 4c40802a76ab09dc86dcada5ebfd17187136f42e
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568475"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64760226"
 ---
 # <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>Hacher et charger la table de source d’informations sensibles pour les données exactes correspondant aux types d’informations sensibles
 
-Cet article vous montre comment hachage et télécharger votre table de sources d’informations sensibles.
+Cet article vous montre comment hacher et charger votre table source d’informations sensibles.
 
-## <a name="hash-and-upload-the-sensitive-information-source-table"></a>Hachage et chargement de la table des sources d’informations sensibles
+## <a name="hash-and-upload-the-sensitive-information-source-table"></a>Hachage et chargement de la table source d’informations sensibles
 
 Dans cette phase, vous :
 
 1. configurer un groupe de sécurité et un compte d’utilisateur personnalisés
-2. configurer l’outil Agent Télécharger EDM
-3. Utilisez l’outil agent Télécharger EDM pour hachage, avec une valeur salt, la table des sources d’informations sensibles et téléchargez-la.
+2. configurer l’outil EDM Télécharger Agent
+3. Utilisez l’outil EDM Télécharger Agent pour le hachage, avec une valeur salt, la table source d’informations sensibles et chargez-la.
 
 L’opération de hachage et de chargement peut être effectuée à l’aide d’un ordinateur ou vous pouvez séparer ces deux étapes pour renforcer la sécurité.
 
-Si vous voulez hacher et charger à partir d’un ordinateur, vous devez le faire à partir d’un ordinateur qui peut se connecter directement à votre client Microsoft 365. Pour cela, votre fichier de table de sources d’informations sensibles en texte clair doit se trouve sur cet ordinateur pour le hachage.
+Si vous voulez hacher et charger à partir d’un ordinateur, vous devez le faire à partir d’un ordinateur qui peut se connecter directement à votre client Microsoft 365. Cela nécessite que votre fichier de table source d’informations sensibles en texte clair se trouve sur cet ordinateur pour le hachage.
 
-Si vous ne souhaitez pas exposer votre fichier de table de sources d’informations sensibles en texte clair sur l’ordinateur à accès direct, vous pouvez le hachage sur un ordinateur qui se trouve dans un emplacement sécurisé, puis copier le fichier de hachage et le fichier salt sur un ordinateur qui peut se connecter directement à votre client Microsoft 365 pour le chargement. Dans le scénario de hachage et de chargement séparés, vous aurez besoin d’EDMUploadAgent sur les deux ordinateurs.
+Si vous ne souhaitez pas exposer votre fichier de table source d’informations sensibles en texte clair sur l’ordinateur à accès direct, vous pouvez le hacher sur un ordinateur qui se trouve dans un emplacement sécurisé, puis copier le fichier de hachage et le fichier salt sur un ordinateur qui peut se connecter directement à votre client Microsoft 365 pour le chargement. Dans le scénario de hachage et de chargement séparés, vous aurez besoin d’EDMUploadAgent sur les deux ordinateurs.
 
 > [!IMPORTANT]
-> Si vous avez utilisé l’Assistant Correspondance exacte des données et type d’informations sensibles pour créer votre fichier  de schéma, vous devez télécharger le schéma pour cette procédure si vous ne l’avez pas déjà fait. Voir Exporter [le fichier de schéma EDM au format XML](sit-get-started-exact-data-match-create-schema.md#export-of-the-edm-schema-file-in-xml-format).
+> Si vous avez utilisé l’Assistant Correspondance exacte des données et type d’informations sensibles pour créer votre fichier de schéma, vous ***devez*** télécharger le schéma de cette procédure si vous ne l’avez pas déjà fait. Consultez [l’article Exporter le fichier de schéma EDM au format XML](sit-get-started-exact-data-match-create-schema.md#export-of-the-edm-schema-file-in-xml-format).
 
 > [!NOTE]
-> Si votre organisation a installé la clé client pour [Microsoft 365](customer-key-overview.md) au niveau du client, la correspondance exacte des données utilisera automatiquement sa fonctionnalité de chiffrement. Cette offre est disponible uniquement pour les clients sous licence E5 dans le cloud commercial.
+> Si votre organisation a configuré [la clé client pour Microsoft 365 au niveau du locataire, la](customer-key-overview.md) correspondance exacte des données utilise automatiquement ses fonctionnalités de chiffrement. Cette offre est disponible uniquement pour les clients sous licence E5 dans le cloud commercial.
 
 ### <a name="best-practices"></a>Meilleures pratiques
 
-Séparez les processus de hachage et de chargement des données sensibles afin de pouvoir isoler plus facilement les problèmes dans le processus.
+Séparez les processus de hachage et de chargement des données sensibles afin de pouvoir isoler plus facilement les problèmes du processus.
 
-Une fois en production, conservez les deux étapes distinctes dans la plupart des cas. L’opération de hachage sur un ordinateur isolé, puis le transfert du fichier à télécharger vers un ordinateur accessible sur Internet garantit que les données réelles ne sont jamais disponibles en texte clair sur un ordinateur qui aurait pu être compromis en raison de sa connexion à Internet.
+Une fois en production, conservez les deux étapes distinctes dans la plupart des cas. L’exécution du processus de hachage sur un ordinateur isolé, puis le transfert du fichier vers un ordinateur accessible sur Internet garantit que les données réelles ne sont jamais disponibles sous forme de texte clair sur un ordinateur qui aurait pu être compromis en raison de sa connexion à Internet.
 
-### <a name="ensure-your-sensitive-data-table-doesnt-have-formatting-issues"></a>Assurez-vous que votre table de données sensibles n’a pas de problèmes de mise en forme.
+### <a name="ensure-your-sensitive-data-table-doesnt-have-formatting-issues"></a>Vérifiez que votre table de données sensible n’a pas de problèmes de mise en forme
 
-Avant de hachage et de chargement de vos données sensibles, faites une recherche pour valider la présence de caractères spéciaux qui peuvent entraîner des problèmes d’analyse du contenu.
-Vous pouvez vérifier que le tableau est dans un format approprié à utiliser avec EDM à l’aide de l’agent de chargement EDM avec la syntaxe suivante :
+Avant de hacher et de charger vos données sensibles, effectuez une recherche pour valider la présence de caractères spéciaux susceptibles de provoquer des problèmes lors de l’analyse du contenu.
+Vous pouvez vérifier que la table est dans un format approprié à utiliser avec EDM à l’aide de l’agent de chargement EDM avec la syntaxe suivante :
 
 ```powershell
 EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
 ```
 
-Si l’outil indique une non-compatibilité en nombre de colonnes, il peut être dû à la présence de virgules ou de guillemets dans les valeurs du tableau qui sont confondues avec les délimiteur de colonnes. Sauf s’ils entourent une valeur entière, les guillemets simples et doubles peuvent provoquer une erreur d’identification de l’endroit où une colonne individuelle démarre ou se termine.
+Si l’outil indique une incompatibilité dans le nombre de colonnes, cela peut être dû à la présence de virgules ou de guillemets dans les valeurs de la table qui sont confondues avec les délimiteurs de colonnes. Sauf s’ils entourent une valeur entière, les guillemets simples et doubles peuvent amener l’outil à mésidentifier l’endroit où une colonne individuelle démarre ou se termine.
 
-**Si vous trouvez des guillemets simples ou doubles entourant** des valeurs complètes : vous pouvez les laisser tels quelles.
+**Si vous trouvez des guillemets simples ou doubles qui entourent des valeurs complètes** : vous pouvez les laisser tels qu’ils sont.
 
-Si vous trouvez des guillemets simples ou des virgules à l’intérieur d’une valeur : par exemple, le nom de la personne Tom O’Quotes ou la ville 's-Gravenhage qui commence par une apostrophe, vous devez modifier le processus d’exportation de données utilisé pour générer la table d’informations sensibles afin de entourer ces colonnes de guillemets doubles.
+**Si vous trouvez des guillemets simples ou des virgules dans une valeur** : par exemple, le nom de la personne Tom O’Neil ou la ville 's-Gravenhage qui commence par un caractère apostrophe, vous devrez modifier le processus d’exportation de données utilisé pour générer la table d’informations sensibles pour entourer ces colonnes de guillemets doubles.
 
-**Si des guillemets** doubles sont trouvés à l’intérieur des valeurs, il peut être préférable d’utiliser le format délimité par des tabulations pour le tableau qui est moins susceptible de ces problèmes.
+**Si des guillemets doubles sont trouvés à l’intérieur des valeurs**, il peut être préférable d’utiliser le format délimité par tabulation pour la table qui est moins sensible à ces problèmes.
 
 ### <a name="prerequisites"></a>Configuration requise
 
 - Un compte professionnel ou scolaire pour Microsoft 365 qui sera ajouté au groupe de sécurité **EDM\_DataUploaders**
-- un Windows 10 ou un Windows Server 2016 avec .NET version 4.6.2 <!--4.7.2 un comment this around 9/29-->pour l’exécution de l’EDMUploadAgent
+- une machine Windows 10 ou Windows Server 2016 avec .NET version 4.6.2 <!--4.7.2 un comment this around 9/29-->pour l’exécution d’EDMUploadAgent
 - Un répertoire sur votre ordinateur de téléchargement pour :
-  - [Agent de Télécharger EDM](#links-to-edm-upload-agent-by-subscription-type)
-  - votre fichier d’élément sensible au format .csv, .tsv ou pipe (|), **PatientRecords.csvdans nos** exemples
-  - fichiers de hachage et salt de sortie créés dans cette procédure ;
+  - [EDM Télécharger Agent](#links-to-edm-upload-agent-by-subscription-type)
+  - votre fichier d’élément sensible au format .csv, .tsv ou pipe (|), **PatientRecords.csv** dans nos exemples
+  - les fichiers de hachage et de sel de sortie créés dans cette procédure
   - Le nom du magasin de données provenant du fichier **edm.xml**, ici `PatientRecords`
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Configurer les groupe de sécurité personnalisé et compte d’utilisateur
@@ -95,11 +95,11 @@ Cet ordinateur doit avoir accès directement à votre client Microsoft 365.
 > Avant de commencer cette procédure, assurez-vous que vous êtes membre du groupe de sécurité **EDM\_DataUploaders**.
 
 > [!TIP]
->Si vous le souhaitez, vous pouvez exécuter une validation sur votre fichier de table de sources d’informations sensibles pour vérifier s’il y a des erreurs avant le chargement en exécutant :
+>Si vous le souhaitez, vous pouvez exécuter une validation sur votre fichier de table source d’informations sensibles pour rechercher des erreurs avant le chargement en exécutant :
 >
 > `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
-> Pour plus d’informations sur tous les paramètres pris EdmUploadAgent.exe'exécuter
+> Pour plus d’informations sur toutes les EdmUploadAgent.exe les paramètres pris en charge s’exécutent
 >
 > `EdmUploadAgent.exe /?`
 
@@ -118,7 +118,7 @@ Cet ordinateur doit avoir accès directement à votre client Microsoft 365.
    >
    > Vous pouvez télécharger des données avec EDMUploadAgent vers n’importe quel magasin de données donné deux fois par jour uniquement.
 
-3. Autorisez l’agent Télécharger EDM, ouvrez la fenêtre d’invite de commandes en tant qu’administrateur, basculez vers **le répertoire C:\EDM\Data**, puis exécutez la commande suivante :
+3. Autorisez l’agent Télécharger EDM, ouvrez la fenêtre d’invite de commandes en tant qu’administrateur, basculez vers le répertoire **C:\EDM\Data**, puis exécutez la commande suivante :
 
    `EdmUploadAgent.exe /Authorize`
 
@@ -127,7 +127,7 @@ Cet ordinateur doit avoir accès directement à votre client Microsoft 365.
 
 4. Connectez-vous à l’aide de votre compte professionnel ou scolaire pour Microsoft 365 qui a été ajouté au groupe de sécurité EDM_DataUploaders. Vos informations de client sont extraites du compte d’utilisateur pour établir la connexion.
 
-   FACULTATIF : si vous avez utilisé l’Assistant Correspondance exacte des données et type d’informations sensibles pour créer votre  schéma, vous devez le télécharger pour l’utiliser dans cette procédure si ce n’est pas déjà fait. Exécutez cette commande dans une fenêtre d’invite de commandes :
+   FACULTATIF : Si vous avez utilisé l’Assistant Type d’informations sensibles et le schéma Exact Data Match pour créer votre schéma, vous ***devez*** le télécharger pour l’utiliser dans cette procédure si vous ne l’avez pas déjà fait. Exécutez cette commande dans une fenêtre d’invite de commandes :
 
    ```dos
    EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
@@ -140,11 +140,11 @@ Cet ordinateur doit avoir accès directement à votre client Microsoft 365.
    ```
 
    > [!NOTE]
-   > Le format par défaut du fichier de données sensibles est les valeurs séparées par des virgules. Vous pouvez spécifier un fichier séparé par des tabulations en indiquant l’option « {Tab} » avec le paramètre /ColumnSeparator, ou vous pouvez spécifier un fichier séparé par un canal en indiquant l’option « | ».
+   > Le format par défaut du fichier de données sensibles est des valeurs séparées par des virgules. Vous pouvez spécifier un fichier séparé par des tabulations en indiquant l’option « {Tab} » avec le paramètre /ColumnSeparator, ou vous pouvez spécifier un fichier séparé par canal en indiquant l’option « | ».
    >
    > Exemple : `EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5`
 
-   Si votre table d’informations sensibles a des valeurs mal formatées, mais que vous souhaitez importer les données restantes tout en ignorant les lignes non valides, vous pouvez utiliser le paramètre */AllowedBadLinesPercentage* dans la commande. L’exemple ci-dessus spécifie un seuil de cinq pour cent. Cela signifie que l’outil va hachage et télécharger la table des informations sensibles même si jusqu’à cinq pour cent des lignes ne sont pas valides.
+   Si votre table d’informations sensibles a des valeurs incorrectement mises en forme, mais que vous souhaitez importer les données restantes tout en ignorant les lignes non valides de toute façon, vous pouvez utiliser le paramètre */AllowedBadLinesPercentage* dans la commande. L’exemple ci-dessus spécifie un seuil de cinq pour cent. Cela signifie que l’outil va hacher et charger la table d’informations sensibles, même si jusqu’à cinq pour cent des lignes ne sont pas valides.
 
    Cette commande ajoute automatiquement une valeur salt générée de manière aléatoire au hachage pour une sécurité accrue. Si vous voulez utiliser votre propre valeur salt, vous pouvez également ajouter **/Salt \<saltvalue\>** à la commande. Cette valeur doit comporter 64 caractères et ne peut contenir que les caractères allant de a à z et de 0 à 9.
 
@@ -156,16 +156,16 @@ Cet ordinateur doit avoir accès directement à votre client Microsoft 365.
 
    Exemple : `EdmUploadAgent.exe /GetSession /DataStoreName PatientRecords`
 
-   Vous verrez l’état **ProcessingInProgress**. Vérifiez à quelques minutes d’intervalle jusqu’à ce que l’état devienne **Completed**. Une fois que le chargement est à l’état Completed, vos données EDM sont prêtes à l’emploi. Selon la taille de votre fichier de table de sources d’informations sensibles, cette opération peut prendre de quelques minutes à plusieurs heures.
+   Vous verrez l’état **ProcessingInProgress**. Vérifiez à quelques minutes d’intervalle jusqu’à ce que l’état devienne **Completed**. Une fois que le chargement est à l’état Completed, vos données EDM sont prêtes à l’emploi. Selon la taille de votre fichier de table source d’informations sensibles, cela peut prendre de quelques minutes à plusieurs heures.
 
 > [!TIP]
-> Si vous souhaitez être averti une fois que les données sensibles téléchargées sont prêtes à être utilisés, suivez les procédures de création de notifications pour les activités de correspondance de [données exactes](sit-edm-notifications-activities.md#create-notifications-for-exact-data-match-activities).
+> Si vous souhaitez être averti une fois que les données sensibles chargées sont prêtes à être utilisées, suivez les procédures [décrites dans Créer des notifications pour les activités de correspondance exacte des données](sit-edm-notifications-activities.md#create-notifications-for-exact-data-match-activities).
 
 ### <a name="separate-hash-and-upload"></a>Séparer le hachage et le chargement
 
-Effectuez le hachage sur un ordinateur dans un environnement sécurisé. **L’EDMUploadAgent doit** être installé sur les deux ordinateurs.
+Effectuez le hachage sur un ordinateur dans un environnement sécurisé. **EDMUploadAgent** doit être installé sur les deux ordinateurs.
 
-FACULTATIF : si vous avez utilisé l’Assistant Correspondance exacte des données et type d’informations sensibles pour créer votre schéma et que vous ne l’avez pas déjà téléchargé, exécutez la commande suivante dans une fenêtre d’invite de commandes pour télécharger le fichier au format XML :
+FACULTATIF : Si vous avez utilisé l’Assistant Schéma exact de correspondance de données et type d’informations sensibles pour créer votre schéma et que vous ne l’avez pas encore téléchargé, exécutez la commande suivante dans une fenêtre d’invite de commandes pour télécharger le fichier au format XML :
 
 ```dos
 EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
@@ -184,16 +184,16 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    ```
 
    > [!NOTE]
-   > Le format par défaut du fichier de données sensibles est les valeurs séparées par des virgules. Vous pouvez spécifier un fichier séparé par des tabulations en indiquant l’option « {Tab} » avec le paramètre /ColumnSeparator, ou vous pouvez spécifier un fichier séparé par un canal en indiquant l’option « | ».
+   > Le format par défaut du fichier de données sensibles est des valeurs séparées par des virgules. Vous pouvez spécifier un fichier séparé par des tabulations en indiquant l’option « {Tab} » avec le paramètre /ColumnSeparator, ou vous pouvez spécifier un fichier séparé par canal en indiquant l’option « | ».
 
    Cela génère un fichier haché et un fichier salt avec les extensions suivantes si vous n’avez pas spécifié l’option **/Salt \<saltvalue\>**  :
 
    - .EdmHash
    - .EdmSalt
 
-2. Copiez ces fichiers de manière sécurisée sur l’ordinateur que vous utiliserez pour télécharger votre fichier de table de sources d’informations sensibles (PatientRecords) vers votre client.
+2. Copiez ces fichiers de manière sécurisée sur l’ordinateur que vous utiliserez pour charger votre fichier de table source d’informations sensibles (PatientRecords) sur votre locataire.
 
-3. Autorisez l’agent Télécharger EDM, ouvrez la fenêtre d’invite de commandes en tant qu’administrateur, basculez vers **le répertoire C:\EDM\Data**, puis exécutez la commande suivante :
+3. Autorisez l’agent Télécharger EDM, ouvrez la fenêtre d’invite de commandes en tant qu’administrateur, basculez vers le répertoire **C:\EDM\Data**, puis exécutez la commande suivante :
 
    ```dos
    EdmUploadAgent.exe /Authorize
@@ -224,7 +224,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
    La liste des magasins de données apparaît, ainsi que la date de la dernière mise à jour.
 
-7. Si vous souhaitez voir tous les téléchargements de données dans un magasin particulier, exécutez la commande suivante dans une invite de commandes Windows pour voir la liste de tous les magasins de données et quand ils ont été mis à jour :
+7. Si vous souhaitez voir tous les chargements de données dans un magasin particulier, exécutez la commande suivante dans une invite de commandes Windows pour afficher la liste de tous les magasins de données et quand ils ont été mis à jour :
 
    ```dos
    EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>

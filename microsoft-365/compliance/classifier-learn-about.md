@@ -18,122 +18,129 @@ ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
-description: Les classifieurs entraisables peuvent reconnaître différents types de contenu pour l’étiquetage ou l’application de stratégie en lui donnant des exemples positifs et négatifs à examiner.
-ms.openlocfilehash: 50d20c3a40b21696c06064b548d7766684fb12a0
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+description: Les classifieurs pouvant être formés peuvent reconnaître différents types de contenu pour l’étiquetage ou l’application de stratégie en lui donnant des exemples positifs et négatifs à examiner.
+ms.openlocfilehash: 7da6c9ef6e26d25bb40cade4832abb7b73a4b095
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "62909638"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759874"
 ---
 # <a name="learn-about-trainable-classifiers"></a>En savoir plus sur les classifieurs avec capacité d’apprentissage
 
-La classification et l’étiquetage du contenu afin qu’il puisse être protégé et géré correctement constitue le point de départ de la protection des informations. Microsoft 365 trois façons de classifier le contenu.
+La classification et l’étiquetage du contenu afin qu’il puisse être protégé et géré correctement constituent le point de départ de la discipline de protection des informations. Microsoft 365 a trois façons de classer le contenu.
 
 ## <a name="manually"></a>Manuellement
 
-La classification manuelle nécessite un juge humain et une action. Les utilisateurs et les administrateurs les appliquent au contenu à mesure qu’ils le rencontrent. Vous pouvez utiliser les étiquettes pré-existantes et les types d’informations sensibles ou utiliser des étiquettes créées personnalisées.  Vous pouvez ensuite protéger le contenu et gérer sa disposition.
+La classification manuelle requiert un jugement et une action humains. Les utilisateurs et les administrateurs les appliquent au contenu lorsqu’ils le rencontrent. Vous pouvez utiliser les étiquettes préexistantes et les types d’informations sensibles ou utiliser des étiquettes créées personnalisées.  Vous pouvez ensuite protéger le contenu et gérer sa destruction.
 
-## <a name="automated-pattern-matching"></a>Mise en correspondance automatique des modèles
+## <a name="automated-pattern-matching"></a>Mise en correspondance automatisée des modèles
 
 Cette catégorie de mécanismes de classification inclut la recherche de contenu par :
 
 - Mots clés ou valeurs de métadonnées (langage de requête de mot clé).
-- Utilisation de modèles précédemment identifiés d’informations sensibles telles que la sécurité sociale, la carte bancaire ou les numéros de compte bancaire (définitions d’entités de [type d’informations sensibles)](sensitive-information-type-entity-definitions.md)
-- Reconnaissance d’un élément, car il s’agit d’une variante d’un modèle [(impression avec le doigt du document).](document-fingerprinting.md)
-- L’utilisation de la présence de chaînes [exactes correspond exactement aux données](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
+- Utilisation de modèles précédemment identifiés d’informations sensibles telles que les numéros de sécurité sociale, de carte de crédit ou de compte bancaire [(définitions d’entités de type Informations sensibles).](sensitive-information-type-entity-definitions.md)
+- Reconnaissance d’un élément, car il s’agit d’une variante d’un modèle [(impression par doigt de document).](document-fingerprinting.md)
+- Utilisation de la présence de chaînes exactes [correspondant exactement aux données](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
 
-Les étiquettes de sensibilité et de rétention peuvent ensuite être appliquées automatiquement pour rendre le contenu disponible [](dlp-learn-about-dlp.md) pour utilisation dans La recherche sur la protection contre la perte de données et l’application automatique des [stratégies pour les étiquettes de rétention](apply-retention-labels-automatically.md).
+Les étiquettes de confidentialité et de rétention peuvent ensuite être appliquées automatiquement pour rendre le contenu disponible pour une utilisation dans [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md) et [appliquer automatiquement des stratégies pour les étiquettes de rétention](apply-retention-labels-automatically.md).
 
-## <a name="classifiers"></a>Classifieurs
+## <a name="classifiers"></a>Classificateurs
 
-Cette méthode de classification est bien adaptée au contenu qui n’est pas facilement identifié par les méthodes manuelles ou automatisées de correspondance de modèles. Cette méthode de classification consiste davantage à utiliser un classificateur pour identifier un élément en fonction de ce qu’est l’élément, et non par des éléments qui se trouve dans l’élément (correspondance de modèle). Un classifieur apprend à identifier un type de contenu en regardant des centaines d’exemples de contenu que vous souhaitez classer.
+Cette méthode de classification est bien adaptée au contenu qui n’est pas facile à identifier par les méthodes manuelles ou automatisées de mise en correspondance des modèles. Cette méthode de classification consiste davantage à utiliser un classifieur pour identifier un élément en fonction de ce qu’est l’élément, et non par les éléments qui se trouvent dans l’élément (critères spéciaux). Un classifieur apprend à identifier un type de contenu en examinant des centaines d’exemples de contenu que vous souhaitez classifier.
 
 > [!NOTE]
-> En prévisualisation : vous pouvez afficher les classifieurs entra nerables dans l’explorateur de contenu en développez **classifieurs entra nessables** dans le panneau de filtres. Les classifieurs entra nements afficheront automatiquement le nombre d’incidents trouvés dans SharePoint, Teams et OneDrive, sans nécessiter d’étiquetage.
-> Si vous ne souhaitez pas utiliser cette fonctionnalité, vous devez déposer une demande auprès du Support Microsoft pour désactiver la classification pré- Cela désactive l’analyse de votre contenu sensible et étiqueté avant de créer des stratégies d’étiquetage.
+> En préversion : vous pouvez afficher les classifieurs pouvant être formés dans l’Explorateur de contenu en développant les **classifieurs pouvant être entraînés** dans le panneau filtres. Les classifieurs pouvant être formés affichent automatiquement le nombre d’incidents trouvés dans SharePoint, Teams et OneDrive, sans nécessiter d’étiquetage.
+> Si vous ne souhaitez pas utiliser cette fonctionnalité, vous devez envoyer une demande auprès de Support Microsoft pour désactiver la classification out-of-the-box. Cela désactive l’analyse de votre contenu sensible et étiqueté avant de créer des stratégies d’étiquetage.
 
-### <a name="where-you-can-use-classifiers"></a>Où utiliser des classifieurs
+### <a name="where-you-can-use-classifiers"></a>Où vous pouvez utiliser des classifieurs
 
-Les classifieurs peuvent être utilisés comme condition pour l’Office [l’étiquetage](apply-sensitivity-label-automatically.md) automatique avec des étiquettes de confidentialité, l’application automatique d’une stratégie d’étiquette de rétention basée sur une [condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) et la conformité des [communications](communication-compliance.md). 
+Les classifieurs peuvent être utilisés comme condition pour [Office l’étiquetage automatique avec des étiquettes de confidentialité](apply-sensitivity-label-automatically.md), [l’application automatique d’une stratégie d’étiquette de rétention en fonction d’une condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) et de [la conformité des communications](communication-compliance.md). 
 
-Les étiquettes de sensibilité peuvent utiliser des classifieurs comme conditions. Voir Appliquer automatiquement une étiquette de sensibilité [au contenu](apply-sensitivity-label-automatically.md).
+Les étiquettes de confidentialité peuvent utiliser des classifieurs comme conditions. [Consultez Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md).
 
 > [!IMPORTANT]
-> Les classifieurs fonctionnent uniquement avec les éléments qui ne sont pas chiffrés.
+> Les classifieurs fonctionnent uniquement avec des éléments qui ne sont pas chiffrés.
 
 ## <a name="types-of-classifiers"></a>Types de classifieurs
 
-- **Classifieurs pré-formés** : Microsoft a créé et pré-formé plusieurs classifieurs que vous pouvez commencer à utiliser sans les former. Ces classifieurs apparaissent avec l’état de `Ready to use`.
-- **Classifieurs entraisables personnalisés** : si vous avez des besoins de classification qui étendent au-delà de ce que couvrent les classifieurs pré-formés, vous pouvez créer et former vos propres classifieurs.
+- **classifieurs préentrifiés** : Microsoft a créé et préentragé plusieurs classifieurs que vous pouvez commencer à utiliser sans les former. Ces classifieurs s’affichent avec l’état .`Ready to use`
+- **classifieurs entraînés personnalisés** : si vous avez des besoins de classification qui dépassent ce que couvrent les classifieurs préentrifiés, vous pouvez créer et entraîner vos propres classifieurs.
 
-### <a name="pre-trained-classifiers"></a>Classifieurs pré-formés
+### <a name="pre-trained-classifiers"></a>Classifieurs préentrifiés
 
-Microsoft 365 est livré avec plusieurs classifieurs pré-formés :
+Microsoft 365 est fourni avec plusieurs classifieurs préformés :
 
 > [!CAUTION]
-> Nous déconseillons le classificateur **Langage choquant** pré-formé, car il a produit un grand nombre de faux positifs. Ne l’utilisez pas et si vous l’utilisez actuellement, vous devez en déplacer vos processus d’entreprise. Nous vous recommandons plutôt **d’utiliser** les classifieurs  pré-formés contre les menaces **, les** blasphémités et le harcèlement.
+> Nous supprimons le classificateur pré-entraîné **Langage offensif** car il a produit un nombre élevé de faux positifs. Ne l’utilisez pas et, si vous l’utilisez actuellement, vous devez en retirer vos processus d’entreprise. Nous vous recommandons plutôt d’utiliser les classifieurs préentrifiés **Threat**, **Profanity** et **Harassment** .
 
-- **Cv** : détecte les éléments docx, .pdf, .rtf, .txt qui sont des comptes textuels des qualifications personnelles, pédagogiques, professionnelles, professionnelles et autres informations d’identification personnelle d’un candidat
-- **Code source** : détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 langages de programmation informatique les plus utilisés sur GitHub : ActionScript, C, C#, C++, Chefjure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script. Détecte le contenu dans .msg, .as, .h, .c, .cs, .cc, .cpp, .hpp, .cxx, .hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, .pod, .php, .pho, .php4, .pyc, . R, .r, .rda, . Fichiers RData, .rds, .rb, .scala, .sc, .sh, .swift.
+- **C.V**. : détecte les documents, les .pdf, .rtf .txt éléments qui sont des comptes textuels des qualifications personnelles, éducatives, professionnelles, professionnelles et autres informations d’identification personnelle d’un candidat
+- **Code source** : détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 principaux langages de programmation informatique utilisés sur GitHub : ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script. Détecte le contenu dans .msg, .as, .h, .c, .cs, .cc, .cpp, .hpp, .cxx, .hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, .pod, .php, .phar, .php4, .pyc. R, .r, .rda, . RData, .rds, .rb, .scala, .sc, .sh, .swift files.
 
 > [!NOTE]
-> Le code source est formé pour détecter quand l’essentiel du texte est du code source. Il ne détecte pas le texte de code source qui est entrecoupé de texte simple.
+> Le code source est formé pour détecter quand la majeure partie du texte est du code source. Il ne détecte pas le texte du code source qui est entrecoupé de texte brut.
 
-- **Accords :** détecte le contenu lié aux accords juridiques tels que les accords de non-divulgation, les déclarations de travail, les contrats de prêt et de bail, les contrats de travail et de non-concurrence. Détecte le contenu des fichiers .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
-- **Discrimination** : détecte un langage explicite de discrimination et est sensible au langage de discrimination à l’encontre des communautés américaines/noires d’Amérique du Sud par rapport à d’autres communautés.
-- **Finance** : détecte le contenu des catégories finance d’entreprise, comptabilité, économie, banque et investissement. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, Fichiers .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
-- **Harcèlement** : détecte une catégorie spécifique d’éléments de texte de langage choquant liés à une conduite choquante ciblant un ou plusieurs individus en fonction des caractéristiques suivantes : la course, l’ancienneté, l’origine nationale, le sexe, l’orientation sexuelle, l’âge, le handicap. Détecte le contenu dans les fichiers .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg.
-- **Santé** : détecte le contenu dans les aspects d’administration médicale et médicale tels que les services médicaux, les diagnostics, les traitements, les revendications, etc. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, Fichiers .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
-- **RH** : détecte le contenu dans les catégories liées aux ressources humaines de recrutement, d’entretien, d’embauche, de formation, d’évaluation, d’avertissement et de résiliation. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, Fichiers .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
-- **IP** : détecte le contenu dans les catégories liées à la propriété intellectuelle telles que les secrets commerciaux et des informations confidentielles similaires. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, Fichiers .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
-- **It**: Detects content in Information Technology and Cybersecurity categories such as network settings, information security, hardware, and software. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, Fichiers .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
-- Affaires juridiques : détecte le contenu dans les catégories juridiques liées aux affaires, telles que les litiges, les processus **juridiques, les obligations légales**, la terminologie juridique, la loi et la législation. Détecte le contenu des fichiers .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
-- **Approvisionnement** : détecte le contenu dans les catégories de fourniture, de quoting, d’achat et de paiement de la fourniture de biens et de services. Détecte le contenu dans les fichiers .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
-- **Blasphémité** : détecte une catégorie spécifique d’éléments de texte de langage choquant qui contiennent des expressions qui gênent la plupart des personnes. Détecte le contenu dans les fichiers .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg.
-- **Taxe** : détecte le contenu des relations fiscales telles que la planification fiscale, les déclarations fiscales, la déclaration fiscale, les réglementations fiscales. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, Fichiers .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla.
-- **Menace** : détecte une catégorie spécifique d’éléments de texte de langage choquant liés aux menaces de violence ou d’atteinte physique à une personne ou à une propriété. Détecte le contenu dans les fichiers .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg.
+- **Contrats** : détecte le contenu relatif aux contrats juridiques tels que les contrats de non-divulgation, les déclarations de travail, les contrats de prêt et de bail, les contrats d’emploi et de non-concurrence. Détecte le contenu dans les fichiers .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
+- **Discrimination** : détecte une langue discriminatoire explicite et est sensible à la langue discriminatoire à l’égard des communautés afro-américaines/noires par rapport à d’autres communautés.
+- **Finance** : détecte le contenu dans les catégories finance d’entreprise, comptabilité, économie, banque et investissement. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
+- **Harcèlement** : détecte une catégorie spécifique d’éléments de texte de langue offensants liés à une conduite offensante ciblant une ou plusieurs personnes en fonction des caractéristiques suivantes : race, ethnicité, religion, origine nationale, sexe, orientation sexuelle, âge, handicap. Détecte le contenu dans les fichiers .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp et .svg.
+- **Santé** : détecte le contenu dans les aspects de l’administration médicale et des soins de santé tels que les services médicaux, les diagnostics, le traitement, les revendications, etc. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
+- **RH** : détecte le contenu des catégories de recrutement, d’entretien, d’embauche, de formation, d’évaluation, d’avertissement et de résiliation liées aux ressources humaines. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
+- **IP** : détecte le contenu dans les catégories liées à la propriété intellectuelle, telles que les secrets commerciaux et les informations confidentielles similaires. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
+- **Informatique** : détecte le contenu dans les catégories Technologies de l’information et Cybersécurité, telles que les paramètres réseau, la sécurité des informations, le matériel et les logiciels. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
+- **Affaires juridiques** : détecte le contenu dans les catégories relatives aux affaires juridiques telles que les litiges, les procédures juridiques, les obligations juridiques, la terminologie juridique, le droit et la législation. Détecte le contenu dans les fichiers .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
+- **Approvisionnement** : détecte le contenu dans les catégories d’enchères, de citations, d’achats et de paiement pour la fourniture de biens et de services. Détecte le contenu dans les fichiers .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
+- **Blasphème** : détecte une catégorie spécifique d’éléments de texte de langage offensant qui contiennent des expressions qui gênent la plupart des gens. Détecte le contenu dans les fichiers .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp et .svg.
+- **Tax**: Detects Tax relation content such as tax planning, tax forms, tax filing, tax regulations. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
+- **Menace** : détecte une catégorie spécifique d’éléments de texte de langue offensants liés aux menaces de commettre de la violence ou de causer des dommages physiques ou des dommages à une personne ou à des biens. Détecte le contenu dans les fichiers .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp et .svg.
 
-Ceux-ci apparaissent **dans la Centre de conformité Microsoft 365** >  **classifieurs classificationData** >  **Avec** l’état de `Ready to use`.
+Celles-ci apparaissent dans la vue **classifieurs Centre de conformité Microsoft 365** >  **Data** **classificationTrainable** >  avec l’état .`Ready to use`
 
-![classifieurs-pré-formés-classifieurs.](../media/classifiers-ready-to-use-classifiers.png)
+![classifiers-pre-trained-classifiers.](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
-> Veuillez noter que le langage choquant, le harcèlement, la blasphémité, la discrimination et les classifieurs de menaces fonctionnent uniquement avec du texte utilisable dans une recherche et ne sont pas une liste exhaustive ou complète de termes ou de langues dans ces domaines. En outre, les normes linguistiques et culturelles changent continuellement et, à la lumière de ces exigences, Microsoft se réserve le droit de mettre à jour ces classifieurs à sa discrétion. Bien que les classifieurs aident votre organisation à détecter ces domaines, ils ne sont pas destinés à fournir l’unique moyen de détecter ou de traiter l’utilisation de ce langage dans votre organisation. Votre organisation, et non Microsoft ou ses filiales, reste responsable de toutes les décisions relatives à la surveillance, à l’analyse, au blocage, à la suppression et à la rétention de tout contenu identifié par un classificateur pré-formé, y compris la conformité avec la confidentialité locale et d’autres lois applicables. Microsoft encourage les conseils juridiques avant le déploiement et l’utilisation.
+> Veuillez noter que la langue offensante, le harcèlement, les blasphèmes, la discrimination et les classifieurs de menaces ne fonctionnent qu’avec du texte pouvant faire l’objet d’une recherche et ne constituent pas une liste exhaustive ou complète de termes ou de langues dans ces domaines. De plus, les normes linguistiques et culturelles changent continuellement, et à la lumière de ces réalités, Microsoft se réserve le droit de mettre à jour ces classifieurs à sa discrétion. Bien que les classifieurs puissent aider votre organisation à détecter ces domaines, les classifieurs ne sont pas destinés à fournir à votre organisation le seul moyen de détecter ou de traiter l’utilisation de ce langage. Votre organisation, et non Microsoft ou ses filiales, reste responsable de toutes les décisions relatives à la surveillance, à l’analyse, au blocage, à la suppression et à la rétention de tout contenu identifié par un classifieur préentragé, y compris la conformité avec la confidentialité locale et d’autres lois applicables. Microsoft encourage la consultation avec des conseillers juridiques avant le déploiement et l’utilisation.
 
-Les classifieurs pré-formés peuvent analyser le contenu dans ces langues :
+Les classifieurs préentrifiés peuvent analyser le contenu dans les langues suivantes :
 
-• Chinois (simplifié) • anglais • français • allemand • italien • japonais • portugais • espagnol
+- Chinois (simplifié)
+- Anglais
+- Français
+- Allemand
+- Italien
+- Japonais
+- Portugais
+- Espagnol
 
 ### <a name="custom-classifiers"></a>Classifieurs personnalisés
 
-Lorsque les classifieurs pré-formés ne répondent pas à vos besoins, vous pouvez créer et former vos propres classifieurs. Il y a beaucoup plus de travail à faire avec la création de vos propres produits, mais ils seront bien mieux adaptés aux besoins de votre organisation.
+Lorsque les classifieurs préformés ne répondent pas à vos besoins, vous pouvez créer et entraîner vos propres classifieurs. Il y a beaucoup plus de travail à faire pour créer les vôtres, mais ils seront beaucoup mieux adaptés aux besoins de votre organisation.
 
-Vous commencez à créer un classifieur entraisable personnalisé en lui insumant des exemples qui sont certainement dans la catégorie. Une fois qu’il a traite ces exemples, vous le testez en lui donnant un mélange d’exemples correspondants et non correspondants. Le classifieur effectue ensuite des prédictions quant à l’entrée d’un élément donné dans la catégorie que vous construisez. Vous confirmez ensuite ses résultats, en triant les vrais positifs, les vrais négatifs, les faux positifs et les faux négatifs pour améliorer la précision de ses prédictions. 
+Vous commencez à créer un classifieur entraîné personnalisé en lui fournissant des exemples qui sont certainement dans la catégorie. Une fois qu’il traite ces exemples, vous le testez en lui donnant un mélange d’exemples correspondants et non correspondants. Le classifieur effectue ensuite des prédictions quant à savoir si un élément donné appartient à la catégorie que vous créez. Vous confirmez ensuite ses résultats, en triant les vrais positifs, les vrais négatifs, les faux positifs et les faux négatifs pour améliorer la précision de ses prédictions. 
 
-Lorsque vous publiez le classifieur, il trie les éléments dans des emplacements tels que SharePoint Online, Exchange et OneDrive, et classifie le contenu. Après avoir publié le classificateur, vous pouvez continuer à l’entraîner à l’aide d’un processus de commentaires semblable au processus de formation initial.
+Lorsque vous publiez le classifieur, il trie les éléments dans des emplacements tels que SharePoint Online, Exchange et OneDrive, et classifie le contenu. Après avoir publié le classifieur, vous pouvez continuer à l’entraîner à l’aide d’un processus de commentaires similaire au processus de formation initial.
 
-Par exemple, vous pouvez créer des classifieurs entraisables pour :
+Par exemple, vous pouvez créer des classifieurs pouvant être formés pour :
 
-- Documents juridiques : par exemple, privilège client avocat, jeux de fermeture, déclaration de travail
-- Documents d’entreprise stratégiques : communiqués de presse, fusion et acquisition, transactions, plans commerciaux ou commerciaux, propriété intellectuelle, brevets, documents de conception
-- Informations tarifaires : par exemple, factures, devis, commandes de travail, documents d’auteur
-- Informations financières , telles que les investissements organisationnels, les résultats trimestrielles ou annuels
+- Documents juridiques , tels que le privilège client d’avocat, les ensembles fermants, la déclaration de travail
+- Documents commerciaux stratégiques , tels que les communiqués de presse, les fusions et acquisitions, les transactions, les plans commerciaux ou marketing, la propriété intellectuelle, les brevets, les documents de conception
+- Informations de tarification , telles que les factures, les devis de prix, les commandes professionnelles, les documents d’enchères
+- Informations financières, telles que les investissements organisationnels, les résultats trimestriels ou annuels
 
 #### <a name="process-flow-for-creating-custom-classifiers"></a>Flux de processus pour la création de classifieurs personnalisés
 
-La création et la publication d’un classifieur à utiliser dans les solutions de conformité, telles que les stratégies de rétention et la surveillance des communications, suivent ce flux. Pour plus d’informations sur la création d’un classifieur entraisable personnalisé, voir [Création d’un classificateur personnalisé](classifier-get-started-with.md).
+La création et la publication d’un classifieur à utiliser dans les solutions de conformité, telles que les stratégies de rétention et la supervision des communications, suivent ce flux. Pour plus d’informations sur la création d’un classifieur pouvant être entraîné personnalisé, consultez [La création d’un classifieur personnalisé](classifier-get-started-with.md).
 
 ![classifieur personnalisé de flux de processus.](../media/classifier-trainable-classifier-flow.png)
 
-### <a name="retraining-classifiers"></a>Retraining classifiers
+### <a name="retraining-classifiers"></a>Reformation des classifieurs
 
-Vous pouvez améliorer la précision de tous les classifieurs entra nessables personnalisés et en leur fournissant des commentaires sur la précision de la classification qu’ils effectuent. C’est ce qu’on appelle une nouvelle formation et suit ce flux de travail.
+Vous pouvez aider à améliorer la précision de tous les classifieurs entraînés personnalisés et en leur fournissant des commentaires sur la précision de la classification qu’ils effectuent. Il s’agit d’un réentraînement qui suit ce flux de travail.
 
 > [!NOTE]
-> Les classifieurs pré-formés ne peuvent pas être ré-formés.
+> Les classifieurs préentraînés ne peuvent pas être réentraînés.
 
-![flux de travail de formation de classifieur.](../media/classifier-retraining-workflow.png)
+![workflow de réentraînement du classifieur.](../media/classifier-retraining-workflow.png)
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -141,5 +148,5 @@ Vous pouvez améliorer la précision de tous les classifieurs entra nessables pe
 - [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
 - [Étiquettes de confidentialité](sensitivity-labels.md)
 - [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
-- [Impression des doigts du document](document-fingerprinting.md)
+- [Impression de doigts de document](document-fingerprinting.md)
 - [En savoir plus sur les types d’informations sensibles exacts basés sur la correspondance de données](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)

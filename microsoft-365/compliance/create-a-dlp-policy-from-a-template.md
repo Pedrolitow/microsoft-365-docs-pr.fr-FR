@@ -20,40 +20,40 @@ ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkCOMPLIANCE
 description: Dans cet article, vous allez découvrir comment créer des stratégies DLP à l’aide de l’un des modèles inclus dans Office 365.
-ms.openlocfilehash: 965e5198887ec64072efffd35ffa7739c90af6a4
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 3617e1f067f4b29470feedcf7381b41a400887f9
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62355024"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759100"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Création d’une stratégie DLP à partir d’un modèle
 
-Le moyen le plus simple et le plus courant de commencer à utiliser les stratégies DLP consiste à utiliser l’un des modèles inclus dans le centre de conformité Microsoft 365 de données. Vous pouvez utiliser l’un de ces modèles tel qu’il est ou personnaliser les règles pour répondre aux exigences de conformité spécifiques de votre organisation.
+Le moyen le plus simple et le plus courant de bien démarrer avec les stratégies DLP consiste à utiliser l’un des modèles inclus dans le centre de conformité Microsoft 365. Vous pouvez utiliser l’un de ces modèles en l’état ou personnaliser les règles pour répondre aux exigences de conformité spécifiques de votre organisation.
 
-Microsoft 365 comprend plus de 40 modèles prêts à l’emploi qui peuvent vous aider à répondre à un large éventail de besoins courants en matière de réglementation et de stratégie d’entreprise. Voir ; [Modèles de stratégie](dlp-policy-reference.md#policy-templates) pour une liste complète. 
+Microsoft 365 comprend plus de 40 modèles prêts à l’emploi qui peuvent vous aider à répondre à un large éventail de besoins courants en matière de réglementation et de stratégie métier. Voir ; [Modèles de stratégie](dlp-policy-reference.md#policy-templates) pour une liste complète. 
 
-Vous pouvez affiner un modèle en modifiant l’une de ses règles existantes ou en ajoutant de nouvelles règles. Par exemple, vous pouvez ajouter de nouveaux types d’informations sensibles à une règle, modifier les décomptes dans une règle pour rendre son déclenchement plus facile ou plus difficile, permettre aux utilisateurs de remplacer les actions d’une règle en fournissant une justification ou modifier les destinataires des notifications et des rapports d’incident. Un modèle de stratégie DLP est un point de départ flexible pour de nombreux scénarios de conformité courants.
+Vous pouvez ajuster un modèle en modifiant l’une de ses règles existantes ou en en ajoutant de nouvelles. Par exemple, vous pouvez ajouter de nouveaux types d’informations sensibles à une règle, modifier les décomptes dans une règle pour rendre son déclenchement plus facile ou plus difficile, permettre aux utilisateurs de remplacer les actions d’une règle en fournissant une justification ou modifier les destinataires des notifications et des rapports d’incident. Un modèle de stratégie DLP est un point de départ flexible pour de nombreux scénarios de conformité courants.
 
 Vous pouvez également choisir le modèle personnalisé, sans règle par défaut, et configurer votre stratégie DLP de A à Z, pour répondre aux exigences de conformité spécifiques de votre organisation.
 
 ## <a name="permissions"></a>Autorisations
 
-Les membres de votre équipe de mise en conformité qui créeront des stratégies DLP ont besoin des autorisations d’accès au Centre de conformité. Par défaut, votre administrateur client aura accès aux responsables de la mise en conformité et aux autres personnes. Procédez comme suit :
+Les membres de votre équipe de mise en conformité qui créeront des stratégies DLP ont besoin des autorisations d’accès au Centre de conformité. Par défaut, votre administrateur client aura accès à des agents de conformité et à d’autres personnes. Procédez comme suit :
   
 1. Créer un groupe dans Microsoft 365 et d’y ajouter des responsables de la mise en conformité.
     
 2. Créer un groupe de rôles sur la page **Autorisations** du Centre de sécurité et de conformité. 
 
-3. Lors de la création du groupe de rôles, utilisez **la section Choisir** des rôles pour ajouter le rôle suivant au groupe de rôles : **Gestion de la conformité DLP**.
+3. Lors de la création du groupe de rôles, utilisez la section **Choisir des rôles** pour ajouter le rôle suivant au groupe de rôles : **Gestion de la conformité DLP**.
     
 4. Utilisez la section **Choisir des membres** pour ajouter le groupe Microsoft 365 que vous avez créé précédemment au groupe de rôles.
 
-Utilisez le **rôle Gestion** de la conformité DLP en affichage seul pour créer un groupe de rôles avec des privilèges d’affichage seul pour les stratégies DLP et les rapports DLP.
+Utilisez le rôle **Gestion de la conformité DLP en mode affichage uniquement** pour créer un groupe de rôles avec des privilèges d’affichage uniquement pour les stratégies DLP et les rapports DLP.
 
 Pour plus d’informations, voir [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
-Ces autorisations sont nécessaires pour créer et appliquer une stratégie DLP et non pour appliquer des stratégies.
+Ces autorisations sont nécessaires pour créer et appliquer une stratégie DLP pour ne pas appliquer de stratégies.
 
 ### <a name="roles-and-role-groups-in-preview"></a>Rôles et groupes de rôles en préversion
 
@@ -78,11 +78,11 @@ Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir p
 
 1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>.
 
-2. Dans le Centre de conformité,  \> navigation gauche  \> Solutions  \> Stratégies de protection contre la perte **de**\> \> données + Créer une stratégie.
+2. Dans le Centre \> de conformité, solutions de navigation  \> **à gauche Stratégies** \> **de protection contre la perte de** \> \> données **+ Créer une stratégie**.
 
     ![Créez un bouton de stratégie.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
           
-3. Choisissez le modèle de stratégie DLP qui protège les types d’informations sensibles dont vous **avez besoin ensuite**\>.
+3. Choisissez le modèle de stratégie DLP qui protège les types d’informations sensibles dont vous avez besoin \> **.**
 
 4. Nommez la stratégie \> **Suivant**.
  
@@ -92,38 +92,38 @@ Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir p
 
     ![Page for choosing a DLP policy template.](../media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)-->
 
-5. Pour choisir les emplacements que la stratégie DLP doit protéger et accepter l’étendue par défaut pour chaque emplacement ou personnaliser l’étendue. Voir [emplacements pour](dlp-policy-reference.md#locations) les options d’portée.
+5. Pour choisir les emplacements que vous souhaitez protéger par la stratégie DLP, acceptez l’étendue par défaut pour chaque emplacement ou personnalisez l’étendue. Consultez [Les emplacements pour les](dlp-policy-reference.md#locations) options d’étendue.
 
 6. Cliquez sur \> **Suivant**.
  
 1. Effectuez l'une des opérations suivantes :
 
-   - Choisissez **tous les emplacements Office 365** \> **suivant**.
-   - Choose **Let me choose specific locations** \> **Next**. Pour cet exemple, choisissez ceci.
+   - Choisissez **Tous les emplacements dans Office 365** \> **Suivant**.
+   - Choisissez **Laissez-moi choisir des emplacements** \> spécifiques **Suivant**. Pour cet exemple, choisissez ceci.
 
-   Pour inclure ou exclure un emplacement entier tel que tous les e-mails Exchange ou tous les comptes OneDrive, mettez l’état de cet emplacement sur ou hors service.
+   Pour inclure ou exclure un emplacement entier tel que tous les e-mails Exchange ou tous les comptes OneDrive, activez ou désactivez **l’état** de cet emplacement.
 
-   Pour inclure uniquement des sites SharePoint ou des comptes OneDrive Entreprise spécifiques, sélectionnez État, puis cliquez  sur les liens sous Inclure pour choisir des sites ou  des comptes spécifiques. Lorsque vous appliquez une stratégie à un site, les règles configurées dans cette stratégie sont automatiquement appliquées à tous les sous-sites de ce site.
+   Pour inclure uniquement des sites SharePoint spécifiques ou des comptes OneDrive Entreprise, activez **l’état**, puis cliquez sur les liens sous **Inclure** pour choisir des sites ou des comptes spécifiques. Lorsque vous appliquez une stratégie à un site, les règles configurées dans cette stratégie sont automatiquement appliquées à tous les sous-sites de ce site.
 
    ![Options pour les emplacements où une stratégie DLP peut être appliquée.](../media/all-locations.png)
 
-   Dans cet exemple, pour protéger les informations sensibles stockées dans tous les comptes OneDrive Entreprise, désactiver l’état  pour les sites de messagerie **Exchange** et **de SharePoint** et laisser l’état sur les  comptes **OneDrive.**
+   Dans cet exemple, pour protéger les informations sensibles stockées dans tous les comptes OneDrive Entreprise, désactivez **l’état** pour **Exchange e-mail** et **les sites SharePoint**, puis laissez l’état activé pour **OneDrive comptes**.
 
-7. Choisissez **Révision et personnalisez les paramètres par défaut dans le modèle** \> **Suivant**.
+7. Choisissez **Vérifier et personnaliser les paramètres par défaut dans le modèle** \> **Suivant**.
 
-8. Un modèle de stratégie DLP contient des règles prédéfinies avec les conditions et actions qui détectent et agissent sur des types spécifiques d’informations sensibles. Vous pouvez modifier, supprimer ou désactiver l’une des règles existantes ou en ajouter de nouvelles. Lorsque vous avez terminé, cliquez sur **Suivant**.
+8. Un modèle de stratégie DLP contient des règles prédéfinies avec les conditions et actions qui détectent et agissent sur des types spécifiques d’informations sensibles. Vous pouvez modifier, supprimer ou désactiver l’une des règles existantes, ou en ajouter de nouvelles. Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-    ![Règles étendues dans le modèle de stratégie PII des États-Unis.](../media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
+    ![Règles développées dans le modèle de stratégie PII des États-Unis.](../media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
 
 9. Choisissez de détecter le moment où ce contenu est partagé au sein de votre organisation ou en dehors de votre organisation si vous avez sélectionné l’un de ces emplacements :
     1. Exchange
     1. SharePoint
     1. OneDrive
-    1. Teams chat et messages de canal 
+    1. Teams les messages de conversation et de canal 
 
 10. Cliquez sur **Suivant**.
 
-11. Dans la page **Actions de protection** , si vous le souhaitez, vous pouvez personnaliser les notifications de conseil de stratégie et les e-mails de notification. Enable **When content matches the policy conditions, show policy tips to users and send them an email notification**, then **choose Customize the tip and email**.
+11. Dans la page **Actions de protection** , si vous le souhaitez, vous pouvez personnaliser les notifications de conseil de stratégie et les e-mails de notification. Activez **lorsque le contenu correspond aux conditions de stratégie, affichez les conseils de stratégie aux utilisateurs et envoyez-leur une notification par e-mail**, puis choisissez **Personnaliser l’info-bulle et l’e-mail**.
 12. Sélectionnez **Suivant**.
 
 
@@ -215,7 +215,7 @@ Here are the different statuses and what they mean.
 
 |Status|Explanation|
 |---|---|
-|**Turning on…**|The policy is being deployed to the content sources that it includes. The policy is not yet enforced on all sources.|
+|**Turning on...**|The policy is being deployed to the content sources that it includes. The policy is not yet enforced on all sources.|
 |**Testing, with notifications**|The policy is in test mode. The actions in a rule are not applied, but policy matches are collected and can be viewed by using the DLP reports. Notifications about policy matches are sent to the specified recipients.|
 |**Testing, without notifications**|The policy is in test mode. The actions in a rule are not applied, but policy matches are collected and can be viewed by using the DLP reports. Notifications about policy matches are not sent to the specified recipients.|
 |**On**|The policy is active and enforced. The policy was successfully deployed to all its content sources.|

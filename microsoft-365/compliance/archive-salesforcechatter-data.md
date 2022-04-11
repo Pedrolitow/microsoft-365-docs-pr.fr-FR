@@ -1,5 +1,5 @@
 ---
-title: Configurer un connecteur pour archiver les données Salesforce Microsoft 365
+title: Configurer un connecteur pour archiver les données Salesforce Chatter dans Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,51 +11,51 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur pour importer et archiver les données Salesforce Chatter de Veritas vers Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer des données tierces.
-ms.openlocfilehash: bb52bd95d11a93c2bbb6816ed189ef5e0594ffac
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Les administrateurs peuvent configurer un connecteur pour importer et archiver les données Salesforce Chatter de Veritas vers Microsoft 365. Ce connecteur vous permet d’archiver les données de sources de données tierces dans Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces.
+ms.openlocfilehash: 8d86b4fcddcdf4a0f9b169b32df152873e8211c7
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327419"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64758616"
 ---
-# <a name="set-up-a-connector-to-archive-salesforce-chatter-data"></a>Configurer un connecteur pour archiver les données salesforce
+# <a name="set-up-a-connector-to-archive-salesforce-chatter-data"></a>Configurer un connecteur pour archiver les données Salesforce Chatter
 
-Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de la plateforme SalesforceCourir vers les boîtes aux lettres utilisateur de Microsoft 365 organisation. Veritas fournit un [connecteur Salesforce Connector](http://globanet.com/chatter/) qui capture des éléments à partir de la source de données tierce et importe ces éléments dans Microsoft 365. Le connecteur convertit le contenu tel que les conversations, les pièces jointes et les billets de Salesforce Convert au format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
+Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données de la plateforme Salesforce Chatter vers des boîtes aux lettres utilisateur de votre organisation Microsoft 365. Veritas fournit un connecteur [Salesforce Chatter](http://globanet.com/chatter/) qui capture les éléments de la source de données tierce et importe ces éléments dans Microsoft 365. Le connecteur convertit le contenu tel que les conversations, les pièces jointes et les publications de Salesforce Chatter au format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
 
-Une fois que les données salesforces sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies de rétention et les étiquettes de rétention. L’utilisation d’un connecteur Salesforce Connector pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois les données Salesforce Chatter stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer Microsoft 365 fonctionnalités de conformité telles que la conservation des litiges, eDiscovery, les stratégies de rétention et les étiquettes de rétention. L’utilisation d’un connecteur Salesforce Chatter pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
-## <a name="overview-of-archiving-salesforce-chatter-data"></a>Vue d’ensemble de l’archivage des données salesforce
+## <a name="overview-of-archiving-salesforce-chatter-data"></a>Vue d’ensemble de l’archivage des données Salesforce Chatter
 
 La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver les données Salesforce Chatter dans Microsoft 365.
 
-![Flux de travail d’archivage pour les données Salesforce Workflow.](../media/SalesforceChatterConnectorWorkflow.png)
+![Flux de travail d’archivage pour les données Salesforce Chatter.](../media/SalesforceChatterConnectorWorkflow.png)
 
-1. Votre organisation collabore avec Salesforce Configure pour configurer un site Salesforce Chatter.
+1. Votre organisation travaille avec Salesforce Chatter pour configurer et configurer un site Salesforce Chatter.
 
-2. Une fois toutes les 24 heures, les éléments Salesforce Merge sont copiés sur le site Veritas Merge1. Le connecteur insérable également les éléments salesforce vers un format de message électronique.
+2. Toutes les 24 heures, les éléments Salesforce Chatter sont copiés sur le site Veritas Merge1. Le connecteur fournit également des éléments Salesforce Chatter au format de message électronique.
 
-3. Le connecteur Salesforce Connector Que vous créez dans l’Centre de conformité Microsoft 365, se connecte au site Veritas Merge1 tous les jours et transfère le contenu de Las Computing vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
+3. Le connecteur Salesforce Chatter que vous créez dans le Centre de conformité Microsoft 365, se connecte au site Veritas Merge1 tous les jours et transfère le contenu Chatter vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
 
-4. Le connecteur importe les éléments convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* du mappage automatique des utilisateurs, comme décrit à [l’étape 3](#step-3-map-users-and-complete-the-connector-setup). Un sous-dossier du dossier Boîte de réception nommé **Salesforce Chatter** est créé dans les boîtes aux lettres de l’utilisateur et les éléments sont importés dans ce dossier. Le connecteur détermine la boîte aux lettres dans laquelle importer des éléments à l’aide de la valeur de la *propriété Email* . Chaque élément Dent contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant de l’élément.
+4. Le connecteur importe les éléments convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email du mappage* automatique des utilisateurs, comme décrit à [l’étape 3](#step-3-map-users-and-complete-the-connector-setup). Un sous-dossier dans le dossier Boîte de réception nommé **Salesforce Chatter** est créé dans les boîtes aux lettres utilisateur et les éléments sont importés dans ce dossier. Le connecteur détermine la boîte aux lettres vers laquelle importer des éléments à l’aide de la valeur de la propriété *Email* . Chaque élément Chatter contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant de l’élément.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Créez un compte Merge1 pour les connecteurs Microsoft. Pour créer un compte, contactez [le support technique Veritas](https://www.veritas.com/content/support/). Vous devez vous inscrire à ce compte lorsque vous créez le connecteur à l’étape 1.
+- Créez un compte Merge1 pour les connecteurs Microsoft. Pour créer un compte, contactez [le support technique Veritas](https://www.veritas.com/content/support/). Vous devez vous connecter à ce compte lorsque vous créez le connecteur à l’étape 1.
 
-- Créer une application Salesforce et acquérir un jeton sur [https://salesforce.com](https://salesforce.com). Vous devez vous connecter au compte Salesforce en tant qu’administrateur et obtenir un jeton personnel d’utilisateur pour importer des données. En outre, les déclencheurs doivent être publiés sur le site DeLice pour capturer les mises à jour, les suppressions et les modifications. Ces déclencheurs créent un billet sur un canal et Merge1 capture les informations à partir du canal. Pour obtenir des instructions détaillées sur la création de l’application et l’acquisition du jeton, voir le Guide de l’utilisateur [Merge1 Third-Party Connectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf).
+- Créez une application Salesforce et acquérez un jeton à l’adresse [https://salesforce.com](https://salesforce.com). Vous devez vous connecter au compte Salesforce en tant qu’administrateur et obtenir un jeton personnel utilisateur pour importer des données. En outre, les déclencheurs doivent être publiés sur le site Chatter pour capturer les mises à jour, les suppressions et les modifications. Ces déclencheurs créent un billet sur un canal et Merge1 capture les informations du canal. Pour obtenir des instructions pas à pas sur la création de l’application et l’acquisition du jeton, consultez le [Guide d’utilisation des connecteurs tiers Merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf).
 
-- L’utilisateur qui crée le connecteur Salesforce Connector à l’étape 1 (et le termine à l’étape 3) doit se voir attribuer le rôle d’administrateur du connecteur de données. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le Centre de conformité Microsoft 365. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et conformité » dans Autorisations dans le Centre de sécurité [& conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le Centre de conformité Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Le rôle Administrateur du connecteur de données doit être attribué à l’utilisateur qui crée le connecteur Salesforce Chatter à l’étape 1 (et le termine à l’étape 3). Ce rôle est nécessaire pour ajouter des connecteurs sur la page **Connecteurs de données** dans le Centre de conformité Microsoft 365. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le Centre de conformité Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ce connecteur de données Veritas est en prévisualisation publique dans Cloud de la communauté du secteur public environnements dans Microsoft 365 cloud du gouvernement américain. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui sont en dehors de l’infrastructure Microsoft 365 et qui, par conséquent, ne sont pas couverts par les engagements en matière de conformité et de protection des données Microsoft 365. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
+- Ce connecteur de données Veritas est en préversion publique dans Cloud de la communauté du secteur public environnements dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de conformité et de protection des données Microsoft 365. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
 
-## <a name="step-1-set-up-the-salesforce-chatter-connector"></a>Étape 1 : Configurer le connecteur Salesforce Connector
+## <a name="step-1-set-up-the-salesforce-chatter-connector"></a>Étape 1 : Configurer le connecteur Salesforce Chatter
 
-La première étape consiste à accéder à la page **Connecteurs** de données dans le Centre de conformité Microsoft 365 et à créer un connecteur pour les données De Type.
+La première étape consiste à accéder à la page **Connecteurs de données** dans le Centre de conformité Microsoft 365 et à créer un connecteur pour les données Chatter.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectorsSalesforce** >  **Click**.
+1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com/) **Data connectorsSalesforce** >  **Chatter**, puis cliquez dessus.
 
-2. Dans la page description **du produit Salesforce Descriptive** , cliquez **sur Ajouter un connecteur**.
+2. Dans la page de description du produit **Salesforce Chatter** , cliquez sur **Ajouter un connecteur**.
 
 3. Dans la page **Conditions d’utilisation** , cliquez sur **Accepter**.
 
@@ -63,30 +63,30 @@ La première étape consiste à accéder à la page **Connecteurs** de données 
 
 5. Connectez-vous à votre compte Merge1 pour configurer le connecteur.
 
-## <a name="step-2-configure-the-salesforce-chatter-on-the-veritas-merge1-site"></a>Étape 2 : Configurer salesforce Merge sur le site Veritas Merge1
+## <a name="step-2-configure-the-salesforce-chatter-on-the-veritas-merge1-site"></a>Étape 2 : Configurer Salesforce Chatter sur le site Veritas Merge1
 
-La deuxième étape consiste à configurer le connecteur Salesforce Connector sur le site Veritas Merge1. Pour plus d’informations sur la configuration du connecteur Salesforce Connector, voir [merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf).
+La deuxième étape consiste à configurer le connecteur Salesforce Chatter sur le site Veritas Merge1. Pour plus d’informations sur la configuration du connecteur Salesforce Chatter, consultez le [Guide d’utilisation des connecteurs tiers Merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf).
 
-Une fois que vous avez **cliqué sur & terminé,** **la page** Mappage de l’utilisateur dans l’Assistant connecteur du Centre de conformité Microsoft 365 s’affiche.
+Une fois que vous avez cliqué sur **Enregistrer & Terminer,** la page De **mappage d’utilisateurs** dans l’Assistant Connecteur du Centre de conformité Microsoft 365 s’affiche.
 
-## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Étape 3 : Masons les utilisateurs et terminez la configuration du connecteur
+## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Étape 3 : Mapper les utilisateurs et terminer la configuration du connecteur
 
-Pour maîtr les utilisateurs et terminer la configuration du connecteur dans le Centre de conformité Microsoft 365, suivez les étapes suivantes :
+Pour mapper les utilisateurs et terminer la configuration du connecteur dans le Centre de conformité Microsoft 365, procédez comme suit :
 
-1. Dans la page **Mappage des utilisateurs Salesforce Microsoft 365 utilisateurs**, activez le mappage automatique des utilisateurs. Les éléments Salesforce Chatter incluent une propriété appelée *Courrier* électronique, qui contient les adresses de messagerie des utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
+1. Dans la page **Map Salesforce Chatter users to Microsoft 365 users**, activez le mappage automatique des utilisateurs. Les éléments Salesforce Chatter incluent une propriété appelée *Email*, qui contient des adresses e-mail pour les utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 
-2. cliquez **sur** Suivant, examinez vos paramètres, puis consultez la page **Connecteurs** de données pour voir la progression du processus d’importation pour le nouveau connecteur.
+2. Cliquez sur **Suivant**, passez en revue vos paramètres, puis accédez à la page **Connecteurs de données** pour voir la progression du processus d’importation du nouveau connecteur.
 
-## <a name="step-4-monitor-the-salesforce-chatter-connector"></a>Étape 4 : Surveiller le connecteur Salesforce Connector
+## <a name="step-4-monitor-the-salesforce-chatter-connector"></a>Étape 4 : Surveiller le connecteur Salesforce Chatter
 
-Après avoir créé le connecteur Salesforce Connector, vous pouvez afficher l’état du connecteur dans le Centre de conformité Microsoft 365.
+Après avoir créé le connecteur Salesforce Chatter, vous pouvez afficher l’état du connecteur dans le Centre de conformité Microsoft 365.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and click **Data connectors** in the left nav.
+1. Accédez et [https://compliance.microsoft.com](https://compliance.microsoft.com/) cliquez sur **Connecteurs de données** dans le volet de navigation gauche.
 
-2. cliquez sur **l’onglet Connecteurs** , puis cliquez sur le connecteur **Salesforce Connector pour** afficher la page volante, qui contient les propriétés et les informations sur le connecteur.
+2. Cliquez sur l’onglet **Connecteurs** , puis sur le connecteur **Salesforce Chatter** pour afficher la page de menu volant, qui contient les propriétés et les informations sur le connecteur.
 
-3. Sous **État du connecteur avec source**, **cliquez sur le** lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des données importées dans le cloud Microsoft.
+3. Sous **État du connecteur avec source**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des données qui ont été importées dans le cloud Microsoft.
 
 ## <a name="known-issues"></a>Problèmes détectés
 
-- Pour l’instant, nous ne ons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.
+- Pour l’instant, nous ne prenons pas en charge l’importation de pièces jointes ou d’éléments supérieurs à 10 Mo. La prise en charge des éléments plus volumineux sera disponible ultérieurement.
