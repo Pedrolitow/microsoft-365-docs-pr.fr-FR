@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 1eee7e482423e2292e9fe9db42333db481d44175
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 64162b83376facddbdeffd1c3079baa49f9d8924
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783754"
+ms.locfileid: "64788015"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Référence des règles de réduction de la surface d’attaque
 
@@ -31,6 +31,10 @@ ms.locfileid: "64783754"
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Antivirus Microsoft Defender
+
+**Plateformes**
+- Windows
 
 Cet article fournit des informations sur les règles de réduction des attaques :
 

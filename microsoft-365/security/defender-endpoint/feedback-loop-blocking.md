@@ -1,6 +1,6 @@
 ---
 title: Blocage de la boucle de commentaires
-description: Le blocage de boucle de commentaires, également appelé protection rapide, fait partie des fonctionnalités de blocage du comportement et de blocage de contenu dans Microsoft Defender pour point de terminaison
+description: Le blocage de boucle de commentaires, également appelé protection rapide, fait partie des fonctionnalités de blocage comportemental et d’endiguement dans Microsoft Defender pour point de terminaison
 keywords: blocage comportemental, protection rapide, blocage des commentaires, Microsoft Defender pour point de terminaison
 ms.pagetype: security
 author: denisebmsft
@@ -16,37 +16,41 @@ ms.custom:
 - edr
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 82d5fb32a9535a5b341bca8e5bee989d88ad8232
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: f68345b97d49adce2f55cffd837ca17e5b028953
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167357"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64787993"
 ---
 # <a name="feedback-loop-blocking"></a>Blocage de la boucle de commentaires
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- Antivirus Microsoft Defender
+
+**Plateformes**
+- Windows
 
 ## <a name="overview"></a>Vue d'ensemble
 
-Le blocage de boucle de commentaires, également appelé [](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) protection rapide, est un composant des fonctionnalités de blocage comportemental et de blocage de contenu dans [Microsoft Defender pour point de terminaison.](/windows/security/threat-protection/) Avec le blocage de la boucle de commentaires, les appareils au sein de votre organisation sont mieux protégés contre les attaques. 
+Le blocage de boucle de commentaires, également appelé protection rapide, est un composant des [fonctionnalités de blocage comportemental et d’endiguement](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) dans [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/). Avec le blocage de boucle de commentaires, les appareils de votre organisation sont mieux protégés contre les attaques. 
 
-## <a name="how-feedback-loop-blocking-works"></a>Fonctionnement du blocage de la boucle de commentaires
+## <a name="how-feedback-loop-blocking-works"></a>Fonctionnement du blocage de boucle de commentaires
 
-Lorsqu’un comportement ou un fichier suspect est détecté, par exemple par [Antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10), les informations sur cet artefact sont envoyées à plusieurs classifieurs. Le moteur de boucle de protection rapide inspecte et met en corrélation les informations avec d’autres signaux pour déterminer s’il faut bloquer un fichier. La vérification et la classification des artefacts se produisent rapidement. Cela entraîne un blocage rapide des programmes malveillants confirmés et entraîne la protection dans l’ensemble de l’écosystème. 
+Lorsqu’un comportement suspect ou un fichier est détecté, par exemple par [Antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10), des informations sur cet artefact sont envoyées à plusieurs classifieurs. Le moteur de boucle de protection rapide inspecte et met en corrélation les informations avec d’autres signaux pour déterminer s’il faut bloquer un fichier. La vérification et la classification des artefacts se produisent rapidement. Il se traduit par un blocage rapide des programmes malveillants confirmés et entraîne la protection dans l’ensemble de l’écosystème. 
 
-Grâce à une protection rapide, une attaque peut être arrêtée sur un appareil, d’autres appareils de l’organisation et des appareils d’autres organisations, à mesure qu’une attaque tente d’élargir sa position.
+Avec une protection rapide en place, une attaque peut être arrêtée sur un appareil, d’autres appareils de l’organisation et sur des appareils d’autres organisations, à mesure qu’une attaque tente d’élargir sa présence.
 
 
-## <a name="configuring-feedback-loop-blocking"></a>Configuration du blocage de boucle de commentaires
+## <a name="configuring-feedback-loop-blocking"></a>Configuration du blocage de boucles de commentaires
 
-Si votre organisation utilise Defender pour endpoint, le blocage de la boucle de commentaires est activé par défaut. Toutefois, une protection rapide se produit par le biais d’une combinaison des fonctionnalités de Defender for Endpoint, des fonctionnalités de protection de l’apprentissage automatique et du partage de signal entre les services de sécurité Microsoft. Assurez-vous que les fonctionnalités suivantes de Defender for Endpoint sont activées et configurées :
+Si votre organisation utilise Defender pour point de terminaison, le blocage de boucle de commentaires est activé par défaut. Toutefois, la protection rapide se produit par le biais d’une combinaison de fonctionnalités Defender pour point de terminaison, de fonctionnalités de protection de Machine Learning et de partage de signal entre les services de sécurité Microsoft. Vérifiez que les fonctionnalités et fonctionnalités suivantes de Defender pour point de terminaison sont activées et configurées :
 
-- [Lignes de base de Microsoft Defender pour les points de terminaison](/microsoft-365/security/defender-endpoint/configure-machines-security-baseline)
+- [Microsoft Defender pour point de terminaison lignes de base](/microsoft-365/security/defender-endpoint/configure-machines-security-baseline)
 
 - [Appareils intégrés à Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/onboard-configure)
 
@@ -54,12 +58,22 @@ Si votre organisation utilise Defender pour endpoint, le blocage de la boucle de
 
 - [Réduction de la surface d’attaque](/microsoft-365/security/defender-endpoint/attack-surface-reduction)
 
-- [Protection nouvelle génération](/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) (antivirus)
+- [Protection de nouvelle génération](/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) (antivirus)
+
+> [!TIP]
+> Si vous recherchez des informations relatives à l’antivirus pour d’autres plateformes, consultez :
+> - [Définir les préférences pour Microsoft Defender pour point de terminaison sur macOS](mac-preferences.md)
+> - [Microsoft Defender pour point de terminaison sur Mac](microsoft-defender-endpoint-mac.md)
+> - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
+> - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
+> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
+> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
 
 ## <a name="related-articles"></a>Articles connexes
 
 - [Blocage et confinement comportementaux](behavioral-blocking-containment.md)
 
-- [(Blog) Blocage et contenu comportementaux : transformation de l’optique en protection](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection/)
+- [(Blog) Blocage et confinement comportementaux : transformation de l’optique en protection](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection/)
 
-- [Ressources Utiles de Microsoft Defender pour les points de terminaison](/microsoft-365/security/defender-endpoint/helpful-resources)
+- [Ressources de Microsoft Defender pour point de terminaison utiles](/microsoft-365/security/defender-endpoint/helpful-resources)

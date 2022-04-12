@@ -14,18 +14,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 34bf757ee545d45f7faccdefaf1e8aa57e9cb961
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 73afd0751e34fbb020019e6f28056c9f2a935c07
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783444"
+ms.locfileid: "64788587"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analyseur de performances pour Antivirus Microsoft Defender
 
 **S’applique à**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Antivirus Microsoft Defender
+
+**Plateformes**
+- Windows
 
 **Qu’est-ce que Antivirus Microsoft Defender analyseur de performances ?**
 
@@ -91,7 +95,7 @@ Pour obtenir des exemples décrivant le processus d'« exportation » et de « c
 
 - **Pour convertir** : `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
-### <a name="requirements"></a>Configuration requise
+### <a name="requirements"></a>Conditions requises
 
 Antivirus Microsoft Defender analyseur de performances présente les prérequis suivants :
 
@@ -486,3 +490,12 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
+> [!TIP]
+> Si vous recherchez des informations relatives à l’antivirus pour d’autres plateformes, consultez :
+> - [Définir les préférences pour Microsoft Defender pour point de terminaison sur macOS](mac-preferences.md)
+> - [Microsoft Defender pour point de terminaison sur Mac](microsoft-defender-endpoint-mac.md)
+> - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
+> - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
+> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
+> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)

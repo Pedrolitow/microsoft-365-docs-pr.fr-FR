@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 5b71134f9a7d33880e9762701e825c3fbf708f6b
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 5c3724989db1bd8e6389b8a70ba591ce4e109390
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705082"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64787707"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Comprendre et utiliser les fonctionnalités de réduction de la surface d’attaque
 
@@ -35,6 +35,10 @@ ms.locfileid: "64705082"
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Antivirus Microsoft Defender
+
+**Plateformes**
+- Windows
 
 > [!TIP]
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -114,11 +118,11 @@ Vous pouvez activer le mode audit à l’aide de stratégie de groupe, PowerShel
 
 Les règles de réduction de la surface d’attaque (ASR) sont prédéfinies pour renforcer les surfaces d’attaque courantes et connues. Il existe plusieurs méthodes que vous pouvez utiliser pour implémenter des règles de réduction de la surface d’attaque. La méthode recommandée est documentée dans les rubriques de déploiement des règles de réduction de la surface d’attaque (ASR) suivantes :
 
-- [Vue d’ensemble du déploiement des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md)
-- [Planifier le déploiement de règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-plan.md)
-- [Tester les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-test.md)
-- [Activer les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-implement.md)
-- [Opérationnaliser les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Vue d’ensemble du déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md)
+- [Planifier le déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-plan.md)
+- [Tester des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-test.md)
+- [Activer des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-implement.md)
+- [Utiliser des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 
 ## <a name="view-attack-surface-reduction-events"></a>Afficher les événements de la réduction de la surface d’attaque
 
@@ -294,14 +298,14 @@ Comme mentionné dans la vidéo, Defender pour point de terminaison inclut plusi
 |:---|:---|
 | [Isolation basée sur le matériel](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Protégez et conservez l’intégrité d’un système au démarrage et pendant son exécution. Validez l’intégrité du système par le biais d’une attestation locale et distante. Utilisez l’isolation des conteneurs pour Microsoft Edge afin de vous protéger contre les sites web malveillants. |
 | [Contrôle d’application](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Utilisez le contrôle d’application pour que vos applications puissent gagner en confiance pour s’exécuter. |
-| [Accès contrôlé aux dossiers](controlled-folders.md) | Empêcher les applications malveillantes ou suspectes (y compris les programmes malveillants de ransomware de chiffrement de fichiers) d’apporter des modifications aux fichiers dans vos dossiers système de clés (nécessite Antivirus Microsoft Defender) |
-| [Protection du réseau](network-protection.md) | Étendez la protection au trafic réseau et à la connectivité sur les appareils de votre organisation. (Nécessite Antivirus Microsoft Defender) |
+| [Accès contrôlé aux dossiers](controlled-folders.md) | Empêchez les applications malveillantes ou suspectes (y compris les programmes malveillants de ransomware de chiffrement de fichiers) d’apporter des modifications aux fichiers dans vos dossiers système de clés (nécessite Antivirus Microsoft Defender). |
+| [Protection du réseau](network-protection.md) | Étendez la protection au trafic réseau et à la connectivité sur les appareils de votre organisation. (Nécessite Antivirus Microsoft Defender). |
 | [Exploit Protection](exploit-protection.md) | Protégez les systèmes d’exploitation et les applications utilisés par votre organisation contre l’exploitation. Exploit Protection fonctionne également avec des solutions antivirus tierces. |
 | [Contrôle des appareils](device-control-report.md) | Protège contre la perte de données en surveillant et en contrôlant les supports utilisés sur les appareils, tels que le stockage amovible et les lecteurs USB, dans votre organisation. |
-| [Guide de déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md) | Présente les informations de vue d’ensemble et les prérequis pour le déploiement de règles de réduction de la surface d’attaque |
-| [Planifier le déploiement de règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-plan.md) | Répertorie les étapes recommandées pour le déploiement des règles de réduction de la surface d’attaque |
-| [Tester les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-test.md) | Fournit des étapes pour utiliser le mode audit pour tester les règles de réduction de la surface d’attaque. |
-| [Activer les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-implement.md) | Affiche les étapes de transition des règles de réduction de la surface d’attaque du mode test (audit) vers le mode actif et activé (bloquer). |
-| [Opérationnaliser les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-operationalize.md) | Fournit des informations sur les activités quotidiennes d’examen et de maintenance. |
-| [Informations de référence sur les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-reference.md) | Fournit des détails sur chaque règle de réduction de la surface d’attaque. |
+| [Guide de déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md) | Présente les informations de vue d’ensemble et les prérequis pour le déploiement de règles de réduction de la surface d’attaque. |
+| [Planifier le déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-plan.md) | Répertorie les étapes recommandées pour le déploiement des règles de réduction de la surface d’attaque. |
+| [Tester des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-test.md) | Fournit des étapes pour utiliser le mode audit pour tester les règles de réduction de la surface d’attaque. |
+| [Activer des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-implement.md) | Affiche les étapes de transition des règles de réduction de la surface d’attaque du mode test (audit) au mode actif et activé (bloquer). |
+| [Utiliser des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-operationalize.md) | Fournit des informations sur les activités quotidiennes d’examen et de maintenance. |
+| [Référence des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-reference.md) | Fournit des détails sur chaque règle de réduction de la surface d’attaque. |
 | [Règles de réduction de la surface d’attaque](attack-surface-reduction.md) | Réduisez les vulnérabilités (surfaces d’attaque) de vos applications grâce à des règles intelligentes qui permettent d’arrêter le programme malveillant. (Nécessite Antivirus Microsoft Defender). |
