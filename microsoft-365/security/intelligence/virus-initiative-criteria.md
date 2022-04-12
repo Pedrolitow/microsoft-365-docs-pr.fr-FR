@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 911deac49606116ca7aece9d37a9aa3d7164fe3f
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 51d5814d718c1422d493f5227b311a58f99f7a82
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665313"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783268"
 ---
 # <a name="microsoft-virus-initiative"></a>Microsoft Virus Initiative
 
@@ -31,28 +31,28 @@ Vous pouvez demander l’adhésion si vous êtes un représentant d’une organi
 
 Pour être éligible au programme MVI, votre organisation doit répondre à toutes les exigences suivantes :
 
-1)  Votre solution de sécurité remplace ou complimente Antivirus Microsoft Defender.
+1. Votre solution de sécurité remplace ou complimente Antivirus Microsoft Defender.
 
-2)  Votre organisation est responsable du développement et de la distribution des mises à jour d’application aux clients finaux qui traitent de la compatibilité avec Windows.
+2. Votre organisation est responsable du développement et de la distribution des mises à jour d’application aux clients finaux qui traitent de la compatibilité avec Windows.
 
-3)  Votre organisation doit être active dans l’industrie des logiciels anti-programme malveillant et avoir une réputation positive, comme en témoigne la participation à des conférences du secteur ou en cours d’examen dans un rapport standard comme AV-Comparatives, OPSWAT ou Gartner.
+3. Votre organisation doit être active dans l’industrie des logiciels anti-programme malveillant et avoir une réputation positive, comme en témoigne la participation à des conférences du secteur ou en cours d’examen dans un rapport standard comme AV-Comparatives, OPSWAT ou Gartner.
 
-4)  Votre organisation doit signer un contrat de non-divulgation (NDA) avec Microsoft.
+4. Votre organisation doit signer un contrat de non-divulgation (NDA) avec Microsoft.
 
-5)  Votre organisation doit signer un contrat de licence de programme. La gestion de ce contrat de licence nécessite que vous respectiez toutes les exigences du programme pour les applications anti-programme malveillant. Ces exigences définissent le comportement des applications anti-programme malveillant nécessaires pour garantir une interaction appropriée avec Windows.
+5. Votre organisation doit signer un contrat de licence de programme. La gestion de ce contrat de licence nécessite que vous respectiez toutes les exigences du programme pour les applications anti-programme malveillant. Ces exigences définissent le comportement des applications anti-programme malveillant nécessaires pour garantir une interaction appropriée avec Windows.
 
-6)  Vous devez soumettre votre application à Microsoft pour les tests de performances périodiques et la révision des fonctionnalités.
+6. Vous devez soumettre votre application à Microsoft pour les tests de performances périodiques et la révision des fonctionnalités.
 
-7)  Votre solution doit être certifiée par le biais de tests indépendants effectués par au moins une organisation standard du secteur, et la certification annuelle doit être maintenue.
+7. Votre solution doit être certifiée par le biais de tests indépendants effectués par au moins une organisation standard du secteur, et la certification annuelle doit être maintenue.
 
-Fournisseur de test | Lab Test Type | Niveau minimal /score
-------------- |---------------|----------------------
-AV-Comparatives | test de protection Real-World </br> https://www.av-comparatives.org/testmethod/real-world-protection-tests/ |Évaluation « Approuvée » d’AV Comparatives
-AV-Test | Doit réussir des tests pour Windows. Les certifications pour Mac et Linux ne sont pas acceptées </br> https://www.av-test.org/en/about-the-institute/certification/ | Obtenir « AV-TEST Certified » (pour les utilisateurs à domicile) ou « AV-TEST Approved » (pour les utilisateurs d’entreprise)
-Laboratoires ICSA | Détection anti-programme malveillant de point de terminaison </br> https://www.icsalabs.com/technology-program/anti-virus/criteria |PASS/Certified
-SKD Labs | Certification Requirements Product: Anti-virus or Antimalware </br> http://www.skdlabs.com/html/english/ </br> http://www.skdlabs.com/cert/ |SkD Labs Star Check Certification Requirements Pass >= 98,5% with On Demand, On Access and Total Detection tests 
-VB 100 |    VB100 Certification Test V1.1 </br> https://www.virusbulletin.com/testing/vb100/vb100-methodology/vb100-methodology-ver1-1/ | VB100 Certification
-Laboratoires de la côte Ouest |   Coche certifiée </br> http://www.checkmarkcertified.com/sme/  | Évaluation « A » des performances de sécurité du produit
+|Fournisseur de test|Lab Test Type|Niveau minimal /score|
+|-------------|---------------|----------------------|
+|AV-Comparatives|test de protection Real-World </br> <https://www.av-comparatives.org/testmethod/real-world-protection-tests/>|Évaluation « Approuvée » d’AV Comparatives|
+|AV-Test|Doit réussir des tests pour Windows. Les certifications pour Mac et Linux ne sont pas acceptées </br> <https://www.av-test.org/en/about-the-institute/certification/>|Obtenir « AV-TEST Certified » (pour les utilisateurs à domicile) ou « AV-TEST Approved » (pour les utilisateurs d’entreprise)|
+|Laboratoires ICSA|Détection anti-programme malveillant de point de terminaison </br> <https://www.icsalabs.com/technology-program/anti-virus/criteria>|PASS/Certified|
+|SKD Labs|Certification Requirements Product: Anti-virus or Antimalware </br> <http://www.skdlabs.com/html/english/> </br> <http://www.skdlabs.com/cert/>|SkD Labs Star Check Certification Requirements Pass >= 98,5% with On Demand, On Access and Total Detection tests|
+|VB 100|VB100 Certification Test V1.1 </br> <https://www.virusbulletin.com/testing/vb100/vb100-methodology/vb100-methodology-ver1-1/>|VB100 Certification|
+|Laboratoires de la côte Ouest|Coche certifiée </br> <http://www.checkmarkcertified.com/sme/>|Évaluation « A » des performances de sécurité du produit|
 
 ## <a name="apply-now"></a>Appliquer maintenant
 

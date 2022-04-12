@@ -1,7 +1,7 @@
 ---
 title: Intégrer des appareils et configurer les fonctionnalités de Microsoft Defender pour point de terminaison
-description: Intégrer Windows 10 périphériques, serveurs, appareils non Windows et apprendre à exécuter un test de détection.
-keywords: intégration, intégration de Microsoft Defender pour point de terminaison, sccm, stratégie de groupe, mdm, script local, test de détection
+description: Intégrer Windows 10 appareils, serveurs, appareils non Windows et apprendre à exécuter un test de détection.
+keywords: intégration, Microsoft Defender pour point de terminaison intégration, sccm, stratégie de groupe, mdm, script local, test de détection
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 350f5675d1426c354f1e2ac848d3a9d14f1ecc76
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 47e39beb1d433e15132a8ecbba64eab84660a4de
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64469666"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782659"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>Intégrer des appareils et configurer les fonctionnalités de Microsoft Defender pour point de terminaison
 
@@ -33,9 +33,9 @@ ms.locfileid: "64469666"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-Le déploiement de Microsoft Defender pour endpoint est un processus en deux étapes.
+Le déploiement de Microsoft Defender pour point de terminaison est un processus en deux étapes.
 
 - Intégrer des appareils à des services
 - Configurer les fonctionnalités du service
@@ -43,46 +43,46 @@ Le déploiement de Microsoft Defender pour endpoint est un processus en deux ét
 :::image type="content" source="images/deployment-steps.png" alt-text="Processus d’intégration et de configuration" lightbox="images/deployment-steps.png":::
 
 ## <a name="onboard-devices-to-the-service"></a>Intégrer des appareils à des services
-Vous devez passer à la section d’intégration du portail Defender for Endpoint pour intégrer l’un des appareils pris en charge. En fonction de l’appareil, vous serez guidé avec les étapes appropriées et des options d’outils de gestion et de déploiement adaptées à l’appareil. 
+Vous devez accéder à la section d’intégration du portail Defender pour point de terminaison pour intégrer l’un des appareils pris en charge. Selon l’appareil, vous serez guidé avec les étapes appropriées et les options d’outils de gestion et de déploiement fournies pour l’appareil. 
 
-En règle générale, pour intégrer des appareils au service :
+En général, pour intégrer des appareils au service :
 
-- Vérifier que l’appareil remplit les [conditions minimales requises](minimum-requirements.md)
-- En fonction de l’appareil, suivez les étapes de configuration fournies dans la section d’intégration du portail Defender for Endpoint
+- Vérifier que l’appareil répond aux [exigences minimales](minimum-requirements.md)
+- Selon l’appareil, suivez les étapes de configuration fournies dans la section d’intégration du portail Defender pour point de terminaison
 - Utiliser l’outil de gestion et la méthode de déploiement appropriés pour vos appareils
 - Exécuter un test de détection pour vérifier que les appareils sont correctement intégrés et signaler au service
 
 
 
 ## <a name="onboarding-and-configuration-tool-options"></a>Options de l’outil d’intégration et de configuration
-Le tableau suivant répertorie les outils disponibles en fonction du point de terminaison que vous devez intégrer.
+Le tableau suivant répertorie les outils disponibles en fonction du point de terminaison à intégrer.
 
 | Point de terminaison     | Options de l’outil                       |
 |--------------|------------------------------------------|
-| **Fenêtres**  |  [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Gestionnaire de périphériques mobiles](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration de à Microsoft Defender pour le cloud](configure-server-endpoints.md#integration-with-azure-defender)  |
+| **Fenêtres**  |  [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Mobile Gestionnaire de périphériques](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration de à Microsoft Defender pour le cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
 | **MacOS**    | [Scripts locaux](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Gestion des appareils mobiles](mac-install-with-other-mdm.md) |
-| **Serveur Linux** | [Script local](linux-install-manually.md) <br> [Sondent](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
+| **Serveur Linux** | [Script local](linux-install-manually.md) <br> [Marionnette](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Microsoft Endpoint Manager](ios-install.md)               |
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)            | 
 
 
-Le tableau suivant répertorie les outils disponibles en fonction du point de terminaison que vous devez intégrer.
+Le tableau suivant répertorie les outils disponibles en fonction du point de terminaison à intégrer.
 
 ## <a name="configure-capabilities-of-the-service"></a>Configurer les fonctionnalités du service
-Les appareils d’intégration activent efficacement protection évolutive des points de terminaison fonctionnalité de Micorosft Defender for Endpoint.
+L’intégration des appareils permet de protection évolutive des points de terminaison fonctionnalité de Microsoft Defender pour point de terminaison.
 
-Après l’intégration des appareils, vous devez configurer les autres fonctionnalités du service. Le tableau suivant répertorie les fonctionnalités que vous pouvez configurer pour obtenir la meilleure protection pour votre environnement.
+Après avoir intégré les appareils, vous devez configurer les autres fonctionnalités du service. Le tableau suivant répertorie les fonctionnalités que vous pouvez configurer pour obtenir la meilleure protection pour votre environnement.
 
 | Fonctionnalité | Description |
 |-|-|
-| [Configurer la gestion des menaces & des vulnérabilités (TVM)](tvm-prerequisites.md) | Threat & Vulnerability Management est un composant de Microsoft Defender pour endpoint et fournit aux administrateurs de sécurité et aux équipes d’opérations de sécurité une valeur unique, notamment : <br><br> - Informations en temps réel protection évolutive des points de terminaison (PEPT) corrélées avec les vulnérabilités des points de terminaison. <br><br> - Contexte de vulnérabilité d’appareil précieux pendant les enquêtes d’incident. <br><br> - Processus de correction intégrés via Microsoft Intune et Microsoft System Center Configuration Manager.  |
-| [Configurer la protection de nouvelle génération (NGP)](configure-microsoft-defender-antivirus-features.md) | Antivirus Microsoft Defender est une solution anti-programme malveillant intégrée qui fournit une protection nouvelle génération pour les ordinateurs de bureau, les ordinateurs portables et les serveurs. L’antivirus Microsoft Defender inclut les éléments suivants :<br> <br>-Protection cloud pour la détection et le blocage quasi instantanés des menaces nouvelles et émergentes. Tout comme l’apprentissage automatique et le système Intelligent Security Graph, la protection fournie par le cloud fait partie des technologies nouvelle génération intégrées à l’antivirus Microsoft Defender.<br> <br> - Analyse toujours continue à l’aide de la surveillance avancée du comportement des fichiers et des processus et d’autres heuristiques (également appelée « protection en temps réel »).<br><br> - Mises à jour de protection dédiées basées sur l’apprentissage automatique, l’analyse humaine et automatisée du Big Data et la recherche approfondie de résistance aux menaces. |
+| [Configurer threat & Vulnerability Management (TVM)](tvm-prerequisites.md) | Threat & Vulnerability Management est un composant de Microsoft Defender pour point de terminaison et fournit aux administrateurs de sécurité et aux équipes d’opérations de sécurité une valeur unique, notamment : <br><br> - Insights protection évolutive des points de terminaison en temps réel (PEPT) corrélés avec les vulnérabilités de point de terminaison. <br><br> - Contexte de vulnérabilité d’appareil inestimable pendant les enquêtes sur les incidents. <br><br> - Processus de correction intégrés via Microsoft Intune et Microsoft System Center Configuration Manager.  |
+| [Configurer la protection nouvelle génération (NGP)](configure-microsoft-defender-antivirus-features.md) | Antivirus Microsoft Defender est une solution anti-programme malveillant intégrée qui fournit une protection de nouvelle génération pour les ordinateurs de bureau, les ordinateurs portables et les serveurs. L’antivirus Microsoft Defender inclut les éléments suivants :<br> <br>- Protection fournie par le cloud pour la détection quasi instantanée et le blocage des menaces nouvelles et émergentes. Tout comme l’apprentissage automatique et le système Intelligent Security Graph, la protection fournie par le cloud fait partie des technologies nouvelle génération intégrées à l’antivirus Microsoft Defender.<br> <br> - Analyse en permanence à l’aide de la surveillance avancée du comportement des fichiers et des processus et d’autres heuristiques (également appelées « protection en temps réel »).<br><br> - Mises à jour de protection dédiées basées sur le Machine Learning, l’analyse du Big Data humaine et automatisée, ainsi que la recherche approfondie sur la résistance aux menaces. |
 | [Configurer la réduction de la surface d’attaque (ASR)](overview-attack-surface-reduction.md) | Les fonctionnalités de réduction de la surface d’attaque dans Microsoft Defender pour point de terminaison aident à protéger les appareils et les applications de l’organisation contre les menaces nouvelles et émergentes. |
-| [Configurer les fonctionnalités AIR (Auto Investigation & Remediation)](configure-automated-investigations-remediation.md) | Microsoft Defender pour le point de terminaison utilise des examens automatisés pour réduire considérablement le volume d’alertes qui doivent être examinées individuellement. La fonctionnalité d’investigation automatisée exploite divers algorithmes d’inspection et processus utilisés par les analystes (tels que les playbooks) pour examiner les alertes et prendre des mesures correctives immédiates pour résoudre les violations. Cela réduit considérablement les volumes d’alertes, ce qui permet aux experts en matière de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives de grande valeur. |
-| [Configurer les Spécialistes des menaces Microsoft (MTE)](configure-microsoft-threat-experts.md) | Spécialistes des menaces Microsoft est un service de recherche géré qui fournit des centres d’opérations de sécurité (SOC) avec une analyse et une surveillance de niveau expert pour les aider à s’assurer que les menaces critiques dans leurs environnements uniques ne sont pas manquées.      |
+| [Configurer les fonctionnalités air (Auto Investigation & Remediation)](configure-automated-investigations-remediation.md) | Microsoft Defender pour point de terminaison utilise des investigations automatisées pour réduire considérablement le volume d’alertes qui doivent être examinées individuellement. La fonctionnalité d’investigation automatisée utilise différents algorithmes d’inspection et processus utilisés par les analystes (tels que les playbooks) pour examiner les alertes et prendre des mesures de correction immédiates pour résoudre les violations. Cela réduit considérablement les volumes d’alertes, ce qui permet aux experts en matière de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives de grande valeur. |
+| [Configurer les fonctionnalités Spécialistes des menaces Microsoft (MTE)](configure-microsoft-threat-experts.md) | Spécialistes des menaces Microsoft est un service de chasse managé qui fournit aux centres d’opérations de sécurité (SOC) une surveillance et une analyse de niveau expert pour les aider à s’assurer que les menaces critiques dans leurs environnements uniques ne sont pas manquées.      |
 
 
-## <a name="supported-capabilities-for-windows-devices"></a>Fonctionnalités prise en charge pour Windows appareils
+## <a name="supported-capabilities-for-windows-devices"></a>Fonctionnalités prises en charge pour les appareils Windows
 
 |Système d’exploitation  |Windows 10 & 11  |Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup>  |<sup>Windows Server 2016[[1](#fn1)]<sup></sup>   |Windows Server 2019 & 2022|Windows Server 1803+|
 |---------|---------|---------|---------|---------|---------|
@@ -90,26 +90,26 @@ Après l’intégration des appareils, vous devez configurer les autres fonction
 |Règles de réduction de la surface d’attaque     |    v     |   v      |    v     |    v     |    v     |
 |Contrôle d’appareil     |     v    |    N     |    N     |    N     |    N     |  
 |Pare-feu     |      v   |    v     |     v    |    v    |    v   |
-|Protection du réseau     |      v   |    v     |     v    |    v    |    v   |
+|Protection réseau     |      v   |    v     |     v    |    v    |    v   |
 |Protection de nouvelle génération     |      v   |    v     |     v    |    v    |    v   |
-|Protection contre la falsification     |        v   |    v     |     v    |    v    |    v   |
+|Protection contre les falsifications     |        v   |    v     |     v    |    v    |    v   |
 |Web Protection     |       v   |    v     |     v    |    v    |    v   |
 |||||||
 |**Détection**     |         |         |         |||
-|Recherche avancée     |      v   |    v     |     v    |    v    |    v   |
-|Indicateurs de fichiers personnalisés     |      v   |    v     |     v    |    v    |    v   |
+|Repérage avancé     |      v   |    v     |     v    |    v    |    v   |
+|Indicateurs de fichier personnalisés     |      v   |    v     |     v    |    v    |    v   |
 |Indicateurs réseau personnalisés     |      v   |    v     |     v    |    v    |    v   |
-|PEPT blocage & mode passif     |      v   |    v     |     v    |    v    |    v   |
-|Capteur de détection de l’Sense     |      v   |    v     |     v    |    v    |    v   |
-|Point de terminaison & détection de périphérique réseau     |      v   |    N     |     N    |    N    |    N   |
+|PEPT bloquer le mode passif &     |      v   |    v     |     v    |    v    |    v   |
+|Capteur de détection des sens     |      v   |    v     |     v    |    v    |    v   |
+|Point de terminaison & découverte d’appareil réseau     |      v   |    N     |     N    |    N    |    N   |
 |||||||
 |**Response**     |         |         |         |||
-|Réponse & enquête automatisée (AIR)    |      v   |    v     |     v    |    v    |    v   |
-|Fonctionnalités de réponse des appareils : isolation, collecter un package d’enquête, exécuter une analyse antivirus     |      v   |    v     |     v    |    v    |    v   |
-|Fonctionnalités de réponse aux fichiers : collecter un fichier, analyse approfondie, bloquer un fichier, arrêter et mettre en quarantaine des processus     |      v   |    v     |     v    |    v    |    v   |
+|Réponse & d’investigation automatisée (AIR)    |      v   |    v     |     v    |    v    |    v   |
+|Fonctionnalités de réponse de l’appareil : isolation, collecte du package d’investigation, exécution de l’analyse AV     |      v   |    v     |     v    |    v    |    v   |
+|Fonctionnalités de réponse aux fichiers : collecter des fichiers, analyser en profondeur, bloquer des fichiers, arrêter et mettre en quarantaine des processus     |      v   |    v     |     v    |    v    |    v   |
 |Réponse en direct    |      v   |    v     |     v    |    v    |    v   |
 
-(<a id="fn1">1</a>) Fait référence à la solution moderne et unifiée pour Windows Server 2012 R2 et 2016. Pour plus d’informations, [voir Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
+(<a id="fn1">1</a>) Fait référence à la solution moderne et unifiée pour Windows Server 2012 R2 et 2016. Pour plus d’informations, consultez [Intégrer des serveurs Windows au service Defender pour point de terminaison](configure-server-endpoints.md).
 
 >[!NOTE]
->Windows 7, 8.1, Windows Server 2008 R2 incluent la prise en charge du capteur PEPT et de l’antivirus utilisant System Center Endpoint Protection (SCEP).
+>Windows 7, 8.1, Windows Server 2008 R2 incluent la prise en charge du capteur PEPT et de l’av à l’aide de System Center Endpoint Protection (SCEP).

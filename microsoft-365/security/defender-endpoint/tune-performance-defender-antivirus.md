@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7d24fe9a20c54a24a9c3406c66c1c591790bafc5
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 34bf757ee545d45f7faccdefaf1e8aa57e9cb961
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667381"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783444"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analyseur de performances pour Antivirus Microsoft Defender
 
@@ -56,14 +56,14 @@ Pour démarrer l’enregistrement des événements système, ouvrez PowerShell e
 1. Exécutez la commande suivante pour démarrer l’enregistrement :
 
    `New-MpPerformanceRecording -RecordTo <recording.etl>`
- 
+
     où `-RecordTo` le paramètre spécifie l’emplacement de chemin d’accès complet dans lequel le fichier de trace est enregistré. Pour plus d’informations sur les applets de commande, consultez [Antivirus Microsoft Defender applets de commande](/powershell/module/defender).
 
 2. Si des processus ou des services sont considérés comme affectant les performances, reproduisez la situation en effectuant les tâches pertinentes.
 
 3. Appuyez sur **Entrée** pour arrêter et enregistrer l’enregistrement, ou **sur Ctrl+C** pour annuler l’enregistrement.
 
-4. Analysez les résultats à l’aide du paramètre de l’analyseur de `Get-MpPerformanceReport`performances. Par exemple, lors de l’exécution de la commande `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`, l’utilisateur reçoit une liste des dix premières analyses pour les 3 principaux fichiers affectant les performances. 
+4. Analysez les résultats à l’aide du paramètre de l’analyseur de `Get-MpPerformanceReport`performances. Par exemple, lors de l’exécution de la commande `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`, l’utilisateur reçoit une liste des dix premières analyses pour les 3 principaux fichiers affectant les performances.
 
 Pour plus d’informations sur les paramètres et les options de ligne de commande, consultez [New-MpPerformanceRecording](#new-mpperformancerecording) et [Get-MpPerformanceReport](#get-mpperformancereport).
 
@@ -72,7 +72,7 @@ Pour plus d’informations sur les paramètres et les options de ligne de comman
 
 ### <a name="performance-tuning-data-and-information"></a>Données et informations sur l’optimisation des performances
 
-En fonction de la requête, l’utilisateur peut afficher les données pour le nombre d’analyses, la durée (total/min/moyenne/max/médiane), le chemin d’accès, le processus et la raison de l’analyse. L’image ci-dessous montre l’exemple de sortie d’une requête simple des 10 premiers fichiers pour l’impact de l’analyse. 
+En fonction de la requête, l’utilisateur peut afficher les données pour le nombre d’analyses, la durée (total/min/moyenne/max/médiane), le chemin d’accès, le processus et la raison de l’analyse. L’image ci-dessous montre l’exemple de sortie d’une requête simple des 10 premiers fichiers pour l’impact de l’analyse.
 
 :::image type="content" source="images/example-output.png" alt-text="Exemple de sortie pour une requête TopFiles de base" lightbox="images/example-output.png":::
 
@@ -91,7 +91,8 @@ Pour obtenir des exemples décrivant le processus d'« exportation » et de « c
 
 - **Pour convertir** : `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
-### <a name="requirements"></a>Conditions requises
+### <a name="requirements"></a>Configuration requise
+
 Antivirus Microsoft Defender analyseur de performances présente les prérequis suivants :
 
 - Versions Windows prises en charge : Windows 10, Windows 11 et Windows Server 2016 et versions ultérieures
@@ -99,11 +100,11 @@ Antivirus Microsoft Defender analyseur de performances présente les prérequis 
 - Version de PowerShell : PowerShell version 5.1, PowerShell ISE, Remote PowerShell (4.18.2201.10+), PowerShell 7.x (4.18.2201.10+)
 
 ## <a name="powershell-reference"></a>Référence PowerShell
-Deux nouvelles applets de commande PowerShell sont utilisées pour optimiser les performances de Antivirus Microsoft Defender : 
+
+Deux nouvelles applets de commande PowerShell sont utilisées pour optimiser les performances de Antivirus Microsoft Defender :
 
 - [New-MpPerformanceRecording](#new-mpperformancerecording)
 - [Get-MpPerformanceReport](#get-mpperformancereport)
-
 
 ### <a name="new-mpperformancerecording"></a>New-MpPerformanceRecording
 
@@ -116,6 +117,7 @@ New-MpPerformanceRecording -RecordTo <String >
 ```
 
 #### <a name="description-new-mpperformancerecording"></a>Description : New-MpPerformanceRecording
+
 L’applet `New-MpPerformanceRecording` de commande collecte un enregistrement des performances des analyses Antivirus Microsoft Defender. Ces enregistrements de performances contiennent des événements de processus du noyau Microsoft-Antimalware-Engine et NT et peuvent être analysés après la collecte à l’aide de l’applet de commande [Get-MpPerformanceReport](#get-mpperformancereport) .
 
 Cette `New-MpPerformanceRecording` applet de commande fournit un aperçu des fichiers problématiques qui peuvent entraîner une dégradation des performances de Antivirus Microsoft Defender. Cet outil est fourni « AS IS » et n’est pas destiné à fournir des suggestions sur les exclusions. Les exclusions peuvent réduire le niveau de protection sur vos points de terminaison. Les exclusions, le cas échéant, doivent être définies avec précaution.
@@ -125,7 +127,7 @@ Pour plus d’informations sur l’analyseur de performances, consultez [Analyse
 > [!IMPORTANT]
 > Cette applet de commande nécessite des privilèges d’administrateur élevés.
 
-**Versions de système d’exploitation prises en charge**
+**Versions de système d’exploitation prises en charge** :
 
 Windows version 10 et ultérieure.
 
@@ -154,24 +156,26 @@ La commande ci-dessus collecte un enregistrement des performances sur Server02 (
 #### <a name="parameters-new-mpperformancerecording"></a>Paramètres : New-MpPerformanceRecording
 
 ##### <a name="-recordto"></a>-RecordTo
+
 Spécifie l’emplacement dans lequel enregistrer l’enregistrement des performances de Microsoft Defender Antimalware.
 
 ```yaml
 Type: String
 Position: Named
 Default value: None
-Accept pipeline input: False 
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-##### <a name="-session"></a>-Session 
+##### <a name="-session"></a>-Session
+
 Spécifie l’objet PSSession dans lequel créer et enregistrer l’enregistrement des performances Antivirus Microsoft Defender. Lorsque vous utilisez ce paramètre, le paramètre RecordTo fait référence au chemin d’accès local sur l’ordinateur distant. Disponible avec la plateforme Defender version 4.18.2201.10.
 
 ```yaml
 Type: PSSession[]
 Position: 0
 Default value: None
-Accept pipeline input: False 
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -186,10 +190,10 @@ Get-MpPerformanceReport    [-Path] <String>
 [-TopScans <Int32>]
 [-TopFiles  <Int32>
     [-TopScansPerFile <Int32>]
-    [-TopProcessesPerFile  <Int32>  
+    [-TopProcessesPerFile  <Int32>
         [-TopScansPerProcessPerFile <Int32>]
     ]
-] 
+]
 [-TopExtensions  <Int32>
     [-TopScansPerExtension <Int32>]
     [-TopProcessesPerExtension <Int32>
@@ -198,7 +202,7 @@ Get-MpPerformanceReport    [-Path] <String>
     [-TopFilesPerExtension  <Int32>
         [-TopScansPerFilePerExtension <Int32>]
         ]
-    ] 
+    ]
 ]
 [-TopProcesses  <Int32>
     [-TopScansPerProcess <Int32>]
@@ -213,13 +217,14 @@ Get-MpPerformanceReport    [-Path] <String>
 ```
 
 #### <a name="description-get-mpperformancereport"></a>Description : Get-MpPerformanceReport
+
 L’applet `Get-MpPerformanceReport` de commande analyse un enregistrement de performances Antivirus Microsoft Defender précédemment collecté ([New-MpPerformanceRecording](#new-mpperformancerecording)) et signale les chemins d’accès, les extensions de fichier et les processus qui ont le plus d’impact sur Antivirus Microsoft Defender analyses.
 
 L’analyseur de performances fournit un aperçu des fichiers problématiques qui peuvent entraîner une dégradation des performances de Antivirus Microsoft Defender. Cet outil est fourni « AS IS » et n’est pas destiné à fournir des suggestions sur les exclusions. Les exclusions peuvent réduire le niveau de protection sur vos points de terminaison. Les exclusions, le cas échéant, doivent être définies avec précaution.
 
 Pour plus d’informations sur l’analyseur de performances, consultez [Analyseur de performances](/windows-hardware/test/wpt/windows-performance-analyzer) documentation.
 
-**Versions de système d’exploitation prises en charge**
+**Versions de système d’exploitation prises en charge** :
 
 Windows version 10 et ultérieure.
 
@@ -228,19 +233,19 @@ Windows version 10 et ultérieure.
 
 #### <a name="examples-get-mpperformancereport"></a>Exemples : Get-MpPerformanceReport
 
-##### <a name="example-1-single-query"></a>Exemple 1 : requête unique 
+##### <a name="example-1-single-query"></a>Exemple 1 : requête unique
 
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:20
 ```
 
-##### <a name="example-2-multiple-queries"></a>Exemple 2 : Plusieurs requêtes 
+##### <a name="example-2-multiple-queries"></a>Exemple 2 : Plusieurs requêtes
 
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:10 -TopProcesses:10 -TopScans:10
 ```
 
-##### <a name="example-3-nested-queries"></a>Exemple 3 : Requêtes imbriqués 
+##### <a name="example-3-nested-queries"></a>Exemple 3 : Requêtes imbriqués
 
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopProcesses:10 -TopExtensionsPerProcess:3 -TopScansPerExtensionPerProcess:3
@@ -255,17 +260,19 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:10
 #### <a name="parameters-get-mpperformancereport"></a>Paramètres : Get-MpPerformanceReport
 
 ##### <a name="-minduration"></a>-MinDuration
+
 Spécifie la durée minimale de toute analyse ou durée totale d’analyse des fichiers, extensions et processus inclus dans le rapport ; accepte des valeurs telles que  **0,1234567sec**, **0,1234ms**, **0,1us** ou un timeSpan valide.
 
 ```yaml
 Type: String
 Position: Named
 Default value: None
-Accept pipeline input: False 
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ##### <a name="-path"></a>-Chemin d’accès
+
 Spécifie le ou les chemins d’accès à un ou plusieurs emplacements.
 
 ```yaml
@@ -276,7 +283,8 @@ Accept pipeline input: True
 Accept wildcard characters: False
 ```
 
-### <a name="-topextensions"></a>-TopExtensions 
+### <a name="-topextensions"></a>-TopExtensions
+
 Spécifie le nombre d’extensions principales à générer, triées par « Durée ».
 
 ```yaml
@@ -287,7 +295,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topextensionsperprocess"></a>-TopExtensionsPerProcess 
+### <a name="-topextensionsperprocess"></a>-TopExtensionsPerProcess
+
 Spécifie le nombre d’extensions principales à générer pour chaque processus supérieur, triés par « Durée ».
 
 ```yaml
@@ -299,8 +308,8 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topfiles"></a>-TopFiles
-Demande un rapport top-files et spécifie le nombre de fichiers principaux à générer, triés par « Durée ».
 
+Demande un rapport top-files et spécifie le nombre de fichiers principaux à générer, triés par « Durée ».
 
 ```yaml
 Type: Int32
@@ -310,9 +319,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topfilesperextension"></a>-TopFilesPerExtension 
-Spécifie le nombre de fichiers principaux à générer pour chaque extension supérieure, triés par « Durée ».
+### <a name="-topfilesperextension"></a>-TopFilesPerExtension
 
+Spécifie le nombre de fichiers principaux à générer pour chaque extension supérieure, triés par « Durée ».
 
 ```yaml
 Type: Int32
@@ -323,6 +332,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topfilesperprocess"></a>-TopFilesPerProcess
+
 Spécifie le nombre de fichiers principaux à générer pour chaque processus supérieur, trié par « Durée ».
 
 ```yaml
@@ -334,6 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topprocesses"></a>-TopProcesses
+
 Demande un rapport de processus supérieurs et spécifie le nombre de processus principaux à générer, triés par « Durée ».
 
 ```yaml
@@ -344,9 +355,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topprocessesperextension"></a>-TopProcessesPerExtension 
-Spécifie le nombre de processus principaux à générer pour chaque extension supérieure, triés par « Durée ».
+### <a name="-topprocessesperextension"></a>-TopProcessesPerExtension
 
+Spécifie le nombre de processus principaux à générer pour chaque extension supérieure, triés par « Durée ».
 
 ```yaml
 Type: Int32
@@ -356,10 +367,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-
 ### <a name="-topprocessesperfile"></a>-TopProcessesPerFile
-Spécifie le nombre de processus principaux à générer pour chaque fichier supérieur, triés par « Durée ».
 
+Spécifie le nombre de processus principaux à générer pour chaque fichier supérieur, triés par « Durée ».
 
 ```yaml
 Type: Int32
@@ -370,9 +380,9 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topscans"></a>-TopScans
+
 Demande un rapport d’analyses supérieures et spécifie le nombre d’analyses principales à générer, triées par « Durée ».
 
-
 ```yaml
 Type: Int32
 Position: Named
@@ -380,12 +390,11 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-
 
 ### <a name="-topscansperextension"></a>-TopScansPerExtension
+
 Spécifie le nombre d’analyses principales à générer pour chaque extension supérieure, triées par « Durée ».
 
-
 ```yaml
 Type: Int32
 Position: Named
@@ -394,11 +403,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### <a name="-topscansperextensionperprocess"></a>-TopScansPerExtensionPerProcess
 
-### <a name="-topscansperextensionperprocess"></a>-TopScansPerExtensionPerProcess 
 Spécifie le nombre d’analyses principales à générer pour chaque extension supérieure pour chaque processus supérieur, triés par « Durée ».
 
-
 ```yaml
 Type: Int32
 Position: Named
@@ -406,12 +414,11 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-
 
 ### <a name="-topscansperfile"></a>-TopScansPerFile
+
 Spécifie le nombre d’analyses principales à générer pour chaque fichier supérieur, triés par « Durée ».
 
-
 ```yaml
 Type: Int32
 Position: Named
@@ -420,10 +427,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperfileperextension"></a>-TopScansPerFilePerExtension 
+### <a name="-topscansperfileperextension"></a>-TopScansPerFilePerExtension
+
 Spécifie le nombre d’analyses principales à générer pour chaque fichier supérieur pour chaque extension supérieure, triées par « Durée ».
 
-
 ```yaml
 Type: Int32
 Position: Named
@@ -432,11 +439,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### <a name="-topscansperfileperprocess"></a>-TopScansPerFilePerProcess
 
-### <a name="-topscansperfileperprocess"></a>-TopScansPerFilePerProcess 
 Spécifie le nombre d’analyses principales de sortie pour chaque fichier supérieur pour chaque processus supérieur, triés par « Durée ».
 
-
 ```yaml
 Type: Int32
 Position: Named
@@ -445,10 +451,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### <a name="-topscansperprocess"></a>-TopScansPerProcess
 
-### <a name="-topscansperprocess"></a>-TopScansPerProcess 
 Spécifie le nombre d’analyses principales à générer pour chaque processus supérieur dans le rapport Processus principaux, triés par « Durée ».
-
 
 ```yaml
 Type: Int32
@@ -459,8 +464,8 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topscansperprocessperextension"></a>-TopScansPerProcessPerExtension
-Spécifie le nombre d’analyses principales de sortie pour chaque processus supérieur pour chaque extension supérieure, triées par « Durée ».
 
+Spécifie le nombre d’analyses principales de sortie pour chaque processus supérieur pour chaque extension supérieure, triées par « Durée ».
 
 ```yaml
 Type: Int32
@@ -471,8 +476,8 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topscansperprocessperfile"></a>-TopScansPerProcessPerFile
-Spécifie le nombre d’analyses principales de sortie pour chaque processus supérieur pour chaque fichier supérieur, triés par « Durée ».
 
+Spécifie le nombre d’analyses principales de sortie pour chaque processus supérieur pour chaque fichier supérieur, triés par « Durée ».
 
 ```yaml
 Type: Int32

@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment l’authentification DNS SMTP des entités nommées (DANE) fonctionne pour sécuriser les communications par e-mail entre les serveurs de messagerie.
-ms.openlocfilehash: 2af2a166ff73bbe7888ed9265ec8733105eb2007
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: b5f9337457556dda53b5b2f982480a4c2501fcc9
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759432"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782850"
 ---
 # <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>Fonctionnement de l’authentification DNS SMTP des entités nommées (DANE)
 
@@ -196,8 +196,8 @@ Lors de la résolution des problèmes, les codes d’erreur ci-dessous peuvent �
 
 Cela indique généralement un problème avec le serveur de messagerie de destination. Serveur de messagerie avec lequel l’analyseur de connectivité à distance teste la connexion. Il existe généralement deux scénarios qui génèrent ce code :
 
-1.  Le serveur de messagerie de destination ne prend pas en charge la communication sécurisée du tout, et une communication simple et non chiffrée doit être utilisée.
-2.  Le serveur de destination est mal configuré et ignore la commande STARTTLS.
+1. Le serveur de messagerie de destination ne prend pas en charge la communication sécurisée du tout, et une communication simple et non chiffrée doit être utilisée.
+2. Le serveur de destination est mal configuré et ignore la commande STARTTLS.
 
 Après avoir reçu le message :
 

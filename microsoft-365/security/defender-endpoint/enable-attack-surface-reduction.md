@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: f8f6865bc65662cbbfd5a9276d95abc405f5a64b
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: dfe5567edbe86279ad5a5b0645cb3ea6c54c1174
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664235"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783606"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
@@ -38,7 +38,7 @@ ms.locfileid: "64664235"
 
 [Les règles de réduction de la surface d’attaque (règles](attack-surface-reduction.md) ASR) permettent d’éviter les actions que les programmes malveillants abusent souvent pour compromettre les appareils et les réseaux.
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Fonctionnalités de réduction de la surface d’attaque dans Windows versions
 
@@ -79,7 +79,7 @@ Vous pouvez activer les règles de réduction de la surface d’attaque à l’a
 
 - [Microsoft Intune](#intune)
 - [Mobile Gestion des appareils (MDM)](#mdm)
-- [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
+- [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 - [Stratégie de groupe](#group-policy)
 - [PowerShell](#powershell)
 
@@ -93,7 +93,7 @@ Vous pouvez également exclure les règles ASR du déclenchement en fonction des
 
 > [!IMPORTANT]
 > L’exclusion de fichiers ou de dossiers peut réduire considérablement la protection fournie par les règles ASR. Les fichiers exclus sont autorisés à s’exécuter et aucun rapport ou événement n’est enregistré.
-> Si les règles ASR détectent des fichiers qui, selon vous, ne doivent pas être détectés, vous devez [d’abord utiliser le mode audit pour tester la règle](evaluate-attack-surface-reduction.md).
+> Si les règles ASR détectent des fichiers qui, selon vous, ne doivent pas être détectés, vous devez [d’abord utiliser le mode audit pour tester la règle](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit).
 
 Vous pouvez spécifier des fichiers ou dossiers individuels (à l’aide de chemins d’accès aux dossiers ou de noms de ressources complets), mais vous ne pouvez pas spécifier les règles auxquelles les exclusions s’appliquent. Une exclusion n’est appliquée qu’au démarrage de l’application ou du service exclu. Par exemple, si vous ajoutez une exclusion pour un service de mise à jour qui est déjà en cours d’exécution, le service de mise à jour continue de déclencher des événements jusqu’à ce que le service soit arrêté et redémarré.
 
@@ -119,7 +119,7 @@ Cette section fournit des détails de configuration pour les méthodes de config
 - [Intune](#intune)
 - [MEM](#mem)
 - [GPM](#mdm)
-- [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
+- [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 - [Stratégie de groupe](#group-policy)
 - [PowerShell](#powershell)
 
@@ -265,7 +265,7 @@ Exemple :
 > [!NOTE]
 > Veillez à entrer des valeurs OMA-URI sans espaces.
 
-### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
+### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
 1. Dans Microsoft Endpoint Configuration Manager, accédez à **Assets and Compliance** \> **Endpoint Protection** \> **Windows Defender Exploit Guard**.
 

@@ -1,6 +1,6 @@
 ---
-title: Activer Microsoft Defender pour l’évaluation du point de terminaison
-description: Activer votre laboratoire d Microsoft 365 Defender d’évaluation ou votre environnement pilote, y compris la vérification de l’état de la licence et les points de terminaison d’intégration
+title: Activer l’évaluation Microsoft Defender pour point de terminaison
+description: Activez votre laboratoire d’essai Microsoft 365 Defender ou votre environnement pilote, notamment la vérification de l’état de la licence et l’intégration des points de terminaison
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,77 +21,77 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a12c81635f712dd0fac70101348d30bc1dc4f154
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 2acde87daaff88ec9ce7458218919342a9f1edd8
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754617"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782498"
 ---
-# <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Activer Microsoft Defender pour l’environnement d’évaluation des points de terminaison
+# <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Activer Microsoft Defender pour point de terminaison environnement d’évaluation
 
 
-Cet article vous guide tout au long des étapes de configuration de l’environnement d’évaluation de Microsoft Defender pour Endpoint à l’aide d’appareils de production. 
+Cet article vous guide tout au long des étapes de configuration de l’environnement d’évaluation pour Microsoft Defender pour point de terminaison à l’aide d’appareils de production. 
 
 
 > [!TIP]
-> Microsoft Defender pour point de terminaison est également livré avec un laboratoire d’évaluation dans le produit où vous pouvez ajouter des appareils pré-configurés et exécuter des simulations pour évaluer les fonctionnalités de la plateforme. L’atelier est fourni avec une expérience de mise en place simplifiée qui peut vous aider à démontrer rapidement la valeur de Microsoft Defender pour point de terminaison, y compris des conseils pour de nombreuses fonctionnalités telles que la recherche avancée et l’analyse des menaces. Pour plus d’informations, voir [Évaluer les fonctionnalités](../defender-endpoint/evaluation-lab.md). <br> La principale différence entre les instructions fournies dans cet article et le laboratoire d’évaluation est que l’environnement d’évaluation utilise des périphériques de production alors que le laboratoire d’évaluation utilise des périphériques hors production. 
+> Microsoft Defender pour point de terminaison est également fourni avec un laboratoire d’évaluation dans le produit où vous pouvez ajouter des appareils préconfigurés et exécuter des simulations pour évaluer les fonctionnalités de la plateforme. Le labo est fourni avec une expérience de configuration simplifiée qui peut vous aider à démontrer rapidement la valeur de Microsoft Defender pour point de terminaison y compris des conseils pour de nombreuses fonctionnalités telles que la chasse avancée et l’analyse des menaces. Pour plus d’informations, consultez [Évaluer les fonctionnalités](../defender-endpoint/evaluation-lab.md). <br> La principale différence entre les instructions fournies dans cet article et le laboratoire d’évaluation est que l’environnement d’évaluation utilise des appareils de production, tandis que le laboratoire d’évaluation utilise des appareils hors production. 
 
-Utilisez les étapes suivantes pour activer l’évaluation de Microsoft Defender pour Endpoint.
+Utilisez les étapes suivantes pour activer l’évaluation de Microsoft Defender pour point de terminaison.
 
-:::image type="content" source="../../media/defender/m365-defender-endpoint-eval-enable-steps.png" alt-text="Étapes permettant d’activer Microsoft Defender pour le point de terminaison dans l’environnement d’évaluation de Microsoft Defender" lightbox="../../media/defender/m365-defender-endpoint-eval-enable-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-endpoint-eval-enable-steps.png" alt-text="Étapes permettant d’activer Microsoft Defender pour point de terminaison dans l’environnement d’évaluation Microsoft Defender" lightbox="../../media/defender/m365-defender-endpoint-eval-enable-steps.png":::
 
 - [Étape 1. Vérifier l’état de la licence](#step-1-check-license-state)
-- [Étape 2. Points de terminaison intégrés](#step-2-onboard-endpoints-using-any-of-the-supported-management-tools)
+- [Étape 2. Intégrer des points de terminaison](#step-2-onboard-endpoints-using-any-of-the-supported-management-tools)
 
 
 ## <a name="step-1-check-license-state"></a>Étape 1. Vérifier l’état de la licence
 
-Vous devez d’abord vérifier l’état de la licence pour vérifier qu’elle a été correctement mise en service. Vous pouvez le faire par le biais du Centre d’administration ou du **Microsoft Azure web**.
+Vous devez d’abord vérifier l’état de la licence pour vérifier qu’elle a été correctement approvisionnée. Pour ce faire, vous pouvez utiliser le Centre d’administration ou le **portail Microsoft Azure**.
 
 
-1. Pour afficher vos licences, accédez au portail **Microsoft Azure et** accédez à la [section Microsoft Azure licences du portail.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)
+1. Pour afficher vos licences, accédez au **portail Microsoft Azure** et accédez à la section des [licences du portail Microsoft Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 
-   :::image type="content" source="../../media/defender/atp-licensing-azure-portal.png" alt-text="Page Gestion des licences Azure dans le portail Microsoft 365 Defender web" lightbox="../../media/defender/atp-licensing-azure-portal.png":::
+   :::image type="content" source="../../media/defender/atp-licensing-azure-portal.png" alt-text="Page Licences Azure dans le portail Microsoft 365 Defender" lightbox="../../media/defender/atp-licensing-azure-portal.png":::
 
-1. Vous pouvez également accéder à **BillingSubscriptions** >  dans le Centre d’administration.
+1. Sinon, dans le centre d’administration, accédez à **BillingSubscriptions** > .
 
-    Sur l’écran, vous verrez toutes les licences provisionées et leur état **actuel**.
+    À l’écran, vous verrez toutes les licences approvisionnées et leur **état** actuel.
 
-    :::image type="content" source="../../media/defender/atp-billing-subscriptions.png" alt-text="Page Licences de facturation dans le portail Microsoft Azure client" lightbox="../../media/defender/atp-billing-subscriptions.png":::
+    :::image type="content" source="../../media/defender/atp-billing-subscriptions.png" alt-text="Page Licences de facturation dans le portail Microsoft Azure" lightbox="../../media/defender/atp-billing-subscriptions.png":::
     
 
-## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>Étape 2. Intégrer des points de terminaison à l’aide de l’un des outils de gestion pris en charge
+## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>Étape 2. Intégrer des points de terminaison à l’aide des outils de gestion pris en charge
 
-Après avoir vérifié que l’état de la licence a été correctement mis en service, vous pouvez commencer à intégrer des appareils au service. 
+Après avoir vérifié que l’état de la licence a été correctement approvisionné, vous pouvez commencer à intégrer des appareils au service. 
 
-Dans le but d’évaluer Microsoft Defender pour le point de terminaison, nous vous recommandons de choisir quelques appareils Windows pour effectuer l’évaluation.
+Dans le but d’évaluer Microsoft Defender pour point de terminaison, nous vous recommandons de choisir quelques appareils Windows sur lesquels effectuer l’évaluation.
 
-Vous pouvez choisir d’utiliser n’importe quel outil de gestion pris en charge, mais Intune offre une intégration optimale. Pour plus d’informations, [voir Configurer Microsoft Defender pour endpoint dans Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune).
+Vous pouvez choisir d’utiliser l’un des outils de gestion pris en charge, mais Intune fournit une intégration optimale. Pour plus d’informations, consultez [Configurer Microsoft Defender pour point de terminaison dans Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune).
 
-La [rubrique Planifier le](../defender-endpoint/deployment-strategy.md) déploiement décrit les étapes générales à suivre pour déployer Defender pour Endpoint.  
+La rubrique [Planifier le déploiement](../defender-endpoint/deployment-strategy.md) décrit les étapes générales à suivre pour déployer Defender pour point de terminaison.  
 
-Regardez cette vidéo pour obtenir une vue d’ensemble rapide du processus d’intégration et en savoir plus sur les outils et méthodes disponibles.
+Regardez cette vidéo pour obtenir une vue d’ensemble rapide du processus d’intégration et découvrez les outils et méthodes disponibles.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
 
 ### <a name="onboarding-tool-options"></a>Options de l’outil d’intégration
 
-Le tableau suivant répertorie les outils disponibles en fonction du point de terminaison que vous devez intégrer.
+Le tableau suivant répertorie les outils disponibles en fonction du point de terminaison à intégrer.
 
 Point de terminaison | Options de l’outil
 :---|:---
-**Fenêtres** | [Script local (jusqu’à 10 appareils),](../defender-endpoint/configure-endpoints-script.md) stratégie de [groupe,](../defender-endpoint/configure-endpoints-gp.md) [Microsoft Endpoint Manager/ Gestionnaire de périphériques mobiles](../defender-endpoint/configure-endpoints-mdm.md), [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md), [scripts VDI](../defender-endpoint/configure-endpoints-vdi.md), intégration à [Microsoft Defender pour le cloud](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)
-**MacOS** | [Scripts locaux](../defender-endpoint/mac-install-manually.md), [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md), [Pro JAMF](../defender-endpoint/mac-install-with-jamf.md), [Gestion des périphériques mobiles](../defender-endpoint/mac-install-with-other-mdm.md)
-**Serveur Linux** | [Script local](../defender-endpoint/linux-install-manually.md),  [Fin,](../defender-endpoint/linux-install-with-puppet.md)  [Ansible](../defender-endpoint/linux-install-with-ansible.md)
-**iOS** | [Basée sur l’application](../defender-endpoint/ios-install.md)
+**Fenêtres** | [Script local (jusqu’à 10 appareils)](../defender-endpoint/configure-endpoints-script.md), [stratégie de groupe](../defender-endpoint/configure-endpoints-gp.md), [Microsoft Endpoint Manager/ Mobile Gestionnaire de périphériques](../defender-endpoint/configure-endpoints-mdm.md), [ Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md), [scripts VDI](../defender-endpoint/configure-endpoints-vdi.md), [intégration à Microsoft Defender pour le cloud](../defender-endpoint/configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)
+**MacOS** | [Scripts locaux](../defender-endpoint/mac-install-manually.md), [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md), [Pro JAMF](../defender-endpoint/mac-install-with-jamf.md), [mobile Gestion des appareils](../defender-endpoint/mac-install-with-other-mdm.md)
+**Serveur Linux** | [Script local](../defender-endpoint/linux-install-manually.md),  [Puppet](../defender-endpoint/linux-install-with-puppet.md),  [Ansible](../defender-endpoint/linux-install-with-ansible.md)
+**iOS** | [Basé sur l’application](../defender-endpoint/ios-install.md)
 **Android** | [Microsoft Endpoint Manager](../defender-endpoint/android-intune.md)
 
 
 
 ## <a name="next-step"></a>Étape suivante
-[Configuration du pilote pour Microsoft Defender pour le point de terminaison](eval-defender-endpoint-pilot.md)
+[Configurer le pilote pour Microsoft Defender pour point de terminaison](eval-defender-endpoint-pilot.md)
  
-Revenir à la vue d’ensemble [de l’évaluation de Microsoft Defender pour le point de terminaison](eval-defender-endpoint-overview.md)
+Revenir à la vue d’ensemble [d’Évaluer Microsoft Defender pour point de terminaison](eval-defender-endpoint-overview.md)
 
-Revenir à la vue d’ensemble [de l’évaluation et de la Microsoft 365 Defender](eval-overview.md)
+Revenir à la vue d’ensemble de [Evaluate et pilot Microsoft 365 Defender](eval-overview.md)

@@ -1,7 +1,7 @@
 ---
 title: Exécuter l’analyse du client sur Windows
-description: Découvrez comment exécuter l’analyseur de client Microsoft Defender for Endpoint sur Windows.
-keywords: analyseur client, dépannage du capteur, analyseur, mdeanalyzer, windows
+description: Découvrez comment exécuter l’analyseur client Microsoft Defender pour point de terminaison sur Windows.
+keywords: analyseur client, capteur de dépannage, analyseur, mdeanalyzer, fenêtres
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5fa284f5c57214f356bb6b90e12ca60ae019d277
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 5ac27241297b9943f1559653777b8e1668fe7f89
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467134"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783026"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>Exécuter l’analyse du client sur Windows
 
@@ -32,7 +32,7 @@ ms.locfileid: "64467134"
 
 1. Téléchargez [l’outil MDE Client Analyzer](https://aka.ms/mdatpanalyzer) sur l’ordinateur Windows que vous devez examiner.
 
-2. Extrayez le contenu MDEClientAnalyzer.zip sur l’ordinateur.
+2. Extrayez le contenu de MDEClientAnalyzer.zip sur l’ordinateur.
 
 3. Ouvrez une invite de commandes avec élévation de privilèges :
     1. Accéder à **Démarrer** et taper **cmd**.
@@ -50,26 +50,26 @@ ms.locfileid: "64467134"
    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
    ```
 
-Outre les informations ci-dessus, il existe également une option pour collecter les journaux de prise en charge de l’analyseur [à l’aide de la réponse en direct](troubleshoot-collect-support-log.md).
+En plus de ce qui précède, il existe également une option permettant de [collecter les journaux de prise en charge de l’analyseur à l’aide de la réponse dynamique.](troubleshoot-collect-support-log.md)
 
 > [!NOTE]
-> Sur Windows 10/11, Windows Server 2019/2022 ou Windows Server 2012R2/2016 avec la [solution](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) unifiée moderne installée, le script de l’analyseur client appelle un fichier exécutable `MDEClientAnalyzer.exe` appelé pour exécuter les tests de connectivité aux URL de service cloud.
+> Le Windows 10/11, Windows Server 2019/2022 ou Windows Server 2012R2/2016 avec la [solution unifiée moderne](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) installée, le script de l’analyseur client appelle un fichier exécutable appelé `MDEClientAnalyzer.exe` pour exécuter les tests de connectivité aux URL de service cloud.
 >
-> Sur Windows 8.1, Windows Server 2016 ou toute édition précédente du système d’exploitation dans laquelle Microsoft Monitoring Agent (MMA) est utilisé pour l’intégration, le script de l’analyseur client appelle un fichier exécutable `MDEClientAnalyzerPreviousVersion.exe` appelé pour exécuter des tests de connectivité pour les URL de commande et de contrôle (CnC) tout en appelant Microsoft Monitoring Agent’outil de connectivité pour `TestCloudConnection.exe` les URL de canal de données cyber.
+> Sur Windows 8.1, Windows Server 2016 ou toute édition précédente du système d’exploitation où Microsoft Monitoring Agent (MMA) est utilisé pour l’intégration, le script de l’analyseur client appelle un fichier exécutable appelé `MDEClientAnalyzerPreviousVersion.exe` pour exécuter des tests de connectivité pour les URL de commande et de contrôle (CnC) tout en appelant Microsoft Monitoring Agent outil `TestCloudConnection.exe` de connectivité pour les URL du canal Cyber Data.
 
 
 Tous les scripts et modules PowerShell inclus dans l’analyseur sont signés par Microsoft.
-Si des fichiers ont été modifiés d’une manière ou d’une autre, l’analyseur est censé se quitter avec l’erreur suivante :
+Si des fichiers ont été modifiés d’une quelconque manière, l’analyseur est censé se fermer avec l’erreur suivante :
 
 :::image type="content" source="images/sigerror.png" alt-text="Erreur de l’analyseur client" lightbox="images/sigerror.png":::
 
 
-Si cette erreur s’affiche, la sortie issuerInfo.txt contient des informations détaillées sur la raison de cette erreur et sur le fichier concerné :
+Si cette erreur s’affiche, la sortie issuerInfo.txt contient des informations détaillées sur la raison de cette erreur et sur le fichier affecté :
 
 :::image type="content" source="images/issuerinfo.png" alt-text="Informations sur l’émetteur" lightbox="images/issuerinfo.png":::
 
 
-Exemple de contenu après MDEClientAnalyzer.ps1 modification :
+Exemples de contenu après la modification de MDEClientAnalyzer.ps1 :
 
 :::image type="content" source="images/modified-ps1.png" alt-text="Fichier ps1 modifié" lightbox="images/modified-ps1.png":::
 
@@ -82,14 +82,14 @@ Exemple de contenu après MDEClientAnalyzer.ps1 modification :
 >
 > - Version des fenêtres sur lesquelles l’analyseur est exécuté.
 > - Disponibilité du canal du journal des événements sur l’ordinateur.
-> - État de démarrage du capteur PEPT (l’Sense est arrêté si l’ordinateur n’est pas encore intégré).
+> - État de démarrage du capteur PEPT (Sense est arrêté si l’ordinateur n’est pas encore intégré).
 > - Si un paramètre de dépannage avancé a été utilisé avec la commande de l’analyseur.
 
 Par défaut, le fichier MDEClientAnalyzerResult.zip décompressé contient les éléments suivants.
 
 - MDEClientAnalyzer.htm
 
-  Il s’agit du fichier de sortie HTML principal, qui contient les résultats et les instructions que le script de l’analyseur peut produire sur l’ordinateur.
+  Il s’agit du fichier de sortie HTML principal, qui contiendra les résultats et les conseils que le script d’analyseur exécuté sur l’ordinateur peut produire.
 
 - Dossier SystemInfoLogs \[\]
   - AddRemovePrograms.csv
@@ -102,19 +102,19 @@ Par défaut, le fichier MDEClientAnalyzerResult.zip décompressé contient les �
 
     - CertValidate.log
 
-      Description : résultat détaillé de la révocation de certificats exécutée en appelant [CertUtil](/windows-server/administration/windows-commands/certutil).
+      Description : Résultat détaillé de la révocation de certificat exécutée en appelant [CertUtil](/windows-server/administration/windows-commands/certutil).
 
     - dsregcmd.txt
 
-      Description : sortie de l’exécution [de dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). Cela fournit des détails sur l Azure AD de l’ordinateur.
+      Description : Sortie de [l’exécution de dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). Cela fournit des détails sur l’état Azure AD de l’ordinateur.
 
     - IFEO.txt
 
-      Description : sortie des [options d’exécution de fichier image](/previous-versions/windows/desktop/xperf/image-file-execution-options) configurées sur l’ordinateur
+      Description : Sortie des [options d’exécution de fichier image](/previous-versions/windows/desktop/xperf/image-file-execution-options) configurées sur l’ordinateur
 
     - MDEClientAnalyzer.txt
 
-      Description : ce fichier texte détaillé s’affiche avec des détails sur l’exécution du script de l’analyseur.
+      Description : Il s’agit d’un fichier texte détaillé montrant les détails de l’exécution du script de l’analyseur.
 
     - MDEClientAnalyzer.xml
 
@@ -122,23 +122,23 @@ Par défaut, le fichier MDEClientAnalyzerResult.zip décompressé contient les �
 
     - RegOnboardedInfoCurrent.Json
 
-      Description : informations de l’ordinateur intégré rassemblées au format JSON à partir du Registre.
+      Description : Informations sur la machine intégrée collectées au format JSON à partir du Registre.
 
   - RegOnboardingInfoPolicy.Json
 
-    Description : configuration de la stratégie d’intégration rassemblée au format JSON à partir du Registre.
+    Description : Configuration de la stratégie d’intégration collectée au format JSON à partir du Registre.
 
     - SCHANNEL.txt
 
-      Description : détails sur la [configuration SCHANNEL](/windows-server/security/tls/manage-tls) appliquée à l’ordinateur tels que collectés à partir du Registre.
+      Description : Détails sur la [configuration SCHANNEL](/windows-server/security/tls/manage-tls) appliquée à l’ordinateur tel qu’il a été collecté à partir du Registre.
 
     - SessionManager.txt
 
-      Description : les paramètres spécifiques du Gestionnaire de session sont collecté à partir du Registre.
+      Description : Les paramètres spécifiques du Gestionnaire de session sont collectés à partir du Registre.
 
     - SSL_00010002.txt
 
-      Description : détails sur la [configuration SSL](/windows-server/security/tls/manage-tls) appliquée à l’ordinateur collecté à partir du Registre.
+      Description : Détails sur la [configuration SSL](/windows-server/security/tls/manage-tls) appliquée à l’ordinateur collecté à partir du Registre.
 
 - EventLogs [Dossier]
 
@@ -148,7 +148,7 @@ Par défaut, le fichier MDEClientAnalyzerResult.zip décompressé contient les �
 
   - senseIR.evtx
 
-    Description : exportation du journal des événements d’investigation automatisée
+    Description : Exportation du journal des événements d’investigation automatisée
 
   - sense.evtx
 
@@ -156,7 +156,7 @@ Par défaut, le fichier MDEClientAnalyzerResult.zip décompressé contient les �
 
   - OperationsManager.evtx
 
-    Description : exportation du journal des Microsoft Monitoring Agent’événements
+    Description : Exportation du journal des événements Microsoft Monitoring Agent
 
 
 

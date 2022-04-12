@@ -1,5 +1,5 @@
 ---
-title: 'Score de productivité Microsoft : Microsoft 365 des applications'
+title: Score de productivité Microsoft - intégrité des applications Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -18,105 +18,105 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: Détails de la Microsoft 365 Apps - la technologie permet d’obtenir un score de productivité.
-ms.openlocfilehash: 22bc1d503bc177722cb12d54c63adc3869755491
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Détails de l’intégrité Microsoft 365 Apps - les expériences technologiques Score de productivité.
+ms.openlocfilehash: 2e8e44c954d8d1d6bacca766bd528c3897b7686b
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321766"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782146"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Intégrité de Microsoft 365 Apps – expériences technologiques
 
-Le Score de productivité fournit des informations sur la transformation numérique de votre organisation tout au long de son utilisation des Microsoft 365 et des expériences technologiques qui la supportent. Le score de votre organisation reflète les mesures de l’expérience des personnes et des technologies et peut être comparé aux critères d’organisations similaires aux vôtres. La catégorie d’état des applications fait partie des mesures qui relèvent des expériences technologiques. Pour en savoir plus, consultez la vue [d’ensemble du Score de](productivity-score.md) productivité et lisez [la déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/privacystatement).
+Le score de productivité fournit des insights sur le parcours de transformation numérique de votre organisation par le biais de son utilisation de Microsoft 365 et des expériences technologiques qui le prennent en charge. Le score de votre organisation reflète les mesures des personnes et de l’expérience technologique et peut être comparé aux points de référence d’organisations similaires à la vôtre. La catégorie d’intégrité des applications fait partie des mesures qui relèvent des expériences technologiques. Pour en savoir plus, consultez la [vue d’ensemble du score de productivité](productivity-score.md) et lisez la [déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/privacystatement).
 
-## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>Importance du score d'&#39;'Microsoft 365 votre organisation
+## <a name="why-your-organizations-microsoft-365-apps-health-score-matters"></a>Pourquoi le score d’intégrité des applications Microsoft 365 de votre organisation est important
 
-La productivité de votre organisation dépend d’un environnement d’application sain. Les appareils exécutant les versions les plus récentes des applications Microsoft 365 sur le canal recommandé sont plus sécurisés et aident les membres de votre organisation à mettre à jour les fonctionnalités de Microsoft 365.
+La productivité de votre organisation dépend d’un environnement d’application sain. Les appareils exécutant la plupart des versions actuelles d’applications Microsoft 365 sur le canal recommandé sont plus sécurisés et aident les membres de votre organisation à tirer le meilleur parti des fonctionnalités de Microsoft 365.
 
-## <a name="how-we-calculate-the-microsoft-365-apps-health-score"></a>Calcul du score d’Microsoft 365 applications
+## <a name="how-we-calculate-the-microsoft-365-apps-health-score"></a>Comment calculer le score d’intégrité des applications Microsoft 365
 
-Nous calculons votre score d Microsoft 365 d’application en mesurant le nombre d’appareils sur chaque canal de mise à jour. Nous déterminons également si les appareils exécutent une version prise en charge et la version la plus récente Microsoft 365 applications.
+Nous calculons le score d’intégrité de vos applications Microsoft 365 en mesurant le nombre d’appareils sur chaque canal de mise à jour. Nous déterminons également si les appareils exécutent une version prise en charge et la version la plus récente des applications Microsoft 365.
 
-Nous fournissons un aperçu principal de l’expérience qui contient les mesures clés pour cette catégorie. Ensuite, une infrastructure de notation, détaillée dans les sections suivantes, est utilisée pour calculer votre score.
+Nous fournissons un aperçu principal de l’expérience qui contient les métriques clés pour cette catégorie. Ensuite, une infrastructure de scoring, détaillée dans les sections suivantes, est utilisée pour calculer votre score.
 
-### <a name="primary-insight"></a>Informations principales
+### <a name="primary-insight"></a>Insight principal
 
-Les informations principales sont calculées à partir des appareils qui exécutent Microsoft 365 Apps canal mis à jour recommandé.
+L’insight principal est calculé à partir d’appareils qui exécutent Microsoft 365 Apps sur le canal mis à jour recommandé.
 
-:::image type="content" source="../../media/appshealth-primary.png" alt-text="Visualisation principale à la vue pour Microsoft 365 applications.":::
+:::image type="content" source="../../media/appshealth-primary.png" alt-text="Visualisation principale en vue pour les applications Microsoft 365.":::
 
-Les informations à ce sujet incluent Microsoft 365 canal d’applications, build et version qui s’exécute sur l’appareil.
+Les informations prises en compte pour cela incluent Microsoft 365 canal d’applications, la build et la version qui s’exécute sur l’appareil.
 
-1. **En-tête :**  Affiche le pourcentage d’appareils sur le canal de mise à jour recommandé
-1. **Corps :**  Fournit plus d’informations sur l’exécution des appareils sur le canal de mise à jour recommandé pour obtenir la dernière mise à jour et l’exécution des versions actuelles sur les appareils.
+1. **En-tête:**  Affiche le pourcentage d’appareils sur le canal de mise à jour recommandé
+1. **Corps:**  Fournit plus d’informations sur la façon dont l’exécution des appareils sur le canal de mise à jour recommandé vous aidera à obtenir la dernière mise à jour et à exécuter les versions actuelles sur les appareils.
 1. **Visualisation (état actuel) :**
-    - Barres horizontales où les parties bleues représentent le pourcentage d’appareils exécutant le canal mis à jour recommandé.
-    - Mettez en surbrillez le (numérateur/dénominateur) de la fraction utilisée pour calculer le pourcentage exprimé en barres horizontales.
-    - La valeur de référence homologue pour les appareils s’exécutant sur le canal mis à jour recommandé est également affichée sous la mesure d’un pourcentage.
+    - Barres horizontales où les parties de couleur bleue représentent le pourcentage d’appareils exécutant le canal mis à jour recommandé.
+    - Mettez en surbrillance le (numérateur/dénominateur) de la fraction utilisée pour calculer le pourcentage exprimé en barres horizontales.
+    - La valeur d’évaluation d’homologue pour les appareils s’exécutant sur le canal mis à jour recommandé est également indiquée sous forme de pourcentage.
 
-#### <a name="trend-visualization-of-the-primary-insight"></a>Visualisation de la tendance de l’aperçu principal
+#### <a name="trend-visualization-of-the-primary-insight"></a>Visualisation des tendances de l’insight principal
 
-Le graphique suivant montre le nombre d’appareils dans le canal de mise à jour recommandé au cours des 180 derniers jours. Le point de données du graphique en lignes est un agrégat de l’activité des 28 derniers jours.
+Le graphique suivant montre le nombre d’appareils dans le canal de mise à jour recommandé au cours des 180 derniers jours. Le point de données sur le graphique en courbes est un agrégat d’activité pour les 28 derniers jours.
 
-:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="Graphique qui illustre la tendance des appareils exécutant le canal de mise à jour recommandé.":::
+:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="Graphique montrant la tendance pour les appareils exécutant le canal de mise à jour recommandé.":::
 
-### <a name="scoring-framework"></a>Infrastructure de notation
+### <a name="scoring-framework"></a>Framework de scoring
 
-Le score d Microsoft 365 d’application mesure si les appareils exécutent Microsoft 365 applications sur le canal recommandé et sur les versions les plus récentes.
+Le score d’intégrité des applications Microsoft 365 mesure si les appareils exécutent Microsoft 365 applications sur le canal recommandé et sur les dernières versions.
 
-## <a name="explore-your-organization-microsoft-365-app-channels-and-versions"></a>Explorer votre organisation pour Microsoft 365 canaux et versions d’application
+## <a name="explore-your-organization-microsoft-365-app-channels-and-versions"></a>Explorer votre organisation Microsoft 365 les canaux et versions d’application
 
-Nous fournissons également des informations de prise en charge qui vous permettent d’obtenir une visibilité supplémentaire sur les canaux et versions des appareils de votre organisation en cours d’exécution. Ces mesures supplémentaires ne contribuent pas à votre score de productivité, mais peuvent vous aider à créer un plan d’action pour augmenter le score d’état de vos applications Microsoft 365 en vous assurer que les appareils exécutent des applications Microsoft 365 sur les canaux recommandés.
+Nous fournissons également des informations de prise en charge qui vous aident à obtenir une visibilité supplémentaire sur les canaux et les versions des appareils de votre organisation en cours d’exécution. Ces métriques supplémentaires ne contribuent pas à votre score de productivité, mais peuvent vous aider à créer un plan d’action pour augmenter le score d’intégrité de vos applications Microsoft 365 en veillant à ce que les appareils s’exécutent Microsoft 365 applications sur les canaux recommandés.
 
-### <a name="devices-on-current-channel-and-running-supported-versions"></a>Appareils sur le canal actuel et l’exécution de versions pris en charge
+### <a name="devices-on-current-channel-and-running-supported-versions"></a>Appareils sur le canal actuel et exécutant des versions prises en charge
 
 :::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="Graphique montrant le nombre d’appareils dans le canal actuel pris en charge.":::
 
-1. **En-tête :**  Met en évidence le pourcentage d’appareils sur le canal actuel qui exécutent des versions de Microsoft 365 Apps
-1. **Corps :**  Fournit des informations sur la valeur des appareils exécutant Microsoft 365 applications sur le canal recommandé.
-1. **Visualisation :**  La répartition dans la visualisation représente le pourcentage d’appareils sur les versions les plus récentes et les versions Microsoft 365 prise en charge sur différents canaux), comme suit :
-    - **Versions pris en charge :** La barre bleue représente le pourcentage d’appareils en cours d’exécution sur la version prise en charge Microsoft 365 applications.
-    - **Dernières mises à jour :** La barre de couleurs sarcelles représente le pourcentage d’appareils sur les dernières mises à jour.
+1. **En-tête:**  Met en évidence le pourcentage d’appareils sur le canal actuel qui exécutent des versions prises en charge de Microsoft 365 Apps
+1. **Corps:**  Fournit des informations sur la valeur des appareils exécutant Microsoft 365 applications sur le canal recommandé.
+1. **Visualisation:**  La répartition de la visualisation représente le pourcentage d’appareils sur les versions les plus récentes et prises en charge des applications Microsoft 365 sur différents canaux, comme suit :
+    - **Versions prises en charge :** La barre bleue représente le pourcentage d’appareils s’exécutant sur la version prise en charge des applications Microsoft 365.
+    - **Dernières versions :** La barre de couleurs teal représente le pourcentage d’appareils sur les dernières versions.
 1. **Pour en savoir plus:**   Sélectionnez ce lien pour afficher le contenu de l’aide.
 
-### <a name="devices-running-latest-and-supported-versions"></a>Appareils exécutant les versions les plus récentes et les plus récentes
+### <a name="devices-running-latest-and-supported-versions"></a>Appareils exécutant les versions les plus récentes et prises en charge
 
-:::image type="content" source="../../media/device-supported-versions.png" alt-text="Graphique montrant le nombre d’appareils exécutant les versions les plus récentes et les plus récentes des applications.":::
+:::image type="content" source="../../media/device-supported-versions.png" alt-text="Graphique montrant le nombre d’appareils exécutant les versions les plus récentes et prises en charge des applications.":::
 
-1. **En-tête :**  Met en évidence le pourcentage d’appareils exécutant des versions et des appareils pris en charge exécutant les versions les plus récentes.
-1. **Corps :**  Fournit des informations sur la valeur d’exécution des appareils sur les canaux recommandés et sur les versions les plus récentes/pris en charge.
-1. **Visualisation :** La répartition dans la visualisation est destinée à représenter l’étendue du nombre d’appareils exécutant des versions prise en charge et des versions les plus récentes d’Microsoft 365 applications) :
-    - **Versions pris en charge :** La partie bleue (colorée) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage d’appareils exécutant la version prise en charge des applications Microsoft 365.
-        - Numérateur : nombre d’appareils sur les versions de Microsoft 365 applications au cours des 28 derniers jours
+1. **En-tête:**  Met en évidence le pourcentage d’appareils exécutant les versions prises en charge et les appareils exécutant les versions les plus récentes.
+1. **Corps:**  Fournit des informations sur la valeur des appareils en cours d’exécution sur les canaux recommandés et les versions prises en charge/les plus récentes.
+1. **Visualisation:** La répartition dans la visualisation est destinée à représenter la mesure dans laquelle le nombre d’appareils exécutant les versions prises en charge et les versions les plus récentes d’applications Microsoft 365) :
+    - **Versions prises en charge :** La partie bleue (colorée) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage d’appareils exécutant la version prise en charge de Microsoft 365 applications.
+        - Numerator : nombre d’appareils sur les versions prises en charge des applications Microsoft 365 au cours des 28 derniers jours
         - Dénominateur : nombre d’appareils utilisant Microsoft 365 applications au cours des 28 derniers jours
-    - **Versions les plus récentes :** La partie sarcelle (couleur) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage d’appareils exécutant des versions récentes d’Microsoft 365 applications.
-        - Numérateur : nombre d’appareils sur les versions récentes Microsoft 365 applications au cours des 28 derniers jours
+    - **Versions les plus récentes :** La partie teal (colorée) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage d’appareils exécutant des versions récentes d’applications Microsoft 365.
+        - Numerator : nombre d’appareils sur les versions récentes d’applications Microsoft 365 au cours des 28 derniers jours
         - Dénominateur : nombre d’appareils utilisant Microsoft 365 applications au cours des 28 derniers jours
 1. **Pour en savoir plus:**   Sélectionnez ce lien pour afficher le contenu de l’aide.
 
-#### <a name="trend-visualization-of-the-devices"></a>Visualisation de la tendance des appareils
+#### <a name="trend-visualization-of-the-devices"></a>Visualisation des tendances des appareils
 
-Ce graphique montre la courbe de tendance des appareils exécutant les versions prise en charge et les versions les plus récentes Microsoft 365 applications au cours des 180 derniers jours.
+Ce graphique montre la courbe de tendance des appareils exécutant les versions prises en charge et les dernières versions des applications Microsoft 365 au cours des 180 derniers jours.
 
-:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Graphique qui indique le nombre d’appareils exécutés avec le temps pris en charge et les versions les plus récentes des applications.":::
+:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Graphique qui indique le nombre d’appareils exécutés et les dernières versions prises en charge des applications au fil du temps.":::
 
 ## <a name="devices-in-your-organization"></a>Appareils de votre organisation
 
-Cette section vous aide à agir sur les mesures que vous souhaitez vous concentrer en fournissant des informations pertinentes à toutes les mesures pour l’état d’Microsoft 365 applications : expériences technologiques.
+Cette section vous aide à agir sur les métriques sur lesquelles vous souhaitez vous concentrer en fournissant des informations pertinentes à toutes les métriques pour Microsoft 365'intégrité des applications - les expériences technologiques.
 
-Les colonnes suivantes sont présentées dans le tableau au niveau canal/version :
+Les colonnes suivantes sont présentées dans le tableau au niveau du canal/de la version :
 
-- **Canal** : Canal actuel Microsoft 365 applications sur les appareils.
-- **État :**   Microsoft 365 d’applications de prise en charge de l’état des appareils en fonction du canal et de la version actuels.
-- **Versions :**   Versions Microsoft 365 applications actuelles sur les appareils.
-- **# des appareils :**  Nombre d’appareils.
+- **Canal** : canal d’applications Microsoft 365 actuel sur les appareils.
+- **État** : Microsoft 365 applications prennent en charge l’état des appareils en fonction du canal et de la version actuels.
+- **Versions** : versions actuelles des applications Microsoft 365 sur les appareils.
+- **Nombre d’appareils** : nombre d’appareils.
 
 ## <a name="related-content"></a>Contenu associé
 
-[Communication – Expériences des personnes](communication.md) (article)\
-[Collaboration de contenu : expériences de](content-collaboration.md) personnes (article)\
-[Réunions : expériences de personnes](meetings.md) (article)\
-[Mobilité : expériences de](mobility.md) personnes (article)\
-[Contrôles de confidentialité pour le Score de productivité](privacy.md) (article)\
-[Travail d’équipe : expériences de](teamwork.md) personnes (article)
+[Communication – Expériences de personnes](communication.md) (article)\
+[Collaboration de contenu – Expériences de personnes](content-collaboration.md) (article)\
+[Réunions – Expériences de personnes](meetings.md) (article)\
+[Mobilité – Expériences de personnes](mobility.md) (article)\
+[Contrôles de confidentialité pour le score de productivité](privacy.md) (article)\
+[Travail d’équipe – Expériences de personnes](teamwork.md) (article)

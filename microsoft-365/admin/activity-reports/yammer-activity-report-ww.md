@@ -1,5 +1,5 @@
 ---
-title: Centre d'administration Microsoft 365 Yammer d’activité de l’entreprise
+title: rapports d’activité Centre d'administration Microsoft 365 Yammer
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,44 +19,44 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Obtenez le Yammer d’activité et en savoir plus sur le nombre d’utilisateurs qui utilisent Yammer pour publier, aimer ou lire un message.
-ms.openlocfilehash: e5e865266d09d839777ed00feddf3682a24b6e7e
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+description: Obtenez le rapport d’activité Yammer et en savoir plus sur le nombre d’utilisateurs qui utilisent Yammer pour publier ou lire un message.
+ms.openlocfilehash: 3ab1f13ec9b7b86bb1a7d858b849f22e687ae8aa
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400432"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64781290"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Microsoft 365 rapports dans le Centre d’administration - Rapport Yammer activité de gestion
+# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>rapports Microsoft 365 dans le Centre d’administration - rapport d’activité Yammer
 
-En Microsoft 365, le tableau de bord Rapports vous présente les données sur l’utilisation des produits au sein de votre organisation. Consultez les [rapports d’activité dans le Centre d’administration](activity-reports.md). Le **rapport d'activité Yammer** vous permet de comprendre le niveau d'engagement de votre organisation avec Yammer en consultant le nombre d'utilisateurs utilisant Yammer pour publier, aimer ou lire un message, et le volume d'activité généré dans l'ensemble de l'organisation. 
+En tant qu’administrateur Microsoft 365, le tableau de bord Rapports affiche des données sur l’utilisation des produits au sein de votre organisation. Consultez [les rapports d’activité dans le Centre d’administration](activity-reports.md). Le **rapport d'activité Yammer** vous permet de comprendre le niveau d'engagement de votre organisation avec Yammer en consultant le nombre d'utilisateurs utilisant Yammer pour publier, aimer ou lire un message, et le volume d'activité généré dans l'ensemble de l'organisation. 
  
-## <a name="how-do-i-get-to-the-yammer-activity-report"></a>Comment puis-je obtenir le rapport Yammer’activité de l’entreprise ?
+## <a name="how-do-i-get-to-the-yammer-activity-report"></a>Comment faire accéder au rapport d’activité Yammer ?
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>. 
-2. Dans la page d’accueil du tableau de bord, cliquez **sur le bouton** Afficher plus sur la Yammer tableau de bord.
+2. Dans la page d’accueil du tableau de bord, cliquez sur le bouton **Afficher plus** sur la carte Yammer.
 
   
 ## <a name="interpret-the-yammer-activity-report"></a>Interpréter le rapport d'activité Yammer
 
-Vous pouvez afficher les activités dans le rapport Yammer en choisissant **l’onglet** Activité.<br/>![Microsoft 365- Rapport d’activité Yammer Microsoft.](../../media/9b251183-c2b3-430c-ab2d-58bf11e7e3ae.png)
+Vous pouvez afficher les activités dans le rapport Yammer en choisissant l’onglet **Activité**.<br/>![rapports Microsoft 365 - Rapport d’activité Microsoft Yammer.](../../media/9b251183-c2b3-430c-ab2d-58bf11e7e3ae.png)
 
-**Sélectionnez Sélectionner des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Yammer d’activité : choisissez des colonnes.](../../media/7ef6351d-f7e9-4504-913d-2c2df9062bf6.png)
+**Sélectionnez Choisir des colonnes** pour ajouter ou supprimer des colonnes du rapport.  <br/> ![Yammer rapport d’activité : choisissez des colonnes.](../../media/7ef6351d-f7e9-4504-913d-2c2df9062bf6.png)
 
-Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant le lien **Exporter**. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un fichier Excel .csv en sélectionnant le lien **Exporter**. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
 
-Le **Yammer d’activité** de l’entreprise peut être pris en compte pour les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date du jour (et non la date à laquelle le rapport a été généré).
+Le **rapport d’activité Yammer** peut être consulté pour les tendances des 7 derniers jours, 30 jours, 90 ou 180 jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
   
 |Item|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
-|Nom d’utilisateur  <br/> |Adresse e-mail de l’utilisateur. Vous pouvez afficher l'adresse de courrier réelle ou rendre ce champ anonyme. Cette grille affiche les utilisateurs qui se sont connectés Yammer à l’aide du compte Microsoft 365 ou qui se sont connectés au réseau à l’aide de l’sign-on unique. <br/> |
-|Nom d’affichage  <br/> |Nom complet de l’utilisateur. Vous pouvez afficher l'adresse de courrier réelle ou rendre ce champ anonyme.  <br/> |
-|État de l’utilisateur  <br/> |L’une des trois valeurs : Activé, Supprimé ou Suspendu. Ces rapports affichent des données pour les utilisateurs actifs, suspendus et supprimés. Ils ne reflètent pas les utilisateurs en attente, car ceux-ci ne peuvent pas publier, lire ou aimer un message.  <br/> |
-|Date de changement d’état (UTC)  <br/> |Date à laquelle l’état de l’utilisateur a été modifié Yammer.  <br/> |
-|Date de la dernière activité (UTC)  <br/> | Date de la dernière fois que l’utilisateur a publié, lu ou aimé un message.  <br/> |
+|Nom d’utilisateur  <br/> |Adresse e-mail de l’utilisateur. Vous pouvez afficher l'adresse de courrier réelle ou rendre ce champ anonyme. Cette grille affiche les utilisateurs qui se sont connectés à Yammer à l’aide du compte Microsoft 365 ou qui se sont connectés au réseau à l’aide de l’authentification unique. <br/> |
+|Nom  <br/> |Nom complet de l’utilisateur. Vous pouvez afficher l'adresse de courrier réelle ou rendre ce champ anonyme.  <br/> |
+|État de l’utilisateur  <br/> |L’une des trois valeurs suivantes : Activée, Supprimée ou Suspendue. Ces rapports affichent des données pour les utilisateurs actifs, suspendus et supprimés. Ils ne reflètent pas les utilisateurs en attente, car ceux-ci ne peuvent pas publier, lire ou aimer un message.  <br/> |
+|Date de modification de l’état (UTC)  <br/> |Date à laquelle l’état de l’utilisateur a été modifié dans Yammer.  <br/> |
+|Date de la dernière activité (UTC)  <br/> | Dernière date à laquelle l’utilisateur a publié, lu ou aimé un message.  <br/> |
 |Publié  <br/> |Nombre de messages publiés par l’utilisateur pendant la période que vous avez spécifiée. <br/>|
-|Lire  <br/> |Nombre de conversations lues par l’utilisateur pendant la période que vous avez spécifiée.  <br/> |
+|Lecture  <br/> |Nombre de conversations lues par l’utilisateur pendant la période que vous avez spécifiée.  <br/> |
 |Aimé  <br/> |Nombre de messages que l’utilisateur a aimés pendant la période que vous avez spécifiée.  <br/>|
 |Produit affecté  <br/> |Produits affectés à cet utilisateur.|
 |||

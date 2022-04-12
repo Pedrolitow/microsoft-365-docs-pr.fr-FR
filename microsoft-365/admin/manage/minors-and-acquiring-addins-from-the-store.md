@@ -1,5 +1,5 @@
 ---
-title: Mineurs et acquisition de modules dans le Store
+title: Mineurs et acquisition de compléments à partir du Store
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,59 +19,59 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
-description: Découvrez les réglementations du Règlement général sur la protection des données (R GDPR) qui régissent les données personnelles des mineurs.
-ms.openlocfilehash: 84a1ecc9eb5d29ae1c2e4597b8299430cc3de038
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez les réglementations du Règlement général sur la protection des données (RGPD) qui régissent les données personnelles des mineurs.
+ms.openlocfilehash: 15b35798ba03132b35285dc16ce57b139e4d7222
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173066"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782366"
 ---
-# <a name="minors-and-acquiring-add-ins-from-the-store"></a>Mineurs et acquisition de modules dans le Store
+# <a name="minors-and-acquiring-add-ins-from-the-store"></a>Mineurs et acquisition de compléments à partir du Store
 
-Le Règlement général sur la protection des données (R GDPR) est une réglementation de l’Union européenne qui entre en vigueur le 25 mai 2018. Il accorde aux utilisateurs des droits et une protection de leurs données. L’un des aspects du R GDPR est que les mineurs ne peuvent pas avoir leurs données personnelles envoyées aux parties que leur parent ou leur guardian n’a pas approuvées. L’âge spécifique défini comme mineur dépend de la région où se trouve la personne.
-  
-Les régions qui ont des réglementations légales sur le consentement parental sont les États-Unis, la Corée du Sud, le Royaume-Uni et l’Union européenne. Pour ces régions, une mineure sera bloquée (via Azure Active Directory) pour obtenir de nouveaux Office à partir du Store et l’exécution de ceux qui ont été acquis précédemment. Pour les pays sans réglementation statutaire, il n’y aura aucune restriction de téléchargement.
-  
-Un utilisateur est déterminé comme mineur en fonction des données spécifiées dans Azure Active Directory. L’administrateur de l’organisation est responsable de la déclaration du groupe d’âge légal et du consentement parental pour cet utilisateur.
-  
-Si le parent/guardian consent à un mineur à l’aide d’un add-In spécifique, l’administrateur de l’organisation peut utiliser le déploiement centralisé pour déployer ce module sur tous les mineurs qui ont le consentement.
-  
-Pour être conforme au R GDPR pour les mineurs, vous devez vous assurer que l’une des builds de Office suivantes est déployée dans votre établissement scolaire/organisation.
- 
- **Pour Word, Excel, PowerPoint et Project**: 
+Le Règlement général sur la protection des données (RGPD) est un règlement de l’Union européenne qui entre en vigueur le 25 mai 2018. Il donne aux utilisateurs des droits et une protection de leurs données. L’un des aspects du RGPD est que les mineurs ne peuvent pas recevoir leurs données personnelles aux parties que leur parent ou tuteur n’a pas approuvées. L’âge spécifique défini comme mineur dépend de la région où se trouve la personne.
 
-|**Plateforme** <br/> |**Numéro de build** <br/> |
-|:-----|:-----|
-|Applications Microsoft 365 pour les grandes entreprises (Canal actuel)  <br/> |9001.2138   <br/> |
-|Applications Microsoft 365 pour les grandes entreprises (Canal semi-annuel Enterprise))  <br/> |8431.2159  <br/> |
-|Office 2016 pour Windows  <br/> |16.0.4672.1000  <br/> |
-|Office 2013 pour Windows  <br/> |15.0.5023.1000  <br/> |
-|Office 2016 pour Mac  <br/> |16.11.18020200  <br/> |
-|Office pour le web  <br/> |S/O  <br/> |
-   
- **Pour Outlook**: 
-  
-|**Plateforme** <br/> |**Numéro de build** <br/> |
-|:-----|:-----|
-|Outlook 2016 for Windows (MSI)  <br/> |Build No TBD  <br/> |
-|Outlook 2016 for Windows (C2R)  <br/> |16.0.9323.1000  <br/> |
-|Office 2016 pour Mac  <br/> |16.0.9318.1000  <br/> |
-|Outlook mobile pour iOS  <br/> |2.75.0  <br/> |
-|Outlook mobile pour Android  <br/> |2.2.145  <br/> |
-|Outlook.com  <br/> |S/O  <br/> |
+Les régions qui ont des réglementations légales sur le consentement parental incluent les États-Unis, la Corée du Sud, le Royaume-Uni et l’Union européenne. Pour ces régions, un mineur est empêché (via Azure Active Directory) d’obtenir de nouveaux compléments Office à partir du Store et d’exécuter des compléments précédemment acquis. Pour les pays sans réglementation légale, il n’y aura aucune restriction de téléchargement.
 
- **Office 2013**
-  
-Word, Excel et PowerPoint 2013 pour Windows 2013 ront les mêmes contrôles de mineurs si la bibliothèque d’authentification Active Directory (ADAL) est activée. Il existe deux options de conformité, comme expliqué ci-après.
-  
-- **Activer ADAL**. Cet article explique comment activer ADAL pour Office 2013 : utilisation de l’authentification moderne Microsoft 365 avec Office [clients.](../../enterprise/modern-auth-for-office-2013-and-2016.md)<br/>Vous devez également définir les clés de Registre pour activer ADAL, comme expliqué dans Activer l’authentification moderne [pour Office 2013](../security-and-compliance/enable-modern-authentication.md)sur Windows appareils.<br/>En outre, vous devez installer les mises à jour d’avril suivantes pour Office 2013 :
-    
-  - [Description de la mise à jour de sécurité Office 2013 : 10 avril 2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
-    
-  - [3 avril 2018, mise à jour Office 2013 (KB4018333)](https://support.microsoft.com/help/4018333/april-3-2018-update-for-office-2013-kb4018333)
-    
-- **N’activez pas ADAL**. Si vous ne parvenez pas à activer ADAL dans Office 2013, il est recommandé d’utiliser la stratégie de groupe pour désactiver le Store pour les clients Office client. Des informations sur la façon de désactiver l’application pour Office paramètres sont disponibles [ici.](/previous-versions/office/office-2013-resource-kit/cc178992(v=office.15))
+Un utilisateur est déterminé comme étant mineur en fonction des données spécifiées dans Azure Active Directory. L’administrateur de l’organisation est responsable de la déclaration du groupe d’âge légal et du consentement parental pour cet utilisateur.
+
+Si le parent/tuteur consent à un mineur à l’aide d’un complément spécifique, l’administrateur de l’organisation peut utiliser le déploiement centralisé pour déployer ce complément sur tous les mineurs qui ont le consentement.
+
+Pour être conforme au RGPD pour les mineurs, vous devez vous assurer que l’une des builds suivantes de Office est déployée dans votre établissement scolaire/organisation.
+
+ **Pour Word, Excel, PowerPoint et Project** :
+
+|Plateforme|Numéro de build|
+|---|---|
+|Applications Microsoft 365 pour les grandes entreprises (canal actuel)|9001.2138|
+|Applications Microsoft 365 pour les grandes entreprises (canal de Enterprise semi-annuel)|8431.2159|
+|Office 2016 pour Windows|16.0.4672.1000|
+|Office 2013 pour Windows|15.0.5023.1000|
+|Office 2016 pour Mac|16.11.18020200|
+|Office pour le web|S/O|
+
+ **Pour Outlook** :
+
+|Plateforme|Numéro de build|
+|---|---|
+|Outlook 2016 pour Windows (MSI)|Build No TBD|
+|Outlook 2016 pour Windows (C2R)|16.0.9323.1000|
+|Office 2016 pour Mac|16.0.9318.1000|
+|Outlook mobile pour iOS|2.75.0|
+|Outlook mobile pour Android|2.2.145|
+|Outlook.com|S/O|
+
+ **exigences Office 2013**
+
+Word, Excel et PowerPoint 2013 pour Windows prendront en charge les mêmes vérifications mineures si la bibliothèque d’authentification Active Directory (ADAL) est activée. Il existe deux options de conformité, comme expliqué ci-après.
+
+- **Activez ADAL**. Cet article explique comment activer la bibliothèque ADAL pour Office 2013 : [Utilisation de Microsoft 365 l’authentification moderne avec Office clients](../../enterprise/modern-auth-for-office-2013-and-2016.md).<br/>Vous devez également définir les clés de Registre pour activer la bibliothèque ADAL, comme expliqué dans [Activer l’authentification moderne pour Office 2013 sur Windows appareils](../security-and-compliance/enable-modern-authentication.md).<br/>En outre, vous devez installer les mises à jour d’avril suivantes pour Office 2013 :
+
+  - [Description de la mise à jour de sécurité pour Office 2013 : 10 avril 2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
+
+  - [Mise à jour du 3 avril 2018 pour Office 2013 (KB4018333)](https://support.microsoft.com/help/4018333/april-3-2018-update-for-office-2013-kb4018333)
+
+- **N’activez pas ADAL**. Si vous ne parvenez pas à activer la bibliothèque ADAL dans Office 2013, nous vous recommandons d’utiliser stratégie de groupe pour désactiver le Windows Store pour les clients Office. Vous trouverez [ici](/previous-versions/office/office-2013-resource-kit/cc178992(v=office.15)) des informations sur la façon de désactiver l’application pour Office paramètres.
 
 ## <a name="related-articles"></a>Articles connexes
 

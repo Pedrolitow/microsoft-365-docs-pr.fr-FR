@@ -1,5 +1,5 @@
 ---
-title: Connecter vos enregistrements DNS sur IONOS par 1&1 à Microsoft 365
+title: Connecter vos enregistrements DNS sur IONOS de 1&1 à Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -21,329 +21,337 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
-description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services au niveau 1&1 IONOS pour Microsoft.
-ms.openlocfilehash: 54e18972fe2d5e2ccd8c3ab266b20241e67f68a9
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Découvrez comment vérifier votre domaine et configurer des enregistrements DNS pour les e-mails, Skype Entreprise Online et d’autres services à l’adresse 1&1 IONOS pour Microsoft.
+ms.openlocfilehash: 8afdfed0998a262b1df4c95a63e9086e4f71e5b6
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313606"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64780674"
 ---
-# <a name="connect-your-dns-records-at-ionos-by-11-to-microsoft-365"></a>Connecter vos enregistrements DNS sur IONOS par 1&1 à Microsoft 365
+# <a name="connect-your-dns-records-at-ionos-by-11-to-microsoft-365"></a>Connecter vos enregistrements DNS sur IONOS de 1&1 à Microsoft 365
 
- **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
+ **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez.
 
-Si IONOS par 1&1 est votre fournisseur d’hébergement DNS, suivez les étapes de cet article pour vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online, etc.
+Si IONOS par 1&1 est votre fournisseur d’hébergement DNS, suivez les étapes décrites dans cet article pour vérifier votre domaine et configurer des enregistrements DNS pour le courrier électronique, Skype Entreprise Online, et ainsi de suite.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous avez deux options pour la configuration des enregistrements DNS pour votre domaine :
+Vous avez deux options pour configurer des enregistrements DNS pour votre domaine :
 
-- [**Utiliser Domain Connect**](#use-domain-connect-to-verify-and-set-up-your-domain) Si vous n’avez pas encore installé votre domaine auprès d’un autre fournisseur de services de messagerie, utilisez les étapes De connexion au domaine pour vérifier et configurer automatiquement votre nouveau domaine à utiliser avec Microsoft 365. 
+- [**Utilisez domain Connecter**](#use-domain-connect-to-verify-and-set-up-your-domain) Si vous n’avez pas configuré votre domaine avec un autre fournisseur de services de messagerie, utilisez les étapes Connecter domaine pour vérifier et configurer automatiquement votre nouveau domaine à utiliser avec Microsoft 365.
 
     OR
 
-- [**Utiliser les étapes manuelles**](#create-dns-records-with-manual-setup) Vérifiez votre domaine en suivant les étapes manuelles ci-dessous et choisissez quand et quels enregistrements ajouter à votre bureau d’enregistrement de domaines. Cela vous permet de configurer de nouveaux enregistrements MX (courrier), par exemple, à votre convenance. 
+- [**Utiliser les étapes manuelles**](#create-dns-records-with-manual-setup) Vérifiez votre domaine en suivant les étapes manuelles ci-dessous et choisissez quand et quels enregistrements ajouter à votre bureau d’enregistrement de domaines. Cela vous permet de configurer de nouveaux enregistrements MX (courrier), par exemple, à votre convenance.
 
-## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>Utiliser Domain Connect pour vérifier et configurer votre domaine
+## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>Utiliser domain Connecter pour vérifier et configurer votre domaine
 
-Suivez ces étapes pour vérifier et configurer automatiquement votre IONOS par 1 domaine&1 avec Microsoft 365 :
+Procédez comme suit pour vérifier et configurer automatiquement votre domaine IONOS par 1&1 avec Microsoft 365 :
 
-1. Dans le Centre d’administration Microsoft 365, sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**ParamètresDomains**</a> >  et sélectionnez le domaine que vous souhaitez configurer.
+1. Dans le Centre d'administration Microsoft 365, sélectionnez **Paramètres** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>, puis sélectionnez le domaine que vous souhaitez configurer.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-1.png" alt-text="Sélectionnez votre domaine dans Microsoft 365.":::
 
-1. Sélectionnez les trois points (plus d’actions) > configurer **l’installation**.
+1. Sélectionnez les trois points (autres actions) > **choisissez Démarrer l’installation**.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Sélectionnez Démarrer l’installation.":::
 
-1. Comment voulez-vous connecter votre domaine ? page, sélectionnez **Continuer**.   
+1. Sur la page Comment voulez-vous connecter votre domaine ? page, **sélectionnez Continuer**.
 
 1. Dans la page Ajouter des enregistrements DNS, **sélectionnez Ajouter des enregistrements DNS**.
 
-1. Sur la page de connexion IONOS par 1&1, connectez-vous à votre compte, puis sélectionnez **Se** connecter et **autoriser**.
+1. Sur la page de connexion IONOS par 1&1, connectez-vous à votre compte, sélectionnez **Connecter** et **Autoriser**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-3.png" alt-text="Sélectionnez Se connecter, puis Autoriser.":::
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-3.png" alt-text="Sélectionnez Connecter, puis Autoriser.":::
 
-    Cela termine la configuration de votre domaine pour Microsoft 365. 
+    Cela termine la configuration de votre domaine pour Microsoft 365.
 
 ## <a name="create-dns-records-with-manual-setup"></a>Créer des enregistrements DNS avec une configuration manuelle
 
-Une fois ces enregistrements ajoutés sur IONOS par 1&1, votre domaine est installé pour fonctionner avec les services Microsoft.
-  
+Une fois ces enregistrements ajoutés à IONOS par 1&1, votre domaine est configuré pour fonctionner avec services Microsoft.
+
 > [!CAUTION]
-> Notez que la fonction IONOS par 1&1 n’autorise pas un domaine à avoir à la fois un enregistrement MX et un enregistrement CNAME de découverte automatique de niveau supérieur. Cela limite les méthodes qui s'offrent à vous pour configurer Exchange Online pour Microsoft. Il existe une solution de contournement, mais nous vous recommandons de  l’utiliser uniquement si vous avez déjà de l’expérience dans la création de sous-domaine auprès d’IONOS par 1&1.
-> Si, malgré cette [limitation de service](../setup/domains-faq.yml) , vous choisissez de gérer vos propres enregistrements DNS Microsoft sur IONOS d’ici 1&1, suivez les étapes de cet article pour vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online, etc.
-  
+> Notez qu’IONOS de 1&1 n’autorise pas un domaine à avoir à la fois un enregistrement MX et un enregistrement CNAME de découverte automatique de niveau supérieur. Cela limite les méthodes qui s'offrent à vous pour configurer Exchange Online pour Microsoft. Il existe une solution de contournement, mais nous vous recommandons de l’utiliser **uniquement** si vous avez déjà de l’expérience dans la création de sous-domaines à IONOS par 1&1.
+> Si, malgré cette [limitation de service](../setup/domains-faq.yml), vous choisissez de gérer vos propres enregistrements DNS Microsoft sur IONOS par 1&1, suivez les étapes décrites dans cet article pour vérifier votre domaine et configurer des enregistrements DNS pour le courrier électronique, Skype Entreprise Online, et ainsi de suite.
+
 > [!NOTE]
 > Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d’autres problèmes suite à l’ajout des enregistrements DNS, consultez la page [Rechercher et corriger les problèmes suite à l’ajout de votre domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
-  
+
 ### <a name="add-a-txt-record-for-verification"></a>Ajouter un enregistrement TXT à des fins de vérification
 
 Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons vérifier qu’il vous appartient. Votre capacité à vous connecter à votre compte auprès de votre bureau d’enregistrement de domaines et à créer l’enregistrement DNS prouve à Microsoft que le domaine vous appartient.
-  
+
 > [!NOTE]
 > Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. Vous pouvez éventuellement le supprimer ultérieurement.
-  
-1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). Vous serez invité à vous connecter.
 
-1. **Sélectionnez Menu**, puis **Domaines et SSL**.
-  
+1. Pour commencer, accédez à la page de vos domaines sur IONOS par 1&1 à l’aide de [ce lien](https://my.1and1.com/). Vous serez invité à vous connecter.
+
+1. Sélectionnez **Menu**, puis **Domaines et SSL**.
+
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Sélectionnez Domaines et SSL.":::
-  
-1. Sous **Actions** pour le domaine que vous souhaitez mettre à jour, sélectionnez le contrôle d’engrenage, puis **sélectionnez DNS**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Sélectionnez DNS dans la liste liste liste.":::
+1. Sous **Actions** pour le domaine que vous souhaitez mettre à jour, sélectionnez le contrôle d’engrenage, puis sélectionnez **DNS**.
 
-1. **Sélectionnez Ajouter un enregistrement**.
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Sélectionnez DNS dans la liste déroulante.":::
+
+1. Sélectionnez **Ajouter un enregistrement**.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Sélectionnez Ajouter un enregistrement.":::
 
-1. Sélectionnez **la section TXT** .
+1. Sélectionnez la section **TXT** .
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-4.png" alt-text="Sélectionnez la section TXT.":::
 
-1. Dans la page Ajouter un enregistrement DNS, dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant.
+1. Dans la page Ajouter un enregistrement DNS, dans les zones du nouvel enregistrement, tapez ou copiez et collez les valeurs du tableau suivant.
 
-    |**Nom de l’hôte** <br/> |**Valeur** <br/> | **TTL**
-    |:-----|:-----|:-----|
-    |(Laissez ce champ vide)  <br/> |MS=ms *XXXXXXXX*  <br/> REMARQUE : il s’agit d’un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          | 1 heure |
+    |Nom d’hôte|Valeur|Durée de vie|
+    |---|---|---|
+    |(Laissez ce champ vide)|MS=ms *XXXXXXXX*  <br/> REMARQUE : Il s’agit d’un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|1 heure|
 
 1. Sélectionnez **Enregistrer**.
-  
+
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-5.png" alt-text="Sélectionnez Enregistrer.":::
-  
+
     Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
 
 L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez à Microsoft 365 et demandez à Microsoft 365 de rechercher l’enregistrement. Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est vérifié.
 
 Pour vérifier l’enregistrement dans Microsoft 365 :
-  
-1. Dans le Centre d’administration, allez dans les **domaines paramètres**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
-1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer l’installation**.
+1. Dans le Centre d’administration, accédez au **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domaines**</a>.
+
+1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis **sélectionnez Démarrer l’installation**.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Sélectionnez Démarrer l’installation.":::
 
 1. Cliquez sur **Continuer**.
-  
+
 1. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
 
 > [!NOTE]
 > L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
-  
+
 ### <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient transférés vers Microsoft
-  
+
 > [!NOTE]
-> Si vous vous êtes inscrit auprès 1und1.de, [connectez-vous ici](https://go.microsoft.com/fwlink/?linkid=859152). 
+> Si vous vous êtes inscrit auprès de 1und1.de, [connectez-vous ici](https://go.microsoft.com/fwlink/?linkid=859152).
 
-1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). Vous serez invité à vous connecter.
+1. Pour commencer, accédez à la page de vos domaines sur IONOS par 1&1 à l’aide de [ce lien](https://my.1and1.com/). Vous serez invité à vous connecter.
 
-1. **Sélectionnez Menu**, puis **Domaines et SSL**.
-  
+1. Sélectionnez **Menu**, puis **Domaines et SSL**.
+
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Sélectionnez Domaines et SSL.":::
-  
-1. Sous **Actions** pour le domaine que vous souhaitez mettre à jour, sélectionnez le contrôle d’engrenage, puis **sélectionnez DNS**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Sélectionnez DNS dans la liste liste liste.":::
+1. Sous **Actions** pour le domaine que vous souhaitez mettre à jour, sélectionnez le contrôle d’engrenage, puis sélectionnez **DNS**.
 
-1. **Sélectionnez Ajouter un enregistrement**.
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Sélectionnez DNS dans la liste déroulante.":::
+
+1. Sélectionnez **Ajouter un enregistrement**.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Sélectionnez Ajouter un enregistrement.":::
 
-1. Sélectionnez **la section MX** .
+1. Sélectionnez la section **MX** .
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-MX.png" alt-text="Sélectionnez la section MX.":::
-  
-1. Dans la page Ajouter un enregistrement DNS, dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant.
 
-    | **Nom de l’hôte**| **Points to (Pointe vers)** |**Priorité**| **TTL** |
-    |:-----|:-----|:-----| :-----|
-    |  @  | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  REMARQUE : obtenez le vôtre \<domain-key\> à partir de votre compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.yml). | 1 heure |
-  
+1. Dans la page Ajouter un enregistrement DNS, dans les zones du nouvel enregistrement, tapez ou copiez et collez les valeurs du tableau suivant.
+
+    |Nom d’hôte|Points to |Priority (Priorité)|TTL (Durée de vie)|
+    |---|---|---|---|
+    |@|*\<domain-key\>*.mail.protection.outlook.com  <br/>  REMARQUE : Obtenez votre \<domain-key\> fichier à partir de votre compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|10  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.yml).|1 heure|
+
 1. Sélectionnez **Enregistrer**.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-MX-Save.png" alt-text="Sélectionnez Enregistrer.":::
 
-1. Si des enregistrements MX sont déjà répertoriés, supprimez chacun d’eux en sélectionnant  la corbeille Supprimer l’enregistrement dans la page **Ajouter un** enregistrement.
+1. S’il existe des enregistrements MX déjà répertoriés, supprimez chacun d’eux en sélectionnant la corbeille **Supprimer l’enregistrement** dans la page **Ajouter un enregistrement** .
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-Delete.png" alt-text="Sélectionnez Supprimer l’enregistrement.":::
 
 ### <a name="add-the-cname-record-required-for-microsoft"></a>Ajouter l’enregistrement CNAME requis pour Microsoft
 
 > [!NOTE]
-> Si vous vous êtes inscrit auprès 1und1.de, [connectez-vous ici](https://go.microsoft.com/fwlink/?linkid=859152). 
-  
-1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). Vous serez invité à vous connecter.
+> Si vous vous êtes inscrit auprès de 1und1.de, [connectez-vous ici](https://go.microsoft.com/fwlink/?linkid=859152).
 
-1. **Sélectionnez Menu**, puis **Domaines et SSL**.
-  
+1. Pour commencer, accédez à la page de vos domaines sur IONOS par 1&1 à l’aide de [ce lien](https://my.1and1.com/). Vous serez invité à vous connecter.
+
+1. Sélectionnez **Menu**, puis **Domaines et SSL**.
+
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Sélectionnez Domaines et SSL.":::
-  
-1. Sous **Actions** pour le domaine que vous souhaitez mettre à jour, sélectionnez le contrôle d’engrenage, puis **sélectionnez DNS**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Sélectionnez DNS dans la liste liste liste.":::
+1. Sous **Actions** pour le domaine que vous souhaitez mettre à jour, sélectionnez le contrôle d’engrenage, puis sélectionnez **DNS**.
 
-    Vous allez maintenant créer deux sous-domaines et définir une valeur **Alias (Alias)** pour chaque sous-domaine.<br/>(Ceci est obligatoire car 1&1 IONOS prend en charge un seul enregistrement CNAME de niveau supérieur, mais Microsoft requiert plusieurs enregistrements CNAME.)<br/>Tout d'abord, vous devez créer le sous-domaine de découverte automatique.
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Sélectionnez DNS dans la liste déroulante.":::
 
-1. **Sélectionnez Sous-domaine**.
-  
+   Vous allez maintenant créer deux sous-domaines et définir une valeur **Alias (Alias)** pour chaque sous-domaine.
+
+   (Cela est nécessaire, car 1&1 IONOS ne prend en charge qu’un seul enregistrement CNAME de niveau supérieur, mais Microsoft requiert plusieurs enregistrements CNAME.)
+
+   Tout d'abord, vous devez créer le sous-domaine de découverte automatique.
+
+1. Sélectionnez **Sous-domaines**.
+
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-Subdomains.png" alt-text="Sélectionnez Sous-domaine.":::
-  
-1. **Sélectionnez Ajouter un sous-domaine**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-add-subdomains.png" alt-text="Sélectionnez Ajouter des sous-domaine.":::
-  
-1. Dans la **zone Ajouter un sous-domaine** pour le nouveau sous-domaine, tapez ou copiez-collez uniquement la valeur Ajouter un sous-domaine du tableau suivant. (Vous ajouterez la valeur **Alias (Alias)** au cours d'une étape ultérieure.)
+1. Sélectionnez **Ajouter un sous-domaine**.
 
-    |**Ajouter un sous-domaine**| **Alias** |
-    |:-----|:-----|
-    |autodiscover  <br/> | autodiscover.outlook.com |
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-add-subdomains.png" alt-text="Sélectionnez Ajouter des sous-domaines.":::
 
-1. Sous **Actions** pour le **sous-domaine** de découverte automatique que vous avez créé, sélectionnez le contrôle d’engrenage, puis **sélectionnez DNS** dans la liste de listes. <br/>
+1. Dans la zone **Ajouter un sous-domaine** pour le nouveau sous-domaine, tapez ou copiez et collez uniquement la valeur **Ajouter un sous-domaine** du tableau suivant. (Vous ajouterez la valeur **Alias (Alias)** au cours d'une étape ultérieure.)
 
-1. **Sélectionnez Ajouter un enregistrement**, puis sélectionnez la section **CNAME**.
+    |Ajouter un sous-domaine|Alias|
+    |---|---|
+    |autodiscover|autodiscover.outlook.com|
 
-1. Dans la zone **Alias :**, tapez ou copiez-collez uniquement la valeur **Alias** du tableau suivant. <br/>
+1. Sous **Actions** pour le sous-domaine de **découverte automatique** que vous venez de créer, sélectionnez le contrôle d’engrenage, puis sélectionnez **DNS** dans la liste déroulante.
 
-    |**Ajouter un sous-domaine**| **Alias** |
-    |:-----|:-----|
-    |autodiscover  <br/> | autodiscover.outlook.com |
-  
+1. Sélectionnez **Ajouter un enregistrement**, puis sélectionnez la section **CNAME** .
+
+1. Dans la zone **Alias :**, tapez ou copiez-collez uniquement la valeur **Alias** du tableau suivant.
+
+    |Ajouter un sous-domaine|Alias|
+    |---|---|
+    |autodiscover|autodiscover.outlook.com|
+
 1. Sélectionnez **Enregistrer**.
 
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel de manière à n’avoir *qu’un seul* enregistrement SPF incluant les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [Enregistrements DNS externes pour Microsoft](../../enterprise/external-domain-name-system-records.md). Pour valider votre enregistrement SPF, vous pouvez utiliser l’un de ces [outils de validation.](../setup/domains-faq.yml) 
-  
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel de manière à n’avoir *qu’un seul* enregistrement SPF incluant les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [Enregistrements DNS externes pour Microsoft](../../enterprise/external-domain-name-system-records.md). Pour valider votre enregistrement SPF, vous pouvez utiliser l’un de ces [outils de validation](../setup/domains-faq.yml).
+
 > [!NOTE]
-> Si vous vous êtes inscrit auprès 1und1.de, [connectez-vous ici](https://go.microsoft.com/fwlink/?linkid=859152). 
-  
-1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). Vous serez invité à vous connecter.
+> Si vous vous êtes inscrit auprès de 1und1.de, [connectez-vous ici](https://go.microsoft.com/fwlink/?linkid=859152).
 
-1. **Sélectionnez Menu**, puis **Domaines et SSL**.
-  
+1. Pour commencer, accédez à la page de vos domaines sur IONOS par 1&1 à l’aide de [ce lien](https://my.1and1.com/). Vous serez invité à vous connecter.
+
+1. Sélectionnez **Menu**, puis **Domaines et SSL**.
+
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Sélectionnez Domaines et SSL.":::
-  
-1. Sous **Actions** pour le domaine que vous souhaitez mettre à jour, sélectionnez le contrôle d’engrenage, puis **sélectionnez DNS**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Sélectionnez DNS dans la liste liste liste.":::
+1. Sous **Actions** pour le domaine que vous souhaitez mettre à jour, sélectionnez le contrôle d’engrenage, puis sélectionnez **DNS**.
 
-1. **Sélectionnez Ajouter un enregistrement**.
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Sélectionnez DNS dans la liste déroulante.":::
+
+1. Sélectionnez **Ajouter un enregistrement**.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Sélectionnez Ajouter un enregistrement.":::
 
-1. Sélectionnez **la section SPF (TXT** ).
+1. Sélectionnez la section **SPF (TXT** ).
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-SPFTXT.png" alt-text="Sélectionnez la section SPF (TXT).":::
 
-1. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant. <br/>
+1. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant.
 
-    |**Type (Type)**|**Nom de l’hôte**|**Valeur**| **TTL** |
-    |:-----|:-----|:-----|:-----|
-    |SPF (TXT)  <br/> |(Laissez ce champ vide.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte. | 1 heure |
-  
+    |Type|Nom d’hôte|Valeur|Durée de vie|
+    |---|---|---|---|
+    |SPF (TXT)|(Laissez ce champ vide.)|v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.|1 heure|
+
 1. Sélectionnez **Enregistrer**.
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-SPFTXT-Save.png" alt-text="Sélectionnez Enregistrer.":::
 
 ## <a name="advanced-option-skype-for-business"></a>Option avancée : Skype Entreprise
 
-Sélectionnez cette option uniquement si votre organisation utilise Skype Entreprise pour les services de communication en ligne tels que la conversation, les appels de conférence et les appels vidéo, en plus des Microsoft Teams. Skype nécessite 4 enregistrements : 2 enregistrements SRV pour la communication utilisateur à utilisateur et 2 enregistrements CNAME pour se connecter et connecter des utilisateurs au service.
+Sélectionnez cette option uniquement si votre organisation utilise Skype Entreprise pour les services de communication en ligne tels que la conversation, les téléconférences et les appels vidéo, en plus de Microsoft Teams. Skype a besoin de 4 enregistrements : 2 enregistrements SRV pour la communication utilisateur-utilisateur et 2 enregistrements CNAME pour se connecter et connecter les utilisateurs au service.
 
 ### <a name="add-two-additional-cname-records"></a>Ajouter deux enregistrements CNAME supplémentaires
-  
-1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). Vous serez invité à vous connecter.
 
-1. **Sélectionnez Menu**, puis **Domaines et SSL**.
-  
+1. Pour commencer, accédez à la page de vos domaines sur IONOS par 1&1 à l’aide de [ce lien](https://my.1and1.com/). Vous serez invité à vous connecter.
+
+1. Sélectionnez **Menu**, puis **Domaines et SSL**.
+
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Sélectionnez Domaines et SSL.":::
-  
-1. Sous **Actions** pour le domaine que vous souhaitez mettre à jour, sélectionnez le contrôle d’engrenage, puis **sélectionnez DNS**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Sélectionnez DNS dans la liste liste liste.":::
+1. Sous **Actions** pour le domaine que vous souhaitez mettre à jour, sélectionnez le contrôle d’engrenage, puis sélectionnez **DNS**.
 
-    Vous allez maintenant créer deux sous-domaines et définir une valeur **Alias (Alias)** pour chaque sous-domaine.<br/>(Ceci est obligatoire car 1&1 IONOS prend en charge un seul enregistrement CNAME de niveau supérieur, mais Microsoft requiert plusieurs enregistrements CNAME.)<br/>Tout d’abord, vous allez créer le sous-domaine lyncdiscover.
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Sélectionnez DNS dans la liste déroulante.":::
 
-1. **Sélectionnez Sous-domaine**.
-  
+   Vous allez maintenant créer deux sous-domaines et définir une valeur **Alias (Alias)** pour chaque sous-domaine.
+
+   (Cela est nécessaire, car 1&1 IONOS ne prend en charge qu’un seul enregistrement CNAME de niveau supérieur, mais Microsoft requiert plusieurs enregistrements CNAME.)
+
+   Tout d’abord, vous allez créer le sous-domaine lyncdiscover.
+
+1. Sélectionnez **Sous-domaines**.
+
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-Subdomains.png" alt-text="Sélectionnez Sous-domaine.":::
-  
-1. **Sélectionnez Ajouter un sous-domaine**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-add-subdomains.png" alt-text="Sélectionnez Ajouter des sous-domaine.":::
+1. Sélectionnez **Ajouter un sous-domaine**.
 
-1. Dans la **zone Ajouter un sous-domaine** pour le nouveau sous-domaine, tapez ou copiez-collez uniquement la valeur Ajouter un sous-domaine du tableau suivant. (Vous ajouterez la valeur **Alias (Alias)** au cours d'une étape ultérieure.)<br/> 
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-add-subdomains.png" alt-text="Sélectionnez Ajouter des sous-domaines.":::
 
-    |**Ajouter un sous-domaine**|**Alias**|
-    |:-----|:-----|
+1. Dans la zone **Ajouter un sous-domaine** pour le nouveau sous-domaine, tapez ou copiez et collez uniquement la valeur **Ajouter un sous-domaine** du tableau suivant. (Vous ajouterez la valeur **Alias (Alias)** au cours d'une étape ultérieure.)
+
+    |Ajouter un sous-domaine|Alias|
+    |---|---|
     |lyncdiscover   |webdir.online.lync.com  |
 
-1. Sous **Actions** pour le sous-domaine **lyncdiscover** que vous vient de créer, sélectionnez le contrôle d’engrenage, puis **sélectionnez DNS** dans la liste de listes. <br/>
+1. Sous **Actions** pour le sous-domaine **lyncdiscover** que vous venez de créer, sélectionnez le contrôle d’engrenage, puis sélectionnez **DNS** dans la liste déroulante.
 
-1. **Sélectionnez Ajouter un enregistrement**, puis sélectionnez la section **CNAME**.
+1. Sélectionnez **Ajouter un enregistrement**, puis sélectionnez la section **CNAME** .
 
-1. Dans la zone **Alias: (Alias :)**, tapez ou copiez-collez uniquement la valeur **Alias (Alias)** du tableau suivant. <br/>
+1. Dans la zone **Alias :**, tapez ou copiez-collez uniquement la valeur **Alias** du tableau suivant.
 
-    |**Create Subdomain (Créer un sous-domaine)**|**Alias**|
-    |:-----|:-----|
-    |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |
+    |Create Subdomain (Créer un sous-domaine)|Alias|
+    |---|---|
+    |lyncdiscover|webdir.online.lync.com|
 
-1. Créez un autre sous-domaine (SIP) : <br/>**Sélectionnez Ajouter un sous-domaine**.
+1. Créer un autre sous-domaine (SIP) : sélectionnez **Ajouter un sous-domaine**.
 
-1. Dans la **zone Ajouter un sous-domaine** pour le nouveau sous-domaine, tapez ou copiez-collez uniquement la valeur Ajouter un sous-domaine du tableau suivant. (Vous ajouterez la valeur **Alias (Alias)** au cours d'une étape ultérieure.) <br/>
+1. Dans la zone **Ajouter un sous-domaine** pour le nouveau sous-domaine, tapez ou copiez et collez uniquement la valeur **Ajouter un sous-domaine** du tableau suivant. (Vous ajouterez la valeur **Alias (Alias)** au cours d'une étape ultérieure.)
 
-    |**Ajouter un sous-domaine**|**Alias**|
-    |:-----|:-----|
-    |sip  <br/> |sipdir.online.lync.com  <br/> |
+    |Ajouter un sous-domaine|Alias|
+    |---|---|
+    |sip|sipdir.online.lync.com|
 
-1. Sous **Actions** pour le sous-domaine que vous avez créé, sélectionnez le contrôle d’engrenage, puis **sélectionnez DNS** dans la liste de listes. <br/>
+1. Sous **Actions** pour le sous-domaine que vous venez de créer, sélectionnez le contrôle d’engrenage, puis sélectionnez **DNS** dans la liste déroulante.
 
-1. **Sélectionnez Ajouter un enregistrement**.
+1. Sélectionnez **Ajouter un enregistrement**.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Sélectionnez Ajouter un enregistrement.":::
 
-1. Sélectionnez **la section CNAME** .
+1. Sélectionnez la section **CNAME** .
 
-1. dans la **zone Alias:** , tapez ou copiez-collez uniquement la valeur **Alias** du tableau suivant. 
+1. dans la zone **Alias :** tapez ou copiez et collez uniquement la valeur **Alias** du tableau suivant.
 
-    |**Create Subdomain (Créer un sous-domaine)**|**Alias**|
-    |:-----|:-----|
-    |sip  <br/> |sipdir.online.lync.com  <br/> |
+    |Create Subdomain (Créer un sous-domaine)|Alias|
+    |---|---|
+    |sip|sipdir.online.lync.com|
 
 1. Cochez la case correspondant à la clause d'exclusion de responsabilité **J'accepte**, puis sélectionnez **Enregistrer**.
 
 ## <a name="add-the-two-srv-records-required-for-microsoft"></a>Ajouter les deux enregistrements SRV requis pour Microsoft
-  
+
 > [!NOTE]
-> Si vous vous êtes inscrit auprès 1und1.de, [connectez-vous ici](https://go.microsoft.com/fwlink/?linkid=859152). 
-  
-1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). Vous serez invité à vous connecter.
+> Si vous vous êtes inscrit auprès de 1und1.de, [connectez-vous ici](https://go.microsoft.com/fwlink/?linkid=859152).
 
-1. **Sélectionnez Menu**, puis **Domaines et SSL**.
-  
+1. Pour commencer, accédez à la page de vos domaines sur IONOS par 1&1 à l’aide de [ce lien](https://my.1and1.com/). Vous serez invité à vous connecter.
+
+1. Sélectionnez **Menu**, puis **Domaines et SSL**.
+
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Sélectionnez Domaines et SSL.":::
-  
-1. Sous **Actions** pour le domaine que vous souhaitez mettre à jour, sélectionnez le contrôle d’engrenage, puis **sélectionnez DNS**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Sélectionnez DNS dans la liste liste liste.":::
+1. Sous **Actions** pour le domaine que vous souhaitez mettre à jour, sélectionnez le contrôle d’engrenage, puis sélectionnez **DNS**.
 
-1. **Sélectionnez Ajouter un enregistrement**.
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Sélectionnez DNS dans la liste déroulante.":::
+
+1. Sélectionnez **Ajouter un enregistrement**.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Sélectionnez Ajouter un enregistrement.":::
 
-1. Sélectionnez **la section SRV** .
+1. Sélectionnez la section **SRV** .
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-SRV.png" alt-text="Sélectionnez la section SRV.":::
 
-1. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant. <br/>
+1. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant.
 
-    |**Type**|**Service**|**Protocol (Protocole)**|**Nom de l’hôte**|**Points to (Pointe vers)**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**TTL (Durée de vie)**|
-    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV  <br/> |_sip  <br/> |tls  <br/> |(Laissez ce champ vide.)  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |1  <br/> |443  <br/> |1 heure  <br/> |
-    |SRV  <br/> |_sipfederationtls  <br/> |tcp  <br/> |(Laissez ce champ vide.)  <br/> |sipfed.online.lync.com  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 heure <br/> |  
-  
+    |Type|Service|Protocole|Nom d’hôte|Points to |Priorité|Pondération|Port|Durée de vie|
+    |---|---|---|---|---|---|---|---|---|
+    |SRV|_sip|tls|(Laissez ce champ vide.)|sipdir.online.lync.com|100|1|443|1 heure|
+    |SRV|_sipfederationtls|tcp|(Laissez ce champ vide.)|sipfed.online.lync.com|100|1|5061|1 heure|
+
 1. Sélectionnez **Enregistrer**.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-SRV-Save.png" alt-text="Sélectionnez Enregistrer.":::
@@ -351,73 +359,77 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
 1. Ajoutez l’autre enregistrement SRV.
 
 > [!NOTE]
-> Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d’autres problèmes suite à l’ajout des enregistrements DNS, consultez la page [Rechercher et corriger les problèmes suite à l’ajout de votre domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
+> Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d’autres problèmes suite à l’ajout des enregistrements DNS, consultez la page [Rechercher et corriger les problèmes suite à l’ajout de votre domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Option avancée : Intune et gestion des périphériques mobiles pour Microsoft 365
+## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Option avancée : Intune et mobile Gestion des appareils pour Microsoft 365
 
-Ce service vous permet de sécuriser et de gérer à distance les appareils mobiles qui se connectent à votre domaine. La gestion des appareils mobiles nécessite 2 enregistrements CNAME afin que les utilisateurs peuvent inscrire des appareils au service.
+Ce service vous permet de sécuriser et de gérer à distance les appareils mobiles qui se connectent à votre domaine. Mobile Gestion des appareils a besoin de 2 enregistrements CNAME pour permettre aux utilisateurs d’inscrire des appareils auprès du service.
 
 ### <a name="add-the-two-required-cname-records"></a>Ajouter les deux enregistrements CNAME requis
 
 > [!IMPORTANT]
-> Suivez la procédure de sous-domaine que vous avez utilisée pour les autres enregistrements CNAME et fournissez les valeurs du tableau suivant. 
-  
-1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). Vous serez invité à vous connecter.
+> Suivez la procédure de sous-domaine que vous avez utilisée pour les autres enregistrements CNAME et fournissez les valeurs du tableau suivant.
 
-1. **Sélectionnez Menu**, puis **Domaines et SSL**.
-  
+1. Pour commencer, accédez à la page de vos domaines sur IONOS par 1&1 à l’aide de [ce lien](https://my.1and1.com/). Vous serez invité à vous connecter.
+
+1. Sélectionnez **Menu**, puis **Domaines et SSL**.
+
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Sélectionnez Domaines et SSL.":::
-  
-1. Sous **Actions** pour le domaine que vous souhaitez mettre à jour, sélectionnez le contrôle d’engrenage, puis **sélectionnez DNS**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Sélectionnez DNS dans la liste liste liste.":::
+1. Sous **Actions** pour le domaine que vous souhaitez mettre à jour, sélectionnez le contrôle d’engrenage, puis sélectionnez **DNS**.
 
-    Vous allez maintenant créer deux sous-domaines et définir une valeur **Alias (Alias)** pour chaque sous-domaine.<br/>(Ceci est obligatoire car 1&1 IONOS prend en charge un seul enregistrement CNAME de niveau supérieur, mais Microsoft requiert plusieurs enregistrements CNAME.)<br/>Tout d’abord, vous allez créer le sous-domaine lyncdiscover.
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Sélectionnez DNS dans la liste déroulante.":::
 
-1. **Sélectionnez Sous-domaine**.
-  
+   Vous allez maintenant créer deux sous-domaines et définir une valeur **Alias (Alias)** pour chaque sous-domaine.
+
+   (Cela est nécessaire, car 1&1 IONOS ne prend en charge qu’un seul enregistrement CNAME de niveau supérieur, mais Microsoft requiert plusieurs enregistrements CNAME.)
+
+   Tout d’abord, vous allez créer le sous-domaine lyncdiscover.
+
+1. Sélectionnez **Sous-domaines**.
+
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-Subdomains.png" alt-text="Sélectionnez Sous-domaine.":::
-  
-1. **Sélectionnez Ajouter un sous-domaine**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-add-subdomains.png" alt-text="Sélectionnez Ajouter des sous-domaine.":::
+1. Sélectionnez **Ajouter un sous-domaine**.
 
-1. Dans la **zone Ajouter un sous-domaine** pour le nouveau sous-domaine, tapez ou copiez-collez uniquement la valeur Ajouter un sous-domaine du tableau suivant. (Vous ajouterez la valeur **Alias (Alias)** au cours d'une étape ultérieure.)<br/> 
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-add-subdomains.png" alt-text="Sélectionnez Ajouter des sous-domaines.":::
 
-    |**Ajouter un sous-domaine**|**Alias**|
-    |:-----|:-----|
-    |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |
+1. Dans la zone **Ajouter un sous-domaine** pour le nouveau sous-domaine, tapez ou copiez et collez uniquement la valeur **Ajouter un sous-domaine** du tableau suivant. (Vous ajouterez la valeur **Alias (Alias)** au cours d'une étape ultérieure.)
 
-1. Sous **Actions** pour le sous-domaine **d’agrégation** d’entreprise que vous avez créé, sélectionnez le contrôle d’engrenage, puis **sélectionnez DNS** dans la liste de listes. <br/>
+    |Ajouter un sous-domaine|Alias|
+    |---|---|
+    |enterpriseregistration|enterpriseregistration.windows.net|
 
-1. **Sélectionnez Ajouter un enregistrement**, puis sélectionnez la section **CNAME**.
+1. Sous **Actions** pour le sous-domaine **enterpriseregistration** que vous venez de créer, sélectionnez le contrôle d’engrenage, puis sélectionnez **DNS** dans la liste déroulante.
 
-1. Dans la zone **Alias :**, tapez ou copiez-collez uniquement la valeur **Alias** du tableau suivant. <br/>
+1. Sélectionnez **Ajouter un enregistrement**, puis sélectionnez la section **CNAME** .
 
-    |**Ajouter un sous-domaine**|**Alias**|
-    |:-----|:-----|
-    |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |
+1. Dans la zone **Alias :**, tapez ou copiez-collez uniquement la valeur **Alias** du tableau suivant.
 
-1. Créez un autre sous-domaine : <br/>**Sélectionnez Ajouter un sous-domaine**.
+    |Ajouter un sous-domaine|Alias|
+    |---|---|
+    |enterpriseregistration|enterpriseregistration.windows.net|
 
-1. Dans la **zone Ajouter un sous-domaine** pour le nouveau sous-domaine, tapez ou copiez-collez uniquement la valeur Ajouter un sous-domaine du tableau suivant. (Vous ajouterez la valeur **Alias (Alias)** au cours d'une étape ultérieure.) <br/>
+1. Créez un autre sous-domaine : sélectionnez **Ajouter un sous-domaine**.
 
-    |**Ajouter un sous-domaine**|**Alias**|
-    |:-----|:-----|
-    |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
+1. Dans la zone **Ajouter un sous-domaine** pour le nouveau sous-domaine, tapez ou copiez et collez uniquement la valeur **Ajouter un sous-domaine** du tableau suivant. (Vous ajouterez la valeur **Alias (Alias)** au cours d'une étape ultérieure.)
 
-1. Sous **Actions** pour le **sous-domaine d’inscription** d’entreprise que vous avez créé, sélectionnez le contrôle d’engrenage, puis **sélectionnez DNS** dans la liste de listes. <br/>
+    |Ajouter un sous-domaine|Alias|
+    |---|---|
+    |enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com|
 
-1. **Sélectionnez Ajouter un enregistrement**.
+1. Sous **Actions** pour le sous-domaine **enterpriseenrollment** que vous venez de créer, sélectionnez le contrôle d’engrenage, puis sélectionnez **DNS** dans la liste déroulante.
+
+1. Sélectionnez **Ajouter un enregistrement**.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Sélectionnez Ajouter un enregistrement.":::
 
-1. Sélectionnez **la section CNAME** .
+1. Sélectionnez la section **CNAME** .
 
-1. dans la **zone Alias:** , tapez ou copiez-collez uniquement la valeur **Alias** du tableau suivant. 
+1. dans la zone **Alias :** tapez ou copiez et collez uniquement la valeur **Alias** du tableau suivant.
 
-    |**Create Subdomain (Créer un sous-domaine)**|**Alias**|
-    |:-----|:-----|
-    |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
+    |Créer un sous-domaine|Alias|
+    |---|---|
+    |enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com|
 
 1. Cochez la case correspondant à la clause d'exclusion de responsabilité **J'accepte**, puis sélectionnez **Enregistrer**.

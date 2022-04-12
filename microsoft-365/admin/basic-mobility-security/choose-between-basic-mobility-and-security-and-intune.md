@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La mobilité et la sécurité de base font partie des plans de Microsoft 365.
-ms.openlocfilehash: 0c1c61181d7e8bd5eb0ee000e29285c32a454692
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 36190be6345188503e7ba5147b72918a342aba73
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713842"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64781180"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Choisissez entre mobilité et sécurité de base ou Intune
 
@@ -34,7 +34,7 @@ ms.locfileid: "64713842"
 
 La mobilité et la sécurité de base et les Intune sont inclus dans divers plans, décrits dans le tableau suivant.
 
-| Planification | Mobility + Security de Base | Microsoft Intune |
+| Prévision | Mobility + Security de Base | Microsoft Intune |
 |:-----|:-----|:-----|
 |Microsoft 365 Apps|Oui|Non|
 |Microsoft 365 Business Basic|Oui|Non|
@@ -86,20 +86,20 @@ Les actions à distance de mobilité et de sécurité de base incluent la mise h
 Avec Intune vous avez l’ensemble d’actions suivant :
 
 - [Réinitialisation d’AutoPilot](/mem/autopilot/windows-autopilot-reset) (Windows uniquement)
-- Récupération   [de clé Bitlocker](https://support.microsoft.com/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6) (Windows uniquement)
+- [Récupération de clé Bitlocker](https://support.microsoft.com/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6) (Windows uniquement)
 - [Utiliser la réinitialisation, la mise hors service ou la désinscription manuelle de l’appareil](/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
-- [Désactiver le verrou](/mem/intune/remote-actions/device-activation-lock-disable)  d’activation (iOS uniquement)
-- [Nouveau départ](/mem/intune/remote-actions/device-fresh-start)  (Windows uniquement)
-- [Analyse](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)  complète (Windows 10 uniquement)
-- [Localiser l’appareil](/mem/intune/remote-actions/device-locate)  (iOS uniquement)
-- [Mode](/mem/intune/remote-actions/device-lost-mode)  perdu (iOS uniquement)- [Analyse rapide](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (Windows 10 uniquement)
+- [Désactiver le verrou d’activation](/mem/intune/remote-actions/device-activation-lock-disable) (iOS uniquement)
+- [Nouveau départ](/mem/intune/remote-actions/device-fresh-start) (Windows uniquement)
+- [Analyse complète](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (Windows 10 uniquement)
+- [Localiser l’appareil](/mem/intune/remote-actions/device-locate) (iOS uniquement)
+- [Mode perdu](/mem/intune/remote-actions/device-lost-mode) (iOS uniquement)- [Analyse rapide](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (Windows 10 uniquement)
 - [Contrôle à distance pour Android](/mem/intune/remote-actions/teamviewer-support)
 - [Verrouiller à distance](/mem/intune/remote-actions/device-remote-lock)
 - [Renommer un appareil](/mem/intune/remote-actions/device-rename)
-- [Réinitialiser le](/mem/intune/remote-actions/device-passcode-reset) [redémarrage](/mem/intune/remote-actions/device-restart)  du code secret (Windows uniquement)
+- [Réinitialiser le](/mem/intune/remote-actions/device-passcode-reset) [redémarrage](/mem/intune/remote-actions/device-restart) du code secret (Windows uniquement)
 - [Mettre à jour Windows Defender Security Intelligence](https://www.microsoft.com/en-us/wdsi/defenderupdates) (Windows uniquement)
 - [Windows 10 réinitialisation du code confidentiel](/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset) (Windows uniquement)
-- [Envoyer des notifications personnalisées](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)  (Android, iOS, système d’exploitation iPad)
+- [Envoyer des notifications personnalisées](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device) (Android, iOS, système d’exploitation iPad)
 - [Synchroniser l’appareil](/mem/intune/remote-actions/device-sync)
 
 Pour plus d’informations sur les actions Intune, consultez [Microsoft Intune documentation](/mem/intune/).

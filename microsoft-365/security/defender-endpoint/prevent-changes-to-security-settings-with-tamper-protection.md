@@ -21,12 +21,12 @@ ms.date: 04/07/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: a9092ebb941806324646fffd86dd00b54fa87cc6
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: ccf72b1f7e5625f3b3b9599a50d734a7316b8659
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714964"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64780256"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité avec la protection contre la falsifiation
 
@@ -48,7 +48,8 @@ La protection contre les falsifications est disponible pour les appareils qui ex
 - Windows Server 2012 R2
 
 > [!NOTE]
-> La protection contre les falsifications dans Windows Server 2012 R2 est disponible pour les appareils intégrés à Microsoft Defender pour point de terminaison à l’aide du package de solution unifié moderne. Pour plus d’informations, consultez [Nouvelles fonctionnalités de la solution unifiée moderne pour Windows Server 2012 R2 et 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
+> La protection contre les falsifications dans Windows Server 2012 R2 est disponible pour les appareils intégrés à l’aide du package de solution unifié moderne. Pour plus d’informations, consultez [Intégrer des serveurs Windows au service Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
+
 
 ## <a name="overview"></a>Vue d’ensemble
 
@@ -174,7 +175,7 @@ Si votre organisation utilise Microsoft Endpoint Manager (MEM), vous pouvez acti
 Si vous utilisez la [version 2006 de Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), vous pouvez gérer les paramètres de protection contre les falsifications sur Windows 10, Windows 10 Entreprise multisession, Windows 11 Windows 11 Entreprise multisession, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 et Windows Server 2022 à l’aide d’une méthode appelée *attachement de locataire*. L’attachement de locataire vous permet de synchroniser vos appareils Configuration Manager locaux uniquement dans le centre d’administration Microsoft Endpoint Manager, puis de fournir des stratégies de configuration de sécurité de point de terminaison aux regroupements locaux & appareils.
 
 > [!NOTE]
-> La procédure peut être utilisée pour étendre la protection contre les falsifications aux appareils exécutant Windows 10, Windows 10 Entreprise multisession, Windows 11, Windows 11 Entreprise multisession, Windows Server 2019 et Windows Server 2022. Veillez à examiner les prérequis et d’autres informations dans les ressources mentionnées dans cette procédure.
+> La procédure peut être utilisée pour étendre la protection contre les falsifications aux appareils exécutant Windows 10, Windows 10 Entreprise multisession, Windows 11, Windows 11 Entreprise multisession, Windows Server 2019 et Windows Server 2022. Veillez à examiner les prérequis et d’autres informations dans les ressources mentionnées dans cette procédure. Pour Windows Server 2012 R2 exécutant la solution unifiée moderne [version 2203 de Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2203) est requise.
 
 1. Configurez l’attachement de locataire. Pour en savoir plus, consultez [Démarrage : Créer et déployer des stratégies de sécurité de point de terminaison à partir du Centre d’administration](/mem/configmgr/tenant-attach/endpoint-security-get-started).
 
@@ -211,9 +212,9 @@ Voici ce que vous voyez dans l’application Sécurité Windows :
 
 3. Définissez **la protection contre les falsifications** **sur Activé** ou **Désactivé**.
 
-## <a name="are-you-using-windows-server-2016-or-windows-version-1709-1803-or-1809"></a>Utilisez-vous Windows Server 2016 ou Windows version 1709, 1803 ou 1809 ?
+## <a name="are-you-using-windows-server-2012-r2-2016-or-windows-version-1709-1803-or-1809"></a>Utilisez-vous Windows Server 2012 R2, 2016 ou Windows version 1709, 1803 ou 1809 ?
 
-Si vous utilisez Windows Server 2016, Windows 10 version 1709, 1803 ou [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), vous ne **verrez pas la protection contre les falsifications** dans l’application Sécurité Windows. Au lieu de cela, vous pouvez utiliser PowerShell pour déterminer si la protection contre les falsifications est activée.
+Si vous utilisez Windows Server 2012 R2 à l’aide de la solution unifiée moderne, Windows Server 2016, Windows 10 version 1709, 1803 ou [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), vous ne **verrez pas la protection contre les falsifications** dans l’application Sécurité Windows. Au lieu de cela, vous pouvez utiliser PowerShell pour déterminer si la protection contre les falsifications est activée.
 
 Sur Windows Server 2016, l’application Paramètres ne reflète pas avec précision l’état de la protection en temps réel lorsque la protection contre les falsifications est activée.
 

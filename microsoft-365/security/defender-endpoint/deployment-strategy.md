@@ -1,7 +1,7 @@
 ---
 title: Planifier le déploiement de Microsoft Defender pour point de terminaison
-description: Sélectionnez la meilleure stratégie de déploiement de Microsoft Defender pour les points de terminaison pour votre environnement
-keywords: déployer, planifier, stratégie de déploiement, cloud natif, gestion, sur site, évaluation, intégration, local, stratégie de groupe, gp, gestionnaire de point de terminaison, mem
+description: Sélectionner la meilleure stratégie de déploiement Microsoft Defender pour point de terminaison pour votre environnement
+keywords: deploy, plan, deployment strategy, cloud native, management, on prem, evaluation, onboarding, local, group policy, gp, endpoint manager, mem
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 05ae6e0669784aef515d678835f0fa48be0f9f3f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 63996aa4d046ac719e0e6b98ed4c5980e0d979be
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64471250"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783862"
 ---
 # <a name="plan-your-microsoft-defender-for-endpoint-deployment"></a>Planifier le déploiement de Microsoft Defender pour point de terminaison
 
@@ -32,33 +32,33 @@ ms.locfileid: "64471250"
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)
 
-Planifiez votre déploiement de Microsoft Defender for Endpoint afin d’optimiser les fonctionnalités de sécurité de la suite et de mieux protéger votre entreprise contre les cybermenaces.
+Planifiez votre déploiement Microsoft Defender pour point de terminaison afin de maximiser les fonctionnalités de sécurité au sein de la suite et de mieux protéger votre entreprise contre les cybermenaces.
 
-Cette solution fournit des conseils sur l’identification de l’architecture de votre environnement, la sélection du type d’outil de déploiement qui répond le mieux à vos besoins et des instructions sur la configuration des fonctionnalités.
+Cette solution fournit des conseils sur la façon d’identifier l’architecture de votre environnement, de sélectionner le type d’outil de déploiement qui répond le mieux à vos besoins, ainsi que des conseils sur la configuration des fonctionnalités.
 
 :::image type="content" source="images/deployment-guide-plan.png" alt-text="Flux de déploiement" lightbox="images/deployment-guide-plan.png":::
 
-## <a name="step-1-identify-architecture"></a>Étape 1 : identifier l’architecture
+## <a name="step-1-identify-architecture"></a>Étape 1 : Identifier l’architecture
 
-Comme nous savons que chaque environnement d’entreprise est unique, nous avons fourni plusieurs options pour vous offrir la flexibilité nécessaire pour choisir le déploiement du service.
+Nous comprenons que chaque environnement d’entreprise est unique, nous avons donc fourni plusieurs options pour vous donner la flexibilité de choisir comment déployer le service.
 
 Selon votre environnement, certains outils conviennent mieux à certaines architectures.
 
-Utilisez les documents suivants pour sélectionner l’architecture defender pour point de terminaison appropriée qui convient le mieux à votre organisation.
+Utilisez le matériel suivant pour sélectionner l’architecture Defender pour point de terminaison appropriée qui convient le mieux à votre organisation.
 
 | Item | Description |
 |:-----|:-----|
 |[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="Stratégie de déploiement de Defender pour point de terminaison" lightbox="images/mde-deployment-strategy.png":::](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | Le matériel architectural vous aide à planifier votre déploiement pour les architectures suivantes : <ul><li> Cloud-natif </li><li> Cogestion </li><li> Sur site</li><li>Évaluation et intégration locale</li>
 
-## <a name="step-2-select-deployment-method"></a>Étape 2 : sélectionner la méthode de déploiement
+## <a name="step-2-select-deployment-method"></a>Étape 2 : Sélectionner la méthode de déploiement
 
 | Point de terminaison     | Outil de déploiement                       |
 |--------------|------------------------------------------|
-| **Fenêtres**  |  [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Gestionnaire de périphériques mobiles](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration de à Microsoft Defender pour le cloud](configure-server-endpoints.md#integration-with-azure-defender)  |
+| **Fenêtres**  |  [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Mobile Gestionnaire de périphériques](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration de à Microsoft Defender pour le cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
 | **MacOS**    | [Script local](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Gestion des appareils mobiles](mac-install-with-other-mdm.md) |
-| **Serveur Linux** | [Script local](linux-install-manually.md) <br> [Sondent](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
+| **Serveur Linux** | [Script local](linux-install-manually.md) <br> [Marionnette](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Microsoft Endpoint Manager](ios-install.md)                                |
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
 
@@ -66,20 +66,20 @@ Le tableau suivant répertorie les points de terminaison pris en charge et l’o
 
 |Point de terminaison|Outil de déploiement|
 |---|---|
-|**Fenêtres**|[Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Gestionnaire de périphériques mobiles](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration de à Microsoft Defender pour le cloud](configure-server-endpoints.md#integration-with-azure-defender)|
+|**Fenêtres**|[Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Mobile Gestionnaire de périphériques](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration de à Microsoft Defender pour le cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)|
 |**MacOS**|[Script local](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Gestion des appareils mobiles](mac-install-with-other-mdm.md)|
-|**Serveur Linux**|[Script local](linux-install-manually.md) <br> [Sondent](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
-|**iOS**|[Basée sur l’application](ios-install.md)|
+|**Serveur Linux**|[Script local](linux-install-manually.md) <br> [Marionnette](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
+|**iOS**|[Basé sur l’application](ios-install.md)|
 |**Android**|[Microsoft Endpoint Manager](android-intune.md)|
 
 ## <a name="step-3-configure-capabilities"></a>Étape 3 : Configurer les fonctionnalités
 
-Après l’intégration des points de terminaison, configurez les fonctionnalités de sécurité dans Defender pour le point de terminaison afin que vous pouvez optimiser la protection de sécurité robuste disponible dans la suite. Les fonctionnalités incluent :
+Après l’intégration des points de terminaison, configurez les fonctionnalités de sécurité dans Defender pour point de terminaison afin de maximiser la protection de sécurité robuste disponible dans la suite. Les fonctionnalités incluent :
 
 - Détection et réponse du point de terminaison
 - Protection de nouvelle génération
 - Réduction de la surface d'attaque
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 - [Phases de déploiement](deployment-phases.md)
