@@ -21,12 +21,12 @@ description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le 
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 71b7bb5d5588f19ff4134c133377b3e9ca83c780
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: edf5bfd91313c621707d1bdc35074bfe7fe9585c
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319348"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759918"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -201,7 +201,7 @@ Pour effectuer une recherche dans le journal d’audit dans Microsoft 365, vous 
 
 4. Cliquez sur **Rechercher** pour effectuer la recherche à l’aide de vos critères de recherche. 
 
-   Les résultats de recherche sont chargés, puis affichés sur une nouvelle page. Une fois la recherche terminée, le nombre de résultats détectés est affiché. Un maximum de 50 000 événements sera affiché par tranches de 150 événements.
+   Les résultats de recherche sont chargés, puis affichés sur une nouvelle page. Une fois la recherche terminée, le nombre de résultats détectés est affiché. Un maximum de 50 000 événements sera affiché par tranches de 150 événements. Si plus de 50 000 événements répondent aux critères de recherche, seuls les 50 000 événements non triés retournés sont affichés.
 
    ![Le nombre de résultats affichés une fois la recherche terminée.](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
@@ -430,7 +430,7 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
-|Fichier consulté|FileAccessed|Le compte d’utilisateur ou système consulte un fichier. Lorsqu'un utilisateur accède à un fichier, l'événement FileAccessed n'est plus enregistré pour le même utilisateur et pour le même fichier pendant les cinq minutes suivantes.|
+|Fichier consulté|FileAccessed|Un compte d’utilisateur ou système accède à un fichier. Une fois qu’un utilisateur accède à un fichier, l’événement FileAccessed n’est plus enregistré pour le même utilisateur pour le même fichier pendant les cinq prochaines minutes.|
 |(aucun)|FileAccessedExtended|Cet événement est lié à l'activité « Fichier consulté » (FileAccessed). Un événement FileAccessedExtended est enregistré lorsque la même personne accède à un fichier pendant une période prolongée (jusqu'à 3 heures). <br/><br/> L’objectif de la journalisation des événements FileAccessedExtended consiste à réduire le nombre d’événements FileAccessed enregistrés lorsqu’un fichier est consulté de manière continue. Cela permet de réduire le bruit généré par l’enregistrement de plusieurs événements FileAccessed pour ce qui est en fait l’activité d’un seul et même utilisateur et vous permettre de vous concentrer sur l’événement FileAccessed initial (plus important).|
 |Étiquette de rétention modifiée pour un fichier|ComplianceSettingChanged|Une étiquette de rétention a été appliquée à un document ou supprimée de celui-ci. Cet événement est déclenché lorsqu’une étiquette de rétention est appliquée manuellement ou automatiquement à un message.|
 |État de l’enregistrement modifié sur verrouillé|LockRecord|État de l’enregistrement d’une étiquette de rétention qui classifie un document en tant qu’enregistrement verrouillé. Cela signifie que le document ne peut pas être modifié ou supprimé. Seuls les utilisateurs ayant au moins l’autorisation de collaborateur pour un site peuvent changer le statut d’enregistrement d’un document.|
@@ -543,7 +543,7 @@ Le tableau suivant décrit les activités liées à la façon dont les utilisate
 |Élément de liste mis à jour|ListItemUpdated|Un utilisateur a mis à jour un élément de liste SharePoint en modifiant une ou plusieurs propriétés.|
 |Colonne de site mise à jour|SiteColumnUpdated|Un utilisateur a mis à jour une colonne de site SharePoint en modifiant une ou plusieurs propriétés.|
 |Type de contenu de site mis à jour|SiteContentTypeUpdated|Un utilisateur a mis à jour un type de contenu de site en modifiant une ou plusieurs propriétés.|
-|Élément de liste consulté|ListItemViewed|Un utilisateur a affiché un élément de liste Microsoft Office SharePoint Online. Lorsqu'un utilisateur visualise un élément de liste, l'événement ListItemViewed n'est plus enregistré pour le même utilisateur et pour le même élément de liste pendant les cinq minutes suivantes.|
+|Élément de liste consulté|ListItemViewed|Un utilisateur a consulté un élément de liste SharePoint. Une fois qu’un utilisateur affiche un élément de liste, l’événement ListItemViewed n’est plus journalisé pour le même utilisateur pour le même élément de liste pendant les cinq minutes suivantes.|
 ||||
 
 ### <a name="sharing-and-access-request-activities"></a>Activités de demande d’accès et de partage
@@ -761,7 +761,7 @@ Le tableau suivant répertorie les activités d’administration des rôles Azur
 |:-----|:-----|:-----|
 |Membre ajouté au rôle|Ajouter un membre à un rôle.|Un utilisateur a été ajouté à un rôle d’administrateur dans Microsoft 365.|
 |Utilisateur supprimé d’un rôle d’annuaire|Supprimer un membre d’un rôle.|Un utilisateur a été supprimé d’un rôle d’administrateur dans Microsoft 365.|
-|Définition des informations de contact d’une entreprise|Définir des informations de contact professionnel.|Les préférences de contact au niveau de l’entreprise ont été mises à jour pour votre organisation. Cela inclut les adresses de messagerie pour les messages liés à un abonnement envoyés par Microsoft 365, ainsi que les notifications techniques relatives aux services.|
+|Définition des informations de contact d’une entreprise|Définir des informations de contact professionnel.|Mise à jour des préférences de contact au niveau de l'entreprise pour votre organisation. Cela inclut les adresses e-mail pour les e-mails liés à l'abonnement envoyés par Microsoft 365 et les notifications techniques concernant les services.|
 ||||
 
 ### <a name="directory-administration-activities"></a>Activités d’administration de l’annuaire

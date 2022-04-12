@@ -18,12 +18,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fbbac9e2b2c30748158cf245cdf55aa6a1a82333
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1690a100a2743d35bc85f116398d94325ad47fbc
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163385"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788455"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>Mieux ensemble : Antivirus Microsoft Defender et Office 365
 
@@ -31,14 +31,17 @@ ms.locfileid: "61163385"
 
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus Microsoft Defender
 - Microsoft 365
 
+**Plateformes**
+- Windows
+
 Vous savez peut-être déjà que :
 
-- Antivirus Microsoft Defender protéger votre appareil Windows contre les menaces logicielles, telles que les virus, les programmes **malveillants et les logiciels espions.** Antivirus Microsoft Defender votre protection complète et continue, intégrée à Windows 10 et Windows 11 et prête à l’être. [Antivirus Microsoft Defender est votre protection nouvelle génération](./microsoft-defender-antivirus-in-windows-10.md). 
+- **Antivirus Microsoft Defender protège votre appareil Windows contre les menaces logicielles, telles que les virus, les programmes malveillants et les logiciels espions**. Antivirus Microsoft Defender est votre protection complète et continue, intégrée à Windows 10 et Windows 11, et prête à l’être. [Antivirus Microsoft Defender est votre protection nouvelle génération](./microsoft-defender-antivirus-in-windows-10.md). 
 
 - **Office 365 inclut la protection anti-hameçonnage, anti-courrier indésirable et anti-programme malveillant**. Avec votre abonnement Office 365, vous bénéficiez de courriers et de calendriers Premium, d’applications Office, de 1 To de stockage cloud (via OneDrive) et d’une sécurité avancée sur tous vos appareils. C’est vrai pour les utilisateurs professionnels et domestiques. Et si vous êtes un utilisateur professionnel et que votre organisation utilise Office 365 E5, vous bénéficiez d’une protection encore plus accrue par le biais de Microsoft Defender pour Office 365 [Protéger contre les menaces avec Office 365](/microsoft-365/security/office-365-security/protect-against-threats).
 
@@ -76,7 +79,7 @@ Microsoft Defender pour Office 365 intégré à Microsoft Defender pour point de
 
     SO
 
-- Une fois l’intégration activée, votre équipe des opérations de sécurité peut voir une liste des appareils utilisés par les destinataires des URL ou messages électroniques détectés, ainsi que des alertes récentes pour ces appareils, dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
+- Une fois l’intégration activée, votre équipe chargée des opérations de sécurité peut voir la liste des appareils utilisés par les destinataires de toutes les URL ou messages électroniques détectés, ainsi que les alertes récentes pour ces appareils, dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>.
 
 Si vous ne l’avez pas déjà fait, [intégrer Microsoft Defender pour Office 365 à Microsoft Defender pour point de terminaison](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-mde).
 
@@ -86,6 +89,16 @@ La protection contre les rançongiciels est l’une des bonnes raisons de placer
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/70b4d256-46fb-481f-ad9b-921ef5fd7bed]
 
+> [!TIP]
+> Si vous recherchez des informations relatives à l’antivirus pour d’autres plateformes, consultez :
+> - [Définir les préférences pour Microsoft Defender pour point de terminaison sur macOS](mac-preferences.md)
+> - [Microsoft Defender pour point de terminaison sur Mac](microsoft-defender-endpoint-mac.md)
+> - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
+> - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
+> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
+> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+
 ## <a name="want-to-learn-more-see-these-resources"></a>Vous voulez en savoir plus ? Consultez les ressources suivantes :
 
 - [OneDrive](/onedrive)
@@ -93,3 +106,5 @@ La protection contre les rançongiciels est l’une des bonnes raisons de placer
 - [Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/office-365-atp)
 
 - [Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md)
+
+

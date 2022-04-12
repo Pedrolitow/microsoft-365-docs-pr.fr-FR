@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Playbook d'essai des solutions de conformité Microsoft 365.
-ms.openlocfilehash: e0d48ba9c4a5ca50869b64d6312fe845ef9bf50c
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8c5456344a97a0cfc4564c228eeba20067682070
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679893"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759167"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>Manuel d'essai : solutions de conformité Microsoft 365
 
@@ -93,6 +93,7 @@ La conformité de la communication vous aide à identifier intelligemment les vi
 > Meilleures pratiques d'essai : Jour 1
 
 [Attribuez tous les utilisateurs de conformité au groupe de rôles Conformité de la communication](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance).
+
 ### <a name="step-2-enable-the-audit-log"></a>Étape 2 : [Activer le journal d’audit](communication-compliance-configure.md#step-2-required-enable-the-audit-log)
 
 > [!TIP]
@@ -395,14 +396,13 @@ Les classificateurs entraînables sont des outils qui reconnaissent divers types
 
 ### <a name="more-information-auto-apply-retention-labels--disposition-review"></a>Plus d'informations : Appliquer automatiquement les étiquettes de conservation + examen de la disposition
 
-**Appliquez des étiquettes automatiquement pour conserver ce dont vous avez besoin…**
-Les étiquettes de rétention peuvent être automatiquement appliquées au contenu lorsqu'il contient :
+**Appliquez automatiquement des étiquettes pour conserver ce dont vous avez besoin...** Les étiquettes de rétention peuvent être appliquées automatiquement au contenu lorsqu’elles contiennent :
 
 - [Types spécifiques d’informations sensibles](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
 - [Mots clés spécifiques ou propriétés pouvant faire l’objet d’une recherche qui correspondent à une requête que vous créez](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 - [Correspondance pour les classifieurs entraînables](apply-retention-labels-automatically.md#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-**…puis jetez-le en toute sécurité à la fin.**
+**... puis supprimez-le en toute sécurité à la fin.**
 
 Lorsqu’une révision de disposition est déclenchée à la fin de la période de rétention, les relecteurs que vous choisissez reçoivent une notification par courrier électronique leur avertissant qu’ils ont du contenu à réviser.
 
@@ -434,6 +434,6 @@ Identifiez et protégez de manière proactive les risques de confidentialité te
 
 **Qu'inclut-il ?** : pour une liste complète des solutions et fonctionnalités de conformité Microsoft 365 répertoriées par niveau de produit, consultez la [matrice des fonctionnalités](https://go.microsoft.com/fwlink/?linkid=2139145).
 
-**Bibliothèque de contenu technique de sécurité Microsoft** : explorez cette bibliothèque pour trouver des guides interactifs et d'autres contenus d'apprentissage correspondant à vos besoins. [Visitez la bibliothèque](/security/content-library).
+**Bibliothèque de contenu technique de sécurité Microsoft** : explorez cette bibliothèque pour trouver des guides interactifs et d'autres contenus d'apprentissage correspondant à vos besoins. [Visitez la bibliothèque](/security).
 
 **ressources de sécurité Microsoft**: du logiciel anti-programme malveillant à la confiance zéro, obtenez toutes les ressources pertinentes pour les besoins de sécurité de votre organisation. [Visitez ressources](/security/business/resources).

@@ -15,22 +15,25 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 04/07/2022
+ms.date: 04/11/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 346f806129afc30ec5543c99bce3709af60cee73
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 48ab00c97559ecbbfe430b89c3742b8914c224ba
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64730637"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788477"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises à jour Antivirus Microsoft Defender et appliquer des lignes de base
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison plans 1 et 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus Microsoft Defender
+
+**Plateformes**
+- Windows
 
 Il est essentiel de maintenir Antivirus Microsoft Defender à jour pour vous assurer que vos appareils disposent des dernières technologies et fonctionnalités nécessaires pour se protéger contre les nouveaux programmes malveillants et les nouvelles techniques d’attaque. Veillez à mettre à jour votre protection antivirus, même si Antivirus Microsoft Defender s’exécute en [mode passif](microsoft-defender-antivirus-compatibility.md). Il existe deux types de mises à jour liées à la mise à jour des Antivirus Microsoft Defender :
 
@@ -62,7 +65,7 @@ Antivirus Microsoft Defender nécessite des [mises à jour mensuelles (KB4052623
 Vous pouvez gérer la distribution des mises à jour via l’une des méthodes suivantes :
 
 - [Windows Server Update Service (WSUS)](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
-- [Microsoft Endpoint Configuration Manager](/configmgr/sum/understand/software-updates-introduction)
+- [Microsoft Endpoint Configuration Manager](/configmgr/sum/understand/software-updates-introduction)
 - Méthode habituelle que vous utilisez pour déployer Microsoft et Windows mises à jour sur les points de terminaison de votre réseau.
 
 Pour plus d’informations, consultez [Gérer les sources pour les mises à jour de protection Antivirus Microsoft Defender](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
@@ -88,7 +91,7 @@ Toutes nos mises à jour contiennent
 <summary>Mars-2022 (Plateforme : 4.18.2203.5 | Moteur : 1.1.19100.5)</summary>
 
 &ensp;Version de la mise à jour du renseignement de sécurité : **1.361.1449.0**<br/>
-&ensp;Publication : **7 mars 2022**<br/>
+&ensp;Publication : **7 avril 2022**<br/>
 &ensp;Plateforme : **4.18.2203.5**<br/>
 &ensp;Moteur : **1.1.19100.5**<br/>
 &ensp;Phase de support : **Mises à jour de sécurité et critiques**<br/>
@@ -987,3 +990,13 @@ Pour plus d’informations, consultez [la mise à jour de Microsoft Defender pou
 |[Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md) | Vous pouvez définir des mises à jour de protection à télécharger au démarrage ou après certains événements de protection fournis par le cloud. |
 |[Gérer les mises à jour pour les appareils mobiles et les machines virtuelles](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| Vous pouvez spécifier des paramètres, par exemple si des mises à jour doivent se produire sur la batterie, qui sont particulièrement utiles pour les appareils mobiles et les machines virtuelles. |
 | [mise à jour Microsoft Defender pour point de terminaison pour le capteur PEPT](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | Vous pouvez mettre à jour le capteur PEPT (MsSense.exe) inclus dans le nouveau package de solution unifiée Microsoft Defender pour point de terminaison publié en 2021.   |
+
+> [!TIP]
+> Si vous recherchez des informations relatives à l’antivirus pour d’autres plateformes, consultez :
+> - [Définir les préférences pour Microsoft Defender pour point de terminaison sur macOS](mac-preferences.md)
+> - [Microsoft Defender pour point de terminaison sur Mac](microsoft-defender-endpoint-mac.md)
+> - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
+> - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
+> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
+> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)

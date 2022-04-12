@@ -16,24 +16,28 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e1cbdd156306d7cc2ee41fd85baadb1fa51cf1ac
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8961428acee5d166b0cdad4982aa5f9ed48020af
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163037"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788829"
 ---
 # <a name="schedule-antivirus-scans-using-powershell"></a>Planifier des analyses antivirus à l’aide de PowerShell
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- Antivirus Microsoft Defender
 
-Cet article explique comment configurer des analyses programmées à l’aide d’cmdlets PowerShell. Pour en savoir plus sur la planification des analyses et sur les types d’analyse, voir Configurer des analyses rapides ou [complètes Antivirus Microsoft Defender planification.](schedule-antivirus-scans.md) 
+**Plateformes**
+- Windows
 
-## <a name="use-powershell-cmdlets-to-schedule-scans"></a>Utiliser les cmdlets PowerShell pour planifier des analyses
+Cet article explique comment configurer des analyses planifiées à l’aide d’applets de commande PowerShell. Pour en savoir plus sur la planification des analyses et sur les types d’analyse, consultez [Configurer des analyses rapides ou complètes planifiées Antivirus Microsoft Defender](schedule-antivirus-scans.md). 
 
-Utilisez les cmdlets suivantes :
+## <a name="use-powershell-cmdlets-to-schedule-scans"></a>Utiliser des applets de commande PowerShell pour planifier des analyses
+
+Utilisez les applets de commande suivantes :
 
 ```PowerShell
 Set-MpPreference -ScanParameters
@@ -43,11 +47,11 @@ Set-MpPreference -RandomizeScheduleTaskTimes
 
 ```
 
-Pour plus d’informations, voir Utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter les [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Antivirus Defender pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender.
+Pour plus d’informations, consultez [Utiliser les applets de commande PowerShell pour configurer et exécuter Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et les [applets de commande antivirus Defender](/powershell/module/defender/) pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender.
 
-## <a name="powershell-cmdlets-for-scheduling-scans-when-an-endpoint-is-not-in-use"></a>Cmdlets PowerShell pour la planification des analyses lorsqu’un point de terminaison n’est pas utilisé
+## <a name="powershell-cmdlets-for-scheduling-scans-when-an-endpoint-is-not-in-use"></a>Applets de commande PowerShell pour la planification des analyses lorsqu’un point de terminaison n’est pas utilisé
 
-Utilisez les cmdlets suivantes :
+Utilisez les applets de commande suivantes :
 
 ```PowerShell
 Set-MpPreference -ScanOnlyIfIdleEnabled
@@ -56,25 +60,35 @@ Set-MpPreference -ScanOnlyIfIdleEnabled
 Pour plus d’informations, consultez [Utiliser les applets de commande PowerShell pour configurer et exécuter l’antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et les [Applets de commande de l’antivirus Defender](/powershell/module/defender/).
 
 > [!NOTE]
-> Lorsque vous programmez des analyses à des moments où les points de terminaison ne sont pas utilisés, les analyses ne respectent pas la configuration de limitation du processeur et tirez pleinement parti des ressources disponibles pour effectuer l’analyse aussi rapidement que possible.
+> Lorsque vous planifiez des analyses pour les moments où les points de terminaison ne sont pas utilisés, les analyses ne respectent pas la configuration de limitation du processeur et tirent pleinement parti des ressources disponibles pour effectuer l’analyse aussi rapidement que possible.
 
-## <a name="powershell-cmdlets-for-scheduling-scans-to-complete-remediation"></a>Cmdlets PowerShell pour la planification des analyses afin de terminer la correction
+## <a name="powershell-cmdlets-for-scheduling-scans-to-complete-remediation"></a>Applets de commande PowerShell permettant de planifier des analyses pour terminer la correction
 
-Utilisez les cmdlets suivantes :
+Utilisez les applets de commande suivantes :
 
 ```PowerShell
 Set-MpPreference -RemediationScheduleDay
 Set-MpPreference -RemediationScheduleTime
 ```
 
-Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter les [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Antivirus Defender.
+Pour plus d’informations sur l’utilisation de [PowerShell avec Antivirus Microsoft Defender, consultez Utiliser les applets de commande PowerShell pour configurer et exécuter Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et [l’Antivirus Defender](/powershell/module/defender/).
 
-## <a name="powershell-cmdlets-for-scheduling-daily-scans"></a>Cmdlets PowerShell pour la planification des analyses quotidiennes
+## <a name="powershell-cmdlets-for-scheduling-daily-scans"></a>Applets de commande PowerShell pour la planification des analyses quotidiennes
 
-Utilisez les cmdlets suivantes :
+Utilisez les applets de commande suivantes :
 
 ```PowerShell
 Set-MpPreference -ScanScheduleQuickScanTime
 ```
 
-Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir Utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender/)Antivirus Microsoft Defender et Antivirus Defender.
+Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, consultez [Utiliser les applets de commande PowerShell pour configurer et exécuter Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et les [applets de commande antivirus Defender](/powershell/module/defender/).
+
+> [!TIP]
+> Si vous recherchez des informations relatives à l’antivirus pour d’autres plateformes, consultez :
+> - [Définir les préférences pour Microsoft Defender pour point de terminaison sur macOS](mac-preferences.md)
+> - [Microsoft Defender pour point de terminaison sur Mac](microsoft-defender-endpoint-mac.md)
+> - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
+> - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
+> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
+> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)

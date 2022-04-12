@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 04cedfa951387274261c3a7a064cf11a4b97db62
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 076b445a6ac129c1debd7cba813798f51aa6f86b
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731458"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789027"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Gérer les sources des mises à jour de la protection antivirus Microsoft Defender
 
@@ -30,6 +30,10 @@ ms.locfileid: "64731458"
 
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Antivirus Microsoft Defender
+
+**Plateformes**
+- Windows
 
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->
@@ -61,7 +65,7 @@ Il existe cinq emplacements où vous pouvez spécifier où un point de terminais
 
 - [Microsoft Update](https://support.microsoft.com/help/12373/windows-update-faq)
 - [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) <sup>[[1](#fn1)]<sup></sup>  
-- [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
+- [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [Partage de fichiers réseau](#unc-share)
 - [Mises à jour du renseignement de sécurité pour Antivirus Microsoft Defender et d’autres logiciels anti-programme malveillant](https://www.microsoft.com/wdsi/defenderupdates) <sup>Microsoft [[2](#fn1)]<sup></sup>
 
@@ -90,7 +94,7 @@ Chaque source a des scénarios classiques qui dépendent de la façon dont votre
 |service de mise à jour du serveur Windows|Vous utilisez Windows Service de mise à jour du serveur pour gérer les mises à jour de votre réseau.|
 |Microsoft Update|Vous souhaitez que vos points de terminaison se connectent directement à Microsoft Update. Cela peut être utile pour les points de terminaison qui se connectent de manière irrégulière à votre réseau d’entreprise, ou si vous n’utilisez pas Windows Service de mise à jour du serveur pour gérer vos mises à jour.|
 |Partage de fichiers|Vous disposez d’appareils non connectés à Internet (tels que des machines virtuelles). Vous pouvez utiliser votre hôte de machine virtuelle connecté à Internet pour télécharger les mises à jour vers un partage réseau, à partir duquel les machines virtuelles peuvent obtenir les mises à jour. Consultez le [guide de déploiement VDI](deployment-vdi-microsoft-defender-antivirus.md) pour savoir comment les partages de fichiers peuvent être utilisés dans des environnements d’infrastructure de bureau virtuel (VDI).|
-|Microsoft Endpoint Manager|Vous utilisez Microsoft Endpoint Manager pour mettre à jour vos points de terminaison.|
+|Gestionnaire de point de terminaison Microsoft|Vous utilisez Microsoft Endpoint Manager pour mettre à jour vos points de terminaison.|
 |Mises à jour du renseignement de sécurité et mises à jour de plateforme pour Antivirus Microsoft Defender et d’autres logiciels anti-programme malveillant Microsoft (anciennement appelés MMPC)|[Assurez-vous que vos appareils sont mis à jour pour prendre en charge SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). Antivirus Microsoft Defender mises à jour de la plateforme et du renseignement de sécurité sont fournies par le biais de Windows Update, et à compter du lundi 21 octobre 2019, les mises à jour de sécurité et les mises à jour de plateforme seront signées exclusivement SHA-2. <br/>Téléchargez les dernières mises à jour de protection en raison d’une infection récente ou pour aider à approvisionner une image de base forte pour le [déploiement VDI](deployment-vdi-microsoft-defender-antivirus.md). Cette option doit généralement être utilisée uniquement comme source de secours finale, et non comme source principale. Elle ne sera utilisée que si les mises à jour ne peuvent pas être téléchargées à partir de Windows Service de mise à jour serveur ou Microsoft Update pendant [un nombre spécifié de jours](/microsoft-365/security/defender-endpoint/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
 
 Vous pouvez gérer l’ordre dans lequel les sources de mise à jour sont utilisées avec stratégie de groupe, Microsoft Endpoint Configuration Manager, les applets de commande PowerShell et WMI.
@@ -280,6 +284,16 @@ Configurez un partage de fichiers réseau (UNC/lecteur mappé) pour télécharge
 
     > [!NOTE]
     > N’ajoutez pas le dossier x64 (ou x86) dans le chemin d’accès. Le processus mpcmdrun.exe l’ajoute automatiquement.
+
+> [!TIP]
+> Si vous recherchez des informations relatives à l’antivirus pour d’autres plateformes, consultez :
+> - [Définir les préférences pour Microsoft Defender pour point de terminaison sur macOS](mac-preferences.md)
+> - [Microsoft Defender pour point de terminaison sur Mac](microsoft-defender-endpoint-mac.md)
+> - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
+> - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
+> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
+> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
 
 ## <a name="related-articles"></a>Articles connexes
 

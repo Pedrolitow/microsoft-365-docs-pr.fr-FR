@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ROBOTS: noindex,nofollow
 description: Nous publions de nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365. Nous mettons également remplacé deux stratégies d’alerte existantes qui ont été mises hors service.
-ms.openlocfilehash: 895a1fa51b9db5991bdb5235fd467bbac581d02e
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: afdc547fc658b40c2eee7a92ef2043326e159b32
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109982"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759476"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365
 
@@ -36,43 +36,40 @@ Nous présenteront quatre nouvelles stratégies d’alerte par défaut relatives
 
 Le tableau suivant répertorie les nouvelles stratégies d’alerte et les stratégies d’alerte existantes qui seront supprimées. Consultez la section [Quelle sera la répercussion sur votre organisation](#how-this-will-affect-your-organization) pour obtenir des détails sur le déploiement.
 
-| Stratégie d’alerte nouvelle ou existante | Nom de la stratégie d’alerte | ID de la stratégie d’alerte|
-|:-----------------------------|:----------------|:--------------|
-| Nouveau| **Messages de courrier contenant une URL malveillante supprimée après la remise**   | 8E6BA277-EF39-404E-AAF1-294F6D9A2B88 |
-| Nouveau| **Messages de courrier contenant un fichier malveillant supprimé après la remise**  | 4b1820ec-39dc-45f3-abf6-5ee80df51fd2 |
-| Nouveau| **Messages de courrier d’une campagne remis, puis supprimés ultérieurement** | c8522cbb-9368-4e25-4ee9-08d8d899dfab |
-| Nouveau|**Messages électroniques supprimés après la remise**                | b8f6b088-5487-4c70-037c-08d8d71a43fe |
-| Existant (sera supprimé)| **Messages de courrier contenant des URL d’hameçonnage supprimées après la remise**| EA8169FA-0678-4751-8854-AEBEA7ADECEB |
-| Existant (sera supprimé)| **Messages de courrier contenant un programme malveillant supprimé après la remise**| 0179B3F7-3FDA-40C3-8F24-278563978DBB |
-||||
+|Stratégie d’alerte nouvelle ou existante|Nom de la stratégie d’alerte|ID de la stratégie d’alerte|
+|---|---|---|
+|Nouveau|**Messages de courrier contenant une URL malveillante supprimée après la remise**|8E6BA277-EF39-404E-AAF1-294F6D9A2B88|
+|Nouveau|**Messages de courrier contenant un fichier malveillant supprimé après la remise**|4b1820ec-39dc-45f3-abf6-5ee80df51fd2|
+|Nouveau|**Messages de courrier d’une campagne remis, puis supprimés ultérieurement**|c8522cbb-9368-4e25-4ee9-08d8d899dfab|
+|Nouveau|**Messages électroniques supprimés après la remise**|b8f6b088-5487-4c70-037c-08d8d71a43fe|
+|Existant (sera supprimé)|**Messages de courrier contenant des URL d’hameçonnage supprimées après la remise**|EA8169FA-0678-4751-8854-AEBEA7ADECEB|
+|Existant (sera supprimé)|**Messages de courrier contenant un programme malveillant supprimé après la remise**|0179B3F7-3FDA-40C3-8F24-278563978DBB|
 
 ## <a name="alert-severity-enhancements"></a>Améliorations de la gravité de l’alerte
 
 Le tableau suivant identifie les stratégies d’alerte par défaut dont les classifications de gravité sont en cours de modification. Nous modifions la classification de gravité de ces stratégies d’alerte pour mieux les aligner sur le risque potentiel et l’impact sur votre organisation et pour aider vos équipes de sécurité à classer par ordre de priorité les alertes générées par ces stratégies.
 
-| Alerte| ID de la stratégie d’alerte| Ancienne gravité| Nouvelle gravité  |
-|:----------|:---------------|:------------|:--------------|
-| **Activité suspecte de transfert d’e-mail**| BFD48F06-0865-41A6-85FF-ADB746423EBF | Moyen| Élevé|
-| **E-mail signalé par l’utilisateur en tant que programme malveillant ou hameçonnage** | B26A5770-0C38-434A-9380-3A3C2C27BBB3 | Informatif | Faible|
-| **Augmentation inhabituelle des e-mails signalés en tant que hameçonnage** | A00D8C62-9320-4EEA-A7E5-966B9AC09558 | Élevé| Moyen |
-| **Résultat de soumission administrateur terminé** | AE9B83DD-6039-4EA9-B675-6B0AC3BF4A41 | Faible| Informatif |
-| **Création de règle de redirection/transfert** | D59A8FD4-1272-41EE-9408-86F7BCF72479 | Faible| Informatif |
-| **Recherche eDiscovery démarrée ou exportée** | 6FDC5710-3998-47F0-AFBB-57CEFD7378A | Meduim | Informatif |
-|||||
+|Alerte|ID de la stratégie d’alerte|Ancienne gravité|Nouvelle gravité|
+|---|---|---|---|
+|**Activité suspecte de transfert d’e-mail**|BFD48F06-0865-41A6-85FF-ADB746423EBF|Moyen|Élevé|
+|**E-mail signalé par l’utilisateur en tant que programme malveillant ou hameçonnage**|B26A5770-0C38-434A-9380-3A3C2C27BBB3|Informatif|Faible|
+|**Augmentation inhabituelle des e-mails signalés en tant que hameçonnage**|A00D8C62-9320-4EEA-A7E5-966B9AC09558|Élevé|Moyen|
+|**Résultat de soumission administrateur terminé**|AE9B83DD-6039-4EA9-B675-6B0AC3BF4A41|Faible|Informatif|
+|**Création de règle de redirection/transfert**|D59A8FD4-1272-41EE-9408-86F7BCF72479|Faible|Informatif|
+|**Recherche eDiscovery démarrée ou exportée**|6FDC5710-3998-47F0-AFBB-57CEFD7378A|Meduim|Informatif|
 
 ## <a name="when-will-these-changes-happen"></a>À quelle période se produiront ces modifications
 
 Le tableau suivant définit la période à laquelle les nouvelles stratégies d’alerte commenceront à déclencher des alertes postérieures à la remise. Le tableau indique également le moment où les deux stratégies d’alerte existantes seront supprimées.
 
-| Stratégie d’alerte| Date |
-|:------------|:-----|
-| **Messages de courrier contenant une URL malveillante supprimée après la remise** (nouvelle) | Les alertes se déclencheront le 11 avril 2021|
-| **Messages de courrier contenant un fichier malveillant supprimé après la remise** (nouvelle) | Les alertes se déclencheront le 11 avril 2021 |
-| **Messages de courrier d’une campagne remis, puis supprimés ultérieurement** (nouvelle) | Les alertes se déclencheront le 28 mai 2021|
-| **Courriers malveillants remis, puis supprimés ultérieurement** (nouvelle) | Les alertes se déclencheront le 28 mai 2021|
-| **Messages de courrier contenant des URL d’hameçonnage supprimées après la remise** (existante, sera supprimée)| La stratégie d’alerte a été supprimée en juin 2021. Voir la section [Ce que vous devez faire pour vous préparer à ces changements](#what-you-need-to-do-to-prepare-for-these-changes).|
-| **Messages de courrier contenant un programme malveillant supprimé après la remise** (existante, sera supprimée) | La stratégie d’alerte a été supprimée en juin 2021. Voir la section [Ce que vous devez faire pour vous préparer à ces changements](#what-you-need-to-do-to-prepare-for-these-changes). |
-|||
+|Stratégie d’alerte|Date|
+|---|---|
+|**Messages de courrier contenant une URL malveillante supprimée après la remise** (nouvelle)|Les alertes se déclencheront le 11 avril 2021|
+|**Messages de courrier contenant un fichier malveillant supprimé après la remise** (nouvelle)|Les alertes se déclencheront le 11 avril 2021|
+|**Messages de courrier d’une campagne remis, puis supprimés ultérieurement** (nouvelle)|Les alertes se déclencheront le 28 mai 2021|
+|**Courriers malveillants remis, puis supprimés ultérieurement** (nouvelle)|Les alertes se déclencheront le 28 mai 2021|
+|**Messages de courrier contenant des URL d’hameçonnage supprimées après la remise** (existante, sera supprimée)|La stratégie d’alerte a été supprimée en juin 2021. Voir la section [Ce que vous devez faire pour vous préparer à ces changements](#what-you-need-to-do-to-prepare-for-these-changes).|
+|**Messages de courrier contenant un programme malveillant supprimé après la remise** (existante, sera supprimée)|La stratégie d’alerte a été supprimée en juin 2021. Voir la section [Ce que vous devez faire pour vous préparer à ces changements](#what-you-need-to-do-to-prepare-for-these-changes).|
 
 Le déploiement vers toutes les organisations des modifications de gravité d’alerte s’effectuera avant le 14 mai 2021.
 
@@ -100,7 +97,7 @@ Les nouvelles alertes seront lancées et déclencheront les Enquêtes et répons
 
 ## <a name="what-you-need-to-do-to-prepare-for-these-changes"></a>Ce que vous devez faire pour vous préparer à ces changements
 
-La façon dont votre organisation utilise ces alertes déterminera ce que vous devez effectuer pour vous préparer. Si vous avez mis en œuvre les alertes et que vous les utilisez ou que vous les utilisez via une API, une notification par e-mail d’alerte ou dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> ou le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>, vous devez modifier vos flux de travail.
+La façon dont votre organisation utilise ces alertes détermine ce que vous devez faire pour vous préparer. Si vous avez mis en œuvre les alertes et que vous les utilisez ou que vous les utilisez via une API, une notification par e-mail d’alerte ou dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> ou le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Portail Microsoft 365 Defender</a>, vous devez modifier vos flux de travail.
 
 **Si vous n’avez pas mis en œuvre ces alertes, vous pouvez effectuer l’une des opérations suivantes :**
 

@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 85e2da73fd54bd4d24e5ab8c4d104e33b5b4d877
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4ccb91f0a8c181697eb525dd8f5576e6f6cdc0d1
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326116"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789819"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Évaluer l’accès contrôlé aux dossiers
 
@@ -29,27 +29,31 @@ ms.locfileid: "63326116"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Antivirus Microsoft Defender
+
+**Plateformes**
+- Windows
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
-[L’accès contrôlé aux](controlled-folders.md) dossiers est une fonctionnalité qui permet de protéger vos documents et fichiers contre toute modification par des applications suspectes ou malveillantes. L’accès contrôlé aux dossiers est pris en charge sur Windows Server 2019, Windows Server 2022, Windows 10 et Windows 11 clients.
+[L’accès contrôlé aux dossiers](controlled-folders.md) est une fonctionnalité qui permet de protéger vos documents et fichiers contre les modifications apportées par des applications suspectes ou malveillantes. L’accès contrôlé aux dossiers est pris en charge sur les clients Windows Server 2019, Windows Server 2022, Windows 10 et Windows 11.
 
-Il est particulièrement utile pour vous protéger contre les [ransomware](https://www.microsoft.com/wdsi/threats/ransomware) qui tentent de chiffrer vos fichiers et de les maintenir en attente.
+Il est particulièrement utile pour vous protéger contre les [ransomwares](https://www.microsoft.com/wdsi/threats/ransomware) qui tentent de chiffrer vos fichiers et de les garder en otage.
 
 Cet article vous aide à évaluer l’accès contrôlé aux dossiers. Il explique comment activer le mode audit afin de pouvoir tester la fonctionnalité directement dans votre organisation.
 
 > [!TIP]
-> Vous pouvez également consulter le site web du scénario de démonstration microsoft Defender pour point de terminaison [sur demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que la fonctionnalité fonctionne et voir comment elle fonctionne.
+> Vous pouvez également visiter le site web Microsoft Defender pour point de terminaison scénario de démonstration à [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que la fonctionnalité fonctionne et voir comment elle fonctionne.
 
 > [!NOTE]
 > Le site de démonstration Defender pour point de terminaison sur demo.wd.microsoft.com est déconseillé et sera supprimé à l’avenir.
 
 ## <a name="use-audit-mode-to-measure-impact"></a>Utiliser le mode audit pour mesurer l’impact
 
-Activez l’accès contrôlé aux dossiers en mode audit pour voir un  enregistrement de ce qui se serait passé s’il était entièrement activé. Testez le fonctionnement de la fonctionnalité dans votre organisation pour vous assurer qu’elle n’affecte pas vos applications métier. Vous pouvez également avoir une idée du nombre de tentatives de modification de fichier suspectes qui se produisent généralement sur une certaine période de temps.
+Activez l’accès contrôlé aux dossiers en mode audit pour afficher un enregistrement de ce qui *se serait* passé s’il était entièrement activé. Testez le fonctionnement de la fonctionnalité dans votre organisation pour vous assurer qu’elle n’affecte pas vos applications métier. Vous pouvez également avoir une idée du nombre de tentatives de modification de fichier suspectes qui se produisent généralement sur une certaine période de temps.
 
-Pour activer le mode audit, utilisez l’cmdlet PowerShell suivante :
+Pour activer le mode audit, utilisez l’applet de commande PowerShell suivante :
 
 ```PowerShell
 Set-MpPreference -EnableControlledFolderAccess AuditMode
@@ -57,11 +61,11 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 > [!TIP]
 > Si vous souhaitez auditer entièrement le fonctionnement de l’accès contrôlé aux dossiers dans votre organisation, vous devez utiliser un outil de gestion pour déployer ce paramètre sur les appareils de votre réseau.
-Vous pouvez également utiliser une stratégie de groupe, Intune, la gestion des périphériques mobiles (MDM) ou des Microsoft Endpoint Manager pour configurer et déployer le paramètre, comme décrit dans la rubrique principale sur l’accès contrôlé aux [dossiers](controlled-folders.md).
+Vous pouvez également utiliser stratégie de groupe, Intune, la gestion des appareils mobiles (GPM) ou Microsoft Endpoint Manager pour configurer et déployer le paramètre, comme décrit dans la [rubrique principale d’accès contrôlé aux dossiers](controlled-folders.md).
 
-## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Passer en revue les événements d’accès contrôlé aux dossiers dans Windows’observateur d’événements
+## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Passer en revue les événements d’accès contrôlé aux dossiers dans Windows observateur d'événements
 
-Les événements d’accès contrôlé aux dossiers suivants apparaissent dans Windows’observateur d’événements sous Microsoft/Windows/Windows Defender/Opérationnel.
+Les événements d’accès contrôlé aux dossiers suivants apparaissent dans Windows observateur d'événements sous le dossier Microsoft/Windows/Windows Defender/Operational.
 
 ID d’événement | Description
 -|-
@@ -70,13 +74,13 @@ ID d’événement | Description
  1123 | Événement d’accès contrôlé aux dossiers bloqué
 
 > [!TIP]
-> Vous pouvez configurer un abonnement [Windows de l’événement](/windows/win32/wec/setting-up-a-source-initiated-subscription) pour collecter les journaux de manière centralisée. 
+> Vous pouvez configurer un [abonnement de transfert d’événements Windows](/windows/win32/wec/setting-up-a-source-initiated-subscription) pour collecter les journaux de manière centralisée. 
 
-## <a name="customize-protected-folders-and-apps"></a>Personnaliser les applications et les dossiers protégés
+## <a name="customize-protected-folders-and-apps"></a>Personnaliser des dossiers et des applications protégés
 
-Au cours de votre évaluation, vous pouvez ajouter des fichiers à la liste des dossiers protégés ou autoriser certaines applications à modifier des fichiers.
+Pendant votre évaluation, vous pouvez ajouter à la liste des dossiers protégés ou autoriser certaines applications à modifier des fichiers.
 
-Voir [Protéger les dossiers](controlled-folders.md) importants avec un accès contrôlé aux dossiers pour configurer la fonctionnalité à l’aide des outils de gestion, notamment la stratégie de groupe, PowerShell et les fournisseurs de services de configuration (CSP) DE GESTION.
+Consultez [Protéger les dossiers importants avec un accès contrôlé aux dossiers](controlled-folders.md) pour configurer la fonctionnalité avec des outils de gestion, notamment stratégie de groupe, PowerShell et les fournisseurs de services de configuration GPM.
 
 ## <a name="see-also"></a>Voir aussi
 
