@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble de la page Clients de Microsoft 365
+title: Vue d’ensemble de la page des locataires Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,126 +15,126 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Pour les fournisseurs de services gérés (MSP) à l’aide de Microsoft 365 Etomp, découvrez la page Clients.
-ms.openlocfilehash: 23f151664455c35bb2fcc191d774ead00927e830
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez la page Locataires.
+ms.openlocfilehash: 44111d62a9b8df9bf3b05ddbaa9cb4f3937159a4
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329990"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823518"
 ---
-# <a name="microsoft-365-lighthouse-tenants-page-overview"></a>Vue d’ensemble de la page Clients de Microsoft 365
+# <a name="microsoft-365-lighthouse-tenants-page-overview"></a>Vue d’ensemble de la page des locataires Microsoft 365 Lighthouse
 
-Microsoft 365 Permet de gérer les comptes clients en sélectionnant Clients dans le  volet de navigation de gauche pour ouvrir la page Clients. La page Locataires contient la liste de tous vos locataires. Vous pouvez sélectionner un client pour afficher des informations détaillées, y compris les coordonnées et l’état du déploiement.
+Microsoft 365 Lighthouse vous permet de gérer les comptes de locataire en sélectionnant **Locataires** dans le volet de navigation gauche pour ouvrir la page Locataires. La page Locataires contient une liste de tous vos locataires. Vous pouvez sélectionner un locataire pour afficher des informations détaillées, notamment les détails du contact et l’état du déploiement.
 
-La page Locataires inclut également les options suivantes :
+La page Locataires comprend également les options suivantes :
 
-- **Exporter :** Sélectionnez cette sélection pour exporter des données client vers un fichier de valeurs séparées par des virgules (.csv) Excel.
-- **Gérer les balises :** Sélectionnez pour ajouter, modifier ou supprimer une balise.
-- **Assigner des balises :** Sélectionnez cette sélection pour affecter une balise à un client.
-- **Recherche :** Entrez des mots clés pour localiser rapidement un client spécifique dans la liste.
+- **Exportation:** Sélectionnez cette option pour exporter les données du locataire vers un fichier Excel valeurs séparées par des virgules (.csv).
+- **Gérer les balises :** Sélectionnez cette option pour ajouter, modifier ou supprimer une balise.
+- **Attribuer des balises :** Sélectionnez cette option pour affecter une balise à un locataire.
+- **Rechercher:** Entrez des mots clés pour localiser rapidement un locataire spécifique dans la liste.
 
-:::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-page-overview.png" alt-text="Capture d’écran de la page Client.":::
+:::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-page-overview.png" alt-text="Capture d’écran de la page Locataire.":::
 
 ## <a name="tenant-list"></a>Liste des locataires
 
-La liste des locataires fournit des informations sur les différents locataires avec lesquels vous avez un contrat, y compris leur statut d’intégration client. La liste des locataires vous permet également de baliser les locataires pour fournir différents filtres tout au long du projet et d’en savoir plus sur un client donné et l’état de son plan de déploiement.
+La liste des locataires fournit des insights sur les différents locataires avec lesquels vous avez un contrat, y compris leur état d’intégration lighthouse. La liste des locataires vous permet également d’étiqueter les locataires pour fournir différents filtres dans Lighthouse, et d’en savoir plus sur un locataire donné et l’état de son plan de déploiement.
 
-Une fois que vos clients répondent aux [exigences d’intégration de Onboard](m365-lighthouse-requirements.md), son état s’affiche **comme actif** dans la liste des clients.
+Une fois que vos locataires répondent aux [exigences d’intégration de Lighthouse](m365-lighthouse-requirements.md), son état s’affiche comme **actif** dans la liste des locataires.
 
 La liste des locataires vous permet de :
 
-- Trier automatiquement les locataires par actif, inactif et non éligible.
+- Triez automatiquement les locataires par actif, inactif et inéligible.
 - Exportez la liste des locataires.
-- Affecter et gérer des balises.
+- Attribuez et gérez des balises.
 - Recherchez des locataires par nom.
-- Filtrer les clients par état, privilèges d’administration délégués (DAP) et balises.
+- Filtrez les locataires par état, par privilège d’administration délégué (DAP) et par balise.
 
-Pour désactiver le client ou afficher et gérer les balises, sélectionnez les trois points (autres actions) en regard du nom du client. Vous pouvez afficher des locataires individuels en sélectionnant le nom du client ou en sélectionnant l’une des balises affectées au client.
+Pour désactiver le locataire ou afficher et gérer les balises, sélectionnez les trois points (autres actions) en regard du nom du locataire. Vous pouvez afficher des locataires individuels en sélectionnant le nom du locataire ou en sélectionnant l’une des balises affectées au locataire.
 
 ## <a name="tenant-status"></a>État du client
 
-Le tableau suivant indique les différents états et leur signification.<br><br>
+Le tableau suivant présente les différents états et leur signification.<br><br>
 
 | État                                   | Description                                                                                             |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Actif                                   | L’intégration du client et le flux de données ont démarré.                                                           |
-| Inactif                                 | Le client a été mis hors carte à la demande du MSP et n’est plus géré dans le Jeu d’enfants.           |
-| In process                               | Client découvert, mais pas entièrement intégré.                                                              |
-| Inéligible - DAP ou GDAP n’est pas installé    | Le partenaire doit avoir des privilèges d’administrateur délégués (DAP) ou délégués granulaires (GDAP) à configurer avec le client. |
-| Inéligible - La licence requise est manquante | Le client n’a pas la licence requise.                                                               |
-| Inéligible : nombre d’utilisateurs dépassé         | Le client compte plus d’utilisateurs que le nombre autorisé.                                                                     |
-| Inéligible - Échec de la vérification géographique            | Le partenaire et le client doivent résider dans le même emplacement géographique.                                       |
+| Actif                                   | L’intégration des locataires et le flux de données ont démarré.                                                           |
+| Inactif                                 | Le locataire a été désinsgré à la demande du MSP et n’est plus géré dans Lighthouse.           |
+| En cours de traitement                               | Locataire découvert, mais pas entièrement intégré.                                                              |
+| Non éligible - DAP ou GDAP n’est pas configuré    | Le partenaire doit disposer de privilèges d’administrateur délégués (DAP) ou granulaires (GDAP) configurés avec le locataire. |
+| Inéligible - La licence requise est manquante | Le locataire n’a pas la licence requise.                                                               |
+| Non éligible - Nombre d’utilisateurs dépassé         | Le locataire a plus d’utilisateurs que ce qui est autorisé.                                                                     |
+| Non éligible - Échec de la vérification géographique            | Le partenaire et le client doivent résider dans le même emplacement géographique.                                       |
 
-Une fois que vous avez désactivé un client, vous ne pouvez pas agir sur le client tant que le processus d’inactivation n’est pas terminé. L’inactivation peut prendre jusqu’à 48 heures. Si vous décidez de réactiver un client, la réapparition des données peut prendre jusqu’à 48 heures.
+Une fois que vous avez désactivé un locataire, vous ne pouvez pas agir sur le locataire tant que le processus d’inactivation n’est pas terminé. L’inactivation peut prendre jusqu’à 48 heures. Si vous décidez de réactiver un locataire, la réapparition des données peut prendre jusqu’à 48 heures.
 
-## <a name="tenant-tags"></a>Balises de client
+## <a name="tenant-tags"></a>Balises de locataire
 
-Pour organiser vos clients et filtrer facilement les affichages existants, vous pouvez créer et affecter des balises à vos clients. Pour plus d’informations, [voir Gérer votre liste de locataires](m365-lighthouse-manage-tenant-list.md).
+Pour organiser vos locataires et filtrer facilement les vues existantes, vous pouvez créer et attribuer des balises à vos locataires. Pour plus d’informations, consultez [Gérer votre liste de locataires](m365-lighthouse-manage-tenant-list.md).
 
 > [!NOTE]
-> Vous pouvez créer jusqu’à 30 balises sur l’ensemble du client.
+> Vous pouvez créer jusqu’à 30 balises sur tous les locataires.
 
-## <a name="tenant-details-page"></a>Page des détails du client
+## <a name="tenant-details-page"></a>Page détails du locataire
 
-Pour afficher des informations détaillées sur le client, sélectionnez un client dans la liste des locataires. La page des détails du client contient les informations de contact et l’état du plan de déploiement.
+Pour afficher des informations détaillées sur le locataire, sélectionnez un locataire dans la liste des locataires. La page de détails du locataire contient les informations de contact et l’état du plan de déploiement.
 
-:::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-details-page.png" alt-text="Capture d’écran de la page détails du client.":::
+:::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-details-page.png" alt-text="Capture d’écran de la page détails du locataire.":::
 
 ### <a name="overview-tab"></a>Onglet Overview
 
-Sous l’onglet Vue d’ensemble, vous pouvez afficher la vue d’ensemble du client, les informations de contact et l’utilisation du service Microsoft 365.
+Sous l’onglet Vue d’ensemble, vous pouvez afficher la vue d’ensemble du locataire, les informations de contact et Microsoft 365 l’utilisation du service.
 
-#### <a name="tenant-overview-card"></a>Carte de vue d’ensemble du client
+#### <a name="tenant-overview-card"></a>Carte vue d’ensemble du locataire
 
-La carte de présentation du client fournit des informations sur le client à partir de son compte Microsoft 365.<br><br>
+La carte vue d’ensemble du locataire fournit des informations sur le locataire à partir de son compte Microsoft 365.<br><br>
 
-| Informations sur le client    | Description|
+| Informations sur le locataire    | Description|
 |-----------------------|------------------|
-| Headquarters    | Emplacement du client.|
-| Secteur d’activité    |Secteur d’activité de l’organisation.|
+| Headquarters    | Emplacement du locataire.|
+| Secteur d’activité    |L’industrie de l’organisation.|
 | Site web    |Site web de l’organisation. Vous pouvez modifier ce champ si aucune donnée n’est fournie.|
-| Domaine client    |Domaine de l’organisation.|
-| Nombre total d'utilisateurs    |Nombre d’utilisateurs affectés au client. Vous pouvez sélectionner ce numéro pour ouvrir la page Utilisateurs pour ce client.|
-| Nombre total d’appareils|Nombre d’appareils inscrits dans le client. Vous pouvez sélectionner ce numéro pour ouvrir la page Appareils pour ce client.|
+| Domaine du client    |Domaine de l’organisation.|
+| Nombre total d'utilisateurs    |Nombre d’utilisateurs affectés dans le locataire. Vous pouvez sélectionner ce numéro pour ouvrir la page Utilisateurs de ce locataire.|
+| Nombre total d’appareils|Nombre d’appareils inscrits dans le locataire. Vous pouvez sélectionner ce numéro pour ouvrir la page Appareils de ce locataire.|
 
-#### <a name="contacts-card"></a>Carte de contacts
+#### <a name="contacts-card"></a>Carte de visite
 
-La carte contacts vous permet d’entrer des informations pour les contacts clés au sein des locataires que vous gérez, telles que :
+La carte Contacts vous permet d’entrer des informations pour les contacts clés au sein des locataires que vous gérez, par exemple :
 
 - Nom
 - Titre
 - Phone
 - E-mail
-- Remarques
+- Notes
 
-La section Notes est un champ de texte que vous pouvez utiliser pour enregistrer des informations clés pour le client, telles que les préférences d’engagement, l’emplacement, le fuseau horaire et des détails sur leur rôle au sein de l’organisation.
+La section Notes est un champ de texte que vous pouvez utiliser pour enregistrer des informations clés pour le locataire, telles que les préférences d’engagement, l’emplacement, le fuseau horaire et des détails sur leur rôle au sein de l’organisation.
 
-Pour modifier les détails ou supprimer un contact existant, sélectionnez le nom du contact dans la liste. Dans le **volet Modifier le contact** , modifiez ou supprimez le contact. Pour ajouter un autre contact, **sélectionnez +Ajouter un contact**.
+Pour modifier les détails ou supprimer un contact existant, sélectionnez le nom du contact dans la liste. Dans le volet **Modifier le contact** , modifiez ou supprimez le contact. Pour ajouter un autre contact, sélectionnez **+Ajouter un contact**.
 
-#### <a name="microsoft-365-usage-card"></a>Carte d’utilisation Microsoft 365
+#### <a name="microsoft-365-usage-card"></a>carte d’utilisation Microsoft 365
 
-Il fournit des informations sur l’utilisation des services Microsoft 365, notamment le nombre d’utilisateurs au sein d’un client qui disposent d’une licence et utilisent activement chaque service. Active indique le nombre d’utilisateurs ou d’appareils qui se sont connectés au service au moins une fois au cours des 28 derniers jours. La modification indique la modification des utilisateurs et des appareils actifs depuis le mois dernier.
+Lighthouse fournit des insights sur l’utilisation des services Microsoft 365, y compris le nombre d’utilisateurs au sein d’un locataire disposant d’une licence et utilisant activement chaque service. Active indique le nombre d’utilisateurs ou d’appareils qui se sont connectés au service au moins une fois au cours des 28 derniers jours. La modification indique la modification des utilisateurs actifs et des appareils depuis le mois dernier.
 
 La carte d’utilisation Microsoft 365 contient deux sections :
 
-- **Services microsoft 365 à l’aide du logiciel en ligne :** Services qui peuvent être gérés au sein du portail Du portail Dente.
-- **Services Microsoft 365 supplémentaires :** Services inclus dans la suite Microsoft 365, mais qui ne peuvent pas être gérés dans le portail Microsoft 365 Portal pour le moment.
+- **Microsoft 365 Lighthouse services :** services qui peuvent être gérés dans le portail Lighthouse.
+- **Services Microsoft 365 supplémentaires :** services inclus dans la suite Microsoft 365, mais qui ne peuvent pas être gérés dans le portail Microsoft 365 Lighthouse pour l’instant.
 
 ### <a name="deployment-plans-tab"></a>Onglet Plans de déploiement
 
-L’onglet Plans de déploiement fournit l’état du plan de déploiement d’un client. Les étapes de déploiement de la liste sont basées sur la ligne de base appliquée au client. Pour voir les détails de l’étape de déploiement, sélectionnez une étape de déploiement dans la liste.
+L’onglet Plans de déploiement fournit l’état du plan de déploiement d’un locataire. Les étapes de déploiement de la liste sont basées sur la base de référence appliquée au locataire. Pour afficher les détails de l’étape de déploiement, sélectionnez une étape de déploiement dans la liste.
 
-L’onglet Plans de déploiement inclut également les options suivantes :
+L’onglet Plans de déploiement comprend également les options suivantes :
 
-- **Exporter :** Sélectionnez cette étape pour exporter les données de l’étape de déploiement vers un fichier de valeurs séparées par des virgules (.csv) Excel.
-- **Actualiser :** Sélectionnez pour récupérer les données d’étape de déploiement les plus récentes.
-- **Recherche :** Entrez des mots clés pour localiser rapidement une étape de déploiement spécifique dans la liste.
+- **Exportation:** Sélectionnez cette option pour exporter les données d’étape de déploiement vers un fichier Excel valeurs séparées par des virgules (.csv).
+- **Actualiser:** Sélectionnez cette option pour récupérer les données d’étape de déploiement les plus actuelles.
+- **Rechercher:** Entrez des mots clés pour localiser rapidement une étape de déploiement spécifique dans la liste.
 
 ## <a name="related-content"></a>Contenu associé
 
-[Conditions requises pour Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
+[Configuration requise pour Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\
+[MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)\
 [Gérer votre liste de locataires](m365-lighthouse-manage-tenant-list.md) (article)\
-[Vue d’ensemble de l’utilisation des lignes de base pour déployer des configurations client standard](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
-[Déployer les Microsoft 365 Lighthouse base de référence](m365-lighthouse-deploy-baselines.md) (article)
+[Vue d’ensemble de l’utilisation des bases de référence pour déployer des configurations de locataire standard](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
+[Déployer Microsoft 365 Lighthouse lignes de base](m365-lighthouse-deploy-baselines.md) (article)

@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f6e1efe1a5c5f87e0a71c5e96b28498a6faf296c
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: f06ed934f1ba1a24ba16fe3919d37e10526a3a2f
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783730"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823847"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer des serveurs Windows au service Microsoft Defender pour point de terminaison
 
@@ -144,26 +144,26 @@ Si vous avez entièrement mis à jour vos machines avec le dernier package [de c
 Le package d’installation vérifie si les composants suivants ont déjà été installés via une mise à jour :
 
 - [Mise à jour pour l’expérience client et la télémétrie de diagnostic](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
-- [Mise à jour pour le runtime C universel dans Windows](https://support.microsoft.com/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)
+- [Mise à jour du runtime C universel dans Windows](https://support.microsoft.com/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)
 
 **Prérequis pour Windows Server 2016** 
 
 La mise à jour de la pile de maintenance (SSU) du 14 septembre 2021 ou une version ultérieure doit être installée.  La dernière mise à jour cumulative (LCU) du 20 septembre 2018 ou une version ultérieure doit être installée.  Il est recommandé d’installer les derniers SSU et LCU disponibles sur le serveur.  
 
-La fonctionnalité antivirus Microsoft Defender doit être installée et exécutée version 4.18.2109.6 ou ultérieure.  Vous pouvez télécharger et installer la dernière version de la plateforme à l’aide de Windows Update. Vous pouvez également télécharger le package de mise à jour manuellement à partir du [catalogue Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) ou de [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
+La fonctionnalité Antivirus Microsoft Defender doit être installée et exécutée version 4.18.2109.6 ou ultérieure.  Vous pouvez télécharger et installer la dernière version de la plateforme à l’aide de Windows Update. Vous pouvez également télécharger le package de mise à jour manuellement à partir du [catalogue Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) ou de [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
 
 **Conditions préalables à l’exécution avec des solutions de sécurité tierces**
 
-Si vous envisagez d’utiliser une solution de logiciel anti-programme malveillant tiers, vous devez exécuter l’antivirus Microsoft Defender en mode passif. Vous devez vous rappeler de définir le mode passif pendant le processus d’installation et d’intégration.
+Si vous envisagez d’utiliser une solution de logiciel anti-programme malveillant tiers, vous devez exécuter Antivirus Microsoft Defender en mode passif. Vous devez vous rappeler de définir le mode passif pendant le processus d’installation et d’intégration.
 
 
 **Package de mise à jour pour Microsoft Defender pour point de terminaison sur Windows Server 2012 R2 et 2016**
 > [!NOTE]
-> Si vous installez Microsoft Defender pour point de terminaison sur des serveurs avec McAfee Endpoint Security (ENS) ou VirusScan Enterprise (VSE), la version de la plateforme McAfee devra peut-être être mise à jour pour garantir que l’antivirus Microsoft Defender n’est pas supprimé ou désactivé. Pour plus d’informations, notamment les numéros de version spécifiques requis, consultez [l’article du Centre de connaissances McAfee](https://kc.mcafee.com/corporate/index?page=content&id=KB88214).
+> Si vous installez Microsoft Defender pour point de terminaison sur des serveurs avec McAfee Endpoint Security (ENS) ou VirusScan Enterprise (VSE), la version de la plateforme McAfee devra peut-être être mise à jour pour vous assurer que Antivirus Microsoft Defender n’est pas supprimée ou désactivée. Pour plus d’informations, notamment les numéros de version spécifiques requis, consultez [l’article du Centre de connaissances McAfee](https://kc.mcafee.com/corporate/index?page=content&id=KB88214).
 
 
 
-Pour recevoir des améliorations et des correctifs réguliers du produit pour le composant capteur EDR, assurez-vous que Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) est appliqué ou approuvé. En outre, pour conserver les composants de protection mis à jour, consultez [Gérer les mises à jour de l’Antivirus Microsoft Defender et appliquer des lignes de base](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
+Pour recevoir régulièrement des améliorations et des correctifs pour le composant capteur PEPT, assurez-vous que Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) est appliqué ou approuvé. En outre, pour conserver les composants de protection mis à jour, consultez [Gérer les mises à jour Antivirus Microsoft Defender et appliquer des lignes de base](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
 
 ### <a name="onboarding-steps-summary"></a>Résumé des étapes d’intégration
 
@@ -181,9 +181,9 @@ Vous devez télécharger les packages **d’installation** et **d’intégration
 
 
    > [!NOTE]
-   > Sur Windows Server 2012R2, l’Antivirus Microsoft Defender sera installé par le package d’installation et sera actif, sauf si vous le définissez en mode passif. Sur Windows Server 2016, l’Antivirus Microsoft Defender doit être installé en tant que fonctionnalité (voir [Basculer vers MDE](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016)) d’abord et entièrement mis à jour avant de poursuivre l’installation.
+   > Sur Windows Server 2012R2, Antivirus Microsoft Defender sera installé par le package d’installation et sera actif, sauf si vous le définissez en mode passif. Sur Windows Server 2016, Antivirus Microsoft Defender doit être installé en tant que fonctionnalité (voir [Basculer vers MDE](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016)) d’abord et entièrement mis à jour avant de poursuivre l’installation.
    > 
-   > Si vous exécutez une solution anti-programme malveillant non Microsoft, veillez à ajouter des exclusions pour l’antivirus Microsoft Defender ([à partir de cette liste de processus Microsoft Defender sous l’onglet Processus Defender](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)) à la solution non-Microsoft avant l’installation.  Il est également recommandé d’ajouter des solutions de sécurité non-Microsoft à la liste d’exclusions antivirus Defender.
+   > Si vous exécutez une solution anti-programme malveillant non Microsoft, veillez à ajouter des exclusions pour Antivirus Microsoft Defender ([à partir de cette liste de processus Microsoft Defender sous l’onglet Processus Defender](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)) à la solution non-Microsoft avant l’installation.  Il est également recommandé d’ajouter des solutions de sécurité non-Microsoft à la liste d’exclusions antivirus Defender.
 
 
 Le **package d’installation** contient un fichier MSI qui installe l’agent Microsoft Defender pour point de terminaison.
@@ -203,7 +203,7 @@ Pour télécharger les packages, procédez comme suit :
  
 4. Sélectionnez **Télécharger le package d’intégration** et enregistrez le fichier .zip.
 
-5. Installez le package d’installation à l’aide de l’une des options permettant d’installer l’antivirus Microsoft Defender. L’installation nécessite des autorisations d’administration.
+5. Installez le package d’installation à l’aide de l’une des options d’installation Antivirus Microsoft Defender. L’installation nécessite des autorisations d’administration.
 
 
 
@@ -211,7 +211,7 @@ Pour télécharger les packages, procédez comme suit :
 Dans cette étape, vous allez installer les composants de prévention et de détection requis avant d’intégrer votre appareil à l’environnement cloud Microsoft Defender pour point de terminaison, afin de préparer l’ordinateur à l’intégration. Vérifiez que toutes les [conditions préalables ont été remplies](#prerequisites) . 
 
    > [!NOTE]
-   > L’antivirus Microsoft Defender sera installé et sera actif, sauf si vous le définissez en mode passif. 
+   > Antivirus Microsoft Defender sera installé et sera actif, sauf si vous le définissez en mode passif. 
 
 #### <a name="options-to-install-the-microsoft-defender-for-endpoint-packages"></a>Options d’installation des packages Microsoft Defender pour point de terminaison
 
@@ -220,7 +220,7 @@ Dans la section précédente, vous avez téléchargé un package d’installatio
 Vous pouvez utiliser l’une des options suivantes pour installer l’agent :
 - [Installer à l’aide de la ligne de commande](#install-microsoft-defender-for-endpoint-using-the-command-line)
 - [Installer à l’aide d’un script](#install-microsoft-defender-for-endpoint-using-a-script)
-- [Appliquer les packages d’installation et d’intégration à l’aide de la stratégie de groupe](#apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy)
+- [Appliquer les packages d’installation et d’intégration à l’aide de stratégie de groupe](#apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy)
 
 ##### <a name="install-microsoft-defender-for-endpoint-using-the-command-line"></a>Installer Microsoft Defender pour point de terminaison à l’aide de la ligne de commande
 Utilisez le package d’installation de l’étape précédente pour installer Microsoft Defender pour point de terminaison. 
@@ -232,7 +232,7 @@ Exécutez la commande suivante pour installer Microsoft Defender pour point de t
 Msiexec /i md4ws.msi /quiet
 ```
 
-Pour désinstaller, vérifiez que la machine est d’abord désinstégée à l’aide du script de désintégrage approprié. Ensuite, utilisez les programmes \> et fonctionnalités du Panneau \> de configuration pour effectuer la désinstallation.
+Pour désinstaller, vérifiez que la machine est d’abord désinstégée à l’aide du script de désintégrage approprié. Utilisez ensuite Panneau de configuration \> programmes \> et fonctionnalités pour effectuer la désinstallation.
 
 Vous pouvez également exécuter la commande de désinstallation suivante pour désinstaller Microsoft Defender pour point de terminaison :
 
@@ -245,23 +245,23 @@ Pour que la commande ci-dessus réussisse, vous devez utiliser le même package 
 Le `/quiet` commutateur supprime toutes les notifications.
 
 > [!NOTE]
-> L’Antivirus Microsoft Defender ne passe pas automatiquement en mode passif. Vous pouvez choisir de définir l’antivirus Microsoft Defender pour qu’il s’exécute en mode passif si vous exécutez une solution antivirus/anti-programme malveillant non Microsoft. Pour les installations en ligne de commande, le composant antivirus Microsoft Defender facultatif `FORCEPASSIVEMODE=1` est immédiatement paramétré en mode passif pour éviter toute interférence. Ensuite, pour vous assurer que l’Antivirus Defender reste en mode passif après l’intégration pour prendre en charge des fonctionnalités telles que le bloc EDR, définissez la clé de Registre « ForceDefenderPassiveMode ».
+> Antivirus Microsoft Defender ne passe pas automatiquement en mode passif. Vous pouvez choisir de définir Antivirus Microsoft Defender à exécuter en mode passif si vous exécutez une solution antivirus/anti-programme malveillant non Microsoft. Pour les installations de ligne de commande, l’option définit `FORCEPASSIVEMODE=1` immédiatement le composant Antivirus Microsoft Defender en mode passif pour éviter toute interférence. Ensuite, pour vous assurer que l’Antivirus Defender reste en mode passif après l’intégration à des fonctionnalités telles que PEPT Block, définissez la clé de Registre « ForceDefenderPassiveMode ».
 
 La prise en charge de Windows Server fournit des informations plus approfondies sur les activités du serveur, la couverture de la détection des attaques de noyau et de mémoire, et permet des actions de réponse.
 
 ##### <a name="install-microsoft-defender-for-endpoint-using-a-script"></a>Installer Microsoft Defender pour point de terminaison à l’aide d’un script
 
-Vous pouvez utiliser le [script du programme d’installation](server-migration.md#installer-script) pour automatiser l’installation, la désinstallation et l’intégration. Pour plus d’informations, consultez les instructions de la section suivante pour utiliser le script avec la stratégie de groupe.
+Vous pouvez utiliser le [script du programme d’installation](server-migration.md#installer-script) pour automatiser l’installation, la désinstallation et l’intégration. Pour plus d’informations, consultez les instructions de la section suivante pour utiliser le script avec stratégie de groupe.
 
-##### <a name="apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy"></a>Appliquer les packages d’installation et d’intégration de Microsoft Defender pour point de terminaison à l’aide de la stratégie de groupe
+##### <a name="apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy"></a>Appliquer les packages d’installation et d’intégration Microsoft Defender pour point de terminaison à l’aide de la stratégie de groupe
 
-1. Créez une stratégie de groupe : <br> Ouvrez la [console de gestion des](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) stratégies de groupe (GPMC), cliquez avec le bouton droit sur **Objets** de stratégie de groupe que vous souhaitez configurer, puis cliquez sur **Nouveau**. Entrez le nom du nouvel objet de stratégie de groupe dans la boîte de dialogue qui s’affiche, puis cliquez sur **OK**.
+1. Créez une stratégie de groupe : <br> Ouvrez la [console de gestion stratégie de groupe](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), cliquez avec le bouton droit **sur stratégie de groupe Objets** que vous souhaitez configurer, puis cliquez sur **Nouveau**. Entrez le nom du nouvel objet de stratégie de groupe dans la boîte de dialogue qui s’affiche, puis cliquez sur **OK**.
 
-2. Ouvrez la [console de gestion des](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) stratégies de groupe (GPMC), cliquez avec le bouton droit sur l’objet de stratégie de groupe (GPO) que vous souhaitez configurer, puis cliquez sur **Modifier**.
+2. Ouvrez la [console de gestion stratégie de groupe](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), cliquez avec le bouton droit sur l’objet stratégie de groupe (GPO) que vous souhaitez configurer, puis cliquez sur **Modifier**.
 
-3. Dans **l’Éditeur de gestion des** stratégies de groupe, accédez à Configuration de l’ordinateur, puis **Préférences**, puis **paramètres du Panneau de configuration**.
+3. Dans **l’éditeur de gestion stratégie de groupe**, accédez à **Configuration de l’ordinateur**, puis **Préférences**, puis **aux paramètres du Panneau de configuration**.
 
-4. Cliquez avec le bouton droit sur **Tâches planifiées**, **pointez sur Nouveau**, puis cliquez sur **Tâche immédiate (Au moins Windows 7).**
+4. Cliquez avec le bouton droit sur **Tâches planifiées**, **pointez sur Nouveau**, puis cliquez sur **Tâche immédiate (au moins Windows 7).**
 
 5. Dans la fenêtre **Tâche** qui s’ouvre, accédez à l’onglet **Général** . Sous **Options de sécurité** , cliquez sur **Modifier l’utilisateur ou le groupe** et tapez SYSTEM, puis cliquez sur **Vérifier les noms** , puis **SUR OK**. NT AUTHORITY\SYSTEM apparaît sous la forme du compte d’utilisateur sous lequel la tâche s’exécutera.
 
@@ -284,17 +284,17 @@ Vous pouvez utiliser le [script du programme d’installation](server-migration.
 
    
 
-    Pour les scénarios dans lesquels vous souhaitez que l’antivirus Microsoft Defender coexiste avec des solutions anti-programme malveillant non Microsoft, ajoutez le paramètre $Passive pour définir le mode passif pendant l’installation.
+    Pour les scénarios où vous souhaitez Antivirus Microsoft Defender coexister avec des solutions anti-programme malveillant non Microsoft, ajoutez le paramètre $Passive pour définir le mode passif pendant l’installation.
 
 9. Sélectionnez **OK** et fermez toutes les fenêtres GPMC ouvertes.
 
-10. Pour lier l’objet de stratégie de groupe à une unité d’organisation, cliquez avec le bouton droit et sélectionnez **Lier un objet de stratégie de groupe existant**. Dans la boîte de dialogue qui s’affiche, sélectionnez l’objet de stratégie de groupe que vous souhaitez lier. Cliquez sur **OK**.
+10. Pour lier l’objet de stratégie de groupe à une unité d’organisation, cliquez avec le bouton droit et sélectionnez **Lier un objet de stratégie de groupe existant**. Dans la boîte de dialogue qui s’affiche, sélectionnez l’objet stratégie de groupe que vous souhaitez lier. Cliquez sur **OK**.
 
 Pour obtenir des paramètres de configuration supplémentaires, consultez [Configurer les exemples de paramètres de collecte](configure-endpoints-gp.md#configure-sample-collection-settings) et [autres paramètres de configuration recommandés](configure-endpoints-gp.md#other-recommended-configuration-settings).
 
 ### <a name="step-3-complete-the-onboarding-steps"></a>ÉTAPE 3 : Effectuer les étapes d’intégration
 
-Les étapes suivantes s’appliquent uniquement si vous utilisez une solution anti-programme malveillant tierce. Vous devez appliquer le paramètre de mode passif de l’Antivirus Microsoft Defender suivant. Vérifiez qu’il a été correctement configuré :
+Les étapes suivantes s’appliquent uniquement si vous utilisez une solution anti-programme malveillant tierce. Vous devez appliquer le paramètre de mode passif Antivirus Microsoft Defender suivant. Vérifiez qu’il a été correctement configuré :
 
 1. Définissez l’entrée de Registre suivante :
     - Chemin: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`

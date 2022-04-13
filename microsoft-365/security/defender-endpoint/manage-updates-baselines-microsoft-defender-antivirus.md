@@ -19,12 +19,12 @@ ms.date: 04/11/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 48ab00c97559ecbbfe430b89c3742b8914c224ba
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 596616328a02182b39c67f58137d43ab626e1756
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788477"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823309"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises à jour Antivirus Microsoft Defender et appliquer des lignes de base
 
@@ -75,7 +75,7 @@ Pour plus d’informations, consultez [Gérer les sources pour les mises à jour
 > - Cet article répertorie les modifications incluses dans le canal de mise en production à grande échelle. [Consultez la dernière version de canal général ici](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info).
 > - Pour en savoir plus sur le processus de déploiement progressif et pour plus d’informations sur la prochaine version, consultez [Gérer le processus de déploiement progressif pour les mises à jour de Microsoft Defender](manage-gradual-rollout.md).
 > - Pour en savoir plus sur les mises à jour du renseignement de sécurité, consultez [les mises à jour du renseignement de sécurité pour Antivirus Microsoft Defender et d’autres logiciels anti-programme malveillant Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates).
-> - Si vous recherchez une liste des processus Microsoft Defender, **[téléchargez le classeur mde-urls](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)**, puis sélectionnez la feuille de calcul **Processus Microsoft Defender** . Le classeur mde-urls répertorie également les services et leurs URL associées auxquels votre réseau doit pouvoir se connecter, comme décrit dans [Activer l’accès aux URL de service Microsoft Defender pour point de terminaison dans le serveur proxy](configure-proxy-internet.md).
+> - Si vous recherchez une liste des processus Microsoft Defender, **[téléchargez le classeur mde-urls](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)**, puis sélectionnez la feuille de calcul **Processus Microsoft Defender** . Le classeur mde-urls répertorie également les services et leurs URL associées auxquels votre réseau doit pouvoir se connecter, comme décrit dans [Activer l’accès aux URL de service Microsoft Defender pour point de terminaison dans le serveur proxy](configure-proxy-internet.md).
 
 ## <a name="monthly-platform-and-engine-versions"></a>Versions mensuelles de la plateforme et du moteur
 
@@ -998,5 +998,5 @@ Pour plus d’informations, consultez [la mise à jour de Microsoft Defender pou
 > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
-> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)

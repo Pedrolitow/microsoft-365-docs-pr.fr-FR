@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender API de recherche avancée
-description: Découvrez comment exécuter des requêtes de recherche avancée à l’aide Microsoft 365 Defender’API de recherche avancée de l’utilisateur
-keywords: Recherche avancée, API, api, M365 Defender, Microsoft 365 Defender
+title: MICROSOFT 365 DEFENDER’API de chasse avancée
+description: Découvrez comment exécuter des requêtes de chasse avancées à l’aide de l’API de chasse avancée de Microsoft 365 Defender
+keywords: Repérage avancé, API, API, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,54 +21,54 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 05957fcf7cf2b3b03fbc757fc8b21e67156b285a
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: d01cdacc40b58eb940b2773606221b4fdbe18728
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500824"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823187"
 ---
-# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender API de recherche avancée
+# <a name="microsoft-365-defender-advanced-hunting-api"></a>MICROSOFT 365 DEFENDER API de chasse avancée
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
-[Le recherche avancée](advanced-hunting-overview.md) est un outil de recherche de menaces qui utilise des requêtes spécialement conçues pour examiner les 30 derniers jours de données d’événement dans Microsoft 365 Defender.[](advanced-hunting-query-language.md) Vous pouvez utiliser des requêtes de recherche avancées pour inspecter les activités inhabituelles, détecter les menaces possibles et même répondre aux attaques. L’API de recherche avancée vous permet d’interroger par programmation des données d’événement.
+[La chasse avancée](advanced-hunting-overview.md) est un outil de chasse aux menaces qui utilise des [requêtes spécialement construites](advanced-hunting-query-language.md) pour examiner les 30 derniers jours de données d’événements dans Microsoft 365 Defender. Vous pouvez utiliser des requêtes de chasse avancées pour inspecter les activités inhabituelles, détecter les menaces possibles et même répondre aux attaques. L’API de chasse avancée vous permet d’interroger par programmation des données d’événement.
 
 ## <a name="quotas-and-resource-allocation"></a>Quotas et allocation de ressources
 
 Les conditions suivantes concernent toutes les requêtes.
 
 1. Les requêtes explorent et retournent des données des 30 derniers jours.
-2. Les résultats peuvent renvoyer jusqu’à 100 000 lignes.
-3. Vous pouvez effectuer jusqu’à 45 appels par minute et par client.
+2. Les résultats peuvent retourner jusqu’à 100 000 lignes.
+3. Vous pouvez effectuer jusqu’à 45 appels par minute par locataire.
 4. Les requêtes sont bloquées si le client a atteint 100 % jusqu’au terme du cycle de 15 minutes suivant.
-5. Si une seule demande s’exécute pendant plus de 10 minutes, elle prend du temps et retourne une erreur.
+5. Si une seule requête s’exécute pendant plus de 10 minutes, elle expire et retourne une erreur.
 6. Un `429` code de réponse HTTP indique que vous avez atteint un quota, soit par nombre de demandes envoyées, soit par temps d’exécution alloué. Lisez le corps de la réponse pour comprendre la limite que vous avez atteinte. 
 
 > [!NOTE]
-> Tous les quotas répertoriés ci-dessus (par exemple, 15 appels par minute) sont par taille de client. Ces quotas sont au minimum.
+> Tous les quotas répertoriés ci-dessus (par exemple, 15 appels par minute) sont par taille de locataire. Ces quotas sont le minimum.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler l’API de recherche avancée. Pour en savoir plus, notamment sur la façon de choisir les autorisations, voir [Les API Access Microsoft 365 Defender Protection](api-access.md)
+L’une des autorisations suivantes est requise pour appeler l’API de chasse avancée. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Access the Microsoft 365 Defender Protection API](api-access.md)
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 -|-|-
-Application | AdvancedQuery.Read.All| Exécuter des requêtes avancées
-Déléguée (compte professionnel ou scolaire) | AdvancedQuery.Read | Exécuter des requêtes avancées
+Application | AdvancedHunting.Read.All| Exécuter des requêtes avancées
+Déléguée (compte professionnel ou scolaire) | AdvancedHunting.Read | Exécuter des requêtes avancées
 
 >[!Note]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
 >- L’utilisateur doit avoir le rôle AD « Afficher les données »
->- L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils.
+>- L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres du groupe d’appareils.
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -80,30 +80,30 @@ POST https://api.security.microsoft.com/api/advancedhunting/run
 
 En-tête | Valeur
 -|-
-Autorisation | Remarque {token} du porteur **: obligatoire**
+Autorisation | Note du porteur {token} **: obligatoire**
 Content-Type | application/json
 
 ## <a name="request-body"></a>Corps de la demande
 
-Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
+Dans le corps de la demande, fournissez un objet JSON avec les paramètres suivants :
 
-Paramètre | Type | Description
+Parameter | Type | Description
 -|-|-
 Requête | Texte | Requête à exécuter. **Remarque : obligatoire**
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode retourne `200 OK`un objet _QueryResponse_ dans le corps de la réponse.
+Si elle réussit, cette méthode renvoie `200 OK`et un objet _QueryResponse_ dans le corps de la réponse.
 
 L’objet de réponse contient trois propriétés de niveau supérieur :
 
 1. Statistiques : dictionnaire des statistiques de performances des requêtes.
-2. Schéma : schéma de la réponse, liste des Name-Type pour chaque colonne.
-3. Résultats : liste des événements de recherche avancés.
+2. Schéma : schéma de la réponse, liste de paires Name-Type pour chaque colonne.
+3. Résultats : liste des événements de chasse avancés.
 
 ## <a name="example"></a>Exemple
 
-Dans l’exemple suivant, un utilisateur envoie la requête ci-dessous et reçoit un objet de réponse API contenant `Stats`, `Schema`et `Results`.
+Dans l’exemple suivant, un utilisateur envoie la requête ci-dessous et reçoit un objet de réponse d’API contenant `Stats`, `Schema`et `Results`.
 
 ### <a name="query"></a>Requête
 
@@ -180,7 +180,7 @@ Dans l’exemple suivant, un utilisateur envoie la requête ci-dessous et reçoi
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Accéder aux API Microsoft 365 Defender de données](api-access.md)
+- [Accéder aux API Microsoft 365 Defender](api-access.md)
 - [En savoir plus sur les limites d’API et les licences](api-terms.md)
 - [Comprendre les codes d’erreur](api-error-codes.md)
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)

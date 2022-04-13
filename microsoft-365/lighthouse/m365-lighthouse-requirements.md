@@ -15,53 +15,54 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Pour les fournisseurs de services gérés , obtenez la liste des conditions requises pour utiliser Microsoft 365 Lighthouse.
-ms.openlocfilehash: 51dd2404f03dc58d5975a37c386ba9c8f1333763
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Pour les fournisseurs de services gérés (MSP), obtenez une liste des conditions requises pour utiliser Microsoft 365 Lighthouse.
+ms.openlocfilehash: d5f04c39cbce9726fefa4b410be63cd5ee4e959d
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327250"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823671"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Conditions requises pour Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse est un portail d’administration qui permet aux fournisseurs de services gérés (MSP) de sécuriser et de gérer les appareils, les données et les utilisateurs à grande échelle pour les petites et moyennes entreprises (SMB).  
+Microsoft 365 Lighthouse est un portail d’administration qui permet aux fournisseurs de services gérés (MSP) de sécuriser et de gérer des appareils, des données et des utilisateurs à grande échelle pour les clients de petite et moyenne entreprise (SMB).
 
-Les MSP doivent être inscrits au programme fournisseur de solutions Cloud (CSP) en tant que revendeur indirect ou partenaire de facture directe pour utiliser le Programme d’accès au détail.  
+Les MSP doivent être inscrits au programme fournisseur de solutions Cloud (CSP) en tant que revendeur indirect ou partenaire de facturation directe pour utiliser Lighthouse.
 
-En outre, chaque client MSP doit être éligible à l’aide de la sécurité en se contentant des conditions suivantes : 
- 
-- Privilèges d’administration délégués (DAP) ou privilèges d’administration délégués granulaires (GDAP) pour le MSP 
-- Au moins une licence Microsoft 365 Business Premium ou Microsoft 365 E3 licence 
-- Moins de 1 000 utilisateurs sous licence  
+En outre, chaque locataire client MSP doit être éligible à Lighthouse en répondant aux exigences suivantes :
 
-## <a name="requirements-for-enablingdevice-management"></a>Conditions requises pour l’activation de la gestion des appareils
+- Doit avoir configuré l’accès délégué pour que le fournisseur de services managés (MSP) puisse gérer le locataire client*
+- Doit avoir au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3 ou Windows 365 Affaires
+- Ne doit pas avoir plus de 1 000 utilisateurs sous licence
 
-Pour afficher les appareils clients sur les pages de gestion des appareils, un MSP doit :
+*Des privilèges d’administrateur délégués (DAP) sont nécessaires pour intégrer des clients à Lighthouse. Nous vous recommandons également d’établir des privilèges d’administrateur délégué granulaires (GDAP) avec vos clients pour permettre un accès délégué plus sécurisé. Bien que DAP et GDAP coexistent, GDAP est prioritaire pour les clients où les deux modèles sont en place. Bientôt, les clients disposant uniquement de GDAP (et pas de DAP) pourront intégrer Lighthouse.
 
-- Inscrire tous les appareils clients dans Microsoft Endpoint Manager (MEM).Pour plus d’informations, voir [Inscrire des appareils dans Microsoft Intune](/mem/intune/enrollment/).
-- Affecter des stratégies de conformité à tous les appareils clients.Pour plus d’informations, voir [Créer une stratégie de conformité dans Microsoft Intune](/mem/intune/protect/create-compliance-policy). 
+## <a name="requirements-for-enabling-device-management"></a>Configuration requise pour l’activation de la gestion des appareils
 
-## <a name="requirements-for-enabling-usermanagement"></a>Conditions requises pour l’activation de la gestion des utilisateurs 
+Pour afficher les appareils clients locataires dans les pages de gestion des appareils, un fournisseur de services mobiles doit :
 
-Pour que les données client s’afficheront dans les rapports sur les pages de gestion des utilisateurs, y compris les utilisateurs à risque, l’authentification multifacteur et la réinitialisation du mot de passe, les clients doivent avoir des licences pour Azure Active Directory Premium P1 ou une licence ultérieure. Azure AD Premium P1 est inclus dans les Microsoft 365 Business Premium et Microsoft 365 E3.   
+- Inscrire tous les appareils clients dans Microsoft Endpoint Manager (MEM). Pour plus d’informations, consultez [Inscrire des appareils dans Microsoft Intune](/mem/intune/enrollment/).
+- Attribuez des stratégies de conformité à tous les appareils clients. Pour plus d’informations, consultez [Créer une stratégie de conformité dans Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
-## <a name="requirements-for-enablingthreat-management"></a>Conditions requises pour activer la gestion des menaces 
+## <a name="requirements-for-enabling-user-management"></a>Configuration requise pour l’activation de la gestion des utilisateurs
 
-Pour afficher les appareils client et les menaces sur les pages de gestion des menaces, vous devez inscrire tous les appareils client client dans Microsoft Endpoint Manager (MEM) et les protéger en exécutant Antivirus Microsoft Defender.  
+Pour que les données client s’affichent dans les rapports sur les pages de gestion des utilisateurs, notamment les utilisateurs à risque, l’authentification multifacteur et la réinitialisation de mot de passe, les locataires clients doivent disposer de licences pour Azure Active Directory Premium P1 ou version ultérieure. Azure AD Premium P1 est inclus avec Microsoft 365 Business Premium et Microsoft 365 E3.
 
-Pour plus d’informations, voir [Inscrire des appareils dans Microsoft Intune](/mem/intune/enrollment/).  
+## <a name="requirements-for-enabling-threat-management"></a>Configuration requise pour l’activation de la gestion des menaces
 
-Antivirus Microsoft Defender fait partie du système d Windows d’exploitation et est activé par défaut sur les appareils exécutant Windows 10.  
+Pour afficher les appareils clients et les menaces sur les pages de gestion des menaces, vous devez inscrire tous les appareils clients clients dans Microsoft Endpoint Manager (MEM) et les protéger en exécutant Antivirus Microsoft Defender.
 
-> [!NOTE] 
-> Si vous utilisez une solution antivirus non Microsoft et que vous n’utilisez pas Antivirus Microsoft Defender, Antivirus Microsoft Defender est désactivé automatiquement. Lorsque vous désinstallez la solution antivirus non Microsoft, Antivirus Microsoft Defender est activé automatiquement pour protéger vos appareils Windows contre les menaces.    
+Pour plus d’informations, consultez [Inscrire des appareils dans Microsoft Intune](/mem/intune/enrollment/).
+
+Antivirus Microsoft Defender fait partie du système d’exploitation Windows et est activé par défaut sur les appareils exécutant Windows 10.
+
+> [!NOTE]
+> Si vous utilisez une solution antivirus non-Microsoft et que vous n’êtes pas Antivirus Microsoft Defender, Antivirus Microsoft Defender est désactivé automatiquement. Lorsque vous désinstallez la solution antivirus non Microsoft, Antivirus Microsoft Defender est activé automatiquement pour protéger vos appareils Windows contre les menaces.
 
 ## <a name="related-content"></a>Contenu associé
 
-[Configurer la sécurité Microsoft 365 Lighthouse portail d’entreprise](m365-lighthouse-configure-portal-security.md) (article)\
-[Microsoft 365 Lighthouse vue d’ensemble de la page de conformité des](m365-lighthouse-device-compliance-page-overview.md) appareils (article)\
+[Configurer Microsoft 365 Lighthouse sécurité du portail](m365-lighthouse-configure-portal-security.md) (article)\
+[Microsoft 365 Lighthouse vue d’ensemble de la page conformité des](m365-lighthouse-device-compliance-page-overview.md) appareils (article)\
 [Microsoft 365 Lighthouse vue d’ensemble de la page Utilisateurs](m365-lighthouse-users-page-overview.md) (article)\
-[Microsoft 365 Lighthouse de la page Gestion des menaces](m365-lighthouse-threat-management-page-overview.md) (article)\
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
-
+[Microsoft 365 Lighthouse vue d’ensemble de la page de gestion des menaces](m365-lighthouse-threat-management-page-overview.md) (article)\
+[MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)

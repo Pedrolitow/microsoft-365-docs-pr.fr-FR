@@ -12,13 +12,13 @@ ms.collection: Strat_SP_gtc
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-description: Découvrez comment configurer la recherche dans un environnement multigéogé. Seuls certains clients, tels que OneDrive, peuvent renvoyer des résultats dans un environnement multigéogé.
-ms.openlocfilehash: d6d6895c6dc393bb1f28dff60dea996bf80aad5a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez comment configurer la recherche dans un environnement multigéographique. Seuls certains clients, tels que OneDrive, peuvent retourner des résultats dans un environnement multigéographique.
+ms.openlocfilehash: a6f152a3f226befa8bc060dadd0eed1c0952523c
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204178"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824923"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Configurer la recherche pour Microsoft 365 Multi-Geo
 
@@ -66,7 +66,7 @@ Certaines fonctionnalités de recherche auxquelles vous êtes habitué fonctionn
 <thead>
 <tr class="header">
 <th align="left">Fonctionnalité</th>
-<th align="left">Fonctionnement</th>
+<th align="left">Mode de fonctionnement</th>
 <th align="left">Solution de contournement</th>
 </tr>
 </thead>
@@ -84,7 +84,7 @@ Certaines fonctionnalités de recherche auxquelles vous êtes habitué fonctionn
 <tr class="odd">
 <td align="left"></td>
 <td align="left">La recherche multigéographique ne prend pas en charge la création dynamique de compartiments pour les affinements numériques.</td>
-<td align="left">Utilisez le <a href="/sharepoint/dev/general-development/query-refinement-in-sharepoint">paramètre « Discretize » pour</a> les affinements numériques.</td>
+<td align="left">Utilisez le <a href="/sharepoint/dev/general-development/query-refinement-in-sharepoint">paramètre « Discretize »</a> pour les affinements numériques.</td>
 </tr>
 <tr class="even">
 <td align="left">ID de document</td>
@@ -122,7 +122,7 @@ Certaines fonctionnalités de recherche auxquelles vous êtes habitué ne sont p
 </tr>
 <tr class="even">
 <td align="left">Invités</td>
-<td align="left">Les invités obtiennent uniquement les résultats de l’emplacement géographique à partir de qui ils recherchent.</td>
+<td align="left">Les invités obtiennent uniquement les résultats de l’emplacement géographique à partir de laquelle ils recherchent.</td>
 </tr>
 </tbody>
 </table>
@@ -131,7 +131,7 @@ Certaines fonctionnalités de recherche auxquelles vous êtes habitué ne sont p
 
 Tous les clients de recherche utilisent les API REST de recherche SharePoint existantes pour interagir avec les index de recherche.
 
-![Diagramme montrant comment SharePoint API REST de recherche interagissent avec les index de recherche.](../media/configure-search-for-multi-geo-image1-1.png)
+![Diagramme montrant comment les API REST de recherche SharePoint interagissent avec les index de recherche.](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. Un client de recherche appelle le point de terminaison REST de recherche avec la propriété de requête EnableMultiGeoSearch= true.
 2. La requête est envoyée à tous les emplacements géographiques dans le client.
@@ -155,7 +155,7 @@ Chaque centre de recherche possède plusieurs secteurs verticaux et vous devez c
 
 4. Dans le composant WebPart de résultats de recherche, déplacez le pointeur vers le coin supérieur droit et cliquez sur la flèche, puis sur **Modifier le composant WebPart** dans le menu. Le volet des outils du composant WebPart des résultats de recherche s’ouvre sous le ruban en haut à droite de la page.
 
-   ![Modifier la sélection de la partie Web.](../media/configure-search-for-multi-geo-image3.png)
+   ![Modifier la sélection du composant WebPart.](../media/configure-search-for-multi-geo-image3.png)
 
 5. Dans le volet des outils du composant WebPart, dans la section **Paramètres**, sous **Paramètres de contrôle des résultats**, sélectionnez **Afficher les résultats multigéographiques** pour que le composant WebPart Résultats de la recherche affiche les résultats de tous les emplacements géographiques.
 

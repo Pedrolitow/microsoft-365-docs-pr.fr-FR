@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
 description: Découvrez comment exécuter un script pour ajouter des boîtes aux lettres & OneDrive Entreprise sites à une nouvelle conservation associée à un cas eDiscovery dans le Centre de conformité Microsoft 365.
-ms.openlocfilehash: a678649ebd15a34bdfe5765449d41feae1b14901
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 10a605b422178e5006d8a027a697ca6745f82b98
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761238"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824485"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Utiliser un script pour ajouter des utilisateurs à une conservation dans un cas core eDiscovery
 
@@ -47,7 +47,7 @@ Voici les étapes à suivre pour y parvenir :
 
 - Vous devez être membre du groupe de rôles eDiscovery Manager dans le Centre de conformité Microsoft 365 et administrateur SharePoint Online pour exécuter le script à l’étape 3. Pour plus d’informations, consultez [Attribuer des autorisations eDiscovery dans le Centre de sécurité & conformité Office 365](assign-ediscovery-permissions.md).
 
-- Un maximum de 1 000 boîtes aux lettres et 100 sites peuvent être ajoutés à une conservation associée à un cas eDiscovery dans le Centre de conformité Microsoft 365. En supposant que chaque utilisateur que vous souhaitez mettre en attente dispose d’un site OneDrive Entreprise, vous pouvez ajouter un maximum de 100 utilisateurs à une conservation à l’aide du script de cet article.
+- Un maximum de 1 000 boîtes aux lettres et 100 sites peuvent être ajoutés à une conservation associée à un cas eDiscovery de base dans le Centre de conformité Microsoft 365. En supposant que chaque utilisateur que vous souhaitez mettre en attente dispose d’un site OneDrive Entreprise, vous pouvez ajouter un maximum de 100 utilisateurs à une conservation à l’aide du script de cet article.
 
 - Veillez à enregistrer la liste des utilisateurs que vous créez à l’étape 2 et le script de l’étape 3 dans le même dossier. Cela facilite l’exécution du script.
 

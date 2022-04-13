@@ -19,34 +19,99 @@ ms.custom:
 - LIL_Placement
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
-description: Explique comment utiliser PowerShell pour afficher des informations sur les plans de gestion des licences, les services et les licences disponibles dans Microsoft 365 organisation.
-ms.openlocfilehash: 3b90596c68e3beadcc2b33ef59ff9c3503b84f8a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Explique comment utiliser PowerShell pour afficher des informations sur les plans de licence, les services et les licences disponibles dans votre organisation Microsoft 365.
+ms.openlocfilehash: 8b5ff01f15e4dea7a44b423609b6533cc5729a5f
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195268"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823891"
 ---
 # <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>Afficher Microsoft 365 licences et services avec PowerShell
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Chaque Microsoft 365 abonnement comprend les éléments suivants :
+Chaque abonnement Microsoft 365 se compose des éléments suivants :
 
-- **Plans de gestion des licences** Ces plans sont également appelés plans de licence ou plans Microsoft 365 de licence. Les plans de gestion des licences définissent Microsoft 365 services disponibles pour les utilisateurs. Votre abonnement Microsoft 365 peut contenir plusieurs plans de gestion des licences. Un exemple de plan de gestion des licences serait Microsoft 365 E3.
+- **Plans de licence** Il s’agit également de plans de licence ou de plans de Microsoft 365. Les plans de licence définissent les services Microsoft 365 disponibles pour les utilisateurs. Votre abonnement Microsoft 365 peut contenir plusieurs plans de licence. Un exemple de plan de licence serait Microsoft 365 E3.
     
-- **Services** Ces plans sont également appelés plans de service. Les services sont les Microsoft 365, fonctionnalités et fonctionnalités disponibles dans chaque plan de gestion des licences, par exemple, Exchange Online et Applications Microsoft 365 pour les grandes entreprises (précédemment Office 365 ProPlus). Des licences issues de différents plans de licence peuvent être attribuées à un même utilisateur, lui accordant l’accès à des services différents.
+- **Services** Il s’agit également de plans de service. Les services sont les produits, fonctionnalités et fonctionnalités Microsoft 365 disponibles dans chaque plan de licence, par exemple, Exchange Online et Applications Microsoft 365 pour les grandes entreprises (précédemment nommés Office 365 ProPlus). Des licences issues de différents plans de licence peuvent être attribuées à un même utilisateur, lui accordant l’accès à des services différents.
     
-- **Licences** Chaque plan de gestion des licences contient le nombre de licences que vous avez achetées. Vous attribuez des licences aux utilisateurs afin qu’ils peuvent utiliser les services Microsoft 365 définis par le plan de gestion des licences. Chaque compte d’utilisateur nécessite au moins une licence d’un plan de gestion des licences afin qu’il puisse se connecter Microsoft 365 et utiliser les services.
+- **Licences** Chaque plan de licence contient le nombre de licences que vous avez achetées. Vous attribuez des licences aux utilisateurs afin qu’ils puissent utiliser les services Microsoft 365 définis par le plan de licences. Chaque compte d’utilisateur nécessite au moins une licence d’un plan de licence pour pouvoir se connecter à Microsoft 365 et utiliser les services.
     
-Vous pouvez utiliser PowerShell pour Microsoft 365 pour afficher des détails sur les plans de gestion des licences, les licences et les services disponibles dans Microsoft 365 organisation. Pour plus d’informations sur les produits, fonctionnalités et services disponibles dans différents abonnements Office 365, voir Office 365 [Options de plan.](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+Vous pouvez utiliser PowerShell pour Microsoft 365 afin d’afficher des détails sur les plans de licence, les licences et les services disponibles dans votre organisation Microsoft 365. Pour plus d’informations sur les produits, fonctionnalités et services disponibles dans différents abonnements Office 365, consultez [Office 365 Options de plan](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
 
+
+## <a name="use-the-microsoft-graph-powershell-sdk"></a>Utiliser le Kit de développement logiciel (SDK) Microsoft Graph PowerShell
+
+Tout [d’abord, connectez-vous à votre locataire Microsoft 365](/graph/powershell/get-started#authentication).
+
+La lecture des plans de licence d’abonnement nécessite l’étendue d’autorisation Organization.Read.All ou l’une des autres autorisations répertoriées dans la [page de référence « List subscribedSkus » API Graph](/graph/api/subscribedsku-list).
+
+```powershell
+Connect-Graph -Scopes Organization.Read.All
+```
+
+Pour afficher des informations récapitulatives sur vos plans de licence actuels et les licences disponibles pour chaque plan, exécutez la commande suivante :
+  
+```powershell
+Get-MgSubscribedSku | Select -Property Sku*, ConsumedUnits -ExpandProperty PrepaidUnits | Format-List
+```
+
+Les résultats contiennent :
+  
+- **SkuPartNumber :** Affiche les plans de licence disponibles pour votre organisation. Par exemple, `ENTERPRISEPACK` est le nom du plan de licence pour Office 365 Entreprise E3.
+    
+- **Activé:** Nombre de licences que vous avez achetées pour un plan de licence spécifique.
+    
+- **ConsumedUnits :** Nombre de licences que vous avez attribuées aux utilisateurs à partir d’un plan de licence spécifique.
+    
+Pour afficher des détails sur les services Microsoft 365 disponibles dans tous vos plans de licence, commencez par afficher la liste de vos plans de licence.
+
+```powershell
+Get-MgSubscribedSku
+```
+
+Ensuite, stockez les informations sur les plans de licence dans une variable.
+
+```powershell
+$licenses = Get-MgSubscribedSku
+```
+
+Ensuite, affichez les services dans un plan de licence spécifique.
+
+```powershell
+$licenses[<index>].ServicePlans
+```
+
+\<index> est un entier qui spécifie le numéro de ligne du plan de licence à partir de l’affichage de la `Get-MgSubscribedSku | Select SkuPartNumber` commande, moins 1.
+
+Par exemple, si l’affichage de la commande est le `Get-MgSubscribedSku | Select SkuPartNumber` suivant :
+
+```powershell
+SkuPartNumber
+-------------
+WIN10_VDA_E5
+EMSPREMIUM
+ENTERPRISEPREMIUM
+FLOW_FREE
+```
+
+Ensuite, la commande permettant d’afficher les services pour le plan de licence ENTERPRISEPREMIUM est la suivante :
+
+```powershell
+$licenses[2].ServicePlans
+```
+
+ENTERPRISEPREMIUM est la troisième ligne. Par conséquent, la valeur d’index est (3 - 1) ou 2.
+
+Pour obtenir la liste complète des plans de licence (également appelés noms de produits), leurs plans de service inclus et leurs noms conviviaux [correspondants, consultez les noms de produits et les identificateurs de plan de service pour la gestion des licences](/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 
-Tout [d’abord, connectez-vous à Microsoft 365 client.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Tout [d’abord, connectez-vous à votre locataire Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
-Pour afficher des informations récapitulatifs sur vos plans de gestion des licences actuels et les licences disponibles pour chaque plan, exécutez la commande ci-après :
+Pour afficher des informations récapitulatives sur vos plans de licence actuels et les licences disponibles pour chaque plan, exécutez la commande suivante :
   
 ```powershell
 Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty PrepaidUnits
@@ -54,19 +119,19 @@ Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty P
 
 Les résultats contiennent :
   
-- **SkuPartNumber :** Affiche les plans de gestion des licences disponibles pour votre organisation. Par exemple, `ENTERPRISEPACK` est le nom du plan de licence Office 365 Entreprise E3.
+- **SkuPartNumber :** Affiche les plans de licence disponibles pour votre organisation. Par exemple, `ENTERPRISEPACK` est le nom du plan de licence pour Office 365 Entreprise E3.
     
-- **Activé :** Nombre de licences que vous avez achetées pour un plan de gestion des licences spécifique.
+- **Activé:** Nombre de licences que vous avez achetées pour un plan de licence spécifique.
     
-- **ConsumedUnits :** Nombre de licences que vous avez attribuées à des utilisateurs à partir d’un plan de gestion des licences spécifique.
+- **ConsumedUnits :** Nombre de licences que vous avez attribuées aux utilisateurs à partir d’un plan de licence spécifique.
     
-Pour afficher des détails sur les services Microsoft 365 disponibles dans tous vos plans de licence, affichez d’abord la liste de vos plans de licence.
+Pour afficher des détails sur les services Microsoft 365 disponibles dans tous vos plans de licence, commencez par afficher la liste de vos plans de licence.
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-Ensuite, stockez les informations des plans de licence dans une variable.
+Ensuite, stockez les informations sur les plans de licence dans une variable.
 
 ```powershell
 $licenses = Get-AzureADSubscribedSku
@@ -78,9 +143,9 @@ Ensuite, affichez les services dans un plan de licence spécifique.
 $licenses[<index>].ServicePlans
 ```
 
-\<index> est un nombre total qui spécifie le numéro de ligne du plan de licence à partir de l’affichage de la `Get-AzureADSubscribedSku | Select SkuPartNumber` commande, moins 1.
+\<index> est un entier qui spécifie le numéro de ligne du plan de licence à partir de l’affichage de la `Get-AzureADSubscribedSku | Select SkuPartNumber` commande, moins 1.
 
-Par exemple, si l’affichage de la `Get-AzureADSubscribedSku | Select SkuPartNumber` commande est le cas :
+Par exemple, si l’affichage de la commande est le `Get-AzureADSubscribedSku | Select SkuPartNumber` suivant :
 
 ```powershell
 SkuPartNumber
@@ -91,7 +156,7 @@ ENTERPRISEPREMIUM
 FLOW_FREE
 ```
 
-Ensuite, la commande d’affichage des services pour le plan de licence ENTERPRISEPREMIUM est la :
+Ensuite, la commande permettant d’afficher les services pour le plan de licence ENTERPRISEPREMIUM est la suivante :
 
 ```powershell
 $licenses[2].ServicePlans
@@ -99,17 +164,17 @@ $licenses[2].ServicePlans
 
 ENTERPRISEPREMIUM est la troisième ligne. Par conséquent, la valeur d’index est (3 - 1) ou 2.
 
-Pour obtenir la liste complète des plans de licence (également appelés noms de produits), leurs plans de service inclus et leurs noms convivial correspondants, voir Noms de produits et identificateurs de plan de service pour la [gestion des licences.](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)
+Pour obtenir la liste complète des plans de licence (également appelés noms de produits), leurs plans de service inclus et leurs noms conviviaux [correspondants, consultez les noms de produits et les identificateurs de plan de service pour la gestion des licences](/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le module Microsoft Azure Active Directory pour Windows PowerShell.
 
-Tout [d’abord, connectez-vous à Microsoft 365 client.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Tout [d’abord, connectez-vous à votre locataire Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 >[!Note]
->Un script PowerShell est disponible pour automatiser les procédures décrites dans cette rubrique. Plus précisément, le script vous permet d’afficher et de désactiver des services dans votre organisation Microsoft 365, y compris Sway. Pour plus d’informations, voir [Désactiver l’accès à Sway avec PowerShell.](disable-access-to-sway-with-microsoft-365-powershell.md)
+>Un script PowerShell est disponible pour automatiser les procédures décrites dans cette rubrique. Plus précisément, le script vous permet d’afficher et de désactiver les services de votre organisation Microsoft 365, y compris les Sway. Pour plus d’informations, consultez [Désactiver l’accès à Sway avec PowerShell](disable-access-to-sway-with-microsoft-365-powershell.md).
 >
     
-Pour afficher des informations récapitulatifs sur vos plans de gestion des licences actuels et les licences disponibles pour chaque plan, exécutez la commande suivante :
+Pour afficher des informations récapitulatives sur vos plans de licence actuels et les licences disponibles pour chaque plan, exécutez la commande suivante :
   
 ```powershell
 Get-MsolAccountSku
@@ -121,13 +186,13 @@ Get-MsolAccountSku
 
 Les résultats contiennent les informations suivantes :
   
-- **AccountSkuId :** Affichez les plans de gestion des licences disponibles pour votre organisation à l’aide de la `<CompanyName>:<LicensingPlan>` syntaxe.  _\<CompanyName>_ est la valeur que vous avez fournie lorsque vous vous êtes inscrit à Microsoft 365 et est unique pour votre organisation. La _\<LicensingPlan>_ valeur est la même pour tout le monde. Par exemple, dans la valeur , le nom de la société est et le nom du plan de gestion des licences, qui est le nom du système `litwareinc:ENTERPRISEPACK` `litwareinc` Office 365 Entreprise `ENTERPRISEPACK` E3.
+- **AccountSkuId :** Affichez les plans de licence disponibles pour votre organisation à l’aide de la syntaxe `<CompanyName>:<LicensingPlan>`.  _\<CompanyName>_ est la valeur que vous avez fournie lorsque vous vous êtes inscrit à Microsoft 365 et est unique pour votre organisation. La _\<LicensingPlan>_ valeur est la même pour tout le monde. Par exemple, dans la valeur`litwareinc:ENTERPRISEPACK`, le nom de la société est `litwareinc`, et le nom `ENTERPRISEPACK`du plan de licence , qui est le nom du système pour Office 365 Entreprise E3.
     
-- **ActiveUnits :** Nombre de licences que vous avez achetées pour un plan de gestion des licences spécifique.
+- **ActiveUnits :** Nombre de licences que vous avez achetées pour un plan de licence spécifique.
     
-- **WarningUnits :** Nombre de licences dans un plan de gestion des licences que vous n’avez pas renouvelé et qui expireront après la période de grâce de 30 jours.
+- **WarningUnits :** Nombre de licences dans un plan de licence que vous n’avez pas renouvelé et qui expireront après la période de grâce de 30 jours.
     
-- **ConsumedUnits :** Nombre de licences que vous avez attribuées à des utilisateurs à partir d’un plan de gestion des licences spécifique.
+- **ConsumedUnits :** Nombre de licences que vous avez attribuées aux utilisateurs à partir d’un plan de licence spécifique.
     
 Pour afficher des détails sur les services Microsoft 365 disponibles dans tous vos plans de licence, exécutez la commande suivante :
   
@@ -135,7 +200,7 @@ Pour afficher des détails sur les services Microsoft 365 disponibles dans tous 
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-Le tableau suivant présente les plans Microsoft 365 service et leurs noms convivial pour les services les plus courants. La liste de vos plans de services peut être différente. 
+Le tableau suivant présente les plans de service Microsoft 365 et leurs noms conviviaux pour les services les plus courants. La liste de vos plans de services peut être différente. 
   
 |**Plan de services**|**Description**|
 |:-----|:-----|
@@ -143,21 +208,21 @@ Le tableau suivant présente les plans Microsoft 365 service et leurs noms convi
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Applications Microsoft 365 pour les grandes entreprises *(précédemment Office 365 ProPlus)*  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Applications Microsoft 365 pour les grandes entreprises *(précédemment nommé Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype Entreprise Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online (plan 2)  <br/> |
    
-Pour obtenir la liste complète des plans de licence (également appelés noms de produits), leurs plans de service inclus et leurs noms convivial correspondants, voir Noms de produits et identificateurs de plan de service pour la [gestion des licences.](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)
+Pour obtenir la liste complète des plans de licence (également appelés noms de produits), leurs plans de service inclus et leurs noms conviviaux [correspondants, consultez les noms de produits et les identificateurs de plan de service pour la gestion des licences](/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
 
-Pour afficher des détails sur les services Microsoft 365 disponibles dans un plan de gestion des licences spécifique, utilisez la syntaxe suivante.
+Pour afficher des détails sur les services Microsoft 365 disponibles dans un plan de licence spécifique, utilisez la syntaxe suivante.
   
 ```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "<AccountSkuId>"}).ServiceStatus
 ```
 
-Cet exemple montre les services disponibles dans le plan de gestion des licences litwareinc:ENTERPRISEPACK (Office 365 Entreprise E3).
+Cet exemple montre les services disponibles dans le plan de licence litwareinc:ENTERPRISEPACK (Office 365 Entreprise E3).
   
 ```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: En savoir plus sur la liste d’expressions, les expressions régulières et les types d’explications de proximité dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 71c7379b3a9fcd71b996da5eefd18b6aaaef5016
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: ae31ee3e4d9550c54f884360f3beea960db47b20
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61872536"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824781"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Types d’explications dans Microsoft SharePoint Syntex
 
@@ -119,10 +119,10 @@ Pour ajouter un type d’explication d’expression régulière :
 
 Le tableau suivant présente les options de caractères inline qui ne sont actuellement pas disponibles pour une utilisation dans les modèles d’expression régulière.
 
-|Option  |État  |Fonctionnalités actuelles  |
-|---------|---------|---------|
-|Respect de la casse | Actuellement non pris en charge. | Toutes les correspondances effectuées ne respectent pas la casse.  |
-|Ancres de ligne     | Actuellement non pris en charge. | Impossible de spécifier une position spécifique dans une chaîne où une correspondance doit se produire.   |
+|Option|État|Fonctionnalités actuelles|
+|---|---|---|
+|Respect de la casse|Actuellement non pris en charge.|Toutes les correspondances effectuées ne respectent pas la casse.|
+|Ancres de ligne|Actuellement non pris en charge.| Impossible de spécifier une position spécifique dans une chaîne où une correspondance doit se produire.|
 
 ## <a name="proximity"></a>Proximité
 
@@ -149,11 +149,11 @@ Pour utiliser le type d’explication de proximité, vous devez comprendre ce qu
 Le tableau suivant illustre des exemples sur la façon de déterminer le nombre de jetons dans une expression.
 
 |Expression|Nombre de jetons|Explication|
-|--|--|--|
+|---|---|---|
 |`Dog`|1|Un seul mot sans ponctuation ni espaces.|
 |`RMT33W`|1|Numéro de localisateur d’enregistrement. Il peut inclure des chiffres et des lettres, mais n’a pas de ponctuation.|
-|`425-555-5555`|5|Un numéro de téléphone. Chaque signe de ponctuation équivaut à un seul jeton, donc `425-555-5555` correspond à 5 jetons :<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555` |
-|`https://luis.ai`|7 |`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`<br>|
+|`425-555-5555`|5|Un numéro de téléphone. Chaque signe de ponctuation équivaut à un seul jeton, donc `425-555-5555` correspond à 5 jetons :<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555`|
+|`https://luis.ai`|7 |`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`|
 
 #### <a name="configure-the-proximity-explanation-type"></a>Configurer le type d’explication de proximité
 
@@ -211,17 +211,18 @@ Vous pouvez choisir l'une des trois options suivantes :
    ![Plage personnalisée.](../media/content-understanding/custom-file.png)
 
     Dans la visionneuse, vous pouvez ajuster manuellement la case à sélectionner de manière à inclure l’emplacement où la phase a lieu. Pour ce paramètre, vous devez sélectionner une position de **Début** et une position de **Fin**. Ces valeurs représentent le nombre de jetons dès le début du document. Bien que vous pouvez entrer manuellement ces valeurs, il est plus facile d’ajuster manuellement la case à sélectionner dans la visionneuse.
-    
-## <a name="considerations-when-configuring-explanations"></a>Considérations lors de la configuration des explications
-Lors de la formation d’un classificateur, gardez à l’esprit quelques éléments qui produisent des résultats plus prévisibles :
 
-- Plus vous formez de documents, plus le classifieur est précis.  Dans la mesure du possible, utilisez plus de 5 bons documents et utilisez plus d’un document non bon.  Si les bibliothèques avec qui vous travaillez ont plusieurs types de documents différents, plusieurs de chaque type entraînent des résultats plus prévisibles.
-- L’étiquetage du document joue un rôle important dans le processus de formation.  Elles sont utilisées avec des explications pour former le modèle.  Vous pouvez voir certaines anomalies lors de la formation d’un classifieur avec des documents qui n’ont pas beaucoup de contenu.  Il se peut que l’explication ne corresponde à rien dans le document, mais comme il a été étiqueté comme « bon » document, il se peut qu’il corresponde au cours de l’entraînement.
-- Lors de la création d’explications, elle utilise la logique OR en combinaison avec l’étiquette pour déterminer s’il s’agit d’une correspondance.  L’expression régulière qui utilise la logique AND peut être plus prévisible.  Voici un exemple d’expression régulière à utiliser sur des documents réels pour les former.  Notez que le texte en rouge est la ou les expressions que vous recherchez.
+## <a name="considerations-when-configuring-explanations"></a>Considérations relatives à la configuration des explications
+
+Lorsque vous entraînez un classifieur, il y a quelques éléments à garder à l’esprit qui produisent des résultats plus prévisibles :
+
+- Plus vous entraînerez de documents, plus le classifieur sera précis.  Si possible, utilisez plus de 5 documents corrects et utilisez plus d’un document incorrect.  Si les bibliothèques avec qui vous travaillez ont plusieurs types de documents différents, plusieurs de chaque type entraînent des résultats plus prévisibles.
+- L’étiquetage du document joue un rôle important dans le processus d’entraînement.  Ils sont utilisés avec des explications pour entraîner le modèle.  Vous pouvez voir des anomalies lors de l’apprentissage d’un classifieur avec des documents qui n’ont pas beaucoup de contenu.  L’explication peut ne pas correspondre à quoi que ce soit dans le document, mais étant donné qu’il a été étiqueté comme un « bon » document, vous pouvez voir qu’il s’agit d’une correspondance pendant l’entraînement.
+- Lors de la création d’explications, il utilise la logique OR en combinaison avec l’étiquette pour déterminer s’il s’agit d’une correspondance.  L’expression régulière qui utilise la logique AND peut être plus prévisible.  Voici un exemple d’expression régulière à utiliser sur des documents réels pour les former.  Notez que le texte mis en surbrillance en rouge est la ou les expressions que vous recherchez.
 
     <pre>(?=.*network provider)(?=.*participating providers).*</pre>
-    
-- Les étiquettes et les explications fonctionnent ensemble et sont utilisées dans la formation du modèle.  Il ne s’agit pas d’une série de règles qui peuvent être découplés et des pondérations ou prédictions précises appliquées à chaque variable qui a été configurée.  Plus la variante de documents utilisée dans la formation est importante, plus le modèle est précis.
+
+- Les étiquettes et les explications fonctionnent ensemble et sont utilisées pour entraîner le modèle.  Il ne s’agit pas d’une série de règles qui peuvent être dissociées et des pondérations ou prédictions précises appliquées à chaque variable qui a été configurée.  Plus la variation des documents utilisés dans l’entraînement est importante, plus le modèle est précis.
 
 ### <a name="see-also"></a>Voir aussi
 

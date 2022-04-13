@@ -109,8 +109,6 @@
             - name: Suivre l’historique de vos résultats et atteindre vos objectifs
               href: microsoft-secure-score-history-metrics-trends.md
             - name: Nouveautés
-              href: microsoft-secure-score-whats-coming.md
-            - name: Nouveautés
               href: microsoft-secure-score-whats-new.md
         - name: Protéger vos points de terminaison
           href: ../defender-endpoint/index.yml

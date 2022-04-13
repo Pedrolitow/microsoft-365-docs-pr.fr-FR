@@ -11,13 +11,13 @@ f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
-description: Découvrez comment effectuer des tâches clés de gestion Microsoft OneLTI, notamment la suppression, l’affichage, la modification et la résolution des problèmes.
-ms.openlocfilehash: 2b623be8467b50d1682a7bdc63ce603a3ad9a859
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+description: Découvrez comment effectuer des tâches clés de gestion Microsoft OneLTI, notamment l’affichage, la suppression, la modification et la résolution des problèmes.
+ms.openlocfilehash: 8b788028a453969f13c31bbe72962c1b7df955a6
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747423"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823458"
 ---
 # <a name="manage-microsoft-onelti-for-any-lms"></a>Gérer Microsoft OneLTI pour n’importe quel LMS
 
@@ -25,11 +25,21 @@ Microsoft OneLTI s’intègre à plusieurs LMS, notamment Canvas, Blackboard et 
 
 Dans cet article, les administrateurs informatiques trouveront des instructions sur les principales tâches de gestion OneLTI.
 
-- [Supprimez une inscription LTI](#delete-an-lti-registration).
 - [Afficher une inscription LTI](#view-an-lti-registration).
+- [Supprimez une inscription LTI](#delete-an-lti-registration).
 - [Modifiez une inscription LTI](#edit-an-lti-registration).
 - [Résoudre les problèmes liés à OneLTI](#troubleshoot-issues-with-onelti).
 - [Signaler les problèmes liés à OneLTI](#report-problems-with-onelti).
+
+## <a name="view-an-lti-registration"></a>Afficher une inscription LTI
+
+Si vous souhaitez afficher les détails d’une inscription LTI, suivez les étapes ci-dessous.
+
+1. Visitez [le portail Microsoft LTI](https://lti.microsoft.com/).
+2. Connectez-vous avec un compte d’administrateur Microsoft 365.
+3. Dans la liste d’inscription, recherchez l’inscription LTI que vous souhaitez afficher.
+4. Sélectionnez **l’icône d’œil** en regard de la liste.
+5. Le panneau détails de l’inscription s’ouvre.
 
 ## <a name="delete-an-lti-registration"></a>Supprimer une inscription LTI
 
@@ -42,23 +52,13 @@ Si vous souhaitez supprimer une inscription Microsoft OneLTI, suivez les étapes
 5. Dans la boîte de dialogue de confirmation, **sélectionnez Supprimer** pour confirmer la suppression.
 6. Un message de réussite s’affiche une fois supprimé.
 
-## <a name="view-an-lti-registration"></a>Afficher une inscription LTI
-
-Si vous souhaitez afficher les détails d’une inscription LTI, suivez les étapes ci-dessous.
-
-1. Visitez [le portail Microsoft LTI](https://lti.microsoft.com/).
-2. Connectez-vous avec un compte d’administrateur Microsoft 365.
-3. Dans la liste d’inscription, recherchez l’inscription LTI que vous souhaitez afficher.
-4. Sélectionnez **l’icône d’œil** en regard de la liste.
-5. Le panneau détails de l’inscription s’ouvre.
-
 ## <a name="edit-an-lti-registration"></a>Modifier une inscription LTI
 
 Actuellement, nous ne prenons pas en charge la modification d’une inscription LTI existante après son ajout.
 
 Pour modifier une inscription LTI, vous devez :
 
-1. Supprimez l’inscription existante.
+1. [Supprimez l’inscription existante](#delete-an-lti-registration).
 2. Ajoutez une nouvelle inscription.
 
 ## <a name="troubleshoot-issues-with-onelti"></a>Résoudre les problèmes liés à OneLTI
