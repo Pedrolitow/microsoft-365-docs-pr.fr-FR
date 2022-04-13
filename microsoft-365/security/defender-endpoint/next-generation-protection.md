@@ -15,18 +15,23 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 94f920d298c5b74eff39290ced4ccdc58031ac0f
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 71cfbfe44525d67362ad7acc2c9d063ef0bb9ffd
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807403"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790347"
 ---
 # <a name="next-generation-protection-overview"></a>Vue d’ensemble de la protection nouvelle génération
 
 **S’applique à**
+
+- Antivirus Microsoft Defender
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+**Plateformes**
+- Windows
 
 Microsoft Defender pour point de terminaison inclut une protection nouvelle génération pour renforcer le périmètre de sécurité de votre réseau. La protection de nouvelle génération a été conçue pour intercepter tous les types de menaces émergentes. Outre Antivirus Microsoft Defender, vos services de protection nouvelle génération incluent les fonctionnalités suivantes :
 
@@ -54,3 +59,14 @@ Pour obtenir des informations sur la configuration des services de protection no
 
 > [!NOTE]
 > La configuration et la gestion sont en grande partie les mêmes dans Windows Server que dans les clients Windows. Il existe cependant certaines différences. 
+
+> [!TIP]
+> Si vous recherchez des informations relatives à l’antivirus pour d’autres plateformes, consultez :
+> - [Définir les préférences pour Microsoft Defender pour point de terminaison sur macOS](mac-preferences.md)
+> - [Microsoft Defender pour point de terminaison sur Mac](microsoft-defender-endpoint-mac.md)
+> - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
+> - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+

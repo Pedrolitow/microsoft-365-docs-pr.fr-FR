@@ -15,12 +15,12 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 48a411d836669a47479daa68a83a96c3e65b949f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 071bd6fe59a7200e1d16cf94633b0d7b3cb688c5
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473230"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788103"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activer Bloquer à la première consultation
 
@@ -28,6 +28,10 @@ ms.locfileid: "64473230"
 
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Antivirus Microsoft Defender 
+
+**Plateformes**
+- Windows
 
 Cet article présente la fonctionnalité antivirus/logiciel anti-programme malveillant appelée « Bloquer à la première consultation » et décrit la façon d’activer Bloquer à la première consultation pour votre organisation.
 
@@ -217,6 +221,15 @@ Si vous disposez d’un appareil personnel qui n’est pas géré par une organi
      > [!CAUTION]
      > La désactivation de la fonctionnalité Bloquer à la première consultation diminue le niveau de protection de votre appareil. Nous vous déconseillons de désactiver définitivement la fonctionnalité Bloquer à la première consultation.
 
+> [!TIP]
+> Si vous recherchez des informations relatives à l’antivirus pour d’autres plateformes, consultez :
+> - [Définir les préférences pour Microsoft Defender pour point de terminaison sur macOS](mac-preferences.md)
+> - [Microsoft Defender pour point de terminaison sur Mac](microsoft-defender-endpoint-mac.md)
+> - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
+> - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Voir aussi
 

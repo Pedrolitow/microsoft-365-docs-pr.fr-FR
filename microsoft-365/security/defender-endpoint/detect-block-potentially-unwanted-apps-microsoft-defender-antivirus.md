@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b193279f9891badc78e639776a57a366a0fa8109
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 67f23d31f50dc20e385f36d4ee4a941db14af7ef
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807079"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790677"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Détecter et bloquer des applications potentiellement indésirables
 
@@ -29,6 +29,10 @@ ms.locfileid: "62807079"
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Edge](/microsoft-edge/deploy/microsoft-edge)
+- Antivirus Microsoft Defender
+
+**Plateformes**
+- Windows
 
 Les applications potentiellement indésirables (PUA) est une catégorie de logiciel qui peut amener votre ordinateur à fonctionner lentement, afficher des publicités inattendues ou, au pire, installer un autre programme pouvant être imprévu ou non souhaité. Les applications potentiellement indésirables (PUA) ne sont pas considérées comme des virus, des programmes malveillants ou d’autres types de menace, mais elles peuvent effectuer des actions sur les points de terminaison qui affectent négativement l’utilisation ou les performances des points de terminaison. Le terme *PUA* peut également faire référence à une application ayant une réputation médiocre, tel qu’évalué par Microsoft Defender pour point de terminaison, en raison de types de comportement indésirables.
 
@@ -202,6 +206,16 @@ Pour en savoir plus sur le repérage avancé, voir [Repérer de manière proacti
 Un fichier est parfois bloqué par erreur par la protection contre les applications potentiellement indésirables (PUA) ou une fonctionnalité d’une application potentiellement indésirable (PUA) est nécessaire pour effectuer une tâche. Dans ces cas, un fichier peut être ajouté à une liste d’exclusion.
 
 Pour plus d’informations, voir [Configurer et valider des exclusions en fonction de l’extension de fichier et de l’emplacement du dossier](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
+
+> [!TIP]
+> Si vous recherchez des informations relatives à l’antivirus pour d’autres plateformes, consultez :
+> - [Définir les préférences pour Microsoft Defender pour point de terminaison sur macOS](mac-preferences.md)
+> - [Microsoft Defender pour point de terminaison sur Mac](microsoft-defender-endpoint-mac.md)
+> - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
+> - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Voir aussi
 
