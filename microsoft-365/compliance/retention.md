@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 61bd82e3b4012e7e191971faf768cf8d7cbba4f2
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: e14c438858d5e57dca6ecab0573014171a0c6fb7
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758638"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783312"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -502,7 +502,7 @@ Informations supplémentaires pour des emplacements spécifiques :
 
   - Si la stratégie de rétention est implicitement appliquée à une boîte aux lettres et que l’action de rétention configurée est de conserver, la stratégie de rétention continue de s’appliquer et une boîte aux lettres inactive ne devient jamais éligible pour la suppression automatique. Lorsque l’action de rétention ne s’applique plus car la période de rétention a expiré, l’administrateur Exchange peut désormais [supprimer manuellement la boîte aux lettres inactive](delete-an-inactive-mailbox.md)
 
-        An implicit retention policy requires a static policy scope with the **All recipients** (for Exchange email) or **All groups** (for Microsoft 365 Groups) configuration.
+    Une stratégie de rétention implicite nécessite une étendue de stratégie statique avec la configuration **Tous les destinataires** (pour le courrier Exchange) ou **Tous les groupes** (pour les groupes Microsoft 365).
 
     Pour plus d’informations sur les boîtes aux lettres inactives pour qui des stratégies de rétention sont appliquées, voir [Boîtes aux lettres inactives et rétention de Microsoft 365](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention).
 
