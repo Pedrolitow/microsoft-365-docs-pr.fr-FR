@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment utiliser des canaux partagés avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: 9fa58be15eab0844fa92d408320902c23f36de93
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: e6ee2a6be6ec54c002898e301fbd53eed25a328f
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64468880"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64835825"
 ---
 # <a name="collaborate-with-external-participants-in-a-channel"></a>Collaborer avec des participants externes dans un canal
 
@@ -49,6 +49,12 @@ Pour configurer des canaux partagés
     - Pour permettre aux propriétaires d’équipe de partager des canaux partagés avec des personnes extérieures à l’organisation, activez **Partager des canaux partagés en externe** .
     - Pour permettre aux utilisateurs d’être invités à des canaux partagés dans d’autres organisations, activez **Peut être invité à des canaux partagés externes** .
 1. Sélectionnez **Appliquer**.
+
+Pour que les participants du canal externe puissent participer aux réunions, l’accès externe doit être activé. Cela est également nécessaire pour pouvoir voir la présence des participants externes dans le canal.
+
+Pour activer l’accès externe
+1. Dans le [centre d’administration Teams](https://admin.teams.microsoft.com/), développez **Utilisateurs**, puis sélectionnez **d’accès externe**.
+1. Sous **les utilisateurs teams et Skype Entreprise des organisations externes**, assurez-vous que les organisations avec lesquelles vous souhaitez collaborer ne sont pas bloquées.
 
 ## <a name="configure-cross-tenant-access-settings-in-azure-ad"></a>Configurer les paramètres d’accès entre locataires dans Azure AD
 

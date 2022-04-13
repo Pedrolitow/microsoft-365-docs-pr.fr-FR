@@ -375,7 +375,9 @@
       items:
         - name: Préparez-vous
           href: configure-services-and-applications.md
-        - name: Exchange Online
+        - name: Collaboration externe
+          href: external-guest-access.md
+        - name: "Exchange\_Online"
           href: /Exchange/exchange-online
         - name: SharePoint
           href: /sharepoint/sharepoint-online
@@ -395,7 +397,7 @@
           href: view-service-health.md
         - name: Options de support
           href: ../admin/get-help-support.md
-        - name: Exchange Online
+        - name: "Exchange\_Online"
           href: /Exchange/exchange-online
         - name: SharePoint
           href: /sharepoint/introduction

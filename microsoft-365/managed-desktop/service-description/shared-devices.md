@@ -9,12 +9,12 @@ ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: ad9cb5e69585f0c014050b51b719e539111cf9fa
-ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.openlocfilehash: 8c8d79313ee858ebcac8754b96046b517a3f614a
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64687182"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64835971"
 ---
 # <a name="shared-devices"></a>Appareils partagés
 
@@ -31,7 +31,7 @@ Les appareils de ce mode sont optimisés pour les situations où les utilisateur
 
 ## <a name="when-to-use-shared-device-mode"></a>Quand utiliser le mode d’appareil partagé
 
-Toute situation dans laquelle les utilisateurs changent fréquemment d’appareils.
+Utilisez le mode appareil partagé dans les situations où les utilisateurs changent fréquemment d’appareils.
 
 Par exemple, les diseurs bancaires peuvent se trouver dans un seul emplacement pour gérer les dépôts, mais se déplacer vers un back-office pour aider les clients avec un prêt hypothécaire. Dans chacun de ces emplacements, l’appareil exécute différentes applications et est optimisé pour ces tâches, bien qu’ils soient utilisés par plusieurs personnes.
 
@@ -41,15 +41,33 @@ Le personnel infirmier se déplace généralement entre les salles et les bureau
 
 Le mode appareil partagé n’est pas un bon choix dans les situations suivantes :
 
-- Quand les fichiers d’un utilisateur doivent être stockés localement plutôt que dans le cloud
-- Si l’expérience utilisateur doit être différente pour différents utilisateurs sur l’appareil
-- Si l’ensemble d’applications dont chaque utilisateur a besoin diffère considérablement
+- Quand les fichiers d’un utilisateur doivent être stockés localement plutôt que dans le cloud.
+- Si l’expérience utilisateur doit être différente pour différents utilisateurs sur l’appareil.
+- Si l’ensemble d’applications dont chaque utilisateur a besoin diffère considérablement.
 
-## <a name="register-new-devices-in-shared-device-mode"></a>Inscrire de nouveaux appareils en mode d’appareil partagé
+## <a name="register-new-devices-using-the-windows-autopilot-self-deploying-mode-profile-in-microsoft-managed-desktop"></a>Inscrire de nouveaux appareils à l’aide du profil de mode de déploiement automatique autopilot Windows dans Microsoft Managed Desktop
 
-À compter de 2203, que vous ou un partenaire gériez l’inscription d’appareils, vous pouvez choisir d’utiliser le Windows profil de [mode de déploiement automatique Autopilot](/mem/autopilot/self-deploying) dans Microsoft Managed Desktop.
+Que vous ou un partenaire gériez l’inscription des appareils, vous pouvez choisir d’utiliser le Windows profil de [mode de déploiement automatique Autopilot](/mem/autopilot/self-deploying) dans Microsoft Managed Desktop.
 
-Si vous inscrivez vous-même des appareils, vous devez importer de nouveaux appareils dans le Windows panneau Appareils Autopilot.
+### <a name="before-you-begin"></a>Avant de commencer
+
+Passez en revue les exigences en mode de déploiement automatique Windows Autopilot :
+
+> [!IMPORTANT]
+> Vous ne pouvez pas réinscrivez automatiquement un appareil via Autopilot après un déploiement initial en mode autodéploiement. Au lieu de cela, supprimez l’enregistrement de l’appareil dans le [centre d’administration Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431). Pour supprimer l’enregistrement d’appareil du Centre d’administration, sélectionnez **Appareils** >  **Tous les appareils** > sélectionnez les appareils que vous souhaitez supprimer > **Supprimer**.  Pour plus d’informations, consultez [Mises à jour de l’expérience de connexion et de déploiement Windows Autopilot](https://techcommunity.microsoft.com/t5/intune-customer-success/updates-to-the-windows-autopilot-sign-in-and-deployment/ba-p/2848452).
+
+#### <a name="trusted-platform-module"></a>Module de plateforme approuvée
+
+Le mode de déploiement automatique utilise le matériel TPM 2.0 d’un appareil pour authentifier l’appareil dans le locataire Azure Active Directory d’une organisation. Par conséquent, les appareils sans TPM 2.0 ne peuvent pas utiliser ce mode. Les appareils doivent également prises en charge l’attestation d’appareil TPM. Tous les nouveaux appareils Windows doivent répondre à ces exigences. Le processus d’attestation TPM nécessite également l’accès à un ensemble d’URL HTTPS qui sont uniques pour chaque fournisseur TPM. Pour plus d’informations, consultez l’entrée pour le mode de déploiement automatique Autopilot et le préprovisionnement Autopilot dans [les exigences de mise en réseau](/mem/autopilot/self-deploying#requirements). Pour plus d’informations sur Windows configuration logicielle requise pour Autopilot, consultez [Windows configuration logicielle requise pour Autopilot](/mem/autopilot/software-requirements).
+
+> [!TIP]
+> Si vous tentez de déployer le mode de déploiement automatique sur un appareil qui ne prend pas en charge TPM 2.0 ou qui se trouve sur une machine virtuelle, le processus échoue lors de la vérification de l’appareil avec l’erreur suivante : 0x800705B4 erreur de délai d’expiration (les modules de plateforme sécurisée virtuels Hyper-V ne sont pas pris en charge). Notez également que Windows 10 version 1903 ou ultérieure est nécessaire pour utiliser le mode de déploiement automatique en raison de problèmes liés à l’attestation d’appareil TPM dans Windows 10 version 1809. Étant donné que Windows 10 Entreprise 2019 LTSC est basé sur Windows 10 version 1809, le mode de déploiement automatique n’est pas non plus pris en charge sur Windows 10 Entreprise LTSC 2019.
+>
+> Pour plus d’informations sur d’autres problèmes connus et passer en revue les solutions, consultez [Windows problèmes connus d’Autopilot](/mem/autopilot/known-issues) et [résoudre les problèmes d’importation et d’inscription d’appareils Autopilot](/mem/autopilot/troubleshoot-device-enrollment).
+
+### <a name="steps-to-register-devices-to-use-the-windows-autopilot-self-deploying-mode-profile"></a>Étapes d’inscription des appareils pour utiliser le profil de mode de déploiement automatique Windows Autopilot
+
+Si vous inscrivez vous-même des appareils, vous devez importer de nouveaux appareils dans le panneau Windows Appareils Autopilot.
 
 **Pour importer de nouveaux appareils dans le panneau Windows Appareils Autopilot :**
 
@@ -76,7 +94,7 @@ Si vous avez des appareils d’inscription de partenaire, suivez les étapes de 
 
 ### <a name="device-storage"></a>Stockage de l’appareil
 
-Les données des utilisateurs d’appareils partagés doivent être sauvegardées dans le cloud afin qu’elles puissent les suivre sur d’autres appareils. Une fois que vous avez inscrit des appareils en mode d’appareil partagé, veillez à activer les fonctionnalités de redirection [des fichiers à la demande](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e#:~:text=%20Turn%20on%20Files%20On-Demand%20%201%20Make,files%20as%20you%20use%20them%20box.%20More%20) et des [dossiers connus](/onedrive/redirect-known-folders) de OneDrive. Cette approche réduit l’effet de chaque profil utilisateur sur le stockage des appareils. Les appareils en mode appareil partagé suppriment automatiquement les profils utilisateur si l’espace disque libre est inférieur à 25 %. Cette activité est planifiée pour minuit à l’heure locale de l’appareil, sauf si le stockage devient critiquement limité.
+Les données des utilisateurs d’appareils partagés doivent être sauvegardées sur le cloud afin qu’elles puissent les suivre sur d’autres appareils. Une fois que vous avez inscrit des appareils en mode d’appareil partagé, veillez à activer les fonctionnalités de redirection [des fichiers à la demande](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e#:~:text=%20Turn%20on%20Files%20On-Demand%20%201%20Make,files%20as%20you%20use%20them%20box.%20More%20) et des [dossiers connus](/onedrive/redirect-known-folders) de OneDrive. Cette approche réduit l’effet de chaque profil utilisateur sur le stockage des appareils. Les appareils en mode appareil partagé suppriment automatiquement les profils utilisateur si l’espace disque libre est inférieur à 25 %. Cette activité est planifiée pour minuit à l’heure locale de l’appareil, sauf si le stockage devient critiquement limité.
 
 Microsoft Managed Desktop utilise le fournisseur CSP [SharedPC](/mem/intune/configuration/shared-user-device-settings-windows) pour effectuer ces opérations, veillez donc à ne pas utiliser ces fournisseurs de services partagés vous-même.
 
