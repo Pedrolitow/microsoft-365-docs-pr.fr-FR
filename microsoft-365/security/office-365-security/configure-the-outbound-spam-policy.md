@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies de courrier indésirable sortant dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 15dc850046e74c3b42477998fa24a608d0fd0af8
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: 9ab8585a0671f9c62ec2015d91486539c84004db
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841732"
+ms.locfileid: "64847449"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurer le filtrage du courrier indésirable sortant dans EOP
 
@@ -101,9 +101,11 @@ La création d’une stratégie de courrier indésirable sortant personnalisée 
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-4. Dans la page **Utilisateurs, groupes et domaines** qui s’affiche, identifiez les expéditeurs internes auxquels la stratégie s’applique (conditions de l’expéditeur) :
-   - **Utilisateurs** : boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie spécifiés dans votre organisation.
-   - **Groupes** : groupes de distribution, groupes de sécurité à extension messagerie ou groupes Microsoft 365 spécifiés dans votre organisation.
+4. Dans la page **Utilisateurs, groupes et domaines** qui s’affiche, identifiez les expéditeurs internes auxquels la stratégie s’applique (conditions de destinataire) :
+   - **Utilisateurs** : boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie spécifiés.
+   - **Groupes** :
+     - Membres des groupes de distribution spécifiés ou des groupes de sécurité à extension messagerie.
+     - Groupes Microsoft 365 spécifiée.
    - **Domaines** : tous les expéditeurs dans les [domaines acceptés spécifiés](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) dans votre organisation.
 
    Cliquez dans la zone appropriée, commencez à taper une valeur et sélectionnez la valeur souhaitée dans les résultats. Répétez cette opération autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.

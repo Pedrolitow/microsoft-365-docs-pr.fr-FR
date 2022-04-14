@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Découvrez comment conserver, collecter, examiner et exporter du contenu à partir de Microsoft Teams dans Advanced eDiscovery.
-ms.openlocfilehash: ecd114f9ea68cefb03e55453176a0c8b323620cc
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 90c3ece3f6e8218771da9dbbb88fe5c32d9d7d94
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758792"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64847012"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams"></a>flux de travail Advanced eDiscovery pour le contenu dans Microsoft Teams
 
@@ -298,6 +298,10 @@ Voici quelques conseils et bonnes pratiques pour afficher Teams contenu dans un 
 - Les colonnes utiles pour vous aider à passer en revue Teams contenu incluent **le consignataire**, **les destinataires** et le **type de fichier** ou **le type de message**.
 
 - Utilisez [des filtres pour les propriétés](review-set-search.md) liées à Teams pour afficher rapidement Teams contenu. Il existe des filtres pour la plupart des propriétés de métadonnées décrites dans la section précédente.
+
+## <a name="deleting-teams-chat-messages"></a>Suppression de messages de conversation Teams
+
+Vous pouvez utiliser Advanced eDiscovery et Microsoft Graph Explorer pour répondre aux incidents de débordement de données lorsque du contenu contenant des informations confidentielles ou malveillantes est publié par le biais de messages de conversation Teams. Les administrateurs de votre organisation peuvent rechercher et supprimer des messages de conversation dans Microsoft Teams. Cela peut vous aider à supprimer des informations sensibles ou du contenu inapproprié dans Teams messages de conversation. Pour plus d’informations, consultez [Rechercher et vider les messages de conversation dans Teams](search-and-delete-Teams-chat-messages.md).
 
 ## <a name="reference-guide"></a>Guide de référence
 

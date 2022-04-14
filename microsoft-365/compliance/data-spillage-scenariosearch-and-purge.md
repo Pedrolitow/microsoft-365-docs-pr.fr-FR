@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilisez eDiscovery et les outils de recherche pour gérer et répondre à un incident de débordement de données dans votre organisation.
-ms.openlocfilehash: 55bed2461d48d77e7dbb756402439f394ac55270
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 106a67bff07f76d3ac40798d8bb4e28a254b923d
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760908"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64847330"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Série de solutions eDiscovery : scénario de débordement de données - Recherche et vidage
 
@@ -50,16 +50,18 @@ Voici comment gérer un incident de débordement de données :
 
 ## <a name="things-to-know-before-you-start"></a>Choses à savoir avant de commencer
 
+- Le flux de travail de débordement de données décrit dans cet article ne supprime pas les messages de conversation dans Microsoft Teams. Pour rechercher et supprimer Teams messages de conversation, consultez [Rechercher et vider les messages de conversation dans Teams](search-and-delete-Teams-chat-messages.md).
+
 - Lorsqu’une boîte aux lettres est en attente, un message supprimé reste dans le dossier Éléments récupérables jusqu’à ce que la période de rétention expire ou que la conservation soit libérée. [L’étape 6](#step-6-prepare-the-mailboxes) décrit comment supprimer la conservation des boîtes aux lettres. Vérifiez auprès de vos services juridiques ou de gestion des enregistrements avant de supprimer la conservation. Votre organisation peut avoir une stratégie qui définit si une boîte aux lettres en attente ou un incident de débordement de données est prioritaire. 
-    
+
 - Pour contrôler les boîtes aux lettres utilisateur qu’un enquêteur de débordement de données peut rechercher et gérer qui peut accéder au cas, vous pouvez configurer des limites de conformité et créer un groupe de rôles personnalisé, décrit à [l’étape 1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries). Pour ce faire, vous devez être membre du groupe de rôles Gestion de l’organisation ou être affecté au rôle de gestion des rôles. Si vous ou un administrateur de votre organisation avez déjà défini des limites de conformité, vous pouvez ignorer l’étape 1.
-    
+
 - Pour créer un cas, vous devez être membre du groupe de rôles gestionnaire eDiscovery ou être membre d’un groupe de rôles personnalisé auquel le rôle Gestion des cas est attribué. Si vous n’êtes pas membre, demandez à un administrateur Microsoft 365 de [vous ajouter au groupe de rôles du gestionnaire eDiscovery](assign-ediscovery-permissions.md).
-    
+
 - Pour créer et exécuter une recherche de contenu, vous devez être membre du groupe de rôles de gestionnaire de découverte électronique ou disposer du rôle de gestion de recherche de contenu. Pour supprimer des messages, vous devez être membre du groupe de rôles de gestion de l’organisation ou disposer du rôle de gestion de recherche et de purge. Pour plus d’informations sur l’ajout d’utilisateurs à un groupe de [rôles, consultez Affecter des autorisations eDiscovery](./assign-ediscovery-permissions.md).
-    
-- Pour effectuer une recherche dans les activités eDiscovery du journal d’audit à l’étape 8, l’audit doit être activé pour votre organisation. Vous pouvez rechercher les activités qui ont été effectuées au cours des 90 derniers jours. Pour en savoir plus sur l’activation et l’utilisation de l’audit, consultez la section [Auditer le processus d’examen des déversements de données](#auditing-the-data-spillage-investigation-process) à l’étape 8. 
-    
+
+- Pour effectuer une recherche dans les activités eDiscovery du journal d’audit à l’étape 8, l’audit doit être activé pour votre organisation. Vous pouvez rechercher les activités qui ont été effectuées au cours des 90 derniers jours. Pour en savoir plus sur l’activation et l’utilisation de l’audit, consultez la section [Auditer le processus d’examen des déversements de données](#auditing-the-data-spillage-investigation-process) à l’étape 8.
+
 ## <a name="optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries"></a>(Facultatif) Étape 1 : Gérer les personnes autorisées à accéder au cas et définir les limites de conformité
 
 Selon la pratique de votre organisation, vous devez contrôler qui peut accéder au cas eDiscovery utilisé pour examiner un incident de débordement de données et configurer les limites de conformité. La méthode la plus simple consiste à ajouter des enquêteurs en tant que membres d’un groupe de rôles existant dans le Centre de conformité Microsoft 365, puis à ajouter le groupe de rôles en tant que membre du cas eDiscovery. Pour plus d’informations sur les groupes de rôles eDiscovery intégrés et sur la façon d’ajouter des membres à un cas eDiscovery, consultez [Affecter des autorisations eDiscovery](assign-ediscovery-permissions.md).

@@ -16,15 +16,15 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 ms.custom: ''
-description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer Coffre stratégies de liens et les paramètres Coffre liens globaux dans Microsoft Defender pour Office 365.
+description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies de liens Coffre et des paramètres de liens Coffre globaux dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7a352391a0acc595463a8363da315e8dda2758c1
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: 867d055c44ba0d0ae0b7b763bc556a06f16e5cd8
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507228"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64847086"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurer les stratégies de la fonctionnalité Liens fiables dans Defender pour Office 365
 
@@ -32,79 +32,81 @@ ms.locfileid: "64507228"
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](defender-for-office-365.md). Si vous êtes un utilisateur d’accueil à la recherche d’informations sur les liens sécurisés dans Outlook, consultez [La sécurité advanced Outlook.com](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](defender-for-office-365.md). Si vous êtes un utilisateur à la recherche d’informations sur Safelinks dans Outlook, consultez [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Coffre liens dans [Microsoft Defender pour Office 365](defender-for-office-365.md) fournit l’analyse des URL des messages électroniques entrants dans le flux de messagerie, ainsi que l’heure de vérification des URL et des liens dans les messages électroniques et à d’autres emplacements. Pour plus d’informations, [voir Coffre liens dans Microsoft Defender pour Office 365](safe-links.md).
+Coffre Liens dans [Microsoft Defender pour Office 365](defender-for-office-365.md) fournit l’analyse d’URL des messages électroniques entrants dans le flux de courrier, ainsi que l’heure de vérification des URL et des liens dans les messages électroniques et dans d’autres emplacements. Pour plus d’informations, consultez [Coffre Liens dans Microsoft Defender pour Office 365](safe-links.md).
 
-Bien qu’il n’existe aucune stratégie de liens Coffre par défaut, la stratégie de sécurité prédéfinit de **protection** intégrée fournit une protection de liens Coffre à tous les destinataires (utilisateurs qui ne sont pas définis dans les stratégies de liens Coffre personnalisées). Pour plus d’informations, voir [Stratégies de sécurité prédéfini dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md).
+Bien qu’il n’existe aucune stratégie de Coffre de liens par défaut, la stratégie de sécurité prédéfinie de **protection intégrée** fournit Coffre protection des liens à tous les destinataires (utilisateurs qui ne sont pas définis dans les stratégies de liens Coffre personnalisées). Pour plus d’informations, consultez [Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md).
 
-Vous pouvez également utiliser les procédures de cet article pour créer des stratégies de liens Coffre qui s’appliquent à des utilisateurs, des groupes ou des domaines spécifiques.
+Vous pouvez également utiliser les procédures décrites dans cet article pour créer des stratégies Coffre Liens qui s’appliquent à des utilisateurs, des groupes ou des domaines spécifiques.
 
 > [!NOTE]
 >
-> Vous configurez les paramètres globaux pour la protection **Coffre liens en** dehors des stratégies Coffre liens. Pour obtenir des instructions, voir [Configurer les paramètres globaux Coffre liens dans Microsoft Defender pour Office 365](configure-global-settings-for-safe-links.md).
+> Vous configurez les paramètres globaux pour la protection des liens Coffre **en dehors** des stratégies de liens Coffre. Pour obtenir des instructions, consultez [Configurer les paramètres globaux pour les liens Coffre dans Microsoft Defender pour Office 365](configure-global-settings-for-safe-links.md).
 >
-> Les administrateurs doivent prendre en compte les différents paramètres de configuration pour Coffre liens. L’une des options disponibles consiste à inclure des informations d’identification utilisateur dans Coffre liens. Cette fonctionnalité permet aux équipes des opérations de sécurité (SecOps) d’examiner la compromission potentielle de l’utilisateur, de prendre des mesures correctives et de limiter les violations coûteuses.
+> Les administrateurs doivent prendre en compte les différents paramètres de configuration pour les liens Coffre. L’une des options disponibles consiste à inclure des informations d’identification de l’utilisateur dans Coffre Liens. Cette fonctionnalité permet aux équipes d’opérations de sécurité (SecOps) d’examiner les compromissions potentielles de l’utilisateur, de prendre des mesures correctives et de limiter les violations coûteuses.
 
 Vous pouvez configurer les politiques Safe Links dans le portail Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 éligibles avec des boîtes aux lettres dans Exchange Online ; EOP PowerShell autonome pour les organisations sans boîtes aux lettres Exchange Online, mais avec des abonnements complémentaires Microsoft Defender for Office 365).
 
-Les éléments de base d’une stratégie Coffre liens sont les suivants :
+Les éléments de base d’une stratégie de liens Coffre sont les suivants :
 
-- La stratégie de liens sécurisés : activer la protection des liens Coffre, activer l’analyse des URL en temps réel, spécifier s’il faut attendre la fin de l’analyse en temps réel avant de remettre le message, activer l’analyse des messages internes, spécifier s’il faut suivre les clics des utilisateurs sur les URL et spécifier s’il faut autoriser les utilisateurs à cliquer sur l’URL d’origine.
-- **La règle de liens sécurisés** : spécifie la priorité et les filtres de destinataires (à qui la stratégie s’applique).
+- **Stratégie de liens sécurisés** : activez Coffre protection des liens, activez l’analyse des URL en temps réel, spécifiez s’il faut attendre la fin de l’analyse en temps réel avant de remettre le message, activez l’analyse des messages internes, spécifiez s’il faut suivre les clics de l’utilisateur sur les URL et spécifiez s’il faut autoriser les utilisateurs à cliquer sur l’URL d’origine.
+- **Règle de liens sécurisés** : spécifie les filtres de priorité et de destinataire (auxquels la stratégie s’applique).
 
-La différence entre ces deux éléments n’est pas évidente lorsque vous gérez les stratégies Coffre liens dans le portail Microsoft 365 Defender:
+La différence entre ces deux éléments n’est pas évidente lorsque vous gérez des stratégies de liens Coffre dans le portail Microsoft 365 Defender :
 
-- Lorsque vous créez une stratégie de liens Coffre, vous créez en fait une règle de liens sécurisés et la stratégie de liens sécurisés associée en utilisant le même nom pour les deux.
-- Lorsque vous modifiez une stratégie Coffre liens, les paramètres liés au nom, à la priorité, activés ou désactivés, et aux filtres de destinataire modifient la règle de liens sécurisés. Tous les autres paramètres modifient la stratégie de liens sécurisés associée.
-- Lorsque vous supprimez une stratégie Coffre liens sécurisés, la règle de liens sécurisés et la stratégie de liens sécurisés associée sont supprimées.
+- Lorsque vous créez une stratégie de liens Coffre, vous créez en fait une règle de liens sécurisés et la stratégie de liens sécurisés associée en même temps en utilisant le même nom pour les deux.
+- Lorsque vous modifiez une stratégie de liens Coffre, les paramètres liés au nom, à la priorité, activé ou désactivé, et les filtres de destinataire modifient la règle de liens sécurisés. Tous les autres paramètres modifient la stratégie de liens sécurisés associée.
+- Lorsque vous supprimez une stratégie de liens Coffre, la règle liens sécurisés et la stratégie de liens sécurisés associée sont supprimées.
 
-Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la stratégie et la règle séparément. Pour plus d’informations, voir la section Utiliser [Exchange Online PowerShell ou EOP PowerShell](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) autonome pour configurer les stratégies Coffre liens plus loin dans cet article.
+Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la stratégie et la règle séparément. Pour plus d’informations, consultez la section [Utiliser Exchange Online PowerShell ou EOP PowerShell autonome pour configurer des stratégies Coffre Links](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) plus loin dans cet article.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour aller directement à la page **Coffre liens**, utilisez <https://security.microsoft.com/safelinksv2>.
+- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour accéder directement à la page **Coffre Liens**, utilisez <https://security.microsoft.com/safelinksv2>.
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Des autorisations doivent vous être attribuées avant de pouvoir suivre les procédures de cet article :
-  - Pour créer, modifier et supprimer des stratégies de liens Coffre, vous devez être membre des groupes de rôles Gestion de  l’organisation ou Administrateur de la sécurité dans le portail  Microsoft 365 Defender et membre du groupe  de rôles Gestion de l’organisation dans Exchange Online.
-  - Pour accéder en lecture seule aux stratégies Coffre liens, vous devez être membre des groupes de rôles Lecteur  global ou **Lecteur de sécurité**.
+- Vous devez disposer d’autorisations pour pouvoir effectuer les procédures décrites dans cet article :
+  - Pour créer, modifier et supprimer des stratégies de liens Coffre, vous devez être membre des groupes de **rôles Gestion de l’organisation** ou **Administrateur** de la sécurité dans le portail Microsoft 365 Defender **et** membre du groupe de **rôles Gestion de l’organisation** dans Exchange Online.
+  - Pour accéder en lecture seule aux stratégies Coffre Liens, vous devez être membre des groupes de **rôles Lecteur général** ou **Lecteur de sécurité**.
 
-  Pour plus d’informations, [voir Autorisations dans le portail Microsoft 365 Defender et](permissions-microsoft-365-security-center.md) [Autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md) et [Autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
   >
-  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le portail Microsoft 365 Defender et les  autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
-  . - Le **groupe de rôles** Gestion de l’organisation en affichage seul dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) donne également un accès en lecture seule à la fonctionnalité.
+  > - L’ajout d’utilisateurs au rôle de Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le portail Microsoft 365 Defender _et_ les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  . - Le groupe de rôles **Gestion de l’organisation en mode affichage uniquement** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) donne également un accès en lecture seule à la fonctionnalité.
 
-- Pour obtenir les paramètres recommandés pour les stratégies Coffre liens, consultez la [Coffre de la stratégie Liens.](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
+- Pour connaître les paramètres recommandés pour les stratégies de liens Coffre, consultez [Coffre Paramètres de stratégie Liens](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
-- Autorisez jusqu’à 6 heures d’application d’une stratégie nouvelle ou mise à jour.
+- Autorisez jusqu’à 6 heures l’application d’une stratégie nouvelle ou mise à jour.
 
-- [De nouvelles fonctionnalités sont continuellement ajoutées aux Microsoft Defender pour Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). À mesure que de nouvelles fonctionnalités sont ajoutées, vous devrez peut-être apporter des ajustements à vos stratégies de liens Coffre existantes.
+- [De nouvelles fonctionnalités sont continuellement ajoutées à Microsoft Defender pour Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). À mesure que de nouvelles fonctionnalités sont ajoutées, vous devrez peut-être apporter des ajustements à vos stratégies de liens Coffre existantes.
 
-## <a name="use-the-microsoft-365-defender-portal-to-create-safe-links-policies"></a>Utiliser le portail Microsoft 365 Defender pour créer des stratégies Coffre liens
+## <a name="use-the-microsoft-365-defender-portal-to-create-safe-links-policies"></a>Utiliser le portail Microsoft 365 Defender pour créer des stratégies de liens Coffre
 
-La création d’une stratégie de liens Coffre personnalisée dans le portail Microsoft 365 Defender crée la règle de liens sécurisés et la stratégie de liens sécurisés associée en utilisant le même nom pour les deux.
+La création d’une stratégie de liens Coffre personnalisée dans le portail Microsoft 365 Defender crée la règle de liens sécurisés et la stratégie de liens sécurisés associée en même temps en utilisant le même nom pour les deux.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Coffre Links** in the **Policies** section. Pour aller directement à la page **Coffre liens**, utilisez <https://security.microsoft.com/safelinksv2>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Coffre Links** dans la section **Stratégies**. Pour accéder directement à la page **Coffre Liens**, utilisez <https://security.microsoft.com/safelinksv2>.
 
-2. Dans la page **Coffre liens**, cliquez sur Créer ![une icône.](../../media/m365-cc-sc-create-icon.png) **Création**.
+2. Dans la page **liens Coffre**, cliquez sur ![l’icône Créer.](../../media/m365-cc-sc-create-icon.png) **Création**.
 
-3. **L’Assistant Nouvelle Coffre liens s’ouvre**. Dans la page **Nom de votre stratégie** , configurez les paramètres suivants :
+3. **L’Assistant Nouvelle stratégie de liens Coffre** s’ouvre. Dans la page **Nommer votre** stratégie, configurez les paramètres suivants :
 
    - **Nom** Entrez un nom unique et descriptif pour la stratégie.
    - **Description** Entrez une description facultative pour la stratégie.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-4. Dans la page **Utilisateurs et domaines** qui s’affiche, identifiez les destinataires internes à qui la stratégie s’applique (conditions de destinataire) :
-   - **Utilisateurs** : boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie spécifiés dans votre organisation.
-   - **Groupes** : groupes de distribution, groupes de sécurité à extension messagerie ou groupes Microsoft 365 spécifiés dans votre organisation.
+4. Dans la page **Utilisateurs et domaines** qui s’affiche, identifiez les destinataires internes auxquels la stratégie s’applique (conditions de destinataire) :
+   - **Utilisateurs** : boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie spécifiés.
+   - **Groupes** :
+     - Membres des groupes de distribution spécifiés ou des groupes de sécurité à extension messagerie.
+     - Groupes Microsoft 365 spécifiée.
    - **Domaines** : tous les destinataires des [domaines acceptés](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) spécifiés dans votre organisation.
 
    Cliquez dans la zone appropriée, commencez à taper une valeur et sélectionnez la valeur souhaitée dans les résultats. Répétez cette opération autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
@@ -118,30 +120,30 @@ La création d’une stratégie de liens Coffre personnalisée dans le portail M
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 5. Dans la page **Paramètres de protection** qui s’affiche, configurez les paramètres suivants :
-   - **Sélectionnez l’action** pour les URL potentiellement malveillantes inconnues  dans les messages : sélectionnez Activé pour activer la protection Coffre liens pour les liens dans les messages électroniques. Si vous allumez ce paramètre, les paramètres suivants sont disponibles :
-     - **Appliquez l’analyse d’URL** en temps réel pour les liens suspects et les liens pointant vers des fichiers : sélectionnez cette option pour activer l’analyse en temps réel des liens dans les messages électroniques. Si vous activer ce paramètre, le paramètre suivant est disponible :
-       - **Attendez que l’analyse des URL** se termine avant de remettre le message : sélectionnez cette option pour attendre la fin de l’analyse de l’URL en temps réel avant de remettre le message.
-     - **Appliquez Coffre** liens vers les messages électroniques envoyés au sein de l’organisation : sélectionnez cette option pour appliquer la stratégie de liens Coffre aux messages entre les expéditeurs internes et les destinataires internes.
-   - **Sélectionnez l’action** pour les URL inconnues ou potentiellement malveillantes dans Microsoft Teams  : sélectionnez Activé pour activer la protection Coffre liens pour les liens dans Teams. Notez que l’application de ce paramètre peut prendre jusqu’à 24 heures.
-   - **Suivi des clics de** l’utilisateur : laissez cette option sélectionnée pour activer les clics de l’utilisateur de suivi sur les URL des messages électroniques.
-   - **Laissez les utilisateurs cliquer** jusqu’à l’URL d’origine : effacer cette option pour empêcher les utilisateurs de cliquer jusqu’à l’URL d’origine dans les [pages d’avertissement](safe-links.md#warning-pages-from-safe-links).
-   - **Ne réécrivez** pas les URL suivantes : permet d’accéder aux URL spécifiées qui seraient autrement bloquées par Coffre liens.
+   - **Sélectionnez l’action pour les URL potentiellement malveillantes inconnues dans les messages** : sélectionnez **Activé** pour activer Coffre Protection des liens pour les liens dans les messages électroniques. Si vous activez ce paramètre, les paramètres suivants sont disponibles :
+     - **Appliquer l’analyse d’URL en temps réel pour les liens suspects et les liens pointant vers des fichiers** : sélectionnez cette option pour activer l’analyse en temps réel des liens dans les messages électroniques. Si vous activez ce paramètre, le paramètre suivant est disponible :
+       - **Attendez la fin de l’analyse d’URL avant de remettre le message** : sélectionnez cette option pour attendre la fin de l’analyse d’URL en temps réel avant de remettre le message.
+     - **Appliquer Coffre liens vers les messages électroniques envoyés au sein de l’organisation** : sélectionnez cette option pour appliquer la stratégie Coffre Liens aux messages entre les expéditeurs internes et les destinataires internes.
+   - **Sélectionnez l’action pour les URL inconnues ou potentiellement malveillantes dans Microsoft Teams** : Sélectionnez **Activé** pour activer Coffre Protection des liens pour les liens dans Teams. Notez que l’application de ce paramètre peut prendre jusqu’à 24 heures.
+   - **Suivre les clics de l’utilisateur** : laissez cette option sélectionnée pour activer le suivi des clics de l’utilisateur sur les URL dans les messages électroniques.
+   - **Permettre aux utilisateurs de cliquer sur l’URL d’origine** : désactivez cette option pour empêcher les utilisateurs de cliquer sur l’URL d’origine dans les [pages d’avertissement](safe-links.md#warning-pages-from-safe-links).
+   - **Ne réécrivez pas les URL suivantes** : autorise l’accès aux URL spécifiées qui seraient autrement bloquées par Coffre Liens.
 
-     Dans la zone, tapez l’URL ou la valeur que vous souhaitez, puis cliquez sur **Ajouter**. Répétez cette étape autant de fois que nécessaire.
+     Dans la zone, tapez l’URL ou la valeur souhaitée, puis cliquez sur **Ajouter**. Répétez cette étape autant de fois que nécessaire.
 
-     Pour supprimer une entrée existante, cliquez sur ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) à côté de l’entrée.
+     Pour supprimer une entrée existante, cliquez sur ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de l’entrée.
 
-     Pour la syntaxe d’entrée, voir [Syntaxe d’entrée pour la liste « Ne pas réécrire les URL suivantes](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list) ».
+     Pour la syntaxe d’entrée, consultez [la syntaxe Entrée pour la liste « Ne pas réécrire les URL suivantes](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list) ».
 
-   Pour plus d’informations sur ces paramètres, voir Coffre [Paramètres](safe-links.md#safe-links-settings-for-email-messages) des liens pour les messages électroniques et [Coffre de](safe-links.md#safe-links-settings-for-microsoft-teams) liens pour Microsoft Teams.
+   Pour plus d’informations sur ces paramètres, consultez [les paramètres Coffre Liens pour les messages électroniques](safe-links.md#safe-links-settings-for-email-messages) et [les paramètres Coffre Liens pour Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams).
 
-   Pour plus d’informations sur les valeurs recommandées pour les paramètres de stratégie Standard et Strict, voir [Coffre paramètres de stratégie liens.](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
+   Pour plus d’informations sur les valeurs recommandées pour les paramètres de stratégie Standard et Strict, consultez [Coffre Paramètres de stratégie Liens](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-6. Dans la page **de** notification qui s’affiche, sélectionnez l’une des valeurs suivantes pour avertir **vos utilisateurs** :
+6. Dans la page **Notification** qui s’affiche, sélectionnez l’une des valeurs suivantes pour **savoir comment informer vos utilisateurs :**
    - **Utiliser le texte de notification par défaut**
-   - **Utilisez un texte de notification** personnalisé : si vous sélectionnez cette valeur (la longueur ne peut pas dépasser 200 caractères), les paramètres suivants s’affichent :
+   - **Utilisez le texte de notification personnalisé** : si vous sélectionnez cette valeur (la longueur ne peut pas dépasser 200 caractères), les paramètres suivants s’affichent :
      - **Utiliser Traducteur Microsoft pour la localisation automatique**
      - **Texte de notification personnalisé** : entrez le texte de notification personnalisé dans cette zone.
 
@@ -153,32 +155,32 @@ La création d’une stratégie de liens Coffre personnalisée dans le portail M
 
 8. Dans la page de confirmation qui s’affiche, cliquez sur **Terminé**.
 
-## <a name="use-the-microsoft-365-defender-portal-to-view-safe-links-policies"></a>Utiliser le portail Microsoft 365 Defender pour afficher les stratégies Coffre liens
+## <a name="use-the-microsoft-365-defender-portal-to-view-safe-links-policies"></a>Utiliser le portail Microsoft 365 Defender pour afficher les stratégies de liens Coffre
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Coffre Links** in the **Policies** section. Pour aller directement à la page **Coffre liens**, utilisez <https://security.microsoft.com/safelinksv2>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Coffre Links** dans la section **Stratégies**. Pour accéder directement à la page **Coffre Liens**, utilisez <https://security.microsoft.com/safelinksv2>.
 
-2. Dans la page **Coffre liens**, les propriétés suivantes sont affichées dans la liste des stratégies Coffre liens :
+2. Dans la page **liens Coffre**, les propriétés suivantes s’affichent dans la liste des stratégies de liens Coffre :
    - **Name**
    - **État**
    - **Priorité**
 
-3. Lorsque vous sélectionnez une stratégie en cliquant sur le nom, les paramètres de stratégie s’affichent dans un volant.
+3. Lorsque vous sélectionnez une stratégie en cliquant sur le nom, les paramètres de stratégie s’affichent dans un menu volant.
 
-## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-links-policies"></a>Utiliser le portail Microsoft 365 Defender pour modifier les stratégies Coffre liens
+## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-links-policies"></a>Utiliser le portail Microsoft 365 Defender pour modifier les stratégies de liens Coffre
 
-1. Dans le portail Microsoft 365 Defender, go to **Policies & rules** \> **Threat Policies** \> **policies** section \> **Coffre Links**.
+1. Dans le portail Microsoft 365 Defender, accédez à **la section** \> **Stratégies & règles sur les stratégies** \> de **menace** \> **Coffre liens**.
 
-2. Dans la page **Coffre liens**, sélectionnez une stratégie dans la liste en cliquant sur le nom.
+2. Dans la page **Coffre Liens**, sélectionnez une stratégie dans la liste en cliquant sur le nom.
 
-3. Dans le menu volant des détails de stratégie qui s’affiche, sélectionnez **Modifier** dans chaque section pour modifier les paramètres de la section. Pour plus d’informations sur les paramètres, voir la section précédente Utiliser le portail [Microsoft 365 Defender pour](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) créer des stratégies Coffre liens dans cet article.
+3. Dans le menu volant des détails de stratégie qui s’affiche, sélectionnez **Modifier** dans chaque section pour modifier les paramètres de la section. Pour plus d’informations sur les paramètres, consultez la section [précédente Utiliser le portail Microsoft 365 Defender pour créer des stratégies Coffre Liens](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) dans cet article.
 
 Pour activer ou désactiver une stratégie ou définir l’ordre de priorité de la stratégie, consultez les sections suivantes.
 
-### <a name="enable-or-disable-safe-links-policies"></a>Activer ou désactiver les stratégies Coffre liens de sécurité
+### <a name="enable-or-disable-safe-links-policies"></a>Activer ou désactiver les stratégies de liens Coffre
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Coffre Links** in the **Policies** section. Pour aller directement à la page **Coffre liens**, utilisez <https://security.microsoft.com/safelinksv2>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Coffre Links** dans la section **Stratégies**. Pour accéder directement à la page **Coffre Liens**, utilisez <https://security.microsoft.com/safelinksv2>.
 
-2. Dans la page **Coffre liens**, sélectionnez une stratégie dans la liste en cliquant sur le nom.
+2. Dans la page **Coffre Liens**, sélectionnez une stratégie dans la liste en cliquant sur le nom.
 
 3. En haut du menu volant des détails de stratégie qui s’affiche, vous verrez l’une des valeurs suivantes :
    - **Stratégie désactivée** : Pour activer la stratégie, cliquez sur l’![icône Activer.](../../media/m365-cc-sc-turn-on-off-icon.png) **Activer**.
@@ -190,68 +192,68 @@ Pour activer ou désactiver une stratégie ou définir l’ordre de priorité de
 
 De retour sur la page principale de la stratégie, la valeur **État** de la stratégie sera **Activée** ou **Désactivée**.
 
-### <a name="set-the-priority-of-safe-links-policies"></a>Définir la priorité des stratégies Coffre liens
+### <a name="set-the-priority-of-safe-links-policies"></a>Définir la priorité des stratégies de liens Coffre
 
-Par défaut, Coffre liens se voir donner une priorité basée sur l’ordre de leur création (les stratégies les plus nouvelles sont moins prioritaires que les stratégies plus anciennes). Un numéro de priorité inférieur indique une priorité plus élevée pour la stratégie (la valeur 0 est la plus élevée) et les stratégies sont traitées dans l’ordre de priorité (les stratégies de priorité supérieure sont traitées avant les stratégies de priorité inférieure). Aucune stratégie ne peut avoir la même priorité, et le traitement de stratégie s’arrête une fois la première stratégie appliquée.
+Par défaut, Coffre les liens reçoivent une priorité basée sur l’ordre dans lequel ils ont été créés (les stratégies plus récentes sont moins prioritaires que les stratégies plus anciennes). Un numéro de priorité inférieur indique une priorité plus élevée pour la stratégie (la valeur 0 est la plus élevée) et les stratégies sont traitées dans l’ordre de priorité (les stratégies de priorité supérieure sont traitées avant les stratégies de priorité inférieure). Aucune stratégie ne peut avoir la même priorité, et le traitement de stratégie s’arrête une fois la première stratégie appliquée.
 
 Pour modifier la priorité d'une stratégie, vous cliquez sur **Augmenter la priorité** ou **Diminuer la priorité** dans les propriétés de la stratégie (vous ne pouvez pas modifier directement le numéro de **priorité** dans le portail Microsoft 365 Defender). Changer la priorité d'une stratégie n'a de sens que si vous avez plusieurs stratégies.
 
 **Remarque** :
 
-- Dans le portail Microsoft 365 Defender, vous ne pouvez modifier la priorité de la stratégie de liens Coffre que lorsque vous la créez. Dans PowerShell, vous pouvez remplacer la priorité par défaut lorsque vous créez la règle de liens sécurisés (ce qui peut affecter la priorité des règles existantes).
-- Coffre de liens sont traitées dans l’ordre d’affichage (la première stratégie a la valeur Priorité 0). Pour plus d’informations sur l’ordre de priorité et l’évaluation et l’application de plusieurs stratégies, consultez [Ordre et la priorité de la protection de la messagerie](how-policies-and-protections-are-combined.md).
+- Dans le portail Microsoft 365 Defender, vous ne pouvez modifier la priorité de la stratégie de liens Coffre qu’une fois que vous l’avez créée. Dans PowerShell, vous pouvez remplacer la priorité par défaut lorsque vous créez la règle de liaisons sécurisées (qui peut affecter la priorité des règles existantes).
+- Coffre les stratégies de liens sont traitées dans l’ordre dans lequel elles sont affichées (la première stratégie a la valeur **De priorité** 0). Pour plus d’informations sur l’ordre de priorité et l’évaluation et l’application de plusieurs stratégies, consultez [Ordre et la priorité de la protection de la messagerie](how-policies-and-protections-are-combined.md).
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Coffre Links** in the **Policies** section. Pour aller directement à la page **Coffre liens**, utilisez <https://security.microsoft.com/safelinksv2>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Coffre Links** dans la section **Stratégies**. Pour accéder directement à la page **Coffre Liens**, utilisez <https://security.microsoft.com/safelinksv2>.
 
-2. Dans la page **Coffre liens**, sélectionnez une stratégie dans la liste en cliquant sur le nom.
+2. Dans la page **Coffre Liens**, sélectionnez une stratégie dans la liste en cliquant sur le nom.
 
 3. En haut du menu volant détails de la stratégie qui s’affiche, vous verrez **Augmenter la priorité** ou **Diminuer la priorité** en fonction de la valeur de priorité actuelle et du nombre de stratégies personnalisées :
-   - La stratégie dont la valeur **de** priorité **est 0** ne dispose que de l’option Diminuer **la** priorité disponible.
-   - La stratégie dont la valeur **de** priorité est la plus faible ( **par** exemple, 3) ne dispose que **de l’option** Augmenter la priorité.
-   - Si vous avez au moins trois stratégies, les stratégies entre les valeurs de priorité les plus élevées et les plus faibles ont les options Augmenter la priorité et Diminuer **la** priorité disponibles.
+   - La stratégie avec la valeur **de priorité** **0** a uniquement l’option **Réduire la priorité** disponible.
+   - La stratégie avec la valeur **de priorité** la plus basse (par exemple, **3**) a uniquement l’option **Augmenter la priorité** disponible.
+   - Si vous avez au moins trois stratégies, les stratégies entre les valeurs de priorité la plus élevée et la plus basse ont les options **Augmenter la priorité** et Diminuer la **priorité** disponibles.
 
    Cliquez sur l’![Icône Augmenter la priorité](../../media/m365-cc-sc-increase-icon.png) **Augmenter la priorité** ou ![Icône Diminuer la priorité](../../media/m365-cc-sc-decrease-icon.png) **Diminuer la priorité** pour modifier la valeur **Priorité**.
 
 4. Lorsque vous avez terminé, cliquez sur **Fermer** dans le menu volant des détails de la stratégie.
 
-## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>Utiliser le portail Microsoft 365 Defender pour supprimer des stratégies Coffre liens
+## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>Utiliser le portail Microsoft 365 Defender pour supprimer les stratégies de liens Coffre
 
-1. Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Coffre Links** in the **Policies** section.
+1. Dans le portail Microsoft 365 Defender, accédez à & stratégies de collaboration \> par **e-mail** & stratégies de **menace** \> **de règles** \> **Coffre liens** dans la section **Stratégies**.
 
-2. Dans la page **Coffre liens**, sélectionnez une stratégie dans la liste en cliquant sur le nom. En haut du menu volant des détails de la stratégie qui s’affiche, cliquez sur l’![icône Autres actions. ](../../media/m365-cc-sc-more-actions-icon.png) **Plus d’actions**\>![icône Supprimer la stratégie](../../media/m365-cc-sc-delete-icon.png)**Supprimer la stratégie**.
+2. Dans la page **Coffre Liens**, sélectionnez une stratégie dans la liste en cliquant sur le nom. En haut du menu volant des détails de la stratégie qui s’affiche, cliquez sur l’![icône Autres actions. ](../../media/m365-cc-sc-more-actions-icon.png) **Plus d’actions**\>![icône Supprimer la stratégie](../../media/m365-cc-sc-delete-icon.png)**Supprimer la stratégie**.
 
 3. Dans la boîte de dialogue de confirmation qui s'affiche, cliquez sur **Oui**.
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies"></a>Utiliser Exchange Online PowerShell ou EOP PowerShell autonome pour configurer des stratégies Coffre liens
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies"></a>Utiliser Exchange Online PowerShell ou EOP PowerShell autonome pour configurer des stratégies de liens Coffre
 
-Comme décrit précédemment, une stratégie Coffre liens sécurisés se compose d’une stratégie de liens sécurisés et d’une règle de liens sécurisés.
+Comme décrit précédemment, une stratégie de liens Coffre se compose d’une stratégie de liens sécurisés et d’une règle de liens sécurisés.
 
-Dans PowerShell, la différence entre les stratégies de liens sécurisés et les règles de liens sécurisés est évidente. Vous gérez les stratégies de liens sécurisés à l’aide des cmdlets **-SafeLinksPolicy et vous gérez les règles de liens sécurisés à l’aide des cmdlets -SafeLinksRule.\*** **\***
+Dans PowerShell, la différence entre les stratégies de liens sécurisés et les règles de liens sécurisés est évidente. Vous gérez les stratégies de liens sécurisés à l’aide **\*des applets de commande -SafeLinksPolicy** , et vous gérez les règles de liens sécurisés à l’aide **\*des applets de commande -SafeLinksRule** .
 
-- Dans PowerShell, vous créez d’abord la stratégie de liens sécurisés, puis vous créez la règle de liens sécurisés qui identifie la stratégie à qui s’applique la règle.
+- Dans PowerShell, vous créez d’abord la stratégie de liens sécurisés, puis vous créez la règle de liens sécurisés qui identifie la stratégie à laquelle la règle s’applique.
 - Dans PowerShell, vous modifiez séparément les paramètres de la stratégie de liens sécurisés et de la règle de liens sécurisés.
-- Lorsque vous supprimez une stratégie de liens sécurisés de PowerShell, la règle de liens sécurisés correspondante n’est pas automatiquement supprimée, et inversement.
+- Lorsque vous supprimez une stratégie de liaisons sécurisées de PowerShell, la règle de liens sécurisés correspondante n’est pas automatiquement supprimée, et inversement.
 
-### <a name="use-powershell-to-create-safe-links-policies"></a>Utiliser PowerShell pour créer des stratégies Coffre de liens
+### <a name="use-powershell-to-create-safe-links-policies"></a>Utiliser PowerShell pour créer des stratégies de liens Coffre
 
-La création d Coffre de liens dans PowerShell est un processus en deux étapes :
+La création d’une stratégie de liens Coffre dans PowerShell est un processus en deux étapes :
 
 1. Créez la stratégie de liens sécurisés.
-2. Créez la règle de liens sécurisés qui spécifie la stratégie de liens sécurisés à qui la règle s’applique.
+2. Créez la règle de liens sécurisés qui spécifie la stratégie de liens sécurisés à laquelle la règle s’applique.
 
 > [!NOTE]
 >
-> - Vous pouvez créer une règle de liens sécurisés et lui attribuer une stratégie de liens sécurisés non associés existante. Une règle de liens sécurisés ne peut pas être associée à plusieurs stratégies de liens sécurisés.
+> - Vous pouvez créer une règle de liens sécurisés et lui attribuer une stratégie de liens sécurisés non associée existante. Une règle de liens sécurisés ne peut pas être associée à plusieurs stratégies de liens sécurisés.
 >
 > - Vous pouvez configurer les paramètres suivants sur les nouvelles stratégies de liens sécurisés dans PowerShell qui ne sont pas disponibles dans le portail Microsoft 365 Defender tant que vous n’avez pas créé la stratégie :
->   - Créez la stratégie comme _désactivée (_ `$false` activée sur la cmdlet **New-SafeLinksRule** ).
->   - Définissez la priorité de la stratégie lors de la création (_priorité__\<Number\>_) sur la cmdlet **New-SafeLinksRule**).
+>   - Créez la nouvelle stratégie comme désactivée (_activée_ `$false` sur l’applet de commande **New-SafeLinksRule** ).
+>   - Définissez la priorité de la stratégie lors de la création (_priorité__\<Number\>_) sur l’applet de commande **New-SafeLinksRule**).
 >
-> - Une nouvelle stratégie de liens sécurisés que vous créez dans PowerShell n’est pas visible dans le portail Microsoft 365 Defender tant que vous n’avez pas attribué la stratégie à une règle de liens sécurisés.
+> - Une nouvelle stratégie de liens sécurisés que vous créez dans PowerShell n’est pas visible dans le portail Microsoft 365 Defender tant que vous n’avez pas affecté la stratégie à une règle de liens sécurisés.
 
 #### <a name="step-1-use-powershell-to-create-a-safe-links-policy"></a>Étape 1 : Utiliser PowerShell pour créer une stratégie de liens sécurisés
 
-Pour créer une stratégie de liens sécurisés, utilisez la syntaxe suivante :
+Pour créer une stratégie de liens sécurisés, utilisez cette syntaxe :
 
 ```PowerShell
 New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSafeLinksForEmail <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-AllowClickThrough <$true | $false>] [-TrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
@@ -259,29 +261,29 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-Enab
 
 > [!NOTE]
 >
-> - Pour plus d’informations sur la syntaxe d’entrée à utiliser pour le paramètre _DoNotRewriteUrls_ , voir la [syntaxe d’entrée](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list) pour la liste « Ne pas réécrire les URL suivantes ».
+> - Pour plus d’informations sur la syntaxe d’entrée à utiliser pour le paramètre _DoNotRewriteUrls_ , consultez [la syntaxe Entry pour la liste « Ne pas réécrire les URL suivantes](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list) ».
 >
-> - Pour obtenir une syntaxe supplémentaire que vous pouvez utiliser pour le paramètre _DoNotRewriteUrls_ lorsque vous modifiez des stratégies de liens sécurisés existantes à l’aide de la cmdlet **Set-SafeLinksPolicy** , consultez la section Utiliser [PowerShell](#use-powershell-to-modify-safe-links-policies) pour modifier les stratégies de liens sécurisés plus loin dans cet article.
+> - Pour obtenir une syntaxe supplémentaire que vous pouvez utiliser pour le paramètre _DoNotRewriteUrls_ lorsque vous modifiez des stratégies de liens sécurisés existantes à l’aide de l’applet de commande **Set-SafeLinksPolicy** , consultez la section [Utiliser PowerShell pour modifier les stratégies de liens sécurisés](#use-powershell-to-modify-safe-links-policies) plus loin dans cet article.
 
 Cet exemple crée une stratégie de liens sécurisés nommée Contoso All avec les valeurs suivantes :
 
-- Activer l’analyse et la réécriture d’URL dans les messages électroniques.
-- Activer l’analyse des URL dans Teams.
-- Activer l’analyse en temps réel des URL sur lesquelles vous avez cliqué, y compris les liens sur lesquels vous avez cliqué et qui pointent vers des fichiers.
-- Attendez la fin de l’analyse de l’URL avant de remettre le message.
-- Activer l’analyse et la réécriture d’URL pour les messages internes.
-- Suivez les clics utilisateur liés à Coffre protection des liens (nous n’utilisons pas le paramètre _TrackUserClicks_ et la valeur par défaut est $true).
-- N’autorisez pas les utilisateurs à accéder à l’URL d’origine en cliquant.
+- Activez l’analyse et la réécriture d’URL dans les messages électroniques.
+- Activez l’analyse d’URL dans Teams.
+- Activez l’analyse en temps réel des URL cliqués, y compris les liens cliqués qui pointent vers des fichiers.
+- Attendez que l’analyse d’URL se termine avant de remettre le message.
+- Activez l’analyse et la réécriture d’URL pour les messages internes.
+- Suivez les clics des utilisateurs liés à Coffre Protection des liens (nous n’utilisons pas le paramètre _TrackUserClicks_, et la valeur par défaut est $true).
+- N’autorisez pas les utilisateurs à cliquer sur l’URL d’origine.
 
 ```PowerShell
 New-SafeLinksPolicy -Name "Contoso All" -EnableSafeLinksForEmail $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -AllowClickThrough $false
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy).
+Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, consultez New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy).
 
 #### <a name="step-2-use-powershell-to-create-a-safe-links-rule"></a>Étape 2 : Utiliser PowerShell pour créer une règle de liens sécurisés
 
-Pour créer une règle de liens sécurisés, utilisez la syntaxe suivante :
+Pour créer une règle de liens sécurisés, utilisez cette syntaxe :
 
 ```PowerShell
 New-SafeLinksRule -Name "<RuleName>" -SafeLinksPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"] [-Enabled <$true | $false>]
@@ -290,47 +292,47 @@ New-SafeLinksRule -Name "<RuleName>" -SafeLinksPolicy "<PolicyName>" <Recipient 
 Cet exemple crée une règle de liens sécurisés nommée Contoso All avec les conditions suivantes :
 
 - La règle est associée à la stratégie de liens sécurisés nommée Contoso All.
-- La règle s’applique à tous les destinataires du contoso.com domaine.
-- Étant donné que nous n’utilisons pas le _paramètre Priority_ , la priorité par défaut est utilisée.
-- La règle est activée (nous n’utilisons pas le paramètre _Enabled_ et la valeur par défaut est `$true`).
+- La règle s’applique à tous les destinataires du domaine contoso.com.
+- Étant donné que nous n’utilisons pas le paramètre _Priority_ , la priorité par défaut est utilisée.
+- La règle est activée (nous n’utilisons pas le paramètre _Activé_ , et la valeur par défaut est `$true`).
 
 ```powershell
 New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs contoso.com
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-SafeLinksRule](/powershell/module/exchange/new-safelinksrule).
+Pour obtenir des informations détaillées sur la syntaxe et [les paramètres, consultez New-SafeLinksRule](/powershell/module/exchange/new-safelinksrule).
 
 ### <a name="use-powershell-to-view-safe-links-policies"></a>Utiliser PowerShell pour afficher les stratégies de liens sécurisés
 
-Pour afficher les stratégies de liens sécurisés existantes, utilisez la syntaxe suivante :
+Pour afficher les stratégies de liens fiables existantes, utilisez la syntaxe suivante :
 
 ```PowerShell
 Get-SafeLinksPolicy [-Identity "<PolicyIdentity>"] [| <Format-Table | Format-List> <Property1,Property2,...>]
 ```
 
-Cet exemple renvoie une liste récapitulatif de toutes les stratégies de liens sécurisés.
+Cet exemple retourne une liste récapitulative de toutes les stratégies de liens sécurisés.
 
 ```PowerShell
 Get-SafeLinksPolicy | Format-Table Name
 ```
 
-Cet exemple renvoie des informations détaillées sur la stratégie de liens sécurisés nommée Contoso Executives.
+Cet exemple retourne des informations détaillées pour la stratégie de liens sécurisés nommée Contoso Executives.
 
 ```PowerShell
 Get-SafeLinksPolicy -Identity "Contoso Executives"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-SafeLinksPolicy](/powershell/module/exchange/get-safelinkspolicy).
+Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, consultez Get-SafeLinksPolicy](/powershell/module/exchange/get-safelinkspolicy).
 
 ### <a name="use-powershell-to-view-safe-links-rules"></a>Utiliser PowerShell pour afficher les règles de liens sécurisés
 
-Pour afficher les règles de liens sécurisés existantes, utilisez la syntaxe suivante :
+Pour afficher les règles de liens fiables existantes, utilisez la syntaxe suivante :
 
 ```PowerShell
 Get-SafeLinksRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled] [| <Format-Table | Format-List> <Property1,Property2,...>]
 ```
 
-Cet exemple renvoie une liste récapitulatif de toutes les règles de liens sécurisés.
+Cet exemple retourne une liste récapitulative de toutes les règles de liens fiables.
 
 ```PowerShell
 Get-SafeLinksRule | Format-Table Name,State
@@ -346,58 +348,58 @@ Get-SafeLinksRule -State Disabled
 Get-SafeLinksRule -State Enabled
 ```
 
-Cet exemple renvoie des informations détaillées sur la règle de liens sécurisés nommée Contoso Executives.
+Cet exemple retourne des informations détaillées sur la règle de liens sécurisés nommée Contoso Executives.
 
 ```PowerShell
 Get-SafeLinksRule -Identity "Contoso Executives"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-SafeLinksRule](/powershell/module/exchange/get-safelinksrule).
+Pour obtenir des informations détaillées sur la syntaxe et [les paramètres, consultez Get-SafeLinksRule](/powershell/module/exchange/get-safelinksrule).
 
 ### <a name="use-powershell-to-modify-safe-links-policies"></a>Utiliser PowerShell pour modifier des stratégies de liens sécurisés
 
-Vous ne pouvez pas renommer une stratégie de liens sécurisés dans PowerShell (la cmdlet **Set-SafeLinksPolicy** n’a pas _de paramètre_ Name). Lorsque vous renommez une stratégie Coffre liens dans le portail Microsoft 365 Defender, vous renommez uniquement la règle de liens _sécurisés_.
+Vous ne pouvez pas renommer une stratégie de liens sécurisés dans PowerShell (l’applet **de commande Set-SafeLinksPolicy** n’a aucun paramètre _Name_ ). Lorsque vous renommez une stratégie de liens Coffre dans le portail Microsoft 365 Defender, vous renommez uniquement la _règle_ de liens sécurisés.
 
-La seule considération supplémentaire pour modifier les [stratégies de liens sécurisés](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) dans PowerShell est la syntaxe disponible pour le paramètre _DoNotRewriteUrls_ (la liste « Ne pas réécrire les URL suivantes » ) :
+La seule considération supplémentaire pour modifier les stratégies de liens sécurisés dans PowerShell est la syntaxe disponible pour le paramètre _DoNotRewriteUrls_ (la [liste « Ne pas réécrire les URL suivantes »)](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) :
 
-- Pour ajouter des valeurs qui remplaceront les entrées existantes, utilisez la syntaxe suivante : `"Entry1","Entry2,..."EntryN"`
-- Pour ajouter ou supprimer des valeurs sans affecter les autres entrées existantes, utilisez la syntaxe suivante : `@{Add="Entry1","Entry2"...; Remove="Entry3","Entry4"...}`
+- Pour ajouter des valeurs qui remplaceront les entrées existantes, utilisez la syntaxe suivante : `"Entry1","Entry2,..."EntryN"`.
+- Pour ajouter ou supprimer des valeurs sans affecter d’autres entrées existantes, utilisez la syntaxe suivante : `@{Add="Entry1","Entry2"...; Remove="Entry3","Entry4"...}`
 
-Dans le cas contraire, les mêmes paramètres sont disponibles lorsque vous créez une stratégie de liens sécurisés, comme décrit à l’étape 1 : Utiliser [PowerShell](#step-1-use-powershell-to-create-a-safe-links-policy) pour créer une section de stratégie de liens sécurisés plus tôt dans cet article.
+Sinon, les mêmes paramètres sont disponibles lorsque vous créez une stratégie de liens sécurisés, comme décrit à [l’étape 1 : Utiliser PowerShell pour créer une section de stratégie de liens sécurisés](#step-1-use-powershell-to-create-a-safe-links-policy) plus haut dans cet article.
 
-Pour modifier une stratégie de liens sécurisés, utilisez la syntaxe suivante :
+Pour modifier une stratégie de liens sécurisés, utilisez cette syntaxe :
 
 ```PowerShell
 Set-SafeLinksPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-SafeLinksPolicy](/powershell/module/exchange/set-safelinkspolicy).
+Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, consultez Set-SafeLinksPolicy](/powershell/module/exchange/set-safelinkspolicy).
 
-### <a name="use-powershell-to-modify-safe-links-rules"></a>Utiliser PowerShell pour modifier des règles de liens sécurisés
+### <a name="use-powershell-to-modify-safe-links-rules"></a>Utiliser PowerShell pour modifier les règles de liens sécurisés
 
-Le seul paramètre qui n’est pas disponible lorsque vous modifiez une règle de liens sécurisés dans PowerShell est le paramètre _Enabled_ qui vous permet de créer une règle désactivée. Pour activer ou désactiver des règles de liens sécurisés existantes, consultez la section suivante.
+Le seul paramètre qui n’est pas disponible lorsque vous modifiez une règle de liens sécurisés dans PowerShell est le paramètre _Activé_ qui vous permet de créer une règle désactivée. Pour activer ou désactiver des règles de liens fiables existantes, consultez la section suivante.
 
-Dans le cas contraire, les mêmes paramètres sont disponibles lorsque vous créez une règle comme décrit à l’étape 2 : Utiliser [PowerShell](#step-2-use-powershell-to-create-a-safe-links-rule) pour créer une section de règle de liens sécurisés plus tôt dans cet article.
+Sinon, les mêmes paramètres sont disponibles lorsque vous créez une règle comme décrit à [l’étape 2 : Utiliser PowerShell pour créer une section de règle de liens sécurisés](#step-2-use-powershell-to-create-a-safe-links-rule) plus haut dans cet article.
 
-Pour modifier une règle de liens sécurisés, utilisez la syntaxe suivante :
+Pour modifier une règle de liens sécurisés, utilisez cette syntaxe :
 
 ```PowerShell
 Set-SafeLinksRule -Identity "<RuleName>" <Settings>
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-SafeLinksRule](/powershell/module/exchange/set-safelinksrule).
+Pour obtenir des informations détaillées sur la syntaxe et [les paramètres, consultez Set-SafeLinksRule](/powershell/module/exchange/set-safelinksrule).
 
 ### <a name="use-powershell-to-enable-or-disable-safe-links-rules"></a>Utiliser PowerShell pour activer ou désactiver des règles de liens sécurisés
 
-L’activation ou la désactivation d’une règle de liens sécurisés dans PowerShell active ou désactive l’ensemble de la stratégie de liens Coffre (la règle de liens sécurisés et la stratégie de liens sécurisés affectée).
+L’activation ou la désactivation d’une règle de liens sécurisés dans PowerShell active ou désactive l’ensemble de la stratégie de liens Coffre (la règle de liaisons sécurisées et la stratégie de liens sécurisés affectée).
 
-Pour activer ou désactiver une règle de liens sécurisés dans PowerShell, utilisez la syntaxe suivante :
+Pour activer ou désactiver une règle de liens sécurisés dans PowerShell, utilisez cette syntaxe :
 
 ```PowerShell
 <Enable-SafeLinksRule | Disable-SafeLinksRule> -Identity "<RuleName>"
 ```
 
-Cet exemple désactive la règle de liens sécurisés nommée Marketing Department.
+Cet exemple montre comment désactiver la règle de liaisons sécurisées nommée Marketing Department.
 
 ```PowerShell
 Disable-SafeLinksRule -Identity "Marketing Department"
@@ -409,9 +411,9 @@ Cet exemple montre comment activer la même règle.
 Enable-SafeLinksRule -Identity "Marketing Department"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, voir Enable-SafeLinksRule](/powershell/module/exchange/enable-safelinksrule) et [Disable-SafeLinksRule](/powershell/module/exchange/disable-safelinksrule).
+Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, consultez Enable-SafeLinksRule](/powershell/module/exchange/enable-safelinksrule) et [Disable-SafeLinksRule](/powershell/module/exchange/disable-safelinksrule).
 
-### <a name="use-powershell-to-set-the-priority-of-safe-links-rules"></a>Utiliser PowerShell pour définir la priorité des règles de liens sécurisés
+### <a name="use-powershell-to-set-the-priority-of-safe-links-rules"></a>Utiliser PowerShell pour définir la priorité des règles de liaison sécurisée
 
 La valeur 0 est la priorité la plus élevée que vous pouvez définir sur une règle. La valeur la plus basse que vous pouvez définir dépend du nombre de règles. Par exemple, si vous avez cinq règles, vous pouvez utiliser les valeurs de priorité 0 à 4. Tout changement de priorité d'une règle existante peut avoir un effet en cascade sur les autres règles. Par exemple, si vous avez cinq règles personnalisées (priorités de 0 à 4) et que vous modifiez la priorité d'une règle sur 2, la règle existante de priorité 2 passe en priorité 3, et la règle de priorité 3 passe en priorité 4.
 
@@ -428,33 +430,33 @@ Set-SafeLinksRule -Identity "Marketing Department" -Priority 2
 ```
 
 > [!NOTE]
-> Pour définir la priorité d’une nouvelle règle lorsque vous la créez, utilisez plutôt le paramètre _Priority_ de la cmdlet **New-SafeLinksRule** .
+> Pour définir la priorité d’une nouvelle règle lorsque vous la créez, utilisez plutôt le paramètre _Priority_ sur l’applet de commande **New-SafeLinksRule** .
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-SafeLinksRule](/powershell/module/exchange/set-safelinksrule).
+Pour obtenir des informations détaillées sur la syntaxe et [les paramètres, consultez Set-SafeLinksRule](/powershell/module/exchange/set-safelinksrule).
 
-### <a name="use-powershell-to-remove-safe-links-policies"></a>Utiliser PowerShell pour supprimer des stratégies de liens sécurisés
+### <a name="use-powershell-to-remove-safe-links-policies"></a>Utiliser PowerShell pour supprimer les stratégies de liens sécurisés
 
 Lorsque vous utilisez PowerShell pour supprimer une stratégie de liens sécurisés, la règle de liens sécurisés correspondante n’est pas supprimée.
 
-Pour supprimer une stratégie de liens sécurisés dans PowerShell, utilisez la syntaxe suivante :
+Pour supprimer une stratégie de liens sécurisés dans PowerShell, utilisez cette syntaxe :
 
 ```PowerShell
 Remove-SafeLinksPolicy -Identity "<PolicyName>"
 ```
 
-Cet exemple supprime la stratégie de liens sécurisés nommée Marketing Department.
+Cet exemple montre comment supprimer la stratégie de liens sécurisés nommée Marketing Department.
 
 ```PowerShell
 Remove-SafeLinksPolicy -Identity "Marketing Department"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-SafeLinksPolicy](/powershell/module/exchange/remove-safelinkspolicy).
+Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, consultez Remove-SafeLinksPolicy](/powershell/module/exchange/remove-safelinkspolicy).
 
-### <a name="use-powershell-to-remove-safe-links-rules"></a>Utiliser PowerShell pour supprimer des règles de liens sécurisés
+### <a name="use-powershell-to-remove-safe-links-rules"></a>Utiliser PowerShell pour supprimer les règles de liens sécurisés
 
 Lorsque vous utilisez PowerShell pour supprimer une règle de liens sécurisés, la stratégie de liens sécurisés correspondante n’est pas supprimée.
 
-Pour supprimer une règle de liens sécurisés dans PowerShell, utilisez la syntaxe suivante :
+Pour supprimer une règle de liens sécurisés dans PowerShell, utilisez cette syntaxe :
 
 ```PowerShell
 Remove-SafeLinksRule -Identity "<PolicyName>"
@@ -466,17 +468,17 @@ Cet exemple supprime la règle de liens sécurisés nommée Marketing Department
 Remove-SafeLinksRule -Identity "Marketing Department"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule).
+Pour obtenir des informations détaillées sur la syntaxe et [les paramètres, consultez Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule).
 
-Pour vérifier que les liens Coffre sont en cours d’analyse des messages, vérifiez les rapports Microsoft Defender pour Office 365 disponibles. Pour plus d’informations, voir [Afficher les rapports pour Defender pour Office 365](view-reports-for-mdo.md) et [Utiliser l’Explorateur dans le portail Microsoft 365 Defender web](threat-explorer.md).
+Pour vérifier que Coffre Liens analyse les messages, vérifiez les rapports Microsoft Defender pour Office 365 disponibles. Pour plus d’informations, consultez [Afficher les rapports pour Defender pour Office 365](view-reports-for-mdo.md) et [Utiliser l’Explorateur dans le portail Microsoft 365 Defender](threat-explorer.md).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Comment savoir si ces procédures ont fonctionné ?
 
-Pour vérifier que vous avez correctement créé, modifié ou supprimé des stratégies Coffre liens, faites l’une des étapes suivantes :
+Pour vérifier que vous avez créé, modifié ou supprimé des stratégies Coffre Liens, effectuez l’une des étapes suivantes :
 
-- Dans la page **Coffre** liens dans le portail Microsoft 365 Defender<https://security.microsoft.com/safelinksv2>, vérifiez la liste des stratégies, leurs valeurs d’état et  leurs valeurs **de** priorité. Pour afficher plus de détails, sélectionnez la stratégie dans la liste et affichez les détails dans le volant.
+- Dans la page **liens Coffre** dans le portail <https://security.microsoft.com/safelinksv2>Microsoft 365 Defender, vérifiez la liste des stratégies, leurs valeurs **d’état** et leurs valeurs **de priorité**. Pour afficher plus de détails, sélectionnez la stratégie dans la liste et affichez les détails dans le menu volant.
 
-- Dans Exchange Online PowerShell ou Exchange Online Protection PowerShell, \<Name\> remplacez par le nom de la stratégie ou de la règle, exécutez la commande suivante et vérifiez les paramètres :
+- Dans Exchange Online PowerShell ou Exchange Online Protection PowerShell, remplacez \<Name\> par le nom de la stratégie ou de la règle, exécutez la commande suivante et vérifiez les paramètres :
 
   ```PowerShell
   Get-SafeLinksPolicy -Identity "<Name>"

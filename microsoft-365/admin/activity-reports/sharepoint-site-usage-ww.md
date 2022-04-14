@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez le rapport d’utilisation SharePoint site pour savoir combien de fichiers les utilisateurs stockent dans SharePoint sites, combien sont utilisés activement et le stockage total consommé.
-ms.openlocfilehash: afcaa6cd087948c635604dbadeb9d56c6d48c1a9
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: a99884863db3ffc1f2577358abef6d287d01e2d1
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781498"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64846990"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>rapports Microsoft 365 dans le Centre d’administration - utilisation du site SharePoint
 
@@ -76,7 +76,7 @@ Le **rapport d’utilisation du site SharePoint** peut être consulté pour les 
 |Nom du principal du propriétaire du site  |Adresse e-mail du propriétaire du site. |
 |Date de la dernière activité (UTC)  | Date de la dernière activité de fichier d’heure détectée ou d’une page affichée sur le site.  |
 |ID d’étiquette de confidentialité du site  | Étiquette de confidentialité sur le site.  |
-|Partage externe  | Paramètres partageables externes sur le site.  |
+|Partage externe  | Valeur du paramètre de partage externe pour le site. Cette valeur ne reflète pas les modifications apportées au paramètre effectif par les étiquettes de confidentialité du site. Si vous utilisez des étiquettes de confidentialité, utilisez les [rapports de gouvernance d’accès aux données](/sharepoint/data-access-governance-reports) pour obtenir les valeurs correctes.|
 |Stratégie d’appareil non managé  | Stratégie d’accès au site pour les appareils non gérés.  |
 |Emplacement géographique  | Emplacement géographique du site.  |
 |Fichiers  |Nombre de fichiers sur le site. |
