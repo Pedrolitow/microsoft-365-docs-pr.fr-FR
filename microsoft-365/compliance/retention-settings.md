@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: 3b2833b2b6293845379f9f5aeffd3bd46610e2a8
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 0ec9ace6d2a2205996baed8cd64ca0e29ac83ed3
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63713072"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64836081"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -341,16 +341,30 @@ Sachez que **l'historique des conversations**, un dossier dans Outlook, est une 
 En choisissant les paramètres de conservation et de suppression de contenu, votre stratégie de rétention aura l’une des configurations suivantes pendant une période donnée lorsque vous sélectionnez les paramètres de conservation et de suppression de contenu :
 
 - Conserver uniquement
-
-    Pour cette configuration, choisissez **Conserver les éléments sur une période spécifique** et **À la fin de la période : ne rien faire** sélectionnez **Conserver les éléments à l’infini**.
+    
+    Pour cette configuration, choisissez les options suivantes :
+    
+    - Pour les stratégies de rétention : sur la page **Décider si vous souhaitez conserver du contenu, le supprimer ou les deux**, sélectionnez **Conserver les éléments pendant une période spécifique**, spécifiez la période de rétention, puis pour **À la fin de la période de rétention**, sélectionnez **Ne rien faire** pour que les paramètres de rétention à supprimer.  Ou pour une conservation sans date de fin, sélectionnez **Conserver les éléments pendant une durée indéfinie** sur cette page.
+    
+    - Pour les étiquettes de rétention : dans la **page Définir les paramètres d’étiquette**, sélectionnez **Conserver les éléments indéfiniment ou pendant une période spécifique**, puis :
+        - Pour que les paramètres de rétention ne soient plus en vigueur sur le contenu étiqueté après une durée spécifique : dans la page **Définir la période de rétention**, pour **Conserver les éléments pendant**, spécifiez la période. Ensuite, dans la page **Choisir ce qui se passe après la période de rétention**, sélectionnez **Désactiver les paramètres de rétention**. L’étiquette reste sur le contenu, mais sans aucune restriction, comme s’il s’agissait d’une [étiquette qui classe simplement](retention.md#classifying-content-without-applying-any-actions).
+        - Pour une conservation sans date de fin : dans la page **Définir la période de rétention**, pour **Conserver les éléments pendant**, sélectionnez **Une période indéfinie**. L’étiquette reste sur le contenu avec toutes les [restrictions existantes](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked ).
 
 - Conserver puis supprimer
 
-    Pour cette configuration, choisissez **Conserver les éléments sur une période spécifique** et **À la fin de la période : supprimer automatiquement**.
+    Pour cette configuration, choisissez les options suivantes :
+    
+    - Pour les stratégies de rétention : sur la page **Décider si vous souhaitez conserver du contenu, le supprimer ou les deux**, sélectionnez **Conserver les éléments pendant une période spécifique**, spécifiez la période de rétention, puis pour **À la fin de la période de rétention**, sélectionnez **Supprimer automatiquement les éléments**.
+    
+    - Pour les étiquettes de rétention : dans la page **Définir les paramètres d’étiquette**, sélectionnez **Conserver les éléments indéfiniment ou pendant une période spécifique**, spécifiez la période de rétention, puis pour **Choisir ce qui se passe après la période de rétention**, sélectionnez **Supprimer automatiquement** ou **Démarrer une révision avant destruction**. Pour plus d’informations sur les révisions avant destruction, consultez [Révision avant destruction](disposition.md#disposition-reviews).
 
 - Supprimer uniquement
 
-    Pour cette configuration, choisissez **Ne supprimer les éléments qu’une fois un certain âge atteint**.
+    Pour cette configuration, choisissez les options suivantes :
+    
+    - Pour les stratégies de rétention : sur la page **Décider si vous souhaitez conserver du contenu, le supprimer ou les deux**, sélectionnez **Supprimer uniquement les éléments lorsqu’ils atteignent un certain âge**, puis spécifiez la période.
+    
+    - Pour les étiquettes de rétention : sur la page **Définir les paramètres d’étiquette**, sélectionnez **Appliquer les actions après une période spécifique**, puis spécifiez la période, toujours appelée période de rétention. L’option **Choisir ce qui se passe après la période** est automatiquement définie sur **Supprimer automatiquement les éléments**.
 
 ### <a name="retaining-content-for-a-specific-period-of-time"></a>Conservation du contenu sur une période donnée
 
@@ -364,7 +378,7 @@ Exemples :
 
 - Exchange : Si vous souhaitez conserver les éléments dans une boîte aux lettres pendant sept ans et qu’un message a été envoyé il y a six ans, celui-ci ne sera conservé que pendant une autre année. Pour les éléments Exchange, l’âge est basé sur la date de réception du courrier entrant et d’envoi du courrier sortant. La rétention d’éléments sur la base de la date de dernière modification ne s’applique qu’au contenu de site sur OneDrive et SharePoint.
 
-Vous pouvez choisir si vous souhaitez que le contenu soit supprimé de façon définitive à la fin de la période de rétention :
+Vous pouvez choisir si vous souhaitez que le contenu soit supprimé de façon définitive à la fin de la période de rétention. Par exemple, pour les stratégies de rétention :
 
 ![Page Paramètres de rétention.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
 
@@ -378,11 +392,11 @@ Avant de configurer la rétention, familiarisez-vous tout d’abord avec les lim
 
 ### <a name="deleting-content-thats-older-than-a-specific-age"></a>Suppression du contenu antérieur à une date spécifique
 
-Une stratégie de rétention peut conserver puis supprimer des éléments, ou bien supprimer de vieux éléments sans les conserver.
+Les paramètres de rétention peuvent conserver puis supprimer des éléments, ou bien supprimer de vieux éléments sans les conserver.
 
-Dans les deux cas, si votre stratégie supprime des éléments, il est important de comprendre que la période que vous spécifiez n’est pas calculée à partir du moment où la stratégie a été affectée, mais en fonction du début de la période de rétention spécifiée. Par exemple, à partir du moment où l’élément a été créé, modifié ou étiqueté.
+Dans les deux cas, si les paramètres de votre stratégie suppriment des éléments, il est important de comprendre que la période que vous spécifiez n’est pas calculée à partir du moment où la stratégie a été affectée, mais en fonction du début de la période de rétention spécifiée. Par exemple, à partir du moment où l’élément a été créé, modifié ou étiqueté.
 
-Pour cette raison, tenez d’abord compte de l’âge du contenu existant et de la façon dont la stratégie peut avoir un impact sur ce contenu. Vous pouvez également communiquer la nouvelle stratégie à vos utilisateurs avant de l’affecter, afin de leur donner le temps d’évaluer l’impact possible.
+Pour cette raison, tenez d’abord compte de l’âge du contenu existant et de la façon dont les paramètres peuvent affecter ce contenu. Envisagez de communiquer les paramètres de votre choix à vos utilisateurs et au support technique avant application des paramètres au contenu, ce qui leur donne le temps d’évaluer l’impact possible.
 
 ### <a name="a-policy-that-applies-to-entire-locations"></a>Une stratégie qui s’applique à des emplacements entiers
 

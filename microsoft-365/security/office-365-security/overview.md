@@ -6,7 +6,7 @@ manager: dansimp
 ms.date: 07/21/2021
 audience: Admin
 ms.topic: conceptual
-ms.localizationpriority: medium
+ms.localizationpriority: high
 search.appverid:
 - MET150
 - MOE150
@@ -16,12 +16,12 @@ ms.collection:
 description: Sécurité dans Office 365, d’Exchange Online Protection aux plans 1 et 2 de Defender pour Office 365, Standard vs. Configurations de sécurité strictes, et plus. Découvrez ce que vous avez et comment sécuriser vos propriétés.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8ddf81e038b4c055134498ee0a26751b735d786a
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
-ms.translationtype: MT
+ms.openlocfilehash: a9f480575c712488a17dc7e9e91320edc11d0e50
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472174"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64835906"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Vue d’ensemble de la sécurité de Microsoft Defender pour Office 365
 
@@ -55,7 +55,7 @@ Vous avez peut-être l’habitude de voir ces trois composants abordés de cette
 
 Mais en termes d’architecture, commençons par considérer chaque élément comme des couches de sécurité cumulatives, chacune avec un accent sur la sécurité. Plus comme ceci :
 
-:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP et Microsoft Defender pour Office 365 et leurs relations les uns avec les autres avec l’accentuation du service, y compris une note pour l’authentification de messagerie" lightbox="../../media/tp_GraphicEOPATPP1P2_2.png":::
+:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP et Microsoft Defender pour Office 365 et leurs relations les uns avec les autres grâce au service et à une note pour l’authentification des messages électroniques" lightbox="../../media/tp_GraphicEOPATPP1P2_2.png":::
 
 Bien que chacun de ces services mette l'accent sur un objectif parmi les suivants : protéger, détecter, examiner et réagir, ***tous** _ les services peuvent effectuer _ *_n'importe quel_** des objectifs de protection, de détection, d'examen et de réaction.
 

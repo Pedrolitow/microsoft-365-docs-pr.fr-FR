@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes de rétention.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 2e028bae676b949c662a86178bac5e8ccdc557bf
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 40c395d609a9a02637b937cafae988578dc6e14f
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317708"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64836169"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Utiliser le plan de gestion de fichiers pour créer et gérer des étiquettes de rétention
 
@@ -80,6 +80,10 @@ Toutes les colonnes à l’exception du **Nom** de l’étiquette peuvent être 
     - Non
     - Oui
     - Oui (réglementaire)
+
+- **Est déverrouillé par défaut**, en cours de déploiement, identifie si l’élément marqué comme enregistrement est déverrouillé lors de l’application de l’étiquette. Valeurs valides :
+    - Non
+    - Oui
 
 - **Durée de rétention** identifie la période de rétention. Valeurs valides :
     - Jours
@@ -212,7 +216,13 @@ Utilisez les informations suivantes pour vous aider à remplir le modèle télé
 |CitationJurisdiction|Chaîne|Non|Cette propriété spécifie la juridiction ou l’agence qui apparaît dans la **Clause/citation** du descripteur du plan de fichiers. Par exemple, « U.S. Securities and Exchange Commission (SEC) ».|
 |Réglementaire|Chaîne|Non|Cette propriété spécifie si l’étiquette marque le contenu comme un enregistrement réglementaire, ce qui est [plus restrictif](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) qu’un enregistrement. Pour utiliser cette configuration d’étiquette, votre client doit être configuré pour [afficher l’option permettant de marquer le contenu comme un enregistrement réglementaire](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record), sinon la validation de l’importation échouera. Les valeurs valides sont les suivantes : </br>**TRUE**: l’étiquette marque l’élément comme un enregistrement réglementaire. Vous devez également définir la propriété **IsRecordLabel** sur TRUE.</br>**FALSE** : l’étiquette ne marque pas le contenu comme un enregistrement réglementaire. Il s’agit de la valeur par défaut.|
 |EventType|Chaîne|Non, sauf si **RetentionType** est **EventAgeInDays**|Cette propriété spécifie un type d’événement utilisé pour la [rétention basée sur les événements](event-driven-retention.md). Spécifiez un type d’événement existant qui s’affiche dans **Gestion des enregistrements** > **Événements** > **Gérer les types d’événements**. Vous pouvez également utiliser l’applet de commande [Get-ComplianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype) pour afficher les types d’événements disponibles. Bien qu’il existe certains types d’événements intégrés, tels que **Activité de l’employé** et **Durée de vie du produit**, vous pouvez également créer vos propres types d’événements. </br> </br> Si vous spécifiez votre propre type d’événement, il doit exister avant l’importation, car le nom est validé dans le cadre du processus d’importation.|
-|||
+
+Les paramètres d’étiquette ne sont actuellement pas pris en charge pour l’importation :
+
+- Révision avant destruction en plusieurs étapes : bien que vous puissiez configurer les paramètres d’une seule étape de révision avant destruction lorsque vous importez des étiquettes de rétention avec un modèle, vous ne pouvez pas spécifier d’étapes de révision supplémentaires. Au lieu de cela, configurez-les dans le centre de conformité une fois l’importation réussie.
+
+- Déverrouillez cet enregistrement par défaut (actuellement en préversion) : ce paramètre n’est pas disponible dans le modèle à importer et vous ne pouvez pas sélectionner ce paramètre dans le centre de conformité une fois l’importation réussie.
+
 
 ## <a name="next-steps"></a>Prochaines étapes
 
