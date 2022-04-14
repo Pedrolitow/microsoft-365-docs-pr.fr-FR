@@ -21,12 +21,12 @@ description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le 
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: edf5bfd91313c621707d1bdc35074bfe7fe9585c
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 1a10bf738562f8fd9a263252d4a56eddf8acee9d
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759918"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841942"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -128,29 +128,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
 
 - Azure Active Directory (Azure AD) est le service d’annuaire pour Microsoft 365. Le journal d’audit unifié contient les activités des utilisateurs, des groupes, des applications, des domaines et des annuaires effectuées dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a> ou le portail de gestion Azure. Pour consulter la liste complète des événements Azure AD, voir [Événements de rapport d’audit d’Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
-- Il peut s'écouler jusqu'à 30 minutes ou jusqu'à 24 heures après qu'un événement se soit produit pour que l'enregistrement du journal d'audit correspondant soit renvoyé dans les résultats d'une recherche dans le journal d'audit. Le tableau suivant indique le temps nécessaire pour les différents services de Microsoft 365.
-
-  |Service ou fonctionnalité Microsoft 365|30 minutes|24 heures|
-  |---|:---:|:---:|
-  |Defender pour Microsoft 365 et Threat Intelligence|![Coche.](../media/checkmark.png)||
-  |Azure Active Directory (événements de connexion utilisateur)||![Coche.](../media/checkmark.png)|
-  |Azure Active Directory (événements administrateur)||![Coche.](../media/checkmark.png)|
-  |Protection contre la perte de données|![Coche.](../media/checkmark.png)||
-  |Dynamics 365 CRM||![Coche.](../media/checkmark.png)|
-  |eDiscovery|![Coche.](../media/checkmark.png)||
-  |Exchange Online|![Coche.](../media/checkmark.png)||
-  |Microsoft Power Automate||![Coche.](../media/checkmark.png)|
-  |Microsoft Stream|![Coche.](../media/checkmark.png)||
-  |Microsoft Teams|![Coche.](../media/checkmark.png)||
-  |Power Apps||![Coche.](../media/checkmark.png)|
-  |Power BI|![Coche.](../media/checkmark.png)||
-  |Centre de conformité Microsoft 365|![Coche.](../media/checkmark.png)||
-  |Étiquettes de confidentialité||![Coche.](../media/checkmark.png)|
-  |Sharepoint Online et OneDrive Entreprise|![Coche.](../media/checkmark.png)||
-  |Workplace Analytics|![Coche.](../media/checkmark.png)||
-  |Yammer||![Coche.](../media/checkmark.png)|
-  |Microsoft Forms|![Coche.](../media/checkmark.png)||
-  ||||
+- Microsoft Corporation ne garantit pas un délai spécifique après la survenue d'un événement pour que l'enregistrement d'audit correspondant soit renvoyé dans les résultats d'une recherche dans le journal d'audit. Pour les services principaux (par exemple, Exchange, SharePoint, OneDrive et Teams), la disponibilité des enregistrements d’audit est généralement de 60 à 90 minutes après qu’un événement se produit. Pour d’autres services, la disponibilité des enregistrements d’audit peut être plus longue. Toutefois, certains problèmes inévitables (comme une panne de serveur) peuvent se produire en dehors du service d’audit, ce qui retarde la disponibilité des enregistrements d’audit. Pour cette raison, Microsoft Corporation ne s’engage pas à une heure spécifique.
 
 - L’enregistrement d’audit pour Power BI n’est pas activé par défaut. Pour rechercher des activités Power BI dans le journal d’audit, vous devez activer l’audit dans le portail d’administration Power BI. Pour consulter des instructions, voir la section «journaux d’audit» du [portail d’administration Power BI](/power-bi/service-admin-portal#audit-logs).
 

@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: rançongiciel, rançongiciel géré par les humains, rançongiciel géré par l’homme, HumOR, attaque par extorsion, attaque par rançongiciel, chiffrement, cryptovirologie, zéro virus
 description: Utilisez les lignes de base de sécurité pour protéger vos ressources Microsoft 365 contre les attaques par rançongiciel.
-ms.openlocfilehash: 22092994765e9015421c21f2ee057c63463d594d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 925a64e1d7852aeed6f596e99b20dbff8b34d1be
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320184"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64825099"
 ---
 # <a name="step-1-configure-security-baselines"></a>Étape 1. Configurer les lignes de base de sécurité
 
@@ -53,14 +53,14 @@ Ensuite, utilisez [des règles de réduction de la surface d'attaque](/microsoft
 - Vol d’informations d’identification dans le sous-système d’autorité de sécurité locale de Windows (lsass.exe)
 - Créations de processus provenant de commandes PSExec et WMI
 
-## <a name="exchange-email-management-baseline"></a>Ligne de base de gestion du courrier Exchange 
+## <a name="exchange-email-management-baseline"></a>Ligne de base de gestion du courrier Exchange
 
 Empêchez l’accès initial à votre client par une attaque basée sur la messagerie avec les paramètres Exchange de ligne de base de courrier :
 
 - Activez [Analyse de courrier par l’Antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus).
 - Utilisez Microsoft Defender pour Office 365 pour une [protection améliorée contre le hameçonnage](/microsoft-365/security/office-365-security/anti-phishing-protection) et une couverture contre les nouvelles menaces et les variantes polymorphes.
 - Vérifiez vos paramètres de filtrage de courrier Office 365 pour vous assurer que vous bloquez les e-mails usurpés, le courrier indésirable et les courriers avec des programmes malveillants. Utilisez Defender pour Office 365 pour une protection améliorée contre le hameçonnage et une couverture contre les nouvelles menaces et les variantes polymorphes. Configurez Defender pour Office 365 pour [revérifier les liens sur un clic](/microsoft-365/security/office-365-security/atp-safe-links) et [supprimer les e-mails remis](/microsoft-365/security/office-365-security/zero-hour-auto-purge) en réponse à la veille sur les menaces récemment acquise.
-- Examinez et mettez à jour les tous derniers  [paramètres recommandés pour la sécurité de Protection Exchange Online (EOP) et de Defender pour Office 365](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp).
+- Examinez et mettez à jour les tous derniers [paramètres recommandés pour la sécurité de Protection Exchange Online (EOP) et de Defender pour Office 365](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp).
 - Configurez Defender pour Office 365 pour [revérifier les liens sur un clic](/microsoft-365/security/office-365-security/set-up-safe-links-policies) et supprimer les e-mails remis en réponse à la veille sur les nouvelles menaces récemment acquise.
 
 ## <a name="additional-baselines"></a>Lignes de base supplémentaires
@@ -82,7 +82,6 @@ En outre, les paramètres de ligne de base de courrier Exchange peuvent bloquer 
 Voici la protection contre les rançongiciels pour votre client après cette étape.
 
 ![Protection contre les rançongiciels pour votre client Microsoft 365 après l’étape 1](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step1.png)
-
 
 ## <a name="next-step"></a>Étape suivante
 
