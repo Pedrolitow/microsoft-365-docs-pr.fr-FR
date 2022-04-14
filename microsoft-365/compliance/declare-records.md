@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Déclarer des enregistrements à l’aide d’étiquettes de rétention.
-ms.openlocfilehash: 93e51698109819f4743dd4b5b45f5a5177739a2a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 228ce06cbc646f60703443a00492693019dfa0b8
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324842"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64836130"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Déclarer des enregistrements à l’aide d’étiquettes de rétention
 
@@ -55,11 +55,15 @@ Si vous changez d’avis sur la façon de voir cette option dans l’assistant �
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Configuration d’étiquettes de rétention pour déclarer des enregistrements
 
-Lorsque vous créez une étiquette de rétention depuis la solution **Gestion des enregistrements** dans le centre de conformité Microsoft 365, vous pouvez marquer des éléments comme enregistrement. Si vous avez exécuté la commande PowerShell à partir de la section précédente, vous pouvez marquer les éléments comme un enregistrement réglementaire de manière alternative.
+Lorsque vous créez une étiquette de rétention à partir de la solution **Gestion des enregistrements** dans le Centre de conformité Microsoft 365, vous pouvez sélectionner l’option **Marquer les éléments en tant qu’enregistrement**. Ensuite, en tant qu’option supplémentaire actuellement déployée en préversion, déverrouillez l’enregistrement par défaut pour SharePoint et OneDrive.
+
+L’option supplémentaire de **Déverrouiller cet enregistrement par défaut** permet aux utilisateurs de déclarer eux-mêmes les enregistrements, car ils verrouillent l’enregistrement lorsqu’ils ont terminé de modifier le contenu. Pour plus d’informations sur ce scénario pris en charge, consultez [Utiliser le contrôle de version des enregistrements pour mettre à jour les enregistrements stockés dans SharePoint ou OneDrive](record-versioning.md).
+
+Si vous avez exécuté la commande PowerShell à partir de la section précédente, vous pouvez marquer les éléments comme un enregistrement réglementaire de manière alternative.
 
 Par exemple :
 
-![Configurer une étiquette de rétention pour marquer le contenu en tant qu’enregistrement ou réglementation.](../media/recordversioning6.png)
+![Configurer une étiquette de rétention pour marquer le contenu en tant qu’enregistrement ou réglementation.](../media/declare-records.png)
 
 En utilisant cette étiquette de rétention, vous pouvez désormais l’appliquer aux documents SharePoint ou OneDrive et aux messages électroniques Exchange, comme souhaité.
 
