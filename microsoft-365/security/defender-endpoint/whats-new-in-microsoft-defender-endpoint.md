@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a3294529a9b86fdc9bdb83de6a3296c9f0d6507d
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 6fb2b8c3e1466c52d707538f46643580c72a6fbf
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782828"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841887"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -60,7 +60,7 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 - [Nouveautés de Defender pour point de terminaison sur iOS](ios-whatsnew.md)
 - [Nouveautés de Defender pour point de terminaison sur Linux](linux-whatsnew.md)
 
-## <a name="march-2022"></a>Mars 2022
+## <a name="april-2022"></a>Avril 2022
 - [Mise à jour de l’intégration et de la parité des fonctionnalités pour Windows Server 2012 R2 et Windows Server 2016)](configure-server-endpoints.md)<br/> Le nouveau package de solution unifié est désormais en disponibilité générale et facilite l’intégration des serveurs en supprimant les dépendances et les étapes d’installation. En outre, ce package de solution unifié est fourni avec de nombreuses nouvelles améliorations de fonctionnalités.
 
 ## <a name="january-2022"></a>Janvier 2022

@@ -9,12 +9,12 @@ ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 8c8d79313ee858ebcac8754b96046b517a3f614a
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 5cb1f14f8f9dc8c645621c1a12c651db8a790b71
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64835971"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841919"
 ---
 # <a name="shared-devices"></a>Appareils partagés
 
@@ -45,7 +45,7 @@ Le mode appareil partagé n’est pas un bon choix dans les situations suivantes
 - Si l’expérience utilisateur doit être différente pour différents utilisateurs sur l’appareil.
 - Si l’ensemble d’applications dont chaque utilisateur a besoin diffère considérablement.
 
-## <a name="register-new-devices-using-the-windows-autopilot-self-deploying-mode-profile-in-microsoft-managed-desktop"></a>Inscrire de nouveaux appareils à l’aide du profil de mode de déploiement automatique autopilot Windows dans Microsoft Managed Desktop
+## <a name="register-new-devices-using-the-windows-autopilot-self-deploying-mode-profile"></a>Inscrire de nouveaux appareils à l’aide du profil de mode de déploiement automatique Windows Autopilot
 
 Que vous ou un partenaire gériez l’inscription des appareils, vous pouvez choisir d’utiliser le Windows profil de [mode de déploiement automatique Autopilot](/mem/autopilot/self-deploying) dans Microsoft Managed Desktop.
 

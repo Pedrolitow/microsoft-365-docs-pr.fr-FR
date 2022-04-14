@@ -1,11 +1,11 @@
 ---
-title: Informations de base sur l’allotment
+title: Concepts de base de l’allocation
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: micurn, nicholak
+ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,41 +17,41 @@ ms.collection:
 ms.custom:
 - commerce_licensing
 search.appverid: MET150
-description: Découvrez la nouvelle fonctionnalité d’allotments.
+description: Découvrez la nouvelle fonctionnalité d’allocations.
 ms.date: 03/17/2021
-ms.openlocfilehash: b41b3e27b7a3b05a9b80c3ac9590139adcee6fc6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 339533d4635e29bb277fe7f0344ba2da17f4ec7d
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325443"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841842"
 ---
-# <a name="allotment-basics"></a>Informations de base sur l’allotment
+# <a name="allotment-basics"></a>Concepts de base de l’allocation
 
-Les attributions de licence vous permet de définir des limites de licence et de déléguer la gestion de l’attribution de licence uniquement aux produits et licences que vous sélectionnez.
+Les allocations de licences vous permettent de définir des limites de licence et de déléguer la gestion de l’attribution de licences aux produits et aux limites de licence que vous sélectionnez.
 
-Les affectations utilisent des licences basées sur des groupes pour attribuer des licences à vos utilisateurs. Les limites de licence offrent un contrôle supplémentaire sur le nombre de licences attribuées aux utilisateurs de vos groupes. Ainsi, même à mesure que le nombre d’utilisateurs de vos groupes augmente, vous pouvez vous assurer que vous respectez la limite de licence que vous avez définie pour votre allotment.
+Les affectations utilisent des licences basées sur des groupes pour attribuer des licences à vos utilisateurs. Les limites de licence offrent un contrôle supplémentaire sur le nombre de licences affectées aux utilisateurs de vos groupes. Ainsi, même à mesure que le nombre d’utilisateurs dans vos groupes augmente, vous pouvez vous assurer que vous restez dans la limite de licence que vous avez définie pour votre allocation.
 
-Vous pouvez également déléguer la gestion de vos allotments. Les propriétaires d’autorisation délégués ont accès au Centre d’administration, mais peuvent uniquement voir et gérer les licences dans les autorisations dont ils sont propriétaires. Cela fournit une délégation plus granulaire de la gestion des licences au sein de votre organisation.
+Vous pouvez également déléguer la gestion de vos allocations. Les propriétaires d’allocation délégués accèdent au centre d’administration, mais ne peuvent voir et gérer que les licences dans les allocations qu’ils possèdent. Cela fournit une délégation plus granulaire de la gestion des licences au sein de votre organisation.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Configuration requise
 
-Vous devez respecter les exigences de licence pour les [licences basées sur un groupe](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements).
+Vous devez respecter les exigences en matière de licences pour les [licences basées sur un groupe](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements).
 
-Vous pouvez utiliser des allotments avec n’importe quel produit disponible pour les utilisateurs :
+Vous pouvez utiliser des allocations avec n’importe quel produit disponible pour les utilisateurs :
 
 - Office suites et produits autonomes
-- Enterprise et produits de mobilité
+- produits Enterprise et Mobilité
 - Produits Dynamics 365
 
-Les produits suivants ne peuvent pas être utilisés avec des allotments :
+Les produits suivants ne peuvent pas être utilisés avec des allocations :
 
-- Microsoft Store applications
-- Logiciels perpétuelles ou logiciels directement attribués à un utilisateur s’il n’y a aucune licence impliquée.
+- applications Microsoft Store
+- Logiciels perpétuels ou logiciels directement affectés à un utilisateur s’il n’y a aucune licence impliquée.
 - Ressources Azure
 
-Vous devez être un administrateur global ou un administrateur de licence pour commencer avec une autorisation.
+Vous devez être administrateur général ou de licence pour commencer à utiliser une allocation.
 
 ## <a name="getting-started"></a>Prise en main
 
-La fonctionnalité d’allotments est disponible en prévisualisation privée uniquement pour un petit nombre de clients. Si vous êtes intéressé par la jointation, remplissez ce formulaire : [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).
+La fonctionnalité d’allocations est disponible en préversion privée pour un petit nombre de clients uniquement. Si vous souhaitez participer, remplissez ce formulaire : [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).
