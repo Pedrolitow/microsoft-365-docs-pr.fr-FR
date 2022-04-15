@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,19 +17,17 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 02f970f7ad9981336ba54aaafcf936e952f1b726
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 68ebf170fa351d63e943a2c4c7a920d3e243ddbe
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663113"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862629"
 ---
 # <a name="the-simplified-configuration-process-in-microsoft-defender-for-business"></a>Processus de configuration simplifié dans Microsoft Defender pour les PME
 
-> [!IMPORTANT]
-> Microsoft Defender pour les PME est déployée pour [Microsoft 365 Business Premium](../../business-premium/index.md) clients, à compter du 1er mars 2022. Defender entreprise en tant qu’abonnement autonome est en préversion et sera déployé progressivement pour les clients et les partenaires informatiques qui [s’inscrivent ici](https://aka.ms/mdb-preview) pour le demander. La préversion inclut un [ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios), et nous ajouterons régulièrement des fonctionnalités.
-> 
-> Certaines informations contenues dans cet article concernent des produits/services prédéfinis qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expresse ou implicite, pour les informations fournies ici. 
+> [!NOTE]
+> Microsoft Defender pour les PME est désormais inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Microsoft Defender pour les PME propose un processus de configuration simplifié, conçu spécialement pour les petites et moyennes entreprises. Cette expérience permet de deviner comment intégrer et gérer des appareils, avec une expérience de type Assistant et des stratégies par défaut conçues pour protéger les appareils de votre entreprise dès le premier jour. **Nous vous recommandons d’utiliser le processus de configuration simplifié. Toutefois, vous n’êtes pas limité à cette option**.
 
@@ -49,13 +47,12 @@ Quand il s’agit d’intégrer des appareils et de configurer des paramètres d
 
 >
 > **Avez-vous un peu de temps ?**
-> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">court sondage sur Microsoft Defender pour les PME</a>. Vos commentaires sont les bienvenus.
+> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
 >
 
 ## <a name="review-your-setup-and-configuration-options"></a>Passer en revue vos options d’installation et de configuration
 
 Le tableau suivant décrit chaque expérience :
-<br/><br/>
 
 | Expérience du portail  | Description  |
 |---------|---------|
@@ -73,5 +70,4 @@ Defender entreprise est conçu pour fournir une protection renforcée tout en vo
 ## <a name="next-steps"></a>Prochaines étapes
 
 - [Configurer et configurer Microsoft Defender pour les PME](mdb-setup-configuration.md)
-
 - [Démarrage à l’aide de Microsoft Defender pour les PME](mdb-get-started.md)

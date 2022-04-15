@@ -16,18 +16,18 @@ ms.collection:
 - m365solution-endpointprotect
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 41f47720582f715e6c5d28276ddd87777e9669d5
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: e308b1c1d8c26a4ec3d6b3044501ffe1ce92e1c7
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783378"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862871"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Déployer Microsoft Defender pour point de terminaison en anneaux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -42,7 +42,7 @@ Les anneaux de déploiement peuvent être appliqués dans les scénarios suivant
 
 ## <a name="new-deployments"></a>Nouveaux déploiements
 
-:::image type="content" source="images/deployment-rings.png" alt-text="Anneaux de déploiement" lightbox="images/deployment-rings.png":::
+:::image type="content" source="images/deployment-rings.png" alt-text="Anneaux de déploiement." lightbox="images/deployment-rings.png":::
 
 Une approche basée sur un anneau est une méthode permettant d’identifier un ensemble de points de terminaison à intégrer et de vérifier que certains critères sont remplis avant de déployer le service sur un plus grand ensemble d’appareils. Vous pouvez définir les critères de sortie pour chaque anneau et vous assurer qu’ils sont satisfaits avant de passer à l’anneau suivant.
 
@@ -52,16 +52,11 @@ Le tableau 1 fournit un exemple des anneaux de déploiement que vous pouvez util
 
 **Tableau 1** :
 
-<br>
-
-****
-
 |Anneau de déploiement|Description|
 |---|---|
 |Évaluation|Anneau 1 : Identifier 50 systèmes pour les tests pilotes|
 |Pilote|Anneau 2 : Identifier les 50 à 100 points de terminaison suivants dans l’environnement de production|
 |Déploiement complet|Anneau 3 : Déployer le service dans le reste de l’environnement par incréments plus importants|
-|
 
 ### <a name="exit-criteria"></a>Critères de sortie
 
@@ -82,13 +77,13 @@ Microsoft Defender pour point de terminaison prend en charge divers points de te
 
 Le tableau suivant présente les points de terminaison pris en charge et l’outil correspondant que vous pouvez utiliser pour intégrer des appareils au service.
 
-| Point de terminaison     | Outil de déploiement                       |
-|--------------|------------------------------------------|
-| **Fenêtres**  |  [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br> REMARQUE : Si vous souhaitez déployer plus de 10 appareils dans un environnement de production, utilisez plutôt la méthode stratégie de groupe ou les autres outils pris en charge répertoriés ci-dessous.<br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Mobile Gestionnaire de périphériques](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration de à Microsoft Defender pour le cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
-| **MacOS**    | [Script local](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Gestion des appareils mobiles](mac-install-with-other-mdm.md) |
-| **Serveur Linux** | [Script local](linux-install-manually.md) <br> [Marionnette](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
-| **iOS**      | [Microsoft Endpoint Manager](ios-install.md)                                |
-| **Android**  | [Microsoft Endpoint Manager](android-intune.md)               |
+|Point de terminaison|Outil de déploiement|
+|---|---|
+|**Fenêtres**|[Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br> REMARQUE : Si vous souhaitez déployer plus de 10 appareils dans un environnement de production, utilisez plutôt la méthode stratégie de groupe ou les autres outils pris en charge répertoriés ci-dessous.<br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Mobile Gestionnaire de périphériques](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration de à Microsoft Defender pour le cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)|
+|**MacOS**|[Script local](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Gestion des appareils mobiles](mac-install-with-other-mdm.md)|
+|**Serveur Linux**|[Script local](linux-install-manually.md) <br> [Marionnette](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
+|**iOS**|[Microsoft Endpoint Manager](ios-install.md)|
+|**Android**|[Microsoft Endpoint Manager](android-intune.md)|
 
 ### <a name="full-deployment"></a>Déploiement complet
 
@@ -96,9 +91,9 @@ Le tableau suivant présente les points de terminaison pris en charge et l’out
 
 Utilisez les éléments suivants pour sélectionner l’architecture Microsoft Defender pour point de terminaison appropriée qui convient le mieux à votre organisation.
 
-|**Élément**|**Description**|
-|:-----|:-----|
-|[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="Stratégie de déploiement Microsoft Defender pour point de terminaison" lightbox="images/mde-deployment-strategy.png":::](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | Le matériel architectural vous aide à planifier votre déploiement pour les architectures suivantes : <ul><li> Cloud-natif </li><li> Cogestion </li><li> Sur site</li><li>Évaluation et intégration locale</li></ul>
+|Item|Description|
+|---|---|
+|[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="Stratégie de déploiement Microsoft Defender pour point de terminaison." lightbox="images/mde-deployment-strategy.png":::](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)|Le matériel architectural vous aide à planifier votre déploiement pour les architectures suivantes : <ul><li> Cloud-natif </li><li> Cogestion </li><li> Sur site</li><li>Évaluation et intégration locale</li></ul>|
 
 ## <a name="existing-deployments"></a>Déploiements existants
 
@@ -120,8 +115,7 @@ Avec macOS et Linux, vous pouvez prendre quelques systèmes et les exécuter dan
 
 Le choix du canal détermine le type et la fréquence des mises à jour proposées à votre appareil. Les appareils en version bêta sont les premiers à recevoir des mises à jour et de nouvelles fonctionnalités, suivis ultérieurement de la préversion et enfin de Current.
 
-:::image type="content" source="images/insider-rings.png" alt-text="Les anneaux insider" lightbox="images/insider-rings.png":::
-
+:::image type="content" source="images/insider-rings.png" alt-text="Les anneaux insider." lightbox="images/insider-rings.png":::
 
 Pour afficher un aperçu des nouvelles fonctionnalités et fournir des commentaires précoces, il est recommandé de configurer certains appareils de votre entreprise pour qu’ils utilisent la version bêta ou la préversion.
 

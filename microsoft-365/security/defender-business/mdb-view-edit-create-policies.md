@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,35 +17,30 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 6f8ad1bd1f77bd3e53a1686674984155a7dc8525
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: ba7f6846809009b8bb9df258b8ac18536a910b6d
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665093"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862123"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>Afficher ou modifier des stratégies dans Microsoft Defender pour les PME
 
-> [!IMPORTANT]
-> Microsoft Defender pour les PME est déployée pour [Microsoft 365 Business Premium](../../business-premium/index.md) clients, à compter du 1er mars 2022. Defender entreprise en tant qu’abonnement autonome est en préversion et sera déployé progressivement pour les clients et les partenaires informatiques qui [s’inscrivent ici](https://aka.ms/mdb-preview) pour le demander. La préversion inclut un [ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios), et nous ajouterons régulièrement des fonctionnalités.
-> 
-> Certaines informations contenues dans cet article concernent des produits/services prédéfinis qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expresse ou implicite, pour les informations fournies ici. 
+> [!NOTE]
+> Microsoft Defender pour les PME est désormais inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Dans Microsoft Defender pour les PME, les paramètres de sécurité sont configurés via des stratégies appliquées aux appareils. Pour simplifier votre expérience d’installation et de configuration, Defender entreprise inclut des stratégies préconfigurées pour protéger les appareils de votre entreprise dès qu’ils sont intégrés. Vous pouvez utiliser les stratégies par défaut, modifier des stratégies ou créer vos propres stratégies.
 
 **Cet article explique comment** :
 
 - [Obtenir une vue d’ensemble de vos stratégies par défaut](#default-policies-in-defender-for-business)
-
 - [Afficher vos stratégies existantes](#view-your-existing-policies)
-
 - [Modifier une stratégie existante](#edit-an-existing-policy)
-
 - [Créer une stratégie](#create-a-new-policy)
 
 >
 > **Avez-vous un peu de temps ?**
-> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">court sondage sur Microsoft Defender pour les PME</a>. Vos commentaires sont les bienvenus.
+> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
 >
 
 ## <a name="default-policies-in-defender-for-business"></a>Stratégies par défaut dans Defender entreprise
@@ -53,7 +48,6 @@ Dans Microsoft Defender pour les PME, les paramètres de sécurité sont configu
 Dans Defender Entreprise, il existe deux principaux types de stratégies pour protéger les appareils de votre entreprise :
 
 - **Stratégies de protection de nouvelle génération**, qui déterminent comment Antivirus Microsoft Defender et d’autres fonctionnalités de protection contre les menaces sont configurées
-
 - **Stratégies de pare-feu**, qui déterminent le trafic réseau autorisé à circuler vers et depuis les appareils de votre entreprise
 
 
@@ -138,11 +132,7 @@ Dans Defender Entreprise, il existe deux principaux types de stratégies pour pr
 Choisissez une ou plusieurs des tâches suivantes :
 
 - [Gérer les appareils](mdb-manage-devices.md)
-
 - [Créer une stratégie dans Microsoft Defender pour les PME](mdb-create-new-policy.md)
-
 - [Afficher et gérer les incidents dans Microsoft Defender pour les PME](mdb-view-manage-incidents.md)
-
 - [Répondre aux menaces et les atténuer dans Microsoft Defender pour les PME](mdb-respond-mitigate-threats.md)
-
 - [Passer en revue les actions de correction dans le Centre d’actions](mdb-review-remediation-actions.md)

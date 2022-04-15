@@ -1,5 +1,5 @@
 ---
-title: Démarrage à l’aide du portail Microsoft 365 Defender
+title: Visitez le portail Microsoft 365 Defender
 description: Découvrez comment commencer à utiliser le portail Microsoft 365 Defender. Découvrez comment naviguer dans le portail et afficher l’état et les recommandations de sécurité actuels
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -18,42 +18,29 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: c5a940676eab6ae3a07c526ecb1bd910ed8751fe
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 4af2986a3c1c726e9bf963752d53fe6ef098c19e
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667139"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861463"
 ---
-# <a name="get-started-using-the-microsoft-365-defender-portal"></a>Démarrage à l’aide du portail Microsoft 365 Defender
+# <a name="visit-the-microsoft-365-defender-portal"></a>Visitez le portail Microsoft 365 Defender
 
-> [!IMPORTANT]
-> Microsoft Defender pour les PME est déployée pour [Microsoft 365 Business Premium](../../business-premium/index.md) clients, à compter du 1er mars 2022. Defender entreprise en tant qu’abonnement autonome est en préversion et sera déployé progressivement pour les clients et les partenaires informatiques qui [s’inscrivent ici](https://aka.ms/mdb-preview) pour le demander. La préversion inclut un [ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios), et nous ajouterons régulièrement des fonctionnalités.
-> 
-> Certaines informations contenues dans cet article concernent des produits/services prédéfinis qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expresse ou implicite, pour les informations fournies ici. 
+> [!NOTE]
+> Microsoft Defender pour les PME est désormais inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
-Une fois que vous êtes inscrit à Microsoft Defender pour les PME, vous devez vous familiariser avec le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Le présent article contient les sections suivantes :
-
-- [Guide pratique pour naviguer dans le portail Microsoft 365 Defender](#navigate-the-microsoft-365-defender-portal)
-
-- [Learning modules sur les incidents et les actions de réponse](#complete-a-learning-module-about-incidents-and-response-actions) 
-
-- [Étapes suivantes](#next-steps)
-
->
-> **Avez-vous un peu de temps ?**
-> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">court sondage sur Microsoft Defender pour les PME</a>. Vos commentaires sont les bienvenus.
->
-
-## <a name="navigate-the-microsoft-365-defender-portal"></a>Naviguer dans le portail Microsoft 365 Defender
-
-Le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) est votre magasin unique pour l’utilisation et la gestion des Microsoft Defender pour les PME. Il comprend une bannière d’accueil et des légendes pour vous aider à commencer, des cartes qui affichent des informations pertinentes et une barre de navigation pour vous permettre d’accéder facilement aux différentes fonctionnalités.
- 
-Prenez un moment pour vous familiariser avec votre portail Microsoft 365 Defender.
+Le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) est votre magasin unique pour l’utilisation et la gestion des Microsoft Defender pour les PME. Il comprend une bannière d’accueil et des légendes pour vous aider à commencer, des cartes qui affichent des informations pertinentes et une barre de navigation pour vous permettre d’accéder facilement aux différentes fonctionnalités. 
 
 :::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="Portail Microsoft 365 Defender":::
 
-### <a name="use-the-navigation-bar"></a>Utiliser la barre de navigation
+ 
+>
+> **Avez-vous un peu de temps ?**
+> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
+>
+
+## <a name="the-navigation-bar"></a>Barre de navigation
 
 Utilisez la barre de navigation sur le côté gauche de l’écran pour accéder à vos incidents, afficher les rapports et gérer vos stratégies de sécurité. Le tableau suivant décrit les éléments que vous verrez dans votre barre de navigation.
 
@@ -73,28 +60,10 @@ Utilisez la barre de navigation sur le côté gauche de l’écran pour accéder
 | **Rapports** | Répertorie vos rapports de sécurité disponibles. Ces rapports vous permettent de voir vos tendances de sécurité, d’afficher des détails sur les détections de menaces et les alertes, et d’en savoir plus sur les appareils vulnérables de votre entreprise. |
 | **État d'intégrité** | Vous permet d’afficher l’état d’intégrité de votre service et de planifier les modifications à venir. <br/>- Sélectionnez **État des services** pour afficher l’état d’intégrité des services Microsoft 365 inclus dans l’abonnement de votre entreprise. <br/>- Sélectionnez **Centre** de messages pour en savoir plus sur les modifications planifiées et ce à quoi vous devez vous attendre.  |
 | **Autorisations & rôles** | Vous permet d’attribuer des autorisations aux personnes de votre entreprise qui gèreront votre sécurité et afficheront les incidents et les rapports dans le portail Microsoft 365 Defender. Vous permet également de configurer et de gérer des groupes d’appareils pour intégrer les appareils de votre entreprise et d’affecter vos stratégies de protection contre les menaces.  |
-| **Settings** | Vous permet de modifier les paramètres du portail Microsoft 365 Defender et des Microsoft Defender pour les PME. Par exemple, vous pouvez intégrer (ou déconnecter) les appareils de votre entreprise (également appelés points de terminaison). Vous pouvez également définir des règles, telles que des règles de suppression d’alerte, et configurer des indicateurs pour bloquer ou autoriser certains fichiers ou processus.  |
+| **Paramètres** | Vous permet de modifier les paramètres du portail Microsoft 365 Defender et des Microsoft Defender pour les PME. Par exemple, vous pouvez intégrer (ou déconnecter) les appareils de votre entreprise (également appelés points de terminaison). Vous pouvez également définir des règles, telles que des règles de suppression d’alerte, et configurer des indicateurs pour bloquer ou autoriser certains fichiers ou processus.  |
 | **Autres ressources** | Accédez à d’autres portails, tels que Azure Active Directory. N’oubliez pas que le portail Microsoft 365 Defender doit répondre à vos besoins sans vous obliger à accéder à d’autres portails. |
-
-## <a name="complete-a-learning-module-about-incidents-and-response-actions"></a>Terminer un module d’apprentissage sur les incidents et les actions de réponse
-
-Consultez le module d’apprentissage, [Détecter et répondre aux problèmes de sécurité](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/) pour obtenir une vue d’ensemble des incidents et des actions de réponse. Vous allez découvrir la file d’attente d’incidents, les alertes et les actions de réponse que vous pouvez effectuer. Ce cours vous aidera à commencer à utiliser les incidents dans Defender entreprise.
-
-> [!NOTE]
-> Bien que le module d’apprentissage ([détecter et répondre aux problèmes de sécurité](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/)) soit en fait destiné à Microsoft Defender pour point de terminaison, les concepts de base et le flux global sont similaires à ce que vous verrez dans Defender entreprise.
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-Maintenant que vous disposez d’une vue d’ensemble de Defender entreprise, essayez une ou plusieurs des tâches suivantes :
-
-- [Essayer des didacticiels et des simulations dans Microsoft Defender pour les PME](mdb-tutorials.md)
-
-- [Gérer les appareils dans Microsoft Defender pour les PME](mdb-manage-devices.md)
-
-- [Afficher et gérer les incidents dans Microsoft Defender pour les PME](mdb-view-manage-incidents.md)
-
-- [Répondre aux menaces et les atténuer dans Microsoft Defender pour les PME](mdb-respond-mitigate-threats.md)
-
-- [Passer en revue les actions de correction dans le Centre d’actions](mdb-review-remediation-actions.md)
-
-- [Afficher ou modifier des stratégies dans Microsoft Defender pour les PME](mdb-view-edit-policies.md)
+- [Utiliser l’Assistant Installation dans Microsoft Defender pour les PME](mdb-use-wizard.md)
+- [Voir le processus d’installation et de configuration](mdb-setup-configuration.md)

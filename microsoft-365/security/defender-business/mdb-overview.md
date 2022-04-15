@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -18,19 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 0d291f4da7c44a57d12516be364fc36bbb771356
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 93db141d60353c5e3581298a67383718bdf4fe54
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664939"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862563"
 ---
 # <a name="overview-of-microsoft-defender-for-business"></a>Vue d’ensemble de Microsoft Defender pour les PME
 
-> [!IMPORTANT]
-> Microsoft Defender pour les PME est déployée pour [Microsoft 365 Business Premium](../../business-premium/index.md) clients, à compter du 1er mars 2022. Defender entreprise en tant qu’abonnement autonome est en préversion et sera déployé progressivement pour les clients et les partenaires informatiques qui [s’inscrivent ici](https://aka.ms/mdb-preview) pour le demander. La préversion inclut un [ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios), et nous ajouterons régulièrement des fonctionnalités.
-> 
-> Certaines informations contenues dans cet article concernent des produits/services prédéfinis qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expresse ou implicite, pour les informations fournies ici. 
+> [!NOTE]
+> Microsoft Defender pour les PME est désormais inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Microsoft Defender pour les PME est une nouvelle solution de sécurité de point de terminaison conçue spécialement pour les petites et moyennes entreprises (jusqu’à 300 employés). Avec cette solution de sécurité de point de terminaison, les appareils de votre entreprise sont mieux protégés contre les ransomware, les programmes malveillants, le hameçonnage et d’autres menaces. 
 
@@ -44,7 +42,7 @@ Cet article décrit ce qui est inclus dans Defender entreprise, avec des liens p
 
 >
 > **Avez-vous un peu de temps ?**
-> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">court sondage sur Microsoft Defender pour les PME</a>. Vos commentaires sont les bienvenus.
+> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
 >
 
 Avec Defender entreprise, vous pouvez protéger les appareils et les données que votre entreprise utilise avec :
@@ -81,5 +79,4 @@ Avec Defender entreprise, vous pouvez protéger les appareils et les données qu
 ## <a name="next-steps"></a>Prochaines étapes
 
 - [En savoir plus sur le processus de configuration simplifié dans Microsoft Defender pour les PME](mdb-simplified-configuration.md)
-
 - [Découvrez comment obtenir Microsoft Defender pour les PME](get-defender-business.md)

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 98ead4a77c275e0e4aeeab90e87e0b468a9b7bb8
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 42d7acb4512928a32ac99c486a231d7891102208
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665973"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861331"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>Didacticiels et simulations dans Microsoft Defender pour les PME
 
@@ -34,18 +34,16 @@ Si vous venez de terminer la configuration de Microsoft Defender pour les PME, v
 
 >
 > **Avez-vous un peu de temps ?**
-> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">court sondage sur Microsoft Defender pour les PME</a>. Vos commentaires sont les bienvenus.
+> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
 >
 
 ## <a name="try-these-preview-scenarios"></a>Essayez ces scénarios en préversion
 
-Le tableau suivant récapitule plusieurs scénarios à essayer avec Defender entreprise. 
-<br/><br/>
-
+Le tableau suivant récapitule plusieurs scénarios à essayer avec Defender entreprise :
 
 | Scénario  | Description  |
 |---------|---------|
-| Intégrer des appareils en utilisant un script local <br/>(*pas pour le déploiement de production*)     | Dans Defender Entreprise, vous pouvez intégrer jusqu’à dix Windows 10 et 11 appareils à l’aide d’un script que vous téléchargez et exécutez sur chaque appareil. Adapté à l’évaluation du fonctionnement de Defender Entreprise dans votre environnement, le script crée une approbation avec Azure Active Directory (Azure AD) et inscrit l’appareil avec Microsoft Intune. Pour en savoir plus, consultez [le script local dans Defender for Business](mdb-onboard-devices.md#local-script-in-defender-for-business).         |
+| Intégrer des appareils en utilisant un script local <br/>(*pas pour le déploiement de production*)     | Dans Defender Entreprise, vous pouvez intégrer jusqu’à dix Windows 10 et 11 appareils à l’aide d’un script que vous téléchargez et exécutez sur chaque appareil. Adapté à l’évaluation du fonctionnement de Defender Entreprise dans votre environnement, le script crée une approbation avec Azure Active Directory (Azure AD) et inscrit l’appareil avec Microsoft Intune. Pour en savoir plus, consultez [Intégrer des appareils à Microsoft Defender pour les PME](mdb-onboard-devices.md).         |
 | Intégrer des appareils à l’aide de Microsoft Intune     | Si vous utilisiez déjà Microsoft Intune avant d’obtenir Defender pour point de terminaison, vous pouvez continuer à utiliser Microsoft Intune pour intégrer des appareils. Essayez d’intégrer des appareils macOS, iOS et Android avec Microsoft Intune. Pour plus d’informations, consultez [Inscription des appareils dans Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
 | Modifier les stratégies de sécurité     | Si vous gérez vos stratégies de sécurité dans Defender entreprise, utilisez la page **de configuration de l’appareil** pour afficher et modifier vos stratégies. Pour en savoir plus, consultez [Afficher ou modifier des stratégies dans Microsoft Defender pour les PME](mdb-view-edit-policies.md).        |
 | Exécuter une attaque simulée   | Plusieurs didacticiels et simulations sont disponibles dans Defender entreprise. Ces didacticiels et simulations sont conçus pour vous montrer de première main comment les fonctionnalités de protection contre les menaces de Defender entreprise peuvent fonctionner pour votre entreprise. Pour essayer un ou plusieurs didacticiels, consultez les [didacticiels recommandés pour Microsoft Defender pour les PME](#recommended-tutorials-for-defender-for-business).         |
@@ -55,8 +53,6 @@ Le tableau suivant récapitule plusieurs scénarios à essayer avec Defender ent
 ## <a name="recommended-tutorials-for-defender-for-business"></a>Didacticiels recommandés pour Defender entreprise
 
 Le tableau suivant décrit les didacticiels recommandés pour les clients Defender Entreprise :
-<br/><br/>
-
 
 | Didacticiel  | Description  |
 |---------|---------|
@@ -84,9 +80,6 @@ Chaque didacticiel inclut un document pas à pas qui explique le scénario, son 
 ## <a name="next-steps"></a>Prochaines étapes
 
 - [Gérer les appareils dans Microsoft Defender pour les PME](mdb-manage-devices.md)
-
 - [Afficher et gérer les incidents dans Microsoft Defender pour les PME](mdb-view-manage-incidents.md)
-
 - [Répondre aux menaces et les atténuer dans Microsoft Defender pour les PME](mdb-respond-mitigate-threats.md)
-
 - [Passer en revue les actions de correction dans le Centre d’actions](mdb-review-remediation-actions.md)

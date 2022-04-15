@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,19 +16,17 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 13e803666cc7af14af52031eb86a2f86edf06f80
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 56b7bbcb95bc00c8647fb4cc39e0d1e0611596ab
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666303"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862167"
 ---
 # <a name="understand-policy-order-in-microsoft-defender-for-business"></a>Comprendre l’ordre des stratégies dans Microsoft Defender pour les PME
 
-> [!IMPORTANT]
-> Microsoft Defender pour les PME est déployée pour [Microsoft 365 Business Premium](../../business-premium/index.md) clients, à compter du 1er mars 2022. Defender entreprise en tant qu’abonnement autonome est en préversion et sera déployé progressivement pour les clients et les partenaires informatiques qui [s’inscrivent ici](https://aka.ms/mdb-preview) pour le demander. La préversion inclut un [ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios), et nous ajouterons régulièrement des fonctionnalités.
-> 
-> Certaines informations contenues dans cet article concernent des produits/services prédéfinis qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expresse ou implicite, pour les informations fournies ici. 
+> [!NOTE]
+> Microsoft Defender pour les PME est désormais inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 ## <a name="policy-order-in-microsoft-defender-for-business"></a>Ordre de stratégie dans Microsoft Defender pour les PME
 
@@ -40,27 +38,20 @@ Microsoft Defender pour les PME inclut des stratégies prédéfinies pour vous a
 
 >
 > **Avez-vous un peu de temps ?**
-> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">court sondage sur Microsoft Defender pour les PME</a>. Vos commentaires sont les bienvenus.
+> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
 >
 
 ## <a name="key-points-to-remember-about-policy-order"></a>Points clés à retenir sur l’ordre de stratégie
 
 - Les stratégies se voient attribuer un ordre de priorité.
-
 - Les appareils reçoivent uniquement la première stratégie appliquée.
-
 - Vous pouvez modifier l’ordre de priorité des stratégies.
-
 - Les stratégies par défaut reçoivent l’ordre de priorité le plus bas.
 
 ## <a name="next-steps"></a>Prochaines étapes
 
 - [Démarrage à l’aide de Defender entreprise](mdb-get-started.md)
-
 - [Gérer les appareils](mdb-manage-devices.md)
-
 - [Afficher et gérer les incidents dans Microsoft Defender pour les PME](mdb-view-manage-incidents.md)
-
 - [Répondre aux menaces et les atténuer dans Microsoft Defender pour les PME](mdb-respond-mitigate-threats.md)
-
 - [Passer en revue les actions de correction dans le Centre d’actions](mdb-review-remediation-actions.md)

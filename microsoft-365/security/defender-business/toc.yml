@@ -3,7 +3,7 @@
   items:
     - name: Vue d’ensemble
       items:
-        - name: Qu’est-ce Microsoft Defender pour les PME ?
+        - name: Qu’est-ce que Microsoft Defender pour les PME ?
           href: mdb-overview.md
         - name: Processus de configuration simplifié
           href: mdb-simplified-configuration.md
@@ -15,12 +15,12 @@
       items:
         - name: Obtenir Defender pour les PME
           href: get-defender-business.md
+        - name: Ajouter des utilisateurs et attribuer des licences
+          href: mdb-add-users.md
+        - name: Visitez le portail Microsoft 365 Defender
+          href: mdb-get-started.md
         - name: Utiliser l’Assistant Installation
           href: mdb-use-wizard.md
-        - name: Démarrage l’aide du portail
-          href: mdb-get-started.md
-        - name: Afficher votre tableau de bord gestion des vulnérabilités tableau de bord
-          href: mdb-view-tvm-dashboard.md
         - name: Essayer des didacticiels et les simulations
           href: mdb-tutorials.md
     - name: Installer et configurer Defender pour les PME
@@ -35,10 +35,12 @@
           href: mdb-email-notifications.md
         - name: 'Étape 4 : intégrer des appareils'
           href: mdb-onboard-devices.md
-        - name: 'Étape 5 : configurer vos stratégies de sécurité'
+        - name: 'Étape 5 : Configurer vos stratégies de sécurité'
           href: mdb-configure-security-settings.md
-    - name: Afficher les menaces détectées et y répondre
+    - name: Afficher et répondre aux menaces détectées
       items:
+        - name: Afficher votre tableau de bord gestion des vulnérabilités
+          href: mdb-view-tvm-dashboard.md
         - name: Afficher et gérer les incidents
           href: mdb-view-manage-incidents.md
         - name: Répondre aux menaces et les atténuer
@@ -65,6 +67,8 @@
           href: mdb-manage-devices.md
         - name: Créer des groupes d’appareils
           href: mdb-create-edit-device-groups.md
+        - name: Appareils hors-carte
+          href: mdb-offboard-devices.md
     - name: Informations de référence
       items:
         - name: Comment obtenir de l’aide ou contacter le support technique

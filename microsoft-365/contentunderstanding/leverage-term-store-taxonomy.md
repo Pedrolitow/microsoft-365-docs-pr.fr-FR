@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Utilisez la taxonomie du magasin de termes lors de la création d’un extracteur dans votre modèle de compréhension de document via Microsoft SharePoint Syntex.
-ms.openlocfilehash: 909f26026ddf26163a12e1d14c1790f4af93a160
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: d3f2acf32231558f9f56a62b18c6dd7ffbc4e20f
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328804"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861485"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>Tirez parti de la taxonomie du magasin de termes lors de la création d’un extracteur dans Microsoft SharePoint Syntex
 
@@ -37,7 +37,7 @@ Par exemple, votre modèle identifie et classe tous les documents **Contrat** ch
 
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>Utiliser une colonne de métadonnées gérées dans l’extracteur
 
-Les ensembles de termes sont configurés dans le magasin de termes MMS (Managed Metadata Services) du <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centre d’administration SharePoint</a>. Dans l’exemple ci-dessous, *l’ensemble de termes* [Services de contrat](/sharepoint/managed-metadata#term-set) est configuré pour inclure un nombre de termes, y compris *Créatif*.  Les détails indiquent que le terme a trois synonymes (*Conception*, *Graphiques* et *Topographie*). Il convient de les renommer *Créatif*. 
+Les ensembles de termes sont configurés dans le magasin de termes MMS (Managed Metadata Services) du <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centre d’administration SharePoint</a>. Dans l’exemple ci-dessous, *l’ensemble de termes* [Services de contrat](/sharepoint/managed-metadata#term-set) est configuré pour inclure un nombre de termes, y compris *Créatif*.  Les détails indiquent que le terme a trois synonymes (*Conception*, *Graphiques* et *Topographie*). Il convient de les renommer *Créatif*. 
 
    ![Ensemble de termes.](../media/content-understanding/term-store.png)</br>
 
@@ -51,6 +51,8 @@ Une fois votre modèle appliqué à la bibliothèque de documents, lors du charg
 
    ![Colonne Service de contrat.](../media/content-understanding/creative.png)</br>
 
+> [!NOTE]
+> Si l’ensemble de termes est ouvert, toutes les valeurs extraites qui ne correspondent pas à un terme ou à une valeur de synonyme préféré sont ajoutées en tant que nouveau terme à la racine de l’ensemble de termes. Ces nouveaux termes peuvent être déplacés, fusionnés ou rendus synonymes dans le magasin de termes où réside l’ensemble de termes.
 
 ## <a name="see-also"></a>Voir aussi
 [Présentation des métadonnées gérées](/sharepoint/managed-metadata#terms)

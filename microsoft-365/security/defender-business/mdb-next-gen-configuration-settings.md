@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,35 +16,31 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: a39a0a55592ba8f76403f9e8d9aaf7416cb35228
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: eee272798be5396ad9ad15177fcd29a0180bc448
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714238"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862717"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>Comprendre les paramètres de configuration de nouvelle génération dans Microsoft Defender pour les PME
 
-> [!IMPORTANT]
-> Microsoft Defender pour les PME est déployée pour [Microsoft 365 Business Premium](../../business-premium/index.md) clients, à compter du 1er mars 2022. Defender entreprise en tant qu’abonnement autonome est en préversion et sera déployé progressivement pour les clients et les partenaires informatiques qui [s’inscrivent ici](https://aka.ms/mdb-preview) pour le demander. La préversion inclut un [ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios), et nous ajouterons régulièrement des fonctionnalités.
-> 
-> Certaines informations contenues dans cet article concernent des produits/services prédéfinis qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expresse ou implicite, pour les informations fournies ici. 
+> [!NOTE]
+> Microsoft Defender pour les PME est désormais inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 La protection de nouvelle génération dans Defender entreprise inclut une protection antivirus et anti-programme malveillant robuste. Vos stratégies par défaut sont conçues pour protéger vos appareils et vos utilisateurs sans entraver la productivité; toutefois, vous pouvez également personnaliser vos stratégies en fonction des besoins de votre entreprise. Et, si vous utilisez Microsoft Endpoint Manager, vous pouvez l’utiliser pour gérer vos stratégies de sécurité.
 
 **Cet article décrit :**
 
 - [Paramètres et options de protection de nouvelle génération](#next-generation-protection-settings-and-options)
-
 - [Autres paramètres préconfigurés dans Defender entreprise](#other-preconfigured-settings-in-defender-for-business) 
-
 - [Paramètres et Microsoft Endpoint Manager par défaut de Defender entreprise](#defender-for-business-default-settings-and-microsoft-endpoint-manager)
 
 ## <a name="next-generation-protection-settings-and-options"></a>Paramètres et options de protection de nouvelle génération
 
-Le tableau suivant répertorie vos paramètres et options :<br/><br/>
+Le tableau suivant répertorie vos paramètres et options :
 
-| Paramètre | Description |
+| Setting | Description |
 |:---|:---|
 | **Protection en temps réel**  |  |
 | **Activer la protection en temps réel** | Activée par défaut, la protection en temps réel localise et empêche les programmes malveillants de s’exécuter sur les appareils. *Nous vous recommandons de maintenir la protection en temps réel activée.*<br/><br/>Lorsque la protection en temps réel est activée, elle configure les paramètres suivants :<br/>- La surveillance du comportement est activée ([AllowBehaviorMonitoring](/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring))<br/>- Tous les fichiers et pièces jointes téléchargés sont analysés ([AllowIOAVProtection](/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection))<br/>- Les scripts utilisés dans les navigateurs Microsoft sont analysés ([AllowScriptScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning))   |
@@ -69,19 +65,15 @@ Le tableau suivant répertorie vos paramètres et options :<br/><br/>
 Les paramètres de sécurité suivants sont préconfigurés dans Defender entreprise :
 
 - L’analyse des lecteurs amovibles est activée ([AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning))
-
 - Les analyses rapides quotidiennes n’ont pas d’heure prédéfinies ([ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime))
-
 - Les mises à jour du renseignement de sécurité sont vérifiées avant l’exécution d’une analyse antivirus ([CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan))
-
 - Les vérifications de sécurité se produisent toutes les quatre heures ([SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval))
 
 ## <a name="defender-for-business-default-settings-and-microsoft-endpoint-manager"></a>Paramètres et Microsoft Endpoint Manager par défaut de Defender entreprise
 
 Le tableau suivant décrit les paramètres préconfigurés pour Defender entreprise et comment ces paramètres correspondent à ce que vous pouvez voir dans Microsoft Endpoint Manager (ou Microsoft Intune). Si vous utilisez le [processus de configuration simplifié dans Defender entreprise](mdb-simplified-configuration.md) (préversion), vous n’avez pas besoin de modifier ces paramètres.
-<br/><br/>
 
-| Paramètre  | Description  |
+| Setting  | Description  |
 |---------|---------|
 | [Protection cloud](/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)     | Parfois appelée protection fournie par le cloud ou Microsoft Advanced Protection Service (MAPS), la protection cloud fonctionne avec Antivirus Microsoft Defender et le cloud Microsoft pour identifier les nouvelles menaces, parfois même avant qu’un seul appareil ne soit affecté. Par défaut, [AllowCloudProtection](/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) est activé. <br/><br/>[En savoir plus sur la protection cloud](../defender-endpoint/cloud-protection-microsoft-defender-antivirus.md).         |
 | [Surveillance des fichiers entrants et sortants](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)     | Pour surveiller les fichiers entrants et sortants, [RealTimeScanDirection](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection) est défini pour surveiller tous les fichiers.         |
@@ -98,16 +90,12 @@ Le tableau suivant décrit les paramètres préconfigurés pour Defender entrepr
 ## <a name="next-steps"></a>Prochaines étapes
 
 - [Afficher et gérer les incidents dans Microsoft Defender pour les PME](mdb-view-manage-incidents.md)
-
 - [Répondre aux menaces et les atténuer dans Microsoft Defender pour les PME](mdb-respond-mitigate-threats.md)
-
 - [Passer en revue les actions de correction dans le Centre d’actions](mdb-review-remediation-actions.md)
 
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Visitez le portail Microsoft 365 Defender](mdb-get-started.md)
-
 - [Gérer les paramètres de pare-feu dans Microsoft Defender pour les PME](mdb-custom-rules-firewall.md)
-
 - [Fournisseur CSP de stratégie - Defender](/windows/client-management/mdm/policy-csp-defender)

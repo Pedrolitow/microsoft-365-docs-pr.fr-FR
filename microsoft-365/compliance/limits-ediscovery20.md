@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les limites de cas, les limites d’indexation et les limites de recherche en vigueur pour la solution Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 0f21a78a90eee6069618e2ab35bb011aa870b62c
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 93f0a988cb5a5321c8a725a1d678079174eba923
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758572"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861309"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Limites définies dans Advanced eDiscovery
 
@@ -49,9 +49,9 @@ Le tableau suivant répertorie les limites des conservations associées à un ca
 
 |Description de la limite|Limite|
 |---|---|
-|Nombre maximal de stratégies de conservation pour une organisation. Cette limite inclut le total combiné des stratégies de conservation dans core eDiscovery et Advanced eDiscovery cas.|10 <sup>0003</sup>|
-|Nombre maximal de boîtes aux lettres dans une conservation unique. Cette limite inclut le total combiné des boîtes aux lettres utilisateur, ainsi que les boîtes aux lettres associées aux groupes Microsoft 365 组, Microsoft Teams et Yammer.|1 000|
-|Nombre maximal de sites dans une conservation unique. Cette limite inclut le total combiné des sites OneDrive Entreprise, des sites SharePoint et des sites associés aux groupes Microsoft 365 组, Microsoft Teams et Yammer.|100|
+|Nombre maximal de stratégies de conservation pour une organisation. Cette limite inclut le total combiné des stratégies de conservation dans core eDiscovery et Advanced eDiscovery cas.|10 000|
+|Nombre maximal de boîtes aux lettres dans une conservation unique. Cette limite inclut le total combiné des boîtes aux lettres utilisateur et les boîtes aux lettres associées aux groupes Groupes Microsoft 365, Microsoft Teams et Yammer.|1 <sup>0003</sup>|
+|Nombre maximal de sites dans une conservation unique. Cette limite inclut le total combiné des sites OneDrive Entreprise, des sites SharePoint et des sites associés aux groupes Groupes Microsoft 365, Microsoft Teams et Yammer.|1003<sup></sup>|
 
 ## <a name="indexing-limits"></a>Limites d’indexation
 

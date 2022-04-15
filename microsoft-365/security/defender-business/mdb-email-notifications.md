@@ -1,83 +1,81 @@
 ---
-title: Configurer des notifications par courrier électronique pour votre équipe de sécurité
-description: Configurer des notifications par courrier électronique pour indiquer aux personnes les alertes et les vulnérabilités avec Microsoft Defender pour les entreprises
+title: Configurer des notifications par e-mail pour votre équipe de sécurité
+description: Configurer des notifications par e-mail pour informer les utilisateurs des alertes et des vulnérabilités avec Microsoft Defender pour les PME
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: bf11ed140d2e0609f2d12d1da3bcc448ff733235
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: a65634a5827e60d710cec56ca10835c73053cb10
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683140"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862849"
 ---
-# <a name="set-up-email-notifications"></a>Configurer les notifications par courrier électronique
+# <a name="set-up-email-notifications"></a>Configurer des notifications par e-mail
 
-> [!IMPORTANT]
-> Microsoft Defender for Business est en déploiement [Microsoft 365 Business Premium clients,](../../business-premium/index.md) à partir du 1er mars 2022. Defender for Business as a standalone subscription is in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. La [prévisualisation inclut un ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et nous ajouterons régulièrement des fonctionnalités.
-> 
-> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
+> [!NOTE]
+> Microsoft Defender pour les PME est désormais inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
-Vous pouvez configurer des notifications par courrier électronique pour votre équipe de sécurité. Ensuite, à mesure que des alertes sont générées ou que de nouvelles vulnérabilités sont découvertes, les membres de votre équipe de sécurité sont avertis automatiquement. 
+Vous pouvez configurer des notifications par e-mail pour votre équipe de sécurité. Ensuite, à mesure que des alertes sont générées ou que de nouvelles vulnérabilités sont découvertes, les membres de votre équipe de sécurité sont avertis automatiquement. 
 
 ## <a name="what-to-do"></a>Procédure
 
-1. [Découvrez les types de notifications par courrier électronique](#types-of-email-notifications).
+1. [Découvrez les types de notifications par e-mail](#types-of-email-notifications).
 
-2. [Afficher et modifier les paramètres de notification par courrier électronique](#view-and-edit-email-notifications).
+2. [Afficher et modifier les paramètres de notification par e-mail](#view-and-edit-email-notifications).
 
-3. [Procédez comme vous le faire pour les étapes suivantes](#next-steps).
+3. [Passez à vos étapes suivantes](#next-steps).
 
 
 >
 > **Avez-vous un peu de temps ?**
-> Veuillez consulter notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur Microsoft Defender entreprise</a>. Vos commentaires sont les bienvenus.
+> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
 >
 
-## <a name="types-of-email-notifications"></a>Types de notifications par courrier électronique
+## <a name="types-of-email-notifications"></a>Types de notifications par e-mail
 
-Lorsque vous définissez des notifications par courrier électronique, vous pouvez choisir entre deux types, comme décrit dans le tableau suivant : <br/><br/>
+Lorsque vous configurez des notifications par e-mail, vous pouvez choisir parmi deux types, comme décrit dans le tableau suivant :
 
 | Type de notification  | Description  |
 |---------|---------|
-| Vulnérabilités  | Chaque fois que de nouvelles failles ou événements de vulnérabilité sont détectés, les destinataires reçoivent un e-mail. |
-| Alertes & vulnérabilités  | Lorsque des alertes sont générées parce que des menaces sont détectées sur les appareils ou lorsque de nouvelles attaques ou événements de vulnérabilité sont détectés, les destinataires reçoivent un e-mail. |
+| Vulnérabilités  | Chaque fois que de nouveaux exploits ou événements de vulnérabilité sont détectés, les destinataires reçoivent un e-mail. |
+| Alertes & vulnérabilités  | Lorsque des alertes sont générées parce que des menaces sont détectées sur les appareils, ou lorsque de nouveaux exploits ou événements de vulnérabilité sont détectés, les destinataires reçoivent un e-mail. |
 
 > [!TIP]
-> **Les notifications par courrier électronique ne sont pas le seul moyen pour votre équipe de sécurité de découvrir les nouvelles alertes ou vulnérabilités**.
+> **Les notifications par e-mail ne sont pas la seule façon pour votre équipe de sécurité d’en savoir plus sur les nouvelles alertes ou vulnérabilités**.
 > 
-> Les notifications par courrier électronique sont un moyen pratique pour aider votre équipe de sécurité à rester informée, en temps réel. Mais il en existe d’autres ! Par exemple, chaque fois que votre équipe de sécurité se Microsoft 365 Defender portail ([https://security.microsoft.com](https://security.microsoft.com)), elle voit des cartes mettant en évidence les nouvelles menaces, alertes et vulnérabilités. Defender for Business est conçu pour mettre en évidence les informations importantes qui intéressent votre équipe de sécurité dès qu’elle se connecte.
+> Les notifications par e-mail sont un moyen pratique de tenir votre équipe de sécurité informée, en temps réel. Mais il y en a d’autres ! Par exemple, chaque fois que votre équipe de sécurité se connecte au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), elle voit des cartes mettant en évidence les nouvelles menaces, alertes et vulnérabilités. Defender entreprise est conçu pour mettre en évidence les informations importantes qui intéressent votre équipe de sécurité dès qu’elle se connecte.
 > 
-> Votre équipe de sécurité peut également choisir **Incidents** dans le volet de navigation pour afficher des informations. Pour plus d’informations, voir [Afficher et gérer les incidents dans Microsoft Defender entreprise](mdb-view-manage-incidents.md).
+> Votre équipe de sécurité peut également choisir **Incidents** dans le volet de navigation pour afficher les informations. Pour en savoir plus, consultez [Afficher et gérer les incidents dans Microsoft Defender pour les PME](mdb-view-manage-incidents.md).
 
-## <a name="view-and-edit-email-notifications"></a>Afficher et modifier les notifications par courrier électronique
+## <a name="view-and-edit-email-notifications"></a>Afficher et modifier les notifications par e-mail
 
-Pour afficher ou modifier les paramètres de notification par courrier électronique pour votre entreprise, suivez les étapes suivantes :
+Pour afficher ou modifier les paramètres de notification par e-mail de votre entreprise, procédez comme suit :
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) et connectez-vous.
 
-2. Dans le volet de navigation, **sélectionnez Paramètres**, puis les **points de terminaison**. Ensuite, sous **Général**, sélectionnez **Notifications par courrier électronique**. 
+2. Dans le volet de navigation, sélectionnez **Paramètres**, puis sélectionnez **Points de terminaison**. Ensuite, sous **Général**, sélectionnez **Notifications par e-mail**. 
 
-3. Examinez les informations sous les **onglets Alertes** **et** vulnérabilités.
+3. Passez en revue les informations sous les **onglets Alertes** et **vulnérabilités** .
 
-   - Si vous ne voyez aucun des éléments répertoriés sous l’onglet **Alertes** , vous pouvez créer une règle pour que les personnes soient averties lorsque des alertes sont générées. Pour obtenir de l’aide sur cette tâche, voir [Créer des règles pour les notifications d’alerte](../defender-endpoint/configure-email-notifications.md).
+   - Si vous ne voyez pas d’éléments répertoriés sous l’onglet **Alertes** , vous pouvez créer une règle pour que les utilisateurs soient avertis lorsque des alertes sont générées. Pour obtenir de l’aide sur cette tâche, consultez [Créer des règles pour les notifications d’alerte](../defender-endpoint/configure-email-notifications.md).
 
-   - Si vous ne voyez aucun des éléments répertoriés sous l’onglet **Vulnérabilités** , vous pouvez créer une règle pour que les personnes soient averties chaque fois qu’une nouvelle vulnérabilité est découverte. Pour obtenir de l’aide sur cette tâche, voir [Créer des règles pour les événements de vulnérabilité](../defender-endpoint/configure-vulnerability-email-notifications.md).
+   - Si vous ne voyez pas d’éléments répertoriés sous l’onglet **Vulnérabilités** , vous pouvez créer une règle pour que les personnes soient averties chaque fois qu’une nouvelle vulnérabilité est détectée. Pour obtenir de l’aide sur cette tâche, consultez [Créer des règles pour les événements de vulnérabilité](../defender-endpoint/configure-vulnerability-email-notifications.md).
 
    - Si des règles sont créées, sélectionnez une règle pour la modifier. Vous pouvez également supprimer une règle. 
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-Procédez comme il se doit pour :
+Passez à :
 
-- [Étape 4 : Intégrer des appareils à Microsoft Defender pour Entreprises](mdb-onboard-devices.md)
+- [Étape 4 : Intégrer des appareils à Microsoft Defender pour les PME](mdb-onboard-devices.md)
