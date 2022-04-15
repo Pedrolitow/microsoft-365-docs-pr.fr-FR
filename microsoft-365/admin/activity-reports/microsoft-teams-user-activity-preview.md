@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment obtenir le rapport d’activité de l’utilisateur Microsoft Teams et obtenir des insights sur l’activité Teams dans votre organisation.
-ms.openlocfilehash: a5261261a1a1cb7b2039b646c3dbbd92c5f43688
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: cbd9bdb73dc69da5e36e0fb9c3ff2ff15b5269a4
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781652"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882261"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Rapports Microsoft 365 dans le Centre d’administration - Activité des utilisateurs Microsoft Teams
 
@@ -71,7 +71,7 @@ Pour garantir la qualité des données, nous effectuons des vérifications quoti
 |Les réunions ont participé à des réunions périodiques planifiées  <br/> |Nombre de réunions périodiques aux laquelle un utilisateur a participé pendant la période spécifiée.  <br/> |
 |Est titulaire d’une licence  <br/> |Sélectionné si l’utilisateur dispose d’une licence pour utiliser Teams. <br/>|
 |Autre activité  <br/>|L’utilisateur est actif, mais a effectué d’autres activités que les types d’actions exposés proposés dans le rapport (envoi ou réponse à des messages de canal et des messages de conversation, planification ou participation à des appels et réunions 1:1). Des exemples d’actions sont lorsqu’un utilisateur modifie l’état Teams ou le message d’état Teams ou ouvre un message de canal, mais ne répond pas.  <br/>|
-|Réunions non classées <br/>|Celui qui ne peut pas être classé en tant que planification, périodique ou ad hoc. Ils sont en nombre court et ne peuvent pas être identifiés en raison d’informations de télémétrie falsifiées. |
+
 
 ## <a name="make-the-user-specific-data-anonymous"></a>Rendre les données spécifiques à l’utilisateur anonymes
 

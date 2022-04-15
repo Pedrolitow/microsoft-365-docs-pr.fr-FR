@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Découvrez comment créer un modèle de traitement de formulaire dans SharePoint Syntex.
-ms.openlocfilehash: 6048eabe8bb57da40d940923e313bd496ec1ecec
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3eb14a76bd597f1f382b87813c7e4bd2a4518e19
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330494"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882349"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Créer un modèle de traitement de formulaire dans Microsoft SharePoint Syntex
 
@@ -75,13 +75,13 @@ La première étape de la création d’un modèle de traitement de formulaire c
 
         - Si vous sélectionnez **Une liste existante**, dans la zone **Liste sélectionnée**, choisissez la liste que vous souhaitez utiliser.
 
-4. Lorsque vous créez un modèle de traitement de formulaire, vous créez un nouveau type de contenu SharePoint. Un type de contenu SharePoint représente une catégorie de documents qui ont des caractéristiques communes et qui partagent une collection de colonnes ou de propriétés de métadonnées pour ce contenu spécifique. SharePoint types de contenu sont gérés par le biais <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint’administration centrale</a>.
+4. Lorsque vous créez un modèle de traitement de formulaire, vous créez un nouveau type de contenu SharePoint. Un type de contenu SharePoint représente une catégorie de documents qui ont des caractéristiques communes et qui partagent une collection de colonnes ou de propriétés de métadonnées pour ce contenu spécifique. SharePoint types de contenu sont gérés via le <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centre d’administration SharePoint</a>.
 
    Pour mapper ce modèle à un type de contenu existant dans la galerie de types de contenu SharePoint, sélectionnez **Paramètres avancés**.
 
     ![Capture d’écran montrant les paramètres avancés dans le panneau Créer un modèle pour traiter les formulaires.](../media/content-understanding/new-form-model-advanced-settings.png) 
 
-   1. Dans la <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">galerie de types de contenu</a>, choisissez s’il faut créer un type de contenu ou en utiliser un existant. 
+   1. Dans la <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">galerie de types de</a> contenu, choisissez de créer un nouveau type de contenu ou d’en utiliser un existant. 
 
    2. Pour utiliser un type de contenu existant, sélectionnez **Sélectionnez un**, puis choisissez un type de contenu dans la liste.
 
@@ -137,38 +137,38 @@ Vous devez baliser les documents pour apprendre au modèle à comprendre les cha
     ![OK.](../media/content-understanding/doc-lib-done.png) 
 
 > [!NOTE]
-> Si un modèle de traitement de formulaire personnalisé et un modèle de compréhension de document sont appliqués à la même bibliothèque, le fichier est classé à l’aide du modèle de compréhension du document et de tous les extracteurs entraînés pour ce modèle. S’il existe des colonnes vides qui correspondent au modèle de traitement de formulaire, les colonnes sont remplies à l’aide de ces valeurs extraites.
+> Si un modèle de traitement de formulaire personnalisé et un modèle de compréhension de document sont appliqués à la même bibliothèque, le fichier est classé à l’aide du modèle de compréhension de document et des extracteurs formés pour ce modèle. S’il existe des colonnes vides qui correspondent au modèle de traitement de formulaire, les colonnes sont remplies à l’aide de ces valeurs extraites.
 
 ### <a name="use-flows-to-extract-information"></a>Utiliser des flux pour extraire des informations
 
-Deux flux sont disponibles pour traiter un fichier sélectionné ou un lot de fichiers dans une bibliothèque dans laquelle un modèle de traitement de formulaire a été appliqué.
+Deux flux sont disponibles pour traiter un fichier sélectionné ou un lot de fichiers dans une bibliothèque où un modèle de traitement de formulaire a été appliqué.
 
-- **Extraire des informations** d’une image ou d’un fichier PDF avec un modèle de traitement de formulaire : utilisez cette procédure pour extraire du texte d’une image sélectionnée ou d’un fichier PDF en exécutant un modèle de traitement de formulaire. Prend en charge un seul fichier sélectionné à la fois et uniquement les fichiers PDF et les fichiers image (PNG, JPG et JPEG). Pour exécuter le flux, sélectionnez un fichier, puis sélectionnez **AutomateExtract** >  info.
+- **Extraire des informations d’une image ou d’un fichier PDF avec un modèle de traitement de formulaire** : permet d’extraire du texte d’une image sélectionnée ou d’un fichier PDF en exécutant un modèle de traitement de formulaire. Prend en charge un seul fichier sélectionné à la fois et prend en charge uniquement les fichiers PDF et les fichiers image (PNG, JPG et JPEG). Pour exécuter le flux, sélectionnez un fichier, puis sélectionnez **AutomateExtract** >  info.
 
-    ![Screenshot showing the Automate menu with Extract info highlighted.](../media/content-understanding/automate-extract-info.png)  
+    ![Capture d’écran montrant le menu Automatiser avec l’option Extraire les informations en surbrillance.](../media/content-understanding/automate-extract-info.png)  
 
-- **Extraire des informations à partir de fichiers avec un** modèle de traitement de formulaire : utilisez-les avec des modèles de traitement de formulaire pour lire et extraire des informations d’un lot de fichiers. Traite jusqu’à 5 000 SharePoint fichiers à la fois. Lorsque vous exécutez ce flux, vous pouvez définir certains paramètres. Vous pouvez :
+- **Extraire des informations à partir de fichiers avec un modèle de traitement de formulaire** : utiliser avec des modèles de traitement de formulaire pour lire et extraire des informations à partir d’un lot de fichiers. Traite jusqu’à 5 000 fichiers SharePoint à la fois. Lorsque vous exécutez ce flux, vous pouvez définir certains paramètres. Vous pouvez :
 
-    - Choisissez d’inclure ou non les fichiers précédemment traitées (la valeur par défaut n’inclut pas les fichiers précédemment traitées).
+    - Indiquez s’il faut inclure des fichiers précédemment traités (la valeur par défaut est de ne pas inclure les fichiers précédemment traités).
     - Sélectionnez le nombre de fichiers à traiter (la valeur par défaut est 100 fichiers).
     - Spécifiez l’ordre dans lequel traiter les fichiers (les choix sont par ID de fichier, nom de fichier, heure de création du fichier ou heure de dernière modification).
-    - Spécifiez le tri de l’ordre (ordre croissant ou décroit).
+    - Spécifiez la façon dont vous souhaitez trier l’ordre (ordre croissant ou décroissant).
 
-    ![Screenshot showing the Run flow panel with parameter options highlighted.](../media/content-understanding/run-flow-panel.png)  
+    ![Capture d’écran montrant le panneau Exécuter le flux avec les options de paramètre mises en surbrillance.](../media/content-understanding/run-flow-panel.png)  
 
 ### <a name="classification-date-field"></a>Champ Date de classification
 
-Lorsqu’un SharePoint Syntex de traitement de formulaire (ou un modèle de compréhension de document) est appliqué à une bibliothèque de documents, le champ **Date** de classification est inclus dans le schéma de bibliothèque. Par défaut, ce champ est vide. Toutefois, lorsque les documents sont traitées et classées par un modèle, ce champ est mis à jour avec un horodat de fin. 
+Lorsqu’un modèle de traitement de formulaire SharePoint Syntex (ou un modèle de compréhension de document) est appliqué à une bibliothèque de documents, le champ **Date de classification** est inclus dans le schéma de bibliothèque. Par défaut, ce champ est vide. Toutefois, lorsque les documents sont traités et classés par un modèle, ce champ est mis à jour avec un horodatage de date et heure de fin. 
 
-Lorsqu’un modèle est marqué avec la **date de classification**, vous pouvez utiliser l’envoi d’un courrier électronique après que **SharePoint Syntex a** traitée un flux de fichiers pour informer les utilisateurs qu’un nouveau fichier a été traitée et classée par un modèle dans la bibliothèque de documents SharePoint.
+Lorsqu’un modèle est marqué avec la **date de classification**, vous pouvez utiliser **l’option Envoyer un e-mail après SharePoint Syntex traite un** flux de fichiers pour informer les utilisateurs qu’un nouveau fichier a été traité et classifié par un modèle dans la bibliothèque de documents SharePoint.
 
 Pour exécuter le flux :
 
-1. Sélectionnez un fichier, puis **sélectionnez** >  **Intégrer Power Automate** >  **Créer un flux**.
+1. Sélectionnez un fichier, puis **sélectionnez Intégrer** >  **Power Automate** >  **Créer un flux**.
 
-2. Dans le **panneau Créer un flux**, **sélectionnez Envoyer un message électronique après SharePoint Syntex un fichier**.
+2. Dans le panneau **Créer un flux**, sélectionnez **Envoyer un e-mail après SharePoint Syntex traite un fichier**.
 
-    ![Capture d’écran montrant l’option Créer un panneau de flux et le flux mis en évidence.](../media/content-understanding/integrate-create-flow.png) 
+    ![Capture d’écran montrant le panneau Créer un flux et l’option de flux mis en évidence.](../media/content-understanding/integrate-create-flow.png) 
 
 ## <a name="see-also"></a>Voir aussi
   

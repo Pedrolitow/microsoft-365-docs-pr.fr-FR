@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment et pourquoi dupliquer un modèle de compréhension de document dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 979d5b2cddfa7c565abade7ac66c06e3053bbe4d
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 56e05389cad4ad9010324a3efd48bf679700be76
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419042"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882239"
 ---
 # <a name="duplicate-a-model-in-microsoft-sharepoint-syntex"></a>Dupliquer un modèle dans Microsoft SharePoint Syntex
 
@@ -53,6 +53,7 @@ Suivez ces étapes pour dupliquer un modèle de compréhension de document.
 5. Sélectionnez **Dupliquer**.
 
 ## <a name="see-also"></a>Voir aussi
+
 [Créer un classificateur](create-a-classifier.md)
 
 [Renommer un modèle](rename-a-model.md)

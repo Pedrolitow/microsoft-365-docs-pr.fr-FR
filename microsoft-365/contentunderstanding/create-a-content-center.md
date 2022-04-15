@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer un centre de contenu dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 0bab102ae440b8cf2c797458e7602c61794d0d06
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c630bba8bafad8bcbf9749e7a4d08ae1e86f4d68
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311590"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882217"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Créer un centre de contenu dans Microsoft SharePoint Syntex
 
@@ -47,7 +47,7 @@ Un administrateur SharePoint peut créer un site de centre de contenu comme ils 
 
 Pour créer un nouveau centre de contenu, procédez comme suit :
 
-1. Sur le Centre d'administration Microsoft 365, allez dans le Centre <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">d SharePoint’administration > **sites actifs**</a>.
+1. Sur le Centre d'administration Microsoft 365, accédez au <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">centre d’administration SharePoint > **sites actifs**</a>.
 
 2. Dans la page **Sites actifs**, cliquez sur **Créer**, puis sélectionnez **Autres options**.
 
@@ -60,7 +60,7 @@ Pour créer un nouveau centre de contenu, procédez comme suit :
 
 5. Sélectionnez **Terminé**.
  
-Une fois que vous avez créé un site de centre de contenu, celui-ci est répertorié sur les <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**sites actifs**</a> dans SharePoint’administration centrale. 
+Une fois que vous avez créé un site de centre de contenu, il apparaît sur les <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**sites actifs**</a> dans le centre d’administration SharePoint. 
 
 ### <a name="give-access-to-additional-users"></a>Accorder l’accès à d’autres utilisateurs
  
@@ -78,6 +78,7 @@ La bibliothèque de **Modèles** dans l’affichage centre de contenu par défau
 > Vous ne pouvez pas modifier le centre de contenu par défaut désigné. Il s’agit toujours du premier centre de contenu créé lors de l’installation. 
 
 ## <a name="see-also"></a>Voir aussi
+
 [Créer un classifieur](create-a-classifier.md)
 
 [Créer un extracteur](create-an-extractor.md)

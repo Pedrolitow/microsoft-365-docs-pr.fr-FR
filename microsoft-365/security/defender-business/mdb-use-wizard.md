@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 04/12/2022
+ms.date: 04/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 1f128a48e8ee2939b4bfcc270c110e0ec63d6ebe
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 697dfc567eb2719a6e81a7b57df321ba2af40911
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862585"
+ms.locfileid: "64882305"
 ---
 # <a name="use-the-setup-wizard-in-microsoft-defender-for-business"></a>Utiliser l’Assistant Installation dans Microsoft Defender pour les PME
 
@@ -36,6 +36,11 @@ Microsoft Defender pour les PME a été conçu pour économiser du temps et des 
 > **Avez-vous un peu de temps ?**
 > Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
 >
+
+> [!TIP]
+> L’utilisation de l’Assistant Installation est facultative. Vous pouvez choisir de travailler manuellement via le processus d’installation et de configuration. Pour en savoir plus, reportez-vous à la rubrique :
+> - [Que se passe-t-il si je n’utilise pas l’Assistant ?](#what-happens-if-i-dont-use-the-wizard)
+> - [Comment configurer et configurer Microsoft Defender pour les PME](mdb-setup-configuration.md)
 
 ## <a name="how-to-start-the-setup-wizard"></a>Comment démarrer l’Assistant Installation
 
@@ -60,7 +65,7 @@ L’Assistant Installation est conçu pour vous aider à configurer Defender ent
    
    - **Administrateur général** : un administrateur général peut afficher et modifier tous les paramètres de votre locataire Microsoft 365. L’administrateur général effectue la configuration initiale de l’abonnement Microsoft 365 de votre entreprise. 
    - **Administrateur de sécurité** : un administrateur de sécurité peut afficher et modifier les paramètres de sécurité, et prendre des mesures lorsque des menaces sont détectées.
-   - **Lecteur de sécurité** : un lecteur de sécurité peut afficher des informations dans les rapports, mais ne peut pas modifier les paramètres de sécurité. 
+   - **Lecteur de sécurité** : un lecteur de sécurité peut afficher des informations dans des rapports, mais ne peut pas modifier les paramètres de sécurité. 
 
    [En savoir plus sur les rôles et les autorisations](mdb-roles-permissions.md). 
 
