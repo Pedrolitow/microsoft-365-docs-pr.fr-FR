@@ -17,12 +17,12 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 description: Les rôles d’administrateur correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration. Par exemple, l’administrateur du service ouvre les tickets de support avec Microsoft.
-ms.openlocfilehash: 650a46c20acaf207f757ebbbe8f8b7179c29158f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6ee5c8410b64bffe66ee69e5c4468a9eda601cd8
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161797"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882195"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Rôles d'administration Intune dans le Centre d’administration Microsoft 365
 
