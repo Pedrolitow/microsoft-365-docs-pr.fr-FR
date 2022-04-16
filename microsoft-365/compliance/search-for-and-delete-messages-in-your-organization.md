@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilisez la fonctionnalité de recherche et de purge dans le Centre de sécurité et de conformité Microsoft 365 pour rechercher et supprimer un message électronique dans toutes les boîtes aux lettres de votre organisation.
-ms.openlocfilehash: 9361f7dea0e1b12d50733b9b1d1e91ac15577ab9
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 8d283148b0a0cee0aed3d91a6332c96bd31111b4
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400991"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64846956"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Rechercher et supprimer des messages électroniques
 
@@ -41,7 +41,7 @@ Vous pouvez utiliser la fonctionnalité de recherche de contenu pour rechercher 
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Le flux de travail de recherche et de vidage décrit dans cet article ne supprime pas les messages de conversation ou d’autres contenus de Microsoft Teams. Si la recherche de contenu que vous créez à l’étape 2 retourne des éléments de Microsoft Teams, ces éléments ne seront pas supprimés lorsque vous purgez des éléments à l’étape 3.
+- Le flux de travail de recherche et de vidage décrit dans cet article ne supprime pas les messages de conversation ou d’autres contenus de Microsoft Teams. Si la recherche de contenu que vous créez à l’étape 2 retourne des éléments de Microsoft Teams, ces éléments ne seront pas supprimés lorsque vous purgez des éléments à l’étape 3. Pour rechercher et supprimer des messages de conversation, consultez [Rechercher et vider les messages de conversation dans Teams](search-and-delete-Teams-chat-messages.md).
 
 - Pour créer et exécuter une recherche de contenu, vous devez être membre du groupe de rôles **Gestionnaire eDiscovery** ou avoir le rôle **Recherche de conformité** dans le Centre de conformité Microsoft 365. Pour supprimer des messages, vous devez être membre du groupe de rôles **Gestion de l’organisation** ou avoir le rôle **Rechercher et purger** dans le Centre de conformité Pour plus d’informations sur l’ajout d’utilisateurs à un groupe de rôles, consultez [Attribuer des autorisations eDiscovery](assign-ediscovery-permissions.md).
 
