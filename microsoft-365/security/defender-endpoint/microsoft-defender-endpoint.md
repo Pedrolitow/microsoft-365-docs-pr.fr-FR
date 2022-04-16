@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c4308c203093d2170cc1a6316db824ee9935363f
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 3a67d73475301096df8be691f2c5e0dc6db23db8
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806227"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862189"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 
@@ -77,9 +77,12 @@ Microsoft Defender pour point de terminaison utilise la combinaison de technolog
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0]
 
 > [!TIP]
->
 > - Découvrez les dernières améliorations apportées à Defender pour point de terminaison : [Nouveautés de Microsoft Defender pour point de terminaison](whats-new-in-microsoft-defender-endpoint.md).
 > - Microsoft Defender pour point de terminaison a démontré des fonctionnalités de détection et d’optique de pointe dans la dernière évaluation MITRE. Lire : [Aperçu de l'évaluation basée sur MITRE ATT&CK .](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+
+
+>[!IMPORTANT]
+>Les fonctionnalités des plates-formes non Windows peuvent être différentes de celles de Windows. Pour plus d’informations sur les fonctionnalités disponibles pour les plates-formes non Windows, consultez [Microsoft Defender pour point de terminaison pour les plates-formes non Windows](/security/defender-endpoint/non-windows).
 
 <a name="tvm"></a>
 
