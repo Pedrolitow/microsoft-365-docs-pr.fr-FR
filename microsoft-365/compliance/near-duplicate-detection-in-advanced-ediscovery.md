@@ -1,5 +1,5 @@
 ---
-title: Détection des quasi-doublons - eDiscovery
+title: Détection des doublons proches dans eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Utilisez la détection des quasi-doublons pour grouper des documents textuellement similaires lors de l’analyse des données de cas Advanced eDiscovery.
+description: Utilisez la détection en quasi-double pour regrouper des documents textuels similaires lors de l’analyse des données de cas dans eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: cbd01bd38f45a397a82a8db3774997349f4eec88
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f7976f5fdf023c30f7f96264ecc2b744656e9091
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193206"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949408"
 ---
-# <a name="near-duplicate-detection-in-advanced-ediscovery"></a>Détection des quasi-doublons dans Advanced eDiscovery
+# <a name="near-duplicate-detection-in-ediscovery-premium"></a>Détection des doublons proches dans eDiscovery (Premium)
 
-Considérons un ensemble de documents à examiner dans lequel un sous-ensemble est basé sur le même modèle et a principalement le même langage réutilisable, avec quelques différences ici et là. Si un réviseur peut identifier ce sous-ensemble, passer en revue l’un d’entre eux minutieusement et examiner les différences pour le reste, il n’aurait manqué aucune information unique tout en ne prenant qu’une fraction de temps qui l’aurait conduit à lire tous les documents à couvrir. La détection des quasi-doublons regroupe les documents textuellement similaires afin de renforcer l’efficacité du processus d’examen.
+Considérez un ensemble de documents à examiner dans lequel un sous-ensemble est basé sur le même modèle et a principalement le même langage réutilisable, avec quelques différences ici et là. Si un réviseur pouvait identifier ce sous-ensemble, examiner l’un d’eux de manière approfondie et examiner les différences pour le reste, il n’aurait pas manqué d’informations uniques tout en prenant seulement une fraction de temps qui l’aurait amené à lire tous les documents couverts pour couvrir. La détection des quasi-doublons regroupe les documents textuellement similaires afin de renforcer l’efficacité du processus d’examen.
 
 ## <a name="how-does-it-work"></a>Comment cela fonctionne-t-il ?
 

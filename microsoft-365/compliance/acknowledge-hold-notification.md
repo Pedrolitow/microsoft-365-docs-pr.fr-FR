@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
+ms.date: 04/05/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,41 +17,41 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez comment utiliser les Advanced eDiscovery pour envoyer et suivre des notifications de mise en attente légale par courrier électronique, ainsi que surveiller l’état des obligations.
-ms.openlocfilehash: 57cda6e88968fc90845965a8554f55d80bd3ded0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez comment utiliser eDiscovery (Premium) pour envoyer et suivre des notifications de conservation légale par e-mail, ainsi que surveiller l’état des obligations.
+ms.openlocfilehash: 4be0781a273f842c043276a19688f36b96cfdb28
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175574"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947404"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Reconnaitre une notification de conservation
 
-Lorsque vous répondez à une demande ou à un examen réglementaire, vous pouvez être tenu d’informer les dépositaires de leur obligation de conserver les informations stockées électroniquement (ESI) et tout document qui peut être pertinent pour une affaire juridique active ou imminence. Une fois envoyées, les équipes juridiques doivent savoir que chaque dépositaire a reçu, lu, compris et accepté de suivre les instructions données.
+Lorsque vous répondez à une demande ou à une enquête réglementaire, vous devrez peut-être informer les consignataires de leur obligation de conserver les informations stockées électroniquement (ESI) et tout élément susceptible d’être pertinent pour une affaire juridique active ou imminente. Une fois envoyées, les équipes juridiques doivent savoir que chaque gardien a reçu, lu, compris et accepté de suivre les instructions données.
 
-Pour réduire le temps, les coûts et l’effort de suivi avec vos dépositaires, Advanced eDiscovery vous permet d’envoyer et de suivre des notifications de conservation légale par courrier électronique. En plus des notifications par courrier électronique, chaque dépositaire aura accès à un portail de conformité individualisé, ce qui permet aux dépositaires d’être tenus informés des modifications apportées à leur statut d’obligation.
+Pour réduire le temps, les coûts et les efforts de suivi auprès de vos consignatateurs, eDiscovery (Premium) vous permet d’envoyer et de suivre les notifications de conservation légale par e-mail. En plus des notifications par e-mail, chaque gardien aura accès à un portail de conformité individualisé, ce qui permettra aux consignats d’être tenus informés des modifications apportées à leur statut d’obligation.
 
 ## <a name="email-notifications"></a>Notifications par e-mail
 
-Une fois qu’une notification de conservation légale a été émise, chaque dépositaire reçoit un e-mail unique et personnalisé contenant votre notification de conservation légale définie et des instructions ajoutées. 
+Une fois qu’une notification de suspension légale a été émise, chaque gardien reçoit un e-mail unique et personnalisé contenant votre avis de conservation légale défini et des instructions ajoutées. 
 
 > [!TIP]
-> Découvrez comment utiliser l’éditeur de  [communication](using-communications-editor.md) intégré pour permettre à vos dépositaires de reconnaître leur avis ou d’accéder à leur portail de conformité directement à partir de leur courrier électronique.
+> Découvrez comment utiliser  [l’éditeur de communication](using-communications-editor.md) intégré pour permettre à vos consignats de reconnaître leur avis ou d’accéder directement à leur portail de conformité à partir de leur courrier électronique.
 
-En fonction de la configuration de votre notification de conservation légale, vos dépositaires peuvent recevoir les notifications suivantes : 
+En fonction de la configuration de votre notification de conservation légale, vos consignats peuvent recevoir les avis suivants : 
 
-- **Avis d’émission :** Première notification envoyée à votre dépositaire. Cet avis contient vos instructions d’émission et l’avis de attente qui est envoyé à la fin de votre message.
+- **Avis d’émission :** Premier avis envoyé à votre gardien. Cet avis contiendra vos instructions d’émission et l’avis de suspension ajouté à la fin de votre message.
 
-- **Avis de rappel :** S’il est activé, un avis de rappel est envoyé à vos dépositaires en fonction de la fréquence et de l’intervalle spécifiés. Les rappels continueront d’être envoyés jusqu’à ce que le dépositaire ait reconnu sa notification ou jusqu’à ce que le nombre de rappels soit épuisé.
+- **Avis de rappel :** Si cette option est activée, un avis de rappel est envoyé à vos consignatateurs en fonction de la fréquence et de l’intervalle spécifiés. Les rappels continueront d’être envoyés tant que le gardien n’aura pas reconnu son avis ou jusqu’à ce que le nombre de rappels ait été épuisé.
 
-- **Notification d’escalade :** Si ce dernier est activé, une notification d’escalade est envoyée à votre dépositaire et à son responsable une fois les notifications de rappel épuisées. Le système envoie automatiquement des notifications d’escalade jusqu’à ce que le nombre spécifié d’escalades soit terminé ou jusqu’à ce que le dépositaire reconnaisse sa notification de conservation.
+- **Avis d’escalade :** Si cette option est activée, un avis de réaffectation est envoyé à votre responsable et à votre responsable une fois les avis de rappel épuisés. Le système envoie automatiquement des notifications d’escalade jusqu’à ce que le nombre spécifié d’escalades soit terminé ou jusqu’à ce que le consignateur reconnaisse sa notification de suspension.
 
-- **Notification de réédition :** Au cours d’une enquête, si le contenu de l’avis de mise en attente est mis à jour, l’avis mis à jour est automatiquement envoyé au dépositaire.
+- **Avis de réédition :** Au cours d’une enquête, si le contenu de l’avis de mise en attente est mis à jour, l’avis mis à jour est automatiquement envoyé au consignateur.
 
-- **Avis de publication :** Lorsqu’un dépositaire est libéré du cas, l’avis de publication lui est envoyé. 
+- **Avis de publication :** Lorsqu’un consigna ateur est libéré du cas, il reçoit l’avis de publication. 
 
 ## <a name="compliance-portal"></a>Portail de conformité
 
-En plus des notifications par courrier électronique, chaque dépositaire aura accès à un portail de conformité unique. Par le biais du portail, chaque dépositaire peut afficher, consulter et reconnaître ses notifications de conservation active.
+En plus des notifications par e-mail, chaque gardien aura accès à un portail de conformité unique. Par le biais du portail, chaque gardien peut afficher, accéder et reconnaître ses notifications de conservation actives.
 
 ![Portail de conformité pour un dépositaire.](../media/CustodianPortal.jpg)

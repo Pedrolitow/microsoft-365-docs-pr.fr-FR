@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Dans cet article, vous allez découvrir les meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés.
-ms.openlocfilehash: 4541f1b6021c5d58f27366bb508ccdaa216010d9
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: ca6b75ba036aac826d657c8c907b512fe9d1f87a
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512333"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64948372"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés
 
@@ -101,10 +101,10 @@ Pour définir le lien de partage de fichier et de dossier par défaut pour un si
 
 ## <a name="prevent-unauthenticated-sharing-of-sensitive-content"></a>Empêcher le partage non authentifié de contenu sensible
 
-Vous pouvez utiliser la [protection contre la perte de données (DLP)](../compliance/dlp-learn-about-dlp.md) pour empêcher le partage non authentifié de contenu sensible. La protection contre la perte de données peut prendre des mesures basées sur l’étiquette de confidentialité, l’étiquette de rétention ou les informations sensibles d’un fichier proprement dit.
+Vous pouvez utiliser la [Protection contre la perte de données (DLP) Microsoft Purview](../compliance/dlp-learn-about-dlp.md) pour empêcher le partage non authentifié de contenu sensible. La protection contre la perte de données peut prendre des mesures basées sur l’étiquette de confidentialité, l’étiquette de rétention ou les informations sensibles d’un fichier proprement dit.
 
 Création d’une stratégie DLP
-1. Dans le Centre de conformité Microsoft 365, accédez à la [page de protection contre la perte de données](https://compliance.microsoft.com/datalossprevention).
+1. Dans le Centre de conformité Microsoft Purview, accédez à la [Page de protection contre la perte de données](https://compliance.microsoft.com/datalossprevention).
 2. Cliquez sur la stratégie **Créer**.
 3. Sélectionnez **Personnaliser**, puis cliquez sur **Suivant**.
 4. Tapez un nom pour la stratégie, puis cliquez sur **Suivant**.
@@ -142,11 +142,11 @@ Pour obtenir plus d’informations, voir [ATP pour SharePoint, OneDrive et Micro
 
 ## <a name="add-copyright-information-to-your-files"></a>Ajouter des informations de copyright à vos fichiers
 
-Si vous utilisez des étiquettes de confidentialité dans le centre d’administration de la conformité Microsoft 365, vous pouvez configurer vos étiquettes pour ajouter automatiquement un filigrane, un en-tête ou un pied de page aux documents Office de votre organisation. De cette façon, vous pouvez vous assurer que les fichiers partagés contiennent des informations de copyright ou de propriété.
+Si vous utilisez des étiquettes de confidentialité dans le centre d’administration de la conformité Microsoft Purview, vous pouvez configurer vos étiquettes pour ajouter automatiquement un filigrane, un en-tête ou un pied de page aux documents Office de votre organisation. De cette façon, vous pouvez vous assurer que les fichiers partagés contiennent des informations de copyright ou de propriété.
 
 Pour ajouter un pied de page à un fichier étiqueté
 
-1. Ouvrez le [centre d’administration de la conformité Microsoft 365](https://compliance.microsoft.com).
+1. Ouvrez le [Centre d’administration Microsoft Purview](https://compliance.microsoft.com).
 2. Dans le volet de navigation gauche, sous **Solutions**, cliquez sur **Protection des informations**.
 3. Cliquez sur l’étiquette à laquelle vous voulez ajouter un pied de page, puis sur **Modifier l'étiquette**.
 4. Cliquez sur **Suivant** pour atteindre l’onglet **Marquage du contenu**, puis réglez l’option marquage du contenu sur **Activé**.

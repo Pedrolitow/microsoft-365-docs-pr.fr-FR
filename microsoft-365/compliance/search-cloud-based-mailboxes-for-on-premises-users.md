@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Les administrateurs peuvent utiliser les outils eDiscovery dans Microsoft 365 pour rechercher et exporter des données de conversation Teams pour les utilisateurs locaux dans un déploiement exchange hybride.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fdd142783313418c8c65c04f9b5e344ff325ec2c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7b77a5178237e7ae25f710c8cc9574449f67a4f2
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61871456"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64945866"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Recherche de données de conversations Teams pour les utilisateurs locaux
 
@@ -44,7 +44,7 @@ Voici la configuration requise et les limitations applicables à l’activation 
   
 ## <a name="how-it-works"></a>Mode de fonctionnement
 
-Si un utilisateur Microsoft Teams a une boîte aux lettres locale et que son compte d’utilisateur/son identité est synchronisé avec le cloud, Microsoft crée un stockage dans le cloud pour l’associer aux données de conversations Teams 1xN de l’utilisateur local. Les données de conversations Teams pour les utilisateurs locaux sont indexées pour la recherche. Cela vous permet d’utiliser la recherche de contenu (et les recherches associées à des cas Core et Advanced eDiscovery) pour rechercher, afficher un aperçu, et exporter des données de conversation Teams des utilisateurs locaux. Vous pouvez également utiliser les applets de commande **\*ComplianceSearch** dans le centre de conformité et de sécurité PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux.
+Si un utilisateur Microsoft Teams a une boîte aux lettres locale et que son compte d’utilisateur/son identité est synchronisé avec le cloud, Microsoft crée un stockage dans le cloud pour l’associer aux données de conversations Teams 1xN de l’utilisateur local. Les données de conversations Teams pour les utilisateurs locaux sont indexées pour la recherche. Cela vous permet d’utiliser la recherche de contenu (et les recherches associées à des cas Microsoft Purview eDiscovery (Standard) et Microsoft Purview eDiscovery (Premium)) pour rechercher, afficher un aperçu, et exporter des données de conversation Teams pour des utilisateurs locaux. Vous pouvez également utiliser les applets de commande **\*ComplianceSearch** dans le centre de conformité et de sécurité PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux.
   
 Le graphique suivant montre comment Teams peut consulter les données de conversation pour les utilisateurs locaux pour pouvoir effectuer des recherches, des aperçus et des exportations.
   
@@ -54,9 +54,9 @@ En plus de cette fonctionnalité, vous pouvez également utiliser les outils eDi
 
 ## <a name="searching-for-teams-chat-content-for-on-premises-users"></a>Recherche du contenu de conversations Teams pour des utilisateurs locaux
 
-Voici comment utiliser la recherche de contenu dans le Centre de conformité Microsoft 365 pour rechercher des données de conversation de Teams des utilisateurs locaux. Vous pouvez également utiliser l’outil de recherche dans Core eDiscovery pour rechercher des données de conversation pour les utilisateurs locaux.
+Voici comment utiliser la recherche de contenu dans le portail de conformité Microsoft Purview pour rechercher des données de conversation de Teams pour des utilisateurs locaux. Vous pouvez également utiliser l’outil de recherche dans eDiscovery (Standard) pour rechercher des données de conversation pour des utilisateurs locaux.
   
-1. Dans le centre de conformité Microsoft 365, accédez à **Recherche de contenu**.
+1. Dans le portail de conformité, accédez à **Recherche de contenu**.
 
 2. Sous l’onglet **Recherches** , cliquez sur **Nouvelle recherche**, puis nommez la nouvelle recherche.
 
@@ -112,7 +112,7 @@ Pour plus d’informations sur l’utilisation de ces applets de commande, consu
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Pour l’instant, vous pouvez rechercher, afficher un aperçu et exporter des données de conversations Teams pour les utilisateurs locaux. Vous pouvez également placer en attente des données de conversations Teams pour un utilisateur local sur un cas Core ou Advanced eDiscovery, et appliquer une stratégie de rétention pour les conversations Teams ou les messages de canal pour les utilisateurs locaux. Pour l’instant, vous ne pouvez pas appliquer une stratégie de rétention pour d’autres emplacements de contenu (tels que les boîtes aux lettres Exchange et les sites SharePoint) pour les utilisateurs locaux.
+- Pour l’instant, vous pouvez rechercher, afficher un aperçu et exporter des données de conversations Teams pour les utilisateurs locaux. Vous pouvez également placer en attente des données de conversations Teams pour un utilisateur local sur un cas Core ou eDiscovery (Premium), et appliquer une stratégie de rétention pour les conversations Teams ou les messages de canal pour les utilisateurs locaux. Pour l’instant, vous ne pouvez pas appliquer une stratégie de rétention pour d’autres emplacements de contenu (tels que les boîtes aux lettres Exchange et les sites SharePoint) pour les utilisateurs locaux.
 
 ## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 

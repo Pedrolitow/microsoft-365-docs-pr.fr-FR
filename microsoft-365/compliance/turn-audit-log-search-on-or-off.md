@@ -19,60 +19,60 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
-description: Comment activer ou désactiver la fonctionnalité de recherche du journal d’audit dans le Centre de conformité Microsoft 365 pour activer ou désactiver la possibilité pour les administrateurs d’effectuer des recherches dans le journal d’audit.
-ms.openlocfilehash: e36fe410ed75522b0d531f2f9f7901b78f4974eb
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Comment activer ou désactiver la fonctionnalité de recherche dans le journal d’audit dans le portail de conformité Microsoft Purview pour activer ou désactiver la possibilité pour les administrateurs de rechercher dans le journal d’audit.
+ms.openlocfilehash: 587c7f98cd04eef618508e096f290d1d299ec096
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316112"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944522"
 ---
 # <a name="turn-auditing-on-or-off"></a>Activer ou désactiver la fonctionnalité d’audit
 
-L’enregistrement d’audit est désactivé par défaut pour Microsoft 365 et Office 365'entreprise. Toutefois, lors de la configuration d’une nouvelle Microsoft 365 ou Office 365 organisation, vous devez vérifier l’état d’audit de votre organisation. Pour obtenir des instructions, consultez la section Vérifier [l’état d’audit de votre](#verify-the-auditing-status-for-your-organization) organisation dans cet article. 
+La journalisation d’audit est activée par défaut pour Microsoft 365 et Office 365 organisations d’entreprise. Toutefois, lors de la configuration d’une nouvelle organisation Microsoft 365 ou Office 365, vous devez vérifier l’état d’audit de votre organisation. Pour obtenir des instructions, consultez la section [Vérifier l’état d’audit de votre organisation](#verify-the-auditing-status-for-your-organization) dans cet article. 
 
-Lorsque l’audit dans le Centre de conformité Microsoft 365 est allumé, les activités des utilisateurs et des administrateurs de votre organisation sont enregistrées dans le journal d’audit et conservées pendant 90 jours et jusqu’à un an en fonction de la licence attribuée aux utilisateurs. Toutefois, votre organisation peut avoir des raisons de ne pas vouloir enregistrer et conserver les données du journal d’audit. Dans ce cas, un administrateur global peut décider de désactiver l’audit dans Microsoft 365.
+Lors de l’audit dans le portail de conformité Microsoft Purview est activé, l’activité utilisateur et administrateur de votre organisation est enregistrée dans le journal d’audit et conservée pendant 90 jours, et jusqu’à un an en fonction de la licence attribuée aux utilisateurs. Toutefois, votre organisation peut avoir des raisons de ne pas vouloir enregistrer et conserver les données du journal d’audit. Dans ce cas, un administrateur général peut décider de désactiver l’audit dans Microsoft 365.
 
 > [!IMPORTANT]
-> Si vous désactiver l’audit dans Microsoft 365, vous ne pouvez pas utiliser l’API activité de gestion Office 365 ou Microsoft Sentinel pour accéder aux données d’audit de votre organisation. La suppression de l’audit en suivant les étapes de cet article signifie qu’aucun résultat ne sera renvoyé lorsque vous effectuerez une recherche dans le journal d’audit à l’aide du Centre de conformité Microsoft 365 ou lorsque vous exécutez la cmdlet **Search-UnifiedAuditLog** dans Exchange Online PowerShell. Cela signifie également que les journaux d’audit ne seront pas disponibles via l’API activité de gestion Office 365 ou Microsoft Sentinel.
+> Si vous désactivez l’audit dans Microsoft 365, vous ne pouvez pas utiliser l’API d’activité de gestion Office 365 ou Microsoft Sentinel pour accéder aux données d’audit de votre organisation. La désactivation de l’audit en suivant les étapes décrites dans cet article signifie qu’aucun résultat n’est retourné lorsque vous effectuez une recherche dans le journal d’audit à l’aide du portail de conformité ou lorsque vous exécutez l’applet de commande **Search-UnifiedAuditLog** dans Exchange Online PowerShell. Cela signifie également que les journaux d’audit ne seront pas disponibles via l’API d’activité de gestion Office 365 ou Microsoft Sentinel.
   
 ## <a name="before-you-turn-auditing-on-or-off"></a>Avant d’activer ou de désactiver l’audit
 
-- Le rôle Journaux d’audit doit vous être attribué dans Exchange Online pour activer ou désactiver l’audit dans Microsoft 365 organisation. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de la conformité et Gestion de l’organisation dans la page **Autorisations** du Centre d Exchange de conformité. Les administrateurs globaux Microsoft 365 sont membres du groupe de rôles Gestion de l’organisation dans Exchange Online.
+- Vous devez disposer du rôle Journaux d’audit dans Exchange Online pour activer ou désactiver l’audit dans votre organisation Microsoft 365. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page **Autorisations** du centre d’administration Exchange. Les administrateurs généraux dans Microsoft 365 sont membres du groupe de rôles Gestion de l’organisation dans Exchange Online.
 
     > [!NOTE]
-    > Des autorisations doivent être attribuées aux utilisateurs Exchange Online pour activer ou désactiver l’audit. Si vous attribuez aux utilisateurs le rôle Journaux d’audit sur la page **Autorisations** de la Centre de conformité Microsoft 365, ils ne pourront pas activer ou désactiver l’audit. Cela est dû au fait que l’cmdlet sous-jacente est Exchange Online cmdlet PowerShell.
+    > Des autorisations doivent être attribuées aux utilisateurs dans Exchange Online pour activer ou désactiver l’audit. Si vous attribuez aux utilisateurs le rôle Journaux d’audit sur la page **Autorisations** dans le portail de conformité, ils ne pourront pas activer ou désactiver l’audit. Cela est dû au fait que l’applet de commande sous-jacente est une applet de commande PowerShell Exchange Online.
 
-- Pour obtenir des instructions détaillées sur la recherche dans le journal d’audit, voir [Rechercher dans le journal d’audit](search-the-audit-log-in-security-and-compliance.md). Pour plus d’informations sur Microsoft 365'API Activité de gestion, voir Prise en [Microsoft 365 API de gestion des données](/office/office-365-management-api/get-started-with-office-365-management-apis).
+- Pour obtenir des instructions pas à pas sur la recherche dans le journal d’audit, consultez [Rechercher dans le journal d’audit](search-the-audit-log-in-security-and-compliance.md). Pour plus d’informations sur l’API d’activité de gestion Microsoft 365, consultez [Démarrage avec les API de gestion Microsoft 365](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
 ## <a name="verify-the-auditing-status-for-your-organization"></a>Vérifier l’état d’audit de votre organisation
 
-Pour vérifier que l’audit est allumé pour votre organisation, vous pouvez exécuter la commande suivante [dans Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) :
+Pour vérifier que l’audit est activé pour votre organisation, vous pouvez exécuter la commande suivante dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) :
 
 ```powershell
 Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
 ```
 
-La valeur de `True` la  _propriété UnifiedAuditLogIngestionEnabled_ indique que l’audit est allumé. La valeur indique `False` que l’audit n’est pas allumé.
+La valeur de `True` la propriété  _UnifiedAuditLogIngestionEnabled_ indique que l’audit est activé. La valeur indique `False` que l’audit n’est pas activé.
 
 > [!NOTE]
 > Veillez à exécuter la commande précédente dans Exchange Online PowerShell. Vous ne pouvez pas utiliser Security & Compliance PowerShell pour exécuter cette commande.
 
 ## <a name="turn-on-auditing"></a>Activer l’audit
 
-Si l’audit n’est pas allumé pour votre organisation, vous pouvez l’activer dans le Centre de conformité Microsoft 365 ou à l’aide Exchange Online PowerShell. L’opération d’audit peut prendre plusieurs heures avant que vous ne renvoyiez des résultats lors de la recherche dans le journal d’audit.
+Si l’audit n’est pas activé pour votre organisation, vous pouvez l’activer dans le portail de conformité ou à l’aide de Exchange Online PowerShell. L’activation de l’audit peut prendre plusieurs heures avant de pouvoir retourner les résultats lorsque vous effectuez une recherche dans le journal d’audit.
   
 ### <a name="use-the-compliance-center-to-turn-on-auditing"></a>Utiliser le centre de conformité pour activer l’audit
 
 1. Accédez à <https://compliance.microsoft.com> et connectez-vous.
 
-2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, cliquez sur **Audit**.
+2. Dans le volet de navigation gauche du portail de conformité, cliquez sur **Audit**.
 
-   Si l’audit n’est pas désactivé pour votre organisation, une bannière s’affiche pour vous invite à commencer à enregistrer l’activité des utilisateurs et des administrateurs.
+   Si l’audit n’est pas activé pour votre organisation, une bannière s’affiche pour vous inviter à commencer à enregistrer l’activité de l’utilisateur et de l’administrateur.
 
    ![Bannière sur la page Audit.](../media/AuditingBanner.png)
 
-3. Cliquez sur la **bannière Démarrer l’enregistrement de l’activité de l’utilisateur et de l’administrateur** .
+3. Cliquez sur la bannière **Démarrer l’enregistrement de l’utilisateur et de l’activité administrateur** .
 
    L’application de la modification peut prendre jusqu’à 60 minutes.
 
@@ -86,7 +86,7 @@ Si l’audit n’est pas allumé pour votre organisation, vous pouvez l’active
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
     ```
 
-    Un message s’affiche pour vous dire que l’application de la modification peut prendre jusqu’à 60 minutes.
+    Un message s’affiche indiquant qu’il peut prendre jusqu’à 60 minutes pour que la modification prenne effet.
   
 ## <a name="turn-off-auditing"></a>Désactiver l’audit
 
@@ -100,7 +100,7 @@ Vous devez utiliser Exchange Online PowerShell pour désactiver l’audit.
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
     ```
 
-3. Après un certain temps, vérifiez que l’audit est désactivé. Il existe deux méthodes pour y parvenir :
+3. Après un certain temps, vérifiez que l’audit est désactivé (désactivé). Il existe deux méthodes pour y parvenir :
 
     - Dans Exchange Online PowerShell, exécutez la commande suivante :
 
@@ -108,34 +108,34 @@ Vous devez utiliser Exchange Online PowerShell pour désactiver l’audit.
       Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
       ```
 
-      La valeur de  `False` la  _propriété UnifiedAuditLogIngestionEnabled_ indique que l’audit est désactivé.
+      La valeur de  `False` la propriété  _UnifiedAuditLogIngestionEnabled_ indique que l’audit est désactivé.
 
-    - Go to the **Audit** page in the Centre de conformité Microsoft 365.
+    - Accédez à la page **Audit** dans le portail de conformité.
 
-      Si l’audit n’est pas désactivé pour votre organisation, une bannière s’affiche pour vous invite à commencer à enregistrer l’activité des utilisateurs et des administrateurs.
+      Si l’audit n’est pas activé pour votre organisation, une bannière s’affiche pour vous inviter à commencer à enregistrer l’activité de l’utilisateur et de l’administrateur.
 
-## <a name="audit-records-when-auditing-status-is-changed"></a>Enregistrements d’audit lorsque l’état d’audit est modifié
+## <a name="audit-records-when-auditing-status-is-changed"></a>Enregistrements d’audit lors de la modification de l’état de l’audit
 
-Les modifications apportées à l’état d’audit dans votre organisation sont elles-mêmes auditées. Cela signifie que les enregistrements d’audit sont enregistrés lorsque l’audit est allumé ou désactivé. Vous pouvez rechercher ces enregistrements d’audit dans Exchange journal d’audit de l’administrateur.
+Les modifications apportées à l’état d’audit dans votre organisation sont elles-mêmes auditées. Cela signifie que les enregistrements d’audit sont enregistrés lorsque l’audit est activé ou désactivé. Vous pouvez rechercher ces enregistrements d’audit dans le journal d’audit Exchange administrateur.
 
-Pour rechercher dans le journal d’audit de l’administrateur Exchange des enregistrements d’audit générés lors de l’Exchange Online l’audit, exécutez la commande suivante dans [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) :
+Pour rechercher dans le journal d’audit Exchange administrateur les enregistrements d’audit générés lors de l’activation ou de la désactivation de l’audit, exécutez la commande suivante dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) :
 
 ```powershell
 Search-AdminAuditLog -Cmdlets Set-AdminAuditLogConfig -Parameters UnifiedAuditLogIngestionEnabled
 ```
 
-Les enregistrements d’audit pour ces événements contiennent des informations sur la modification de l’état d’audit, l’administrateur qui l’a modifié et l’adresse IP de l’ordinateur utilisé pour effectuer la modification. Les captures d’écran suivantes montrent les enregistrements d’audit qui correspondent à la modification de l’état d’audit dans votre organisation.
+Les enregistrements d’audit de ces événements contiennent des informations sur le moment où l’état d’audit a été modifié, l’administrateur qui l’a modifié et l’adresse IP de l’ordinateur qui a été utilisé pour apporter la modification. Les captures d’écran suivantes montrent les enregistrements d’audit qui correspondent à la modification de l’état d’audit dans votre organisation.
 
-### <a name="audit-record-for-turning-on-auditing"></a>Enregistrement d’audit pour l’turning on auditing
+### <a name="audit-record-for-turning-on-auditing"></a>Enregistrement d’audit pour activer l’audit
 
-![Enregistrement d’audit pour l’turning on auditing](../media/AuditStatusAuditingEnabled.png)
+![Enregistrement d’audit pour activer l’audit](../media/AuditStatusAuditingEnabled.png)
 
-`Confirm` La valeur de la propriété *CmdletParameters* indique que l’enregistrement d’audit unifié a été allumé dans le centre de conformité ou en exécutant la cmdlet **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true**.
+La valeur de `Confirm` la propriété *CmdletParameters* indique que la journalisation d’audit unifiée a été activée dans le centre de conformité ou en exécutant l’applet de commande **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true** .
 
-### <a name="audit-record-for-turning-off-auditing"></a>Enregistrement d’audit pour la fin de l’audit
+### <a name="audit-record-for-turning-off-auditing"></a>Enregistrement d’audit pour désactiver l’audit
 
-![Enregistrement d’audit pour la fin de l’audit](../media/AuditStatusAuditingDisabled.png)
+![Enregistrement d’audit pour désactiver l’audit](../media/AuditStatusAuditingDisabled.png)
 
-La valeur de `Confirm` n’est pas incluse dans la *propriété CmdletParameters* . Cela indique que l’enregistrement d’audit unifié a été désactivé en exécutant la commande **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false** commande.
+La valeur n’est `Confirm` pas incluse dans la propriété *CmdletParameters* . Cela indique que la journalisation d’audit unifiée a été désactivée en exécutant la commande **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false** .
 
-Pour plus d’informations sur la recherche dans Exchange’audit de l’administrateur, voir [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog).
+Pour plus d’informations sur la recherche dans le Exchange journal d’audit de l’administrateur, consultez [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog).

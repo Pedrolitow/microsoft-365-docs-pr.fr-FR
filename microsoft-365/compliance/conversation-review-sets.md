@@ -1,5 +1,5 @@
 ---
-title: Passer en revue les conversations dans Advanced eDiscovery
+title: Passer en revue les conversations dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,100 +15,100 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez la fonctionnalité de reconstruction de conversation dans Advanced eDiscovery (thread de conversation) pour reconstruire, examiner et exporter des conversations dans des groupes Microsoft Teams et Yammer conversation.
+description: Découvrez la fonctionnalité de reconstruction de conversation dans Microsoft Purview eDiscovery (Premium) (appelée thread de conversation) pour reconstruire, examiner et exporter des conversations de conversation dans des groupes Microsoft Teams et Yammer.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7bd13bdb01298d0cf1f37671f044a3405a2de0b6
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 9bfd87de95449ab30b8a33c9f7f96db458e809d1
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942403"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64950266"
 ---
-# <a name="conversation-threading-in-advanced-ediscovery"></a>Threads de conversation dans Advanced eDiscovery
+# <a name="conversation-threading-in-ediscovery-premium"></a>Thread de conversation dans eDiscovery (Premium)
 
-La messagerie instantanée est un moyen pratique de poser des questions, de partager des idées ou de communiquer rapidement entre de larges publics. Comme les plateformes de messagerie instantanée, telles que les groupes Microsoft Teams et Yammer, deviennent essentielles à la collaboration d’entreprise, les organisations doivent évaluer la façon dont leur flux de travail eDiscovery traite ces nouvelles formes de communication et de collaboration.
+La messagerie instantanée est un moyen pratique de poser des questions, de partager des idées ou de communiquer rapidement au sein d’un large public. Comme les plateformes de messagerie instantanée, comme les groupes Microsoft Teams et Yammer, deviennent essentielles à la collaboration d’entreprise, les organisations doivent évaluer la façon dont leur flux de travail eDiscovery traite ces nouvelles formes de communication et de collaboration.
 
-La fonctionnalité de reconstruction de conversation Advanced eDiscovery est conçue pour vous aider à identifier le contenu contextuel et à produire des affichages de conversation distincts. Cette fonctionnalité vous permet de passer en revue efficacement et rapidement les conversations de messagerie instantanée complètes (également appelées *conversations* threadées) générées sur des plateformes telles que Microsoft Teams.
+La fonctionnalité de reconstruction de conversation dans Microsoft Purview eDiscovery (Premium) est conçue pour vous aider à identifier le contenu contextuel et à produire des vues de conversation distinctes. Cette fonctionnalité vous permet d’examiner efficacement et rapidement les conversations de messages instantanés complètes (également appelées *conversations thread*) générées dans des plateformes telles que Microsoft Teams.
 
-Avec la reconstruction de conversation, vous pouvez utiliser les fonctionnalités intégrées pour reconstruire, examiner et exporter des conversations threadées. Utilisez la reconstruction Advanced eDiscovery conversation pour :
+Avec la reconstruction de conversation, vous pouvez utiliser des fonctionnalités intégrées pour reconstruire, examiner et exporter des conversations thread. Utilisez la reconstruction de conversation eDiscovery (Premium) pour :
 
-- Conserver des métadonnées de niveau message uniques dans tous les messages d’une conversation.
+- Conservez les métadonnées uniques au niveau du message dans tous les messages d’une conversation.
 
 - Collectez des messages contextuels autour de vos résultats de recherche.
 
-- Passer en revue, annoter et redessier des conversations threadées.
+- Passez en revue, annotez et répétez les conversations thread.
 
-- Exporter des messages individuels ou des conversations threadées
+- Exporter des messages individuels ou des conversations thread
 
 ## <a name="terminology"></a>Terminologie
 
 Voici quelques définitions pour vous aider à commencer à utiliser la reconstruction de conversation.
 
-- **Messages :** Représente la plus petite unité d’une conversation. La taille, la structure et les métadonnées des messages peuvent varier.
+- **Messages:** Représente la plus petite unité d’une conversation. La taille, la structure et les métadonnées des messages peuvent varier.
 
-- **Conversation :** Représente un regroupement d’un ou plusieurs messages. Dans différentes applications, les conversations peuvent être représentées de différentes manières. Dans certaines applications, il existe une action explicite qui résulte de la réponse à un message existant. Les conversations sont formées explicitement à la suite de cette action de l’utilisateur. Par exemple, voici une capture d’écran d’une conversation de canal dans Microsoft Teams.
+- **Conversation:** Représente un regroupement d’un ou plusieurs messages. Dans différentes applications, les conversations peuvent être représentées de différentes manières. Dans certaines applications, il existe une action explicite qui résulte de la réponse à un message existant. Les conversations sont formées explicitement à la suite de cette action de l’utilisateur. Par exemple, voici une capture d’écran d’une conversation de canal dans Microsoft Teams.
 
    ![Microsoft Teams conversation de canal.](../media/threadedchat.png)
 
-   Dans d’autres applications (telles que les messages de conversation de groupe dans Teams), il n’existe pas de chaîne de réponse formelle et les messages apparaissent plutôt comme une « série plate de messages » au sein d’un thread unique. Dans ces types d’applications, les conversations sont déduites d’un groupe de messages qui se produisent dans un certain temps. Ce « groupement souple » de messages (par opposition à une chaîne de réponse) représente la conversation « va-et-vient » sur un sujet spécifique.
+   Dans d’autres applications (telles que les messages de conversation de groupe dans Teams), il n’existe pas de chaîne de réponse formelle et les messages apparaissent à la place comme un « fleuve plat de messages » au sein d’un seul thread. Dans ces applications de types, les conversations sont déduites d’un groupe de messages qui se produisent dans un certain temps. Ce « regroupement souple » de messages (par opposition à une chaîne de réponse) représente la conversation « aller et retour » sur un sujet spécifique qui l’intéresse.
 
 ## <a name="step-1-create-a-draft-collection"></a>Étape 1 : Créer un brouillon de collection
 
-Une fois que vous avez identifié les dépositaires et les emplacements de contenu pertinents, vous pouvez créer une recherche pour rechercher du contenu potentiellement pertinent. Sous **l’onglet Collections** Advanced eDiscovery cas, vous pouvez créer une collection en cliquant sur **Nouvelle collection** et en suivant l’Assistant. Pour plus d’informations sur la création d’une collection, la création d’une requête de recherche et l’aperçu des résultats de la recherche, voir [Créer un brouillon de collection.](create-draft-collection.md)
+Une fois que vous avez identifié les consignats et les emplacements de contenu pertinents, vous pouvez créer une recherche pour rechercher du contenu potentiellement pertinent. Sous l’onglet **Collections** dans le cas eDiscovery (Premium), vous pouvez créer une collection en cliquant sur **Nouvelle collection** et en suivant l’Assistant. Pour plus d’informations sur la façon dont vous pouvez créer une collection, créer une requête de recherche et afficher un aperçu des résultats de la recherche, consultez [Créer un brouillon de collection](create-draft-collection.md).
 
-## <a name="step-2-commit-a-draft-collection-to-a-review-set"></a>Étape 2 : Valider un brouillon de collection dans un jeu à réviser
+## <a name="step-2-commit-a-draft-collection-to-a-review-set"></a>Étape 2 : Valider un brouillon de collection dans un ensemble de révisions
 
-Après avoir examiné et finalisé la requête de recherche dans une collection, vous pouvez ajouter les résultats de la recherche à un jeu à réviser. Lorsque vous ajoutez vos résultats de recherche dans un jeu à réviser, les données d’origine sont copiées dans une zone stockage Azure afin de faciliter le processus de révision et d’analyse. Pour plus d’informations sur l’ajout de résultats de recherche à un jeu à réviser, voir Valider un [brouillon de collection dans un jeu à réviser.](commit-draft-collection.md)
+Une fois que vous avez examiné et finalisé la requête de recherche dans une collection, vous pouvez ajouter les résultats de la recherche à un ensemble de révisions. Lorsque vous ajoutez vos résultats de recherche dans un ensemble de révisions, les données d’origine sont copiées dans une zone stockage Azure pour faciliter le processus de révision et d’analyse. Pour plus d’informations sur l’ajout de résultats de recherche à un ensemble de révisions, consultez [Commit a draft collection to a review set](commit-draft-collection.md).
 
-Lorsque vous ajoutez des éléments de conversations à un jeu à réviser, vous pouvez utiliser l’option de conversations threadées pour collecter des messages contextuels à partir de conversations qui contiennent des éléments qui correspondent aux critères de recherche de la collection. Une fois que vous avez sélectionné l’option conversations de thread, les choses suivantes peuvent se produire :
+Lorsque vous ajoutez des éléments de conversations à un ensemble de révisions, vous pouvez utiliser l’option conversations thread pour collecter des messages contextuels à partir de conversations qui contiennent des éléments qui correspondent aux critères de recherche de la collection. Une fois que vous avez sélectionné l’option de conversation de thread, les événements suivants peuvent se produire :
 
   ![Récupération de conversation.](../media/messagesandconversations.png)
 
-1. À l’aide d’une requête de mot clé et de plage de dates, la recherche a renvoyé une correspondance sur *le message 3*. Ce message faisait partie d’une conversation plus importante, illustrée par *CRC1*.
+1. À l’aide d’un mot clé et d’une requête de plage de dates, la recherche a retourné une correspondance sur *message 3*. Ce message faisait partie d’une conversation plus large, illustrée par *CRC1*.
 
-2. Lorsque vous ajoutez les données dans un jeu à réviser et activez les options de récupération de conversation, Advanced eDiscovery revenir en arrière et collecter d’autres éléments dans *CRC1*.
+2. Lorsque vous ajoutez les données dans un jeu de révision et activez les options de récupération de conversation, eDiscovery (Premium) revient en arrière et collecte d’autres éléments dans *CRC1*.
 
-3. Une fois que les éléments ont été ajoutés au jeu à réviser, vous pouvez passer en revue tous les messages individuels à partir *de CRC1*.
+3. Une fois que les éléments ont été ajoutés au jeu de révision, vous pouvez passer en revue tous les messages individuels de *CRC1*.
 
-Pour activer l’option de conversations threadées, voir [Valider un brouillon de collection dans un jeu à réviser.](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set)
+Pour activer l’option conversations thread, consultez [Valider un brouillon de collection dans un ensemble de révisions](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set).
 
-## <a name="step-3-review-and-export-threaded-conversations"></a>Étape 3 : Examiner et exporter les conversations threadées
+## <a name="step-3-review-and-export-threaded-conversations"></a>Étape 3 : Examiner et exporter des conversations thread
 
-Une fois que le contenu a été traitée et ajoutée au jeu à réviser, vous pouvez commencer à passer en revue les données du jeu à réviser. Les messages individuels sont threadés ensemble et présentés en tant que conversations. Cela vous permet de passer en revue et d’exporter des conversations contextuelles.
+Une fois que le contenu a été traité et ajouté au jeu de révision, vous pouvez commencer à examiner les données du jeu de révision. Les messages individuels sont threadés ensemble et présentés en tant que conversations. Cela vous permet d’examiner et d’exporter des conversations contextuelles.
 
-  ![Ensemble de révision de conversation.](../media/ConversationRSOptions.PNG)
+  ![Ensemble de révisions de conversation.](../media/ConversationRSOptions.PNG)
 
 Les sections suivantes décrivent l’examen et l’exportation des conversations.
 
 ### <a name="reviewing-conversations"></a>Examen des conversations
 
-Dans un jeu à réviser, vous pouvez utiliser les options suivantes pour faciliter le processus de révision.
+Dans un ensemble de révisions, vous pouvez utiliser les options suivantes pour faciliter le processus de révision.
 
-- **Grouper par conversation :** Groupe les messages au sein de la même conversation pour aider les utilisateurs à simplifier et accélérer leur processus de révision.
+- **Regrouper par conversation :** Regroupe les messages dans la même conversation pour aider les utilisateurs à simplifier et à accélérer leur processus de révision.
 
-- **Vue récapitulatif :** Affiche la conversation threadée. Dans cette vue, vous pouvez voir la conversation entière et accéder aux métadonnées de chaque message individuel.
+- **Vue récapitulative :** Affiche la conversation thread. Dans cette vue, vous pouvez voir l’intégralité de la conversation et accéder aux métadonnées pour chaque message individuel.
 
    - Afficher les métadonnées des messages individuels
 
    - Télécharger des messages individuels
 
-- **Affichage texte :** Fournit le texte extrait pour toute la conversation.
+- **Affichage texte :** Fournit le texte extrait pour l’ensemble de la conversation.
 
-- **Affichage annoter :** Vous permet de marquer un affichage thread de la conversation. Tous les messages de la conversation partagent le même document annoté.
+- **Annoter la vue :** Vous permet de marquer une vue thread de la conversation. Tous les messages de la conversation partagent le même document annoté.
 
-- **Marquage :** Lorsque vous visualisez des conversations dans un jeu  à réviser, vous pouvez afficher et appliquer des balises en cliquant sur le panneau marquage dans le panneau de codage.
+- **Marquage:** Lorsque vous affichez des conversations dans un ensemble de révisions, vous pouvez afficher et appliquer des balises en cliquant sur **le panneau De balisage** dans le panneau de codage.
 
-- **Réexécutez la conversion de conversation :** Lorsque des messages sont ajoutés à un groupe de révision de conversation, un travail de conversion est automatiquement exécuté pour créer le résumé de thread et annoter des affichages. Si le travail de reconstruction de conversation échoue, vous pouvez réexécuter ce travail en cliquant sur Action > créer des **PDF** de conversation dans le jeu à réviser.
+- **Réexécuter la conversion de conversation :** Lorsque des messages sont ajoutés à un jeu de révision de conversation, un travail de conversion est exécuté automatiquement pour créer le résumé thread et annoter les vues. Si le travail de reconstruction de conversation échoue, vous pouvez réexécuter ce travail en cliquant sur **Action > Créer des fichiers PDF de conversation** dans le jeu de révision.
 
 ### <a name="exporting-conversations"></a>Exportation de conversations
 
-Pour les options que vous pouvez sélectionner lors de l’exportation de conversations à partir d’un jeu à réviser, voir [Exporter des documents à partir d’un jeu à réviser.](export-documents-from-review-set.md#export-options)
+Pour connaître les options que vous pouvez sélectionner lors de l’exportation de conversations à partir d’un ensemble de révisions, consultez [Exporter des documents à partir d’un ensemble de révisions](export-documents-from-review-set.md#export-options).
 
-Plus précisément, vous pouvez exporter des conversations de conversation entières dans un fichier PDF unique ou vous pouvez exporter chaque message de conversation d’une conversation en tant que fichier individuel.
+Plus précisément, vous pouvez exporter des conversations de conversation entières dans un fichier PDF unique ou exporter chaque message de conversation dans une conversation en tant que fichier individuel.
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
-Pour en savoir plus sur l’examen des données de cas dans Advanced eDiscovery, consultez les articles suivants :
+Pour en savoir plus sur la façon d’examiner les données de cas dans eDiscovery (Premium), consultez les articles suivants :
 
 - [Interroger et filtrer du contenu dans un jeu à réviser](review-set-search.md)
 - [Étiqueter les documents d’un jeu à réviser](tagging-documents.md)

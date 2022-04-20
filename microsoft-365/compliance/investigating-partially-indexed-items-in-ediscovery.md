@@ -1,5 +1,5 @@
 ---
-title: Recherche d’éléments partiellement indexés dans eDiscovery
+title: Examen des éléments partiellement indexés dans eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,18 +18,18 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment gérer des éléments partiellement indexés (également appelés éléments non indexés) à partir de Exchange, SharePoint et OneDrive Entreprise au sein de votre organisation.
-ms.openlocfilehash: 308b99b8bcb8d11c53759700d43651e521987948
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 8dd5235027a4563ad868d8ebe28c8dab50fb6376
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940973"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944764"
 ---
-# <a name="investigating-partially-indexed-items-in-ediscovery"></a>Recherche d’éléments partiellement indexés dans eDiscovery
+# <a name="investigating-partially-indexed-items-in-ediscovery"></a>Examen des éléments partiellement indexés dans eDiscovery
 
-Une recherche de découverte électronique que vous exécutez à partir du Centre de conformité Microsoft 365 inclut automatiquement des éléments partiellement indexés dans les résultats de recherche estimés lorsque vous exécutez une recherche. Les éléments partiellement indexés sont des Exchange de boîtes aux lettres et des documents sur des sites SharePoint et OneDrive Entreprise qui, pour une raison quelconque, n’ont pas été complètement indexés pour la recherche. La plupart des messages électroniques et des documents de site sont indexés avec succès, car ils se limitent aux [limites d’indexation des messages électroniques.](limits-for-content-search.md#indexing-limits-for-email-messages) Toutefois, certains éléments peuvent dépasser ces limites d’indexation et seront partiellement indexés. Voici d’autres raisons pour lesquelles les éléments ne peuvent pas être indexés pour la recherche et sont renvoyés en tant qu’éléments partiellement indexés lorsque vous exécutez une recherche de découverte électronique :
+Une recherche eDiscovery que vous exécutez à partir du portail de conformité Microsoft Purview inclut automatiquement des éléments partiellement indexés dans les résultats de recherche estimés lorsque vous exécutez une recherche. Les éléments partiellement indexés sont Exchange des éléments de boîte aux lettres et des documents sur SharePoint et OneDrive Entreprise sites qui, pour une raison quelconque, n’ont pas été entièrement indexés pour la recherche. La plupart des messages électroniques et des documents de site sont correctement indexés, car ils sont dans les [limites d’indexation des messages électroniques](limits-for-content-search.md#indexing-limits-for-email-messages). Toutefois, certains éléments peuvent dépasser ces limites d’indexation et seront partiellement indexés. Voici d’autres raisons pour lesquelles les éléments ne peuvent pas être indexés pour la recherche et sont retournés en tant qu’éléments partiellement indexés lorsque vous exécutez une recherche eDiscovery :
   
-- Les messages électroniques contiennent un fichier joint qui ne peut pas être ouvert, tel que des fichiers image ; Il s’agit de la cause la plus courante des éléments de courrier partiellement indexés.
+- Les messages électroniques ont un fichier joint qui ne peut pas être ouvert, tel que des fichiers image ; il s’agit de la cause la plus courante des éléments de courrier partiellement indexés.
 
 - Le nombre de fichiers joints à un message électronique est trop important.
 
@@ -37,31 +37,31 @@ Une recherche de découverte électronique que vous exécutez à partir du Centr
 
 - Le type de fichier est pris en charge pour l'indexation, mais une erreur d'indexation s'est produite pour un fichier spécifique.
 
-Bien que cela varie, la plupart des clients d’organisations ont moins de 1 % du contenu par volume et moins de 12 % du contenu par taille partiellement indexée. La différence entre le volume et la taille est dû au fait que les fichiers plus volumineux ont une probabilité plus élevée de contenir du contenu qui ne peut pas être complètement indexé.
+Bien qu’elle varie, la plupart des clients d’organisations ont moins de 1 % de contenu par volume et moins de 12 % de contenu par taille partiellement indexée. La raison de la différence entre le volume et la taille est que les fichiers plus volumineux ont une probabilité plus élevée de contenir du contenu qui ne peut pas être entièrement indexé.
   
 ## <a name="why-does-the-partially-indexed-item-count-change-for-a-search"></a>Pourquoi le nombre d’éléments partiellement indexés change-t-il pour une recherche ?
 
-Après avoir exécuté une recherche de découverte électronique, le nombre total et la taille des éléments partiellement indexés dans les emplacements qui ont fait l’objet de la recherche sont répertoriés dans les statistiques des résultats de la recherche qui sont affichées dans les statistiques détaillées de la recherche. Notez qu’ils sont appelés éléments  *nonndex dans*  les statistiques de recherche. Voici quelques éléments qui affectent le nombre d’éléments partiellement indexés renvoyés dans les résultats de la recherche :
+Après avoir exécuté une recherche eDiscovery, le nombre total et la taille des éléments partiellement indexés dans les emplacements qui ont été recherchés sont répertoriés dans les statistiques des résultats de recherche qui sont affichées dans les statistiques détaillées de la recherche. Notez que ces éléments sont appelés  *éléments non indexés*  dans les statistiques de recherche. Voici quelques éléments qui affecteront le nombre d’éléments partiellement indexés retournés dans les résultats de la recherche :
   
-- Si un élément est partiellement indexé et correspond à la requête de recherche, il est inclus dans le nombre (et la taille) d’éléments de résultat de recherche et dans les éléments partiellement indexés. Toutefois, lorsque les résultats de cette même recherche sont exportés, l’élément est inclus uniquement avec un ensemble de résultats de recherche ; il n’est pas inclus en tant qu’élément partiellement indexé.
+- Si un élément est partiellement indexé et correspond à la requête de recherche, il est inclus à la fois dans le nombre (et la taille) des éléments de résultats de recherche et des éléments partiellement indexés. Toutefois, lorsque les résultats de cette même recherche sont exportés, l’élément est inclus uniquement avec l’ensemble des résultats de la recherche ; il n’est pas inclus en tant qu’élément partiellement indexé.
 
-- Les éléments partiellement indexés situés dans les *sites* SharePoint et OneDrive ne sont pas inclus dans l’estimation des éléments partiellement indexés affichés dans les statistiques détaillées de la recherche. Toutefois, les éléments partiellement indexés peuvent être exportés lorsque vous exportez les résultats d’une recherche de découverte électronique. Par exemple, si vous recherchez uniquement des sites, le nombre estimé d’éléments partiellement indexés sera zéro.
+- Les éléments partiellement indexés situés dans les sites SharePoint et OneDrive *ne sont pas* inclus dans l’estimation des éléments partiellement indexés affichés dans les statistiques détaillées de la recherche. Toutefois, les éléments partiellement indexés peuvent être exportés lorsque vous exportez les résultats d’une recherche eDiscovery. Par exemple, si vous recherchez uniquement des sites, le nombre estimé d’éléments partiellement indexés est égal à zéro.
   
-## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Calcul du taux d’éléments partiellement indexés dans votre organisation
+## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Calcul du ratio d’éléments partiellement indexés dans votre organisation
 
-Pour comprendre l’exposition de votre organisation aux éléments partiellement indexés, vous pouvez exécuter une recherche de tout le contenu dans toutes les boîtes aux lettres (à l’aide d’une requête de mot clé vide). Dans l’exemple suivant, il y a 1 629 904 (146,46 Go) d’éléments entièrement indexés et 10 025 (10,27 Go) d’éléments partiellement indexés.
+Pour comprendre l’exposition de votre organisation aux éléments partiellement indexés, vous pouvez exécuter une recherche de tout le contenu dans toutes les boîtes aux lettres (à l’aide d’une requête de mot clé vide). Dans l’exemple suivant, il y a 1 629 904 éléments entièrement indexés (146,46 Go) et 10 025 (10,27 Go) d’éléments partiellement indexés.
   
 ![Exemple de statistiques de recherche montrant des éléments partiellement indexés.](../media/PartiallyIndexedItemsTest.png)
   
 Vous pouvez déterminer le pourcentage d’éléments partiellement indexés à l’aide des calculs suivants.
   
- **Pour calculer le taux d’éléments partiellement indexés dans votre organisation :**
+ **Pour calculer le ratio des éléments partiellement indexés dans votre organisation :**
 
 `(Total number of partially indexed items/Total number of items) x 100`
 
 `(10025/1629904) x 100 = 0.62%`
 
-À l’aide des résultats de recherche de l’exemple précédent, 0,62 % de tous les éléments de boîtes aux lettres sont partiellement indexés.
+En utilisant les résultats de recherche de l’exemple précédent, 0,62 % de tous les éléments de boîte aux lettres sont partiellement indexés.
   
  **Pour calculer le pourcentage de la taille des éléments partiellement indexés dans votre organisation :**
 
@@ -69,57 +69,57 @@ Vous pouvez déterminer le pourcentage d’éléments partiellement indexés à 
 
 `(10.27 GB/146.46 GB) x 100 = 7.0%`
 
-Ainsi, dans l’exemple précédent, 7 % de la taille totale des éléments de boîte aux lettres sont des éléments partiellement indexés. Comme indiqué précédemment, la plupart des clients d’organisations ont moins de 1 % du contenu par volume et moins de 12 % du contenu par taille partiellement indexée.
+Ainsi, dans l’exemple précédent, 7 % de la taille totale des éléments de boîte aux lettres proviennent d’éléments partiellement indexés. Comme indiqué précédemment, la plupart des clients d’organisations ont moins de 1 % de contenu par volume et moins de 12 % de contenu par taille partiellement indexée.
 
-## <a name="working-with-partially-indexed-items"></a>Travailler avec des éléments partiellement indexés
+## <a name="working-with-partially-indexed-items"></a>Utilisation d’éléments partiellement indexés
 
-Dans les cas où vous devez examiner des éléments partiellement indexés pour [](export-a-content-search-report.md) vérifier qu’ils ne contiennent pas d’informations pertinentes, vous pouvez exporter un rapport de recherche de contenu qui contient des informations sur les éléments partiellement indexés. Lorsque vous exportez un rapport de recherche de contenu, n’oubliez pas de choisir l’une des options d’exportation qui inclut les éléments partiellement indexés.
+Dans les cas où vous devez examiner des éléments partiellement indexés pour vérifier qu’ils ne contiennent pas d’informations pertinentes, vous pouvez [exporter un rapport de recherche de contenu](export-a-content-search-report.md) qui contient des informations sur les éléments partiellement indexés. Lorsque vous exportez un rapport de recherche de contenu, veillez à choisir l’une des options d’exportation qui inclut des éléments partiellement indexés.
   
 ![Choisissez la deuxième ou la troisième option pour exporter des éléments partiellement indexés.](../media/PartiallyIndexedItemsExportOptions.png)
   
-Lorsque vous exportez des résultats de recherche eDiscovery ou un rapport de recherche à l’aide de l’une de ces options, l’exportation inclut un rapport nommé Items.csv. Ce rapport inclut la plupart des mêmes informations que le ResultsLog.csv de données . toutefois, le fichier Items.csv non indexé inclut également deux champs liés aux éléments partiellement indexés **:** les balises d’erreur et les propriétés **d’erreur.** Ces champs contiennent des informations sur l’erreur d’indexation pour chaque élément partiellement indexé. L’utilisation des informations de ces deux champs peut vous aider à déterminer si l’erreur d’indexation d’un type particulier a un impact sur votre enquête. 
+Lorsque vous exportez des résultats de recherche eDiscovery ou un rapport de recherche à l’aide de l’une de ces options, l’exportation inclut un rapport nommé Items.csv non indexé. Ce rapport contient la plupart des mêmes informations que le fichier ResultsLog.csv ; toutefois, le fichier Items.csv non indexé inclut également deux champs liés aux éléments partiellement indexés : **balises d’erreur** et **propriétés d’erreur**. Ces champs contiennent des informations sur l’erreur d’indexation pour chaque élément partiellement indexé. L’utilisation des informations contenues dans ces deux champs peut vous aider à déterminer si l’erreur d’indexation pour un impact particulier sur votre investigation. 
 
 > [!NOTE]
-> Le fichier Items.csv non Items.csv contient également des champs **nommés Type d’erreur** et **Message d’erreur.** Il s’agit de champs hérités qui  contiennent  des informations similaires aux informations des champs Balises d’erreur et Propriétés d’erreur, mais avec des informations moins détaillées. Vous pouvez ignorer ces champs hérités en toute sécurité.
+> Le fichier Items.csv non indexé contient également des champs **nommés Type d’erreur** et **Message d’erreur**. Il s’agit de champs hérités qui contiennent des informations similaires aux informations contenues dans les champs **Étiquettes d’erreur** et **Propriétés d’erreur** , mais avec des informations moins détaillées. Vous pouvez ignorer en toute sécurité ces champs hérités.
   
 ## <a name="errors-related-to-partially-indexed-items"></a>Erreurs liées aux éléments partiellement indexés
 
-Les balises d’erreur sont composés de deux éléments d’information, l’erreur et le type de fichier. Par exemple, dans cette paire erreur/type de fichier :
+Les balises d’erreur sont constituées de deux éléments d’informations, l’erreur et le type de fichier. Par exemple, dans cette paire erreur/type de fichier :
 
 ```text
  parseroutputsize_xls
 ```
 
- `parseroutputsize` est l’erreur `xls` et est le type de fichier du fichier sur qui l’erreur s’est produite. Dans les cas où le type de fichier n’a pas été reconnu ou s’il ne s’est pas appliqué à l’erreur, vous verrez la valeur à la `noformat` place du type de fichier.
+ `parseroutputsize` est l’erreur et `xls` est le type de fichier du fichier sur lequel l’erreur s’est produite. Dans les cas où le type de fichier n’a pas été reconnu ou si le type de fichier ne s’est pas appliqué à l’erreur, vous verrez la valeur `noformat` à la place du type de fichier.
   
-Voici une liste des erreurs d’indexation et une description de la cause possible de l’erreur.
+Voici une liste d’erreurs d’indexation et une description de la cause possible de l’erreur.
   
 | Balise d’erreur | Description |
 |:-----|:-----|
-| `attachmentcount` <br/> |Un message électronique avait trop de pièces jointes et certaines de ces pièces jointes n’ont pas été traitées.  <br/> |
-| `attachmentdepth` <br/> |L’outil de récupération de contenu et l’outil d’étude de documents ont trouvé un trop grand nombre de niveaux de pièces jointes imbrmbrées dans d’autres pièces jointes. Certaines de ces pièces jointes n’ont pas été traitées.  <br/> |
-| `attachmentrms` <br/> |Échec du décodage d’une pièce jointe car elle était protégée par RMS.  <br/> |
-| `attachmentsize` <br/> |Un fichier joint à un message électronique était trop grand et n’a pas pu être traitée.  <br/> |
-| `indexingtruncated` <br/> |Lors de l’écriture du message électronique traitée dans l’index, l’une des propriétés indexables était trop grande et a été tronquée. Les propriétés tronquées sont répertoriées dans le champ Propriétés d’erreur.  <br/> |
-| `invalidunicode` <br/> |Un message électronique contenait du texte qui n’a pas pu être traitée en tant qu’Unicode valide. L’indexation de cet élément peut être incomplète.  <br/> |
-| `parserencrypted` <br/> |Le contenu de la pièce jointe ou du message électronique est chiffré et Microsoft 365'a pas pu décoder le contenu.  <br/> |
-| `parsererror` <br/> |Une erreur inconnue s’est produite lors de l’échantillonnage. Cela est généralement le résultat d’un bogue logiciel ou d’un incident de service.  <br/> |
-| `parserinputsize` <br/> |Une pièce jointe était trop volumineuse pour que l’outil d’outil de l’outil de recherche gère cette pièce jointe, et l’utilisation de cette pièce jointe n’a pas eu lieu ou n’a pas été achevée.  <br/> |
-| `parsermalformed` <br/> |Une pièce jointe a été malformée et n’a pas pu être gérée par l’outil d’enquête. Ce résultat peut être dû à d’anciens formats de fichiers, à des fichiers créés par des logiciels incompatibles ou à des virus qui prétendent être autre chose que revendiqués.  <br/> |
-| `parseroutputsize` <br/> |La sortie de l’utilisation d’une pièce jointe était trop volumineuse et devait être tronquée.  <br/> |
-| `parserunknowntype` <br/> |Une pièce jointe avait un type de fichier Microsoft 365 impossible à détecter.  <br/> |
-| `parserunsupportedtype` <br/> |Une pièce jointe avait un type de fichier que Office 365 pouvait détecter, mais l’examen de ce type de fichier n’est pas pris en charge.  <br/> |
-| `propertytoobig` <br/> |La valeur d’une propriété de messagerie dans Exchange Store était trop grande pour être récupérée et le message n’a pas pu être traitée. Cela se produit généralement uniquement pour la propriété body d’un message électronique.  <br/> |
+| `attachmentcount` <br/> |Un message électronique contient trop de pièces jointes, et certaines de ces pièces jointes n’ont pas été traitées.  <br/> |
+| `attachmentdepth` <br/> |Le récupérateur de contenu et l’analyseur de documents ont trouvé trop de niveaux de pièces jointes imbriqués dans d’autres pièces jointes. Certaines de ces pièces jointes n’ont pas été traitées.  <br/> |
+| `attachmentrms` <br/> |Échec du décodage d’une pièce jointe, car elle était protégée par RMS.  <br/> |
+| `attachmentsize` <br/> |Un fichier attaché à un e-mail était trop volumineux et n’a pas pu être traité.  <br/> |
+| `indexingtruncated` <br/> |Lors de l’écriture du message électronique traité dans l’index, l’une des propriétés indexables était trop grande et tronquée. Les propriétés tronquées sont répertoriées dans le champ Propriétés d’erreur.  <br/> |
+| `invalidunicode` <br/> |Un message électronique contenait du texte qui n’a pas pu être traité en tant qu’Unicode valide. L’indexation de cet élément peut être incomplète.  <br/> |
+| `parserencrypted` <br/> |Le contenu de la pièce jointe ou du message électronique est chiffré et Microsoft 365 n’a pas pu le décoder.  <br/> |
+| `parsererror` <br/> |Une erreur inconnue s’est produite lors de l’analyse. Cela résulte généralement d’un bogue logiciel ou d’un incident de service.  <br/> |
+| `parserinputsize` <br/> |Une pièce jointe était trop grande pour être gérée par l’analyseur, et l’analyse de cette pièce jointe n’a pas eu lieu ou n’a pas été effectuée.  <br/> |
+| `parsermalformed` <br/> |Une pièce jointe a été mal formée et n’a pas pu être gérée par l’analyseur. Ce résultat peut être dû à d’anciens formats de fichiers, à des fichiers créés par des logiciels incompatibles ou à des virus faisant semblant d’être autre chose que revendiqué.  <br/> |
+| `parseroutputsize` <br/> |La sortie de l’analyse d’une pièce jointe était trop grande et devait être tronquée.  <br/> |
+| `parserunknowntype` <br/> |Une pièce jointe avait un type de fichier que Microsoft 365 n’a pas pu détecter.  <br/> |
+| `parserunsupportedtype` <br/> |Une pièce jointe avait un type de fichier que Office 365 pouvait détecter, mais l’analyse de ce type de fichier n’est pas prise en charge.  <br/> |
+| `propertytoobig` <br/> |La valeur d’une propriété de messagerie dans Exchange Store était trop grande pour être récupérée et le message n’a pas pu être traité. Cela se produit généralement uniquement pour la propriété de corps d’un e-mail.  <br/> |
 | `retrieverrms` <br/> |Le récupérateur de contenu n’a pas pu décoder un message protégé par RMS.  <br/> |
-| `wordbreakertruncated` <br/> |Trop de mots ont été identifiés dans le document lors de l’indexation. Le traitement de la propriété s’est arrêté lorsque la limite est atteinte et la propriété est tronquée.  <br/> |
+| `wordbreakertruncated` <br/> |Trop de mots ont été identifiés dans le document lors de l’indexation. Le traitement de la propriété s’est arrêté lorsque vous atteignez la limite, et la propriété est tronquée.  <br/> |
 
-Les champs d’erreur décrivent les champs affectés par l’erreur de traitement répertoriée dans le champ Balises d’erreur. Si vous recherchez une propriété telle que ou , les erreurs dans le corps du message n’auront pas  `subject`  `participants` d’impact sur les résultats de votre recherche. Cela peut être utile lors de la détermination des éléments partiellement indexés que vous devrez peut-être examiner plus en détail.
+Les champs d’erreur décrivent les champs affectés par l’erreur de traitement répertoriée dans le champ Étiquettes d’erreur. Si vous effectuez une recherche dans une propriété telle que  `subject` ou  `participants`, les erreurs dans le corps du message n’ont pas d’impact sur les résultats de votre recherche. Cela peut être utile pour déterminer exactement quels éléments partiellement indexés vous devrez peut-être examiner plus en détail.
   
-## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>Utilisation d’un script PowerShell pour déterminer l’exposition de votre organisation aux éléments de courrier partiellement indexés
+## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>Utilisation d’un script PowerShell pour déterminer l’exposition de votre organisation aux éléments de messagerie partiellement indexés
 
-Les étapes suivantes vous montrent comment exécuter un script PowerShell qui recherche tous les éléments dans toutes les boîtes aux lettres Exchange, puis génère un rapport sur le rapport entre les éléments de courrier partiellement indexés de votre organisation (par nombre et par taille) et affiche le nombre d’éléments (et leur type de fichier) pour chaque erreur d’indexation qui se produit. Utilisez les descriptions de balise d’erreur de la section précédente pour identifier l’erreur d’indexation.
+Les étapes suivantes vous montrent comment exécuter un script PowerShell qui recherche tous les éléments dans toutes les boîtes aux lettres Exchange, puis génère un rapport sur le ratio d’éléments de courrier partiellement indexés de votre organisation (par nombre et par taille) et affiche le nombre d’éléments (et leur type de fichier) pour chaque erreur d’indexation qui se produit. Utilisez les descriptions des balises d’erreur dans la section précédente pour identifier l’erreur d’indexation.
   
-1. Enregistrez le texte suivant dans un fichier Windows PowerShell script à l’aide d’un suffixe de nom de .ps1 ; par exemple, `PartiallyIndexedItems.ps1` .
+1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier de .ps1 ; par exemple, `PartiallyIndexedItems.ps1`.
 
    ```powershell
      write-host "**************************************************"
@@ -166,20 +166,20 @@ Les étapes suivantes vous montrent comment exécuter un script PowerShell qui r
 
 2. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/exchange-online-powershell).
 
-3. Dans le Centre de sécurité & conformité PowerShell, allez dans le dossier où vous avez enregistré le script à l’étape 1, puis exécutez le script . par exemple :
+3. Dans Security & Compliance Center PowerShell, accédez au dossier dans lequel vous avez enregistré le script à l’étape 1, puis exécutez le script ; par exemple :
 
    ```powershell
    .\PartiallyIndexedItems.ps1
    ```
 
-Voici un exemple de sortie renvoyée par le script.
+Voici un exemple de sortie retournée par le script.
   
-![Exemple de sortie à partir d’un script qui génère un rapport sur l’exposition de votre organisation aux éléments de courrier partiellement indexés.](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
+![Exemple de sortie à partir d’un script qui génère un rapport sur l’exposition de votre organisation à des éléments de messagerie partiellement indexés.](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
 
 > [!NOTE]
 > Veuillez prendre en compte les éléments suivants:
 >  
-> - Le nombre total et la taille des éléments de courrier, ainsi que le rapport de votre organisation des éléments de courrier partiellement indexés (par nombre et par taille).
+> - Le nombre total et la taille des éléments de messagerie, ainsi que le rapport entre les éléments de messagerie partiellement indexés de votre organisation (par nombre et par taille).
 > 
 > - Balises d’erreur de liste et types de fichiers correspondants pour lesquels l’erreur s’est produite.
   

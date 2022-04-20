@@ -1,5 +1,5 @@
 ---
-title: Contenu stocké dans des boîtes Exchange Online aux lettres
+title: Contenu stocké dans des boîtes aux lettres Exchange Online
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,38 +15,38 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ''
-description: Le contenu produit par les applications basées sur le cloud Microsoft 365 est stocké ou associé à la boîte aux lettres Exchange Online’un utilisateur. Ce contenu peut être recherché à l’aide des outils eDiscovery de Microsoft.
-ms.openlocfilehash: f7db327d21928df925bfd6451226ab96782d715b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Le contenu produit par les applications cloud dans Microsoft 365 est stocké ou associé à la boîte aux lettres Exchange Online d’un utilisateur. Ce contenu peut être recherché à l’aide des outils Microsoft eDiscovery.
+ms.openlocfilehash: b37295783883d689acc34dbff88e5a94186eb4a6
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198564"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947844"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>Contenu stocké dans Exchange Online boîtes aux lettres pour eDiscovery
 
-Une boîte aux lettres dans Exchange Online est principalement utilisée pour stocker des éléments liés à la messagerie, tels que des messages, des éléments de calendrier, des tâches et des notes. Mais cela change à mesure que de plus en plus d’applications basées sur le cloud stockent également leurs données dans la boîte aux lettres d’un utilisateur. L’un des avantages du stockage des données dans une boîte aux lettres est que vous pouvez utiliser les outils de recherche dans la recherche de contenu, la découverte électronique principale et les Advanced eDiscovery pour rechercher, afficher et exporter les données à partir de ces applications basées sur le cloud. Les données de certaines de ces applications sont stockées dans des dossiers masqués situés dans une sous-arbre de message non interpersonnel (non IPM) de la boîte aux lettres. Les données d’autres applications basées  sur le cloud peuvent  ne pas être stockées dans la boîte aux lettres, mais elles sont associées à la boîte aux lettres et sont renvoyées dans les recherches (si ces données sont associées à la requête de recherche). Que les données informatiques soient stockées ou associées à une boîte aux lettres utilisateur, elles ne sont généralement pas visibles dans un client de messagerie lorsqu’un utilisateur ouvre sa boîte aux lettres.
+Une boîte aux lettres dans Exchange Online est principalement utilisée pour stocker des éléments liés à l’e-mail, tels que des messages, des éléments de calendrier, des tâches et des notes. Mais cela change, car davantage d’applications basées sur le cloud stockent également leurs données dans la boîte aux lettres d’un utilisateur. L’un des avantages du stockage des données dans une boîte aux lettres est que vous pouvez utiliser les outils de recherche dans la recherche de contenu, Microsoft Purview eDiscovery (Standard) et Microsoft Purview eDiscovery (Premium) pour rechercher, afficher et exporter les données à partir de ces applications cloud. Les données de certaines de ces applications sont stockées dans des dossiers masqués situés dans une sous-arborescence de messages non interpersonnels (non IPM) dans la boîte aux lettres. Les données d’autres applications cloud peuvent ne pas être stockées _dans_ la boîte aux lettres, mais elles sont _associées à_ la boîte aux lettres et sont retournées dans les recherches (si ces données correspondent à la requête de recherche). Que les données cloud soient stockées ou associées à une boîte aux lettres utilisateur, elles ne sont généralement pas visibles dans un client de messagerie lorsqu’un utilisateur ouvre sa boîte aux lettres.
 
-Le tableau suivant répertorie les applications qui stockent ou associent des données à une boîte aux lettres en nuage. Le tableau décrit également le type de contenu que chaque application produit.
+Le tableau suivant répertorie les applications qui stockent ou associent des données à une boîte aux lettres basée sur le cloud. Le tableau décrit également le type de contenu produit par chaque application.
 
 <br>
 
 ****
 
-|Microsoft 365 application|Description|
+|application Microsoft 365|Description|
 |---|---|
-|Formulaires<sup>*</sup>|Les formulaires et les réponses à un formulaire sont stockés dans des fichiers joints à des messages électroniques et stockés dans un dossier masqué dans la boîte aux lettres de l’utilisateur qui a créé le formulaire. Les formulaires créés avant avril 2020 sont stockés sous forme de fichier PDF. Les formulaires créés après 2020 sont stockés en tant que fichier JSON. Les réponses à un formulaire sont stockées dans un fichier CSV. Lorsque vous exportez du contenu à partir de formulaires dans un fichier PST, ces données se trouvent dans le dossier **ApplicationDataRoot** dans un sous-dossier nommé avec le GUID global unique suivant : **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
-|Groupes Microsoft 365|Les messages électroniques, les éléments de calendrier, les contacts (contacts), les notes et les tâches sont stockés dans la boîte aux lettres associée à un groupe Microsoft 365 de messagerie.|
-|Outlook/Exchange Online|Les messages électroniques, les éléments de calendrier, les contacts (personnes), les notes et les tâches sont stockés dans la boîte aux lettres d’un utilisateur.|
+|Formes<sup>*</sup>|Les formulaires et les réponses à un formulaire sont stockés dans des fichiers joints à des messages électroniques et stockés dans un dossier masqué dans la boîte aux lettres de l’utilisateur qui a créé le formulaire. Les formulaires créés avant avril 2020 sont stockés sous forme de fichier PDF. Les formulaires créés après 2020 sont stockés sous forme de fichier JSON. Les réponses à un formulaire sont stockées dans un fichier CSV. Lorsque vous exportez du contenu à partir de Forms dans un fichier PST, ces données se trouvent dans le dossier **ApplicationDataRoot** dans un sous-dossier nommé avec le GUID (globally unique identified) suivant : **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
+|Groupes Microsoft 365|Les messages électroniques, les éléments de calendrier, les contacts (contacts), les notes et les tâches sont stockés dans la boîte aux lettres associée à un groupe Microsoft 365.|
+|Outlook/Exchange Online|Les messages électroniques, les éléments de calendrier, les contacts (contacts), les notes et les tâches sont stockés dans la boîte aux lettres d’un utilisateur.|
 |Personnes|Les contacts dans l’application Contacts (qui sont les mêmes contacts que ceux accessibles dans Outlook) sont stockés dans la boîte aux lettres d’un utilisateur.|
-|Planification de classe|Les plans créés dans le Planning de classe sont stockés dans la boîte aux lettres du groupe Microsoft 365 correspondant qui est mis en service lors de la création d’un plan. L’alias de la boîte aux lettres de groupe est le nom du plan.|
-|Skype Entreprise|Les conversations Skype Entreprise sont stockées dans le dossier Historique des conversations de la boîte aux lettres d’un utilisateur. Si la boîte aux lettres d’un participant à une réunion Skype est placée en conservation pour litige ou affectée à une stratégie de rétention, les fichiers joints à une réunion sont conservés dans la boîte aux lettres des participants.|
-|Sway<sup>*</sup>|Les Sways sont stockés en tant que fichier HTML joint à un message électronique et stockés dans un dossier masqué dans la boîte aux lettres de l’utilisateur qui a créé le sway. Lorsque vous exportez du contenu à partir de Sway dans un fichier PST, ces données se trouvent dans le dossier **ApplicationDataRoot** dans un sous-dossier nommé avec le GUID suivant : **905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba**.|
-|Tâches|Les tâches de l’application Tâches (qui sont les mêmes que les tâches accessibles dans Outlook) sont stockées dans la boîte aux lettres d’un utilisateur.|
-|Teams|Les conversations qui font partie d’un canal Teams sont associées à la boîte aux lettres Teams’utilisateur. Les conversations qui font partie de la liste de conversation dans Teams (également appelées conversations *1 x N)* sont associées à la boîte aux lettres des utilisateurs qui participent à la conversation. En outre, les informations récapitulatifs pour les réunions et les appels dans un canal Teams sont associées aux boîtes aux lettres des utilisateurs qui ont appelé la réunion ou l’appel. Ainsi, lorsque vous recherchez Teams contenu, vous recherchez dans la boîte aux lettres Teams du contenu dans les conversations de canal et dans les boîtes aux lettres utilisateur de recherche de contenu dans les conversations 1 x N.|
-|À faire|Les tâches (appelées tâches, qui sont enregistrées dans les listes de tâches) dans l’application To-Do sont *stockées* dans la boîte aux lettres d’un utilisateur.|
-|Yammer|Les conversations et commentaires au sein d’une communauté Yammer sont associés à la boîte aux lettres de groupe Microsoft 365, ainsi qu’à la boîte aux lettres utilisateur de l’auteur et aux destinataires nommés (utilisateurs @ mentionnés ou cc’ed). Les messages privés envoyés en dehors d Yammer communauté sont stockés dans la boîte aux lettres des utilisateurs qui participent au message privé.|
+|Planification des classes|Les plans créés dans la planification de classes sont stockés dans la boîte aux lettres du groupe Microsoft 365 correspondant qui est provisionné lors de la création d’un plan. L’alias de la boîte aux lettres de groupe est le nom du plan.|
+|Skype Entreprise|Les conversations dans Skype Entreprise sont stockées dans le dossier Historique des conversations dans la boîte aux lettres d’un utilisateur. Si la boîte aux lettres d’un participant à une réunion Skype est placée en attente de litige ou affectée à une stratégie de rétention, les fichiers joints à une réunion sont conservés dans la boîte aux lettres des participants.|
+|Sway<sup>*</sup>|Les Sways sont stockés sous la forme d’un fichier HTML joint à un e-mail et stockés dans un dossier masqué dans la boîte aux lettres de l’utilisateur qui a créé le sway. Lorsque vous exportez du contenu à partir de Sway dans un fichier PST, ces données se trouvent dans le dossier **ApplicationDataRoot** dans un sous-dossier nommé avec le GUID suivant : **905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba**.|
+|Tâches|Les tâches de l’application Tâches (qui sont les mêmes tâches que celles accessibles dans Outlook) sont stockées dans la boîte aux lettres d’un utilisateur.|
+|Équipes|Les conversations qui font partie d’un canal Teams sont associées à la boîte aux lettres Teams. Les conversations qui font partie de la liste des conversations dans Teams (également appelées *conversations 1 x N*) sont associées à la boîte aux lettres des utilisateurs qui participent à la conversation. En outre, les informations récapitulatives pour les réunions et les appels dans un canal Teams sont associées aux boîtes aux lettres des utilisateurs qui ont composé la réunion ou l’appel. Par conséquent, lorsque vous recherchez du contenu Teams, vous recherchez du contenu dans la boîte aux lettres Teams dans les conversations de canal et recherchez du contenu dans les boîtes aux lettres utilisateur dans les conversations 1 x N.|
+|À faire|Les tâches (appelées tâches, qui sont *enregistrées dans des listes de tâches*) dans l’application To-Do sont stockées dans la boîte aux lettres d’un utilisateur.|
+|Yammer|Les conversations et commentaires au sein d’une communauté Yammer sont associés à la boîte aux lettres Microsoft 365 Group, ainsi qu’à la boîte aux lettres utilisateur de l’auteur et aux destinataires nommés (utilisateurs @ mentionnés ou Cc’ed). Les messages privés envoyés en dehors d’une communauté Yammer sont stockés dans la boîte aux lettres des utilisateurs qui participent au message privé.|
 |
 
 > [!NOTE]
-> <sup>*</sup>Pour l’instant, si une conservation est placée sur une boîte aux lettres (à l’aide de conservations dans core eDiscovery ou des cas Advanced eDiscovery), le contenu de cette application ne sera pas conservé par la conservation.
+> <sup>*</sup>À ce stade, si une conservation est placée sur une boîte aux lettres (à l’aide de conservations dans les cas eDiscovery (Standard) ou eDiscovery (Premium), le contenu de cette application ne sera pas conservé par la conservation.

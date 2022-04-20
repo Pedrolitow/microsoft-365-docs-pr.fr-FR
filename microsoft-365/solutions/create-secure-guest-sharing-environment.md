@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les options disponibles pour créer un environnement de partage d’invités sécurisé dans Microsoft 365, offrant un accès invité pour une collaboration améliorée.
-ms.openlocfilehash: 13190f2dba0f2cb1f4817a1a831b8d78359e1b81
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 5b6f27bd81a47a92926cebeef89de11ed78fcd3d
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63715138"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64948350"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Créer un environnement de partage d’invités sécurisé
 
@@ -208,13 +208,13 @@ Pour configurer une stratégie de délai d’expiration de session d’invité, 
 
 ## <a name="create-a-sensitive-information-type-for-a-highly-sensitive-project"></a>Créer un type d’informations sensibles pour un projet hautement sensible
 
-Les types d’informations sensibles sont des chaînes prédéfinies qui peuvent être utilisées dans les flux de travail de stratégie afin d’appliquer les exigences de conformité. Le Centre de conformité Microsoft 365 est fourni avec plus d’une centaine de types d’informations sensibles, y compris les numéros de permis de conduire, les numéros de cartes de crédit, les numéros de comptes bancaires, etc.
+Les types d’informations sensibles sont des chaînes prédéfinies qui peuvent être utilisées dans les flux de travail de stratégie afin d’appliquer les exigences de conformité. Le portail de conformité Microsoft Purview inclut plus d’une centaine de types d’informations sensibles, notamment les numéros de permis de conduire, les numéros de carte de crédit, les numéros de compte bancaire, etc.
 
 Vous pouvez créer des types d'informations sensibles personnalisés pour vous aider à gérer le contenu propre à votre organisation. Dans cet exemple, vous allez créer un type d’informations sensibles personnalisé pour un projet hautement sensible. Vous pouvez ensuite utiliser ce type d’informations sensibles pour appliquer automatiquement une étiquette de confidentialité.
 
 Pour créer un type d’informations sensibles personnalisé, procédez comme suit :
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), dans le volet de navigation gauche, développez **Classification**, puis cliquez sur **Types d’informations sensibles**.
+1. Dans le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com), dans le volet de navigation gauche, développez **Classification**, puis cliquez sur **types d’informations sensibles**.
 2. Cliquez sur **Créer**.
 3. Pour **Nom** et **Description**, tapez **Projet Saturne**, puis cliquez sur **Suivant**.
 4. Cliquez sur **Ajouter un élément**.
@@ -232,7 +232,7 @@ Si vous utilisez des étiquettes de confidentialité au sein de votre organisati
 
 Pour créer une stratégie d’étiquetage automatique :
 
-1. Ouvrez le [centre d’administration de la conformité Microsoft 365](https://compliance.microsoft.com).
+1. Ouvrez le [Centre d’administration Microsoft Purview](https://compliance.microsoft.com).
 2. Dans le volet de navigation gauche, cliquez sur **Protection des informations**.
 3. Sous l’onglet **Étiquetage automatique**, cliquez sur **Créer une stratégie d’étiquetage automatique**.
 4. Sur la page **Sélectionnez les informations que vous voulez appliquer à**, sélectionnez **Personnaliser** , puis cliquez sur **Suivant**.
@@ -258,11 +258,11 @@ Une fois la stratégie en place, lorsqu’un utilisateur tape « Projet Saturne
 
 ## <a name="create-a-dlp-policy-to-remove-guest-access-to-highly-sensitive-files"></a>Créer une stratégie DLP pour supprimer l’accès invité aux fichiers hautement sensibles
 
-Vous pouvez utiliser la [protection contre la perte de données (DLP)](../compliance/dlp-learn-about-dlp.md) pour empêcher le partage de contenu sensible indésirable. La protection contre la perte de données peut prendre des mesures basées sur l’étiquette de confidentialité d’un fichier et supprimer l’accès invité.
+Vous pouvez utiliser la [Protection contre la perte de données (DLP) Microsoft Purview](../compliance/dlp-learn-about-dlp.md) pour empêcher le partage de contenu sensible par un invité indésirable. La protection contre la perte de données peut prendre des mesures basées sur l’étiquette de confidentialité d’un fichier et supprimer l’accès invité.
 
 Création d’une stratégie DLP
 
-1. Dans le Centre de conformité Microsoft 365, accédez à la [page de protection contre la perte de données](https://compliance.microsoft.com/datalossprevention).
+1. Dans le Centre de conformité Microsoft Purview, accédez à la [Page de protection contre la perte de données](https://compliance.microsoft.com/datalossprevention).
 2. Cliquez sur la stratégie **Créer**.
 3. Sélectionnez **Personnaliser**, puis cliquez sur **Suivant**.
 4. Tapez un nom pour la stratégie, puis cliquez sur **Suivant**.

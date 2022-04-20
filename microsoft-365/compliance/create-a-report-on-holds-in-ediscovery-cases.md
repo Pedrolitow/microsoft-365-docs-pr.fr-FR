@@ -1,5 +1,5 @@
 ---
-title: Utiliser un script pour créer un rapport eDiscovery holds
+title: Utiliser un script pour créer un rapport de conservation eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,25 +19,25 @@ search.appverid:
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez comment générer un rapport qui contient des informations sur toutes les actuellement en cours associées à des cas eDiscovery.
-ms.openlocfilehash: 568d4fa351879d271004d0f0749881f3de4b4a49
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Découvrez comment générer un rapport qui contient des informations sur toutes les conservations associées aux cas eDiscovery.
+ms.openlocfilehash: b0460b725359e2953c0a27b517a362327ae504f5
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319474"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64946460"
 ---
-# <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>Utiliser un script pour créer un rapport sur les en-cas de découverte électronique
+# <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>Utiliser un script pour créer un rapport sur les conservations dans les cas eDiscovery
 
-Le script de cet article permet aux administrateurs eDiscovery et aux responsables eDiscovery de générer un rapport qui contient des informations sur toutes les ententes associées à des cas de base et de Advanced eDiscovery dans le Centre de conformité Microsoft 365. Le rapport contient des informations telles que le nom du cas où une mise en attente est associée, les emplacements de contenu qui sont placés en attente et si la mise en attente est basée sur une requête. S’il existe des cas qui n’ont aucune attente, le script crée un rapport supplémentaire avec une liste de cas sans attente.
+Le script de cet article permet aux administrateurs eDiscovery et aux responsables eDiscovery de générer un rapport qui contient des informations sur toutes les conservations associées aux cas Core et eDiscovery (Premium) dans le portail de conformité Microsoft Purview. Le rapport contient des informations telles que le nom du cas auquel une conservation est associée, les emplacements de contenu mis en attente et la question de savoir si la conservation est basée sur une requête. S’il existe des cas qui n’ont pas de conservations, le script crée un rapport supplémentaire avec une liste de cas sans conservation.
 
-Consultez [la section Plus](#more-information) d’informations pour obtenir une description détaillée des informations incluses dans le rapport.
+Consultez la section [Plus d’informations](#more-information) pour obtenir une description détaillée des informations incluses dans le rapport.
 
-## <a name="admin-requirements-and-script-information"></a>Exigences de l’administrateur et informations sur les scripts
+## <a name="admin-requirements-and-script-information"></a>Configuration requise pour l’administrateur et informations de script
 
-- Pour générer un rapport sur tous les cas eDiscovery de votre organisation, vous devez être administrateur eDiscovery dans votre organisation. Si vous êtes gestionnaire eDiscovery, le rapport inclut uniquement des informations sur les cas accessibles. Pour plus d’informations sur les autorisations eDiscovery, voir [Attribuer des autorisations eDiscovery](assign-ediscovery-permissions.md).
+- Pour générer un rapport sur tous les cas eDiscovery de votre organisation, vous devez être administrateur eDiscovery dans votre organisation. Si vous êtes gestionnaire eDiscovery, le rapport inclut uniquement des informations sur les cas auxquels vous pouvez accéder. Pour plus d’informations sur les autorisations eDiscovery, consultez [Affecter des autorisations eDiscovery](assign-ediscovery-permissions.md).
 
-- Le script de cet article présente une gestion minimale des erreurs. L’objectif principal est de créer rapidement un rapport sur les cas de découverte électronique associés à votre organisation.
+- Le script de cet article dispose d’une gestion minimale des erreurs. L’objectif principal est de créer rapidement un rapport sur les conservations associées aux cas eDiscovery dans votre organisation.
 
 - Les exemples de script fournis dans cette rubrique ne sont pris en charge dans aucun programme de support ou service standard de Microsoft. Les exemples de scripts sont fournis en l’état, sans garantie d’aucune sorte. Microsoft exclut toute garantie implicite, y compris, sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. Vous assumez tous les risques liés à l’utilisation ou à l’exécution des exemples de scripts et de la documentation. En aucun cas, Microsoft, ses auteurs ou toute personne impliquée dans la création, la production ou la livraison des scripts ne sont responsables de dommages quelconques (y compris, sans limitation, pertes de bénéfices, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
 
@@ -45,11 +45,11 @@ Consultez [la section Plus](#more-information) d’informations pour obtenir une
 
 L’étape suivante consiste à se connecter au Centre de sécurité et conformité PowerShell de votre organisation. Pour consulter des instructions détaillées, voir [Se connecter au Centre de sécurité et conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Étape 2 : Exécuter le script pour signaler les cas de découverte électronique associés
+## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Étape 2 : Exécuter le script pour signaler les conservations associées aux cas eDiscovery
 
-Une fois que vous êtes connecté au Centre de sécurité & conformité PowerShell, l’étape suivante consiste à créer et exécuter le script qui collecte des informations sur les cas eDiscovery dans votre organisation.
+Une fois que vous êtes connecté à Security & Compliance Center PowerShell, l’étape suivante consiste à créer et exécuter le script qui collecte des informations sur les cas eDiscovery dans votre organisation.
 
-1. Enregistrez le texte suivant dans un fichier Windows PowerShell script à l’aide d’un suffixe de nom de fichier .ps1 , par exemple, CaseHoldsReport.ps1.
+1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier de .ps1 ; par exemple, CaseHoldsReport.ps1.
 
    ```powershell
    #script begin
@@ -105,7 +105,7 @@ Une fois que vous êtes connecté au Centre de sécurité & conformité PowerShe
    }
    #get information on the cases and pass values to the case report function
    " "
-   write-host "Gathering a list of Core eDiscovery cases and holds..."
+   write-host "Gathering a list of eDiscovery (Standard) cases and holds..."
    " "
    $edc =Get-ComplianceCase -ErrorAction SilentlyContinue
    foreach($cc in $edc)
@@ -136,7 +136,7 @@ Une fois que vous êtes connecté au Centre de sécurité & conformité PowerShe
    }
    #get information on the cases and pass values to the case report function
    " "
-   write-host "Gathering a list of Advanced eDiscovery cases and holds..."
+   write-host "Gathering a list of eDiscovery (Premium) cases and holds..."
    " "
    $edc =Get-ComplianceCase -CaseType Advanced -ErrorAction SilentlyContinue
    foreach($cc in $edc)
@@ -172,51 +172,51 @@ Une fois que vous êtes connecté au Centre de sécurité & conformité PowerShe
    #script end
    ```
 
-2. Dans la session Windows PowerShell ouverte à l’étape 1, allez dans le dossier où vous avez enregistré le script.
+2. Dans la session Windows PowerShell qui s’est ouverte à l’étape 1, accédez au dossier dans lequel vous avez enregistré le script.
 
-3. Exécutez le script . par exemple :
+3. Exécutez le script ; par exemple :
 
    ```powershell
    .\CaseHoldsReport.ps1
    ```
 
-   Le script vous invite à enregistrer le rapport dans un dossier cible.
+   Le script demande un dossier cible dans lequel enregistrer le rapport.
 
-4. Tapez le nom du chemin d’accès complet du dossier où enregistrer le rapport, puis appuyez sur **Entrée**.
+4. Tapez le nom complet du chemin d’accès du dossier dans lequel enregistrer le rapport, puis **appuyez sur Entrée**.
 
    > [!TIP]
-   > Pour enregistrer le rapport dans le dossier où se trouve le script, tapez un point (« . ») lorsque vous y invitez un dossier cible. Pour enregistrer le rapport dans un sous-dossier du dossier où se trouve le script, tapez simplement le nom du sous-dossier.
+   > Pour enregistrer le rapport dans le même dossier que celui où se trouve le script, tapez un point (« . ») quand vous êtes invité à entrer un dossier cible. Pour enregistrer le rapport dans un sous-dossier dans le dossier où se trouve le script, tapez simplement le nom du sous-dossier.
 
-   Le script commence à collecter des informations sur tous les cas eDiscovery dans votre organisation. N’accédez pas au fichier de rapport pendant l’exécution du script. Une fois le script terminé, un message de confirmation s’affiche dans la session Windows PowerShell session. Une fois ce message affiché, vous pouvez accéder au rapport dans le dossier que vous avez spécifié à l’étape 4. Le nom de fichier du rapport est `CaseHoldsReport<DateTimeStamp>.csv`.
+   Le script commence à collecter des informations sur tous les cas eDiscovery dans votre organisation. N’accédez pas au fichier de rapport pendant l’exécution du script. Une fois le script terminé, un message de confirmation s’affiche dans la session Windows PowerShell. Une fois ce message affiché, vous pouvez accéder au rapport dans le dossier que vous avez spécifié à l’étape 4. Le nom de fichier du rapport est `CaseHoldsReport<DateTimeStamp>.csv`.
 
-   En outre, le script crée également un rapport avec une liste de cas qui ne sont pas en attente. Le nom de fichier de ce rapport est `CaseswithNoHolds<DateTimeStamp>.csv`.
+   En outre, le script crée également un rapport avec une liste de cas qui n’ont aucune conservation. Le nom de fichier de ce rapport est `CaseswithNoHolds<DateTimeStamp>.csv`.
 
-   Voici un exemple d’exécution du script CaseHoldsReport.ps1 script.
+   Voici un exemple d’exécution du script CaseHoldsReport.ps1.
 
-   ![Résultat après l’exécution du script CaseHoldsReport.ps1'exécution.](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+   ![Sortie après l’exécution du script CaseHoldsReport.ps1.](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
 ## <a name="more-information"></a>Plus d’informations
 
-Le rapport de cas qui est créé lorsque vous exécutez le script dans cet article contient les informations suivantes sur chaque attente. Comme indiqué précédemment, vous devez être administrateur eDiscovery pour retourner des informations pour toutes les ententées de votre organisation. Pour plus d’informations sur les cas de non-lieu, [voir les cas eDiscovery](./get-started-core-ediscovery.md).
+Le cas contient le rapport créé lorsque vous exécutez le script dans cet article contient les informations suivantes sur chaque conservation. Comme expliqué précédemment, vous devez être administrateur eDiscovery pour retourner des informations sur toutes les conservations de votre organisation. Pour plus d’informations sur les conservations de cas, consultez [les cas eDiscovery](./get-started-core-ediscovery.md).
 
-- Nom de la garde à vue et nom du cas eDiscovery à l’associé.
+- Nom de la conservation et nom du cas eDiscovery auquel la conservation est associée.
 
-- Si la attente est associée à un cas core ou Advanced eDiscovery cas.
+- Indique si la conservation est associée à un cas Core ou eDiscovery (Premium).
 
-- Si le cas eDiscovery est actif ou fermé.
+- Indique si le cas eDiscovery est actif ou fermé.
 
-- Si la attente est activée ou désactivée.
+- Indique si la conservation est activée ou désactivée.
 
-- Les membres du cas eDiscovery associés à la attente. Les membres de cas peuvent afficher ou gérer un cas, en fonction des autorisations eDiscovery qui leur ont été attribuées.
+- Membres du cas eDiscovery auquel la conservation est associée. Les membres de cas peuvent afficher ou gérer un cas, en fonction des autorisations eDiscovery qui leur ont été attribuées.
 
 - Heure et date de création du cas.
 
-- Si un cas est fermé, la personne qui l’a fermé, ainsi que l’heure et la date de fermeture.
+- Si une affaire est classée, la personne qui l’a fermée et l’heure et la date à laquelle elle a été fermée.
 
-- Le Exchange boîtes aux lettres et SharePoint sites en attente.
+- Les Exchange boîtes aux lettres et SharePoint emplacements de sites en attente.
 
-- Si la requête est en attente, la syntaxe de la requête.
+- Si la conservation est basée sur une requête, la syntaxe de requête.
 
-- Heure et date de création de la attente et de la personne qui l’a créée.
+- Heure et date de création de la conservation et de la personne qui l’a créée.
 
-- Heure et date de la dernière changement de la date et de la personne qui l’a modifiée.
+- Heure et date à laquelle la conservation a été modifiée pour la dernière fois et la personne qui l’a modifiée.

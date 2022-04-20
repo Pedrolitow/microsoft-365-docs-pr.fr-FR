@@ -1,5 +1,5 @@
 ---
-title: Threads de messagerie dans Advanced eDiscovery
+title: Thread d’e-mail dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,33 +14,33 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Lorsque vous effectuez une analyse Advanced eDiscovery, le thread de messagerie analyse une conversation par courrier électronique et sépare chaque message en différentes catégories.
+description: Lors d’une analyse eDiscovery (Premium), le thread de messagerie analyse une conversation e-mail et sépare chaque message en différentes catégories.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 788858d6acaccbe07f3190b5adaaa05fe95c33a5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 51cc9ce09f1f2c9c95c3ab5a7f2175516c9ed199
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159789"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64948702"
 ---
-# <a name="email-threading-in-advanced-ediscovery"></a>Threads de messagerie dans Advanced eDiscovery
+# <a name="email-threading-in-ediscovery-premium"></a>Thread d’e-mail dans eDiscovery (Premium)
 
-Envisagez une conversation par courrier électronique qui se passe depuis un certain temps. Dans la plupart des cas, le dernier message du thread de messagerie inclut le contenu de tous les messages précédents. Par conséquent, l’examen du dernier message donne un contexte complet de la conversation qui s’est produite dans le thread. Le thread de messagerie identifie ces messages afin que les réviseurs peuvent examiner une fraction des documents collectés sans perdre de contexte.
+Envisagez une conversation par e-mail qui se passe depuis un certain temps. Dans la plupart des cas, le dernier message du thread d’e-mail inclut le contenu de tous les messages précédents. Par conséquent, l’examen du dernier message donne un contexte complet de la conversation qui s’est produite dans le thread. Le threading d’e-mail identifie ces messages afin que les réviseurs puissent passer en revue une fraction des documents collectés sans perdre de contexte.
 
-## <a name="what-does-email-threading-do"></a>Que fait le thread de messagerie ?
+## <a name="what-does-email-threading-do"></a>Que fait le thread d’e-mail ?
 
-Le thread de messagerie électronique parse chaque thread de messagerie et le déconstruit en messages individuels. Chaque thread de messagerie est une chaîne de messages individuels. Advanced eDiscovery analyse tous les courriers indésirables dans le jeu à réviser pour déterminer si un message électronique a un contenu unique ou si la chaîne (messages parents) est entièrement contenue dans le message final dans le thread de messagerie. Les messages électroniques sont divisés en quatre valeurs inclusives :
+Le thread d’e-mail analyse chaque thread de messagerie et le décompose en messages individuels. Chaque thread de messagerie est une chaîne de messages individuels. Microsoft Purview eDiscovery (Premium) analyse tous les messages électroniques dans l’ensemble de révision pour déterminer si un message électronique a un contenu unique ou si la chaîne (messages parents) est entièrement contenue dans le message final dans le thread de messagerie. Les messages électroniques sont divisés en quatre valeurs inclusives :
 
-- **Inclusive**: un message *électronique inclus* est le dernier message électronique d’un thread de messagerie et contient tout le contenu précédent de ce thread de messagerie.
+- **Inclusif** : un e-mail *inclusif* est le dernier message électronique d’un thread de messagerie et contient tout le contenu précédent de ce thread de messagerie.
 
-- **Inclus moins :** un message électronique est désigné comme étant inclus *moins* s’il existe une ou plusieurs pièces jointes associées au message spécifique dans le thread de messagerie. Un réviseur peut utiliser la valeur moins inclusive pour déterminer quel message électronique spécifique au sein du thread a des pièces jointes associées. 
+- **Inclus moins** : un message électronique est désigné comme *inclus moins* s’il existe une ou plusieurs pièces jointes associées au message spécifique dans le thread d’e-mail. Un réviseur peut utiliser la valeur Inclusive moins pour déterminer quel message électronique spécifique dans le thread a des pièces jointes associées. 
 
-- **Copie inclusive :** un message électronique est considéré comme une copie *inclusive* s’il s’agit d’une copie exacte d’un message inclusive ou inclusive moins. 
+- **Copie inclusive** : un message électronique est considéré comme une *copie inclusive* s’il s’agit d’une copie exacte d’un message inclusif ou inclusif moins. 
 
-- **Aucun**: la valeur *None* indique que le contenu du message est entièrement contenu dans au moins un autre message électronique marqué comme inclusive ou inclusive moins.
+- **Aucun** : la valeur *None* indique que le contenu du message est entièrement contenu dans au moins un autre message électronique marqué comme inclus ou inclusif moins.
 
-## <a name="how-is-it-different-from-conversations-in-outlook"></a>En quoi cela est-il différent des conversations Outlook ?
+## <a name="how-is-it-different-from-conversations-in-outlook"></a>En quoi est-ce différent des conversations dans Outlook ?
 
-En un coup d’œil, cela ressemble aux regroupements de conversation Outlook. Toutefois, il existe certaines distinctions importantes. Envisagez une conversation par courrier électronique qui a été transformée en deux conversations ; Par exemple, quelqu’un a répondu à un e-mail qui n’est pas le dernier de la conversation, de sorte que les deux derniers e-mails de la conversation ont tous deux un contenu unique.
+En un coup d’œil, cela ressemble à des regroupements de conversations dans Outlook. Toutefois, il existe des distinctions importantes. Considérez une conversation par e-mail qui a été dupliquée en deux conversations ; par exemple, une personne a répondu à un e-mail qui n’est pas le dernier de la conversation, de sorte que les deux derniers e-mails de la conversation ont tous deux un contenu unique.
 
-Outlook grouperait toujours les e-mails dans une seule conversation . lire uniquement le dernier e-mail signifierait qu’il manque le contexte de l’avant-dernier e-mail, qui contient également un contenu unique. Étant donné que le thread de courrier électronique pare chaque message électronique en composants individuels et les compare, le thread de messagerie marque les deux derniers messages comme étant inclus, ce qui garantit que vous ne manquez aucun contexte tant que vous lisez tous les messages marqués comme étant inclus.
+Outlook regrouperait toujours les e-mails dans une conversation unique ; la lecture du dernier e-mail signifierait qu’il manque le contexte de l’avant-dernier e-mail, qui contient également du contenu unique. Étant donné que le thread d’e-mail analyse chaque e-mail dans des composants individuels et les compare, le thread d’e-mail marque les deux derniers e-mails comme inclusifs, ce qui garantit que vous ne manquerez aucun contexte tant que vous lirez tous les e-mails marqués comme inclusifs.

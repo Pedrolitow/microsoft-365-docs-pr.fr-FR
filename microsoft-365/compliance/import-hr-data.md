@@ -15,21 +15,21 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données d’employés à partir du système de ressources humaines de leur organisation pour Microsoft 365. Cela vous permet d’utiliser les données RH dans les stratégies de gestion des risques internes pour vous aider à détecter les activités d’utilisateurs spécifiques susceptibles de poser une menace interne à votre organisation.
-ms.openlocfilehash: af7af189e97f4e56f8a8a96d2ff2ebfb5788a0c3
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: e1539661c987de8642639df777602fbcf05bdcc4
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64762032"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944808"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurer un connecteur pour importer des données RH
 
-Vous pouvez configurer un connecteur de données dans le Centre de conformité Microsoft 365 pour importer des données de ressources humaines liées à des événements tels que la démission d’un utilisateur ou une modification du niveau de travail d’un utilisateur. Les données RH peuvent ensuite être utilisées par la [solution de gestion des risques internes](insider-risk-management.md) pour générer des indicateurs de risque qui peuvent vous aider à identifier les activités malveillantes ou le vol de données possibles par les utilisateurs au sein de votre organisation.
+Vous pouvez configurer un connecteur de données dans le portail de conformité Microsoft Purview pour importer des données de ressources humaines (RH) liées à des événements tels que la démission d’un utilisateur ou une modification du niveau de travail d’un utilisateur. Les données RH peuvent ensuite être utilisées par la [solution de gestion des risques internes](insider-risk-management.md) pour générer des indicateurs de risque qui peuvent vous aider à identifier les activités malveillantes ou le vol de données possibles par les utilisateurs au sein de votre organisation.
 
-La configuration d’un connecteur pour les données RH que les stratégies de gestion des risques internes peuvent utiliser pour générer des indicateurs de risque consiste à créer un fichier CSV contenant les données RH, à créer une application dans Azure Active Directory utilisée pour l’authentification, à créer un connecteur de données RH dans le Centre de conformité Microsoft 365 , puis en exécutant un script (planifié) qui ingère les données RH dans les fichiers CSV dans le cloud Microsoft afin qu’elles soient disponibles pour la solution de gestion des risques internes.
+La configuration d’un connecteur pour les données RH que les stratégies de gestion des risques internes peuvent utiliser pour générer des indicateurs de risque consiste à créer un fichier CSV contenant les données RH, à créer une application dans Azure Active Directory utilisée pour l’authentification, à créer un connecteur de données RH dans le portail de conformité, puis à exécuter un script (planifié) qui ingère les données RH dans les fichiers CSV dans le cloud Microsoft afin qu’elles soient disponibles  à la solution de gestion des risques internes.
 
 > [!IMPORTANT]
-> Une nouvelle version du connecteur RH est désormais disponible pour la préversion publique. Pour créer un connecteur RH ou importer des données pour le [nouveau scénario de profil d’employé](#csv-file-for-employee-profile-data-preview) pour le scénario de stratégie de santé pour la gestion des risques **internes**, accédez à la page Connecteurs de données dans le Centre de conformité Microsoft 365, sélectionnez l’onglet **Connecteurs**, puis cliquez sur **Ajouter un connecteur > RH (préversion)** pour démarrer la configuration. Les connecteurs RH existants continueront de fonctionner sans interruption.
+> Une nouvelle version du connecteur RH est désormais disponible pour la préversion publique. Pour créer un connecteur RH ou importer des données pour le [nouveau scénario de profil d’employé](#csv-file-for-employee-profile-data-preview) pour le scénario de stratégie de santé pour la gestion des risques **internes** , accédez à la page Connecteurs de données dans le portail de conformité, sélectionnez l’onglet **Connecteurs** , puis cliquez sur **Ajouter un connecteur > RH (préversion)** pour démarrer la configuration. Les connecteurs RH existants continueront de fonctionner sans interruption.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -37,11 +37,11 @@ La configuration d’un connecteur pour les données RH que les stratégies de g
 
 - Déterminez comment récupérer ou exporter les données à partir du système RH de votre organisation (et régulièrement) et les ajouter aux fichiers CSV que vous créez à l’étape 1. Le script que vous exécutez à l’étape 4 charge les données RH dans les fichiers CSV dans le cloud Microsoft.
 
-- Le rôle Administrateur du connecteur de données doit être attribué à l’utilisateur qui crée le connecteur RH à l’étape 3. Ce rôle est nécessaire pour ajouter des connecteurs sur la page **Connecteurs de données** dans le Centre de conformité Microsoft 365. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le Centre de conformité Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Le rôle Administrateur du connecteur de données doit être attribué à l’utilisateur qui crée le connecteur RH à l’étape 3. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - L’exemple de script que vous exécutez à l’étape 4 charge vos données RH dans le cloud Microsoft afin qu’elles puissent être utilisées par la solution de gestion des risques internes. Cet exemple de script n’est pas pris en charge dans le cadre d’un programme ou d’un service de support standard Microsoft. L’exemple de script est fourni tel quel, sans garantie d’aucune sorte. Microsoft Corporation décline aussi toute garantie implicite, y compris et sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. La totalité des risques découlant de l’utilisation ou de la performance de l’exemple de script et de la documentation repose sur vous. En aucun cas Microsoft, ses auteurs ou quiconque impliqué dans la création, la production ou la livraison des scripts ne sera responsable de tous dommages quels qu’ils soient (y compris, sans limitation, les dommages pour perte de profits, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
 
-- Ce connecteur est disponible dans Cloud de la communauté du secteur public environnements dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de conformité et de protection des données Microsoft 365. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP. Pour obtenir des instructions pas à pas sur la configuration d’un connecteur RH dans un environnement Cloud de la communauté du secteur public, consultez [Configurer un connecteur pour importer des données RH dans le gouvernement des États-Unis](import-hr-data-US-government.md).
+- Ce connecteur est disponible dans Cloud de la communauté du secteur public environnements dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de Microsoft Purview et de protection des données. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP. Pour obtenir des instructions pas à pas sur la configuration d’un connecteur RH dans un environnement Cloud de la communauté du secteur public, consultez [Configurer un connecteur pour importer des données RH dans le gouvernement des États-Unis](import-hr-data-US-government.md).
 
 ## <a name="step-1-prepare-a-csv-file-with-your-hr-data"></a>Étape 1 : Préparer un fichier CSV avec vos données RH
 
@@ -167,7 +167,7 @@ Le tableau suivant décrit chaque colonne du fichier CSV pour les données d’�
 ### <a name="csv-file-for-employee-profile-data-preview"></a>Fichier CSV pour les données de profil des employés (préversion)
 
 > [!NOTE]
-> La possibilité de créer un connecteur RH pour les données de profil des employés est en préversion publique. Pour créer un connecteur RH qui prend en charge les données de profil des employés, accédez à la page **Connecteurs de données** dans le Centre de conformité Microsoft 365, sélectionnez l’onglet **Connecteurs**, puis cliquez sur **Ajouter un connecteurHR** >  **(préversion).** Suivez les étapes pour créer un connecteur à [l’étape 3 : Créer le connecteur RH](#step-3-create-the-hr-connector).
+> La possibilité de créer un connecteur RH pour les données de profil des employés est en préversion publique. Pour créer un connecteur RH qui prend en charge les données de profil des employés, accédez à la page **Connecteurs de données** dans le portail de conformité, sélectionnez l’onglet **Connecteurs**, puis cliquez sur **Ajouter un connecteurHR** >  **(préversion).** Suivez les étapes pour créer un connecteur à [l’étape 3 : Créer le connecteur RH](#step-3-create-the-hr-connector).
 
 Voici un exemple de fichier CSV pour les données des données de profil d’employé.
 
@@ -256,11 +256,11 @@ Pour obtenir des instructions détaillées sur la création d’une application 
 
 ## <a name="step-3-create-the-hr-connector"></a>Étape 3 : Créer le connecteur RH
 
-L’étape suivante consiste à créer un connecteur RH dans le Centre de conformité Microsoft 365. Après avoir exécuté le script à l’étape 4, le connecteur RH que vous créez ingère les données RH du fichier CSV à votre organisation Microsoft 365. Avant de créer un connecteur, veillez à disposer d’une liste des scénarios RH et des noms de colonneS CSV correspondants pour chacun d’eux. Vous devez mapper les données requises pour chaque scénario aux noms de colonnes réels dans votre fichier CSV lors de la configuration du connecteur. Vous pouvez également charger un exemple de fichier CSV lors de la configuration du connecteur et l’Assistant vous aidera à mapper le nom des colonnes aux types de données requis.
+L’étape suivante consiste à créer un connecteur RH dans le portail de conformité. Après avoir exécuté le script à l’étape 4, le connecteur RH que vous créez ingère les données RH du fichier CSV à votre organisation Microsoft 365. Avant de créer un connecteur, veillez à disposer d’une liste des scénarios RH et des noms de colonneS CSV correspondants pour chacun d’eux. Vous devez mapper les données requises pour chaque scénario aux noms de colonnes réels dans votre fichier CSV lors de la configuration du connecteur. Vous pouvez également charger un exemple de fichier CSV lors de la configuration du connecteur et l’Assistant vous aidera à mapper le nom des colonnes aux types de données requis.
 
 Une fois cette étape terminée, veillez à copier l’ID de travail généré lors de la création du connecteur. Vous allez utiliser l’ID de travail lorsque vous exécutez le script.
 
-1. Accédez à la Centre de conformité Microsoft 365, puis sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Connecteurs de données**</a>.
+1. Accédez au portail de conformité, puis sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Connecteurs de données**</a>.
 
 2. Dans la page **Connecteurs de données**, cliquez sur **HR (préversion).**
 
@@ -336,7 +336,7 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
 
    Le tableau suivant décrit les paramètres à utiliser avec ce script et leurs valeurs requises. Les informations que vous avez obtenues dans les étapes précédentes sont utilisées dans les valeurs de ces paramètres.
 
-   | Parameter | Description |
+   | Paramètre | Description |
    |:-----|:-----|:-----|
    |`tenantId`|Il s’agit de l’ID de votre organisation Microsoft 365 que vous avez obtenue à l’étape 2. Vous pouvez également obtenir l’ID de locataire de votre organisation dans le panneau **Vue d’ensemble** du centre d’administration Azure AD. Cela permet d’identifier votre organisation.|
    |`appId` |Il s’agit de l’ID d’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 2. Il est utilisé par Azure AD pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365. | 
@@ -358,9 +358,9 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
 
 ## <a name="step-5-monitor-the-hr-connector"></a>Étape 5 : Surveiller le connecteur RH
 
-Après avoir créé le connecteur RH et exécuté le script pour charger vos données RH, vous pouvez afficher le connecteur et charger l’état dans le Centre de conformité Microsoft 365. Si vous planifiez l’exécution automatique du script régulièrement, vous pouvez également afficher l’état actuel après la dernière exécution du script.
+Après avoir créé le connecteur RH et exécuté le script pour charger vos données RH, vous pouvez afficher le connecteur et charger l’état dans le portail de conformité. Si vous planifiez l’exécution automatique du script régulièrement, vous pouvez également afficher l’état actuel après la dernière exécution du script.
 
-1. Accédez à la Centre de conformité Microsoft 365, puis sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Connecteurs de données**</a>.
+1. Accédez au portail de conformité, puis sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Connecteurs de données**</a>.
 
 2. Cliquez sur l’onglet **Connecteurs** , puis sélectionnez le connecteur RH pour afficher la page de menu volant. Cette page contient les propriétés et les informations sur le connecteur.
 

@@ -15,19 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez comment sélectionner et télécharger du contenu à partir d’un ensemble de révisions dans Advanced eDiscovery présentations ou des avis externes.
+description: Découvrez comment sélectionner et télécharger du contenu à partir d’un ensemble de révisions dans eDiscovery (Premium) pour les présentations ou les révisions externes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8fca2073b798271dac379f515ae29a7f8be868fb
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 112b9d976d1e2bd2e9a956718184654f046357d1
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806575"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949980"
 ---
-# <a name="download-selected-documents-from-a-review-set"></a>Télécharger les documents sélectionnés à partir d’un jeu à réviser
+# <a name="download-selected-documents-from-a-review-set"></a>Télécharger les documents sélectionnés à partir d’un ensemble de révisions
 
-Le téléchargement offre un moyen simple de télécharger du contenu à partir d’un jeu à réviser au format natif. L’outil de téléchargement Advanced eDiscovery utilise les fonctionnalités de transfert de données du navigateur. Une invite de navigateur s’affiche lorsqu’un téléchargement est prêt. Les fichiers téléchargés à l’aide de cette méthode sont compressés dans un fichier conteneur et contiennent des fichiers au niveau de l’élément. Cela signifie que si vous choisissez de télécharger une pièce jointe, vous recevrez le message électronique avec la pièce jointe incluse. De même, si vous exportez une feuille de calcul Excel incorporée dans un document Word, le document Word et la feuille de calcul Excel incorporée sont inclus dans le téléchargement. Lorsque vous avez téléchargé des éléments, la propriété Last Modified Data est conservée et peut être vue comme une propriété de fichier.
+Le téléchargement offre un moyen simple de télécharger du contenu à partir d’un ensemble de révisions au format natif. L’outil de téléchargement dans eDiscovery (Premium) utilise les fonctionnalités de transfert de données du navigateur. Une invite de navigateur s’affiche lorsqu’un téléchargement est prêt. Les fichiers téléchargés à l’aide de cette méthode sont compressés dans un fichier conteneur et contiennent des fichiers au niveau de l’élément. Cela signifie que si vous sélectionnez de télécharger une pièce jointe, vous recevrez l’e-mail avec la pièce jointe incluse. De même, si vous exportez une feuille de calcul Excel incorporée dans un document Word, le document Word et la feuille de calcul Excel incorporées sont inclus dans le téléchargement. Lorsque vous avez téléchargé des éléments, la propriété Last Modified Data est conservée et peut être affichée en tant que propriété de fichier.
 
-Pour télécharger du contenu à partir d’un jeu à réviser dans un cas Advanced eDiscovery, commencez par sélectionner les fichiers que vous souhaitez télécharger, puis sélectionnez **Action** **itemsDownload** > .
+Pour télécharger du contenu à partir d’un ensemble de révisions dans un cas eDiscovery (Premium), commencez par sélectionner les fichiers que vous souhaitez télécharger, puis sélectionnez **Action** **itemsDownload** > .
 
-![Action de téléchargement dans Advanced eDiscovery de révision.](../media/eDiscoDownload.png)
+![Action de téléchargement dans l’ensemble de révision eDiscovery (Premium).](../media/eDiscoDownload.png)

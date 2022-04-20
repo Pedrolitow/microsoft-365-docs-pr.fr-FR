@@ -1,5 +1,5 @@
 ---
-title: Rechercher du contenu dans un cas eDiscovery principal
+title: Rechercher du contenu dans un cas eDiscovery de base
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,31 +16,31 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Recherchez du contenu qui peut être pertinent pour un cas core eDiscovery.
-ms.openlocfilehash: 57ea95458df568de3687e1b0d38a70991b09a850
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+description: Recherchez du contenu qui peut être pertinent pour un cas eDiscovery (Standard).
+ms.openlocfilehash: b6c53c1f87f0d2783b2d6d3cc765a8fd3ed2f6cf
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643363"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949352"
 ---
-# <a name="search-for-content-in-a-core-ediscovery-case"></a>Rechercher du contenu dans un cas core eDiscovery
+# <a name="search-for-content-in-a-ediscovery-standard-case"></a>Rechercher du contenu dans un cas eDiscovery (Standard)
 
-Une fois qu’un cas core eDiscovery est créé et que les personnes qui l’intéressent sont placées en attente, vous pouvez créer et exécuter une ou plusieurs recherches de contenu pertinents pour le cas. Les recherches associées à un cas core eDiscovery ne sont pas répertoriées dans la **page** de recherche de contenu du Centre de conformité Microsoft 365. Ces recherches sont répertoriées dans la page **Recherches** du cas core eDiscover à qui les recherches sont associées. Cela signifie également que les recherches associées à un cas sont accessibles uniquement par les membres du cas.
+Une fois qu’un cas Microsoft Purview eDiscovery (Standard) est créé et que des personnes intéressées par le cas sont mises en attente, vous pouvez créer et exécuter une ou plusieurs recherches de contenu pertinents pour le cas. Les recherches associées à un cas eDiscovery (Standard) ne sont pas répertoriées dans la page **Recherche de contenu** dans le portail de conformité Microsoft Purview. Ces recherches sont répertoriées dans la page **Recherches** du cas eDiscover principal à lequel les recherches sont associées. Cela signifie également que les recherches associées à un cas sont accessibles uniquement par les membres du cas.
 
-Pour créer une recherche de découverte électronique principale :
+Pour créer une recherche eDiscovery (Standard) :
   
-1. Go to <https://compliance.microsoft.com> and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions and is a member of the case.
+1. Accédez et <https://compliance.microsoft.com> connectez-vous à l’aide des informations d’identification du compte d’utilisateur qui a reçu les autorisations eDiscovery appropriées et qui est membre du cas.
 
-2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, cliquez sur Afficher **tout,** puis sur **eDiscovery > Core**.
+2. Dans le volet de navigation gauche du portail de conformité, cliquez sur **Afficher tout**, puis sur **eDiscovery > Core**.
 
-3. Dans la page **Core eDiscovery,** sélectionnez le cas dans le cas où vous souhaitez créer une recherche associée, puis cliquez sur **Ouvrir le cas**.
+3. Dans la page **eDiscovery (Standard),** sélectionnez le cas auquel vous souhaitez créer une recherche associée, puis cliquez sur **Ouvrir la casse**.
 
-4. Dans la page **d’accueil** du cas, cliquez sur **l’onglet Recherches,** puis sur **Nouvelle recherche.**
+4. Dans la page **d’accueil** du cas, cliquez sur l’onglet **Recherches** , puis sur **Nouvelle recherche**.
 
-   ![Cliquez sur Nouvelle recherche pour créer une recherche de découverte électronique principale.](../media/CoreeDiscoverySearch1.png)
+   ![Cliquez sur Nouvelle recherche pour créer une recherche eDiscovery (Standard).](../media/CoreeDiscoverySearch1.png)
 
-5. Dans **l’Assistant Nouvelle recherche,** tapez un nom pour la recherche et une description facultative qui permet d’identifier la recherche. Le nom de la conservation doit être unique dans toute votre organisation.
+5. Dans l’Assistant **Nouvelle recherche** , tapez un nom pour la recherche et une description facultative qui permet d’identifier la recherche. Le nom de la conservation doit être unique dans toute votre organisation.
 
 6. Dans la page **emplacements**, sélectionnez les emplacements de contenu à rechercher. Vous pouvez rechercher des boîtes aux lettres, les sites et des dossiers publics.
 
@@ -71,12 +71,12 @@ Pour créer une recherche de découverte électronique principale :
 
 8. Examinez les paramètres de recherche (et modifiez-les si nécessaire), puis envoyez la recherche pour la démarrer.
 
-Une fois la recherche terminée, vous pouvez prévisualiser les résultats de recherche. Si nécessaire, cliquez **sur Actualiser** sur la page **Recherches** pour afficher la recherche que vous avez créée.
+Une fois la recherche terminée, vous pouvez prévisualiser les résultats de recherche. Si nécessaire, cliquez sur **Actualiser** dans la page **Recherches** pour afficher la recherche que vous avez créée.
 
 ## <a name="more-information-about-searching-content-locations"></a>Plus d’informations sur la recherche d’emplacements de contenu
 
-- Lorsque vous cliquez **sur Choisir des utilisateurs,** des groupes ou des équipes pour spécifier les boîtes aux lettres à rechercher, le soche de boîte aux lettres qui s’affiche est vide. Il s’agit d’une conception pour améliorer les performances. Pour ajouter des destinataires à cette liste, cliquez sur Choisir des **utilisateurs,** des groupes ou des équipes, tapez un nom (un minimum de trois caractères) dans la zone de recherche, cochez la case en regard du nom, puis cliquez sur **Choisir.**
+- Lorsque vous cliquez sur **Choisir des utilisateurs, des groupes ou des équipes** pour spécifier des boîtes aux lettres à rechercher, le sélecteur de boîtes aux lettres affiché est vide. C’est par conception pour améliorer les performances. Pour ajouter des destinataires à cette liste, cliquez sur **Choisir des utilisateurs, des groupes ou des équipes**, **tapez** un nom (au moins trois caractères) dans la zone de recherche, activez la case à cocher en regard du nom, puis cliquez sur Choisir.
 
-- Vous pouvez ajouter des boîtes aux lettres inactives, des Microsoft Teams, des groupes Yammer, des groupes Office 365 et des groupes de distribution à la liste des boîtes aux lettres à rechercher. L’utilisation de groupes de distribution dynamique n’est pas prise en charge. Si vous ajoutez des groupes Microsoft Teams, Yammer ou Office 365, la boîte aux lettres de groupe ou d’équipe est recherché ; les boîtes aux lettres des membres du groupe ne sont pas recherchés.
+- Vous pouvez ajouter des boîtes aux lettres inactives, des Microsoft Teams, des groupes Yammer, des groupes Office 365 et des groupes de distribution à la liste des boîtes aux lettres à rechercher. L’utilisation de groupes de distribution dynamique n’est pas prise en charge. Si vous ajoutez Microsoft Teams, groupes Yammer ou groupes Office 365, la boîte aux lettres du groupe ou de l’équipe est recherchée ; les boîtes aux lettres des membres du groupe ne sont pas recherchées.
 
-- Pour ajouter des sites à la recherche, sélectionnez le bouton bascule, puis cliquez **sur Choisir des sites.** Tapez l’URL de chaque site que vous souhaitez rechercher. Vous pouvez également ajouter l’URL du site SharePoint pour une équipe Microsoft, un groupe Yammer ou un groupe Office 365 web.
+- Pour ajouter des sites à la recherche, activez le bouton bascule, puis cliquez sur **Choisir des sites**. Tapez l’URL de chaque site que vous souhaitez rechercher. Vous pouvez également ajouter l’URL du site SharePoint pour une équipe Microsoft, un groupe Yammer ou un groupe Office 365.

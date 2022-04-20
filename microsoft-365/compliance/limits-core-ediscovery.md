@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article décrit les limites du cas eDiscovery principal dans Microsoft 365.
-ms.openlocfilehash: 2d920fbe5973d07b7da656d6247038ab785bbe5c
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 67f15bb39ed75f40a8ef42747c0d4e2dfcb1297d
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822647"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949606"
 ---
-# <a name="limits-in-core-ediscovery"></a>Limites dans Core eDiscovery
+# <a name="limits-in-ediscovery-standard"></a>Limites dans eDiscovery (Standard)
 
-Le tableau suivant répertorie les limites pour les cas eDiscovery principaux et les conservations associées à un cas eDiscovery de base. Pour plus d’informations sur Core eDiscovery, consultez [Vue d’ensemble de Core eDiscovery](./get-started-core-ediscovery.md).
+Le tableau suivant répertorie les limites pour les cas eDiscovery principaux et les conservations associées à un cas eDiscovery de base. Pour plus d’informations sur Microsoft Purview eDiscovery (Standard), consultez [Vue d’ensemble d’eDiscovery (Standard).](./get-started-core-ediscovery.md)
     
   | Description de la limite | Limite |
   |:-----|:-----|
@@ -44,4 +44,4 @@ Le tableau suivant répertorie les limites pour les cas eDiscovery principaux et
    > - [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)
    > - [Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)
 
-Pour plus d’informations sur les limites liées aux recherches et aux exportations associées à un cas Core eDiscovery, consultez [Limits for Content search et Core eDiscovery](limits-for-content-search.md).
+Pour plus d’informations sur les limites liées aux recherches et aux exportations associées à un cas eDiscovery (Standard), consultez [Limits for Content search and eDiscovery (Standard).](limits-for-content-search.md)

@@ -1,5 +1,5 @@
 ---
-title: Ajouter des sources de données non privatives à un Advanced eDiscovery de données
+title: Ajouter des sources de données non liées à la garde à un cas eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,61 +14,61 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Vous pouvez ajouter des sources de données non privatives à un cas Advanced eDiscovery et placer une mise en attente sur la source de données. Les sources de données non privatives sont réindexées, de sorte que tout contenu marqué comme partiellement indexé est retrait pour le rendre entièrement et rapidement utilisable dans une recherche.
-ms.openlocfilehash: a4702ebdfbd41b2541c51380a1d44dd133d506c9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Vous pouvez ajouter des sources de données non liées à la garde à un cas eDiscovery (Premium) et placer une conservation sur la source de données. Les sources de données non liées à la garde sont réindexées. Par conséquent, tout contenu marqué comme partiellement indexé est retraité pour le rendre entièrement et rapidement consultable.
+ms.openlocfilehash: cc093b60de055fe8b762f6c141921cd274233af2
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193218"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64945910"
 ---
-# <a name="add-non-custodial-data-sources-to-an-advanced-ediscovery-case"></a>Ajouter des sources de données non privatives à un Advanced eDiscovery de données
+# <a name="add-non-custodial-data-sources-to-an-ediscovery-premium-case"></a>Ajouter des sources de données non liées à la garde à un cas eDiscovery (Premium)
 
-Dans Advanced eDiscovery cas, il ne répond pas toujours à vos besoins d’associer une source de données Microsoft 365 à un dépositaire dans le cas. Toutefois, vous devrez peut-être associer ces données à un cas afin de pouvoir les rechercher, les ajouter à un groupe de révision, les analyser et les réviser. La fonctionnalité dans Advanced eDiscovery est appelée sources de données *non* privatives et vous permet d’ajouter des données à un cas sans avoir à les associer à un dépositaire. Il applique également la même fonctionnalité Advanced eDiscovery aux données non privatives disponibles pour les données associées au dépositaire. L’une des choses les plus utiles que vous pouvez appliquer aux données non privatives est de les placer en attente et de les traiter à l’aide de [l’indexation avancée](indexing-custodian-data.md).
+Dans les cas microsoft Purview eDiscovery (Premium), il ne répond pas toujours à vos besoins d’associer une source de données Microsoft 365 à un consignateur dans le cas. Toutefois, vous devrez peut-être toujours associer ces données à un cas afin de pouvoir les rechercher, les ajouter à un ensemble de révisions et les analyser et les examiner. La fonctionnalité dans eDiscovery (Premium) est appelée *sources de données non gardiennes* et vous permet d’ajouter des données à un cas sans avoir à l’associer à un consignateur. Il applique également la même fonctionnalité eDiscovery (Premium) aux données non gardiennes qui sont disponibles pour les données associées au consignateur. L’une des choses les plus utiles que vous pouvez appliquer aux données non liées à la garde consiste à les mettre en attente et à les traiter à l’aide de [l’indexation avancée](indexing-custodian-data.md).
 
-## <a name="add-a-non-custodial-data-source"></a>Ajouter une source de données non privative
+## <a name="add-a-non-custodial-data-source"></a>Ajouter une source de données non custodiale
 
-Suivez ces étapes pour ajouter et gérer des sources de données non privatives dans Advanced eDiscovery cas.
+Suivez ces étapes pour ajouter et gérer des sources de données non liées à la garde dans un cas eDiscovery (Premium).
 
-1. Dans la **Advanced eDiscovery** d’accueil, cliquez sur la case à ajouter aux données.
+1. Dans la page d’accueil **eDiscovery (Premium),** cliquez sur le cas auquel vous souhaitez ajouter les données.
 
-2. Cliquez sur **l’onglet Sources** de données, puis sur **Ajouter une source** de données Ajouter des  >  **emplacements de données.**
+2. Cliquez sur l’onglet **Sources** de données, puis sur Ajouter **des emplacements de données sourceAdd** > .
 
-3. Dans la page **De nouveaux emplacements** de données non privatives, choisissez les sources de données que vous souhaitez ajouter au cas. Vous pouvez ajouter plusieurs boîtes aux lettres et sites en développez les sections **SharePoint** ou **Exchange** puis en cliquant sur **Modifier.**
+3. Dans la page de menu volant **Nouveaux emplacements de données non liés** à la garde, choisissez les sources de données que vous souhaitez ajouter au cas. Vous pouvez ajouter plusieurs boîtes aux lettres et sites en développant les **sections SharePoint** ou **Exchange**, puis en cliquant sur **Modifier**.
 
-   ![Ajoutez SharePoint sites et Exchange boîtes aux lettres en tant que sources de données non privatives.](../media/NonCustodialDataSources1.png)
+   ![Ajoutez SharePoint sites et Exchange boîtes aux lettres en tant que sources de données non liées à la garde.](../media/NonCustodialDataSources1.png)
 
-   - **SharePoint** - Cliquez sur **Modifier** pour ajouter des sites. Sélectionnez un site dans la liste ou vous pouvez rechercher un site en tapant l’URL du site dans la barre de recherche. Sélectionnez les sites que vous souhaitez ajouter en tant que sources de données non dépositaires, puis cliquez sur **Ajouter.**
+   - **SharePoint** - Cliquez sur **Modifier** pour ajouter des sites. Sélectionnez un site dans la liste ou vous pouvez rechercher un site en tapant l’URL du site dans la barre de recherche. Sélectionnez les sites que vous souhaitez ajouter en tant que sources de données non gardiennes, puis cliquez sur **Ajouter**.
 
-   - **Exchange** - Cliquez sur **Modifier** pour ajouter des boîtes aux lettres. Tapez un nom ou un alias (un minimum de trois caractères) dans la zone de recherche pour les boîtes aux lettres ou les groupes de distribution. Sélectionnez les boîtes aux lettres que vous souhaitez ajouter en tant que sources de données non-dépositaires, puis cliquez sur **Ajouter**.
+   - **Exchange** - Cliquez sur **Modifier** pour ajouter des boîtes aux lettres. Tapez un nom ou un alias (au moins trois caractères) dans la zone de recherche des boîtes aux lettres ou des groupes de distribution. Sélectionnez les boîtes aux lettres que vous souhaitez ajouter en tant que sources de données non gardiennes, puis cliquez sur **Ajouter**.
 
    > [!NOTE]
-   > Vous pouvez utiliser les sections **SharePoint** et **Exchange** pour ajouter des sites et des boîtes aux lettres associés à une équipe ou un groupe Yammer en tant que sources de données non privatives. Vous devez ajouter séparément la boîte aux lettres et le site associés à une équipe ou Yammer groupe.<br/><br/> En outre, l’ajout d’une URL de site racine (par exemple ou ) en tant que `https://contoso-my.sharepoint.com/personal/` source SharePoint de données `https://contoso-my.sharepoint.com/` n’est pas pris en charge. Vous devez ajouter des sites spécifiques.
+   > Vous pouvez utiliser les sections **SharePoint** et **Exchange** pour ajouter des sites et des boîtes aux lettres associés à une équipe ou à un groupe Yammer en tant que sources de données non liées à la garde. Vous devez ajouter séparément la boîte aux lettres et le site associés à une équipe ou à un groupe Yammer.<br/><br/> En outre, l’ajout d’une URL de site racine (telle que `https://contoso-my.sharepoint.com/personal/` ou `https://contoso-my.sharepoint.com/`) en tant que source de données SharePoint n’est pas pris en charge. Vous devez ajouter des sites spécifiques.
 
-4. Après avoir ajouté des sources de données non privatives, vous avez la possibilité de placer ou non ces emplacements en attente. Sélectionnez ou désélectionnez la case à cocher **Mettre** en attente en regard de la source de données pour la placer en attente.
+4. Une fois que vous avez ajouté des sources de données non liées à la garde, vous avez la possibilité de mettre ces emplacements en attente ou non. Cochez ou désélectionnez la case à cocher **En** regard de la source de données pour la mettre en attente.
 
-5. Cliquez **sur Ajouter** au bas de la page volant Nouveaux emplacements de données **non** privatives pour ajouter les sources de données au cas.
+5. Cliquez sur **Ajouter** en bas de la page volant **Nouveaux emplacements de données non liés** à la garde pour ajouter les sources de données au cas.
 
-   Chaque source de données non privative que vous avez ajoutée est répertoriée dans la page **Sources de** données. Les sources de données non privatives sont identifiées par la valeur **d’emplacement des** données dans la **colonne Type de** source.
+   Chaque source de données non liée à la garde que vous avez ajoutée est répertoriée dans la page **Sources de données** . Les sources de données non liées à la garde sont identifiées par la valeur **d’emplacement des données** dans la colonne **de type source** .
 
-   ![Sources de données non privatives sous l’onglet Sources de données.](../media/NonCustodialDataSources2.png)
+   ![Sources de données non liées à la garde sous l’onglet Sources de données.](../media/NonCustodialDataSources2.png)
 
-Une fois que vous avez ajouté des sources de données non privatives au cas,  un travail nommé *Réindexation* des données non privatives est créé et affiché sous l’onglet Travaux du cas. Une fois le travail créé, le processus d’indexation avancée est lancé et les sources de données sont réindexées.
+Une fois que vous avez ajouté des sources de données non liées à la garde au cas, un travail nommé *Réindexation des données non liées à la garde* est créé et affiché sous l’onglet **Travaux** du cas. Une fois le travail créé, le processus d’indexation avancé lancé et les sources de données sont réindexés.
 
-## <a name="manage-the-hold-for-non-custodial-data-sources"></a>Gérer la mise en attente pour les sources de données non privatives
+## <a name="manage-the-hold-for-non-custodial-data-sources"></a>Gérer la conservation des sources de données non liées à la garde
 
-Après avoir mis en attente une source de données non privative, une stratégie de mise en attente contenant les sources de données non privatives du cas est automatiquement créée. Lorsque vous placez d’autres sources de données non privatives en attente, elles sont ajoutées à cette stratégie de mise en attente.
+Une fois que vous avez placé une conservation sur une source de données non-custodiale, une stratégie de conservation qui contient les sources de données non-custodiales pour le cas est automatiquement créée. Lorsque vous mettez en attente d’autres sources de données non liées à la conservation, elles sont ajoutées à cette stratégie de conservation.
 
-1. Ouvrez le Advanced eDiscovery et sélectionnez **l’onglet** Conserver.
+1. Ouvrez le cas eDiscovery (Premium) et **sélectionnez** l’onglet Maintenir.
 
-2. Cliquez **sur NCDSHold- \<GUID\>**, où la valeur GUID est propre au cas.
+2. Cliquez sur **NCDSHold-\<GUID\>**, où la valeur GUID est unique au cas.
 
-   La page volante affiche des informations et des statistiques sur les sources de données qui ne sont pas en attente.
+   La page de menu volant affiche des informations et des statistiques sur les sources de données non liées à la garde en attente.
 
-   ![La page de présentation des sources de données non privatives affiche des statistiques.](../media/NonCustodialDataSourcesHoldFlyout.png)
+   ![La page de menu volant pour les sources de données non liées à la conservation affiche des statistiques.](../media/NonCustodialDataSourcesHoldFlyout.png)
 
-3. Cliquez **sur Modifier la** mise en attente pour afficher les sources de données non privatives placées en attente et effectuer les tâches de gestion suivantes :
+3. Cliquez sur **Modifier la conservation** pour afficher les sources de données non liées à la conservation et effectuer les tâches de gestion suivantes :
 
-   - Dans la page **Emplacements,** vous pouvez libérer une source de données qui n’est pas en attente en la supprimant de la mise en attente. La libération d’une source de données ne supprime pas la source de données non privative du cas. Elle supprime uniquement la mise en attente qui a été placée sur la source de données.
+   - Dans la page **Emplacements** , vous pouvez libérer une source de données non gardienne en la supprimant de la conservation. La libération d’une source de données ne supprime pas la source de données non gardienne du cas. Il supprime uniquement la conservation qui a été placée sur la source de données.
 
-   - Dans **la** page Requête, vous pouvez modifier la mise en attente pour créer une mise en attente basée sur une requête qui est appliquée à toutes les sources de données sans mise en attente dans le cas.
+   - Dans la page **Requête** , vous pouvez modifier la conservation pour créer une conservation basée sur une requête qui est appliquée à toutes les sources de données non-custodiales tha dans le cas.

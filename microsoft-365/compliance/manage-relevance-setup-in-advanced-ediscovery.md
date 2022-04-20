@@ -1,5 +1,5 @@
 ---
-title: Gestion de la configuration de Pertinence dans Advanced eDiscovery
+title: Gérer la configuration de Pertinence dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,22 +15,22 @@ search.appverid:
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 ROBOTS: NOINDEX, NOFOLLOW
-description: Lisez les recommandations pour configurer l’entraînement Pertinence dans Advanced eDiscovery pour qu’il note les fichiers selon leur pertinence et génère des résultats.
-ms.openlocfilehash: bed912c0631511e9d3d4839e5d6925de79554163
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Lisez les recommandations pour configurer la formation de Pertinence dans eDiscovery (Premium) pour noter les fichiers par pertinence et générer des résultats analytiques.
+ms.openlocfilehash: 66afbb3b8e7d8c2a4e266aa7fb63dc8434f9c8a6
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194416"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64946020"
 ---
-# <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>Gestion de la configuration de Pertinence dans Advanced eDiscovery (classique)
+# <a name="manage-relevance-setup-in-ediscovery-premium-classic"></a>Gérer la configuration de Pertinence dans eDiscovery (Premium) (classique)
 
 > [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Microsoft Purview eDiscovery (Premium) nécessite l’utilisation d’Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5 pour votre organisation. Si vous ne disposez pas de cette offre et que vous souhaitez essayer eDiscovery (Premium), vous pouvez [vous inscrire pour bénéficier d’un essai gratuit d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
- La technologie Pertinence d’Advanced eDiscovery emploie des logiciels utilisés par des experts pour noter les fichiers selon leur pertinence. Elle peut être utilisée dans les processus d’évaluation rapide des cas, de sélection et de révision des échantillons de fichier. 
+ La technologie de Pertinence eDiscovery (Premium) utilise des logiciels guidés par des experts pour la notation des fichiers en fonction de leur pertinence. Pertinence eDiscovery (Premium) peut être utilisée pour l’évaluation précoce des cas (ECA), l’élimination et l’examen des exemples de fichiers. 
   
- Advanced eDiscovery comprend des composants adaptés à l’entraînement Pertinence et à l’étiquetage des fichiers liés à un cas. Il collecte des informations sur les échantillons de fichiers pertinents et non pertinents entraînés pour noter chaque fichier selon leur pertinence, puis il génère des résultats qui peuvent servir pendant et après le processus de révision des fichiers. 
+ eDiscovery (Premium) inclut des composants pour la formation de Pertinence et le balisage des fichiers pertinents pour un cas. eDiscovery (Premium) apprend à partir des exemples formés de fichiers pertinents et non pertinents pour fournir des scores de pertinence pour chaque fichier, et génère des résultats analytiques qui peuvent être utilisés pendant et après le processus de révision de fichier. 
   
 ## <a name="guidelines-for-setting-up-relevance-training"></a>Conseils de configuration de l’entraînement Pertinence
 
@@ -44,17 +44,17 @@ ms.locfileid: "60194416"
   
   - Déterminez si chaque groupe de fichiers est pertinent par rapport à un sujet spécifique.
 
-  - Si un sujet est défini de façon trop générale, Advanced eDiscovery peut générer un nombre excessif de fichiers non pertinents. Si un sujet est défini de façon trop restrictive, le processus d’entraînement Pertinence peut durer plus longtemps. 
+  - Si un problème est défini trop généralement, eDiscovery (Premium) peut produire trop de fichiers qui ne sont pas pertinents. Si un problème est défini de façon trop étroite, le processus d’entraînement de Pertinence peut prendre plus de temps. 
 
-  - À chaque cycle d’entraînement Pertinence, Advanced eDiscovery se concentre sur un seul sujet actif et des exemples de résultats temporaires sont affichés.
+  - Au cours de chaque cycle de formation de Pertinence, eDiscovery (Premium) se concentre sur un problème actif unique et les exemples de résultats intermédiaires sont affichés en conséquence.
 
   - Dans un scénario à sujets multiples, le mode Échantillonnage permet de sélectionner des sujets à inclure dans le processus. Les sujets marqués « Inactif » ne sont pas traités tant que le mode Échantillonnage n’est pas modifié. Un sujet peut apparaître « Inactif » ou « Actif » pour un seul expert.
 
-  - Advanced eDiscovery peut servir à générer des fichiers de privilège des candidats. Configurez un autre sujet selon son privilège. Si possible, entraînez et sélectionnez les fichiers selon leur pertinence, puis entraînez les fichiers selon leur privilège parmi les fichiers sélectionnés uniquement (rechargez les fichiers sélectionnés dans un cas distinct). 
+  - eDiscovery (Premium) peut être utilisé pour générer des fichiers de privilèges candidats. Configurez un problème distinct pour les privilèges. Si possible, effectuez d’abord l’apprentissage et l’élimination en fonction de la pertinence, puis effectuez l’apprentissage pour obtenir des privilèges sur le jeu éliminé uniquement (rechargez l’ensemble éliminé en tant que cas distinct). 
 
   - Vous pouvez uniquement effectuer un traitement par lots si aucun échantillon n’est ouvert (quand vous cliquez sur Traitement par lots, une liste d’utilisateurs contenant des échantillons ouverts s’affiche). Un administrateur peut « fermer » les échantillons d’autres utilisateurs (seulement si ces utilisateurs ne sont pas en train d’étiqueter ces échantillons), en utilisant l’utilitaire « Modifier la pertinence » avec l’option « Tous les échantillons des utilisateurs ».
 
-- **Métadonnées** : Advanced eDiscovery se concentre sur le contenu. Il ne tient pas compte des métadonnées dans les critères de pertinence.
+- **Métadonnées**: eDiscovery (Premium) se concentre sur le contenu. Il ne prend pas en compte les métadonnées dans le cadre des critères de pertinence.
 
 - **Richesse** : si la richesse d’un sujet est inférieure à 3 % après évaluation, prévoyez d’alimenter l’entraînement Pertinence avec des fichiers pertinents et non pertinents connus.
 
@@ -62,7 +62,7 @@ ms.locfileid: "60194416"
 
 ## <a name="setting-up-case-issues"></a>Configuration des sujets des cas
 
-Les paramètres décrits dans cette section sont disponibles dans Advanced eDiscovery **Pertinence** \> **Configuration de Pertinence**.
+Les paramètres décrits dans cette section sont disponibles dans eDiscovery (Premium) **Pertinence** \> **Configuration de Pertinence**.
   
 - Les sujets doivent être affectés à un utilisateur qui entraînera les fichiers.
 

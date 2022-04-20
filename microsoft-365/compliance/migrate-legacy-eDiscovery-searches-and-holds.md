@@ -1,5 +1,5 @@
 ---
-title: Migrer les recherches et les Centre de conformité Microsoft 365
+title: Migrer les recherches et conservations eDiscovery héritées vers le portail de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,31 +15,31 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: fe3f65e2545b71f8cfbaea76dfd34fd2720a790f
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 5de25b0b1385e709a818b1ff797910ec4ee4ddfc
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423022"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949628"
 ---
-# <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Migrer les recherches et les Centre de conformité Microsoft 365
+# <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>Migrer les recherches et conservations eDiscovery héritées vers le portail de conformité
 
-Le Centre de conformité Microsoft 365 offre une expérience améliorée pour l’utilisation d’eDiscovery, notamment : une plus grande fiabilité, de meilleures performances et de nombreuses fonctionnalités adaptées aux flux de travail eDiscovery, y compris les cas pour organiser votre contenu en fonction de la matière, les ensembles de révision pour examiner le contenu et l’analyse afin d’aider à annuler les données pour révision telles que le regroupement quasi-dupliqué, le thread de messagerie électronique, l’analyse des thèmes et le codage prédictif.
+Le portail de conformité Microsoft Purview offre une expérience améliorée pour l’utilisation d’eDiscovery, notamment : une fiabilité plus élevée, de meilleures performances et de nombreuses fonctionnalités adaptées aux flux de travail eDiscovery, notamment des cas d’organisation de votre contenu par matière, des ensembles de révision pour passer en revue le contenu et l’analytique afin d’éliminer les données à examiner, telles que le regroupement en quasi-double, le thread de messagerie, l’analyse des thèmes et le codage prédictif.
 
-Pour aider les clients à tirer parti des fonctionnalités nouvelles et améliorées, cet article fournit des instructions de base sur la migration des recherches et des In-Place eDiscovery du Centre d’administration <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a> vers le centre d’administration Centre de conformité Microsoft 365.
+Pour aider les clients à tirer parti des fonctionnalités nouvelles et améliorées, cet article fournit des conseils de base sur la façon de migrer In-Place recherches eDiscovery et les conservations du <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a> vers le portail de conformité.
 
 > [!NOTE]
-> Étant donné qu’il existe de nombreux scénarios différents, cet article fournit des instructions générales pour la transition des recherches et des périodes de recherche vers un cas eDiscovery principal dans le Centre de conformité Microsoft 365. L’utilisation de cas eDiscovery n’est pas toujours requise, mais elles ajoutent une couche supplémentaire de sécurité en vous permettant d’attribuer des autorisations pour contrôler qui a accès aux cas eDiscovery dans votre organisation.
+> Étant donné qu’il existe de nombreux scénarios différents, cet article fournit des conseils généraux sur la transition des recherches et les conservations vers un cas eDiscovery de base dans le portail de conformité. L’utilisation de cas eDiscovery n’est pas toujours nécessaire, mais elle ajoute une couche de sécurité supplémentaire en vous permettant d’attribuer des autorisations pour contrôler qui a accès aux cas eDiscovery dans votre organisation.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez être membre du groupe de rôles Gestionnaire eDiscovery dans le Centre de conformité Microsoft 365 pour exécuter les commandes PowerShell décrites dans cet article. Vous devez également être membre du groupe de rôles Gestion de la découverte dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre Exchange’administration.</a>
+- Vous devez être membre du groupe de rôles eDiscovery Manager dans le portail de conformité pour exécuter les commandes PowerShell décrites dans cet article. Vous devez également être membre du groupe de rôles Gestion de la découverte dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a>.
 
-- Cet article fournit des instructions sur la création d’une attente eDiscovery. La stratégie de attente sera appliquée aux boîtes aux lettres par le biais d’un processus asynchrone. Lors de la création d’une mise en attente eDiscovery, vous devez créer une case CaseHoldPolicy et CaseHoldRule, sinon la mise en attente ne sera pas créée et les emplacements de contenu ne seront pas placés en attente.
+- Cet article fournit des conseils sur la création d’une conservation eDiscovery. La stratégie de conservation sera appliquée aux boîtes aux lettres via un processus asynchrone. Lors de la création d’une conservation eDiscovery, vous devez créer une CaseHoldPolicy et caseHoldRule, sinon la conservation ne sera pas créée et les emplacements de contenu ne seront pas mis en attente.
 
 ## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-center-powershell"></a>Étape 1 : Connecter pour Exchange Online PowerShell et le Centre de sécurité & conformité PowerShell
 
-La première étape consiste à se connecter à Exchange Online PowerShell et au Centre de sécurité & conformité PowerShell. Vous pouvez copier le script suivant, le coller dans une fenêtre PowerShell, puis l’exécuter. Vous serez invité à entrer les informations d’identification de l’organisation à qui vous voulez vous connecter. 
+La première étape consiste à se connecter à Exchange Online PowerShell et au Centre de sécurité & conformité PowerShell. Vous pouvez copier le script suivant, le coller dans une fenêtre PowerShell, puis l’exécuter. Vous serez invité à entrer les informations d’identification de l’organisation à laquelle vous souhaitez vous connecter. 
 
 ```powershell
 $UserCredential = Get-Credential
@@ -51,21 +51,21 @@ Import-PSSession $exoSession -AllowClobber -DisableNameChecking
 
 Vous devez exécuter les commandes dans les étapes suivantes de cette session PowerShell.
 
-## <a name="step-2-get-a-list-of-in-place-ediscovery-searches-by-using-get-mailboxsearch"></a>Étape 2 : Obtenir la liste des recherches In-Place de découverte électronique à l’aide de Get-MailboxSearch
+## <a name="step-2-get-a-list-of-in-place-ediscovery-searches-by-using-get-mailboxsearch"></a>Étape 2 : Obtenir la liste des recherches In-Place eDiscovery à l’aide de Get-MailboxSearch
 
-Une fois que vous vous êtes authentifié, vous pouvez obtenir la liste In-Place recherches de découverte électronique en exécutant la cmdlet **Get-MailboxSearch.** Copiez et collez la commande suivante dans PowerShell, puis exécutez-la. Une liste de recherches sera répertoriée avec leurs noms et l’état des In-Place de recherche.
+Une fois que vous vous êtes authentifié, vous pouvez obtenir une liste de In-Place recherches eDiscovery en exécutant l’applet de commande **Get-MailboxSearch** . Copiez et collez la commande suivante dans PowerShell, puis exécutez-la. Une liste de recherches est répertoriée avec leur nom et l’état de toute In-Place Conservations.
 
 ```powershell
 Get-MailboxSearch
 ```
 
-La sortie de la cmdlet sera similaire à ce qui suit :
+La sortie de l’applet de commande sera similaire à ce qui suit :
 
-![Exemple PowerShell : Get-MailboxSearch.](../media/MigrateLegacyeDiscovery1.png)
+![Exemple PowerShell Get-MailboxSearch.](../media/MigrateLegacyeDiscovery1.png)
 
-## <a name="step-3-get-information-about-the-in-place-ediscovery-searches-and-in-place-holds-you-want-to-migrate"></a>Étape 3 : Obtenir des informations sur les recherches In-Place eDiscovery et les In-Place que vous souhaitez migrer
+## <a name="step-3-get-information-about-the-in-place-ediscovery-searches-and-in-place-holds-you-want-to-migrate"></a>Étape 3 : Obtenir des informations sur les recherches In-Place eDiscovery et les In-Place conservations que vous souhaitez migrer
 
-Là encore, vous utiliserez la cmdlet **Get-MailboxSearch,** mais cette fois pour obtenir les propriétés de la recherche. Vous pouvez stocker ces propriétés dans une variable pour une utilisation ultérieure. L’exemple suivant stocke les résultats de la cmdlet **Get-MailboxSearch** dans une variable, puis affiche les propriétés de la recherche.
+Là encore, vous allez utiliser l’applet de commande **Get-MailboxSearch** , mais cette fois pour obtenir les propriétés de la recherche. Vous pouvez stocker ces propriétés dans une variable pour une utilisation ultérieure. L’exemple suivant stocke les résultats de l’applet de commande **Get-MailboxSearch** dans une variable, puis affiche les propriétés de la recherche.
 
 ```powershell
 $search = Get-MailboxSearch -Identity "Search 1"
@@ -75,27 +75,27 @@ $search = Get-MailboxSearch -Identity "Search 1"
 $search | FL
 ```
 
-La sortie de ces deux commandes sera similaire à celle-ci :
+La sortie de ces deux commandes sera similaire à ce qui suit :
 
-![Exemple de sortie PowerShell à partir de l'Get-MailboxSearch pour une recherche individuelle.](../media/MigrateLegacyeDiscovery2.png)
+![Exemple de sortie PowerShell de l’utilisation de Get-MailboxSearch pour une recherche individuelle.](../media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> La durée de la In-Place de suspension dans cet exemple est indéfinie (*ItemHoldPeriod : Unlimited*). Cela est courant dans les scénarios de découverte électronique et d’enquête juridique. Si la durée de la conservation est différente d’une valeur indéfinie, la raison est probablement que la conservation est utilisée pour conserver du contenu dans un scénario de rétention. Au lieu d’utiliser les cmdlets eDiscovery dans le Centre de sécurité & conformité PowerShell pour les scénarios de rétention, nous vous recommandons d’utiliser [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) et [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) pour conserver le contenu. Le résultat de l’utilisation de ces cmdlets sera similaire à l’utilisation de **New-CaseHoldPolicy** et **New-CaseHoldRule,** mais vous pourrez spécifier une période de rétention et une action de rétention, telle que la suppression de contenu après l’expiration de la période de rétention. En outre, l’utilisation des cmdlets de rétention ne vous oblige pas à associer les conservations de rétention à un cas eDiscovery.
+> La durée de la conservation In-Place dans cet exemple est indéfinie (*ItemHoldPeriod : Illimité*). Cela est courant pour les scénarios d’eDiscovery et d’investigation juridique. Si la durée de conservation a une valeur différente de celle indéfinie, cela est probablement dû au fait que la conservation est utilisée pour conserver le contenu dans un scénario de rétention. Au lieu d’utiliser les applets de commande eDiscovery dans Security & Compliance Center PowerShell pour les scénarios de rétention, nous vous recommandons d’utiliser [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) et [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) pour conserver le contenu. Le résultat de l’utilisation de ces applets de commande sera similaire à l’utilisation de **New-CaseHoldPolicy** et **de New-CaseHoldRule**, mais vous pourrez spécifier une période de rétention et une action de rétention, comme la suppression de contenu après l’expiration de la période de rétention. En outre, l’utilisation des applets de commande de rétention ne vous oblige pas à associer les conservations de rétention à un cas eDiscovery.
 
-## <a name="step-4-create-a-case-in-the-microsoft-365-compliance-center"></a>Étape 4 : Créer un cas dans le centre Microsoft 365 conformité
+## <a name="step-4-create-a-case-in-the-microsoft-purview-compliance-portal"></a>Étape 4 : Créer un cas dans le portail de conformité Microsoft Purview
 
-Pour créer une attente eDiscovery, vous devez créer un cas eDiscovery à associer à la recherche. L’exemple suivant crée un cas eDiscovery à l’aide du nom de votre choix. Nous stockerons les propriétés du nouveau cas dans une variable pour une utilisation ultérieure. Vous pouvez afficher ces propriétés en exécutant la `$case | FL` commande après avoir créé le cas.
+Pour créer une conservation eDiscovery, vous devez créer un cas eDiscovery à associer à la conservation. L’exemple suivant crée un cas eDiscovery à l’aide d’un nom de votre choix. Nous stockerons les propriétés du nouveau cas dans une variable à utiliser ultérieurement. Vous pouvez afficher ces propriétés en exécutant la `$case | FL` commande après avoir créé le cas.
 
 ```powershell
 $case = New-ComplianceCase -Name "[Case name of your choice]"
 ```
-![Exemple d’exécution de New-ComplianceCase commande.](../media/MigrateLegacyeDiscovery3.png)
+![Exemple d’exécution de la commande New-ComplianceCase.](../media/MigrateLegacyeDiscovery3.png)
 
-## <a name="step-5-create-the-ediscovery-hold"></a>Étape 5 : Créer le hold eDiscovery
+## <a name="step-5-create-the-ediscovery-hold"></a>Étape 5 : Créer la conservation eDiscovery
 
-Une fois le cas créé, vous pouvez créer la attente et l’associer au cas que vous avez créé à l’étape précédente. Il est important de ne pas oublier que vous devez créer à la fois une stratégie de cas de attente et une règle de cas de attente. Si la règle de mise en attente n’est pas créée après la création de la stratégie de mise en attente, la mise en attente eDiscovery n’est pas créée et tout contenu n’est pas mis en attente.
+Une fois le cas créé, vous pouvez créer la conservation et l’associer au cas que vous avez créé à l’étape précédente. Il est important de se rappeler que vous devez créer à la fois une stratégie de conservation des cas et une règle de conservation des cas. Si la règle de conservation de cas n’est pas créée après la création de la stratégie de conservation de cas, la conservation eDiscovery n’est pas créée et aucun contenu n’est mis en attente.
 
-Exécutez les commandes suivantes pour re-créer le hold eDiscovery que vous souhaitez migrer. Ces exemples utilisent les propriétés de la In-Place de l’étape 3 que vous souhaitez migrer. La première commande crée une stratégie de cas de attente et enregistre les propriétés dans une variable. La deuxième commande crée la règle de cas de attente correspondante.
+Exécutez les commandes suivantes pour recréer la conservation eDiscovery que vous souhaitez migrer. Ces exemples utilisent les propriétés de In-Place Hold de l’étape 3 que vous souhaitez migrer. La première commande crée une stratégie de conservation de cas et enregistre les propriétés dans une variable. La deuxième commande crée la règle de conservation de la casse correspondante.
 
 ```powershell
 $policy = New-CaseHoldPolicy -Name $search.Name -Case $case.Identity -ExchangeLocation $search.SourceMailboxes
@@ -105,25 +105,25 @@ $policy = New-CaseHoldPolicy -Name $search.Name -Case $case.Identity -ExchangeLo
 New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
 ```
 
-![Exemple d’utilisation des cmdlets NewCaseHoldPolicy et NewCaseHoldRule.](../media/MigrateLegacyeDiscovery4.png)
+![Exemple d’utilisation des applets de commande NewCaseHoldPolicy et NewCaseHoldRule.](../media/MigrateLegacyeDiscovery4.png)
 
-## <a name="step-6-verify-the-ediscovery-hold"></a>Étape 6 : Vérifier le hold eDiscovery
+## <a name="step-6-verify-the-ediscovery-hold"></a>Étape 6 : Vérifier la conservation eDiscovery
 
-Pour vous assurer qu’il n’y a aucun problème lors de la création de la mise en attente, il est bon de vérifier que l’état de la distribution de la mise en attente a réussi. La distribution signifie que la attente a été appliquée à tous les emplacements de contenu spécifiés dans le *paramètre ExchangeLocation* à l’étape précédente. Pour ce faire, vous pouvez exécuter la cmdlet **Get-CaseHoldPolicy.** Étant donné que les propriétés enregistrées dans la variable $policy que vous avez créée à l’étape précédente ne sont pas automatiquement mises à jour dans la variable, vous devez réexécuter la cmdlet pour vérifier que la distribution *a* réussi. La distribution des stratégies de cas peut prendre entre 5 et 24 heures.
+Pour vous assurer qu’il n’y a aucun problème lors de la création de la conservation, il est bon de vérifier que l’état de distribution de la conservation est réussi. La distribution signifie que la conservation a été appliquée à tous les emplacements de contenu spécifiés dans le paramètre *ExchangeLocation* à l’étape précédente. Pour ce faire, vous pouvez exécuter l’applet **de commande Get-CaseHoldPolicy** . Étant donné que les propriétés enregistrées dans la *variable $policy* que vous avez créée à l’étape précédente ne sont pas automatiquement mises à jour dans la variable, vous devez réexécuter l’applet de commande pour vérifier que la distribution a réussi. La distribution des stratégies de conservation des cas peut prendre entre 5 minutes et 24 heures.
 
-Exécutez la commande suivante pour vérifier que le hold eDiscovery a été distribué correctement.
+Exécutez la commande suivante pour vérifier que la conservation eDiscovery a été correctement distribuée.
 
 ```powershell
 Get-CaseHoldPolicy -Identity $policy.Identity | Select name, DistributionStatus
 ```
 
-La valeur Success de **la** *propriété DistributionStatus* indique que la mise en attente a été correctement placée sur les emplacements de contenu. Si la distribution n’est pas encore terminée, la valeur **En attente** s’affiche.
+La valeur **Success** pour la propriété *DistributionStatus* indique que la conservation a été correctement placée sur les emplacements de contenu. Si la distribution n’est pas encore terminée, la valeur **En attente** s’affiche.
 
 ![Exemple de Get-CaseHoldPolicy PowerShell.](../media/MigrateLegacyeDiscovery5.png)
 
 ## <a name="step-7-create-the-search"></a>Étape 7 : Créer la recherche
 
-La dernière étape consiste à re-créer la recherche que vous avez identifiée à l’étape 3 et à l’associer au cas. Après avoir créé la recherche, vous pouvez l’exécuter à l’aide de la cmdlet **Start-ComplianceSearch** ou l’exécuter ultérieurement.
+La dernière étape consiste à recréer la recherche que vous avez identifiée à l’étape 3 et à l’associer au cas. Après avoir créé la recherche, vous pouvez l’exécuter à l’aide de l’applet de commande **Start-ComplianceSearch** ou l’exécuter ultérieurement.
 
 ```powershell
 New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxes -ContentMatchQuery $search.SearchQuery -Case $case.name
@@ -131,31 +131,31 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 ![Exemple de New-ComplianceSearch PowerShell.](../media/MigrateLegacyeDiscovery6.png)
 
-## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>Étape 8 : Vérifier le cas, conserver et rechercher dans le Centre de conformité Microsoft 365
+## <a name="step-8-verify-the-case-hold-and-search-in-the-compliance-portal"></a>Étape 8 : Vérifier la casse, la conservation et la recherche dans le portail de conformité
 
-Pour vous assurer que tout est correctement installé, rendez-vous sur le Centre de conformité Microsoft 365 , puis cliquez sur [https://compliance.microsoft.com](https://compliance.microsoft.com) **eDiscovery > Core**.
+Pour vous assurer que tout est correctement configuré, accédez au portail de conformité à [https://compliance.microsoft.com](https://compliance.microsoft.com)l’adresse **eDiscovery > Core**.
 
-![Microsoft 365 eDiscovery du Centre de conformité.](../media/MigrateLegacyeDiscovery7.png)
+![Portail de conformité Microsoft Purview eDiscovery.](../media/MigrateLegacyeDiscovery7.png)
 
-Le cas que vous avez créé à l’étape 3 est répertorié sur la page **Core eDiscovery.** Ouvrez le cas, puis notez la attente que vous avez créée à l’étape 4 de l’onglet **Attente.** Vous pouvez sélectionner la boîte aux lettres pour voir les détails sur la page volante, y compris le nombre de boîtes aux lettres à lesquelles la boîte aux lettres est appliquée et l’état de distribution.
+Le cas que vous avez créé à l’étape 3 est répertorié sur la page **eDiscovery (Standard).** Ouvrez le cas, puis notez la conservation que vous avez créée à l’étape 4 dans la liste sous l’onglet **Conservation** . Vous pouvez sélectionner la conservation pour afficher les détails sur la page de menu volant, y compris le nombre de boîtes aux lettres aux lesquelles la conservation est appliquée et l’état de distribution.
 
-![eDiscovery est en Centre de conformité Microsoft 365.](../media/MigrateLegacyeDiscovery8.png)
+![eDiscovery se trouve dans le portail de conformité.](../media/MigrateLegacyeDiscovery8.png)
 
-La recherche que vous avez créée à l’étape 7 est répertoriée sous **l’onglet Recherches** du cas.
+La recherche que vous avez créée à l’étape 7 est répertoriée sous l’onglet **Recherches** du cas.
 
-![Recherche de cas eDiscovery dans le Centre de conformité Microsoft 365.](../media/MigrateLegacyeDiscovery9.png)
+![Recherche de cas eDiscovery dans le portail de conformité.](../media/MigrateLegacyeDiscovery9.png)
 
-Si vous migrez une recherche eDiscovery In-Place mais que vous ne l’associez pas à un cas eDiscovery, elle sera répertoriée sur la page de recherche de contenu dans le Centre de conformité Microsoft 365.
+Si vous migrez une recherche In-Place eDiscovery, mais que vous ne l’associez pas à un cas eDiscovery, elle est répertoriée dans la page Recherche de contenu dans le portail de conformité.
 
 ## <a name="more-information"></a>Plus d’informations
 
-- Pour plus d’informations In-Place'& eDiscovery dans le centre <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">d’administration Exchange,</a>voir :
+- Pour plus d’informations sur In-Place & de découverte électronique dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>, consultez :
   
   - [Découverte électronique locale](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
   - [Conservation inaltérable et conservation pour litige](/exchange/security-and-compliance/in-place-and-litigation-holds)
 
-- Pour plus d’informations sur les cmdlets PowerShell utilisées dans l’article, voir :
+- Pour plus d’informations sur les applets de commande PowerShell utilisées dans l’article, consultez :
 
   - [Get-MailboxSearch](/powershell/module/exchange/get-mailboxsearch)
   
@@ -171,4 +171,4 @@ Si vous migrez une recherche eDiscovery In-Place mais que vous ne l’associez p
 
   - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
-- Pour plus d’informations sur les Centre de conformité Microsoft 365, voir [Vue d’ensemble du Centre de conformité Microsoft 365](microsoft-365-compliance-center.md).
+- Pour plus d’informations sur le portail de conformité, consultez [Vue d’ensemble du portail de conformité Microsoft Purview](microsoft-365-compliance-center.md).

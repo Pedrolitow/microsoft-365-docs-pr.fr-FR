@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilisez eDiscovery et les outils de recherche pour gérer et répondre à un incident de débordement de données dans votre organisation.
-ms.openlocfilehash: 106a67bff07f76d3ac40798d8bb4e28a254b923d
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: e9e81ae81c344bfc8773174c8650a1808faddd5e
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847330"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64948064"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Série de solutions eDiscovery : scénario de débordement de données - Recherche et vidage
 
@@ -64,7 +64,7 @@ Voici comment gérer un incident de débordement de données :
 
 ## <a name="optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries"></a>(Facultatif) Étape 1 : Gérer les personnes autorisées à accéder au cas et définir les limites de conformité
 
-Selon la pratique de votre organisation, vous devez contrôler qui peut accéder au cas eDiscovery utilisé pour examiner un incident de débordement de données et configurer les limites de conformité. La méthode la plus simple consiste à ajouter des enquêteurs en tant que membres d’un groupe de rôles existant dans le Centre de conformité Microsoft 365, puis à ajouter le groupe de rôles en tant que membre du cas eDiscovery. Pour plus d’informations sur les groupes de rôles eDiscovery intégrés et sur la façon d’ajouter des membres à un cas eDiscovery, consultez [Affecter des autorisations eDiscovery](assign-ediscovery-permissions.md).
+Selon la pratique de votre organisation, vous devez contrôler qui peut accéder au cas eDiscovery utilisé pour examiner un incident de débordement de données et configurer les limites de conformité. Pour ce faire, le moyen le plus simple consiste à ajouter des enquêteurs en tant que membres d’un groupe de rôles existant dans le portail de conformité Microsoft Purview, puis à ajouter le groupe de rôles en tant que membre du cas eDiscovery. Pour plus d’informations sur les groupes de rôles eDiscovery intégrés et sur la façon d’ajouter des membres à un cas eDiscovery, consultez [Affecter des autorisations eDiscovery](assign-ediscovery-permissions.md).
   
 Vous pouvez également créer un groupe de rôles qui s’aligne sur les besoins de votre organisation. Par exemple, vous souhaiterez peut-être qu’un groupe d’enquêteurs en cas de déversement de données dans l’organisation accède à tous les cas de débordement de données et collabore sur celui-ci. Pour ce faire, vous pouvez créer un groupe de rôles « Data Spillage Investigator », attribuer les rôles appropriés (Exporter, Déchiffrer RMS, Examiner, Aperçu, Recherche de conformité et Gestion des cas), ajouter les enquêteurs de débordement de données au groupe de rôles, puis ajouter le groupe de rôles en tant que membre du cas eDiscovery de débordement de données. Pour obtenir des instructions détaillées sur la procédure à suivre[, consultez Configurer les limites de conformité pour les enquêtes eDiscovery dans Office 365](set-up-compliance-boundaries.md). 
   
@@ -72,13 +72,13 @@ Vous pouvez également créer un groupe de rôles qui s’aligne sur les besoins
 
 Un cas eDiscovery fournit un moyen efficace de gérer votre enquête sur les débordements de données. Vous pouvez ajouter des membres au groupe de rôles que vous avez créé à l’étape 1, ajouter le groupe de rôles en tant que membre d’un nouveau cas eDiscovery, effectuer des recherches itératives pour rechercher les données renversées, exporter un rapport à partager, suivre l’état du cas, puis renvoyer aux détails du cas si nécessaire. Envisagez d’établir une convention d’affectation de noms pour les cas de découverte électronique utilisés pour les incidents de débordement de données, et fournissez autant d’informations que possible dans le nom et la description du cas afin de pouvoir rechercher et faire référence à l’avenir si nécessaire.
   
-Pour créer un cas, vous pouvez utiliser eDiscovery dans le Centre de sécurité et de conformité. Voir « Créer un cas » dans [Démarrage avec Core eDiscovery](get-started-core-ediscovery.md#step-3-create-a-core-ediscovery-case).
+Pour créer un cas, vous pouvez utiliser eDiscovery dans le Centre de sécurité et de conformité. Voir « Créer un cas » dans [Démarrage avec eDiscovery (Standard).](get-started-core-ediscovery.md#step-3-create-a-ediscovery-standard-case)
   
 ## <a name="step-3-search-for-the-spilled-data"></a>Étape 3 : Rechercher les données renversées
 
 Maintenant que vous avez créé un cas et un accès managé, vous pouvez utiliser le cas pour effectuer une recherche itérative pour rechercher les données renversées et identifier les boîtes aux lettres qui contiennent les données renversées. Vous utiliserez la même requête de recherche que celle que vous avez utilisée pour rechercher les messages électroniques pour supprimer ces mêmes messages à [l’étape 7](#step-7-permanently-delete-the-spilled-data).
   
-Pour créer une recherche de contenu associée à un cas eDiscovery, consultez [Rechercher du contenu dans un cas eDiscovery core](search-for-content-in-core-ediscovery.md).
+Pour créer une recherche de contenu associée à un cas eDiscovery, consultez [Rechercher du contenu dans un cas eDiscovery (Standard).](search-for-content-in-core-ediscovery.md)
   
 > [!IMPORTANT]
 > Les mots clés que vous utilisez dans la requête de recherche peuvent contenir les données réellement propagées que vous recherchez. Par exemple, si vous recherchez des documents contenant un numéro de sécurité sociale et que vous l’utilisez comme mot clé de recherche, vous devez supprimer la requête par la suite pour éviter tout débordement supplémentaire. Voir [Suppression de la requête de recherche à l’étape](#deleting-the-search-query) 8.
@@ -91,7 +91,7 @@ Si vous avez plus de 1 000 boîtes aux lettres ou plus de 100 messages électron
 
 Lorsque vous trouvez un e-mail contenant des données renversées, vérifiez les destinataires du message pour déterminer s’il a été partagé en externe. Pour poursuivre le suivi d’un message, vous pouvez collecter les informations de l’expéditeur et les plages de dates afin de pouvoir utiliser les journaux de suivi des messages. Ce processus est décrit à [l’étape 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared).
 
-Après avoir vérifié les résultats de la recherche, vous souhaiterez peut-être partager vos résultats avec d’autres personnes pour une révision secondaire. Les personnes que vous avez affectées au cas à l’étape 1 peuvent examiner le contenu du cas dans eDiscovery et Advanced eDiscovery et approuver les conclusions de cas. Vous pouvez également générer un rapport sans exporter le contenu réel. Vous pouvez également utiliser ce même rapport comme preuve de suppression, ce qui est décrit à [l’étape 8](#step-8-verify-provide-a-proof-of-deletion-and-audit).
+Après avoir vérifié les résultats de la recherche, vous souhaiterez peut-être partager vos résultats avec d’autres personnes pour une révision secondaire. Les personnes que vous avez affectées au cas à l’étape 1 peuvent examiner le contenu du cas dans eDiscovery et Microsoft Purview eDiscovery (Premium) et approuver les conclusions de cas. Vous pouvez également générer un rapport sans exporter le contenu réel. Vous pouvez également utiliser ce même rapport comme preuve de suppression, ce qui est décrit à [l’étape 8](#step-8-verify-provide-a-proof-of-deletion-and-audit).
   
  **Pour générer un rapport statistique :**
   
@@ -183,7 +183,7 @@ Gardez à l’esprit les limites suivantes lors de la suppression des données r
 - Un maximum de 10 éléments par boîte aux lettres peuvent être supprimés à la fois. Sachant que la fonction de recherche et suppression de messages est censée être un outil de réponse aux incidents, cette limite permet de s’assurer que les messages sont rapidement supprimés des boîtes aux lettres. Cette fonctionnalité n’est pas conçue pour nettoyer les boîtes aux lettres des utilisateurs.
 
 > [!IMPORTANT]
-> Il n’est pas possible de supprimer les éléments de courrier d’un groupe de révision dans un cas Advanced eDiscovery à l’aide des procédures décrites dans cet article. Cela est dû au fait que les éléments d’un jeu de révision sont des copies d’éléments du service en direct qui sont copiés et stockés à un emplacement stockage Azure. Cela signifie qu’elles ne seront pas retournées par une recherche de contenu que vous créez à l’étape 3. Pour supprimer des éléments d’un groupe de révision, vous devez supprimer le cas Advanced eDiscovery qui contient l’entité de révision. Pour plus d’informations, consultez [Fermer ou supprimer un cas Advanced eDiscovery](close-or-delete-case.md).
+> Les éléments de courrier dans un ensemble de révisions dans un cas eDiscovery (Premium) ne peuvent pas être supprimés à l’aide des procédures décrites dans cet article. Cela est dû au fait que les éléments d’un jeu de révision sont des copies d’éléments du service en direct qui sont copiés et stockés à un emplacement stockage Azure. Cela signifie qu’elles ne seront pas retournées par une recherche de contenu que vous créez à l’étape 3. Pour supprimer des éléments d’un jeu de révision, vous devez supprimer le cas eDiscovery (Premium) qui contient le jeu de révisions. Pour plus d’informations, consultez [Fermer ou supprimer un cas eDiscovery (Premium).](close-or-delete-case.md)
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Étape 8 : Vérifier, fournir une preuve de suppression et auditer
 

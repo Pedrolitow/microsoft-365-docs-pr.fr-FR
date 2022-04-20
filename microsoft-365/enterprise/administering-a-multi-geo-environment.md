@@ -16,36 +16,36 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 ms.localizationpriority: medium
-description: Les administrateurs peuvent découvrir comment administrer SharePoint et OneDrive services dans un environnement multigéogé.
-ms.openlocfilehash: 126b5de915fba7168b3895bbb05ccef6dcad749b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Les administrateurs peuvent découvrir comment administrer des services SharePoint et OneDrive dans un environnement multigéographique.
+ms.openlocfilehash: 155eea030cfa700a009805fb66aeb74eaae617d3
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312052"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949076"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administration d’un environnement multigéographique
 
 Découvrez le fonctionnement des services Microsoft 365 dans un environnement multigéographique.
 
-## <a name="administrator-experience"></a>Expérience de l’administrateur
+## <a name="administrator-experience"></a>Expérience d’administrateur
 
-Le centre SharePoint’administration dispose d’un <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank"></a> onglet Emplacements géographiques dans la barre de navigation de gauche qui comporte une carte d’emplacements géographiques où vous pouvez afficher et gérer vos emplacements géographiques. Utilisez cette page pour ajouter ou supprimer des emplacements géographiques pour votre client.
+Le centre d’administration SharePoint comporte un <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank">onglet **Emplacements géographiques**</a> dans le volet de navigation de gauche qui comporte une carte des emplacements géographiques dans laquelle vous pouvez afficher et gérer vos emplacements géographiques. Utilisez cette page pour ajouter ou supprimer des emplacements géographiques pour votre locataire.
 
 ## <a name="audit-log-search"></a>Recherche de journal d’audit
 
 Un [journal d’audit](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) unifié pour vos emplacements satellites est disponible dans la page de recherche dans le journal d’audit de Microsoft 365. Vous pouvez consulter toutes les entrées de journal d’audit des emplacements géographiques. Par exemple, les activités des utilisateurs dans les régions NAM et EUR apparaissent dans un seul affichage, et vous pouvez appliquer les filtres existants pour voir les activités de certains utilisateurs.
 
 > [!NOTE]
-> Exchange d’audit de l’administrateur sont disponibles uniquement pour l’emplacement par défaut.
+> Exchange événements d’audit administrateur sont disponibles uniquement pour l’emplacement par défaut.
 
 ## <a name="bcs-secure-store-apps"></a>BCS, service Banque d’informations sécurisé, applications
 
 BCS, le service Banque d’informations sécurisé et les applications ont des instances distinctes dans chaque emplacement satellite. Ainsi, l’administrateur SharePoint Online doit gérer et configurer ces services séparément à partir de chaque emplacement satellite.
 
-## <a name="compliance-admin-center"></a>Centre d’administration de la conformité
+## <a name="compliance-admin-center"></a>Centre d’administration de conformité
 
-Il existe un centre central de conformité pour un client multigéogé : [Microsoft 365'administration de la conformité](https://compliance.microsoft.com/).
+Il existe un centre central de conformité pour un locataire multigéographique : [le Centre d’administration Microsoft Purview](https://compliance.microsoft.com/).
 
 ## <a name="ediscovery"></a>eDiscovery
 
@@ -55,21 +55,21 @@ Par défaut, un responsable ou administrateur d’eDiscovery d’un locataire mu
 
 Les boîtes aux lettres Exchange des utilisateurs sont déplacées automatiquement en cas de modification de leur emplacement par défaut des données. Lors de sa création, une boîte aux lettres est approvisionnée à l’emplacement par défaut des données de l’utilisateur, ou à l’emplacement central si aucune valeur n’a été définie pour l’emplacement par défaut des données.
 
-## <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a>Stratégie de protection contre la perte de données (DLP) de protection contre la perte de données (IP)
+## <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a>Information Protection stratégie de protection contre la perte de données (DLP)
 
 Vous pouvez définir des stratégies de protection contre la perte de données d’Information Protection pour OneDrive Entreprise, SharePoint et Exchange dans le centre Sécurité et conformité, en étendant les stratégies selon vos besoins au locataire entier ou à des utilisateurs éligibles. Par exemple, si vous souhaitez sélectionner une stratégie pour un utilisateur dans un emplacement satellite, vous pouvez l’appliquer à un compte OneDrive spécifique et entrer l’URL du OneDrive de cet utilisateur. Pour accéder à des instructions générales concernant la création de stratégies de protection contre la perte de données, voir [Vue d’ensemble des stratégies de protection contre la perte de données](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
 
 Les stratégies DLP sont synchronisées automatiquement en fonction de leurs conditions d’application à chaque emplacement géographique.
 
-L’interface utilisateur ne permettant pas d’appliquer des stratégies de protection contre la perte de données et de protection des informations à tous les utilisateurs d’un emplacement géographique, vous devez sélectionner les comptes concernés par la stratégie ou appliquer celle-ci globalement à tous les comptes.
+L’implémentation de stratégies de protection contre la perte de données Information Protection et Microsoft Purview pour tous les utilisateurs situés dans un emplacement géographique n’est pas une option disponible dans l’interface utilisateur. Vous devez plutôt sélectionner les comptes applicables pour la stratégie ou appliquer la stratégie globalement à tous les comptes.
 
 ## <a name="microsoft-power-apps"></a>Microsoft Power Apps
 
-Power Apps créé pour l’emplacement satellite utilise le point de fin situé à l’emplacement central du client. Microsoft Power Apps n’est pas un service Multi-Géo. 
+Power Apps créé pour l’emplacement satellite utilisera le point de terminaison situé à l’emplacement central du locataire. Microsoft Power Apps n’est pas un service multigéographique. 
 
 ## <a name="power-automate"></a>Power Automate
 
-Les flux créés pour l’emplacement satellite utilisent le point de terminaison situé dans l’emplacement géographique par défaut pour le client.  Power Automate n’est pas un service Multi-Géo. 
+Les flux créés pour l’emplacement satellite utilisent le point de terminaison situé dans l’emplacement géographique par défaut pour le client.  Power Automate n’est pas un service multigéographique. 
 
 ## <a name="sharepoint-storage-quota"></a>Quota de stockage SharePoint
 
@@ -77,15 +77,15 @@ Par défaut, tous les emplacements géographiques d’un environnement multigéo
 
 ## <a name="sharing"></a>Partage
 
-Les administrateurs peuvent définir et gérer des stratégies de partage pour chacun de leurs emplacements. Les OneDrive et SharePoint sites dans chaque emplacement géographique respectent uniquement les paramètres de partage spécifiques à la région correspondants. (par exemple, vous pouvez autoriser le [partage externe](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) pour votre emplacement central, mais pas pour votre emplacement satellite, et inversement). Notez que les paramètres de partage ne vous permettent pas de configurer des limites de partage entre emplacements géographiques.
+Les administrateurs peuvent définir et gérer des stratégies de partage pour chacun de leurs emplacements. Les sites OneDrive et SharePoint dans chaque emplacement géographique respectent uniquement les paramètres de partage géo-spécifiques correspondants. (par exemple, vous pouvez autoriser le [partage externe](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) pour votre emplacement central, mais pas pour votre emplacement satellite, et inversement). Notez que les paramètres de partage ne vous permettent pas de configurer des limites de partage entre emplacements géographiques.
 
 ## <a name="stream"></a>Flux
 
-Les vidéos téléchargées sur Stream dans une conversation 1:1 sont stockées dans la OneDrive de la personne qui a téléchargé. Les enregistrements de réunion sont stockés dans le OneDrive de chaque participant qui enregistre la réunion.
+Les vidéos chargées dans Stream dans une conversation 1:1 sont stockées dans le OneDrive de la personne chargée. Les enregistrements de réunion sont stockés dans le OneDrive de chaque participant qui enregistre la réunion.
 
 ## <a name="taxonomy"></a>Taxonomie
 
-Nous prise en charge une [taxonomie](/sharepoint/managed-metadata) unifiée pour les métadonnées gérées par l’entreprise sur plusieurs emplacements géographiques, avec le master hébergé dans l’emplacement central de votre entreprise. Nous vous recommandons de gérer votre taxonomie globale à partir de l’emplacement central et d’ajouter uniquement des termes spécifiques à la taxonomie de l’emplacement satellite. Les termes de la taxonomie globale sont synchronisés avec les emplacements satellites.
+Nous prenons en charge une [taxonomie](/sharepoint/managed-metadata) unifiée pour les métadonnées gérées par l’entreprise dans différents emplacements géographiques, le maître étant hébergé à l’emplacement central de votre entreprise. Nous vous recommandons de gérer votre taxonomie globale à partir de l’emplacement central et d’ajouter uniquement des termes spécifiques à la taxonomie de l’emplacement satellite. Les termes de la taxonomie globale sont synchronisés avec les emplacements satellites.
 
 Pour plus de détails et pour obtenir des instructions de développement, voir [Gérer les métadonnées dans un client multigéographique](/sharepoint/dev/solution-guidance/multigeo-managedmetadata).
 
@@ -99,4 +99,4 @@ Pour plus de détails et pour obtenir des instructions de développement, voir [
 
 ## <a name="yammer"></a>Yammer
 
-Yammer n’est pas une charge de travail Multi-Géo. Yammer threads stockés dans Yammer seront placés dans l’emplacement central du client. Yammer est en cours de déploiement d’une modification de stockage de fichiers qui stockera Yammer fichiers dans SharePoint. Yammer fichiers stockés dans SharePoint seront placés sur le site SharePoint associé au groupe Yammer de données. SharePoint sites de groupe sont basés sur une logique PDL comme indiqué dans SharePoint [Sites et groupes](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups).
+Yammer n’est pas une charge de travail multigéographique. Yammer threads stockés dans Yammer seront placés à l’emplacement central du locataire. Yammer déploie une modification de stockage de fichiers qui stockera Yammer fichiers dans SharePoint. Yammer fichiers stockés dans SharePoint seront placés le site SharePoint associé au groupe Yammer. SharePoint sites de groupe sont basés sur la logique PDL, comme indiqué dans [SharePoint Sites et groupes](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups).

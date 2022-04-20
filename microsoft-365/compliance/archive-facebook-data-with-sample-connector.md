@@ -14,88 +14,88 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-description: Découvrez comment configurer & utiliser un connecteur dans le Centre de conformité Microsoft 365 pour importer des données d’archivage & des pages Facebook Business vers Microsoft 365.
-ms.openlocfilehash: f7cbc2b5a0f1ed55379224fc18b1be905e8a4cf0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Découvrez comment configurer & utiliser un connecteur dans le portail de conformité Microsoft Purview pour importer & données d’archive à partir de pages Facebook Business vers Microsoft 365.
+ms.openlocfilehash: 6db2bd474cd2920b4b067563377bbe85084aeeaf
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319516"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947228"
 ---
-# <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Configurer un connecteur pour archiver les données Facebook (aperçu)
+# <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Configurer un connecteur pour archiver les données Facebook (préversion)
 
-Utilisez un connecteur dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de pages Facebook Business vers Microsoft 365. Après avoir configuré et configuré le connecteur, il se connecte à la page Facebook Business (de manière programmée), convertit le contenu des éléments Facebook au format de message électronique, puis importe ces éléments dans une boîte aux lettres dans Microsoft 365.
+Utilisez un connecteur dans le portail de conformité Microsoft Purview pour importer et archiver des données à partir de pages Facebook Business vers Microsoft 365. Après avoir configuré et configuré le connecteur, il se connecte à la page Facebook Business (sur une base planifiée), convertit le contenu des éléments Facebook au format d’e-mail, puis importe ces éléments dans une boîte aux lettres dans Microsoft 365.
 
-Une fois les données Facebook importées, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la recherche de contenu, l’archivage In-Place, l’audit, la conformité des communications et les stratégies de rétention Microsoft 365 aux données Facebook. Par exemple, lorsqu’une boîte aux lettres est placée en conservation pour litige ou affectée à une stratégie de rétention, les données Facebook sont conservées. Vous pouvez rechercher des données tierces à l’aide de la recherche de contenu ou associer la boîte aux lettres dans laquelle les données Facebook sont stockées à un dépositaire dans Advanced eDiscovery cas. L’utilisation d’un connecteur pour importer et archiver des données Facebook dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
+Une fois les données Facebook importées, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation du contentieux, la recherche de contenu, l’archivage In-Place, l’audit, la conformité des communications et les stratégies de rétention Microsoft 365 aux données Facebook. Par exemple, lorsqu’une boîte aux lettres est placée en attente de litige ou affectée à une stratégie de rétention, les données Facebook sont conservées. Vous pouvez rechercher des données tierces à l’aide de la recherche de contenu ou associer la boîte aux lettres dans laquelle les données Facebook sont stockées avec un consignateur dans un cas de découverte électronique Microsoft Purview (Premium). L’utilisation d’un connecteur pour importer et archiver des données Facebook dans Microsoft 365 peut aider votre organisation à rester conforme aux politiques gouvernementales et réglementaires.
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>Conditions préalables à la configuration d’un connecteur pour les pages Facebook Business
 
-Remplissez les conditions préalables suivantes avant de pouvoir configurer un connecteur dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir des pages Facebook Business de votre organisation. 
+Remplissez les conditions préalables suivantes avant de pouvoir configurer et configurer un connecteur dans le portail de conformité pour importer et archiver des données à partir des pages Facebook Business de votre organisation. 
 
-- Vous avez besoin d’un compte Facebook pour les pages professionnelles de votre organisation (vous devez vous y inscrire lors de la configuration du connecteur). Actuellement, vous pouvez uniquement archiver des données à partir de pages Facebook Business ; vous ne pouvez pas archiver des données à partir de profils Facebook individuels.
+- Vous avez besoin d’un compte Facebook pour les pages métier de votre organisation (vous devez vous connecter à ce compte lors de la configuration du connecteur). Actuellement, vous ne pouvez archiver que les données des pages Facebook Business ; vous ne pouvez pas archiver des données à partir de profils Facebook individuels.
 
-- Votre organisation doit avoir un abonnement Azure valide. Si vous n’avez pas d’abonnement Azure existant, vous pouvez vous inscrire à l’une des options ci-après :
+- Votre organisation doit disposer d’un abonnement Azure valide. Si vous n’avez pas d’abonnement Azure existant, vous pouvez vous inscrire à l’une des options suivantes :
 
     - [S’inscrire à un abonnement Azure gratuit d’un an](https://azure.microsoft.com/free)
 
-    - [S’inscrire à un abonnement Azure de paiement par abonnement](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
+    - [S’inscrire à un abonnement Azure avec paiement à l’utilisation](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > [L’abonnement Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) gratuit inclus dans votre abonnement Microsoft 365 ne prend pas en charge les connecteurs dans le Centre de conformité Microsoft 365.
+    > [L’abonnement gratuit Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) inclus dans votre abonnement Microsoft 365 ne prend pas en charge les connecteurs dans le portail de conformité.
 
-- Le connecteur pour les pages Facebook Business peut importer un total de 200 000 éléments en une seule journée. S’il y a plus de 200 000 éléments Facebook Business par jour, aucun de ces éléments n’est importé dans Microsoft 365.
+- Le connecteur pour les pages Facebook Business peut importer un total de 200 000 éléments en une seule journée. S’il y a plus de 200 000 articles Facebook Business par jour, aucun de ces articles ne sera importé dans Microsoft 365.
 
-- L’utilisateur qui définit le connecteur personnalisé dans le Centre de conformité Microsoft 365 (à l’étape 5) doit se voir attribuer le rôle d’administrateur du connecteur de données. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le Centre de conformité Microsoft 365. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et conformité » dans Autorisations dans le Centre de sécurité [& conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le Centre de conformité Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- L’utilisateur qui configure le connecteur personnalisé dans le portail de conformité (à l’étape 5) doit disposer du rôle Administrateur du connecteur de données. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Étape 1 : Créer une application dans Azure Active Directory
 
-La première étape consiste à inscrire une nouvelle application dans Azure Active Directory (AAD). Cette application correspond à la ressource d’application web que vous implémentez aux étapes 4 et 5 pour le connecteur Facebook. 
+La première étape consiste à inscrire une nouvelle application dans Azure Active Directory (AAD). Cette application correspond à la ressource d’application web que vous implémentez à l’étape 4 et à l’étape 5 pour le connecteur Facebook.
 
-Pour obtenir des instructions détaillées, voir [Créer une application dans Azure Active Directory](deploy-facebook-connector.md#step-1-create-an-app-in-azure-active-directory).
+Pour obtenir des instructions pas à pas, consultez [Créer une application dans Azure Active Directory](deploy-facebook-connector.md#step-1-create-an-app-in-azure-active-directory).
 
-À la fin de cette étape (en utilisant les instructions pas à pas précédentes), vous enregistrez les informations suivantes dans un fichier texte. Ces valeurs sont utilisées dans les étapes ultérieures du processus de déploiement.
+À la fin de cette étape (en suivant les instructions pas à pas précédentes), vous allez enregistrer les informations suivantes dans un fichier texte. Ces valeurs sont utilisées dans les étapes ultérieures du processus de déploiement.
 
-- AAD’application
+- ID d’application AAD
 
-- AAD’application secrète
+- AAD secret d’application
 
-- ID de client
+- ID de locataire
 
-## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Étape 2 : Déployer le service web connecteur de GitHub votre compte Azure
+## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Étape 2 : Déployer le service web du connecteur à partir de GitHub sur votre compte Azure
 
-L’étape suivante consiste à déployer le code source pour l’application connecteur de pages d’entreprise Facebook qui utilisera l’API Facebook pour se connecter à votre compte Facebook et extraire des données afin de pouvoir les importer dans Microsoft 365. Le connecteur Facebook que vous déployez pour votre organisation charge les éléments à partir de vos pages Facebook Business vers l’emplacement stockage Azure qui est créé au cours de cette étape. Après avoir créé un connecteur de pages d’entreprise Facebook dans le Centre de conformité Microsoft 365 (à l’étape 5), le service d’importation copie les données des pages métiers Facebook de l’emplacement stockage Azure vers une boîte aux lettres de votre organisation Microsoft 365. Comme expliqué précédemment dans la section [Conditions préalables](#prerequisites-for-setting-up-a-connector-for-facebook-business-pages), vous devez avoir un abonnement Azure valide pour créer un compte stockage Azure client.
+L’étape suivante consiste à déployer le code source de l’application de connecteur Pages d’entreprise Facebook qui utilisera l’API Facebook pour se connecter à votre compte Facebook et extraire des données afin de pouvoir l’importer dans Microsoft 365. Le connecteur Facebook que vous déployez pour votre organisation charge les éléments de vos pages Facebook Business vers l’emplacement stockage Azure créé à cette étape. Une fois que vous avez créé un connecteur de pages d’entreprise Facebook dans le portail de conformité (à l’étape 5), le service d’importation copie les données des pages d’entreprise Facebook à partir de l’emplacement stockage Azure vers une boîte aux lettres de votre organisation Microsoft 365. Comme expliqué précédemment dans la section [Conditions préalables](#prerequisites-for-setting-up-a-connector-for-facebook-business-pages), vous devez disposer d’un abonnement Azure valide pour créer un compte stockage Azure.
 
-Pour obtenir des instructions détaillées, voir Déployer le service web de connecteur à partir de [GitHub votre compte Azure](deploy-facebook-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).
+Pour obtenir des instructions pas à pas, consultez [Déployer le service web du connecteur à partir de GitHub sur votre compte Azure](deploy-facebook-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).
 
-Dans les instructions détaillées pour effectuer cette étape, vous allez fournir les informations suivantes :
+Dans les instructions pas à pas pour effectuer cette étape, vous allez fournir les informations suivantes :
 
-- APISecretKey : vous créez cette clé secrète à la fin de cette étape. Il est utilisé à l’étape 5.
+- APISecretKey : vous créez ce secret à la fin de cette étape. Il est utilisé à l’étape 5.
 
-- TenantId : ID de locataire de votre organisation Microsoft 365 que vous avez copiée après la création de l’application connecteur Facebook à Azure Active Directory étape 1.
+- TenantId : ID de locataire de votre organisation Microsoft 365 que vous avez copiée après avoir créé l’application de connecteur Facebook dans Azure Active Directory à l’étape 1.
 
-Après avoir effectué cette étape, assurez-vous de copier l’URL du service d’application Azure (par exemple, https://fbconnector.azurewebsites.net). Vous devez utiliser cette URL pour effectuer les étapes 3, 4 et 5.
+Une fois cette étape terminée, veillez à copier l’URL du service d’application Azure (par exemple, https://fbconnector.azurewebsites.net). Vous devez utiliser cette URL pour effectuer les étapes 3, 4 et 5).
 
 ## <a name="step-3-register-the-web-app-on-facebook"></a>Étape 3 : Inscrire l’application web sur Facebook
 
-L’étape suivante consiste à créer et configurer une nouvelle application sur Facebook. Le connecteur de pages d’entreprise Facebook que vous créez à l’étape 5 utilise l’application web Facebook pour interagir avec l’API Facebook afin d’obtenir des données à partir des pages Facebook Business de votre organisation.
+L’étape suivante consiste à créer et configurer une application sur Facebook. Le connecteur de pages d’affaires Facebook que vous créez à l’étape 5 utilise l’application web Facebook pour interagir avec l’API Facebook afin d’obtenir des données à partir des pages Facebook Business de votre organisation.
 
-Pour obtenir des instructions détaillées, voir [Enregistrer l’application Facebook](deploy-facebook-connector.md#step-3-register-the-facebook-app).
+Pour obtenir des instructions pas à pas, consultez [Inscrire l’application Facebook](deploy-facebook-connector.md#step-3-register-the-facebook-app).
 
-À la fin de cette étape (en suivant les instructions pas à pas), vous enregistrez les informations suivantes dans un fichier texte. Ces valeurs sont utilisées pour configurer l’application connecteur Facebook à l’étape 4.
+À la fin de cette étape (en suivant les instructions pas à pas), vous enregistrez les informations suivantes dans un fichier texte. Ces valeurs sont utilisées pour configurer l’application de connecteur Facebook à l’étape 4.
 
 - ID d’application Facebook
 
 - Secret d’application Facebook
 
-- Jeton de vérification des webhooks Facebook
+- Les webhooks Facebook vérifient le jeton
 
-## <a name="step-4-configure-the-facebook-connector-app"></a>Étape 4 : Configurer l’application connecteur Facebook
+## <a name="step-4-configure-the-facebook-connector-app"></a>Étape 4 : Configurer l’application de connecteur Facebook
 
-L’étape suivante consiste à ajouter des paramètres de configuration à l’application de connecteur Facebook que vous avez téléchargée lorsque vous avez créé la ressource d’application web Azure à l’étape 1. Pour ce faire, vous allez sur la page d’accueil de votre application de connecteur et la configurez.
+L’étape suivante consiste à ajouter des paramètres de configuration à l’application de connecteur Facebook que vous avez chargée lorsque vous avez créé la ressource d’application web Azure à l’étape 1. Pour ce faire, accédez à la page d’accueil de votre application de connecteur et configurez-la.
 
-Pour obtenir des instructions détaillées, voir [Configurer l’application connecteur Facebook](archive-facebook-data-with-sample-connector.md#step-4-configure-the-facebook-connector-app).
+Pour obtenir des instructions pas à pas, consultez [Configurer l’application de connecteur Facebook](archive-facebook-data-with-sample-connector.md#step-4-configure-the-facebook-connector-app).
 
-Au cours de cette étape (en suivant les instructions pas à pas), vous fournissez les informations suivantes (que vous avez copiées dans un fichier texte après avoir effectué les étapes précédentes) :
+À la fin de cette étape (en suivant les instructions pas à pas), vous fournissez les informations suivantes (que vous avez copiées dans un fichier texte après avoir effectué les étapes précédentes) :
 
 - ID d’application Facebook (obtenu à l’étape 3)
 
@@ -103,20 +103,20 @@ Au cours de cette étape (en suivant les instructions pas à pas), vous fourniss
 
 - Les webhooks Facebook vérifient le jeton (obtenu à l’étape 3)
 
-- Azure Active Directory’ID d’application (ident AAD’application obtenue à l’étape 1)
+- Azure Active Directory ID d’application (ID d’application AAD obtenu à l’étape 1)
 
-- Azure Active Directory’application secrète (la AAD de l’application obtenue à l’étape 1)
+- Azure Active Directory secret d’application (AAD secret d’application obtenu à l’étape 1)
 
-## <a name="step-5-set-up-a-facebook-business-pages-connector-in-the-microsoft-365-compliance-center"></a>Étape 5 : Configurer un connecteur de pages d’entreprise Facebook dans le Centre de conformité Microsoft 365
+## <a name="step-5-set-up-a-facebook-business-pages-connector-in-the-compliance-portal"></a>Étape 5 : Configurer un connecteur de pages Facebook Business dans le portail de conformité
 
-La dernière étape consiste à configurer le connecteur dans le Centre de conformité Microsoft 365 qui importera les données de vos pages Facebook Business vers une boîte aux lettres spécifiée dans Microsoft 365. Une fois cette étape terminée, le service d’importation Microsoft 365 commence à importer des données à partir de vos pages Facebook Business vers Microsoft 365.
+La dernière étape consiste à configurer le connecteur dans le portail de conformité qui importera des données de vos pages Facebook Business vers une boîte aux lettres spécifiée dans Microsoft 365. Une fois cette étape terminée, le service d’importation Microsoft 365 commence à importer des données à partir de vos pages Facebook Business vers Microsoft 365.
 
-Pour obtenir des instructions détaillées, voir [Étape 5 : Configurer un connecteur Facebook dans le Centre de conformité Microsoft 365](deploy-facebook-connector.md#step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center). 
+Pour obtenir des instructions pas à pas, consultez [l’étape 5 : Configurer un connecteur Facebook dans le portail de conformité](deploy-facebook-connector.md#step-5-set-up-a-facebook-connector-in-the-compliance-portal).
 
-Au cours de cette étape (en suivant les instructions pas à pas), vous fournissez les informations suivantes (que vous avez copiées dans un fichier texte après avoir effectué les étapes).
+À la fin de cette étape (en suivant les instructions pas à pas), vous fournissez les informations suivantes (que vous avez copiées dans un fichier texte après avoir effectué les étapes).
 
-- AAD’ID d’application (obtenu à l’étape 1)
+- AAD ID d’application (obtenu à l’étape 1)
 
-- URL du service d’application Azure (obtenue à l’étape 1 ; par exemple, https://fbconnector.azurewebsites.net)
+- URL d’Azure App Service (obtenue à l’étape 1; par exemple, https://fbconnector.azurewebsites.net)
 
 - APISecretKey (que vous avez créé à l’étape 2)

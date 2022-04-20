@@ -13,23 +13,23 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment appliquer une étiquette de confidentialité à un modèle dans SharePoint Syntex.
-ms.openlocfilehash: a7e6ea878fd7fceb6b7496dbcfb90a50f3e8ce1e
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 4ab530fbd4a187f03617b01b6b9661332ad1a7d9
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64635084"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64945602"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>Appliquer une étiquette de confidentialité à un modèle dans Microsoft SharePoint Syntex
 
 Vous pouvez facilement appliquer une [étiquette de confidentialité](../compliance/sensitivity-labels.md) à un modèle de compréhension de document dans Microsoft SharePoint Syntex. Cette fonctionnalité n’est pas encore disponible pour les modèles de traitement de formulaire.
 
-Les étiquettes de niveau de sensibilité vous permet d’appliquer le chiffrement aux documents identifiés par vos modèles. Par exemple, vous souhaitez que votre modèle identifie non seulement les documents financiers qui contiennent des numéros de compte bancaire ou de carte de crédit téléchargés vers votre bibliothèque de documents, mais également qu’il applique une étiquette de niveau de sensibilité configurée avec des paramètres de chiffrement afin de restreindre l’accès à ce contenu et la façon dont il peut être utilisé. Les modèles SharePoint Syntex respectent les règles [d'ordre des étiquettes](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) et n'écrasent pas non plus une étiquette existante qui a été appliquée manuellement par un utilisateur au fichier. 
+Les étiquettes de confidentialité vous permettent d’appliquer le chiffrement aux documents que vos modèles identifient. Par exemple, vous souhaitez que votre modèle identifie non seulement les documents financiers qui contiennent des numéros de compte bancaire ou des numéros de carte de crédit chargés dans votre bibliothèque de documents, mais également qu’il applique une étiquette de confidentialité configurée avec des paramètres de chiffrement pour restreindre qui peut accéder à ce contenu et comment il peut être utilisé. Les modèles SharePoint Syntex respectent les règles [d'ordre des étiquettes](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) et n'écrasent pas non plus une étiquette existante qui a été appliquée manuellement par un utilisateur au fichier. 
 
-Vous pouvez appliquer une étiquette de confidentialité préexistante à votre modèle via les paramètres du modèle sur la page d’accueil de celui-ci. L’étiquette doit déjà être publiée pour pouvoir être sélectionnée dans les paramètres du modèle. Les étiquettes s’appliquent aux Office pour Word (.docx), PowerPoint (.pptx) et Excel (.xlsx). 
+Vous pouvez appliquer une étiquette de confidentialité préexistante à votre modèle via les paramètres du modèle sur la page d’accueil de celui-ci. L’étiquette doit déjà être publiée pour pouvoir être sélectionnée dans les paramètres du modèle. Les étiquettes s’appliquent aux fichiers Office pour Word (.docx), PowerPoint (.pptx) et Excel (.xlsx). 
 
 > [!Important]
-> Pour que les étiquettes de niveau de sensibilité soient disponibles pour s’appliquer à vos modèles de compréhension de documents, elles doivent être créées et publiées dans le Centre [Microsoft 365 conformité](../compliance/microsoft-365-compliance-center.md).
+> Pour que les étiquettes de confidentialité soient disponibles pour s’appliquer à vos modèles de compréhension de document, elles doivent être [créées et publiées dans le portail de conformité Microsoft Purview](../admin/security-and-compliance/set-up-compliance.md).
 
 ## <a name="add-a-sensitivity-label-to-a-document-understanding-model"></a>Appliquer une étiquette de confidentialité à un modèle de compréhension de document
 
@@ -76,7 +76,7 @@ Par exemple, tous les documents financiers identifiés par votre modèle auront 
 ## Add a sensitivity label to a form processing model
 
 > [!Important]
-> For sensitivity labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft 365 Compliance Center](../business-premium/m365bp-set-up-compliance.md).
+> For sensitivity labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft Purview compliance portal](../admin/security-and-compliance/set-up-compliance.md).
 
 You can either apply a sensitivity label to a form processing model when you are creating a model, or apply it to an existing model.
 

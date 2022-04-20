@@ -1,5 +1,5 @@
 ---
-title: Exporter les données de cas dans Advanced eDiscovery
+title: Exporter des données de cas dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,24 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez comment exporter ou télécharger du contenu à partir d’un jeu à réviser pour des présentations ou des avis externes dans Advanced eDiscovery cas.
+description: Découvrez comment exporter ou télécharger du contenu à partir d’un ensemble de révisions pour des présentations ou des révisions externes dans un cas eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5d61ce10e7ff0c9a419310bef3425fefa654d0dc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f94062bee378a408e1a04240b09c5ae05f53c5f8
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201132"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64948636"
 ---
-# <a name="export-case-data-in-advanced-ediscovery"></a>Exporter les données de cas dans Advanced eDiscovery
+# <a name="export-case-data-in-ediscovery-premium"></a>Exporter des données de cas dans eDiscovery (Premium)
 
-Il existe trois façons d’exporter des données à partir d’un jeu à réviser :
+Il existe trois façons d’exporter des données à partir d’un ensemble de révisions :
 
-**Téléchargez :** Téléchargez (à l’aide d’un navigateur) un petit ensemble de fichiers natifs. Il s’agit du moyen le plus rapide d’exporter un petit ensemble de données. Cette méthode conserve les noms de fichiers natifs. Pour plus d’informations, voir [Télécharger des documents à partir d’un jeu à réviser.](download-documents-from-review-set.md)
+**Télécharger:** Téléchargez (à l’aide d’un navigateur) un petit ensemble de fichiers natifs. Il s’agit du moyen le plus rapide d’exporter un petit ensemble de données. Cette méthode conserve les noms de fichiers natifs. Pour plus d’informations, consultez [Télécharger des documents à partir d’un ensemble de révisions](download-documents-from-review-set.md).
 
-**Exporter :** Personnaliser les données exportées. Cela inclut l'exportation de métadonnées de fichiers, de fichiers natifs, de fichiers texte et de documents expurgés qui ont été enregistrés dans un fichier PDF. Une fois les données exportées préparées,  vous pouvez les télécharger à partir de l’onglet Exporter sur un ordinateur local. Pour plus d’informations, [voir Exporter des documents à partir d’un jeu à réviser](export-documents-from-review-set.md)
+**Exportation:** Personnalisez les données exportées. Cela inclut l'exportation de métadonnées de fichiers, de fichiers natifs, de fichiers texte et de documents expurgés qui ont été enregistrés dans un fichier PDF. Une fois les données exportées préparées, vous pouvez télécharger les données à partir de l’onglet **Exporter** sur un ordinateur local. Pour plus d’informations, consultez [Exporter des documents à partir d’un ensemble de révisions](export-documents-from-review-set.md)
 
-**Ajoutez à un autre jeu à réviser :** Copiez les données d’un jeu à réviser vers un autre. Pour plus d’informations, voir [Ajouter des données d’un jeu à réviser à un autre.](add-data-to-review-set-from-another-review-set.md)
+**Ajouter à un autre jeu de révision :** Copiez les données d’un ensemble de révisions vers un autre ensemble de révisions. Pour plus d’informations, consultez [Ajouter des données d’un ensemble de révisions à un autre ensemble de révisions](add-data-to-review-set-from-another-review-set.md).
 
 > [!NOTE]
-> Dans Microsoft 365, les données sont hachées et ces hachages sont fournis dans le fichier de sortie à des fins de vérification. Cette fonctionnalité est complétée par les journaux d’audit et les fonctionnalités de rapports, telles que les statistiques de collecte, les rapports d’ensemble de charge et les rapports d’exportation (y compris le fichier de chargement d’exportation).
+> Dans Microsoft 365, les données sont hachées et ces hachages sont fournis dans le fichier de sortie à des fins de vérification. Cela est complété par les journaux d’audit et les fonctionnalités de création de rapports, telles que les statistiques de collecte, les rapports de jeu de charge et les rapports d’exportation (y compris le fichier de charge d’exportation).

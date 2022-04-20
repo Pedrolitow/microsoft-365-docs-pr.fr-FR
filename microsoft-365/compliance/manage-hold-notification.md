@@ -15,68 +15,68 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Utilisez le flux de travail de communications Advanced eDiscovery pour suivre l’état de vos notifications de mise en attente légale et, si nécessaire, les mettre à jour et les renvoyer.
-ms.openlocfilehash: 276771b2a22f6db3e3d0620ee429a16626107bcc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Utilisez le flux de travail de communication dans eDiscovery (Premium) pour suivre l’état de vos notifications de conservation légale et, si nécessaire, les mettre à jour et les renvoyer.
+ms.openlocfilehash: 3e0ab93b469d2ae80d9416137425b7f2876442c1
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200436"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64946130"
 ---
 # <a name="manage-hold-notifications"></a>Gérer les notifications de conservation
 
-Une fois que vous avez initié votre flux de travail de notification de mise en attente légale, vous pouvez utiliser le flux de travail de communications dans Advanced eDiscovery pour suivre l’état de vos communications. L’onglet Communications contient la liste de toutes les notifications au sein de votre Advanced eDiscovery cas. Vous pouvez voir des détails tels que le nombre de dépositaires qui ont été affectés ou qui ont reçu l’avis.
+Une fois que vous avez lancé votre flux de travail de notification de conservation légale, vous pouvez utiliser le flux de travail de communication dans Microsoft Purview eDiscovery (Premium) pour suivre l’état de vos communications. L’onglet Communications contient une liste de toutes les notifications dans votre cas eDiscovery (Premium). Vous pouvez voir des détails tels que le nombre de consignats qui ont été affectés ou qui ont accepté l’avis.
 
 ## <a name="monitor-acknowledgments"></a>Surveiller les accusés de réception
 
-Après avoir sélectionné une communication dans l’onglet **Communications,** vous pouvez afficher la liste des dépositaires qui ont reconnu un avis de conservation. 
+Une fois que vous avez sélectionné une communication dans l’onglet **Communications** , vous pouvez afficher la liste des consignatateurs qui ont reconnu un avis de suspension. 
 
-1. Dans le centre de conformité, allez à **eDiscovery > Advanced eDiscovery**.
+1. Dans le Centre de conformité, accédez à **eDiscovery > eDiscovery (Premium)**.
 
-2. Sélectionnez un cas, puis cliquez sur **l’onglet Communications.**
+2. Sélectionnez un cas, puis cliquez sur l’onglet **Communications** .
 
-3. Sélectionnez une communication pour afficher la page de **présentation des communications** du dépositaire.
+3. Sélectionnez une communication pour afficher la page de menu volant de **communication du consignateur** .
 
-La liste des dépositaires associés à la communication sélectionnée s’affiche sur la page de présentation des communications. Cette page affiche également des informations sur le nombre d’accusés de réception reçus et le nombre d’accusés de réception en suspens. La page indique également quels dépositaires ont envoyé un accusé de réception de la notification de conservation.
+Une liste des consignats associés à la communication sélectionnée s’affiche sur la page de menu volant de communication. Cette page affiche également des insights et sur le nombre d’accusés de réception reçus et le nombre d’accusés de réception en attente. La page indique également quels consignats ont envoyé un accusé de réception indiquant qu’ils ont reçu la notification de conservation.
 
-## <a name="re-send-a-hold-notice"></a>Renvoyer un avis de non-attente
+## <a name="re-send-a-hold-notice"></a>Réexécuter un avis de suspension
 
-Parfois, les dépositaires perdent le suivi des messages électroniques dans leur travail quotidien. Ou dans le cas d’un litige de longue durée, un dépositaire peut vous contacter ou d’autres personnes et vous demander de renvoyer une notification. Lorsque vous gérez le flux de travail de communications pour les notifications de non-accès pour raisons juridiques, vous devrez peut-être renvoyer un avis pour le renvoyer dans la « partie supérieure de la boîte aux lettres d’un utilisateur ».
+Parfois, les consignats perdent le suivi des messages électroniques dans leur travail quotidien. Ou, dans le cas d’un litige de longue durée, un consignaculateur peut vous contacter ou d’autres personnes et vous demander de réexécuter un avis. Lorsque vous gérez le flux de travail de communications pour les avis de suspension légale, vous devrez peut-être réexécuter une notification pour la ramener au « haut de la boîte aux lettres d’un utilisateur ».
 
-Pour renvoyer une notification de conservation à un dépositaire :
+Pour réexécuter un avis de suspension à un consignateur :
 
-1. Dans Advanced eDiscovery, sélectionnez un cas, puis cliquez sur **l’onglet Communications.**
+1. Dans eDiscovery (Premium), sélectionnez un cas, puis cliquez sur l’onglet **Communications**.
 
-2. Sélectionnez une communication pour afficher la page de **présentation des communications** du dépositaire.
+2. Sélectionnez une communication pour afficher la page de menu volant de **communication du consignateur** .
 
-3. Cliquez **sur Plus > notification de ré-envoi de la notification de non-attente.**
+3. Cliquez sur **Autres > Réexécuter l’avis de suspension**.
 
-4. Dans la page **de** notification de nouvelle conservation, sélectionnez les dépositaires dont vous souhaitez renvoyer l’avis et tapez une raison facultative.
+4. Dans la page de menu volant **Réexélectionner l’avis de suspension** , sélectionnez les consignats que vous devez renvoyer à l’avis et tapez une raison facultative.
 
-5. Cliquez **sur Renvoyer** pour envoyer l’avis aux dépositaires sélectionnés.
+5. Cliquez sur **Réexécuter** pour envoyer l’avis aux consignatateurs sélectionnés.
 
-Si un dépositaire n’a pas reconnu la notification de conservation, le flux de travail de rappel et d’escalade est redémarré. Si un dépositaire a reconnu l’avis de conservation, il reçoit une copie de l’avis de conservation d’origine.
+Si un dépositaire n’a pas reconnu la notification de suspension, le flux de travail de rappel et d’escalade est redémarré. Si un gardien a reconnu l’avis de conservation, il recevra une copie de l’avis de conservation d’origine.
 
 > [!NOTE]
-> Vous pouvez uniquement renvoyer une notification de conservation légale aux dépositaires affectés à la communication. 
+> Vous pouvez uniquement renvoyer une notification de conservation légale aux consignats affectés à la communication. 
 
 ## <a name="update-preservation-requirements"></a>Mettre à jour les exigences de conservation
   
-Au fur et à mesure de la progression du cas, les dépositaires peuvent être tenus de conserver des données supplémentaires ou inférieures aux instructions précédemment. Dans les termes eDiscovery, vous devez émettre à nouveau l’avis de mise en attente avec le contenu mis à jour.
+À mesure que le cas progresse, les consignataires peuvent être tenus de conserver des données supplémentaires ou inférieures à celles qui ont été demandées précédemment. En termes eDiscovery, vous devez réexécuter l’avis de suspension avec le contenu mis à jour.
 
 Pour mettre à jour le contenu de l’avis de mise en attente initiale :
 
-1. Dans Advanced eDiscovery, sélectionnez un cas, puis cliquez sur **l’onglet Communications.**
+1. Dans eDiscovery (Premium), sélectionnez un cas, puis cliquez sur l’onglet **Communications**.
 
-2. Sélectionnez l’avis de conservation à mettre à jour, puis cliquez sur **Modifier** dans la page de **communication** du dépositaire.
+2. Sélectionnez l’avis de suspension que vous souhaitez mettre à jour, puis cliquez sur **Modifier** dans la page de menu volant de **communication du consignateur** .
 
-3. Dans **l’Assistant Modifier la communication,** cliquez sur Définir le contenu du portail dans le volet gauche de l’Assistant et mettez à jour le contenu de l’avis. 
+3. Dans l’Assistant **Modifier la communication** , cliquez sur **Définir le contenu du portail** dans le volet gauche de l’Assistant, puis mettez à jour le contenu de l’avis.
 
 4. Cliquez sur **Enregistrer**.
 
-L’avis de réé émission est envoyé à tous les dépositaires affectés à la notification de conservation légale. En outre, si l’avis de rappel ou d’escalade est activé, les flux de travail pour ces types de notifications redémarrent.
+L’avis de réexélation sera envoyé à tous les consignats affectés à la notification de conservation légale. En outre, si l’avis de rappel ou d’escalade est activé, les flux de travail de ces types d’avis redémarrent.
 
-## <a name="update-legal-hold-notifications-and-settings"></a>Mettre à jour les notifications et paramètres de mise en attente légale
+## <a name="update-legal-hold-notifications-and-settings"></a>Mettre à jour les notifications et les paramètres de conservation légale
 
 Lorsque vous mettez à jour le contenu ou les paramètres de l’avis d’émission, de publication, de réédition, de rappel ou d’escalade, ces modifications s’appliquent à toutes les communications futures générées par le flux de travail.
 
@@ -84,6 +84,6 @@ Lorsque vous mettez à jour le contenu ou les paramètres de l’avis d’émiss
 
 - [Ajouter des consignataires à un cas](add-custodians-to-case.md)
 
-- [Créer une notification de non-droit](create-hold-notification.md)
+- [Créer un avis de conservation légale](create-hold-notification.md)
 
 - [Reconnaitre une notification de conservation](acknowledge-hold-notification.md)

@@ -1,5 +1,5 @@
 ---
-title: Créer des requêtes de recherche dans Advanced eDiscovery
+title: Générer des requêtes de recherche dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,32 +15,32 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-mar2020
-description: Utilisez des mots clés et des conditions pour restreindre l’étendue de la recherche lors de la recherche de données à l’aide Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 8ad708b9733dd7d96f1025f116a31a92d757afd2
-ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
+description: Utilisez des mots clés et des conditions pour limiter l’étendue de la recherche lors de la recherche de données à l’aide d’eDiscovery (Premium) dans Microsoft 365.
+ms.openlocfilehash: 7a3c3747e38667eca40032511209af964ffb165a
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62487298"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64950332"
 ---
-# <a name="build-search-queries-for-collections-in-advanced-ediscovery"></a>Créer des requêtes de recherche pour les collections dans Advanced eDiscovery
+# <a name="build-search-queries-for-collections-in-ediscovery-premium"></a>Créer des requêtes de recherche pour les collections dans eDiscovery (Premium)
 
-Lors de la configuration de la requête de recherche lors de la création d’une [collection](collections-overview.md) dans un cas Advanced eDiscovery, vous pouvez utiliser des mots clés pour rechercher du contenu et des conditions spécifiques afin de restreindre l’étendue de la recherche afin de renvoyer les éléments les plus pertinents pour votre enquête juridique.
+Lors de la configuration de la requête de recherche lors de la création d’une [collection](collections-overview.md) dans un cas eDiscovery (Premium), vous pouvez utiliser des mots clés pour rechercher du contenu et des conditions spécifiques afin de limiter l’étendue de la recherche afin de renvoyer les éléments les plus pertinents pour votre enquête légale.
 
 ![Utilisez des mots clés et des conditions pour affiner les résultats d’une recherche.](../media/SearchQueryBox.png)
 
 ## <a name="keyword-searches"></a>Recherches par mots clés
 
-Tapez une requête de mot clé dans la zone **Mots clés** de la requête de recherche. Vous pouvez spécifier des mots clés, des propriétés de message électronique, telles que des dates d’envoi et de réception, ou des propriétés de document, telles que les noms de fichiers ou la date de la dernière fois où un document a été modifié. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, tels que **ET**, **OU**, **PAS**, et **PRÈS**. Vous pouvez également rechercher des informations sensibles (telles que des numéros de sécurité sociale) dans des documents en SharePoint et OneDrive (pas dans les messages électroniques) ou rechercher des documents qui ont été partagés en externe. Si vous laissez la zone **Mot clé** vide, tout le contenu se trouvant dans les emplacements de contenu spécifiés est dans les résultats de recherche.
+Tapez une requête de mot clé dans la zone **Mots clés** de la requête de recherche. Vous pouvez spécifier des mots clés, des propriétés de message électronique, telles que des dates envoyées et reçues, ou des propriétés de document, telles que des noms de fichiers ou la date de dernière modification d’un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, tels que **ET**, **OU**, **PAS**, et **PRÈS**. Vous pouvez également rechercher des informations sensibles (par exemple, des numéros de sécurité sociale) dans des documents dans SharePoint et OneDrive (pas dans les e-mails) ou rechercher des documents qui ont été partagés en externe. Si vous laissez la zone **Mot clé** vide, tout le contenu se trouvant dans les emplacements de contenu spécifiés est dans les résultats de recherche.
 
 ## <a name="keyword-list"></a>Liste de mots clés
 
-Vous pouvez également cocher la case  Afficher la liste des mots clés et taper un mot clé ou une expression de mot clé dans chaque ligne. Les mots clés de chaque ligne sont connectés par un opérateur logique (qui est représenté par *c:s* dans la syntaxe de requête de recherche) qui présente des fonctionnalités similaires à l’opérateur **OR** dans la requête de recherche créée. Cela signifie que les éléments qui contiennent un mot clé dans une ligne sont dans les résultats de la recherche. Vous pouvez ajouter jusqu’à 180 lignes dans la liste de mots clés dans Advanced eDiscovery requêtes de recherche.
+Vous pouvez également cocher la case **Afficher la liste de mots clés** et taper un mot clé ou une expression clé dans chaque ligne. Les mots clés de chaque ligne sont connectés par un opérateur logique (représenté sous forme *de c:s* dans la syntaxe de requête de recherche) qui est similaire en termes de fonctionnalité à l’opérateur **OR** dans la requête de recherche créée. Cela signifie que les éléments qui contiennent n’importe quel mot clé dans une ligne figurent dans les résultats de la recherche. Vous pouvez ajouter jusqu’à 180 lignes dans la liste de mots clés dans les requêtes de recherche eDiscovery (Premium).
 
 ![Utilisez la liste de mots clés pour obtenir des statistiques sur chaque mot clé dans la requête.](../media/KeywordListSearch.png)
 
-Pourquoi utiliser la liste de mots clés ? Vous pouvez obtenir des statistiques qui indiquent le nombre d’éléments qui correspondent à chaque mot clé dans la liste de mots clés. Cela peut vous aider à identifier rapidement les mots clés les plus (et les moins) efficaces. Vous pouvez également utiliser une expression de mot clé (entre parenthèses) dans une ligne de la liste des mots clés. Pour plus d’informations sur les statistiques de recherche, voir [Statistiques et rapports de collecte](collection-statistics-reports.md)
+Pourquoi utiliser la liste de mots clés ? Vous pouvez obtenir des statistiques qui indiquent le nombre d’éléments correspondant à chaque mot clé dans la liste des mots clés. Cela peut vous aider à identifier rapidement les mots clés les plus efficaces (et les moins efficaces). Vous pouvez également utiliser une expression clé (entourée de parenthèses) dans une ligne dans la liste des mots clés. Pour plus d’informations sur les statistiques de recherche, consultez [statistiques et rapports](collection-statistics-reports.md) de collecte
 
 ## <a name="conditions"></a>Conditions
 
-Vous pouvez ajouter des conditions de recherche pour restreindre l’étendue d’une recherche et renvoyer un ensemble de résultats plus affiné. Chaque condition ajoute une clause à la requête de recherche qui est créée et exécutée lorsque vous démarrez la recherche. Une condition est connectée logiquement à la requête de mot clé spécifiée dans la zone de mot clé par un opérateur logique (qui est représenté par *c:c* dans la syntaxe de requête de recherche) qui est similaire en fonctionnalité à l’opérateur **AND** . Cela signifie que les éléments doivent satisfaire la requête de mot clé et une ou plusieurs conditions à inclure dans les résultats de la recherche. C’est ainsi que les conditions contribuent à affiner vos résultats. Pour obtenir la liste et la description des conditions que vous pouvez utiliser dans une requête de recherche, consultez la section « Conditions de recherche » dans requêtes par mot clé et [conditions de recherche](keyword-queries-and-search-conditions.md#search-conditions).
+Vous pouvez ajouter des conditions de recherche pour restreindre l’étendue d’une recherche et retourner un ensemble de résultats plus affiné. Chaque condition ajoute une clause à la requête de recherche qui est créée et exécutée lorsque vous démarrez la recherche. Une condition est logiquement connectée à la requête de mot clé spécifiée dans la zone de mot clé par un opérateur logique (représenté sous la forme *c:c* dans la syntaxe de requête de recherche) qui est similaire en termes de fonctionnalité à l’opérateur **AND** . Cela signifie que les éléments doivent satisfaire à la fois à la requête de mot clé et à une ou plusieurs conditions à inclure dans les résultats de la recherche. C’est ainsi que les conditions contribuent à affiner vos résultats. Pour obtenir la liste et la description des conditions que vous pouvez utiliser dans une requête de recherche, consultez la section « Conditions de recherche » dans [les requêtes de mots clés et les conditions de recherche](keyword-queries-and-search-conditions.md#search-conditions).

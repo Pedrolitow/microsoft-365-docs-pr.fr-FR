@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 20ae5bd77b9a4a962093db1e3d92d8f765a9a9a3
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: fd043ae1ebabcb8162ed96b973c9392bae5fd2a1
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664697"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944434"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
 
@@ -37,7 +37,7 @@ ms.locfileid: "64664697"
 - Microsoft 365 Defender
 
 >[!Note]
->Cet article décrit les alertes de sécurité dans Microsoft 365 Defender. Toutefois, vous pouvez utiliser des alertes d’activité pour envoyer des notifications par e-mail à vous-même ou à d’autres administrateurs lorsque les utilisateurs effectuent des activités spécifiques dans Microsoft 365. Pour plus d’informations, consultez [Créer des alertes d’activité - Microsoft 365 conformité | Microsoft Docs](../../compliance/create-activity-alerts.md).
+>Cet article décrit les alertes de sécurité dans Microsoft 365 Defender. Toutefois, vous pouvez utiliser des alertes d’activité pour envoyer des notifications par e-mail à vous-même ou à d’autres administrateurs lorsque les utilisateurs effectuent des activités spécifiques dans Microsoft 365. Pour plus d’informations, consultez [Créer des alertes d’activité - Microsoft Purview | Microsoft Docs](../../compliance/create-activity-alerts.md).
 
 Les alertes sont la base de tous les incidents et indiquent l’occurrence d’événements malveillants ou suspects dans votre environnement. Les alertes font généralement partie d’une attaque plus large et fournissent des indices sur un incident.
 
@@ -58,7 +58,7 @@ Dans la file d’attente d’alertes par défaut, vous pouvez sélectionner **Fi
 Vous pouvez filtrer les alertes en fonction des critères suivants :
 
 - Severity
-- État
+- Statut
 - Sources de service
 - Entités (ressources impactées)
 - État d’investigation automatisé
@@ -114,7 +114,7 @@ Microsoft 365 Defender alertes peuvent provenir de solutions telles que Microsof
 | :---|:--- |
 | Microsoft Defender pour Office 365 | `fa{GUID}` <br> Exemple : `fa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender pour point de terminaison | `da` ou `ed` pour les alertes de détection personnalisées <br> |
-| Microsoft Defender pour Identity | `aa{GUID}` <br> Exemple : `aa123a456b-c789-1d2e-12f1g33h445h6i` |
+| Microsoft Defender pour l’identité | `aa{GUID}` <br> Exemple : `aa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender for Cloud Apps |`ca{GUID}` <br> Exemple : `ca123a456b-c789-1d2e-12f1g33h445h6i` |
 
 ### <a name="analyze-affected-assets"></a>Analyser les ressources affectées
@@ -210,7 +210,7 @@ Pour connaître le processus détaillé pas à pas, consultez la vidéo [ici](ht
 
 Cette vidéo décrit également comment connecter power automate à Defender pour le cloud Apps.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Si nécessaire pour les incidents in-process, poursuivez votre [enquête](investigate-incidents.md).
 

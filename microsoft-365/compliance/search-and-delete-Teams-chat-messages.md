@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilisez Advanced eDiscovery et l’Explorateur Microsoft Graph pour rechercher et vider les messages de conversation dans Microsoft Teams et répondre aux incidents de débordement de données dans Teams.
-ms.openlocfilehash: e0a95007c96bd60b655d455d432a774f6ace0817
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 79f04c513733151099f5b45192a84738065e42aa
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847527"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949370"
 ---
 # <a name="search-and-purge-chat-messages-in-teams"></a>Rechercher et vider les messages de conversation dans Teams
 
@@ -32,7 +32,7 @@ Vous pouvez utiliser Advanced eDiscovery et Microsoft Graph Explorer pour recher
 
 ## <a name="before-you-search-and-purge-chat-messages"></a>Avant de rechercher et de vider les messages de conversation
 
-- Pour créer un cas Advanced eDiscovery et utiliser des regroupements pour rechercher des messages de conversation, vous devez être membre du groupe de rôles **gestionnaire eDiscovery** dans le Centre de conformité Microsoft 365. Pour supprimer des messages de conversation, vous devez disposer du rôle **Rechercher et vider** . Ce rôle est attribué par défaut aux groupes de rôles De l’Enquêteur de données et Gestion de l’organisation. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](assign-ediscovery-permissions.md).
+- Pour créer un cas Advanced eDiscovery et utiliser des regroupements pour rechercher des messages de conversation, vous devez être membre du groupe de rôles **gestionnaire eDiscovery** dans le portail de conformité Microsoft Purview. Pour supprimer des messages de conversation, vous devez disposer du rôle **Rechercher et vider** . Ce rôle est attribué par défaut aux groupes de rôles De l’Enquêteur de données et Gestion de l’organisation. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](assign-ediscovery-permissions.md).
 - La recherche et le vidage sont pris en charge pour les conversations au sein de votre locataire. La prise en charge des conversations Teams Connecter conversation (accès externe ou fédération) est activée dans l’interface dans certains cas, mais ne fonctionne pas comme prévu.
 - Un maximum de 10 éléments par boîte aux lettres peuvent être supprimés à la fois. Étant donné que la possibilité de rechercher et de supprimer des messages de conversation est destinée à être un outil de réponse aux incidents, cette limite permet de s’assurer que les messages de conversation sont rapidement supprimés.
 
@@ -107,7 +107,7 @@ Pour plus d’informations sur l’utilisation de Graph Explorer, consultez [Uti
 
 ### <a name="get-the-case-id"></a>Obtenir l’ID de la casse
 
-1. Accédez à <https://developer.microsoft.com/graph/graph-explorer> l’Explorateur Graph et connectez-vous avec un compte auquel le rôle **Rechercher et vider** est attribué dans le Centre de conformité Microsoft 365.
+1. Accédez à <https://developer.microsoft.com/graph/graph-explorer> l’Explorateur Graph avec un compte auquel le rôle **Rechercher et vider** est attribué dans le portail de conformité Microsoft Purview.
 
 2. Exécutez la requête GET suivante pour récupérer l’ID du cas Advanced eDiscovery. Utilisez la valeur `https://graph.microsoft.com/beta/compliance/ediscovery/cases` dans la barre d’adresses de la requête de requête. Veillez à sélectionner **v1.0** dans la liste déroulante des versions de l’API.
 
@@ -122,7 +122,7 @@ Pour plus d’informations sur l’utilisation de Graph Explorer, consultez [Uti
 4. Copiez l’ID correspondant (ou copiez-le et collez-le dans un fichier texte). Vous utiliserez cet ID dans la tâche suivante pour obtenir l’ID de collection.
 
 > [!TIP]
-> Au lieu d’utiliser la procédure précédente pour obtenir l’ID de cas, vous pouvez ouvrir le cas dans le Centre de conformité Microsoft 365 et copier l’ID de cas à partir de l’URL.
+> Au lieu d’utiliser la procédure précédente pour obtenir l’ID de cas, vous pouvez ouvrir le cas dans le portail de conformité Microsoft Purview et copier l’ID de cas à partir de l’URL.
 
 ### <a name="get-the-collection-id"></a>Obtenir l’ID de collection
 

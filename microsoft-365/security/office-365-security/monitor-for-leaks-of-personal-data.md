@@ -19,12 +19,12 @@ search.appverid:
 description: Découvrez trois outils qui permettent de surveiller les fuites de données personnelles.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4024640173d6cbbf6817d3fa2b1c24cb7264833c
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 3b16e96e85d6ee154912535ecf0bac4ac5ba6fac
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64470854"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947756"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Surveillance des fuites de données personnelles
 
@@ -37,7 +37,7 @@ Il existe de nombreux outils qui peuvent être utilisés pour surveiller l’uti
 
 Dans cette illustration :
 
-- Commencez par les rapports sur la protection contre la perte de données Microsoft 365 pour surveiller les données personnelles dans SharePoint Online, OneDrive Entreprise et le courrier électronique en transit. Ces rapports offrent le meilleur niveau de détail pour surveiller les données personnelles. Toutefois, ces rapports n’incluent pas tous les services dans Office 365.
+- Commencez par les rapports sur la protection contre la perte de données Microsoft Purview pour surveiller les données personnelles dans SharePoint Online, OneDrive Entreprise et le courrier électronique en transit. Ces rapports offrent le meilleur niveau de détail pour surveiller les données personnelles. Toutefois, ces rapports n’incluent pas tous les services dans Office 365.
 
 - Utilisez ensuite les stratégies d’alerte et le journal d’audit pour surveiller l’activité des services. Configurez la surveillance continue ou faites des recherches dans le journal d’audit pour identifier un incident. Le journal d’audit fonctionne sur tous les services (Sway, PowerBI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, l’activité d’administration, OneDrive Entreprise, SharePoint Online, le courrier électronique en transit et les boîtes aux lettres au repos). Les conversations Skype sont incluses dans les boîtes aux lettres au repos.
 
@@ -58,7 +58,7 @@ Vous pouvez utiliser les rapports DLP pour :
 
 En outre, vous pouvez utiliser les rapports DLP pour affiner vos stratégies DLP lorsque vous les exécutez en mode test.
 
-Les rapports DLP sont dans le Centre de conformité Microsoft 365. Accédez à la section **Rapports**\>**Données de l’organisation** pour rechercher les rapports sur les **Correspondances de la stratégie DLP**, **Incidents DLP** et les **Faux positifs et remplacements DLP**.
+Les rapports DLP sont dans le Centre de conformité Microsoft Purview. Accédez à la section **Rapports** \> **Données de l’organisation** pour rechercher les rapports sur les **Correspondances de la stratégie DLP**, **Incidents DLP** et les **Faux positifs et remplacements DLP**.
 
 Pour plus d’informations, consultez la rubrique [Affichage des rapports de protection contre la perte de données](../../compliance/view-the-dlp-reports.md).
 
@@ -68,9 +68,9 @@ Pour plus d’informations, consultez la rubrique [Affichage des rapports de pro
 
 Le journal d’audit contient les événements Exchange Online, SharePoint Online, OneDrive Entreprise, Azure Active Directory, Microsoft Teams, Power BI, Sway et d’autres services.
 
-Le Portail Microsoft 365 Defender et le Centre de conformité Microsoft 365 proposent deux méthodes pour surveiller et générer des rapports sur la base du journal d’audit :
+Le Portail Microsoft 365 Defender et le portail de conformité Microsoft Purview proposent deux méthodes pour surveiller et générer des rapports sur la base du journal d’audit :
 
-- Configurer des stratégies d’alerte, afficher des alertes et surveiller les tendances : utilisez les nouveaux outils de tableau de bord d’alertes et de stratégie d’alerte dans le Portail Microsoft 365 Defender ou le Centre de conformité Microsoft 365.
+- Configurer des stratégies d’alerte, afficher des alertes et surveiller les tendances : utilisez les nouveaux outils de tableau de bord d’alertes et de stratégie d’alerte dans le Portail Microsoft 365 Defender ou le portail de conformité Microsoft Purview.
 - Effectuer des recherches directement dans le journal d’audit : vous pouvez rechercher tous les événements dans une plage de dates spécifiée ou filtrer les résultats en fonction de critères spécifiques, tels que l’utilisateur ayant effectué l’action, l’action ou l’objet cible.
 
 Les équipes de conformité et de sécurité des informations peuvent utiliser ces outils pour revoir de façon proactive les activités effectuées par les utilisateurs finaux et les administrateurs dans les services. Des alertes automatiques peuvent être configurées pour envoyer des notifications par courrier électronique lorsque certaines activités se produisent sur des collections de sites spécifiques (par exemple, lorsque le contenu est partagé à partir de sites connus pour contenir des informations relatives au RGPD). Ainsi, ces équipes peuvent suivre les utilisateurs afin de vérifier que les stratégies de sécurité d’entreprise sont suivies, ou de fournir des formations supplémentaires.

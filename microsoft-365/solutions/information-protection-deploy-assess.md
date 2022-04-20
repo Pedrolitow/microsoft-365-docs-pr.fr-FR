@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Déterminez les réglementations relatives à la confidentialité des données, les scénarios pertinents, votre préparation et les types d’informations sensibles qui se trouvent dans votre environnement Microsoft 365.
-ms.openlocfilehash: ea151577f31ad8ea9454addf171c1079f334d377
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 967c64dee2d99f41b3c2a1b6a193730dcd75811a
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822691"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947514"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Évaluer les risques liés à la confidentialité des données et identifier les éléments sensibles avec Microsoft 365
 
@@ -60,7 +60,7 @@ Pour une référence ultérieure dans les articles de cette solution globale, ce
 
 |Règlement|Article/section|Extrait|Catégories de contrôle technique applicables|
 |---|---|---|---|
-|RGPD|Article 5(1)(f)|Les données personnelles doivent être traitées de manière à garantir une sécurité appropriée des données personnelles, notamment la protection contre le traitement non autorisé ou illégal et contre les pertes, destructions ou dommages accidentels, à l’aide de mesures techniques ou organisationnelles appropriées (« intégrité et confidentialité ».|(Tout) <br> Identité <br> Appareil <br> Protection contre les menaces <br> Protéger les informations <br> Gérer les informations <br> Découvrir et répondre|
+|RGPD|Article 5(1)(f)|Les données personnelles doivent être traitées de manière à garantir une sécurité appropriée des données personnelles, notamment la protection contre le traitement non autorisé ou illégal et contre les pertes, destructions ou dommages accidentels, à l’aide de mesures techniques ou organisationnelles appropriées (« intégrité et confidentialité ».|(Tout) <br> Identité <br> Device <br> Protection contre les menaces <br> Protéger les informations <br> Gérer les informations <br> Découvrir et répondre|
 ||Article (32)(1)(a)|Compte tenu de l’état de l’art, des coûts de mise en œuvre et de la nature, de l’étendue, du contexte et des objectifs du traitement, ainsi que du risque de probabilité et de gravité variables pour les droits et libertés des personnes physiques, le contrôleur et le processeur mettent en œuvre des mesures techniques et organisationnelles appropriées pour garantir un niveau de sécurité adapté au risque,  y compris, entre autres, le cas échéant : (a) le pseudonyme et le chiffrement des données personnelles.|Protéger les informations|
 ||Article (13)(2)(a)|"... le contrôleur doit, au moment où les données personnelles sont obtenues, fournir à la personne concernée les informations supplémentaires suivantes nécessaires pour garantir un traitement équitable et transparent : (a) la période pendant laquelle les données personnelles seront stockées, ou si cela n’est pas possible, les critères utilisés pour déterminer cette période.|Gérer les informations|
 ||Article (15)(1)(e)|La personne concernée doit avoir le droit d’obtenir de la part du contrôleur la confirmation de l’existence ou non du traitement des données personnelles qui le concernent et, dans ce cas, de l’accès aux données personnelles et des informations suivantes : (e) l’existence du droit de demander au contrôleur la rectification ou l’effacement des données personnelles ou la restriction du traitement des données personnelles concernant la personne concernée ou de s’y opposer Traitement|Découvrir et répondre|
@@ -192,11 +192,11 @@ Cette étape implique l’identification de types d’informations sensibles par
 
 La recherche de contenu dans votre environnement contenant des données personnelles peut être une tâche formidable, impliquant auparavant une combinaison d’utilisation de la recherche de conformité, eDiscovery, Advanced eDiscovery, DLP et audit.
 
-Avec la nouvelle solution **de classification des données** dans le Centre d’administration de conformité Microsoft, cela est devenu beaucoup plus facile avec la fonctionnalité [Explorateur](../compliance/data-classification-content-explorer.md) de contenu, qui fonctionne avec des types d’informations sensibles intégrés ou personnalisés, y compris ceux liés aux données personnelles.
+Avec la nouvelle solution **de classification des données** dans le portail de conformité Microsoft Purview, cela est devenu beaucoup plus facile avec la fonctionnalité [Explorateur](../compliance/data-classification-content-explorer.md) de contenu, qui fonctionne avec des types d’informations sensibles intégrés ou personnalisés, y compris ceux liés aux données personnelles.
 
 ### <a name="sensitive-information-types"></a>Types d’informations sensibles
 
-Le Centre d’administration de conformité Microsoft est pré-chargé avec plus de 100 types d’informations sensibles, la plupart liés à l’identification et à la localisation des données personnelles. Ces types d’informations sensibles intégrés peuvent aider à identifier et protéger les numéros de carte de crédit, les numéros de compte bancaire, les numéros de passeport, etc., en fonction de modèles définis par une expression régulière (expression régulière) ou une fonction. Pour en savoir plus, voir [Éléments recherchés par les types d’informations sensibles](../compliance/sensitive-information-type-entity-definitions.md).
+Le portail de conformité Microsoft Purview est pré-chargé avec plus de 100 types d’informations sensibles, la plupart liés à l’identification et à la localisation des données personnelles. Ces types d’informations sensibles intégrés peuvent aider à identifier et protéger les numéros de carte de crédit, les numéros de compte bancaire, les numéros de passeport, etc., en fonction de modèles définis par une expression régulière (expression régulière) ou une fonction. Pour en savoir plus, voir [Éléments recherchés par les types d’informations sensibles](../compliance/sensitive-information-type-entity-definitions.md).
 
 Si vous devez identifier et protéger un type d’éléments sensibles propre à l’organisation ou régional, tel qu’un format personnalisé pour les ID d’employé ou d’autres informations personnelles non déjà couvertes par un type d’informations sensibles intégré, vous pouvez créer un type d’informations sensibles personnalisé avec les méthodes suivantes :
 
@@ -216,7 +216,7 @@ Pour plus d’informations, consultez ces articles :
 
 ### <a name="content-explorer"></a>Explorateur de contenu
 
-Un outil important qui permet de déterminer l’occurrence d’éléments sensibles dans votre environnement est le nouvel [Explorateur de contenu](../compliance/data-classification-content-explorer.md) dans le centre d’administration de conformité Microsoft 365. Il s’agit d’un outil automatisé pour l’analyse initiale et continue de l’ensemble de votre abonnement Microsoft 365 pour l’occurrence de types d’informations sensibles et l’affichage des résultats.
+Un outil important qui permet de déterminer l’occurrence d’éléments sensibles dans votre environnement est le nouvel [Explorateur de contenu](../compliance/data-classification-content-explorer.md) dans le Centre d’administration Microsoft Purview. Il s’agit d’un outil automatisé pour l’analyse initiale et continue de l’ensemble de votre abonnement Microsoft 365 pour l’occurrence de types d’informations sensibles et l’affichage des résultats.
 
 Le nouvel outil Explorateur de contenu vous permet d’identifier rapidement les emplacements des éléments sensibles dans votre environnement, à l’aide de types d’informations sensibles intégrés ou personnalisés. Cela peut impliquer l’établissement d’un processus et la responsabilité d’examiner régulièrement la présence et l’emplacement des éléments sensibles.
 
