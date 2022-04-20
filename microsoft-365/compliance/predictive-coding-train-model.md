@@ -1,5 +1,5 @@
 ---
-title: Former un modèle de codage prédictif dans Advanced eDiscovery
+title: Entraîner un modèle de codage prédictif dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,83 +14,83 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: b5f1a958696dad84ac2bedec8f1ab7d23dfa6428
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 37c0ae081223f321c87cafa18d0acbbbc6adb511
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204238"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64942136"
 ---
-# <a name="train-a-predictive-coding-model-preview"></a>Former un modèle de codage prédictif (prévisualisation)
+# <a name="train-a-predictive-coding-model-preview"></a>Entraîner un modèle de codage prédictif (préversion)
 
-Après avoir créé un modèle de codage prédictif dans Advanced eDiscovery, l’étape suivante consiste à effectuer la première série de formations pour former le modèle à ce qui est pertinent et non pertinent dans votre jeu à réviser. Une fois que vous avez terminé la première série de formations, vous pouvez effectuer des séries de formation suivantes pour améliorer la capacité du modèle à prévoir du contenu pertinent et non pertinent.
+Après avoir créé un modèle de codage prédictif dans Microsoft Purview eDiscovery (Premium), l’étape suivante consiste à effectuer la première série d’entraînement pour entraîner le modèle sur le contenu pertinent et non pertinent dans votre jeu de révision. Une fois la première série d’entraînement terminée, vous pouvez effectuer des cycles d’entraînement ultérieurs pour améliorer la capacité du modèle à prédire le contenu pertinent et non pertinent.
 
-Pour passer en revue le flux de travail de codage prédictif, voir [En savoir plus sur le codage](predictive-coding-overview.md#the-predictive-coding-workflow) prédictif dans Advanced eDiscovery
+Pour passer en revue le flux de travail de codage prédictif, consultez [En savoir plus sur le codage prédictif dans eDiscovery (Premium)](predictive-coding-overview.md#the-predictive-coding-workflow)
 
 ## <a name="before-you-train-a-model"></a>Avant d’entraîner un modèle
 
-- Au cours d’une série  de formations, étiquettez les éléments comme **pertinents** ou non pertinents en fonction de la pertinence du contenu du document. Ne basez pas votre décision sur les valeurs des champs de métadonnées. Par exemple, pour les messages électroniques ou Teams conversations, ne basez pas votre décision d’étiquetage sur les participants au message.
+- Au cours d’un cycle d’entraînement, étiqueter les éléments comme **pertinents** ou **non pertinents** en fonction de la pertinence du contenu du document. Ne basez pas votre décision sur les valeurs dans les champs de métadonnées. Par exemple, pour les e-mails ou les conversations Teams, ne basez pas votre décision d’étiquetage sur les participants au message.
 
-## <a name="train-a-model-for-the-first-time"></a>Former un modèle pour la première fois
+## <a name="train-a-model-for-the-first-time"></a>Entraîner un modèle pour la première fois
 
-1. Dans la Centre de conformité Microsoft 365, ouvrez un Advanced eDiscovery, puis sélectionnez l’onglet **Ensembles de révision.**
+1. Dans le portail de conformité Microsoft Purview, ouvrez un cas eDiscovery (Premium), puis sélectionnez l’onglet **Révision des ensembles**.
 
-2. Ouvrez un jeu à réviser, puis cliquez sur **Analyse** Gérer le  >  **codage prédictif (prévisualisation).**
+2. Ouvrez un jeu de révision, puis cliquez sur **le codage prédictif AnalyticsManage** >  (préversion).
 
-3. Dans la page **Modèles de codage prédictif (prévisualisation),** sélectionnez le modèle que vous souhaitez entraîner.
+3. Dans la page **Modèles de codage prédictif (préversion),** sélectionnez le modèle que vous souhaitez entraîner.
 
-4. Sous **l’onglet** Vue d’ensemble, sous **La première** série, cliquez **sur Démarrer la série de formation suivante.**
+4. Sous l’onglet **Vue d’ensemble** , sous **Ronde 1**, cliquez sur **Démarrer la prochaine série d’entraînement**.
 
-   **L’onglet** Formation s’affiche et contient 50 éléments à étiqueter.
+   L’onglet **Formation** s’affiche et contient 50 éléments à étiqueter.
 
-5. Examinez chaque document, puis  **sélectionnez** le bouton Pertinent ou Non pertinent en bas du volet de lecture pour l’étiqueter.
+5. Passez en revue chaque document, puis sélectionnez le bouton **Pertinent** ou **Non pertinent** en bas du volet de lecture pour l’étiqueter.
 
    ![Étiqueter chaque document comme pertinent ou non pertinent.](..\media\TrainModel1.png)
 
-6. Une fois que vous avez étiqueté les 50 éléments, cliquez sur **Terminer.**
+6. Une fois que vous avez étiqueté les 50 éléments, cliquez sur **Terminer**.
 
-    Il faudra quelques minutes au système pour « apprendre » de votre étiquetage et mettre à jour le modèle. Une fois ce processus terminé, l’état **Prêt** s’affiche pour le modèle sur la page Modèles de codage prédictif **(prévisualisation).**
+    Il faudra quelques minutes pour que le système « apprenne » à partir de votre étiquetage et met à jour le modèle. Une fois ce processus terminé, l’état **Prêt** s’affiche pour le modèle dans la page **Modèles de codage prédictif (préversion).**
 
-## <a name="perform-additional-training-rounds"></a>Effectuer des séries de formation supplémentaires
+## <a name="perform-additional-training-rounds"></a>Effectuer des rondes d’entraînement supplémentaires
 
-Après avoir effectué la première série de formations, vous pouvez effectuer des séries de formation suivantes en suivant les étapes de la section précédente. La seule différence est que le nombre de la série de formations sera mis à jour sous l’onglet **Vue d’ensemble du** modèle. Par exemple, après avoir effectué la première  série de formations, vous pouvez cliquer sur Démarrer la série de formation suivante pour démarrer la deuxième série d’entraînements. Et ainsi de suite.
+Après avoir effectué la première série d’entraînements, vous pouvez effectuer des cycles d’entraînement suivants en suivant les étapes de la section précédente. La seule différence est que le nombre de la ronde d’entraînement sera mis à jour sous l’onglet **Vue d’ensemble** du modèle. Par exemple, après avoir effectué le premier tour d’entraînement, vous pouvez cliquer sur **Démarrer la prochaine série d’entraînement** pour démarrer la deuxième série d’entraînement. Et ainsi de suite.
 
-Chaque série de formations (celles en cours et celles qui  sont terminées) s’affiche sous l’onglet Formation du modèle. Lorsque vous sélectionnez une série d’entraînements, une page volante avec des informations et des mesures pour la série s’affiche.
+Chaque cycle d’entraînement (à la fois ceux en cours et ceux qui sont terminés) s’affiche sous l’onglet **Formation** du modèle. Lorsque vous sélectionnez un tour d’entraînement, une page volante contenant des informations et des métriques pour la ronde s’affiche.
 
-## <a name="what-happens-after-you-perform-a-training-round"></a>Que se passe-t-il après avoir effectué une série de formations ?
+## <a name="what-happens-after-you-perform-a-training-round"></a>Que se passe-t-il après avoir effectué un tour d’entraînement ?
 
-Une fois que vous avez effectué la première série de formations, un travail est démarré et effectue les étapes suivantes :
+Une fois que vous avez effectué la première série d’entraînement, un travail qui effectue les opérations suivantes est démarré :
 
-- En fonction de la façon dont vous avez étiqueté les 40 éléments de l’ensemble de formation, le modèle apprend de votre étiquetage et se met à jour pour devenir plus précis.
+- En fonction de la façon dont vous avez étiqueté les 40 éléments du jeu d’apprentissage, le modèle apprend de votre étiquetage et se met à jour pour devenir plus précis.
 
-- Le modèle traite ensuite chaque élément de l’ensemble de révision et affecte un score de prédiction entre **0** (non pertinent) et **1** (pertinent).
+- Le modèle traite ensuite chaque élément de l’ensemble de révision et attribue un score de prédiction compris entre **0** (non pertinent) et **1** (pertinent).
 
-- Le modèle affecte un score de prédiction aux 10 éléments du jeu de contrôles que vous avez étiquetés pendant la série d’entraînement. Le modèle compare le score de prédiction de ces 10 éléments à l’étiquette réelle que vous avez affectée à l’élément pendant la série de formation. Sur la base de cette comparaison, le modèle identifie la classification suivante (appelée matrice de *confusion* du jeu de contrôles) pour évaluer les performances de prévision du modèle :
+- Le modèle attribue un score de prédiction aux 10 éléments du jeu de contrôles que vous avez étiquetés pendant la phase d’entraînement. Le modèle compare le score de prédiction de ces 10 éléments avec l’étiquette réelle que vous avez affectée à l’élément pendant la phase d’entraînement. Sur la base de cette comparaison, le modèle identifie la classification suivante (appelée *matrice de confusion du jeu* de contrôles) pour évaluer les performances de prédiction du modèle :
 
   <br>
 
   ****
 
-  |Étiquette|L’élément de prévision de modèle est pertinent|L’élément de prévision de modèle n’est pas pertinent|
+  |Étiquette|L’élément de prédiction de modèle est pertinent|L’élément de prédiction de modèle n’est pas pertinent|
   |---|---|---|
-  |**Élément d’étiquettes de relecteur pertinent**|Vrai positif|Faux positif|
-  |**Élément d’étiquettes de relecteur non pertinent**|Faux négatif|Vrai négatif|
+  |**Élément d’étiquettes de réviseur comme pertinent**|Vrai positif|Faux positif|
+  |**Élément d’étiquettes de réviseur comme non pertinent**|Faux négatif|Vrai négatif|
   |
 
-  Sur la base de ces comparaisons, le modèle dérive des valeurs pour les mesures F-score, precision et recall et de la marge d’erreur pour chacune d’elles. Les scores pour ces mesures de performances de modèle sont affichés sur une page volante pour la série de formation. Pour obtenir une description de ces mesures, voir la référence [de codage prédictif.](predictive-coding-reference.md)
+  Sur la base de ces comparaisons, le modèle dérive des valeurs pour les métriques de score F, de précision et de rappel, ainsi que la marge d’erreur pour chacune d’elles. Les scores de ces métriques de performances de modèle sont affichés sur une page volante pour la ronde d’entraînement. Pour obtenir une description de ces métriques, consultez la [référence de codage prédictif](predictive-coding-reference.md).
 
-- Enfin, le modèle détermine les 50 éléments suivants qui seront utilisés pour la série de formation suivante. Cette fois, le modèle peut sélectionner 20 éléments du jeu de contrôles et 30 nouveaux éléments du jeu à réviser et les désigner en tant que groupe de formation pour la série suivante. L’échantillonnage de la série de formation suivante n’est pas uniformément échantilloné. Le modèle optimise la sélection d’échantillonnage des éléments du jeu à réviser pour sélectionner les éléments pour lesquels la prédiction est ambiguë, ce qui signifie que le score de prédiction se trouve dans la plage 0,5. Ce processus est appelé sélection *biaisée.*
+- Enfin, le modèle détermine les 50 éléments suivants qui seront utilisés pour la prochaine série d’entraînement. Cette fois, le modèle peut sélectionner 20 éléments dans le jeu de contrôles et 30 nouveaux éléments dans le jeu de révision et les désigner comme jeu d’entraînement pour la prochaine série. L’échantillonnage de la prochaine série d’entraînements n’est pas échantillonnée uniformément. Le modèle optimise la sélection d’échantillonnage des éléments du jeu de révision pour sélectionner les éléments dont la prédiction est ambiguë, ce qui signifie que le score de prédiction se trouve dans la plage de 0,5. Ce processus est appelé *sélection biaisée*.
 
-### <a name="what-happens-after-you-perform-subsequent-training-rounds"></a>Que se passe-t-il après avoir effectué les séries de formation suivantes ?
+### <a name="what-happens-after-you-perform-subsequent-training-rounds"></a>Que se passe-t-il après avoir effectué les cycles d’entraînement suivants ?
 
-Après avoir effectué les séries de formation suivantes (après la première série de formations), le modèle effectue les étapes suivantes :
+Une fois que vous avez effectué les cycles d’entraînement suivants (après la première série d’entraînement), le modèle effectue les opérations suivantes :
 
-- Le modèle est mis à jour en fonction des étiquettes que vous avez appliquées à l’ensemble de formation de cette série de formations.
+- Le modèle est mis à jour en fonction des étiquettes que vous avez appliquées à l’ensemble d’entraînement dans cette série d’entraînement.
 
-- Le système évalue le score de prédiction du modèle sur les éléments du jeu de contrôles et vérifie si le score s’aligne sur la façon dont vous avez étiqueté les éléments dans le jeu de contrôles. L’évaluation est effectuée sur tous les éléments étiquetés à partir du jeu de contrôles pour toutes les séries de formation. Les résultats de cette évaluation sont incorporés dans le tableau de bord sous l’onglet **Vue d’ensemble** du modèle.
+- Le système évalue le score de prédiction du modèle sur les éléments du jeu de contrôles et vérifie si le score s’aligne sur la façon dont vous avez étiqueté les éléments dans le jeu de contrôles. L’évaluation est effectuée sur tous les éléments étiquetés du jeu de contrôles pour toutes les séries d’entraînement. Les résultats de cette évaluation sont incorporés dans le tableau de bord sous l’onglet **Vue d’ensemble** du modèle.
 
-- Le modèle mis à jour retrait chaque élément du jeu à réviser et affectait à chaque élément un score de prédiction mis à jour.
+- Le modèle mis à jour retraite chaque élément du jeu de révision et attribue à chaque élément un score de prédiction mis à jour.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Après avoir effectué la première série de formations, vous pouvez effectuer d’autres séries de formations ou appliquer le filtre de score de prédiction du modèle au jeu à réviser pour afficher les éléments que le modèle a prévu comme pertinents ou non pertinents. Pour plus d’informations, voir [Appliquer un filtre de score de prédiction à un jeu à réviser.](predictive-coding-apply-prediction-filter.md)
+Après avoir effectué la première série d’entraînement, vous pouvez effectuer d’autres cycles d’entraînement ou appliquer le filtre de score de prédiction du modèle au jeu de révision pour afficher les éléments que le modèle a prédits comme pertinents ou non pertinents. Pour plus d’informations, consultez [Appliquer un filtre de score de prédiction à un jeu de révision](predictive-coding-apply-prediction-filter.md).

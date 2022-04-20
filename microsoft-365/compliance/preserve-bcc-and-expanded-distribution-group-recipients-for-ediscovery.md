@@ -12,23 +12,23 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: In-Place les stratégies de conservation, de conservation des litiges et de rétention Microsoft 365 vous permettent de conserver le contenu de la boîte aux lettres pour répondre aux exigences de conformité réglementaire et de découverte électronique.
-ms.openlocfilehash: 1477fbb2425138dc428fe348fbe85cac1f12183b
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: a088407277f7ebced3aa69ee9ff807913f9b0c85
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758550"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64942114"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conserver les destinataires Cci et les destinataires de groupe de distribution étendu pour la découverte électronique
-
-Les conservations de litige, les conservations eDiscovery et [les stratégies de rétention Microsoft 365 (créées](./retention.md) dans le Centre de conformité Microsoft 365) vous permettent de conserver le contenu de la boîte aux lettres pour répondre aux exigences de conformité réglementaire et d’eDiscovery. Les informations sur les destinataires directement adressés dans les champs À et Cc d’un message sont incluses dans tous les messages par défaut. Toutefois, votre organisation peut avoir besoin de la possibilité de rechercher et de reproduire des détails sur tous les destinataires d’un message. Cela inclut les opérations suivantes :
-
-- **Destinataires traités à l’aide du champ CCI d’un message :** Les destinataires CCI sont stockés dans le message dans la boîte aux lettres de l’expéditeur, mais ils ne sont pas inclus dans les en-têtes du message remis aux destinataires.
-
-- **Destinataires de groupes de distribution développés :** Destinataires qui reçoivent le message parce qu’ils sont membres d’un groupe de distribution auquel le message a été adressé, soit dans les champs À, Cc ou Cci.
-
-Exchange Online et Exchange Server 2013 (mise à jour cumulative 7 et versions ultérieures) conservent des informations sur Cci et les destinataires de groupes de distribution étendus. Vous pouvez rechercher ces informations à l’aide d’un outil eDiscovery dans le Centre de conformité Microsoft 365.
-
+  
+Les conservations de litige, les conservations eDiscovery et [les stratégies de rétention Microsoft 365 (créées](./retention.md) dans le portail de conformité Microsoft Purview) vous permettent de conserver le contenu de la boîte aux lettres pour répondre aux exigences de conformité réglementaire et eDiscovery. Les informations sur les destinataires directement adressés dans les champs À et Cc d’un message sont incluses dans tous les messages par défaut. Toutefois, votre organisation peut avoir besoin de la possibilité de rechercher et de reproduire des détails sur tous les destinataires d’un message. Cela inclut les opérations suivantes :
+  
+- **Destinataires traités à l’aide du champ CCI d’un message :** Les destinataires CCI sont stockés dans le message dans la boîte aux lettres de l’expéditeur, mais ils ne sont pas inclus dans les en-têtes du message remis aux destinataires. 
+    
+- **Destinataires de groupes de distribution développés :** Destinataires qui reçoivent le message parce qu’ils sont membres d’un groupe de distribution auquel le message a été adressé, soit dans les champs À, Cc ou Cci. 
+    
+Exchange Online et Exchange Server 2013 (mise à jour cumulative 7 et versions ultérieures) conservent des informations sur Cci et les destinataires de groupes de distribution étendus. Vous pouvez rechercher ces informations à l’aide d’un outil eDiscovery dans le portail de conformité.
+  
 ## <a name="how-bcc-recipients-and-expanded-distribution-group-recipients-are-preserved"></a>Conservation des destinataires en copie carbone invisible et des destinataires de groupe de distribution étendu
 
 Comme indiqué précédemment, les informations sur les destinataires en copie carbone invisible sont stockées avec le message dans la boîte aux lettres de l'expéditeur. Ces informations sont indexées et disponibles pour les recherches et conservations eDiscovery.

@@ -1,5 +1,5 @@
 ---
-title: Configurer un connecteur pour archiver des données à partir de l’archiveur de Enterprise TeleMessage
+title: Configurer un connecteur pour archiver les données à partir de TeleMessage Enterprise Number Archiver
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,70 +11,70 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données SMS et MMS à partir de TeleMessage Enterprise Number Archiver. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 58450875c418c0ea2327d78c7dcadd3c4992fb77
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données SMS et MMS à partir de TeleMessage Enterprise Number Archiver. Cela vous permet d’archiver des données de sources de données tierces dans Microsoft Purview afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
+ms.openlocfilehash: f1353e0140e1411d2cac79fc4d59043046df302d
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322154"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944104"
 ---
-# <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Configurer un connecteur pour archiver les Enterprise number
+# <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Configurer un connecteur pour archiver Enterprise données numériques
 
-Utilisez un connecteur TeleMessage dans le Centre de conformité Microsoft 365 pour importer et archiver des messages SMS (Short Messaging Service) et MMS (Multimedia Messaging Service), des messages de conversation, des enregistrements d’appels vocaux et des journaux d’appels vocaux à partir de l’archiveur de nombres Enterprise. Une fois que vous avez configuré et configuré un connecteur, il se connecte au compte TeleMessage de votre organisation une fois par jour et importe les données de communication mobile des employés à l’aide de l’outil TeleMessage Enterprise Number Archiver dans les boîtes aux lettres de Microsoft 365.
+Utilisez un connecteur TeleMessage dans le portail de conformité Microsoft Purview pour importer et archiver des messages MMS (Short Messaging Service) et Multimedia Messaging Service (MMS), des messages de conversation, des enregistrements d’appels vocaux et des journaux d’appels vocaux à partir de l’archiveur de numéros Enterprise. Après avoir configuré et configuré un connecteur, il se connecte au compte TeleMessage de votre organisation une fois par jour et importe les données de communication mobile des employés à l’aide de TeleMessage Enterprise Number Archiver vers des boîtes aux lettres dans Microsoft 365.
 
-Une fois que les données du connecteur TeleMessage Enterprise Number Archiver sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la recherche de contenu, l’archivage In-Place, l’audit, la conformité des communications et les stratégies de rétention Microsoft 365 aux données de l’archiveur de nombres Enterprise. Par exemple, vous pouvez effectuer une recherche dans le SMS, mmS et l’appel vocal de l’archiveur de numéro de télémessage Enterprise à l’aide de la recherche de contenu ou associer la boîte aux lettres qui contient les données du connecteur de l’archiveur de nombres Enterprise à un dépositaire dans un cas Advanced eDiscovery. L’utilisation d Enterprise un connecteur d’archivage de nombres pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois que les données du connecteur TeleMessage Enterprise Number Archiver sont stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, la recherche de contenu, l’archivage In-Place, l’audit, la conformité des communications et les stratégies de rétention Microsoft 365 pour Enterprise données d’archivage numérique. Par exemple, vous pouvez effectuer une recherche dans TeleMessage Enterprise SMS, MMS et Appel vocal de l’archiveur de numéros à l’aide de la recherche de contenu ou associer la boîte aux lettres contenant les données du connecteur d’archivage de numéros Enterprise à un consignateur dans un cas eDiscovery (Premium). L’utilisation d’un connecteur Enterprise Number Archiver pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
-## <a name="overview-of-archiving-enterprise-number-data"></a>Vue d’ensemble des données de Enterprise’archivage
+## <a name="overview-of-archiving-enterprise-number-data"></a>Vue d’ensemble de l’archivage Enterprise données numériques
 
 La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver Enterprise données réseau dans Microsoft 365.
 
 ![Enterprise flux de travail d’archivage de nombres.](../media/EnterpriseNumberConnectorWorkflow.png)
 
-1. Votre organisation travaille avec TeleMessage pour configurer un connecteur Enterprise Archiveur de nombres. Pour plus d’informations, voir [ici](https://www.telemessage.com/office365-activation-for-enterprise-number-archiver/).
+1. Votre organisation travaille avec TeleMessage pour configurer un connecteur Enterprise Number Archiver. Pour plus d’informations, reportez-vous à [cet article](https://www.telemessage.com/office365-activation-for-enterprise-number-archiver/).
 
-2. Le connecteur Enterprise Number Archiver que vous créez dans le Centre de conformité Microsoft 365 se connecte au site TeleMessage tous les jours et transfère les messages électroniques des 24 heures précédentes vers une zone stockage Azure sécurisée dans Microsoft Cloud.
+2. Le connecteur Enterprise Number Archiver que vous créez dans le portail de conformité se connecte au site TeleMessage tous les jours et transfère les messages électroniques des 24 dernières heures vers une zone de stockage Azure sécurisée dans le cloud Microsoft.
 
-3. Le connecteur importe les éléments de communication mobile dans la boîte aux lettres d’un utilisateur spécifique. Un nouveau dossier nommé Enterprise Archiveur des nombres est créé dans la boîte aux lettres de l’utilisateur spécifique et les éléments y sont importés. Le connecteur est mappage à l’aide de la valeur de la propriété *d’adresse de messagerie de l’utilisateur* . Chaque message électronique contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant du message électronique. Outre le mappage automatique des utilisateurs à l’aide de la valeur de la propriété *d’adresse de messagerie de l’utilisateur* , vous pouvez également définir un mappage personnalisé en téléchargeant un fichier de mappage CSV. Ce fichier de mappage doit contenir le numéro mobile de l’utilisateur et l’adresse Microsoft 365 boîte aux lettres correspondante pour chaque utilisateur. Si vous activez le mappage utilisateur automatique et fournissez un mappage personnalisé, pour chaque élément de courrier électronique, le connecteur examinera d’abord le fichier de mappage personnalisé. S’il ne trouve pas d’utilisateur Microsoft 365 valide correspondant au numéro de téléphone mobile d’un utilisateur, le connecteur utilise la propriété d’adresse de messagerie de l’utilisateur de l’élément de courrier. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans la propriété *d’adresse de messagerie de l’utilisateur* de l’élément de courrier, l’élément n’est pas importé.
+3. Le connecteur importe les éléments de communication mobile dans la boîte aux lettres d’un utilisateur spécifique. Un nouveau dossier nommé Enterprise Archiveur de nombres est créé dans la boîte aux lettres de l’utilisateur spécifique et les éléments y sont importés. Le connecteur effectue un mappage à l’aide de la valeur de la propriété *d’adresse e-mail de l’utilisateur* . Chaque message électronique contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant du message électronique. Outre le mappage automatique des utilisateurs à l’aide de la valeur de la propriété *d’adresse e-mail de l’utilisateur* , vous pouvez également définir un mappage personnalisé en chargeant un fichier de mappage CSV. Ce fichier de mappage doit contenir le numéro mobile de l’utilisateur et l’adresse de boîte aux lettres Microsoft 365 correspondante pour chaque utilisateur. Si vous activez le mappage automatique des utilisateurs et fournissez un mappage personnalisé, pour chaque élément de messagerie, le connecteur examine d’abord le fichier de mappage personnalisé. S’il ne trouve pas de Microsoft 365 utilisateur valide qui correspond au numéro de téléphone mobile d’un utilisateur, le connecteur utilise la propriété d’adresse e-mail de l’utilisateur de l’élément de messagerie. Si le connecteur ne trouve pas de Microsoft 365 utilisateur valide dans le fichier de mappage personnalisé ou dans la propriété *d’adresse e-mail de l’élément* de courrier, l’élément n’est pas importé.
 
 ## <a name="before-you-set-up-a-connector"></a>Avant de configurer un connecteur
 
 Certaines des étapes d’implémentation requises pour archiver Enterprise données de l’archiveur de nombres sont externes à Microsoft 365 et doivent être effectuées avant de pouvoir créer le connecteur dans le centre de conformité.
 
-- Commandez [le service Enterprise’archivage des nombres à partir de TeleMessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365) et obtenez un compte d’administration valide pour votre organisation. Vous devrez vous inscrire à ce compte lorsque vous créerez le connecteur dans le centre de conformité.
+- Commandez le [service d’archivage de numéros Enterprise à partir de TeleMessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365) et obtenez un compte d’administration valide pour votre organisation. Vous devez vous connecter à ce compte lorsque vous créez le connecteur dans le centre de conformité.
 
-- Enregistrez tous les utilisateurs Enterprise’archivage réseau SMS/MMS number dans le compte TeleMessage. Lors de l’inscription des utilisateurs, n’oubliez pas d’utiliser la même adresse de messagerie que celle utilisée pour Microsoft 365 compte.
+- Inscrivez tous les utilisateurs qui nécessitent Enterprise’archivage du réseau SMS/MMS dans le compte TeleMessage. Lors de l’inscription des utilisateurs, veillez à utiliser la même adresse e-mail que celle utilisée pour leur compte Microsoft 365.
 
 - Installez et activez l’application TeleMessage Enterprise Number Archiver sur les téléphones mobiles de vos employés.
 
-- L’utilisateur qui crée un connecteur Enterprise’archiveur de nombres doit avoir le rôle d’administrateur du connecteur de données. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le Centre de conformité Microsoft 365. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et conformité » dans Autorisations dans le Centre de sécurité [& conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le Centre de conformité Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Le rôle Administrateur du connecteur de données doit être attribué à l’utilisateur qui crée un connecteur Enterprise Archiveur de données. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ce connecteur de données TeleMessage est disponible dans Cloud de la communauté du secteur public environnements dans Microsoft 365 cloud du gouvernement américain. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui sont en dehors de l’infrastructure Microsoft 365 et qui, par conséquent, ne sont pas couverts par les engagements en matière de conformité et de protection des données Microsoft 365. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
+- Ce connecteur de données TeleMessage est disponible dans Cloud de la communauté du secteur public environnements dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de Microsoft Purview et de protection des données. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
 
-## <a name="create-an-enterprise-number-archiver-connector"></a>Créer un connecteur Enterprise’archiveur de nombres
+## <a name="create-an-enterprise-number-archiver-connector"></a>Créer un connecteur Enterprise Number Archiver
 
-Une fois que vous avez rempli les conditions préalables décrites dans la section précédente, vous pouvez créer un connecteur Enterprise Archiveur de nombres dans le Centre de conformité Microsoft 365. Le connecteur utilise les informations que vous fournissez pour vous connecter au site TeleMessage et transférer des SMS, MMS et des messages d’appel vocal vers les boîtes aux lettres utilisateur correspondantes dans Microsoft 365.
+Une fois que vous avez rempli les conditions préalables décrites dans la section précédente, vous pouvez créer un connecteur Enterprise Archiveur de numéros dans le portail de conformité. Le connecteur utilise les informations que vous fournissez pour se connecter au site TeleMessage et transférer les SMS, MMS et les messages d’appel vocal vers les boîtes aux lettres utilisateur correspondantes dans Microsoft 365.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** \> **Enterprise Number Archiver**.
+1. Accédez, [https://compliance.microsoft.com](https://compliance.microsoft.com/) puis cliquez sur **Connecteurs** \> de données **Enterprise Archiveur de nombres**.
 
-2. Dans la page Enterprise description du produit **Archiveur** de nombres, cliquez **sur Ajouter un connecteur**
+2. Dans la page de description du produit **Enterprise Archiveur** de nombres, cliquez sur **Ajouter un connecteur**
 
 3. Dans la page **Conditions d’utilisation** , cliquez sur **Accepter**.
 
 4. Dans la page **Connexion à TeleMessage** , sous l’étape 3, entrez les informations requises dans les zones suivantes, puis cliquez sur **Suivant**.
 
-   - **Nom d’utilisateur :** Votre nom d’utilisateur TeleMessage.
+   - **Nom d'utilisateur:** Votre nom d’utilisateur TeleMessage.
 
-   - **Mot de passe :** Votre mot de passe TeleMessage.
+   - **Mot de passe:** Votre mot de passe TeleMessage.
 
-5. Une fois le connecteur créé, vous pouvez fermer la fenêtre pop-up et passer à la page suivante.
+5. Une fois le connecteur créé, vous pouvez fermer la fenêtre contextuelle et accéder à la page suivante.
 
-6. Dans la page **Mappage des utilisateurs** , activez le mappage utilisateur automatique. Pour activer le mappage personnalisé, téléchargez un fichier CSV qui contient les informations de mappage utilisateur, puis cliquez sur **Suivant**.
+6. Dans la page **De mappage d’utilisateurs** , activez le mappage automatique des utilisateurs. Pour activer le mappage personnalisé, chargez un fichier CSV qui contient les informations de mappage utilisateur, puis cliquez sur **Suivant**.
 
-7. Examinez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
+7. Passez en revue vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
 
-8. Go to the Connectors tab in **Data connectors** page to see the progress of the import process for the new connector.
+8. Accédez à l’onglet Connecteurs de la page **Connecteurs de données** pour voir la progression du processus d’importation du nouveau connecteur.
 
 ## <a name="known-issues"></a>Problèmes détectés
 
-- Pour l’instant, nous ne ons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.
+- Pour l’instant, nous ne prenons pas en charge l’importation de pièces jointes ou d’éléments supérieurs à 10 Mo. La prise en charge des éléments plus volumineux sera disponible ultérieurement.

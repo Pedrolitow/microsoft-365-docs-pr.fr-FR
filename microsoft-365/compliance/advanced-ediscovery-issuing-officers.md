@@ -1,5 +1,5 @@
 ---
-title: Gérer les responsables de l’émission dans Advanced eDiscovery
+title: Gérer les agents émetteurs dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,52 +15,52 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Vous pouvez ajouter des responsables de l’émission à l’échelle de l’organisation dans Advanced eDiscovery afin qu’ils soient ajoutés à n’importe quelle communication de garde dans n’importe quel cas de votre organisation.
-ms.openlocfilehash: 21c5a3db9cb0cfefb26bc75537f298c7e8a5c09a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Vous pouvez ajouter des agents d’émission à l’échelle de l’organisation dans eDiscovery (Premium) afin qu’ils puissent être ajoutés à n’importe quelle communication de garde dans n’importe quel cas de votre organisation.
+ms.openlocfilehash: 076e6ea8b8dbef18c6c34221937a039fc43fad75
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319182"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64942994"
 ---
-# <a name="manage-issuing-officers-in-advanced-ediscovery"></a>Gérer les responsables de l’émission dans Advanced eDiscovery
+# <a name="manage-issuing-officers-in-ediscovery-premium"></a>Gérer les agents émetteurs dans eDiscovery (Premium)
 
-Lorsque vous ou d’autres personnes créez une notification de conservation ou tout autre type de communication qui est envoyé à un utilisateur qui est un dépositaire au cas où, vous devez spécifier un responsable de l’émission. La notification est envoyée au dépositaire au nom du responsable de l’émission spécifié. Par exemple, un technicien juridique de votre organisation peut être responsable de la création et de l’envoi de notifications de conservation aux dépositaires dans un cas. Dans ce scénario, l’avocat juridique peut spécifier un avocat dans l’organisation comme responsable de l’émission. Qui peut être spécifié en tant que responsable de l’émission ? Il existe deux types d’utilisateurs qui peuvent être sélectionnés en tant que responsable de l’émission pour la communication d’un dépositaire :
+Lorsque vous ou d’autres personnes créez une notification de suspension ou tout autre type de communication envoyé à un utilisateur qui est un gardien au cas où, vous devez spécifier un agent émetteur. La notification est envoyée au consignat pour le compte de l’agent émetteur spécifié. Par exemple, un parajuriste de votre organisation peut être responsable de la création et de l’envoi de notifications de conservation aux consignatateurs dans un cas. Dans ce scénario, le parajuriste peut spécifier un avocat dans l’organisation en tant qu’agent d’émission. Qui peut être spécifié en tant qu’agent d’émission ? Il existe deux types d’utilisateurs qui peuvent être sélectionnés en tant qu’agent d’émission pour une communication de consignation :
 
 - Tout membre du cas spécifique dont la communication est envoyée au nom de.
 
-- Tout utilisateur ajouté à la liste des responsables de l’émission à l’échelle de l’organisation. Les utilisateurs de cette liste peuvent être ajoutés à n’importe quel cas de votre organisation par un responsable de l’émission.
+- Tout utilisateur ajouté à une liste d’agents d’émission à l’échelle de l’organisation. Les utilisateurs de cette liste peuvent être ajoutés à n’importe quel cas de votre organisation par un agent d’émission.
 
-Cet article explique comment ajouter et supprimer des utilisateurs à la liste des responsables de l’émission à l’échelle de l’organisation.
+Cet article explique comment ajouter et supprimer des utilisateurs à la liste des agents d’émission à l’échelle de l’organisation.
 
-## <a name="before-you-add-an-issuing-officer"></a>Avant d’ajouter un responsable de l’émission
+## <a name="before-you-add-an-issuing-officer"></a>Avant d’ajouter un agent d’émission
 
-- Vous devez être administrateur eDiscovery dans votre organisation pour ajouter ou supprimer des responsables de l’émission. Pour plus d’informations, [voir Attribuer des autorisations eDiscovery dans le Centre de conformité Microsoft 365](assign-ediscovery-permissions.md)  
+- Vous devez être administrateur eDiscovery dans votre organisation pour ajouter ou supprimer des agents émetteurs. Pour plus d’informations, consultez [Affecter des autorisations eDiscovery dans le portail de conformité Microsoft Purview](assign-ediscovery-permissions.md)  
 
-- L’utilisateur ajouté en tant qu’agent d’émission doit avoir une boîte aux lettres active dans Microsoft 365 organisation.
+- L’utilisateur ajouté en tant qu’agent d’émission doit disposer d’une boîte aux lettres active dans votre organisation Microsoft 365.
 
-- Votre organisation peut avoir un maximum de 15 responsables de l’émission. Les membres d’un cas qui peuvent être spécifiés comme responsable de l’émission ne sont pas comptabilisés dans cette limite. Cette limite s’applique uniquement au nombre d’utilisateurs qui peuvent être ajoutés à **la page Des** responsables de l’émission dans Advanced eDiscovery.
+- Votre organisation peut avoir un maximum de 15 agents émetteurs. Les membres d’un cas qui peuvent être spécifiés en tant qu’agent d’émission ne sont pas comptabilisés dans cette limite. Cette limite s’applique uniquement au nombre d’utilisateurs qui peuvent être ajoutés à la page **Agents** d’émission dans eDiscovery (Premium).
 
-## <a name="add-an-issuing-officer"></a>Ajouter un responsable de l’émission
+## <a name="add-an-issuing-officer"></a>Ajouter un agent d’émission
 
-1. Dans la Centre de conformité Microsoft 365, [Advanced eDiscovery, puis](https://go.microsoft.com/fwlink/p/?linkid=2173764) cliquez **sur Advanced eDiscovery paramètres**.
+1. Dans le portail de conformité, accédez à [eDiscovery (Premium),](https://go.microsoft.com/fwlink/p/?linkid=2173764) puis cliquez sur **les paramètres eDiscovery (Premium**).
 
-   ![Sélectionner Advanced eDiscovery paramètres](..\media\HistoricalVersions1.png)
+   ![Sélectionner les paramètres eDiscovery (Premium)](..\media\HistoricalVersions1.png)
 
-2. Dans la page **Paramètres**, sélectionnez l’onglet  Responsables de l’émission pour afficher la page Gérer les **responsables de l’émission**.
+2. Dans la page **Paramètres**, sélectionnez l’onglet **Agents d’émission** pour afficher la page **Gérer les agents émetteurs**.
 
-   ![Page paramètres des responsables de l’émission.](..\media\AeDIssuingOfficers1.png)
+   ![Page des paramètres des agents d’émission.](..\media\AeDIssuingOfficers1.png)
 
-3. Cliquez **sur** Ajouter, puis recherchez et ajoutez un ou plusieurs utilisateurs à la liste des responsables de l’émission.
+3. Cliquez sur **Ajouter** , puis recherchez et ajoutez un ou plusieurs utilisateurs à la liste des agents émetteurs.
 
-Une fois que vous avez ajouté des utilisateurs comme responsables de l’émission, vous ou d’autres utilisateurs pourrez spécifier ces utilisateurs en tant que responsables de l’émission des communications des dépositaires pour tous les cas de votre organisation. Pour plus d’informations sur la création de communications de dépositaire, voir [Créer une notification de conservation légale](create-hold-notification.md).
+Une fois que vous avez ajouté des utilisateurs en tant qu’agents d’émission, vous ou d’autres utilisateurs pourrez spécifier ces utilisateurs en tant qu’agent d’émission pour les communications de consignation, quel que soit le cas dans votre organisation. Pour plus d’informations sur la création de communications des consignats, consultez [Créer un avis de conservation légale](create-hold-notification.md).
 
-## <a name="remove-an-issuing-officer"></a>Supprimer un responsable de l’émission
+## <a name="remove-an-issuing-officer"></a>Supprimer un agent d’émission
 
-1. Dans la Centre de conformité Microsoft 365, [Advanced eDiscovery, puis](https://go.microsoft.com/fwlink/p/?linkid=2173764) cliquez **sur Advanced eDiscovery paramètres**.
+1. Dans le portail de conformité, accédez à [eDiscovery (Premium),](https://go.microsoft.com/fwlink/p/?linkid=2173764) puis cliquez sur **les paramètres eDiscovery (Premium**).
 
-2. Dans la page **Paramètres**, sélectionnez l’onglet **Responsables de l’émission**.
+2. Dans la page **Paramètres**, sélectionnez l’onglet **Agents d’émission**.
 
-3. Sélectionnez un ou plusieurs utilisateurs dans la liste des responsables de l’émission, puis cliquez sur **Supprimer**.
+3. Sélectionnez un ou plusieurs utilisateurs dans la liste des agents d’émission, puis cliquez sur **Supprimer**.
 
-Une fois que vous avez supprimé des utilisateurs de la liste des responsables de l’émission, ces utilisateurs ne peuvent plus être spécifiés en tant que responsables de l’émission dans les nouvelles communications de dépositaire, sauf si l’utilisateur est membre du cas spécifique dont la communication est émise. En outre, la suppression d’un responsable de l’émission n’affectera pas les communications qui ont été envoyées avant que l’utilisateur ne soit supprimé de son rôle.
+Une fois que vous avez supprimé des utilisateurs de la liste des agents d’émission, ces utilisateurs ne peuvent plus être spécifiés en tant qu’agent émetteur dans les nouvelles communications de consignation, sauf si l’utilisateur est membre du cas spécifique à partir duquel la communication est émise. En outre, la suppression d’un agent d’émission n’affecte pas les communications envoyées avant la suppression de l’utilisateur en tant qu’agent d’émission.

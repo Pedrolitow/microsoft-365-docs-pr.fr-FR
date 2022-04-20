@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: Découvrez comment déployer des équipes avec la protection des données sensibles.
-ms.openlocfilehash: 51e4c3b13d1a54e4edcfd9926ae246dde7d7e3e4
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 2ea13fbf8a677ba4a04efbd0b2a6fdfed7d80644
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63712696"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64941278"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Configurer les équipes avec la protection des données sensibles
 
@@ -64,7 +64,7 @@ Si vous avez déjà déployé des étiquettes de confidentialité au sein de vot
 Une fois que vous avez activé les étiquettes de confidentialité pour Teams, l’étape suivante consiste à créer l’étiquette.
 
 Pour créer une étiquette de confidentialité
-1. Ouvrez [Centre de conformité Microsoft 365](https://compliance.microsoft.com).
+1. Ouvrez le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com).
 2. Sous **Solutions**, cliquez sur **Protection des informations**.
 3. Cliquez sur **Créer une étiquette**.
 4. Donnez un nom à l’étiquette. Nous vous suggérons **Sensible**, mais vous pouvez choisir un autre nom si celui-ci est déjà utilisé.
@@ -83,7 +83,7 @@ Pour créer une étiquette de confidentialité
 17. Dans la page **Étiquetage automatique pour les colonnes de base de données** , cliquez sur **Suivant**.
 18. Cliquez sur **Créer une étiquette**, puis sur **Terminé**.
 
-Une fois que vous avez créé l’étiquette, vous devez la publier aux utilisateurs qui l’utiliseront. Pour une protection sensible, nous allons mettre l’étiquette à la disposition de tous les utilisateurs. Vous publiez l’étiquette dans le Centre de conformité Microsoft 365, sur l’onglet **Stratégies d’étiquette** de la page **Protection des informations**. Si vous avez une stratégie existante qui s’applique à tous les utilisateurs, ajoutez cette étiquette à cette stratégie. Si vous avez besoin de créer une stratégie, consultez [Publier des étiquettes de confidentialité en créant une stratégie d’étiquette](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
+Une fois que vous avez créé l’étiquette, vous devez la publier aux utilisateurs qui l’utiliseront. Pour une protection sensible, nous allons mettre l’étiquette à la disposition de tous les utilisateurs. Vous publiez l’étiquette dans le portail de conformité Microsoft Purview, sous l’onglet **Stratégies d’étiquette** de la page **Protection des données**. Si vous avez une stratégie existante qui s’applique à tous les utilisateurs, ajoutez cette étiquette à cette stratégie. Si vous avez besoin de créer une stratégie, consultez [Publier des étiquettes de confidentialité en créant une stratégie d’étiquette](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
 
 ## <a name="create-a-team"></a>Créer une équipe
 
@@ -111,7 +111,7 @@ Vous pouvez également utiliser les [stratégies d’équipes](/MicrosoftTeams/t
 
 ## <a name="shared-channel-settings"></a>Paramètres de canal partagé
 
-[Les canaux partagés](/MicrosoftTeams/shared-channels) n’ont pas de paramètres au niveau de l’équipe. Les paramètres de canal partagé que vous configurez dans le Centre d’administration Teams et Azure AD s’appliquent à toutes les équipes, quel que soit le niveau de confidentialité.
+Les [Canaux partagés](/MicrosoftTeams/shared-channels) n’ont pas de paramètres au niveau de l’équipe. Les paramètres de canal partagé que vous configurez dans le Centre d’administration Teams et Azure AD s’appliquent à toutes les équipes, quel que soit le niveau de confidentialité.
 
 ## <a name="sharepoint-settings"></a>Paramètres de SharePoint
 

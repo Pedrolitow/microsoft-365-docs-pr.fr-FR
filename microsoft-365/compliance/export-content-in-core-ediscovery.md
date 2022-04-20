@@ -1,5 +1,5 @@
 ---
-title: Exporter et télécharger du contenu à partir d’un cas core eDiscovery
+title: Exporter et télécharger du contenu à partir d’un cas eDiscovery (Standard)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,56 +17,56 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
-description: Décrit comment exporter et télécharger du contenu à partir d’un cas core eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 1d998a4b1eb540a1d96afc3acd3518d0c604a7e9
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+description: Décrit comment exporter et télécharger du contenu à partir d’un cas eDiscovery (Standard) dans Microsoft 365.
+ms.openlocfilehash: a0ea33d599ed609c24cf63f1df4c68b882364b1b
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60787009"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64937958"
 ---
-# <a name="export-content-from-a-core-ediscovery-case"></a>Exporter le contenu à partir d'une affaire d' eDiscovery de base
+# <a name="export-content-from-a-ediscovery-standard-case"></a>Exporter du contenu à partir d’un cas eDiscovery (Standard)
 
-Une fois qu’une recherche associée à un cas core eDiscovery a été correctement exécuté, vous pouvez exporter les résultats de la recherche. Lorsque vous exportez des résultats de recherche, les éléments de boîte aux lettres sont téléchargés dans des fichiers PST ou sous la mesure de messages individuels. Lorsque vous exportez du contenu à SharePoint sites OneDrive Entreprise sites, des copies de documents Office et d’autres documents sont exportées. Un Results.csv qui contient des informations sur chaque élément exporté et un fichier manifeste (au format XML) qui contient des informations sur chaque résultat de recherche est également exporté.
+Une fois qu’une recherche associée à un cas Microsoft Purview eDiscovery (Standard) est exécutée, vous pouvez exporter les résultats de la recherche. Lorsque vous exportez des résultats de recherche, les éléments de boîte aux lettres sont téléchargés dans des fichiers PST ou en tant que messages individuels. Lorsque vous exportez du contenu à partir de sites SharePoint et OneDrive Entreprise, des copies de documents Office natifs et d’autres documents sont exportées. Un fichier Results.csv qui contient des informations sur chaque élément exporté et un fichier manifeste (au format XML) qui contient des informations sur chaque résultat de recherche est également exporté.
   
 ## <a name="export-search-results"></a>Exporter les résultats de la recherche
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions.
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a> et connectez-vous à l’aide des informations d’identification du compte d’utilisateur qui a reçu les autorisations eDiscovery appropriées.
 
-2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, sélectionnez Afficher **tout,** puis **sélectionnez eDiscovery**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a>.
+2. Dans le volet de navigation gauche du portail de conformité, **sélectionnez Afficher tout**, puis **sélectionnez eDiscoveryCore** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank"></a>
 
-3. Dans la page **Core eDiscovery,** cliquez sur le nom du cas où vous souhaitez créer la attente.
+3. Dans la page **eDiscovery (Standard),** cliquez sur le nom du cas dans lequel vous souhaitez créer la conservation.
 
-4. Dans la page **d’accueil** du cas, cliquez sur **l’onglet Recherches.**
+4. Dans la page **d’accueil** du cas, cliquez sur l’onglet **Recherches** .
 
-5. Dans le menu **Actions** en bas de la page volante, cliquez sur **Exporter les résultats.**
+5. Dans le menu **Actions** en bas de la page de menu volant, cliquez sur **Exporter les résultats**.
 
    ![Option Exporter les résultats dans le menu Actions.](../media/ActionMenuExportResults.png)
 
-   Le flux de travail pour exporter les résultats d’une recherche associée à un cas core eDiscovery est identique à l’exportation des résultats de recherche pour une recherche sur la page de recherche **de** contenu. Pour obtenir des instructions détaillées, voir Exporter les résultats [de recherche de contenu.](export-search-results.md)
+   Le flux de travail permettant d’exporter les résultats d’une recherche associée à un cas eDiscovery (Standard) est identique à l’exportation des résultats de recherche pour une recherche sur la page **Recherche** de contenu. Pour obtenir des instructions pas à pas, consultez [Exporter les résultats de la recherche de contenu](export-search-results.md).
 
    > [!NOTE]
-   > Lorsque vous exportez des résultats de recherche, vous avez la possibilité d’activer la dédoplication afin qu’une seule copie d’un message électronique soit exportée, même si plusieurs instances du même message ont pu être trouvées dans les boîtes aux lettres qui ont fait l’être. Pour plus d’informations sur la dédoplication et la façon dont les éléments dupliqués sont identifiés, voir Dédoplication dans les résultats de recherche [eDiscovery](de-duplication-in-ediscovery-search-results.md).
+   > Lorsque vous exportez des résultats de recherche, vous avez la possibilité d’activer la dédoublement afin qu’une seule copie d’un e-mail soit exportée, même si plusieurs instances du même message ont pu être trouvées dans les boîtes aux lettres qui ont fait l’objet d’une recherche. Pour plus d’informations sur la déduplication et la façon dont les éléments en double sont identifiés, consultez [Déduplication dans les résultats de la recherche eDiscovery](de-duplication-in-ediscovery-search-results.md).
 
-   Une fois l’exportation commencée, les résultats de la recherche sont préparés pour le téléchargement, ce qui signifie qu’ils sont transférés vers un emplacement fourni par Microsoft stockage Azure dans le cloud Microsoft.
+   Une fois que vous avez démarré l’exportation, les résultats de la recherche sont préparés pour le téléchargement, ce qui signifie qu’ils sont transférés vers un emplacement de stockage Azure fourni par Microsoft dans le cloud Microsoft.
   
-6. Cliquez sur **l’onglet Exports** dans le cas pour afficher la liste des travaux d’exportation.
+6. Cliquez sur l’onglet **Exportations** dans le cas pour afficher la liste des travaux d’exportation.
   
-   ![Exporter des travaux sous l’onglet Exportation dans le cas core eDiscovery.](../media/CoreeDiscoveryExport.png)
+   ![Exporter des travaux sous l’onglet Exporter dans le cas eDiscovery (Standard).](../media/CoreeDiscoveryExport.png)
 
-   Vous de devez peut-être cliquer sur **Actualiser** pour mettre à jour la liste des tâches d’exportation afin qu’elle affiche la tâche d’exportation que vous avez créée. Les travaux d’exportation ont le même nom que la recherche correspondante avec **_Export** au nom de recherche.
+   Vous devrez peut-être cliquer sur **Actualiser** pour mettre à jour la liste des travaux d’exportation afin qu’elle affiche le travail d’exportation que vous avez créé. Les travaux d’exportation portent le même nom que la recherche correspondante avec **_Export** ajoutées au nom de recherche.
 
-7. Cliquez sur la tâche d’exportation que vous avez créée pour afficher les informations d’état sur la page volante. Ces informations incluent le pourcentage d’éléments qui ont été transférés vers stockage Azure’emplacement.
+7. Cliquez sur le travail d’exportation que vous avez créé pour afficher les informations d’état dans la page de menu volant. Ces informations incluent le pourcentage d’éléments qui ont été transférés vers l’emplacement de stockage Azure.
 
-8. Une fois tous les éléments transférés, cliquez sur **Télécharger** les résultats pour télécharger les résultats de la recherche sur votre ordinateur local. Pour plus d’informations sur le téléchargement des résultats de recherche, voir l’étape 2 de [l’exportation des](export-search-results.md#step-2-download-the-search-results) résultats de recherche de contenu
+8. Une fois tous les éléments transférés, cliquez sur **Télécharger les résultats** pour télécharger les résultats de la recherche sur votre ordinateur local. Pour plus d’informations sur le téléchargement des résultats de la recherche, consultez l’étape 2 dans [Exporter les résultats de la recherche de contenu](export-search-results.md#step-2-download-the-search-results)
 
 > [!NOTE]
-> Les résultats de recherche exportés doivent être téléchargés dans les 14 jours suivant la création de la tâche d’exportation.
+> Les résultats de recherche exportés doivent être téléchargés dans les 14 jours suivant la création du travail d’exportation.
 
 ### <a name="more-information-about-exporting-searches-from-a-case"></a>Plus d’informations sur l’exportation de recherches à partir d’un cas
 
-- Pour plus d’informations sur les fichiers d’exportation inclus lorsque vous exportez des résultats de recherche, voir [Exporter un rapport de recherche de contenu.](export-a-content-search-report.md#whats-included-in-the-report)
+- Pour plus d’informations sur les fichiers d’exportation inclus lors de l’exportation des résultats de recherche, consultez [Exporter un rapport de recherche de contenu](export-a-content-search-report.md#whats-included-in-the-report).
 
-- Si vous redémarrez l’exportation, les modifications apportées aux requêtes des recherches qui font la tâche d’exportation n’affecteront pas les résultats de recherche récupérés. Lorsque vous redémarrez une exportation, le même travail de requête de recherche combiné qui a été exécuté lors de la création de la tâche d’exportation est ré-exécuté.
+- Si vous redémarrez l’exportation, les modifications apportées aux requêtes des recherches qui composent le travail d’exportation n’affecteront pas les résultats de recherche récupérés. Lorsque vous redémarrez une exportation, le même travail de requête de recherche combiné qui a été exécuté lors de la création du travail d’exportation est réexécuté.
 
-- En outre, si vous redémarrez une exportation, les résultats de la recherche qui sont copiés vers l’emplacement stockage Azure de recherche ont la valeur par rapport aux résultats précédents. Les résultats précédents qui ont été copiés ne pourront pas être téléchargés.
+- En outre, si vous redémarrez une exportation, les résultats de recherche copiés vers l’emplacement stockage Azure remplacent les résultats précédents. Les résultats précédents qui ont été copiés ne seront pas disponibles pour être téléchargés.

@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 56d666f1deff43f872ad265c625302980669ecd9
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 8a5029ad6de3de33eacdf814729ed2eafcd2cf89
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862101"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64941674"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Si votre organisation dispose [d’Microsoft Defender pour Office 365](defender-for-office-365.md) et que vous disposez [des autorisations nécessaires](#required-licenses-and-permissions), vous disposez de **détections** **d’Explorateur** ou en temps réel (anciennement *rapports en temps réel* , [découvrez les nouveautés](#new-features-in-threat-explorer-and-real-time-detections)!). Dans le Centre de sécurité & conformité, accédez à **Gestion des menaces**, puis choisissez **l’Explorateur** _ou_ **les détections en temps réel**.
 
@@ -206,7 +206,7 @@ Les améliorations sont les suivantes :
 
 - Affichez l’URL cliqué (y compris les paramètres de requête qui font partie de l’URL) dans la section **Clics** du menu volant de l’URL. Actuellement, le domaine et le chemin d’accès de l’URL apparaissent dans la barre de titre. Nous étendons ces informations pour afficher l’URL complète.
 
-- Correctifs entre les filtres d’URL (*URL* ou *domaine d’URL* et *domaine d’URL et chemin d’accès*) : les mises à jour affectent la recherche de messages contenant une URL/cliquez sur le verdict. Nous avons activé la prise en charge des recherches sans protocole, afin que vous puissiez rechercher une URL sans utiliser `http`. Par défaut, la recherche d’URL est mappée à http, sauf si une autre valeur est explicitement spécifiée. Par exemple :
+- Correctifs entre les filtres d’URL (*URL* ou *domaine d’URL* et *domaine d’URL et chemin d’accès*) : les mises à jour affectent la recherche de messages contenant une URL/cliquez sur le verdict. Nous avons activé la prise en charge des recherches sans protocole, afin que vous puissiez rechercher une URL sans utiliser `http`. Par défaut, la recherche d’URL est mappée à http, sauf si une autre valeur est explicitement spécifiée. Par exemple :
   - Effectuez une recherche avec et sans le `http://` préfixe dans les champs **de filtre URL**, **Domaine d’URL** et **Domaine d’URL et Chemin d’accès** . Les recherches doivent afficher les mêmes résultats.
   - Recherchez le `https://` préfixe dans **l’URL**. Lorsqu’aucune valeur n’est spécifiée, le `http://` préfixe est supposé.
   - `/` est ignoré au début et à la fin du **chemin d’URL**, **du domaine d’URL**, du **domaine d’URL et** des champs de chemin d’accès. `/` à la fin du champ **URL** est ignoré.
@@ -288,7 +288,7 @@ Vous pourrez voir à la fois le GUID et le nom des règles de transport qui ont 
 > [!IMPORTANT]
 > La disponibilité des noms et des recherches ETR dépend du rôle spécifique qui vous est attribué. Vous devez disposer de l’un des rôles/autorisations suivants pour afficher les noms ETR et la recherche. Si aucun de ces rôles ne vous est attribué, vous ne pouvez pas voir les noms des règles de transport ou rechercher des messages à l’aide de noms ETR. Toutefois, vous pouvez voir l’étiquette ETR et les informations GUID dans les détails de l’e-mail. Les autres expériences d’affichage des enregistrements dans les grilles d’e-mail, les menus volants d’e-mail, les filtres et l’exportation ne sont pas affectées.
 >
-> - EXO uniquement - Protection contre la perte de données : tout
+> - EXO uniquement - Protection contre la perte de données : Tout
 > - EXO Uniquement - O365SupportViewConfig: All
 > - Microsoft Azure Active Directory ou EXO - Administrateur de sécurité : tout
 > - AAD ou EXO - Lecteur sécurité : tout

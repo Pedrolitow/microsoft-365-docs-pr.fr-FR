@@ -1,5 +1,5 @@
 ---
-title: Configurer des Advanced eDiscovery dans Microsoft 365
+title: Configurer eDiscovery (Premium) dans Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,57 +19,57 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: Cet article explique comment configurer des Advanced eDiscovery vous permet de commencer à créer et gérer des cas. Il décrit également les abonnements et les licences Microsoft requis. Après quelques étapes rapides, l’outil Advanced eDiscovery est prêt à être utilisé.
-ms.openlocfilehash: cf2d7c6bc770dd6125777c895771b3b61c8ee593
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+description: Cet article explique comment configurer eDiscovery (Premium) afin que vous puissiez commencer à créer et gérer des cas. Il décrit également les abonnements et licences Microsoft requis. Après avoir effectué quelques étapes rapides, l’outil eDiscovery (Premium) est prêt à être utilisé.
+ms.openlocfilehash: 29805066c2db26aca6992dc34ad8bf8c0966ceb7
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786961"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64939914"
 ---
-# <a name="set-up-microsoft-365-advanced-ediscovery"></a>Configurer Microsoft 365 Advanced eDiscovery
+# <a name="set-up-microsoft-purview-ediscovery-premium"></a>Configurer Microsoft Purview eDiscovery (Premium)
 
-Advanced eDiscovery dans Microsoft 365 fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter des données qui répondent aux enquêtes internes et externes de votre organisation. Rien n’est nécessaire pour déployer des Advanced eDiscovery, mais un administrateur informatique et un responsable eDiscovery doivent effectuer certaines tâches préalables avant que votre organisation puisse commencer à créer et utiliser des cas Advanced eDiscovery pour gérer vos enquêtes.
+Microsoft Purview eDiscovery (Premium) fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter des données qui répondent aux investigations internes et externes de votre organisation. Rien n’est nécessaire pour déployer eDiscovery (Premium), mais un administrateur informatique et un responsable eDiscovery doivent effectuer certaines tâches préalables avant que votre organisation puisse commencer à créer et utiliser des cas eDiscovery (Premium) pour gérer vos investigations.
 
-Cet article décrit les étapes suivantes nécessaires à la Advanced eDiscovery.
+Cet article décrit les étapes suivantes nécessaires à la configuration d’eDiscovery (Premium).
 
-![Étapes de la Advanced eDiscovery.](../media/set-up-advanced-ediscovery.png)
+![Étapes de configuration d’eDiscovery (Premium).](../media/set-up-advanced-ediscovery.png)
 
-Cela inclut la garantie de la licence appropriée requise pour accéder aux Advanced eDiscovery et ajouter des dépositaires aux cas, et l’attribution d’autorisations à votre équipe juridique et d’enquête afin qu’elle puisse accéder aux cas et les gérer.
+Cela inclut la garantie des licences appropriées requises pour accéder à eDiscovery (Premium) et ajouter des consignats aux cas, et l’attribution d’autorisations à votre équipe juridique et d’enquête afin qu’elle puisse accéder aux cas et les gérer.
 
 ## <a name="step-1-verify-and-assign-appropriate-licenses"></a>Étape 1 : Vérifier et attribuer les licences appropriées
 
-La gestion des Advanced eDiscovery nécessite l’abonnement d’organisation approprié et la licence par utilisateur. Pour obtenir la liste des conditions de licence requises pour Advanced eDiscovery, voir [Abonnements et licences.](overview-ediscovery-20.md#subscriptions-and-licensing)
+La gestion des licences pour eDiscovery (Premium) nécessite l’abonnement à l’organisation et les licences par utilisateur appropriés. Pour obtenir la liste des exigences de licence pour eDiscovery (Premium), consultez [Abonnements et licences](overview-ediscovery-20.md#subscriptions-and-licensing).
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Étape 2 : Attribuer des autorisations eDiscovery
 
-Pour accéder Advanced eDiscovery ou ajouté en tant que membre d’un Advanced eDiscovery, un utilisateur doit se voir attribuer les autorisations appropriées. Plus précisément, un utilisateur doit être ajouté en tant que membre du groupe de rôles Gestionnaire eDiscovery dans le Centre de conformité Microsoft 365. Les membres de ce groupe de rôles peuvent créer et gérer Advanced eDiscovery cas. Ils peuvent ajouter et supprimer des membres, placer des dépositaires et des emplacements de contenu en conservation, gérer les notifications de conservation légale, créer et modifier des recherches associées à un cas, ajouter des résultats de recherche à un groupe de révision, analyser des données dans un groupe de révision et exporter et télécharger à partir d’un cas Advanced eDiscovery.
+Pour accéder à eDiscovery (Premium) ou être ajouté en tant que membre d’un cas eDiscovery (Premium), un utilisateur doit disposer des autorisations appropriées. Plus précisément, un utilisateur doit être ajouté en tant que membre du groupe de rôles eDiscovery Manager dans le portail de conformité Microsoft Purview. Les membres de ce groupe de rôles peuvent créer et gérer des cas eDiscovery (Premium). Ils peuvent ajouter et supprimer des membres, placer les consignats et les emplacements de contenu en attente, gérer les notifications de suspension légale, créer et modifier des recherches associées dans un cas, ajouter des résultats de recherche à un jeu de révision, analyser les données dans un jeu de révision, et exporter et télécharger à partir d’un cas eDiscovery (Premium).
 
-Pour ajouter des utilisateurs au groupe de rôles Gestionnaire eDiscovery, complétez les étapes suivantes :
+Effectuez les étapes suivantes pour ajouter des utilisateurs au groupe de rôles gestionnaire eDiscovery :
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Centre de conformité Microsoft 365</a>and sign in using the credentials for an admin account in your Microsoft 365 organization.
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">portail de conformité</a> et connectez-vous à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
 
-2. Dans la page **Autorisations,** sélectionnez le groupe de rôles **Gestionnaire eDiscovery.**
+2. Dans la page Autorisations, sélectionnez le groupe de **rôles** **gestionnaire eDiscovery** .
 
-3. Dans la page volante du Gestionnaire  eDiscovery, cliquez sur Modifier à côté de la section Gestionnaire **eDiscovery.**
+3. Dans la page de menu volant eDiscovery Manager, cliquez sur **Modifier** en regard de la section **gestionnaire eDiscovery** .
 
-4. Dans la page Choisir le gestionnaire **eDiscovery** dans l’Assistant Modifier le groupe de rôles, cliquez sur Choisir le Gestionnaire **eDiscovery.**
+4. Dans la page **Choisir le gestionnaire eDiscovery** dans l’Assistant Modifier un groupe de rôles, cliquez sur **Choisir le gestionnaire eDiscovery**.
 
-5. Cliquez **sur** Ajouter, puis cochez la case pour tous les utilisateurs que vous souhaitez ajouter au groupe de rôles.
+5. Cliquez sur **Ajouter** , puis cochez la case pour tous les utilisateurs que vous souhaitez ajouter au groupe de rôles.
 
-6. Cliquez **sur** Ajouter pour ajouter les utilisateurs sélectionnés, puis cliquez sur **Terminé.**
+6. Cliquez sur **Ajouter** pour ajouter les utilisateurs sélectionnés, puis cliquez sur **Terminé**.
 
-7. Cliquez **sur Enregistrer** pour ajouter les utilisateurs au groupe de rôles, puis cliquez sur **Fermer** pour terminer l’étape.
+7. Cliquez sur **Enregistrer** pour ajouter les utilisateurs au groupe de rôles, puis sur **Fermer** pour terminer l’étape.
 
-### <a name="more-information-about-the-ediscovery-manager-role-group"></a>Plus d’informations sur le groupe de rôles Gestionnaire eDiscovery
+### <a name="more-information-about-the-ediscovery-manager-role-group"></a>Plus d’informations sur le groupe de rôles eDiscovery Manager
 
-Il existe deux sous-groupes dans le groupe de rôles Gestionnaire eDiscovery. Ces sous-groupes ont différents rôles.
+Il existe deux sous-groupes dans le groupe de rôles gestionnaire eDiscovery. Ces sous-groupes ont différents rôles.
 
-- **Gestionnaire eDiscovery**: peut afficher et gérer les Advanced eDiscovery cas qu’ils créent ou dont ils sont membres. Si un autre gestionnaire eDiscovery crée un cas mais n’ajoute pas un deuxième gestionnaire eDiscovery en tant que membre de ce cas, le deuxième gestionnaire eDiscovery ne sera pas en mesure d’afficher ou d’ouvrir le cas sur la page Advanced eDiscovery dans le centre de conformité. En règle générale, la plupart des membres de votre organisation peuvent être ajoutés au sous-groupe gestionnaire eDiscovery.
+- **Gestionnaire eDiscovery** : peut afficher et gérer les cas eDiscovery (Premium) qu’ils créent ou dont ils sont membres. Si un autre gestionnaire eDiscovery crée un cas mais n’ajoute pas de deuxième gestionnaire eDiscovery en tant que membre de ce cas, le deuxième gestionnaire eDiscovery ne peut pas afficher ou ouvrir le cas dans la page eDiscovery (Premium) du centre de conformité. En général, la plupart des membres de votre organisation peuvent être ajoutés au sous-groupe eDiscovery Manager.
 
-- **Administrateur eDiscovery**: peut effectuer toutes les tâches de gestion des cas qu’un gestionnaire eDiscovery peut effectuer. De plus, un administrateur de découverte électronique peut :
+- **Administrateur eDiscovery** : peut effectuer toutes les tâches de gestion de cas qu’un gestionnaire eDiscovery peut effectuer. De plus, un administrateur de découverte électronique peut :
 
-  - Afficher tous les cas répertoriés sur la page Advanced eDiscovery.
+  - Affichez tous les cas répertoriés dans la page eDiscovery (Premium).
   
   - Gérer tous les cas au sein l’organisation après s’être ajouté en tant que membre du cas.
 
@@ -77,17 +77,17 @@ Il existe deux sous-groupes dans le groupe de rôles Gestionnaire eDiscovery. Ce
 
   En raison de l’étendue de l’accès, une organisation ne doit avoir que quelques administrateurs membres du sous-groupe administrateurs eDiscovery.
 
-Pour plus d’informations sur les autorisations eDiscovery et une description de chaque rôle attribué au groupe de rôles Gestionnaire eDiscovery, voir Attribuer des [autorisations eDiscovery.](assign-ediscovery-permissions.md)
+Pour plus d’informations sur les autorisations eDiscovery et une description de chaque rôle affecté au groupe de rôles eDiscovery Manager, consultez [Affecter des autorisations eDiscovery](assign-ediscovery-permissions.md).
 
-## <a name="step-3-configure-global-settings-for-advanced-ediscovery"></a>Étape 3 : Configurer les paramètres globaux pour Advanced eDiscovery
+## <a name="step-3-configure-global-settings-for-ediscovery-premium"></a>Étape 3 : Configurer les paramètres globaux pour eDiscovery (Premium)
 
-La dernière étape à effectuer avant que les membres de votre organisation commencent à créer et à utiliser des cas consiste à configurer des paramètres globaux qui s’appliquent à tous les cas de votre organisation. Pour l’instant, le seul paramètre global est la détection des privilèges *client-avocat* (d’autres paramètres globaux seront disponibles à l’avenir). Ce paramètre permet au modèle de privilège client-avocat de s’exécuter lorsque vous analysez des données dans un jeu à réviser. Le modèle utilise l’apprentissage automatique pour déterminer la probabilité qu’un document contienne du contenu de nature juridique. Il compare également les participants des documents à une liste d’avocats (que vous soumettez lors de la configuration du modèle) pour déterminer si un document a au moins un participant qui est avocat.
+La dernière étape à effectuer avant que les membres de votre organisation commencent à créer et à utiliser des cas consiste à configurer des paramètres globaux qui s’appliquent à tous les cas de votre organisation. À l'heure actuelle, le seul paramètre global est la *détection du privilège avocat-client* (des paramètres plus globaux seront disponibles à l'avenir). Ce paramètre permet au modèle de privilège avocat-client de s’exécuter lorsque vous analysez des données dans un ensemble de révisions. Le modèle utilise le Machine Learning pour déterminer la probabilité qu’un document contienne du contenu de nature juridique. Il compare également les participants aux documents avec une liste d’avocats (que vous soumettez lors de la configuration du modèle) pour déterminer si un document a au moins un participant qui est un avocat.
 
-Pour plus d’informations sur la configuration et l’utilisation du modèle de détection des privilèges client-avocat, voir Configurer la détection des privilèges [client-avocat dans Advanced eDiscovery](attorney-privilege-detection.md).
+Pour plus d’informations sur la configuration et l’utilisation du modèle de détection des privilèges [avocat-client, consultez Configurer la détection des privilèges avocat-client dans eDiscovery (Premium).](attorney-privilege-detection.md)
 
 > [!NOTE]
-> Il s’agit d’une étape facultative que vous pouvez effectuer à tout moment. Le fait de ne pas implémenter le modèle de détection des privilèges client-avocat ne vous empêche pas de créer et d’utiliser Advanced eDiscovery cas.
+> Il s’agit d’une étape facultative que vous pouvez effectuer à tout moment. Le fait de ne pas implémenter le modèle de détection des privilèges avocat-client ne vous empêche pas de créer et d’utiliser des cas eDiscovery (Premium).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Une fois que vous avez Advanced eDiscovery, vous êtes prêt à [créer un cas.](create-and-manage-advanced-ediscoveryv2-case.md)
+Après avoir configuré eDiscovery (Premium), vous êtes prêt à [créer un cas](create-and-manage-advanced-ediscoveryv2-case.md).

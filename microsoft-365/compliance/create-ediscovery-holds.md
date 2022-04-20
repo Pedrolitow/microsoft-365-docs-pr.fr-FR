@@ -1,5 +1,5 @@
 ---
-title: Créer des conservations eDiscovery dans un cas eDiscovery core
+title: Créer des conservations eDiscovery dans un cas eDiscovery (Standard)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,17 +17,17 @@ ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
-description: Vous pouvez créer une conservation associée à un cas core eDiscovery dans Microsoft 365 pour conserver le contenu pertinent pour une enquête ou une affaire juridique.
-ms.openlocfilehash: f732bf1c9b85804a8a3814bf578a719d854725e5
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+description: Vous pouvez créer une conservation associée à un cas eDiscovery (Standard) dans Microsoft 365 pour conserver le contenu pertinent pour une enquête ou une affaire juridique.
+ms.openlocfilehash: 4448c9b8a55466c0cf626deff6e69acd247a5814
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824901"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938266"
 ---
 # <a name="create-an-ediscovery-hold"></a>Créer une suspension de cas eDiscovery
 
-Vous pouvez utiliser un cas Core eDiscovery pour créer des conservations afin de conserver le contenu susceptible d’être pertinent pour le cas. Vous pouvez placer une conservation sur les boîtes aux lettres Exchange et les comptes OneDrive Entreprise des personnes que vous examinez dans le cas. Vous pouvez également placer une conservation sur les boîtes aux lettres et les sites associés aux groupes Microsoft Teams, Office 365 et Yammer. Lorsque vous placez des emplacements de contenu en attente, le contenu est conservé jusqu’à ce que vous supprimiez l’emplacement de contenu de la conservation ou jusqu’à ce que vous supprimiez la conservation.
+Vous pouvez utiliser un cas Microsoft Purview eDiscovery (Standard) pour créer des conservations afin de conserver le contenu susceptible d’être pertinent pour le cas. Vous pouvez placer une conservation sur les boîtes aux lettres Exchange et les comptes OneDrive Entreprise des personnes que vous examinez dans le cas. Vous pouvez également placer une conservation sur les boîtes aux lettres et les sites associés aux groupes Microsoft Teams, Office 365 et Yammer. Lorsque vous placez des emplacements de contenu en attente, le contenu est conservé jusqu’à ce que vous supprimiez l’emplacement de contenu de la conservation ou jusqu’à ce que vous supprimiez la conservation.
 
 Une fois que vous avez créé une conservation eDiscovery, l’application de la conservation peut prendre jusqu’à 24 heures.
 
@@ -39,13 +39,13 @@ Lorsque vous créez une conservation, vous disposez des options suivantes pour �
   
 ## <a name="how-to-create-an-ediscovery-hold"></a>Comment créer une conservation eDiscovery
 
-Pour créer une conservation eDiscovery associée à un cas core eDiscovery :
+Pour créer une conservation eDiscovery associée à un cas eDiscovery (Standard) :
   
-1. Accédez à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> et connectez-vous à l’aide des informations d’identification du compte d’utilisateur qui a reçu les autorisations eDiscovery appropriées.
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a> et connectez-vous à l’aide des informations d’identification du compte d’utilisateur qui a reçu les autorisations eDiscovery appropriées.
 
 2. Dans le volet de navigation gauche, cliquez sur **Afficher tout**, puis sur **eDiscovery > Core**.
 
-3. Dans la page **Core eDiscovery** , cliquez sur le nom du cas dans lequel vous souhaitez créer la conservation.
+3. Dans la page **eDiscovery (Standard),** cliquez sur le nom du cas dans lequel vous souhaitez créer la conservation.
 
 4. Dans la page **d’accueil** du cas, cliquez sur l’onglet **Maintenir** .
   
@@ -113,7 +113,7 @@ Gardez à l’esprit les éléments suivants concernant les statistiques de cons
 
 ## <a name="search-locations-on-ediscovery-hold"></a>Emplacements de recherche dans la conservation eDiscovery
 
-Lorsque vous [recherchez du contenu](search-for-content-in-core-ediscovery.md) dans un cas core eDiscovery, vous pouvez rapidement configurer la recherche pour rechercher uniquement les emplacements de contenu qui ont été placés dans une conservation associée au cas.
+Lorsque vous [recherchez du contenu](search-for-content-in-core-ediscovery.md) dans un cas eDiscovery (Standard), vous pouvez configurer rapidement la recherche pour rechercher uniquement les emplacements de contenu qui ont été placés dans une conservation associée au cas.
 
 Sélectionnez l’option **Emplacements en attente** pour rechercher tous les emplacements de contenu qui ont été mis en attente. Si le cas contient plusieurs conservations eDiscovery, les emplacements de contenu de toutes les conservations sont recherchés lorsque vous sélectionnez cette option. En outre, si un emplacement de contenu a été placé sur une conservation basée sur une requête, seuls les éléments qui correspondent à la requête de conservation sont recherchés lorsque vous exécutez la recherche. En d’autres termes, seul le contenu qui correspond aux critères de conservation et aux critères de recherche est retourné avec les résultats de la recherche. Par exemple, si un utilisateur a été placé sur une conservation de cas basée sur une requête qui conserve les éléments qui ont été envoyés ou créés avant une date spécifique, seuls ces éléments sont recherchés. Pour ce faire, connectez la requête case hold et la requête de recherche par un opérateur **AND** .
 
@@ -215,7 +215,7 @@ Une fois qu’une boîte aux lettres, SharePoint site ou OneDrive compte est sup
 
    Pour plus d’informations, consultez [Publication d’une stratégie de rétention](retention.md#releasing-a-policy-for-retention).
 
-Une conservation différée est également appliquée aux emplacements de contenu en attente lorsque vous fermez un cas Core eDiscovery, car les conservations sont désactivées lorsqu’un cas est fermé. Pour plus d’informations sur la fermeture d’un cas, consultez [Fermer, rouvrir et supprimer un cas Core eDiscovery](close-reopen-delete-core-ediscovery-cases.md).
+Une conservation différée est également appliquée aux emplacements de contenu en attente lorsque vous fermez un cas eDiscovery (Standard), car les conservations sont désactivées lorsqu’un cas est fermé. Pour plus d’informations sur la fermeture d’un cas, consultez [Fermer, rouvrir et supprimer un cas eDiscovery (Standard).](close-reopen-delete-core-ediscovery-cases.md)
 
 ## <a name="ediscovery-hold-limits"></a>Limites de conservation eDiscovery
 
@@ -224,7 +224,7 @@ Le tableau suivant répertorie les limites pour les cas eDiscovery et les conser
   | Description de la limite | Limite |
   |:-----|:-----|
   |Nombre maximal de cas pour une organisation.  <br/> |Aucune limite  <br/> |
-  |Nombre maximal de stratégies de conservation eDiscovery pour une organisation. Cette limite inclut le total combiné des stratégies de conservation dans core eDiscovery et Advanced eDiscovery cas.  <br/> |10 000  <br/> |
+  |Nombre maximal de stratégies de conservation eDiscovery pour une organisation. Cette limite inclut le total combiné des stratégies de conservation dans les cas eDiscovery (Standard) et eDiscovery (Premium).  <br/> |10 <sup>0001</sup>  <br/> |
   |Nombre maximal de boîtes aux lettres dans une conservation eDiscovery unique. Cette limite inclut le total combiné des boîtes aux lettres utilisateur et les boîtes aux lettres associées aux groupes Groupes Microsoft 365, Microsoft Teams et Yammer.  <br/> |1 000  <br/> |
   |Nombre maximal de sites dans une seule conservation eDiscovery. Cette limite inclut le total combiné des sites OneDrive Entreprise, des sites SharePoint et des sites associés aux groupes Groupes Microsoft 365, Microsoft Teams et Yammer.  <br/> |100  <br/> |
   |Nombre maximal de cas affichés sur la page d’accueil eDiscovery et nombre maximal d’éléments affichés dans les onglets Conservations, Recherches et Exportation dans un cas.  |1 <sup>0001</sup>|

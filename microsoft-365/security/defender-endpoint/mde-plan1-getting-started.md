@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-get-started
-ms.openlocfilehash: 68315c6cf7947c2d42e58e34b4496e0ef790c8b0
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: d332cbf32f5423fb16abb158f9a30a18c2391a22
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665489"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64939342"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Démarrage avec Microsoft Defender pour point de terminaison Plan 1
 
@@ -81,7 +81,7 @@ La barre de navigation sur le côté gauche de l’écran vous permet de vous d�
 | **Santé** >  **Centre de messages** | Accède au centre de messages dans le Centre d'administration Microsoft 365. Le centre de messages fournit des informations sur les modifications planifiées. Chaque message décrit ce qui s’en vient, comment il peut affecter les utilisateurs et comment gérer les modifications. |  
 | **Autorisations & rôles** | Vous permet d’accorder des autorisations pour utiliser le portail Microsoft 365 Defender. Les autorisations sont accordées par le biais de rôles dans Azure Active Directory (Azure AD). Sélectionnez un rôle et un volet volant s’affiche. Le menu volant contient un lien vers Azure AD où vous pouvez ajouter ou supprimer des membres dans un groupe de rôles. <br/><br/> Pour plus d’informations, consultez [Gérer l’accès au portail à l’aide du contrôle d’accès en fonction du rôle](rbac.md).  |
 | **Paramètres** | Accède aux paramètres généraux de votre portail Microsoft 365 Defender (listé en tant que **Centre de sécurité**) et Defender pour point de terminaison (répertoriés en tant que points de **terminaison**). <br/><br/> Pour en savoir plus, consultez [Paramètres](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal). |
-| **Autres ressources** | Affiche une liste d’autres portails et centres, tels que Azure Active Directory et le Centre de conformité Microsoft 365. <br/><br/> Pour plus d’informations, consultez [les portails de sécurité et les centres d’administration Microsoft](../defender/portals.md). |
+| **Autres ressources** | Affiche une liste d’autres portails et centres, tels que Azure Active Directory et le portail de conformité Microsoft Purview. <br/><br/> Pour plus d’informations, consultez [les portails de sécurité et les centres d’administration Microsoft](../defender/portals.md). |
 
 > [!TIP]
 > Pour en savoir plus, consultez la [vue d’ensemble du portail Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
@@ -171,7 +171,7 @@ Faites défiler vers le bas pour afficher toutes les vues dans le rapport de pro
 > [!TIP]
 > Pour plus d’informations, consultez [La protection web](web-protection-overview.md).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Gérer Microsoft Defender pour point de terminaison plan 1](mde-p1-maintenance-operations.md)
 - [Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md)

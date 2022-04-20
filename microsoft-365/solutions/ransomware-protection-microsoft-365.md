@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware géré par l’homme, ransomware géré par l’homme, HumOR, attaque par attaque par attaque de ransomware, chiffrement, cryptovirologie, confiance zéro
 description: Protection pas à pas de vos ressources Microsoft 365 contre les attaques par rançongiciel.
-ms.openlocfilehash: c356a0e3fac83c77a7e1eb1eda6e169405f43863
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: fde24132341512d76467284cb2f9c9b11b7d88cc
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324408"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64943236"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>Déployer la protection contre les rançongiciels pour votre client Microsoft 365
 
@@ -107,7 +107,7 @@ Pour plus d’informations, consultez [Traitement de l’altération des donnée
 
 Vous pouvez empêcher un pirate par rançongiciel de copier des fichiers en dehors de votre client avec :
 
-- [Stratégie de prévention des pertes de données (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) 
+- Stratégies de [Protection contre la perte de données (DLP) Microsoft Purview](/microsoft-365/compliance/dlp-learn-about-dlp)
 
     Détectez, avertissez et bloquez le partage à risque, par inadvertance ou inapproprié des données contenant :
 
@@ -206,7 +206,7 @@ Pour les appareils Windows 11 ou 10 :
 | Fonctionnalité | Description | Aide... | Gestion des licences |
 |:-------|:-----|:-------|:-------|
 | Accès contrôlé aux dossiers | Protège vos données en vérifiant les applications par rapport à une liste d’applications connues et fiables. | Empêcher les fichiers d’être modifiés ou chiffrés par un rançongiciel. | Microsoft 365 E3 ou Microsoft 365 E5 |
-| Microsoft Information Protection | Permet d’appliquer des étiquettes de confidentialité à des informations pouvant être rançonnables | Empêcher l’utilisation d’informations exfiltrées. | Microsoft 365 E3 ou Microsoft 365 E5 |
+| Protection de l'information Microsoft Purview | Permet d’appliquer des étiquettes de confidentialité à des informations pouvant être rançonnables | Empêcher l’utilisation d’informations exfiltrées. | Microsoft 365 E3 ou Microsoft 365 E5 |
 | Protection contre la perte de données (DLP) | Protège les données sensibles et réduit les risques en empêchant les utilisateurs de les partager de manière inappropriée. | Prévenir l'exfiltration des données. | Microsoft 365 E3 ou Microsoft 365 E5 |
 | Defender for Cloud Apps | Un courtier de sécurité d’accès au cloud pour la découverte, l’examen et la gouvernance. | Détecter les mouvements latéraux et empêcher l’exfiltration des données. | Microsoft 365 E5 ou Microsoft 365 E3 avec le module Microsoft 365 E5 Sécurité |
 |

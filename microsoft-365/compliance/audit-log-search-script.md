@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Utilisez un script PowerShell qui exécute l’applet de commande Search-UnifiedAuditLog dans Exchange Online pour effectuer des recherches dans le journal d’audit. Ce script est optimisé pour renvoyer un grand nombre d'enregistrements d'audit à chaque fois que vous l'exécutez. Le script exporte ces enregistrements dans un fichier CSV que vous pouvez afficher ou transformer à l’aide de Power Query dans Excel.
-ms.openlocfilehash: 60f78f5a5eebeaa90f01b4b251d917f178c06ae9
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: fc7f2e8626fd5b510dca08504d91dd0faadd78b6
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421353"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64943840"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Utiliser un script PowerShell pour effectuer une recherche dans le journal d’audit
 
@@ -32,11 +32,11 @@ La sécurité, la conformité et l’audit sont désormais une priorité absolue
 
 - [L’API Activité de gestion Office 365](/office/office-365-management-api/office-365-management-activity-api-reference)
 
-- L’[outil de recherche dans le journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le Centre de conformité Microsoft 365
+- L’[outil de recherche dans le journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le portail de conformité Microsoft Purview
 
 - La commande cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell
 
-Si vous devez récupérer régulièrement les journaux d’audit, vous devez envisager une solution qui utilise l’API Activité de gestion Office 365, car elle peut offrir aux grandes organisations l’évolutivité et les performances nécessaires pour récupérer régulièrement des millions d’enregistrements d’audit. L'utilisation de l'outil de recherche du journal d'audit dans le Centre de conformité Microsoft 365 est un bon moyen de trouver rapidement les enregistrements d'audit pour des opérations spécifiques qui se produisent dans une plage de temps plus courte. L’utilisation de plages de temps plus longues dans l’outil de recherche dans le journal d’audit, en particulier pour les grandes organisations, peut renvoyer trop d’enregistrements pour être facilement gérables ou exportés.
+Si vous devez récupérer régulièrement les journaux d’audit, vous devez envisager une solution qui utilise l’API Activité de gestion Office 365, car elle peut offrir aux grandes organisations l’évolutivité et les performances nécessaires pour récupérer régulièrement des millions d’enregistrements d’audit. L’utilisation de l’outil de recherche dans les journaux d’audit dans le portail de conformité est un bon moyen de trouver rapidement des enregistrements d’audit pour des opérations spécifiques qui se produisent dans un intervalle de temps plus court. L’utilisation de plages de temps plus longues dans l’outil de recherche dans le journal d’audit, en particulier pour les grandes organisations, peut renvoyer trop d’enregistrements pour être facilement gérables ou exportés.
 
 Lorsque vous devez récupérer manuellement des données d’audit pour une enquête ou un incident spécifique, en particulier pour les plages de dates plus longues dans les grandes organisations, il peut être préférable d’utiliser la commande cmdlet **Search-UnifiedAuditLog**. Cet article inclut un script PowerShell qui utilise l'applet de commande qui peut récupérer 50 000 enregistrements d'audit (à chaque fois que vous exécutez l'applet de commande), puis les exporter vers un fichier CSV que vous pouvez formater à l'aide de Power Query dans Excel pour vous aider dans votre révision. L’utilisation du script décrit dans cet article réduit également le risque de délai d’utilisation des recherches importantes dans le journal d’audit dans le service.
 

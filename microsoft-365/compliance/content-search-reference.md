@@ -20,13 +20,13 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-description: Cet article contient des informations de référence sur l’outil eDiscovery de recherche de contenu dans le Centre de conformité Microsoft 365 pour vous aider à en savoir plus sur la recherche de contenu.
-ms.openlocfilehash: 3f2918c378d94fd65d4a89afed50957a2da40a7d
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+description: Cet article contient des informations de référence sur l’outil eDiscovery de recherche de contenu dans le portail de conformité Microsoft Purview pour vous aider à en savoir plus sur la recherche de contenu.
+ms.openlocfilehash: 1e1b64583769bbfc815f6b8635e5334936a3b3b7
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63716373"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938442"
 ---
 # <a name="feature-reference-for-content-search"></a>Référence des fonctionnalités pour la recherche du contenu
 
@@ -233,7 +233,7 @@ Si une personne dotée du rôle Gestionnaire eDiscovery doit rechercher du conte
 2. Créez un filtre d’autorisation de recherche pour chaque position géographique de satellite (et le compte d’utilisateur correspondant) où le Gestionnaire eDiscovery doit effectuer une recherche. Chacun de ces filtres d’autorisations de recherche limite l’étendue de la recherche de contenu à une position géographique spécifique lorsque le Gestionnaire eDiscovery est connecté au compte d’utilisateur associé à cette position.
 
 > [!TIP]
-> Vous n’êtes pas obligé d’utiliser cette stratégie lorsque vous utilisez l'outil de recherche dans [Advanced eDiscovery](overview-ediscovery-20.md). En effet, lorsque vous effectuez des recherches dans les sites SharePoint et les comptes OneDrive dans Advanced eDiscovery, elles s’effectuent sur tous les centres de données. Vous devez uniquement utiliser cette stratégie de comptes d’utilisateurs et de filtres d’autorisations propres aux zones de recherche lorsque vous utilisez l’outil de recherche de contenu et que vous exécutez des recherches associées à des [cas eDiscovery](./get-started-core-ediscovery.md).
+> Vous n’avez pas besoin d’utiliser cette stratégie lors de l’utilisation de l’outil de recherche dans [eDiscovery (Premium)](overview-ediscovery-20.md). En fait, tous les centres de données font l’objet d’une recherche lorsque vous recherchez des sites SharePoint et des comptes OneDrive dans Microsoft Purview eDiscovery (Premium). Vous devez uniquement utiliser cette stratégie de comptes d’utilisateurs et de filtres d’autorisations propres aux zones de recherche lorsque vous utilisez l’outil de recherche de contenu et que vous exécutez des recherches associées à des [cas eDiscovery](./get-started-core-ediscovery.md).
 
 Prenons l’exemple d’un gestionnaire eDiscovery devant rechercher du contenu SharePoint et OneDrive dans des emplacements satellites positionnés en Amérique du Nord, en Europe et en Asie Pacifique. La première étape consiste à créer trois comptes d’utilisateurs : un pour chaque emplacement. L’étape suivante consiste à créer trois filtres d’autorisations de recherche, un pour chaque emplacement *et* compte d’utilisateur correspondant. Voici quelques exemples des trois filtres d’autorisations de recherche pour ce scénario. Dans chacun de ces exemples, le paramètre **Région** spécifie la position du centre de données SharePoint pour cette zone géographique et le paramètre **Utilisateurs** spécifie le compte d’utilisateur correspondant.
 

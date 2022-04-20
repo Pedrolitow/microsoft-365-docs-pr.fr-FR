@@ -14,16 +14,16 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 04/14/2022
+ms.date: 04/19/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 6d0e9b00e7044145f7ca03d492a5bd32e726c38d
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: 08f9f3e127246b361cd76000967ae22991335338
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911443"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64943444"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Antivirus Microsoft Defender compatibilité avec d’autres produits de sécurité
 
@@ -176,7 +176,7 @@ Le tableau de cette section récapitule les fonctionnalités qui fonctionnent ac
 (<a id="fn8">8</a>) Lorsque Antivirus Microsoft Defender est en mode passif, le filtrage de contenu web fonctionne uniquement avec le navigateur Microsoft Edge. 
 
 > [!NOTE]
-> [Microsoft 365 protection contre la perte de données](/microsoft-365/compliance/endpoint-dlp-learn-about) de point de terminaison continue de fonctionner normalement lorsque Antivirus Microsoft Defender est en mode actif ou passif.
+> [La protection contre la perte de données](/microsoft-365/compliance/endpoint-dlp-learn-about) de point de terminaison continue de fonctionner normalement lorsque Antivirus Microsoft Defender est en mode actif ou passif.
 
 ## <a name="important-notes"></a>Remarques importantes
 
@@ -194,7 +194,6 @@ Vous pouvez utiliser l’une des méthodes suivantes pour confirmer l’état de
  | Gestionnaire des tâches |  1. Sur un appareil Windows, ouvrez l’application Gestionnaire de tâches.<br/>2. Sélectionnez l’onglet **Détails** .<br/>3. Recherchez **MsMpEng.exe** dans la liste. | 
  | Windows PowerShell <br/> (Pour confirmer que Antivirus Microsoft Defender est en cours d’exécution) |  1. Sur un appareil Windows, ouvrez Windows PowerShell. <br/>2. Exécutez l’applet de commande PowerShell suivante : `Get-Process`.<br/>3. Passez en revue les résultats. Vous devez voir **MsMpEng.exe** si Antivirus Microsoft Defender est activé. | 
  | Windows PowerShell <br/>(Pour confirmer que la protection antivirus est en place) |  Vous pouvez utiliser [l’applet de commande PowerShell Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).<br/>1. Sur un appareil Windows, ouvrez Windows PowerShell.<br/>2. Exécutez l’applet de commande PowerShell suivante :<br/> \|Get-MpComputerStatus sélectionner AMRunningMode <br/>3. Passez en revue les résultats. Vous devez voir le **mode bloc** **normal**, **passif** ou PEPT si Antivirus Microsoft Defender est activé sur le point de terminaison.  | 
- | Invite de commandes |  1. Sur un appareil Windows, ouvrez l’invite de commandes.<br/>2. Tapez `sc query windefend`, puis appuyez sur Entrée.<br/>3. Passez en revue les résultats pour vérifier que Antivirus Microsoft Defender s’exécute en mode passif.  | 
 
 ## <a name="more-details-about-microsoft-defender-antivirus-states"></a>Plus d’informations sur les états Antivirus Microsoft Defender
 
@@ -221,4 +220,4 @@ Le tableau de cette section décrit les différents états que vous pouvez voir 
 - [Antivirus Microsoft Defender sur les clients Windows](microsoft-defender-antivirus-in-windows-10.md)
 - [Antivirus Microsoft Defender sur Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 - [PEPT en mode blocage](edr-in-block-mode.md)
-- [Découvrir la protection contre la perte de données des point de terminaison de Microsoft 365](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Découvrir la protection contre la perte de données de point de terminaison](/microsoft-365/compliance/endpoint-dlp-learn-about)

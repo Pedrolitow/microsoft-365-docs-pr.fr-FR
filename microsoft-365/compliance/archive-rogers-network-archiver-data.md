@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur TeleMessage pour importer et archiver les données du réseau Rogers dans Microsoft 365. Cela vous permet d’archiver les données de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 54c57c2ddf8d4224884137efb0cfa4679a13b46d
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 790a41ce3d505e6381bb9d02ed9014132fe8f9f0
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758704"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944016"
 ---
 # <a name="set-up-a-connector-to-archive-rogers-network-data"></a>Configurer un connecteur pour archiver les données du réseau Rogers
 
-Utilisez le connecteur TeleMessage dans le Centre de conformité Microsoft 365 pour importer et archiver des données SMS et MMS à partir du réseau mobile Rogers. Après avoir configuré et configuré un [connecteur Rogers Network Archiver](https://www.telemessage.com/mobile-archiver/network-archiver/rogers/), il se connecte au réseau mobile Rogers de votre organisation et importe des données SMS et MMS dans des boîtes aux lettres dans Microsoft 365.
+Utilisez le connecteur TeleMessage dans le portail de conformité Microsoft Purview pour importer et archiver des données SMS et MMS à partir du réseau mobile Rogers. Après avoir configuré et configuré un [connecteur Rogers Network Archiver](https://www.telemessage.com/mobile-archiver/network-archiver/rogers/), il se connecte au réseau mobile Rogers de votre organisation et importe des données SMS et MMS dans des boîtes aux lettres dans Microsoft 365.
 
-Une fois que les données du réseau mobile Rogers sont stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer Microsoft 365 fonctionnalités de conformité telles que la conservation des litiges, la recherche de contenu et les stratégies de rétention Microsoft 365 aux données. Par exemple, vous pouvez rechercher des messages SMS et MMS à partir du réseau mobile Rogers à l’aide d’une recherche de contenu ou d’une recherche associée à un cas Core eDiscovery. L’utilisation d’un connecteur Rogers Network Archiver pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux réglementations et aux stratégies réglementaires de gouvernance d’entreprise.
+Une fois que les données du réseau mobile Rogers sont stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer aux données des fonctionnalités Microsoft Purview telles que la conservation des litiges, la recherche de contenu et Microsoft 365 stratégies de rétention. Par exemple, vous pouvez rechercher des messages SMS et MMS à partir du réseau mobile Rogers à l’aide d’une recherche de contenu ou d’une recherche associée à un cas Microsoft Purview eDiscovery (Standard). L’utilisation d’un connecteur Rogers Network Archiver pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux réglementations et aux stratégies réglementaires de gouvernance d’entreprise.
 
 ## <a name="overview-of-archiving-rogers-mobile-network-data"></a>Vue d’ensemble de l’archivage des données de réseau mobile Rogers
 
@@ -35,7 +35,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 2. En temps réel, les données du réseau mobile Rogers de votre organisation sont copiées sur le site TeleMessage.
 
-3. Le connecteur Rogers Network Archiver que vous créez dans le Centre de conformité Microsoft 365 se connecte au site TeleMessage tous les jours et transfère les messages électroniques des 24 dernières heures vers une zone de stockage Azure sécurisée dans le cloud Microsoft.
+3. Le connecteur Archiver du réseau Rogers que vous créez dans le portail de conformité se connecte au site TeleMessage tous les jours et transfère les messages électroniques des 24 dernières heures vers une zone de stockage Azure sécurisée dans le cloud Microsoft.
 
 4. Le connecteur importe les éléments de communication mobile dans la boîte aux lettres d’un utilisateur spécifique. Un nouveau dossier nommé Rogers SMS/MMS Network Archiver sera créé dans la boîte aux lettres de l’utilisateur spécifique et les éléments y seront importés. Le connecteur effectue le mappage à l’aide de la valeur de la propriété *d’adresse e-mail de l’utilisateur* . Chaque message électronique contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant du message électronique.
 
@@ -51,13 +51,13 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 - Obtenez le compte Rogers et les coordonnées de facturation de votre organisation afin de pouvoir remplir les formulaires d’intégration et commander le service d’archivage des messages auprès de Rogers.
 
-- L’utilisateur qui crée un connecteur Rogers Network Archiver à l’étape 3 doit avoir le rôle Administrateur du connecteur de données. Ce rôle est nécessaire pour ajouter des connecteurs sur la page **Connecteurs de données** dans le Centre de conformité Microsoft 365. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le Centre de conformité Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- L’utilisateur qui crée un connecteur Rogers Network Archiver à l’étape 3 doit avoir le rôle Administrateur du connecteur de données. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ce connecteur de données TeleMessage est disponible dans Cloud de la communauté du secteur public environnements dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de conformité et de protection des données Microsoft 365. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
+- Ce connecteur de données TeleMessage est disponible dans Cloud de la communauté du secteur public environnements dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de Microsoft Purview et de protection des données. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
 
 ## <a name="create-a-rogers-network-archiver-connector"></a>Créer un connecteur Rogers Network Archiver
 
-Une fois que vous avez rempli les conditions préalables décrites dans la section précédente, vous pouvez créer le connecteur Rogers Network Archiver dans le Centre de conformité Microsoft 365. Le connecteur utilise les informations que vous fournissez pour se connecter au site TeleMessage et transférer les données SMS/MMS Rogers vers les boîtes aux lettres utilisateur correspondantes dans Microsoft 365.
+Une fois que vous avez rempli les conditions préalables décrites dans la section précédente, vous pouvez créer le connecteur Rogers Network Archiver dans le portail de conformité. Le connecteur utilise les informations que vous fournissez pour se connecter au site TeleMessage et transférer les données SMS/MMS Rogers vers les boîtes aux lettres utilisateur correspondantes dans Microsoft 365.
 
 1. Accédez à <https://compliance.microsoft.com> Data **connectorsRogers** >  **Network Archiver**, puis cliquez dessus.
 

@@ -1,5 +1,5 @@
 ---
-title: Différences entre les résultats de recherche eDiscovery estimés et réels
+title: Résultats de recherche eDiscovery estimés et réels
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,21 +19,21 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Comprendre pourquoi les résultats de recherche estimés et réels peuvent varier dans les recherches exécutées avec les outils eDiscovery dans Office 365.
-ms.openlocfilehash: 5ec234ed698e621a629aecf7adf34fb675b29034
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: b1e4ba4938e418d8364dfb06b24b6f7a58d6a463
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783840"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938156"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Différences entre les résultats de recherche eDiscovery estimés et réels
 
 Cet article s’applique aux recherches que vous pouvez exécuter à l’aide de l’un des outils eDiscovery Microsoft 365 suivants : 
 
 - Recherche de contenu
-- Core eDiscovery
+- eDiscovery (Standard)
 
-Lorsque vous exécutez une recherche eDiscovery, l’outil que vous utilisez retourne une estimation du nombre d’éléments (et de leur taille totale) qui correspondent aux critères de recherche. Par exemple, lorsque vous exécutez une recherche dans le Centre de conformité Microsoft 365, les résultats estimés de la recherche sont affichés dans la page volante de la recherche sélectionnée.
+Lorsque vous exécutez une recherche eDiscovery, l’outil que vous utilisez retourne une estimation du nombre d’éléments (et de leur taille totale) qui correspondent aux critères de recherche. Par exemple, lorsque vous exécutez une recherche dans le portail de conformité Microsoft Purview, les résultats estimés de la recherche sont affichés dans la page de menu volant de la recherche sélectionnée.
   
 ![Estimation des résultats affichés dans la page de menu volant de recherche.](../media/EstimatedSearchResults1.png)
   

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: af165f3565e3601ac4e8118535af3913c2cb2af8
-ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
+ms.openlocfilehash: 68ce5f263f24d4ab3271425815834870c71f2a4a
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64737438"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938969"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>Étape 6. Surveiller les risques et la conformité des appareils aux bases de référence de sécurité
 
@@ -39,7 +39,7 @@ Le déploiement de Microsoft Defender pour point de terminaison inclut l’inté
 Dans cette illustration :
 - Microsoft Defender pour point de terminaison augmente considérablement la complexité de la protection contre les menaces pour les appareils. 
 - Bien que Microsoft Intune vous permette de définir des stratégies de protection des applications et de gérer les appareils (y compris les modifications de configuration), Defender pour point de terminaison surveille en permanence vos appareils contre les menaces et peut prendre des mesures automatisées pour corriger les attaques. 
-- Vous pouvez connecter Microsoft Intune à Defender pour point de terminaison pour surveiller les risques et la conformité des appareils aux bases de référence de sécurité.
+- Vous pouvez utiliser Intune pour intégrer des appareils à Defender pour point de terminaison. Dans ce cas, vous autorisez également ces appareils à utiliser la protection contre la perte de données de point de terminaison Microsoft Purview (Endpoint DLP).
 
 Cet article comprend les étapes suivantes :
 - Surveiller les risques des appareils
@@ -51,9 +51,9 @@ Si Defender pour point de terminaison n’a pas encore été installé, travaill
 
 Une fois Microsoft Defender pour point de terminaison déployé, vous pouvez tirer parti des signaux de risque de menace. Cela vous permet de bloquer l’accès aux appareils en fonction de leur indice de risque. Microsoft recommande d’autoriser l’accès aux appareils avec un indice de risque moyen ou inférieur.
 
-Pour Android et iOS/iPadOS, les signaux de menace peuvent être utilisés dans vos stratégies de protection des applications (APP). Pour plus d’informations sur cette configuration, voir [Créer et affecter une stratégie de protection des applications pour définir le niveau de risque de l’appareil](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level).
+Pour Android et iOS/iPadOS, les signaux de menace peuvent être utilisés dans vos stratégies de protection des applications (APP). Pour plus d’informations sur cette configuration, voir [Créer et affecter une stratégie de protection des applications pour définir le niveau de risque de l’appareil](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level).
 
-Pour toutes les plateformes, vous pouvez définir le niveau de risque dans les stratégies existantes de conformité des appareils. Voir [Créer une stratégie d’accès conditionnel](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-a-conditional-access-policy). 
+Pour toutes les plateformes, vous pouvez définir le niveau de risque dans les stratégies existantes de conformité des appareils. Voir [Créer une stratégie d’accès conditionnel](/mem/intune/protect/advanced-threat-protection-configure#create-a-conditional-access-policy).
 
 ## <a name="deploy-security-baselines-and-monitor-compliance-to-these-settings"></a>Déployer les lignes de base de sécurité et surveiller la conformité à ces paramètres
 

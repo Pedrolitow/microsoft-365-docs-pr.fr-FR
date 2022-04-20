@@ -1,5 +1,5 @@
 ---
-title: Limites d’Advanced eDiscovery
+title: Limites eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,21 +15,21 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez les limites de cas, les limites d’indexation et les limites de recherche en vigueur pour la solution Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 93f0a988cb5a5321c8a725a1d678079174eba923
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+description: Découvrez les limites de cas, les limites d’indexation et les limites de recherche en vigueur pour la solution eDiscovery (Premium) dans Microsoft 365.
+ms.openlocfilehash: 599f57ab863ab6d82140fa473624916bd2f26ac1
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861309"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64942510"
 ---
-# <a name="limits-in-advanced-ediscovery"></a>Limites définies dans Advanced eDiscovery
+# <a name="limits-in-ediscovery-premium"></a>Limites dans eDiscovery (Premium)
 
-Cet article décrit les limites de la solution Advanced eDiscovery dans Microsoft 365.
+Cet article décrit les limites de la solution Microsoft Purview eDiscovery (Premium) dans Microsoft 365.
 
 ## <a name="case-and-review-set-limits"></a>Limites définies pour les cas et les révisions
 
-Le tableau suivant répertorie les limites pour les cas et les ensembles de révision dans Advanced eDiscovery.
+Le tableau suivant répertorie les limites des cas et examine les ensembles dans eDiscovery (Premium).
 
 |Description de la limite|Limite|
 |---|---|
@@ -45,17 +45,17 @@ Le tableau suivant répertorie les limites pour les cas et les ensembles de rév
 
 ## <a name="hold-limits"></a>Maintenir les limites
 
-Le tableau suivant répertorie les limites des conservations associées à un cas Advanced eDiscovery.
+Le tableau suivant répertorie les limites des conservations associées à un cas eDiscovery (Premium).
 
-|Description de la limite|Limite|
-|---|---|
-|Nombre maximal de stratégies de conservation pour une organisation. Cette limite inclut le total combiné des stratégies de conservation dans core eDiscovery et Advanced eDiscovery cas.|10 000|
-|Nombre maximal de boîtes aux lettres dans une conservation unique. Cette limite inclut le total combiné des boîtes aux lettres utilisateur et les boîtes aux lettres associées aux groupes Groupes Microsoft 365, Microsoft Teams et Yammer.|1 <sup>0003</sup>|
-|Nombre maximal de sites dans une conservation unique. Cette limite inclut le total combiné des sites OneDrive Entreprise, des sites SharePoint et des sites associés aux groupes Groupes Microsoft 365, Microsoft Teams et Yammer.|1003<sup></sup>|
+| Description de la limite | Limite |
+|:-----|:-----|
+|Nombre maximal de stratégies de conservation pour une organisation. Cette limite inclut le total combiné des stratégies de conservation dans les cas de découverte électronique Microsoft Purview (Standard) et microsoft Purview eDiscovery (Premium). <br/> |10 000<sup>3</sup>  <br/> |
+|Nombre maximal de boîtes aux lettres dans une conservation unique. Cette limite inclut le total combiné des boîtes aux lettres utilisateur et les boîtes aux lettres associées aux groupes Groupes Microsoft 365, Microsoft Teams et Yammer. <br/> |1 000  <br/> |
+|Nombre maximal de sites dans une conservation unique. Cette limite inclut le total combiné des sites OneDrive Entreprise, des sites SharePoint et des sites associés aux groupes Groupes Microsoft 365, Microsoft Teams et Yammer.  <br/> |100  <br/> |
 
 ## <a name="indexing-limits"></a>Limites d’indexation
 
-Le tableau suivant répertorie les limites d’indexation dans Advanced eDiscovery.
+Le tableau suivant répertorie les limites d’indexation dans eDiscovery (Premium).
 
 |Description de la limite|Limite|
 |---|---|
@@ -66,11 +66,11 @@ Le tableau suivant répertorie les limites d’indexation dans Advanced eDiscove
 
 ## <a name="search-limits"></a>Limites de la recherche
 
-Les limites décrites dans cette section sont liées à l’utilisation de l’outil de recherche sous l’onglet **Recherches** pour collecter des données pour un cas. Pour plus d’informations, consultez [Collecter des données pour un cas dans Advanced eDiscovery](collecting-data-for-ediscovery.md).
+Les limites décrites dans cette section sont liées à l’utilisation de l’outil de recherche sous l’onglet **Recherches** pour collecter des données pour un cas. Pour plus d’informations, consultez [Collecter des données pour un cas dans eDiscovery (Premium).](collecting-data-for-ediscovery.md)
 
 |Description de la limite|Limite|
 |---|---|
-|Nombre maximal de boîtes aux lettres ou de sites pouvant faire l’objet d’une recherche unique.|Aucune limite|
+|Nombre maximal de boîtes aux lettres ou de sites pouvant faire l’objet d’une recherche unique.|Sans limite|
 |Nombre maximal de recherches qui peuvent s’exécuter en même temps.|Sans limite|
 |Nombre maximal de recherches qu’un seul utilisateur peut démarrer en même temps.|10|
 |Nombre maximal de caractères pour une requête de recherche (y compris les opérateurs et les conditions).|10 <sup>0005</sup>|
@@ -126,7 +126,7 @@ Les limites décrites dans cette section sont liées à l’exportation de docum
 > [!NOTE]
 > <sup>1</sup> Il s’agit du nombre maximal de balises que vous pouvez créer dans un cas. Cette limite n’est pas liée au nombre de documents qui peuvent être marqués.
 >
-> <sup>2</sup> Cette limite est partagée avec l’exportation de contenu dans d’autres outils eDiscovery. Cela signifie que les exportations simultanées dans la recherche de contenu et core eDiscovery (et l’ajout de contenu pour passer en revue les ensembles dans Advanced eDiscovery) sont toutes appliquées à cette limite.
+> <sup>2</sup> Cette limite est partagée avec l’exportation de contenu dans d’autres outils eDiscovery. Cela signifie que les exportations simultanées dans la recherche de contenu et eDiscovery (Standard) (et l’ajout de contenu pour passer en revue les ensembles dans eDiscovery (Premium)) sont toutes appliquées à cette limite.
 >
 > <sup>3</sup> Lorsque vous mettez plus de 1 000 boîtes aux lettres ou 100 sites en attente dans une stratégie de conservation unique, le système met automatiquement à l’échelle la conservation en fonction des besoins. Cela signifie que le système ajoute automatiquement des emplacements de données à plusieurs stratégies de conservation, au lieu de les ajouter à une stratégie de conservation unique. Toutefois, la limite de 10 000 stratégies de conservation des cas par organisation s’applique toujours.
 >
@@ -141,4 +141,4 @@ Les limites décrites dans cette section sont liées à l’exportation de docum
 >
 > <sup>6</sup> Pour les requêtes sans expression (valeur de mot clé qui n’utilise pas de guillemets doubles), nous utilisons un index de préfixe spécial. Cela nous indique qu’un mot se produit dans un document, mais pas là où il se produit dans le document. Pour effectuer une requête d’expression (valeur de mot clé avec guillemets doubles), nous devons comparer la position dans le document pour les mots de l’expression. Cela signifie que nous ne pouvons pas utiliser l’index de préfixe pour les requêtes d’expression. Dans ce cas, nous étendons en interne la requête avec tous les mots possibles auxquels le préfixe se développe ; par exemple,  **time\**_ peut se développer sur _*"time OR timer OR times OR timex OR timeboxed OR ... »**. La limite de 10 000 est le nombre maximal de variantes que le mot peut développer, et non le nombre de documents correspondant à la requête. Il n’existe aucune limite supérieure pour les termes autres que les termes d’expression.
 >
-> <sup>7</sup> Cette limite s’applique au téléchargement de documents sélectionnés à partir d’un ensemble de révisions. Elle ne s’applique pas à l’exportation de documents à partir d’un ensemble de révisions. Pour plus d’informations sur le téléchargement et l’exportation de documents, consultez [Exporter les données de cas dans Advanced eDiscovery](exporting-data-ediscover20.md).
+> <sup>7</sup> Cette limite s’applique au téléchargement de documents sélectionnés à partir d’un ensemble de révisions. Elle ne s’applique pas à l’exportation de documents à partir d’un ensemble de révisions. Pour plus d’informations sur le téléchargement et l’exportation de documents, consultez [Exporter les données de cas dans eDiscovery (Premium)](exporting-data-ediscover20.md).

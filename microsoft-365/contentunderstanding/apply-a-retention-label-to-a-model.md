@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment appliquer une étiquette de rétention à un modèle dans SharePoint Syntex.
-ms.openlocfilehash: 17bfc0121d18f30b03cc42585cb214b649597ff6
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: 281ff940377f033690f1ed1e7146c8aefe645bf1
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882503"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64941806"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>Application d’une étiquette de rétention à un modèle dans SharePoint Syntex.
 
@@ -36,7 +36,7 @@ Les étiquettes de rétention vous permettent d’appliquer des paramètres de r
 Vous pouvez appliquer une étiquette de rétention préexistante à votre modèle via les paramètres du modèle sur la page d’accueil de celui-ci. 
 
 > [!Important]
-> Pour que les étiquettes de rétention soient disponibles pour s’appliquer à vos modèles de compréhension de document, elles doivent être [créées](../compliance/file-plan-manager.md#create-retention-labels) et [publiées](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) dans le Centre de conformité Microsoft 365.
+> Pour que les étiquettes de rétention puissent s’appliquer à vos modèles de compréhension de document, elles doivent être [créées](../compliance/file-plan-manager.md#create-retention-labels) et [publiées](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) dans le portail de conformité Microsoft Purview.
 
 ## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>Pour ajouter une étiquette de rétention à un modèle de compréhension de document
 
@@ -74,7 +74,7 @@ Par exemple, tous les documents d’*avis d’assurance* que votre modèle ident
 ## <a name="to-add-a-retention-label-to-a-form-processing-model"></a>Pour ajouter une étiquette de rétention à un modèle de traitement de formulaire
 
 > [!Important]
-> Pour que les étiquettes de rétention soient disponibles pour s’appliquer à votre modèle de traitement de formulaire, elles doivent être [créées](../compliance/file-plan-manager.md#create-retention-labels) et [publiées](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) dans le Centre de conformité Microsoft 365.
+> Pour que les étiquettes de rétention puissent s’appliquer à votre modèle de traitement de formulaire, elles doivent être [créées](../compliance/file-plan-manager.md#create-retention-labels) et [publiées](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) dans le portail de conformité Microsoft Purview.
 
 Vous pouvez appliquer une étiquette de rétention à un modèle de traitement de formulaires lorsque vous créez un modèle ou l’appliquer à un modèle existant.
 

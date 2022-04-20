@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La mobilité et la sécurité de base peuvent vous aider à sécuriser et à gérer vos appareils mobiles.
-ms.openlocfilehash: 78cfa4582aa2e25a3b47a12d2e067082e8b41d07
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: b0e303af27d731cf3dba3af13019b3b993e52bfe
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781224"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64937760"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Fonctionnalités Mobility + Security de Base
 
@@ -230,7 +230,7 @@ Vous pouvez définir ces paramètres de stratégie supplémentaires à l’aide 
 
 ## <a name="remotely-wipe-a-mobile-device"></a>Réinitialiser un appareil mobile à distance
 
-Si un appareil est perdu ou volé, vous pouvez supprimer des données d’organisation sensibles et empêcher l’accès aux ressources de votre organisation Microsoft 365 en effectuant une réinitialisation à partir du Centre de sécurité & conformité > **la gestion** de **la protection contre la** >  perte de données. Vous pouvez effectuer une réinitialisation sélective de l’appareil afin de supprimer uniquement les données de l’organisation, ou effectuer une réinitialisation complète afin de supprimer toutes les informations qu’il contient et restaurer ses paramètres d’origine.
+Si un appareil est perdu ou volé, vous pouvez supprimer des données d’organisation sensibles et empêcher l’accès aux ressources de votre organisation Microsoft 365 en effectuant une réinitialisation à partir du portail  >  de **conformité Microsoft PurviewData** **loss** **preventionDevice** >  management. Vous pouvez effectuer une réinitialisation sélective de l’appareil afin de supprimer uniquement les données de l’organisation, ou effectuer une réinitialisation complète afin de supprimer toutes les informations qu’il contient et restaurer ses paramètres d’origine.
 
 Pour plus d’informations, consultez [Réinitialiser un appareil mobile dans Mobilité et sécurité de base](wipe-mobile-device.md).
 

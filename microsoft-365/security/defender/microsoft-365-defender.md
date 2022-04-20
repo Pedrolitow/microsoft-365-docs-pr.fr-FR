@@ -26,12 +26,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c97338121d38650116540564441f3b37051bf05f
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 99549ba8077d966c4d5649e144fa0259f9178629
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731182"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944346"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -176,7 +176,7 @@ Les contrôles et le contenu courants apparaissent au même endroit ou sont cond
 
 :::image type="content" source="../../media/converged-roles-5.png" alt-text="Les rôles de points de terminaison & groupes affichés sur la page Autorisations & rôles" lightbox="../../media/converged-roles-5.png":::
 
-L’accès à Microsoft 365 Defender est configuré avec Azure AD rôles globaux ou à l’aide de rôles personnalisés. Pour Defender pour point de terminaison, consultez [Affecter l’accès utilisateur au portail Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/assign-portal-access). Pour Defender pour Office 365, consultez [Autorisations dans les Centre de conformité Microsoft 365 et les Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
+L’accès à Microsoft 365 Defender est configuré avec Azure AD rôles globaux ou à l’aide de rôles personnalisés. Pour Defender pour point de terminaison, consultez [Affecter l’accès utilisateur au portail Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/assign-portal-access). Pour Defender pour Office 365, consultez [Autorisations dans le portail de conformité Microsoft Purview et Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
 
 - En savoir plus sur la [gestion de l’accès à Microsoft 365 Defender](m365d-permissions.md)
 - En savoir plus sur la [création de rôles personnalisés](custom-roles.md) dans Microsoft 365 Defender

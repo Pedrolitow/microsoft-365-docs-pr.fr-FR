@@ -18,23 +18,23 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 search.appverid: MET150
-description: Découvrez comment gérer les paramètres Office scripts pour les utilisateurs de votre organisation.
-ms.openlocfilehash: f03ee34e0ff41c3eb082beca79127cd609496564
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez comment gérer Office paramètres de scripts pour les utilisateurs de votre organisation.
+ms.openlocfilehash: fdc9c947ee7f12e284fd215f05f8b5c3dcb127eb
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168037"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64941146"
 ---
 # <a name="manage-office-scripts-settings"></a>Gérer les paramètres de Office Scripts
 
-[Office scripts permet](/office/dev/scripts) aux utilisateurs d’automatiser les tâches en enregistrant, en éditant et en exécutant des scripts dans Excel sur le Web. Office Les scripts fonctionnent avec Power Automate, et les utilisateurs exécutent des scripts sur des workbooks à l’aide du connecteur Excel Online (Entreprise). Microsoft 365 administrateurs peuvent gérer les paramètres Office scripts à partir du Centre d'administration Microsoft 365.
+[Office Scripts permet aux utilisateurs](/office/dev/scripts) d’automatiser les tâches en enregistrant, en modifiant et en exécutant des scripts dans Excel sur le Web. Office Scripts fonctionne avec Power Automate et les utilisateurs exécutent des scripts sur des classeurs à l’aide du connecteur Excel Online (Entreprise). Microsoft 365 administrateurs peuvent gérer les paramètres de scripts Office à partir du Centre d'administration Microsoft 365.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Pour gérer Office scripts, vous devez être administrateur global. Pour plus d’informations, voir [à propos des rôles d’administrateur.](../add-users/about-admin-roles.md)
+- Pour gérer Office paramètres de scripts, vous devez être administrateur général. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../add-users/about-admin-roles.md).
 
-- Assurez-vous que les utilisateurs de votre organisation ont une licence valide pour un plan Microsoft 365 ou Office 365 commercial ou EDU qui inclut l’accès aux applications de bureau Office, telles que l’un des plans suivants :
+- Vérifiez que les utilisateurs de votre organisation disposent d’une licence valide pour une Microsoft 365 ou Office 365 plan commercial ou EDU qui inclut l’accès à Office applications de bureau, comme l’un des plans suivants :
 
 - Office 365 Business Premium
 - Microsoft 365 Apps for business
@@ -44,56 +44,56 @@ ms.locfileid: "60168037"
 - Office 365 A3
 - Office 365 A5
 
-## <a name="manage-availability-of-office-scripts-and-sharing-of-scripts"></a>Gérer la disponibilité des Office scripts et le partage des scripts
+## <a name="manage-availability-of-office-scripts-and-sharing-of-scripts"></a>Gérer la disponibilité des scripts Office et le partage des scripts
 
-1. Dans la Centre d'administration Microsoft 365, go to the **Paramètres** \> **Org settings** \> **[Services](https://go.microsoft.com/fwlink/p/?linkid=2053743)** tab.
+1. Dans le Centre d'administration Microsoft 365, accédez à l’onglet **[Services](https://go.microsoft.com/fwlink/p/?linkid=2053743)** des **paramètres** \> de **l’organisation Paramètres**\>.
 
-2. Sélectionnez **Office scripts.**
+2. Sélectionnez **Office Scripts**.
 
-3. Office Les scripts sont allumés par défaut, et tous les membres de votre organisation peuvent accéder à la fonctionnalité et les utiliser et partager des scripts. Pour désactiver la Office scripts pour votre organisation, désactiver la case à cocher Laisser les utilisateurs **automatiser leurs tâches Excel sur le Web** cocher.
+3. Office scripts est activé par défaut, et tous les membres de votre organisation peuvent accéder à la fonctionnalité et l’utiliser et partager des scripts. Pour désactiver Office scripts pour votre organisation, désactivez la case à cocher **Autoriser les utilisateurs à automatiser leurs tâches dans Excel sur le Web** case à cocher.
 
-4. Si vous avez précédemment désactivé Office Scripts pour votre organisation et que vous souhaitez le désactiver à nouveau, sélectionnez Laisser les utilisateurs automatiser leurs tâches dans **Excel sur le Web,** puis spécifiez qui peut accéder à la fonctionnalité et l’utiliser :
+4. Si vous avez précédemment désactivé Office scripts pour votre organisation et que vous souhaitez le réactiver, sélectionnez **Autoriser les utilisateurs à automatiser leurs tâches dans Excel sur le Web**, puis spécifiez qui peut accéder à la fonctionnalité et l’utiliser :
 
-    - Pour autoriser tous les utilisateurs de votre organisation à accéder et à utiliser Office scripts, laissez Tout le monde **(par** défaut) sélectionné.
+    - Pour permettre à tous les utilisateurs de votre organisation d’accéder et d’utiliser Office Scripts, laissez **Tout le monde** (valeur par défaut) sélectionné.
 
-    - Pour autoriser uniquement les membres d’un groupe spécifique à accéder aux scripts Office et à les utiliser, sélectionnez Un groupe **spécifique,** puis entrez le nom ou l’alias de messagerie du groupe pour l’ajouter à la liste d’adresses. Vous ne pouvez ajouter qu’un seul groupe à la liste d’utilisateurs et il doit s’agit de l’un des types suivants :
-        - Microsoft 365 groupe
+    - Pour autoriser uniquement les membres d’un groupe spécifique à accéder et à utiliser Office Scripts, sélectionnez **Groupe spécifique**, puis entrez le nom ou l’alias de messagerie du groupe pour l’ajouter à la liste verte. Vous ne pouvez ajouter qu’un seul groupe à la liste verte, et il doit s’agir de l’un des types suivants :
+        - groupe Microsoft 365
         - Groupe de distribution
         - Groupe de sécurité
         - Groupe de sécurité à extension messagerie
 
-        Pour en savoir plus sur les différents types de groupes, voir [Comparer les groupes.](../create-groups/compare-groups.md)
+        Pour en savoir plus sur les différents types de groupes, consultez [Comparer les groupes](../create-groups/compare-groups.md).
 
-5. Pour permettre aux utilisateurs ayant accès à Office Scripts de partager leurs scripts avec d’autres membres de votre organisation, sélectionnez Autoriser les utilisateurs à accéder à **Office Les scripts** partagent leurs scripts avec d’autres membres de l’organisation. Le partage de scripts en dehors d’une organisation n’est pas autorisé.
+5. Pour permettre aux utilisateurs ayant accès à Office Scripts de partager leurs scripts avec d’autres membres de votre organisation, sélectionnez **Autoriser les utilisateurs ayant accès à Office Scripts partager leurs scripts avec d’autres membres de l’organisation**. Le partage de scripts en dehors d’une organisation n’est pas autorisé.
 
     > [!NOTE]
-    > Si vous désactiverez ultérieurement le partage de scripts pour votre organisation, les utilisateurs pourront toujours exécuter des scripts précédemment partagés.
+    > Si vous désactivez ultérieurement le partage de scripts pour votre organisation, les utilisateurs pourront toujours exécuter des scripts précédemment partagés.
 
-6. Spécifiez les utilisateurs ayant accès Office scripts peuvent partager leurs scripts :
+6. Spécifiez les utilisateurs ayant accès à Office Scripts peuvent partager leurs scripts :
 
-    - Pour permettre à tous les utilisateurs ayant accès Office scripts de partager leurs scripts, laissez **Tout** le monde (par défaut) sélectionné.
+    - Pour permettre à tous les utilisateurs ayant accès à Office Scripts de partager leurs scripts, laissez **Tout le monde** (valeur par défaut) sélectionné.
 
-    - Pour autoriser uniquement les membres d’un groupe spécifique ayant accès à Office Scripts à partager leurs scripts, sélectionnez Groupe **spécifique,** puis entrez le nom ou l’alias de messagerie du groupe pour l’ajouter à la liste d’adresses. Vous ne pouvez ajouter qu’un seul groupe à la liste d’utilisateurs et il doit s’agit de l’un des types suivants :
-        - Microsoft 365 groupe
+    - Pour autoriser uniquement les membres d’un groupe spécifique ayant accès à Office Scripts à partager leurs scripts, sélectionnez **Groupe spécifique**, puis entrez le nom ou l’alias de messagerie du groupe pour l’ajouter à la liste verte. Vous ne pouvez ajouter qu’un seul groupe à la liste verte, et il doit s’agir de l’un des types suivants :
+        - groupe Microsoft 365
         - Groupe de distribution
         - Groupe de sécurité
         - Groupe de sécurité à extension messagerie
 
-        Pour en savoir plus sur les différents types de groupes, voir [Comparer les groupes.](../create-groups/compare-groups.md)
+        Pour en savoir plus sur les différents types de groupes, consultez [Comparer les groupes](../create-groups/compare-groups.md).
 
-7. Pour permettre aux utilisateurs d’exécuter leurs scripts Office à l’intérieur de flux Power Automate, sélectionnez Autoriser les utilisateurs à accéder à **Office Scripts** exécutent leurs scripts avec Power Automate . Cela permet aux utilisateurs d’ajouter des étapes de flux [à l’Excel script d’Excel Online (Entreprise) Connector run.](/connectors/excelonlinebusiness) 
+7. Pour permettre aux utilisateurs d’exécuter leurs scripts Office dans Power Automate flux, sélectionnez **Autoriser les utilisateurs ayant accès à Office Scripts exécuter leurs scripts avec Power Automate**. Cela permet aux utilisateurs d’ajouter des étapes de flux avec [l’option de script d’exécution du connecteur Excel Online (Entreprise](/connectors/excelonlinebusiness)).
 
-    - Pour permettre à tous les utilisateurs ayant accès Office scripts d’utiliser leurs scripts dans les flux, laissez Tout le monde **(par** défaut) sélectionné.
+    - Pour permettre à tous les utilisateurs ayant accès à Office Scripts d’utiliser leurs scripts dans les flux, laissez **Tout le monde** (valeur par défaut) sélectionné.
 
-    - Pour autoriser uniquement les membres d’un groupe spécifique ayant accès à Office Scripts à utiliser leurs scripts dans les flux, sélectionnez Groupe **spécifique,** puis entrez le nom ou l’alias de messagerie du groupe pour l’ajouter à la liste d’adresses. Vous ne pouvez ajouter qu’un seul groupe à la liste d’utilisateurs et il doit s’agit de l’un des types suivants :
-        - Microsoft 365 groupe
+    - Pour autoriser uniquement les membres d’un groupe spécifique ayant accès à Office Scripts à utiliser leurs scripts dans des flux, sélectionnez **Groupe spécifique**, puis entrez le nom ou l’alias de messagerie du groupe pour l’ajouter à la liste verte. Vous ne pouvez ajouter qu’un seul groupe à la liste verte, et il doit s’agir de l’un des types suivants :
+        - groupe Microsoft 365
         - Groupe de distribution
         - Groupe de sécurité
         - Groupe de sécurité à extension messagerie
 
-        Pour en savoir plus sur les différents types de groupes, voir [Comparer les groupes.](../create-groups/compare-groups.md)
+        Pour en savoir plus sur les différents types de groupes, consultez [Comparer les groupes](../create-groups/compare-groups.md).
 
-    - Pour en savoir plus sur l’utilisation Office scripts avec Power Automate, voir [Exécuter Office scripts avec Power Automate](/office/dev/scripts/develop/power-automate-integration).
+    - Pour en savoir plus sur l’utilisation de scripts Office avec Power Automate, consultez [Exécuter des scripts Office avec Power Automate](/office/dev/scripts/develop/power-automate-integration).
 
 8. Sélectionnez **Enregistrer**.
 
@@ -101,11 +101,11 @@ ms.locfileid: "60168037"
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Étant donné que Office Scripts fonctionne avec Power Automate, nous vous recommandons de passer en revue vos stratégies de protection contre la perte de données (DLP) existantes pour vous assurer que les données de votre organisation restent protégées pendant que les utilisateurs utilisent Office Scripts. Pour plus d’informations, consultez [stratégies de protection contre la perte de données (DLP)](/power-automate/prevent-data-loss).
+Étant donné que Office Scripts fonctionne avec Power Automate, nous vous recommandons de passer en revue vos stratégies de protection contre la perte de données (DLP) Microsoft Purview existantes pour vous assurer que les données de votre organisation restent protégées pendant que les utilisateurs utilisent Office Scripts. Pour plus d’informations, consultez [stratégies de protection contre la perte de données (DLP)](/power-automate/prevent-data-loss).
 
 ## <a name="related-content"></a>Contenu associé
 
-[Office documentation technique sur les scripts](/office/dev/scripts/) (page de liens)\
-[Introduction à Office scripts dans Excel](https://support.microsoft.com/office/9fbe283d-adb8-4f13-a75b-a81c6baf163a) (article)\
-[Partage Office scripts dans Excel web](https://support.microsoft.com/office/226eddbc-3a44-4540-acfe-fccda3d1122b) (article)\
-[Enregistrer, modifier et créer Office scripts dans Excel sur le Web](/office/dev/scripts/tutorials/excel-tutorial) (article)
+[documentation technique Office Scripts](/office/dev/scripts/) (page de liens)\
+[Présentation des scripts Office dans Excel](https://support.microsoft.com/office/9fbe283d-adb8-4f13-a75b-a81c6baf163a) (article)\
+[Partage de scripts Office dans Excel pour le web](https://support.microsoft.com/office/226eddbc-3a44-4540-acfe-fccda3d1122b) (article)\
+[Enregistrer, modifier et créer des scripts Office dans Excel sur le Web](/office/dev/scripts/tutorials/excel-tutorial) (article)

@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: Découvrez comment créer une équipe avec une étiquette de confidentialité unique pour la sécurité.
-ms.openlocfilehash: 2ca2e6320ddd119c4dcb20db2f816c9e9a4453ae
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cfea35dccd09e0eea361e56f1914700660b7fdd4
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324394"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64943126"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configurer une équipe avec l’isolation de sécurité
 
@@ -111,7 +111,7 @@ Si vous avez un partenaire interne ou un groupe des parties prenantes devant pou
 
 Pour créer une étiquette de confidentialité
 
-1. Ouvrez le Centre de conformité Microsoft 365, puis sous **Solutions,** sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Protection des informations.**</a>
+1. Ouvrez le portail de conformité Microsoft Purview, puis sous **Solutions**, sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Protection des données**</a>.
 1. Cliquez sur **Créer une étiquette**.
 1. Entrez un nom pour l’étiquette. Nous vous suggérons de donner le même nom que l’équipe avec qui vous allez l’utiliser.
 1. Tapez un nom et une description, puis cliquez sur **Suivant**.
@@ -143,7 +143,7 @@ Une fois que vous avez créé l’étiquette, vous devez la publier aux utilisat
 
 Pour publier une étiquette de niveau de sensibilité :
 
-1. Dans la Centre de conformité Microsoft 365, dans la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Protection des** informations,</a>choisissez l’onglet **Stratégies d’étiquette.**
+1. Dans le portail de conformité Microsoft Purview, sur la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Protection des données**</a>, choisissez l’onglet **Stratégies d’étiquette**.
 2. Cliquez sur **Publier des étiquettes**.
 3. Dans la page **Choisir des étiquettes de confidentialité à publier**, cliquez sur **Choisir des étiquettes de confidentialité à publier**.
 4. Sélectionnez l’étiquette que vous avez créée, puis cliquez sur **Ajouter**.
