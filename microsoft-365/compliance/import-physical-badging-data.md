@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données du système de badging physique de leur organisation vers Microsoft 365. Cela vous permet d’utiliser ces données dans les stratégies de gestion des risques internes pour vous aider à détecter l’accès à vos bâtiments physiques par des utilisateurs spécifiques qui peuvent indiquer une menace interne possible pour votre organisation.
-ms.openlocfilehash: 7b6161cfc8f712082303641f9da7345edf5e24df
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: a55874b9f920919c16a094d32c4edcde394600d4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937936"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994873"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurer un connecteur pour importer des données de badging physiques (préversion)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez configurer un connecteur de données dans le portail de conformité Microsoft Purview pour importer des données de badging physiques, telles que les événements d’accès physique bruts de l’employé ou les alarmes d’accès physique générées par le système de badging de votre organisation. Des exemples de points d’accès physiques sont une entrée d’un bâtiment ou une entrée dans une salle de serveur ou un centre de données. Les données de badging physiques peuvent être utilisées par la [solution Microsoft 365 de gestion des risques internes](insider-risk-management.md) pour protéger votre organisation contre les activités malveillantes ou le vol de données au sein de votre organisation.
 

@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment configurer & utiliser un connecteur dans le portail de conformité Microsoft Purview pour importer & données d’archive à partir de pages Facebook Business vers Microsoft 365.
-ms.openlocfilehash: 6db2bd474cd2920b4b067563377bbe85084aeeaf
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 58d1f0efd26d892a4bf206c71dc5ee55c653abfb
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947228"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994939"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Configurer un connecteur pour archiver les données Facebook (préversion)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez un connecteur dans le portail de conformité Microsoft Purview pour importer et archiver des données à partir de pages Facebook Business vers Microsoft 365. Après avoir configuré et configuré le connecteur, il se connecte à la page Facebook Business (sur une base planifiée), convertit le contenu des éléments Facebook au format d’e-mail, puis importe ces éléments dans une boîte aux lettres dans Microsoft 365.
 

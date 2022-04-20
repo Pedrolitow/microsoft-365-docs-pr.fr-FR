@@ -15,16 +15,14 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 28f110c6b236721debdb5585263dd835f2a5a658
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 07740a6569f67b04db22351f4b4e1214ccfbc787
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993137"
+ms.locfileid: "64973704"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>Migrer les recherches et conservations eDiscovery héritées vers le portail de conformité
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Le portail de conformité Microsoft Purview offre une expérience améliorée pour l’utilisation d’eDiscovery, notamment : une fiabilité plus élevée, de meilleures performances et de nombreuses fonctionnalités adaptées aux flux de travail eDiscovery, notamment des cas d’organisation de votre contenu par matière, des ensembles de révision pour passer en revue le contenu et l’analytique afin d’éliminer les données à examiner, telles que le regroupement en quasi-double, le thread de messagerie, l’analyse des thèmes et le codage prédictif.
 

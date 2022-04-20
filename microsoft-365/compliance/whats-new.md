@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Qu’il s’agisse d’ajouter de nouvelles solutions au Centre de conformité, de mettre à jour les fonctionnalités existantes en fonction de vos commentaires ou de déployer une documentation actualisée et mise à jour, Microsoft 365 vous aide à rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5c1e48f1cd9d4a73e703e4d5d93d6d1354d57366
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: b5f231abfbfe943f0b2ab0cf33a14267f0940820
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953714"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972472"
 ---
 # <a name="whats-new-in-microsoft-purview"></a>Nouveautés de Microsoft Purview
 
@@ -51,29 +51,29 @@ Pour relever les défis du milieu de travail décentralisé et riche en données
 
 | **Ancien nom** | **Nouveau nom** | **Description** |
 |:----------------|:-------------|:----------------|
-| audit avancé Microsoft 365 | Audit Microsoft Purview (Premium) | Les solutions d’audit fournissent une solution intégrée pour aider les organisations à répondre efficacement aux événements de sécurité, aux enquêtes judiciaires, aux enquêtes internes et aux obligations de conformité. Pour plus d’informations, consultez [l’audit avancé Microsoft Purview (Premium).](advanced-audit.md) |
+| audit avancé Microsoft 365 <br><br> audit de base Microsoft 365 | Audit Microsoft Purview (Premium) <br><br> Audit Microsoft Purview (Standard)| Les solutions d’audit fournissent une solution intégrée pour aider les organisations à répondre efficacement aux événements de sécurité, aux enquêtes judiciaires, aux enquêtes internes et aux obligations de conformité. Pour plus d’informations, consultez [Microsoft Purview Advanced Audit (Premium)](advanced-audit.md) et [Microsoft Purview Advanced Audit (Standard).](set-up-basic-audit.md) |
 | conformité des communications Microsoft 365 | Conformité des communications Microsoft Purview | La conformité des communications permet de réduire les risques en vous aidant à détecter, capturer et prendre rapidement des mesures correctives pour les canaux de communication d’entreprise et les violations de stratégie. Pour en savoir plus, consultez [Microsoft Purview Communication Compliance](communication-compliance-solution-overview.md). |
 | Gestionnaire de conformité Microsoft | Gestionnaire de conformité Microsoft Purview | Le Gestionnaire de conformité peut vous aider tout au long de votre parcours de conformité, de l’inventaire des risques de protection de vos données à la gestion des complexités de l’implémentation de contrôles, la mise à jour des réglementations et des certifications et la création de rapports aux auditeurs. Pour plus d’informations, consultez [le Gestionnaire de conformité Microsoft Purview](compliance-manager.md). |
 | clé client Microsoft 365 | Clé client Microsoft Purview | La clé client offre une protection supplémentaire contre l’affichage des données par des systèmes ou du personnel non autorisés, et complète le chiffrement de disque BitLocker dans les centres de données Microsoft. Pour plus d’informations, consultez [la clé client Microsoft Purview](customer-key-overview.md). |
 | Customer Lockbox dans Office 365 | Microsoft Purview Customer Lockbox | Customer Lockbox garantit que Microsoft ne peut pas accéder à votre contenu pour effectuer des opérations de service sans votre approbation explicite. Customer Lockbox vous permet d’entrer dans le processus de flux de travail d’approbation utilisé par Microsoft pour vous assurer que seules les demandes autorisées autorisent l’accès à votre contenu. Pour plus d’informations, consultez [Microsoft Purview Customer Lockbox](customer-lockbox-requests.md). |
 | Protection contre la perte de données | Protection contre la perte de données Microsoft Purview | DLP permet de protéger les données sensibles et de réduire les risques en empêchant les utilisateurs de partager ces données de manière inappropriée avec des personnes qui ne devraient pas les avoir. Pour plus d’informations, consultez [Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md). |
 | Chiffrement à double clé pour Microsoft 365 | Chiffrement à double clé Microsoft Purview | Double Key Encryption (DKE) utilise deux clés ensemble pour accéder au contenu protégé. Microsoft stocke une clé dans Microsoft Azure, et vous conservez l’autre clé. Pour en savoir plus, consultez [Le chiffrement à double clé Microsoft Purview](double-key-encryption.md) |
-| Microsoft 365 obstacles à l’information | Microsoft Purview Information Barriers | Les obstacles à l’information sont une solution qui limite la communication et la collaboration entre certaines personnes au sein de votre organisation afin de protéger les informations internes. Pour en savoir plus, consultez [Microsoft Purview Information Barriers](information-barriers-solution-overview.md). |
+| Microsoft 365 obstacles à l’information | Cloisonnement de l’information Microsoft Purview | Les obstacles à l’information sont une solution qui limite la communication et la collaboration entre certaines personnes au sein de votre organisation afin de protéger les informations internes. Pour en savoir plus, consultez [Microsoft Purview Information Barriers](information-barriers-solution-overview.md). |
 | Microsoft Information Protection | Microsoft Purview Information Protection | La protection des informations vous aide à découvrir, classifier et protéger des informations sensibles où qu’elles résident ou voyagent. Pour en savoir plus, consultez [Microsoft Purview Information Protection](information-protection.md). |
 | Gouvernance des informations Microsoft | Gestion du cycle de vie des données Microsoft Purview | La gestion du cycle de vie des données vous fournit des outils et des fonctionnalités pour conserver le contenu dont vous avez besoin pour conserver et supprimer le contenu que vous n’avez pas. Pour plus d’informations, consultez [Gestion du cycle de vie des données Microsoft Purview](data-lifecycle-management.md). |
-| Microsoft 365 : gestion des risques internes | Microsoft Purview Insider Risk Management | La gestion des risques internes utilise l’ensemble des indicateurs de service et tiers pour vous aider à identifier, trier et agir rapidement sur l’activité des utilisateurs à risque. Pour en savoir plus, consultez [Microsoft Purview Insider Risk Management](insider-risk-management.md). |
+| Microsoft 365 : gestion des risques internes | Microsoft Purview : gestion des risques internes | La gestion des risques internes utilise l’ensemble des indicateurs de service et tiers pour vous aider à identifier, trier et agir rapidement sur l’activité des utilisateurs à risque. Pour en savoir plus, consultez [Microsoft Purview Insider Risk Management](insider-risk-management.md). |
 | Chiffrement de messages Office 365 | Chiffrement des messages Microsoft Purview | Avec Le chiffrement des messages, votre organisation peut envoyer et recevoir des messages électroniques chiffrés entre des personnes internes et externes à votre organisation. Pour plus d’informations, consultez [Chiffrement des messages Microsoft Purview](ome.md). |
-| Privileged Access Management dans Microsoft 365 | Microsoft Purview Privileged Access Management | Privileged Access Management permet de protéger votre organisation contre les violations et de respecter les meilleures pratiques de conformité en limitant l’accès permanent aux données sensibles ou l’accès aux paramètres de configuration critiques. Pour plus d’informations, consultez [Microsoft Purview Privileged Access Management](privileged-access-management-solution-overview.md). |
+| Privileged Access Management dans Microsoft 365 | Privileged Access Management Microsoft Purview | Privileged Access Management permet de protéger votre organisation contre les violations et de respecter les meilleures pratiques de conformité en limitant l’accès permanent aux données sensibles ou l’accès aux paramètres de configuration critiques. Pour plus d’informations, consultez [Microsoft Purview Privileged Access Management](privileged-access-management-solution-overview.md). |
 | Connecteurs de données Microsoft | Connecteurs de données Microsoft Purview | Microsoft 365 permet aux administrateurs d’utiliser des connecteurs de données pour importer et archiver des données non-Microsoft tierces à partir de plateformes de médias sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration de documents dans des boîtes aux lettres de votre organisation Microsoft 365. Pour plus d’informations, consultez [les connecteurs de données Microsoft Purview](compliance-extensibility.md). |
-| Microsoft 365 advanced eDiscovery | Microsoft Purview eDiscovery Premium | La découverte électronique, ou eDiscovery, est le processus d'identification et de livraison d'informations électroniques qui peuvent être utilisées comme preuves dans des affaires juridiques. Pour plus d’informations, consultez [microsoft Purview eDiscovery Premium](overview-ediscovery-20.md). |
+| Microsoft 365 advanced eDiscovery <br><br> Microsoft 365 Core eDiscovery | Microsoft Purview eDiscovery (Premium) <br><br> Microsoft Purview eDiscovery (Standard) | La découverte électronique, ou eDiscovery, est le processus d'identification et de livraison d'informations électroniques qui peuvent être utilisées comme preuves dans des affaires juridiques. Pour en savoir plus, consultez [Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md) et [Microsoft Purview eDiscovery (Standard).](get-started-core-ediscovery.md) |
 | Centre de conformité Microsoft 365 | Portail de conformité Microsoft Purview | Portail d’administration pour accéder aux solutions et au catalogue de solutions dans la suite Microsoft 365 E5 Conformité. Pour en savoir plus, consultez le [portail de conformité Microsoft Purview](microsoft-365-compliance-center.md). |
 
 ## <a name="february-2022"></a>Février 2022
 
 ### <a name="ediscovery"></a>eDiscovery
 
-- [Gérer les modèles de communication des consignatateurs dans Advanced eDiscovery](advanced-ediscovery-communications-library.md) : les gestionnaires eDiscovery peuvent désormais créer des modèles de communication de consignation qui peuvent être utilisés dans n’importe quel cas Advanced eDiscovery dans l’organisation.
-- [Gérer les agents émetteurs dans Advanced eDiscovery](advanced-ediscovery-issuing-officers.md) - Les gestionnaires eDiscovery peuvent ajouter une liste d’agents émetteurs qui peuvent être affectés aux communications des consignatateurs dans n’importe quel cas Advanced eDiscovery de l’organisation.
+- [Gérer les modèles de communication de consignation dans eDiscovery (Premium)](advanced-ediscovery-communications-library.md) : les gestionnaires eDiscovery peuvent désormais créer des modèles de communication de consignation qui peuvent être utilisés dans n’importe quel cas eDiscovery (Premium) dans l’organisation.
+- [Gérer les agents émetteurs dans eDiscovery (Premium)](advanced-ediscovery-issuing-officers.md) : les gestionnaires eDiscovery peuvent ajouter une liste d’agents émetteurs qui peuvent être affectés aux communications des consignatateurs dans n’importe quel cas eDiscovery (Premium) dans l’organisation.
 
 ### <a name="data-lifecycle-management-and-records-management"></a>Gestion du cycle de vie des données et gestion des enregistrements
 
@@ -120,7 +120,7 @@ Pour relever les défis du milieu de travail décentralisé et riche en données
 
 ### <a name="ediscovery"></a>eDiscovery
 
-- [Advanced eDiscovery flux de travail pour le contenu dans Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#reference-guide) - mis à jour avec un nouveau guide de référence rapide téléchargeable pour la gestion du contenu Teams dans Advanced eDiscovery
+- [Flux de travail eDiscovery (Premium) pour le contenu dans Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#reference-guide) - mis à jour avec un nouveau guide de référence rapide téléchargeable pour la gestion Teams contenu dans eDiscovery (Premium)
 
 ### <a name="data-lifecycle-management"></a>Gestion du cycle de vie des données
 
@@ -159,7 +159,7 @@ Les articles suivants ont été ajoutés pour l’intégration des appareils :
 
 ### <a name="ediscovery"></a>eDiscovery
 
-- [Utilisez le nouveau format de cas dans Advanced eDiscovery](advanced-ediscovery-new-case-format.md) nouveau format de cas a été publié en disponibilité générale et renommé à partir du « grand format de cas »
+- [Utiliser le nouveau format de cas dans eDiscovery (Premium)](advanced-ediscovery-new-case-format.md) nouveau format de cas a été publié en disponibilité générale et renommé à partir du « grand format de cas »
 
 ### <a name="retention-and-records-management"></a>Conservation et gestion des enregistrements
 - Déploiement : Nouveaux paramètres de gestion des enregistrements qui contrôlent si les éléments étiquetés dans SharePoint et OneDrive peuvent être supprimés par les utilisateurs. Auparavant, les étiquettes de rétention configurées pour conserver le contenu et qui ne marquent pas les éléments en tant qu’enregistrements ont empêché les utilisateurs de supprimer du contenu étiqueté dans SharePoint lorsque cette action était autorisée dans OneDrive. Pour plus d’informations, consultez [le fonctionnement de la rétention pour SharePoint et OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
@@ -213,8 +213,8 @@ Ajout des nouveaux articles suivants :
 
 ### <a name="ediscovery"></a>eDiscovery
 
-- [Collectez des pièces jointes cloud dans Advanced eDiscovery](advanced-ediscovery-cloud-attachments.md) en plus de collecter la dernière version d’une pièce jointe cloud, vous pouvez collecter la version qui a été partagée dans un e-mail ou Teams conversation de conversation ; la collecte de la version partagée est rendue possible par la nouvelle fonctionnalité d’application automatique d’une étiquette de rétention aux pièces jointes cloud.
-- [Configurez des versions historiques dans Advanced eDiscovery](advanced-ediscovery-historical-versions.md) nouvelle fonctionnalité qui indexe toutes les versions des documents stockés sur un site SharePoint à des fins de recherche. Cela signifie que les versions de document qui contiennent du contenu correspondant à une requête de collection sont retournées dans les résultats de la recherche.
+- [Collectez les pièces jointes cloud dans eDiscovery (Premium)](advanced-ediscovery-cloud-attachments.md) en plus de collecter la dernière version d’une pièce jointe cloud, vous pouvez collecter la version qui a été partagée dans un e-mail ou Teams conversation de conversation ; la collecte de la version partagée est rendue possible par la nouvelle fonctionnalité d’application automatique d’une étiquette de rétention aux pièces jointes cloud.
+- [Configurez les versions historiques dans les nouvelles fonctionnalités eDiscovery (Premium)](advanced-ediscovery-historical-versions.md) qui indexent toutes les versions des documents stockés sur un site SharePoint à des fins de recherche. Cela signifie que les versions de document qui contiennent du contenu correspondant à une requête de collection sont retournées dans les résultats de la recherche.
 
 ### <a name="encryption"></a>Chiffrement
 
@@ -275,7 +275,7 @@ Ajout des nouveaux articles suivants :
 
 ### <a name="ediscovery"></a>eDiscovery
 
-- [Utilisez l’éditeur KQL pour créer des requêtes de recherche](ediscovery-kql-editor.md) en préversion publique d’une nouvelle façon de créer des requêtes de recherche dans la recherche de contenu, Core eDiscovery et Advanced eDiscovery ; l’éditeur KQL fournit la saisie semi-automatique des propriétés et conditions pouvant faire l’objet d’une recherche prises en charge et affiche des listes de valeurs prises en charge pour les propriétés et conditions standard ; le KQL  l’éditeur fournit également la détection des erreurs et des suggestions pour les correctifs des erreurs potentielles dans les requêtes de recherche
+- [Utilisez l’éditeur KQL pour créer des requêtes de recherche](ediscovery-kql-editor.md) en préversion publique d’une nouvelle façon de créer des requêtes de recherche dans la recherche de contenu, eDiscovery (Standard) et eDiscovery (Premium); l’éditeur KQL fournit la saisie semi-automatique des propriétés et des conditions pouvant faire l’objet d’une recherche prises en charge et affiche des listes de valeurs prises en charge pour les propriétés et conditions standard ; le KQL  l’éditeur fournit également la détection des erreurs et des suggestions pour les correctifs des erreurs potentielles dans les requêtes de recherche
 
 ### <a name="information-barriers"></a>Obstacles aux informations
 

@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez des collections dans eDiscovery (Premium) pour rechercher et collecter du contenu relatif à votre cas ou investigation.
-ms.openlocfilehash: 8831508260d48dc270a5e4b7a15cecf894656ff6
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f57748d54bc177812fd89eca13252311d4ab269f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940266"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996237"
 ---
 # <a name="learn-about-collections-in-ediscovery-premium"></a>En savoir plus sur les collections dans eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsque les organisations sont confrontées à la collecte des communications et du contenu susceptibles d’être pertinents pour une enquête ou un litige potentiel, elles sont confrontées à un défi important dans les meilleures circonstances. Dans le milieu de travail moderne d’aujourd’hui, le volume, la variété et la rapidité du contenu permettent l’innovation et le travail à distance, tout en développant les exigences et le processus de gestion des collections pour les enquêtes eDiscovery.
 

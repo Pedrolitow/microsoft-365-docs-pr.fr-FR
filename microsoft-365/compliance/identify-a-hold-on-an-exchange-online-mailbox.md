@@ -18,14 +18,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Découvrez comment identifier les différents types de conservation qui peuvent être placés sur une boîte aux lettres Exchange Online dans Microsoft 365.
-ms.openlocfilehash: 27b6b616bfa3fac01ae93c3ee8270855bed559d3
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2e62d8f6fd0dc6352b4bf6fc5766b9cd33f8ffb4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949738"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994169"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cet article explique comment identifier les conservations placées sur Exchange Online boîtes aux lettres dans Microsoft 365.
 
@@ -286,7 +288,7 @@ Utilisez le tableau suivant pour vous aider à comprendre chacune des valeurs pr
 
 Lorsqu’une stratégie de rétention n’est plus appliquée à une boîte aux lettres, nous mettons un délai temporaire de suspension sur l’utilisateur pour empêcher le vidage du contenu. Une conservation différée peut être désactivée en exécutant la `Set-Mailbox -RemoveDelayHoldApplied` commande.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Une fois que vous avez identifié les conservations appliquées à une boîte aux lettres, vous pouvez effectuer des tâches telles que la modification de la durée de la conservation, la suppression temporaire ou définitive de la conservation ou l’exclusion d’une boîte aux lettres inactive d’une stratégie de rétention Microsoft 365. Pour plus d’informations sur l’exécution de tâches liées aux conservations, consultez l’une des rubriques suivantes :
 

@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Exportez les documents d’un ensemble de révisions vers un compte stockage Azure, puis utilisez Explorateur Stockage Azure pour les télécharger sur un ordinateur local.
-ms.openlocfilehash: babac7d0289eee2384c12acfe05223bfceba1ce1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6c8709fe1540393164e00222b728b10d5f809012
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934838"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994895"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>Exporter des documents dans un ensemble de révisions vers un compte stockage Azure
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsque vous exportez des documents à partir d’un ensemble de révisions dans un cas eDiscovery (Premium), vous avez la possibilité de les exporter vers un compte stockage Azure géré par votre organisation. Si vous utilisez cette option, les documents sont chargés à votre emplacement stockage Azure. Une fois exportés, vous pouvez accéder aux documents (et les télécharger sur un ordinateur local ou à un autre emplacement) à l’aide de la Explorateur Stockage Azure. Cet article fournit des instructions sur l’exportation de documents vers votre compte stockage Azure et l’utilisation du Explorateur Stockage Azure pour vous connecter à un emplacement stockage Azure pour télécharger les documents exportés. Pour plus d’informations sur Explorateur Stockage Azure, consultez [Utiliser Explorateur Stockage Azure](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 

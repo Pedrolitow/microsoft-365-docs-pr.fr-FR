@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Vous pouvez corriger une erreur de traitement dans un document d’un jeu de révision dans eDiscovery (Premium) sans avoir à suivre le processus de correction des erreurs en bloc.
-ms.openlocfilehash: fa4a595a967935241e67b9a88ed158c789075102
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d3b90f0f2d396b6304bb85b46bc5b018802101eb
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935651"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993993"
 ---
 # <a name="single-item-error-remediation-in-ediscovery-premium"></a>Correction des erreurs d’élément unique dans eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La correction des erreurs permet aux utilisateurs de Microsoft Purview eDiscovery (Premium) de corriger les problèmes de données qui empêchent eDiscovery (Premium) de traiter correctement le contenu. Par exemple, les fichiers protégés par mot de passe ne peuvent pas être traités, car ces fichiers sont verrouillés ou chiffrés. Auparavant, vous ne pouviez corriger les erreurs en bloc qu’à l’aide de [ce flux de travail](error-remediation-when-processing-data-in-advanced-ediscovery.md). Mais parfois, il n’est pas judicieux de corriger les erreurs dans plusieurs fichiers lorsque vous ne savez pas si l’un de ces fichiers répond au cas que vous examinez. Il peut également ne pas être judicieux de corriger les erreurs avant que vous ayez eu l’occasion de passer en revue les métadonnées de fichier (par exemple, l’emplacement du fichier ou qui avaient accès) pour vous aider à prendre des décisions préalables en matière de réactivité. Une nouvelle fonctionnalité appelée *correction d’erreur d’élément unique* permet aux gestionnaires eDiscovery d’afficher les métadonnées des fichiers avec une erreur de traitement et, si nécessaire, de corriger l’erreur directement dans le jeu de révision. L’article explique comment identifier, ignorer et corriger des fichiers avec des erreurs de traitement dans un ensemble de révisions.
 

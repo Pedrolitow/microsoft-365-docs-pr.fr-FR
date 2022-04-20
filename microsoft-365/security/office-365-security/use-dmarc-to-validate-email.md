@@ -18,12 +18,12 @@ ms.collection:
 description: Découvrez comment configurer DMARC (Domain-based Message Authentication, Reporting, and Conformance) pour valider les messages envoyés à partir de votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cae3f007cc046bfc2afd6bb7322c65fe047816d5
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: c10b1cc94f23e96d11a495b9b176d605cb2f3183
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465880"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972846"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Utiliser DMARC pour valider les e-mails
 
@@ -189,7 +189,6 @@ Dans cet exemple d’enregistrement TXT DMARC : , vous pouvez voir l’adresse r
 
 > [!TIP]
 > Visitez le [catalogue MISA](https://www.microsoft.com/misapartnercatalog) pour afficher davantage de fournisseurs tiers offrant des rapports DMARC pour Microsoft 365. Pour plus d’informations sur les adresses DMARC « rua », voir [ « Authentification de message, rapports et conformité basée sur un domaine » de l’organisation IETF](https://datatracker.ietf.org/doc/html/rfc7489).
-
 
 ## <a name="best-practices-for-implementing-dmarc-in-microsoft-365"></a>Meilleures pratiques pour la mise en œuvre de DMARC dans Microsoft 365
 

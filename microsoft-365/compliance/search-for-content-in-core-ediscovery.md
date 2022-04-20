@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Recherchez du contenu qui peut être pertinent pour un cas eDiscovery (Standard).
-ms.openlocfilehash: d97acf066914a7dee0059f27aa0127efe52ea5f3
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 00a7c7bdd565a5fc184281fa467db3c56b1c6288
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971602"
+ms.locfileid: "64995335"
 ---
 # <a name="search-for-content-in-a-ediscovery-standard-case"></a>Rechercher du contenu dans un cas eDiscovery (Standard)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Une fois qu’un cas Microsoft Purview eDiscovery (Standard) est créé et que des personnes intéressées par le cas sont mises en attente, vous pouvez créer et exécuter une ou plusieurs recherches de contenu pertinents pour le cas. Les recherches associées à un cas eDiscovery (Standard) ne sont pas répertoriées dans la page **Recherche de contenu** dans le portail de conformité Microsoft Purview. Ces recherches sont répertoriées dans la page **Recherches** du cas eDiscover principal à lequel les recherches sont associées. Cela signifie également que les recherches associées à un cas sont accessibles uniquement par les membres du cas.
 

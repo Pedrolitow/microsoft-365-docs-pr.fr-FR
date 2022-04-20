@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article décrit les limites du cas eDiscovery (Standard) dans Microsoft 365.
-ms.openlocfilehash: 4eb43687e92d90179ff24d69827c3c2889d82b47
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 29d1ef4d017ebf26a0c5ed1cc03fcf4361266e94
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971522"
+ms.locfileid: "64994103"
 ---
 # <a name="limits-in-ediscovery-standard"></a>Limites dans eDiscovery (Standard)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Le tableau suivant répertorie les limites pour les cas eDiscovery (Standard) et les conservations associées à un cas eDiscovery (Standard). Pour plus d’informations sur Microsoft Purview eDiscovery (Standard), consultez [Vue d’ensemble d’eDiscovery (Standard).](./get-started-core-ediscovery.md)
     

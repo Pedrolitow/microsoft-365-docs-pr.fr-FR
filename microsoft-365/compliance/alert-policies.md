@@ -20,14 +20,16 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Créez des stratégies d’alerte dans le portail de conformité Microsoft Purview ou le portail Microsoft 365 Defender pour surveiller les menaces potentielles, la perte de données et les problèmes d’autorisations.
-ms.openlocfilehash: ad7099ddcbc99fd6cf852b1bb7f564c0caf444a7
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: beecaf86a013480e0c5546e07189e8be5b622b17
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944258"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995907"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Stratégies d’alerte dans Microsoft 365
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez utiliser des stratégies d’alerte et le tableau de bord des alertes dans le portail de conformité Microsoft Purview ou le portail Microsoft 365 Defender pour créer des stratégies d’alerte, puis afficher les alertes générées lorsque les utilisateurs effectuent des activités qui correspondent aux conditions d’une stratégie d’alerte. Il existe plusieurs stratégies d’alerte par défaut qui vous aident à surveiller des activités telles que l’attribution de privilèges d’administrateur dans Exchange Online, les attaques de programmes malveillants, les campagnes de hameçonnage et les niveaux inhabituels de suppressions de fichiers et de partage externe.
 
@@ -264,7 +266,7 @@ Pour voir la catégorie à laquelle une stratégie d’alerte par défaut est af
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Journaux d’audit|||||||
 |Gestion des cas|||||||
-|Administrateur de conformité|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|
+|Administrateur de conformité|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)||![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)|
 |Recherche de conformité|||||||
 |Gestion des appareils|||||||
 |Gestion des destructions|||||||
@@ -277,13 +279,13 @@ Pour voir la catégorie à laquelle une stratégie d’alerte par défaut est af
 |Configuration de l’organisation||||||![Coche.](../media/checkmark.png)|
 |Aperçu|||||||
 |Gestion des enregistrements|![Coche.](../media/checkmark.png)||||||
-|Gestion de la rétention|![Marque de vérification.](../media/checkmark.png)||||||
+|Gestion de la rétention|![Coche.](../media/checkmark.png)||||||
 |Révision|||||||
 |Déchiffrer RMS|||||||
-|Gestion des rôles||||![Marque de vérification.](../media/checkmark.png)|||
+|Gestion des rôles||||![Coche.](../media/checkmark.png)|||
 |Rechercher et vider|||||||
-|Administrateur de sécurité||![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|
-|Lecteur de sécurité||![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)
+|Administrateur de sécurité||![Coche.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|
+|Lecteur de sécurité||![Coche.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)
 |Vue Service Assurance|||||||
 |Administrateur de révision de surveillance|||||||
 |Journaux d'audit en affichage seul|||||||

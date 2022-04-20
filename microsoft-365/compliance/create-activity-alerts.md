@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Ajouter et gérer des alertes d’activité dans le portail de conformité Microsoft Purview afin que Microsoft 365 vous envoie des notifications par e-mail lorsque les utilisateurs effectuent des activités spécifiques
-ms.openlocfilehash: 7826a09bff1dd17febc3f621b50ed32129e21a37
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 43991eaf0f80957b0d72a2f16a2021f24194f2d6
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946482"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995027"
 ---
 # <a name="create-activity-alerts"></a>Créer des alertes d’activité
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez créer une alerte d’activité qui vous enverra une notification par e-mail lorsque les utilisateurs effectuent des activités spécifiques dans Office 365. Les alertes d’activité sont similaires à la recherche d’événements dans le journal d’audit, sauf que vous recevrez un e-mail lorsqu’un événement pour une activité pour laquelle vous avez créé une alerte se produit.
 

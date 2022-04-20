@@ -14,18 +14,20 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 9ee299c0972ed4e286e5a660f5082dd5632167e4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: cd0d463e234c439d8b57576375fd6a91e512f753
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934266"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995267"
 ---
 # <a name="upload-your-test-base-package-zip"></a>Télécharger votre package de base de test (Zip) 
 
-Dans la page du portail de base de test, accédez à la **Télécharger nouvelle** option de package dans la barre de navigation de gauche, comme indiqué ci-dessous :
+Dans la page du portail de base de test, **accédez** à l’option Nouveau package dans la barre de navigation de gauche, puis cliquez sur **Expérience de chargement héritée** pour activer l’expérience de chargement zip comme indiqué ci-dessous :
 
-:::image type="content" alt-text="Télécharger un nouveau package." source="Media/Upload-New-Package.png" lightbox="Media/Upload-New-Package.png":::
+:::image type="content" alt-text="Télécharger un nouveau package." source="Media/testapplication01.png" lightbox="Media/testapplication01.png":::
+
+:::image type="content" alt-text="Appliquez l’opération." source="Media/testapplication21.png" lightbox="Media/testapplication21.png":::
 
 Une fois là- bas, suivez les étapes ci-dessous pour charger un nouveau package.
 
@@ -110,7 +112,7 @@ Les étapes ci-dessous fournissent un guide sur la façon de renseigner les dét
 
     :::image type="content" alt-text="Affichage des détails du test." source="Media/TestDetails.png":::
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Notre prochain article traite du chargement de vos fichiers binaires dans notre service.
 

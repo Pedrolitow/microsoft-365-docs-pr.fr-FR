@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: c66c0c60002b67642a2cf8eb8e1a66dc5db140ff
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.openlocfilehash: 00ded796cb0fc8878b3eee3f656afac426cd0f35
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651430"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973990"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîte aux lettres entre locataires (préversion)
 
@@ -378,7 +378,7 @@ La soumission par lot de migration est également prise en charge à partir du n
 
 Une fois que la boîte aux lettres passe de la source à la cible, vous devez vous assurer que les utilisateurs du courrier local, à la fois dans la source et la cible, sont mis à jour avec la nouvelle adresse cible. Dans les exemples, le targetDeliveryDomain utilisé dans le déplacement est **contoso.onmicrosoft.com**. Mettez à jour les utilisateurs de messagerie avec cette adresse cible.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Devons-nous mettre à jour remoteMailboxes dans la source localement après le déplacement ?**
 
@@ -644,7 +644,7 @@ Non, après une migration de boîte aux lettres entre locataires, eDiscovery par
 
       | Nom                                             |
       | ------------------------------------------------ |
-      | Advanced eDiscovery Stockage (500 Go)             |
+      | eDiscovery (Premium) Stockage (500 Go)             |
       | Référentiel sécurisé client                                 |
       | Protection contre la perte de données                             |
       | Services CAL Exchange Enterprise (EOP, DLP)      |
@@ -660,7 +660,7 @@ Non, après une migration de boîte aux lettres entre locataires, eDiscovery par
       | Exchange Online Multi-Geo                        |
       | Exchange Online (plan 1)                           |
       | Exchange Online POP                              |
-      | Exchange Online Protection                       |
+      | Exchange Online Protection                       |
       | Obstacles aux informations                             |
       | Protection des informations pour Office 365 – Premium  |
       | Protection des informations pour Office 365 – Standard |
@@ -669,7 +669,7 @@ Non, après une migration de boîte aux lettres entre locataires, eDiscovery par
       | Microsoft Bookings                               |
       | Centre d’affaires Microsoft                        |
       | Microsoft MyAnalytics (complet)                     |
-      | Office 365 Advanced eDiscovery                   |
+      | Office 365 eDiscovery (Premium)                   |
       | Microsoft Defender pour Office 365 (Plan 1)       |
       | Microsoft Defender pour Office 365 (Plan 2)       |
       | Office 365 Privileged Access Management          |

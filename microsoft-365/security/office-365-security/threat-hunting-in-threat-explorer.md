@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bcbacc886c57257e5c4b067b278c7736ae403390
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d8515ce2bccb90478f11fa4a1813c7cb4ab7fb7d
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945514"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973836"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Repérage des menaces dans l’Explorateur de menaces pour Microsoft Defender pour Office 365
 
@@ -35,7 +35,6 @@ Contenu de cet article :
 
 > [!NOTE]
 > Cela fait partie d’une série de 3 articles sur **l’Explorateur de menaces,** la **sécurité des e-mails** et **les détections de l’Explorateur et en temps réel** (telles que les différences entre les outils et les autorisations nécessaires pour les utiliser). Les deux autres articles de cette série sont [la sécurité des e-mails avec l’Explorateur de menaces](email-security-in-microsoft-defender.md) et [l’Explorateur de menaces et les détections en temps réel](real-time-detections.md).
-
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
@@ -69,7 +68,6 @@ Une fois qu’une personne chargée des opérations de sécurité (Sec Ops) sél
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/sender-drop-down.png" alt-text="Bouton Expéditeur dans l’Explorateur de menaces" lightbox="../../media/sender-drop-down.png":::
-
 
 Le focus d’affinement dans l’Explorateur ou la détection en temps réel peut être pensé en couches. La première est **Affichage**. La seconde peut être considérée comme un *focus filtré*. Par exemple, vous pouvez retracer les étapes que vous avez suivies pour rechercher une menace en enregistrant vos décisions comme suit : pour trouver le problème dans l’Explorateur, **j’ai choisi l’affichage Programmes malveillants avec un focus de filtre destinataire**. Cela facilite la retracation de vos étapes.
 

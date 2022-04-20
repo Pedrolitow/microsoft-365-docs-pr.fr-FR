@@ -318,7 +318,7 @@
               href: sit-learn-about-exact-data-match-based-sits.md
             - name: Création d’une empreinte numérique de document
               href: document-fingerprinting.md
-            - name: Découvrez les entités nommées (aperçu).
+            - name: En savoir plus sur les entités nommées
               href: named-entities-learn.md
         - name: Démarrage avec le type d’informations sensibles
           items:
@@ -362,7 +362,7 @@
               href: sit-use-exact-data-manage-schema.md
             - name: Actualiser votre fichier de table source d’informations sensibles
               href: sit-use-exact-data-refresh-data.md
-            - name: Utiliser des entités nommées dans vos politiques de prévention des pertes de données (aperçu)
+            - name: Utiliser des entités nommées dans vos stratégies de protection contre la perte de données
               href: named-entities-use.md
             - name: Scénarios d’usage courants pour les types d’informations sensibles
               href: sit-common-scenarios.md

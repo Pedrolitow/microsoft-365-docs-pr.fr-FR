@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Utilisez des mots clés et des conditions pour limiter l’étendue de la recherche lors de la recherche de données à l’aide d’eDiscovery (Premium) dans Microsoft 365.
-ms.openlocfilehash: 7a3c3747e38667eca40032511209af964ffb165a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: cceac6974bacb066201120ac4972393f2323353c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950332"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995005"
 ---
 # <a name="build-search-queries-for-collections-in-ediscovery-premium"></a>Créer des requêtes de recherche pour les collections dans eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lors de la configuration de la requête de recherche lors de la création d’une [collection](collections-overview.md) dans un cas eDiscovery (Premium), vous pouvez utiliser des mots clés pour rechercher du contenu et des conditions spécifiques afin de limiter l’étendue de la recherche afin de renvoyer les éléments les plus pertinents pour votre enquête légale.
 

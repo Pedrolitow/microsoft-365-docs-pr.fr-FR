@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données XSLT/XML à partir de Veritas dans Microsoft 365. Ce connecteur vous permet d’archiver les données de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: e1537bce351c2dd98286f82e134cb5779742b1f2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 92932e3e18c8f43c46cf71e43ec02306d78a2f60
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936882"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995731"
 ---
 # <a name="set-up-a-connector-to-archive-xsltxml-data"></a>Configurer un connecteur pour archiver des données XSLT/XML
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez un connecteur Veritas dans le portail de conformité Microsoft Purview pour importer et archiver des données de la source de page Web vers les boîtes aux lettres utilisateur de votre organisation Microsoft 365. Veritas vous fournit un [connecteur XSLT/XML](https://globanet.com/xslt-xml) qui permet le développement rapide de fichiers créés à l’aide de XSLT (transformations de langage de feuille de style extensible) pour transformer des fichiers XML en d’autres formats de fichiers (tels que HTML ou texte) qui peuvent être importés dans Microsoft 365. Le connecteur convertit le contenu d’un élément de la source XSLT/XML au format de message électronique, puis importe l’élément converti en boîtes aux lettres Microsoft 365.
 

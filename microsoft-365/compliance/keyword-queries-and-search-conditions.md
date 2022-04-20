@@ -22,14 +22,16 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les propriétés de l’e-mail et du document que vous pouvez rechercher à l’aide des outils de recherche eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 09c939f7d92bf06a9eab89d8ac45fec78bd424a8
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f00d257a558d252ca0176166d42d02cd72dad0aa
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936640"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995379"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Requêtes de mots clés et conditions de recherche pour eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cet article décrit les propriétés de l’e-mail et du document que vous pouvez rechercher dans les éléments de messagerie et les conversations Microsoft Teams dans Exchange Online, ainsi que les documents stockés sur des sites SharePoint et OneDrive Entreprise à l’aide des outils de recherche eDiscovery dans le portail de conformité Microsoft Purview. Cela inclut la recherche de contenu, Microsoft Purview eDiscovery (Standard) et Microsoft Purview eDiscovery (Premium) (les recherches eDiscovery dans eDiscovery (Premium) sont appelées *collections*). Vous pouvez également utiliser les **\*** applets de commande -ComplianceSearch dans security & Compliance Center PowerShell pour rechercher ces propriétés. L’article décrit également les éléments suivants :
 

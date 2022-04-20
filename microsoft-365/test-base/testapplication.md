@@ -1,6 +1,6 @@
 ---
-title: Package Test Binaries sur la base de test
-description: Comment tester le package Binaries sur la base de test
+title: Tester vos fichiers binaires sur la base de test
+description: Comment tester vos fichiers binaires sur la base de test
 search.appverid: MET150
 author: Tinacyt
 ms.author: tinachen
@@ -14,14 +14,14 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 808adad8a661d163014dd89c7e587fea3a02e9a2
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 8474631edfe580dfc269b2d02c1a113351c6ba6d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953698"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995297"
 ---
-# <a name="test-binaries-package-on-test-base"></a>Package Test Binaries sur la base de test
+# <a name="test-your-binary-files-on-test-base"></a>Tester vos fichiers binaires sur la base de test
 
 > [!NOTE]
 > Ce guide vous guidera dans la création d’un package de base de test à partir de zéro. Si vous disposez déjà d’un package de base de test (.zip), vous pouvez basculer pour utiliser notre expérience de chargement [héritée Télécharger votre package de base de test (Zip).](uploadApplication.md)

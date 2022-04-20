@@ -13,42 +13,41 @@ metadata:
   ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
   ms.custom:
   - seo-marvel-apr2020
-  description: Les administrateurs peuvent afficher les questions fréquemment posées et les réponses sur les tâches d’administration déléguées dans Microsoft 365 pour les partenaires et revendeurs Microsoft.
+  description: Les administrateurs peuvent consulter les questions fréquemment posées et les réponses sur les tâches d’administration déléguées dans Microsoft 365 pour les partenaires et revendeurs Microsoft.
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 588482681092f5f176a24eb841713c1bd3275e6a
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  ms.openlocfilehash: 7994db067c4673546c77d4b6df2c6972fa30a25c
+  ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63682259"
+  ms.lasthandoff: 04/20/2022
+  ms.locfileid: "64972868"
 title: FAQ sur l’administration déléguée
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-
-  Cet article fournit des questions fréquemment posées et des réponses sur les tâches d’administration déléguées dans Microsoft 365 pour les partenaires et revendeurs Microsoft. L’administration déléguée inclut la possibilité de gérer Exchange Online Protection (EOP) pour d’autres clients (sociétés).
+  Cet article fournit des questions fréquentes et des réponses sur les tâches d’administration déléguées dans Microsoft 365 pour les partenaires et revendeurs Microsoft. L’administration déléguée inclut la possibilité de gérer les paramètres de Exchange Online Protection (EOP) pour d’autres locataires (entreprises).
 sections:
 - name: Ignoré
   questions:
   - question: >
-      Je suis revendeur et je dois gérer mes clients. Comment cela fonctionne-t-il ?
+      Je suis revendeur et je dois gérer mes locataires clients. Comment cela fonctionne-t-il ?
     answer: >
-      Si vous êtes un partenaire ou un revendeur Microsoft et que vous vous êtes inscrit en tant que Fournisseur de solutions Microsoft Cloud (CSP), vous pouvez demander des fonctionnalités _d’administration_ déléguées dans l’organisation Microsoft 365 de votre client. Si vous souhaitez en savoir plus, consultez les articles suivants :
+      Si vous êtes partenaire ou revendeur Microsoft et que vous vous êtes inscrit pour être un Fournisseur de solutions Microsoft Cloud (CSP), vous pouvez demander des fonctionnalités _d’administration déléguée_ dans l’organisation Microsoft 365 de votre client. Si vous souhaitez en savoir plus, consultez les articles suivants :
 
 
-      - [fournisseur de solutions Cloud programme](/partner-center/csp-overview)
+      - [programme fournisseur de solutions Cloud](/partner-center/csp-overview)
 
-      - [Obtenir des autorisations pour gérer le service ou l’abonnement d’un client](/customers-revoke-admin-privileges).
+      - [Obtenez des autorisations pour gérer le service ou l’abonnement d’un client](/customers-revoke-admin-privileges).
   - question: >
-      Je suis un client, pas un revendeur. Comment configurer un administrateur délégué pour mes sous-clients ?
+      Je suis un client, pas un revendeur. Comment configurer un administrateur délégué pour mes sous-locataires ?
     answer: >
-      L’administration déléguée est uniquement disponible pour les revendeurs et les partenaires. Toutefois, il existe un exemple de script PowerShell qui vous aidera à appliquer des stratégies à vos sous-traitants (sociétés). Pour plus d'informations, voir [Exemple de script pour l'application de paramètres EOP à plusieurs locataires](/exchange/standalone-eop/sample-script-standalone-eop-settings-to-multiple-tenants).
+      L’administration déléguée est disponible uniquement pour les revendeurs et les partenaires. Toutefois, il existe un exemple de script PowerShell qui vous aidera à appliquer des stratégies à vos sous-locataires (entreprises). Pour plus d'informations, voir [Exemple de script pour l'application de paramètres EOP à plusieurs locataires](/exchange/standalone-eop/sample-script-standalone-eop-settings-to-multiple-tenants).
   - question: >
-      Puis-je empêcher mon administrateur de sous-site de modifier ma stratégie ?
+      Puis-je empêcher mon administrateur sous-locataire de modifier ma stratégie ?
     answer: >
-      Non. Microsoft 365 ne dispose pas actuellement de cette fonctionnalité.
+      Non. Microsoft 365 n’a actuellement pas cette fonctionnalité.
   - question: >
-      Puis-je obtenir des rapports consolidés sur tous mes sous-traitants ?
-    answer: Les rapports consolidés au sein des entreprises que vous gérez ne sont pas disponibles dans Centre d'administration Microsoft 365 rapports. Toutefois, vous pouvez obtenir des rapports à l’aide [de Microsoft Graph](/graph/overview).
+      Puis-je obtenir des rapports consolidés sur tous mes sous-locataires ?
+    answer: Les rapports consolidés entre les entreprises que vous gérez ne sont pas disponibles dans Centre d'administration Microsoft 365 rapports. Toutefois, vous pouvez obtenir des rapports à l’aide de [Microsoft Graph](/graph/overview).

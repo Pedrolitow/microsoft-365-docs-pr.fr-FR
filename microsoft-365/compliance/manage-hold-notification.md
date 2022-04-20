@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez le flux de travail de communication dans eDiscovery (Premium) pour suivre l’état de vos notifications de conservation légale et, si nécessaire, les mettre à jour et les renvoyer.
-ms.openlocfilehash: 3e0ab93b469d2ae80d9416137425b7f2876442c1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 83e5331aaea59893f06cfa0629d627e500cfe1b1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946130"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996171"
 ---
 # <a name="manage-hold-notifications"></a>Gérer les notifications de conservation
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Une fois que vous avez lancé votre flux de travail de notification de conservation légale, vous pouvez utiliser le flux de travail de communication dans Microsoft Purview eDiscovery (Premium) pour suivre l’état de vos communications. L’onglet Communications contient une liste de toutes les notifications dans votre cas eDiscovery (Premium). Vous pouvez voir des détails tels que le nombre de consignats qui ont été affectés ou qui ont accepté l’avis.
 

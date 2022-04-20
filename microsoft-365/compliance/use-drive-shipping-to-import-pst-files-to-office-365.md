@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: L’administrateur peut apprendre à importer en bloc des fichiers PST dans Microsoft 365 boîtes aux lettres en copiant des fichiers PST sur un disque dur, puis en les expédiant à Microsoft.
-ms.openlocfilehash: 53022477b034c0620177b00c0c171c8d6c36e250
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d2255a01c49e3837365735e1c3300b7f6b34c42c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934640"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995995"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Utiliser l’expédition de lecteur pour importer les fichiers PST de votre organisation
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Cet article s’applique aux administrateurs. Essayez-vous d’importer des fichiers PST dans votre propre boîte aux lettres ? Voir [Importer le courrier électronique, les contacts et le calendrier à partir d’un fichier .pst Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    
@@ -53,7 +55,7 @@ Pour obtenir des questions fréquentes sur l’utilisation de l’expédition de
   
 ## <a name="before-you-import-pst-files"></a>Avant d’importer des fichiers PST
 
-- Vous devez disposer du rôle d’exportation d’importation de boîte aux lettres dans Exchange Online pour créer des travaux d’importation dans le portail de conformité Microsoft Purview et importer des fichiers PST dans des boîtes aux lettres utilisateur. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation. Vous pouvez aussi créer un nouveau groupe de rôles, lui attribuer le rôle Importation/Exportation de boîtes aux lettres, puis vous ajouter en tant que membre. Pour plus d’informations, consultez les sections « Ajouter un rôle à un groupe de rôles » ou « Créer un groupe de rôles » dans [Gérer les groupes de rôles](/Exchange/permissions-exo/role-groups).
+- Vous devez disposer du rôle Importation et exportation de boîte aux lettres dans Exchange Online pour créer des travaux d’importation dans le portail de conformité Microsoft Purview et importer des fichiers PST dans des boîtes aux lettres utilisateur. Par défaut, ce rôle n’est attribué à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation et exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation et exportation de boîte aux lettres, puis vous ajouter en tant que membre. Pour plus d’informations, consultez les sections « Ajouter un rôle à un groupe de rôles » ou « Créer un groupe de rôles » dans [Gérer les groupes de rôles](/Exchange/permissions-exo/role-groups).
 
     En plus du rôle Importation/Exportation de boîte aux lettres, vous devez également avoir le rôle Destinataires de messagerie dans Exchange Online. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de l’organisation et Gestion des destinataires dans Exchange Online.
 

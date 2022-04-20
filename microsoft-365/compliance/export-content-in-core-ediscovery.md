@@ -18,14 +18,16 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Décrit comment exporter et télécharger du contenu à partir d’un cas eDiscovery (Standard) dans Microsoft 365.
-ms.openlocfilehash: a0ea33d599ed609c24cf63f1df4c68b882364b1b
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2a63d22c8b4cb20e2c0f1317a8496e1cf517b2da
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937958"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995445"
 ---
 # <a name="export-content-from-a-ediscovery-standard-case"></a>Exporter du contenu à partir d’un cas eDiscovery (Standard)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Une fois qu’une recherche associée à un cas Microsoft Purview eDiscovery (Standard) est exécutée, vous pouvez exporter les résultats de la recherche. Lorsque vous exportez des résultats de recherche, les éléments de boîte aux lettres sont téléchargés dans des fichiers PST ou en tant que messages individuels. Lorsque vous exportez du contenu à partir de sites SharePoint et OneDrive Entreprise, des copies de documents Office natifs et d’autres documents sont exportées. Un fichier Results.csv qui contient des informations sur chaque élément exporté et un fichier manifeste (au format XML) qui contient des informations sur chaque résultat de recherche est également exporté.
   

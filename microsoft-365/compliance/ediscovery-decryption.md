@@ -16,14 +16,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment Microsoft 365 outils eDiscovery gèrent les documents chiffrés attachés aux e-mails et stockés dans SharePoint Online et OneDrive Entreprise.
-ms.openlocfilehash: 91eef14c1cb4dc91657a1d9a26ab00b1eb6f6d92
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e010ef1ff169467b442e137bc31d3640aa5a8cb4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948768"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994444"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Déchiffrement dans Microsoft 365 outils eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Le chiffrement est une partie importante de votre stratégie de protection des fichiers et d’informations. Les organisations de tous types utilisent la technologie de chiffrement pour protéger le contenu sensible au sein de leur organisation et s’assurer que seules les bonnes personnes ont accès à ce contenu.
 

@@ -1,5 +1,5 @@
 ---
-title: Utilisation de modèles d’évaluation dans le Gestionnaire de conformité Microsoft
+title: Utilisation de modèles d’évaluation dans le Gestionnaire de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,20 +17,22 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment utiliser et gérer des modèles pour générer des évaluations dans le Gestionnaire de conformité Microsoft. Créez et modifiez des modèles à l’aide d’un fichier Excel mis en forme.
-ms.openlocfilehash: 0dc28eb3058e3b929da47d947b29c7ba7be41111
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Découvrez comment utiliser et gérer des modèles pour générer des évaluations dans le Gestionnaire de conformité Microsoft Purview. Créez et modifiez des modèles à l’aide d’un fichier Excel mis en forme.
+ms.openlocfilehash: 009b2d742ab135abcde7c3ab73f9ec15c05c8f29
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758990"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972780"
 ---
 # <a name="learn-about-assessment-templates-in-compliance-manager"></a>En savoir plus sur les modèles d’évaluation dans le Gestionnaire de conformité
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Dans cet article :** Découvrez **comment fonctionnent les modèles** et **comment les gérer à** partir de votre page modèles d’évaluation. Obtenez des instructions pour **créer** des modèles, **étendre** et **modifier** des modèles existants, **mettre en forme vos données de modèle avec Excel** et exporter des **rapports** de modèles.
 
 > [!IMPORTANT]
-> Les modèles d’évaluation disponibles pour votre organisation dépendent de votre contrat de licence. [Passez en revue les détails](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> Les modèles d’évaluation disponibles pour votre organisation dépendent de votre contrat de licence. [Passez en revue les détails](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## <a name="templates-overview"></a>Vue d’ensemble des modèles
 
@@ -78,7 +80,7 @@ Cloud de la communauté du secteur public comptes High et DOD doivent acheter de
 
 Pour tester des modèles Premium avant d’effectuer un achat, vous pouvez également acquérir des versions d’évaluation des licences. Les licences d’évaluation sont valables pour jusqu’à 25 modèles pendant 90 jours. Une fois que vous avez obtenu votre licence d’évaluation, les modèles doivent être disponibles dans votre locataire dans les 48 heures.
 
-Si votre organisation dispose d’une licence commerciale pour le Gestionnaire de conformité, vous pouvez apprendre à démarrer votre version d’évaluation à [l’adresse About the free trial for Microsoft Compliance Manager Premium assessments](compliance-easy-trials-compliance-manager-assessments.md).
+Si votre organisation dispose d’une licence commerciale pour le Gestionnaire de conformité, vous pouvez apprendre à démarrer votre version d’évaluation à [l’adresse About the free trial for Microsoft Purview Compliance Manager Premium assessments](compliance-easy-trials-compliance-manager-assessments.md).
 
 Si votre organisation est sous licence Cloud de la communauté du secteur public ou DOD, choisissez le lien d’évaluation approprié pour votre organisation :
 

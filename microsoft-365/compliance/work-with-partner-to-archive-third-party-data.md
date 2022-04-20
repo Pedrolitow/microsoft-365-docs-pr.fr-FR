@@ -17,14 +17,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Découvrez comment configurer un connecteur personnalisé pour importer des données tierces à partir de sources de données telles que Salesforce Chatter, Yahoo Messenger ou Yammer.
-ms.openlocfilehash: 72159d88cdeb8c573f1a71342ca7cbd015099568
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: eb557f43b97f343c45a7eaf21268ac6218d2e1c0
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944500"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995313"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Collaborer avec un partenaire pour archiver des données tierces
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez travailler avec un partenaire Microsoft pour importer et archiver des données d’une source de données tierce vers Microsoft 365. Un partenaire peut vous fournir un connecteur personnalisé configuré pour extraire des éléments de la source de données tierce (régulièrement), puis importer ces éléments. Le connecteur partenaire convertit le contenu d’un élément de la source de données au format de message électronique, puis stocke les éléments dans des boîtes aux lettres. Une fois les données tierces importées, vous pouvez appliquer à ces données des fonctionnalités Microsoft Purview telles que la conservation des litiges, la découverte électronique, l’archivage In-Place, l’audit et Microsoft 365 stratégies de rétention.
 

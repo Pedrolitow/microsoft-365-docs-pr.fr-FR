@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez le tableau de bord Microsoft Purview eDiscovery (Premium) pour les ensembles de révision afin d’analyser rapidement votre corpus afin d’identifier les tendances ou les statistiques clés qui vous aideront à développer votre stratégie de révision.
-ms.openlocfilehash: 8814bbf645686529aec43f710519c1bd4891c1b3
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1412df381fff228c37052a6d75113c3a4c4cfcba
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943104"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995885"
 ---
 # <a name="ediscovery-premium-dashboard-for-review-sets"></a>Tableau de bord eDiscovery (Premium) pour les jeux de révision
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Dans certains cas, dans Microsoft Purview eDiscovery (Premium), vous pouvez avoir un grand volume de documents et de messages électroniques qui doivent être examinés. Avant de commencer le processus de révision, vous souhaiterez peut-être analyser rapidement votre corpus pour identifier les tendances ou les statistiques clés qui vous aideront à développer votre stratégie de révision. Pour ce faire, vous pouvez utiliser le tableau de bord eDiscovery (Premium) pour les ensembles de révision afin d’analyser rapidement votre corpus.
 

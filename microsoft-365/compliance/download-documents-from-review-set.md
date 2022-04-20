@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment sélectionner et télécharger du contenu à partir d’un ensemble de révisions dans eDiscovery (Premium) pour les présentations ou les révisions externes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 112b9d976d1e2bd2e9a956718184654f046357d1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 32d05b8fa39700971b4c39a1a39963d8b49e18b8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949980"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994477"
 ---
 # <a name="download-selected-documents-from-a-review-set"></a>Télécharger les documents sélectionnés à partir d’un ensemble de révisions
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Le téléchargement offre un moyen simple de télécharger du contenu à partir d’un ensemble de révisions au format natif. L’outil de téléchargement dans eDiscovery (Premium) utilise les fonctionnalités de transfert de données du navigateur. Une invite de navigateur s’affiche lorsqu’un téléchargement est prêt. Les fichiers téléchargés à l’aide de cette méthode sont compressés dans un fichier conteneur et contiennent des fichiers au niveau de l’élément. Cela signifie que si vous sélectionnez de télécharger une pièce jointe, vous recevrez l’e-mail avec la pièce jointe incluse. De même, si vous exportez une feuille de calcul Excel incorporée dans un document Word, le document Word et la feuille de calcul Excel incorporées sont inclus dans le téléchargement. Lorsque vous avez téléchargé des éléments, la propriété Last Modified Data est conservée et peut être affichée en tant que propriété de fichier.
 

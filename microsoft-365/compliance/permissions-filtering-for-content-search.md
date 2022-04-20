@@ -20,14 +20,16 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Utilisez le filtrage des autorisations de recherche pour permettre aux gestionnaires eDiscovery de rechercher uniquement un sous-ensemble de boîtes aux lettres et de sites dans votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5c746c5a608c06adab92f98b1bf4790675659fdc
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 20a13b99e7ec851669aaab483a049bdea95973bd
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942224"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994081"
 ---
 # <a name="configure-permissions-filtering-for-ediscovery"></a>Configurer le filtrage des autorisations pour eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez utiliser le filtrage des autorisations de recherche pour permettre à un gestionnaire eDiscovery de rechercher uniquement un sous-ensemble de boîtes aux lettres et de sites dans votre organisation. Vous pouvez également utiliser le filtrage des autorisations pour permettre à ce gestionnaire de rechercher uniquement le contenu de boîte aux lettres ou de site qui répond à des critères de recherche spécifiques. Par exemple, vous voudrez peut-être permettre à un gestionnaire de découverte électronique de rechercher uniquement les boîtes aux lettres des utilisateurs dans un lieu ou un service spécifique. Pour ce faire, vous créez un filtre qui utilise un filtre de destinataire pris en charge pour limiter les boîtes aux lettres qu’un utilisateur ou un groupe spécifique d’utilisateurs peut rechercher. Vous pouvez également créer un filtre qui spécifie le contenu de boîte aux lettres qu’un utilisateur peut rechercher. Pour cela, vous devez créer un filtre qui utilise une propriété de message pouvant faire l’objet d’une recherche. De même, vous pouvez autoriser un gestionnaire eDiscovery à rechercher uniquement des sites SharePoint spécifiques dans votre organisation. Pour ce faire, vous devez créer un filtre limitant les sites pouvant faire l’objet d’une recherche. Vous pouvez aussi créer un filtre qui spécifie le contenu de site pouvant être recherché. Pour ce faire, vous devez créer un filtre qui utilise une propriété de site pouvant faire l’objet d’une recherche.
 

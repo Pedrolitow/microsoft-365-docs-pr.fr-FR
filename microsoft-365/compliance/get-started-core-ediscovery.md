@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Décrit comment commencer à utiliser eDiscovery (Standard) dans Microsoft Purview. Après avoir affecté des autorisations eDiscovery et créé un cas, vous pouvez ajouter des membres, créer des conservations eDiscovery, puis rechercher et exporter du contenu pertinent pour votre enquête.
-ms.openlocfilehash: bf49ebd886a85005166f07b1a3d6c97e10412e20
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 90470d0128fd15bf295b1c8fa2cd15ef6d5cc384
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934728"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994147"
 ---
 # <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Démarrage avec eDiscovery (Standard) dans Microsoft Purview
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview eDiscovery (Standard) dans Microsoft Purview fournit un outil eDiscovery de base que les organisations peuvent utiliser pour rechercher et exporter du contenu dans Microsoft 365 et Office 365. Vous pouvez également utiliser eDiscovery (Standard) pour placer une conservation eDiscovery sur des emplacements de contenu, tels que des boîtes aux lettres Exchange, des sites SharePoint, des comptes OneDrive et des Microsoft Teams. Rien n’est nécessaire pour déployer eDiscovery (Standard), mais un administrateur informatique et un responsable eDiscovery doivent effectuer certaines tâches préalables avant que votre organisation puisse commencer à utiliser eDiscovery (Standard) pour rechercher, exporter et conserver du contenu.
 
@@ -142,7 +144,7 @@ Si vous créez un cas à l’étape 3 et que vous êtes la seule personne à uti
 
 ## <a name="explore-the-ediscovery-standard-workflow"></a>Explorer le flux de travail eDiscovery (Standard)
 
-Pour commencer à utiliser l’eDiscovery de base, voici un flux de travail simple qui consiste à créer des conservations eDiscovery pour les personnes intéressées, à rechercher du contenu pertinent pour votre enquête, puis à exporter ces données pour une révision ultérieure. Dans chacune de ces étapes, nous allons également mettre en évidence certaines fonctionnalités eDiscovery (Standard) étendues que vous pouvez explorer.
+Pour commencer à utiliser eDiscovery (Standard), voici un flux de travail simple qui consiste à créer des conservations eDiscovery pour les personnes intéressées, à rechercher du contenu pertinent pour votre enquête, puis à exporter ces données pour une révision ultérieure. Dans chacune de ces étapes, nous allons également mettre en évidence certaines fonctionnalités eDiscovery (Standard) étendues que vous pouvez explorer.
 
 ![Flux de travail eDiscovery (Standard).](../media/CoreEdiscoveryWorkflow.png)
 

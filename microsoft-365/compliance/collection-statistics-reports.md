@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment accéder aux statistiques et aux rapports et les utiliser pour les projets de regroupements et de collections qui ont été validés dans un ensemble de révisions dans Microsoft Purview eDiscovery (Premium).
-ms.openlocfilehash: 12152e0b81df6c61732fda068c593a91578861ee
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 140a6aa2ac0a0ebbff7cf2ab2ee8618cd45cdf07
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940310"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995753"
 ---
 # <a name="collection-statistics-and-reports-in-microsoft-purview-ediscovery-premium"></a>Statistiques et rapports de collecte dans Microsoft Purview eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Après avoir créé un brouillon de collection, vous pouvez afficher des statistiques sur les éléments récupérés, tels que les emplacements de contenu qui contiennent le plus d’éléments correspondant aux critères de recherche et le nombre d’éléments retournés par la requête de recherche. Vous pouvez également afficher un aperçu d’un sous-ensemble des résultats.
 

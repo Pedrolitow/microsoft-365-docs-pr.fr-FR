@@ -12,45 +12,47 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Vous devez activer la prise en charge ClickOnce pour utiliser la dernière version de Microsoft Edge pour télécharger les résultats de recherche à partir de la recherche de contenu et de la découverte électronique dans le centre de sécurité et conformité.
-ms.openlocfilehash: bd42ebffce326e4abe4943ff4187fc2bd960ff65
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Vous devez activer ClickOnce prise en charge pour utiliser la version la plus récente de Microsoft Edge pour télécharger les résultats de la recherche à partir de recherche de contenu et eDiscovery dans le Centre de sécurité et de conformité.
+ms.openlocfilehash: cd20a35a0a6ee2518667d21fadbca4577342de36
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176076"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995775"
 ---
 # <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>Utiliser l’outil d’exportation eDiscovery dans Microsoft Edge
 
-Suite aux modifications récentes apportées à la dernière version de Microsoft Edge, ClickOnce prise en charge n’est plus activée par défaut. Pour continuer à utiliser l’outil d’exportation eDiscovery pour télécharger les résultats de recherche de contenu ou eDiscovery, vous devez utiliser [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) ou activer la prise en charge de ClickOnce dans la dernière version de Microsoft Edge.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-## <a name="enable-clickonce-support-in-microsoft-edge"></a>Activer ClickOnce prise en charge des Microsoft Edge
+Suite aux modifications récentes apportées à la dernière version de Microsoft Edge, ClickOnce prise en charge n’est plus activée par défaut. Pour continuer à utiliser l’outil d’exportation eDiscovery pour télécharger les résultats de recherche de contenu ou eDiscovery, vous devez utiliser [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) ou activer ClickOnce prise en charge dans la dernière version de Microsoft Edge.
 
-1. In Microsoft Edge, go to **edge://flags/#edge-click-once**.
+## <a name="enable-clickonce-support-in-microsoft-edge"></a>Activer ClickOnce prise en charge dans Microsoft Edge
 
-2. Si la valeur existante est définie sur **Default** ou **Disabled** dans la liste liste, changez-la **en Activé.**
+1. Dans Microsoft Edge, accédez à **edge://flags/#edge-click-once**.
 
-   ![Sélectionnez Activé dans la liste liste liste.](../media/ClickOnceimage1.png)
+2. Si la valeur existante est définie sur **Valeur par défaut** ou **Désactivée** dans la liste déroulante, **remplacez-la par Activé**.
 
-3. Faites défiler vers le bas jusqu’au bas de la fenêtre du navigateur, puis cliquez sur **Redémarrer** pour redémarrer Edge.
+   ![Sélectionnez Activé dans la liste déroulante.](../media/ClickOnceimage1.png)
+
+3. Faites défiler vers le bas de la fenêtre du navigateur, puis cliquez sur **Redémarrer** pour redémarrer Edge.
 
    ![Cliquez sur Redémarrer.](../media/ClickOnceimage2.png)
 
-**Remarque :** Les organisations peuvent utiliser la stratégie de groupe pour désactiver ClickOnce prise en charge. Pour vérifier s’il existe une stratégie d’organisation ClickOnce prise en charge, edge://policy **.** La capture d’écran suivante montre que ClickOnce est activé dans toute l’organisation. Si cette valeur de stratégie est définie sur **False,** vous devez contacter un administrateur de votre organisation.
+**Note:** Les organisations peuvent utiliser stratégie de groupe pour désactiver ClickOnce prise en charge. Pour vérifier s’il existe une stratégie organisationnelle pour le support ClickOnce, accédez à **edge://policy**. La capture d’écran suivante montre que ClickOnce est activé dans toute l’organisation. Si cette valeur de stratégie est définie sur **false**, vous devez contacter un administrateur de votre organisation.
 
 ![Liste des stratégies d’organisation Edge.](../media/ClickOnceimage3.png)
 
 ## <a name="install-and-run-the-ediscovery-export-tool"></a>Installer et exécuter l’outil d’exportation eDiscovery
 
-1. Cliquez **sur Télécharger les résultats** sur la page volante d’une exportation dans la recherche de contenu ou un cas eDiscovery.
+1. Cliquez sur **Télécharger les résultats** dans la page de menu volant d’une exportation dans recherche de contenu ou dans un cas eDiscovery.
 
-   ![Cliquez sur Télécharger les résultats sur la page volante pour télécharger les résultats de la recherche.](../media/ClickOnceExport1.png)
+   ![Cliquez sur Télécharger les résultats dans la page de menu volant pour télécharger les résultats de la recherche.](../media/ClickOnceExport1.png)
 
-2. Vous serez invité à confirmer le lancement de l’outil, cliquez sur **Ouvrir.**
+2. Vous serez invité à confirmer le lancement de l’outil, Cliquez sur **Ouvrir**.
 
    ![Cliquez sur Ouvrir pour lancer l’outil d’exportation eDiscovery.](../media/ClickOnceimage4.png)
 
-   Si l’outil d’exportation eDiscovery n’est pas installé, un avertissement de sécurité vous est demandé. 
+   Si l’outil d’exportation eDiscovery n’est pas installé, un avertissement de sécurité s’affiche. 
 
    ![Cliquez sur Installer pour installer l’outil d’exportation eDiscovery.](../media/ClickOnceimage5.png)
 
@@ -60,4 +62,4 @@ Pour plus d’informations, voir les rubriques suivantes :
 
 - [Exporter les résultats de la recherche de contenu](export-search-results.md)
 
-- [Comment activer les indicateurs d’expérience dans Microsoft Edge](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)
+- [Comment activer des indicateurs d’expérience dans Microsoft Edge](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)

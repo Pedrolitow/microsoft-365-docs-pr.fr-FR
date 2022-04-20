@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur de données CellTrust SL2 pour importer et archiver des données de communications mobiles.
-ms.openlocfilehash: 286546950c29732e1d33738ffbe7a74f2f6dcca2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: a4cbfc9dccd2541de0a9dca1a3791d5f213aa73d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940684"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996391"
 ---
 # <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>Archiver des données de CellTrust SL2 vers Microsoft 365
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 CellTrust SL2 capture les données de communications mobiles et s’intègre aux technologies d’archivage de pointe pour répondre aux exigences de découverte électronique pour les réglementations telles que FINRA, HIPAA, FOIA et TCPA. Le connecteur de données SL2 importe des éléments de communication mobile vers Microsoft 365. Cet article décrit le processus d’intégration de SL2 à Microsoft 365 à l’aide du connecteur de données CellTrust SL2 pour l’archivage. L’exécution de ce processus suppose que vous êtes abonné au service CellTrust SL2 et que vous êtes familiarisé avec l’architecture SL2. Pour plus d’informations sur CellTrust SL2, consultez <https://www.celltrust.com>.
 

@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Cet article fournit des descriptions des propriétés supplémentaires incluses lorsque vous exportez des résultats pour un enregistrement de journal d’audit Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7e65b5e27f8c6821b12c7f0b7f03e4ecb472c0a9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2342a64deaa2787e534a09b3d874ed3795d82ea8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948944"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996215"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>Propriétés détaillées dans le journal d’audit
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsque vous exportez les résultats d’une recherche dans le journal d’audit à partir du portail de conformité Microsoft Purview, vous avez la possibilité de télécharger tous les résultats qui répondent à vos critères de recherche. Pour ce faire, sélectionnez **Exporter les résultats** \> **Télécharger tous les résultats** dans la page Recherche dans le **journal d’audit** . Pour plus d’informations, consultez [Rechercher dans le journal d’audit](search-the-audit-log-in-security-and-compliance.md).
   
@@ -85,7 +87,7 @@ Le tableau suivant décrit les propriétés incluses (en fonction du service dan
 |TeamName|Nom d’une équipe dans Microsoft Teams.|Microsoft Teams|
 |UserAgent|Informations sur le navigateur de l’utilisateur. Ces informations sont fournies par le navigateur.|SharePoint|
 |UserDomain|Informations d’identité sur l’organisation du locataire de l’utilisateur (acteur) qui a effectué l’action.|Azure Active Directory|
-|UserId|Utilisateur qui a effectué l’action (spécifiée dans la propriété **Operation** ) qui a entraîné la journalisation de l’enregistrement. Les enregistrements d’audit pour l’activité effectuée par les comptes système (tels que SHAREPOINT\system ou NT AUTHORITY\SYSTEM) sont également inclus dans le journal d’audit. Une autre valeur courante pour la propriété UserId est app@sharepoint. Ceci indique que l'«utilisateur » qui a effectué l'activité était une application ayant obtenu les autorisations nécessaires dans SharePoint pour effectuer des actions à l’échelle de l’organisation (par exemple, effectuer une recherche de site SharePoint ou de compte OneDrive) au nom d’un utilisateur, d’un administrateur ou d’un service. <br/><br/>Pour plus d’informations, reportez-vous aux rubriques suivantes :<br/> [Utilisateur appsharepoint\@ dans les enregistrements d’audit](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)<br/> ou <br/>[Comptes système dans Exchange enregistrements d’audit de boîte aux lettres](search-the-audit-log-in-security-and-compliance.md#system-accounts-in-exchange-mailbox-audit-records). |Tous|
+|UserId|Utilisateur qui a effectué l’action (spécifiée dans la propriété **Operation** ) qui a entraîné la journalisation de l’enregistrement. Les enregistrements d’audit pour l’activité effectuée par les comptes système (tels que SHAREPOINT\system ou NT AUTHORITY\SYSTEM) sont également inclus dans le journal d’audit. Une autre valeur courante pour la propriété UserId est app@sharepoint. Ceci indique que l'«utilisateur » qui a effectué l'activité était une application ayant obtenu les autorisations nécessaires dans SharePoint pour effectuer des actions à l’échelle de l’organisation (par exemple, effectuer une recherche de site SharePoint ou de compte OneDrive) au nom d’un utilisateur, d’un administrateur ou d’un service. <br/><br/>Pour plus d’informations, voir :<br/> [Utilisateur appsharepoint\@ dans les enregistrements d’audit](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)<br/> ou <br/>[Comptes système dans Exchange enregistrements d’audit de boîte aux lettres](search-the-audit-log-in-security-and-compliance.md#system-accounts-in-exchange-mailbox-audit-records). |Tous|
 |UserKey|ID de remplacement pour l’utilisateur identifié dans la propriété **UserID** . Par exemple, cette propriété est remplie avec l’ID unique passport (PUID) pour les événements effectués par les utilisateurs dans SharePoint. Cette propriété peut également spécifier la même valeur que la propriété **UserID** pour les événements qui se produisent dans d’autres services et événements effectués par des comptes système.|Tous|
 |UserSharedWith|Utilisateur avec lequel une ressource a été partagée. Cette propriété est incluse si la valeur de la propriété **Operation** est **SharingSet**. Cet utilisateur est également répertorié dans la colonne **Partagé avec** le rapport.|SharePoint|
 |UserType|Type d’utilisateur ayant effectué l’opération. Les valeurs suivantes indiquent le type d’utilisateur. <br/> <br/> **0** - Un utilisateur régulier. <br/>**2** - Un administrateur dans votre organisation Microsoft 365.<sup> 1</sup> <br/>**3** - Un compte système d’administrateur ou de centre de données Microsoft. <br/>**4** - Un compte système. <br/>**5** - Une application. <br/>**6** - Principal de service.<br/>**7** - Une stratégie personnalisée.<br/>**8** - Une stratégie système.|Tous|

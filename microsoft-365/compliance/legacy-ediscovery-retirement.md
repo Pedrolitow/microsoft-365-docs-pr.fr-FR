@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: In-Place eDiscovery et In-Place Hold (et les applets de commande PowerShell correspondantes) dans Exchange Online seront mises hors service au cours du premier semestre 2020. L’applet de commande Search-Mailbox et Microsoft Purview eDiscovery (Premium) v1.0 sont également mis hors service au cours de la même période.
-ms.openlocfilehash: 228827ec405165bf8308d89fba350eb2192f6723
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0a5a5c5a22aefbb0ad5abe6846915e1da653ee6b
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936596"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973264"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retrait des outils eDiscovery hérités
 
@@ -102,7 +102,7 @@ Le tableau suivant décrit d’autres outils que vous pouvez utiliser pour rempl
 <tr class="odd">
 <td>Rechercher, exporter et conserver à des fins légales</td>
 <td>Cas eDiscovery (Standard) dans le portail de conformité </td>
-<td><p>L’utilisation des fonctionnalités des principaux cas eDiscovery fournit la parité fonctionnelle pour In-Place eDiscovery et In-Place Holds. Les voici :</p>
+<td><p>L’utilisation des fonctionnalités des cas eDiscovery (Standard) fournit la parité fonctionnelle pour In-Place eDiscovery et In-Place Holds. Les voici :</p>
 <ul>
 <li>
 <p>La recherche s’adapte à des millions d’emplacements</p>
@@ -208,9 +208,9 @@ Le tableau suivant décrit d’autres outils que vous pouvez utiliser pour rempl
 <p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
-<td><p>Les applets de commande ComplianceSearch et ComplianceSearchAction fonctionnent ensemble pour vous aider à rechercher et exporter du contenu. Vous pouvez créer une recherche et afficher l’estimation de recherche à l’aide des applets de commande <strong>New-</strong>, <strong>Get</strong> et <strong>Start-ComplianceSearch</strong> . Vous pouvez ensuite utiliser l’applet <strong>de commande New-ComplianceSearchAction</strong> pour exporter les résultats de la recherche. Vous devrez toujours utiliser l’outil eDiscovery principal dans le portail de conformité pour télécharger ces résultats de recherche sur votre ordinateur local.</p>
+<td><p>Les applets de commande ComplianceSearch et ComplianceSearchAction fonctionnent ensemble pour vous aider à rechercher et exporter du contenu. Vous pouvez créer une recherche et afficher l’estimation de recherche à l’aide des applets de commande <strong>New-</strong>, <strong>Get</strong> et <strong>Start-ComplianceSearch</strong> . Vous pouvez ensuite utiliser l’applet <strong>de commande New-ComplianceSearchAction</strong> pour exporter les résultats de la recherche. Vous devrez toujours utiliser l’outil eDiscovery (Standard) dans le portail de conformité pour télécharger ces résultats de recherche sur votre ordinateur local.</p>
 <p>
-<p><strong>Note:</strong> Si vous utilisez ces applets de commande pour créer des recherches qui ne sont pas associées à un cas eDiscovery de base, ces recherches se trouvent sur la page <strong>Recherche</strong> de contenu dans le portail de conformité.</p></td>
+<p><strong>Note:</strong> Si vous utilisez ces applets de commande pour créer des recherches qui ne sont pas associées à un cas eDiscovery (Standard), ces recherches se trouvent sur la page <strong>Recherche</strong> de contenu dans le portail de conformité.</p></td>
 </tr>
 <tr class="even">
 <td>Conserver le contenu dans une boîte aux lettres</td>
@@ -286,7 +286,7 @@ Le tableau suivant décrit d’autres outils que vous pouvez utiliser pour rempl
 <td><p><a href="/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></a></p></td>
-<td><p>Les applets de commande ComplianceSearch et ComplianceSearchAction fonctionnent ensemble pour vous aider à rechercher et exporter du contenu. Vous pouvez créer une recherche et afficher l’estimation de recherche à l’aide des applets de commande <strong>New-</strong>, <strong>Get</strong> et <strong>Start-ComplianceSearch</strong> . Vous pouvez ensuite utiliser la commande <strong>New-ComplianceSearchAction -Export</strong> pour exporter les résultats de la recherche. Vous devrez toujours utiliser l’outil eDiscovery principal dans le portail de conformité pour télécharger ces résultats de recherche sur votre ordinateur local.</p></p>
+<td><p>Les applets de commande ComplianceSearch et ComplianceSearchAction fonctionnent ensemble pour vous aider à rechercher et exporter du contenu. Vous pouvez créer une recherche et afficher l’estimation de recherche à l’aide des applets de commande <strong>New-</strong>, <strong>Get</strong> et <strong>Start-ComplianceSearch</strong> . Vous pouvez ensuite utiliser la commande <strong>New-ComplianceSearchAction -Export</strong> pour exporter les résultats de la recherche. Vous devrez toujours utiliser l’outil eDiscovery (Standard) dans le portail de conformité pour télécharger ces résultats de recherche sur votre ordinateur local.</p></p>
 </td>
 </tr>
 <tr class="even">
@@ -342,7 +342,7 @@ Ces opérations dans l’API des services web Exchange sont utilisées par la fo
 
 ## <a name="ediscovery-premium-v10"></a>eDiscovery (Premium) v1.0
 
-eDiscovery (Premium) v1.0, qui est la version d’eDiscovery (Premium) disponible dans un cas eDiscovery principal en cliquant sur **Switch to eDiscovery (Premium),** est en cours de mise hors service. Sa fonctionnalité a été remplacée par la nouvelle [solution eDiscovery (Premium)](./ediscovery.md) dans le portail de conformité.
+eDiscovery (Premium) v1.0, qui est la version d’eDiscovery (Premium) disponible dans un cas eDiscovery (Standard) en cliquant sur **Switch to eDiscovery (Premium)**, est en cours de mise hors service. Sa fonctionnalité a été remplacée par la nouvelle [solution eDiscovery (Premium)](./ediscovery.md) dans le portail de conformité.
 
 Pour déterminer si votre organisation utilise eDiscovery (Premium) v1.0 :
 

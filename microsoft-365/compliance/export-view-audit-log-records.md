@@ -18,14 +18,16 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
 description: Dans cet article, vous allez apprendre à exporter, configurer et afficher Microsoft 365 enregistrements du journal d’audit.
-ms.openlocfilehash: ed9844ac7a5b7dc62b4d0ba8eb7311f76d28aace
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9403ead4c7fd6bd27bcc3848d367749e00beed3c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948746"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994389"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Exporter, configurer et afficher des enregistrements du journal d’audit
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Après avoir recherché le journal d’audit et téléchargé les résultats de la recherche dans un fichier CSV, le fichier contient une colonne nommée **AuditData**, qui contient des informations supplémentaires sur chaque événement. Les données de cette colonne sont mises en forme en tant qu’objet JSON, qui contient plusieurs propriétés configurées en tant que paires *property:value* séparées par des virgules. Vous pouvez utiliser la fonctionnalité de transformation JSON dans le Éditeur Power Query dans Excel pour fractionner chaque propriété de l’objet JSON de la colonne **AuditData** en plusieurs colonnes afin que chaque propriété ait sa propre colonne. Cela vous permet de trier et de filtrer une ou plusieurs de ces propriétés, ce qui peut vous aider à localiser rapidement les données d’audit spécifiques que vous recherchez.
 

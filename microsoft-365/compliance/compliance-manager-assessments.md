@@ -1,5 +1,5 @@
 ---
-title: Créer et gérer des évaluations dans le Gestionnaire de conformité Microsoft
+title: Créer et gérer des évaluations dans le Gestionnaire de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,15 +16,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Créez des évaluations dans le Gestionnaire de conformité Microsoft pour vous aider à répondre aux exigences des réglementations et des certifications qui sont importantes pour votre organisation.
-ms.openlocfilehash: 9fbea59eae103e2ce9715fda6c7b7a97d38eb855
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Créez des évaluations dans le Gestionnaire de conformité Microsoft Purview pour vous aider à répondre aux exigences des réglementations et des certifications qui sont importantes pour votre organisation.
+ms.openlocfilehash: 841d48951eebf0d04bf5c97a708a250218b44c65
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759012"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972560"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Créer et gérer des évaluations dans le Gestionnaire de conformité
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Dans cet article :** Découvrez comment personnaliser le Gestionnaire de conformité pour votre organisation en créant et en gérant **des évaluations**. Cet article vous guide tout au long de la création d’évaluations, de leur organisation en **groupes**, de l’utilisation **des contrôles**, de l’acceptation des **mises à jour** et de l’exportation des **rapports** d’évaluation.
 
@@ -35,7 +37,7 @@ Le Gestionnaire de conformité vous aide à créer des évaluations qui évaluen
 Toutes vos évaluations sont répertoriées sous l’onglet Évaluations du Gestionnaire de conformité. En savoir plus sur [la façon de filtrer votre vue de vos évaluations et d’interpréter les états d’état](compliance-manager-setup.md#assessments-page).
 
 > [!IMPORTANT]
-> Les modèles disponibles pour votre organisation pour la génération d’évaluations dépendent de votre contrat de licence. [Passez en revue les détails des licences](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> Les modèles disponibles pour votre organisation pour la génération d’évaluations dépendent de votre contrat de licence. [Passez en revue les détails des licences](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## <a name="data-protection-baseline-default-assessment"></a>Évaluation par défaut de la base de référence de protection des données
 

@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur BlackBerry DataParser 17a-4 pour importer et archiver des données BlackBerry dans Microsoft 365.
-ms.openlocfilehash: c0818b1a9d7d16debbeb2be799d4a8717ada6f74
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b75d91db9458a31156e9508cc2ddb8cc0da46076
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941014"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995797"
 ---
 # <a name="set-up-a-connector-to-archive-blackberry-data"></a>Configurer un connecteur pour archiver les données BlackBerry
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez [BlackBerry DataParser](https://www.17a-4.com/BlackBerry-dataparser/) de 17a-4 LLC pour importer et archiver des données d’entreprise BlackBerry dans des boîtes aux lettres utilisateur de votre organisation Microsoft 365. DataParser inclut un connecteur BlackBerry configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur BlackBerry DataParser convertit les données BlackBerry au format de message électronique, puis importe ces éléments dans des boîtes aux lettres utilisateur dans Microsoft 365.
 

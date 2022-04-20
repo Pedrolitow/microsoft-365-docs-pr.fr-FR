@@ -17,14 +17,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Découvrez comment collecter des informations de diagnostic eDiscovery pour un cas Support Microsoft.
-ms.openlocfilehash: 13d3967adc6eddb6f0fc5a5b57119eb6c47114de
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6077df8f0a014b9e3356d8f520ddbaf0b2378983
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932197"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994440"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>Collecter des informations de diagnostic eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Parfois, Support Microsoft ingénieurs ont besoin d’informations spécifiques sur votre problème lorsque vous ouvrez un cas de support lié à Microsoft Purview eDiscovery (Standard) ou Microsoft Purview eDiscovery (Premium). Cet article fournit des conseils sur la collecte d’informations de diagnostic pour aider les ingénieurs du support technique à examiner et à résoudre les problèmes. En règle générale, vous n’avez pas besoin de collecter ces informations tant qu’un ingénieur Support Microsoft n’a pas demandé de le faire.
 

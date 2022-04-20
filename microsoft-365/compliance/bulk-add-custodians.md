@@ -15,14 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez l’outil d’importation en bloc pour ajouter rapidement plusieurs consignatateurs et leurs sources de données associées à un cas dans Microsoft Purview eDiscovery (Premium).
-ms.openlocfilehash: 7913c8674dc5560539196f34e323f05955a6850e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: a6ad413c65b3b8afaa0cbf10df1a595730914405
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950354"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994517"
 ---
 # <a name="import-custodians-to-an-ediscovery-premium-case"></a>Importer des consignats dans un cas eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Pour les cas Microsoft Purview eDiscovery (Premium) qui impliquent de nombreux consignats, vous pouvez importer plusieurs consignatateurs à la fois à l’aide d’un fichier CSV qui contient les informations nécessaires pour les ajouter à un cas. L’outil des consignats d’importation valide également le fichier CSV avant la création du travail d’importation. Cela signifie que vous pouvez corriger toutes les erreurs dans le fichier CSV au lieu d’attendre que le travail d’importation soit terminé avant d’apprendre qu’il existe des erreurs qui empêchent l’ajout d’un consignateur au cas.
 

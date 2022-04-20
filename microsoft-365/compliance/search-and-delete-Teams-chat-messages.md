@@ -15,24 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: Utilisez Advanced eDiscovery et l’Explorateur Microsoft Graph pour rechercher et vider les messages de conversation dans Microsoft Teams et répondre aux incidents de débordement de données dans Teams.
-ms.openlocfilehash: 79f04c513733151099f5b45192a84738065e42aa
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+description: Utilisez eDiscovery (Premium) et Microsoft Graph Explorer pour rechercher et vider les messages de conversation dans Microsoft Teams et répondre aux incidents de débordement de données dans Teams.
+ms.openlocfilehash: b76f235fdfaee6f6836eb3d21385181a74aee904
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949370"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971797"
 ---
 # <a name="search-and-purge-chat-messages-in-teams"></a>Rechercher et vider les messages de conversation dans Teams
 
-Vous pouvez utiliser Advanced eDiscovery et Microsoft Graph Explorer pour rechercher et supprimer des messages de conversation dans Microsoft Teams. Cela peut vous aider à rechercher et supprimer des informations sensibles ou du contenu inapproprié. Ce flux de travail de recherche et de vidage vous aidera également à répondre à un incident de débordement de données, lorsque du contenu contenant des informations confidentielles ou malveillantes est publié par le biais de messages de conversation Teams.
+Vous pouvez utiliser eDiscovery (Premium) et Microsoft Graph Explorer pour rechercher et supprimer des messages de conversation dans Microsoft Teams. Cela peut vous aider à rechercher et supprimer des informations sensibles ou du contenu inapproprié. Ce flux de travail de recherche et de vidage vous aidera également à répondre à un incident de débordement de données, lorsque du contenu contenant des informations confidentielles ou malveillantes est publié par le biais de messages de conversation Teams.
 
 > [!NOTE]
 > Cet article s’applique aux organisations Microsoft 365 Entreprise. La prise en charge du cloud us government (y compris Cloud de la communauté du secteur public, Cloud de la communauté du secteur public High et DoD) sera bientôt disponible.
 
 ## <a name="before-you-search-and-purge-chat-messages"></a>Avant de rechercher et de vider les messages de conversation
 
-- Pour créer un cas Advanced eDiscovery et utiliser des regroupements pour rechercher des messages de conversation, vous devez être membre du groupe de rôles **gestionnaire eDiscovery** dans le portail de conformité Microsoft Purview. Pour supprimer des messages de conversation, vous devez disposer du rôle **Rechercher et vider** . Ce rôle est attribué par défaut aux groupes de rôles De l’Enquêteur de données et Gestion de l’organisation. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](assign-ediscovery-permissions.md).
+- Pour créer un cas eDiscovery (Premium) et utiliser des collections pour rechercher des messages de conversation, vous devez être membre du groupe de rôles **eDiscovery Manager** dans le portail de conformité Microsoft Purview. Pour supprimer des messages de conversation, vous devez disposer du rôle **Rechercher et vider** . Ce rôle est attribué par défaut aux groupes de rôles De l’Enquêteur de données et Gestion de l’organisation. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](assign-ediscovery-permissions.md).
 - La recherche et le vidage sont pris en charge pour les conversations au sein de votre locataire. La prise en charge des conversations Teams Connecter conversation (accès externe ou fédération) est activée dans l’interface dans certains cas, mais ne fonctionne pas comme prévu.
 - Un maximum de 10 éléments par boîte aux lettres peuvent être supprimés à la fois. Étant donné que la possibilité de rechercher et de supprimer des messages de conversation est destinée à être un outil de réponse aux incidents, cette limite permet de s’assurer que les messages de conversation sont rapidement supprimés.
 
@@ -42,15 +42,15 @@ Voici le processus de recherche et de vidage Teams messages de conversation :
 
 ![Flux de travail pour rechercher et vider Teams messages de conversation.](../media/TeamsSearchAndPurgeWorkflow.png)
 
-## <a name="step-1-create-a-case-in-advanced-ediscovery"></a>Étape 1 : Créer un cas dans Advanced eDiscovery
+## <a name="step-1-create-a-case-in-ediscovery-premium"></a>Étape 1 : Créer un cas dans eDiscovery (Premium)
 
-La première étape consiste à créer un cas dans Advanced eDiscovery pour gérer le processus de recherche et de vidage. Pour plus d’informations sur la création d’un cas, consultez [Utiliser le nouveau format de cas](advanced-ediscovery-new-case-format.md). 
+La première étape consiste à créer un cas dans eDiscovery (Premium) pour gérer le processus de recherche et de vidage. Pour plus d’informations sur la création d’un cas, consultez [Utiliser le nouveau format de cas](advanced-ediscovery-new-case-format.md). 
 
 ## <a name="step-2-create-a-draft-collection"></a>Étape 2 : Créer un brouillon de collection
 
 Après avoir créé un cas, l’étape suivante consiste à créer un brouillon de collection pour rechercher les messages de conversation Teams que vous souhaitez vider. Le processus de vidage que vous effectuez est l’étape 5 pour vider tous les éléments qui se trouvent dans la collection brouillon.
 
-Dans Advanced eDiscovery, une *collection* est une recherche eDiscovery des emplacements de contenu Teams qui contiennent les messages de conversation que vous souhaitez vider. Créez la collection brouillon dans le cas que vous avez créé à l’étape précédente. Pour plus d’informations, consultez [Créer un projet de collection](create-draft-collection.md).
+Dans eDiscovery (Premium), une *collection* est une recherche eDiscovery des emplacements de contenu Teams qui contiennent les messages de conversation que vous souhaitez vider. Créez la collection brouillon dans le cas que vous avez créé à l’étape précédente. Pour plus d’informations, consultez [Créer un projet de collection](create-draft-collection.md).
 
 ### <a name="data-sources-for-chat-messages"></a>Sources de données pour les messages de conversation
 
@@ -94,7 +94,7 @@ Pour obtenir des instructions sur l’identification et la suppression des conse
 
 Vous êtes maintenant prêt à vider réellement les messages de conversation de Teams. Vous allez utiliser Microsoft Graph Explorer pour effectuer les trois tâches suivantes :
 
-1. Obtenez l’ID du cas Advanced eDiscovery que vous avez créé à l’étape 1. C’est le cas qui contient la collection créée à l’étape 2.
+1. Obtenez l’ID du cas eDiscovery (Premium) que vous avez créé à l’étape 1. C’est le cas qui contient la collection créée à l’étape 2.
 
 2. Obtenez l’ID de la collection que vous avez créée à l’étape 2 et vérifié les résultats de la recherche à l’étape 3. La requête de recherche de cette collection retourne les messages de conversation qui seront purgés.
 
@@ -109,13 +109,13 @@ Pour plus d’informations sur l’utilisation de Graph Explorer, consultez [Uti
 
 1. Accédez à <https://developer.microsoft.com/graph/graph-explorer> l’Explorateur Graph avec un compte auquel le rôle **Rechercher et vider** est attribué dans le portail de conformité Microsoft Purview.
 
-2. Exécutez la requête GET suivante pour récupérer l’ID du cas Advanced eDiscovery. Utilisez la valeur `https://graph.microsoft.com/beta/compliance/ediscovery/cases` dans la barre d’adresses de la requête de requête. Veillez à sélectionner **v1.0** dans la liste déroulante des versions de l’API.
+2. Exécutez la requête GET suivante pour récupérer l’ID du cas eDiscovery (Premium). Utilisez la valeur `https://graph.microsoft.com/beta/compliance/ediscovery/cases` dans la barre d’adresses de la requête de requête. Veillez à sélectionner **v1.0** dans la liste déroulante des versions de l’API.
 
    ![Demande GET pour l’ID de cas.](..\media\GraphGetRequestForCaseId.png)
 
    Cette demande retourne des informations sur tous les cas de votre organisation sous l’onglet **Aperçu** de la réponse.
 
-3. Faites défiler la réponse pour localiser le cas Advanced eDiscovery. Utilisez la propriété **displayName** pour identifier le cas.
+3. Faites défiler la réponse pour localiser le cas eDiscovery (Premium). Utilisez la propriété **displayName** pour identifier le cas.
 
    ![Réponse avec l’ID de cas.](..\media\GraphResponseForCaseId.png)
 

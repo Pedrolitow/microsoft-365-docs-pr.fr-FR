@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: Obtenez la dernière version de l’isolation basée sur le matériel. Empêchez les attaques actuelles et émergentes telles que les attaques ou les liens malveillants de perturber la productivité des employés et la sécurité de l’entreprise.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c8e24b61b7f800b7c27a57bcec5c127adb032bf5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 98d23a814ac2af8d9dedc4f163923e67c9ca7dc2
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939254"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973242"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Application Guard pour Office pour les administrateurs
 
@@ -29,7 +29,7 @@ ms.locfileid: "64939254"
 
 Protection d'application Microsoft Defender pour Office (Application Guard pour Office) permet d’empêcher les fichiers non approuvés d’accéder aux ressources approuvées, ce qui protège votre entreprise contre les attaques nouvelles et émergentes. Cet article guide les administrateurs dans la configuration des appareils pour une préversion d’Application Guard pour Office. Il fournit des informations sur la configuration système requise et les étapes d’installation pour activer Application Guard pour Office sur un appareil.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 ### <a name="minimum-hardware-requirements"></a>Configuration matérielle minimum requise
 
@@ -39,7 +39,7 @@ Protection d'application Microsoft Defender pour Office (Application Guard pour 
 
 ### <a name="minimum-software-requirements"></a>Configuration logicielle minimale requise
 
-* **Windows** : édition Windows 10 Entreprise, build client version 2004 (20H1) build 19041 ou ultérieure. Toutes les versions de Windows 11 sont prises en charge. 
+* **Windows** : édition Windows 10 Entreprise, build client version 2004 (20H1) build 19041 ou ultérieure. Toutes les versions de Windows 11 sont prises en charge.
 * **Office** : Office canal actuel et canal Enterprise mensuel, build version 2011 16.0.13530.10000 ou ultérieure. Office Semi-Annual Enterprise Channel, Build version 2108 ou ultérieure. Les versions 32 bits et 64 bits de Office sont prises en charge.
 * **Package de mise à jour** : Windows 10 mise à jour de sécurité mensuelle cumulative [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
@@ -124,7 +124,6 @@ Une fois ouvert, le fichier doit afficher quelques indicateurs visuels indiquant
 
 Office prend en charge les stratégies suivantes pour vous permettre de configurer les fonctionnalités d’Application Guard pour Office. Ces stratégies peuvent être configurées via des stratégies de groupe ou via le [service de stratégie cloud Office](/DeployOffice/overview-office-cloud-policy-service).
 
-
 > [!NOTE]
 > La configuration de ces stratégies peut désactiver certaines fonctionnalités pour les fichiers ouverts dans Application Guard pour Office.
 
@@ -198,7 +197,7 @@ Vous pouvez également configurer Microsoft Defender pour Office 365 pour qu’i
 
 ## <a name="limitations-and-considerations"></a>Limitations et considérations
 
-* Application Guard pour Office est un mode protégé qui isole les documents non approuvés afin qu’ils ne puissent pas accéder aux ressources d’entreprise approuvées, à un intranet, à l’identité de l’utilisateur et aux fichiers arbitraires sur l’ordinateur. Par conséquent, si un utilisateur tente d’accéder à une fonctionnalité qui a une dépendance vis-à-vis de cet accès, telle que l’insertion d’une image à partir d’un fichier local sur le disque, l’accès échoue et produit une invite qui ressemble à l’exemple suivant. Pour permettre à un document non approuvé d’accéder aux ressources approuvées, les utilisateurs doivent supprimer la protection Application Guard du document. 
+* Application Guard pour Office est un mode protégé qui isole les documents non approuvés afin qu’ils ne puissent pas accéder aux ressources d’entreprise approuvées, à un intranet, à l’identité de l’utilisateur et aux fichiers arbitraires sur l’ordinateur. Par conséquent, si un utilisateur tente d’accéder à une fonctionnalité qui a une dépendance vis-à-vis de cet accès, telle que l’insertion d’une image à partir d’un fichier local sur le disque, l’accès échoue et produit une invite qui ressemble à l’exemple suivant. Pour permettre à un document non approuvé d’accéder aux ressources approuvées, les utilisateurs doivent supprimer la protection Application Guard du document.
 
   :::image type="content" source="../../media/ag09-confirm.png" alt-text="Boîte de dialogue indiquant le message de sécurité et l’état de la fonctionnalité" lightbox="../../media/ag09-confirm.png":::
 
@@ -206,7 +205,7 @@ Vous pouvez également configurer Microsoft Defender pour Office 365 pour qu’i
   > Conseillez aux utilisateurs de supprimer la protection uniquement s’ils approuvent le fichier et sa source ou l’endroit d’où il provient.
 
 * Lorsqu’un document non approuvé est stocké dans un emplacement approuvé, l’approbation de l’emplacement est héritée par le document. En règle générale, le stockage cloud d’une organisation est identifié comme un emplacement approuvé.
-  
+
 * Le contenu actif dans les documents tels que les macros et les contrôles ActiveX est désactivé dans Application Guard pour Office. Les utilisateurs doivent supprimer la protection Application Guard pour activer le contenu actif.
 
 * Les fichiers non approuvés provenant de partages réseau ou de fichiers partagés à partir de OneDrive, OneDrive Entreprise ou SharePoint Online d’une autre organisation s’ouvrent en lecture seule dans Application Guard. Les utilisateurs peuvent enregistrer une copie locale de ces fichiers pour continuer à travailler dans le conteneur ou supprimer la protection pour travailler directement avec le fichier d’origine.
@@ -242,4 +241,4 @@ Lorsque cette heuristique est remplie, Office crée un conteneur Application Gua
 * Les fichiers CSV et HTML ne sont pas pris en charge pour l’instant.
 * Application Guard pour Office ne fonctionne actuellement pas avec les volumes compressés NTFS. Si vous voyez une erreur « ERROR_VIRTUAL_DISK_LIMITATION », essayez de décompresser le volume.
 * Les mises à jour de .NET peuvent entraîner l’échec de l’ouverture des fichiers dans Application Guard. En guise de solution de contournement, les utilisateurs peuvent redémarrer leur appareil lorsqu’ils rencontrent cet échec. En savoir plus sur le problème lors de la [réception d’un message d’erreur lors de la tentative d’ouverture de Protection d'application Windows Defender ou de Bac à sable Windows](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
-* Pour [plus d’informations, consultez Forum aux questions - Protection d'application Microsoft Defender.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 
+* Pour [plus d’informations, consultez Forum aux questions - Protection d'application Microsoft Defender.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard)

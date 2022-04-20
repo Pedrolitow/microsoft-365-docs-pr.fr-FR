@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Déterminez les réglementations relatives à la confidentialité des données, les scénarios pertinents, votre préparation et les types d’informations sensibles qui se trouvent dans votre environnement Microsoft 365.
-ms.openlocfilehash: 967c64dee2d99f41b3c2a1b6a193730dcd75811a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e2d87599315e7bb43b289d74b5f192b29aecd965
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947514"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973471"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Évaluer les risques liés à la confidentialité des données et identifier les éléments sensibles avec Microsoft 365
 
@@ -190,7 +190,7 @@ L’évaluation du RGPD se compose des sections suivantes :
 
 Cette étape implique l’identification de types d’informations sensibles particuliers soumis à des contrôles réglementaires spécifiques, ainsi que l’occurrence de ces types dans votre environnement Microsoft 365.
 
-La recherche de contenu dans votre environnement contenant des données personnelles peut être une tâche formidable, impliquant auparavant une combinaison d’utilisation de la recherche de conformité, eDiscovery, Advanced eDiscovery, DLP et audit.
+La recherche de contenu dans votre environnement contenant des données personnelles peut être une tâche formidable, impliquant auparavant une combinaison d’utilisation de la recherche de conformité, eDiscovery, eDiscovery (Premium), DLP et audit.
 
 Avec la nouvelle solution **de classification des données** dans le portail de conformité Microsoft Purview, cela est devenu beaucoup plus facile avec la fonctionnalité [Explorateur](../compliance/data-classification-content-explorer.md) de contenu, qui fonctionne avec des types d’informations sensibles intégrés ou personnalisés, y compris ceux liés aux données personnelles.
 

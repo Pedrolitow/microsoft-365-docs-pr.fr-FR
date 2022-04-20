@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 64d1284b315b7d565a924499ef5af2b815263dac
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0aee30dff19f6d1127e63d14fa69e5d72232e305
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945194"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972530"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrations de productivité Microsoft 365
 
@@ -27,7 +27,7 @@ La série de solutions d’entreprise Microsoft 365 fournit des conseils pour l�
 ## <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams et services de productivité connexes dans Microsoft 365 pour les architectes informatique
 L’architecture logique de services de productivité dans Microsoft 365, fonctionnant avec Microsoft Teams.
 
-| Item | Description |
+| Élément | Description |
 |:-----|:-----|
 |[![Teams affiche d’architecture logique.](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Mise à jour de janvier 2021   |Microsoft fournit une suite de services de productivité qui fonctionnent ensemble pour fournir une expérience de collaboration avec la gouvernance des données, la sécurité et la conformité. <br/> <br/>Cette série d’illustrations fournit une visibilité de l’architecture logique de services de productivité pour les architectes d’entreprise, fonctionnant avec Microsoft Teams.|
 
@@ -36,14 +36,14 @@ L’engagement des employés contribue de façon significative à la satisfactio
 
 Connaître la méthode (ou les combinaisons de méthodes) à utiliser et quand les utiliser dépend de votre public et de la culture de communication de votre organisation. 
 
-| Item | Description |
+| Élément | Description |
 |:-----|:-----|
 |[![Affiche du scénario de communication d’entreprise contoso.](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>Mise à jour de janvier 2022   |Cette affiche montre comment Contoso tient les employés informés et engagés dans les scénarios de communication les plus courants. Contoso utilise une variété d’applications M365, y compris une nouvelle offre, Viva Connections.<br/><br/>**Guides de solution associés** <br/> <ul><li>[Communications organisationnelles : Conseils, méthodes et produits](/sharepoint/corporate-communications-overview)|
 
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>Groupes dans Microsoft 365 pour les architectes informatique
 Cette illustration inclut des informations pour les architectes informatiques sur Groupes Microsoft 365. Pour en savoir plus sur la configuration et l’administration des Groupes Microsoft 365 et des équipes pour la collaboration au sein de votre organisation, consultez [Configurer une collaboration sécurisée avec Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) et [Qu’est-ce que la gouvernance de la collaboration ?](/microsoft-365/solutions/collaboration-governance-overview)
 
-| Item | Description |
+| Élément | Description |
 |:-----|:-----|
 |[![Image miniature pour l’infographie des groupes.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Mise à jour de mai 2020|Ces illustrations décrivent les différents types de groupes, la manière dont ceux-ci sont créés et gérés et quelques recommandations en matière de gouvernance.
 
@@ -51,7 +51,7 @@ Cette illustration inclut des informations pour les architectes informatiques su
 
 Microsoft fournit des outils pour migrer vos partages de fichiers réseau locaux et vos sites SharePoint Server vers Microsoft 365 en mettant l’accent sur la protection et la sécurité de votre contenu pendant la migration. Cet ensemble d’illustrations illustre les différentes méthodes disponibles pour déplacer votre contenu vers SharePoint, Teams et OneDrive, ainsi que la façon dont vos données circulent tout au long du processus.
 
-| Item | Description |
+| Élément | Description |
 |:-----|:-----|
 |[![Affiche du modèle : Migrer vers Microsoft 365.](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf) <p> [PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\|[Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <p> Mise à jour de mars 2021 |Inclus : <ul><li> Migration de partage de fichiers</li><li>Migration du site SharePoint Server (SPMT)</li></ul> <p> Pour plus d’informations, consultez [Migrer votre contenu vers Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online).|
 
@@ -70,7 +70,7 @@ Cet ensemble d’illustrations utilise l’une des industries les plus réglemen
 ## <a name="security-and-information-protection-for-multi-region-organizations"></a>Sécurité et protection des informations pour les organisations multi-régions
 Sécurité et protection des informations pour les organisations multirégion avec un seul locataire Microsoft 365
 
-| Item | Description |
+| Élément | Description |
 |:-----|:-----|
 |[![Infographie multirégion.](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>Mise à jour de Mars 2020 |L’utilisation d’un seul client Microsoft 365 pour votre organisation mondiale constitue le meilleur choix et la meilleure expérience pour de multiples raisons. Cependant, de nombreux architectes sont aux prises avec la façon de se conformer aux objectifs de sécurité et de protection des informations dans différentes régions. Cet ensemble de thèmes fournit des recommandations. |
 
@@ -90,7 +90,7 @@ If your organization is agile, you have a small IT team, and your threat profile
 Selon votre environnement, certains outils conviennent mieux à certaines architectures.
 
 
-| Item | Description |
+| Élément | Description |
 |:-----|:-----|
 |[![Image miniature pour Microsoft Defender pour point de terminaison stratégie de déploiement.](../media/solutions-architecture-center/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) <br>Mise à jour de septembre 2021| Le matériel architectural vous aide à planifier votre déploiement pour les architectures suivantes : <ul><li> Cloud-natif </li><li> Cogestion </li><li> Sur site</li><li>Évaluation et intégration locale</li> |
 <!--
@@ -107,19 +107,19 @@ Recommended Zero Trust capabilities for protecting identities and devices that a
 --> 
 <a name="BKMK_ediscovery"></a>
 
-## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>architecture Advanced eDiscovery dans Microsoft 365
+## <a name="ediscovery-premium-architecture-in-microsoft-365"></a>Architecture eDiscovery (Premium) dans Microsoft 365
 
-Advanced eDiscovery flux de travail et de données de bout en bout, y compris dans Microsoft 365 environnements multigéographiques.
+Flux de données et flux de données de bout en bout eDiscovery (Premium), y compris dans Microsoft 365 environnements multigéographiques.
 
-| Item | Description |
+| Élément | Description |
 |:-----|:-----|
-|[![Affiche modèle : architecture Advanced eDiscovery dans Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Afficher en tant qu’image](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Télécharger au format PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)\| [Télécharger en tant que Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Mise à jour : octobre 2020|Inclus : <ul><li>  Flux de travail de bout en bout dans un environnement unique</li><li>Flux de travail de bout en bout dans un environnement multigéographique Microsoft 365 </li><li>Flux de données de bout en bout qui prend en charge le flux de travail EDRM</li> |
+|[![Affiche modèle : architecture eDiscovery (Premium) dans Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Afficher en tant qu’image](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Télécharger au format PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)\| [Télécharger en tant que Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Mise à jour : octobre 2020|Inclus : <ul><li>  Flux de travail de bout en bout dans un environnement unique</li><li>Flux de travail de bout en bout dans un environnement multigéographique Microsoft 365 </li><li>Flux de données de bout en bout qui prend en charge le flux de travail EDRM</li> |
 
 ## <a name="microsoft-telephony-solutions"></a>Détails sur les solutions téléphoniques Microsoft Telephony
 
 Microsoft prend en charge plusieurs options lorsque vous commencez vos premiers pas équipes dans le cloud Microsoft. Ce poster vous aide à décider si la solution de téléphonie Microsoft (Microsoft telephony: système téléphonique dans le cloud ou voix entreprise en local) est appropriée pour les utilisateurs dans votre organisation et comment votre organisation peut se connecter à la Public changé téléphone réseau (PSTN).
 
-| Item | Description |
+| Élément | Description |
 |:-----|:-----|
 |[![Affiche des solutions de téléphonie Microsoft.](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>Mise à jour de mars 2021 | Pour plus d’informations, consultez [Planifier votre solution vocale Teams](/microsoftteams/cloud-voice-landing-page).|
 

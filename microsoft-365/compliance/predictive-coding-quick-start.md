@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Découvrez comment commencer à utiliser le module de codage prédictif dans eDiscovery (Premium). Cet article vous guide tout au long du processus de bout en bout d’utilisation du codage prédictif pour identifier le contenu d’un ensemble de révisions le plus pertinent pour votre investigation.
-ms.openlocfilehash: 449ef5446ee5a4da87081774037c9b5e2a8d440d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dc4edcb6affa7ccfd6a915839ef84b0d453fcfca
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942312"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996149"
 ---
 # <a name="quick-start-predictive-coding-in-ediscovery-premium-preview"></a>Démarrage rapide : Codage prédictif dans eDiscovery (Premium) (préversion)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cet article présente un guide de démarrage rapide pour l’utilisation du codage prédictif dans Microsoft Purview eDiscovery (Premium). Le module de codage prédictif utilise des fonctionnalités de Machine Learning intelligentes pour vous aider à éliminer de grands volumes de contenu de cas qui ne sont pas pertinents pour votre investigation. Pour ce faire, créez et entraînez vos propres modèles de codage prédictif qui vous aident à hiérarchiser les éléments les plus pertinents à examiner.
 

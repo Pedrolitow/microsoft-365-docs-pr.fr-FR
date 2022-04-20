@@ -19,17 +19,16 @@ search.appverid:
 description: Découvrez trois outils qui permettent de surveiller les fuites de données personnelles.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3b16e96e85d6ee154912535ecf0bac4ac5ba6fac
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 13b8aa5699c3d4031a364ceaf62b70e6b7236fda
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947756"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972978"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Surveillance des fuites de données personnelles
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 Il existe de nombreux outils qui peuvent être utilisés pour surveiller l’utilisation et le transport des données personnelles. Cette rubrique décrit trois outils qui fonctionnent correctement.
 

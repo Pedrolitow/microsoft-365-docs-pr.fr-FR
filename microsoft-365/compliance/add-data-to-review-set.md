@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment ajouter des résultats de recherche ou des exemples de ces résultats de recherche à un ensemble de cas eDiscovery (Premium).
-ms.openlocfilehash: 1649b766c0e7f39122505d3a73574e478373f5b2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 7b754aa09390d041de44cd2e82ed9d1f93eede7e
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941124"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973748"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Ajouter des résultats de recherche à un jeu à réviser
 
@@ -37,7 +37,7 @@ Lorsque vous ajoutez les résultats d’une recherche à un ensemble de révisio
 
 - Tous les éléments (y compris le contenu et les métadonnées) sont réindexés afin que toutes les données du jeu de révision puissent faire l’objet d’une recherche complète pendant la révision des données de cas. La réindexation des données entraîne des recherches approfondies et rapides lorsque vous effectuez une recherche dans les données de l’ensemble de révisions pendant l’enquête de cas.
 
-- Un fichier chiffré à l’aide d’une [technologie de chiffrement Microsoft](encryption.md) et attaché à un message électronique retourné dans les résultats de la recherche est déchiffré lorsque le message électronique et le fichier joint sont ajoutés au jeu de révision. Vous pouvez examiner et interroger le fichier déchiffré dans l’ensemble de révisions. Le rôle de déchiffrement RMS doit vous être attribué pour ajouter des pièces jointes déchiffrées à un jeu de révision. Pour plus d’informations, consultez [Déchiffrement dans Microsoft 365 outils eDiscovery](ediscovery-decryption.md).
+- Un fichier chiffré à l’aide d’une [technologie de chiffrement Microsoft](encryption.md) et attaché à un message électronique retourné dans les résultats de la recherche est déchiffré lorsque le message électronique et le fichier joint sont ajoutés au jeu de révision. Vous pouvez examiner et interroger le fichier déchiffré dans l’ensemble de révisions. Le rôle de déchiffrement RMS doit vous être attribué pour ajouter des pièces jointes déchiffrées à un jeu de révision. Pour plus d’informations, consultez [Déchiffrement dans les outils eDiscovery de Microsoft Purview](ediscovery-decryption.md).
 
 Pour ajouter des données à un ensemble de révisions, cliquez sur une recherche sous l’onglet **Recherches** , puis cliquez sur **Ajouter des résultats pour passer en revue le jeu** dans la page de menu volant.
 

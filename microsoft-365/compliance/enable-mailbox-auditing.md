@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: La journalisation de l’audit de boîte aux lettres est activée par défaut dans Microsoft 365 (également appelé « audit de boîte aux lettres par défaut » ou « audit de boîte aux lettres activé par défaut »). Cette configuration signifie que certaines actions effectuées par les propriétaires de boîtes aux lettres, les délégués et les administrateurs sont automatiquement enregistrées dans un journal d’audit de boîte aux lettres, où vous pouvez rechercher les activités effectuées sur la boîte aux lettres.
-ms.openlocfilehash: bb8170b603bc72459e3bbd55fa256df188f42f65
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: d5d966cf4d5b7c58c15df4ce8d4039331ebca8c4
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952883"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972626"
 ---
 # <a name="manage-mailbox-auditing"></a>Gérer l’audit de boîte aux lettres
 
@@ -83,7 +83,7 @@ Les types d’ouverture de session classent l’utilisateur qui a effectué les 
 - **Administrateur** :
   - La boîte aux lettres est recherchée avec l’un des outils Microsoft eDiscovery suivants :
     - Recherche de contenu dans le Centre de conformité.
-    - eDiscovery ou Advanced eDiscovery dans le Centre de conformité.
+    - eDiscovery ou eDiscovery (Premium) dans le Centre de conformité.
     - In-Place eDiscovery dans Exchange Online.
   - La boîte aux lettres est accessible à l’aide de l’éditeur MAPI Microsoft Exchange Server.
 
@@ -116,7 +116,7 @@ Le tableau suivant décrit les actions de boîte aux lettres disponibles dans la
 |**SendAs**|Un message a été envoyé à l’aide de l’autorisation SendAs. Cela signifie qu’un autre utilisateur a envoyé le message comme s’il provenait du propriétaire de la boîte aux lettres.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|Un message a été envoyé à l’aide de l’autorisation SendOnBehalf. Cela signifie qu’un autre utilisateur a envoyé le message de la part du propriétaire de la boîte aux lettres. Le message indique au destinataire de la part de qui le message a été envoyé et qui a envoyé réellement le message.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|Un message a été définitivement supprimé ou supprimé (récupérable) du dossier Éléments supprimés. Les éléments supprimés récupérables sont déplacés vers le dossier Éléments récupérables.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
-|**Mise à jour**|Un message ou l’une de ses propriétés a été modifié.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
+|**Mettre à jour**|Un message ou l’une de ses propriétés a été modifié.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateCalendarDelegation**|Une délégation de calendrier a été affectée à une boîte aux lettres. La délégation de calendrier donne à une autre personne les mêmes autorisations d’organisation pour gérer le calendrier du propriétaire de la boîte aux lettres.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>||![Coche](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateComplianceTag**|Une autre étiquette de rétention est appliquée à un élément de courrier (un élément ne peut avoir qu’une seule étiquette de rétention qui lui est affectée).|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|
 |**UpdateFolderPermissions**|Une autorisation de dossier a été modifiée. Les autorisations de dossier contrôlent quels utilisateurs de votre organisation peuvent accéder aux dossiers dans une boîte aux lettres et aux messages situés dans ces dossiers.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
@@ -141,7 +141,7 @@ N’oubliez pas qu’un administrateur disposant de l’autorisation d’accès 
 |**SendAs**|Un message a été envoyé à l’aide de l’autorisation Envoyer en tant que.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|Un message a été envoyé à l’aide de l’autorisation Envoyer de la part de.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|Un message a été définitivement supprimé ou supprimé (récupérable) du dossier Éléments supprimés. Les éléments supprimés récupérables sont déplacés vers le dossier Éléments récupérables.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
-|**Mise à jour**|Un message ou une de ses propriétés a été modifié.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
+|**Mettre à jour**|Un message ou une de ses propriétés a été modifié.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
 
 ### <a name="verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type"></a>Vérifier que les actions de boîte aux lettres par défaut sont journalisées pour chaque type d’ouverture de session
 
@@ -300,7 +300,7 @@ Set-OrganizationConfig -AuditDisabled $false
 
 Pour l’instant, vous ne pouvez pas désactiver l’audit de boîte aux lettres pour les boîtes aux lettres spécifiques lorsque l’audit de boîte aux lettres activé par défaut est activé dans votre organisation. Par exemple, la définition de la propriété de boîte aux *lettres AuditEnabled* sur **False** est ignorée.
 
-Toutefois, vous pouvez toujours utiliser l’applet de commande **Set-MailboxAuditBypassAssociation** dans Exchange Online PowerShell pour empêcher *toutes les* actions de boîte aux lettres des utilisateurs spécifiés d’être journalisées, quel que soit l’endroit où les actions se produisent. Par exemple :
+Toutefois, vous pouvez toujours utiliser l’applet de commande **Set-MailboxAuditBypassAssociation** dans Exchange Online PowerShell pour empêcher *toutes les* actions de boîte aux lettres des utilisateurs spécifiés d’être journalisées, quel que soit l’endroit où les actions se produisent. Par exemple :
 
 - Les actions du propriétaire de boîte aux lettres effectuées par les utilisateurs contournés ne sont pas journalisées.
 - Les actions déléguées effectuées par les utilisateurs contournés sur les boîtes aux lettres d’autres utilisateurs (y compris les boîtes aux lettres partagées) ne sont pas journalisées.

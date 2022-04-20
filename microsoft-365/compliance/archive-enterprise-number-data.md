@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données SMS et MMS à partir de TeleMessage Enterprise Number Archiver. Cela vous permet d’archiver des données de sources de données tierces dans Microsoft Purview afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: f1353e0140e1411d2cac79fc4d59043046df302d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b3f429af6caa4d650688b27f5157a212e348ffe8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944104"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995049"
 ---
 # <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Configurer un connecteur pour archiver Enterprise données numériques
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez un connecteur TeleMessage dans le portail de conformité Microsoft Purview pour importer et archiver des messages MMS (Short Messaging Service) et Multimedia Messaging Service (MMS), des messages de conversation, des enregistrements d’appels vocaux et des journaux d’appels vocaux à partir de l’archiveur de numéros Enterprise. Après avoir configuré et configuré un connecteur, il se connecte au compte TeleMessage de votre organisation une fois par jour et importe les données de communication mobile des employés à l’aide de TeleMessage Enterprise Number Archiver vers des boîtes aux lettres dans Microsoft 365.
 
