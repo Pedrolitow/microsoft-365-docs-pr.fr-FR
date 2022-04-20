@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 44d09eefb065ee204dd90980dfe710d6b3ddb88e
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: d97442fc2c3767a30c1ea98dc4a1ee7a38e56b45
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666787"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64970998"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de sécurité par e-mail dans le portail Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "64666787"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Divers rapports sont disponibles dans le portail Microsoft 365 Defender pour vous aider à <https://security.microsoft.com> voir comment les fonctionnalités de sécurité des e-mails, telles que les fonctionnalités anti-courrier indésirable et anti-programme malveillant dans Microsoft 365 protègent votre organisation. Si vous disposez [des autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez afficher et télécharger ces rapports comme décrit dans cet article.
 
@@ -58,8 +58,8 @@ Les rapports Exchange Online Protection (EOP) et Microsoft Defender pour Office 
 |**Logiciels malveillants détectés dans le rapport d’e-mail** <p> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[Rapport d’état de la protection contre les menaces : Afficher les données par programme malveillant par e-mail \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|Juin 2021|
 |**Rapport de détection du courrier indésirable** <p> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[Rapport d’état de la protection contre les menaces : afficher les données par courrier indésirable \>](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|Octobre 2021|
 |Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|TBA|Mai 2022|
-|**rapport de règle de transport Exchange** <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange rapport de règle de transport dans le CAE](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|Avril 2022|
-|Get-MailTrafficTopReport|[Rapport d’état de la protection contre les menaces : Afficher les données par programme malveillant par e-mail \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <p> **Remarque** : Les fonctionnalités de création de rapports de chiffrement ne sont pas remplacées dans Get-MailTrafficTopReport.|MC315742|Avril 2022|
+|**rapport de règle de transport Exchange** <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange rapport de règle de transport dans le CAE](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|Avril 2022|
+|Get-MailTrafficTopReport|[Rapport d’état de la protection contre les menaces : Afficher les données par programme malveillant par e-mail \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <p> **Remarque** : Les fonctionnalités de création de rapports de chiffrement ne sont pas remplacées dans Get-MailTrafficTopReport.|MC315742|Avril 2022|
 
 ## <a name="compromised-users-report"></a>Rapport sur les utilisateurs compromis
 
@@ -109,7 +109,6 @@ Pour afficher le rapport dans le portail Microsoft 365 Defender, accédez **aux*
 Dans la page **Exchange rapport de règle de transport**, les graphiques et les données disponibles sont décrits dans les sections suivantes.
 > [!NOTE]
 > Le **rapport de règle de transport Exchange** est désormais disponible dans le CAE. Pour plus d’informations, consultez [Exchange rapport sur les règles de transport dans le nouveau CAE](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
-
 
 ### <a name="chart-breakdown-by-direction"></a>Répartition du graphique par direction
 
@@ -202,7 +201,7 @@ Dans la page **rapport d’état du flux** de courrier, l’onglet **Type** est 
 Le tableau des détails sous le graphique affiche les informations suivantes :
 
 - **Direction**
-- **Type**
+- **Type (Type)**
 - **24 heures**
 - **3 jours**
 - **7 jours**
@@ -398,7 +397,7 @@ Pour afficher le rapport dans le portail Microsoft 365 Defender, accédez aux <h
 
 Le graphique affiche les informations suivantes :
 
-- **Pending**
+- **Attente**
 - **Terminée**
 
 Vous pouvez filtrer le graphique et la table de détails en cliquant sur **Filtrer** et en sélectionnant une ou plusieurs des valeurs suivantes dans le menu volant qui s’affiche :
@@ -419,7 +418,7 @@ Vous pouvez filtrer le graphique et la table de détails en cliquant sur **Filtr
   - **Programme malveillant**
   - **Courrier indésirable**
 - **État de rescan** :
-  - **Pending**
+  - **Attente**
   - **Terminée**
 
 Le tableau des détails sous le graphe affiche les mêmes informations et contient les mêmes options **De groupe** ou **personnaliser les colonnes** que dans l’onglet **Soumis pour analyse** de **l’e-mail &** **soumissions** de collaboration\>. Pour plus d’informations, consultez [Afficher les soumissions d’administrateur à Microsoft](admin-submission.md#view-admin-submissions-to-microsoft).
@@ -571,7 +570,7 @@ Dans la **vue Afficher les données par courrier indésirable par courrier élec
 Dans le tableau d’informations sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Sujet**
+- **Subject**
 - **Expéditeur**
 - **Destinataires**
 - **Technologie de détection**
@@ -626,7 +625,7 @@ Dans la **vue Afficher les données par programme malveillant par courrier élec
 Dans le tableau d’informations sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Sujet**
+- **Subject**
 - **Expéditeur**
 - **Destinataires**
 - **Technologie de détection**
@@ -676,7 +675,7 @@ Dans les **affichages Afficher les données par hameçonnage par e-mail\>**, **A
 Dans le tableau d’informations sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Sujet**
+- **Subject**
 - **Expéditeur**
 - **Destinataires**
 - **Technologie de détection**
@@ -749,7 +748,7 @@ Dans les **affichages Afficher les données par hameçonnage par e-mail\>**, **A
 Dans le tableau d’informations sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Sujet**
+- **Subject**
 - **Expéditeur**
 - **Destinataires**
 - **Technologie de détection**
@@ -890,7 +889,7 @@ Dans la **vue Afficher les données par remplacement système** et **la réparti
 Dans le tableau d’informations sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Sujet**
+- **Subject**
 - **Expéditeur**
 - **Destinataires**
 - **Remplacement du système**
@@ -1176,7 +1175,7 @@ Lorsque vous avez terminé de configurer les filtres, cliquez sur **Exporter**. 
 
 Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données contiennent plus de 150 000 lignes, plusieurs fichiers .csv sont créés.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Protection anti-courrier indésirable et anti-programme malveillant dans EOP](anti-spam-and-anti-malware-protection.md)
 

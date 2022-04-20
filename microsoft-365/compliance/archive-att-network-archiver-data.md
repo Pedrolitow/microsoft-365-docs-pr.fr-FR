@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur TeleMessage pour importer et archiver des données SMS et MMS à partir d’AT&T Mobile Network. Cela vous permet d’archiver des données de sources de données tierces dans Microsoft Purview afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 8c038769ef7330788badfaa8a0a40a00c0730a13
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 87b933117fae134572ccf4a152a83ec4165b1caf
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950718"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992763"
 ---
 # <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>Configurer un connecteur pour archiver les données AT&T SMS/MMS
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez un connecteur TeleMessage dans le portail de conformité Microsoft Purview pour importer et archiver des données SMS et MMS à partir d’AT&T Mobile Network. Après avoir configuré et configuré un connecteur, il se connecte au réseau AT&T de votre organisation une fois par jour et importe des données SMS et MMS dans des boîtes aux lettres dans Microsoft Purview.
 

@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Lorsqu’un consignateur est ajouté à un cas eDiscovery (Premium), tout contenu considéré comme partiellement indexé est retraité pour le rendre entièrement consultable.
-ms.openlocfilehash: 3c6f0079f87dbc4711fed7d776204c287d5b5865
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8b7dbbb13b9a667a7b5a50a5535634414c0caec5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64931977"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993619"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Indexation avancée des données des consignataires
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsqu’un consignateur est ajouté à un cas eDiscovery (Premium), tout contenu considéré comme partiellement indexé ou ayant eu des erreurs d’indexation est réindexé. Ce processus de réindexation est appelé *indexation avancée*. Il existe de nombreuses raisons pour lesquelles le contenu est partiellement indexé ou comporte des erreurs d’indexation. Cela inclut les fichiers image ou la présence d’images dans un fichier, les types de fichiers non pris en charge ou les limites d’indexation de taille de fichier. Pour SharePoint fichiers, l’indexation avancée s’exécute uniquement sur les éléments qui sont marqués comme partiellement indexés ou qui ont des erreurs d’indexation. Dans Exchange, les messages électroniques qui ont des pièces jointes d’image ne sont pas marqués comme partiellement indexés ou avec des erreurs d’indexation. Cela signifie que ces fichiers ne seront pas réindexés par le processus d’indexation avancé.
 
@@ -41,7 +43,7 @@ Pour en savoir plus sur la prise en charge du traitement et les éléments parti
 
 Une fois le processus d’indexation avancé terminé, vous pouvez comprendre l’efficacité du retraitement.  Dans la vue Résultats de l’indexation avancée sous l’onglet **Traitement** d’un cas, le graphique répertorie le nombre d’éléments ajoutés à *l’index hybride*.  L’index hybride est l’emplacement où eDiscovery (Premium) stocke le contenu retraité.
 
-Cette vue inclut également le nombre d’éléments qui nécessitent une correction et un autre graphique d’erreurs par type de fichier. Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Cette vue inclut également le nombre d’éléments qui nécessitent une correction et un autre graphique d’erreurs par type de fichier. Pour plus d’informations, voir :
 
 - [Correction d’erreur lors du traitement des données](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 

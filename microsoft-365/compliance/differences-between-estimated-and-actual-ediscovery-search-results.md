@@ -19,14 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Comprendre pourquoi les résultats de recherche estimés et réels peuvent varier dans les recherches exécutées avec les outils eDiscovery dans Office 365.
-ms.openlocfilehash: b1e4ba4938e418d8364dfb06b24b6f7a58d6a463
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: a71b246b71e7b3cca3ef361510042b6292c36c8b
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938156"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993949"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Différences entre les résultats de recherche eDiscovery estimés et réels
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cet article s’applique aux recherches que vous pouvez exécuter à l’aide de l’un des outils eDiscovery Microsoft 365 suivants : 
 

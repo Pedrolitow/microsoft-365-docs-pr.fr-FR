@@ -19,61 +19,63 @@ ms.collection:
 recommendations: false
 description: Découvrez comment ajouter un conseil de stratégie à une stratégie de protection contre la perte de données (DLP) pour informer un utilisateur qu’il travaille avec du contenu en conflit avec une stratégie DLP.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 52bb2fba47c5588dc6a44eb5f8e1d7b745e69e70
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f9702916831839ac384cd262854fd0a88f90a8ea
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319376"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953658"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>Référence des conseils de stratégie de prévention contre la perte de données
 
-Les conseils de stratégie DLP dans Outlook Web Access sont pris en charge pour toutes les conditions, exceptions et actions applicables à la charge de travail Exchange dans une stratégie DLP, à l’exception des suivantes :
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-**Conditions :**
+Les conseils de stratégie DLP dans Outlook’accès web sont pris en charge pour toutes les conditions, exceptions et actions applicables à Exchange charge de travail dans une stratégie DLP, à l’exception des éléments suivants :
+
+**Conditions:**
 
 - Le destinataire est membre de
 - L’en-tête contient des mots ou des expressions
 - L’en-tête correspond aux modèles
 - Le type de message est
 - Le jeu de caractères de contenu contient des mots
-- A l’expéditeur a override le conseil de stratégie
+- L’expéditeur a remplacé l’info-bulle de stratégie
 - La taille du message est égale ou supérieure à
 - L’attribut AD de l’expéditeur contient des mots ou des expressions
 - L’attribut AD de l’expéditeur correspond aux modèles
 - Plages d’adresses IP de l’expéditeur
-- L’attribut Recipient AD contient des mots ou des expressions
-- L’attribut Recipient AD correspond aux modèles
+- L’attribut AD du destinataire contient des mots ou des expressions
+- L’attribut AD du destinataire correspond aux modèles
 - Le nom du document contient des mots ou des expressions
 - Le nom du document correspond aux modèles
 - Le contenu du document contient des mots ou des expressions
 - Le contenu du document correspond aux modèles
 
-**Actions :**
+**Actions:**
 
-- Transmettre le message pour approbation au responsable de l’expéditeur
-- Transmettre le message pour approbation à des approuveurs spécifiques
+- Transférer le message pour approbation au responsable de l’expéditeur
+- Transférer le message pour approbation à des approbateurs spécifiques
 - Rediriger le message vers des utilisateurs spécifiques
 - Ajouter des destinataires à la zone À
 - Ajouter des destinataires à la zone Cc
-- Ajouter des destinataires à la zone  Bcc
-- Ajouter le responsable de l’expéditeur en tant que destinataire
+- Ajouter des destinataires à la zone Cci
+- Ajouter le gestionnaire de l’expéditeur en tant que destinataire
 - Ajouter une clause d’exclusion de responsabilité HTML
-- Prédépender l’objet de l’e-mail
-- Supprimer le chiffrement de messages O365 et la protection des droits
+- Ajouter l’objet de l’e-mail
+- Supprimer le chiffrement des messages O365 et la protection des droits
 
-## <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions"></a>Outlook 2013 et les ultérieures prend en charge l’affichage de conseils de stratégie uniquement pour certaines conditions et exceptions
+## <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions"></a>Outlook 2013 et versions ultérieures prend en charge l’affichage de conseils de stratégie pour certaines conditions et exceptions uniquement
 
-Actuellement, Outlook 2013 et les ultérieures prend en charge l’affichage de conseils de stratégie pour les stratégies qui ne contiennent pas de condition ou d’exception en dehors des conditions mentionnées ci-dessous et des exceptions correspondantes :
+Actuellement, Outlook 2013 et versions ultérieures prend en charge l’affichage de conseils de stratégie pour les stratégies qui ne contiennent aucune condition ou exception en dehors des conditions mentionnées ci-dessous et des exceptions correspondantes :
 
-- Le contenu contient (fonctionne uniquement pour les types d’informations sensibles. Les étiquettes de niveau de sensibilité ne sont pas pris en charge)
+- Contenu contenu (fonctionne uniquement pour les types d’informations sensibles. Les étiquettes de confidentialité ne sont pas prises en charge)
 - Le contenu est partagé
 
-Notez que toutes les conditions fonctionnent pour les e-mails rédigés dans Outlook application cliente, où ils correspondent au contenu et appliquent des actions de protection sur le contenu. Toutefois, l’affichage de conseils de stratégie aux utilisateurs n’est pas pris en charge pour toutes les conditions qui sont utilisées en dehors de celle mentionnée ci-dessus.
+Notez que toutes les conditions fonctionnent pour les e-mails créés dans Outlook application cliente, où elles correspondent au contenu et appliquent des actions de protection sur le contenu. Toutefois, l’affichage des conseils de stratégie aux utilisateurs n’est pas pris en charge pour les conditions utilisées en dehors de celles mentionnées ci-dessus.
 
-## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Outlook 2013 et les Office la prise en charge des applications de bureau affichant des conseils de stratégie uniquement pour certains types d’informations sensibles
+## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Outlook 2013 et versions ultérieures et Office la prise en charge des applications sur le Bureau affichant des conseils de stratégie pour certains types d’informations sensibles uniquement
 
-La liste des types d’informations sensibles pré-détectés pour l’affichage des conseils de stratégie DLP dans Outlook sur ordinateur de bureau (2013 et version ultérieure) et les applications Office (Word, Excel, PowerPoint) sur ordinateur de bureau sont les suivantes :
+La liste des types d’informations sensibles qui seront détectés pour afficher des conseils de stratégie DLP dans Outlook sur le Bureau (2013 et versions ultérieures) et les applications Office (Word, Excel, PowerPoint) sur Le Bureau sont les suivantes :
 
 - Numéro de routage ABA
 - Numéro d’identité nationale (DNI) pour l’Argentine
@@ -81,15 +83,15 @@ La liste des types d’informations sensibles pré-détectés pour l’affichage
 - Numéro de dossier médical Australie
 - Numéro de passeport Australie
 - Numéro de dossier fiscal Australie
-- Clé d’th Azure DocumentDB  
-- Chaîne de connexion de base de données IAAS Azure et chaîne SQL connexion Azure  
-- Azure IoT Connection String  
-- Mot de passe de paramètre de publication Azure  
-- Chaîne de connexion du cache Azure Redis  
+- Clé d’authentification Azure DocumentDB  
+- Chaîne de connexion de base de données Azure IAAS et chaîne de connexion Azure SQL  
+- chaîne de connexion Azure IoT  
+- Mot de passe du paramètre De publication Azure  
+- Chaîne de connexion du cache Redis Azure  
 - Azure SAS  
-- Chaîne de connexion Azure Service Bus  
-- stockage Azure de compte d’utilisateur  
-- stockage Azure de compte (générique)  
+- chaîne de connexion Azure Service Bus  
+- clé de compte stockage Azure  
+- clé de compte stockage Azure (générique)  
 - Numéro national belge
 - Numéro CPF Brésil
 - Numéro d’entité juridique (CNPJ) Brésil
@@ -105,12 +107,12 @@ La liste des types d’informations sensibles pré-détectés pour l’affichage
 - Numéro de carte de crédit
 - Numéro de carte d’identité croate  
 - Numéro d’identification personnelle croate (OIB)  
-- Numéro d’identité personnel tchèque  
+- Numéro d’identité personnelle tchèque  
 - Numéro d’identification personnelle danois
 - Numéro de la Drug Enforcement Agency (DEA)
 - Numéro de carte de crédit de l'U.E.
 - Numéro de permis de conduire de l’UE  
-- Numéro d’identification national de l’UE  
+- Numéro d’identification nationale de l’UE  
 - Numéro de passeport de l’UE  
 - Numéro de sécurité sociale de l’UE (SSN) ou ID équivalent  
 - Numéro d’identification fiscale de l’UE (TIN)  
@@ -129,8 +131,8 @@ La liste des types d’informations sensibles pré-détectés pour l’affichage
 - Numéro d’identification unique (Aadhaar) Inde
 - Numéro de carte d’identité (KTP) Indonésie
 - Numéro de compte international (IBAN)
-- Classification internationale des maladie (ICD-10-CM)  
-- Classification internationale des maladie (ICD-9-CM)  
+- Classification internationale des maladies (ICD-10-CM)  
+- Classification internationale des maladies (ICD-9-CM)  
 - Adresse IP
 - Numéro personnel pour le service public irlandais (PPS) 
 - Numéro de compte bancaire Israël
@@ -141,8 +143,8 @@ La liste des types d’informations sensibles pré-détectés pour l’affichage
 - Numéro de passeport Japon
 - Matricule de résident Japon
 - Numéro d’assurance sociale Japon
-- Numéro de carte de résidence (japonais)
-- Numéro de carte d’identité Malaisie
+- Numéro de carte de résidence japonaise
+- Numéro de carte d’identité malaisienne
 - Numéro de service du citoyen (BSN) néerlandais  
 - Numéro du Ministère de la santé Nouvelle-Zélande
 - Numéro d’identité norvégien  
@@ -156,15 +158,15 @@ La liste des types d’informations sensibles pré-détectés pour l’affichage
 - Numéro d’identification Afrique du Sud  
 - Matricule de résident Corée du Sud
 - Numéro de sécurité sociale (N° S.S.) espagnol
-- SQL Server Connection String  
+- chaîne de connexion SQL Server  
 - ID national suédois
 - Numéro de passeport suédois
 - Code SWIFT
 - ID national à Taïwan
 - 	Numéro de passeport Taïwan
-- Certificat de résident Taïwan (ARC/TARC)
-- Code d’identification de population thaï
-- Numéro d’identification nationale turc
+- Certificat de résident taïwanais (ARC/TARC)
+- Code d’identification de la population thaïlandaise
+- Numéro d’identification nationale turque
 - Numéro de permis de conduire du Royaume-Uni
 - Numéro de liste électorale du Royaume-Uni
 - Numéro du service de santé national (NHS) du Royaume-Uni
@@ -175,11 +177,11 @@ La liste des types d’informations sensibles pré-détectés pour l’affichage
 - Numéro d’identification fiscale individuel (ITIN) États-Unis
 - Numéro de sécurité sociale (SSN) États-Unis
 
-Notez que les types d’informations sensibles personnalisés sont également pris en charge pour les conseils de stratégie DLP en plus des types d’informations sensibles pré-personnalisés ci-dessus.
+Notez que les types d’informations sensibles personnalisés sont également pris en charge pour les conseils de stratégie DLP en plus des types d’informations sensibles out-of-the-box ci-dessus.
 
 ## <a name="data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types"></a>La protection contre la perte de données sur les appareils de point de terminaison prend en charge les conseils de stratégie pour certains types d’informations sensibles uniquement
 
-La liste des types d’informations sensibles pré-utilisés qui seront détectés dans les documents résidant sur les appareils de point de terminaison est la suivante :
+La liste des types d’informations sensibles qui seront détectés dans les documents résidant sur des appareils de point de terminaison est la suivante :
 
 - Numéro de routage ABA 
 - Numéro d’identité nationale (DNI) pour l’Argentine 
@@ -188,32 +190,32 @@ La liste des types d’informations sensibles pré-utilisés qui seront détect�
 - Numéro de passeport Australie 
 - Numéro de dossier fiscal Australie 
 - Numéro d’entreprise australien 
-- Numéro de société australien 
-- Numéro de permis de conduire Autriche 
-- Carte d’identité Autriche 
-- Numéro de passeport Autriche 
-- Numéro de sécurité sociale d’Autriche 
-- Numéro d’identification fiscale autrichen 
-- Numéro de TVA (Austria Value Added Tax) 
-- Clé d’th Azure DocumentDB 
-- Chaîne de connexion de base de données IAAS Azure et chaîne SQL connexion Azure 
-- Azure IoT Connection String 
-- Mot de passe de paramètre de publication Azure 
-- Chaîne de connexion du cache Azure Redis 
+- Numéro de la société australienne 
+- Numéro de permis de conduire en Autriche 
+- Carte d’identité d’Autriche 
+- Numéro de passeport en Autriche 
+- Numéro de sécurité sociale en Autriche 
+- Numéro d’identification fiscale en Autriche 
+- Numéro de taxe sur la valeur ajoutée (TVA) en Autriche 
+- Clé d’authentification Azure DocumentDB 
+- Chaîne de connexion de base de données Azure IAAS et chaîne de connexion Azure SQL 
+- chaîne de connexion Azure IoT 
+- Mot de passe du paramètre De publication Azure 
+- Chaîne de connexion du cache Redis Azure 
 - Azure SAS 
-- Chaîne de connexion Azure Service Bus 
-- stockage Azure de compte d’utilisateur 
-- stockage Azure de compte (générique) 
-- Numéro de permis de conduire belgique 
+- chaîne de connexion Azure Service Bus 
+- clé de compte stockage Azure 
+- clé de compte stockage Azure (générique) 
+- Numéro de permis de conduire en Belgique 
 - Numéro national belge 
-- Numéro de passeport belgique 
+- Numéro de passeport en Belgique 
 - Numéro de taxe sur la valeur ajoutée en Belgique 
 - Numéro CPF Brésil 
 - Numéro d’entité juridique (CNPJ) Brésil 
 - 	Brazil National ID Card (RG) 
-- Numéro de permis de conduire bulgare 
-- Numéro de passeport bulgare 
-- Numéro civile uniforme de Bulgarie 
+- Numéro de permis de conduire en Bulgarie 
+- Numéro de passeport en Bulgarie 
+- Numéro civil uniforme en Bulgarie 
 - Numéro de compte bancaire Canada 
 - Numéro de permis de conduire Canada 
 - Numéro de service de santé Canada 
@@ -223,77 +225,77 @@ La liste des types d’informations sensibles pré-utilisés qui seront détect�
 - 	Numéro de carte d’identité Chili 
 - 	Numéro de carte d’identité de résident Chine (RPC) 
 - Numéro de carte de crédit 
-- Numéro de permis de conduire Croate 
+- Numéro de permis de conduire en Croatie 
 - Numéro de carte d’identité croate 
 - Numéro de carte d’identité nationale croate 
-- Numéro de passeport croate 
+- Numéro de passeport en Croatie 
 - Numéro d’identification personnelle croate (OIB) 
-- Signature d’accès partagé du compte stockage Azure CSCAN-AZURE0060 
+- Signature d’accès partagé du compte CSCAN-AZURE0060 stockage Azure 
 - Clé symétrique générale CSCAN-GENERAL0140 
 - Numéro de permis de conduire de Chypre 
-- Carte d’identité Chypre 
+- Carte d’identité de Chypre 
 - Numéro de passeport de Chypre 
-- Numéro d’identification fiscale à Chypre 
+- Numéro d’identification fiscale de Chypre 
 - Numéro de permis de conduire tchèque 
-- Numéro d’identité personnel tchèque 
+- Numéro d’identité personnelle tchèque 
 - Numéro de passeport de la République tchèque 
-- Numéro de permis de conduire danemark 
-- Numéro de passeport danemark 
+- Numéro de permis de conduire au Danemark 
+- Numéro de passeport du Danemark 
 - Numéro d’identification personnelle danois 
 - Numéro de la Drug Enforcement Agency (DEA) 
-- Numéro de permis de conduire Estonie 
+- Numéro de permis de conduire estonien 
 - Numéro de passeport estonien 
-- Code d’identification personnelle estonien 
+- Code d’identification personnelle de l’Estonie 
 - Numéro de carte de crédit de l'U.E. 
 - Numéro de permis de conduire de l’UE 
-- Numéro d’identification national de l’UE 
+- Numéro d’identification nationale de l’UE 
 - Numéro de passeport de l’UE 
 - Numéro de sécurité sociale de l’UE (SSN) ou ID équivalent 
 - Numéro d’identification fiscale de l’UE (TIN) 
-- Numéro de permis de conduire Finlande 
-- Numéro d’assurance santé européen (Finlande) 
+- Numéro de permis de conduire en Finlande 
+- Numéro d’assurance maladie européen en Finlande 
 - Numéro d'identification national finlandais 
 - Numéro de passeport finlandais 
 - Numéro de permis de conduire français 
-- Numéro d’assurance maladie Français 
+- Numéro d’assurance maladie en France 
 - Carte nationale d'identité (CNI) française 
 - Numéro de passeport français 
 - Numéro de sécurité sociale (INSEE) français 
-- Numéro d’identification fiscale français (numéro SPI.) 
-- Numéro de taxe sur la valeur ajoutée pour la France 
+- Numéro d’identification fiscale en France (numéro SPI.) 
+- Numéro de taxe sur la valeur ajoutée en France 
 - Numéro de permis de conduire allemand 
 - Numéro de passeport allemand 
 - Numéro de carte d’identité allemand 
-- Numéro d’identification fiscale allemand 
+- Numéro d’identification fiscale en Allemagne 
 - Numéro de taxe sur la valeur ajoutée en Allemagne 
-- Numéro de permis de conduire Grec 
+- Numéro de permis de conduire en Grèce 
 - Carte d’identité nationale grecque 
-- Numéro de passeport Grec 
-- Numéro de sécurité sociale grec (AMKA) 
-- Numéro d’identification fiscale grec 
+- Numéro de passeport en Grèce 
+- Numéro de sécurité sociale en Grèce (AMKA) 
+- Numéro d’identification fiscale grecque 
 - Numéro de carte d’identité (HKID) Hong Kong 
 - Numéro de sécurité sociale hongrois (TAJ) 
-- Numéro de taxe sur la valeur ajoutée hongrois 
-- Numéro de permis de conduire hongrois 
-- Numéro de passeport hongrois 
-- Numéro d’identification personnel hongrie 
-- Numéro d’identification fiscale hongrie 
+- Numéro d’impôt hongrois sur la valeur ajoutée 
+- Numéro de permis de conduire en Hongrie 
+- Numéro de passeport en Hongrie 
+- Numéro d’identification personnelle en Hongrie 
+- Numéro d’identification fiscale en Hongrie 
 - Numéro de compte permanent Inde 
 - Numéro d’identification unique (Aadhaar) Inde 
 - Numéro de carte d’identité (KTP) Indonésie 
 - Numéro de compte international (IBAN) 
-- Classification internationale des maladie (ICD-10-CM) 
-- Classification internationale des maladie (ICD-9-CM) 
+- Classification internationale des maladies (ICD-10-CM) 
+- Classification internationale des maladies (ICD-9-CM) 
 - Adresse IP 
-- Numéro de permis de conduire Irlande 
-- Numéro de passeport irlande 
+- Numéro de permis de conduire en Irlande 
+- Numéro de passeport en Irlande 
 - Numéro personnel pour le service public irlandais (PPS) 
 - Numéro de compte bancaire Israël 
 - Carte nationale d’identité Israël 
 - Numéro de permis de conduire Italie 
-- Code fiscal italien 
-- Numéro de passeport Italie 
-- Numéro de taxe sur la valeur ajoutée italie 
+- Code fiscal de l’Italie 
+- Numéro de passeport en Italie 
+- Numéro de taxe sur la valeur ajoutée en Italie 
 - Numéro de compte bancaire Japon 
 - Numéro de permis de conduire Japon 
 - Numéro de passeport Japon 
@@ -301,107 +303,107 @@ La liste des types d’informations sensibles pré-utilisés qui seront détect�
 - Numéro d’assurance sociale Japon 
 - Japonais Mon numéro d’entreprise 
 - Japonais Mon numéro personnel 
-- Numéro de carte de résidence (japonais) 
+- Numéro de carte de résidence japonaise 
 - Numéro de permis de conduire letton 
 - Numéro de passeport letton 
 - Code personnel letton 
-- Numéro de permis de conduire lituanien 
-- Numéro de passeport lituanien 
+- Numéro de permis de conduire en Lituanie 
+- Numéro de passeport en Lituanie 
 - Code personnel lituanien 
-- Numéro de permis de conduire De Qu’est-ce que vous avez ? 
-- Numéro d’identification national (personnes physiques) 
-- Numéro d’identification national (personnes non physiques) 
-- Numéro de passeport Dem passport 
-- Numéro de carte d’identité Malaisie 
+- Numéro de permis de conduire du Luxemburg 
+- Numéro d’identification national du Luxembourg (personnes physiques) 
+- Numéro d’identification national du Luxembourg (personnes non naturelles) 
+- Numéro de passeport de Luxemburg 
+- Numéro de carte d’identité malaisienne 
 - Numéro de permis de conduire de Malte 
-- Numéro de carte d’identité Malte 
-- Numéro de passeport de Malte 
+- Numéro de carte d’identité de Malte 
+- Numéro de passeport maltais 
 - Numéro d’ID fiscal de Malte 
 - Numéro de service du citoyen (BSN) néerlandais 
-- Numéro de permis de conduire néerlandais 
-- Numéro de passeport néerlandais 
-- Numéro d’identification fiscale pays-Bas 
-- Numéro de taxe sur la valeur ajoutée des Pays-Bas 
-- Numéro de compte bancaire nouvelle-Zélande 
-- Numéro de permis de conduire nouvelle-Zélande 
-- Numéro de revenu pour les Pays-Bas (Nouvelle-Zélande) 
+- Numéro de permis de conduire aux Pays-Bas 
+- Numéro de passeport des Pays-Bas 
+- Numéro d’identification fiscale aux Pays-Bas 
+- Numéro de taxe sur la valeur ajoutée aux Pays-Bas 
+- Numéro de compte bancaire en Nouvelle-Zélande 
+- Numéro de permis de conduire en Nouvelle-Zélande 
+- Chiffre d’affaires intérieur de la Nouvelle-Zélande 
 - Numéro du Ministère de la santé Nouvelle-Zélande 
-- Numéro de réseau social nouvelle-zélande 
+- Numéro de l’aide sociale néo-zélandaise 
 - Numéro d’identité norvégien 
 - Numéro d’identification multifonction unifié Philippines 
-- Numéro de permis de conduire polonais 
+- Numéro de permis de conduire en Pologne 
 - Carte d'identité polonaise 
 - Numéro d'identification national polonais (PESEL) 
 - Numéro de passeport polonais 
-- Numéro d’identification fiscale polonais 
-- Numéro POLONAIS REGON 
+- Numéro d’identification fiscale en Pologne 
+- Numéro REGON polonais 
 - Numéro de carte de citoyen portugais 
-- Numéro de permis de conduire Portugal 
-- Numéro de passeport portugais 
-- Numéro d’identification fiscale portugais 
-- Numéro de permis de conduire roumain 
-- Numéro de passeport roumain 
-- Code numérique personnel (CNP) roumain 
-- Numéro de passeport russe (national) 
+- Numéro de permis de conduire au Portugal 
+- Numéro de passeport du Portugal 
+- Numéro d’identification fiscale du Portugal 
+- Numéro de permis de conduire en Roumanie 
+- Numéro de passeport en Roumanie 
+- Code numérique personnel roumain (CNP) 
+- Numéro de passeport russe (intérieur) 
 - Numéro de passeport russe (international) 
 - ID national Arabie saoudite 
 - Numéro de carte d’identité d’enregistrement national (NRIC) Singapour 
-- Numéro de permis de conduire slovaque 
-- Numéro de passeport slovaque 
-- Numéro personnel slovaque 
-- Numéro de permis de conduire slovène 
-- Numéro de passeport slovène 
-- Numéro d’identification fiscale slovénien 
-- Numéro de citoyen maître unique de Slovénie 
+- Numéro de permis de conduire en Slovaquie 
+- Numéro de passeport en Slovaquie 
+- Numéro personnel en Slovaquie 
+- Numéro de permis de conduire en Slovénie 
+- Numéro de passeport en Slovénie 
+- Numéro d’identification fiscale en Slovénie 
+- Slovénie Unique Master Citizen Number 
 - Numéro d’identification Afrique du Sud 
 - Matricule de résident Corée du Sud 
-- DNI (Espagne) 
-- Numéro de permis de conduire Espagnol 
-- Numéro de passeport Espagnol 
+- Espagne DNI 
+- Numéro de permis de conduire en Espagne 
+- Numéro de passeport en Espagne 
 - Numéro de sécurité sociale (N° S.S.) espagnol 
-- Numéro d’identification fiscale Espagnol 
-- SQL Server Connection String 
-- Numéro de permis de conduire suédois 
+- Numéro d’identification fiscale en Espagne 
+- chaîne de connexion SQL Server 
+- Numéro de permis de conduire en Suède 
 - ID national suédois 
 - Numéro de passeport suédois 
-- Numéro d’identification fiscale suédois 
+- Numéro d’identification fiscale en Suède 
 - Code SWIFT 
 - Numéro de sécurité sociale suisse AHV 
 - ID national à Taïwan 
 - 	Numéro de passeport Taïwan 
-- Certificat de résident Taïwan (ARC/TARC) 
-- Code d’identification de population thaï 
-- Numéro d’identification nationale turc 
+- Certificat de résident taïwanais (ARC/TARC) 
+- Code d’identification de la population thaïlandaise 
+- Numéro d’identification nationale turque 
 - Numéro de permis de conduire du Royaume-Uni 
 - Numéro de liste électorale du Royaume-Uni 
 - Numéro du service de santé national (NHS) du Royaume-Uni 
 - Numéro d'assurance national (NINO) du Royaume-Uni 
-- Royaume-Uni Numéro de référence du contribuable unique 
+- ROYAUME-UNI. Numéro de référence unique du contribuable 
 - Numéro de passeport États-Unis/Royaume-Uni 
 - Numéro de compte bancaire États-Unis 
 - Numéro de permis de conduire États-Unis 
 - Numéro d’identification fiscale individuel (ITIN) États-Unis 
 - Numéro de sécurité sociale (SSN) États-Unis 
-- Numéro de passeport Ukrainien (national) 
-- Numéro de passeport ukrainien (international) 
+- Numéro de passeport de l’Ukraine (intérieur) 
+- Numéro de passeport de l’Ukraine (international) 
  
-Notez que des types d’informations sensibles personnalisés seront également détectés en plus des types d’informations sensibles pré-personnalisés ci-dessus.
+Notez que les types d’informations sensibles personnalisés seront également détectés en plus des types d’informations sensibles out-of-the-box ci-dessus.
 
-## <a name="support-matrix-for-dlp-policy-tips-across-microsoft-apps"></a>Matrice de prise en charge des conseils de stratégie DLP dans les applications Microsoft
+## <a name="support-matrix-for-dlp-policy-tips-across-microsoft-apps"></a>Tableau de prise en charge pour les conseils de stratégie DLP dans les applications Microsoft
 
 |**Application et plateforme**|**Prise en charge des conseils de stratégie DLP**|**Types d’informations sensibles pris en charge**|**Prédicats et actions pris en charge**|**Comments**|
 |:--|:--|:--|:--|:--|
-|**Outlook sur le web**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|sous-ensemble||
-|**Outlook Win32 (ver. 2105 build 14026.20000 et canal semi-annuel ver. 2102 build 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|sous-ensemble|sous-ensemble|Voir outlook [2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) et les ultérieures prend en charge l’affichage de conseils de stratégie uniquement pour certaines conditions et exceptions, et la prise en charge [d’Outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) et des applications Office sur bureau affichant des conseils de stratégie pour certains types d’informations sensibles uniquement pour plus d’informations sur la prise en charge des types d’informations sensibles et des conditions et actions DLP prises en charge pour afficher les conseils de stratégie DLP sur Outlook Win32.|
-|**Outlook Mobile (iOS, Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Les conseils de stratégie DLP ne sont pas pris en charge sur Outlook Mobile|
-|**Client Web SharePoint Online/OneDrive Entreprise**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|tous les prédicats et actions SPO/ODB dans la DLP ;||
-|**Client Win32 SharePoint/ OneDrive Entreprise**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Les conseils de stratégie DLP ne sont pas pris en charge sur les applications clientes de bureau SharePoint ou OneDrive|
-|**Word, Excel, PowerPoint Web Client**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|tous les prédicats et actions SPO/ODB dans la DLP ;|Le conseil de stratégie DLP est pris en charge si le document est hébergé sur SPO ou l’application web ODB et que la stratégie DLP est déjà estampillée.|
-|**Word, Excel, PowerPoint Mobile Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Les conseils de stratégie DLP ne sont pas pris en charge dans les applications mobiles pour Office.|
-|**Teams Web/ Teams Desktop/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|Tous les prédicats Teams dans la stratégie DLP|Les conseils de stratégie s’afficheront lorsqu’un message est marqué comme « Ce message a été marqué. Que puis-je faire ? Lorsque vous cliquez sur le lien, l’utilisateur peut passer en revue les types d’informations sensibles détectés et remplacer ou signaler un problème si autorisé par l’administrateur. Notez qu’aucun conseil de stratégie n’est affiché pour les fichiers. Lorsque le destinataire tente d’accéder au document, il se peut qu’il obtienne un accès refusé s’il n’est pas autorisé.|
-|**Appareils de point de terminaison Win32**|:::image type="icon" source="../media/rightmrk.png" border="false":::|sous-ensemble|Tous les prédicats et actions DLP de point de terminaison dans la stratégie DLP|Voir Protection [contre la perte de données sur le point de terminaison prend en charge les conseils de stratégie pour certains types d’informations sensibles uniquement](#data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types)|
-|**Appareils macOS (préversion)**|conseils par défaut uniquement|all|sous-ensemble|Les stratégies de protection contre la perte de données sont appliquées sur les appareils macOS. Les conseils de stratégie personnalisée ne sont pas pris en charge.|
+|**Outlook sur le web**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Tous|Sous-ensemble||
+|**Outlook Win32 (version 2105 14026.20000 et canal semi-annuel ver. 2102 build 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Sous-ensemble|Sous-ensemble|Consultez [Outlook 2013 et versions ultérieures pour afficher des conseils de stratégie uniquement pour certaines conditions et exceptions](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions), ainsi que [Outlook 2013 et versions ultérieures et les applications Office sur le Bureau, montrant des conseils de stratégie pour certains types d’informations sensibles uniquement](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) pour plus d’informations sur la prise en charge des types d’informations sensibles, ainsi que les conditions et actions DLP prises en charge pour afficher des conseils de stratégie DLP sur Outlook  Win32.|
+|**Outlook Mobile (iOS, Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Les conseils de stratégie DLP ne sont pas pris en charge sur Outlook mobile|
+|**client web SharePoint Online/OneDrive Entreprise**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Tous|tous les prédicats et actions SPO/ODB dans DLP||
+|**SharePoint client Win32/OneDrive Entreprise Win32**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Les conseils de stratégie DLP ne sont pas pris en charge sur les applications clientes de bureau SharePoint ou OneDrive|
+|**Client Web Word, Excel PowerPoint**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Tous|tous les prédicats et actions SPO/ODB dans DLP|L’info-bulle de stratégie DLP est prise en charge si le document est hébergé sur l’application web SPO ou ODB et que la stratégie DLP est déjà marquée.|
+|**Word, Excel, client PowerPoint Mobile**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Les conseils de stratégie DLP ne sont pas pris en charge dans les applications mobiles pour Office.|
+|**Teams Web/ Teams Desktop/ Teams Mobile/ Mac Teams**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Tous|tous les prédicats Teams dans la stratégie DLP|Les conseils de stratégie s’affichent lorsqu’un message est marqué comme « Ce message a été marqué. Que puis-je faire ? Lorsque vous cliquez sur le lien, l’utilisateur peut passer en revue les types d’informations sensibles détectés et remplacer ou signaler un problème si autorisé par l’administrateur. Notez qu’aucun conseil de stratégie n’est affiché pour les fichiers. Lorsque le destinataire tente d’accéder au document, il peut être refusé s’il n’est pas autorisé.|
+|**Appareils de point de terminaison Win32**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Sous-ensemble|tous les prédicats et actions DLP de point de terminaison dans la stratégie DLP|Consultez [La protection contre la perte de données sur le point de terminaison prend en charge les conseils de stratégie pour certains types d’informations sensibles uniquement](#data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types)|
+|**appareils macOS**|conseils par défaut uniquement|Tous|Sous-ensemble|Les stratégies de protection contre la perte de données sont applicables sur les appareils macOS. Les conseils de stratégie personnalisés ne sont pas pris en charge.|
 |**Applications cloud tierces**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Les conseils de stratégie de protection contre la perte de données ne sont pas pris en charge sur les applications cloud tierces|
-|**Sur place**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none||
-|**Word, Excel, PowerPoint Win32 Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|sous-ensemble|sous-ensemble|Consultez [outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) et version ultérieure et la prise en charge des applications Office sur bureau affichant des conseils de stratégie pour certains types d’informations sensibles uniquement pour la liste des types d’informations sensibles pris en charge</br></br>Les conseils de stratégie pour les applications clientes WXP fonctionnent pour les documents stockés sur des sites SharePoint Online ou OneDrive Entreprise pour toutes les stratégies DLP qui ont exactement les conditions ou actions ci-dessous ou un sous-ensemble de conditions ou d’actions dans la stratégie DLP :</br> <ul><li>Le contenu contient des types d’informations sensibles</li><li>Étendue d’accès (le contenu est partagé en interne/en externe)</li><li>Avertir l’utilisateur (conseils de stratégie/notifications utilisateur)</li><li>Bloquer tout le monde</li><li>Rapports d’incident</li></ul></br> Si une autre condition ou action est présente, le conseil de stratégie DLP pour cette stratégie n’apparaîtra pas dans les applications de bureau de Word, Excel ou PowerPoint.</br>Voir [les conseils de stratégie dans Excel, PowerPoint et Word](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) pour plus d’informations|
+|**Local**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none||
+|**Client Word, Excel PowerPoint Win32**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Sous-ensemble|Sous-ensemble|Consultez [Outlook 2013 et versions ultérieures et Office la prise en charge des applications sur le Bureau, affichant des conseils de stratégie pour certains types d’informations sensibles uniquement](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) pour la liste des types d’informations sensibles pris en charge</br></br>Les conseils de stratégie pour les applications clientes WXP fonctionnent pour les documents stockés sur SharePoint Online ou OneDrive Entreprise Sites pour toutes les stratégies DLP qui ont exactement les conditions ou les actions ci-dessous ou un sous-ensemble dans la stratégie DLP :</br> <ul><li>Le contenu contient des types d’informations sensibles</li><li>Étendue d’accès (le contenu est partagé en interne/externe)</li><li>Notifier l’utilisateur (conseils de stratégie/notifications utilisateur)</li><li>Bloquer tout le monde</li><li>Rapports d’incident</li></ul></br> Si une autre condition ou action est présente, le conseil de stratégie DLP pour cette stratégie n’apparaît pas dans les applications de bureau de Word, Excel ou PowerPoint.</br>Pour plus [d’informations, consultez les conseils de stratégie dans Excel, PowerPoint et Word](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word)|
 ||||||

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilisez les stratégies d’audit et d’alerte et les demandes de personnes concernées pour surveiller et répondre aux incidents de données personnelles.
-ms.openlocfilehash: 5f4dd6a59ae361cbef042bfc3587203b34620746
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 730eb42fdf6aed66f5beac69621981848ffa6510
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945338"
+ms.locfileid: "64953324"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Surveiller et répondre aux incidents de confidentialité des données dans votre organisation
 
@@ -67,7 +67,7 @@ Consultez ces articles pour configurer l’audit, l’audit avancé et les strat
 
 - [Audit unifié](../compliance/search-the-audit-log-in-security-and-compliance.md)
 - [Audit de boîte aux lettres](../compliance/enable-mailbox-auditing.md)
-- [Audit avancé](../compliance/advanced-audit.md)
+- [Audit (Premium)](../compliance/advanced-audit.md)
 - [Stratégies d’alerte](../compliance/alert-policies.md)
 
 ## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes de personnes concernées pour le RGPD et le CCPA

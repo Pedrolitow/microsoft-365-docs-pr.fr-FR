@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilisez eDiscovery et les outils de recherche pour gérer et répondre à un incident de débordement de données dans votre organisation.
-ms.openlocfilehash: e9e81ae81c344bfc8773174c8650a1808faddd5e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 875c63f264e750603c4ad8a0b5bf1df2b6e45217
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948064"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993225"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Série de solutions eDiscovery : scénario de débordement de données - Recherche et vidage
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
  **Qu’est-ce que le déversement de données et pourquoi devriez-vous vous en soucier ?** Le déversement de données se fait lorsqu’un document confidentiel est libéré dans un environnement non approuvé. Lorsqu’un incident de débordement de données est détecté, il est important d’évaluer rapidement la taille et l’emplacement du déversement, d’examiner les activités des utilisateurs autour de celui-ci, puis de vider définitivement les données qui ont été renversées du système.
   
@@ -183,7 +185,7 @@ Gardez à l’esprit les limites suivantes lors de la suppression des données r
 - Un maximum de 10 éléments par boîte aux lettres peuvent être supprimés à la fois. Sachant que la fonction de recherche et suppression de messages est censée être un outil de réponse aux incidents, cette limite permet de s’assurer que les messages sont rapidement supprimés des boîtes aux lettres. Cette fonctionnalité n’est pas conçue pour nettoyer les boîtes aux lettres des utilisateurs.
 
 > [!IMPORTANT]
-> Les éléments de courrier dans un ensemble de révisions dans un cas eDiscovery (Premium) ne peuvent pas être supprimés à l’aide des procédures décrites dans cet article. Cela est dû au fait que les éléments d’un jeu de révision sont des copies d’éléments du service en direct qui sont copiés et stockés à un emplacement stockage Azure. Cela signifie qu’elles ne seront pas retournées par une recherche de contenu que vous créez à l’étape 3. Pour supprimer des éléments d’un jeu de révision, vous devez supprimer le cas eDiscovery (Premium) qui contient le jeu de révisions. Pour plus d’informations, consultez [Fermer ou supprimer un cas eDiscovery (Premium).](close-or-delete-case.md)
+> Les éléments de courrier dans un jeu à réviser dans un cas eDiscovery (Premium) ne peuvent pas être supprimés à l’aide des procédures décrites dans cet article. Cela est dû au fait que les éléments d’un jeu de révision sont des copies d’éléments du service en direct qui sont copiés et stockés à un emplacement stockage Azure. Cela signifie qu’elles ne seront pas retournées par une recherche de contenu que vous créez à l’étape 3. Pour supprimer des éléments d’un jeu à réviser, vous devez supprimer le cas eDiscovery (Premium) qui contient le jeu à réviser. Pour plus d’informations, consultez [Fermer ou supprimer un cas eDiscovery (Premium)](close-or-delete-case.md).
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Étape 8 : Vérifier, fournir une preuve de suppression et auditer
 
@@ -205,7 +207,7 @@ Si les mots clés de la requête de recherche que vous avez créée et utilisée
 
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Audit du processus d’examen des déversements de données
 
-Vous pouvez rechercher dans le journal d’audit les activités eDiscovery qui ont été effectuées pendant l’enquête. Vous pouvez également rechercher dans le journal d’audit pour renvoyer les enregistrements d’audit de la commande **New-ComplianceSearchAction -Purge** que vous avez exécutée à l’étape 7 pour supprimer les données renversées. Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Vous pouvez rechercher dans le journal d’audit les activités eDiscovery qui ont été effectuées pendant l’enquête. Vous pouvez également rechercher dans le journal d’audit pour renvoyer les enregistrements d’audit de la commande **New-ComplianceSearchAction -Purge** que vous avez exécutée à l’étape 7 pour supprimer les données renversées. Pour plus d’informations, voir :
 
 - [Rechercher le journal d’audit](search-the-audit-log-in-security-and-compliance.md)
 

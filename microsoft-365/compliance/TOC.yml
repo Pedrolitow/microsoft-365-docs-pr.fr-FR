@@ -1,24 +1,24 @@
-- name: Conformité Microsoft 365
+- name: Microsoft Purview
   href: index.yml
-- name: Nouveautés dans la conformité Microsoft 365
+- name: Nouveautés de Microsoft Purview
   href: whats-new.md
 - name: Essais de conformité
   items:
-    - name: À propos de l’essai gratuit pour la conformité de Microsoft 365
+    - name: À propos de l’essai gratuit pour Microsoft Purview
       href: compliance-easy-trials.md
-    - name: À propos de l’essai gratuit pour les évaluations premium du Gestionnaire de conformité Microsoft
+    - name: À propos de l’essai gratuit pour les évaluations Premium du Gestionnaire de conformité Microsoft Purview
       href: compliance-easy-trials-compliance-manager-assessments.md
 - name: Prise en main
   items:
-    - name: Tâches rapides pour la prise en main de la conformité
+    - name: Tâches rapides pour la prise en main de Microsoft Purview
       href: compliance-quick-tasks.md
-    - name: Catalogue de solutions Microsoft 365
+    - name: Catalogue de solutions Microsoft Purview
       href: microsoft-365-solution-catalog.md
-    - name: Centre de conformité Microsoft 365
+    - name: Portail de conformité Microsoft Purview
       href: microsoft-365-compliance-center.md
-    - name: Autorisations dans le Centre de conformité Microsoft 365
+    - name: Autorisations dans le portail de conformité Microsoft Purview
       href: microsoft-365-compliance-center-permissions.md
-    - name: Redirection des utilisateurs vers le Centre de conformité Microsoft 365
+    - name: Redirection des utilisateurs vers le portail de conformité Microsoft Purview
       href: microsoft-365-compliance-center-redirection.md
     - name: Utilisez votre abonnement gratuit à Azure Active Directory
       href: use-your-free-azure-ad-subscription-in-office-365.md
@@ -44,15 +44,15 @@
           href: device-onboarding-vdi.md
     - name: Intégrer les appareils macOS (préversion)
       items:
-        - name: Intégration des appareils macOS dans la vue d'ensemble de Microsoft 365 (aperçu)
+        - name: Vue d’ensemble de l’intégration des appareils macOS dans Microsoft 365
           href: device-onboarding-macos-overview.md
-        - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de Microsoft Intune (aperçu)
+        - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de Microsoft Intune
           href: device-onboarding-offboarding-macos-intune.md
-        - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide d'Intune pour les clients de Microsoft Defender pour point de terminaison (aperçu)
+        - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide d'Intune pour les clients de Microsoft Defender pour point de terminaison
           href: device-onboarding-offboarding-macos-intune-mde.md
-        - name: Embarquer et débarquer des appareils macOS dans des solutions de conformité à l'aide de JAMF Pro (aperçu)
+        - name: Embarquer et débarquer des appareils macOS dans des solutions de conformité à l'aide de JAMF Pro
           href: device-onboarding-offboarding-macos-jamfpro.md
-        - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de JAMF Pro pour les clients de Microsoft Defender pour point de terminaison (aperçu)
+        - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de JAMF Pro pour les clients de Microsoft Defender pour point de terminaison
           href: device-onboarding-offboarding-macos-jamfpro-mde.md
 - name: Gérer les connecteurs pour les données tierces
   items:
@@ -216,7 +216,7 @@
       href: use-content-search-to-search-third-party-data-that-was-imported.md
 - name: Gérer les risques internes
   items:
-    - name: Solutions de risque interne Microsoft 365
+    - name: Solutions de risque interne Microsoft Purview
       href: insider-risk-solution-overview.md
     - name: Conformité des communications
       items:
@@ -304,9 +304,9 @@
   items:
     - name: 'Connaissez vos données, protégez-les et évitez les pertes de données'
       href: information-protection.md
-    - name: Déployer une solution Microsoft Information Protection (MIP)
+    - name: Déployer une solution de protection des informations
       href: information-protection-solution.md
-    - name: Étiquettes et stratégies par défaut pour Microsoft Information Protection
+    - name: Étiquettes et stratégies par défaut pour protéger vos données
       href: mip-easy-trials.md
     - name: Types d’informations sensibles
       items:
@@ -396,7 +396,7 @@
       items:
         - name: En savoir plus sur les étiquettes de niveau de confidentialité
           href: sensitivity-labels.md
-        - name: Pourquoi choisir l'étiquetage intégré MIP pour les applications Office ?
+        - name: Pourquoi choisir l'étiquetage intégré pour les applications Office
           href: sensitivity-labels-aip.md
         - name: Prise en main des étiquettes de confidentialité
           href: get-started-with-sensitivity-labels.md
@@ -428,7 +428,7 @@
           href: office-365-service-encryption.md
         - name: Clé client
           items:
-            - name: Clé client dans Microsoft 365
+            - name: Chiffrement de service avec la clé client Microsoft Purview
               href: customer-key-overview.md
             - name: Configurer la clé client Microsoft 365
               href: customer-key-set-up.md
@@ -441,27 +441,27 @@
         - name: Chiffrement du courrier électronique
           href: email-encryption.md
           items:
-            - name: Chiffrement de messages Office 365 (OME)
+            - name: Cryptage des messages
               href: ome.md
-            - name: Configurer les nouvelles fonctionnalités de chiffrement de messages Office 365
+            - name: Configurer le chiffrement des messages Microsoft Purview
               href: set-up-new-message-encryption-capabilities.md
-            - name: Définir des règles de flux de courrier pour le chiffrement du courriers dans Office 365
+            - name: Définir des règles de flux de courrier pour chiffrer les courriers électroniques
               href: define-mail-flow-rules-to-encrypt-email.md
             - name: Ajouter la marque de votre organisation à vos messages chiffrés
               href: add-your-organization-brand-to-encrypted-messages.md
-            - name: Créer une stratégie de type d’informations sensibles pour votre entreprise à l’aide du chiffrement de messages Office 365
+            - name: Créer une stratégie de type d’informations sensibles pour votre entreprise à l’aide du chiffrement de messages Microsoft Purview
               href: ome-sensitive-info-types.md
-            - name: Gérer le chiffrement de messages Office 365
+            - name: Gérer le cryptage des messages
               href: manage-office-365-message-encryption.md
-            - name: Chiffrement avancé de messages Office 365
+            - name: Chiffrement avancé de messages
               href: ome-advanced-message-encryption.md
-            - name: Définir une date d’expiration pour les e-mails chiffrés par le chiffrement avancé de messages Office 365
+            - name: Définir une date d’expiration pour les e-mails chiffrés par le chiffrement avancé de messages Microsoft Purview
               href: ome-advanced-expiration.md
-            - name: Révoquer les e-mails chiffrés par le chiffrement avancé de messages Office 365
+            - name: 'Exemple de scénario : révoquer les e-mails chiffrés avec le chiffrement avancé des messages Microsoft Purview'
               href: revoke-ome-encrypted-mail.md
-            - name: Comparez les versions de OME
+            - name: Comparer les versions de chiffrement de messages
               href: ome-version-comparison.md
-            - name: FAQ sur le chiffrement de messages Office 365
+            - name: FAQ sur le chiffrement des messages
               href: ome-faq.yml
             - name: Procédure de sécurisation des informations confidentielles dans votre courrier électronique dans Exchange Online
               href: exchange-online-secures-email-secrets.md
@@ -501,9 +501,9 @@
               href: endpoint-dlp-learn-about.md
             - name: En savoir plus sur la stratégie de protection par défaut contre la perte de données dans Microsoft Teams (préviersion)
               href: dlp-teams-default-policy.md
-            - name: 'En savoir plus sur le scanner local de prévention des pertes de données Microsoft 365 '
+            - name: En savoir plus sur le scanner local de prévention des pertes de données
               href: dlp-on-premises-scanner-learn.md
-            - name: En savoir plus sur l’extension de la conformité Microsoft.
+            - name: En savoir plus sur l’extension Microsoft Purview
               href: dlp-chrome-learn-about.md
             - name: En savoir plus sur le tableau de bord des alertes de protection contre la perte de données
               href: dlp-alerts-dashboard-learn.md
@@ -525,13 +525,13 @@
               href: create-a-dlp-policy-from-a-template.md
             - name: 'Création, test et réglage d’une stratégie DLP'
               href: create-test-tune-dlp-policy.md
-            - name: Prise en main du scanner local de protection contre la perte de données Microsoft 365
+            - name: Prise en main du scanner local de protection contre la perte de données
               href: dlp-on-premises-scanner-get-started.md
             - name: Prise en main des points de terminaison de protection contre la perte de données
               href: endpoint-dlp-getting-started.md
             - name: Configurer les paramètres de proxy d’appareil et de connexion Internet pour Information Protection
               href: device-onboarding-configure-proxy.md
-            - name: Prise en main de l’extension de la conformité Microsoft
+            - name: Prise en main de l’extension Microsoft Purview
               href: dlp-chrome-get-started.md
             - name: Prise en main du tableau de bord des alertes de protection contre la perte de données
               href: dlp-alerts-dashboard-get-started.md
@@ -543,7 +543,7 @@
               href: dlp-microsoft-teams.md
             - name: Utilisation de la protection contre la perte de données de point de terminaison
               href: endpoint-dlp-using.md
-            - name: Utiliser le scanner local de prévention des pertes de données Microsoft 365
+            - name: Utiliser le scanner local de prévention des pertes de données
               href: dlp-on-premises-scanner-use.md
             - name: Utilisation des notifications et des conseils de stratégie dans les stratégies DLP
               href: use-notifications-and-policy-tips.md
@@ -569,10 +569,10 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Référence des conseils de stratégie de prévention contre la perte de données
               href: dlp-policy-tips-reference.md
-- name: Gérer la gouvernance des informations et les enregistrements
+- name: Gérer les enregistrements et le cycle de vie des données
   items:
     - name: Gouvernez vos données
-      href: manage-information-governance.md
+      href: manage-data-governance.md
     - name: Comprendre la conservation et la suppression des données
       items:
         - name: En savoir plus sur les stratégies de rétention et les étiquettes de rétention
@@ -593,16 +593,16 @@
           href: retention-settings.md
         - name: Limites de rétention et de suppression
           href: retention-limits.md
-    - name: Gouvernance des informations
+    - name: Gestion du cycle de vie des données
       items:
-        - name: En savoir plus sur la gouvernance des informations
-          href: information-governance.md
-        - name: Démarrage avec la gouvernance des informations
-          href: get-started-with-information-governance.md
+        - name: En savoir plus sur la gestion du cycle de vie des données
+          href: data-lifecycle-management.md
+        - name: Prise en main de la gestion du cycle de vie des données
+          href: get-started-with-data-lifecycle-management.md
         - name: Créer des stratégies de rétention
           href: create-retention-policies.md
         - name: Utiliser des étiquettes de rétention pour les exceptions
-          href: create-retention-labels-information-governance.md
+          href: create-retention-labels-data-lifecycle-management.md
         - name: Archiver les données de boîte aux lettres
           items:
             - name: En savoir plus sur les boîtes aux lettres d’archivage
@@ -673,7 +673,7 @@
           href: disposition.md
 - name: Gestion de l’eDiscovery
   items:
-    - name: Solutions eDiscovery Microsoft 365
+    - name: Solutions eDiscovery Microsoft Purview
       href: ediscovery.md
     - name: Recherche de contenu
       items:
@@ -742,9 +742,9 @@
               href: create-report-on-and-delete-multiple-content-searches.md
             - name: Cloner une recherche
               href: clone-a-content-search.md
-    - name: Core eDiscovery
+    - name: eDiscovery (Standard)
       items:
-        - name: Prise en main de la découverte électronique de base
+        - name: Prise en main d’eDiscovery (Standard)
           href: get-started-core-ediscovery.md
         - name: Créer des conservations eDiscovery
           href: create-ediscovery-holds.md
@@ -754,7 +754,7 @@
           href: export-content-in-core-ediscovery.md
         - name: 'Fermer, rouvrir et supprimer un cas'
           href: close-reopen-delete-core-ediscovery-cases.md
-        - name: Référence de Core eDiscovery
+        - name: Référence eDiscovery (Standard)
           items:
             - name: Limites de recherche de découverte électronique
               href: limits-for-content-search.md
@@ -800,19 +800,19 @@
               href: configure-edge-to-export-search-results.md
             - name: Rechercher des activités eDiscovery dans le journal d’audit
               href: search-for-ediscovery-activities-in-the-audit-log.md
-    - name: Advanced eDiscovery
+    - name: eDiscovery (Premium)
       items:
-        - name: Présentation
+        - name: Vue d’ensemble
           href: overview-ediscovery-20.md
-        - name: Configurer Advanced eDiscovery
+        - name: Configurer eDiscovery (Premium)
           href: get-started-with-advanced-ediscovery.md
-        - name: Créer des cas eDiscovery avancés
+        - name: Création de cas eDiscovery (Premium)
           items:
             - name: Créer et gérer un cas
               href: create-and-manage-advanced-ediscoveryv2-case.md
             - name: Utiliser le nouveau format de cas
               href: advanced-ediscovery-new-case-format.md
-        - name: "Flux de travail Advanced\_eDiscovery pour le contenu Teams"
+        - name: Flux de travail eDiscovery (Premium) pour le contenu Teams
           href: teams-workflow-in-advanced-ediscovery.md
         - name: Gérer des sources de données consignataires et non consignataires
           href: managing-custodians.md
@@ -933,9 +933,9 @@
               href: add-or-remove-members-from-a-case-in-advanced-ediscovery.md
             - name: Configurer les paramètres de recherche et d’analyse
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
-        - name: Référence d’Advanced eDiscovery
+        - name: Référence eDiscovery (Premium)
           items:
-            - name: Limites d’Advanced eDiscovery
+            - name: Limites eDiscovery (Premium)
               href: limits-ediscovery20.md
             - name: Types de fichiers pris en charge
               href: supported-filetypes-ediscovery20.md
@@ -985,11 +985,11 @@
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Gérer les stratégies d’audit et d’alerte
   items:
-    - name: Solutions d’audit Microsoft 365
+    - name: Solutions d’audit Microsoft Purview
       href: auditing-solutions-overview.md
-    - name: Audit de base
+    - name: Audit (Standard)
       items:
-        - name: Configurer l'audit de base
+        - name: Configurer l'audit (Standard)
           href: set-up-basic-audit.md
         - name: Effectuer une recherche dans le journal d’audit
           href: search-the-audit-log-in-security-and-compliance.md
@@ -1013,15 +1013,15 @@
               href: /office/office-365-management-api/office-365-management-activity-api-schema
             - name: FAQ sur l'API Activité de gestion Office 365 et résolution des problèmes
               href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
-    - name: Audit avancé
+    - name: Audit (Premium)
       items:
-        - name: Présentation de l’audit avancé
+        - name: Prise en main de l’audit (Premium)
           href: advanced-audit.md
-        - name: Configurer l’audit avancé
+        - name: Configuration de l’audit (Premium)
           href: set-up-advanced-audit.md
         - name: Gérer les stratégies de rétention du journal d'audit
           href: audit-log-retention-policies.md
-        - name: Utiliser l’audit avancé pour analyser des comptes compromis
+        - name: Utiliser l’audit (Premium) pour analyser des comptes compromis
           href: mailitemsaccessed-forensics-investigations.md
     - name: Audit de boîte aux lettres
       href: enable-mailbox-auditing.md

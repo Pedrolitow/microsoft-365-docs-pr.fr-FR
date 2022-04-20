@@ -18,12 +18,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez la différence entre la collaboration invité et les canaux partagés dans Teams et comment choisir celui à utiliser.
-ms.openlocfilehash: 85eac4fb8315947e2bb8e088d31bb25a2cdeef5e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c1cf57aa2125638d9155c209d85360a5154b3606
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945256"
+ms.locfileid: "64953364"
 ---
 # <a name="plan-external-collaboration-with-channel-conversations-file-collaboration-and-shared-apps"></a>Planifier une collaboration externe avec des conversations de canal, une collaboration de fichiers et des applications partagées
 
@@ -51,7 +51,7 @@ Cet article aborde la quatrième option, la collaboration de groupe avec les con
 
 Lorsque vous collaborez dans une équipe avec des personnes extérieures à votre organisation, il existe deux options permettant à ces personnes d’accéder aux ressources que vous partagez avec elles.
 
-**Partage d’invités**
+### <a name="guest-sharing"></a>Partage d’invités
 
 Le partage d’invités utilise Azure AD collaboration B2B pour permettre le partage et la collaboration avec des personnes extérieures à votre organisation en ajoutant un compte invité dans Azure AD pour chaque personne. Les comptes invités peuvent être utilisés pour les éléments suivants :
 
@@ -60,7 +60,7 @@ Le partage d’invités utilise Azure AD collaboration B2B pour permettre le par
 
 Les invités d’une équipe ont des fonctionnalités similaires aux membres réguliers de l’équipe.
 
-**Participants externes dans les canaux partagés**
+### <a name="external-participants-in-shared-channels"></a>Participants externes dans les canaux partagés
 
 Les participants externes accèdent aux ressources partagées de votre organisation à l’aide de leur propre identité Azure AD ou Microsoft 365. Cela est activé par Azure AD connexion directe B2B via une relation organisationnelle configurée par les deux organisations. Les comptes invités ne sont pas utilisés dans cette relation.
 
@@ -81,14 +81,15 @@ Le tableau suivant décrit les expériences disponibles en fonction du type de c
 |Utiliser des canaux privés|v|v|N|
 |Compte dans votre répertoire|v|v|N|
 |Révisions accès|v|v|v|
-            
+
 ## <a name="planning-considerations"></a>Considérations relatives à la planification
 
-La plupart des organisations utilisent à la fois le partage d’invités et les canaux partagés avec des participants externes. 
+La plupart des organisations utilisent à la fois le partage d’invités et les canaux partagés avec des participants externes.
 
 Le partage d’invités est activé par défaut dans Azure AD et dans Microsoft 365 (Teams, Groupes Microsoft 365 et SharePoint). Cela permet aux utilisateurs d’inviter des invités à des équipes et des sites et de partager des fichiers avec eux sans avoir à demander de l’aide à l’informatique.
 
 Vous devez utiliser le partage d’invités si :
+
 - Vous souhaitez inviter des personnes extérieures à votre organisation à l’équipe plutôt qu’à des canaux individuels
 - Vous souhaitez partager des fichiers ou des dossiers dans un canal avec des personnes extérieures à votre organisation qui ne sont pas dans le canal
 - Vous souhaitez collaborer avec des personnes extérieures à votre organisation qui n’ont pas de compte professionnel ou scolaire.
@@ -104,51 +105,50 @@ Si vous envisagez d’utiliser des canaux partagés avec d’autres organisation
 
 Les canaux partagés sont intégrés aux fonctionnalités de Microsoft Purview.
 
-##### <a name="communications-compliance"></a>Conformité des communications
+### <a name="communications-compliance"></a>Conformité des communications
 
 Les administrateurs peuvent définir des stratégies pour surveiller le contenu de tous les utilisateurs du canal. Tous les messages contenus dans les canaux, y compris les canaux partagés, sont couverts par les [stratégies de conformité des communications](/microsoft-365/compliance/communication-compliance). Les canaux partagés héritent de la stratégie de l’organisation hôte.
 
-##### <a name="conditional-access"></a>Accès conditionnel
+### <a name="conditional-access"></a>Accès conditionnel
 
 Les stratégies [d’accès conditionnel](/azure/active-directory/conditional-access/overview) de l’organisation hôte sont appliquées aux participants externes, y compris aux utilisateurs de connexion directe B2B. Les stratégies de l’organisation externe ne sont pas utilisées. Les types suivants de stratégies d’accès conditionnel sont pris en charge avec les canaux partagés :
 
 - Stratégies étendues à tous les invités, participants externes et applications cloud SharePoint Online.
-- Accordez des contrôles Access qui nécessitent l’authentification multifacteur, un appareil conforme ou un appareil hybride Azure AD joint. 
+- Accordez des contrôles Access qui nécessitent l’authentification multifacteur, un appareil conforme ou un appareil hybride Azure AD joint.
 
 Les stratégies basées sur IP sont prises en charge au niveau du fichier SharePoint. Ainsi, un participant externe peut accéder au canal partagé à partir d’un emplacement restreint, mais être bloqué lors de la tentative d’ouverture d’un fichier.
 
-##### <a name="data-loss-prevention-dlp"></a>Protection contre la perte de données (DLP)
+### <a name="data-loss-prevention-dlp"></a>Protection contre la perte de données (DLP)
 
 Les administrateurs peuvent appliquer des stratégies [DLP Microsoft Purview](/microsoft-365/compliance/dlp-policy-design) à une équipe où tous les canaux, y compris les canaux partagés, héritent de la stratégie. Les canaux partagés héritent de la stratégie de l’organisation hôte.
 
-##### <a name="retention-policy"></a>Stratégie de rétention
+### <a name="retention-policy"></a>Stratégie de rétention
 
 Les administrateurs peuvent appliquer une [stratégie de rétention](/microsoft-365/compliance/retention) sur une équipe où tous les canaux, y compris les canaux partagés, héritent de la stratégie de rétention. Les canaux partagés héritent de la stratégie de l’équipe parente.
 
-##### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
+### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
 [Les étiquettes de confidentialité](/microsoft-365/compliance/sensitivity-labels) disponibles dans l’organisation hôte sont les seules étiquettes qui peuvent être appliquées aux documents dans un site de canal partagé. Un fichier chiffré par une étiquette de confidentialité ne peut pas être ouvert par des participants externes. L’étiquetage automatique n’est pas utilisé.
 
 Les canaux partagés et leurs sites SharePoint associés héritent de l’étiquette de l’équipe parente.
 
-##### <a name="information-barriers"></a>Obstacles aux informations
+### <a name="information-barriers"></a>Obstacles aux informations
 
 Les utilisateurs qui ne sont pas autorisés à communiquer par [stratégies d’obstacle à l’information](/microsoftteams/information-barriers-in-teams) ne peuvent pas faire partie du canal partagé. Les stratégies d’obstacle à l’information ne sont efficaces que pour les utilisateurs de l’organisation hôte. Si les utilisateurs sont des participants externes dans le canal partagé d’une autre organisation, les stratégies de barrière à l’information ne s’appliquent pas.
 
-##### <a name="ediscovery"></a>eDiscovery
+### <a name="ediscovery"></a>eDiscovery
 
 Les administrateurs peuvent effectuer des recherches pour tous les utilisateurs du canal. Tous les canaux, y compris le canal partagé, sont détectables. Toutes les données de message dans le canal, quelle que soit la personne qui a ajouté les données, sont détectables par l’administrateur de conformité.
 
-##### <a name="legal-hold"></a>Conservation légale
+### <a name="legal-hold"></a>Conservation légale
 
 Les administrateurs peuvent placer les membres du canal uniquement de l’organisation hôte qui ne font pas partie de l’équipe en attente. Ils peuvent également [mettre toute l’équipe en attente](/MicrosoftTeams/legal-hold). Les administrateurs ne peuvent pas mettre un participant externe en attente.
 
-##### <a name="audit-logs"></a>Journaux d'audit
+### <a name="audit-logs"></a>Journaux d'audit
 
 Toutes les actions effectuées pour les [événements d’audit existants](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log) sont auditées dans des canaux partagés.
 
-
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 [Introduction à la collaboration de fichiers dans Microsoft 365](/sharepoint/intro-to-file-collaboration)
 

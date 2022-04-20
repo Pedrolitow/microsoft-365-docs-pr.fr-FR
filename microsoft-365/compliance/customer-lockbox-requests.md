@@ -18,20 +18,22 @@ search.appverid:
 - MOE150
 ms.custom: admindeeplinkMAC
 description: Découvrez les demandes Customer Lockbox qui vous permettent de contrôler la façon dont un ingénieur du support Technique Microsoft peut accéder à vos données lorsque vous rencontrez un problème.
-ms.openlocfilehash: 8f875f485830d59af733c6c76a5a3d297bedb2cc
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: cf9a2a6d682ca87e97986389f640a536775ca014
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759940"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953823"
 ---
-# <a name="customer-lockbox-in-office-365"></a>Customer Lockbox dans Office 365
+# <a name="microsoft-purview-customer-lockbox"></a>Microsoft Purview Customer Lockbox
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cet article fournit des conseils de déploiement et de configuration pour Customer Lockbox. Customer Lockbox prend en charge les demandes d’accès aux données dans Exchange Online, SharePoint Online, OneDrive Entreprise et Teams. Pour recommander la prise en charge d’autres services, envoyez une demande sur le [portail de commentaires](https://feedbackportal.microsoft.com).
 
-Pour voir les options de licence permettant à vos utilisateurs de bénéficier de Microsoft 365 offres de conformité, consultez les [conseils de licence Microsoft 365 pour la sécurité & la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Pour voir les options de licence permettant à vos utilisateurs de tirer parti des offres Microsoft Purview, consultez les [Microsoft 365 conseils de gestion des licences pour la sécurité & la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-Customer Lockbox garantit que Microsoft ne peut pas accéder à votre contenu pour effectuer des opérations de service sans votre approbation explicite. Customer Lockbox vous permet d’entrer dans le processus de flux de travail d’approbation utilisé par Microsoft pour vous assurer que seules les demandes autorisées autorisent l’accès à votre contenu. Pour en savoir plus sur le processus de flux de travail de Microsoft, consultez [Privileged Access Management dans Microsoft 365](privileged-access-management-solution-overview.md).
+Customer Lockbox garantit que Microsoft ne peut pas accéder à votre contenu pour effectuer des opérations de service sans votre approbation explicite. Customer Lockbox vous permet d’entrer dans le processus de flux de travail d’approbation utilisé par Microsoft pour vous assurer que seules les demandes autorisées autorisent l’accès à votre contenu. Pour en savoir plus sur le processus de flux de travail de Microsoft, consultez [Privileged Access Management](privileged-access-management-solution-overview.md).
 
 Parfois, les ingénieurs Microsoft aident à résoudre les problèmes qui surviennent avec le service. En règle générale, les ingénieurs corrigent les problèmes à l’aide d’outils de télémétrie et de débogage étendus mis en place par Microsoft pour ses services. Toutefois, dans certains cas, un ingénieur Microsoft doit accéder à votre contenu pour déterminer la cause racine et résoudre le problème. Customer Lockbox exige que l’ingénieur vous demande l’accès en tant que dernière étape du flux de travail d’approbation. Cela vous donne la possibilité d’approuver ou de refuser la demande pour votre organisation, et de fournir un contrôle d’accès direct à votre contenu.
 
@@ -102,15 +104,15 @@ Vous pouvez activer les contrôles Customer Lockbox dans le Centre d’administr
     ![Refuser les demandes Customer Lockbox.](../media/CustomerLockbox8.png)
 
 > [!NOTE]
-> Utilisez la cmdlet Set-AccessToCustomerDataRequest pour approuver, refuser ou annuler les demandes de référentiel sécurisé du client Microsoft 365 qui contrôlent l’accès des ingénieurs de support Microsoft à vos données. Pour plus d’informations, consultez [Set-AccessToCustomerDataRequest](/powershell/module/exchange/set-accesstocustomerdatarequest).
+> Utilisez l’applet de commande Set-AccessToCustomerDataRequest pour approuver, refuser ou annuler les demandes Microsoft Purview Customer Lockbox qui contrôlent l’accès à vos données par les ingénieurs du support technique Microsoft. Pour plus d’informations, consultez [Set-AccessToCustomerDataRequest](/powershell/module/exchange/set-accesstocustomerdatarequest).
 
 ## <a name="auditing-customer-lockbox-requests"></a>Audit des demandes d’accès au Customer Lockbox
 
-Les enregistrements d’audit qui correspondent aux demandes Customer Lockbox sont enregistrés dans le journal d’audit Microsoft 365. Vous pouvez accéder à ces journaux à l’aide de [l’outil de recherche de journaux d’audit](search-the-audit-log-in-security-and-compliance.md) dans le Centre de conformité Microsoft 365. Les actions liées à l’acceptation ou au refus d’une demande Customer Lockbox et les actions effectuées par les ingénieurs Microsoft (lorsque les demandes d’accès sont approuvées) sont également consignées dans le journal d’audit. Vous pouvez rechercher et consulter ces enregistrements d’audit.
+Les enregistrements d’audit qui correspondent aux demandes Customer Lockbox sont enregistrés dans le journal d’audit Microsoft 365. Vous pouvez accéder à ces journaux à l’aide de [l’outil de recherche de journaux d’audit](search-the-audit-log-in-security-and-compliance.md) dans le portail de conformité Microsoft Purview. Les actions liées à l’acceptation ou au refus d’une demande Customer Lockbox et les actions effectuées par les ingénieurs Microsoft (lorsque les demandes d’accès sont approuvées) sont également consignées dans le journal d’audit. Vous pouvez rechercher et consulter ces enregistrements d’audit.
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>Recherchez dans le journal d’audit l’activité liée aux demandes Customer Lockbox
 
-Avant de pouvoir utiliser le journal d’audit pour suivre les demandes de Customer Lockbox, vous devez effectuer certaines étapes pour configurer la journalisation d’audit, notamment l’attribution d’autorisations pour rechercher dans le journal d’audit. Pour plus d’informations, consultez [Configurer l’audit de base dans Microsoft 365](set-up-basic-audit.md). Une fois que vous avez terminé la configuration, procédez comme suit pour créer une requête de recherche dans le journal d’audit afin de retourner les enregistrements d’audit liés à Customer Lockbox :
+Avant de pouvoir utiliser le journal d’audit pour suivre les demandes de Customer Lockbox, vous devez effectuer certaines étapes pour configurer la journalisation d’audit, notamment l’attribution d’autorisations pour rechercher dans le journal d’audit. Pour plus d’informations, consultez [Configurer l’audit Microsoft Purview (Standard).](set-up-basic-audit.md) Une fois que vous avez terminé la configuration, procédez comme suit pour créer une requête de recherche dans le journal d’audit afin de retourner les enregistrements d’audit liés à Customer Lockbox :
 
 1. Accédez à <https://compliance.microsoft.com>.
   
@@ -159,7 +161,7 @@ Après avoir téléchargé le fichier, vous pouvez l’ouvrir dans Excel, puis f
 
 ### <a name="use-powershell-to-search-and-export-audit-records"></a>Utiliser PowerShell pour rechercher et exporter des enregistrements d’audit
 
-Une alternative à l’utilisation de l’outil de recherche d’audit dans le Centre de conformité Microsoft 365 consiste à exécuter l’applet de commande [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell. L’un des avantages de l’utilisation de PowerShell est que vous pouvez rechercher spécifiquement les activités **ou activités Set-AccessToCustomerDataRequest** effectuées par les ingénieurs Microsoft liées à une demande Customer Lockbox.
+Une alternative à l’utilisation de l’outil de recherche d’audit dans le portail de conformité Microsoft Purview consiste à exécuter l’applet de commande [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell. L’un des avantages de l’utilisation de PowerShell est que vous pouvez rechercher spécifiquement les activités **ou activités Set-AccessToCustomerDataRequest** effectuées par les ingénieurs Microsoft liées à une demande Customer Lockbox.
 
 Après vous [être connecté à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), exécutez l’une des commandes suivantes. Remplacez les espaces réservés par une plage de dates spécifique.
 
@@ -227,7 +229,7 @@ Le contenu client est les données créées par les utilisateurs de services et 
 
 - Informations dans le corps d’un fichier SharePoint
 
-- Skype for Business corps du fichier de présentation
+- Skype Entreprise corps du fichier de présentation
 
 - Messages instantanés (IM) ou conversations vocales
 

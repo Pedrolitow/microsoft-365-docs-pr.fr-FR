@@ -19,14 +19,16 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: De nombreux types d’informations sensibles sont prêts à être utilisés dans vos stratégies DLP. Cet article répertorie tous ces types d’informations sensibles et montre ce qu’une stratégie DLP recherche lorsqu’elle détecte chaque type.
-ms.openlocfilehash: 69c47a717b63f8d9ac4e30f3b97fd228399bf21c
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 6074082812853469e0513d67ec68519eb2a89563
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760402"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64970656"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Définitions d’entités des types d’informations sensibles
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cet article répertorie toutes les définitions d’entité de type d’informations sensibles. Chaque définition montre ce qu’une stratégie DLP recherche pour détecter chaque type. Pour en savoir plus sur les types d’informations sensibles, consultez [Types d’informations sensibles](sensitive-information-type-learn-about.md)
 
@@ -510,7 +512,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -575,7 +577,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -898,7 +900,7 @@ Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce 
 
 ## <a name="australia-physical-addresses"></a>Adresses physiques de l’Australie
 
-Entité nommée non groupée, détecte les modèles liés à l’adresse physique de l’Australie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Entité nommée non groupée, détecte les modèles liés à l’adresse physique de l’Australie. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 medium
@@ -1126,7 +1128,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -1258,7 +1260,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="austria-physical-addresses"></a>Adresses physiques en Autriche
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance d’Autriche. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance d’Autriche. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -1413,7 +1415,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -2325,7 +2327,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="belgium-physical-addresses"></a>Adresses physiques belges
 
-Cette entité nommée non groupée détecte les modèles liés aux adresses physiques en provenance de Belgique. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés aux adresses physiques en provenance de Belgique. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -2337,7 +2339,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -2406,7 +2408,7 @@ Cette entité nommée non groupée détecte les termes liés aux tests sanguins,
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Élevé
+Importante
 
 ## <a name="brand-medication-names"></a>Noms des médicaments de marque
 
@@ -2414,7 +2416,7 @@ Cette entité nommée non groupée détecte les noms des médicaments de marque,
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Élevé
+Importante
 
 ## <a name="brazil-cpf-number"></a>Numéro CPF du Brésil
 
@@ -2619,7 +2621,7 @@ Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce 
 
 ## <a name="brazil-physical-addresses"></a>Adresses physiques du Brésil
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique du Brésil. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique du Brésil. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -2868,7 +2870,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="bulgaria-physical-addresses"></a>Adresses physiques bulgares
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance de Bulgarie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance de Bulgarie. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -2879,7 +2881,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -3468,7 +3470,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="canada-physical-addresses"></a>Adresses physiques du Canada
 
-Cette entité nommée non regroupée détecte les modèles liés à l’adresse physique du Canada. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non regroupée détecte les modèles liés à l’adresse physique du Canada. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -3728,7 +3730,7 @@ Oui, la vérification Luhn
 Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
 
 - La fonction Func_credit_card trouve un contenu qui correspond au modèle.
-- L’une des affirmations suivantes est vraie :
+- L’une des conditions suivantes est vraie :
   - Un mot clé figurant dans la liste Keyword_cc_verification est trouvé.
   - Un mot clé figurant dans la liste Keyword_cc_name est trouvé.
   - La fonction Func_expiration_date trouve une date au format correct.
@@ -4398,7 +4400,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="croatia-physical-addresses"></a>Adresses physiques croates
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance de Croatie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance de Croatie. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -4573,7 +4575,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -4704,7 +4706,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="cyprus-physical-addresses"></a>Adresses physiques de Chypre
 
-Cette entité nommée non regroupée détecte les modèles liés à l’adresse physique de Chypre. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non regroupée détecte les modèles liés à l’adresse physique de Chypre. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -4716,7 +4718,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -5143,7 +5145,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="czech-republic-physical-addresses"></a>Adresses physiques de la République tchèque
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la République tchèque. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la République tchèque. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -5510,7 +5512,7 @@ Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce 
 
 ## <a name="denmark-physical-addresses"></a>Adresses physiques du Danemark
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique du Danemark. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique du Danemark. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -5522,7 +5524,7 @@ Cette entité nommée non groupée détecte le texte qui correspond aux noms de 
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Élevé
+Importante
 
 ## <a name="drug-enforcement-agency-dea-number"></a>Numéro de la Drug Enforcement Agency (DEA)
 
@@ -5832,7 +5834,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -5918,7 +5920,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="estonia-physical-addresses"></a>Adresses physiques estoniennes
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de l’Estonie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de l’Estonie. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -6387,7 +6389,7 @@ Ces entités se trouvent dans le numéro de passeport de l’UE et sont des type
 
 ## <a name="eu-social-security-number-or-equivalent-identification"></a>Numéro de sécurité sociale de l’UE ou identification équivalente
 
-Il s’agit des entités figurant dans le numéro de sécurité sociale de l’UE ou d’une identification équivalente et qui sont des types d’informations sensibles.
+Ces entités se trouvent dans le numéro de sécurité sociale de l’UE ou une identification équivalente et sont des types d’informations sensibles.
 
 - [Autriche](#austria-social-security-number)
 - [Belgique](#belgium-national-number)
@@ -6616,7 +6618,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -6853,7 +6855,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="finland-physical-addresses"></a>Adresses physiques finlandaises
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Finlande. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Finlande. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -7027,7 +7029,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -7216,7 +7218,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="france-physical-addresses"></a>Adresses physiques en France
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la France. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la France. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -7386,7 +7388,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -7456,7 +7458,7 @@ Cette entité nommée non regroupée détecte les noms des médicaments généri
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Élevé
+Importante
 
 ## <a name="germany-drivers-license-number"></a>Numéro de permis de conduire en Allemagne
 
@@ -7653,7 +7655,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="format"></a>Format
 
-depuis le 1er novembre 2010 : Neuf à onze lettres et chiffres
+depuis le 1er novembre 2010 : 9 à 11 lettres et chiffres
 
 du 1er avril 1987 au 31 octobre 2010 : 10 chiffres
 
@@ -7817,7 +7819,7 @@ Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce 
 
 ## <a name="germany-physical-addresses"></a>Adresses physiques allemandes
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance d’Allemagne. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance d’Allemagne. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -7904,7 +7906,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -8265,7 +8267,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="greece-physical-addresses"></a>Adresses physiques en Grèce
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Grèce. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Grèce. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -8277,7 +8279,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -8338,7 +8340,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -8736,7 +8738,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -8799,7 +8801,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="hungary-physical-addresses"></a>Adresses physiques en Hongrie
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance de Hongrie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance de Hongrie. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -8871,7 +8873,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -8953,7 +8955,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -9015,7 +9017,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="iceland-physical-addresses"></a>Adresses physiques islandaises
 
-Cette entité nommée non regroupée détecte les modèles liés à l’adresse physique de l’Islande. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non regroupée détecte les modèles liés à l’adresse physique de l’Islande. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -9027,7 +9029,7 @@ Cette entité nommée non regroupée détecte les noms des déficiences réperto
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Élevé
+Importante
 
 ## <a name="india-drivers-license-number"></a>Numéro de permis de conduire en Inde
 
@@ -10164,7 +10166,7 @@ Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce 
 
 ## <a name="ireland-physical-addresses"></a>Adresses physiques d’Irlande
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de l’Irlande. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de l’Irlande. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -10454,7 +10456,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -10625,7 +10627,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="italy-physical-addresses"></a>Adresses physiques en Italie
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance d’Italie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance d’Italie. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -10637,7 +10639,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -10877,7 +10879,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -10941,7 +10943,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -11218,7 +11220,7 @@ Cette entité nommée non regroupée détecte les termes liés aux tests en labo
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Élevé
+Importante
 
 ## <a name="latvia-drivers-license-number"></a>Numéro de permis de conduire letton
 
@@ -11604,7 +11606,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="latvia-physical-addresses"></a>Adresses physiques lettones
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance de Lettonie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance de Lettonie. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -11612,7 +11614,7 @@ Moyen
 
 ## <a name="liechtenstein-physical-addresses"></a>Adresses physiques du Liechtenstein
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique du Liechtenstein. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique du Liechtenstein. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -11624,7 +11626,7 @@ Cette entité nommée non regroupée détecte les termes liés aux modes de vie 
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Élevé
+Importante
 
 ## <a name="lithuania-drivers-license-number"></a>Numéro de permis de conduire en Lituanie
 
@@ -11795,7 +11797,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -11883,7 +11885,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="lithuania-physical-addresses"></a>Adresses physiques lituaniennes
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance de Lituanie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance de Lituanie. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -12134,7 +12136,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -12389,7 +12391,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="luxemburg-physical-addresses"></a>Adresses physiques du Luxembourg
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique à partir de Luxemburg. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique à partir de Luxemburg. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -12637,7 +12639,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -12775,7 +12777,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="malta-physical-addresses"></a>Adresses physiques de Malte
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de Malte. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de Malte. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -12880,7 +12882,7 @@ Cette entité nommée non groupée détecte les termes liés aux spécialités m
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Élevé
+Importante
 
 ## <a name="medicare-beneficiary-identifier-mbi-card"></a>Carte d’identificateur du bénéficiaire de l’assurance-maladie (MBI)
 
@@ -13311,7 +13313,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="netherlands-physical-addresses"></a>Adresses physiques des Pays-Bas
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique des Pays-Bas. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique des Pays-Bas. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -13323,7 +13325,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -13409,7 +13411,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -13474,7 +13476,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -13539,7 +13541,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -13657,7 +13659,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -13767,7 +13769,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="new-zealand-physical-addresses"></a>Adresses physiques néo-zélandaises
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Nouvelle-Zélande. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Nouvelle-Zélande. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -13779,7 +13781,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -13893,7 +13895,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="norway-physical-addresses"></a>Adresses physiques en Norvège
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique à partir de la Norvège. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique à partir de la Norvège. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -14307,7 +14309,7 @@ Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce 
 
 ## <a name="poland-physical-addresses"></a>Adresses physiques en Pologne
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Pologne. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Pologne. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -14319,7 +14321,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -14388,7 +14390,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -14779,7 +14781,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="portugal-physical-addresses"></a>Adresses physiques du Portugal
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique du Portugal. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique du Portugal. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -15104,7 +15106,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -15202,7 +15204,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="romania-physical-addresses"></a>Adresses physiques roumaines
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance de Roumanie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance de Roumanie. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -15214,7 +15216,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -15278,7 +15280,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -15685,7 +15687,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -15780,7 +15782,7 @@ Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce 
 
 ## <a name="slovakia-physical-addresses"></a>Adresses physiques en Slovaquie
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance de Slovaquie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance de Slovaquie. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -16037,7 +16039,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="slovenia-physical-addresses"></a>Adresses physiques slovènes
 
-Cette entité nommée non regroupée détecte les modèles liés à l’adresse physique de la Slovénie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non regroupée détecte les modèles liés à l’adresse physique de la Slovénie. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -16049,7 +16051,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -16123,7 +16125,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -16307,7 +16309,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -16668,7 +16670,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="spain-physical-addresses"></a>Adresses physiques en Espagne
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance d’Espagne. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique en provenance d’Espagne. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -16737,7 +16739,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -16927,7 +16929,7 @@ Cette entité nommée non regroupée détecte les termes liés aux procédures c
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Élevé
+Importante
 
 ## <a name="sweden-drivers-license-number"></a>Numéro de permis de conduire en Suède
 
@@ -17265,7 +17267,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="sweden-physical-addresses"></a>Adresses physiques en Suède
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Suède. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Suède. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -17277,7 +17279,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -17433,7 +17435,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="switzerland-physical-addresses"></a>Adresses physiques en Suisse
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Suisse. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Suisse. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -17445,7 +17447,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -17781,7 +17783,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="turkey-physical-addresses"></a>Adresses physiques de la Turquie
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Turquie. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Turquie. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -17793,7 +17795,7 @@ Cette entité nommée non regroupée détecte les noms des médicaments, tels qu
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Élevé
+Importante
 
 ## <a name="uk-drivers-license-number"></a>ROYAUME-UNI. numéro de permis de conduire
 
@@ -18157,7 +18159,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ## <a name="uk-physical-addresses"></a>ROYAUME-UNI. adresses physiques
 
-Cette entité nommée non regroupée détecte les modèles liés à l’adresse physique à partir du Royaume-Uni. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non regroupée détecte les modèles liés à l’adresse physique à partir du Royaume-Uni. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -18169,7 +18171,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -18526,7 +18528,7 @@ Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce 
 
 ## <a name="us-physical-addresses"></a>Adresses physiques américaines
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique des États-Unis. Il est également inclus dans l’entité SIT nommée [All Physical Addresses](#all-physical-addresses) groupée.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique des États-Unis. Il est également inclus dans l’entité SIT toutes [les adresses physiques](#all-physical-addresses) regroupées.
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
@@ -18685,7 +18687,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 
@@ -18735,7 +18737,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 
 - stratégies de protection contre la perte de données
 - stratégies de conformité des communications
-- gouvernance des informations
+- gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
 

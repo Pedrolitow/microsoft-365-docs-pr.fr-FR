@@ -1,5 +1,5 @@
 ---
-title: intégrer et déclasser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide de JAMF Pro (préversion)
+title: Intégrer et déconnecter des appareils macOS dans des solutions Microsoft Purview à l’aide de JAMF Pro
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,32 +13,34 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Découvrez comment intégrer et déconnecter des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide de JAMF Pro (préversion)
-ms.openlocfilehash: 44e57e482c08b486563200010671b5c79329f7b2
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Découvrez comment intégrer et déconnecter des appareils macOS dans des solutions Microsoft Purview à l’aide de JAMF Pro
+ms.openlocfilehash: bf15868b865afa80146df2b16199caf360a55ce2
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783818"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953424"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>intégrer et déclasser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide de JAMF Pro (préversion)
+# <a name="onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>Intégrer et déconnecter des appareils macOS dans des solutions Microsoft Purview à l’aide de JAMF Pro
 
-Vous pouvez utiliser JAMF Pro pour intégrer des appareils macOS dans des solutions de conformité Microsoft 365 telles que la protection contre la perte de données de point de terminaison.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Vous pouvez utiliser JAMF Pro pour intégrer des appareils macOS dans des solutions Microsoft Purview telles que la protection contre la perte de données de point de terminaison.
 
 > [!IMPORTANT]
 > Utilisez cette procédure si vous ***n’avez pas*** déployé Microsoft Defender pour point de terminaison (MDE) sur vos appareils macOS
 
 **S’applique à :**
 
-- [Protection contre la perte de données de point de terminaison (DLP) pour Microsoft 365](./endpoint-dlp-learn-about.md)
-- [Gestion des risques internes](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
+- [Gestion des risques internes](insider-risk-management.md)
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
 - Assurez-vous que vos [appareils macOS sont gérés via JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) et associés à une identité (Azure AD upn joint) via JAMF Connecter ou Intune.
 - Installer le navigateur v95+ Edge sur vos appareils macOS
 
-## <a name="onboard-devices-into-microsoft-365-compliance-solutions-using-jamf-pro"></a>Intégrer des appareils dans des solutions de conformité Microsoft 365 à l’aide de JAMF Pro
+## <a name="onboard-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>Intégrer des appareils dans des solutions Microsoft Purview à l’aide de JAMF Pro
 
 1. Vous aurez besoin de ces fichiers pour cette procédure.
 

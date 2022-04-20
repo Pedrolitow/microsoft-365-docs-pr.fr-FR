@@ -1,5 +1,5 @@
 ---
-title: Utilisation de la protection contre la perte de données de point de terminaison
+title: Utilisation de la DLP pour point de terminaison
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -17,22 +17,24 @@ ms.collection:
 - SPO_Content
 search.appverid:
 - MET150
-description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: aeb85b883738e94f2d7161cb2bc3434edbb16428
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les emplacements de protection contre la perte de données de point de terminaison.
+ms.openlocfilehash: 5ca57dfad74dea26e16fa415eead8a0a85eb9673
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680025"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64952795"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]  
 
 Pour vous familiariser avec les fonctionnalités de point de terminaison DLP et la manière dont elles se trouvent dans les stratégies DLP, nous avons rassemblé certains scénarios que vous pouvez suivre.
 
 > [!IMPORTANT]
 > Ces scénarios de points de terminaison DLP ne sont pas les procédures officielles pour la création et le réglage des stratégies DLP. Reportez-vous aux rubriques ci-dessous lorsque vous devez utiliser les stratégies DLP dans les situations générales suivantes :
 >
->- [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
+>- [En savoir plus sur la protection contre la perte de données Microsoft Purview](dlp-learn-about-dlp.md)
 >- [Prise en main de la stratégie DLP par défaut](get-started-with-the-default-dlp-policy.md)
 >- [Création d’une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)
 >- [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
@@ -257,7 +259,7 @@ Cette configuration vous permet de garantir la sécurité de vos données tout e
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
 - [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/)
-- [Intégrer des appareils Windows 10 et Windows 11 dans la vue d’ensemble Microsoft 365](/microsoft-365/compliance/device-onboarding-overview)
+- [Intégrer les appareils Windows 10 et Windows 11 dans une vue d’ensemble de Microsoft Purview](/microsoft-365/compliance/device-onboarding-overview)
 - [Abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure Active Directory (ADD) adhésion](/azure/active-directory/devices/concept-azure-ad-join)
 - [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

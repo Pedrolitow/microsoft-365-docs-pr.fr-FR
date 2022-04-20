@@ -20,14 +20,16 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: Comment activer ou désactiver la fonctionnalité de recherche dans le journal d’audit dans le portail de conformité Microsoft Purview pour activer ou désactiver la possibilité pour les administrateurs de rechercher dans le journal d’audit.
-ms.openlocfilehash: 587c7f98cd04eef618508e096f290d1d299ec096
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e74effad1803b9a55167d1cd3bb5725bd042616a
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944522"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991817"
 ---
 # <a name="turn-auditing-on-or-off"></a>Activer ou désactiver la fonctionnalité d’audit
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La journalisation d’audit est activée par défaut pour Microsoft 365 et Office 365 organisations d’entreprise. Toutefois, lors de la configuration d’une nouvelle organisation Microsoft 365 ou Office 365, vous devez vérifier l’état d’audit de votre organisation. Pour obtenir des instructions, consultez la section [Vérifier l’état d’audit de votre organisation](#verify-the-auditing-status-for-your-organization) dans cet article. 
 

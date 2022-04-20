@@ -19,14 +19,16 @@ description: Utilisez l’outil de gestion des consignataires eDiscovery (Premiu
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 35b622e00caeeca78c85849f03b3a21f8a28b443
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e2de6209e08d6e8dd6f853724f26d026aec1c33f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943510"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993707"
 ---
 # <a name="view-custodian-audit-activity"></a>Afficher l’activité d’audit des consignataires
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Microsoft Purview eDiscovery (Premium) est désormais intégré à l’outil de recherche de journal d’audit existant dans le portail de conformité Microsoft Purview. À l’aide de cette expérience incorporée, vous pouvez utiliser l’outil de gestion des consignataires eDiscovery (Premium) pour faciliter votre enquête en accédant facilement à l’activité et en recherchant des consignataires dans votre cas.
 
@@ -35,7 +37,7 @@ Vous avez besoin de déterminer si un utilisateur a consulté un document spéci
 Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online pour pouvoir effectuer des recherches dans le journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page Autorisations dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>. Pour permettre à un utilisateur de rechercher dans le journal d’audit eDiscovery (Premium) avec le niveau minimal de privilèges, vous pouvez créer un groupe de rôles personnalisé dans Exchange Online, ajouter le View-Only rôle Journaux d’audit ou Journaux d’audit, puis ajouter l’utilisateur en tant que membre du nouveau groupe de rôles. Pour plus d’informations, voir Gérer les groupes de rôles dans Exchange Online.
 
 > [!IMPORTANT]
-> Si vous affectez à un utilisateur le rôle journaux d’audit ou journaux d’audit View-Only sur la page Autorisations dans le portail de conformité, il ne pourra pas effectuer de recherche dans le journal d’audit. Vous devez affecter les autorisations dans Exchange Online. En effet, la cmdlet sous-jacente utilisée pour les recherches dans le journal d’audit est une cmdlet Exchange Online.
+> Si vous affectez le rôle Journaux d’audit en affichage seul ou Journaux d’audit à un utilisateur dans la page Autorisations du portail de conformité, celui-ci ne pourra pas effectuer de recherches dans le journal d’audit. Vous devez affecter les autorisations dans Exchange Online. En effet, la cmdlet sous-jacente utilisée pour les recherches dans le journal d’audit est une cmdlet Exchange Online.
 
 ## <a name="step-1-search-the-audit-log-for-activities-performed-by-a-custodian"></a>Étape 1 : Rechercher dans le journal d’audit les activités effectuées par un dépositaire
 

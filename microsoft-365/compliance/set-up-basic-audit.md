@@ -20,14 +20,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment configurer l’audit (Standard) afin que vous puissiez commencer à rechercher les activités d’audit effectuées par les utilisateurs et les administrateurs de votre organisation.
-ms.openlocfilehash: 93245abfc4f57b22d6db715103f93428487a648d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 15e72d1b2899799f432cdc717352cf53a0a370e4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936046"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993729"
 ---
 # <a name="set-up-microsoft-purview-audit-standard"></a>Configurer l’audit Microsoft Purview (Standard)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview Audit (Standard) dans Microsoft 365 vous permet de rechercher des enregistrements d’audit pour les activités effectuées dans les différents services Microsoft 365 par les utilisateurs et les administrateurs. Étant donné que l’audit (Standard) est activé par défaut pour la plupart des organisations Microsoft 365 et Office 365, vous n’avez besoin que de quelques opérations avant que vous et d’autres membres de votre organisation puissiez rechercher dans le journal d’audit.
 

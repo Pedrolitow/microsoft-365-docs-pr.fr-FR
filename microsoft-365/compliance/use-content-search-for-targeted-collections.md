@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Utilisez la recherche de contenu dans le portail de conformité Microsoft Purview pour effectuer une collection ciblée, qui recherche des éléments dans une boîte aux lettres ou un dossier de site spécifique.
-ms.openlocfilehash: b01197ebc942b13f1b3806d2ad3b5a564b609098
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9638a0870f1d97d2bcea73215509d269576c4ecd
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947052"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991773"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Utiliser la recherche de contenu pour les collections ciblées
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 L’outil de recherche de contenu dans le portail de conformité Microsoft Purview ne fournit pas de moyen direct dans l’interface utilisateur de rechercher des dossiers spécifiques dans Exchange boîtes aux lettres ou SharePoint et OneDrive Entreprise sites. Toutefois, il est possible de rechercher des dossiers spécifiques ( *appelés regroupements ciblés*) en spécifiant la propriété d’ID de dossier pour la propriété e-mail ou chemin d’accès (DocumentLink) pour les sites dans la syntaxe de requête de recherche réelle. L’utilisation de la recherche de contenu pour effectuer une collection ciblée est utile lorsque vous êtes certain que les éléments sensibles à un cas ou à des éléments privilégiés se trouvent dans une boîte aux lettres ou un dossier de site spécifique. Vous pouvez utiliser le script de cet article pour obtenir l’ID de dossier des dossiers de boîte aux lettres ou le chemin d’accès (DocumentLink) pour les dossiers d’un SharePoint et d’un site OneDrive Entreprise. Vous pouvez ensuite utiliser l’ID de dossier ou le chemin d’accès dans une requête de recherche pour renvoyer les éléments situés dans le dossier.
 

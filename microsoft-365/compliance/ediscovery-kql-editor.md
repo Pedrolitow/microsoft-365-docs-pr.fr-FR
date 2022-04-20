@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez utiliser l’éditeur KQL pour configurer des requêtes de recherche eDiscovery dans la recherche de contenu, eDiscovery (Standard) et eDiscovery (Premium).
-ms.openlocfilehash: f1339b064c736d19bb428f812429cf0620cb3f53
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: cbd7adb02c926477fd81568ed950ebd16110c79b
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949958"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993795"
 ---
 # <a name="use-the-kql-editor-to-build-search-queries"></a>Utiliser l’éditeur KQL pour générer des requêtes de recherche
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La nouvelle expérience de requête KQL dans Microsoft 365 recherche d’outils eDiscovery fournit des commentaires et des conseils lorsque vous créez des requêtes de recherche dans recherche de contenu, Microsoft Purview eDiscovery (Standard) et eDiscovery (Premium). Lorsque vous tapez des requêtes dans l’éditeur, elle fournit l’autocomplétion pour les propriétés et conditions pouvant faire l’objet d’une recherche prises en charge et fournit des listes de valeurs prises en charge pour les propriétés et conditions standard. Par exemple, si vous spécifiez la `kind` propriété de messagerie dans votre requête, l’éditeur présente une liste de valeurs prises en charge que vous pouvez sélectionner. L’éditeur KQL affiche également les erreurs de requête potentielles en temps réel que vous pouvez corriger avant d’exécuter la recherche. Mieux encore, vous pouvez coller des requêtes complexes directement dans l’éditeur sans avoir à générer manuellement des requêtes à l’aide des mots clés et des cartes de conditions dans le générateur de conditions standard.
   

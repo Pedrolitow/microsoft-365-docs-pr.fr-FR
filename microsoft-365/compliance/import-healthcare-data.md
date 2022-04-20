@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données de dossiers médicaux électroniques (DSE) de leur système de santé vers Microsoft 365. Cela vous permet d’utiliser les données DSE dans les stratégies de gestion des risques internes pour vous aider à détecter l’activité d’accès non autorisé aux données des patients par vos employés.
-ms.openlocfilehash: dfb02e5f6fb8625d31554c6dbc11179b1dddb6c2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b1745d8f91253132748fe08d724386d2e6633a4c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949716"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993159"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Configurer un connecteur pour importer des données d’audit DSE de santé (préversion)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez configurer un connecteur de données dans le portail de conformité Microsoft Purview pour importer des données d’audit pour l’activité des utilisateurs dans le système DSE (Electronic Healthcare Records) de votre organisation. Les données d’audit de votre système de DSE de santé incluent des données relatives aux événements liés à l’accès aux dossiers de santé d’un patient. Les données d’audit des DSE de santé peuvent être utilisées par la [Microsoft 365 solution de gestion des risques internes](insider-risk-management.md) pour protéger votre organisation contre tout accès non autorisé aux informations sur les patients.
 
@@ -66,7 +68,7 @@ L’étape suivante consiste à créer un fichier texte qui contient des informa
 
 Le tableau suivant répertorie les champs qui sont nécessaires pour activer les scénarios de gestion des risques internes. Un sous-ensemble de ces champs est obligatoire. Ces champs sont mis en surbrillance avec un astérisque (*). Si l’un des champs obligatoires est manquant dans le fichier texte, le fichier n’est pas validé et les données du fichier ne sont pas importées.
 
-|Champ|Catégorie|
+|Field|Catégorie|
 |:----|:----------|
 | Nom de *l’événement timeEvent<br/>* de création<br/>ID de station de travail<br/>Section d’événements<br/>Catégorie de l'événement |Ces champs sont utilisés pour identifier les événements d’activité d’accès dans votre système de DSE de santé.|
 | Patient Reg Id<br/>Prénom *du<br/> patient Prénom <br/>Patient* <br/>Ligne d’adresse du patient 1* <br/>Ligne d’adresse du patient 2<br/>Ville du patient* <br/>Code postal du patient*  <br/>État du patient <br/>Pays du patient <br/>Service des patients              | Ces champs sont utilisés pour identifier les informations de profil des patients.|

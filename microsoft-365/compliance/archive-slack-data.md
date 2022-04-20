@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données de Veritas Slack eDiscovery dans Microsoft 365. Ce connecteur vous permet d’archiver les données de sources de données tierces dans Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces.
-ms.openlocfilehash: b6c5f398e1f8966b11a3f9cd4c0e4732fc4b5eff
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f8a8f785c61bd1ddfea6c0c0cf69c5719b4f9aaf
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940618"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992279"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data"></a>Configurer un connecteur pour archiver les données Slack eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez un connecteur Veritas dans le portail de conformité Microsoft Purview pour importer et archiver des données tierces à partir des médias sociaux, de la messagerie instantanée et des plateformes de collaboration de documents dans les boîtes aux lettres de votre organisation Microsoft 365. Veritas fournit un connecteur [Slack](https://globanet.com/slack/) configuré pour capturer des éléments à partir de la source de données tierce (régulièrement), puis importer ces éléments dans Microsoft 365. Slack extrait des messages et des fichiers de l’API Slack et les convertit au format d’e-mail, puis importe l’élément dans des boîtes aux lettres utilisateur.
 

@@ -1,6 +1,6 @@
 - name: Documentation de base de tests
   href: index.yml
-- name: Vue d’ensemble
+- name: Présentation
   items:
     - name: Qu’est-ce que Base de test ?
       href: overview.md
@@ -10,9 +10,9 @@
       href: createAccount.md
     - name: Tester votre application sur la base de test
       items:
-        - name: Vue d’ensemble
+        - name: Présentation
           href: testoverview.md
-        - name: Package Test Binaries sur la base de test
+        - name: Tester vos fichiers binaires sur la base de test
           href: testapplication.md
         - name: Tester votre application Intune sur la base de test
           href: testintuneapplication.md

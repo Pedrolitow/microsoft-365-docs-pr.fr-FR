@@ -1,5 +1,5 @@
 ---
-title: Intégration des appareils macOS dans la vue d'ensemble de Microsoft 365 (aperçu)
+title: Intégrer des appareils macOS dans Microsoft 365 vue d’ensemble
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -14,94 +14,96 @@ ms.collection:
 search.appverid:
 - MET150
 description: En savoir plus sur l’intégration d’appareils macOS dans des solutions de conformité
-ms.openlocfilehash: 783179ae749ac7cd6de671435927ba5bbdbdacad
-ms.sourcegitcommit: 9d563faeaa50b59b0b468dbb373d886e5270f58e
+ms.openlocfilehash: 6cc3323a94ee609c3c6674c12eb99fad3f18f3b4
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "64387012"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64952716"
 ---
-# <a name="onboard-macos-devices-into-microsoft-365-overview-preview"></a>Intégration des appareils macOS dans la vue d'ensemble de Microsoft 365 (aperçu)
+# <a name="onboard-macos-devices-into-microsoft-365-overview"></a>Intégrer des appareils macOS dans Microsoft 365 vue d’ensemble
 
-Les appareils MacOS peuvent être intégrés à des solutions Microsoft 365 conformité à l’aide d’Intune ou de JAMF Pro. Les procédures d’intégration diffèrent en fonction de la solution de gestion que vous utilisez. Si vos appareils macOS ont déjà été intégrés à Microsoft Defender for Endpoint (MDE), il y a moins d’étapes. [Consultez les étapes](#next-steps) suivantes pour obtenir des liens vers les procédures appropriées pour vous.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Les appareils MacOS peuvent être intégrés aux solutions Microsoft Purview à l’aide de Intune ou de Pro JAMF. Les procédures d’intégration varient en fonction de la solution de gestion que vous utilisez. Si vos appareils macOS ont déjà été intégrés à Microsoft Defender pour point de terminaison (MDE), il y a moins d’étapes. Consultez [les étapes suivantes](#next-steps) pour obtenir des liens vers les procédures appropriées pour vous.
 
 **S’applique à :**
 
 - [Protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
-- [Gestion des risques internes](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Gestion des risques internes](insider-risk-management.md)
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Avant de commencer avec endpoint DLP sur les appareils macOS (Contrôle 10.15 ou ultérieur), vous devez vous familiariser avec les articles suivants :
+Avant de commencer à utiliser endpoint DLP sur les appareils macOS (Catalina 10.15 ou version ultérieure), vous devez vous familiariser avec les articles suivants :
 
-- [Découvrir la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
-- [Prise en main la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
+- [Découvrir la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md)
+- [Prise en main la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md)
 
-Si vous n’êtes pas du tout familiarisé avec la DLP, vous devez également vous familiariser avec les articles suivants :
+Si vous n’êtes pas familiarisé avec DLP, vous devez également vous familiariser avec ces articles :
 
 - [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Planifier la protection contre la perte de données (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
-- [Référence de stratégie de protection contre la perte de données](dlp-policy-reference.md#data-loss-prevention-policy-reference)
+- [Référence de la stratégie de protection contre la perte de données](dlp-policy-reference.md#data-loss-prevention-policy-reference)
 
-Si vous n’êtes pas familiarisé avec les risques internes, familiarisez-vous avec les articles suivants :
+Si vous n’êtes pas familiarisé avec insider risk, vous devez vous familiariser avec les articles suivants :
 
- - [Gestion des risques internes](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+ - [Gestion des risques internes](insider-risk-management.md)
  - [Planifier la gestion des risques Insider](insider-risk-management-plan.md#plan-for-insider-risk-management)
 
-Vos appareils macOS doivent déjà être gérés via Intune ou JAMF Pro.
+Vos appareils macOS doivent déjà être gérés via Intune ou jamf Pro.
  
-- Pour intégrer Intune, consultez le guide de déploiement : Gérer les appareils [macOS dans Microsoft Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) et inscrire votre [Mac avec Portail d'entreprise Intune](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
-- Pour intégrer JAMF Pro, consultez le [guide des administrateurs de jamf Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) et le Guide d’installation et de configuration de [JAMF Pro pour Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
-- Installer le navigateur Edge v95+ sur vos appareils macOS 
+- Pour intégrer Intune, consultez le [guide de déploiement : Gérer les appareils macOS dans Microsoft Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) et [inscrire votre Mac avec Portail d'entreprise Intune](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
+- Pour intégrer JAMF Pro voir, [le guide des administrateurs Pro JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) et le [guide d’installation et de configuration JAMF Pro pour Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
+- Installer le navigateur v95+ Edge sur vos appareils macOS 
 
-## <a name="licensing-guidance"></a>Recommandations en matière de licences
+## <a name="licensing-guidance"></a>Conseils sur les licences
 
-Consultez les [recommandations Microsoft 365 licences pour la protection des informations](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
+Consultez [Microsoft 365 conseils de gestion des licences pour la protection des informations](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
 ## <a name="activities-that-can-be-restricted-on-macos"></a>Activités qui peuvent être restreintes sur macOS 
 
-Une fois qu’un appareil macOS est intégré aux solutions de conformité Microsoft 365, vous pouvez surveiller et limiter ces actions avec des stratégies de protection contre la perte de données (DLP).
+Une fois qu’un appareil macOS est intégré aux solutions Microsoft Purview, vous pouvez surveiller et restreindre ces actions avec des stratégies de protection contre la perte de données (DLP).
 
-**Copier sur un média amovible USB** : lorsqu’elle est appliquée, cette action bloque, avertit ou audite la copie ou le déplacement de fichiers protégés d’un appareil de point de terminaison vers un support amovible USB 
+**Copier sur un média amovible USB** : lorsqu’elle est appliquée, cette action bloque, avertit ou audite la copie ou le déplacement de fichiers protégés d’un périphérique de point de terminaison vers un support amovible USB 
 
-**Copier sur des** partages réseau : lorsqu’elle est appliquée, cette action bloque, avertit ou audite la copie ou le déplacement de fichiers protégés d’un appareil de point de terminaison vers n’importe quel partage réseau 
+**Copier sur des partages réseau** : lorsqu’elle est appliquée, cette action bloque, avertit ou audite la copie ou le déplacement de fichiers protégés d’un appareil de point de terminaison vers n’importe quel partage réseau 
 
 **Imprimer** : lorsqu’elle est appliquée, cette action bloque, avertit ou audite lorsque des fichiers protégés sont imprimés à partir d’un appareil de point de terminaison 
 
-**Copier dans le Presse-papiers** : lorsqu’elle est appliquée, cette action bloque, avertit ou audite les données dans le fichier protégé qui est copié dans un Presse-papiers sur un appareil de point de terminaison 
+**Copier dans le Presse-papiers** : lorsqu’elle est appliquée, cette action bloque, avertit ou audite les données dans un fichier protégé qui est copié dans un Presse-papiers sur un appareil de point de terminaison 
 
-**Télécharger** vers le cloud : cette action bloque, avertit ou audite lorsque les fichiers protégés sont interdits ou autorisés à être téléchargés vers les services cloud en fonction de la liste des domaines autorisés/non autorisés dans les paramètres globaux. Lorsque cette action est définie pour avertir ou bloquer, l’accès au fichier est bloqué pour les autres navigateurs (définis dans la liste des navigateurs non autorisé sous Paramètres globaux). 
+**Télécharger vers le cloud** : cette action bloque, avertit ou audite lorsque des fichiers protégés sont empêchés ou autorisés à être chargés vers des services cloud en fonction de la liste des domaines autorisés/non autorisés dans les paramètres globaux. Lorsque cette action est définie pour avertir ou bloquer, les autres navigateurs (définis sur la liste des navigateurs non autorisés sous Paramètres globaux) ne peuvent pas accéder au fichier. 
 
- Accès par les applications non autorisé : lorsqu’elle est appliquée, cette action empêche les applications qui se retrouvent dans la liste des applications non autorisé (comme défini dans les paramètres globaux) d’accéder aux fichiers protégés sur un appareil de point de terminaison. Exemples de scénarios 
+**Accessible par les applications non autorisées** : lorsqu’elle est appliquée, cette action empêche les applications figurant dans la liste des applications non autorisées (telles que définies dans les paramètres globaux) d’accéder aux fichiers protégés sur un appareil de point de terminaison. Exemples de scénarios 
 
 ## <a name="onboarding-devices-into-device-management"></a>Dispositifs d’intégration dans la gestion des appareils
 
-Vous devez activer la surveillance des appareils et intégrer vos points de terminaison avant de pouvoir surveiller et protéger les éléments sensibles sur un appareil. Ces deux actions sont effectuées dans le portail de conformité Microsoft 365.
+Vous devez activer la surveillance des appareils et intégrer vos points de terminaison avant de pouvoir surveiller et protéger les éléments sensibles sur un appareil. Ces deux actions sont effectuées dans le portail de conformité Microsoft Purview.
 
 Lorsque vous voulez intégrer des appareils qui n’ont pas encore été intégrés, vous devez télécharger et déployer les scripts appropriés sur ces appareils. <!--Follow the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).-->
 
 <!--If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they will already appear in the managed devices list.-->
 
-1. Ouvrez la page [du Centre](https://compliance.microsoft.com) **de conformité Microsoft Paramètres** choisissez **Activer la surveillance des appareils**.
+1. Ouvrez la page **Paramètres** [portail de conformité Microsoft Purview](https://compliance.microsoft.com) et **choisissez Activer la surveillance des appareils**.
 
    > [!NOTE]
    > Bien que l’activation de l’intégration des appareils dure généralement environ 60 secondes, patientez jusqu’à 30 minutes avant de contacter le support Microsoft.
 
-2. Ouvrez la page paramètres du Centre de conformité et **sélectionnez Activer la surveillance des appareils macOS**.
+2. Ouvrez la page paramètres du Centre de conformité et choisissez **Activer la surveillance des appareils macOS**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-L’intégration d’appareils Microsoft 365 solutions de conformité est nécessaire pour recevoir la télémétrie du capteur DLP et appliquer des stratégies de protection contre la perte de données. 
+L’intégration des appareils aux solutions Microsoft Purview est nécessaire pour recevoir les données de télémétrie des capteurs DLP et appliquer des stratégies de protection contre la perte de données. 
 
 Rubrique | Description
 :---|:---
-|[intégrer et déclasser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide d’Intune (préversion)](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview)|Pour les appareils macOS gérés via Intune
-|[Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide d'Intune pour les clients de Microsoft Defender pour point de terminaison (aperçu)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview) |Pour les appareils macOS gérés via Intune et sur lesquels Microsoft Defender pour point de terminaison (MDE) est déployé
-|[intégrer et déclasser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide de JAMF Pro (préversion)](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview) | Pour les appareils macOS gérés via JAMF Pro
-|[Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de JAMF Pro pour les clients de Microsoft Defender pour point de terminaison (aperçu)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)|Pour les appareils macOS gérés via JAMF Pro et sur lesquels Microsoft Defender pour point de terminaison (MDE) est déployé
+|[Intégrer et déconnecter des appareils macOS dans des solutions Microsoft Purview à l’aide de Intune](device-onboarding-offboarding-macos-intune.md)|Pour les appareils macOS gérés via Intune
+|[Intégrer et déconnecter des appareils macOS dans des solutions de conformité à l’aide de Intune pour les clients Microsoft Defender pour point de terminaison](device-onboarding-offboarding-macos-intune-mde.md) |Pour les appareils macOS gérés via Intune et sur lesquels Microsoft Defender pour point de terminaison (MDE) est déployé
+|[Intégrer et déconnecter des appareils macOS dans des solutions Microsoft Purview à l’aide de JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md) | Pour les appareils macOS gérés via JAMF Pro
+|[Intégrer et déconnecter des appareils macOS dans des solutions de conformité à l’aide de Pro JAMF pour les clients Microsoft Defender pour point de terminaison](device-onboarding-offboarding-macos-jamfpro-mde.md)|Pour les appareils macOS gérés via JAMF Pro et sur lesquels Microsoft Defender pour point de terminaison (MDE) est déployé
 
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
-- [Utilisation des points de terminaison protection contre la perte de données](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
-- [Matrice de prise en charge des conseils de stratégie DLP dans les applications Microsoft](dlp-policy-tips-reference.md#support-matrix-for-dlp-policy-tips-across-microsoft-apps)
+- [Utilisation de la prévention des pertes de données sur les points de terminaison](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
+- [Tableau de prise en charge pour les conseils de stratégie DLP dans les applications Microsoft](dlp-policy-tips-reference.md#support-matrix-for-dlp-policy-tips-across-microsoft-apps)

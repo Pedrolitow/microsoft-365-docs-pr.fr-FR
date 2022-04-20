@@ -1,5 +1,5 @@
 ---
-title: Solutions d’audit Microsoft 365
+title: Solutions d’audit Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,32 +19,32 @@ search.appverid:
 - MET150
 description: Découvrez comment auditer les activités des utilisateurs et administrateurs de votre organisation Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ab97dc632aeaf13109380fb9a5586594c63ebaa
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c7c6461868ee212e6b332181b9dea1560ce49558
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949054"
+ms.locfileid: "64953736"
 ---
-# <a name="auditing-solutions-in-microsoft-365"></a>Audit de solutions dans Microsoft 365
+# <a name="auditing-solutions-in-microsoft-purview"></a>Solutions d’audit dans Microsoft Purview
 
-Les solutions d'audit de Microsoft 365 fournissent une solution intégrée pour aider les organisations à répondre efficacement aux événements de sécurité, aux enquêtes d’audit, aux enquêtes internes et aux obligations de conformité. Des milliers d’opérations utilisateur et administrateur effectuées dans des dizaines de services et solutions Microsoft 365 sont capturées, enregistrées et conservées dans le journal d’audit unifié de votre organisation. Les enregistrements d'audit de ces événements peuvent être utilisables dans une recherchepar les responsables de la sécurité, les administrateurs informatiques, les équipes chargées de la lutte contre le risque interne et les enquêteurs chargés de la conformité et de la législation au sein de votre organisation. Cette fonctionnalité permet de gagner en visibilité sur les activités effectuées au sein de votre organisation Microsoft 365.
+Les solutions d’audit Microsoft Purview fournissent une solution intégrée pour aider les organisations à répondre efficacement aux événements de sécurité, aux enquêtes médico-légales, aux enquêtes internes et aux obligations de conformité. Des milliers d’opérations utilisateur et administrateur effectuées dans des dizaines de services et solutions Microsoft 365 sont capturées, enregistrées et conservées dans le journal d’audit unifié de votre organisation. Les enregistrements d'audit de ces événements peuvent être utilisables dans une recherchepar les responsables de la sécurité, les administrateurs informatiques, les équipes chargées de la lutte contre le risque interne et les enquêteurs chargés de la conformité et de la législation au sein de votre organisation. Cette fonctionnalité permet de gagner en visibilité sur les activités effectuées au sein de votre organisation Microsoft 365.
 
-## <a name="microsoft-365-auditing-solutions"></a>Solutions d’audit Microsoft 365
+## <a name="microsoft-purview-auditing-solutions"></a>Solutions d’audit Microsoft Purview
 
 Microsoft Purview fournit deux solutions d’audit : Audit (Standard) et Audit (Premium).
 
-![Principales fonctionnalités de l’Audit (Standard) et de l’Audit (Premium).](..\media\AuditingSolutionsComparison.png)
+![Fonctionnalités clés d’Audit (Standard) et d’Audit (Premium).](..\media\AuditingSolutionsComparison.png)
 
 ### <a name="audit-standard"></a>Audit (Standard)
 
-L’Audit (Standard) Microsoft Purview vous offre la possibilité de journaliser et de rechercher des activités auditées et de mettre en place les enquêtes d’audit, informatiques, de conformité et juridiques.
+Microsoft Purview Audit (Standard) vous offre la possibilité de consigner et de rechercher des activités auditées et d’alimenter vos enquêtes médico-légales, informatiques, de conformité et juridiques.
 
-- **Activé par défaut**. L’Audit (Standard) est désactivé par défaut pour toutes les organisations ayant l’abonnement approprié. Cela signifie que les enregistrements des activités auditées seront capturés et peuvent faire l’objet de recherches. La seule configuration requise consiste à attribuer les autorisations nécessaires pour accéder à l'outil de recherche des journaux d'audit (et à la cmdlet correspondante) et à vérifier que les utilisateurs disposent de la bonne licence pour les fonctionnalités d’Audit (Premium) Microsoft Purview.
+- **Activé par défaut**. L’audit (standard) est activé par défaut pour toutes les organisations avec l’abonnement approprié. Cela signifie que les enregistrements des activités auditées seront capturés et peuvent faire l’objet de recherches. La seule configuration requise consiste à attribuer les autorisations nécessaires pour accéder à l’outil de recherche de journaux d’audit (et à l’applet de commande correspondante) et à s’assurer que l’utilisateur dispose de la bonne licence pour les fonctionnalités Microsoft Purview Audit (Premium).
 - **Des milliers d’événements d’audit peuvent faire l’objet de recherches**. Vous pouvez rechercher un large éventail d'activités auditées qui se produisent dans la plupart des services Microsoft 365 au sein de votre organisation. Pour obtenir une liste partielle des activités que vous pouvez rechercher, consultez [Activités auditées](search-the-audit-log-in-security-and-compliance.md#audited-activities). Pour obtenir la liste des services et fonctionnalités qui prennent en charge les activités auditées, consultez[Type d’enregistrement du journal d’audit](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).
-- **Outil de recherche de l’audit dans le portail de conformité Microsoft Purview**. Utilisez l’outil de recherche dans le journal d’audit dans le portail de conformité pour rechercher des enregistrements d’audit. Vous pouvez rechercher des activités spécifiques, des activités effectuées par des utilisateurs spécifiques et des activités effectuées avec une plage de dates. Voici une capture d’écran de l’Outil de recherche d’audit dans le Centre de conformité.
+- **Outil de recherche d’audit dans le portail de conformité Microsoft Purview**. Utilisez l’outil de recherche de journaux d’audit dans le portail de conformité pour rechercher des enregistrements d’audit. Vous pouvez rechercher des activités spécifiques, des activités effectuées par des utilisateurs spécifiques et des activités effectuées avec une plage de dates. Voici une capture d’écran de l’Outil de recherche d’audit dans le Centre de conformité.
 
-   ![Outil de recherche dans le journal d’audit dans le portail de conformité.](../media/AuditLogSearchToolMCC.png)
+   ![Outil de recherche de journaux d’audit dans le portail de conformité.](../media/AuditLogSearchToolMCC.png)
 
 - **Applet de commande Search-UnifiedAuditLog**. Vous pouvez également utiliser **l'applet de commande Search-UnifiedAuditLog** dans Exchange Online PowerShell (l'applet de commande sous-jacente de l'outil de recherche) pour rechercher des événements d'audit ou à utiliser dans un script. Pour plus d'informations, consultez :
 
@@ -55,25 +55,25 @@ L’Audit (Standard) Microsoft Purview vous offre la possibilité de journaliser
 
 - **Accès aux journaux d’audit via l’API Activité de gestion d’Office 365**. Une troisième méthode pour accéder et récupérer des enregistrements d’audit consiste à utiliser l’API Activité de gestion d’Office 365. Cela permet aux organisations de conserver les données d’audit pendant des périodes plus longues que les 90 jours par défaut, et de les importer dans une solution SIEM. Pour plus d’informations, consultez [Référence de l’API Activité de gestion Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
-- **Rétention du journal d’audit de 90**. Lorsqu’une activité auditée est effectuée par un utilisateur ou un administrateur, un enregistrement d’audit est généré et stocké dans le journal d’audit pour votre organisation. Dans l’Audit (Standard), les enregistrements sont conservés pendant 90 jours, ce qui signifie que vous pouvez rechercher des activités qui se sont produites au cours des trois derniers mois.
+- **Rétention du journal d’audit de 90**. Lorsqu’une activité auditée est effectuée par un utilisateur ou un administrateur, un enregistrement d’audit est généré et stocké dans le journal d’audit pour votre organisation. Dans Audit (Standard), les enregistrements sont conservés pendant 90 jours, ce qui signifie que vous pouvez rechercher des activités qui se sont produites au cours des trois derniers mois.
 
 ### <a name="audit-premium"></a>Audit (Premium)
 
-L’Audit (Premium) s’appuie sur les fonctionnalités de l’Audit (Standard) en fournissant des stratégies de rétention du journal d’audit, une rétention plus longue des enregistrements d’audit, des événements essentiels à forte valeur ajoutée et un accès plus large à l’API Activité de gestion Office 365.
+Audit (Premium) s’appuie sur les fonctionnalités d’Audit (Standard) en fournissant des stratégies de conservation des journaux d’audit, une conservation plus longue des enregistrements d’audit, des événements cruciaux de grande valeur et un accès à une bande passante plus élevée à l’API Office 365 Management Activity.
 
 - **Stratégies de rétention du journal d'audit**. Vous pouvez créer des stratégies de rétention personnalisées pour conserver les enregistrements d’audit pendant une durée maximale d’un an (et jusqu’à 10 ans pour les utilisateurs titulaires d’une licence de module complémentaire requise). Vous pouvez créer une stratégie de rétention des enregistrements d’audit en fonction du service sur lequel se produisent les activités auditées, des activités d’audit spécifiques ou de l’utilisateur qui effectue une activité auditée.
 
 - **Rétention plus longue des enregistrements d’audit**. Les enregistrements d'audit Exchange, SharePoint et Azure Active Directory sont conservés par défaut pendant un an. Par défaut, les enregistrements d’audit pour toutes les autres activités sont conservés pendant 90 jours. Vous pouvez utiliser des stratégies de rétention du journal d’audit pour configurer des périodes de rétention plus longues.
 
-- **Événements d’Audit (Premium) essentiels et importants**. Les enregistrements d’audit pour des événements essentiels peuvent aider votre organisation à mener des recherches de sécurité et de conformité en fournissant une visibilité vers des événements tels que le moment où les éléments de courrier ont été accédés, ou le moment où des éléments de courrier ont été répondus et envoyés, ou quand et ce qu’un utilisateur a recherché dans Exchange Online et SharePoint Online. Ces événements essentiels peuvent vous permettre d’identifier des violations possibles et de déterminer l’étendue de la compromission.
+- **Événements d’audit (Premium) cruciaux et de grande valeur**. Les enregistrements d’audit pour les événements cruciaux peuvent aider votre organisation à mener des enquêtes d’investigation et de conformité en offrant une visibilité sur des événements tels que le moment où les éléments de courrier ont été consultés, ou le moment où les éléments de courrier ont été répondus et transférés, ou quand et ce qu’un utilisateur a recherché dans Exchange Online et SharePoint. En ligne. Ces événements cruciaux peuvent vous aider à enquêter sur d’éventuelles violations et à déterminer l’étendue de la compromission.
 
-- **Bande passante supérieure à l’API Activité de gestion Office 365**. L’Audit (Premium) offre aux organisations davantage de bande passante pour accéder aux journaux d’audit via l’API Activité de gestion Office 365. Si toutes les organisations (qui disposent d'un Audit (Standard) ou d'un Audit (Premium)) se voient initialement attribuer une base de référence de 2 000 demandes par minute, cette limite augmentera de manière dynamique en fonction du nombre de sièges de l'organisation et de son abonnement aux licences. Ainsi, les organisations disposant d'un Audit (Premium) obtiennent environ deux fois plus de bande passante que les organisations disposant d'un Audit (Standard).
+- **Bande passante supérieure à l’API Activité de gestion Office 365**. Audit (Premium) fournit aux organisations plus de bande passante pour accéder aux journaux d’audit via l’API Office 365 Management Activity. Bien que toutes les organisations (qui disposent d’Audit (Standard) ou d’Audit (Premium)) se voient initialement allouer une base de 2 000 requêtes par minute, cette limite augmentera dynamiquement en fonction du nombre de sièges d’une organisation et de son abonnement à la licence. Ainsi, les organisations avec Audit (Premium) obtiennent environ deux fois plus de bande passante que les organisations avec Audit (Standard).
 
-Pour plus d’informations sur les fonctionnalités de l’Audit (Premium), consultez [Audit (Premium) dans Microsoft 365](advanced-audit.md).
+Pour plus d’informations sur les fonctionnalités d’audit (Premium), voir [Audit (Premium) dans Microsoft 365](advanced-audit.md).
 
 ## <a name="comparison-of-key-capabilities"></a>Comparaison des principales fonctionnalités
 
-Le tableau suivant compare les principales fonctionnalités disponibles dans les fonctionnalités d’Audit (Standard) et d’Audit (Premium). Toutes les fonctionnalités d’Audit (Standard) sont incluses dans l’Audit (Premium).
+Le tableau suivant compare les fonctionnalités clés disponibles dans Audit (Standard) et Audit (Premium). Toutes les fonctionnalités d’Audit (Standard) sont incluses dans Audit (Premium).
 
 |Fonctionnalité|Audit (Standard)|Audit (Premium)|
 |:------|:-------------|:-------------|
@@ -90,11 +90,11 @@ Le tableau suivant compare les principales fonctionnalités disponibles dans les
 |Événements importants et essentiels.||![Pris en charge](../media/check-mark.png)|
 ||||
 > [!NOTE]
-> <sup>1</sup> L’Audit (Premium) inclut un accès plus large à l’API Activité de gestion Office 365, qui offre un accès plus rapide aux données d’audit.<br/><sup>2</sup> En plus des licences requises pour l’Audit (Premium) (décrites dans la section suivante), une licence rétention du journal d’audit de 10 ans doit être attribuée à un utilisateur pour conserver ses enregistrements d’audit pendant 10 ans.
+> <sup>1</sup> Audit (Premium) inclut un accès à bande passante plus élevée à l’API Office 365 Management Activity, qui fournit un accès plus rapide aux données d’audit.<br/><sup>2</sup> En plus de la licence requise pour Audit (Premium) (décrite dans la section suivante), un utilisateur doit se voir attribuer une licence supplémentaire de conservation du journal d’audit de 10 ans pour conserver ses enregistrements d’audit pendant 10 ans.
 
 ## <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
-Les sections suivantes identifient les licences requises pour l’Audit (Standard) et l’Audit (Premium). La fonctionnalité d’Audit (Standard) est incluse dans la fonctionnalité Audit avancé.
+Les sections suivantes identifient les exigences de licence pour Audit (Standard) et Audit (Premium). La fonctionnalité Audit (Standard) est incluse avec Audit (Premium).
 
 ### <a name="audit-standard"></a>Audit (Standard)
 
@@ -126,46 +126,46 @@ Les sections suivantes identifient les licences requises pour l’Audit (Standar
 - Abonnement Office 365 Entreprise E5
 - Abonnement Office 365 Éducation A5
 
-## <a name="set-up-microsoft-365-auditing-solutions"></a>Configurer des solutions d’audit Microsoft 365
+## <a name="set-up-microsoft-purview-auditing-solutions"></a>Configurer les solutions d’audit Microsoft Purview
 
-Pour commencer à utiliser les solutions d’audit dans Microsoft 365, consultez les instructions de configuration suivantes.
+Pour commencer à utiliser les solutions d’audit dans Microsoft Purview, consultez les conseils de configuration suivants.
 
-### <a name="set-up-audit-standard"></a>Configurer l’Audit (Standard)
+### <a name="set-up-audit-standard"></a>Configurer l’audit (Standard)
 
-La première étape consiste à configurer l’audit (Standard), puis à lancer des recherches dans le journal d’audit.
+La première étape consiste à configurer Audit (Standard), puis à lancer des recherches dans le journal d’audit.
 
-![Flux de travail pour configurer l’Audit (Standard).](../media/BasicAuditingWorkflow.png)
+![Flux de travail pour configurer l’audit (Standard).](../media/BasicAuditingWorkflow.png)
 
-1. Vérifiez que votre organisation dispose d’un abonnement qui prend en charge l’Audit (Standard) et, le cas échéant, un abonnement qui prend en charge l’Audit (Premium).
+1. Vérifiez que votre organisation dispose d’un abonnement prenant en charge Audit (Standard) et, le cas échéant, d’un abonnement prenant en charge Audit (Premium).
 
-2. Attribuez des autorisations dans Exchange Online aux personnes de votre organisation qui utiliseront l’outil de recherche dans le journal d’audit dans le portail de conformité ou utilisez la cmdlet **Search-UnifiedAuditLog**. Plus précisément, les utilisateurs doivent avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online.
+2. Attribuez des autorisations dans Exchange Online aux personnes de votre organisation qui utiliseront l’outil de recherche de journaux d’audit dans le portail de conformité ou utiliseront la cmdlet **Search-UnifiedAuditLog**. Plus précisément, les utilisateurs doivent avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online.
 
 3. Effectuer une recherche dans le journal d’audit. À l’issue des étapes 1 et 2, les utilisateurs de votre organisation peuvent utiliser l’outil de recherche dans le journal d’audit (ou cmdlet correspondante) pour rechercher des activités auditées.
 
-Pour obtenir des instructions plus détaillées, voir [Configurer l’Audit (Standard)](set-up-basic-audit.md).
+Pour des instructions plus détaillées, voir [Configurer l’audit (Standard)](set-up-basic-audit.md).
 
 ### <a name="set-up-audit-premium"></a>Configurer l’audit (Premium)
 
-Si votre organisation a un abonnement qui prend en charge l’Audit (Premium), suivez les étapes pour configurer et utiliser les fonctionnalités supplémentaires d’Audit (Premium).
+Si votre organisation a un abonnement qui prend en charge Audit (Premium), effectuez les étapes suivantes pour configurer et utiliser les fonctionnalités supplémentaires dans Audit (Premium).
 
-![Flux de travail pour configurer l’Audit (Premium).](../media/AdvancedAuditWorkflow.png)
+![Flux de travail pour configurer l’audit (Premium).](../media/AdvancedAuditWorkflow.png)
 
-1. Configurer l’audit (Premium) pour les utilisateurs. Cette étape comprend les tâches suivantes :
+1. Configurer Audit (Premium) pour les utilisateurs. Cette étape comprend les tâches suivantes :
 
-   - Vérification de l’utilisation de la licence ou de la licence de module complémentaire appropriée pour l’Audit (Premium).
+   - Vérifier que les utilisateurs disposent de la licence ou de la licence complémentaire appropriée pour Audit (Premium).
   
-   - L'activation de l'application/du plan de service de l'Audit (Premium) doit concerner ces utilisateurs.
+   - L’activation de l’application/du plan de service Audit (Premium) doit être destinée à ces utilisateurs.
   
    - L'activation de l'audit des événements essentiels, puis l'activation de l'application/du plan de service d'audit avancé pour ces utilisateurs.
 
-2. Permettre que des événements de l’Audit (Premium) soient journalisés lorsque les utilisateurs effectuent des recherches dans Exchange Online et SharePoint Online.
+2. Activer la journalisation des événements d’audit (Premium) lorsque les utilisateurs effectuent des recherches dans Exchange Online et SharePoint Online.
 
 3. Configurer des stratégies de rétention du journal d'audit. En plus de la stratégie par défaut qui conserve les enregistrements d’audit Exchange, SharePoint et Azure AD pendant un an, vous pouvez créer des stratégies de rétention supplémentaires pour le journal d’audit afin de répondre aux exigences des équipes de sécurité, informatique et de conformité de votre organisation.
 
-4. Recherchez des événements de l’Audit (Premium) essentiels et d’autres activités lors d’enquêtes. À l’issue des étapes 1 et 2, vous pouvez rechercher des événements de l’Audit (Premium) et d’autres activités dans le journal d’audit lors d’enquêtes approfondies sur des comptes compromis et d’autres types d’enquêtes de sécurité ou de conformité.
+4. Rechercher des événements d’audit (Premium) cruciaux et d’autres activités lors de la conduite d’enquêtes médico-légales. Après avoir terminé les étapes 1 et 2, vous pouvez rechercher dans le journal d’audit des événements d’audit (Premium) et d’autres activités lors d’enquêtes judiciaires sur des comptes compromis et d’autres types d’enquêtes de sécurité ou de conformité.
 
-Pour obtenir des instructions plus détaillées, voir [Configurer l’Audit (Premium)](set-up-advanced-audit.md).
+Pour des instructions plus détaillées, voir [Configurer l’audit (Premium)](set-up-advanced-audit.md).
 
 ## <a name="training"></a>Formation
 
-La formation de l'équipe en charge des opérations de sécurité, des administrateurs informatiques et des enquêteurs de conformité aux principes fondamentaux de l'Audit (Standard) et de l'Audit (Premium) peut aider votre organisation à utiliser plus rapidement l'audit dans le cadre de ses enquêtes. Microsoft 365 fournit la ressource suivante pour aider ces utilisateurs de votre organisation à démarrer l’audit: [Décrire les fonctionnalités eDiscovery et d’audit de Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+Former votre équipe d’opérations de sécurité, vos administrateurs informatiques et votre équipe d’enquêteurs de conformité aux fondamentaux de l’audit (standard) et de l’audit (premium) peut aider votre organisation à démarrer plus rapidement en utilisant l’audit pour vous aider dans vos enquêtes. Microsoft 365 fournit la ressource suivante pour aider ces utilisateurs de votre organisation à démarrer l’audit: [Décrire les fonctionnalités eDiscovery et d’audit de Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).

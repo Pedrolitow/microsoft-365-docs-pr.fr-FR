@@ -15,14 +15,16 @@ search.appverid:
 - MET150
 description: Choisissez la façon dont vous affichez du contenu dans eDiscovery (Premium), par exemple du texte, de l’annotation, de la conversion ou de l’affichage natif.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 775804bd8e69e11bdacd1fee141234b07462dbef
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8248eaa1fd8bce5c34bb8c936b9fecc0dd29deba
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945800"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992817"
 ---
 # <a name="view-documents-in-a-review-set-in-ediscovery-premium"></a>Afficher les documents dans un ensemble de révisions dans eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 eDiscovery (Premium) affiche le contenu via plusieurs visionneuses chacune à des fins différentes. Les différents visionneuses peuvent être utilisés en cliquant sur un document dans un jeu à réviser. Les visionneuses actuellement fournies sont les suivantes :
 

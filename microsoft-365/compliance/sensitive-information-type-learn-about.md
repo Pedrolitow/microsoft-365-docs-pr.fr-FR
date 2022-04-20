@@ -16,16 +16,18 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Cet article donne une vue d’ensemble des types d’informations sensibles et de la façon dont ils détectent les informations sensibles telles que la sécurité sociale, les numéros de carte de crédit ou les numéros de compte bancaire pour identifier les éléments sensibles
-ms.openlocfilehash: aef78c5ab3348b7a0b00a649f94fa5e50a99a397
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 0e154e0ee578b9a182cb7cd5b43cafba466f9bcd
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760314"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971348"
 ---
 # <a name="learn-about-sensitive-information-types"></a>En savoir plus sur les types d’informations sensibles
 
-L’identification et la classification des éléments sensibles qui sont sous le contrôle de votre organisation est la première étape de la [discipline Information Protection](./information-protection.md).  Microsoft 365 fournit trois façons d’identifier les éléments afin qu’ils puissent être classés :
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+L’identification et la classification des éléments sensibles qui sont sous le contrôle de votre organisation est la première étape de la [discipline Information Protection](./information-protection.md).  Microsoft Purview offre trois façons d’identifier les éléments afin qu’ils puissent être classés :
 
 - manuellement par les utilisateurs
 - reconnaissance automatisée des modèles, comme les types d’informations sensibles
@@ -37,7 +39,7 @@ Microsoft fournit un grand nombre de SIT préconfigurés ou vous pouvez créer l
 
 ## <a name="sensitive-information-types-are-used-in"></a>Les types d’informations sensibles sont utilisés dans
 
-- [Stratégies de protection contre la perte de données](dlp-learn-about-dlp.md)
+- [Stratégies de protection contre la perte de données Microsoft Purview](dlp-learn-about-dlp.md)
 - [Étiquettes de confidentialité](sensitivity-labels.md)
 - [Étiquettes de rétention](retention.md)
 - [Gestion des risques internes](insider-risk-management.md)
@@ -53,7 +55,7 @@ Par défaut, ces SIT sont créés par Microsoft dans la console de conformité. 
 
 ### <a name="named-entity-sensitive-information-types"></a>Types d’informations sensibles d’entité nommés
 
-Les SIT d’entité nommée s’affichent également dans la console de conformité par défaut. Ils détectent les noms des personnes, les adresses physiques et les conditions médicales. Ils ne peuvent pas être modifiés ou copiés. Pour plus [d’informations, consultez l’article En savoir plus sur les entités nommées (préversion](named-entities-learn.md#learn-about-named-entities-preview) ). Les SIT d’entité nommée sont de deux types :
+Les SIT d’entité nommée s’affichent également dans la console de conformité par défaut. Ils détectent les noms des personnes, les adresses physiques et les conditions médicales. Ils ne peuvent pas être modifiés ou copiés. Pour plus [d’informations, consultez l’article En savoir plus sur les entités nommées ](named-entities-learn.md#learn-about-named-entities) . Les SIT d’entité nommée sont de deux types :
 
 **un-bundled**
 
@@ -172,9 +174,8 @@ Vous pouvez choisir parmi plusieurs options pour créer des types d’informatio
 - **Utiliser PowerShell** : vous pouvez configurer des types d’informations sensibles personnalisés à l’aide de PowerShell. Bien que cette méthode soit plus complexe que celle de l’interface utilisateur, elle offre davantage d’options de configuration. Voir [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
 > [!NOTE]
-> Des niveaux de confiance améliorés sont disponibles pour une utilisation immédiate dans la protection contre la perte de données pour les services Microsoft 365, les Protection des données Microsoft pour les services Microsoft 365, la conformité des communications, la gouvernance des informations et la gestion des enregistrements.
-> Microsoft 365 Information Protection prend désormais en charge les langues de jeu de caractères sur deux octets pour :
->
+> Des niveaux de confiance améliorés sont disponibles pour une utilisation immédiate dans les services de protection contre la perte de données Microsoft Purview, la protection des informations, la conformité des communications, la gestion du cycle de vie des données et la gestion des enregistrements.
+> Information Protection prend désormais en charge les langues de jeu de caractères sur deux octets pour :
 > - Chinois (simplifié)
 > - Chinois (traditionnel)
 > - Korean

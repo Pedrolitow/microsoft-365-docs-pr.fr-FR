@@ -15,21 +15,23 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 5de25b0b1385e709a818b1ff797910ec4ee4ddfc
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 28f110c6b236721debdb5585263dd835f2a5a658
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949628"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993137"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>Migrer les recherches et conservations eDiscovery héritées vers le portail de conformité
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Le portail de conformité Microsoft Purview offre une expérience améliorée pour l’utilisation d’eDiscovery, notamment : une fiabilité plus élevée, de meilleures performances et de nombreuses fonctionnalités adaptées aux flux de travail eDiscovery, notamment des cas d’organisation de votre contenu par matière, des ensembles de révision pour passer en revue le contenu et l’analytique afin d’éliminer les données à examiner, telles que le regroupement en quasi-double, le thread de messagerie, l’analyse des thèmes et le codage prédictif.
 
 Pour aider les clients à tirer parti des fonctionnalités nouvelles et améliorées, cet article fournit des conseils de base sur la façon de migrer In-Place recherches eDiscovery et les conservations du <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a> vers le portail de conformité.
 
 > [!NOTE]
-> Étant donné qu’il existe de nombreux scénarios différents, cet article fournit des conseils généraux sur la transition des recherches et les conservations vers un cas eDiscovery de base dans le portail de conformité. L’utilisation de cas eDiscovery n’est pas toujours nécessaire, mais elle ajoute une couche de sécurité supplémentaire en vous permettant d’attribuer des autorisations pour contrôler qui a accès aux cas eDiscovery dans votre organisation.
+> Étant donné qu’il existe de nombreux scénarios différents, cet article fournit des conseils généraux sur la transition des recherches et les conservations vers un cas eDiscovery (Standard) dans le portail de conformité. L’utilisation de cas eDiscovery n’est pas toujours nécessaire, mais elle ajoute une couche de sécurité supplémentaire en vous permettant d’attribuer des autorisations pour contrôler qui a accès aux cas eDiscovery dans votre organisation.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 

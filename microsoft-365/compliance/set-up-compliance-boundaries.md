@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Découvrez comment utiliser les limites de conformité pour créer des limites logiques qui contrôlent les emplacements de contenu utilisateur qu’un gestionnaire eDiscovery peut rechercher dans Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6eab4528cb399f880d40c8edcea16814ad9b7ade
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: adfdc0284983c6efb91f076be1a203734deb038e
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941872"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993971"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurer les limites de conformité pour les investigations eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Les conseils de cet article peuvent être appliqués lors de l’utilisation de Microsoft Purview eDiscovery (Standard) ou de Microsoft Purview eDiscovery (Premium) pour gérer les investigations.
 

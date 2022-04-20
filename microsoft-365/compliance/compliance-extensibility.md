@@ -20,14 +20,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment étendre les solutions Microsoft Purview à l’aide de connecteurs de données tiers et d’API Microsoft Graph.
-ms.openlocfilehash: e61cd2dfa8121a0925cc89fd5373569d9697936a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9d2c3235a29e2d25e24656a4ff94216cde925b6c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942752"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992257"
 ---
 # <a name="microsoft-purview-and-microsoft-priva-extensibility"></a>Extensibilité de Microsoft Purview et Microsoft Priva
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Les solutions Microsoft Purview aident les organisations à évaluer intelligemment leurs risques de conformité, à régir et à protéger les données sensibles, et à répondre efficacement aux exigences réglementaires. Microsoft Purview est riche en scénarios d’extensibilité et permet aux organisations d’adapter, d’étendre, d’intégrer, d’accélérer et de prendre en charge leurs solutions de conformité.
 

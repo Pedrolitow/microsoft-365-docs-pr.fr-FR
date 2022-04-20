@@ -21,14 +21,16 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Découvrez les éléments non indexés dans Exchange et SharePoint que vous pouvez inclure dans une recherche eDiscovery que vous exécutez dans le portail de conformité Microsoft Purview.
-ms.openlocfilehash: 3e4f9521151755f97f3ad4b824c763f3ab5d807f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b88e7d0f6651ecaa31849343db066295af1f5e84
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932042"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993093"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Éléments partiellement indexés dans eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Une recherche Microsoft Purview eDiscovery que vous exécutez à partir du portail de conformité Microsoft Purview inclut automatiquement des éléments partiellement indexés dans les résultats de recherche estimés lorsque vous exécutez une recherche. Les éléments partiellement indexés sont Exchange des éléments de boîte aux lettres et des documents sur SharePoint et OneDrive Entreprise sites qui, pour une raison quelconque, n’ont pas été entièrement indexés pour la recherche. Dans Exchange, un élément partiellement indexé contient généralement un fichier (d’un type de fichier qui ne peut pas être indexé) joint à un message électronique. Voici d’autres raisons pour lesquelles les éléments ne peuvent pas être indexés pour la recherche et sont retournés en tant qu’éléments partiellement indexés lorsque vous exécutez une recherche eDiscovery :
   

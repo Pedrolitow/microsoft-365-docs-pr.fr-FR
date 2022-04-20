@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment utiliser l’onglet Test après le calcul Batch dans eDiscovery (Premium) pour tester, comparer et valider la qualité globale du traitement.
-ms.openlocfilehash: 7e4541aa2309b6209537931160bf351d22ee8eb7
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e568552501a07c74e7500a1041e69f4994668cd2
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935497"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991861"
 ---
 # <a name="test-relevance-analysis-in-ediscovery-premium"></a>Tester l’analyse de pertinence dans eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 L’onglet Test dans Microsoft Purview eDiscovery (Premium) vous permet de tester, de comparer et de valider la qualité globale du traitement. Ces tests sont effectués après le calcul Batch. En étiquetant les fichiers de la collection, un expert rend le jugement final sur la pertinence de chaque fichier étiqueté pour l’affaire.
   

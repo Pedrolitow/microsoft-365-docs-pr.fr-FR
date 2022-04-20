@@ -11,16 +11,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 description: Utilisez l’outil eDiscovery de recherche de contenu dans le portail de conformité Microsoft Purview pour rechercher rapidement des e-mails dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, ainsi que des conversations de messagerie instantanée dans Skype Entreprise.
-ms.openlocfilehash: b339d2f4ebe738407c42eda86f18a5167af03921
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4efe2f4b4735005c10fd59e618bb6ecc8be51ec0
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941938"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993642"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Rechercher du contenu à l’aide de l’outil de recherche de contenu
 
-Utilisez l’outil de recherche de contenu dans le portail de conformité Microsoft Purview pour rechercher rapidement des e-mails dans Exchange boîtes aux lettres, des documents dans des sites SharePoint et des emplacements OneDrive, ainsi que des conversations de messagerie instantanée dans Skype Entreprise. Vous pouvez utiliser l'outil de recherche de contenu pour rechercher des e-mails, des documents et des conversations de messagerie instantanée dans des outils de collaboration tels que Microsoft Teams et Microsoft 365 Groups.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Utilisez l'outil de recherche de contenu dans le portail de conformité Microsoft Purview pour rechercher rapidement des e-mails dans les boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, et des conversations de messagerie instantanée dans Skype Entreprise. Vous pouvez utiliser l'outil de recherche de contenu pour rechercher des e-mails, des documents et des conversations de messagerie instantanée dans des outils de collaboration tels que Microsoft Teams et Microsoft 365 Groups.
   
 ## <a name="search-for-content"></a>Recherche de contenu
 

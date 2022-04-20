@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Configurez les paramètres microsoft Purview eDiscovery (Premium) qui s’appliquent à tous les ensembles de révisions dans un cas. Cela inclut des paramètres pour l’analytique et la reconnaissance optique des caractères.
-ms.openlocfilehash: f6cae054f111aa3aa4f8c7d4ab3c3323ce0498ff
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c5b542f224e35a6505dca9cbfacb5f1095fa2dbe
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949672"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992301"
 ---
 # <a name="configure-search-and-analytics-settings-in-ediscovery-premium"></a>Configurer les paramètres de recherche et d’analytique dans eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez configurer les paramètres de chaque cas de découverte électronique Microsoft Purview (Premium) pour contrôler les fonctionnalités suivantes.
 
@@ -90,7 +92,7 @@ Lorsque ce paramètre est activé, le traitement OCR est exécuté sur les fichi
 
 - Lorsque du contenu provenant d’autres sources de données (qui ne sont pas associés à un consignat et ajoutés au cas dans une source de données non gardienne) est ajouté à un jeu de révision.
 
-Une fois les données ajoutées à un jeu de révision, le texte de l’image peut être révisé, recherché, étiqueté et analysé. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans le jeu de révision. Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Une fois les données ajoutées à un jeu de révision, le texte de l’image peut être révisé, recherché, étiqueté et analysé. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans le jeu de révision. Pour plus d’informations, voir :
 
 - [Indexation avancée des données des consignataires](indexing-custodian-data.md)
 

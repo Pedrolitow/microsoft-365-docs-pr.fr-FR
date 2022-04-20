@@ -18,12 +18,12 @@ ms.custom: ''
 description: Le personnel SecOps peut apprendre à utiliser la file d’attente Incidents dans Microsoft 365 Defender pour gérer les incidents dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 97e3235a0b5d03961f87ba3110f71031f60824d3
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 04a65591e96e11f2e949ce161fd592d313af2a66
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747394"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64970762"
 ---
 # <a name="manage-incidents-and-alerts-from-microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Gérer les incidents et les alertes à partir de Microsoft Defender pour Office 365 dans Microsoft 365 Defender
 

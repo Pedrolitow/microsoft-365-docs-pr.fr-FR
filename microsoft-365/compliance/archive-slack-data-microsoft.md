@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur de données Slack eDiscovery fourni par Microsoft pour importer et archiver des données de messagerie instantanée.
-ms.openlocfilehash: 902a42e78dc92424c2143ffce548a9c8791609ea
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 418cbbd67444992f366ad5366258e0ea8eccc503
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950674"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992323"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>Configurer un connecteur pour archiver les données Slack eDiscovery (préversion)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Le connecteur de données Slack eDiscovery fourni par Microsoft vous permet d’importer et d’archiver des données de messagerie instantanée (telles que des messages, des pièces jointes, des liens et des révisions) à partir des espaces de travail Slack de votre organisation vers Microsoft 365. Le connecteur de données extrait les données de l’API Slack, les convertit au format d’e-mail, puis importe ces éléments dans des boîtes aux lettres utilisateur dans Microsoft 365. Une fois les données Slack importées, vous pouvez appliquer des solutions de conformité, telles que la conservation des litiges, la découverte électronique Microsoft Purview (Premium), la conformité des communications et les paramètres de rétention au contenu Slack. L’utilisation d’un connecteur de données Slack eDiscovery pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 

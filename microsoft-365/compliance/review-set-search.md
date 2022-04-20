@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment créer et exécuter une requête dans un ensemble de révisions afin d’organiser le contenu pour une révision plus efficace dans un cas de découverte électronique Microsoft Purview (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ead066428d5c2404da5bf863ad428784b3c3a30c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: aad8cd7461c795f8ecba03edab76e81e8384430d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936288"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991927"
 ---
 # <a name="query-and-filter-content-in-a-review-set"></a>Interroger et filtrer du contenu dans un jeu à réviser
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Dans la plupart des cas, il sera utile d’approfondir le contenu d’un ensemble de révisions et de l’organiser pour faciliter une révision plus efficace. L’utilisation de filtres et de requêtes dans un jeu de révision vous permet de vous concentrer sur un sous-ensemble de documents qui répondent aux critères de votre révision.
 

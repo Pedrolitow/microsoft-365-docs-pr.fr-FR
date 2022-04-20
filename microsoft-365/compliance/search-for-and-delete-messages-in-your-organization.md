@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilisez la fonctionnalité de recherche et de vidage dans le portail de conformité Microsoft Purview pour rechercher et supprimer un message électronique de toutes les boîtes aux lettres de votre organisation.
-ms.openlocfilehash: 23eeff8078dbd7ab65b0bddb9684aa81d65aab94
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 67a1c6758a5030897afbde07a0803cad348eca0c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936244"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993655"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Rechercher et supprimer des messages électroniques
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Cet article est destiné aux administrateurs. Vous essayez de rechercher des éléments à supprimer dans votre boîte aux lettres ? Voir [Rechercher un message ou un élément avec la Recherche instantanée](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**.
 

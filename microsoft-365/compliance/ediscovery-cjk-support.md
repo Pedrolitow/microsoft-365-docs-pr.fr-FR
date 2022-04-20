@@ -16,14 +16,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment Microsoft Purview eDiscovery (Premium) dans Microsoft 365 prend en charge les langues chinoise, japonaise et coréenne (CJC), qui utilisent un jeu de caractères sur deux octets.
-ms.openlocfilehash: 70081341499f348f1bb8e226b4d3b5e9c0bab031
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e6221d37a3ebb07414f87f349b020365c80990e3
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934794"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992213"
 ---
 # <a name="cjk-language-support-for-ediscovery-premium"></a>Prise en charge du langage CJC pour eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview eDiscovery (Premium) prend en charge les langues de jeu de caractères sur deux octets (notamment le chinois simplifié, le chinois traditionnel, le japonais et le coréen, qui sont collectivement appelés langues *CJC*) pour les scénarios avancés suivants dans un ensemble de révisions :
 

@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données de Veritas Symphony dans Microsoft 365. Ce connecteur vous permet d’archiver les données de sources de données tierces dans Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces.
-ms.openlocfilehash: 119d5b34d32cd193d4ab5e89d6e435c3fc24a574
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dbff83ca244ca24fdd1a42f0929ec3e43f84b4d1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938552"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992344"
 ---
 # <a name="set-up-a-connector-to-archive-symphony-data"></a>Configurer un connecteur pour archiver les données Symphony
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez un connecteur Veritas dans le portail de conformité Microsoft Purview pour importer et archiver des données Symphony dans des boîtes aux lettres utilisateur de votre organisation Microsoft 365. Symphony est une plateforme de messagerie et de collaboration utilisée dans le secteur des services financiers. Veritas fournit un connecteur de données [Symphony](https://globanet.com/symphony) dans le portail de conformité que vous pouvez configurer pour capturer des éléments à partir de la source de données tierce (régulièrement), puis importer ces éléments dans des boîtes aux lettres utilisateur. Le connecteur convertit le contenu d’un élément du compte Symphony au format de message électronique, puis importe l’élément dans une boîte aux lettres dans Microsoft 365.
 

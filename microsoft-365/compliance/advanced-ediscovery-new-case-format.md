@@ -16,16 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez le nouveau format de cas dans eDiscovery (Premium) afin de pouvoir ajouter d’autres éléments pour passer en revue les ensembles et tirer parti d’autres limites accrues et de nouvelles fonctionnalités.
-ms.openlocfilehash: 36650a369d2bac2742eb7f0d5ea76b3a530a1a03
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6c3e9f86cac5424ae9d9610a9c715c2f86563f64
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947426"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993554"
 ---
 # <a name="use-the-new-case-format-in-ediscovery-premium"></a>Utiliser le nouveau format de cas dans eDiscovery (Premium)
 
-De plus en plus d’organisations utilisent la solution eDiscovery (Premium) dans Microsoft 365 pour les processus eDiscovery critiques. Cela comprend la réponse aux demandes réglementaires, aux enquêtes et aux litiges. À mesure que l’utilisation d’eDiscovery (Premium) augmente, une exigence courante du client consiste à développer la quantité totale de contenu pouvant être gérée dans un cas eDiscovery (Premium). Pour faciliter la prise en charge des augmentations significatives de la taille du cas, à la fois pour le volume total de données et le nombre total d’éléments, vous pouvez désormais choisir le nouveau format de cas lorsque vous créez un cas eDiscovery (Premium).  
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+De plus en plus d’organisations utilisent la solution eDiscovery (Premium) dans Microsoft Purview pour les processus eDiscovery critiques. Cela comprend la réponse aux demandes réglementaires, aux enquêtes et aux litiges. À mesure que l’utilisation d’eDiscovery (Premium) augmente, une exigence courante du client consiste à développer la quantité totale de contenu pouvant être gérée dans un cas eDiscovery (Premium). Pour faciliter la prise en charge des augmentations significatives de la taille du cas, à la fois pour le volume total de données et le nombre total d’éléments, vous pouvez désormais choisir le nouveau format de cas lorsque vous créez un cas eDiscovery (Premium).  
 
 ## <a name="create-a-case"></a>Créer un cas
 

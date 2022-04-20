@@ -1,5 +1,5 @@
 ---
-title: Thèmes dans Advanced eDiscovery
+title: Thèmes dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Utilisez thèmes dans eDiscovery (Premium) pour organiser les ensembles de révision en recherchant le thème dominant dans chaque document.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 49605d2d7fb3103c672fd5ae4d2249956d52b6a0
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e019c103114630411a7d13ae619827a2e83a890c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934509"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991751"
 ---
 # <a name="themes-in-ediscovery-premium"></a>Thèmes dans eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Comment une personne écrit-elle un document ? Ils commencent généralement par une ou plusieurs idées qu’ils souhaitent transmettre dans le document et composent à l’aide de mots qui s’alignent sur les idées. Plus une idée est répandue, plus les mots associés à cette idée sont fréquents. Cela indique également comment les utilisateurs consomment des documents. La chose importante à comprendre de la lecture d’un document est les idées que le document tente de transmettre, quelles idées apparaissent où, et quelles sont les relations entre les idées.
 

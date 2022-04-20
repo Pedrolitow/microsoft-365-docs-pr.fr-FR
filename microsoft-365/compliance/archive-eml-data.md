@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données EML à partir de Veritas dans Microsoft 365. Ce connecteur vous permet d’archiver les données de sources de données tierces dans Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces.
-ms.openlocfilehash: c4c4043baf8f58405923bf5ac1bc69c6293a4f52
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9ba4cc4772e93b85e856bb68850ba682352e9f5f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938706"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993532"
 ---
 # <a name="set-up-a-connector-to-archive-eml-data"></a>Configurer un connecteur pour archiver les données EML
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez un connecteur Veritas dans le portail de conformité Microsoft Purview pour importer et archiver des données EML dans les boîtes aux lettres utilisateur de votre organisation Microsoft 365. EML est l’extension de fichier pour un message électronique enregistré dans un fichier. Le connecteur convertit le contenu d’un élément du format source en format de message électronique, puis importe l’élément dans une boîte aux lettres utilisateur.
 

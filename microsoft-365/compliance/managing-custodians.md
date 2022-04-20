@@ -18,14 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser l’outil de gestion des consignats dans eDiscovery (Premium) pour gérer les données d’une affaire juridique.
-ms.openlocfilehash: 75655b48cf0061879edf5ea559712daa29ce4893
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0c529b339c79789072cf160916db8c21acff7d86
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948438"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992191"
 ---
 # <a name="work-with-custodians-and-non-custodial-data-sources-in-ediscovery-premium"></a>Collaborer avec des consignatateurs et des sources de données non liées à la garde dans eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsqu’une organisation répond à une enquête juridique, le flux de travail autour de l’identification, de la conservation et de la collecte de contenu potentiellement pertinent est basé sur les personnes de l’organisation qui sont les gardiens des données pertinentes. Dans eDiscovery, ces personnes sont appelées *« dépositaires de données* » (ou simplement *« dépositaires* ») et sont définies comme « personnes ayant le contrôle administratif d’un document ou d’un fichier électronique ». Par exemple, le consignataire d’un courrier électronique peut être le propriétaire de la boîte aux lettres contenant le message concerné.
 

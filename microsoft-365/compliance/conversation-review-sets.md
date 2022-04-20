@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez la fonctionnalité de reconstruction de conversation dans Microsoft Purview eDiscovery (Premium) (appelée thread de conversation) pour reconstruire, examiner et exporter des conversations de conversation dans des groupes Microsoft Teams et Yammer.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9bfd87de95449ab30b8a33c9f7f96db458e809d1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c3cd05ab340775a7a923b9e4a0f66c3abaf559cb
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950266"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993269"
 ---
 # <a name="conversation-threading-in-ediscovery-premium"></a>Thread de conversation dans eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La messagerie instantanée est un moyen pratique de poser des questions, de partager des idées ou de communiquer rapidement au sein d’un large public. Comme les plateformes de messagerie instantanée, comme les groupes Microsoft Teams et Yammer, deviennent essentielles à la collaboration d’entreprise, les organisations doivent évaluer la façon dont leur flux de travail eDiscovery traite ces nouvelles formes de communication et de collaboration.
 

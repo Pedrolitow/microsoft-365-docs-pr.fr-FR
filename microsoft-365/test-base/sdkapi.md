@@ -1,6 +1,6 @@
 ---
-title: Test Base API & SDK
-description: Test Base API & SDK
+title: Kit de développement logiciel (SDK) d’API de base de test &
+description: Kit de développement logiciel (SDK) d’API de base de test &
 search.appverid: MET150
 author: mansipatel-usl
 ms.author: mapatel
@@ -14,104 +14,102 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: f7e5edeeac79b417bcb41f8607c46fc8894ea4fc
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 14bfa8711d5cff46b8cce02950c087844384b9f9
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110378"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953779"
 ---
-# <a name="manage-your-resource-with-sdk--apis"></a>Gérer votre ressource avec les API de & SDK
-L’automatisation est un aspect clé de DevOps développement agile. Souhaitez-vous gérer la Base de test pour Microsoft 365 ressources de test, obtenir les résultats des tests par programme et les intégrer à nos outils CI ? Les API de base de test/SDK peuvent vous aider à atteindre tous ces objectifs et bien plus encore ! 
+# <a name="manage-your-resource-with-sdk--apis"></a>Gérer votre ressource avec le Kit de développement logiciel (SDK) & DES API
 
-Ces API/SDK permettent aux professionnels de l’informatique et aux développeurs d’applications de : 
-- Gérer les comptes de base de test, y compris créer, mettre à jour et horsboard. 
-- Gérer les packages d’application, y compris créer, mettre à jour, supprimer et télécharger un package. 
-- Obtenez le résumé des tests, les résultats détaillés des tests et les résultats de l’analyse. Le résultat de l’analyse inclut l’analyse de la régression du processeur, l’analyse de l’utilisation du processeur, l’analyse de la régression de la mémoire et l’analyse de l’utilisation de la mémoire. 
-- Téléchargez les résultats des tests et testez l’enregistrement vidéo de l’exécution.  
+L’automatisation est un aspect clé du développement DevOps et agile. Cherchez-vous à gérer la base de tests pour Microsoft 365 ressources, à obtenir des résultats de test par programme et à les intégrer à nos outils CI ? Les API de base de test/kit de développement logiciel (SDK) peuvent vous aider à atteindre tous ces objectifs et bien plus encore !
 
-Consultez le plan pas à pas ci-dessous pour savoir comment accéder à cette nouvelle fonctionnalité dans la base de test Microsoft 365 service.
+Ces API/SDK permettent aux professionnels de l’informatique et aux développeurs d’applications d’effectuer les opérations suivantes :
 
-## <a name="a-step-by-step-example-of-test-base-account-creation-by-using-python-sdk"></a>Exemple pas à pas de création de compte de base de test à l’aide du SDK Python
+- Gérez les comptes de base de test, notamment la création, la mise à jour et la désintégrage.
+- Gérez les packages d’application, notamment créer, mettre à jour, supprimer et télécharger le package.
+- Obtenez le résumé des tests, les résultats détaillés des tests et les résultats d’analyse. Le résultat de l’analyse inclut l’analyse de régression du processeur, l’analyse de l’utilisation du processeur, l’analyse de régression de la mémoire et l’analyse de l’utilisation de la mémoire.
+- Téléchargez les résultats des tests et l’enregistrement vidéo de l’exécution des tests.
 
-1. Conditions préalables : 
+Consultez le plan pas à pas ci-dessous pour savoir comment accéder à cette nouvelle fonctionnalité dans la base de test pour Microsoft 365 service.
 
-- Installez les composants requis ci-dessous : 
+## <a name="a-step-by-step-example-of-test-base-account-creation-by-using-python-sdk"></a>Exemple pas à pas de création de compte de base de test à l’aide du Kit de développement logiciel (SDK) Python
 
-    [Compte Azure avec un abonnement actif](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup) si vous n’avez pas d’abonnement<br>
-    [Python 2.7+ ou 3.6+](https://www.python.org/downloads)<br>
-    [Interface Command-Line Azure (CLI)](/cli/azure/install-azure-cli) <br>
+1. Conditions préalables :
 
-- Installer des packages de bibliothèque à l’aide de l’installation de pip à partir de la console 
+   - Installez les composants requis ci-dessous :
 
-```
-pip install azure-identity 
-pip install azure-mgmt-testbase
-```
+     - [Compte Azure avec un abonnement actif](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup) si vous n’avez pas d’abonnement
+     - [Python 2.7+ ou 3.6+](https://www.python.org/downloads)
+     - [Interface de Command-Line Azure (CLI)](/cli/azure/install-azure-cli)
 
-- Authentification dans l’environnement dev 
+   - Installer des packages de bibliothèque à l’aide de l’installation pip à partir de la console
 
-Lors du débogage et de l’exécution de code localement, il est courant pour les développeurs d’utiliser leurs propres comptes pour authentifier les appels aux services Azure. Le package azure-identity prend en charge l’authentification via Azure CLI pour simplifier le développement local. Pour vous inscrire à Azure CLI, exécutez ```az login ``` . Sur un système avec un navigateur web par défaut, azure CLI lance le navigateur pour authentifier un utilisateur. 
+     ```console
+     pip install azure-identity
+     pip install azure-mgmt-testbase
+     ```
 
-Vérifiez [comment authentifier les applications Python avec les services Azure| Microsoft Docs et](/azure/developer/python/azure-sdk-authenticate)  pour [https://pypi.org/project/azure-identity/](https://pypi.org/project/azure-identity/) d’autres méthodes d’authentification pris en charge. 
+   - Authentification dans un environnement de développement
 
- - Créez un groupe de ressources avec le nom souhaité qui sera utilisé dans les étapes suivantes. 
+     Lors du débogage et de l’exécution du code localement, il est courant pour les développeurs d’utiliser leurs propres comptes pour authentifier les appels aux services Azure. Le package azure-identity prend en charge l’authentification via Azure CLI pour simplifier le développement local. Pour vous connecter à Azure CLI, exécutez `az login`. Sur un système avec un navigateur web par défaut, Azure CLI lance le navigateur pour authentifier un utilisateur.
 
-2. L’extrait de code ci-dessous couvre le flux pour créer un compte de base de test, y compris 
+     Découvrez [comment authentifier des applications Python avec les services Azure| Microsoft Docs](/azure/developer/python/azure-sdk-authenticate) et <https://pypi.org/project/azure-identity/> pour d’autres méthodes d’authentification prises en charge.
 
-- Demander des informations d’identification via Azure CLI pour l’interaction avec Azure 
-- Initialiser le client SDK de base de test avec les informations d’identification et l’ID d’abonnement pour les opérations ultérieures 
-- Appeler begin_create à partir test_base_accounts modèle de test pour créer un compte de base de test 
+   - Créez un groupe de ressources avec le nom souhaité qui sera utilisé dans les étapes suivantes.
 
-Copiez le code dans votre environnement de développement Python et remplacez « subscription-id » par votre ID d’abonnement Azure et « resource-group-name » par votre groupe de ressources que vous avez créé ci-dessus. 
+2. L’extrait de code ci-dessous couvre le flux de création d’un compte de base de test, y compris
 
- 
-```python
+   - Demander des informations d’identification via Azure CLI pour une interaction avec Azure
+   - Initialiser le client du Kit de développement logiciel (SDK) de base de test avec les informations d’identification et l’ID d’abonnement pour les opérations ultérieures
+   - Appeler begin_create à partir d’un modèle test_base_accounts pour créer un compte de base de test
 
-from azure.identity import AzureCliCredential
-from azure.mgmt.testbase import TestBase
-from azure.mgmt.testbase.models import TestBaseAccountResource
-from azure.mgmt.testbase.models import TestBaseAccountSKU
+   Copiez le code dans votre environnement de développement Python et remplacez « subscription-id » par votre ID d’abonnement Azure et « resource-group-name » par votre groupe de ressources que vous avez créé ci-dessus.
 
-# requesting token from Azure CLI for request
-# For other authentication approaches, please see: https://pypi.org/project/azure-identity/
-credential = AzureCliCredential()
-subscription_id = "<subscription-id>"
-resource_group = "<resource-group-name>"
-testBaseAccount_name = "contoso-testbaseAccount"
-testBaseAccount_location = "global"
-sku_name = "S0"
-sku_tier = "Standard"
-sku_locations = {"global"}
+   ```python
+   from azure.identity import AzureCliCredential
+   from azure.mgmt.testbase import TestBase
+   from azure.mgmt.testbase.models import TestBaseAccountResource
+   from azure.mgmt.testbase.models import TestBaseAccountSKU
 
-# Create client
-testBase_client = TestBase(credential, subscription_id)
+   # requesting token from Azure CLI for request
+   # For other authentication approaches, please see: https://pypi.org/project/azure-identity/
+   credential = AzureCliCredential()
+   subscription_id = "<subscription-id>"
+   resource_group = "<resource-group-name>"
+   testBaseAccount_name = "contoso-testbaseAccount"
+   testBaseAccount_location = "global"
+   sku_name = "S0"
+   sku_tier = "Standard"
+   sku_locations = {"global"}
+  
+   # Create client
+   testBase_client = TestBase(credential, subscription_id)
+  
+   # Create sku for test base account
+   sku = TestBaseAccountSKU(name=sku_name, tier=sku_tier, locations=sku_locations)
+  
+   # Create test base account
+   parameters = TestBaseAccountResource(location=testBaseAccount_location, sku=sku)
+   testBaseAccount = testBase_client.test_base_accounts.begin_create(resource_group, testBaseAccount_name, parameters).result()
+   print("Create test base account:\n{}".format(testBaseAccount))
+   ```
 
-# Create sku for test base account
-sku = TestBaseAccountSKU(name=sku_name, tier=sku_tier, locations=sku_locations)
+## <a name="learn-more"></a>En savoir plus
 
-# Create test base account
-parameters = TestBaseAccountResource(location=testBaseAccount_location, sku=sku)
-testBaseAccount = testBase_client.test_base_accounts.begin_create(resource_group, testBaseAccount_name, parameters).result()
-print("Create test base account:\n{}".format(testBaseAccount))
+Consultez les liens ci-dessous pour en savoir plus sur le Kit de développement logiciel (SDK) & API.
 
-```
-
-
-## <a name="learn-more"></a>En savoir plus 
-
-Consultez les liens ci-dessous pour en savoir plus sur l’API & SDK. 
-
-**Abonnement Azure** 
+**Abonnement Azure** :
 
 - [Compte Azure avec un abonnement actif](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup)
 
-**Kit de développement logiciel Python** 
+**Kit de développement logiciel (SDK) Python** :
 
-- [Test Base Python SDK Documentation](/python/api/overview/azure/mgmt-testbase-readme)
-- [Exemple de SDK Python de base de test](https://aka.ms/testbase-sample-py)
-- [Modèle d’utilisation générale Azure du SDK Python](/azure/developer/python/azure-sdk-overview#provision-and-manage-azure-resources-with-management-libraries)
+- [Documentation du Kit de développement logiciel (SDK) Python de base de test](/python/api/overview/azure/mgmt-testbase-readme)
+- [Exemple de Kit de développement logiciel (SDK) Python de base de test](https://aka.ms/testbase-sample-py)
+- [Modèle d’utilisation générale Azure du Kit de développement logiciel (SDK) Python](/azure/developer/python/azure-sdk-overview#provision-and-manage-azure-resources-with-management-libraries)
 
-**API REST**  
+**API REST** :
 
-- [Documentation de l’API REST](https://aka.ms/testbase-api)  
+- [Documentation de l’API REST](https://aka.ms/testbase-api)

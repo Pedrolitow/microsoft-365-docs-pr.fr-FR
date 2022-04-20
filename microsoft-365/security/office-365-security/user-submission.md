@@ -18,12 +18,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le hameçonnage signalés par les utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4b86341434c05f18e1dd264b6fdabef8e36f2d29
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: a2e57c5dbfb8738eb9e554a3207679bfd48c6f60
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705360"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64970886"
 ---
 # <a name="user-reported-message-settings"></a>Paramètres de message signalés par l’utilisateur
 
@@ -32,7 +32,7 @@ ms.locfileid: "64705360"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres Exchange Online, vous pouvez spécifier une boîte aux lettres pour recevoir des messages que les utilisateurs signalent comme malveillants ou non malveillants. Lorsque les utilisateurs signalent des messages à l’aide des différentes options de création de rapports, vous pouvez utiliser cette boîte aux lettres pour intercepter les messages (envoyer à la boîte aux lettres personnalisée uniquement) ou recevoir des copies de messages (envoyer à la boîte aux lettres personnalisée et à Microsoft). Cette fonctionnalité fonctionne avec les options de création de rapports de messages suivantes :
 
@@ -124,13 +124,16 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
 
    - **Bouton Mettre en quarantaine les** messages de rapport : activez cette fonctionnalité si vous souhaitez permettre aux utilisateurs finaux de signaler des messages à partir d’une mise en quarantaine.
 
-   Lorsque vous avez terminé, cliquez sur **Confirmer**. Pour effacer ces valeurs, cliquez sur **Restaurer**
+3. Lorsque vous avez terminé, cliquez sur **Confirmer**. Pour effacer ces valeurs, cliquez sur **Restaurer**.
 
 ## <a name="third-party-reporting-tools"></a>Outils de création de rapports tiers
 
 Vous pouvez configurer des outils de création de rapports de messages tiers pour envoyer des messages signalés à la boîte aux lettres personnalisée. Pour ce faire, définissez le **bouton Message de rapport Microsoft Outlook** sur **Désactivé** et définissez la **boîte aux lettres de Mon organisation** sur une boîte aux lettres Office 365 de votre choix.
 
-La seule exigence est que le message d’origine soit inclus en tant que . EML ou . Pièce jointe MSG (non compressée) dans le message envoyé à la boîte aux lettres personnalisée (ne vous contentez pas de transférer le message d’origine à la boîte aux lettres personnalisée).
+La seule exigence est que le message d’origine soit inclus en tant que . EML ou . Pièce jointe MSG (non compressée) dans le message envoyé à la boîte aux lettres personnalisée (ne vous contentez pas de transférer le message d’origine à la boîte aux lettres personnalisée). 
+
+ > [!NOTE]
+ > Si plusieurs pièces jointes sont présentes dans l’e-mail, la soumission est ignorée. Nous prenons uniquement en charge les e-mails avec une pièce jointe.
 
 Les exigences de mise en forme des messages sont décrites dans la section suivante. La mise en forme est facultative, mais si elle ne suit pas le format prescrit, les rapports sont toujours soumis sous forme de hameçonnage.
 
@@ -144,13 +147,12 @@ Si vous souhaitez spécifier la raison signalée des messages joints d’origine
 - 2| ou non indésirable :
 - 3| ou hameçonnage :
 
-Par exemple :
+Par exemple :
 
 `3|This part is ignored by the system` <br>
 `Not Junk:This part of the subject is ignored as well`
 
 - Ces deux messages sont signalés comme non indésirables en fonction de l’objet.
 - Le reste est ignoré.
-
 
 Les messages qui ne suivent pas ce format ne s’affichent pas correctement dans le portail Soumissions.

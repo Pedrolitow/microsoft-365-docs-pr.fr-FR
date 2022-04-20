@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez ce qui se passe lorsqu’une enquête ou un cas juridique pris en charge par un cas de découverte électronique (Premium) Microsoft Purview est fermé ou supprimé.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c3ea769fe6c1e01a14e6a552170da8421a03cf07
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 45bf34450b430d7d33316fe0e6c6a21d12be2937
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940420"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993247"
 ---
 # <a name="close-or-delete-an-ediscovery-premium-case"></a>Fermer ou supprimer un cas eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsque l’affaire juridique ou l’enquête prise en charge par un cas de découverte électronique Microsoft Purview (Premium) est terminée, vous pouvez fermer ou supprimer un cas. Vous pouvez également rouvrir un dossier clos.
 

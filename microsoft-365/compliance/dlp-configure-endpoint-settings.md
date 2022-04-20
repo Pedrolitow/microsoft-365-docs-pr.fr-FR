@@ -1,5 +1,5 @@
 ---
-title: Configurer les paramètres de protection contre la perte de données de point de terminaison
+title: Configurer les paramètres DLP du point de terminaison
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,14 +18,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les paramètres centraux de protection contre la perte de données (DLP) des points de terminaison.
-ms.openlocfilehash: ebe995512769275999e7ec4837e16542ffce7100
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: f76f6ec18464229fa50ad54a06fc7969abb3dd23
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680244"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64952817"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Configurer les paramètres de protection contre la perte de données de point de terminaison
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 De nombreux aspects du comportement de protection contre la perte de données (DLP) des points de terminaison sont contrôlés par des paramètres configurés de manière centralisée. Les paramètres sont appliqués à toutes les stratégies DLP pour les appareils.
 
@@ -46,7 +48,7 @@ Avant de commencer, vous devez configurer vos paramètres DLP.
 
 ### <a name="endpoint-dlp-windows-1011-and-macos-settings"></a>Paramètres de point de terminaison DLP Windows 10/11 et macOS
 
-|Setting |Windows 10, 1809 et ultérieures, Windows 11  |macOS Catalina 10.15 ou version ultérieure (préversion)  |Notes  |
+|Setting |Windows 10, 1809 et ultérieures, Windows 11  |macOS Catalina 10.15 ou version ultérieure |Notes  |
 |---------|---------|---------|---------|
 |Exclusions de chemin d’accès de fichier     |Pris en charge         |Pris en charge         |macOS inclut une liste recommandée d'exclusions activée par défaut          |
 |Applications restreintes     |Pris en charge         |Pris en charge         |         |
@@ -61,9 +63,9 @@ Avant de commencer, vous devez configurer vos paramètres DLP.
 
 ### <a name="advanced-classification-scanning-and-protection"></a>Analyse et protection avancées de la classification
 
-L'analyse et la protection par classification avancée permettent au service de classification des données basé sur le cloud Microsoft 365, plus avancé, d'analyser les éléments, de les classer et de renvoyer les résultats à la machine locale. Cela signifie que vous pouvez tirer parti des techniques de classification telles que la classification de [correspondance exacte des données](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md), les [entités nommées (préversion)](named-entities-learn.md#learn-about-named-entities-preview)et les [classifieurs pouvant être formés](classifier-learn-about.md#learn-about-trainable-classifiers) dans vos stratégies DLP.
+L’analyse et la protection de classification avancées permettent au service de classification de données basé sur le cloud Microsoft Purview, plus avancé, d’analyser les éléments, de les classer et de renvoyer les résultats à la machine locale. Cela signifie que vous pouvez tirer parti des techniques de classification telles que la classification de [correspondance exacte des données](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md), les [entités nommées](named-entities-learn.md) et les [classificateurs pouvant être formés](classifier-learn-about.md) dans vos stratégies DLP.
 
-Lorsque la classification avancée est activée, le contenu est envoyé de l’appareil local aux services cloud à des fins d’analyse et de classification. Si l’utilisation de la bande passante est un problème, vous pouvez définir une limite sur la quantité pouvant être utilisée sur une plage de 24 heures. La limite est configurée dans les paramètres DLP du point de terminaison et est appliquée par appareil. Si vous définissez une limite d’utilisation de la bande passante et qu’elle est dépassée, DLP cesse d’envoyer le contenu utilisateur au cloud. À ce stade, la classification des données continue localement sur l’appareil, mais la classification à l’aide de la correspondance exacte des données, des entités nommées (préversion) et des classifieurs pouvant être formés ne sont pas disponibles. Lorsque l’utilisation cumulative de la bande passante redevient inférieure à la limite définie sur la plage de 24 heures, la communication avec les services cloud reprend.
+Lorsque la classification avancée est activée, le contenu est envoyé de l’appareil local aux services cloud à des fins d’analyse et de classification. Si l’utilisation de la bande passante est un problème, vous pouvez définir une limite sur la quantité pouvant être utilisée sur une plage de 24 heures. La limite est configurée dans les paramètres DLP du point de terminaison et est appliquée par appareil. Si vous définissez une limite d’utilisation de la bande passante et qu’elle est dépassée, DLP cesse d’envoyer le contenu utilisateur au cloud. À ce stade, la classification des données se poursuit localement sur l’appareil, mais la classification utilisant la correspondance exacte des données, les entités nommées et les classificateurs pouvant être entraînés n’est pas disponible. Lorsque l’utilisation cumulative de la bande passante redevient inférieure à la limite définie sur la plage de 24 heures, la communication avec les services cloud reprend.
 
 Si l’utilisation de la bande passante n’est pas un problème, vous sélectionnez **Aucune limite** pour autoriser une utilisation illimitée de la bande passante.
 
@@ -81,7 +83,7 @@ Ces versions Windows la prise en charge de l’analyse et de la protection avanc
 
 ### <a name="file-path-exclusions"></a>Exclusions de chemin d’accès de fichier
 
-Ouvrir le [Centre de conformité Prévention](https://compliance.microsoft.com) > **des pertes de données** > **Paramètres DLP de point de terminaison** > **Exclusions de chemin de fichier**.
+Ouvrez le [portail de conformité Microsoft Purview](https://compliance.microsoft.com) > **protection contre la perte de données** > **Paramètres DLP des** > **terminaux Exclusions de chemin de fichier**.
 
 Vous pouvez exclure certains chemins d’accès de la surveillance DLP, des alertes DLP et de l’application de la stratégie DLP sur vos appareils, car ils sont trop bruyants ou ne contiennent pas de fichiers qui vous intéressent. Les fichiers de ces emplacements ne seront pas audités et les fichiers créés ou modifiés dans ces emplacements ne seront pas soumis à l’application de la stratégie DLP. Vous pouvez configurer les exclusions de chemin d’accès dans les paramètres DLP.
 
@@ -103,7 +105,7 @@ Vous pouvez utiliser cette logique pour créer vos chemins d'exclusion pour les 
 
 - Un mélange de tous les éléments ci-dessus. <br/>Par exemple : `%SystemDrive%\Users\*\Documents\*(2)\Sub\`
 
-#### <a name="macos-devices-preview"></a>Appareils macOS (préversion)
+#### <a name="macos-devices"></a>appareils macOS
 
 Semblable aux appareils Windows 10, vous pouvez ajouter vos propres exclusions pour les appareils macOS.
 
@@ -127,7 +129,7 @@ Pour des raisons de performances, Endpoint DLP inclut une liste d'exclusions de 
 
 #### <a name="restricted-apps"></a>Applications restreintes
 
-**Applications restreintes** (précédemment appelée **Applications non autorisées**) est une liste d’applications que vous créez. Vous configurez les actions que DLP effectuera lorsqu’un utilisateur utilise une application sur la liste pour **_accéder_** un fichier protégé par DLP sur un appareil. Il est disponible pour les appareils Windows 10 et macOS (préversion).
+**Applications restreintes** (précédemment appelée **Applications non autorisées**) est une liste d’applications que vous créez. Vous configurez les actions que DLP effectuera lorsqu’un utilisateur utilise une application sur la liste pour **_accéder_** un fichier protégé par DLP sur un appareil. Il est disponible pour les appareils Windows 10 et macOS.
 
 Lorsque **Accès par des applications restreintes** est sélectionné dans une stratégie et qu’un utilisateur utilise une application figurant dans la liste des applications restreintes pour accéder à un fichier protégé, l’activité est `audited`, `blocked`ou `blocked with override` en fonction de la façon dont vous l’avez configurée. À moins que la même application ne soit membre d’un **Groupe d’applications restreintes**, les actions configurées pour les activités du **Groupe d’applications restreintes** remplacer les actions configurées pour l’activité d’accès pour la liste **Applications restreintes**. Toutes les activités sont auditées et disponibles pour révision dans l’Explorateur d’activités.
 
@@ -185,7 +187,7 @@ L’utilisateur A ouvre un fichier protégé par DLP à l’aide Bloc-notes. DLP
 
 Si une application n’est pas dans **Activités de fichier pour les applications dans des groupes d’applications restreintes (préversion)** ou ne figure pas dans la liste **Activités d’application restreintes** ou se trouve dans la liste **Activités d’application restreintes** avec une action de `Audit only`, ou « Bloquer avec remplacement », toutes les restrictions définies dans les **activités de fichier pour toutes les applications** sont appliquées dans la même règle.  
 
-#### <a name="macos-devices-preview"></a>Appareils macOS (préversion)
+#### <a name="macos-devices"></a>appareils macOS
 
 Tout comme sur les appareils Windows, vous pouvez désormais empêcher les applications macOS d’accéder aux données sensibles en les définissant dans la liste **Activités d’application restreintes**. 
 
@@ -236,7 +238,7 @@ Pour les appareils macOS, vous devez ajouter le chemin d’accès complet au fic
 #### <a name="service-domains"></a>Domaines de service
 
 > [!NOTE]
-> Le paramètre **Domaines de service** s’applique uniquement aux fichiers chargés à l’aide de Microsoft Edge ou Google Chrome avec [l’extension de conformité Microsoft](dlp-chrome-learn-about.md#learn-about-the-microsoft-compliance-extension) installée.
+> Le paramètre **Domaines de service** s’applique uniquement aux fichiers téléchargés à l’aide de Microsoft Edge ou de Google Chrome avec l’[extension Microsoft Purview](dlp-chrome-learn-about.md#learn-about-the-microsoft-purview-extension) installée.
 
 Vous pouvez déterminer si les fichiers sensibles protégés par vos stratégies peuvent être téléchargés vers des domaines de service spécifiques à partir de Microsoft Edge.
 
@@ -292,7 +294,7 @@ L’activité des fichiers est toujours auditée pour les appareils intégrés, 
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
 - [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/)
-- [Intégrer des appareils Windows 10 et Windows 11 dans la vue d’ensemble Microsoft 365](/microsoft-365/compliance/device-onboarding-overview)
+- [Intégrer les appareils Windows 10 et Windows 11 dans la vue d’ensemble de Microsoft Purview](/microsoft-365/compliance/device-onboarding-overview)
 - [Abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure Active Directory (ADD) adhésion](/azure/active-directory/devices/concept-azure-ad-join)
 - [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

@@ -20,14 +20,16 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment générer un rapport qui contient des informations sur toutes les conservations associées aux cas eDiscovery.
-ms.openlocfilehash: b0460b725359e2953c0a27b517a362327ae504f5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 98cdad3d125fbeab9afd9d7d99b572e5f0bf7386
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946460"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993203"
 ---
 # <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>Utiliser un script pour créer un rapport sur les conservations dans les cas eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Le script de cet article permet aux administrateurs eDiscovery et aux responsables eDiscovery de générer un rapport qui contient des informations sur toutes les conservations associées aux cas Core et eDiscovery (Premium) dans le portail de conformité Microsoft Purview. Le rapport contient des informations telles que le nom du cas auquel une conservation est associée, les emplacements de contenu mis en attente et la question de savoir si la conservation est basée sur une requête. S’il existe des cas qui n’ont pas de conservations, le script crée un rapport supplémentaire avec une liste de cas sans conservation.
 

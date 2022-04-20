@@ -1,5 +1,5 @@
 ---
-title: Centre de conformité Microsoft 365
+title: Portail de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,59 +9,61 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-description: Découvrez les Centre de conformité Microsoft 365, notamment ce qu’il contient, comment l’obtenir et les étapes suivantes.
+description: Découvrez le portail de conformité Microsoft Purview, notamment ce qu’il contient, comment l’obtenir et vos étapes suivantes.
 ms.collection: M365-security-compliance
 ms.custom:
 - admindeeplinkCOMPLIANCE
 - intro-overview
-ms.openlocfilehash: 329cb9f2bb35e4ca6cbbb9a278f4564de7570584
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 504c5426ccbf2322cc7803fda1b5f396a5cf935c
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643235"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64970778"
 ---
-# <a name="microsoft-365-compliance-center"></a>Centre de conformité Microsoft 365
+# <a name="microsoft-purview-compliance-portal"></a>Portail de conformité Microsoft Purview
 
-Si vous êtes intéressé par la posture de conformité de votre organisation, vous allez être Centre de conformité Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">.</a> Le Centre de conformité Microsoft 365 offre un accès facile aux données et outils dont vous avez besoin pour gérer les besoins de votre organisation en matière de conformité.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Lisez cet article pour vous familiariser avec les [Centre de conformité Microsoft 365,](#how-do-i-get-the-compliance-center)comment l’obtenir, les questions fréquemment [posées](#frequently-asked-questions)et les [étapes suivantes.](#next-steps)
+Si vous êtes intéressé par la posture de conformité de votre organisation, vous allez adorer le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a>. Le portail de conformité Microsoft Purview offre un accès facile aux données et aux outils dont vous avez besoin pour gérer les besoins de conformité de votre organisation.
 
-[![Centre de conformité Microsoft 365 page d’accueil.](../media/m365-compliance-center-home.png)](https://compliance.microsoft.com)
+Lisez cet article pour vous familiariser avec le portail de conformité, [la façon d’y accéder](#how-do-i-access-the-compliance-portal) et vos [étapes suivantes](#next-steps).
 
-## <a name="welcome-to-microsoft-365-compliance"></a>Bienvenue dans Microsoft 365 conformité
+[![Page d’accueil du portail de conformité Microsoft Purview.](../media/m365-compliance-center-home.png)](https://compliance.microsoft.com)
 
-Lorsque vous allez à votre Centre de conformité Microsoft 365 pour la première fois, vous êtes heureux d’avoir reçu le message de bienvenue suivant :
+## <a name="welcome-to-microsoft-purview"></a>Bienvenue dans Microsoft Purview
 
-![Centre de conformité Microsoft 365 introduction.](../media/m365-compliance-center-welcome-steps.png)
+Lorsque vous accédez au portail de conformité pour la première fois, le message de bienvenue suivant s’affiche :
 
-La bannière de bienvenue vous donne des pointeurs sur la façon de commencer, avec les étapes suivantes et une invitation à nous faire part de vos commentaires.
+![Présentation du portail de conformité Microsoft Purview.](../media/m365-compliance-center-welcome-steps.png)
+
+La bannière d’accueil vous donne quelques pointeurs sur la façon de commencer, avec les étapes suivantes, et une invitation pour vous de nous donner des commentaires.
 
 ## <a name="card-section"></a>Section Carte
 
-Lorsque vous visitez le Centre de conformité Microsoft 365 pour la première fois, la section de carte de la page d’accueil vous montre d’un coup d’œil comment votre organisation se porte sur la conformité des données, quelles solutions sont disponibles pour votre organisation et un résumé des alertes actives.
+Lorsque vous visitez le portail de conformité pour la première fois, la section de la carte de la page d’accueil vous montre en un coup d’œil comment votre organisation se comporte en matière de conformité des données, quelles solutions sont disponibles pour votre organisation et un résumé des alertes actives.
 
 Ici, vous pouvez :
 
-- Examinez la **carte du Gestionnaire de conformité Microsoft,** ce qui vous conduit à la solution du Gestionnaire de [conformité.](compliance-manager.md) Le Gestionnaire de conformité simplifie la gestion de la conformité. Il calcule un score basé sur les risques qui mesure votre progression vers l’exécution des actions recommandées qui permettent de réduire les risques liés à la protection des données et aux normes réglementaires. Il fournit également des fonctionnalités de flux de travail et un mappage de contrôle intégré pour vous aider à effectuer efficacement des actions d’amélioration.
+- Passez en revue la carte **gestionnaire de conformité Microsoft Purview** , qui vous dirige vers la solution [gestionnaire de conformité](compliance-manager.md) . Le Gestionnaire de conformité vous aide à simplifier la gestion de la conformité. Il calcule un score basé sur les risques qui mesure votre progression vers l’exécution des actions recommandées qui aident à réduire les risques liés à la protection des données et aux normes réglementaires. Il fournit également des fonctionnalités de flux de travail et un mappage de contrôle intégré pour vous aider à effectuer efficacement des actions d’amélioration.
 
-    ![Carte du Gestionnaire de conformité Centre de conformité Microsoft 365.](../media/m365-compliance-center-compliance-manager-card.png)
+    ![Portail de conformité Microsoft Purview de carte du Gestionnaire de conformité.](../media/m365-compliance-center-compliance-manager-card.png)
 
-- Examinez la nouvelle **carte de catalogue solution,** qui contient des liens vers des collections de [solutions](microsoft-365-solution-catalog.md) intégrées que vous pouvez utiliser pour vous aider à gérer des scénarios de conformité de bout en bout. Les fonctionnalités et outils d’une solution peuvent inclure une combinaison de stratégies, d’alertes, de rapports, et bien plus encore.
+- Passez en revue la nouvelle carte **de catalogue de** solutions, qui contient des liens vers des collections de [solutions intégrées](microsoft-365-solution-catalog.md) que vous pouvez utiliser pour vous aider à gérer les scénarios de conformité de bout en bout. Les fonctionnalités et outils d’une solution peuvent inclure une combinaison de stratégies, d’alertes, de rapports, et bien plus encore.
 
-    ![Carte de catalogue de solutions Centre de conformité Microsoft 365.](../media/m365-compliance-center-solution-catalog-card.png)
+    ![Carte de catalogue de solutions Portail de conformité Microsoft Purview.](../media/m365-compliance-center-solution-catalog-card.png)
 
-- Consultez la carte Alertes actives, qui inclut un résumé des alertes les plus [actives](alert-policies.md) et inclut un lien où vous pouvez afficher des informations plus **détaillées, telles** que Gravité, État, Catégorie, etc.
+- Passez en revue la carte **Alertes actives** , qui inclut un résumé des [alertes les plus actives](alert-policies.md) et inclut un lien dans lequel vous pouvez afficher des informations plus détaillées, telles que gravité, état, catégorie, etc.
 
-    ![Carte d’alerte active Centre de conformité Microsoft 365.](../media/m365-compliance-center-active-alerts-card.png)
+    ![Carte d’alertes actives portail de conformité Microsoft Purview.](../media/m365-compliance-center-active-alerts-card.png)
 
-Vous pouvez également  utiliser la fonctionnalité Ajouter des cartes pour ajouter des cartes supplémentaires, par exemple une montrant la conformité des applications cloud de votre organisation et une autre affichant des données sur les utilisateurs avec des fichiers partagés, avec des liens vers [Defender pour les](/cloud-app-security/) applications cloud ou d’autres outils où vous pouvez explorer des données.
+Vous pouvez également utiliser la fonctionnalité **Ajouter des cartes** pour ajouter des cartes supplémentaires, telles que l’une montrant la conformité des applications cloud de votre organisation, et une autre montrant des données sur les utilisateurs avec des fichiers partagés, avec des liens vers [Defender pour le cloud Apps](/cloud-app-security/) ou d’autres outils où vous pouvez explorer les données.
 
-![Détails supplémentaires de la carte du Centre de conformité.](../media/m365-compliance-center-additional-cards.png)
+![Détails supplémentaires de la carte du centre de conformité.](../media/m365-compliance-center-additional-cards.png)
 
-## <a name="easy-navigation-to-more-compliance-features-and-capabilities"></a>Navigation facile vers davantage de fonctionnalités et de fonctionnalités de conformité
+## <a name="easy-navigation-to-more-compliance-features-and-capabilities"></a>Navigation facile vers plus de fonctionnalités et de fonctionnalités de conformité
 
-Outre les liens dans les cartes sur la page d’accueil, vous verrez un volet de navigation sur le [](alert-policies.md)côté gauche de l’écran qui vous permet d’accéder facilement à vos alertes, [rapports,](reports-in-security-and-compliance.md) [stratégies,](../security/office-365-security/alerts.md)solutions de conformité, etc. Pour ajouter ou supprimer des options pour un volet de navigation personnalisé, utilisez le contrôle de **navigation** Personnaliser sur le volet de navigation. Cela ouvre les paramètres personnaliser votre volet de **navigation** afin que vous pouvez configurer les éléments qui apparaissent dans le volet de navigation.
+En plus des liens dans les cartes de la page d’accueil, vous verrez un volet de navigation sur le côté gauche de l’écran qui vous permet d’accéder facilement à vos [alertes](../security/office-365-security/alerts.md), [rapports](reports-in-security-and-compliance.md), [stratégies](alert-policies.md), solutions de conformité, etc. Pour ajouter ou supprimer des options pour un volet de navigation personnalisé, utilisez le contrôle **personnaliser la navigation** dans le volet de navigation. Cela ouvre les paramètres **personnaliser votre volet de navigation** afin que vous puissiez configurer les éléments qui apparaissent dans le volet de navigation.
 
 <br>
 
@@ -69,32 +71,23 @@ Outre les liens dans les cartes sur la page d’accueil, vous verrez un volet de
 
 |Navigation|Commentaires|
 |---|---|
-|![Navigation dans le Centre de conformité Microsoft 365.](../media/m365-compliance-center-leftnav.png)|Sélectionnez **Accueil** pour revenir à la page Centre de conformité Microsoft 365 page principale. <p> Visitez **le Gestionnaire de conformité** pour vérifier votre score de conformité et commencer à gérer la [conformité](compliance-manager.md) pour votre organisation. <p> Sélectionnez la section **Classification des** données pour accéder aux [classifieurs entraçables,](classifier-learn-about.md)aux définitions d’entités de types d’informations [sensibles,](sensitive-information-type-entity-definitions.md)au contenu et aux explorateurs [d’activités.](data-classification-activity-explorer.md) <p> Sélectionnez **connecteurs de données** [pour configurer des connecteurs](archiving-third-party-data.md) pour importer et archiver des données dans votre abonnement Microsoft 365 de données. <p> Go to **Alerts** to view and resolve [alerts](alert-policies.md) <p>Consultez **les rapports** pour afficher les données sur l’utilisation [](/cloud-app-security/file-filters)et la rétention des étiquettes, les correspondances et les remplacements de stratégie DLP, les fichiers [partagés,](view-the-dlp-reports.md)les applications tierces en cours d’utilisation, etc. [](sensitivity-labels.md) [](/cloud-app-security/discovered-apps) <p> Go to **Policies** to set up policies to govern data, manage devices, and receive [alerts](../security/office-365-security/alerts.md). Vous pouvez également accéder [](retention.md) à vos stratégies de rétention et [DLP.](dlp-learn-about-dlp.md) <p> Sélectionnez **les autorisations** pour gérer les personnes de votre organisation qui ont accès au Centre de conformité Microsoft 365 afficher le contenu et effectuer des tâches. <p> Utilisez les liens de la section **Solutions** pour accéder aux solutions de conformité de votre organisation. Cela comprend : <p> [Catalogue](microsoft-365-solution-catalog.md) <br> Découvrez, découvrez et commencez à utiliser les solutions intelligentes de gestion de la conformité et des risques disponibles pour votre organisation. <p> [Audit](search-the-audit-log-in-security-and-compliance.md) <br> Utilisez le journal d’audit pour examiner les problèmes courants de prise en charge et de conformité. <p> [Recherche de contenu](search-for-content.md) <br> Utilisez la recherche de contenu pour trouver rapidement des messages électroniques dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, ainsi que des conversations de messagerie instantanée dans Microsoft Teams et Skype Entreprise. <p> [Conformité des communications](communication-compliance.md) <br> Réduisez les risques de communication en capturant automatiquement les messages inappropriés, en enquêtant sur les violations de stratégie possibles et en prenant les mesures nécessaires pour y remédier. <p> [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md) <br> Détecter le contenu sensible tel qu’il est utilisé et partagé dans toute votre organisation, dans le cloud et sur les appareils, et permet d’éviter toute perte accidentelle de données. <p> [Demandes des personnes concernées](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool) <br> Recherchez et exportez les données personnelles d’un utilisateur pour vous aider à répondre aux demandes des personnes qui en sont soumises au Règlement général sur la protection des données (R GDPR). <p> [eDiscovery](overview-ediscovery-20.md) <br> Développez cette section pour utiliser les principes fondamentaux et les Advanced eDiscovery pour la conservation, la collecte, la révision, l’analyse et l’exportation de contenu qui répond aux enquêtes internes et externes de votre organisation. <p> [Gouvernance des informations](manage-information-governance.md) <br> Gérez le cycle de vie de votre contenu à l’aide de fonctionnalités pour importer, stocker et classer des données critiques afin de pouvoir conserver ce dont vous avez besoin et supprimer ce dont vous n’avez pas besoin. <p> [Protection des informations](information-protection.md) <br> Découvrez, classifiez et protégez les contenus sensibles et critiques tout au long de leur cycle de vie au sein de votre organisation. <p> [Gestion des risques internes](insider-risk-management.md) <br> Détecter les activités risquées au sein de votre organisation pour vous aider à identifier, examiner et agir rapidement sur les risques internes et les menaces. <p> [Gestion des enregistrements](records-management.md) <br> Automatisez et simplifiez la planification de rétention pour les enregistrements réglementaires, juridiques et critiques de votre organisation.|
+|![Navigation dans le portail de conformité Microsoft Purview.](../media/m365-compliance-center-leftnav.png)|Sélectionnez **Accueil** pour revenir à la page principale du portail de conformité. <p> Visitez le **Gestionnaire de conformité** pour vérifier votre score de conformité et commencer [à gérer la conformité](compliance-manager.md) pour votre organisation. <p> Sélectionnez la section **Classification des données** pour accéder aux [classifieurs pouvant être formés](classifier-learn-about.md), aux [définitions d’entités de type Informations sensibles](sensitive-information-type-entity-definitions.md), au contenu et aux explorateurs [d’activités](data-classification-activity-explorer.md) . <p> Sélectionnez **connecteurs de données** pour [configurer des connecteurs](archiving-third-party-data.md) pour importer et archiver des données dans votre abonnement Microsoft 365. <p> Accédez à **Alertes** pour afficher et résoudre [les alertes](alert-policies.md) <p>Visitez **Rapports** pour afficher des données sur [l’utilisation et la rétention des étiquettes](sensitivity-labels.md), [les correspondances et remplacements de stratégie DLP, les](view-the-dlp-reports.md) [fichiers partagés](/cloud-app-security/file-filters), [les applications tierces en cours d’utilisation](/cloud-app-security/discovered-apps), etc. <p> Accédez à **Stratégies** pour configurer des stratégies pour régir les données, gérer les appareils et recevoir [des alertes](../security/office-365-security/alerts.md). Vous pouvez également accéder à vos [stratégies de protection contre la perte](dlp-learn-about-dlp.md) de données et [de rétention](retention.md) . <p> Sélectionnez **Autorisations** pour gérer les personnes de votre organisation qui ont accès au portail de conformité pour afficher le contenu et effectuer les tâches. <p> Utilisez les liens de la section **Solutions** pour accéder aux solutions de conformité de votre organisation. Cela inclut ce qui suit : <p> [Catalogue](microsoft-365-solution-catalog.md) <br> Découvrez, découvrez et commencez à utiliser les solutions intelligentes de conformité et de gestion des risques disponibles pour votre organisation. <p> [Audit](search-the-audit-log-in-security-and-compliance.md) <br> Utilisez le journal d’audit pour examiner les problèmes courants de support et de conformité. <p> [Recherche de contenu](search-for-content.md) <br> Utilisez la recherche de contenu pour rechercher rapidement des e-mails dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, ainsi que des conversations de messagerie instantanée dans Microsoft Teams et Skype Entreprise. <p> [Conformité des communications](communication-compliance.md) <br> Réduisez les risques de communication en capturant automatiquement les messages inappropriés, en examinant les violations de stratégie possibles et en prenant des mesures pour y remédier. <p> [En savoir plus sur la protection contre la perte de données Microsoft Purview](dlp-learn-about-dlp.md) <br> Détectez le contenu sensible tel qu’il est utilisé et partagé dans toute votre organisation, dans le cloud et sur les appareils, et permet d’éviter la perte accidentelle de données. <p> [Demandes des personnes concernées](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool) <br> Recherchez et exportez les données personnelles d’un utilisateur pour vous aider à répondre aux demandes des personnes concernées pour le Règlement général sur la protection des données (RGPD). <p> [eDiscovery](overview-ediscovery-20.md) <br> Développez cette section pour utiliser les éléments de base et eDiscovery (Premium) pour préserver, collecter, examiner, analyser et exporter du contenu qui répond aux investigations internes et externes de votre organisation. <p> [Gestion du cycle de vie des données](manage-data-governance.md) <br> Gérez le cycle de vie des données sensibles à l’aide de fonctionnalités permettant d’importer, de stocker et de classer des données critiques pour l’entreprise afin de conserver ce dont vous avez besoin et de supprimer ce que vous n’avez pas. <p> [Protection des informations](information-protection.md) <br> Découvrez, classifiez et protégez les données sensibles et critiques pour l’entreprise tout au long de son cycle de vie au sein de votre organisation. <p> [Gestion des risques internes](insider-risk-management.md) <br> Détectez les activités à risque au sein de votre organisation pour vous aider à identifier, examiner et prendre des mesures rapidement en cas de menaces et de risques internes. <p> [Gestion des enregistrements](records-management.md) <br> Gérez la rétention et la suppression d’éléments de grande valeur pour les exigences de conservation des enregistrements d’entreprise, légales ou réglementaires.|
 |
 
-## <a name="how-do-i-get-the-compliance-center"></a>Comment obtenir le centre de conformité ?
+## <a name="how-do-i-access-the-compliance-portal"></a>Comment faire accéder au portail de conformité ?
 
-- Si vous n’avez pas encore la nouvelle Centre de conformité Microsoft 365, vous l’aurez bientôt. Le Centre de conformité Microsoft 365 est généralement disponible maintenant pour Microsoft 365 clients SKU.
-- Pour visiter le Centre de conformité Microsoft 365, en tant qu’administrateur général, administrateur de conformité ou administrateur de données de conformité, [https://compliance.microsoft.com](https://compliance.microsoft.com) connectez-vous.
+Pour accéder au portail de conformité, accédez au [https://compliance.microsoft.com](https://compliance.microsoft.com) portail et connectez-vous en tant qu’administrateur général, administrateur de conformité ou administrateur des données de conformité.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="next-steps"></a>Prochaines étapes
 
-**Pourquoi la nouvelle Centre de conformité Microsoft 365 pas encore ?**
+- **Visitez le Gestionnaire de conformité Microsoft Purview** pour voir votre score de conformité et commencer à gérer la conformité pour votre organisation. Pour plus d’informations, consultez [le Gestionnaire de conformité](compliance-manager.md).
 
-Tout d’abord, assurez-vous que vous avez les licences et autorisations appropriées. Ensuite, connectez-vous <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">à Centre de conformité Microsoft 365</a>. Si vous ne voyez pas encore le nouveau centre de conformité, vous le verrez bientôt.
+- **Configurez des stratégies de gestion des risques internes** pour réduire les risques internes et vous permettre de détecter, d’examiner et de prendre des mesures pour les activités à risque au sein de votre organisation. Consultez [En savoir plus sur la gestion des risques internes](insider-risk-management.md).
 
-![Plus de ressources.](../media/m365-compliance-center-more-resources.png)
+- **Passez en revue les stratégies de protection contre la perte de données de votre organisation** et apportez les modifications nécessaires si nécessaire. Pour en savoir plus, consultez [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md).
 
-## <a name="next-steps"></a>Étapes suivantes
+- **Familiariser et configurer Microsoft Defender for Cloud Apps**. Consultez [démarrage rapide : Démarrage avec Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security).
 
-- **Visitez le Gestionnaire de conformité Microsoft** pour consulter votre score de conformité et commencer à gérer la conformité pour votre organisation. Pour en savoir plus, [consultez le Gestionnaire de conformité.](compliance-manager.md)
+- **Découvrez et créez des stratégies de conformité des communications** pour identifier et corriger rapidement les violations de stratégie de code de conduite de l’entreprise. Consultez [En savoir plus sur la conformité des communications](communication-compliance.md).
 
-- **Configurez les stratégies** de gestion des risques internes pour réduire les risques internes et vous permettre de détecter, d’examiner et de prendre des mesures pour les activités à risque dans votre organisation. Voir [Gestion des risques internes.](insider-risk-management.md)
-
-- **Passer en revue les stratégies de** protection contre la perte de données de votre organisation et apporter les modifications nécessaires si nécessaire. Pour en savoir plus, [consultez la base de données sur la protection contre la perte de données.](dlp-learn-about-dlp.md)
-
-- **Familiarisez-vous avec Microsoft Defender pour les applications cloud et définissez-le.** Voir [Démarrage rapide : mise en place de Microsoft Defender pour les applications cloud.](/cloud-app-security/getting-started-with-cloud-app-security)
-
-- **Découvrez et créez des stratégies** de conformité des communications pour identifier et corriger rapidement les violations de stratégie de code de conduite d’entreprise. Voir [conformité des communications dans Microsoft 365](communication-compliance.md).
-
-- **Visitez votre Centre de conformité Microsoft 365 et** veillez à passer en revue les alertes ou les risques potentiels qui surviennent. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) et connectez-vous.
+- **Visitez souvent votre portail de conformité** et veillez à examiner les alertes ou les risques potentiels qui surviennent. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) et connectez-vous.

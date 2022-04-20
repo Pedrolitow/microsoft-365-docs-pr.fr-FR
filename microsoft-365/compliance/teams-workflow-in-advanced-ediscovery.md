@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Découvrez comment conserver, collecter, examiner et exporter du contenu à partir de Microsoft Teams dans eDiscovery (Premium).
-ms.openlocfilehash: 21f6149d8a1c1114ab0d2d293af710690f74c6e5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4dc516037e1ccad41c7ed93f280d698ca6bd164c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948394"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991905"
 ---
 # <a name="ediscovery-premium-workflow-for-content-in-microsoft-teams"></a>Flux de travail eDiscovery (Premium) pour le contenu dans Microsoft Teams
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cet article fournit un ensemble complet de procédures, de recommandations et de meilleures pratiques pour l’utilisation de Microsoft Purview eDiscovery (Premium) pour conserver, collecter, examiner et exporter du contenu à partir de Microsoft Teams. L’objectif de cet article est de vous aider à optimiser votre flux de travail eDiscovery pour Teams contenu.
 
@@ -301,7 +303,7 @@ Voici quelques conseils et bonnes pratiques pour afficher Teams contenu dans un 
 
 ## <a name="deleting-teams-chat-messages"></a>Suppression de messages de conversation Teams
 
-Vous pouvez utiliser Advanced eDiscovery et Microsoft Graph Explorer pour répondre aux incidents de débordement de données lorsque du contenu contenant des informations confidentielles ou malveillantes est publié par le biais de messages de conversation Teams. Les administrateurs de votre organisation peuvent rechercher et supprimer des messages de conversation dans Microsoft Teams. Cela peut vous aider à supprimer des informations sensibles ou du contenu inapproprié dans Teams messages de conversation. Pour plus d’informations, consultez [Rechercher et vider les messages de conversation dans Teams](search-and-delete-Teams-chat-messages.md).
+Vous pouvez utiliser eDiscovery (Premium) et Microsoft Graph Explorer pour répondre aux incidents de débordement de données, lorsque du contenu contenant des informations confidentielles ou malveillantes est publié par le biais de messages de conversation Teams. Les administrateurs de votre organisation peuvent rechercher et supprimer des messages de conversation dans Microsoft Teams. Cela peut vous aider à supprimer des informations sensibles ou du contenu inapproprié dans Teams messages de conversation. Pour plus d’informations, consultez [Rechercher et vider les messages de conversation dans Teams](search-and-delete-Teams-chat-messages.md).
 
 ## <a name="reference-guide"></a>Guide de référence
 

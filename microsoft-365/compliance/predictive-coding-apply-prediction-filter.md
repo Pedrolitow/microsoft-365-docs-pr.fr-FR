@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Utilisez un filtre de score de prédiction pour afficher les éléments qu’un modèle de codage prédictif prédit comme pertinents ou non pertinents.
-ms.openlocfilehash: 261c77031eb0831db11878c2ce0c573eb3b9db6e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ab97c91196456b69f7f420ccd317747f638b4ee5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942290"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993071"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>Appliquer un filtre de score de prédiction à un jeu de révision (préversion)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Après avoir créé un modèle de codage prédictif dans Microsoft Purview eDiscovery (Premium) et l’avoir entraîné jusqu’au point où il est stable, vous pouvez appliquer le filtre de score de prédiction pour afficher les éléments d’ensemble de révision que le modèle a déterminés sont pertinents (ou non pertinents). Lorsque vous créez un modèle, un filtre de score de prédiction correspondant est également créé. Vous pouvez utiliser ce filtre pour afficher les éléments auxquels un score de prédiction a été attribué dans une plage spécifiée. En général, les scores de prédiction compris entre **0** et **0,5** sont affectés à des éléments que le modèle a prédits ne sont pas pertinents. Les éléments affectés aux scores de prédiction entre **.5** et **1.0** sont des éléments que le modèle a prédits sont pertinents.
 

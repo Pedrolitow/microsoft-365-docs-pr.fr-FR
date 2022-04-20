@@ -1,5 +1,5 @@
 ---
-title: Découvrir la protection contre la perte de données des point de terminaison de Microsoft 365
+title: En savoir plus sur les points de terminaison de protection contre la perte de données
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,33 +18,35 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: 'La protection contre la perte de données des points de terminaison de Microsoft 365 étend la surveillance des activités de fichiers et les actions de protection pour ces fichiers aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité '
-ms.openlocfilehash: f32e84434258ff4b4c5ea6af24f69c607952b56a
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+description: 'La protection contre la perte de données des points de terminaison étend la surveillance des activités de fichiers et les actions de protection pour ces fichiers aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité '
+ms.openlocfilehash: e84d2de72e05991a7d8374a2e5214df90fb939d9
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714546"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953302"
 ---
-# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données de point de terminaison Microsoft 365
+# <a name="learn-about-endpoint-data-loss-prevention"></a>En savoir plus sur les points de terminaison de protection contre la perte de données
 
-Vous pouvez utiliser la prévention des pertes de données (DLP) de Microsoft 365 pour surveiller les actions prises sur les éléments que vous avez déterminés comme sensibles et pour aider à empêcher le partage involontaire de ces éléments. Pour plus d'informations sur la DLP, consultez [En savoir plus sur la prévention de la perte de données](dlp-learn-about-dlp.md).
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-**Protection contre la perte de données de point de terminaison** (Endpoint DLP) étend les fonctionnalités de surveillance et de protection des activités de DLP aux éléments sensibles qui sont stockés physiquement sur des appareils Windows 10, Windows 11 et macOS (Catalina 10.15 et versions ultérieures). Une fois que les appareils sont intégrés aux solutions de conformité Microsoft 365, les informations relatives à ce que les utilisateurs font avec les éléments sensibles sont rendues visibles dans [l’Explorateur d’activités](data-classification-activity-explorer.md) et vous pouvez appliquer des actions de protection à ces éléments via [stratégies DLP](create-test-tune-dlp-policy.md).
+Vous pouvez utiliser la protection contre la perte de données (DLP) de Microsoft Purview pour surveiller les actions prises sur les éléments que vous avez déterminés comme sensibles et pour aider à empêcher le partage involontaire de ces éléments. Pour plus d'informations sur la DLP, consultez [En savoir plus sur la prévention de la perte de données](dlp-learn-about-dlp.md).
+
+**Protection contre la perte de données de point de terminaison** (Endpoint DLP) étend les fonctionnalités de surveillance et de protection des activités de DLP aux éléments sensibles qui sont stockés physiquement sur des appareils Windows 10, Windows 11 et macOS (Catalina 10.15 et versions ultérieures). Une fois que les appareils sont intégrés aux solutions de conformité Microsoft Purview, les informations relatives à ce que les utilisateurs font avec les éléments sensibles sont rendues visibles dans [l’Explorateur d’activités](data-classification-activity-explorer.md) et vous pouvez appliquer des actions de protection à ces éléments via des [stratégies DLP](create-test-tune-dlp-policy.md).
 
 > [!TIP]
 > Si vous recherchez le contrôle d’appareil pour le stockage amovible, consultez [Contrôle d’accès Stockage amovible Contrôle d’appareil Microsoft Defender pour Point de terminaison ](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
 
 > [!NOTE]
-> Dans Microsoft 365 conformité, l’évaluation de la stratégie DLP des éléments sensibles se produit de manière centralisée, de sorte qu’il n’y a pas de délai pour que les stratégies et les mises à jour des stratégies soient distribuées aux appareils individuels. Lorsqu’une stratégie est mise à jour dans le centre de conformité, la synchronisation de ces mises à jour dans le service prend généralement environ une heure. Une fois les mises à jour de stratégie synchronisées, les éléments sur les appareils ciblés sont automatiquement réévalués la prochaine fois qu’ils sont consultés ou modifiés.
+> Dans la conformité Microsoft Purview, l’évaluation de la stratégie DLP des éléments sensibles se produit de manière centralisée, de sorte qu’il n’y a pas de délai pour que les stratégies et les mises à jour des stratégies soient distribuées aux appareils individuels. Lorsqu’une stratégie est mise à jour dans le centre de conformité, la synchronisation de ces mises à jour dans le service prend généralement environ une heure. Une fois les mises à jour de stratégie synchronisées, les éléments sur les appareils ciblés sont automatiquement réévalués la prochaine fois qu’ils sont consultés ou modifiés.
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Activités de point de terminaison que vous pouvez surveiller et sur lesquels vous pouvez agir
 
-Microsoft Endpoint DLP vous permet d’auditer et de gérer les types d’activités suivants que les utilisateurs prennent sur les éléments sensibles qui sont stockés physiquement sur des appareils Windows 10, Windows 11 ou macOS.
+La protection contre la perte de données de point de terminaison vous permet d’auditer et de gérer les types d’activités suivants que les utilisateurs prennent sur les éléments sensibles qui sont stockés physiquement sur des appareils Windows 10, Windows 11 ou macOS.
 
-|Activité |Description  |Windows 10 1809 et ultérieures/ Windows 11| macOS Catalina 10.15 (préversion) | Auditable/restrictable|
+|Activité |Description  |Windows 10 1809 et ultérieures/ Windows 11| macOS Catalina 10.15| Auditable/restrictable|
 |---------|---------|---------|---------|---------|
-|téléchargement vers un service en ligne, ou accès par des navigateurs non autorisés    | Détecte lorsqu'un utilisateur tente de télécharger un article dans un domaine de service restreint ou d'accéder à un article par le biais d'un navigateur.  S’ils utilisent un navigateur répertorié dans DLP en tant que navigateur non autorisé, l’activité de chargement est bloquée et l’utilisateur est redirigé pour utiliser Microsoft Edge . Microsoft Edge autorisez ou bloquez le chargement ou l’accès en fonction de la configuration de la stratégie DLP         |Pris en charge | Pris en charge|auditable et restreint|
+|téléchargement vers un service en ligne, ou accès par des navigateurs non autorisés    | Détecte lorsqu'un utilisateur tente de télécharger un article dans un domaine de service restreint ou d'accéder à un article par le biais d'un navigateur.  S’il utilise un navigateur répertorié dans DLP en tant que navigateur non autorisé, l’activité de chargement est bloquée et l’utilisateur est redirigé pour utiliser Microsoft Edge . Microsoft Edge autorisez ou bloquez le chargement ou l’accès en fonction de la configuration de la stratégie DLP         |Pris en charge | Pris en charge|auditable et restreint|
 |copie vers une autre application    |Détecte lorsqu'un utilisateur tente de copier des informations d'un élément protégé et de les coller ensuite dans une autre application, un autre processus ou un autre élément. Copier et coller des informations dans la même application, le même processus ou le même élément n'est pas détecté par cette activité.|Pris en charge|Pris en charge         | auditable et restreint|
 |copie sur support USB amovible |Détecte lorsqu'un utilisateur tente de copier un élément ou une information sur un support amovible ou un périphérique USB.|Pris en charge|Pris en charge         | auditable et restreint|
 |copier vers un partage réseau    |Détecte lorsqu'un utilisateur tente de copier un élément vers un partage réseau ou un disque réseau mappé |Pris en charge|Pris en charge         |auditable et restreint|
@@ -56,7 +58,7 @@ Microsoft Endpoint DLP vous permet d’auditer et de gérer les types d’activi
 
 ## <a name="best-practice-for-endpoint-dlp-policies"></a>Meilleure pratique pour les stratégies DLP de point de terminaison
 
-Supposons que vous souhaitiez empêcher tous les éléments qui contiennent des numéros de carte de crédit de quitter les points de terminaison des utilisateurs du service Financier. Nous vous recommandons :
+Supposons que vous souhaitiez empêcher tous les éléments qui contiennent des numéros de carte de crédit de quitter les points de terminaison des utilisateurs du service Financier. Nous vous recommandons :
 
 - Créez une stratégie et étendez-la aux points de terminaison et à ce groupe d’utilisateurs.
 - Créez une règle dans la stratégie qui détecte le type d’informations que vous souhaitez protéger. Dans ce cas, **content un contenu** défini sur *Type d’informations sensibles**, puis sélectionnez **Carte de crédit**.
@@ -125,7 +127,7 @@ Vous devez tenir compte d’un certain nombre de concepts supplémentaires avant
 
 ### <a name="enabling-device-management"></a>Activation de la gestion des appareils
 
-La gestion des appareils est une fonctionnalité qui permet d’assembler la télémétrie à partir d’appareils et de l’intégrer à des solutions de conformité Microsoft 365 telles que point de terminaison DLP et [ gestionnaire des risques Insider](insider-risk-management.md). Vous devez intégrer tous les appareils que vous voulez utiliser en tant qu’emplacements dans les stratégies DLP.
+La gestion des appareils est une fonctionnalité qui permet d’assembler la télémétrie à partir d’appareils et de l’intégrer à des solutions de conformité Microsoft Purview telles que la DLP de point de terminaison et la [gestion des risques internes](insider-risk-management.md). Vous devez intégrer tous les appareils que vous voulez utiliser en tant qu’emplacements dans les stratégies DLP.
 
 > [!div class="mx-imgBorder"]
 > ![activer la gestion des appareils.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
@@ -201,10 +203,10 @@ Par exemple, si un fichier est copié sur un support USB amovible, les attributs
 
 Maintenant que vous en savez plus sur les points de terminaison DLP, vos prochaines étapes sont les suivantes :
 
-1. [Intégrer Windows 10 ou Windows 11 appareils dans Microsoft 365 vue d’ensemble](device-onboarding-overview.md)
-1. [Intégration des appareils macOS dans la vue d'ensemble de Microsoft 365 (aperçu)](device-onboarding-macos-overview.md)
+1. [Vue d’ensemble de l’intégration des appareils Windows 10 ou Windows 11 dans Microsoft Purview](device-onboarding-overview.md)
+1. [Intégration des appareils macOS dans la vue d'ensemble de Microsoft Purview (aperçu)](device-onboarding-macos-overview.md)
 1. [Configurer les paramètres de protection contre la perte de données de point de terminaison](dlp-configure-endpoint-settings.md)
-1. [Utilisation des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-using.md)
+1. [Utilisation des points de terminaison protection contre la perte de données](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Voir aussi
 

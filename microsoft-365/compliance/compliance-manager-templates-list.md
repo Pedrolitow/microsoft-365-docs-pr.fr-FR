@@ -1,5 +1,5 @@
 ---
-title: Liste des modèles du Gestionnaire de conformité Microsoft
+title: Liste des modèles du Gestionnaire de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,24 +16,26 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Le Gestionnaire de conformité Microsoft fournit des modèles pour créer des évaluations qui s’alignent sur les réglementations, normes et lois nationales, régionales et sectorielles.
-ms.openlocfilehash: 484363636906bbf599a18b3cf6d3484d53177e75
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Le Gestionnaire de conformité Microsoft Purview fournit des modèles pour la création d’évaluations qui s’alignent sur les réglementations, normes et lois nationales, régionales et sectorielles.
+ms.openlocfilehash: cc07d7aa6fc385fc1066f35c8d20bbe7e2152b93
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760998"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971492"
 ---
 # <a name="compliance-manager-templates-list"></a>Liste des modèles de Gestionnaire de conformité
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Dans cet article :** Affichez la liste complète des **modèles disponibles** pour la création d’évaluations dans le Gestionnaire de conformité.
 
 > [!IMPORTANT]
-> Les modèles d’évaluation disponibles pour votre organisation dépendent de votre contrat de licence. [Passez en revue les détails](compliance-manager-templates.md#template-availability-and-licensing).
+> Les modèles d’évaluation disponibles pour votre organisation dépendent de votre contrat de licence. [Passez en revue les détails](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Présentation
 
-[Le Gestionnaire de conformité Microsoft](compliance-manager.md) fournit un ensemble complet de modèles pour la création d’évaluations. Ces modèles peuvent aider votre organisation à se conformer aux exigences nationales, régionales et propres au secteur qui régissent la collecte et l’utilisation des données.
+[Le Gestionnaire de conformité Microsoft Purview](compliance-manager.md) fournit un ensemble complet de modèles pour la création d’évaluations. Ces modèles peuvent aider votre organisation à se conformer aux exigences nationales, régionales et propres au secteur qui régissent la collecte et l’utilisation des données.
 
 Les modèles sont ajoutés au Gestionnaire de conformité à mesure que de nouvelles lois et réglementations sont adoptées. Le Gestionnaire de conformité met également à jour ses modèles lorsque les lois ou réglementations sous-jacentes changent. Apprenez-en davantage sur la [révision et l’acceptation des mises à jour](compliance-manager-assessments.md#accept-updates-to-assessments).
 

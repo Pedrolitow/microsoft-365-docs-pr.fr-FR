@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur dans le portail de conformité Microsoft Purview pour importer et archiver des données de Cisco Jabber sur Oracle vers Microsoft 365.
-ms.openlocfilehash: 7668defd3ef7157da185de7e51ef97e3127e67a4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 33714412db56066b25a1bda03fb4a92c6c64f917
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946679"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992653"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-oracle-data"></a>Configurer un connecteur pour archiver Cisco Jabber sur les données Oracle
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez un connecteur Veritas dans le portail de conformité Microsoft Purview pour importer et archiver des données de la plateforme Cisco Jabber sur Oracle vers les boîtes aux lettres utilisateur de votre organisation Microsoft 365. Veritas fournit un connecteur [Cisco Jabber sur Oracle](https://www.veritas.com/insights/merge1/jabber) configuré pour capturer des éléments à partir de la source de données tierce (régulièrement) et importer ces éléments dans Microsoft 365. Le connecteur convertit le contenu tel que les fichiers et les opérations de fichiers, les commentaires et le contenu partagé de Cisco Jabber sur Oracle au format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
 

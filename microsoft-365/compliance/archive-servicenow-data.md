@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données ServiceNow de Veritas vers Microsoft 365. Ce connecteur vous permet d’archiver les données de sources de données tierces dans Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces.
-ms.openlocfilehash: 21775200f318612ba8f79d6c783713f759d04452
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3a8859fad4b15d0e9cf4ce50701da64c2c6100b6
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946504"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992675"
 ---
 # <a name="set-up-a-connector-to-archive-servicenow-data"></a>Configurer un connecteur pour archiver les données ServiceNow
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez un connecteur Veritas dans le portail de conformité Microsoft Purview pour importer et archiver des données de la plateforme ServiceNow vers des boîtes aux lettres utilisateur de votre organisation Microsoft 365. Veritas fournit un connecteur [ServiceNow](https://globanet.com/servicenow/) qui capture les éléments de la source de données tierce et importe ces éléments dans Microsoft 365. Le connecteur convertit le contenu tel que les messages en direct, les pièces jointes et les publications de ServiceNow dans un format de courrier électronique, puis importe ces éléments dans des boîtes aux lettres utilisateur dans Microsoft 365.
 

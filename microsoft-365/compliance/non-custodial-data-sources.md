@@ -15,14 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez ajouter des sources de données non liées à la garde à un cas eDiscovery (Premium) et placer une conservation sur la source de données. Les sources de données non liées à la garde sont réindexées. Par conséquent, tout contenu marqué comme partiellement indexé est retraité pour le rendre entièrement et rapidement consultable.
-ms.openlocfilehash: cc093b60de055fe8b762f6c141921cd274233af2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2f5825f514dfc8f99fc7a6006d1fd30028515c7b
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945910"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991883"
 ---
 # <a name="add-non-custodial-data-sources-to-an-ediscovery-premium-case"></a>Ajouter des sources de données non liées à la garde à un cas eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Dans les cas microsoft Purview eDiscovery (Premium), il ne répond pas toujours à vos besoins d’associer une source de données Microsoft 365 à un consignateur dans le cas. Toutefois, vous devrez peut-être toujours associer ces données à un cas afin de pouvoir les rechercher, les ajouter à un ensemble de révisions et les analyser et les examiner. La fonctionnalité dans eDiscovery (Premium) est appelée *sources de données non gardiennes* et vous permet d’ajouter des données à un cas sans avoir à l’associer à un consignateur. Il applique également la même fonctionnalité eDiscovery (Premium) aux données non gardiennes qui sont disponibles pour les données associées au consignateur. L’une des choses les plus utiles que vous pouvez appliquer aux données non liées à la garde consiste à les mettre en attente et à les traiter à l’aide de [l’indexation avancée](indexing-custodian-data.md).
 

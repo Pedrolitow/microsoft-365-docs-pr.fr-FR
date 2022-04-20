@@ -1,5 +1,5 @@
 ---
-title: Playbook d'essai des solutions de conformité Microsoft 365
+title: Guide opérationnel d'essai des solutions de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -14,26 +14,28 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MOE150
 - MET150
-description: Playbook d'essai des solutions de conformité Microsoft 365.
-ms.openlocfilehash: 8c5456344a97a0cfc4564c228eeba20067682070
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Guide opérationnel d'essai des solutions de conformité Microsoft Purview.
+ms.openlocfilehash: 5136ceb33f4fb09345ee942b8d411d14952befc5
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759167"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64952773"
 ---
-# <a name="trial-playbook-microsoft-365-compliance-solutions"></a>Manuel d'essai : solutions de conformité Microsoft 365
+# <a name="trial-playbook-microsoft-purview-solutions"></a>Guide opérationnel d'essai : solutions Microsoft Purview
 
-Bienvenue dans le guide opérationnel d’essai des solutions de conformité Microsoft 365. Ce guide opérationnel vous aidera à tirer le meilleur parti de votre essai gratuit de 90 jours en vous aidant à découvrir des fonctionnalités robustes et complètes de Microsoft 365 produits de conformité et de sécurité.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Bienvenue dans le guide opérationnel d’essai des solutions de conformité Microsoft Purview. Ce guide opérationnel vous aidera à tirer le meilleur parti de votre essai gratuit de 90 jours en vous aidant à découvrir les fonctionnalités robustes et complètes des produits de conformité et de sécurité Microsoft Purview.
 
 Essayer chaque solution vous aidera à prendre des décisions éclairées pour répondre aux besoins de conformité de votre organisation.
 
 Fonctionnalités :
 
-- [Audit avancé](#advanced-audit)
+- [Audit (Premium)](#audit-premium)
 - [Conformité des communications](#communication-compliance)
 - [Gestionnaire de conformité](#compliance-manager)
-- [Protection contre la perte de données](#data-loss-prevention)
+- [Protection contre la perte de données Microsoft Purview](#data-loss-prevention)
 - [eDiscovery](#ediscovery)
 - [Protection des informations](#information-protection)
 - [Gestion des risques internes](#insider-risk-management)
@@ -44,48 +46,48 @@ Modules complémentaires en option :
 - [Évaluations des primes du responsable de la conformité](#compliance-manager-premium-assessments)
 - [Gestion des risques liés à la confidentialité Microsoft Priva et demandes de droits d'objet Microsoft Priva](#microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests)
 
-## <a name="compliance-actions-with-microsoft-365"></a>Actions de conformité avec Microsoft 365
+## <a name="compliance-actions-with-microsoft-purview"></a>Actions de conformité avec Microsoft Purview
 
 Commencez facilement et rapidement à essayer les solutions de conformité de Microsoft sans modifier les métadonnées de votre organisation. En fonction de vos priorités, vous pouvez commencer par n'importe lequel de ces domaines de solution pour voir une valeur immédiate. Vous trouverez ci-dessous les cinq principales préoccupations organisationnelles communiquées par nos clients et les solutions recommandées pour commencer.
 
 :::image type="content" source="../media/compliance-trial/workflow.png" alt-text="Actions de conformité avec Microsoft 365":::
 
-## <a name="advanced-audit"></a>Audit avancé
+## <a name="audit-premium"></a>Audit (Premium)
 
 **Mener des enquêtes**
 
-Advanced Audit aide les organisations à mener des enquêtes judiciaires et de conformité en augmentant la rétention des journaux d'audit requise pour mener une enquête, en fournissant un accès aux événements cruciaux qui aident à déterminer l'étendue de la compromission et en fournissant un accès plus rapide à l'API Activité de gestion Office 365.
+Microsoft Purview Audit (Premium) aide les organisations à mener des enquêtes judiciaires et de conformité en augmentant la rétention des journaux d'audit requise pour mener une enquête, en fournissant un accès aux événements cruciaux qui aident à déterminer l'étendue de la compromission et en fournissant un accès plus rapide à l'API Activité de gestion Office 365.
 
-### <a name="step-1-apply-the-e5-license-to-each-user-for-which-youd-like-to-generate-e5-events"></a>Étape 1 : [Appliquez la licence E5 à chaque utilisateur pour lequel vous souhaitez générer des événements E5](set-up-advanced-audit.md#step-1-set-up-advanced-audit-for-users)
+### <a name="step-1-apply-the-e5-license-to-each-user-for-which-youd-like-to-generate-e5-events"></a>Étape 1 : [Appliquez la licence E5 à chaque utilisateur pour lequel vous souhaitez générer des événements E5](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users)
 
 > [!TIP]
 > Meilleures pratiques d'essai : Jour 1
 
-Les fonctionnalités d’audit avancées telles que la possibilité d’enregistrer des événements importants tels que MailItemsAccessed et envoyer nécessitent une licence E5 appropriée attribuée aux utilisateurs. De plus, l’application/plan de service d’audit avancé doit être activé pour ces utilisateurs.
+Les fonctionnalités d’audit (Premium) telles que la possibilité d’enregistrer des événements importants tels que MailItemsAccessed et envoyer nécessitent une licence E5 appropriée attribuée aux utilisateurs. De plus, l’application/plan de service d’audit avancé doit être activé pour ces utilisateurs.
 
-Configurer l'audit avancé pour les utilisateurs – pour vérifier que l'application d'audit avancé est attribuée aux utilisateurs, [effectuez les étapes suivantes pour chaque utilisateur](set-up-advanced-audit.md#step-1-set-up-advanced-audit-for-users).
+Configurer l'audit (Premium) pour les utilisateurs – pour vérifier que l'application d'audit avancé est attribuée aux utilisateurs, [effectuez les étapes suivantes pour chaque utilisateur](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users).
 
-1. Activer les événements d'audit avancé – [activez l'audit de SearchQueryInitiatedExchange et SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-advanced-audit-events) pour chaque utilisateur dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Activer les événements d'audit (Premium) – [activez l’audit SearchQueryInitiatedExchange et SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-audit-premium-events) pour chaque utilisateur dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 1. Configurez des stratégies de rétention d'audit – [créez des stratégies de rétention des journaux d'audit supplémentaires](set-up-advanced-audit.md#step-3-set-up-audit-retention-policies) pour répondre aux exigences des opérations de sécurité, de l'informatique et des équipes de conformité de votre organisation.
-1. Rechercher des événements d'audit avancé – [rechercher des événements d'audit avancé cruciaux](set-up-advanced-audit.md#step-4-search-for-advanced-audit-events) et d'autres activités lors de la conduite d'enquêtes judiciaires.
+1. Rechercher des événements d'audit (Premium) – [rechercher des événements d'audit (Premium) cruciaux](set-up-advanced-audit.md#step-4-search-for-audit-premium-events) et d'autres activités lors de la conduite d'enquêtes judiciaires.
 
 ### <a name="step-2-create-new-audit-log-policies-to-specify-how-long-to-retain-audit-logs-in-your-org-for-activities-performed-by-users-and-define-priority-levels-for-your-policies"></a>Étape 2 : [Créez de nouvelles stratégies de journal d'audit pour spécifier la durée de conservation des journaux d'audit dans votre organisation pour les activités effectuées par les utilisateurs et définissez les niveaux de priorité pour vos stratégies](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy)
 
 > [!TIP]
 > Bonne pratique d'essai : créez dans les 30 premiers jours
 
-Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’audit avancées de Microsoft 365. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation.
+Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’audit (Premium) de Microsoft 365. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation.
 
 1. Avant de créer une stratégie de conservation des journaux d'audit – [éléments clés à connaître](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) avant de créer votre stratégie.
 1. [Créer une stratégie de rétention de journal d’audit](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
-1. [Gérer les stratégies de rétention des journaux d'audit dans le centre de conformité Microsoft 365](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center) – Les stratégies de rétention des journaux d'audit sont répertoriées dans l'onglet Stratégies de rétention d'audit (également appelé tableau de bord). Vous pouvez utiliser le tableau de bord pour afficher, modifier et supprimer les politiques de conservation des audits.
+1. [Gérer les stratégies de rétention des journaux d'audit dans le portail de conformité Microsoft Purview](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-compliance-portal) – Les stratégies de rétention des journaux d'audit sont répertoriées dans l'onglet Stratégies de rétention d'audit (également appelé tableau de bord). Vous pouvez utiliser le tableau de bord pour afficher, modifier et supprimer les politiques de conservation des audits.
 1. Créez et gérez des stratégies de rétention des journaux d'audit sur PowerShell : vous pouvez également utiliser le Centre de sécurité et de conformité PowerShell pour [créer et gérer des stratégies de rétention des journaux d'audit](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell). L’une des raisons de l’utilisation de PowerShell est la création d’une stratégie pour un type ou une activité d’enregistrement qui n’est pas disponible dans l’interface utilisateur.
 
 ## <a name="communication-compliance"></a>Conformité des communications
 
 **Identifier et agir sur les violations de la politique du code de conduite**
 
-La conformité de la communication vous aide à identifier intelligemment les violations de communication pour soutenir un environnement de travail conforme et sain en vous aidant à détecter les messages inappropriés, à enquêter sur d'éventuelles violations de stratégie et à prendre des mesures pour y remédier.
+La conformité de la communication Microsoft Purview vous aide à identifier intelligemment les violations de communication pour soutenir un environnement de travail conforme et sain en vous aidant à détecter les messages inappropriés, à enquêter sur d'éventuelles violations de stratégie et à prendre des mesures pour y remédier.
 
 ### <a name="step-1-enable-permissions-for-communication-compliance"></a>Étape 1 : [Activer les autorisations pour la conformité des communications](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
 
@@ -113,7 +115,7 @@ Pour utiliser cette fonctionnalité, activez l'audit afin que votre organisation
 
 **Gérez facilement la conformité de votre organisation**
 
-Le Gestionnaire de conformité peut vous aider tout au long de votre parcours de conformité, de l’inventaire des risques de protection de vos données à la gestion des complexités de l’implémentation de contrôles, la mise à jour des réglementations et des certifications et la création de rapports aux auditeurs.
+Le Gestionnaire de conformité Microsoft Purview peut vous aider tout au long de votre parcours de conformité, de l’inventaire des risques de protection de vos données à la gestion des complexités de l’implémentation de contrôles, la mise à jour des réglementations et des certifications et la création de rapports aux auditeurs.
 
 ### <a name="step-1-get-to-know-compliance-manager"></a>Étape 1 : [Connaître le Gestionnaire de conformité](compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
 
@@ -171,7 +173,7 @@ Les évaluations personnalisées sont utiles pour :
 
 **Protéger les données sensibles**
 
-Pour respecter les normes de l'entreprise et les réglementations du secteur, les organisations doivent protéger les informations sensibles et empêcher leur divulgation accidentelle. Configurez des stratégies de protection contre la perte de données pour identifier, surveiller et protéger automatiquement les informations sensibles dans Microsoft 365.
+Pour respecter les normes de l'entreprise et les réglementations du secteur, les organisations doivent protéger les informations sensibles et empêcher leur divulgation accidentelle. Configurez des stratégies de protection contre la perte de données Microsoft Purview pour identifier, surveiller et protéger automatiquement les informations sensibles dans Microsoft 365.
 
 ### <a name="step-1-protect-data-loss-on-teams-locations"></a>Étape 1 : [Protégez la perte de données sur les emplacements Teams](dlp-microsoft-teams.md#dlp-licensing-for-microsoft-teams)
 
@@ -192,7 +194,7 @@ Si votre organisation dispose d'une protection contre la perte de données (DLP)
 Microsoft Endpoint DLP vous permet de surveiller les appareils Windows 10 et de détecter les situations d’utilisation et de partage des éléments sensibles.
 
 1. Préparez vos points de terminaison – assurez-vous que les appareils Windows 10 et macOS que vous prévoyez de déployer Endpoint DLP [répondre à ces exigences](endpoint-dlp-getting-started.md)
-1. [Intégrer les appareils dans la gestion des appareils](endpoint-dlp-getting-started.md) – Vous devez activer la surveillance des appareils et intégrer vos points de terminaison avant de pouvoir surveiller et protéger les éléments sensibles sur un appareil. Ces deux actions sont effectuées dans le portail de conformité Microsoft 365.
+1. [Intégrer les appareils dans la gestion des appareils](endpoint-dlp-getting-started.md) – Vous devez activer la surveillance des appareils et intégrer vos points de terminaison avant de pouvoir surveiller et protéger les éléments sensibles sur un appareil. Ces deux actions sont effectuées dans le portail de conformité Microsoft Purview.
    - Scénario 1 – [Appareils d’intégration](endpoint-dlp-getting-started.md) qui n'ont pas encore été intégrés.
    - Scénario 2 – [Microsoft Defender pour point de terminaison est déjà déployé et il existe des rapports de points de terminaison dans](endpoint-dlp-getting-started.md). Tous ces points de terminaison s’affichent dans la liste des appareils gérés.
 1. [Configurer notre politique DLP par défaut pour les appareils](mip-easy-trials.md#dlp-for-devices) ou [Définir une nouvelle stratégie DLP pour les appareils](endpoint-dlp-learn-about.md).
@@ -210,7 +212,7 @@ Vous disposez d'une certaine flexibilité dans la façon dont vous configurez vo
       - [Empêcher l'accès externe aux documents sensibles](dlp-microsoft-teams.md#prevent-external-access-to-sensitive-documents)
       - [Obtenez des conseils de stratégie pour aider à éduquer les utilisateurs et des instructions pour personnaliser les conseils de stratégie](dlp-microsoft-teams.md#policy-tips-help-educate-users)
    - Appareils : passer de l'audit uniquement au blocage
-1. [Configurer et afficher les alertes pour les stratégies de prévention des pertes de données – Conformité Microsoft 365 | Microsoft Docs](dlp-configure-view-alerts-policies.md)
+1. [Configurer et afficher les alertes pour les stratégies de prévention des pertes de données – Microsoft Purview | Microsoft Docs](dlp-configure-view-alerts-policies.md)
 
 ## <a name="ediscovery"></a>eDiscovery
 
@@ -243,7 +245,7 @@ De plus en plus d'organisations utilisent la solution Advanced eDiscovery dans M
 
 Pour permettre aux membres de votre organisation de commencer à créer et à utiliser des cas, vous devez configurer des paramètres globaux qui s'appliquent à tous les cas de votre organisation. À l'heure actuelle, le seul paramètre global est la **détection du privilège avocat-client** (des paramètres plus globaux seront disponibles à l'avenir).
 
-1. [Configurer Advanced eDiscovery – Paramètres globaux](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-advanced-ediscovery)
+1. [Configurer Advanced eDiscovery – Paramètres globaux](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
 1. [Configurer les paramètres de recherche et d’analyse](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
 1. [Gérer les tâches dans Advanced eDiscovery](managing-jobs-ediscovery20.md)
 
@@ -262,7 +264,7 @@ Définissez des limites de conformité pour les enquêtes eDiscovery :
 
 ### <a name="step-5-optional-learn-about-content-search-tool"></a>Étape 5 (facultative) : [En savoir plus sur l'outil de recherche de contenu](search-for-content.md)
 
-Utilisez l'outil de recherche de contenu dans le centre de conformité Microsoft 365 pour rechercher rapidement des e-mails dans les boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, et des conversations de messagerie instantanée dans Skype Entreprise. Vous pouvez utiliser l'outil de recherche de contenu pour rechercher des e-mails, des documents et des conversations de messagerie instantanée dans des outils de collaboration tels que Microsoft Teams et Microsoft 365 Groups.
+Utilisez l'outil de recherche de contenu dans le portail de conformité Microsoft Purview pour rechercher rapidement des e-mails dans les boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, et des conversations de messagerie instantanée dans Skype Entreprise. Vous pouvez utiliser l'outil de recherche de contenu pour rechercher des e-mails, des documents et des conversations de messagerie instantanée dans des outils de collaboration tels que Microsoft Teams et Microsoft 365 Groups.
 
 - [En savoir plus sur la recherche eDiscovery avancée](search-for-content.md#search-for-content)
 
@@ -270,14 +272,14 @@ Utilisez l'outil de recherche de contenu dans le centre de conformité Microsoft
 
 **Découvrir, classez et protégez vos informations sensibles**
 
-Implémentez Microsoft Information Protection et les étiquettes de confidentialité pour vous aider à découvrir, classer et protéger votre contenu sensible où qu’il se trouve et ou qu’il se déplace.
+Implémentez Microsoft Purview Information Protection et les étiquettes de confidentialité pour vous aider à découvrir, classer et protéger votre contenu sensible où qu’il se trouve et ou qu’il se déplace.
 
 ### <a name="step-1-start-your-information-protection-trial"></a>Étape 1 : [Démarrer votre essai de protection des informations](mip-easy-trials.md)
 
 > [!TIP]
 > Meilleures pratiques d'essai : Jour 1
 
-Les clients éligibles peuvent activer les étiquettes et les stratégies par défaut pour Microsoft Information Protection. Lorsque vous activez la configuration par défaut dans la version d’évaluation, il faut environ 2 minutes pour configurer toutes les stratégies de votre client et jusqu’à 24 heures pour voir les résultats de ces stratégies par défaut.
+Les clients éligibles peuvent activer les étiquettes et les stratégies par défaut pour Microsoft Purview Information Protection. Lorsque vous activez la configuration par défaut dans la version d’évaluation, il faut environ 2 minutes pour configurer toutes les stratégies de votre client et jusqu’à 24 heures pour voir les résultats de ces stratégies par défaut.
 
 En choisissant la configuration par défaut, en 1 clic, se configure automatiquement :
 
@@ -356,7 +358,7 @@ Pour activer l'analyse des risques d'initiés, vous devez être membre de Inside
 
 **Automatisez le calendrier de conservation des enregistrements critiques pour l'entreprise**
 
-Utilisez les fonctionnalités intégrées de gestion des enregistrements pour automatiser le calendrier de conservation des enregistrements réglementaires, juridiques et critiques de l'entreprise. Elle prend en charge le cycle de vie complet du contenu, de la création à la collaboration, de la déclaration d’enregistrement, de la rétention basée sur les événements et de la suppression.
+Utilisez les fonctionnalités intégrées de gestion des enregistrements Microsoft Purview pour automatiser le calendrier de conservation des enregistrements réglementaires, juridiques et critiques de l'entreprise. Elle prend en charge le cycle de vie complet du contenu, de la création à la collaboration, de la déclaration d’enregistrement, de la rétention basée sur les événements et de la suppression.
 
 ### <a name="step-1-dynamically-target-retention-policies-with-adaptive-policy-scopes"></a>Étape 1 : Ciblez dynamiquement les stratégies de rétention avec les étendues de stratégie adaptatives
 
@@ -418,7 +420,7 @@ Aidez votre organisation à évaluer les risques et à répondre efficacement au
 
 [Plus d'informations sur l'essai des évaluations premium de Compliance Manager](compliance-easy-trials-compliance-manager-assessments.md).
 
-[Guide d'essai : évaluations premium de Microsoft Compliance Manager](compliance-easy-trials-compliance-manager-assessment-playbook.md)
+[Guide opérationnel d'essai : évaluations premium du Gestionnaire de conformité Microsoft Purview](compliance-easy-trials-compliance-manager-assessment-playbook.md)
 
 ### <a name="microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests"></a>Gestion des risques liés à la confidentialité Microsoft Priva et demandes de droits d'objet Microsoft Priva
 
@@ -432,7 +434,7 @@ Identifiez et protégez de manière proactive les risques de confidentialité te
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
-**Qu'inclut-il ?** : pour une liste complète des solutions et fonctionnalités de conformité Microsoft 365 répertoriées par niveau de produit, consultez la [matrice des fonctionnalités](https://go.microsoft.com/fwlink/?linkid=2139145).
+**Qu'inclut-il ?** : pour une liste complète des solutions et fonctionnalités de conformité Microsoft Purview répertoriées par niveau de produit, consultez la [Matrice des fonctionnalités](https://go.microsoft.com/fwlink/?linkid=2139145).
 
 **Bibliothèque de contenu technique de sécurité Microsoft** : explorez cette bibliothèque pour trouver des guides interactifs et d'autres contenus d'apprentissage correspondant à vos besoins. [Visitez la bibliothèque](/security).
 
