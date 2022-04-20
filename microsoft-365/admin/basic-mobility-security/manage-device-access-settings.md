@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La mobilité et la sécurité de base peuvent vous aider à sécuriser et à gérer les appareils mobiles.
-ms.openlocfilehash: fbd8df7bff6ffa24d2a951d86a85d699e0b1699f
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: aa5c6bb757604763e9ba7348d1d4f952a6555865
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781026"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935256"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Gérer les paramètres d’accès aux appareils dans Mobilité et sécurité de base
 
@@ -38,7 +38,7 @@ Procédez comme suit :
     > [!IMPORTANT]
     > S’il s’agit de la première fois que vous utilisez la mobilité et la sécurité de base pour Microsoft 365 Business Standard, [activez-la ici : Activer la sécurité et la mobilité de base](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). Une fois que vous l’avez activé, gérez vos appareils avec [Office 365 Sécurité & Conformité](https://protection.office.com/).
 
-3. Accédez à La protection contre la perte de données > stratégies **Device** **managementDevice** > , puis sélectionnez **Gérer les paramètres d’accès aux appareils à l’échelle de l’organisation**.
+3. Accédez aux stratégies  **managementDevice managementDevice** **** > de  **protection contre la** > perte de données et sélectionnez  **Paramètres d’accès aux appareils à l’échelle de l’organisation**.
 
 4. Sélectionnez **Bloquer**. 
 

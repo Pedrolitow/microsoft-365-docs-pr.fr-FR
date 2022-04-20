@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: En savoir plus sur Azure Information Protection (AIP) pour Office 365 géré par 21Vianet et comment le configurer pour les clients en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 3b4906844c76293a1163d17d77b009528ef32f12
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 0f495139a807d4a0eeb3181626717c6d5061fc38
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782894"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935212"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Prise en charge d’Azure Information Protection pour les Office 365 exploités par 21Vianet
 
@@ -62,7 +62,7 @@ La liste suivante inclut les écarts existants entre AIP pour Office 365 exploit
 Pour configurer AIP pour les clients en Chine :
 1. [Activez Rights Management pour le locataire](#step-1-enable-rights-management-for-the-tenant).
 
-1. [Ajoutez le principal du service de synchronisation Protection des données Microsoft](#step-2-add-the-microsoft-information-protection-sync-service-service-principal).
+1. [Ajoutez le principal du service De synchronisation Information Protection Microsoft Purview](#step-2-add-the-microsoft-purview-information-protection-sync-service-service-principal).
 
 1. [Configurez le chiffrement DNS](#step-3-configure-dns-encryption).
 
@@ -86,9 +86,9 @@ Pour que le chiffrement fonctionne correctement, RMS doit être activé pour le 
 
 2. Si l’état fonctionnel est `Disabled`, exécutez `Enable-AipService`.
 
-### <a name="step-2-add-the-microsoft-information-protection-sync-service-service-principal"></a>Étape 2 : Ajouter le principal du service de synchronisation Protection des données Microsoft
+### <a name="step-2-add-the-microsoft-purview-information-protection-sync-service-service-principal"></a>Étape 2 : Ajouter le principal du service De synchronisation Information Protection Microsoft Purview
 
-Le **principal du service de synchronisation Protection des données Microsoft** n’est pas disponible par défaut dans les locataires Azure China et est requis pour Azure Information Protection. Créez ce principal de service manuellement via le module Azure Az PowerShell.
+Le principal du **service Microsoft Purview Information Protection Sync** n’est pas disponible par défaut dans les locataires Azure China et est requis pour Azure Information Protection. Créez ce principal de service manuellement via le module Azure Az PowerShell.
 
 1. Si le module Azure Az n’est pas installé, installez-le ou utilisez une ressource dans laquelle le module Azure Az est préinstallé, comme [Azure Cloud Shell](/azure/cloud-shell/overview). Pour plus d’informations, consultez [Installer le module Azure Az PowerShell](/powershell/azure/install-az-ps).
 
@@ -98,7 +98,7 @@ Le **principal du service de synchronisation Protection des données Microsoft**
     Connect-azaccount -environmentname azurechinacloud
     ```
 
-1. Créez manuellement le principal du **service Protection des données Microsoft Sync** à l’aide de l’applet de commande [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) et de l’ID `870c4f2e-85b6-4d43-bdda-6ed9a579b725` d’application du service de synchronisation Protection des données Microsoft :
+1. Créez manuellement le principal du **service Microsoft Purview Information Protection Sync** à l’aide de l’applet de commande [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) et de l’ID `870c4f2e-85b6-4d43-bdda-6ed9a579b725` d’application du service de synchronisation Microsoft Purview Information Protection :
 
     ```powershell 
     New-AzADServicePrincipal -ApplicationId 870c4f2e-85b6-4d43-bdda-6ed9a579b725

@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: Utilisez la fonctionnalité de recherche et de purge dans le Centre de sécurité et de conformité Microsoft 365 pour rechercher et supprimer un message électronique dans toutes les boîtes aux lettres de votre organisation.
-ms.openlocfilehash: 8d283148b0a0cee0aed3d91a6332c96bd31111b4
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+description: Utilisez la fonctionnalité de recherche et de vidage dans le portail de conformité Microsoft Purview pour rechercher et supprimer un message électronique de toutes les boîtes aux lettres de votre organisation.
+ms.openlocfilehash: 23eeff8078dbd7ab65b0bddb9684aa81d65aab94
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64846956"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64936244"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Rechercher et supprimer des messages électroniques
 
@@ -43,10 +43,10 @@ Vous pouvez utiliser la fonctionnalité de recherche de contenu pour rechercher 
 
 - Le flux de travail de recherche et de vidage décrit dans cet article ne supprime pas les messages de conversation ou d’autres contenus de Microsoft Teams. Si la recherche de contenu que vous créez à l’étape 2 retourne des éléments de Microsoft Teams, ces éléments ne seront pas supprimés lorsque vous purgez des éléments à l’étape 3. Pour rechercher et supprimer des messages de conversation, consultez [Rechercher et vider les messages de conversation dans Teams](search-and-delete-Teams-chat-messages.md).
 
-- Pour créer et exécuter une recherche de contenu, vous devez être membre du groupe de rôles **Gestionnaire eDiscovery** ou avoir le rôle **Recherche de conformité** dans le Centre de conformité Microsoft 365. Pour supprimer des messages, vous devez être membre du groupe de rôles **Gestion de l’organisation** ou avoir le rôle **Rechercher et purger** dans le Centre de conformité Pour plus d’informations sur l’ajout d’utilisateurs à un groupe de rôles, consultez [Attribuer des autorisations eDiscovery](assign-ediscovery-permissions.md).
+- Pour créer et exécuter une recherche de contenu, vous devez être membre du groupe de rôles **Gestionnaire eDiscovery** ou avoir le rôle **Recherche de conformité** dans le portail de conformité Microsoft Purview. Pour supprimer des messages, vous devez être membre du groupe de rôles **Gestion de l’organisation** ou avoir le rôle **Rechercher et purger** dans le Centre de conformité Pour plus d’informations sur l’ajout d’utilisateurs à un groupe de rôles, consultez [Attribuer des autorisations eDiscovery](assign-ediscovery-permissions.md).
 
   > [!NOTE]
-  > Le groupe de rôles **Gestion de l’organisation** existe à la fois dans Exchange Online et dans le Centre de conformité Microsoft 365. Ces groupes de rôles distincts donnent des autorisations différentes. Être membre de la **Gestion des organisations** dans Exchange Online n'octroie pas les autorisations requises pour supprimer des messages électroniques. Si vous n’avez pas le rôle **Rechercher et purger** dans le Centre de conformité (directement ou par le biais d’un groupe de rôles tel que **Gestion de l’organisation**), vous recevrez une erreur à l’étape 3 lorsque vous exécutez l'applet de commande **New-ComplianceSearchAction** avec le message « Impossible de trouver un paramètre correspondant au nom de paramètre « Purge ».
+  > Le groupe de rôles **Gestion de l’organisation** existe à la fois dans Exchange Online et dans le Centre de conformité. Ces groupes de rôles distincts donnent des autorisations différentes. Être membre de la **Gestion des organisations** dans Exchange Online n'octroie pas les autorisations requises pour supprimer des messages électroniques. Si vous n’avez pas le rôle **Rechercher et purger** dans le Centre de conformité (directement ou par le biais d’un groupe de rôles tel que **Gestion de l’organisation**), vous recevrez une erreur à l’étape 3 lorsque vous exécutez l'applet de commande **New-ComplianceSearchAction** avec le message « Impossible de trouver un paramètre correspondant au nom de paramètre « Purge ».
 
 - Pour supprimer des messages, vous devez utiliser le centre de sécurité et conformité PowerShell. Pour des instructions sur la façon de se connecter, consultez [Etape 1](#step-1-connect-to-security--compliance-center-powershell).
 
@@ -56,7 +56,7 @@ Vous pouvez utiliser la fonctionnalité de recherche de contenu pour rechercher 
 
 - La procédure décrite dans cet article ne peut être utilisée que pour supprimer des éléments dans les boîtes aux lettres et dossiers publics Exchange Online. Vous ne pouvez pas l’utiliser pour supprimer du contenu de SharePoint ou de sites OneDrive Entreprise.
 
-- Il n’est pas possible de supprimer les éléments de courrier d’un groupe de révision dans un cas Advanced eDiscovery à l’aide des procédures décrites dans cet article. Cela est dû au fait que les éléments d’un groupe de révision sont stockés dans un emplacement de stockage Azure, et non dans le service actif. Cela signifie qu’elles ne sont pas renvoyées par la recherche de contenu que vous créez à l’étape 1. Pour supprimer des éléments d’un groupe de révision, vous devez supprimer le cas Advanced eDiscovery qui contient l’entité de révision. Pour plus d’informations, consultez [Fermer ou supprimer un cas Advanced eDiscovery](close-or-delete-case.md).
+- Les éléments de courrier dans un jeu à réviser dans un cas eDiscovery (Premium) ne peuvent pas être supprimés à l’aide des procédures décrites dans cet article. Cela est dû au fait que les éléments d’un groupe de révision sont stockés dans un emplacement de stockage Azure, et non dans le service actif. Cela signifie qu’elles ne sont pas renvoyées par la recherche de contenu que vous créez à l’étape 1. Pour supprimer des éléments d’un jeu à réviser, vous devez supprimer le cas eDiscovery (Premium) qui contient le jeu à réviser. Pour plus d’informations, consultez [Fermer ou supprimer un cas eDiscovery (Premium)](close-or-delete-case.md).
 
 ## <a name="step-1-connect-to-security--compliance-center-powershell"></a>Étape 1 : connectez-vous au Centre de sécurité et conformité PowerShell
 
@@ -64,7 +64,7 @@ L’étape suivante consiste à se connecter au Centre de sécurité et conformi
 
 ## <a name="step-2-create-a-content-search-to-find-the-message-to-delete"></a>Étape 2 : créer une Recherche de contenu pour rechercher les messages à supprimer
 
-La deuxième étape consiste à créer et exécuter une recherche de contenu pour rechercher le message à supprimer des boîtes aux lettres de votre organisation. Vous pouvez créer la recherche à l’aide du Centre de conformité Microsoft 365 ou en exécutant les cmdlets **New-ComplianceSearch** et **Start-ComplianceSearch** dans PowerShell Sécurité et conformité. Les messages qui correspondent à la requête pour cette recherche sont supprimés en exécutant la commande **New-ComplianceSearchAction -Purge** à l’[étape 3](#step-3-delete-the-message). Pour plus d’informations sur la création d’une recherche de contenu et la configuration de requêtes de recherche, consultez les rubriques suivantes :
+La deuxième étape consiste à créer et exécuter une recherche de contenu pour rechercher le message que vous souhaitez supprimer des boîtes aux lettres de votre organisation. Vous pouvez créer la recherche à l’aide du portail de conformité ou en exécutant les applets de commande **New-ComplianceSearch** et **Start-ComplianceSearch** dans Sécurité et conformité PowerShell. Les messages qui correspondent à la requête pour cette recherche seront supprimés en exécutant la commande **New-ComplianceSearchAction -Purge** à [l'étape 3](#step-3-delete-the-message). Pour plus d’informations sur la création d’une recherche de contenu et la configuration des requêtes de recherche, consultez les rubriques suivantes :
 
 - [Recherche de contenu dans Office 365](content-search.md)
 
@@ -89,7 +89,7 @@ L’objectif de la requête de recherche est de concentrer les résultats de la 
 
 - Prévisualisez les résultats de recherche pour vérifier que la recherche renvoie uniquement les messages que vous voulez supprimer.
 
-- Utilisez les statistiques d’estimation de recherche (affichées dans le volet de détails de la recherche dans le Centre de sécurité et conformité Microsoft 365 ou à l’aide de la cmdlet [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)) pour obtenir le nombre total de résultats.
+- Utilisez les statistiques d’estimation de recherche (affichées dans le volet d’informations de la recherche dans le portail de conformité ou à l’aide de l’applet de commande [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch) ) pour obtenir le nombre total de résultats.
 
 Voici deux exemples de requêtes pour rechercher des messages électroniques suspects.
 

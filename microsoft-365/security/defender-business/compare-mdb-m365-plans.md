@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 04/12/2022
+ms.date: 04/18/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: b1dbe79aadea39bfc737ae9f5457715b669cc79b
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: e32018f52f3a45624fcf07ae03e44c662a594297
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861815"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916312"
 ---
 # <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Comparer Microsoft Defender pour les PME à Microsoft 365 Business Premium
 
@@ -73,9 +73,9 @@ Le tableau suivant compare les fonctionnalités de sécurité dans Defender entr
 
 Defender entreprise offre des fonctionnalités de niveau entreprise de Defender pour point de terminaison aux petites et moyennes entreprises.
 
-Le tableau suivant compare les fonctionnalités de sécurité dans Defender entreprise à Microsoft Defender pour point de terminaison Plans 1 et 2.
+Le tableau suivant compare les fonctionnalités et fonctionnalités de sécurité de Defender entreprise aux offres d’entreprise, Microsoft Defender pour point de terminaison Plans 1 et 2.
 
-|Fonctionnalité/fonctionnalité|[Défenseur des affaires](mdb-overview.md)<br/>(autonome ; actuellement en préversion)|[Defender pour Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md)|[Defender pour point de terminaison Plan 2](../defender-endpoint/microsoft-defender-endpoint.md)|
+|Fonctionnalité/fonctionnalité|[Défenseur des affaires](mdb-overview.md)<br/>(autonome ; actuellement en préversion)|[Defender pour Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md)<br/>(pour les clients d’entreprise) |[Defender pour point de terminaison Plan 2](../defender-endpoint/microsoft-defender-endpoint.md)<br/>(pour les clients d’entreprise) |
 |---|---|---|---|
 |[Gestion centralisée](../defender-endpoint/manage-atp-post-migration.md) |Oui <sup>[[1](#fn1)]</sup>|Oui|Oui|
 |[Configuration du client simplifiée](mdb-simplified-configuration.md)|Oui|Non|Non|

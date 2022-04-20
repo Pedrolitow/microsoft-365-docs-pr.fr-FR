@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Découvrez comment Microsoft 365 pour les PME peut vous accompagner dans le processus du Règlement général sur la protection des données (RGPD).
-ms.openlocfilehash: d5c24fe2f2295e99798fcc5382dc284cec01d385
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 4f900b8694acb97be3449072a2ccf5ac7d89ff1f
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64632402"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934134"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>RGPD simplifié : Un guide pour votre petite entreprise
 
@@ -101,7 +101,7 @@ Par exemple, vous pouvez avoir besoin des données personnelles de votre employ�
 Un nouvel exemple peut être que vous gérez des listes de clients individuels pour leur envoyer des annonces sur des offres spéciales, s’ils y ont consenti.
 
 #### <a name="microsoft-365-features-that-can-help"></a>Fonctionnalités Microsoft 365 pouvant être utiles
-[Microsoft Information Protection dans Microsoft 365](/microsoft-365/compliance/information-protection) pour vous permettre de découvrir, classifier et protéger les informations sensibles dans votre entreprise. Vous pouvez utiliser des classifieurs pouvant être formés pour vous permettre d’identifier et d’étiqueter des types de documents contenant des données personnelles. 
+La [Protection des données Microsoft Purview](/microsoft-365/compliance/information-protection) peut vous aider à découvrir, classer et protéger des informations sensibles dans votre entreprise. Vous pouvez utiliser des classifieurs pouvant être formés pour vous permettre d’identifier et d’étiqueter des types de documents contenant des données personnelles. 
 
 ### <a name="step-2-inform-your-customers-employees-and-other-individuals-when-you-need-to-collect-their-personal-data"></a>Étape 2 : informez vos clients, employés et autres individus que vous devez collecter leurs données personnelles
 

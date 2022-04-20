@@ -20,12 +20,12 @@ metadata:
   search.appverid:
   - MET150
   description: Forum aux questions sur la mobilité et la sécurité de base.
-  ms.openlocfilehash: 98dbb589f3464a0a34729d95e04975e7d8095e5c
-  ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+  ms.openlocfilehash: 68e7143dba70859aa69845f8e1e8e0a5c65ea44f
+  ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/12/2022
-  ms.locfileid: "64781114"
+  ms.lasthandoff: 04/19/2022
+  ms.locfileid: "64934200"
 title: Questions fréquentes (FAQ) sur la mobilité et la sécurité de base
 summary: Cet article contient des questions fréquemment posées sur la mobilité et la sécurité de base, une fonctionnalité qui vous permet de gérer et de sécuriser les appareils mobiles dans Microsoft 365. Si vous ne trouvez pas de réponse à votre question, faites-le nous savoir en laissant un commentaire sur la page afin que nous puissions envisager d’ajouter votre question à cet article.
 sections:
@@ -55,7 +55,7 @@ sections:
   - question: >
       Comment fonctionnent les stratégies pour la mobilité et la sécurité de base ? Comment faire les configurer ? Les désactiver ?
     answer: >
-      Une fois que vous avez terminé la configuration initiale de Basic Mobility and Security, vous créez des stratégies et les appliquez à des groupes d’utilisateurs dans le Centre de sécurité & conformité. Les stratégies exigent que les utilisateurs des stratégies inscrivent leurs appareils dans Mobilité et sécurité de base avant que l’appareil puisse être utilisé pour accéder à Microsoft 365 données. Les stratégies que vous configurez déterminent les paramètres des appareils mobiles, par exemple, la fréquence à laquelle les mots de passe doivent être réinitialisés ou si le chiffrement des données est requis. Pour plus d’informations, consultez [Créer des stratégies de sécurité des appareils dans Mobilité et sécurité de base](create-device-security-policies.md) et [Centre de conformité Microsoft 365](../../compliance/microsoft-365-compliance-center.md).
+      Une fois que vous avez terminé la configuration initiale de Basic Mobility and Security, vous créez des stratégies et les appliquez à des groupes d’utilisateurs dans le Centre de sécurité & conformité. Les stratégies exigent que les utilisateurs des stratégies inscrivent leurs appareils dans Mobilité et sécurité de base avant que l’appareil puisse être utilisé pour accéder à Microsoft 365 données. Les stratégies que vous configurez déterminent les paramètres des appareils mobiles, par exemple, la fréquence à laquelle les mots de passe doivent être réinitialisés ou si le chiffrement des données est requis. Pour plus d’informations, consultez [Créer des stratégies de sécurité des appareils dans le portail de sécurité et de sécurité de base](create-device-security-policies.md) et le [portail de conformité Microsoft Purview](../../compliance/microsoft-365-compliance-center.md).
 
 
       Pour obtenir des instructions détaillées sur la création et le déploiement de stratégies d’appareil, consultez Créer des stratégies [de sécurité des appareils dans Mobilité et sécurité de base](create-device-security-policies.md).

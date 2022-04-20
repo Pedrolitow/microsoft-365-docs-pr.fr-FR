@@ -1,5 +1,5 @@
 ---
-title: Configurer des balises intelligentes dans Advanced eDiscovery
+title: Configurer des balises actives dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,36 +16,36 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-description: Les balises intelligentes vous permet d’appliquer les fonctionnalités d’apprentissage automatique lors de l’examen du contenu dans Advanced eDiscovery cas. Utilisez des groupes de balises intelligentes pour afficher les résultats des modèles de détection d’apprentissage automatique, tels que le modèle de privilège client-avocat.
-ms.openlocfilehash: 80c946da943e4880dbd82ea6b34d238b80030b4c
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+description: Les balises intelligentes vous permettent d’appliquer les fonctionnalités de Machine Learning lors de l’examen du contenu dans un cas eDiscovery (Premium). Utilisez des groupes de balises actives pour afficher les résultats des modèles de détection de Machine Learning, tels que le modèle de privilège avocat-client.
+ms.openlocfilehash: 9fd4a53df00bcb096a885ed311e4fb4ed365725e
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807187"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934618"
 ---
-# <a name="set-up-smart-tags-in-advanced-ediscovery"></a>Configurer des balises intelligentes dans Advanced eDiscovery
+# <a name="set-up-smart-tags-in-ediscovery-premium"></a>Configurer des balises actives dans eDiscovery (Premium)
 
-Les fonctionnalités d’apprentissage automatique (ML) dans Advanced eDiscovery peuvent vous aider à améliorer l’efficacité du processus de décision lors de l’examen des documents de cas dans un groupe de révision. Les balises intelligentes sont un moyen d’ML les fonctionnalités à l’endroit où les décisions sont enregistrées : lors du marquage des documents pendant la révision. Lorsque vous créez un groupe de balises intelligentes, les décisions qui résultent du modèle ML que vous avez associé au groupe de balises intelligentes sont affichées en ligne avec les balises du groupe de balises. Cela permet de voir les ML résultats en ligne lorsque vous examinez des documents spécifiques.
+Les fonctionnalités de Machine Learning (ML) dans Microsoft Purview eDiscovery (Premium) peuvent vous aider à rendre le processus de décision plus efficace lors de l’examen des documents de cas dans un ensemble de révisions. Les balises intelligentes sont un moyen d’apporter les fonctionnalités ML à l’endroit où les décisions sont enregistrées : lors de l’étiquetage des documents lors de la révision. Lorsque vous créez un groupe de balises actives, les décisions qui sont le résultat du modèle ML que vous avez associé au groupe de balises actives s’affichent en ligne avec les balises du groupe de balises. Cela permet de voir les informations de résultats ML en ligne lorsque vous examinez des documents spécifiques.
 
-## <a name="how-to-set-up-a-smart-tag-group"></a>Comment configurer un groupe de balises intelligentes
+## <a name="how-to-set-up-a-smart-tag-group"></a>Comment configurer un groupe de balises actives
 
-1. Dans un jeu à réviser, cliquez sur **Gérer le jeu à réviser** , puis sur **Gérer les balises**.
+1. Dans un ensemble de révisions, cliquez sur **Gérer l’ensemble de révisions** , puis sur **Gérer les balises**.
 
-2. Cliquez **sur Ajouter un groupe de balises** , puis **sélectionnez Ajouter un groupe de balises intelligentes**.
+2. Cliquez sur **Ajouter un groupe de balises** , puis **sélectionnez Ajouter un groupe de balises actives**.
 
-3. Sélectionnez ML modèle à associer au groupe de balises.
+3. Sélectionnez le modèle ML que vous souhaitez associer au groupe de balises.
     
-   Cela crée un groupe de balises et des balises *enfants N* , où *N* est le nombre de sorties possibles du modèle. Par exemple, le modèle [de détection des privilèges client-avocat](attorney-privilege-detection.md) a deux sorties possibles : 
+   Cela crée un groupe de balises et des balises *enfants N* , où *N* correspond au nombre de sorties possibles du modèle. Par exemple, le [modèle de détection des privilèges avocat-client](attorney-privilege-detection.md) a deux sorties possibles : 
 
-   - **Positif** : utilisez cette balise pour baliser les documents qui contiennent du contenu privilégié client-avocat.
+   - **Positif** : permet d’étiqueter des documents qui contiennent du contenu privilégié avocat-client.
    
-   - **Négatif** : utilisez cette balise pour baliser les documents qui ne contiennent pas de contenu privilégié client-avocat.
+   - **Négatif** : permet de baliser des documents qui ne contiennent pas de contenu privilégié avocat-client.
     
-    Si vous sélectionnez ce modèle, un groupe de balises avec deux balises enfants est créé (une balise enfant nommée **Positive** et l’autre nommée **Negative**) pour le jeu à réviser. Dans cet exemple, chaque balise enfant correspond à l’une des sorties possibles du modèle de détection des privilèges client-avocat.
+    Si vous sélectionnez ce modèle, un groupe de balises avec deux balises enfants est créé (une balise enfant nommée **Positive** et l’autre **négative**) pour le jeu de révision. Dans cet exemple, chaque balise enfant correspond à l’une des sorties possibles du modèle de détection des privilèges avocat-client.
 
-4. Si vous le souhaitez, vous pouvez renommer le groupe de balises et les balises enfants. Par exemple, vous pouvez renommer la balise **Positive** en **Privilégié** et la balise **Negative** sur **Non privilégié**.
+4. Si vous le souhaitez, vous pouvez renommer le groupe de balises et les balises enfants. Par exemple, vous pouvez renommer la balise **Positive** en **Privileged** et la balise **Négative** **en Not privileged**.
 
-## <a name="how-to-use-smart-tags"></a>Comment utiliser des balises intelligentes
+## <a name="how-to-use-smart-tags"></a>Comment utiliser des balises actives
 
-Lors de la révision d’un document, les résultats du modèle s’affichent à côté de la balise enfant appropriée. Par exemple, si vous avez un groupe de balises intelligentes pour la détection des privilèges client-avocat et que vous examinez un document potentiellement privilégié, la raison de cette conclusion s’affiche à côté de la balise appropriée. Il est important de noter que la balise n’est pas appliquée automatiquement au document. Le réviseur prend la décision de baliser le document.
+Lors de l’examen d’un document, les résultats du modèle s’affichent en regard de la balise enfant appropriée. Par exemple, si vous disposez d’un groupe de balises actives pour la détection des privilèges avocat-client et que vous examinez un document potentiellement privilégié, la raison de cette conclusion s’affiche en regard de la balise appropriée. Il est important de noter que la balise n’est pas appliquée automatiquement au document. Le réviseur prend la décision de baliser le document.

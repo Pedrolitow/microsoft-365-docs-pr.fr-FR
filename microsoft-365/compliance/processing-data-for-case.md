@@ -1,5 +1,5 @@
 ---
-title: Travailler avec les erreurs de traitement dans Advanced eDiscovery
+title: Utiliser les erreurs de traitement dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,21 +17,21 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Vue d’ensemble du traitement de différentes formes de données Advanced eDiscovery.
-ms.openlocfilehash: 9f44593983256079150ad48954c5f1883f836083
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Vue d’ensemble du traitement de différentes formes de données dans eDiscovery (Premium).
+ms.openlocfilehash: 043e1b2b023fdd4e379116109069674515153524
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179030"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64936310"
 ---
-# <a name="work-with-processing-errors-in-advanced-ediscovery"></a>Travailler avec les erreurs de traitement dans Advanced eDiscovery
+# <a name="work-with-processing-errors-in-ediscovery-premium"></a>Utiliser les erreurs de traitement dans eDiscovery (Premium)
 
- Le traitement est le processus d’identification de fichiers, d’extension des documents et pièces jointes incorporés, d’extraction de texte et de reconnaissance optique de caractères (OCR) des fichiers image et de l’indexation ultérieure de ce contenu.  
+*Le traitement* est le processus d’identification des fichiers, l’expansion des documents et pièces jointes incorporés, l’extraction de texte et la reconnaissance optique des caractères (OCR) des fichiers image et l’indexation suivante de ce contenu.  
 
-Lorsque vous ajoutez des dépositaires et des sources de données non dépositaires à un cas sous l’onglet **Sources,** tous les éléments partiellement indexés à partir de Microsoft 365 sont traitées pour les rendre entièrement utilisables dans une recherche. De même, lorsque du contenu est ajouté à un jeu à réviser à partir de sources de données Microsoft 365 et non Microsoft 365 données, ce contenu est également traitée.
+Lorsque vous ajoutez des consignatateurs et des sources de données non gardiennes à un cas sous l’onglet **Sources**, tous les éléments partiellement indexés de Microsoft 365 sont traités pour les rendre entièrement consultables. De même, lorsque du contenu est ajouté à un jeu de révision à partir de sources de données Microsoft 365 et non Microsoft 365, ce contenu est également traité.
 
-L’onglet **Traitement** dans Advanced eDiscovery fournit un aperçu de l’état de l’indexation avancée pour différents scénarios de traitement.
+**L’onglet Traitement** dans eDiscovery (Premium) fournit des informations sur l’état de l’indexation avancée pour différents scénarios de traitement.
 
 Si vous souhaitez en savoir plus, consultez les articles suivants :
 

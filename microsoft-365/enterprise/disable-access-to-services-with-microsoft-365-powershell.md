@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Dans cet article, découvrez comment utiliser PowerShell pour désactiver l’accès aux services Microsoft 365 pour les utilisateurs.
-ms.openlocfilehash: e0fc42f0c68b02824513f382228378bfd4ee2a8e
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: eeb3c8dc0057318550a956d0d0f4f916f4515fd4
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824857"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64915860"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>Désactiver l’accès aux services Microsoft 365 avec PowerShell
 
@@ -80,7 +80,6 @@ EMSPREMIUM
 SPE_E5
 RIGHTSMANAGEMENT_ADHOC
 
-$LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesiredService1>", "<UndesiredService2>"...
 ```
 
 Ensuite, utilisez SkuPartNumber à partir de la commande ci-dessus, répertoriez les plans de service disponibles pour un plan de licence (SKU) donné.

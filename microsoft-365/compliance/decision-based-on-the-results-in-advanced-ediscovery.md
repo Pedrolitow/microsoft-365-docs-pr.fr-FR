@@ -1,5 +1,5 @@
 ---
-title: Décision basée sur les résultats de la Advanced eDiscovery
+title: Décision basée sur les résultats dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,40 +14,40 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
-description: Découvrez comment l’onglet Décider dans Advanced eDiscovery fournit des données qui peuvent vous aider à déterminer la taille correcte du jeu de révision des fichiers de cas.
+description: Découvrez comment l’onglet Décider dans eDiscovery (Premium) fournit des données qui peuvent vous aider à déterminer la taille correcte de l’ensemble de fichiers de cas de révision.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 32682690c6febac247d67e3b78f56d1f71b9a2fb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6c8759db2445b8d98c47cc1103deda058d2f3508
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207354"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64932417"
 ---
-# <a name="decisions-based-on-relevance-results-in-advanced-ediscovery"></a>Les décisions basées sur la pertinence entraînent Advanced eDiscovery
+# <a name="decisions-based-on-relevance-results-in-ediscovery-premium"></a>Les décisions basées sur la pertinence ont pour résultat eDiscovery (Premium)
   
-Dans le module Pertinence de Advanced eDiscovery, l’onglet Décider fournit des informations supplémentaires pour l’affichage et l’utilisation des statistiques de prise de décision pour déterminer la taille du jeu de fichiers de cas à réviser.
+Dans le module Pertinence dans eDiscovery (Premium), l’onglet Décider fournit des informations supplémentaires pour afficher et utiliser des statistiques de prise de décision pour déterminer la taille de l’ensemble de fichiers de cas de révision.
   
 ## <a name="using-the-decide-tab"></a>Utilisation de l’onglet Décider
 
 ![Décision de pertinence.](../media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
   
-Cet onglet comprend les composants suivants :
+Cet onglet inclut les composants suivants :
   
-- **Problème**: à partir de là, vous pouvez sélectionner le problème d’intérêt dans la liste.
+- **Problème** : à partir de là, vous pouvez sélectionner le problème d’intérêt dans la liste.
 
-- **Taux de révision/rappel :** comparaisons des Advanced eDiscovery en fonction des scores de pertinence. Le point de coupure dans le graphique représente le pourcentage de fichiers à réviser, mappé à un score de pertinence. Il est utilisé dans la phase test de pertinence et comme seuil d’exportation pour l’élimination. Le point de coupure par défaut, pour le nombre de fichiers à réviser, est au point où l’équilibre entre Rappel et Précision est optimal. Le point de coupure réel doit être déterminé par l’utilisateur en fonction des objectifs et du compromis de coût (%review) et du risque (%recall). À l’aide du curseur, vous pouvez ajuster le point de coupure et voir l’effet sur le graphique et les paramètres, lors de l’ajustement du pourcentage de fichiers pertinents à récupérer et avant de valider une décision.
+- **Ratio révision-rappel** : comparaisons de la révision eDiscovery (Premium) en fonction des scores de pertinence. Le point de coupure dans le graphique représente le pourcentage de fichiers à examiner, mappé à un score de pertinence. Il est utilisé dans la phase de test de pertinence et comme seuil d’exportation pour l’élimination. Le point d’interruption par défaut, pour le nombre de fichiers à examiner, est au point où l’équilibre entre rappel et précision est optimal. Le point de terminaison réel doit être déterminé par l’utilisateur en fonction des objectifs et du compromis de coût (%review) et du risque (%recall). À l’aide du curseur, vous pouvez ajuster le point de coupure et voir l’effet sur le graphique et les paramètres, lors de l’ajustement du pourcentage de fichiers pertinents à récupérer, et avant de valider une décision.
 
-- **Parameters**: Review, Recall, Next relevant and Total cost parameters are cumulative calculated statistics pertaining to the review set in relation to the collection for the entire case. Les définitions de ces paramètres sont les suivantes :
+- **Paramètres : Les paramètres** Review, Recall, Next relevant et Total cost sont des statistiques calculées cumulatives relatives à l’ensemble de révisions par rapport à la collection pour l’ensemble du cas. Les définitions de ces paramètres sont les suivantes :
 
-  - **Révision**: Pourcentage de fichiers à réviser en fonction de ce cutoff.
+  - **Révision** : pourcentage de fichiers à examiner en fonction de ce seuil.
 
-  - **Rappel**: pourcentage de fichiers pertinents dans le jeu à réviser.
+  - **Rappel** : Pourcentage de fichiers pertinents dans l’ensemble de révisions.
 
-  - **Pertinence suivante**: coût de révision et d’identification d’un autre fichier pertinent qui n’est pas actuellement dans l’ensemble de révision.
+  - **Suivant pertinent** : Coût de révision et d’identification d’un autre fichier pertinent qui n’est pas actuellement dans l’ensemble de révision.
 
-  - **Coût total**: coût pour la révision de ce pourcentage des fichiers de cas. Les paramètres de coût peuvent être définies par le gestionnaire de cas.
+  - **Coût total** : coût de la révision de ce pourcentage des fichiers de cas. Les paramètres de coût peuvent être définis par le gestionnaire de cas.
 
-  - **Répartition par score de pertinence**: les fichiers dans l’affichage gris foncé à gauche sont inférieurs au score de seuil. Une info-conseil affiche le score de pertinence et le pourcentage connexe de fichiers dans le jeu de fichiers de révision par rapport au nombre total de fichiers.
+  - **Distribution par score de pertinence** : les fichiers dans l’affichage gris foncé à gauche sont inférieurs au score de coupure. Un info-bulle affiche le score de pertinence et le pourcentage associé de fichiers dans le fichier de révision défini par rapport au nombre total de fichiers.
 
-Le volet **Détails développé** affiche plus de détails. Les fichiers dans les figures de collection n’incluent pas de fichiers vides ou nebules. Les figures de fichiers de famille représentent des fichiers qui ne sont pas chargés en Pertinence, mais qui sont toujours comptés dans le cadre de la famille.
+Le volet **Détails** développé affiche plus de détails. Les fichiers des figures de collection n’incluent pas de fichiers vides ou nébuleux. Les figures de fichiers familiaux représentent des fichiers qui ne sont pas chargés dans Relevance, mais qui sont toujours comptabilisés dans la famille.

@@ -21,35 +21,35 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
-description: Obtenez une vue d’Microsoft 365 centre de messages et son rôle dans le suivi des fonctionnalités nouvelles et modifiées et d’autres annonces importantes.
-ms.openlocfilehash: 09ae8e85a6de64848733c4f80b5d2e28e99072fc
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Obtenez une vue d’ensemble de Microsoft 365 Centre de messages et de son rôle dans le suivi des fonctionnalités nouvelles et modifiées et d’autres annonces importantes.
+ms.openlocfilehash: 6fabb66407eb21dc97880eaf2532b89ce02f9281
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322322"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935278"
 ---
 # <a name="message-center"></a>Centre de messages
 
-Pour suivre les modifications à venir, y compris les fonctionnalités nouvelles et modifiées, la maintenance planifiée ou d’autres annonces importantes, allez dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Centre de messages</a>.
+Pour suivre les modifications à venir, notamment les fonctionnalités nouvelles et modifiées, la maintenance planifiée ou d’autres annonces importantes, accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Centre</a> des messages.
   
-Pour ouvrir le Centre de messages :
+Pour ouvrir le centre de messages :
 
 ::: moniker range="o365-worldwide"
 
-- Dans le centre d’administration, allez au **centre de messages d’état** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">d’santé</a>.
+- Dans le centre d’administration, **accédez au** <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Centre de messages</a> d’intégrité.>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-- Dans le centre <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">d’administration</a>, allez au **centre de messages d’état** > **d’santé**.
+- Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centre d’administration</a>, **accédez au** **Centre de messages** d’intégrité.>
 
 ::: moniker-end
 
-Vous pouvez également utiliser [l’application Administration Microsoft 365 sur](https://go.microsoft.com/fwlink/p/?linkid=627216) votre appareil mobile pour afficher le centre de messages, ce qui est un excellent moyen de rester informé des notifications Push.
+Vous pouvez également utiliser [l’application Administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=627216) sur votre appareil mobile pour afficher le Centre de messages, ce qui est un excellent moyen de rester à jour avec les notifications Push.
 
-Pour vous désabonner des e-mails du Centre de messages, consultez [l’article Unsubscribe from Message center emails](#unsubscribe-from-message-center-emails) in this article.
+Pour vous désabonner des e-mails du Centre de messages, consultez [Désabonnement des e-mails du Centre de](#unsubscribe-from-message-center-emails) messages dans cet article.
 
 ## <a name="frequently-asked-questions"></a>Foire aux questions
 
@@ -59,23 +59,23 @@ Pour vous désabonner des e-mails du Centre de messages, consultez [l’article 
 
 |Question|Réponse|
 |---|---|
-|Qui pouvez-vous afficher les billets dans le Centre de messages ?|La plupart des utilisateurs qui ont reçu un rôle d’administrateur dans Microsoft 365 peuvent afficher les billets du centre de messages. [Voici une liste des rôles](#admin-roles-that-dont-have-access-to-the-message-center) d’administrateur qui n’ont pas accès au centre de messages. Vous pouvez également attribuer le rôle de lecteur du centre de messages aux utilisateurs qui doivent pouvoir lire et partager des billets du Centre de messages sans disposer d’autres privilèges d’administrateur.|
-|Est-ce la seule façon pour Microsoft de communiquer les modifications Microsoft 365 ?|Non, mais le centre de messages est le principal moyen de communiquer le minutage des modifications individuelles dans Microsoft 365. Pour [plus d’informations sur les ressources supplémentaires, Microsoft 365 restez](stay-on-top-of-updates.md) au fait des modifications apportées.|
-|Comment puis-je voir les billets dans ma langue ?|Les publications du centre de messages sont écrites en anglais uniquement, mais vous pouvez contrôler si, par défaut, les publications sont affichées en anglais ou sont automatiquement traduites par machine dans votre langue préférée. Vous pouvez également choisir de traduire des billets par machine dans n’importe quelle langue prise en charge. Pour [plus d’informations, voir Traduction linguistique pour les publications](language-translation-for-message-center-posts.md) du centre de messages.|
-|Puis-je prévisualiser les modifications ou les fonctionnalités avant qu’elles ne soient déployées dans mon organisation ?|Certaines modifications et nouvelles fonctionnalités peuvent être prévisualiser en optant pour le programme de publication ciblée. Pour l’opter, dans le Centre d’administration, **Paramètres** >  **Préférences** >  >  de profil d’organisation de l’organisation. (Dans le Centre d’administration, vous devrez  peut-être sélectionner Afficher tout en bas du volet de navigation gauche pour voir **Paramètres**.) Vous pouvez choisir la version ciblée pour l’ensemble de votre organisation ou uniquement pour les utilisateurs sélectionnés. Pour plus [d’informations sur le programme, voir les options de publication](release-options-in-office-365.md) standard Microsoft 365 ciblées.|
-|Puis-je déterminer la date exacte à laquelle une modification sera disponible pour mon organisation ?|Malheureusement, nous ne pouvons pas vous indiquer la date exacte à laquelle une modification sera apporté à votre organisation. Dans notre billet de centre de messages, nous fournirons autant d’informations que possible sur le minutage de la publication, en fonction de notre niveau de confiance. Nous travaillons sur des améliorations pour améliorer ce niveau de détail.|
-|Ces messages sont-ils spécifiques à mon organisation ?|Nous faisons de notre mieux pour vous assurer que seuls les billets du Centre de messages affectent votre organisation. La Microsoft 365 comprend toutes les fonctionnalités que nous travaillons actuellement et que nous appliquons, mais toutes ces fonctionnalités ne s’appliquent pas à toutes les organisations.|
-|Puis-je recevoir des billets du centre de messages par courrier électronique à la place ?|Oui. Vous pouvez choisir de vous envoyer un résumé hebdomadaire et jusqu’à deux autres adresses de messagerie. Le résumé hebdomadaire envoyé par courrier électronique est allumé par défaut. Si vous n’avez pas vos résumés hebdomadaires, vérifiez votre dossier de courrier indésirable. Pour plus [d’informations](#preferences) sur la façon de configurer le résumé hebdomadaire, voir la section Préférences de cet article.|
-|Comment arrêter d’obtenir le résumé du centre de messages ?|Go to Message center in the admin center and select **Preferences**. Dans **l’onglet Courrier** électronique, désactiver l’option **m’envoyer des notifications par courrier électronique à partir du centre de messages**.|
-|Comment puis-je m’assurer que les notifications de confidentialité des données sont reçues par les contacts de mon organisation ?|En tant qu’administrateur global, vous recevrez des messages de confidentialité des données pour votre organisation. En outre, vous pouvez attribuer le rôle de lecteur confidentialité du Centre de messages aux personnes qui doivent voir les messages de confidentialité des données. Les autres rôles d’administrateur ayant accès au Centre de messages ne peuvent pas afficher les messages de confidentialité des données.   <br/><br/>Pour plus d’informations, voir [Préférences](#preferences) dans cet article.|
-|Pourquoi ne puis-je pas voir un message qui s’y trouvait précédemment ?|Pour gérer le nombre de messages dans le centre de messages, chaque message expire et est supprimé après un certain temps. En règle générale, les messages expirent 30 jours après la période décrite dans le corps du message.|
+|Qui pouvez afficher les billets dans le Centre de messages ?|La plupart des utilisateurs auxquels un rôle d’administrateur a été attribué dans Microsoft 365 peuvent afficher les publications du Centre de messages. [Voici une liste](#admin-roles-that-dont-have-access-to-the-message-center) des rôles d’administrateur qui n’ont pas accès au Centre de messages. Vous pouvez également attribuer le rôle lecteur du Centre de messages aux utilisateurs qui doivent être en mesure de lire et de partager des publications du Centre de messages sans avoir d’autres privilèges d’administrateur.|
+|Est-ce la seule façon dont Microsoft communiquera les modifications concernant Microsoft 365 ?|Non, mais le Centre des messages est le principal moyen de communiquer le minutage des modifications individuelles dans Microsoft 365. Pour plus [d’informations sur les ressources supplémentaires, consultez Rester informé des modifications apportées à Microsoft 365](stay-on-top-of-updates.md).|
+|Comment puis-je voir des billets dans ma langue ?|Les billets du centre de messages sont écrits uniquement en anglais, mais vous pouvez contrôler si, par défaut, les publications sont affichées en anglais ou sont automatiquement traduites à l’ordinateur dans la langue de votre choix. Vous pouvez également sélectionner la traduction automatique de billets dans n’importe quelle langue prise en charge. Pour plus d’informations, consultez [La traduction de langue pour les billets du Centre](language-translation-for-message-center-posts.md) de messages.|
+|Puis-je afficher un aperçu des modifications ou des fonctionnalités avant leur déploiement dans mon organisation ?|Vous pouvez afficher un aperçu de certaines modifications et de nouvelles fonctionnalités en optant pour le programme de mise en production ciblée. Pour vous inscrire, dans le centre d’administration, accédez à **Paramètres** >  **Org settingsOrganization** >  **profileRelease** >  preferences. (Dans le centre d’administration, vous devrez peut-être sélectionner **Afficher tout** en bas du volet de navigation gauche pour voir **Paramètres**.) Vous pouvez choisir la version ciblée pour l’ensemble de votre organisation ou uniquement pour les utilisateurs sélectionnés. Pour plus d’informations sur le programme, consultez [les options de publication standard ou ciblée dans Microsoft 365](release-options-in-office-365.md).|
+|Puis-je déterminer la date exacte à laquelle une modification sera disponible pour mon organisation ?|Malheureusement, nous ne pouvons pas vous dire la date exacte à laquelle une modification sera apportée à votre organisation. Dans notre billet du Centre de messages, nous fournirons autant d’informations que possible sur le calendrier de la publication, en fonction de notre niveau de confiance. Nous travaillons à des améliorations pour améliorer ce niveau de détail.|
+|Ces messages sont-ils spécifiques à mon organisation ?|Nous faisons de notre mieux pour vous assurer que vous ne voyez que les publications du Centre de messages qui affectent votre organisation. La feuille de route Microsoft 365 inclut toutes les fonctionnalités sur laquelle nous travaillons actuellement et que nous déployons, mais toutes ces fonctionnalités ne s’appliquent pas à chaque organisation.|
+|Puis-je recevoir des messages électroniques du centre de messages à la place ?|Oui. Vous pouvez choisir d’envoyer un résumé hebdomadaire par e-mail à vous et jusqu’à deux autres adresses e-mail. La synthèse hebdomadaire par e-mail est activée par défaut. Si vous n’obtenez pas vos synthèses hebdomadaires, vérifiez votre dossier de courrier indésirable. Pour plus d’informations sur la configuration de la synthèse hebdomadaire, consultez la section [Préférences](#preferences) de cet article.|
+|Comment faire arrêter d’obtenir la synthèse du centre de messages ?|Accédez au Centre de messages dans le centre d’administration et sélectionnez **Préférences**. Sous l’onglet **E-mail** , désactivez l’option permettant de **m’envoyer des notifications par e-mail à partir du centre de messages**.|
+|Comment puis-je m’assurer que les notifications de confidentialité des données sont reçues par les bons contacts de mon organisation ?|En tant qu’administrateur général, vous recevrez des messages de confidentialité des données pour votre organisation. En outre, vous pouvez attribuer le rôle de lecteur de confidentialité du Centre de messages aux personnes qui doivent voir les messages de confidentialité des données. Les autres rôles d’administrateur ayant accès au Centre de messages ne peuvent pas afficher les messages de confidentialité des données.   <br/><br/>Pour plus d’informations, consultez [Préférences](#preferences) dans cet article.|
+|Pourquoi ne puis-je pas voir un message qui existait précédemment ?|Pour gérer le nombre de messages dans le centre de messages, chaque message expire et est supprimé après un certain temps. En règle générale, les messages expirent 30 jours après la période décrite dans le corps du message.|
 |
 
 ## <a name="filter-messages"></a>Filtrer les messages
 
-Le centre de messages présente une vue de tous les messages actifs dans un format de tableau. Par défaut, il affiche le message le plus récent en haut de la liste. Vous pouvez sélectionner **Service** pour voir les messages de différents services, tels que Microsoft 365 Apps, SharePoint Online, etc.   Sous **Balise, vous** pouvez sélectionner **l’impact sur** l’administrateur **, la** confidentialité des **données, la** mise à jour des fonctionnalités **, la** mise à jour **majeure, la** nouvelle **fonctionnalité, la** mise en retrait ou les messages **d’impact sur l’utilisateur**. Sous **État du message** , vous pouvez sélectionner **Favoris**, Non **lu** ou **Mis à** jour.
+Le centre de messages présente une vue de tous les messages actifs dans un format de tableau. Par défaut, il affiche le message le plus récent en haut de la liste. Vous pouvez sélectionner **Service** pour afficher les messages de différents services, tels que Microsoft 365 Apps, SharePoint Online, etc.   Sous **Balise**, vous pouvez sélectionner **l’impact administrateur**, **la confidentialité des données**, **la mise à jour des fonctionnalités**, **la mise à jour majeure**, **la nouvelle fonctionnalité**, **la mise hors service** ou **les messages d’impact utilisateur**. Sous **l’état Message** , vous pouvez sélectionner **Favoris**, **Non lus** ou **Messages mis à jour** .
 
-L’onglet Archive affiche les messages que vous avez archivés. Pour archiver un message, dans le volet de message, sélectionnez **Archive**.
+L’onglet Archive affiche les messages que vous avez archivés. Pour archiver un message, dans le volet des messages, sélectionnez **Archiver**.
 
 ::: moniker range="o365-worldwide"
 
@@ -83,7 +83,7 @@ Utilisez les menus déroulant **Service**, **Balise** et **État de message** po
 
 Vous pouvez sélectionner n’importe quel en-tête de colonne, sauf **Service** et **Balise**, pour trier les messages dans l’ordre croissant ou décroissant.
 
-:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Affichage du centre de messages trié par impact sur l’administrateur.":::
+:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Affichage du centre de messages trié par impact administrateur.":::
 
 ::: moniker-end
 
@@ -97,82 +97,82 @@ Vous pouvez sélectionner n’importe quel en-tête de colonne, sauf **Service**
 
 ### <a name="major-updates"></a>Mises à jour majeures
 
-Les mises à jour majeures peuvent être examinées en sélectionnant la mise à jour **majeure dans la** **liste des** balises.
+Les mises à jour majeures peuvent être examinées en sélectionnant la **mise à jour majeure** dans la liste déroulante **Balises** .
 
 Les mises à jour majeures sont communiquées au moins 30 jours à l’avance lorsqu’une action est requise et peut inclure :
 
-- Modifications apportées à la productivité quotidienne telles que la boîte de réception, les réunions, les délégations, le partage et l’accès
-- Modifications apportées aux thèmes, composants Web Parts et autres composants qui peuvent affecter les fonctionnalités personnalisées
-- Augmente ou diminue la capacité visible telle que le stockage, le nombre de règles, d’éléments ou de durées
-- Modifications apportées à la  branding de produit qui peuvent :
-  - Source de confusion pour l’utilisateur final,
-  - Apporter des modifications aux processus du service d’aide et au matériel de référence, ou
+- Modifications apportées à la productivité quotidienne, telles que la boîte de réception, les réunions, les délégations, le partage et l’accès
+- Modifications apportées aux thèmes, composants WebPart et autres composants susceptibles d’affecter les fonctionnalités personnalisées
+- Augmente ou diminue la capacité visible, telle que le stockage, le nombre de règles, d’éléments ou de durées
+- Modifications apportées à la personnalisation du produit qui peuvent :
+  - Provoquer la confusion de l’utilisateur final,
+  - Entraînez des modifications apportées aux processus du support technique et aux documents de référence, ou
   - Modifier une URL
 - Un nouveau service ou une nouvelle application
-- Modifications nécessitant une action de l’administrateur (exclusive des problèmes de prévention ou de correction)
-- Modifications apportées à l’endroit où vos données sont stockées
+- Modifications nécessitant une action d’administration (sans empêcher ou corriger les problèmes)
+- Modifications apportées à l’emplacement de stockage de vos données
   
 ### <a name="preferences"></a>Préférences
 
-Si l’administration est distribuée au sein de votre organisation, il se peut que vous ne vouliez ou n’avez pas besoin de voir des billets sur tous Microsoft 365 services. Chaque administrateur peut :
+Si l’administration est distribuée au sein de votre organisation, il se peut que vous n’ayez pas besoin de voir des publications sur tous les services Microsoft 365. Chaque administrateur peut :
 
-- Définissez des préférences qui contrôlent les messages affichés dans le centre de messages.
+- Définissez les préférences qui contrôlent les messages affichés dans le Centre de messages.
 - Filtrer les messages
-- Définissez les préférences de messagerie pour recevoir un résumé hebdomadaire de tous les messages, des e-mails pour les mises à jour majeures uniquement et des e-mails pour les messages de confidentialité des données.  
+- Définissez les préférences de courrier pour recevoir un résumé hebdomadaire de tous les messages, e-mails pour les mises à jour majeures uniquement et e-mails pour les messages de confidentialité des données.  
 
 ::: moniker range="o365-worldwide"
 
-1. **Sélectionnez Préférences en** haut du centre de messages.
+1. Sélectionnez **Préférences** en haut du centre de messages.
 
-2. Dans **l’onglet Affichage** personnalisé, assurez-vous que la case à cocher est sélectionnée pour chaque service que vous souhaitez surveiller. Cochez les cases des services que vous souhaitez filtrer en dehors de votre affichage Centre de messages.
+2. Dans l’onglet **Affichage personnalisé** , vérifiez que la case à cocher est cochée pour chaque service que vous souhaitez surveiller. Désactivez les cases à cocher des services que vous souhaitez filtrer hors de votre affichage centre de messages.
 
-3. Les e-mails Digest sont allumés par défaut et sont envoyés à votre adresse de messagerie principale. Pour arrêter de recevoir le résumé hebdomadaire, cochez la case Envoyer des **notifications** par courrier électronique à partir du centre de messages dans **l’onglet Courrier électronique**. 
+3. Les e-mails Digest sont activés par défaut et envoyés à votre adresse e-mail principale. Pour arrêter de recevoir le résumé hebdomadaire, **désactivez la case à cocher Envoyer des notifications par e-mail à partir du centre de messages** dans **l’onglet Courrier électronique**. 
 
-   Vous pouvez également entrer jusqu’à deux adresses de messagerie, séparées par un point-virgule.
+   Vous pouvez également entrer jusqu’à deux adresses e-mail, séparées par un point-virgule.
 
    Vous pouvez également choisir les e-mails que vous souhaitez obtenir, ainsi qu’un résumé hebdomadaire des services que vous sélectionnez.
 
-4. **Sélectionnez Enregistrer** pour conserver vos modifications.
+4. Sélectionnez **Enregistrer** pour conserver vos modifications.
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. **Sélectionnez Préférences en** haut du centre de messages.
+1. Sélectionnez **Préférences** en haut du centre de messages.
 
-2. Dans **l’onglet Affichage** personnalisé, assurez-vous que la case à cocher est sélectionnée pour chaque service que vous souhaitez surveiller. Cochez les cases des services que vous souhaitez filtrer en dehors de votre affichage Centre de messages.
+2. Dans l’onglet **Affichage personnalisé** , vérifiez que la case à cocher est cochée pour chaque service que vous souhaitez surveiller. Désactivez les cases à cocher des services que vous souhaitez filtrer hors de votre affichage centre de messages.
 
-3. Les e-mails Digest sont allumés par défaut et sont envoyés à votre adresse de messagerie principale. Pour arrêter de recevoir le résumé hebdomadaire, cochez la case Envoyer des **notifications** par courrier électronique à partir du centre de messages dans **l’onglet Courrier électronique**.
+3. Les e-mails Digest sont activés par défaut et envoyés à votre adresse e-mail principale. Pour arrêter de recevoir le résumé hebdomadaire, **désactivez la case à cocher Envoyer des notifications par e-mail à partir du centre de messages** dans **l’onglet Courrier électronique**.
 
-   Vous pouvez également entrer jusqu’à deux adresses de messagerie, séparées par un point-virgule.
+   Vous pouvez également entrer jusqu’à deux adresses e-mail, séparées par un point-virgule.
 
    Vous pouvez également choisir les e-mails que vous souhaitez obtenir, ainsi qu’un résumé hebdomadaire des services que vous sélectionnez.
 
-4. **Sélectionnez Enregistrer** pour conserver vos modifications.
+4. Sélectionnez **Enregistrer** pour conserver vos modifications.
 
 ::: moniker-end
 
-### <a name="display-messages-in-your-preferred-language"></a>Afficher les messages dans votre langue préférée
+### <a name="display-messages-in-your-preferred-language"></a>Afficher les messages dans la langue de votre choix
   
 Nous utilisons la traduction automatique pour afficher automatiquement les messages dans votre langue préférée. Pour plus d’informations sur la définition de votre langue, lisez [Traduction de langue pour les billets du Centre de messages](language-translation-for-message-center-posts.md).
   
 > [!NOTE]
-> Le résumé hebdomadaire et les billets envoyés par courrier électronique sont envoyés en anglais uniquement. Les destinataires peuvent [utiliser Traducteur pour Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) pour lire le message dans leur langue préférée.
+> Le résumé hebdomadaire et tous les billets envoyés par e-mail sont envoyés en anglais uniquement. Les destinataires peuvent utiliser [Traducteur pour Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) pour lire le message dans leur langue préférée.
 
 ## <a name="monthly-active-users"></a>Utilisateurs actifs mensuels
 
-Lorsque vous ouvrez un billet de centre de messages, nous vous indiquerons le nombre d’utilisateurs qui ont utilisé cette application ou service Microsoft 365 dans la section **Utilisateurs** actifs mensuels du Service &. Les chiffres sont les 28 derniers jours. Ces informations peuvent vous aider à hiérarchiser les modifications sur lesquelles vous devez travailler.
+Lorsque vous ouvrez un billet de centre de messages, nous vous indiquerons le nombre d’utilisateurs qui ont utilisé cette application ou service Microsoft 365 dans la section **Service & utilisateurs actifs mensuels**. Les nombres sont pour les 28 derniers jours. Ces informations peuvent vous aider à hiérarchiser les modifications sur lesquelles vous devez travailler.
 
-:::image type="content" source="../../media/msgctr-mau-teams.png" alt-text="Screenshot: Showing the Microsoft Teams Chat density page in the message center post with monthly active user data":::
+:::image type="content" source="../../media/msgctr-mau-teams.png" alt-text="Capture d’écran : Affichage de la page de densité de conversation Microsoft Teams dans le billet du centre de messages avec les données utilisateur actives mensuelles":::
 
 Le nombre d’utilisateurs mensuels s’applique à tous les utilisateurs qui ont utilisé cette Microsoft 365 application ou service sur n’importe quel appareil.
 
 > [!NOTE]
-> Cette fonctionnalité n’est pas encore disponible pour Microsoft 365 applications et services. Nous vous le faire savoir lorsque la fonctionnalité n’est pas disponible.
+> Cette fonctionnalité n’est pas encore disponible pour toutes les applications et services Microsoft 365. Nous vous informerons quand la fonctionnalité n’est pas disponible.
 
 ## <a name="choose-columns"></a>Choisir les colonnes
 
-Pour choisir des colonnes, dans **la page Centre** des messages, à l’extrême droite, sélectionnez Choisir  les colonnes **, puis**, dans le volet Choisir les colonnes, sélectionnez ceux que vous souhaitez afficher.
+Pour choisir des colonnes, dans la page **Centre** de messages, à l’extrême droite, **sélectionnez Choisir des colonnes**, puis, dans le volet **Choisir des colonnes, sélectionnez** celles que vous souhaitez afficher.
 
 Voici une vue d’ensemble rapide des informations que vous verrez dans chaque colonne.
 
@@ -184,26 +184,26 @@ Voici une vue d’ensemble rapide des informations que vous verrez dans chaque c
 
 |Colonne|Description|
 |---|---|
-|Coche|La sélection de la coche dans la ligne d’en-tête de colonne sélectionne tous les messages actuellement affichés. La sélection de la coche en regard d’un ou de plusieurs messages vous permet d’agir sur ces messages.|
-|Titre du message|Les titres des messages sont de brèves descriptions des modifications à venir. Si le titre complet ne s’affiche pas, placez votre curseur sur celui-ci et l’intégralité du titre s’affiche dans une zone de fenêtre pop-up.|
-|Service|Les icônes indiquent l’application à laquelle s’applique le message.|
-|Plus d'options|D’autres options vous permet de faire disparaître un message, de le marquer comme lu ou non lu, ou de le partager avec un autre administrateur. Pour restaurer un message archivé, sélectionnez **l’onglet Archive** , cochez la coche en regard du message, puis sélectionnez **Restaurer**.|
-|Balises| Vous pouvez choisir des balises dans la drop-down Tag pour filtrer les messages. <br> <p> **Confidentialité des données** : notification de confidentialité des données (limitée aux rôles d’administrateur général et de lecteur de confidentialité du centre de messages). <p> **Mise à jour** majeure : modifications communiquées au moins 30 jours à l’avance ([mises à jour majeures](#major-updates)). <p> **Retrait :** retrait d’un service ou d’une fonctionnalité. <p> **Nouvelle fonctionnalité :** nouvelle fonctionnalité ou nouveau service. <p> **Mise à jour de** fonctionnalité : mise à jour d’une fonctionnalité existante. <p> **Impact sur l’administrateur** : lorsque la modification a un impact clair sur l’administrateur des manières suivantes : modification de l’interface utilisateur, modification du flux de travail, contrôle disponible et Action spécifique/potentielle. <p> **Impact sur l’utilisateur** : lorsque la modification du service a un impact clair sur l’utilisateur : modification de l’interface utilisateur et modification du flux de travail. <p> **Message mis à jour** : lorsqu’un message est mis à jour.|
-|Catégorie| Cela n’est pas affiché par défaut, mais peut être spécifié dans le panneau Choisir **des colonnes** . Les messages sont identifiés par l’une des trois catégories suivantes : <p> **Éviter ou résoudre les problèmes** : vous informe des problèmes connus qui affectent votre organisation et peut vous obliger à prendre des mesures pour éviter les interruptions de service. La prévention ou la correction des problèmes sont différentes des messages d’état du service, car ils vous invitent à être proactif pour éviter les problèmes. <p> **Planifier le changement** : vous informe des modifications apportées aux Microsoft 365 qui peuvent vous obliger à agir pour éviter les interruptions de service. Par exemple, nous allons vous faire savoir sur les modifications apportées à la requise du système ou sur les fonctionnalités qui sont supprimées. Nous essayons de fournir au moins 30 jours d’avis sur toute modification qui nécessite qu’un administrateur agisse pour que le service fonctionne normalement. <p> **Restez informé** : vous indique les fonctionnalités nouvelles ou mises à jour que nous sommes en train d’allumer dans votre organisation. Les fonctionnalités sont généralement annoncées en premier dans la [feuille Microsoft 365 feuille de route.](https://go.microsoft.com/fwlink/?linkid=2070821) <p> Peut également vous faire savoir sur la maintenance planifiée conformément à notre contrat de niveau de service. La maintenance planifiée peut entraîner un temps d’in Microsoft 365, une fonctionnalité spécifique ou un service tel que le courrier électronique ou les OneDrive Entreprise.|
-|Agir par|Nous n’avons des dates ici que si nous a faisons une modification qui nécessite que vous prenons une action avant une certaine échéance. Étant donné que nous utilisons rarement **la loi par** colonne, si vous voyez quelque chose ici, vous devez y prêter une attention particulière.|
+|Coche|La sélection de la coche dans la ligne d’en-tête de colonne permet de sélectionner tous les messages actuellement affichés. La sélection de la coche en regard d’un ou de plusieurs messages vous permet d’agir sur ces messages.|
+|Titre du message|Les titres des messages sont de brèves descriptions des modifications à venir. Si le titre complet ne s’affiche pas, placez le curseur sur celui-ci et l’intégralité du titre s’affiche dans une zone contextuelle.|
+|Service|Les icônes indiquent l’application à laquelle le message s’applique.|
+|Plus d'options|D’autres options vous permettent de masquer un message, de le marquer comme lu ou non lu, ou de le partager avec un autre administrateur. Pour restaurer un message archivé, sélectionnez l’onglet **Archive** , cochez la case en regard du message, puis sélectionnez **Restaurer**.|
+|Balises| Vous pouvez choisir des balises dans la liste déroulante Tag pour filtrer les messages. <br> <p> **Confidentialité des données** : notification de confidentialité des données (limitée aux rôles d’administrateur général et de lecteur de confidentialité du Centre de messages). <p> **Mise à jour majeure** : les modifications ont été communiquées au moins 30 jours à l’avance ([mises à jour majeures](#major-updates)). <p> **Mise hors service** : mise hors service d’un service ou d’une fonctionnalité. <p> **Nouvelle fonctionnalité** : Nouvelle fonctionnalité ou service. <p> **Mise à jour des fonctionnalités** : mise à jour vers une fonctionnalité existante. <p> **Impact sur l’administrateur** : lorsque la modification affecte clairement l’administrateur des manières suivantes : modification de l’interface utilisateur, modification du flux de travail, contrôle disponible et action spécifique/potentielle. <p> **Impact sur l’utilisateur** : lorsque la modification apportée au service affecte clairement l’utilisateur : modification de l’interface utilisateur et modification du flux de travail. <p> **Message mis à jour** : lorsqu’un message est mis à jour.|
+|Catégorie| Cette option n’est pas affichée par défaut, mais peut être spécifiée dans le panneau **Choisir des colonnes** . Les messages sont identifiés par l’une des trois catégories suivantes : <p> **Prévenir ou résoudre les problèmes** : vous informe des problèmes connus qui affectent votre organisation et peut vous obliger à prendre des mesures pour éviter les interruptions de service. La prévention ou la résolution des problèmes diffèrent des messages État des services, car ils vous invitent à être proactif pour éviter les problèmes. <p> **Planifier la modification** : vous informe des modifications apportées aux Microsoft 365 qui peuvent vous obliger à agir pour éviter les interruptions de service. Par exemple, nous vous informerons des modifications apportées à la configuration requise ou des fonctionnalités qui sont supprimées. Nous essayons de fournir un préavis d’au moins 30 jours de toute modification qui nécessite qu’un administrateur agisse pour que le service s’exécute normalement. <p> **Restez informé** : indique les fonctionnalités nouvelles ou mises à jour que nous activons dans votre organisation. Les fonctionnalités sont généralement annoncées en premier dans la [feuille de route Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2070821). <p> Peut également vous informer sur la maintenance planifiée conformément à notre contrat de niveau de service. La maintenance planifiée peut entraîner un temps d’arrêt, où vous ou vos utilisateurs ne pouvez pas accéder à Microsoft 365, à une fonctionnalité spécifique ou à un service tel qu’un e-mail ou OneDrive Entreprise.|
+|Agir par|Nous n’aurons des dates ici que si nous apportons une modification qui vous oblige à prendre une mesure avant une certaine échéance. Étant donné que nous utilisons rarement la **Loi par** colonne, si vous voyez quelque chose ici, vous devez y prêter une attention particulière.|
 |Dernière mise à jour|Date à laquelle le message a été publié ou mis à jour pour la dernière fois.|
-|Message ID|Microsoft suit les publications de notre centre de messages par ID de message. Vous pouvez vous référer à cet ID si vous souhaitez envoyer des commentaires ou si vous appelez le support technique à propos d’un message particulier.|
+|Message ID|Microsoft effectue le suivi de nos publications du Centre de messages par ID de message. Vous pouvez faire référence à cet ID si vous souhaitez envoyer des commentaires ou si vous appelez le support technique à propos d’un message particulier.|
 |
 
-### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>Rôles d’administrateur qui n’ont pas accès au centre de messages
+### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>Rôles d’administrateur qui n’ont pas accès au Centre de messages
 
 - Administrateur de conformité
 - Administrateur d’accès conditionnel
-- Approbation d’accès Customer LockBox
+- Approbateur d'accès à Customer Lockbox
 - Administrateurs d’appareils
-- Lecteurs d’annuaire
+- Lecteurs d’annuaires
 - Comptes de synchronisation d’annuaires
-- Rédacteurs d’annuaire
+- Enregistreurs d’annuaires
 - Administrateur du service Intune
 - Administrateur de rôle privilégié
 - Lecteur de rapports
@@ -270,19 +270,19 @@ Lorsque vous ouvrez un message dans un volet de lecture, vous pouvez utiliser le
 
 De nombreuses informations utiles sur les changements apportés aux services Microsoft 365 arrivent dans le centre de messages Microsoft 365. Il peut être difficile de savoir quels changements nécessitent des tâches à accomplir, quand et par qui, et de suivre chaque tâche jusqu'à son achèvement. Vous pouvez également noter quelque chose et l'étiqueter pour le vérifier plus tard. Vous pouvez faire tout cela et bien plus encore lorsque vous synchronisez vos messages du centre d'administration Microsoft 365 avec Planificateur Microsoft. Pour plus d’informations, consultez [Effectuer le suivi de vos tâches de centre de messagerie dans Planificateur](/office365/planner/track-message-center-tasks-planner).
 
-Pour une vue d’ensemble du Centre de messages, consultez [Centre de messages dans Microsoft 365](message-center.md). Pour découvrir comment définir vos préférences linguistiques afin d’activer la traduction automatique des publications du Centre de messages, consultez [Traduction pour les publications du Centre de messagerie](language-translation-for-message-center-posts.md). Si vous souhaitez programmer une autre façon d’obtenir des informations sur l’état du service en temps réel et des communications du centre de messages, veuillez référencer [l’API Working with service communications dans Microsoft Graph](/graph/api/resources/service-communications-api-overview?view=graph-rest-beta).
+Pour une vue d’ensemble du Centre de messages, consultez [Centre de messages dans Microsoft 365](message-center.md). Pour découvrir comment définir vos préférences linguistiques afin d’activer la traduction automatique des publications du Centre de messages, consultez [Traduction pour les publications du Centre de messagerie](language-translation-for-message-center-posts.md). Si vous souhaitez programmer une autre façon d’obtenir des informations d’intégrité du service en temps réel et des communications du Centre de messages, consultez [l’API Utilisation des communications de service dans Microsoft Graph](/graph/api/resources/service-communications-api-overview?view=graph-rest-beta).
 
-## <a name="unsubscribe-from-message-center-emails"></a>Se désabonner des messages électroniques du centre de messages
+## <a name="unsubscribe-from-message-center-emails"></a>Se désabonner des e-mails du Centre de messages
 
-1. Les e-mails Digest sont allumés par défaut et sont envoyés à votre adresse de messagerie principale. Pour arrêter de recevoir le résumé hebdomadaire, sélectionnez **Préférences** , puis Courrier **électronique**.
-    - Désélectez la **case Envoyer un résumé hebdomadaire de mes messages** .
-    - La notification par courrier électronique pour les mises à jour majeures est un contrôle distinct. Si vous ne souhaitez pas recevoir de notifications par courrier électronique concernant les mises à jour majeures, vérifiez que la case à cocher Envoyer des courriers électroniques pour les mises à jour **majeures** n’est pas sélectionnée.
-    - Pour arrêter de recevoir des notifications par courrier électronique concernant les messages  de confidentialité des données, vérifiez que la case à cocher Envoyer des messages de confidentialité des données n’est pas sélectionnée.  (Les messages de confidentialité des données ne sont pas inclus dans le résumé hebdomadaire.)
+1. Les e-mails Digest sont activés par défaut et envoyés à votre adresse e-mail principale. Pour arrêter de recevoir le résumé hebdomadaire, sélectionnez **Préférences** , puis **Adresse e-mail**.
+    - Désélectionnez la case à cocher **Envoyer un résumé hebdomadaire de mes messages** .
+    - La notification par e-mail pour les mises à jour majeures est un contrôle distinct. Si vous ne souhaitez pas recevoir d’avis par e-mail concernant les mises à jour majeures, vérifiez que la case à cocher **Envoyer des e-mails pour les mises à jour majeures** n’est pas cochée.
+    - Pour arrêter de recevoir des notifications sur les messages de confidentialité des données, vérifiez que la case à cocher **Envoyer des e-mails pour les messages de confidentialité des données** n’est pas cochée.  (Les messages de confidentialité des données ne sont pas inclus dans le résumé hebdomadaire.)
 
-2. **Sélectionnez Enregistrer** pour conserver vos modifications.
+2. Sélectionnez **Enregistrer** pour conserver vos modifications.
 
 ## <a name="related-content"></a>Contenu associé
 
 [Configurer les options de publication standard ou ciblée](../manage/release-options-in-office-365.md) (article)\
-[Gérer les Office qui apparaissent dans Nouveautés](../manage/show-hide-new-features.md) (article)\
-[Abonnements aux entreprises et documentation de facturation](../../commerce/index.yml) (page de lien)
+[Gérer les fonctionnalités Office qui apparaissent dans Nouveautés](../manage/show-hide-new-features.md) (article)\
+[Abonnements professionnels et documentation de facturation](../../commerce/index.yml) (page de lien)

@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Découvrez comment mettre des modèles entraînés à la disposition d’autres personnes et comment appliquer d’autres modèles entraînés dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 9645b669c6fd419e8866d415cb5d2b0da56ab0e2
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+description: Découvrez comment mettre des modèles entraînés à la disposition d’autres utilisateurs et comment appliquer d’autres modèles formés dans Microsoft SharePoint Syntex.
+ms.openlocfilehash: 758f6886af6606c57c50c5c4c88e35f7aeeaefe4
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61072436"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916268"
 ---
 # <a name="publish-and-discover-models-in-microsoft-sharepoint-syntex"></a>Publier et découvrir des modèles dans Microsoft SharePoint Syntex
 
@@ -47,7 +47,7 @@ Pour rendre votre modèle entraîné disponible pour d’autres personnes à uti
     - **Tous les sites** : le modèle sera disponible dans la galerie de types de contenu que d’autres utilisateurs pourront utiliser.
     - **Seuls les sites** sélectionnés : vous pouvez choisir le ou les sites dans lesquels le modèle sera disponible. Cliquez dans la zone de texte pour rechercher et choisir les sites sur lesquels vous souhaitez appliquer le modèle. Vous ne verrez que les sites pour lesquels vous avez accès.
 
-    Si vous *n’êtes* pas administrateur SharePoint, cette vue s’affiche.
+    Si vous *n’êtes pas* administrateur SharePoint, cette vue s’affiche.
 
     ![Capture d'écran du panneau Sélectionner les sites où ce modèle est disponible montrant les options pour les utilisateurs finaux qui n'ont que quelques sites disponibles.](../media/content-understanding/select-site-user.png)
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 759f7a6403eb41a6a853ed1f9b844ebd1ef679cc
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 0c8462333a3b3fd0c062c72fce0f673977c54b9b
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500010"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916246"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -37,6 +37,7 @@ Outre l’utilisation d' [étiquettes de confidentialité](sensitivity-labels.md
 - Accès à partir d’appareils enregistrés
 - Contextes d’authentification (en préversion)
 - Lien de partage par défaut pour un site SharePoint (configuration PowerShell uniquement)
+- En préversion : paramètres de partage de site (configuration PowerShell uniquement)
 
 > [!IMPORTANT]
 > Les paramètres pour les appareils non gérés et les contextes d’authentification fonctionnent conjointement avec l’accès conditionnel Azure Active Directory. Vous devez configurer cette fonctionnalité dépendante si vous souhaitez utiliser une étiquette de confidentialité pour ces paramètres. Des informations supplémentaires sont incluses dans les instructions qui suivent.
@@ -124,7 +125,7 @@ Une fois les étiquettes de confidentialité activées pour les conteneurs, comm
             
              - Vous choisissez un contexte d'authentification qui est configuré de manière à nécessiter l’[Authentification multifacteur (MFA)](/azure/active-directory/conditional-access/untrusted-networks). Cette étiquette est ensuite appliquée à un site SharePoint qui contient des éléments hautement confidentiels. Par conséquent, lorsque les utilisateurs d'un réseau non sécurisé tentent d'accéder à un document sur ce site, ils voient apparaître l'invite MFA qu'ils doivent compléter avant de pouvoir accéder au document.
              
-             - Vous choisissez un contexte d’authentification configuré pour les [stratégies de conditions d’utilisation](/azure/active-directory/conditional-access/terms-of-use). Cette étiquette est ensuite appliquée à un site SharePoint qui contient des éléments nécessitant une acceptation des conditions d’utilisation pour des raisons juridiques ou de conformité. Par conséquent, lorsque les utilisateurs tentent d'accéder à un document sur ce site, ils voient apparaître un document sur les conditions d'utilisation qu'ils doivent accepter avant de pouvoir accéder au document original.
+             - Vous choisissez un contexte d’authentification configuré pour les [stratégies de conditions d’utilisation (ToU)](/azure/active-directory/conditional-access/terms-of-use). Cette étiquette est ensuite appliquée à un site SharePoint qui contient des éléments nécessitant une acceptation des conditions d’utilisation pour des raisons juridiques ou de conformité. Par conséquent, lorsque les utilisateurs tentent d’accéder à un document de ce site, ils voient un document de conditions d’utilisation qu’ils doivent accepter avant de pouvoir accéder au document d’origine.
 
 > [!IMPORTANT]
 > Seuls ces paramètres de sites et de groupes prennent effet lorsque vous appliquez l’étiquette à une équipe, un groupe ou un site. Si l’[étendue de l’étiquette](sensitivity-labels.md#label-scopes) inclut des fichiers et e-mails, d’autres paramètres d’étiquette, tels que le chiffrement et le marquage de contenu, ne sont pas appliqués au contenu au sein de l’équipe, du groupe ou du site.
@@ -183,6 +184,31 @@ Restrictions connues pour cette version préliminaire :
 Outre les paramètres d’étiquette pour les sites et les groupes que vous pouvez configurer à partir du Centre de conformité, vous pouvez également configurer le type de lien de partage par défaut pour un site. Les étiquettes de confidentialité des documents peuvent également être configurées pour un type de lien de partage par défaut. Ces paramètres qui permettent d’empêcher le sur-partage sont automatiquement sélectionnés lorsque les utilisateurs sélectionnent le bouton **Partager** dans leurs applications Office. 
 
 Pour plus d’informations et d’instructions, consultez [Utiliser des étiquettes de confidentialité pour configurer le type de lien de partage par défaut pour les sites et les documents dans SharePoint et OneDrive](sensitivity-labels-default-sharing-link.md).
+
+### <a name="configure-site-sharing-permissions-by-using-powershell-advanced-settings"></a>Configurer les autorisations de partage de site à l’aide des paramètres avancés de PowerShell
+
+> [!NOTE]
+> Ce paramètre d’étiquette est actuellement en préversion.
+
+Un autre paramètre avancé de PowerShell que vous pouvez configurer pour l’étiquette de sensibilité à appliquer à un site SharePoint est **MembersCanShare**. Ce paramètre est la configuration équivalente que vous pouvez définir à partir du Centre d’administration SharePoint > **Autorisations du site** > **Partage de site** > **Modifier les modalités de partage par les membres** > **Autorisations de partage**. 
+
+Les trois options sont répertoriées avec les valeurs équivalentes pour le paramètre avancé PowerShell **MembersCanShare** :
+
+|Option depuis le centre d’administration SharePoint |Valeur PowerShell équivalente pour MembersCanShare |
+|----------------------------------------|------------------------------------------------|
+|**Les propriétaires et les membres du site peuvent partager des fichiers, des dossiers et le site. Les personnes ayant des autorisations d’édition peuvent partager des fichiers et des dossiers.**| MemberShareAll|
+|**Les propriétaires et les membres du site, et les personnes ayant des autorisations d’édition peuvent partager des fichiers et des dossiers, mais seuls les propriétaires de site peuvent partager le site.**|MemberShareFileAndFolder|
+|**Seuls les propriétaires de site peuvent partager des fichiers, des dossiers et le site.**|MemberShareNone|
+
+Pour plus d’informations sur ces options de configuration, voir [Modifier les modalités de partage par les membres](/microsoft-365/community/sharepoint-security-a-team-effort#change-how-members-can-share) à partir de la documentation de la communauté SharePoint.
+
+Exemple, où le GUID de l’étiquette de sensibilité est **8faca7b8-8d20-48a3-8ea2-0f96310a848e** :
+
+````powershell
+Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{MembersCanShare="MemberShareNone"}
+````
+
+Pour plus d’informations sur la spécification des paramètres avancés de PowerShell, consultez [Conseils PowerShell pour la spécification des paramètres avancés](sensitivity-labels-default-sharing-link.md#powershell-tips-for-specifying-the-advanced-settings).
 
 ## <a name="sensitivity-label-management"></a>Gestion des étiquettes de confidentialité
 
@@ -364,7 +390,7 @@ Les applications et services suivants ne prennent actuellement pas en charge les
   - Dynamics 365
   - Yammer
   - Project
-  - Power BI
+  - Power BI
 
 ## <a name="classic-azure-ad-group-classification"></a>Classification classique de groupes Azure Active Directory
 

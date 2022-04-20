@@ -1,12 +1,12 @@
 ---
-title: Collecter des pièces jointes cloud dans Advanced eDiscovery
+title: Collecter des pièces jointes cloud dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 ms.reviewer: nickrob
 manager: laurawi
-ms.date: ''
+ms.date: 04/05/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,49 +15,49 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Utilisez des collections dans Advanced eDiscovery pour collecter des pièces jointes cloud à réviser dans un examen ou un cas.
-ms.openlocfilehash: bdf30fea0e168d4b36175296f524ade13539970b
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+description: Utilisez des collections dans Microsoft Purview eDiscovery (Premium) pour collecter des pièces jointes cloud à examiner dans une enquête ou un cas.
+ms.openlocfilehash: 0a0d3dab3942dbdfcfa896d8e2f59fd2e2dca813
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137158"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935717"
 ---
-# <a name="collect-cloud-attachments-in-advanced-ediscovery-preview"></a>Collecter des pièces jointes cloud dans Advanced eDiscovery (aperçu)
+# <a name="collect-cloud-attachments-in-microsoft-purview-ediscovery-premium-preview"></a>Collecter des pièces jointes cloud dans Microsoft Purview eDiscovery (Premium) (préversion)
 
-Les pièces jointes dans le cloud sont des liens vers des documents qui sont généralement stockés dans SharePoint site et OneDrive. Ainsi, au lieu d’attacher une copie réelle d’un document dans un message électronique ou une conversation Teams, vous avez la possibilité de partager un lien vers le fichier. Les pièces jointes dans le cloud sont un moyen efficace de partager des documents et de collaborer avec d’autres personnes de votre organisation. Toutefois, les pièces jointes dans le cloud présentent des difficultés pendant le flux de travail eDiscovery, car seules les pièces jointes dans le cloud et non le contenu réel dans le document partagé sont renvoyées dans une recherche de découverte électronique. Pour résoudre ce problème, Advanced eDiscovery propose deux solutions pour collecter des pièces jointes cloud :  
+Les pièces jointes cloud sont des liens vers des documents qui sont généralement stockés dans SharePoint site et OneDrive. Par conséquent, au lieu d’attacher une copie réelle d’un document dans un e-mail ou une conversation de conversation Teams, vous avez la possibilité de partager un lien vers le fichier. Les pièces jointes cloud sont un moyen efficace de partager des documents et de collaborer avec d’autres personnes de votre organisation. Toutefois, les pièces jointes cloud présentent des difficultés pendant le flux de travail eDiscovery, car seul le lien de pièce jointe cloud et non le contenu réel du document partagé sont retournés dans une recherche eDiscovery. Pour relever ce défi, eDiscovery (Premium) fournit deux solutions pour collecter des pièces jointes cloud :  
 
-- Collecte de la version en direct d’un document lié à une pièce jointe dans le cloud.
+- Collecte de la version active d’un document lié dans une pièce jointe cloud.
 
 - Collecte de la version du document au moment où il a été partagé dans une pièce jointe cloud.
 
-## <a name="collecting-cloud-attachments"></a>Collecte des pièces jointes cloud
+## <a name="collecting-cloud-attachments"></a>Collecte de pièces jointes cloud
 
-Lorsque vous créez un brouillon de collection et que les résultats de la recherche contiennent des éléments qui incluent des pièces jointes cloud, vous avez la possibilité de collecter la cible de la pièce jointe dans le cloud lorsque vous validerez la collection de brouillons dans un jeu à réviser. Lorsque vous sélectionnez cette option, Advanced eDiscovery les documents qui sont liés dans la pièce jointe cloud au jeu à réviser. Cela vous permet de passer en revue les documents cibles et de déterminer si le document est pertinent pour votre cas ou enquête.
+Lorsque vous créez un brouillon de collection et que les résultats de la recherche contiennent des éléments qui incluent des pièces jointes cloud, vous avez la possibilité de collecter la cible de la pièce jointe cloud lorsque vous validez le brouillon de la collection dans un jeu de révision. Lorsque vous sélectionnez cette option, eDiscovery (Premium) ajoute les documents liés dans la pièce jointe cloud au jeu de révision. Cela vous permet d’examiner les documents cibles et de déterminer si le document est pertinent pour votre cas ou votre enquête.
 
-La capture d’écran suivante montre l’option d’inclure les cibles des pièces jointes dans le cloud lorsque vous validerez une collection dans un jeu à réviser.
+La capture d’écran suivante montre l’option permettant d’inclure les cibles des pièces jointes cloud lorsque vous validez une collection dans un jeu de révisions.
 
-![Option d’inclure des pièces jointes dans le cloud lors de la validation d’une collection dans un jeu à réviser](../media/CollectCloudAttachments1.png)
+![Option permettant d’inclure des pièces jointes cloud lors de la validation d’un regroupement dans un ensemble de révisions](../media/CollectCloudAttachments1.png)
 
 > [!NOTE]
->- Si vous utilisez le nouveau [format](advanced-ediscovery-new-case-format.md) de cas dans Advanced eDiscovery, l’option d’inclure des pièces jointes cloud dans le jeu à réviser est sélectionnée par défaut et ne peut pas être désélectionée.<br/>
->- Vous avez également la possibilité d’inclure toutes les versions (en plus de la version qui a été partagée) des pièces jointes cloud dans le jeu à réviser.  
-Pour obtenir des instructions sur la validation d’une collection dans un jeu à réviser, voir Valider un brouillon [de collection dans un jeu à réviser.](commit-draft-collection.md)
+>- Si vous utilisez le [nouveau format de cas](advanced-ediscovery-new-case-format.md) dans eDiscovery (Premium), l’option d’inclure des pièces jointes cloud dans le jeu de révision est sélectionnée par défaut et ne peut pas être désélectionnée.<br/>
+>- Vous avez également la possibilité d’inclure toutes les versions (en plus de la version partagée) des pièces jointes cloud dans le jeu de révision.  
+Pour obtenir des instructions sur la validation d’un regroupement dans un ensemble de révisions, consultez [Valider un brouillon de collection dans un ensemble de révisions](commit-draft-collection.md).
 
 ## <a name="collecting-the-version-shared-in-a-cloud-attachment"></a>Collecte de la version partagée dans une pièce jointe cloud
 
-Le Advanced eDiscovery pour la collecte des pièces jointes cloud inclut uniquement l’ajout de la version la plus récente d’une pièce jointe cloud à un jeu à réviser. Cela signifie que la version qui est collectée et ajoutée à un jeu à réviser peut être différente de la version initialement partagée dans la pièce jointe cloud. Il est donc possible que le contenu présent dans la pièce jointe dans le cloud au moment de son partage soit supprimé et qu’il n’existe pas dans la version actuelle ajoutée au jeu à réviser.
+Le flux de travail eDiscovery (Premium) pour la collecte des pièces jointes cloud inclut uniquement l’ajout de la version la plus récente d’une pièce jointe cloud à un jeu de révision. Cela signifie que la version collectée et ajoutée à un ensemble de révisions peut être différente de la version initialement partagée dans la pièce jointe cloud. Il est donc possible que le contenu présent dans la pièce jointe cloud au moment où il a été partagé ait été supprimé et n’existe pas dans la version actuelle ajoutée au jeu de révision.
 
-Les organisations ont désormais la possibilité d’utiliser Microsoft 365 étiquettes de rétention pour conserver la version d’un document au moment où il a été partagé en tant que pièce jointe dans le cloud. Pour ce faire, votre organisation peut créer une étiquette de rétention, choisir l’option appliquer l’étiquette aux pièces jointes cloud, puis appliquer automatiquement l’étiquette aux documents stockés dans SharePoint et OneDrive. Une fois cette configuration définie, une copie d’un document est créée au moment où le fichier est partagé. En outre, si le document est modifié et partagé à nouveau en tant que pièce jointe dans le cloud, la version modifiée est également conservée. Si le fichier est modifié et partagé à nouveau, une nouvelle copie du fichier en tant que nouvelle version est conservée.
+Les organisations ont désormais la possibilité d’utiliser Microsoft 365 étiquettes de rétention pour conserver la version d’un document au moment où il a été partagé en tant que pièce jointe cloud. Pour ce faire, votre organisation peut créer une étiquette de rétention, choisir l’option appliquer l’étiquette aux pièces jointes cloud, puis appliquer automatiquement l’étiquette aux documents stockés dans SharePoint et OneDrive. Après avoir configuré cette configuration, une copie d’un document est créée au moment où le fichier est partagé. En outre, si le document est modifié et partagé à nouveau en tant que pièce jointe cloud, la version modifiée est également conservée. Si le fichier est modifié et partagé à nouveau, une nouvelle copie du fichier en tant que nouvelle version est conservée.
 
-La conservation des versions partagées des pièces jointes dans le cloud peut aider votre organisation à mettre en place l’étendue de la conservation et de la collection de contenu potentiellement pertinents à la version spécifique du document qui a été partagée plutôt qu’à la version actuelle. Après avoir implémenté cette solution de rétention, la version actuelle d’une pièce jointe dans le cloud et la version qui a été partagée dans la pièce jointe cloud sont collectées et ajoutées à un groupe de révision.
+La conservation des versions partagées des pièces jointes cloud peut aider votre organisation à étendre la conservation et la collecte du contenu potentiellement pertinent à la version spécifique du document qui a été partagée plutôt que la version active actuelle. Après avoir implémenté cette solution de rétention, la version active actuelle d’une pièce jointe cloud et la version partagée dans la pièce jointe cloud sont collectées et ajoutées à un ensemble de révisions.
 
-Pour obtenir des instructions sur la configuration d’une étiquette de rétention et son application automatique aux pièces jointes cloud, consultez l’application automatique d’étiquettes aux pièces [jointes cloud.](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments)
+Pour obtenir des instructions sur la configuration d’une étiquette de rétention et son application automatique aux pièces jointes cloud, consultez [Appliquer automatiquement des étiquettes aux pièces jointes cloud](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments).
 
-La capture d’écran suivante montre un document en pièce jointe dans le cloud, nommé *XYZ Research.docx*, qui a été ajouté à un jeu à réviser. Le document a été partagé en tant que pièce jointe cloud dans une conversation Teams conversation. Le jeu à réviser contient également la version initialement partagée dans la pièce jointe cloud. Notez que le nom de cette version de la pièce jointe cloud est généré par le système et que l’auteur est identifié comme **SharePoint**.
+La capture d’écran suivante montre un document de pièce jointe cloud, nommé *XYZ Research.docx*, qui a été ajouté à un jeu de révision. Le document a été partagé en tant que pièce jointe cloud dans une conversation de conversation Teams. L’ensemble de révision contient également la version qui a été partagée à l’origine dans la pièce jointe cloud. Notez que le nom de cette version de la pièce jointe cloud est généré par le système et que l’auteur est identifié comme **SharePoint**.
 
-![Version d’une pièce jointe cloud partagée dans un jeu à réviser](../media/CollectCloudAttachments2.png)
+![Version d’une pièce jointe cloud qui a été partagée affichée dans un ensemble de révisions](../media/CollectCloudAttachments2.png)
 
-En outre, la version actuelle et la version partagée ont la même valeur de propriété **FamilyId,** qui est identique à **l’ID** de famille de l’objet parent (par exemple, un message électronique ou une conversation Teams conversation). Cela vous permet de grouper les pièces jointes cloud avec l’élément dans lequel elles ont été partagées.
+En outre, la version active actuelle et la version qui a été partagée ont la même valeur de propriété **FamilyId**, qui est identique à **l’ID de** famille pour l’objet parent (par exemple, un e-mail ou une conversation Teams). Cela vous permet de regrouper les pièces jointes cloud avec l’élément dans lequel elles ont été partagées.
 
-Après avoir implémenté l’étiquette de rétention et appliqué automatiquement l’étiquette à des documents SharePoint, vous sélectionnez toujours l’option de collecte des pièces jointes cloud lors de la validation d’un brouillon de collection dans un jeu à réviser. Lorsque les pièces jointes cloud sont collectées, la version actuelle et la version initialement partagée sont ajoutées au jeu à réviser.
+Une fois que vous avez implémenté l’étiquette de rétention et appliqué automatiquement l’étiquette à SharePoint documents, vous sélectionnez toujours l’option de collecte des pièces jointes cloud lors de la validation d’un brouillon de collection dans un ensemble de révisions. Lorsque les pièces jointes cloud sont collectées, la version active actuelle et la version qui a été partagée à l’origine sont ajoutées au jeu de révision.

@@ -16,12 +16,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et strict aux fonctionnalités de protection de Exchange Online Protection (EOP) et Microsoft Defender pour Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2a74fce0242f0206218d6f7f2f13e61d9f0a3b6f
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 01fd969461b47b0208dcfd20ff608e829b6a3336
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847083"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64915970"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Stratégies de sécurité prédéfini dans EOP et Microsoft Defender pour Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "64847083"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Les stratégies de sécurité prédéfinies fournissent un emplacement centralisé pour appliquer toutes les stratégies de courrier indésirable, de programmes malveillants et de hameçonnage recommandées aux utilisateurs en même temps. Les paramètres de stratégie ne sont pas configurables. Au lieu de cela, ils sont définis par nous et sont basés sur nos observations et expériences dans les centres de données pour un équilibre entre le maintien du contenu nocif loin des utilisateurs et d’éviter les interruptions inutiles.
 
@@ -58,9 +58,9 @@ Un profil détermine le niveau de protection. Les profils suivants sont disponib
   Les conditions et exceptions disponibles sont les suivantes :
 
   - **Utilisateurs** : boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie spécifiés.
-  - **Groupes** :
-    - Membres des groupes de distribution spécifiés ou des groupes de sécurité à extension messagerie.
-    - Groupes Microsoft 365 spécifiée.
+  - **Groupes** :
+    - Les membres des groupes de distribution ou des groupes de sécurité activés par courrier spécifiés.
+    - Groupes Microsoft 365 spécifiée
   - **Domaines** : tous les destinataires des [domaines acceptés](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) spécifiés dans votre organisation.
 
   Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
@@ -80,6 +80,9 @@ Les stratégies de sécurité prédéfinies utilisent les stratégies correspond
   - [Stratégies anti-courrier indésirable nommées](configure-your-spam-filter-policies.md) **Stratégie de sécurité prédéfinies standard** et **Stratégie de sécurité prédéfinies strictes**.
   - [Stratégies anti-programme malveillant nommées](configure-anti-malware-policies.md) **stratégie de sécurité prédéfinies standard** et **stratégie de sécurité prédéfinies strictes**.
   - [Stratégies anti-hameçonnage EOP nommées](set-up-anti-phishing-policies.md#spoof-settings) Stratégie **de sécurité prédéfinie standard** et **Stratégie de sécurité prédéfinie stricte** (paramètres d’usurpation d’identité).
+
+  > [!NOTE]
+  > Les stratégies de courrier indésirable sortant ne font pas partie des stratégies de sécurité prédéfinies. La stratégie de courrier indésirable sortant par défaut protège automatiquement les membres des stratégies de sécurité prédéfinies. Vous pouvez également créer des stratégies de courrier indésirable sortant personnalisées pour personnaliser la protection des membres des stratégies de sécurité prédéfinies. Pour plus d’informations, consultez [Configurer le filtrage du courrier indésirable sortant dans EOP](configure-the-outbound-spam-policy.md).
 
 - **Microsoft Defender pour Office 365 stratégies** : cela inclut les organisations avec des abonnements Microsoft 365 E5 ou Defender pour Office 365 module complémentaire :
   - Les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365 nommées **stratégie de sécurité prédéfinies standard** et stratégie **de sécurité prédéfinies strictes**, qui incluent :

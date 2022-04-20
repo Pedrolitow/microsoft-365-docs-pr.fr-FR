@@ -1,24 +1,29 @@
 ---
 title: Découvrir la rétention pour SharePoint et OneDrive
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: null
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
-  - SPO_Content
+- M365-security-compliance
+- SPO_Content
 search.appverid:
-  - MOE150
-  - MET150
+- MOE150
+- MET150
 description: Découvrez comment la rétention fonctionne pour SharePoint et OneDrive.
+ms.openlocfilehash: ed9cc45218dde112baec8fbca997abc6e82b4d72
+ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "64911487"
 ---
-
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
@@ -65,7 +70,7 @@ Lorsqu’un utilisateur modifie ou supprime un élément soumis à la rétention
 
 Un travail du minuteur s’exécute régulièrement dans la bibliothèque de conservation et de préservation des documents. Pour le contenu ayant passé plus de 30 jours dans la bibliothèque de conservation et de préservation des documents, ce travail compare le contenu à toutes les requêtes utilisées par les paramètres de rétention de ce contenu. Le contenu plus ancien que la période de rétention configurée est ensuite supprimé de la bibliothèque de conservation et de préservation des documents, et de l’emplacement d’origine s’il est toujours là. Ce travail de timer s’exécute tous les sept jours, ce qui signifie qu’avec un minimum de 30 jours, la suppression du contenu de la bibliothèque de conservation et de préservation des documents peut prendre jusqu’à 37 jours.
 
-Ce comportement pour la copie de fichiers dans la bibliothèque de conservation et de préservation des documents s’applique au contenu qui existe lorsque les paramètres de rétention ont été appliqués. En outre, pour les stratégies de rétention, tout nouveau contenu créé ou ajouté au site après son ajout à la stratégie est conservé dans la bibliothèque de conservation et de préservation des documents. Toutefois, le nouveau contenu n’est pas copié dans la bibliothèque de conservation et de préservation la première fois qu’il est modifié, uniquement lorsqu’il est supprimé. Pour conserver toutes les versions d’un fichier, [le contrôle de version](#how-retention-works-with-document-versions) doit être activé pour le site d’origine.
+Ce comportement de copie de fichiers dans la bibliothèque de conservation et de préservation des documents s'applique au contenu qui existe lorsque les paramètres de conservation ont été appliqués. De plus, pour les stratégies de rétention, tout nouveau contenu créé ou ajouté au site après son inclusion dans la stratégie sera conservé dans la bibliothèque de conservation. Cependant, le nouveau contenu n'est pas copié dans la bibliothèque de conservation et de préservation des documents la première fois qu'il est modifié, uniquement lorsqu'il est supprimé. Pour conserver toutes les versions d'un fichier, le [contrôle de version](#how-retention-works-with-document-versions) doit être activé pour le site d’origine.
   
 Les utilisateurs voient un message d'erreur s'ils essaient de supprimer une bibliothèque, une liste, un dossier ou un site qui est soumis à la conservation. Ils peuvent supprimer un dossier s'ils déplacent ou suppriment d'abord tous les fichiers du dossier qui sont soumis à la conservation.
 
@@ -169,5 +174,5 @@ Si vous débutez avec la configuration de la rétention dans Microsoft 365, cons
 
 Si vous êtes prêt à configurer une stratégie ou une étiquette de rétention pour Exchange, consultez les instructions suivantes :
 - [Créer et configurer des stratégies de rétention](create-retention-policies.md)
-- [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
+- [Publier des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
 - [Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)

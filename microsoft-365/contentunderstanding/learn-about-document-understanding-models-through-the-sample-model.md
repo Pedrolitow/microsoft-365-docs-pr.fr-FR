@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez les modèles de présentation des documents via le modèle d’échantillon.
-ms.openlocfilehash: 6e7c680bcb136b52e0b3c9821471d922d43b614b
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: 210d5865a6e3208faff16fe1ce14748ee66d63c8
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281169"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916202"
 ---
 # <a name="import-a-sample-document-understanding-model-for-microsoft-sharepoint-syntex"></a>Importer un exemple de modèle de compréhension de document pour Microsoft SharePoint Syntex
 
@@ -45,7 +45,7 @@ Vous ne pouvez pas seulement examiner et analyser le modèle d’échantillon po
 
 ## <a name="get-sample-models"></a>Obtenir des exemples de modèles
 
-Vous pouvez accéder au référentiel [SharePoint Syntex Samples](https://github.com/pnp/syntex-samples), qui contient des exemples de communauté qui montrent différents modèles d’utilisation des modèles de compréhension des documents. Les exemples de ce référentiel contiennent à la fois les fichiers de modèle de compréhension de document et les fichiers utilisés pour former le modèle. Une fois importés, vous pouvez utiliser ces modèles pour traiter des fichiers et pour afficher et modifier le classifieur et les extracteurs.
+Vous pouvez accéder au [référentiel SharePoint Syntex Samples](https://github.com/pnp/syntex-samples), qui contient des exemples de communauté qui illustrent différents modèles d’utilisation des modèles de compréhension des documents. Les exemples de ce référentiel contiennent à la fois les fichiers de modèle de compréhension de document et les fichiers utilisés pour entraîner le modèle. Une fois importés, vous pouvez utiliser ces modèles pour traiter des fichiers et afficher et modifier le classifieur et les extracteurs.
 
 ## <a name="see-also"></a>Voir aussi
 [Créer un classifieur](create-a-classifier.md)

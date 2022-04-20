@@ -14,13 +14,13 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 ms.localizationpriority: high
-description: Microsoft Office SharePoint Online
-ms.openlocfilehash: 244038e4c49801cad59bd9cf8939c47291c5270f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Configurer SharePoint Online
+ms.openlocfilehash: 0d7cbe0f99747629bcac581bd080d88af27e8a06
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326942"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935366"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurer SharePoint Online
 
@@ -45,7 +45,9 @@ Avant la configuration, veillez à planifier la meilleure manière d’installer
 
 En tant qu’administrateur, vous pouvez également modifier vos paramètres sélectionnés à tout moment après la configuration, ainsi que les paramètres de gestion de la compréhension de contenu dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>.
 
-Si vous envisagez d’utiliser un environnement Platform Power personnalisé, vous devez [installer l’application *Générateur d’IA pour Project Cortex* dans cet environnement](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) et y [attribuer des crédits du Générateur d’IA](/power-platform/admin/capacity-add-on) avant de pouvoir créer des modèles de traitement des formulaires.
+Si vous envisagez d’utiliser un environnement Platform Power personnalisé, vous devez [installer l’application *Générateur d’IA pour Project Cortex* dans cet environnement](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) et y [attribuer des crédits du Générateur d’IA](/power-platform/admin/capacity-add-on) avant de pouvoir créer des modèles de traitement des formulaires. Lors de l’utilisation d’un environnement personnalisé, le rôle de sécurité Créateur d’environnement doit être attribué aux créateurs de modèles et le rôle de sécurité Utilisateur de base doit être attribué aux utilisateurs de modèle. Pour plus d’informations, consultez [Attribuer un rôle de sécurité à un utilisateur](/power-platform/admin/assign-security-roles).
+
+Les utilisateurs qui créent des modèles dans un [site de centre de contenu](/microsoft-365/contentunderstanding/create-a-content-center) doivent être membres du site. Les utilisateurs qui créent des modèles localement en dehors du centre de contenu doivent être propriétaires de ces sites.
 
 ### <a name="licensing"></a>Gestion des licences
 
@@ -93,7 +95,7 @@ Pour plus d’informations sur les licences SharePoint Syntex, voir [Gestion des
 
     Cliquez sur **Suivant**.
 
-5. À la page **Créer un centre de contenu**, vous pouvez créer un site de centre de contenu SharePoint. Vos utilisateurs pourront alors créer et gérer des modèles de compréhension de document sur ce même site. Si vous avez déjà créé un centre de contenu à partir du Centre d’administration SharePoint, ces informations s’affichent ici et vous pouvez simplement sélectionner **Suivant**.
+5. Sur la page **Créer un centre de contenu**, vous pouvez créer un site de centre de contenu SharePoint sur lequel vos utilisateurs peuvent créer et gérer des modèles de compréhension de documents. Si vous avez déjà créé un centre de contenu à partir du Centre d’administration SharePoint, ces informations s’affichent ici et vous pouvez simplement sélectionner **Suivant**.
 
     1. Dans le champ **Nom du site**, tapez le nom souhaité pour votre site de centre de contenu.
     

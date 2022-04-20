@@ -19,18 +19,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: La mobilité et la sécurité de base peuvent vous aider à sécuriser et gérer les appareils mobiles de votre organisation.
-ms.openlocfilehash: 02c8efbed8f781dfdb0e9abfaa2af3a2c92733ff
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: f2da9a20c496d5229d62e477fcf4cc0024436788
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780800"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935234"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Gérer les appareils inscrits dans mobile Gestion des appareils dans Microsoft 365
 
 La gestion intégrée des appareils mobiles pour Microsoft 365 vous permet de sécuriser et de gérer les appareils mobiles de vos utilisateurs, tels que les iPhone, les iPad, les Android et les téléphones Windows. La première étape consiste à se connecter à Microsoft 365 et à configurer la mobilité et la sécurité de base. Pour plus d’informations, consultez [Configurer la mobilité et la sécurité de base](set-up.md).
 
-Une fois que vous l’avez configuré, les membres de votre organisation doivent inscrire leurs appareils dans le service. Pour plus d’informations, consultez [Inscrire votre appareil mobile à l’aide de mobilité et de sécurité de base](enroll-your-mobile-device.md). Vous pouvez ensuite utiliser Mobilité et sécurité de base pour gérer les appareils de votre organisation. Par exemple, vous pouvez utiliser des stratégies de sécurité des appareils pour limiter l’accès aux e-mails ou d’autres services, afficher les rapports des appareils et réinitialiser à distance un appareil. Vous accédez généralement au Centre de sécurité & conformité pour effectuer ces tâches. Pour plus d’informations, consultez [Centre de conformité Microsoft 365](../../compliance/microsoft-365-compliance-center.md).
+Une fois que vous l’avez configuré, les membres de votre organisation doivent inscrire leurs appareils dans le service. Pour plus d’informations, consultez [Inscrire votre appareil mobile à l’aide de mobilité et de sécurité de base](enroll-your-mobile-device.md).Vous pouvez ensuite utiliser Mobilité et sécurité de base pour gérer les appareils de votre organisation. Par exemple, vous pouvez utiliser des stratégies de sécurité des appareils pour limiter l’accès aux e-mails ou d’autres services, afficher les rapports des appareils et réinitialiser à distance un appareil. Vous accédez généralement au Centre de sécurité & conformité pour effectuer ces tâches. Pour plus d’informations, consultez [le portail de conformité Microsoft Purview](../../compliance/microsoft-365-compliance-center.md).
 
 ## <a name="device-management-tasks"></a>Tâches de gestion des appareils
 

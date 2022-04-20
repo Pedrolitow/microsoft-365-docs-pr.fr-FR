@@ -26,17 +26,17 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Créez une boîte aux lettres partagée pour permettre à plusieurs personnes au sein de votre entreprise de partager la responsabilité de la lecture du courrier électronique envoyé à une adresse et de la réponse à ces courriers.
-ms.openlocfilehash: f8a7f725e029021626bf408a3797ac6bfbb16215
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 38e7e1c1371c83fd5b55105bbd91485e2b6c26a3
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765635"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64915948"
 ---
 # <a name="create-a-shared-mailbox"></a>Créer une boîte aux lettres partagée 
 
 > [!NOTE]
-> Si votre organisation utilise un environnement Exchange hybride, vous devez utiliser le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a> local pour créer et gérer des boîtes aux lettres partagées. Consultez la rubrique [Créer des boîtes aux lettres partagées dans le Centre d’administration Exchange](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)
+> Si votre organisation utilise un environnement hybride Exchange, vous devez utiliser le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a> local pour créer et gérer des boîtes aux lettres partagées. Voir [Création de boîtes aux lettres partagées dans le Centre d’administration Exchange](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)
 >
 > Si vous n'êtes pas sûr de devoir créer une boîte aux lettres partagée ou un groupe Microsoft 365 pour Outlook, voir [Comparer les groupes](../create-groups/compare-groups.md) pour plus de conseils. Sachez qu’il n’est pour l'instant pas possible de migrer une boîte aux lettres partagée vers un groupe Microsoft 365. Si vous le souhaitez, dites-le nous en [votant ici](https://go.microsoft.com/fwlink/?linkid=871518).
 
@@ -65,7 +65,7 @@ Avant de créer une boîte aux lettres partagée, assurez-vous de lire la sectio
 
 ::: moniker-end
     
-3. Dans la page **Boîtes aux lettres partagées,** sélectionnez **+ Ajouter une boîte aux lettres partagée**. Entrez le nom de la boîte aux lettres partagée. Le choisit l’adresse e-mail, mais vous pouvez la modifier si nécessaire.
+3. Dans la page **Boîtes aux lettres partagées,** sélectionnez **+ Ajouter une boîte aux lettres partagée**. Entrez le nom de la boîte aux lettres partagée. L’adresse e-mail est ainsi choisie, mais vous pouvez la modifier si nécessaire.
     
     ![Donnez un nom à votre boîte aux lettres partagée.](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
@@ -91,13 +91,13 @@ Vous pouvez utiliser les autorisations suivantes avec une boîte aux lettres par
 
 - **Envoyer en tant que** : l’autorisation Envoyer en tant que permet à un utilisateur d’emprunter l’identité du propriétaire de la boîte aux lettres partagée pour envoyer des messages. Par exemple, si Katerina se connecte à la boîte aux lettres partagée du service Marketing et envoie un message, le service Marketing semblera en être l’expéditeur.
 
-- **Envoyer de la part de** : l’autorisation Envoyer de la part de permet à l’utilisateur d’envoyer des messages de la part de la boîte aux lettres partagée. Par exemple, si John se connecte à la boîte aux lettres partagée Reception Building 32 et envoie un message, ce dernier semblera avoir été envoyé par « John de la part de Reception Building 32 ». Vous ne pouvez pas utiliser le Centre d’administration Exchange pour accorder l’autorisation « Envoyer de la part de ». Pour ce faire, vous devez utiliser l’applet de commande **Set-Mailbox** avec le paramètre _GrantSendonBehalf_.
+- **Envoyer de la part de** : l'autorisation Envoyer de la part de permet à l'utilisateur d'envoyer des messages de la part de la boîte aux lettres partagée. Par exemple, si Jacques se connecte à la boîte aux lettres partagée Réception Immeuble 32 et envoie un message, ce dernier semblera avoir été envoyé par « Jacques de la part de Réception Immeuble 32 ». Vous ne pouvez pas utiliser le Centre d’administration Exchange pour accorder des autorisations Envoyer de la part de ; vous devez utiliser la cmdlet **Set-Mailbox** avec le paramètre _GrantSendonBehalf_.
 
 ### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>Utiliser le CAE pour modifier la délégation de boîte aux lettres partagée
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>, accédez à **Destinataires** \> **Partagé**. Sélectionnez la boîte aux lettres partagée, puis sélectionnez **Modifier** ![Icône Modifier.](../../media/ITPro-EAC-EditIcon.png).
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d'administration Exchange</a>, accédez à **Destinataires** \> **Boîtes aux lettres**. Sélectionnez la boîte aux lettres partagée, puis sélectionnez **Modifier** ![Icône Modifier.](../../media/ITPro-EAC-EditIcon.png).
 
-2. Sélectionnez **Délégation de boîte aux lettres**.
+2. Sous **Autorisations de boîte aux lettres**, sélectionnez **Gérer la délégation de boîte aux lettres**.
 
 3. Pour accorder ou supprimer les autorisations Accès total et Envoyer en tant que, sélectionnez **Ajouter** ![Ajouter une icône](../../media/ITPro-EAC-AddIcon.png) ou sur **Supprimer** ![Supprimer une icône](../../media/ITPro-EAC-RemoveIcon.gif), puis sélectionnez les utilisateurs auxquels vous souhaitez accorder ou retirer les autorisations.
 

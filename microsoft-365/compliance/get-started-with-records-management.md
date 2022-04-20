@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous avez besoin d’une solution de gestion des enregistrements pour Microsoft 365 qui gère des contenus à forte valeur pour les obligations légales, professionnelles, ou réglementaires, mais vous ne savez pas où commencer ? Lisez des instructions pratiques pour démarrer.
-ms.openlocfilehash: ba23aed20cbef05272bc33306df5fc1eebc6cb3f
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 02c16f9d1a9d42f59cf8bc27bdee38bcc2d10d73
+ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241178"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "64911387"
 ---
 # <a name="get-started-with-records-management"></a>Prise en main de la gestion des enregistrements
 
@@ -41,7 +41,7 @@ Etes-vous prêt à démarrer la gestion de contenus à forte valeur de votre org
 
 4. **Publiez et appliquez vos étiquettes de rétention**. Les étiquettes de rétention sont des blocs de construction réutilisables dans plusieurs stratégies et qui peuvent être incorporés dans les flux de travail des utilisateurs :
 
-    - [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
+    - [Publier des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
     - [Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)
 
 Indépendamment de ces étapes, **Utilisez des connecteurs pour importer et archiver des** de données tierces qui incluent des données provenant de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration de documents. Lorsque ces données sont importées dans des boîtes aux lettres en ligne, elles prennent en charge non seulement la gestion des enregistrements à partir de Microsoft 365 Conformité, mais également d’autres solutions de conformité telles que la conformité des communications, la gestion des risques internes et eDiscovery. Pour plus d’informations, voir[En savoir plus sur les connecteurs pour les données tierces.](archiving-third-party-data.md)
@@ -73,10 +73,10 @@ Utilisez le tableau suivant pour vous aider à faire correspondre vos besoins m�
 |----------------|---------------|
 |Déclarer un enregistrement |[Déclarer des enregistrements à l’aide d’étiquettes de rétention](declare-records.md)|
 |Mettre à jour un enregistrement |[Utiliser le contrôle de version des enregistrements pour mettre à jour les enregistrements stockés dans SharePoint ou OneDrive](record-versioning.md)|
-|Permettez aux administrateurs et aux utilisateurs d’appliquer manuellement les actions de rétention et de suppression pour les documents et e-mails : <br />- SharePoint <br />- OneDrive <br />- Outlook et Outlook sur le web|[Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)|
-|Permettez aux administrateurs de site de définir les actions de rétention et de suppression par défaut à tout le contenu dans une bibliothèque, un dossier ou un ensemble de documents SharePoint|[Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)|
-|Permettez aux utilisateurs d’appliquer automatiquement les actions de rétention et de suppression aux courriers électroniques à l’aide des règles Outlook|[Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)|
-|Permettez aux administrateurs d’appliquer des actions de rétention et de suppression à un modèle de compréhension de document afin que celles-ci soient automatiquement appliquées aux documents identifiés dans une bibliothèque SharePoint|[Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)|
+|Permettez aux administrateurs et aux utilisateurs d’appliquer manuellement les actions de rétention et de suppression pour les documents et e-mails : <br />- SharePoint <br />- OneDrive <br />- Outlook et Outlook sur le web|[Publier des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)|
+|Permettez aux administrateurs de site de définir les actions de rétention et de suppression par défaut à tout le contenu dans une bibliothèque, un dossier ou un ensemble de documents SharePoint|[Publier des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)|
+|Permettez aux utilisateurs d’appliquer automatiquement les actions de rétention et de suppression aux courriers électroniques à l’aide des règles Outlook|[Publier des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)|
+|Permettez aux administrateurs d’appliquer des actions de rétention et de suppression à un modèle de compréhension de document afin que celles-ci soient automatiquement appliquées aux documents identifiés dans une bibliothèque SharePoint|[Publier des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)|
 |Appliquez automatiquement les actions de rétention et de suppression pour les documents et e-mails |[Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)|
 |Démarrez la période de rétention lorsqu’un événement se produit, par exemple :  <br />- Des employés quittent l’organisation <br />- Des contrats expirent <br />- Fin de vie d’un produit| [Débuter la rétention lorsqu’un événement se produit](event-driven-retention.md)|
 |Limiter les modifications apportées aux stratégies afin de répondre aux exigences réglementaires ou de protéger contre les administrateurs malveillants| [Utiliser le verrouillage de conservation pour restreindre les modifications apportées aux stratégies de rétention et d’étiquettes de rétention](retention-preservation-lock.md)

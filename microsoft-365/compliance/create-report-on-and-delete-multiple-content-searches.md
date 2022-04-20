@@ -1,5 +1,5 @@
 ---
-title: Créer, générer des rapports et supprimer plusieurs recherches de contenu
+title: Créer, signaler et supprimer des recherches de contenu
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,36 +17,36 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: Découvrez comment automatiser des tâches de recherche de contenu telles que la création de recherches et l’exécution de rapports à l’aide du Centre de sécurité & conformité PowerShell.
+description: Découvrez comment automatiser des tâches de recherche de contenu, telles que la création de recherches et l’exécution de rapports à l’aide du Centre de sécurité & conformité PowerShell.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 602997114c46a68be13182a504d0b123e98d2be2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 06ea7655348851cbd457b527a3ee36f72d78e562
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172478"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64936860"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Créer, générer des rapports et supprimer plusieurs recherches de contenu
 
- Créer et signaler rapidement des recherches de découverte est souvent une étape importante dans eDiscovery et les enquêtes lorsque vous essayez d’en savoir plus sur les données sous-jacentes, ainsi que sur la richesse et la qualité de vos recherches. Pour vous aider à effectuer cette opération, le Centre de sécurité & conformité PowerShell propose un ensemble d’cmdlets pour automatiser des tâches de recherche de contenu chronophages. Ces scripts offrent un moyen rapide et facile de créer un certain nombre de recherches, puis d’exécuter des rapports sur les résultats de recherche estimés qui peuvent vous aider à déterminer la quantité de données en question. Vous pouvez également utiliser les scripts pour créer différentes versions de recherches afin de comparer les résultats que chacun produit. Ces scripts peuvent vous aider à identifier et à étiqueter rapidement et efficacement vos données.
+ La création et la création rapide de rapports de recherches de découverte sont souvent une étape importante dans eDiscovery et les investigations lorsque vous essayez d’en savoir plus sur les données sous-jacentes, ainsi que sur la richesse et la qualité de vos recherches. Pour vous aider à effectuer cette opération, le Centre de sécurité & conformité PowerShell propose un ensemble d’applets de commande pour automatiser les tâches de recherche de contenu fastidieuses. Ces scripts offrent un moyen rapide et simple de créer un certain nombre de recherches, puis d’exécuter des rapports des résultats de recherche estimés qui peuvent vous aider à déterminer la quantité de données en question. Vous pouvez également utiliser les scripts pour créer différentes versions de recherches afin de comparer les résultats que chacun produit. Ces scripts peuvent vous aider à identifier et à éliminer rapidement et efficacement vos données.
 
 ## <a name="before-you-create-a-content-search"></a>Avant de créer une recherche de contenu
 
-- Vous devez être membre du groupe de rôles Gestionnaire eDiscovery dans le Centre de conformité Microsoft 365 pour exécuter les scripts décrits dans cette rubrique.
+- Vous devez être membre du groupe de rôles gestionnaire eDiscovery dans le portail de conformité Microsoft Purview pour exécuter les scripts décrits dans cette rubrique.
 
-- Pour collecter une liste des URL pour les sites OneDrive Entreprise de votre organisation que vous pouvez ajouter au fichier CSV à l’étape 1, voir Créer une liste de tous les emplacements [OneDrive](/onedrive/list-onedrive-urls)de votre organisation.
+- Pour collecter la liste des URL des sites OneDrive Entreprise de votre organisation que vous pouvez ajouter au fichier CSV à l’étape 1, consultez [Créer une liste de tous les OneDrive emplacements de votre organisation](/onedrive/list-onedrive-urls).
 
-- N’oubliez pas d’enregistrer tous les fichiers que vous créez dans cette rubrique dans le même dossier. Cela facilitera l’exécuter.
+- Veillez à enregistrer tous les fichiers que vous créez dans cette rubrique dans le même dossier. Cela facilite l’exécution des scripts.
 
-- Les scripts incluent une gestion minimale des erreurs. Leur objectif principal est de créer, créer des rapports et supprimer rapidement plusieurs recherches de contenu.
+- Les scripts incluent une gestion minimale des erreurs. Leur objectif principal est de créer, de signaler et de supprimer rapidement plusieurs recherches de contenu.
 
 - Les exemples de script fournis dans cette rubrique ne sont pris en charge dans aucun programme de support ou service standard de Microsoft. Les exemples de scripts sont fournis en l’état, sans garantie d’aucune sorte. Microsoft exclut toute garantie implicite, y compris, sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. Vous assumez tous les risques liés à l’utilisation ou à l’exécution des exemples de scripts et de la documentation. En aucun cas, Microsoft, ses auteurs ou toute personne impliquée dans la création, la production ou la livraison des scripts ne sont responsables de dommages quelconques (y compris, sans limitation, pertes de bénéfices, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
 
 ## <a name="step-1-create-a-csv-file-that-contains-information-about-the-searches-you-want-to-run"></a>Étape 1 : Créer un fichier CSV qui contient des informations sur les recherches que vous souhaitez exécuter
 
-Le fichier de valeurs séparées par des virgules (CSV) que vous créez à cette étape contient une ligne pour chaque utilisateur qui souhaite effectuer une recherche. Vous pouvez effectuer une recherche dans la boîte aux lettres Exchange Online de l’utilisateur (qui inclut la boîte aux lettres d’archivage, si elle est activée) et son site OneDrive Entreprise site. Vous pouvez également rechercher uniquement la boîte aux lettres ou le site OneDrive Entreprise site. Vous pouvez également effectuer des recherches sur n’importe quel site de votre SharePoint Online. Le script que vous exécutez à l’étape 3 crée une recherche distincte pour chaque ligne du fichier CSV.
+Le fichier de valeurs séparées par des virgules (CSV) que vous créez dans cette étape contient une ligne pour chaque utilisateur qui souhaite effectuer une recherche. Vous pouvez rechercher la boîte aux lettres Exchange Online de l’utilisateur (qui inclut la boîte aux lettres d’archivage, si elle est activée) et son site OneDrive Entreprise. Vous pouvez également rechercher uniquement la boîte aux lettres ou le site OneDrive Entreprise. Vous pouvez également rechercher n’importe quel site de votre organisation SharePoint Online. Le script que vous exécutez à l’étape 3 crée une recherche distincte pour chaque ligne du fichier CSV.
 
-1. Copiez et collez le texte suivant dans un fichier .txt'aide du Bloc-notes. Enregistrez ce fichier dans un dossier sur votre ordinateur local. Vous enregistrerez également les autres scripts dans ce dossier.
+1. Copiez et collez le texte suivant dans un fichier .txt à l’aide du Bloc-notes. Enregistrez ce fichier dans un dossier sur votre ordinateur local. Vous allez également enregistrer les autres scripts dans ce dossier.
 
    ```text
    ExchangeLocation,SharePointLocation,ContentMatchQuery,StartDate,EndDate
@@ -58,22 +58,22 @@ Le fichier de valeurs séparées par des virgules (CSV) que vous créez à cette
    ,https://contoso-my.sharepoint.com/personal/janets_contoso_onmicrosoft_com,,1/1/2015,
    ```
 
-   La première ligne, ou ligne d’en-tête, du fichier répertorie les paramètres qui seront utilisés par la cmdlet **New-ComplianceSearch** (dans le script de l’étape 3) pour créer une recherche de contenu. Les noms des paramètres sont séparés par des virgules. Assurez-vous qu’il n’y a pas d’espaces dans la ligne d’en-tête. Chaque ligne sous la ligne d’en-tête représente les valeurs de paramètre pour chaque recherche. N’oubliez pas de remplacer les données d’espace réservé dans le fichier CSV par vos données réelles.
+   La première ligne, ou ligne d’en-tête, du fichier répertorie les paramètres qui seront utilisés par l’applet de commande **New-ComplianceSearch** (dans le script de l’étape 3) pour créer une recherche de contenu. Les noms des paramètres sont séparés par des virgules. Vérifiez qu’il n’y a pas d’espaces dans la ligne d’en-tête. Chaque ligne sous la ligne d’en-tête représente les valeurs de paramètre pour chaque recherche. Veillez à remplacer les données d’espace réservé dans le fichier CSV par vos données réelles.
 
-2. Ouvrez le .txt dans Excel, puis utilisez les informations du tableau suivant pour modifier le fichier avec des informations pour chaque recherche.
+2. Ouvrez le fichier .txt dans Excel, puis utilisez les informations du tableau suivant pour modifier le fichier avec des informations pour chaque recherche.
 
    ****
 
    |Paramètre|Description|
    |---|---|
    |`ExchangeLocation`|Adresse SMTP de la boîte aux lettres de l’utilisateur.|
-   |`SharePointLocation`|URL du site OneDrive Entreprise de l’utilisateur ou URL de n’importe quel site de votre organisation. Pour l’URL OneDrive Entreprise sites web, utilisez ce format : ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com ` . Par exemple : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.|
-   |`ContentMatchQuery`|Requête de recherche pour la recherche. Pour plus d’informations sur la création d’une requête de recherche, voir Requêtes par mot clé et conditions de recherche [pour la recherche de contenu.](keyword-queries-and-search-conditions.md)|
-   |`StartDate`|Pour le courrier électronique, date à laquelle un message a été reçu par un destinataire ou envoyé par l’expéditeur. Pour les documents SharePoint sites OneDrive Entreprise sites, date de la dernière modification d’un document ou après celui-là.|
-   |`EndDate`|Pour le courrier électronique, date le ou avant qu’un message a été envoyé par un utilisateur. Pour les documents SharePoint ou OneDrive Entreprise sites web, la date à laquelle un document a été modifié pour la dernière fois ou avant celui-là.|
+   |`SharePointLocation`|URL du site OneDrive Entreprise de l’utilisateur ou URL de n’importe quel site de votre organisation. Pour l’URL de OneDrive Entreprise sites, utilisez ce format : ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `. Par exemple : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.|
+   |`ContentMatchQuery`|Requête de recherche pour la recherche. Pour plus d’informations sur la création d’une requête de recherche, consultez [requêtes de mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).|
+   |`StartDate`|Pour l’e-mail, date à laquelle un message a été reçu par un destinataire ou envoyé par l’expéditeur. Pour les documents sur des sites SharePoint ou OneDrive Entreprise, date de la dernière modification d’un document.|
+   |`EndDate`|Pour l’e-mail, date à laquelle un message a été envoyé par l’utilisateur ou avant celui-là. Pour les documents sur des sites SharePoint ou OneDrive Entreprise, date de la dernière modification d’un document ou avant celle-ci.|
    |
 
-3. Enregistrez Excel fichier CSV dans un dossier de votre ordinateur local. Le script que vous créez à l’étape 3 utilisera les informations de ce fichier CSV pour créer les recherches.
+3. Enregistrez le fichier Excel en tant que fichier CSV dans un dossier sur votre ordinateur local. Le script que vous créez à l’étape 3 utilise les informations contenues dans ce fichier CSV pour créer les recherches.
 
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Étape 2 : connectez-vous au Centre de sécurité et conformité PowerShell
 
@@ -81,15 +81,15 @@ L’étape suivante consiste à se connecter au Centre de sécurité et conformi
 
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>Étape 3 : Exécuter le script pour créer et démarrer les recherches
 
-Le script de cette étape crée une recherche de contenu distincte pour chaque ligne du fichier CSV que vous avez créé à l’étape 1. Lorsque vous exécutez ce script, vous êtes invité à prendre deux valeurs :
+Le script de cette étape crée une recherche de contenu distincte pour chaque ligne du fichier CSV que vous avez créé à l’étape 1. Lorsque vous exécutez ce script, vous êtes invité à entrer deux valeurs :
 
-- **ID de groupe de** recherche : ce nom permet d’organiser facilement les recherches créées à partir du fichier CSV. Chaque recherche créée est nommée avec l’ID de groupe de recherche, puis un numéro est ensuite indiqué au nom de la recherche. Par exemple, si vous entrez **ContosoCase** pour l’ID de groupe de recherche, les recherches sont nommées **ContosoCase_1,** **ContosoCase_2,** **ContosoCase_3,** etc. Notez que le nom que vous tapez est sensible à la cas. Lorsque vous utilisez l’ID de groupe de recherche aux étapes 4 et 5, vous devez utiliser le même cas que lors de sa création.
+- **ID de groupe de recherche** : ce nom permet d’organiser facilement les recherches créées à partir du fichier CSV. Chaque recherche créée est nommée avec l’ID de groupe de recherche, puis un nombre est ajouté au nom de recherche. Par exemple, si vous entrez **ContosoCase** pour l’ID de groupe de recherche, les recherches sont nommées **ContosoCase_1**, **ContosoCase_2**, **ContosoCase_3**, et ainsi de suite. Notez que le nom que vous tapez respecte la casse. Lorsque vous utilisez l’ID de groupe de recherche à l’étape 4 et à l’étape 5, vous devez utiliser le même cas que lorsque vous l’avez créé.
 
-- **Fichier CSV** : nom du fichier CSV que vous avez créé à l’étape 1. N’oubliez pas d’inclure l’utilisation du nom de fichier complet, d’inclure l’extension .csv fichier complet ; par exemple,  `ContosoCase.csv` .
+- **Fichier CSV** : nom du fichier CSV que vous avez créé à l’étape 1. Veillez à inclure l’utilisation du nom de fichier complet, à inclure l’extension de fichier .csv ; par exemple,  `ContosoCase.csv`.
 
 Pour exécuter le script :
 
-1. Enregistrez le texte suivant dans un fichier Windows PowerShell script à l’aide d’un suffixe de nom de fichier .ps1 ; par exemple, `CreateSearches.ps1` . Enregistrez le fichier dans le dossier où vous avez enregistré les autres fichiers.
+1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier de .ps1 ; par exemple, `CreateSearches.ps1`. Enregistrez le fichier dans le dossier où vous avez enregistré les autres fichiers.
 
    ```Powershell
    # Get the Search Group ID and the location of the CSV input file
@@ -166,17 +166,17 @@ Pour exécuter le script :
    }
    ```
 
-2. Dans Windows PowerShell, allez dans le dossier où vous avez enregistré le script à l’étape précédente, puis exécutez le script . par exemple :
+2. Dans Windows PowerShell, accédez au dossier dans lequel vous avez enregistré le script à l’étape précédente, puis exécutez le script , par exemple :
 
    ```Powershell
    .\CreateSearches.ps1
    ```
 
-3. À **l’invite d’ID de** groupe de recherche, tapez un nom de groupe de recherche, puis appuyez sur **Entrée**; par exemple,  `ContosoCase` . N’oubliez pas que ce nom est sensible à la cas, vous devez donc le taper de la même manière dans les étapes suivantes.
+3. À l’invite **d’ID du groupe** de recherche, tapez un nom de groupe de recherche, puis **appuyez sur Entrée**; par exemple,  `ContosoCase`. N’oubliez pas que ce nom respecte la casse. Vous devrez donc le taper de la même façon dans les étapes suivantes.
 
-4. À l’invite de fichiers **CSV source,** tapez le nom du fichier CSV, y compris l’extension .csv fichier . par exemple,  `ContosoCase.csv` .
+4. À l’invite du **fichier CSV source** , tapez le nom du fichier CSV, y compris l’extension de fichier .csv ; par exemple,  `ContosoCase.csv`.
 
-5. Appuyez **sur Entrée** pour poursuivre l’exécution du script.
+5. Appuyez sur **Entrée** pour continuer à exécuter le script.
 
    Le script affiche la progression de la création et de l’exécution des recherches. Une fois le script terminé, il revient à l’invite.
 
@@ -184,9 +184,9 @@ Pour exécuter le script :
 
 ## <a name="step-4-run-the-script-to-report-the-search-estimates"></a>Étape 4 : Exécuter le script pour signaler les estimations de recherche
 
-Après avoir créé les recherches, l’étape suivante consiste à exécuter un script qui affiche un rapport simple du nombre d’accès à la recherche pour chaque recherche créée à l’étape 3. Le rapport inclut également la taille des résultats pour chaque recherche, ainsi que le nombre total d’occurrences et la taille totale de toutes les recherches. Lorsque vous exécutez le script de rapport, vous êtes invité à obtenir l’ID de groupe de recherche et un nom de fichier CSV si vous souhaitez enregistrer le rapport dans un fichier CSV.
+Après avoir créé les recherches, l’étape suivante consiste à exécuter un script qui affiche un rapport simple du nombre d’accès de recherche pour chaque recherche qui a été créée à l’étape 3. Le rapport inclut également la taille des résultats pour chaque recherche, ainsi que le nombre total d’accès et la taille totale de toutes les recherches. Lorsque vous exécutez le script de création de rapports, vous êtes invité à entrer l’ID de groupe de recherche et un nom de fichier CSV si vous souhaitez enregistrer le rapport dans un fichier CSV.
 
-1. Enregistrez le texte suivant dans un fichier Windows PowerShell script à l’aide d’un suffixe de nom de fichier .ps1 ; par exemple, `SearchReport.ps1` . Enregistrez le fichier dans le dossier où vous avez enregistré les autres fichiers.
+1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier de .ps1 ; par exemple, `SearchReport.ps1`. Enregistrez le fichier dans le dossier où vous avez enregistré les autres fichiers.
 
    ```Powershell
    $searchGroup = Read-Host 'Search Group ID'
@@ -241,15 +241,15 @@ Après avoir créé les recherches, l’étape suivante consiste à exécuter un
    }
    ```
 
-2. Dans Windows PowerShell, allez dans le dossier où vous avez enregistré le script à l’étape précédente, puis exécutez le script . par exemple :
+2. Dans Windows PowerShell, accédez au dossier dans lequel vous avez enregistré le script à l’étape précédente, puis exécutez le script , par exemple :
 
    ```Powershell
    .\SearchReport.ps1
    ```
 
-3. À **l’invite d’ID de** groupe de recherche, tapez un nom de groupe de recherche, puis appuyez sur **Entrée**; par  `ContosoCase` exemple. N’oubliez pas que ce nom est sensible à la cas, donc vous devez le taper comme vous l’avez fait lorsque vous avez écrit le script à l’étape 3.
+3. À l’invite **d’ID du groupe** de recherche, tapez un nom de groupe de recherche, puis **appuyez sur Entrée**; par exemple  `ContosoCase`. N’oubliez pas que ce nom respecte la casse. Vous devrez donc le taper de la même façon que lorsque vous avez exécuté le script à l’étape 3.
 
-4. À l’invite chemin d’accès du fichier pour enregistrer le rapport dans un fichier **CSV (laissez** vide pour afficher simplement le rapport), tapez un nom de fichier complet (y compris l’extension de fichier .csv) si vous souhaitez enregistrer le rapport dans un fichier CSV. nom du fichier CSV, y compris l’extension .csv fichier. Par exemple, vous pouvez taper pour l’enregistrer dans le répertoire actuel ou pour  `ContosoCaseReport.csv` l’enregistrer dans un autre  `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` dossier. Vous pouvez également laisser l’invite vide pour afficher le rapport, mais pas l’enregistrer dans un fichier.
+4. Dans le **chemin d’accès au fichier pour enregistrer le rapport dans un fichier CSV (laissez vide pour afficher simplement le rapport),** tapez un nom de fichier du chemin complet du nom de fichier (y compris l’extension de fichier .csv) si vous souhaitez enregistrer le rapport dans un fichier CSV. nom du fichier CSV, y compris l’extension de fichier .csv. Par exemple, vous pouvez taper  `ContosoCaseReport.csv` pour l’enregistrer dans le répertoire actif ou le taper  `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` pour l’enregistrer dans un autre dossier. Vous pouvez également laisser l’invite vide pour afficher le rapport, mais pas l’enregistrer dans un fichier.
 
 5. Appuyez sur **Entrée**.
 
@@ -258,13 +258,13 @@ Après avoir créé les recherches, l’étape suivante consiste à exécuter un
    ![Exécutez le rapport de recherche pour afficher les estimations du groupe de recherche.](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
 
 > [!NOTE]
-> Si le même site ou boîte aux lettres est spécifié en tant qu’emplacement de contenu dans plusieurs recherches dans un groupe de recherche, l’estimation des résultats totaux dans le rapport (pour le nombre d’éléments et la taille totale) peut inclure des résultats pour les mêmes éléments. Cela est dû au fait que le même message électronique ou document sera compté plusieurs fois s’il correspond à la requête pour différentes recherches dans le groupe de recherche.
+> Si la même boîte aux lettres ou le même site est spécifié comme emplacement de contenu dans plusieurs recherches dans un groupe de recherche, l’estimation totale des résultats dans le rapport (pour le nombre d’éléments et la taille totale) peut inclure des résultats pour les mêmes éléments. Cela est dû au fait que le même message électronique ou document sera compté plusieurs fois s’il correspond à la requête pour différentes recherches dans le groupe de recherche.
 
 ## <a name="step-5-run-the-script-to-delete-the-searches"></a>Étape 5 : Exécuter le script pour supprimer les recherches
 
-Étant donné que vous créez peut-être un grand nombre de recherches, ce dernier script facilite simplement la suppression rapide des recherches que vous avez créées à l’étape 3. Comme les autres scripts, celui-ci vous invite également à obtenir l’ID de groupe de recherche. Toutes les recherches avec l’ID de groupe de recherche dans le nom de recherche sont supprimées lorsque vous exécutez ce script.
+Étant donné que vous créez peut-être un grand nombre de recherches, ce dernier script facilite simplement la suppression rapide des recherches que vous avez créées à l’étape 3. Comme les autres scripts, celui-ci vous invite également à entrer l’ID de groupe de recherche. Toutes les recherches avec l’ID de groupe de recherche dans le nom de recherche sont supprimées lorsque vous exécutez ce script.
 
-1. Enregistrez le texte suivant dans un fichier Windows PowerShell script à l’aide d’un suffixe de nom de fichier .ps1 ; par exemple, `DeleteSearches.ps1` . Enregistrez le fichier dans le dossier où vous avez enregistré les autres fichiers.
+1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier de .ps1 ; par exemple, `DeleteSearches.ps1`. Enregistrez le fichier dans le dossier où vous avez enregistré les autres fichiers.
 
    ```Powershell
    # Delete all searches in a search group
@@ -280,13 +280,13 @@ Après avoir créé les recherches, l’étape suivante consiste à exécuter un
    }
    ```
 
-2. Dans Windows PowerShell, allez dans le dossier où vous avez enregistré le script à l’étape précédente, puis exécutez le script . par exemple :
+2. Dans Windows PowerShell, accédez au dossier dans lequel vous avez enregistré le script à l’étape précédente, puis exécutez le script , par exemple :
 
    ```Powershell
    .\DeleteSearches.ps1
    ```
 
-3. À **l’invite d’ID** de groupe de recherche, tapez un nom de groupe de recherche pour les recherches à supprimer, puis appuyez sur **Entrée**; par exemple,  `ContosoCase` . N’oubliez pas que ce nom est sensible à la cas, donc vous devez le taper comme vous l’avez fait lorsque vous avez écrit le script à l’étape 3.
+3. À l’invite **d’ID du groupe** de recherche, tapez un nom de groupe de recherche pour les recherches que vous souhaitez supprimer, puis **appuyez sur Entrée**; par exemple,  `ContosoCase`. N’oubliez pas que ce nom respecte la casse. Vous devrez donc le taper de la même façon que lorsque vous avez exécuté le script à l’étape 3.
 
    Le script affiche le nom de chaque recherche supprimée.
 

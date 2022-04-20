@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, en savoir plus sur les exigences d’autorisation Lighthouse.
-ms.openlocfilehash: 1ab22fa48bb04673beb8f2b91cbbbaba2cd97804
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 62796df9e5bd5b437d06fe0c8ab6206e070c201b
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822753"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916120"
 ---
 # <a name="overview-of-permissions-in-microsoft-365-lighthouse"></a>Vue d’ensemble des autorisations dans Microsoft 365 Lighthouse
 
@@ -79,7 +79,7 @@ Pour certaines actions dans Lighthouse, des attributions de rôles dans le locat
 
 | Rôles de locataire de partenaire | Autorisations |
 |--|--|
-| Administrateur général du locataire partenaire | <ul><li>Inscrivez-vous à Lighthouse dans le Centre d'administration Microsoft 365.</li><li>Acceptez les modifications apportées aux contrats partenaires lors de la première exécution.</li><li>Activez et désactivez un locataire.</li><li>Créez, mettez à jour et supprimez des balises.</li><li>Affectez et supprimez des balises d’un locataire client.</li></ul> |
+| Administrateur général du locataire partenaire | <ul><li>Inscrivez-vous à Lighthouse dans le Centre d'administration Microsoft 365.</li><li>Acceptez les modifications apportées aux contrats partenaires lors de la première exécution.</li><li>Activez et désactivez un locataire.</li><li>Créez, mettez à jour et supprimez des balises.</li><li>Affectez et supprimez des balises d’un locataire client.</li><li>Examiner les journaux d’audit</li></ul> |
 | Membre du locataire partenaire avec au moins un rôle Azure AD attribué avec l’ensemble de propriétés suivant :<br>**microsoft.office365.supportTickets/allEntities/allTasks**<br>(Pour obtenir la liste complète des rôles Azure AD, consultez [Azure AD rôles intégrés](/azure/active-directory/roles/permissions-reference).) | Créez des demandes de service Lighthouse. |
 | Membre du locataire partenaire qui répond aux *deux* exigences suivantes : <ul><li>Au moins un rôle Azure AD est attribué avec l’ensemble de propriétés suivant :<br>**microsoft.office365.serviceHealth/allEntities/allTasks**<br>(Pour obtenir la liste complète des rôles Azure AD, consultez [Azure AD rôles intégrés](/azure/active-directory/roles/permissions-reference).)</li><li>Au moins un rôle délégué DAP est attribué (Agent d’administration ou Agent du support technique)</li></ul> | Afficher les informations d’intégrité du service. |
 

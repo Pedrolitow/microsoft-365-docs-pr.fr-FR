@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/14/2022
+ms.date: 04/18/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ba816430521db2848273a4f7c6ca7d1a61703690
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 77eb8c0aa4d0ebd78788e9701e4933788af2e46c
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862273"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64915904"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils à Microsoft Defender pour les PME
 
@@ -41,7 +41,6 @@ Avec Microsoft Defender pour les PME, vous avez le choix entre plusieurs options
 1. Sélectionnez l’onglet de votre système d’exploitation : 
 
    - clients Windows
-   - serveur Windows (préversion)
    - ordinateurs macOS
    - appareils mobiles
 
@@ -56,6 +55,7 @@ Avec Microsoft Defender pour les PME, vous avez le choix entre plusieurs options
 Choisissez l’une des options suivantes pour intégrer Windows appareils clients à Defender entreprise :
 
 - [Script local](#local-script-for-windows-clients) (pour l’intégration manuelle d’appareils dans le portail Microsoft 365 Defender)
+- [Stratégie de groupe](#group-policy-for-windows-clients)
 - [Microsoft Endpoint Manager](#endpoint-manager-for-windows-clients) (inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md))
 
 
@@ -81,6 +81,10 @@ Vous pouvez utiliser un script local pour intégrer Windows appareils clients. L
 7. Tapez l’emplacement du fichier de script. Par exemple, si vous avez copié le fichier dans le dossier Bureau, vous tapez `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`, puis appuyez sur la touche Entrée (ou sélectionnez **OK**).
 
 8. Une fois le script exécuté, passez à [exécuter un test de détection](#running-a-detection-test-on-a-windows-client).
+
+### <a name="group-policy-for-windows-clients"></a>stratégie de groupe pour les clients Windows
+
+Si vous préférez utiliser stratégie de groupe pour intégrer Windows clients, suivez les instructions fournies dans [Intégrer des appareils Windows à l’aide de stratégie de groupe](../defender-endpoint/configure-endpoints-gp.md). Cet article décrit les étapes d’intégration à Microsoft Defender pour point de terminaison ; toutefois, les étapes d’intégration à Defender entreprise sont similaires.
 
 ### <a name="endpoint-manager-for-windows-clients"></a>Endpoint Manager pour les clients Windows
 
@@ -133,67 +137,6 @@ Lorsque vous configurez l’inscription automatique, les utilisateurs ajoutent l
 Une fois que vous avez intégré Windows appareils à Defender entreprise, vous pouvez exécuter un test de détection sur un appareil Windows pour vous assurer que tout fonctionne correctement.
 
 1. Sur l’appareil Windows, créez un dossier : `C:\test-MDATP-test`.
-
-2. Ouvrez l’invite de commandes en tant qu’administrateur.
-
-3. Dans la fenêtre d’invite de commandes, exécutez la commande PowerShell suivante :
-
-   ```powershell
-   powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
-   ```
-
-Une fois la commande exécutée, la fenêtre d’invite de commandes se ferme automatiquement. En cas de réussite, le test de détection est marqué comme terminé et une nouvelle alerte s’affiche dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) pour l’appareil nouvellement intégré dans environ 10 minutes.
-
-## <a name="view-a-list-of-onboarded-devices"></a>Afficher la liste des appareils intégrés
-
-Pour afficher la liste des appareils intégrés à Defender entreprise, dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), dans le volet de navigation, sous **Points de terminaison**, choisissez **Invetory appareil**.
-
-## <a name="next-steps"></a>Prochaines étapes
-
-- Si vous avez d’autres appareils à intégrer, sélectionnez l’onglet qui correspond au système d’exploitation sur les appareils [(Windows clients, Windows Server, macOS ou appareils mobiles](#what-to-do)), puis suivez les instructions de cet onglet.
-- Si vous avez terminé l’intégration d’appareils, passez à [l’étape 5 : Configurer vos paramètres et stratégies de sécurité dans Microsoft Defender pour les PME](mdb-configure-security-settings.md)
-- Consultez [Démarrage à l’aide de Microsoft Defender pour les PME](mdb-get-started.md).
-
-## <a name="windows-server"></a>[**Windows Server**](#tab/WindowsServerEndpoints)
-
-## <a name="windows-server-preview"></a>serveur Windows (préversion)
-
-Vous pouvez intégrer un appareil Windows Server à l’aide d’un script local. 
-
-> [!IMPORTANT]
-> La possibilité d’intégrer des points de terminaison Windows Server est actuellement en préversion.
-
-1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) et connectez-vous.
-
-2. Dans le volet de navigation, choisissez **Paramètres** >  **Endpoints**, puis, sous **Gestion des appareils**, choisissez **Intégration**.
-
-3. Sélectionnez un système d’exploitation, tel que **Windows Server 1803, 2019 et 2022**, puis, dans la section **Méthode de déploiement**, choisissez **Script local**. 
-
-   Si vous sélectionnez **Windows Server 2012 R2 et 2016**, vous aurez deux packages à télécharger et à exécuter : un package d’installation et un package d’intégration. Le package d’installation contient un fichier MSI qui installe l’agent Microsoft Defender pour les PME. Le package d’intégration contient le script permettant d’intégrer votre point de terminaison Windows Server à Defender for Business. 
-
-4. Sélectionnez **Télécharger le package d’intégration**. Nous vous recommandons d’enregistrer le package d’intégration sur un lecteur amovible.
-
-   Si vous avez sélectionné **Windows Server 2012 R2 et 2016**, **sélectionnez également Télécharger le package d’installation** et enregistrez-le sur un lecteur amovible.
-
-5. Sur votre point de terminaison Windows Server, extrayez le contenu des packages d’installation/intégration à un emplacement, tel que le dossier Bureau. Vous devez avoir un fichier nommé `WindowsDefenderATPLocalOnboardingScript.cmd`. 
-
-   Si vous effectuez l’intégration Windows Server 2012 R2 ou Windows Server 2016, extrayez d’abord le package d’installation.
-
-6. Ouvrez l’invite de commandes en tant qu’administrateur.
-
-7. Si vous effectuez l’intégration Windows Server 2012R2 ou Windows Server 2016, exécutez la commande suivante : `Msiexec /i md4ws.msi /quiet`. 
-
-   Si vous effectuez l’intégration Windows Server 1803, 2019 ou 2022, ignorez cette étape et passez à l’étape 8.
-
-8. Tapez l’emplacement du fichier de script. Par exemple, si vous avez copié le fichier dans le dossier Bureau, vous tapez `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`, puis appuyez sur la touche Entrée (ou sélectionnez **OK**).
-
-9. Procéder à [l’exécution d’un test de détection sur Windows Server](#running-a-detection-test-on-windows-server)
-
-### <a name="running-a-detection-test-on-windows-server"></a>Exécution d’un test de détection sur Windows Server
-
-Une fois que vous avez intégré votre point de terminaison Windows Server à Defender entreprise, vous pouvez exécuter un test de détection pour vous assurer que tout fonctionne correctement.
-
-1. Sur l’appareil Windows Server, créez un dossier : `C:\test-MDATP-test`.
 
 2. Ouvrez l’invite de commandes en tant qu’administrateur.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: 0ec9ace6d2a2205996baed8cd64ca0e29ac83ed3
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 729c31935ee3ded04a12f7822a17082ef1b52c26
+ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64836081"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "64911509"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -33,7 +33,7 @@ De nombreux paramètres de rétention sont communs aux stratégies de rétention
 Pour connaître les scénarios qui prennent en charge ces stratégies de rétention, consultez :
 
 - [Créer et configurer des stratégies de rétention](create-retention-policies.md).
-- [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
+- [Publier des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
 - [Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)
 
 Les paramètres spécifiques à chaque scénario sont expliqués dans leur documentation respective.
@@ -344,7 +344,7 @@ En choisissant les paramètres de conservation et de suppression de contenu, vot
     
     Pour cette configuration, choisissez les options suivantes :
     
-    - Pour les stratégies de rétention : sur la page **Décider si vous souhaitez conserver du contenu, le supprimer ou les deux**, sélectionnez **Conserver les éléments pendant une période spécifique**, spécifiez la période de rétention, puis pour **À la fin de la période de rétention**, sélectionnez **Ne rien faire** pour que les paramètres de rétention à supprimer.  Ou pour une conservation sans date de fin, sélectionnez **Conserver les éléments pendant une durée indéfinie** sur cette page.
+    - Pour les stratégies de rétention : sur la page **Décider si vous souhaitez conserver du contenu, le supprimer ou les deux**, sélectionnez **Conserver les éléments pendant une période spécifique**, spécifiez la période de rétention, puis pour **À la fin de la période de rétention**, sélectionnez **Ne rien faire** pour que les paramètres de rétention à supprimer. Vous pouvez également conserver sans date de fin en sélectionnant **Conserver les éléments indéfiniment** sur cette page.
     
     - Pour les étiquettes de rétention : dans la **page Définir les paramètres d’étiquette**, sélectionnez **Conserver les éléments indéfiniment ou pendant une période spécifique**, puis :
         - Pour que les paramètres de rétention ne soient plus en vigueur sur le contenu étiqueté après une durée spécifique : dans la page **Définir la période de rétention**, pour **Conserver les éléments pendant**, spécifiez la période. Ensuite, dans la page **Choisir ce qui se passe après la période de rétention**, sélectionnez **Désactiver les paramètres de rétention**. L’étiquette reste sur le contenu, mais sans aucune restriction, comme s’il s’agissait d’une [étiquette qui classe simplement](retention.md#classifying-content-without-applying-any-actions).
@@ -356,7 +356,7 @@ En choisissant les paramètres de conservation et de suppression de contenu, vot
     
     - Pour les stratégies de rétention : sur la page **Décider si vous souhaitez conserver du contenu, le supprimer ou les deux**, sélectionnez **Conserver les éléments pendant une période spécifique**, spécifiez la période de rétention, puis pour **À la fin de la période de rétention**, sélectionnez **Supprimer automatiquement les éléments**.
     
-    - Pour les étiquettes de rétention : dans la page **Définir les paramètres d’étiquette**, sélectionnez **Conserver les éléments indéfiniment ou pendant une période spécifique**, spécifiez la période de rétention, puis pour **Choisir ce qui se passe après la période de rétention**, sélectionnez **Supprimer automatiquement** ou **Démarrer une révision avant destruction**. Pour plus d’informations sur les révisions avant destruction, consultez [Révision avant destruction](disposition.md#disposition-reviews).
+    - Pour les étiquettes de rétention : dans la page **Définir les paramètres d’étiquette**, sélectionnez **Conserver les éléments indéfiniment ou pendant une période spécifique**, spécifiez la période de rétention, puis pour **Choisir ce qui se passe après la période de rétention**, sélectionnez **Supprimer automatiquement** ou **Démarrer une révision avant destruction**. Pour obtenir des informations sur les révisions avant destruction, voir [Révision avant destruction](disposition.md#disposition-reviews).
 
 - Supprimer uniquement
 
@@ -394,7 +394,7 @@ Avant de configurer la rétention, familiarisez-vous tout d’abord avec les lim
 
 Les paramètres de rétention peuvent conserver puis supprimer des éléments, ou bien supprimer de vieux éléments sans les conserver.
 
-Dans les deux cas, si les paramètres de votre stratégie suppriment des éléments, il est important de comprendre que la période que vous spécifiez n’est pas calculée à partir du moment où la stratégie a été affectée, mais en fonction du début de la période de rétention spécifiée. Par exemple, à partir du moment où l’élément a été créé, modifié ou étiqueté.
+Dans les deux cas, si les paramètres de votre stratégie suppriment des éléments, il est important de comprendre que la période que vous spécifiez n’est pas calculée à partir du moment où la stratégie a été affectée, mais en fonction du début de la période de rétention spécifiée. Par exemple, à partir de la date de création ou de modification d’un élément, ou de son étiquetage.
 
 Pour cette raison, tenez d’abord compte de l’âge du contenu existant et de la façon dont les paramètres peuvent affecter ce contenu. Envisagez de communiquer les paramètres de votre choix à vos utilisateurs et au support technique avant application des paramètres au contenu, ce qui leur donne le temps d’évaluer l’impact possible.
 

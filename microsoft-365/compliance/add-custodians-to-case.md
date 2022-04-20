@@ -1,5 +1,5 @@
 ---
-title: Ajouter des consignats à un cas de Advanced eDiscovery
+title: Ajouter des consignatateurs à un cas eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez comment utiliser l’outil de gestion des consignats intégré dans Advanced eDiscovery pour coordonner vos flux de travail et identifier les sources de données pertinentes dans un cas.
+description: Découvrez comment utiliser l’outil de gestion des consignats intégré dans Microsoft Purview eDiscovery (Premium) pour coordonner vos flux de travail et identifier les sources de données pertinentes dans un cas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bbd5bb1955fc0c8ee5917a6827b35a6688928571
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 7da45eca9e57ef64c9272c89e24c21a20dc5af80
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759366"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935805"
 ---
-# <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Ajouter des consignats à un cas de Advanced eDiscovery
+# <a name="add-custodians-to-an-ediscovery-premium-case"></a>Ajouter des consignatateurs à un cas eDiscovery (Premium)
 
-Utilisez l’outil de gestion des consignats intégré dans Advanced eDiscovery pour coordonner vos flux de travail autour de la gestion des consignatateurs et de l’identification des sources de données de garde pertinentes associées à un cas. Lorsque vous ajoutez un consignateur, le système peut automatiquement identifier et placer une conservation sur sa boîte aux lettres Exchange et son compte OneDrive Entreprise. Pendant le processus de découverte de votre enquête, vous pouvez également identifier d’autres sources de données (telles que des boîtes aux lettres, des sites ou des Teams) auxquelles un consignateur a accédé ou y a contribué. Dans ce cas, vous pouvez utiliser l’outil de gestion des consignats pour associer ces sources de données à un dépositaire spécifique. Après avoir ajouté des consignataires à un cas et associé à une autre source de données, vous pouvez rapidement conserver les données et rechercher les données de garde.
+Utilisez l’outil de gestion des consignats intégré dans Microsoft Purview eDiscovery (Premium) pour coordonner vos flux de travail autour de la gestion des consignatateurs et de l’identification des sources de données de garde pertinentes associées à un cas. Lorsque vous ajoutez un consignateur, le système peut automatiquement identifier et placer une conservation sur sa boîte aux lettres Exchange et son compte OneDrive Entreprise. Pendant le processus de découverte de votre enquête, vous pouvez également identifier d’autres sources de données (telles que des boîtes aux lettres, des sites ou des Teams) auxquelles un consignateur a accédé ou y a contribué. Dans ce cas, vous pouvez utiliser l’outil de gestion des consignats pour associer ces sources de données à un dépositaire spécifique. Après avoir ajouté des consignataires à un cas et associé à une autre source de données, vous pouvez rapidement conserver les données et rechercher les données de garde.
 
-Vous pouvez ajouter et gérer des consignatateurs dans Advanced eDiscovery cas en quatre étapes :
+Vous pouvez ajouter et gérer des consignatateurs dans les cas eDiscovery (Premium) en quatre étapes :
 
 1. Identifiez les consignatateurs.
 
@@ -46,7 +46,7 @@ Pour ajouter des consignatateurs à un cas, vous devez être membre du groupe de
 
 1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) et connectez-vous avec un compte d’utilisateur qui a reçu les autorisations eDiscovery appropriées.
 
-2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, sélectionnez **eDiscovery** >  **Advanced eDiscovery**, puis l’onglet [**Cas**](https://go.microsoft.com/fwlink/p/?linkid=2173764).
+2. Dans le volet de navigation gauche du portail de conformité Microsoft Purview, sélectionnez **eDiscoveryeDiscovery** >  **(Premium)** et l’onglet [**Cas**](https://go.microsoft.com/fwlink/p/?linkid=2173764).
 
 3. Sélectionnez le cas auquel vous souhaitez ajouter des consignatateurs.
 
@@ -83,7 +83,7 @@ Pour associer d’autres boîtes aux lettres, sites, Teams ou groupes Yammer à 
    > [!NOTE]
    > Vous pouvez utiliser les sélecteurs **d’emplacement Exchange** et **SharePoint** pour associer n’importe quelle boîte aux lettres ou site de votre organisation à un consignateur. , cela inclut l’association de la boîte aux lettres et du site pour une équipe Microsoft ou Yammer groupe dont un gardien n’est pas membre. Pour ce faire, vous devez ajouter la boîte aux lettres et le site associés à chaque équipe ou Yammer groupe.
 
-2. Vous pouvez afficher le nombre total de boîtes aux lettres, de sites, de Teams et de groupes Yammer affectés à chaque consignateur en développant chaque consigna ateur dans la table. Une fois que vous avez finalisé les emplacements de données affectés pour chaque dépositaire, ces associations sont conservées et utilisées pendant les étapes de collecte, de traitement et de révision du flux de travail Advanced eDiscovery.
+2. Vous pouvez afficher le nombre total de boîtes aux lettres, de sites, de Teams et de groupes Yammer affectés à chaque consignateur en développant chaque consigna ateur dans la table. Une fois que vous avez finalisé les emplacements de données affectés pour chaque dépositaire, ces associations sont conservées et utilisées pendant les étapes de collecte, de traitement et de révision du flux de travail eDiscovery (Premium).
 
 3. Après avoir ajouté des consignats et configuré leurs emplacements de données, cliquez sur **Suivant** pour accéder à la page **Paramètres de** conservation.  
 

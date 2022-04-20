@@ -1,5 +1,5 @@
 ---
-title: Rechercher dans le journal d’audit dans le Centre de conformité Microsoft 365
+title: Rechercher dans le journal d’audit dans le portail de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,20 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation.
+description: Utilisez le portail de conformité Microsoft Purview pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 1a10bf738562f8fd9a263252d4a56eddf8acee9d
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: f35bfbbe299495e912d018bd00615964f883031e
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841942"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64936266"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
-Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Vous pouvez utiliser l’outil de recherche de journal d’audit dans le Centre de conformité Microsoft 365 afin de rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation. Des milliers d’opérations utilisateur et administrateur effectuées dans des dizaines de services et solutions Microsoft 365 sont capturées, enregistrées et conservées dans le journal d’audit unifié de votre organisation. Les utilisateurs de votre organisation peuvent utiliser l’outil de recherche du journal d’audit pour rechercher, afficher et exporter (vers un fichier CSV) les enregistrements d’audit pour ces opérations.
+Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Vous pouvez utiliser l’outil de recherche de journal d’audit dans le portail de conformité Microsoft Purview afin de rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation. Des milliers d’opérations utilisateur et administrateur effectuées dans des dizaines de services et solutions Microsoft 365 sont capturées, enregistrées et conservées dans le journal d’audit unifié de votre organisation. Les utilisateurs de votre organisation peuvent utiliser l’outil de recherche du journal d’audit pour rechercher, afficher et exporter (vers un fichier CSV) les enregistrements d’audit pour ces opérations.
 
 ## <a name="microsoft-365-services-that-support-auditing"></a>Services Microsoft 365 qui prennent en charge l’audit
 
@@ -92,7 +92,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
 - Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online pour pouvoir effectuer des recherches dans le journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page **Autorisations** dans le Centre d’administration Exchange. Les administrateurs globaux dans votre client Office 365 et Microsoft 365 sont automatiquement des membres du groupe de rôle Gestion de l'organisation dans Exchange Online. Pour permettre à un utilisateur d’effectuer des recherches dans le journal d’audit avec le niveau minimal de privilèges, vous pouvez créer un groupe de rôles personnalisé dans Exchange Online, ajouter le rôle Journaux d’audit en affichage seul ou Journaux d’audit, puis ajouter l’utilisateur en tant que membre du nouveau groupe de rôles. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups).
 
   > [!IMPORTANT]
-  > Si vous affectez le rôle Journaux d’audit en affichage seul ou Journaux d’audit à un utilisateur dans la page **Autorisations** dans le Centre de conformité Microsoft 365, celui-ci ne pourra pas effectuer de recherches dans le journal d’audit. Vous devez affecter les autorisations dans Exchange Online. En effet, la cmdlet sous-jacente utilisée pour les recherches dans le journal d’audit est une cmdlet Exchange Online.
+  > Si vous affectez le rôle Journaux d’audit en affichage seul ou Journaux d’audit à un utilisateur dans la page **Autorisations** du portail de conformité, celui-ci ne pourra pas effectuer de recherches dans le journal d’audit. Vous devez affecter les autorisations dans Exchange Online. En effet, la cmdlet sous-jacente utilisée pour les recherches dans le journal d’audit est une cmdlet Exchange Online.
 
 - Lorsqu’une activité auditée est effectuée par un utilisateur ou un administrateur, un enregistrement d’audit est généré et stocké dans le journal d’audit pour votre organisation. La durée pendant laquelle un enregistrement d'audit est conservé (et consultable dans le journal d'audit) dépend de votre abonnement Office 365 ou Microsoft 365 Entreprise, et en particulier du type de licence attribuée à des utilisateurs spécifiques.
 
@@ -104,7 +104,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
   - Pour les utilisateurs auxquels toute autre licence Office 365 ou Microsoft 365 (non E5) est attribuée, les enregistrements d’audit sont conservés pendant 90 jours. Pour obtenir la liste des abonnements Office 365 et Microsoft 365 prenant en charge la journalisation d’audit unifiée, voir [la description de service du Centre de sécurité et conformité](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
     > [!NOTE]
-    > Même lorsque l'audit des boîtes aux lettres activé par défaut est activé, vous pouvez remarquer que les événements d'audit des boîtes aux lettres pour certains utilisateurs ne sont pas trouvés dans les recherches de journaux d'audit dans le Centre de conformité Microsoft 365 ou via l'API d'activité de gestion d'Office 365. Pour plus d'informations, affichez[Plus d'informations sur la journalisation de l'audit des boîtes aux lettres](enable-mailbox-auditing.md#more-information).
+    > Même lorsque l'audit des boîtes aux lettres activé par défaut est activé, vous pouvez remarquer que les événements d'audit des boîtes aux lettres pour certains utilisateurs ne sont pas trouvés dans les recherches de journaux d'audit dans le portail de conformité ou via l'API d'activité de gestion d'Office 365. Pour plus d'informations, affichez[Plus d'informations sur la journalisation de l'audit des boîtes aux lettres](enable-mailbox-auditing.md#more-information).
 
 - Si vous souhaitez désactiver la recherche dans le journal d’audit pour votre organisation, vous pouvez exécuter la commande suivante dans une session PowerShell distante connectée à votre organisation Exchange Online :
 
@@ -120,7 +120,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
 
   Pour plus d’informations, consultez l’article [Désactiver la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md).
 
-- Comme indiqué précédemment, la cmdlet sous-jacente utilisée pour effectuer une recherche dans le journal d’audit est une cmdlet Exchange Online, à savoir **Search-UnifiedAuditLog**. Cela signifie que vous pouvez utiliser cette cmdlet pour effectuer une recherche dans le journal d’audit au lieu d’utiliser l’outil de recherche sur la page **Audit** de la Centre de conformité Microsoft 365. Vous devez exécuter cette cmdlet dans PowerShell distant connecté à votre organisation Exchange Online. Pour plus d’informations, voir [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
+- Comme indiqué précédemment, la cmdlet sous-jacente utilisée pour effectuer une recherche dans le journal d’audit est une cmdlet Exchange Online, à savoir **Search-UnifiedAuditLog**. Cela signifie que vous pouvez utiliser cette cmdlet pour effectuer une recherche dans le journal d’audit au lieu d’utiliser l’outil de recherche sur la page **Audit** du portail de conformité. Vous devez exécuter cette cmdlet dans PowerShell distant connecté à votre organisation Exchange Online. Pour plus d’informations, voir [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
 
   Pour plus d’informations sur l’exportation des résultats de recherche renvoyés par l’applet de commande **Search-UnifiedAuditLog** vers un fichier CSV, voir la section «conseils pour l'exportation et l’affichage du journal d’audit» dans [exporter, configurer et afficher les enregistrements du journal d’audit.](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
@@ -147,9 +147,9 @@ Pour effectuer une recherche dans le journal d’audit dans Microsoft 365, vous 
 1. Accédez à <https://compliance.microsoft.com> et connectez-vous.
 
     > [!TIP]
-    > Utilisez une session de navigation privée (et non une session normale) pour accéder au Centre de conformité Microsoft 365, car cela empêche l’utilisation des informations d’identification avec lesquelles vous êtes actuellement connecté. Appuyez sur **CTRL+SHIFT+N** pour ouvrir une session de navigation InPrivate dans Microsoft Edge ou une session de navigation privée dans Google Chrome (appelée fenêtre incognito).
+    > Utilisez une session de navigation privée (et non une session normale) pour accéder au portail de conformité, car cela empêche l’utilisation des informations d’identification avec lesquelles vous êtes actuellement connecté. Appuyez sur **CTRL+SHIFT+N** pour ouvrir une session de navigation InPrivate dans Microsoft Edge ou une session de navigation privée dans Google Chrome (appelée fenêtre incognito).
 
-2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Audit**.
+2. Dans le volet de navigation gauche du portail de conformité, cliquez sur **Audit**.
 
     La page **Audit** s’affiche.
 
@@ -314,7 +314,7 @@ Pour accéder à un tableau spécifique, cliquez sur l’un des liens suivants.
         [Activités de découverte électronique](#ediscovery-activities)
     :::column-end:::
     :::column:::
-        [Activités avancées eDiscovery](#advanced-ediscovery-activities)
+        [Activités eDiscovery (Premium)](#ediscovery-premium-activities)
     :::column-end:::
 :::row-end:::
 
@@ -644,7 +644,7 @@ Le tableau suivant répertorie les activités qui peuvent être enregistrées pa
 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
-|Éléments de boîte aux lettres consultés|MailItemsAccessed|Les messages sont lus ou consultés dans la boîte aux lettres. Les enregistrements d’audit pour cette activité sont déclenchés de deux manières : lorsqu’un client de courrier (par exemple, Outlook) effectue une opération de liaison sur des messages ou lorsque des protocoles de courrier (par exemple, Exchange ActiveSync ou IMAP) synchronisent des éléments dans un dossier de courrier. Cette activité est uniquement enregistrée pour les utilisateurs disposant d’une licence Office 365 ou Microsoft 365 E5. L’analyse des enregistrements d’audit pour cette activité est utile lorsque vous êtes à la recherche d'un compte de messagerie compromis. Pour plus d'informations, voir la section "Événements d'audit avancé" dans [Audit avancé](advanced-audit.md#advanced-audit-events). |
+|Éléments de boîte aux lettres consultés|MailItemsAccessed|Les messages sont lus ou consultés dans la boîte aux lettres. Les enregistrements d’audit pour cette activité sont déclenchés de deux manières : lorsqu’un client de courrier (par exemple, Outlook) effectue une opération de liaison sur des messages ou lorsque des protocoles de courrier (par exemple, Exchange ActiveSync ou IMAP) synchronisent des éléments dans un dossier de courrier. Cette activité est uniquement enregistrée pour les utilisateurs disposant d’une licence Office 365 ou Microsoft 365 E5. L’analyse des enregistrements d’audit pour cette activité est utile lorsque vous êtes à la recherche d'un compte de messagerie compromis. Pour plus d'informations, voir la section « Événements d'audit (Premium) » dans [Audit (Premium)](advanced-audit.md#audit-premium-events). |
 |Autorisations de boîtes aux lettres de délégué ajoutées|Add-MailboxPermission|Un administrateur a attribué l’autorisation de boîte aux lettres FullAccess à un utilisateur (appelé délégué) à la boîte aux lettres d’une autre personne. L’autorisation FullAccess permet au délégué d’ouvrir la boîte aux lettres d’un autre utilisateur ainsi que de lire et de gérer le contenu de la boîte aux lettres. L’enregistrement d’audit de cette activité est également généré lorsqu’un compte système dans le service Microsoft 365 effectue régulièrement des tâches de maintenance pour le compte de votre organisation. Une tâche courante effectuée par un compte système consiste à mettre à jour les autorisations pour les boîtes aux lettres système. Pour plus d’informations, voir [Comptes système dans les enregistrements d’audits de boîte aux lettres Exchange.](#system-accounts-in-exchange-mailbox-audit-records)|
 |Utilisateur ajouté ou supprimé avec accès délégué au dossier calendrier|UpdateCalendarDelegation|Un utilisateur a été ajouté ou supprimé en tant que délégué au calendrier de la boîte aux lettres d’un autre utilisateur. La délégation de calendrier donne à une autre personne les mêmes autorisations d’organisation pour gérer le calendrier du propriétaire de la boîte aux lettres.|
 |Autorisations ajoutées au dossier|AddFolderPermissions|Une autorisation de dossier a été ajoutée. Les autorisations de dossier déterminent quels utilisateurs de votre organisation peuvent accéder aux dossiers dans une boîte aux lettres et aux messages situés dans ces dossiers.|
@@ -660,7 +660,7 @@ Le tableau suivant répertorie les activités qui peuvent être enregistrées pa
 |Messages supprimés définitivement de la boîte aux lettres|HardDelete|Un courrier a été supprimé définitivement du dossier Éléments récupérables (supprimé définitivement de la boîte aux lettres).|
 |Autorisations de boîtes aux lettres de délégué supprimées|Remove-MailboxPermission|Un administrateur a supprimé l’autorisation FullAccess (qui était attribuée à un délégué) à partir de la boîte lettres d’un autre utilisateur. Une fois l’autorisation FullAccess supprimée, le délégué ne peut pas ouvrir l’autre boîte aux lettres ni accéder au contenu.|
 |Autorisations supprimées du dossier|RemoveFolderPermissions|Une autorisation de dossier a été supprimée. Les autorisations de dossier déterminent quels utilisateurs de votre organisation peuvent accéder aux dossiers dans une boîte aux lettres et aux messages situés dans ces dossiers.|
-|Message envoyé|Envoyer|Un message a été envoyé, répondu ou transféré. Cette activité est uniquement enregistrée pour les utilisateurs disposant d’une licence Office 365 ou Microsoft 365 E5. Pour plus d'informations, voir la section « Événements d'audit avancé » dans [Audit avancé](advanced-audit.md#advanced-audit-events).|
+|Message envoyé|Envoyer|Un message a été envoyé, répondu ou transféré. Cette activité est uniquement enregistrée pour les utilisateurs disposant d’une licence Office 365 ou Microsoft 365 E5. Pour plus d'informations, voir la section « Événements d'audit (Premium) » dans [Audit (Premium)](advanced-audit.md#audit-premium-events).|
 |Message envoyé à l’aide d’autorisations Envoyer en tant que|SendAs|Un message a été envoyé à l'aide de l'autorisation SendAs. Cela signifie qu'un autre utilisateur a envoyé le message comme s'il provenait du propriétaire de la boîte aux lettres.|
 |Message envoyé à l’aide d’autorisations Envoyer de la part de|SendOnBehalf|Un message a été envoyé à l’aide de l’autorisation SendOnBehalf. Cela signifie qu’un autre utilisateur a envoyé le message de la part du propriétaire de la boîte aux lettres. Le message indique au destinataire de la part de qui le message a été envoyé et qui a envoyé réellement le message.|
 |Règles de boîte de réception mises à jour à partir du client Outlook|UpdateInboxRules|Un propriétaire de boîte aux lettres ou un autre utilisateur ayant accès à la boîte aux lettres a modifié une règle de boîte de réception dans le client Outlook.|
@@ -782,11 +782,11 @@ Les activités Recherche de contenu et eDiscovery, effectuées dans le centre de
 Pour consulter la liste et une description détaillée des activités de découverte électronique enregistrées, voir [Rechercher les activités de découverte électronique dans le journal d’audit](search-for-ediscovery-activities-in-the-audit-log.md).
 
 > [!NOTE]
-> Une trentaine de minutes peut être nécessaire avant que les événements résultant des activités répertoriées sous l’élément **Activités de découverte électronique** et **activités Advanced eDiscovery** de la liste déroulante **Activités** s’affichent dans les résultats de la recherche. Inversement, 24 heures peuvent être nécessaires avant que les événements correspondant aux activités de l’applet de commande eDiscovery s’affichent dans les résultats de la recherche.
+> Une trentaine de minutes peut être nécessaire avant que les événements résultant des activités répertoriées sous l’élément **Activités eDiscovery** et **Activités eDiscovery (Premium)** de la liste déroulante **Activités** s’affichent dans les résultats de la recherche. Inversement, 24 heures peuvent être nécessaires avant que les événements correspondant aux activités de l’applet de commande eDiscovery s’affichent dans les résultats de la recherche.
 
-### <a name="advanced-ediscovery-activities"></a>Activités avancées eDiscovery
+### <a name="ediscovery-premium-activities"></a>Activités eDiscovery (Premium)
 
-Vous pouvez également effectuer une recherche dans le journal d’audit des activités dans Advanced eDiscovery. Pour obtenir une description de ces activités, consultez la section « activités Advanced eDiscovery » dans [Rechercher des activités eDiscovery dans le journal d’audit](search-for-ediscovery-activities-in-the-audit-log.md#advanced-ediscovery-activities).
+Vous pouvez également effectuer une recherche dans le journal d’audit des activités dans Microsoft Purview eDiscovery (Premium). Pour obtenir une description de ces activités, consultez la section « activités eDiscovery (Premium) » dans [Rechercher des activités eDiscovery dans le journal d’audit](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-premium-activities).
 
 ### <a name="power-bi-activities"></a>Activités dans Power BI
 
@@ -840,7 +840,7 @@ Pour obtenir une description des activités de l’application Shifts, consultez
 Le tableau suivant répertorie les activités des utilisateurs et des administrateurs dans Yammer qui sont enregistrées dans le journal d’audit. Pour renvoyer des activités Yammer du journal d’audit, vous devez sélectionner **Afficher les résultats pour toutes les activités** dans la liste **Activités**. Utilisez les zones des plages de dates et la liste **Utilisateurs** pour limiter les résultats de la recherche.
 
 > [!NOTE]
-> Certaines activités d'audit de Yammer ne sont disponibles que dans l'audit avancé. Cela signifie que les utilisateurs doivent se voir attribuer la licence appropriée avant que ces activités ne soient enregistrées dans le journal d'audit. Pour plus d'informations sur les activités disponibles uniquement dans l'audit avancé, voir [Audit avancé](advanced-audit.md#advanced-audit-events) dans Microsoft 365 . Pour connaître les conditions de licence de l'audit avancé, consultez la section [Solutions d'audit dans Microsoft 365](auditing-solutions-overview.md#licensing-requirements). <br/><br/>Dans le tableau suivant, les activités d'audit avancé sont marquées d'un astérisque (*).
+> Certaines activités d'audit de Yammer ne sont disponibles que dans l'audit (Premium). Cela signifie que les utilisateurs doivent se voir attribuer la licence appropriée avant que ces activités ne soient enregistrées dans le journal d'audit. Pour plus d'informations sur les activités disponibles uniquement dans l'audit (Premium), voir [Audit (Premium) dans Microsoft 365](advanced-audit.md#audit-premium-events). Pour connaître les conditions de licence de l'audit (Premium), consultez la section [Solutions d'audit dans Microsoft 365](auditing-solutions-overview.md#licensing-requirements). <br/><br/>Dans le tableau suivant, les activités d'audit (Premium) sont marquées d'un astérisque (*).
 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
@@ -871,7 +871,7 @@ Le tableau suivant répertorie les activités des utilisateurs et des administra
 
 ### <a name="microsoft-power-automate-activities"></a>Activités Microsoft Power Automate
 
-Vous pouvez effectuer une recherche dans le journal d’audit des activités dans Power Automate (précédemment appelé Microsoft Flow). Ces activités incluent la création, la modification et la suppression de flux, et la modification des autorisations de flux. Pour plus d’informations sur l’audit des activités de Power Automate, voir le blog [événements d’audit de Microsoft Flow désormais disponible dans le Centre de conformité Microsoft 365](https://flow.microsoft.com/blog/security-and-compliance-center).
+Vous pouvez effectuer une recherche dans le journal d’audit des activités dans Power Automate (précédemment appelé Microsoft Flow). Ces activités incluent la création, la modification et la suppression de flux, et la modification des autorisations de flux. Pour plus d’informations sur l’audit des activités de Power Automate, voir le blog [événements d’audit de Microsoft Flow désormais disponible dans le portail de conformité](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### <a name="microsoft-power-apps-activities"></a>Activités Microsoft Power Apps
 
@@ -883,7 +883,7 @@ Vous pouvez effectuer une recherche dans le journal d’audit des activités dan
 
 ### <a name="content-explorer-activities"></a>Activités de l’Explorateur de contenu
 
-Le tableau suivant répertorie les activités de l’Explorateur de contenu qui sont enregistrées dans le journal d’audit. Explorateur de contenu, accessible sur l’outil classifications de données, dans le Centre de conformité Microsoft 365. Pour plus d’informations, voir [Utilisation de l’Explorateur de contenu](data-classification-content-explorer.md).
+Le tableau suivant répertorie les activités de l’Explorateur de contenu qui sont enregistrées dans le journal d’audit. Explorateur de contenu, accessible sur l’outil classifications de données, dans le portail de conformité. Pour plus d’informations, voir [Utilisation de l’Explorateur de contenu](data-classification-content-explorer.md).
 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
@@ -910,9 +910,9 @@ Les tableaux de cette section présentent les activités des utilisateurs et des
 Si une activité Forms est réalisée par un co-auteur ou un répondant anonyme, elle est enregistrée de façon légèrement différente. Pour plus d’informations, voir la section [Activités Forms réalisées par des co-auteurs ou des répondants anonymes](#forms-activities-performed-by-coauthors-and-anonymous-responders).
 
 > [!NOTE]
-> Certaines activités de formulaires d'audit ne sont disponibles que dans l'audit avancé. Cela signifie que les utilisateurs doivent se voir attribuer la licence appropriée avant que ces activités ne soient enregistrées dans le journal d'audit. Pour plus d'informations sur les activités disponibles uniquement dans l'audit avancé, voir [Audit avancé](advanced-audit.md#advanced-audit-events) dans Microsoft 365 . Pour connaître les conditions de licence de l'audit avancé, consultez la section [Solutions d'audit dans Microsoft 365](auditing-solutions-overview.md#licensing-requirements). <br/><br/>Dans le tableau suivant, les activités d'audit avancé sont marquées d'un astérisque (*).
+> Certaines activités d'audit Formulaires ne sont disponibles que dans l'audit (Premium). Cela signifie que les utilisateurs doivent se voir attribuer la licence appropriée avant que ces activités ne soient enregistrées dans le journal d'audit. Pour plus d'informations sur les activités disponibles uniquement dans l'audit (Premium), voir [Audit (Premium) dans Microsoft 365](advanced-audit.md#audit-premium-events). Pour connaître les conditions de licence de l'audit (Premium), consultez la section [Solutions d'audit dans Microsoft 365](auditing-solutions-overview.md#licensing-requirements). <br/><br/>Dans le tableau suivant, les activités d'audit (Premium) sont marquées d'un astérisque (*).
 
-|Nom facile à retenir|Opération|Description|
+|Nom convivial|Opération|Description|
 |:-----|:-----|:-----|
 |Commentaire créé|CreateComment|Le propriétaire du formulaire ajoute un commentaire ou une note à un questionnaire.|
 |Formulaire créé|CreateForm|Le propriétaire du formulaire crée un nouveau formulaire. <br><br>La propriété DataMode:string indique que le formulaire actuel est défini pour synchroniser avec un classeur Excel existant ou nouveau si la valeur de propriété est égal à DataSync. La propriété ExcelWorkbookLink:string indique l’ID du classeur Excel associé du formulaire actuel.|

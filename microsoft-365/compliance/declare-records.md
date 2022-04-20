@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Déclarer des enregistrements à l’aide d’étiquettes de rétention.
-ms.openlocfilehash: 228ce06cbc646f60703443a00492693019dfa0b8
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 23dd6c61d9da787eecd2e1fa825fe338d961d1d1
+ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64836130"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "64911452"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Déclarer des enregistrements à l’aide d’étiquettes de rétention
 
@@ -69,7 +69,7 @@ En utilisant cette étiquette de rétention, vous pouvez désormais l’applique
 
 Pour instructions complètes :
 
-- [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
+- [Publier des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
 
 - [Appliquer une étiquette de rétention au contenu automatiquement](apply-retention-labels-automatically.md) (non pris en charge pour les enregistrements réglementaires)
 

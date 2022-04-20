@@ -16,35 +16,35 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-description: Découvrez comment collecter des informations de diagnostic eDiscovery pour un cas de support Microsoft.
-ms.openlocfilehash: cab21c71168119b27a478b99a19ad5693ffb678e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: Découvrez comment collecter des informations de diagnostic eDiscovery pour un cas Support Microsoft.
+ms.openlocfilehash: 13d3967adc6eddb6f0fc5a5b57119eb6c47114de
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61871706"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64932197"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>Collecter des informations de diagnostic eDiscovery
 
-Parfois, les ingénieurs du support Microsoft ont besoin d’informations spécifiques sur votre problème lorsque vous ouvrez un cas de support lié à Core eDiscovery ou Advanced eDiscovery. Cet article fournit des instructions sur la collecte d’informations de diagnostic pour aider les ingénieurs du support technique à examiner et à résoudre les problèmes. En règle générale, vous n’avez pas besoin de collecter ces informations tant qu’un ingénieur du Support Microsoft ne vous y a pas demandé.
+Parfois, Support Microsoft ingénieurs ont besoin d’informations spécifiques sur votre problème lorsque vous ouvrez un cas de support lié à Microsoft Purview eDiscovery (Standard) ou Microsoft Purview eDiscovery (Premium). Cet article fournit des conseils sur la collecte d’informations de diagnostic pour aider les ingénieurs du support technique à examiner et à résoudre les problèmes. En règle générale, vous n’avez pas besoin de collecter ces informations tant qu’un ingénieur Support Microsoft n’a pas demandé de le faire.
 
 > [!IMPORTANT]
-> Les résultats des cmdlets et des informations de diagnostic décrites dans cet article peuvent inclure des informations sensibles sur les litiges ou les enquêtes internes dans votre organisation. Avant d’envoyer les informations de diagnostic brutes au Support Microsoft, vous devez passer en revue ces informations et les rendre confidentielles (telles que des noms ou d’autres informations sur les parties à des litiges ou à des enquêtes) en les remplaçant par `XXXXXXX` . L’utilisation de cette méthode indique également à l’ingénieur du Support Microsoft que les informations ont été expurgées.
+> La sortie des applets de commande et des informations de diagnostic décrites dans cet article peut inclure des informations sensibles sur les litiges ou les enquêtes internes dans votre organisation. Avant d’envoyer les informations de diagnostic brutes à Support Microsoft, vous devez passer en revue les informations et rétablir les informations sensibles (telles que des noms ou d’autres informations sur les parties à un litige ou une enquête) en les `XXXXXXX`remplaçant par . Cette méthode indique également à l’ingénieur Support Microsoft que des informations ont été rédigées.
 
-## <a name="collect-diagnostic-information-for-core-ediscovery"></a>Collecter des informations de diagnostic pour core eDiscovery
+## <a name="collect-diagnostic-information-for-ediscovery-standard"></a>Collecter des informations de diagnostic pour eDiscovery (Standard)
 
-La collecte d’informations de diagnostic pour core eDiscovery est basée sur les cmdlet. Vous devez donc utiliser le Centre de sécurité & conformité PowerShell. Les exemples PowerShell suivants exécutent des cmdlets, puis enregistrent la sortie dans un fichier texte spécifié. Dans la plupart des cas de prise en charge, vous ne devez exécuter qu’une de ces commandes.
+La collecte d’informations de diagnostic pour eDiscovery (Standard) est basée sur des applets de commande. Vous devez donc utiliser le Centre de sécurité & conformité PowerShell. Les exemples PowerShell suivants exécutent des applets de commande, puis enregistrent la sortie dans un fichier texte spécifié. Dans la plupart des cas de support, vous ne devez exécuter qu’une seule de ces commandes.
 
-Pour exécuter les cmdlets suivantes, [connectez-vous </span> au Centre de sécurité & conformité PowerShell](/powershell/exchange/connect-to-scc-powershell). Une fois connecté, exécutez une ou plusieurs des commandes suivantes et assurez-vous de remplacer les espaces réservé par les noms d’objets réels.
+Pour exécuter les applets de commande suivantes, [connectez-vous au Centre de sécurité & conformité PowerShell</span>](/powershell/exchange/connect-to-scc-powershell). Une fois connecté, exécutez une ou plusieurs des commandes suivantes et veillez à remplacer les espaces réservés par les noms d’objets réels.
 
-Après avoir passé en revue le fichier texte généré et publié des informations sensibles, envoyez-le à l’ingénieur du support Microsoft qui travaille sur votre cas.
+Après avoir examiné le fichier texte généré et rédigé des informations sensibles, envoyez-le à l’ingénieur Support Microsoft qui travaille sur votre cas.
 
 > [!NOTE]
-> Vous pouvez également exécuter les commandes de cette section pour collecter des informations de diagnostic pour les recherches et les exportations répertoriées dans la **page** de recherche de contenu du Centre de conformité Microsoft 365.
+> Vous pouvez également exécuter les commandes de cette section pour collecter des informations de diagnostic pour les recherches et les exportations répertoriées sur la page **Recherche de contenu** dans le portail de conformité Microsoft Purview.
 
 ### <a name="collect-information-about-searches"></a>Collecter des informations sur les recherches
 
-La commande suivante collecte des informations utiles lors de l’étude de problèmes liés à une recherche de contenu ou à une recherche associée à un cas core eDiscovery.
+La commande suivante collecte des informations utiles lors de l’examen des problèmes liés à une recherche de contenu ou à une recherche associée à un cas eDiscovery (Standard).
 
 ```powershell
 Get-ComplianceSearch "<Search name>" | FL > "ComplianceSearch.txt"
@@ -52,15 +52,15 @@ Get-ComplianceSearch "<Search name>" | FL > "ComplianceSearch.txt"
 
 ### <a name="collect-information-about-search-actions"></a>Collecter des informations sur les actions de recherche
 
-La commande suivante collecte des informations pour examiner les problèmes liés à l’aperçu, l’exportation ou la purge des résultats d’une recherche de contenu ou d’une recherche associée à un cas core eDiscovery. Vous pouvez identifier le nom de l’action de recherche en cliquant sur une exportation répertoriée sous **l’onglet Exportation.** Pour identifier les noms des actions d’aperçu et de purge, vous pouvez exécuter la cmdlet **Get-ComplianceSearchAction** pour afficher la liste de toutes les actions. Le format du nom de l’action de recherche est construit en attente, ou au nom `_Preview` `_Export` de la recherche `_Purge` correspondante.
+La commande suivante collecte des informations pour examiner les problèmes d’aperçu, d’exportation ou de purge des résultats d’une recherche de contenu ou d’une recherche associée à un cas eDiscovery (Standard). Vous pouvez identifier le nom de l’action de recherche en cliquant sur une exportation répertoriée sous l’onglet **Exportations** . Pour identifier les noms des actions d’aperçu et de vidage, vous pouvez exécuter l’applet de commande **Get-ComplianceSearchAction** pour afficher une liste de toutes les actions. Le format du nom de l’action de recherche est construit en ajoutant `_Preview`, `_Export`ou `_Purge` au nom de la recherche correspondante.
 
 ```powershell
 Get-ComplianceSearchAction "<Search action name>" | FL > "ComplianceSearchAction.txt"
 ```
 
-### <a name="collect-information-about-ediscovery-holds"></a>Collecter des informations sur les holds eDiscovery
+### <a name="collect-information-about-ediscovery-holds"></a>Collecter des informations sur les conservations eDiscovery
 
-Lorsqu’une attente eDiscovery associée à un cas eDiscovery principal ne fonctionne pas comme prévu, exécutez la commande suivante pour collecter des informations sur la stratégie de cas de attente et la règle de cas associée pour la attente eDiscovery. Le *nom de la stratégie de la* case à conserver dans la commande suivante est identique au nom de la découverte électronique. Vous pouvez identifier ce nom sous les **onglets Holds** dans le cas core eDiscovery.
+Lorsqu’une conservation eDiscovery associée à un cas eDiscovery (Standard) ne fonctionne pas comme prévu, exécutez la commande suivante pour collecter des informations sur la stratégie de conservation des cas et la règle de conservation de cas associée pour la conservation eDiscovery. Le nom de la stratégie *de conservation* case dans la commande suivante est le même que le nom de la conservation eDiscovery. Vous pouvez identifier ce nom sous les onglets **Conservations** dans le cas eDiscovery (Standard).
 
 ```powershell
 Get-CaseHoldPolicy "<Case hold policy name>" | %{"--CaseHoldPolicy--";$_|FL;"--CaseHoldRule--";Get-CaseHoldRule -Policy $_.Name | FL} > "eDiscoveryCaseHold.txt"
@@ -68,26 +68,26 @@ Get-CaseHoldPolicy "<Case hold policy name>" | %{"--CaseHoldPolicy--";$_|FL;"--C
 
 ### <a name="collect-all-case-information"></a>Collecter toutes les informations de cas
 
-Parfois, il n’est pas évident de savoir quelles informations sont requises par le Support Microsoft pour examiner votre problème. Dans ce cas, vous pouvez collecter toutes les informations de diagnostic pour un cas core eDiscovery. Le nom du cas *Core eDiscovery* dans la commande suivante est identique au nom d’un cas affiché sur la page **Core eDiscovery** dans la Centre de conformité Microsoft 365.
+Parfois, il n’est pas évident quelles informations sont requises par Support Microsoft pour examiner votre problème. Dans ce cas, vous pouvez collecter toutes les informations de diagnostic pour un cas eDiscovery (Standard). Le *nom de cas eDiscovery (Standard)* dans la commande suivante est identique au nom d’un cas affiché sur la page **eDiscovery (Standard)** dans le portail de conformité.
 
 ```powershell
-Get-ComplianceCase "<Core eDiscovery case name>"| %{$_|fl;"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
+Get-ComplianceCase "<eDiscovery (Standard) case name>"| %{$_|fl;"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
 ```
 
-## <a name="collect-diagnostic-information-for-advanced-ediscovery"></a>Collecter des informations de diagnostic pour Advanced eDiscovery
+## <a name="collect-diagnostic-information-for-ediscovery-premium"></a>Collecter des informations de diagnostic pour eDiscovery (Premium)
 
-**L Paramètres’onglet** dans un Advanced eDiscovery vous permet de copier rapidement les informations de diagnostic pour le cas. Les informations de diagnostic sont enregistrées dans le Presse-papiers afin que vous pouvez les coller dans un fichier texte et les envoyer au Support Microsoft.
+**L’onglet Paramètres** dans un cas eDiscovery (Premium) vous permet de copier rapidement les informations de diagnostic pour le cas. Les informations de diagnostic sont enregistrées dans le Presse-papiers afin de pouvoir les coller dans un fichier texte et les envoyer à Support Microsoft.
 
-1. Go to the Centre de conformité Microsoft 365, and select **eDiscovery**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced**</a>.
+1. Accédez au portail de conformité, puis sélectionnez **eDiscoveryAdvanced** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank"></a>
 
-2. Sélectionnez un cas, puis cliquez sur **l’Paramètres’onglet.**
+2. Sélectionnez un cas, puis cliquez sur l’onglet **Paramètres**.
 
-3. Sous **Informations de cas,** cliquez sur **Sélectionner.**
+3. Sous **Informations sur la casse**, cliquez sur **Sélectionner**.
 
-4. Dans la page volante, cliquez sur **Actions** Copier les informations de prise en charge  >   pour copier les informations dans le Presse-papiers.
+4. Dans la page de menu volant, cliquez sur **les informations de support ActionsCopy**  >  pour copier les informations dans le Presse-papiers.
 
-5. Ouvrez un fichier texte (Bloc-notes), puis collez les informations dans le fichier texte.
+5. Ouvrez un fichier texte (dans Bloc-notes), puis collez les informations dans le fichier texte.
 
-6. Enregistrez le fichier texte et nommez-le comme vous le `AeD Diagnostic Info YYYY.MM.DD` souhaitez (par exemple, `AeD Diagnostic Info 2020.11.03` ).
+6. Enregistrez le fichier texte et nommez-le comme `AeD Diagnostic Info YYYY.MM.DD` suit (par exemple, `AeD Diagnostic Info 2020.11.03`).
 
-Après avoir passé en revue le fichier et envoyé des informations sensibles, envoyez-le à l’ingénieur du support Microsoft qui travaille sur votre cas.
+Après avoir examiné le fichier et rédigé des informations sensibles, envoyez-le à l’ingénieur Support Microsoft qui travaille sur votre cas.
