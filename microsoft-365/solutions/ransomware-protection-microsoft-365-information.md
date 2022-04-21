@@ -16,13 +16,13 @@ ms.collection:
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware opéré par l'homme, ransomware opéré par l'homme, HumOR, attaque d'extorsion, attaque de ransomware, cryptage, cryptovirologie, zero trust
-description: Utilisez l’accès contrôlé aux dossiers, MIP, DLP et Microsoft Defender for Cloud Apps pour protéger vos Microsoft 365 sensibles.
-ms.openlocfilehash: 0011a3c9fc0d24815818b67906b8f404a191563e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Utilisez l’accès contrôlé aux dossiers, Microsoft Purview Information Protection, DLP, et Microsoft Defender for Cloud Apps pour protéger vos données sensibles Microsoft 365.
+ms.openlocfilehash: e32c214688adb60fa39fc3c392512f46ec94aecf
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325094"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64945128"
 ---
 # <a name="step-5-protect-information"></a>Étape 5 : Vérifier les informations
 
@@ -88,9 +88,9 @@ Pour protéger vos informations sensibles au cas où un pirate de rançongiciel 
 
 - Utilisez [l’accès contrôlé aux dossiers](/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) pour rendre plus difficile pour les applications non autorisées de modifier des données dans des dossiers contrôlés.
 
-- Utilisez [Microsoft Information Protection](/microsoft-365/compliance/information-protection) et des étiquettes de confidentialité, puis appliquez-les à des informations sensibles. Les étiquettes de confidentialité peuvent être configurées pour un chiffrement et des autorisations supplémentaires avec des comptes d’utilisateur et des actions autorisées définis. Un fichier étiqueté avec ce type d’étiquette de confidentialité qui est exfiltré à partir de votre client ne peut être utilisé que pour un compte d’utilisateur défini dans l’étiquette.
+- Utilisez la[protection des données de Microsoft Purview](/microsoft-365/compliance/information-protection) et des étiquettes de confidentialité, puis appliquez-les à des informations sensibles. Les étiquettes de confidentialité peuvent être configurées pour un chiffrement et des autorisations supplémentaires avec des comptes d’utilisateur et des actions autorisées définis. Un fichier étiqueté avec ce type d’étiquette de confidentialité qui est exfiltré à partir de votre client ne peut être utilisé que pour un compte d’utilisateur défini dans l’étiquette.
 
-- Utilisez la [Protection contre la perte de données (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) Microsoft 365 pour détecter, avertir et bloquer le partage risqué, involontaire ou inapproprié de données contenant des informations personnelles ou confidentielles basées sur des étiquettes de confidentialité, à la fois en interne et en externe.
+- Utilisez la [Protection contre la perte de données (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) Microsoft Purview pour détecter, avertir et bloquer le partage risqué, involontaire ou inapproprié de données contenant des informations personnelles ou confidentielles basées sur des étiquettes de confidentialité, à la fois en interne et en externe.
 
 - Utilisez [Microsoft Defender for Cloud Apps pour](/cloud-app-security/what-is-cloud-app-security) bloquer les téléchargements d’informations sensibles telles que des fichiers. Vous pouvez également utiliser des [stratégies de détection d’anomalies Defender for Cloud Apps](/cloud-app-security/anomaly-detection-policy#ransomware-activity) pour détecter un taux élevé d’activités de téléchargements ou de suppressions de fichiers.
 

@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkSPO
 description: Configurez l’infrastructure et la sécurité qui permettent à vos employés de travailler à distance de n’importe où et à tout moment.
-ms.openlocfilehash: 8ea359f2c0de98ac35b90a379e5a60c4578e66cf
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0e54d3840e9207fd7e8b5c50415ad2ca60751059
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323414"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934244"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Configurer une équipe avec une isolation des problèmes de sécurité dans un environnement de test/développement
 
@@ -139,9 +139,9 @@ Vous devez ensuite configurer une étiquette de confidentialité avec les param�
 - Le chiffrement est activé
 - Le groupe Stratégie de l’entreprise possède des autorisations de co-création
 
-Procédez comme suit :
+Procédez comme suit :
 
-1. Ouvrez le Centre de conformité Microsoft 365, sous **Solutions**, sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information Protection**</a>.
+1. Ouvrez le portail de conformité Microsoft Purview, puis sous **Solutions**, sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Protection des données**</a>.
 1. Cliquez sur **Créer une étiquette**.
 1. Tapez **Stratégie d’entreprise** comme nom d’étiquette.
 1. Tapez **Documents de stratégie de la direction de l’entreprise** sous forme d’info-bulle, puis cliquez **Suivant**.
@@ -158,7 +158,7 @@ Procédez comme suit :
 
 Ensuite, publiez la nouvelle étiquette en procédant comme suit :
 
-1. Dans la Centre de conformité Microsoft 365, dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information Protection**</a>, sélectionnez l’onglet **Stratégies d’étiquette**.
+1. Dans le portail de conformité Microsoft Purview, sur la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Protection des données**</a>, choisissez l’onglet **Stratégies d’étiquette**.
 2. Cliquez sur **Publier des étiquettes**.
 3. Dans la page **Choisir des étiquettes de confidentialité à publier**, cliquez sur **Choisir des étiquettes de confidentialité à publier**.
 4. Sélectionnez **Stratégie d’entreprise**, puis cliquez sur **Ajouter**.

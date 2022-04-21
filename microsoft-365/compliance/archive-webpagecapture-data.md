@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données de capture de pages web à partir de Veritas dans Microsoft 365. Ce connecteur vous permet d’archiver les données de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 549af03a794c132bc11901618a60185722f24907
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f4ba343d8c1a06f8c1eaf88189cae5e013a76414
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935036"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001519"
 ---
 # <a name="set-up-a-connector-to-archive-webpage-data"></a>Configurer un connecteur pour archiver les données de page web
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez un connecteur Veritas dans le portail de conformité Microsoft Purview pour importer et archiver des données à partir de pages web vers des boîtes aux lettres utilisateur de votre organisation Microsoft 365. Veritas fournit un connecteur [de capture de pages web](https://globanet.com/webpage-capture) qui capture des pages web spécifiques (et tous les liens sur ces pages) dans un site web spécifique ou un domaine entier. Le connecteur convertit le contenu de la page web au format PDF, PNG ou fichier personnalisé, puis attache les fichiers convertis à un message électronique, puis importe ces éléments de courrier dans des boîtes aux lettres utilisateur dans Microsoft 365.
 

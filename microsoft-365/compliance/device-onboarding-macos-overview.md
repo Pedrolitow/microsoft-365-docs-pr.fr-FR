@@ -1,5 +1,5 @@
 ---
-title: Intégrer des appareils macOS dans Microsoft 365 vue d’ensemble
+title: Vue d’ensemble de l’intégration des appareils macOS dans Microsoft 365
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -14,14 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: En savoir plus sur l’intégration d’appareils macOS dans des solutions de conformité
-ms.openlocfilehash: 6cc3323a94ee609c3c6674c12eb99fad3f18f3b4
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 09a35e47a237639a722047b11c24f9b2d09cf51d
+ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952716"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65014977"
 ---
-# <a name="onboard-macos-devices-into-microsoft-365-overview"></a>Intégrer des appareils macOS dans Microsoft 365 vue d’ensemble
+# <a name="onboard-macos-devices-into-microsoft-365-overview"></a>Vue d’ensemble de l’intégration des appareils macOS dans Microsoft 365
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -54,7 +54,16 @@ Vos appareils macOS doivent déjà être gérés via Intune ou jamf Pro.
  
 - Pour intégrer Intune, consultez le [guide de déploiement : Gérer les appareils macOS dans Microsoft Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) et [inscrire votre Mac avec Portail d'entreprise Intune](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - Pour intégrer JAMF Pro voir, [le guide des administrateurs Pro JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) et le [guide d’installation et de configuration JAMF Pro pour Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
-- Installer le navigateur v95+ Edge sur vos appareils macOS 
+<!--- Install the v95+ Edge browser on your macOS devices--> 
+
+### <a name="supported-browsers"></a>Navigateurs pris en charge
+
+Endpoint DLP prend en charge ces navigateurs sur macOS Catalina 10.15 ou version ultérieure :
+
+- Microsoft Edge (dernière version)
+- Safari (dernière version, macOS uniquement)
+- Chrome (dernière version)
+- Firefox (dernière version)
 
 ## <a name="licensing-guidance"></a>Conseils sur les licences
 
@@ -91,19 +100,19 @@ Lorsque vous voulez intégrer des appareils qui n’ont pas encore été intégr
 
 2. Ouvrez la page paramètres du Centre de conformité et choisissez **Activer la surveillance des appareils macOS**.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 L’intégration des appareils aux solutions Microsoft Purview est nécessaire pour recevoir les données de télémétrie des capteurs DLP et appliquer des stratégies de protection contre la perte de données. 
 
 Rubrique | Description
 :---|:---
-|[Intégrer et déconnecter des appareils macOS dans des solutions Microsoft Purview à l’aide de Intune](device-onboarding-offboarding-macos-intune.md)|Pour les appareils macOS gérés via Intune
-|[Intégrer et déconnecter des appareils macOS dans des solutions de conformité à l’aide de Intune pour les clients Microsoft Defender pour point de terminaison](device-onboarding-offboarding-macos-intune-mde.md) |Pour les appareils macOS gérés via Intune et sur lesquels Microsoft Defender pour point de terminaison (MDE) est déployé
+|[Intégrer et déconnecter des appareils macOS dans les solutions Microsoft Purview à l’aide d’Intune](device-onboarding-offboarding-macos-intune.md)|Pour les appareils macOS gérés via Intune
+|[Intégrer et désactiver les appareils macOS dans les solutions de conformité à l’aide d’Intune pour les clients Microsoft Defender pour points de terminaison](device-onboarding-offboarding-macos-intune-mde.md) |Pour les appareils macOS gérés via Intune et sur lesquels Microsoft Defender pour point de terminaison (MDE) est déployé
 |[Intégrer et déconnecter des appareils macOS dans des solutions Microsoft Purview à l’aide de JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md) | Pour les appareils macOS gérés via JAMF Pro
 |[Intégrer et déconnecter des appareils macOS dans des solutions de conformité à l’aide de Pro JAMF pour les clients Microsoft Defender pour point de terminaison](device-onboarding-offboarding-macos-jamfpro-mde.md)|Pour les appareils macOS gérés via JAMF Pro et sur lesquels Microsoft Defender pour point de terminaison (MDE) est déployé
 
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
-- [Utilisation de la prévention des pertes de données sur les points de terminaison](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
+- [Utilisation des points de terminaison protection contre la perte de données](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
 - [Tableau de prise en charge pour les conseils de stratégie DLP dans les applications Microsoft](dlp-policy-tips-reference.md#support-matrix-for-dlp-policy-tips-across-microsoft-apps)

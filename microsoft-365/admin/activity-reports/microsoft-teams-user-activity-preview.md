@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment obtenir le rapport d’activité de l’utilisateur Microsoft Teams et obtenir des insights sur l’activité Teams dans votre organisation.
-ms.openlocfilehash: cbd9bdb73dc69da5e36e0fb9c3ff2ff15b5269a4
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: ad2701e10e6b71f6fdb6a7d9ccf4a6b795a38b94
+ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882261"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65014999"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Rapports Microsoft 365 dans le Centre d’administration - Activité des utilisateurs Microsoft Teams
 
@@ -33,6 +33,7 @@ Le tableau de bord Microsoft 365 Rapports vous montre la vue d’ensemble de l�
 ## <a name="how-to-get-to-the-microsoft-teams-user-activity-report"></a>Accéder au rapport Activité de l'utilisateur sur Microsoft Teams
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>.
+
 2. Dans la page d’accueil du tableau de bord, cliquez sur le bouton **Afficher plus** sur la carte d’activité Microsoft Teams.
 
 ## <a name="interpret-the-microsoft-teams-user-activity-report"></a>Interpréter le rapport Activité de l'utilisateur sur Microsoft Teams
@@ -47,13 +48,13 @@ Le rapport **Activité de l'utilisateur sur Microsoft Teams** permet d'observer 
 
 Pour garantir la qualité des données, nous effectuons des vérifications quotidiennes de validation des données au cours des trois derniers jours et nous comblerons les lacunes détectées. Vous remarquerez peut-être des différences dans les données historiques pendant le processus.
 
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d'utilisateur  <br/> |Adresse e-mail de l’utilisateur. Vous pouvez afficher l'adresse de courrier réelle ou rendre ce champ anonyme.   <br/> |
 |Nom du locataire  <br/> |Nom d’un locataire interne ou externe auquel appartient un utilisateur.   <br/> <br/> Si un utilisateur appartient à un locataire externe, les métriques de données correspondantes (par exemple, les messages postaux, les messages de réponse, etc.) sont calculées en fonction de leurs interactions dans les canaux partagés du locataire de l’administrateur. Les interactions effectuées par l’utilisateur dans son propre locataire (en dehors des canaux partagés du locataire donné) ne sont pas prises en compte pour le rapport d’utilisation administrateur d’un locataire donné.  |
 |Noms des locataires de canal partagé   <br/> |Noms des locataires internes ou externes des canaux partagés auxquels l’utilisateur a participé.   <br/> |
-|Messages de canal   <br/> |Nombre de messages uniques que l’utilisateur a publiés dans une conversation d’équipe pendant la période spécifiée.  <br/> |
+|Messages de canal   <br/> |Nombre de messages uniques que l’utilisateur a publiés dans une conversation d’équipe pendant la période spécifiée.   <br/> |
 |Posts   <br/> |Nombre de messages postaux dans tous les canaux pendant la période spécifiée <br/> |
 |Replies   <br/> |Nombre de messages répondus dans tous les canaux pendant la période spécifiée. <br/> |
 |Messages urgents    <br/> |Nombre de messages urgents pendant la période spécifiée. <br/> |

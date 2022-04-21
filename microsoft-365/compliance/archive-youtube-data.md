@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données YouTube de Veritas vers Microsoft 365. Ce connecteur vous permet d’archiver les données de sources de données tierces dans Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, eDiscovery et des stratégies de rétention pour gérer des données tierces.
-ms.openlocfilehash: 7b6dd6360713f7ee23bdc90e56e12a9193c9252f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 7f67269c979b6ef6c5e83e29cfd833cf98f1561f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950552"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001478"
 ---
 # <a name="set-up-a-connector-to-archive-youtube-data"></a>Configurer un connecteur pour archiver les données YouTube
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez un connecteur Veritas dans le portail de conformité Microsoft Purview pour importer et archiver des données de YouTube vers des boîtes aux lettres utilisateur de votre organisation Microsoft 365. Veritas fournit un connecteur configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur convertit le contenu tel que les conversations, les pièces jointes, les tâches, les notes et les publications de YouTube au format de message électronique, puis importe ces éléments dans les boîtes aux lettres utilisateur dans Microsoft 365.
 

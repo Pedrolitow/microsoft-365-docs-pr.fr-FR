@@ -20,14 +20,16 @@ description: Attribuez les autorisations nécessaires pour effectuer des tâches
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 1f19c43e65993652628703f002b9537c71066013
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3fef13fe96297b426dda4d72231846a99fb03179
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946526"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001365"
 ---
 # <a name="assign-ediscovery-permissions-in-the-compliance-portal"></a>Attribuer des autorisations eDiscovery dans le portail de conformité
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Si vous souhaitez que les utilisateurs utilisent l’un des [outils liés à eDiscovery](ediscovery.md) dans le portail de conformité Microsoft Purview, vous devez leur attribuer les autorisations appropriées. Pour ce faire, le moyen le plus simple consiste à ajouter à la personne le groupe de **rôles** approprié dans la page Autorisations du centre de conformité. Cette rubrique décrit les autorisations requises pour effectuer des tâches eDiscovery.
   
@@ -83,13 +85,13 @@ Le tableau suivant répertorie les rôles RBAC liés à eDiscovery dans le porta
   
 | Role | Administrateur de conformité | eDiscovery Manager & Administrator | Gestion de l’organisation | Relecteur |
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|Gestion des cas <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |
+|Gestion des cas <br/> |![Marque de vérification.](../media/checkmark.png) <br/> |![Marque de vérification.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |
 |Communication <br/> | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Recherche de conformité <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |
+|Recherche de conformité <br/> |![Coche.](../media/checkmark.png) <br/> |![Marque de vérification.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |
 |Consignataire <br/> | <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Exporter <br/> | <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Exporter <br/> | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
 |Suspension <br/>  |![Marque de vérification.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |
-|Aperçu <br/>  | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Aperçu <br/>  | <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> | <br/> |
 |Révision <br/>  | <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> |![Coche](../media/checkmark.png) <br/> |
 |Déchiffrer RMS <br/>  ||![Coche](../media/checkmark.png) <br/> |||
 |Rechercher et vider <br/> | <br/> | <br/> |![Coche](../media/checkmark.png)<br/> | <br/> |
@@ -101,9 +103,9 @@ Les sections suivantes décrivent chacun des rôles RBAC liés à eDiscovery ré
 
 Ce rôle permet aux utilisateurs de créer, modifier, supprimer et contrôler l’accès aux cas eDiscovery (Standard) et eDiscovery (Premium) dans le portail de conformité. Comme expliqué précédemment, le rôle Gestion des cas doit être attribué à un utilisateur avant de pouvoir utiliser l’applet de commande **Add-eDiscoveryCaseAdmin** pour en faire un administrateur eDiscovery.
 
-Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Pour plus d’informations, voir :
 
-- [Démarrage avec eDiscovery (Standard)](get-started-core-ediscovery.md)
+- [Prise en main d’eDiscovery (Standard)](get-started-core-ediscovery.md)
 
 - [Démarrage avec eDiscovery (Premium)](get-started-with-advanced-ediscovery.md)
 
@@ -165,7 +167,7 @@ Ce rôle permet aux utilisateurs d’effectuer la suppression en bloc des donné
 
 Vous pouvez ajouter des groupes de rôles en tant que membres de cas eDiscovery (Standard) et eDiscovery (Premium) afin que les membres des groupes de rôles puissent accéder aux cas attribués et effectuer des tâches. Les rôles attribués au groupe de rôles définissent ce que les membres du groupe de rôles peuvent faire. Ensuite, l’ajout d’un groupe de rôles en tant que membre du cas permet aux membres d’accéder à ces tâches et d’effectuer ces tâches dans un cas spécifique. Pour plus d’informations sur l’ajout de groupes de rôles en tant que membres de cas, consultez :
 
-- [Démarrage avec eDiscovery (Standard)](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-ediscovery-standard-case)
+- [Prise en main d’eDiscovery (Standard)](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-ediscovery-standard-case)
 
 - [Ajouter ou supprimer des membres d’un cas eDiscovery (Premium)](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 

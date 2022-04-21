@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft Defender pour Office 365 inclut des pièces jointes sécurisées, des liens fiables, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités Threat Intelligence.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b8041962ca1a696146f9a5828c66b1a6800c4b01
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: a181f8ef6bb7ca018fb9ddf0f0adc4fe565b73e1
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683732"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64941542"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender pour Office 365
 
@@ -147,7 +147,7 @@ Pour accéder aux fonctionnalités de Microsoft Defender pour Office 365, vous d
 |administrateur général (Gestion de l’organisation)|Vous pouvez attribuer ce rôle dans Azure Active Directory ou dans le portail Microsoft 365 Defender. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).|
 |Administrateur de sécurité|Vous pouvez attribuer ce rôle dans Azure Active Directory ou dans le portail Microsoft 365 Defender. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).|
 |Gestion de l’organisation dans Exchange Online.|[Autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
-|Rechercher et vider|Ce rôle est disponible uniquement dans le portail Microsoft 365 Defender ou dans le Centre de conformité Microsoft 365. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md) et [Autorisations dans le Centre de conformité Microsoft 365](../../compliance/microsoft-365-compliance-center-permissions.md).|
+|Rechercher et vider|Ce rôle est disponible uniquement dans le portail Microsoft 365 Defender ou dans le portail de conformité Microsoft Purview. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md) et [Autorisations dans le portail de conformité Microsoft Purview](../../compliance/microsoft-365-compliance-center-permissions.md).|
 |||
 
 ## <a name="get-microsoft-defender-for-office-365"></a>Obtenir Microsoft Defender pour Office 365
@@ -172,5 +172,5 @@ De nouvelles fonctionnalités sont ajoutées à Microsoft Defender pour Office 3
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 - [Enquêtes et réponses automatisées (AIR) dans Microsoft 365 Defender](../defender/m365d-autoir.md)

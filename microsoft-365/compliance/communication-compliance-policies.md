@@ -1,6 +1,7 @@
 ---
 title: Stratégies de conformité des communications
 description: En savoir plus sur les stratégies de conformité des communications.
+keywords: Microsoft 365, Microsoft Purview, conformité, conformité des communications
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,21 +19,23 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 25a8a25497485932ce0aeb12700af1557b4cea29
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 47c7ddbc5ce935e8b9fedb7682daa6af468b66b4
+ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705427"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65015021"
 ---
 # <a name="communication-compliance-policies"></a>Stratégies de conformité des communications
 
-## <a name="policies"></a>Politiques
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+## <a name="policies"></a>Stratégies
 
 > [!IMPORTANT]
-> L’utilisation de PowerShell pour créer et gérer les stratégies de conformité des communications n’est pas prise en charge. Pour créer et gérer ces stratégies, vous devez utiliser les contrôles de gestion des stratégies dans la [solution de conformité des communications Microsoft 365](https://compliance.microsoft.com/supervisoryreview).
+> L’utilisation de PowerShell pour créer et gérer les stratégies de conformité des communications n’est pas prise en charge. Pour créer et gérer ces stratégies, vous devez utiliser les contrôles de gestion des stratégies dans la [solution de conformité des communications](https://compliance.microsoft.com/supervisoryreview).
 
-Vous créez des stratégies de conformité des communications pour les organisations Microsoft 365 dans le Centre de conformité Microsoft 365. Les stratégies de conformité des communications définissent les communications et les utilisateurs susceptibles d’être examinés dans votre organisation, définissent les conditions personnalisées que les communications doivent respecter et spécifient qui doit effectuer des révisions. Les utilisateurs auxquels le rôle *d’administrateur de conformité des communications* est attribué peuvent configurer des stratégies, et toute personne disposant de ce rôle peut accéder à la page **de conformité des communications** et aux paramètres globaux dans le Centre de conformité Microsoft 365. Si nécessaire, vous pouvez exporter l’historique des modifications vers une stratégie vers un fichier .csv (valeurs séparées par des virgules) qui inclut également l’état des alertes en attente de révision, d’éléments réaffectés et d’éléments résolus. Les stratégies ne peuvent pas être renommées et peuvent être supprimées quand vous n’en avez plus besoin.
+Vous créez des stratégies de conformité des communications pour Microsoft 365 organisations dans le portail de conformité Microsoft Purview. Les stratégies de conformité des communications définissent les communications et les utilisateurs susceptibles d’être examinés dans votre organisation, définissent les conditions personnalisées que les communications doivent respecter et spécifient qui doit effectuer des révisions. Les utilisateurs auxquels le rôle *d’administrateur de conformité des communications* est attribué peuvent configurer des stratégies, et toute personne ayant ce rôle peut accéder à la page **de conformité des communications** et aux paramètres globaux dans le portail de conformité Microsoft Purview. Si nécessaire, vous pouvez exporter l’historique des modifications vers une stratégie vers un fichier .csv (valeurs séparées par des virgules) qui inclut également l’état des alertes en attente de révision, d’éléments réaffectés et d’éléments résolus. Les stratégies ne peuvent pas être renommées et peuvent être supprimées quand vous n’en avez plus besoin.
 
 ## <a name="policy-templates"></a>Modèles de stratégie
 
@@ -103,13 +106,16 @@ Les messages signalés par l’utilisateur à partir de Teams conversations sont
 
 Les administrateurs doivent immédiatement affecter des réviseurs personnalisés à cette stratégie selon les besoins de votre organisation. Cela peut inclure des réviseurs tels que votre agent de conformité, l’agent des risques ou les membres de votre service des ressources humaines. Pour personnaliser les réviseurs des messages de conversation envoyés en tant que messages signalés par l’utilisateur, effectuez les étapes suivantes :
 
-1. Connectez-vous [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
-2. Dans le Centre de conformité Microsoft 365, accédez à **La conformité des communications**.
+1. Connectez-vous au [portail de conformité Microsoft Purview](https://compliance.microsoft.com/) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
+2. Dans le portail de conformité, accédez à **La conformité des communications**.
 3. Sous l’onglet **Stratégie** , sélectionnez la stratégie *de messages signalés par l’utilisateur* , puis **sélectionnez Modifier**.
 4. Dans le volet **Surveiller les messages signalés par l’utilisateur** , affectez des réviseurs pour la stratégie. Les réviseurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online. Lorsque les réviseurs sont ajoutés à une stratégie, ils reçoivent automatiquement un e-mail qui les avertit de l’attribution à la stratégie et fournit des liens vers des informations sur le processus de révision.
 5. Sélectionnez **Enregistrer**.
 
-Pour empêcher les utilisateurs de signaler Teams messages avec *l’option Signaler un problème*, désactivez **l’option de création de rapports d’utilisateurs finaux** dans le [Centre d’administration Teams](/microsoftteams/manage-teams-in-modern-portal).
+Pour empêcher les utilisateurs de signaler Teams messages avec *l’option Signaler un problème*, désactivez **l’option de création de rapports d’utilisateurs finaux** dans le [Centre d’administration Teams](/microsoftteams/manage-teams-in-modern-portal). 
+
+>[!IMPORTANT]
+>Si vous utilisez PowerShell pour désactiver l’option de **création de rapports d’utilisateurs finaux** dans le centre d’administration Teams, vous devez utiliser [Microsoft Teams module cmdlets version 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) ou ultérieure.
 
 ## <a name="storage-limit-notification-preview"></a>Stockage notification de limite (préversion)
 
@@ -140,7 +146,7 @@ Par défaut, la condition **Direction est** affichée et ne peut pas être suppr
 
 ### <a name="sensitive-information-types"></a>Types d’informations sensibles
 
-Vous avez la possibilité d’inclure des types d’informations sensibles dans le cadre de votre stratégie de conformité des communications. Les types d’informations sensibles sont des types de données prédéfinis ou personnalisés qui peuvent aider à identifier et protéger les numéros de carte de crédit, les numéros de compte bancaire, les numéros de passeport, etc. Dans le cadre [d’En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md), la configuration des informations sensibles peut utiliser des modèles, la proximité des caractères, des niveaux de confiance et même des types de données personnalisés pour aider à identifier et à marquer le contenu susceptible d’être sensible. Les types d’informations sensibles par défaut sont les suivants :
+Vous avez la possibilité d’inclure des types d’informations sensibles dans le cadre de votre stratégie de conformité des communications. Les types d’informations sensibles sont des types de données prédéfinis ou personnalisés qui peuvent aider à identifier et protéger les numéros de carte de crédit, les numéros de compte bancaire, les numéros de passeport, etc. Dans le cadre de [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md), la configuration des informations sensibles peut utiliser des modèles, une proximité de caractères, des niveaux de confiance et même des types de données personnalisés pour identifier et marquer le contenu susceptible d’être sensible. Les types d’informations sensibles par défaut sont les suivants :
 
 - Financier
 - Santé et médical
@@ -186,7 +192,7 @@ Les classifieurs intégrés pouvant être formés et globaux ne fournissent pas 
 > [!NOTE]
 > Les stratégies utilisant des classifieurs inspectent et évaluent les messages dont le nombre de mots est égal ou supérieur à six. Les messages contenant moins de six mots ne sont pas évalués dans les stratégies à l’aide de classifieurs. Pour identifier et prendre des mesures sur les messages plus courts contenant du contenu inapproprié, nous vous recommandons d’inclure un dictionnaire de mots clés personnalisé pour la surveillance des stratégies de conformité des communications pour ce type de contenu.
 
-Pour plus d’informations sur les classifieurs pouvant être formés dans Microsoft 365, consultez [Prise en main des classifieurs pouvant être formés](classifier-get-started-with.md).
+Pour plus d’informations sur les classifieurs pouvant être formés, consultez [Prise en main des classifieurs pouvant être formés](classifier-get-started-with.md).
 
 ### <a name="optical-character-recognition-ocr"></a>Reconnaissance optique des caractères
 
@@ -234,7 +240,7 @@ Chaque mot que vous entrez et séparez par une virgule est appliqué séparémen
 
 > [!IMPORTANT]
 >
-> Lors de l’importation d’un fichier de dictionnaire personnalisé, chaque mot ou expression doit être séparé par un retour chariot et sur une ligne distincte. Par exemple :
+> Lors de l’importation d’un fichier de dictionnaire personnalisé, chaque mot ou expression doit être séparé par un retour chariot et sur une ligne distincte. Par exemple :
 >
 > *Banquier* <br>
 > *Confidentiel* <br>
@@ -269,15 +275,15 @@ Pour les stratégies de conformité des communications, les valeurs de stratégi
 > [!NOTE]
 > Les paramètres de déclencheur de seuil de stratégie d’alerte pour les activités prennent en charge une valeur minimale de 3 ou une valeur supérieure pour les stratégies de conformité des communications.
 
-Vous pouvez modifier les paramètres par défaut pour les déclencheurs sur le nombre d’activités, la période pour les activités et pour des utilisateurs spécifiques dans les stratégies d’alerte dans la page **Stratégies d’alerte** du Centre de conformité Microsoft 365.
+Vous pouvez modifier les paramètres par défaut pour les déclencheurs sur le nombre d’activités, la période pour les activités et pour des utilisateurs spécifiques dans les stratégies d’alerte sur la page **Stratégies d’alerte** dans le portail de conformité Microsoft Purview.
 
 ### <a name="change-the-severity-level-for-an-alert-policy"></a>Modifier le niveau de gravité d’une stratégie d’alerte
 
 Si vous souhaitez modifier le niveau de gravité affecté dans une stratégie d’alerte pour une stratégie de conformité de communication spécifique, effectuez les étapes suivantes :
 
-1. Connectez-vous [Centre de conformité Microsoft 365](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
+1. Connectez-vous au [portail de conformité Microsoft Purview](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
 
-2. Dans le Centre de conformité Microsoft 365, accédez à **Stratégies**.
+2. Dans le portail de conformité Microsoft Purview, accédez à **Stratégies**.
 
 3. Sélectionnez **Office 365 alerte** dans la page **Stratégies** pour ouvrir la page **Stratégies d’alertes**.
 

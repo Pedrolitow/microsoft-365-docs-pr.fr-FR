@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Les rôles d’administrateur , tels que l’administrateur de service, correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration.
-ms.openlocfilehash: 5bea496ca24f3aef97a780d48c74b84aaa46176b
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 8a1df118b5dfe1ad484f3a8048cce9cf748ab54b
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765455"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64937662"
 ---
 # <a name="about-admin-roles"></a>À propos des rôles d’administrateur
 
@@ -89,7 +89,7 @@ Vous devrez probablement attribuer les rôles suivants au sein de votre organisa
 |Administrateur d'applications Office    |   Attribuez le rôle d’administrateur d'applications Office aux utilisateurs qui doivent effectuer les opérations suivantes : <br> – Utiliser le service de stratégie cloud Office pour créer et gérer des stratégies basées sur le cloud pour Office <br> – Créer et gérer des demandes de service <br> – Gérer le contenu des nouveautés que les utilisateurs peuvent afficher dans les applications Office   <br> – Surveiller l’état d’intégrité des services  |
 |Administrateur de mots de passe  |   Affectez le rôle d'administrateur de mots de passe à un utilisateur qui doit réinitialiser des mots de passe pour les non administrateurs et les administrateurs de mots de passe.   |
 |Lecteur du Centre de messages |   Attribuez le rôle de Lecteur de Centre de messages aux utilisateurs qui doivent effectuer les opérations suivantes : <br> – Surveiller les notifications du Centre de Messages <br> – Recevoir les résumés hebdomadaires de courrier sur les mises à jour et des publications du Centre de messages <br> – Partager des billets du Centre de messages <br> – Avoir un accès en lecture seule aux services Azure AD, tels que des utilisateurs et des groupes|
-|Administrateur Power Platform |   Attribuez le rôle d’administrateur de Power Platform aux utilisateurs qui doivent effectuer les opérations suivantes : <br> – Gérer toutes les fonctionnalités d’administrateur des applications Power, Power Automate, et la protection contre la perte de données <br> – Créer et gérer des demandes de service <br> – Surveiller l’état d’intégrité des services  |
+|Administrateur Power Platform |   Attribuez le rôle d’administrateur de Power Platform aux utilisateurs qui doivent effectuer les opérations suivantes : <br> – Gérer toutes les fonctionnalités d’administrateur des Power Apps Power Automate, et la protection contre la perte de données de Microsoft Purview <br> – Créer et gérer des demandes de service <br> – Surveiller l’état d’intégrité des services  |
 |Lecteur de rapports |   Attribuez le rôle de Lecteur de rapports aux utilisateurs qui doivent effectuer les opérations suivantes : <br> – Afficher les données d’utilisation et les rapports d’activité dans le Centre d’administration Microsoft 365 <br> – Avoir accès au pack de contenu d’adoption de Power BI <br> – Avoir accès au rapports de connexion et d’activité dans Azure AD <br> – Afficher les données renvoyées par l’API de compte-rendu Microsoft Graph|
 |Administrateur de support de service   |   Affectez le rôle d’administrateur de support de service en tant que rôle supplémentaire aux administrateurs ou aux utilisateurs qui doivent effectuer ce qui suit en complément de leur rôle d’administrateur habituel : <br> – Ouvrir et gérer des demandes de service <br> – Afficher et partager des billets du centre de messages <br> – Surveiller l’état d’intégrité des services   |
 |Administrateur SharePoint    |   Attribuez le rôle d’administrateur SharePoint aux utilisateurs qui doivent accéder et gérer le centre d’administration SharePoint Online. <br><br>Les administrateurs SharePoint peuvent également : <br> – Créer et supprimer des sites <br> – Gérer les collections de sites et les paramètres globaux de SharePoint   |

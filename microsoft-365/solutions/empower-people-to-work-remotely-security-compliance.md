@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilisez les services de sécurité et de conformité Microsoft 365 pour protéger vos applications, données et appareils destinés aux travailleurs hybrides.
-ms.openlocfilehash: 5ae369ffa41444e0cd2d3c6d28be470ede170b01
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 08771de0f9e833405da308fb645b5fb5c906c543
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314054"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64937782"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>Étape 3 : déployer la sécurité et la conformité pour les travailleurs hybrides
 
@@ -72,14 +72,14 @@ Respectez les stratégies internes ou les exigences réglementaires avec ces fon
 |Protection contre la perte de données (DLP)|Détectez, signalez et bloquez le partage risqué, accidentel ou inapproprié, tel que le partage de données contenant des informations personnelles, à la fois en interne et en externe.|Microsoft 365 E3 ou E5|
 |Contrôle d’application d’accès conditionnel|Empêchez le téléchargement de données sensibles sur les appareils personnels des utilisateurs.|Microsoft 365 E3 ou E5|
 |Étiquettes et stratégies de rétention des données|Mettez en place des contrôles de gouvernance des informations, tels que la durée de conservation des données ainsi que des exigences sur le stockage de données personnelles sur les clients, pour vous conformer aux stratégies de votre organisation ou aux réglementations relatives aux données.|Microsoft 365 E3 ou E5|
-|Chiffrement des messages Office (OME)|Envoyez et recevez entre des personnes à l’intérieur et à l’extérieur de votre organisation des messages électroniques chiffrés qui contiennent des données réglementées, telles que des données personnelles relatives aux clients.|Microsoft 365 E3 ou E5|
+|Chiffrement des messages Microsoft Purview|Envoyez et recevez entre des personnes à l’intérieur et à l’extérieur de votre organisation des messages électroniques chiffrés qui contiennent des données réglementées, telles que des données personnelles relatives aux clients.|Microsoft 365 E3 ou E5|
 |Gestionnaire de conformité|Gérez les activités de conformité réglementaire liées aux services cloud Microsoft avec cet outil d’évaluation des risques basé sur les flux de travail dans le portail d’approbation de services Microsoft.|Microsoft 365 E3 ou E5|
-|Gestionnaire de conformité|Obtenez un score global concernant votre configuration de conformité actuelle avec des recommandations pour l’améliorer dans le centre de conformité Microsoft 365.|Microsoft 365 E3 ou E5|
+|Gestionnaire de conformité|Obtenez un score global concernant votre configuration de conformité actuelle avec des recommandations pour l’améliorer dans le portail de conformité Microsoft Purview.|Microsoft 365 E3 ou E5|
 |Conformité des communications|Détectez, capturez et prenez des actions de correction pour les messages inappropriés au sein de votre organisation.|Microsoft 365 E5 ou Microsoft 365 E3 avec les modules complémentaires de conformité ou de gestion des risques internes|
 |Gestion des risques internes|Détectez, examinez et agissez sur des risques malveillants et involontaires au sein de votre organisation. Microsoft 365 peut détecter ces types de risque, même lorsqu’un employé utilise un appareil non géré.|Microsoft 365 E5 ou Microsoft 365 E3 avec les modules complémentaires de conformité ou de gestion des risques internes|
 ||||
 
-Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Tâches rapides pour démarrer avec la conformité Microsoft 365](../compliance/compliance-quick-tasks.md).
+Consulter la rubrique [Tâches rapides pour démarrer avec la conformité Microsoft](../compliance/compliance-quick-tasks.md) pour plus d’informations.
 
 ## <a name="results-of-step-3"></a>Résultats de l’étape 3
 
