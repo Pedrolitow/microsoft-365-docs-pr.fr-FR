@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Guide opérationnel d'essai des solutions de conformité Microsoft Purview.
-ms.openlocfilehash: 5136ceb33f4fb09345ee942b8d411d14952befc5
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 4544e07baa5b8d2b89991d9a31c84a2d7cefb7f8
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952773"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973770"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Guide opérationnel d'essai : solutions Microsoft Purview
 
@@ -225,9 +225,9 @@ Tirez parti d'un flux de travail de bout en bout pour préserver, collecter, ana
 > [!TIP]
 > Meilleures pratiques d'essai : Jour 1
 
-Pour accéder à Advanced eDiscovery ou être ajouté en tant que membre d'un dossier Advanced eDiscovery, un utilisateur doit disposer des autorisations appropriées.
+Pour accéder à la découverte électronique (Premium) ou être ajouté en tant que membre d'un dossier de la découverte électronique (Premium), un utilisateur doit disposer des autorisations appropriées.
 
-1. [Configurer Advanced eDiscovery – Attribuer des autorisations eDiscovery](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
+1. [Configurer la découverte électronique (Premium) – Attribuer des autorisations eDiscovery](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
 1. [Ajouter ou supprimer des membres à partir d’un cas](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 
 ### <a name="step-2-required-create-a-case"></a>Étape 2 (obligatoire) : créer un cas
@@ -235,9 +235,9 @@ Pour accéder à Advanced eDiscovery ou être ajouté en tant que membre d'un do
 > [!TIP]
 > Bonne pratique d'essai : créez dans les 30 premiers jours
 
-De plus en plus d'organisations utilisent la solution Advanced eDiscovery dans Microsoft 365 pour les processus critiques d'eDiscovery. Cela comprend la réponse aux demandes réglementaires, aux enquêtes et aux litiges.
+De plus en plus d'organisations utilisent la solution de la découverte électronique (Premium) dans Microsoft 365 pour les processus critiques de la découverte électronique. Cela comprend la réponse aux demandes réglementaires, aux enquêtes et aux litiges.
 
-1. Gérer Advanced eDiscovery – [découvrir comment configurer Advanced eDiscovery, gérer les cas à l'aide du Centre de sécurité et de conformité, gérer un flux de travail dans Advanced eDiscovery et analyser les résultats de la recherche Advanced eDiscovery](/learn/modules/manage-advanced-ediscovery).
+1. Gérer la découverte électronique (Premium) – [découvrir comment configurer la découverte électronique (Premium), gérer les cas à l'aide du Centre de sécurité et de conformité, gérer un flux de travail dans la découverte électronique (Premium) et analyser les résultats de la recherche de la découverte électronique (Premium)](/learn/modules/manage-advanced-ediscovery).
 1. [Créer un cas eDiscovery à l’aide du nouveau format de cas d’Advance eDiscovery](advanced-ediscovery-new-case-format.md)
 1. [Fermer ou supprimer un cas](close-or-delete-case.md) – Lorsque l'affaire judiciaire ou l'enquête est terminée, vous pouvez fermer ou supprimer.
 
@@ -245,9 +245,9 @@ De plus en plus d'organisations utilisent la solution Advanced eDiscovery dans M
 
 Pour permettre aux membres de votre organisation de commencer à créer et à utiliser des cas, vous devez configurer des paramètres globaux qui s'appliquent à tous les cas de votre organisation. À l'heure actuelle, le seul paramètre global est la **détection du privilège avocat-client** (des paramètres plus globaux seront disponibles à l'avenir).
 
-1. [Configurer Advanced eDiscovery – Paramètres globaux](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
+1. [Configurer la découverte électronique (Premium) – Paramètres globaux](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
 1. [Configurer les paramètres de recherche et d’analyse](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
-1. [Gérer les tâches dans Advanced eDiscovery](managing-jobs-ediscovery20.md)
+1. [Gérer les tâches dans la découverte électronique (Premium)](managing-jobs-ediscovery20.md)
 
 ### <a name="step-4-optional-compliance-boundaries"></a>Étape 4 (facultative) : [limites de conformité](set-up-compliance-boundaries.md)
 
@@ -266,7 +266,7 @@ Définissez des limites de conformité pour les enquêtes eDiscovery :
 
 Utilisez l'outil de recherche de contenu dans le portail de conformité Microsoft Purview pour rechercher rapidement des e-mails dans les boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, et des conversations de messagerie instantanée dans Skype Entreprise. Vous pouvez utiliser l'outil de recherche de contenu pour rechercher des e-mails, des documents et des conversations de messagerie instantanée dans des outils de collaboration tels que Microsoft Teams et Microsoft 365 Groups.
 
-- [En savoir plus sur la recherche eDiscovery avancée](search-for-content.md#search-for-content)
+- [En savoir plus sur la recherche de la découverte électronique (Premium)](search-for-content.md#search-for-content)
 
 ## <a name="information-protection"></a>Protection des informations
 

@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: e14c438858d5e57dca6ecab0573014171a0c6fb7
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 5c9a88b27814b89077a013b03d25b4d53ef3f125
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783312"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972063"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -60,7 +62,7 @@ Avec ces deux actions de rétention, vous pouvez configurer les paramètres de r
 
 Ces paramètres de rétention fonctionnent avec du contenu en place, ce qui vous permet d’éviter les charges liées à la création et à la configuration d’un espace de stockage supplémentaire pour conserver du contenu pour des raisons de conformité. Vous n’avez plus besoin non plus d’implémenter des processus personnalisés pour copier et synchroniser ces données.
 
-Utilisez ces sections pour en savoir plus sur le fonctionnement des stratégies de rétention et des étiquettes de rétention, le moment de leur utilisation, et comment elles se complètent. Toutefois, si vous êtes prêt à commencer et à déployer des paramètres de rétention pour certains scénarios courants, consultez [Démarrage avec la gouvernance des informations](get-started-with-information-governance.md).
+Utilisez ces sections pour en savoir plus sur le fonctionnement des stratégies de rétention et des étiquettes de rétention, le moment de leur utilisation, et comment elles se complètent. Toutefois, si vous êtes prêt à commencer et à déployer des paramètres de rétention pour certains scénarios courants, consultez [Démarrage avec la gestion du cycle de vie des données](get-started-with-data-lifecycle-management.md).
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>Fonctionnement des paramètres de rétention avec le contenu en place
 
@@ -172,7 +174,7 @@ Par exemple, vous pouvez créer et appliquer une étiquette de rétention appel�
 
 #### <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Utilisation d’une étiquette de rétention comme condition dans une stratégie DLP
 
-Vous pouvez spécifier une étiquette de rétention comme condition dans une stratégie de protection contre la perte de données (DLP) pour les documents dans SharePoint. Par exemple, vous pouvez configurer une stratégie DLP pour empêcher le partage de documents hors de l’organisation si une étiquette de rétention spécifique leur est appliquée.
+Vous pouvez spécifier une étiquette de rétention comme condition dans une stratégie de protection contre la perte de données (DLP) de Microsoft Purview pour les documents dans SharePoint. Par exemple, vous pouvez configurer une stratégie DLP pour empêcher le partage de documents hors de l’organisation si une étiquette de rétention spécifique leur est appliquée.
 
 Pour plus d’informations, consultez [Utilisation d’une étiquette de rétention comme condition dans une stratégie DLP](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
 
@@ -227,7 +229,7 @@ Lorsque les étiquettes de rétention indiquent des éléments sous la forme d�
 
 #### <a name="monitoring-retention-labels"></a>Contrôle des étiquettes de conservation
 
-Dans le Centre de conformité Microsoft 365, sélectionnez **Classification des données** et la page **Vue d’ensemble** pour surveiller la façon dont vos étiquettes de rétention sont utilisées dans votre locataire et identifier l’emplacement où se trouvent vos éléments étiquetés. Pour plus d’informations, notamment les conditions préalables, voir [En savoir plus sur la classification des données](data-classification-overview.md).
+Dans le Portail de conformité Microsoft Purview, sélectionnez **Classification des données** et la page **Vue d’ensemble** pour surveiller la façon dont vos étiquettes de rétention sont utilisées dans votre locataire et identifier l’emplacement où se trouvent vos éléments étiquetés. Pour plus d’informations, notamment les conditions préalables, voir [En savoir plus sur la classification des données](data-classification-overview.md).
 
 Vous pouvez ensuite approfondir vos informations à l’aide de [Explorateur de contenu](data-classification-content-explorer.md) et l’[explorateur d'activités](data-classification-activity-explorer.md).
 
@@ -358,11 +360,13 @@ Pour regarder un webinaire enregistré (nécessite une inscription), visitez [De
 
 ## <a name="policy-lookup"></a>Recherche de la stratégie
 
-Vous pouvez configurer plusieurs stratégies de rétention pour Microsoft 365 de rétention, ainsi que plusieurs stratégies d’étiquette de rétention que vous publiez ou appliquez automatiquement. Pour rechercher les stratégies de rétention affectées à des utilisateurs, **des sites et des groupes Microsoft 365 spécifiques**, utilisez la recherche de stratégie à partir de la **solution** de gouvernance des informations dans la Centre de conformité Microsoft 365 :
+Vous pouvez configurer plusieurs stratégies de rétention pour Microsoft 365 de rétention, ainsi que plusieurs stratégies d’étiquette de rétention que vous publiez ou appliquez automatiquement. Pour trouver les stratégies de rétention qui sont attribuées à des utilisateurs, des sites et des groupes Microsoft 365 spécifiques, utilisez la **recherche de stratégies** à partir des **solutions de gestion du cycle de vie des données** ou de **gestion des enregistrements** dans le portail de conformité Microsoft Purview.
+
+Par exemple :
 
 ![Recherche de stratégie pour rechercher les stratégies de rétention affectées à des utilisateurs, sites et groupes Microsoft 365 spécifiques ](../media/policy-lookup.png)
 
-Vous devez spécifier l’adresse e-mail exacte d’un utilisateur, l’URL exacte d’un site ou l’adresse e-mail exacte de Microsoft 365 groupe.
+Vous devez spécifier l’adresse e-mail exacte d’un utilisateur, l’URL exacte d’un site ou l’adresse e-mail exacte de Microsoft 365 groupe. Vous ne pouvez pas utiliser de caractères génériques, ni de correspondances partielles, par exemple.
 
 L'option pour les sites inclut les comptes OneDrive. Pour savoir comment spécifier l'URL du compte OneDrive d'un utilisateur, consultez la section [Obtenir une liste de toutes les URL OneDrive des utilisateurs dans votre organisation](/onedrive/list-onedrive-urls).
 
@@ -575,9 +579,9 @@ Pour utiliser les applets de commande, vous devez tout d’abord [vous connecter
 
 Bien que les paramètres de rétention et [les conservations que vous créez avec un cas eDiscovery](create-ediscovery-holds.md) peuvent empêcher la suppression définitive de données, ils sont conçus pour des scénarios différents. Pour comprendre les différences et faire votre choix, suivez ces instructions:
 
-- Les paramètres de rétention que vous spécifiez dans les stratégies et les étiquettes de rétention sont conçus pour une stratégie de gestion des informations à long terme pour la conservation ou la suppression des données pour les exigences de conformité. L’étendue est généralement large, avec l’emplacement et le contenu comme focus principal plutôt que les utilisateurs individuels. Le début et la fin de la période de rétention sont configurables, avec l’option de suppression automatique de contenu sans intervention supplémentaire de l’administrateur.
+- Les paramètres de rétention que vous spécifiez dans les stratégies et les étiquettes de rétention sont conçus pour une stratégie de gestion des données à long terme pour la rétention ou la suppression des données pour les exigences de conformité. L’étendue est généralement large, avec l’emplacement et le contenu comme focus principal plutôt que les utilisateurs individuels. Le début et la fin de la période de rétention sont configurables, avec l’option de suppression automatique de contenu sans intervention supplémentaire de l’administrateur.
 
-- Les conservations eDiscovery (Core eDiscovery ou Advanced eDiscovery) sont conçues pour une durée limitée afin de conserver les données pour une investigation juridique. L’étendue est spécifique avec le contenu des utilisateurs identifiés comme focus. Le début et la fin de la période de conservation ne sont pas configurables, mais dépendent d’actions d’administrateur individuelles, sans option de suppression automatique de contenu lorsque la conservation est libérée.
+- Les mises en suspens pour la découverte électronique (soit les cas de la découverte électronique (Standard) ou de la découverte électronique (Premium)) sont conçues pour une durée limitée afin de préserver les données pour une enquête légale. L’étendue est spécifique avec le contenu des utilisateurs identifiés comme focus. Le début et la fin de la période de conservation ne sont pas configurables, mais dépendent d’actions d’administrateur individuelles, sans option de suppression automatique de contenu lorsque la conservation est libérée.
 
 Synthèse de la comparaison de la rétention et des conservations:
 
@@ -590,7 +594,7 @@ Synthèse de la comparaison de la rétention et des conservations:
 |Suppression de contenu: |Oui (facultatif) |Non |
 |Frais généraux d’administration: |Faible |Élevé |
 
-Si le contenu est soumis à la fois aux paramètres de rétention et à une conservation eDiscovery, la conservation eDiscovery est prioritaire pour la préservation du contenu. De cette façon, les [principes de rétention](#the-principles-of-retention-or-what-takes-precedence) s’élargissent aux conservations eDiscovery parce qu’ils préservent les données jusqu’à ce qu’un administrateur libère manuellement la conservation. Cependant, malgré cette priorité, n’utilisez pas les conservations eDiscovery pour la gestion des informations à long terme. Si vous vous préoccupez de la suppression automatique des données, vous pouvez configurer les paramètres de rétention pour conserver les éléments indéfiniment, ou utiliser [révision des suppressions](disposition.md#disposition-reviews) avec les étiquettes de rétention.
+Si le contenu est soumis à la fois aux paramètres de rétention et à une conservation eDiscovery, la conservation eDiscovery est prioritaire pour la préservation du contenu. De cette façon, les [principes de rétention](#the-principles-of-retention-or-what-takes-precedence) s’élargissent aux conservations eDiscovery parce qu’ils préservent les données jusqu’à ce qu’un administrateur libère manuellement la conservation. Cependant, malgré cette priorité, n’utilisez pas les rétentions de la découverte électronique pour la gestion du cycle de vie des données à long terme. Si vous vous préoccupez de la suppression automatique des données, vous pouvez configurer les paramètres de rétention pour conserver les éléments indéfiniment, ou utiliser [révision des suppressions](disposition.md#disposition-reviews) avec les étiquettes de rétention.
 
 Si vous utilisez des outils eDiscovery plus anciens pour conserver les données, consultez ces ressources:
 
@@ -605,7 +609,7 @@ Si vous utilisez des outils eDiscovery plus anciens pour conserver les données,
 
 ## <a name="use-retention-policies-and-retention-labels-instead-of-older-features"></a>Utilisez des stratégies et étiquettes de rétention plutôt que les anciennes fonctionnalités
 
-Si, dans le cadre de la gouvernance des informations, vous avez besoin de conserver ou de supprimer proactivement du contenu dans Microsoft 365, nous vous recommandons d’utiliser les stratégies de rétention et les étiquettes de rétention plutôt que les anciennes fonctionnalités suivantes.
+Si, dans le cadre de la gestion du cycle de vie des données, vous avez besoin de conserver ou de supprimer proactivement du contenu dans Microsoft 365, nous vous recommandons d’utiliser les stratégies de rétention et les étiquettes de rétention plutôt que les anciennes fonctionnalités suivantes.
 
 Si vous utilisez actuellement ces fonctionnalités, elles continueront de fonctionner parallèlement à Microsoft 365 aux stratégies et étiquettes de rétention. Toutefois, nous vous recommandons d’utiliser à l’avenir, Microsoft 365 des stratégies et des étiquettes de rétention pour tirer parti d’une solution unique afin de gérer la rétention et la suppression de contenu sur plusieurs charges de travail dans Microsoft 365.
 
@@ -638,9 +642,9 @@ Si vous avez configuré des sites SharePoint pour des stratégies de type de con
 ## <a name="related-information"></a>Informations connexes
 
 - [Limites de SharePoint Online](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
-- [Limites et spécifications de Microsoft Teams](/microsoftteams/limits-specifications-teams)
-- [Ressources pour vous aider à respecter les réglementations en matière de gouvernance des informations et de gestion des enregistrements](retention-regulatory-requirements.md)
+- [Limites et spécifications de Microsoft Teams](/microsoftteams/limits-specifications-teams) 
+- [Ressources pour vous aider à répondre aux exigences réglementaires en matière de gestion du cycle de vie des données et de gestion des dossiers](retention-regulatory-requirements.md)
 
 ## <a name="configuration-guidance"></a>Instructions de configuration
 
-Voir [Démarrez avec la gouvernance de l'information](get-started-with-information-governance.md). Cet article contient des informations sur les abonnements et les autorisations, ainsi que des liens vers des conseils de configuration de bout en bout pour les scénarios de conservation.
+Afficher [Démarrez avec la gestion du cycle de vie des données](get-started-with-data-lifecycle-management.md). Cet article contient des informations sur les abonnements et les autorisations, ainsi que des liens vers des conseils de configuration de bout en bout pour les scénarios de rétention.

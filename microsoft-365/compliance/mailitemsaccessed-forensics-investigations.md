@@ -1,5 +1,5 @@
 ---
-title: Utiliser l’audit avancé pour analyser des comptes compromis
+title: Utiliser l’audit (Premium) pour analyser des comptes compromis
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez l’action d’audit de boîte aux lettres MailItemsAccessed pour effectuer des enquêtes légales sur des comptes d'utilisateur compromis.
-ms.openlocfilehash: 8bfba164bf3bfb0f4fa4bea687d0fe040cff4836
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 658a4b079bd7909f8436867efd86d3ac04d61aa2
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806023"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64946196"
 ---
-# <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Utiliser l’audit avancé pour analyser des comptes compromis
+# <a name="use-microsoft-purview-audit-premium-to-investigate-compromised-accounts"></a>Utiliser l’audit (Premium) Microsoft Purview pour examiner les comptes compromis
 
 Un compte d’utilisateur compromis (également appelé *prise de contrôle de compte*) est un type d’attaque permettant à une personne malveillante d’accéder à un compte utilisateur et d'agir à sa place. Ces types d’attaques peuvent parfois occasionner des dommages plus importants que ceux que la personne malveillante a initialement prévu. Lors de l'analyse de comptes de messagerie compromis, considérez que beaucoup plus de données de courrier sont compromises par rapport à ce qui peut être indiqué en suivant la présence réelle de l’attaquant. Selon le type de données figurant dans les messages électroniques, vous devez supposer que les informations sensibles ont été compromises, ou font face à des sanctions pour infraction à un règlement, sauf si vous pouvez prouver que les informations sensibles n’ont pas été exposées. Par exemple, les organisations réglementées par le HIPAA sont confrontées à des amendes importantes s’il s'avère que des informations sur la santé des patients ont été exposées. Dans ces cas, il est peu probable que les personnes malveillantes s'intéressent aux dossiers contenant des renseignements médicaux protégés (PHI), mais les organisations doivent tout de même signaler les violations de données, sauf si elles peuvent prouver le cas contraire.
 
@@ -31,7 +31,7 @@ Pour faciliter votre enquête sur des comptes de courrier compromis, nous audito
 
 ## <a name="the-mailitemsaccessed-mailbox-auditing-action"></a>Action d’audit de boîte aux lettres MailItemsAccessed
 
-La nouvelle action fait partie de la nouvelle fonctionnalité [Advanced Audit](advanced-audit.md) Il fait partie de [la boîte aux lettres Exchange Online](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions)et est activée par défaut pour les utilisateurs auxquels une licence Office 365 ou Microsoft 365 E5 est attribuée, ou pour les organisations disposant d’un abonnement au module complémentaire de conformité Microsoft 365 E5.
+La nouvelle action MailItemsAccessed fait partie de la nouvelle fonctionnalité [Audit (Premium)](advanced-audit.md). Il fait partie de l’[audit de boîte aux lettres Exchange ](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions)et est activé par défaut pour les utilisateurs auxquels une licence Office 365 ou Microsoft 365 E5 est attribuée, ou pour les organisations disposant d’un abonnement au module complémentaire de conformité Microsoft 365 E5.
 
 L’action d’audit de boîte aux lettres MailItemsAccessed englobe tous les protocoles de messagerie : POP, IMAP, MAPI, EWS, Exchange ActiveSync et REST. Il prend en charge également les deux types d’accès aux courriers : *synchronisation* et *liaison*.
 

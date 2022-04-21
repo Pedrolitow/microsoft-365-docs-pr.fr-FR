@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Pour les administrateurs : apprenez comment utiliser le chargement réseau pour importer en bloc plusieurs fichiers PST dans les boîtes aux lettres d’utilisateur de Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8d63b83f8052fdd3ce973bba15df72ee4c7d6989
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 10a0b2e076c3a8d4fc6910e16ba89c3ce75d2d2d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935432"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999803"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Utilisez le chargement réseau pour importer les fichiers PST de votre organisation dans Microsoft 365
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > Cet article s’adresse aux administrateurs. Vous souhaitez importer des fichiers PST dans votre propre boîte aux lettres ? Consultez la rubrique [Importer le courrier électronique, les contacts et le calendrier à partir d’un fichier .pst Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)
@@ -136,13 +138,13 @@ Vous êtes maintenant prêt à utiliser l’outil AzCopy pour charger des fichie
     > [!IMPORTANT]
     > Vous pouvez spécifier un répertoire ou un emplacement de stockage Azure comme emplacement source dans la commande précédente ; vous ne pouvez pas spécifier un fichier PST individuel. Tous les fichiers PST de l’emplacement source seront chargés.
 
-    Le tableau suivant décrit les champs azcopy.exe et leurs valeurs requises. Les informations que vous avez obtenues à l’étape précédente sont utilisées dans les valeurs de ces champs.
+    Le tableau suivant décrit les champs de azcopy.exe et leurs valeurs requises. Les informations que vous avez obtenues à l'étape précédente sont utilisées dans les valeurs de ces champs.
 
     | Field | Description |
     |:-----|:-----|
     | Source |Le premier champ spécifie le répertoire source de votre organisation qui contient les fichiers PST qui seront chargés dans Microsoft 365. Vous pouvez également spécifier un emplacement de stockage Azure comme emplacement source des fichiers PST à charger. <br/> Veillez à entourer la valeur de ce champ de guillemets doubles ( » « ).  <br/> <br/>**Exemples** : <br/>`"\\FILESERVER01\PSTs"` <br/> Ou  <br/>`"https://storageaccountid.blob.core.windows.net/PSTs?sp=racwdl&st=2021-09-21T07:25:53Z&se=2021-09-21T15:25:53Z&sv=2020-08-04&sr=c&sig=xxxxxx"`|  
     | Destination |Indique l’URL de SAS obtenue à l’étape 1.  <br/> N’oubliez pas de placer la valeur de ce paramètre entre guillemets doubles (" ").<br/><br/>**Remarque :** Si vous utilisez l’URL de SAS dans un script ou un fichier de commandes, faites attention à certains caractères qui doivent être placés dans une séquence d’échappement. Par exemple, vous devez modifier `%` en `%%` et remplacer `&` par `^&`.<br/><br/>**Astuce :** (facultatif) vous pouvez spécifier un sous-dossier dans l’emplacement de stockage Azure dans lequel charger les fichiers PST. Pour ce faire, vous devez ajouter un emplacement de sous-dossier (après « ingestiondata ») dans l’URL de SAS. Le premier exemple ne spécifie pas un sous-dossier. Cela signifie que les fichiers PST sont chargés dans la racine (nommée *ingestiondata* ) de l’emplacement de stockage Azure. Le deuxième exemple charge les fichiers PST dans un sous-dossier (nommé  *PSTFiles*) dans la racine de l’emplacement de stockage Azure.  <br/><br/>**Exemples** : <br/> `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> Ou  <br/>  `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
-    | `--recursive` |Cet indicateur facultatif spécifie le mode récursif afin que l’outil AzCopy copie les fichiers PST situés dans des sous-dossiers dans le répertoire source spécifié par le champ source. La valeur par défaut de cet indicateur est `true`. <br/>**Remarque :** Si vous incluez cet indicateur, les fichiers PST dans les sous-dossiers ont un nom de chemin d’accès de fichier différent dans l’emplacement stockage Azure après leur chargement. Vous devrez spécifier le chemin d’accès exact dans le fichier CSV créé à l’étape 4.|
+    | `--recursive` |Cet indicateur facultatif spécifie le mode récursif afin que l’outil AzCopy copie les fichiers PST situés dans des sous-dossiers dans le répertoire source spécifié par le champ source. La valeur par défaut de cet indicateur est `true`. <br/>**Remarque :** Si vous incluez cet indicateur, les fichiers PST dans les sous-dossiers auront un nom de chemin d’accès différent dans l'emplacement de stockage Microsoft Azure après leur téléchargement. Vous devrez spécifier le nom exact du chemin d'accès au fichier dans le fichier CSV que vous créez à l'étape 4.|
     | `--s2s-preserve-access-tier` | Cet indicateur facultatif n’est requis que lorsque l’emplacement source est un emplacement de stockage Azure v2 universel qui prend en charge les niveaux d’accès. Pour le scénario d’importation PST, il n’est pas nécessaire de conserver le niveau d’accès lorsque vous copiez des fichiers PST à partir de votre compte de stockage Azure vers l’emplacement de stockage Azure fourni par Microsoft. Dans ce cas, vous pouvez inclure cet indicateur et utiliser une valeur de `false`. Vous n’avez pas besoin d’utiliser cet indicateur lors de la copie de fichiers PST à partir d’un compte de stockage Azure classique, qui ne prend pas en charge les niveaux d’accès.|
    |||
 

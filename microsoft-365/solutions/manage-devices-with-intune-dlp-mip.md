@@ -21,17 +21,17 @@ ms.collection:
 ms.custom: ''
 keywords: ''
 description: Implémentez le point de terminaison DLP en travaillant avec votre équipe de protection et de gouvernance d’information pour créer des stratégies DLP pour votre organisation.
-ms.openlocfilehash: ab0be14f0a20f35044489e7f3ad0ba3f60180bcd
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 3670dd7e204562d2974ae815babe541c608bfacf
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705190"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64943214"
 ---
 # <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>Étape 7. Implémenter la protection contre la perte de données (DLP) avec des fonctionnalités de protection des informations
 
 
-Si votre organisation utilise la protection des données Microsoft 365 et a déjà pris le temps nécessaire à la compréhension de vos données, au développement d’un schéma de confidentialité des données et à l’application du schéma, vous pouvez être prêt à étendre les éléments de ce schéma aux points de terminaison à l’aide de stratégies de protection contre la perte de données (DLP). 
+Si votre organisation a déjà mis le temps nécessaire à la compréhension de vos données, au développement d’un schéma de confidentialité des données et à l’application du schéma, vous pouvez être prêt à étendre les éléments de ce schéma aux points de terminaison à l’aide de stratégies de protection contre la perte de données (DLP) Microsoft Purview. 
 
 La protection contre la perte de données des points de terminaison Microsoft (Endpoint DLP) s’applique actuellement aux éléments suivants :
 - Windows 10, Windows 11
@@ -53,6 +53,6 @@ Utilisez les étapes suivantes pour travailler avec votre équipe de protection 
 
 |Étape  |Description  |
 |---------|---------|
-|1     |  [En savoir plus sur Microsoft 365 protection contre la perte de données de point de terminaison](../compliance/endpoint-dlp-learn-about.md)        |
-|2     | Intégrer des appareils pour la DLP de point de terminaison. Si vous avez intégré des appareils à Microsoft Defender pour point de terminaison, vos appareils sont déjà activés pour la Conformité Microsoft 365, notamment la DLP de point de terminaison. Si vos appareils ne sont pas intégrés à Defender pour point de terminaison, consultez [Démarrage de la protection contre la perte de données de point de terminaison](../compliance/endpoint-dlp-getting-started.md) pour obtenir des instructions. Pour plus d’informations sur le fonctionnement de l’intégration, voir [Inscription d’appareils et intégration d’appareils](manage-devices-with-intune-overview.md#enrolling-devices-vs-onboarding-devices)|
+|1     |  [En savoir plus sur les points de terminaison de protection contre la perte de données](../compliance/endpoint-dlp-learn-about.md).        |
+|2     | Activez des appareils pour point de terminaison DLP. Si vous avez intégré des appareils à Microsoft Defender pour point de terminaison, vos appareils sont déjà activés pour point de terminaison DLP. Si vos appareils ne sont pas intégrés à Defender pour point de terminaison, consultez [Démarrage de la protection contre la perte de données de point de terminaison](../compliance/endpoint-dlp-getting-started.md) pour obtenir des instructions.|
 |3     |   Travaillez avec votre équipe de protection et de gouvernance des informations pour définir, tester et régler des stratégies. Cela inclut la surveillance des résultats. Consultez les ressources suivantes :<br>- [Utilisation de la protection contre la perte de données de point de terminaison](../compliance/endpoint-dlp-using.md)<br>- [View the reports for data loss prevention](../compliance/view-the-dlp-reports.md)      |

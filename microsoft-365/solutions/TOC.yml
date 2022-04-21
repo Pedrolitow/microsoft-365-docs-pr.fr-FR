@@ -147,9 +147,9 @@
               href: tenant-management-overview.md
             - name: Étape 1. Vos clients
               href: tenant-management-tenants.md
-            - name: Étape 2. Mise en réseau optimale
+            - name: "Étape\_2. Mise en réseau optimale"
               href: tenant-management-networking.md
-            - name: "Étape\_3. Identité"
+            - name: Étape 3. Identité
               href: tenant-management-identity.md
             - name: Étape 4. Migration
               href: tenant-management-migration.md
@@ -193,7 +193,7 @@
               href: deploy-voice.md
             - name: 'Étape 1. Choisissez votre solution vocale :'
               href: /MicrosoftTeams/cloud-voice-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Étape 2. - Configurer le système téléphonique
+            - name: "Étape\_2. - Configurer le système téléphonique"
               href: /MicrosoftTeams/setting-up-your-phone-system?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Étape 3. - Configurer la connectivité RTC
               items:
@@ -236,7 +236,7 @@
               href: ../contentunderstanding/solution-manage-contracts-in-microsoft-365.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Étape 1. Utiliser SharePoint Syntex
               href: ../contentunderstanding/solution-manage-contracts-step1.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Étape 2. Utiliser Microsoft Teams.
+            - name: "Étape\_2. Utiliser Microsoft Teams."
               href: ../contentunderstanding/solution-manage-contracts-step2.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Étape 3. Power Automate
               href: ../contentunderstanding/solution-manage-contracts-step3.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
@@ -306,13 +306,13 @@
           href: /onedrive/plan-onedrive-enterprise
     - name: Conformité
       items:
-        - name: Solutions de risque interne dans Microsoft 365
+        - name: Solutions de risque interne dans Microsoft Purview
           href: ../compliance/insider-risk-solution-overview.md
         - name: Solutions d’audit
           href: ../compliance/auditing-solutions-overview.md
         - name: Solutions eDiscovery dans Microsoft 365
           href: ../compliance/ediscovery.md
-        - name: Microsoft 365 advanced eDiscovery
+        - name: Microsoft Purview eDiscovery (Premium)
           href: ../compliance/overview-ediscovery-20.md
         - name: Plans d’action de conformité aux réglementations
           items:

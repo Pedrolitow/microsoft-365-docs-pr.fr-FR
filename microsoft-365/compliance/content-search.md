@@ -1,5 +1,5 @@
 ---
-title: Créer et exécuter une recherche de contenu dans le Centre de conformité Microsoft 365
+title: Créer et exécuter une recherche de contenu dans le portail de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,16 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Utilisez l'outil eDiscovery de recherche de contenu dans le centre de conformité pour rechercher du contenu dans différents services Microsoft 365.
-ms.openlocfilehash: 68270466625cc5f9b76359ae7697536956c727aa
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 374a9ce119c0e4563c14ae4eda15ce562dc8643d
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643383"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938376"
 ---
 # <a name="create-a-content-search"></a>Créer une recherche de contenu
 
-Vous pouvez utiliser l'outil de recherche de contenu eDiscovery dans le Centre de conformité Microsoft 365 pour rechercher du contenu en place tels que des e-mails, des documents et des conversations de messagerie instantanée dans votre organisation. Utilisez cet outil pour rechercher du contenu dans ces sources de données basées sur le cloud de Microsoft 365 :
+Vous pouvez utiliser l'outil de recherche de contenu eDiscovery dans le portail de conformité Microsoft Purview pour rechercher du contenu en place tels que des e-mails, des documents et des conversations de messagerie instantanée dans votre organisation. Utilisez cet outil pour rechercher du contenu dans ces sources de données basées sur le cloud de Microsoft 365 :
   
 - Echange de boîtes aux lettres en ligne
 
@@ -46,7 +46,7 @@ Après avoir exécuté une recherche, le nombre d’emplacements de contenu et l
 
 ## <a name="before-you-run-a-search"></a>Avant d’exécuter une recherche
 
-- Pour accéder à l’outil Recherche de contenu dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> (afin d’exécuter des recherches, de prévisualiser les résultats et d’exporter les résultats), un administrateur, un responsable de la conformité ou un gestionnaire eDiscovery doit être membre du groupe de rôles eDiscovery Manager dans le Centre de conformité Microsoft 365 . Pour plus d'informations, consultez [Attribuer des autorisations de découverte électronique](assign-ediscovery-permissions.md).
+- Pour accéder à l’outil Recherche de contenu dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité</a> (afin d’exécuter des recherches, de prévisualiser les résultats et d’exporter les résultats), un administrateur, un responsable de la conformité ou un gestionnaire eDiscovery doit être membre du groupe de rôles Gestionnaire eDiscovery dans le portail de conformité . Pour plus d'informations, consultez [Attribuer des autorisations](assign-ediscovery-permissions.md).
 
 - Dans un déploiement Exchange hybride, vous ne pouvez pas utiliser l’outil de recherche de contenu pour rechercher des boîtes aux lettres sur site. Vous pouvez uniquement utiliser l’outil pour rechercher des boîtes mail dans le cloud.
 
@@ -54,7 +54,7 @@ Après avoir exécuté une recherche, le nombre d’emplacements de contenu et l
   
 1. Accédez à <https://compliance.microsoft.com> et connectez-vous à l’aide des informations d’identification d’un compte avec les autorisations appropriées.
 
-2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Recherche de contenu**.
+2. Dans le volet de navigation gauche du portail de conformité, cliquez sur **Recherche de contenu**.
 
 3. Sur la **page de recherche** de contenu, cliquez **sur Nouvelle recherche**.
 
