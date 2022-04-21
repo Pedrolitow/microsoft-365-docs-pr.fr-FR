@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Dans cet article, vous allez découvrir les meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés.
-ms.openlocfilehash: ca6b75ba036aac826d657c8c907b512fe9d1f87a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 43db59e0380f99a2312fd803970a73013445504a
+ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948372"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65015043"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés
 
@@ -47,6 +47,8 @@ Pour définir une date d’expiration pour les liens Tout le monde dans l’orga
 1. Sous **Sélectionnez les options d’expiration et d’autorisations pour tous les liens**, sélectionnez la case à cocher **Ces liens doivent expirer dans ce nombre de jours**.</br>
    ![Capture d’écran des paramètres d’expiration du lien Tout le monde au niveau de l’organisation dans Microsoft Office SharePoint Online.](../media/sharepoint-organization-anyone-link-expiration.png)
 1. Tapez un nombre de jours dans la zone, puis cliquez sur **Enregistrer**.
+
+Si vous modifiez l’heure d’expiration, les liens existants conservent leur heure d’expiration actuelle si le nouveau paramètre est plus long ou sont mis à jour vers le nouveau paramètre si le nouveau paramètre est plus court.
 
 Pour définir une date d’expiration pour les liens Tout le monde sur un site spécifique
 

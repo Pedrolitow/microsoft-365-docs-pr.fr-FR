@@ -19,16 +19,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à mettre en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: adc939d44715bcfaeb97cdbfa530f55a5aeecd4e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3f163c19cfd6e627887f0e34b81bc99d2e86cb6c
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322084"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971041"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Pour en savoir plus sur les étiquettes de confidentialité et la façon dont elles peuvent vous aider à protéger les données de votre organisation, voir [Plus d'informations sur les étiquettes de confidentialité](sensitivity-labels.md).
 
@@ -45,7 +47,7 @@ Lorsque vous êtes prêt à protéger les données de votre organisation en util
 3. **Publiez les étiquettes.** Après avoir configuré vos étiquettes de confidentialité, publiez-les à l’aide d’une stratégie d’étiquette. Déterminez les utilisateurs et les groupes devant utiliser les étiquettes ainsi que les paramètres de stratégie à utiliser. Une étiquette unique est réutilisable : vous la définissez une fois, puis vous l’incluez dans plusieurs stratégies d’étiquette affectées à différents utilisateurs. Par exemple, vous pouvez piloter vos étiquettes de confidentialité en attribuant une stratégie d’étiquette à quelques utilisateurs seulement. Lorsque vous êtes prêt à déployer les étiquettes dans votre organisation, vous pouvez créer une nouvelle stratégie d’étiquette pour vos étiquettes et spécifier cette fois tous les utilisateurs.
 
 
-> Vous pouvez être éligible à la création automatique d’étiquettes par défaut et à une stratégie d’étiquette par défaut qui s’occupe des étapes 1 à 3 à votre place. Pour plus d’informations, voir [Étiquettes et stratégies par défaut pour Microsoft Information Protection](mip-easy-trials.md).
+> Vous pouvez être éligible à la création automatique d’étiquettes par défaut et à une stratégie d’étiquette par défaut qui s’occupe des étapes 1 à 3 à votre place. Pour plus d'informations, voir [Étiquettes et politiques par défaut pour Microsoft Purview Information Protection](mip-easy-trials.md).
 
 Flux de base pour le déploiement et l'application d'étiquettes de confidentialité :
 
@@ -55,11 +57,11 @@ Flux de base pour le déploiement et l'application d'étiquettes de confidential
 
 Différents abonnements prennent en charge les étiquettes de confidentialité et les conditions requises pour les licences des utilisateurs dépendent des fonctionnalités utilisées.
 
-Pour afficher les options de licence permettant à vos utilisateurs de bénéficier des fonctionnalités de conformité de Microsoft 365, voir les [Conseils de licence Microsoft 365 pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Pour les étiquettes de niveau de sensibilité, consultez la section [Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-sensitivity-labeling) des informations : étiquetage de la sensibilité et téléchargement [PDF](https://go.microsoft.com/fwlink/?linkid=2139145) associé pour les exigences de licence au niveau des fonctionnalités.
+Pour afficher les options de licence permettant à vos utilisateurs de bénéficier des fonctionnalités de conformité de Microsoft Purview, affichez les [Conseils de licence Microsoft 365 pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Pour les étiquettes de confidentialité, voir la section [Microsoft Purview Information Protection : Sensitivity labeling](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-information-protection-sensitivity-labeling) et le [téléchargement PDF](https://go.microsoft.com/fwlink/?linkid=2139145) associé pour les exigences de licence au niveau des fonctionnalités.
 
 ## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>Autorisations nécessaires pour la création et la gestion d'étiquettes de confidentialité
 
-Les membres de votre équipe de conformité qui vont créer des étiquettes de confidentialité ont besoin d’autorisations sur le Centre de conformité Microsoft 365.
+Les membres de votre équipe de conformité qui créeront des étiquettes de confidentialité ont besoin d’autorisations sur le portail de conformité Microsoft Purview.
 
 Par défaut, les administrateurs généraux de votre client ont accès à ce centre d’administration et pourront accorder l’accès aux responsables de la conformité et à d’autres personnes sans leur octroyer toutes les autorisations d’un administrateur de client. Pour accorder cet accès administrateur délégué limité, ajoutez des utilisateurs au groupe de rôles **Administrateur des données de conformité**, **Administrateur de la conformité** ou **Administrateur de la sécurité**. 
 
@@ -73,9 +75,9 @@ Au lieu d'utiliser les rôles par défaut, vous pouvez créer un groupe de rôle
 > - **Enquêteurs Information Protection**
 > - **Lecteurs Information Protection**
 >
-> Pour une explication de chacun d'eux et des nouveaux rôles qu'ils contiennent, sélectionnez un groupe de rôles dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">centre de conformité Microsoft 365</a> > **Permissions et rôles** > **Centre de conformité** > **Rôles**, puis consultez la description dans le volet volant. Ou, voir [Groupes de rôles dans le centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center).
+> Pour une explication de chacun d'eux et les nouveaux rôles qu'ils contiennent, sélectionnez un groupe de rôles dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a> > **Permissions et rôles** > **Centre de conformité** > **Rôles**, puis consultez la description dans le volet volant. Ou, voir [Groupes de rôles dans le centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center).
 
-Pour obtenir des instructions pour ajouter des utilisateurs au groupe de rôles, rôles par défaut ou créer vos propres groupes de rôles, consultez [Autorisations dans le Centre de conformité Microsoft 365](microsoft-365-compliance-center-permissions.md).
+Pour obtenir des instructions pour ajouter des utilisateurs au groupe de rôles par défaut, rôles ou créer vos propres groupes de rôles, consultez [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 Ces autorisations sont seulement nécessaires pour créer et configurer des étiquettes de confidentialité et leurs stratégies d’étiquette. Elles ne sont pas requises pour l'application d'étiquettes dans des applications ou des services. Si d’autres autorisations sont nécessaires pour des configurations spécifiques liées aux étiquettes de confidentialité, celles-ci sont répertoriées dans les instructions de documentation qui leur sont propres.
 
@@ -83,8 +85,6 @@ Ces autorisations sont seulement nécessaires pour créer et configurer des éti
 Une stratégie réussie pour le déploiement d’étiquettes de confidentialité d’une organisation consiste à créer une équipe opérationnelle virtuelle qui identifie et gère les exigences professionnelles et techniques, les épreuves de vérification technique, les points de contrôle internes et les approbations, ainsi que les déploiements finaux pour l’environnement de production.
 
 En utilisant le tableau de la section suivante, nous vous recommandons d’identifier un ou deux de vos principaux scénarios correspondant aux besoins d’entreprise qui ont le plus d’impact. Une fois ces scénarios déployés, revenez à la liste pour identifier une ou deux prochaines priorités pour le déploiement.
-
-Vous trouverez des conseils supplémentaires de déploiement général et les meilleures pratiques dans le [Guide d’accélération du déploiement pour Microsoft Information Protection et la protection contre la perte de données](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/), l’une des ressources du site [Customer Acceleration Team (CAT)](https://microsoft.github.io/ComplianceCxE/).
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>Scénarios courants relatifs aux étiquettes de confidentialité
 
@@ -108,8 +108,7 @@ Dans tous les scénarios, vous devez [Créer et configurer des étiquettes de co
 |Appliquer et afficher les étiquettes dans Power BI, et protéger les données lorsqu’elles sont enregistrées en dehors du service.|[Étiquettes de confidentialité dans Power BI](/power-bi/admin/service-security-sensitivity-label-overview)|
 |Surveiller et comprendre la manière dont les étiquettes de confidentialité sont utilisées dans mon organisation|[En savoir plus sur la classification des données](data-classification-overview.md)|
 |Étendre les étiquettes de confidentialité à des applications et services tiers|[Kit de développement logiciel (SDK) de Microsoft Information Protection](/information-protection/develop/overview#microsoft-information-protection-sdk)|
-|Étendre les étiquettes de confidentialité sur le contenu de mes ressources Azure Purview, telles que Stockage Blob Azure, Azure Files, Azure Data Lake Storage et les sources de données multi-cloud|[Étiquetage dans Azure Purview](/azure/purview/create-sensitivity-label) |
-
+|Étendre les étiquettes de confidentialité sur le contenu de mes ressources Microsoft Purview Data Map, telles que Azure Blob Storage, Azure Files, Azure Data Lake Storage et les sources de données multi-cloud|[Étiquetage dans Microsoft Purview Data Map](/azure/purview/create-sensitivity-label) |
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>Documentation sur les étiquettes de confidentialité pour l’utilisateur final
 
