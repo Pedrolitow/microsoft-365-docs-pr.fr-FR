@@ -15,14 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Les travaux eDiscovery (Premium) vous aident à suivre l’état des processus de longue durée liés à l’exécution de différentes tâches eDiscovery (Premium).
-ms.openlocfilehash: 2c82b79458d59dd1176857cf37943c7676ad38a2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ab1b6cf45805a0d67492a5d386670f139b24f5e1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935607"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998490"
 ---
 # <a name="manage-jobs-in-ediscovery-premium"></a>Gérer les travaux dans eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Voici une liste des travaux (qui sont généralement des processus de longue durée) suivis sous l’onglet **Travaux** d’un cas dans Microsoft Purview eDiscovery (Premium). Ces travaux sont déclenchés par des actions de l’utilisateur lors de l’utilisation et de la gestion des cas.
 
@@ -31,7 +33,7 @@ Voici une liste des travaux (qui sont généralement des processus de longue dur
 |Ajout de données à un jeu de révision | Un utilisateur ajoute une collection à un jeu de révision. Ce travail se compose de deux sous-tâches : </br>• **Exportation** : une liste d’éléments de la collection est générée. </br>• **Ingestion & Indexation** : les éléments de la collection qui correspondent à la requête de recherche sont copiés vers un emplacement stockage Azure (dans un processus appelé *ingestion*), puis ces éléments de l’emplacement stockage Azure sont réindexés. Ce nouvel index est utilisé lors de l’interrogation et de l’analyse d’éléments dans le jeu de données. </br></br>Pour plus d’informations, consultez [Ajouter des résultats de recherche à un ensemble de révisions](add-data-to-review-set.md). |
 |Ajout de données à un autre jeu de révision | Un utilisateur ajoute des documents d’un ensemble de révisions à un autre ensemble de révisions dans le même cas. Pour plus d’informations, consultez [Ajouter des données à un jeu de révision à partir d’un autre ensemble de révisions](add-data-to-review-set-from-another-review-set.md).|
 |Ajout de données non Microsoft 365 à un jeu de révision | Un utilisateur charge des données non Microsoft 365 dans un ensemble de révisions. Les données sont également indexées pendant ce processus. Par exemple, les fichiers d’un serveur de fichiers local ou d’un ordinateur client sont chargés dans un ensemble de révisions. Pour plus d’informations, consultez [Charger des données non Microsoft 365 dans un ensemble de révisions](load-non-office-365-data-into-a-review-set.md).| 
-|Ajout de données corrigées à un jeu de révision | Les données avec des erreurs de traitement sont corrigées et chargées dans un jeu de révisions. Pour plus d’informations, reportez-vous aux rubriques suivantes :</br>• [Correction d’erreur lors du traitement des données](error-remediation-when-processing-data-in-advanced-ediscovery.md)</br>• [Correction des erreurs d’élément unique](single-item-error-remediation.md)| 
+|Ajout de données corrigées à un jeu de révision | Les données avec des erreurs de traitement sont corrigées et chargées dans un jeu de révisions. Pour plus d’informations, voir :</br>• [Correction d’erreur lors du traitement des données](error-remediation-when-processing-data-in-advanced-ediscovery.md)</br>• [Correction des erreurs d’élément unique](single-item-error-remediation.md)| 
 |Comparaison des jeux de charge | Un utilisateur examine les différences entre les différents jeux de charge dans un jeu de révision. Un jeux de charges est une instance qui permet d’ajouter des données à un groupe de révision. Par exemple, si vous ajoutez les résultats de deux recherches différentes au même ensemble de révisions, chacune représenterait un jeu de charge. |
 |Reconstruction de conversation|Lorsqu’un utilisateur ajoute les résultats d’une recherche à un ensemble de révisions de conversation, les conversations par message instantané (également appelées *conversations thread*) dans des services tels que Microsoft Teams sont reconstruites dans un fichier PDF. Ce travail est également déclenché lorsqu’un utilisateur clique sur **Action > Créer des fichiers PDF de conversation** dans un jeu de révision. Pour plus d’informations, consultez [Examiner les conversations dans eDiscovery (Premium).](conversation-review-sets.md)
 |Conversion de documents redéposés au format PDF|Une fois qu’un utilisateur a annoté un document dans un ensemble de révisions et en a rédigé une partie, il peut choisir de convertir le document expurgé en fichier PDF. Cela garantit que la partie expurgée ne sera pas visible si le document est exporté pour présentation. Pour plus d’informations, consultez [Afficher les documents dans un ensemble de révisions](view-documents-in-review-set.md). |
@@ -48,7 +50,7 @@ Voici une liste des travaux (qui sont généralement des processus de longue dur
 
 Le tableau suivant décrit les différents états d’état des travaux.
 
-|État|Description|
+|Statut|Description|
 |---|---|
 |Submitted|Un nouveau travail a été créé.  La date et l’heure d’envoi du travail s’affichent dans la colonne **Créé** sous l’onglet **Travaux** .|
 |Échec de l’envoi|Échec de la soumission du travail.  Vous devez tenter de réexécuter l’action qui a déclenché le travail.|

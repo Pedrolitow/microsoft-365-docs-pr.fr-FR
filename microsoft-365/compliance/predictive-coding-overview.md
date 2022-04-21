@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Le nouveau module de codage prédictif dans eDiscovery (Premium) utilise le Machine Learning pour analyser les éléments d’un ensemble de révisions sur prédictifs qui sont pertinents pour votre cas ou votre enquête.
-ms.openlocfilehash: 2cf8541e3ca3928b1206eb824c21e21e49c4caa9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 7d45c995fafe5b802713e101ad36a362ab77fa37
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936552"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998989"
 ---
 # <a name="learn-about-predictive-coding-in-ediscovery-premium-preview"></a>En savoir plus sur le codage prédictif dans eDiscovery (Premium) (préversion)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Le module de codage prédictif dans eDiscovery (Premium) utilise les fonctionnalités d’apprentissage automatique intelligentes pour vous aider à réduire la quantité de contenu à examiner. Le codage prédictif vous permet de réduire et d’éliminer de grands volumes de contenu de cas dans un ensemble d’éléments pertinents que vous pouvez classer par ordre de priorité pour révision. Pour ce faire, créez et entraînez vos propres modèles de codage prédictif qui vous aident à hiérarchiser la révision des éléments les plus pertinents d’un ensemble de révisions.
 

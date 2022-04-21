@@ -15,14 +15,16 @@ search.appverid:
 - MET150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: Vous pouvez modifier la taille par défaut des fichiers PST téléchargés sur votre ordinateur lorsque vous exportez les résultats de la recherche eDiscovery.
-ms.openlocfilehash: 7ba11dbb24af46c72321f2f0f514aa4a40616e4b
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c7c78bc23599f55529898b4677d7833d567741f5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950288"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000155"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Modifier la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsque vous utilisez l’outil d’exportation eDiscovery pour exporter les résultats d’une recherche eDiscovery à partir des différents outils Microsoft eDiscovery, la taille par défaut d’un fichier PST pouvant être exporté est de 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Une raison de le faire est qu’un fichier PST peut tenir sur un support amovible, tel qu’un DVD, un disque compact ou un lecteur USB. 
   

@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: In-Place les stratégies de conservation, de conservation des litiges et de rétention Microsoft 365 vous permettent de conserver le contenu de la boîte aux lettres pour répondre aux exigences de conformité réglementaire et de découverte électronique.
-ms.openlocfilehash: a088407277f7ebced3aa69ee9ff807913f9b0c85
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4c3c7b7be98959011473eeafc85f40b19be82fdc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942114"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998493"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conserver les destinataires Cci et les destinataires de groupe de distribution étendu pour la découverte électronique
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 Les conservations de litige, les conservations eDiscovery et [les stratégies de rétention Microsoft 365 (créées](./retention.md) dans le portail de conformité Microsoft Purview) vous permettent de conserver le contenu de la boîte aux lettres pour répondre aux exigences de conformité réglementaire et eDiscovery. Les informations sur les destinataires directement adressés dans les champs À et Cc d’un message sont incluses dans tous les messages par défaut. Toutefois, votre organisation peut avoir besoin de la possibilité de rechercher et de reproduire des détails sur tous les destinataires d’un message. Cela inclut les opérations suivantes :
   

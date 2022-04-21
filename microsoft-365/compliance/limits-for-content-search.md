@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Découvrez les limites en vigueur pour les fonctionnalités de recherche de contenu et eDiscovery (Standard) dans le portail de conformité Microsoft Purview.
-ms.openlocfilehash: 53ecc3ceb879bc72040c5525e6bacc8d9802c5c9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8cba04c7ed3257d5a168d7754b2964eb4aa97b0d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944720"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999042"
 ---
 # <a name="limits-for-ediscovery-search"></a>Limites pour la recherche eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Différentes limites sont appliquées aux outils de recherche eDiscovery dans le portail de conformité Microsoft Purview. Cela inclut les recherches exécutées sur la page **de recherche de contenu** et les recherches associées à un cas eDiscovery sur la page **eDiscovery (Standard).** Ces limites contribuent à maintenir la santé et la qualité des services fournis aux organisations. Il existe également des limites liées à l’indexation des messages électroniques dans Exchange Online pour la recherche. Vous ne pouvez pas modifier les limites des recherches eDiscovery ou de l’indexation des e-mails, mais vous devez les connaître afin de pouvoir prendre en compte ces limites lors de la planification, de l’exécution et de la résolution des problèmes liés aux recherches eDiscovery.
 

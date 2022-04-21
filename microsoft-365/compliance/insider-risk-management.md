@@ -15,14 +15,17 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ca5719710e30e2f5880f73b75a3fe0233f242060
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 69c24b9d26fb16936064d9099f0866ce60d16d2c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970800"
+ms.locfileid: "64997029"
 ---
 # <a name="learn-about-insider-risk-management"></a>En savoir plus sur la gestion des risques internes Microsoft
+
+> [!TIP]
+> *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview de 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins de conformité. Microsoft 365 E3 et Office 365 E3 clients peuvent commencer maintenant sur le [hub d’essais du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions d’évaluation](compliance-easy-trials.md).
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 

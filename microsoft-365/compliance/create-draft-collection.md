@@ -16,20 +16,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Un brouillon de collection est une recherche eDiscovery de sources de données custodiales et non-custodiales dans un cas eDiscovery (Premium) qui retourne une estimation de recherche qui correspond à la requête de recherche de la collection. Vous pouvez passer en revue les statistiques de recherche, afficher un aperçu d’un échantillon d’éléments, et réviser et réexécuter la collection avant de valider les résultats dans un ensemble de révisions.
-ms.openlocfilehash: 248e95f928c818dfb4eb5b864c2d34304893281c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2178e836809a24edec6d3d184ef8b699bec87bb5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934878"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997068"
 ---
 # <a name="create-a-draft-collection-in-ediscovery-premium"></a>Créer un brouillon de collection dans eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Une fois que vous avez identifié les consignatateurs et toutes les sources de données non gardiennes pour le cas, vous êtes prêt à identifier et à localiser un ensemble de documents pertinents. Pour ce faire, utilisez l’outil Collections pour rechercher du contenu pertinent dans les sources de données. Pour ce faire, créez une collection qui recherche du contenu qui correspond à vos critères de recherche dans les sources de données spécifiées. Vous avez la possibilité de créer un *brouillon de collection*, qui est une estimation des éléments trouvés, ou vous pouvez créer une collection qui ajoute automatiquement les éléments à un jeu de révision. Lorsque vous créez un brouillon de collection, vous pouvez afficher des informations sur les résultats estimés correspondant à la requête de recherche, telles que le nombre total et la taille des éléments trouvés, les différentes sources de données où ils ont été trouvés et des statistiques sur la requête de recherche. Vous pouvez également afficher un aperçu d’un exemple d’éléments renvoyés par la collection. À l’aide de ces statistiques, vous pouvez modifier la requête de recherche et réexécuter la collection brouillon pour affiner vos résultats. Une fois que vous êtes satisfait des résultats du regroupement, vous pouvez valider le regroupement dans un ensemble de révisions. Lorsque vous validez un brouillon de collection, les éléments retournés par la collection sont ajoutés à un ensemble de révisions à des fins de révision, d’analyse et d’exportation.
 
 ## <a name="before-you-create-a-draft-collection"></a>Avant de créer un brouillon de collection
 
-- Ajoutez des consignatateurs et des sources de données non gardiennes au cas avant de créer un brouillon de collection. Cela est nécessaire pour pouvoir sélectionner les sources de données lorsque vous créez un brouillon de collection. Pour plus d’informations, reportez-vous aux rubriques suivantes :
+- Ajoutez des consignatateurs et des sources de données non gardiennes au cas avant de créer un brouillon de collection. Cela est nécessaire pour pouvoir sélectionner les sources de données lorsque vous créez un brouillon de collection. Pour plus d’informations, voir :
 
   - [Ajouter des consignataires à un cas](add-custodians-to-case.md)
 

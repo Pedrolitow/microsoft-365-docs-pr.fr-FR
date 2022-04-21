@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur 17a-4 Refinitiv Ekono Messenger DataParser pour importer et archiver ces données dans Microsoft 365.
-ms.openlocfilehash: 090d658e5b18f639848a4ce3c2635865207a8833
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 444c31df6a247d40855235b3d0de4c98b76c6d30
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940706"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997623"
 ---
 # <a name="set-up-a-connector-to-archive-refinitiv-eikon-messenger-data"></a>Configurer un connecteur pour archiver les données Refinitiv Ekono Messenger
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez [refinitiv Ekono Messenger DataParser](https://www.17a-4.com/refinitiv-messenger-dataparser/) de 17a-4 LLC pour importer et archiver des données de Refinitiv Ekono Messenger vers les boîtes aux lettres utilisateur de votre organisation Microsoft 365. DataParser inclut un connecteur Refinitiv Ekono Messenger configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur Refinitiv Ekono Messenger DataParser convertit les données Refinitiv Ekono Messenger au format de message électronique, puis importe ces éléments dans des boîtes aux lettres utilisateur dans Microsoft 365.
 

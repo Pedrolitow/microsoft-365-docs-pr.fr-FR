@@ -16,14 +16,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les limites de cas, les limites d’indexation et les limites de recherche en vigueur pour la solution eDiscovery (Premium) dans Microsoft 365.
-ms.openlocfilehash: 599f57ab863ab6d82140fa473624916bd2f26ac1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 07977b80ba0ce55c6d0e6b179955cfa959eaa5c8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942510"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999759"
 ---
 # <a name="limits-in-ediscovery-premium"></a>Limites dans eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cet article décrit les limites de la solution Microsoft Purview eDiscovery (Premium) dans Microsoft 365.
 
@@ -71,7 +73,7 @@ Les limites décrites dans cette section sont liées à l’utilisation de l’o
 |Description de la limite|Limite|
 |---|---|
 |Nombre maximal de boîtes aux lettres ou de sites pouvant faire l’objet d’une recherche unique.|Sans limite|
-|Nombre maximal de recherches qui peuvent s’exécuter en même temps.|Sans limite|
+|Nombre maximal de recherches qui peuvent s’exécuter en même temps.|Aucune limite|
 |Nombre maximal de recherches qu’un seul utilisateur peut démarrer en même temps.|10|
 |Nombre maximal de caractères pour une requête de recherche (y compris les opérateurs et les conditions).|10 <sup>0005</sup>|
 |Nombre maximal de caractères pour une requête de recherche pour les sites SharePoint et OneDrive Entreprise (y compris les opérateurs et les conditions).|10 000<br>4 000 avec des caractères <sup>génériques5</sup>|

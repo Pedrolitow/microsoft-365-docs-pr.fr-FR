@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Découvrez comment automatiser des tâches de recherche de contenu, telles que la création de recherches et l’exécution de rapports à l’aide du Centre de sécurité & conformité PowerShell.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 06ea7655348851cbd457b527a3ee36f72d78e562
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c6e84641fef819503349803cdd54d5aaa860fc50
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936860"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000221"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Créer, générer des rapports et supprimer plusieurs recherches de contenu
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
  La création et la création rapide de rapports de recherches de découverte sont souvent une étape importante dans eDiscovery et les investigations lorsque vous essayez d’en savoir plus sur les données sous-jacentes, ainsi que sur la richesse et la qualité de vos recherches. Pour vous aider à effectuer cette opération, le Centre de sécurité & conformité PowerShell propose un ensemble d’applets de commande pour automatiser les tâches de recherche de contenu fastidieuses. Ces scripts offrent un moyen rapide et simple de créer un certain nombre de recherches, puis d’exécuter des rapports des résultats de recherche estimés qui peuvent vous aider à déterminer la quantité de données en question. Vous pouvez également utiliser les scripts pour créer différentes versions de recherches afin de comparer les résultats que chacun produit. Ces scripts peuvent vous aider à identifier et à éliminer rapidement et efficacement vos données.
 

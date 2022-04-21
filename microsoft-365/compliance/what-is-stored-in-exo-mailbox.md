@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Le contenu produit par les applications cloud dans Microsoft 365 est stocké ou associé à la boîte aux lettres Exchange Online d’un utilisateur. Ce contenu peut être recherché à l’aide des outils Microsoft eDiscovery.
-ms.openlocfilehash: b37295783883d689acc34dbff88e5a94186eb4a6
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b5e8434f5345cda8ef4f637b3dff2d3cf704f748
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947844"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000793"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>Contenu stocké dans Exchange Online boîtes aux lettres pour eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Une boîte aux lettres dans Exchange Online est principalement utilisée pour stocker des éléments liés à l’e-mail, tels que des messages, des éléments de calendrier, des tâches et des notes. Mais cela change, car davantage d’applications basées sur le cloud stockent également leurs données dans la boîte aux lettres d’un utilisateur. L’un des avantages du stockage des données dans une boîte aux lettres est que vous pouvez utiliser les outils de recherche dans la recherche de contenu, Microsoft Purview eDiscovery (Standard) et Microsoft Purview eDiscovery (Premium) pour rechercher, afficher et exporter les données à partir de ces applications cloud. Les données de certaines de ces applications sont stockées dans des dossiers masqués situés dans une sous-arborescence de messages non interpersonnels (non IPM) dans la boîte aux lettres. Les données d’autres applications cloud peuvent ne pas être stockées _dans_ la boîte aux lettres, mais elles sont _associées à_ la boîte aux lettres et sont retournées dans les recherches (si ces données correspondent à la requête de recherche). Que les données cloud soient stockées ou associées à une boîte aux lettres utilisateur, elles ne sont généralement pas visibles dans un client de messagerie lorsqu’un utilisateur ouvre sa boîte aux lettres.
 

@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilisez eDiscovery (Premium) et Microsoft Graph Explorer pour rechercher et vider les messages de conversation dans Microsoft Teams et répondre aux incidents de débordement de données dans Teams.
-ms.openlocfilehash: b76f235fdfaee6f6836eb3d21385181a74aee904
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: a692af67b486b4bb353df8ce8be1653d17f26be8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971797"
+ms.locfileid: "64998467"
 ---
 # <a name="search-and-purge-chat-messages-in-teams"></a>Rechercher et vider les messages de conversation dans Teams
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez utiliser eDiscovery (Premium) et Microsoft Graph Explorer pour rechercher et supprimer des messages de conversation dans Microsoft Teams. Cela peut vous aider à rechercher et supprimer des informations sensibles ou du contenu inapproprié. Ce flux de travail de recherche et de vidage vous aidera également à répondre à un incident de débordement de données, lorsque du contenu contenant des informations confidentielles ou malveillantes est publié par le biais de messages de conversation Teams.
 

@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur DataParser 17a-4 SQL pour importer et archiver des données SQL dans Microsoft 365.
-ms.openlocfilehash: 7f1c3d919150ce48e0ecb3ab40a1434dff77ced9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 5583b47276a6f8c5e48add47f3743c4792abd83c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937276"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996647"
 ---
 # <a name="set-up-a-connector-to-archive-sql-data"></a>Configurer un connecteur pour archiver des données SQL
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez la [SQL DataParser](https://www.17a-4.com/sql-dataparser/) de 17a-4 LLC pour importer et archiver des données d’une base de données SQL vers des boîtes aux lettres utilisateur de votre organisation Microsoft 365. DataParser inclut un connecteur SQL configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur DataParser SQL convertit SQL données au format de message électronique, puis importe ces éléments dans des boîtes aux lettres utilisateur dans Microsoft 365.
 

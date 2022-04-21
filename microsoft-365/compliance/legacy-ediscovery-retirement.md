@@ -14,14 +14,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: In-Place eDiscovery et In-Place Hold (et les applets de commande PowerShell correspondantes) dans Exchange Online seront mises hors service au cours du premier semestre 2020. L’applet de commande Search-Mailbox et Microsoft Purview eDiscovery (Premium) v1.0 sont également mis hors service au cours de la même période.
-ms.openlocfilehash: 0a5a5c5a22aefbb0ad5abe6846915e1da653ee6b
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 19809b96574bf8d703264e0bedaada10f177ef31
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973264"
+ms.locfileid: "64999190"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retrait des outils eDiscovery hérités
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!IMPORTANT]
 > Les fonctionnalités des outils eDiscovery hérités décrits dans cet article ont été supprimées du service Microsoft 365 ou sont toujours disponibles, mais ne sont plus prises en charge. Toutes les fonctionnalités toujours disponibles peuvent être supprimées sans préavis. Si vous utilisez toujours l’un de ces outils hérités, envisagez de migrer vers les outils eDiscovery dans le portail de conformité Microsoft Purview ou l’une des alternatives décrites dans cet article.

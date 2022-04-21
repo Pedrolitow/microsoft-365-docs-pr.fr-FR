@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur Symphony DataParser 17a-4 pour importer et archiver des données Symphony dans Microsoft 365.
-ms.openlocfilehash: 33c3bdcd3fcde1d098a2baad0dadd86685e8ee6f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f783e5f9f405223493e43e7b9966be50c2e58f10
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938881"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996611"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-symphony"></a>Configurer un connecteur pour archiver les données de Symphony
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez Symphony [DataParser](https://www.17a-4.com/Symphony-dataparser/) de 17a-4 LLC pour importer et archiver des données de communications Symphony dans des boîtes aux lettres utilisateur de votre organisation Microsoft 365. DataParser inclut un connecteur Symphony configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur Symphony DataParser convertit les données Symphony au format d’e-mail, puis importe ces éléments dans des boîtes aux lettres utilisateur dans Microsoft 365.
 

@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur InvestEdge DataParser 17a-4 pour importer et archiver des données InvestEdge dans Microsoft 365.
-ms.openlocfilehash: 08c89ede8e16a4635c56d0d4bcb50cb0dce69860
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: cc10c5a798e9e85da7f95769926df8446187434c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945106"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998077"
 ---
 # <a name="set-up-a-connector-to-archive-investedge-data"></a>Configurer un connecteur pour archiver les données InvestEdge
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez [InvestEdge DataParser](https://www.17a-4.com/investedge-dataparser/) de 17a-4 LLC pour importer et archiver des données d’InvestEdge vers des boîtes aux lettres utilisateur de votre organisation Microsoft 365. DataParser inclut un connecteur InvestEdge configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur InvestEdge DataParser convertit les données InvestEdge au format d’e-mail, puis importe ces éléments dans des boîtes aux lettres utilisateur dans Microsoft 365.
 

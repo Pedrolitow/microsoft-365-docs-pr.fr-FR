@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez des collections dans Microsoft Purview eDiscovery (Premium) pour collecter des pièces jointes cloud à examiner dans une enquête ou un cas.
-ms.openlocfilehash: 0a0d3dab3942dbdfcfa896d8e2f59fd2e2dca813
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1dd48f343f9df43edf8553e73395d756eb6713a4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935717"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000705"
 ---
 # <a name="collect-cloud-attachments-in-microsoft-purview-ediscovery-premium-preview"></a>Collecter des pièces jointes cloud dans Microsoft Purview eDiscovery (Premium) (préversion)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Les pièces jointes cloud sont des liens vers des documents qui sont généralement stockés dans SharePoint site et OneDrive. Par conséquent, au lieu d’attacher une copie réelle d’un document dans un e-mail ou une conversation de conversation Teams, vous avez la possibilité de partager un lien vers le fichier. Les pièces jointes cloud sont un moyen efficace de partager des documents et de collaborer avec d’autres personnes de votre organisation. Toutefois, les pièces jointes cloud présentent des difficultés pendant le flux de travail eDiscovery, car seul le lien de pièce jointe cloud et non le contenu réel du document partagé sont retournés dans une recherche eDiscovery. Pour relever ce défi, eDiscovery (Premium) fournit deux solutions pour collecter des pièces jointes cloud :  
 

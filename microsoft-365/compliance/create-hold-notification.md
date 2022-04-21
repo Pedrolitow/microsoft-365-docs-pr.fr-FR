@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Utilisez l’outil Communications dans un cas eDiscovery (Premium) pour envoyer, collecter et suivre les notifications de conservation légale.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f82e61b618c351f4dac05ce2559eab047f0e70a7
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ca5c895ca98aafb67fd728e137f0d69dd8b98f8f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945062"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997953"
 ---
 # <a name="create-a-legal-hold-notice"></a>Créer un avis de conservation légale
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 À l’aide des communications de consignation eDiscovery (Premium), les organisations peuvent gérer leur flux de travail autour de la communication avec les consignatateurs. Grâce à l’outil Communications, les équipes juridiques peuvent systématiquement envoyer, collecter et suivre les notifications de conservation légale. Le processus de création flexible permet également aux équipes de personnaliser le flux de travail de notification de conservation et le contenu des avis envoyés aux consignatateurs.
 

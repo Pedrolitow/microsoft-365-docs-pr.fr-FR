@@ -21,14 +21,16 @@ description: Découvrez comment placer des conservations sur les consignataires 
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkMAC
-ms.openlocfilehash: 16a4932993a652d8d7d71be78fd23a238fc90759
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6ec8e31fddba430a7a148eea5c8b07eb35872641
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939650"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996765"
 ---
 # <a name="manage-holds-in-ediscovery-premium"></a>Gérer les conservations dans eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez utiliser un cas Microsoft Purview eDiscovery (Premium) pour créer des conservations afin de conserver le contenu susceptible d’être pertinent pour votre cas. À l’aide des fonctionnalités de conservation eDiscovery (Premium), vous pouvez placer des conservations sur les consignatateurs et leurs sources de données. En outre, vous pouvez placer une conservation non-custodiale sur les boîtes aux lettres et les sites OneDrive Entreprise. Vous pouvez également placer une conservation sur la boîte aux lettres du groupe, SharePoint site et OneDrive Entreprise site pour un groupe Microsoft 365. De même, vous pouvez placer une conservation sur la boîte aux lettres et le site associés à Microsoft Teams. Lorsque vous placez des emplacements de contenu en attente, le contenu est conservé jusqu’à ce que vous libériez le consignateur, que vous supprimiez un emplacement de données spécifique ou que vous supprimiez entièrement la stratégie de conservation.
 

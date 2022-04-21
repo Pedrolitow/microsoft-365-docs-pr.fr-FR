@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Utilisez ces procédures pour tirer parti d’entités nommées dans vos stratégies de protection contre la perte de données
-ms.openlocfilehash: 108b21e7c5a6708a01a712dcd44788f489df0e73
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 6b00c45b95436e2425aedadd57a178fcb01ab50e
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971580"
+ms.locfileid: "65000991"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies"></a>Utiliser des entités nommées dans vos stratégies de protection contre la perte de données
 
@@ -53,7 +53,7 @@ Vous pouvez utiliser des SIT d’entité nommées et des stratégies améliorée
 Les SIT d’entité nommée et les stratégies améliorées ne sont pas pris en charge pour :
 
 - Référentiels locaux
-- Power BI
+- Power BI
 
 ## <a name="create-and-edit-enhanced-policies"></a>Créer et modifier des stratégies améliorées
 
@@ -83,7 +83,7 @@ Pour créer ou modifier une stratégie DLP, utilisez les procédures de [créati
 |SharePoint les données au repos en ligne     |Pris en charge         |
 |Teams données au repos     |Pris en charge         |
 |Données au repos des messages électroniques     |Prise en charge pour les locataires avec le plan de service de confidentialité         |
-|Microsoft Defender for Cloud Apps     |Pris en charge         |
+<!--|Microsoft Defender for Cloud Apps     |Pris en charge         |-->
 
 ### <a name="autolabeling"></a>Étiquetage automatique
 

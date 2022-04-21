@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Configurez et utilisez un connecteur dans le portail de conformité Microsoft Purview pour importer et archiver des données WeChat dans Microsoft 365.
-ms.openlocfilehash: e504c9fd3440e0ccc232e91838ef52577b1552be
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8d87cbaf25396dc9af1497737450126e90b54a7a
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942818"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997207"
 ---
 # <a name="set-up-a-connector-to-archive-wechat-data"></a>Configurer un connecteur pour archiver les données WeChat
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez le connecteur TeleMessage dans le portail de conformité Microsoft Purview pour importer et archiver des appels WeChat et WeCom, des conversations, des pièces jointes, des fichiers et des messages rappelés. Après avoir configuré et configuré un connecteur, il se connecte au compte TeleMessage de votre organisation et importe la communication mobile des employés à l’aide de l’archiveur WeChat TeleMessage vers des boîtes aux lettres dans Microsoft 365.
 

@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment utiliser l’outil de gestion des consignats intégré dans Microsoft Purview eDiscovery (Premium) pour coordonner vos flux de travail et identifier les sources de données pertinentes dans un cas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7da45eca9e57ef64c9272c89e24c21a20dc5af80
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 46277524f616e91e89e9bccce1fdd3c3109b3d86
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935805"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999473"
 ---
 # <a name="add-custodians-to-an-ediscovery-premium-case"></a>Ajouter des consignatateurs à un cas eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez l’outil de gestion des consignats intégré dans Microsoft Purview eDiscovery (Premium) pour coordonner vos flux de travail autour de la gestion des consignatateurs et de l’identification des sources de données de garde pertinentes associées à un cas. Lorsque vous ajoutez un consignateur, le système peut automatiquement identifier et placer une conservation sur sa boîte aux lettres Exchange et son compte OneDrive Entreprise. Pendant le processus de découverte de votre enquête, vous pouvez également identifier d’autres sources de données (telles que des boîtes aux lettres, des sites ou des Teams) auxquelles un consignateur a accédé ou y a contribué. Dans ce cas, vous pouvez utiliser l’outil de gestion des consignats pour associer ces sources de données à un dépositaire spécifique. Après avoir ajouté des consignataires à un cas et associé à une autre source de données, vous pouvez rapidement conserver les données et rechercher les données de garde.
 

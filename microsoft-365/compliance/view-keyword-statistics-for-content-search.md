@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 description: Découvrez comment utiliser la fonctionnalité de statistiques de recherche pour afficher des statistiques pour les recherches de contenu associées à un cas eDiscovery (Standard) dans le portail de conformité Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e057a6e4997240dbaa4b9b7975274c5f3eab7589
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 5d35616823988562b3b075e7a513c8a98a4e3281
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947096"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000815"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>Afficher les statistiques pour les résultats de la recherche eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Après avoir créé et exécuté une recherche de contenu ou une recherche associée à un cas Microsoft Purview eDiscovery (Standard), vous pouvez afficher des statistiques sur les résultats estimés de la recherche. Cela inclut un résumé des résultats de la recherche (semblable au résumé des résultats de recherche estimés affichés dans la page de menu volant de recherche), les statistiques de requête telles que le nombre d’emplacements de contenu avec des éléments qui correspondent à la requête de recherche et l’identité des emplacements de contenu qui ont les éléments les plus correspondants.
   

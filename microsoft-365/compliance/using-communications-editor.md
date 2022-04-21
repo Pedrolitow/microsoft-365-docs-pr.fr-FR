@@ -15,28 +15,30 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Utilisez l’Éditeur de communications pour modifier du texte et fusionner des variables de champ lors de la mise en forme de votre contenu.
+description: Utilisez l’Éditeur de communications pour modifier le texte et fusionner les variables de champ lors de la mise en forme de votre contenu.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: aceebf9f8a19448c05c137f668c2bca5db2d99bd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6377da0dbb89963fdf25610c638e6f5ce4ccfd70
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205976"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999649"
 ---
 # <a name="use-the-communications-editor"></a>Utiliser l’éditeur de communications
 
-Lorsque vous définissez le contenu de votre portail, les notifications de mise en attente légale et les rappels/escalades connexes, vous pouvez utiliser l’Éditeur de communications pour mettre en forme et personnaliser dynamiquement votre contenu.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Lorsque vous définissez le contenu de votre portail, les notifications de conservation légale et les rappels/escalades associés, vous pouvez utiliser l’Éditeur de communications pour mettre en forme et personnaliser dynamiquement votre contenu.
 
 ## <a name="rich-text-editor"></a>Éditeur de texte enrichi
 
-L’Éditeur de communications permet à l’utilisateur de personnaliser le texte à l’aide des options de l’éditeur. Par exemple, les utilisateurs peuvent modifier des types de polices, créer des listes à puces, mettre en surbrillez du contenu, etc.
+L’éditeur de communications permet à l’utilisateur de personnaliser le texte à l’aide des options de l’éditeur. Par exemple, les utilisateurs peuvent modifier les types de polices, créer des listes à puces, mettre en surbrillance du contenu, etc.
 
-## <a name="merge-field-variables"></a>Fusionner des variables de champ
+## <a name="merge-field-variables"></a>Fusionner les variables de champ
 
-Vous pouvez utiliser des variables de fusion et de messagerie de l’Éditeur de communications pour incorporer des attributs de dépositaire personnalisés dans le corps du texte d’une communication. Lorsqu’il est envoyé au dépositaire, le champ de fusion est rempli avec le champ correspondant. Par exemple, lorsqu’il est envoyé au dépositaire John Smith, le champ de fusion [Nom du dépositaire] est traduit par le nom correspondant.
+Vous pouvez utiliser des variables de fusion par e-mail de l’Éditeur de communications pour incorporer des attributs de consignation personnalisés dans le texte du corps d’une communication. Lorsqu’il est envoyé au consignateur, le champ de fusion est rempli avec le champ correspondant. Par exemple, lorsqu’il est envoyé au gardien John Smith, le champ de fusion [Nom du consignateur] est traduit avec le nom correspondant.
 
-Vous pouvez utiliser des champs  de fusion et de fusion en sélectionnant les icônes de champ Fusionner en haut du contrôle d’éditeur de texte enrichi. L’espace réservé est ajouté en fonction de l’emplacement du curseur de l’utilisateur.
+Vous pouvez utiliser les champs de fusion par e-mail en sélectionnant les icônes de **champ Fusionner** en haut du contrôle éditeur de texte enrichi. L’espace réservé sera ajouté en fonction de l’emplacement du curseur des utilisateurs.
 
 ### <a name="list-of-merge-field-variables"></a>Liste des variables de champ de fusion
 
@@ -46,9 +48,9 @@ Vous pouvez utiliser des champs  de fusion et de fusion en sélectionnant les ic
 
 |Nom du champ|Détails du champ|
 |---|---|
-|Nom d’affichage|Prénom et nom du dépositaire.|
-|Lien d’accusé de réception|Lien personnalisé pour enregistrer l’accusé de réception de chaque dépositaire.|
-|Lien portail|Lien personnalisé pour le portail de conformité du dépositaire.|
-|Responsable de l’émission|Adresse de messagerie du responsable de l’émission spécifié.|
+|Nom d’affichage|Prénom et nom du consignat.|
+|Lien d’accusé de réception|Lien personnalisé permettant d’enregistrer l’accusé de réception de chaque consignateur.|
+|Lien vers le portail|Lien personnalisé pour le portail de conformité du consignateur.|
+|Agent d’émission|Adresse e-mail de l’agent émetteur spécifié.|
 |Date d’émission|Date à laquelle l’avis a été émis (UTC).|
 |

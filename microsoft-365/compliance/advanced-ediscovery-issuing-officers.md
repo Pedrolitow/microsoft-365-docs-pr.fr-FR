@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Vous pouvez ajouter des agents d’émission à l’échelle de l’organisation dans eDiscovery (Premium) afin qu’ils puissent être ajoutés à n’importe quelle communication de garde dans n’importe quel cas de votre organisation.
-ms.openlocfilehash: 076e6ea8b8dbef18c6c34221937a039fc43fad75
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f82d5359a90e21203c2ff882ceb831cc1630e008
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942994"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000551"
 ---
 # <a name="manage-issuing-officers-in-ediscovery-premium"></a>Gérer les agents émetteurs dans eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsque vous ou d’autres personnes créez une notification de suspension ou tout autre type de communication envoyé à un utilisateur qui est un gardien au cas où, vous devez spécifier un agent émetteur. La notification est envoyée au consignat pour le compte de l’agent émetteur spécifié. Par exemple, un parajuriste de votre organisation peut être responsable de la création et de l’envoi de notifications de conservation aux consignatateurs dans un cas. Dans ce scénario, le parajuriste peut spécifier un avocat dans l’organisation en tant qu’agent d’émission. Qui peut être spécifié en tant qu’agent d’émission ? Il existe deux types d’utilisateurs qui peuvent être sélectionnés en tant qu’agent d’émission pour une communication de consignation :
 

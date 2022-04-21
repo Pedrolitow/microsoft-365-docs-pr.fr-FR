@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez des versions historiques dans eDiscovery (Premium) pour collecter du contenu à partir de toutes les versions de documents stockés dans SharePoint et OneDrive.
-ms.openlocfilehash: e73429744958698f275d33b52cc50805c274ef13
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ebd706aa122da2f875adb0c210db8cb3a0c8ab10
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943082"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000617"
 ---
 # <a name="set-up-historical-versions-in-ediscovery-premium-preview"></a>Configurer des versions historiques dans eDiscovery (Premium) (préversion)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La fonctionnalité de versions historiques dans eDiscovery (Premium) permet aux responsables eDiscovery de votre organisation de rechercher et de collecter du contenu à partir de toutes les versions de documents stockés dans SharePoint Online et OneDrive Entreprise. Vous pouvez ensuite ajouter ce contenu à un ensemble de révisions à des fins d’analyse et de révision. Cela vous permet de rechercher et de passer en revue le contenu d’une version spécifique d’un document qui peut être pertinente pour un cas ou une enquête, même si la dernière version du même document ne contient pas les informations pertinentes.
 

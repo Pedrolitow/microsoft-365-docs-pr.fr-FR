@@ -21,14 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Découvrez comment filtrer des données à l’aide de la fonctionnalité d’importation intelligente dans le service d’importation Microsoft 365 lorsque vous importez des fichiers PST dans Microsoft 365.
-ms.openlocfilehash: 2b948352a3aff64dc06486a8380b9c81f7f5c020
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dc60baf45be97e438875e0b045d9e8f3b6208d3f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948592"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997909"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>Filtrer les données lors de l’importation de fichiers PST
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez la nouvelle fonctionnalité d’importation intelligente dans le service d’importation Microsoft 365 pour filtrer les éléments des fichiers PST qui sont réellement importés dans les boîtes aux lettres cibles. Voici le principe de fonctionnement :
   
@@ -68,7 +70,7 @@ Après avoir créé un travail d’importation PST, procédez comme suit pour fi
   
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a> et connectez-vous à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation.
     
-2. Dans le volet gauche du portail de conformité, cliquez sur **Importation** de gouvernance \> **des informations**.
+2. Dans le volet gauche du portail de conformité, cliquez sur **Gouvernance des informations** \> **Importer**.
     
     Les travaux d’importation de votre organisation sont répertoriés sous l’onglet **Importation**. La valeur **Analyse terminée** dans la colonne **État** indique les travaux d’importation qui ont été analysés par Microsoft 365 et qui sont prêts à être importés.
     

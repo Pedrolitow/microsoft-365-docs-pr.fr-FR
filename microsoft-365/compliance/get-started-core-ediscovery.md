@@ -18,16 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Décrit comment commencer à utiliser eDiscovery (Standard) dans Microsoft Purview. Après avoir affecté des autorisations eDiscovery et créé un cas, vous pouvez ajouter des membres, créer des conservations eDiscovery, puis rechercher et exporter du contenu pertinent pour votre enquête.
-ms.openlocfilehash: 90470d0128fd15bf295b1c8fa2cd15ef6d5cc384
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 3619a3097567251d012594831081f0929d5ca80e
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994147"
+ms.locfileid: "64972406"
 ---
 # <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Démarrage avec eDiscovery (Standard) dans Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview eDiscovery (Standard) dans Microsoft Purview fournit un outil eDiscovery de base que les organisations peuvent utiliser pour rechercher et exporter du contenu dans Microsoft 365 et Office 365. Vous pouvez également utiliser eDiscovery (Standard) pour placer une conservation eDiscovery sur des emplacements de contenu, tels que des boîtes aux lettres Exchange, des sites SharePoint, des comptes OneDrive et des Microsoft Teams. Rien n’est nécessaire pour déployer eDiscovery (Standard), mais un administrateur informatique et un responsable eDiscovery doivent effectuer certaines tâches préalables avant que votre organisation puisse commencer à utiliser eDiscovery (Standard) pour rechercher, exporter et conserver du contenu.
 

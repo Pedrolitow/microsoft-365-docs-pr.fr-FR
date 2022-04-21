@@ -22,14 +22,16 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Au lieu d’exporter les résultats réels d’une recherche de contenu dans le portail de conformité Microsoft Purview, vous pouvez exporter un rapport de résultats de recherche. Le rapport contient un résumé des résultats de la recherche et un document contenant des informations détaillées sur chaque élément qui serait exporté.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6ac46944ab454271358168c95a7df94d606e0ec5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f8fc881ed57831aadb035d0ec1168b4f334ec085
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944830"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001123"
 ---
 # <a name="export-a-content-search-report"></a>Exporter un rapport de recherche de contenu
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Au lieu d’exporter l’ensemble complet des résultats de recherche à partir d’une recherche de contenu dans le portail de conformité Microsoft Purview (ou à partir d’une recherche associée à un cas Microsoft Purview eDiscovery (Standard), vous pouvez exporter les mêmes rapports générés lorsque vous exportez les résultats de recherche réels.
   

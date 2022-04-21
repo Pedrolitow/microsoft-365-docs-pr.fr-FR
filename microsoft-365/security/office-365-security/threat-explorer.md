@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8a5029ad6de3de33eacdf814729ed2eafcd2cf89
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6992af4483bedfe418610b752d2195a8d22f30d3
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941674"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64974320"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
@@ -51,7 +51,6 @@ Avec ce rapport, vous pouvez :
 - [Examiner les e-mails malveillants, et bien plus encore](#more-ways-to-use-explorer-and-real-time-detections)
 
 ## <a name="improvements-to-threat-hunting-experience"></a>Améliorations apportées à l’expérience de chasse aux menaces
-
 
 ### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections"></a>Présentation de l’ID d’alerte pour les alertes Defender pour Office 365 dans l’Explorateur/les détections en temps réel
 
@@ -206,7 +205,7 @@ Les améliorations sont les suivantes :
 
 - Affichez l’URL cliqué (y compris les paramètres de requête qui font partie de l’URL) dans la section **Clics** du menu volant de l’URL. Actuellement, le domaine et le chemin d’accès de l’URL apparaissent dans la barre de titre. Nous étendons ces informations pour afficher l’URL complète.
 
-- Correctifs entre les filtres d’URL (*URL* ou *domaine d’URL* et *domaine d’URL et chemin d’accès*) : les mises à jour affectent la recherche de messages contenant une URL/cliquez sur le verdict. Nous avons activé la prise en charge des recherches sans protocole, afin que vous puissiez rechercher une URL sans utiliser `http`. Par défaut, la recherche d’URL est mappée à http, sauf si une autre valeur est explicitement spécifiée. Par exemple :
+- Correctifs entre les filtres d’URL (*URL* ou *domaine d’URL* et *domaine d’URL et chemin d’accès*) : les mises à jour affectent la recherche de messages contenant une URL/cliquez sur le verdict. Nous avons activé la prise en charge des recherches sans protocole, afin que vous puissiez rechercher une URL sans utiliser `http`. Par défaut, la recherche d’URL est mappée à http, sauf si une autre valeur est explicitement spécifiée. Par exemple :
   - Effectuez une recherche avec et sans le `http://` préfixe dans les champs **de filtre URL**, **Domaine d’URL** et **Domaine d’URL et Chemin d’accès** . Les recherches doivent afficher les mêmes résultats.
   - Recherchez le `https://` préfixe dans **l’URL**. Lorsqu’aucune valeur n’est spécifiée, le `http://` préfixe est supposé.
   - `/` est ignoré au début et à la fin du **chemin d’URL**, **du domaine d’URL**, du **domaine d’URL et** des champs de chemin d’accès. `/` à la fin du champ **URL** est ignoré.

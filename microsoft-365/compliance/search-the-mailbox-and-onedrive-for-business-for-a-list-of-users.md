@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Utilisez la recherche de contenu et le script de cet article pour rechercher un groupe d’utilisateurs dans les boîtes aux lettres et les sites OneDrive Entreprise.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14c518c4450b01e387f84b4211da8d0eb346fe7a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1bbfc26c2193c1bf31e081b8ded9e2e2baf56743
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949264"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998813"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Utiliser la recherche de contenu pour rechercher une liste d’utilisateurs dans la boîte aux lettres et OneDrive Entreprise
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Security & Compliance Center PowerShell fournit un certain nombre d’applets de commande qui vous permettent d’automatiser des tâches liées à eDiscovery qui prennent beaucoup de temps. Actuellement, la création d’une recherche de contenu dans le portail de conformité Microsoft Purview pour effectuer une recherche dans un grand nombre d’emplacements de contenu de consignation prend du temps et de la préparation. Avant de créer une recherche, vous devez collecter l’URL de chaque site OneDrive Entreprise, puis ajouter chaque boîte aux lettres et OneDrive Entreprise site à la recherche. Dans les versions ultérieures, cela sera plus facile à faire dans le portail de conformité. En attendant, vous pouvez utiliser le script de cet article pour automatiser ce processus. Ce script vous invite à entrer le nom du domaine MySite de votre organisation (par exemple, **contoso** dans l’URL `https://contoso-my.sharepoint.com`), une liste d’adresses e-mail utilisateur, le nom de la nouvelle recherche de contenu et la requête de recherche à utiliser. Le script obtient l’URL OneDrive Entreprise pour chaque utilisateur de la liste, puis il crée et démarre une recherche de contenu qui recherche dans la boîte aux lettres et OneDrive Entreprise site pour chaque utilisateur de la liste, à l’aide de la requête de recherche que vous fournissez.
   

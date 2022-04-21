@@ -16,14 +16,16 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur natif pour importer et archiver des pages Facebook Business dans Microsoft 365. Une fois ces données importées dans Microsoft 365, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données Facebook de votre organisation.
-ms.openlocfilehash: 126b4af3887632df5c8f83eac8e20fe5d88c8608
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b58b3f1707a8c3bb52aa7fc5ebc9c359ef9a8a97
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949176"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998769"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>Déployer un connecteur pour archiver les données des pages Facebook Business
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cet article contient le processus pas à pas pour déployer un connecteur qui utilise le service d’importation Office 365 pour importer des données à partir de pages Facebook Business vers Microsoft 365. Pour obtenir une vue d’ensemble générale de ce processus et une liste des conditions préalables requises pour déployer un connecteur Facebook, consultez [Configurer un connecteur pour archiver les données Facebook](archive-facebook-data-with-sample-connector.md).
 

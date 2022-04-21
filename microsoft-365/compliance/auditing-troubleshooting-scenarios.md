@@ -19,14 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Découvrez comment utiliser l’outil de recherche de journaux d’audit Microsoft 365 pour résoudre les problèmes de support courants pour les comptes de messagerie.
-ms.openlocfilehash: add354058a9e6e3d114c97a2932ff0302a27e272
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dd82c735411592a3cfa7cb79ae4d1ce6f97798b4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946548"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997997"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Rechercher dans le journal d’audit pour examiner les problèmes de support courants
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cet article explique comment utiliser l’outil de recherche dans les journaux d’audit pour vous aider à examiner les problèmes de support courants. Cela inclut l’utilisation du journal d’audit pour :
 

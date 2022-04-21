@@ -19,21 +19,23 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Afficher l’aperçu d’un exemple de résultats renvoyés par une recherche de contenu ou une recherche de découverte électronique principale dans le Centre de conformité Microsoft 365.
-ms.openlocfilehash: af0811d0c442d6f064fd336d4261d1f7b2337dc8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Afficher l’aperçu d’un exemple de résultats renvoyés par une recherche de contenu ou une recherche eDiscovery (Standard) dans le portail de conformité Microsoft Purview.
+ms.openlocfilehash: 3397b82f088f9aff480b6893edbf7aa664d91dc4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189344"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999011"
 ---
 # <a name="preview-ediscovery-search-results"></a>Afficher un aperçu des résultats de la recherche de découverte électronique
 
-Après avoir exécuté une recherche de contenu ou une recherche associée à un cas eDiscovery principal, vous pouvez afficher un aperçu d’un exemple des résultats renvoyés par la recherche. L’aperçu des éléments renvoyés par la requête de recherche peut vous aider à déterminer si la recherche retourne les résultats que vous espériez, ou si vous devez modifier la requête de recherche et réexécuter la recherche.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Après avoir exécuté une recherche de contenu ou une recherche associée à un cas Microsoft Purview eDiscovery (Standard), vous pouvez afficher un aperçu d’un exemple des résultats renvoyés par la recherche. L’aperçu des éléments renvoyés par la requête de recherche peut vous aider à déterminer si la recherche retourne les résultats que vous espériez, ou si vous devez modifier la requête de recherche et réexécuter la recherche.
 
 Pour afficher l’aperçu d’un exemple de résultats renvoyés par une recherche :
 
-1. Dans le Centre de conformité Microsoft 365, allez sur la page de recherche de contenu ou sur un cas de découverte électronique principal.
+1. Dans le portail de conformité Microsoft Purview, accédez à la page de recherche de contenu ou sur un cas eDiscovery (Standard).
 
 2. Sélectionnez Rechercher pour afficher la page volante.
 

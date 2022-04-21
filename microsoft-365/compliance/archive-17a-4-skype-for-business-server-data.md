@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur DataParser 17a-4 Skype Entreprise Server pour importer et archiver des données Skype Entreprise Server dans Microsoft 365.
-ms.openlocfilehash: 7b004068e255d5972a978d4e9650e9207a2da117
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8a7c8e7b2d59aeabc2f21207d5b3ce2eb3d524e9
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937694"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997535"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-server-data"></a>Configurer un connecteur pour archiver des données Skype Entreprise Server
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez le [Skype Server DataParser](https://www.17a-4.com/skype-server-dataparser/) de 17a-4 LLC pour importer et archiver des données d’un Skype Entreprise Server vers des boîtes aux lettres utilisateur de votre organisation Microsoft 365. DataParser inclut un connecteur Skype Entreprise configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur DataParser Skype Entreprise Server convertit Skype Entreprise Server données au format d’e-mail, puis importe ces éléments dans des boîtes aux lettres utilisateur dans Microsoft 365.
 

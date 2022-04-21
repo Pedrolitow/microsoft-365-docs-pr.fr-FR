@@ -1,5 +1,5 @@
 ---
-title: Solutions Microsoft Purview eDiscovery
+title: Solutions eDiscovery Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,14 +20,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview propose trois outils eDiscovery que vous pouvez utiliser pour rechercher et exporter du contenu trouvé dans différents emplacements, tels que des boîtes aux lettres Exchange, des sites SharePoint et OneDrive Entreprise, des Groupes Microsoft 365, des Microsoft Teams et Skype Entreprise conversations. eDiscovery (Standard) et eDiscovery (Premium) fournissent de nombreuses fonctionnalités supplémentaires pour vous aider à gérer vos investigations.
-ms.openlocfilehash: efa7f12ec20377713598edc54f032e7c2a27d706
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4c146e2eea1c0c462491444102365cb5c611e78d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932219"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001145"
 ---
-# <a name="microsoft-purview-ediscovery-solutions"></a>Solutions Microsoft Purview eDiscovery
+# <a name="microsoft-purview-ediscovery-solutions"></a>Solutions eDiscovery Microsoft Purview
+
+> [!TIP]
+> *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview de 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins de conformité. Microsoft 365 E3 et Office 365 E3 clients peuvent commencer maintenant sur le [hub d’essais du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions d’évaluation](compliance-easy-trials.md).
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La découverte électronique, ou eDiscovery, est le processus d'identification et de livraison d'informations électroniques qui peuvent être utilisées comme preuves dans des affaires juridiques. Vous pouvez utiliser les outils eDiscovery dans Microsoft Purview pour rechercher du contenu dans Exchange Online, OneDrive Entreprise, SharePoint Online, Microsoft Teams, Groupes Microsoft 365 et Yammer équipes. Vous pouvez rechercher des boîtes aux lettres et des sites dans la même recherche eDiscovery, puis exporter les résultats de la recherche. Vous pouvez utiliser les cas de découverte électronique Microsoft Purview (Standard) pour identifier, conserver et exporter le contenu trouvé dans les boîtes aux lettres et les sites. Si votre organisation dispose d’un abonnement Office 365 E5 ou Microsoft 365 E5 (ou d’abonnements de module complémentaire E5 associés), vous pouvez gérer davantage les consignatateurs et analyser le contenu à l’aide de la solution Microsoft Purview eDiscovery (Premium) riche en fonctionnalités dans Microsoft 365.
 
@@ -170,7 +175,7 @@ Consultez les articles suivants pour en savoir plus et commencer à utiliser les
 
 ### <a name="ediscovery-standard"></a>eDiscovery (Standard)
 
-- [Démarrage avec eDiscovery (Standard)](get-started-core-ediscovery.md)
+- [Prise en main d’eDiscovery (Standard)](get-started-core-ediscovery.md)
 
 ### <a name="ediscovery-premium"></a>eDiscovery (Premium)
 

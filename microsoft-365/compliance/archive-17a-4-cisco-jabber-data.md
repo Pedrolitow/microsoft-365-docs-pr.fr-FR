@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur Cisco Jabber DataParser 17a-4 pour importer et archiver des données Cisco Jabber dans Microsoft 365.
-ms.openlocfilehash: 104d56b819f594e88aa478e6df817bf3c8f008a9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 580294c4c05307c18458012d2789f481baaf4584
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940948"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998383"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-data"></a>Configurer un connecteur pour archiver les données Cisco Jabber
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez [Cisco Jabber DataParser](https://www.17a-4.com/jabber-dataparser/) de 17a-4 LLC pour importer et archiver des données de Cisco Jabber vers des boîtes aux lettres utilisateur de votre organisation Microsoft 365. DataParser inclut un connecteur Cisco Jabber configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur Cisco Jabber DataParser convertit les données Cisco Jabber au format d’e-mail, puis importe ces éléments dans des boîtes aux lettres utilisateur dans Microsoft 365.
 

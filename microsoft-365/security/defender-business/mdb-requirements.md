@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
+ms.date: 04/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: cf6a74bbde2e32ae047f97a7198b7f263e91b048
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 75c3df32bb3103ad818524da0972567d3fd11cc8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862695"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000683"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>Microsoft Defender pour les PME exigences
 
@@ -53,7 +53,7 @@ Le tableau suivant répertorie les exigences de base pour configurer et utiliser
 | Comptes d’utilisateur | Les comptes d’utilisateur sont créés dans le Centre d'administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/><br/>Microsoft Defender pour les PME licences sont attribuées dans le Centre d'administration Microsoft 365<br/><br/>Pour obtenir de l’aide sur cette tâche, consultez [Ajouter des utilisateurs et attribuer des licences](mdb-add-users.md). |
 | Autorisations  | Pour vous inscrire à Microsoft Defender pour les PME, vous devez être administrateur général.<br/><br/>Pour accéder au portail Microsoft 365 Defender, les utilisateurs doivent avoir l’un des [rôles suivants dans Azure AD](mdb-roles-permissions.md) attribués : <br/>- Lecteur sécurité<br/>- Administrateur de sécurité<br/>- Administrateur général<br/><br/>Pour en savoir plus, consultez [Rôles et autorisations dans Microsoft Defender pour les PME](mdb-roles-permissions.md). |
 | Configuration requise pour le navigateur | Microsoft Edge ou Google Chrome |
-| Système d’exploitation | Pour gérer les appareils dans Microsoft Defender pour les PME, vos appareils doivent exécuter l’un des systèmes d’exploitation suivants : <br/>- Windows 10 Business ou version ultérieure <br/>- Windows 10 Professional ou version ultérieure <br/>- Windows 10 Entreprise ou version ultérieure <br/><br/>Vérifiez que [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) est installé. <br/><br/>Si vous gérez déjà des appareils dans Microsoft Intune (ou Microsoft Endpoint Manager), vous pouvez intégrer ces appareils à Defender entreprise.<br/><br/>La possibilité d’intégrer des points de terminaison exécutés Windows Server 2012 R2 et versions ultérieures est actuellement en préversion. |
+| Système d’exploitation | Pour gérer les appareils dans Microsoft Defender pour les PME, vos appareils doivent exécuter l’un des systèmes d’exploitation suivants : <br/>- Windows 10 Business ou version ultérieure <br/>- Windows 10 Professional ou version ultérieure <br/>- Windows 10 Entreprise ou version ultérieure <br/>- macOS (les trois versions les plus actuelles sont prises en charge)<br/><br/>Vérifiez que [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) est installé. <br/><br/>Si vous gérez déjà des appareils dans Microsoft Intune (ou Microsoft Endpoint Manager), vous pouvez intégrer ces appareils à Defender entreprise. |
 
 > [!NOTE]
 > [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) est utilisé pour gérer les autorisations utilisateur et les groupes d’appareils. Azure AD est inclus dans votre abonnement Defender Entreprise. 

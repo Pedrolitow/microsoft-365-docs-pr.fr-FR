@@ -21,14 +21,16 @@ ms.collection:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: L’administrateur peut apprendre à utiliser l’audit de partage dans le journal d’audit Microsoft 365 pour identifier les ressources partagées avec des utilisateurs extérieurs à leur organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7643dfae2e7e9fa871976cfe92bdf7028e756d3e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 785fdd2628a1e0bea9fd0361e7843939bf7b84a3
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934486"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999671"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>Utiliser le partage d’audit dans le journal d’audit
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Le partage est une activité clé dans SharePoint Online et OneDrive Entreprise, et il est largement utilisé dans les organisations. Les administrateurs peuvent utiliser l’audit de partage dans le journal d’audit pour déterminer comment le partage est utilisé dans leur organisation. 
   

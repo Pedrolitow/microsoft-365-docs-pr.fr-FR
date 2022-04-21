@@ -17,14 +17,16 @@ ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 ms.custom:
 - seo-marvel-apr2020
 description: Modifiez le registre Windows sur votre ordinateur local pour désactiver les rapports lorsque vous exportez les résultats d’une recherche de contenu à partir du portail de conformité Microsoft Purview.
-ms.openlocfilehash: d1b305f1d6ce0aba835d21695e59a4166ec96b7a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 5cd6816807af1b6da4fc8c41e7cdde7bc7f07d66
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936816"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000089"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>Désactiver les rapports lorsque vous exportez les résultats de recherche de contenu
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsque vous utilisez l’outil eDiscovery Export pour exporter les résultats d’une recherche de contenu dans le portail de conformité Microsoft Purview, l’outil crée et exporte automatiquement deux rapports qui contiennent des informations supplémentaires sur le contenu exporté. Ces rapports sont le fichier Results.csv et le fichier Manifest.xml (consultez la section [Forum aux questions sur la désactivation des rapports d’exportation](#frequently-asked-questions-about-disabling-export-reports) dans cette rubrique pour obtenir une description détaillée de ces rapports). Étant donné que ces fichiers peuvent être très volumineux, vous pouvez accélérer le temps de téléchargement et économiser de l’espace disque en empêchant l’exportation de ces fichiers. Pour ce faire, vous pouvez modifier le registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Si vous souhaitez inclure les rapports ultérieurement, vous pouvez modifier le paramètre de Registre. 
   

@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment afficher les détails, modifier et modifier en bloc la liste des consignats dans un cas eDiscovery (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 905773ac500a394b4a2394eb221e23a51a5c197e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2ab30e1343acd4718f80f816abc6ef850acf7215
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942488"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996831"
 ---
 # <a name="manage-custodians-in-an-ediscovery-premium-case"></a>Gérer les consignats dans un cas eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La page **Consignations** de l’onglet **Sources de données** dans un cas de découverte électronique Microsoft Purview (Premium) contient une liste de tous les consignatateurs qui ont été ajoutés au cas. Une fois que vous avez ajouté des consignatateurs à un cas, les détails relatifs à chaque consignateur sont automatiquement collectés à partir de Azure Active Directory et sont visibles dans eDiscovery (Premium).
 
@@ -121,7 +123,7 @@ Pour déclencher le processus de réindexation pour traiter les éléments parti
 
 La réindexation des données des consignats est un processus de longue durée ; le travail correspondant qui est créé est nommé **Réindexation des données de consignation**. Vous pouvez suivre la progression de l’onglet **Travaux** ou de l’onglet **Consignations** en surveillant l’état dans la colonne **d’état du travail d’indexation** .
 
-Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Pour plus d’informations, voir :
 
 - [Utiliser les erreurs de traitement](processing-data-for-case.md)
 

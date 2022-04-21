@@ -16,14 +16,16 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs du cloud us government peuvent configurer un connecteur de données pour importer des données d’employés à partir du système de ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser les données RH dans les stratégies de gestion des risques internes pour vous aider à détecter les activités d’utilisateurs spécifiques susceptibles de poser une menace interne à votre organisation.
-ms.openlocfilehash: 76de79cd856c9f114d219ffefbc45cf5e7692d40
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3f3873830caea109cf09987a21791bb299a4bdaf
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934750"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000023"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Configurer un connecteur pour importer des données RH dans le gouvernement des États-Unis
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez configurer un connecteur de données dans le portail de conformité Microsoft Purview pour importer des données de ressources humaines (RH) dans votre organisation du gouvernement des États-Unis. Les données relatives aux RH incluent la date à laquelle un employé a présenté sa démission et la date du dernier jour de l’employé. Ces données RH peuvent ensuite être utilisées par les solutions de protection des informations Microsoft, telles que la [solution de gestion des risques internes](insider-risk-management.md), pour protéger votre organisation contre les activités malveillantes ou le vol de données au sein de votre organisation. La configuration d’un connecteur RH consiste à créer une application dans Azure Active Directory utilisée pour l’authentification par connecteur, à créer un fichier de mappage CSV qui contient vos données RH, à créer un connecteur de données dans le centre de conformité, puis à exécuter un script (planifié) qui ingère les données RH dans le fichier CSV dans le cloud Microsoft. Ensuite, le connecteur de données est utilisé par l’outil de gestion des risques internes pour accéder aux données RH qui ont été importées dans votre Microsoft 365 organisation du gouvernement des États-Unis.
 

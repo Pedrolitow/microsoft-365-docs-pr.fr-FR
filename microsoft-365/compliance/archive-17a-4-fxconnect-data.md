@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur DataParser 17a-4 FX Connecter pour importer et archiver des données FX Connecter dans Microsoft 365.
-ms.openlocfilehash: 6317657228c00a4dbb6c73d5211b13f4c4d2c790
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1b4bd9c6dd68364db13d5e9795277bf6d91fdced
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940794"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998173"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-fx-connect"></a>Configurer un connecteur pour archiver les données à partir de FX Connecter
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez fx [Connecter DataParser](https://www.17a-4.com/dataparser-roadmap/) de 17a-4 LLC pour importer et archiver des données de FX Connecter aux boîtes aux lettres utilisateur de votre organisation Microsoft 365. DataParser inclut un connecteur FX Connecter configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur FX Connecter DataParser convertit les données FX Connecter au format de message électronique, puis importe ces éléments dans des boîtes aux lettres utilisateur dans Microsoft 365.
 

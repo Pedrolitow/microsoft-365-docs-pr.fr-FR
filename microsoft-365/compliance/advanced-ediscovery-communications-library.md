@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Vous pouvez ajouter des modèles de communication de consignation (tels qu’un modèle de notification de conservation) dans eDiscovery (Premium) afin qu’ils puissent être utilisés dans tous les cas dans votre organisation.
-ms.openlocfilehash: be8311a9687eb4edb9cc44e15264808a2a05a69a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9ac944a3d845a770e35a84adcdc2f1f1dbefd172
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945150"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000595"
 ---
 # <a name="manage-custodian-communications-templates-in-ediscovery-premium"></a>Gérer les modèles de communication des consignatateurs dans eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsque vous ou d’autres utilisateurs créez une notification de conservation ou d’autres types de communications de consignation, vous deviez créer le document de communication à partir de zéro à l’aide de l’éditeur de communications sous l’onglet **Communications** dans un cas eDiscovery (Premium). À présent, nous avons publié une nouvelle fonctionnalité qui vous permet de créer des modèles de communication qui peuvent être utilisés pour créer des communications dans tous les cas de votre organisation. Une fois les modèles de communication créés, ils sont disponibles pour être utilisés dans un cas. Cela signifie que les parajuristes ou d’autres utilisateurs qui créent des communications de consignat ne doivent pas commencer de zéro pour générer une notification. Au lieu de cela, ils peuvent sélectionner un modèle pour générer la notification envoyée à un consignateur.
 

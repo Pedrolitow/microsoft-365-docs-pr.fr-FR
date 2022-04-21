@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment les administrateurs peuvent configurer & utiliser un connecteur natif pour importer des données à partir d’une page d’entreprise LinkedIn vers Microsoft 365.
-ms.openlocfilehash: de39d0e3e95164a39f9aed1a227ab15f6e4fd7d6
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f4def1c8946c8b09f1ba543762026572ceb229b6
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937232"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998041"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurer un connecteur pour archiver des données LinkedIn
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez un connecteur dans le portail de conformité Microsoft Purview pour importer et archiver des données à partir de pages LinkedIn Company. Une fois que vous avez configuré et configuré un connecteur, il se connecte au compte pour la page LinkedIn Company spécifique une fois toutes les 24 heures. Le connecteur convertit les messages publiés sur la page Entreprise en message électronique, puis importe ces éléments dans une boîte aux lettres dans Microsoft 365.
 

@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 37c0ae081223f321c87cafa18d0acbbbc6adb511
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3335e437a659eab984943adda31abdb344908c1c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942136"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997645"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Entraîner un modèle de codage prédictif (préversion)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Après avoir créé un modèle de codage prédictif dans Microsoft Purview eDiscovery (Premium), l’étape suivante consiste à effectuer la première série d’entraînement pour entraîner le modèle sur le contenu pertinent et non pertinent dans votre jeu de révision. Une fois la première série d’entraînement terminée, vous pouvez effectuer des cycles d’entraînement ultérieurs pour améliorer la capacité du modèle à prédire le contenu pertinent et non pertinent.
 
@@ -91,6 +93,6 @@ Une fois que vous avez effectué les cycles d’entraînement suivants (après l
 
 - Le modèle mis à jour retraite chaque élément du jeu de révision et attribue à chaque élément un score de prédiction mis à jour.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Après avoir effectué la première série d’entraînement, vous pouvez effectuer d’autres cycles d’entraînement ou appliquer le filtre de score de prédiction du modèle au jeu de révision pour afficher les éléments que le modèle a prédits comme pertinents ou non pertinents. Pour plus d’informations, consultez [Appliquer un filtre de score de prédiction à un jeu de révision](predictive-coding-apply-prediction-filter.md).

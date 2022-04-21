@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir du connecteur Webex Teams de Veritas dans Microsoft 365. Ce connecteur vous permet d’archiver les données de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 1aa1a0ddd94aa2308c4884921138b12b0c152bab
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6b879e62d2c94d9b61c47674be364927ea9dc1cc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942862"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999319"
 ---
 # <a name="set-up-a-connector-to-archive-webex-teams-data"></a>Configurer un connecteur pour archiver des données webex Teams
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez un connecteur Veritas dans le portail de conformité Microsoft Purview pour importer et archiver des données de Webex Teams vers des boîtes aux lettres utilisateur de votre organisation Microsoft 365. Veritas fournit un connecteur [Webex Teams](https://globanet.com/webex-teams/) configuré pour capturer les éléments de communication Webex Teams et les importer dans Microsoft 365. Le connecteur convertit le contenu des Teams Webex, tels que les conversations 1:1, les conversations de groupe, les conversations de canal et les pièces jointes du compte Webex Teams de votre organisation, en un format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
 

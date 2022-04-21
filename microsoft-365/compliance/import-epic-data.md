@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données d’enregistrements de santé électroniques (DSE) à partir du système Epic de votre organisation vers Microsoft 365. Cela vous permet d’utiliser les données DSE Epic dans les stratégies de gestion des risques internes pour vous aider à détecter l’activité d’accès non autorisé aux données des patients par vos employés.
-ms.openlocfilehash: ce1e56d61d7930d5f604f52edc68cf480f6daa1a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1dfcedbc6242f16ce476dddd642567bef69c966f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932020"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000133"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Configurer un connecteur pour importer des données d’audit d’ehR Epic (préversion)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez configurer un connecteur de données dans le portail de conformité Microsoft Purview pour importer des enregistrements d’audit pour l’activité des utilisateurs dans le système Epic Electronic Healthcare Records (EHR) de votre organisation. Les enregistrements d’audit de votre système Epic EHR incluent des enregistrements pour les événements liés à l’accès aux dossiers d’intégrité d’un patient. Les enregistrements d’audit des DSE épiques peuvent être utilisés par la [Microsoft 365 solution de gestion des risques internes](insider-risk-management.md) pour protéger votre organisation contre tout accès non autorisé aux informations sur les patients.
 
@@ -66,7 +68,7 @@ L’étape suivante consiste à créer un fichier texte qui contient des informa
 
 Le tableau suivant répertorie les champs qui sont nécessaires pour activer les scénarios de gestion des risques internes. Un sous-ensemble de ces champs est obligatoire. Ces champs sont mis en surbrillance avec un astérisque (*). Si l’un des champs obligatoires est manquant dans le fichier texte, le fichier n’est pas validé et les données du fichier ne sont pas importées.
 
-|Champ|Catégorie|
+|Field|Catégorie|
 |:----|:----------|
 | ACCESS_LOG. *<br/>ACCESS_TIME ACCESS_LOG_METRIC. METRIC_NAME*<br/>ACCESS_LOG. WORKSTATION_ID<br/>ZCMETRIC\_\_ GROUP.NAME<br/>ZCACCESS\_\_ ACTION.NAME |Ces champs sont utilisés pour identifier les événements d’activité d’accès dans votre système Epic EHR.|
 | PATIENT. PAT_MRN_ID<br/>PATIENT. PAT_FIRST_NAME* <br/>PATIENT. PAT_MIDDLE_NAME <br/>PATIENT. PAT_LAST_NAME* <br/>PATIENT. ADD_LINE_1* <br/>PATIENT. ADD_LINE_2  <br/>PATIENT. VILLE* <br/>PATIENT.ZIP*  <br/>ZC_STATE.NAME <br/>ZC_COUNTRY.NAME <br/>CLARITY_DEP. DEPARTMENT_NAME              | Ces champs sont utilisés pour identifier les informations de profil des patients.|

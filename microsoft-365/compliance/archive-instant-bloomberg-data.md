@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment les administrateurs peuvent configurer et utiliser un connecteur de données pour importer et archiver des données à partir de l’outil de conversation Bloomberg instantané dans Microsoft 365.
-ms.openlocfilehash: 3729c36df27e6def709dc5d2c976885c3db5a518
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 22b581c332e8accad567bb7eb8b29e57ec981044
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938662"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998129"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Configurer un connecteur pour archiver des données Instant Bloomberg
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez un connecteur natif dans le portail de conformité Microsoft Purview pour importer et archiver les données de conversation des services financiers à partir de l’outil [de collaboration Bloomberg instantané](https://www.bloomberg.com/professional/product/collaboration/) . Après avoir configuré et configuré un connecteur, il se connecte au site FTP sécurisé Bloomberg (SFTP) de votre organisation une fois par jour, convertit le contenu des messages de conversation au format de message électronique, puis importe ces éléments dans des boîtes aux lettres dans Microsoft 365.
 

@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les balises intelligentes vous permettent d’appliquer les fonctionnalités de Machine Learning lors de l’examen du contenu dans un cas eDiscovery (Premium). Utilisez des groupes de balises actives pour afficher les résultats des modèles de détection de Machine Learning, tels que le modèle de privilège avocat-client.
-ms.openlocfilehash: 9fd4a53df00bcb096a885ed311e4fb4ed365725e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1adea2404192b9e715ad021f70ba07f7e64a89d5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934618"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999737"
 ---
 # <a name="set-up-smart-tags-in-ediscovery-premium"></a>Configurer des balises actives dans eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Les fonctionnalités de Machine Learning (ML) dans Microsoft Purview eDiscovery (Premium) peuvent vous aider à rendre le processus de décision plus efficace lors de l’examen des documents de cas dans un ensemble de révisions. Les balises intelligentes sont un moyen d’apporter les fonctionnalités ML à l’endroit où les décisions sont enregistrées : lors de l’étiquetage des documents lors de la révision. Lorsque vous créez un groupe de balises actives, les décisions qui sont le résultat du modèle ML que vous avez associé au groupe de balises actives s’affichent en ligne avec les balises du groupe de balises. Cela permet de voir les informations de résultats ML en ligne lorsque vous examinez des documents spécifiques.
 

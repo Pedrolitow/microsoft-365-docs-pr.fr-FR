@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 description: Découvrez comment importer des données non Microsoft 365 dans un ensemble de révisions à des fins d’analyse dans un cas eDiscovery (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b9d27e2d1e306c189aa28a2c331a60c5b4d0c5dc
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d7167f85760d0c1cc05e130413dbcdae9e0e3973
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944742"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996853"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>Charger des données non-Microsoft 365 dans un groupe de révision
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Tous les documents que vous devez analyser dans Microsoft Purview eDiscovery (Premium) ne se trouvent pas dans Microsoft 365. Avec la fonctionnalité d’importation de données non Microsoft 365 dans eDiscovery (Premium), vous pouvez charger des documents qui ne se trouvent pas dans Microsoft 365 dans un jeu de révision. Cet article vous montre comment intégrer vos documents non Microsoft 365 dans eDiscovery (Premium) à des fins d’analyse.
 

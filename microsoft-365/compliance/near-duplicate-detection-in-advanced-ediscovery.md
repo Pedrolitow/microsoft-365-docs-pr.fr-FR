@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Utilisez la détection en quasi-double pour regrouper des documents textuels similaires lors de l’analyse des données de cas dans eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f7976f5fdf023c30f7f96264ecc2b744656e9091
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e22444845005f4cf155340e13856722976715d91
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949408"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997601"
 ---
 # <a name="near-duplicate-detection-in-ediscovery-premium"></a>Détection des doublons proches dans eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Considérez un ensemble de documents à examiner dans lequel un sous-ensemble est basé sur le même modèle et a principalement le même langage réutilisable, avec quelques différences ici et là. Si un réviseur pouvait identifier ce sous-ensemble, examiner l’un d’eux de manière approfondie et examiner les différences pour le reste, il n’aurait pas manqué d’informations uniques tout en prenant seulement une fraction de temps qui l’aurait amené à lire tous les documents couverts pour couvrir. La détection des quasi-doublons regroupe les documents textuellement similaires afin de renforcer l’efficacité du processus d’examen.
 

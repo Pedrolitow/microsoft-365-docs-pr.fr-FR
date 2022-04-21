@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment gérer des ensembles de révision afin de pouvoir analyser, interroger, afficher, baliser et exporter des données dans un cas eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 60e43d4d4983dd5171ed38f26096fba979c0f98c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 64970cb3302c47dbab394b974bf1df8358ad3755
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935585"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999041"
 ---
 # <a name="manage-review-sets-in-ediscovery-premium"></a>Gérer les jeux de révision dans eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Les ensembles de révision sont un ensemble statique de documents dans lequel vous pouvez analyser, interroger, afficher, baliser et exporter des données dans un cas. Pour plus d’informations sur l’exécution de ces tâches, consultez :
 
@@ -59,4 +61,4 @@ Il existe trois façons d’ajouter des données à un jeu de révision dans un 
 3. [Ajouter des données à partir d’un groupe de révision à un autre groupe de révision.](add-data-to-review-set-from-another-review-set.md)
 
 > [!NOTE]
-> Vous ne pouvez pas supprimer d’éléments d’un ensemble de révisions et vous ne pouvez pas supprimer des ensembles de révision d’un cas. Pour supprimer un jeu de révision (et supprimer les données qu’il contient), vous devez supprimer le cas eDiscovery (Premium) dans lequel se trouve le jeu de révision. Pour plus d’informations, consultez [Fermer ou supprimer un cas eDiscovery (Premium).](close-or-delete-case.md)
+> Vous ne pouvez pas supprimer d’éléments d’un ensemble de révisions et vous ne pouvez pas supprimer des ensembles de révision d’un cas. Pour supprimer un jeu de révision (et supprimer les données qu’il contient), vous devez supprimer le cas eDiscovery (Premium) dans lequel se trouve le jeu de révision. Pour plus d’informations, consultez [Fermer ou supprimer un cas eDiscovery (Premium)](close-or-delete-case.md).

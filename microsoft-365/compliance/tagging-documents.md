@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: L’étiquetage des documents dans un ensemble de révisions permet de supprimer le contenu inutile et d’identifier le contenu pertinent dans un cas eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c1d30cdefe0ae93fe7c87a1c5ecc9712d80bc3fb
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6130a50c966fe23b1218c98efde381dc64fcb009
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64931602"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996702"
 ---
 # <a name="tag-documents-in-a-review-set-in-ediscovery-premium"></a>Baliser des documents dans un ensemble de révisions dans eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 L’organisation du contenu dans un ensemble de révisions est importante pour effectuer différents flux de travail dans le processus eDiscovery. Cela inclut les opérations suivantes :
 

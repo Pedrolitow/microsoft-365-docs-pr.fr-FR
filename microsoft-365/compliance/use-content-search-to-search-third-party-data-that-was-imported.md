@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Utilisez l’outil recherche de contenu eDiscovery pour rechercher des éléments importés dans des boîtes aux lettres dans Microsoft 365 à partir d’une source de données tierce en créant des requêtes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 29c033f7d31aca14b527aa6b7fd83d533a5875e7
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9a6a7bcdf0cbd7f14e20cc8400e5d834dc7da0a1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939452"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000903"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Utiliser la recherche de contenu pour rechercher des données tierces importées par un connecteur partenaire personnalisé
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez utiliser [l’outil de recherche de contenu eDiscovery](content-search.md) dans le portail de conformité Microsoft Purview pour rechercher des éléments importés dans des boîtes aux lettres dans Microsoft 365 à partir d’une source de données tierce. Vous pouvez créer une requête pour rechercher tous les éléments de données tiers importés ou créer une requête pour rechercher des éléments de données tiers spécifiques. En outre, vous pouvez également créer une stratégie de rétention basée sur des requêtes ou une conservation eDiscovery basée sur une requête pour conserver des données tierces.
   

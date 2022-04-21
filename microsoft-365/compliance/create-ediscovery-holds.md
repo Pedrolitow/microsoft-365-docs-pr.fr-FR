@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez créer une conservation associée à un cas eDiscovery (Standard) dans Microsoft 365 pour conserver le contenu pertinent pour une enquête ou une affaire juridique.
-ms.openlocfilehash: 4448c9b8a55466c0cf626deff6e69acd247a5814
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 87a75923ccc270e7b9802ae5d366dd2930a84d82
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938266"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001233"
 ---
 # <a name="create-an-ediscovery-hold"></a>Créer une suspension de cas eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez utiliser un cas Microsoft Purview eDiscovery (Standard) pour créer des conservations afin de conserver le contenu susceptible d’être pertinent pour le cas. Vous pouvez placer une conservation sur les boîtes aux lettres Exchange et les comptes OneDrive Entreprise des personnes que vous examinez dans le cas. Vous pouvez également placer une conservation sur les boîtes aux lettres et les sites associés aux groupes Microsoft Teams, Office 365 et Yammer. Lorsque vous placez des emplacements de contenu en attente, le contenu est conservé jusqu’à ce que vous supprimiez l’emplacement de contenu de la conservation ou jusqu’à ce que vous supprimiez la conservation.
 
@@ -223,7 +225,7 @@ Le tableau suivant répertorie les limites pour les cas eDiscovery et les conser
 
   | Description de la limite | Limite |
   |:-----|:-----|
-  |Nombre maximal de cas pour une organisation.  <br/> |Aucune limite  <br/> |
+  |Nombre maximal de cas pour une organisation.  <br/> |Sans limite  <br/> |
   |Nombre maximal de stratégies de conservation eDiscovery pour une organisation. Cette limite inclut le total combiné des stratégies de conservation dans les cas eDiscovery (Standard) et eDiscovery (Premium).  <br/> |10 <sup>0001</sup>  <br/> |
   |Nombre maximal de boîtes aux lettres dans une conservation eDiscovery unique. Cette limite inclut le total combiné des boîtes aux lettres utilisateur et les boîtes aux lettres associées aux groupes Groupes Microsoft 365, Microsoft Teams et Yammer.  <br/> |1 000  <br/> |
   |Nombre maximal de sites dans une seule conservation eDiscovery. Cette limite inclut le total combiné des sites OneDrive Entreprise, des sites SharePoint et des sites associés aux groupes Groupes Microsoft 365, Microsoft Teams et Yammer.  <br/> |100  <br/> |

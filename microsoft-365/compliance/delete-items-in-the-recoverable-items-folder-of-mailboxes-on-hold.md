@@ -20,14 +20,16 @@ description: Découvrez comment les administrateurs peuvent supprimer des élém
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 29519b61d4a32b03772cfddba9183d3568afc209
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b421be087980c7878b79e3dbc03759ec45c546d8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950244"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001189"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Supprimer des éléments en attente dans le dossier Éléments récupérables des boîtes aux lettres basées sur le cloud
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Le dossier Éléments récupérables d’une boîte aux lettres Exchange Online existe pour vous protéger contre les suppressions accidentelles ou malveillantes. Il est également utilisé pour stocker les éléments qui sont conservés et accessibles par les fonctionnalités de conformité, telles que les conservations et les recherches eDiscovery. Toutefois, dans certaines situations, les organisations peuvent avoir des données qui ont été conservées involontairement dans le dossier Éléments récupérables qu’elles doivent supprimer. Par exemple, un utilisateur peut envoyer ou transférer sans le savoir un message électronique contenant des informations sensibles ou des informations susceptibles d’avoir de graves conséquences commerciales. Même si le message est supprimé définitivement, il peut être conservé indéfiniment, car une conservation légale a été placée sur la boîte aux lettres. Ce scénario est connu sous le nom de *débordement de données*, car des données ont été *accidentellement propagées* dans Office 365. Dans ces situations, vous pouvez supprimer des éléments dans le dossier Éléments récupérables d’un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est mise en attente avec l’une des différentes fonctionnalités de conservation dans Office 365. Ces types de conservations incluent les conservations de litige, les conservations In-Place, les conservations eDiscovery et les stratégies de rétention créées dans le centre de sécurité et de conformité dans Office 365 ou Microsoft 365.
 
@@ -237,7 +239,7 @@ Pour afficher la valeur de la propriété *ComplianceTagHoldApplied, exécutez* 
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-Une fois que vous avez identifié qu’une boîte aux lettres est en attente parce qu’une étiquette de rétention est appliquée à un dossier ou un élément, vous pouvez utiliser l’outil de recherche de contenu dans le portail de conformité pour rechercher des éléments étiquetés à l’aide de la condition **d’étiquette rétention** . Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Une fois que vous avez identifié qu’une boîte aux lettres est en attente parce qu’une étiquette de rétention est appliquée à un dossier ou un élément, vous pouvez utiliser l’outil de recherche de contenu dans le portail de conformité pour rechercher des éléments étiquetés à l’aide de la condition **d’étiquette rétention** . Pour plus d’informations, voir :
 
 - Section « Utilisation de la recherche de contenu pour rechercher tout le contenu avec une étiquette de rétention spécifique » dans [En savoir plus sur les stratégies de rétention et les étiquettes de rétention](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
 

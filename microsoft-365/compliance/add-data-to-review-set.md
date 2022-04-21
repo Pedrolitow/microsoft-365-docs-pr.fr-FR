@@ -18,14 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment ajouter des résultats de recherche ou des exemples de ces résultats de recherche à un ensemble de cas eDiscovery (Premium).
-ms.openlocfilehash: 7b754aa09390d041de44cd2e82ed9d1f93eede7e
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: d41697f18360b277b060dd537020f9e04ef341ec
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973748"
+ms.locfileid: "64997733"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Ajouter des résultats de recherche à un jeu à réviser
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsque vous êtes satisfait des résultats d’une recherche et que vous êtes prêt à examiner et analyser ces résultats de recherche, vous pouvez les ajouter à un ensemble de révisions dans le cas présent. La copie des données d’origine dans le jeu de révision facilite également le processus de révision et d’analyse en vous fournissant des outils d’analyse avancés tels que la détection des thèmes, la détection en quasi-double et l’identification des threads de messagerie. Vous pouvez également ajouter des données provenant de sources de données non Microsoft 365 à un jeu de révision afin de pouvoir examiner ces données en plus des données que vous collectez à partir de Microsoft 365.
 

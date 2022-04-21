@@ -18,14 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser eDiscovery (Premium) pour envoyer et suivre des notifications de conservation légale par e-mail, ainsi que surveiller l’état des obligations.
-ms.openlocfilehash: 4be0781a273f842c043276a19688f36b96cfdb28
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: db13ed4a148238dbb677ece55999fd3fb907a1a1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947404"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999583"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Reconnaitre une notification de conservation
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsque vous répondez à une demande ou à une enquête réglementaire, vous devrez peut-être informer les consignataires de leur obligation de conserver les informations stockées électroniquement (ESI) et tout élément susceptible d’être pertinent pour une affaire juridique active ou imminente. Une fois envoyées, les équipes juridiques doivent savoir que chaque gardien a reçu, lu, compris et accepté de suivre les instructions données.
 

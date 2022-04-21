@@ -1,5 +1,5 @@
 ---
-title: Audit (Premium) dans Microsoft 365
+title: Audit de Microsoft Purview (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,14 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Audit de Microsoft Purview (Premium) fournit de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et d’investigation.
-ms.openlocfilehash: 5e224d4d7073f96f4dc17d48f6caf19840905d06
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4f936977c71a933dd05e5c0b2e0d2111b03bc8f7
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941058"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999495"
 ---
 # <a name="microsoft-purview-audit-premium"></a>Audit de Microsoft Purview (Premium)
+
+> [!TIP]
+> *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview pendant 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins en matière de conformité. Les clients Microsoft 365 E3 et Office 365 E3 peuvent commencer maintenant sur le [Hub des versions d’évaluation du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions de la version d’évaluation](compliance-easy-trials.md).
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La [fonctionnalité d'Audit](search-the-audit-log-in-security-and-compliance.md) de Microsoft Purview offre aux organisations une visibilité dans de nombreux types d’activités auditées dans différents services de Microsoft 365. L’audit de Microsoft Purview (Premium) permet aux organisations d’effectuer des enquêtes de conformité et d’investigation en augmentant la rétention des journaux d’audit requis pour mener une enquête, en fournissant l’accès aux événements essentiels (à l’aide de la recherche dans les journaux d’audit dans le portail de conformité Microsoft Purview et l’API Activité de gestion Office 365) qui permettent de déterminer l’étendue de la compromission et un accès plus rapide à l’API Activité de gestion Office 365.
 

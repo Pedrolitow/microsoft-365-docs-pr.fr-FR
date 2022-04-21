@@ -20,14 +20,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment configurer l’audit (Premium) afin que vous puissiez effectuer des investigations judiciaires lorsque des comptes d’utilisateurs sont compromis ou pour enquêter sur d’autres incidents liés à la sécurité.
-ms.openlocfilehash: 9e758ce6a830569b007ee024e17abdddbce01f13
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6f4f9953c88b1d994d4f033629cc89a6529fb9de
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945844"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998835"
 ---
 # <a name="set-up-microsoft-purview-audit-premium"></a>Configurer l’audit Microsoft Purview (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Si votre organisation dispose d’un abonnement et d’une licence d’utilisateur final qui prend en charge l’audit (Premium), effectuez les étapes suivantes pour configurer et utiliser les fonctionnalités supplémentaires dans Audit (Premium).
 
@@ -35,7 +37,7 @@ Si votre organisation dispose d’un abonnement et d’une licence d’utilisate
 
 ## <a name="step-1-set-up-audit-premium-for-users"></a>Étape 1 : Configurer l’audit (Premium) pour les utilisateurs
 
-Les fonctionnalités d’audit (Premium) telles que la possibilité de consigner des événements essentiels tels que MailItemsAccessed et Send nécessitent une licence E5 appropriée attribuée aux utilisateurs. De plus, l’application/plan de service d’audit avancé doit être activé pour ces utilisateurs. Pour vérifier que l’application d’audit avancée est attribuée aux utilisateurs, procédez comme suit pour chaque utilisateur :
+Les fonctionnalités d’audit (Premium) telles que la possibilité d’enregistrer des événements importants tels que MailItemsAccessed et envoyer nécessitent une licence E5 appropriée attribuée aux utilisateurs. De plus, l’application/plan de service d’audit avancé doit être activé pour ces utilisateurs. Pour vérifier que l’application d’audit avancée est attribuée aux utilisateurs, procédez comme suit pour chaque utilisateur :
 
 1. Dans le Centre d'administration Microsoft 365, accédez aux **utilisateurs UsersActive** > , puis sélectionnez un utilisateur.<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank"></a>
 

@@ -22,14 +22,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
 description: Découvrez comment exécuter un script pour ajouter des boîtes aux lettres & OneDrive Entreprise sites à une nouvelle conservation associée à un cas eDiscovery dans le portail de conformité Microsoft Purview.
-ms.openlocfilehash: 8835e853825786668ba1b7617078d899c0773779
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 70ec2481e8fa352be47544cd2fe6a772c2fbb325
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934526"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000881"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-ediscovery-standard-case"></a>Utiliser un script pour ajouter des utilisateurs à une conservation dans un cas eDiscovery (Standard)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Le Centre de sécurité & conformité PowerShell fournit des applets de commande qui vous permettent d’automatiser les tâches fastidieuses liées à la création et à la gestion des cas eDiscovery. Actuellement, l’utilisation de l’affaire Microsoft Purview eDiscovery (Standard) dans le portail de conformité Microsoft Purview pour mettre un grand nombre d’emplacements de contenu de consignation en attente prend du temps et de la préparation. Par exemple, avant de créer une conservation, vous devez collecter l’URL de chaque site OneDrive Entreprise que vous souhaitez mettre en attente. Ensuite, pour chaque utilisateur que vous souhaitez mettre en attente, vous devez ajouter sa boîte aux lettres et son site OneDrive Entreprise à la conservation. Vous pouvez utiliser le script de cet article pour automatiser ce processus.
   

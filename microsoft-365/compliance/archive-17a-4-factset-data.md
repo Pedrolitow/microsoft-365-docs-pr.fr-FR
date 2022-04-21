@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur FactSet DataParser 17a-4 pour importer et archiver des données FactSet dans Microsoft 365.
-ms.openlocfilehash: 71f0ddfedb5fa3fb075ce55acaf42a95c3344e16
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c191cb1e25716bc4f4d0d948a5a0d863c55607ac
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940926"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998339"
 ---
 # <a name="set-up-a-connector-to-archive-factset-data"></a>Configurer un connecteur pour archiver les données FactSet
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez [FactSet DataParser](https://www.17a-4.com/factset-dataparser/) de 17a-4 LLC pour importer et archiver des données de la plateforme FactSet vers des boîtes aux lettres utilisateur de votre organisation Microsoft 365. DataParser inclut un connecteur FactSet configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur DataParser FactSet convertit les données FactSet au format d’e-mail, puis importe ces éléments dans des boîtes aux lettres utilisateur dans Microsoft 365.
 
