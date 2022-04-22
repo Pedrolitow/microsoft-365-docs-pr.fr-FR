@@ -19,14 +19,16 @@ ms.custom:
 - admindeeplinkDEFENDER
 ROBOTS: noindex,nofollow
 description: Nous publions de nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365. Nous mettons également remplacé deux stratégies d’alerte existantes qui ont été mises hors service.
-ms.openlocfilehash: 339d16f7cd4e481d408a13d2e738cdef9fc991bf
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 78f359e273054b7b103fc61bbee9b1555ad843da
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939628"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991949"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Defender pour Office 365 présente de nouvelles stratégies d’alerte améliorées relatives aux détections postérieures à la remise. Ceci inclut des améliorations aux playbooks Enquêtes et réponses automatisées (AIR) qui y sont associés. En outre, nous modifions la classification de gravité pour six stratégies d’alerte par défaut pour mieux aligner les alertes générées par ces stratégies sur leur impact dans votre organisation.
 
