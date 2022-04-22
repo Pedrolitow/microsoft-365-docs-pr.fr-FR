@@ -1,5 +1,5 @@
 ---
-title: Afficher et gérer les utilisateurs à risque
+title: Afficher et gérer les utilisateurs à risque dans Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment afficher et gérer les utilisateurs à risque.
-ms.openlocfilehash: 0b7567404b909927a80b69184299baae131f8eb7
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: dad86fedeb27f13752bcd1c07efd0d51aa33cf2a
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824265"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022930"
 ---
-# <a name="view-and-manage-risky-users"></a>Afficher et gérer les utilisateurs à risque
+# <a name="view-and-manage-risky-users-in-microsoft-365-lighthouse"></a>Afficher et gérer les utilisateurs à risque dans Microsoft 365 Lighthouse
 
 Microsoft collecte et analyse des billions de signaux de connexion utilisateur chaque jour. Ces signaux sont utilisés pour aider à créer de bons modèles de comportement de connexion utilisateur et à identifier les tentatives de connexion potentiellement risquées. Azure Active Directory (Azure AD) Identity Protection utilise ces signaux pour examiner les tentatives de connexion des utilisateurs et prendre des mesures en cas d’activité suspecte.
 
@@ -44,7 +44,7 @@ Les conditions suivantes doivent être remplies pour que les utilisateurs puisse
 
 - Le locataire client doit disposer d’une licence Azure AD Premium pour chaque utilisateur. Pour plus d’informations sur les licences qui prennent en charge Azure AD Identity Protection, consultez [Qu’est-ce qu’Identity Protection ?](/azure/active-directory/identity-protection/overview-identity-protection)
 
-- Le locataire client doit être actif dans Microsoft 365 Lighthouse. Pour déterminer si un locataire est actif, consultez [Microsoft 365 Lighthouse vue d’ensemble de la page Locataires](m365-lighthouse-tenant-list-overview.md).
+- Le locataire client doit être actif dans Microsoft 365 Lighthouse. Pour déterminer si un locataire est actif, consultez [vue d’ensemble de la page Windows 365 (PC cloud) dans Microsoft 365 Lighthouse](m365-lighthouse-tenant-list-overview.md).
 
 ## <a name="review-detected-risks-and-take-action"></a>Examiner les risques détectés et prendre des mesures
 

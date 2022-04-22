@@ -17,17 +17,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Les administrateurs peuvent en savoir plus sur les informations sur l’usurpation d’Exchange Online Protection (EOP).
+description: Les administrateurs peuvent en savoir plus sur l’information sur l’usurpation d’identité dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ba31c5022cb8f449ce9e1e1a4ba65e87afd0b464
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 30a9a7a9714ed5e071c53a6b1641204fd8c4fafe
+ms.sourcegitcommit: 363bdc517bd2564c6420cf21f352e97079f950e0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64471448"
+ms.lasthandoff: 04/22/2022
+ms.locfileid: "65031814"
 ---
-# <a name="spoof-intelligence-insight-in-eop"></a>Informations sur l’intelligence contre l’usurpation d’adresse dans EOP
+# <a name="spoof-intelligence-insight-in-eop"></a>Informations sur l’intelligence d’usurpation d’identité dans EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,47 +37,49 @@ ms.locfileid: "64471448"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et ne sont pas disponibles dans toutes les organisations. Si votre organisation ne dispose pas des fonctionnalités décrites dans cet article, consultez l’ancienne expérience de gestion de l’usurpation d’adresse chez [Manage spoof senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
+> Les fonctionnalités décrites dans cet article sont en préversion, sont susceptibles d’être modifiées et ne sont pas disponibles dans toutes les organisations. Si votre organisation n’a pas les fonctionnalités décrites dans cet article, consultez l’ancienne expérience de gestion de l’usurpation d’identité dans [Gérer les expéditeurs usurpés à l’aide de la stratégie d’usurpation d’identité et de l’information sur l’usurpation d’identité dans EOP](walkthrough-spoof-intelligence-insight.md).
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, les messages électroniques entrants sont automatiquement protégés contre l’usurpation d’adresses. EOP utilise **la veille contre** l’usurpation d’adresse dans le cadre de la protection globale de votre organisation contre le hameçonnage. Pour plus d’informations, voir [Protection contre l’usurpation d’adresses dans EOP](anti-spoofing-protection.md).
+Dans Microsoft 365 organisations avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, les messages électroniques entrants sont automatiquement protégés contre l’usurpation d’identité. EOP utilise **le renseignement sur l’usurpation** d’identité dans le cadre de la défense globale de votre organisation contre le hameçonnage. Pour plus d’informations, consultez [la protection contre l’usurpation d’identité dans EOP](anti-spoofing-protection.md).
 
-Lorsqu’un expéditeur usurpe une adresse de messagerie, il semble qu’il s’agit d’un utilisateur dans l’un des domaines de votre organisation ou d’un utilisateur d’un domaine externe qui envoie du courrier électronique à votre organisation. Les personnes malveillantes qui usurpent des expéditeurs pour envoyer du courrier indésirable ou du hameçonnage doivent être bloquées. Toutefois, il existe des scénarios dans lequel des expéditeurs légitimes usurpent l’adresse. Par exemple :
+Lorsqu’un expéditeur usurpe une adresse e-mail, il semble qu’il s’agit d’un utilisateur dans l’un des domaines de votre organisation ou d’un utilisateur d’un domaine externe qui envoie des e-mails à votre organisation. Les attaquants qui usurpent les expéditeurs pour envoyer du courrier indésirable ou de hameçonnage doivent être bloqués. Toutefois, dans certains scénarios, les expéditeurs légitimes s’usurpent. Par exemple :
 
-- Scénarios légitimes pour l’usurpation d’un domaine interne :
-  - Les expéditeurs tiers utilisent votre domaine pour envoyer des messages en bloc à vos propres employés pour les sondages de l’entreprise.
-  - Une société externe génère et envoie des mises à jour publicitaires ou des mises à jour de produit en votre nom.
-  - Un assistant doit régulièrement envoyer des courriers électroniques à une autre personne au sein de votre organisation.
-  - Une application interne envoie des notifications par courrier électronique.
+- Scénarios légitimes pour usurper des domaines internes :
+  - Les expéditeurs tiers utilisent votre domaine pour envoyer des messages en bloc à vos propres employés pour les sondages d’entreprise.
+  - Une entreprise externe génère et envoie des mises à jour de publicités ou de produits en votre nom.
+  - Un assistant doit envoyer régulièrement un e-mail à une autre personne au sein de votre organisation.
+  - Une application interne envoie des notifications par e-mail.
 
-- Scénarios légitimes d’usurpation de domaines externes :
-  - L’expéditeur figure sur une liste de diffusion (également appelée liste de discussion) et la liste de diffusion relaie le courrier électronique de l’expéditeur d’origine à tous les participants de la liste de diffusion.
-  - Une société externe envoie du courrier électronique pour le compte d’une autre société (par exemple, un rapport automatisé ou une société de logiciels en tant que service).
+- Scénarios légitimes pour usurper des domaines externes :
+  - L’expéditeur se trouve sur une liste de diffusion (également appelée liste de discussion) et la liste de diffusion transmet l’e-mail de l’expéditeur d’origine à tous les participants de la liste de diffusion.
+  - Une entreprise externe envoie un e-mail au nom d’une autre entreprise (par exemple, un rapport automatisé ou une société de logiciel en tant que service).
 
-Vous pouvez utiliser la  veille contre l’usurpation d’identité dans le portail Microsoft 365 Defender pour identifier rapidement les expéditeurs usurpés qui vous envoient légitimement des messages électroniques non authentifiés (messages provenant de domaines ne réussissant pas les vérifications SPF, DKIM ou DMARC) et autoriser manuellement ces expéditeurs.
+Vous pouvez utiliser **l’information sur l’usurpation d’identité** dans le portail Microsoft 365 Defender pour identifier rapidement les expéditeurs usurpés qui vous envoient légitimement des e-mails non authentifiés (messages provenant de domaines qui ne passent pas les vérifications SPF, DKIM ou DMARC) et autoriser manuellement ces expéditeurs.
 
-En permettant aux expéditeurs connus d’envoyer des messages usurpés à partir d’emplacements connus, vous pouvez réduire les faux positifs (e-mail de qualité marqué comme faux). En surveillant les expéditeurs usurpés autorisés, vous fournissez une couche de sécurité supplémentaire pour empêcher les messages non sécurisés d’arriver dans votre organisation.
+En permettant aux expéditeurs connus d’envoyer des messages usurpés à partir d’emplacements connus, vous pouvez réduire les faux positifs (bon e-mail marqué comme incorrect). En surveillant les expéditeurs d’usurpation d’identité autorisés, vous fournissez une couche de sécurité supplémentaire pour empêcher l’arrivée de messages non sécurisés dans votre organisation.
 
-De même, vous pouvez examiner les expéditeurs usurpés qui ont été autorisés par la veille contre l’usurpation d’adresses et bloquer manuellement ces expéditeurs de l’analyse de l’usurpation d’intelligence.
+De même, vous pouvez examiner les expéditeurs usurpés qui ont été autorisés par le renseignement sur l’usurpation d’identité et bloquer manuellement ces expéditeurs de l’insight d’intelligence d’usurpation d’identité.
 
-Le reste de cet article explique comment utiliser les informations sur l’intelligence contre l’usurpation d’adresse dans le portail Microsoft 365 Defender et dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres en Exchange Online ; EOP Autonome PowerShell pour les organisations sans Exchange Online boîtes aux lettres).
+Le reste de cet article explique comment utiliser l’information sur l’usurpation d’identité dans le portail Microsoft 365 Defender et dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ; EOP PowerShell autonome pour les organisations sans Exchange Online boîtes aux lettres).
 
 > [!NOTE]
 >
-> - Seuls les expéditeurs usurpés qui ont été détectés par la veille contre l’usurpation d’adresse apparaissent dans l’aperçu de l’usurpation d’intelligence. Lorsque vous remplacez le verdict d’autoriser ou de bloquer dans l’insight, l’expéditeur usurpé devient une entrée d’accès ou de blocage manuelle  qui apparaît uniquement sous l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer. Vous pouvez également créer manuellement des entrées d’autoriser ou de bloquer des expéditeurs usurpés avant qu’ils ne soit détectés par la veille contre l’usurpation d’adresse. Pour plus d’informations, voir [Gérer liste rouge/verte du client dans EOP](tenant-allow-block-list.md).
+> - Seuls les expéditeurs usurpés qui ont été détectés par le renseignement sur l’usurpation d’identité apparaissent dans l’insight sur l’usurpation d’identité. Lorsque vous remplacez le verdict d’autorisation ou de blocage dans l’insight, l’expéditeur usurpé devient une entrée d’autorisation ou de blocage manuelle qui apparaît uniquement sous l’onglet **Usurpation** d’identité dans la liste d’autorisation/de blocage du locataire. Vous pouvez également créer manuellement des entrées d’autorisation ou de blocage pour les expéditeurs usurpés avant qu’elles ne soient détectées par l’intelligence de l’usurpation d’identité. Pour plus d’informations, voir [Gérer liste rouge/verte du client dans EOP](tenant-allow-block-list.md).
 >
-> - Les informations sur l’usurpation d’informations et l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer remplacent la fonctionnalité de la stratégie de veille contre l’usurpation d’adresses qui était disponible sur la page de stratégie anti-courrier indésirable dans le Centre de sécurité & conformité.
+> - L’insight sur l’usurpation d’identité et l’onglet **Usurpation** d’identité dans la liste Autoriser/Bloquer du locataire remplacent les fonctionnalités de la stratégie de renseignement sur l’usurpation d’identité qui était disponible sur la page de stratégie anti-courrier indésirable dans le Centre de sécurité & conformité.
 >
->- Les informations sur l’usurpation d’intelligence montrent une valeur de 7 jours de données. La cmdlet **Get-SpoofIntelligenceInsight** affiche 30 jours de données.
+>- L’information sur l’usurpation d’identité affiche 7 jours de données. **L’applet de commande Get-SpoofIntelligenceInsight** affiche 30 jours de données.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour aller directement à l’onglet **Usurpation** d’usurpation dans la page Liste des locataires autoriser **/** bloquer, utilisez <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>. Pour aller directement à la page **Informations sur l’usurpation d’intelligence** , utilisez <https://security.microsoft.com/spoofintelligence>.
+- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour accéder directement à l’onglet **Usurpation d’identité** dans la page **Autoriser/Bloquer la liste des locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>. Pour accéder directement à la page **Informations sur l’usurpation d’identité** , utilisez <https://security.microsoft.com/spoofintelligence>.
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Des autorisations doivent vous avoir été attribuées dans **Exchange Online** pour que vous puissiez effectuer les procédures décrites dans cet article :
-  - Pour modifier la stratégie de veille contre l’usurpation d’informations ou activer ou désactiver la veille contre l’usurpation d’informations,  vous devez être membre des groupes de rôles Gestion de l’organisation ou Administrateur de la sécurité.
-  - Pour accéder en lecture seule à la stratégie d’intelligence contre l’usurpation d’informations, vous  devez être membre  des groupes de rôles Lecteur global ou Lecteur de sécurité.
+  - Pour modifier la stratégie de renseignement d’usurpation d’identité ou activer ou désactiver l’usurpation d’identité, vous devez être membre de 
+    -   **Gestion de l'organisation**
+    -   **Administrateur de sécurité** <u>et</u> **configuration en mode seul** ou gestion de l’organisation **en mode affichage uniquement**.
+  - Pour accéder en lecture seule à la stratégie de renseignement sur l’usurpation d’identité, vous devez être membre des groupes de **rôles Lecteur général** ou **Lecteur de sécurité** .
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
@@ -86,97 +88,97 @@ Le reste de cet article explique comment utiliser les informations sur l’intel
   > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de [Microsoft 365](../../admin/add-users/about-admin-roles.md).
   > - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
-- Vous activez et désactivez la veille contre l’usurpation d’adresse dans les stratégies anti-hameçonnage dans EOP et Microsoft Defender pour Office 365. La veille contre l’usurpation d’informations est activée par défaut. Pour plus d’informations, voir [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) or [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
+- Vous activez et désactivez l’usurpation d’identité dans les stratégies anti-hameçonnage dans EOP et Microsoft Defender pour Office 365. L’intelligence par usurpation d’identité est activée par défaut. Pour plus d’informations, consultez [Configurer des stratégies anti-hameçonnage dans EOP](configure-anti-phishing-policies-eop.md) ou [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md).
 
-- Pour obtenir nos paramètres recommandés pour la veille contre l’usurpation d’adresse, consultez les [paramètres de stratégie anti-hameçonnage EOP](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings).
+- Pour connaître les paramètres recommandés pour l’intelligence par usurpation d’identité, consultez [les paramètres de stratégie anti-hameçonnage EOP](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings).
 
-## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>Ouvrez l’aperçu de l’intelligence contre l’usurpation d’Microsoft 365 Defender web
+## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>Ouvrez l’information sur l’usurpation d’identité dans le portail Microsoft 365 Defender
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Tenant Allow/Block Lists** in the **Rules** section. Pour aller directement à l’onglet **Usurpation** d’usurpation dans la page Liste des locataires autoriser **/** bloquer, utilisez <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Tenant Allow/Block Lists** dans la section **Règles**. Pour accéder directement à l’onglet **Usurpation d’identité** dans la page **Autoriser/Bloquer la liste des locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>.
 
-2. Dans la page **Listes d’attente des clients** , l’aperçu de l’usurpation d’intelligence se présente comme ceci :
+2. Dans la page **Autoriser/Bloquer des listes de locataires** , l’insight d’intelligence de l’usurpation d’identité se présente comme suit :
 
-   :::image type="content" source="../../media/m365-sc-spoof-intelligence-insight.png" alt-text="Informations sur l’usurpation d’informations sur la stratégie anti-hameçonnage" lightbox="../../media/m365-sc-spoof-intelligence-insight.png":::
+   :::image type="content" source="../../media/m365-sc-spoof-intelligence-insight.png" alt-text="Informations sur l’usurpation d’identité dans la page de stratégie anti-hameçonnage" lightbox="../../media/m365-sc-spoof-intelligence-insight.png":::
 
-   L’aperçu a deux modes :
+   L’insight a deux modes :
 
-   - **Mode Insight** : si la veille contre l’usurpation d’informations est activée, elle vous indique le nombre de messages détectés par la veille contre l’usurpation d’informations au cours des sept derniers jours.
-   - **Que se** passe-t-il si le mode : si la veille contre l’usurpation d’informations est désactivée, l’information vous indique le nombre *de messages* détectés par la veille contre l’usurpation d’informations au cours des sept derniers jours.
+   - **Mode Insight** : si l’intelligence par usurpation d’identité est activée, l’insight vous indique le nombre de messages détectés par l’intelligence par usurpation d’identité au cours des sept derniers jours.
+   - **Que se passe-t-il si le mode** : si l’intelligence par usurpation d’identité est désactivée, l’insight vous indique le nombre de messages qui *auraient* été détectés par l’intelligence par usurpation d’identité au cours des sept derniers jours.
 
-Pour afficher des informations sur les détections d’usurpation d’informations, cliquez sur Afficher l’activité d’usurpation d’informations dans la veille contre l’usurpation d’informations.
+Pour afficher des informations sur les détections d’usurpation d’identité, cliquez sur **Afficher l’activité d’usurpation** d’identité dans l’insight sur l’usurpation d’identité.
 
 ### <a name="view-information-about-spoofed-messages"></a>Afficher des informations sur les messages usurpés
 
 > [!NOTE]
-> N’oubliez pas que seuls les expéditeurs usurpés détectés par la veille contre l’usurpation d’adresse apparaissent sur cette page. Lorsque vous remplacez le verdict d’autoriser ou de bloquer dans l’insight, l’expéditeur usurpé devient une entrée d’accès ou de blocage manuelle  qui apparaît uniquement sous l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer.
+> N’oubliez pas que seuls les expéditeurs usurpés qui ont été détectés par l’usurpation d’identité apparaissent sur cette page. Lorsque vous remplacez le verdict d’autorisation ou de blocage dans l’insight, l’expéditeur usurpé devient une entrée d’autorisation ou de blocage manuelle qui apparaît uniquement sous l’onglet **Usurpation** d’identité dans la liste d’autorisation/de blocage du locataire.
 
-Dans la page **Informations** sur l’usurpation d’informations sur  l’usurpation d’informations qui s’affiche après avoir cliqué sur Afficher l’activité d’usurpation d’informations dans l’aperçu de l’usurpation d’intelligence, la page contient les informations suivantes :
+Dans la page **Informations sur l’usurpation d’identité** qui s’affiche après avoir cliqué sur **Afficher l’activité d’usurpation** d’identité dans l’insight d’usurpation d’identité, la page contient les informations suivantes :
 
-- **Utilisateur usurpé :** domaine de l’utilisateur usurpé qui s’affiche dans la zone De des clients de  messagerie. L’adresse De est également appelée adresse `5322.From` .
-- **Infrastructure d’envoi** : également appelée _infrastructure_. L’infrastructure d’envoi aura l’une des valeurs suivantes :
+- **Utilisateur usurpé** : **domaine** de l’utilisateur usurpé qui s’affiche dans la zone **From** dans les clients de messagerie. L’adresse From est également appelée adresse `5322.From` .
+- **Infrastructure d’envoi** : également appelée _infrastructure_. L’infrastructure d’envoi sera l’une des valeurs suivantes :
   - Domaine trouvé dans une recherche DNS inversée (enregistrement PTR) de l’adresse IP du serveur de messagerie source.
-  - Si l’adresse IP source n’a pas d’enregistrement PTR, l’infrastructure \<source IP\>d’envoi est identifiée comme /24 (par exemple, 192.168.100.100/24).
-- **Nombre de** messages : nombre de messages provenant de la combinaison du domaine usurpé et de  l’infrastructure d’envoi à votre organisation au cours des 7 derniers jours.
-- **Dernière vue** : date de la dernière réception d’un message de l’infrastructure d’envoi contenant le domaine usurpé.
-- **Type d’usurpation :** l’une des valeurs suivantes :
-  - **Interne** : l’expéditeur usurpé se trouve dans un domaine appartenant à votre organisation ( [domaine accepté](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
+  - Si l’adresse IP source n’a pas d’enregistrement PTR, l’infrastructure d’envoi est identifiée comme \<source IP\>/24 (par exemple, 192.168.100.100/24).
+- **Nombre** de messages : nombre de messages provenant de la combinaison du domaine usurpé _et_ de l’infrastructure d’envoi à votre organisation au cours des 7 derniers jours.
+- **Dernière vue** : dernière date à laquelle un message a été reçu de l’infrastructure d’envoi qui contient le domaine usurpé.
+- **Type d’usurpation** d’identité : l’une des valeurs suivantes :
+  - **Interne** : l’expéditeur usurpé se trouve dans un domaine qui appartient à votre organisation ( [un domaine accepté](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
   - **Externe** : l’expéditeur usurpé se trouve dans un domaine externe.
-- **Action** : cette valeur est **autorisée ou** **bloquée** :
-  - **Autorisé :** le domaine a échoué aux vérifications explicites de l’authentification de courrier électronique [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md) et [DMARC](use-dmarc-to-validate-email.md). Toutefois, le domaine a réussi nos vérifications d’authentification de messagerie implicites ([authentification composite](email-validation-and-authentication.md#composite-authentication)). Par conséquent, aucune action anti-usurpation n’a été prise sur le message.
-  - **Bloqué** : les messages provenant de la combinaison du domaine usurpé et  de l’infrastructure d’envoi sont marqués comme étant mauvais par la veille contre l’usurpation d’informations. L’action entreprise sur les messages usurpés est contrôlée par la stratégie anti-hameçonnage par défaut ou les stratégies anti-hameçonnage personnalisées (la valeur par défaut est Déplacer **le message** vers le dossier Courrier indésirable). Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md).
+- **Action** : cette valeur est **autorisée** ou **bloquée** :
+  - **Autorisé** : L’authentification par e-mail explicite du domaine a échoué vérifie [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md) et [DMARC](use-dmarc-to-validate-email.md). Toutefois, le domaine a passé nos vérifications d’authentification par e-mail implicites ([authentification composite](email-validation-and-authentication.md#composite-authentication)). Par conséquent, aucune action anti-usurpation d’identité n’a été effectuée sur le message.
+  - **Bloqué** : les messages de la combinaison du domaine usurpé _et_ de l’infrastructure d’envoi sont marqués comme incorrects par l’intelligence par usurpation d’identité. L’action effectuée sur les messages usurpés est contrôlée par la stratégie anti-hameçonnage par défaut ou les stratégies anti-hameçonnage personnalisées (la valeur par défaut est **Déplacer le message vers le dossier Courrier indésirable**). Pour plus d’informations, consultez Configurer les stratégies [anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md).
 
-Vous pouvez cliquer sur les en-tête de colonne sélectionnés pour trier les résultats.
+Vous pouvez cliquer sur les en-têtes de colonne sélectionnés pour trier les résultats.
 
-Pour filtrer les résultats, vous avez les options suivantes :
+Pour filtrer les résultats, vous disposez des options suivantes :
 
-- Cliquez sur **le bouton** Filtrer. Dans le **flyout Filter** qui s’affiche, vous pouvez filtrer les résultats en :
-  - **Type d’usurpation**
+- Cliquez sur le bouton **Filtrer** . Dans le menu volant **Filtre** qui s’affiche, vous pouvez filtrer les résultats en procédant comme suit :
+  - **Type d’usurpation d’identité**
   - **Action**
-- Utilisez la **zone de** recherche pour entrer une liste séparée par des virgules de valeurs de domaine usurpées ou pour envoyer des valeurs d’infrastructure pour filtrer les résultats.
+- Utilisez la zone **de recherche** pour entrer une liste séparée par des virgules de valeurs de domaine usurpées ou envoyer des valeurs d’infrastructure pour filtrer les résultats.
 
 ### <a name="view-details-about-spoofed-messages"></a>Afficher les détails sur les messages usurpés
 
-Lorsque vous sélectionnez une entrée dans la liste, un volant de détails s’affiche qui contient les informations et fonctionnalités suivantes :
+Lorsque vous sélectionnez une entrée dans la liste, un menu volant de détails s’affiche qui contient les informations et fonctionnalités suivantes :
 
--  Autoriser l’usurpation ou empêcher l’usurpation d’informations : sélectionnez l’une de ces valeurs pour remplacer le verdict d’intelligence contre l’usurpation d’usurpation d’origine et déplacez l’entrée de la veille contre l’usurpation d’informations vers la liste des locataires autoriser/bloquer en tant qu’entrée d’usurpation.
-- Pourquoi nous l’avons capturé.
+- **Autoriser l’usurpation** d’identité ou **bloquer l’usurpation** d’identité : sélectionnez l’une de ces valeurs pour remplacer le verdict d’intelligence de l’usurpation d’identité d’origine et déplacer l’entrée de l’information sur l’usurpation d’identité vers la liste d’autorisation/de blocage du locataire en tant qu’entrée d’autorisation ou de blocage pour l’usurpation d’identité.
+- Pourquoi on a pris ça.
 - Ce que vous devez faire.
-- Résumé de domaine qui inclut la plupart des informations de la page principale de veille contre l’usurpation d’informations.
-- WhoIs data about the sender.
-- Lien vers  [l’Explorateur de](threat-explorer.md) menaces pour afficher des détails supplémentaires sur l’expéditeur sous **Afficher** \> le hameçonnage dans Microsoft Defender pour Office 365.
-- Messages similaires que nous avons vus dans votre client à partir du même expéditeur.
+- Résumé de domaine qui inclut la plupart des mêmes informations de la page principale de renseignements sur l’usurpation d’identité.
+- Données WhoIs sur l’expéditeur.
+- Lien permettant d’ouvrir [l’Explorateur de menaces](threat-explorer.md) pour afficher des détails supplémentaires sur l’expéditeur sous **Afficher** \> **le hameçonnage** dans Microsoft Defender pour Office 365.
+- Messages similaires que nous avons vus dans votre locataire à partir du même expéditeur.
 
 ### <a name="about-allowed-spoofed-senders"></a>À propos des expéditeurs usurpés autorisés
 
-Un expéditeur usurpé autorisé dans l’aperçu de l’usurpation d’intelligence ou un expéditeur usurpé bloqué que vous avez modifié manuellement pour  autoriser l’usurpation d’adresse autorise uniquement les messages provenant de la combinaison du domaine usurpé et de l’infrastructure d’envoi. Il n’autorise pas le courrier électronique provenant du domaine usurpé d’aucune source, ni le courrier provenant de l’infrastructure d’envoi pour n’importe quel domaine.
+Un expéditeur d’usurpation d’identité autorisé dans l’insight d’intelligence de l’usurpation d’identité ou un expéditeur d’usurpation d’identité bloqué que vous avez modifié manuellement **pour autoriser l’usurpation d’identité** autorise uniquement les messages provenant de la combinaison du domaine usurpé *et* de l’infrastructure d’envoi. Il n’autorise pas les e-mails provenant du domaine usurpé d’identité à partir d’une source quelconque, ni les e-mails provenant de l’infrastructure d’envoi pour n’importe quel domaine.
 
-Par exemple, l’expéditeur usurpé suivant est autorisé à usurper :
+Par exemple, l’expéditeur usurpé d’identité suivant est autorisé à usurper l’identité :
 
 - **Domaine** : gmail.com
 - **Infrastructure** : tms.mx.com
 
-Seul le courrier électronique provenant de cette paire d’infrastructure de domaine/d’envoi est autorisé à usurper l’adresse. Les autres expéditeurs qui tentent d’usurper gmail.com ne sont pas automatiquement autorisés. Les messages provenant d’expéditeurs d’autres domaines tms.mx.com sont toujours vérifiés par la veille contre l’usurpation d’adresse et peuvent être bloqués.
+Seuls les e-mails provenant de cette paire d’infrastructure domaine/envoi sont autorisés à usurper l’identité. Les autres expéditeurs qui tentent d’usurper gmail.com ne sont pas automatiquement autorisés. Les messages des expéditeurs d’autres domaines qui proviennent de tms.mx.com sont toujours vérifiés par l’usurpation d’identité et peuvent être bloqués.
 
-## <a name="use-the-spoof-intelligence-insight-in-exchange-online-powershell-or-standalone-eop-powershell"></a>Utiliser la veille contre l’usurpation d’Exchange Online PowerShell ou EOP autonome PowerShell
+## <a name="use-the-spoof-intelligence-insight-in-exchange-online-powershell-or-standalone-eop-powershell"></a>Utiliser l’insight d’intelligence d’usurpation d’identité dans Exchange Online PowerShell ou PowerShell EOP autonome
 
-Dans PowerShell, vous utilisez la cmdlet **Get-SpoofIntelligenceInsight** pour  afficher les expéditeurs usurpés autorisés et bloqués qui ont été détectés par la veille contre l’usurpation d’adresse. Pour autoriser ou bloquer manuellement les expéditeurs usurpés, vous devez utiliser la cmdlet **New-TenantAllowBlockListSpoofItems** . Pour plus d’informations, voir Utiliser PowerShell pour gérer les entrées d’expéditeur usurpées dans la liste d’adresses client [autoriser/bloquer](tenant-allow-block-list.md).
+Dans PowerShell, vous utilisez l’applet de commande **Get-SpoofIntelligenceInsight** pour **afficher** les expéditeurs autorisés et bloqués qui ont été détectés par l’intelligence par usurpation d’identité. Pour autoriser ou bloquer manuellement les expéditeurs usurpés, vous devez utiliser l’applet de commande **New-TenantAllowBlockListSpoofItems** . Pour plus d’informations, consultez [Utiliser PowerShell pour gérer les entrées d’expéditeur usurpées dans la liste d’autorisations/de blocs du locataire](tenant-allow-block-list.md).
 
-Pour afficher les informations dans la veille contre l’usurpation d’informations, exécutez la commande suivante :
+Pour afficher les informations dans l’insight sur l’usurpation d’identité, exécutez la commande suivante :
 
 ```powershell
 Get-SpoofIntelligenceInsight
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-SpoofIntelligenceInsight](/powershell/module/exchange/get-spoofintelligenceinsight).
+Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, consultez Get-SpoofIntelligenceInsight](/powershell/module/exchange/get-spoofintelligenceinsight).
 
-## <a name="other-ways-to-manage-spoofing-and-phishing"></a>Autres façons de gérer l’usurpation et le hameçonnage
+## <a name="other-ways-to-manage-spoofing-and-phishing"></a>Autres façons de gérer l’usurpation d’identité et le hameçonnage
 
-Soyez prudent sur l’usurpation d’informations et la protection contre le hameçonnage. Voici quelques méthodes connexes pour vérifier les expéditeurs qui usurpent votre domaine et les empêcher d’endommager votre organisation :
+Soyez diligent à l’égard de l’usurpation d’identité et de la protection contre le hameçonnage. Voici des moyens connexes de vérifier les expéditeurs qui usurpent votre domaine et de les empêcher d’endommager votre organisation :
 
-- Vérifiez le **rapport de courrier d’usurpation d’adresse**. Vous pouvez souvent utiliser ce rapport pour afficher et gérer les expéditeurs usurpés. Pour plus d’informations, [reportez-vous au rapport sur les détections d’usurpation d’informations](view-email-security-reports.md#spoof-detections-report).
+- Vérifiez le **rapport de courrier d’usurpation** d’identité. Vous pouvez souvent utiliser ce rapport pour afficher et aider à gérer les expéditeurs usurpés. Pour plus d’informations, consultez le [rapport détections d’usurpation](view-email-security-reports.md#spoof-detections-report) d’identité.
 
-- Examinez votre configuration SPF (Sender Policy Framework). Pour consulter une brève présentation de SPF et le configurer rapidement, voir [Configurer SPF dans Microsoft 365 pour empêcher l’usurpation d’identité](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Pour consulter des informations plus approfondies sur l’utilisation de SPF par Office 365, la résolution des problèmes et les déploiements non standard tels que les déploiements hybrides, voir Comment Office 365 utilise SPF (Sender Policy Framework) pour empêcher l’usurpation d’identité.
+- Passez en revue la configuration de votre infrastructure de stratégie d’expéditeur (SPF). Pour consulter une brève présentation de SPF et le configurer rapidement, voir [Configurer SPF dans Microsoft 365 pour empêcher l’usurpation d’identité](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Pour consulter des informations plus approfondies sur l’utilisation de SPF par Office 365, la résolution des problèmes et les déploiements non standard tels que les déploiements hybrides, voir Comment Office 365 utilise SPF (Sender Policy Framework) pour empêcher l’usurpation d’identité.
 
-- Examinez votre configuration DKIM (DomainKeys Identified Mail). Vous devez utiliser DKIM en plus de SPF et DMARC pour empêcher les attaquants d’envoyer des messages qui semblent provenant de votre domaine. DKIM vous permet d'ajouter une signature numérique aux messages électroniques dans l'en-tête du message. Pour plus d’informations, [voir Utiliser DKIM pour valider les messages sortants](use-dkim-to-validate-outbound-email.md) envoyés à partir de votre domaine personnalisé dans Office 365.
+- Passez en revue votre configuration DKIM (DomainKeys Identified Mail). Vous devez utiliser DKIM en plus de SPF et DMARC pour empêcher les attaquants d’envoyer des messages qui semblent provenir de votre domaine. DKIM vous permet d'ajouter une signature numérique aux messages électroniques dans l'en-tête du message. Pour plus d’informations, consultez [Utiliser DKIM pour valider les e-mails sortants envoyés à partir de votre domaine personnalisé dans Office 365](use-dkim-to-validate-outbound-email.md).
 
-- Examinez votre configuration DMARC (Domain-based Message Authentication, Reporting, and Conformance). L’implémentation de DMARC avec SPF et DKIM fournit une protection supplémentaire contre l’usurpation et les courriers de hameçonnage. DMARC permet aux systèmes de messagerie de réception de déterminer ce qu’ils doivent faire des messages envoyés à partir de votre domaine qui sont rejetés par les contrôles de SPF ou de DKIM. Pour plus d’informations, [voir Utiliser DMARC pour valider le courrier électronique Office 365](use-dmarc-to-validate-email.md).
+- Passez en revue votre configuration DMARC (Domain-based Message Authentication, Reporting, and Conformance). L’implémentation de DMARC avec SPF et DKIM fournit une protection supplémentaire contre l’usurpation et les courriers de hameçonnage. DMARC permet aux systèmes de messagerie de réception de déterminer ce qu’ils doivent faire des messages envoyés à partir de votre domaine qui sont rejetés par les contrôles de SPF ou de DKIM. Pour plus d’informations, consultez [Utiliser DMARC pour valider l’e-mail dans Office 365](use-dmarc-to-validate-email.md).

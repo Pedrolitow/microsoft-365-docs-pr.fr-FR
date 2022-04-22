@@ -1,5 +1,5 @@
 ---
-title: vue d Microsoft 365 Lighthouse de la page Utilisateurs
+title: Vue d’ensemble de la page Utilisateurs dans Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,51 +15,51 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la page Utilisateurs.
-ms.openlocfilehash: fad5ff4b41b43efb68c7e230401b80e50cea95a4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez la page Utilisateurs.
+ms.openlocfilehash: c4ae82485c2f9b57b1e47fe61624e0ccac34d067
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329936"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022490"
 ---
-# <a name="microsoft-365-lighthouse-users-page-overview"></a>vue d Microsoft 365 Lighthouse de la page Utilisateurs 
+# <a name="overview-of-the-users-page-in-microsoft-365-lighthouse"></a>Vue d’ensemble de la page Utilisateurs dans Microsoft 365 Lighthouse 
 
-Microsoft 365 Lighthouse vous permet de gérer les utilisateurs sur plusieurs comptes clients en sélectionnant Utilisateurs dans le volet de navigation de gauche pour ouvrir la page Utilisateurs. À partir de cette page, vous pouvez rechercher des utilisateurs, évaluer et agir sur l’état de sécurité de vos comptes d’utilisateurs. Vous pouvez également afficher des informations sur les utilisateurs à risque et l’état de l’authentification multifacteur et de la réinitialisation du mot de passe en libre-service.  
+Microsoft 365 Lighthouse vous permet de gérer les utilisateurs entre les comptes clients en sélectionnant **Utilisateurs** dans le volet de navigation gauche pour ouvrir la page Utilisateurs. À partir de cette page, vous pouvez rechercher des utilisateurs et évaluer et agir sur l’état de sécurité de vos comptes d’utilisateur. Vous pouvez également afficher des insights sur les utilisateurs à risque et l’état de l’authentification multifacteur et de la réinitialisation de mot de passe en libre-service.  
   
-## <a name="search-users-tab"></a>Onglet Utilisateurs de la recherche  
+## <a name="search-users-tab"></a>Onglet Rechercher des utilisateurs  
   
-À partir de l’onglet Utilisateurs de recherche, vous pouvez rapidement rechercher des utilisateurs spécifiques dans les clients et effectuer des actions de gestion des utilisateurs de base, telles que la réinitialisation d’un mot de passe de compte.
+Sous l’onglet Rechercher des utilisateurs, vous pouvez rapidement rechercher des utilisateurs spécifiques dans les locataires et effectuer des actions de gestion des utilisateurs de base, telles que la réinitialisation d’un mot de passe de compte.
 
-:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-search-users-tab.png" alt-text="Capture d’écran de l’onglet Utilisateurs de la recherche.":::
+:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-search-users-tab.png" alt-text="Capture d’écran de l’onglet Rechercher des utilisateurs.":::
 
 ## <a name="risky-users-tab"></a>Onglet Utilisateurs à risque
 
-L’onglet Utilisateurs à risque affiche les comptes d’utilisateurs au sein de vos clients qui ont été signalés pour un comportement à risque. Sélectionnez l’un des utilisateurs pour afficher plus d’informations sur un risque détecté ou pour atténuer un risque en réinitialisation du mot de passe d’un utilisateur ou en bloquant la signature. Pour plus d’informations sur les types de risque et la détection, voir [Qu’est-ce qu’un risque ?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
+L’onglet Utilisateurs à risque affiche les comptes d’utilisateur sur vos locataires qui ont été marqués pour un comportement à risque. Sélectionnez l’un des utilisateurs pour afficher plus d’informations sur un risque détecté ou pour atténuer un risque en réinitialisant le mot de passe d’un utilisateur ou en bloquant la connexion. Pour plus d’informations sur les types de risques et la détection, consultez [Qu’est-ce que le risque ?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
 
-L’onglet Utilisateurs à risque inclut également les options suivantes :
-- **Exporter :** Sélectionnez cette sélection pour exporter les données de conformité des appareils vers Excel fichier de valeurs séparées par des virgules (.csv).
-- **Actualiser :** Sélectionnez cette sélection pour récupérer les données de conformité des appareils les plus récentes.
-- **Confirmez que les utilisateurs sont compromis :** Sélectionnez cette sélection pour confirmer que l’utilisateur a été compromis.
-- **Ignorer les risques pour les utilisateurs :** Sélectionnez cette sélection pour ignorer les risques pour l’utilisateur.  
-- **Réinitialisez le mot de passe :** Sélectionnez pour modifier ou réinitialiser le mot de passe de l’utilisateur.
-- **Bloquer la connectez-vous :** Sélectionnez cette sélection pour empêcher tout le monde de se signer en tant qu’utilisateur.
+L’onglet Utilisateurs à risque comprend également les options suivantes :
+- **Exportation:** Sélectionnez cette option pour exporter les données de conformité des appareils vers un fichier Excel valeurs séparées par des virgules (.csv).
+- **Actualiser:** Sélectionnez cette option pour récupérer les données de conformité des appareils les plus actuelles.
+- **Vérifiez que les utilisateurs sont compromis :** Sélectionnez cette option pour confirmer que l’utilisateur a été compromis.
+- **Ignorer le ou les risques d’utilisateurs :** Sélectionnez cette option pour ignorer le risque de l’utilisateur.  
+- **Réinitialiser le mot de passe :** Sélectionnez cette option pour modifier ou réinitialiser le mot de passe de l’utilisateur.
+- **Bloquer la connexion :** Sélectionnez cette option pour empêcher quiconque de se connecter en tant qu’utilisateur.
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-risky-users-tab.png" alt-text="Capture d’écran de l’onglet Utilisateurs à risque.":::
 
 ## <a name="multifactor-authentication-tab"></a>Onglet Authentification multifacteur
 
-L’onglet Authentification multifacteur fournit des informations détaillées sur l’état de l’authentification multifacteur (MFA) sur vos locataires. Sélectionnez n’importe quel client dans la liste pour voir plus de détails sur ce client, notamment les stratégies d’accès conditionnel qui requièrent l’ation MFA qui sont déjà configurées et les utilisateurs qui ne sont pas encore inscrits à l’mf.
+L’onglet Authentification multifacteur fournit des informations détaillées sur l’état de l’activation de l’authentification multifacteur (MFA) sur vos locataires. Sélectionnez un locataire dans la liste pour afficher plus de détails pour ce locataire, notamment les stratégies d’accès conditionnel nécessitant l’authentification multifacteur qui sont déjà configurées et les utilisateurs qui ne se sont pas encore inscrits à l’authentification multifacteur.
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-mfa-tab.png" alt-text="Capture d’écran de l’onglet Authentification multifacteur.":::
 
 ## <a name="password-reset-tab"></a>Onglet Réinitialisation du mot de passe
 
-L’onglet Réinitialisation du mot de passe affiche des informations détaillées sur l’état de l’enablement de réinitialisation de mot de passe en libre-service pour tous vos clients. Il fournit également des informations sur les utilisateurs activés, mais qui doivent s’inscrire avant de pouvoir réinitialiser leur mot de passe par eux-mêmes.
+L’onglet Réinitialisation de mot de passe affiche des informations détaillées sur l’état de l’activation de la réinitialisation de mot de passe en libre-service sur vos locataires. Il fournit également des insights sur les utilisateurs qui sont activés mais qui doivent toujours s’inscrire avant de pouvoir réinitialiser leur mot de passe par eux-mêmes.
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-password-reset-tab.png" alt-text="Capture d’écran de l’onglet Réinitialisation du mot de passe.":::
 
 ## <a name="related-content"></a>Contenu associé
 
-[Microsoft 365 Lighthouse page de conformité des appareils](m365-lighthouse-device-compliance-page-overview.md) (article)\
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Microsoft 365 Lighthouse vue d’ensemble de la page de conformité des appareils](m365-lighthouse-device-compliance-page-overview.md) (article)\
+[MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)

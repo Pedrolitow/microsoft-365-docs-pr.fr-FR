@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La protection contre la perte de données des points de terminaison étend la surveillance des activités de fichiers et les actions de protection pour ces fichiers aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité '
-ms.openlocfilehash: e84d2de72e05991a7d8374a2e5214df90fb939d9
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 76649559b1110c02f29584afdfb7e48f57a41f1e
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953302"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023368"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>En savoir plus sur les points de terminaison de protection contre la perte de données
 
@@ -95,7 +95,7 @@ Si vous souhaitez surveiller les données des correspondances de stratégie uniq
 
 Le DLP du point de terminaison contrôle l’activité basée sur le type MIME, de sorte que les activités sont capturées même si l’extension de fichier est modifiée.
 
-### <a name="file-types-preview"></a>Types de fichiers (aperçu)
+### <a name="file-types"></a>Types de fichiers
 
 Les types de fichiers sont un regroupement de formats de fichiers utilisés pour protéger des flux de travail ou des domaines d’activité spécifiques. Vous pouvez utiliser un ou plusieurs types de fichiers comme conditions dans vos stratégies DLP.
 
@@ -107,7 +107,7 @@ Les types de fichiers sont un regroupement de formats de fichiers utilisés pour
 |archive  |outils d’archivage et de compression de fichiers | .zip, .zipx, .rar, .7z, .tar, .gz        |
 |email    |Outlook |.pst, .ost, .msg         |
 
-### <a name="file-extensions-preview"></a>Extensions de fichier (aperçu)
+### <a name="file-extensions"></a>Extensions de fichier
 
 Si les types de fichiers ne couvrent pas les extensions de fichier que vous devez lister en tant que condition dans une stratégie, vous pouvez utiliser des extensions de fichier séparées par des virgules à la place.
 

@@ -1,5 +1,5 @@
 ---
-title: Définition de vos stratégies de planification
+title: Définir Bookings stratégies de planification
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 4b2c84ec-64d3-4027-af4c-40f69e7b37c9
 description: Découvrez comment définir des stratégies de planification pour votre entreprise. Les stratégies de planification incluent la durée des rendez-vous, ainsi que les délais d’annulation et de prospect acceptables.
-ms.openlocfilehash: 8093a1c207a418f5d73e7e748727a4da93546a5a
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 1acf3ab71f1e3eca5257fc8b7a4ab677162afe39
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714282"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022402"
 ---
 # <a name="set-your-scheduling-policies"></a>Définition de vos stratégies de planification
 

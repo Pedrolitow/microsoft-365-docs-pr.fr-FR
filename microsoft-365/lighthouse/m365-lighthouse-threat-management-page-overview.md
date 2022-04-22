@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble de la page de gestion des menaces Microsoft 365 Lighthouse
+title: Vue d’ensemble de la page Gestion des menaces dans Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la page gestion des menaces.
-ms.openlocfilehash: 94e71d648dac3a285ecef81b4dae29305cf7e98c
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: fea297845446bd8cbb14c81851afb5d51ce33717
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823165"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023346"
 ---
-# <a name="microsoft-365-lighthouse-threat-management-page-overview"></a>Vue d’ensemble de la page de gestion des menaces Microsoft 365 Lighthouse 
+# <a name="overview-of-the-threat-management-page-in-microsoft-365-lighthouse"></a>Vue d’ensemble de la page Gestion des menaces dans Microsoft 365 Lighthouse 
 
 **S’applique à :**
 

@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble de la page des locataires Microsoft 365 Lighthouse
+title: Vue d’ensemble de la page Locataires dans Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez la page Locataires.
-ms.openlocfilehash: 44111d62a9b8df9bf3b05ddbaa9cb4f3937159a4
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 7b8e26ddbe68059a9c5ecf4d5e396fd11c49be71
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823518"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023280"
 ---
-# <a name="microsoft-365-lighthouse-tenants-page-overview"></a>Vue d’ensemble de la page des locataires Microsoft 365 Lighthouse
+# <a name="overview-of-the-tenants-page-in-microsoft-365-lighthouse"></a>Vue d’ensemble de la page Locataires dans Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse vous permet de gérer les comptes de locataire en sélectionnant **Locataires** dans le volet de navigation gauche pour ouvrir la page Locataires. La page Locataires contient une liste de tous vos locataires. Vous pouvez sélectionner un locataire pour afficher des informations détaillées, notamment les détails du contact et l’état du déploiement.
 
@@ -56,7 +56,7 @@ Pour désactiver le locataire ou afficher et gérer les balises, sélectionnez l
 
 Le tableau suivant présente les différents états et leur signification.<br><br>
 
-| État                                   | Description                                                                                             |
+| Statut                                   | Description                                                                                             |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Actif                                   | L’intégration des locataires et le flux de données ont démarré.                                                           |
 | Inactif                                 | Le locataire a été désinsgré à la demande du MSP et n’est plus géré dans Lighthouse.           |
@@ -70,7 +70,7 @@ Une fois que vous avez désactivé un locataire, vous ne pouvez pas agir sur le 
 
 ## <a name="tenant-tags"></a>Balises de locataire
 
-Pour organiser vos locataires et filtrer facilement les vues existantes, vous pouvez créer et attribuer des balises à vos locataires. Pour plus d’informations, consultez [Gérer votre liste de locataires](m365-lighthouse-manage-tenant-list.md).
+Pour organiser vos locataires et filtrer facilement les vues existantes, vous pouvez créer et attribuer des balises à vos locataires. Pour en savoir plus, consultez [Gérer votre liste de locataires dans Microsoft 365 Lighthouse](m365-lighthouse-manage-tenant-list.md).
 
 > [!NOTE]
 > Vous pouvez créer jusqu’à 30 balises sur tous les locataires.
@@ -135,6 +135,6 @@ L’onglet Plans de déploiement comprend également les options suivantes :
 
 [Configuration requise pour Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\
 [MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)\
-[Gérer votre liste de locataires](m365-lighthouse-manage-tenant-list.md) (article)\
-[Vue d’ensemble de l’utilisation des bases de référence pour déployer des configurations de locataire standard](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
+[Gérer votre liste de locataires dans Microsoft 365 Lighthouse](m365-lighthouse-manage-tenant-list.md) (article)\
+[Vue d’ensemble de l’utilisation de Microsoft 365 Lighthouse lignes de base pour déployer des configurations de locataire standard](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
 [Déployer Microsoft 365 Lighthouse lignes de base](m365-lighthouse-deploy-baselines.md) (article)

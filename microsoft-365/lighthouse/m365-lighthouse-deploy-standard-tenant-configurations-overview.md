@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble de l’utilisation des lignes de base pour déployer des configurations client standard
+title: Vue d’ensemble de l’utilisation de bases de référence Microsoft 365 Lighthouse pour déployer des configurations de locataire standard
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -15,45 +15,45 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment utiliser les lignes de base pour déployer des configurations client standard.
-ms.openlocfilehash: 643bb962277d30caf8ea067b9276a5986af8914f
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment utiliser des bases de référence pour déployer des configurations de locataire standard.
+ms.openlocfilehash: a12abd14064559ec92fc735bd90c1f8d58d24cb1
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504531"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023302"
 ---
-# <a name="overview-of-using-baselines-to-deploy-standard-tenant-configurations"></a>Vue d’ensemble de l’utilisation des lignes de base pour déployer des configurations client standard 
+# <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>Vue d’ensemble de l’utilisation de bases de référence Microsoft 365 Lighthouse pour déployer des configurations de locataire standard 
 
-Microsoft 365 Lighthouse de référence fournissent un moyen extensible et évolutif de gérer les paramètres de sécurité Microsoft 365 plusieurs clients. Les lignes de base fournissent des configurations client standard qui déploient des stratégies de sécurité principales et des normes de conformité qui assurent la sécurité des utilisateurs, des appareils et des données de vos clients.
+Microsoft 365 Lighthouse lignes de base offrent un moyen reproductible et évolutif de gérer Microsoft 365 paramètres de sécurité sur plusieurs locataires clients. Les bases de référence fournissent des configurations de locataire standard qui déploient des stratégies de sécurité de base et des normes de conformité qui sécurisent les utilisateurs, les appareils et les données de vos locataires.
 
-Vous pouvez afficher la ligne de base par défaut et ses étapes de déploiement à partir de La station d’évaluation. Pour appliquer une ligne de base à un client, **sélectionnez Les locataires** dans le volet de navigation de gauche, puis sélectionnez un client. Ensuite, allez dans l’onglet **Plans de** déploiement pour commencer le déploiement.
+Vous pouvez afficher la ligne de base par défaut et ses étapes de déploiement à partir de Lighthouse. Pour appliquer une ligne de base à un locataire, sélectionnez **Locataires** dans le volet de navigation gauche, puis sélectionnez un locataire. Ensuite, accédez à l’onglet **Plans** de déploiement pour commencer le déploiement.
 
-## <a name="lighthouse-baseline"></a>Ligne de base de référence de référence
+## <a name="lighthouse-baseline"></a>Ligne de base du phare
 
-Les configurations de base de référence de référence sont conçues pour s’assurer que tous les locataires gérés sont sécurisés et conformes. **Sélectionnez Lignes de base** dans le volet de navigation de gauche pour afficher la ligne de base par défaut qui s’applique à tous les locataires.  Pour afficher les étapes de déploiement incluses dans la ligne de base par défaut, sélectionnez **Afficher** la ligne de base pour ouvrir la page de référence par défaut. Sélectionnez l’une des étapes de déploiement pour afficher les détails du déploiement et l’impact sur l’utilisateur.
+Les configurations de référence lighthouse sont conçues pour garantir que tous les locataires gérés sont sécurisés et conformes. Sélectionnez **Lignes de base** dans le volet de navigation gauche pour afficher la ligne de base par défaut qui s’applique à tous les locataires.  Pour afficher les étapes de déploiement incluses dans la ligne de base par défaut, sélectionnez **Afficher la ligne de base** pour ouvrir la page de référence par défaut. Sélectionnez l’une des étapes de déploiement pour afficher les détails du déploiement et l’impact sur l’utilisateur.
 
-:::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Capture d’écran de la page de référence par défaut.":::
+:::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Capture d’écran de la page De référence par défaut.":::
 
-### <a name="default-lighthouse-configurations"></a>Configurations par défaut
+### <a name="default-lighthouse-configurations"></a>Configurations Lighthouse par défaut
 
 | Configuration de référence | Description |
 |--|--|
-| Exiger l’mf pour les administrateurs | Une stratégie d’accès conditionnel nécessitant une authentification multifacteur pour tous les administrateurs. Elle est requise pour toutes les applications cloud. Pour plus d’informations sur cette ligne de base, voir [Accès conditionnel : exiger l’mbam pour tous les administrateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa).|
-| Exiger l’mf pour les utilisateurs finaux | Une stratégie d’accès conditionnel qui nécessite une authentification multifacteur pour tous les utilisateurs.  Elle est requise pour toutes les applications cloud. Pour plus d’informations sur cette ligne de base, voir [Accès conditionnel : exiger l’mbam pour tous les utilisateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). |
-| Bloquer l’authentification héritée | Une stratégie d’accès conditionnel pour bloquer l’authentification client héritée. Pour plus d’informations sur cette ligne de base, voir Bloquer l’authentification [héritée Azure AD avec l’accès conditionnel](/azure/active-directory/conditional-access/block-legacy-authentication).|
-| Configurer l’inscription des appareils | Inscription d’appareils pour permettre à vos appareils locataires de s’inscrire Microsoft Endpoint Manager. Pour ce faire, vous avez la configuration de l’inscription automatique entre Azure Active Directory et Microsoft Endpoint Manager. Pour plus d’informations sur cette ligne de base, voir Configurer l’inscription [Windows appareils mobiles](/mem/intune/enrollment/windows-enroll). |
-| Configurer Antivirus Microsoft Defender pour Windows 10 et ultérieures | Profil de configuration d’Windows appareils avec des paramètres de Antivirus Microsoft Defender pré-configurés. Pour plus d’informations sur cette ligne de base, voir [Configurer Microsoft Defender pour endpoint dans Intune](/mem/intune/protect/advanced-threat-protection-configure).|
-| Configurer le Pare-feu Microsoft Defender pour les Windows 10 et ultérieures | Une stratégie de pare-feu pour sécuriser les appareils en empêchant le trafic réseau indésirable et non autorisé. Pour plus d’informations sur cette ligne de base, voir [Best practices for configuring Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
-| Configurer une stratégie de conformité des appareils pour Windows 10 et ultérieures | Une stratégie Windows appareil avec des paramètres pré-configurés pour répondre aux exigences de conformité de base. Pour plus d’informations sur cette ligne de base, voir Accès conditionnel : exiger la conformité ou [l’Azure AD appareil joint](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). |
+| Exiger l’authentification multifacteur pour les administrateurs | Stratégie d’accès conditionnel nécessitant une authentification multifacteur pour tous les administrateurs. Elle est requise pour toutes les applications cloud. Pour plus d’informations sur cette base de référence, consultez [Accès conditionnel : Exiger l’authentification multifacteur pour tous les administrateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa).|
+| Exiger l’authentification multifacteur pour les utilisateurs finaux | Stratégie d’accès conditionnel qui nécessite une authentification multifacteur pour tous les utilisateurs.  Elle est requise pour toutes les applications cloud. Pour plus d’informations sur cette base de référence, consultez [Accès conditionnel : Exiger l’authentification multifacteur pour tous les utilisateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). |
+| Bloquer l’authentification héritée | Stratégie d’accès conditionnel pour bloquer l’authentification du client hérité. Pour plus d’informations sur cette base de référence, consultez [Bloquer l’authentification héritée pour Azure AD avec l’accès conditionnel](/azure/active-directory/conditional-access/block-legacy-authentication).|
+| Configurer l’inscription des appareils | Inscription d’appareils pour permettre à vos appareils locataires de s’inscrire à Microsoft Endpoint Manager. Pour ce faire, configurez l’inscription automatique entre Azure Active Directory et Microsoft Endpoint Manager. Pour plus d’informations sur cette base de référence, consultez [Configurer l’inscription pour Windows appareils](/mem/intune/enrollment/windows-enroll). |
+| Configurer Antivirus Microsoft Defender pour Windows 10 et versions ultérieures | Profil de configuration d’appareil pour les appareils Windows avec des paramètres de Antivirus Microsoft Defender préconfigurés. Pour plus d’informations sur cette base de référence, consultez [Configurer Microsoft Defender pour point de terminaison dans Intune](/mem/intune/protect/advanced-threat-protection-configure).|
+| Configurer le Pare-feu Microsoft Defender pour Windows 10 et versions ultérieures | Stratégie de pare-feu pour sécuriser les appareils en empêchant le trafic réseau indésirable et non autorisé. Pour plus d’informations sur cette base de référence, consultez [les meilleures pratiques de configuration de Windows Defender Pare-feu](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
+| Configurer une stratégie de conformité des appareils pour Windows 10 et versions ultérieures | Une Windows stratégie d’appareil avec des paramètres préconfigurés pour répondre aux exigences de conformité de base. Pour plus d’informations sur cette base de référence, consultez [Accès conditionnel : Exiger un appareil compatible ou hybride Azure AD joint](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). |
 
 ## <a name="deployment-plans"></a>Plans de déploiement
 
-Chaque client actif possède un plan de déploiement qui inclut les étapes de déploiement de la Microsoft 365 Lighthouse base de référence. Pour accéder au plan de déploiement d’un client, sélectionnez un client actif dans la liste de **la page Locataires** , puis sélectionnez l’onglet **Plan de** déploiement.
+Chaque locataire actif dispose d’un plan de déploiement qui inclut les étapes de déploiement de la base de référence Microsoft 365 Lighthouse. Pour accéder au plan de déploiement d’un locataire, sélectionnez un locataire actif dans la liste de la page **Locataires** , puis sélectionnez l’onglet **Plan de déploiement** .
 
 :::image type="content" source="../media/m365-lighthouse-deploy-baselines/deployment-plan-tab.png" alt-text="Capture d’écran de l’onglet Plan de déploiement.":::
 
-L’onglet Plan de déploiement inclut les informations suivantes :
+L’onglet Plan de déploiement contient les informations suivantes :
 
 
 |Colonne  |Description  |
@@ -65,26 +65,26 @@ L’onglet Plan de déploiement inclut les informations suivantes :
 |Dernière mise à jour    | Date à laquelle l’étape de déploiement a été mise à jour pour la dernière fois.        |
 
 
-L’onglet Plan de déploiement inclut également les options suivantes :
+L’onglet Plan de déploiement comprend également les options suivantes :
 
-- **Exporter :** Choisissez d’exporter les données de l’étape de déploiement vers Excel fichier de valeurs séparées par des virgules (.csv).
-- **Actualiser :** Sélectionnez pour récupérer les données d’étape de déploiement les plus récentes.
-- **Recherche :** Entrez des mots clés pour localiser rapidement une étape de déploiement spécifique dans la liste.
+- **Exportation:** Sélectionnez cette option pour exporter les données d’étape de déploiement vers un fichier Excel valeurs séparées par des virgules (.csv).
+- **Actualiser:** Sélectionnez cette option pour récupérer les données d’étape de déploiement les plus actuelles.
+- **Rechercher:** Entrez des mots clés pour localiser rapidement une étape de déploiement spécifique dans la liste.
 
 ## <a name="deployment-steps-and-processes"></a>Étapes et processus de déploiement
 
-Le plan de déploiement de chaque client inclut les étapes de déploiement de la Microsoft 365 Lighthouse base de référence. Chaque étape de déploiement se compose d’un ou de plusieurs processus qui doivent être effectués pour satisfaire aux exigences de l’étape de déploiement. Lorsqu’un nouveau client devient actif, vous devez effectuer les activités de déploiement associées aux étapes et processus de déploiement.
+Le plan de déploiement de chaque locataire inclut les étapes de déploiement de la base de référence Microsoft 365 Lighthouse. Chaque étape de déploiement inclut un ou plusieurs processus qui doivent être terminés. Lorsqu’un nouveau locataire devient actif, vous devez effectuer les activités de déploiement associées aux étapes et processus de déploiement.
 
-Pour chaque étape de déploiement, vous pouvez prendre les mesures suivantes :
+Pour chaque étape de déploiement, vous pouvez effectuer les actions suivantes :
 
 |Opération  |Description  |
 |---------|---------|
-| Partager    |  Permet de partager le contenu de l’étape de déploiement par le biais d’un lien ou par courrier électronique.    |
-| Examiner et déployer    |  Permet à l’utilisateur de : <ul><li>Lorsqu’il est pris en charge, comparez les paramètres de configuration de l’étape de déploiement avec les paramètres des stratégies existantes sans déployer les paramètres sur le client.<br>La comparaison des étapes de déploiement suivantes est prise en charge :</br><ul><li>Configurer une stratégie de conformité des appareils pour Windows 10 et ultérieures</li><li>Exiger l’mf pour les utilisateurs finaux</li><li>Exiger l’mf pour les administrateurs</li><li>Bloquer l’authentification héritée</li></ul></li> <li>Déployez les paramètres de configuration sur le client.</li></ul>**Remarque :** Les étapes qui ne permettent pas de comparer sans déployer les paramètres sur le client vous permettront de passer en revue les paramètres de configuration et de les déployer.|
+| Partager    |  Permet de partager le contenu de l’étape de déploiement par le biais d’un lien ou d’un e-mail.    |
+| Examiner et déployer    |  Permet à l’utilisateur de : <ul><li>Une fois pris en charge, comparez les paramètres de configuration de l’étape de déploiement avec les paramètres de toutes les stratégies existantes sans déployer les paramètres sur le locataire.<br>Les étapes de déploiement suivantes prennent en charge la comparaison :</br><ul><li>Configurer une stratégie de conformité des appareils pour Windows 10 et versions ultérieures</li><li>Exiger l’authentification multifacteur pour les utilisateurs finaux</li><li>Exiger l’authentification multifacteur pour les administrateurs</li><li>Bloquer l’authentification héritée</li></ul></li> <li>Déployez les paramètres de configuration sur le locataire.</li></ul>**Note:** Les étapes qui ne prennent pas en charge la possibilité de comparer sans déployer les paramètres sur le locataire vous permettent de passer en revue les paramètres de configuration et de les déployer.|
 | Mettre à jour l’état du plan d’action    |  Permet à l’utilisateur de signaler l’état de son plan d’action pour l’étape de déploiement.      |
 
 ## <a name="related-content"></a>Contenu associé
 
 [Déployer Microsoft 365 Lighthouse lignes de base](m365-lighthouse-deploy-baselines.md) (article)\
 [Stratégies d’accès conditionnel courantes](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) (article)\
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)

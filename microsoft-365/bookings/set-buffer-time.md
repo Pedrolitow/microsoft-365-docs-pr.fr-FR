@@ -1,5 +1,5 @@
 ---
-title: Définir la durée de la mémoire tampon dans Microsoft Bookings
+title: Définir Bookings durée de la mémoire tampon
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: Définissez la durée de la mémoire tampon avant ou après un rendez-vous dans Microsoft Bookings pour laisser le temps de nettoyer ou de réinitialiser l’équipement.
-ms.openlocfilehash: 28d4c7feb76770cb40f5a780c2d406dc3bfeef8d
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 0a27cc287ed7999f1ba1cc1b017c2f54e126c0b9
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714700"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022380"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>Définir la durée de la mémoire tampon dans Microsoft Bookings
 

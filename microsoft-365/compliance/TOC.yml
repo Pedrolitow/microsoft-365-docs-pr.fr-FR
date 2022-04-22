@@ -42,7 +42,7 @@
           href: device-onboarding-script.md
         - name: Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
           href: device-onboarding-vdi.md
-    - name: Intégrer les appareils macOS (préversion)
+    - name: Intégrer des appareils macOS
       items:
         - name: Vue d’ensemble de l’intégration des appareils macOS dans Microsoft 365
           href: device-onboarding-macos-overview.md

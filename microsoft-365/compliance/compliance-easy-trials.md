@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez plus d’informations sur la version d’évaluation des solutions Microsoft Purview et sur la façon de vous inscrire.
-ms.openlocfilehash: a019ac3a2e16dfd6ae83ba1564f0031f77757b62
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: ed7848a12483062c2873f4735ecb2188cad373a1
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971988"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023676"
 ---
 # <a name="about-the-microsoft-purview-solutions-trial"></a>À propos de la version d’évaluation des solutions Microsoft Purview
 
@@ -35,7 +35,7 @@ Consultez les [conditions générales](terms-conditions.md) pour les évaluation
 
 ## <a name="eligibility"></a>Éligibilité
 
-Les clients de Microsoft 365 E3 et d'Office 365 E3 qui ne disposent pas déjà d'un ensemble de licences Microsoft E5 peuvent bénéficier de l'évaluation des solutions Purview. La version d’évaluation n’est pas disponible pour Microsoft 365 clients du secteur public.
+Les clients de Microsoft 365 E3 et d'Office 365 E3 qui ne disposent pas déjà d'un ensemble de licences Microsoft E5 peuvent bénéficier de l'évaluation des solutions Purview. La version d’évaluation n’est pas disponible pour les clients Microsoft 365 pour le secteur public.
 
 ## <a name="licensing"></a>Gestion des licences
 
@@ -70,7 +70,7 @@ Utilisez notre [guide opérationnel d’évaluation](compliance-easy-trials-comp
 
 #### <a name="finding-support"></a>Recherche de support
 
-Les organisations peuvent utiliser FastTrack pour la prise en charge du déploiement d’évaluation si le locataire dispose d’au moins 150 licences. Obtenez plus [d’informations sur FastTrack](https://docs.microsoft.com/fasttrack/introduction).
+Les organisations peuvent utiliser FastTrack pour la prise en charge du déploiement d’évaluation si le locataire dispose d’au moins 150 licences. Obtenez d’autres [informations sur FastTrack](/fasttrack/introduction).
 
 #### <a name="extending-the-trial"></a>Extension de l’évaluation
 
@@ -98,6 +98,10 @@ Vous vous demandez ce que vous pouvez faire dans votre version d’essai gratuit
 
   Le Gestionnaire de conformité de Microsoft Purview peut vous aider tout au long de votre parcours de conformité, de l’inventaire des risques de protection de vos données à la gestion des complexités de l’implémentation de contrôles, la mise à jour des réglementations et des certifications et la création de rapports aux auditeurs. En savoir plus sur [ le Gestionnaire de conformité](compliance-manager.md)
 
+- **Gestion du cycle de vie des données**
+
+  Automatisez votre couverture de rétention à l’aide d’étendues de stratégie adaptatives. Cette fonction vous permet de cibler dynamiquement les stratégies de rétention sur des utilisateurs, des groupes ou des sites spécifiques. Ces politiques sont automatiquement mises à jour lorsque des changements surviennent dans votre organisation. En outre, les stratégies utilisant des périmètres adaptatifs ne sont pas soumises à des limites d'emplacement. En savoir plus sur les [étendues de stratégie adaptative](retention.md#adaptive-or-static-policy-scopes-for-retention)
+
 - **Protection contre la perte de données**
 
   La protection contre la perte de données (DLP) Microsoft Purview vous aide à contrôler le partage et l’utilisation d’informations sensibles sur les appareils, applications et services. Avec les évaluations, vous pouvez étendre la couverture des stratégies DLP aux Teams et aux appareils, protéger du contenu encore plus sensible à l’aide de classifieurs pouvant être formés et de la correspondance exacte des données (EDM), et commencer rapidement avec nos stratégies DLP recommandées.  [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)
@@ -106,10 +110,6 @@ Vous vous demandez ce que vous pouvez faire dans votre version d’essai gratuit
 
   - Vos stratégies existantes resteront allumées, sauf si vous les avez désactivées.
   - Si vous modifiez des stratégies DLP qui incluent les emplacements Teams ou Appareils à la fin de la version d’essai, ces emplacements seront supprimés de la stratégie.
-
-- **Gestion du cycle de vie des données**
-
-  Automatisez votre couverture de rétention à l’aide d’étendues de stratégie adaptatives. Cette fonction vous permet de cibler dynamiquement les stratégies de rétention sur des utilisateurs, des groupes ou des sites spécifiques. Ces politiques sont automatiquement mises à jour lorsque des changements surviennent dans votre organisation. En outre, les stratégies utilisant des périmètres adaptatifs ne sont pas soumises à des limites d'emplacement. En savoir plus sur les [étendues de stratégie adaptative](retention.md#adaptive-or-static-policy-scopes-for-retention)
 
 - **eDiscovery**
 
@@ -144,6 +144,7 @@ Vous vous demandez ce que vous pouvez faire dans votre version d’essai gratuit
 - **Gestion des enregistrements**
 
   Utilisez les fonctionnalités de gestion des enregistrements intégrées pour :
+
   - Classer le contenu en tant qu’enregistrement pour empêcher les utilisateurs de modifier, comme l’exige la réglementation, les lois ou la stratégie de l’organisation
   - Appliquer automatiquement des étiquettes de rétention au contenu, lorsqu’il correspond aux critères que vous spécifiez, à l’aide de stratégies d’étiquette à appliquer automatiquement
   - Utiliser des stratégies d’étendue adaptative pour cibler dynamiquement vos stratégies d’étiquette de rétention à des emplacements, sans aucune limite pour le nombre d’emplacements inclus

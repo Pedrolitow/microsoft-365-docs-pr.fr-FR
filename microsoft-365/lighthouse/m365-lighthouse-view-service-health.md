@@ -1,5 +1,5 @@
 ---
-title: Afficher l’intégrité du service client
+title: Afficher l’intégrité du service client dans Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment afficher l’intégrité du service client.
-ms.openlocfilehash: 5c15e004108606ce00a90e0fa3d675d00806b430
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: c5cfed4449fbdbb6cb63bc80dfd8e23ca4d5c4bb
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822713"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023610"
 ---
-# <a name="view-tenant-service-health"></a>Afficher l’intégrité du service client
+# <a name="view-tenant-service-health-in-microsoft-365-lighthouse"></a>Afficher l’intégrité du service client dans Microsoft 365 Lighthouse
 
 Vous pouvez afficher l’intégrité du service pour les locataires que vous gérez dans Microsoft 365 Lighthouse. État des services inclut des incidents et des conseils pour plusieurs services, notamment Microsoft Intune, les services d’identité Azure Active Directory (Azure AD) et les services cloud de gestion des appareils mobiles (GPM). Vous pouvez également voir combien de vos locataires gérés sont affectés par des incidents. Par exemple, si l’un de vos locataires rencontre des problèmes, vous pouvez consulter la page État des services pour déterminer s’il s’agit d’un problème connu avec une résolution en cours ou si une modification récente peut les affecter. Cela peut vous faire gagner du temps pour résoudre les problèmes et réduire les appels de support.
 

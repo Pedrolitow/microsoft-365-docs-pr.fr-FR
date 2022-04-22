@@ -1,5 +1,5 @@
 ---
-title: Protégez vos informations
+title: Entrez les informations de votre entreprise Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: Suivez ces instructions pour créer votre page À propos de nous, notamment le nom d’entreprise, l’adresse, le numéro de téléphone, l’URL du site web, le logo et les heures d’ouverture dans Microsoft Bookings.
-ms.openlocfilehash: 5d0505b0b23515bef0bdcc94206d8f3b856479c4
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 5dc8fa157d6ce53231ece9d8d70eb772218ac5dd
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64746863"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022512"
 ---
 # <a name="enter-your-business-information"></a>Protégez vos informations
 

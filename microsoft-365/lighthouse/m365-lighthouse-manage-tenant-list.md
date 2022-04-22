@@ -1,5 +1,5 @@
 ---
-title: Gérer votre liste de locataires
+title: Gérer votre liste de locataires dans Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment gérer votre liste de locataires.
-ms.openlocfilehash: 2f9d38bad24d20c53a1bafe44b1b831369957b71
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: b4bffcfd5b8962253e68938a956949ca8470f818
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824375"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022424"
 ---
-# <a name="manage-your-tenant-list"></a>Gérer votre liste de locataires
+# <a name="manage-your-tenant-list-in-microsoft-365-lighthouse"></a>Gérer votre liste de locataires dans Microsoft 365 Lighthouse
 
 Pour vous aider à gérer votre liste de locataires dans Microsoft 365 Lighthouse, vous pouvez appliquer des balises personnalisées à vos locataires. Ces balises peuvent être utilisées pour organiser vos locataires et peuvent également vous aider à filtrer les vues et les insights existants disponibles pour les ensembles de locataires appropriés. Vous pouvez gérer vos balises à partir de la page Locataires. Une fois créées et affectées, vous pouvez filtrer les données dans les pages Locataires, Utilisateurs, Appareils, Gestion des menaces et Windows 365 en fonction d’une balise.
 
@@ -100,10 +100,10 @@ Les balises déjà affectées au locataire auront une coche à droite du nom de 
 
 Les balises actuellement affectées ont une coche à droite du nom. Vous pouvez également supprimer une balise de plusieurs locataires en cochant la case en regard de chaque locataire de la liste, en sélectionnant **Attribuer des balises**, puis en sélectionnant une balise cochée dans la liste.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Une fois que vous avez créé et affecté des balises, vous pouvez les utiliser pour filtrer vos locataires. Accédez à l’une des autres pages (utilisateurs, appareils, gestion des menaces ou Windows 365) et sélectionnez une ou plusieurs balises dans le filtre client. Vous pouvez créer de nouvelles balises pour prendre en charge des vues spécifiques en fonction de chaque page.
 
 ## <a name="related-content"></a>Contenu associé
 
-[S’inscrire à Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article) [Microsoft 365 Lighthouse vue d’ensemble de la page conformité](m365-lighthouse-device-compliance-page-overview.md) des appareils (article) [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[S’inscrire à Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article) [Vue d’ensemble de la page conformité de l’appareil dans Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (article) [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
