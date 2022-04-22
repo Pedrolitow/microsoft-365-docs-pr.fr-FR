@@ -21,14 +21,16 @@ description: Utilisez le portail de conformité Microsoft Purview pour recherche
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: f35bfbbe299495e912d018bd00615964f883031e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6c0f26bbda2ba28b98fc80b80ce4a520d9fb39c3
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936266"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998901"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Vous pouvez utiliser l’outil de recherche de journal d’audit dans le portail de conformité Microsoft Purview afin de rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation. Des milliers d’opérations utilisateur et administrateur effectuées dans des dizaines de services et solutions Microsoft 365 sont capturées, enregistrées et conservées dans le journal d’audit unifié de votre organisation. Les utilisateurs de votre organisation peuvent utiliser l’outil de recherche du journal d’audit pour rechercher, afficher et exporter (vers un fichier CSV) les enregistrements d’audit pour ces opérations.
 
@@ -147,7 +149,7 @@ Pour effectuer une recherche dans le journal d’audit dans Microsoft 365, vous 
 1. Accédez à <https://compliance.microsoft.com> et connectez-vous.
 
     > [!TIP]
-    > Utilisez une session de navigation privée (et non une session normale) pour accéder au portail de conformité, car cela empêche l’utilisation des informations d’identification avec lesquelles vous êtes actuellement connecté. Appuyez sur **CTRL+SHIFT+N** pour ouvrir une session de navigation InPrivate dans Microsoft Edge ou une session de navigation privée dans Google Chrome (appelée fenêtre incognito).
+    > Utilisez une session de navigation privée (et non une session régulière) pour accéder au portail de conformité car cela empêchera l’utilisation des informations d’identification avec lesquelles vous êtes actuellement connecté. Appuyez sur **Ctrl+Maj+N** pour ouvrir une session navigation InPrivate dans Microsoft Edge ou une session de navigation privée dans Google Chrome (appelée fenêtre incognito).
 
 2. Dans le volet de navigation gauche du portail de conformité, cliquez sur **Audit**.
 
@@ -428,7 +430,7 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 |(aucun)|FileModifiedExtended|Cet événement est lié à l'activité « Fichier modifié » (FileModified). Un événement FileModifiedExtended est enregistré lorsque la même personne modifie un fichier pendant une période prolongée (jusqu'à 3 heures). <br/><br/> L’objectif de la journalisation des événements FileModifiedExtended consiste à réduire le nombre d’événements FileModified enregistrés lorsqu’un fichier est modifié de manière continue. Cela permet de réduire le bruit généré par l’enregistrement de plusieurs événements FileModified pour ce qui est en fait l’activité d’un seul et même utilisateur et vous permettre de vous concentrer sur l’événement FileModified initial (plus important).|
 |Fichier déplacé|FileMoved|Un utilisateur déplace un document de son emplacement actuel sur un site vers un nouvel emplacement.|
 |(aucun)|FilePreviewed|Un utilisateur affiche l’aperçu de fichiers sur un site SharePoint ou OneDrive Entreprise. Ces événements se produisent généralement dans des volumes élevés basés sur une activité unique, comme l’affichage d’une galerie d’images.|
-|Requête de recherche effectuée|SearchQueryPerformed|Un compte d’utilisateur ou système effectue une recherche dans SharePoint ou OneDrive Entreprise. Certains scénarios courants dans lesquels un compte de service effectue une requête de recherche incluent l’application d’une stratégie de rétention et de conservation eDiscovery aux sites et comptes OneDrive, et lors de l'application automatique d'étiquettes de rétention ou de confidentialité au contenu du site.|
+|Requête de recherche effectuée|SearchQueryPerformed|Le compte utilisateur ou le compte système effectue une recherche dans SharePoint ou OneDrive Entreprise. Certains scénarios courants dans lesquels un compte de service effectue une requête de recherche incluent l'application d'une stratégie de rétention et de conservation eDiscovery aux sites et aux comptes OneDrive, et l'application automatique d'étiquettes de rétention ou de confidentialité au contenu du site.|
 |Recyclé un fichier | Fichier recyclé | L'utilisateur déplace un fichier dans la corbeille SharePoint. |
 |Recyclé un dossier | DossierRecyclé | L'utilisateur déplace un dossier dans la corbeille SharePoint. |
 |Recyclage de toutes les versions mineures du fichier|FileVersionsAllMinorsRecycled|L’utilisateur supprime toutes les versions mineures de l’historique des versions d’un fichier. Les versions supprimées sont déplacées vers la Corbeille du site.|
@@ -912,7 +914,7 @@ Si une activité Forms est réalisée par un co-auteur ou un répondant anonyme,
 > [!NOTE]
 > Certaines activités d'audit Formulaires ne sont disponibles que dans l'audit (Premium). Cela signifie que les utilisateurs doivent se voir attribuer la licence appropriée avant que ces activités ne soient enregistrées dans le journal d'audit. Pour plus d'informations sur les activités disponibles uniquement dans l'audit (Premium), voir [Audit (Premium) dans Microsoft 365](advanced-audit.md#audit-premium-events). Pour connaître les conditions de licence de l'audit (Premium), consultez la section [Solutions d'audit dans Microsoft 365](auditing-solutions-overview.md#licensing-requirements). <br/><br/>Dans le tableau suivant, les activités d'audit (Premium) sont marquées d'un astérisque (*).
 
-|Nom convivial|Opération|Description|
+|Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
 |Commentaire créé|CreateComment|Le propriétaire du formulaire ajoute un commentaire ou une note à un questionnaire.|
 |Formulaire créé|CreateForm|Le propriétaire du formulaire crée un nouveau formulaire. <br><br>La propriété DataMode:string indique que le formulaire actuel est défini pour synchroniser avec un classeur Excel existant ou nouveau si la valeur de propriété est égal à DataSync. La propriété ExcelWorkbookLink:string indique l’ID du classeur Excel associé du formulaire actuel.|

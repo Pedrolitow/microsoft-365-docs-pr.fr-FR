@@ -1,5 +1,5 @@
 ---
-title: Gestion des Enregistrements dans Microsoft 365
+title: En savoir plus sur la gestion des enregistrements Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -20,21 +20,26 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-description: La gestion des enregistrements dans Microsoft 365 vous permet d’appliquer des planifications de rétention dans un plan de gestion de fichiers afin de gérer la rétention, la déclaration d’enregistrements et la destruction de ceux-ci.
-ms.openlocfilehash: ce00fdfc6db90b9c65051a31e8768d6cd661072d
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+description: Découvrez comment la gestion des enregistrements Microsoft Purview prend en charge les éléments à valeur élevée pour les exigences de conservation des enregistrements métier, légales ou réglementaires.
+ms.openlocfilehash: dd554b4369a1f721d306bc301519ce3ef59e4569
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755680"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998527"
 ---
-# <a name="learn-about-records-management-in-microsoft-365"></a>Découvrez la gestion des enregistrements dans Microsoft 365
+# <a name="learn-about-records-management"></a>Découvrez la gestion des enregistrements
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+> [!TIP]
+> *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview de 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins de conformité. Microsoft 365 E3 et Office 365 E3 clients peuvent être démarrés maintenant sur le [Hub d’essais du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions d’évaluation](compliance-easy-trials.md).
 
-Tous les types d’organisation nécessitent une solution de gestion des enregistrements pour gérer des enregistrements réglementaires, légaux, et hautement professionnels dans les données d’entreprise. La gestion des enregistrements dans Microsoft 365 permet à une organisation de gérer ses obligations légales, démontrer la conformité aux réglementations, et améliore l’efficacité avec une disposition régulière des éléments dont la rétention n’est plus nécessaire, qui n’ont plus de valeur, ou ne sont plus nécessaires pour des objectifs professionnels.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Les fonctionnalités suivantes permettent la prise en charge votre solution de gestion des enregistrements dans Microsoft 365 :
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+Les organisations de tous types ont besoin d'une solution de gestion des documents pour gérer les documents réglementaires, juridiques et critiques pour l'entreprise dans l'ensemble de leurs données d'entreprise. La gestion des enregistrements pour Microsoft Purview aide une organisation à gérer ses obligations légales, lui donne la possibilité de démontrer sa conformité aux réglementations et augmente l'efficacité en éliminant régulièrement les éléments qui ne doivent plus être conservés, qui n'ont plus de valeur ou qui ne sont plus nécessaires à l'activité de l'entreprise.
+
+Utilisez les fonctionnalités suivantes pour prendre en charge votre solution de gestion des enregistrements pour les services et applications Microsoft 365 :
 
 - **Étiquetez le contenu en tant qu’enregistrement**. Créez et configurez des étiquettes de rétention pour indiquer que le contenu est un [enregistrement](#records) qui peut ensuite être appliqué par les utilisateurs ou appliqué automatiquement en identifiant les informations sensibles, les mots clés ou les types de contenu.
 
@@ -92,9 +97,9 @@ Une étiquette de rétention standard comporte des paramètres et des actions de
 
 Notes de bas de page :
 
-<sup>1</sup> Les propriétés de modification d’un enregistrement verrouillé sont autorisées par défaut, mais peuvent être bloquées par un paramètre client dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) > **Gestion des enregistrements** > **Paramètres de gestion des enregistrements** > **Étiquettes de rétention** > **Autoriser la modification des propriétés d’enregistrement**.
+<sup>1</sup> Les propriétés de modification d’un enregistrement verrouillé sont autorisées par défaut, mais peuvent être bloquées par un paramètre client dans le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com/) > **Gestion des enregistrements** > **Paramètres de gestion des enregistrements** > **Étiquettes de rétention** > **Autoriser la modification des propriétés d’enregistrement**.
 
-<sup>2</sup> La suppression d’éléments étiquetés dans SharePoint et OneDrive peut être bloquée en tant que paramètre client dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) > **Gestion des enregistrements** > **Paramètres de gestion des enregistrements** > **Étiquettes de rétention** > **Suppression des éléments**.
+<sup>2</sup> La suppression d’éléments étiquetés dans SharePoint et OneDrive peut être bloquée en tant que paramètre client dans le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com/) > **Gestion des enregistrements** > **Paramètres de gestion des enregistrements** > **Étiquettes de rétention** > **Suppression des éléments**.
 
 Lorsque vous appliquez une étiquette de rétention à un élément de liste qui contient une pièce jointe au document, ce document n’hérite pas des paramètres de rétention et peut être supprimé de l’élément de liste. En comparaison, si cet élément de liste a été déclaré comme un enregistrement avec une étiquette de rétention, la pièce jointe au document hériterait des paramètres de rétention et n’a pas pu être supprimée.
 

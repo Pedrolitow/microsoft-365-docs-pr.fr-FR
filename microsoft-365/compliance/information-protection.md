@@ -1,5 +1,5 @@
 ---
-title: Microsoft Information Protection dans Microsoft 365.
+title: Protection de l'information Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,27 +17,32 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 recommendations: false
-description: Implémentez des fonctionnalités de Microsoft Information Protection (MIP) pour vous aider à protéger les informations sensibles partout où elles résident ou voyagent.
-ms.openlocfilehash: 2fccdafa662bfdf8390a53ac535c571f52f673de
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
+description: Implémentez les fonctionnalités de la protection des données Microsoft Purview pour vous aider à protéger les informations sensibles où qu’elles se trouvent ou voyagent.
+ms.openlocfilehash: ac6627d620169aca962f85f30c98d830b4a34a9f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62187328"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999869"
 ---
-# <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection dans Microsoft 365.
+# <a name="protect-your-sensitive-data-with-microsoft-purview"></a>Protéger vos données sensibles avec Microsoft Purview
+
+> [!TIP]
+> *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview de 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins de conformité. Microsoft 365 E3 et Office 365 E3 clients peuvent être démarrés maintenant sur le [Hub d’essais du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions d’évaluation](compliance-easy-trials.md).
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Licences de sécurité et de conformité Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Implémentez des fonctionnalités de Microsoft Information Protection (MIP) pour vous aider à découvrir, classer et protéger les informations sensibles où qu’elles résident ou voyagent.
+Implémentez des fonctionnalités de la **Protection des données Microsoft Purview** (anciennement appelée Protection des données Microsoft) pour vous aider à découvrir, classifier et protéger des informations sensibles où qu’elles se trouvent ou voyagent.
 
-Les fonctionnalités MIP sont incluses dans la Conformité Microsoft 365 et vous donnent les outils nécessaires pour vous permettre de [connaître vos données](#know-your-data), [protéger vos données](#protect-your-data) et [éviter la perte de vos données](#prevent-data-loss).
+Ces fonctionnalités de protection des informations vous donnent les outils nécessaires pour [connaître vos données](#know-your-data), [protéger vos données](#protect-your-data) et [empêcher la perte de données](#prevent-data-loss).
 
-![Image qui illustre la façon dont MIP vous permet de découvrir, de classifier et de protéger les données sensibles.](../media/powered-by-intelligent-platform.png)
+![Image montrant comment la protection des données Microsoft Purview vous aide à découvrir, classifier et protéger des données sensibles.](../media/powered-by-intelligent-platform.png)
 
-Pour obtenir des instructions prescriptives sur le déploiement d’une solution MIP pour votre organisation, consultez [Déployer une solution Microsoft Information Protection](information-protection-solution.md).
+Pour obtenir des instructions prescriptives sur le déploiement d’une solution de protection des données Microsoft Purview pour votre organisation, consultez [Déployer une solution de protection des informations avec Microsoft Purview](information-protection-solution.md).
 
-Si vous souhaitez en savoir plus sur la gestion de vos données, consultez l’article [Gouvernance des données Microsoft dans Microsoft 365](manage-Information-governance.md).
+Pour plus d’informations sur la gouvernance de vos données, consultez [Régir vos données avec Microsoft Purview](manage-Information-governance.md).
 
 ## <a name="know-your-data"></a>Connaître vos données
 
@@ -64,7 +69,7 @@ Pour appliquer des actions de protection flexibles qui incluent le chiffrement, 
 [Connecteur de gestion des droits](/azure/information-protection/deploy-rms-connector) |Offre uniquement une protection pour les déploiements locaux existants qui utilisent Exchange ou SharePoint Server, ou les serveurs de fichiers qui fonctionnent avec Windows Server et l’infrastructure de classification de fichiers. | [Étapes de déploiement du connecteur RMS](/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
 |[Scanner d’étiquetage unifié Azure Information Protection](/azure/information-protection/deploy-aip-scanner)| Découvre, étiquette, puis protège les informations sensibles résidant dans des magasins de données locaux. | [Configurer et installer le scanner d’étiquetage unifié Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install)|
 |[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)| Découvre, étiquette, puis protège les informations sensibles résidant dans les magasins de données situés dans le cloud. | [Découvrir, classifier, étiqueter et protéger les données réglementées et sensibles stockées dans le cloud](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|[Azure Purview](/azure/purview/overview) |Identifie les données sensibles et applique l’étiquetage automatique au contenu des ressources Azure Purview. Ceux-ci incluent des fichiers dans le stockage comme Azure Data Lake et Azure Files, ainsi que des données schématisées telles que des colonnes dans Azure SQL base de données et Cosmos DB. |[Étiquetage dans Azure Purview](/azure/purview/create-sensitivity-label) |
+|[Carte de données Microsoft Purview](/azure/purview/overview) |Identifie les données sensibles et applique l’étiquetage automatique au contenu des ressources de carte de données Microsoft Purview. Ceux-ci incluent des fichiers dans le stockage comme Azure Data Lake et Azure Files, ainsi que des données schématisées telles que des colonnes dans Azure SQL base de données et Cosmos DB. |[Étiquetage dans la carte de données Microsoft Purview](/azure/purview/create-sensitivity-label) |
 |[Kit de développement logiciel (SDK) de Microsoft Information Protection](/information-protection/develop/overview#microsoft-information-protection-sdk)|Étend les étiquettes de confidentialité aux applications et services tiers. <br /><br />  Exemple de scénario : [définir et obtenir une étiquette de confidentialité (C++)](/information-protection/develop/quick-file-set-get-label-cpp) |[Configuration et paramétrage du kit de développement logiciel (SDK) de Microsoft Information Protection (MIP)](/information-protection/develop/setup-configure-mip)|
 
 
@@ -75,12 +80,12 @@ Pour éviter le partage excessif accidentel d’informations sensibles, utilisez
 
 |Fonctionnalité|Utilité|Prise en main|
 |:------|:------------|:---------------------|
-|[Protection contre la perte de données](dlp-learn-about-dlp.md)| Permet d’empêcher le partage involontaire d’éléments sensibles. | [Prise en main de la stratégie DLP par défaut](get-started-with-the-default-dlp-policy.md)|
+|[Protection contre la perte de données Microsoft Purview](dlp-learn-about-dlp.md)| Permet d’empêcher le partage involontaire d’éléments sensibles. | [Prise en main de la stratégie DLP par défaut](get-started-with-the-default-dlp-policy.md)|
 |[Point de terminaison protection contre la perte de données](endpoint-dlp-learn-about.md)| Étend les fonctionnalités DLP aux éléments utilisés et partagés sur les ordinateurs Windows 10. | [Prise en main de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md)|
 |[Extension de la conformité Microsoft](dlp-chrome-learn-about.md) | Étend les fonctionnalités de protection contre la perte de données au navigateur Chrome | [Prise en main de l’extension de la conformité Microsoft](dlp-chrome-get-started.md)|
-|[Scanneur local de protection contre la perte de données Microsoft 365 (paperçu)](dlp-on-premises-scanner-learn.md)|Étend la surveillance de la protection contre la perte de données des activités sur fichier et des actions de protection pour les partages de fichiers locaux, pour les dossiers locaux et les bibliothèques de documents SharePoint.|[Prise en main du scanner local de protection contre la perte de données Microsoft 365 (préversion)](dlp-on-premises-scanner-get-started.md)|
+|[Scanner local de protection contre la perte de données Microsoft Purview (préversion)](dlp-on-premises-scanner-learn.md)|Étend la surveillance de la protection contre la perte de données des activités sur fichier et des actions de protection pour les partages de fichiers locaux, pour les dossiers locaux et les bibliothèques de documents SharePoint.|[Prise en main du scanner local de protection contre la perte de données sur site Microsoft Purview (préversion)](dlp-on-premises-scanner-get-started.md)|
 |[Protéger les informations sensibles dans les messages de conversation et de canal de Microsoft Teams](dlp-microsoft-teams.md) | Étend certaines fonctionnalités de protection contre la perte de données aux messages de canal et aux conversations Teams. | [En savoir plus sur la stratégie de protection par défaut contre la perte de données dans Microsoft Teams (préversion)](dlp-teams-default-policy.md)|
 
 ## <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
-Les exigences de licence pour la protection des données Microsoft dépendent des scénarios et fonctionnalités que vous utilisez, plutôt que des exigences de licence définies pour chaque fonctionnalité répertoriée sur la page. Pour comprendre vos exigences et options de licence pour MIP, consultez les sections **Information Protection** de [Microsoft 365 conseils sur la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) et les [de téléchargement PDF](https://go.microsoft.com/fwlink/?linkid=2139145) connexes pour les exigences de licence au niveau des fonctionnalités.
+Les exigences de licence pour la protection des données Microsoft Purview dépendent des scénarios et des fonctionnalités que vous utilisez, au lieu de définir des exigences de licence pour chaque fonctionnalité répertoriée sur cette page. Pour comprendre vos exigences et options de licence pour la protection des données Microsoft Purview, consultez les sections **Protection des données** des [Recommandations Microsoft 365 pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) et les [Téléchargement PDF](https://go.microsoft.com/fwlink/?linkid=2139145) connexes pour les exigences de licence au niveau des fonctionnalités.
