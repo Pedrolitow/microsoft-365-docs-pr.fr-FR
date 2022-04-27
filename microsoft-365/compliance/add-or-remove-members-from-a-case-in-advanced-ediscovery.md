@@ -2,8 +2,8 @@
 title: Ajouter ou supprimer des membres à partir d’un cas
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment ajouter ou supprimer les membres qui peuvent accéder à un cas lors de la gestion d’un cas eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ae0404199506d5da18fb1579fbe6a125350afcde
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 85a8673e7e3c31ab12cda0109f6c06762adeabf3
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001673"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091872"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Ajouter ou supprimer des membres à partir d’un cas
 

@@ -2,8 +2,8 @@
 title: Rechercher du contenu dans un cas eDiscovery (Standard)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Recherchez du contenu qui peut être pertinent pour un cas eDiscovery (Standard).
-ms.openlocfilehash: 00a7c7bdd565a5fc184281fa467db3c56b1c6288
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 372f8beba2567c24e8af75acf4d11e3fe6220f2c
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995335"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090404"
 ---
 # <a name="search-for-content-in-a-ediscovery-standard-case"></a>Rechercher du contenu dans un cas eDiscovery (Standard)
 

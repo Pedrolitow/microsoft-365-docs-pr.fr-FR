@@ -1,6 +1,6 @@
 - name: Documentation de base de tests
   href: index.yml
-- name: Présentation
+- name: Vue d’ensemble
   items:
     - name: Qu’est-ce que Base de test ?
       href: overview.md
@@ -8,9 +8,9 @@
   items:
     - name: Créer un compte Base de test
       href: createAccount.md
-    - name: Tester votre application sur la base de test
+    - name: Tester votre application sur Test Base
       items:
-        - name: Présentation
+        - name: Vue d’ensemble
           href: testoverview.md
         - name: Tester vos fichiers binaires sur la base de test
           href: testapplication.md
@@ -20,14 +20,6 @@
           href: uploadApplication.md
     - name: Créer un package
       href: buildpackage.md
-    - name: Télécharger binaires & dépendances
-      href: binaries.md
-    - name: Définir des tâches de test
-      href: testtask.md
-    - name: Définir les options de test
-      href: testoptions.md
-    - name: Révision
-      href: review.md
     - name: Instructions relatives aux packages
       href: contentguideline.md
     - name: Règles d’application/test

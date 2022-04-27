@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 14bfa8711d5cff46b8cce02950c087844384b9f9
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 6ae0fdf9cc49faaaff84eb3f96e076d1efba8a4c
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953779"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077437"
 ---
 # <a name="manage-your-resource-with-sdk--apis"></a>Gérer votre ressource avec le Kit de développement logiciel (SDK) & DES API
 
@@ -108,7 +108,7 @@ Consultez les liens ci-dessous pour en savoir plus sur le Kit de développement 
 
 - [Documentation du Kit de développement logiciel (SDK) Python de base de test](/python/api/overview/azure/mgmt-testbase-readme)
 - [Exemple de Kit de développement logiciel (SDK) Python de base de test](https://aka.ms/testbase-sample-py)
-- [Modèle d’utilisation générale Azure du Kit de développement logiciel (SDK) Python](/azure/developer/python/azure-sdk-overview#provision-and-manage-azure-resources-with-management-libraries)
+- [Modèle d’utilisation générale Azure du Kit de développement logiciel (SDK) Python](/azure/developer/python/sdk/azure-sdk-library-usage-patterns)
 
 **API REST** :
 

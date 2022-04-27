@@ -18,17 +18,17 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview Compliance Manager aide les organisations à simplifier et à automatiser les évaluations des risques, et suggère des actions recommandées pour aider à résoudre les risques.
-ms.openlocfilehash: 1d5f036b8bc97da431ed6e41017d59e01db749a4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: deb3c3755a8afbab0071b8f829da620676f926ff
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997095"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078240"
 ---
 # <a name="microsoft-purview-compliance-manager"></a>Gestionnaire de conformité Microsoft Purview
 
 > [!TIP]
-> *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview de 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins de conformité. Microsoft 365 E3 et Office 365 E3 clients peuvent commencer maintenant sur le [hub d’essais du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions d’évaluation](compliance-easy-trials.md).
+> *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview de 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins de conformité. Microsoft 365 E3 et Office 365 E3 clients peuvent être démarrés maintenant sur le [Hub d’essais du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions d’évaluation](compliance-easy-trials.md).
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -41,7 +41,7 @@ Le [Gestionnaire de conformité Microsoft Purview](https://compliance.microsoft.
 Regardez la vidéo ci-dessous pour découvrir comment le Gestionnaire de conformité peut simplifier la façon dont votre organisation gère la conformité :
 <br>
 <br>
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VdoO]
 
 Le Gestionnaire de conformité permet de simplifier la conformité et de réduire les risques en fournissant :
 

@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - GEA150
 description: Découvrez comment obtenir un rapport d’utilisation du navigateur Microsoft à l’aide du tableau de bord rapports Microsoft 365 dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 29b4161b9bb6cbc509d6541e13fa9222628534b4
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 5515c00b5c7fc64a6f0295bdce724e5b798fb018
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782014"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078317"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>rapports Microsoft 365 dans le Centre d’administration - Utilisation du navigateur Microsoft
 
-Le tableau de bord Microsoft 365 Reports vous présente une vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d’explorer des rapports individuels au niveau du produit pour vous donner des informations plus précises sur les activités au sein de chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md). Dans le rapport d’utilisation du navigateur Microsoft, vous pouvez obtenir des insights sur Internet Explorer, les Version antérieure de Microsoft Edge et les nouvelles utilisations Microsoft Edge. Les rapports d’utilisation sont basés sur Microsoft 365 services en ligne accessibles à l’aide d’un navigateur Microsoft.
+Le tableau de bord Microsoft 365 Reports vous présente une vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d’explorer des rapports individuels au niveau du produit pour vous donner des informations plus précises sur les activités au sein de chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md). Dans le rapport d’utilisation du navigateur Microsoft, vous pouvez obtenir des insights sur Internet Explorer, les Version antérieure de Microsoft Edge et les nouvelles utilisations Microsoft Edge. Les rapports d’utilisation sont basés sur Microsoft 365 services en ligne accessibles à l’aide d’un navigateur Microsoft sur n’importe quel appareil qui utilise un compte Microsoft 365.
 
 ## <a name="how-to-get-to-the-microsoft-browser-usage-report"></a>Comment accéder au rapport d’utilisation du navigateur Microsoft
 
@@ -49,7 +49,7 @@ Il s’agit d’une fonctionnalité limitée dans le temps qui est actuellement 
 
 :::image type="content" alt-text="Rapport d’utilisation du navigateur Microsoft." source="../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png" lightbox="../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png":::
 
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |1. |Le rapport **d’utilisation du navigateur Microsoft** peut être consulté pour les tendances des 7 derniers jours, 30 jours, 90 jours ou 180 jours. |
 |2. |Les données de chaque rapport couvrent généralement jusqu’aux sept derniers jours. |

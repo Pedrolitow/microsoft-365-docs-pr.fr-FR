@@ -2,8 +2,8 @@
 title: Attribuer des autorisations eDiscovery dans le portail de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ description: Attribuez les autorisations nécessaires pour effectuer des tâches
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 3fef13fe96297b426dda4d72231846a99fb03179
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: e764aae4313a8e5d4dfc402e4c1f87eb8c1a5bbb
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001365"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090514"
 ---
 # <a name="assign-ediscovery-permissions-in-the-compliance-portal"></a>Attribuer des autorisations eDiscovery dans le portail de conformité
 
@@ -83,14 +83,14 @@ Dans la page **Autorisations** du portail de conformité, vous pouvez également
 
 Le tableau suivant répertorie les rôles RBAC liés à eDiscovery dans le portail de conformité et indique les groupes de rôles intégrés auxquels chaque rôle est attribué par défaut.
   
-| Role | Administrateur de conformité | eDiscovery Manager & Administrator | Gestion de l’organisation | Relecteur |
+| Rôle | Administrateur de conformité | eDiscovery Manager & Administrator | Gestion de l’organisation | Relecteur |
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|Gestion des cas <br/> |![Marque de vérification.](../media/checkmark.png) <br/> |![Marque de vérification.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |
+|Gestion des cas <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> |
 |Communication <br/> | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Recherche de conformité <br/> |![Coche.](../media/checkmark.png) <br/> |![Marque de vérification.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |
+|Recherche de conformité <br/> |![Marque de vérification.](../media/checkmark.png) <br/> |![Marque de vérification.](../media/checkmark.png) <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> |
 |Consignataire <br/> | <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> | <br/> |
 |Exporter <br/> | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Suspension <br/>  |![Marque de vérification.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |
+|Suspension <br/>  |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> |
 |Aperçu <br/>  | <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> | <br/> |
 |Révision <br/>  | <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> |![Coche](../media/checkmark.png) <br/> |
 |Déchiffrer RMS <br/>  ||![Coche](../media/checkmark.png) <br/> |||

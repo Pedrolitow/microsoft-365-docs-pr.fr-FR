@@ -130,7 +130,7 @@
             - name: 'Office 2013, Office 2016 et les applications clientes Office 2019'
               href: modern-auth-for-office-2013-and-2016.md
         - name: Isolation du client dans Microsoft 365
-          href: /compliance/assurance/microsoft-365-isolation-controls
+          href: /compliance/assurance/assurance-microsoft-365-isolation-controls
           items:
             - name: Isolation et contrôle d’accès dans Azure Active Directory
               href: microsoft-365-isolation-in-azure-active-directory.md

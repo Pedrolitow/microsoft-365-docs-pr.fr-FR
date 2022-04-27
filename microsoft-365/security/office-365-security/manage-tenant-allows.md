@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer les autorisations dans la liste d’autorisations/blocages du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad2a55d19f60bf310b62ac13dfbe2563709673d2
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: ad2ef693848b664be6ec9b48cc4fc320a8b4b9c2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970908"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090141"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Ajouter des autorisations dans la liste verte/rouge du client
 
@@ -30,7 +30,7 @@ ms.locfileid: "64970908"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Les administrateurs ne peuvent pas ajouter d’autorisations directement à la liste d’autorisation/de blocage du locataire. Au lieu de cela, vous utilisez le processus de soumission de l’administrateur pour envoyer le message qui a été bloqué afin que l’URL, le fichier et/ou les expéditeurs correspondants soient ajoutés à la liste d’autorisations/de blocs du locataire. Si aucun bloc du fichier, de l’URL ou de l’expéditeur ne s’est produit, l’autorisation n’est pas créée. Dans la plupart des cas où le message a été déterminé comme un faux positif qui a été bloqué de manière incorrecte, les autorisations sont conservées aussi longtemps que nécessaire pour donner au système le temps de les autoriser naturellement.
 
@@ -117,7 +117,7 @@ Autoriser les fichiers sur la page **Soumissions** dans Microsoft 365 Defender.
    - **Type d’usurpation** d’identité : sélectionnez l’une des valeurs suivantes :
      - **Interne** : l’expéditeur usurpé se trouve dans un domaine qui appartient à votre organisation ( [un domaine accepté](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
      - **Externe** : l’expéditeur usurpé se trouve dans un domaine externe.
-   - **Action** : sélectionnez **Autoriser** ou **Bloquer**.
+   - **Action** : Sélectionnez **Autoriser**.
 
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
 

@@ -2,8 +2,8 @@
 title: Valider une collection au brouillon vers un ensemble de révisions
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: ''
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une fois que vous avez créé et itéré sur un brouillon de collection, vous pouvez le valider dans un ensemble de révisions. Lorsque vous validez un brouillon de collection, les éléments collectés sont ajoutés à l’ensemble de révisions dans le cas. Une fois les éléments collectés dans l’ensemble de révisions, vous pouvez les analyser, les examiner et les exporter.
-ms.openlocfilehash: f908d17d804487cd5e7e93085e418f9a94915c8e
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: c798981d485b6128e76ea3f0c0fbf189b4f9634a
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997931"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090470"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-ediscovery-premium"></a>Valider un brouillon de collection dans un ensemble de révisions dans eDiscovery (Premium)
 

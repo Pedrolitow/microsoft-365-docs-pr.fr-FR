@@ -1,8 +1,8 @@
 ---
-title: Gérer la Microsoft 365 d’identité
+title: Gérer Microsoft 365 gouvernance des identités
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
@@ -21,23 +21,23 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Découvrez comment utiliser les fonctionnalités Microsoft 365 gouvernance des identités.
-ms.openlocfilehash: 35b2092412ddbeacd5d6962e110de1931b2d0f4b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez comment utiliser Microsoft 365 fonctionnalités de gouvernance des identités.
+ms.openlocfilehash: f4fcfed9fcb978e40c3bf7c0e7a35eb717fee343
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150749"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091168"
 ---
-# <a name="manage-microsoft-365-identity-governance"></a>Gérer la Microsoft 365 d’identité
+# <a name="manage-microsoft-365-identity-governance"></a>Gérer Microsoft 365 gouvernance des identités
 
 La gouvernance des identités s’intéresse à la protection, la surveillance et l’audit de l’accès aux ressources critiques, tout en assurant la productivité des employés. Par exemple, avec la gouvernance des identités, vous pouvez vous assurer que les utilisateurs appropriés disposent de l’accès approprié aux ressources adéquates et déterminer si cet accès change au fil du temps.
 
-Pour plus d’informations, consultez cette vue d’ensemble de la gouvernance des [identités pour Azure Active Directory (Azure AD).](/azure/active-directory/governance/identity-governance-overview)
+Pour plus d’informations, consultez cette [vue d’ensemble de la gouvernance des identités pour les Azure Active Directory (Azure AD).](/azure/active-directory/governance/identity-governance-overview)
 
 ## <a name="set-up-azure-ad-access-reviews"></a>Configurer les révisions d’accès Azure AD
 
-Les révisions d’accès Azure AD vous permettent de passer en revue l’accès d’un utilisateur pour vous assurer que seules les bonnes personnes ont un accès continu. Par exemple :
+Azure AD révisions d’accès vous permettent de passer en revue l’accès d’un utilisateur pour vous assurer que seules les bonnes personnes disposent d’un accès continu. Par exemple :
 
 - Lorsqu’un nouvel employé rejoint votre organisation, vous devez vous assurer qu’il dispose d’un accès approprié pour être productif.
 - Au fur et à mesure que cet employé passe d’une équipe, d’un emplacement ou d’un service à un autre, vous devez vous assurer que son accès aux équipes, emplacements ou services précédents est supprimé si nécessaire.
@@ -45,7 +45,7 @@ Les révisions d’accès Azure AD vous permettent de passer en revue l’accès
 
 Ceci est particulièrement important si votre organisation fait l’objet d’audits de sécurité pour déterminer si les comptes d’utilisateurs ont un niveau d’accès trop important, ce qui peut entraîner des amendes en cas de violation des réglementations régionales ou industrielles.
 
-Pour plus d’informations, voir la [vue d’ensemble des révisions d’accès.](/azure/active-directory/governance/access-reviews-overview)
+Pour plus d’informations, consultez la [vue d’ensemble des révisions d’accès](/azure/active-directory/governance/access-reviews-overview).
 
 Pour configurer différents types de révisions d’accès, consultez les articles suivants :
 
@@ -53,12 +53,12 @@ Pour configurer différents types de révisions d’accès, consultez les articl
 - [Rôles Azure AD](/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
 - [Rôles de ressources Azure](/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
 
-## <a name="set-up-azure-ad-entitlement-management"></a>Configurer la gestion des droits Azure AD
+## <a name="set-up-azure-ad-entitlement-management"></a>Configurer Azure AD gestion des droits d’utilisation
 
-La gestion des droits Azure AD Wiht vous permet de gérer le cycle de vie des identités et des accès à grande échelle en automatisant les flux de travail de demande d’accès, les affectations d’accès, les avis et l’expiration.
+Wiht Azure AD gestion des droits d’utilisation, vous pouvez gérer le cycle de vie des identités et des accès à grande échelle en automatisant les flux de travail des demandes d’accès, les attributions d’accès, les révisions et l’expiration.
 
-Vos employés ont besoin d’accéder à différents groupes, applications et sites pour effectuer leur travail. La gestion de cet accès peut être difficile car les exigences changent, de nouvelles applications sont ajoutées ou les utilisateurs ont besoin de droits d’accès supplémentaires. Lorsque vous collaborez avec d’autres organisations, vous ne savez peut-être pas qui dans l’autre organisation a besoin d’accéder aux ressources de votre organisation, et les utilisateurs externes ne connaissent pas les applications, les groupes ou les sites que votre organisation utilise.
+Vos employés ont besoin d’accéder à différents groupes, applications et sites pour effectuer leur travail. La gestion de cet accès peut être difficile, car les exigences changent, de nouvelles applications sont ajoutées ou les utilisateurs ont besoin de droits d’accès supplémentaires. Lorsque vous collaborez avec d’autres organisations, vous ne savez peut-être pas qui dans l’autre organisation a besoin d’accéder aux ressources de votre organisation, et les utilisateurs externes ne savent pas quelles applications, groupes ou sites votre organisation utilise.
 
-La gestion des droits Azure AD peut vous aider à gérer plus efficacement l’accès aux groupes, applications et sites SharePoint pour les utilisateurs internes et externes.
+Azure AD gestion des droits d’utilisation peut vous aider à gérer plus efficacement l’accès aux groupes, applications et sites SharePoint pour les utilisateurs internes et externes.
  
-Pour plus d’informations, voir la [vue d’ensemble de la gestion des droits Azure AD.](/azure/active-directory/governance/entitlement-management-overview)
+Pour plus d’informations, consultez la [vue d’ensemble de Azure AD gestion des droits d’utilisation](/azure/active-directory/governance/entitlement-management-overview).

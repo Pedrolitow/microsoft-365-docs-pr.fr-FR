@@ -15,14 +15,16 @@ search.appverid:
 - MET150
 recommendations: false
 description: en savoir plus sur les conditions de stratégie dlp et les exceptions
-ms.openlocfilehash: f4a3521d0e5aab73cc16d97e0aea9c5830d9ddec
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: cd252002f2fcef3e3935dd44b1333e801bcba46d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64762054"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090448"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>Conditions de stratégie DLP, exceptions et actions
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Les conditions et exceptions dans les stratégies DLP identifient les éléments sensibles auxquels la stratégie est appliquée. Les actions définissent ce qui se produit suite à une condition d’exception remplie.
 
@@ -94,11 +96,12 @@ Pour configurer l’emplacement de l’adresse de l’expéditeur au niveau d’
 
 |condition ou exception dans DLP|paramètres de condition/exception dans Microsoft 365 PowerShell|type de propriété|description|
 |---|---|---|---|
-|L’objet contient des mots ou des expressions|condition : *SubjectContainsWords* <br/><br/> exception : *ExceptIf SubjectContainsWords*|Mots|Messages dans lesquels le champ Subject contient les mots spécifiés.|
-|L’objet correspond aux modèles|condition : *SubjectMatchesPatterns* <br/><br/> exception : *ExceptIf SubjectMatchesPatterns*|Modèles|Messages où le champ Objet contient des modèles de texte qui correspondent aux expressions régulières spécifiées.|
-|Le contenu contient|condition : *ContentContainsSensitiveInformation* <br/><br/> exception *ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|Messages ou documents contenant des informations sensibles tels que définis par les stratégies de protection contre la perte de données (DLP).|
-|Modèle de correspondance de l’objet ou du corps|condition : *SubjectOrBodyMatchesPatterns* <br/><br/> exception : *ExceptIfSubjectOrBodyMatchesPatterns*|Modèles|Messages où le champ objet ou le corps du message contient des modèles de texte qui correspondent aux expressions régulières spécifiées.|
-|Objet ou corps contient des mots|condition : *SubjectOrBodyContainsWords* <br/><br/> exception : *ExceptIfSubjectOrBodyContainsWords*|Mots|Messages qui ont les mots spécifiés dans le champ d’objet ou le corps du message|
+|L’objet contient des mots ou des expressions|condition : *SubjectContainsWords* <br/> exception : *ExceptIf SubjectContainsWords*|Mots|Messages dans lesquels le champ Subject contient les mots spécifiés.|
+|L’objet correspond aux modèles|condition : *SubjectMatchesPatterns* <br/> exception : *ExceptIf SubjectMatchesPatterns*|Modèles|Messages où le champ Objet contient des modèles de texte qui correspondent aux expressions régulières spécifiées.|
+|Le contenu contient|condition : *ContentContainsSensitiveInformation* <br/> exception *ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|Messages ou documents contenant des informations sensibles tels que définis par les stratégies de protection contre la perte de données (DLP) Microsoft Purview.|
+|Modèle de correspondance de l’objet ou du corps|condition : *SubjectOrBodyMatchesPatterns* <br/> exception : *ExceptIfSubjectOrBodyMatchesPatterns*|Modèles|Messages où le champ objet ou le corps du message contient des modèles de texte qui correspondent aux expressions régulières spécifiées.|
+|Objet ou corps contient des mots|condition : *SubjectOrBodyContainsWords* <br/> exception : *ExceptIfSubjectOrBodyContainsWords*|Mots|Messages qui ont les mots spécifiés dans le champ d’objet ou le corps du message|
+|
 
 ### <a name="attachments"></a>Pièces jointes
 
@@ -147,7 +150,6 @@ Ce tableau décrit les actions disponibles dans DLP.
 |Ajouter le gestionnaire de l’expéditeur en tant que destinataire|AddRecipients|Première propriété : *AddedManagerAction*<br/><br/>Deuxième propriété : *Field*|Ajoute le responsable de l’expéditeur au message en tant que type de destinataire spécifié (To, Cc, Bcc) ou redirige vers le responsable de l’expéditeur sans notification à l’expéditeur ou au destinataire. Cette action fonctionne uniquement si l'attribut Manager de l'expéditeur est défini dans Active Directory. Ce paramètre utilise la syntaxe : @{AddManagerAsRecipientType = « \<To \| Cc \| Bcc\>"}|
 Sujet de pré-ajout|PrependSubject|Chaîne|Ajoute le texte spécifié au début du champ Subject du message. Envisagez d'utiliser un espace ou un signe deux-points (:) comme dernier caractère du texte spécifié pour le différencier du texte de l'objet d'origine.  <br/><br/>Pour empêcher l’ajout de la même chaîne aux messages qui contiennent déjà le texte dans l’objet (par exemple, les réponses), ajoutez l’exception « L’objet contient des mots » (ExceptIfSubjectContainsWords) à la règle.|
 |Appliquer la clause d’exclusion de responsabilité HTML|ApplyHtmlDisclaimer|Première propriété : *Text*<br/><br/>Deuxième propriété : *Location*<br/><br/>Troisième propriété : *action de secours*|Applique la clause d’exclusion de responsabilité HTML spécifiée à l’emplacement requis du message.<br/><br/>Ce paramètre utilise la syntaxe : @{ Text = " " ; Emplacement = \<Append \| Prepend\>; FallbackAction = \<Wrap \| Ignore \| Reject\> }|
-|Supprimer Office 365 chiffrement des messages et la protection des droits|RemoveRMSTemplate|s/o|Supprime Office 365 chiffrement appliqué à un e-mail|
+|Supprimer le chiffrement des messages et la protection des droits|RemoveRMSTemplate|s/o|Supprime le chiffrement des messages appliqué à un e-mail|
 |Remettre le message à la quarantaine hébergée |*Quarantine*|s/o| Cette action est actuellement en **préversion publique**. Au cours de cette phase, les e-mails mis en quarantaine par les stratégies DLP affichent le type de stratégie ExchangeTransportRule.<br/><br/> Remet le message à la quarantaine dans EOP. Pour plus d’informations, consultez [messages électroniques mis en quarantaine dans EOP](/microsoft-365/security/office-365-security/quarantine-email-messages).|
-
-<!--|Modify Subject|ModifySubject|PswsHashTable | Remove text from the subject line that matches a specific pattern and replace it with different text. See the example below. You can: <br/><br/>- **Replace** all matches in the subject with the replacement text <br/><br/>- **Append** to remove all matches in the subject and inserts the replacement text at the end of the subject. <br/><br/>- **Prepend** to remove all matches and inserts the replacement text at the beginning of the subject. See ModifySubject parameter in, /powershell/module/exchange/new-dlpcompliancerule|-->
+|Modifier l’objet|ModifySubject|PswsHashTable | Supprimez du texte de la ligne d’objet qui correspond à un modèle spécifique et remplacez-le par un texte différent. Voir l'exemple ci-dessous. Vous pouvez : <br/><br/>- **Remplacer** toutes les correspondances de l’objet par le texte de remplacement <br/><br/>- **Ajoutez** pour supprimer toutes les correspondances dans le sujet et insère le texte de remplacement à la fin de l’objet. <br/><br/>- **Ajouter** pour supprimer toutes les correspondances et insérer le texte de remplacement au début de l’objet. Voir le paramètre ModifySubject in, /powershell/module/exchange/new-dlpcompliancerule|

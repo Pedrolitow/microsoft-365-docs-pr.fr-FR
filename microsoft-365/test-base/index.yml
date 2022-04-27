@@ -11,12 +11,12 @@ metadata:
   author: v-zhifufeng
   ms.author: v-zhifufeng
   ms.date: 03/29/2021
-  ms.openlocfilehash: e49550339e3be9dbd93844ee3a06c9bbe4cd0faa
-  ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+  ms.openlocfilehash: f477021cd59dbc7c5b7ed70b4381213297f0b0fb
+  ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/19/2022
-  ms.locfileid: "64935958"
+  ms.lasthandoff: 04/27/2022
+  ms.locfileid: "65092644"
 landingContent:
 - title: À propos de Base de test
   linkLists:
@@ -42,14 +42,6 @@ landingContent:
       url: testoverview.md
     - text: Créer un package
       url: buildpackage.md
-    - text: Charger vos fichiers binaires
-      url: binaries.md
-    - text: Définir vos tâches de test
-      url: testtask.md
-    - text: Choisir vos options de test
-      url: testoptions.md
-    - text: Vérifier vos sélections
-      url: review.md
     - text: Instructions relatives aux packages de test
       url: contentguideline.md
     - text: Analyse de la régression de la mémoire

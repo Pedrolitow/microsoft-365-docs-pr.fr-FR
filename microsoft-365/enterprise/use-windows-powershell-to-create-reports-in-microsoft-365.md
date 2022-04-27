@@ -2,7 +2,7 @@
 title: Utilisation de PowerShell pour créer des rapports pour Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/17/2020
 audience: ITPro
 ms.topic: landing-page
@@ -15,23 +15,23 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
-description: "Résumé : Utilisez PowerShell pour Microsoft 365 créer des rapports que vous ne pouvez pas produire dans le Centre d'administration Microsoft 365."
-ms.openlocfilehash: f29f9d6ac2f71163118b8e00eb78d39e16e0a79a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: "Résumé : Utilisez PowerShell pour Microsoft 365 pour créer des rapports que vous ne pouvez pas produire dans le Centre d'administration Microsoft 365."
+ms.openlocfilehash: cc64e5108a5aeff517f825ca4973b2511fe124b3
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679915"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078441"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>Utilisation de PowerShell pour créer des rapports pour Microsoft 365
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-De nombreux rapports différents sont disponibles dans le Centre d'administration Microsoft 365. Toutefois, ces rapports fournissent uniquement une telle quantité d’informations, et vous en avez parfois besoin de plus. C’est à ce moment que vous avez besoin de PowerShell pour Microsoft 365.
+De nombreux rapports différents sont disponibles dans le Centre d'administration Microsoft 365. Mais ces rapports fournissent seulement tant d’informations, et parfois vous avez besoin de plus. C’est à ce moment que vous avez besoin de PowerShell pour Microsoft 365.
   
-Ces articles décrivent comment utiliser PowerShell pour Microsoft 365 pour obtenir des informations de votre client Microsoft 365 client :
+Ces articles expliquent comment utiliser PowerShell pour Microsoft 365 afin d’obtenir des informations auprès de votre locataire Microsoft 365 :
   
-- Commencer à faire des rapports à l’aide de PowerShell pour Microsoft 365 :
+- Démarrage avec création de rapports à l’aide de PowerShell pour Microsoft 365 :
     
   - [Pourquoi utiliser PowerShell pour Microsoft 365](./why-you-need-to-use-microsoft-365-powershell.md)
     
@@ -44,13 +44,13 @@ Ces articles décrivent comment utiliser PowerShell pour Microsoft 365 pour obte
     
   - [Afficher Microsoft 365 licence de compte et les détails du service avec PowerShell](view-account-license-and-service-details-with-microsoft-365-powershell.md)
     
-  - [Afficher Microsoft 365 comptes d’utilisateurs avec PowerShell](view-user-accounts-with-microsoft-365-powershell.md)
+  - [Afficher Microsoft 365 comptes d’utilisateur avec PowerShell](view-user-accounts-with-microsoft-365-powershell.md)
     
 - Rapports pour SharePoint Online :
     
   - [Prise en main de SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
     
-  - [Get-SPOSiteGroup : obtient tous les groupes sur une collection de sites spécifiée](/powershell/module/sharepoint-online/get-spositegroup)
+  - [Get-SPOSiteGroup - Obtient tous les groupes d’une collection de sites spécifiée](/powershell/module/sharepoint-online/get-spositegroup)
     
 - Rapports pour Exchange Online :
     
@@ -61,7 +61,7 @@ Ces articles décrivent comment utiliser PowerShell pour Microsoft 365 pour obte
 
 [Gestion de Microsoft 365 à l’aide de PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Prise en main de PowerShell pour Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Prise en main de PowerShell pour Microsoft 365](getting-started-with-microsoft-365-powershell.md)
   
 [Gérer SharePoint avec PowerShell](manage-sharepoint-online-with-microsoft-365-powershell.md)
   
