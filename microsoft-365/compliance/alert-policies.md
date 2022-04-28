@@ -2,8 +2,8 @@
 title: Microsoft 365 stratégies d’alerte
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Créez des stratégies d’alerte dans le portail de conformité Microsoft Purview ou le portail Microsoft 365 Defender pour surveiller les menaces potentielles, la perte de données et les problèmes d’autorisations.
-ms.openlocfilehash: beecaf86a013480e0c5546e07189e8be5b622b17
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: b0f7d037731bc1073ac177667927ca4f691e9904
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995907"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094589"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Stratégies d’alerte dans Microsoft 365
 
@@ -105,7 +105,7 @@ Vous pouvez également définir des balises utilisateur comme condition d’une 
 
   - Protection contre la perte de données
 
-  - Gouvernance des informations
+  - Gestion du cycle de vie des données
 
   - Flux de messagerie
 
@@ -128,7 +128,7 @@ Vous pouvez également définir des balises utilisateur comme condition d’une 
 
 ## <a name="default-alert-policies"></a>Stratégies d’alerte par défaut
 
-Microsoft fournit des stratégies d’alerte intégrées qui permettent d’identifier Exchange les abus d’autorisations d’administrateur, l’activité des programmes malveillants, les menaces externes et internes potentielles et les risques de gouvernance des informations. Dans la page **Stratégies d’alerte** , les noms de ces stratégies intégrées sont en gras et le type de stratégie est défini comme **système**. Ces stratégies sont activées par défaut. Vous pouvez désactiver ces stratégies (ou revenir en arrière), configurer une liste de destinataires pour envoyer des notifications par e-mail et définir une limite de notification quotidienne. Les autres paramètres de ces stratégies ne peuvent pas être modifiés.
+Microsoft fournit des stratégies d’alerte intégrées qui permettent d’identifier Exchange les abus d’autorisations d’administrateur, l’activité des programmes malveillants, les menaces externes et internes potentielles et les risques de gestion du cycle de vie des données. Dans la page **Stratégies d’alerte** , les noms de ces stratégies intégrées sont en gras et le type de stratégie est défini comme **système**. Ces stratégies sont activées par défaut. Vous pouvez désactiver ces stratégies (ou revenir en arrière), configurer une liste de destinataires pour envoyer des notifications par e-mail et définir une limite de notification quotidienne. Les autres paramètres de ces stratégies ne peuvent pas être modifiés.
 
 Le tableau suivant répertorie et décrit les stratégies d’alerte par défaut disponibles et la catégorie à laquelle chaque stratégie est affectée. La catégorie est utilisée pour déterminer les alertes qu’un utilisateur peut afficher sur la page Alertes. Pour plus d’informations, consultez [les autorisations RBAC requises pour afficher les alertes](#rbac-permissions-required-to-view-alerts).
 
@@ -166,9 +166,9 @@ Le tableau indique également les Office 365 Entreprise et Office 365 plan du go
 |**L’entrée d’autorisation/liste de blocage du locataire est sur le point d’expirer**|Génère une alerte lorsqu’une entrée d’autorisation/de liste de blocage de locataire est sur le point d’être supprimée. Cet événement est déclenché trois jours avant la date d’expiration, qui est basée sur la création ou la dernière mise à jour de l’entrée. Cette stratégie d’alerte a un paramètre de gravité **d’information** . Il s’agit d’informer les administrateurs des modifications à venir dans les filtres, car l’autorisation ou le bloc peut disparaître. Pour les blocs, vous pouvez étendre la date d’expiration pour conserver le bloc en place. Pour autoriser, vous devez soumettre à nouveau l’élément afin que nos analystes puissent prendre un autre regard. Toutefois, si l’autorisation a déjà été notée comme faux positif, l’entrée n’expire que lorsque les filtres système ont été mis à jour pour autoriser naturellement l’entrée. Pour plus d’informations sur les événements qui déclenchent cette alerte, consultez [Manage the Tenant Allow/Block list](../security/office-365-security/tenant-allow-block-list.md).|Gestion des menaces|Non|Abonnement au module complémentaire E5/G5 ou Defender pour Office 365 P2|
 |**Locataire limité à l’envoi de courrier électronique**|Génère une alerte lorsque la majeure partie du trafic de messagerie de votre organisation a été détectée comme suspecte et que Microsoft a empêché votre organisation d’envoyer des e-mails. Examinez les comptes d’utilisateur et d’administrateur potentiellement compromis, les nouveaux connecteurs ou les relais ouverts, puis contactez Support Microsoft pour débloquer votre organisation. Cette stratégie a un paramètre **de gravité élevée** . Pour plus d’informations sur la raison pour laquelle les organisations sont bloquées, consultez [Corriger les problèmes de remise des e-mails pour le code d’erreur 5.7.7xx dans Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-700-through-5-7-750).|Gestion des menaces|Non|E1/F1/G1, E3/F3/G3 ou E5/G5|
 |**Le locataire est limité à l’envoi d’e-mails non approvisionnés**|Génère une alerte en cas d’envoi d’un trop grand nombre d’e-mails à partir de domaines non inscrits (également appelés domaines *non approvisionnés* ). Office 365 autorise l'envoi d'un certain nombre d'e-mails à partir de domaines non enregistrés, mais nous vous recommandons de configurer chaque domaine utilisé pour envoyer du courrier en tant que domaine accepté. Cette alerte indique que tous les utilisateurs de l’organisation ne peuvent plus envoyer de courrier électronique. Cette stratégie a un paramètre **de gravité élevée** . Pour plus d’informations sur la raison pour laquelle les organisations sont bloquées, consultez [Corriger les problèmes de remise des e-mails pour le code d’erreur 5.7.7xx dans Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-700-through-5-7-750).|Gestion des menaces|Non|E1/F1/G1, E3/F3/G3 ou E5/G5|
-|**Activité inhabituelle des fichiers utilisateur externes**|Génère une alerte lorsqu’un nombre anormalement élevé d’activités sont effectuées sur des fichiers dans SharePoint ou OneDrive par des utilisateurs extérieurs à votre organisation. Cela inclut des activités telles que l’accès aux fichiers, le téléchargement de fichiers et la suppression de fichiers. Cette stratégie a un paramètre **de gravité élevée** .|Gouvernance des informations|Non|Abonnement E5/G5, Microsoft Defender pour Office 365 P2 ou Microsoft 365 E5 module complémentaire|
-|**Volume inhabituel de partage de fichiers externes**|Génère une alerte lorsqu’un nombre anormalement élevé de fichiers dans SharePoint ou OneDrive sont partagés avec des utilisateurs extérieurs à votre organisation. Cette stratégie a un paramètre de gravité **moyenne** .|Gouvernance des informations|Non|Abonnement E5/G5, Defender pour Office 365 P2 ou Microsoft 365 E5 module complémentaire|
-|**Volume inhabituel de suppression de fichier**|Génère une alerte lorsqu’un nombre anormalement élevé de fichiers est supprimé dans SharePoint ou OneDrive dans un laps de temps court. Cette stratégie a un paramètre de gravité **moyenne** .|Gouvernance des informations|Non|Abonnement E5/G5, Defender pour Office 365 P2 ou Microsoft 365 E5 module complémentaire|
+|**Activité inhabituelle des fichiers utilisateur externes**|Génère une alerte lorsqu’un nombre anormalement élevé d’activités sont effectuées sur des fichiers dans SharePoint ou OneDrive par des utilisateurs extérieurs à votre organisation. Cela inclut des activités telles que l’accès aux fichiers, le téléchargement de fichiers et la suppression de fichiers. Cette stratégie a un paramètre **de gravité élevée** .|Gestion du cycle de vie des données|Non|Abonnement E5/G5, Microsoft Defender pour Office 365 P2 ou Microsoft 365 E5 module complémentaire|
+|**Volume inhabituel de partage de fichiers externes**|Génère une alerte lorsqu’un nombre anormalement élevé de fichiers dans SharePoint ou OneDrive sont partagés avec des utilisateurs extérieurs à votre organisation. Cette stratégie a un paramètre de gravité **moyenne** .|Gestion du cycle de vie des données|Non|Abonnement E5/G5, Defender pour Office 365 P2 ou Microsoft 365 E5 module complémentaire|
+|**Volume inhabituel de suppression de fichier**|Génère une alerte lorsqu’un nombre anormalement élevé de fichiers est supprimé dans SharePoint ou OneDrive dans un laps de temps court. Cette stratégie a un paramètre de gravité **moyenne** .|Gestion du cycle de vie des données|Non|Abonnement E5/G5, Defender pour Office 365 P2 ou Microsoft 365 E5 module complémentaire|
 |**Augmentation inhabituelle des e-mails signalés en tant que hameçonnage**|Génère une alerte en cas d’augmentation significative du nombre de personnes de votre organisation qui utilisent le complément Message de rapport dans Outlook pour signaler des messages en tant que courrier de hameçonnage. Cette stratégie a un paramètre de gravité **moyenne** . Pour plus d’informations sur ce complément, consultez [Utiliser le complément Message de rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).|Gestion des menaces|Non|Abonnement au module complémentaire E5/G5 ou Defender pour Office 365 P2|
 |**Hameçonnage d’emprunt d’identité de l’utilisateur remis à la boîte de réception/**<sup>dossier1,2</sup><sup></sup>|Génère une alerte quand Microsoft détecte qu’un remplacement d’administrateur ou d’utilisateur a autorisé la remise d’un message d’hameçonnage d’emprunt d’identité d’utilisateur à la boîte de réception (ou à un autre dossier accessible par l’utilisateur) d’une boîte aux lettres. Les exemples de remplacements incluent une règle de boîte de réception ou de flux de courrier qui autorise les messages d’un expéditeur ou d’un domaine spécifique, ou une stratégie anti-courrier indésirable qui autorise les messages provenant d’expéditeurs ou de domaines spécifiques. Cette stratégie a un paramètre de gravité **moyenne** .|Gestion des menaces|Non|Abonnement au module complémentaire E5/G5 ou Defender pour Office 365 P2|
 |**L’utilisateur a demandé à libérer un message mis en quarantaine**|Génère une alerte lorsqu’un utilisateur demande la libération d’un message mis en quarantaine. Pour demander la libération des messages mis en quarantaine, les **destinataires autorisés à demander la libération d’un message à partir de l’autorisation de mise en quarantaine** (_PermissionToRequestRelease_) sont requis dans la stratégie de quarantaine (par exemple, à partir du groupe d’autorisations prédéfinies d’accès **limité** ). Pour plus d’informations, consultez [Autoriser les destinataires à demander la libération d’un message à partir de l’autorisation de mise en quarantaine](../security/office-365-security/quarantine-policies.md#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission). Cette stratégie a un paramètre **de gravité d’information** .|Gestion des menaces|Non|E1/F1/G1, E3/F3/G3 ou E5/G5|
@@ -250,7 +250,7 @@ Gardez à l’esprit les éléments suivants concernant l’agrégation d’aler
 
 Les autorisations RBAC (Role Based Access Control) attribuées aux utilisateurs de votre organisation déterminent les alertes qu’un utilisateur peut voir sur la page **Alertes**. Comment cela se fait-il ? Les rôles de gestion attribués aux utilisateurs (en fonction de leur appartenance à des groupes de rôles dans le portail de conformité ou le portail Microsoft 365 Defender) déterminent les catégories d’alertes qu’un utilisateur peut voir sur la page **Alertes**. Voici quelques exemples :
 
-- Les membres du groupe de rôles Gestion des documents ne peuvent visualiser que les alertes générées par les politiques d'alerte auxquelles est attribuée la catégorie **Gouvernance de l'information**.
+- Les membres du groupe de rôles Gestion des enregistrements peuvent afficher uniquement les alertes générées par les stratégies d’alerte qui se voient attribuer la catégorie **de gestion du cycle de vie des données** .
 
 - Les membres du groupe de rôles Administrateur de conformité ne peuvent pas afficher les alertes générées par les stratégies d’alerte qui se voient attribuer la catégorie **Gestion des menaces** .
 
@@ -262,11 +262,11 @@ Le tableau suivant répertorie les rôles nécessaires pour afficher les alertes
 
 Pour voir la catégorie à laquelle une stratégie d’alerte par défaut est affectée, consultez le tableau des stratégies [d’alerte par défaut](#default-alert-policies).
 
-|Role|Gouvernance des informations|Protection contre la perte de données|Flux de messagerie|Autorisations|Gestion des menaces|Autres|
+|Rôle|Gestion du cycle de vie des données|Protection contre la perte de données|Flux de messagerie|Autorisations|Gestion des menaces|Autres|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Journaux d’audit|||||||
 |Gestion des cas|||||||
-|Administrateur de conformité|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)||![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)|
+|Administrateur de conformité|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|
 |Recherche de conformité|||||||
 |Gestion des appareils|||||||
 |Gestion des destructions|||||||
@@ -275,17 +275,17 @@ Pour voir la catégorie à laquelle une stratégie d’alerte par défaut est af
 |Suspension|||||||
 |Analyste Information Protection||![Coche.](../media/checkmark.png)|||||
 |Enquêteur Information Protection||![Coche.](../media/checkmark.png)|||||
-|Gérer les alertes||||||![Marque de vérification.](../media/checkmark.png)|
-|Configuration de l’organisation||||||![Coche.](../media/checkmark.png)|
+|Gérer les alertes||||||![Coche.](../media/checkmark.png)|
+|Configuration de l’organisation||||||![Marque de vérification.](../media/checkmark.png)|
 |Aperçu|||||||
 |Gestion des enregistrements|![Coche.](../media/checkmark.png)||||||
 |Gestion de la rétention|![Coche.](../media/checkmark.png)||||||
 |Révision|||||||
 |Déchiffrer RMS|||||||
-|Gestion des rôles||||![Coche.](../media/checkmark.png)|||
+|Gestion des rôles||||![Marque de vérification.](../media/checkmark.png)|||
 |Rechercher et vider|||||||
-|Administrateur de sécurité||![Coche.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|
-|Lecteur de sécurité||![Coche.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)
+|Administrateur de sécurité||![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|
+|Lecteur de sécurité||![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)
 |Vue Service Assurance|||||||
 |Administrateur de révision de surveillance|||||||
 |Journaux d'audit en affichage seul|||||||

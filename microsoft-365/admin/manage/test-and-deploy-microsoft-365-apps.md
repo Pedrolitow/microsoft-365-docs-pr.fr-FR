@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Recherchez, testez et déployez des applications partenaires Microsoft et Microsoft pour les utilisateurs et les groupes de votre organisation à partir du portail des applications intégrées dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 2baf6aea136736b1239df9a4da7b7e6a5b456ea6
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 491315b36a7698399bcd22c60173db8cec482148
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782388"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094657"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Tester et déployer Microsoft 365 Apps par des partenaires dans le portail des applications intégrées
 
@@ -107,7 +107,7 @@ Vous ne pourrez pas déployer une seule application ou Microsoft 365 Apps par pa
 
 ## <a name="prepare-to-deploy-add-ins-in-integrated-apps"></a>Préparer le déploiement de compléments dans des applications intégrées
 
-[] Les compléments Office vous aident à personnaliser vos documents et à accéder plus simplement aux informations sur le web (voir Commencer à utiliser votre complément Office). 
+Office compléments vous aident à personnaliser vos documents et à simplifier la façon dont vous accédez aux informations sur le web (voir Commencer à utiliser votre complément Office). 
 
 Les compléments offrent les avantages suivants : 
 
@@ -179,7 +179,7 @@ Vous pouvez effectuer la requête inverse en résolvant le groupe pour voir s'il
 
 Notez que vous pouvez utiliser le Azure Active Directory API Graph pour exécuter des requêtes afin de rechercher la liste des groupes au sein d’un groupe. Pour plus d'informations, voir [Opérations sur les groupes | Référence de l'API Graph](/previous-versions/azure/ad/graph/api/groups-operations). 
 
-## <a name="recommended-approach-for-deploying-office-add-ins"></a>Approche recommandée pour le déploiement de compléments Office 
+## <a name="recommended-approach-for-deploying-office-add-ins"></a>Approche recommandée pour le déploiement des compléments Office 
 Pour déployer des compléments à l’aide d’une approche progressive, nous vous recommandons les éléments suivants : 
 1. Déployez le complément vers un petit groupe de parties intéressées et de membres du service informatique. Vous pouvez activer l’indicateur **S’agit-il d’un déploiement de test**. Si le déploiement réussit, passez à l’étape 2. 
 
@@ -189,7 +189,7 @@ Pour déployer des compléments à l’aide d’une approche progressive, nous v
 
 Selon la taille de l’audience cible, vous pouvez ajouter ou supprimer des étapes de déploiement.  
 
-## <a name="deploy-an-office-add-in-using-the-admin-center"></a>Déploiement d’un complément Office à l’aide du centre d’administration 
+## <a name="deploy-an-office-add-in-using-the-admin-center"></a>Déployer un complément Office à l’aide du Centre d’administration 
 
 1. Dans le Centre d’administration, sélectionnez **Paramètres**, puis sélectionnez **Applications intégrées**. 
 
@@ -225,12 +225,12 @@ Les administrateurs généraux et les administrateurs Exchange peuvent affecter 
 La bonne option pour votre organisation dépend de votre configuration. Toutefois, nous vous recommandons d’effectuer des affectations à l’aide de groupes. En tant qu’administrateur, il peut être plus facile de gérer les compléments en utilisant des groupes et en contrôlant l’appartenance à ces groupes plutôt que d’affecter des utilisateurs individuels à chaque fois. Dans certains cas, vous souhaiterez peut-être restreindre l’accès à un petit ensemble d’utilisateurs en effectuant des affectations à des utilisateurs spécifiques en les affectant manuellement. 
 
 ### <a name="more-about-office-add-ins-security"></a>En savoir plus sur la sécurité des compléments Office 
-Les compléments Office combinent un fichier manifeste XML qui inclut certaines métadonnées sur le complément, mais surtout qui pointe vers une application web contenant tout le code et la logique. Les fonctionnalités des compléments peuvent varier. Par exemple, les compléments peuvent :
+Office compléments combinent un fichier manifeste XML qui contient des métadonnées sur le complément, mais qui pointe surtout vers une application web qui contient tout le code et la logique. Les fonctionnalités des compléments peuvent varier. Par exemple, les compléments peuvent :
 - afficher des données. 
 - lire le document d'un utilisateur pour fournir des services contextuels. 
 - lire et écrire des données vers le document d'un utilisateur et à partir de celui-ci pour fournir une valeur à cet utilisateur.  
 
-Pour plus d'informations sur les types et fonctionnalités des compléments Office, voir [Vue d'ensemble de la plateforme des compléments Office](/office/dev/add-ins/overview/office-add-ins), notamment la section « Anatomie d'un complément Office ». 
+Pour plus d’informations sur les types et les fonctionnalités des compléments Office, consultez [Office vue d’ensemble de la plateforme de compléments](/office/dev/add-ins/overview/office-add-ins), en particulier la section « Anatomie d’un complément Office ». 
 
 Pour interagir avec le document de l'utilisateur, le complément doit déclarer les autorisations dont il a besoin dans le fichier manifeste. Un modèle d'autorisations d'accès d'une API JavaScript à cinq niveaux fournit la base de la confidentialité et de la sécurité pour les utilisateurs des compléments du volet Office. La plupart des compléments de l'Office Store sont au niveau ReadWriteDocument. Presque tous les compléments prennent en charge le niveau ReadDocument au minimum. Pour plus d'informations sur les niveaux d'autorisation, voir [Demande d'autorisations pour l'utilisation d'API dans les compléments de contenu et du volet Office](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins). 
 

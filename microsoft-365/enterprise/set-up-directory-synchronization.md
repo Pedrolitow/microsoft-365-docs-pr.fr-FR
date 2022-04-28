@@ -2,7 +2,7 @@
 title: Configurer la synchronisation d’annuaires pour Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
@@ -21,25 +21,25 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
-description: Découvrez comment configurer la synchronisation d’annuaires entre Microsoft 365 et votre active Directory local.
-ms.openlocfilehash: 61b2dd822d0e65ebbf97ddcbfc3c8a03887c45a6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez comment configurer la synchronisation d’annuaires entre Microsoft 365 et votre Active Directory local.
+ms.openlocfilehash: 49240d056520a83c0828440e21c5cf26943bae8e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208732"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092886"
 ---
 # <a name="set-up-directory-synchronization-for-microsoft-365"></a>Configurer la synchronisation d’annuaires pour Microsoft 365
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Microsoft 365 utilise un client Azure Active Directory (Azure AD) pour stocker et gérer les identités pour l’authentification et les autorisations pour accéder aux ressources informatiques. 
+Microsoft 365 utilise un locataire Azure Active Directory (Azure AD) pour stocker et gérer des identités pour l’authentification et les autorisations d’accès aux ressources cloud. 
 
-Si vous avez un domaine ou une forêt AD DS (Active Directory Domain Services) local, vous pouvez synchroniser vos comptes d’utilisateur, groupes et contacts AD DS avec le client Azure AD de votre abonnement Microsoft 365. Il s’agit de l’identité hybride Microsoft 365. Voici ses composants.
+Si vous disposez d’un domaine ou d’une forêt AD DS Active Directory local, vous pouvez synchroniser vos comptes d’utilisateur, groupes et contacts AD DS avec le locataire Azure AD de votre abonnement Microsoft 365. Il s’agit d’une identité hybride pour Microsoft 365. Voici ses composants.
 
 ![Composants de synchronisation d’annuaires pour Microsoft 365.](../media/about-microsoft-365-identity/hybrid-identity.png)
 
-Azure AD Connecter s’exécute sur un serveur local et synchronise vos AD DS avec le client Azure AD. En plus de la synchronisation d’annuaires, vous pouvez également spécifier les options d’authentification ci-après :
+Azure AD Connecter s’exécute sur un serveur local et synchronise votre service AD DS avec le locataire Azure AD. En plus de la synchronisation d’annuaires, vous pouvez également spécifier les options d’authentification suivantes :
 
 - Synchronisation de hachage de mot de passe (PHS)
 
@@ -47,55 +47,55 @@ Azure AD Connecter s’exécute sur un serveur local et synchronise vos AD DS av
 
 - Authentification directe (PTA)
 
-  Azure AD permet aux AD DS d’effectuer l’authentification.
+  Azure AD AD DS effectue l’authentification.
 
 - Authentification fédérée
 
   Azure AD fait référence à l’ordinateur client qui demande l’authentification à un autre fournisseur d’identité.
 
-Pour plus [d’informations, voir Identités](plan-for-directory-synchronization.md) hybrides.
+Pour plus d’informations, consultez [Les identités hybrides](plan-for-directory-synchronization.md) .
   
-## <a name="1-review-prerequisites-for-azure-ad-connect"></a>1. Examiner les conditions préalables requises pour les Connecter Azure AD
+## <a name="1-review-prerequisites-for-azure-ad-connect"></a>1. Examiner les prérequis pour Azure AD Connecter
 
-Vous obtenez un abonnement Azure AD gratuit avec votre abonnement Microsoft 365 abonnement. Lorsque vous configurerez la synchronisation d’annuaires, vous installez Azure AD Connecter sur l’un de vos serveurs locaux.
+Vous bénéficiez d’un abonnement Azure AD gratuit avec votre abonnement Microsoft 365. Lorsque vous configurez la synchronisation d’annuaires, vous installez Azure AD Connecter sur l’un de vos serveurs locaux.
   
 Pour Microsoft 365 vous devez :
   
-- Vérifiez votre domaine local. L’Assistant Connecter Azure AD vous guide tout au long de cette situation.
-- Obtenez les noms d’utilisateur et les mots de passe pour les comptes d’administrateur de Microsoft 365 client et AD DS.
+- Vérifiez votre domaine local. L’Assistant Azure AD Connecter vous guide tout au long de cette procédure.
+- Obtenez les noms d’utilisateur et les mots de passe pour les comptes d’administrateur de votre locataire Microsoft 365 et AD DS.
 
-Pour votre serveur local sur lequel vous installez Azure AD Connecter, vous devez :
+Pour votre serveur local sur lequel vous installez Azure AD Connecter, vous avez besoin des éléments nécessaires :
   
 |**Système d’exploitation du serveur**|**Autres logiciels**|
 |:-----|:-----|
-|Windows Server 2012 R2 et ultérieures | - PowerShell est installé par défaut, aucune action n’est requise.  <br> - Net 4.5.1 et les mises à jour ultérieures sont proposées via Windows Update. Assurez-vous que vous avez installé les dernières mises à jour Windows Server dans le Panneau de contrôle. |
-|Windows Server 2008 R2 avec Service Pack 1 (SP1)** ou Windows Server 2012 | - La dernière version de PowerShell est disponible dans Windows Management Framework 4.0. Recherchez-le dans [le Centre de téléchargement Microsoft.](https://go.microsoft.com/fwlink/p/?LinkId=717996)  <br> - .Net 4.5.1 et les version ultérieures sont disponibles dans le Centre de [téléchargement Microsoft.](https://go.microsoft.com/fwlink/p/?LinkId=717996) |
-|Windows Server 2008 | - La dernière version prise en charge de PowerShell est disponible dans Windows Management Framework 3.0, disponible dans le Centre [de téléchargement Microsoft.](https://go.microsoft.com/fwlink/p/?LinkId=717996)  <br> - .Net 4.5.1 et les version ultérieures sont disponibles dans le Centre de [téléchargement Microsoft.](https://go.microsoft.com/fwlink/p/?LinkId=717996) |
+|Windows Server 2012 R2 et versions ultérieures | - PowerShell est installé par défaut, aucune action n’est requise.  <br> - Net 4.5.1 et versions ultérieures sont proposés via Windows Update. Vérifiez que vous avez installé les dernières mises à jour de Windows Server dans le Panneau de configuration. |
+|Windows Server 2008 R2 avec Service Pack 1 (SP1)** ou Windows Server 2012 | - La dernière version de PowerShell est disponible dans Windows Management Framework 4.0. Recherchez-la dans le [Centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> - Les versions .Net 4.5.1 et ultérieures sont disponibles dans le [Centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=717996). |
+|Windows Server 2008 | - La dernière version prise en charge de PowerShell est disponible dans Windows Management Framework 3.0, disponible sur le [Centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> - Les versions .Net 4.5.1 et ultérieures sont disponibles dans le [Centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=717996). |
 
-Consultez [les conditions préalables](/azure/active-directory/hybrid/how-to-connect-install-prerequisites) pour Azure Active Directory Connecter pour plus d’informations sur les configurations matérielle, logicielle, de compte et d’autorisation requises, les certificats SSL requis et les limites d’objets pour les Connecter Azure AD.
+Consultez [les prérequis pour Azure Active Directory Connecter](/azure/active-directory/hybrid/how-to-connect-install-prerequisites) pour plus d’informations sur les exigences en matière de matériel, de logiciels, de compte et d’autorisations, les exigences de certificat SSL et les limites d’objets pour Azure AD Connecter.
   
-Vous pouvez également consulter l’historique [](/azure/active-directory/hybrid/reference-connect-version-history) des versions Connecter Azure AD pour voir ce qui est inclus et corrigé dans chaque version.
+Vous pouvez également consulter [l’historique](/azure/active-directory/hybrid/reference-connect-version-history) des versions Azure AD Connecter pour voir ce qui est inclus et corrigé dans chaque version.
 
 ## <a name="2-install-azure-ad-connect-and-configure-directory-synchronization"></a>2. Installer Azure AD Connecter et configurer la synchronisation d’annuaires
 
-Avant de commencer, assurez-vous que vous avez :
+Avant de commencer, assurez-vous d’avoir :
 
-- Nom d’utilisateur et mot de passe d’Microsoft 365 administrateur global
+- Nom d’utilisateur et mot de passe d’un administrateur général Microsoft 365
 - Nom d’utilisateur et mot de passe d’un administrateur de domaine AD DS
-- Quelle méthode d’authentification (PHS, PTA, fédéré)
-- Si vous souhaitez utiliser [l' sign-on](/azure/active-directory/hybrid/how-to-connect-sso) unique transparente Azure AD
+- Méthode d’authentification (PHS, PTA, fédérée)
+- Indique si vous souhaitez utiliser [Azure AD’authentification unique transparente (SSO)](/azure/active-directory/hybrid/how-to-connect-sso)
 
-Procédez comme suit :
+Procédez comme suit :
 
-1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) ( https://admin.microsoft.com) et choisissez **Utilisateurs** \> **actifs** sur le navigation de gauche.
-2. Dans la page **Utilisateurs** actifs, sélectionnez **Plus** (trois points) \> **Synchronisation d’annuaires.**
+1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) (https://admin.microsoft.com)et choisissez **Utilisateurs** \> **actifs utilisateurs** dans le volet de navigation de gauche.
+2. Dans la page **Utilisateurs actifs**, choisissez **Synchronisation d’annuaires Plus** (trois points). \> 
   
-3. Dans la page **Azure Active Directory de** préparation, sélectionnez Le Centre de téléchargement pour obtenir le lien **d’outils Connecter Azure AD** pour commencer. 
-4. Suivez les étapes de la feuille [de route d’installation d’Azure AD Connecter et Azure AD Connecter Health.](/azure/active-directory/hybrid/how-to-connect-install-roadmap)
+3. Dans la page **de préparation Azure Active Directory**, sélectionnez l’option **Accéder au centre de téléchargement pour obtenir le lien de l’outil Azure AD Connecter** pour commencer. 
+4. Suivez les étapes décrites dans [Azure AD Connecter et la feuille de route d’installation de Azure AD Connecter Health](/azure/active-directory/hybrid/how-to-connect-install-roadmap).
 
 ## <a name="3-finish-setting-up-domains"></a>3. Terminer la configuration des domaines
 
-Suivez les étapes de la procédure de création d’enregistrements [DNS Microsoft 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) lorsque vous gérez vos enregistrements DNS pour terminer la configuration de vos domaines.
+Suivez les étapes décrites dans [Créer des enregistrements DNS pour Microsoft 365 lorsque vous gérez vos enregistrements DNS](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) pour terminer la configuration de vos domaines.
 
 ## <a name="next-step"></a>Étape suivante
 

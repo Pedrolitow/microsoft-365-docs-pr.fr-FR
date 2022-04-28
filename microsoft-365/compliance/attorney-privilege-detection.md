@@ -2,8 +2,8 @@
 title: Configurer la détection des privilèges avocat-client dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez le modèle de détection des privilèges avocat-client pour utiliser la détection basée sur l’apprentissage automatique du contenu privilégié lors de l’examen du contenu dans un cas de découverte électronique Microsoft Purview (Premium).
-ms.openlocfilehash: 477b741cf617179ffd9eb1a4c38230faf5a0fce0
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 359dccc041a0655ade291a37e511038a50148f7b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997293"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094028"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-ediscovery-premium"></a>Configurer la détection des privilèges avocat-client dans eDiscovery (Premium)
 

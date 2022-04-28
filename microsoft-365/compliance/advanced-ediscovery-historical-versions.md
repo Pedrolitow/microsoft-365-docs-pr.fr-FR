@@ -2,8 +2,8 @@
 title: Configurer des versions historiques dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez des versions historiques dans eDiscovery (Premium) pour collecter du contenu à partir de toutes les versions de documents stockés dans SharePoint et OneDrive.
-ms.openlocfilehash: ebd706aa122da2f875adb0c210db8cb3a0c8ab10
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 2b71d79fae15b5bc8bafbf32fc189dad9b314d40
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000617"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092544"
 ---
 # <a name="set-up-historical-versions-in-ediscovery-premium-preview"></a>Configurer des versions historiques dans eDiscovery (Premium) (préversion)
 

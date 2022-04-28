@@ -2,8 +2,8 @@
 title: Collecter des pièces jointes cloud dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: 04/05/2022
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez des collections dans Microsoft Purview eDiscovery (Premium) pour collecter des pièces jointes cloud à examiner dans une enquête ou un cas.
-ms.openlocfilehash: 1dd48f343f9df43edf8553e73395d756eb6713a4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 4a9db59f8e8b997cdd04934c9dac161369964229
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000705"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094116"
 ---
 # <a name="collect-cloud-attachments-in-microsoft-purview-ediscovery-premium-preview"></a>Collecter des pièces jointes cloud dans Microsoft Purview eDiscovery (Premium) (préversion)
 

@@ -2,8 +2,8 @@
 title: En savoir plus sur l’importation des fichiers PST de l’organisation
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Découvrez comment utiliser le service d’importation dans le portail de conformité Microsoft Purview pour importer en bloc des données de messagerie (fichiers PST) dans des boîtes aux lettres utilisateur.
-ms.openlocfilehash: a1720b51a57569d676aeac37933f1dce3075e7ed
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: c1a7cd9a2c2c0a3ee564710461796c690c7391b5
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001013"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092754"
 ---
 # <a name="learn-about-importing-your-organizations-pst-files"></a>En savoir plus sur l’importation des fichiers PST de votre organisation
 

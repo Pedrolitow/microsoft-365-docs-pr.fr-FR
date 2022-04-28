@@ -1,5 +1,5 @@
 ---
-title: Délai d’inactivité pour les sessions Microsoft 365
+title: Délai d’expiration de session inactif pour Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -10,129 +10,129 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Adm_TOC
-description: Définissez la durée de la session de l’utilisateur Microsoft 365 avant son délai d’Microsoft 365 terme.
-ms.openlocfilehash: 215b900315b2d98b01a8cf87b14a6fa65289e121
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+description: Définissez la durée de la session de l’utilisateur dans Microsoft 365 avant son expiration.
+ms.openlocfilehash: fba4871d88b7398aea955ec4afe1a0c134f52067
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504876"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094259"
 ---
-# <a name="idle-session-timeout-for-microsoft-365-public-preview"></a>Délai d’Microsoft 365 session inactif (prévisualisation publique)
+# <a name="idle-session-timeout-for-microsoft-365-public-preview"></a>Délai d’expiration de session inactif pour Microsoft 365 (préversion publique)
 
 <!-- Add metadata: localization, AdminSurgePortfolio, admindeeplinkMAC. remove robots nofollow -->
 
-Utilisez le délai d’attente des sessions inactives pour configurer une stratégie sur la durée pendant combien de temps les utilisateurs sont inactifs dans votre organisation avant d’être Microsoft 365 applications web. Cela permet de protéger les données sensibles de l’entreprise et d’ajouter une couche de sécurité supplémentaire pour les utilisateurs finaux qui travaillent sur des appareils non professionnels ou partagés.
+Utilisez le délai d’expiration de session inactive pour configurer une stratégie sur la durée pendant laquelle les utilisateurs sont inactifs dans votre organisation avant qu’ils ne soient déconnectés de Microsoft 365 applications web. Cela permet de protéger les données d’entreprise sensibles et ajoute une autre couche de sécurité pour les utilisateurs finaux qui travaillent sur des appareils non professionnels ou partagés.
 
-Lorsqu’un utilisateur atteint la session de délai d’inactivité que vous avez définie, il reçoit une notification lui avertissant qu’il est sur le point d’être signé. Ils doivent choisir de rester en ligne ou ils seront automatiquement Microsoft 365 applications web.
+Lorsqu’un utilisateur atteint la session de délai d’inactivité que vous avez définie, il reçoit une notification indiquant qu’il est sur le point d’être déconnecté. Ils doivent choisir de rester connectés, sinon ils seront automatiquement déconnectés de toutes les applications web Microsoft 365.
 
 > [!IMPORTANT]
-> Le délai d’inactivité de session n’affecte pas Microsoft 365 bureau et les applications mobiles.
+> Le délai d’expiration de la session inactive n’affecte pas vos applications mobiles et de bureau Microsoft 365.
 
-## <a name="turn-on-idle-session-timeout"></a>Activer le délai d’attente de session inactive
+## <a name="turn-on-idle-session-timeout"></a>Activer le délai d’expiration de la session inactive
 
-Si vous n’êtes pas administrateur Microsoft 365 ou Office 365 administrateur global, l’onglet Sécurité & **confidentialité ne s'&** pas.
+Si vous n’êtes pas un administrateur général Microsoft 365 ou Office 365, l’onglet **Sécurité & confidentialité** ne s’affiche pas.
 
-1. Dans la Centre d'administration Microsoft 365, sélectionnez **l’onglet** **->** Sécurité Paramètres organisation [&](https://go.microsoft.com/fwlink/p/?linkid=2072756) et sélectionnez Délai d’inactivité **de la session**.  
+1. Dans le Centre d'administration Microsoft 365, sélectionnez l’onglet Sécurité Paramètres **->** & [confidentialité](https://go.microsoft.com/fwlink/p/?linkid=2072756) de **l’organisation**, puis **sélectionnez Délai d’expiration de session inactif**.  
 
-2. Dans le **délai d’inactivité de session** , sélectionnez le basculement pour l’activer. Vous pouvez choisir un paramètre par défaut ou choisir votre propre heure personnalisée. Il faudra quelques minutes avant que la session inactive soit allumée dans votre organisation.
+2. Dans le **délai d’expiration de la session inactive** , sélectionnez le bouton bascule pour l’activer. Vous pouvez choisir un paramètre par défaut ou choisir votre propre heure personnalisée. Quelques minutes sont nécessaires avant que la session inactive ne soit activée dans votre organisation.
 
 > [!NOTE]
-> Si vous avez installé des stratégies de délai d’attente de session inactive pour [Outlook web app](https://support.microsoft.com/topic/description-of-the-activity-based-authentication-timeout-for-owa-in-office-365-0c101e1b-020e-69c1-a0b0-26532d60c0a4) et [SharePoint Online](/sharepoint/sign-out-inactive-users), l’ouverture du délai d’attente des sessions inactives dans le Centre d'administration Microsoft 365 remplacera les paramètres d’application web Outlook et SharePoint.
+> Si vous avez configuré des stratégies de délai d’expiration de session inactive pour [Outlook application web](https://support.microsoft.com/topic/description-of-the-activity-based-authentication-timeout-for-owa-in-office-365-0c101e1b-020e-69c1-a0b0-26532d60c0a4) et [SharePoint Online](/sharepoint/sign-out-inactive-users), l’activation du délai d’expiration de session inactive dans le Centre d'administration Microsoft 365 remplace les paramètres Outlook application web et SharePoint.
 
-Le délai d’inactivité de session est l’une des nombreuses mesures de sécurité Microsoft 365. Pour en savoir plus sur les autres tâches de sécurité dans Microsoft 365, consultez [Les principales tâches de sécurité dans Microsoft 365](../../security/top-security-tasks-for-remote-work.md).  
+Le délai d’expiration de la session inactive est l’une des nombreuses mesures de sécurité dans Microsoft 365. Pour en savoir plus sur les autres tâches de sécurité dans Microsoft 365, consultez [Tâches de sécurité principales dans Microsoft 365](../../security/top-security-tasks-for-remote-work.md).  
 
-## <a name="what-users-will-see"></a>Ce que les utilisateurs voient
+## <a name="what-users-will-see"></a>Ce que les utilisateurs verront
 
-Lorsqu’un utilisateur est inactif dans Microsoft 365 web pendant la période que vous avez choisie, l’invite suivante s’invite. Ils doivent sélectionner **Rester en cours de signature** , sinon ils seront signés.
+Lorsqu’un utilisateur a été inactif dans Microsoft 365 applications web pendant la période que vous avez choisie, l’invite suivante s’affiche. Ils doivent sélectionner **Rester connectés** ou ils seront déconnectés.
 
-:::image type="content" source="../../media/idle-session-timeout.png" alt-text="Screenshot: Prompt letting you know that your session is about to expire. Sélectionnez Rester en ligne pour ne pas vous être Microsoft 365 applications web":::
+:::image type="content" source="../../media/idle-session-timeout.png" alt-text="Capture d’écran : Invite vous informant que votre session est sur le point d’expirer. Sélectionnez Rester connecté pour ne pas vous déconnecter des applications web Microsoft 365":::
 
-## <a name="details-about-idle-session-timeout"></a>Détails sur le délai d’inactivité de session
+## <a name="details-about-idle-session-timeout"></a>Détails sur le délai d’expiration de session inactive
 
-- Les applications web Microsoft 365 suivantes sont pris en charge. D’autres applications web seront bientôt ajoutées.
+- Les applications web Microsoft 365 suivantes sont prises en charge. D’autres applications web seront bientôt ajoutées.
 
     - Outlook Web App
 
-    - OneDrive Entreprise
+    - OneDrive Entreprise
 
     - SharePoint Online (SPO)
 
-    - Office.com et autres pages de démarrage
+    - Office.com et d’autres pages de démarrage
 
     - Office (Word, Excel, PowerPoint) sur le web
 
     - Centre d’administration Microsoft 365
 
-- L’activité fait référence à toute interaction utilisateur côté client qui se produit dans le contexte de l’application web. Par exemple, les clics de souris et les pressions du clavier.  
+- L’activité fait référence à toute interaction utilisateur côté client qui se produit dans le contexte de l’application web. Par exemple, les clics de souris et les appuis clavier.  
 
-- Le délai d’inactivité de session fonctionne par session par navigateur. L’activité d’un utilisateur sur Microsoft Edge est traitée différemment de son activité dans d’autres navigateurs tels que Google Chrome. Les utilisateurs seront signés à partir de tous les onglets correspondant à leur compte au sein de cette session de navigateur.
+- Le délai d’expiration de la session inactive fonctionne sur une base de session par navigateur. L’activité d’un utilisateur sur Microsoft Edge est traitée différemment de son activité dans d’autres navigateurs tels que Google Chrome. Les utilisateurs seront déconnectés de tous les onglets correspondant à leur compte au sein de cette session de navigateur.
 
-- Une fois que vous avez activer le délai d’attente des sessions inactives, il s’applique à l’ensemble de votre organisation et ne peut pas s’appliquer à des utilisateurs, des unités d’organisation ou des groupes spécifiques. Utilisez l [Azure AD conditionnel pour](/azure/active-directory/conditional-access/) les stratégies pour différents utilisateurs et groupes.
+- Une fois que vous avez activé le délai d’expiration de session inactive, il s’applique à l’ensemble de votre organisation et ne peut pas être étendu à des utilisateurs, des unités d’organisation ou des groupes spécifiques. Utilisez [Azure AD stratégies d’accès conditionnel](/azure/active-directory/conditional-access/) pour différents utilisateurs et groupes afin d’accéder aux SharePoint et aux Exchange Online.
 
-- Les utilisateurs doivent être inactifs sur tous Microsoft 365 onglets de l’application web pendant la durée configurée. Si l’utilisateur est actif sur un onglet (par exemple, OWA) alors qu’il est inactif sur un autre onglet (par exemple SPO), il sera considéré comme actif et ne sera pas signé.  
+- Les utilisateurs doivent être inactifs sur tous les onglets Microsoft 365 application web pendant la durée configurée. Si l’utilisateur est actif sur un onglet (par exemple, OWA) alors qu’il est inactif sur un autre onglet (par exemple, SPO), il est considéré comme actif et ne sera pas déconnecté.  
 
-- Dans ce cas, les utilisateurs ne sont pas signés.
-    - S’ils obtiennent l’sign-on unique (SSO) dans l’application web à partir du  compte joint à l’appareil ou sélectionné Restez connecté au moment de la signature. Pour plus d’informations sur le masquage de cette option pour votre organisation, voir Ajouter une marque à la page de signature [de votre organisation](/azure/active-directory/fundamentals/customize-branding).
-    - S’ils sont sur un appareil géré (conforme ou joint à un domaine) et qu’ils utilisent un navigateur pris en charge comme Microsoft Edge ou Google Chrome (avec [l’extension Windows Accounts](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)). Pour que cette fonctionnalité ne se déclenche pas sur un appareil géré, un abonnement Azure AD Premium P1 ou P2 éligible et une stratégie d’accès conditionnel spécifique sont requis. Pour plus d’informations, voir ci-dessous.
+- Dans ce cas, les utilisateurs ne seront pas déconnectés.
+    - S’ils obtiennent l’authentification unique (SSO) dans l’application web à partir du compte joint à l’appareil ou s’ils ont sélectionné **Rester connecté** au moment de la connexion. Pour plus d’informations sur le masquage de cette option pour votre organisation, consultez [Ajouter une personnalisation à la page de connexion de votre organisation](/azure/active-directory/fundamentals/customize-branding).
+    - S’ils se trouve sur un appareil géré (un appareil conforme ou joint à un domaine) et utilisent un navigateur pris en charge comme Microsoft Edge ou Google Chrome (avec [l’extension comptes Windows](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)). Pour que cette fonctionnalité ne se déclenche pas sur un appareil managé, un abonnement Azure AD Premium P1 ou P2 éligible et une stratégie d’accès conditionnel spécifique sont requis. Pour plus d’informations, voir ci-dessous.
 
 > [!IMPORTANT]
-> Le délai d’inactivité de session n’est pas disponible pour Microsoft 365 géré par 21Vianet ou Microsoft 365 Germany.
+> Le délai d’expiration de la session inactive n’est pas disponible pour Microsoft 365 géré par 21Vianet ou Microsoft 365 Allemagne.
 
-## <a name="idle-session-timeout-on-unmanaged-devices"></a>Délai d’inactivité de session sur les appareils non utilisés  
+## <a name="idle-session-timeout-on-unmanaged-devices"></a>Délai d’expiration de session inactif sur les appareils non gérés  
 
-Pour que le délai d’inactivité de session soit déclenché sur les appareils non utilisés, vous devez ajouter une stratégie d’accès conditionnel dans le Centre d’administration Azure AD.
+Pour que le délai d’inactivité de la session soit déclenché sur les appareils non gérés, vous devez ajouter une stratégie d’accès conditionnel dans le centre d’administration Azure AD.
 
-1. Sur la **| Page Stratégies** du centre Azure AD’administration, sélectionnez **Nouvelle** stratégie et entrez un nom pour la stratégie.
+1. Sur le **| d’accès conditionnel Page Stratégies** du centre d’administration Azure AD, sélectionnez **Nouvelle stratégie** et entrez un nom pour la stratégie.
 
-2. Sélectionnez **Utilisateurs ou identités de charge de** travail, puis tous **les utilisateurs**.
+2. Sélectionnez **Utilisateurs ou identités de charge de travail**, puis **tous les utilisateurs**.
 
-3. **Sélectionnez des applications ou des actions cloud**, **sélectionnez des applications** et recherchez **des Office 365**. **Sélectionnez Office 365**, puis **Sélectionnez**.  
+3. Sélectionnez **applications ou actions cloud**, **sélectionnez des applications** et recherchez **Office 365**. Sélectionnez **Office 365**, puis **sélectionnez**.  
 
-4. **Sélectionnez Conditions**, **Applications clientes**, **Configurer sur Oui**, **Navigateur**, puis sélectionnez **Terminé**.
+4. Sélectionnez **Conditions**, **Applications clientes**, **Configurer sur Oui**, **Navigateur**, puis Sélectionnez **Terminé**.
 
-5. **Sélectionnez Session**, **utilisez les restrictions appliquées par l’application**, puis **sélectionnez**.
+5. Sélectionnez **Session**, **Utilisez les restrictions appliquées par l’application**, puis **sélectionnez**.
 
-6. Activer la stratégie et sélectionner **Créer**.
+6. Activez la stratégie, puis **sélectionnez Créer**.
 
 ## <a name="frequently-asked-questions"></a>Foire aux questions
 
-### <a name="are-there-any-browsers-or-browser-scenarios-in-which-idle-session-timeout-feature-doesnt-work"></a>Existe-t-il des navigateurs ou des scénarios de navigateur dans lesquels la fonctionnalité de délai d’attente de session inactive ne fonctionne pas ?  
+### <a name="are-there-any-browsers-or-browser-scenarios-in-which-idle-session-timeout-feature-doesnt-work"></a>Existe-t-il des navigateurs ou des scénarios de navigateur dans lesquels la fonctionnalité de délai d’expiration de session inactive ne fonctionne pas ?  
 
-Le délai d’inactivité de session n’est pas pris en charge lorsque les cookies tiers sont désactivés dans le navigateur. Les utilisateurs ne voient aucune invite de sortie. Nous vous recommandons de conserver le paramètre de prévention du suivi sur [Équilibré (](/microsoft-edge/web-platform/tracking-prevention)par défaut) pour les Microsoft Edge et les cookies tiers activés dans vos autres navigateurs. Microsoft 365 applications et services ont cessé de prise en charge d’Internet Explorer 11 depuis le 17 août 2021.
+Le délai d’expiration de la session inactive n’est pas pris en charge lorsque des cookies tiers sont désactivés dans le navigateur. Les utilisateurs ne voient aucune invite de déconnexion. Nous vous recommandons de conserver le paramètre de prévention de suivi [sur Balanced (Default)](/microsoft-edge/web-platform/tracking-prevention) pour Microsoft Edge et les cookies tiers activés dans vos autres navigateurs. Microsoft 365 applications et services n’ont plus pris en charge Internet Explorer 11 depuis le 17 août 2021.
 
-### <a name="how-should-i-prepare-if-my-organization-is-already-using-existing-outlook-web-app-and-sharepoint-online-idle-timeout-policies"></a>Comment dois-je me préparer si mon organisation utilise déjà une application web Outlook et des stratégies de délai d’inactivité SharePoint Online ?  
+### <a name="how-should-i-prepare-if-my-organization-is-already-using-existing-outlook-web-app-and-sharepoint-online-idle-timeout-policies"></a>Comment dois-je me préparer si mon organisation utilise déjà une application web Outlook existante et SharePoint stratégies de délai d’inactivité en ligne ?  
 
-Si vous utilisez déjà une application web Outlook existante et des stratégies de délai d’inactivité SharePoint Online, vous pouvez toujours activer la fonctionnalité délai d’attente de session inactive. Lorsque vous allumez la stratégie de délai d’inactivité, elle est prioritaire sur l’application web Outlook et les stratégies SharePoint Online existantes. Nous prévoyons d’Outlook l’application web et SharePoint Online dans un futur proche. Pour mieux préparer votre organisation, nous vous recommandons d’activer le délai d’inactivité des sessions.
+Si vous utilisez déjà une application web Outlook existante et SharePoint stratégies de délai d’inactivité en ligne, vous pouvez toujours activer la fonctionnalité de délai d’expiration de session inactive. Lorsque vous activez la stratégie de délai d’inactivité, elle est prioritaire sur l’application web Outlook existante et les stratégies SharePoint Online. Nous prévoyons de déprécier l’application web Outlook existante et les stratégies SharePoint Online dans un avenir proche. Pour mieux préparer votre organisation, nous vous recommandons d’activer le délai d’expiration de session inactive.
 
-### <a name="what-happens-if-i-am-inactive-on-an-included-microsoft-365-web-app-but-active-on-a-microsoft-web-app-or-saas-web-app-that-doesnt-have-idle-session-timeout-turned-on"></a>Que se passe-t-il si je suis inactif sur une application web Microsoft 365 incluse, mais actif sur une application web Microsoft ou Une application web SaaS pour qui le délai d’inactivité de session n’est pas allumé ?  
+### <a name="what-happens-if-i-am-inactive-on-an-included-microsoft-365-web-app-but-active-on-a-microsoft-web-app-or-saas-web-app-that-doesnt-have-idle-session-timeout-turned-on"></a>Que se passe-t-il si je suis inactif sur une application web Microsoft 365 incluse, mais actif sur une application web Microsoft ou une application web SaaS pour laquelle le délai d’expiration de session inactif n’est pas activé ?  
 
-Les applications web Microsoft 365 suivantes sont pris en charge.
+Les applications web Microsoft 365 suivantes sont prises en charge.
 
 - Outlook Web App
 
-- OneDrive Entreprise
+- OneDrive Entreprise
 
 - SharePoint Online (SPO)
 
-- Office.com et autres pages de démarrage
+- Office.com et d’autres pages de démarrage
 
 - Office (Word, Excel, PowerPoint) sur le web
 
 - Centre d’administration Microsoft 365
 
-Si vous travaillez sur une autre application web avec le même compte, l’activité dans cette application web ne sera pas appliquée au délai d’inactivité de session.
+Si vous travaillez sur une autre application web avec le même compte, l’activité dans cette application web ne sera pas appliquée au délai d’expiration de session inactive.
 
-### <a name="i-want-to-make-changes-to-the-idle-session-timeout-policy-or-delete-it-how-can-i-do-that"></a>Je souhaite apporter des modifications à la stratégie de délai d’attente de session inactive ou la supprimer. Comment puis-je faire ?
+### <a name="i-want-to-make-changes-to-the-idle-session-timeout-policy-or-delete-it-how-can-i-do-that"></a>Je souhaite apporter des modifications à la stratégie de délai d’expiration de session inactive ou la supprimer. Comment puis-je faire cela ?
 
 Mettez à jour la stratégie :
 
-1. Dans la Centre d'administration Microsoft 365, sélectionnez **Paramètres** de l’organisation, sélectionnez l’onglet Sécurité **& confidentialité** et sélectionnez Délai d’inactivité de **la session**.
+1. Dans le Centre d'administration Microsoft 365, sélectionnez **Paramètres de l’organisation**, accédez à l’onglet **Sécurité & Confidentialité**, puis **sélectionnez Délai d’expiration de session inactif**.
 
-2. Dans le menu déroulant, sélectionnez une autre valeur de délai d’arrêt, puis **enregistrez**.  
+2. Dans le menu déroulant, sélectionnez une autre valeur de délai d’expiration, puis **Enregistrez**.  
 
 Supprimez la stratégie :
 
-1. Dans la Centre d'administration Microsoft 365, sélectionnez **Paramètres** de l’organisation, sélectionnez l’onglet Sécurité **& confidentialité** et sélectionnez Délai d’inactivité de **la session**.
+1. Dans le Centre d'administration Microsoft 365, sélectionnez **Paramètres de l’organisation**, accédez à l’onglet **Sécurité & Confidentialité**, puis **sélectionnez Délai d’expiration de session inactif**.
 
-2. **Désélectionnez Activer pour définir** la période d’inactivité pour que les utilisateurs soient Office applications web et sélectionnez **Enregistrer**.
+2. Désactivez **l’option Activer pour définir la période d’inactivité pour que les utilisateurs soient déconnectés de Office applications web**, puis **sélectionnez Enregistrer**.

@@ -25,13 +25,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Attribuez des licences selon que vous voulez attribuer des licences de produits à des utilisateurs spécifiques ou attribuer des licences d'utilisateurs à un produit spécifique.
-ms.date: 09/16/2021
-ms.openlocfilehash: dd0469288ce53ac59663e119022a204130bad3ef
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.date: 04/22/2022
+ms.openlocfilehash: 32c91c82388cdb87b0dd6b980b51b888d1cec521
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316700"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092622"
 ---
 # <a name="assign-licenses-to-users"></a>Attribuer des licences aux utilisateurs
 

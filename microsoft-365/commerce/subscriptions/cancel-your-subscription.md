@@ -1,5 +1,5 @@
 ---
-title: Annuler un abonnement
+title: Annuler votre abonnement professionnel
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -20,20 +20,22 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: Découvrez comment annuler votre Dynamics 365, Intune, Power Platform et Microsoft 365 pour un essai professionnel ou des abonnements payants dans le Centre d'administration Microsoft 365.
-ms.date: 03/31/2022
-ms.openlocfilehash: d6b6c078c5f0d1b44143f3a9cc2d336a0a80fe03
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.date: 04/22/2022
+ms.openlocfilehash: 5dbf455b2c90a51aadd5d2e93b0739f93d138841
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595277"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092566"
 ---
-# <a name="cancel-your-subscription"></a>Annuler votre abonnement
-
-Si vous souhaitez annuler votre abonnement, le moyen le plus simple consiste à [désactiver la facturation périodique](renew-your-subscription.md). Lorsque vous désactivez la facturation périodique, vous pouvez continuer à utiliser votre abonnement jusqu’à ce qu’il expire à la fin de la période d’abonnement. Si vous souhaitez annuler immédiatement, utilisez les informations et les étapes décrites dans cet article pour ce faire.
+# <a name="cancel-your-business-subscription"></a>Annuler votre abonnement professionnel
 
 > [!IMPORTANT]
-> Cet article s'applique uniquement aux abonnements Dynamics 365, Intune, Power Platform et Microsoft 365 pour les entreprises. Si vous avez Microsoft 365 Famille ou Personnel, voir Annuler un [abonnement Microsoft 365](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link) .
+> - Cet article s'applique uniquement aux abonnements Dynamics 365, Intune, Power Platform et Microsoft 365 pour les entreprises. Si vous avez Microsoft 365 Famille ou Personnel, voir Annuler un [abonnement Microsoft 365](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link) .
+> - Si vous avez acheté votre abonnement auprès d’un représentant Microsoft ou d’un partenaire revendeur, vous avez sept jours pour annuler un remboursement au prorata. Contactez votre vendeur ou partenaire pour vous aider à annuler votre abonnement. [En savoir plus sur les partenaires](../manage-partners.md#what-can-a-partner-do-for-my-organization-or-school).
+> - Si votre organisation se trouve au Chili et que vous avez acheté votre abonnement par le biais d’un partenaire au Chili, vous avez 10 jours pour annuler un remboursement au prorata.
+
+Si vous souhaitez annuler votre abonnement, le moyen le plus simple consiste à [désactiver la facturation périodique](renew-your-subscription.md). Lorsque vous désactivez la facturation périodique, vous pouvez continuer à utiliser votre abonnement jusqu’à ce qu’il expire à la fin de la période d’abonnement. Si vous souhaitez annuler immédiatement, utilisez les informations et les étapes décrites dans cet article pour ce faire.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 

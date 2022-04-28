@@ -1,5 +1,5 @@
 ---
-title: Déterminer si le déploiement centralisé des add-ins fonctionne pour votre organisation
+title: Déterminer si le déploiement centralisé de compléments fonctionne pour votre organisation
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,51 +21,51 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
-description: Déterminez si votre client et vos utilisateurs répondent aux exigences, afin que vous pouvez utiliser le déploiement centralisé pour déployer Office des modules.
-ms.openlocfilehash: 856e48db79627e0e736c05fe0062680017e24418
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+description: Déterminez si votre locataire et vos utilisateurs répondent aux exigences, afin que vous puissiez utiliser le déploiement centralisé pour déployer Office compléments.
+ms.openlocfilehash: 4d135e76034880e1419e296f2c201536be98b4bc
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64506964"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093765"
 ---
-# <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des add-ins fonctionne pour votre organisation
+# <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé de compléments fonctionne pour votre organisation
 
-Le déploiement centralisé est le moyen recommandé et le plus riche en fonctionnalités pour la plupart des clients de déployer des Office pour des utilisateurs et des groupes au sein de votre organisation. Si vous êtes un administrateur, utilisez ces conseils pour déterminer si votre organisation et les utilisateurs répondent aux exigences afin de pouvoir utiliser le déploiement centralisé.
+Le déploiement centralisé est le moyen le plus recommandé et le plus riche en fonctionnalités pour la plupart des clients de déployer Office compléments sur les utilisateurs et les groupes au sein de votre organisation. Si vous êtes administrateur, utilisez ces conseils pour déterminer si votre organisation et vos utilisateurs répondent aux exigences afin de pouvoir utiliser le déploiement centralisé.
 
 Une déploiement centralisé offre les avantages suivants :
 
-- Un administrateur peut déployer et affecter un module complémentaire directement à un utilisateur, à plusieurs utilisateurs via un groupe ou à tous les membres de l’organisation (pour plus d’informations, voir la section sur les conditions requises de l’administrateur).
-- Lorsque l’application Office est en cours de démarrage, le add-in se télécharge automatiquement. Si le add-in prend en charge les commandes de Office, il apparaît automatiquement dans le ruban.
-- Les add-ins n’apparaissent plus pour les utilisateurs si l’administrateur le éteint ou le supprime, ou si l’utilisateur est supprimé de Azure Active Directory ou d’un groupe à qui le module est affecté.
+- Un administrateur peut déployer et affecter un complément directement à un utilisateur, à plusieurs utilisateurs via un groupe ou à tous les membres de l’organisation (voir la section Conditions requises de l’administrateur pour plus d’informations).
+- Lorsque l’application Office appropriée démarre, le complément se télécharge automatiquement. Si le complément prend en charge les commandes de complément, le complément apparaît automatiquement dans le ruban dans l’application Office.
+- Les compléments n’apparaissent plus pour les utilisateurs si l’administrateur désactive ou supprime le complément, ou si l’utilisateur est supprimé de Azure Active Directory ou d’un groupe auquel le complément est affecté.
 
-Le déploiement centralisé prend en charge trois plateformes de bureau Windows, Mac et Online Office applications. Le déploiement centralisé prend également en charge iOS et Android (Outlook uniquement les applications mobiles).
+Le déploiement centralisé prend en charge trois plateformes de bureau Windows, Mac et les applications Office en ligne. Le déploiement centralisé prend également en charge iOS et Android (compléments mobiles Outlook uniquement).
 
-L’ouverture d’un client pour tous les utilisateurs peut prendre jusqu’à 24 heures.
+L’affichage d’un complément pour le client pour tous les utilisateurs peut prendre jusqu’à 24 heures.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Le déploiement centralisé des add-ins nécessite que les utilisateurs utilisent des licences Microsoft 365 Business (Business Basic, Business Standard, Business Premium), des licences Office 365 Entreprise (E1/E3/E5/F3) ou des licences Microsoft 365 Entreprise (E3/E5/F3) (et sont Office à l’aide de leur ID d’organisation), de licences Office 365 Éducation (A1/A3/A5) ou de licences Microsoft 365 Éducation (A3/A5), et ont des boîtes aux lettres Exchange Online et Exchange Online actives. Votre annuaire d’abonnement doit être dans ou fédéré pour Azure Active Directory.
-Vous pouvez afficher les exigences spécifiques Office et Exchange ci-dessous, ou utiliser le contrôle de compatibilité du déploiement [centralisé](#centralized-deployment-compatibility-checker).
+Le déploiement centralisé des compléments nécessite que les utilisateurs utilisent des licences Microsoft 365 Business (Business Basic, Business Standard, Business Premium), des licences Office 365 Entreprise (E1/E3/E5/F3) ou des licences Microsoft 365 Entreprise (E3/E5/F3) (et sont connectés à Office à l’aide de leur ID d’organisation), des licences Office 365 Éducation (A1/A3/A5) ou des licences Microsoft 365 Éducation (A3/A5) et disposent de boîtes aux lettres Exchange Online et actives Exchange Online. Votre répertoire d’abonnement doit être dans ou fédéré pour Azure Active Directory.
+Vous pouvez afficher des exigences spécifiques pour Office et Exchange ci-dessous, ou utiliser le [vérificateur de compatibilité de déploiement centralisé](#centralized-deployment-compatibility-checker).
 
 La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
 
-- Les add-ins qui ciblent Office version MSI (à l’exception Outlook 2016)
+- Compléments qui ciblent Office version MSI (sauf Outlook 2016)
 - un service d'annuaire local ;
-- Déploiement de la mise en Exchange d’une boîte aux lettres sur place
+- Déploiement de complément dans une boîte aux lettres Exchange local
 - le déploiement de compléments vers SharePoint ;
-- Teams applications
-- Déploiement de composants COM (Component Object Model) ou de Visual Studio Tools pour Office (VSTO) de composants.
-- Déploiements de Microsoft 365 qui n’incluent pas de Exchange Online telles que les SSO : Microsoft 365 Apps entreprise et Microsoft 365 Apps pour Enterprise.
+- applications Teams
+- Déploiement de compléments COM (Component Object Model) ou Visual Studio Tools pour Office (VSTO).
+- Déploiements de Microsoft 365 qui n’incluent pas d’Exchange Online telles que les références SKU : Microsoft 365 Apps for Business et Microsoft 365 Apps pour Enterprise.
 
-### <a name="office-requirements"></a>Office requise
+### <a name="office-requirements"></a>Exigences en matière de Office
 
-- Pour word, Excel et les PowerPoint, vos utilisateurs doivent utiliser l’une des utilisations suivantes :
+- Pour Les compléments Word, Excel et PowerPoint, vos utilisateurs doivent utiliser l’une des options suivantes :
   - Sur un appareil Windows, version 1704 ou ultérieure des licences Microsoft 365 Business (Business Basic, Business Standard, Business Premium), des licences Office 365 Entreprise (E1/E3/E5/F3) ou des licences Microsoft 365 Entreprise (E3/E5/F3).
   - Sur un Mac, version 15.34 ou ultérieure.
 
-- Pour Outlook, vos utilisateurs doivent utiliser l’une des utilisations suivantes :
-  - Version 1701 ou ultérieure des licences Microsoft 365 Business (Business Basic, Business Standard, Business Premium), licences Office 365 Entreprise (E1/E3/E5/F3) ou licences Microsoft 365 Entreprise (E3/E5/F3).
+- Pour Outlook, vos utilisateurs doivent utiliser l’une des options suivantes :
+  - Version 1701 ou ultérieure des licences Microsoft 365 Business (Business Basic, Business Standard, Business Premium), des licences Office 365 Entreprise (E1/E3/E5/F3) ou des licences Microsoft 365 Entreprise (E3/E5/F3).
   - Version 1808 ou ultérieure de Office Professionnel Plus 2019 ou Office Standard 2019.
   - Version 16.0.4494.1000 ou ultérieure de Office Professionnel Plus 2016 (MSI) ou Office Standard 2016 (MSI)\*
   - Version 15.0.4937.1000 ou ultérieure de Office Professionnel Plus 2013 (MSI) ou Office Standard 2013 (MSI)\*
@@ -73,30 +73,30 @@ La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
 - Version 2.75.0 ou ultérieure de Outlook mobile pour iOS
 - Version 2.2.145 ou ultérieure de Outlook mobile pour Android
 
-    *Les versions MSI de Outlook afficher les add-ins installés par l’administrateur dans le ruban Outlook approprié, et non dans la section « Mes modules ».
+    *Les versions MSI de Outlook affichent les compléments installés par l’administrateur dans le ruban Outlook approprié, et non dans la section « Mes compléments ».
 
-### <a name="exchange-online-requirements"></a>Exchange Online requise
+### <a name="exchange-online-requirements"></a>exigences de Exchange Online
 
-Microsoft Exchange les manifestes de votre organisation. L’administrateur déployant des applications et les utilisateurs qui les reçoivent doivent se trouver sur une version de Exchange Online qui prend en charge l’authentification OAuth.
+Microsoft Exchange stocke les manifestes de complément dans le locataire de votre organisation. L’administrateur qui déploie des compléments et les utilisateurs qui reçoivent ces compléments doivent se trouver sur une version de Exchange Online qui prend en charge l’authentification OAuth.
 
 Pour connaître la configuration utilisée, consultez l'administrateur Exchange de votre organisation. Vous pouvez vérifier la connectivité OAuth de chaque utilisateur à l'aide de l'applet de commande PowerShell [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity).
 
 ### <a name="admin-requirements"></a>Configuration requise pour l’administrateur
 
-Pour déployer un add-in via un déploiement centralisé, vous devez être administrateur général ou administrateur Exchange de l’organisation.
+Pour déployer un complément via un déploiement centralisé, vous devez être administrateur général ou administrateur Exchange de l’organisation.
 
 > [!NOTE]
-> Un administrateur Exchange peut déployer un add-in si le rôle Administrateur  d’application est ajouté ou si la propriété **Inscriptions** d’application est définie sur true dans le Centre d’administration Azure Active Directory, comme illustré dans l’image suivante :
+> Un administrateur Exchange peut déployer un complément si le rôle **Administrateur** d’application est ajouté ou si la propriété **Inscriptions d’applications** a la valeur true dans Azure Active Directory centre d’administration, comme illustré dans l’image suivante :
 >
 > ![image](https://user-images.githubusercontent.com/89943918/144516704-8874a10d-b540-41f3-ae9d-c07a8d7e143f.png)
 
-### <a name="centralized-deployment-compatibility-checker"></a>Contrôle de compatibilité du déploiement centralisé
+### <a name="centralized-deployment-compatibility-checker"></a>Vérificateur de compatibilité de déploiement centralisé
 
-À l’aide du contrôle de compatibilité du déploiement centralisé, vous pouvez vérifier si les utilisateurs de votre client sont configurer pour utiliser le déploiement centralisé pour Word, Excel et PowerPoint. Le vérificateur de compatibilité n'est pas requis pour la prise en charge d'Outlook. Téléchargez [le contrôle de compatibilité](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
+À l’aide du vérificateur de compatibilité de déploiement centralisé, vous pouvez vérifier si les utilisateurs de votre locataire sont configurés pour utiliser le déploiement centralisé pour Word, Excel et PowerPoint. Le vérificateur de compatibilité n'est pas requis pour la prise en charge d'Outlook. Téléchargez le [vérificateur de compatibilité](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
 
-#### <a name="run-the-compatibility-checker"></a>Exécuter le contrôle de compatibilité
+#### <a name="run-the-compatibility-checker"></a>Exécuter le vérificateur de compatibilité
 
-1. Démarrez une fenêtre avec PowerShell.exe élevée.
+1. Démarrez une fenêtre de PowerShell.exe avec élévation de privilèges.
 
 2. Exécutez la commande suivante :
 
@@ -104,23 +104,23 @@ Pour déployer un add-in via un déploiement centralisé, vous devez être admin
    Import-Module O365CompatibilityChecker
    ```
 
-3. Exécutez **la commande Invoke-CompatibilityCheck** :
+3. Exécutez la commande **Invoke-CompatibilityCheck** :
 
    ```powershell
    Invoke-CompatibilityCheck
    ```
 
-   Cette commande vous invite à utiliser les informations d’identification _TenantDomain_ (par _exemple, TailspinToysIncorporated.onmicrosoft.com_) et _TenantAdmin_ (utilisez vos informations d’identification d’administrateur général), puis demande son consentement.
+   Cette commande vous invite à entrer _les informations d’identification TenantDomain_ (par exemple, _TailspinToysIncorporated.onmicrosoft.com_) et _TenantAdmin_ (utilisez vos informations d’identification d’administrateur général), puis demande le consentement.
 
    > [!NOTE]
    > Selon le nombre d'utilisateurs dans votre client, l'exécution du vérificateur peut prendre quelques minutes ou plusieurs heures.
 
-Une fois l'exécution de l'outil terminée, celui-ci génère un fichier de sortie dans un format séparé par des virgules (.csv). Le fichier est enregistré dans **le répertoire de travail actuel** par défaut. Le fichier de sortie contient les informations suivantes :
+Une fois l'exécution de l'outil terminée, celui-ci génère un fichier de sortie dans un format séparé par des virgules (.csv). Par défaut, le fichier est enregistré **dans le répertoire de travail actif** . Le fichier de sortie contient les informations suivantes :
 
 - Nom d'utilisateur
 - ID d'utilisateur (adresse de courrier de l'utilisateur)
 - Déploiement centralisé prêt - Si les autres éléments sont vérifiés
-- Office plan : le plan de Office dont ils sont titulaires d’une licence
+- Office plan - Le plan de Office pour lesquels ils sont titulaires d’une licence
 - Activation d'Office - Si l'utilisateur a activé Office
 - Boîte aux lettres prise en charge - Si l'utilisateur a une boîte aux lettres OAuth
 
@@ -129,12 +129,12 @@ Une fois l'exécution de l'outil terminée, celui-ci génère un fichier de sort
 
 ## <a name="user-and-group-assignments"></a>Affectations à des utilisateurs et groupes
 
-La fonctionnalité déploiement centralisé prend actuellement en charge la majorité des groupes pris en charge par Azure Active Directory, y compris les groupes Microsoft 365, les listes de distribution et les groupes de sécurité.
+La fonctionnalité déploiement centralisé prend actuellement en charge la majorité des groupes pris en charge par Azure Active Directory, notamment les groupes Microsoft 365, les listes de distribution et les groupes de sécurité.
 
 > [!NOTE]
 > Les groupes de sécurité sans extension messagerie ne sont pas actuellement pas pris en charge.
 
-Le déploiement centralisé prend en charge les affectations à des utilisateurs individuels, des groupes et à tous les utilisateurs du client. La fonctionnalité Déploiement centralisé prend en charge les utilisateurs au sein de groupes de niveau supérieur ou de groupes sans groupes parents, mais pas les utilisateurs au sein de groupes imbriqués ou qui ont des groupes parents.
+Le déploiement centralisé prend en charge les affectations à des utilisateurs individuels, à des groupes et à tous les membres du locataire. La fonctionnalité Déploiement centralisé prend en charge les utilisateurs au sein de groupes de niveau supérieur ou de groupes sans groupes parents, mais pas les utilisateurs au sein de groupes imbriqués ou qui ont des groupes parents.
 
 Examinons l'exemple suivant où un complément est affecté à Nicoletta, à Ariane et au groupe Service commercial. Le Service des ventes Région ouest étant un groupe imbriqué, aucun complément n'est affecté à Noël et Jérôme.
 
@@ -142,28 +142,28 @@ Examinons l'exemple suivant où un complément est affecté à Nicoletta, à Ari
 
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>Déterminer si un groupe contient des groupes imbriqués
 
-La manière la plus simple de détecter si un groupe contient des groupes imbriqués consiste à afficher la carte de visite du groupe dans Outlook. Si vous entrez le nom du groupe dans le champ **À** d’un e-mail, puis sélectionnez le nom du groupe lorsqu’il est résolu, il vous indique s’il contient des utilisateurs ou des groupes imbrmbrés. Dans l'exemple ci-dessous, l'onglet **Membres** de la carte de visite Outlook du groupe Test n'affiche aucun utilisateur et seulement deux sous-groupes.
+La manière la plus simple de détecter si un groupe contient des groupes imbriqués consiste à afficher la carte de visite du groupe dans Outlook. Si vous entrez le nom du groupe dans le champ **À** d’un e-mail, puis sélectionnez le nom du groupe lorsqu’il sera résolu, il vous indiquera s’il contient des utilisateurs ou des groupes imbriqués. Dans l'exemple ci-dessous, l'onglet **Membres** de la carte de visite Outlook du groupe Test n'affiche aucun utilisateur et seulement deux sous-groupes.
 
 ![Onglet Membres de Outlook carte de visite.](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
 Vous pouvez effectuer la requête inverse en résolvant le groupe pour voir s'il est membre d'un groupe. Dans l'exemple ci-dessous, vous pouvez voir sous l'onglet **Appartenance** de la carte de visite Outlook que le Sous-groupe 1 est membre du groupe Test.
 
-![Onglet Appartenance de la carte Outlook contact.](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![Onglet Appartenance de la carte de visite Outlook.](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
-Vous pouvez également utiliser l'API Graph Azure Active Directory pour exécuter des requêtes afin d'obtenir la liste des groupes au sein d'un groupe. Pour plus d’informations, voir [Opérations sur les groupes| API Graph référence](/previous-versions/azure/ad/graph/api/groups-operations).
+Vous pouvez également utiliser l'API Graph Azure Active Directory pour exécuter des requêtes afin d'obtenir la liste des groupes au sein d'un groupe. Pour plus d’informations, consultez [Opérations sur les groupes| API Graph référence](/previous-versions/azure/ad/graph/api/groups-operations).
 
 ### <a name="contacting-microsoft-for-support"></a>Contacter Microsoft pour obtenir une assistance
 
-Si vous ou vos utilisateurs rencontrez des problèmes lors du chargement du add-in lors de l’utilisation d’applications Office pour le web (Word, Excel, etc.), qui ont été déployées de manière centralisée, vous devrez peut-être contacter le support [Microsoft (découvrez](../../business-video/get-help-support.md) comment faire. Fournissez les informations suivantes sur votre environnement Microsoft 365 dans le ticket de support.
+Si vous ou vos utilisateurs rencontrez des problèmes lors du chargement du complément lors de l’utilisation d’applications Office pour le web (Word, Excel, etc.), qui ont été déployées de manière centralisée, vous devrez peut-être contacter le support Microsoft ([découvrez comment](../../business-video/get-help-support.md) procéder. Fournissez les informations suivantes sur votre environnement Microsoft 365 dans le ticket de support.
 
-|Plate-forme|Informations de débogage|
+|Plateforme|Informations de débogage|
 |---|---|
-|Office|Journaux Charles/Fiddler <br/> ID de client ([découvrez comment](/onedrive/find-your-office-365-tenant-id)) <br/> CorrelationID. Affichez la source de l’une des pages Office et recherchez la valeur de l’ID de corrélation et envoyez-la pour prendre en charge :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">` <br/> `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`|
-|Clients riches (Windows, Mac)|Journaux Charles/Fiddler <br/> Numéros de build de l’application cliente (de préférence en tant que capture d’écran de **Fichier/Compte**)|
+|Office|Journaux Charles/Fiddler <br/> ID de locataire ([découvrez comment](/onedrive/find-your-office-365-tenant-id)) <br/> Correlationid. Affichez la source de l’une des pages de bureau, recherchez la valeur de l’ID de corrélation et envoyez-la à la prise en charge :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">` <br/> `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`|
+|Clients riches (Windows, Mac)|Journaux Charles/Fiddler <br/> Numéros de build de l’application cliente (de préférence sous la forme d’une capture d’écran à partir d’un **fichier/d’un compte**)|
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
-[Déployer des add-ins dans le Centre d’administration](../manage/manage-deployment-of-add-ins.md) (article)\
-[Gérer les add-ins dans le Centre d’administration](manage-addins-in-the-admin-center.md) (article)\
+[Déployer des compléments dans le centre d’administration](../manage/manage-deployment-of-add-ins.md) (article)\
+[Gérer les compléments dans le centre d’administration](manage-addins-in-the-admin-center.md) (article)\
 [FAQ sur le déploiement centralisé](../manage/centralized-deployment-faq.yml) (article)\
 [Mettre à niveau votre Microsoft 365 pour les utilisateurs professionnels vers le client Office le plus récent](../setup/upgrade-users-to-latest-office-client.md) (article)

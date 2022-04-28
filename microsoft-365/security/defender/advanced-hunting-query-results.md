@@ -20,18 +20,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0bfec0b56a67b1242d8dfd76b845aa273a76d27e
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: cb17e2a3624471031eb4f72199705d6b8fe06979
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667249"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092864"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Utiliser des résultats de requête de chasse avancés
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
 
@@ -42,7 +42,7 @@ Bien que vous puissiez construire vos requêtes de [chasse avancées](advanced-h
 - Afficher les résultats sous forme de tableau ou de graphique
 - Exporter des tables et des graphiques
 - Explorer les informations détaillées sur l’entité
-- Ajuster vos requêtes directement à partir des résultats ou appliquer des filtres
+- Ajuster vos requêtes directement à partir des résultats
 
 ## <a name="view-query-results-as-a-table-or-chart"></a>Afficher les résultats d’une requête sous forme de tableau ou de graphique
 
@@ -52,12 +52,12 @@ Par défaut, la chasse avancée affiche les résultats de la requête sous forme
 |--|--|
 | **Tableau** | Affiche les résultats de la requête au format tabulaire |
 | **Histogramme** | Affiche une série d’éléments uniques sur l’axe des x sous forme de barres verticales dont les hauteurs représentent des valeurs numériques d’un autre champ |
-| **Histogramme empilé** | Affiche une série d’éléments uniques sur l’axe des x sous forme de barres verticales empilées dont les hauteurs représentent des valeurs numériques d’un ou plusieurs autres champs |
 | **Graphique** | Affiche des secteurs sectionnels représentant des éléments uniques. La taille de chaque secteur représente les valeurs numériques d’un autre champ. |
-| **Graphique en anneau** | Affiche des arcs sectionnels représentant des éléments uniques. La longueur de chaque arc représente les valeurs numériques d’un autre champ. |
 | **Graphique en courbes** | Trace des valeurs numériques pour une série d’éléments uniques et connecte les valeurs tracées |
 | **Nuage de points** | Trace des valeurs numériques pour une série d’éléments uniques |
 | **Graphique en aires** | Trace des valeurs numériques pour une série d’éléments uniques et remplit les sections sous les valeurs tracées |
+| **Graphique en aires empilées** | Trace des valeurs numériques pour une série d’éléments uniques et empile les sections remplies sous les valeurs tracées  |
+| **Graphique chronologique** | Trace les valeurs par nombre sur une échelle de temps linéaire |
 
 ### <a name="construct-queries-for-effective-charts"></a>Construire des requêtes pour des graphiques effectifs
 

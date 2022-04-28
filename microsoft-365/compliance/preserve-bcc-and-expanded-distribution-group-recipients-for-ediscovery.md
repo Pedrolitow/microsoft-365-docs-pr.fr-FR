@@ -2,8 +2,8 @@
 title: Conserver les destinataires Cci et les destinataires de groupe de distribution étendu pour la découverte électronique
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 6/19/2017
 audience: ITPro
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: In-Place les stratégies de conservation, de conservation des litiges et de rétention Microsoft 365 vous permettent de conserver le contenu de la boîte aux lettres pour répondre aux exigences de conformité réglementaire et de découverte électronique.
-ms.openlocfilehash: 4c3c7b7be98959011473eeafc85f40b19be82fdc
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 1a9ac5e19350fd2a98ecc20e94dcdcdcc84a71c7
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998493"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093018"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conserver les destinataires Cci et les destinataires de groupe de distribution étendu pour la découverte électronique
 
@@ -60,7 +60,7 @@ Scénario 1 : John est membre du groupe de distribution Ventes aux États-Unis. 
 
 Scénario 2 : Bob envoie un courrier électronique à John (À/Cc) et Jack (Cci, directement ou indirectement via un groupe de distribution). Le tableau ci-dessous montre les résultats de la recherche de découverte électronique.
 
-|Lorsque vous effectuez une recherche...|Pour les messages envoyés...|Les résultats incluent le message...|Notes|
+|Lorsque vous effectuez une recherche...|Pour les messages envoyés...|Les résultats incluent le message...|Remarques|
 |---|---|---|---|
 |Boîte aux lettres de Bob|À/Cc:John|Oui|Indique que Jack était inclus dans le champ Cci|
 |Boîte aux lettres de Bob|Cci:Jack|Oui|Indique que Jack était inclus dans le champ Cci|

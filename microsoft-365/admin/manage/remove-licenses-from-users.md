@@ -22,13 +22,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: La méthode que vous utilisez pour désattribuer des licences de produit dépend de la désaffectation des licences d’utilisateurs spécifiques ou d’un produit spécifique.
-ms.date: 09/16/2021
-ms.openlocfilehash: 8d0fd6f89802111bdb2afbc2586392251d393e4e
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.date: 04/22/2022
+ms.openlocfilehash: b5294bd6234c36e6040ff8cc7433c3e66b7d34b6
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971072"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093699"
 ---
 # <a name="unassign-licenses-from-users"></a>Annuler l'assignation des licences aux utilisateurs
 
@@ -125,11 +125,11 @@ Lorsque vous utilisez la page **Utilisateurs actifs** pour annuler l’affectati
 - Pour savoir comment bloquer l’accès d’un utilisateur à Microsoft 365 données après la suppression de sa licence et comment accéder aux données par la suite, consultez [Supprimer un ancien employé](../add-users/remove-former-employee.md).
 - Si vous supprimez la licence d’un utilisateur et qu’il a toujours Office applications installées, il voit [des erreurs de produit et d’activation sans licence dans Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) lorsqu’il utilise Office applications.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Si vous ne [réattribuez pas les licences inutilisées à d’autres utilisateurs](../../managed-desktop/get-started/assign-licenses.md), envisagez [de supprimer les licences de votre abonnement](../../commerce/licenses/buy-licenses.md) afin de ne pas payer plus de licences que nécessaire.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Supprimer des licences de votre abonnement](../../commerce/licenses/buy-licenses.md) (article)\
 [Attribuer des licences aux utilisateurs](assign-licenses-to-users.md) (article)\

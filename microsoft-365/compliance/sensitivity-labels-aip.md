@@ -1,5 +1,5 @@
 ---
-title: Choisissez l'étiquetage intégré Microsoft Information Protection (MIP) pour les applications Office plutôt que le module complémentaire Azure Information Protection (AIP).
+title: Choisissez l'étiquetage intégré Microsoft Purview Information Protection pour les applications Office plutôt que le module complémentaire Azure Information Protection (AIP).
 f1.keywords:
 - CSH
 ms.author: cabailey
@@ -17,22 +17,24 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous utilisez le client d'étiquetage unifié Azure Information Protection (AIP), comprenez les avantages d'utiliser l'étiquetage intégré pour les applications Office plutôt que le module complémentaire AIP.
-ms.openlocfilehash: 38aee57720f38793f4f61cc871a9bee556e28690
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 99710520b1b687fe6fc2469badb3ad18e6070371
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498602"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093501"
 ---
-# <a name="why-choose-mip-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Pourquoi choisir l'étiquetage intégré MIP plutôt que le module complémentaire AIP pour les applications Office ?
+# <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Pourquoi choisir l'étiquetage intégré plutôt que le module complémentaire AIP pour les applications Office
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Lorsque vous utilisez des [étiquettes de sensibilité](sensitivity-labels.md) dans les applications Microsoft 365 sur des ordinateurs Windows, vous avez le choix entre utiliser l'étiquetage intégré aux applications Office ou un complément du client d'étiquetage unifié [Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2). 
 
-L'étiquetage intégré constitue la pierre angulaire d'un déploiement de [Microsoft Information Protection (MIP)](information-protection-solution.md), car cette technologie d'étiquetage s'étend sur toutes les plateformes (Windows, macOS, iOS, Android et Web), ainsi que sur les applications et services Microsoft, et au-delà. L'étiquetage intégré est également conçu pour fonctionner avec d'autres fonctionnalités du PIM, telles que la classification des données et la prévention des pertes de données (DLP).
+L'étiquetage intégré constitue la pierre angulaire d'un déploiement de [Microsoft Purview Information Protection](information-protection-solution.md), car cette technologie d'étiquetage s'étend sur toutes les plateformes (Windows, macOS, iOS, Android et Web), ainsi que sur les applications et services Microsoft, et au-delà. L'étiquetage intégré est également conçu pour fonctionner avec d'autres fonctionnalités Microsoft Purview, telles que la classification des données et la prévention des pertes de données Microsoft Purview.
 
-Comme les étiquettes intégrées n'utilisent pas de module complémentaire d'Office, elles bénéficient d'une plus grande stabilité et de meilleures performances. Ils prennent également en charge les dernières fonctionnalités de MIP, telles que les classificateurs avancés.
+Comme les étiquettes intégrées n'utilisent pas de module complémentaire d'Office, elles bénéficient d'une plus grande stabilité et de meilleures performances. Ils prennent également en charge les fonctionnalités Microsoft Purview les plus récentes, telles que les classifieurs avancés.
 
 Par défaut, l'étiquetage intégré est désactivé dans les applications Office pour Windows lorsque le client AIP est installé. Vous pouvez modifier ce comportement par défaut en utilisant les instructions de la section suivante, [Comment désactiver le module complémentaire AIP pour utiliser l'étiquetage intégré pour les applications Office](#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps).
 
@@ -84,7 +86,7 @@ Exemple montrant comment les utilisateurs peuvent examiner et éventuellement su
 
 ![Les numéros de carte de crédit sont identifiés aux utilisateurs comme un contenu sensible avec une option de suppression.](../media/detect-sensitive-content.png)
 
-Pour être informé de la disponibilité de nouvelles fonctionnalités d'étiquetage intégré, voir [ les sections nouveautés de Microsoft 365 compliance](whats-new.md) et Étiquettes **de sensibilité**.
+Pour être informé de la disponibilité de nouvelles fonctionnalités d'étiquetage intégré, voir les sections [Nouveautés de Microsoft Purview](whats-new.md) et **Étiquettes de sensibilité**.
 
 ## <a name="how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps"></a>Comment désactiver le complément AIP pour utiliser l'étiquetage intégré des applications Office ?
 
@@ -127,7 +129,7 @@ Utilisez les informations suivantes pour vous aider à identifier si vous utilis
 |**Catégorie : Général** ||
 |Rapports et audits centraux|![Pris en charge.](../media/yes-icon.png) <br>[Si vous souhaitez en savoir plus](sensitivity-labels-office-apps.md#auditing-labeling-activities) |
 |Cloud pour le secteur public|![Pris en charge.](../media/yes-icon.png)|
-|L'administrateur peut désactiver l'étiquetage <br> - Toutes les applications|  ![Pris en charge.](../media/yes-icon.png) <br>[Si vous souhaitez en savoir plus](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-other-labeling-solutions)|
+|L'administrateur peut désactiver l'étiquetage <br> - Toutes les applications|  ![Pris en charge.](../media/yes-icon.png) <br>[Si vous souhaitez en savoir plus](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows)|
 |L'administrateur peut désactiver l'étiquetage <br> – Par application|  En cours de planification ou de développement|
 |**Catégorie : Expérience utilisateur** ||
 |Bouton d'étiquetage sur le ruban|![Pris en charge.](../media/yes-icon.png)|
@@ -157,7 +159,7 @@ Utilisez les informations suivantes pour vous aider à identifier si vous utilis
 
 Le client AIP supporte de nombreuses personnalisations en utilisant les [paramètres avancés de PowerShell](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell). Certains de ces paramètres avancés sont désormais pris en charge par l'étiquetage intégré, comme indiqué dans [New-Label](/powershell/module/exchange/new-label) ou [Set-Label](/powershell/module/exchange/set-label) , et [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) ou [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy).
 
-Cependant, il se peut que vous n'ayez pas besoin d'utiliser PowerShell pour configurer les paramètres pris en charge, car ils sont inclus dans la configuration standard du centre de conformité Microsoft 365. Par exemple, la possibilité de désactiver l'étiquetage obligatoire pour Outlook et de définir une autre étiquette par défaut.
+Cependant, il se peut que vous n'ayez pas besoin d'utiliser PowerShell pour configurer les paramètres pris en charge, car ils sont inclus dans la configuration standard du portail de conformité Microsoft Purview. Par exemple, la possibilité de désactiver l'étiquetage obligatoire pour Outlook et de définir une autre étiquette par défaut.
 
 Les configurations suivantes du complément AIP ne sont pas encore prises en charge par l'étiquetage intégré :
 
@@ -169,7 +171,7 @@ Les configurations suivantes du complément AIP ne sont pas encore prises en cha
 
 ## <a name="features-not-planned-to-be-supported-by-built-in-labeling-for-office-apps"></a>Fonctionnalités non prévues pour être prises en charge par l'étiquetage intégré pour les applications Office
 
-Bien que de nouvelles fonctionnalités pour l'étiquetage intégré soient ajoutées en permanence, le module complémentaire AIP Office prend en charge les fonctionnalités suivantes qui ne sont pas prévues pour être disponibles dans les futures versions de l'étiquetage intégré :
+Bien que de nouvelles fonctionnalités pour l'étiquetage intégré soient ajoutées en permanence, le module complémentaire AIP Office prend en charge les fonctionnalités suivantes dont la disponibilité n’est pas prévue dans les futures versions de l'étiquetage intégré :
 
 - Application des étiquettes aux formats Microsoft Office 97-2003, tels que les fichiers .doc.
 - Ordinateurs déconnectés de façon permanente
@@ -180,4 +182,4 @@ Bien que de nouvelles fonctionnalités pour l'étiquetage intégré soient ajout
 Pour obtenir des instructions sur la création et la configuration de ces capacités d'étiquetage, voir [créer et configurer des étiquettes de sensibilité et leurs stratégies](create-sensitivity-labels.md).
 
 > [!TIP]
-> Si vous disposez déjà d'étiquettes de sensibilité dans le centre de conformité Microsoft 365, vous ne pourrez pas bénéficier de la création automatique d'étiquettes par défaut. Cependant, vous pouvez toujours trouver utile de faire référence à leur configuration : [Étiquettes de sensibilité par défaut](mip-easy-trials.md#default-sensitivity-labels). 
+> Si vous disposez déjà d'étiquettes de sensibilité dans le portail de conformité Microsoft Purview, vous ne pourrez pas bénéficier de la création automatique d'étiquettes par défaut. Cependant, vous pouvez toujours trouver utile de faire référence à leur configuration : [Étiquettes de sensibilité par défaut](mip-easy-trials.md#default-sensitivity-labels). 

@@ -4,7 +4,7 @@ author: kelleyvice-msft
 f1.keywords:
 - NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Comment des exemples d’organisation procèdent au déploiement et à la mise à jour des versions à l’aide de canaux.
-ms.openlocfilehash: 4616d424c49a1348d374fa01d705e0483822eb90
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 0080a1d31f56709ec8dafef17122f5a67aaa7145
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823979"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094811"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>Exemples de configuration des canaux de déploiement et de mise à jour
 

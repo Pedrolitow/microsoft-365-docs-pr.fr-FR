@@ -2,8 +2,8 @@
 title: Désactiver les rapports lorsque vous exportez les résultats de recherche de contenu
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 12/30/2016
 audience: Admin
@@ -17,12 +17,12 @@ ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 ms.custom:
 - seo-marvel-apr2020
 description: Modifiez le registre Windows sur votre ordinateur local pour désactiver les rapports lorsque vous exportez les résultats d’une recherche de contenu à partir du portail de conformité Microsoft Purview.
-ms.openlocfilehash: 5cd6816807af1b6da4fc8c41e7cdde7bc7f07d66
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 3f44c30b2fe3459e44f2d1c5a2d372e57774eeb2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000089"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094965"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>Désactiver les rapports lorsque vous exportez les résultats de recherche de contenu
 

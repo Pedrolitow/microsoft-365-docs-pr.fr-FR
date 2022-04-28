@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez les réglementations du Règlement général sur la protection des données (RGPD) qui régissent les données personnelles des mineurs.
-ms.openlocfilehash: 15b35798ba03132b35285dc16ce57b139e4d7222
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 9b348ce47b5deef8f012428a402a4a83eaa6dcf1
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782366"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094237"
 ---
 # <a name="minors-and-acquiring-add-ins-from-the-store"></a>Mineurs et acquisition de compléments à partir du Store
 

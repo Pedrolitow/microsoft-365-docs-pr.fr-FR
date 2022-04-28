@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
@@ -18,20 +18,20 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Découvrez comment configurer l’authentification directe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: dcc23662683ffaf65a0ec5fa3698f729dc215af7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f6ad952ebde8556bd3c0c9b7e4e66c006b1c7578
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163359"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094369"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Authentification directe pour votre environnement de test Microsoft 365
 
-*Ce guide de laboratoire de test peut être utilisé à la fois pour Microsoft 365'entreprise et Office 365 Entreprise environnements de test.*
+*Ce guide de laboratoire de test peut être utilisé pour les Microsoft 365 pour les environnements de test d’entreprise et Office 365 Entreprise.*
 
 Les organisations désireuses d’utiliser directement leur infrastructure d’Active Directory Domain Services (AD DS) en local pour l’authentification aux applications et services sur le cloud Microsoft peuvent utiliser l’authentification directe. Cet article décrit comment configurer l’authentification unique transparente Azure AD pour votre environnement de test Microsoft 365. Voici la configuration que vous obtenez:
   
-![Environnement de test de l’entreprise simulée avec authentification directe.](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
+![Entreprise simulée avec environnement de test d’authentification directe.](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
   
 Les deux phases de configuration de cet environnement de test sont les suivantes :
 
@@ -47,11 +47,11 @@ Les deux phases de configuration de cet environnement de test sont les suivantes
 
 Suivez les instructions fournies dans l’article [Synchronisation de hachage de mot de passe pour Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Voici la configuration que vous obtenez.
   
-![Environnement de test de l’entreprise simulée avec synchronisation de hachage de mot de passe.](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![Entreprise simulée avec environnement de test de synchronisation de hachage de mot de passe.](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 Cette configuration se compose des éléments suivants :  
   
-- Microsoft 365 E5 d’essai ou payant.
+- Microsoft 365 E5 d’essai ou d’abonnement payant.
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine TESTLAB AD DS avec le client Azure AD de votre abonnement Microsoft 365 de manière périodique.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>Phase 2 : Configuration de l’authentification directe pour Azure AD Connect sur APP1
@@ -80,7 +80,7 @@ Durant cette phase, vous allez configurer Azure AD Connect sur APP1 pour qu’
 
 10.    Cliquez sur **Authentification directe**. Le volet **Authentification directe** répertorie les serveurs où vos agents d’authentification sont installés. APP1 devrait figurer dans la liste. Fermez le volet **Authentification directe**.
 
-Ensuite, testez la possibilité de vous inscrire à votre abonnement avec le <strong>user1@testlab.</strong>\<your public domain> nom d’utilisateur du compte utilisateur1.
+Ensuite, testez la possibilité de vous connecter à votre abonnement avec le <strong>user1@testlab.</strong>\<your public domain> nom d’utilisateur du compte utilisateur1.
 
 1. Dans APP1, déconnectez-vous, puis reconnectez-vous avec un compte différent.
 
@@ -90,11 +90,11 @@ Veuillez noter que même si l’utilisateur User1 dispose des autorisations d’
 
 Voici la configuration obtenue :
 
-![Environnement de test de l’entreprise simulée avec authentification directe.](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
+![Entreprise simulée avec environnement de test d’authentification directe.](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
  
 Cette configuration se compose des éléments suivants : 
 
-- Un Microsoft 365 E5 d’essai ou payant avec le domaine DNS testlab.\<your domain name> Inscrit(e).
+- Un Microsoft 365 E5 des abonnements d’évaluation ou payants avec le testlab de domaine DNS.\<your domain name> Inscrit(e).
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Un agent d’authentification s’exécute sur APP1 pour traiter les demandes d’authentification directe provenant du client Azure AD de votre abonnement Microsoft 365.
 
 ## <a name="next-step"></a>Étape suivante

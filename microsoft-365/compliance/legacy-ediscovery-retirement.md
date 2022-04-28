@@ -2,8 +2,8 @@
 title: Suppression des outils eDiscovery hérités
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: In-Place eDiscovery et In-Place Hold (et les applets de commande PowerShell correspondantes) dans Exchange Online seront mises hors service au cours du premier semestre 2020. L’applet de commande Search-Mailbox et Microsoft Purview eDiscovery (Premium) v1.0 sont également mis hors service au cours de la même période.
-ms.openlocfilehash: 19809b96574bf8d703264e0bedaada10f177ef31
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 367b020a5804ac120f226962ea48a49b73dd70e6
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999190"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094479"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retrait des outils eDiscovery hérités
 
@@ -225,7 +225,7 @@ Le tableau suivant décrit d’autres outils que vous pouvez utiliser pour rempl
 </tr>
 <tr class="odd">
 <td>Copier les résultats de la recherche dans une boîte aux lettres de découverte</td>
-<td>Aucun</td>
+<td>Aucune</td>
 <td>Il n’existe aucun remplacement direct de cette fonctionnalité, car elle ne fournit pas l’accès à tous les services Microsoft 365. Consultez la FAQ suivante ci-dessous pour obtenir d’autres solutions.</td>
 </tr>
   <tr class=even>

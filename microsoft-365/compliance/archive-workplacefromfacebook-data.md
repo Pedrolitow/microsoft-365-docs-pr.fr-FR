@@ -2,8 +2,8 @@
 title: Configurer un connecteur pour archiver les données Workplace à partir de Facebook dans Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données de Workplace à partir de Facebook, qui sont archivées sur le site Merge1 de Veritas, dans Microsoft 365. La configuration d’un connecteur nécessite que vous travailliez avec Veritas Ce connecteur vous permet d’archiver les données de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 0dbd1bfaeea6a42db03793941b1fea894ee391b5
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 8736da009ec192d2eab7225f09fb54de04b8b966
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001453"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094501"
 ---
 # <a name="set-up-a-connector-to-archive-workplace-from-facebook-data"></a>Configurer un connecteur pour archiver les données Workplace à partir de Facebook
 

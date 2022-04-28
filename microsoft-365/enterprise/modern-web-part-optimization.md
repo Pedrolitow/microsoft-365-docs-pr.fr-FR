@@ -2,7 +2,7 @@
 title: Optimiser les performances des composants WebPart dans les pages de sites modernes SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
@@ -20,13 +20,13 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Découvrez comment utiliser les diagnostics de page pour optimiser les performances des composants Web SharePoint pages de sites modernes en ligne.
-ms.openlocfilehash: 15b15e56a1c490cab86f225c5784d8bb9adcb36e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez comment utiliser les diagnostics de page pour optimiser les performances des composants WebPart dans SharePoint pages de site modernes en ligne.
+ms.openlocfilehash: 543ee889831d08b2b465c077cc391a653fa0b9a9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152669"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093347"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimiser les performances des composants WebPart dans les pages de sites modernes SharePoint Online
 
@@ -52,23 +52,23 @@ Les résultats possibles sont les suivants :
 
 Si le résultat **Les composants WebPart ont un impact sur le temps de chargement de la page** s’affiche dans la section des résultats **Attention requise** ou **Possibilités d’amélioration**, cliquez sur le résultat pour afficher les détails sur les composants WebPart qui chargent lentement. Les mises à jour ultérieures de l’outil Diagnostic de page pour SharePoint peuvent inclure des mises à jour des règles d’analyse. Vérifiez donc que vous disposez toujours de la dernière version de l’outil.
 
-![Résultats de l’outil Diagnostic de page.](../media/modern-portal-optimization/pagediag-web-part.png)
+![Résultats de l’outil Diagnostics de page.](../media/modern-portal-optimization/pagediag-web-part.png)
 
 Les informations disponibles dans les résultats incluent les éléments suivants :
 
-- **L’élément «** Made by » indique si le partie Web Est personnalisé ou Microsoft OOTB.
-- **Le nom et l’ID** indiquent les informations d’identification qui peuvent vous aider à trouver le partie Web Sur la page.
-- **Total** indique la durée totale du chargement, de l’initialisation et du rendu du module par le partie Web. Il s’agit du temps relatif total pris par le partie Web Pour restituer sur la page, du début à la fin.
-- **La charge du** module indique le temps de téléchargement, d’évaluation et de chargement des fichiers JavaScript et CSS des extensions. Il démarre ensuite le processus Init.
-- **La charge différée** indique le temps de chargement différé des composants Web Parts qui ne sont pas visibles dans la section principale de la page. Dans certaines conditions, il y a trop de composants Web Parts à restituer, et ils sont mis en file d’attente pour être restituer afin de réduire le temps de chargement de la page.
-- **Init indique** le temps qu’a pris le partie Web Pour initialiser les données.
+- **Made by** indique si le composant WebPart est personnalisé ou Microsoft OOTB.
+- **Le nom et l’ID** indiquent les informations d’identification qui peuvent vous aider à trouver le composant WebPart sur la page.
+- **Total** indique la durée totale de chargement, d’initialisation et de rendu du composant WebPart. Il s’agit du temps relatif total nécessaire au rendu du composant WebPart sur la page, du début à la fin.
+- **La charge du module** indique le temps nécessaire pour télécharger, évaluer et charger les fichiers JavaScript et CSS des extensions. Il démarre ensuite le processus Init.
+- **La charge différée** indique l’heure de chargement différé des composants WebPart non vus dans la section principale de la page. Il existe certaines conditions où il y a trop de composants WebPart à afficher, et ils sont mis en file d’attente pour le rendu afin de réduire le temps de chargement de la page.
+- **Init** indique le temps nécessaire au composant WebPart pour initialiser les données.
 
-  Il s’agit d’un appel asynchrone et le temps d’init est le calcul du temps pour la fonction onInit lorsque la promesse renvoyée est résolue.
+  Il s’agit d’un appel asynchrone et l’heure d’initialisation est le calcul de l’heure de la fonction onInit lorsque la promesse retournée est résolue.
 
-- **Le** rendu indique le temps de rendu de l’interface utilisateur (interface utilisateur) une fois le chargement du module et Init terminés.
+- **Le rendu** indique le temps nécessaire pour afficher l’interface utilisateur (interface utilisateur) une fois que le chargement du module et Init sont terminés.
 
-  Il est temps d’exécution JavaScript pour monter le DOM dans le document (page).
-  Le rendu des ressources asynchrones, par exemple les images, peut prendre plus de temps.
+  Il s’agit de la durée d’exécution JavaScript pour monter le DOM dans le document (page).
+  Le rendu de ressources asynchrones, par exemple des images, peut prendre plus de temps.
 
 Ces informations sont fournies pour aider les concepteurs et les développeurs à résoudre les problèmes. Ces informations doivent être fournies à votre équipe de conception et de développement.
 
@@ -86,7 +86,7 @@ Il existe trois catégories de causes possibles pour expliquer les faibles perfo
   - Réutilisez les infrastructures telles que _React_ et _Fabric imports_ incluses dans SharePoint Framework (SPFx). Pour obtenir plus d’informations, consultez l’article [Vue d’ensemble de SharePoint Framework](/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Assurez-vous que vous utilisez la version la plus récente de SharePoint Framework et effectuez une mise à niveau vers de nouvelles versions dès qu’elles sont disponibles.
 - Extraction/mise en cache de données
-  - Si le partie Web Part s’appuie sur des appels serveur supplémentaires pour extraire des données à afficher, assurez-vous que ces API serveur sont rapides et/ou implémentent la mise en cache côté client (par exemple, en utilisant _localStorage_ ou _IndexedDB_ pour des ensembles plus volumineux).
+  - Si le composant WebPart s’appuie sur des appels de serveur supplémentaires pour extraire les données à afficher, assurez-vous que ces API de serveur sont rapides et/ou implémentez la mise en cache côté client (par exemple, l’utilisation de _localStorage_ ou _IndexedDB_ pour les jeux plus volumineux).
   - Si plusieurs appels sont nécessaires pour afficher les données critiques, pensez à effectuer un traitement par lots sur le serveur ou à utiliser d’autres méthodes de consolidation des requêtes en un seul appel.
   - De même, si certains éléments de données nécessitent une API plus lente, mais ne sont pas essentiels au rendu initial, découplez-les à un appel séparé exécuté après le rendu des données critiques.
   - Si plusieurs parties utilisent les mêmes données, utilisez une couche de données commune pour éviter les appels en double.
@@ -99,7 +99,7 @@ Il existe trois catégories de causes possibles pour expliquer les faibles perfo
 
 Avant d’apporter des révisions de page pour résoudre les problèmes de performances, notez le temps de chargement des pages dans les résultats de l’analyse. Exécutez à nouveau l’outil après votre révision pour déterminer si le nouveau résultat est inclus dans la norme de référence et vérifier le nouveau temps de chargement des pages pour voir s’il y a eu une amélioration.
 
-![Résultats du temps de chargement de page.](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Résultats du temps de chargement de la page.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >Le temps de chargement des pages peut varier en fonction de nombreux facteurs tels que la charge réseau, l’heure de la journée et d’autres conditions transitoires. Vous devez tester le temps de chargement des pages plusieurs fois avant et après avoir apporté des modifications pour vous aider à faire la moyenne des résultats.

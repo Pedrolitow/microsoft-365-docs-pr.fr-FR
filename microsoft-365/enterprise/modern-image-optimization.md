@@ -2,7 +2,7 @@
 title: Optimiser les images dans les pages de sites modernes SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
@@ -20,13 +20,13 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Découvrez comment utiliser les outils inclus dans SharePoint Online pour optimiser les images dans SharePoint pages de sites modernes en ligne.
-ms.openlocfilehash: 85280dfc903c56c89308c50fa94979fd98b2003c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez comment utiliser les outils inclus dans SharePoint Online pour optimiser les images dans SharePoint pages de site modernes en ligne.
+ms.openlocfilehash: 102555e25e48af19432a26e6e2a0cb17c78044b3
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168505"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093830"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>Optimiser les images dans les pages de sites modernes SharePoint Online
 
@@ -53,7 +53,7 @@ Les résultats possibles sont les suivants :
 
 Si le résultat **Images de grande taille détectées** apparaît dans la section des résultats **Attention requise**, vous pouvez cliquer sur le résultat pour afficher les détails supplémentaires.
 
-![Résultats de l’outil Diagnostic de page.](../media/modern-portal-optimization/pagediag-large-images.png)
+![Résultats de l’outil Diagnostics de page.](../media/modern-portal-optimization/pagediag-large-images.png)
 
 ## <a name="remediate-large-image-issues"></a>Résoudre les problèmes liés aux images de grande taille
 
@@ -61,7 +61,7 @@ Si une page contient des images dont la taille est supérieure à 300 Ko, séle
 
 Avant d’apporter des révisions de page pour résoudre les problèmes de performances, notez le temps de chargement des pages dans les résultats de l’analyse. Exécutez à nouveau l’outil après votre révision pour déterminer si le nouveau résultat est inclus dans la norme de référence et vérifier le nouveau temps de chargement des pages pour voir s’il y a eu une amélioration.
 
-![Résultats du temps de chargement de page.](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Résultats du temps de chargement de la page.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >Le temps de chargement des pages peut varier en fonction de nombreux facteurs tels que la charge réseau, l’heure de la journée et d’autres conditions transitoires. Vous devez tester le temps de chargement des pages plusieurs fois avant et après avoir apporté des modifications pour vous aider à faire la moyenne des résultats.

@@ -1,8 +1,8 @@
 ---
-title: Microsoft 365 migrations client à client
+title: Microsoft 365 migrations de locataire à locataire
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -17,32 +17,32 @@ search.appverid:
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 f1.keywords:
 - NOCSH
-description: Découvrez comment migrer des Microsoft 365 client.
+description: Découvrez comment migrer Microsoft 365 locataires.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 38450433538b667e1d1b54a53a27d21847d5337b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 51a9f518b3cd98330b5749886f31dbe260f578d9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198408"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094833"
 ---
-# <a name="microsoft-365-tenant-to-tenant-migrations"></a>Microsoft 365 migrations client à client
+# <a name="microsoft-365-tenant-to-tenant-migrations"></a>Microsoft 365 migrations de locataire à locataire
 
-Il existe plusieurs approches d’architecture pour les fusions, les acquisitions, les déssinttures et d’autres scénarios qui peuvent vous amener à migrer un client Microsoft 365 existant vers un nouveau client. La plupart des clients travaillent avec Microsoft Consulting Services ou un partenaire Microsoft pour migrer des clients, notamment à l’aide d’outils tiers pour migrer du contenu. 
+Il existe plusieurs approches d’architecture pour les fusions, les acquisitions, les cessions et d’autres scénarios qui peuvent vous amener à migrer un locataire Microsoft 365 existant vers un nouveau locataire. La plupart des clients travaillent avec Microsoft Consulting Services ou un partenaire Microsoft pour migrer des locataires, notamment à l’aide d’outils tiers pour migrer du contenu. 
 
-Utilisez le [modèle d’architecture](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) de migration client à client pour comprendre comment planifier Microsoft 365 migrations client à client et les étapes d’une migration.
+Utilisez le [modèle d’architecture de migration de locataire à locataire](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) pour comprendre comment planifier Microsoft 365 migrations de locataire à locataire et les étapes d’une migration.
 
-[![Modèle de migration client à client.](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) 
+[![Modèle de migration de locataire à locataire.](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) 
 
 Vous téléchargez ce modèle au format [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) et l’imprimez sur du papier de format lettre, légal ou tabloïd (11 x 17).
 
 Ce modèle fournit des conseils et un point de départ pour la planification avec des sections sur :
 
-- Mappage des scénarios d’entreprise aux approches d’architecture
+- Mappage des scénarios métier aux approches d’architecture
 - Considérations relatives à la conception
 
-Ce modèle contient également des exemples détaillés des éléments suivants :
+Ce modèle contient également des exemples détaillés de :
 
 - Un flux de migration d’événements unique
 - Un flux de migration par phases
-- Un flux de déplacement ou de fractionnement de client
+- Déplacement ou fractionnement d’un locataire

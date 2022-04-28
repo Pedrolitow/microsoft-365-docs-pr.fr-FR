@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, obtenez de l’aide pour résoudre les messages d’erreur et les problèmes.
-ms.openlocfilehash: 3da40291742ae85ef897aeceae0def27aca8abe2
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: a150213c2e202c96afeae14843708daa58ab4f92
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023214"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093281"
 ---
 # <a name="troubleshoot-error-messages-and-problems-in-microsoft-365-lighthouse"></a>Résoudre les messages d’erreur et les problèmes dans Microsoft 365 Lighthouse
 
@@ -65,7 +65,7 @@ Cet article décrit les messages d’erreur et les problèmes que vous pouvez re
 |--|--|--|
 | Inactif | Le locataire a été retiré à la demande du MSP et n’est plus géré dans Lighthouse. | Vous devez réactiver le locataire. Dans la page **Locataires** , sélectionnez les trois points (autres actions) en regard du locataire que vous souhaitez réactiver, puis sélectionnez Activer le **locataire**. L’affichage des données client initiales dans Lighthouse peut prendre de 24 à 48 heures. |
 | Non éligible - DAP ou GDAP n’est pas configuré | Vous n’avez pas de privilèges d’administrateur DAP ou GDAP configurés avec le locataire, ce qui est requis par Lighthouse. | Configurez les privilèges d’administrateur DAP ou GDAP dans l’Espace partenaires Microsoft. |
-| Inéligible - La licence requise est manquante | Le locataire ne dispose pas d’une licence requise. Ils ont besoin d’au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3 ou Windows 365 Affaires. | Assurez-vous que le client a au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3 ou Windows 365 Affaires attribuée. |
+| Inéligible - La licence requise est manquante | Le locataire ne dispose pas d’une licence requise. Ils ont besoin d’au moins une licence Microsoft 365 Business Premium ou Microsoft 365 E3. | Assurez-vous que le client a au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3 ou Windows 365 Affaires attribuée. |
 | Non éligible - Nombre d’utilisateurs dépassé | Le locataire a plus de 1 000 utilisateurs sous licence autorisés par Lighthouse. | Vérifiez que le locataire n’a pas plus de 1 000 utilisateurs sous licence. |
 | Non éligible - Échec de la vérification géographique | Vous et votre client ne résidez pas dans la même région géographique, ce qui est requis par Lighthouse. | Vérifiez que le client réside dans votre région géographique. Si ce n’est pas le cas, vous ne pouvez pas gérer le locataire dans Lighthouse. |
 | En cours de traitement | Lighthouse a découvert le locataire, mais est toujours en cours d’intégration. | Autorisez Lighthouse 48 heures à terminer l’intégration du locataire. |
@@ -132,7 +132,7 @@ Pour les clients ayant des relations DAP, l’administrateur partenaire doit vou
 
 Si les données n’apparaissent toujours pas dans les pages conformité des appareils et gestion des menaces après avoir suivi les instructions de résolution, contactez le support technique. Pour plus d’informations, consultez [Obtenir de l’aide et du support pour Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Problèmes connus avec Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (article)\
 [MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)\
