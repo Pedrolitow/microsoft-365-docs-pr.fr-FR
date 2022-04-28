@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
@@ -17,20 +17,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: 'Résumé : créer un réseau virtuel entre différents locaux simulé dans Microsoft Azure en tant qu’environnement de test Microsoft 365.'
-ms.openlocfilehash: 0d0e22b5c9a12f4757a6dff5892ef72a757d2bda
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a3bc5c130ad03d1896abcf98ba9fc26d9ff2f422
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202846"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099166"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Réseau virtuel entre différents locaux simulé dans un environnement de test Microsoft 365
 
-*Ce guide de laboratoire de test peut être utilisé pour les environnements Microsoft 365'entreprise et Office 365 Entreprise test.*
+*Ce guide de laboratoire de test peut être utilisé pour les Microsoft 365 pour les environnements de test d’entreprise et Office 365 Entreprise.*
 
 Cet article vous guide tout au long de la création d’un environnement de cloud hybride simulé avec Microsoft Azure, à l’aide de deux réseaux virtuels Azure. Voici la configuration obtenue. 
   
-![Phase 3 de l’environnement de test de réseau virtuel entre locaux simulé, avec la machine virtuelle DC2 dans le réseau virtuel XPrem.](../media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
+![Phase 3 de l’environnement de test de réseau virtuel interstrés simulé, avec la machine virtuelle DC2 dans le réseau virtuel XPrem.](../media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 Cette configuration simule un environnement de production cloud hybride Azure IaaS et comprend les éléments suivants :
   
@@ -59,12 +59,12 @@ Les trois phases principales pour configurer cet environnement de test sont les 
 > [!NOTE]
 > Cette configuration nécessite un abonnement payant à Azure. 
 
-Vous pouvez utiliser l’environnement résultant pour tester les fonctionnalités de [Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise) entreprise à l’aide de guides de laboratoire de [test](m365-enterprise-test-lab-guides.md) supplémentaires ou par vous-même.
+Vous pouvez utiliser l’environnement résultant pour tester les fonctionnalités de [Microsoft 365 pour l’entreprise](https://www.microsoft.com/microsoft-365/enterprise) avec des [guides de laboratoire de test](m365-enterprise-test-lab-guides.md) supplémentaires ou vous-même.
 
 ![Guides de laboratoire de test pour le cloud Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
+> Accédez à [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf) pour obtenir une carte visuelle de tous les articles de la pile Microsoft 365 for enterprise Test Lab Guide.
 
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>Phase 1 : configurer le réseau virtuel TestLab
 
@@ -129,7 +129,7 @@ Add-AzVirtualNetworkPeering -Name XPrem2TestLab -VirtualNetwork $vnet2 -RemoteVi
 
 Il s’agit de votre configuration actuelle. 
   
-![Phase 2 de l’environnement de test de réseau virtuel entre les locaux simulé, avec le réseau virtuel XPrem et la relation d’homologue de réseau virtuel.](../media/simulated-cross-premises-microsoft-365-enterprise/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
+![Phase 2 de l’environnement de test de réseau virtuel interstrés simulé, avec le réseau virtuel XPrem et la relation de peering de réseaux virtuels.](../media/simulated-cross-premises-microsoft-365-enterprise/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
   
 ## <a name="phase-3-configure-dc2"></a>Phase 3 : Configurer DC2
 
@@ -201,11 +201,11 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
 
 Il s’agit de votre configuration actuelle. 
   
-![Phase 3 de l’environnement de test de réseau virtuel entre locaux simulé, avec la machine virtuelle DC2 dans le réseau virtuel XPrem.](../media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
+![Phase 3 de l’environnement de test de réseau virtuel interstrés simulé, avec la machine virtuelle DC2 dans le réseau virtuel XPrem.](../media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 Votre environnement cloud hybride Azure simulé est prêt pour le test.
   
-Vous êtes maintenant prêt à tester des fonctionnalités supplémentaires de [Microsoft 365 entreprise.](https://www.microsoft.com/microsoft-365/enterprise)
+Vous êtes maintenant prêt à expérimenter d’autres fonctionnalités de [Microsoft 365 pour les entreprises](https://www.microsoft.com/microsoft-365/enterprise).
   
 ## <a name="next-steps"></a>Étapes suivantes
 

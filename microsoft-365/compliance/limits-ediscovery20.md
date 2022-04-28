@@ -2,8 +2,8 @@
 title: Limites eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les limites de cas, les limites d’indexation et les limites de recherche en vigueur pour la solution eDiscovery (Premium) dans Microsoft 365.
-ms.openlocfilehash: 07977b80ba0ce55c6d0e6b179955cfa959eaa5c8
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 3d0204eb452b669937d30fe5519e5af073b64d6d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999759"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099210"
 ---
 # <a name="limits-in-ediscovery-premium"></a>Limites dans eDiscovery (Premium)
 
@@ -72,8 +72,8 @@ Les limites décrites dans cette section sont liées à l’utilisation de l’o
 
 |Description de la limite|Limite|
 |---|---|
-|Nombre maximal de boîtes aux lettres ou de sites pouvant faire l’objet d’une recherche unique.|Sans limite|
-|Nombre maximal de recherches qui peuvent s’exécuter en même temps.|Aucune limite|
+|Nombre maximal de boîtes aux lettres ou de sites pouvant faire l’objet d’une recherche unique.|Aucune limite|
+|Nombre maximal de recherches qui peuvent s’exécuter en même temps.|Sans limite|
 |Nombre maximal de recherches qu’un seul utilisateur peut démarrer en même temps.|10|
 |Nombre maximal de caractères pour une requête de recherche (y compris les opérateurs et les conditions).|10 <sup>0005</sup>|
 |Nombre maximal de caractères pour une requête de recherche pour les sites SharePoint et OneDrive Entreprise (y compris les opérateurs et les conditions).|10 000<br>4 000 avec des caractères <sup>génériques5</sup>|
@@ -123,7 +123,7 @@ Les limites décrites dans cette section sont liées à l’exportation de docum
 |---|---|
 |Taille totale du fichier ou nombre maximal de documents téléchargés à partir d’un ensemble de révisions.|3 Mo ou 50 <sup>documents7</sup>|
 
-## <a name="notes"></a>Notes
+## <a name="notes"></a>Remarques
 
 > [!NOTE]
 > <sup>1</sup> Il s’agit du nombre maximal de balises que vous pouvez créer dans un cas. Cette limite n’est pas liée au nombre de documents qui peuvent être marqués.

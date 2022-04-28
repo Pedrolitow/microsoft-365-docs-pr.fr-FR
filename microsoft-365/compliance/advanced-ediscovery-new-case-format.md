@@ -2,8 +2,8 @@
 title: Nouveau format de cas dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: ninachen
 manager: laurawi
 ms.date: ''
@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez le nouveau format de cas dans eDiscovery (Premium) afin de pouvoir ajouter d’autres éléments pour passer en revue les ensembles et tirer parti d’autres limites accrues et de nouvelles fonctionnalités.
-ms.openlocfilehash: 55a5fdc2493fe046ebb8952fcbcb382750f511a5
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 50713ea585655b441d624a70cf0986245566b8bf
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973418"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098667"
 ---
 # <a name="use-the-new-case-format-in-ediscovery-premium"></a>Utiliser le nouveau format de cas dans eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 De plus en plus d’organisations utilisent la solution eDiscovery (Premium) dans Microsoft Purview pour les processus eDiscovery critiques. Cela comprend la réponse aux demandes réglementaires, aux enquêtes et aux litiges. À mesure que l’utilisation d’eDiscovery (Premium) augmente, une exigence courante du client consiste à développer la quantité totale de contenu pouvant être gérée dans un cas eDiscovery (Premium). Pour faciliter la prise en charge des augmentations significatives de la taille du cas, à la fois pour le volume total de données et le nombre total d’éléments, vous pouvez désormais choisir le nouveau format de cas lorsque vous créez un cas eDiscovery (Premium).  
 

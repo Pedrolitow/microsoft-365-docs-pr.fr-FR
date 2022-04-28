@@ -2,8 +2,8 @@
 title: Configurer un connecteur pour archiver les données Salesforce Chatter dans Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver les données Salesforce Chatter de Veritas vers Microsoft 365. Ce connecteur vous permet d’archiver les données de sources de données tierces dans Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces.
-ms.openlocfilehash: bfaf6de15da6707f9ce5a3ff15c255e8a605af87
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 3bb1ebc10594e0b1f5cff603cdf893a010557343
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994587"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098645"
 ---
 # <a name="set-up-a-connector-to-archive-salesforce-chatter-data"></a>Configurer un connecteur pour archiver les données Salesforce Chatter
 

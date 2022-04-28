@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Définissez les rôles et les autorisations utilisateur du Gestionnaire de conformité Microsoft Purview, et configurez le test automatisé des actions. Gérez l’historique des utilisateurs et filtrez l’affichage de votre tableau de bord.
-ms.openlocfilehash: e691aefdeaf3c2e1c1398bf71b74006aff4d1f6f
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: c7920a9eac06128f3cf9bfb54645a83296ca7e53
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973638"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091024"
 ---
 # <a name="get-started-with-compliance-manager"></a>Prise en main du Gestionnaire de conformité
 
@@ -137,7 +137,7 @@ L’administrateur général de votre organisation peut modifier les paramètres
 
 2. Dans la page paramètres, sélectionnez **Gestionnaire de conformité**.
 
-3. Sélectionnez **Tests automatisés** dans le volet de navigation gauche.
+3. Sélectionnez **Tester la source** dans la navigation de gauche.
 
 4. Sélectionnez le bouton applicable pour activer le test automatique de toutes les actions d’amélioration, le désactiver pour toutes les actions ou activer par action individuelle.
 
@@ -147,7 +147,7 @@ L’administrateur général de votre organisation peut modifier les paramètres
 
 **Note:** Seul l’administrateur général peut activer ou désactiver les mises à jour automatiques pour toutes les actions. L’administrateur du Gestionnaire de conformité peut activer les mises à jour automatiques pour des actions individuelles, mais pas pour toutes les actions globalement.
 
-**Si vous souhaitez en savoir plus**
+**En savoir plus**
 - [En savoir plus sur la façon dont la supervision continue contribue à votre score de conformité](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
 - [En savoir plus sur la désignation d’une source de test pour une action d’amélioration](compliance-manager-improvement-actions.md#update-testing-source).
 

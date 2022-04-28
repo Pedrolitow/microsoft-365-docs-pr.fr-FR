@@ -15,18 +15,20 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 04/11/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: cc2032c547cbd9c75a73da2f47f7baed21e7438e
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 6822f736cae73d7d4654f8b4310e0e397cffa677
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64835928"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077474"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises à jour de Antivirus Microsoft Defender et appliquer des lignes de base
+
+> [!IMPORTANT]
+> Les clients qui ont appliqué la mise à jour du moteur Microsoft Defender de mars 2022 (**1.1.19100.5**) ont peut-être rencontré une utilisation élevée des ressources (processeur et/ou mémoire). Microsoft a publié une mise à jour (**1.1.19200.5**) qui résout les bogues introduits dans la version antérieure. Il est recommandé aux clients de mettre à jour cette nouvelle version du moteur antivirus (**1.1.19200.5**). Pour vous assurer que les problèmes de performances sont entièrement résolus, il est recommandé de redémarrer les ordinateurs après l’application de la mise à jour. Consultez les [Versions mensuelles de la plateforme et du moteur](#monthly-platform-and-engine-versions) (dans cet article).
 
 **S’applique à :**
 - [Plans 1 et 2 de Microsoft Defender pour points de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -37,15 +39,15 @@ ms.locfileid: "64835928"
 
 Il est essentiel de maintenir Antivirus Microsoft Defender à jour pour garantir que vos appareils disposent des dernières technologies et fonctionnalités nécessaires pour se protéger contre les nouveaux programmes malveillants et techniques d’attaque. Veillez à mettre à jour votre protection antivirus, même si Antivirus Microsoft Defender s’exécute en [mode passif](microsoft-defender-antivirus-compatibility.md). Il existe deux types de mises à jour liées à la mise à jour des Antivirus Microsoft Defender :
 
-- Mises à jour de la veille de sécurité
-- Mises à jour de produit
+- [Mises à jour de la veille de sécurité](#security-intelligence-updates)
+- [Mises à jour de produit](#product-updates)
 
 > [!TIP]
 > Pour connaître la date de signature, de plateforme et de moteur la plus récente, consultez les [Mises à jour de la veille de sécurité pour Antivirus Microsoft Defender et d’autres](https://www.microsoft.com/en-us/wdsi/defenderupdates)
 
 ## <a name="security-intelligence-updates"></a>Mises à jour de la veille de sécurité
 
-Antivirus Microsoft Defender utilise [la protection fournie par le cloud](cloud-protection-microsoft-defender-antivirus.md) (également appelé Microsoft Advanced Protection Service ou MAPS) et télécharge régulièrement des mises à jour de la veille de sécurité dynamiques pour fournir une protection supplémentaire. Ces mises à jour dynamiques ne remplacent pas les mises à jour régulières de veille de sécurité via la mise à jour du de la veille de sécurité KB2267602.
+Antivirus Microsoft Defender utilise [la protection fournie par le cloud](cloud-protection-microsoft-defender-antivirus.md) (également appelé Microsoft Advanced Protection Service ou MAPS) et télécharge régulièrement des mises à jour de la veille de sécurité dynamiques pour fournir une protection supplémentaire. Ces mises à jour dynamiques ne remplacent pas les mises à jour régulières du renseignement de sécurité via la mise à jour du renseignement de sécurité KB2267602.
 
 > [!NOTE]
 > Les mises à jour sont publiées sous les bases de connaissances suivantes :
@@ -88,6 +90,29 @@ Toutes nos mises à jour contiennent
 - Améliorations de l’intégration (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>Mars 2022 *MISE À JOUR* (Plateforme : 4.18.2203.5 | Moteur : 1.1.19200.5)</summary>
+
+Les *Clients qui ont appliqué la mise à jour du moteur Microsoft Defender de mars 2022 (**1.1.19100.5**) ont peut-être rencontré une utilisation élevée des ressources (processeur et/ou mémoire). Microsoft a publié une mise à jour (**1.1.19200.5**) qui résout les bogues introduits dans la version antérieure. Il est recommandé aux clients de mettre à jour vers cette nouvelle version de moteur du moteur antivirus (**1.1.19200.5**). Pour vous assurer que les problèmes de performances sont entièrement résolus, il est recommandé de redémarrer les ordinateurs après l’application de la mise à jour.*
+
+&ensp;Version de mise à jour de la veille de sécurité : **1.363.817.0**<br/>
+&ensp;Publiée : **22 avril 2022**<br/>
+&ensp;Plateforme : **4.18.2203.5**<br/>
+&ensp;Moteur : **1.1.19200.5**<br/>
+&ensp;Phase de support : **Mises à jour critiques et relatives à la sécurité**<br/>
+
+Version du moteur : 1.1.19200.5 <br/>
+Version de mise à jour de la veille de sécurité : 1.363.817.0<br/>
+
+### <a name="whats-new"></a>Nouveautés
+
+- Résolution des problèmes d’utilisation élevée des ressources (processeur et/ou mémoire) liés à la mise à jour antérieure du moteur Microsoft Defender de mars 2022 (1.1.19100.5)
+
+### <a name="known-issues"></a>Problèmes connus
+
+Aucun problème connu
+
+<br/><br/>
+</details><details>
 <summary>Mars 2022 (Plateforme : 4.18.2203.5 | Moteur : 1.1.19100.5)</summary>
 
 &ensp;version de mise à jour de la veille de sécurité : **1.361.1449.0**<br/>
@@ -661,7 +686,7 @@ Une fois cette mise à jour installée, l’appareil a besoin du package de saut
 
 Les mises à jour de plateforme et de moteur sont fournies à une cadence mensuelle. Pour être entièrement pris en charge, restez à jour avec les dernières mises à jour de plateforme. Notre structure de prise en charge est dynamique et évolue en deux phases en fonction de la disponibilité de la dernière version de la plateforme :
 
-- **phase de maintenance des mises à jour critiques et relatives à la sécurité** : lors de l’exécution de la dernière version de la plateforme, vous pouvez recevoir des mises à jour de sécurité et critiques pour la plateforme anti-programme malveillant.
+- **Phase de maintenance des mises à jour critiques et de sécurité** : lors de l’exécution de la dernière version de la plateforme, vous pouvez recevoir des mises à jour de sécurité et critiques pour la plateforme anti-programme malveillant.
 
 - **Phase de support technique (uniquement)** : une fois qu’une nouvelle version de plateforme est publiée, la prise en charge des versions antérieures (N-2) se réduit au support technique uniquement. Les versions de plateforme antérieures à N-2 ne seront plus prises en charge.*
 

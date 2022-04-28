@@ -2,8 +2,8 @@
 title: Ajouter des sources de données non liées à la garde à un cas eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez ajouter des sources de données non liées à la garde à un cas eDiscovery (Premium) et placer une conservation sur la source de données. Les sources de données non liées à la garde sont réindexées. Par conséquent, tout contenu marqué comme partiellement indexé est retraité pour le rendre entièrement et rapidement consultable.
-ms.openlocfilehash: 2f5825f514dfc8f99fc7a6006d1fd30028515c7b
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 86011a0f19dcb8f46041f4c0aa7c91d89e4e2198
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64991883"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097973"
 ---
 # <a name="add-non-custodial-data-sources-to-an-ediscovery-premium-case"></a>Ajouter des sources de données non liées à la garde à un cas eDiscovery (Premium)
 

@@ -2,8 +2,8 @@
 title: Audit de Microsoft Purview (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,17 +18,17 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Audit de Microsoft Purview (Premium) fournit de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et d’investigation.
-ms.openlocfilehash: 4f936977c71a933dd05e5c0b2e0d2111b03bc8f7
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 07a441557cacdbb92e9442370210b88d898ccd3b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999495"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098991"
 ---
 # <a name="microsoft-purview-audit-premium"></a>Audit de Microsoft Purview (Premium)
 
 > [!TIP]
-> *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview pendant 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins en matière de conformité. Les clients Microsoft 365 E3 et Office 365 E3 peuvent commencer maintenant sur le [Hub des versions d’évaluation du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions de la version d’évaluation](compliance-easy-trials.md).
+> *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview de 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins de conformité. Microsoft 365 E3 et Office 365 E3 clients peuvent être démarrés maintenant sur le [Hub d’essais du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions de la version d’évaluation](compliance-easy-trials.md).
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 

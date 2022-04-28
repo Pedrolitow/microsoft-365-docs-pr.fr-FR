@@ -2,7 +2,7 @@
 title: Comment vérifier l’intégrité du service Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,18 +26,18 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Afficher l’état d’intégrité des services Microsoft 365 avant de contacter le support technique pour vérifier qu’aucune interruption de service n’est en cours.
-ms.openlocfilehash: 4a72132872c890f755cb537e06c42412aa17fb9f
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: 3155d9a26fd2b34eb4f5bc820e906d35f1f7fdff
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468773"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090206"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Comment vérifier l’intégrité du service Microsoft 365
 
 [![Étiquette vous informant le centre d’administration est en train de changer et vous pouvez trouver plus de détails à ce sujet à l’adresse aka.ms/aboutM365preview.](../media/O365-Admin-AdminCenterChanging.png)](/office365/admin/microsoft-365-admin-center-preview?preserve-view=true&view=o365-worldwide)
 
-Vous pouvez afficher l’intégrité de vos services Microsoft, notamment Office sur le web, Yammer, Microsoft Dynamics CRM et les services cloud de gestion des appareils mobiles, sur la page **intégrité du service** dans le [Centre d’administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting.
+Vous pouvez afficher l’état d’intégrité de vos services Microsoft, notamment Office sur le web, Yammer, Microsoft Dynamics CRM et les services cloud de gestion des appareils mobiles sur la page **État du service** du [Centre d’administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). Si vous rencontrez des problèmes liés à un service cloud, vous pouvez vérifier l’état de ce service afin de déterminer s’il s’agit d’un problème connu pour lequel une résolution est en cours avant de contacter le support technique ou de tenter d’y remédier.
 
 Si vous ne parvenez pas à vous connecter au Centre d’administration, vous pouvez utiliser la [page d’état du service ](https://status.office365.com) pour vérifier si des problèmes connus vous empêchent de vous connecter à votre locataire.  Inscrivez-vous également pour nous suivre à [@MSFT365status](https://twitter.com/MSFT365Status) sur Twitter pour afficher des informations sur certains événements.
 
@@ -46,9 +46,9 @@ Si vous ne parvenez pas à vous connecter au Centre d’administration, vous pou
 1. Accédez au Centre d’administration Microsoft 365 sur [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339)et connectez-vous avec un compte d’administrateur.
 
     > [!NOTE]
-    > Les personnes qui se voient attribuer le rôle d’administrateur général ou d’administrateur du support technique peuvent afficher l’intégrité du service. Pour afficher l’état du service, les administrateurs Exchange, SharePoint et Skype Entreprise doivent aussi disposer d’un rôle d’administrateur portant sur ce service. Pour plus d’informations sur les rôles qui peuvent afficher l’intégrité du service, consultez [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles).
+    > Les personnes auxquelles un rôle d'administrateur général ou d'administrateur de service est affecté peuvent afficher l'état du service. Pour afficher l'état du service, les administrateurs Exchange, SharePoint et Skype Entreprise doivent également disposer d'un rôle d'administrateur portant sur ce service. Pour obtenir plus d’informations sur les rôles qui peuvent voir l’état du service, voir [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles).
 
-2. Pour afficher la santé du service, dans la navigation de gauche du centre d'administration, allez à **Santé** > **Santé du service**, ou sélectionnez la carte **Santé du service** sur le **tableau de bord d'accueil**. La carte du tableau de bord indique s'il existe un problème lié au service actif et mène à la page détaillée d'**état du service**.
+2. Pour afficher l'état du service, dans la navigation gauche du Centre d'administration, accédez à **État** > **État du service** ou cliquez sur la carte **État du service** dans le **Tableau de bord d'accueil**. La carte du tableau de bord indique s'il existe un problème lié au service actif et fournit un lien vers la page détaillée **État du service**.
 
 3. Dans la page d’**intégrité du service**, l’état d’intégrité de chaque service cloud est affiché dans un format de tableau.
 
@@ -110,7 +110,7 @@ Nous utilisons la traduction automatique pour afficher automatiquement les messa
 En règle générale, les services apparaissent comme intègres, sans autres informations. Lorsqu'un service présente un problème, ce problème est identifié sous forme d'avis ou d'incident et son état actuel s'affiche.
 
 > [!TIP]
-> Les événements de maintenance planifiée ne s'affichent pas dans l'état du service. Le **Centre de messages** vous permet de suivre les événements de maintenance planifiée. Filtrez les messages par Planification des modifications pour connaître le moment où une modification interviendra, son effet et comment vous y préparer. Pour plus d’informations, consultez [Centre de messages dans Microsoft 365](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093) .
+> Les événements de maintenance planifiée ne s'affichent pas dans l'état du service. Le **Centre de messages** vous permet de rester à jour et de suivre les événements de maintenance planifiée. Filtrez les messages par Planification des modifications pour connaître le moment où une modification interviendra, son effet et comment vous y préparer. Pour plus d'informations, voir [Centre de messages dans Microsoft 365](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093).
 
 ### <a name="incidents-and-advisories"></a>Incidents et avis
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1709597d10b140124501fd0dc7349e8fc4342bb6
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: 14ec731eebe21f6b399e03d445fef248b8675026
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841753"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098755"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer des serveurs Windows au service Microsoft Defender pour point de terminaison
 
@@ -148,7 +148,7 @@ Pour plus d’informations, consultez [Intégration à Microsoft Defender pour l
 
 ## <a name="windows-server-2012-r2-and-windows-server-2016"></a>Windows Server 2012 R2 et Windows Server 2016
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Conditions préalables
 
 **Prérequis pour Windows Server 2012 R2**
 
@@ -174,6 +174,11 @@ Si vous envisagez d’utiliser une solution de logiciel anti-programme malveilla
 **Package de mise à jour pour Microsoft Defender pour point de terminaison sur Windows Server 2012 R2 et 2016**
 
 Pour recevoir régulièrement des améliorations et des correctifs pour le composant capteur PEPT, assurez-vous que Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) est appliqué ou approuvé. En outre, pour conserver les composants de protection mis à jour, consultez [Gérer les mises à jour Antivirus Microsoft Defender et appliquer des lignes de base](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
+
+
+Si vous utilisez Windows Server Update Services (WSUS) et/ou Microsoft Endpoint Configuration Manager, cette nouvelle « mise à jour Microsoft Defender pour point de terminaison pour PEPT  Sensor » est disponible sous la catégorie « Microsoft Defender pour point de terminaison ».
+
+
 
 ### <a name="onboarding-steps-summary"></a>Résumé des étapes d’intégration
 
@@ -370,7 +375,7 @@ Après l’intégration de l’appareil, vous pouvez choisir d’exécuter un te
 
 Suivez les étapes décrites dans [Exécuter un test de détection sur un appareil nouvellement intégré](run-detection-test.md) pour vérifier que le serveur fait rapport à Defender pour le service point de terminaison.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Une fois les appareils intégrés au service, vous devez configurer les composants individuels de Microsoft Defender pour point de terminaison. Suivez [l’ordre d’adoption](prepare-deployment.md#adoption-order) pour être guidé sur l’activation des différents composants.
 

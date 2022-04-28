@@ -2,8 +2,8 @@
 title: Configurer un connecteur pour archiver Cisco Jabber sur les données Oracle dans Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur dans le portail de conformité Microsoft Purview pour importer et archiver des données de Cisco Jabber sur Oracle vers Microsoft 365.
-ms.openlocfilehash: 33714412db56066b25a1bda03fb4a92c6c64f917
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: b006f30300c6f2af8e5da6386997a4259c2dc98c
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992653"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090580"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-oracle-data"></a>Configurer un connecteur pour archiver Cisco Jabber sur les données Oracle
 

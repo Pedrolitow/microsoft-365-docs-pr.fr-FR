@@ -2,7 +2,7 @@
 title: Emplacements des données Microsoft 365
 ms.author: deanw
 author: dmwmsft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans le monde
-ms.openlocfilehash: 76e1c0c4ed9a4a8b9c0971d58f26fd07d3d28ce9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 19741da49baf6890fbc0a7570190df1676990e9e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947008"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090792"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Emplacement de stockage des données client de Microsoft 365
 

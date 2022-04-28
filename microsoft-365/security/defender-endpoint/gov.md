@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 32baee17e01aa4223124e21b7d20c219c0dc4b7f
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: 51f9c373a68e34ffafa5c3763b8efe77fa2c6146
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841858"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098733"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis
 
@@ -78,7 +78,7 @@ Voici les URL du portail Microsoft Defender pour point de terminaison pour les c
 |---|---|
 |GCC|<https://security.microsoft.com>|
 |GCC High|<https://security.microsoft.us>|
-|DoD|<https://security.microsoft.us>|
+|DoD|<https://security.apps.mil>|
 |
 > [!NOTE]
 > Si vous êtes un client Cloud de la communauté du secteur public et que vous êtes en train de passer de Microsoft Defender pour point de terminaison commercial à Cloud de la communauté du secteur public, utilisez-le https://transition.security.microsoft.com pour accéder à votre Microsoft Defender pour point de terminaison données commerciales.
@@ -142,7 +142,7 @@ Version du système d'exploitation|GCC|GCC High|DoD
 Windows Server 2022|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2019|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2016|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows Server 2012 R2|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows Server 2012 R2|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 |
 
@@ -191,10 +191,10 @@ Voici les lacunes connues :
 
 |Nom de la fonctionnalité|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|Évaluations réseau|![Non](images/svg/check-no.svg) En développement|![Non](images/svg/check-no.svg) En développement|![Non](images/svg/check-no.svg) En développement|
+|Évaluations réseau|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
 |Découverte du réseau|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
-|Rapports : Contrôle d’appareil, intégrité de l’appareil, Pare-feu|![Non](images/svg/check-no.svg) En développement|![Non](images/svg/check-no.svg) En développement|![Non](images/svg/check-no.svg) En développement|
-|Filtrage du contenu web|![Non](images/svg/check-no.svg) En développement|![Non](images/svg/check-no.svg) En développement|![Non](images/svg/check-no.svg) En développement|
+|Rapports : Contrôle d’appareil, intégrité de l’appareil, Pare-feu|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
+|Filtrage du contenu web|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
   
 
 Voici les fonctionnalités et les lacunes connues pour [Mobile Threat Defense (Microsoft Defender pour point de terminaison sur Android & iOS)](mtd.md) :
@@ -206,11 +206,11 @@ Voici les fonctionnalités et les lacunes connues pour [Mobile Threat Defense (M
 |Nom de la fonctionnalité|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
 |Protection web (indicateurs personnalisés et anti-hameçonnage)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
-|Protection contre les programmes malveillants (Android uniquement)|![Non](images/svg/check-no.svg) En développement|![Non](images/svg/check-no.svg) En développement|![Non](images/svg/check-no.svg) En développement|
+|Protection contre les programmes malveillants (Android uniquement)|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
 |Détection de jailbreak (iOS uniquement)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
 |Accès conditionnel/lancement conditionnel|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
 |Prise en charge de la gestion des applications mobiles|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
 |Contrôles de confidentialité|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
-|Gestion des menaces et des vulnérabilités (TVM)|![Non](images/svg/check-no.svg) En développement|![Non](images/svg/check-no.svg) En développement|![Non](images/svg/check-no.svg) En développement|
+|Gestion des menaces et des vulnérabilités (TVM)|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
   
 

@@ -19,13 +19,13 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid: MET150
 description: Découvrez comment examiner et approuver ou refuser des demandes de licence d’utilisateurs pour votre abonnement Microsoft 365 entreprise.
-ms.date: 06/07/2021
-ms.openlocfilehash: cc1d03717cbdf0ce8768c630044990363feded8a
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.date: 04/22/2022
+ms.openlocfilehash: 802b84445c83c2831e5fd88598cc00fb8b0ab867
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841791"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098689"
 ---
 # <a name="manage-license-requests"></a>Gérer les demandes de licence
 
@@ -77,7 +77,7 @@ Lorsque vous revenez à la liste **des demandes** , vous voyez le message **Que 
 9. Fermez le volet droit.
     Les utilisateurs reçoivent un e-mail indiquant que leur demande a été approuvée ou refusée.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Déplacer des utilisateurs vers un autre abonnement](../subscriptions/move-users-different-subscription.md) (article)\

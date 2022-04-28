@@ -2,8 +2,8 @@
 title: Utiliser un script pour ajouter des utilisateurs à une conservation dans un cas eDiscovery (Standard)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
 description: Découvrez comment exécuter un script pour ajouter des boîtes aux lettres & OneDrive Entreprise sites à une nouvelle conservation associée à un cas eDiscovery dans le portail de conformité Microsoft Purview.
-ms.openlocfilehash: 70ec2481e8fa352be47544cd2fe6a772c2fbb325
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: c652cd7d553faa5a7f85c59127e4aa2acfd7df4b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000881"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097907"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-ediscovery-standard-case"></a>Utiliser un script pour ajouter des utilisateurs à une conservation dans un cas eDiscovery (Standard)
 
@@ -109,7 +109,7 @@ Lorsque vous exécutez le script dans cette étape, il vous invite à fournir le
 
 Une fois que vous avez collecté les informations que le script vous invitera, la dernière étape consiste à exécuter le script pour créer la nouvelle conservation et y ajouter des utilisateurs.
   
-1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier .`.ps1` Par exemple : `AddUsersToHold.ps1`.
+1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier .`.ps1` Par exemple, `AddUsersToHold.ps1`.
 
 ```powershell
 #script begin

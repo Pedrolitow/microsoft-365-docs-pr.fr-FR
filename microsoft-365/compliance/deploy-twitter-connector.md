@@ -2,8 +2,8 @@
 title: Déployer un connecteur pour archiver les données Twitter
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur natif pour importer et archiver des données Twitter dans Microsoft 365. Une fois ces données importées dans Microsoft 365, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données Twitter de votre organisation.
-ms.openlocfilehash: 6bf801d7c3443385ee0a2656753dcf069ac6aebc
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: a928e24c73fcbb290bde2caa0f508610fc18728d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997139"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090958"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>Déployer un connecteur pour archiver les données Twitter
 

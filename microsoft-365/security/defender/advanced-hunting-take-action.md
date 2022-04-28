@@ -1,7 +1,7 @@
 ---
-title: Prendre des mesures sur les résultats de requête de recherche avancée dans Microsoft 365 Defender
-description: Traiter rapidement les menaces et les ressources affectées dans vos résultats de requête de recherche avancée
-keywords: recherche avancée, recherche de menace, recherche de cybermenace, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, prendre des mesures
+title: Prendre des mesures sur les résultats de la requête de chasse avancée dans Microsoft 365 Defender
+description: Résoudre rapidement les menaces et les ressources affectées dans vos résultats de requête de repérage avancés
+keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, prendre des mesures
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,72 +20,91 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: eb881611ad4b983eb80d028dfe3dee20c3ed6216
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: b7fbe659902bf89023e994f4e1304f25f3934db8
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754670"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097590"
 ---
-# <a name="take-action-on-advanced-hunting-query-results"></a>Prendre des mesures sur les résultats de requête de recherche avancée
+# <a name="take-action-on-advanced-hunting-query-results"></a>Prendre des mesures sur les résultats de la requête de chasse avancée
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Vous pouvez rapidement contenir des menaces ou traiter les ressources compromises que [](advanced-hunting-overview.md) vous trouvez dans le recherche avancée à l’aide d’options d’action puissantes et complètes. Avec ces options, vous pouvez :
+Vous pouvez rapidement contenir des menaces ou traiter les ressources compromises que vous trouvez dans la [chasse avancée](advanced-hunting-overview.md) à l’aide d’options d’action puissantes et complètes. Avec ces options, vous pouvez :
 
-- Prendre différentes mesures sur les appareils
-- Fichiers de mise en quarantaine
+- Effectuer différentes actions sur les appareils
+- Fichiers de quarantaine
 
 ## <a name="required-permissions"></a>Autorisations requises
-Pour prendre des mesures par le biais d’une recherche avancée, vous avez besoin d’un rôle dans Microsoft Defender pour le point de terminaison avec des autorisations pour soumettre des [actions de correction sur les appareils](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). Si vous ne pouvez pas agir, contactez un administrateur général pour obtenir l’autorisation suivante :
+Pour prendre des mesures sur les appareils par le biais de la chasse avancée, vous avez besoin d’un rôle dans Microsoft Defender pour point de terminaison avec [les autorisations nécessaires pour envoyer des actions de correction sur les appareils](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). Si vous ne pouvez pas prendre d’action, contactez un administrateur général pour obtenir l’autorisation suivante :
 
-*Actions de correction actives > menaces et gestion des vulnérabilités - Gestion des corrections*
+*Actions de correction actives > Menace et gestion des vulnérabilités - Gestion des corrections*
 
-## <a name="take-various-actions-on-devices"></a>Prendre différentes mesures sur les appareils
-Vous pouvez prendre les mesures suivantes sur les appareils identifiés par la `DeviceId` colonne dans les résultats de la requête :
+Pour prendre des mesures sur les e-mails par le biais d’une chasse avancée, vous avez besoin d’un rôle dans Microsoft Defender pour Office 365 pour [rechercher et vider les e-mails](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
-- Isoler les appareils affectés pour contenir une infection ou empêcher les attaques de se déplacer ultérieurement
+## <a name="take-various-actions-on-devices"></a>Effectuer différentes actions sur les appareils
+Vous pouvez effectuer les actions suivantes sur les appareils identifiés par la `DeviceId` colonne dans les résultats de votre requête :
+
+- Isoler les appareils affectés pour contenir une infection ou empêcher les attaques de se déplacer latéralement
 - Collecter un package d’enquête pour obtenir plus d’informations d’investigation
-- Exécuter une analyse antivirus pour rechercher et supprimer les menaces à l’aide des dernières mises à jour de l’intelligence de la sécurité
-- Lancer un examen automatisé pour vérifier et corriger les menaces sur l’appareil et éventuellement sur d’autres appareils concernés
-- Restreindre l’exécution de l’application uniquement aux fichiers exécutables signés par Microsoft, ce qui empêche toute activité de menace ultérieure par le biais de programmes malveillants ou d’autres fichiers exécutables non signés
+- Exécuter une analyse antivirus pour rechercher et supprimer les menaces à l’aide des dernières mises à jour du renseignement de sécurité
+- Lancer une enquête automatisée pour vérifier et corriger les menaces sur l’appareil et éventuellement sur d’autres appareils affectés
+- Restreindre l’exécution de l’application aux seuls fichiers exécutables signés par Microsoft, ce qui empêche toute activité de menace ultérieure par le biais de programmes malveillants ou d’autres exécutables non approuvés
 
-Pour en savoir plus sur la façon dont ces actions de réponse sont effectuées via Microsoft Defender pour le point de terminaison, consultez les [actions de réponse sur les appareils](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).
+Pour en savoir plus sur la façon dont ces actions de réponse sont effectuées via Microsoft Defender pour point de terminaison, [consultez les actions de réponse sur les appareils](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).
    
-## <a name="quarantine-files"></a>Fichiers de mise en quarantaine
-Vous pouvez déployer l’action *de* mise en quarantaine sur les fichiers afin qu’ils soient automatiquement mis en quarantaine lorsqu’ils sont rencontrés. Lorsque vous sélectionnez cette action, vous pouvez choisir entre les colonnes suivantes pour identifier les fichiers de votre requête qui sont mis en quarantaine :
+### <a name="quarantine-files"></a>Fichiers de quarantaine
+Vous pouvez déployer l’action de *mise en quarantaine* sur les fichiers afin qu’ils soient automatiquement mis en quarantaine lorsqu’ils sont rencontrés. Lorsque vous sélectionnez cette action, vous pouvez choisir entre les colonnes suivantes pour identifier les fichiers de vos résultats de requête à mettre en quarantaine :
 
-- `SHA1`: Dans la plupart des tables de chasse avancées, cette colonne fait référence au SHA-1 du fichier affecté par l’action enregistrée. Par exemple, si un fichier a été copié, ce fichier affecté sera le fichier copié.
-- `InitiatingProcessSHA1`: Dans la plupart des tables de recherche avancées, cette colonne fait référence au fichier responsable de l’initiative de l’action enregistrée. Par exemple, si un processus enfant a été lancé, ce fichier d’initiateur fait partie du processus parent. 
-- `SHA256`: Cette colonne est l’équivalent SHA-256 du fichier identifié par la `SHA1` colonne.
-- `InitiatingProcessSHA256`: Cette colonne est l’équivalent SHA-256 du fichier identifié par la `InitiatingProcessSHA1` colonne.
+- `SHA1`: Dans la plupart des tables de chasse avancées, cette colonne fait référence au SHA-1 du fichier affecté par l’action enregistrée. Par exemple, si un fichier a été copié, il s’agit du fichier copié.
+- `InitiatingProcessSHA1`: Dans la plupart des tables de chasse avancées, cette colonne fait référence au fichier responsable du lancement de l’action enregistrée. Par exemple, si un processus enfant était lancé, ce fichier initiateur ferait partie du processus parent. 
+- `SHA256`: cette colonne est l’équivalent SHA-256 du fichier identifié par la `SHA1` colonne.
+- `InitiatingProcessSHA256`: cette colonne est l’équivalent SHA-256 du fichier identifié par la `InitiatingProcessSHA1` colonne.
 
-Pour en savoir plus sur la façon dont les actions de mise en quarantaine sont prises et comment les fichiers peuvent être restaurés, consultez les [actions de réponse sur les fichiers](/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts).
+Pour en savoir plus sur la façon dont les actions de quarantaine sont effectuées et sur la façon dont les fichiers peuvent être restaurés, [consultez les actions de réponse sur les fichiers](/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts).
 
 >[!NOTE]
->Pour localiser des fichiers et les mettre en quarantaine, les résultats de la requête doivent également inclure des `DeviceId` valeurs en tant qu’identificateurs d’appareil.  
+>Pour localiser les fichiers et les mettre en quarantaine, les résultats de la requête doivent également inclure `DeviceId` des valeurs en tant qu’identificateurs d’appareil.  
 
-## <a name="take-action"></a>Prendre action
-Pour prendre l’une des actions décrites, sélectionnez un ou plusieurs enregistrements dans les résultats de votre requête, puis **sélectionnez Actions**. Un Assistant vous guide tout au long du processus de sélection, puis d’envoi de vos actions préférées.
+Pour effectuer l’une des actions décrites, sélectionnez un ou plusieurs enregistrements dans les résultats de votre requête, puis **sélectionnez Effectuer des actions**. Un Assistant vous guide tout au long du processus de sélection, puis d’envoi de vos actions préférées.
 
-:::image type="content" source="../../media/take-action-multiple.png" alt-text="Option Prendre des actions dans le portail Microsoft 365 Defender web" lightbox="../../media/take-action-multiple.png":::
+:::image type="content" source="../../media/take-action-multiple.png" alt-text="Option Prendre des mesures dans le portail Microsoft 365 Defender" lightbox="../../media/take-action-multiple.png":::
 
-## <a name="review-actions-taken"></a>Examiner les actions entreprises
-Chaque action est enregistrée individuellement dans le centre [de](m365d-action-center.md) actions sous **Action** **centerHistory** >  ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Go to the action center to check the status of each action.
+
+## <a name="take-various-actions-on-emails"></a>Effectuer différentes actions sur les e-mails
+Outre les étapes de correction axées sur l’appareil, vous pouvez également effectuer certaines actions sur les e-mails provenant des résultats de votre requête. Sélectionnez les enregistrements sur lesquels vous souhaitez effectuer une action, **sélectionnez Effectuer des actions**, puis, sous **Choisir des actions, sélectionnez** votre choix parmi les éléments suivants :
+- `Move to mailbox folder` - Sélectionnez cette option pour déplacer les messages électroniques vers le dossier Courrier indésirable, Boîte de réception ou Éléments supprimés
+
+   :::image type="content" source="../../media/advanced-hunting-take-actions-email.png" alt-text="Option Prendre des mesures dans le portail Microsoft 365 Defender" lightbox="../../media/advanced-hunting-take-actions-email.png":::
+
+- `Delete email` - Sélectionnez cette option pour déplacer les messages électroniques vers le dossier Éléments supprimés (**suppression réversible**) ou les supprimer définitivement (**Suppression** définitive)
+
+   :::image type="content" source="../../media/advanced-hunting-take-actions-email-del.png" alt-text="Option Prendre des mesures dans le portail Microsoft 365 Defender" lightbox="../../media/advanced-hunting-take-actions-email-del.png":::
+
+Vous pouvez également fournir un nom de correction et une brève description de l’action prise pour le suivre facilement dans l’historique du centre d’actions. Vous pouvez également utiliser l’ID d’approbation pour filtrer ces actions dans le centre d’actions. Cet ID est fourni à la fin de l’Assistant :
+
+:::image type="content" source="../../media/choose-email-actions-entities.png" alt-text="Assistant Effectuer des actions montrant les actions de sélection pour les entités" lightbox="../../media/choose-email-actions-entities.png":::
+
+Ces actions de messagerie s’appliquent également aux [détections personnalisées](custom-detections-overview.md) .
+
+
+## <a name="review-actions-taken"></a>Passer en revue les actions effectuées
+Chaque action est enregistrée individuellement dans le [centre d’action](m365d-action-center.md) sous **Action** **centerHistory** >  ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Accédez au centre d’actions pour vérifier l’état de chaque action.
  
 >[!NOTE]
->Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de [Microsoft Defender pour le point de terminaison](advanced-hunting-migrate-from-mde.md).
+>Certaines tables de cet article peuvent ne pas être disponibles dans Microsoft Defender pour point de terminaison. [Activez Microsoft 365 Defender](m365d-enable.md) pour rechercher des menaces à l’aide de sources de données supplémentaires. Vous pouvez déplacer vos flux de travail de chasse avancés de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de migration [des requêtes de chasse avancées à partir de Microsoft Defender pour point de terminaison](advanced-hunting-migrate-from-mde.md).
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
-- [Vue d’ensemble du centre de données](m365d-action-center.md)
+- [Vue d’ensemble du Centre d’actions](m365d-action-center.md)

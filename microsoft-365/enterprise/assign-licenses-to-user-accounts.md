@@ -1,8 +1,8 @@
 ---
-title: Attribuer Microsoft 365 licences d’accès aux comptes d’utilisateurs
+title: Attribuer des licences Microsoft 365 aux comptes d’utilisateur
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
@@ -25,35 +25,35 @@ search.appverid:
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: Décrit comment attribuer des licences Microsoft 365 aux comptes d’utilisateurs, individuellement ou en fonction de l’appartenance à un groupe.
-ms.openlocfilehash: dd941be0d257aa356cf6e69bfdd59a8d1743ed93
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Décrit comment attribuer des licences Microsoft 365 à des comptes d’utilisateur, individuellement ou en fonction de l’appartenance au groupe.
+ms.openlocfilehash: ab9769aa4dee6a9f7982f72f377b0c7e0d3f444e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159461"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091410"
 ---
-# <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Attribuer Microsoft 365 licences d’accès aux comptes d’utilisateurs
+# <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Attribuer des licences Microsoft 365 aux comptes d’utilisateur
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Pour le modèle d’identité cloud uniquement, vous pouvez attribuer des licences Microsoft 365 aux comptes d’utilisateur lors de leur création, en fonction de la façon dont vous les créez.
+Pour le modèle d’identité cloud uniquement, vous pouvez attribuer des licences Microsoft 365 aux comptes d’utilisateur lors de leur création, selon la façon dont vous les créez.
 
-Pour le modèle d’identité hybride, lorsque les comptes d’utilisateur des services de domaine Active Directory (AD DS) sont synchronisés pour la première fois, ils ne se voit pas attribuer automatiquement un emplacement ou une licence Microsoft 365 de domaine. **Vous devez configurer chaque compte d’utilisateur avec un emplacement d’utilisateur avant ou avec l’attribution d’une licence.**
+Pour le modèle d’identité hybride, lorsque les comptes d’utilisateurs services de domaine Active Directory (AD DS) sont synchronisés pour la première fois, ils ne reçoivent pas automatiquement un emplacement ou une licence Microsoft 365. **Vous devez configurer chaque compte d’utilisateur avec un emplacement utilisateur avant ou avec l’attribution d’une licence.**
 
-Dans les deux cas, vous devez attribuer une licence à des comptes d’utilisateurs afin que vos utilisateurs peuvent accéder à des services Microsoft 365, tels que la messagerie et les Microsoft Teams.
+Dans les deux cas, vous devez attribuer une licence à des comptes d’utilisateur afin que vos utilisateurs puissent accéder à Microsoft 365 services, tels que la messagerie électronique et les Microsoft Teams.
 
-Vous pouvez attribuer des licences aux comptes d’utilisateurs individuellement ou automatiquement par le biais de l’appartenance à un groupe.
+Vous pouvez attribuer des licences à des comptes d’utilisateur individuellement ou automatiquement par le biais de l’appartenance à un groupe.
 
-Pour attribuer Microsoft 365 licences à des comptes d’utilisateurs individuels, vous pouvez utiliser :
+Pour affecter Microsoft 365 licences à des comptes d’utilisateur individuels, vous pouvez utiliser :
 
-- [Le Centre d’administration Microsoft 365](../admin/manage/assign-licenses-to-users.md)
+- [Le Centre d'administration Microsoft 365](../admin/manage/assign-licenses-to-users.md)
 - [PowerShell](assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)
 - Centre d’administration Azure AD
 
 ## <a name="group-based-licensing"></a>Gestion des licences en fonction des groupes
 
-Vous pouvez configurer des groupes de sécurité dans Azure AD pour attribuer automatiquement des licences d’un ensemble d’abonnements à tous les membres du groupe. C’est ce que l’on appelle la *gestion des licences basée sur les groupes*. Si un compte d’utilisateur est ajouté au groupe ou supprimé de ce dernier, les licences des abonnements du groupe sont automatiquement attribuées au compte d’utilisateur ou supprimées du compte.
+Vous pouvez configurer des groupes de sécurité dans Azure AD pour attribuer automatiquement des licences à partir d’un ensemble d’abonnements à tous les membres du groupe. C’est ce que l’on appelle la *gestion des licences basée sur les groupes*. Si un compte d’utilisateur est ajouté au groupe ou supprimé de ce dernier, les licences des abonnements du groupe sont automatiquement attribuées au compte d’utilisateur ou supprimées du compte.
 
 Vérifiez que vous disposez de suffisamment de licences pour tous les membres du groupe. Si vous n’avez plus de licences, aucune licence ne sera attribuée aux nouveaux utilisateurs tant que d’autres licences ne seront pas disponibles.
 
@@ -61,13 +61,13 @@ Vérifiez que vous disposez de suffisamment de licences pour tous les membres du
 >Vous ne devez pas configurer la gestion des licences par groupes pour des groupes qui contiennent des comptes B2B Azure.
 >
 
-Pour plus d’informations, voir la gestion des licences basée [sur les groupes dans Azure AD.](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
+Pour plus d’informations, consultez [les licences basées sur des groupes dans Azure AD](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
-Avec l’ensemble approprié de comptes d’utilisateurs qui ont reçu des licences, vous êtes maintenant prêt à :
+Avec l’ensemble approprié de comptes d’utilisateur auxquels des licences ont été attribuées, vous êtes maintenant prêt à :
 
 - [Implémenter la sécurité](../security/office-365-security/security-roadmap.md)
 - [Déployer des logiciels clients, tels que Microsoft 365 Apps](/DeployOffice/deployment-guide-microsoft-365-apps)
 - [Configurer la gestion des appareils](device-management-roadmap-microsoft-365.md)
-- [Configurer les services et les applications](configure-services-and-applications.md)
+- [Configurer des services et des applications](configure-services-and-applications.md)

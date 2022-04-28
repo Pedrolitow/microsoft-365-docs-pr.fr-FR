@@ -2,8 +2,8 @@
 title: Importer des consignats dans un cas eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez l’outil d’importation en bloc pour ajouter rapidement plusieurs consignatateurs et leurs sources de données associées à un cas dans Microsoft Purview eDiscovery (Premium).
-ms.openlocfilehash: a6ad413c65b3b8afaa0cbf10df1a595730914405
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: a9274ebd01a034af82eec510b4e16534150e2216
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994517"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097797"
 ---
 # <a name="import-custodians-to-an-ediscovery-premium-case"></a>Importer des consignats dans un cas eDiscovery (Premium)
 

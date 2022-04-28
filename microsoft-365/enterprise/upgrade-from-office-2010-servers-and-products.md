@@ -2,7 +2,7 @@
 title: Ressources facilitant la mise à jour de vos clients et serveurs Office 2010
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -21,36 +21,36 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Commencez à planifier votre mise à niveau à partir Office 2010 et des applications clientes, car la prise en charge se termine bientôt et les contrats de support personnalisés ne sont pas disponibles.
+description: Commencez à planifier votre mise à niveau à partir de Office serveurs et applications clientes 2010, car le support se termine bientôt et les contrats de support personnalisés ne sont pas disponibles.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2211df824335e0c9172f21e8ac02c45b72e19c51
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9a27787a3b00f9a77e563c65a9d5bf68ce188b35
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209548"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099100"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressources facilitant la mise à jour de vos clients et serveurs Office 2010
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Office 2010 et Exchange 2010 ont atteint leur fin de support le **13 octobre 2020**.
+Office 2010 et Exchange 2010 ont atteint leur fin de soutien le **13 octobre 2020**.
 
 La prise en charge de SharePoint 2010 et de Project Server 2010 se termine le **avril 13, 2021**.
 
 Lorsque vous planifiez votre mise à niveau, envisagez de passer à Microsoft 365.
 
-- Microsoft 365 offre des services cloud pour les produits serveur Office 2010, tels que Exchange Server et SharePoint Server, et des services, tels que Teams et OneDrive Entreprise.
+- Microsoft 365 dispose de services cloud pour les produits serveur Office 2010, tels que Exchange Server et SharePoint Server, et de services, tels que Teams et OneDrive Entreprise.
 
-- Applications Microsoft 365 pour les grandes entreprises (précédemment nommé *Office 365 ProPlus*), qui est inclus avec Microsoft 365 E3 et E5, est l’ensemble des applications clientes Office que vous installez sur votre appareil local. Ils sont mis à jour avec de nouvelles fonctionnalités de productivité et de sécurité régulièrement à partir du cloud Microsoft.
+- Applications Microsoft 365 pour les grandes entreprises (précédemment nommé *Office 365 ProPlus*), qui est inclus dans Microsoft 365 E3 et E5, est l’ensemble d’applications clientes Office que vous installez sur votre appareil local. Ils sont régulièrement mis à jour avec de nouvelles fonctionnalités de productivité et de sécurité à partir du cloud Microsoft.
 
-Pour obtenir un résumé visuel des options de mise à niveau, de migration et de migration vers le cloud pour les clients et serveurs Office 2010 et Windows 7, consultez l’affiche de fin du [support](../downloads/Office2010Windows7EndOfSupport.pdf)technique.
+Pour obtenir un résumé visuel des options de mise à niveau, de migration et de déplacement vers le cloud pour Office clients et serveurs 2010 et Windows 7, consultez [l’affiche de fin du support](../downloads/Office2010Windows7EndOfSupport.pdf).
 
-[![Fin de la prise en charge Office clients et serveurs 2010 et affiche Windows 7.](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Fin du support pour les clients et serveurs Office 2010 et Windows 7 affiche.](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-Cette affiche d’une page récapitule les différents chemins que vous pouvez prendre pour gérer les produits client et serveur Office 2010 et Windows 7 à partir de la fin de la prise en charge. Les chemins d’accès préférés et la prise en charge des options Microsoft 365 Entreprise sont mis en surbrillant.
+Cette affiche d’une page récapitule les différents chemins d’accès que vous pouvez suivre pour gérer Office produits clients et serveurs 2010 et Windows 7 à partir de la fin du support. Les chemins d’accès préférés et la prise en charge des options dans Microsoft 365 Entreprise sont mis en surbrillance.
 
-Vous pouvez également [télécharger cette](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) affiche et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
+Vous pouvez également [télécharger](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) cette affiche et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
 
 ## <a name="office-2010-client-and-server-upgrade-planning"></a>Planning de mise à jour d'Office 2010 client et serveur
 
@@ -64,7 +64,7 @@ Vous pouvez également [télécharger cette](https://github.com/MicrosoftDocs/mi
 
 ## <a name="im-a-home-user-what-do-i-do"></a>Je suis un particulier. Que dois-je faire ?
 
-Si vous utilisez Office produits et applications 2010 à la maison, consultez [ces informations.](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)
+Si vous utilisez Office produits et applications 2010 à domicile, consultez [ces informations](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
 
 ## <a name="related-topics"></a>Voir aussi
 

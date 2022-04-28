@@ -338,7 +338,7 @@
       href: ../commerce/index.yml
     - name: Sécuriser votre organisation
       items:
-        - name: 10 principales façons de sécuriser vos données
+        - name: Meilleures pratiques pour sécuriser vos données
           href: security-and-compliance/secure-your-business-data.md
         - name: Multi-Factor Authentication pour Microsoft 365
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md

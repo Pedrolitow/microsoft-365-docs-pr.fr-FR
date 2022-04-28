@@ -13,14 +13,13 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 02/27/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e8c2b464b7a4559ba316826400cfd0ad308d8786
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 4db7b8f13f1f4860d8cd88f6dec0ff588a89ab41
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64790215"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098909"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurer et valider des exclusions en fonction de l’extension de fichier et de l’emplacement du dossier
 
@@ -107,7 +106,7 @@ Découvrez [comment créer et déployer des stratégies anti-programme malveilla
 
 2. Dans **l’éditeur de gestion stratégie de groupe**, accédez à **La configuration de l’ordinateur** et sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence pour **Windows composants** \> **Antivirus Microsoft Defender** \> **exclusions**.
+3. Développez l’arborescence pour **Windows composants** \> **Antivirus Windows Defender** \> **exclusions**.
 
 4. Ouvrez le paramètre **Exclusions de chemin** d’accès à modifier et ajoutez vos exclusions.
     1. Définissez l’option **sur Activé**.
@@ -386,8 +385,8 @@ Vous pouvez également copier la chaîne dans un fichier texte vide et tenter de
 > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
-> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Voir aussi
 

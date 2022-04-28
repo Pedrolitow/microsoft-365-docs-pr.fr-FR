@@ -2,7 +2,7 @@
 title: Gérer les mots de passe avec PowerShell
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,28 +17,28 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 description: Découvrez comment utiliser PowerShell pour gérer les mots de passe.
-ms.openlocfilehash: 64c46f774db2ae2153ea336b8afb1f1aa7536d94
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e980e9c4c2511ea1f84df870c790a61a047c3a90
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150533"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091564"
 ---
 # <a name="manage-passwords-with-powershell"></a>Gérer les mots de passe avec PowerShell
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez utiliser PowerShell pour Microsoft 365 comme alternative à l’Centre d'administration Microsoft 365 gérer les mots de passe dans Microsoft 365. 
+Vous pouvez utiliser PowerShell pour Microsoft 365 comme alternative au Centre d'administration Microsoft 365 pour gérer les mots de passe dans Microsoft 365. 
 
-Lorsqu’un bloc de commandes dans cet article nécessite que vous spécifiant des valeurs de variable, utilisez ces étapes.
+Lorsqu’un bloc de commandes de cet article requiert que vous spécifiez des valeurs de variable, procédez comme suit.
 
-1. Copiez le bloc de commandes dans le Presse-papiers et collez-le dans Bloc-notes ou dans l’environnement de script intégré à PowerShell (ISE).
-2. Remplissez les valeurs des variables et supprimez les caractères « < » et « > ».
-3. Exécutez les commandes dans la fenêtre PowerShell ou powerShell ISE.
+1. Copiez le bloc de commandes dans le Presse-papiers et collez-le dans Bloc-notes ou l’environnement de script intégré PowerShell (ISE).
+2. Renseignez les valeurs de variable et supprimez les caractères « < » et « > ».
+3. Exécutez les commandes dans la fenêtre PowerShell ou l’ise PowerShell.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 
-Tout [d’abord, connectez-vous à Microsoft 365 client.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Tout [d’abord, connectez-vous à votre locataire Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
 ### <a name="set-a-password"></a>Définir un mot de passe
 
@@ -61,7 +61,7 @@ $secPassword = ConvertTo-SecureString $newPassword -AsPlainText -Force
 Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword -EnforceChangePasswordPolicy $true
 ```
 
-Utilisez ces commandes pour définir un mot de passe et obliger un utilisateur à modifier son nouveau mot de passe la prochaine fois qu’il se connecte.
+Utilisez ces commandes pour définir un mot de passe et forcer un utilisateur à modifier son nouveau mot de passe la prochaine fois qu’il se connecte.
 
 ```powershell
 $userUPN="<user account sign in name, such as belindan@contoso.com>"
@@ -72,7 +72,7 @@ Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword -ForceChangeP
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le module Microsoft Azure Active Directory pour Windows PowerShell.
 
-Tout [d’abord, connectez-vous à Microsoft 365 client.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Tout [d’abord, connectez-vous à votre locataire Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 ### <a name="set-a-password"></a>Définir un mot de passe
 
@@ -86,7 +86,7 @@ Set-MsolUserPassword -UserPrincipalName $userUPN -NewPassword $newPassword
 
 ### <a name="force-a-user-to-change-their-password"></a>Forcer un utilisateur à modifier son mot de passe
 
-Utilisez ces commandes pour obliger un utilisateur à modifier son mot de passe.
+Utilisez ces commandes pour forcer un utilisateur à modifier son mot de passe.
 
 ```powershell
 $userUPN="<user account sign in name>"

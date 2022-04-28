@@ -2,8 +2,8 @@
 title: Configurer un connecteur pour archiver les données FactSet dans Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur FactSet DataParser 17a-4 pour importer et archiver des données FactSet dans Microsoft 365.
-ms.openlocfilehash: c191cb1e25716bc4f4d0d948a5a0d863c55607ac
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: b922f2ad9e1da9620434ab7b4d82a5a662ee7b3d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998339"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091080"
 ---
 # <a name="set-up-a-connector-to-archive-factset-data"></a>Configurer un connecteur pour archiver les données FactSet
 

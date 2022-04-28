@@ -1,8 +1,8 @@
 ---
-title: Utilisation du service Web De recherche de contenu au lieu du partie Web De requête de contenu pour améliorer les performances dans SharePoint Online
+title: Utilisation du composant WebPart Recherche de contenu au lieu du composant WebPart Requête de contenu pour améliorer les performances dans SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 4/20/2015
 audience: Admin
 ms.topic: article
@@ -20,25 +20,25 @@ search.appverid:
 - MET150
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
-description: Découvrez comment améliorer les performances en remplaçant le partie Web De requête de contenu par le partie Web De recherche de contenu dans SharePoint Server 2013 et SharePoint Online.
-ms.openlocfilehash: d41983a5771e42d357ae4d2adb5864e2a74fdd57
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez comment améliorer les performances en remplaçant le composant WebPart Requête de contenu par le composant WebPart Recherche de contenu dans SharePoint Server 2013 et SharePoint Online.
+ms.openlocfilehash: 77c2c6e48beb05b6d371734f0eeeb48881339156
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210232"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098161"
 ---
-# <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Utilisation du service Web De recherche de contenu au lieu du partie Web De requête de contenu pour améliorer les performances dans SharePoint Online
+# <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Utilisation du composant WebPart Recherche de contenu au lieu du composant WebPart Requête de contenu pour améliorer les performances dans SharePoint Online
 
-Cet article explique comment améliorer les performances en remplaçant le partie Web Part de requête de contenu par le partie Web Part de recherche de contenu dans SharePoint Server 2013 et SharePoint Online.
+Cet article explique comment améliorer les performances en remplaçant le composant WebPart Requête de contenu par le composant WebPart Recherche de contenu dans SharePoint Server 2013 et SharePoint Online.
   
-L’une des nouvelles fonctionnalités les plus puissantes de SharePoint Server 2013 et SharePoint Online est le service Web De recherche de contenu (CSWP). Ce partie Web Part utilise l’index de recherche pour récupérer rapidement les résultats qui sont affichés à l’utilisateur. Utilisez le partie Web Part de recherche de contenu au lieu du partie Web De requête de contenu (CQWP) dans vos pages pour améliorer les performances pour vos utilisateurs.
+L’une des nouvelles fonctionnalités les plus puissantes de SharePoint Server 2013 et SharePoint Online est le composant WebPart Recherche de contenu (CSWP). Ce composant WebPart utilise l’index de recherche pour récupérer rapidement les résultats qui sont présentés à l’utilisateur. Utilisez le composant WebPart Recherche de contenu au lieu du composant WebPart Requête de contenu (CQWP) dans vos pages pour améliorer les performances de vos utilisateurs.
   
-L’utilisation d’un élément Web Part de recherche de contenu sur un partie Web De requête de contenu entraîne presque toujours de meilleures performances de chargement de page sur SharePoint Online. Il existe quelques configurations supplémentaires pour obtenir la requête la plus à même d’obtenir la requête, mais les avantages sont des performances améliorées et une plus grande efficacité des utilisateurs.
+L’utilisation d’un composant WebPart Recherche de contenu sur un composant WebPart De requête de contenu entraîne presque toujours de meilleures performances de chargement de page sur SharePoint Online. Il existe une configuration supplémentaire pour obtenir la bonne requête, mais les récompenses sont des performances améliorées et des utilisateurs plus heureux.
   
-## <a name="comparing-the-performance-gain-you-get-from-using-content-search-web-part-instead-of-content-query-web-part"></a>Comparaison des gains de performances que vous obtenez en utilisant le partie Web Part de recherche de contenu au lieu du partie Web Part de requête de contenu
+## <a name="comparing-the-performance-gain-you-get-from-using-content-search-web-part-instead-of-content-query-web-part"></a>Comparaison du gain de performances obtenu à l’aide du composant WebPart Recherche de contenu au lieu du composant WebPart Requête de contenu
 
-Les exemples suivants montrent les gains de performances relatifs que vous pouvez obtenir lorsque vous utilisez un élément Web Part de recherche de contenu au lieu d’un élément Web Part requête de contenu. Les effets sont plus évidents avec une structure de site complexe et des requêtes de contenu très larges.
+Les exemples suivants montrent les gains de performances relatifs que vous pouvez recevoir lorsque vous utilisez un composant WebPart Recherche de contenu au lieu d’un composant WebPart Requête de contenu. Les effets sont plus évidents avec une structure de site complexe et des requêtes de contenu très larges.
   
 Cet exemple de site présente les caractéristiques suivantes :
   
@@ -46,32 +46,32 @@ Cet exemple de site présente les caractéristiques suivantes :
     
 - Listes utilisant un type de contenu « fruit » personnalisé.
     
-- Dans le partie Web Part, la requête de contenu est large, renvoyant tous les éléments avec le type de contenu « fruit ».
+- Dans le composant WebPart, la requête de contenu est large, renvoyant tous les éléments avec le type de contenu « fruit ».
     
-- L’exemple utilise uniquement 50 éléments sur les 8 sites. Les effets seront encore plus marqués pour les sites avec plus de contenu.
+- L’exemple utilise uniquement 50 éléments sur les 8 sites. Les effets seront encore plus prononcés pour les sites avec plus de contenu.
     
-Voici une capture d’écran des résultats du partie Web De requête de contenu.
+Voici une capture d’écran des résultats du composant WebPart Requête de contenu.
   
-![Graphique montrant la requête de contenu pour le partie Web.](../media/b3d41f20-dfe5-46ed-9c0a-31057e82de33.png)
+![Graphique montrant la requête de contenu pour le composant WebPart.](../media/b3d41f20-dfe5-46ed-9c0a-31057e82de33.png)
   
-Dans Internet Explorer,  utilisez l’onglet Réseau des outils de développement F12 pour examiner les détails de l’en-tête de réponse. Dans la capture d’écran suivante, la valeur de **SPRequestDuration** pour ce chargement de page est de 924 millisecondes. 
+Dans Internet Explorer, utilisez l’onglet **Réseau** des outils de développement F12 pour examiner les détails de l’en-tête de réponse. Dans la capture d’écran suivante, la valeur de **SPRequestDuration** pour ce chargement de page est de 924 millisecondes. 
   
 ![Capture d’écran montrant la durée de la demande de 924.](../media/343571f2-a249-4de2-bc11-2cee93498aea.png)
   
- **SPRequestDuration indique** la quantité de travail effectuée sur le serveur pour préparer la page. Le changement de contenu par requête composants WebPart contenu par recherche composants WebPart réduit considérablement le temps qu’il faut pour restituer la page. En revanche, une page avec un élément Web De recherche de contenu équivalent, renvoyant le même nombre de résultats a une valeur **SPRequestDuration** de 106 millisecondes comme illustré dans cette capture d’écran : 
+ **SPRequestDuration** indique la quantité de travail effectuée sur le serveur pour préparer la page. Le basculement de Contenu par requête composants WebPart avec Contenu par recherche composants WebPart réduit considérablement le temps nécessaire au rendu de la page. En revanche, une page avec un composant WebPart Recherche de contenu équivalent, qui retourne le même nombre de résultats, a une valeur **SPRequestDuration** de 106 millisecondes, comme illustré dans cette capture d’écran : 
   
-![Capture d’écran montrant la durée de la demande 106.](../media/b46387ac-660d-4e5e-a11c-cc430e912962.png)
+![Capture d’écran montrant la durée de la demande de 106.](../media/b46387ac-660d-4e5e-a11c-cc430e912962.png)
   
-## <a name="adding-a-content-search-web-part-in-sharepoint-online"></a>Ajout d’un partie Web De recherche de contenu dans SharePoint Online
+## <a name="adding-a-content-search-web-part-in-sharepoint-online"></a>Ajout d’un composant WebPart Recherche de contenu dans SharePoint Online
 
-L’ajout d’un élément Web Part de recherche de contenu est très similaire à un élément Web Part requête de contenu normal. Consultez la section *« Ajouter un élément Web Part* de recherche de contenu » dans [Configure a Content Search Web Part in SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
+L’ajout d’un composant WebPart Recherche de contenu est très similaire à un composant WebPart Requête de contenu standard. Consultez la section *« Ajouter un composant WebPart Recherche de contenu »* dans [Configurer un composant WebPart Recherche de contenu dans SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
   
-## <a name="creating-the-right-search-query-for-your-content-search-web-part"></a>Création de la requête de recherche pour votre partie Web De recherche de contenu
+## <a name="creating-the-right-search-query-for-your-content-search-web-part"></a>Création de la requête de recherche appropriée pour votre composant WebPart Recherche de contenu
 
-Une fois que vous avez ajouté un élément Web Part de recherche de contenu, vous pouvez affiner la recherche et renvoyer les éléments que vous souhaitez. Pour obtenir des instructions détaillées sur la façon de le faire, voir la section « Afficher le contenu en configurant une requête avancée dans un élément *Web* Part de recherche de contenu » dans [Configure a Content Search Web Part in SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
+Une fois que vous avez ajouté un composant WebPart Recherche de contenu, vous pouvez affiner la recherche et retourner les éléments souhaités. Pour obtenir des instructions détaillées sur la procédure à suivre, consultez la section *« Afficher le contenu en configurant une requête avancée dans un composant WebPart Recherche* de contenu » dans [Configurer un composant WebPart Recherche de contenu dans SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
   
-## <a name="query-building-and-testing-tool"></a>Outil de création et de test de requête
+## <a name="query-building-and-testing-tool"></a>Outil de création et de test de requêtes
 
-Pour obtenir un outil permettant de créer et de tester des requêtes complexes, voir l’outil de requête [de](https://sp2013searchtool.codeplex.com/) recherche sur Codeplex. 
+Pour obtenir un outil permettant de générer et de tester des requêtes complexes, consultez [l’outil De requête de recherche](https://sp2013searchtool.codeplex.com/) sur Codeplex. 
   
 

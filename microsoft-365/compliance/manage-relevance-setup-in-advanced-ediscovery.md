@@ -2,8 +2,8 @@
 title: Gérer la configuration de Pertinence dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 ROBOTS: NOINDEX, NOFOLLOW
 description: Lisez les recommandations pour configurer la formation de Pertinence dans eDiscovery (Premium) pour noter les fichiers par pertinence et générer des résultats analytiques.
-ms.openlocfilehash: f1a4f1ca9ad9fbf2b63439d463e83723dc2a0e0a
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: be9347468ef39fd5d6ae254ff4eb662a795f4f0b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994851"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098513"
 ---
 # <a name="manage-relevance-setup-in-ediscovery-premium-classic"></a>Gérer la configuration de Pertinence dans eDiscovery (Premium) (classique)
 

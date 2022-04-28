@@ -2,8 +2,8 @@
 title: Interroger le contenu dans un ensemble de révisions
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment créer et exécuter une requête dans un ensemble de révisions afin d’organiser le contenu pour une révision plus efficace dans un cas de découverte électronique Microsoft Purview (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: aad8cd7461c795f8ecba03edab76e81e8384430d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 44f4b9d6aed92a6593f5c6c70322656e4c770c3d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64991927"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090914"
 ---
 # <a name="query-and-filter-content-in-a-review-set"></a>Interroger et filtrer du contenu dans un jeu à réviser
 

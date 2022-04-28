@@ -2,8 +2,8 @@
 title: Rechercher dans le journal d’audit dans le portail de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ description: Utilisez le portail de conformité Microsoft Purview pour recherche
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 6c0f26bbda2ba28b98fc80b80ce4a520d9fb39c3
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: fa397ec1ce7dea253367dfb917166a9a43655896
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998901"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098469"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 

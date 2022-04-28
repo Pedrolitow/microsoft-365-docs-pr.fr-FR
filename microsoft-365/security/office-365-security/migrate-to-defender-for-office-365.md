@@ -19,19 +19,19 @@ ms.custom: ''
 description: Découvrez le bon moyen de migrer à partir de services de protection tiers ou d’appareils tels que Google Postini, le pare-feu de courrier indésirable et de virus Barracuda ou Cisco IronPort pour Microsoft Defender pour Office 365 protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b00051effd6ee77fd29ba0a5a07ee27c9113a439
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 2f67135e2b8a3700a2fb6a6e24fc4f66696db2e3
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704820"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098711"
 ---
 # <a name="migrate-from-a-third-party-protection-service-or-device-to-microsoft-defender-for-office-365"></a>Migrer d’un service ou d’un appareil de protection tiers vers Microsoft Defender pour Office 365
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 
-Si vous disposez déjà d’un service ou d’un appareil de protection tiers existant devant Microsoft 365, vous pouvez utiliser ce guide pour migrer votre protection vers Microsoft Defender pour Office 365 afin d’obtenir les avantages d’une expérience de gestion consolidée, d’un coût potentiellement réduit (à l’aide de produits que vous payez déjà) et d’un produit mature avec une sécurité intégrée.  Protection. Pour plus d’informations, consultez [Microsoft Defender pour Office](https://www.microsoft.com/security/business/threat-protection/office-365-defender).
+Si vous disposez déjà d’un service ou d’un appareil de protection tiers existant devant Microsoft 365, vous pouvez utiliser ce guide pour migrer votre protection vers Microsoft Defender pour Office 365 afin d’obtenir les avantages d’une expérience de gestion consolidée, d’un coût potentiellement réduit (à l’aide de produits que vous payez déjà) et d’un produit mature avec une sécurité intégrée.  Protection. Pour plus d’informations, consultez [Microsoft Defender pour Office 365](https://www.microsoft.com/security/business/threat-protection/office-365-defender).
 
 Ce guide fournit des étapes spécifiques et actionnables pour votre migration et suppose les faits suivants :
 
@@ -58,7 +58,7 @@ Les étapes de migration de très haut niveau sont illustrées dans le diagramme
 Dans le secteur informatique, les surprises sont généralement mauvaises. Le simple fait de retourner vos enregistrements MX pour pointer vers Microsoft 365 sans tests préalables et réfléchis entraîne de nombreuses surprises. Par exemple :
 
 - Vous ou vos prédécesseurs avez probablement consacré beaucoup de temps et d’efforts à personnaliser votre service de protection existant pour une distribution optimale du courrier (en d’autres termes, en bloquant ce qui doit être bloqué et en autorisant ce qui doit être autorisé). Il est presque garanti que toutes les personnalisations de votre service de protection actuel ne sont pas nécessaires dans Defender pour Office 365. Il est également très possible que Defender pour Office 365 introduise de nouveaux problèmes (autorisations ou blocs) qui n’ont pas eu lieu ou n’ont pas été requis dans votre service de protection actuel.
-- Votre support technique et le personnel de sécurité doivent savoir quoi faire dans Defender pour Office 365. Par exemple, si un utilisateur se plaint d’un message manquant, votre support technique sait-il où ou comment le rechercher ? Ils vérifient probablement qu’ils connaissent bien les outils de votre service de protection existant, mais qu’en est-il des outils dans Defender pour Office 365 ?
+- Votre support technique et le personnel de sécurité doivent savoir quoi faire dans Defender pour Office 365. Par exemple, si un utilisateur se plaint d’un message manquant, votre support technique sait-il où ou comment le rechercher ? Ils sont probablement familiarisés avec les outils de votre service de protection existant, mais qu’en est-il des outils dans Defender pour Office 365 ?
 
 En revanche, si vous suivez les étapes décrites dans ce guide de migration, vous obtiendrez les avantages tangibles suivants pour votre migration :
 

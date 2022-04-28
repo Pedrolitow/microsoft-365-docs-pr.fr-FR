@@ -2,7 +2,7 @@
 title: Désactiver l’accès à Sway avec PowerShell pour Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
@@ -17,19 +17,19 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 7221a4c9-ae03-4598-81fe-a655c02f40ab
-description: Découvrez où télécharger le script PowerShell ManageSway.ps1 qui vous permet de désactiver l’accès à Sway dans Microsoft 365 organisation.
-ms.openlocfilehash: b7222ebca92d9ae154d8930f800d49d5f0f61ace
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez où télécharger le script PowerShell ManageSway.ps1 qui vous permet de désactiver l’accès à Sway dans votre organisation Microsoft 365.
+ms.openlocfilehash: 99fc0d34d05767dc227d97ae1cc4cd545cb61ae3
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173438"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097687"
 ---
 # <a name="disable-access-to-sway-with-powershell-for-microsoft-365"></a>Désactiver l’accès à Sway avec PowerShell pour Microsoft 365
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Le script ManageSway.ps1 PowerShell vous permet d’afficher et de désactiver des services dans votre organisation Microsoft 365, y compris Sway. Ce script automatise les procédures décrites dans les rubriques suivantes :
+Le script PowerShell ManageSway.ps1 vous permet d’afficher et de désactiver les services de votre organisation Microsoft 365, y compris les Sway. Ce script automatise les procédures décrites dans les rubriques suivantes :
   
 - [Afficher les licences et les services avec PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
     
@@ -37,8 +37,8 @@ Le script ManageSway.ps1 PowerShell vous permet d’afficher et de désactiver d
     
 Vous devez les télécharger les deux fichiers associés au script :
   
-- Le script ManageSway.ps1 sur [https://go.microsoft.com/fwlink/p/?LinkId=785070](https://go.microsoft.com/fwlink/p/?LinkId=785070)
+- Le script ManageSway.ps1 à l’adresse [https://go.microsoft.com/fwlink/p/?LinkId=785070](https://go.microsoft.com/fwlink/p/?LinkId=785070)
     
-- Fichier d’aide pour le script à l' [https://go.microsoft.com/fwlink/p/?LinkId=785072](https://go.microsoft.com/fwlink/p/?LinkId=785072)
+- Fichier d’aide pour le script à l’adresse [https://go.microsoft.com/fwlink/p/?LinkId=785072](https://go.microsoft.com/fwlink/p/?LinkId=785072)
     
 

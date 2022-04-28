@@ -1,23 +1,28 @@
 ---
 title: 'Étape 3 : Protéger vos comptes d’utilisateur Microsoft 365'
 f1.keywords:
-  - NOCSH
+- NOCSH
 author: kelleyvice-msft
 ms.author: kvice
-manager: laurawi
+manager: scotv
 ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
-  - Strat_O365_Enterprise
-  - m365initiative-coredeploy
-ms.custom: null
+- M365-security-compliance
+- Strat_O365_Enterprise
+- m365initiative-coredeploy
+ms.custom: ''
 description: Renforcez la sécurité des connexions de vos utilisateurs à l’aide de l’authentification multifacteur (MFA) et d’autres fonctionnalités.
+ms.openlocfilehash: 4566b2c8c73ce258899e1de6ef621715092e50a5
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090272"
 ---
-
 # <a name="step-3-protect-your-microsoft-365-user-accounts"></a>Étape 3 : Protéger vos comptes d’utilisateur Microsoft 365
 
 Pour renforcer la sécurité des connexions des utilisateurs :
@@ -115,7 +120,7 @@ Les stratégies d’identité et d’accès aux appareils sont définies pour un
 
 Ces niveaux de protection et les configurations correspondantes apportent des niveaux de protection cohérents selon les données, les identités et les appareils.
 
-Microsoft recommande vivement de configurer et de déployer des stratégies d’identité et d’appareil de confiance zéro dans votre organisation, notamment des paramètres spécifiques pour Microsoft Teams, Exchange Online et SharePoint. Pour plus d’informations, consultez [Configurations d'identités et d'accès aux appareils de confiance zéro](../security/office-365-security/microsoft-365-policies-configurations.md).
+Microsoft recommande vivement de configurer et de déployer des stratégies d’identité de confiance zéro et d’accès aux appareils dans votre organisation, notamment des paramètres spécifiques pour Microsoft Teams, Exchange Online et SharePoint. Pour plus d’informations, consultez [Configurations d’identité de confiance zéro et d’accès aux appareils](../security/office-365-security/microsoft-365-policies-configurations.md).
 
 ## <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 

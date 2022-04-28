@@ -1,8 +1,8 @@
 ---
-title: Affecter des stratégies Skype Entreprise Online par utilisateur avec PowerShell pour Microsoft 365
+title: Affecter des stratégies par utilisateur Skype Entreprise Online avec PowerShell pour Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/16/2020
 audience: ITPro
 ms.topic: article
@@ -13,26 +13,26 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: 'Résumé : Utilisez PowerShell pour Microsoft 365 pour affecter des paramètres de communication par utilisateur à l’Skype Entreprise stratégies En ligne.'
-ms.openlocfilehash: c49d465ffe0a6f1379681be0ae4faaf9982b6ef0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 'Résumé : Utilisez PowerShell pour Microsoft 365 pour affecter des paramètres de communication par utilisateur avec des stratégies Skype Entreprise Online.'
+ms.openlocfilehash: 70120f6d296f958f44906a3526a7dcaa36b7eb04
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178946"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091388"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Affecter des stratégies Skype Entreprise Online par utilisateur avec PowerShell pour Microsoft 365
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Affecter des stratégies par utilisateur Skype Entreprise Online avec PowerShell pour Microsoft 365
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-L’utilisation de PowerShell pour Microsoft 365 est un moyen efficace d’affecter des paramètres de communication par utilisateur avec des stratégies Skype Entreprise Online.
+L’utilisation de PowerShell pour Microsoft 365 est un moyen efficace d’attribuer des paramètres de communication par utilisateur avec des stratégies Skype Entreprise Online.
   
-## <a name="prepare-to-run-the-powershell-commands"></a>Préparer l’exécuter
+## <a name="prepare-to-run-the-powershell-commands"></a>Préparer l’exécution des commandes PowerShell
 
 Suivez ces instructions pour exécuter les commandes (sautez les étapes que vous avez déjà effectuées) :
   
   > [!Note]
-   > Le connecteur Skype Entreprise Online fait actuellement partie du dernier module PowerShell Teams. Si vous utilisez la version publique la plus récente de PowerShell Teams, vous n’avez pas besoin d’installer le connecteur Skype Entreprise Online.
+   > Le connecteur Skype Entreprise Online fait actuellement partie du dernier module PowerShell Teams. Si vous utilisez la version publique la plus récente de PowerShell Teams, vous n’avez pas besoin d’installer le connecteur Skype Entreprise Online.
 
 1. Installer le [module PowerShell Teams](/microsoftteams/teams-powershell-install).
     
@@ -53,13 +53,13 @@ Supposons que vous souhaitiez modifier les paramètres de communication externe 
     
 2. Attribuer cette stratégie d’accès externe à Alex.
     
-Comment déterminer la stratégie d’accès externe à attribuer à Alex ? La commande suivante renvoie toutes les stratégies d’accès externe où EnableFederationAccess a la valeur True et EnablePublicCloudAccess a la valeur False :
+Comment déterminer la stratégie d’accès externe à affecter à Alex ? La commande suivante renvoie toutes les stratégies d’accès externe où EnableFederationAccess a la valeur True et EnablePublicCloudAccess a la valeur False :
   
 ```powershell
 Get-CsExternalAccessPolicy -Include All| Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-Sauf si vous avez créé des instances personnalisées d’ExternalAccessPolicy, cette commande renvoie une stratégie qui répond à nos critères (FederationOnly). Voici un exemple :
+Sauf si vous avez créé des instances personnalisées de ExternalAccessPolicy, cette commande retourne une stratégie qui répond à nos critères (FederationOnly). Voici un exemple :
   
 ```powershell
 Identity                          : Tag:FederationOnly
@@ -105,7 +105,7 @@ Cette commande définit le nom de la stratégie d'accès externe attribuée à A
 
 ## <a name="managing-large-numbers-of-users"></a>Gestion d’un grand nombre d’utilisateurs
 
-Pour gérer un grand nombre d’utilisateurs (1 000 ou plus), vous devez traitement par lots des commandes via un bloc de script à l’aide de la cmdlet [Invoke-Command.](/powershell/module/microsoft.powershell.core/invoke-command)  Dans les exemples précédents, chaque fois qu’une cmdlet est exécutée, elle doit configurer l’appel, puis attendre le résultat avant de le renvoyer.  Lorsque vous utilisez un bloc de script, cela permet aux cmdlets d’être exécutées à distance et, une fois terminées, de renvoyer les données.
+Pour gérer un grand nombre d’utilisateurs (1 000 ou plus), vous devez traiter les commandes par lot via un bloc de script à l’aide de [l’applet de commande Invoke-Command](/powershell/module/microsoft.powershell.core/invoke-command) .  Dans les exemples précédents, chaque fois qu’une applet de commande est exécutée, elle doit configurer l’appel, puis attendre le résultat avant de le renvoyer.  Lorsque vous utilisez un bloc de script, cela permet d’exécuter les applets de commande à distance, puis de renvoyer les données une fois terminées.
 
 ```powershell
 $s = Get-PSSession | Where-Object { ($.ComputerName -like '*.online.lync.com' -or $.Computername -eq 'api.interfaces.records.teams.microsoft.com') -and $.State -eq 'Opened' -and $.Availability -eq 'Available' }
@@ -134,7 +134,7 @@ $count = 0
 }
 ```
 
-Cela permet de trouver 500 utilisateurs à la fois qui n’ont pas de stratégie de client. Il leur accorde la stratégie de client « ClientPolicyNoIMURL » et la stratégie d’accès externe « FederationAndPicDefault ». Les résultats sont par lots de 50 et chaque lot de 50 est ensuite envoyé à l’ordinateur distant.
+Cela permet de trouver 500 utilisateurs à la fois qui n’ont pas de stratégie client. Il leur accordera la stratégie cliente « ClientPolicyNoIMURL » et la stratégie d’accès externe « FederationAndPicDefault ». Les résultats sont regroupés en groupes de 50 et chaque lot de 50 est ensuite envoyé à l’ordinateur distant.
   
 ## <a name="see-also"></a>Voir aussi
 

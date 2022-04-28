@@ -2,7 +2,7 @@
 title: Office 365 points de terminaison DOD du gouvernement des États-Unis
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 02/28/2022
 audience: ITPro
 ms.topic: conceptual
@@ -22,12 +22,12 @@ f1.keywords:
 description: Office 365 nécessite une connexion à Internet. Les points de terminaison ci-dessous doivent être accessibles aux clients qui utilisent Office 365 plans DoD du gouvernement des États-Unis uniquement.
 hideEdit: true
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5d2916e18e88b51eb478e674eaf9ae52ec3ad26f
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 7c387e66d53c5e5df88e8779ea7f7d74c8d639ee
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972890"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090250"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 points de terminaison DoD du gouvernement des États-Unis
 

@@ -2,7 +2,7 @@
 title: Solutions hybrides
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 09/30/2020
 audience: ITPro
 ms.topic: landing-page
@@ -17,19 +17,19 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
-description: Fournit une liste de liens vers des informations utiles pour le déploiement Office charges de travail du serveur dans Microsoft Azure.
-ms.openlocfilehash: e4f4ddf41174a9bd1a3b4cef9e43087825ee4bbc
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: Fournit une liste de liens vers des informations utiles pour déployer des charges de travail Office Server dans Microsoft Azure.
+ms.openlocfilehash: 9acb67db92e47951bf8d85cdcf6ad35c718c231b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681587"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091234"
 ---
 # <a name="hybrid-solutions"></a>Solutions hybrides
 
-Avec Microsoft Azure, vous pouvez déployer certaines charges de travail Office Server qui étaient généralement déployées localement dans les services d’infrastructure Azure.
+Avec Microsoft Azure, vous pouvez déployer certaines charges de travail Office Server qui ont été généralement déployées localement dans les services d’infrastructure Azure.
   
-Pour plus Microsoft 365'identité dans Azure :
+Pour Microsoft 365 infrastructure d’identité dans Azure :
 
 - [Utiliser Azure AD pour l’authentification SharePoint Server](/azure/active-directory/saas-apps/sharepoint-on-premises-tutorial)
 
@@ -48,7 +48,7 @@ Pour les charges de travail SharePoint Server 2013 dans Azure :
 - [Sites Internet dans Microsoft Azure qui utilisent SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
   
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
   

@@ -2,8 +2,8 @@
 title: Configurer un connecteur pour importer des données d’audit de santé génériques
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données de dossiers médicaux électroniques (DSE) de leur système de santé vers Microsoft 365. Cela vous permet d’utiliser les données DSE dans les stratégies de gestion des risques internes pour vous aider à détecter l’activité d’accès non autorisé aux données des patients par vos employés.
-ms.openlocfilehash: b1745d8f91253132748fe08d724386d2e6633a4c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 90f50628e255267baeff7d39c776f9a6bf8cc426
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993159"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077904"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Configurer un connecteur pour importer des données d’audit DSE de santé (préversion)
 

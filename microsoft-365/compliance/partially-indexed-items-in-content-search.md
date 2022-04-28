@@ -2,8 +2,8 @@
 title: Éléments partiellement indexés dans la recherche de contenu
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Découvrez les éléments non indexés dans Exchange et SharePoint que vous pouvez inclure dans une recherche eDiscovery que vous exécutez dans le portail de conformité Microsoft Purview.
-ms.openlocfilehash: b88e7d0f6651ecaa31849343db066295af1f5e84
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: ff21f04456d6886e7849a8d9a0770640897a62ac
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993093"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091498"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Éléments partiellement indexés dans eDiscovery
 

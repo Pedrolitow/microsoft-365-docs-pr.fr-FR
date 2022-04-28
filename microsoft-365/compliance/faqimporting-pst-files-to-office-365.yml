@@ -3,8 +3,8 @@ metadata:
   title: Questions fréquentes (FAQ) sur l’importation de fichiers PST
   f1.keywords:
   - NOCSH
-  ms.author: markjjo
-  author: markjjo
+  ms.author: v-tophillips
+  author: v-tophillips
   manager: laurawi
   audience: Admin
   ms.topic: faq
@@ -18,12 +18,12 @@ metadata:
   ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
   ms.custom: seo-marvel-apr2020
   description: Cet article contient des réponses à certaines questions fréquemment posées aux administrateurs sur l’importation de fichiers PST dans Microsoft 365 à l’aide du service d’importation Office 365.
-  ms.openlocfilehash: c7f2e11120fbac275104f30b57d98c937e17886e
-  ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+  ms.openlocfilehash: 664cf078d891bf1e40dc79ddb1dc009527ba0dd6
+  ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/19/2022
-  ms.locfileid: "64939848"
+  ms.lasthandoff: 04/27/2022
+  ms.locfileid: "65098017"
 title: FAQ sur l’importation de fichiers PST
 summary: >
   **Cet article s’applique aux administrateurs. Voulez-vous importer des fichiers PST dans votre propre boîte aux lettres ? Voir [Importer le courrier électronique, les contacts et le calendrier à partir d’un fichier .pst Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
@@ -37,7 +37,7 @@ summary: >
 
   Pour obtenir des instructions pas à pas, consultez [Utiliser le chargement réseau pour importer des fichiers PST dans Office 365](use-network-upload-to-import-pst-files.md).
 sections:
-- name: Général
+- name: Généralités
   questions:
   - question: >
       De quelles autorisations a-t-on besoin pour créer des tâches d’importation dans le Service d’importation Office 365 ?
@@ -54,7 +54,7 @@ sections:
   - question: >
       Où le chargement réseau est-il disponible ?
     answer: >
-      Le chargement réseau est actuellement disponible dans ces régions : États-Unis, Canada, Brésil, Royaume-Uni, France, Allemagne, Suisse, Norvège, Europe, Inde, Asie de l’Est, Asie du Sud-Est, Japon, République de Corée, Australie et Émirats arabes unis. Le chargement réseau sera disponible dans d’autres régions à l’avenir.
+      Le téléchargement en réseau est actuellement disponible dans ces régions : États-Unis, Canada, Brésil, Royaume-Uni, France, Allemagne, Suisse, Norvège, Europe, Inde, Asie de l'Est, Asie du Sud-Est, Japon, République de Corée, Australie et Émirats arabes unis (EAU). Le téléchargement par réseau sera disponible à l’avenir dans d'autres régions.
   - question: >
       What is the pricing for importing PST files by using network upload?
     answer: >
@@ -72,10 +72,10 @@ sections:
   - question: >
       Une fois que mes fichiers PST ont été chargés dans la zone de stockage Azure, pendant combien de temps sont-ils conservés dans Azure avant d’être supprimés ?
     answer: >
-      Si vous décidez d’importer des fichiers PST avec la méthode du chargement réseau, vous les chargez dans un conteneur d’objets blob Azure nommé `ingestiondata`. S’il n’y a aucun travail d’importation en cours sur la page **Importer des fichiers PST** dans le portail de conformité), tous les fichiers PST du `ingestiondata` conteneur dans Azure sont supprimés 30 jours après la création du travail d’importation le plus récent dans le portail de conformité. Cela signifie également que vous devez créer un travail d’importation dans le portail de conformité (décrit à l’étape 5 dans les instructions de chargement réseau) dans les 30 jours suivant le chargement de fichiers PST dans Azure.
+      Si vous décidez d’importer des fichiers PST avec la méthode du chargement réseau, vous les chargez dans un conteneur d’objets blob Azure nommé `ingestiondata`. S’il n’y a aucune tâche d’importation en cours sur la page **Importer des fichiers PST** dans le portail de conformité), tous les fichiers PST du conteneur `ingestiondata` dans Azure sont supprimés 30 jours après la création de la tâche d’importation la plus récente dans le portail de conformité. Cela signifie également que vous devez créer une tâche d’importation dans le portail de conformité (décrit à l’étape 5 dans les instructions de chargement réseau) dans les 30 jours suivant le chargement de fichiers PST dans Azure.
 
 
-      Cela signifie également qu’une fois les fichiers PST supprimés de la zone stockage Azure, ils ne sont plus affichés dans la liste des fichiers pour un travail d’importation terminé dans le portail de conformité. Bien qu’un travail d’importation puisse toujours être répertorié dans la page **Importer des fichiers PST** dans le portail de conformité, la liste des fichiers PST peut être vide lorsque vous affichez les détails des travaux d’importation plus anciens.
+      Cela signifie également qu’une fois les fichiers PST supprimés de la zone Stockage Azure, ils ne sont plus affichés dans la liste des fichiers pour une tâche d’importation terminée dans le portail de conformité. Bien qu’une tâche d’importation puisse toujours être répertoriée sur la page **Importer des fichiers PST** dans le portail de conformité, la liste des fichiers PST peut être vide lorsque vous affichez les détails des tâches d’importation plus anciennes.
   - question: >
       How long does it take to import a PST file to a mailbox?
     answer: >
@@ -137,7 +137,7 @@ sections:
   - question: >
       Où l’expédition de disque est-elle disponible ?
     answer: >
-      L’expédition de disque est actuellement disponible aux États-Unis, au Canada, au Brésil, au Royaume-Uni, en Europe, en Inde, en Asie de l’Est, en Asie du Sud-Est, au Japon, en République de Corée et en Australie. L’expédition de disque sera disponible dans d’autres régions à l’avenir.
+      L’expédition de disque est actuellement disponible aux États-Unis, au Canada, au Brésil, au Royaume-Uni, en Europe, en Inde, en Asie de l’Est, en Asie du Sud-Est, au Japon, en République de Corée et en Australie. Ce service sera à l’avenir disponible dans d’autres régions.
 
 
       > [!NOTE]
@@ -185,10 +185,10 @@ sections:
   - question: >
       Une fois que Microsoft a chargé mes fichiers PST dans Azure, pendant combien de temps sont-ils conservés dans Azure avant d’être supprimés ?
     answer: >
-      Tous les fichiers PST dans l’emplacement stockage Azure de votre organisation (dans le conteneur d’objets blob nommé `ingestiondata`), sont supprimés 30 jours après la création du travail d’importation le plus récent sur la page **Importer des fichiers PST** dans le portail de conformité.
+      Tous les fichiers PST dans l’emplacement stockage Azure de votre organisation (dans le conteneur d’objets blob nommé `ingestiondata`), sont supprimés 30 jours après la création de la tâche d’importation la plus récente sur la page **Importer des fichiers PST** dans le portail de conformité.
 
 
-      Cela signifie également qu’une fois les fichiers PST supprimés de la zone stockage Azure, ils ne sont plus affichés dans la liste des fichiers pour un travail d’importation terminé dans le portail de conformité. Bien qu’un travail d’importation puisse toujours être répertorié dans la page **Importer des fichiers PST** dans le portail de conformité, la liste des fichiers PST peut être vide lorsque vous affichez les détails des travaux d’importation plus anciens.
+      Cela signifie également qu’une fois les fichiers PST supprimés de la zone Stockage Azure, ils ne sont plus affichés dans la liste des fichiers pour une tâche d’importation terminée dans le portail de conformité. Bien qu’une tâche d’importation puisse toujours être répertoriée sur la page **Importer des fichiers PST** dans le portail de conformité, la liste des fichiers PST peut être vide lorsque vous affichez les détails des tâches d’importation plus anciennes.
   - question: >
       Quelle version du format de fichier PST est prise en charge pour l’importation dans Microsoft 365 ?
     answer: >

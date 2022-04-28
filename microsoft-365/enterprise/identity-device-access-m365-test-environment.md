@@ -1,28 +1,33 @@
 ---
-title: "Accès aux identités et appareils pour votre environnement de test Microsoft\_365"
+title: Accès aux identités et appareils pour votre environnement de test Microsoft 365
 author: kelleyvice-msft
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
-  - M365-subscription-management
-  - Strat_O365_Enterprise
-ms.custom: null
+- M365-subscription-management
+- Strat_O365_Enterprise
+ms.custom: ''
 description: Créer un environnement Microsoft 365 pour tester l’accès aux identités et appareils.
+ms.openlocfilehash: 09c7bf9ecb6aaadc89cedfd881e66a5fd19f28d7
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091212"
 ---
-
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Accès aux identités et appareils pour votre environnement de test Microsoft 365
 
-*Ce Guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
+*Ce guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
 
-[Les configurations](../security/office-365-security/microsoft-365-policies-configurations.md) d’accès aux identités et appareils sont un ensemble de configurations recommandées et de stratégies d’accès conditionnel pour protéger l’accès à tous les services intégrés à Azure Active Directory (Azure AD).
+[Les configurations d’identité et d’accès aux appareils](../security/office-365-security/microsoft-365-policies-configurations.md) sont un ensemble de configurations recommandées et de stratégies d’accès conditionnel pour protéger l’accès à tous les services intégrés à Azure Active Directory (Azure AD).
 
-Pour créer un environnement de test qui dispose des configurations communes d’accès aux identités et aux appareils :
+Pour créer un environnement de test avec les configurations d’identité et d’accès aux appareils courantes en place :
 
 1. Configurez votre environnement de test avec les fonctionnalités d’identité et de sécurité requises en fonction du modèle d’identité et de la méthode d’authentification que vous avez choisis :
 
@@ -30,13 +35,13 @@ Pour créer un environnement de test qui dispose des configurations communes d�
   - [Synchronisation de hachage de mot de passe (PHS)](phs-prereqs-m365-test-environment.md)
   - [Authentification directe (PTA)](pta-prereqs-m365-test-environment.md)
 
-2. Utilisez [des stratégies](../security/office-365-security/identity-access-policies.md) communes d’accès aux identités et appareils pour configurer les stratégies qui s’appuient sur les conditions préalables configurées pour votre environnement de test et explorer et vérifier la protection des identités et des appareils.
+2. Utilisez [les stratégies d’accès aux identités et aux appareils courantes](../security/office-365-security/identity-access-policies.md) pour configurer les stratégies qui s’appuient sur les prérequis configurés pour votre environnement de test et explorez et vérifiez la protection des identités et des appareils.
 
 ## <a name="see-also"></a>Voir aussi
 
 [Guides de laboratoire de Test Autres identités](m365-enterprise-test-lab-guides.md#identity)
 
-[Déployer l’identité](deploy-identity-solution-overview.md)
+[Déployer une identité](deploy-identity-solution-overview.md)
 
 [Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
 
