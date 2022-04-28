@@ -2,8 +2,8 @@
 title: Utiliser le chargement réseau pour importer des fichiers PST
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Pour les administrateurs : apprenez comment utiliser le chargement réseau pour importer en bloc plusieurs fichiers PST dans les boîtes aux lettres d’utilisateur de Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 10a0b2e076c3a8d4fc6910e16ba89c3ce75d2d2d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: cd025adb7100e6dff0d8cb97c195e851414afd81
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999803"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095419"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Utilisez le chargement réseau pour importer les fichiers PST de votre organisation dans Microsoft 365
 
@@ -92,7 +92,7 @@ La première étape consiste à télécharger l’outil AzCopy, qui est l’outi
   
 1. Accédez à <https://compliance.microsoft.com> et connectez-vous à l'aide des informations d'identification d'un compte administrateur dans votre organisation.
 
-2. Dans le volet gauche du portail de conformité, cliquez sur **Gouvernance des informations** \> **Importer**.
+2. Dans le volet gauche du portail de conformité, cliquez sur **Gestion du cycle de vie des données** \> **Importer**.
 
     > [!NOTE]
     > Vous devez disposer des autorisations appropriées pour accéder à la page **Importer** dans le portail de conformité. Pour plus d’informations, consultez la section **Avant de commencer**. 
@@ -260,7 +260,7 @@ L'étape suivante consiste à créer la tâche d'importation PST dans le service
   
 1. Accédez à <https://compliance.microsoft.com> et connectez-vous à l'aide des informations d'identification d'un compte administrateur dans votre organisation.
 
-2. Dans le volet gauche du portail de conformité, cliquez sur **Gouvernance des informations > Importer**.
+2. Dans le volet gauche du portail de conformité, cliquez sur **Gestion du cycle de vie des données > Importer**.
 
 3. Sous l’onglet **Importer**, cliquez sur l’![Icône Ajouter.](../media/ITPro-EAC-AddIcon.gif)**nouvelle tâche d’importation**.
 

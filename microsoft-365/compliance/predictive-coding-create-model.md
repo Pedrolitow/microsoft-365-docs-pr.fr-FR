@@ -2,8 +2,8 @@
 title: Créer un modèle de codage prédictif dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Découvrez comment créer un modèle de codage prédictif dans eDiscovery (Premium). Il s’agit de la première étape de l’utilisation des fonctionnalités de Machine Learning dans eDiscovery (Premium) pour vous aider à identifier le contenu pertinent et non pertinent dans un ensemble de révisions.
-ms.openlocfilehash: f5636defbd4bc004a4732ff1d956f8b879daea2d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 4542ffbf8be3c7a5c0193f3c0372e3c19e91f02e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994037"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099650"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>Créer un modèle de codage prédictif (préversion)
 
@@ -63,6 +63,6 @@ Après avoir créé un modèle, les éléments suivants se produisent en arrièr
 
 - Le système sélectionne au hasard 40 éléments du jeu de révision à inclure dans le jeu d’entraînement pour la première série d’entraînement. Par conséquent, la première série d’entraînement inclut 50 éléments pour l’étiquetage : 40 éléments du jeu d’apprentissage et 10 éléments du jeu de contrôles.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Une fois que vous avez créé un modèle pour un ensemble de révisions, l’étape suivante consiste à effectuer des cycles d’entraînement pour « enseigner » le modèle afin d’identifier le contenu pertinent pour votre investigation. Pour plus d’informations, consultez [Entraîner un modèle de codage prédictif](predictive-coding-train-model.md).

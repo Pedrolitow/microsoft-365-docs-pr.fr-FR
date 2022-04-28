@@ -1,10 +1,10 @@
 ---
-title: Gestion des accès privilégiés pour votre environnement de test Microsoft 365 entreprise
+title: Gestion des accès privilégiés pour votre Microsoft 365 pour l’environnement de test d’entreprise
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,97 +14,97 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 ms.custom: Ent_TLGs
-description: Utilisez ce guide de laboratoire de test pour activer la gestion des accès privilégiés de votre Microsoft 365 environnement de test d’entreprise.
-ms.openlocfilehash: 424b7c09a89b20d134654293a1e9c9abd69d6ff2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Utilisez ce guide de laboratoire de test pour activer la gestion des accès privilégiés de votre Microsoft 365 pour l’environnement de test d’entreprise.
+ms.openlocfilehash: 0c92cbd398e4c388fe3c5999c5e0aa9973c4ee06
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208228"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092092"
 ---
-# <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>Gestion des accès privilégiés pour votre environnement de test Microsoft 365 entreprise
+# <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>Gestion des accès privilégiés pour votre Microsoft 365 pour l’environnement de test d’entreprise
 
-*Ce guide de laboratoire de test peut être utilisé pour les environnements Microsoft 365'entreprise et Office 365 Entreprise test.*
+*Ce guide de laboratoire de test peut être utilisé pour les Microsoft 365 pour les environnements de test d’entreprise et Office 365 Entreprise.*
 
-Cet article explique comment configurer la gestion des accès privilégiés pour renforcer la sécurité dans votre Microsoft 365 environnement de test d’entreprise.
+Cet article explique comment configurer la gestion des accès privilégiés pour renforcer la sécurité dans votre Microsoft 365 pour l’environnement de test d’entreprise.
 
 La configuration de la gestion des accès privilégiés implique trois phases :
 
-- [Phase 1 : Créer votre environnement de test Microsoft 365 entreprise](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Phase 1 : Créer votre Microsoft 365 pour l’environnement de test d’entreprise](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [Phase 2 : Configurer la gestion des accès privilégiés](#phase-2-configure-privileged-access-management)
 - [Phase 3 : Vérifier que l’approbation est requise pour les tâches avec élévation de privilèges](#phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks)
 
 ![Guides de laboratoire de test pour le cloud Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Pour obtenir une carte visuelle de tous les articles de la pile Microsoft 365 guide de laboratoire de test pour entreprise, Microsoft 365 pour la pile de guides de laboratoire de [test d’entreprise.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
+> Pour obtenir une carte visuelle de tous les articles du Microsoft 365 pour la pile des guides de laboratoire de test d’entreprise, accédez à [Microsoft 365 pour la pile des guides de laboratoire de test d’entreprise](../downloads/Microsoft365EnterpriseTLGStack.pdf).
   
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Phase 1 : Créer votre environnement de test Microsoft 365 entreprise
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Phase 1 : Créer votre Microsoft 365 pour l’environnement de test d’entreprise
 
-Si vous souhaitez configurer la gestion des accès privilégiés de manière légère avec la configuration minimale requise, suivez les instructions de la [configuration de base légère.](lightweight-base-configuration-microsoft-365-enterprise.md)
+Si vous souhaitez configurer la gestion des accès privilégiés de manière légère avec la configuration minimale requise, suivez les instructions de la [configuration de base légère](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Si vous souhaitez configurer la gestion des accès privilégiés dans une entreprise simulée, suivez les instructions de [l’authentification directe.](pass-through-auth-m365-ent-test-environment.md)
+Si vous souhaitez configurer la gestion des accès privilégiés dans une entreprise simulée, suivez les instructions de [l’authentification directe](pass-through-auth-m365-ent-test-environment.md).
   
 >[!NOTE]
->Le test de la gestion des accès privilégiés ne nécessite pas l’environnement de test d’entreprise simulée, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt des services de domaine Active Directory. Il est fourni ici en tant qu’option afin que vous pouvez tester la gestion des accès privilégiés et l’expérimenter dans un environnement qui représente une organisation classique.
+>Le test de la gestion des accès privilégiés ne nécessite pas l’environnement de test d’entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt services de domaine Active Directory. Il est fourni ici en tant qu’option pour vous permettre de tester la gestion des accès privilégiés et de l’expérimenter dans un environnement qui représente une organisation classique.
 
 ## <a name="phase-2-configure-privileged-access-management"></a>Phase 2 : Configurer la gestion des accès privilégiés
 
-Dans cette phase, configurez un groupe d’approbations et activez la gestion des accès privilégiés pour votre Microsoft 365 environnement de test d’entreprise. Pour plus d’informations et une vue d’ensemble de la gestion des accès privilégiés, voir [Privileged access management](../compliance/privileged-access-management-overview.md).
+Dans cette phase, configurez un groupe d’approbateurs et activez la gestion des accès privilégiés pour votre Microsoft 365 pour l’environnement de test d’entreprise. Pour plus d’informations et une vue d’ensemble de la gestion des accès privilégiés, consultez [Privileged Access Management](../compliance/privileged-access-management-overview.md).
 
 Pour configurer et utiliser l’accès privilégié dans votre organisation, effectuez les étapes suivantes.
 
-#### <a name="step-1-create-an-approvers-group"></a>[Étape 1 : Créer un groupe d’approbation](../compliance/privileged-access-management-configuration.md#step-1-create-an-approvers-group)
+#### <a name="step-1-create-an-approvers-group"></a>[Étape 1 : Créer un groupe d’approbateurs](../compliance/privileged-access-management-configuration.md#step-1-create-an-approvers-group)
 
-Avant de commencer à utiliser l’accès privilégié, déterminez qui aura l’autorité d’approbation pour les demandes entrantes d’accès aux tâches élevées et privilégiées. Tous les utilisateurs qui font partie du groupe d’approbations peuvent approuver les demandes d’accès. Pour utiliser l’accès privilégié, vous devez créer un groupe de sécurité à messagerie dans Microsoft 365. Dans votre environnement de test, nommez le nouveau groupe de sécurité « Privileged Access Approvers » et ajoutez l'« Utilisateur 3 » précédemment créé lors des étapes précédentes du guide de laboratoire de test.
+Avant de commencer à utiliser l’accès privilégié, déterminez qui aura l’autorité d’approbation pour les demandes entrantes d’accès aux tâches élevées et privilégiées. Tous les utilisateurs qui font partie du groupe Approbateurs peuvent approuver les demandes d’accès. Pour utiliser l’accès privilégié, vous devez créer un groupe de sécurité à extension messagerie dans Microsoft 365. Dans votre environnement de test, nommez le nouveau groupe de sécurité « Approbateurs d’accès privilégié » et ajoutez l'« utilisateur 3 » précédemment créé dans les étapes précédentes du guide de laboratoire de test.
 
 #### <a name="step-2-enable-privileged-access"></a>[Étape 2 : Activer l’accès privilégié](../compliance/privileged-access-management-configuration.md#step-2-enable-privileged-access)
 
-L’accès privilégié doit être explicitement allumé dans Microsoft 365 avec le groupe d’approbations par défaut, et il doit inclure un ensemble de comptes système que vous souhaitez exclure du contrôle d’accès de gestion des accès privilégiés. Veillez à activer l’accès privilégié dans votre organisation avant de commencer la phase 3 de ce guide.
+L’accès privilégié doit être explicitement activé dans Microsoft 365 avec le groupe approbateur par défaut, et il doit inclure un ensemble de comptes système que vous souhaitez exclure du contrôle d’accès de gestion des accès privilégiés. Veillez à activer l’accès privilégié dans votre organisation avant de commencer la phase 3 de ce guide.
 
 ## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>Phase 3 : Vérifier que l’approbation est requise pour les tâches avec élévation de privilèges
 
-Dans cette phase, vérifiez que la stratégie d’accès privilégié fonctionne et que les utilisateurs ont besoin d’approbation pour exécuter des tâches définies avec élévation de privilèges.
+Dans cette phase, vérifiez que la stratégie d’accès privilégié fonctionne et que les utilisateurs ont besoin d’une approbation pour exécuter des tâches avec élévation de privilèges définies.
 
 ### <a name="test-the-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>Tester la possibilité d’exécuter une tâche NON définie dans une stratégie d’accès privilégié
 
-Tout d’abord, connectez-vous à Exchange Management PowerShell avec les informations d’identification d’un utilisateur configuré avec le rôle de gestion des rôles Exchange dans votre environnement de test et essayez de créer une règle de journal. La [tâche New-JournalRule](/powershell/module/exchange/new-journalrule) n’est actuellement pas définie dans une stratégie d’accès privilégié pour votre organisation.
+Tout d’abord, connectez-vous à Exchange Management PowerShell avec les informations d’identification d’un utilisateur configuré avec le rôle de gestion des rôles Exchange dans votre environnement de test et essayez de créer une règle journal. La tâche [New-JournalRule](/powershell/module/exchange/new-journalrule) n’est actuellement pas définie dans une stratégie d’accès privilégié pour votre organisation.
 
-1. Sur votre ordinateur local, ouvrez et connectez-vous au module Exchange Online Remote PowerShell de **Microsoft Corporation** Microsoft Exchange Online  >  **Remote PowerShell Module** à l’aide des informations d’identification avec le rôle de gestion des rôles Exchange pour votre environnement de test.
-2. Dans Exchange PowerShell Gestion, créez une règle de journal pour votre organisation :
+1. Sur votre ordinateur local, ouvrez et connectez-vous au module Exchange Online Remote PowerShell de **Microsoft Corporation** >  **Microsoft Exchange Online module PowerShell à distance** à l’aide d’informations d’identification avec le rôle de gestion des rôles Exchange pour votre environnement de test.
+2. Dans Exchange Gestion PowerShell, créez une règle de journal pour votre organisation :
 
    ```ExchangeManagementPowerShell
    New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
    ```
 
-3. Découvrez que la nouvelle règle de journal a été créée avec succès dans Exchange PowerShell.
+3. Vérifiez que la nouvelle règle de journal a été créée avec succès dans Exchange Management PowerShell.
 
-### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>Créer une stratégie d’accès privilégié pour la New-JournalRule de travail
+### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>Créer une stratégie d’accès privilégié pour la tâche New-JournalRule
 
 >[!NOTE]
->Si vous n’avez pas déjà effectué les étapes 1 et 2 de la phase 2 de ce guide, assurez-vous de suivre les étapes pour créer un groupe d’approbation nommé « Approvers d’accès privilégié » afin d’activer l’accès privilégié dans votre environnement de test.
+>Si vous n’avez pas encore effectué les étapes 1 et 2 de la phase 2 de ce guide, veillez à suivre les étapes pour créer un groupe d’approbateurs nommé « Approbateurs d’accès privilégié » pour activer l’accès privilégié dans votre environnement de test.
 
-1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification avec Exchange rôle de gestion des rôles pour votre environnement de test.
-2. Dans le Centre d’administration, accédez **à Paramètres**  >  **sécurité & confidentialité**  >  **privilégié.**
-3. Sélectionnez **Gérer les stratégies et les demandes d’accès.**
-4. Sélectionnez **Configurer les stratégies,** puis **ajoutez une stratégie.**
-5. Dans les champs de listes, sélectionnez ou entrez les valeurs suivantes :
+1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) à l’aide d’informations d’identification avec le rôle de gestion des rôles Exchange pour votre environnement de test.
+2. Dans le Centre d’administration, accédez à **Paramètres** >  **Security & l’accès** **PrivacyPrivileged** > .
+3. Sélectionnez **Gérer les stratégies d’accès et les demandes**.
+4. Sélectionnez **Configurer les stratégies**, puis **sélectionnez Ajouter une stratégie**.
+5. Dans les champs déroulants, sélectionnez ou entrez les valeurs suivantes :
 
-    **Type de stratégie**: étendue **de stratégie de tâche**: Exchange stratégie **:** Nouveau type d’approbation de règle de **journal**: **Groupe** Approbation manuelle : Approbations d’accès privilégié  
+    **Type de stratégie** : **Étendue de la stratégie** de tâche : nom Exchange **Policy** : Nouveau **type d’approbation** de règle de journal : **Groupe d’approbation** manuelle : Approbateurs d’accès privilégié  
 
-6. Sélectionnez **Créer**, puis sélectionnez **Fermer**. La configuration et l’activé de la stratégie peuvent prendre quelques minutes. Veillez à laisser le temps à la stratégie d’être entièrement activée avant de tester l’exigence d’approbation à l’étape suivante.
+6. Sélectionnez **Créer**, puis sélectionnez **Fermer**. La configuration et l’activation complètes de la stratégie peuvent prendre quelques minutes. Veillez à laisser le temps à la stratégie d’être entièrement activée avant de tester l’exigence d’approbation à l’étape suivante.
 
-### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>Tester l’approbation requise pour la tâche New-JournalRule définie dans une stratégie d’accès privilégié
+### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>Condition d’approbation de test pour la tâche New-JournalRule définie dans une stratégie d’accès privilégié
 
-1. Sur votre ordinateur local, ouvrez et connectez-vous au module Exchange Online Remote PowerShell de **Microsoft Corporation** Microsoft Exchange Online  >  **Remote PowerShell Module** à l’aide des informations d’identification avec le rôle de gestion des rôles Exchange pour votre environnement de test.
+1. Sur votre ordinateur local, ouvrez et connectez-vous au module Exchange Online Remote PowerShell de **Microsoft Corporation** >  **Microsoft Exchange Online module PowerShell à distance** à l’aide d’informations d’identification avec le rôle de gestion des rôles Exchange pour votre environnement de test.
 
-2. Dans Exchange PowerShell Gestion, créez une règle de journal pour votre organisation :
+2. Dans Exchange Gestion PowerShell, créez une règle de journal pour votre organisation :
 
    ```ExchangeManagementPowerShell
    New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
    ```
 
-3. Affichez l’erreur « Autorisations insuffisantes » dans Exchange PowerShell de gestion :
+3. Affichez l’erreur « Autorisations insuffisantes » dans Exchange Management PowerShell :
 
    ```ExchangeManagementPowerShell
    Insufficient permissions. Please raise an elevated access request for this task.
@@ -114,45 +114,45 @@ Tout d’abord, connectez-vous à Exchange Management PowerShell avec les inform
        + PSComputerName        : outlook.office365.com
    ```
 
-### <a name="request-access-to-create-a-new-journal-rule-using-the-new-journalrule-task"></a>Demander l’accès pour créer une règle de journal à l’aide New-JournalRule tâche
+### <a name="request-access-to-create-a-new-journal-rule-using-the-new-journalrule-task"></a>Demander l’accès pour créer une règle de journal à l’aide de la tâche New-JournalRule
 
-1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification avec Exchange rôle de gestion des rôles pour votre environnement de test.
+1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) à l’aide d’informations d’identification avec le rôle de gestion des rôles Exchange pour votre environnement de test.
 
-2. Dans le Centre d’administration, accédez **à Paramètres**  >  **sécurité & confidentialité**  >  **privilégié.**
+2. Dans le Centre d’administration, accédez à **Paramètres** >  **Security & l’accès** **PrivacyPrivileged** > .
 
-3. Sélectionnez **Gérer les stratégies et les demandes d’accès.**
+3. Sélectionnez **Gérer les stratégies d’accès et les demandes**.
 
-4. Sélectionnez **Nouvelle requête.** Dans les champs de la baisse, sélectionnez les valeurs appropriées pour votre organisation :
+4. Sélectionnez **Nouvelle requête**. Dans les champs déroulants, sélectionnez les valeurs appropriées pour votre organisation :
 
-    **Type de** requête : étendue **de** demande de tâche : Exchange **demande** pour : Nouvelle durée de règle de journal **(heures)**: **2** commentaires : demander l’autorisation de créer une règle de journal  
+    **Type de demande** : **Étendue de la demande** de tâche : Exchange **Request pour** : Durée de la nouvelle règle de journal **(heures)** : 2 **Commentaires** : Demander l’autorisation de créer une règle de journal  
 
-5. Sélectionnez **Enregistrer,** puis **Fermez.** Votre demande est envoyée au groupe de l’approuveur par courrier électronique.
+5. Sélectionnez **Enregistrer**, puis **Fermer**. Votre demande sera envoyée au groupe de l’approbateur par e-mail.
 
-### <a name="approve-privileged-access-request-for-the-creation-of-a-new-journal-rule"></a>Approuver une demande d’accès privilégié pour la création d’une nouvelle règle de journal
+### <a name="approve-privileged-access-request-for-the-creation-of-a-new-journal-rule"></a>Approuver une demande d’accès privilégié pour la création d’une règle de journal
 
-1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification de l’utilisateur 3 dans votre environnement de test (membre du groupe de sécurité « Privileged Access Approvers » dans votre environnement de test).
+1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification de l’utilisateur 3 dans votre environnement de test (membre du groupe de sécurité « Approbateurs d’accès privilégié » dans votre environnement de test).
 
-2. Dans le Centre d’administration, accédez **à Paramètres**  >  **sécurité & confidentialité**  >  **privilégié.**
+2. Dans le Centre d’administration, accédez à **Paramètres** >  **Security & l’accès** **PrivacyPrivileged** > .
 
-3. Sélectionnez **Gérer les stratégies et les demandes d’accès.**
+3. Sélectionnez **Gérer les stratégies d’accès et les demandes**.
 
-4. Sélectionnez la demande en attente, puis sélectionnez **Approuver** pour accorder l’accès au compte d’utilisateur afin de créer une règle de journal. Le compte (l’utilisateur demandeur) reçoit un message électronique de confirmation que l’approbation a été accordée.
+4. Sélectionnez la demande en attente, puis **sélectionnez Approuver** pour accorder l’accès au compte d’utilisateur pour créer une règle de journal. Le compte (l’utilisateur demandeur) recevra une confirmation par e-mail indiquant que l’approbation a été accordée.
 
-### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>Tester la création d’une règle de journal avec un accès privilégié approuvé pour la New-JournalRule tâche
+### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>Tester la création d’une règle de journal avec un accès privilégié approuvé pour la tâche New-JournalRule
 
-1. Sur votre ordinateur local, ouvrez et connectez-vous au module Exchange Online Remote PowerShell de **Microsoft Corporation** Microsoft Exchange Online  >  **Remote PowerShell Module** à l’aide des informations d’identification avec le rôle de gestion des rôles Exchange pour votre environnement de test.
+1. Sur votre ordinateur local, ouvrez et connectez-vous au module Exchange Online Remote PowerShell de **Microsoft Corporation** >  **Microsoft Exchange Online module PowerShell à distance** à l’aide d’informations d’identification avec le rôle de gestion des rôles Exchange pour votre environnement de test.
 
-2. Dans Exchange PowerShell Gestion, créez une règle de journal pour votre organisation :
+2. Dans Exchange Gestion PowerShell, créez une règle de journal pour votre organisation :
 
    ```ExchangeManagementPowerShell
    New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
    ```
 
-3. Découvrez que la nouvelle règle de journal a été créée avec succès dans Exchange PowerShell.
+3. Vérifiez que la nouvelle règle de journal a été créée avec succès dans Exchange Management PowerShell.
 
 ## <a name="next-step"></a>Étape suivante
 
-Explorez [d’autres fonctionnalités de protection](m365-enterprise-test-lab-guides.md#information-protection) des informations dans votre environnement de test.
+Explorez d’autres fonctionnalités et fonctionnalités de [protection des informations](m365-enterprise-test-lab-guides.md#information-protection) dans votre environnement de test.
 
 ## <a name="see-also"></a>Voir aussi
 

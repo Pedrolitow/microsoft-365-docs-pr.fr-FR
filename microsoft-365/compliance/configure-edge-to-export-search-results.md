@@ -2,8 +2,8 @@
 title: Utiliser l’outil d’exportation eDiscovery dans Microsoft Edge
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous devez activer ClickOnce prise en charge pour utiliser la version la plus récente de Microsoft Edge pour télécharger les résultats de la recherche à partir de recherche de contenu et eDiscovery dans le Centre de sécurité et de conformité.
-ms.openlocfilehash: cd20a35a0a6ee2518667d21fadbca4577342de36
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 13556b08a0eaec5ed11bdaf09014a3988cd56829
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995775"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092434"
 ---
 # <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>Utiliser l’outil d’exportation eDiscovery dans Microsoft Edge
 

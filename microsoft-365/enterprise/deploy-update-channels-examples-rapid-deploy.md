@@ -4,7 +4,7 @@ author: kelleyvice-msft
 f1.keywords:
 - NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Découvrir comment une organisation qui déploie la dernière version utilise des canaux pour les applications Windows 10 et Microsoft 365.
-ms.openlocfilehash: 6b0226a226742a89dc65ca0d32792db03c77e465
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6f52bc8fc55fe94361961585aacae1f48c4fbce5
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193086"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092136"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>Exemple de déploiement à grande échelle des dernières versions
 
@@ -103,7 +103,7 @@ Processus de mises à jour en cours :
 
 Voici les produits, leurs canaux et les groupes de déploiement utilisés par cet exemple d’organisation. 
 
-![Groupes de déploiement pour le déploiement à grande échelle des dernières mises à jour.](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
+![Groupes de déploiement pour le déploiement à grande échelle des dernières versions.](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
 
 ## <a name="see-also"></a>Voir aussi
 

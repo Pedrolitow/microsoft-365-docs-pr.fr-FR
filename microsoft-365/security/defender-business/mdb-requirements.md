@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 75c3df32bb3103ad818524da0972567d3fd11cc8
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 32d0c7d762dd142fcf6cf14faf3f739422c6a3f9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000683"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095485"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>Microsoft Defender pour les PME exigences
 
@@ -61,7 +61,7 @@ Le tableau suivant répertorie les exigences de base pour configurer et utiliser
 > - Si vous avez un autre abonnement Microsoft 365 lorsque vous démarrez votre version d’évaluation de Defender Entreprise, vous pouvez utiliser votre service Azure AD existant. 
 > - Si vous utilisez [Microsoft 365 Business Premium](../../business/index.yml) lorsque vous démarrez votre version d’évaluation de Defender Entreprise, vous avez la possibilité de gérer les appareils dans Microsoft Intune. 
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Passez à [l’étape 2 : Attribuer des rôles et des autorisations dans Microsoft Defender pour les PME](mdb-roles-permissions.md).
  

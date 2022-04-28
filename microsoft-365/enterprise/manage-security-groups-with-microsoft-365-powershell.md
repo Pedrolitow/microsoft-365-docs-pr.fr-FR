@@ -1,8 +1,8 @@
 ---
-title: Gérer les groupes de sécurité avec PowerShell
+title: Gérer des groupes de sécurité avec PowerShell
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,37 +16,37 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - O365ITProTrain
-description: Découvrez comment utiliser PowerShell pour gérer les groupes de sécurité.
-ms.openlocfilehash: d07296b88e626e854c57152a079cc96e1e23e8d3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez comment utiliser PowerShell pour gérer des groupes de sécurité.
+ms.openlocfilehash: c1ae74e60eb00e74efe5ad881e9ce3c0ebb3cf12
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202882"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099408"
 ---
-# <a name="manage-security-groups-with-powershell"></a>Gérer les groupes de sécurité avec PowerShell
+# <a name="manage-security-groups-with-powershell"></a>Gérer des groupes de sécurité avec PowerShell
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez utiliser PowerShell pour Microsoft 365 comme alternative à l’Centre d'administration Microsoft 365 pour gérer les groupes de sécurité. 
+Vous pouvez utiliser PowerShell pour Microsoft 365 comme alternative au Centre d'administration Microsoft 365 pour gérer les groupes de sécurité. 
 
 Cet article décrit la liste, la création, la modification des paramètres et la suppression de groupes de sécurité. 
 
-Lorsqu’un bloc de commandes dans cet article nécessite que vous spécifiant des valeurs de variable, utilisez ces étapes.
+Lorsqu’un bloc de commandes de cet article requiert que vous spécifiez des valeurs de variable, procédez comme suit.
 
-1. Copiez le bloc de commandes dans le Presse-papiers et collez-le dans Bloc-notes ou dans l’environnement de script intégré à PowerShell (ISE).
-2. Remplissez les valeurs des variables et supprimez les caractères « < » et « > ».
-3. Exécutez les commandes dans la fenêtre PowerShell ou powerShell ISE.
+1. Copiez le bloc de commandes dans le Presse-papiers et collez-le dans Bloc-notes ou l’environnement de script intégré PowerShell (ISE).
+2. Renseignez les valeurs de variable et supprimez les caractères « < » et « > ».
+3. Exécutez les commandes dans la fenêtre PowerShell ou l’ise PowerShell.
 
-Voir [Gérer l’appartenance à un groupe de](maintain-group-membership-with-microsoft-365-powershell.md) sécurité pour gérer l’appartenance au groupe avec PowerShell.
+Consultez [Maintenir l’appartenance au groupe de sécurité](maintain-group-membership-with-microsoft-365-powershell.md) pour gérer l’appartenance à un groupe avec PowerShell.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 
-Tout [d’abord, connectez-vous à Microsoft 365 client.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Tout [d’abord, connectez-vous à votre locataire Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
-### <a name="list-your-groups"></a>Lister vos groupes
+### <a name="list-your-groups"></a>Répertorier vos groupes
 
-Utilisez cette commande pour lister tous vos groupes.
+Utilisez cette commande pour répertorier tous vos groupes.
 
 ```powershell
 Get-AzureADGroup
@@ -75,7 +75,7 @@ $groupName="<display name of the group>"
 Get-AzureADGroup | Where { $_.DisplayName -eq $groupName } | Select *
 ```
 
-Ensuite, utilisez [l’article Set-AzureADGroup](/powershell/module/azuread/set-azureadgroup) pour déterminer comment modifier un paramètre.
+Ensuite, utilisez l’article [Set-AzureADGroup](/powershell/module/azuread/set-azureadgroup) pour déterminer comment modifier un paramètre.
 
 ### <a name="remove-a-security-group"></a>Supprimer un groupe de sécurité
 
@@ -94,14 +94,14 @@ Utilisez ces commandes pour afficher les propriétaires actuels d’un groupe de
 $groupName="<display name of the group>"
 Get-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId
 ```
-Utilisez ces commandes pour ajouter un compte d’utilisateur par son nom **d’utilisateur principal (UPN)** aux propriétaires actuels d’un groupe de sécurité.
+Utilisez ces commandes pour ajouter un compte d’utilisateur par son **nom d’utilisateur principal (UPN)** aux propriétaires actuels d’un groupe de sécurité.
 
 ```powershell
 $userUPN="<UPN of the user account to add>"
 $groupName="<display name of the group>"
 Add-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectId
 ```
-Utilisez ces commandes pour ajouter un compte d’utilisateur par **son** nom complet aux propriétaires actuels d’un groupe de sécurité.
+Utilisez ces commandes pour ajouter un compte d’utilisateur par son **nom d’affichage** aux propriétaires actuels d’un groupe de sécurité.
 
 ```powershell
 $userName="<Display name of the user account to add>"
@@ -116,7 +116,7 @@ $groupName="<display name of the group>"
 Remove-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId -OwnerId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectId
 ```
 
-Utilisez ces commandes pour supprimer un compte d’utilisateur par **son** nom d’affichage pour les propriétaires actuels d’un groupe de sécurité.
+Utilisez ces commandes pour supprimer un compte d’utilisateur par son **nom d’affichage** aux propriétaires actuels d’un groupe de sécurité.
 
 ```powershell
 $userName="<Display name of the user account to remove>"
@@ -126,11 +126,11 @@ Remove-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -e
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le module Microsoft Azure Active Directory pour Windows PowerShell.
 
-Tout [d’abord, connectez-vous à Microsoft 365 client.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Tout [d’abord, connectez-vous à votre locataire Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-### <a name="list-your-groups"></a>Lister vos groupes
+### <a name="list-your-groups"></a>Répertorier vos groupes
 
-Utilisez cette commande pour lister tous vos groupes.
+Utilisez cette commande pour répertorier tous vos groupes.
 
 ```powershell
 Get-MsolGroup
@@ -159,7 +159,7 @@ $groupName="<display name of the group>"
 Get-MsolGroup | Where { $_.DisplayName -eq $groupName } | Select *
 ```
 
-Ensuite, utilisez [l’article Set-MsolGroup](/powershell/module/msonline/set-msolgroup) pour déterminer comment modifier un paramètre.
+Utilisez ensuite l’article [Set-MsolGroup](/powershell/module/msonline/set-msolgroup) pour déterminer comment modifier un paramètre.
 
 ### <a name="remove-a-security-group"></a>Supprimer un groupe de sécurité
 

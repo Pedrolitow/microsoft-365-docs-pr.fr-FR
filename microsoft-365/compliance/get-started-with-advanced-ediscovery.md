@@ -2,8 +2,8 @@
 title: Configurer eDiscovery (Premium) dans Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment configurer eDiscovery (Premium) afin que vous puissiez commencer à créer et gérer des cas. Il décrit également les abonnements et licences Microsoft requis. Après avoir effectué quelques étapes rapides, l’outil eDiscovery (Premium) est prêt à être utilisé.
-ms.openlocfilehash: dff99ab432ce5f2380a6fd5a81e855c946146c8c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: b23203d374b7ecf2f447c2f6b906345537ec6cf4
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997711"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092412"
 ---
 # <a name="set-up-microsoft-purview-ediscovery-premium"></a>Configurer Microsoft Purview eDiscovery (Premium)
 
@@ -90,6 +90,6 @@ Pour plus d’informations sur la configuration et l’utilisation du modèle de
 > [!NOTE]
 > Il s’agit d’une étape facultative que vous pouvez effectuer à tout moment. Le fait de ne pas implémenter le modèle de détection des privilèges avocat-client ne vous empêche pas de créer et d’utiliser des cas eDiscovery (Premium).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Après avoir configuré eDiscovery (Premium), vous êtes prêt à [créer un cas](create-and-manage-advanced-ediscoveryv2-case.md).

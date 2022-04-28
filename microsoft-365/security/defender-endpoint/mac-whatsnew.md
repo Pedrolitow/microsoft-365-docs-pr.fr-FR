@@ -15,22 +15,29 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: d36d05a4abe36ffe63e53eb8e164e248755de0ec
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 104bc9f10838be782ea70e3efe567ddee714d0a9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665907"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100212"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1016415-20122032164150"></a>101.64.15 (20.122032.16415.0)
+
+- Correction d’une régression introduite dans la version 101.61.69 où l’icône de menu État affichait parfois une icône d’erreur, même si aucune action n’était requise de la part de l’utilisateur final
+- Amélioration du `conflicting_applications` champ pour `mdatp health` afficher uniquement les 10 processus les plus récents et inclure les noms des processus. Cela facilite l’identification des processus potentiellement en conflit avec Microsoft Defender pour point de terminaison pour Mac.
+- Correction d’un bogue dans `mdatp device-control removable-media policy list` lequel l’ID du fournisseur et l’ID de produit étaient affichés en tant que décimaux au lieu de hexadécimals
+- Améliorations des performances & d’autres correctifs de bogues
 
 ## <a name="1016169-20122022161690"></a>101.61.69 (20.122022.16169.0)
 

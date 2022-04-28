@@ -2,7 +2,7 @@
 title: Feuille de route pour la fin de la prise en charge d'Exchange 2010
 ms.author: dstrome
 author: dstrome
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -12,12 +12,12 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 a atteint la fin du support. Utilisez cette feuille de route de planification pour préparer la mise à niveau vers Exchange Online ou une version plus récente de Exchange Server localement.
-ms.openlocfilehash: 24834a600a14c46287434f8f273fcd139d117376
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: f8515aa6f743927f25bf3dffa3c5bed0306816ac
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822769"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095287"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Feuille de route pour la fin de la prise en charge d'Exchange 2010
 
@@ -186,7 +186,7 @@ Exchange 2016 inclut toutes les fonctionnalités des versions précédentes de E
 ||Collaboration de documents en ligne|
 
 
-|Considération|Informations supplémentaires|
+|Considération|Plus d’informations|
 |---|---|
 |Dates de fin du support|Comme Exchange 2010, chaque version de Exchange a sa propre date de fin de support : <br/><br/> Exchange 2013 - Avril 2023 <br/><br/> Exchange 2016 - Octobre 2025 <br/><br/> Plus la date de fin du support est précoce, plus tôt vous devrez effectuer une autre migration. Avril 2023 est beaucoup plus proche que vous ne le pensez!|
 |Chemin de migration vers Exchange 2013 ou 2016|Le chemin de migration de Exchange 2010 vers une version plus récente est le même que vous choisissiez Exchange 2013 ou Exchange 2016 : <br/><br/> Installez Exchange 2013 ou 2016 dans votre organisation Exchange 2010 existante. <br/><br/> Déplacer des services et d’autres infrastructures vers Exchange 2013 ou 2016. <br/><br/> Déplacez les boîtes aux lettres et les dossiers publics vers Exchange 2013 ou 2016 Désactivez les serveurs restants Exchange 2010.|

@@ -2,7 +2,7 @@
 title: Optimisation des performances Exchange Online
 ms.author: krowley
 author: tracyp
-manager: laurawi
+manager: scotv
 ms.date: 12/14/2017
 audience: Admin
 ms.topic: troubleshooting
@@ -15,39 +15,39 @@ f1.keywords:
 - CSH
 ms.custom: Adm_O365
 ms.assetid: 026e83cb-a945-4543-97b0-a8af6e80ac61
-description: Cet article contient des conseils généraux et des liens vers d’autres ressources qui vous indiquent comment améliorer les performances des Exchange Online.
-ms.openlocfilehash: 5feb704a1da83ef93ebc3bbe72fb12c7f0c54574
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Cet article contient des conseils généraux et des liens vers d’autres ressources qui vous indiquent comment améliorer les performances de Exchange Online.
+ms.openlocfilehash: 3b048db5e3ea5090ce5ed2391269f8167c459538
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201576"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092026"
 ---
 # <a name="tune-exchange-online-performance"></a>Optimisation des performances Exchange Online
 
-Cet article contient des conseils généraux et des liens vers d’autres ressources qui vous indiquent comment améliorer les performances des Exchange Online, en particulier devant une migration. Cet article fait partie de la planification réseau et de l’optimisation des performances [pour Office 365](./network-planning-and-performance.md) projet.
+Cet article contient des conseils généraux et des liens vers d’autres ressources qui vous indiquent comment améliorer les performances de Exchange Online, en particulier devant une migration. Cet article fait partie de la [planification réseau et de l’optimisation des performances pour Office 365](./network-planning-and-performance.md) projet.
    
-## <a name="things-to-consider-in-order-to-improve-exchange-online-performance"></a>Éléments à prendre en compte afin d’améliorer Exchange Online performances
+## <a name="things-to-consider-in-order-to-improve-exchange-online-performance"></a>Éléments à prendre en compte pour améliorer Exchange Online performances
 
-Pour améliorer la vitesse de migration et réduire les contraintes de bande passante de votre organisation pour Exchange Online, prenons en compte les considérations suivantes :
+Pour améliorer la vitesse de migration et réduire les contraintes de bande passante de votre organisation pour Exchange Online, tenez compte des points suivants :
   
-- **Réduisez la taille des boîtes aux lettres.** Une taille de boîte aux lettres plus petite améliore la vitesse de migration. 
+- **Réduisez les tailles de boîte aux lettres.** Une taille de boîte aux lettres plus petite améliore la vitesse de migration. 
     
-- **Utilisez les fonctionnalités de déplacement de boîtes aux lettres avec un déploiement Exchange hybride.** Avec un Exchange hybride, le courrier hors connexion (sous la forme . Fichiers OST) ne nécessite pas de re-téléchargement lors de la migration vers Exchange Online. Cela réduit considérablement vos besoins en bande passante de téléchargement. 
+- **Utilisez les fonctionnalités de déplacement de boîte aux lettres avec un déploiement hybride Exchange.** Avec un déploiement hybride Exchange, courrier hors connexion (sous la forme de . Les fichiers OST) ne nécessitent pas de nouveau téléchargement lors de la migration vers Exchange Online. Cela réduit considérablement vos besoins en bande passante de téléchargement. 
     
-- **Planifier des déplacements de boîtes aux lettres pendant les périodes de faible trafic Internet et de faible Exchange’utilisation.** Lors de la planification des déplacements, les demandes de migration sont envoyées au proxy de réplication de boîte aux lettres et peuvent ne pas avoir lieu immédiatement. 
+- **Planifiez les déplacements de boîte aux lettres pendant les périodes de faible trafic Internet et de faible utilisation locale Exchange.** Lors de la planification des déplacements, les demandes de migration sont envoyées au proxy de réplication de boîte aux lettres et peuvent ne pas avoir lieu immédiatement. 
     
-- **Utilisez des fenêtres popouts légères pour Outlook sur le web.** Les fenêtres pop-out allégées fournissent des versions plus petites et moins intensives en mémoire de certains messages électroniques dans Microsoft Edge ou Internet Explorer en rendant certains composants sur le serveur. Pour plus d’informations, voir [Utiliser des fenêtres publicitaires légères pour réduire la mémoire utilisée lors de la lecture des messages électroniques.](https://support.office.com/article/a6d6ba01-2562-4c3d-a8f1-78748dd506cf)
+- **Utilisez des fenêtres contextuelles maigres pour Outlook sur le web.** Les fenêtres contextuelles maigres fournissent des versions plus petites et moins gourmandes en mémoire de certains messages électroniques dans Microsoft Edge ou Internet Explorer en affichant certains composants sur le serveur. Pour plus d’informations, consultez [Utiliser des fenêtres contextuelles maigres pour réduire la mémoire utilisée lors de la lecture des messages électroniques](https://support.office.com/article/a6d6ba01-2562-4c3d-a8f1-78748dd506cf).
 
 
 ## <a name="general-advice"></a>Conseils généraux
 
-- Assurez-vous que la recherche DNS pour outlook.office.com le centre de données MS à un emplacement d’entrée logique pour votre emplacement.
+- Assurez-vous que la recherche DNS pour outlook.office.com entre dans le centre de données MS à un emplacement d’entrée logique pour votre emplacement.
 
-- Mise en cache de boîte aux lettres de recherche et choix des options appropriées (re. période de mise en cache, mise en cache de boîtes aux lettres partagées, et courrier électronique).
+- Recherchez la mise en cache de boîte aux lettres et choisissez les options appropriées (re. période de mise en cache, mise en cache de boîtes aux lettres partagées, etc.).
 
-- Conservez vos Outlook de connexions VPN (à un bureau central) avant qu’elles ne passent par Internet.
+- Empêchez vos données Outlook de transmettre des connexions VPN (à un bureau central) avant qu’elles ne passent sur Internet.
 
-- Assurez-vous que vos données de boîte aux lettres respectent les limites imposées aux montants des dossiers et des éléments.
+- Assurez-vous que vos données de boîte aux lettres respectent les limitations relatives aux montants des dossiers et des éléments.
     
-Pour plus d’informations Exchange performances de migration, voir Office 365 [de migration et les meilleures pratiques.](https://support.office.com/article/d9acb371-fd6c-4c14-aa8e-db5cbe39aa57)
+Pour plus d’informations sur les performances de migration Exchange, consultez [Office 365 performances de migration et les meilleures pratiques](https://support.office.com/article/d9acb371-fd6c-4c14-aa8e-db5cbe39aa57).

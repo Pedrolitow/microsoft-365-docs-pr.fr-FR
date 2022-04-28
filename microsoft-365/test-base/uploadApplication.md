@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: cd0d463e234c439d8b57576375fd6a91e512f753
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 23c21eae9ad149aea5442c0c8a00f716f3d22506
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995267"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099474"
 ---
 # <a name="upload-your-test-base-package-zip"></a>Télécharger votre package de base de test (Zip) 
 
@@ -112,13 +112,107 @@ Les étapes ci-dessous fournissent un guide sur la façon de renseigner les dét
 
     :::image type="content" alt-text="Affichage des détails du test." source="Media/TestDetails.png":::
 
-## <a name="next-steps"></a>Prochaines étapes
 
-Notre prochain article traite du chargement de vos fichiers binaires dans notre service.
+
+## <a name="upload-your-binaries-dependencies-and-scripts"></a>Télécharger vos fichiers binaires, dépendances et scripts
+
+Dans cet onglet, vous allez charger un package zip unique contenant vos fichiers binaires, dépendances et scripts utilisés pour exécuter votre suite de tests.
+
+> [!NOTE]
+> La taille du package zip doit être comprise entre un minimum de 10 Mo et un maximum de 2 Go.
+
+**fichier zip de package Télécharger**
+
+:::image type="content" alt-text="Télécharger vos fichiers binaires." source="Media/AddBinaries.png":::
+
+  - Les dépendances chargées peuvent inclure des frameworks de test, des moteurs de script ou des données accessibles pour exécuter votre application ou les cas de test. Par exemple, vous pouvez charger Selenium et un programme d’installation de pilote web pour vous aider à exécuter des tests basés sur un navigateur.
+  - Il est recommandé de s’assurer que vos activités de script sont conservées modulaires, c’est-à-dire. 
+    - Le `Install` script effectue uniquement des opérations d’installation.
+    - Le `Launch` script lance uniquement l’application.
+    - Le `Close` script ferme uniquement l’application.
+    - Le script facultatif `Uninstall` désinstalle uniquement l’application.
+
+**Actuellement, le portail prend uniquement en charge les scripts PowerShell.**
+
+
+
+## <a name="the-tasks-tab"></a>Onglet Tâches
+
+Sous l’onglet Tâches, vous devez fournir les chemins d’accès à vos scripts de test qui se trouvent dans le dossier zip que vous avez chargé sous l’onglet binaires.
+
+  - **Scripts de test out of box :** Tapez les chemins relatifs de vos scripts d’installation, de lancement, de fermeture et de désinstallation. Vous avez également la possibilité de sélectionner des paramètres supplémentaires pour le script d’installation.
+  - **Scripts de test fonctionnel :** Tapez le chemin relatif de chaque script de test fonctionnel chargé. Des scripts de test fonctionnel supplémentaires peuvent être ajoutés à l’aide du ```Add Script``` bouton. Vous avez besoin d’au moins un (1) script et pouvez ajouter jusqu’à huit (8) scripts de test fonctionnels. 
+  
+    Les scripts s’exécutent dans la séquence dans laquelle ils sont répertoriés. Un échec dans un script particulier empêche l’exécution des scripts suivants.
+    Vous avez également la possibilité de sélectionner des paramètres supplémentaires pour chaque script fourni.
+
+**Définir le chemin d’accès du script**
+
+:::image type="content" alt-text="Image de la tâche de test." source="Media/testtask.png":::
+
+Voici un exemple de comment fournir le chemin relatif sur une structure de dossiers :
+
+_**Zip_file_uploaded**_
+~~~
+├── file1.exe
+
+├── ScriptX.ps1
+
+├── folder1
+
+│   ├── file3.exe
+
+│   ├── script.ps1
+~~~
+  - **ScriptX.ps1l’aurais** fait. _ScriptX.ps1_ comme chemin d’accès relatif.
+  - **Script.ps1** aurait _dossier1/script.ps1_ comme chemin d’accès relatif.
+
+
+
+## <a name="choose-your-test-options"></a>Choisissez vos options de test. 
+
+L’onglet ```Test Options``` s’applique aux utilisateurs qui souhaitent effectuer des tests fonctionnels pour indiquer quand le correctif Windows Update doit être appliqué dans la séquence d’exécution de leurs scripts de test fonctionnels.
+
+:::image type="content" alt-text="Image des options de test. Tests fonctionnels ou out-of-box." source="Media/testoptions.png":::
+
+Sélectionnez _**Vérifier**_ pour accéder à l’onglet suivant et passer en revue les options de test sélectionnées.
+
+
+
+## <a name="review-your-selections-to-create-your-package"></a>Passez en revue vos sélections pour créer votre package.
+
+1. Dans cet onglet, le service affiche les détails de votre test et exécute une vérification rapide de l’exhaustivité.
+
+    Un message **d’échec de validation ou de** **validation** indique si vous pouvez passer aux étapes suivantes ou non.
+
+2. Passez en revue les détails de votre test et, si vous êtes satisfait, cliquez sur le bouton **Créer** .
+
+    :::image type="content" alt-text="Afficher la validation." source="Media/validation.png" lightbox="Media/validation.png":::
+
+3. Cela intégrera votre package à l’environnement de base de test. Si votre package est créé avec succès, un test automatisé qui vérifie si votre package peut être exécuté correctement sur Azure est déclenché.
+
+    :::image type="content" alt-text="Résultat réussi." source="Media/successful.png":::
+
+    > [!NOTE]
+    > Vous recevrez une notification de la Portail Azure pour vous informer de la réussite ou de l’échec de la vérification du package.
+    >
+    > Notez que le processus peut prendre jusqu’à 24 heures. Il est donc probable que votre page web ait expiré si vous n’y êtes pas actif. Par conséquent, la notification ne vous informera pas de la fin de cette exécution à la demande.
+
+    - Si cela se produit, vous pouvez afficher l’état de votre package sous l’onglet **Gérer les packages** .
+
+      :::image type="content" alt-text="Image pour la gestion des packages." source="Media/managepackages.png" lightbox="Media/managepackages.png":::
+
+    - Pour les tests réussis, leurs résultats sont visibles via les pages **Résumé** des tests, **Résultats des mises à jour de sécurité** et **Résultats des mises à jour** des fonctionnalités à intervalles réguliers, souvent quelques jours après votre chargement.
+  
+    - En cas d’échec des tests, vous devez charger un nouveau package. 
+
+      Vous pouvez télécharger les **journaux de test** pour une analyse plus approfondie à partir des **pages de résultats des mises à jour de sécurité** et des **mises à jour des** fonctionnalités.
+
+    - Si vous rencontrez des échecs de test répétés, contactez testbasepreview@microsoft.com avec les détails de votre erreur.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Découvrez nos instructions de contenu via le lien ci-dessous.
 
 > [!div class="nextstepaction"]
-> [Étape suivante](binaries.md)
-
-<!---
-Add button for next page
--->
+> [Étape suivante](contentguideline.md)

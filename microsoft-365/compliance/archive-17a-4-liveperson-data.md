@@ -2,8 +2,8 @@
 title: Configurer un connecteur pour archiver les données de LivePerson Conversational Cloud dans Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur DataParser LivePerson Conversational Conversational 17a-4 pour importer et archiver des données LivePerson Conversational Cloud dans Microsoft 365.
-ms.openlocfilehash: 215818fec6dc186e20e19fcf247193a0616676eb
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: d32e9e7135685ee4d595365ee8b5ab5c1eecf151
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998081"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099342"
 ---
 # <a name="set-up-a-connector-to-archive-liveperson-conversational-cloud-data"></a>Configurer un connecteur pour archiver les données de LivePerson Conversational Cloud
 

@@ -1,5 +1,5 @@
 ---
-title: Collaborer avec des participants externes dans un canal
+title: Collaborer avec des participants externes dans un canal partagé
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -16,17 +16,17 @@ ms.custom: ''
 localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
-description: Découvrez comment utiliser des canaux partagés avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: e6ee2a6be6ec54c002898e301fbd53eed25a328f
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+description: Découvrez comment activer les canaux partagés dans Microsoft Teams pour la collaboration avec des personnes extérieures à votre organisation.
+ms.openlocfilehash: 2d439bc3056555daf9bfa9b07131d521e4ee3b4e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64835825"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098145"
 ---
-# <a name="collaborate-with-external-participants-in-a-channel"></a>Collaborer avec des participants externes dans un canal
+# <a name="collaborate-with-external-participants-in-a-shared-channel"></a>Collaborer avec des participants externes dans un canal partagé
 
-Si vous souhaitez permettre à vos utilisateurs de collaborer avec des personnes extérieures à votre organisation dans [canaux partagés](/MicrosoftTeams/shared-channels), vous devez configurer la connexion directe B2B pour chaque organisation avec laquelle vous souhaitez collaborer. (Vous pouvez également [Activer les canaux partagés avec toutes les organisations externes](/microsoft-365/solutions/allow-direct-connect-with-all-organizations).)
+Si vous souhaitez permettre à vos utilisateurs de collaborer avec des personnes extérieures à votre organisation dans des [canaux partagés](/MicrosoftTeams/shared-channels), vous devez configurer la connexion directe B2B pour chaque organisation avec laquelle vous souhaitez collaborer. (Vous pouvez également [Activer les canaux partagés avec toutes les organisations externes](/microsoft-365/solutions/allow-direct-connect-with-all-organizations).)
 
 Lorsque vous activez des canaux partagés avec une autre organisation :
 
@@ -46,7 +46,7 @@ Pour configurer des canaux partagés
 1. Sélectionnez la stratégie pour laquelle vous souhaitez activer les canaux partagés, puis sélectionnez **Modifier**.
 1. Sélectionnez les options que vous souhaitez activer :
     - Pour permettre aux propriétaires d’équipe de créer des canaux partagés, activez **Créer des canaux partagés** .
-    - Pour permettre aux propriétaires d’équipe de partager des canaux partagés avec des personnes extérieures à l’organisation, activez **Partager des canaux partagés en externe** .
+    - Pour permettre aux propriétaires d’équipe de partager des canaux partagés avec des personnes extérieures à l’organisation, activez **Partager des canaux partagés en externe**.
     - Pour permettre aux utilisateurs d’être invités à des canaux partagés dans d’autres organisations, activez **Peut être invité à des canaux partagés externes** .
 1. Sélectionnez **Appliquer**.
 
@@ -78,9 +78,9 @@ Pour ajouter une organisation
 1. Sélectionnez **Identités externes**, puis sélectionnez **Paramètres d’accès entre locataires (prévisualisation).**
 1. Sélectionnez **Paramètres de l’organisation**.
 1. Sélectionnez **Ajouter une organisation**.
-1. Dans le volet **Ajouter une organisation**, tapez le nom de domaine complet (ou l’ID de locataire) de l’organisation.
-1. Sélectionnez l’organisation dans les résultats de la recherche, puis sélectionnez **Ajouter**.
-1. L’organisation apparaît dans la liste **Paramètres de l’organisation**. À ce stade, tous les paramètres d’accès de cette organisation sont hérités de vos paramètres par défaut.
+1. Dans le volet **Ajouter une organisation**, tapez le nom de domaine complet (ou l’ID de locataire) de l’organisation, puis appuyez sur Entrée.
+1. Sélectionnez **Ajouter**.
+1. À ce stade, tous les paramètres d’accès de cette organisation sont hérités de vos paramètres par défaut.
 
 ### <a name="configure-inbound-settings"></a>Configurer les paramètres entrants
 
@@ -104,7 +104,7 @@ Pour configurer les paramètres sortants d’une organisation
 1. Dans [Azure Active Directory](https://aad.portal.azure.com), sélectionnez **Identités externes**, puis sélectionnez **Paramètres d’accès entre locataires (préversion)**.
 1. Sélectionnez le lien d’accès sortant pour l’organisation que vous souhaitez modifier.
 1. Sous l’onglet **Connexion directe B2B**, choisissez **Personnaliser les paramètres**.
-1. Sous l’onglet **Utilisateurs et groupes externes**, choisissez **Autoriser l’accès** et définissez une **Cible** de tous les utilisateurs.
+1. Sous l’onglet **Utilisateurs et groupes externes**, choisissez **Autoriser l’accès** et définissez **S’applique à** pour tous les utilisateurs.
 1. Sous l’onglet **Applications externes**, choisissez **Autoriser l’accès** et **Sélectionner les applications externes**.
 1. Sélectionnez **Ajouter des applications Microsoft**.
 1. Sélectionnez l’application **Office 365**, puis choisissez **Sélectionner**.

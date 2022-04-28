@@ -2,8 +2,8 @@
 title: Contenu stocké dans des boîtes aux lettres Exchange Online
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Le contenu produit par les applications cloud dans Microsoft 365 est stocké ou associé à la boîte aux lettres Exchange Online d’un utilisateur. Ce contenu peut être recherché à l’aide des outils Microsoft eDiscovery.
-ms.openlocfilehash: b5e8434f5345cda8ef4f637b3dff2d3cf704f748
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 113cbb9c386dab2339fa1b265b3443efe1ba91fd
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000793"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091674"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>Contenu stocké dans Exchange Online boîtes aux lettres pour eDiscovery
 
@@ -45,7 +45,7 @@ Le tableau suivant répertorie les applications qui stockent ou associent des do
 |Skype Entreprise|Les conversations dans Skype Entreprise sont stockées dans le dossier Historique des conversations dans la boîte aux lettres d’un utilisateur. Si la boîte aux lettres d’un participant à une réunion Skype est placée en attente de litige ou affectée à une stratégie de rétention, les fichiers joints à une réunion sont conservés dans la boîte aux lettres des participants.|
 |Sway<sup>*</sup>|Les Sways sont stockés sous la forme d’un fichier HTML joint à un e-mail et stockés dans un dossier masqué dans la boîte aux lettres de l’utilisateur qui a créé le sway. Lorsque vous exportez du contenu à partir de Sway dans un fichier PST, ces données se trouvent dans le dossier **ApplicationDataRoot** dans un sous-dossier nommé avec le GUID suivant : **905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba**.|
 |Tâches|Les tâches de l’application Tâches (qui sont les mêmes tâches que celles accessibles dans Outlook) sont stockées dans la boîte aux lettres d’un utilisateur.|
-|Équipes|Les conversations qui font partie d’un canal Teams sont associées à la boîte aux lettres Teams. Les conversations qui font partie de la liste des conversations dans Teams (également appelées *conversations 1 x N*) sont associées à la boîte aux lettres des utilisateurs qui participent à la conversation. En outre, les informations récapitulatives pour les réunions et les appels dans un canal Teams sont associées aux boîtes aux lettres des utilisateurs qui ont composé la réunion ou l’appel. Par conséquent, lorsque vous recherchez du contenu Teams, vous recherchez du contenu dans la boîte aux lettres Teams dans les conversations de canal et recherchez du contenu dans les boîtes aux lettres utilisateur dans les conversations 1 x N.|
+|Teams|Les conversations qui font partie d’un canal Teams sont associées à la boîte aux lettres Teams. Les conversations qui font partie de la liste des conversations dans Teams (également appelées *conversations 1 x N*) sont associées à la boîte aux lettres des utilisateurs qui participent à la conversation. En outre, les informations récapitulatives pour les réunions et les appels dans un canal Teams sont associées aux boîtes aux lettres des utilisateurs qui ont composé la réunion ou l’appel. Par conséquent, lorsque vous recherchez du contenu Teams, vous recherchez du contenu dans la boîte aux lettres Teams dans les conversations de canal et recherchez du contenu dans les boîtes aux lettres utilisateur dans les conversations 1 x N.|
 |À faire|Les tâches (appelées tâches, qui sont *enregistrées dans des listes de tâches*) dans l’application To-Do sont stockées dans la boîte aux lettres d’un utilisateur.|
 |Yammer|Les conversations et commentaires au sein d’une communauté Yammer sont associés à la boîte aux lettres Microsoft 365 Group, ainsi qu’à la boîte aux lettres utilisateur de l’auteur et aux destinataires nommés (utilisateurs @ mentionnés ou Cc’ed). Les messages privés envoyés en dehors d’une communauté Yammer sont stockés dans la boîte aux lettres des utilisateurs qui participent au message privé.|
 |

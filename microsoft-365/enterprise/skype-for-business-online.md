@@ -2,7 +2,7 @@
 title: Skype Entreprise Online dans Office 365 - Aide de l'administrateur
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: landing-page
@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
 description: En tant qu’administrateur, trouvez de l’aide pour configurer des parties de Skype Entreprise Online, notamment votre réseau, vos réunions et votre messagerie instantanée, ainsi que l’accès externe pour les utilisateurs.
-ms.openlocfilehash: 3be6eaaf5d39ebb62dcc4a7cc090633147681301
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: d9c290cbf756cb0ec7a8a6f042409498d7a379b4
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682127"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092070"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Skype Entreprise Online dans Office 365 - Aide de l'administrateur
 
 ## <a name="were-here-to-help"></a>Nous sommes là pour vous aider !
 
-En tant qu'administrateur pour Office 365 pour les entreprises, vous pouvez contacter gratuitement nos agents de support qualifiés. Si vous ne trouvez pas les informations dont vous avez besoin sur ce site web, contactez le support technique pour les produits **[d’entreprise - Aide de l’administrateur](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+En tant qu'administrateur pour Office 365 pour les entreprises, vous pouvez contacter gratuitement nos agents de support qualifiés. Si vous ne trouvez pas les informations dont vous avez besoin sur ce site web, **[contactez le support technique pour les produits professionnels - Aide de l’administrateur](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
   
 ## <a name="let-your-users-contact-external-skype-or-skype-for-business-users"></a>Permettre à vos utilisateurs de contacter des utilisateurs de Skype ou Skype Entreprise externes
 
@@ -65,11 +65,11 @@ Voir aussi :
     
 ## <a name="fix-problems-for-your-users"></a>Résoudre les problèmes que rencontrent vos utilisateurs
 
-- [Définir des options personnelles dans Skype Entreprise](https://support.office.com/article/68bacc31-71d3-44c3-a4d4-64da78c447aa#bkmk-stop-automatic-startup)
+- [Définir les options personnelles dans Skype Entreprise](https://support.office.com/article/68bacc31-71d3-44c3-a4d4-64da78c447aa#bkmk-stop-automatic-startup)
     
-- [Vous avez besoin d’aide pour vous Skype Entreprise ?](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
+- [Vous avez besoin d’aide pour vous connecter à Skype Entreprise ?](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
     
-- [Vidéo : Connectez-vous et Skype Entreprise](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
+- [Vidéo : Se connecter et se déconnecter de Skype Entreprise](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
     
 - [Définir les options de périphérique audio dans Skype Entreprise](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
     
@@ -89,6 +89,6 @@ Voir aussi :
     
 - [Lancement d'une téléconférence avec Skype Entreprise](https://support.office.com/article/8dc8ac52-91ac-4db9-8672-11551fdaf997)
     
- **Pour plus d’articles pour les utilisateurs, [voir Skype Entreprise’aide](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410).**
+ **Pour plus d’articles pour les utilisateurs, consultez [Skype Entreprise aide](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410).**
   
 

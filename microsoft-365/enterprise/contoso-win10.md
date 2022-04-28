@@ -4,7 +4,7 @@ author: kelleyvice-msft
 f1.keywords:
 - NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,16 +14,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la façon dont Contoso a utilisé Microsoft Endpoint Configuration Manager pour déployer les mises à niveau sur place pour Windows 10 Entreprise.
-ms.openlocfilehash: 7fe6efd176e156b75337ba79db6c1db839b0ed03
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 082c60de614c5a125a1fd2af6ba9d187f21ca39e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208312"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095353"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Déploiement de Windows 10 Entreprise pour Contoso
 
-Avant le déploiement large de Microsoft 365 pour entreprise, Contoso avait des PC et périphériques compatibles Windows exécutant une combinaison de Windows 7 (10 %) Windows 8.1 (65 %) et Windows 10 (25 %). Contoso souhaitait mettre à niveau ses PC pour Windows 10 Entreprise tirer parti de la sécurité avancée et réduire la surcharge informatique des déploiements automatisés de mises à jour. 
+Avant le déploiement à grande échelle de Microsoft 365 pour les entreprises, Contoso avait Windows pc et appareils compatibles exécutant un mélange de Windows 7 (10 %), Windows 8.1 (65 %) et Windows 10 (25 %). Contoso souhaitait mettre à niveau ses PC pour Windows 10 Entreprise tirer parti de la sécurité avancée et réduire la surcharge informatique liée aux déploiements automatisés de mises à jour. 
 
 Après évaluation de ses besoins d’infrastructure et de ses besoins métier, Contoso a identifié les exigences principales suivantes en matière de déploiement :
 
@@ -54,7 +54,7 @@ Contoso dispose d’une infrastructure Configuration Manager (branche actuelle) 
 
 ## <a name="planning-process"></a>Processus de planification
 
-Contoso a utilisé upgrade readiness dans Windows Analytics pour déterminer l’ensemble des applications installées et leur compatibilité avec Windows 10 Entreprise.
+Contoso a utilisé Upgrade Readiness dans Windows Analytics pour déterminer l’ensemble des applications installées et leur compatibilité avec Windows 10 Entreprise.
 
 ## <a name="deployment-process"></a>Processus de déploiement
 
@@ -62,15 +62,15 @@ Pour effectuer le déploiement de mises à niveau sur place de Windows 10 Entre
 
 1. Activation d’un cache d’homologue pour le gestionnaire de configuration
 2. Création de packages Windows personnalisés basés sur des images du centre de service de gestion des licences en volume
-3. Utilisé Configuration Manager pour déployer les packages Windows vers les points de distribution sur leur réseau et les builds déployées sur les trois groupes de transit de validation et de déploiement.
+3. Utilisé Configuration Manager pour déployer les packages Windows sur des points de distribution sur leur réseau et des builds déployées sur les trois groupes intermédiaires de validation et de déploiement.
 4. Exécution de l’évaluation de réussite pour les PC et les périphériques dans les trois anneaux de gestion intermédiaire de la validation et du déploiement utilisant des solutions de conformité de mise à jour et d’intégrité des périphériques de Windows Analytics.
-5. Sur la base des Windows analytics, Contoso a déterminé la version de Windows 10 Entreprise à déployer vers le groupe de déploiement à grande échelle.
-6. A lancé les séquences de tâches de déploiement configuration Manager pour déployer le package Windows sélectionné dans le groupe de déploiement étendu.
-7. Pc et appareils surveillés dans le groupe de déploiement à grande échelle à l’aide des solutions de conformité d’état et de mise à jour des périphériques pour résoudre les problèmes.
+5. En fonction des informations Windows Analytics, Contoso a déterminé la version de Windows 10 Entreprise à déployer sur le groupe de déploiement étendu.
+6. Exécution des séquences de tâches de déploiement Configuration Manager pour déployer le package Windows sélectionné sur le groupe de déploiement étendu.
+7. Pc et appareils surveillés dans le groupe de déploiement étendu à l’aide des solutions Device Health et Update Compliance pour résoudre les problèmes.
 
 Voici la mise à niveau sur place et l’architecture de déploiement de mises à jour en cours de Contoso.
 
-![Infrastructure de déploiement Windows 10 Entreprise contoso.](../media/contoso-win10/contoso-win10-fig1.png)
+![Infrastructure de déploiement Windows 10 Entreprise de Contoso.](../media/contoso-win10/contoso-win10-fig1.png)
 
 Cette infrastructure se compose des éléments suivants :
 
@@ -78,11 +78,11 @@ Cette infrastructure se compose des éléments suivants :
   - obtient des images pour les packages Windows 10 Entreprise à partir du centre de gestion des licences en volume Microsoft dans The Microsoft Network ;
   - est le point d’administration central pour les packages de déploiement.
 - Les points de distribution régionaux généralement situés dans les centres régionaux de Contoso.
-- Windows Pc et périphériques à différents emplacements qui reçoivent et installent les packages de déploiement pour la mise à niveau sur place ou les mises à jour en cours en fonction de l’appartenance au groupe.
+- Windows pc et appareils dans différents emplacements qui reçoivent et installent les packages de déploiement pour la mise à niveau sur place ou les mises à jour en cours en fonction de l’appartenance au groupe.
 
 ## <a name="next-step"></a>Étape suivante
 
-Découvrez comment Contoso tire parti de son infrastructure Configuration Manager pour déployer et maintenir la Applications Microsoft 365 pour les grandes entreprises [au](contoso-o365pp.md) sein de son organisation. 
+Découvrez comment Contoso tire parti de son infrastructure Configuration Manager pour [déployer et maintenir les Applications Microsoft 365 pour les grandes entreprises actuelles](contoso-o365pp.md) au sein de son organisation. 
 
 ## <a name="see-also"></a>Voir aussi
 

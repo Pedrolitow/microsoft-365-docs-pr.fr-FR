@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3a67d73475301096df8be691f2c5e0dc6db23db8
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 77766c153582f519aa0ba9853d18c216092747bc
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862189"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092302"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 
@@ -81,8 +81,8 @@ Microsoft Defender pour point de terminaison utilise la combinaison de technolog
 > - Microsoft Defender pour point de terminaison a démontré des fonctionnalités de détection et d’optique de pointe dans la dernière évaluation MITRE. Lire : [Aperçu de l'évaluation basée sur MITRE ATT&CK .](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 
->[!IMPORTANT]
->Les fonctionnalités des plates-formes non Windows peuvent être différentes de celles de Windows. Pour plus d’informations sur les fonctionnalités disponibles pour les plates-formes non Windows, consultez [Microsoft Defender pour point de terminaison pour les plates-formes non Windows](/security/defender-endpoint/non-windows).
+> [!IMPORTANT]
+> Les fonctionnalités des plates-formes non Windows peuvent être différentes de celles de Windows. Pour plus d’informations sur les fonctionnalités disponibles pour les plates-formes non Windows, consultez [Microsoft Defender pour point de terminaison pour les plates-formes non Windows](/microsoft-365/security/defender-endpoint/non-windows).
 
 <a name="tvm"></a>
 
@@ -153,7 +153,7 @@ Defender pour point de terminaison s’intègre directement aux différentes sol
 
 **[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)**
 
-Avec Microsoft 365 Defender, Defender pour point de terminaison et diverses solutions de sécurité Microsoft forment une suite de défense d’entreprise unifiée pré et post-violation qui s’intègre en mode natif entre les points de terminaison, les identités, les e-mails et les applications pour détecter, empêcher, examiner et répondre automatiquement aux attaques sophistiquées.
+Avec Microsoft 365 Defender, Defender pour point de terminaison, et diverses solutions de sécurité Microsoft, forment une suite de défense d’entreprise unifiée pré et post-violation qui s’intègre en mode natif entre les points de terminaison, les identités, les e-mails et les applications pour détecter, empêcher, examiner et répondre automatiquement aux attaques sophistiquées.
 
 
 ## <a name="training-for-security-analysts"></a>Formation pour les analystes de sécurité

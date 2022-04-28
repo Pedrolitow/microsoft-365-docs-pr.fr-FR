@@ -1,14 +1,14 @@
 ---
-title: Créer un site de communications SharePoint site
+title: Créer un site de communication SharePoint
 f1.keywords:
 - NOCSH
 ms.author: samanro
 author: samanro
-manager: scotv
+manager: dansimp
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,52 +23,54 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez pourquoi et comment créer un site de communication SharePoint pour votre campagne ou entreprise avec Microsoft 365.
-ms.openlocfilehash: ba0f8f559bc8843a61baca1bbb6615c596ffdc65
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
-ms.translationtype: MT
+description: Découvrez pourquoi et comment créer un site de communication SharePoint pour votre campagne ou votre entreprise avec Microsoft 365, et protégez l’équipe contre les cyberattaques et les intrusions contre les programmes malveillants et d’autres menaces en raison d’un partage de fichiers incorrect.
+ms.openlocfilehash: 1e1e2792e4a667737118974b95ae5f77cb6ae224
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634380"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100178"
 ---
 # <a name="create-a-communications-site-in-sharepoint"></a>Créer un site de communication dans SharePoint
 
-Un excellent moyen de communiquer les priorités, de partager des documents de stratégie et de mettre en évidence les événements à venir consiste à utiliser un site de communication dans SharePoint. Les sites de communication sont pour partager des éléments à grande échelle au sein de votre entreprise ou de votre campagne ; il s’agit de votre site de stratégie interne.
+Un excellent moyen de communiquer les priorités, de partager des documents de stratégie et de mettre en évidence les événements à venir consiste à utiliser un site de communication dans SharePoint, et c’est ce dont cette mission est l’objet. Les sites de communication sont destinés à partager les choses à l’échelle de votre entreprise ou de votre campagne &mdash;, c’est votre site de stratégie interne et votre espace tactique. 
 
 ## <a name="best-practices"></a>Meilleures pratiques
 
-Incluez les éléments suivants dans votre site de communications :
+Incluez les éléments suivants dans un site communications :
 
-1. Ajoutez votre logo et vos couleurs en tant qu’image d’en-tête et thème.
+1. Ajoutez votre logo et vos couleurs sous forme d’image d’en-tête et de thème.
 
-2. Dirigez votre stratégie, vos messages, vos documents importants, un répertoire et votre FAQ dans **un élément Web Part Hero**.
+2. Dirigez avec votre stratégie, votre message, vos documents importants, un répertoire et des questions fréquentes (FAQ) dans un **composant WebPart Hero**.
 
-3. Inclure une déclaration de PDG ou de candidat à l’équipe dans un partie **Web De texte**.
+3. Incluez une déclaration de chef de la direction ou de candidat à l’équipe dans un **composant WebPart Texte**.
 
-4. Ajoutez des événements à un volet **Web** Événements afin que tout le monde puisse voir ce qui arrive.
+4. Ajoutez des événements à un **composant WebPart Événements** afin que tout le monde puisse voir ce qui se passe.
 
-5. Ajoutez des photos que les personnes peuvent utiliser ou partager dans un partie **Web De galerie d’images**.
+5. Ajoutez des photos que les utilisateurs peuvent utiliser ou partager dans un **composant WebPart Galerie d’images**.
 
-![Diagramme d’une page SharePoint communications avec espace pour les éléments communs nécessaires à une campagne.](../media/m365-democracy-comms-site.png)
+![Diagramme d’une page SharePoint Communications avec de l’espace pour les éléments communs dont une campagne aurait besoin.](../media/m365-democracy-comms-site.png)
 
-## <a name="infographic-create-a-communications-site-infographic"></a>Infographie : infographie créer un site de communications
+## <a name="infographic-create-a-communications-site-infographic"></a>Infographie : Créer une infographie de site de communication
 
-Les liens suivants pour PowerPoint et PDF peuvent être téléchargés et imprimés au format tabloïd (également appelé format format ledger, 11 x 17 ou A3).
+Les liens suivants pour PowerPoint et PDF peuvent être téléchargés et imprimés au format tabloïd (également appelé registre, 11 x 17 ou A3).
 
-[![Image de l’infographie du site de communications.](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](https://download.microsoft.com/download/3/f/f/3ff49b41-e5a4-4993-a00c-7f791a80b627/M365CampaignsCreateCommunicationSite.pdf)
+[![Image pour l’infographie du site de communication](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](https://download.microsoft.com/download/3/f/f/3ff49b41-e5a4-4993-a00c-7f791a80b627/M365CampaignsCreateCommunicationSite.pdf)
 
-[PDF](https://download.microsoft.com/download/3/f/f/3ff49b41-e5a4-4993-a00c-7f791a80b627/M365CampaignsCreateCommunicationSite.pdf) |  [PowerPoint](https://download.microsoft.com/download/3/f/f/3ff49b41-e5a4-4993-a00c-7f791a80b627/M365CampaignsCreateCommunicationSite.pptx)
+[PDF](https://download.microsoft.com/download/3/f/f/3ff49b41-e5a4-4993-a00c-7f791a80b627/M365CampaignsCreateCommunicationSite.pdf) | [PowerPoint](https://download.microsoft.com/download/3/f/f/3ff49b41-e5a4-4993-a00c-7f791a80b627/M365CampaignsCreateCommunicationSite.pptx)
 
 ## <a name="set-it-up"></a>Configuration
 
 1. Connectez-vous à https://Office.com.
 
-2. Dans le coin supérieur gauche de la page, sélectionnez l’icône du lanceur d’applications, **puis** SharePoint vignette. Si vous ne voyez pas la vignette **SharePoint**, cliquez sur la vignette **Sites** ou sur Tout  si SharePoint n’est pas visible.
+2. Dans le coin supérieur gauche de la page, sélectionnez l'icône du lanceur d'applications Icône du lanceur d'applications Office 365, puis la vignette **SharePoint**. Si la vignette **SharePoint** n'apparaît pas, cliquez sur la vignette **Sites** ou sur **Tout** si SharePoint n'est pas visible.
 
-3. En haut de la page d SharePoint d’accueil, cliquez **sur + Créer un site** et choisissez l’option **Site de communication**.
+3. En haut de la page d'accueil SharePoint, cliquez sur **+ Créer un site** et choisissez l'option **Site de communication**.
 
-En savoir [plus sur les sites de communications](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) et comment [créer un site de communication dans SharePoint Online](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb).
+Découvrez tout [sur les sites de communication](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) et la [création d’un site de communication dans SharePoint Online](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb).
 
 ## <a name="admin-settings"></a>Paramètres d’administration
 
-Si le lien **+** Créer un site n’est pas disponible, il se peut que la création de sites libre-service ne soit pas disponible dans Microsoft 365. Pour créer un site d’équipe, contactez la personne qui administre Microsoft 365 de votre organisation. Si vous êtes un administrateur Microsoft 365, voir Gérer la création de sites dans [SharePoint Online](/sharepoint/manage-site-creation) pour activer la création de sites libre-service pour votre organisation ou Gérer les sites dans le nouveau Centre d’administration [SharePoint](/sharepoint/manage-sites-in-new-admin-center) pour créer un site à partir du Centre d’administration <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint</a>.
+Si vous ne voyez pas le lien **+ Créer** un site, il se peut que la création de sites en libre-service ne soit pas disponible dans Microsoft 365. Pour créer un site d'équipe, contactez la personne qui administre Microsoft 365 dans votre organisation. Si vous êtes un administrateur Microsoft 365, voir [Gérer la création de sites dans SharePoint Online](/sharepoint/manage-site-creation) pour activer la création de sites en libre-service pour votre organisation ou [Gérer les sites dans le nouveau centre d'administration SharePoint ](/sharepoint/manage-sites-in-new-admin-center)pour créer un site à partir du <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centre d'administration SharePoint</a>.
+
+Félicitations &mdash;, vous avez terminé la mission ! Maintenant, concentrez-vous immédiatement sur [la protection des appareils gérés](m365bp-protect-devices.md) pour l’ensemble de l’organisation !

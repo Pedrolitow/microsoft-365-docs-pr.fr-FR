@@ -4,7 +4,7 @@ author: kelleyvice-msft
 f1.keywords:
 - NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment Contoso utilise les fonctionnalités de protection des informations dans Microsoft 365 pour les entreprises afin de sécuriser leurs ressources numériques dans le cloud.
-ms.openlocfilehash: 70d5a0a6fba7204177771256d9a508c76a010d6d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: eda36fab658a8352289a6245c565e54758fdd87a
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64931580"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092180"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protection des informations de Contoso Corporation
 
@@ -41,7 +41,7 @@ Contoso a effectué une analyse de ses données et déterminé les niveaux de cl
 Le tableau suivant répertorie les stratégies d’informations Contoso.
 
 
-| Valeur | Accès | Rétention des données | Protection des informations |
+| Valeur | Access | Rétention des données | Protection des informations |
 |:-------|:-----|:-----|:-----|
 | Valeur commerciale faible (Niveau 1: Ligne de base) | Autorisez l’accès à tous.  | 6 mois | Utiliser le chiffrement. |
 | Valeur commerciale moyenne (Niveau 2: Sensible) | Autorisez l’accès aux employés, sous-traitants et partenaires de Contoso. <BR><BR> Utiliser l’authentification multi-facteur (MFA), le chiffrement TLS (Transport Layer Security) et la gestion des applications mobiles (MAM). | 2 ans  | Utiliser les valeurs de hachage pour l’intégrité des données.  |

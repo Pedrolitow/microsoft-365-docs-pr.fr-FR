@@ -1,10 +1,10 @@
 ---
-title: Stratégies de conformité des appareils pour votre environnement Microsoft 365 de test d’entreprise
+title: Stratégies de conformité des appareils pour votre Microsoft 365 pour l’environnement de test d’entreprise
 f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
@@ -13,70 +13,70 @@ ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Utilisez ce guide de laboratoire de test pour ajouter des stratégies de conformité d’appareil Intune à votre Microsoft 365 environnement de test d’entreprise.
-ms.openlocfilehash: ec73211a21e9e064b729b93d9e88b7c5c69b21fe
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Utilisez ce guide de laboratoire de test pour ajouter Intune stratégies de conformité des appareils à votre Microsoft 365 pour l’environnement de test d’entreprise.
+ms.openlocfilehash: 3037ca846fe74fb8de51c78799e69c510821a034
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150809"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099452"
 ---
-# <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>Stratégies de conformité des appareils pour votre environnement Microsoft 365 de test d’entreprise
+# <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>Stratégies de conformité des appareils pour votre Microsoft 365 pour l’environnement de test d’entreprise
 
-*Ce Guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
+*Ce guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
 
-Cet article explique comment ajouter une stratégie de conformité des appareils Intune pour les appareils Windows 10 et les Applications Microsoft 365 pour les grandes entreprises à votre environnement de test Microsoft 365 entreprise.
+Cet article explique comment ajouter une stratégie de conformité d’appareil Intune pour Windows 10 appareils et Applications Microsoft 365 pour les grandes entreprises à votre Microsoft 365 pour l’environnement de test d’entreprise.
 
 L’ajout d’une stratégie de conformité d’appareil Intune implique deux phases :
-- [Phase 1 : Créer votre environnement de test Microsoft 365 entreprise](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
-- [Phase 2 : Création d’une stratégie de conformité des appareils Windows 10 appareils](#phase-2-create-a-device-compliance-policy-for-windows-10-devices)
+- [Phase 1 : Créer votre Microsoft 365 pour l’environnement de test d’entreprise](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Phase 2 : Créer une stratégie de conformité des appareils pour les appareils Windows 10](#phase-2-create-a-device-compliance-policy-for-windows-10-devices)
 
 ![Guides de laboratoire de test pour le cloud Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Pour obtenir une carte visuelle de tous les articles de la pile Microsoft 365 guide de laboratoire de test pour entreprise, Microsoft 365 pour la pile de guides de laboratoire de [test d’entreprise.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
+> Pour obtenir une carte visuelle de tous les articles du Microsoft 365 pour la pile des guides de laboratoire de test d’entreprise, accédez à [Microsoft 365 pour la pile des guides de laboratoire de test d’entreprise](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Phase 1 : Créer votre environnement de test Microsoft 365 entreprise
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Phase 1 : Créer votre Microsoft 365 pour l’environnement de test d’entreprise
 
-Si vous souhaitez configurer des stratégies MAM de manière légère avec la configuration minimale requise, suivez les instructions de la [configuration de base légère.](lightweight-base-configuration-microsoft-365-enterprise.md)
+Si vous souhaitez configurer des stratégies GAM de manière légère avec la configuration minimale requise, suivez les instructions de la [configuration de base légère](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Si vous souhaitez configurer des stratégies MAM dans une entreprise simulée, suivez les instructions de [l’authentification directe.](pass-through-auth-m365-ent-test-environment.md)
+Si vous souhaitez configurer des stratégies GAM dans une entreprise simulée, suivez les instructions de [l’authentification directe](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Le test de la gestion automatisée des licences et de l’appartenance à un groupe ne nécessite pas l’environnement de test d’entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt AD DS (Active Directory Domain Services). Il est fourni ici en tant qu’option afin que vous pouvez tester la gestion automatisée des licences et l’appartenance à un groupe et l’expérimenter dans un environnement qui représente une organisation classique.
+> Le test des licences automatisées et de l’appartenance aux groupes ne nécessite pas l’environnement de test d’entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt services de domaine Active Directory (AD DS). Il est fourni ici en tant qu’option afin que vous puissiez tester la gestion automatisée des licences et l’appartenance à un groupe et l’expérimenter dans un environnement qui représente une organisation classique.
 >  
 
-## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>Phase 2 : Création d’une stratégie de conformité des appareils Windows 10 appareils
+## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>Phase 2 : Créer une stratégie de conformité des appareils pour les appareils Windows 10
 
-Dans cette phase, vous allez créer une stratégie de conformité des appareils Windows 10 appareils. Cette phase utilise Microsoft Intune et le [centre d Microsoft Endpoint Manager’administration](https://go.microsoft.com/fwlink/?linkid=2109431) pour ajouter un groupe et créer une stratégie de conformité.
+Dans cette phase, vous créez une stratégie de conformité des appareils pour Windows 10 appareils. Cette phase utilise Microsoft Intune et le [centre d’administration Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) pour ajouter un groupe et créer une stratégie de conformité.
 
-1. Go to the [Centre d'administration Microsoft 365](https://admin.microsoft.com), sign in to your Microsoft 365 test lab subscription with your global administrator account, and select the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank">Endpoint Manager admin center</a>.
+1. Accédez au [Centre d'administration Microsoft 365](https://admin.microsoft.com), connectez-vous à votre Microsoft 365 abonnement de laboratoire de test avec votre compte d’administrateur général, puis sélectionnez le <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank">centre d’administration Endpoint Manager</a>.
 
-    Si un message similaire à **Vous n’avez** pas encore activé la gestion des appareils s’affiche, sélectionnez Intune comme autorité de gestion des périphériques. Pour les étapes spécifiques, voir [Définir l’autorité de gestion des appareils mobiles.](/mem/intune/fundamentals/mdm-authority-set)
+    Si un message similaire à **Vous n’avez pas encore activé la gestion des appareils** s’affiche, sélectionnez Intune en tant qu’autorité MDM. Pour connaître les étapes spécifiques, consultez [Définir l’autorité de gestion des appareils mobiles](/mem/intune/fundamentals/mdm-authority-set).
 
-    Le Centre Endpoint Manager’administration de l’entreprise se concentre sur la gestion des appareils et des applications. Pour une visite guidée de ce centre d’administration, voir didacticiel : [Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)pas à pas dans Microsoft Endpoint Manager .
+    Le centre d’administration Endpoint Manager se concentre sur la gestion des appareils et les applications. Pour une visite guidée de ce centre d’administration, consultez [didacticiel : Intune de procédure](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) pas à pas dans Microsoft Endpoint Manager.
 
-2. Dans **groupes,** ajoutez un  nouveau groupe **Microsoft 365** ou de sécurité nommé **Utilisateurs** Windows 10'appareil géré, avec un type **d’appartenance** affecté. Dans les étapes suivantes, vous allez affecter votre stratégie de conformité à ce groupe. 
+2. Dans **Groupes**, ajoutez un nouveau **Microsoft 365** ou un groupe **de sécurité** nommé **Utilisateurs de l’appareil Managed Windows 10**, avec un type d’appartenance **attribué**. Dans les étapes suivantes, vous allez affecter votre stratégie de conformité à ce groupe. 
 
-    Pour les étapes spécifiques et pour  plus d’informations **sur Microsoft 365** ou les groupes de sécurité, voir Ajouter des groupes pour organiser les utilisateurs et [les appareils.](/mem/intune/fundamentals/groups-add)
+    Pour connaître les étapes spécifiques et pour plus d’informations sur **Microsoft 365** ou les groupes **de sécurité**, consultez [Ajouter des groupes pour organiser les utilisateurs et les appareils](/mem/intune/fundamentals/groups-add).
 
-3. Dans **Les appareils,** créez une stratégie Windows 10 conformité. Affectez cette stratégie au **groupe d’utilisateurs Windows 10 d’appareil géré** que vous avez créé.
+3. Dans **Appareils**, créez une stratégie de conformité Windows 10. Affectez cette stratégie au groupe **d’utilisateurs de l’appareil Managed Windows 10** que vous avez créé.
 
-    Dans votre stratégie, vous pouvez bloquer des mots de passe simples, exiger un pare-feu, exiger l’exécution du service anti-programme malveillant De Microsoft Defender, etc. Une stratégie de conformité inclut généralement les paramètres de base, ou un minimum minimal, pour chaque appareil.
+    Dans votre stratégie, vous pouvez bloquer des mots de passe simples, exiger un pare-feu, exiger l’exécution du service Microsoft Defender Antimalware, etc. Une stratégie de conformité inclut généralement les paramètres de base, ou le strict minimum que chaque appareil doit avoir.
 
-    Pour les étapes spécifiques et pour plus d’informations sur les paramètres de conformité disponibles que vous pouvez configurer, voir Utiliser des stratégies de conformité pour définir des règles pour les appareils [que vous gérez.](/mem/intune/protect/device-compliance-get-started)
+    Pour connaître les étapes spécifiques et pour plus d’informations sur les paramètres de conformité disponibles que vous pouvez configurer, consultez [Utiliser des stratégies de conformité pour définir des règles pour les appareils que vous gérez](/mem/intune/protect/device-compliance-get-started).
 
-Lorsque vous avez terminé, vous avez une stratégie de conformité des appareils pour tester les membres du groupe d’utilisateurs Windows 10 **géré.**
+Lorsque vous avez terminé, vous disposez d’une stratégie de conformité des appareils pour tester les membres dans le groupe **Utilisateurs d’appareils Windows 10 managés**.
   
 ## <a name="next-step"></a>Étape suivante
 
-Explorez [d’autres fonctionnalités de gestion des](m365-enterprise-test-lab-guides.md#mobile-device-management) appareils mobiles dans votre environnement de test.
+Explorez d’autres fonctionnalités et fonctionnalités de [gestion des appareils mobiles](m365-enterprise-test-lab-guides.md#mobile-device-management) dans votre environnement de test.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Microsoft 365 guides de laboratoire de test pour entreprise.](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 pour les guides de laboratoire de test d’entreprise](m365-enterprise-test-lab-guides.md).
   
-[Inscrire des appareils iOS et Android dans votre environnement de test Microsoft 365 entreprise](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+[Inscrire des appareils iOS et Android dans votre Microsoft 365 pour l’environnement de test d’entreprise](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
   
 [Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 

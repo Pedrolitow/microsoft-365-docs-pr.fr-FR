@@ -2,8 +2,8 @@
 title: Utiliser l’envoi de lecteurs pour importer des fichiers PST
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: L’administrateur peut apprendre à importer en bloc des fichiers PST dans Microsoft 365 boîtes aux lettres en copiant des fichiers PST sur un disque dur, puis en les expédiant à Microsoft.
-ms.openlocfilehash: d2255a01c49e3837365735e1c3300b7f6b34c42c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 4f3c38c203b98fd4448657edfac6ee9b72a515be
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995995"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095441"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Utiliser l’expédition de lecteur pour importer les fichiers PST de votre organisation
 
@@ -115,7 +115,7 @@ La première étape consiste à télécharger l’outil et à l’utiliser à l�
   
 1. Accédez à <https://compliance.microsoft.com> et connectez-vous à l'aide des informations d'identification d'un compte administrateur dans votre organisation.
 
-2. Dans le volet de navigation gauche du portail de conformité, cliquez sur **Importation** de gouvernance \> **des informations**.
+2. Dans le volet de navigation gauche du portail de conformité, cliquez sur **Importation** de **gestion du cycle de** \> vie des données.
     
     > [!NOTE]
     > Comme indiqué précédemment, vous devez disposer des autorisations appropriées pour accéder à la page **Importer** dans le portail de conformité.
@@ -243,7 +243,7 @@ L'étape suivante consiste à créer la tâche d'importation PST dans le service
   
 1. Accédez à <https://compliance.microsoft.com> et connectez-vous à l'aide des informations d'identification d'un compte administrateur dans votre organisation.
 
-2. Dans le volet de navigation gauche du portail de conformité, cliquez sur **Importation** de gouvernance \> **des informations**.
+2. Dans le volet de navigation gauche du portail de conformité, cliquez sur **Importation** de **gestion du cycle de** \> vie des données.
 
 3. Sous l’onglet **Importer**, cliquez sur l’![Icône Ajouter.](../media/ITPro-EAC-AddIcon.gif)**nouvelle tâche d’importation**.
 
@@ -327,7 +327,7 @@ Une fois le disque dur envoyé à Microsoft, effectuez les étapes suivantes sur
   
 1. Accédez à <https://compliance.microsoft.com> et connectez-vous à l'aide des informations d'identification d'un compte administrateur dans votre organisation.
 
-2. Dans le volet de navigation gauche du portail de conformité, cliquez sur **Gouvernance des informations > Importer**.
+2. Dans le volet de navigation gauche du portail de conformité, cliquez sur **Data lifecycle** **managementImport** > .
 
 3. Sous l’onglet **Importer** , cliquez sur le travail de l’expédition de lecteur pour laquelle vous souhaitez entrer le numéro de suivi.
 
@@ -353,7 +353,7 @@ Une fois les fichiers PST chargés sur Azure, l’état est remplacé par **Anal
   
 1. Accédez à <https://compliance.microsoft.com> et connectez-vous à l'aide des informations d'identification d'un compte administrateur dans votre organisation.
 
-2. Dans le volet de navigation gauche du portail de conformité, cliquez sur Gouvernance \> **des informations** **Importer*****.
+2. Dans le volet de navigation gauche du portail de conformité, cliquez sur Gestion \> du **cycle de vie des données** **Importer****.
 
 3. Sous l’onglet **Importer**, sélectionnez le travail d’importation que vous avez créé à l’étape 4, puis cliquez sur **Importer pour Office 365**.
   
@@ -392,7 +392,7 @@ Pour installer l’Explorateur Stockage Microsoft Azure et vous connecter à vot
 
 1. Accédez à <https://compliance.microsoft.com> et connectez-vous à l'aide des informations d'identification d'un compte administrateur dans votre organisation.
 
-2. Dans le volet gauche du portail de conformité, cliquez sur **Gouvernance des informations > Importer**.
+2. Dans le volet gauche du portail de conformité, cliquez sur **Data lifecycle** **managementImport** > .
 
 3. Sous l’onglet **Importer**, cliquez sur l’![Icône Ajouter.](../media/ITPro-EAC-AddIcon.gif)**nouvelle tâche d’importation**.
 
