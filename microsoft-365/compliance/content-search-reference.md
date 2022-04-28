@@ -2,8 +2,8 @@
 title: Référence des fonctionnalités pour la recherche du contenu
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Cet article contient des informations de référence sur l’outil eDiscovery de recherche de contenu dans le portail de conformité Microsoft Purview pour vous aider à en savoir plus sur la recherche de contenu.
-ms.openlocfilehash: 72088b1a1bd2e3f3ba2c38ee827c6eb46b7c893a
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 8d7f1497a0dbd400536dd74c5abd4b9e3be7e29f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995709"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097115"
 ---
 # <a name="feature-reference-for-content-search"></a>Référence des fonctionnalités pour la recherche du contenu
 
@@ -192,7 +192,7 @@ Vous pouvez utiliser la propriété d’e-mail **ItemClass** ou la condition de 
 
 ## <a name="searching-inactive-mailboxes"></a>Recherche des boîtes aux lettres inactives
 
-Vous pouvez effectuer une recherche dans les boîtes aux lettres inactives dans une recherche de contenu. Pour obtenir une liste des boîtes aux lettres inactives de votre organisation, exécutez la commande `Get-Mailbox -InactiveMailboxOnly` dans Exchange Online PowerShell. Vous pouvez également accéder à **Gouvernance des informations** \> **Rétention** dans le Centre de sécurité & conformité, puis cliquer sur **Plus**![Ellipses de la barre de navigation.](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Boîtes aux lettres inactives**.
+Vous pouvez effectuer une recherche dans les boîtes aux lettres inactives dans une recherche de contenu. Pour obtenir une liste des boîtes aux lettres inactives de votre organisation, exécutez la commande `Get-Mailbox -InactiveMailboxOnly` dans Exchange Online PowerShell. Vous pouvez également accéder à la gestion du **cycle de vie des**\>**données** – Conservation dans le portail de conformité Microsoft Purview, puis cliquer **sur Autres**![ ellipses de la barre de navigation.](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Boîtes aux lettres inactives**.
 
 Voici quelques éléments à prendre en considération lors de la recherche de boîtes aux lettres inactives.
 
