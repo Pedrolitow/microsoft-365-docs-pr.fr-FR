@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Guide opérationnel d'essai des solutions de conformité Microsoft Purview.
-ms.openlocfilehash: 4544e07baa5b8d2b89991d9a31c84a2d7cefb7f8
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 3ff103a2e6ebc260f5f00964ae09c6b6bbc1fd69
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973770"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098887"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Guide opérationnel d'essai : solutions Microsoft Purview
 
@@ -35,6 +35,7 @@ Fonctionnalités :
 - [Audit (Premium)](#audit-premium)
 - [Conformité des communications](#communication-compliance)
 - [Gestionnaire de conformité](#compliance-manager)
+- [Gestion du cycle de vie des données](#data-lifecycle-management)
 - [Protection contre la perte de données Microsoft Purview](#data-loss-prevention)
 - [eDiscovery](#ediscovery)
 - [Protection des informations](#information-protection)
@@ -168,6 +169,31 @@ Les évaluations personnalisées sont utiles pour :
 1. [Modifier un modèle existant pour ajouter ou supprimer des contrôles et des actions](compliance-manager-templates-modify.md)
 1. [Mettre en place des tests automatisés des actions d'amélioration](compliance-manager-setup.md#set-up-automated-testing)
 1. [Réaffecter les actions d'amélioration à un autre utilisateur](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)
+
+## <a name="data-lifecycle-management"></a>Gestion du cycle de vie des données
+
+**Gouverner à grande échelle avec l’automatisation**
+
+Améliorez votre capacité à vous adapter aux modifications apportées à votre organisation avec des étendues de stratégie qui sont automatiquement mises à jour. Automatisez l’étiquetage du contenu pour réduire les efforts manuels et améliorez la posture de conformité.
+
+### <a name="step-1-dynamically-target-retention-policies-with-adaptive-policy-scopes"></a>Étape 1 : Ciblez dynamiquement les stratégies de rétention avec les étendues de stratégie adaptatives
+> [!TIP]
+> Meilleures pratiques d'essai : Jour 1
+
+Les étendues de stratégie adaptatives vous permettent de cibler dynamiquement une stratégie sur certains utilisateurs, groupes ou sites en fonction de leurs attributs AD.  Les attributs des étendues peuvent être sélectionnés dans une liste ou personnalisés à l'aide d'un générateur de requêtes avancé.
+
+Les politiques utilisant des champs d'application adaptatifs restent à jour au fur et à mesure que l'organisation change avec l'arrivée ou le départ de nouveaux employés. De plus, ils ne sont pas soumis aux limites précédentes de 100/1 000 emplacements inclus dans une police.
+
+- Créez une portée de stratégie adaptative et utilisez-la avec une stratégie de rétention
+
+### <a name="step-2-automate-labeling-to-apply-a-label-to-all-items-by-default"></a>Étape 2 : Automatiser l’étiquetage pour appliquer une étiquette à tous les éléments par défaut
+
+> [!TIP]
+> Meilleure pratique d'essai : configuration dans les 30 premiers jours
+
+Les étiquettes par défaut vous permettent d’appliquer automatiquement une étiquette de rétention à tous les éléments d’une bibliothèque, d’un dossier ou d’un document spécifié dans SharePoint.
+
+- Publier une étiquette et l’appliquer par défaut dans SharePoint
 
 ## <a name="data-loss-prevention"></a>Protection contre la perte de données
 
@@ -356,59 +382,38 @@ Pour activer l'analyse des risques d'initiés, vous devez être membre de Inside
 
 ## <a name="records-management"></a>Gestion des enregistrements
 
-**Automatisez le calendrier de conservation des enregistrements critiques pour l'entreprise**
+**Gérez les éléments à valeur élevée pour les exigences de conservation des enregistrements professionnelles, légales ou réglementaires :**
 
-Utilisez les fonctionnalités intégrées de gestion des enregistrements Microsoft Purview pour automatiser le calendrier de conservation des enregistrements réglementaires, juridiques et critiques de l'entreprise. Elle prend en charge le cycle de vie complet du contenu, de la création à la collaboration, de la déclaration d’enregistrement, de la rétention basée sur les événements et de la suppression.
+Utilisez les fonctionnalités de gestion des enregistrements Microsoft Purview pour automatiser le calendrier de conservation des enregistrements réglementaires, juridiques et critiques de l'entreprise. Tirez parti des fonctionnalités d’automatisation de la création à la collaboration, pour déclarer des enregistrements, conserver le contenu et les supprimer à la fin.
 
-### <a name="step-1-dynamically-target-retention-policies-with-adaptive-policy-scopes"></a>Étape 1 : Ciblez dynamiquement les stratégies de rétention avec les étendues de stratégie adaptatives
+### <a name="step-1-mark-contents-as-records"></a>Étape 1 : Marquer le contenu en tant qu’enregistrements  
 
 > [!TIP]
 > Meilleures pratiques d'essai : Jour 1
 
-Les étendues de stratégie adaptatives vous permettent de cibler dynamiquement une stratégie sur certains utilisateurs, groupes ou sites en fonction de leurs attributs AD.
+Lorsque le contenu est déclaré un enregistrement, des restrictions sont imposées à l'élément en termes d'actions autorisées ou bloquées, des activités supplémentaires concernant les éléments sont enregistrées et vous disposez d'une preuve de disposition si les éléments sont supprimés à la fin de leur période de conservation.
 
-Les attributs des étendues peuvent être sélectionnés dans une liste ou personnalisés à l'aide d'un générateur de requêtes avancé.
+- Créer une étiquette de rétention qui déclare le contenu en tant qu'enregistrement ou enregistrement réglementaire
 
-Les politiques utilisant des champs d'application adaptatifs restent à jour au fur et à mesure que l'organisation change avec l'arrivée ou le départ de nouveaux employés. De plus, ils ne sont pas soumis aux limites précédentes de 100/1 000 emplacements inclus dans une police.
+### <a name="step-2-review-content-to-approve-before-its-permanently-deleted"></a>Étape 2 : Vérifier le contenu à approuver avant sa suppression définitive
 
-- Créez une [portée de stratégie adaptative](retention.md#adaptive-or-static-policy-scopes-for-retention) et utilisez-la avec une stratégie de rétention
+> [!TIP]
+> Meilleures pratiques d'essai : Jour 1
 
-### <a name="step-2-automate-labeling-of-sensitive-information-with-the-ability-to-review-before-disposal"></a>Étape 2 : automatiser l'étiquetage des informations sensibles avec la possibilité de les examiner avant leur élimination
+À la fin de la période de rétention, les utilisateurs que vous spécifiez (« reviseurs ») seront invités à examiner le contenu et à approuver l'action d'élimination permanente. Cela prend en charge si une action différente de la suppression est plus appropriée, comme l’affectation d’une période de rétention différente au contenu ou la suspension de la suppression pour un audit.
+
+- Créer une étiquette de rétention qui utilise la révision de disposition
+
+### <a name="step-3-apply-labels-automatically-to-content-that-matches-specific-conditions"></a>Étape 3 : Appliquer automatiquement des étiquettes au contenu qui correspond à des conditions spécifiques
 
 > [!TIP]
 > Meilleure pratique d'essai : configuration dans les 30 premiers jours
 
-Les étiquettes de rétention peuvent être configurées pour s'appliquer automatiquement au contenu lorsqu'il détecte des informations sensibles, telles qu'un numéro de carte de crédit. Cela évite aux utilisateurs d'effectuer manuellement l'activité d'étiquetage.
+L'application automatique d'étiquettes évite aux utilisateurs d'avoir à effectuer manuellement les activités d'étiquetage. Vous pouvez appliquer automatiquement des étiquettes de rétention à du contenu lorsque celui-ci ne contient pas encore d’étiquette de rétention appliquée et des informations sensibles, des mots clés, des propriétés pouvant faire l’objet d’une recherche ou une correspondance pour des classifieurs pouvant être formés.
 
-À la fin de la période de conservation, les utilisateurs que vous spécifiez (« reviseurs ») seront invités à examiner le contenu et à approuver l'action d'élimination permanente. De cette façon, si quelque chose doit être conservé plus longtemps, cela peut l'être.
-
-L'activité de demande d'étiquette et l'activité d'examen de disposition peuvent être consultées sur votre écran Aperçu de la gestion des enregistrements.
-
-1. [Appliquer automatiquement des étiquettes de rétention au contenu contenant des informations sensibles](retention.md#retention-labels)
-1. Créer et appliquer une étiquette de rétention avec [révision avant destruction](disposition.md#disposition-reviews) à la fin de la période de rétention
-
-### <a name="step-3-label-content-as-records-automatically-using-trainable-classifiers"></a>Étape 3 : Étiquetez automatiquement le contenu en tant qu'enregistrements à l'aide de classificateurs pouvant être entraînés
-
-Lorsque le contenu est déclaré un enregistrement, des restrictions sont imposées à l'élément en termes d'actions autorisées ou bloquées, des activités supplémentaires concernant les éléments sont enregistrées et vous disposez d'une preuve de disposition si les éléments sont supprimés à la fin de leur période de conservation.
-
-Les classificateurs entraînables sont des outils qui reconnaissent divers types de contenu, sur la base d'échantillons qui lui ont été fournis. Choisissez parmi une variété d'options intégrées ou configurez un classificateur personnalisé pour répondre à vos besoins spécifiques.
-
-1. Créer une étiquette de rétention qui [déclare le contenu en tant qu'enregistrement ou enregistrement réglementaire](records-management.md#records)
-1. [Appliquer automatiquement des étiquettes de rétention au contenu à l'aide de classificateurs pouvant être entraînés](apply-retention-labels-automatically.md#auto-apply-labels-to-content-by-using-trainable-classifiers)
-
-### <a name="more-information-auto-apply-retention-labels--disposition-review"></a>Plus d'informations : Appliquer automatiquement les étiquettes de conservation + examen de la disposition
-
-**Appliquez automatiquement des étiquettes pour conserver ce dont vous avez besoin...** Les étiquettes de rétention peuvent être appliquées automatiquement au contenu lorsqu’elles contiennent :
-
-- [Types spécifiques d’informations sensibles](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
-- [Mots clés spécifiques ou propriétés pouvant faire l’objet d’une recherche qui correspondent à une requête que vous créez](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
-- [Correspondance pour les classifieurs entraînables](apply-retention-labels-automatically.md#auto-apply-labels-to-content-by-using-trainable-classifiers)
-
-**... puis supprimez-le en toute sécurité à la fin.**
-
-Lorsqu’une révision de disposition est déclenchée à la fin de la période de rétention, les relecteurs que vous choisissez reçoivent une notification par courrier électronique leur avertissant qu’ils ont du contenu à réviser.
-
-Le contenu en attente d'une révision de disposition n'est définitivement supprimé qu'après qu'un réviseur pour l'étape finale de disposition ait choisi de supprimer définitivement le contenu.
+- Application automatique d’étiquettes de rétention au contenu incluant des types spécifiques d’informations sensibles
+- Appliquer automatiquement des étiquettes de rétention au contenu à l'aide de classificateurs pouvant être entraînés
+- Application automatique des étiquettes de rétention comprenant des mots clés ou des propriétés pouvant faire l’objet d’une recherche
 
 ## <a name="additional-trials-and-add-ons"></a>Essais et modules complémentaires supplémentaires
 
