@@ -2,8 +2,8 @@
 title: Codage prédictif dans eDiscovery (Premium) - Démarrage rapide
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Découvrez comment commencer à utiliser le module de codage prédictif dans eDiscovery (Premium). Cet article vous guide tout au long du processus de bout en bout d’utilisation du codage prédictif pour identifier le contenu d’un ensemble de révisions le plus pertinent pour votre investigation.
-ms.openlocfilehash: dc4edcb6affa7ccfd6a915839ef84b0d453fcfca
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: ac8e31540fbe817b83b5fd0bdae2fadea7040b1a
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996149"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100788"
 ---
 # <a name="quick-start-predictive-coding-in-ediscovery-premium-preview"></a>Démarrage rapide : Codage prédictif dans eDiscovery (Premium) (préversion)
 

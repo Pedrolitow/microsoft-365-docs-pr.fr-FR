@@ -2,29 +2,34 @@
 title: Conditions préalables d’accès aux identités et appareils pour la synchronisation du hachage du mot de passe dans votre environnement de test Microsoft 365
 author: kelleyvice-msft
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
-  - M365-subscription-management
-  - Strat_O365_Enterprise
-ms.custom: null
+- M365-subscription-management
+- Strat_O365_Enterprise
+ms.custom: ''
 description: Créez un environnement Microsoft 365 pour tester l’accès aux identités et appareils avec les conditions préalables applicables à l’authentification de la synchronisation du hachage du mot de passe.
+ms.openlocfilehash: af357a477ea0aa66881b546d6cefbd517e453e80
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100366"
 ---
-
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Conditions préalables d’accès aux identités et appareils pour la synchronisation du hachage du mot de passe dans votre environnement de test Microsoft 365
 
-*Ce Guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
+*Ce guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
 
-Les configurations d’accès aux [identités](../security/office-365-security/microsoft-365-policies-configurations.md) et appareils sont un ensemble de configurations et de stratégies d’accès conditionnel pour protéger l’accès à tous les services dans Microsoft 365 pour les entreprises qui sont intégrés à Azure Active Directory (Azure AD).
+[Les configurations d’identité et d’accès aux appareils](../security/office-365-security/microsoft-365-policies-configurations.md) sont un ensemble de configurations et de stratégies d’accès conditionnel pour protéger l’accès à tous les services dans Microsoft 365 pour les entreprises qui sont intégrés à Azure Active Directory (Azure AD).
 
-Cet article explique comment configurer un environnement de test Microsoft 365 qui répond aux exigences de l’environnement hybride avec la [configuration](../security/office-365-security/identity-access-prerequisites.md#prerequisites) requise de l’authentification de synchronisation de hachage de mot de passe pour l’accès aux identités et appareils.
+Cet article explique comment configurer un environnement de test Microsoft 365 qui répond aux exigences de [l’environnement hybride avec configuration requise pour l’authentification par hachage de mot de passe](../security/office-365-security/identity-access-prerequisites.md#prerequisites) pour l’identité et l’accès aux appareils.
 
-La configuration de cet environnement de test se fait en dix phases :
+Il existe dix phases pour configurer cet environnement de test :
 
 1. Créer une entreprise simulée avec un environnement de test de synchronisation du hachage du mot de passe
 2. Configurer l’authentification unique transparente Azure AD
@@ -32,17 +37,17 @@ La configuration de cet environnement de test se fait en dix phases :
 4. Configurer la réécriture du mot de passe
 5. Configurer la réinitialisation de mot de passe en libre-service pour tous les comptes d’utilisateur
 6. Configurer l’authentification multifacteur pour tous les comptes d’utilisateur
-7. Activer l’inscription automatique de l’appareil des ordinateurs Windows domaine
-8. Configurer la protection Azure AD mot de passe 
+7. Activer l’inscription automatique des appareils des ordinateurs Windows joints à un domaine
+8. Configurer Azure AD protection par mot de passe 
 9. Activer Azure AD Identity Protection
 10. Activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
 
 ## <a name="phase-1-build-out-your-simulated-enterprise-with-password-hash-sync-microsoft-365-test-environment"></a>Étape 1 : Construire votre entreprise simulée avec un environnement de test Microsoft 365 pour la synchronisation du hachage du mot de passe
 
-Suivez les instructions du Guide [de](password-hash-sync-m365-ent-test-environment.md) laboratoire de test de synchronisation de hachage de mot de passe.
+Suivez les instructions du Guide du laboratoire de test de [synchronisation de hachage de mot de passe](password-hash-sync-m365-ent-test-environment.md) .
 Voici la configuration obtenue.
 
-![Environnement de test de l’entreprise simulée avec synchronisation de hachage de mot de passe.](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![Entreprise simulée avec environnement de test de synchronisation de hachage de mot de passe.](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
  
 ## <a name="phase-2-configure-azure-ad-seamless-single-sign-on"></a>Étape 2 : Configurer l’authentification unique transparente Azure AD
 
@@ -82,13 +87,13 @@ Suivez les instructions de [Phase 2 de Guide de laboratoire de Test authentifica
 
 Testez l’authentification multifacteur uniquement pour le compte Utilisateur 2.
 
-## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Phase 7 : Activer l’inscription automatique des appareils joints à un domaine Windows ordinateurs 
+## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Phase 7 : Activer l’inscription automatique d’appareils d’ordinateurs Windows joints à un domaine 
 
-Suivez [ces instructions pour](/azure/active-directory/devices/hybrid-azuread-join-plan) activer l’inscription automatique des ordinateurs joints Windows domaine.
+Suivez [ces instructions](/azure/active-directory/devices/hybrid-azuread-join-plan) pour activer l’inscription automatique des appareils joints à un domaine Windows ordinateurs.
 
-## <a name="phase-8-configure-azure-ad-password-protection"></a>Phase 8 : Configurer la protection Azure AD mot de passe 
+## <a name="phase-8-configure-azure-ad-password-protection"></a>Phase 8 : Configurer Azure AD protection par mot de passe 
 
-Suivez [ces instructions pour](/azure/active-directory/authentication/concept-password-ban-bad) bloquer les mots de passe faibles connus et leurs variantes.
+Suivez [ces instructions](/azure/active-directory/authentication/concept-password-ban-bad) pour bloquer les mots de passe faibles connus et leurs variantes.
 
 ## <a name="phase-9-enable-azure-ad-identity-protection"></a>Phase 9 : Activer Azure AD Identity Protection
 
@@ -124,7 +129,7 @@ Utilisez [Stratégies d’accès courantes identité et appareil](../security/of
 
 [Guides de laboratoire de Test Autres identités](m365-enterprise-test-lab-guides.md#identity)
 
-[Déployer l’identité](deploy-identity-solution-overview.md)
+[Déployer une identité](deploy-identity-solution-overview.md)
 
 [Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
 

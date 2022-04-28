@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer des blocs dans la liste d’autorisations/de blocs du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1ea87a29d93c43b89bcfb482d185bd4b397dcc5b
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 60038a2b82ea452ed921d16042cb81d4f0e023a9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862453"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100652"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>Ajouter des blocs dans la liste verte/rouge du locataire
 
@@ -30,7 +30,7 @@ ms.locfileid: "64862453"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ## <a name="use-the-microsoft-365-defender-portal"></a>Utiliser le portail Microsoft 365 Defender 
 
@@ -115,9 +115,11 @@ ms.locfileid: "64862453"
    - **Type d’usurpation** d’identité : sélectionnez l’une des valeurs suivantes :
      - **Interne** : l’expéditeur usurpé se trouve dans un domaine qui appartient à votre organisation ( [un domaine accepté](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
      - **Externe** : l’expéditeur usurpé se trouve dans un domaine externe.
-   - **Action** : sélectionnez **Autoriser** ou **Bloquer**.
+   - **Action** : Sélectionnez **Bloquer**.
 
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
+> [!NOTE]
+> Les e-mails de ces expéditeurs seront bloqués en tant que *hameçonnage*. 
 
 ## <a name="use-powershell"></a>Utiliser PowerShell
 

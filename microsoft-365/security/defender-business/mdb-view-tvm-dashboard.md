@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 04/12/2022
+ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 430815f57a409ba00447c052643af7960d8a9d27
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: b7761d7ad35f00ec9637c117e9a84b6258ad1904
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862519"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65101422"
 ---
 # <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Utiliser votre tableau de bord Threat & Vulnerability Management dans Microsoft Defender pour les PME
 
@@ -46,7 +46,7 @@ Pour en savoir plus sur la gestion des vulnérabilités & des menaces, consultez
 > Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
 >
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Didacticiels et simulations dans Microsoft Defender pour les PME](mdb-tutorials.md)
 - [Intégrer des appareils à Microsoft Defender pour les PME](mdb-onboard-devices.md)

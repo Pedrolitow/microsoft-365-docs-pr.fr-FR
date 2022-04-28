@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Qu’il s’agisse d’ajouter de nouvelles solutions au Centre de conformité, de mettre à jour les fonctionnalités existantes en fonction de vos commentaires ou de déployer une documentation actualisée et mise à jour, Microsoft 365 vous aide à rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b5f231abfbfe943f0b2ab0cf33a14267f0940820
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: b79015ce0ca55bf9a74b6acac8f38f09b9e5e984
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972472"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100542"
 ---
 # <a name="whats-new-in-microsoft-purview"></a>Nouveautés de Microsoft Purview
 
@@ -51,7 +51,7 @@ Pour relever les défis du milieu de travail décentralisé et riche en données
 
 | **Ancien nom** | **Nouveau nom** | **Description** |
 |:----------------|:-------------|:----------------|
-| audit avancé Microsoft 365 <br><br> audit de base Microsoft 365 | Audit Microsoft Purview (Premium) <br><br> Audit Microsoft Purview (Standard)| Les solutions d’audit fournissent une solution intégrée pour aider les organisations à répondre efficacement aux événements de sécurité, aux enquêtes judiciaires, aux enquêtes internes et aux obligations de conformité. Pour plus d’informations, consultez [Microsoft Purview Advanced Audit (Premium)](advanced-audit.md) et [Microsoft Purview Advanced Audit (Standard).](set-up-basic-audit.md) |
+| audit avancé Microsoft 365 <br><br> audit de base Microsoft 365 | Audit de Microsoft Purview (Premium) <br><br> Audit Microsoft Purview (Standard)| Les solutions d’audit fournissent une solution intégrée pour aider les organisations à répondre efficacement aux événements de sécurité, aux enquêtes judiciaires, aux enquêtes internes et aux obligations de conformité. Pour plus d’informations, consultez [Microsoft Purview Advanced Audit (Premium)](advanced-audit.md) et [Microsoft Purview Advanced Audit (Standard).](set-up-basic-audit.md) |
 | conformité des communications Microsoft 365 | Conformité des communications Microsoft Purview | La conformité des communications permet de réduire les risques en vous aidant à détecter, capturer et prendre rapidement des mesures correctives pour les canaux de communication d’entreprise et les violations de stratégie. Pour en savoir plus, consultez [Microsoft Purview Communication Compliance](communication-compliance-solution-overview.md). |
 | Gestionnaire de conformité Microsoft | Gestionnaire de conformité Microsoft Purview | Le Gestionnaire de conformité peut vous aider tout au long de votre parcours de conformité, de l’inventaire des risques de protection de vos données à la gestion des complexités de l’implémentation de contrôles, la mise à jour des réglementations et des certifications et la création de rapports aux auditeurs. Pour plus d’informations, consultez [le Gestionnaire de conformité Microsoft Purview](compliance-manager.md). |
 | clé client Microsoft 365 | Clé client Microsoft Purview | La clé client offre une protection supplémentaire contre l’affichage des données par des systèmes ou du personnel non autorisés, et complète le chiffrement de disque BitLocker dans les centres de données Microsoft. Pour plus d’informations, consultez [la clé client Microsoft Purview](customer-key-overview.md). |
@@ -59,7 +59,7 @@ Pour relever les défis du milieu de travail décentralisé et riche en données
 | Protection contre la perte de données | Protection contre la perte de données Microsoft Purview | DLP permet de protéger les données sensibles et de réduire les risques en empêchant les utilisateurs de partager ces données de manière inappropriée avec des personnes qui ne devraient pas les avoir. Pour plus d’informations, consultez [Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md). |
 | Chiffrement à double clé pour Microsoft 365 | Chiffrement à double clé Microsoft Purview | Double Key Encryption (DKE) utilise deux clés ensemble pour accéder au contenu protégé. Microsoft stocke une clé dans Microsoft Azure, et vous conservez l’autre clé. Pour en savoir plus, consultez [Le chiffrement à double clé Microsoft Purview](double-key-encryption.md) |
 | Microsoft 365 obstacles à l’information | Cloisonnement de l’information Microsoft Purview | Les obstacles à l’information sont une solution qui limite la communication et la collaboration entre certaines personnes au sein de votre organisation afin de protéger les informations internes. Pour en savoir plus, consultez [Microsoft Purview Information Barriers](information-barriers-solution-overview.md). |
-| Microsoft Information Protection | Microsoft Purview Information Protection | La protection des informations vous aide à découvrir, classifier et protéger des informations sensibles où qu’elles résident ou voyagent. Pour en savoir plus, consultez [Microsoft Purview Information Protection](information-protection.md). |
+| Microsoft Information Protection | Protection de l'information Microsoft Purview | La protection des informations vous aide à découvrir, classifier et protéger des informations sensibles où qu’elles résident ou voyagent. Pour en savoir plus, consultez [Microsoft Purview Information Protection](information-protection.md). |
 | Gouvernance des informations Microsoft | Gestion du cycle de vie des données Microsoft Purview | La gestion du cycle de vie des données vous fournit des outils et des fonctionnalités pour conserver le contenu dont vous avez besoin pour conserver et supprimer le contenu que vous n’avez pas. Pour plus d’informations, consultez [Gestion du cycle de vie des données Microsoft Purview](data-lifecycle-management.md). |
 | Microsoft 365 : gestion des risques internes | Microsoft Purview : gestion des risques internes | La gestion des risques internes utilise l’ensemble des indicateurs de service et tiers pour vous aider à identifier, trier et agir rapidement sur l’activité des utilisateurs à risque. Pour en savoir plus, consultez [Microsoft Purview Insider Risk Management](insider-risk-management.md). |
 | Chiffrement de messages Office 365 | Chiffrement des messages Microsoft Purview | Avec Le chiffrement des messages, votre organisation peut envoyer et recevoir des messages électroniques chiffrés entre des personnes internes et externes à votre organisation. Pour plus d’informations, consultez [Chiffrement des messages Microsoft Purview](ome.md). |
@@ -67,6 +67,58 @@ Pour relever les défis du milieu de travail décentralisé et riche en données
 | Connecteurs de données Microsoft | Connecteurs de données Microsoft Purview | Microsoft 365 permet aux administrateurs d’utiliser des connecteurs de données pour importer et archiver des données non-Microsoft tierces à partir de plateformes de médias sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration de documents dans des boîtes aux lettres de votre organisation Microsoft 365. Pour plus d’informations, consultez [les connecteurs de données Microsoft Purview](compliance-extensibility.md). |
 | Microsoft 365 advanced eDiscovery <br><br> Microsoft 365 Core eDiscovery | Microsoft Purview eDiscovery (Premium) <br><br> Microsoft Purview eDiscovery (Standard) | La découverte électronique, ou eDiscovery, est le processus d'identification et de livraison d'informations électroniques qui peuvent être utilisées comme preuves dans des affaires juridiques. Pour en savoir plus, consultez [Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md) et [Microsoft Purview eDiscovery (Standard).](get-started-core-ediscovery.md) |
 | Centre de conformité Microsoft 365 | Portail de conformité Microsoft Purview | Portail d’administration pour accéder aux solutions et au catalogue de solutions dans la suite Microsoft 365 E5 Conformité. Pour en savoir plus, consultez le [portail de conformité Microsoft Purview](microsoft-365-compliance-center.md). |
+
+## <a name="march-2022"></a>Mars 2022
+
+### <a name="communication-compliance"></a>Conformité des communications
+
+- [Examiner et corriger les alertes de conformité des communications : instructions supprimées](communication-compliance-investigate-remediate.md) pour la vue d’annotation déconseillée.
+
+### <a name="compliance-manager"></a>Gestionnaire de conformité
+
+- [Utilisation des actions d’amélioration](compliance-manager-improvement-actions.md), [Démarrage avec le Gestionnaire de conformité](compliance-manager-setup.md) : ajout d’informations sur d’autres actions d’amélioration qui peuvent être automatiquement surveillées et testées (« évaluation continue de la conformité ») ; cela inclut de nouvelles capacités pour parenter l’état de test d’une action à celui d’une autre action.
+
+### <a name="data-classification"></a>Classification des données
+
+- [Prise en main avec l’Explorateur de contenu](data-classification-content-explorer.md) - Teams instructions ajoutées, la section relative aux licences pointait vers les descriptions de service.
+
+### <a name="data-lifecycle-management-and-records-management"></a>Gestion du cycle de vie des données et gestion des enregistrements
+
+- [Les stratégies de rétention pour Yammer](create-retention-policies.md#retention-policy-for-yammer-locations) sont désormais en disponibilité générale (GA).
+- Prise en charge des canaux partagés, actuellement en préversion. Lorsque vous configurez une stratégie de rétention pour l’emplacement du message de canal Teams, tous les canaux partagés héritent des paramètres de rétention de leur équipe parente.
+- [Limites par locataire pour la disposition du contenu](retention-limits.md#maximum-number-of-items-for-disposition).
+
+### <a name="data-loss-prevention"></a>Protection contre la perte de données
+
+- [Protection contre la perte de données et Microsoft Teams](dlp-microsoft-teams.md) : préversion publique du contenu Share Teams Channels.
+- [Démarrage avec l’extension de conformité Microsoft](dlp-chrome-get-started.md) - préversion publique des groupes d’applications restreints, supprimez les instructions de clé de Registre, configuration désormais activée par défaut.
+- [Configurez les paramètres de protection contre la perte de données](dlp-configure-endpoint-settings.md) de point de terminaison : nouveau pour la préversion publique des groupes d’applications restreints.
+- [Informations de référence sur la stratégie de protection contre la perte de données](dlp-policy-reference.md) : mises à jour pour la préversion publique des groupes d’applications restreints.
+- [Démarrage avec protection contre la perte de données pour les Power BI](dlp-powerbi-get-started.md) : nouveauté de la préversion publique.
+
+### <a name="insider-risk-management"></a>Gestion des risques internes
+
+- [Démarrage avec la gestion des risques internes](insider-risk-management-configure.md) : ajout de nouvelles tâches pour l’aide sur les actions recommandées.
+- [Démarrage avec les paramètres de gestion des risques internes](insider-risk-management-settings.md) : nouvelles mises à jour pour les fonctionnalités de notification et d’alertes par e-mail, nouvelles mises à jour pour les notifications analytiques.
+
+### <a name="microsoft-information-protection"></a>Microsoft Information Protection
+
+- [Prise en charge des notes de publication du jeu de caractères sur deux octets](mip-dbcs-relnotes.md) - ajout de conseils pour macOS.
+
+### <a name="microsoft-priva"></a>Microsoft Priva
+
+- [Configurer les paramètres Priva](/privacy/priva/priva-settings) : mise à jour des informations de clarification sur les périodes de rétention des données pour les demandes de droits des personnes concernées ; ajout de détails sur la gestion et l’application de balises de révision des données pour les demandes de droits d’objet.
+- [Créer une demande de droits d’objet](/privacy/priva/subject-rights-requests-create) : ajout de détails sur l’affinement des recherches et le choix des conditions et des attributs ; ajout d’informations sur les nouvelles fonctionnalités qui permettent aux utilisateurs de sélectionner toutes les versions de SharePoint éléments dans leur recherche (par rapport au paramètre par défaut, qui retourne uniquement la version actuelle des éléments SharePoint).
+- [Passer en revue les données d’une demande de droits d’objet](/privacy/priva/subject-rights-requests-data-review) : ajout de détails à l’étape 3 pour l’examen des éléments au cours de l’étape de révision des données, y compris le marquage des fichiers en tant qu’inclusion/exclusion, l’annotation des fichiers pour appliquer des actions, l’application de balises et la saisie de notes.
+- [Générer des rapports et répondre à une demande de droits d’objet](/privacy/priva/subject-rights-requests-reports) : ajout de détails sur la façon de comprendre les rapports ; clarifié quand un package d’exportation est généré et comment utiliser son contenu ; ajout d’informations sur les journaux d’audit, les rapports de fichiers étiquetés et les périodes de rétention pour les données et les rapports SRR.
+
+### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
+
+- [Étiquettes de confidentialité pour Teams](sensitivity-labels-teams-groups-sites.md) :
+  - Prise en charge des canaux partagés, actuellement en préversion. Si une équipe a des canaux partagés, elle hérite automatiquement des paramètres d’étiquette de confidentialité de son équipe parente, et cette étiquette ne peut pas être supprimée ou remplacée par une autre étiquette.
+  - Prise en charge des modèles, précédemment répertoriés comme [non pris en charge avec les API Teams Graph et les applets de commande PowerShell]( /microsoftteams/sensitivity-labels#limitations).  
+- Pour l’audit de Word, Excel et PowerPoint sur le web, le texte de justification est maintenant entièrement déployé.
+- L’application d’une étiquette par défaut aux documents existants pour Word, Excel et PowerPoint sur le web est maintenant entièrement déployée.
 
 ## <a name="february-2022"></a>Février 2022
 
@@ -109,7 +161,7 @@ Pour relever les défis du milieu de travail décentralisé et riche en données
 
 - Prise en charge des nouveaux [groupes de rôles et rôles](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels), désormais en préversion.
 - Nouvelles [fonctionnalités de surveillance pour les](apply-sensitivity-label-automatically.md#monitoring-your-auto-labeling-policy) stratégies d’étiquetage automatique.
-- Déploiement à présent : étiquette par défaut pour les documents existants dans le canal actuel (préversion) et texte de justification pour Office sur le Web.
+- Déploiement à présent : étiquette par défaut pour les documents existants et texte de justification pour Office sur le Web.
 - Annoncé pour le canal de Semi-Annual Enterprise juillet avec la version 2202+: Co-création et audit pour Outlook.
 
 ## <a name="december-2021"></a>Décembre 2021

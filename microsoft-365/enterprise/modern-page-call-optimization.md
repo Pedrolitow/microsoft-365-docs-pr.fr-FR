@@ -2,7 +2,7 @@
 title: Optimiser les appels de page dans les pages de sites de publication modernes et classiques SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Découvrez comment optimiser les pages de sites de publication modernes et classiques dans SharePoint Online en limitant le nombre d’appels aux points de terminaison de service SharePoint Online.
-ms.openlocfilehash: 298e928f339d82f472f73e22998b8762461cc209
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7636e1cf2dfac6dc7fea4158f1f22a7336d6485e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208264"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65101224"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Optimiser les appels de page dans les pages de sites de publication modernes et classiques SharePoint Online
 
@@ -54,11 +54,11 @@ Les résultats possibles sont les suivants :
 
 Si le résultat **Requêtes à SharePoint** apparaît dans la section **Attention requise**, vous pouvez cliquer sur le résultat pour obtenir des détails, notamment le nombre total d’appels sur la page et une liste d’URL.
 
-![Demandes d’SharePoint résultats.](../media/modern-portal-optimization/pagediag-requests.png)
+![Demandes de SharePoint résultats.](../media/modern-portal-optimization/pagediag-requests.png)
 
 ## <a name="remediate-performance-issues-related-to-too-many-calls-on-a-page"></a>Résoudre les problèmes de performances liés à un trop grand nombre d’appels sur une page
 
-Si une page contient trop d’appels, vous pouvez utiliser la liste des URL dans les résultats Demandes à **SharePoint** pour déterminer s’il existe des appels répétés, des appels qui doivent être distribués par lots ou des appels qui retournent des données qui doivent être mises en cache.
+Si une page contient trop d’appels, vous pouvez utiliser la liste des URL dans les **demandes de SharePoint** résultats pour déterminer s’il existe des appels répétés, des appels qui doivent être traités par lot ou des appels qui retournent des données qui doivent être mis en cache.
 
 **Le traitement par lots des appels REST** permet de réduire la dégradation des performances. Pour plus d’informations sur le traitement par lots d’appels d’API, consultez [Effectuer des requêtes de lot avec les API REST](/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis).
 
@@ -66,7 +66,7 @@ Si une page contient trop d’appels, vous pouvez utiliser la liste des URL dans
 
 Avant d’apporter des révisions de page pour résoudre les problèmes de performances, notez le temps de chargement des pages dans les résultats de l’analyse. Exécutez à nouveau l’outil après votre révision pour déterminer si le nouveau résultat est inclus dans la norme de référence et vérifier le nouveau temps de chargement des pages pour voir s’il y a eu une amélioration.
 
-![Résultats du temps de chargement de page.](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Résultats du temps de chargement de la page.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >Le temps de chargement des pages peut varier en fonction de nombreux facteurs tels que la charge réseau, l’heure de la journée et d’autres conditions transitoires. Vous devez tester le temps de chargement des pages plusieurs fois avant et après avoir apporté des modifications pour vous aider à faire la moyenne des résultats.

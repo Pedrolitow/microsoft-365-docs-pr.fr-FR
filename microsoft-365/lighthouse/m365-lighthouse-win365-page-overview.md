@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la page Windows 365 (PC cloud).
-ms.openlocfilehash: 843e241c796d626ecca2180b0bce1372059701a2
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 325fe39c144227052c966b81a8a2109a07fb0cf2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022886"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100278"
 ---
 # <a name="overview-of-the-windows-365-cloud-pcs-page-in-microsoft-365-lighthouse"></a>Vue d’ensemble de la page Windows 365 (PC cloud) dans Microsoft 365 Lighthouse  
   
@@ -57,22 +57,25 @@ Sous l’onglet Tous les PC cloud, la barre d’annotation de nombre de couleurs
 Vous pouvez afficher tous les PC cloud et leur état d’approvisionnement dans la liste sous la barre d’annotation. Les informations suivantes sont fournies :
 
 - **Nom du PC cloud :** Nom affecté au PC cloud.
-- **Locataire:** Client dans lequel un PC cloud a été approvisionné.
-- **Nom de l’appareil :** Intune nom de l’appareil , un identificateur unique pour un PC cloud.
-- **Type de PC :** Type de PC cloud en fonction des références SKU standard.
-- **Statut:** État d’approvisionnement du PC cloud.
 - **Utilisateur:** Utilisateur pour lequel un PC cloud a été approvisionné ou a tenté d’être approvisionné.
+- **Nom de l’appareil :** Intune nom de l’appareil , un identificateur unique pour un PC cloud.
+- **Locataire:** Client dans lequel un PC cloud a été approvisionné.
+- **Statut:** État d’approvisionnement du PC cloud.
+- **Type de licence :** Enterprise ou Entreprise.
+- **Spécifications:** Configuration matérielle du PC cloud.
 
 Pour voir quels locataires ont des PC cloud avec un état d’approvisionnement spécifique, sélectionnez cet état dans la barre count-annotation pour filtrer la liste. Pour afficher les états d’approvisionnement de PC cloud pour un ou plusieurs locataires clients spécifiques, utilisez le menu déroulant **Locataires** pour filtrer la liste.
 
-Sélectionnez n’importe quel PC cloud dans la liste pour afficher plus de détails. Si vous devez prendre des mesures sur le PC cloud, il existe des options permettant d’afficher les stratégies d’approvisionnement des locataires et les détails de l’appareil dans Microsoft Endpoint Manager.
+Sélectionnez n’importe quel PC cloud dans la liste pour afficher plus de détails et exécuter des actions de gestion telles que :
+- **Redémarrer:** Sélectionnez cette option pour redémarrer l’appareil. 
+- **Reprovisionnement :** Sélectionnez cette option pour réinitialiser l’appareil. Vous pouvez également afficher la stratégie d’approvisionnement dans le lien Microsoft Endpoint Manager.
+- **Renommer:** Sélectionnez cette option pour renommer l’appareil affecté à un utilisateur.
 
 L’onglet Tous les PC cloud inclut également les options suivantes :
 
-- **Actualiser:** Sélectionnez cette option pour récupérer les données de PC cloud les plus actuelles.
 - **Exportation:** Sélectionnez cette option pour exporter des données de PC cloud vers un fichier Excel valeurs séparées par des virgules (.csv).
+- **Actualiser:** Sélectionnez cette option pour récupérer les données de PC cloud les plus actuelles.
 - **Rechercher:** Entrez des mots clés pour localiser rapidement un PC cloud spécifique dans la liste.
-- **Nouvelle tentative d’approvisionnement :** Sélectionnez 1 à 20 PC cloud dans la liste dont l’état a **échoué**, puis sélectionnez cette option pour réessayer l’approvisionnement de ces PC cloud.
 
 Pour obtenir la liste complète des états d’approvisionnement de PC cloud et ce qu’ils signifient, consultez la [vue d’ensemble de la gestion des appareils pour les PC cloud](/windows-365/enterprise/device-management-overview#column-details) dans la bibliothèque de documentation Windows 365.
 
@@ -80,7 +83,7 @@ Pour obtenir la liste complète des états d’approvisionnement de PC cloud et 
 
 ## <a name="azure-network-connections-tab"></a>Onglet Connexions réseau Azure
 
-Sous l’onglet Connexions réseau Azure, la barre d’annotation de nombre de couleurs affiche le nombre total de connexions réseau Azure sur tous vos locataires clients qui ont les états suivants : Connexions réussies et connexions ayant échoué.
+Sous l’onglet Connexions réseau Azure, la barre d’annotations de nombre de couleurs affiche le nombre total de connexions réseau Azure sur tous vos locataires clients qui ont Windows 365 Entreprise PC cloud et peuvent avoir les états suivants : Connexions réussies et connexions ayant échoué.
 
 Dans la liste sous la barre count-annotation, vous pouvez afficher toutes les connexions réseau Azure et leur état de connexion.
 
@@ -90,13 +93,13 @@ Si vous devez prendre des mesures ou résoudre les problèmes d’une connexion 
 
 L’onglet Connexions réseau Azure inclut également les options suivantes :
 
-- **Actualiser:** Sélectionnez cette option pour récupérer les données de connexion les plus actuelles.
 - **Exportation:** Sélectionnez cette option pour exporter les données de connexion vers un fichier Excel valeurs séparées par des virgules (.csv).
+- **Actualiser:** Sélectionnez cette option pour récupérer les données de connexion les plus actuelles.
 - **Rechercher:** Entrez des mots clés pour localiser rapidement une connexion spécifique.
 
 :::image type="content" source="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png" alt-text="Capture d’écran de l’onglet Connexions réseau Azure." lightbox="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png":::
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Qu’est-ce que Windows 365 ?](/windows-365/overview) (article)\
 [Windows 365 vue d’ensemble de la gestion des appareils pour les PC cloud](/windows-365/enterprise/device-management-overview) (article)\

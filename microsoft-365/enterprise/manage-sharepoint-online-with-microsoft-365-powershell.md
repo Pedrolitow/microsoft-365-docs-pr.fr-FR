@@ -2,7 +2,7 @@
 title: Gérer SharePoint avec PowerShell
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: landing-page
@@ -19,19 +19,19 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: Découvrez comment utiliser PowerShell pour Microsoft 365 gérer les utilisateurs, les groupes et les groupes de sites.
-ms.openlocfilehash: 9a138dd7622bda9cbb7d3206349ddd8992b93831
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: Découvrez comment utiliser PowerShell pour Microsoft 365 pour gérer les utilisateurs, les groupes et les groupes de sites.
+ms.openlocfilehash: b763f0be9d88af5d1e1cd6955e5927b30e335e79
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63675391"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100454"
 ---
 # <a name="manage-sharepoint-with-powershell"></a>Gérer SharePoint avec PowerShell
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-SharePoint administrateurs doivent gérer les sites, les groupes de sites et les utilisateurs. Bien que vous pouvez effectuer certaines de ces tâches dans le Centre d'administration Microsoft 365, d’autres sont plus simples dans PowerShell. Si vous souhaitez en savoir plus, consultez les articles suivants :
+SharePoint administrateurs doivent gérer les sites, les groupes de sites et les utilisateurs. Bien que vous puissiez effectuer certaines de ces tâches dans le Centre d'administration Microsoft 365, d’autres sont plus faciles dans PowerShell. Si vous souhaitez en savoir plus, consultez les articles suivants :
 
 - [Prise en main de SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
@@ -45,4 +45,4 @@ SharePoint administrateurs doivent gérer les sites, les groupes de sites et les
 
 - [Gestion de Microsoft 365 à l’aide de PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
 
-- [Prise en main de PowerShell pour Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+- [Prise en main de PowerShell pour Microsoft 365](getting-started-with-microsoft-365-powershell.md)

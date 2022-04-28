@@ -2,7 +2,7 @@
 title: Gestion des groupes Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
@@ -21,50 +21,50 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Découvrez comment gérer les groupes Microsoft 365'équipe.
-ms.openlocfilehash: 28d8bae8aaed6d02fe082824c07afe03bdc0ce5a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez comment gérer Microsoft 365 groupes.
+ms.openlocfilehash: 0e7cef7d1b55f695af9a33f22393172f6eee6485
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150761"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100498"
 ---
 # <a name="manage-microsoft-365-groups"></a>Gestion des groupes Microsoft 365
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez gérer Microsoft 365 groupes de plusieurs manières différentes, en fonction de votre configuration. Vous pouvez gérer les comptes d’utilisateurs dans [Centre d'administration Microsoft 365,](/admin)PowerShell, dans les services de domaine Active Directory (AD DS) ou dans le Centre d’administration [Azure Active Directory (Azure AD).](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) 
+Vous pouvez gérer Microsoft 365 groupes de différentes manières, en fonction de votre configuration. Vous pouvez gérer des comptes d’utilisateur dans le [Centre d'administration Microsoft 365](/admin), PowerShell, dans services de domaine Active Directory (AD DS) ou dans le [centre d’administration Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) . 
 
-## <a name="plan-for-where-and-how-you-will-manage-your-groups"></a>Planifier l’endroit et la façon dont vous allez gérer vos groupes
+## <a name="plan-for-where-and-how-you-will-manage-your-groups"></a>Planifier l’emplacement et la façon dont vous allez gérer vos groupes
 
-L’endroit où et comment vous pouvez gérer vos comptes d’utilisateur dépend du modèle d’identité que vous souhaitez utiliser pour votre Microsoft 365. Les deux modèles globaux sont uniquement cloud et hybrides.
+L’emplacement et la façon dont vous pouvez gérer vos comptes d’utilisateur dépendent du modèle d’identité que vous souhaitez utiliser pour votre Microsoft 365. Les deux modèles globaux sont cloud uniquement et hybrides.
   
 ### <a name="cloud-only"></a>Cloud uniquement
 
 Vous créez et gérez des groupes avec :
 
-- [Le Centre d’administration Microsoft 365](/admin)
+- [Le Centre d'administration Microsoft 365](/admin)
 - [PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Centre d’administration d’Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
     
 ### <a name="hybrid"></a>Hybride
 
-Les groupes AD DS sont synchronisés avec les Microsoft 365 d’AD DS. Vous devez donc utiliser les outils AD DS locaux pour gérer ces groupes.
+Les groupes AD DS sont synchronisés avec Microsoft 365 à partir d’AD DS. Vous devez donc utiliser les outils AD DS locaux pour gérer ces groupes.
 
-Vous pouvez également créer et gérer des groupes Azure AD séparés des groupes AD DS, mais qui peuvent contenir des utilisateurs et des groupes d’AD DS. Dans ce cas, vous pouvez utiliser :
+Vous pouvez également créer et gérer Azure AD groupes qui sont distincts des groupes AD DS, mais qui peuvent contenir des utilisateurs et des groupes d’AD DS. Dans ce cas, vous pouvez utiliser :
 
-- [Le Centre d’administration Microsoft 365](/admin)
+- [Le Centre d'administration Microsoft 365](/admin)
 - [PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Centre d’administration d’Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 
 ## <a name="allow-users-to-create-and-manage-their-own-groups"></a>Autoriser les utilisateurs à créer et gérer leurs propres groupes
 
-Azure AD autorise les groupes qui peuvent être gérés par les propriétaires de groupes plutôt que par les administrateurs informatiques. Appelée *gestion de groupes en libre-service*, cette fonctionnalité permet aux propriétaires de groupes qui ne disposent d’aucun rôle administratif de créer et de gérer des groupes de sécurité. 
+Azure AD autorise les groupes qui peuvent être gérés par des propriétaires de groupes au lieu d’administrateurs informatiques. Appelée *gestion de groupes en libre-service*, cette fonctionnalité permet aux propriétaires de groupes qui ne disposent d’aucun rôle administratif de créer et de gérer des groupes de sécurité. 
 
 Les utilisateurs peuvent demander à appartenir à un groupe de sécurité. Cette demande est envoyée au propriétaire du groupe, et non à l’administrateur informatique. Ainsi, le contrôle quotidien de l’appartenance au groupe peut être délégué aux propriétaires d’équipes, de projets ou d’entreprises qui comprennent l’usage du groupe pour l’entreprise et peuvent gérer ses membres.
 
 >[!Note]
->La gestion des groupes en libre-service est réservée aux groupes Microsoft 365 et aux groupes de sécurité Azure AD. Il n’est pas disponible pour les groupes à messagerie, les listes de distribution ou les groupes qui ont été synchronisés à partir d’AD DS.
+>La gestion des groupes en libre-service est réservée aux groupes Microsoft 365 et aux groupes de sécurité Azure AD. Il n’est pas disponible pour les groupes, les listes de distribution ou les groupes compatibles avec la messagerie ou tout groupe qui a été synchronisé à partir d’AD DS.
 >
 
 Pour plus d’informations, consultez les [instructions de configuration d’un groupe Azure AD pour la gestion en libre-service](/azure/active-directory/active-directory-accessmanagement-self-service-group-management).
@@ -86,7 +86,7 @@ Reportez-vous aux [instructions pour créer et configurer les règles pour un gr
 
 ## <a name="set-up-automatic-licensing"></a>Configurer la gestion des licences automatique
 
-Vous pouvez configurer des groupes de sécurité dans Azure AD pour attribuer automatiquement des licences d’un ensemble d’abonnements à tous les membres du groupe. C’est ce que l’on appelle la *gestion des licences basée sur les groupes*. Si un compte d’utilisateur est ajouté au groupe ou supprimé de ce dernier, les licences des abonnements du groupe sont automatiquement attribuées au compte d’utilisateur ou supprimées du compte.
+Vous pouvez configurer des groupes de sécurité dans Azure AD pour attribuer automatiquement des licences à partir d’un ensemble d’abonnements à tous les membres du groupe. C’est ce que l’on appelle la *gestion des licences basée sur les groupes*. Si un compte d’utilisateur est ajouté au groupe ou supprimé de ce dernier, les licences des abonnements du groupe sont automatiquement attribuées au compte d’utilisateur ou supprimées du compte.
 
 Pour Microsoft 365 Entreprise, vous allez configurer des groupes de sécurité Azure AD afin d’attribuer la licence Microsoft 365 Entreprise qui convient.
 
@@ -96,6 +96,6 @@ Vérifiez que vous disposez de suffisamment de licences pour tous les membres du
 >Vous ne devez pas configurer la gestion des licences par groupes pour des groupes qui contiennent des comptes B2B Azure.
 >
 
-Pour plus d’informations, voir les informations de base sur les [licences basées sur les groupes dans Azure AD.](/azure/active-directory/active-directory-licensing-whatis-azure-portal)
+Pour plus d’informations, consultez [les principes de base des licences basées sur les groupes dans Azure AD](/azure/active-directory/active-directory-licensing-whatis-azure-portal).
 
-Consultez les instructions pour configurer la gestion des licences basée sur [les groupes pour un groupe de sécurité Azure.](/azure/active-directory/active-directory-licensing-group-assignment-azure-portal)
+Consultez les [instructions pour configurer les licences basées sur un groupe pour un groupe de sécurité Azure](/azure/active-directory/active-directory-licensing-group-assignment-azure-portal).
