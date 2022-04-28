@@ -2,7 +2,7 @@
 title: Architectures Microsoft Azure pour SharePoint 2013
 ms.author: bcarter
 author: brendacarter
-manager: laurawi
+manager: scotv
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: conceptual
@@ -15,17 +15,17 @@ ms.custom:
 - Ent_Architecture
 - seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: Découvrez les types de solutions SharePoint 2013 qui peuvent être hébergées sur Microsoft Azure machines virtuelles et comment configurer Azure pour en héberger une.
-ms.openlocfilehash: 8bbaeb7a20b467625d57800cdf95f42e5b11f434
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez les types de solutions SharePoint 2013 qui peuvent être hébergées dans Microsoft Azure machines virtuelles et comment configurer Azure pour en héberger une.
+ms.openlocfilehash: 7761eb9b62000c03b2983bc5ed56a62e20981db7
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168553"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097401"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Architectures Microsoft Azure pour SharePoint 2013
 
-Azure est un environnement propice à l'hébergement d'une solution SharePoint Server 2013. Dans la plupart des cas, nous vous recommandons Microsoft 365, mais une batterie de serveurs SharePoint hébergée dans Azure peut être une bonne option pour des solutions spécifiques. Cet article explique comment créer des solutions SharePoint adaptées à la plateforme Azure. Les deux solutions spécifiques suivantes sont utilisées comme exemples :
+Azure est un environnement propice à l'hébergement d'une solution SharePoint Server 2013. Dans la plupart des cas, nous recommandons Microsoft 365, mais une batterie de serveurs SharePoint hébergée dans Azure peut être une bonne option pour des solutions spécifiques. Cet article explique comment créer des solutions SharePoint adaptées à la plateforme Azure. Les deux solutions spécifiques suivantes sont utilisées comme exemples :
   
 - [Récupération d'urgence SharePoint Server 2013 dans Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
@@ -39,14 +39,14 @@ Les services d'infrastructure Azure sont une option intéressante pour l'héberg
 |:-----|:-----|
 |Environnements de test et de développement  <br/> |Il est facile de créer et de gérer ces environnements.  <br/> |
 |Récupération d'urgence de batteries de serveurs SharePoint locales sur Azure  <br/> |**Centre de données secondaire hébergé** Utilisez Azure au lieu d'investir dans un centre de données secondaire dans une autre région. <br/> **Environnements de récupération d'urgence à moindre coût** Tenez à jour et payez pour moins de ressources qu'un environnement de récupération d'urgence local. Le nombre de ressources dépend de l'environnement de récupération d'urgence choisi : reprise progressive, secours semi-automatique ou serveur de secours.<br/> **Plateforme plus flexible** En cas d'incident, augmentez facilement la taille des instances de votre batterie SharePoint de récupération pour répondre aux exigences de charge. Diminuez la taille des instances lorsque vous n'avez plus besoin des ressources.<br/> Voir [Récupération d'urgence SharePoint Server 2013 dans Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md).  <br/> |
-|Sites accessibles sur Internet qui utilisent des fonctionnalités et une échelle non disponibles dans Microsoft 365  <br/> |**Concentrez vos efforts** Concentrez-vous sur le développement d'un site de qualité plutôt que sur la construction d'une infrastructure. <br/> **Tirez parti de l'élasticité dans Azure** Redimensionnez la batterie de serveurs pour qu'elle soit adaptée à la demande en ajoutant de nouveaux serveurs et payez uniquement pour les ressources dont vous avez besoin. L'allocation de machine dynamique n'est pas prise en charge (mise à l'échelle automatique).<br/> **Utilisez Azure Active Directory (AD)** Tirez parti d'Azure AD pour les comptes client. <br/> **Ajouter SharePoint fonctionnalités non disponibles dans Microsoft 365** Ajoutez des rapports et des analyses web approfondies. <br/> Voir [Sites Internet dans Microsoft Azure qui utilisent SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
-|Batteries de serveurs d’applications Microsoft 365 environnements locaux ou locaux  <br/> |**Créez, testez et hébergez des applications** dans Azure pour prendre en charge à la fois les environnements locaux et cloud. <br/> **Hébergez ce rôle** dans Azure au lieu d'acheter du nouveau matériel pour les environnements locaux. <br/> |
+|Sites accessibles sur Internet qui utilisent des fonctionnalités et une mise à l’échelle non disponibles dans Microsoft 365  <br/> |**Concentrez vos efforts** Concentrez-vous sur le développement d'un site de qualité plutôt que sur la construction d'une infrastructure. <br/> **Tirez parti de l'élasticité dans Azure** Redimensionnez la batterie de serveurs pour qu'elle soit adaptée à la demande en ajoutant de nouveaux serveurs et payez uniquement pour les ressources dont vous avez besoin. L'allocation de machine dynamique n'est pas prise en charge (mise à l'échelle automatique).<br/> **Utilisez Azure Active Directory (AD)** Tirez parti d'Azure AD pour les comptes client. <br/> **Ajoutez SharePoint fonctionnalité non disponible dans Microsoft 365** Ajouter des rapports approfondis et des analyses web. <br/> Voir [Sites Internet dans Microsoft Azure qui utilisent SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
+|Batteries d’applications pour prendre en charge les environnements Microsoft 365 ou locaux  <br/> |**Créez, testez et hébergez des applications** dans Azure pour prendre en charge à la fois les environnements locaux et cloud. <br/> **Hébergez ce rôle** dans Azure au lieu d'acheter du nouveau matériel pour les environnements locaux. <br/> |
    
 Pour des solutions et des charges de travail de collaboration et intranet, envisagez les options suivantes :
   
-- Déterminez si Microsoft 365 répond aux besoins de votre entreprise ou peut faire partie de la solution. Microsoft 365 fournit un riche ensemble de fonctionnalités toujours à jour.
+- Déterminez si Microsoft 365 répond aux besoins de votre entreprise ou peut faire partie de la solution. Microsoft 365 fournit un ensemble de fonctionnalités enrichi qui est toujours à jour.
     
-- Si Microsoft 365 ne répond pas à toutes les exigences de votre entreprise, envisagez une implémentation standard de SharePoint 2013 en local à partir de Microsoft Consulting Services (MCS). Une architecture standard peut représenter pour vous une solution plus rapide, moins onéreuse et plus simple à prendre en charge qu'une architecture personnalisée. 
+- Si Microsoft 365 ne répond pas à toutes les exigences de votre entreprise, envisagez une implémentation standard de SharePoint 2013 localement à partir de Microsoft Consulting Services (MCS). Une architecture standard peut représenter pour vous une solution plus rapide, moins onéreuse et plus simple à prendre en charge qu'une architecture personnalisée. 
     
 - Si une implémentation standard ne répond pas aux besoins de votre entreprise, envisagez une solution locale personnalisée.
     
@@ -95,7 +95,7 @@ Lorsque vous planifiez une connexion entre différents locaux, vous définissez 
   
 **Figure 2 : utilisation d'une passerelle Azure et d'un périphérique de passerelle local pour fournir une connectivité de site à site entre l'environnement local et Azure**
 
-![Environnement local connecté à un réseau virtuel Azure par une connexion entre sites, qui peut être une connexion VPN de site à site ou ExpressRoute.](../media/AZarch-VPNgtwyconnct.png)
+![Environnement local connecté à un réseau virtuel Azure par une connexion intersite, qui peut être une connexion VPN de site à site ou ExpressRoute.](../media/AZarch-VPNgtwyconnct.png)
   
 Dans ce schéma :
   
@@ -107,13 +107,13 @@ Dans ce schéma :
     
 Pour plus d'informations sur la planification et la création d'un réseau virtuel entre différents locaux, voir [Connecter un réseau local à Microsoft Azure Virtual Network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
   
-## <a name="add-active-directory-domain-services-ad-ds-and-dns"></a>Ajouter les services de domaine Active Directory (AD DS) et DNS
+## <a name="add-active-directory-domain-services-ad-ds-and-dns"></a>Ajouter services de domaine Active Directory (AD DS) et DNS
 
 Pour une récupération d'urgence dans Azure, déployez Windows Server AD et un DNS dans une configuration hybride où Windows Server AD est déployé à la fois en local et sur des machines virtuelles Azure.
   
 **Figure 3 : configuration de domaine Active Directory hybride**
 
-![Les machines virtuelles STwo déployées sur le réseau virtuel Azure et le sous-réseau de la batterie de serveurs SharePoint sont des contrôleurs de domaine réplicas et des serveurs DNS.](../media/AZarch-HyADdomainConfig.png)
+![Les machines virtuelles STwo déployées sur le réseau virtuel Azure et le sous-réseau de la batterie de serveurs SharePoint sont des contrôleurs de domaine de réplication et des serveurs DNS.](../media/AZarch-HyADdomainConfig.png)
   
 Ce schéma, qui s’appuie sur les schémas précédents, ajoute deux machines virtuelles à un sous-réseau Windows Server AD et DNS. Ces machines virtuelles sont des serveurs DNS et des contrôleurs de domaine répliqués. Elles constituent une extension de l’environnement Windows Server AD local. 
   
@@ -137,7 +137,7 @@ Placez les machines virtuelles de la batterie de serveurs SharePoint dans des ni
   
 **Figure 4 : placement des machines virtuelles SharePoint**
 
-![Serveurs de base de données SharePoint rôles serveur ajoutés au réseau virtuel Azure au sein du sous-réseau SharePoint batterie de serveurs.](../media/AZarch-SPVMsinCloudSer.png)
+![Serveurs de base de données et rôles de serveur SharePoint ajoutés au réseau virtuel Azure dans le sous-réseau de la batterie de serveurs SharePoint.](../media/AZarch-SPVMsinCloudSer.png)
   
 Ce schéma, qui s’appuie sur les schémas précédents, ajoute les rôles de serveur de batterie de serveurs SharePoint dans leurs niveaux respectifs.
   
@@ -173,7 +173,7 @@ Voici un exemple qui montre une architecture de sites Internet standard rempliss
   
 **Figure 6 : exemple de planification pour les objectifs de capacité et de performances dans une batterie de serveurs à trois niveaux**
 
-![Standard SharePoint 2013 Internet Sites architecture with component allocations that meet specific capacity and performance goals.](../media/AZarch-CapPerfexmpArch.png)
+![Architecture des sites Internet standard SharePoint 2013 avec des allocations de composants qui répondent à des objectifs de capacité et de performances spécifiques.](../media/AZarch-CapPerfexmpArch.png)
   
 Dans ce schéma :
   
@@ -189,7 +189,7 @@ Examinons de plus près le niveau Serveur d'applications.
   
 **Figure 7 : niveau Serveur d'applications avant ajustement**
 
-![Exemple SharePoint niveau de serveur d’applications Server 2013 avant le réglage Microsoft Azure groupes à haute disponibilité.](../media/AZarch-AppServtierBefore.png)
+![Exemple SharePoint niveau serveur d’applications Server 2013 avant le réglage des groupes à haute disponibilité Microsoft Azure.](../media/AZarch-AppServtierBefore.png)
   
 Dans ce schéma :
   
@@ -205,7 +205,7 @@ Vous déterminez le nombre de composants d'après les cibles de performances et 
   
 **Figure 8 : niveau Serveur d'applications après ajustement**
 
-![Exemple SharePoint niveau de serveur d’applications Server 2013 après ajustement des groupes Microsoft Azure de disponibilité.](../media/AZarch-AppServtierAfter.png)
+![Exemple SharePoint niveau serveur d’applications Server 2013 après paramétrage pour Microsoft Azure groupes à haute disponibilité.](../media/AZarch-AppServtierAfter.png)
   
 Ce schéma montre les trois serveurs d’applications configurés de façon identique avec les quatre mêmes composants.
   
@@ -213,7 +213,7 @@ Lorsque nous ajoutons des groupes à haute disponibilité aux niveaux de la batt
   
 **Figure 9 : batterie de serveurs SharePoint terminée dans les services d'infrastructure Azure**
 
-![Exemple SharePoint batterie de serveurs 2013 dans les services d’infrastructure Azure avec un réseau virtuel, une connectivité entre locaux, des sous-réseaux, des VM et des groupes à haute disponibilité.](../media/7256292f-bf11-485b-8917-41ba206153ee.png)
+![Exemple SharePoint batterie de serveurs 2013 dans les services d’infrastructure Azure avec réseau virtuel, connectivité intersite, sous-réseaux, machines virtuelles et groupes à haute disponibilité.](../media/7256292f-bf11-485b-8917-41ba206153ee.png)
   
 Ce schéma illustre la batterie de serveurs SharePoint implémentée dans les services d’infrastructure Azure, avec des groupes à haute disponibilité pour fournir des domaines d’erreur pour les serveurs de chaque niveau.
   

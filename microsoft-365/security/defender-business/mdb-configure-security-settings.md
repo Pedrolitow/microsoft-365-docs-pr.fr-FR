@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 22c2de998f4d4cfadb0262ccedf04decc01ce226
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 8ff1e381631d3ba85f41da2bb82b1a47ddf1612f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916290"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097313"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>Afficher et modifier vos stratégies et paramètres de sécurité dans Microsoft Defender pour les PME
 
@@ -143,10 +143,10 @@ Pour accéder aux paramètres des fonctionnalités avancées, dans le portail Mi
 
 Le tableau suivant décrit les paramètres des fonctionnalités avancées :
 
-| Setting | Description |
+| Paramètre | Description |
 |:---|:---|
 | Examen automatisé <br/>(activé par défaut) | À mesure que des alertes sont générées, des investigations automatisées peuvent se produire. Chaque investigation automatisée détermine si une menace détectée nécessite une action, puis prend (ou recommande) des actions de correction (comme l’envoi d’un fichier en quarantaine, l’arrêt d’un processus, l’isolation d’un appareil ou le blocage d’une URL). Pendant l’exécution d’un examen, les autres alertes associées qui apparaissent sont ajoutées à l’examen jusqu’à la fin de l’opération. Si une entité affectée est vue ailleurs, l’enquête automatisée étend son étendue pour inclure cette entité, et le processus d’examen se répète.<br/><br/>Vous pouvez afficher les enquêtes sur la page **Incidents** . Sélectionnez un incident, puis sélectionnez l’onglet **Investigations** .<br/><br/>[En savoir plus sur les enquêtes automatisées](../defender-endpoint/automated-investigations.md).   |
-| Réponse en direct  | Defender entreprise inclut les types d’actions de réponse manuelle suivants : <br/>- Exécuter l’analyse antivirus<br/>- Isoler l’appareil<br/>- Arrêter et mettre en quarantaine un fichier<br/>- Ajouter un indicateur pour bloquer ou autoriser un fichier <br/><br/>[En savoir plus sur les actions de réponse](../defender-endpoint/respond-machine-alerts.md). |
+| Réponse en direct  | Defender entreprise inclut les types d’actions de réponse manuelle suivants : <br/>- Exécuter une analyse antivirus<br/>- Isoler l’appareil<br/>- Arrêter et mettre en quarantaine un fichier<br/>- Ajoutez des indicateurs pour bloquer ou autoriser un fichier. <br/><br/>[En savoir plus sur les actions de réponse](../defender-endpoint/respond-machine-alerts.md). |
 | Réponse en direct pour les serveurs | (Ce paramètre n’est actuellement pas disponible dans Defender entreprise)   |
 | Exécution de scripts non signés live Response | (Ce paramètre n’est actuellement pas disponible dans Defender entreprise)  | 
 | Activer PEPT en mode bloc<br/>(activé par défaut) | Fournit une protection supplémentaire contre les artefacts malveillants lorsque Antivirus Microsoft Defender n’est pas le produit antivirus principal et s’exécute en mode passif sur un appareil. PEPT en mode bloc fonctionne en arrière-plan pour corriger les artefacts malveillants détectés par PEPT fonctionnalités. De tels artefacts peuvent avoir été manqués par le produit antivirus principal non-Microsoft. Pour les appareils exécutant Antivirus Microsoft Defender comme antivirus principal, PEPT en mode bloc fournit une couche supplémentaire de défense en permettant à Antivirus Microsoft Defender d’effectuer des actions automatiques sur les détections de PEPT comportementales après violation.<br/><br/>[En savoir plus sur PEPT en mode bloc](../defender-endpoint/edr-in-block-mode.md). |
@@ -172,7 +172,7 @@ Outre les stratégies de sécurité appliquées aux appareils, vous pouvez affic
 
 Le tableau suivant décrit les paramètres à afficher (et si nécessaire, modifier) dans Defender entreprise :
 
-| Catégorie | Setting | Description |
+| Catégorie | Paramètre | Description |
 |:---|:---|:---|
 | **Centre de sécurité** | **Fuseau horaire** | Sélectionnez le fuseau horaire à utiliser pour les dates et heures affichées dans les incidents, les menaces détectées et l’examen automatisé & correction. Vous pouvez utiliser UTC ou votre fuseau horaire local (*recommandé*).  |
 | **Microsoft 365 Defender** | **Account** | Affichez les détails, tels que l’emplacement où vos données sont stockées, votre ID de locataire et votre ID d’organisation (organisation). |
@@ -183,17 +183,19 @@ Le tableau suivant décrit les paramètres à afficher (et si nécessaire, modif
 
 ### <a name="access-your-settings-in-the-microsoft-365-defender-portal"></a>Accéder à vos paramètres dans le portail Microsoft 365 Defender
 
-1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) et connectez-vous.
+1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)), puis connectez-vous.
 
 2. Sélectionnez **Paramètres**, puis sélectionnez une catégorie (par exemple, **Centre de sécurité**, **Microsoft 365 Defender** ou **points de terminaison**).
 
 3. Dans la liste des paramètres, sélectionnez un élément à afficher ou à modifier.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Passez à une ou plusieurs des tâches suivantes :
 
 - [Démarrage à l’aide de Microsoft Defender pour les PME](mdb-get-started.md)
 - [Gérer les appareils dans Microsoft Defender pour les PME](mdb-manage-devices.md)
 - [Afficher et gérer les incidents dans Microsoft Defender pour les PME](mdb-view-manage-incidents.md)
+- [Afficher ou modifier des stratégies dans Microsoft Defender pour les PME](mdb-view-edit-policies.md)
+
 - [Afficher ou modifier des stratégies dans Microsoft Defender pour les PME](mdb-view-edit-policies.md)

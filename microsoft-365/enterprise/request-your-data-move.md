@@ -2,7 +2,7 @@
 title: Procédure de demande d'un déplacement de données
 ms.author: andyber
 author: andybergen
-manager: laurawi
+manager: scotv
 ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
@@ -13,25 +13,25 @@ search.appverid:
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
-description: Les Office 365 existants doivent envoyer une demande avant la date d’échéance pour que leurs données de services Microsoft 365 sont déplacées vers leur nouvelle région.
+description: Les clients Office 365 existants doivent soumettre une demande avant l’échéance pour que leurs données de services Microsoft 365 soient déplacées vers leur nouvelle zone géographique.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1c8bd46de424175c524a62bc7ebca8c9385d7845
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 023262910f55da0e1145cc02f339debf4dffdcd5
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165497"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096301"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d’un déplacement de données
 
 > [!NOTE]
-> Les informations de cette page s’appliquent uniquement aux clients qui avaient des clients Microsoft 365 existants avant l’ouverture des nouveaux centres de données dans leur centre de données géographique. L’éligibilité à la migration dépend également de la date de mise en service du service spécifique.  La date de création du client n’est peut-être pas toujours la date unique qui compte.
+> Les informations de cette page s’appliquent uniquement aux clients qui avaient des locataires Microsoft 365 existants avant l’ouverture des nouveaux centres de données dans leur zone géographique de centre de données. L’éligibilité à la migration dépend également de la date de provisionnement du service spécifique.  La date de création du locataire peut ne pas toujours être la date unique qui importe.
   
-Les clients Microsoft 365 éligibles peuvent demander la migration des données client essentielles de leur organisation au repos.  Le programme prend en charge les demandes pour chaque pays au cours de la période décrite dans le tableau et des clients ayant un pays d’inscription éligible associé à Microsoft 365 client.
+Les clients éligibles Microsoft 365 peuvent demander la migration pour l’ensemble des données client de leur organisation au repos.  Le programme prend en charge les demandes pour chaque pays au cours de la période décrite dans le tableau et auprès des clients disposant d’un pays d’inscription éligible associé à leur locataire Microsoft 365.
   
 ## <a name="when-can-i-request-a-move"></a>Quand puis-je demander un déplacement ?
 
-| Clients dont le pays d’inscription est | Début de période de la demande | Date d’échéance de la demande |
+| Clients avec le pays d’inscription dans | Début de période de la demande | Date d’échéance de la demande |
 |:-----|:-----|:-----|
 |Japon  | |Période de demande fermée  |
 |Australie, Nouvelle-Zélande, Fidji  | |Période de demande fermée  |
@@ -50,30 +50,30 @@ Les clients Microsoft 365 éligibles peuvent demander la migration des données 
 
 ## <a name="how-to-request-a-move"></a>Procédure de demande d’un déplacement
 
-Les clients éligibles voient une page dans le Centre d'administration Microsoft 365, qui leur permet de demander le déplacer vers leur nouvelle région de centres de données.  
+Les clients éligibles verront une page dans le Centre d'administration Microsoft 365, qui leur permettra de demander que leurs données client de base soient déplacées vers leur nouvelle région de centre de données.  
   
-Pour accéder à la page dans le Centre d'administration Microsoft 365, dans le volet de navigation sur la gauche, développez **Paramètres,** puis cliquez sur **Org Paramètres**.
-Sélectionnez le profil **d’organisation de** l’onglet, puis sélectionnez l’option **Résidence des données.**
+Pour accéder à la page du Centre d'administration Microsoft 365, dans le volet de navigation à gauche, développez **Paramètres**, puis cliquez sur **Org Paramètres**.
+Sélectionnez l’onglet **Profil d’organisation**, puis sélectionnez l’option **Résidence des données**.
   
-Vous ne verrez pas cette section si votre client n’est pas éligible au programme Microsoft 365 move.  Si votre organisation a des exigences en matière de résidence des données et que vous devez demander la migration, cochez la case, puis **enregistrez.**
+Cette section ne s’affiche pas si votre locataire n’est pas éligible au programme de déplacement Microsoft 365.  Si votre organisation a des exigences de résidence des données et que vous devez demander la migration, cochez la case, puis **enregistrez**.
   
-![Écran d’action d’opt-in du centre de données.](../media/dataresidencyflyoutae.jpg)
+![Écran d’action d’adhésion au centre de données.](../media/dataresidencyflyoutae.jpg)
   
-Le texte de la section Résidence  **des** données change pour indiquer que votre organisation a demandé à déplacer ses données vers le pays et la date appropriés. Vous recevez également un message de confirmation dans votre centre de messages. Cela permet de confirmer que votre demande de déplacement a abouti. 
+Le texte de la **section Résidence des données** change pour indiquer que **votre organisation a demandé à déplacer ses données** vers le pays et la date appropriés. Vous recevez également un message de confirmation dans votre centre de messages. Cela permet de confirmer que votre demande de déplacement a abouti. 
   
 ## <a name="what-happens-after-requesting-a-move"></a>Que se passe-t-il une fois la demande de déplacement effectuée ?
 
-Après avoir demandé un déplacement, nous prévoyons de déplacer vos données client essentielles au repos pour les services Microsoft 365 éligibles aussi rapidement que le permettent nos contraintes opérationnelles. En raison de la nature imprévisible de la plupart des contraintes, nous ne pouvons pas vous communiquer une date spécifique ou une période pour les déplacements. Une fois le déplacement de chaque service terminé, les administrateurs clients voient une notification dans le centre de messages.
+Après avoir demandé un déplacement, nous prévoyons de déplacer vos données client principales au repos pour les services Microsoft 365 éligibles aussi rapidement que nos contraintes opérationnelles le permettent. En raison de la nature imprévisible de la plupart des contraintes, nous ne pouvons pas vous communiquer une date spécifique ou une période pour les déplacements. Les administrateurs clients voient une notification dans le Centre de messages une fois le déplacement de chaque service terminé.
   
 Les déplacements peuvent prendre jusqu'à 24 mois à compter de la date d'échéance de la demande pour votre pays.
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Depuis janvier 2020, les clients des pays Office 365 éligibles peuvent opter pour la migration de Microsoft Teams de service de conversation.  Les clients qui ont précédemment choisi d’Data Residency un déplacement Teams déplacement vers leur région de centre de données locale.  Aucune action supplémentaire n’est requise par ces clients.
+Depuis janvier 2020, les clients des pays éligibles Office 365 peuvent accepter la migration de données de service de conversation Microsoft Teams.  Les clients qui ont précédemment opté pour un déplacement Data Residency auront également Teams passer à leur emplacement géographique de centre de données local.  Aucune action supplémentaire n’est requise par ces clients.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
-[Déplacement de données principales vers de nouvelles Office 365 de centres de données](moving-data-to-new-datacenter-geos.md)
+[Déplacement de données de base vers de nouvelles zones géographiques de centre de données Office 365](moving-data-to-new-datacenter-geos.md)
 
 [FAQ général relatif au déplacement de données](data-move-faq.yml)
 

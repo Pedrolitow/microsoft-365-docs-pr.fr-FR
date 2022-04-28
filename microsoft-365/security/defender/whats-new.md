@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 053326cacaeb2b4110f71edaa290ed10454aa720
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 56e22e0525324c59d2d62adaf2325edc3317ccd6
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731645"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096047"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
@@ -46,10 +46,13 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 Vous pouvez également obtenir des mises à jour de produit et des notifications importantes via le [centre de messages](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
 
 
+## <a name="april-2022"></a>Avril 2022
+- (Préversion) [Des actions](advanced-hunting-take-action.md) peuvent désormais être effectuées sur les messages électroniques directement à partir des résultats de la requête de chasse. Les e-mails peuvent être déplacés vers d’autres dossiers ou supprimés définitivement. 
 
 ## <a name="march-2022"></a>Mars 2022
 
 - (Préversion) La file d’attente d’incidents a été améliorée avec plusieurs fonctionnalités conçues pour faciliter vos investigations. Les améliorations incluent des fonctionnalités telles que la possibilité de rechercher des incidents par ID ou nom, spécifier un intervalle de temps personnalisé, etc.
+
 
 ## <a name="december-2021"></a>Décembre 2021
 

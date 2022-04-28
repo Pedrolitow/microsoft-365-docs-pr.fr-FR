@@ -2,8 +2,8 @@
 title: Types de fichiers pris en charge dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Liste des types de fichiers pris en charge dans Microsoft 365 eDiscovery (Premium), y compris les types de fichiers image pris en charge par la fonctionnalité OCR dans eDiscovery (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95adaf84f5281b943720be595b0e0e4aababd91f
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 422200b3015ff86566507cbe3f63bc2a75a84bea
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996743"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095793"
 ---
 # <a name="supported-file-types-in-ediscovery-premium"></a>Types de fichiers pris en charge dans eDiscovery (Premium)
 
@@ -241,7 +241,7 @@ Microsoft Purview eDiscovery (Premium) prend en charge de nombreux types de fich
 |application/vnd.oasis.opendocument.text|Oui|Oui|Oui|Oui|Oui|.odt|
 |
 
-## <a name="other"></a>Autre
+## <a name="other"></a>Autres
 
 <br>
 

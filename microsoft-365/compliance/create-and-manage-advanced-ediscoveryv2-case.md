@@ -2,8 +2,8 @@
 title: Créer et gérer des cas eDiscovery (Premium) dans Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 04/08/2022
 audience: Admin
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment créer et gérer des cas de découverte électronique (Premium) Microsoft Purview. La première étape consiste à créer un cas et à commencer à utiliser les fonctionnalités et fonctionnalités eDiscovery (Premium).
-ms.openlocfilehash: 294a07c2f43559943482c3e17c98289f41dff7bc
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: e5773f54d0ce6efbfc5aae22eb616f96c3777eda
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999275"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096983"
 ---
 # <a name="create-and-manage-an-ediscovery-premium-case"></a>Créer et gérer un cas eDiscovery (Premium)
 

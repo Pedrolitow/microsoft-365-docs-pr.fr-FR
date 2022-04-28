@@ -2,8 +2,8 @@
 title: Collaborer avec les consignatateurs dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser l’outil de gestion des consignats dans eDiscovery (Premium) pour gérer les données d’une affaire juridique.
-ms.openlocfilehash: 0c529b339c79789072cf160916db8c21acff7d86
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 360e66c3244b614624b6817f7fe95d9204c34bef
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992191"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096653"
 ---
 # <a name="work-with-custodians-and-non-custodial-data-sources-in-ediscovery-premium"></a>Collaborer avec des consignatateurs et des sources de données non liées à la garde dans eDiscovery (Premium)
 
