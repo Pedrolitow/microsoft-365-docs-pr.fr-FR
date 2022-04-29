@@ -21,12 +21,12 @@ description: Utilisez le portail de conformité Microsoft Purview pour recherche
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: fa397ec1ce7dea253367dfb917166a9a43655896
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e6754601aca5dda74ee59ed2c6c52b3f8b1eb2a3
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098469"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128497"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -1107,6 +1107,21 @@ Voici quelques conseils pour rechercher des activités d’administrateur Exchan
   - [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog)
 
    Gardez à l’esprit que les mêmes activités d’administrateur Exchange sont enregistrées dans le journal d’audit de l’administrateur Exchange et dans le journal d’audit.
+
+### <a name="encrypted-message-portal-activities"></a>Activités du portail des messages chiffrés
+
+Les journaux d’accès sont disponibles pour les messages chiffrés via le portail des messages chiffrés qui permet à votre organisation de déterminer quand les messages sont lus et transférés par vos destinataires externes. Pour plus d’informations sur l’activation et l’utilisation des journaux d’activité du portail de messages chiffrés, consultez la rubrique [Journal d’activité du portail des messages chiffrés](ome-message-access-logs.md).
+
+Chaque entrée d’audit d’un message suivi contient les champs suivants :
+
+- MessageID : contient l’ID du message en cours de suivi. Il s’agit de l’identificateur de clé utilisé pour suivre un message via le système.
+- Destinataire : liste de toutes les adresses de messagerie des destinataires.
+- Expéditeur : adresse de messagerie d’origine.
+- AuthenticationMethod : décrit la méthode d’authentification pour accéder au message, par exemple OTP, Yahoo, Gmail ou Microsoft.
+- AuthenticationStatus : contient une valeur indiquant que l’authentification a réussi ou échoué.
+- OperationStatus : indique si l’opération indiquée a réussi ou échoué.
+- AttachmentName : nom de la pièce jointe.
+- OperationProperties : liste des propriétés facultatives, par exemple le nombre de codes secrets OTP envoyés ou l’objet du courrier.
 
 ## <a name="frequently-asked-questions"></a>Foire aux questions
 

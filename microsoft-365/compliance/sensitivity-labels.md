@@ -18,20 +18,22 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Utilisez les étiquettes de confidentialité de Microsoft Information Protection (MIP) pour classifier et protéger le contenu sensible.
+description: Utilisez les étiquettes de confidentialité de Protection des données Microsoft Purview pour classifier et protéger le contenu sensible.
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 1c7ec0f9411d767e588e391eb7eb94ec95a219fb
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 7bac33f19b51e2a5c6d6f234ba5e692cedd62c2b
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312206"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128453"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Si vous recherchez des informations sur les étiquettes de niveau de confidentialité dans vos applications Office, consultez [Appliquer des étiquettes de confidentialité à vos fichiers et vos e-mails dans Office](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
@@ -40,7 +42,7 @@ ms.locfileid: "63312206"
 
 Pour mener à bien leur travail, les membres de votre organisation collaborent avec d’autres personnes internes ou externes à votre organisation. Cela signifie que le contenu n’est plus protégé par un pare-feu : il peut se déplacer partout, sur les appareils, applications et services. Dans ce cas, vous devez sécuriser et protéger l’itinérance, tout en respectant les stratégies métier et de conformité de votre organisation.
 
-Les étiquettes de confidentialité de la solution Microsoft Information Protection vous permettent de classifier et protéger les données de votre organisation, tout en veillant à ce que la productivité des utilisateurs et leur aptitude à collaborer ne soient pas compromises.
+Les étiquettes de confidentialité de Protection des données Microsoft Purview vous permettent de classifier et protéger les données de votre organisation, tout en veillant à ce que la productivité des utilisateurs et leur aptitude à collaborer ne soient pas compromises.
 
 Exemple illustrant les étiquettes de confidentialité disponibles dans Excel à partir de l’onglet **Accueil** du ruban. Dans cet exemple, l’étiquette appliquée affiche dans la barre d’état :
 
@@ -65,7 +67,7 @@ Vous pouvez utiliser les étiquettes de niveau de confidentialité aux fins suiv
 
 - **Étendre les étiquettes de confidentialité à Power BI** : lorsque vous activez cette fonctionnalité, vous pouvez appliquer et afficher les étiquettes dans Power BI et protéger les données lorsqu’elles sont enregistrées en dehors du service.
 
-- **Étendre les étiquettes de confidentialité aux ressources dans Azure Purview** : lorsque vous activez cette fonctionnalité, actuellement dans aperçu vous pouvez appliquer vos étiquettes de confidentialité aux fichiers et ressources de données schématisées dans Azure Purview. Les ressources de données schématisées incluent SQL, Azure SQL, Azure Synapse, Azure Cosoms et AWS RDS.
+- **Étendre les étiquettes de confidentialité aux ressources dans Mappage de données Microsoft Purview** : lorsque vous activez cette fonctionnalité, actuellement en préversion vous pouvez appliquer vos étiquettes de confidentialité aux fichiers et ressources de données schématisées dans Mappage de données Microsoft Purview. Les ressources de données schématisées incluent SQL, Azure SQL, Azure Synapse, Azure Cosmos et AWS RDS.
 
 - **Étendre les étiquettes de confidentialité aux applications et services tiers.** À l’aide du kit de développement logiciel (SDK) Microsoft Information Protection, les applications tierces peuvent lire les étiquettes de confidentialité et appliquer des paramètres de protection.
 
@@ -108,7 +110,7 @@ Une fois qu’une étiquette de confidentialité est appliquée à un e-mail ou 
     
     Avez-vous besoin de vérifier la date de l’application des marques de contenu ? Veuillez consulter la section [Délai de marquage et de chiffrage de contenus par les applications Office](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption).
     
-    Si vous avez des modèles ou des flux de travail basés sur des documents spécifiques, testez ces documents avec les marquages de contenu que vous avez choisis avant de rendre l’étiquette disponible pour les utilisateurs. Certaines restrictions de longueur de chaîne à connaître :
+    Si vous avez des modèles ou des flux de travail basés sur des documents spécifiques, testez ces documents avec les marquages de contenu que vous avez choisis avant de rendre l’étiquette disponible pour les utilisateurs. Certaines restrictions de longueur de chaîne à connaître :
     
     Les filigranes sont limités à 255 caractères. Les en-têtes et les pieds de page sont limités à 1 024 caractères, sauf dans Excel. Excel présente une limite totale de 255 caractères pour les en-têtes et les pieds de page, mais cette limite inclut des caractères qui ne sont pas visibles, tels que des codes de mise en forme. Si cette limite est atteinte, la chaîne entrée n’apparaît pas dans Excel.
 
@@ -120,7 +122,7 @@ Une fois qu’une étiquette de confidentialité est appliquée à un e-mail ou 
     
     ![Invitation de mise à attribuer une étiquette requise.](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    Pour plus d’informations sur les paramètres d' **Étiquetage automatique pour les fichiers et e-mails** lorsque vous créez ou modifiez une étiquette de confidentialité, consultez [Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md) pour les applications Office et [Étiquetage dans Azure Purview](/azure/purview/create-sensitivity-label).
+    Pour plus d’informations sur les paramètres d’**Étiquetage automatique des fichiers et des courriers** lorsque vous créez ou modifiez une étiquette de confidentialité, consultez [Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md) pour les applications Office et [Étiquetage dans Mappage de données Microsoft Purview](/azure/purview/create-sensitivity-label).
 
 - **Définir le type de lien de partage par défaut** pour les sites SharePoint et les documents individuels. Pour éviter que les utilisateurs ne partagent trop de documents, définissez [l'étendue et les autorisations par défaut](sensitivity-labels-default-sharing-link.md) pour le partage de documents à partir de SharePoint et OneDrive.
 
@@ -130,7 +132,7 @@ Lorsque vous créez une étiquette de confidentialité, vous êtes invité à co
 - Les paramètres d’étiquette que vous pouvez configurer pour cette étiquette
 - L’emplacement où l’étiquette sera visible par les utilisateurs
 
-Cette configuration d’étendue vous permet d’utiliser des étiquettes de confidentialité qui s’appliquent uniquement aux documents et e-mails et qui ne peuvent pas être sélectionnées pour les conteneurs. Il en va de même pour les étiquettes de confidentialité qui sont uniquement destinées aux conteneurs et qui ne peuvent pas être sélectionnées pour les documents et les courriers électroniques. Vous pouvez également sélectionner l’étendue des ressources Azure Purview :
+Cette configuration d’étendue vous permet d’utiliser des étiquettes de confidentialité qui s’appliquent uniquement aux documents et e-mails et qui ne peuvent pas être sélectionnées pour les conteneurs. Il en va de même pour les étiquettes de confidentialité qui sont uniquement destinées aux conteneurs et qui ne peuvent pas être sélectionnées pour les documents et les courriers électroniques. Vous pouvez également sélectionner l’étendue des ressources Mappage de données Microsoft Purview :
 
 ![Options d’étendue des étiquettes de confidentialité.](../media/sensitivity-labels-scopes.png)
 
@@ -138,7 +140,7 @@ Par défaut, l’étendue **Fichiers et e-mails** est toujours sélectionnée. L
 
 - **Groupes et sites** : [activer les étiquettes de confidentialité pour les conteneurs et synchroniser les étiquettes](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
-- **Ressources de données schématisées** : [étiqueter automatiquement votre contenu dans Azure Purview](/azure/purview/create-sensitivity-label)
+- **Ressources de données schématisées** : [étiqueter automatiquement votre contenu dans Mappage de données Microsoft Purview](/azure/purview/create-sensitivity-label)
 
 Si vous modifiez les valeurs par défaut pour que toutes les étendues ne soient pas sélectionnées, vous verrez la première page des paramètres de configuration des étendues que vous n’avez pas sélectionnées, mais vous ne pourrez pas configurer les paramètres. Par exemple, si l’étendue des fichiers et e-mails n’est pas sélectionnée, vous ne pouvez pas sélectionner les options de la page suivante :
 
@@ -243,7 +245,7 @@ Si vous ne voyez pas l’étiquette ou le paramètre de stratégie d’étiquett
 
 Les étiquettes de confidentialité intégrées à Microsoft 365 Apps sur Windows, macOS, iOS et Android s’affichent et se comportent très de la même façon sur ces appareils pour offrir aux utilisateurs une expérience d’étiquetage cohérente. Toutefois, sur les ordinateurs Windows, vous pouvez également utiliser le client [Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2). Ce client est désormais en [mode maintenance](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613).
 
-Si vous utilisez le client AIP, consultez [Pourquoi choisir l’étiquetage intégré MIP sur le complément AIP pour les applications Office](sensitivity-labels-aip.md) pour comprendre et gérer vos choix d’étiquetage pour les ordinateurs Windows.
+Si vous utilisez le client AIP, consultez [Pourquoi choisir l’étiquetage intégré AIP sur le complément AIP pour les applications Office](sensitivity-labels-aip.md) pour comprendre et gérer vos choix d’étiquetage pour les ordinateurs Windows.
 
 ### <a name="azure-information-protection-labels"></a>Étiquettes Azure Information Protection
 
@@ -256,7 +258,7 @@ Si votre client n’est pas encore sur la [plateforme d’étiquetage unifié](/
 
 Une étiquette de confidentialité étant stockée dans les métadonnées d’un document, les applications et services tiers peuvent lire et écrire dans ces métadonnées d'étiquetage pour compléter votre déploiement d’étiquetage. Par ailleurs, les développeurs de logiciels peuvent utiliser le kit de développement logiciel (SDK) [Microsoft Information Protection](/information-protection/develop/overview#microsoft-information-protection-sdk) pour prendre en charge les fonctionnalités d’étiquetage et de chiffrement sur plusieurs plateformes. Pour en savoir plus, voir [l'annonce de la disponibilité générale sur le blog de la Communauté technique](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144). 
 
-Vous pouvez également en savoir plus sur les [solutions de partenaires intégrées à Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657).
+Vous pouvez également en savoir plus sur les [solutions de partenaires intégrées à Protection des données Microsoft Purview](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657).
 
 ## <a name="deployment-guidance"></a>Instructions de déploiement
 
