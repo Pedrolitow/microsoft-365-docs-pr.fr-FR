@@ -251,7 +251,8 @@
 ##### [Chronologie des événements](threat-and-vuln-mgt-event-timeline.md)
 ##### [Rapport des appareils vulnérables](tvm-vulnerable-devices-report.md)
 ##### [Repérer des appareils exposés](tvm-hunt-exposed-devices.md)
-
+#### [Conseils sur les menaces actives et les campagnes]()
+##### [Gérer la vulnérabilité Log4Shell](tvm-manage-log4shell-guidance.md)
 ### [Découverte d’appareils]()
 #### [Vue d’ensemble de la découverte d’appareils](device-discovery.md)
 #### [Configurer la découverte d’appareils](configure-device-discovery.md)

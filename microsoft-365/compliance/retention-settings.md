@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: 729c31935ee3ded04a12f7822a17082ef1b52c26
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: c0214476494e024247b76911475df88bdfbfa4ff
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911509"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65129219"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
@@ -83,13 +85,13 @@ Avant de configurer votre portée adaptative, utilisez la section précédente p
 
 Pour les sites SharePoint, une configuration SharePoint supplémentaire peut être nécessaire si vous prévoyez d'utiliser des [propriétés de site personnalisées](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), accédez à l’un des emplacements suivants :
+1. Dans le [Centre de conformité Microsoft Purview](https://compliance.microsoft.com/), accédez à l’un des emplacements suivants :
     
     - Si vous utilisez la solution de gestion des enregistrements :
         - **Solutions** > **Gestion des enregistrements** > **étendues adaptatives** onglet > + **Créer l’étendue**
         
-    - Si vous utilisez la solution de gouvernance des informations :
-       - **Solutions** > **Gouvernance des informations** > **Étendues adaptatives** onglet > + **Créer une étendue**
+    - Si vous utilisez la solution de gestion du cycle de vie des données :
+       - **Solutions** > **Gestion du cycle de vie des données** > **Étendues adaptatives** onglet > + **Créer une étendue**
     
     Vous ne voyez pas immédiatement votre solution dans le volet de navigation ? Sélectionnez d'abord **Afficher tout**. 
 
@@ -368,7 +370,7 @@ En choisissant les paramètres de conservation et de suppression de contenu, vot
 
 ### <a name="retaining-content-for-a-specific-period-of-time"></a>Conservation du contenu sur une période donnée
 
-Lorsque vous configurez une étiquette ou une stratégie de rétention pour conserver le contenu, vous choisissez de conserver les éléments pendant un nombre spécifique de jours, mois ou années. Ou bien de conserver les éléments indéfiniment. La période de rétention n’est pas calculée à partir du moment où la stratégie a été affectée, mais en fonction du début de la période de rétention spécifiée.
+Lorsque vous configurez une étiquette ou une stratégie de rétention pour conserver du contenu, vous choisissez de conserver des éléments pour un nombre spécifique de jours, de mois (30 jours pour un mois) ou d’années. Ou bien de conserver les éléments indéfiniment. La période de rétention n’est pas calculée à partir du moment où la stratégie a été affectée, mais en fonction du début de la période de rétention spécifiée.
 
 Pour le début de la période de rétention, vous pouvez choisir le moment où le contenu a été créé ou, pris en charge uniquement pour les fichiers et les groupes SharePoint, OneDrive et Microsoft 365, la dernière modification du contenu. Pour les étiquettes de rétention, vous pouvez démarrer la période de rétention à partir du contenu étiqueté et lorsqu’un événement se produit.
 
@@ -426,7 +428,7 @@ Certains paramètres ne peuvent pas être modifiés une fois la stratégie de r�
 
 Si vous modifiez une stratégie de rétention et que des éléments y sont déjà sujets aux paramètres originaux, vos paramètres mis à jour seront automatiquement appliqués à ces éléments en plus des éléments qui seront nouvellement identifiés.
 
-En règle générale, cette mise à jour est assez rapide, mais peut prendre plusieurs jours. Lorsque la réplication de la stratégie au sein de vos emplacements Microsoft 365 est terminée, l’état de la stratégie de rétention dans le Centre de conformité Microsoft 365 passe de **Activé (en attente)** à **Activé (opération réussie)**.
+En règle générale, cette mise à jour est assez rapide, mais peut prendre plusieurs jours. Une fois la réplication de stratégie sur vos emplacements Microsoft 365 terminée, l’état de la stratégie de rétention dans le portail de conformité Microsoft Purview passe de **Activé (en attente)** à **Activé (opération réussie)**.
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>Verrouillage de la stratégie pour empêcher toute modification
 

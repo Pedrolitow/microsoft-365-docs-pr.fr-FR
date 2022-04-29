@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Manuel de solutions de Microsoft Defender pour Office 365
-ms.openlocfilehash: 1e943cc36d7a8787a41e16d61b15fe9e2eea129c
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: f23c45d117735997c219278621be7f314602cd8f
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64474880"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130689"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>Livre d’essai : Microsoft Defender pour Office 365
 
 Bienvenue dans Microsoft Defender pour Office 365 d’essai Ce manuel vous aidera à mettre à jour votre version d’essai gratuite de 90 jours en vous enseignant à protéger votre organisation avec Defender pour Office 365. À l'aide des recommandations de Microsoft Corporation, vous apprendrez comment Defender for Office 365 peut vous aider à définir des politiques de protection, à analyser les menaces qui pèsent sur votre organisation et à répondre aux attaques.
 
-:::image type="content" source="../../media/mdo-trial-playbook-what-is-mdo.png" alt-text="Représentation graphique de tous les composants de Microsoft Defender pour Office 365" lightbox="../../media/mdo-trial-playbook-what-is-mdo.png":::
+:::image type="content" source="../../media/mdo-trial-playbook-what-is-mdo.png" alt-text="Représentation graphique de tous les composants de Microsoft Defender pour Office 365." lightbox="../../media/mdo-trial-playbook-what-is-mdo.png":::
 
 Ces actions sont des recommandations de l’équipe Microsoft Defender sur les fonctionnalités clés à essayer dans votre version d’essai de 90 jours.
 
@@ -38,8 +38,9 @@ Une fois que vous avez lancé la version d’évaluation et terminé le processu
 
 Nous avons configuré automatiquement des stratégies de sécurité [prédéfinies](preset-security-policies.md) dans votre environnement. Ces stratégies représentent un profil de protection de référence adapté à la plupart des utilisateurs. La protection standard inclut :
 
-- Coffre liens, Coffre pièces jointes et stratégies anti-hameçonnage qui sont limitées à l’ensemble du client ou du sous-ensemble d’utilisateurs que vous avez peut-être choisi au cours du processus de configuration de la version d’évaluation.
-- Protection contre SharePoint, OneDrive, Office applications et Microsoft Teams
+- Liens fiables, pièces jointes fiables et stratégies anti-hameçonnage qui s’appliquent à l’ensemble du locataire ou au sous-ensemble d’utilisateurs que vous avez peut-être choisis pendant le processus de configuration de l’évaluation.
+- Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams.
+- Protection des liens fiables pour les applications Office 365 prises en charge.
 
 Regardez cette vidéo pour en savoir plus : Protégez-vous contre les liens malveillants avec Coffre liens dans [Microsoft Defender pour Office 365 - YouTube](https://www.youtube.com/watch?v=vhIJ1Veq36Y&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=9).
 
@@ -90,7 +91,7 @@ Regardez cette vidéo pour en savoir plus : détecter les compromissions et y r�
 
 ### <a name="use-threat-explorer-to-investigate-malicious-email"></a>Utiliser l’Explorateur de menaces pour examiner les e-mails malveillants
 
-Defender for Office 365 vous permet d'enquêter sur les activités qui mettent en danger les personnes de votre organisation et de prendre des mesures pour protéger votre organisation. Pour ce faire, vous pouvez utiliser [Threat Explorer ou (détections en temps réel)](threat-explorer.md).
+Defender pour Office 365 vous permet d’examiner les activités qui exposent des personnes de votre organisation à des risques et de prendre des mesures pour protéger votre organisation. Pour ce faire, utilisez l’[Explorateur de menaces](threat-explorer.md).
 
 - [Rechercher les messages suspects](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered)qui ont été remis : recherchez et supprimez des messages, identifiez l’adresse IP d’un expéditeur de courrier malveillant ou démarrez un incident pour un examen plus approfondie.
 - [Vérifiez l’action de remise et l’emplacement](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location): cette vérification vous permet de connaître l’emplacement des messages électroniques problématiques.
@@ -104,7 +105,7 @@ Affichez une image plus globale des affichages campagne dans Defender pour Offic
 - [Visualisez l’étendue](campaigns.md#campaign-views-in-the-microsoft-365-defender-portal) de l’attaque.
 - [Suivre l’interaction des](campaigns.md#campaign-details) utilisateurs avec ces messages
 
-  :::image type="content" source="../../media/mdo-trial-playbook-campaign-details.png" alt-text="Détails de la campagne dans le portail Microsoft 365 Defender web" lightbox="../../media/mdo-trial-playbook-campaign-details.png":::
+  :::image type="content" source="../../media/mdo-trial-playbook-campaign-details.png" alt-text="Détails de la campagne dans le portail Microsoft 365 Defender." lightbox="../../media/mdo-trial-playbook-campaign-details.png":::
 
 Regardez cette vidéo pour en savoir plus : [Vues de campagne dans Microsoft Defender pour Office 365 - YouTube](https://www.youtube.com/watch?v=DvqzzYKu7cQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=14).
 
@@ -116,7 +117,7 @@ Répondre efficacement à l’aide de l’examen et de la réponse automatisés 
 - [Afficher les détails et les résultats d’une](email-analysis-investigations.md) enquête
 - Éliminer les menaces en [approuvant les actions de correction](air-remediation-actions.md)
 
-:::image type="content" source="../../media/mdo-trial-playbook-investigation-results.png" alt-text="Résultats de l’enquête" lightbox="../../media/mdo-trial-playbook-investigation-results.png":::
+:::image type="content" source="../../media/mdo-trial-playbook-investigation-results.png" alt-text="Résultats de l’examen" lightbox="../../media/mdo-trial-playbook-investigation-results.png":::
 
 ## <a name="step-3-advanced-content"></a>Étape 3 : Contenu avancé
 
@@ -137,7 +138,7 @@ Former vos utilisateurs avec les connaissances adéquates pour identifier les me
 - [Affecter une formation aux](attack-simulation-training.md#assign-training) utilisateurs en fonction des résultats de simulation
 - [Suivre l’avancement](attack-simulation-training-insights.md) de votre organisation dans les simulations et l’achèvement de la formation
 
-  :::image type="content" source="../../media/mdo-trial-playbook-attack-simulation-training-results.png" alt-text="Insights d’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/mdo-trial-playbook-attack-simulation-training-results.png":::
+  :::image type="content" source="../../media/mdo-trial-playbook-attack-simulation-training-results.png" alt-text="Les informations d’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender." lightbox="../../media/mdo-trial-playbook-attack-simulation-training-results.png":::
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c375d77c3aa64d996a8d8d2f8dce538829eaa3b2
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 229dfbb7a0441f4a6cb6632432c0032f4ce4308e
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568311"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130733"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>Supprimer les utilisateurs bloqués du portail Utilisateurs restreints dans Microsoft 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "64568311"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Si un utilisateur dépasse l’une des limites d’envoi sortant, comme spécifié dans [les limites de service](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) ou dans [les stratégies anti-courrier indésirable sortantes](configure-the-outbound-spam-policy.md), l’utilisateur ne peut pas envoyer d’e-mails, mais il peut continuer à en recevoir.
 
@@ -44,6 +44,16 @@ L'utilisateur est ajouté à la page **Utilisateurs restreints** dans le portail
 > «Votre message n’a pas pu être remis parce que vous n’avez pas été reconnu comme expéditeur valide. Le plus souvent, il est possible que votre adresse de messagerie soit susceptible d’envoyer du courrier indésirable et qu’elle ne soit plus autorisée à envoyer du courrier électronique.  Contactez votre administrateur pour obtenir de l’aide. Le serveur distant a renvoyé' 550 5.1.8 accès refusé, expéditeur sortant incorrect».
 
 Les administrateurs peuvent supprimer des utilisateurs de la page **Utilisateurs restreints** dans Microsoft 365 Defender ou dans Exchange Online PowerShell.
+
+## <a name="learn-more-on-restricted-entities"></a>En savoir plus sur les entités restreintes
+
+Une entité restreinte est une entité qui n’a pas pu envoyer de courrier électronique, car elle a été potentiellement compromise ou a dépassé la limite d’envoi.
+
+Il existe 2 types d’entités restreintes : 
+
+- **Utilisateur restreint** : découvrez pourquoi un utilisateur peut être restreint et comment gérer les utilisateurs restreints (cet article).  
+
+- **Connecteur restreint** : pour plus d’informations sur la raison pour laquelle un connecteur peut être restreint et sur la façon de gérer les connecteurs restreints, consultez [Supprimer les connecteurs bloqués du portail d’entités restreintes](remove-blocked-connectors.md). 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 

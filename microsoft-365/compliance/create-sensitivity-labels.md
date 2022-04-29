@@ -17,19 +17,21 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: 'Une exigence pour l’ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les données de votre organisation.'
-ms.openlocfilehash: 5c80147c18cff8c27f8c205ab1ed600e892f7335
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+description: 'Une exigence pour toutes les solutions de protection des données Microsoft Purview : créer, configurer et publier des étiquettes de confidentialité pour classifier et protéger les données de votre organisation.'
+ms.openlocfilehash: 036835e77ca1e1d7c15435050d4577f5352f0ebd
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499570"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131271"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-L'ensemble des solutions Microsoft Information Protection (parfois sous la forme abrégée MIP) sont mises en œuvre à l’aide d’[étiquettes de confidentialité](sensitivity-labels.md). Pour créer et publier ces étiquettes, accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>.
+Toutes les solutions de protection des données Microsoft Purview sont implémentées à l’aide d’[étiquettes de confidentialité](sensitivity-labels.md). Pour créer et publier ces étiquettes, accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft Purview</a>.
 
 Commencez par créer et configurer les étiquettes de confidentialité que vous souhaitez rendre disponibles pour les applications et autres services. Par exemple, les étiquettes que vous voulez que les utilisateurs voient et appliquent à partir des applications Office.
 
@@ -41,14 +43,12 @@ L’administrateur général de votre organisation dispose des autorisations tot
 
 ## <a name="create-and-configure-sensitivity-labels"></a>Créer et configurer des étiquettes de confidentialité
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), sélectionnez **Solutions** > **Informations Protection**
+1. Dans le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com/), sélectionnez **Solutions** > **Protection des données**
     
     Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**.
 
-2. Dans la page **étiquettes** , sélectionnez **+ Créer une étiquette** pour démarrer la nouvelle configuration d’étiquette de confidentialité. 
-
-    Par exemple, dans le Centre de conformité Microsoft 365 :
-
+2. Dans la page **Étiquettes** , sélectionnez **+ Créer une étiquette** pour démarrer la nouvelle configuration d’étiquette de confidentialité : 
+    
     ![Créer une étiquette de confidentialité.](../media/create-sensitivity-label-full.png)
 
     > [!NOTE]
@@ -62,7 +62,7 @@ L’administrateur général de votre organisation dispose des autorisations tot
 
     - Si **Groupes et sites** est sélectionné, vous pouvez configurer les paramètres qui s’appliquent aux groupes Microsoft 365 et aux sites pour Teams et SharePoint. Si vous n’avez pas sélectionné cette option, vous verrez la première page de ces paramètres, mais vous ne pourrez pas les configurer et les utilisateurs ne pourront pas sélectionner étiquettes pour les groupes et le site.
 
-    Pour plus d’informations sur les ressources de données **schématisées** étendue, consultez [Étiqueter automatiquement votre contenu dans Azure Purview](/azure/purview/create-sensitivity-label).
+    Pour plus d’informations sur l’étendue des **Ressources de données schématisées**, consultez [Étiqueter automatiquement votre contenu dans Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
 
 4. Suivez les invites de configuration pour les paramètres d’étiquette.
 
@@ -92,7 +92,7 @@ Les étiquettes sont disponibles dans des applications ou des services après le
 
 D’autres paramètres d’étiquette sont disponibles dans l’applet de commande [Set-Label](/powershell/module/exchange/set-label) depuis le [Centre de sécurité et conformité PowerShell](/powershell/exchange/scc-powershell).
 
-Par exemple :
+Par exemple :
 
 - Utilisez le paramètre *LocaleSettings* pour des déploiements internationaux pour que les utilisateurs voient le nom de l’étiquette et l’info-bulle dans leur langue locale. La [section suivante](#example-configuration-to-configure-a-sensitivity-label-for-different-languages) présente un exemple de configuration qui spécifie le nom de l’étiquette et le texte d’info-bulle pour le français, l’italien et l’allemand.
 
@@ -128,16 +128,14 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>Publier des étiquettes de confidentialité en créant une stratégie d’étiquette
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), sélectionnez **Solutions** > **Informations Protection**
+1. Dans le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com/), sélectionnez **Solutions** > **Protection des données**
     
     Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**.
 
 2. Sélectionnez **l’onglet Stratégies** d’étiquette, puis **Publiez** l’étiquette pour démarrer la configuration **de la stratégie** :
-
-    Par exemple, dans le Centre de conformité Microsoft 365 :
-
+    
     ![Publier des étiquettes.](../media/publish-sensitivity-labels-full.png)
-
+    
     > [!NOTE]
     > Par défaut, les clients n’ont pas de stratégies d’étiquette. Vous devez alors créer. 
 
@@ -154,7 +152,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
     Si vous souhaitez en savoir plus sur ces paramètres, veuillez consulter la rubrique [Fonction des stratégies d’étiquette](sensitivity-labels.md#what-label-policies-can-do) depuis les informations générales, puis utiliser l’aide de l’Assistant pour les paramètres individuels.
 
-    Pour les étiquettes configurées pour les **actifs Azure Purview (préversion)** : ces étiquettes n’ont pas de paramètres de stratégie associés.
+    Pour les étiquettes configurées pour les **ressources Microsoft Purview Data Map (préversion)**: ces étiquettes n’ont pas de paramètres de stratégie associés.
 
 6. Répétez ces étapes si vous avez besoin d'autres paramètres de stratégie pour des utilisateurs ou des étendues différents. Par exemple, vous souhaitez employer d’autres étiquettes pour un groupe d’utilisateurs, ou une étiquette par défaut différente pour un sous-ensemble d’utilisateurs. Ou, si vous avez configuré des étiquettes avec des étendues différentes.
 
