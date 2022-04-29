@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La mobilité et la sécurité de base peuvent vous aider à sécuriser et gérer les appareils mobiles de votre organisation.
-ms.openlocfilehash: f2da9a20c496d5229d62e477fcf4cc0024436788
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: cb724a4f7d5b4118bb50b0aeaf1138a4a1aebfb6
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935234"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65129131"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Gérer les appareils inscrits dans mobile Gestion des appareils dans Microsoft 365
 
@@ -36,7 +36,7 @@ Une fois que vous l’avez configuré, les membres de votre organisation doivent
 
 Pour accéder au panneau de gestion des appareils, procédez comme suit :
 
-1. Accédez au [Centre d’administration Microsoft 365](../../admin/admin-overview/about-the-admin-center.md).
+1. Accédez au [Centre d’administration Microsoft 365](../../admin/admin-overview/admin-center-overview.md).
 
 2. Tapez Mobile Gestion des appareils dans le champ de recherche, puis sélectionnez **Mobile Gestion des appareils** dans la liste des résultats.
 

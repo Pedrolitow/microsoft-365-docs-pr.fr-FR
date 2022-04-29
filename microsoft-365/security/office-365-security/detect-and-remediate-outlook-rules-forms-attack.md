@@ -18,12 +18,12 @@ description: Découvrez comment reconnaître et corriger les règles de Outlook 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c15046d43a1f2a48cf9f4ef4ccc79c060d18b156
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 10cbb57018cb0e7c30282ca2c89b6a8dab812e24
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972802"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131105"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Détecter et corriger les règles Outlook et les attaques par injection de formulaires personnalisés
 
@@ -165,7 +165,7 @@ Si vous trouvez des preuves de l’une de ces attaques, la correction est simple
 
 3. Si vous n’êtes pas sûr de la présence d’autres programmes malveillants, vous pouvez mettre en forme et réinstaller tous les logiciels sur l’appareil. Pour les appareils mobiles, vous pouvez suivre les étapes des fabricants pour réinitialiser l’appareil à l’image d’usine.
 
-4. Installez les versions les plus récentes de Outlook. N’oubliez pas que la version actuelle de Outlook bloque les deux types de cette attaque par défaut.
+4. Installez les versions les plus récentes d’Outlook. N’oubliez pas que la version actuelle d’Outlook bloque les deux types de cette attaque par défaut.
 
 5. Une fois que toutes les copies hors connexion de la boîte aux lettres ont été supprimées, réinitialisez le mot de passe de l’utilisateur (utilisez un mot de passe de haute qualité) et suivez les étapes de configuration de [l’authentification multifacteur pour les utilisateurs si l’authentification](../../admin/security-and-compliance/set-up-multi-factor-authentication.md) multifacteur n’a pas déjà été activée. Cela garantit que les informations d’identification de l’utilisateur ne sont pas exposées par d’autres moyens (par exemple, hameçonnage ou réutilisation du mot de passe).
 
@@ -175,7 +175,7 @@ Il existe deux applets de commande PowerShell distantes que vous pouvez utiliser
 
 #### <a name="steps-for-mailboxes-that-are-on-an-exchange-server"></a>Étapes pour les boîtes aux lettres qui se trouvent sur un serveur Exchange
 
-1. Connecter au serveur Exchange à l’aide de PowerShell distant. Suivez les étapes de [Connecter pour Exchange serveurs à l’aide de PowerShell distant](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell).
+1. Connectez-vous au serveur Exchange à l’aide de PowerShell distant. Suivez les étapes décrites dans [Se connecter aux serveurs Exchange à l’aide de PowerShell distant](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell).
 
 2. Si vous souhaitez supprimer complètement une seule règle, plusieurs règles ou toutes les règles d’une boîte aux lettres, utilisez l’applet de commande [Remove-InboxRule](/powershell/module/exchange/Remove-InboxRule) .
 
@@ -183,7 +183,7 @@ Il existe deux applets de commande PowerShell distantes que vous pouvez utiliser
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Étapes pour les boîtes aux lettres dans Exchange Online
 
-1. Suivez les étapes de [Connecter pour Exchange Online à l’aide de PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Suivez les étapes décrites dans [Se connecter à Exchange Online à l’aide de PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Si vous souhaitez supprimer complètement une règle unique, plusieurs règles ou toutes les règles d’une boîte aux lettres, utilisez l’applet de commande [Remove-Inbox Rule](/powershell/module/exchange/Remove-InboxRule) .
 
@@ -197,7 +197,7 @@ Les exploits de règles et de formulaires sont utilisés uniquement par un attaq
 
 La meilleure façon de protéger vos comptes d’utilisateur, et en particulier vos comptes d’administrateur, consiste à [configurer l’authentification multifacteur pour les utilisateurs](../../admin/security-and-compliance/set-up-multi-factor-authentication.md). Vous devez également :
 
-- Surveillez la façon dont vos comptes d’utilisateur sont [accessibles et utilisés](/azure/active-directory/active-directory-view-access-usage-reports). Vous ne pouvez pas empêcher la violation initiale, mais vous raccourcirez la durée et l’impact de la violation en la détectant plus tôt. Vous pouvez utiliser ces [stratégies de Sécurité des applications cloud Office 365](/cloud-app-security/what-is-cloud-app-security) pour surveiller vos comptes et alerter les activités inhabituelles :
+- Surveillez la façon dont vos comptes d’utilisateur sont [accessibles et utilisés](/azure/active-directory/active-directory-view-access-usage-reports). Vous ne pouvez pas empêcher la violation initiale, mais vous raccourcirez la durée et l’impact de la violation en la détectant plus tôt. Vous pouvez utiliser ces stratégies [Office 365 Cloud App Security](/cloud-app-security/what-is-cloud-app-security) pour surveiller vos comptes et alerter sur les activités inhabituelles :
 
   - **Plusieurs tentatives de connexion ayant échoué** : cette stratégie profile votre environnement et déclenche des alertes lorsque les utilisateurs effectuent plusieurs activités de connexion ayant échoué dans une même session par rapport à la base de référence apprise, ce qui peut indiquer une tentative de violation.
 
@@ -205,37 +205,37 @@ La meilleure façon de protéger vos comptes d’utilisateur, et en particulier 
 
   - Activité d’emprunt **d’identité inhabituelle (par l’utilisateur)** : cette stratégie profile votre environnement et déclenche des alertes lorsque les utilisateurs effectuent plusieurs activités empruntant l’identité dans une même session par rapport à la base de référence apprise, ce qui peut indiquer une tentative de violation.
 
-- Utilisez un outil comme [Office 365 Degré de sécurisation](https://securescore.office.com/) pour gérer les configurations et les comportements de sécurité des comptes.
+- Utilisez un outil tel [qu’Office 365 Secure Score](https://securescore.office.com/) pour gérer les configurations et les comportements de sécurité des comptes.
 
 ### <a name="second-keep-your-outlook-clients-current"></a>Deuxièmement : maintenir vos clients Outlook à jour
 
-Les versions entièrement mises à jour et mises à jour correctives de Outlook 2013 et 2016 désactivent l’action de règle/formulaire « Démarrer l’application » par défaut. Cela garantit que, même si une personne malveillante viole le compte, les actions de règle et de formulaire sont bloquées. Vous pouvez installer les dernières mises à jour et correctifs de sécurité en suivant les étapes décrites dans [Installer Office mises à jour](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5).
+Les versions entièrement mises à jour et mises à jour correctives d’Outlook 2013 et 2016 désactivent l’action de règle/formulaire « Démarrer l’application » par défaut. Cela garantit que, même si une personne malveillante viole le compte, les actions de règle et de formulaire sont bloquées. Vous pouvez installer les dernières mises à jour et correctifs de sécurité en suivant les étapes décrites dans [Installer les mises à jour d’Office](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5).
 
-Voici les versions correctives de vos clients Outlook 2013 et 2016 :
+Voici les versions correctives pour vos clients Outlook 2013 et 2016 :
 
-- **Outlook 2016** : 16.0.4534.1001 ou supérieur.
+- **Outlook 2016** : 16.0.4534.1001 ou version ultérieure.
 
-- **Outlook 2013** : 15.0.4937.1000 ou supérieur.
+- **Outlook 2013** : 15.0.4937.1000 ou version ultérieure.
 
 Pour plus d’informations sur les correctifs de sécurité individuels, consultez :
 
-- [correctif de sécurité Outlook 2016](https://support.microsoft.com/help/3191883)
+- [Correctif de sécurité Outlook 2016](https://support.microsoft.com/help/3191883)
 
-- [correctif de sécurité Outlook 2013](https://support.microsoft.com/help/3191938)
+- [Correctif de sécurité Outlook 2013](https://support.microsoft.com/help/3191938)
 
 ### <a name="third-monitor-your-outlook-clients"></a>Troisièmement : Surveiller vos clients Outlook
 
-Notez que même avec les correctifs et les mises à jour installés, il est possible pour un attaquant de modifier la configuration de l’ordinateur local pour réactiver le comportement « Démarrer l’application ». Vous pouvez utiliser [Advanced stratégie de groupe Management](/microsoft-desktop-optimization-pack/agpm/) pour surveiller et appliquer des stratégies de machine locale sur vos clients.
+Notez que même avec les correctifs et les mises à jour installés, il est possible pour un attaquant de modifier la configuration de l’ordinateur local pour réactiver le comportement « Démarrer l’application ». Vous pouvez utiliser [Advanced Group Policy Management](/microsoft-desktop-optimization-pack/agpm/) pour surveiller et appliquer des stratégies de machine locale sur vos clients.
 
-Vous pouvez voir si « Démarrer l’application » a été réactivé par le biais d’une substitution dans le Registre à l’aide des informations de [la procédure d’affichage du registre système à l’aide des versions 64 bits de Windows](https://support.microsoft.com/help/305097). Vérifiez ces sous-clés :
+Vous pouvez voir si « Démarrer l’application » a été réactivé par le biais d’une substitution dans le Registre à l’aide des informations de [la procédure d’affichage du registre système à l’aide de versions 64 bits de Windows](https://support.microsoft.com/help/305097). Vérifiez ces sous-clés :
 
-- **Outlook 2016** :`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
+- **Outlook 2016** : `HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
 
-- **Outlook 2013** :`HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
+- **Outlook 2013** : `HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
 
-Recherchez la clé EnableUnsafeClientMailRules. S’il est là et est défini sur 1, le correctif de sécurité Outlook a été remplacé et l’ordinateur est vulnérable à l’attaque par formulaire/règles. Si la valeur est 0, l’action « Démarrer l’application » est désactivée. Si la version mise à jour et mise à jour corrective de Outlook est installée et que cette clé de Registre n’est pas présente, un système n’est pas vulnérable à ces attaques.
+Recherchez la clé EnableUnsafeClientMailRules. S’il est là et est défini sur 1, le correctif de sécurité Outlook a été remplacé et l’ordinateur est vulnérable à l’attaque par formulaire/règles. Si la valeur est 0, l’action « Démarrer l’application » est désactivée. Si la version mise à jour et mise à jour corrective d’Outlook est installée et que cette clé de Registre n’est pas présente, un système n’est pas vulnérable à ces attaques.
 
-Les clients disposant d’installations Exchange locales doivent envisager de bloquer les versions antérieures de Outlook qui n’ont pas de correctifs disponibles. Pour plus d’informations sur ce processus, consultez l’article [Configurer Outlook blocage du client](/exchange/configure-outlook-client-blocking-exchange-2013-help).
+Les clients disposant d’installations Exchange locales doivent envisager de bloquer les versions antérieures d’Outlook qui n’ont pas de correctifs disponibles. Pour plus d’informations sur ce processus, consultez l’article [Configurer le blocage du client Outlook](/exchange/configure-outlook-client-blocking-exchange-2013-help).
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sécuriser Microsoft 365 comme un pro de la cyber-sécurité
 
@@ -249,11 +249,11 @@ Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités d
 
 ## <a name="see-also"></a>Voir aussi :
 
-- [Les règles de Outlook malveillantes](https://silentbreaksecurity.com/malicious-outlook-rules/) de SilentBreak Security Post sur Rules Vector fournissent un examen détaillé de la façon dont les règles de Outlook.
+- [Les règles Outlook malveillantes](https://silentbreaksecurity.com/malicious-outlook-rules/) de SilentBreak Security Post sur Rules Vector fournissent une révision détaillée de la façon dont les règles Outlook.
 
-- [MAPI sur HTTP et Mailrule Pwnage](https://sensepost.com/blog/2016/mapi-over-http-and-mailrule-pwnage/) sur le blog Sensepost sur Mailrule Pwnage traite d’un outil appelé Ruler qui vous permet d’exploiter des boîtes aux lettres par le biais de règles de Outlook.
+- [MAPI sur HTTP et Mailrule Pwnage](https://sensepost.com/blog/2016/mapi-over-http-and-mailrule-pwnage/) sur le blog Sensepost sur Mailrule Pwnage traite d’un outil appelé Ruler qui vous permet d’exploiter des boîtes aux lettres via des règles Outlook.
 
-- [Outlook formulaires et interpréteurs de commandes](https://sensepost.com/blog/2017/outlook-forms-and-shells/) sur le blog Sensepost sur Forms Threat Vector.
+- [Formulaires et interpréteurs de commandes Outlook](https://sensepost.com/blog/2017/outlook-forms-and-shells/) sur le blog Sensepost sur Forms Threat Vector.
 
 - [Ruler Codebase](https://github.com/sensepost/ruler)
 

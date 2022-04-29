@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, obtenez de l’aide pour résoudre les messages d’erreur et les problèmes.
-ms.openlocfilehash: a150213c2e202c96afeae14843708daa58ab4f92
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3ae2737a07815284f2981e8c4debac2d064fc1e9
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093281"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130777"
 ---
 # <a name="troubleshoot-error-messages-and-problems-in-microsoft-365-lighthouse"></a>Résoudre les messages d’erreur et les problèmes dans Microsoft 365 Lighthouse
 
@@ -54,18 +54,18 @@ Cet article décrit les messages d’erreur et les problèmes que vous pouvez re
 **Cause :** Vos locataires clients ne répondent pas aux critères suivants :
 
 - Doit avoir configuré l’accès délégué pour que le fournisseur de services managés (MSP) puisse gérer le locataire client*
-- Doit avoir au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3 ou Windows 365 Affaires
+- Doit avoir au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3 ou Windows 365 Affaires Microsoft Defender pour les PME
 - Ne doit pas avoir plus de 1 000 utilisateurs sous licence 
 
 **Résolution:** Le tableau suivant décrit les différents états de locataire qui nécessitent une action et explique comment les résoudre.
 
 *Des privilèges d’administrateur délégués (DAP) sont nécessaires pour intégrer des clients à Lighthouse. Nous vous recommandons également d’établir des privilèges d’administrateur délégué granulaires (GDAP) avec vos clients pour permettre un accès délégué plus sécurisé. Bien que DAP et GDAP coexistent, GDAP est prioritaire pour les clients où les deux modèles sont en place. Bientôt, les clients disposant uniquement de GDAP (et pas de DAP) pourront intégrer Lighthouse.
 
-| Statut | Description | Résolution |
+| État | Description | Résolution |
 |--|--|--|
 | Inactif | Le locataire a été retiré à la demande du MSP et n’est plus géré dans Lighthouse. | Vous devez réactiver le locataire. Dans la page **Locataires** , sélectionnez les trois points (autres actions) en regard du locataire que vous souhaitez réactiver, puis sélectionnez Activer le **locataire**. L’affichage des données client initiales dans Lighthouse peut prendre de 24 à 48 heures. |
 | Non éligible - DAP ou GDAP n’est pas configuré | Vous n’avez pas de privilèges d’administrateur DAP ou GDAP configurés avec le locataire, ce qui est requis par Lighthouse. | Configurez les privilèges d’administrateur DAP ou GDAP dans l’Espace partenaires Microsoft. |
-| Inéligible - La licence requise est manquante | Le locataire ne dispose pas d’une licence requise. Ils ont besoin d’au moins une licence Microsoft 365 Business Premium ou Microsoft 365 E3. | Assurez-vous que le client a au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3 ou Windows 365 Affaires attribuée. |
+| Inéligible - La licence requise est manquante | Le locataire ne dispose pas d’une licence requise. Ils ont besoin d’au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3 ou Microsoft Defender pour les PME. | Assurez-vous que le client a au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3, Windows 365 Affaires Microsoft Defender pour les PME attribuée. |
 | Non éligible - Nombre d’utilisateurs dépassé | Le locataire a plus de 1 000 utilisateurs sous licence autorisés par Lighthouse. | Vérifiez que le locataire n’a pas plus de 1 000 utilisateurs sous licence. |
 | Non éligible - Échec de la vérification géographique | Vous et votre client ne résidez pas dans la même région géographique, ce qui est requis par Lighthouse. | Vérifiez que le client réside dans votre région géographique. Si ce n’est pas le cas, vous ne pouvez pas gérer le locataire dans Lighthouse. |
 | En cours de traitement | Lighthouse a découvert le locataire, mais est toujours en cours d’intégration. | Autorisez Lighthouse 48 heures à terminer l’intégration du locataire. |

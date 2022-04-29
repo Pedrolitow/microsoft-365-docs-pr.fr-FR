@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Utilisez la mobilité et la sécurité de base intégrées pour supprimer les informations des appareils inscrits.
-ms.openlocfilehash: 932380b735e3fea2543832417e7911e9216f70fc
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 959e785958dd6d447713507ee9c48763b814db78
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780784"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65129087"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Réinitialiser un appareil mobile dans Mobilité et sécurité de base
 
@@ -46,7 +46,7 @@ Les appareils mobiles peuvent stocker des informations d’organisation sensible
 
 ## <a name="wipe-a-mobile-device"></a>Réinitialiser un appareil mobile
 
-1. Accédez au [Centre d’administration Microsoft 365](../../admin/admin-overview/about-the-admin-center.md).
+1. Accédez au [Centre d’administration Microsoft 365](../../admin/admin-overview/admin-center-overview.md).
 
 2. Tapez Mobile Gestion des appareils dans le champ de recherche, puis sélectionnez **Mobile Gestion des appareils** dans la liste des résultats.
 

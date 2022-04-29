@@ -12,16 +12,21 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Préparez-vous à intégrer Moodle et Microsoft Teams en configurant et en configurant le plug-in Moodle.
-ms.openlocfilehash: efe1ebdb92cbb3367e54e99df89b75c853c48357
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 5ab68a96eae8c4d0669fbde52bd547dae0b2c1b7
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747443"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131255"
 ---
 # <a name="set-up-and-configure-the-moodle-plugin"></a>Configurer et configurer le plug-in Moodle
 
 Dans cet article, vous allez apprendre à installer et à configurer le plug-in Moodle LMS pour incorporer Microsoft Teams à votre expérience Moodle.
+
+> [!NOTE]
+> Actuellement, les intégrations Moodle et Microsoft Teams LTI sont disponibles uniquement en préversion privée.
+>
+>Si vous souhaitez participer au programme de préversion privée, [inscrivez-vous ici](https://m365crmedu.powerappsportals.com/LMSSignup)
 
 ## <a name="prerequisites"></a>Configuration requise
 

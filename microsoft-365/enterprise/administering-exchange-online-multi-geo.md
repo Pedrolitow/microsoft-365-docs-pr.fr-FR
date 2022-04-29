@@ -11,21 +11,21 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 ms.localizationpriority: medium
-description: Découvrez comment administrer les Exchange Online multigéogé dans votre environnement Microsoft 365 avec PowerShell.
-ms.openlocfilehash: 2e4be2fd506f89579866c61bbf4a8a41aadc0d03
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez comment administrer les paramètres multigéographiques Exchange Online dans votre environnement Microsoft 365 avec PowerShell.
+ms.openlocfilehash: 4b0b02fa9ea974784ec93efe83520faed5fd05bd
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189200"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130864"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Administration des boîtes aux lettres Exchange Online dans un environnement multigéographique
 
-Exchange Online PowerShell est nécessaire pour afficher et configurer les propriétés multigéogé dans votre environnement Microsoft 365 de travail. Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+Exchange Online PowerShell est nécessaire pour afficher et configurer plusieurs propriétés géographiques dans votre environnement Microsoft 365. Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 Pour voir la propriété **PreferredDataLocation** sur les objets utilisateur, vous devez disposer du [module PowerShell Microsoft Azure Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 ou version v1.x ultérieure. La valeur **PreferredDataLocation** des objets utilisateur synchronisés via AAD Connect dans AAD ne peut pas être modifiée directement via AAD PowerShell. Les objets utilisateur cloud uniquement peuvent être modifiés via AAD PowerShell. Pour vous connecter à Azure AD PowerShell, voir [Se connecter à PowerShell](connect-to-microsoft-365-powershell.md).
 
-Dans Exchange Online environnements multigé géographiques, vous n’avez pas besoin d’apporter des étapes manuelles pour ajouter des géos à votre client. Une fois que vous avez reçu le billet du Centre de messages qui indique que multigéogé est prêt pour Exchange Online, toutes les géos disponibles sont prêtes et configurées pour être utilisés.
+Dans les environnements multigéographiques Exchange Online, vous n’avez pas besoin d’effectuer d’étapes manuelles pour ajouter des zones géographiques à votre locataire. Une fois que vous avez reçu le billet du Centre de messages indiquant que la fonctionnalité multigéographique est prête pour Exchange Online, toutes les zones géographiques disponibles seront prêtes et configurées pour que vous les utilisiez.
 
 ## <a name="connect-directly-to-a-geo-location-using-exchange-online-powershell"></a>Se connecter directement à un emplacement géographique à l’aide d’Exchange Online PowerShell
 
@@ -33,13 +33,13 @@ En règle générale, Exchange Online PowerShell se connecte à l’emplacement 
 
 Les conditions requises pour l’installation et l’utilisation du module EXO V2 sont décrites dans [Installer et gérer le module EXO V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
-Pour connecter Exchange Online PowerShell à un emplacement géographique spécifique, le paramètre *ConnectionUri* est différent des instructions de connexion normales. Les autres commandes et valeurs sont identiques.
+Pour connecter Exchange Online PowerShell à un emplacement géographique spécifique, le paramètre *ConnectionUri* est différent des instructions de connexion régulières. Les autres commandes et valeurs sont identiques.
 
-Plus précisément, vous devez ajouter la `?email=<emailaddress>` valeur à la fin de la valeur _ConnectionUri._ `<emailaddress>` est l’adresse e-mail **d’une boîte** aux lettres dans l’emplacement géographique cible. Vos autorisations sur cette boîte aux lettres ou la relation avec vos informations d’identification ne sont pas un facteur ; l’adresse e-mail indique Exchange Online PowerShell où se connecter.
+Plus précisément, vous devez ajouter la valeur à la `?email=<emailaddress>` fin de la valeur _ConnectionUri_ . `<emailaddress>` est l’adresse e-mail de **n’importe quelle** boîte aux lettres dans l’emplacement géographique cible. Vos autorisations sur cette boîte aux lettres ou la relation avec vos informations d’identification ne sont pas un facteur ; l’adresse e-mail indique simplement à Exchange Online PowerShell où se connecter.
 
-Microsoft 365 ou Microsoft 365 Cloud de la communauté du secteur public clients n’ont généralement pas besoin d’utiliser le paramètre _ConnectionUri_ pour se connecter Exchange Online PowerShell. Toutefois, pour vous connecter à un emplacement géographique spécifique, vous devez utiliser le paramètre _ConnectionUri_ afin de pouvoir `?email=<emailaddress>` l’utiliser dans la valeur.
+Les clients Microsoft 365 ou Microsoft 365 GCC n’ont généralement pas besoin d’utiliser le paramètre _ConnectionUri_ pour se connecter à Exchange Online PowerShell. Toutefois, pour vous connecter à un emplacement géographique spécifique, vous devez utiliser le paramètre _ConnectionUri_ afin de pouvoir l’utiliser `?email=<emailaddress>` dans la valeur.
 
-### <a name="connect-to-a-geo-location-in-exchange-online-powershell"></a>Connecter à un emplacement géographique dans Exchange Online PowerShell
+### <a name="connect-to-a-geo-location-in-exchange-online-powershell"></a>Se connecter à un emplacement géographique dans Exchange Online PowerShell
 
 Les instructions de connexion suivantes fonctionnent pour les comptes qui sont ou ne sont pas configurés pour l’authentification multifacteur (MFA).
 
@@ -49,13 +49,13 @@ Les instructions de connexion suivantes fonctionnent pour les comptes qui sont o
    Import-Module ExchangeOnlineManagement
    ```
 
-2. Dans l’exemple suivant, admin@contoso.onmicrosoft.com est le compte d’administrateur et l’emplacement géographique cible est l’emplacement olga@contoso.onmicrosoft.com boîte aux lettres.
+2. Dans l’exemple suivant, admin@contoso.onmicrosoft.com est le compte d’administrateur et l’emplacement géographique cible est l’emplacement de la boîte aux lettres olga@contoso.onmicrosoft.com réside.
 
    ```powershell
    Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
    ```
 
-3. Entrez le mot de passe du admin@contoso.onmicrosoft.com dans l’invite qui s’affiche. Si le compte est configuré pour l’mffa, vous devez également entrer le code de sécurité.
+3. Entrez le mot de passe du admin@contoso.onmicrosoft.com dans l’invite qui s’affiche. Si le compte est configuré pour l’authentification multifacteur, vous devez également entrer le code de sécurité.
 
 ## <a name="view-the-available-geo-locations-that-are-configured-in-your-exchange-online-organization"></a>Affichage des emplacements géographiques disponibles configurés dans votre organisation Exchange Online
 
@@ -104,7 +104,7 @@ MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 ```
 
 > [!NOTE]
-> Si le code d’emplacement géographique dans le nom de la base de données ne correspond pas à la valeur **MailboxRegion,** la boîte aux lettres est automatiquement mise dans une file d’attente de déplacement et déplacée vers l’emplacement géographique spécifié par la valeur **MailboxRegion** (Exchange Online recherche une in correspondance entre ces valeurs de propriété).
+> Si le code d’emplacement géographique dans le nom de la base de données ne correspond pas à la valeur **MailboxRegion** , la boîte aux lettres est automatiquement placée dans une file d’attente de réadressage et déplacée vers l’emplacement géographique spécifié par la valeur **MailboxRegion** (Exchange Online recherche une incompatibilité entre ces valeurs de propriété).
 
 ## <a name="move-an-existing-cloud-only-mailbox-to-a-specific-geo-location"></a>Déplacer une boîte aux lettres cloud uniquement vers un emplacement géographique spécifique
 
@@ -144,39 +144,39 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 >   - le nombre total de boîtes aux lettres déplacées ;
 >   - la disponibilité des ressources nécessaires pour le déplacement.
 
-### <a name="move-an-inactive-mailbox-to-a-specific-geo"></a>Déplacer une boîte aux lettres inactive vers une géo spécifique
+### <a name="move-an-inactive-mailbox-to-a-specific-geo"></a>Déplacer une boîte aux lettres inactive vers une zone géographique spécifique
 
-Vous ne pouvez pas déplacer les boîtes aux lettres inactives qui sont conservées à des fins de conformité (par exemple, les boîtes aux lettres en conservation pour litige) en modifiant leur valeur **PreferredDataLocation.** Pour déplacer une boîte aux lettres inactive vers une autre géo, vous pouvez suivre les étapes suivantes :
+Vous ne pouvez pas déplacer les boîtes aux lettres inactives qui sont conservées à des fins de conformité (par exemple, les boîtes aux lettres en attente de litige) en modifiant leur valeur **PreferredDataLocation** . Pour déplacer une boîte aux lettres inactive vers une autre zone géographique, procédez comme suit :
 
-1. Récupérez la boîte aux lettres inactive. Pour obtenir des instructions, [voir Récupérer une boîte aux lettres inactive.](../compliance/recover-an-inactive-mailbox.md)
+1. Récupérez la boîte aux lettres inactive. Pour obtenir des instructions, consultez [Récupérer une boîte aux lettres inactive](../compliance/recover-an-inactive-mailbox.md).
 
-2. Empêchez l’Assistant Dossier géré de traiter la boîte aux lettres récupérée en remplaçant par le nom, l’alias, le compte ou l’adresse e-mail de la boîte aux lettres et en exécutant la commande suivante dans \<MailboxIdentity\> [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
+2. Empêchez l’Assistant Dossier géré de traiter la boîte aux lettres récupérée en \<MailboxIdentity\> remplaçant par le nom, l’alias, le compte ou l’adresse e-mail de la boîte aux lettres et en exécutant la commande suivante dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) :
 
     ```powershell
     Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $true
     ```
 
-3. Attribuez **une Exchange Online Plan 2** à la boîte aux lettres récupérée. Cette étape est nécessaire pour remettre la boîte aux lettres en attente pour litige. Pour obtenir des instructions, voir [Attribuer des licences aux utilisateurs.](../admin/manage/assign-licenses-to-users.md)
+3. Attribuez une licence **Exchange Online Plan 2** à la boîte aux lettres récupérée. Cette étape est nécessaire pour remettre la boîte aux lettres en attente de litige. Pour obtenir des instructions, consultez [Affecter des licences aux utilisateurs](../admin/manage/assign-licenses-to-users.md).
 
-4. Configurez la **valeur PreferredDataLocation** sur la boîte aux lettres comme décrit dans la section précédente.
+4. Configurez la valeur **PreferredDataLocation** sur la boîte aux lettres comme décrit dans la section précédente.
 
-5. Une fois que vous avez confirmé que la boîte aux lettres a été déplacée vers le nouvel emplacement géographique, placez de nouveau la boîte aux lettres récupérée en attente pour litige. Pour obtenir des instructions, voir [Placer une boîte aux lettres en attente pour litige.](../compliance/create-a-litigation-hold.md#place-a-mailbox-on-litigation-hold)
+5. Une fois que vous avez confirmé que la boîte aux lettres a été déplacée vers le nouvel emplacement géographique, replacez la boîte aux lettres récupérée en attente du litige. Pour obtenir des instructions, consultez [Placer une boîte aux lettres en attente de litige](../compliance/create-a-litigation-hold.md#place-a-mailbox-on-litigation-hold).
 
-6. Après avoir vérifié que la boîte aux lettres est en attente pour litige, autorisez l’Assistant Dossier géré à traiter à nouveau la boîte aux lettres en remplaçant par le nom, l’alias, le compte ou l’adresse e-mail de la boîte aux lettres et en exécutant la commande suivante dans \<MailboxIdentity\> [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
+6. Après avoir vérifié que la conservation des litiges est en place, autorisez l’Assistant Dossier géré à traiter à nouveau la boîte aux lettres en \<MailboxIdentity\> remplaçant par le nom, l’alias, le compte ou l’adresse e-mail de la boîte aux lettres et en exécutant la commande suivante dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) :
 
     ```powershell
     Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $false
     ```
 
-7. Rendez la boîte aux lettres inactive en supprimant le compte d’utilisateur associé à la boîte aux lettres. Pour obtenir des instructions, [voir Supprimer un utilisateur de votre organisation.](../admin/add-users/delete-a-user.md) Cette étape libère également la licence Exchange Online Plan 2 pour d’autres utilisations.
+7. Réactivez la boîte aux lettres en supprimant le compte d’utilisateur associé à la boîte aux lettres. Pour obtenir des instructions, consultez [Supprimer un utilisateur de votre organisation](../admin/add-users/delete-a-user.md). Cette étape publie également la licence Exchange Online Plan 2 pour d’autres utilisations.
 
-**Remarque**: lorsque vous déplacez une boîte aux lettres inactive vers un autre emplacement géographique, vous pouvez affecter les résultats de recherche de contenu ou la possibilité de rechercher la boîte aux lettres à partir de l’ancien emplacement géographique. Pour plus d’informations, [voir Recherche et exportation de contenu dans des environnements multigéo géographiques.](../compliance/set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments)
+**Remarque** : lorsque vous déplacez une boîte aux lettres inactive vers un autre emplacement géographique, vous pouvez affecter les résultats de recherche de contenu ou la possibilité de rechercher la boîte aux lettres à partir de l’emplacement géographique précédent. Pour plus d’informations, consultez [Recherche et exportation de contenu dans des environnements multigéographiques](../compliance/set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments).
 
 ## <a name="create-new-cloud-mailboxes-in-a-specific-geo-location"></a>Créer des boîtes aux lettres cloud dans un emplacement géographique spécifique
 
 Pour créer une boîte aux lettres dans un emplacement géographique spécifique, vous devez effectuez l’une des opérations suivantes :
 
-- Configurez la valeur **PreferredDataLocation** comme décrit dans la [section](#move-an-existing-cloud-only-mailbox-to-a-specific-geo-location) Précédente Déplacer une boîte aux lettres cloud existante uniquement vers une *section* d’emplacement géographique spécifique avant de créer la boîte aux lettres dans Exchange Online. Par exemple, configurez la **valeur PreferredDataLocation** sur un utilisateur avant d’attribuer une licence.
+- Configurez la valeur **PreferredDataLocation** comme décrit dans la précédente section [Déplacer une boîte aux lettres cloud uniquement existante vers une section de géolocalisation spécifique](#move-an-existing-cloud-only-mailbox-to-a-specific-geo-location) *avant* de créer la boîte aux lettres dans Exchange Online. Par exemple, configurez la valeur **PreferredDataLocation** sur un utilisateur avant d’attribuer une licence.
 
 - Attribuer une licence lors de la définition de la valeur **PreferredDataLocation**.
 
@@ -234,6 +234,9 @@ Ou bien, pour intégrer les boîtes aux lettres directement dans un emplacement 
 6. Si vous devez migrer des boîtes aux lettres supplémentaires vers un autre emplacement géographique satellite, répétez les étapes 2 à 4 pour chaque emplacement spécifique.
 
 ## <a name="multi-geo-reporting"></a>Génération de rapports multigéographiques
+
+> [!NOTE]
+> La fonctionnalité de création de rapports multigéographiques est actuellement en préversion, n’est pas disponible dans toutes les organisations et est susceptible de changer.
 
 Les **rapports d’utilisation multigéographique** dans le Centre d’administration Microsoft 365 affichent le nombre d’utilisateurs par emplacement géographique. Le rapport présente la répartition des utilisateurs pour le mois en cours et les données historiques des 6 derniers mois.
 

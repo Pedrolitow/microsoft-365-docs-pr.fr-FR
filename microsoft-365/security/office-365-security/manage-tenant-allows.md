@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer les autorisations dans la liste d’autorisations/blocages du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad2ef693848b664be6ec9b48cc4fc320a8b4b9c2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 413209bdecef19c4d101162f0e23f24ff1a2903e
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090141"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65129241"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Ajouter des autorisations dans la liste verte/rouge du client
 
@@ -30,7 +30,7 @@ ms.locfileid: "65090141"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Les administrateurs ne peuvent pas ajouter d’autorisations directement à la liste d’autorisation/de blocage du locataire. Au lieu de cela, vous utilisez le processus de soumission de l’administrateur pour envoyer le message qui a été bloqué afin que l’URL, le fichier et/ou les expéditeurs correspondants soient ajoutés à la liste d’autorisations/de blocs du locataire. Si aucun bloc du fichier, de l’URL ou de l’expéditeur ne s’est produit, l’autorisation n’est pas créée. Dans la plupart des cas où le message a été déterminé comme un faux positif qui a été bloqué de manière incorrecte, les autorisations sont conservées aussi longtemps que nécessaire pour donner au système le temps de les autoriser naturellement.
 
@@ -57,6 +57,13 @@ Autorisez les expéditeurs (ou domaines) sur la page **Soumissions** dans Micros
 
 > ![Envoyer des programmes malveillants à Microsoft à des fins d’analyse, par exemple.](../../media/admin-submission-allow-messages.png)
 
+
+> [!NOTE]
+>
+> - En fonction des filtres qui ont déterminé que le courrier était malveillant, pendant le flux de courrier, les autorisations sont ajoutées. Par exemple, si les filtres ont trouvé que l’expéditeur et l’URL sont incorrects, une autorisation est ajoutée pour chacun d’entre elles. 
+> - Lorsque cette entité (expéditeur, domaine, URL, fichier) est à nouveau rencontrée, tous les filtres associés à cette entité sont ignorés.
+> - Par conséquent, pour un e-mail (contenant cette entité), pendant le flux de courrier, si le reste des filtres trouve l’e-mail propre, l’e-mail est remis.
+
 ## <a name="add-url-allows-using-the-submissions-portal"></a>Ajouter une URL permet d’utiliser le portail Soumissions
 
 Autorisez les URL sur la page **Soumissions** dans Microsoft 365 Defender.
@@ -78,6 +85,13 @@ Autorisez les URL sur la page **Soumissions** dans Microsoft 365 Defender.
 > [!div class="mx-imgBorder"]
 > ![Envoyer l’URL à des fins d’analyse.](../../media/submit-url-for-analysis.png)
 
+
+> [!NOTE]
+>
+> -  Lorsque l’URL est à nouveau rencontrée, l’URL n’est pas envoyée pour des vérifications de détonation ou de réputation, et tous les autres filtres basés sur l’URL sont ignorés.
+> -  Par conséquent, pour un e-mail (contenant cette URL), pendant le flux de courrier, si le reste des filtres trouve l’e-mail propre, l’e-mail est remis.
+
+
 ## <a name="add-file-allows-using-the-submissions-portal"></a>Ajouter un fichier permet d’utiliser le portail Soumissions
 
 Autoriser les fichiers sur la page **Soumissions** dans Microsoft 365 Defender.
@@ -98,6 +112,12 @@ Autoriser les fichiers sur la page **Soumissions** dans Microsoft 365 Defender.
 
 > [!div class="mx-imgBorder"]
 > ![Envoyer un e-mail à des fins d’analyse.](../../media/submit-email-for-analysis.png)
+
+
+> [!NOTE]
+>
+> - Lorsque le fichier est à nouveau rencontré, il n’est pas envoyé pour des vérifications de détonation ou de réputation, et tous les autres filtres basés sur des fichiers sont ignorés.
+> - Par conséquent, pour un e-mail (contenant ce fichier), pendant le flux de courrier, si le reste des filtres trouve l’e-mail propre, l’e-mail est remis. 
 
 ## <a name="create-spoofed-sender-allow-entries-using-microsoft-365-defender"></a>Créer des entrées d’autorisation d’expéditeur usurpées à l’aide de Microsoft 365 Defender
 

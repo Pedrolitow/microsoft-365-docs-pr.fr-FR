@@ -16,12 +16,12 @@ metadata:
   - AdminSurgePortfolio
   - intro-hub-or-landing
   ms.collection: Adm_TOC
-  ms.openlocfilehash: 0a50a930013db739cab368e7763669798267a509
-  ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+  ms.openlocfilehash: d5491560ba5d26435ab7d124fc9b5818970a00f6
+  ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/27/2022
-  ms.locfileid: "65094325"
+  ms.lasthandoff: 04/29/2022
+  ms.locfileid: "65130316"
 highlightedContent:
   items:
   - title: Office 365 est désormais Microsoft 365 !
@@ -68,7 +68,7 @@ additionalContent:
     items:
     - title: Vue d’ensemble du Centre d’administration Microsoft 365
       summary: Découvrez les rôles d’administrateur, comment rester au fait des modifications et comment personnaliser votre abonnement.
-      url: admin-overview/about-the-admin-center.md
+      url: admin-overview/admin-center-overview.md
     - title: Utilisateurs et groupes
       summary: Gérez les mots de passe, ajoutez et supprimez des utilisateurs, configurez et gérez les groupes, gérez l’accès invité, puis attribuez des licences utilisateur.
       url: add-users/add-users.md

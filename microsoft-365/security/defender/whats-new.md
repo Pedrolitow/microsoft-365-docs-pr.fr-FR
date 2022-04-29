@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 56e22e0525324c59d2d62adaf2325edc3317ccd6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0cbcc198f31497996595a9f17df9cf689c435b58
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096047"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130536"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
@@ -48,6 +48,7 @@ Vous pouvez également obtenir des mises à jour de produit et des notifications
 
 ## <a name="april-2022"></a>Avril 2022
 - (Préversion) [Des actions](advanced-hunting-take-action.md) peuvent désormais être effectuées sur les messages électroniques directement à partir des résultats de la requête de chasse. Les e-mails peuvent être déplacés vers d’autres dossiers ou supprimés définitivement. 
+- (Préversion) La nouvelle [`UrlClickEvents` table](advanced-hunting-urlclickevents-table.md) de repérage avancé peut être utilisée pour rechercher des menaces telles que des campagnes de hameçonnage et des liens suspects en fonction des informations provenant des clics de liens Coffre dans les messages électroniques, les Microsoft Teams et les applications Office 365.
 
 ## <a name="march-2022"></a>Mars 2022
 

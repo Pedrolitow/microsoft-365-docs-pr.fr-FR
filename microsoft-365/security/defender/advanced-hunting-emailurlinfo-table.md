@@ -1,7 +1,7 @@
 ---
 title: Table EmailUrlInfo dans le schéma de repérage avancé
 description: En savoir plus sur les URL ou les liens dans la table EmailUrlInfo du schéma de repérage avancé
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailUrlInfo, network message id, url, link
+keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, référence de schéma, kusto, table, colonne, type de données, description, EmailUrlInfo, ID de message réseau, URL, lien
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d0c9a8f1456aaeedbc8d296a1f738d0b2c57a156
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 9453a5a7ddb48ff09ca217aa23c5e557d57d00e5
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531542"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130952"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
@@ -32,8 +32,9 @@ ms.locfileid: "61531542"
 
 **S’applique à :**
 - Microsoft 365 Defender
+- Microsoft Defender pour Office 365
 
-Le tableau du schéma de recherche avancée contient des informations sur les URL des e-mails et des pièces `EmailUrlInfo` jointes traitées par Microsoft Defender Office 365. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table. 
+La `EmailUrlInfo` table du schéma [de chasse avancé](advanced-hunting-overview.md) contient des informations sur les URL sur les e-mails et pièces jointes traités par Microsoft Defender pour Office 365. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table. 
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -43,9 +44,9 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `NetworkMessageId` | `string` | Identificateur unique de l’e-mail, généré par Microsoft 365 |
 | `Url` | `string` | URL complète dans l’objet, le corps ou la pièce jointe de l’e-mail |
 | `UrlDomain` | `string` | Nom de domaine ou nom d’hôte de l’URL |
-| `ReportId` | `long` | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp |
+| `ReportId` | `long` | Identificateur d’événement basé sur un compteur extensible. Pour identifier les événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp |
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

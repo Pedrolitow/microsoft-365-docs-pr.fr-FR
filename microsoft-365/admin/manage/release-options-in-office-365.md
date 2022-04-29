@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Découvrez comment configurer l’option de mise en production pour les mises à jour de nouveaux produits et fonctionnalités dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 67c6fe3f08549424c725589a50c647a876c151af
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 176558448f31fadea0b0cf865bca5d1156e3eefe
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022446"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65129417"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurer les options de mise en production standard ou ciblée
 
@@ -47,7 +47,7 @@ Toute nouvelle version est d’abord testée et validée par l’équipe de fonc
 Pour les mises à jour importantes, les clients sont initialement avertis par la [feuille de route Microsoft 365](https://products.office.com/business/office-365-roadmap). À mesure qu’une mise à jour se rapproche du déploiement, elle est communiquée par le biais de votre [centre de messages Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
 
 > [!NOTE]
-> Vous avez besoin d’un compte Microsoft 365 ou Azure AD pour accéder à votre centre de messages via le [Centre d’administration](/office365/admin/admin-overview/about-the-admin-center). Microsoft 365 les utilisateurs du plan d’accueil n’ont pas de centre d’administration.
+> Vous avez besoin d’un compte Microsoft 365 ou Azure AD pour accéder à votre centre de messages via le [Centre d’administration](/office365/admin/admin-overview/admin-center-overview). Microsoft 365 les utilisateurs du plan d’accueil n’ont pas de centre d’administration.
 
 ## <a name="standard-release"></a>Publication standard
 
@@ -114,6 +114,6 @@ Vous pouvez modifier la façon dont votre organisation reçoit Microsoft 365 mis
 
 Découvrez comment [gérer les messages](/office365/admin/manage/message-center) dans votre [centre de messages Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) pour recevoir des notifications sur les mises à jour et versions Microsoft 365 à venir.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Participer au programme Office Insider](https://insider.office.com/join/windows) (article)

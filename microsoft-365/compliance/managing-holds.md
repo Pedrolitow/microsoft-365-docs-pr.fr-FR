@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 04/27/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -21,12 +21,12 @@ description: Découvrez comment placer des conservations sur les consignataires 
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkMAC
-ms.openlocfilehash: c2213c34e111989f0de6fccf886f44dd0f45841b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: bc69481c8d59408ce22c238fc80d8ceb67685cf9
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098491"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128387"
 ---
 # <a name="manage-holds-in-ediscovery-premium"></a>Gérer les conservations dans eDiscovery (Premium)
 
@@ -46,7 +46,7 @@ Pour afficher la stratégie de conservation du consignatien :
 
 3. Accédez à l’onglet **Conservations** , puis cliquez sur **CustodianHold\<HoldId>**.
 
-4. Dans la page de menu volant, vous pouvez voir les statistiques de conservation de la stratégie. Vous pouvez également effectuer des actions telles que l’application d’une requête à votre conservation basée sur le consignat. Pour plus d’informations sur la création d’une requête de conservation et l’utilisation de conditions, consultez [les requêtes de mots clés et les conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
+4. Dans la page de menu volant, vous pouvez effectuer des actions telles que l’application d’une requête à votre conservation basée sur le consignat. Pour plus d’informations sur la création d’une requête de conservation et l’utilisation de conditions, consultez [les requêtes de mots clés et les conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
 
 ## <a name="manage-non-custodial-holds"></a>Gérer les conservations non liées à la garde
 
@@ -105,24 +105,6 @@ Pour créer une conservation non gardienne pour un cas eDiscovery (Premium) :
 
 > [!NOTE]
 > Si l’adresse SMTP de l’utilisateur change après la mise en attente de la boîte aux lettres de l’utilisateur, la boîte aux lettres reste en attente. Pour utiliser la nouvelle adresse SMTP pour placer la conservation, créez une nouvelle conservation.
-
-## <a name="view-hold-statistics"></a>Afficher les statistiques de conservation
-
-Après un certain temps, les informations sur la nouvelle conservation s’affichent dans le volet d’informations de l’onglet **Conservations** de la conservation sélectionnée. Ces informations incluent le nombre de boîtes aux lettres et de sites en attente, ainsi que des statistiques sur le contenu qui a été mis en attente, telles que le nombre total et la taille des éléments mis en attente et la dernière fois que les statistiques de conservation ont été calculées. Ces statistiques de conservation vous aident à identifier la quantité de contenu liée au cas eDiscovery.
-
-Gardez à l’esprit les éléments suivants concernant les statistiques de conservation :
-
-- Le nombre total d’éléments en attente indique le nombre d’éléments provenant de toutes les sources de contenu mises en attente. Si vous avez créé une conservation basée sur une requête, cette statistique indique le nombre d’éléments qui correspondent à la requête.
-  
-- Le nombre d’éléments en attente inclut également les éléments non indexés trouvés dans les emplacements de contenu. Si vous créez une conservation basée sur une requête, tous les éléments non indexés dans les emplacements de contenu sont mis en attente. Cela inclut les éléments non indexés qui ne correspondent pas aux critères de recherche d’une conservation basée sur une requête et aux éléments non indexés qui peuvent se trouver en dehors d’une condition de plage de dates. Cela diffère de ce qui se produit lorsque vous exécutez une recherche de contenu, dans laquelle les éléments non indexés qui ne correspondent pas à la requête de recherche ou qui sont exclus par une condition de plage de dates ne sont pas inclus dans les résultats de la recherche. Pour plus d’informations sur les éléments non indexés, consultez [Éléments partiellement indexés dans la recherche de contenu dans Office 365](partially-indexed-items-in-content-search.md).
-
-- Vous pouvez obtenir les dernières statistiques de conservation en cliquant sur Mettre à jour les statistiques pour réexécuter une estimation de recherche qui calcule le nombre actuel d’éléments en attente.
-
-- Si nécessaire, cliquez sur Actualiser dans la barre d’outils pour mettre à jour les statistiques de conservation dans le volet d’informations.
-
-- Il est normal que le nombre d’éléments en attente augmente au fil du temps, car les utilisateurs dont la boîte aux lettres ou le site est en attente envoient ou reçoivent généralement un nouveau message électronique et créent de nouveaux SharePoint et OneDrive Entreprise documents.
-
-- Si un site SharePoint ou un compte OneDrive est déplacé vers une autre région dans un environnement multigéographique, les statistiques de ce site ne sont pas incluses dans les statistiques de conservation. Toutefois, le contenu du site sera toujours en attente. En outre, si un site est déplacé vers une autre région, l’URL affichée dans la conservation ne sera pas mise à jour. Vous devrez modifier la conservation et mettre à jour l’URL.
 
 ## <a name="place-a-hold-on-microsoft-teams-and-office-365-groups"></a>Mettre en attente les groupes Microsoft Teams et Office 365
 

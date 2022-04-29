@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
-description: Microsoft a développé diverses stratégies, procédures et adopté plusieurs meilleures pratiques du secteur pour protéger nos utilisateurs contre les courriers électroniques abusifs, indésirables ou malveillants.
+description: Microsoft a développé différentes stratégies, procédures et adopté plusieurs meilleures pratiques pour protéger nos utilisateurs contre les e-mails abusifs, indésirables ou malveillants.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 21b1918155755d7786f7b797ae7c705ca8c0ec39
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 815fea8981fdab8825a109dae69abaf8232997f9
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211992"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130360"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Référence : Stratégies, pratiques et conseils
 
@@ -33,21 +33,21 @@ ms.locfileid: "60211992"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft s'engage à vous fournir l'expérience utilisateur la plus fiable sur le web. Par conséquent, Microsoft a développé diverses stratégies, procédures et adopté plusieurs meilleures pratiques du secteur pour aider à protéger ses utilisateurs contre les messages abusifs, indésirables ou malveillants. Les expéditeurs qui tentent d’envoyer des courriers électroniques aux utilisateurs doivent s’assurer qu’ils comprennent parfaitement et suivent les instructions de cet article pour vous aider dans cet effort et éviter les problèmes de remise potentiels.
+Microsoft s'engage à vous fournir l'expérience utilisateur la plus fiable sur le web. Par conséquent, Microsoft a développé diverses stratégies, procédures et adopté plusieurs meilleures pratiques du secteur pour aider à protéger ses utilisateurs contre les messages abusifs, indésirables ou malveillants. Les expéditeurs qui tentent d’envoyer des e-mails aux utilisateurs doivent s’assurer qu’ils comprennent bien et suivent les instructions de cet article pour vous aider dans cet effort et pour éviter les problèmes de remise potentiels.
 
-Si vous ne respectez pas ces instructions et stratégies, il se peut que notre équipe de support ne puisse pas vous assister. Si les problèmes de livraison basés sur votre adresse IP d'envoi persistent bien que vous suiviez les instructions, pratiques et stratégies présentées dans cet article, suivez la procédure d'envoi d'une demande de retrait de la liste. Pour obtenir des instructions, voir Utiliser le portail Supprimer de la liste pour vous supprimer de la [liste des expéditeurs bloqués.](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
+Si vous ne respectez pas ces instructions et stratégies, il se peut que notre équipe de support ne puisse pas vous assister. Si les problèmes de livraison basés sur votre adresse IP d'envoi persistent bien que vous suiviez les instructions, pratiques et stratégies présentées dans cet article, suivez la procédure d'envoi d'une demande de retrait de la liste. Pour obtenir des instructions, consultez [Utiliser le portail de suppression pour vous supprimer de la liste des expéditeurs bloqués](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
 ## <a name="general-microsoft-policies"></a>Stratégies générales Microsoft
 
-Les messages électroniques envoyés Microsoft 365 utilisateurs doivent se conformer à toutes les stratégies Microsoft régissant la transmission et l’utilisation des Microsoft 365.
+Les e-mails envoyés à Microsoft 365 utilisateurs doivent se conformer à toutes les stratégies Microsoft régissant la transmission et l’utilisation des Microsoft 365.
 
-- Conditions d’utilisation applicables aux Microsoft 365 ; en particulier, l’interdiction d’utiliser le service pour le courrier indésirable ou la distribution de programmes malveillants.
+- Conditions d’utilisation des services applicables à Microsoft 365; en particulier l’interdiction d’utiliser le service pour le courrier indésirable ou distribuer des programmes malveillants.
 
 - [Contrat de Services Microsoft](https://www.microsoft.com/servicesagreement/)
 
 ## <a name="governmental-regulations"></a>Réglementations gouvernementales
 
-Les messages envoyés Microsoft 365 utilisateurs doivent respecter toutes les lois et réglementations applicables en matière de communications électroniques dans la juridiction applicable.
+Les e-mails envoyés à Microsoft 365 utilisateurs doivent respecter toutes les lois et réglementations applicables régissant les communications par e-mail dans la juridiction applicable.
 
 - [CAN-SPAM Act: A Compliance Guide for Business](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
@@ -55,13 +55,13 @@ Les messages envoyés Microsoft 365 utilisateurs doivent respecter toutes les lo
 
 ## <a name="technical-guidelines"></a>Instructions techniques
 
-Les messages envoyés Microsoft 365 doivent être conformes aux recommandations applicables répertoriées dans les documents ci-dessous (certains liens sont disponibles uniquement en anglais).
+Les e-mails envoyés à Microsoft 365 doivent respecter les recommandations applicables répertoriées dans les documents ci-dessous (certains liens sont disponibles uniquement en anglais).
 
 - [RFC 2505: Anti-Spam Recommendations for SMTP MTAs](https://www.ietf.org/rfc/rfc2505.txt)
 
 - [RFC 2920: SMTP Service Extension for Command Pipelining](https://www.ietf.org/rfc/rfc2920.txt)
 
-En outre, les serveurs de messagerie qui se connectent Microsoft 365 doivent respecter les exigences suivantes :
+En outre, les serveurs de messagerie qui se connectent à Microsoft 365 doivent respecter les exigences suivantes :
 
 - L'expéditeur doit être conforme à toutes les normes techniques en matière de transmission de messages Internet, tel que publié par The Internet Society's Internet Engineering Task Force (IETF), y compris RFC 5321, RFC 5322, entre autres.
 
@@ -81,9 +81,9 @@ En outre, les serveurs de messagerie qui se connectent Microsoft 365 doivent res
 
 Les expéditeurs, les fournisseurs de services Internet et autres fournisseurs de services doivent gérer activement la réputation de vos adresses IP sortantes.
 
-## <a name="microsoft-365-limits"></a>Microsoft 365 limites
+## <a name="microsoft-365-limits"></a>limites de Microsoft 365
 
-Les expéditeurs doivent respecter Microsoft 365 limites répertoriées dans [Exchange Online Protection limites.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)
+Les expéditeurs doivent respecter Microsoft 365 limites répertoriées dans [Exchange Online Protection Limites](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
 
 ## <a name="email-delivery-resources-and-organizations"></a>Organisations et ressources de remise de courrier électronique
 
@@ -97,7 +97,7 @@ Microsoft collabore activement avec des organismes et fournisseurs de services d
 
 ## <a name="abuse-and-spam-reporting"></a>Création de rapport de courrier indésirable et de mauvaise utilisation
 
-Pour signaler des courriers électroniques illicites, abusifs, indésirables ou malveillants, reportez-vous aux messages et [fichiers envoyés à Microsoft.](report-junk-email-messages-to-microsoft.md) L’envoi de ces types de communications constitue une violation de la stratégie de Microsoft et des mesures appropriées seront prises sur les rapports confirmés.
+Pour signaler des e-mails illégaux, abusifs, indésirables ou malveillants, consultez [Les messages et fichiers de rapport à Microsoft](report-junk-email-messages-to-microsoft.md). L’envoi de ces types de communications est une violation de la stratégie Microsoft, et une action appropriée sera prise sur les rapports confirmés.
 
 ## <a name="law-enforcement"></a>Application des lois
 

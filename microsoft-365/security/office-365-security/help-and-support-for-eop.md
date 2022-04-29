@@ -14,12 +14,12 @@ description: Microsoft offre une assistance pour EOP à divers emplacements et v
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 080a61b0ed20843d5962f1901b8d8fece73d8f4b
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 144e816a19f47960a70ef98de8f947d040348631
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681037"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131215"
 ---
 # <a name="help-and-support-for-eop"></a>Aide et support pour EOP
 
@@ -28,33 +28,33 @@ ms.locfileid: "63681037"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, les ressources de support technique répertoriées dans cet article vous aideront à trouver des réponses si vous avez des difficultés avec EOP. Microsoft offre une assistance pour EOP à divers emplacements et via plusieurs méthodes, y compris via des options de support autonome et de support assisté.
+Dans Microsoft 365 organisations avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, les ressources de support technique répertoriées dans cet article vous aideront à trouver des réponses si vous rencontrez des difficultés avec EOP. Microsoft offre une assistance pour EOP à divers emplacements et via plusieurs méthodes, y compris via des options de support autonome et de support assisté.
 
 ## <a name="self-support-options"></a>Options de support autonome
 
-Lors de la connexion, le Centre d'administration Microsoft 365 fournit des informations sur l’état des services de votre organisation. En outre, la section État du service affiche l’état actuel de vos services, des détails sur les interruptions et les pannes, et répertorie les temps de maintenance planifiés. Le Centre d'administration Microsoft 365 fournit également des informations sur les problèmes connus et les résolutions attendues. Si vous êtes concerné par un événement de niveau de service, vous devriez voir une alerte de communication (généralement accompagnée d'une icône en forme de cloche). Nous vous recommandons de lire ces informations et d'effectuer les actions appropriées. Pour plus d’informations sur la zone d’état du service, voir [État et continuité du service](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). Vous pourrez peut-être trouver plus d’aide vous-même à l’aide des outils, forums et sites communautaires répertoriés ici.
+Lors de la connexion, le Centre d'administration Microsoft 365 fournit des informations sur l’état des services de votre organisation. En outre, la section Intégrité du service affiche l’état actuel de vos services, des détails sur les interruptions et les interruptions, et répertorie les temps de maintenance planifiés. Le Centre d'administration Microsoft 365 fournit également des informations sur les problèmes connus et les solutions attendues. Si vous êtes concerné par un événement de niveau de service, vous devriez voir une alerte de communication (généralement accompagnée d'une icône en forme de cloche). Nous vous recommandons de lire ces informations et d'effectuer les actions appropriées. Pour plus d’informations sur le domaine d’intégrité des services, consultez [État des services et la continuité](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). Vous pourrez peut-être trouver plus d’aide vous-même à l’aide des outils, forums et sites communautaires répertoriés ici.
 
 [Présentation du produit Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
 [Contacter le support relatif aux produits d’entreprises- Aide de l’administrateur](../../admin/get-help-support.md)
 
-[Microsoft 365 communauté](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+[communauté Microsoft 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Microsoft Assistant Support et récupération (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
+[Support Microsoft et l’Assistant Récupération (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
 
-[Dépannage du flux de messagerie](https://aka.ms/FixEmail)
+[Utilitaire de résolution des problèmes de flux de courrier](https://aka.ms/FixEmail)
 
 ## <a name="assisted-support-from-microsoft"></a>Support assisté de Microsoft
 
-Vous pouvez obtenir de l’aide de Microsoft en commençant une nouvelle demande de service dans le Centre d'administration Microsoft 365 ou en appelant au téléphone. Les abonnés au support Premier offrent des options de support supplémentaires.
+Vous pouvez obtenir de l’aide de Microsoft en démarrant une nouvelle demande de service dans le Centre d'administration Microsoft 365 ou en appelant sur le téléphone. Les abonnés au support Premier disposent d’options de support supplémentaires.
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Assistance pour les abonnés au support Microsoft Premier
 
 Si vous êtes client EOP et que vous disposez d'un contrat de support Microsoft Premier, vous pouvez obtenir une assistance via les canaux normaux du support Microsoft Premier. Vous pouvez ainsi bénéficier de l'accès à tous les processus et à toutes les ressources disponibles pour les clients du support Premier, comme un responsable technique de compte et la soumission de requête. Le support Premier pour Microsoft Online Services dépasse le cadre du support Premier des produits sur site et l'étend aux services en ligne, en vous offrant un support unifié pour tous les produits et services. Il permet de s'assurer que les clients peuvent résoudre rapidement leurs problèmes et simplifie la gestion du support pour les différents composants d'une infrastructure informatique.
 
-Pour plus d’informations sur la façon dont le support Premier peut aider votre organisation à optimiser la valeur de vos investissements en technologies de l’information, voir [Support Premier pour les partenaires](https://partner.microsoft.com/support/microsoft-services-premier-support).
+Pour plus d’informations sur la façon dont le support Premier peut aider votre organisation à optimiser la valeur de vos investissements informatiques, consultez [Support Premier pour les partenaires](https://partner.microsoft.com/support/microsoft-services-premier-support).
 
 ### <a name="ask-for-help-on-the-web"></a>Demander une assistance sur le web
 
@@ -68,7 +68,7 @@ Pour plus d’informations sur la façon dont le support Premier peut aider votr
 
 1. Connectez-vous au Centre d'administration Microsoft 365.
 
-2. Pour les problèmes généraux du produit, allez au **support** \> **technique Demander un** appel **de support**\> technique.
+2. Pour les problèmes de produit généraux, accédez au **support** \> technique **Demande de support technique pour le support** \> **technique**.
 
    Pour des questions préalables à l'achat d'EOP ou ayant trait à la facturation et aux abonnements, accédez à **Support** \> **Demander une assistance clientèle** \> **Appeler le support de facturation et d'abonnement**.
 
@@ -80,7 +80,7 @@ Microsoft met à disposition des numéros de téléphone locaux ou gratuits pour
 
 |Pays ou région|Questions préalables à l'achat et concernant la facturation|Questions d'assistance technique|
 |---|---|---|
-|Brésil|Numéro gratuit : 08007621146 <br> Local : 1147001999|Identique|
+|Brésil|Gratuit : 08007621146 <br> Local : 1147001999|Identique|
 |France|Numéro gratuit : 0805 540 594 <br> Local : 01 57 32 42 97|Identique|
 |Allemagne|Numéro gratuit : 0800 589 2332 <br>  Local : 069 380 789 508|Identique|
 |Japon|Numéro gratuit : 0120-628860 <br> Local : 343326257|Numéro gratuit : 0120-996680 <br> Local : 357679793|

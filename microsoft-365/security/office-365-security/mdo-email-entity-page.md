@@ -1,5 +1,5 @@
 ---
-title: Page Microsoft Defender pour Office 365'entité de messagerie
+title: Page d’entité d’e-mail Microsoft Defender pour Office 365
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,190 +16,192 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Microsoft Defender pour Office 365 clients E5 et P1 et P2 peuvent désormais obtenir une vue à 360 degrés de chaque courrier électronique avec une page d’entité de messagerie.
-ms.openlocfilehash: 1b74c4c79d05a4a52434810527c92de801b329f0
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+description: Microsoft Defender pour Office 365 clients E5 et P1 et P2 peuvent désormais obtenir une vue à 360 degrés de chaque e-mail avec la page d’entité de messagerie.
+ms.openlocfilehash: c2dfd4016f756073407e7d1c22034031c60a901f
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634820"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131083"
 ---
 # <a name="the-email-entity-page"></a>Page de l’entité d’e-mail
 
 **Dans cet article**
-- [Atteindre la page d’entité de messagerie](#reach-the-email-entity-page)
-- [Lire la page d’entité de messagerie](#read-the-email-entity-page)
-- [Utiliser les onglets de page d’entité de messagerie](#use-email-entity-page-tabs)
-- [Nouvelle page de l’entité de messagerie](#new-to-the-email-entity-page)
+- [Atteindre la page d’entité d’e-mail](#reach-the-email-entity-page)
+- [Lire la page d’entité d’e-mail](#read-the-email-entity-page)
+- [Utiliser des onglets de page d’entité de messagerie](#use-email-entity-page-tabs)
+- [Nouveautés de la page d’entité d’e-mail](#new-to-the-email-entity-page)
 
-Les administrateurs Microsoft Defender pour Office 365 E5 et Defender pour Office P1 et P2 ont une vue à 360 degrés du courrier électronique à l’aide de la **page** Entité de messagerie. Cette page de messagerie a été créée pour améliorer les informations livrées dans le volant « [Détails des e-mails » de l’Explorateur de menaces](threat-explorer-views.md).
+Les administrateurs de Microsoft Defender pour Office 365 E5 et Defender pour Office P1 et P2 ont une vue à 360 degrés de l’e-mail à l’aide de la **page d’entité e-mail**. Cette page d’e-mail go-to a été créée pour améliorer les informations [fournies dans le menu volant « Détails de l’e-mail » de l’Explorateur de menaces](threat-explorer-views.md).
 
-## <a name="reach-the-email-entity-page"></a>Atteindre la page d’entité de messagerie
+## <a name="reach-the-email-entity-page"></a>Atteindre la page d’entité d’e-mail
 
-La page entité de messagerie est disponible dans le portail Microsoft 365 Defender à <https://security.microsoft.com> l’adresse **Email & collaboration** \> **Explorer**. Ou, pour aller directement à la page **De l’Explorateur** , utilisez <https://security.microsoft.com/threatexplorer>.
+La page d’entité d’e-mail est disponible dans le portail Microsoft 365 Defender à l’adresse <https://security.microsoft.com> **e-mail & Collaboration** \> **Explorer**. Ou, pour accéder directement à la page **Explorateur** , utilisez <https://security.microsoft.com/threatexplorer>.
 
-Dans **l’Explorateur**, sélectionnez l’objet d’un e-mail que vous examinez. Une barre d’or s’affiche en haut du volant du courrier électronique pour ce courrier. Cette invitation à la nouvelle page indique « Essayez notre nouvelle page d’entité de messagerie avec des données enrichies... ». Sélectionnez pour afficher la nouvelle page.
+Dans **l’Explorateur**, sélectionnez l’objet d’un e-mail que vous examinez. Une barre d’or s’affiche en haut du menu volant du courrier électronique. Cette invitation à la nouvelle page indique « Essayez notre nouvelle page d’entité de messagerie avec des données enrichies... ». Sélectionnez cette option pour afficher la nouvelle page.
 
-:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="Bannière d’or avec les mots *Essayer notre nouvelle page d’entité de messagerie avec des données enrichies* pour accéder à la nouvelle expérience" lightbox="../../media/email-entities-1-navigation-to-ee.png":::
+:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="Bannière d’or avec les mots *Essayez notre nouvelle page d’entité e-mail avec des données enrichies* pour accéder à la nouvelle expérience" lightbox="../../media/email-entities-1-navigation-to-ee.png":::
 
-:::image type="content" source="../../media/email-entities-2-eep.png" alt-text="Graphique de la page d’entité de messagerie qui se concentre sur les titres que vous verrez" lightbox="../../media/email-entities-2-eep.png":::
+:::image type="content" source="../../media/email-entities-2-eep.png" alt-text="Graphique de la page d’entité d’e-mail qui se concentre sur les titres que vous verrez" lightbox="../../media/email-entities-2-eep.png":::
 
 > [!NOTE]
-> Les autorisations nécessaires pour afficher et utiliser cette page sont les mêmes que pour afficher **l’Explorateur**. L’administrateur doit être membre de l’administrateur global ou du lecteur global, ou administrateur de sécurité ou lecteur sécurité. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
+> Les autorisations nécessaires pour afficher et utiliser cette page sont les mêmes que pour afficher **l’Explorateur**. L’administrateur doit être membre de l’administrateur général ou du lecteur général, ou administrateur de sécurité ou lecteur de sécurité. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-## <a name="read-the-email-entity-page"></a>Lire la page d’entité de messagerie
+## <a name="read-the-email-entity-page"></a>Lire la page d’entité d’e-mail
 
-La structure est conçue pour être facile à lire et à parcourir en un coup d’œil. Divers onglets en haut de la page vous permettent d’examiner plus en détail. Voici comment fonctionne la disposition :
+La structure est conçue pour être facile à lire et à parcourir en un clin d’œil. Différents onglets en haut de la page vous permettent d’examiner plus en détail. Voici comment fonctionne la disposition :
 
-1. Les champs les plus requis sont sur le côté gauche du volant. Ces détails sont « résessants » ; ils sont ancrés à gauche, quel que soit l’onglet dans le reste du volant.
+1. Les champs les plus requis se trouvent sur le côté gauche du menu volant. Ces détails sont « collants », ce qui signifie qu’ils sont ancrés à gauche, quel que soit l’onglet vers lequel vous naviguez dans le reste du menu volant.
 
-    :::image type="content" source="../../media/email-entities-3-left-panel.png" alt-text="Graphique de la page d’entité de messagerie avec le côté gauche mis en évidence" lightbox="../../media/email-entities-3-left-panel.png":::
+    :::image type="content" source="../../media/email-entities-3-left-panel.png" alt-text="Graphique de la page d’entité d’e-mail avec le côté gauche mis en évidence" lightbox="../../media/email-entities-3-left-panel.png":::
 
-2. Dans le coin supérieur droit se trouver les actions qui peuvent être prises sur un e-mail. Toutes les actions qui peuvent être entreprises par le biais de **l’Explorateur** sont également disponibles via la page d’entité de messagerie.
+2. En haut à droite se trouvent les actions qui peuvent être effectuées sur un e-mail. Toutes les actions qui peuvent être effectuées via **l’Explorateur** seront également disponibles via la page d’entité de messagerie.
 
-    :::image type="content" source="../../media/email-entities-5-preview.png" alt-text="Graphique de la page d’entité de messagerie avec le côté droit mis en évidence" lightbox="../../media/email-entities-5-preview.png":::
+    :::image type="content" source="../../media/email-entities-5-preview.png" alt-text="Graphique de la page d’entité d’e-mail avec le côté droit mis en évidence" lightbox="../../media/email-entities-5-preview.png":::
 
-3. Une analyse plus approfondie peut être effectuée en triant le reste de la page. Vérifiez les détails de détection du courrier électronique, l’état de l’authentification du courrier électronique et l’en-tête. Cette zone doit être examiné au cas par cas, mais les informations de ces onglets sont disponibles pour n’importe quel message électronique.
+3. Une analyse plus approfondie peut être effectuée en triant le reste de la page. Vérifiez les détails de la détection des e-mails, l’état de l’authentification par e-mail et l’en-tête. Cette zone doit être examinée au cas par cas, mais les informations contenues dans ces onglets sont disponibles pour tout e-mail.
 
-    :::image type="content" source="../../media/email-entities-4-middle-panel.png" alt-text="Panneau principal de la page qui inclut l’en-tête de courrier électronique et l’état d’authentification" lightbox="../../media/email-entities-4-middle-panel.png":::
+    :::image type="content" source="../../media/email-entities-4-middle-panel.png" alt-text="Panneau principal de la page qui inclut l’en-tête d’e-mail et l’état de l’authentification" lightbox="../../media/email-entities-4-middle-panel.png":::
 
-### <a name="use-email-entity-page-tabs"></a>Utiliser les onglets de page d’entité de messagerie
+### <a name="use-email-entity-page-tabs"></a>Utiliser des onglets de page d’entité de messagerie
 
-Les onglets en haut de la page d’entité vous permettent d’examiner efficacement les messages électroniques.
+Les onglets situés en haut de la page d’entité vous permettent d’examiner efficacement les e-mails.
 
-1. **Chronologie** : l’affichage de chronologie d’un  e-mail (par chronologie de l’Explorateur) indique la remise d’origine aux événements de post-remise qui se produisent sur un e-mail. Pour les e-mails qui n’ont aucune action de post-remise, l’affichage affiche la ligne de remise d’origine dans l’affichage chronologique. Les événements tels que : la purge automatique heure zéro (ZAP), la correction, les clics d’URL et les événements provenant de sources telles que : système, administrateur et utilisateur, s’affichent ici, dans l’ordre dans lequel ils se sont produits.
-2. **Analyse :** l’analyse montre les champs qui aident les administrateurs à analyser un message électronique en profondeur. Pour les cas où les administrateurs doivent mieux comprendre la détection, l’expéditeur/destinataire et les détails de l’authentification de messagerie, ils doivent utiliser l’onglet Analyse. Des liens pour les pièces jointes et les URL sont également trouvés sur cette page, sous « Entités associées ». Les pièces jointes et les menaces identifiées sont numéroées ici et un clic vous permet d’accéder directement aux pages pièces jointes et URL. Cet onglet dispose également d’une option d’affichage d’en-tête pour *afficher l’en-tête de l’e-mail*. Les administrateurs peuvent comparer les détails des en-têtes de courrier électronique, côte à côte avec les informations du panneau principal, pour plus de clarté.
-3. **Pièces jointes** : examine les pièces jointes trouvées dans l’e-mail avec d’autres détails trouvés sur les pièces jointes. Le nombre de pièces jointes affichées est actuellement limité à 10. Notez que les détails de détonation pour les pièces jointes qui sont malveillantes sont également affichés ici.
-4. **URL : cet** onglet répertorie les URL trouvées dans l’e-mail avec d’autres détails sur les URL. Le nombre d’URL est limité à 10 pour l’instant, mais ces 10 url sont priorisées pour afficher d’abord les *URL malveillantes*. La hiér donc vous permet de gagner du temps et de deviner le travail. Les URL qui ont été trouvées comme malveillantes et détonées sont également affichées ici.
-5. **Courriers électroniques similaires** : cet onglet répertorie tous les e-mails similaires à *l’ID de message réseau +* combinaison de destinataires spécifiques à ce courrier électronique. La similarité est basée uniquement *sur le corps du message*. Les déterminations réalisées sur les messages pour les classer comme « similaires » n’incluent pas de considération sur *les pièces jointes*.
+1. **Chronologie** : la vue chronologie d’un e-mail (par chronologie **de l’Explorateur** ) affiche la remise d’origine aux événements post-remise qui se produisent sur un e-mail. Pour les e-mails qui n’ont aucune action post-remise, la vue affiche la ligne de remise d’origine en mode chronologie. Événements tels que : Vidage automatique de zéro heure (ZAP), Corriger, clics d’URL, etc., à partir de sources telles que : système, administrateur et utilisateur, s’affichent ici, dans l’ordre dans lequel ils se sont produits.
+2. **Analyse** : l’analyse montre des champs qui aident les administrateurs à analyser un e-mail en profondeur. Pour les cas où les administrateurs doivent en savoir plus sur la détection, l’expéditeur/le destinataire et les détails de l’authentification par e-mail, ils doivent utiliser l’onglet Analyse. Des liens pour les pièces jointes et les URL se trouvent également sur cette page, sous « Entités associées ». Les pièces jointes et les menaces identifiées sont numérotées ici, et le fait de cliquer vous permet d’accéder directement aux pages Pièces jointes et URL. Cet onglet comporte également une option d’en-tête Affichage pour *afficher l’en-tête de l’e-mail*. Les administrateurs peuvent comparer les détails des en-têtes de courrier, côte à côte avec les informations du panneau principal, pour plus de clarté.
+3. **Pièces jointes** : examine les pièces jointes trouvées dans l’e-mail avec d’autres détails trouvés sur les pièces jointes. Le nombre de pièces jointes affichées est actuellement limité à 10. Notez que les détails de la détonation pour les pièces jointes jugées malveillantes sont également affichés ici.
+4. **URL** : cet onglet répertorie les URL trouvées dans l’e-mail avec d’autres détails sur les URL. Le nombre d’URL est limité à 10 actuellement, mais ces 10 sont prioritaires pour afficher *d’abord les URL malveillantes*. La hiérarchisation vous permet de gagner du temps et de deviner du travail. Les URL qui ont été jugées malveillantes et détonées seront également affichées ici.
+5. **E-mails similaires** : cet onglet répertorie tous les e-mails similaires à la combinaison *id de message réseau + destinataire* spécifique à cet e-mail. La similarité est basée uniquement sur le *corps du message*. Les déterminations prises sur les messages électroniques pour les classer comme « similaires » n’incluent pas une considération des *pièces jointes*.
 
-## <a name="new-to-the-email-entity-page"></a>Nouvelle page de l’entité de messagerie
+## <a name="new-to-the-email-entity-page"></a>Nouveautés de la page d’entité d’e-mail
 
-Il existe de nouvelles fonctionnalités qui s’inséront dans cette page d’entité de messagerie. Voici la liste.
+De nouvelles fonctionnalités sont disponibles avec cette page d’entité de messagerie. Voici la liste.
 
-### <a name="email-preview-for-cloud-mailboxes"></a>Aperçu du courrier électronique pour les boîtes aux lettres cloud
+### <a name="email-preview-for-cloud-mailboxes"></a>Aperçu de l’e-mail pour les boîtes aux lettres cloud
 
-Les administrateurs peuvent afficher un aperçu des e-mails dans les boîtes aux lettres ***cloud, si*** les messages sont toujours présents dans le cloud. En cas de suppression (par un administrateur ou un utilisateur) ou ZAP (mise en quarantaine), les e-mails ne sont plus présents dans l’emplacement cloud. Dans ce cas, les administrateurs ne pourront pas afficher un aperçu de ces messages spécifiques. Les messages électroniques qui ont été supprimés, ou lorsque la remise a échoué, n’ont jamais été envoyés dans la boîte aux lettres. Par conséquent, les administrateurs ne pourront pas non plus prévisualiser ces e-mails.
+Les administrateurs peuvent afficher un aperçu des e-mails dans les boîtes aux lettres cloud ***, si*** les messages sont toujours présents dans le cloud. En cas de suppression réversible (par un administrateur ou un utilisateur) ou ZAP (en quarantaine), les e-mails ne sont plus présents dans l’emplacement cloud. Dans ce cas, les administrateurs ne pourront pas afficher un aperçu de ces messages spécifiques. Les e-mails qui ont été supprimés, ou lorsque la remise a échoué, ne sont jamais entrés dans la boîte aux lettres. Par conséquent, les administrateurs ne pourront pas non plus afficher un aperçu de ces e-mails.
 
 > [!WARNING]
-> L’aperçu des e-mails nécessite un rôle spécial appelé **Aperçu**. Vous pouvez ajouter ce rôle dans le portail Microsoft 365 Defender comme décrit dans les rôles de collaboration & messagerie [dans le portail Microsoft 365 Defender web](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal). Vous devrez peut-être créer un groupe de rôles de **collaboration Email &** et ajouter le  rôle Aperçu à ce nouveau groupe de rôles ou  ajouter le rôle Aperçu à un groupe de rôles qui permet aux administrateurs de votre organisation de travailler dans **l’Explorateur**.
+> L’aperçu des e-mails nécessite un rôle spécial appelé **Aperçu**. Vous pouvez ajouter ce rôle dans le portail Microsoft 365 Defender comme décrit dans les [rôles e-mail & collaboration dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal). Vous devrez peut-être créer un groupe de rôles **e-mail & collaboration** et ajouter le rôle **Aperçu** à ce nouveau groupe de rôles ou ajouter le rôle **Aperçu** à un groupe de rôles qui permet aux administrateurs de votre organisation de travailler dans **l’Explorateur**.
 
 ### <a name="detonation-details"></a>Détails de la détonation
 
-Ces détails sont spécifiques aux pièces jointes et URL des e-mails. Les utilisateurs peuvent voir ces détails en allant dans l’Explorateur  et en appliquant le filtre de technologie de détection au détonation de fichier ou à la détonation d’URL. Les e-mails filtrés pour la détonation de fichiers contiennent un fichier malveillant avec des détails de détonation, et ceux filtrés pour les URL contiennent une URL malveillante et ses détails de détonation.
+Ces détails sont spécifiques aux pièces jointes et URL de courrier électronique. Les utilisateurs peuvent voir ces détails en allant dans l’Explorateur et en appliquant le filtre *de technologie de détection* défini à la détonation de fichier ou à la détonation d’URL. Les e-mails filtrés pour la détonation de fichier contiennent un fichier malveillant avec des détails de détonation, et ceux filtrés pour les URL contiennent une URL malveillante et ses détails de détonation.
 
-Les utilisateurs voient des détails de détonation enrichis pour les pièces jointes ou URL malveillantes connues trouvées dans leurs e-mails, qui ont été détonées pour leur client spécifique. Il inclut la chaîne de détonation, le résumé de détonation, la capture d’écran et les détails du comportement observé pour aider les clients à comprendre pourquoi la pièce jointe ou l’URL a été considérée comme malveillante et détonée.
+Les utilisateurs verront des détails de détonation enrichis pour les pièces jointes ou URL malveillantes connues trouvées dans leurs e-mails, qui ont été détonées pour leur locataire spécifique. Il inclut la chaîne de détonation, le résumé de la détonation, la capture d’écran et les détails du comportement observé pour aider les clients à comprendre pourquoi la pièce jointe ou l’URL a été jugée malveillante et détonée.
 
-1. *Chaîne de détonation*. Une détonation de fichier ou d’URL unique peut déclencher plusieurs détonations. La chaîne de détonation suit le chemin d’accès des détonations, y compris le fichier ou l’URL malveillant d’origine à l’origine du verdict, ainsi que tous les autres fichiers ou URL affectés par la détonation. Ces URL ou fichiers joints peuvent ne pas être directement présents dans l’e-mail, mais il est important d’inclure cette analyse pour déterminer pourquoi le fichier ou l’URL a été trouvé comme malveillant.  
+1. *Chaîne de détonation*. Une détonation d’URL ou de fichier unique peut déclencher plusieurs détonations. La chaîne de détonation suit le chemin des détonations, y compris le fichier ou l’URL malveillants d’origine à l’origine du verdict, ainsi que tous les autres fichiers ou URL affectés par la détonation. Ces URL ou fichiers joints peuvent ne pas être directement présents dans l’e-mail, mais il est important d’inclure cette analyse pour déterminer pourquoi le fichier ou l’URL a été détecté comme malveillant.  
 
     > [!NOTE]
-    > Cela peut afficher uniquement l’élément de niveau supérieur si aucune des entités liées à celui-ci n’a été trouvée problématique ou a été désaxée.
+    > Cela peut afficher uniquement l’élément de niveau supérieur si aucune des entités liées à celui-ci n’a été jugée problématique ou a été détonée.
 
-1. Le résumé de la *détonation* fournit un résumé de base pour la détonation, tel que le temps d’analyse *,* l’heure à laquelle la détonation s’est produite, le système d’exploitation et l’application, le système d’exploitation et l’application dans lesquels la détonation s’est produite, la taille du fichier et la raison du verdict.
-1. *Les captures d’écran* montrent les captures d’écran capturées lors de la détonation. Il peut y avoir plusieurs captures d’écran pendant la détonation. Aucune capture d’écran n’est capturée pour
-    - Fichiers de type conteneur tels .zip ou .rar.
+1. *Le résumé de la détonation* fournit un résumé de base pour la détonation, comme le *temps d’analyse*, l’heure à laquelle la détonation s’est produite, le système d’exploitation et l’application, le système d’exploitation et l’application dans lesquels la détonation s’est produite, la taille du fichier et le motif du verdict.
+1. *Les captures d’écran* montrent les captures d’écran capturées pendant la détonation. Il peut y avoir plusieurs captures d’écran pendant la détonation. Aucune capture d’écran n’est capturée pour
+    - Fichiers de type conteneur tels que .zip ou .rar.
     - Si une URL s’ouvre dans un lien qui télécharge directement un fichier. Toutefois, vous verrez le fichier téléchargé dans la chaîne de détonation.
-1. Les *détails* du comportement sont une exportation qui affiche des détails de comportement tels que des événements exacts qui ont eu lieu lors de la détonation et des éléments observables qui contiennent des URL, des adresses IP, des domaines et des fichiers trouvés lors de la détonation (et qui peuvent être problématiques ou indésirables). Sachez qu’il n’y a peut-être pas de détails de comportement pour :
-    - Fichiers de conteneur tels .zip ou .rar contenant d’autres fichiers.
+1. *Les détails du comportement* sont une exportation qui affiche des détails de comportement tels que les événements exacts qui ont eu lieu pendant la détonation, et les observables qui contiennent des URL, des adresses IP, des domaines et des fichiers qui ont été trouvés pendant la détonation (et qui peuvent être problématiques ou bénins). N’oubliez pas qu’il peut n’y avoir aucun détail de comportement pour :
+    - Fichiers conteneur tels que .zip ou .rar contenant d’autres fichiers.
 
 :::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="Résumé de la détonation montrant la chaîne, le résumé, les détails de la détonation et la capture d’écran sous le titre *Analyse approfondie*" lightbox="../../media/email-entities-6-detonation-page.png":::
 
 ### <a name="other-innovations"></a>Autres innovations
 
-*Balises* : ces balises sont appliquées aux utilisateurs. Si l’utilisateur est un destinataire, les administrateurs voient une *balise de* destinataire. De même, si l’utilisateur est un expéditeur, une *balise d’expéditeur* . Cela s’affiche dans le côté gauche de la page des entités de messagerie (dans la partie décrite comme  étant resserrante et, par conséquent, ancrée à la page).
+*Balises* : il s’agit de balises appliquées aux utilisateurs. Si l’utilisateur est un destinataire, les administrateurs voient une balise *de destinataire* . De même, si l’utilisateur est un expéditeur, une balise *d’expéditeur* . Cela apparaît dans le côté gauche de la page d’entités de messagerie (dans la partie qui est décrite comme *collante* et, par conséquent, ancrée à la page).
 
-*Emplacement de remise le* plus récent : l’emplacement de remise le plus récent est l’emplacement où un courrier électronique a été envoyé après des actions système telles que ZAP, ou des actions d’administrateur telles que Déplacer vers les éléments supprimés, se terminent. L’emplacement de remise le plus récent n’est pas destiné à informer les administrateurs de l’emplacement *actuel du* message. Par exemple, si un utilisateur supprime un message ou le déplace vers l’archive, l’emplacement de remise ne sera pas mis à jour. Toutefois, si une action du système a eu lieu et mis à jour l’emplacement (par exemple, une ZAP qui entraîne le déplacement d’un courrier électronique en quarantaine), cela met à jour l’emplacement de remise le plus récent en quarantaine.
+*Emplacement de remise le plus* récent : l’emplacement de remise le plus récent est l’emplacement où un e-mail a atterri après que des actions système telles que ZAP, ou des actions d’administration telles que Déplacer vers des éléments supprimés, se terminent. L’emplacement de remise le plus récent n’est pas destiné à informer les administrateurs de l’emplacement *actuel* du message. Par exemple, si un utilisateur supprime un message ou le déplace vers l’archive, l’emplacement de remise n’est pas mis à jour. Toutefois, si une action système a eu lieu et a mis à jour l’emplacement (par exemple, un ZAP entraînant le passage d’un e-mail en quarantaine), cela met à jour l’emplacement de remise le plus récent en quarantaine.
 
-*Détails de l’e-mail* : détails requis pour une compréhension approfondie du courrier électronique disponible dans *l’onglet Analyse* .
+*Détails de l’e-mail* : détails requis pour une compréhension plus approfondie de l’e-mail disponible sous l’onglet *Analyse* .
 
-- *Exchange de transport (également appelées* règles de flux de messagerie ou ETR) : ces règles sont appliquées à un message au niveau de la couche de transport et prévalent sur les verdicts de hameçonnage et de courrier indésirable. Les règles de flux de messagerie sont créées et modifiées dans le Centre d’administration Exchange <https://admin.exchange.microsoft.com/#/transportrules>à l’adresse , mais si une règle de flux de messagerie s’applique à un message, le nom et le GUID de la règle s’afficheront ici. Informations précieuses à des fins de suivi.
+- *Exchange règles de transport (également appelées règles de flux de messagerie ou ETR)* : ces règles sont appliquées à un message au niveau de la couche de transport et sont prioritaires sur les verdicts de hameçonnage et de courrier indésirable. Les règles de flux de messagerie sont créées et modifiées dans le centre d’administration Exchange, <https://admin.exchange.microsoft.com/#/transportrules>mais si une règle de flux de courrier s’applique à un message, le nom et le GUID de la règle s’affichent ici. Informations précieuses à des fins de suivi.
 
-- *Remplacements système* : il s’agit d’un moyen d’effectuer des exceptions à l’emplacement de remise prévu pour un message en remplacement de l’emplacement de remise donné par le système (selon la technologie de détection et de menace).
+- *Remplacement principal : Source* : le remplacement principal et la source font référence au paramètre client ou utilisateur qui a eu un impact sur la remise de l’e-mail, en remplaçant l’emplacement de remise donné par le système (conformément à la technologie de menace et de détection). Par exemple, il peut s’agir d’un e-mail bloqué en raison d’une règle de transport configurée par le locataire ou d’un e-mail autorisé en raison d’un paramètre d’utilisateur final pour Coffre expéditeurs. 
 
-- *Niveau de réclamation en bloc (BCL)* : niveau de réclamation en bloc (BCL) du message. Une valeur BCL supérieure indique qu’un message en nombre est plus susceptible de générer des réclamations (résultat naturel si le courrier électronique est susceptible d’être du courrier indésirable).
+- *Toutes les substitutions* : toutes les substitutions font référence à la liste des remplacements (paramètres client ou utilisateur) appliqués à l’e-mail, ce qui peut avoir ou non eu un impact sur la remise d’un e-mail. Par exemple, si une règle de transport configurée par le locataire, ainsi qu’un paramètre de stratégie configuré par le locataire (par exemple, à partir de la liste d’autorisations de locataire), est appliquée à un e-mail, les deux sont répertoriées dans ce champ. Vous pouvez vérifier le champ de remplacement principal pour déterminer le paramètre qui a impacté la remise de l’e-mail. 
+
+- *Niveau de plainte en bloc (BCL)* : niveau de réclamation en bloc (BCL) du message. Une bcl plus élevée indique qu’un message électronique en bloc est plus susceptible de générer des plaintes (résultat naturel si l’e-mail est susceptible d’être du courrier indésirable).
 
 - *Niveau de confiance du courrier indésirable (SCL)* : niveau de confiance du courrier indésirable (SCL) du message. Plus cette valeur est élevée, plus il est probable que le message est un courrier indésirable.
 
-- *Type de client* : indique le type de client à partir duquel le courrier électronique a été envoyé comme REST.
+- *Type de client* : indique le type de client à partir duquel l’e-mail a été envoyé comme REST.
 
-- *Forwarding*: For scenarios with autoforwaridng, it indicates the forwarding user as well as the forwarding type like ETR or SMTP forwarding. 
+- *Transfert* : pour les scénarios avec autoforwaridng, il indique l’utilisateur de transfert ainsi que le type de transfert comme le transfert ETR ou SMTP. 
 
-- *Liste de distribution* : affiche la liste de distribution, si le destinataire a receieved l’e-mail en tant que membre de la liste. Il affiche la liste de distribution de niveau supérieur si des listes de distribution imbrmbrées sont impliquées.  
+- *Liste de distribution* : affiche la liste de distribution, si le destinataire a reçu l’e-mail en tant que membre de la liste. Il affiche la liste de distribution de niveau supérieur si des listes de distribution imbriquées sont impliquées.  
 
-- *À, Cc* : indique les adresses répertoriées dans les champs À et Cc d’un e-mail. Les informations de ces champs sont limitées à 5 000 caractères. 
+- *À, Cc* : indique les adresses répertoriées dans les champs À, Cc d’un e-mail. Les informations contenues dans ces champs sont limitées à 5 000 caractères. 
 
-- *Nom de domaine* : est le nom de domaine de l’expéditeur.
+- *Nom de domaine* : nom de domaine de l’expéditeur.
 
-- *Propriétaire du* domaine : spécifie le propriétaire du domaine d’envoi.
+- *Propriétaire du domaine* : spécifie le propriétaire du domaine d’envoi.
 
-- *Emplacement du* domaine : spécifie l’emplacement du domaine d’envoi.
+- *Emplacement du domaine* : spécifie l’emplacement du domaine d’envoi.
 
-- *Date de création du* domaine : spécifie la date de création du domaine d’envoi. Vous pouvez faire attention à un domaine nouvellement créé si d’autres signaux indiquent un comportement suspect.
+- *Date de création du domaine* : spécifie la date de création du domaine d’envoi. Un domaine nouvellement créé peut être prudent si d’autres signaux indiquent un comportement suspect.
 
-*Authentification de messagerie* électronique : méthodes d’authentification de messagerie Microsoft 365 par SPF, DKIM et DMARC.
+*Authentification par e-mail* : les méthodes d’authentification par e-mail utilisées par Microsoft 365 incluent SPF, DKIM et DMARC.
 
-- Sender Policy Framework (**SPF)** : décrit les résultats de la vérification SPF du message. Les valeurs possibles peuvent être :
-  - Pass (adresse IP) : vérification SPF du message passé et inclut l’adresse IP de l’expéditeur. Le client est autorisé à envoyer ou à relayer le courrier électronique avec le domaine de l’expéditeur.
+- Sender Policy Framework (**SPF**) : décrit les résultats de la vérification SPF du message. Les valeurs possibles peuvent être les suivantes :
+  - Passe (adresse IP) : le SPF vérifie le message passé et inclut l’adresse IP de l’expéditeur. Le client est autorisé à envoyer ou à relayer le courrier électronique avec le domaine de l’expéditeur.
   - Échec (adresse IP) : la vérification SPF du message a échoué et inclut l’adresse IP de l’expéditeur. Dans ce cas, on parle parfois d’échec sévère.
-  - Softfail (raison) : l’enregistrement SPF a désigné l’hôte comme n’étant pas autorisé à envoyer, mais est en transition.
-  - Neutre : l’enregistrement SPF indique explicitement qu’il n’indique pas si l’adresse IP est autorisée à envoyer des messages.
-  - Aucun : le domaine n’a pas d’enregistrement SPF ou l’enregistrement SPF n’est pas évalué comme un résultat.
-  - Ordeur : une erreur temporaire s’est produite. Par exemple, une erreur DNS. Cette même vérification peut être effectuée ultérieurement.
+  - Softfail (raison) : l’enregistrement SPF a indiqué que l’hôte n’était pas autorisé à envoyer, mais qu’il était en transition.
+  - Neutre : l’enregistrement SPF indique explicitement qu’il n’indique pas si l’adresse IP est autorisée à envoyer.
+  - Aucun : le domaine n’a pas d’enregistrement SPF ou l’enregistrement SPF n’est pas évalué à un résultat.
+  - Temperror : une erreur temporaire s’est produite. Par exemple, une erreur DNS. Cette même vérification peut être effectuée ultérieurement.
   - Permerror : une erreur permanente s’est produite. Par exemple, un enregistrement SPF mal mis en forme dans le domaine.
 
-- DomainKeys Identified Mail (**DKIM**) :
-  - Pass : indique la vérification DKIM pour le message passé.
-  - Échec (raison) : indique que la vérification DKIM pour le message a échoué et pourquoi. Par exemple, parce que le message n’a pas été signé ou que la signature n’a pas été vérifiée.
+- DomainKeys Identified Mail (**DKIM)** :
+  - Passe : indique la vérification DKIM du message passé.
+  - Échec (raison) : indique la vérification DKIM du message ayant échoué et pourquoi. Par exemple, parce que le message n’a pas été signé ou que la signature n’a pas été vérifiée.
   - Aucun : indique que le message n’a pas été signé. Cela n’indique pas forcément que le domaine a un enregistrement DKIM ou que l’évaluation de l’enregistrement DKIM ne donne pas de résultat, mais simplement que ce message n’a pas été signé.
 
-- **DMARC** (Domain-based Message Authentication, Reporting, and Conformance) :
-  - Pass : indique la vérification DMARC pour le message passé.
+- Authentification, création de rapports et conformité des messages basée sur le domaine (**DMARC**) :
+  - Passe : indique la vérification DMARC pour le message passé.
   - Échec : indique que la vérification DMARC du message a échoué.
-  - Bestguesspass : indique qu’il n’existe aucun enregistrement TXT DMARC pour le domaine, mais que s’il en existait un, la vérification DMARC aurait réussi.
-  - Aucun : indique qu’il n’existe aucun enregistrement TXT DMARC pour le domaine d’envoi dans le DNS.
+  - Bestguesspass : indique qu’il n’existe aucun enregistrement TXT DMARC pour le domaine, mais que si un enregistrement existait, la vérification DMARC du message aurait réussi.
+  - Aucun : indique qu’il n’existe aucun enregistrement TXT DMARC pour le domaine d’envoi dans DNS.
 
-Authentification *composite : il* s’agit d’une valeur utilisée par Microsoft 365 pour combiner l’authentification de messagerie comme SPF, DKIM et DMARC, afin de déterminer si le message est authentique. Il utilise le *domaine De :* du courrier comme base d’évaluation.
+*Authentification composite* : il s’agit d’une valeur utilisée par Microsoft 365 pour combiner l’authentification par e-mail comme SPF, DKIM et DMARC, pour déterminer si le message est authentique. Il utilise le domaine *From :* du courrier comme base d’évaluation.
 
 ### <a name="email-summary-panel"></a>Panneau récapitulatif de l’e-mail
 
-Le panneau de synthèse du courrier électronique est une vue récapitulée de la page d’entité de courrier électronique complète. Il contient des détails standardisés sur le courrier électronique (par exemple, les détections), ainsi que des informations spécifiques au contexte (par exemple, pour les métadonnées de mise en quarantaine ou de soumissions). Le panneau de synthèse du courrier électronique remplace les volants classiques Détections en temps réel, Explorateur de menaces, Soumissions et Rapports.
+Le panneau récapitulatif de l’e-mail est une vue récapitulative de la page d’entité de messagerie complète. Il contient des détails standardisés sur l’e-mail (par exemple, les détections), ainsi que des informations spécifiques au contexte (par exemple, pour les métadonnées de mise en quarantaine ou d’envoi). Le panneau récapitulatif de l’e-mail remplace les menus volants traditionnels Détections en temps réel, Explorateur de menaces, Soumissions et Rapports.
 
 > [!div class="mx-imgBorder"]
-> ![Ouvrez le lien de l’entité de messagerie.](../../media/open-email-entity-mdo.png)
+> ![Ouvrez le lien d’entité d’e-mail.](../../media/open-email-entity-mdo.png)
 
 > [!NOTE]
-> Pour afficher tous les composants, cliquez sur le lien Ouvrir l’entité **de** messagerie électronique pour ouvrir la page complète de l’entité de messagerie.  
+> Pour afficher tous les composants, cliquez sur le lien **Ouvrir l’entité d’e-mail** pour ouvrir la page d’entité de messagerie complète.  
 
-Le panneau de synthèse du courrier électronique est divisé en sections suivantes :  
+Le panneau récapitulatif de l’e-mail est divisé en sections suivantes :  
 
-- *Détails de remise* : contient des informations sur les menaces et le niveau de confiance correspondant, les technologies de détection et l’emplacement de remise d’origine et le dernier.
+- *Détails de la remise* : contient des informations sur les menaces et le niveau de confiance, les technologies de détection et l’emplacement de livraison d’origine et le dernier emplacement correspondant.
 
-- *Détails de l’e-mail* : contient des informations sur les propriétés de messagerie telles que le nom de l’expéditeur, l’adresse de l’expéditeur, l’heure de réception, les détails d’authentification et d’autres détails.
+- *Détails de l’e-mail* : contient des informations sur les propriétés de l’e-mail, telles que le nom de l’expéditeur, l’adresse de l’expéditeur, l’heure de réception, les détails de l’authentification et d’autres détails.
 
-- *URL : par* défaut, vous verrez 3 URL et leurs menaces correspondantes. Vous pouvez toujours cliquer **sur Afficher toutes les URL pour** les développer et afficher toutes les URL et les exporter.  
+- *URL* : par défaut, vous verrez 3 URL et leurs menaces correspondantes. Vous pouvez toujours cliquer sur **Afficher toutes les URL** pour développer et afficher toutes les URL et les exporter.  
 
-- *Pièces jointes* : par défaut, vous verrez 3 pièces jointes. Vous pouvez toujours cliquer sur **Afficher toutes les pièces jointes** pour les développer et afficher toutes les pièces jointes. 
+- *Pièces jointes* : par défaut, vous verrez 3 pièces jointes. Vous pouvez toujours cliquer sur **Afficher toutes les pièces jointes** pour développer et afficher toutes les pièces jointes. 
 
-Outre les sections ci-dessus, vous verrez également des sections spécifiques à quelques expériences intégrées au panneau de synthèse : 
+En plus des sections ci-dessus, vous verrez également des sections spécifiques à quelques expériences qui sont intégrées au panneau récapitulatif : 
 
-- Soumissions : 
+- Soumissions: 
 
     - *Détails de la soumission* : contient des informations sur les soumissions spécifiques, telles que :
-        - Date d’soumise
+        - Date d’envoi
         - Sujet
-        - Type de soumission
-        - Raison de l’envoi
+        - Type d’envoi
+        - Motif de l’envoi
         - ID de soumission
         - Soumis par
 
-    - *Détails des résultats* : les messages envoyés sont examinés. Vous pouvez voir le résultat de votre soumission ainsi que les étapes suivantes recommandées.
+    - *Détails du résultat* : les messages envoyés sont examinés. Vous pouvez voir le résultat de votre soumission ainsi que les étapes suivantes recommandées.
 
-- Mise en quarantaine :  
+- Quarantaine:  
 
-    - *Détails de mise en quarantaine* : contient des détails spécifiques à la mise en quarantaine. Pour plus d’informations, voir [Gérer les messages mis en quarantaine](manage-quarantined-messages-and-files.md#view-quarantined-message-details).
+    - *Détails de la quarantaine* : contient des détails spécifiques à la quarantaine. Pour plus d’informations, consultez [Gérer les messages mis en quarantaine](manage-quarantined-messages-and-files.md#view-quarantined-message-details).
 
         - Expires : Date et heure auxquelles le message sera automatiquement et définitivement supprimé de la quarantaine.
         - Déplacé pour : toutes les adresses e-mail (le cas échéant) auxquelles le message a été envoyé.
         - Pas encore déplacé pour : toutes les adresses e-mail (le cas échéant) auxquelles le message n'a pas encore été envoyé.
 
-    - *Actions de mise en* quarantaine : pour plus d’informations sur les différentes actions de mise en quarantaine, voir [Gérer les messages mis en quarantaine](manage-quarantined-messages-and-files.md#take-action-on-quarantined-email).
+    - *Actions de quarantaine* : pour plus d’informations sur les différentes actions de quarantaine, consultez [Gérer les messages mis en quarantaine](manage-quarantined-messages-and-files.md#take-action-on-quarantined-email).

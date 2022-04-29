@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment déployer Microsoft 365 Lighthouse lignes de base.
-ms.openlocfilehash: 2649094f36903e5607fee28862fa0af683d0986e
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 550ded1383cb402da0943bdfeb6707cbd12b02d1
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022864"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131127"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Déployer Microsoft 365 Lighthouse lignes de base
 
@@ -33,7 +33,7 @@ Assurez-vous que vous et vos locataires clients répondez aux exigences indiqué
 
 ## <a name="view-a-deployment-plan"></a>Afficher un plan de déploiement
 
-1. Dans la page de navigation de gauche, sélectionnez **Locataires**.
+1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Locataires**.
 
 2. Dans la liste des locataires, sélectionnez le locataire que vous souhaitez afficher.
 
@@ -44,7 +44,7 @@ Assurez-vous que vous et vos locataires clients répondez aux exigences indiqué
     | Colonne            | Description |
     |-----------------|-------------------------------------------------------------------------------------|
     | Étape de déploiement | Description de l’étape de déploiement.                                                     |
-    | Statut          | État de l’étape de déploiement.                                                  |
+    | État          | État de l’étape de déploiement.                                                  |
     | Baseline        | Base de référence à partir de laquelle l’étape de déploiement est dérivée.                             |
     | Catégorie        | Indique si l’étape de déploiement est associée à la gestion des appareils, de l’identité ou des données. |
     | Dernière mise à jour    | Date à laquelle l’étape de déploiement a été mise à jour pour la dernière fois.                             |
@@ -68,7 +68,7 @@ Assurez-vous que vous et vos locataires clients répondez aux exigences indiqué
     | Colonne            | Description |
     |-------------------|-------------------------------------------------------------|
     | Nom du processus      | Nom du processus, qui, lorsqu’il est sélectionné, ouvre l’onglet Processus applicable.          |
-    | Statut            | État détecté de ces configurations de paramètre incluses dans le processus de déploiement.           |
+    | État            | État détecté de ces configurations de paramètre incluses dans le processus de déploiement.           |
     | Portail de gestion | Portail par le biais duquel les paramètres de configuration associés au processus sont gérés. |
 
 ## <a name="deploy-a-deployment-step"></a>Déployer une étape de déploiement
@@ -107,7 +107,7 @@ Le volet Confirmer les configurations se ferme et affiche la comparaison de stra
 
 La table paramètres détectés répertorie chaque stratégie existante et résume le nombre de paramètres et, entre parenthèses, le nombre d’utilisateurs qui se trouvent dans l’un des états suivants :
 
-| Statut         | Description
+| État         | Description
 |-------------|------------------------------------------------------------|
 | Paramètres égaux       | Nombre total de paramètres de configuration dans le plan de déploiement avec une valeur équivalente dans le locataire.      |
 | Paramètres manquants     | Nombre total de paramètres de configuration dans le plan de déploiement qui manquent une valeur dans le locataire.      |
@@ -115,7 +115,7 @@ La table paramètres détectés répertorie chaque stratégie existante et résu
 
 Les paramètres détectés peuvent également être affichés dans une table modulaire qui fournit les détails des paramètres de configuration pour chaque stratégie au niveau du paramètre et de l’utilisateur et qui peut être triée selon chacun des états de paramètres suivants :
 
-| Statut         | Description
+| État         | Description
 |-------------|------------------------------------------------------------|
 | Paramètres totaux       | Nombre total de paramètres de configuration inclus dans le processus de déploiement.                        |
 | Paramètres égaux       | Nombre total de paramètres de configuration dans le plan de déploiement avec une valeur équivalente dans le locataire.      |
@@ -190,7 +190,7 @@ Pour plus d’informations sur la gestion des conflits de stratégie, consultez 
     Le lien permet à toute personne disposant d’autorisations dans votre organisation d’afficher le plan de déploiement du locataire.
 
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Vue d’ensemble de l’utilisation de Microsoft 365 Lighthouse lignes de base pour déployer des configurations de locataire standard](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
 [Vue d’ensemble de la page Windows 365 (PC cloud) dans Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md) (article)\

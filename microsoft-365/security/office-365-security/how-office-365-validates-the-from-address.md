@@ -1,5 +1,5 @@
 ---
-title: Comment EOP valide l’adresse De pour empêcher le hameçonnage
+title: Comment EOP valide l’adresse From pour empêcher le hameçonnage
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,18 +15,18 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent en savoir plus sur les types d’adresses de messagerie acceptées ou rejetées par Exchange Online Protection (EOP) et Outlook.com pour éviter le hameçonnage.
+description: Les administrateurs peuvent en savoir plus sur les types d’adresses e-mail acceptées ou rejetées par Exchange Online Protection (EOP) et Outlook.com pour empêcher le hameçonnage.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 412b6eb7045051c21a88c8b4b2ba5e80a06832dd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 92b7072e3127da71f423648c83fc94c17bed7caa
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199428"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131061"
 ---
-# <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Comment EOP valide l’adresse De pour empêcher le hameçonnage
+# <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Comment EOP valide l’adresse From pour empêcher le hameçonnage
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,41 +35,41 @@ ms.locfileid: "60199428"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Les attaques par hameçonnage sont une menace constante pour toute organisation de messagerie. En plus d’utiliser des [adresses](anti-spoofing-protection.md)e-mail d’expéditeur falsifiées (falsifiées), les attaquants utilisent souvent des valeurs dans l’adresse De qui ne respectent pas les normes Internet. Pour éviter ce type d’hameçonnage, Exchange Online Protection (EOP) et Outlook.com nécessitent désormais que les messages entrants incluent une adresse De conforme RFC, comme décrit dans cet article. Cette application a été activée en novembre 2017.
+Les attaques par hameçonnage constituent une menace constante pour toute organisation de messagerie. En plus [d’utiliser des adresses e-mail d’expéditeur usurpées (falsifiées), les attaquants](anti-spoofing-protection.md) utilisent souvent des valeurs dans l’adresse From qui violent les normes Internet. Pour éviter ce type de hameçonnage, Exchange Online Protection (EOP) et Outlook.com nécessitent désormais que les messages entrants incluent une adresse De conforme RFC, comme décrit dans cet article. Cette mise en œuvre a été activée en novembre 2017.
 
 **Remarques** :
 
-- Si vous recevez régulièrement des messages électroniques provenant d’organisations dont les adresses ont été mal renseignées, comme décrit dans cet article, encouragez ces organisations à mettre à jour leurs serveurs de messagerie pour se conformer aux normes de sécurité modernes.
+- Si vous recevez régulièrement des e-mails d’organisations mal formées à partir d’adresses, comme décrit dans cet article, encouragez ces organisations à mettre à jour leurs serveurs de messagerie pour qu’ils se conforment aux normes de sécurité modernes.
 
-- Le champ Expéditeur associé (utilisé par les listes d’envoi de la part de et de publipostage) n’est pas affecté par ces exigences. Pour plus d’informations, consultez le billet de blog suivant : Que voulons-nous dire lorsque nous faisons référence à l'« expéditeur » [d’un e-mail ?](/archive/blogs/tzink/what-do-we-mean-when-we-refer-to-the-sender-of-an-email)
+- Le champ Expéditeur associé (utilisé par Send on Behalf et les listes de diffusion) n’est pas affecté par ces exigences. Pour plus d’informations, consultez le billet de blog suivant : [Que signifie le terme « expéditeur » d’un e-mail ?](/archive/blogs/tzink/what-do-we-mean-when-we-refer-to-the-sender-of-an-email)
 
-## <a name="an-overview-of-email-message-standards"></a>Vue d’ensemble des normes de message électronique
+## <a name="an-overview-of-email-message-standards"></a>Vue d’ensemble des normes relatives aux messages électroniques
 
-Un message électronique SMTP standard est constitué d’une *enveloppe de message* et d’un contenu de message. L’enveloppe de message contient les informations requises pour transmettre et remettre le message entre des serveurs SMTP. Le contenu du message comporte les champs d’en-tête de message (collectivement appelés l’*en-tête de message*) et le corps du message. L’enveloppe de message est décrite dans [la RFC 5321](https://tools.ietf.org/html/rfc5321)et l’en-tête du message est décrit dans [la RFC 5322](https://tools.ietf.org/html/rfc5322). Les destinataires ne voient jamais l’enveloppe de message réelle, car elle est générée par le processus de transmission du message et ne fait pas réellement partie du message.
+Un message électronique SMTP standard est constitué d’une *enveloppe de message* et d’un contenu de message. L’enveloppe du message contient les informations nécessaires à la transmission et à la remise du message entre les serveurs SMTP. Le contenu du message comporte les champs d’en-tête de message (collectivement appelés l’*en-tête de message*) et le corps du message. L’enveloppe du message est décrite dans [RFC 5321](https://tools.ietf.org/html/rfc5321) et l’en-tête de message est décrit dans [RFC 5322](https://tools.ietf.org/html/rfc5322). Les destinataires ne voient jamais l’enveloppe de message réelle, car elle est générée par le processus de transmission de message et ne fait pas réellement partie du message.
 
-- L’adresse (également appelée adresse MAIL FROM, expéditeur P1 ou expéditeur d’enveloppe) est l’adresse de messagerie utilisée dans la `5321.MailFrom` transmission SMTP du message.  Cette adresse de messagerie est généralement enregistrée dans le champ **d’en-tête Return-Path** dans l’en-tête du message (bien qu’il soit possible pour l’expéditeur de désigner une autre adresse de messagerie **Return-Path).**
+- L’adresse `5321.MailFrom` (également appelée adresse **MAIL FROM** , expéditeur P1 ou expéditeur d’enveloppe) est l’adresse e-mail utilisée dans la transmission SMTP du message. Cette adresse e-mail est généralement enregistrée dans le champ **d’en-tête Chemin d’accès** de retour dans l’en-tête de message (bien qu’il soit possible pour l’expéditeur de désigner une autre adresse **e-mail return-path** ).
 
-- L’adresse e-mail (également appelée adresse de provenance ou expéditeur P2) est l’adresse de messagerie dans le champ d’en-tête De et l’adresse de messagerie de l’expéditeur qui s’affiche dans les clients de `5322.From` messagerie.  L’adresse de provenance est au centre des exigences de cet article.
+- L’adresse `5322.From` de messagerie (également appelée adresse De ou expéditeur P2) est l’adresse e-mail dans le champ d’en-tête **From** et l’adresse e-mail de l’expéditeur qui s’affiche dans les clients de messagerie. L’adresse From est l’objet des exigences décrites dans cet article.
 
-L’adresse De est définie en détail sur plusieurs RFC (par exemple, les sections RFC 5322 3.2.3, 3.4 et 3.4.1 et [RFC 3696](https://tools.ietf.org/html/rfc3696)). Il existe de nombreuses variantes sur l’adressan et ce qui est considéré comme valide ou non valide. Pour des raisons de simplicité, nous vous recommandons le format et les définitions suivants :
+L’adresse From est définie en détail sur plusieurs RFC (par exemple, les sections RFC 5322 3.2.3, 3.4 et 3.4.1 et [RFC 3696](https://tools.ietf.org/html/rfc3696)). Il existe de nombreuses variantes sur l’adressage et ce qui est considéré comme valide ou non valide. Pour simplifier, nous vous recommandons le format et les définitions suivants :
 
 `From: "Display Name" <EmailAddress>`
 
-- **Nom complet**: expression facultative qui décrit le propriétaire de l’adresse e-mail.
+- **Nom d’affichage** : expression facultative qui décrit le propriétaire de l’adresse e-mail.
 
-  - Nous vous recommandons de toujours entourer le nom complet de guillemets doubles (« ) comme illustré. Si le nom complet contient  une virgule, vous devez mettre la chaîne entre guillemets doubles par RFC 5322.
-  - Si l’adresse De comprend un nom complet, la valeur EmailAddress doit être entre crochets (< >) comme illustré.
-  - Microsoft recommande vivement d’insérer un espace entre le nom complet et l’adresse e-mail.
+  - Nous vous recommandons de toujours placer le nom complet entre guillemets doubles (« ) comme indiqué. Si le nom d’affichage contient une virgule, vous _devez_ placer la chaîne entre guillemets doubles par RFC 5322.
+  - Si l’adresse From inclut un nom d’affichage, la valeur EmailAddress doit être placée entre crochets (< >) comme indiqué.
+  - Microsoft recommande vivement d’insérer un espace entre le nom d’affichage et l’adresse e-mail.
 
-- **EmailAddress**: une adresse de messagerie utilise le format `local-part@domain` :
+- **EmailAddress** : une adresse e-mail utilise le format `local-part@domain`:
 
-  - **partie locale :** chaîne qui identifie la boîte aux lettres associée à l’adresse. Cette valeur est unique dans le domaine. Souvent, le nom d’utilisateur ou le GUID du propriétaire de la boîte aux lettres est utilisé.
-  - **domaine**: nom de domaine complet (FQDN) du serveur de messagerie qui héberge la boîte aux lettres identifiée par la partie locale de l’adresse de messagerie.
+  - **local-part** : chaîne qui identifie la boîte aux lettres associée à l’adresse. Cette valeur est unique dans le domaine. Souvent, le nom d’utilisateur ou le GUID du propriétaire de la boîte aux lettres est utilisé.
+  - **domaine** : nom de domaine complet (FQDN) du serveur de messagerie qui héberge la boîte aux lettres identifiée par la partie locale de l’adresse e-mail.
 
   Voici quelques considérations supplémentaires pour la valeur EmailAddress :
 
-  - Une seule adresse de messagerie.
-  - Nous vous recommandons de ne pas séparer les crochets pointants par des espaces.
+  - Une seule adresse e-mail.
+  - Nous vous recommandons de ne pas séparer les crochets avec des espaces.
   - N’incluez pas de texte supplémentaire après l’adresse e-mail.
 
 ## <a name="examples-of-valid-and-invalid-from-addresses"></a>Exemples d’adresses De valides et non valides
@@ -86,54 +86,54 @@ Les adresses de messagerie De suivantes sont valides :
 
 - `From: "Microsoft 365" <sender@contoso.com>`
 
-- `From: Microsoft 365 <sender@contoso.com>` (Non recommandé, car le nom complet n’est pas entouré de guillemets doubles.)
+- `From: Microsoft 365 <sender@contoso.com>` (Non recommandé, car le nom d’affichage n’est pas placé entre guillemets doubles.)
 
-Les adresses de messagerie De suivantes ne sont pas valides :
+Les adresses de courrier suivantes ne sont pas valides :
 
-- **Adresse De non :** certains messages automatisés n’incluent pas d’adresse de provenance. Dans le passé, lorsque Microsoft 365 ou Outlook.com recevait un message sans adresse de provenance, le service ajoutait l’adresse De : par défaut suivante pour rendre le message livrable :
+- **Non à partir de l’adresse** : certains messages automatisés n’incluent pas d’adresse From. Par le passé, lorsque Microsoft 365 ou Outlook.com recevait un message sans adresse From, le service ajoutait l’adresse par défaut suivante à partir de : pour rendre le message livrable :
 
   `From: <>`
 
-  À présent, les messages dont l’adresse de provenance est vide ne sont plus acceptés.
+  À présent, les messages avec une adresse From vide ne sont plus acceptés.
 
-- `From: Microsoft 365 sender@contoso.com` (Le nom complet est présent, mais l’adresse e-mail n’est pas entre crochets.)
+- `From: Microsoft 365 sender@contoso.com` (Le nom complet est présent, mais l’adresse e-mail n’est pas placée entre crochets.)
 
 - `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)` (Texte après l’adresse e-mail.)
 
-- `From: Sender, Example <sender.example@contoso.com>` (Le nom complet contient une virgule, mais n’est pas entre guillemets doubles.)
+- `From: Sender, Example <sender.example@contoso.com>` (Le nom d’affichage contient une virgule, mais n’est pas placé entre guillemets doubles.)
 
-- `From: "Microsoft 365 <sender@contoso.com>"` (La valeur entière est incorrectement entourée de guillemets doubles.)
+- `From: "Microsoft 365 <sender@contoso.com>"` (La valeur entière est incorrectement placée entre guillemets doubles.)
 
-- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com` (Le nom complet est présent, mais l’adresse e-mail n’est pas entre crochets.)
+- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com` (Le nom complet est présent, mais l’adresse e-mail n’est pas placée entre crochets.)
 
-- `From: Microsoft 365<sender@contoso.com>` (Aucun espace entre le nom d’affichage et le crochet angle gauche.)
+- `From: Microsoft 365<sender@contoso.com>` (Aucun espace entre le nom d’affichage et le crochet gauche.)
 
-- `From: "Microsoft 365"<sender@contoso.com>` (Aucun espace entre les guillemets fermants et le crochet angle gauche.)
+- `From: "Microsoft 365"<sender@contoso.com>` (Aucun espace entre le guillemet double fermant et le crochet gauche.)
 
 ## <a name="suppress-auto-replies-to-your-custom-domain"></a>Supprimer les réponses automatiques à votre domaine personnalisé
 
-Vous ne pouvez pas utiliser la valeur pour `From: <>` supprimer les réponses automatiques. Au lieu de cela, vous devez configurer un enregistrement MX null pour votre domaine personnalisé. Les réponses automatiques (et toutes les réponses) sont supprimées naturellement, car il n’existe aucune adresse publiée à qui le serveur répondant peut envoyer des messages.
+Vous ne pouvez pas utiliser la valeur `From: <>` pour supprimer les réponses automatiques. Au lieu de cela, vous devez configurer un enregistrement MX null pour votre domaine personnalisé. Les réponses automatiques (et toutes les réponses) sont naturellement supprimées, car il n’existe aucune adresse publiée à laquelle le serveur qui répond peut envoyer des messages.
 
-- Choisissez un domaine de messagerie qui ne peut pas recevoir de courrier électronique. Par exemple, si votre domaine principal est contoso.com, vous pouvez choisir noreply.contoso.com.
+- Choisissez un domaine de messagerie qui ne peut pas recevoir d’e-mail. Par exemple, si votre domaine principal est contoso.com, vous pouvez choisir noreply.contoso.com.
 
-- L’enregistrement MX null pour ce domaine se compose d’un point unique.
+- L’enregistrement MX null pour ce domaine se compose d’une seule période.
 
-Par exemple :
+Par exemple :
 
 ```text
 noreply.contoso.com IN MX .
 ```
 
-Pour plus d’informations sur la configuration des enregistrements MX, voir Créer des enregistrements DNS chez un fournisseur d’hébergement [DNS pour Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+Pour plus d’informations sur la configuration des enregistrements MX, consultez [Créer des enregistrements DNS sur n’importe quel fournisseur d’hébergement DNS pour Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
-Pour plus d’informations sur la publication d’un MX null, voir [RFC 7505](https://tools.ietf.org/html/rfc7505).
+Pour plus d’informations sur la publication d’un MX null, consultez [RFC 7505](https://tools.ietf.org/html/rfc7505).
 
-## <a name="override-from-address-enforcement"></a>Remplacer l’application de l’adresse
+## <a name="override-from-address-enforcement"></a>Remplacement de l’application de l’adresse
 
-Pour contourner les exigences d’adresse De pour le courrier entrant, vous pouvez utiliser la liste d’adresses IP (filtrage des connexions) ou les règles de flux de messagerie (également appelées règles de transport) comme décrit dans Créer des listes d’expéditeurs sûrs dans [Microsoft 365](create-safe-sender-lists-in-office-365.md).
+Pour contourner les exigences d’adresse De pour les e-mails entrants, vous pouvez utiliser la liste d’autorisations IP (filtrage de connexion) ou les règles de flux de messagerie (également appelées règles de transport), comme décrit dans [Créer des listes d’expéditeurs sécurisés dans Microsoft 365](create-safe-sender-lists-in-office-365.md).
 
-Vous ne pouvez pas remplacer les exigences d’adresse de provenance pour les messages sortants que vous envoyez depuis Microsoft 365. En outre, Outlook.com n’autorise aucun remplacement, même par le biais de la prise en charge.
+Vous ne pouvez pas remplacer les exigences d’adresse De pour les e-mails sortants que vous envoyez à partir de Microsoft 365. En outre, Outlook.com n’autorise pas les remplacements de quelque nature que ce soit, même par le biais de la prise en charge.
 
-## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Autres méthodes de prévention et de protection contre les cybercriminels dans Microsoft 365
+## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Autres moyens de prévenir et de protéger contre les cybercriminalités dans Microsoft 365
 
-Pour plus d’informations sur la façon de renforcer votre organisation contre le hameçonnage, le courrier indésirable, les violations de données et d’autres menaces, voir les [10](../../admin/security-and-compliance/secure-your-business-data.md)principales façons de sécuriser les Microsoft 365 pour les plans d’entreprise.
+Pour plus d’informations sur la façon dont vous pouvez renforcer votre organisation contre le hameçonnage, le courrier indésirable, les violations de données et d’autres menaces, consultez [les 10 principaux moyens de sécuriser Microsoft 365 pour les plans d’entreprise](../../admin/security-and-compliance/secure-your-business-data.md).

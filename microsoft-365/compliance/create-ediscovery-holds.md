@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez créer une conservation associée à un cas eDiscovery (Standard) dans Microsoft 365 pour conserver le contenu pertinent pour une enquête ou une affaire juridique.
-ms.openlocfilehash: e91e67b39a160de99856d73af8da6ab17d1d6fba
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ddd1b2e62c2ec63dbd2303cadcef6a1d12f4dfc7
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095009"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130908"
 ---
 # <a name="create-an-ediscovery-hold"></a>Créer une suspension de cas eDiscovery
 
@@ -66,7 +66,7 @@ Pour créer une conservation eDiscovery associée à un cas eDiscovery (Standard
    3. **Dossiers publics Exchange** : définissez la bascule sur **Activé** pour mettre tous les dossiers publics en attente dans votre organisation Exchange Online. Vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez le bouton bascule désactivé si vous ne voulez pas maintenir les dossiers publics en attente.
 
    > [!IMPORTANT]
-   > Lorsque vous ajoutez Exchange boîtes aux lettres ou SharePoint sites à une conservation, vous devez ajouter explicitement au moins un emplacement de contenu à la conservation. En d’autres termes, si vous définissez le bouton bascule **sur Activé** pour les boîtes aux lettres ou les sites, vous devez sélectionner des boîtes aux lettres ou des sites spécifiques à ajouter à la conservation. Dans le cas contraire, la conservation eDiscovery est créée, mais aucune boîte aux lettres ou site n’est ajoutée à la conservation, et les statistiques indiquent qu’aucun emplacement ou élément de contenu n’est en attente.
+   > Lorsque vous ajoutez Exchange boîtes aux lettres ou SharePoint sites à une conservation, vous devez ajouter explicitement au moins un emplacement de contenu à la conservation. En d’autres termes, si vous définissez le bouton bascule **sur Activé** pour les boîtes aux lettres ou les sites, vous devez sélectionner des boîtes aux lettres ou des sites spécifiques à ajouter à la conservation. Dans le cas contraire, la conservation eDiscovery sera créée, mais aucune boîte aux lettres ou site ne sera ajouté à la conservation.
 
 8. Lorsque vous avez terminé d’ajouter des emplacements à la conservation, cliquez sur **Suivant**.
 
@@ -94,24 +94,6 @@ Gardez à l’esprit les éléments suivants lorsque vous placez une conservatio
 - Une conservation basée sur une requête conserve initialement tous les documents d’un site pendant une courte période après leur suppression. Cela signifie que lorsqu’un document est supprimé, il est déplacé vers la bibliothèque de conservation, même s’il ne correspond pas aux critères de la conservation basée sur une requête. Toutefois, les documents supprimés qui ne correspondent pas à une conservation basée sur une requête sont supprimés par un travail de minuteur qui traite la bibliothèque de conservation de la conservation. Le travail du minuteur s’exécute régulièrement et compare tous les documents de la bibliothèque de conservation des conservations à vos conservations eDiscovery basées sur une requête (et à d’autres types de conservations et de stratégies de rétention). Le travail du minuteur supprime les documents qui ne correspondent pas à une conservation basée sur une requête et conserve les documents qui le font.
 
 - Les conservations basées sur des requêtes ne doivent pas être utilisées pour effectuer une conservation ciblée, comme la conservation de documents dans un dossier ou un site spécifique ou à l’aide d’autres critères de conservation basés sur l’emplacement. Cela peut avoir des résultats inattendus. Nous vous recommandons d’utiliser des critères de conservation non basés sur un emplacement tels que des mots clés, des plages de dates ou d’autres propriétés de document pour conserver les documents de site.
-
-## <a name="ediscovery-hold-statistics"></a>Statistiques de conservation eDiscovery
-
-Une fois que vous avez créé une conservation eDiscovery, des informations sur la nouvelle conservation s’affichent sur la page de menu volant de la conservation sélectionnée. Ces informations incluent le nombre de boîtes aux lettres et de sites en attente, ainsi que des statistiques sur le contenu qui a été mis en attente, telles que le nombre total et la taille des éléments mis en attente et la dernière fois que les statistiques de conservation ont été calculées. Ces statistiques de conservation vous aident à identifier la quantité de contenu liée au cas en cours de conservation.
-  
-![Conserver les statistiques.](../media/eDiscoveryHoldStatistics.png)
-  
-Gardez à l’esprit les éléments suivants concernant les statistiques de conservation eDiscovery :
-  
-- Le nombre total d’éléments en attente indique le nombre d’éléments provenant de toutes les sources de contenu mises en attente. Si vous avez créé une conservation basée sur une requête, cette statistique indique le nombre d’éléments qui correspondent à la requête.
-
-- Le nombre d’éléments en attente inclut également les éléments non indexés trouvés dans les emplacements de contenu. Si vous créez une conservation basée sur une requête, tous les éléments non indexés dans les emplacements de contenu sont mis en attente. Cela inclut les éléments non indexés qui ne correspondent pas aux critères de recherche d’une conservation basée sur une requête et aux éléments non indexés qui peuvent se trouver en dehors d’une condition de plage de dates. Cela est différent de ce qui se produit lorsque vous exécutez une recherche, dans laquelle les éléments non indexés qui ne correspondent pas à la requête de recherche ou qui sont exclus par une condition de plage de dates ne sont pas inclus dans les résultats de la recherche. Pour plus d’informations sur les éléments non indexés, consultez [Éléments partiellement indexés](partially-indexed-items-in-content-search.md).
-
-- Vous pouvez obtenir les dernières statistiques de conservation en cliquant sur **Mettre à jour les statistiques** pour réexécuter une estimation de recherche qui calcule le nombre actuel d’éléments en attente.
-
-- Il est normal que le nombre d’éléments en attente augmente au fil du temps, car les utilisateurs dont la boîte aux lettres ou le site est en attente envoient ou reçoivent généralement de nouveaux messages électroniques et créent de nouveaux documents dans SharePoint et OneDrive.
-
-- Si une boîte aux lettres Exchange, un site SharePoint ou un compte OneDrive est déplacé vers une autre région dans un environnement multigéographique, les statistiques de ce site ne sont pas incluses dans les statistiques de conservation. Toutefois, le contenu de ces emplacements sera conservé. En outre, si une boîte aux lettres ou un site est déplacé vers une autre région, l’adresse SMTP ou l’URL affichée dans la conservation ne sera pas automatiquement mise à jour. Vous devrez modifier la conservation et mettre à jour l’URL ou l’adresse SMTP afin que les emplacements de contenu soient à nouveau inclus dans les statistiques de conservation
 
 ## <a name="search-locations-on-ediscovery-hold"></a>Emplacements de recherche dans la conservation eDiscovery
 

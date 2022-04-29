@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Utilisez la vue simplifiée de Microsoft 365 pour gérer les tâches courantes ou la vue tableau de bord pour les paramètres et les tâches plus complexes.
-ms.openlocfilehash: 92d6188ee843d9c3148e1036894ab9a3819247af
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b75a4e63b313654be68d9569daa497a738520bbc
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315930"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128824"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Vue d’ensemble du centre d’administration Microsoft 365
 
@@ -106,6 +106,41 @@ Si vous ne savez pas qui contacter au sein de votre entreprise ou établissement
 > [!NOTE]
 > Les administrateurs de versions ciblées ont d’abord accès aux nouvelles fonctionnalités. De nouvelles fonctionnalités sont déployées ultérieurement pour tous les administrateurs. Il est donc possible que le centre d'administration n'apparaisse pas ou soit différent de ce que décrivent les articles d'aide. Pour être parmi les premiers à voir les nouvelles fonctionnalités, consultez Participer au Centre d’administration, ci-dessous.
 
+## <a name="admin-center-features-and-settings"></a>Fonctionnalités et paramètres du centre d’administration
+
+Les fonctionnalités et paramètres suivants sont disponibles dans la barre de navigation gauche du centre d'administration. En savoir plus sur les tâches d’administration dans [aide de l’administrateur](Vue d’ensemble du Centre d'administration Microsoft 365](admin-center-overview.md).
+
+<br>
+
+****
+
+|Menu|Objet|
+|-----|-----|
+|**Accueil**|Il s'agit de la page d'accueil du Centre d'administration. Vous allez découvrir comment gérer les utilisateurs, la facturation, l'état d'intégrité des services et les rapports.|
+|**Utilisateurs**|Créer et gérer des utilisateurs dans votre organisation, tels que des employés ou des étudiants. Vous pouvez également définir leur niveau d’autorisation ou réinitialiser leur mot de passe.|
+|**Groupes**|Créez et gérez des groupes dans votre organisation, tels qu’un groupe Microsoft 365, un groupe de distribution, un groupe de sécurité ou une boîte aux lettres partagée. Découvrez comment [créer](../create-groups/create-groups.md) et [gérer](../create-groups/manage-groups.md) des groupes .  |
+|**Resources**|Créer et gérer des ressources (par exemple, collection de sites SharePoint). Découvrez comment [créer des collections de sites](/sharepoint/create-site-collection).  |
+|**Facturation**|Affichez, achetez ou annulez des abonnements pour votre organisation. Affichez les relevés de facturation passés ou le nombre de licences attribuées à des utilisateurs individuels. Découvrez comment [gérer la facturation](../../commerce/index.yml).  |
+|**Support**|Afficher les demandes de service existantes ou créez-en de nouvelles. Apprenez-en davantage dans [Contacter le support relatif aux produits d’entreprises- Aide de l’administrateur](../../business-video/get-help-support.md).|
+|**Settings**|Gérer les paramètres globaux des applications telles que le courrier, les sites et la suite Office. Modifier la stratégie de mot de passe et la date d'expiration. Ajouter et mettre à jour des noms de domaine (par exemple, contoso.com). Modifier le profil de votre organisation et vos préférences de publication. Choisir si les partenaires peuvent accéder à votre Centre d'administration.|
+|**Configuration**|Gérer les domaines existants, activer et gérer l’authentification multifacteur, gérer l’accès administrateur, migrer les boîtes aux lettres d’utilisateurs vers Office 365, gérer les mises à jour de fonctionnalités et aider les utilisateurs à installer leurs applications Office.|
+|**Rapports**|Découvrez en un coup d’œil comment votre organisation utilise Microsoft 365 avec des rapports détaillés sur l’utilisation de la messagerie électronique, les activations d’Office, etc. Découvrez comment utiliser les nouveaux [rapports d’activité](../activity-reports/activity-reports.md).  |
+|**État d'intégrité**|Affichez l’intégrité en un clin d’œil. Vous pouvez également consulter d’autres informations et l’historique d’intégrité. Pour plus d’informations, consultez [Comment vérifier l’intégrité du service](../../enterprise/view-service-health.md) et [Comment vérifier l’intégrité des versions de Windows](/windows/deployment/update/check-release-health). <p>Utilisez le Centre de messages pour suivre les modifications à venir des fonctionnalités et services. Nous y publions des annonces contenant des informations qui vous aideront à planifier les changements et à comprendre comment ceux-ci peuvent affecter les utilisateurs. Pour plus d’informations, consultez [Centre de messages](../manage/message-center.md).|
+|**Centres d’administration**|Ouvrez des centres d'administration distincts pour Exchange, Skype Entreprise, Yammer, SharePoint et Azure AD. Chaque centre d'administration inclut tous les paramètres disponibles pour le service concerné.  <p> Par exemple, dans le Centre d’administration Exchange, configurez et gérez le courrier électronique, les calendriers, les groupes de distribution, etc. Dans le Centre d’administration SharePoint, créez et gérez les collections de sites, les paramètres de site et OneDrive Entreprise. Dans le Centre d’administration Skype Entreprise, configurez les notifications de messagerie instantanée, la conférence rendez-vous et la présence en ligne.  <p> En savoir plus sur le [Centre d'administration Exchange](/exchange/exchange-admin-center) et le [Centre d'administration SharePoint](/sharepoint/sharepoint-online). <p> **Remarque :** les centres d'administration disponibles dépendent de votre plan et de votre région.|
+|
+
+## <a name="common-tasks-in-the-admin-center"></a>Tâches courantes dans le Centre d’administration
+
+- Gérer les utilisateurs : [Ajouter des utilisateurs et attribuer des licences en même temps](../add-users/add-users.md), [Supprimer ou restaurer des utilisateurs](../add-users/delete-a-user.md)ou [Réinitialiser le mot de passe d’un utilisateur](../add-users/reset-passwords.md).
+
+- Accéder à l’aide concernant la facturation : [Facturation](../../commerce/index.yml)
+
+- Consulter des rapports d’activité : [Rapports d’activité](../activity-reports/activity-reports.md)
+
+- [Créer un groupe Microsoft 365 ](../create-groups/create-groups.md)
+
+- [Gérer un groupe Microsoft 365](../create-groups/manage-groups.md)
+
 ## <a name="turn-on-targeted-release"></a>Activer la publication ciblée
 
 1. Connectez-vous à [admin.microsoft.com](https://admin.microsoft.com), accédez au volet de navigation et sélectionnez **Paramètres** > **Paramètres de l’organisation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank"> onglet **Profil d’organisation**</a>.
@@ -130,7 +165,7 @@ Microsoft 365 est une solution intelligente, incluant Office 365, Windows 10 et 
 - Microsoft 365 Entreprise E3
 - Microsoft 365 Entreprise E5
 
-Pour plus d’informations, voir [Try or buy a Microsoft 365 for business subscription](../../commerce/try-or-buy-microsoft-365.md). 
+Pour plus d’informations, consultez [Essayer ou acheter un abonnement Microsoft 365 entreprise](../../commerce/try-or-buy-microsoft-365.md). 
 
 ### <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>J’ai trouvé un bogue ou je souhaite demander une amélioration des fonctionnalités. Comment le faire savoir à Microsoft ?
 

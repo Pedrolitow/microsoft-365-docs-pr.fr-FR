@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez la page Locataires.
-ms.openlocfilehash: 7b8e26ddbe68059a9c5ecf4d5e396fd11c49be71
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 0f25f8bb02c6957598b2b328bc7832c429ca1e7a
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023280"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128371"
 ---
 # <a name="overview-of-the-tenants-page-in-microsoft-365-lighthouse"></a>Vue d’ensemble de la page Locataires dans Microsoft 365 Lighthouse
 
@@ -52,11 +52,13 @@ La liste des locataires vous permet de :
 
 Pour désactiver le locataire ou afficher et gérer les balises, sélectionnez les trois points (autres actions) en regard du nom du locataire. Vous pouvez afficher des locataires individuels en sélectionnant le nom du locataire ou en sélectionnant l’une des balises affectées au locataire.
 
+Pour plus d’informations sur l’ajout de locataires, consultez [Ajouter et gérer plusieurs locataires dans votre compte Espace partenaires](/partner-center/multi-tenant-account).
+
 ## <a name="tenant-status"></a>État du client
 
-Le tableau suivant présente les différents états et leur signification.<br><br>
+Le tableau suivant présente les différents états et leur signification. Pour plus d’informations sur la résolution des problèmes liés à l’état du locataire client, consultez [Résolution des problèmes et des messages d’erreur dans Microsoft 365 Lighthouse : Intégration du locataire client](m365-lighthouse-troubleshoot.md#customer-tenant-onboarding).<br><br>
 
-| Statut                                   | Description                                                                                             |
+| État                                   | Description                                                                                             |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Actif                                   | L’intégration des locataires et le flux de données ont démarré.                                                           |
 | Inactif                                 | Le locataire a été désinsgré à la demande du MSP et n’est plus géré dans Lighthouse.           |
@@ -131,7 +133,7 @@ L’onglet Plans de déploiement comprend également les options suivantes :
 - **Actualiser:** Sélectionnez cette option pour récupérer les données d’étape de déploiement les plus actuelles.
 - **Rechercher:** Entrez des mots clés pour localiser rapidement une étape de déploiement spécifique dans la liste.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Configuration requise pour Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\
 [MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)\

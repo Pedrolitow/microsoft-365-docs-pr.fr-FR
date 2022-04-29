@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: De nombreux types d’informations sensibles sont prêts à être utilisés dans vos stratégies DLP. Cet article répertorie tous ces types d’informations sensibles et montre ce qu’une stratégie DLP recherche lorsqu’elle détecte chaque type.
-ms.openlocfilehash: 6074082812853469e0513d67ec68519eb2a89563
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: af2cbd03de426aa34b9db82691a22684c4c1df0b
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970656"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130799"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Définitions d’entités des types d’informations sensibles
 
@@ -2408,7 +2408,7 @@ Cette entité nommée non groupée détecte les termes liés aux tests sanguins,
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Importante
+Élevé
 
 ## <a name="brand-medication-names"></a>Noms des médicaments de marque
 
@@ -2416,7 +2416,7 @@ Cette entité nommée non groupée détecte les noms des médicaments de marque,
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Importante
+Élevé
 
 ## <a name="brazil-cpf-number"></a>Numéro CPF du Brésil
 
@@ -5524,7 +5524,7 @@ Cette entité nommée non groupée détecte le texte qui correspond aux noms de 
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Importante
+Élevé
 
 ## <a name="drug-enforcement-agency-dea-number"></a>Numéro de la Drug Enforcement Agency (DEA)
 
@@ -7458,7 +7458,7 @@ Cette entité nommée non regroupée détecte les noms des médicaments généri
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Importante
+Élevé
 
 ## <a name="germany-drivers-license-number"></a>Numéro de permis de conduire en Allemagne
 
@@ -9029,7 +9029,7 @@ Cette entité nommée non regroupée détecte les noms des déficiences réperto
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Importante
+Élevé
 
 ## <a name="india-drivers-license-number"></a>Numéro de permis de conduire en Inde
 
@@ -9607,9 +9607,9 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords"></a>Mots clés
 
-Tout terme du dictionnaire de mots clés Dictionary_icd_10_updated, qui est basé sur la [classification internationale des maladies, dixième révision, modification clinique (ICD-10-CM).](https://go.microsoft.com/fwlink/?linkid=852604) Ce type recherche uniquement le terme, pas les codes d’assurance.
+Tout terme du dictionnaire de mots clés Dictionary_icd_10_updated, qui est basé sur la [classification internationale des maladies, dixième révision, modification clinique (ICD-10-CM).](https://icd10cmtool.cdc.gov/) Ce type recherche uniquement le terme, pas les codes d’assurance.
 
-Tout terme du dictionnaire de mots clés Dictionary_icd_10_codes, qui est basé sur la [classification internationale des maladies, dixième révision, modification clinique (ICD-10-CM).](https://go.microsoft.com/fwlink/?linkid=852604) Ce type recherche uniquement les codes d’assurance, pas la description.
+Tout terme du dictionnaire de mots clés Dictionary_icd_10_codes, qui est basé sur la [classification internationale des maladies, dixième révision, modification clinique (ICD-10-CM).](https://icd10cmtool.cdc.gov/) Ce type recherche uniquement les codes d’assurance, pas la description.
 
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>Classification internationale des maladies (ICD-9-CM)
 
@@ -11220,7 +11220,7 @@ Cette entité nommée non regroupée détecte les termes liés aux tests en labo
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Importante
+Élevé
 
 ## <a name="latvia-drivers-license-number"></a>Numéro de permis de conduire letton
 
@@ -11626,7 +11626,7 @@ Cette entité nommée non regroupée détecte les termes liés aux modes de vie 
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Importante
+Élevé
 
 ## <a name="lithuania-drivers-license-number"></a>Numéro de permis de conduire en Lituanie
 
@@ -12882,7 +12882,7 @@ Cette entité nommée non groupée détecte les termes liés aux spécialités m
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Importante
+Élevé
 
 ## <a name="medicare-beneficiary-identifier-mbi-card"></a>Carte d’identificateur du bénéficiaire de l’assurance-maladie (MBI)
 
@@ -16904,7 +16904,7 @@ Ce type d’informations sensibles identifie ces mots clés à l’aide d’une 
 
 - Mot de passe ou pwd suivi de 0-2 espaces, d’un signe égal (=), de 0 à 2 espaces et d’un astérisque (*) -OR-
 - Mot de passe ou pwd suivi de :
-    - Signe égal (=)
+    - Un signe égal (=)
     - Symbole inférieur à (<)
     - Toute combinaison de 1 à 200 caractères qui sont des lettres majuscules ou minuscules, des chiffres, un astérisque (*), un trait d’union (-), un trait d’union (_), un trait de soulignement (_) ou un caractère d’espace blanc
     - Supérieur au symbole (>)
@@ -16929,7 +16929,7 @@ Cette entité nommée non regroupée détecte les termes liés aux procédures c
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Importante
+Élevé
 
 ## <a name="sweden-drivers-license-number"></a>Numéro de permis de conduire en Suède
 
@@ -17795,7 +17795,7 @@ Cette entité nommée non regroupée détecte les noms des médicaments, tels qu
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Importante
+Élevé
 
 ## <a name="uk-drivers-license-number"></a>ROYAUME-UNI. numéro de permis de conduire
 

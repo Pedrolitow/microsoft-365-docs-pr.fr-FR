@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Découvrez comment utiliser les limites de conformité pour créer des limites logiques qui contrôlent les emplacements de contenu utilisateur qu’un gestionnaire eDiscovery peut rechercher dans Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36a7f1e679f404a77b61c30b8efef7875558fee9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 52f4a66ffbab37109e7503181548b1de4ffac87a
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099188"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128780"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurer les limites de conformité pour les investigations eDiscovery
 
@@ -133,7 +133,7 @@ Voici une description de chaque paramètre dans la commande :
 
   - `Mailbox`: spécifie les boîtes aux lettres ou les comptes OneDrive que les groupes de rôles définis dans le `Users` paramètre peuvent rechercher. Ce filtre permet aux membres du groupe de rôles de rechercher uniquement les boîtes aux lettres ou les comptes OneDrive dans une agence spécifique ; par exemple, `"Mailbox_Department -eq 'FourthCoffee'"`.
 
-  - `SiteContent`: ce filtre comprend deux filtres distincts. La première `SiteContent_Path` spécifie les sites SharePoint dans l’agence que les groupes de rôles définis dans le `Users` paramètre peuvent rechercher. Par exemple, `SiteContent_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee'`. Le deuxième `SiteContent_Path` filtre (connecté au premier `SiteContent_Path` filtre par l’opérateur`or`) spécifie le domaine OneDrive de l’agence (également appelé domaine *MySite*). Par exemple, `SiteContent_Path -like 'https://contoso-my.sharepoint.com/personal'`. Vous pouvez également utiliser le filtre à la `Site_Path` place du `SiteContent` filtre. Les `Site` filtres et `SiteContent` les filtres sont interchangeables et n’affectent pas les filtres d’autorisations de recherche décrits dans cet article.
+  - `SiteContent`: ce filtre comprend deux filtres distincts. La première `SiteContent_Path` spécifie les sites SharePoint dans l’agence que les groupes de rôles définis dans le `Users` paramètre peuvent rechercher. Par exemple : `SiteContent_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee'`. Le deuxième `SiteContent_Path` filtre (connecté au premier `SiteContent_Path` filtre par l’opérateur`or`) spécifie le domaine OneDrive de l’agence (également appelé domaine *MySite*). Par exemple : `SiteContent_Path -like 'https://contoso-my.sharepoint.com/personal'`. Vous pouvez également utiliser le filtre à la `Site_Path` place du `SiteContent` filtre. Les `Site` filtres et `SiteContent` les filtres sont interchangeables et n’affectent pas les filtres d’autorisations de recherche décrits dans cet article.
 
     > [!IMPORTANT]
     > Pourquoi le `SiteContent` filtre pour OneDrive est-il inclus dans le filtre d’autorisations de recherche précédent ? Bien que le filtre s’applique à la `Mailbox` *fois* aux boîtes aux lettres et aux comptes OneDrive, l’inclusion du filtre SharePoint exclut OneDrive comptes si vous n’incluez pas également le filtre OneDrive`Site`. Si le filtre d’autorisations de recherche n’incluait pas de filtre de SharePoint, vous n’auriez pas à inclure un filtre de OneDrive distinct, car le filtre de boîte aux lettres inclurait OneDrive comptes dans l’étendue de la limite de conformité. En d’autres termes, un filtre d’autorisations de recherche avec uniquement le `Mailbox` filtre inclut les boîtes aux lettres et les comptes OneDrive.
@@ -285,8 +285,6 @@ Gardez à l’esprit les limitations suivantes lors de la gestion des cas eDisco
 - Lors de la création et de l’exécution d’une recherche, vous pouvez sélectionner des emplacements de contenu extérieurs à votre organisation. Toutefois, en raison du filtre d’autorisation de recherche, le contenu de ces emplacements n’est pas inclus dans les résultats de recherche.
 
 - Les limites de conformité ne s’appliquent pas aux conservations dans les cas eDiscovery. Cela signifie qu’un gestionnaire eDiscovery dans une agence peut placer un utilisateur dans une autre agence en attente. Toutefois, la limite de conformité est appliquée si le gestionnaire eDiscovery recherche les emplacements du contenu de l'utilisateur mis en attente. Cela signifie que le gestionnaire eDiscovery ne pourra pas effectuer de recherche dans les emplacements de contenu des utilisateurs, même s’il a pu mettre l’utilisateur en attente.
-
-    De plus, les statistiques de conservation s’appliquent uniquement aux emplacements de contenu au sein de l’agence.
 
 - Si un filtre d’autorisations de recherche (boîte aux lettres ou filtre de site) vous est attribué et que vous essayez d’exporter des éléments non indexés pour une recherche qui inclut tous les sites SharePoint de votre organisation, vous recevrez le message d’erreur suivant : `Unable to execute the task. Reason: The scope options UnindexedItemsOnly or BothIndexedandUnindexedItems are not allowed when the executing user has a compliance security filter applied`. Si un filtre d’autorisations de recherche vous est attribué et que vous souhaitez exporter des éléments non indexés à partir de SharePoint, vous devrez réexécuter la recherche et inclure des sites SharePoint spécifiques à rechercher. Sinon, vous ne pourrez exporter des éléments indexés qu’à partir d’une recherche qui inclut tous les sites SharePoint. Pour plus d’informations sur les options lorsque vous exportez des résultats de recherche, consultez [Exporter les résultats de la recherche de contenu](export-search-results.md#step-1-prepare-search-results-for-export).
 

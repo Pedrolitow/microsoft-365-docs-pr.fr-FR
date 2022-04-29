@@ -16,19 +16,19 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a0f499a08288735d5f0d75e7111ec0b6360908a8
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: b467d87f16900375ca2db2f8478bf001780c9059
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664521"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130338"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Déployer manuellement Microsoft Defender pour point de terminaison sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -323,12 +323,12 @@ Téléchargez le package d’intégration à partir du portail Microsoft 365 Def
 
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
-    inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
+    inflating: MicrosoftDefenderATPOnboardingLinuxServer.sh
     ```
 
 ## <a name="client-configuration"></a>Configuration du client
 
-1. Copiez MicrosoftDefenderATPOnboardingLinuxServer.py sur l’appareil cible.
+1. Copiez MicrosoftDefenderATPOnboardingLinuxServer.sh sur l’appareil cible.
 
     > [!NOTE]
     > Initialement, l’appareil client n’est pas associé à une organisation et l’attribut *orgId* est vide.
@@ -337,21 +337,10 @@ Téléchargez le package d’intégration à partir du portail Microsoft 365 Def
     mdatp health --field org_id
     ```
 
-2. Exécutez MicrosoftDefenderATPOnboardingLinuxServer.py.
-
-    > [!NOTE]
-    > Pour exécuter cette commande, vous devez l’avoir `python`  ou `python3` l’installer sur l’appareil en fonction de la disto et de la version. Si nécessaire, consultez [l’instruction pas à pas pour installer Python sur Linux](https://opensource.com/article/20/4/install-python-linux).
-    
-    Si vous exécutez RHEL 8.x ou Ubuntu 20.04 ou version ultérieure, vous devez utiliser `python3`.
+2. Exécutez MicrosoftDefenderATPOnboardingLinuxServer.sh.
 
     ```bash
-    sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
-    ```
-
-    Pour le reste des distributions et des versions, vous devez utiliser `python`.
-    
-    ```bash
-    sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
+    sudo bash MicrosoftDefenderATPOnboardingLinuxServer.sh
     ```
     
 3. Vérifiez que l’appareil est maintenant associé à votre organisation et signale un identificateur d’organisation valide :

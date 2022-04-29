@@ -19,12 +19,12 @@ ms.collection:
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Defender pour Office 365 ? Quelles sont les recommandations actuelles en matière de protection standard ? Que faut-il utiliser si vous voulez être plus strict ? Et quels extras obtenez-vous si vous utilisez également Defender pour Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a5e18547a26d688238f5d4be94520d4e68c9ff4
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 72d4f64ca00defe26ddaff7fe27d641cb65f13be
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916334"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130514"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour EOP et pour la sécurité Microsoft Defender pour Office 365
 
@@ -43,10 +43,16 @@ Pour appliquer automatiquement les paramètres Standard ou Strict aux utilisateu
 
 Cet article décrit les paramètres par défaut, ainsi que les paramètres Standard et Strict recommandés pour protéger vos utilisateurs. Les tables contiennent les paramètres dans le portail Microsoft 365 Defender et PowerShell (Exchange Online PowerShell ou autonome Exchange Online Protection PowerShell pour les organisations sans boîtes aux lettres Exchange Online).
 
-> [!TIP]
-> Vous ne pouvez pas modifier les paramètres Standard et Strict recommandés dans le portail Microsoft 365 Defender. Pour modifier les valeurs recommandées telles que **Activer la protection des utilisateurs**, vous devez utiliser [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
->
+> [!NOTE]
 > Le Office 365 module ORCA (Advanced Threat Protection Recommended Configuration Analyzer) pour PowerShell peut vous aider (administrateurs) à trouver les valeurs actuelles de ces paramètres. Plus précisément, l’applet de commande **Get-ORCAReport** génère une évaluation des paramètres anti-courrier indésirable, anti-hameçonnage et autres paramètres d’hygiène des messages. Vous pouvez télécharger le module ORCA à l’adresse <https://www.powershellgallery.com/packages/ORCA/>.
+>
+> Dans Microsoft 365 organisations, nous vous recommandons de laisser le filtre de courrier indésirable dans Outlook défini sur **Aucun filtrage automatique** pour éviter les conflits inutiles (positifs et négatifs) avec les verdicts de filtrage du courrier indésirable d’EOP. Si vous souhaitez en savoir plus, consultez les articles suivants :
+>
+> - [Configurer les paramètres du courrier indésirable dans les boîtes aux lettres Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md)
+> - [À propos des paramètres de courrier indésirable dans Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)
+> - [Modifier le niveau de protection dans le filtre courrier indésirable](https://support.microsoft.com/en-us/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)
+> - [Créer des listes d’expéditeurs fiables dans EOP](create-safe-sender-lists-in-office-365.md)
+> - [Créer des listes d’expéditeurs bloqués dans EOP](create-block-sender-lists-in-office-365.md)
 
 ## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>Protection anti-courrier indésirable, anti-programme malveillant et anti-hameçonnage dans EOP
 
@@ -117,8 +123,8 @@ Pour plus d’informations sur les limites d’envoi par défaut dans le service
 |Nom de la fonctionnalité de sécurité|Valeur par défaut|Recommandé<br/>Standard|Recommandé<br/>Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Définir une limite de messages externes** <br/><br/> _RecipientLimitExternalPerHour_|0|500|400|La valeur par défaut 0 signifie utiliser les valeurs par défaut du service.|
-|**Définir une limite de messages internes** <br/><br/> _RecipientLimitInternalPerHour_|0|1000|800|La valeur par défaut 0 signifie utiliser les valeurs par défaut du service.|
-|**Définir une limite quotidienne de messages** <br/><br/> _RecipientLimitPerDay_|0|1000|800|La valeur par défaut 0 signifie utiliser les valeurs par défaut du service.|
+|**Définir une limite de messages internes** <br/><br/> _RecipientLimitInternalPerHour_|0|1 000|800|La valeur par défaut 0 signifie utiliser les valeurs par défaut du service.|
+|**Définir une limite quotidienne de messages** <br/><br/> _RecipientLimitPerDay_|0|1 000|800|La valeur par défaut 0 signifie utiliser les valeurs par défaut du service.|
 |**Restriction imposée aux utilisateurs qui atteignent la limite de messages** <br/><br/> _ActionWhenThresholdReached_|**Empêcher l’utilisateur d’envoyer des messages électroniques jusqu’au lendemain** <br/><br/> `BlockUserForToday`|**Empêcher l’utilisateur d’envoyer des messages** <br/><br/> `BlockUser`|**Empêcher l’utilisateur d’envoyer des messages** <br/><br/> `BlockUser`||
 |**Règles de transfert automatique** <br/><br/> _AutoForwardingMode_|**Automatique - Contrôlé par le système** <br/><br/> `Automatic`|**Automatique - Contrôlé par le système** <br/><br/> `Automatic`|**Automatique - Contrôlé par le système** <br/><br/> `Automatic`|
 |**Envoyer une copie des messages sortants qui dépassent ces limites à ces utilisateurs et groupes** <br/><br/> _BccSuspiciousOutboundMail_ <br/><br/> _BccSuspiciousOutboundAdditionalRecipients_|Non sélectionnée <br/><br/> `$false` <br/><br/> Vide|Non sélectionnée <br/><br/> `$false` <br/><br/> Vide|Non sélectionnée <br/><br/> `$false` <br/><br/> Vide|Nous n’avons aucune recommandation spécifique pour ce paramètre. <br/><br/> Ce paramètre fonctionne uniquement dans la stratégie de courrier indésirable sortant par défaut. Cela ne fonctionne pas dans les stratégies de courrier indésirable sortant personnalisées que vous créez.|
@@ -147,7 +153,7 @@ Pour créer et configurer des stratégies anti-programme malveillant, consultez 
 |**À partir du nom** <br/><br/> _CustomFromName_|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`||
 |**Adresse de provenance** <br/><br/> _CustomFromAddress_|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`||
 |**Personnaliser les notifications pour les messages des expéditeurs internes**||||Ces paramètres sont utilisés uniquement si **l’option Avertir les expéditeurs internes lorsque des messages sont mis en quarantaine en tant que programmes malveillants** ou **si l’option Informer un administrateur des messages non remis provenant d’expéditeurs internes** est sélectionnée.|
-|**Subject** <br/><br/> _CustomInternalSubject_|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`||
+|**Sujet** <br/><br/> _CustomInternalSubject_|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`||
 |**Message** <br/><br/> _CustomInternalBody_|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`||
 |**Personnaliser les notifications pour les messages des expéditeurs externes**||||Ces paramètres sont utilisés uniquement si **l’option Avertir les expéditeurs externes lorsque des messages sont mis en quarantaine en tant que programmes malveillants** ou **si l’option Informer un administrateur des messages non remis provenant d’expéditeurs externes** est sélectionnée.|
 |**Sujet** <br/><br/> _CustomExternalSubject_|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`||
@@ -311,27 +317,27 @@ Dans PowerShell, vous utilisez les applets de commande [New-SafeLinksPolicy](/po
 |---|:---:|:---:|:---:|:---:|---|
 |**URL & cliquez sur les paramètres de protection**||||||
 |**Action sur les URL potentiellement malveillantes dans les e-mails**||||||
-|**Activé : Coffre liens vérifie une liste de liens connus et malveillants lorsque les utilisateurs cliquent sur des liens dans l’e-mail** <br/><br/> _EnableSafeLinksForEmail_|Non sélectionnée <br/><br/> `$false`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`||
-|**Appliquer Coffre liens vers les messages électroniques envoyés au sein de l’organisation** <br/><br/> _EnableForInternalSenders_|Non sélectionnée <br/><br/> `$false`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`||
+|**Activé : Liens fiables vérifie une liste de liens malveillants connus lorsque les utilisateurs cliquent sur des liens dans l’e-mail** <br/><br/> _EnableSafeLinksForEmail_|Non sélectionnée <br/><br/> `$false`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`||
+|**Appliquer des liens sécurisés aux messages électroniques envoyés au sein de l’organisation** <br/><br/> _EnableForInternalSenders_|Non sélectionnée <br/><br/> `$false`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`||
 |**Appliquer l’analyse d’URL en temps réel pour les liens suspects et les liens qui pointent vers des fichiers** <br/><br/> _ScanUrls_|Non sélectionnée <br/><br/> `$false`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`||
 |**Attendre la fin de l’analyse de l’URL avant de remettre le message** <br/><br/> _DeliverMessageAfterScan_|Non sélectionnée <br/><br/> `$false`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`||
-|**Ne réécrivez pas d’URL, effectuez des vérifications via l’API Coffre Links uniquement** <br/><br/> _DisableURLRewrite_|Non sélectionnée <br/><br/> `$false`|Sélectionné <br/><br/> `$true`|Non sélectionnée <br/><br/> `$false`|Non sélectionnée <br/><br/> `$false`||
-|**Ne réécrivez pas les URL suivantes dans l’e-mail** <br/><br/> _DoNotRewriteUrls_|Non sélectionnée <br/><br/> Blanc|Non sélectionnée <br/><br/> Blanc|Non sélectionnée <br/><br/> Blanc|Non sélectionnée <br/><br/> Blanc|Nous n’avons aucune recommandation spécifique pour ce paramètre. Pour plus d’informations, consultez [les listes « Ne pas réécrire les URL suivantes » dans les stratégies Coffre Liens](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).|
+|**Ne réécrivez pas d’URL, effectuez des vérifications via l’API Liens fiables uniquement** <br/><br/> _DisableURLRewrite_|Non sélectionnée <br/><br/> `$false`|Sélectionné <br/><br/> `$true`|Non sélectionnée <br/><br/> `$false`|Non sélectionnée <br/><br/> `$false`||
+|**Ne réécrivez pas les URL suivantes dans l’e-mail** <br/><br/> _DoNotRewriteUrls_|Non sélectionnée <br/><br/> Blanc|Non sélectionnée <br/><br/> Blanc|Non sélectionnée <br/><br/> Blanc|Non sélectionnée <br/><br/> Blanc|Nous n’avons aucune recommandation spécifique pour ce paramètre. Pour plus d’informations, consultez [les listes « Ne pas réécrire les URL suivantes » dans les stratégies liens fiables](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).|
 |**Action pour les URL potentiellement malveillantes dans Microsoft Teams**||||||
-|**Activé : Coffre Liens vérifie une liste de liens malveillants connus lorsque les utilisateurs cliquent sur des liens dans Microsoft Teams** <br/><br/> _EnableSafeLinksForTeams_|Non sélectionnée <br/><br/> `$false`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`||
+|**Activé : Liens fiables vérifie une liste de liens malveillants connus lorsque les utilisateurs cliquent sur des liens dans Microsoft Teams** <br/><br/> _EnableSafeLinksForTeams_|Non sélectionnée <br/><br/> `$false`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`||
 |**Cliquer sur les paramètres de protection**||||||
 |**Suivre les clics de l’utilisateur** <br/><br/> _TrackUserClicks_|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`||
 |**Permettre aux utilisateurs de cliquer sur l’URL d’origine** <br/><br/> _AllowClickThrough_|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`|Non sélectionnée <br/><br/> `$false`|Non sélectionnée <br/><br/> `$false`|La désactivation de ce paramètre (en définissant _AllowClickThrough_ sur `$false`) empêche le clic sur l’URL d’origine.|
 |**Afficher la personnalisation de l’organisation sur les pages de notification et d’avertissement** <br/><br/> _EnableOrganizationBranding_|Non sélectionnée <br/><br/> `$false`|Non sélectionnée <br/><br/> `$false`|Non sélectionnée <br/><br/> `$false`|Non sélectionnée <br/><br/> `$false`|Nous n’avons aucune recommandation spécifique pour ce paramètre. <br/><br/> Avant d’activer ce paramètre, vous devez suivre les instructions fournies dans [Personnaliser le thème Microsoft 365 pour que votre organisation](../../admin/setup/customize-your-organization-theme.md) charge le logo de votre entreprise.|
 |**Notification**||||||
-|**Comment voulez-vous informer vos utilisateurs ?**|**Utiliser le texte de notification par défaut**|**Utiliser le texte de notification par défaut**|**Utiliser le texte de notification par défaut**|**Utiliser le texte de notification par défaut**|Nous n’avons aucune recommandation spécifique pour ce paramètre. <br/><br/> Vous pouvez sélectionner **Utiliser le texte de notification personnalisé** (_CustomNotificationText_) pour entrer le texte de notification personnalisé à utiliser. Vous pouvez également sélectionner **Utiliser Traducteur Microsoft pour la localisation automatique** (_UseTranslatedNotificationText_) pour traduire le texte de notification personnalisé dans la langue de l’utilisateur.
+|**Comment voulez-vous informer vos utilisateurs ?**|**Utiliser le texte de notification par défaut**|**Utiliser le texte de notification par défaut**|**Utiliser le texte de notification par défaut**|**Utiliser le texte de notification par défaut**|Nous n’avons aucune recommandation spécifique pour ce paramètre. <br/><br/> Vous pouvez sélectionner **Utiliser le texte de notification personnalisé** (_CustomNotificationText_) pour entrer le texte de notification personnalisé à utiliser. Vous pouvez également sélectionner **Utiliser Microsoft Translator pour la localisation automatique** (_UseTranslatedNotificationText_) pour traduire le texte de notification personnalisé dans la langue de l’utilisateur.
 
 ## <a name="related-articles"></a>Articles connexes
 
-- Recherchez-vous des meilleures pratiques pour **Exchange règles de flux de courrier (également appelées règles de transport**) ? Consultez [les meilleures pratiques pour configurer les règles de flux de messagerie dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
+- Recherchez-vous les meilleures pratiques pour **les règles de flux de messagerie Exchange (également appelées règles de transport**) ? Consultez [les meilleures pratiques pour configurer les règles de flux de messagerie dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
 
 - Les administrateurs et les utilisateurs peuvent envoyer des faux positifs (bon e-mail marqué comme mauvais) et des faux négatifs (e-mail incorrect autorisé) à Microsoft à des fins d’analyse. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
-- Utilisez ces liens pour plus d’informations sur la **configuration** de votre [service EOP](/exchange/standalone-eop/set-up-your-eop-service) et **la configuration** [de Microsoft Defender pour Office 365](defender-for-office-365.md). N’oubliez pas les instructions utiles dans « [Protéger contre les menaces dans Office 365](protect-against-threats.md) ».
+- Utilisez ces liens pour plus d’informations sur la **configuration** de votre [service EOP](/exchange/standalone-eop/set-up-your-eop-service) et **la configuration** de [Microsoft Defender pour Office 365](defender-for-office-365.md). N’oubliez pas les instructions utiles dans « [Protéger contre les menaces dans Office 365](protect-against-threats.md) ».
 
-- Les **bases de référence de sécurité pour Windows** sont disponibles ici : [où puis-je obtenir les lignes de base de sécurité ? pour les](/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) options DG/locales, et [utiliser des bases de référence de sécurité pour configurer Windows appareils dans Intune](/intune/protect/security-baselines) pour la sécurité basée sur Intune. Enfin, une comparaison entre les bases de référence de sécurité Microsoft Defender pour point de terminaison et Microsoft Intune est disponible dans [Compare the Microsoft Defender pour point de terminaison et the Windows Intune lignes de base de sécurité](/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines).
+- Les **bases de référence de sécurité pour Windows sont disponibles** ici : [où puis-je obtenir les bases de référence de sécurité ? pour les](/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) options DG/locales, et [utilisez des bases de référence de sécurité pour configurer des appareils Windows dans Intune](/intune/protect/security-baselines) pour la sécurité basée sur Intune. Enfin, une comparaison entre les bases de référence de sécurité Microsoft Defender pour point de terminaison et Microsoft Intune est disponible dans [Comparer les bases de référence de sécurité Microsoft Defender pour point de terminaison et Windows Intune](/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines).

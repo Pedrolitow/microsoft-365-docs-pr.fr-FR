@@ -1,5 +1,5 @@
 ---
-title: Fonctionnement de l’authentification DNS SMTP des entités nommées (DANE) pour sécuriser les communications par e-mail
+title: Comment l’authentification DNS SMTP des entités nommées (DANE) sécurise les communications par e-mail
 f1.keywords:
 - NOCSH
 ms.author: v-mathavale
@@ -14,16 +14,20 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment l’authentification DNS SMTP des entités nommées (DANE) fonctionne pour sécuriser les communications par e-mail entre les serveurs de messagerie.
-ms.openlocfilehash: b5f9337457556dda53b5b2f982480a4c2501fcc9
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: fa982671aebb7c857c1c55af027d10437091e0dd
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782850"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131017"
 ---
 # <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>Fonctionnement de l’authentification DNS SMTP des entités nommées (DANE)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Le protocole SMTP est le protocole principal utilisé pour transférer des messages entre les serveurs de messagerie et n’est pas sécurisé par défaut. Le protocole TLS (Transport Layer Security) a été introduit il y a des années pour prendre en charge la transmission chiffrée des messages via SMTP. Il est couramment utilisé de manière opportuniste plutôt que comme une exigence, laissant beaucoup de trafic de courrier en texte clair, vulnérable à l’interception par des acteurs malveillants. En outre, SMTP détermine les adresses IP des serveurs de destination via l’infrastructure DNS publique, qui est vulnérable à l’usurpation d’identité et aux attaques de l’intercepteur (MITM). Cela a conduit à la création de nombreuses nouvelles normes pour renforcer la sécurité pour l’envoi et la réception d’e-mails, dont l’une est l’authentification DNS des entités nommées (DANE).
+  
+DANE pour SMTP [RFC 7672](https://tools.ietf.org/html/rfc7672) utilise la présence d’un enregistrement TLSA (Transport Layer Security Authentication) dans le jeu d’enregistrements DNS d’un domaine pour signaler un domaine et ses serveurs de messagerie prennent en charge DANE. Si aucun enregistrement TLSA n’est présent, la résolution DNS pour le flux de courrier fonctionne comme d’habitude sans aucune tentative de vérification DANE. L’enregistrement TLSA signale en toute sécurité la prise en charge de TLS et publie la stratégie DANE pour le domaine. Ainsi, l’envoi de serveurs de messagerie peut authentifier correctement les serveurs de messagerie de réception légitimes à l’aide de SMTP DANE. Cela le rend résistant aux attaques de rétrograde et MITM. DANE a des dépendances directes sur DNSSEC, qui fonctionne en signant numériquement des enregistrements pour les recherches DNS à l’aide du chiffrement à clé publique. Les vérifications DNSSEC se produisent sur les programmes de résolution DNS récursifs, les serveurs DNS qui effectuent des requêtes DNS pour les clients. DNSSEC garantit que les enregistrements DNS ne sont pas falsifiés et qu’ils sont authentiques.  
 
 DANE pour SMTP [RFC 7672](https://tools.ietf.org/html/rfc7672) utilise la présence d’un enregistrement TLSA (Transport Layer Security Authentication) dans le jeu d’enregistrements DNS d’un domaine pour signaler un domaine et ses serveurs de messagerie prennent en charge DANE. Si aucun enregistrement TLSA n’est présent, la résolution DNS pour le flux de courrier fonctionne comme d’habitude sans aucune tentative de vérification DANE. L’enregistrement TLSA signale en toute sécurité la prise en charge de TLS et publie la stratégie DANE pour le domaine. Ainsi, l’envoi de serveurs de messagerie peut authentifier correctement les serveurs de messagerie de réception légitimes à l’aide de SMTP DANE. Cela le rend résistant aux attaques de rétrograde et MITM. DANE a des dépendances directes sur DNSSEC, qui fonctionne en signant numériquement des enregistrements pour les recherches DNS à l’aide du chiffrement à clé publique. Les vérifications DNSSEC se produisent sur les programmes de résolution DNS récursifs, les serveurs DNS qui effectuent des requêtes DNS pour les clients. DNSSEC garantit que les enregistrements DNS ne sont pas falsifiés et qu’ils sont authentiques.
 
@@ -127,6 +131,13 @@ Actuellement, il existe quatre codes d’erreur pour DANE lors de l’envoi d’
 |5.7.323|tlsa-invalid : échec de la validation DANE du domaine.|
 |5.7.324|dnssec-invalid : le domaine de destination a retourné des enregistrements DNSSEC non valides.|
 
+> [!NOTE]
+> Actuellement, lorsqu’un domaine signale qu’il prend en charge DNSSEC mais échoue aux vérifications DNSSEC, Exchange Online ne génère pas l’erreur 4/5.7.324 dnssec non valide. Il génère une erreur DNS générique :
+> 
+> `4/5.4.312 DNS query failed`
+> 
+> Nous travaillons activement à remédier à cette limitation connue. Si vous recevez cette instruction d’erreur, accédez à Microsoft Remote Connectivity Analyzer et effectuez le test de validation DANE sur le domaine qui a généré l’erreur 4/5.4.312. Les résultats indiquent s’il s’agit d’un problème DNSSEC ou d’un autre problème DNS.
+
 ### <a name="troubleshooting-57321-starttls-not-supported"></a>Résolution des problèmes 5.7.321 starttls-not-supported
 
 Cela indique généralement un problème avec le serveur de messagerie de destination. Après avoir reçu le message :
@@ -188,6 +199,13 @@ Lors de la résolution des problèmes, les codes d’erreur ci-dessous peuvent �
 |4/5.7.322|certificat expiré : le certificat du serveur de messagerie de destination a expiré.|
 |4/5.7.323|tlsa-invalid : échec de la validation DANE du domaine.|
 |4/5.7.324|dnssec-invalid : le domaine de destination a retourné des enregistrements DNSSEC non valides.|
+
+> [!NOTE]
+> Actuellement, lorsqu’un domaine signale qu’il prend en charge DNSSEC mais échoue aux vérifications DNSSEC, Exchange Online ne génère pas l’erreur 4/5.7.324 dnssec non valide. Il génère une erreur DNS générique :
+> 
+> `4/5.4.312 DNS query failed`
+> 
+> Nous travaillons activement à remédier à cette limitation connue. Si vous recevez cette instruction d’erreur, accédez à Microsoft Remote Connectivity Analyzer et effectuez le test de validation DANE sur le domaine qui a généré l’erreur 4/5.4.312. Les résultats indiquent s’il s’agit d’un problème DNSSEC ou d’un autre problème DNS.
 
 ### <a name="troubleshooting-57321-starttls-not-supported"></a>Résolution des problèmes 5.7.321 starttls-not-supported
 

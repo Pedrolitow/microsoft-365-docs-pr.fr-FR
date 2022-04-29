@@ -14,17 +14,17 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 03/18/2022
-ms.openlocfilehash: 03efd5f8681824b5625611e0c8c871bfc7fd03a6
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.date: 04/11/2022
+ms.openlocfilehash: b176f7a89c46e016f7eb25cdf4cd6b0d6beb3966
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665137"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130602"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender pour point de terminaison Stockage Access Control amovibles du contrôle d’appareil
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
@@ -89,10 +89,10 @@ Vous pouvez utiliser les propriétés suivantes pour créer un groupe de stockag
 | **IncludedIdList** | Les groupes auxquels la stratégie sera appliquée. Si plusieurs groupes sont ajoutés, la stratégie est appliquée à n’importe quel média de tous ces groupes.|L’ID/GUID de groupe doit être utilisé dans cette instance. <p> L’exemple suivant illustre l’utilisation de GroupID : <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
 | **ExcludedIDList** | Groupe auquel la stratégie ne sera pas appliquée. | L’ID/GUID de groupe doit être utilisé dans cette instance. |
 | **ID d’entrée** | Une policyRule peut avoir plusieurs entrées ; chaque entrée avec un GUID unique indique à Device Control une restriction.| |
-| **Type** | Définit l’action pour les groupes de stockage amovibles dans IncludedIDList. <p>Application : Autoriser ou refuser <p>Audit : AuditAllowed ou AuditDenied<p> | Autoriser<p>Refuser <p>AuditAllowed : définit la notification et l’événement lorsque l’accès est autorisé <p>Audit refusé : définit la notification et l’événement lorsque l’accès est refusé ; doit fonctionner avec l’entrée **Deny** .<p> Lorsqu’il existe des types de conflit pour le même média, le système applique le premier type de stratégie. **Autoriser** et **refuser** est un exemple de type de conflit. |
+| **Type (Type)** | Définit l’action pour les groupes de stockage amovibles dans IncludedIDList. <p>Application : Autoriser ou refuser <p>Audit : AuditAllowed ou AuditDenied<p> | Autoriser<p>Refuser <p>AuditAllowed : définit la notification et l’événement lorsque l’accès est autorisé <p>Audit refusé : définit la notification et l’événement lorsque l’accès est refusé ; doit fonctionner avec l’entrée **Deny** .<p> Lorsqu’il existe des types de conflit pour le même média, le système applique le premier type de stratégie. **Autoriser** et **refuser** est un exemple de type de conflit. |
 | **Sid** | Sid de l’utilisateur local ou groupe Sid utilisateur ou Sid de l’objet AD, définit s’il faut appliquer cette stratégie à un utilisateur ou à un groupe d’utilisateurs spécifique ; une entrée peut avoir un maximum d’un Sid et une entrée sans sid signifie appliquer la stratégie sur l’ordinateur. |  |
 | **ComputerSid** | Sid d’ordinateur local ou groupe Sid d’ordinateur ou Sid de l’objet AD, définit s’il faut appliquer cette stratégie sur un ordinateur ou un groupe d’ordinateurs spécifique ; une entrée peut avoir un maximum d’un ComputerSid et une entrée sans ComputerSid signifie appliquer la stratégie sur l’ordinateur. Si vous souhaitez appliquer une entrée à un utilisateur spécifique et à un ordinateur spécifique, ajoutez Sid et ComputerSid dans la même entrée. |  |
-| **Options** | Définit s’il faut afficher ou non une notification |**Lorsque l’option Type Allow est sélectionnée** : <p>0 : rien<p>4 : désactivez **AuditAllowed** et **AuditDenied** pour cette entrée. Même si **Allow** se produit et que le paramètre AuditAllowed est configuré, le système n’envoie pas d’événement. <p>8 : capturez les informations du fichier et disposez d’une copie du fichier comme preuve de l’accès en écriture. <p>16 : capturer les informations de fichier pour l’accès en écriture. <p>**Lorsque le refus de type est sélectionné** : <p>0 : rien<p>4 : désactiver **l’audit refusé** pour cette entrée. Même si **le blocage** se produit et que le paramètre AuditDenied est configuré, le système n’affiche pas de notification. <p>**Quand type **AuditAllowed** est sélectionné** : <p>0 : rien <p>1 : rien <p>2 : événement d’envoi<p>3 : événement d’envoi <p> **Lorsque **l’audit** de type refusé est sélectionné** : <p>0 : rien <p>1 : afficher la notification <p>2 : événement d’envoi<p>3 : afficher l’événement de notification et d’envoi |
+| **Options** | Définit s’il faut afficher ou non une notification |**Lorsque l’option Type Allow est sélectionnée** : <p>0 : rien<p>4 : désactivez **AuditAllowed** et **AuditDenied** pour cette entrée. Même si **Allow** se produit et que le paramètre AuditAllowed est configuré, le système n’envoie pas d’événement. <p>8 : capturez les informations du fichier et disposez d’une copie du fichier comme preuve de l’accès en écriture. <p>16 : capturer les informations de fichier pour l’accès en écriture. <p>**Lorsque le refus de type est sélectionné** : <p>0 : rien<p>4 : désactiver **l’audit refusé** pour cette entrée. Même si **le blocage** se produit et que le paramètre AuditDenied est configuré, le système n’affiche pas de notification. <p>**Quand type **AuditAllowed** est sélectionné** : <p>0 : rien <p>1 : rien <p>2 : événement d’envoi<p> **Lorsque **l’audit** de type refusé est sélectionné** : <p>0 : rien <p>1 : afficher la notification <p>2 : événement d’envoi<p>3 : afficher l’événement de notification et d’envoi |
 |AccessMask|Définit l’accès. | **Accès au niveau du disque** : <p>1 : Lecture <p>2 : Écrire <p>4 : Exécuter <p>**Accès au niveau du système de fichiers** : <p>8 : Lecture du système de fichiers <p>16 : Écriture du système de fichiers <p>32 : Exécution du système de fichiers <p><p>Vous pouvez avoir plusieurs accès en effectuant une opération OR binaire. Par exemple, accessMask pour lecture et écriture et exécution est égal à 7 ; AccessMask pour lecture et écriture est 3.|
 
 ## <a name="common-removable-storage-access-control-scenarios"></a>Scénarios de Stockage Access Control amovibles courants
@@ -327,7 +327,7 @@ DeviceEvents
 
 :::image type="content" source="images/block-removable-storage.png" alt-text="Écran illustrant le blocage du stockage amovible.":::
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="how-to-generate-guid-for-group-idpolicyrule-identry-id"></a>Comment générer un GUID pour l’ID de groupe/ID PolicyRule/ID d’entrée ?
 
