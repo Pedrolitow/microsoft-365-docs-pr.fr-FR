@@ -2,8 +2,8 @@
 title: Créer et exécuter une recherche de contenu dans le portail de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Utilisez l'outil eDiscovery de recherche de contenu dans le centre de conformité pour rechercher du contenu dans différents services Microsoft 365.
-ms.openlocfilehash: f5d8a398f36c1ab3c0f83234718346e8dd20434e
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 418bdffd71e83aea548c21589c6b8c08ae2419e8
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994499"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097093"
 ---
 # <a name="create-a-content-search"></a>Créer une recherche de contenu
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Vous pouvez utiliser l'outil de recherche de contenu eDiscovery dans le portail de conformité Microsoft Purview pour rechercher du contenu en place tels que des e-mails, des documents et des conversations de messagerie instantanée dans votre organisation. Utilisez cet outil pour rechercher du contenu dans ces sources de données basées sur le cloud de Microsoft 365 :
+Vous pouvez utiliser l'outil eDiscovery de recherche de contenu dans le portail de conformité Microsoft Purview pour rechercher du contenu en place tel que des courriels, des documents et des conversations de messagerie instantanée dans votre organisation. Utilisez cet outil pour rechercher du contenu dans ces sources de données Microsoft 365 basées sur le cloud :
   
 - Echange de boîtes aux lettres en ligne
 

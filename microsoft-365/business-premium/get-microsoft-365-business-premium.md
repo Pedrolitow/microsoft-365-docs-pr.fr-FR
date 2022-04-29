@@ -4,11 +4,11 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -22,39 +22,44 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Obtenez Microsoft 365 Business Premium pour protéger votre entreprise contre les menaces de cybersécurité sur les appareils, la messagerie électronique, les données et les communications.
-ms.openlocfilehash: 2e6ad120407a7bc84e089b997c990e04d438ab29
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: MT
+description: Obtenez Microsoft 365 Business Premium pour protéger votre entreprise contre les menaces de cybersécurité sur les appareils, les e-mails, les données et les communications.
+ms.openlocfilehash: 6df4c10e7c302f95eba00206767a533a8f23db67
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318506"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100134"
 ---
-# <a name="how-to-get-microsoft-365-business-premium"></a>Comment obtenir des Microsoft 365 Business Premium
+# <a name="how-to-get-microsoft-365-business-premium"></a>Comment obtenir Microsoft 365 Business Premium
 
-Cet article explique comment obtenir des Microsoft 365 Business Premium pour votre entreprise. Vous pouvez :
+Lorsque vous êtes prêt à obtenir Microsoft 365 Business Premium, plusieurs options s’offrent à vous. Vous pouvez :
 
-- [Essayez ou achetez des Microsoft 365 Business Premium vous-même](#get-microsoft-365-business-premium-on-your-own)
+- [Essayez ou achetez Microsoft 365 Business Premium vous-même](#get-microsoft-365-business-premium-on-your-own)
 - [Travailler avec un fournisseur de solutions](#work-with-a-microsoft-solution-provider-to-get-microsoft-365-business-premium)
 
-## <a name="get-microsoft-365-business-premium-on-your-own"></a>Obtenir Microsoft 365 Business Premium vous-même
+> [!TIP]
+> Si vous recherchez Microsoft 365 for Campaigns, consultez [Comment obtenir Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md).
 
-Voir [Try or buy a Microsoft 365 for business subscription](../commerce/try-or-buy-microsoft-365.md). Sur le [site Microsoft 365 produits](https://www.aka.ms/office365signup), choisissez **Microsoft 365 Business Premium**.
+## <a name="get-microsoft-365-business-premium-on-your-own"></a>Obtenez Microsoft 365 Business Premium vous-même
 
-## <a name="work-with-a-microsoft-solution-provider-to-get-microsoft-365-business-premium"></a>Travailler avec un fournisseur de solutions Microsoft pour obtenir des Microsoft 365 Business Premium
+1. Visitez la page du produit [Microsoft 365 Business Premium](https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-business-premium?activetab=pivot%3aoverviewtab).
 
-Microsoft dispose d’une liste de fournisseurs de solutions autorisés à vendre des offres, y compris Microsoft 365 Business Premium. 
+2. Choisissez d’essayer ou d’acheter votre abonnement. Consultez [Essayez ou achetez un abonnement Microsoft 365 pour les entreprises](../commerce/try-or-buy-microsoft-365.md). Sur le [site produits Microsoft 365](https://www.aka.ms/office365signup), choisissez **Microsoft 365 Business Premium**.
 
-Pour trouver un fournisseur de solutions dans votre région, prenez les mesures suivantes :
+3. Une fois que vous êtes inscrit à Microsoft 365 Business Premium, vous recevez un e-mail contenant un lien pour vous connecter et commencer. Passez à [Configurer Microsoft 365 Business Premium](m365bp-setup.md).
 
-1. Go to the **Microsoft Solution Providers** page ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
+## <a name="work-with-a-microsoft-solution-provider-to-get-microsoft-365-business-premium"></a>Collaborer avec un fournisseur de solutions Microsoft pour obtenir Microsoft 365 Business Premium
+
+Microsoft dispose d’une liste de fournisseurs de solutions autorisés à vendre des offres, notamment Microsoft 365 Business Premium. Si vous ne travaillez pas déjà avec un fournisseur de solutions, vous pouvez en trouver un en procédant comme suit : 
+
+1. Accédez à la page **Fournisseurs de solutions Microsoft** ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
  
-2. Dans la zone de recherche, remplissez l’emplacement et la taille de votre entreprise. 
+2. Dans la zone de recherche, renseignez votre emplacement et la taille de votre entreprise. 
 
-3. Dans la **zone Rechercher des produits, services, compétences, secteurs** , `Microsoft 365`placez, puis sélectionnez **Go**.
+3. Dans la zone **Rechercher des produits, services, compétences, secteurs d’activité**, placer `Microsoft 365`, puis sélectionner **Go**.
 
-4. Examinez la liste des résultats. Sélectionnez un fournisseur pour en savoir plus sur son expertise et les services qu’il fournit.
+4. Passez en revue la liste des résultats. Sélectionnez un fournisseur pour en savoir plus sur son expertise et les services qu’il fournit.
 
-## <a name="what-does-microsoft-365-business-premium-include"></a>Qu’est-ce Microsoft 365 Business Premium inclure ?
+## <a name="next-steps"></a>Étapes suivantes
 
-[Afficher les Microsoft 365 suites d’abonnement utilisateur pour les petites et moyennes entreprises](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM)
+[Configurer Microsoft 365 Business Premium](m365bp-setup.md)

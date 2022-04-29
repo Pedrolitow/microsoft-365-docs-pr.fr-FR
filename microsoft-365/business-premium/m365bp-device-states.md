@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -26,20 +26,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
-description: Découvrez les différents états d’appareil dans la liste Actions de l’appareil dans la page d’accueil Administrateur Microsoft 365 entreprise.
-ms.openlocfilehash: a0651f0f0b104c243115dc86a72cf3e363bdb9a4
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
-ms.translationtype: MT
+description: Découvrez les différents états de l’appareil dans la liste des actions de l’appareil dans la page d’accueil de l’administrateur dans Microsoft 365 pour les entreprises.
+ms.openlocfilehash: 72a923b366d73d0ceb708abfb6ab96e2562b6e49
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64635368"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095193"
 ---
 # <a name="device-states"></a>États des appareils
 
-Cet article s’applique aux Microsoft 365 Business Premium.
+Cet article s’applique à Microsoft 365 Business Premium.
 
 > [!NOTE]
-> Microsoft Defender pour les PME est en Microsoft 365 Business Premium clients, à partir du 1er mars 2022. Cette offre offre des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender pour les entreprises](../security/defender-business/mdb-overview.md).
+> Microsoft Defender pour les PME est déployée pour les clients Microsoft 365 Business Premium, à compter du 1er mars 2022. Cette offre fournit des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender for Business](../security/defender-business/mdb-overview.md).
 
 Les appareils de la liste **Actions de l'appareil** (accueil Administrateur \> **Actions de l'appareil**) peuvent présenter les états suivants.
   
@@ -48,19 +48,19 @@ Les appareils de la liste **Actions de l'appareil** (accueil Administrateur \> *
 |**État**|**Description**|
 |:-----|:-----|
 |Géré par Intune  |Géré par Microsoft 365 Business Premium.  |
-|Mise hors service en attente  |Microsoft 365 Business Premium se prépare à supprimer des données d’entreprise de l’appareil.  |
-|Mise hors service en cours  |Microsoft 365 Business Premium supprime actuellement les données d’entreprise de l’appareil.  |
+|Mise hors service en attente  |Microsoft 365 Entreprise s'apprête à supprimer des données d'entreprise de l'appareil.  |
+|Mise hors service en cours  |Microsoft 365 Entreprise est en train de supprimer des données d'entreprise de l'appareil.  |
 |Échec de la mise hors service  | L'action de suppression des données d'entreprise a échoué.  |
-|Retrait annulé  |L’action de retrait a été annulée.  |
+|Mise hors service annulée  |L'action de mise hors service a été annulée.  |
 |Réinitialisation en attente  |En attente du rétablissement des paramètres d'usine.  |
 |Réinitialisation en cours  |Le rétablissement des paramètres d'usine a démarré.  |
-|Échec de la réinitialisation  |Impossible de réinitialiser les fabriques.  |
-|Effacement annulé  |L’effacement d’usine a été annulé.  |
-|Défectueux  |Une action est en attente (ou en cours), mais l’appareil n’a pas été enregistré depuis plus de 30 jours.  |
+|Échec de la réinitialisation  |Le rétablissement des paramètres d'usine n'a pas pu être effectué.  |
+|Réinitialiser annulée  |Le rétablissement des paramètres d'usine a été annulé.  |
+|Défectueux  |Cela signifie qu'une action est en attente (ou en cours) mais que l'appareil n'a pas archivé depuis plus de 30 jours.  |
 |Suppression en attente  |Une action de suppression est en attente.  |
-|Détecté  |Microsoft 365 Business Premium a détecté l’appareil.  |
+|Détecté  |Microsoft 365 Entreprise a détecté l'appareil.  |
    
 
 ## <a name="see-also"></a>Voir aussi
 
-[10 principales façons de sécuriser les Microsoft 365 pour les plans d’entreprise](../admin/security-and-compliance/secure-your-business-data.md)
+[10 principales façons de sécuriser les plans Microsoft 365 pour les entreprises](../admin/security-and-compliance/secure-your-business-data.md)
