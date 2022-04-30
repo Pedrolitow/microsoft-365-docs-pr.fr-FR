@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à gérer les autorisations et les blocs dans la liste d’autorisations/blocs du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0ed23cf7bfe8db25ed216859c434e86f14710db8
-ms.sourcegitcommit: 363bdc517bd2564c6420cf21f352e97079f950e0
+ms.openlocfilehash: 62116022c14af67b4589e4ee8479d294755fcc80
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2022
-ms.locfileid: "65031817"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144681"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -32,12 +32,6 @@ ms.locfileid: "65031817"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-> [!NOTE]
->
-> Certaines des fonctionnalités décrites dans cet article sont en préversion, sont susceptibles d’être modifiées et ne sont pas disponibles dans toutes les organisations.
->
-> Si votre organisation n’a pas les fonctionnalités d’usurpation d’identité décrites dans cet article, consultez l’ancienne expérience de gestion de l’usurpation d’identité dans [Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans Exchange Online boîtes aux lettres, vous pouvez être en désaccord avec le verdict de filtrage EOP. Par exemple, un bon message peut être marqué comme mauvais (faux positif) ou un message incorrect peut être autorisé (un faux négatif).
 
@@ -81,10 +75,10 @@ Cet article explique comment configurer des entrées dans la liste verte/bloqué
 
 - Vous devez disposer d’autorisations dans le portail Microsoft 365 Defender avant de pouvoir effectuer les procédures décrites dans cet article :
   - **Expéditeurs, URL et fichiers** :
-    - Pour ajouter et supprimer des valeurs de la liste d’autorisations/de blocs du locataire, vous devez être membre de 
-      -   **Groupe de rôles Gestion de l’organisation** ou **Administrateur de la sécurité** (**rôle Administrateur de la sécurité**)
-      -    Groupe **de rôles Opérateur de sécurité** (**Tenant AllowBlockList Manager**).
-    - Pour accéder en lecture seule à la liste d’autorisations/de blocs de locataire, vous devez être membre de 
+    - Pour ajouter et supprimer des valeurs de la liste d’autorisations/de blocs du locataire, vous devez être membre de
+      - **Groupe de rôles Gestion de l’organisation** ou **Administrateur de la sécurité** (**rôle Administrateur de la sécurité**)
+      - Groupe **de rôles Opérateur de sécurité** (**Tenant AllowBlockList Manager**).
+    - Pour accéder en lecture seule à la liste d’autorisations/de blocs de locataire, vous devez être membre de
       - **Groupe de rôles Lecteur global**
       - **Groupe de rôles Lecteur de sécurité**
   - **Usurpation d’identité** : une des combinaisons suivantes :
@@ -95,7 +89,7 @@ Cet article explique comment configurer des entrées dans la liste verte/bloqué
 
   > [!NOTE]
   >
-  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de [Microsoft 365](../../admin/add-users/about-admin-roles.md).
+  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises *et* les autorisations pour les autres fonctionnalités de [Microsoft 365](../../admin/add-users/about-admin-roles.md).
   >
   > - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
@@ -142,7 +136,7 @@ Pour gérer tous les blocs et autorisations, consultez [Ajouter des blocs dans l
      - **Dernière mise à jour**
      - **Supprimer le**
      - **Notes**
-   - **Usurpation**
+   - **Spoofing**
      - **Utilisateur usurpé**
      - **Envoi d’une infrastructure**
      - **Type d’usurpation** d’identité : valeur **interne** ou **externe**.
@@ -176,13 +170,13 @@ Pour gérer tous les blocs et autorisations, consultez [Ajouter des blocs dans l
      - **N’expirez jamais**
      - **Dernière mise à jour**
      - **Supprimer le**
-   - **Usurpation**
+   - **Spoofing**
      - **Action**
      - **Type d’usurpation d’identité**
 
    Lorsque vous avez terminé, cliquez sur **Appliquer**. Pour effacer les filtres existants, cliquez sur **Filtrer**, puis dans le menu volant **Filtre** qui s’affiche, cliquez sur **Effacer les filtres**.
 
-4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
+3. Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
 ## <a name="view-sender-file-or-url-entries-in-the-tenant-allowblock-list"></a>Afficher les entrées de l’expéditeur, du fichier ou de l’URL dans la liste d’autorisation/de blocage du locataire
 
@@ -490,7 +484,7 @@ Voici quelques exemples de paires de domaines valides pour identifier les expéd
 
 Le nombre maximal d’entrées d’expéditeur usurpées est de 1 000.
 
-L’ajout d’une paire de domaines autorise ou bloque uniquement la *combinaison* de l’utilisateur usurpé *et* de l’infrastructure d’envoi. Il n’autorise pas les e-mails de l’utilisateur usurpé d’identité à partir d’une source quelconque, ni le courrier électronique provenant de la source d’infrastructure d’envoi pour tout utilisateur usurpé. 
+L’ajout d’une paire de domaines autorise ou bloque uniquement la *combinaison* de l’utilisateur usurpé *et* de l’infrastructure d’envoi. Il n’autorise pas les e-mails de l’utilisateur usurpé d’identité à partir d’une source quelconque, ni le courrier électronique provenant de la source d’infrastructure d’envoi pour tout utilisateur usurpé.
 
 Par exemple, vous ajoutez une entrée d’autorisation pour la paire de domaines suivante :
 

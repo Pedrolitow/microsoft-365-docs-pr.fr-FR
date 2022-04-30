@@ -17,12 +17,12 @@ ms.collection:
 description: Découvrez comment activer le message de rapport ou les compléments d’hameçonnage de rapport pour Outlook et Outlook sur le web, pour des utilisateurs individuels ou pour l’ensemble de votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14d59cbe6f3f98aabc231da88e4f0919a3974c97
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: a4166b36888c96b12a8aa410848c392c2afdaeb5
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973220"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144836"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Activer les compléments Signaler le message ou Signaler l’hameçonnage
 
@@ -31,7 +31,7 @@ ms.locfileid: "64973220"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
 > Si vous êtes administrateur dans une organisation Microsoft 365 avec des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser la page **Soumissions** dans le portail Microsoft 365 Defender. Pour plus d’informations, consultez [Utiliser la soumission d’administrateur pour envoyer des courriers indésirables, des hameçonnages, des URL et des fichiers suspects à Microsoft](admin-submission.md).
@@ -61,7 +61,7 @@ Si vous êtes administrateur général ou administrateur Exchange Online et que 
 
 - Les deux compléments ne sont pas disponibles pour les boîtes aux lettres partagées.
 
-- Les deux compléments ne sont pas disponibles pour les boîtes aux lettres Exchange locales. 
+- Les deux compléments ne sont pas disponibles pour les boîtes aux lettres Exchange locales.
 
 - Votre navigateur web existant doit fonctionner avec les compléments Message de rapport et Hameçonnage de rapport. Toutefois, si vous remarquez que le complément n’est pas disponible ou ne fonctionne pas comme prévu, essayez un autre navigateur.
 
@@ -81,7 +81,7 @@ Si vous êtes administrateur général ou administrateur Exchange Online et que 
 
 2. Cliquez sur **OBTENIR MAINTENANT**.
 
-   :::image type="content" source="../../media/ReportMessageGETITNOW.png" alt-text="Message de rapport Obtenir maintenant" lightbox="../../media/ReportMessageGETITNOW.png":::
+   :::image type="content" source="../../media/ReportMessageGETITNOW.png" alt-text="Message de rapport Obtenir maintenant." lightbox="../../media/ReportMessageGETITNOW.png":::
 
 3. Dans la boîte de dialogue qui s’affiche, passez en revue les conditions d’utilisation et la politique de confidentialité, puis cliquez sur **Continuer**.
 
@@ -92,7 +92,7 @@ Une fois le complément installé et activé, les icônes suivantes s’affichen
 - Dans Outlook, l’icône ressemble à ceci :
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/OutlookReportMessageIcon.png" alt-text="Icône de complément Message de rapport pour Outlook" lightbox="../../media/OutlookReportMessageIcon.png":::
+    > :::image type="content" source="../../media/OutlookReportMessageIcon.png" alt-text="Icône de complément Message de rapport pour Outlook." lightbox="../../media/OutlookReportMessageIcon.png":::
 
 - Dans Outlook sur le web, l’icône ressemble à ceci :
 
@@ -107,21 +107,21 @@ Une fois le complément installé et activé, les icônes suivantes s’affichen
 1. Dans le [Centre d'administration Microsoft 365](https://admin.microsoft.com/AdminPortal/Home?#/homepage), accédez à **Paramètres** \> **applications intégrées**. Cliquez sur **Obtenir des applications**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="Les applications intégrées Centre d'administration Microsoft 365" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="Les applications intégrées Centre d'administration Microsoft 365." lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
 
-2. Dans la **page Microsoft 365 Apps** qui s’affiche, cliquez dans la zone **de recherche**, entrez **le message** de rapport, puis cliquez sur l’icône](../../media/search-icon.png) **Rechercher**![. Dans la liste des résultats, recherchez et sélectionnez **Message de rapport**. 
+2. Dans la **page Microsoft 365 Apps** qui s’affiche, cliquez dans la zone **de recherche**, entrez **le message** de rapport, puis cliquez sur l’icône](../../media/search-icon.png) **Rechercher**![. Dans la liste des résultats, recherchez et sélectionnez **Message de rapport**.
 
-3. La page de détails de l’application s’ouvre. Sélectionnez **Obtenir maintenant**. 
-
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message.png" alt-text="Complément Message de rapport" lightbox="../../media/microsoft-365-admin-center-report-message.png":::
-
-4. Renseignez les informations de profil de base, puis cliquez sur **Continuer**. 
+3. La page de détails de l’application s’ouvre. Sélectionnez **Obtenir maintenant**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-profile-info.png" alt-text="Configuration du profil de complément Message de rapport" lightbox="../../media/microsoft-365-admin-center-profile-info.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message.png" alt-text="Complément Message de rapport." lightbox="../../media/microsoft-365-admin-center-report-message.png":::
 
-5. Le menu volant **Déployer une nouvelle application s’ouvre** . Configurez les paramètres suivants. Cliquez sur **Suivant** pour accéder à la page suivante pour terminer l’installation. 
+4. Renseignez les informations de profil de base, puis cliquez sur **Continuer**.
+
+    > [!div class="mx-imgBorder"]
+    > :::image type="content" source="../../media/microsoft-365-admin-center-profile-info.png" alt-text="Configuration du profil de complément Message de rapport." lightbox="../../media/microsoft-365-admin-center-profile-info.png":::
+
+5. Le menu volant **Déployer une nouvelle application s’ouvre** . Configurez les paramètres suivants. Cliquez sur **Suivant** pour accéder à la page suivante pour terminer l’installation.
 
    - **Ajouter des utilisateurs** : sélectionnez l’une des valeurs suivantes :
      - **Juste moi**
@@ -132,13 +132,13 @@ Une fois le complément installé et activé, les icônes suivantes s’affichen
      - **Accepter les demandes d’autorisations** : lisez attentivement les autorisations et fonctionnalités de l’application avant d’accéder à la page suivante.
 
         > [!div class="mx-imgBorder"]
-        > :::image type="content" source="../../media/microsoft-365-admin-center-deploy-new-app.png" alt-text="Page Accepter les demandes d’autorisations" lightbox="../../media/microsoft-365-admin-center-deploy-new-app.png":::
+        > :::image type="content" source="../../media/microsoft-365-admin-center-deploy-new-app.png" alt-text="Page Accepter les demandes d’autorisations." lightbox="../../media/microsoft-365-admin-center-deploy-new-app.png":::
 
-     - **Terminer le déploiement** : passez en revue et terminez le déploiement du complément. 
-     - **Déploiement terminé** : sélectionnez **Terminé** pour terminer l’installation. 
+     - **Terminer le déploiement** : passez en revue et terminez le déploiement du complément.
+     - **Déploiement terminé** : sélectionnez **Terminé** pour terminer l’installation.
 
         > [!div class="mx-imgBorder"]
-        > :::image type="content" source="../../media/microsoft-365-admin-center-deployment-complete.png" alt-text="Message de notification du déploiement terminé" lightbox="../../media/microsoft-365-admin-center-deployment-complete.png":::
+        > :::image type="content" source="../../media/microsoft-365-admin-center-deployment-complete.png" alt-text="Message de notification du déploiement terminé." lightbox="../../media/microsoft-365-admin-center-deployment-complete.png":::
 
 ## <a name="edit-settings-for-the-report-message-add-in"></a>Modifier les paramètres du complément Message de rapport
 
@@ -147,9 +147,9 @@ Une fois le complément installé et activé, les icônes suivantes s’affichen
 2. Dans le menu volant qui s’affiche, **sélectionnez Modifier les utilisateurs** pour modifier les paramètres utilisateur.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message-edit.png" alt-text="Menu volant du message de rapport" lightbox="../../media/microsoft-365-admin-center-report-message-edit.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message-edit.png" alt-text="Menu volant Du message de rapport." lightbox="../../media/microsoft-365-admin-center-report-message-edit.png":::
 
-3. Pour supprimer le complément, **sélectionnez Supprimer l’application** sous **Actions** dans le même menu volant. 
+3. Pour supprimer le complément, **sélectionnez Supprimer l’application** sous **Actions** dans le même menu volant.
 
 ## <a name="get-the-report-phishing-add-in"></a>Obtenir le complément Report Phishing
 
@@ -182,15 +182,15 @@ Une fois le complément installé et activé, les icônes suivantes s’affichen
 1. Dans le [Centre d'administration Microsoft 365](https://admin.microsoft.com/AdminPortal/Home?#/homepage), accédez à **Paramètres** \> **applications intégrées**. Cliquez sur **Obtenir des applications**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="Les applications intégrées Centre d'administration Microsoft 365" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="Les applications intégrées Centre d'administration Microsoft 365." lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
 
-2. Dans la page **Microsoft 365 Apps** qui s’affiche, cliquez dans la zone **de recherche**, entrez **l’hameçonnage** de rapport, puis cliquez sur l’icône](../../media/search-icon.png) **Rechercher**![. Dans la liste des résultats, recherchez et sélectionnez **Signaler le hameçonnage**. 
- 
+2. Dans la page **Microsoft 365 Apps** qui s’affiche, cliquez dans la zone **de recherche**, entrez **l’hameçonnage** de rapport, puis cliquez sur l’icône](../../media/search-icon.png) **Rechercher**![. Dans la liste des résultats, recherchez et sélectionnez **Signaler le hameçonnage**.
+
 3. La page de détails de l’application s’ouvre. Sélectionnez **Obtenir maintenant**.
 
 4. Renseignez les informations de profil de base, puis cliquez sur **Continuer**.
 
-5. Le menu volant **Déployer une nouvelle application s’ouvre** . Suivez les étapes [décrites ci-dessus](enable-the-report-message-add-in.md#get-the-report-message-add-in-for-your-organization) pour terminer l’installation. 
+5. Le menu volant **Déployer une nouvelle application s’ouvre** . Suivez les étapes [décrites ci-dessus](enable-the-report-message-add-in.md#get-the-report-message-add-in-for-your-organization) pour terminer l’installation.
 
 ## <a name="edit-settings-for-the-report-phishing-add-in"></a>Modifier les paramètres du complément Report Phishing
 
@@ -199,6 +199,6 @@ Une fois le complément installé et activé, les icônes suivantes s’affichen
 2. Dans le menu volant qui s’affiche, **sélectionnez Modifier les utilisateurs** pour modifier les paramètres utilisateur.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-report-phishing-edit.png" alt-text="Le menu volant d’hameçonnage de rapport" lightbox="../../media/microsoft-365-admin-center-report-phishing-edit.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-phishing-edit.png" alt-text="Menu volant d’hameçonnage de rapport." lightbox="../../media/microsoft-365-admin-center-report-phishing-edit.png":::
 
-3. Pour supprimer le complément, **sélectionnez Supprimer l’application** sous **Actions** dans le même menu volant. 
+3. Pour supprimer le complément, **sélectionnez Supprimer l’application** sous **Actions** dans le même menu volant.

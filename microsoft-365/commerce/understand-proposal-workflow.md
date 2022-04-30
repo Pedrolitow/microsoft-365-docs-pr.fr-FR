@@ -19,19 +19,19 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez les propositions pour vous aider à acheter des produits et services Microsoft.
 ROBOTS: NOINDEX
-ms.date: 03/17/2021
-ms.openlocfilehash: 6ba1f27901795a1e473165c0b6ac65d90ca1c0af
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.date: 04/28/2022
+ms.openlocfilehash: 8dc80bfaadcbee236f282796dcdb37f59360ebe4
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824868"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144858"
 ---
 # <a name="understand-the-proposal-workflow"></a>Comprendre le flux de travail de la proposition
 
 Une proposition est une offre formelle de Microsoft pour que votre organisation achète des produits et services Microsoft. Vous travaillez directement avec un représentant Microsoft pour déterminer les produits, services et conditions spécifiques de votre proposition.
 
-Un représentant Microsoft rédige une proposition qui contient les éléments dont vous et votre représentant avez discuté. Le représentant vous envoie un e-mail contenant un lien vers le site de proposition. Le site contient la proposition préparée spécifiquement pour vous et votre organisation.
+Un représentant Microsoft rédige une proposition qui contient les éléments dont vous et votre représentant avez discuté. Le représentant vous envoie un e-mail contenant un lien vers le portail de la Place de marché Azure. Le site contient la proposition préparée spécifiquement pour vous et votre organisation.
 
 Une fois que vous avez reçu l’e-mail de notification, suivez le lien vers le site de proposition. Une fois connecté au site, vous pouvez démarrer le processus d’examen des propositions.
 
@@ -53,13 +53,29 @@ Le Contrat client Microsoft (MCA) permet à une organisation d’acheter des pro
 
 ## <a name="permissions-needed-to-sign-an-agreement-or-pay-for-items"></a>Autorisations nécessaires pour signer un contrat ou payer des articles
 
-Si vous n’avez pas de rôle attribué dans le compte de facturation, lorsque vous affichez la proposition, le rôle de lecteur de base vous est attribué. Ce rôle vous permet d’afficher, mais pas d’agir, la proposition. Vous devez disposer du rôle de propriétaire du compte de facturation ou de contributeur de compte de facturation avant de pouvoir signer un contrat ou acheter des produits et services. Le propriétaire de votre compte de facturation peut vous attribuer ce rôle.
+Vous devez être propriétaire d’un compte de facturation ou contributeur de compte de facturation pour signer un contrat ou acheter des produits et services. Si vous êtes administrateur général, mais que vous n’avez pas l’un de ces rôles, vous pouvez vous les attribuer vous-même. Si vous n’êtes pas administrateur général, demandez à votre administrateur général ou propriétaire de compte de facturation de vous attribuer l’un des rôles.
+
+Les rôles de propriétaire de compte de facturation et de contributeur de compte de facturation sont attribués à l’aide de l’une des méthodes suivantes.
+
+### <a name="assign-roles-in-the-microsoft-365-admin-center"></a>Attribuer des rôles dans le Centre d'administration Microsoft 365
+
+1. Dans le Centre d'administration Microsoft 365, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">des comptes BillingBilling</a> > .
+2. Dans la page **Comptes de facturation** , dans la section **Rôles de compte de facturation** , sélectionnez **Attribuer des rôles**.
+3. Dans le volet **Attribuer des rôles** , recherchez le nom de la personne à qui vous souhaitez attribuer un rôle.
+4. Sélectionnez la zone correspondant au nom de rôle que vous souhaitez que la personne ait, puis sélectionnez **Affecter**.
+
+### <a name="assign-roles-in-the-azure-portal"></a>Attribuer des rôles dans le Portail Azure
+
+1. Dans le Portail Azure, accédez à la page <a href="https://portal.azure.com/#blade/Microsoft_Azure_GTM/ModernBillingMenuBlade/Overview" target="_blank">Contrôle d’accès (IAM</a>).
+2. Dans la page **Contrôle d’accès (IAM),** sélectionnez **Ajouter**.
+3. Dans le volet **Ajouter une autorisation** , sélectionnez le **rôle** à attribuer à l’utilisateur.
+4. Sélectionnez l’utilisateur, puis **sélectionnez Enregistrer**.
 
 Pour plus d’informations sur les rôles de compte de facturation, consultez [Comprendre l’accès aux comptes de facturation](manage-billing-accounts.md#understand-access-to-billing-accounts).
 
 S’il s’agit d’un nouveau compte de facturation et que personne n’a accepté de contrat, vous devenez automatiquement le propriétaire du compte de facturation, à condition que :
 
-- La personne nommée dans la proposition **, ou**
+- La personne nommée dans la proposition **ou**
 - Êtes déjà un [administrateur général Azure Active Directory](/azure/active-directory/roles/permissions-reference#global-administrator) pour votre organisation
 
 ## <a name="what-is-the-overall-workflow"></a>Quel est le flux de travail global ?
@@ -154,6 +170,9 @@ Cette section affiche la liste de tous les éléments inclus dans la proposition
 - **Acheter maintenant** Liste des éléments que vous payez lors de l’extraction à la fin du flux de travail d’acceptation de la proposition.
 - **Remises (appliquées aux frais futurs)** Liste des remises que vous recevez dans le cadre de la proposition.
 - **Inclus** Liste des éléments inclus dans le cadre du package de proposition sans frais supplémentaires. Certains de ces éléments peuvent avoir un coût associé à l’avenir.
+
+> [!NOTE]
+> Votre proposition peut inclure des abonnements avec une date de début ultérieure. Pour plus d’informations, consultez [Comprendre la facturation pour les dates de début futures](billing-and-payments/future-start-date.md).
 
 ### <a name="summary"></a>Résumé
 
