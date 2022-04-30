@@ -19,17 +19,14 @@ ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: ''
-ms.openlocfilehash: c65d5b9c73204de1ad537ce5bb1c05b09bc8df32
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 716a3a0255074a1180d01bbe0e3ef5067e7a31cf
+ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847030"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65145227"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>Essayer Microsoft Defender pour Office 365
-
-> [!NOTE]
-> La fonctionnalité décrite par cet article est en préversion, n’est pas disponible dans toutes les organisations et est susceptible de changer.
 
 Le portail **d’essais** unifiés dans le portail Microsoft 365 Defender fournit un point d’entrée unique pour les expériences d’évaluation et d’évaluation précédemment distinctes pour Microsoft Defender pour Office 365. L’objectif est de vous permettre d’essayer les fonctionnalités de Defender pour Office 365 Plan 2 pendant 90 jours avant de vous y engager pleinement. Toutefois, il existe des différences dans les expériences d’évaluation en fonction de la nature de votre organisation Microsoft 365 :
 
@@ -48,6 +45,8 @@ Le portail **d’essais** unifiés dans le portail Microsoft 365 Defender fourni
 Vous êtes invité à démarrer votre version d’évaluation dans différents emplacements de fonctionnalités Defender pour Office 365 dans le portail Microsoft 365 Defender à l’adresse <https://security.microsoft.com>. L’emplacement centralisé pour démarrer votre version d’évaluation se trouve sur la page **Essais** à l’adresse <https://security.microsoft.com/atpEvaluation>.
 
 Le reste de cet article explique la différence entre le mode de blocage du mode audit, la configuration des évaluations et d’autres détails.
+
+Pour obtenir un guide complémentaire sur l’utilisation de votre version d’évaluation, consultez [le playbook Trial : Microsoft Defender pour Office 365](trial-playbook-defender-for-office-365.md).
 
 ## <a name="overview-of-defender-for-office-365"></a>Vue d’ensemble de Defender pour Office 365
 
@@ -100,9 +99,9 @@ Lorsque vous évaluez Defender pour Office 365, les stratégies qui contrôlent 
    - **Tous les utilisateurs** : il s’agit de l’option par défaut et recommandée.
    - **Sélectionner des utilisateurs** : si vous sélectionnez cette option, vous devez sélectionner les destinataires internes auxquels l’évaluation s’applique :
      - **Utilisateurs** : boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie spécifiés.
-     - **Groupes** :
-       - Membres des groupes de distribution spécifiés ou des groupes de sécurité à extension messagerie.
-       - Groupes Microsoft 365 spécifiée.
+     - **Groupes** :
+       - Les membres des groupes de distribution ou des groupes de sécurité activés par courrier spécifiés.
+       - Groupes Microsoft 365 spécifiée
        - **Domaines** : tous les destinataires des [domaines acceptés](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) spécifiés dans votre organisation.
 
      Cliquez dans la zone appropriée, commencez à taper une valeur et sélectionnez la valeur souhaitée dans les résultats. Répétez cette opération autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
@@ -171,9 +170,9 @@ Lorsque vous évaluez Defender pour Office 365, les stratégies qui contrôlent 
    - **Tous les utilisateurs** : il s’agit de l’option par défaut et recommandée.
    - **Sélectionner des utilisateurs** : si vous sélectionnez cette option, vous devez sélectionner les destinataires internes auxquels l’évaluation s’applique :
      - **Utilisateurs** : boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie spécifiés.
-     - **Groupes** :
-       - Membres des groupes de distribution spécifiés ou des groupes de sécurité à extension messagerie.
-       - Groupes Microsoft 365 spécifiée.
+     - **Groupes** :
+       - Les membres des groupes de distribution ou des groupes de sécurité activés par courrier spécifiés.
+       - Groupes Microsoft 365 spécifiée
      - **Domaines** : tous les destinataires des [domaines acceptés](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) spécifiés dans votre organisation.
 
      Cliquez dans la zone appropriée, commencez à taper une valeur et sélectionnez la valeur souhaitée dans les résultats. Répétez cette opération autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
@@ -234,22 +233,22 @@ Les paramètres du Defender pour Office 365 créés spécifiquement pour l’év
 |AdminDisplayName|Stratégie d’évaluation|
 |AuthenticationFailAction|MoveToJmf|
 |Activé|Vrai|
-|EnableFirstContactSafetyTips|Faux|
+|EnableFirstContactSafetyTips|False|
 |EnableMailboxIntelligence|Vrai|
 |EnableMailboxIntelligenceProtection|Vrai|
 |EnableOrganizationDomainsProtection|Faux|
 |EnableSimilarDomainsSafetyTips|False|
-|EnableSimilarUsersSafetyTips|Faux|
+|EnableSimilarUsersSafetyTips|False|
 |EnableSpoofIntelligence|Vrai|
-|EnableSuspiciousSafetyTip|False|
+|EnableSuspiciousSafetyTip|Faux|
 |EnableTargetedDomainsProtection|False|
 |EnableTargetedUserProtection|False|
 |EnableUnauthenticatedSender|Vrai|
-|EnableUnusualCharactersSafetyTips|Faux|
+|EnableUnusualCharactersSafetyTips|False|
 |EnableViaTag|Vrai|
 |Guid|Valeur GUID|
 |ImpersonationProtectionState|Manual|
-|IsDefault|Faux|
+|IsDefault|False|
 |MailboxIntelligenceProtectionAction|NoAction|
 |MailboxIntelligenceProtectionActionRecipients|{}|
 |MailboxIntelligenceQuarantineTag|DefaultFullAccessPolicy|
@@ -268,7 +267,7 @@ Les paramètres du Defender pour Office 365 créés spécifiquement pour l’év
 |AntiSpoofEnforcementType|Élevé|
 |AuthenticationSafetyTipText|Blanc|
 |AuthenticationSoftPassSafetyTipText|Blanc|
-|EnableAuthenticationSafetyTip|Faux|
+|EnableAuthenticationSafetyTip|False|
 |EnableAuthenticationSoftPassSafetyTip|False|
 |PolicyTag|Blanc|
 |SimilarUsersSafetyTipsCustomText|Blanc|
@@ -289,7 +288,7 @@ Les paramètres du Defender pour Office 365 créés spécifiquement pour l’év
 |AdminDisplayName|Stratégie d’évaluation|
 |ConfidenceLevelThreshold|80|
 |Activer|Vrai|
-|EnableOrganizationBranding|Faux|
+|EnableOrganizationBranding|False|
 |Guid|Valeur GUID|
 |IsBuiltInProtection|False|
 |IsDefault|False|
@@ -297,7 +296,7 @@ Les paramètres du Defender pour Office 365 créés spécifiquement pour l’év
 |OperationMode|Delay|
 |QuarantineTag|AdminOnlyAccessPolicy|
 |RecommendedPolicyType|Évaluation|
-|Rediriger|Faux|
+|Rediriger|False|
 |RedirectAddress|{}|
 |ScanTimeout|30|
 
@@ -311,12 +310,12 @@ Les paramètres du Defender pour Office 365 créés spécifiquement pour l’év
 |DeliverMessageAfterScan|Vrai|
 |DisableUrlRewrite|Vrai|
 |DoNotRewriteUrls|{}|
-|EnableForInternalSenders|Faux|
-|EnableOrganizationBranding|Faux|
+|EnableForInternalSenders|False|
+|EnableOrganizationBranding|False|
 |EnableSafeLinksForTeams|Vrai|
 |Guid|Valeur GUID|
 |IsBuiltInProtection|False|
-|IsDefault|False|
+|IsDefault|Faux|
 |IsEnabled|Vrai|
 |LocalizedNotificationTextList|{}|
 |Nom|« EvaluationPolicy »|

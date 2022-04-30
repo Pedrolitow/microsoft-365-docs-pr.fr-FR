@@ -1,5 +1,5 @@
 ---
-title: Chiffrement du service avec la clé client
+title: Chiffrement de service avec la clé client Microsoft Purview
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,17 +14,19 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
-description: Dans cet article, vous allez découvrir comment le chiffrement de service fonctionne avec la clé client dans Microsoft 365.
-ms.openlocfilehash: 65098994a6883fdadd3106b74b25a2251239fb3a
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Dans cet article, vous allez découvrir le fonctionnement du chiffrement de service avec la clé client Microsoft Purview.
+ms.openlocfilehash: efb82a38c2f3a2e07d695425f36a17eebdbdf5ec
+ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761084"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65145209"
 ---
-# <a name="service-encryption-with-customer-key"></a>Chiffrement du service avec la clé client
+# <a name="service-encryption-with-microsoft-purview-customer-key"></a>Chiffrement de service avec la clé client Microsoft Purview
 
-Microsoft 365 fournit un chiffrement de base au niveau du volume activé via BitLocker et Distributed Key Manager (DKM). Microsoft 365 offre une couche de chiffrement supplémentaire pour votre contenu. Ce contenu inclut des données de Exchange Online, Skype for Business, SharePoint Online, OneDrive Entreprise et Microsoft Teams.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Microsoft 365 fournit un chiffrement de base au niveau du volume activé via BitLocker et Distributed Key Manager (DKM). Microsoft 365 offre une couche de chiffrement supplémentaire pour votre contenu. Ce contenu inclut des données de Exchange Online, Skype Entreprise, SharePoint Online, OneDrive Entreprise et Microsoft Teams.
 
 ## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>Fonctionnement du chiffrement de service, de BitLocker et de la clé client
 
@@ -40,7 +42,7 @@ La clé client chiffre uniquement les données au repos dans le cloud. La clé c
 
 ## <a name="about-data-encryption-policies"></a>À propos des stratégies de chiffrement des données
 
-Une stratégie de chiffrement des données (DEP) définit la hiérarchie de chiffrement. Cette hiérarchie est utilisée par le service pour chiffrer les données à l’aide de chacune des clés que vous gérez et de la clé de disponibilité protégée par Microsoft. Vous créez des dep à l’aide d’applets de commande PowerShell, puis affectez ces DEP pour chiffrer les données d’application. Il existe trois types de DEP pris en charge par Microsoft 365 clé client, chaque type de stratégie utilise des applets de commande différentes et fournit une couverture pour un type de données différent. Les dep que vous pouvez définir sont les suivantes :
+Une stratégie de chiffrement des données (DEP) définit la hiérarchie de chiffrement. Cette hiérarchie est utilisée par le service pour chiffrer les données à l’aide de chacune des clés que vous gérez et de la clé de disponibilité protégée par Microsoft. Vous créez des dep à l’aide d’applets de commande PowerShell, puis affectez ces DEP pour chiffrer les données d’application. Il existe trois types de dep pris en charge par customer key, chaque type de stratégie utilise des applets de commande différentes et fournit une couverture pour un type de données différent. Les dep que vous pouvez définir sont les suivantes :
 
 **DEP pour plusieurs charges de travail Microsoft 365** Ces DEP chiffrent les données sur plusieurs charges de travail M365 pour tous les utilisateurs au sein du locataire. Ces charges de travail sont les suivantes :
 
@@ -52,7 +54,8 @@ Une stratégie de chiffrement des données (DEP) définit la hiérarchie de chif
 - Teams messages d’état
 - Informations sur l’utilisateur et le signal pour Exchange Online
 - Exchange Online boîtes aux lettres qui ne sont pas déjà chiffrées par des dep de boîte aux lettres
-- Protection des données Microsoft :
+- Stockage du journal d’audit unifié
+- Microsoft Purview Information Protection :
 
   - Données de correspondance de données exactes (EDM), y compris les schémas de fichier de données, les packages de règles et les sels utilisés pour hacher les données sensibles. Pour EDM et Microsoft Teams, le DEP multi-charge de travail chiffre les nouvelles données à partir du moment où vous affectez le DEP au locataire. Pour Exchange Online, customer key chiffre toutes les données existantes et nouvelles.
 
@@ -93,7 +96,7 @@ La clé client utilise différents chiffrements de chiffrement pour chiffrer les
 
 La hiérarchie de clés utilisée pour les DEP qui chiffrent les données pour plusieurs charges de travail Microsoft 365 est similaire à la hiérarchie utilisée pour les DEP pour les boîtes aux lettres Exchange Online individuelles. La seule différence est que la clé de boîte aux lettres est remplacée par la clé de charge de travail Microsoft 365 correspondante.
 
-#### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>Chiffrements utilisés pour chiffrer des clés pour Exchange Online et Skype for Business
+#### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>Chiffrements utilisés pour chiffrer des clés pour Exchange Online et Skype Entreprise
 
 ![Chiffrement des chiffrements pour Exchange Online clé client.](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 

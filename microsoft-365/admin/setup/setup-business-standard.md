@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Lorsque vous achetez Microsoft 365 Business Standard, vous avez la possibilité d’utiliser un domaine que vous possédez ou d’en acheter un pendant l’inscription.
-ms.openlocfilehash: 791f719f50809f2aa178ca2ab72471aea534e111
-ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
+ms.openlocfilehash: a08f5eb5c0a1bb2a77242f4b661c683310568d81
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64638024"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092820"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>Configurer Microsoft 365 Business Standard avec un domaine nouveau ou existant
 

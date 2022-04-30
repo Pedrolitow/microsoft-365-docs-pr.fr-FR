@@ -1,5 +1,5 @@
 ---
-title: Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
+title: Appliquer automatiquement une étiquette de rétention
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des stratégies de rétention d’étiquetage automatique afin de pouvoir appliquer automatiquement des étiquettes pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas
-ms.openlocfilehash: 8c3df81eabb0d67993825d95e390d3e94c7a9bd7
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 2c1ea20f9b663ca8cee59043bbe6399f5bae66f1
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64762010"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "65145270"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -63,7 +65,7 @@ Utilisez les instructions suivantes pour les deux étapes d’administration.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-L’administrateur général de votre organisation dispose de toutes les autorisations pour créer et gérer les étiquettes de rétention et leurs stratégies. Si vous ne vous connectez pas en tant qu’administrateur général, consultez les informations d’autorisation pour la[gestion des enregistrements](get-started-with-records-management.md#permissions) ou la [gouvernance des informations](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels), en fonction de la solution que vous utilisez.
+L’administrateur général de votre organisation dispose de toutes les autorisations pour créer et gérer les étiquettes de rétention et leurs stratégies. Si vous ne vous connectez pas en tant qu’administrateur général, consultez les informations d’autorisation pour la [gestion des enregistrements](get-started-with-records-management.md#permissions) ou la [gestion du cycle de vie des données](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels), en fonction de la solution que vous utilisez.
 
 Vérifiez que vous avez [créé les étiquettes de rétention](file-plan-manager.md#create-retention-labels)que vous souhaitez appliquer aux éléments.
 
@@ -73,13 +75,13 @@ Déterminez avant de créer votre stratégie d’étiquette de rétention si ell
 
 Lorsque vous créez une stratégie d’application automatique, vous sélectionnez une étiquette de rétention pour l’appliquer automatiquement à du contenu, en fonction des conditions spécifiées.
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), accédez à l’un des emplacements suivants :
+1. Dans le [Centre de conformité Microsoft Purview](https://compliance.microsoft.com/), accédez à l’un des emplacements suivants :
     
     - Si vous utilisez la gestion des enregistrements :
         - **Solutions** > **Gestion des enregistrements** > > onglet des **Stratégies d’étiquette** > **Appliquer automatiquement une étiquette**
     
-    - Si vous utilisez la gouvernance des informations :
-        - **Solutions** > **Gouvernance d’informations** > **Stratégies des étiquettes** onglet > **Auto-appliquer une étiquette**
+    - Si vous utilisez la solution de gestion du cycle de vie des données :
+        - **Solutions** > **Gestion du cycle de vie des données** > **Stratégies des étiquettes** onglet > **Appliquer automatiquement une étiquette**
     
     Vous ne voyez pas immédiatement votre solution dans le volet de navigation ? Sélectionnez d'abord **Afficher tout**.
 
@@ -147,7 +149,7 @@ En outre, les éléments SharePoint qui sont dans les brouillons ou qui n’ont 
 > 
 > Bien que les boîtes aux lettres de groupe soient généralement incluses en sélectionnant l’emplacement des groupes **Microsoft 365,** pour cette configuration de stratégie spécifique, l’emplacement des groupes inclut uniquement les sites SharePoint connectés à un groupe Microsoft 365.
 
-Lorsque vous créez des étiquettes de rétention d’application automatique pour des informations sensibles, vous voyez s’afficher la même liste de modèles de stratégie que lorsque vous créez une stratégie de protection contre la perte de données. Chaque modèle est préconfiguré pour rechercher des types spécifiques d’informations sensibles. Dans l’exemple suivant, les types d’informations sensibles proviennent de la catégorie **Confidentialité** et du modèle **Informations d’identification personnelle (PII) des États-Unis** :
+Lorsque vous créez des stratégies d’étiquette de rétention d’application automatique pour des informations sensibles, vous voyez s’afficher la même liste de modèles de stratégie que lorsque vous créez une stratégie de protection contre la perte de données (DLP) Microsoft Purview. Chaque modèle est préconfiguré pour rechercher des types spécifiques d’informations sensibles. Dans l’exemple suivant, les types d’informations sensibles proviennent de la catégorie **Confidentialité** et du modèle **Informations d’identification personnelle (PII) des États-Unis** :
 
 ![Modèles de stratégies avec des types d’informations sensibles](../media/sensitive-info-configuration.png)
 
@@ -341,7 +343,7 @@ Lorsque vous appliquez automatiquement des étiquettes de conservation basées s
   
 ![Diagramme indiquant quand les étiquettes d’application automatique prennent effet.](../media/retention-labels-autoapply-timings.png)
 
-Si les étiquettes attendues n’apparaissent pas après sept jours, consultez l’**État** de la stratégie d’application automatique en sélectionnant celle-ci dans la page des **Stratégies d’étiquette** dans le centre de conformité. Si vous voyez l’état de **Désactivé (erreur)** et dans les détails des emplacements, consultez un message indiquant qu’il prend plus de temps que prévu pour déployer la stratégie (pour SharePoint) ou essayez de redéployer la stratégie (pour OneDrive), essayez d’exécuter la commande PowerShell [RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) pour réessayer la distribution de la stratégie :
+Si les étiquettes attendues n’apparaissent pas après sept jours, vérifiez l’**État** de la stratégie d’application automatique en sélectionnant celle-ci dans la page des **Stratégies d’étiquette** dans le portail de conformité Microsoft Purview. Si vous voyez l’état de **Désactivé (erreur)** et dans les détails des emplacements, consultez un message indiquant qu’il prend plus de temps que prévu pour déployer la stratégie (pour SharePoint) ou essayez de redéployer la stratégie (pour OneDrive), essayez d’exécuter la commande PowerShell [RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) pour réessayer la distribution de la stratégie :
 
 1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 

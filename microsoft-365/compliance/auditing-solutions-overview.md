@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Découvrez comment auditer les activités des utilisateurs et administrateurs de votre organisation Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cc70060872c9f416120e859673ad9a3799322048
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4dd26229e5ca29344524238903dd2e972ac09ad7
+ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100872"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65145352"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Solutions d’audit dans Microsoft Purview
 
@@ -53,7 +53,7 @@ Microsoft Purview Audit (Standard) vous offre la possibilité de consigner et de
   - [Référence de la cmdlet Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
   - [Utiliser un script PowerShell pour effectuer une recherche dans le journal d’audit](audit-log-search-script.md)
 
-- **Exporter des enregistrements d’audit dans un fichier CSV**. Après avoir exécuté l’outil de recherche dans le journal d’audit dans le Centre de conformité, vous pouvez exporter les enregistrements d’audit renvoyés par la recherche dans un fichier CSV. Vous pouvez ainsi trier et filtrer des fichiers Microsoft Excel sur différentes propriétés d’enregistrement d’audit. Vous pouvez également utiliser la fonctionnalité de transformation de Power Query d’Excel pour diviser chaque propriété de l’objet JSON AuditData dans sa propre colonne. Cela vous permet d’afficher et de comparer efficacement des données similaires pour différents événements. Pour plus d’informations, consultez [Exporter, configurer et afficher des enregistrements du journal d’audit](export-view-audit-log-records.md).
+- **Exporter des enregistrements d’audit dans un fichier CSV**. Après avoir exécuté l’outil de recherche dans le journal d’audit dans le portail de conformité, vous pouvez exporter les enregistrements d’audit renvoyés par la recherche dans un fichier CSV. Vous pouvez ainsi trier et filtrer des fichiers Microsoft Excel sur différentes propriétés d’enregistrement d’audit. Vous pouvez également utiliser la fonctionnalité de transformation de Power Query d’Excel pour diviser chaque propriété de l’objet JSON AuditData dans sa propre colonne. Cela vous permet d’afficher et de comparer efficacement des données similaires pour différents événements. Pour plus d’informations, consultez [Exporter, configurer et afficher des enregistrements du journal d’audit](export-view-audit-log-records.md).
 
 - **Accès aux journaux d’audit via l’API Activité de gestion d’Office 365**. Une troisième méthode pour accéder et récupérer des enregistrements d’audit consiste à utiliser l’API Activité de gestion d’Office 365. Cela permet aux organisations de conserver les données d’audit pendant des périodes plus longues que les 90 jours par défaut, et de les importer dans une solution SIEM. Pour plus d’informations, consultez [Référence de l’API Activité de gestion Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
@@ -90,7 +90,7 @@ Le tableau suivant compare les fonctionnalités clés disponibles dans Audit (St
 |Rétention du journal d’audit de 10 ans <sup>2</sup>||![Pris en charge](../media/check-mark.png)|
 |Stratégies de rétention du journal d'audit||![Pris en charge](../media/check-mark.png)|
 |Événements importants et essentiels.||![Pris en charge](../media/check-mark.png)|
-||||
+
 > [!NOTE]
 > <sup>1</sup> Audit (Premium) inclut un accès à bande passante plus élevée à l’API Office 365 Management Activity, qui fournit un accès plus rapide aux données d’audit.<br/><sup>2</sup> En plus de la licence requise pour Audit (Premium) (décrite dans la section suivante), un utilisateur doit se voir attribuer une licence supplémentaire de conservation du journal d’audit de 10 ans pour conserver ses enregistrements d’audit pendant 10 ans.
 
@@ -100,14 +100,14 @@ Les sections suivantes identifient les exigences de licence pour Audit (Standard
 
 ### <a name="audit-standard"></a>Audit (Standard)
 
-- Abonnement Microsoft 365 Business Basic
-- Abonnement Microsoft 365 Apps for business
-- Abonnement Microsoft 365 Entreprise E3
-- Microsoft 365 Business Premium
-- Abonnement Microsoft 365 Éducation A3
-- Abonnement Microsoft 365 pour le gouvernement américain G3
-- Abonnement Microsoft 365 pour le gouvernement américain G1
-- Abonnement Microsoft 365 Première ligne F1 ou F3 ou module complémentaire Sécurité F5
+- Abonnement Microsoft Purview Business Basic
+- Abonnement Microsoft Purview Apps for business
+- Abonnement Microsoft Purview Entreprise E3
+- Microsoft Purview Business Premium
+- Abonnement Microsoft Purview Éducation A3
+- Abonnement Microsoft Purview Secteur public G3
+- Abonnement Microsoft Purview Secteur public G1
+- Abonnement Microsoft Purview Première ligne F1 ou F3 ou module complémentaire Sécurité F5
 - Abonnement Office 365 Entreprise E3
 - Abonnement Office 365 Entreprise E1
 - Abonnement Office 365 Éducation A1
@@ -158,16 +158,25 @@ Si votre organisation a un abonnement qui prend en charge Audit (Premium), effec
   
    - L’activation de l’application/du plan de service Audit (Premium) doit être destinée à ces utilisateurs.
   
-   - L'activation de l'audit des événements essentiels, puis l'activation de l'application/du plan de service d'audit avancé pour ces utilisateurs.
+   - Activation de l’audit des événements essentiels, puis activation du plan d’application/service d’audit (Premium) pour ces utilisateurs.
 
 2. Activer la journalisation des événements d’audit (Premium) lorsque les utilisateurs effectuent des recherches dans Exchange Online et SharePoint Online.
 
-3. Configurer des stratégies de rétention du journal d'audit. En plus de la stratégie par défaut qui conserve les enregistrements d’audit Exchange, SharePoint et Azure AD pendant un an, vous pouvez créer des stratégies de rétention supplémentaires pour le journal d’audit afin de répondre aux exigences des équipes de sécurité, informatique et de conformité de votre organisation.
+3. Configurer des stratégies de rétention du journal d’audit. En plus de la stratégie par défaut qui conserve les enregistrements d’audit Exchange, SharePoint et Azure AD pendant un an, vous pouvez créer des stratégies de rétention supplémentaires pour le journal d’audit afin de répondre aux exigences des équipes de sécurité, informatique et de conformité de votre organisation.
 
 4. Rechercher des événements d’audit (Premium) cruciaux et d’autres activités lors de la conduite d’enquêtes médico-légales. Après avoir terminé les étapes 1 et 2, vous pouvez rechercher dans le journal d’audit des événements d’audit (Premium) et d’autres activités lors d’enquêtes judiciaires sur des comptes compromis et d’autres types d’enquêtes de sécurité ou de conformité.
 
 Pour des instructions plus détaillées, voir [Configurer l’audit (Premium)](set-up-advanced-audit.md).
 
+## <a name="encrypt-audit-records-using-customer-key"></a>Chiffrer les enregistrements d’audit à l’aide de la clé client
+
+Vous pouvez activer le chiffrement de clé client pour les enregistrements d’audit. L’audit s’appuie sur le [chiffrement de service avec la clé client](customer-key-overview.md) pour chiffrer les informations sensibles dans les données d’audit de votre organisation. L’implémentation de la clé client offre une protection supplémentaire en empêchant les systèmes non autorisés ou le personnel du centre de données Microsoft d’afficher vos données d’audit dans le pipeline d’audit et au repos. L’utilisation de la clé client pour chiffrer vos données d’audit vous permet également de respecter les obligations réglementaires ou de conformité, car votre organisation fournit et contrôle les clés de chiffrement.
+
+Pour implémenter la clé client pour l’audit, vous devez créer une stratégie de chiffrement des données (DEP) multi-charge de travail, qui définit la hiérarchie de chiffrement. Pour obtenir des instructions détaillées pas à pas, consultez la rubrique [Configurer la clé client](customer-key-set-up.md).
+
+> [!NOTE]
+> Tous les enregistrements d’audit de votre organisation ne sont pas chiffrés. Le service Microsoft Purview qui génère des enregistrements d’audit spécifiques pour l’activité dans ce service définit si l’enregistrement d’audit est chiffré ou non.
+
 ## <a name="training"></a>Formation
 
-Former votre équipe d’opérations de sécurité, vos administrateurs informatiques et votre équipe d’enquêteurs de conformité aux fondamentaux de l’audit (standard) et de l’audit (premium) peut aider votre organisation à démarrer plus rapidement en utilisant l’audit pour vous aider dans vos enquêtes. Microsoft 365 fournit la ressource suivante pour aider ces utilisateurs de votre organisation à démarrer l’audit: [Décrire les fonctionnalités eDiscovery et d’audit de Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+Former votre équipe d’opérations de sécurité, vos administrateurs informatiques et votre équipe d’enquêteurs de conformité aux fondamentaux de l’audit (standard) et de l’audit (premium) peut aider votre organisation à démarrer plus rapidement en utilisant l’audit pour vous aider dans vos enquêtes. Microsoft Purview fournit la ressource suivante pour aider ces utilisateurs de votre organisation à démarrer l’audit : [Décrire les fonctionnalités eDiscovery et d’audit de Microsoft Purview](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
