@@ -453,7 +453,7 @@
               href: ome-sensitive-info-types.md
             - name: Gérer le cryptage des messages
               href: manage-office-365-message-encryption.md
-            - name: Log d’activités du portail des messages chiffrés
+            - name: Journal d’activités du portail des messages chiffrés
               href: ome-message-access-logs.md
             - name: Chiffrement avancé de messages
               href: ome-advanced-message-encryption.md
@@ -1005,6 +1005,8 @@
           href: detailed-properties-in-the-office-365-audit-log.md
         - name: Activer ou désactiver la fonctionnalité d’audit
           href: turn-audit-log-search-on-or-off.md
+        - name: Utiliser la clé client pour chiffrer les enregistrements d’audit
+          href: auditing-cmk-encryption.md
         - name: Utiliser le journal d’audit pour rechercher les problèmes courants
           href: auditing-troubleshooting-scenarios.md
         - name: Utiliser le partage d’audit dans le journal d’audit

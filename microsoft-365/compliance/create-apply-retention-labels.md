@@ -1,5 +1,5 @@
 ---
-title: Publier des étiquettes de rétention et les appliquer dans des applications pour conserver ou supprimer du contenu
+title: Publiez et appliquez vos étiquettes de rétention.
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Instructions pour publier des étiquettes de rétention afin de pouvoir ensuite les appliquer dans les applications pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas.
-ms.openlocfilehash: a1d8a32a9190ddb645160fc475fb72a9d1dcd72e
-ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
+ms.openlocfilehash: c2088afd895b47945bea056c940e564b4dd770fb
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64638396"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "65145380"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publier des étiquettes de rétention et les appliquer dans des applications
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -48,7 +50,7 @@ Utilisez les instructions suivantes pour les deux étapes d’administration.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-L’administrateur général de votre organisation dispose de toutes les autorisations pour créer et gérer les étiquettes de rétention et leurs stratégies. Si vous ne vous connectez pas en tant qu’administrateur général, consultez les informations d’autorisation pour la[gestion des enregistrements](get-started-with-records-management.md#permissions) ou la [gouvernance des informations](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels), en fonction de la solution que vous utilisez.
+L’administrateur général de votre organisation dispose de toutes les autorisations pour créer et gérer les étiquettes de rétention et leurs stratégies. Si vous ne vous connectez pas en tant qu’administrateur général, consultez les informations d’autorisation pour la [gestion des enregistrements](get-started-with-records-management.md#permissions) ou la [gestion du cycle de vie des données](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels), en fonction de la solution que vous utilisez.
 
 Vérifiez que vous avez [créé les étiquettes de rétention](file-plan-manager.md#create-retention-labels)que vous souhaitez appliquer aux éléments.
 
@@ -56,15 +58,15 @@ Vérifiez que vous avez [créé les étiquettes de rétention](file-plan-manager
 
 Déterminez avant de créer votre stratégie d’étiquette de rétention si elle sera **adaptative** ou **statique.** Pour plus d’informations, voir étendues de stratégie adaptative ou statique [pour la rétention.](retention.md#adaptive-or-static-policy-scopes-for-retention) Si vous décidez d’utiliser une stratégie adaptative, vous devez créer une ou plusieurs étendues adaptatives avant de créer votre stratégie d’étiquette de rétention, puis les sélectionner au cours du processus de création de stratégie d’étiquette de rétention. Pour obtenir des instructions, [consultez les informations de configuration pour les étendues adaptatives.](retention-settings.md#configuration-information-for-adaptive-scopes)
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, accédez à l’un des emplacements suivants :
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a>, accédez à l’un des emplacements suivants :
     
     - Si vous utilisez la gestion des enregistrements :
         - **Solutions** > **Gestion des enregistrements** > > **Stratégies d’étiquette** onglet > **Publier des étiquettes**
     
-    - Si vous utilisez la gouvernance des informations :
-        - **Solutions** > **Gouvernance d’informations** > **Stratégies d’étiquette** onglet > **Publier des étiquettes**
+    - Si vous utilisez la solution de gestion du cycle de vie des données :
+        - **Solutions** > **Gestion du cycle de vie des données** > **Stratégies d’étiquettes** onglet > **Publier des étiquettes**
     
-    Votre solution n’apparaît pas immédiatement dans le volet de navigation ? Sélectionnez d’abord **Afficher tout**. 
+    Vous ne voyez pas immédiatement votre solution dans le volet de navigation ? Sélectionnez d'abord **Afficher tout**. 
 
 2. Suivez les invites pour créer la stratégie d’étiquette de rétention. Faites attention au nom que vous choisissez pour la stratégie, car cela ne peut pas être modifié une fois la stratégie enregistrée.
 
@@ -90,7 +92,7 @@ Si vous publiez des étiquettes de rétention dans Exchange, l’affichage de ce
 
 ![Diagramme du moment où les étiquettes publiées prennent effet.](../media/retention-labels-published-timings.png)
 
-Si les étiquettes n’apparaissent pas après sept jours, consultez l’**État** de la stratégie d’étiquette en sélectionnant celle-ci dans la page des **Stratégies d’étiquette** dans le centre de conformité. Si vous voyez **(erreur)** inclus dans l’état et que les détails des emplacements affichent un message indiquant qu’il faut plus de temps que prévu pour déployer la stratégie ou pour essayer de redéployer la stratégie, essayez d’exécuter la commande [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) ou [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell pour réessayer la distribution de stratégie :
+Si les étiquettes attendues n’apparaissent pas après sept jours, vérifiez l’**État** de la stratégie d’étiquette en sélectionnant celle-ci dans la page des **Stratégies d’étiquette** dans le portail de conformité Microsoft Purview. Si vous voyez **(erreur)** inclus dans l’état et que les détails des emplacements affichent un message indiquant qu’il faut plus de temps que prévu pour déployer la stratégie ou pour essayer de redéployer la stratégie, essayez d’exécuter la commande [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) ou [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell pour réessayer la distribution de stratégie :
 
 1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 
