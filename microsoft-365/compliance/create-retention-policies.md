@@ -1,5 +1,5 @@
 ---
-title: Créer et configurer des stratégies de rétention pour conserver ou supprimer automatiquement le contenu
+title: Conserver ou supprimer automatiquement du contenu à l’aide de politiques de conservation
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 5a57093ed4ecd5b87a62701e3c055888ed16a5ca
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: 22373fddf6a4ccac718f9fede9d1bbc40b92681d
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595320"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "65145314"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -40,7 +42,7 @@ Pour en savoir plus sur les stratégies de rétention et le fonctionnement de la
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-L’administrateur général de votre organisation dispose de toutes les autorisations pour créer et gérer les stratégies de confidentialité. Si vous n'êtes pas connecté en tant qu'administrateur général, consultez les [ informations sur les autorisations pour la gouvernance de l'information](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels).
+L’administrateur général de votre organisation dispose de toutes les autorisations pour créer et gérer les stratégies de confidentialité. Si vous ne vous connectez pas en tant qu'administrateur général, consultez les [informations sur les autorisations pour la gestion du cycle de vie des données](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels).
 
 Déterminez avant de créer votre stratégie de rétention si elle sera **adaptative** ou **statique.** Pour plus d’informations, voir étendues de stratégie adaptative ou statique [pour la rétention.](retention.md#adaptive-or-static-policy-scopes-for-retention) Si vous décidez d’utiliser une stratégie adaptative, vous devez créer une ou plusieurs étendues adaptatives avant de créer votre stratégie de rétention, puis les sélectionner au cours du processus de création de stratégie de rétention. Pour obtenir des instructions, [consultez les informations de configuration pour les étendues adaptatives.](retention-settings.md#configuration-information-for-adaptive-scopes)
 
@@ -76,7 +78,7 @@ Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez égal
 > [!NOTE]
 > Les stratégies de rétention prennent désormais en charge les [canaux partagés](/MicrosoftTeams/shared-channels), actuellement en préversion. Lorsque vous configurez les paramètres de rétention pour l'emplacement **des messages du canal Teams**, si une équipe a des canaux partagés, ils héritent des paramètres de rétention de leur équipe parente.
 
-1. À partir du [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) sélectionnez **Information Governance** > **Stratégies de rétention**.
+1. Dans le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com/), sélectionnez **Gestion du cycle de vie des données** > **Stratégies de rétention**.
 
 2. Sélectionnez **nouvelle stratégie de rétention** pour démarrer la configuration **Créer une stratégie de rétention** et nommez votre nouvelle stratégie de rétention.
 
@@ -132,7 +134,7 @@ Il est possible qu’une stratégie de conservation appliquée aux groupes Micro
 >
 > Pour utiliser cette fonctionnalité, votre réseau Yammer doit être [Mode Natif](/yammer/configure-your-yammer-network/overview-native-mode), et non Mode Hybride.
 
-1. À partir du [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) sélectionnez **Information Governance** > **Stratégies de rétention**.
+1. Dans le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com/), sélectionnez **Gestion du cycle de vie des données** > **Stratégies de rétention**.
 
 2. Sélectionnez **Nouvelle stratégie de rétention** pour créer une stratégie de rétention.
 
@@ -180,7 +182,7 @@ Utilisez les instructions suivantes pour les stratégies de rétention qui s’a
 - Groupes Microsoft 365
 - Skype Entreprise
 
-1. À partir du [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) sélectionnez **Information Governance** > **Stratégies de rétention**.
+1. Dans le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com/), sélectionnez **Gestion du cycle de vie des données** > **Stratégies de rétention**.
 
 2. Sélectionnez **nouvelle stratégie de rétention** pour démarrer la configuration **Créer une stratégie de rétention** et nommez votre nouvelle stratégie de rétention.
 
@@ -210,7 +212,7 @@ Lorsque vous créez et soumettez une stratégie de rétention, l’application d
   
 ![Diagramme de l’application de la stratégie de rétention.](../media/retention-policy-timings.png)
 
-Tout d’abord, la stratégie de rétention doit être distribuée aux emplacements que vous avez sélectionnés, puis appliquée au contenu. Vous pouvez toujours vérifier l’état de distribution de la stratégie de rétention en la sélectionnant dans la page **Stratégies de rétention** dans le Centre de conformité. Dans le volet volant, si vous voyez **(Error)** inclus dans l'état, et dans les détails des emplacements, un message indiquant que le déploiement de la stratégie prend plus de temps que prévu ou que vous devez essayer de redéployer la stratégie, essayez d'exécuter la commande PowerShell [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) ou [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) pour réessayer la distribution de la stratégie :
+Tout d’abord, la stratégie de rétention doit être distribuée aux emplacements que vous avez sélectionnés, puis appliquée au contenu. Vous pouvez toujours vérifier l’état de distribution de la stratégie de rétention en la sélectionnant dans la page **Stratégies de rétention** du portail de conformité Microsoft Purview. Dans le volet volant, si vous voyez **(Error)** inclus dans l'état, et dans les détails des emplacements, un message indiquant que le déploiement de la stratégie prend plus de temps que prévu ou que vous devez essayer de redéployer la stratégie, essayez d'exécuter la commande PowerShell [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) ou [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) pour réessayer la distribution de la stratégie :
 
 1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 
@@ -236,6 +238,6 @@ Certains paramètres ne peuvent pas être modifiés après la création et l’e
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-Si certains éléments pour Exchange, SharePoint, OneDrive ou Groupes Microsoft 365 ont besoin de paramètres de rétention différents des paramètres de stratégie de rétention que vous avez configurés, [créez des étiquettes de rétention pour ces exceptions.](create-retention-labels-information-governance.md)
+Si certains éléments pour Exchange, SharePoint, OneDrive ou Groupes Microsoft 365 ont besoin de paramètres de rétention différents des paramètres de stratégie de rétention que vous avez configurés, [créez des étiquettes de rétention pour ces exceptions.](create-retention-labels-data-lifecycle-management.md)
 
-Toutefois, si vous cherchez à gérer le cycle de vie d'éléments de grande valeur pour des raisons commerciales, juridiques ou réglementaires, [Utilisez le plan de gestion de fichiers pour créer et gérer des étiquettes de rétention](file-plan-manager.md).
+Toutefois, si vous cherchez à gérer des éléments de grande valeur pour des exigences commerciales, légales ou réglementaires en matière de tenue de registres, [utilisez le plan de fichiers pour créer et gérer des étiquettes de rétention](file-plan-manager.md).
