@@ -1,13 +1,12 @@
 ---
 title: Rapports dans Microsoft Defender pour les PME
-description: Obtenir une vue d’ensemble des rapports disponibles dans Microsoft Defender pour les PME
+description: Obtenez une vue d’ensemble des rapports de sécurité dans Defender entreprise. Les rapports affichent les menaces, les alertes, les vulnérabilités et l’état de l’appareil détectés.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,17 +15,14 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 5b3a21a45e1b9e90cf5a8a7f666861502205552e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a4fbfc830c349df69180524305339582f444a609
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093259"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174842"
 ---
 # <a name="reports-in-microsoft-defender-for-business"></a>Rapports dans Microsoft Defender pour les PME
-
-> [!NOTE]
-> Microsoft Defender pour les PME est désormais inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Plusieurs rapports sont disponibles dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Cet article décrit ces rapports, comment vous pouvez les utiliser et comment les trouver.
 

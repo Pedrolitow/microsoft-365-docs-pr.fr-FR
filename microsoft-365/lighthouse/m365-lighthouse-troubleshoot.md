@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, obtenez de l’aide pour résoudre les messages d’erreur et les problèmes.
-ms.openlocfilehash: 3ae2737a07815284f2981e8c4debac2d064fc1e9
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 939b81344d2957dc005b71d91e27c09a8bca3c96
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130777"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174239"
 ---
 # <a name="troubleshoot-error-messages-and-problems-in-microsoft-365-lighthouse"></a>Résoudre les messages d’erreur et les problèmes dans Microsoft 365 Lighthouse
 
@@ -54,7 +54,7 @@ Cet article décrit les messages d’erreur et les problèmes que vous pouvez re
 **Cause :** Vos locataires clients ne répondent pas aux critères suivants :
 
 - Doit avoir configuré l’accès délégué pour que le fournisseur de services managés (MSP) puisse gérer le locataire client*
-- Doit avoir au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3 ou Windows 365 Affaires Microsoft Defender pour les PME
+- Doit avoir au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3, Windows 365 Affaires ou Microsoft Defender pour les PME
 - Ne doit pas avoir plus de 1 000 utilisateurs sous licence 
 
 **Résolution:** Le tableau suivant décrit les différents états de locataire qui nécessitent une action et explique comment les résoudre.
@@ -65,7 +65,7 @@ Cet article décrit les messages d’erreur et les problèmes que vous pouvez re
 |--|--|--|
 | Inactif | Le locataire a été retiré à la demande du MSP et n’est plus géré dans Lighthouse. | Vous devez réactiver le locataire. Dans la page **Locataires** , sélectionnez les trois points (autres actions) en regard du locataire que vous souhaitez réactiver, puis sélectionnez Activer le **locataire**. L’affichage des données client initiales dans Lighthouse peut prendre de 24 à 48 heures. |
 | Non éligible - DAP ou GDAP n’est pas configuré | Vous n’avez pas de privilèges d’administrateur DAP ou GDAP configurés avec le locataire, ce qui est requis par Lighthouse. | Configurez les privilèges d’administrateur DAP ou GDAP dans l’Espace partenaires Microsoft. |
-| Inéligible - La licence requise est manquante | Le locataire ne dispose pas d’une licence requise. Ils ont besoin d’au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3 ou Microsoft Defender pour les PME. | Assurez-vous que le client a au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3, Windows 365 Affaires Microsoft Defender pour les PME attribuée. |
+| Inéligible - La licence requise est manquante | Le locataire ne dispose pas d’une licence requise. Ils ont besoin d’au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3 ou Microsoft Defender pour les PME. | Assurez-vous que le locataire a au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3, Windows 365 Affaires ou Microsoft Defender pour les PME attribuée. |
 | Non éligible - Nombre d’utilisateurs dépassé | Le locataire a plus de 1 000 utilisateurs sous licence autorisés par Lighthouse. | Vérifiez que le locataire n’a pas plus de 1 000 utilisateurs sous licence. |
 | Non éligible - Échec de la vérification géographique | Vous et votre client ne résidez pas dans la même région géographique, ce qui est requis par Lighthouse. | Vérifiez que le client réside dans votre région géographique. Si ce n’est pas le cas, vous ne pouvez pas gérer le locataire dans Lighthouse. |
 | En cours de traitement | Lighthouse a découvert le locataire, mais est toujours en cours d’intégration. | Autorisez Lighthouse 48 heures à terminer l’intégration du locataire. |
@@ -132,7 +132,7 @@ Pour les clients ayant des relations DAP, l’administrateur partenaire doit vou
 
 Si les données n’apparaissent toujours pas dans les pages conformité des appareils et gestion des menaces après avoir suivi les instructions de résolution, contactez le support technique. Pour plus d’informations, consultez [Obtenir de l’aide et du support pour Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Problèmes connus avec Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (article)\
 [MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)\

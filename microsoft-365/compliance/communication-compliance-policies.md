@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 47c7ddbc5ce935e8b9fedb7682daa6af468b66b4
-ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
+ms.openlocfilehash: 9be1c581edb1b9564349ae8c3a659d226d6ef312
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65015021"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173794"
 ---
 # <a name="communication-compliance-policies"></a>Stratégies de conformité des communications
 
@@ -112,10 +112,10 @@ Les administrateurs doivent immédiatement affecter des réviseurs personnalisé
 4. Dans le volet **Surveiller les messages signalés par l’utilisateur** , affectez des réviseurs pour la stratégie. Les réviseurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online. Lorsque les réviseurs sont ajoutés à une stratégie, ils reçoivent automatiquement un e-mail qui les avertit de l’attribution à la stratégie et fournit des liens vers des informations sur le processus de révision.
 5. Sélectionnez **Enregistrer**.
 
-Pour empêcher les utilisateurs de signaler Teams messages avec *l’option Signaler un problème*, désactivez **l’option de création de rapports d’utilisateurs finaux** dans le [Centre d’administration Teams](/microsoftteams/manage-teams-in-modern-portal). 
+L’option *Signaler une préoccupation* est activée par défaut et peut être contrôlée via Teams stratégies de messagerie dans le [centre d’administration Teams](/microsoftteams/manage-teams-in-modern-portal). Les utilisateurs de votre organisation recevront automatiquement la stratégie globale, sauf si vous créez et affectez une stratégie personnalisée. Modifiez les paramètres de la stratégie globale ou créez et affectez une ou plusieurs stratégies personnalisées pour activer ou désactiver l’option *Signaler un problème* . Pour en savoir plus, consultez [Gérer les stratégies de messagerie dans Teams](/microsoftteams/messaging-policies-in-teams).  
 
 >[!IMPORTANT]
->Si vous utilisez PowerShell pour désactiver l’option de **création de rapports d’utilisateurs finaux** dans le centre d’administration Teams, vous devez utiliser [Microsoft Teams module cmdlets version 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) ou ultérieure.
+>Si vous utilisez PowerShell pour activer ou désactiver l’option de **création de rapports d’utilisateurs finaux** dans le centre d’administration Teams, vous devez utiliser [Microsoft Teams module cmdlets version 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) ou ultérieure.
 
 ## <a name="storage-limit-notification-preview"></a>Stockage notification de limite (préversion)
 
@@ -240,7 +240,7 @@ Chaque mot que vous entrez et séparez par une virgule est appliqué séparémen
 
 > [!IMPORTANT]
 >
-> Lors de l’importation d’un fichier de dictionnaire personnalisé, chaque mot ou expression doit être séparé par un retour chariot et sur une ligne distincte. Par exemple :
+> Lors de l’importation d’un fichier de dictionnaire personnalisé, chaque mot ou expression doit être séparé par un retour chariot et sur une ligne distincte. Par exemple :
 >
 > *Banquier* <br>
 > *Confidentiel* <br>

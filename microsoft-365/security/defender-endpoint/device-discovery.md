@@ -20,18 +20,18 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f6046576fcea2fe961e73e88168c6254a2d95a40
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 7b76fff060b46cbe13c11eb90f521af61e8900f5
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665049"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172925"
 ---
 # <a name="device-discovery-overview"></a>Vue d’ensemble de la découverte d’appareils
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -116,19 +116,43 @@ Recherchez les recommandations de sécurité liées à « SSH » pour rechercher
 
 ## <a name="use-advanced-hunting-on-discovered-devices"></a>Utiliser la chasse avancée sur les appareils découverts
 
-Vous pouvez utiliser des requêtes De chasse avancée pour obtenir une visibilité sur les appareils découverts.
-Recherchez des détails sur les points de terminaison découverts dans la table DeviceInfo ou des informations relatives au réseau sur ces appareils dans la table DeviceNetworkInfo.
+Vous pouvez utiliser des requêtes de chasse avancées pour obtenir une visibilité sur les appareils découverts. Recherchez des détails sur les appareils découverts dans la table DeviceInfo ou des informations relatives au réseau sur ces appareils dans la table DeviceNetworkInfo.
 
 :::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="Page De repérage avancé sur laquelle les requêtes peuvent être utilisées" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
 
-La découverte d’appareils tire parti Microsoft Defender pour point de terminaison appareils intégrés en tant que source de données réseau pour attribuer des activités à des appareils non intégrés. Cela signifie que si un appareil intégré Microsoft Defender pour point de terminaison communiqué avec un appareil non intégré, les activités sur l’appareil non intégré peuvent être affichées sur la chronologie et via la table DeviceNetworkEvents de repérage avancé.
+### <a name="query-discovered-devices-details"></a>Détails de la requête sur les appareils découverts
 
-Les nouveaux événements sont basés sur des connexions TCP (Transmission Control Protocol) et s’adaptent au schéma DeviceNetworkEvents actuel. Entrée TCP vers l’appareil Microsoft Defender pour point de terminaison activé à partir d’un appareil non Microsoft Defender pour point de terminaison activé.
+Exécutez cette requête, sur la table DeviceInfo, pour retourner tous les appareils découverts, ainsi que les détails les plus détaillés pour chaque appareil :
 
-Les types d’actions suivants ont également été ajoutés :
+```query
+DeviceInfo
+| summarize arg_max(Timestamp, *) by DeviceId  // Get latest known good per device Id
+| where isempty(MergedToDeviceId) // Remove invalidated/merged devices
+| where OnboardingStatus != "Onboarded" 
+```
+
+En appelant la fonction **SeenBy** , dans votre requête de repérage avancée, vous pouvez obtenir des détails sur l’appareil intégré sur lequel un appareil découvert a été vu.Ces informations peuvent vous aider à déterminer l’emplacement réseau de chaque appareil découvert et, par la suite, à l’identifier dans le réseau.  
+
+```query
+DeviceInfo
+| where OnboardingStatus != "Onboarded" 
+| summarize arg_max(Timestamp, *) by DeviceId  
+| where isempty(MergedToDeviceId)  
+| limit 100 
+| invoke SeenBy() 
+| project DeviceId, DeviceName, DeviceType, SeenBy  
+```
+
+Pour plus d’informations, consultez la fonction [SeenBy().](/microsoft-365/security/defender/advanced-hunting-seenby-function)
+
+### <a name="query-network-related-information"></a>Interroger les informations relatives au réseau
+
+La découverte d’appareils tire parti Microsoft Defender pour point de terminaison appareils intégrés en tant que source de données réseau pour attribuer des activités à des appareils non intégrés. Le capteur réseau sur le Microsoft Defender pour point de terminaison appareil intégré identifie deux nouveaux types de connexion :
 
 - ConnectionAttempt : tentative d’établissement d’une connexion TCP (syn)
 - ConnectionAcknowledged - Un accusé de réception indiquant qu’une connexion TCP a été acceptée (syn\ack)
+
+Cela signifie que lorsqu’un appareil non intégré tente de communiquer avec un appareil Microsoft Defender pour point de terminaison intégré, la tentative génère un DeviceNetworkEvent et les activités de l’appareil non intégré peuvent être affichées dans la chronologie de l’appareil intégré et via la table DeviceNetworkEvents de repérage avancé.
 
 Vous pouvez essayer cet exemple de requête :
 

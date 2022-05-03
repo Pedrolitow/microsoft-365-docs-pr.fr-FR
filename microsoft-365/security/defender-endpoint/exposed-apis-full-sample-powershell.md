@@ -1,8 +1,8 @@
 ---
-title: Guide de l’API de recherche avancée avec PowerShell
+title: Guide de repérage avancé avec l’API PowerShell
 ms.reviewer: ''
-description: Utilisez ces exemples de code, interrogeant plusieurs API microsoft Defender for Endpoint.
-keywords: api, api pris en charge, recherche avancée, requête
+description: Utilisez ces exemples de code, en interrogeant plusieurs API Microsoft Defender pour point de terminaison.
+keywords: api, api prises en charge, repérage avancé, requête
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,22 +15,26 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 09/24/2018
+ms.date: 04/27/2022
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6b1f501b942512500c11c7f9fe1e9308d67706e9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c23bf15a188527b2b4c24270fbc1312537da4154
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165317"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174883"
 ---
-# <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>API Microsoft Defender pour point de terminaison à l’aide de PowerShell
+# <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>MICROSOFT DEFENDER POUR POINT DE TERMINAISON API à l’aide de PowerShell
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :** 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour les PME](../defender-business/index.yml)
+
+> [!IMPORTANT]
+> Les fonctionnalités de chasse avancées ne sont pas incluses dans Defender entreprise. Consultez [Comparer les Microsoft Defender pour les PME aux plans Microsoft Defender pour point de terminaison 1 et 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -40,14 +44,14 @@ ms.locfileid: "61165317"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Scénario complet utilisant plusieurs API de Microsoft Defender pour le point de terminaison.
+Scénario complet utilisant plusieurs API de Microsoft Defender pour point de terminaison.
 
 Dans cette section, nous partageons des exemples PowerShell pour 
 - Récupérer un jeton 
-- Utiliser un jeton pour récupérer les dernières alertes dans Microsoft Defender pour le point de terminaison
-- Pour chaque alerte, si l’alerte a une priorité moyenne ou élevée et est toujours en cours, vérifiez combien de fois l’appareil s’est connecté à une URL suspecte.
+- Utiliser un jeton pour récupérer les dernières alertes dans Microsoft Defender pour point de terminaison
+- Pour chaque alerte, si l’alerte a une priorité moyenne ou élevée et est toujours en cours, vérifiez le nombre de connexions de l’appareil à une URL suspecte.
 
-**Conditions préalables**: vous devez d’abord [créer une application.](apis-intro.md)
+**Prérequis** : vous devez d’abord [créer une application](apis-intro.md).
 
 ## <a name="preparation-instructions"></a>Instructions de préparation
 
@@ -57,15 +61,15 @@ Dans cette section, nous partageons des exemples PowerShell pour
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
-Pour plus d’informations, [voir la documentation PowerShell](/powershell/module/microsoft.powershell.security/set-executionpolicy)
+Pour plus d’informations, consultez la [documentation PowerShell](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
 ## <a name="get-token"></a>Obtenir un jeton
 
-Exécutez la commande suivante :
+Exécutez la commande ci-dessous :
 
-- $tenantId : ID du client pour le compte duquel vous souhaitez exécuter la requête (c’est-à-dire, la requête sera exécuté sur les données de ce client)
-- $appId : ID de votre application AAD (l’application doit avoir l’autorisation « Exécuter des requêtes avancées » sur Defender for Endpoint)
-- $appSecret : secret de votre application Azure AD web
+- $tenantId : ID du locataire au nom duquel vous souhaitez exécuter la requête (c’est-à-dire que la requête sera exécutée sur les données de ce locataire)
+- $appId : ID de votre application AAD (l’application doit disposer de l’autorisation « Exécuter des requêtes avancées » sur Defender pour point de terminaison)
+- $appSecret : Secret de votre application Azure AD
 
 - $suspiciousUrl : URL
 

@@ -16,20 +16,20 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la page gestion des menaces.
-ms.openlocfilehash: fea297845446bd8cbb14c81851afb5d51ce33717
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 6e6a49cd1e31132881f45877bc00801d91aff492
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023346"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173761"
 ---
 # <a name="overview-of-the-threat-management-page-in-microsoft-365-lighthouse"></a>Vue d’ensemble de la page Gestion des menaces dans Microsoft 365 Lighthouse 
 
-**S’applique à :**
+**S’applique à :**
 
-- Windows 10
+- Windows
 
-Antivirus Microsoft Defender protège les locataires, les utilisateurs et les appareils contre les menaces logicielles, notamment les virus, les programmes malveillants et les logiciels espions. Il s’agit d’une protection robuste et continue intégrée à Windows 10 et incluse dans Microsoft 365 Business Premium et Microsoft365E3&nbsp;&nbsp;.  
+Antivirus Microsoft Defender protège les locataires, les utilisateurs et les appareils contre les menaces logicielles, notamment les virus, les programmes malveillants et les logiciels espions. Il s’agit d’une protection robuste et continue intégrée à Windows.  
   
 Pour accéder à la page Gestion des menaces dans Microsoft 365 Lighthouse, sélectionnez **Gestion des menaces** dans le volet de navigation gauche pour afficher la posture de sécurité de vos locataires clients contre les menaces. Vous verrez des locataires, des utilisateurs et des appareils qui nécessitent votre attention et des recommandations qui vous aideront à réduire les risques.  
   

@@ -1,39 +1,33 @@
 ---
 title: Configurer des notifications par e-mail pour votre équipe de sécurité
-description: Configurer des notifications par e-mail pour informer les utilisateurs des alertes et des vulnérabilités avec Microsoft Defender pour les PME
+description: Configurez des notifications par e-mail pour informer votre équipe de sécurité des alertes et des vulnérabilités dans Defender entreprise.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a65634a5827e60d710cec56ca10835c73053cb10
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: b6381f5bfa8ebe4f7c23a16d9a214cadb4e511e6
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862849"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174492"
 ---
 # <a name="set-up-email-notifications"></a>Configurer des notifications par e-mail
-
-> [!NOTE]
-> Microsoft Defender pour les PME est désormais inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Vous pouvez configurer des notifications par e-mail pour votre équipe de sécurité. Ensuite, à mesure que des alertes sont générées ou que de nouvelles vulnérabilités sont découvertes, les membres de votre équipe de sécurité sont avertis automatiquement. 
 
 ## <a name="what-to-do"></a>Procédure
 
 1. [Découvrez les types de notifications par e-mail](#types-of-email-notifications).
-
 2. [Afficher et modifier les paramètres de notification par e-mail](#view-and-edit-email-notifications).
-
 3. [Passez à vos étapes suivantes](#next-steps).
 
 
@@ -62,7 +56,7 @@ Lorsque vous configurez des notifications par e-mail, vous pouvez choisir parmi 
 
 Pour afficher ou modifier les paramètres de notification par e-mail de votre entreprise, procédez comme suit :
 
-1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) et connectez-vous.
+1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
 2. Dans le volet de navigation, sélectionnez **Paramètres**, puis sélectionnez **Points de terminaison**. Ensuite, sous **Général**, sélectionnez **Notifications par e-mail**. 
 

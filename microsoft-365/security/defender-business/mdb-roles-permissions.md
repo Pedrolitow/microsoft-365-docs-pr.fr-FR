@@ -1,13 +1,12 @@
 ---
 title: Attribuer des rôles et des autorisations dans Microsoft Defender pour les PME
-description: Découvrez comment attribuer des rôles et des autorisations dans Microsoft Defender pour les PME
+description: Attribuez des rôles à votre équipe de cybersécurité. Découvrez ces rôles et autorisations dans Defender entreprise.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,26 +15,21 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: e4a3be91ff46626654f0c0f7b027557958429b33
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 03295989e1ee44ab43fe0cc53e4029a6c4307ea8
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862673"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172643"
 ---
 # <a name="assign-roles-and-permissions-in-microsoft-defender-for-business"></a>Attribuer des rôles et des autorisations dans Microsoft Defender pour les PME
-
-> [!NOTE]
-> Microsoft Defender pour les PME est désormais inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Pour effectuer des tâches dans le portail Microsoft 365 Defender, telles que la configuration de Microsoft Defender pour les PME, l’affichage de rapports ou l’exécution d’actions de réponse sur les menaces détectées, des autorisations appropriées doivent être attribuées à votre équipe de sécurité. Les autorisations sont accordées par le biais de rôles attribués dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) ou dans [Azure Active Directory](/azure/active-directory/roles/manage-roles-portal). 
 
 ## <a name="what-to-do"></a>Procédure
 
 1. [En savoir plus sur les rôles dans Defender pour Entreprises](#roles-in-defender-for-business).
-
 2. [Affichez ou modifiez les attributions de rôles pour votre équipe de sécurité](#view-or-edit-role-assignments).
-
 3. [Passez à vos étapes suivantes](#next-steps).
 
 >
@@ -56,7 +50,7 @@ Le tableau suivant décrit les trois rôles qui peuvent être attribués dans De
 
 ## <a name="view-or-edit-role-assignments"></a>Afficher ou modifier des attributions de rôles
 
-1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) et connectez-vous.
+1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
 2. Dans le volet de navigation, choisissez **Autorisations & rôles**, puis sous **Azure AD**, sélectionnez **Rôles**.
 

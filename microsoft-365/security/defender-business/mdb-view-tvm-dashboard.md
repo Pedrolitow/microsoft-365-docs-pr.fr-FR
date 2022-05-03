@@ -1,13 +1,12 @@
 ---
 title: Afficher votre tableau de bord Threat & Vulnerability Management dans Microsoft Defender pour les PME
-description: Utilisez votre tableau de bord Threat & Threat & Threat & Vulnerability Management pour afficher les éléments importants à résoudre.
+description: Utilisez votre tableau de bord Threat & Threat & Threat & Vulnerability Management pour afficher les éléments importants à traiter dans Defender pour Entreprises.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,17 +16,14 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: b7761d7ad35f00ec9637c117e9a84b6258ad1904
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 25085dc22fd2f939e10833c98bc4fb599dd5a11f
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101422"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172620"
 ---
 # <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Utiliser votre tableau de bord Threat & Vulnerability Management dans Microsoft Defender pour les PME
-
-> [!NOTE]
-> Microsoft Defender pour les PME est désormais inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Microsoft Defender pour les PME inclut un tableau de bord Threat & Vulnerability Management conçu pour économiser du temps et des efforts de votre équipe de sécurité. En plus de fournir un score d’exposition, vous pouvez également afficher des informations sur les appareils exposés et les recommandations de sécurité. Vous pouvez utiliser votre tableau de bord Threat & Vulnerability Management pour :
 
@@ -46,7 +42,7 @@ Pour en savoir plus sur la gestion des vulnérabilités & des menaces, consultez
 > Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
 >
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Didacticiels et simulations dans Microsoft Defender pour les PME](mdb-tutorials.md)
 - [Intégrer des appareils à Microsoft Defender pour les PME](mdb-onboard-devices.md)

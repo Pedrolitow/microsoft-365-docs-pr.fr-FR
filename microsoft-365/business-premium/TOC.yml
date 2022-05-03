@@ -6,7 +6,7 @@
       href: m365bp-secure-users.md
     - name: "Obtenir Microsoft\_365 Business Premium"
       href: get-microsoft-365-business-premium.md
-    - name: Obtenir Microsoft 365 pour les campagnes
+    - name: Obtenir Microsoft 365 campagnes
       href: get-microsoft-365-campaigns.md
 - name: Fortifier votre environnement
   items:
@@ -16,7 +16,7 @@
           href: m365bp-setup-overview.md
         - name: Configurer Microsoft 365 Business Premium
           href: m365bp-setup.md
-        - name: Configurer Microsoft 365 pour les campagnes
+        - name: Configurer Microsoft 365 for Campaigns
           items:
             - name: S’inscrire
               href: m365-campaigns-sign-up.md
@@ -36,7 +36,7 @@
           href: m365bp-increase-protection.md
 - name: Former votre équipe
   items:
-    - name: Configurer des appareils non managés (BYOD)
+    - name: Configurer des appareils non gérés (BYOD)
       items:
         - name: Vue d’ensemble
           href: m365bp-devices-overview.md
@@ -96,7 +96,7 @@
       href: m365bp-maintain-environment.md
     - name: Supprimer des utilisateurs
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-    - name: Supprimer des données des appareils
+    - name: Supprimer des données sur des appareils
       href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Rétablissement des paramètres d’usine des appareils
       href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
@@ -104,6 +104,8 @@
   items:
     - name: Glossaire des termes
       href: m365bp-glossary.md
+    - name: Forum aux questions sur Microsoft 365 Business Premium
+      href: microsoft-365-business-faqs.yml
     - name: Microsoft 365 contenu administrateur
       href: /microsoft-365/admin/
     - name: Microsoft Defender pour les PME

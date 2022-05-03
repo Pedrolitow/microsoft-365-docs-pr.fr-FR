@@ -1,13 +1,12 @@
 ---
 title: Afficher et gérer les incidents dans Microsoft Defender pour les PME
-description: Découvrez comment afficher & gérer les alertes, répondre aux menaces, gérer les appareils et passer en revue les actions de correction
+description: Affichez et gérez les alertes, répondez aux menaces, gérez les appareils et passez en revue les actions de correction sur les menaces détectées dans Defender entreprise.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,17 +16,14 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ec1d85b72cfbe17e182d3aed573476e4fadfdef6
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 04c8d32c6bb016d4640094013d1f71eb248a8d6c
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861441"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172713"
 ---
 # <a name="view-and-manage-incidents-in-microsoft-defender-for-business"></a>Afficher et gérer les incidents dans Microsoft Defender pour les PME
-
-> [!NOTE]
-> Microsoft Defender pour les PME est désormais inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Lorsque des menaces sont détectées et que des alertes sont déclenchées, des incidents sont créés. L’équipe de sécurité de votre entreprise peut afficher et gérer les incidents dans le portail Microsoft 365 Defender.
 

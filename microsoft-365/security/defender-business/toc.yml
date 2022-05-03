@@ -5,8 +5,10 @@
       items:
         - name: Qu’est-ce que Microsoft Defender pour les PME ?
           href: mdb-overview.md
-        - name: Processus de configuration simplifié
+        - name: Configuration simplifiée
           href: mdb-simplified-configuration.md
+        - name: Playbook d’évaluation - Defender pour Entreprises
+          href: trial-playbook-defender-business.md
         - name: Comparer les offres pour les petites et moyennes entreprises
           href: compare-mdb-m365-plans.md
         - name: Intégration à Microsoft 365 Lighthouse
@@ -49,7 +51,7 @@
           href: mdb-review-remediation-actions.md
         - name: Afficher et utiliser les rapports
           href: mdb-reports.md
-    - name: Gérer les stratégies de sécurité.
+    - name: Afficher ou modifier des stratégies de sécurité
       items:
         - name: 'Afficher, modifier et créer des stratégies'
           href: mdb-view-edit-create-policies.md
@@ -61,7 +63,7 @@
           href: mdb-firewall.md
         - name: Gérer les règles pour les stratégies de pare-feu
           href: mdb-custom-rules-firewall.md
-    - name: Gestion des appareils
+    - name: Surveiller ou gérer des appareils
       items:
         - name: Afficher et gérer des appareils
           href: mdb-manage-devices.md
@@ -71,6 +73,8 @@
           href: mdb-offboard-devices.md
     - name: Informations de référence
       items:
+        - name: Informations de référence sur l’API
+          href: /microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners
         - name: Comment obtenir de l’aide ou contacter le support technique
           href: mdb-get-help.md
         - name: Foire aux questions

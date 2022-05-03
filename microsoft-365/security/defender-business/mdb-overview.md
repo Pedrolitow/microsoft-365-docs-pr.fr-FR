@@ -1,34 +1,30 @@
 ---
-title: Vue d’ensemble de Microsoft Defender pour les PME
-description: En savoir plus sur Microsoft Defender pour les PME, notamment l’installation, la prise en main et l’utilisation des services
+title: Qu’est-ce que Microsoft Defender pour les PME ?
+description: Microsoft Defender pour les PME est une solution de cybersécurité pour les petites et moyennes entreprises. Defender entreprise protège contre les menaces sur vos appareils.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 8e382e8cf1c4863ffa67bc7687f549d6ae0a4f81
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3589b6a0a0cc7af9e2bcfcb11541309042871591
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101466"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173274"
 ---
-# <a name="overview-of-microsoft-defender-for-business"></a>Vue d’ensemble de Microsoft Defender pour les PME
-
-> [!NOTE]
-> Microsoft Defender pour les PME est désormais inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md). 
+# <a name="what-is-microsoft-defender-for-business"></a>Qu’est-ce que Microsoft Defender pour les PME ?
 
 Microsoft Defender pour les PME est une nouvelle solution de sécurité de point de terminaison conçue spécialement pour les petites et moyennes entreprises (jusqu’à 300 employés). Avec cette solution de sécurité de point de terminaison, les appareils de votre entreprise sont mieux protégés contre les ransomware, les programmes malveillants, le hameçonnage et d’autres menaces. 
 
@@ -65,18 +61,19 @@ Avec Defender entreprise, vous pouvez protéger les appareils et les données qu
    - [Découvrez comment obtenir Microsoft Defender pour les PME](get-defender-business.md)
 
 - **Découvrez comment configurer et configurer vos fonctionnalités de protection contre les menaces** 
+   - [Utilisez le playbook d’évaluation : Microsoft Defender pour les PME](trial-playbook-defender-business.md)
+   - [En savoir plus sur le processus de configuration simplifié](mdb-simplified-configuration.md)
    - [Découvrez comment configurer Et configurer Defender entreprise](mdb-setup-configuration.md)
 
 - **Vous aider à commencer à utiliser Defender entreprise**, en commençant par le portail Microsoft 365 Defender 
    - [Naviguer dans le portail Microsoft 365 Defender](mdb-get-started.md)
-   - [Essayer des scénarios, des didacticiels et des simulations en préversion](mdb-tutorials.md)
+   - [Essayer des scénarios, des didacticiels et des simulations](mdb-tutorials.md)
 
 - **Fournir des conseils sur la gestion des appareils et des stratégies de sécurité**
-   - [Gérer les appareils](mdb-manage-devices.md)
+   - [Surveiller ou gérer des appareils](mdb-manage-devices.md)
    - [Afficher ou modifier des stratégies de sécurité](mdb-view-edit-policies.md)
-   - [Gérer les règles personnalisées pour les stratégies de pare-feu](mdb-custom-rules-firewall.md)  
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [En savoir plus sur le processus de configuration simplifié dans Microsoft Defender pour les PME](mdb-simplified-configuration.md)
 - [Découvrez comment obtenir Microsoft Defender pour les PME](get-defender-business.md)

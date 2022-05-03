@@ -1,8 +1,8 @@
 ---
-title: Guide de l’API de recherche avancée avec Python
+title: Guide de repérage avancé avec l’API Python
 ms.reviewer: ''
-description: Découvrez comment interroger à l’aide de l’API Microsoft Defender for Endpoint, à l’aide de Python, avec des exemples.
-keywords: api, api pris en charge, recherche avancée, requête
+description: Découvrez comment interroger à l’aide de l’API Microsoft Defender pour point de terminaison, à l’aide de Python, avec des exemples.
+keywords: api, api prises en charge, repérage avancé, requête
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 73be2b3c2aa40bb88ac6ccff60eec5cb7f55338c
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 99fc848088725f7b28d91eebc78327c688059de8
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300776"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174765"
 ---
 # <a name="advanced-hunting-using-python"></a>Repérage avancé à l’aide de Python
 
@@ -36,11 +36,11 @@ ms.locfileid: "61300776"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Exécutez des requêtes avancées à l’aide de Python, voir [API de recherche avancée.](run-advanced-query-api.md)
+Exécutez des requêtes avancées à l’aide de Python, consultez [l’API De repérage avancé](run-advanced-query-api.md).
 
 Dans cette section, nous partageons des exemples Python pour récupérer un jeton et l’utiliser pour exécuter une requête.
 
-> **Conditions préalables**: vous devez d’abord [créer une application.](apis-intro.md)
+> **Prérequis** : vous devez d’abord [créer une application](apis-intro.md).
 
 ## <a name="get-token"></a>Obtenir un jeton
 
@@ -74,18 +74,18 @@ jsonResponse = json.loads(response.read())
 aadToken = jsonResponse["access_token"]
 ```
 
-where
+Où
 
-- tenantId : ID du client pour le compte duquel vous souhaitez exécuter la requête (autrement dit, la requête sera exécuté sur les données de ce client)
-- appId : ID de votre application Azure AD (l’application doit avoir l’autorisation « Exécuter des requêtes avancées » sur Microsoft Defender pour le point de terminaison)
-- appSecret : secret de votre Azure AD application
+- tenantId : ID du locataire au nom duquel vous souhaitez exécuter la requête (autrement dit, la requête sera exécutée sur les données de ce locataire)
+- appId : ID de votre application Azure AD (l’application doit disposer de l’autorisation « Exécuter des requêtes avancées » pour Microsoft Defender pour point de terminaison)
+- appSecret : Secret de votre application Azure AD
 
 ## <a name="run-query"></a>Exécuter la requête
 
  Exécutez la requête suivante :
 
 ```python
-query = 'RegistryEvents | limit 10' # Paste your own query here
+query = 'DeviceRegistryEvents | limit 10' # Paste your own query here
 
 url = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
 headers = { 
@@ -103,12 +103,12 @@ schema = jsonResponse["Schema"]
 results = jsonResponse["Results"]
 ```
 
-- contient le schéma des résultats de votre requête
+- le schéma contient le schéma des résultats de votre requête
 - les résultats contiennent les résultats de votre requête
 
 ### <a name="complex-queries"></a>Requêtes complexes
 
-Si vous souhaitez exécuter des requêtes complexes (ou des requêtes multilignes), enregistrez votre requête dans un fichier et, au lieu de la première ligne de l’exemple ci-dessus, exécutez la commande suivante :
+Si vous souhaitez exécuter des requêtes complexes (ou des requêtes multilignes), enregistrez votre requête dans un fichier et, au lieu de la première ligne de l’exemple ci-dessus, exécutez la commande ci-dessous :
 
 ```python
 queryFile = open("D:\\Temp\\myQuery.txt", 'r') # Replace with the path to your file
@@ -118,9 +118,9 @@ queryFile.close()
 
 ## <a name="work-with-query-results"></a>Travailler avec les résultats de la requête
 
-Vous pouvez désormais utiliser les résultats de la requête.
+Vous pouvez maintenant utiliser les résultats de la requête.
 
-Pour itérer sur les résultats, faites les choses suivantes :
+Pour itérer sur les résultats, procédez comme suit :
 
 ```python
 for result in results:
@@ -128,7 +128,7 @@ for result in results:
     print(result["EventTime"]) # Prints only the property 'EventTime' from the result
 ```
 
-Pour obtenir les résultats de la requête au format CSV dans le fichier, file1.csv ci-dessous :
+Pour générer les résultats de la requête au format CSV dans le fichier file1.csv procédez comme suit :
 
 ```python
 import csv
@@ -142,7 +142,7 @@ for result in results:
 outputFile.close()
 ```
 
-Pour obtenir les résultats de la requête au format JSON dans file1.json, faites ce qui suit :
+Pour générer les résultats de la requête au format JSON dans le fichier file1.json, procédez comme suit :
 
 ```python
 outputFile = open("D:\\Temp\\file1.json", 'w')

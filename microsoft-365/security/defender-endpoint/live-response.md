@@ -14,18 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e5d2b2bd47ba30aaf152171605947bb9a627480
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 1f387696797d52805495777be0850ebe135fd38a
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666347"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173102"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Examiner les entités sur les appareils à l’aide d’une réponse dynamique
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -165,7 +165,7 @@ Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont
 | Connexions  | Affiche toutes les connexions actives.  | v  | N  | N  |
 | Dir  | Affiche une liste de fichiers et de sous-répertoires dans un répertoire.  | v  | v  | v  |
 | Pilotes  | Affiche tous les pilotes installés sur l’appareil.  | v  | N  | N  |
-| Fg `<command ID>`  | Placez le travail spécifié au premier plan au premier plan, ce qui en fait le travail actuel.  REMARQUE : fg prend un « ID de commande » disponible dans les travaux, et non un PID  | v  | v  | v  |
+| Fg `<command ID>`  | Placez le travail spécifié au premier plan, ce qui en fait le travail actuel.  REMARQUE : fg prend un « ID de commande » disponible dans les travaux, et non un PID  | v  | v  | v  |
 | Fileinfo  | Récupération d’informations sur un fichier.  | v  | v  | v  |
 | findfile  | Localise les fichiers par un nom donné sur l’appareil.  | v  | v  | v  |
 | getfile <file_path>  | Télécharge un fichier.  | v  | v  | v  |
@@ -228,7 +228,7 @@ Voici quelques exemples :
 
 ****
 
-|Commande|Ce qu'il fait|
+|Command|Ce qu'il fait|
 |---|---|
 |`getfile "C:\windows\some_file.exe" &`|Commence à télécharger un fichier nommé *some_file.exe* en arrière-plan.|
 |`fg 1234`|Retourne un téléchargement avec l’ID de commande *1234* au premier plan.|
@@ -346,7 +346,7 @@ Sélectionnez l’onglet **Journal des commandes** pour afficher les commandes u
 - Un appareil ne peut se trouver que dans une session à la fois.
 - Les limites de taille de fichier suivantes s’appliquent :
   - `getfile` limite : 3 Go
-  - `fileinfo` limite : 10 Go
+  - `fileinfo` limite : 30 Go
   - `library` limite : 250 Mo
 
 ## <a name="related-article"></a>Article connexe

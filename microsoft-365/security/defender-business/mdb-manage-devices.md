@@ -1,33 +1,29 @@
 ---
 title: Gérer les appareils dans Microsoft Defender pour les PME
-description: Découvrez comment gérer des appareils dans Microsoft Defender pour les PME
+description: Découvrez comment ajouter, supprimer et gérer des appareils dans Defender entreprise, endpoint protection pour les petites et moyennes entreprises.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 453cce2c52902116bc3eaa71f5e6c998ab4164a1
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: e08c53dd949858a1fcc9af9c8553c5d0eed07cef
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862827"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173078"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business"></a>Gérer les appareils dans Microsoft Defender pour les PME
-
-> [!NOTE]
-> Microsoft Defender pour les PME est désormais inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Dans Microsoft Defender pour les PME, vous pouvez gérer les appareils comme suit :
 
@@ -45,7 +41,7 @@ Dans Microsoft Defender pour les PME, vous pouvez gérer les appareils comme sui
 
 :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Capture d’écran de l’inventaire des appareils":::
 
-1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) et connectez-vous.
+1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
 2. Dans le volet de navigation, choisissez **Inventaire des appareils**.
 
@@ -69,7 +65,7 @@ Dans Microsoft Defender pour les PME, vous pouvez gérer les appareils comme sui
 
 Consultez [Intégrer des appareils à Microsoft Defender pour les PME](mdb-onboard-devices.md).
 
-## <a name="offboard-a-device"></a>Désintégrage d’un appareil
+## <a name="offboard-a-device"></a>Annuler l’intégration d’un appareil
 
 Voir [Désintégrage d’un appareil](mdb-offboard-devices.md).
 

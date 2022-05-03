@@ -17,16 +17,16 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP), découvrez comment Microsoft 365 Lighthouse pouvez vous aider à sécuriser et gérer les locataires clients dans un emplacement unique.
-ms.openlocfilehash: 9a75cd43ac09d63c4524495a3146bf0b860627a4
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 218442ee6714ece4c984fbf13478e5c4f3982101
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094679"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173955"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Vue d’ensemble de Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse est un portail d’administration qui permet aux fournisseurs de services gérés (MSP) de sécuriser et de gérer des appareils, des données et des utilisateurs à grande échelle pour les clients de petite et moyenne entreprise (SMB) qui utilisent Microsoft 365 Business Premium ou Microsoft 365 E3.
+Microsoft 365 Lighthouse est un portail d’administration qui permet aux fournisseurs de services gérés (MSP) de sécuriser et de gérer des appareils, des données et des utilisateurs à grande échelle pour les clients de petite et moyenne entreprise (SMB).
 
 Lighthouse simplifie l’intégration des clients en recommandant des lignes de base de configuration de sécurité adaptées aux clients SMB et en fournissant des vues multilocataires dans tous les environnements clients. Avec Lighthouse, les MSP peuvent mettre à l’échelle la gestion de leurs clients, se concentrer sur ce qui est le plus important, trouver et examiner rapidement les risques, et prendre des mesures pour amener leurs clients à un état sain et sécurisé.
 
@@ -60,7 +60,7 @@ Lighthouse permet aux MSP de sécuriser et de gérer Microsoft 365 services et p
 > [!NOTE] 
 > Pour plus d’informations sur l’inscription, consultez [Inscription à Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [S’inscrire à Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)  
 [Vue d’ensemble de la page Locataires dans Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md) (article)   

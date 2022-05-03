@@ -1,8 +1,8 @@
 ---
-title: Requêtes OData avec Microsoft Defender pour le point de terminaison
+title: Requêtes OData avec Microsoft Defender pour point de terminaison
 ms.reviewer: ''
-description: Utilisez ces exemples de requêtes Open Data Protocol (OData) pour vous aider avec les protocoles d’accès aux données dans Microsoft Defender pour endpoint.
-keywords: api, api pris en charge, odata, requête
+description: Utilisez ces exemples de requêtes OData (Open Data Protocol) pour faciliter les protocoles d’accès aux données dans Microsoft Defender pour point de terminaison.
+keywords: api, api prises en charge, odata, requête
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,20 +16,24 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6ee47a1c624020ffa40848910866738072044d27
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 808ff3e6cc0dc69d748dabed102c478a27593790
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301473"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172288"
 ---
-# <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>Requêtes OData avec Microsoft Defender pour le point de terminaison
+# <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>Requêtes OData avec Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour les PME](../defender-business/index.yml)
+
+> [!IMPORTANT]
+> Les fonctionnalités de chasse avancées ne sont pas incluses dans Defender entreprise. Consultez [Comparer les Microsoft Defender pour les PME aux plans Microsoft Defender pour point de terminaison 1 et 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -37,20 +41,20 @@ ms.locfileid: "61301473"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Si vous n’êtes pas familiarisé avec les requêtes OData, voir : [requêtes OData V4](https://www.odata.org/documentation/)
+Si vous n’êtes pas familiarisé avec les requêtes OData, consultez : [Requêtes OData V4](https://www.odata.org/documentation/)
 
 Toutes les propriétés ne sont pas filtrables.
 
-## <a name="properties-that-support-filter"></a>Propriétés qui la prise en charge $filter
+## <a name="properties-that-support-filter"></a>Propriétés qui prennent en charge $filter
 
-- [Alerte](alerts.md): `alertCreationTime` , , , et `lastUpdateTime` `incidentId` `InvestigationId` `status` `severity` `category` .
-- [Machine](machine.md): `ComputerDnsName` , , , , et `LastSeen` `HealthStatus` `OsPlatform` `onboardingStatus` `RiskScore` `RbacGroupId` .
-- [MachineAction](machineaction.md): `Status` , , et `MachineId` `Type` `Requestor` `CreationDateTimeUtc` .
-- [Indicateur](ti-indicator.md): `indicatorValue` , , , et `indicatorType` `creationTimeDateTimeUtc` `createdBy` `severity` `action` .
+- [Alerte](alerts.md) : `alertCreationTime`, `lastUpdateTime`, `incidentId`,`InvestigationId``status` , et `severity``category`.
+- [Machine](machine.md) : `ComputerDnsName`, `LastSeen`, `HealthStatus`, `OsPlatform`, `onboardingStatus``RiskScore`et `RbacGroupId`.
+- [MachineAction](machineaction.md) : `Status`, `MachineId`, `Type`, `Requestor`et `CreationDateTimeUtc`.
+- [Indicateur](ti-indicator.md) : `indicatorValue`, `indicatorType`, `creationTimeDateTimeUtc`, `createdBy`, `severity`et `action`.
 
 ### <a name="example-1"></a>Exemple 1
 
-Obtenez 10 alertes les plus récentes avec des preuves connexes :
+Obtenez les 10 dernières alertes avec des preuves connexes :
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
@@ -195,7 +199,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=ev
 
 ### <a name="example-2"></a>Exemple 2
 
-Obtenez toutes les alertes de la dernière mise à jour après le 11-11-22 00:00:00 :
+Obtenez toutes les alertes pour la dernière fois après 2019-11-22 00:00:00 :
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z
@@ -310,7 +314,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScor
 
 ### <a name="example-4"></a>Exemple 4
 
-Obtenir les 100 premiers appareils avec « HealthStatus » n’est pas égal à « Actif » :
+Obtenez les 100 premiers appareils dont « HealthStatus » n’est pas égal à « Active » :
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthStatus+ne+'Active'&$top=100 
@@ -416,7 +420,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=lastSeen
 
 ### <a name="example-6"></a>Exemple 6
 
-Obtenez toutes les analyses antivirus que l’utilisateur a Analyst@examples.onmicrosoft.com à l’aide de Microsoft Defender for Endpoint :
+Obtenez toutes les analyses antivirus que l’utilisateur Analyst@examples.onmicrosoft.com créées à l’aide de Microsoft Defender pour point de terminaison :
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machineactions?$filter=requestor eq 'Analyst@contoso.com' and type eq 'RunAntiVirusScan'
