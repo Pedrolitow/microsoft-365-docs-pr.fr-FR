@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer des blocs dans la liste d’autorisations/de blocs du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 60038a2b82ea452ed921d16042cb81d4f0e023a9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 03c56e5e7e540766bb4a6048fba15b494c46d815
+ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100652"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65182714"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>Ajouter des blocs dans la liste verte/rouge du locataire
 
@@ -30,13 +30,13 @@ ms.locfileid: "65100652"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-## <a name="use-the-microsoft-365-defender-portal"></a>Utiliser le portail Microsoft 365 Defender 
+## <a name="use-the-microsoft-365-defender-portal"></a>Utiliser le portail Microsoft 365 Defender
 
 ### <a name="create-block-sender-entries-in-the-tenant-allowblock-list"></a>Créer des entrées d’expéditeur de blocs dans la liste d’autorisations/de blocs du locataire
 
-1. Dans le portail Microsoft 365 Defender, accédez à la section Stratégies **& règles de règles** sur les stratégies \> **de menaces** \> , section  \> **Listes d’autorisation/de blocage du locataire**.
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la section Stratégies **& règles sur les règles** \> de **menaces** \> **,** section \> **Listes d’autorisations/listes de blocs du locataire**. Ou, pour accéder directement à la page **Autoriser/Bloquer la liste des locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Dans la page **Autoriser/Bloquer la liste** des locataires, vérifiez que l’onglet **Expéditeurs** est sélectionné, puis cliquez sur l’icône ![Bloquer.](../../media/m365-cc-sc-create-icon.png) **Bloquer**.
 
@@ -53,11 +53,11 @@ ms.locfileid: "65100652"
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
 > [!NOTE]
-> Les e-mails de ces expéditeurs seront bloqués en tant que *courrier indésirable à haut niveau de confiance (SCL = 9).* 
+> Les e-mails de ces expéditeurs seront bloqués en tant que _courrier indésirable à haut niveau de confiance_ (SCL = 9).
 
 ### <a name="create-block-url-entries-in-the-tenant-allowblock-list"></a>Créer des entrées d’URL de bloc dans la liste d’autorisations/de blocs du locataire
 
-1. Dans le portail Microsoft 365 Defender, accédez à la section Stratégies **& règles de règles** sur les stratégies \> **de menaces** \> , section  \> **Listes d’autorisation/de blocage du locataire**.
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la section Stratégies **& règles sur les règles** \> de **menaces** \> **,** section \> **Listes d’autorisations/listes de blocs du locataire**. Ou, pour accéder directement à la page **Autoriser/Bloquer la liste des locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Dans la page **Autoriser/Bloquer la liste** des **locataires** , vérifiez que l’onglet URL est sélectionné, puis cliquez sur l’icône ![Bloquer.](../../media/m365-cc-sc-create-icon.png) **Bloquer**.
 
@@ -74,11 +74,11 @@ ms.locfileid: "65100652"
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
 > [!NOTE]
-> Les e-mails contenant ces URL seront bloqués en tant que *hameçonnage*. 
+> Les e-mails contenant ces URL seront bloqués en tant que _hameçonnage_.
 
 ### <a name="create-block-file-entries-in-the-tenant-allowblock-list"></a>Créer des entrées de fichier de bloc dans la liste d’autorisations/de blocs du locataire
 
-1. Dans le portail Microsoft 365 Defender, accédez à la section Stratégies **& règles de règles** sur les stratégies \> **de menaces** \> , section  \> **Listes d’autorisation/de blocage du locataire**.
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la section Stratégies **& règles sur les règles** \> de **menaces** \> **,** section \> **Listes d’autorisations/listes de blocs du locataire**. Ou, pour accéder directement à la page **Autoriser/Bloquer la liste des locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Dans la page **Autoriser/Bloquer la liste des locataires** , sélectionnez l’onglet **Fichiers** , puis cliquez sur l’icône ![Bloquer.](../../media/m365-cc-sc-create-icon.png) **Bloquer**.
 
@@ -95,7 +95,7 @@ ms.locfileid: "65100652"
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
 > [!NOTE]
-> Les e-mails contenant ces fichiers sont bloqués en tant que *programmes malveillants*. 
+> Les e-mails contenant ces fichiers sont bloqués en tant que _programmes malveillants_.
 
 ### <a name="create-spoofed-sender-block-entries"></a>Créer des entrées de bloc d’expéditeur usurpées
 
@@ -118,8 +118,9 @@ ms.locfileid: "65100652"
    - **Action** : Sélectionnez **Bloquer**.
 
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
+
 > [!NOTE]
-> Les e-mails de ces expéditeurs seront bloqués en tant que *hameçonnage*. 
+> Les e-mails de ces expéditeurs seront bloqués en tant que _hameçonnage_.
 
 ## <a name="use-powershell"></a>Utiliser PowerShell
 
@@ -151,7 +152,7 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 
 Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, consultez New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
-### <a name="add-spoofed-sender-block-entries"></a>Ajouter des entrées de bloc d’expéditeur usurpées 
+### <a name="add-spoofed-sender-block-entries"></a>Ajouter des entrées de bloc d’expéditeur usurpées
 
 Pour ajouter des entrées d’expéditeur usurpées dans la liste d’autorisation/de blocage du locataire, utilisez la syntaxe suivante :
 

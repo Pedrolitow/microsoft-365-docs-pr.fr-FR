@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à modifier et à supprimer des entrées dans la liste d’autorisation/de blocage du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7da986c42421c797f2d01b1e61d50c06933e373f
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: ac612b51cab9069e50c4eec05948b3aa840b9cc9
+ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970903"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65182692"
 ---
 # <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>Modifier et supprimer des entrées dans la liste verte/rouge du client
 
@@ -30,7 +30,7 @@ ms.locfileid: "64970903"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Vous pouvez utiliser le portail Microsoft 365 Defender ou PowerShell pour modifier et supprimer des entrées dans la liste d’autorisation/de blocage du locataire.
 
@@ -38,11 +38,11 @@ Vous pouvez utiliser le portail Microsoft 365 Defender ou PowerShell pour modifi
 
 ### <a name="modify-entries-in-the-tenant-allowblock-list"></a>Modifier les entrées dans la liste d’autorisations/de blocs du locataire
 
-1. Dans le portail Microsoft 365 Defender, accédez à la section Stratégies **& règles de règles** sur les stratégies \> **de menaces** \> , section  \> **Listes d’autorisation/de blocage du locataire**.
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la section Stratégies **& règles sur les règles** \> de **menaces** \> **,** section \> **Listes d’autorisations/listes de blocs du locataire**. Ou, pour accéder directement à la page **Autoriser/Bloquer la liste des locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Sélectionnez l’onglet qui contient le type d’entrée à modifier :
    - **Expéditeurs**
-   - **Usurpation**
+   - **Spoofing**
    - **Url**
    - **Files**
 
@@ -50,7 +50,7 @@ Vous pouvez utiliser le portail Microsoft 365 Defender ou PowerShell pour modifi
    - **Expéditeurs**
      - **N’expirez jamais** et/ou date d’expiration.
      - **Remarque facultative**
-   - **Usurpation**
+   - **Spoofing**
      - **Action** : vous pouvez modifier la valeur en **Allow** ou **Block**.
    - **Url**
      - **N’expirez jamais** et/ou date d’expiration.
@@ -66,11 +66,11 @@ Vous pouvez utiliser le portail Microsoft 365 Defender ou PowerShell pour modifi
 
 ### <a name="remove-entries-from-the-tenant-allowblock-list"></a>Supprimer des entrées de la liste d’autorisations/de blocs du locataire
 
-1. Dans le portail Microsoft 365 Defender, accédez à la section Stratégies **& règles de règles** sur les stratégies \> **de menaces** \> , section  \> **Listes d’autorisation/de blocage du locataire**.
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la section Stratégies **& règles sur les règles** \> de **menaces** \> **,** section \> **Listes d’autorisations/listes de blocs du locataire**. Ou, pour accéder directement à la page **Autoriser/Bloquer la liste des locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Sélectionnez l’onglet qui contient le type d’entrée à supprimer :
    - **Expéditeurs**
-   - **Usurpation**
+   - **Spoofing**
    - **Url**
    - **Files**
 

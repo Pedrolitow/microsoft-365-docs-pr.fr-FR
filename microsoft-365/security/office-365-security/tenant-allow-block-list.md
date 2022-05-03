@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à gérer les autorisations et les blocs dans la liste d’autorisations/blocs du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a067672a013f3e0ed7b9009604f8a4fe000ea47f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 64b9c044a463e940b0d9862221ca854fe0eebfdc
+ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172813"
+ms.locfileid: "65182641"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -90,7 +90,6 @@ Cet article explique comment configurer des entrées dans la liste verte/bloqué
   > [!NOTE]
   >
   > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises *et* les autorisations pour les autres fonctionnalités de [Microsoft 365](../../admin/add-users/about-admin-roles.md).
-  >
   > - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
 ## <a name="configure-the-tenant-allowblock-list"></a>Configurer la liste d’autorisations/blocages du locataire
@@ -111,7 +110,7 @@ Pour gérer tous les blocs et autorisations, consultez [Ajouter des blocs dans l
 
 ## <a name="view-entries-in-the-tenant-allowblock-list"></a>Afficher les entrées dans la liste d’autorisations/de blocs du locataire
 
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** dans la section **Règles**. Pour accéder directement à la page **Autoriser/Bloquer les listes de locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** dans la section **Règles**. Ou, pour accéder directement à la page **Autoriser/Bloquer les listes de locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Sélectionnez l’onglet souhaité. Les colonnes disponibles dépendent de l’onglet que vous avez sélectionné :
 
@@ -122,6 +121,11 @@ Pour gérer tous les blocs et autorisations, consultez [Ajouter des blocs dans l
      - **Dernière mise à jour**
      - **Supprimer le**
      - **Notes**
+   - **Spoofing**
+     - **Utilisateur usurpé**
+     - **Envoi d’une infrastructure**
+     - **Type d’usurpation** d’identité : valeur **interne** ou **externe**.
+     - **Action** : valeur **Bloquer** ou **Autoriser**.
    - **URLs**:
      - **Valeur** : URL.
      - **Action** : valeur **Allow** ou **Block**.
@@ -136,20 +140,15 @@ Pour gérer tous les blocs et autorisations, consultez [Ajouter des blocs dans l
      - **Dernière mise à jour**
      - **Supprimer le**
      - **Notes**
-   - **Spoofing**
-     - **Utilisateur usurpé**
-     - **Envoi d’une infrastructure**
-     - **Type d’usurpation** d’identité : valeur **interne** ou **externe**.
-     - **Action** : valeur **Bloquer** ou **Autoriser**.
 
    Vous pouvez cliquer sur un en-tête de colonne pour trier dans l’ordre croissant ou décroissant.
 
    Vous pouvez cliquer sur **Groupe** pour regrouper les résultats. Les valeurs disponibles dépendent de l’onglet que vous avez sélectionné :
 
    - **Expéditeurs** : vous pouvez regrouper les résultats par **action**.
+   - **Usurpation d’identité** : vous pouvez regrouper les résultats par **type Action** ou **Usurpation d’identité**.
    - **URL** : vous pouvez regrouper les résultats par **action**.
    - **Fichiers** : vous pouvez regrouper les résultats par **action**.
-   - **Usurpation d’identité** : vous pouvez regrouper les résultats par **type Action** ou **Usurpation d’identité**.
 
    Cliquez sur **Rechercher**, entrez tout ou partie d’une valeur, puis appuyez sur Entrée pour rechercher une valeur spécifique. Lorsque vous avez terminé, cliquez sur ![l’icône Effacer la recherche.](../../media/m365-cc-sc-close-icon.png) **Effacer la recherche**.
 
@@ -160,6 +159,9 @@ Pour gérer tous les blocs et autorisations, consultez [Ajouter des blocs dans l
      - **N’expirez jamais**
      - **Dernière date de mise à jour**
      - **Supprimer le**
+   - **Spoofing**
+     - **Action**
+     - **Type d’usurpation d’identité**
    - **Url**
      - **Action**
      - **N’expirez jamais**
@@ -170,9 +172,6 @@ Pour gérer tous les blocs et autorisations, consultez [Ajouter des blocs dans l
      - **N’expirez jamais**
      - **Dernière mise à jour**
      - **Supprimer le**
-   - **Spoofing**
-     - **Action**
-     - **Type d’usurpation d’identité**
 
    Lorsque vous avez terminé, cliquez sur **Appliquer**. Pour effacer les filtres existants, cliquez sur **Filtrer**, puis dans le menu volant **Filtre** qui s’affiche, cliquez sur **Effacer les filtres**.
 
