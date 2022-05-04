@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment afficher l’intégrité du service client.
-ms.openlocfilehash: c5cfed4449fbdbb6cb63bc80dfd8e23ca4d5c4bb
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 8ad96c77f14148fefd6d00cd51af093cd081d857
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023610"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187819"
 ---
 # <a name="view-tenant-service-health-in-microsoft-365-lighthouse"></a>Afficher l’intégrité du service client dans Microsoft 365 Lighthouse
 
@@ -62,4 +62,5 @@ Sous l’onglet **Locataires affectés** , vous pouvez exporter une liste de loc
 ## <a name="related-content"></a>Contenu associé
 
 [Comment vérifier Microsoft 365'intégrité du service](/microsoft-365/enterprise/view-service-health) (article)\
-[Problèmes connus avec Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (article)
+[Problèmes connus avec Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (article)\
+[Afficher vos rôles Azure Active Directory dans Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (article)

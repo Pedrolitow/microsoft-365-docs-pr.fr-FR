@@ -16,29 +16,20 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: 3fb8d76b702a66756d17d8464d68442a079be729
-  ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+  ms.openlocfilehash: 8f544cfb15c03e78219fcb31bdae1e09cb7c628f
+  ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 05/03/2022
-  ms.locfileid: "65172692"
+  ms.lasthandoff: 05/04/2022
+  ms.locfileid: "65188369"
 title: Microsoft Defender pour les PME - Forum aux questions et réponses
 summary: >
   Utilisez cet article pour obtenir des réponses aux questions que vous pourriez avoir sur Defender entreprise.
 sections:
 - name: Général
   questions:
-  - question: J’ai un autre abonnement Microsoft Cloud. Pourquoi ne vois-je pas Microsoft Defender pour les PME dans mon portail ?
-    answer: >
-      Actuellement, chaque fois qu’un client a plusieurs abonnements, l’abonnement le plus élevé est prioritaire. Voici quelques exemples :
-
-
-      - Exemple 1 : Si vous avez [Microsoft Defender pour point de terminaison plan 2](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2) (abonnement acheté ou d’essai) et que vous obtenez Microsoft Defender pour les PME, Defender pour point de terminaison Plan 2 est prioritaire. Dans ce cas, vous ne verrez pas l’expérience Defender entreprise.
-
-
-      - Exemple 2 : Si vous avez [Microsoft Defender pour le cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) (abonnement acheté ou d’essai) et que vous obtenez Defender entreprise, Defender pour le cloud est prioritaire. Dans ce cas, vous ne verrez pas l’expérience Defender entreprise.
-  - question: Quelles sont les différences entre Defender entreprise et Defender pour les plans de point de terminaison 1 et 2 ?
-    answer: "Defender entreprise et Defender pour point de terminaison fournissent des fonctionnalités de protection contre les menaces fortes pour les points de terminaison de votre entreprise. Defender entreprise a été conçu pour les petites et moyennes entreprises (jusqu’à 300 employés). Avec un [processus de configuration simplifié](mdb-simplified-configuration.md) et des [options d’intégration d’appareils](mdb-onboard-devices.md), Defender entreprise permet aux clients qui n’ont pas nécessairement un arrière-plan de sécurité de configurer, configurer et utiliser Defender entreprise pour protéger les appareils de l’entreprise.  \n\nPour en savoir plus sur les différences, consultez [Comparer Microsoft Defender pour les PME à Microsoft 365 Business Premium](compare-mdb-m365-plans.md).\n"
+  - question: Puis-je étendre mon version préliminaire de Defender entreprise ?
+    answer: "Étant donné que Defender entreprise est désormais en disponibilité générale, le programme en préversion est terminé et ne peut pas être étendu. \n\nVoir [Obtenir Microsoft Defender pour les PME](get-defender-business.md).\n"
   - question: Comment faire essayer ou acheter Defender entreprise ?
     answer: >
       Accédez à la page web [Microsoft Defender pour les PME](https://www.microsoft.com/security/business/threat-protection/microsoft-defender-business), puis sélectionnez l’option permettant d’essayer ou d’acheter Defender entreprise.
@@ -47,43 +38,35 @@ sections:
       Pour plus d’informations, consultez [Obtenir Microsoft Defender pour les PME](get-defender-business.md).
   - question: Existe-t-il une limite au nombre d’utilisateurs pouvant être concédés sous licence pour Defender Entreprise ?
     answer: >
-      Defender entreprise est conçu pour les petites et moyennes entreprises qui ont jusqu’à 300 utilisateurs. Si vous avez plus de 300 utilisateurs, envisagez [Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
+      Defender entreprise est conçu pour les petites et moyennes entreprises qui ont jusqu’à 300 utilisateurs. Si vous avez plus de 300 utilisateurs, envisagez une solution d’entreprise, telle que [Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) ou [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender).
   - question: Combien d’appareils puis-je intégrer et sécuriser avec Defender Entreprise ?
     answer: >
       Vous pouvez intégrer et sécuriser jusqu’à 5 appareils par licence utilisateur.
   - question: Defender pour Entreprise prend-il en charge les serveurs ?
     answer: "La prise en charge du serveur sera bientôt disponible. Cette nouvelle offre de serveur aura un prérequis de licence de Microsoft 365 Business Premium ou Microsoft Defender pour les PME (autonome).  \n"
   - question: Defender entreprise protège-t-il les appareils clients macOS, Android et iOS/iPadOS ?
-    answer: "Oui. Defender entreprise prend en charge la protection des appareils macOS, Android et iOS/iPadOS. \n\nVous pouvez intégrer des appareils macOS à l’aide d’un script local dans le portail Microsoft 365 Defender. L’intégration d’appareils Android et iOS/iPadOS nécessite une licence pour [Microsoft Intune](/mem/intune/). Voir [Appareils intégrés](mdb-onboard-devices.md).\n\nIntune est inclus dans Microsoft 365 Business Premium et peut être acheté pour Defender entreprise (autonome).\n\nUne simplification supplémentaire pour les appareils macOS, iOS/iPadOS et Android figure dans la feuille de route. \n"
-  - question: Si le programme de préversion de Defender Entreprise est terminé, puis-je l’étendre ?
-    answer: >
-      Une fois votre préversion de Defender entreprise terminée, vous pouvez acheter Defender entreprise. Voir [Obtenir Microsoft Defender pour les PME](get-defender-business.md).
-  - question: Si j’utilise déjà Microsoft 365 Business Premium, pourquoi ai-je besoin de Defender Entreprise ?
-    answer: >
-      Si vous avez Microsoft 365 Business Premium, Defender Entreprise est inclus dans votre abonnement. Pour en savoir plus, consultez les articles suivants :
-
-
-      - [Vue d’ensemble de Defender entreprise](mdb-overview.md)
-
-
-      - [Comparer Microsoft Defender pour les PME à Microsoft 365 Business Premium](compare-mdb-m365-plans.md)
-
-
-      Defender entreprise étend les fonctionnalités de sécurité dans Microsoft 365 Business Premium avec endpoint protection pour les appareils de votre entreprise.
-  - question: Que se passe-t-il si un client a 20 utilisateurs avec une combinaison d’abonnements ? Par exemple, supposons que 10 utilisateurs ont attribué une licence Defender entreprise et 10 utilisateurs ont attribué une licence Defender pour point de terminaison Plan 2 ?
-    answer: "Les licences mixtes ne sont actuellement pas prises en charge. La licence fonctionnelle la plus élevée définit l’expérience pour le locataire. À l’aide de notre exemple, l’expérience client sera Defender pour point de terminaison Plan 2 et nécessitera 20 licences Defender pour point de terminaison Plan 2. \n"
+    answer: "Oui. Defender entreprise prend en charge la protection pour les appareils macOS, Android et iOS/iPadOS. Voir [Appareils intégrés](mdb-onboard-devices.md).\n\n- Vous pouvez intégrer des appareils macOS à l’aide d’un script local dans le portail Microsoft 365 Defender. \n- Pour intégrer des appareils Android et iOS/iPadOS, vous devez disposer d’une licence pour [Microsoft Intune](/mem/intune/). Intune est inclus dans Microsoft 365 Business Premium et peut être acheté pour Defender entreprise (autonome).\n\nUne simplification supplémentaire pour les appareils macOS, iOS/iPadOS et Android figure dans la feuille de route. \n"
   - question: Puis-je configurer plusieurs stratégies de filtrage de contenu web dans Defender entreprise ?
-    answer: "Actuellement, Defender entreprise ne prend en charge qu’une seule stratégie de filtrage web uniforme par locataire Defender entreprise. \n"
+    answer: "Actuellement, Defender entreprise ne prend en charge qu’une seule stratégie de filtrage web uniforme par locataire Defender entreprise. \n\nConsultez [Configurer le filtrage de contenu web](mdb-configure-security-settings.md#set-up-web-content-filtering).\n"
   - question: Comment exécuter des rapports personnalisés avec Defender Entreprise ?
     answer: >
       Defender entreprise inclut actuellement un ensemble d’API pour prendre en charge des rapports personnalisés robustes et un connecteur Power BI. Vous pouvez planifier un script PowerShell pour générer des résumés exécutifs au format HTML et envoyer ces résumés par e-mail. Consultez les [informations de référence sur l’API](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners).
   - question: Je suis partenaire Microsoft. Puis-je gérer plusieurs locataires à partir d’un panneau de configuration, ou dois-je me connecter à chaque locataire individuellement ?
-    answer: "Defender entreprise est activé dans Microsoft 365 Lighthouse pour la prise en charge multilocataire dans une seule console ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). \n\nActuellement, une file d’attente d’incidents multilocataire vous fournit une vue interlocataire des incidents qui nécessitent une attention particulière; toutefois, la configuration et l’intégration sont effectuées dans le locataire du client à l’aide des informations d’identification de votre partenaire. D’autres scénarios d’intégration sont planifiés.\n\nPour en savoir plus, consultez [Vue d’ensemble de Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview).\n"
+    answer: "Defender entreprise est activé dans Microsoft 365 Lighthouse pour la prise en charge multilocataire dans une seule console ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). \n \nActuellement, une file d’attente d’incidents multilocataire vous fournit une vue interlocataire des incidents qui nécessitent une attention particulière; toutefois, la configuration et l’intégration sont effectuées dans le locataire du client à l’aide des informations d’identification de votre partenaire. \n\nLes fonctionnalités sont toujours déployées et d’autres scénarios d’intégration sont planifiés.\n\nPour en savoir plus, consultez [Vue d’ensemble de Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview).\n"
   - question: Comment faire configurer des règles et des fonctionnalités de réduction de la surface d’attaque dans Defender entreprise ?
     answer: >
       La configuration simplifiée des règles et fonctionnalités de réduction de la surface d’attaque via Defender entreprise dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) n’est pas encore prise en charge. Si vous avez Microsoft Intune, vous pouvez utiliser le centre d’administration Microsoft Endpoint Manager pour configurer vos stratégies de réduction de la surface d’attaque. Consultez la [stratégie de réduction de la surface d’attaque pour la sécurité des points de terminaison dans Intune](/mem/intune/protect/endpoint-security-asr-policy).
   - question: Si je n’ai pas de Microsoft Intune, ai-je besoin d’une licence supplémentaire pour utiliser les fonctionnalités incluses dans Defender Entreprise et Intune ?
-    answer: "Si vous avez Defender entreprise en tant qu’abonnement autonome et que vous n’avez pas de Intune, vous pouvez intégrer et sécuriser des appareils Windows et macOS dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). \n\nVous pouvez également gérer vos stratégies de protection et de protection pare-feu de nouvelle génération dans le portail Microsoft 365 Defender avec une [expérience de configuration simplifiée](mdb-simplified-configuration.md). \n\nPour gérer d’autres paramètres, tels que les stratégies de réduction de la surface d’attaque, ou pour intégrer d’autres appareils, tels que des appareils Android ou iOS/iPadOS, vous devez Intune. Intune est inclus dans Microsoft 365 Business Premium et peut être acheté pour les abonnements Defender entreprise (autonomes). \n"
+    answer: "Si vous avez Defender entreprise en tant qu’abonnement autonome et que vous n’avez pas de Intune, vous pouvez intégrer et sécuriser des appareils Windows et macOS dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). \n \nVous pouvez également gérer vos stratégies de protection et de protection pare-feu de nouvelle génération dans le portail Microsoft 365 Defender avec une [expérience de configuration simplifiée](mdb-simplified-configuration.md). \n \nPour gérer d’autres paramètres, tels que les stratégies de réduction de la surface d’attaque, ou pour intégrer d’autres appareils, tels que des appareils Android ou iOS/iPadOS, vous devez Intune. Intune est inclus dans Microsoft 365 Business Premium et peut être acheté pour les abonnements Defender entreprise (autonomes). \n"
+  - question: Si j’utilise déjà Microsoft 365 Business Premium, pourquoi ai-je besoin de Defender Entreprise ?
+    answer: "Si vous avez Microsoft 365 Business Premium, Defender Entreprise est inclus dans votre abonnement. Pour en savoir plus, consultez les articles suivants :\n \n- [Vue d’ensemble de Defender entreprise](mdb-overview.md)\n- [Comparer Microsoft Defender pour les PME à Microsoft 365 Business Premium](compare-mdb-m365-plans.md)\n\nDefender entreprise étend les fonctionnalités de sécurité dans Microsoft 365 Business Premium avec endpoint protection pour les appareils de votre entreprise.\n"
+  - question: Quelles sont les différences entre Defender entreprise et Defender pour les plans de point de terminaison 1 et 2 ?
+    answer: "Defender entreprise et Defender pour point de terminaison fournissent des fonctionnalités de protection contre les menaces fortes pour les points de terminaison de votre entreprise. Defender entreprise a été conçu pour les petites et moyennes entreprises (jusqu’à 300 employés). Avec un [processus de configuration simplifié](mdb-simplified-configuration.md) et des [options d’intégration d’appareils](mdb-onboard-devices.md), Defender entreprise permet aux clients qui n’ont pas nécessairement un arrière-plan de sécurité de configurer, configurer et utiliser Defender entreprise pour protéger les appareils de l’entreprise.  \n\nPour en savoir plus sur les différences, consultez [Comparer Microsoft Defender pour les PME à Microsoft 365 Business Premium](compare-mdb-m365-plans.md).\n"
+  - question: Que se passe-t-il si j’ai une combinaison d’abonnements ? Par exemple, supposons que 10 utilisateurs aient attribué une licence Defender entreprise et que 10 autres utilisateurs aient attribué une licence Defender pour point de terminaison Plan 2 dans le même locataire ?
+    answer: >
+      Les licences mixtes ne sont pas prises en charge. La licence fonctionnelle la plus élevée définit l’expérience pour le locataire. À l’aide de notre exemple, l’expérience client sera Defender pour point de terminaison [Plan 2](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) et nécessitera 20 licences Defender pour point de terminaison Plan 2. Notez que [Defender entreprise](mdb-overview.md) et [Microsoft 365 Business Premium](/microsoft-365/business-premium/) sont destinés aux clients qui ont jusqu’à 300 utilisateurs. Pour les clients qui ont besoin de plus de 300 sièges, nous vous recommandons d’obtenir Microsoft 365 E3 ou E5, ou Microsoft Defender pour point de terminaison Plan 1 ou Plan 2.
+  - question: J’ai un autre abonnement Microsoft Cloud. Pourquoi ne vois-je pas Microsoft Defender pour les PME dans mon portail ?
+    answer: "Actuellement, chaque fois qu’un client a plusieurs abonnements, l’abonnement le plus élevé est prioritaire. Voici quelques exemples :\n\n- Exemple 1 : Si vous avez [Microsoft Defender pour point de terminaison plan 2](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2) (abonnement acheté ou d’essai) et que vous obtenez Microsoft Defender pour les PME, Defender pour point de terminaison Plan 2 est prioritaire. Dans ce cas, vous ne verrez pas l’expérience Defender entreprise.\n- Exemple 2 : Si vous avez [Microsoft Defender pour le cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) (abonnement acheté ou d’essai) et que vous obtenez Defender entreprise, Defender pour le cloud est prioritaire. Dans ce cas, vous ne verrez pas l’expérience Defender entreprise.\n\n\n\n \n \n"
 additionalContent: >
   ## <a name="see-also"></a>Voir aussi
 

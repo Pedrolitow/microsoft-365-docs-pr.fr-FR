@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment le Niveau de productivité Microsoft reflète les mesures de l’expérience utilisateur et technologique, et comparez-les aux organisations de taille similaire.
-ms.openlocfilehash: 24a84c3780ec3787b76f78acbe9c0c109a27c639
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 094d5de77db6bffb4a2d5981268b364a6f9e690f
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327068"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188347"
 ---
 # <a name="microsoft-productivity-score"></a>Niveau de productivité Microsoft 
 
@@ -135,9 +135,9 @@ Les pages de détails sont les suivantes :
 - [Intégrité de Microsoft 365 Apps – expériences technologiques](apps-health.md)
 - [Analyse des points de terminaison](/mem/analytics/productivity-score)
 
-## <a name="business-continuity-special-report"></a>Rapport spécial sur la continuité d'activité
+## <a name="business-resilience-special-report"></a>Rapport spécial sur la résilience de l’entreprise
 
-Le rapport sur la continuité d’activité est un rapport de renseignements sur l’espace de travail disponible durant un temps limité pour tous les clients Microsoft 365 afin de les aider à guider leur organisation pendant ces temps difficiles.  
+Le rapport sur la résilience de l’entreprise est un rapport d’analyse du temps de travail limité disponible pour tous les clients Microsoft 365 afin de les aider à guider leur organisation pendant cette période difficile.  
 
 Ce rapport permet aux organisations de comprendre les éléments suivants : 
 
@@ -147,7 +147,7 @@ Ce rapport permet aux organisations de comprendre les éléments suivants :
 
 - Si les réunions à distance permettent la prise de décisions efficaces.
 
-[En savoir plus sur le rapport sur la continuité de l’activité](/Workplace-Analytics/tutorials/bcrps)
+[En savoir plus sur le rapport de résilience de l’entreprise](/Workplace-Analytics/tutorials/bcrps)
 
 [En savoir plus sur Microsoft Graph](/graph/)
 

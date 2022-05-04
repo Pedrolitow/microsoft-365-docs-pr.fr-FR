@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer les autorisations dans la liste d’autorisations/blocages du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: af5f8ae1d3c172f4bf77bdca14625fe2440769ef
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: f1dffb7fd6b13fc1999e51666717dc464e694d0c
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144749"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188102"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Ajouter des autorisations dans la liste verte/rouge du client
 
@@ -59,9 +59,9 @@ Autorisez les expéditeurs (ou domaines) sur la page **Soumissions** dans Micros
 
 > [!NOTE]
 >
-> - En fonction des filtres qui ont déterminé que le courrier était malveillant, pendant le flux de courrier, les autorisations sont ajoutées. Par exemple, si les filtres ont trouvé que l’expéditeur et l’URL sont incorrects, une autorisation est ajoutée pour chacun d’entre elles. 
+> - Pendant le flux de courrier, en fonction des filtres qui ont déterminé que le courrier était malveillant, les autorisations sont ajoutées. Par exemple, l’expéditeur et l’URL sont déterminés comme étant incorrects, une autorisation est ajoutée pour chacune d’elles.
 > - Lorsque cette entité (expéditeur, domaine, URL, fichier) est à nouveau rencontrée, tous les filtres associés à cette entité sont ignorés.
-> - Pour un e-mail (contenant cette entité) pendant le flux de courrier, si le reste des filtres trouve l’e-mail propre, l’e-mail est remis. Par exemple, l’autorisation d’un expéditeur (lorsque l’authentification réussit) contourne tous les verdicts, à l’exception des programmes malveillants et du hameçonnage à haut niveau de confiance associé à une pièce jointe ou à une URL.
+> - Pendant le flux de courrier, si le reste des filtres trouve l’e-mail contenant cette entité propre, l’e-mail est remis. Par exemple, l’autorisation d’un expéditeur (lorsque l’authentification réussit) contourne tous les verdicts, à l’exception des programmes malveillants et du hameçonnage à haut niveau de confiance associé à une pièce jointe ou à une URL.
 
 ## <a name="add-url-allows-using-the-submissions-portal"></a>Ajouter une URL permet d’utiliser le portail Soumissions
 
@@ -112,8 +112,7 @@ Autoriser les fichiers sur la page **Soumissions** dans Microsoft 365 Defender.
 
 > [!NOTE]
 >
-> - Lorsque le fichier est à nouveau rencontré, il n’est pas envoyé pour des vérifications de détonation ou de réputation, et tous les autres filtres basés sur des fichiers sont ignorés.
-> - Par conséquent, pour un e-mail (contenant ce fichier), pendant le flux de courrier, si le reste des filtres trouve l’e-mail propre, l’e-mail est remis. 
+> Lorsque le fichier est à nouveau rencontré, il n’est pas envoyé pour des vérifications de détonation ou de réputation, et tous les autres filtres basés sur des fichiers sont ignorés. Pendant le flux de courrier, si le reste des filtres trouve l’e-mail qui contient le fichier à nettoyer, l’e-mail est remis.
 
 ## <a name="create-spoofed-sender-allow-entries-using-microsoft-365-defender"></a>Créer des entrées d’autorisation d’expéditeur usurpées à l’aide de Microsoft 365 Defender
 

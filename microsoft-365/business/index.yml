@@ -11,15 +11,15 @@ metadata:
   ms.custom:
   - AdminSurgePortfolio
   - intro-hub-or-landing
-  author: efrene
-  ms.author: efrene
-  ms.date: 04/08/2022
-  ms.openlocfilehash: e319645e0dea93a04213402003788d069a64a2b0
-  ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+  author: denisebmsft
+  ms.author: deniseb
+  ms.date: 05/02/2022
+  ms.openlocfilehash: a9e7a3cd8ed3fb331c37c60453e8ef864ee96e3a
+  ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/27/2022
-  ms.locfileid: "65092588"
+  ms.lasthandoff: 05/03/2022
+  ms.locfileid: "65174805"
 productDirectory:
   title: Productivité et sécurité avec Microsoft 365 Business Premium
   items:
@@ -57,7 +57,7 @@ conceptualContent:
       text: Comparer Microsoft 365 pour les plans d’entreprise
     - url: ../admin/misc/microsoft-365-business-faqs.yml
       itemType: reference
-      text: FAQ Microsoft 365 pour les entreprises
+      text: Forum aux questions sur Microsoft 365 Business Premium
     - url: ../business-video/index.yml
       itemType: video
       text: Vidéos de formation Microsoft 365 Entreprise
@@ -117,9 +117,12 @@ conceptualContent:
       text: Démarrage avec Espace partenaires
   - title: Protéger les appareils
     links:
+    - url: ../security/defender-business/index.yml
+      itemType: overview
+      text: Démarrer avec Microsoft Defender pour entreprise
     - url: ../business-premium/m365bp-devices-overview.md
       itemType: overview
-      text: Protéger les appareils personnels (non gérés)
+      text: Configurer des appareils non gérés (BYOD)
     - url: ../business-premium/m365bp-multifactor-authentication.md
       itemType: how-to-guide
       text: Configurer l’authentification multifacteur sur les appareils
@@ -134,9 +137,12 @@ conceptualContent:
       text: Configurer et sécuriser des appareils gérés
   - title: Protéger le contenu de vos e-mails et fichiers Office
     links:
+    - url: ..//security/office-365-security/index.yml
+      itemType: overview
+      text: Prise en main de Microsoft Defender pour Office 365
     - url: ../business-premium/m365bp-increase-protection.md
       itemType: how-to-guide
-      text: Configurer vos stratégies de sécurité
+      text: Protégez-vous contre le hameçonnage, les programmes malveillants et autres menaces
     - url: ../business-premium/avoid-phishing-and-attacks.md
       itemType: how-to-guide
       text: Savoir ce qu’il faut surveiller dans le contenu de l’e-mail

@@ -26,6 +26,8 @@
   items:
     - name: Vue d’ensemble de la page Locataires
       href: m365-lighthouse-tenants-page-overview.md
+    - name: Afficher vos rôles Azure AD entre les locataires
+      href: m365-lighthouse-view-your-roles.md
     - name: Gérer votre liste de locataires
       href: m365-lighthouse-manage-tenant-list.md
     - name: Afficher l’intégrité du service client

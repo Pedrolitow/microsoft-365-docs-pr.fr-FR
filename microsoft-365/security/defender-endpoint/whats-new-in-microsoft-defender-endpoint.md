@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6fb2b8c3e1466c52d707538f46643580c72a6fbf
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: 351a403923df8e12d63051e30518b5c254abccb8
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841887"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188809"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -49,7 +49,7 @@ Pour plus d’informations sur les fonctionnalités en préversion, consultez [F
 
 Pour plus d’informations sur les nouveautés des autres produits de sécurité Microsoft Defender, consultez :
 
-- [Nouveautés de Microsoft 365 Defender](../defender/whats-new.md)
+- [Nouveautés de Microsoft 365 Defender](../defender/whats-new.md)
 - [Nouveautés de Microsoft Defender pour Office 365](../office-365-security/whats-new-in-defender-for-office-365.md)
 - [Nouveautés de Microsoft Defender pour Identity](/defender-for-identity/whats-new)
 - [Nouveautés de Microsoft Cloud App Security](/cloud-app-security/release-notes)
@@ -62,6 +62,7 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 
 ## <a name="april-2022"></a>Avril 2022
 - [Mise à jour de l’intégration et de la parité des fonctionnalités pour Windows Server 2012 R2 et Windows Server 2016)](configure-server-endpoints.md)<br/> Le nouveau package de solution unifié est désormais en disponibilité générale et facilite l’intégration des serveurs en supprimant les dépendances et les étapes d’installation. En outre, ce package de solution unifié est fourni avec de nombreuses nouvelles améliorations de fonctionnalités.
+- Intégration à Tunnel. Microsoft Defender pour point de terminaison sur iOS peut désormais s’intégrer à Microsoft Tunnel, une solution de passerelle VPN pour activer la sécurité et la connectivité dans une seule application. Cette fonctionnalité était auparavant disponible uniquement sur Android. [Si vous souhaitez en savoir plus](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
 
 ## <a name="january-2022"></a>Janvier 2022
 

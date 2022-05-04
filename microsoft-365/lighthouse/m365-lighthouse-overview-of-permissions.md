@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, en savoir plus sur les exigences d’autorisation Lighthouse.
-ms.openlocfilehash: 62796df9e5bd5b437d06fe0c8ab6206e070c201b
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: e03ae77f6997d3d34f926285cf7aab5cdd682c9c
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916120"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188309"
 ---
 # <a name="overview-of-permissions-in-microsoft-365-lighthouse"></a>Vue d’ensemble des autorisations dans Microsoft 365 Lighthouse
 
@@ -87,6 +87,7 @@ Pour certaines actions dans Lighthouse, des attributions de rôles dans le locat
 
 [Configuration requise pour Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)  
 [FAQ sur les privilèges d’administration délégués (DAP)](/partner-center/dap-faq) (article)  
+[Afficher vos rôles Azure Active Directory dans Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (article)  
 [Attribuer des rôles et des autorisations aux utilisateurs](/partner-center/permissions-overview) (article)  
 [Vue d’ensemble de Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (article)  
 [S’inscrire à Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)  

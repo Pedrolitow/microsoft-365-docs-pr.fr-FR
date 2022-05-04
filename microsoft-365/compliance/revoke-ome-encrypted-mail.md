@@ -9,27 +9,31 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 03/04/2022
+ms.date: 05/02/2022
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
-description: En tant qu’administrateur et en tant qu’expéditeur de messages, vous pouvez révoquer certains e-mails chiffrés avec Chiffrement avancé de messages Office 365.
-ms.openlocfilehash: 313cbe990e322285fc81465329fa5e19b52e2701
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: En tant qu’administrateur et en tant qu’expéditeur de messages, vous pouvez révoquer certains e-mails chiffrés avec Microsoft Purview Advanced Message Encryption.
+ms.openlocfilehash: 79d09c13755c0c73e4d68598e83ac41344b9281a
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759388"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187940"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>Révoquer les e-mails chiffrés par Advanced Message Encryption
 
-La révocation des e-mails est proposée dans le cadre de Chiffrement avancé de messages Office 365. Chiffrement avancé de messages Office 365 est inclus dans [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (Prix du personnel à but non lucratif), Office 365 Enterprise  E5 (prix du personnel à but non lucratif) et Office 365 Education A5. Si votre organisation dispose d’un abonnement qui n’inclut pas Chiffrement avancé de messages Office 365, vous pouvez l’acheter avec le module complémentaire de référence SKU Microsoft 365 E5 Conformité pour Microsoft 365 E3, Microsoft 365 E3  (Prix du personnel à but non lucratif), ou le module complémentaire de référence SKU Conformité avancée Office 365 pour Microsoft 365 E3, Microsoft 365 E3 (Prix du personnel à but non lucratif) ou Office 365 références SKU.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+La révocation des e-mails est proposée dans le cadre du chiffrement avancé des messages Microsoft Purview. Microsoft Purview Advanced Message Encryption est inclus dans [Microsoft 365 Entreprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (tarification du personnel à but non lucratif), Office 365 Entreprise E5 (prix du personnel à but non lucratif) et Office 365 Éducation A5. Pour utiliser les fonctions de révocation et d’expiration d’Advanced Message Encryption, activez l’option **de chiffrement Premium dans Office 365** de votre licence E5.
+
+Si votre organisation dispose d’un abonnement qui n’inclut pas Microsoft Purview Advanced Message Encryption, vous pouvez l’acheter avec le module complémentaire de référence SKU Microsoft 365 E5 Conformité pour Microsoft 365 E3, Microsoft 365 E3 (prix du personnel à but non lucratif) ou le Conformité avancée Office 365 module complémentaire SKU pour Microsoft 365 E3, Microsoft 365 E3 (Prix du personnel à but non lucratif) ou Office 365 références SKU.
 
 Cet article fait partie d’une série plus importante d’articles sur [Office 365 chiffrement](ome.md) des messages.
 
-Si un message a été chiffré à l’aide de Chiffrement avancé de messages Office 365 et que vous êtes administrateur Microsoft 365 ou que vous êtes l’expéditeur du message, vous pouvez révoquer le message dans certaines conditions. Les administrateurs révoquent les messages à l’aide de PowerShell. En tant qu’expéditeur, vous révoquez un message que vous avez envoyé directement à partir de Outlook na Web. Cet article décrit les circonstances dans lesquelles la révocation est possible et comment procéder.
+Si un message a été chiffré à l’aide de Microsoft Purview Advanced Message Encryption et que vous êtes administrateur Microsoft 365 ou que vous êtes l’expéditeur du message, vous pouvez révoquer le message dans certaines conditions. Les administrateurs révoquent les messages à l’aide de PowerShell. En tant qu’expéditeur, vous révoquez un message que vous avez envoyé directement à partir de Outlook sur le web. Cet article décrit les circonstances dans lesquelles la révocation est possible et comment procéder.
 
 > [!NOTE]
 > Pour garantir que la possibilité de suivre et de révoquer les messages OME est disponible, vous devez ajouter un modèle de personnalisation. Voir [Ajouter la marque de votre organisation à vos messages chiffrés](add-your-organization-brand-to-encrypted-messages.md)
@@ -40,9 +44,9 @@ Les administrateurs et les expéditeurs de messages peuvent révoquer des e-mail
 
 Le fait qu’un destinataire reçoive une expérience basée sur des liens ou une expérience inline dépend du type d’identité du destinataire : les destinataires Office 365 et de compte Microsoft (par exemple, les utilisateurs outlook.com) bénéficient d’une expérience inline dans les clients Outlook pris en charge. Tous les autres types de destinataires, tels que les destinataires Gmail et Yahoo, bénéficient d’une expérience basée sur des liens.
 
-Les administrateurs et les expéditeurs de messages peuvent révoquer les messages chiffrés à l’aide du chiffrement appliqué directement à partir de Outlook na Web. Par exemple, les messages chiffrés avec l’option Chiffrer uniquement.
+Les administrateurs et les expéditeurs de messages peuvent révoquer les messages chiffrés à l’aide du chiffrement appliqué directement à partir de Outlook sur le web. Par exemple, les messages chiffrés avec l’option Chiffrer uniquement.
 
-:::image type="content" source="../media/adhocencryptionrevoke.png" alt-text="Capture d’écran montrant l’option Chiffrer uniquement dans Outlook na Web.":::
+:::image type="content" source="../media/adhocencryptionrevoke.png" alt-text="Capture d’écran montrant l’option Chiffrer uniquement dans Outlook sur le web.":::
 
 ## <a name="recipient-experience-for-revoked-encrypted-emails"></a>Expérience du destinataire pour les e-mails chiffrés révoqués
 
@@ -58,17 +62,17 @@ Vous ne pouvez pas révoquer un courrier que vous avez envoyé à un destinatair
 
 Pour révoquer un message chiffré que vous avez envoyé, procédez comme suit
 
-1. Dans Outlook na Web, dans votre dossier **Envoyé**, accédez au message que vous souhaitez révoquer.
+1. Dans Outlook sur le web, dans votre dossier **Envoyé**, accédez au message que vous souhaitez révoquer.
 
    Si le message est révocable, le lien « Supprimer l’accès externe » s’affiche en haut du message.
 
-    :::image type="content" source="../media/infoprotect-email-encryption/adhocencryptionrevokesentmsg.png" alt-text="Capture d’écran montrant le courrier chiffré que vous souhaitez révoquer dans Outlook na Web.":::
+    :::image type="content" source="../media/infoprotect-email-encryption/adhocencryptionrevokesentmsg.png" alt-text="Capture d’écran montrant le courrier chiffré que vous souhaitez révoquer dans Outlook sur le web.":::
 
 2. Cliquez sur **Supprimer l’accès externe** pour révoquer le message.
 
    Le message indique que son état est révoqué.
 
-   :::image type="content" source="../media/adhocencryptionrevokedmsg.png" alt-text="Capture d’écran montrant le message chiffré révoqué dans Outlook na Web.":::
+   :::image type="content" source="../media/adhocencryptionrevokedmsg.png" alt-text="Capture d’écran montrant le message chiffré révoqué dans Outlook sur le web.":::
 
 ## <a name="how-to-revoke-an-encrypted-message-as-an-administrator"></a>Comment révoquer un message chiffré en tant qu’administrateur
 
@@ -92,7 +96,7 @@ Il existe plusieurs façons de rechercher l’ID de message de l’e-mail que vo
 
 2. Une fois que vous avez localisé l’e-mail, sélectionnez-le pour afficher le volet Détails de la **trace des** messages. Développez **plus d’informations** pour localiser l’ID de message.
 
-#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>Pour identifier l’ID de message de l’e-mail que vous souhaitez révoquer à l’aide de Office rapports de chiffrement des messages dans le Centre de conformité de &amp; sécurité
+#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-message-encryption-reports-in-the-security-amp-compliance-center"></a>Pour identifier l’ID de message de l’e-mail que vous souhaitez révoquer à l’aide de rapports de chiffrement de messages dans le Centre de conformité de sécurité &amp;
 
 1. Dans le Centre de conformité de sécurité &amp; , accédez au **rapport de chiffrement des messages**. Pour plus d’informations sur ce rapport, consultez [Afficher les rapports de sécurité par e-mail dans le Centre de conformité de la sécurité&amp;](../security/office-365-security/view-email-security-reports.md).
 
@@ -122,7 +126,7 @@ Pour vérifier si vous pouvez révoquer un e-mail particulier à l’aide de Win
      "Test message" True
      ```
 
-### <a name="step-3-revoke-the-mail"></a>Étape 3. Révoquer le courrier
+### <a name="step-3-revoke-the-mail"></a>Étape 3. Révoquer le courrier
 
 Une fois que vous connaissez l’ID de message de l’e-mail que vous souhaitez révoquer et que vous avez vérifié que le message est révocable, vous pouvez révoquer l’e-mail à l’aide du Centre de conformité de &amp; sécurité ou de Windows PowerShell.
 
@@ -154,10 +158,10 @@ Pour révoquer un e-mail à l’aide de Windows PowerShell, utilisez l’applet 
      Revoked: True
      ```
 
-## <a name="more-information-about-office-365-advanced-message-encryption"></a>Plus d’informations sur Chiffrement avancé de messages Office 365
+## <a name="more-information-about-microsoft-purview-advanced-message-encryption"></a>Plus d’informations sur le chiffrement avancé des messages Microsoft Purview
 
-- [Chiffrement de messages avancé Office 365](ome-advanced-message-encryption.md)
+- [Chiffrement avancé des messages Microsoft Purview](ome-advanced-message-encryption.md)
 
-- [Chiffrement avancé de messages Office 365 - Expiration de l’e-mail](ome-advanced-expiration.md)
+- [Microsoft Purview Advanced Message Encryption - Expiration du courrier électronique](ome-advanced-expiration.md)
 
 - [Description de la stratégie de message et du service de conformité](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)

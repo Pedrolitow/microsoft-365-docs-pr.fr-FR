@@ -1,5 +1,5 @@
 ---
-title: En savoir plus sur l’extension de la conformité Microsoft.
+title: En savoir plus sur l’extension Microsoft Purview
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,23 +18,25 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: L’extension de la conformité Microsoft étend la surveillance et le contrôle des activités des fichiers et des actions de protection au navigateur Google Chrome
-ms.openlocfilehash: 15c62369bb8b4fc02926fa0e2b0bfc4834c371ac
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+description: Extension Microsoft Purview étend la surveillance et le contrôle des activités de fichiers et des actions de protection au navigateur Google Chrome
+ms.openlocfilehash: a74cfeb734f41622d491c8aaffe3a5e054479a2a
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "62909706"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172247"
 ---
-# <a name="learn-about-the-microsoft-compliance-extension"></a>En savoir plus sur l’extension de la conformité Microsoft.
+# <a name="learn-about-the-microsoft-purview-extension"></a>En savoir plus sur l’extension Microsoft Purview
 
-[La protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md) étend les fonctionnalités de surveillance et de protection des activités de la [Protection contre la perte de données (DLP) de Microsoft 365](dlp-learn-about-dlp.md) aux éléments sensibles sur les appareils Windows 10. Une fois que les appareils sont intégrés aux solutions de conformité Microsoft 365, les informations relatives à ce que les utilisateurs font avec les éléments sensibles sont rendues visibles dans [l’Explorateur d’activités](data-classification-activity-explorer.md) et vous pouvez appliquer des actions de protection à ces éléments via [stratégies DLP](create-test-tune-dlp-policy.md).
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Une fois l’extension de conformité Microsoft installée sur un appareil Windows 10, les organisations peuvent surveiller quand un utilisateur tente d’accéder à un service cloud ou de charger un élément sensible vers un service cloud à l’aide de Google Chrome et d’appliquer des actions de protection via DLP.  
+[La prévention des pertes de données des points de terminaison (endpoint DLP)](endpoint-dlp-learn-about.md) étend les capacités de surveillance et de protection des activités de [Microsoft Purview Data Loss Prevention (DLP)](dlp-learn-about-dlp.md) aux éléments sensibles qui se trouvent sur les appareils Windows 10. Une fois que les appareils sont intégrés aux solutions de conformité Microsoft Purview, les informations relatives à ce que les utilisateurs font avec les éléments sensibles sont rendues visibles dans [l’Explorateur d’activités](data-classification-activity-explorer.md) et vous pouvez appliquer des actions de protection à ces éléments via des [stratégies DLP](create-test-tune-dlp-policy.md).
+
+Une fois l’extension installée sur un appareil Windows 10, les organisations peuvent surveiller lorsqu’un utilisateur tente d’accéder ou de télécharger un élément sensible sur un service cloud à l’aide de Google Chrome et d’appliquer des actions de protection via DLP.  
 
 ## <a name="activities-you-can-monitor-and-take-action-on"></a>Les activités que vous pouvez surveiller et sur lesquels vous pouvez agir
 
-L’extension de la conformité Microsoft vous permet d’auditer et de gérer les types d’activités suivants que les utilisateurs prennent sur les appareils exécutant Windows 10.
+L’extension vous permet d’auditer et de gérer les types d’activités suivants que les utilisateurs effectuent sur des éléments sensibles sur des appareils exécutant Windows 10.
 
 activité |description  | actions de stratégie prises en charge|
 |---------|---------|---------|
@@ -52,14 +54,14 @@ activité |description  | actions de stratégie prises en charge|
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Consultez [Prise en main de l’extension de la conformité Microsoft](dlp-chrome-get-started.md) pour des procédures et scénarios de déploiement complets.
+Consultez [Prise en main de l’Extension Microsoft Purview](dlp-chrome-get-started.md) pour des procédures et des scénarios de déploiement complets.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Prise en main de l’extension de la conformité Microsoft](dlp-chrome-get-started.md)
-- [Découvrir la protection contre la perte de données des point de terminaison de Microsoft 365](endpoint-dlp-learn-about.md)
-- [Prise en main des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-getting-started.md)
-- [Utilisation des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-using.md)
+- [Démarrage avec l’Extension Microsoft Purview](dlp-chrome-get-started.md)
+- [Découvrir la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md)
+- [Prise en main de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md)
+- [Utilisation de la prévention des pertes de données sur les points de terminaison](endpoint-dlp-using.md)
 - [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)

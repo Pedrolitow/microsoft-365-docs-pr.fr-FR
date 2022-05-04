@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Découvrez les éléments non indexés dans Exchange et SharePoint que vous pouvez inclure dans une recherche eDiscovery que vous exécutez dans le portail de conformité Microsoft Purview.
-ms.openlocfilehash: ff21f04456d6886e7849a8d9a0770640897a62ac
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 27f59ac9bf6a580fa0a3193ee91f66a4ac58ab1e
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091498"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188787"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Éléments partiellement indexés dans eDiscovery
 
@@ -162,7 +162,10 @@ Pour obtenir la liste des limites d’indexation des documents SharePoint, consu
 
 - Bien qu’un type de fichier soit pris en charge pour l’indexation et qu’il soit indexé, il peut y avoir des erreurs d’indexation ou de recherche qui entraînent le retour d’un fichier en tant qu’élément partiellement indexé. Par exemple, la recherche d’un fichier Excel volumineux peut être partiellement réussie (car les 4 Premiers Mo sont indexés), mais échoue, car la limite de taille de fichier est dépassée. Dans ce cas, il est possible que le même fichier soit retourné avec les résultats de la recherche et en tant qu’élément partiellement indexé.
 
-- Les fichiers chiffrés avec les [technologies de chiffrement Microsoft](encryption.md) et attachés à un message électronique qui correspond aux critères d’une recherche peuvent être affichés en préversion et déchiffrés lors de l’exportation. À ce stade, les fichiers chiffrés avec les technologies de chiffrement Microsoft (et stockés dans SharePoint ou OneDrive Entreprise) sont partiellement indexés.
+- Les fichiers chiffrés avec les [technologies de chiffrement Microsoft](encryption.md) et attachés à un message électronique qui correspond aux critères d’une recherche peuvent être affichés en préversion et déchiffrés lors de l’exportation. À ce stade, les fichiers chiffrés avec les technologies de chiffrement Microsoft (et stockés dans SharePoint ou OneDrive Entreprise) sont partiellement indexés. 
+
+   > [!NOTE]
+   > Les fichiers chiffrés à l’aide d’étiquettes de confidentialité ne seront pas déchiffrés.
 
 - Les messages électroniques chiffrés avec S/MIME sont partiellement indexés. Il s'agit des messages chiffrés avec ou sans pièces jointes.
 

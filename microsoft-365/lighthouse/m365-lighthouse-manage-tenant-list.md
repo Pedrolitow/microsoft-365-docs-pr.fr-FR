@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment gérer votre liste de locataires.
-ms.openlocfilehash: b4bffcfd5b8962253e68938a956949ca8470f818
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: bdd92f066f0b94c545b102b96eedb7e08c10ed96
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022424"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188325"
 ---
 # <a name="manage-your-tenant-list-in-microsoft-365-lighthouse"></a>Gérer votre liste de locataires dans Microsoft 365 Lighthouse
 
@@ -100,10 +100,12 @@ Les balises déjà affectées au locataire auront une coche à droite du nom de 
 
 Les balises actuellement affectées ont une coche à droite du nom. Vous pouvez également supprimer une balise de plusieurs locataires en cochant la case en regard de chaque locataire de la liste, en sélectionnant **Attribuer des balises**, puis en sélectionnant une balise cochée dans la liste.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Une fois que vous avez créé et affecté des balises, vous pouvez les utiliser pour filtrer vos locataires. Accédez à l’une des autres pages (utilisateurs, appareils, gestion des menaces ou Windows 365) et sélectionnez une ou plusieurs balises dans le filtre client. Vous pouvez créer de nouvelles balises pour prendre en charge des vues spécifiques en fonction de chaque page.
 
 ## <a name="related-content"></a>Contenu associé
 
-[S’inscrire à Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article) [Vue d’ensemble de la page conformité de l’appareil dans Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (article) [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[S’inscrire à Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)\
+[Vue d’ensemble de la page Conformité de l’appareil dans Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (article)\
+[MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)

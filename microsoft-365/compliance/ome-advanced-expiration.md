@@ -1,5 +1,5 @@
 ---
-title: Définir une date d’expiration pour les e-mails chiffrés par le chiffrement avancé de messages Office 365
+title: Définir une date d’expiration pour les e-mails chiffrés par le chiffrement avancé de messages Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -15,34 +15,38 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Utilisez Chiffrement avancé de messages Office 365 pour étendre la sécurité de votre messagerie en fixant une date d’expiration sur les e-mails via un modèle personnalisé.
+description: Utilisez Microsoft Purview Advanced Message Encryption pour étendre votre sécurité de messagerie en définissant une date d’expiration sur les e-mails via un modèle personnalisé de marque.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1213ecf48ee9bd2e04accdd13aaf3ecd74d3faba
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e8689820adc3158ae2a36a4d52ebad0959097b49
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152933"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188391"
 ---
-# <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>Définir une date d’expiration pour les e-mails chiffrés par le chiffrement avancé de messages Office 365
+# <a name="set-an-expiration-date-for-email-encrypted-by-microsoft-purview-advanced-message-encryption"></a>Définir une date d’expiration pour les e-mails chiffrés par le chiffrement avancé de messages Microsoft Purview
 
-Chiffrement avancé de messages Office 365 est inclus dans [Microsoft 365 Entreprise E5,](https://www.microsoft.com/microsoft-365/enterprise/home)Office 365 E5, Microsoft 365 E5 (tarifs pour le personnel à but non lucratif), Office 365 Entreprise E5 (tarifs pour le personnel à but non lucratif) et Office 365 Éducation A5. Si votre organisation dispose d’un abonnement qui n’inclut pas Chiffrement avancé de messages Office 365, vous pouvez l’acheter avec le module Microsoft 365 E5 Conformité SKU pour Microsoft 365 E3, Microsoft 365 E3 ( Les tarifs du personnel pour les associations) ou le module Conformité avancée Office 365 référence SKU pour Microsoft 365 E3, Microsoft 365 E3 (prix du personnel à but non lucratif) ou Office 365 références SKU.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Vous pouvez utiliser l’expiration des messages sur les e-mails que vos utilisateurs envoient à des destinataires externes qui utilisent le portail OME pour accéder aux e-mails chiffrés. Vous forcez les destinataires à utiliser le portail OME pour afficher et répondre aux messages électroniques chiffrés envoyés par votre organisation à l’aide d’un modèle personnalisé personnalisé qui spécifie une date d’expiration dans Windows PowerShell.
+Microsoft Purview Advanced Message Encryption est inclus dans [Microsoft 365 Entreprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (tarification du personnel à but non lucratif), Office 365 Entreprise E5 (prix du personnel à but non lucratif) et Office 365 Éducation A5. Microsoft 365 E5 Conformité module complémentaire SKU pour Microsoft 365 E3, Microsoft 365 E3 (Prix du personnel à but non lucratif) ou le module complémentaire de référence SKU Conformité avancée Office 365 pour Microsoft 365 E3, Microsoft 365 E3 (prix du personnel à but non lucratif) ou Office 365 références SKU.
 
-En tant qu’administrateur Office 365 général, lorsque vous appliquez la marque de votre entreprise pour personnaliser l’apparence des messages électroniques de votre organisation, vous pouvez également spécifier une expiration pour ces messages électroniques. Avec Chiffrement avancé de messages Office 365, vous pouvez créer plusieurs modèles pour les e-mails chiffrés provenant de votre organisation. À l’aide d’un modèle, vous pouvez contrôler la durée pendant combien de temps les destinataires ont accès aux messages envoyés par vos utilisateurs.
+Si votre organisation dispose d’un abonnement qui n’inclut pas Microsoft Purview Advanced Message Encryption, vous pouvez l’acheter avec le module complémentaire de référence SKU Microsoft 365 E5 Conformité pour Microsoft 365 E3, Microsoft 365 E3 (prix du personnel à but non lucratif) ou le Conformité avancée Office 365 module complémentaire SKU pour Microsoft 365 E3, Microsoft 365 E3 (Prix du personnel à but non lucratif) ou Office 365 références SKU.
 
-Lorsqu’un utilisateur final reçoit un message dont la date d’expiration est définie, il voit la date d’expiration dans le message électronique de wrapper. Si un utilisateur tente d’ouvrir un message expiré, une erreur s’affiche dans le portail OME.
+Vous pouvez utiliser l’expiration des messages sur les e-mails que vos utilisateurs envoient aux destinataires externes qui utilisent le portail OME pour accéder aux e-mails chiffrés. Vous forcez les destinataires à utiliser le portail OME pour afficher et répondre aux e-mails chiffrés envoyés par votre organisation à l’aide d’un modèle personnalisé de marque qui spécifie une date d’expiration dans Windows PowerShell.
 
-Vous ne pouvez définir des dates d’expiration que pour les messages électroniques envoyés à des destinataires externes.
+En tant qu’administrateur général Office 365, lorsque vous appliquez la marque de votre entreprise pour personnaliser l’apparence des messages électroniques de votre organisation, vous pouvez également spécifier une expiration pour ces messages électroniques. Avec Microsoft Purview Advanced Message Encryption, vous pouvez créer plusieurs modèles pour les e-mails chiffrés provenant de votre organisation. À l’aide d’un modèle, vous pouvez contrôler la durée pendant laquelle les destinataires ont accès au courrier envoyé par vos utilisateurs.
 
-Avec Chiffrement avancé de messages Office 365, chaque fois que vous appliquez une personnalisation, le Office 365 applique le wrapper au courrier électronique qui correspond à la règle de flux de messagerie à laquelle vous appliquez le modèle. En outre, vous ne pouvez utiliser l’expiration que si vous utilisez une personnalisation.
+Lorsqu’un utilisateur final reçoit un courrier dont la date d’expiration est définie, il voit la date d’expiration dans l’e-mail du wrapper. Si un utilisateur tente d’ouvrir un courrier expiré, une erreur s’affiche dans le portail OME.
+
+Vous pouvez uniquement définir des dates d’expiration pour les e-mails envoyés à des destinataires externes.
+
+Avec Microsoft Purview Advanced Message Encryption, chaque fois que vous appliquez une personnalisation, le Office 365 applique le wrapper à l’e-mail qui correspond à la règle de flux de messagerie à laquelle vous appliquez le modèle. En outre, vous ne pouvez utiliser l’expiration que si vous utilisez la personnalisation.
 
 ## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>Créer un modèle de personnalisation pour forcer l’expiration du courrier à l’aide de PowerShell
 
-1. [Connecter à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) avec un compte qui dispose d’autorisations d’administrateur général dans votre organisation.
+1. [Connecter de Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) avec un compte disposant d’autorisations d’administrateur général dans votre organisation.
 
-2. Exécutez lNew-OMEConfiguration cmdlet.
+2. Exécutez l’applet de commande New-OMEConfiguration.
 
     ```powershell
     New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
@@ -52,12 +56,12 @@ Où :
 
 - `Identity` est le nom du modèle personnalisé.
 
-- `ExternalMailExpiryInDays` identifie le nombre de jours pendant les jours pendantaux pendantaux pendant les destinataires pour conserver le courrier avant son expiration. Vous pouvez utiliser n’importe quelle valeur entre 1 et 730 jours.
+- `ExternalMailExpiryInDays` identifie le nombre de jours pendant lesquels les destinataires peuvent conserver le courrier avant son expiration. Vous pouvez utiliser n’importe quelle valeur comprise entre 1 et 730 jours.
 
-## <a name="more-information-about-office-365-advanced-message-encryption"></a>Plus d’informations sur Chiffrement avancé de messages Office 365
+## <a name="more-information-about-microsoft-purview-advanced-message-encryption"></a>Plus d’informations sur le chiffrement avancé des messages Microsoft Purview
 
-- [Chiffrement de messages avancé Office 365](ome-advanced-message-encryption.md)
+- [Chiffrement avancé des messages](ome-advanced-message-encryption.md)
 
-- [Révoquer les e-mails chiffrés par le chiffrement de messages Office 365](revoke-ome-encrypted-mail.md)
+- [Exemple de scénario : révoquer les e-mails chiffrés avec le chiffrement avancé des messages Microsoft Purview](revoke-ome-encrypted-mail.md)
 
-- [Description du service de conformité et de stratégie de message](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)
+- [Description de la stratégie de message et du service de conformité](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)

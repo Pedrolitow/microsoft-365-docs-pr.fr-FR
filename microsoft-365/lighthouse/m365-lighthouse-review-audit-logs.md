@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment examiner les journaux d’audit.
-ms.openlocfilehash: ca4d1e9941e0c15fee169def7be0c2d801f522c2
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 59e45f33b1c6708b4743605bda6ac4c93499bf59
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022824"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188765"
 ---
 # <a name="review-audit-logs-in-microsoft-365-lighthouse"></a>Examiner les journaux d’audit dans Microsoft 365 Lighthouse
 
@@ -94,10 +94,11 @@ Le tableau suivant répertorie les activités capturées dans les journaux d’a
 | **windowsDefenderScan** | Gestion des menaces | Analyse rapide | MEM |
 | **windowsDefenderUpdateSignatures** | Gestion des menaces | Mettre à jour l’antivirus | MEM |
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
-Si vous avez besoin de plus d’informations, utilisez Microsoft API Graph pour accéder à d’autres événements d’audit. Pour plus d’informations, consultez [Vue d’ensemble de la gestion multilocataire à l’aide de l’API Microsoft 365 Lighthouse](/graph/managedtenants-concept-overview).
+Utilisez Microsoft API Graph pour accéder à d’autres événements d’audit, si nécessaire. Pour plus d’informations, consultez [Vue d’ensemble de la gestion multilocataire à l’aide de l’API Microsoft 365 Lighthouse](/graph/managedtenants-concept-overview).
 
 ## <a name="related-content"></a>Contenu associé
 
-[MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)
+[MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)\
+[Afficher vos rôles Azure Active Directory dans Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (article)

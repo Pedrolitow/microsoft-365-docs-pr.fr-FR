@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 51d5814d718c1422d493f5227b311a58f99f7a82
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 7b7586a75c95202e2737bab857ab1ffebd04d6c4
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783268"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187731"
 ---
 # <a name="microsoft-virus-initiative"></a>Microsoft Virus Initiative
 
@@ -53,6 +53,7 @@ Pour être éligible au programme MVI, votre organisation doit répondre à tout
 |SKD Labs|Certification Requirements Product: Anti-virus or Antimalware </br> <http://www.skdlabs.com/html/english/> </br> <http://www.skdlabs.com/cert/>|SkD Labs Star Check Certification Requirements Pass >= 98,5% with On Demand, On Access and Total Detection tests|
 |VB 100|VB100 Certification Test V1.1 </br> <https://www.virusbulletin.com/testing/vb100/vb100-methodology/vb100-methodology-ver1-1/>|VB100 Certification|
 |Laboratoires de la côte Ouest|Coche certifiée </br> <http://www.checkmarkcertified.com/sme/>|Évaluation « A » des performances de sécurité du produit|
+|SE Labs|Test de protection de la protection des petites entreprises ou des Enterprise EP  </br> <https://selabs.uk/en/reports/consumers/>|Évaluation de protection A ou EP Petite Entreprise A ou Enterprise évaluation protection A du PE |
 
 ## <a name="apply-now"></a>Appliquer maintenant
 

@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenez des outils pas à pas pour planifier, migrer et implémenter les fonctionnalités dans les licences de votre locataire. Recherchez un guide pour configurer un service ou une application que vous devez exécuter.
-ms.openlocfilehash: 6018a490cf77498b1767e7e269b17937f11ae011
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 61eccec443a939591e563daa5135239bf0e23a74
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097357"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188721"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guides de configuration pour les services Microsoft 365 et Office 365
 
@@ -181,13 +181,13 @@ Les solutions de ce guide vous aideront à obtenir une visibilité sur les activ
 * Avec la solution de conformité des communications, vous pouvez identifier et agir sur les risques de communication pour des éléments tels que la violence au travail, les délits internes, le harcèlement, le code de conduite et les violations de conformité réglementaire.
 * La solution de gestion des risques internes vous aide à identifier, examiner et prendre des mesures en cas de vol de propriété intellectuelle, de fuites de données sensibles, de violations de sécurité, de débordement de données et de violations de confidentialité.
 
-### <a name="information-protection-setup-guide"></a>Guide d’installation de la protection des informations
+### <a name="microsoft-purview-information-protection-setup-guide"></a>Guide d’installation de Microsoft Purview Information Protection
 
-Obtenez une vue d’ensemble des fonctionnalités que vous pouvez appliquer à votre stratégie de protection des informations afin d’être certain que vos informations sensibles sont protégées. Utilisez une approche de cycle de vie à quatre étapes consistant à découvrir, à classer, à protéger, puis à contrôler les informations sensibles. Le guide de [Configuration de la protection des données Microsoft](https://aka.ms/mipsetupguide) fournit des conseils sur l’exécution de chacune de ces étapes.
+Obtenez une vue d’ensemble des fonctionnalités que vous pouvez appliquer à votre stratégie de protection des informations afin d’être certain que vos informations sensibles sont protégées. Utilisez une approche de cycle de vie à quatre étapes consistant à découvrir, à classer, à protéger, puis à contrôler les informations sensibles. Le [guide d’installation de Microsoft Purview Information Protection](https://aka.ms/microsoftpurviewinformationprotectionsetupguide) fournit des conseils pour effectuer chacune de ces étapes.
 
-### <a name="data-lifecycle-management-setup-guide"></a>Guide de configuration de la gestion du cycle de vie des données
+### <a name="microsoft-purview-data-lifecycle-management-setup-guide"></a>Guide d’installation de Microsoft Purview Data Lifecycle Management
 
-Le [guide d’installation de la gouvernance des informations Microsoft](https://aka.ms/migsetupguide) vous fournit les informations dont vous aurez besoin pour configurer et gérer la stratégie de gouvernance de votre organisation, afin de vous assurer que vos données sont classifiées et gérées conformément aux instructions de cycle de vie spécifiques que vous définissez. Avec ce guide, vous allez apprendre à créer, appliquer automatiquement ou publier des étiquettes, des stratégies d’étiquette et des stratégies de rétention qui sont appliquées aux enregistrements de contenu et de conformité réutilisables de votre organisation. Vous obtiendrez également des informations sur l’importation de fichiers CSV avec un plan de fichiers pour les scénarios en bloc ou pour les appliquer manuellement à des documents individuels.
+Le [guide d’installation de Microsoft Purview Data Lifecycle Management](https://aka.ms/migsetupguide) vous fournit les informations dont vous aurez besoin pour configurer et gérer la stratégie de gouvernance de votre organisation, afin de vous assurer que vos données sont classifiées et gérées conformément aux instructions de cycle de vie spécifiques que vous définissez. Avec ce guide, vous allez apprendre à créer, appliquer automatiquement ou publier des étiquettes de rétention, des stratégies d’étiquette de rétention et des stratégies de rétention appliquées aux enregistrements de contenu et de conformité de votre organisation. Vous obtiendrez également des informations sur l’importation de fichiers CSV avec un plan de fichiers pour les scénarios en bloc ou pour les appliquer manuellement à des documents individuels.
 
 ### <a name="microsoft-defender-for-cloud-apps-setup-guide"></a>guide d’installation Microsoft Defender for Cloud Apps
 

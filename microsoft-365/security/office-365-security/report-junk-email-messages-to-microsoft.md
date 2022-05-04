@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent découvrir les différentes façons de signaler les messages et fichiers corrects et incorrects à Microsoft à des fins d’analyse.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d2ddd9c0d96355af1ccdbb40cdd5c7542d9852c1
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: 56ef5cd5a376f4d10af1ad8c592dad02dbc8ef0a
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144687"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188435"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Signaler les messages et fichiers à Microsoft Corporation
 
@@ -46,4 +46,4 @@ Dans Microsoft 365 organisations avec des boîtes aux lettres dans des organisat
 > [!NOTE]
 > Lorsque vous signalez une entité de messagerie à Microsoft, nous faisons une copie de tout ce qui est associé à l’e-mail pour l’inclure dans nos révisions d’algorithmes continues. Cette copie inclut le contenu de l’e-mail, les en-têtes d’e-mail et les données associées sur le routage de l’e-mail. Les pièces jointes du message sont également incluses.
 >
-> Microsoft considère vos commentaires comme l’autorisation de votre organisation pour nous d’analyser toutes les informations décrites précédemment et de travailler à affiner les algorithmes d’hygiène des messages. Nous tenons votre message dans nos centres de données audités sécurisés aux États-Unis jusqu’à ce que nous supprimions votre soumission au plus tard 30 jours après que vous nous l’avez fourni. Le personnel de Microsoft peut lire vos messages et pièces jointes envoyés, ce qui n’est normalement pas autorisé pour les e-mails dans Office 365. Toutefois, votre e-mail est toujours traité comme confidentiel entre vous et Microsoft, et nous fournirons votre soumission à toute autre partie pour lire l’e-mail ou ses pièces jointes pour ce processus de révision.
+> Microsoft considère vos commentaires comme l’autorisation de votre organisation pour nous d’analyser toutes les informations décrites précédemment et de travailler à affiner les algorithmes d’hygiène des messages. Nous tenons votre message dans nos centres de données audités sécurisés aux États-Unis jusqu’à ce que nous supprimions votre soumission au plus tard 30 jours après que vous nous l’avez fourni. Le personnel de Microsoft peut lire vos messages et pièces jointes envoyés, ce qui n’est normalement pas autorisé pour les e-mails dans Office 365. Toutefois, votre e-mail est toujours traité comme confidentiel entre vous et Microsoft, et nous ne fournirons votre soumission à aucune autre partie pour lire l’e-mail ou ses pièces jointes pour ce processus de révision.
