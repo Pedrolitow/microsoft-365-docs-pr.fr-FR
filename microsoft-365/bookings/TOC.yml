@@ -9,6 +9,8 @@
           href: enter-business-information.md
         - name: Définir vos offres de service
           href: define-service-offerings.md
+        - name: Configurer les notifications par SMS
+          href: bookings-sms.md
         - name: Ajouter du personnel aux réservations
           href: add-staff.md
         - name: Planifier des fermetures d’entreprise et des congés
@@ -25,6 +27,8 @@
           href: add-questions.md
         - name: Définition de la durée du tampon
           href: set-buffer-time.md
+        - name: Gérer les participants du groupe dans Bookings
+          href: manage-attendees-bookings.md
         - name: Statistiques et suivi des activités
           href: metrics-and-activity-tracking.md
         - name: Définition de la langue et du fuseau horaire

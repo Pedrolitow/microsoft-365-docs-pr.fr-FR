@@ -19,25 +19,27 @@ ms.collection:
 search.appverid:
 - MET150
 description: Intégrer des appareils Windows 10 et Windows 11 dans Microsoft 365
-ms.openlocfilehash: ea1038554349b6c035c52bd3d3429d71d7d866bc
-ms.sourcegitcommit: 9d563faeaa50b59b0b468dbb373d886e5270f58e
+ms.openlocfilehash: 876bd3f2d825fc1b698d3c7b9a76b1c7f115aedf
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "64387130"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187896"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>Vue d’ensemble de l’intégration des appareils Windows 10 et Windows 11 dans Microsoft 365
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **S’applique à :**
 
 - [Protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
-- [Gestion des risques internes](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Gestion des risques internes](insider-risk-management.md)
 
 La protection contre la perte de données de point de terminaison (DLP) et la gestion des risques internes nécessitent que les appareils Windows 10 Windows et Windows 11 soient intégrés au service afin qu’ils puissent envoyer des données de surveillance aux services.
  
 La protection contre la perte de données (DLP) de point de terminaison vous permet de surveiller les appareils Windows 10 ou Windows 11 et de détecter quand les éléments sensibles sont utilisés et partagés. Ainsi, vous bénéficiez de la visibilité et du contrôle dont vous avez besoin pour vous assurer qu’ils sont utilisés et protégés correctement, et pour éviter tout comportement risqué susceptible de les compromettre. Si vous souhaitez en savoir plus sur les offres DLP de Microsoft, veuillez consulter la rubrique [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md). Pour en savoir plus sur le point de terminaison DLP, voir [En savoir plus sur la protection contre la perte de données de point de terminaison.](endpoint-dlp-learn-about.md)
 
-La gestion des risques internes utilise l’ensemble des indicateurs de service et tiers pour vous aider à identifier, trier et agir rapidement sur l’activité des utilisateurs à risque. À l’aide des journaux de Microsoft 365 et de Microsoft Graph, la gestion des risques internes vous permet de définir des stratégies spécifiques pour identifier les indicateurs de risque et prendre des mesures pour atténuer ces risques. Pour plus d’informations, voir [En savoir plus sur la gestion des risques internes dans Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365).
+La gestion des risques internes utilise l’ensemble des indicateurs de service et tiers pour vous aider à identifier, trier et agir rapidement sur l’activité des utilisateurs à risque. À l’aide des journaux de Microsoft 365 et de Microsoft Graph, la gestion des risques internes vous permet de définir des stratégies spécifiques pour identifier les indicateurs de risque et prendre des mesures pour atténuer ces risques. Pour plus d’informations, voir [En savoir plus sur la gestion des risques internes](insider-risk-management.md).
 
 L’intégration d’appareil est partagée entre Microsoft 365 et Microsoft Defender pour le point de terminaison (MDE). Si vous avez déjà intégré des appareils à MDE, ils apparaissent dans la liste des appareils gérés et aucune autre étape n’est nécessaire pour intégrer ces appareils spécifiques. L’intégration d’appareils dans le Centre de conformité les intègre également dans MDE.
 
@@ -107,7 +109,7 @@ Assurez-vous que les appareils Windows que vous devez intégrer répondent à ce
 
 ## <a name="onboarding-windows-10-or-windows-11-devices"></a>Intégration d’appareils Windows 10 ou Windows 11
 
-Vous devez activer la surveillance des appareils et intégrer vos points de terminaison avant de pouvoir surveiller et protéger les éléments sensibles sur un appareil. Ces deux actions sont effectuées dans le portail de conformité Microsoft 365.
+Vous devez activer la surveillance des appareils et intégrer vos points de terminaison avant de pouvoir surveiller et protéger les éléments sensibles sur un appareil. Ces deux actions sont effectuées dans le portail de conformité Microsoft Purview.
 
 Lorsque vous souhaitez intégrer des appareils qui n’ont pas encore été intégrés, vous téléchargerez le script approprié et le déployez sur ces appareils. Suivez la procédure pour Intégrer des appareils.
 
@@ -115,7 +117,7 @@ Si vous disposez déjà d’appareils incorporés dans [Microsoft Defender pour 
 
 Dans ce scénario de déploiement, vous allez intégrer des appareils Windows 10 ou Windows 11 qui n’ont pas encore été intégrés.
 
-1. Ouvrez le [Centre de conformité Microsoft](https://compliance.microsoft.com). Choisissez **Paramètres**  >  **activer la surveillance des appareils.**
+1. Ouvrez le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com). Choisissez **Paramètres**  >  **activer la surveillance des appareils.**
 
    > [!NOTE]
    > Bien que l’activation de l’intégration des appareils dure généralement environ 60 secondes, patientez jusqu’à 30 minutes avant de contacter le support Microsoft.
@@ -141,27 +143,9 @@ Rubrique | Description
 [intégrer des appareils Windows 10 ou 11 à l’aide d’un script local](device-onboarding-script.md) | Découvrez comment utiliser le script local pour déployer le package de configuration sur des points de terminaison.
 [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](device-onboarding-vdi.md) | Découvrez comment utiliser le package de configuration pour configurer des appareils VDI.
 
-Une fois qu’un appareil est intégré, il doit être visible dans la liste des appareils et commencer à signaler l’activité du journal d’audit à l’Explorateur d’activités.
-
-### <a name="viewing-endpoint-dlp-alerts-in-dlp-alerts-management-dashboard"></a>Affichage des alertes DLP de point de terminaison dans le tableau de bord de Gestion des alertes DLP
-
-1. Ouvrez la page Protection contre la perte de données dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> sélectionnez Alertes.
-
-2. Reportez-vous aux procédures décrites dans [Comment configurer et afficher les alertes pour les stratégies DLP](dlp-configure-view-alerts-policies.md) pour afficher les alertes relatives à vos stratégies DLP de point de terminaison.
-
-### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>Affichage de données DLP de point de terminaison dans l’Explorateur d’activités
-
-1. Ouvrez la [Page classification des données](https://compliance.microsoft.com/dataclassification?viewid=overview) pour votre domaine dans le centre de conformité Microsoft 365, puis sélectionnez Explorateur d’activités.
-
-2. Reportez-vous aux procédures décrites dans [Prise en main de l’Explorateur d’activités](data-classification-activity-explorer.md) pour accéder aux données de vos appareils de point de terminaison et les filtrer.
-
-   > [!div class="mx-imgBorder"]
-   > ![filtre de l’Explorateur d’activités pour les appareils de point de terminaison.](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
-
-
 ## <a name="see-also"></a>Voir aussi
 
-- [Découvrez les stratégies de gestion des risques internes dans Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [En savoir plus sur la gestion des risques internes Microsoft](insider-risk-management.md)
 - [Découvrir la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md)
 - [Utilisation de la prévention des pertes de données sur les points de terminaison](endpoint-dlp-using.md)
 - [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)

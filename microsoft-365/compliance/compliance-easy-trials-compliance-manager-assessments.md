@@ -1,5 +1,5 @@
 ---
-title: À propos de la version d’évaluation premium du Gestionnaire de conformité Microsoft
+title: À propos de la version d’évaluation premium du Gestionnaire de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -13,15 +13,17 @@ ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
-description: À propos des essais d’évaluation Premium du Gestionnaire de conformité Microsoft
-ms.openlocfilehash: b7eaa963a3978a38db8511f30aa663670e7168c7
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+description: À propos des versions d’évaluation premium du Gestionnaire de conformité Microsoft Purview.
+ms.openlocfilehash: b5d653626eadbfcc6e58d2be36a7ed8899c02eeb
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62465170"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187753"
 ---
-# <a name="about-the-free-trial-for-microsoft-compliance-manager-premium-assessments"></a>À propos de l’essai gratuit pour les évaluations premium du Gestionnaire de conformité Microsoft
+# <a name="about-the-free-trial-for-microsoft-purview-compliance-manager-premium-assessments"></a>À propos de l’essai gratuit pour les évaluations Premium du Gestionnaire de conformité Microsoft Purview
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Le Gestionnaire de conformité vous permet de gérer les exigences de conformité de votre organisation et d’évaluer et d’améliorer votre score de conformité. Les évaluations que vous créez sont basées sur des modèles qui correspondent aux réglementations gouvernementales et aux normes du secteur dans le monde entier.  
 
@@ -29,15 +31,15 @@ Votre contrat de licence pour utiliser le Gestionnaire de conformité peut inclu
 
 ## <a name="terms-and-conditions"></a>Conditions générales
 
-Consultez les [conditions générales](terms-conditions.md) pour les essais de conformité de Microsoft 365.
+Consultez les [conditions générales](/legal/microsoft-365/microsoft-365-trial) pour les versions d’évaluation de Microsoft 365.
 
 ## <a name="set-up-a-premium-assessment-trial"></a>Configurer un essai d’évaluation premium
 
-Vous pouvez vous inscrire à une version d’essai dans le Centre de conformité Microsoft 365 à l’aide du lien **Essais** dans le volet de navigation de gauche. Sélectionnez la **version d’évaluation premium du** Gestionnaire de conformité pour démarrer une version d’évaluation pour les modèles d’évaluation Premium.
+Vous pouvez vous inscrire à une version d’évaluation dans le portail de conformité Microsoft Purview en utilisant le lien **Versions d’évaluation** dans le volet de navigation de gauche. Sélectionnez la **version d’évaluation premium du** Gestionnaire de conformité pour démarrer une version d’évaluation pour les modèles d’évaluation Premium.
 
 Cette évaluation premium est disponible pour les organisations qui utilisent le Gestionnaire de conformité sous une licence commerciale. Pour des informations sur le GCC et le DOD et les options d'essai, voir [Travailler avec les modèles de Gestionnaire de conformité](compliance-manager-templates.md).
 
-L’accès total aux fonctionnalités du Gestionnaire de conformité peut dépendre de votre contrat de licence pour le Gestionnaire de conformité. Pour en savoir plus sur la version d’essai de conformité gratuite qui inclut le Gestionnaire de conformité, consultez la version d’essai gratuit [Microsoft 365 conformité.](compliance-easy-trials.md)
+L’accès total aux fonctionnalités du Gestionnaire de conformité peut dépendre de votre contrat de licence pour le Gestionnaire de conformité. Pour en savoir plus sur la version d’évaluation de conformité gratuite qui inclut le Gestionnaire de conformité, consultez [À propos de l’évaluation gratuite pour Microsoft Purview](compliance-easy-trials.md).
 
 > [!NOTE]
 > Vérifiez vos paramètres Centre d'administration Microsoft 365 pour faciliter l’inscription à la version d’essai. Dans le centre d'administration de Microsoft 365, accédez à la page **Paramètres > Paramètres de l'organisation > Services**, puis sélectionnez **Apps et services appartenant à l'utilisateur**. Cochez ensuite la case pour que les utilisateurs démarrent des essais au nom de votre organisation. Lorsque l’installation se termine dans environ deux minutes, vous pouvez revenir en arrière et décocher la case pour désactiver ce paramètre. Vous pouvez également démarrer l’essai sans ajuster les paramètres de votre organisation en allant sur la page Facturation **> Acheter des services** et en recherchant l’évaluation premium du Gestionnaire de conformité.
@@ -56,7 +58,7 @@ Tout utilisateur de votre organisation disposant d’autorisations d’accès au
 
 ## <a name="during-your-trial"></a>Pendant votre version d’essai
 
-Tout au long de votre version d’évaluation, vous pouvez consulter la **section** récapitulatif de la version d’évaluation de la **page** Vue d’ensemble dans le Gestionnaire de conformité pour voir le nombre d’évaluations que vous avez créées, le nombre d’actions d’amélioration que vous avez effectuées, la façon dont cela a contribué à votre score de conformité et le temps qui reste dans votre essai. À partir de là, vous pouvez également consulter la liste des modèles disponibles et en savoir plus sur leur achat pour une utilisation continue.
+Tout au long de votre version d’évaluation, vous pouvez consulter la section **Résumé de la version d’évaluation** de la page **Vue d’ensemble** dans le Gestionnaire de conformité pour voir le nombre d’évaluations que vous avez créées, le nombre d’actions d’amélioration que vous avez effectuées, la façon dont cela a contribué à votre score de conformité et le temps qui reste dans votre version d’évaluation. À partir de là, vous pouvez également consulter la liste des modèles disponibles et en savoir plus sur leur achat pour une utilisation continue.
 
 ## <a name="after-the-trial"></a>Après la version d’essai
 
@@ -64,6 +66,6 @@ Une fois votre essai gratuit terminé, les modèles que vous avez utilisés ne r
 
 ## <a name="learn-more-about-compliance"></a>En savoir plus sur la conformité
 
-Pour en savoir plus sur les fonctionnalités du Gestionnaire de conformité et sur la façon dont il peut aider votre organisation à respecter les exigences de conformité et de réglementation, consultez le [Gestionnaire de conformité Microsoft.](compliance-manager.md)  
+Pour en savoir plus sur les fonctionnalités du Gestionnaire de conformité et sur la façon dont il peut aider votre organisation à respecter les exigences de conformité et de réglementation, consultez le [Gestionnaire de conformité Microsoft Purview](compliance-manager.md).  
 
-Vous pouvez également en savoir plus sur les autres solutions de conformité Microsoft et sur la façon de démarrer des essais à l’aide de la version d’essai gratuit [Microsoft 365 conformité.](compliance-easy-trials.md)
+Vous pouvez également en savoir plus sur les autres solutions de conformité Microsoft et sur la façon de démarrer des versions d’évaluation en consultant [À propos de la version d’évaluation gratuite pour Microsoft Purview](compliance-easy-trials.md).

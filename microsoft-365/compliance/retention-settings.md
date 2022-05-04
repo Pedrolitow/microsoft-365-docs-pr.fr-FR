@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: c0214476494e024247b76911475df88bdfbfa4ff
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: ab3adee8275f6c64dd7ad3b21547e8205b00ff7d
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129219"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187775"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -240,6 +240,8 @@ Les emplacements dans les stratégies de rétention identifient des services Mic
 
 ### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Informations de configuration pour la messagerie Exchange et les dossiers publics Exchange
 
+L’emplacement de **Courrier Exchange** et l’emplacement des **dossiers publics Exchange** nécessitent que les boîtes aux lettres aient au moins 10 Mo de données avant que les paramètres de rétention ne s’appliquent à celles-ci.
+
 L’emplacement **Courrier Exchange** prend en charge la rétention du courrier électronique, du calendrier et d’autres éléments de boîte aux lettres des utilisateurs en appliquant des paramètres de rétention au niveau d’une boîte aux lettres. Les boîtes aux lettres partagées sont également prises en charge.
 
 Les boîtes aux lettres de ressources, les contacts et les boîtes aux lettres de groupe Microsoft 365 ne sont pas pris en charge pour les e-mails Exchange. Pour boîtes aux lettres de groupe Microsoft 365, sélectionnez plutôt l’emplacement **Groupes Microsoft 365** . Bien que l’emplacement Exchange autorise initialement la sélection d’une boîte aux lettres de groupe pour une étendue statique, lorsque vous essayez d’enregistrer la stratégie de rétention, vous recevez une erreur vous précisant que « RemoteGroupMailbox » n’est pas une sélection valide pour cet emplacement.
@@ -294,6 +296,8 @@ Lorsque vous configurez une stratégie de rétention qui utilise des étendues d
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Informations de configuration pour les Groupes Microsoft 365
 
 Pour conserver ou supprimer le contenu d’un groupe Microsoft 365 (anciennement groupe Office 365), utilisez l’emplacement **Groupes Microsoft 365**. Pour les stratégies de rétention, cet emplacement inclut la boîte aux lettres de groupe et SharePoint site d’équipes. Pour les étiquettes de rétention, cet emplacement inclut SharePoint site d’équipes uniquement.
+
+Les boîtes aux lettres que vous ciblez avec cet emplacement de stratégie nécessitent au moins 10 Mo de données avant que les paramètres de rétention ne s’appliquent à celles-ci.
 
 > [!NOTE]
 > Même si un groupe Microsoft 365 possède une boîte aux lettres Exchange, une stratégie de rétention qui inclut l’ensemble de l’emplacement de la **messagerie Exchange** n’inclut pas le contenu des boîtes aux lettres du groupe Microsoft 365.

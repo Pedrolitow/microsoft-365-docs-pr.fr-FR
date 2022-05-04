@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instructions pour publier des étiquettes de rétention afin de pouvoir ensuite les appliquer dans les applications pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas.
-ms.openlocfilehash: c2088afd895b47945bea056c940e564b4dd770fb
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dd20de86b17460d5b150b5bb576ae811e40eed32
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "65145380"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187797"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publier des étiquettes de rétention et les appliquer dans des applications
 
@@ -88,7 +88,7 @@ Pour modifier une stratégie d’étiquette de rétention existante (le type de 
 
 Si vous publiez des étiquettes de rétention sur SharePoint ou OneDrive, ces étiquettes apparaissent généralement pour que les utilisateurs les sélectionnent dans un délai d’un jour. Toutefois, vous pouvez autoriser jusqu’à sept jours. 
 
-Si vous publiez des étiquettes de rétention dans Exchange, l’affichage de ces étiquettes de rétention pour les utilisateurs peut prendre jusqu’à sept jours, et la boîte aux lettres doit contenir au moins 10 Mo de données.
+Si vous publiez des étiquettes de rétention dans Exchange, l’affichage de ces étiquettes de rétention pour les utilisateurs peut prendre jusqu’à sept jours. Comme avec tous les paramètres de rétention pour Exchange, la boîte aux lettres doit contenir au moins 10 Mo de données.
 
 ![Diagramme du moment où les étiquettes publiées prennent effet.](../media/retention-labels-published-timings.png)
 

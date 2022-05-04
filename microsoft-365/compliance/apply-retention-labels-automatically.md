@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des stratégies de rétention d’étiquetage automatique afin de pouvoir appliquer automatiquement des étiquettes pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas
-ms.openlocfilehash: 2c1ea20f9b663ca8cee59043bbe6399f5bae66f1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1895669c20d06bdae13ed2d25183dff92862d44f
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "65145270"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188853"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -279,7 +279,7 @@ Lorsque vous choisissez l'option pour un classificateur entraînable, vous pouve
 > [!CAUTION]
 > Nous supprimons le classificateur pré-entraîné **Langage offensif** car il a produit un nombre élevé de faux positifs. N'utilisez pas ce classificateur et si vous l'utilisez actuellement, nous vous recommandons d'abandonner vos processus d'entreprise et d'utiliser plutôt les classificateurs pré-entraînés **Harcèlement ciblé** , **Profanation** , et **Menace**.
 
-Pour appliquer automatiquement une étiquette à l’aide de cette option, les sites et boîtes aux lettres SharePoint doivent avoir au moins 10 Mo de données.
+Pour appliquer automatiquement une étiquette à l’aide de cette option, les sites SharePoint, ainsi que les boîtes aux lettres doivent avoir au moins 10 Mo de données.
 
 Pour plus d’informations sur les classifieurs avec capacité de formation, consultez [Découvrez les classifieurs avec capacité de formation](classifier-learn-about.md).
 
