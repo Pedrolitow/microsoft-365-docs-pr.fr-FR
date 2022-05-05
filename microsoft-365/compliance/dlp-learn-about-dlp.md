@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment protéger vos informations sensibles à l’aide de stratégies et d’outils de protection contre la perte de données Microsoft Purview et effectuer une visite guidée du cycle de vie de la protection contre la perte de données.
-ms.openlocfilehash: 755593830b489b268c81e722bd35a5984f2d1d93
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: aa32eba1111f4a119652ba88b59062581bb6cc4b
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953402"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231773"
 ---
 # <a name="learn-about-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données
 
@@ -89,7 +89,7 @@ Vous pouvez appliquer des stratégies DLP aux données au repos, aux données en
 
 - e-mail Exchange Online
 - Sites SharePoint Online
-- Comptes OneDrive
+- Les comptes OneDrive
 - conversation et messages de canal Teams
 - Microsoft Cloud App Security
 - Windows 10, Windows 11 et macOS (Catalina 10.15 et versions ultérieures)
@@ -183,7 +183,7 @@ Une fois la stratégie synchronisée avec les emplacements adéquats, elle comme
 
 ## <a name="viewing-policy-application-results"></a>Affichage des résultats de l’application de stratégie
 
-DLP signale une grande quantité d’informations dans Microsoft Purview à partir de la surveillance, des correspondances et des actions de stratégie, et des activités des utilisateurs. Vous devez utiliser et agir sur ces informations pour ajuster vos stratégies et trier les actions effectuées sur les éléments sensibles. La télémétrie passe d’abord dans les [journaux d’audit du portail de conformité Microsoft Purview](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) , est traitée et fait son chemin vers différents outils de création de rapports. Chaque outil de création de rapports a un objectif différent.
+DLP signale une grande quantité d’informations dans Microsoft Purview à partir de la surveillance, des correspondances et des actions de stratégie, et des activités des utilisateurs. Vous devez utiliser et agir sur ces informations pour ajuster vos stratégies et trier les actions effectuées sur les éléments sensibles. La télémétrie passe d’abord dans les [journaux d’audit du portail de conformité Microsoft Purview](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal) , est traitée et fait son chemin vers différents outils de création de rapports. Chaque outil de création de rapports a un objectif différent.
 
 ### <a name="dlp-alerts-dashboard"></a>Tableau de bord des alertes DLP
 
@@ -217,7 +217,7 @@ Pour en savoir plus sur la protection contre la perte de données Microsoft Purv
 
 - [Découvrir la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md)
 - [En savoir plus sur la stratégie de protection par défaut contre la perte de données dans Microsoft Teams (préversion)](dlp-teams-default-policy.md)
-- [En savoir plus sur la protection contre la perte de données sur le scanneur local](dlp-on-premises-scanner-learn.md)
+- [En savoir plus sur le scanner local de prévention des pertes de données](dlp-on-premises-scanner-learn.md)
 - [En savoir plus sur l’extension de la conformité Microsoft.](dlp-chrome-learn-about.md)
 - [En savoir plus sur le tableau de bord des alertes de protection contre la perte de données](dlp-alerts-dashboard-learn.md)
 

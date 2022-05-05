@@ -1,5 +1,5 @@
 ---
-title: Journal d’activité du portail de messages chiffré
+title: Journal d’activités du portail des messages chiffrés
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -9,23 +9,23 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 04/21/2022
+ms.date: 05/04/2022
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Les journaux d’accès sont disponibles pour les messages chiffrés récupérés via le portail des messages chiffrés.
-ms.openlocfilehash: 0eb7225401b0e33a43d0ee535aba13539d1c020d
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 778d4a72c505f9a5be453b740a2fab13d2674249
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131391"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231674"
 ---
 # <a name="encrypted-message-portal-activity-log-preview"></a>Journal d’activité du portail de messages chiffré (préversion)
 
-Les journaux d’accès sont disponibles pour les messages chiffrés via le portail de messages chiffrés qui permet à votre organisation de déterminer quand les messages sont lus et transférés par vos destinataires externes. Pour vous assurer que les journaux sont disponibles pour tous les destinataires externes, vous devez appliquer un modèle de personnalisation personnalisé aux e-mails protégés envoyés par votre organisation aux destinataires externes qui appliquent une expérience de portail. Voir [Ajouter la marque de votre organisation à vos messages chiffrés](add-your-organization-brand-to-encrypted-messages.md).
+Les journaux d’accès sont disponibles pour les messages chiffrés via le portail des messages chiffrés qui permet à votre organisation de déterminer quand les messages sont lus et transférés par vos destinataires externes. Pour vous assurer que les journaux sont disponibles pour tous les destinataires externes, vous devez appliquer un modèle de personnalisation personnalisé aux e-mails protégés envoyés par votre organisation aux destinataires externes qui appliquent une expérience de portail. Voir [Ajouter la marque de votre organisation à vos messages chiffrés](add-your-organization-brand-to-encrypted-messages.md).
 
 ## <a name="enabling-message-access-audit-logs-in-powershell"></a>Activation des journaux d’audit d’accès aux messages dans PowerShell
 
@@ -46,6 +46,8 @@ Le journal d’accès contient des entrées pour les messages envoyés via le po
 - L’utilisateur externe lit des messages ou des pièces jointes
 - Téléchargement de pièces jointes
 - réponses de messagerie et transfert
+
+Pour plus d’informations sur le schéma du journal d’accès aux messages, consultez [Rechercher dans le journal d’audit dans le portail de conformité](search-the-audit-log-in-security-and-compliance.md#encrypted-message-portal-activities).
 
 ## <a name="search-for-events-in-the-message-access-logs"></a>Rechercher des événements dans les journaux d’accès aux messages
 

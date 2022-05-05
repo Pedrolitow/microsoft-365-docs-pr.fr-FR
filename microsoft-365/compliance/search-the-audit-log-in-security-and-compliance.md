@@ -21,14 +21,14 @@ description: Utilisez le portail de conformité Microsoft Purview pour recherche
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: e6754601aca5dda74ee59ed2c6c52b3f8b1eb2a3
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: b3ad71878f6d0c766cbcf5ba435bc61396f45ed6
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128497"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231756"
 ---
-# <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
+# <a name="search-the-audit-log-in-the-compliance-portal"></a>Rechercher dans le journal d’audit dans le portail de conformité Microsoft Purview
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -93,7 +93,6 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
 
 - Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online pour pouvoir effectuer des recherches dans le journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page **Autorisations** dans le Centre d’administration Exchange. Les administrateurs globaux dans votre client Office 365 et Microsoft 365 sont automatiquement des membres du groupe de rôle Gestion de l'organisation dans Exchange Online. Pour permettre à un utilisateur d’effectuer des recherches dans le journal d’audit avec le niveau minimal de privilèges, vous pouvez créer un groupe de rôles personnalisé dans Exchange Online, ajouter le rôle Journaux d’audit en affichage seul ou Journaux d’audit, puis ajouter l’utilisateur en tant que membre du nouveau groupe de rôles. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups).
 
-  > [!IMPORTANT]
   > Si vous affectez le rôle Journaux d’audit en affichage seul ou Journaux d’audit à un utilisateur dans la page **Autorisations** du portail de conformité, celui-ci ne pourra pas effectuer de recherches dans le journal d’audit. Vous devez affecter les autorisations dans Exchange Online. En effet, la cmdlet sous-jacente utilisée pour les recherches dans le journal d’audit est une cmdlet Exchange Online.
 
 - Lorsqu’une activité auditée est effectuée par un utilisateur ou un administrateur, un enregistrement d’audit est généré et stocké dans le journal d’audit pour votre organisation. La durée pendant laquelle un enregistrement d'audit est conservé (et consultable dans le journal d'audit) dépend de votre abonnement Office 365 ou Microsoft 365 Entreprise, et en particulier du type de licence attribuée à des utilisateurs spécifiques.
@@ -103,7 +102,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
     > [!NOTE]
     > Si votre organisation a participé au programme d’aperçu privé pour la conservation d’un an de rapports d’audit, la durée de conservation des enregistrements d’audit générés avant la date de lancement générale de la disponibilité ne sera pas réinitialisée.
 
-  - Pour les utilisateurs auxquels toute autre licence Office 365 ou Microsoft 365 (non E5) est attribuée, les enregistrements d’audit sont conservés pendant 90 jours. Pour obtenir la liste des abonnements Office 365 et Microsoft 365 prenant en charge la journalisation d’audit unifiée, voir [la description de service du Centre de sécurité et conformité](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+  - Pour les utilisateurs auxquels toute autre licence Office 365 ou Microsoft 365 (non E5) est attribuée, les enregistrements d’audit sont conservés pendant 90 jours. Pour obtenir la liste des abonnements Office 365 et Microsoft 365 qui prennent en charge la journalisation d’audit unifiée, consultez [la description du service du portail de sécurité et de conformité](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
     > [!NOTE]
     > Même lorsque l'audit des boîtes aux lettres activé par défaut est activé, vous pouvez remarquer que les événements d'audit des boîtes aux lettres pour certains utilisateurs ne sont pas trouvés dans les recherches de journaux d'audit dans le portail de conformité ou via l'API d'activité de gestion d'Office 365. Pour plus d'informations, affichez[Plus d'informations sur la journalisation de l'audit des boîtes aux lettres](enable-mailbox-auditing.md#more-information).
@@ -244,7 +243,7 @@ Vous pouvez exporter les résultats d’une recherche dans le journal d’audit 
 
 #### <a name="more-information-about-exporting-and-viewing-audit-log-search-results"></a>Informations supplémentaires sur l'exportation et l'affichage des résultats de recherche dans le journal d'audit
 
-- Lorsque vous téléchargez tous les résultats de la recherche, le fichier CSV contient les colonnes **CreationDate**, **UserIds**, **Opérations** et **AuditData**. La colonne **AuditData** contient des informations supplémentaires sur chaque événement (semblables aux informations détaillées affichées sur la page du menu volant lorsque vous affichez les résultats de la recherche dans le Centre de conformité). Les données de cette colonne se composent d’un objet JSON qui contient plusieurs propriétés de l’enregistrement du journal d’audit. Chaque pair *property:value* dans l’objet JSON est séparée par une virgule. Vous pouvez utiliser l’outil transformation JSON de l’éditeur Power Query dans Excel pour fractionner la colonne **AuditData** en plusieurs colonnes de sorte que chaque propriété dans l’objet JSON ait sa propre colonne. Cela vous permettra d’utiliser une ou plusieurs de ces propriétés pour trier et filtrer les valeurs. Pour obtenir des instructions pas à pas à l’aide de l’éditeur Power Query pour transformer l’objet JSON, voir [exporter, configurer et afficher des enregistrements de journal d’audit](export-view-audit-log-records.md).
+- Lorsque vous téléchargez tous les résultats de la recherche, le fichier CSV contient les colonnes **CreationDate**, **UserIds**, **Opérations** et **AuditData**. La colonne **AuditData** contient des informations supplémentaires sur chaque événement (semblables aux informations détaillées affichées sur la page de menu volant lorsque vous affichez les résultats de la recherche dans le portail de conformité). Les données de cette colonne se composent d’un objet JSON qui contient plusieurs propriétés de l’enregistrement du journal d’audit. Chaque pair *property:value* dans l’objet JSON est séparée par une virgule. Vous pouvez utiliser l’outil transformation JSON de l’éditeur Power Query dans Excel pour fractionner la colonne **AuditData** en plusieurs colonnes de sorte que chaque propriété dans l’objet JSON ait sa propre colonne. Cela vous permettra d’utiliser une ou plusieurs de ces propriétés pour trier et filtrer les valeurs. Pour obtenir des instructions pas à pas à l’aide de l’éditeur Power Query pour transformer l’objet JSON, voir [exporter, configurer et afficher des enregistrements de journal d’audit](export-view-audit-log-records.md).
 
   Après avoir fractionné la colonne **AuditData**, vous pouvez filtrer sur la colonne **Opérations** pour afficher les propriétés détaillées pour un type d’activité spécifique.
 
@@ -254,7 +253,7 @@ Vous pouvez exporter les résultats d’une recherche dans le journal d’audit 
 
 ## <a name="audited-activities"></a>Activités auditées
 
-Les tableaux de cette section décrivent les activités auditées dans Microsoft 365. Vous pouvez rechercher ces événements dans le journal d’audit dans le Centre de sécurité et conformité.
+Les tableaux de cette section décrivent les activités auditées dans Microsoft 365. Vous pouvez trouver ces événements dans le portail de sécurité et de conformité en recherchant dans le journal d’audit.
 
 Ces tableaux regroupent des activités connexes ou les activités d’un service spécifique. Les tableaux incluent le nom convivial affiché dans la liste déroulante **Activités** et le nom de l’opération correspondante qui apparaît dans les informations détaillées d’un enregistrement d’audit et le fichier .csv lorsque vous exportez les résultats de recherche. Pour consulter des descriptions des informations détaillées, voir [Propriétés détaillées dans le journal d’audit](detailed-properties-in-the-office-365-audit-log.md).
 
@@ -401,6 +400,18 @@ Pour accéder à un tableau spécifique, cliquez sur l’un des liens suivants.
     :::column-end:::
     :::column:::
         [Activités administrateur Exchange](#exchange-admin-audit-log)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Activités du portail des messages chiffrés](#encrypted-message-portal-activities)
+    :::column-end:::
+    :::column:::
+        
+    :::column-end:::
+    :::column:::
+        
     :::column-end:::
 :::row-end:::
 
@@ -769,7 +780,7 @@ Le tableau suivant répertorie les activités liées à l’annuaire et au domai
 
 ### <a name="ediscovery-activities"></a>Activités de découverte électronique
 
-Les activités Recherche de contenu et eDiscovery, effectuées dans le centre de sécurité et de conformité ou en exécutant les cmdlets PowerShell correspondantes, sont enregistrées dans le journal d'audit. Cela comprend les activités suivantes :
+Les activités liées à la recherche de contenu et à la découverte électronique qui sont effectuées dans le portail de sécurité et de conformité ou en exécutant les applets de commande PowerShell correspondantes sont enregistrées dans le journal d’audit. Cela inclut les activités suivantes :
 
 - création et gestion des cas de découverte électronique ;
 

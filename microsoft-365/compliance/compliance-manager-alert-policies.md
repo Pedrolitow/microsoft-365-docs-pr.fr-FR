@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment créer des alertes pour les activités dans le Gestionnaire de conformité Microsoft Purview qui peuvent avoir un impact sur votre score de conformité.
-ms.openlocfilehash: b1e5630e20ace4835f8651d1878e731e423f58b1
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 32ab22f47d35d64fa72dcc4898f5fff06d20c13c
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129153"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231734"
 ---
 # <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>Alertes et stratégies d’alerte du Gestionnaire de conformité Microsoft Purview
 
@@ -31,13 +31,12 @@ ms.locfileid: "65129153"
 
 **Dans cet article :** Découvrez comment **définir des alertes** pour certaines activités dans le Gestionnaire de conformité, comment gérer les alertes et comment **créer des stratégies d’alerte** pour définir des conditions d’alerte.
 
-## <a name="overview"></a>Aperçu
+## <a name="overview"></a>Vue d’ensemble
 Le Gestionnaire de conformité peut vous avertir des modifications dès qu’elles se produisent afin que vous puissiez suivre vos objectifs de conformité. Par exemple, vous pouvez configurer des alertes pour vous informer quand la valeur de score d’une action d’amélioration a augmenté ou diminué en raison d’un changement de configuration dans votre locataire, ou lorsqu’une action d’amélioration a été affectée à un utilisateur pour effectuer un travail d’implémentation ou de test. Affichez les [types d’événements](#create-an-alert-policy) pour lesquels vous pouvez créer des alertes.
 
 Pour créer des alertes, vous devez d’abord configurer une stratégie d’alerte pour décrire les conditions qui déclenchent une alerte et la fréquence des notifications. Lorsque nous détectons une correspondance avec vos conditions de stratégie, vous recevez une notification par e-mail avec des détails afin que vous puissiez déterminer s’il faut examiner ou prendre d’autres mesures.
 
-
-Toutes les alertes sont répertoriées sous l’onglet **Alertes** dans le Gestionnaire de conformité, et toutes les stratégies d’alerte sont répertoriées sous **l’onglet Stratégies d’alerte**.
+Toutes les alertes sont répertoriées sous l’onglet **Alertes** dans le Gestionnaire de conformité, et toutes les stratégies d’alerte sont répertoriées sous **l’onglet Stratégies d’alerte**.  Toutes les organisations disposent d’une [stratégie de changement de score par défaut](#default-score-change-policy) déjà configurée pour elles.
 
 ## <a name="understanding-the-alerts-and-alert-policies-pages"></a>Présentation des pages Alertes et Stratégies d’alerte
 
@@ -95,6 +94,28 @@ Vous pouvez créer des stratégies pour vous avertir lorsque certaines modificat
 - **Changement d’état de l’implémentation** : un utilisateur a modifié l’état d’implémentation d’une action d’amélioration.
 - **Modification de l’état** du test : un utilisateur a modifié l’état de test d’une action d’amélioration.
 - **Modification de la preuve** : un utilisateur a chargé ou supprimé un document de preuve sous l’onglet **Documents** de l’action d’amélioration.
+
+#### <a name="default-score-change-policy"></a>Stratégie de modification du score par défaut
+
+Le Gestionnaire de conformité configure une stratégie d’alerte par défaut pour surveiller les changements de score dans les actions d’amélioration. La stratégie par défaut génère une alerte quand le score d’une action d’amélioration change. La plupart des paramètres de la stratégie par défaut ne peuvent pas être modifiés, mais vous pouvez ajouter des destinataires supplémentaires pour les notifications.
+
+Voici les paramètres de la stratégie par défaut :
+
+- Toutes les correspondances détectées dans un délai de 60 minutes sont regroupées en une seule alerte pour réduire les notifications excessives. Par exemple, si cinq actions d’amélioration subissent un changement de score en une heure, une alerte est générée.
+
+- Le niveau de gravité de ces alertes est **moyen**.
+
+- L’administrateur général de votre organisation est le destinataire par défaut des notifications d’alerte.
+
+- Vous pouvez ajouter d’autres destinataires d’alerte en procédant comme suit :
+    - Dans la page **Stratégies d’alerte** , recherchez la stratégie d’alerte **par défaut du Gestionnaire de conformité**.
+    - Cochez la case à gauche de son nom et sélectionnez le bouton **Modifier** en haut, au-dessus des filtres.
+    - Sélectionnez le bouton **Suivant** jusqu’à ce que vous accédiez à la page **Des destinataires de l’alerte** .
+    - Sélectionnez **+Sélectionner les destinataires** et cochez les cases en regard de chaque nom d’utilisateur dans le volet de menu volant pour lequel vous souhaitez recevoir la notification par e-mail. Lorsque vous avez terminé, **sélectionnez Ajouter un destinataire**, puis **sélectionnez Suivant**.
+    - Dans la page **Révision et fin** , sélectionnez **Mettre à jour** pour enregistrer vos modifications.
+
+- La stratégie par défaut ne peut pas être supprimée, mais vous pouvez [la désactiver en suivant les étapes décrites ci-dessous](#activate-or-inactivate-a-policy).
+
 
 ### <a name="policy-creation-steps"></a>Étapes de création de stratégie
 
@@ -170,7 +191,7 @@ Vous pouvez filtrer votre vue des alertes en sélectionnant la commande **Filtre
 
 - Type d’événement
 - Severity
-- État
+- Statut
 - Utilisateur affecté à
 - Date de détection
 - Nom de la stratégie

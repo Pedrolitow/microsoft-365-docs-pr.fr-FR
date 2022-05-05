@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir le fonctionnement de la rétention pour Exchange.
-ms.openlocfilehash: 66b7ad888e62ff84b6a2de49714bbbdf96268312
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: d5c961c733dd757c1f2b8179793b43991e71b4d8
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911421"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188743"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Découvrir la rétention pour Exchange
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Les informations contenues dans cet article complètent [Découvrir la rétention](retention.md) car elles contiennent des informations spécifiques à Exchange. Pour d’autres charges de travail, voir :
 
@@ -41,6 +43,8 @@ Les éléments de calendrier qui ont une date de fin sont prises en charge pour 
 Les contacts, ainsi que les tâches et les éléments de calendrier qui n’ont pas de date de fin ne sont pas pris en charge.
 
 Les autres éléments stockés dans une boîte aux lettres, tels que les messages Skype et Teams, ne sont pas inclus dans les stratégies ou étiquettes de rétention de Exchange. Ces éléments ont leurs propres stratégies de rétention.
+
+Les boîtes aux lettres doivent avoir au moins 10 Mo de données avant que les paramètres de rétention ne s’appliquent à celles-ci et que des étiquettes de rétention puissent leur être publiées.
 
 ## <a name="how-retention-works-for-exchange"></a>Fonctionnement de la rétention pour Exchange
 
@@ -97,7 +101,7 @@ Lorsque les paramètres de rétention ne s’appliquent plus, car les données s
 
 ## <a name="configuration-guidance"></a>Instructions de configuration
 
-Si vous débutez avec la configuration de la rétention dans Microsoft 365, consultez [Démarrage avec la gouvernance des informations](get-started-with-information-governance.md).
+Si vous débutez avec la configuration de la rétention dans Microsoft 365, consultez [Démarrage avec la gestion du cycle de vie des données](get-started-with-data-lifecycle-management.md).
 
 Si vous êtes prêt à configurer une stratégie ou une étiquette de rétention pour Exchange, consultez les instructions suivantes :
 - [Créer et configurer des stratégies de rétention](create-retention-policies.md)
