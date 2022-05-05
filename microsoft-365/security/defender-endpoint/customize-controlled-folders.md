@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 5b941cf40a220f2d9298a4918d334349f784dd13
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: ba9102f96ea08bf33f72a260779b4b37d6a6f0f4
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789885"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217373"
 ---
 # <a name="customize-controlled-folder-access"></a>Personnaliser l’accès contrôlé aux dossiers
 
@@ -160,7 +160,7 @@ Une application ou un service autorisé dispose uniquement d’un accès en écr
 
 ### <a name="use-mdm-csps-to-allow-specific-apps"></a>Utiliser des CSP MDM pour autoriser des applications spécifiques
 
-Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Config/Defender/GuardedFoldersAllowedApplications](/windows/client-management/mdm/policy-csp-defender#defender-guardedfoldersallowedapplications) (CSP) pour permettre aux applications d’apporter des modifications aux dossiers protégés.
+Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Config/Defender/ControlledFolderAccessAllowedApplications](/windows/client-management/mdm/policy-csp-defender#defender-guardedfoldersallowedapplications) (CSP) pour permettre aux applications d’apporter des modifications aux dossiers protégés.
 
 ## <a name="allow-signed-executable-files-to-access-protected-folders"></a>Autoriser les fichiers exécutables signés à accéder aux dossiers protégés
 

@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment activer les canaux partagés dans Microsoft Teams pour la collaboration avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: fe9ad8673b381206149abb4d8e6fb14a5a563dd0
-ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
+ms.openlocfilehash: 392b2326e3166b5f813f96edc2a21c360919cfa6
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65182622"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217479"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>Collaborer avec des participants externes dans un canal partagé
 
@@ -94,7 +94,7 @@ Pour configurer les paramètres entrants d’une organisation
 1. Sous l’onglet **Applications**, sélectionnez **Autoriser l’accès** et **Sélectionner des applications**.
 1. Sélectionnez **Ajouter des applications Microsoft**.
 1. Sélectionnez l’application **Office 365**, puis choisissez **Sélectionner**.
-1. Sélectionnez **Enregistrer** et fermez le panneau **Paramètres d’accès sortant** .
+1. Sélectionnez **Enregistrer** et fermez le panneau **Paramètres d’accès entrant** .
 
 ### <a name="configure-outbound-settings"></a>Configurer les paramètres de trafic sortant
 

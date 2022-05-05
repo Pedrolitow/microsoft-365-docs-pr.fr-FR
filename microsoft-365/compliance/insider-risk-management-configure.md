@@ -1,7 +1,7 @@
 ---
 title: Prise en main de la gestion des risques internes
 description: Configurez la gestion des risques internes dans votre organisation.
-keywords: Microsoft 365, gestion des risques internes, gestion des risques, conformité
+keywords: Microsoft 365, Microsoft Purview, risque interne, gestion des risques, conformité
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -16,21 +16,23 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: ca858aaf10c453a3fa333288fd5e44c62d20cb08
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 3a72f5399ac295dac199c816fc68fbec74a7fe23
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783906"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217539"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez des stratégies de gestion des risques internes pour identifier les activités à risque et les outils de gestion pour agir sur les alertes de risque dans votre organisation. Effectuez les étapes suivantes pour configurer les prérequis et configurer une stratégie de gestion des risques internes.
 
 > [!IMPORTANT]
-> La Microsoft 365 solution de gestion des risques internes fournit une option de niveau client pour aider les clients à faciliter la gouvernance interne au niveau de l’utilisateur. Les administrateurs au niveau du locataire peuvent configurer des autorisations pour fournir l’accès à cette solution aux membres de votre organisation et configurer des connecteurs de données dans le Centre de conformité Microsoft 365 pour importer les données pertinentes afin de prendre en charge l’identification au niveau utilisateur de l’activité potentiellement risquée. Les clients reconnaissent les insights liés au comportement, au caractère ou aux performances de l’utilisateur individuel en rapport avec l’emploi peuvent être calculés par l’administrateur et mis à la disposition d’autres membres de l’organisation. En outre, les clients reconnaissent qu’ils doivent mener leur propre enquête complète sur le comportement, le caractère ou les performances de l’utilisateur individuel en rapport avec l’emploi, et pas seulement s’appuyer sur les insights du service de gestion des risques internes. Les clients sont uniquement responsables de l’utilisation du Microsoft 365 service de gestion des risques internes et de toute fonctionnalité ou service associé conformément à toutes les lois applicables, y compris les lois relatives à l’identification des utilisateurs individuels et à toutes les actions de correction.
+> La solution de gestion des risques internes fournit une option au niveau du locataire pour aider les clients à faciliter la gouvernance interne au niveau de l’utilisateur. Les administrateurs au niveau du locataire peuvent configurer des autorisations pour fournir l’accès à cette solution aux membres de votre organisation et configurer des connecteurs de données dans le portail de conformité Microsoft Purview afin d’importer les données pertinentes afin de prendre en charge l’identification au niveau utilisateur de l’activité potentiellement risquée. Les clients reconnaissent les insights liés au comportement, au caractère ou aux performances de l’utilisateur individuel en rapport avec l’emploi peuvent être calculés par l’administrateur et mis à la disposition d’autres membres de l’organisation. En outre, les clients reconnaissent qu’ils doivent mener leur propre enquête complète sur le comportement, le caractère ou les performances de l’utilisateur individuel en rapport avec l’emploi, et pas seulement s’appuyer sur les insights du service de gestion des risques internes. Les clients sont uniquement responsables de l’utilisation du service de gestion des risques internes et de toute fonctionnalité ou service associé conformément à toutes les lois applicables, y compris les lois relatives à l’identification des utilisateurs individuels et aux actions de correction.
 
-Pour plus d’informations sur la façon dont les stratégies de risque interne peuvent vous aider à gérer les risques au sein de votre organisation, consultez [la gestion des risques internes dans Microsoft 365](insider-risk-management.md).
+Pour plus d’informations sur la façon dont les stratégies de risque interne peuvent vous aider à gérer les risques au sein de votre organisation, consultez [En savoir plus sur la gestion des risques internes](insider-risk-management.md).
 
 ## <a name="subscriptions-and-licensing"></a>Abonnements et licences
 
@@ -77,12 +79,12 @@ Sélectionnez une recommandation dans la liste pour commencer à configurer la g
 > [!IMPORTANT]
 > Après avoir configuré vos groupes de rôles, l’application des autorisations de groupe de rôles aux utilisateurs affectés au sein de votre organisation peut prendre jusqu’à 30 minutes.
 
-Six groupes de rôles sont utilisés pour configurer les fonctionnalités de gestion des risques internes. Pour rendre **la gestion des risques Insider** disponible en tant qu’option de menu dans Centre de conformité Microsoft 365 et pour poursuivre ces étapes de configuration, vous devez être affecté à l’un des rôles ou groupes de rôles suivants :
+Six groupes de rôles sont utilisés pour configurer les fonctionnalités de gestion des risques internes. Pour rendre **la gestion des risques Insider** disponible en tant qu’option de menu dans le portail de conformité Microsoft Purview et pour poursuivre ces étapes de configuration, vous devez être affecté à l’un des rôles ou groupes de rôles suivants :
 
 - Azure Active Directory rôle [*d’administrateur général*](/azure/active-directory/roles/permissions-reference#global-administrator)
 - Azure Active Directory rôle [*d’administrateur de conformité*](/azure/active-directory/roles/permissions-reference#compliance-administrator)
-- groupe de rôles Centre de conformité Microsoft 365 [*Gestion de l’organisation*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
-- Centre de conformité Microsoft 365 groupe de [*rôles Administrateur de conformité*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
+- Groupe de rôles [*Gestion de l’organisation du*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) portail de conformité Microsoft Purview
+- Groupe de [*rôles Administrateur*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) de conformité du portail de conformité Microsoft Purview
 - *Groupe de rôles Gestion des risques internes*
 - *Groupe de rôles Administrateur de la gestion des risques internes*
 
@@ -107,8 +109,8 @@ Les membres des rôles suivants peuvent affecter des utilisateurs à des groupes
 
 - *administrateur général* Azure Active Directory
 - *administrateur de conformité* Azure Active Directory
-- *gestion de l’organisation* Centre de conformité Microsoft 365
-- *administrateur de conformité* Centre de conformité Microsoft 365
+- *Gestion de l’organisation* du portail de conformité Microsoft Purview
+- *Administrateur* de conformité du portail de conformité Microsoft Purview
 
 > [!NOTE]
 > Ces groupes de rôles ne sont actuellement pas pris en charge sur Privileged Identity Management (PIM). Pour en savoir plus sur PIM, consultez [Attribuer des rôles Azure AD dans Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
@@ -117,7 +119,7 @@ Les membres des rôles suivants peuvent affecter des utilisateurs à des groupes
 
 Effectuez les étapes suivantes pour ajouter des utilisateurs à un groupe de rôles de gestion des risques internes :
 
-1. Connectez-vous [Centre de conformité Microsoft 365](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
+1. Connectez-vous au [portail de conformité Microsoft Purview](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
 
 2. Dans le Centre de conformité de sécurité &amp; , accédez à **Autorisations**. Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
 
@@ -147,7 +149,7 @@ Pour activer l’analytique des risques internes, vous devez être membre du gro
 
 Effectuez les étapes suivantes pour activer l’analytique des risques internes :
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **la gestion des risques internes**.
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **la gestion des risques insider**.
 2. Sélectionnez **Exécuter l’analyse** dans l’onglet **Analyse des risques internes dans votre carte d’organisation** sous l’onglet **Vue d’ensemble** de la gestion des risques internes. Cette action active l’analyse analytique pour votre organisation. Vous pouvez également activer l’analyse dans votre organisation en accédant aux **paramètres** >  de risque **InsiderAnalytics** et en activant **Analyser l’activité utilisateur de votre locataire pour identifier les risques internes potentiels**.
 3. Dans le volet **d’informations Analytics** , sélectionnez **Exécuter l’analyse pour démarrer l’analyse de votre organisation**. Les résultats de l'analyse analytique peuvent prendre jusqu'à 48 heures avant que les informations ne soient disponibles sous forme de rapports pour examen.
 
@@ -235,7 +237,7 @@ Consultez l’article [Configurer les fonctionnalités avancées dans l’articl
 
 Avant de configurer une stratégie, définissez les paramètres de risque interne suivants :
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **la gestion des risques internes** et sélectionnez **les paramètres de risque Insider** dans le coin supérieur droit de n’importe quelle page.
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **la gestion des risques Insider** et sélectionnez **les paramètres de risque Insider** dans le coin supérieur droit de n’importe quelle page.
 2. Dans la page **Confidentialité** , sélectionnez un paramètre de confidentialité pour afficher les noms d’utilisateur des alertes de stratégie.
 3. Dans la page **Indicateurs** , sélectionnez les indicateurs d’alerte que vous souhaitez appliquer à toutes les stratégies de risque interne.
 
@@ -260,7 +262,7 @@ Avant de configurer une stratégie, définissez les paramètres de risque intern
 
 Les stratégies de gestion des risques internes incluent les utilisateurs attribués et définissent quels types d’indicateurs de risque sont configurés pour les alertes. Pour que les activités puissent déclencher des alertes, une stratégie doit être configurée. Utilisez l’Assistant Stratégie pour créer de nouvelles stratégies de gestion des risques internes.
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **Gestion des risques internes**, puis sélectionnez l’onglet **Stratégies**.
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **la gestion des risques internes** et sélectionnez l’onglet **Stratégies** .
 2. Sélectionnez **Créer une stratégie** pour ouvrir l’Assistant stratégie.
 3. Sur la page **Modèle de stratégie**, choisissez une catégorie de stratégie, puis sélectionnez le modèle pour la nouvelle stratégie. Ces modèles sont constitués d'indicateurs et de conditions définissant les activités à risque que vous voulez détecter et examiner. Examinez les conditions préalables du modèle, les événements déclencheurs et les activités détectées pour confirmer que ce modèle de stratégie correspond à vos besoins.
 
@@ -277,16 +279,17 @@ Les stratégies de gestion des risques internes incluent les utilisateurs attrib
 8. Sélectionnez **Suivant** pour continuer.
 9. Sur la page **Contenu à prioriser**, vous pouvez attribuer (le cas échéant) les sources à hiérarchiser, ce qui augmente les possibilités de générer une alerte de gravité élevée pour ces sources. Sélectionnez l'une des options suivantes :
 
-    - **Je veux indiquer des sites SharePoint, étiquettes de confidentialité et/ou des types d’information sensible comme contenu prioritaire**. La sélection de cette option active les pages détaillées dans l’Assistant pour configurer ces canaux.
+    - **Je souhaite spécifier SharePoint sites, étiquettes de confidentialité, types d’informations sensibles et/ou extensions de fichier comme contenu prioritaire**. La sélection de cette option active les pages détaillées dans l’Assistant pour configurer ces canaux.
     - **Je ne souhaite pas indiquer de contenu prioritaire pour le moment (vous pourrez le faire après la création de la stratégie)**. La sélection de cette option permettra d’ignorer les pages détaillées du canal dans l’Assistant.
 
 10. Sélectionnez **Suivant** pour continuer.
 
-11. Si vous avez sélectionné **je souhaite spécifier SharePoint sites, étiquettes de confidentialité et/ou types d’informations sensibles comme contenu prioritaire** à l’étape précédente, vous verrez les pages de détails pour *les sites SharePoint*, les *types d’informations sensibles* et *les étiquettes de confidentialité*. Utilisez ces pages détaillées pour définir les sites SharePoint, les types d’information sensible et les étiquettes de confidentialité à hiérarchiser dans la stratégie.
+11. Si vous avez sélectionné **je souhaite spécifier SharePoint sites, étiquettes de confidentialité, types d’informations sensibles et/ou extensions de fichier comme contenu prioritaire** à l’étape précédente, vous verrez les pages de détails des *sites SharePoint*, *des types d’informations sensibles*, *des étiquettes de confidentialité* et *des extensions de fichier*. Utilisez ces pages de détails pour définir les SharePoint, les types d’informations sensibles, les étiquettes de confidentialité et les extensions de fichier à hiérarchiser dans la stratégie.
 
     - **Sites SharePoint** : sélectionnez **Ajouter un site SharePoint**, puis sélectionnez les sites SharePoint auxquels vous avez accès et que vous souhaitez classer. Par exemple, *« groupe1@contoso.sharepoint.com/sites/group1 »*.
     - **Type d’information sensible** : sélectionnez **Ajouter un type d’information confidentielle**, puis les types de confidentialité que vous souhaitez classer. Par exemple, *« Numéro de compte bancaire américain »* et *« Numéro de carte de crédit »*.
     - **Étiquette de confidentialité** : sélectionnez **Ajouter une étiquette de confidentialité**, puis les étiquettes que vous souhaitez classer. Par exemple, *« Confidentiel »* et *« Secret »*.
+    - Extensions de fichier : ajoutez jusqu’à 50 extensions de fichier. Vous pouvez inclure ou omettre le « . » avec l’extension de fichier. Par exemple, *.py* ou *py* hiérarchiserait les fichiers Python.
 
     > [!NOTE]
     > Les utilisateurs qui configurent la stratégie et qui sélectionnent des sites de point de partage prioritaires peuvent sélectionner SharePoint sites auxquels ils ont l’autorisation d’accéder. Si SharePoint sites ne sont pas disponibles pour la sélection dans la stratégie par l’utilisateur actuel, un autre utilisateur disposant des autorisations requises peut sélectionner les sites de la stratégie ultérieurement ou l’utilisateur actuel doit avoir accès aux sites requis.
@@ -302,7 +305,7 @@ Les stratégies de gestion des risques internes incluent les utilisateurs attrib
 14. Sélectionnez **Suivant** pour continuer.
 15. Si vous avez sélectionné les *fuites de données générales ou les fuites* de *données par des modèles d’utilisateurs prioritaires* et que vous avez sélectionné l’utilisateur **effectue une activité d’exfiltration et les indicateurs associés**, vous pouvez choisir des seuils personnalisés ou par défaut pour l’indicateur déclenchant les événements que vous avez sélectionnés. Choisissez les **seuils d’utilisation par défaut (recommandés)** ou **utilisez des seuils personnalisés pour les événements déclencheurs**.
 16. Sélectionnez **Suivant** pour continuer.
-17. Si vous avez sélectionné **Utiliser des seuils personnalisés pour les événements de déclenchement**, pour chaque indicateur d’événement de déclenchement que vous avez sélectionné à l’étape 13, choisissez le niveau approprié pour générer le niveau souhaité d’alertes d’activité.
+17. Si vous avez sélectionné **Utiliser des seuils personnalisés pour les événements de déclenchement**, pour chaque indicateur d’événement de déclenchement que vous avez sélectionné à l’étape 13, choisissez le niveau approprié pour générer le niveau souhaité d’alertes d’activité. Vous pouvez utiliser les seuils recommandés, les seuils personnalisés ou les seuils basés sur des activités anormales (pour certains indicateurs) au-dessus de la norme quotidienne pour les utilisateurs.
 18. Sélectionnez **Suivant** pour continuer.
 19. Dans la page **Indicateurs** de stratégie, vous verrez [les indicateurs](insider-risk-management-settings.md#indicators) que vous avez définis comme étant disponibles dans la page **Paramètres** >  **du** risque Insider. Sélectionnez les indicateurs que vous souhaitez appliquer à la stratégie.
 
@@ -317,7 +320,7 @@ Les stratégies de gestion des risques internes incluent les utilisateurs attrib
 22. Sélectionnez **Suivant** pour continuer.
 23. Sur la page **Évaluation**, examinez les paramètres choisis pour la stratégie et toute suggestion ou tout avertissement pour vos sélections. Sélectionnez **Modifier** pour changer toute valeur de stratégie ou **Soumettre** pour créer et activer la stratégie.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Une fois que vous avez effectué ces étapes pour créer votre première stratégie de gestion des risques internes, vous commencerez à recevoir des alertes à partir d’indicateurs d’activité après environ 24 heures. Configurez des stratégies supplémentaires en fonction des besoins à l’aide des conseils de l’étape 4 de cet article ou des étapes de [la création d’une stratégie de risque interne](insider-risk-management-policies.md#create-a-new-policy).
 

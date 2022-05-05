@@ -3,7 +3,7 @@ title: URLs et plages d’adresses IP pour Office 365 géré par 21Vianet
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 01/31/2022
+ms.date: 04/28/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,14 +19,14 @@ ms.assetid: 5c47c07d-f9b6-4b78-a329-bfdc1b6da7a0
 ms.custom: seo-marvel-apr2020
 f1.keywords:
 - NOCSH
-description: Cet article répertorie les URL et les plages d’adresses IP pour Office 365 lorsqu’il est géré par 21Vianet en Chine.
+description: Cet article répertorie les URL et les plages d’adresses IP pour Office 365 lorsqu’elles sont exploitées par 21Vianet en Chine.
 hideEdit: true
-ms.openlocfilehash: 8250fcddbc9b23317a0a3760b59c5f7776b98378
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 4c91505c0a83408e435879e718901d949e5eba26
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62294809"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217517"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>URLs et plages d’adresses IP pour Office 365 géré par 21Vianet
 
@@ -34,9 +34,9 @@ ms.locfileid: "62294809"
 
 **Résumé**: les points de terminaison suivants (FQDNs, ports, URL, IPv4 et IPv6 préfixes) s’appliquent à Office 365 géré par 21 Vianet et sont prévus pour fournir des services de productivité aux organisations qui n’utilisent que ces offres.
   
- **Office 365** de terminaison : dans le monde [entier (y compris Cloud de la communauté du secteur public)](urls-and-ip-address-ranges.md)  | Office 365 géré par *21 Vianet* |  [Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md) |  [Office 365 U.S. Government Cloud de la communauté du secteur public High](microsoft-365-u-s-government-gcc-high-endpoints.md) |
+ **Office 365 points de terminaison :** [Dans le monde entier (y compris Cloud de la communauté du secteur public)](urls-and-ip-address-ranges.md)  | *Office 365 exploités par 21 Vianet* |  [Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md) |  [Office 365 U.S. Government haute Cloud de la communauté du secteur public](microsoft-365-u-s-government-gcc-high-endpoints.md) |
   
-**Dernière mise à jour :** 28/06/2021 : ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Modifier l'abonnement au journal](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
+**Dernière mise à jour :** 28/04/2021 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abonnement au journal des modifications](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
 
 **Téléchargement :** toutes les destinations obligatoires et facultatives dans une liste [au format JSON](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
 

@@ -353,7 +353,7 @@
         - name: Activer l’authentification moderne pour Office 2013
           href: security-and-compliance/enable-modern-authentication.md
         - name: Conditions préalables pour la protection des données
-          href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection.md
+          href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection
         - name: Renforcer la protection contre les menaces
           href: security-and-compliance/increase-threat-protection.md
         - name: Menaces détectées par l’antivirus Microsoft Defender
@@ -373,13 +373,13 @@
         - name: Documentation Microsoft Intune
           href: /mem/intune/
         - name: Affichage et modification des stratégies et des appareils
-          href: /microsoft-365/business-premium/view-policies-and-devices.md
+          href: /microsoft-365/business-premium/m365bp-view-policies-and-devices
         - name: Supprimer les données de l’entreprise
-          href: /microsoft-365/business-premium/m365bp-remove-company-data.md
+          href: /microsoft-365/business-premium/m365bp-remove-company-data
         - name: Rétablissement des paramètres d’usine des appareils
           href: devices/reset-devices-to-factory-settings.md
         - name: Mappage des fonctionnalités de protection avec les paramètres Intune
-          href: /microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings.md
+          href: /microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings
         - name: États des appareils
           href: devices/device-states.md
         - name: Paramètres de protection des applications pour les PC Windows 10
@@ -391,7 +391,7 @@
         - name: Autopilot
           items:
             - name: Créer et modifier des profils AutoPilot
-              href: /microsoft-365/business-premium/m365bp-create-and-edit-autopilot-profiles.md
+              href: /microsoft-365/business-premium/m365bp-create-and-edit-autopilot-profiles
             - name: Créer et modifier des appareils AutoPilot
               href: devices/create-and-edit-autopilot-devices.md
         - name: Documentation Microsoft 365 Entreprise

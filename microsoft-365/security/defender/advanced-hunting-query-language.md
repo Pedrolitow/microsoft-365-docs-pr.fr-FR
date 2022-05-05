@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5e474505eecca0c42aa919b42364a1ad54c27e17
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b9bca10cf946a7e812064f07cc3be6fa658edf39
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094736"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217395"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 
@@ -175,14 +175,14 @@ Vous pouvez utiliser l’éditeur de requête pour expérimenter plusieurs requ�
 
 Pour un espace de travail plus efficace, vous pouvez également utiliser plusieurs onglets dans la même page de chasse. Sélectionnez **Nouvelle requête** pour ouvrir un onglet pour votre nouvelle requête.
 
-:::image type="content" source="../../media/multitab.png" alt-text="Exemple d’exécution de plusieurs requêtes dans la page **Nouvelle requête** du portail Microsoft 365 Defender" lightbox="../../media/multitab.png":::
+:::image type="content" source="../../media/multitab.png" alt-text="Ouverture d’un nouvel onglet en sélectionnant Créer dans la chasse avancée dans le portail Microsoft 365 Defender" lightbox="../../media/multitab.png":::
 
 Vous pouvez ensuite exécuter différentes requêtes sans jamais ouvrir un nouvel onglet de navigateur. 
 
-:::image type="content" source="../../media/multitab-examples.png" alt-text="Exemple d’exécution de plusieurs requêtes dans la page **Nouvelle requête** du portail Microsoft 365 Defender" lightbox="../../media/multitab-examples.png":::
+:::image type="content" source="../../media/multitab-examples.png" alt-text="Exécuter différentes requêtes sans jamais quitter la page de chasse avancée dans le portail Microsoft 365 Defender" lightbox="../../media/multitab-examples.png":::
 
 >[!NOTE] 
-> Vous risquez de perdre des requêtes non enregistrées si vous ouvrez un nouvel onglet de navigateur pour une nouvelle requête.
+> L’utilisation de plusieurs onglets de navigateur avec repérage avancé peut vous faire perdre vos requêtes non enregistrées. Pour éviter cela, utilisez la fonctionnalité d’onglet dans la chasse avancée au lieu d’onglets de navigateur distincts.
 
 ## <a name="use-sample-queries"></a>Utiliser des exemples de requêtes
 

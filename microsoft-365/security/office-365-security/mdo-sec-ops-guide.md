@@ -18,12 +18,12 @@ ms.custom: ''
 description: Playbook normatif pour le personnel SecOps afin de gérer Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01c857d96fe461c91c459704f4572191f37ef016
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 557e1288e4f2b39938b4da381664b58ed4c7e6c7
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747422"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217313"
 ---
 # <a name="microsoft-defender-for-office-365-security-operations-guide"></a>Guide des opérations de sécurité Microsoft Defender pour Office 365
 
@@ -63,7 +63,7 @@ La gestion des files d’attente d’incidents et les personnages responsables s
 |Triage des incidents dans la file d’attente incidents à <https://security.microsoft.com/incidents-queue>.|Journalière|Vérifiez que tous les incidents de gravité **moyenne** et **élevée** de Defender pour Office 365 sont triés.|Équipe des opérations de sécurité|
 |Examinez et prenez des mesures de réponse sur les incidents.|Journalière|Examinez tous les incidents et effectuez activement les actions de réponse recommandées ou manuelles.|Équipe des opérations de sécurité|
 |Résolvez les incidents.|Journalière|Si l’incident a été corrigé, résolvez l’incident. La résolution de l’incident résout toutes les alertes actives liées et associées.|Équipe des opérations de sécurité|
-|Classifier les incidents.|Journalière|Classifiez les incidents comme vrai ou faux. Pour les alertes vraies, spécifiez le type de menace. Ces classifications aident votre équipe de sécurité à voir les modèles de menaces et à défendre votre organisation contre celles-ci.|Équipe des opérations de sécurité|
+|Classifier les incidents.|Journalière|Classifiez les incidents comme vrai ou faux. Pour les alertes vraies, spécifiez le type de menace. Cette classification permet à votre équipe de sécurité de voir les modèles de menaces et de défendre votre organisation contre elles.|Équipe des opérations de sécurité|
 
 ### <a name="manage-false-positive-and-false-negative-detections"></a>Gérer les détections de faux positifs et de faux négatifs
 
@@ -71,7 +71,7 @@ Dans Defender pour Office 365, vous gérez les faux positifs (bon courrier marqu
 
 - Portail [soumissions (soumissions d’administrateurs).](admin-submission.md)
 - Liste [d’autorisations/de blocs du locataire](tenant-allow-block-list.md)
-- [Explorateur de menaces](threat-explorer.md)
+- [Threat Explorer](threat-explorer.md)
 
 Pour plus d’informations, consultez la section [Gérer les détections faux positifs et faux négatifs](#manage-false-positive-and-false-negative-detections) plus loin dans cet article.
 
@@ -80,7 +80,7 @@ La gestion des faux positifs et faux négatifs et les personnages responsables s
 |Activité|Cadence|Description|Persona|
 |---|---|---|---|
 |Envoyez des faux positifs et des faux négatifs à Microsoft à l’adresse <https://security.microsoft.com/reportsubmission>.|Journalière|Fournissez des signaux à Microsoft en signalant des détections incorrectes d’e-mail, d’URL et de fichiers.|Équipe des opérations de sécurité|
-|Analysez les détails de la soumission de l’administrateur.|Journalière|Comprenez les facteurs suivants pour les soumissions que vous faites à Microsoft : <ul><li>Ce qui a provoqué le faux positif ofr faux négatif.</li><li>État de votre configuration Defender pour Office 365 au moment de la soumission.</li><li>Indique si vous devez apporter des modifications à votre configuration Defender pour Office 365.</li></ul>|Équipe des opérations de sécurité <br/><br/> Administration de la sécurité|
+|Analysez les détails de la soumission de l’administrateur.|Journalière|Comprenez les facteurs suivants pour les soumissions que vous faites à Microsoft : <ul><li>Ce qui a provoqué le faux positif ou le faux négatif.</li><li>État de votre configuration Defender pour Office 365 au moment de la soumission.</li><li>Indique si vous devez apporter des modifications à votre configuration Defender pour Office 365.</li></ul>|Équipe des opérations de sécurité <br/><br/> Administration de la sécurité|
 |Ajoutez des entrées de bloc dans la liste d’autorisations/de blocs du locataire à l’adresse <https://security.microsoft.com/tenantAllowBlockList>.|Journalière|Utilisez la liste d’autorisation/de blocage du locataire pour ajouter des entrées de bloc pour les détections d’URL, de fichier ou d’expéditeur faux négatifs si nécessaire.|Équipe des opérations de sécurité|
 |Libérer les faux négatifs de la quarantaine.|Journalière|Une fois que le destinataire a confirmé que le message a été mis en quarantaine incorrectement, vous pouvez libérer ou approuver les demandes de mise en production pour les utilisateurs. <br/><br/> Pour contrôler ce que les utilisateurs peuvent faire pour leurs propres messages mis en quarantaine (y compris la mise en production ou la demande de mise en quarantaine), consultez [Stratégies de quarantaine](quarantine-policies.md).|Équipe des opérations de sécurité <br/><br/> Équipe de messagerie|
 
@@ -186,7 +186,7 @@ Les autorisations suivantes (rôles et groupes de rôles) sont disponibles dans 
   - **Opérateur de sécurité**
   - **Lecteur de sécurité**
 
-- **E-mail & rôles de collaboration** : rôles et groupes de rôles qui accordent des autorisations spécifiques à Microsoft Defender pour Office 365. Le rôle suivant n’est pas disponible dans Azure AD, mais peut être important pour les équipes de sécurité :
+- **E-mail & rôles de collaboration** : rôles et groupes de rôles qui accordent des autorisations spécifiques à Microsoft Defender pour Office 365. Les rôles suivants ne sont pas disponibles dans Azure AD, mais peuvent être importants pour les équipes de sécurité :
 
   - **Rôle d’aperçu** : attribuez ce rôle aux membres de l’équipe qui doivent afficher un aperçu ou télécharger des messages électroniques dans le cadre des activités d’investigation. Permet aux utilisateurs [d’afficher un aperçu et de télécharger](investigate-malicious-email-that-was-delivered.md#preview-role-permissions) des messages électroniques dans des boîtes aux lettres cloud à l’aide de la [page d’entité de messagerie](mdo-email-entity-page.md#email-preview-for-cloud-mailboxes).
 
@@ -269,9 +269,9 @@ Les membres de l’équipe de sécurité peuvent effectuer des soumissions à pa
 
   Vous pouvez sélectionner jusqu’à 10 messages pour effectuer une soumission en bloc. Les soumissions d’administrateur créées de cette façon sont également visibles dans le portail de soumission.
 
-Pour l’atténuation à court terme des faux positifs, les équipes de sécurité peuvent gérer directement les [entrées de bloc](manage-tenant-blocks.md) pour les fichiers, les URL et les expéditeurs dans la [liste d’autorisations/de blocs du locataire](tenant-allow-block-list.md).
+Pour l’atténuation à court terme des faux négatifs, les équipes de sécurité peuvent gérer directement les [entrées de bloc](manage-tenant-blocks.md) pour les fichiers, LES URL et les expéditeurs dans la [liste d’autorisations/de blocs du locataire](tenant-allow-block-list.md).
 
-Pour l’atténuation à court terme des faux négatifs, les équipes de sécurité ne peuvent pas gérer directement [les entrées d’autorisation](manage-tenant-allows.md) dans la liste d’autorisations/de blocs du locataire. Au lieu de cela, ils doivent utiliser [les soumissions d’administrateur](admin-submission.md) et les **messages Autoriser comme cette** option.
+Pour l’atténuation à court terme des faux positifs, les équipes de sécurité ne peuvent pas gérer directement [les entrées d’autorisation](manage-tenant-allows.md) dans la liste d’autorisations/de blocs du locataire. Au lieu de cela, ils doivent utiliser [les soumissions d’administrateur](admin-submission.md) et les **messages Autoriser comme cette** option.
 
 [La mise en quarantaine](manage-quarantined-messages-and-files.md) dans Defender pour Office 365 contient des messages et fichiers potentiellement dangereux ou indésirables. Les équipes de sécurité peuvent afficher, libérer et supprimer tous les types de messages mis en quarantaine pour tous les utilisateurs. Cette fonctionnalité permet aux équipes de sécurité de répondre efficacement lorsqu’un message ou un fichier faux positif est mis en quarantaine.
 
