@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 77766c153582f519aa0ba9853d18c216092747bc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9211597ec8a0e25130b010a6049832ac151840fc
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092302"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173706"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 
@@ -37,7 +37,7 @@ ms.locfileid: "65092302"
 Microsoft Defender pour point de terminaison est une plate-forme de sécurité de point de terminaison d’entreprise conçue pour aider les réseaux d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées.
 
 > [!TIP]
-> Microsoft Defender pour point de terminaison sera bientôt disponible dans deux plans. Cet article décrit les fonctionnalités incluses dans Microsoft Defender pour point de terminaison Plan 2. [En savoir plus sur Microsoft Defender pour Endpoint Plan 1 et Plan 2](defender-endpoint-plan-1-2.md).
+> Microsoft Defender pour point de terminaison est disponible en deux plans : Defender pour point de terminaison Plan 1 et Plan 2. Cet article décrit les fonctionnalités et capacités incluses dans chaque plan. [En savoir plus sur Microsoft Defender pour Endpoint Plan 1 et Plan 2](defender-endpoint-plan-1-2.md).
 > 
 
 <p><p>
