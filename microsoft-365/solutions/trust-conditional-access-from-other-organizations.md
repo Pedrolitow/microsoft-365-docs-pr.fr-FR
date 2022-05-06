@@ -1,5 +1,5 @@
 ---
-title: Exiger un accès conditionnel pour les personnes extérieures à votre organisation
+title: Exiger l’accès conditionnel pour les personnes extérieures à votre organisation
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -15,15 +15,15 @@ ms.collection:
 ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
-description: Découvrez comment exiger des personnes extérieures à votre organisation qu’elles passent des vérifications d’accès conditionnel telles que l’mf et les appareils conformes.
-ms.openlocfilehash: 181ee77e6b8a8d491294c9a5d3f8ec9202c9f9c1
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+description: Découvrez comment demander à des personnes extérieures à votre organisation de passer des contrôles d’accès conditionnel tels que l’authentification multifacteur et les appareils conformes.
+ms.openlocfilehash: a9a48bd891810530fba4f78824f675d2b0f0556e
+ms.sourcegitcommit: c33af120921d3c4fb5c362dac3e74f0ab3d1e58d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63715997"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65249612"
 ---
-# <a name="require-conditional-access-for-people-outside-your-organization"></a>Exiger un accès conditionnel pour les personnes extérieures à votre organisation
+# <a name="require-conditional-access-for-people-outside-your-organization"></a>Exiger l’accès conditionnel pour les personnes extérieures à votre organisation
 
 Vous pouvez exiger l’une des options d’accès conditionnel suivantes pour les personnes extérieures à votre organisation :
 
@@ -31,69 +31,69 @@ Vous pouvez exiger l’une des options d’accès conditionnel suivantes pour le
 - Appareils conformes
 - Appareils joints Azure AD hybrides
 
-Lorsque vous utilisez Azure AD connexion directe B2B (par exemple, avec des canaux partagés dans Teams), vous pouvez choisir d’utiliser les paramètres d’accès conditionnel d’autres organisations pour ces options.
+Lorsque vous utilisez Azure AD connexion directe B2B , par exemple avec des canaux partagés dans Teams, vous pouvez choisir d’approuver les paramètres d’accès conditionnel d’autres organisations pour ces options. Notez que les stratégies d’accès conditionnel sont utilisées uniquement pour l’accès à l’onglet Fichiers dans le canal partagé et au site SharePoint associé.
 
-## <a name="planning-considerations-for-conditional-access"></a>Considérations sur la planification de l’accès conditionnel
+## <a name="planning-considerations-for-conditional-access"></a>Considérations relatives à la planification de l’accès conditionnel
 
-L’authentification multifacteur peut être utilisée avec n’importe quel compte externe. Si votre organisation ne fait pas confiance à l’authentification multifacteur d’autres organisations Azure AD, les utilisateurs de ces organisations devront effectuer une authentification multifacteur lors de l’accès aux ressources de votre organisation. Les personnes ayant des adresses de messagerie tierces (non hébergées par Microsoft) seront toujours invités à authentification multifacteur.
+L’authentification multifacteur peut être utilisée avec n’importe quel compte externe. Si votre organisation n’approuve pas l’authentification multifacteur d’autres organisations Azure AD, les utilisateurs de ces organisations devront effectuer une authentification multifacteur lors de l’accès aux ressources de votre organisation. Les personnes ayant des adresses e-mail tierces (non hébergées par Microsoft) sont toujours invités à effectuer une authentification multifacteur.
 
-Les options nécessitent **que l’appareil soit** marqué  comme conforme et Azure AD appareil joint nécessite des appareils gérés dans Azure AD. Si vous choisissez d’activer ces options, les personnes extérieures à votre organisation doivent utiliser des appareils gérés par votre organisation ou par une organisation de confiance. Les personnes sans appareils gérés seront bloquées, notamment :
+Les options **Exiger que l’appareil soit marqué conforme** et **Exiger un appareil hybride Azure AD joint** nécessitent des appareils gérés dans Azure AD. Si vous choisissez d’activer ces options, les personnes extérieures à votre organisation doivent utiliser des appareils gérés par votre organisation ou par une organisation de confiance. Les personnes sans appareils gérés seront bloquées, notamment :
 
-- Personnes avec des adresses de messagerie tierces ou grand public
-- Personnes de Microsoft 365 ou Azure AD organisations qui ne gèrent pas les appareils
-- Les personnes Microsoft 365 ou Azure AD organisations qui nécessitent des appareils gérés où votre organisation n’a pas confiance dans leurs paramètres d’accès conditionnel.
+- Personnes disposant d’adresses e-mail de tiers ou de consommateurs
+- Personnes d’organisations Microsoft 365 ou Azure AD qui ne gèrent pas d’appareils
+- Les personnes de Microsoft 365 ou Azure AD organisations qui nécessitent des appareils gérés où votre organisation n’approuve pas leurs paramètres d’accès conditionnel.
 
-Nous vous recommandons d’être prudent lorsque vous exigez des appareils Azure AD compatibles ou hybrides, car cela bloquera de nombreux scénarios de collaboration externe. Assurez-vous que toutes vos organisations partenaires gèrent leurs appareils et que votre organisation fait confiance à leurs paramètres.
+Nous vous recommandons d’utiliser la prudence lorsque vous avez besoin d’appareils compatibles ou hybrides Azure AD joints, car cela bloquera de nombreux scénarios de collaboration externe. Assurez-vous que toutes vos organisations partenaires gèrent leurs appareils et que votre organisation approuve leurs paramètres.
 
 ## <a name="set-up-conditional-access-requirements-for-people-outside-your-organization"></a>Configurer les exigences d’accès conditionnel pour les personnes extérieures à votre organisation
 
-Pour exiger un accès conditionnel pour les personnes extérieures à votre organisation, vous pouvez :
+Pour exiger un accès conditionnel pour les personnes extérieures à votre organisation, procédez comme suit :
 
-1. [Choisissez les paramètres d’accès conditionnel à faire confiance à d’autres organisations](#choose-conditional-access-settings-to-trust-from-other-organizations).
-1. [Configurer l’accès conditionnel pour les personnes extérieures à votre organisation](#set-up-conditional-access-for-people-outside-your-organization).
+1. [Choisissez les paramètres d’accès conditionnel à approuver auprès d’autres organisations](#choose-conditional-access-settings-to-trust-from-other-organizations).
+1. [Configurez l’accès conditionnel pour les personnes extérieures à votre organisation](#set-up-conditional-access-for-people-outside-your-organization).
 
-## <a name="choose-conditional-access-settings-to-trust-from-other-organizations"></a>Choisir les paramètres d’accès conditionnel à faire confiance à d’autres organisations
+## <a name="choose-conditional-access-settings-to-trust-from-other-organizations"></a>Choisir les paramètres d’accès conditionnel à approuver auprès d’autres organisations
 
-Vous pouvez choisir d’approbation des paramètres d’accès conditionnel de toutes les autres organisations Microsoft 365 et Azure AD ou uniquement de ceux que vous spécifiez.
+Vous pouvez choisir d’approuver les paramètres d’accès conditionnel de toutes les autres Microsoft 365 et Azure AD organisations ou uniquement de ceux que vous spécifiez.
 
 > [!NOTE]
-> L’application des modifications apportées aux paramètres d’accès entre locataires peut prendre deux heures.
+> La prise en compte des modifications apportées aux paramètres d’accès entre locataires peut prendre deux heures.
 
-### <a name="trust-conditional-access-settings-from-all-azure-active-directory-organizations"></a>Approbation des paramètres d’accès conditionnel de toutes Azure Active Directory organisations
+### <a name="trust-conditional-access-settings-from-all-azure-active-directory-organizations"></a>Approuver les paramètres d’accès conditionnel de toutes les organisations Azure Active Directory
 
-Si vous souhaitez faire confiance aux paramètres d’accès conditionnel de toutes les organisations, suivez cette procédure.
+Si vous souhaitez approuver les paramètres d’accès conditionnel de toutes les organisations, suivez cette procédure.
 
-Pour faire confiance aux paramètres d’accès conditionnel de toutes Azure Active Directory organisations
-1. Connectez-vous [à Azure Active Directory](https://aad.portal.azure.com) à l’aide d’un compte d’administrateur général ou d’administrateur de sécurité.
-1. **Sélectionnez Identités externes**, puis sélectionnez **Paramètres d’accès entre locataires (prévisualisation).**
-1. Sélectionnez **l’onglet Paramètres par** défaut.
-1. Sous **Paramètres d’accès entrant**, **sélectionnez Modifier les valeurs par défaut du trafic entrant**.
-1. Sélectionnez **l’onglet Paramètres d’confiance** .
-1. Choisissez les paramètres que vos stratégies d’accès conditionnel doivent accepter d’autres organisations.
-1. **Sélectionnez Enregistrer** et fermez **le lame Paramètres par** défaut.
+Pour approuver les paramètres d’accès conditionnel de toutes les organisations Azure Active Directory
+1. Connectez-vous à [Azure Active Directory](https://aad.portal.azure.com) à l’aide d’un compte Administrateur général ou Administrateur de la sécurité.
+1. Sélectionnez **Identités externes**, puis sélectionnez **Paramètres d’accès entre locataires (prévisualisation).**
+1. Sélectionnez l’onglet **Paramètres par défaut** .
+1. Sous **Paramètres d’accès entrant**, **sélectionnez Modifier les valeurs par défaut entrantes**.
+1. Sélectionnez l’onglet **Paramètres d’approbation** .
+1. Choisissez les paramètres que vous souhaitez que vos stratégies d’accès conditionnel acceptent d’autres organisations.
+1. Sélectionnez **Enregistrer** et fermez le panneau **Paramètres par défaut** .
 
-### <a name="trust-conditional-access-settings-from-a-specific-organization"></a>Approbation des paramètres d’accès conditionnel d’une organisation spécifique
+### <a name="trust-conditional-access-settings-from-a-specific-organization"></a>Approuver les paramètres d’accès conditionnel d’une organisation spécifique
 
-Si vous souhaitez faire confiance aux paramètres d’accès conditionnel d’une organisation spécifique, suivez cette procédure.
+Si vous souhaitez approuver les paramètres d’accès conditionnel d’une organisation spécifique, suivez cette procédure.
 
-Pour faire confiance aux paramètres d’accès conditionnel d’une organisation spécifique
-1. Connectez-vous [à Azure Active Directory](https://aad.portal.azure.com) à l’aide d’un compte d’administrateur général ou d’administrateur de sécurité.
-1. **Sélectionnez Identités externes**, puis sélectionnez **Paramètres d’accès entre locataires (prévisualisation).**
-1. Sélectionnez **les paramètres d’accès** entrant pour l’organisation dans laquelle vous souhaitez faire confiance aux paramètres d’accès conditionnel.
-1. Sélectionnez **l’onglet Paramètres d’confiance** .
-1. Sélectionnez **l’option Personnaliser les paramètres** .
-1. Choisissez les paramètres que vos stratégies d’accès conditionnel doivent accepter d’autres organisations.
-1. **Sélectionnez Enregistrer** et fermez **le lame Paramètres par** défaut.
+Pour approuver les paramètres d’accès conditionnel d’une organisation spécifique
+1. Connectez-vous à [Azure Active Directory](https://aad.portal.azure.com) à l’aide d’un compte Administrateur général ou Administrateur de la sécurité.
+1. Sélectionnez **Identités externes**, puis sélectionnez **Paramètres d’accès entre locataires (prévisualisation).**
+1. Sélectionnez les paramètres **d’accès entrant** pour l’organisation dans laquelle vous souhaitez approuver les paramètres d’accès conditionnel.
+1. Sélectionnez l’onglet **Paramètres d’approbation** .
+1. Sélectionnez l’option **Personnaliser les paramètres** .
+1. Choisissez les paramètres que vous souhaitez que vos stratégies d’accès conditionnel acceptent d’autres organisations.
+1. Sélectionnez **Enregistrer** et fermez le panneau **Paramètres par défaut** .
 
 ## <a name="set-up-conditional-access-for-people-outside-your-organization"></a>Configurer l’accès conditionnel pour les personnes extérieures à votre organisation
 
-La configuration d’une stratégie d’accès conditionnel pour les personnes extérieures à votre organisation a une incidence sur les suivantes :
+La configuration d’une stratégie d’accès conditionnel pour les personnes extérieures à votre organisation affecte les éléments suivants :
 
-- Personnes utilisant des comptes invités (Azure AD utilisateurs de collaboration B2B)
-- Participants externes à Teams canaux partagés (Azure AD utilisateurs de connexion directe B2B)
+- Personnes utilisant des comptes invités (utilisateurs de collaboration B2B Azure AD)
+- Participants externes dans Teams canaux partagés (Azure AD utilisateurs de connexion directe B2B)
 
 > [!IMPORTANT]
-> Sélectionnez uniquement  l’appareil Exiger la conformité ou Exiger l’appareil joint à un **Azure AD** hybride si toutes les personnes extérieures à votre organisation utilisent un appareil géré par votre organisation ou par une organisation Microsoft 365 ou Azure AD approuvé.
+> Sélectionnez uniquement **l’appareil Exiger d’être marqué conforme** ou **Exiger un appareil joint à Azure AD hybride** si tout le monde en dehors de votre organisation utilise un appareil géré par votre organisation ou par un Microsoft 365 approuvé ou Azure AD organisation.
 
 Pour configurer l’accès conditionnel pour les personnes extérieures à votre organisation
 1. Accédez à [Stratégies d’accès conditionnel Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
@@ -104,9 +104,9 @@ Pour configurer l’accès conditionnel pour les personnes extérieures à votre
 1. Sous **Affectations**, cliquez sur **Actions ou applications Cloud**.
 1. Dans le panneau **Actions ou applications Cloud**, sélectionnez **Toutes les applications Cloud** sous l’onglet **Inclure**.
 1. Sous **Contrôles d’accès**, cliquez sur **Accorder**.
-1. Dans le **bouton Accorder** , sélectionnez les options dont vous souhaitez avoir besoin pour les personnes extérieures à votre organisation, puis cliquez sur **Sélectionner**.
+1. Dans le panneau **Accorder** , sélectionnez les options que vous souhaitez exiger pour les personnes extérieures à votre organisation, puis cliquez sur **Sélectionner**.
 1. Dans le panneau **Nouveau**, sous **Activer la stratégie**, cliquez sur **Activer**, puis sur **Créer**.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
-[Didacticiel : Appliquer l’authentification multifacteur pour les invités B2B](/azure/active-directory/external-identities/b2b-tutorial-require-mfa)
+[Tutoriel : Appliquer l’authentification multifacteur pour les invités B2B](/azure/active-directory/external-identities/b2b-tutorial-require-mfa)

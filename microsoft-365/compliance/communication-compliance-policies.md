@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9be1c581edb1b9564349ae8c3a659d226d6ef312
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 8418683577ffe3bf63fe7fe3bf4aff2ef55007f5
+ms.sourcegitcommit: c33af120921d3c4fb5c362dac3e74f0ab3d1e58d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173794"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65249628"
 ---
 # <a name="communication-compliance-policies"></a>Stratégies de conformité des communications
 
@@ -166,12 +166,16 @@ Configurez des dictionnaires de mots clés personnalisés (ou lexicons) pour fou
 
 Les classifieurs intégrés et globaux pouvant être formés analysent les messages envoyés ou reçus sur tous les canaux de communication de votre organisation pour rechercher différents types de problèmes de conformité. Les classifieurs utilisent une combinaison d'intelligence artificielle et de mots clés pour identifier le langage dans les messages susceptibles d'enfreindre les stratégies anti-harcèlement. Les classifieurs intégrés prennent actuellement en charge l’identification des mots clés de message dans plusieurs langues :
 
+- Arabe
 - Chinois (simplifié)
+- Chinois (traditionnel)
+- Néerlandais
 - Anglais
 - Français
 - Allemand
 - Italien
-- Japonais
+- Korean
+- Japanese
 - Portugais
 - Espagnol
 
