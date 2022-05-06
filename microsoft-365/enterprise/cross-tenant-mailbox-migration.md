@@ -8,7 +8,7 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 09/21/2020
+ms.date: 05/05/2022
 ms.reviewer: georgiah
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 8cbaee1e4f0cd3bae519c939f2f619343bf996bd
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 984df48edf4ba75569286618086d8be9ab684b60
+ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101070"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65243049"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîte aux lettres entre locataires (préversion)
 
@@ -434,7 +434,7 @@ Get-MoveRequest -Flags "CrossTenant"
    ```powershell
    # Now sync the changes from On-Premises to Azure and Exchange Online in the Target tenant
    # This action should create the target mail enabled users (MEUs) in the Target tenant
-   Start-ADSyncCycle
+   Start-ADSyncSyncCycle
    ```
 
 **Comment accéder à Outlook le jour 1 après le déplacement de la boîte aux lettres d’utilisation ?**
@@ -660,7 +660,7 @@ Non, après une migration de boîte aux lettres entre locataires, eDiscovery par
       | Exchange Online Multi-Geo                        |
       | Exchange Online (plan 1)                           |
       | Exchange Online POP                              |
-      | Exchange Online Protection                       |
+      | Exchange Online Protection                       |
       | Obstacles aux informations                             |
       | Protection des informations pour Office 365 – Premium  |
       | Protection des informations pour Office 365 – Standard |

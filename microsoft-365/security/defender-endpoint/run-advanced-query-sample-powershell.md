@@ -1,8 +1,8 @@
 ---
-title: Advanced Hunting with PowerShell API Basics
+title: Repérage avancé avec les concepts de base de l’API PowerShell
 ms.reviewer: ''
-description: Découvrez les principes de base de l’interrogation de l’API Microsoft Defender for Endpoint à l’aide de PowerShell.
-keywords: api, api pris en charge, recherche avancée, requête
+description: Découvrez les principes de base de l’interrogation de l’API Microsoft Defender pour point de terminaison à l’aide de PowerShell.
+keywords: api, api prises en charge, repérage avancé, requête
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,18 +16,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5de8778f1da44f8a9453616dc1e3b6f2af948397
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: fc0cae0ff8c45f4c32213130773e3c118d779ed6
+ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300765"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65243137"
 ---
 # <a name="advanced-hunting-using-powershell"></a>Repérage avancé à l’aide de PowerShell
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :** 
+**S’applique à :** 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -36,12 +36,12 @@ ms.locfileid: "61300765"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Exécutez des requêtes avancées à l’aide de PowerShell, voir [API de recherche avancée.](run-advanced-query-api.md)
+Exécutez des requêtes avancées à l’aide de PowerShell, consultez [l’API De repérage avancé](run-advanced-query-api.md).
 
 Dans cette section, nous partageons des exemples PowerShell pour récupérer un jeton et l’utiliser pour exécuter une requête.
 
 ## <a name="before-you-begin"></a>Avant de commencer
-Vous devez d’abord [créer une application.](apis-intro.md)
+Vous devez d’abord [créer une application](apis-intro.md).
 
 ## <a name="preparation-instructions"></a>Instructions de préparation
 
@@ -53,7 +53,7 @@ Vous devez d’abord [créer une application.](apis-intro.md)
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
-Pour plus d’informations, [voir la documentation PowerShell](/powershell/module/microsoft.powershell.security/set-executionpolicy)
+Pour plus d’informations, consultez la [documentation PowerShell](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
 ## <a name="get-token"></a>Obtenir un jeton
 
@@ -76,17 +76,17 @@ $response = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $body -ErrorActi
 $aadToken = $response.access_token
 ```
 
-where
-- $tenantId : ID du client pour le compte duquel vous souhaitez exécuter la requête (autrement dit, la requête sera exécuté sur les données de ce client)
-- $appId : ID de votre application Azure AD (l’application doit avoir l’autorisation « Exécuter des requêtes avancées » sur Defender for Endpoint)
-- $appSecret : secret de votre application Azure AD web
+Où
+- $tenantId : ID du locataire pour lequel vous souhaitez exécuter la requête (autrement dit, la requête sera exécutée sur les données de ce locataire)
+- $appId : ID de votre application Azure AD (l’application doit disposer de l’autorisation « Exécuter des requêtes avancées » sur Defender pour point de terminaison)
+- $appSecret : Secret de votre application Azure AD
 
 ## <a name="run-query"></a>Exécuter la requête
 
 Exécutez la requête suivante :
 
 ```powershell
-$query = 'RegistryEvents | limit 10' # Paste your own query here
+$query = 'DeviceRegistryEvents | limit 10' # Paste your own query here
 
 $url = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
 $headers = @{ 
@@ -114,15 +114,15 @@ $query = [IO.File]::ReadAllText("C:\myQuery.txt"); # Replace with the path to yo
 
 ## <a name="work-with-query-results"></a>Travailler avec les résultats de la requête
 
-Vous pouvez désormais utiliser les résultats de la requête.
+Vous pouvez maintenant utiliser les résultats de la requête.
 
-Pour obtenir les résultats de la requête au format CSV file1.csv fichier, exécutez la commande suivante :
+Pour générer les résultats de la requête au format CSV dans le fichier file1.csv, exécutez la commande suivante :
 
 ```powershell
 $results | ConvertTo-Csv -NoTypeInformation | Set-Content file1.csv
 ```
 
-Pour obtenir les résultats de la requête au format JSON dans file1.json, exécutez la commande suivante :
+Pour générer les résultats de la requête au format JSON dans le fichier file1.json, exécutez la commande suivante :
 
 ```powershell
 $results | ConvertTo-Json | Set-Content file1.json

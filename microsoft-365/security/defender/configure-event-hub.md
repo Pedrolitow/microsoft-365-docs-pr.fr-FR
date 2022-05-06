@@ -1,7 +1,7 @@
 ---
-title: Configurer votre Hub d’événements
-description: Découvrez comment configurer votre Hub d’événements
-keywords: hub d’événements, configurer, informations
+title: Configurer votre hub d’événements
+description: Découvrez comment configurer votre hub d’événements
+keywords: event hub, configure, insights
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,140 +19,140 @@ ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 MS.technology: mde
-ms.openlocfilehash: a842f9161aa823203354917326653b583e5fddb9
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 40211d37b8b036f93b826a383d9d0aa87f44fc68
+ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754292"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65243071"
 ---
-# <a name="configure-your-event-hub"></a>Configurer votre Hub d’événements
+# <a name="configure-your-event-hub"></a>Configurer votre hub d’événements
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Découvrez comment configurer votre Hub d’événements afin qu’il puisse inger des événements à partir de Microsoft 365 Defender.
+Découvrez comment configurer votre hub d’événements afin qu’il puisse ingérer des événements à partir de Microsoft 365 Defender.
 
 ## <a name="set-up-the-required-resource-provider-in-the-event-hub-subscription"></a>Configurer le fournisseur de ressources requis dans l’abonnement Event Hub
 
-1. Connectez-vous au [portail Azure](https://portal.azure.com).
-1. Select **Subscriptions** > **{ Select the subscription the event hubs will be deployed to }** > **Resource providers**.
+1. Connectez-vous au [Portail Azure](https://portal.azure.com).
+1. Sélectionnez **Abonnements** > **{ Sélectionnez l’abonnement que les hubs d’événements seront déployés sur }** > **Fournisseurs de ressources**.
 1. Vérifiez que **microsoft.Informations** Le fournisseur est inscrit. Sinon, inscrivez-le.
 
-:::image type="content" source="../../media/f893db7a7b1f7aa520e8b9257cc72562.png" alt-text="Page Liste des fournisseurs de services dans le portail Microsoft Azure client" lightbox="../../media/f893db7a7b1f7aa520e8b9257cc72562.png":::
+:::image type="content" source="../../media/f893db7a7b1f7aa520e8b9257cc72562.png" alt-text="Page liste des fournisseurs de services dans le portail Microsoft Azure" lightbox="../../media/f893db7a7b1f7aa520e8b9257cc72562.png":::
 
-## <a name="set-up-azure-active-directory-app-registration"></a>Configurer l’Azure Active Directory’application
+## <a name="set-up-azure-active-directory-app-registration"></a>Configurer Azure Active Directory’inscription d’application
 
-> ! [REMARQUE] Vous devez avoir un rôle d’administrateur ou Azure Active Directory (AAD) doit être définie pour autoriser les non-administrateurs à inscrire des applications. Vous devez également avoir un rôle Propriétaire ou Administrateur d’accès utilisateur pour attribuer un rôle au principal de service. Pour plus d’informations, voir [Créer Azure AD application & principal de service dans le portail - Plateforme d'identités Microsoft \| Documents Microsoft](/azure/active-directory/develop/howto-create-service-principal-portal).
+> ! [REMARQUE] Vous devez disposer du rôle Administrateur ou Azure Active Directory (AAD) doit être défini pour autoriser les non-administrateurs à inscrire des applications. Vous devez également disposer d’un rôle Propriétaire ou Administrateur de l’accès utilisateur pour attribuer un rôle au principal de service. Pour plus d’informations, consultez [Créer une application Azure AD & principal de service dans le portail - Plateforme d'identités Microsoft \| Microsoft Docs](/azure/active-directory/develop/howto-create-service-principal-portal).
 
-1. Créez une nouvelle inscription (qui crée par nature un principal de service) \> dans **Azure Active Directory’application Nouvelle** \> **inscription.**
+1. Créez une inscription (qui crée par nature un principal de service) dans **Azure Active Directory** \> **inscriptions d'applications** \> **Nouvelle inscription.**
 
 1. Remplissez le formulaire avec uniquement le nom (aucun URI de redirection n’est requis).
 
-    :::image type="content" source="../../media/336bc84e6be23900c43232b4ef0c253c.png" alt-text="Section d’affichage du nom de l’application dans Microsoft Azure web" lightbox="../../media/336bc84e6be23900c43232b4ef0c253c.png":::
+    :::image type="content" source="../../media/336bc84e6be23900c43232b4ef0c253c.png" alt-text="Section d’affichage du nom de l’application dans le portail Microsoft Azure" lightbox="../../media/336bc84e6be23900c43232b4ef0c253c.png":::
 
 
-    :::image type="content" source="../../media/06ac04c4ff713c2065cec2ef2f99a294.png" alt-text="Section Informations générales dans le portail Microsoft Azure web" lightbox="../../media/06ac04c4ff713c2065cec2ef2f99a294.png":::
+    :::image type="content" source="../../media/06ac04c4ff713c2065cec2ef2f99a294.png" alt-text="Section Informations sur la vue d’ensemble dans le portail Microsoft Azure" lightbox="../../media/06ac04c4ff713c2065cec2ef2f99a294.png":::
 
-1. Créez une secret en cliquant sur **Certificats & Clés secrètes Client** \> **Nouvelle :**
+1. Créez un secret en cliquant sur **Certificats & secrets** \> **Nouveau secret client** :
 
-    :::image type="content" source="../../media/d2ef88d3d2310d2c60c294b569cdf02e.png" alt-text="Section De la secret client dans le portail Microsoft Azure client" lightbox="../../media/d2ef88d3d2310d2c60c294b569cdf02e.png":::
+    :::image type="content" source="../../media/d2ef88d3d2310d2c60c294b569cdf02e.png" alt-text="Section Clé secrète client dans le portail Microsoft Azure" lightbox="../../media/d2ef88d3d2310d2c60c294b569cdf02e.png":::
     
 
 > [!WARNING]
-> **Vous ne pourrez plus accéder à la secret client. Veillez donc à l’enregistrer**.
+> **Vous ne pourrez plus accéder à la clé secrète client. Veillez donc à l’enregistrer**.
 
 ## <a name="set-up-event-hub-namespace"></a>Configurer l’espace de noms Event Hub
 
 1. Créez un espace de noms Event Hub :
 
-    Go **to Event Hub \> Add** and select the pricing tier, throughput units and Auto-Expecting (requires standard pricing and under features) appropriate for the load you are expecting. Pour plus d’informations, voir [Tarification - Hub d’événements \| Microsoft Azure](https://azure.microsoft.com/pricing/details/event-hubs/)
+    Accédez **à Event Hub \> Add** et sélectionnez le niveau tarifaire, les unités de débit et la majoration automatique (nécessite une tarification standard et sous les fonctionnalités) correspondant à la charge attendue. Pour plus d’informations, consultez [Tarification - Event Hub \| Microsoft Azure](https://azure.microsoft.com/pricing/details/event-hubs/)
 
     > [!NOTE]
-    > Vous pouvez utiliser un hub d’événements existant, mais le débit et la mise à l’échelle sont définies au niveau de l’espace de noms. Il est donc recommandé de placer un hub d’événements dans son propre espace de noms.
+    > Vous pouvez utiliser un hub d’événements existant, mais le débit et la mise à l’échelle sont définis au niveau de l’espace de noms. Il est donc recommandé de placer un hub d’événements dans son propre espace de noms.
 
-   :::image type="content" source="../../media/ebc4ca37c342ad1da75c4aee4018e51a.png" alt-text="Section hubs d’événements du portail Microsoft Azure web" lightbox="../../media/ebc4ca37c342ad1da75c4aee4018e51a.png":::
+   :::image type="content" source="../../media/ebc4ca37c342ad1da75c4aee4018e51a.png" alt-text="Section Event Hubs dans le portail Microsoft Azure" lightbox="../../media/ebc4ca37c342ad1da75c4aee4018e51a.png":::
 
-1. Vous aurez également besoin de l’ID de ressource de cet espace de noms Event Hub. Go to your Azure Event Hub namespace page \> Properties. Copiez le texte sous L’ID de ressource et enregistrez-le pour l’utiliser dans la section Microsoft 365 configuration ci-dessous.
+1. Vous aurez également besoin de l’ID de ressource de cet espace de noms Event Hub. Accédez à la page Propriétés de votre espace \> de noms Azure Event Hub. Copiez le texte sous l’ID de ressource et enregistrez-le pour l’utiliser dans la section Microsoft 365 Configuration ci-dessous.
 
-    :::image type="content" source="../../media/759498162a4e93cbf17c4130d704d164.png" alt-text="Section des propriétés des hubs d’événements dans Microsoft Azure web" lightbox="../../media/759498162a4e93cbf17c4130d704d164.png":::
+    :::image type="content" source="../../media/759498162a4e93cbf17c4130d704d164.png" alt-text="Section propriétés event hubs dans le portail Microsoft Azure" lightbox="../../media/759498162a4e93cbf17c4130d704d164.png":::
 
 
-1. Une fois l’espace de noms Hub d’événements créé, vous devez ajouter le principal du service d’inscription d’application en tant que lecteur, récepteur de données Azure Event Hub et utilisateur qui se connectera à Microsoft 365 Defender en tant que collaborateur (vous pouvez également le faire au niveau du groupe de ressources ou de l’abonnement).
+1. Une fois l’espace de noms Event Hub créé, vous devez ajouter le principal du service d’inscription d’application en tant que lecteur, Azure Event Hubs récepteur de données et l’utilisateur qui se connectera à Microsoft 365 Defender en tant que contributeur (vous pouvez également le faire au niveau du groupe de ressources ou de l’abonnement).
 
-    Pour ce faire, dans le  **contrôle d’accès** à l’espace de noms **(IAM)** du Hub \> d’événements, \> ajoutez et vérifiez sous **attributions de rôles** :
+    Vous effectuez cette étape dans l’espace de noms **Event Hub** \> **Access Control (IAM)** \> **Ajouter** et vérifier sous **Attributions de rôles** :
 
-    :::image type="content" source="../../media/9c9c29137b90d5858920202d87680d16.png" alt-text="Une section principale du service d’inscription d’application dans Microsoft Azure web" lightbox="../../media/9c9c29137b90d5858920202d87680d16.png":::
+    :::image type="content" source="../../media/9c9c29137b90d5858920202d87680d16.png" alt-text="Section principal du service d’inscription d’application dans le portail Microsoft Azure" lightbox="../../media/9c9c29137b90d5858920202d87680d16.png":::
 
-## <a name="set-up-event-hub"></a>Configurer le Hub d’événements
+## <a name="set-up-event-hub"></a>Configurer Event Hub
 
 **Option 1 :**
 
-Vous pouvez créer un Hub d’événements dans votre  espace de noms et tous les types d’événements (Tables) que vous sélectionnez pour l’exportation seront écrits dans **ce hub** d’événements.
+Vous pouvez créer un hub d’événements dans votre espace de noms et **tous les** types d’événements (tables) que vous sélectionnez pour exporter seront écrits dans ce **hub d’événements** .
 
 **Option 2 :**
 
-Au lieu d’exporter tous les types d’événements (tables) dans un hub d’événements, vous pouvez exporter chaque table dans un hub d’événements différent à l’intérieur de votre espace de noms Event Hub (un Hub d’événements par type d’événement).
+Au lieu d’exporter tous les types d’événements (tables) dans un hub d’événements, vous pouvez exporter chaque table dans un hub d’événements différent à l’intérieur de votre espace de noms Event Hub (un hub d’événements par type d’événement).
 
-Dans cette option, Microsoft 365 Defender créera le Hub d’événements pour vous.
+Dans cette option, Microsoft 365 Defender créez Event Hub pour vous.
 
 > [!NOTE]
-> Si vous utilisez un espace de noms Event Hub qui ne  fait pas partie d’un cluster Event Hub, vous ne pourrez choisir que jusqu’à 10 types d’événements (Tables) à exporter dans chaque Paramètres Export que vous définissez, en raison d’une limite Azure de 10 Event Hub par espace de noms Event Hub.
+> Si vous utilisez un espace de noms Event Hub qui **ne fait pas** partie d’un cluster Event Hub, vous ne pouvez choisir que 10 types d’événements (tables) à exporter dans chaque Paramètres d’exportation que vous définissez, en raison d’une limitation Azure de 10 Event Hub par espace de noms Event Hub.
 
 Par exemple :
 
-:::image type="content" source="../../media/005c1f6c10c34420d387f594987f9ffe.png" alt-text="Section hubs d’événements dans le portail Microsoft Azure web" lightbox="../../media/005c1f6c10c34420d387f594987f9ffe.png":::
+:::image type="content" source="../../media/005c1f6c10c34420d387f594987f9ffe.png" alt-text="Section Event Hubs dans le portail Microsoft Azure" lightbox="../../media/005c1f6c10c34420d387f594987f9ffe.png":::
 
-Si vous choisissez cette option, vous pouvez passer à la section [Configurer Microsoft 365 Defender pour envoyer des tables de courrier](#configure-microsoft-365-defender-to-send-email-tables) électronique.
+Si vous choisissez cette option, vous pouvez passer à la section [Configurer Microsoft 365 Defender pour envoyer des tables de courrier](#configure-microsoft-365-defender-to-send-email-tables).
 
-Créez un Hub d’événements dans votre espace de noms en sélectionnant **Hub d’événements** \> **+ Hub d’événements**.
+Créez Event Hub dans votre espace de noms en sélectionnant **Event Hub** \> **+ Event Hub**.
 
-Le nombre de partitions autorise davantage de débit via le parallélisme. Il est donc recommandé d’augmenter ce nombre en fonction de la charge que vous attendez. Les valeurs de rétention et de capture des messages par défaut de 1 et De sont recommandées.
+Le nombre de partitions permet d’augmenter le débit via le parallélisme. Il est donc recommandé d’augmenter ce nombre en fonction de la charge attendue. Les valeurs de rétention et de capture des messages par défaut de 1 et désactivées sont recommandées.
 
-:::image type="content" source="../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png" alt-text="Une section de création de hubs d’événements dans Microsoft Azure web" lightbox="../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png":::
+:::image type="content" source="../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png" alt-text="Section de création event hubs dans le portail Microsoft Azure" lightbox="../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png":::
  
 
-Pour ces hubs d’événements (et non un espace de noms), vous devez configurer une stratégie d’accès partagé avec envoyer, écouter les revendications. Cliquez sur vos stratégies **d’accès** partagé du Hub  \> \> d’événements **+** Ajoutez-le, puis donnez-lui un nom de stratégie (non utilisé ailleurs) et vérifiez **Envoyer** et **écouter**.
+Pour ces hubs d’événements (et non pour l’espace de noms), vous devez configurer une stratégie d’accès partagé avec Envoyer, Écouter les revendications. Cliquez sur vos stratégies \> **d’accès partagé** **Event Hub** \> **+ Ajouter**, puis donnez-lui un nom de stratégie (non utilisé ailleurs) et cochez **Envoyer** et **écouter**.
 
-:::image type="content" source="../../media/1867d13f46dc6a0f4cdae6cf00df24db.png" alt-text="Page Stratégies d’accès partagé dans le portail Microsoft Azure web" lightbox="../../media/1867d13f46dc6a0f4cdae6cf00df24db.png":::
+:::image type="content" source="../../media/1867d13f46dc6a0f4cdae6cf00df24db.png" alt-text="Page Stratégies d’accès partagé dans le portail Microsoft Azure" lightbox="../../media/1867d13f46dc6a0f4cdae6cf00df24db.png":::
 
 ## <a name="configure-microsoft-365-defender-to-send-email-tables"></a>Configurer Microsoft 365 Defender pour envoyer des tables de courrier électronique
 
-### <a name="set-up-microsoft-365-defender-send-email-tables-to-splunk-via-event-hub"></a>Configurer Microsoft 365 Defender envoyer des tables de messagerie à Splunk via le Hub d’événements
+### <a name="set-up-microsoft-365-defender-send-email-tables-to-splunk-via-event-hub"></a>Configurer Microsoft 365 Defender envoyer des tables e-mail à Splunk via Event Hub
 
-1. Connectez-vous <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> un compte qui répond à toutes les exigences de rôle suivantes :
+1. Connectez-vous à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> avec un compte qui répond à toutes les exigences de rôle suivantes :
 
-    - Rôle de collaborateur au niveau de  la ressource d’espace de noms du Hub d’événements ou supérieur pour le Hub d’événements vers qui vous allez exporter. Sans cette autorisation, vous recevez une erreur d’exportation lorsque vous essayez d’enregistrer les paramètres.
+    - Rôle contributeur au *niveau de la* ressource d’espace de noms Event Hub ou supérieur pour le hub d’événements vers lequel vous allez exporter. Sans cette autorisation, vous obtenez une erreur d’exportation lorsque vous essayez d’enregistrer les paramètres.
 
-    - Rôle d’administrateur global ou d’administrateur de sécurité sur le client lié à Microsoft 365 Defender azure.
+    - Rôle d’administrateur général ou d’administrateur de sécurité sur le locataire lié à Microsoft 365 Defender et Azure.
 
-      :::image type="content" source="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png" alt-text="Page Paramètres du portail Microsoft 365 Defender web" lightbox="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png":::
+      :::image type="content" source="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png" alt-text="Page Paramètres du portail Microsoft 365 Defender" lightbox="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png":::
 
 1. Cliquez sur **Exportation de données brutes \> +Ajouter**.
 
     Vous allez maintenant utiliser les données que vous avez enregistrées ci-dessus.
 
-    **Nom** : cette valeur est locale et doit être tout ce qui fonctionne dans votre environnement.
+    **Nom** : cette valeur est locale et doit être ce qui fonctionne dans votre environnement.
 
-    **Forward events to event hub**: Select this checkbox.
+    **Transférer des événements au hub d’événements** : activez cette case à cocher.
 
-    **ID de ressource Event-Hub** : cette valeur est l’ID de ressource d’espace de noms Event Hub que vous avez enregistré lors de la configuration du Hub d’événements.
+    **ID de ressource Event-Hub** : cette valeur est l’ID de ressource d’espace de noms Event Hub que vous avez enregistré lors de la configuration du hub d’événements.
 
-    **Nom du Hub d’événements** : si vous avez créé un Hub d’événements à l’intérieur de votre espace de noms Event Hub, collez le nom du Hub d’événements que vous avez enregistré ci-dessus.
+    **Nom du hub d’événements** : si vous avez créé un hub d’événements à l’intérieur de votre espace de noms Event Hub, collez le nom event hub que vous avez enregistré ci-dessus.
 
-    Si vous choisissez de laisser Microsoft 365 Defender créer le Hub d’événements par types d’événements (Tables), laissez ce champ vide.
+    Si vous choisissez de laisser Microsoft 365 Defender créer event hub par types d’événements (tables) pour vous, laissez ce champ vide.
 
-    **Types d’événements** : sélectionnez les tables de recherche avancée que vous souhaitez faire suivre au Hub d’événements, puis à votre application personnalisée. Les tables d’alerte sont Microsoft 365 Defender, les tables Périphériques sont issues de Microsoft Defender pour le point de terminaison (PEPT) et les tables e-mail sont issues de Microsoft Defender pour Office 365. Les événements de messagerie enregistrent toutes les transactions de messagerie. L’URL (Coffre Links), attachment (Coffre Attachments) et les événements de remise (ZAP) sont également enregistrés et peuvent être joints aux événements de messagerie sur le champ NetworkMessageId.
+    **Types d’événements** : sélectionnez les tables Advanced Hunting que vous souhaitez transférer au hub d’événements, puis à votre application personnalisée. Les tables d’alerte proviennent de Microsoft 365 Defender, les tables d’appareils proviennent de Microsoft Defender pour point de terminaison (PEPT) et les tables de courrier électronique proviennent de Microsoft Defender pour Office 365. Les événements de messagerie enregistrent toutes les transactions par e-mail. L’URL (liens Coffre), la pièce jointe (Coffre pièces jointes) et les événements de remise (ZAP) sont également enregistrés et peuvent être joints aux événements de messagerie sur le champ NetworkMessageId.
 
-    :::image type="content" source="../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png" alt-text="Page Paramètres de l’API de diffusion en continu dans le portail Microsoft Azure diffusion" lightbox="../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png":::
+    :::image type="content" source="../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png" alt-text="Page Paramètres de l’API de diffusion en continu dans le portail Microsoft Azure" lightbox="../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png":::
 
 1. Veillez à cliquer sur **Envoyer**.
 
-### <a name="verify-that-the-events-are-being-exported-to-the-event-hub"></a>Vérifier que les événements sont exportés vers le Hub d’événements
+### <a name="verify-that-the-events-are-being-exported-to-the-event-hub"></a>Vérifier que les événements sont exportés vers le hub d’événements
 
-Vous pouvez vérifier que les événements sont envoyés au Hub d’événements en exécutant une requête de recherche avancée de base. **Sélectionnez Une** \> **requête de recherche** \> **avancée et** entrez la requête suivante :
+Vous pouvez vérifier que les événements sont envoyés au hub d’événements en exécutant une requête de recherche avancée de base. Sélectionnez **Hunting** \> **Advanced Hunting** \> **Query** et entrez la requête suivante :
 
 ```console
 EmailEvents
@@ -163,13 +163,13 @@ EmailEvents
 |count
 ```
 
-Cela vous indique le nombre d’e-mails reçus au cours de la dernière heure, joints dans toutes les autres tables. Elle vous indique également si vous voyez des événements qui peuvent être exportés vers les hubs d’événements. Si ce nombre indique 0, vous ne verrez aucune donnée sortante vers le Hub d’événements.
+Cela vous indique le nombre d’e-mails reçus au cours de la dernière heure joints à toutes les autres tables. Il vous indique également si vous voyez des événements qui peuvent être exportés vers les hubs d’événements. Si ce nombre indique 0, aucune donnée ne s’affiche dans le hub d’événements.
 
-:::image type="content" source="../../media/c305e57dc6f72fa9eb035943f244738e.png" alt-text="Page de recherche avancée dans le portail Microsoft Azure web" lightbox="../../media/c305e57dc6f72fa9eb035943f244738e.png":::
+:::image type="content" source="../../media/c305e57dc6f72fa9eb035943f244738e.png" alt-text="Page de repérage avancé dans le portail Microsoft Azure" lightbox="../../media/c305e57dc6f72fa9eb035943f244738e.png":::
 
-Une fois que vous avez vérifié qu’il existe des données à exporter, vous pouvez afficher la page Hub d’événements pour vérifier que les messages sont entrants. Cela peut prendre jusqu’à une heure.
+Une fois que vous avez vérifié qu’il y a des données à exporter, vous pouvez afficher la page Event Hub pour vérifier que les messages sont entrants. Cela peut prendre jusqu’à une heure.
 
-1. Dans Azure, cliquez sur **Le Hub d’événements** \> sur le **Hub** \> **d’événements** \> d’espace de noms sur **le Hub d’événements**.
-1. Sous **Vue d’ensemble**, faites défiler vers le bas et dans le graphique Messages, vous devriez voir messages entrants. Si vous ne voyez aucun résultat, il n’y aura aucun message pour l’ing d’une application personnalisée.
+1. Dans Azure, accédez à **Event Hub** \> En cliquant sur l’espace de **noms** \> **Event Hub**\>, cliquez sur le **hub d’événements**.
+1. Sous **Vue d’ensemble**, faites défiler vers le bas et, dans le graphique Messages, vous devez voir les messages entrants. Si vous ne voyez aucun résultat, il n’y aura aucun message à ingérer pour votre application personnalisée.
 
-:::image type="content" source="../../media/e88060e315d76e74269a3fc866df047f.png" alt-text="Page Vue d’ensemble dans Microsoft 365 portail Azure" lightbox="../../media/e88060e315d76e74269a3fc866df047f.png":::
+:::image type="content" source="../../media/e88060e315d76e74269a3fc866df047f.png" alt-text="Page Vue d’ensemble dans le Microsoft 365 Portail Azure" lightbox="../../media/e88060e315d76e74269a3fc866df047f.png":::
