@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: ab3adee8275f6c64dd7ad3b21547e8205b00ff7d
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: ddfa921c8dae22bbe091e2c0f66fc9ae42aeea41
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187775"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231796"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -44,7 +44,7 @@ Pour en savoir plus sur les stratégies de rétention et le fonctionnement de la
 
 ## <a name="scopes---adaptive-and-static"></a>Étendues : adaptatives et statiques
 
-Si vous n’êtes pas familiarisé avec les étendues adaptatives et statiques et pour vous aider à choisir celle à utiliser lors de la configuration d’une stratégie de rétention, voir [Étendues de stratégies adaptatives ou statiques pour la rétention](retention.md#adaptive-or-static-policy-scopes-for-retention). 
+Si vous n’êtes pas familiarisé avec les étendues adaptatives et statiques, et pour vous aider à choisir celle à utiliser lorsque vous configurez une stratégie pour la rétention, consultez [Étendues de stratégie adaptatives ou statiques pour la rétention](retention.md#adaptive-or-static-policy-scopes-for-retention). 
 
 Lorsque vous avez décidé d’utiliser une étendue adaptative ou statique, utilisez les informations suivantes pour vous aider à la configurer :
 - [Informations de configuration pour les étendues adaptatives](#configuration-information-for-adaptive-scopes)
@@ -73,7 +73,7 @@ Les noms d'attributs des utilisateurs et des groupes sont basés [sur les propri
 Les attributs et propriétés répertoriés dans la table peuvent être facilement spécifiés lorsque vous configurez une étendue adaptative à l’aide du générateur de requêtes simple. Les attributs et propriétés supplémentaires sont pris en charge avec le générateur de requêtes avancé, comme décrit dans la section suivante.
 
 > [!TIP]
-> Pour plus d’informations sur l’utilisation du générateur de requêtes avancées, consultez les webinaires suivants : 
+> Pour plus d’informations sur l’utilisation du générateur de requêtes avancé, consultez les webinaires suivants : 
 > - [La création de requêtes avancées pour les utilisateurs et les groupes avec des étendues de stratégies adaptatives](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
 > - [La création de requêtes pour les sites SharePoint avec des étendues de stratégie adaptative](https://aka.ms/AdaptivePolicyScopes-AdvancedSharePoint)
 
@@ -130,11 +130,11 @@ Pour les sites SharePoint, une configuration SharePoint supplémentaire peut êt
     - Pour les **sites Microsoft Office SharePoint Online** étendues, utilisez le langage KQL (Keyword Query Language). Vous connaissez peut-être déjà l’utilisation de KQL pour rechercher Microsoft Office SharePoint Online à l’aide de propriétés de site indexées. Pour vous aider à spécifier ces requêtes KQL, consultez [En savoir plus sur la syntaxe KQL](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
         
         Par exemple, étant donné que les étendues d'application des sites SharePoint incluent automatiquement tous les types de sites SharePoint, qui comprennent les sites Microsoft 365 connectés à un groupe et les sites OneDrive, vous pouvez utiliser la propriété de site indexée **SiteTemplate** pour inclure ou exclure des types de sites spécifiques. Les modèles que vous pouvez spécifier :
-        - SITEPAGEPUBLISHING pour les sites de communication modernes
-        - GROUPE pour les sites connectés à un groupe Microsoft 365
-        - TEAMCHANNEL pour les sites de canaux privés Microsoft Teams
-        - STS pour un site d'équipe SharePoint classique
-        - SPSPERS pour les sites OneDrive
+        - `SITEPAGEPUBLISHING` pour les sites de communication modernes
+        - `GROUP` pour les sites Microsoft 365 connectés à un groupe
+        - `TEAMCHANNEL` pour les sites de canal privé Microsoft Teams
+        - `STS` pour un site d’équipe SharePoint classique
+        - `SPSPERS` pour les sites OneDrive
         
         Ainsi, pour créer une portée adaptative qui inclut uniquement les sites de communication modernes et exclut les sites Microsoft 365 connectés à un groupe et les sites OneDrive, spécifiez la requête KQL suivante :
         ````console
@@ -175,19 +175,19 @@ Pour exécuter une requête à l’aide de PowerShell :
 
 1. [Connecter à Exchange Online PowerShell à l’aide](/powershell/exchange/connect-to-exchange-online-powershell) d’un compte avec les [autorisations Exchange Online administrateur appropriés.](/powershell/exchange/find-exchange-cmdlet-permissions#use-powershell-to-find-the-permissions-required-to-run-a-cmdlet)
 
-2. Utilisez [Get-Recipient](/powershell/module/exchange/get-recipient) ou [Get-Mailbox](/powershell/module/exchange/get-mailbox) avec le paramètre *-Filter* et votre requête [OPATH](/powershell/exchange/filter-properties) pour l’étendue adaptative entre crochets ( `{` , `}` ). Si vos valeurs d’attribut sont des chaînes, mettez ces valeurs entre guillemets doubles ou simples.  
+2. Utilisez [Get-Recipient](/powershell/module/exchange/get-recipient), [Get-Mailbox](/powershell/module/exchange/get-mailbox) ou [Get-User](/powershell/module/exchange/get-user) avec le paramètre *-Filter* et votre [Requête OPATH](/powershell/exchange/filter-properties) pour l’étendue adaptative entre crochets (`{`,`}`). Si vos valeurs d’attribut sont des chaînes, mettez ces valeurs entre guillemets doubles ou simples.
 
-    Vous pouvez déterminer s’il faut utiliser `Get-Mailbox` ou `Get-Recipient` pour la validation en identifiant l’applet de commande prise en charge par la propriété [OPATH](/powershell/exchange/filter-properties) que vous choisissez pour votre requête.
+    Vous pouvez déterminer s’il faut utiliser Get-Mailbox, Get-Recipient ou Get-User pour la validation en identifiant l’applet de commande prise en charge par la [Propriété OPATH](/powershell/exchange/filter-properties) que vous choisissez pour votre requête.
 
     > [!IMPORTANT]
-    > `Get-Mailbox` ne prend pas en charge le type de destinataire *MailUser*, vous devez donc utiliser `Get-Recipient` pour valider les requêtes qui incluent des boîtes aux lettres locales dans un environnement hybride.
+    > Get-Mailbox ne prend pas en charge le type de destinataire *MailUser*. Par conséquent, Get-Recipient ou Get-User doit être utilisé pour valider les requêtes qui incluent des boîtes aux lettres locales dans un environnement hybride.
 
-    Pour valider une étendue **Utilisateur,** utilisez l’une ou l’autre des utilisations :
-    - `Get-Mailbox` avec `-RecipientTypeDetails UserMailbox` ou
-    - `Get-Recipient` avec le `-RecipientTypeDetails UserMailbox,MailUser`
+    Pour valider une étendue **Utilisateur**, utilisez la commande appropriée :
+    - `Get-Mailbox` avec *-RecipientTypeDetails UserMailbox,SharedMailbox,RoomMailbox,EquipmentMailbox*
+    - `Get-Recipient` avec *-RecipientTypeDetails UserMailbox,MailUser,SharedMailbox,RoomMailbox,EquipmentMailbox*
     
     Pour valider une étendue **groupe Microsoft 365** utilisez :
-    - `Get-Mailbox` ou `Get-Recipient` avec `-RecipientTypeDetails GroupMailbox`
+    - `Get-Mailbox` avec *-GroupMailbox* ou `Get-Recipient` avec *-RecipientTypeDetails GroupMailbox*
 
     Par exemple, pour valider une **étendue Utilisateur,** vous pouvez utiliser :
     
@@ -200,6 +200,11 @@ Pour exécuter une requête à l’aide de PowerShell :
     ```PowerShell
     Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Marketing"} -ResultSize Unlimited
     ```
+    
+    > [!TIP]
+    > Lorsque vous utilisez ces commandes pour valider une étendue utilisateur, si le nombre de destinataires renvoyés est supérieur à celui attendu, cela peut être dû au fait qu’elle inclut les utilisateurs qui n’ont pas de licence valide pour les étendues adaptatives. Les paramètres de rétention ne sont pas appliqués à ces utilisateurs.
+    > 
+    > Par exemple, dans un environnement hybride, vous pouvez avoir des comptes d’utilisateurs synchronisés sans licence sans boîte aux lettres Exchange localement ou dans Exchange Online. Vous pouvez identifier ces utilisateurs en exécutant la commande suivante : `Get-User -RecipientTypeDetails User`
 
 3. Vérifiez que la sortie correspond aux utilisateurs ou groupes attendus pour votre étendue adaptative. Si ce n’est pas le cas, vérifiez votre requête et les valeurs auprès de l’administrateur approprié pour Azure AD ou Exchange.
  
@@ -217,7 +222,7 @@ Lorsque vous choisissez d’utiliser des étendues statiques, vous devez décide
 
 #### <a name="a-policy-that-applies-to-entire-locations"></a>Une stratégie qui s’applique à des emplacements entiers
 
-À l'exception de Skype for Business, par défaut, toutes les instances des emplacements sélectionnés sont automatiquement incluses dans la politique sans que vous ayez à les spécifier.
+À l’exception de Skype Entreprise, la valeur par défaut est que toutes les instances des emplacements sélectionnés sont automatiquement incluses dans la stratégie sans que vous ayez à les spécifier comme inclus.
 
 Par exemple, Tous les **destinataires** pour l'emplacement de la **messagerie Exchange**. Avec ce paramètre par défaut, toutes les boîtes aux lettres utilisateur existantes seront incluses dans la stratégie, et toute nouvelle boîte aux lettres créée après l'application de la stratégie héritera automatiquement de celle-ci.
 
@@ -242,9 +247,9 @@ Les emplacements dans les stratégies de rétention identifient des services Mic
 
 L’emplacement de **Courrier Exchange** et l’emplacement des **dossiers publics Exchange** nécessitent que les boîtes aux lettres aient au moins 10 Mo de données avant que les paramètres de rétention ne s’appliquent à celles-ci.
 
-L’emplacement **Courrier Exchange** prend en charge la rétention du courrier électronique, du calendrier et d’autres éléments de boîte aux lettres des utilisateurs en appliquant des paramètres de rétention au niveau d’une boîte aux lettres. Les boîtes aux lettres partagées sont également prises en charge.
+L’emplacement de l’**E-mail Exchange** prend en charge la rétention pour la messagerie, le calendrier et d’autres éléments de boîte aux lettres des utilisateurs, en appliquant des paramètres de rétention au niveau d’une boîte aux lettres. Les boîtes aux lettres partagées et les boîtes aux lettres de ressources pour l’équipement et les salles sont également prises en charge.
 
-Les boîtes aux lettres de ressources, les contacts et les boîtes aux lettres de groupe Microsoft 365 ne sont pas pris en charge pour les e-mails Exchange. Pour boîtes aux lettres de groupe Microsoft 365, sélectionnez plutôt l’emplacement **Groupes Microsoft 365** . Bien que l’emplacement Exchange autorise initialement la sélection d’une boîte aux lettres de groupe pour une étendue statique, lorsque vous essayez d’enregistrer la stratégie de rétention, vous recevez une erreur vous précisant que « RemoteGroupMailbox » n’est pas une sélection valide pour cet emplacement.
+Les contacts de messagerie et les boîtes aux lettres de groupe Microsoft 365 ne sont pas pris en charge pour les e-mails Exchange. Pour boîtes aux lettres de groupe Microsoft 365, sélectionnez plutôt l’emplacement **Groupes Microsoft 365** . Bien que l’emplacement Exchange autorise initialement la sélection d’une boîte aux lettres de groupe pour une étendue statique, lorsque vous essayez d’enregistrer la stratégie de rétention, vous recevez une erreur indiquant que « RemoteGroupMailbox » n’est pas une sélection valide pour cet emplacement.
 
 Selon la configuration de votre stratégie, les boîtes aux lettres [inactives](inactive-mailboxes-in-office-365.md) peuvent être incluses ou non :
 
@@ -272,7 +277,7 @@ Lorsque vous configurez une stratégie d’application automatique qui utilise d
 
 ### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>Informations de configuration pour les sites SharePoint et les comptes OneDrive
 
-Lorsque vous choisissez l’emplacement des **sites Microsoft Office SharePoint Online**, la stratégie de rétention peut conserver et supprimer les documents des sites de communication Microsoft Office SharePoint Online, des sites d’équipe qui ne sont pas connectés par des groupes Microsoft 365 ainsi que des sites classiques. À moins que vous n'utilisiez [des étendues de stratégie adaptative](#exceptions-for-adaptive-policy-scopes), les sites d'équipe connectés par des groupes Microsoft 365 ne sont pas pris en charge avec cette option et, à la place, utilisez l'emplacement des groupes **Microsoft 365** qui s'applique au contenu de la boîte aux lettres, du site et des fichiers du groupe.
+Lorsque vous choisissez l’emplacement des **sites Microsoft Office SharePoint Online**, la stratégie de rétention peut conserver et supprimer les documents des sites de communication Microsoft Office SharePoint Online, des sites d’équipe qui ne sont pas connectés par des groupes Microsoft 365 ainsi que des sites classiques. Sauf si vous utilisez des [étendues de stratégie adaptative](#exceptions-for-adaptive-policy-scopes), les sites d’équipe connectés par Microsoft 365 groupes ne sont pas pris en charge avec cette option et utilisent plutôt l’emplacement **Groupes Microsoft 365** qui s’applique au contenu de la boîte aux lettres, du site et des fichiers du groupe.
 
 Si vous souhaitez en savoir plus sur les éléments inclus et exclus lors de la configuration des paramètres de rétention de SharePoint et OneDrive, veuillez consulter la rubrique [Éléments composant la rétention et la suppression](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion).
 
@@ -302,11 +307,11 @@ Les boîtes aux lettres que vous ciblez avec cet emplacement de stratégie néce
 > [!NOTE]
 > Même si un groupe Microsoft 365 possède une boîte aux lettres Exchange, une stratégie de rétention qui inclut l’ensemble de l’emplacement de la **messagerie Exchange** n’inclut pas le contenu des boîtes aux lettres du groupe Microsoft 365.
 
-Bien que l’emplacement de la **messagerie Exchange** vous permette initialement de spécifier une boîte aux lettres de groupe à inclure ou à exclure, vous recevez une erreur indiquant que « RemoteGroupMailbox » n’est pas une sélection valide pour l’emplacement Exchange, lorsque vous essayez d’enregistrer la stratégie de rétention.
+Si vous utilisez des étendues statiques : bien que l’emplacement de l’**E-mail Exchange** pour une étendue statique vous permette initialement de spécifier une boîte aux lettres de groupe à inclure ou à exclure, lorsque vous essayez d’enregistrer la stratégie de rétention, vous verrez une erreur indiquant que « RemoteGroupMailbox » n’est pas une sélection valide pour l’emplacement Exchange.
 
 Par défaut, la stratégie de rétention d’un groupe Microsoft 365 comprend la boîte aux lettres de groupe et le site d’équipes SharePoint.. Les fichiers stockés sur le site d’équipes SharePoint sont couverts par cet emplacement, à la différence des conversations Teams ou des messages de canal Teams qui ont leur propre emplacements de stratégie de rétention.
 
-Pour modifier la valeur par défaut afin que la stratégie de rétention s’applique uniquement aux boîtes aux lettres Microsoft 365 ou aux sites d’équipe SharePoint connectés, utilisez l’applet de commande PowerShell [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) avec le paramètre *Applications* avec l’une des valeurs suivantes :
+Pour modifier la valeur par défaut, car vous souhaitez que la stratégie de rétention s’applique uniquement aux boîtes aux lettres Microsoft 365 ou aux sites SharePoint Teams connectés, utilisez l’applet de commande PowerShell [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) et le paramètre *Applications* avec l’une des valeurs suivantes :
 
 - `Group:Exchange` pour les boîtes aux lettres Microsoft 365 uniquement connectées au groupe.
 - `Group:SharePoint` pour les sites SharePoint uniquement connectées au groupe.
@@ -325,7 +330,7 @@ Lorsqu’une stratégie de rétention (étendue de stratégie statique ou adapta
 
 - Le site SharePoint connecté au groupe est conservé et continue d'être géré par la politique de rétention avec l'emplacement des **groupes Microsoft 365**. Le site reste accessible aux personnes qui y avaient accès avant la suppression du groupe, et toute nouvelle autorisation doit désormais être gérée via Microsoft Office SharePoint Online.
     
-    À ce stade, vous ne pouvez pas exclure le site de l'emplacement des groupes Microsoft 365, car vous ne pouvez pas spécifier le groupe supprimé. Si vous devez libérer la stratégie de rétention de ce site, contactez le Support Microsoft. Par exemple, ouvrez une [demande de service dans le Centre d'Administration Microsoft 365](https://admin.microsoft.com/Adminportal/Home#/support).
+    À ce stade, vous ne pouvez pas exclure le site de l'emplacement des groupes Microsoft 365, car vous ne pouvez pas spécifier le groupe supprimé. Si vous devez libérer la stratégie de rétention de ce site, contactez le Support Microsoft. Par exemple, [ouvrez une demande de support dans le centre d’administration Microsoft 365](/microsoft-365/admin/get-help-support#online-support).
 
 - La boîte aux lettres du groupe supprimé devient inactive et, comme le site Microsoft Office SharePoint Online, reste soumise aux paramètres de rétention. Pour plus d’informations, consultez [Boîtes aux lettres inactives dans Exchange Online](inactive-mailboxes-in-office-365.md).
 
@@ -384,7 +389,7 @@ Exemples :
 
 - Exchange : Si vous souhaitez conserver les éléments dans une boîte aux lettres pendant sept ans et qu’un message a été envoyé il y a six ans, celui-ci ne sera conservé que pendant une autre année. Pour les éléments Exchange, l’âge est basé sur la date de réception du courrier entrant et d’envoi du courrier sortant. La rétention d’éléments sur la base de la date de dernière modification ne s’applique qu’au contenu de site sur OneDrive et SharePoint.
 
-Vous pouvez choisir si vous souhaitez que le contenu soit supprimé de façon définitive à la fin de la période de rétention. Par exemple, pour les stratégies de rétention :
+À la fin de la période de rétention, vous choisissez de supprimer définitivement le contenu. Par exemple, pour les stratégies de rétention :
 
 ![Page Paramètres de rétention.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
 
@@ -400,7 +405,7 @@ Avant de configurer la rétention, familiarisez-vous tout d’abord avec les lim
 
 Les paramètres de rétention peuvent conserver puis supprimer des éléments, ou bien supprimer de vieux éléments sans les conserver.
 
-Dans les deux cas, si les paramètres de votre stratégie suppriment des éléments, il est important de comprendre que la période que vous spécifiez n’est pas calculée à partir du moment où la stratégie a été affectée, mais en fonction du début de la période de rétention spécifiée. Par exemple, à partir de la date de création ou de modification d’un élément, ou de son étiquetage.
+Dans les deux cas, si vos paramètres de rétention suppriment des éléments, il est important de comprendre que la période que vous spécifiez n’est pas calculée à partir du moment où la stratégie a été affectée, mais en fonction du début de la période de rétention spécifiée. Par exemple, à partir du moment où l’élément a été créé, modifié ou étiqueté.
 
 Pour cette raison, tenez d’abord compte de l’âge du contenu existant et de la façon dont les paramètres peuvent affecter ce contenu. Envisagez de communiquer les paramètres de votre choix à vos utilisateurs et au support technique avant application des paramètres au contenu, ce qui leur donne le temps d’évaluer l’impact possible.
 
