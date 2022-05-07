@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6b9ad54a881ae5e14767e55da8dfc23b2fb237eb
-ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
+ms.openlocfilehash: 5bce1fc2e9aa149da2bb3ddc28e56fc826ad1768
+ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65243115"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "65268865"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Créer une application pour accéder à Microsoft Defender pour point de terminaison sans utilisateur
 
@@ -149,6 +149,9 @@ $token
 ### <a name="use-c"></a>Utilisez C# :
 
 Le code suivant a été testé avec NuGet Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8.
+
+> [!IMPORTANT]
+> Le package [NuGet Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) et Azure AD Authentication Library (ADAL) ont été dépréciés. Aucune nouvelle fonctionnalité n’a été ajoutée depuis le 30 juin 2020.   Nous vous encourageons vivement à effectuer la mise à niveau. Pour plus d’informations, consultez le [guide de migration](/azure/active-directory/develop/msal-migration) .
 
 1. Créez une application console.
 1. Installez NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
