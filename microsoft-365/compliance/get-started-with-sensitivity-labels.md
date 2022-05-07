@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à mettre en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: 3f163c19cfd6e627887f0e34b81bc99d2e86cb6c
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: b0fcf435d7805440e93f0d1248723f4b5599d4a9
+ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971041"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "65268768"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
@@ -102,6 +102,7 @@ Dans tous les scénarios, vous devez [Créer et configurer des étiquettes de co
 |Utiliser des étiquettes de niveau de sensibilité pour configurer le type de lien de partage par défaut pour les sites et les documents individuels SharePoint et OneDrive |[Utilisez les étiquettes de confidentialité pour configurer le type de lien de partage par défaut pour les sites et les documents dans SharePoint et OneDrive](sensitivity-labels-default-sharing-link.md)|
 |Appliquer une étiquette de niveau de sensibilité à un modèle de compréhension de document, afin que les documents identifiés dans une bibliothèque SharePoint soient automatiquement classés et protégés |[Appliquer une étiquette de confidentialité à un modèle dans Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)|
 |Empêcher ou signaler les utilisateurs sur le partage des fichiers ou des courriers électroniques avec une étiquette de confidentialité spécifique |[Utiliser les étiquettes de confidentialité comme condition dans les stratégies de protection contre la perte de données](dlp-sensitivity-label-as-condition.md) |
+|Appliquer une étiquette de confidentialité à un fichier lorsque je reçois une alerte indiquant que le contenu contenant des données personnelles est partagé et nécessite une protection| [Examiner et corriger les alertes dans gestion des risques liés à la confidentialité](/privacy/priva/risk-management-alerts)|
 |Appliquer une étiquette de rétention pour conserver ou supprimer des fichiers ou des messages électroniques qui ont une étiquette de niveau de sensibilité spécifique|[Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu](apply-retention-labels-automatically.md) |
 |Découvrir, étiqueter et protéger des fichiers stockés dans des banques de données situées dans les locaux |[Déploiement du scanner Azure Information Protection pour classifier et protéger automatiquement des fichiers](/azure/information-protection/deploy-aip-scanner)|
 |Découvrir, étiqueter et protéger des fichiers stockés sur le cloud|[Découvrir, classifier, étiqueter et protéger les données réglementées et sensibles stockées dans le cloud](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
