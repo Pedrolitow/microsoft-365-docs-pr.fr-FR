@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: ddfa921c8dae22bbe091e2c0f66fc9ae42aeea41
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+ms.openlocfilehash: 90a048cf96bb2414a42d803bcd2f15deab4e711b
+ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231796"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "65268790"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -277,7 +277,10 @@ Lorsque vous configurez une stratégie d’application automatique qui utilise d
 
 ### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>Informations de configuration pour les sites SharePoint et les comptes OneDrive
 
-Lorsque vous choisissez l’emplacement des **sites Microsoft Office SharePoint Online**, la stratégie de rétention peut conserver et supprimer les documents des sites de communication Microsoft Office SharePoint Online, des sites d’équipe qui ne sont pas connectés par des groupes Microsoft 365 ainsi que des sites classiques. Sauf si vous utilisez des [étendues de stratégie adaptative](#exceptions-for-adaptive-policy-scopes), les sites d’équipe connectés par Microsoft 365 groupes ne sont pas pris en charge avec cette option et utilisent plutôt l’emplacement **Groupes Microsoft 365** qui s’applique au contenu de la boîte aux lettres, du site et des fichiers du groupe.
+Lorsque vous choisissez l’emplacement des **sites Microsoft Office SharePoint Online**, la stratégie de rétention peut conserver et supprimer les documents des sites de communication Microsoft Office SharePoint Online, des sites d’équipe qui ne sont pas connectés par des groupes Microsoft 365 ainsi que des sites classiques. Sauf si vous utilisez des [étendues de stratégie adaptative](#exceptions-for-adaptive-policy-scopes), les sites d’équipe connectés par des groupes Microsoft 365 ne sont pas pris en charge avec cette option et utilisent plutôt l’emplacement **Groupes Microsoft 365** qui s’applique au contenu de la boîte aux lettres, du site et des fichiers du groupe.
+
+> [!TIP]
+> Vous pouvez utiliser un [filtre dans le Centre d’administration SharePoint](/sharepoint/customize-admin-center-site-list) ou une [commande PowerShell SharePoint](/powershell/module/sharepoint-online/get-sposite#example-10) pour vérifier qu’un site est connecté à un groupe. Pour les étendues statiques, ces sites sont pris en charge avec l’emplacement **Groupes Microsoft 365**.
 
 Si vous souhaitez en savoir plus sur les éléments inclus et exclus lors de la configuration des paramètres de rétention de SharePoint et OneDrive, veuillez consulter la rubrique [Éléments composant la rétention et la suppression](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion).
 
