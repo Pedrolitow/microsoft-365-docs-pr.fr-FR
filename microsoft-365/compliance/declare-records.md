@@ -17,16 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Déclarer des enregistrements à l’aide d’étiquettes de rétention.
-ms.openlocfilehash: 23dd6c61d9da787eecd2e1fa825fe338d961d1d1
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: 75445d1cd61bd86dd41d6325efc6e71fac20ddc0
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911452"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286053"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Déclarer des enregistrements à l’aide d’étiquettes de rétention
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Pour déclarer des documents et courriers électroniques comme [enregistrements](records-management.md#records), utilisez [des étiquettes de rétention](retention.md#retention-labels) qui servent à marquer du contenu comme **enregistrement** ou **enregistrement réglementaire**.
 
@@ -55,11 +57,7 @@ Si vous changez d’avis sur la façon de voir cette option dans l’assistant �
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Configuration d’étiquettes de rétention pour déclarer des enregistrements
 
-Lorsque vous créez une étiquette de rétention à partir de la solution **Gestion des enregistrements** dans le Centre de conformité Microsoft 365, vous pouvez sélectionner l’option **Marquer les éléments en tant qu’enregistrement**. Ensuite, en tant qu’option supplémentaire actuellement déployée en préversion, déverrouillez l’enregistrement par défaut pour SharePoint et OneDrive.
-
-L’option supplémentaire de **Déverrouiller cet enregistrement par défaut** permet aux utilisateurs de déclarer eux-mêmes les enregistrements, car ils verrouillent l’enregistrement lorsqu’ils ont terminé de modifier le contenu. Pour plus d’informations sur ce scénario pris en charge, consultez [Utiliser le contrôle de version des enregistrements pour mettre à jour les enregistrements stockés dans SharePoint ou OneDrive](record-versioning.md).
-
-Si vous avez exécuté la commande PowerShell à partir de la section précédente, vous pouvez marquer les éléments comme un enregistrement réglementaire de manière alternative.
+Lorsque vous créez une étiquette de conservation à partir de la solution de **gestion des enregistrements** dans le portail de conformité Microsoft Purview, vous avez la possibilité de marquer les éléments comme un enregistrement. Si vous avez exécuté la commande PowerShell à partir de la section précédente, vous pouvez marquer les éléments comme un enregistrement réglementaire de manière alternative.
 
 Par exemple :
 
@@ -77,7 +75,7 @@ Pour instructions complètes :
 
 Si vous utilisez des étiquettes de rétention pour déclarer des éléments en tant qu’enregistrements (plutôt que des enregistrements réglementaires) dans SharePoint et OneDrive, déterminez si vous devez modifier le paramètre de locataire par défaut qui permet aux utilisateurs de modifier les propriétés pour un [fichier verrouillé](record-versioning.md)lorsque les fichiers sont supérieurs à 0 octets.
 
-Pour modifier cette valeur par défaut, accédez au [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) > **Gestion des enregistrements** > **Paramètres de gestion des enregistrements** > **Étiquettes de rétention** > **Autorisez la modification des propriétés d’enregistrement** puis désactivez le paramètre **Autorisez les utilisateurs à modifier les propriétés d’enregistrement**.
+Pour changer cette valeur par défaut, accédez au portail de conformité [Microsoft Purview](https://compliance.microsoft.com/) > **Gestion des enregistrements** > **Paramètres de gestion des enregistrements** > **Étiquettes de conservation** > **Autoriser la modification des propriétés** des enregistrements, puis désactivez le paramètre **Autoriser les utilisateurs à modifier les propriétés des enregistrements**.
 
 ## <a name="applying-the-configured-retention-label-to-content"></a>Application de l’étiquette de rétention configurée au contenu
 

@@ -17,16 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment la rétention fonctionne pour SharePoint et OneDrive.
-ms.openlocfilehash: ed9cc45218dde112baec8fbca997abc6e82b4d72
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: cbcc8015b8b24309c882e5b8ca7a9c56fb6e344d
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911487"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285987"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Les informations contenues dans cet article complètent l’article [Découvrir la rétention](retention.md), car elles contiennent des informations spécifiques à SharePoint et OneDrive.
 
@@ -78,7 +80,7 @@ Les utilisateurs voient également un message d’erreur s’ils tentent de supp
 
 - Le paramètre de gestion des enregistrements qui permet aux utilisateurs de supprimer des éléments étiquetés est désactivé.
     
-    Pour vérifier ou modifier ce paramètre, accédez à la solution **Gestion des enregistrements** dans la Centre de conformité Microsoft 365 > **Gestion des enregistrements** > **Paramètres de gestion des enregistrements** > **Étiquettes de rétention** > **Suppression des éléments**. Il existe des paramètres distincts pour SharePoint et OneDrive.
+    Pour vérifier ou modifier ce paramètre, accédez à la solution de **gestion des enregistrements** dans le portail de conformité Microsoft Purview > **Gestion des enregistrements** > **Paramètres de gestion des enregistrements** > **Étiquettes de conservation** > **Suppression des éléments**. Il existe des paramètres distincts pour SharePoint et OneDrive.
     
     Sinon, et si vous n’avez pas accès à la solution de **gestion des enregistrements**, vous pouvez utiliser *AllowFilesWithKeepLabelToBeDeletedSPO* et *AllowFilesWithKeepLabelToBeDeletedODB* à partir de [Get-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant) et [Set-PnPTenant](/powershell/module/sharepoint-pnp/set-pnptenant).
 
@@ -170,7 +172,7 @@ Lorsque la période de rétention expire et que les paramètres de rétention in
 
 ## <a name="configuration-guidance"></a>Instructions de configuration
 
-Si vous débutez avec la configuration de la rétention dans Microsoft 365, consultez [Démarrage avec la gouvernance des informations](get-started-with-information-governance.md).
+Si vous débutez avec la configuration de la rétention dans Microsoft 365, consultez [Démarrage avec la gestion du cycle de vie des données](get-started-with-data-lifecycle-management.md).
 
 Si vous êtes prêt à configurer une stratégie ou une étiquette de rétention pour Exchange, consultez les instructions suivantes :
 - [Créer et configurer des stratégies de rétention](create-retention-policies.md)

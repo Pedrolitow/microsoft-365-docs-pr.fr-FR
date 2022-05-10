@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilisez eDiscovery (Premium) et Microsoft Graph Explorer pour rechercher et vider les messages de conversation dans Microsoft Teams et répondre aux incidents de débordement de données dans Teams.
-ms.openlocfilehash: 2a1c0bcda3c406f33edcacd77aba359437655ced
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+ms.openlocfilehash: c2202c45cc5e3caaa0af429439d44b1dfed3ac86
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294572"
+ms.locfileid: "65302071"
 ---
 # <a name="search-and-purge-chat-messages-in-teams-preview"></a>Rechercher et vider les messages de conversation dans Teams (préversion)
 
@@ -103,6 +103,9 @@ Vous êtes maintenant prêt à vider réellement les messages de conversation de
 3. Purgez les messages de conversation retournés par la collection.
 
 Pour plus d’informations sur l’utilisation de Graph Explorer, consultez [Utiliser Graph Explorer pour essayer les API Microsoft Graph](/graph/graph-explorer/graph-explorer-overview).
+
+> [!IMPORTANT]
+> Les API sous la version /bêta de Microsoft Graph sont susceptibles d’être modifiées. L’utilisation de ces API dans des applications de production n’est pas prise en charge. Pour déterminer si une API est disponible dans v1.0, utilisez le sélecteur de version.
 
 > [!IMPORTANT]
 > Pour effectuer ces trois tâches dans Graph Explorer, vous devrez peut-être accepter les autorisations eDiscovery.Read.All et eDiscovery.ReadWrite.All. Pour plus d’informations, consultez la section « Consentement aux autorisations » dans [Working with Graph Explorer](/graph/graph-explorer/graph-explorer-features#consent-to-permissions).

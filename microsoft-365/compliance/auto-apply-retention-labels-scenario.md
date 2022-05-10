@@ -1,5 +1,5 @@
 ---
-title: Utiliser les étiquettes de rétention pour gérer le cycle de vie des documents stockés dans SharePoint
+title: Utiliser les étiquettes de conservation pour gérer le cycle de vie des documents SharePoint
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -19,16 +19,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Comment vous pouvez utiliser les étiquettes de rétention pour gérer le cycle de vie des documents dans SharePoint en utilisant des métadonnées pour classifier le contenu, appliquer automatiquement les étiquettes et utiliser la rétention basée sur les événements pour démarrer la période de rétention.
-ms.openlocfilehash: 35c43a96e07fe52d9e5e0cc0a72195353b6f5da6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ad8d4f48aa104db18256d62fc5034d1fb38b2817
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327166"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286513"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Utiliser les étiquettes de rétention pour gérer le cycle de vie des documents stockés dans SharePoint
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cet article décrit la gestion du cycle de vie des documents stockés dans SharePoint à l’aide d’étiquettes de rétention appliquées automatiquement et de la rétention basée sur les événements.
 
@@ -86,7 +88,7 @@ Les politiques de conformité et de gouvernance des données de l'entreprise man
 | Tous les autres types de documents | Ne pas retenir activement  | Supprimer lorsque le document date de plus de 3 ans <br /><br /> Un document est considéré comme datant de plus de 3 ans s'il n'a pas été modifié au cours des 3 dernières années. |
 |||
 
-Nous utilisons le centre de conformité Microsoft 365 pour créer[les labels de conservation suivants](retention.md#retention-labels):
+Nous utilisons le portail de conformité Microsoft Purview pour créer [les étiquettes de conservation suivantes](retention.md#retention-labels):
 
   - Spécification du produit
 
@@ -114,7 +116,7 @@ Voici le [plan de gestion de fichiers](file-plan-manager.md) l’étiquette de r
 
 - **Descripteurs de plans de gestion de fichiers :** Pour simplifier le scénario, aucun descripteur de fichier facultatif n'est fourni.
 
-La capture d'écran suivante montre les paramètres lorsque vous créez l'étiquette de conservation de la spécification du produit dans le centre de conformité Microsoft 365. Vous pouvez créer *le type d'événement* « Arrêt des produits » lorsque vous créez l'étiquette de conservation. Voir la procédure dans la section suivante.
+La capture d'écran suivante montre les paramètres lorsque vous créez l'étiquette de conservation des spécifications du produit dans le portail de conformité Microsoft Purview. Vous pouvez créer *le type d'événement* « Arrêt des produits » lorsque vous créez l'étiquette de conservation. Voir la procédure dans la section suivante.
 
 ![Paramètres de conservation pour l’étiquette de spécification du produit.](../media/SPRetention5.png)
 
@@ -218,7 +220,7 @@ Dans la boîte de recherche, tapez **RefinableString00: « Spécification du pro
 
 Maintenant que vérification a été faite que la requête KQL fonctionne, créons une stratégie d’application automatique d'étiquettes utilisant une requête KQL pour appliquer automatiquement l'étiquette de rétention Spécification du produit sur les documents appropriés.
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, allez aux **stratégies** d’étiquette de gestion des enregistrements  >  **appliquer**  >  **automatiquement une étiquette.**
+1. Dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">le portail de conformité Microsoft Purview</a> , allez dans **gestion des enregistrements** > **stratégies** > **d'étiquetage application automatique d'une étiquette**.
 
    [ ![Sélectionnez « Auto-appliquer un label » sur la page Label](../media/SPRetention16.png) ](../media/SPRetention16.png#lightbox)
 
@@ -256,7 +258,7 @@ Maintenant que vérification a été faite que la requête KQL fonctionne, créo
 
 ### <a name="verify-that-the-retention-label-was-automatically-applied"></a>Vérifier que l'étiquette de conservation a été appliquée automatiquement
 
-Après 7 jours, utilisez l’[explorateur d'activités](data-classification-activity-explorer.md) dans le centre de conformité pour vérifier que la politique d'application automatique d’étiquettes que nous avons créée a bien appliqué automatiquement les étiquettes de rétention aux documents de produits.
+Après 7 jours, utilisez [l'explorateur d'activités](data-classification-activity-explorer.md) dans le portail de conformité Microsoft Purview pour vérifier que la stratégie d'application automatique des étiquettes que nous avons créée a bien appliqué automatiquement les étiquettes de conservation aux documents du produit.
 
 Consultez également les propriétés des documents de la bibliothèque de documents. Dans le panneau d’informations, vous pouvez voir que l’étiquette de rétention est appliquée à un document sélectionné.
 
@@ -270,7 +272,7 @@ Comme les étiquettes de conservation ont été appliquées automatiquement aux 
 
 Maintenant que les étiquettes de conservation sont appliquées, concentrons-nous sur l'événement qui indiquera la fin de la production pour un produit particulier. Cet événement déclenche le début de la période de conservation qui est définie dans les étiquettes de conservation. Par exemple, pour les cahiers des charges des produits, la période de conservation de 5 ans commence lorsque l'événement « fin de la production est déclenché.
 
-Vous pouvez créer manuellement l'événement dans le centre de conformité Microsoft 365 en vous rendant **sur la page Événements de** > **gestion des enregistrements**.                Vous devez choisir le type d'événement, définir les bons numéros d'identification d’élément des actifs et entrer une date pour l'événement. Pour plus d'informations, voir [Commencer la rétention lorsqu'un événement se produit](event-driven-retention.md).                
+Vous pouvez créer manuellement l'événement dans le portail de conformité Microsoft Purview en allant dans **gestion des enregistrements** > **événements**. Vous devez choisir le type d'événement, définir les bons numéros d'identification d’élément des actifs et entrer une date pour l'événement. Pour plus d'informations, voir [Commencer la rétention lorsqu'un événement se produit](event-driven-retention.md).                
 
 Mais pour ce scénario, nous allons générer automatiquement l'événement à partir d'un système de production externe. Le système est une simple liste SharePoint qui indique si un produit est en cours de production. Un flux [Power Automate](/power-automate/getting-started) associé à la liste qui déclenchera l'événement.        Dans un scénario réel, vous pourriez utiliser différents systèmes pour générer l'événement, tels qu'un système de RH ou de CRM. Power Automate contient de nombreuses interactions prêtes à l'emploi et des éléments de base pour les charges de travail de Microsoft 365, comme Microsoft Exchange, SharePoint, Teams et Dynamics 365, ainsi que des applications tierces comme Twitter, Box, Salesforce et Workdays. Cette fonctionnalité permet d'intégrer facilement Power Automate à divers systèmes. Pour plus d’informations, voir[Automatiser la rétention basée sur un événement](./event-driven-retention.md#automate-events-by-using-a-rest-api).
 
@@ -309,7 +311,7 @@ Pour créer ce flux, commencez à partir d’un connecteur SharePoint et sélect
 
 Cette liste décrit les paramètres dans la propriété **Body** de l'action qui doivent être configurés pour ce scénario :
 
-- **Nom**: Ce paramètre spécifie le nom de l'événement qui sera créé dans le centre de conformité Microsoft 365. Pour ce scénario, le nom est  Arrêt de la production *xxx*,où *xxx* est la valeur de la propriété gérée **ProductName** que nous avons créée précédemment.      
+- **Nom**: Ce paramètre indique le nom de l'événement qui sera créé dans le portail de conformité Microsoft Purview. Pour ce scénario, le nom est  Arrêt de la production *xxx*,où *xxx* est la valeur de la propriété gérée **ProductName** que nous avons créée précédemment.      
 - **EventType** : la valeur de ce paramètre correspond au type d’événement auquel l’événement créé s'applique. Ce type d’événement a été défini lors de la création de l’étiquette de rétention. Pour ce scénario, le type d'événement est « Arrêt du produit ».
 - **SharePointAssetIdQuery**: Ce paramètre définit les identifiants des actifs pour l'événement. La conservation basée sur un événement nécessite un identifiant unique pour le document. Nous pouvons utiliser les identifications des actifs pour identifier les documents auxquels un événement particulier s'applique ou, comme dans ce scénario, la colonne de métadonnées **Nom du produit**. Pour ce faire, nous devons créer une nouvelle propriété gérée **ProductName** qui peut être utilisée dans la requête KQL.      (On pourrait aussi utiliser **RefinableString00** au lieu de créer une nouvelle propriété gérée).                 Nous devons également mettre en correspondance cette nouvelle propriété gérée avec la propriété **ows_Product_x0020_Name** analysée.              Voici une capture d’écran de cette propriété gérée.
 
@@ -319,9 +321,9 @@ Cette liste décrit les paramètres dans la propriété **Body** de l'action qui
 
 ### <a name="putting-it-all-together"></a>Tout mettre ensemble
 
-À présent, l’étiquette de rétention est créée et appliquée automatiquement, et le flux est configuré et créé. Lorsque la valeur de la colonne **En production** pour le produit De widget de rotation dans la liste Produits passe de **_Oui_*_ à _*_Non_*_, le flux est déclenché pour créer l’événement. Pour voir cet événement dans le Centre de conformité, accédez à _* Gestion des enregistrements** > **Événements**.
+Maintenant, l'étiquette de rétention est créée et appliquée automatiquement, et le flux est configuré et créé. Lorsque la valeur **de la colonne En production pour** le produit Spinning Widget dans la liste des produits passe de **_Oui_*_ à _*_Non_*_, le flux est déclenché pour créer l'événement. Pour voir cet événement dans le portail de conformité Microsoft Purview, allez dans _* gestion des enregistrements** > **événements**.
 
-[ ![L'événement qui a été déclenché par le flux est affiché sur la page Événements dans le centre de conformité.](../media/SPRetention28.png) ](../media/SPRetention28.png#lightbox)
+[ ![L'événement qui a été déclenché par le flux est affiché sur la page des événements dans le portail de conformité Microsoft Purview.](../media/SPRetention28.png) ](../media/SPRetention28.png#lightbox)
 
 Sélectionnez l'événement pour voir les détails sur la page du menu volant. Notez que même si l'événement est créé, le statut de l'événement montre qu'aucun site ou document SharePoint n'a été traité.
 

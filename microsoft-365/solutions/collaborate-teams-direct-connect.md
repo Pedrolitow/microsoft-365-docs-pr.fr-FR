@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment activer les canaux partagés dans Microsoft Teams pour la collaboration avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: 392b2326e3166b5f813f96edc2a21c360919cfa6
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: c45d345a38b1ba9d045d6984feda614513512021
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217479"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302149"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>Collaborer avec des participants externes dans un canal partagé
 
@@ -36,6 +36,13 @@ Lorsque vous activez des canaux partagés avec une autre organisation :
 
 > [!NOTE]
 > Les canaux partagés sont en version préliminaire et nécessitent que vous ayez configuré [Microsoft Teams Public Preview](/MicrosoftTeams/public-preview-doc-updates). Si vous prévoyez de partager des canaux avec d'autres organisations, celles-ci doivent également avoir configuré l'aperçu public de Teams.
+
+## <a name="video-demonstration"></a>Démonstration vidéo
+
+Cette vidéo décrit les étapes de configuration décrites dans ce document.
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4WRMx?autoplay=false]
 
 ## <a name="enable-shared-channels-in-teams"></a>Activer les canaux partagés dans Teams
 

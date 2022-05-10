@@ -1,5 +1,5 @@
 ---
-title: Utiliser des étiquettes de confidentialité avec Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
+title: Utilisez des étiquettes de sensibilité avec Microsoft Teams, Microsoft 365 Groups et les sites SharePoint.
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,16 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 0c8462333a3b3fd0c062c72fce0f673977c54b9b
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 9b9427fc736dfee3ea326b8c523d3f872ad98c70
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916246"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286097"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Outre l’utilisation d' [étiquettes de confidentialité](sensitivity-labels.md) pour classifier et protéger les documents et les messages électroniques, vous pouvez également utiliser des étiquettes de confidentialité pour protéger du contenu dans les conteneurs suivants : sites Microsoft Teams, Microsoft 365 Groups ([anciennement les groupes Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) et les sites Microsoft Office SharePoint Online. Pour cette protection au niveau du conteneur, utilisez les paramètres d’étiquettes suivants : 
 
@@ -181,7 +183,7 @@ Restrictions connues pour cette version préliminaire :
 
 ### <a name="configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings"></a>Configurer les paramètres du type de lien de partage par défaut pour un site à l’aide de paramètres avancés PowerShell
 
-Outre les paramètres d’étiquette pour les sites et les groupes que vous pouvez configurer à partir du Centre de conformité, vous pouvez également configurer le type de lien de partage par défaut pour un site. Les étiquettes de confidentialité des documents peuvent également être configurées pour un type de lien de partage par défaut. Ces paramètres qui permettent d’empêcher le sur-partage sont automatiquement sélectionnés lorsque les utilisateurs sélectionnent le bouton **Partager** dans leurs applications Office. 
+En plus des paramètres d'étiquette pour les sites et les groupes que vous pouvez configurer à partir du portail de conformité Microsoft Purview, vous pouvez également configurer le type de lien de partage par défaut pour un site. Les étiquettes de confidentialité des documents peuvent également être configurées pour un type de lien de partage par défaut. Ces paramètres qui permettent d’empêcher le sur-partage sont automatiquement sélectionnés lorsque les utilisateurs sélectionnent le bouton **Partager** dans leurs applications Office. 
 
 Pour plus d’informations et d’instructions, consultez [Utiliser des étiquettes de confidentialité pour configurer le type de lien de partage par défaut pour les sites et les documents dans SharePoint et OneDrive](sensitivity-labels-default-sharing-link.md).
 
@@ -367,8 +369,7 @@ Les applications et services suivants prennent en charge les étiquettes de conf
   - Centre d’administration SharePoint
   - Centre d’administration Microsoft Teams
   - Centre d’administration Microsoft 365
-  - Centre de conformité Microsoft 365
-  - Portail Azure Active Directory
+  - Portail de conformité Microsoft Purview
 
 - Utiliser les applications et services :
 
@@ -390,7 +391,7 @@ Les applications et services suivants ne prennent actuellement pas en charge les
   - Dynamics 365
   - Yammer
   - Project
-  - Power BI
+  - Power BI
 
 ## <a name="classic-azure-ad-group-classification"></a>Classification classique de groupes Azure Active Directory
 

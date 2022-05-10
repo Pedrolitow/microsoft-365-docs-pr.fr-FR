@@ -1,5 +1,5 @@
 ---
-title: Utilisez les étiquettes de confidentialité pour configurer le type de lien de partage par défaut pour les sites et les documents dans SharePoint et OneDrive.
+title: Utilisez les étiquettes de sensibilité pour configurer le type de lien de partage par défaut
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,18 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour configurer le type de lien de partage par défaut pour les sites et les documents dans SharePoint et OneDrive.
-ms.openlocfilehash: 122a8846893b97146dc74d3a9d30ccbfe050525b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 132a526cc591f34722e4c0e8d4982859790558da
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319150"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286887"
 ---
 # <a name="use-sensitivity-labels-to-configure-the-default-sharing-link-type-for-sites-and-documents-in-sharepoint-and-onedrive"></a>Utilisez les étiquettes de confidentialité pour configurer le type de lien de partage par défaut pour les sites et les documents dans SharePoint et OneDrive.
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Comme une configuration supplémentaire aux paramètres que vous voyez dans le centre de conformité Microsoft 365 pour les [étiquettes de confidentialité](sensitivity-labels.md), vous pouvez utiliser ces étiquettes pour configurer les paramètres pour le type de lien de partage par défaut pour un site SharePoint ou un compte OneDrive, et pour les documents individuels. Ces paramètres sont automatiquement sélectionnés, mais ne sont pas très visibles pour les utilisateurs lorsqu'ils sélectionnent le bouton **Partager** dans leurs applications Office. Par exemple :
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Comme configuration supplémentaire aux paramètres que vous voyez dans le portail de conformité Microsoft Purview pour les [étiquettes de sensibilité](sensitivity-labels.md) , vous pouvez utiliser ces étiquettes pour configurer les paramètres pour le type de lien de partage par défaut pour un site SharePoint ou un compte OneDrive, et pour des documents individuels. Ces paramètres sont automatiquement sélectionnés, mais ne sont pas très visibles pour les utilisateurs lorsqu'ils sélectionnent le bouton **Partager** dans leurs applications Office. Par exemple :
 
 ![Exemple de boîte de dialogue de lien de partage par défaut](../media/default-sharing-link-example.png)
 
@@ -36,9 +38,9 @@ Le type de lien de partage par défaut définit l'étendue (qui) et les autorisa
 
 Au niveau du site (site SharePoint ou compte OneDrive), les étiquettes de confidentialité constituent une alternative pratique pour définir le type de lien de partage par défaut qui peut être configuré pour un site dans le centre d'administration SharePoint. Pour plus d'informations, consultez la section [Modifier le type de lien par défaut pour un site](/sharepoint/change-default-sharing-link) de la documentation SharePoint.
 
-Cette configuration au niveau du site fonctionne bien pour les sites SharePoint qui contiennent des documents ayant tous le même niveau de confidentialité. Mais si les sites contiennent certains documents dont le niveau de confidentialité est plus élevé et qui nécessitent des paramètres plus restrictifs, vous pouvez configurer une étiquette de confidentialité avec des paramètres différents pour le type de lien de partage par défaut, puis appliquer cette étiquette aux documents.
+Cette configuration au niveau du site fonctionne bien pour les sites SharePoint qui comportent des documents ayant tous le même niveau de sensibilité. Mais si les sites contiennent certains documents ayant un niveau de sensibilité plus élevé qui nécessitent des paramètres plus restrictifs, vous pouvez configurer une étiquette de sensibilité avec des paramètres différents pour le type de lien de partage par défaut, puis appliquer cette étiquette aux documents.
 
-Dans ce scénario où le site a des paramètres de type de lien de partage par défaut, et un document dans ce site a des paramètres de type de lien par défaut différents, les paramètres de portée plus restrictifs seront appliqués au moment où l'utilisateur sélectionne l'option de partage pour le document. Par exemple :
+Dans ce scénario où le site a des paramètres de type de lien de partage par défaut, et un document dans ce site a des paramètres de type de lien par défaut différents, les paramètres de portée plus restrictifs seront appliqués au moment où l'utilisateur sélectionne l'option de partage pour le document. Par exemple :
 
 - Le type de lien de partage par défaut pour le site s'applique à tous les membres de votre organisation. Un document de ce site est étiqueté avec le type de lien de partage par défaut défini sur des personnes spécifiques. Lorsqu'un utilisateur partage ce document, le type de lien de partage par défaut sélectionné sera étendu à des personnes spécifiques.
 
@@ -59,7 +61,7 @@ Pour appliquer le type de lien de partage par défaut aux documents dans SharePo
 Dans une session PowerShell, vous devez vous [connecter à Centre de sécurité et conformité Office 365 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) pour configurer les paramètres du type de lien de partage par défaut.
 
 > [!NOTE]
-> Bien que cela ne soit pas obligatoire, il est plus simple de créer et de configurer les étiquettes de niveau de confidentialité dans le [Centre de conformité Microsoft 365](create-sensitivity-labels.md), puis de modifier ces étiquettes avec les paramètres qui configurent le type de lien de partage par défaut.
+> Bien que cela ne soit pas obligatoire, il est plus facile de [créer et de configurer des étiquettes de sensibilité dans le portail](create-sensitivity-labels.md) de conformité Microsoft Purview, puis de modifier ces étiquettes avec les paramètres qui configurent le type de lien de partage par défaut.
 
 ## <a name="how-to-configure-settings-for-the-default-sharing-link-type"></a>Comment configurer les paramètres pour le type de lien de partage par défaut ?
 
@@ -90,11 +92,11 @@ Exemples PowerShell, où le GUID de l’étiquette de sensibilité est **8faca7b
     Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
     ````
 
-Pour configurer les paramètres du type de lien de partage par défaut pour un site, [ l’étendue de l’étiquette de niveau de confidentialité](sensitivity-labels.md#label-scopes) doit inclure les **sites Groupes &** lorsque vous créez l’étiquette de confidentialité dans le Centre de conformité Microsoft 365. Une fois créé, le paramètre **Site, UnifiedGroup** dans la colonne **Étendue** de la page **Étiquettes** s’affiche et le paramètre *ContentType* PowerShell affiche également cette même valeur. Pour les documents, l’étendue doit inclure **fichiers & courriers électroniques**, qui s’affiche en tant **que fichier, courrier électronique**. Ensuite :
+Pour configurer les paramètres du type de lien de partage par défaut pour un site, la portée [de l'étiquette de sensibilité](sensitivity-labels.md#label-scopes) doit inclure les **groupes et les sites** lorsque vous créez l'étiquette de sensibilité dans le portail de conformité Microsoft Purview. Une fois créé, le paramètre **Site, UnifiedGroup** dans la colonne **Étendue** de la page **Étiquettes** s’affiche et le paramètre *ContentType* PowerShell affiche également cette même valeur. Pour les documents, l’étendue doit inclure **fichiers & courriers électroniques**, qui s’affiche en tant **que fichier, courrier électronique**. Ensuite :
 
 - Lorsque l’étendue inclut **groupes & sites**, vous pouvez appliquer l’étiquette à un site, qui définit le type de lien de partage par défaut pour ce site. Pour plus d’informations sur l’application d’une étiquette de confidentialité à un site, afficher [Comment appliquer des étiquettes de niveau de confidentialité aux conteneurs](sensitivity-labels-teams-groups-sites.md#how-to-apply-sensitivity-labels-to-containers).
 
-- Lorsque l’étendue de l’étiquette de niveau de confidentialité inclut des **Fichers et courriers électroniques Fichiers**, vous pouvez appliquer l’étiquette aux documents, ce qui définit le type de lien de partage par défaut pour ce document. Elle peut être appliquée [manuellement](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) ou [automatiquement](apply-sensitivity-label-automatically.md).
+- Lorsque la portée de l'étiquette de sensibilité comprend les **fichiers et les e-mails**, vous pouvez appliquer l'étiquette aux documents, ce qui définit le type de lien de partage par défaut pour ce document. L'étiquette peut être appliquée [manuellement](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) ou [automatiquement](apply-sensitivity-label-automatically.md).
 
 > [!TIP]
 > Vous pouvez également spécifier que l’étiquette est l’étiquette de confidentialité par défaut à appliquer aux nouveaux sites ou nouveaux documents, en tant que paramètre de stratégie [d’étiquette](sensitivity-labels.md#what-label-policies-can-do).

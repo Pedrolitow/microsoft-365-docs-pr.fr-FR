@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à mettre en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: b0fcf435d7805440e93f0d1248723f4b5599d4a9
-ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
+ms.openlocfilehash: f27f1a475f5880058db40894015dabdec9038be1
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "65268768"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286031"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Pour en savoir plus sur les étiquettes de confidentialité et la façon dont elles peuvent vous aider à protéger les données de votre organisation, voir [Plus d'informations sur les étiquettes de confidentialité](sensitivity-labels.md).
 
@@ -106,6 +106,7 @@ Dans tous les scénarios, vous devez [Créer et configurer des étiquettes de co
 |Appliquer une étiquette de rétention pour conserver ou supprimer des fichiers ou des messages électroniques qui ont une étiquette de niveau de sensibilité spécifique|[Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu](apply-retention-labels-automatically.md) |
 |Découvrir, étiqueter et protéger des fichiers stockés dans des banques de données situées dans les locaux |[Déploiement du scanner Azure Information Protection pour classifier et protéger automatiquement des fichiers](/azure/information-protection/deploy-aip-scanner)|
 |Découvrir, étiqueter et protéger des fichiers stockés sur le cloud|[Découvrir, classifier, étiqueter et protéger les données réglementées et sensibles stockées dans le cloud](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|Étiqueter les colonnes de la base de données SQL en utilisant les mêmes étiquettes de sensibilité que celles utilisées pour les fichiers et les courriels afin que l'organisation dispose d'une solution d'étiquetage unifiée qui peut continuer à protéger ces données structurées lorsqu'elles sont exportées. |[Découverte et classification des données pour les bases de données Azure SQL, les Instances gérées Azure SQL et les analyses Azure Synapse](/azure/azure-sql/database/data-discovery-and-classification-overview) <br /><br /> [Découverte et classification des données SQL pour SQL Serveur on-premises](/sql/relational-databases/security/sql-data-discovery-and-classification)|
 |Appliquer et afficher les étiquettes dans Power BI, et protéger les données lorsqu’elles sont enregistrées en dehors du service.|[Étiquettes de confidentialité dans Power BI](/power-bi/admin/service-security-sensitivity-label-overview)|
 |Surveiller et comprendre la manière dont les étiquettes de confidentialité sont utilisées dans mon organisation|[En savoir plus sur la classification des données](data-classification-overview.md)|
 |Étendre les étiquettes de confidentialité à des applications et services tiers|[Kit de développement logiciel (SDK) de Microsoft Information Protection](/information-protection/develop/overview#microsoft-information-protection-sdk)|

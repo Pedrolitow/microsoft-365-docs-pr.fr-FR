@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Implémentez les fonctionnalités de la protection des données Microsoft Purview pour vous aider à protéger les informations sensibles où qu’elles se trouvent ou voyagent.
-ms.openlocfilehash: 97f5172479d889ec1914cfc46102a58a83165269
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: b055e71ee6c22cc9804b82a36f339a73675ce914
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285475"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294644"
 ---
 # <a name="protect-your-sensitive-data-with-microsoft-purview"></a>Protéger vos données sensibles avec Microsoft Purview
 
@@ -40,9 +40,9 @@ Ces fonctionnalités de protection des informations vous donnent les outils néc
 
 ![Image montrant comment la protection des données Microsoft Purview vous aide à découvrir, classifier et protéger des données sensibles.](../media/powered-by-intelligent-platform.png)
 
-Pour obtenir des instructions prescriptives sur le déploiement d’une solution de protection des données Microsoft Purview pour votre organisation, consultez [Déployer une solution de protection des informations avec Microsoft Purview](information-protection-solution.md).
+Les sections suivantes vous permettront d'en savoir plus sur les fonctionnalités disponibles et sur la manière de les utiliser. Toutefois, si vous recherchez un déploiement guidé, voir [Déployer une solution de protection des informations avec Microsoft Purview](information-protection-solution.md).
 
-Pour plus d’informations sur la gouvernance de vos données, consultez [Régir vos données avec Microsoft Purview](manage-Information-governance.md).
+Pour plus d'informations sur la gestion de vos données dans le cadre de la conformité ou des exigences réglementaires, voir [La gestion de vos données avec Microsoft Purview](manage-data-governance.md).
 
 ## <a name="know-your-data"></a>Connaître vos données
 
@@ -60,7 +60,7 @@ Pour appliquer des actions de protection flexibles qui incluent le chiffrement, 
 
 |Fonctionnalité|Utilité|Prise en main|
 |:------|:------------|---------------------|
-|[Étiquettes de confidentialité](sensitivity-labels.md)| Une solution unique pour les applications, les services et les appareils qui permet d’étiqueter, puis de protéger vos données lors de leur déplacement à l’intérieur et à l’extérieur de votre organisation. <br /><br /> Exemples de scénarios : <br />- [Gérer les étiquettes de confidentialité pour les applications Office](sensitivity-labels-office-apps.md) <br />- [Chiffrer des documents et des e-mails](encryption-sensitivity-labels.md) <br />-  [Appliquer et afficher des étiquettes dans Power BI](/power-bi/admin/service-security-apply-data-sensitivity-labels) <br /><br /> Si vous souhaitez obtenir la liste complète des scénarios d’étiquettes de niveau de niveau de vie, veuillez consulter la documentation Prise en main.|[Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md) |
+|[Étiquettes de confidentialité](sensitivity-labels.md)| Une solution d'étiquetage unique pour les applications, les services et les appareils afin de protéger vos données lorsqu'elles circulent à l'intérieur et à l'extérieur de votre entreprise. <br /><br /> Exemples de scénarios : <br />- [Gérer les étiquettes de confidentialité pour les applications Office](sensitivity-labels-office-apps.md) <br />- [Chiffrer des documents et des e-mails](encryption-sensitivity-labels.md) <br />-  [Appliquer et afficher des étiquettes dans Power BI](/power-bi/admin/service-security-apply-data-sensitivity-labels) <br /><br /> Pour obtenir une liste complète des scénarios pris en charge pour les étiquettes de sensibilité, consultez la documentation Commencer.|[Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md) |
 |[Client d’étiquetage unifié Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2)| Pour les ordinateurs Windows, étend l’étiquetage à l’Explorateur de fichiers et à PowerShell, avec des fonctionnalités supplémentaires pour Office applications si nécessaire.| [Guide de l’utilisateur pour l’étiquetage unifié d’Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[Chiffrement à double clé](double-key-encryption.md)| Dans tous les cas, seule votre organisation déchiffrer le contenu protégé. Pour respecter les obligations réglementaires, vous devez conserver les clés de chiffrement dans la limite géographique définie. | [Déployer le chiffrement à double clé](double-key-encryption.md#deploy-dke)|
 |[Chiffrement de messages Office 365 (OME)](ome.md)| Chiffre les e-mails et les documents joints envoyés à tous les utilisateurs sur tous les appareils, pour que seuls les destinataires autorisés puissent lire les informations envoyées par e-mail. <br /><br />  Exemple de scénario : [révoquer les e-mails chiffrés avec le Chiffrement avancé des messages](revoke-ome-encrypted-mail.md) | [Configurer les nouvelles fonctionnalités de chiffrement de messages](set-up-new-message-encryption-capabilities.md)|

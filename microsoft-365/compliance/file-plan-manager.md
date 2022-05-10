@@ -1,5 +1,5 @@
 ---
-title: Utiliser le plan de gestion de fichiers pour gérer les étiquettes de rétention dans le cycle de vie du contenu
+title: Utiliser le plan de gestion de fichiers pour gérer les étiquettes de rétention
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,18 +17,20 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes de rétention.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 40c395d609a9a02637b937cafae988578dc6e14f
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 5ed2ccfa1c26efc8e55f048e24de005701417576
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64836169"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286075"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Utiliser le plan de gestion de fichiers pour créer et gérer des étiquettes de rétention
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Bien que vous puissiez créer et gérer les étiquettes de rétention à partir de **Gouvernance des informations** dans le centre de conformité Microsoft 365, le plan de gestion de fichiers de **Gestion des enregistrements** dispose de fonctionnalités de gestion supplémentaires :
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Bien que vous puissiez créer et gérer des étiquettes de conservation à partir de la **gestion du cycle de vie des** données dans le portail de conformité Microsoft Purview, le plan de classement à partir de la **gestion des enregistrements** offre des capacités de gestion supplémentaires :
 
 - Vous pouvez créer des étiquettes de rétention en bloc en important les informations pertinentes à partir d’une feuille de calcul.
 
@@ -50,7 +52,7 @@ Pour accéder au plan de gestion de fichiers, vous devez posséder l’un des r�
 
 - Gestionnaire de conservation en lecture seule
 
-Dans le Centre de conformité Microsoft 365, accédez à **Solutions** > **Gestion des enregistrements** > **Plan de gestion de fichiers** :
+Dans le portail de conformité Microsoft Purview, **allez dans Solutions** > **pour la gestion des enregistrements** > **Plan de classement**:
 
 ![Page de plan de gestion de fichiers](../media/compliance-file-plan.png). 
 
@@ -58,9 +60,9 @@ Si **Gouvernance des informations** ne s’affiche pas dans le volet de navigati
 
 ## <a name="navigating-your-file-plan"></a>Navigation dans votre plan de gestion de fichiers
 
-Si vous avez déjà créé des étiquettes de rétention à partir de **Gouvernance des informations** dans le centre de conformité Microsoft 365, celles-ci s’affichent automatiquement dans votre plan de gestion de fichiers. 
+Si vous avez déjà créé des étiquettes de conservation à partir de la **gestion du cycle de vie des données** dans le portail de conformité Microsoft Purview, ces étiquettes s'affichent automatiquement dans votre plan de classement. 
 
-De même, si vous créez des étiquettes de rétention dans le plan de gestion de fichiers, celles-ci sont également disponibles dans **Gouvernance des informations** si elles ne sont pas configurées pour marquer le contenu comme un enregistrement.
+De même, si vous créez maintenant des étiquettes de conservation dans le plan de classement, elles sont également disponibles à partir de la **gestion du cycle de vie des données** si les étiquettes ne sont pas configurées pour marquer le contenu comme un enregistrement.
 
 Sur la page **Plan de gestion de fichiers**, vous pouvez voir toutes vos étiquettes avec leur état et leurs paramètres, les descripteurs de plan de gestion de fichiers facultatifs, une option d’exportation pour analyser ou activer les révisions de vos étiquettes en mode hors connexion, ainsi qu’une option d’importation pour créer des étiquettes de rétention. 
 
@@ -81,7 +83,7 @@ Toutes les colonnes à l’exception du **Nom** de l’étiquette peuvent être 
     - Oui
     - Oui (réglementaire)
 
-- **Est déverrouillé par défaut**, en cours de déploiement, identifie si l’élément marqué comme enregistrement est déverrouillé lors de l’application de l’étiquette. Valeurs valides :
+- **Est déverrouillé par défaut** -actuellement en cours de déploiement-identifie si l'élément marqué comme un enregistrement est déverrouillé lorsque l'étiquette est appliquée. Valeurs valides :
     - Non
     - Oui
 
@@ -199,7 +201,7 @@ Utilisez les informations suivantes pour vous aider à remplir le modèle télé
 |Propriété|Type|Requis|Valeurs admises|
 |:-----|:-----|:-----|:-----|
 |LabelName|Chaîne|Oui|Cette propriété spécifie le nom de l’étiquette de rétention et doit être unique dans votre client. Caractères pris en charge pour l’importation : a-z, A-Z, 0-9, tiret (-) et espace.|
-|Commentaire|Chaîne|Non|Utilisez cette propriété pour ajouter une description de l’étiquette de rétention pour les administrateurs. Cette description s’affiche uniquement pour les administrateurs qui gèrent l’étiquette de rétention dans le centre de conformité.|
+|Commentaire|Chaîne|Non|Utilisez cette propriété pour ajouter une description de l’étiquette de rétention pour les administrateurs. Cette description n'apparaît que pour les administrateurs qui gèrent l'étiquette de conservation dans le portail de conformité Microsoft Purview.|
 |Notes|Chaîne|Non|Utilisez cette propriété pour ajouter une description de l’étiquette de rétention pour les utilisateurs. Cette description s’affiche lorsque les utilisateurs pointent sur l’étiquette dans les applications telles que Outlook, SharePoint et OneDrive. Si vous laissez cette propriété vide, une description est affichée par défaut, qui décrit les paramètres de rétention de l’étiquette. |
 |IsRecordLabel|Chaîne|Non, sauf si **Réglementaire** est **TRUE**|Cette propriété indique si l’étiquette marque le contenu comme un enregistrement. Les valeurs valides sont les suivantes :</br>**VRAI** : l’étiquette marque l’élément comme un enregistrement qui ne peut donc pas être supprimé. </br>**FALSE** : l’étiquette ne marque pas le contenu comme un enregistrement. Il s’agit de la valeur par défaut.</br> </br> Dépendances de groupe : lorsque cette propriété est spécifiée, RetentionAction, RetentionDuration et RetentionType doivent également être spécifiés.|
 |RetentionAction|Chaîne|Non, sauf si **RetentionDuration**, **RetentionType** ou **ReviewerEmail** sont spécifiés|Cette propriété spécifie l’action à effectuer après l’expiration de la valeur spécifiée par la propriété RetentionDuration (si spécifiée). Les valeurs valides sont les suivantes : </br>**Delete** : les éléments antérieurs à la valeur spécifiée par la propriété RetentionDuration sont supprimés.</br>**Keep** : conserver les éléments pour la durée spécifiée par la propriété RetentionDuration et ne rien faire à l’expiration de la période. </br>**KeepAndDelete** : conserver les éléments pour la durée spécifiée par la propriété RetentionDuration et les supprimer à l’expiration de la période. </br> </br> Dépendances de groupe : lorsque cette propriété est spécifiée, RetentionDuration et RetentionType doivent également être spécifiés. |
@@ -219,7 +221,7 @@ Utilisez les informations suivantes pour vous aider à remplir le modèle télé
 
 Les paramètres d’étiquette ne sont actuellement pas pris en charge pour l’importation :
 
-- Révision avant destruction en plusieurs étapes : bien que vous puissiez configurer les paramètres d’une seule étape de révision avant destruction lorsque vous importez des étiquettes de rétention avec un modèle, vous ne pouvez pas spécifier d’étapes de révision supplémentaires. Au lieu de cela, configurez-les dans le centre de conformité une fois l’importation réussie.
+- Révision de la disposition en plusieurs étapes : Bien que vous puissiez configurer les paramètres d'une seule étape de révision de la disposition lorsque vous importez des étiquettes de conservation avec un modèle, vous ne pouvez pas spécifier d'autres étapes de révision. Vous devez plutôt les configurer dans le centre de conformité une fois l'importation réussie.
 
 - Déverrouillez cet enregistrement par défaut (actuellement en préversion) : ce paramètre n’est pas disponible dans le modèle à importer et vous ne pouvez pas sélectionner ce paramètre dans le centre de conformité une fois l’importation réussie.
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b428a1c8131286f04456a217b284a9bc0fe17413
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 4c4b4e1310d56969b52de11ba51dd0f5f5ea62f9
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285614"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302369"
 ---
 # <a name="microsoft-defender-experts-for-hunting-preview"></a>Microsoft Defender Experts for Hunting (préversion)
 
@@ -41,13 +41,13 @@ Microsoft Defender Experts for Hunting (Defender Experts for Hunting) est un ser
 
 [Regardez cette courte vidéo](https://youtu.be/4t1JgE0X0jc) pour en savoir plus sur la façon dont microsoft Defender Experts for Hunting peut vous aider à suivre les dernières menaces avancées dans votre environnement.
 
-Defender Experts for Hunting fournit des notifications d’attaque ciblées directement via le portail Microsoft 365 Defender. Ces notifications vous aideront à protéger les points de terminaison, les e-mails, les applications cloud et les identités de votre organisation. Vous recevrez également l’accès à Experts à la demande, ce qui vous permet de cliquer sur un bouton dans le portail Microsoft 365 Defender pour obtenir des conseils d’experts sur les menaces auxquelles votre organisation est confrontée. Vous pouvez consulter des experts et demander de l’aide sur les menaces auxquelles votre organisation est confrontée. Dans cette préversion, vous pouvez essayer le service gratuitement et profiter des fonctionnalités suivantes :
+Defender Experts for Hunting fournit des notifications d’attaque ciblées directement via le portail Microsoft 365 Defender. Ces notifications vous aideront à protéger les points de terminaison, les e-mails, les applications cloud et les identités de votre organisation. Vous recevrez également l’accès à Experts à la demande qui vous permet de cliquer sur un bouton dans le portail Microsoft 365 Defender pour obtenir des conseils d’experts sur les menaces auxquelles votre organisation est confrontée. Vous pouvez consulter des experts et demander de l’aide sur les menaces auxquelles votre organisation est confrontée. Dans cette préversion, vous pouvez essayer le service gratuitement et profiter des fonctionnalités suivantes :
 
-- **Repérage et analyse des menaces** – Les experts Defender pour la chasse cherchent plus en détail à exposer les menaces avancées et à identifier l’étendue et l’impact des activités malveillantes associées à des adversaires humains ou à des attaques manuelles au clavier. 
-- **Notification d’attaque ciblée** : les notifications apparaissent en tant qu’incidents dans Microsoft 365 Defender, ce qui contribue à améliorer la réponse aux incidents de vos opérations de sécurité avec des informations spécifiques sur l’étendue, la méthode d’entrée et les instructions de correction. 
-- **Experts à la demande** – Consultez un expert en menaces au sujet d’un incident spécifique, d’un acteur d’État-nation ou d’un vecteur d’attaque. 
-- **IA entraînée par les chasseurs** : nos experts Defender pour la chasse partagent leur apprentissage dans les outils automatisés qu’ils utilisent pour améliorer la découverte des menaces et la définition des priorités. 
-- **Rapports** : rapport interactif résumant ce que nous avons chassé, ce que nous avons trouvé et ce que nous avons recommandé
+- **Repérage et analyse des menaces** – Les experts Defender pour la chasse cherchent plus en détail à exposer les menaces avancées et à identifier l’étendue et l’impact des activités malveillantes associées à des adversaires humains ou à des attaques manuelles au clavier.
+- **Notification d’attaque ciblée** : les notifications apparaissent en tant qu’incidents dans Microsoft 365 Defender, ce qui contribue à améliorer la réponse aux incidents de vos opérations de sécurité avec des informations spécifiques sur l’étendue, la méthode d’entrée et les instructions de correction.
+- **Experts à la demande** – Consultez un expert en menaces au sujet d’un incident spécifique, d’un acteur d’État-nation ou d’un vecteur d’attaque.
+- **IA entraînée par les chasseurs** : nos experts Defender pour la chasse partagent leur apprentissage dans les outils automatisés qu’ils utilisent pour améliorer la découverte des menaces et la définition des priorités.
+- **Rapports** : rapport interactif résumant ce que nous avons chassé, ce que nous avons trouvé et ce que nous avons recommandé.
 
 ## <a name="apply-for-microsoft-defender-experts-for-hunting-service-preview"></a>Appliquer pour la préversion du service Microsoft Defender Experts for Hunting
 
@@ -57,10 +57,7 @@ Defender Experts for Hunting fournit des notifications d’attaque ciblées dire
 Si vous ne l’avez pas encore fait, vous pouvez demander des experts Defender pour la chasse :
 
 1. Cliquez sur [**Appliquer**](https://aka.ms/expandedMTEprev). Seuls les administrateurs généraux peuvent inscrire et terminer le processus d’application. Si vous n’êtes pas administrateur général, contactez votre administrateur général pour remplir le formulaire d’application.
-2. Entrez **l’ID de messagerie** et **l’ID de locataire** de votre entreprise.
-    - Pour trouver votre ID de locataire, cliquez sur **l’emplacement où trouver mon ID de locataire** pour accéder au portail Microsoft 365 Defender.
-    - Dans le volet de navigation, accédez à **Paramètres > Defender 365** pour afficher l’ID de locataire.
-    - Copiez l’ID de locataire et collez-le dans le formulaire.
+2. Entrez **l’ID de messagerie de votre entreprise**.
 3. Sélectionnez **Envoyer**. Vous recevrez un message de confirmation indiquant que votre application a été reçue.  
 4. Après approbation, vous recevrez un e-mail pour vous inscrire.
 
@@ -71,9 +68,9 @@ Vous devez suivre ces étapes pour rejoindre la préversion :
 1. Dans l’e-mail d’acceptation de l’application que vous avez reçu, cliquez sur **Inscrire**. Cela ouvre la boîte de dialogue de connexion à votre compte Microsoft 365.
 2. Demandez à votre administrateur général d’inscrire votre entreprise (le lien sera fourni dans l’e-mail que vous recevrez). Connexion. La page **Paramètres** s’ouvre.
 3. Accédez à **Paramètres > Microsoft Defender Experts**.
-4. Lisez les **conditions générales de la préversion de Microsoft Defender Experts for Hunting**. Si vous avez des questions ou des préoccupations, contactez l’équipe d’experts Microsoft Defender à defenderexpertsphelp@microsoft.com.
+4. Lisez les **conditions générales de la préversion de Microsoft Defender Experts for Hunting**. Si vous avez des questions ou des préoccupations, contactez l’équipe d’experts Microsoft Defender à defenderexpertshelp@microsoft.com.
 5. Cliquez sur **Accepter** pour accepter les conditions générales.
-6. Obtenez votre préversion gratuite dans [Centre d'administration Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/business/office-365-administration). Vous ne pouvez passer la commande qu’après avoir accepté les conditions générales. Sélectionnez **Obtenir une licence** pour lancer l’approvisionnement dans le centre d’administration. Vous accédez alors à la page de départ pour vérifier les détails de la commande. Le service peut devenir disponible commercialement moins de 6 mois après le début de votre préversion gratuite.  Microsoft se réserve le droit de mettre fin à votre préversion à ce moment-là.
+6. Obtenez votre préversion gratuite dans [Centre d'administration Microsoft 365](https://www.microsoft.com/microsoft-365/business/office-365-administration). Vous ne pouvez passer la commande qu’après avoir accepté les conditions générales. Sélectionnez **Obtenir une licence** pour lancer l’approvisionnement dans le centre d’administration. Vous accédez alors à la page de départ pour vérifier les détails de la commande. Le service peut devenir disponible commercialement moins de six mois après le début de votre préversion gratuite.  Microsoft se réserve le droit de mettre fin à votre préversion à ce moment-là.
 7. Dans la page **d’extraction** , sélectionnez **Commander**.  
 
 ## <a name="start-using-your-microsoft-defender-experts-for-hunting-service-preview"></a>Commencer à utiliser la préversion de votre service Microsoft Defender Experts for Hunting
