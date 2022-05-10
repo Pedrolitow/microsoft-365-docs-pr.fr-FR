@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Implémentez les fonctionnalités de gestion du cycle de vie des données Microsoft Purview et de gestion des enregistrements Microsoft Purview pour gérer vos données en fonction des exigences de conformité ou de réglementation.
-ms.openlocfilehash: c807d2359c9a8c9cb17955b1ad4bf121cab57918
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 2eff1aea82575a8364eb05f91652a089efbbe833
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286965"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294731"
 ---
 # <a name="govern-your-data-with-microsoft-purview"></a>Régir vos données avec Microsoft Purview
 
@@ -39,7 +39,9 @@ Utilisez le graphique suivant pour vous aider à identifier les principaux compo
 
 ![Principaux composants à configurer et à utiliser pour régir vos données avec Microsoft Purview.](../media/govern-your-data.png)
 
-Vous souhaitez protéger vos données ? Consultez [Protéger vos données avec Microsoft Purview](information-protection.md).
+Les sections suivantes détaillent les principales fonctionnalités de chaque solution, avec des liens pour en savoir plus. Toutefois, si vous recherchez un déploiement guidé, consultez [Déployer une solution de gouvernance des données avec Microsoft Purview](data-governance-solution.md).
+
+Vous recherchez des fonctionnalités complémentaires pour protéger vos données ? Consultez [Protéger vos données avec Microsoft Purview](information-protection.md).
 
 ## <a name="microsoft-purview-data-lifecycle-management"></a>Gestion du cycle de vie des données Microsoft Purview
 
