@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilisez eDiscovery (Premium) et Microsoft Graph Explorer pour rechercher et vider les messages de conversation dans Microsoft Teams et répondre aux incidents de débordement de données dans Teams.
-ms.openlocfilehash: 1d161da18e6bc7fa1c19b0a8c720171dd9d23adc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2a1c0bcda3c406f33edcacd77aba359437655ced
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090876"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294572"
 ---
-# <a name="search-and-purge-chat-messages-in-teams"></a>Rechercher et vider les messages de conversation dans Teams
+# <a name="search-and-purge-chat-messages-in-teams-preview"></a>Rechercher et vider les messages de conversation dans Teams (préversion)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -151,6 +151,8 @@ Pour plus d’informations sur l’utilisation de Graph Explorer, consultez [Uti
    Si la requête POST réussit, un code de réponse HTTP s’affiche dans une bannière verte indiquant que la demande a été acceptée.
 
    ![Réponse pour la demande de vidage.](..\media\GraphResponseForPurge.png)
+
+  Pour plus d’informations sur purgeData, consultez [sourceCollection: purgeData](/graph/api/ediscovery-sourcecollection-purgedata).
 
 ## <a name="step-6-verify-chat-messages-are-purged"></a>Étape 6 : Vérifier que les messages de conversation sont purgés
 

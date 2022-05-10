@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les limites de cas, les limites d’indexation et les limites de recherche en vigueur pour la solution eDiscovery (Premium) dans Microsoft 365.
-ms.openlocfilehash: 3d0204eb452b669937d30fe5519e5af073b64d6d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7aa9dcd65cb047914a8b1b68de3340bb9d7b728f
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099210"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294609"
 ---
 # <a name="limits-in-ediscovery-premium"></a>Limites dans eDiscovery (Premium)
 
@@ -38,7 +38,7 @@ Le tableau suivant répertorie les limites des cas et examine les ensembles dans
 |Nombre total de documents qui peuvent être ajoutés à un cas (pour tous les ensembles de révision dans un cas).|3 millions|
 |Taille totale du fichier par jeu de charge. Cela inclut le chargement de non-Office 365 dans un jeu de révision.|300 Go|
 |Quantité totale de données chargées dans tous les ensembles de révision de l’organisation par jour.<br/>|2 To|
-|Nombre maximal de jeux de charge par cas.|200|
+|Nombre maximal de jeux de charge par cas.|200 |
 |Nombre maximal d’ensembles de révision par cas.|20|
 |Nombre maximal de groupes de balises par cas.|1 000|
 |Nombre maximal de balises uniques par cas.|1 <sup>0001</sup>|
@@ -64,7 +64,8 @@ Le tableau suivant répertorie les limites d’indexation dans eDiscovery (Premi
 |Nombre maximal de caractères extraits d’un seul fichier.|10 <sup>millions4</sup>|
 |Taille maximale d’un fichier unique.|150 <sup>Mo4</sup>|
 |Profondeur maximale des éléments incorporés dans un document.|<sup>254</sup>|
-|Taille maximale des fichiers traités par reconnaissance optique de caractères (OCR).|24 <sup>Mo4</sup> <br/>  
+|Taille maximale des fichiers traités par reconnaissance optique de caractères (OCR).|24 <sup>Mo4</sup> <br/> |
+|Débit d’indexation avancé maximal | 2 Go par heure |
 
 ## <a name="search-limits"></a>Limites de la recherche
 
@@ -82,10 +83,10 @@ Les limites décrites dans cette section sont liées à l’utilisation de l’o
 |Nombre maximal d’éléments par boîte aux lettres utilisateur affichés sur la page d’aperçu pour les recherches. Les éléments les plus récents sont affichés.|100|
 |Nombre maximal d’éléments de toutes les boîtes aux lettres affichées sur la page d’aperçu pour les recherches.|1 000|
 |Nombre maximal de boîtes aux lettres pouvant être affichées en préversion pour les résultats de la recherche.  Si plus de 1 000 boîtes aux lettres contiennent des éléments correspondant à la requête de recherche, seules les 1 000 boîtes aux lettres les plus élevées avec le plus de résultats sont disponibles en préversion.|1 000|
-|Nombre maximal d’éléments des sites SharePoint et OneDrive Entreprise affichés sur la page d’aperçu pour les recherches. Les éléments les plus récents sont affichés.|200|
-|Nombre maximal de sites SharePoint et OneDrive Entreprise qui peuvent être mis en aperçu pour les résultats de la recherche. S’il existe plus de 200 sites contenant des éléments qui correspondent à la requête de recherche, seuls les 200 premiers sites avec le plus de résultats sont disponibles en préversion.|200|
+|Nombre maximal d’éléments des sites SharePoint et OneDrive Entreprise affichés sur la page d’aperçu pour les recherches. Les éléments les plus récents sont affichés.|200 |
+|Nombre maximal de sites SharePoint et OneDrive Entreprise qui peuvent être mis en aperçu pour les résultats de la recherche. S’il existe plus de 200 sites contenant des éléments qui correspondent à la requête de recherche, seuls les 200 premiers sites avec le plus de résultats sont disponibles en préversion.|200 |
 |Nombre maximal d’éléments par boîte aux lettres de dossier public affichée sur la page d’aperçu pour les recherches.|100|
-|Nombre maximal d’éléments trouvés dans tous les éléments de boîte aux lettres de dossier public affichés sur la page d’aperçu pour les recherches.|200|
+|Nombre maximal d’éléments trouvés dans tous les éléments de boîte aux lettres de dossier public affichés sur la page d’aperçu pour les recherches.|200 |
 |Nombre maximal de boîtes aux lettres de dossiers publics qui peuvent être affichées en préversion pour les résultats de la recherche. Si plus de 500 boîtes aux lettres de dossiers publics contiennent des éléments correspondant à la requête de recherche, seules les 500 boîtes aux lettres les plus élevées avec le plus de résultats sont disponibles en préversion.|500|
 |Taille maximale d’un élément qui peut être affiché sur la page d’exemple d’une collection brouillon.|10 000 000 octets (environ 9,5 Mo)|
 
