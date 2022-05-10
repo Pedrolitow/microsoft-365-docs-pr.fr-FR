@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à identifier des groupes spécifiques d’utilisateurs avec des balises utilisateur dans Microsoft Defender pour Office 365 Plan 2. Le filtrage des balises est disponible dans les alertes, les rapports et les enquêtes dans Microsoft Defender pour Office 365 pour identifier rapidement les utilisateurs marqués.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1f045e5dcb590c36fd0f3768c472057b07b12b21
-ms.sourcegitcommit: dba1a846ae78ea14240d28efa8d4934fe303f308
+ms.openlocfilehash: e7b9584b41ded7edd28fb1501ee4e5c3a1febd74
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "64891817"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286403"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Balises utilisateur dans Microsoft Defender pour Office 365
 
@@ -44,6 +44,7 @@ Après avoir appliqué des balises système ou personnalisées aux utilisateurs,
 - [Rapport utilisateur compromis](view-email-security-reports.md#compromised-users-report)
 - [Page de l’entité d’e-mail](mdo-email-entity-page.md#other-innovations)
 - [Rapport sur l’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report)
+- [Rapport des principaux expéditeurs et destinataires](view-email-security-reports.md#top-senders-and-recipients-report)
 - [Simulation d’attaque](attack-simulation-training.md#target-users)
 - [Vues de campagne](campaigns.md)
 - [Soumissions d’administrateurs et d’utilisateurs](admin-submission.md)
@@ -68,7 +69,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
   > [!NOTE]
   >
-  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le portail Microsoft 365 Defender _et_ les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  > - L’ajout d’utilisateurs au rôle de Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le portail Microsoft 365 Defender _et_ les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   >
   > - La gestion des balises utilisateur est contrôlée par les rôles **Lecteur** de balises et **Gestionnaire de balises** .
 
@@ -78,7 +79,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-user-tags"></a>Utiliser le portail Microsoft 365 Defender pour créer des balises utilisateur
 
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez aux **balises utilisateur** **Paramètres** \> **e-mail & collaboration**\>. Pour accéder directement à la page **Balises utilisateur** , utilisez <https://security.microsoft.com/securitysettings/userTags>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Paramètres** \> **balises utilisateur e-mail & collaboration**\>. Pour accéder directement à la page **Balises utilisateur** , utilisez <https://security.microsoft.com/securitysettings/userTags>.
 
 2. Dans la page **Balises utilisateur** , cliquez sur ![l’icône Créer une balise.](../../media/m365-cc-sc-create-icon.png) **Créer une balise**.
 
@@ -110,7 +111,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-user-tags"></a>Utiliser le portail Microsoft 365 Defender pour afficher les balises utilisateur
 
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez aux **balises utilisateur** **Paramètres** \> **e-mail & collaboration**\>. Pour accéder directement à la page **Balises utilisateur** , utilisez <https://security.microsoft.com/securitysettings/userTags>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Paramètres** \> **balises utilisateur e-mail & collaboration**\>. Pour accéder directement à la page **Balises utilisateur** , utilisez <https://security.microsoft.com/securitysettings/userTags>.
 
 2. Dans la page **Balises utilisateur** , les propriétés suivantes sont affichées dans la liste des balises utilisateur :
 
@@ -123,7 +124,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-user-tags"></a>Utiliser le portail Microsoft 365 Defender pour modifier les balises utilisateur
 
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez aux **balises utilisateur** **Paramètres** \> **e-mail & collaboration**\>. Pour accéder directement à la page **Balises utilisateur** , utilisez <https://security.microsoft.com/securitysettings/userTags>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Paramètres** \> **balises utilisateur e-mail & collaboration**\>. Pour accéder directement à la page **Balises utilisateur** , utilisez <https://security.microsoft.com/securitysettings/userTags>.
 
 2. Dans la page **Balises utilisateur** , sélectionnez la balise utilisateur dans la liste, puis cliquez sur ![l’icône Modifier la balise.](../../media/m365-cc-sc-edit-icon.png) **Modifier la balise**.
 
@@ -139,7 +140,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 > [!NOTE]
 > Vous ne pouvez pas supprimer la balise système de **compte Priority** intégrée.
 
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez aux **balises utilisateur** **Paramètres** \> **e-mail & collaboration**\>. Pour accéder directement à la page **Balises utilisateur** , utilisez <https://security.microsoft.com/securitysettings/userTags>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Paramètres** \> **balises utilisateur e-mail & collaboration**\>. Pour accéder directement à la page **Balises utilisateur** , utilisez <https://security.microsoft.com/securitysettings/userTags>.
 
 2. Dans la page **Balises utilisateur** , sélectionnez la balise utilisateur dans la liste, puis cliquez sur ![l’icône Supprimer la balise.](../../media/m365-cc-sc-delete-icon.png) **Supprimer la balise**.
 

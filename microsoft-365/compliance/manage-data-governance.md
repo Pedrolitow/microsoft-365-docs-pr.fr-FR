@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 recommendations: false
 description: Implémentez les fonctionnalités de gestion du cycle de vie des données Microsoft Purview et de gestion des enregistrements Microsoft Purview pour gérer vos données en fonction des exigences de conformité ou de réglementation.
-ms.openlocfilehash: 0b507fad6b4455755a3a0036bff15a7973b906ee
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: c807d2359c9a8c9cb17955b1ad4bf121cab57918
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217622"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286965"
 ---
 # <a name="govern-your-data-with-microsoft-purview"></a>Régir vos données avec Microsoft Purview
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez les fonctionnalités de **Gestion du cycle de vie des données Microsoft Purview** (anciennement Microsoft Information Governance) et **de gestion des enregistrements Microsoft Purview** pour régir vos données à des fins de conformité ou de réglementation.
 

@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les meilleures pratiques pour configurer la collaboration et le partage de fichiers sécurisés dans Teams pour protéger vos données en fonction de leur sensibilité.
-ms.openlocfilehash: aadc2bf092713ffde68cd8fb9824d837c2f14acf
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 54bfe4bce20687474526916fe7b11ca0e5bb1b72
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935410"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286535"
 ---
 # <a name="set-up-secure-file-sharing-and-collaboration-with-microsoft-teams"></a>Configurer le partage de fichiers sécurisé et la collaboration avec Microsoft Teams
 
@@ -133,7 +133,7 @@ Si vous avez un projet majeur avec une organisation partenaire, vous pouvez util
 
 Ces modules de formation de Microsoft Learn peuvent vous aider à découvrir les fonctionnalités de collaboration, de gouvernance et d’identité dans Teams et SharePoint.
 
-### <a name="teams"></a>Équipes
+### <a name="teams"></a>Teams
 
 |Formation :|Gérer la collaboration en équipe avec Microsoft Teams|
 |---|---|
@@ -160,7 +160,7 @@ Ces modules de formation de Microsoft Learn peuvent vous aider à découvrir les
 > [!div class="nextstepaction"]
 > [Démarrer >](/learn/modules/m365-security-info-overview/introduction/)
 
-### <a name="identity-and-access"></a>Identité et accès
+### <a name="identity-and-access"></a>Identités et accès
 
 |Formation :|Protégez l’identité et l’accès avec Azure Active Directory Domain Services|
 |---|---|
@@ -173,7 +173,7 @@ Ces modules de formation de Microsoft Learn peuvent vous aider à découvrir les
 
 Ces modules de formation peuvent aider vos utilisateurs à utiliser des Teams, des groupes et des SharePoint pour la collaboration dans Microsoft 365.
 
-|Équipes|SharePoint|
+|Teams|SharePoint|
 |---|---|
 |![Configurez et personnalisez l’icône de formation de votre équipe.](../media/set-up-customize-team-training.png)<br>**[Configurer et personnaliser votre équipe](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![icône d’entraînement de partage et de synchronisation SharePoint](../media/sharepoint-share-sync-training.png)<br>**[Partager et synchroniser](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
 |![Teams icône d’entraînement charger et rechercher des fichiers.](../media/smc-teams-upload-find-files-training.png)<br>**[Télécharger et rechercher des fichiers](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
@@ -189,7 +189,7 @@ Quels sont les besoins des architectes informatique concernant les groupes dans 
 
 |**Item**|**Description**|
 |---|---|
-|[![Image miniature pour l’infographie des groupes.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Mise à jour de juin 2019|Ces illustrations décrivent les différents types de groupes, la manière dont ceux-ci sont créés et gérés et quelques recommandations en matière de gouvernance.|
+|[![Image miniature pour l’infographie des groupes.](../downloads/msft-m365-groups-architecture-thumb.png)](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) <br/> [PDF](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) \| [Visio](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.vsdx) <br> Mise à jour de mai 2022|Ces illustrations décrivent les différents types de groupes, la manière dont ceux-ci sont créés et gérés et quelques recommandations en matière de gouvernance.|
 
 ### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams et services de productivité connexes dans Microsoft 365 pour les architectes informatique
 

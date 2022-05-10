@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les meilleures pratiques de gouvernance pour Microsoft 365 outils de collaboration, notamment Groupes Microsoft 365, Teams, SharePoint et Yammer.
-ms.openlocfilehash: 130342725e8c43b4aeaac116b94704db3046e059
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f4afed27fa6d40f7f6967583bcfd3f43c69c7963
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941388"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65284993"
 ---
 # <a name="what-is-collaboration-governance"></a>Qu'est-ce que la gouvernance de collaboration ?
 
@@ -54,11 +54,11 @@ Microsoft 365 groupes incluent une suite de ressources liées que les utilisateu
 
 ![Diagramme montrant Groupes Microsoft 365 et les services associés.](../media/microsoft-365-groups-hub-spoke.png)
 
-|Ressource|Description|
+|Resource|Description|
 |:------|:----------|
 |[Calendar](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a)|Pour planifier des événements liés au groupe|
 |[Boîte de réception](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|Pour les conversations par e-mail entre les membres du groupe. Cette boîte de réception a une adresse e-mail et peut être configurée pour accepter les messages de personnes extérieures au groupe et même en dehors de votre organisation, un peu comme une liste de distribution traditionnelle.|
-|[bloc-notes OneNote ;](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|Pour recueillir des idées, des recherches et de l’information|
+|[notebook OneNote](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|Pour recueillir des idées, des recherches et de l’information|
 |[Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|Pour affecter et gérer des tâches de projet parmi les membres de votre groupe|
 |[espace de travail Power BI](/power-bi/collaborate-share/service-new-workspaces)|Espace de collaboration de données avec des tableaux de bord et des rapports|
 |[Project et feuille de route](https://support.microsoft.com/project)|Outils de gestion de projet web|
@@ -133,7 +133,7 @@ Pour en savoir plus sur ces pratiques, consultez [Créer votre plan de gouvernan
 
 - Si votre organisation effectue la plupart de ses communications à l’aide de l’e-mail, demandez à vos utilisateurs de créer des groupes dans Outlook.
 - Si votre organisation utilise fortement SharePoint ou migre à partir d’SharePoint localement, demandez à vos utilisateurs de créer SharePoint sites d’équipe pour la collaboration.
-- Si votre organisation a déployé Teams, demandez à vos utilisateurs de créer une équipe quand ils ont besoin d’un espace de collaboration.
+- Si votre organisation a déployé Teams, demandez à vos utilisateurs de créer une équipe lorsqu’ils ont besoin d’un espace de collaboration.
 
 Cela permet d’éviter toute confusion si les utilisateurs ne sont pas familiarisés avec la façon dont les groupes sont liés à leurs services associés. Pour plus d’informations sur la façon de parler à vos utilisateurs des groupes, consultez [Expliquer Groupes Microsoft 365 à vos utilisateurs](../admin/create-groups/explain-groups-knowledge-worker.md).
 
@@ -182,7 +182,7 @@ Ces modules de formation de Microsoft Learn peuvent vous aider à découvrir les
 
 |Formation :|Protéger les informations d’entreprise avec Microsoft 365|
 |:---|:---|
-|![Teams icône d’entraînement.](../media/protect-enterprise-information-microsoft-365.svg)|Plus que jamais, la protection et la sécurisation des informations de votre organisation constituent un défi. Le chemin d’apprentissage pour protéger les informations d’entreprise avec Microsoft 365 explique comment protéger vos informations sensibles contre tout partage excessif accidentel ou utilisation incorrecte, comment découvrir et classifier des données, comment les protéger à l’aide d’étiquettes de confidentialité et comment surveiller et analyser vos informations sensibles pour les protéger contre la perte. Ce parcours d’apprentissage peut vous aider à préparer les certifications Microsoft 365 Certified: Security Administrator Associate et Microsoft 365 Certified: Enterprise Administration Expert.<br><br>1 heure - chemin d’accès Learning - 5 modules|
+|![Teams icône d’entraînement.](../media/protect-enterprise-information-microsoft-365.svg)|La protection et la sécurisation des informations de votre organisation sont plus exigeantes que jamais. Le chemin d'accès de l’apprentissage Protéger une entreprise à l’aide de Microsoft 365 explique comment protéger vos informations sensibles contre tout partage excessif accidentel ou utilisation incorrecte, comment découvrir et classifier des données, comment les protéger à l’aide d’étiquettes de confidentialité, et comment surveiller et analyser vos informations sensibles pour prévenir leurs perte.<br><br>1 heure - chemin d’accès Learning - 5 modules|
 
 > [!div class="nextstepaction"]
 > [Démarrer >](/learn/modules/m365-security-info-overview/introduction/)
@@ -205,7 +205,7 @@ Quels sont les besoins des architectes informatique concernant les groupes dans 
 
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Image miniature pour l’infographie des groupes.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Mise à jour de juin 2019|Ces illustrations décrivent les différents types de groupes, la manière dont ceux-ci sont créés et gérés et quelques recommandations en matière de gouvernance.|
+|[![Image miniature pour l’infographie des groupes.](../downloads/msft-m365-groups-architecture-thumb.png)](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) <br/> [PDF](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) \| [Visio](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.vsdx) <br> Mise à jour de mai 2022|Ces illustrations décrivent les différents types de groupes, la manière dont ceux-ci sont créés et gérés et quelques recommandations en matière de gouvernance.|
 
 ### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams et services de productivité connexes dans Microsoft 365 pour les architectes informatique
 L’architecture logique de services de productivité dans Microsoft 365, fonctionnant avec Microsoft Teams.
@@ -223,7 +223,7 @@ Cet ensemble d’illustrations utilise l’une des industries les plus réglemen
 
 | Élément | Description |
 |:-----|:-----|
-|[![Affiche du modèle : Fonctionnalités de protection et de conformité des informations Microsoft Purview.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Anglais : [Télécharger au format PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Télécharger en tant que Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japonais : [Télécharger au format PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Télécharger en tant que Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Mise à jour : novembre 2020|Inclus : <ul><li>  Protection contre la perte de données Information Protection Microsoft Purview et Microsoft Purview</li><li>Stratégies de rétention et étiquettes de rétention </li><li>Obstacles aux informations</li><li>Conformité des communications</li><li>Gestion des risques internes</li><li>Réception de données tierces</li>|
+|[![Affiche du modèle : Fonctionnalités de protection et de conformité des informations Microsoft Purview.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Anglais : [Télécharger au format PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Télécharger en tant que Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japonais : [Télécharger au format PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Télécharger en tant que Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Mise à jour : novembre 2020|Inclus : <ul><li>  Microsoft Purview Information Protection et Microsoft Purview Data Loss Prevention</li><li>Stratégies de rétention et étiquettes de rétention </li><li>Obstacles aux informations</li><li>Conformité des communications</li><li>Gestion des risques internes</li><li>Réception de données tierces</li>|
 
 ## <a name="conference-sessions"></a>Sessions de conférence
 
@@ -245,7 +245,7 @@ Découvrez comment configurer le cycle de vie d’expiration de vos groupes, les
 
 Consultez un exemple en arrière-plan de la façon dont les Groupes Microsoft 365, les SharePoint, les Teams et les Yammer fonctionnent ensemble pour fournir une plateforme de collaboration mondiale.
 
-- [Trouver votre point de collaboration avec des groupes Office 365, des SharePoint, des Teams et des Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
+- [Trouver votre point de collaboration avec Groupes Microsoft 365, SharePoint, Teams et Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
 
 ## <a name="see-also"></a>Voir aussi
 

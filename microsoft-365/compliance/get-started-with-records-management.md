@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous avez besoin d’une solution de gestion des enregistrements pour Microsoft 365 qui gère des contenus à forte valeur pour les obligations légales, professionnelles, ou réglementaires, mais vous ne savez pas où commencer ? Lisez des instructions pratiques pour démarrer.
-ms.openlocfilehash: bbba24a2627c6040873da8d01185e4e6bdfdbfc8
-ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
+ms.openlocfilehash: 86d6f21963b33fde59cb498868b8ecec315e1ad8
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "65268746"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286777"
 ---
 # <a name="get-started-with-records-management"></a>Prise en main de la gestion des enregistrements
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Etes-vous prêt à démarrer la gestion de contenus à forte valeur de votre organisation relatifs aux obligations légales, professionnelles, ou réglementaires à l’aide d’une solution de gestion des enregistrements dans Microsoft 365? Suivez ces instructions pour démarrer :
 

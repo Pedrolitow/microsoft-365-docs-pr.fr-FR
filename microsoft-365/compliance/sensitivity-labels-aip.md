@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous utilisez le client d'étiquetage unifié Azure Information Protection (AIP), comprenez les avantages d'utiliser l'étiquetage intégré pour les applications Office plutôt que le module complémentaire AIP.
-ms.openlocfilehash: 99710520b1b687fe6fc2469badb3ad18e6070371
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 161f05c1f9c27723ff4940087c715e0556484b79
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093501"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65287131"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Pourquoi choisir l'étiquetage intégré plutôt que le module complémentaire AIP pour les applications Office
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsque vous utilisez des [étiquettes de sensibilité](sensitivity-labels.md) dans les applications Microsoft 365 sur des ordinateurs Windows, vous avez le choix entre utiliser l'étiquetage intégré aux applications Office ou un complément du client d'étiquetage unifié [Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2). 
 

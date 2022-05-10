@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 792b87c8d045002ebec27dc5de38177cec0ae647
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: cac0965ba9cd4b11280e1efd263f49137672399f
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172314"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286821"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsque vous avez [publié](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) des étiquettes de sensibilité à partir du portail de conformité Microsoft Purview, elles commencent à apparaître dans les applications Office pour que les utilisateurs puissent classer et protéger les données lorsqu'elles sont créées ou modifiées.
 

@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: Utilisez cette page pour créer votre liste de membres du personnel et gérer les détails des membres du personnel, tels que le nom, le numéro de téléphone et l’adresse e-mail.
-ms.openlocfilehash: ca938acf4bfb567d366c7ffd684e8bce8c9eea74
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: b6ceee7c4464daf050f6e6626628c9cb3d94960f
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64746794"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285453"
 ---
 # <a name="add-staff-to-bookings"></a>Ajouter du personnel aux réservations
 
@@ -45,10 +45,11 @@ Bien Bookings est une fonctionnalité de Microsoft 365, tous les membres de votr
     > [!NOTE]
     > Le personnel externe à votre client ne pourra pas partager les informations de disponibilité avec Bookings.
 
-5. Pour chaque membre du personnel, sélectionnez un rôle : administrateur, visionneuse ou invité.
-    - **Administrateurs** pouvez modifier tous les paramètres, ajouter et supprimer du personnel, et créer, modifier ou supprimer des réservations.
-    - **Observateurs** peuvent voir toutes les réservations dans le calendrier, mais ils ne peuvent’ pas les modifier ou les supprimer. Ils ont un accès en lecture seule aux paramètres.
-    - **Les invités** peuvent être affectés aux réservations, mais ils ne peuvent’ pas ouvrir la boîte aux lettres de réservation.
+5. Pour chaque membre du personnel, sélectionnez un rôle : Membre de l’équipe, Planificateur, Visionneuse ou Invité.
+    - **Les membres de l’équipe** peuvent gérer les réservations sur leur propre calendrier et leur disponibilité dans la boîte aux lettres de réservation. Lors de l’ajout ou de la modification d’une réservation dans leur calendrier, ils sont affectés en tant que personnel.
+    - **Le planificateur** peut gérer les réservations sur le calendrier et les détails du client. Ils ont accès en lecture seule aux paramètres, au personnel et aux services.
+    - **La visionneuse** peut voir toutes les réservations dans le calendrier, mais elle ne peut pas les modifier ou les supprimer. Ils ont un accès en lecture seule aux paramètres.
+    - **L’invité** peut être affecté aux réservations, mais il ne peut pas ouvrir la boîte aux lettres de réservation.
 
 6. Sélectionnez **Avertir tout le personnel par e-mail lorsqu’une réservation qui lui est attribuée est créée ou modifiée** pour activer les e-mails du personnel. Voici un exemple de signature électronique :
 

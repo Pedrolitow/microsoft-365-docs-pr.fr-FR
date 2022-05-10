@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d97442fc2c3767a30c1ea98dc4a1ee7a38e56b45
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: c83213278c7f9bc3b63c141e4d964475d64599d1
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970998"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286623"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de sécurité par e-mail dans le portail Microsoft 365 Defender
 
@@ -124,7 +124,7 @@ Les informations suivantes sont affichées dans le tableau de détails sous le g
 - **Date**
 - **Stratégie DLP** (**Afficher les données par DLP Exchange règles de transport** uniquement)
 - **Règle de transport**
-- **Subject**
+- **Sujet**
 - **Adresse de l’expéditeur**
 - **Adresse du destinataire**
 - **Gravité**
@@ -155,7 +155,7 @@ Les informations suivantes sont affichées dans le tableau de détails sous le g
 - **Date**
 - **Stratégie DLP** (**Afficher les données par DLP Exchange règles de transport** uniquement)
 - **Règle de transport**
-- **Subject**
+- **Sujet**
 - **Adresse de l’expéditeur**
 - **Adresse du destinataire**
 - **Gravité**
@@ -518,7 +518,7 @@ Dans la **vue Afficher les données par hameçonnage par e-mail \>** et **la ré
 Dans le tableau d’informations sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Subject**
+- **Sujet**
 - **Expéditeur**
 - **Destinataires**
 - **Technologie de détection**
@@ -570,7 +570,7 @@ Dans la **vue Afficher les données par courrier indésirable par courrier élec
 Dans le tableau d’informations sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Subject**
+- **Sujet**
 - **Expéditeur**
 - **Destinataires**
 - **Technologie de détection**
@@ -625,7 +625,7 @@ Dans la **vue Afficher les données par programme malveillant par courrier élec
 Dans le tableau d’informations sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Subject**
+- **Sujet**
 - **Expéditeur**
 - **Destinataires**
 - **Technologie de détection**
@@ -675,7 +675,7 @@ Dans les **affichages Afficher les données par hameçonnage par e-mail\>**, **A
 Dans le tableau d’informations sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Subject**
+- **Sujet**
 - **Expéditeur**
 - **Destinataires**
 - **Technologie de détection**
@@ -748,7 +748,7 @@ Dans les **affichages Afficher les données par hameçonnage par e-mail\>**, **A
 Dans le tableau d’informations sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Subject**
+- **Sujet**
 - **Expéditeur**
 - **Destinataires**
 - **Technologie de détection**
@@ -818,7 +818,7 @@ Dans le tableau d’informations sous le graphique, les informations suivantes s
 - **Nom de fichier des pièces jointes**
 - **Charge de travail**
 - **Technologie de détection**
-- **Taille du fichier**
+- **La taille des fichiers**
 - **Dernière modification de l’utilisateur**
 
 Si vous cliquez sur **Filtrer**, les filtres suivants sont disponibles :
@@ -851,7 +851,7 @@ Dans les **données d’affichage par remplacement système** et **la répartiti
 Dans le tableau d’informations sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Subject**
+- **Sujet**
 - **Expéditeur**
 - **Destinataires**
 - **Remplacement du système**
@@ -889,7 +889,7 @@ Dans la **vue Afficher les données par remplacement système** et **la réparti
 Dans le tableau d’informations sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Subject**
+- **Sujet**
 - **Expéditeur**
 - **Destinataires**
 - **Remplacement du système**
@@ -986,7 +986,7 @@ Lorsque vous pointez sur un coin dans le graphique en secteurs, vous pouvez voir
 
 Le tableau des détails sous le graphique affiche les expéditeurs ou les destinataires et le nombre de messages en fonction de la vue que vous avez sélectionnée.
 
-Vous pouvez filtrer le graphique et la table de détails en cliquant sur **Filtrer** et en sélectionnant **Date de début** et **Date de fin**.
+Vous pouvez filtrer le graphique et la table de détails en cliquant sur **Filtrer** et en sélectionnant **Date de début** et **Date de fin**. Les utilisateurs peuvent également filtrer par balises utilisateur. 
 
 Lorsque vous avez terminé de configurer les filtres, cliquez sur **Appliquer**, **Annuler** ou **Effacer les filtres**.
 
@@ -1175,7 +1175,7 @@ Lorsque vous avez terminé de configurer les filtres, cliquez sur **Exporter**. 
 
 Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données contiennent plus de 150 000 lignes, plusieurs fichiers .csv sont créés.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Protection anti-courrier indésirable et anti-programme malveillant dans EOP](anti-spam-and-anti-malware-protection.md)
 

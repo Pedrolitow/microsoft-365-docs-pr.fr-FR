@@ -17,16 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: f2b3b5a61eabbffc50da34b14baa20e025b8da0f
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 68e69f198dfd79c1da210cd8d87144471d83abb7
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568519"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285965"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > Si vous voyez dans Teams un message concernant la suppression de vos conversations ou messages par une stratégie de rétention, consultez [Messages Teams à propos des stratégies de rétention](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
@@ -210,6 +212,6 @@ Si l’utilisateur a stocké des fichiers dans Teams, consultez la [section équ
 
 ## <a name="configuration-guidance"></a>Instructions de configuration
 
-Si vous débutez avec la configuration de la rétention dans Microsoft 365, consultez [Démarrage avec la gouvernance des informations](get-started-with-information-governance.md).
+Si vous débutez avec la configuration de la rétention dans Microsoft 365, consultez [Démarrage avec la gestion du cycle de vie des données](get-started-with-data-lifecycle-management.md).
 
 Si vous êtes prêt à configurer une stratégie de rétention pour Teams, voir [Créer et configurer des stratégies de rétention](create-retention-policies.md).

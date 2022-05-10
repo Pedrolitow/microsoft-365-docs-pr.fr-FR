@@ -22,18 +22,18 @@ description: Utilisez les étiquettes de confidentialité de Protection des donn
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 7bac33f19b51e2a5c6d6f234ba5e692cedd62c2b
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 088e84c492fe142471799139743f29be32513206
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128453"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65287197"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > Si vous recherchez des informations sur les étiquettes de niveau de confidentialité dans vos applications Office, consultez [Appliquer des étiquettes de confidentialité à vos fichiers et vos e-mails dans Office](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).

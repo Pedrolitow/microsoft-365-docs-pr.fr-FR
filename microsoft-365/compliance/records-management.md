@@ -21,21 +21,21 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Découvrez comment la gestion des enregistrements Microsoft Purview prend en charge les éléments à valeur élevée pour les exigences de conservation des enregistrements métier, légales ou réglementaires.
-ms.openlocfilehash: dd554b4369a1f721d306bc301519ce3ef59e4569
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: b14c622d1468cdb91ad1ac8e58c184e650ebbe6c
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998527"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65284861"
 ---
 # <a name="learn-about-records-management"></a>Découvrez la gestion des enregistrements
+
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!TIP]
 > *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview de 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins de conformité. Microsoft 365 E3 et Office 365 E3 clients peuvent être démarrés maintenant sur le [Hub d’essais du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions d’évaluation](compliance-easy-trials.md).
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Les organisations de tous types ont besoin d'une solution de gestion des documents pour gérer les documents réglementaires, juridiques et critiques pour l'entreprise dans l'ensemble de leurs données d'entreprise. La gestion des enregistrements pour Microsoft Purview aide une organisation à gérer ses obligations légales, lui donne la possibilité de démontrer sa conformité aux réglementations et augmente l'efficacité en éliminant régulièrement les éléments qui ne doivent plus être conservés, qui n'ont plus de valeur ou qui ne sont plus nécessaires à l'activité de l'entreprise.
 

@@ -12,12 +12,12 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Découvrez comment effectuer des tâches clés de gestion Microsoft OneLTI, notamment l’affichage, la suppression, la modification et la résolution des problèmes.
-ms.openlocfilehash: 8b788028a453969f13c31bbe72962c1b7df955a6
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 04d6921d9ed9c4963e2bff8287e79f83bd6807fe
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823458"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65287115"
 ---
 # <a name="manage-microsoft-onelti-for-any-lms"></a>Gérer Microsoft OneLTI pour n’importe quel LMS
 
@@ -74,6 +74,7 @@ Si c’est le cas, voici quelques problèmes courants et comment les résoudre.
 - **Les cookies sont introuvables**
   - Les cookies tiers doivent être autorisés pour **l’URL LMS** dans les paramètres du navigateur.
   - Ces cookies sont nécessaires pour terminer l’établissement de la liaison LTI 1.3 conformément aux spécifications IMS.
+  - Pour savoir comment mettre à jour les paramètres de cookie de votre navigateur, consultez [Autoriser les cookies pour les URL LMS dans votre navigateur](browser-cookies.md).
 
 - **Détails de l’inscription introuvables**
   - Ce problème se produit lorsque l’inscription de l’outil LTI n’est pas terminée ou si l’inscription a été supprimée dans le portail d’administration OneLTI.

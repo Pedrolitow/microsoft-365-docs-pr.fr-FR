@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 22373fddf6a4ccac718f9fede9d1bbc40b92681d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: abb18142517ceb6c5442ccd372c4f392db706bc1
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "65145314"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65284949"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez une stratégie de rétention pour gérer les données de votre organisation en décidant de manière proactive s'il faut conserver le contenu, le supprimer ou le conserver puis le supprimer.
 

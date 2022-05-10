@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 0aee30dff19f6d1127e63d14fa69e5d72232e305
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 8319cd07fb1a648e4aa20bc3a29535a2f4916f6b
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972530"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286381"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrations de productivité Microsoft 365
 
@@ -38,14 +38,14 @@ Connaître la méthode (ou les combinaisons de méthodes) à utiliser et quand l
 
 | Élément | Description |
 |:-----|:-----|
-|[![Affiche du scénario de communication d’entreprise contoso.](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>Mise à jour de janvier 2022   |Cette affiche montre comment Contoso tient les employés informés et engagés dans les scénarios de communication les plus courants. Contoso utilise une variété d’applications M365, y compris une nouvelle offre, Viva Connections.<br/><br/>**Guides de solution associés** <br/> <ul><li>[Communications organisationnelles : Conseils, méthodes et produits](/sharepoint/corporate-communications-overview)|
+|[![Affiche du scénario de communication d’entreprise contoso.](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>Mise à jour de janvier 2022   |Cette affiche montre comment Contoso tient les employés informés et engagés dans les scénarios de communication les plus courants. Contoso utilise une variété d’applications Microsoft 365, y compris une nouvelle offre, Viva Connections.<br/><br/>**Guides de solution associés** <br/> <ul><li>[Communications organisationnelles : Conseils, méthodes et produits](/sharepoint/corporate-communications-overview)|
 
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>Groupes dans Microsoft 365 pour les architectes informatique
 Cette illustration inclut des informations pour les architectes informatiques sur Groupes Microsoft 365. Pour en savoir plus sur la configuration et l’administration des Groupes Microsoft 365 et des équipes pour la collaboration au sein de votre organisation, consultez [Configurer une collaboration sécurisée avec Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) et [Qu’est-ce que la gouvernance de la collaboration ?](/microsoft-365/solutions/collaboration-governance-overview)
 
 | Élément | Description |
 |:-----|:-----|
-|[![Image miniature pour l’infographie des groupes.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Mise à jour de mai 2020|Ces illustrations décrivent les différents types de groupes, la manière dont ceux-ci sont créés et gérés et quelques recommandations en matière de gouvernance.
+|[![Image miniature pour l’infographie des groupes.](../downloads/msft-m365-groups-architecture-thumb.png)](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) <br/> [PDF](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) \| [Visio](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.vsdx) <br> Mise à jour de mai 2022|Ces illustrations décrivent les différents types de groupes, la manière dont ceux-ci sont créés et gérés et quelques recommandations en matière de gouvernance.
 
 ## <a name="migrate-to-microsoft-365"></a>Migrer vers Microsoft 365
 
@@ -64,7 +64,7 @@ Cet ensemble d’illustrations utilise l’une des industries les plus réglemen
 
 | Élément | Description |
 |:-----|:-----|
-|[![Poster du modèle : fonctionnalités de la conformité et de la protection des informations Microsoft 365](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Anglais : [Télécharger au format PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Télécharger en tant que Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japonais : [Télécharger au format PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Télécharger en tant que Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Mise à jour : novembre 2020|Inclus : <ul><li>  Protection contre la perte de données Information Protection Microsoft Purview et Microsoft Purview</li><li>Stratégies de rétention et étiquettes de rétention </li><li>Obstacles aux informations</li><li>Conformité des communications</li><li>Gestion des risques internes</li><li>Réception de données tierces</li>|
+|[![Poster du modèle : fonctionnalités de la conformité et de la protection des informations Microsoft 365](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Anglais : [Télécharger au format PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Télécharger en tant que Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japonais : [Télécharger au format PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Télécharger en tant que Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Mise à jour : novembre 2020|Inclus : <ul><li>  Microsoft Purview Information Protection et Microsoft Purview Data Loss Prevention</li><li>Stratégies de rétention et étiquettes de rétention </li><li>Obstacles aux informations</li><li>Conformité des communications</li><li>Gestion des risques internes</li><li>Réception de données tierces</li>|
 
 
 ## <a name="security-and-information-protection-for-multi-region-organizations"></a>Sécurité et protection des informations pour les organisations multi-régions
@@ -139,7 +139,7 @@ Pour plus d’informations, consultez l’article de cette affiche : [Configurer
 Avec Microsoft 365, vous pouvez configurer une équipe privée dans Microsoft Teams et utiliser SharePoint paramètres de sécurité de site et une étiquette de confidentialité unique pour chiffrer les fichiers afin que seuls les membres de l’équipe puissent les déchiffrer.
 
 [![Microsoft Teams avec l’isolation de sécurité.](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf) <br/>
-[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) |  [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br>
+[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) | [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br>
 Mise à jour d’août 2020
 
 Pour plus d’informations, consultez l’article de cette affiche : [Configurer une équipe avec isolation de sécurité](secure-teams-security-isolation.md).

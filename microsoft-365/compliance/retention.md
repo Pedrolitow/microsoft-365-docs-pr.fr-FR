@@ -18,18 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 5c9a88b27814b89077a013b03d25b4d53ef3f125
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 6fd2f56d6876b6a3832e869767880890486551db
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972063"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286921"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > Si vous voyez des messages concernant des stratégies de rétention dans Teams ou avez des questions relatives aux étiquettes de rétention, contactez votre service informatique pour obtenir des informations sur leur configuration. En attendant, les articles suivants vous seront peut-être utiles :

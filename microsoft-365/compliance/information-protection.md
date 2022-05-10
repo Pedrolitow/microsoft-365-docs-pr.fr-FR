@@ -18,21 +18,21 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Implémentez les fonctionnalités de la protection des données Microsoft Purview pour vous aider à protéger les informations sensibles où qu’elles se trouvent ou voyagent.
-ms.openlocfilehash: ac6627d620169aca962f85f30c98d830b4a34a9f
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 97f5172479d889ec1914cfc46102a58a83165269
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999869"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285475"
 ---
 # <a name="protect-your-sensitive-data-with-microsoft-purview"></a>Protéger vos données sensibles avec Microsoft Purview
+
+>*[Licences de sécurité et de conformité Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 > [!TIP]
 > *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview de 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins de conformité. Microsoft 365 E3 et Office 365 E3 clients peuvent être démarrés maintenant sur le [Hub d’essais du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions d’évaluation](compliance-easy-trials.md).
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
->*[Licences de sécurité et de conformité Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 Implémentez des fonctionnalités de la **Protection des données Microsoft Purview** (anciennement appelée Protection des données Microsoft) pour vous aider à découvrir, classifier et protéger des informations sensibles où qu’elles se trouvent ou voyagent.
 

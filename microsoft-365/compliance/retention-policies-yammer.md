@@ -17,16 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: 48b7f00df2f01d1b84af1962d91551752334c8b1
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: e90d83cb4b71600f4dbf8b16790454f523ce6c13
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595101"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286469"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Découvrir la rétention pour Yammer
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Les informations contenues dans cet article complètent l’article [Découvrir la rétention](retention.md) car elles contiennent des informations spécifiques à Yammer.
 
@@ -183,6 +185,6 @@ Tenez compte de la limitation suivante lorsque vous utilisez la rétention pour 
 
 ## <a name="configuration-guidance"></a>Instructions de configuration
 
-Si vous débutez avec la configuration de la rétention dans Microsoft 365, consultez [Démarrage avec la gouvernance des informations](get-started-with-information-governance.md).
+Si vous débutez avec la configuration de la rétention dans Microsoft 365, consultez [Démarrage avec la gestion du cycle de vie des données](get-started-with-data-lifecycle-management.md).
 
 Si vous êtes prêt à configurer une stratégie de rétention pour Yammer, voir [Créer et configurer des stratégies de rétention](create-retention-policies.md).

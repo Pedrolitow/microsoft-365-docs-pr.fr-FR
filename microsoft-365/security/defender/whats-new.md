@@ -1,5 +1,5 @@
 ---
-title: Nouveautés de Microsoft 365 Defender
+title: Nouveautés de Microsoft 365 Defender
 description: Répertorie les nouvelles fonctionnalités dans Microsoft 365 Defender
 keywords: nouveautés de Microsoft 365 Defender, ga, généralement disponibles, fonctionnalités, disponibles, nouvelles
 search.product: eADQiWindows 10XVcnh
@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0cbcc198f31497996595a9f17df9cf689c435b58
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 3c11e531e8b4706128e1519b790046f800827d67
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130536"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285015"
 ---
-# <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
+# <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -45,6 +45,8 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 
 Vous pouvez également obtenir des mises à jour de produit et des notifications importantes via le [centre de messages](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
 
+## <a name="may-2022"></a>Mai 2022
+- (Préversion) Conformément à l’extension récemment annoncée dans une nouvelle catégorie de service appelée [Microsoft Security Experts](https://aka.ms/MicrosoftSecurityExperts), nous introduisons la disponibilité de [Microsoft Defender Experts for Hunting](defenderexpertsforhuntingprev.md) (Defender Experts for Hunting) pour la préversion publique. Defender Experts for Hunting s’adresse aux clients qui disposent d’un centre d’opérations de sécurité robuste, mais qui souhaitent que Microsoft les aide à rechercher de manière proactive les menaces sur les données Microsoft Defender, notamment les points de terminaison, les Office 365, les applications cloud et l’identité. 
 
 ## <a name="april-2022"></a>Avril 2022
 - (Préversion) [Des actions](advanced-hunting-take-action.md) peuvent désormais être effectuées sur les messages électroniques directement à partir des résultats de la requête de chasse. Les e-mails peuvent être déplacés vers d’autres dossiers ou supprimés définitivement. 

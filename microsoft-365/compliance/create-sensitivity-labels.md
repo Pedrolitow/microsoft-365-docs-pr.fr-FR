@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Une exigence pour toutes les solutions de protection des données Microsoft Purview : créer, configurer et publier des étiquettes de confidentialité pour classifier et protéger les données de votre organisation.'
-ms.openlocfilehash: 036835e77ca1e1d7c15435050d4577f5352f0ebd
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 7dc8cfc095167021df2cec093734ab9c1b101868
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131271"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286943"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Toutes les solutions de protection des données Microsoft Purview sont implémentées à l’aide d’[étiquettes de confidentialité](sensitivity-labels.md). Pour créer et publier ces étiquettes, accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft Purview</a>.
 

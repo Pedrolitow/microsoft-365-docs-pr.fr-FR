@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des stratégies de rétention d’étiquetage automatique afin de pouvoir appliquer automatiquement des étiquettes pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas
-ms.openlocfilehash: 1895669c20d06bdae13ed2d25183dff92862d44f
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 54db8d8c72266e1fc7a9fa6c3fe4829c62ba4357
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188853"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285497"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > Ce scénario n'est pas pris en charge pour [les enregistrements réglementaires](records-management.md#records) ou les étiquettes par défaut pour une structure d'organisation telle qu'un ensemble de documents ou une bibliothèque dans Microsoft Office SharePoint Online, ou un dossier dans Exchange. Ces scénarios nécessitent une [stratégie d'étiquette de rétention publiée](create-apply-retention-labels.md).
