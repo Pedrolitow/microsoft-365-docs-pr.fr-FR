@@ -18,19 +18,21 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez comment utiliser PowerShell pour la création et la publication d’étiquettes de rétention à partir de la ligne de commande, indépendamment du Centre de conformité Microsoft 365.
-ms.openlocfilehash: 3f64fc7aede06e512d735908b8f06b7a8cb3e032
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez comment utiliser PowerShell pour créer et publier des étiquettes de rétention à partir de la ligne de commande, indépendamment du Portail de conformité Microsoft Purview.
+ms.openlocfilehash: 7d650c87aad92cdb65ed9a40c98c8fc3c94e01fb
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170894"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65287153"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>Créer et publier des étiquettes de rétention à l’aide de PowerShell
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Après avoir décidé d’utiliser les [étiquettes de rétention](retention.md) pour vous permettre de conserver ou de supprimer des documents et messages électroniques dans Microsoft 365, vous vous êtes peut-être rendu compte que vous avez de nombreuses étiquettes de rétention, voire des centaines, à créer et à publier. Pour créer des étiquettes de rétention à l’échelle, nous vous conseillons d’utiliser [plan de fichiers](file-plan-manager.md) depuis le Centre de conformité Microsoft 365. Cependant, vous pouvez également utiliser les applets de commande [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Après avoir décidé d’utiliser les [étiquettes de rétention](retention.md) pour vous permettre de conserver ou de supprimer des documents et messages électroniques dans Microsoft 365, vous vous êtes peut-être rendu compte que vous avez de nombreuses étiquettes de rétention, voire des centaines, à créer et à publier. La méthode recommandée pour créer des étiquettes de rétention à l’échelle est de recourir au [plan de fichiers](file-plan-manager.md) du Portail de conformité Microsoft Purview. Cependant, vous pouvez également utiliser les applets de commande [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
   
 Utilisez les informations, les fichiers modèles, les exemples et le script de cet article pour vous aider à créer en bloc des étiquettes de rétention et à les publier dans des stratégies d'étiquette de rétention. Ensuite, les étiquettes de rétention peuvent être [appliquées par les administrateurs et les utilisateurs](create-apply-retention-labels.md#how-to-apply-published-retention-labels).
 

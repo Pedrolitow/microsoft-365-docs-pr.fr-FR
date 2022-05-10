@@ -577,6 +577,8 @@
   items:
     - name: Gouvernez vos données
       href: manage-data-governance.md
+    - name: Déployer une solution de gouvernance des données
+      href: data-governance-solution.md
     - name: Comprendre la conservation et la suppression des données
       items:
         - name: En savoir plus sur les stratégies de rétention et les étiquettes de rétention

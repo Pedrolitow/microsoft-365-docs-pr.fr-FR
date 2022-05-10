@@ -1,5 +1,5 @@
 ---
-title: Utiliser le contrôle de version des enregistrements pour mettre à jour les enregistrements stockés dans SharePoint ou OneDrive
+title: Utiliser le contrôle de version des enregistrements dans SharePoint ou OneDrive
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,21 +17,23 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les enregistrements pour vous aider à implémenter une solution de gestion des enregistrements dans Microsoft 365.
-ms.openlocfilehash: 7fc4f9bb14e9e49c7894e864b8ff9e8f4337149a
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 9515622af6a6ddb5abe28d6fb920eed72f487f41
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64835884"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285059"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Utiliser le contrôle de version des enregistrements pour mettre à jour les enregistrements stockés dans SharePoint ou OneDrive
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 > [!NOTE]
 > Parce que les enregistrements réglementaires bloquent la modification, la version de l’enregistrement n’est pas disponible pour les enregistrements réglementaires.
 >
-> Vous pouvez également empêcher le contrôle de version des enregistrements pour votre client, même si vous n’utilisez pas d’enregistrements réglementaires : accédez au nœud de **Gestion des enregistrements** dans le Centre de conformité Microsoft 365 > **Paramètres de gestion des enregistrements** > **Étiquettes de rétention** > **Configurer le contrôle de version des enregistrements** puis désactiver le paramètre pour **Activer le contrôle de version des enregistrements**.
+> Vous pouvez également empêcher le contrôle de version des enregistrements pour votre client, même si vous n’utilisez pas d’enregistrements réglementaires : accédez à **Gestion des enregistrements** dans le portail de conformité Microsoft Purview > **Paramètres de gestion des enregistrements** > **Étiquettes de rétention** > **Configurer le contrôle de version des enregistrements**, puis désactivez le paramètre **Activer le contrôle de version des enregistrements**.
 
 La possibilité de marquer un document en tant qu’[enregistrement](records-management.md#records) et de restreindre les actions pouvant être effectuées sur l’enregistrement constitue un objectif essentiel pour toute solution de gestion d’enregistrements. Toutefois, une collaboration peut également être nécessaire pour que les utilisateurs puissent créer les versions suivantes.
 

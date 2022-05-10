@@ -1,5 +1,5 @@
 ---
-title: En savoir plus sur les étiquettes et les stratégies par défaut pour Microsoft Information Protection
+title: En savoir plus sur les étiquettes et stratégies par défaut pour protéger vos données
 f1.keywords:
 - CSH
 ms.author: cabailey
@@ -10,32 +10,34 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
-description: Découvrez les étiquettes et les stratégies par défaut de Microsoft Information Protection (MIP) pour classer et protéger le contenu sensible.
-ms.openlocfilehash: a0634a8f67e28d84334cfadd4be7d9694084af6c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: En savoir plus sur les étiquettes et stratégies par défaut de Protection des données Microsoft Purview pour classer et protéger le contenu sensible.
+ms.openlocfilehash: 486286780eaa3a2deedb2c3df837a93814280f39
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938615"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286447"
 ---
-# <a name="default-labels-and-policies-for-microsoft-information-protection"></a>Étiquettes et stratégies par défaut pour Microsoft Information Protection
+# <a name="default-labels-and-policies-to-protect-your-data"></a>Étiquettes et stratégies par défaut pour protéger vos données
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Les clients éligibles peuvent activer les étiquettes et les politiques par défaut pour Microsoft Information Protection (MIP) : 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Les clients éligibles peuvent activer les étiquettes et politiques par défaut pour Protection des données Microsoft Purview : 
 
 - Étiquettes de sensibilité et politique d'étiquette de sensibilité
 - Étiquetage automatique côté client
 - Étiquetage automatique côté service
 - Stratégies de prévention des pertes de données (DLP) pour les équipes et les appareils
 
-Ces configurations par défaut vous aident à être rapidement opérationnel avec Microsoft Information Protection from Microsoft 365 Compliance. Vous pouvez les utiliser tels quels, apporter quelques modifications ou les personnaliser entièrement pour mieux répondre aux besoins de votre entreprise. 
+Ces configurations par défaut vous aident à être rapidement opérationnel avec Protection des données Microsoft Purview pour Microsoft 365. Vous pouvez les utiliser tels quels, apporter quelques modifications ou les personnaliser entièrement pour mieux répondre aux besoins de votre entreprise. 
 
-L’éligibilité inclut les clients qui bénéficient d’un [essai gratuit de Conformité Microsoft 365](compliance-easy-trials.md) et certains clients qui disposent déjà d’une offre Microsoft 365 E5 client :
+L’éligibilité inclut les clients qui bénéficient d’un [essai gratuit de Microsoft Purview](compliance-easy-trials.md) et certains clients qui disposent déjà d’une offre Microsoft 365 E5:
 
-- **Nouveaux clients** : si vous disposez de la conformité Microsoft 365 depuis moins de 30 jours, votre locataire peut activer toutes les configurations par défaut répertoriées. Vous pouvez toujours les désactiver, les supprimer ou les modifier.
+- **Nouveaux clients** : si vous disposez de Microsoft Purview depuis moins de 30 jours, votre client peut activer toutes les configurations par défaut répertoriées. Vous pouvez toujours les désactiver, les supprimer ou les modifier.
 
-- **Clients existants** : Si vous avez la Conformité Microsoft 365 depuis plus de 30 jours, vous pouvez activer les configurations par défaut si vous n'avez pas encore configuré d'équivalent :
+- **Clients existants** : si vous ne disposez pas de Microsoft Purview depuis plus de 30 jours, vous pouvez activer les configurations par défaut si vous n’avez pas encore configuré d’équivalent :
 
     | Configuration par défaut| Équivalent |
     |:-----|:-----|
@@ -49,13 +51,13 @@ L’éligibilité inclut les clients qui bénéficient d’un [essai gratuit de 
 
 Pour obtenir ces étiquettes et règles préconfigurées : 
 
-1. Dans le [centre de conformité Microsoft 365](https://compliance.microsoft.com/), sélectionnez **Solutions** > **Protection des informations**
+1. Dans le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com/), sélectionnez **Solutions** > **Protection des données**
     
     Si vous ne voyez pas immédiatement cette option, sélectionnez d'abord **Afficher tout** dans le volet de navigation. 
     
-2. Si vous êtes éligible pour les étiquettes et les stratégies par défaut de Microsoft Information Protection, vous verrez les informations suivantes, où vous pouvez activer les étiquettes et les stratégies par défaut. Par exemple :
+2. Si vous êtes éligible pour les étiquettes et stratégies par défaut de Protection des données Microsoft Purview, vous verrez les informations suivantes, où vous pouvez activer les étiquettes et stratégies par défaut. Par exemple :
     
-    :::image type="content" alt-text="Activation de Microsoft Information Protection pour les étiquettes et stratégies préconfigurées." source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
+    :::image type="content" alt-text="Activation de Protection des données Microsoft Purview pour les étiquettes et stratégies préconfigurées." source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
     
     Si vous ne voyez pas ces informations affichées avec l’option d’activation, vous n’êtes pas éligible pour la création automatique d’étiquettes de confidentialité et de stratégies. Vous pouvez essayer de vérifier ultérieurement si cet état a changé ou vous pouvez utiliser les informations de paramètres suivants pour créer manuellement les mêmes étiquettes et stratégies.
 
@@ -84,7 +86,7 @@ Lorsque vous n'avez pas publié d'étiquettes de confidentialité, nous créons 
 |Confidentiel <br /> \ Tous les employés|Données confidentielles qui nécessitent une protection, ce qui permet à tous les employés des autorisations complètes. Les propriétaires de données peuvent suivre et révoquer le contenu.|Cette étiquette est sélectionnée pour l'[étiquetage automatique côté client](#client-side-auto-labeling) et l'[étiquetage automatique côté service](#service-side-auto-labeling).<br /><br /> **Portée** : Fichier, Email <br /><br />**Cryptage** : Tous les utilisateurs et groupes de l'organisation : co-auteur<br /><br />**Marquage du contenu** : Pied de page : classé comme confidentiel<br /><br />**Étiquetage automatique** : Recommander aux utilisateurs d'appliquer l'étiquette <br /><br />**Paramètres de groupe** : Non<br /><br />**Paramètres du site** : Non <br /><br />**Étiquetage automatique des colonnes de la base de données** : Aucun |
 |Confidentiel <br /> \ Personnes de confiance|Des données confidentielles qui peuvent être partagées avec des personnes de confiance à l'intérieur et à l'extérieur de votre organisation. Ces personnes peuvent également partager les données au besoin.|**Portée** : Fichier, Email <br /><br />**Cryptage** : permet aux utilisateurs d'attribuer des autorisations : <br /> - Chiffrer uniquement pour Outlook <br />- Inviter les utilisateurs dans Word, PowerPoint et Excel<br /><br />**Marquage du contenu** : Pied de page : classé comme confidentiel<br /><br />**Étiquetage automatique** : Non <br /><br />**Paramètres de groupe** : Non<br /><br />**Paramètres du site** : Non <br /><br />**Étiquetage automatique des colonnes de la base de données** : Aucun|
 |Hautement confidentiel|Données métiers très sensibles qui porteraient atteinte à l’entreprise si elles étaient partagées avec des personnes non autorisées. Les informations relatives aux employés et aux clients, mots de passe, code source et rapports financiers prédéfinis en sont des exemples.|**Portée** : Fichier, Email <br /><br />**Marquage du contenu** : Filigrane : HAUTEMENT CONFIDENTIEL<br /><br />**Étiquetage automatique** : Non <br /><br />**Paramètres de groupe** : Non<br /><br />**Paramètres du site** : Non <br /><br />**Étiquetage automatique des colonnes de la base de données** : Aucun|
-|Hautement confidentiel <br /> \ Tous les employés|Des données hautement confidentielles qui permettent à tous les employés d'afficher, de modifier et de répondre à ce contenu. Les propriétaires de données peuvent suivre et révoquer le contenu.|**Portée** : Fichier, Email <br /><br />**Cryptage** : Tous les utilisateurs et groupes de l'organisation : co-auteur<br /><br />**Marquage du contenu** : Pied de page : classé comme hautement confidentiel<br /><br />**Étiquetage automatique** : Non <br /><br />**Paramètres de groupe** : Non<br /><br />**Paramètres du site** : Non <br /><br />**Étiquetage automatique des colonnes de la base de données** : Aucun|
+|Hautement confidentiel <br /> \ Tous les employés|Données hautement confidentielles qui permettent à tous les employés d’afficher, de modifier et de répondre à ce contenu. Les propriétaires de données peuvent suivre et révoquer le contenu.|**Portée** : Fichier, Email <br /><br />**Cryptage** : Tous les utilisateurs et groupes de l'organisation : co-auteur<br /><br />**Marquage du contenu** : Pied de page : classé comme hautement confidentiel<br /><br />**Étiquetage automatique** : Non <br /><br />**Paramètres de groupe** : Non<br /><br />**Paramètres du site** : Non <br /><br />**Étiquetage automatique des colonnes de la base de données** : Aucun|
 |Hautement confidentiel <br /> \ Des personnes spécifiques |Données hautement confidentielles qui nécessitent une protection et ne peuvent être consultées que par les personnes que vous spécifiez et avec le niveau d'autorisation que vous choisissez.|**Portée** : Fichier, Email <br /><br />**Cryptage** : permet aux utilisateurs d'attribuer des autorisations : <br />- Ne pas transférer pour Outlook <br />- Inviter les utilisateurs dans Word, PowerPoint et Excel<br /><br />**Marquage du contenu** : Pied de page : classé comme hautement confidentiel<br /><br />**Étiquetage automatique** : Non <br /><br />**Paramètres de groupe** : Non<br /><br />**Paramètres du site** : Non <br /><br />**Étiquetage automatique des colonnes de la base de données** : Aucun|
 
 > [!NOTE]
@@ -98,7 +100,7 @@ Si vous devez modifier ces étiquettes de sensibilité par défaut, consultez [C
 
 ## <a name="default-sensitivity-label-policy"></a>Politique d'étiquette de sensibilité par défaut
 
-La stratégie d'étiquette de sensibilité par défaut rend les étiquettes disponibles pour que les utilisateurs commencent à étiqueter leurs documents et e-mails avec des étiquettes de sensibilité. Il a la configuration suivante :
+La stratégie d’étiquette de confidentialité par défaut rend les étiquettes disponibles pour que les utilisateurs commencent à étiqueter leurs documents et e-mails avec des étiquettes de confidentialité. Elle présente la configuration suivante :
 
 - Publier les étiquettes par défaut à tous les utilisateurs de votre locataire
 - Étiquette par défaut de **Général** \ **Tous les employés (sans restriction)** pour les documents et les e-mails sans étiquette
@@ -108,7 +110,7 @@ Pour plus d'informations sur ces paramètres de stratégie et sur d'autres param
 
 Si vous devez modifier ces paramètres de stratégie par défaut, consultez [Publier des étiquettes de confidentialité en créant une stratégie d'étiquette](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
 
-Lorsque vous utilisez ces étiquettes dans les applications Office sur Windows, macOS, iOS et Android, les utilisateurs voient les nouvelles étiquettes dans les quatre heures et dans l'heure pour Word, Excel et PowerPoint sur le Web lorsque vous actualisez le navigateur. Cependant, vous devrez peut-être attendre jusqu'à 24 heures pour que les modifications soient répliquées sur toutes les applications et tous les services.
+Lorsque vous utilisez ces étiquettes dans les applications Office sur Windows, macOS, iOS et Android, les utilisateurs voient de nouvelles étiquettes dans un délai de quatre heures et dans un délai d’une heure pour Word, Excel et PowerPoint sur le web lorsque vous actualisez le navigateur. Cependant, vous devrez peut-être attendre jusqu’à 24 heures pour que les modifications soient répliquées sur toutes les applications et tous les services.
 
 ## <a name="client-side-auto-labeling"></a>Étiquetage automatique côté client
 
@@ -150,7 +152,7 @@ Si vous souhaitez modifier la stratégie d'étiquetage automatique côté servic
 
 La stratégie DLP par défaut pour Teams détecte la présence de numéros de carte de crédit dans toutes les discussions et messages de canal Teams. Lorsque ces informations sensibles sont détectées, les administrateurs reçoivent une notification d'alerte de faible gravité.
 
-Cette politique est discrète pour les utilisateurs sans conseil de politique visible et aucun message bloqué, mais les administrateurs auront des enregistrements des informations sensibles partagées dans ces messages. Si nécessaire, vous pouvez modifier les paramètres pour modifier cette configuration par défaut.
+Cette stratégie est discrète pour les utilisateurs sans conseil de stratégie visible et aucun message bloqué, mais les administrateurs auront des enregistrements des informations sensibles partagées dans ces messages. Si nécessaire, vous pouvez modifier les paramètres pour modifier cette configuration par défaut.
 
 Pour voir les résultats de cette stratégie, utilisez [DLP Activity Explorer](dlp-learn-about-dlp.md#dlp-activity-explorer).
 
@@ -158,7 +160,7 @@ Si vous souhaitez modifier la stratégie DLP, consultez [Créer, tester et régl
 
 ## <a name="dlp-for-devices"></a>DLP pour les appareils
 
-La stratégie DLP par défaut pour les appareils détecte la présence de numéros de carte de crédit sur les appareils Windows 10 qui ont été intégrés à la conformité Microsoft 365. Il audite ensuite (ne bloque pas) les actions suivantes : 
+La stratégie DLP par défaut pour les appareils détecte la présence de numéros de carte de crédit sur les appareils Windows 10 qui ont été intégrés à Microsoft Purview. Elle audite ensuite (ne bloque pas) les actions suivantes : 
 
 - Téléchargement vers des domaines de service cloud ou accès par des navigateurs non autorisés
 
@@ -182,8 +184,8 @@ Si vous souhaitez modifier la stratégie DLP, consultez [Créer, tester et régl
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
-Pour en savoir plus sur les étiquettes de sensibilité, la prévention des pertes de données et toutes les fonctionnalités disponibles avec Microsoft Information Protection, consultez les ressources suivantes :
+Pour en savoir plus sur les étiquettes de confidentialité, la protection contre la perte de données et toutes les fonctionnalités disponibles avec Protection des données Microsoft Purview, consultez les ressources suivantes :
 
 - [En savoir plus sur les étiquettes de niveau de confidentialité](sensitivity-labels.md)
 - [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
-- [Microsoft Information Protection dans Microsoft 365.](information-protection.md)
+- [Protéger vos données avec Microsoft Purview](information-protection.md)
