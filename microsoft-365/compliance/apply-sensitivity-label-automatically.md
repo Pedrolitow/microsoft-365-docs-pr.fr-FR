@@ -1,5 +1,5 @@
 ---
-title: Appliquer automatiquement une étiquette de confidentialité au contenu dans Microsoft 365
+title: Appliquer automatiquement une étiquette de sensibilité dans Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,19 +17,21 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 21ee443ba9bab0ac7071377befee5d6e6143a398
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 69a36789e4143e3e8852976eb5e41c12ab6872f8
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634622"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65287219"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-> [!NOTE]
-> Pour plus d’informations sur l’application automatique d’une étiquette de sensibilité dans Azure Purview, voir [Étiquetage dans Azure Purview](/azure/purview/create-sensitivity-label).
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+> [!TIP]
+> Pour plus d'informations sur l'application automatique d'une étiquette de sensibilité dans la carte de données, voir [Étiquetage dans la carte de données Microsoft Purview](/azure/purview/create-sensitivity-label) .
 
 Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement cette étiquette au contenu lorsque celle-ci répond aux conditions que vous spécifiez.
 
@@ -70,9 +72,9 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
     Spécifique à l’étiquetage automatique pour Exchange :
     
     - Contrairement à l’étiquetage manuel ou à l’étiquetage automatique avec les applications Office, les pièces jointes au format PDF ainsi que les pièces jointes Office sont également analysées pour les conditions que vous spécifiez dans votre stratégie d’étiquetage automatique. Lorsqu’une correspondance est trouvée, l’e-mail est étiqueté, mais pas la pièce jointe.
-        - Pour les fichiers PDF, si l’étiquette applique le chiffrement, ces fichiers sont chiffrés à l’aide du [Chiffrement de messages Office 365 (OME)](ome.md) lorsque votre client est [activé pour les pièces jointes PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
-        - Ces fichiers Office sont pris en charge dans Word, PowerPoint et Excel. Si l’étiquette applique le chiffrement, elles sont chiffrées à l’aide de [chiffrement de messages Office 365 (OME)](ome.md).
-    - Si vous disposez de règles de flux de messagerie Exchange ou de stratégies de protection contre la perte de données (DLP) qui appliquent le chiffrement IRM : l’étiquette est appliquée lorsque le contenu est identifié par ces règles ou ces stratégies et par une stratégie d’étiquetage automatique. Si cette étiquette applique le chiffrement, les paramètres IRM des règles de flux de messagerie Exchange ou des stratégies de protection contre la perte de données sont ignorés. Toutefois, si cette étiquette n’applique pas le chiffrement, les paramètres IRM des règles de flux de messagerie ou des stratégies de protection contre la perte de données sont appliqués en plus de l’étiquette.
+        - Pour les fichiers PDF, si l'étiquette applique le cryptage, ces fichiers sont cryptés en utilisant le [cryptage des messages](ome.md) lorsque votre locataire est [activé pour les pièces jointes PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
+        - Ces fichiers Office sont pris en charge dans Word, PowerPoint et Excel. Si l'étiquette applique le cryptage, elles sont cryptées en utilisant le [cryptage des messages](ome.md).
+    - Si vous avez des règles de flux d'e-mails Exchange ou des stratégies de prévention des pertes de données (DLP) Microsoft Purview qui appliquent le cryptage IRM : Lorsque le contenu est identifié par ces règles ou stratégies et une stratégie d'étiquetage automatique, l'étiquette est appliquée. Si cette étiquette applique le chiffrement, les paramètres IRM des règles de flux de messagerie Exchange ou des stratégies de protection contre la perte de données sont ignorés. Toutefois, si cette étiquette n’applique pas le chiffrement, les paramètres IRM des règles de flux de messagerie ou des stratégies de protection contre la perte de données sont appliqués en plus de l’étiquette.
     - Les e-mails dont le chiffrement IRM n’a pas d’étiquette sont remplacés par une étiquette avec tous les paramètres de chiffrement lorsqu’il existe une correspondance à l’aide de l’étiquetage automatique.
     - Les e-mails entrant sont étiquetés lorsqu’il existe une correspondance avec vos conditions d’étiquetage automatique. Si cette étiquette est configurée pour [chiffrement](encryption-sensitivity-labels.md), ce chiffrement est toujours appliqué lorsque l’expéditeur est de votre organisation. Par défaut, ce chiffrement n’est pas appliqué lorsque l’expéditeur est en dehors de votre organisation, mais peut être appliqué en configurant **Paramètres supplémentaires pour messagerie** et en spécifiant un propriétaire Rights Management.
     - Lorsque l’étiquette applique le chiffrement, l’[émetteur Rights Management et propriétaire Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) est la personne qui envoie l’e-mail lorsque l’expéditeur est de votre propre organisation. Lorsque l’expéditeur est en dehors de votre organisation, vous pouvez spécifier un propriétaire Rights Management pour les e-mails entrants étiquetés et chiffrés par votre stratégie.
@@ -98,7 +100,7 @@ Utilisez le tableau suivant pour vous aider à déterminer les différences de c
 |Affecter un propriétaire Rights Management pour les e-mails envoyés à partir d’une autre organisation |Non |Oui|
 |Pour les e-mails, remplacez l’étiquette existante ayant la même priorité ou une priorité inférieure |Non |Oui (configurable)|
 
-\* L’étiquetage automatique n’est actuellement pas disponible dans toutes les régions en raison d’une dépendance Azure back-end. Si votre client ne prend pas en charge cette fonctionnalité, l’onglet **Étiquetage automatique** ne s’affiche pas dans le Centre de conformité. Pour plus d’informations, voir [Disponibilité des dépendances Azure par pays](/troubleshoot/azure/general/dependency-availability-by-country).
+\* L’étiquetage automatique n’est actuellement pas disponible dans toutes les régions en raison d’une dépendance Azure back-end. Si votre locataire ne peut pas prendre en charge cette fonctionnalité, **l'onglet Étiquetage** automatique n'est pas visible dans le porta de conformité de Microsoft Purview.. Pour plus d’informations, voir [Disponibilité des dépendances Azure par pays](/troubleshoot/azure/general/dependency-availability-by-country).
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Comment plusieurs conditions sont évaluées lorsqu’elles s’appliquent à plusieurs étiquettes
 
@@ -124,7 +126,7 @@ Comportement par défaut indiquant si l’étiquetage automatique remplace une �
 - L’étiquetage automatique remplace une [étiquette de confidentialité de priorité inférieure](sensitivity-labels.md#label-priority-order-matters) qui a été appliquée automatiquement, mais pas une étiquette de priorité plus élevée.
     
     > [!TIP]
-    > Par exemple, l’étiquette de confidentialité en haut de la liste dans le centre de conformité est nommée **Public** avec un numéro de commande (priorité) de 0, et l’étiquette de confidentialité en bas de la liste est nommée **Très Confidentiel** avec un numéro de commande (priorité de 4). L’étiquette **Très Confidentiel** peut remplacer l’étiquette **Public** mais pas l’inverse.
+    > Par exemple, l'étiquette de sensibilité en haut de la liste dans le portail de conformité Microsoft Purview s'appelle **Public** avec un numéro d'ordre (priorité) de 0, et l'étiquette de sensibilité en bas de la liste s'appelle **Hautement confidentiel** avec un numéro d'ordre (priorité) de 4. L'étiquette **Hautement confidentiel** peut remplacer l'étiquette **Public**, mais pas l'inverse.
 
 Pour les stratégies d’étiquetage automatique des e-mails uniquement, vous pouvez sélectionner un paramètre pour toujours remplacer une étiquette de confidentialité existante, quelle que soit la façon dont elle a été appliquée.
 
@@ -278,7 +280,7 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
 
 ### <a name="creating-an-auto-labeling-policy"></a>Création d’une stratégie d’étiquetage automatique
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, accédez aux étiquettes de confidentialité :
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a>, accédez aux étiquettes de sensibilité :
 
     - **Solutions** > **Information protection**
 

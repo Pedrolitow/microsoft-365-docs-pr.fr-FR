@@ -17,18 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveillez et gérez la destruction de contenu lorsque vous utilisez une révision avant destruction ou que des éléments marqués comme enregistrement sont automatiquement supprimés selon les paramètres que vous avez configurés.
-ms.openlocfilehash: dbc713c665367bb973fb8faded24015ad6c2d5c3
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: c8a9db05367dd7007ad164bbfe95e4a190253f85
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64594815"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285125"
 ---
 # <a name="disposition-of-content"></a>Destruction de contenu
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Utilisez la page **Destruction** de **Gestion des enregistrements** dans le Centre de conformité Microsoft 365 pour gérer les révisions de destruction et afficher les métadonnées des [enregistrements](records-management.md#records) qui ont été automatiquement supprimés à la fin de la période de rétention.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Utilisez la page **Disposition** de la **gestion des documents du portail de conformité** Microsoft Purview pour gérer les examens de disposition et afficher les [métadonnées](records-management.md#records) des documents qui ont été automatiquement supprimés à la fin de leur période de conservation.
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>Conditions préalables pour l’affichage des suppressions de contenu
 
@@ -36,33 +38,33 @@ Pour gérer les révisions de disposition et confirmer que les enregistrements o
 
 ### <a name="permissions-for-disposition"></a>Autorisations pour la destruction
 
-Pour accéder à l’onglet **Destruction** dans le Centre de conformité Microsoft 365, les utilisateurs doivent avoir le rôle de **Gestion des destructions**. A partir de décembre 2020, ce rôle est désormais inclus dans le groupe de rôle par défaut de **Gestion des enregistrements**.
+Pour accéder à l'onglet **Disposition** du portail de conformité Microsoft Purview, les utilisateurs doivent avoir le rôle **Gestion de la disposition**. A partir de décembre 2020, ce rôle est désormais inclus dans le groupe de rôle par défaut de **Gestion des enregistrements**.
 
 > [!NOTE]
 > Par défaut, un administrateur général ne se voit pas attribuer le rôle de **Gestion des destructions**. 
 
 Pour accorder aux utilisateurs uniquement les autorisations dont ils ont besoin pour les révisions avant destruction sans leur permettre d'afficher et de configurer d'autres fonctionnalités pour la conservation et la gestion des documents, créez un groupe de rôles personnalisé (par exemple, appelé « Réviseurs avant destruction ») et attribuez à ce groupe le rôle de **Gestion des destructions**.
 
-Pour obtenir des instructions pour ajouter des utilisateurs aux rôles par défaut ou créer vos propres groupes de rôles, consultez [Autorisations dans le Centre de conformité Microsoft 365](microsoft-365-compliance-center-permissions.md).
+Pour obtenir des instructions pour ajouter des utilisateurs aux rôles par défaut ou créer vos propres groupes de rôles, consultez [Autorisations dans le Portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 En outre :
 
-- Pour afficher le contenu des éléments pendant le processus de disposition, ajoutez des utilisateurs au groupe de rôles **Content Explorer Content Viewer**. Si les utilisateurs ne disposent pas des autorisations de ce groupe de rôles, ils peuvent toujours sélectionner une action de révision de la disposition pour terminer la révision de la disposition, mais doivent le faire sans pouvoir afficher le contenu de l'élément à partir du mini-volet d'aperçu du centre de conformité.
+- Pour afficher le contenu des éléments pendant le processus de destruction, ajoutez des utilisateurs au groupe de rôle **Visionneuse de contenu de l’Explorateur de contenu**. Si les utilisateurs ne disposent pas des autorisations de ce groupe de rôles, ils peuvent tout de même sélectionner une action de réexamen de la disposition pour effectuer le réexamen de la disposition, mais ils doivent le faire sans pouvoir visualiser le contenu de l'élément dans le mini-volet de réexamen du portail de conformité Microsoft Purview.
 
 - Par défaut, chaque personne qui accède à la page **Disposition** ne voit que les éléments qu'elle est chargée de réviser. Pour qu'un administrateur de gestion des enregistrements puisse voir tous les éléments attribués à tous les utilisateurs et toutes les étiquettes de rétention qui sont configurées pour l'examen de disposition : accédez à **Paramètres de gestion des enregistrements** > **Disposition** pour sélectionner, puis activer un groupe de sécurité à extension messagerie qui contient le comptes administrateur.
     
     Les groupes de sécurité et les groupes Microsoft 365 qui ne sont pas à extension messagerie ne prennent pas en charge cette fonctionnalité et ne sont pas affichés dans la liste à sélectionner. Si vous devez créer un nouveau groupe de sécurité compatible avec la messagerie, utilisez le lien vers le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration de Microsoft 365</a> pour créer le nouveau groupe. 
     
     > [!IMPORTANT]
-    > Après avoir activé le groupe, vous ne pouvez pas le modifier dans le Centre de conformité. Consultez la section suivante pour savoir comment activer un autre groupe à l’aide de PowerShell.
+    > Après avoir activé le groupe, vous ne pouvez plus le modifier dans le portail de conformité Microsoft Purview. Consultez la section suivante pour savoir comment activer un autre groupe à l’aide de PowerShell.
 
 - L’**option paramètres de gestion des enregistrements** est visible uniquement pour les administrateurs de gestion des enregistrements. 
 
 #### <a name="enabling-another-security-group-for-disposition"></a>Activation d’un autre groupe de sécurité pour sa disposition
 
-Après avoir activé un groupe de sécurité pour la disposition à partir des **paramètres de gestion des enregistrements** dans le centre de conformité Microsoft 365, vous ne pouvez pas désactiver cette autorisation pour le groupe ou remplacer le groupe sélectionné dans le centre de conformité. Cependant, vous pouvez activer un autre groupe de sécurité à extension messagerie à l'aide de la cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage).
+Après avoir activé un groupe de sécurité pour la disposition à partir des **paramètres de gestion des enregistrements** dans le portail de conformité Microsoft Purview, vous ne pouvez pas désactiver cette autorisation pour le groupe ou remplacer le groupe sélectionné dans le portail de conformité Microsoft Purview. Toutefois, vous pouvez activer un autre groupe de sécurité à extension messagerie en utilisant la cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage).
 
-Par exemple : 
+Par exemple : 
 
 ```PowerShell
 Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com
@@ -70,7 +72,7 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 ### <a name="enable-auditing"></a>Activer l’audit
 
-Assurez-vous que l’audit est activé au moins un jour avant la première action de destruction. Pour plus d’informations, consultez [Rechercher dans le journal d’audit dans le centre de conformité](search-the-audit-log-in-security-and-compliance.md). 
+Assurez-vous que l’audit est activé au moins un jour avant la première action de destruction. Pour plus d'informations, voir [Recherche dans le journal d'audit dans le portail de conformité Microsoft Purview](search-the-audit-log-in-security-and-compliance.md). 
 
 ## <a name="disposition-reviews"></a>Révisions avant destruction
 
@@ -86,7 +88,7 @@ Lorsqu'une révision de disposition est déclenchée à la fin de la période de
 
 Vous pouvez personnaliser l’e-mail qu’ils reçoivent, notamment les instructions dans d’autres langues. Pour un support multilingue, vous devez vous-même spécifier les traductions et ce texte personnalisé s’affiche pour tous les réviseurs indépendamment de leurs paramètres régionaux.
 
-Les utilisateurs reçoivent une notification par e-mail initiale par étiquette à la fin de la période de rétention de l’élément, avec un rappel par étiquette une fois par semaine de toutes les révisions avant destruction qui leur sont affectées. Ils peuvent cliquer sur le lien dans les e-mails de notification et de rappel pour accéder directement à la page de **Gestion des enregistrements** > **Disposition** dans le Centre de conformité Microsoft 365 pour examiner le contenu et effectuer une action. Les réviseurs peuvent également accéder à cette page **Disposition** dans le Centre de conformité. Ensuite :
+Les utilisateurs reçoivent une notification par e-mail initiale par étiquette à la fin de la période de rétention de l’élément, avec un rappel par étiquette une fois par semaine de toutes les révisions avant destruction qui leur sont affectées. Ils peuvent cliquer sur le lien figurant dans les e-mails de notification et de rappel pour accéder directement à la page **Gestion des documents** > **– Disposition** dans le portail de conformité Microsoft Purview afin d'examiner le contenu et de prendre une décision. Les réviseurs peuvent également se rendre sur cette page de **disposition** dans le portail de conformité Microsoft Purview. Ensuite :
 
 - Les réviseurs voient uniquement les révisions avant destruction qui leur sont affectées, tandis que les administrateurs qui sont ajoutés au Groupe de sécurité du gestionnaire des enregistrements voient toutes les révisions avant destruction.
 
@@ -107,7 +109,7 @@ Les administrateurs peuvent voir un aperçu de toutes les dispositions en attent
 
 Lorsque vous sélectionnez l’option **Afficher toutes les dispositions en attente**, vous êtes redirigé vers la page **Disposition**. Par exemple :
 
-![Page de destruction dans le centre de conformité Microsoft 365.](../media/disposition-tab.png)
+![Page Dispositions dans le portail de conformité Microsoft Purview.](../media/disposition-tab.png)
 
 
 ### <a name="workflow-for-a-disposition-review"></a>Flux de travail pour une révision de destruction
@@ -155,7 +157,7 @@ Exemple de notification par défaut envoyée par e-mail au réviseur :
 
 Vous pouvez personnaliser les messages électroniques envoyés aux relecteurs de disposition pour la notification initiale, puis les rappels.
 
-Dans l’une des pages de gestion des enregistrements du Centre de conformité, sélectionnez **Paramètres de gestion des enregistrements**:  
+À partir de l'une des pages de gestion des enregistrements du portail de conformité Microsoft Purview, sélectionnez **Paramètres de gestion des enregistrements**:  
 
 ![Paramètres de gestion des enregistrements.](../media/record-management-settings.png)
 
@@ -173,7 +175,7 @@ Sélectionnez **Enregistrer** pour enregistrer toute modification.
 
 ### <a name="viewing-and-disposing-of-content"></a>Affichage et destruction de contenu
 
-Lorsqu’un réviseur est averti par courrier électronique que le contenu est prêt à être examiné, il peut cliquer sur un lien dans le message électronique qui l’a directement envoyé à la page **Destruction** de **Gestion des enregistrements** dans le Centre de conformité Microsoft 365. Les réviseurs peuvent voir le nombre d’éléments en attente de destruction pour chaque étiquette de rétention à l’aide de **Type** qui afficher la **Destructions en attente**. Ils peuvent ensuite sélectionner une étiquette de rétention, puis **Ouvrir dans une nouvelle fenêtre** pour voir tout le contenu de cette étiquette :
+Lorsqu'un réviseur est informé par e-mail que le contenu est prêt à être examiné, il peut cliquer sur un lien dans l'e-mail qui l'amène directement à la page **Disposition** de la **gestion des documents** dans le portail de conformité Microsoft Purview. Les réviseurs peuvent voir le nombre d’éléments en attente de destruction pour chaque étiquette de rétention à l’aide de **Type** qui afficher la **Destructions en attente**. Ils peuvent ensuite sélectionner une étiquette de rétention, puis **Ouvrir dans une nouvelle fenêtre** pour voir tout le contenu de cette étiquette :
 
 ![Ouvrir dans une nouvelle fenêtre pour la révision de destruction.](../media/open-in-new-window.png)
 

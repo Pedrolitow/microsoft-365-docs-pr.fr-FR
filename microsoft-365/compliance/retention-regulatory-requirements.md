@@ -1,5 +1,5 @@
 ---
-title: Ressources pour vous aider à respecter les réglementations en matière de gouvernance des informations et de gestion des enregistrements
+title: Ressources pour vous aider à répondre aux exigences réglementaires en matière de gestion du cycle de vie des données et de gestion des dossiers
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,19 +14,21 @@ ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
-description: Ressources pour vous aider à respecter les réglementations en matière de gouvernance des informations et de gestion des enregistrements.
-ms.openlocfilehash: d5f0c2d405d35147a7868635520521134d0ee8f0
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Ressources pour vous aider à répondre aux exigences réglementaires en matière de gestion du cycle de vie des données et de gestion des enregistrements.
+ms.openlocfilehash: 2d66aa6ac7eee3fab0718e2850f62730d0bd66f1
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759808"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286425"
 ---
-# <a name="regulatory-requirements-for-information-governance-and-records-management"></a>Réglementations en matière de gouvernance des informations et de gestion des enregistrements
+# <a name="regulatory-requirements-for-data-lifecycle-management-and-records-management"></a>Exigences réglementaires en matière de gestion du cycle de vie des données et de gestion des enregistrements
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Utilisez les ressources de cette page pour vous aider à respecter les réglementations spécifiques en matière de gouvernance des informations et de gestion des enregistrements dans Microsoft 365. Chaque section de ce document se concentre sur une ou plusieurs réglementations apparentées, et inclut des recommandations existantes ou une évaluation tierce de la configuration de Microsoft 365 pour vous aider dans les conditions décrites.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Utilisez les ressources de cette page pour vous aider à répondre aux exigences réglementaires spécifiques en matière de gestion du cycle de vie des données et de gestion des enregistrements dans Microsoft 365. Chaque section de ce document se concentre sur une ou plusieurs réglementations apparentées, et inclut des recommandations existantes ou une évaluation tierce de la configuration de Microsoft 365 pour vous aider dans les conditions décrites.
 
 Ces ressources peuvent être téléchargées à partir de la page [Ressources de protection des données, FAQ et livres blancs](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) du Portail d’approbation de services.
 
