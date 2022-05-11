@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez pourquoi et comment créer un site de communication SharePoint pour votre campagne ou votre entreprise avec Microsoft 365, et protégez l’équipe contre les cyberattaques et les intrusions contre les programmes malveillants et d’autres menaces en raison d’un partage de fichiers incorrect.
-ms.openlocfilehash: 1e1e2792e4a667737118974b95ae5f77cb6ae224
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 72794c9aac0f1409675af0e3fa40c8cd1881f73a
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100178"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319525"
 ---
 # <a name="create-a-communications-site-in-sharepoint"></a>Créer un site de communication dans SharePoint
 
@@ -73,4 +73,6 @@ Découvrez tout [sur les sites de communication](https://support.office.com/arti
 
 Si vous ne voyez pas le lien **+ Créer** un site, il se peut que la création de sites en libre-service ne soit pas disponible dans Microsoft 365. Pour créer un site d'équipe, contactez la personne qui administre Microsoft 365 dans votre organisation. Si vous êtes un administrateur Microsoft 365, voir [Gérer la création de sites dans SharePoint Online](/sharepoint/manage-site-creation) pour activer la création de sites en libre-service pour votre organisation ou [Gérer les sites dans le nouveau centre d'administration SharePoint ](/sharepoint/manage-sites-in-new-admin-center)pour créer un site à partir du <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centre d'administration SharePoint</a>.
 
-Félicitations &mdash;, vous avez terminé la mission ! Maintenant, concentrez-vous immédiatement sur [la protection des appareils gérés](m365bp-protect-devices.md) pour l’ensemble de l’organisation !
+## <a name="next-mission"></a>Prochaine mission
+
+Félicitations &mdash; vous avez terminé la mission ! À présent, concentrez-vous immédiatement sur la [protection des appareils gérés](m365bp-protect-devices.md) pour l’ensemble de l’organisation !

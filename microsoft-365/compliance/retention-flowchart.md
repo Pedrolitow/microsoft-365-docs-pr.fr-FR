@@ -1,5 +1,5 @@
 ---
-title: Organigramme pour déterminer quand un élément sera conservé ou supprimé définitivement
+title: Organigramme pour déterminer quand un élément est conservé ou supprimé
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,16 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Utiliser un organigramme pour déterminer le résultat lorsqu’un élément possède plusieurs stratégies de rétention ou une étiquette de rétention et des stratégies de rétention
-ms.openlocfilehash: b9c3b94dcb50499b6af72fd124da384f90d16da9
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: cf35a89faf3ed526c94acf362f1a927eb36420f0
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61935824"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286799"
 ---
 # <a name="flowchart-to-determine-when-an-item-will-be-retained-or-permanently-deleted"></a>Organigramme pour déterminer quand un élément sera conservé ou supprimé définitivement
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez l'organigramme suivant pour appliquer les [principes de rétention](retention.md#the-principles-of-retention-or-what-takes-precedence) à un élément afin de déterminer si le système le conservera ou le supprimera définitivement à la suite d'une étiquette ou d'une stratégie de rétention.
 

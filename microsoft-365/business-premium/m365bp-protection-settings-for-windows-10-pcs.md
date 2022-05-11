@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Découvrez les paramètres disponibles dans Microsoft 365 pour les entreprises afin de sécuriser les appareils Windows 10.
-ms.openlocfilehash: ef4df7b308c52275db8d43c1c0619a64594ed690
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: eb9ab2b1c1873695e6655aedf2edd64da9cf9ef2
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096241"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317453"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Modifier ou créer des paramètres de protection d’appareil pour Windows 10 PC
 
@@ -39,7 +39,7 @@ Cet article s’applique à Microsoft 365 Business Premium.
 > [!NOTE]
 > Microsoft Defender pour les PME est déployée pour les clients Microsoft 365 Business Premium, à compter du 1er mars 2022. Cette offre fournit des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender for Business](../security/defender-business/mdb-overview.md).
 
-Après avoir configuré les paramètres de protection Windows par défaut sur la page d’installation, vous pouvez en ajouter de nouveaux qui s’appliquent à tous les utilisateurs ou à un ensemble d’utilisateurs. Vous pouvez également modifier celles que vous avez créées.
+Après avoir configuré les paramètres de protection Windows par défaut sur la page d’installation, vous pouvez en ajouter de nouveaux qui s’appliquent à tous les utilisateurs ou à un ensemble d’utilisateurs. Vous pouvez également modifier ceux qui ont déjà été créés.
 
 ## <a name="watch-create-protection-settings-for-windows-10-devices"></a>Regarder : Créer des paramètres de protection pour les appareils Windows 10
 
@@ -98,4 +98,4 @@ Pour plus d’informations, consultez [Comment les fonctionnalités de protectio
 
 ## <a name="see-also"></a>Voir aussi
 
-[10 principales façons de sécuriser les plans Microsoft 365 pour les entreprises](../admin/security-and-compliance/secure-your-business-data.md) 
+[Meilleures pratiques pour sécuriser les plans Microsoft 365 pour les PME](../admin/security-and-compliance/secure-your-business-data.md) 

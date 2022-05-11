@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: Configurez Windows appareils exécutant Windows 10 Professionnel pour Microsoft 365 Business Premium utilisateurs, en activant la gestion centralisée et les contrôles de sécurité.
-ms.openlocfilehash: 57db37f73d2b9145f7c4fb9c1ee1005318c629d7
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b9c8a5eb724a74959983e86dcdcb8f2f8f96b540
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096223"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318577"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Configurer des appareils Windows pour les utilisateurs Microsoft 365 Business Premium
 
@@ -58,9 +58,9 @@ Pour plus d’informations sur la mise à niveau des appareils Windows, consulte
   
 Une fois la mise à niveau terminée, consultez [Vérifier que l’appareil est connecté à Azure AD](#verify-the-device-is-connected-to-azure-ad) pour vérifier que vous avez effectué la mise à niveau ou pour vous assurer que la mise à niveau a fonctionné.
 
-## <a name="join-windows-devices-to-your-organizations-azure-ad"></a>Joignez Windows appareils au Azure AD de votre organisation
+## <a name="join-windows-devices-to-your-organizations-azure-ad"></a>Joindre Windows appareils à Azure AD de votre organisation
 
-Lorsque tous les appareils Windows de votre entreprise s’exécutent Windows 10 Professionnel ou Windows 11 Professionnel, vous pouvez joindre ces appareils au Azure Active Directory de votre organisation (Azure AD). 
+Lorsque tous les appareils Windows de votre entreprise exécutent Windows 10 Professionnel ou Windows 11 Professionnel, vous pouvez joindre ces appareils au Azure Active Directory de votre organisation (Azure AD). 
 
 1. Sur un appareil Windows, sélectionnez le logo Windows, puis l’icône Paramètres.
   
@@ -80,6 +80,6 @@ Dans la page **État** de synchronisation, choisissez **Synchroniser** pour obte
 
 Pour configurer vos appareils mobiles, consultez [Configurer des appareils mobiles pour Microsoft 365 Business Premium utilisateurs](set-up-mobile-devices.md), 
 
-Pour renforcer la protection, consultez [les 10 principaux moyens de sécuriser Microsoft 365 pour les plans d’entreprise](../security-and-compliance/secure-your-business-data.md).
+Pour renforcer la protection, consultez [les meilleures pratiques pour sécuriser Microsoft 365 pour les plans d’entreprise](../security-and-compliance/secure-your-business-data.md).
   
 

@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: Découvrez comment charger des appareils à l’aide d’AutoPilot dans Microsoft 365 Business Premium. Attribuer un profil à un appareil ou à un groupe d'appareils
-ms.openlocfilehash: 2ae149744198803e7cd5441421b93147c965f256
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: cd5862dab5ff53d52311e7420388cf93b0af63dc
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095227"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317863"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>Créer et modifier des appareils AutoPilot
 
@@ -69,4 +69,4 @@ Les appareils doivent respecter ces exigences :
 
 ## <a name="see-also"></a>Voir aussi
 
-[10 principales façons de sécuriser les plans Microsoft 365 pour les entreprises](../admin/security-and-compliance/secure-your-business-data.md)
+[Meilleures pratiques pour sécuriser les plans Microsoft 365 pour les PME](../admin/security-and-compliance/secure-your-business-data.md)

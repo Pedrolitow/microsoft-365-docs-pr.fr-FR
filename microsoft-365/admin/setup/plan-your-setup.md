@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Découvrez les exigences et les considérations relatives à la transition vers Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 9a8ca80a9559d4ecdb988c515c20add4676e602d
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: a5f777a411f82de30c1d7dc69f07f92eadbbedce
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128889"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317469"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planifier votre installation de Microsoft 365 pour les entreprises
 
@@ -149,4 +149,4 @@ Pour les grandes organisations ou si vous commencez à partir de Skype Entrepris
 
 ## <a name="see-also"></a>Voir aussi
 
-[10 principales façons de sécuriser les plans Microsoft 365 pour les entreprises](../security-and-compliance/secure-your-business-data.md)
+[Meilleures pratiques pour sécuriser les plans Microsoft 365 pour les PME](../security-and-compliance/secure-your-business-data.md)

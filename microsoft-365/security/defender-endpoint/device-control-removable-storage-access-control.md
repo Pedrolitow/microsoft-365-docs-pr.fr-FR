@@ -14,17 +14,17 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 04/11/2022
-ms.openlocfilehash: b176f7a89c46e016f7eb25cdf4cd6b0d6beb3966
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.date: 05/09/2022
+ms.openlocfilehash: a472a2183d642ca8c3231e6ca5129fdf79cad8fd
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130602"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317623"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender pour point de terminaison Stockage Access Control amovibles du contrôle d’appareil
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
@@ -36,9 +36,9 @@ Microsoft Defender pour point de terminaison Stockage Access Control amovible du
 
 |Privilège|Autorisation|
 |---|---|
-|Access|Lecture, Écriture, Exécution|
+|Accès|Lecture, Écriture, Exécution|
 |Action Mode|Auditer, autoriser, empêcher|
-|Prise en charge du fournisseur de solutions Cloud|Oui|
+|Prise en charge fournisseur de solutions Cloud|Oui|
 |Prise en charge de l’objet de stratégie de groupe|Oui|
 |Prise en charge basée sur l’utilisateur|Oui|
 |Prise en charge basée sur l’ordinateur|Oui|
@@ -267,7 +267,7 @@ Microsoft Endpoint Manager **profils** \> de configuration du Centre d’adminis
 
 5. Définissez l’emplacement d’une copie du fichier : si vous souhaitez avoir une copie du fichier lorsque l’accès en écriture se produit, vous devez définir l’emplacement où le système peut enregistrer la copie.
 
-    - OMA-URI : `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation;**username**;**password**`
+    - OMA-URI : './Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation
 
     - Type de données : String
 

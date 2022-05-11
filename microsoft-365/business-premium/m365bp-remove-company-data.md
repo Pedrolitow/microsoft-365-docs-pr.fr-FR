@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: Découvrez comment utiliser Microsoft 365 pour entreprise pour supprimer les données d'entreprise que vos utilisateurs ont sur leurs appareils ou ordinateurs Windows.
-ms.openlocfilehash: cda772b3d14b80f3836ef22c4fa941c1636ee0a2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f4f9971e65c65267ee9b4e4f8ee99196f5773355
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094178"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317441"
 ---
 # <a name="remove-company-data-from-devices"></a>Supprimer des données d'entreprise sur des appareils
 
@@ -58,4 +58,4 @@ Vous pouvez utiliser Microsoft 365 pour entreprise pour supprimer les données d
 
 ## <a name="see-also"></a>Voir aussi
 
-[10 principales façons de sécuriser les plans Microsoft 365 pour les entreprises](../admin/security-and-compliance/secure-your-business-data.md)
+[Meilleures pratiques pour sécuriser les plans Microsoft 365 pour les PME](../admin/security-and-compliance/secure-your-business-data.md)

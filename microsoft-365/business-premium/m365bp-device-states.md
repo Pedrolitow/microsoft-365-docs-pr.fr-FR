@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: Découvrez les différents états de l’appareil dans la liste des actions de l’appareil dans la page d’accueil de l’administrateur dans Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 72a923b366d73d0ceb708abfb6ab96e2562b6e49
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 00a2b86265c342d131c703b207682e2eeff26b79
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095193"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320799"
 ---
 # <a name="device-states"></a>États des appareils
 
@@ -63,4 +63,4 @@ Les appareils de la liste **Actions de l'appareil** (accueil Administrateur \> *
 
 ## <a name="see-also"></a>Voir aussi
 
-[10 principales façons de sécuriser les plans Microsoft 365 pour les entreprises](../admin/security-and-compliance/secure-your-business-data.md)
+[Meilleures pratiques pour sécuriser les plans Microsoft 365 pour les PME](../admin/security-and-compliance/secure-your-business-data.md)

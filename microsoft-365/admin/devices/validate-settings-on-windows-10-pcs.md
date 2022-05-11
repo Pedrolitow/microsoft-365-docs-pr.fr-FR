@@ -27,17 +27,17 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Découvrez comment vérifier que les paramètres de protection des applications Microsoft 365 pour les entreprises ont pris effet sur les appareils Windows 10 de vos utilisateurs.
-ms.openlocfilehash: c107741d87c63472310352b58872ec0b6ecc1d4d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: cbb26461da9fcc73f57d219c36ef04d97e7fc209
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090660"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317550"
 ---
 # <a name="validate-device-protection-settings-for-windows-10-pcs"></a>Valider les paramètres de protection des appareils pour Windows 10 PC
 
 > [!NOTE]
-> Microsoft Defender pour les PME est déployée pour Microsoft 365 Business Premium clients, à compter du 1er mars 2022. Cette offre fournit des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender entreprise](../../security/defender-business/mdb-overview.md).
+> Microsoft Defender pour les PME est déployée pour les clients Microsoft 365 Business Premium, à compter du 1er mars 2022. Cette offre fournit des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender for Business](../../security/defender-business/mdb-overview.md).
 
 ## <a name="verify-that-windows-10-device-policies-are-set"></a>Vérifier que Windows 10 stratégies d’appareil sont définies
 
@@ -67,5 +67,5 @@ Après avoir configuré les stratégies d’appareil, l’application de la stra
 
 [Microsoft 365 pour les ressources et la documentation métier](/admin)
 
-[Définir des configurations d’appareil pour Windows 10 pcTop](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md)
- [10 façons de sécuriser les Microsoft 365 pour les plans d’entreprise](../../admin/security-and-compliance/secure-your-business-data.md)
+[Définir des configurations d’appareil pour Windows 10 pratiques PCSBest](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md)
+ [pour la sécurisation des Microsoft 365 pour les plans d’entreprise](../../admin/security-and-compliance/secure-your-business-data.md)

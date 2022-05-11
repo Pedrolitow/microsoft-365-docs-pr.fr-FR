@@ -14,14 +14,13 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 02/04/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 487c253adc422d69be5ce011ffef1fc1a014474b
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 890be814be75c303aa42feb5cb7a16cb4f5c3bd9
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789775"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320637"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurer des exclusions Antivirus Microsoft Defender sur Windows Server
 
@@ -42,12 +41,12 @@ Outre les exclusions automatiques définies par le rôle serveur, vous pouvez aj
 
 ## <a name="a-few-points-to-keep-in-mind"></a>Quelques points à garder à l’esprit
 
-Gardez à l’esprit les points importants suivants :
-
 - Les exclusions personnalisées sont prioritaires sur les exclusions automatiques.
-- Les exclusions automatiques s’appliquent uniquement à l’analyse de protection en temps réel (RTP). Les exclusions automatiques ne sont pas respectées lors d’une analyse complète, rapide ou à la demande.
+- Les exclusions automatiques s’appliquent uniquement à l’analyse de [protection en temps réel (RTP](configure-protection-features-microsoft-defender-antivirus.md) ). 
+- Les exclusions automatiques ne sont pas respectées lors d’une [analyse complète, rapide ou à la demande](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan).
 - Les exclusions personnalisées et en double ne sont pas en conflit avec les exclusions automatiques.
 - Antivirus Microsoft Defender utilise les outils DISM (Deployment Image Servicing and Management) pour déterminer les rôles installés sur votre ordinateur.
+- Les exclusions appropriées doivent être définies pour les logiciels qui ne sont pas inclus dans le système d’exploitation.
 - Windows Server 2012 R2 n’a pas de Antivirus Microsoft Defender en tant que fonctionnalité installable. Lorsque vous intégrerez ces serveurs à Defender pour point de terminaison, vous installez Antivirus Windows Defender et les exclusions par défaut pour les fichiers du système d’exploitation sont appliquées. Toutefois, les exclusions pour les rôles serveur (comme spécifié ci-dessous) ne s’appliquent pas automatiquement, et vous devez configurer ces exclusions comme il convient. Pour plus d’informations, consultez [Intégrer des serveurs Windows au service Microsoft Defender pour point de terminaison](configure-server-endpoints.md).
 
 Cet article fournit une vue d’ensemble des exclusions pour Antivirus Microsoft Defender sur Windows Server 2016 ou version ultérieure.
@@ -55,8 +54,6 @@ Cet article fournit une vue d’ensemble des exclusions pour Antivirus Microsoft
 Étant donné que Antivirus Microsoft Defender est intégré à Windows Server 2016 et ultérieur, les exclusions pour les fichiers de système d’exploitation et les rôles serveur se produisent automatiquement. Toutefois, vous pouvez définir des exclusions personnalisées. Vous pouvez également refuser les exclusions automatiques si nécessaire.
 
 Le présent article contient les sections suivantes :
-
-<br/><br/>
 
 |Section|Description|
 |---|---|
@@ -87,8 +84,9 @@ Les sections suivantes contiennent les exclusions fournies avec les chemins d’
 
 Cette section répertorie les exclusions par défaut pour tous les rôles dans Windows Server 2016, Windows Server 2019 et Windows Server 2022.
 
-> [!NOTE]
-> Les emplacements par défaut peuvent être différents de ce qui est répertorié dans cet article.
+> [!IMPORTANT]
+> - Les emplacements par défaut peuvent être différents des emplacements décrits dans cet article.
+> - Pour définir des exclusions pour les logiciels qui ne sont pas inclus en tant que fonctionnalité Windows ou rôle serveur, reportez-vous à la documentation du fabricant du logiciel.
 
 ##### <a name="windows-tempedb-files"></a>Windows fichiers « temp.edb »
 
@@ -171,8 +169,6 @@ Cette section répertorie les exclusions par défaut pour tous les rôles dans W
 ##### <a name="hyper-v-exclusions"></a>Exclusions Hyper-V
 
 Le tableau suivant répertorie les exclusions de type de fichier, les exclusions de dossier et les exclusions de processus qui sont fournies automatiquement lorsque vous installez le rôle Hyper-V.
-
-<br><br/>
 
 |Type d’exclusion|Détails|
 |---|---|
@@ -387,8 +383,8 @@ Si nécessaire, vous pouvez ajouter ou supprimer des exclusions personnalisées.
 > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
-> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Voir aussi
 

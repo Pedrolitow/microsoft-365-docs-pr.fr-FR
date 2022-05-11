@@ -21,12 +21,12 @@ description: Utilisez le portail de conformité Microsoft Purview pour recherche
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: b3ad71878f6d0c766cbcf5ba435bc61396f45ed6
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+ms.openlocfilehash: 585b3be2149b1e94dc27633bac20707a6b193c0f
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231756"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320603"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>Rechercher dans le journal d’audit dans le portail de conformité Microsoft Purview
 
@@ -44,6 +44,7 @@ Pourquoi un journal d’audit unifié ? Vous pouvez rechercher dans le journal 
 | Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat |
 | Conformité des communications|ComplianceSuperVisionExchange|
 | Explorateur de contenu|LabelContentExplorer|
+| Connecteurs de données|ComplianceConnector|
 | Protection contre la perte de données (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange, DLPEndpoint|
 | Dynamics 365|CRM|
 | eDiscovery|Découverte, AeD|
@@ -67,7 +68,6 @@ Pourquoi un journal d’audit unifié ? Vous pouvez rechercher dans le journal 
 | Threat Intelligence|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
 | Workplace Analytics|WorkplaceAnalytics|
 | Yammer|Yammer|
-|||
 
 Pour plus d’informations sur les opérations auditées dans chacun des services répertoriés dans le tableau précédent, voir la section [Activités auditées](#audited-activities) dans cet article.
 
@@ -454,7 +454,6 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 |(aucun)|PageViewedExtended|Cet événement est lié à l'activité « Page affichée » (PageViewed). Un événement PageViewedExtended est enregistré lorsque la même personne affiche une page web pendant une période prolongée (jusqu'à 3 heures). <br/><br/> L’objectif de la journalisation des événements PageViewedExtended consiste à réduire le nombre d’événements PageViewed enregistrés lorsqu’une page est affichée de manière continue. Cela permet de réduire le bruit généré par l’enregistrement de plusieurs événements PageViewed pour ce qui est en fait l’activité d’un seul et même utilisateur et vous permettre de vous concentrer sur l’événement PageViewed initial (plus important).|
 |Affichage signalé par le client|ClientViewSignaled|Le client d’un utilisateur (comme un site web ou une application mobile) signale que la page indiquée a été consultée par l’utilisateur. Cette activité est souvent journalisée à la suite d’un événement PagePrefetched pour une page. <br/><br/>**Remarque**: les événements ClientViewSignaled étant signalés par le client, plutôt que le serveur, il est possible que l’événement ne soit pas consigné par le serveur et, par conséquent, qu’il n’apparaisse pas dans le journal d’audit. Il est également possible que les informations dans l’enregistrement d’audit ne soient pas dignes de confiance. Toutefois, comme l’identité de l’utilisateur est validée par le jeton utilisé pour créer le signal, l’identité de l’utilisateur répertoriée dans l’enregistrement d’audit correspondant est exacte. Le système attend cinq minutes avant d'enregistrer le même événement lorsque le client du même utilisateur signale que la page a été consultée à nouveau par l'utilisateur.|
 |(aucun)|PagePrefetched|Le client d’un utilisateur (comme un site web ou une application mobile) demande la page indiquée afin de vous aider à améliorer les performances lorsque l’utilisateur y accède. Cet événement est enregistré pour indiquer que le contenu de la page a été remis au client de l’utilisateur. Cet événement n’indique pas si l’utilisateur a accédé à la page. <br/><br/> Lorsque le contenu de la page est affiché par le client (conformément à la requête de l’utilisateur), un événement ClientViewSignaled est généré. Tous les clients ne prennent pas en charge l’indication d’une pré-récupération ; par conséquent, certaines activités préalablement récupérées peuvent être enregistrées en tant qu’événements PageViewed.|
-||||
 
 #### <a name="frequently-asked-questions-about-fileaccessed-and-filepreviewed-events"></a>Forum aux questions sur les événements FileAccessed et FilePreviewed
 
@@ -505,7 +504,6 @@ Le tableau suivant décrit les activités des fichiers dans SharePoint Online et
 |Dossier déplacé|FolderMoved|Un utilisateur déplace un dossier vers un autre emplacement sur un site.|
 |Dossier renommé|FolderRenamed|Un utilisateur renomme un dossier sur un site.|
 |Dossier restauré|FolderRestored|Un utilisateur restaure un dossier supprimé de la Corbeille sur un site.|
-||||
 
 ### <a name="sharepoint-list-activities"></a>Activités de liste SharePoint
 
@@ -535,7 +533,6 @@ Le tableau suivant décrit les activités liées à la façon dont les utilisate
 |Colonne de site mise à jour|SiteColumnUpdated|Un utilisateur a mis à jour une colonne de site SharePoint en modifiant une ou plusieurs propriétés.|
 |Type de contenu de site mis à jour|SiteContentTypeUpdated|Un utilisateur a mis à jour un type de contenu de site en modifiant une ou plusieurs propriétés.|
 |Élément de liste consulté|ListItemViewed|Un utilisateur a consulté un élément de liste SharePoint. Une fois qu’un utilisateur affiche un élément de liste, l’événement ListItemViewed n’est plus journalisé pour le même utilisateur pour le même élément de liste pendant les cinq minutes suivantes.|
-||||
 
 ### <a name="sharing-and-access-request-activities"></a>Activités de demande d’accès et de partage
 
@@ -570,7 +567,6 @@ Le tableau suivant décrit les activités de demande d’accès et de partage d�
 |Utilisateur ajouté à un lien sécurisé.|AddedToSecureLink|Un utilisateur a été ajouté à la liste des entités pouvant utiliser un lien de partage sécurisé.|
 |Utilisateur supprimé d’un lien sécurisé.|RemovedFromSecureLink|Un utilisateur a été supprimé de la liste des entités pouvant utiliser un lien de partage sécurisé.|
 |Invitation de partage retirée|SharingInvitationRevoked|Un utilisateur a retiré une invitation de partage à une ressource. |
-||||
 
 ### <a name="synchronization-activities"></a>Activités de synchronisation
 
@@ -584,7 +580,6 @@ Le tableau suivant décrit les activités de synchronisation dans SharePoint Onl
 |Modifications du fichier téléchargées sur l’ordinateur|FileSyncDownloadedPartial|Cet événement a été déprécié avec l’ancienne application de synchronisation OneDrive Entreprise (Groove.exe).|
 |Fichiers téléchargés dans la bibliothèque de documents|FileSyncUploadedFull|Un utilisateur charge un nouveau fichier ou les modifications apportées à un fichier dans SharePoint bibliothèque de documents ou de OneDrive Entreprise à l’aide de l’application de synchronisation OneDrive (OneDrive.exe).|
 |Modifications du fichier téléchargées dans la bibliothèque de documents|FileSyncUploadedPartial|Cet événement a été déprécié avec l’ancienne application de synchronisation OneDrive Entreprise (Groove.exe).|
-||||
 
 ### <a name="site-permissions-activities"></a>Activités d’autorisations de site
 
@@ -608,7 +603,6 @@ Le tableau suivant répertorie les événements liés à l’attribution d’aut
 |Autorisations d’administrateur de site demandées|SiteAdminChangeRequest|Un utilisateur demande à être ajouté en tant qu'administrateur de collection de sites pour une collection de sites. Les administrateurs de collection de sites disposent d'autorisations de contrôle total pour la collection de sites et tous les sous-sites.|
 |Restauration de l’héritage de partage|SharingInheritanceReset|Une modification a été apportée afin qu’un élément hérite des autorisations de partage de son parent.|
 |Groupe mis à jour|GroupUpdated|Un administrateur ou propriétaire de site modifie les paramètres d'un groupe pour un site. Cela peut inclure la modification du nom du groupe, des autorisations d'affichage ou de modification d'appartenance au groupe, et du mode de gestion des demandes d'appartenance.|
-||||
 
 ### <a name="site-administration-activities"></a>Activités d’administration des sites
 
@@ -647,7 +641,6 @@ Le tableau suivant répertorie les événements qui résultent de tâches d’ad
 |Définir un quota de stockage pour un emplacement géographique|GeoQuotaAllocated|Un administrateur SharePoint ou général a configuré un quota de stockage pour un environnement à plusieurs emplacements géographiques.|
 |Site disjoint d’un site concentrateur|HubSiteUnjoined|Un propriétaire de site dissocie son site d’un site concentrateur.|
 |Site concentrateur non enregistré|HubSiteUnregistered|Un administrateur SharePoint ou global annule l’enregistrement d’un site concentrateur. Lorsqu’un site concentrateur est supprimé, il ne fonctionne plus en tant que site concentrateur.|
-||||
 
 ### <a name="exchange-mailbox-activities"></a>Activités de la boîte aux lettres Exchange
 
@@ -680,7 +673,6 @@ Le tableau suivant répertorie les activités qui peuvent être enregistrées pa
 |Message mis à jour|Update|Un message (ou ses propriétés) a été modifié.|
 |Utilisateur connecté à la boîte aux lettres|MailboxLogin|L’utilisateur s’est connecté à sa boîte aux lettres.|
 |Étiqueter un message en tant qu’enregistrement||Un utilisateur a appliqué une étiquette de rétention à un message électronique. Cette étiquette est configurée pour identifier l’élément en tant qu’enregistrement. |
-||||
 
 #### <a name="system-accounts-in-exchange-mailbox-audit-records"></a>Comptes système dans les enregistrements d’audits de boîte aux lettres Exchange
 
@@ -705,7 +697,6 @@ Le tableau suivant répertorie les activités d’administration des utilisateur
 |Propriété définie qui force l’utilisateur à changer de mot de passe.|Définir la modification forcée d’un mot de passe d’utilisateur.|Un administrateur a défini la propriété qui force un utilisateur à modifier son mot de passe lors de sa prochaine connexion à Microsoft 365.|
 |Propriétés de licence définies|Définir des propriétés de licence.|Un administrateur modifie les propriétés d’une licence attribuée à un utilisateur.|
 |Utilisateur mis à jour|Mettre à jour un utilisateur.|L'administrateur modifie une ou plusieurs propriétés d'un compte d'utilisateur. Pour obtenir la liste des propriétés utilisateur qui peuvent être mises à jour, consultez la section « Mettre à jour les attributs utilisateur » dans les [Événements de rapport d'audit Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).|
-||||
 
 ### <a name="azure-ad-group-administration-activities"></a>Activités d’administration des groupes Azure AD
 
@@ -721,7 +712,6 @@ Le tableau suivant répertorie les activités d’administration des groupes enr
 |Groupe supprimé|Supprimer un groupe.|Un groupe a été supprimé.|
 |Membre supprimé du groupe|Supprimer un membre d’un groupe.|Un membre a été supprimé d’un groupe.|
 |Groupe mis à jour|Mettre à jour un groupe.|Une propriété d’un groupe a été modifiée.|
-||||
 
 ### <a name="application-administration-activities"></a>Activités d’administration des applications
 
@@ -739,7 +729,6 @@ Le tableau suivant répertorie les activités d’administration des application
 |Principal de service supprimé de l’annuaire|Supprimer un principal du service.|Une application a été supprimée ou désinscrite de Azure AD. Une application est représentée par un principal de service dans l’annuaire.|
 |Les informations d’identification ont été supprimées du principal de service |Supprimer des informations d’identification d’un principal du service.|Des informations d’identification ont été supprimées d’un principal de service dans Azure AD. Un principal de service représente une application dans l’annuaire.|
 |Entrée de délégation définie|Définir une entrée de délégation.|Une autorisation d’authentification a été mise à jour pour une application dans Azure AD.|
-||||
 
 ### <a name="role-administration-activities"></a>Activités d’administration des rôles
 
@@ -753,7 +742,6 @@ Le tableau suivant répertorie les activités d’administration des rôles Azur
 |Membre ajouté au rôle|Ajouter un membre à un rôle.|Un utilisateur a été ajouté à un rôle d’administrateur dans Microsoft 365.|
 |Utilisateur supprimé d’un rôle d’annuaire|Supprimer un membre d’un rôle.|Un utilisateur a été supprimé d’un rôle d’administrateur dans Microsoft 365.|
 |Définition des informations de contact d’une entreprise|Définir des informations de contact professionnel.|Mise à jour des préférences de contact au niveau de l'entreprise pour votre organisation. Cela inclut les adresses e-mail pour les e-mails liés à l'abonnement envoyés par Microsoft 365 et les notifications techniques concernant les services.|
-||||
 
 ### <a name="directory-administration-activities"></a>Activités d’administration de l’annuaire
 
@@ -776,7 +764,6 @@ Le tableau suivant répertorie les activités liées à l’annuaire et au domai
 |Domaine mis à jour|Mettre à jour un domaine.|Les paramètres d’un domaine dans votre organisation ont été mis à jour.|
 |Domaine vérifié|Vérifier un domaine.|La propriété d’un domaine par votre organisation a été vérifiée.|
 |Domaine de courrier vérifié par courrier électronique|Vérifier un domaine vérifié d’e-mail.|Une vérification de courrier électronique a été effectuée pour vérifier que votre organisation est propriétaire d’un domaine.|
-||||
 
 ### <a name="ediscovery-activities"></a>Activités de découverte électronique
 
@@ -825,7 +812,6 @@ Analyse du temps de travail explique comment les groupes collaborent au sein de 
 |Utilisateur connecté<sup>*</sup>| Utilisateur connecté |Un utilisateur connecté à son compte d'utilisateur Microsoft 365.|
 |Utilisateur déconnecté<sup>*</sup>| UserLoggedOff |Un utilisateur s'est déconnecté de son compte d'utilisateur Microsoft 365.
 |Exploration de la consultation|ViewedExplore|Un analyste a consulté les visualisations dans un ou plusieurs onglets de page exploration.|
-||||
 
 > [!NOTE]
 > <sup>*</sup>Il s'agit des activités de connexion et de déconnexion Azure Active Directory Domain Services. Ces activités sont enregistrées même si Workplace Analytics n'est pas activé dans votre organisation. Pour plus d'informations sur les activités de connexion des utilisateurs, consultez [Journaux de connexion dans Azure Active Directory Domain Services](/azure/active-directory/reports-monitoring/concept-sign-ins).
@@ -880,7 +866,6 @@ Le tableau suivant répertorie les activités des utilisateurs et des administra
 |Message mis à jour<sup>*</sup>|MessageUpdated|Un utilisateur met à jour un message.|
 |Affichage d’un fichier|FileVisited|Un utilisateur affiche un fichier.|
 |Message affiché<sup>*</sup>|MessageViewed|Un utilisateur affiche un message.|
-||||
 
 ### <a name="microsoft-power-automate-activities"></a>Activités Microsoft Power Automate
 
@@ -901,7 +886,6 @@ Le tableau suivant répertorie les activités de l’Explorateur de contenu qui 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
 |Élément consulté|LabelContentExplorerAccessedItem|Un administrateur (ou utilisateur membre du groupe de rôles Visionneuse de contenu de l’Explorateur de contenu) utilise l’Explorateur de contenu pour afficher un e-mail ou un document SharePoint/OneDrive.|
-||||
 
 ### <a name="quarantine-activities"></a>Activités de mise en quarantaine
 
@@ -914,7 +898,6 @@ Le tableau suivant illustre une liste d’activités que vous pouvez rechercher 
 |Message de quarantaine visualisé|QuarantinePreview|Un utilisateur a visualisé un message électronique considéré comme dangereux.|
 |Message de quarantaine publié|QuarantineRelease|Un utilisateur a publié un message électronique de quarantaine considéré comme dangereux.|
 |En-tête du message de quarantaine consulté|QuarantineViewHeader|Un utilisateur a affiché l’en-tête d’un message électronique considéré comme dangereux.|
-||||
 
 ### <a name="microsoft-forms-activities"></a>Activités Microsoft Forms
 
@@ -973,7 +956,6 @@ Si une activité Forms est réalisée par un co-auteur ou un répondant anonyme,
 |Collection renommée|CollectionRenamed|Le propriétaire du formulaire a modifié le nom d’une collection.|
 |Un formulaire a été déplacé dans la collection|MovedFormIntoCollection|Le propriétaire du formulaire a déplacé un formulaire dans une collection.|
 |Un formulaire a été déplacé hors de la collection|MovedFormOutofCollection|Le propriétaire du formulaire a déplacé un formulaire d’une collection.|
-||||
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>Activités Forms réalisées par des co-auteurs et des répondants anonymes
 
@@ -989,7 +971,6 @@ Le tableau suivant décrit les activités d’audit et les informations figurant
 |Activités de réponse|Externe|UPN<br>|Organisation du répondant<br>|Répondant|
 |Activités de réponse|Externe|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(La deuxième partie de l’identifiant d’utilisateur est hachée de façon différente pour chaque utilisateur).|Organisation du propriétaire du formulaire|Répondant|
 |Activités de réponse|Anonyme|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(La deuxième partie de l’identifiant d’utilisateur est hachée de façon différente pour chaque utilisateur).|Organisation du propriétaire du formulaire|Répondant|
-||||
 
 ### <a name="sensitivity-label-activities"></a>Activités des étiquettes de confidentialité
 
@@ -1003,7 +984,6 @@ Le tableau suivant répertorie les événements qui résultent de l’utilisatio
 |Étiquette de confidentialité modifiée appliquée au fichier|FileSensitivityLabelChanged<br /><br>SensitivityLabelUpdated|Une étiquette de niveau de confidentialité différente a été appliquée à un document. <br /><br>Les opérations de cette activité sont différentes en fonction de la façon dont l’étiquette a été modifiée :<br /> Office sur le Web ou une stratégie d’étiquetage automatique (FileSensitivityLabelChanged) <br /> Microsoft 365 Apps (SensitivityLabelUpdated)|
 |Étiquette de confidentialité modifiée sur un site|SensitivityLabelChanged|Une étiquette de niveau de confidentialité différente a été appliquée à un site Microsoft Office SharePoint Online ou Teams.|
 |Suppression de l'étiquette de confidentialité sur le document|FileSensitivityLabelRemoved|Une étiquette de confidentialité a été supprimée d’un document à l’aide d’applications Microsoft 365, d’Office sur le Web, d’une stratégie d’étiquetage automatique ou de l’applet de commande [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile).|
-||||
 
 ### <a name="retention-policy-and-retention-label-activities"></a>Stratégie de rétention et activités d’étiquette de rétention
 
@@ -1025,7 +1005,6 @@ Le tableau suivant décrit les activités de configuration des [stratégies de r
 | Paramètres mis à jour pour une stratégie de rétention | SetRetentionComplianceRule | L’administrateur a modifié les paramètres de rétention d’une stratégie de rétention existante. Les paramètres de rétention incluent la durée de conservation des éléments et ce qu’il advient des éléments à l’expiration de la période de rétention (comme la suppression d’éléments, la conservation des éléments ou leur conservation puis leur suppression). Cette activité correspond également à l’exécution du cmdlet [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule). |
 | Étiquette de rétention mise à jour |SetComplianceTag  | Un administrateur a mis à jour une étiquette de rétention existante.|
 | Stratégie de rétention mise à jour |SetRetentionCompliancePolicy |L'administrateur a mis à jour une stratégie de rétention existante. Les mises à jour qui déclenchent cet événement incluent l'ajout ou l'exclusion d'emplacements de contenu auxquels la stratégie de rétention est appliquée.|
-||||
 
 ### <a name="briefing-email-activities"></a>Activités de récapitulatif des tâches par courrier électronique
 
@@ -1039,7 +1018,6 @@ Le tableau suivant répertorie les activités de l’e-mail de Récapitulatif de
 |:----|:-----|:-----|
 |Paramètres de confidentialité de l’organisation mis à jour|UpdatedOrganizationBriefingSettings|Un administrateur met à jour les paramètres de confidentialité de l’organisation pour le courrier de récapitulatif des tâches. |
 |Paramètres de confidentialité de l’utilisateur mis à jour|UpdatedUserBriefingSettings|Un administrateur met à jour les paramètres de confidentialité de l’utilisateur pour le courrier de récapitulatif des tâches.
-||||
 
 ### <a name="myanalytics-activities"></a>Activités MyAnalytics
 
@@ -1049,7 +1027,6 @@ Le tableau suivant répertorie les activités dans MyAnalytics qui sont enregist
 |:-----|:-----|:-----|
 |Mise à jour des paramètres de l'organisation MyAnalytics|UpdatedOrganizationMyAnalyticsSettings|Un administrateur met à jour les paramètres au niveau de l’organisation pour MyAnalytics. |
 |Mise à jour des paramètres MyAnalytics de l'utilisateur|UpdatedUserMyAnalyticsSettings|Un administrateur met à jour les paramètres utilisateur pour MyAnalytics.|
-||||
 
 ### <a name="information-barriers-activities"></a>Activités des obstacles aux informations
 
@@ -1060,7 +1037,6 @@ Le tableau suivant répertorie les activités du cloisonnement de l’informatio
 | Ajout de segments à un site | SegmentsAdded | Un administrateur général ou un propriétaire de site SharePoint a ajouté un ou plusieurs segments d’information qui empêchent l’accès à un site. |
 | Modification de segments d'un site | SegmentsChanged | Un administrateur SharePoint ou un administrateur général a modifié un ou plusieurs segments de obstacles aux informations pour un site. |
 | Suppression de segments d'un site | Segmentsremoved | Un administrateur SharePoint ou un administrateur général a supprimé un ou plusieurs segments de obstacles aux informations d’un site. |
-||||
 
 ### <a name="disposition-review-activities"></a>Activités de la révision avant destruction
 
@@ -1072,7 +1048,6 @@ Le tableau suivant répertorie les activités d'un réviseur de disposition lors
 |Étendue de la période de rétention|ExtendRetention|Un réviseur de destruction a étendu la période de rétention de l’élément.|
 |Élément réétiqueté|RelabelItem|Un réviseur de destruction a de nouveau étiqueté l’étiquette de rétention.|
 |Réviseurs ajoutés|AddReviewer|Un réviseur de destruction a ajouté un ou plusieurs autres utilisateurs à la phase d’examen de la révision avant destruction actuelle.|
-||||
 
 ### <a name="communication-compliance-activities"></a>Activités de conformité des communications
 
@@ -1083,7 +1058,6 @@ Le tableau suivant répertorie les activités de conformité de la communication
 |Mise à jour de stratégie|SupervisionPolicyCreated, SupervisionPolicyUpdated, SupervisionPolicyDeleted|Un administrateur de conformité des communications a effectué une mise à jour de stratégie.|
 |Correspondance de stratégie|SupervisionRuleMatch|Un utilisateur a envoyé un message qui correspond à la condition d’une stratégie.|
 |Balise appliquée aux messages|SupervisoryReviewTag|Les balises sont appliquées aux messages ou les messages sont résolus.|
-||||
 
 ### <a name="report-activities"></a>Activités de rapport
 
@@ -1092,7 +1066,6 @@ Le tableau suivant répertorie les activités des rapports d’utilisation enreg
 |**Nom convivial**|**Opération**|**Description**|
 |:-----|:-----|:-----|
 |Mise à jour des paramètres de confidentialité du rapport d’utilisation|UpdateUsageReportsPrivacySetting|Les paramètres de confidentialité des rapports d’utilisation ont été mis à jour par l’administrateur. |
-||||
 
 ### <a name="exchange-admin-audit-log"></a>Journal d’audit de l’administrateur Exchange
 

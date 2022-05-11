@@ -23,18 +23,18 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
-description: Découvrez comment valider les paramètres de protection des applications Microsoft 365 Business Premium sur vos appareils Android ou iOS.
-ms.openlocfilehash: 98b3110516d074fe945e1bb68652b40e93fa7fb7
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Découvrez comment valider les paramètres de protection des applications Microsoft 365 Business Premium dans vos appareils Android ou iOS.
+ms.openlocfilehash: 7e1355f71e9757e1055999e1951b4f093b0d21a0
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090682"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317913"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Valider les paramètres de protection des applications sur les appareils Android ou iOS
 
 > [!NOTE]
-> Microsoft Defender pour les PME est déployée pour Microsoft 365 Business Premium clients, à compter du 1er mars 2022. Cette offre fournit des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender entreprise](../../security/defender-business/mdb-overview.md)
+> Microsoft Defender pour les PME est déployée pour les clients Microsoft 365 Business Premium, à compter du 1er mars 2022. Cette offre fournit des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender entreprise](../../security/defender-business/mdb-overview.md)
 
 Suivez les instructions des sections suivantes pour valider les paramètres de protection des applications sur les appareils Android ou iOS.
   
@@ -42,7 +42,7 @@ Suivez les instructions des sections suivantes pour valider les paramètres de p
   
 ### <a name="check-that-the-app-protection-settings-are-working-on-user-devices"></a>Vérifier que les paramètres de protection des applications fonctionnent sur les appareils utilisateur
 
-Après avoir [défini les paramètres de protection des applications pour les appareils Android ou iOS](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md) afin de protéger les applications, vous pouvez suivre ces étapes pour vérifier que les paramètres que vous avez choisis fonctionnent. 
+Après avoir [défini les paramètres de protection des applications pour Android ou iOS appareils](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md) pour protéger les applications, vous pouvez suivre ces étapes pour vérifier que les paramètres que vous avez choisis fonctionnent. 
   
 Tout d’abord, assurez-vous que la stratégie s’applique à l’application dans laquelle vous allez la valider.
   
@@ -82,7 +82,7 @@ Dans le volet **Modifier une stratégie**, sélectionnez **Modifier** en regard 
   
 ![Verify that Force users to save all work files to OneDrive for Business is set to On.](../../media/7140fa1d-966d-481c-829f-330c06abb5a5.png)
   
-1. Sur l’appareil Android de l’utilisateur, ouvrez Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium de l’utilisateur, puis entrez un code confidentiel si nécessaire.
+1. Dans l’appareil Android de l’utilisateur, ouvrez Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium de l’utilisateur, puis entrez un code confidentiel si nécessaire.
     
 2. Ouvrez un e-mail qui contient une pièce jointe et appuyez sur l'icône de flèche vers le bas en regard des informations de la pièce jointe.
     
@@ -99,7 +99,7 @@ Dans le volet **Modifier une stratégie**, sélectionnez **Modifier** en regard 
 
 Dans le volet **Modifier** la stratégie, choisissez **Modifier** en regard **de Office contrôle d’accès aux documents**, **développez Gérer la façon dont les utilisateurs accèdent aux fichiers Office sur les appareils mobiles** et **assurez-vous que l’option Exiger que les utilisateurs se reconnectent après Office applications ont été inactives pendant** un certain nombre de minutes. Il s’agit de 30 minutes par défaut. 
   
-1. Sur l’appareil Android de l’utilisateur, ouvrez Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium de l’utilisateur, puis entrez un code confidentiel si nécessaire.
+1. Dans l’appareil Android de l’utilisateur, ouvrez Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium de l’utilisateur, puis entrez un code confidentiel si nécessaire.
     
 2. Vous devez maintenant voir la boîte de réception d'Outlook. Ne touchez pas à l'appareil Android pendant au moins 30 minutes (ou toute autre durée supérieure à celle que vous avez spécifiée dans la stratégie). L'appareil va probablement se mettre en veille.
     
@@ -111,7 +111,7 @@ Dans le volet **Modifier** la stratégie, choisissez **Modifier** en regard **de
 
 Dans le volet **Modifier une stratégie**, sélectionnez **Modifier** en regard de **Se prémunir contre la perte ou le vol d'appareils**, développez **Protéger les fichiers professionnels en cas de perte ou de vol des appareils** et vérifiez que l'option **Chiffrer les fichiers professionnels pour les protéger** est **activée** et que l'option **Obliger les utilisateurs à enregistrer tous les fichiers professionnels dans OneDrive Entreprise** est **désactivée**.
   
-1. Sur l’appareil Android de l’utilisateur, ouvrez Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium de l’utilisateur, puis entrez un code confidentiel si nécessaire.
+1. Dans l’appareil Android de l’utilisateur, ouvrez Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium de l’utilisateur, puis entrez un code confidentiel si nécessaire.
     
 2. Ouvrez un e-mail contenant quelques pièces jointes de fichier image.
     
@@ -208,4 +208,4 @@ Dans le volet **Modifier une stratégie**, sélectionnez **Modifier** en regard 
 
 ## <a name="see-also"></a>Voir aussi
 
-[10 principales façons de sécuriser Microsoft 365 pour les plans d’entreprise](../security-and-compliance/secure-your-business-data.md)
+[Meilleures pratiques pour sécuriser les plans Microsoft 365 pour les PME](../security-and-compliance/secure-your-business-data.md)

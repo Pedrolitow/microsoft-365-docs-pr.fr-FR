@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: 9/11/2017
+ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -20,18 +20,18 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment générer un rapport qui contient des informations sur toutes les conservations associées aux cas eDiscovery.
-ms.openlocfilehash: 1b36b134b8de490e5ca7d9e61044a3c7cac4904f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 25e201e1b8bef0a4ccc3724a6adab6c095f34d54
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097027"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318015"
 ---
 # <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>Utiliser un script pour créer un rapport sur les conservations dans les cas eDiscovery
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Le script de cet article permet aux administrateurs eDiscovery et aux responsables eDiscovery de générer un rapport qui contient des informations sur toutes les conservations associées aux cas Core et eDiscovery (Premium) dans le portail de conformité Microsoft Purview. Le rapport contient des informations telles que le nom du cas auquel une conservation est associée, les emplacements de contenu mis en attente et la question de savoir si la conservation est basée sur une requête. S’il existe des cas qui n’ont pas de conservations, le script crée un rapport supplémentaire avec une liste de cas sans conservation.
+Le script de cet article permet aux administrateurs eDiscovery et aux responsables eDiscovery de générer un rapport qui contient des informations sur toutes les conservations associées aux cas eDiscovery (Standard) et eDiscovery (Premium) dans le portail de conformité Microsoft Purview. Le rapport contient des informations telles que le nom du cas auquel une conservation est associée, les emplacements de contenu mis en attente et la question de savoir si la conservation est basée sur une requête. S’il existe des cas qui n’ont pas de conservations, le script crée un rapport supplémentaire avec une liste de cas sans conservation.
 
 Consultez la section [Plus d’informations](#more-information) pour obtenir une description détaillée des informations incluses dans le rapport.
 
@@ -203,7 +203,7 @@ Le cas contient le rapport créé lorsque vous exécutez le script dans cet arti
 
 - Nom de la conservation et nom du cas eDiscovery auquel la conservation est associée.
 
-- Indique si la conservation est associée à un cas Core ou eDiscovery (Premium).
+- Indique si la conservation est associée à un cas eDiscovery (Standard) ou eDiscovery (Premium).
 
 - Indique si le cas eDiscovery est actif ou fermé.
 

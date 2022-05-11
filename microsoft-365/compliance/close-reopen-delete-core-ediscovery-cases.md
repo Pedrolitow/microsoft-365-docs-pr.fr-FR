@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment gérer les cas eDiscovery (Standard). Cela inclut la fermeture d’un cas, la réouverture d’un dossier fermé et la suppression d’un cas.
-ms.openlocfilehash: 27dc46fcfe65b6a39c3a217fd72fcc97037ccb99
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f527d206e7112534db557928daf6ab8942c60d1c
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094006"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318313"
 ---
 # <a name="close-reopen-and-delete-a-ediscovery-standard-case"></a>Fermer, rouvrir et supprimer un cas eDiscovery (Standard)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Cet article explique comment fermer, rouvrir et supprimer des cas Microsoft Purview eDiscovery (Standard) dans Microsoft 365.
+Cet article explique comment fermer, rouvrir et supprimer Microsoft Purview cas eDiscovery (Standard) dans Microsoft 365.
 
 ## <a name="close-a-case"></a>Fermer un cas
 
@@ -38,13 +38,13 @@ Lorsque l’affaire juridique ou l’enquête prise en charge par une affaire eD
 
 - La fermeture d’un cas désactive uniquement les conservations associées à ce cas. Si d’autres conservations sont placées sur un emplacement de contenu (par exemple, une conservation pour litige, une stratégie de rétention ou une conservation d’un autre cas eDiscovery (Standard), ces conservations sont conservées.
 
-- Le cas est toujours répertorié sur la page eDiscovery (Standard) dans le portail de conformité Microsoft Purview. Les détails, les conservations, les recherches et les membres d’un cas fermé sont conservés.
+- Le cas est toujours répertorié dans la page eDiscovery (Standard) du portail de conformité Microsoft Purview. Les détails, les conservations, les recherches et les membres d’un cas fermé sont conservés.
 
 - Vous pouvez modifier un cas après sa fermeture. Par exemple, vous pouvez ajouter ou supprimer des membres, créer des recherches et exporter des résultats de recherche. La principale différence entre les cas actifs et fermés est que les conservations eDiscovery sont désactivées lorsqu’un cas est fermé.
 
 Pour fermer un cas :
   
-1. Dans le portail de conformité, cliquez sur **eDiscoveryCore** >  pour afficher la liste des cas eDiscovery (Standard) dans votre organisation.
+1. Dans le portail de conformité, cliquez sur **eDiscoveryeDiscovery** >  **(Standard)** pour afficher la liste des cas eDiscovery (Standard) dans votre organisation.
 
 2. Cliquez sur le nom du cas que vous souhaitez fermer.
 
@@ -104,7 +104,7 @@ Pour supprimer une conservation eDiscovery :
 
 Pour supprimer un cas :
 
-1. Dans le portail de conformité, cliquez sur **eDiscoveryCore** >  pour afficher la liste des cas eDiscovery (Standard) dans votre organisation.
+1. Dans le portail de conformité, cliquez sur **eDiscoveryeDiscovery** >  **(Standard)** pour afficher la liste des cas eDiscovery (Standard) dans votre organisation.
 
 2. Cliquez sur le nom du cas à supprimer.
 

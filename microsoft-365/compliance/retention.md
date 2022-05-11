@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 6fd2f56d6876b6a3832e869767880890486551db
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: c8ac850c77c97cbcc313108ffc74e05aa1735fde
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286921"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302220"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -101,9 +101,11 @@ Contrairement aux stratégies de rétention, les paramètres de rétention des �
 
 - Utilisez [classifieurs entraînables](classifier-learn-about.md) pour identifier le contenu à étiqueter.
 
-- Appliquez une étiquette par défaut pour les documents SharePoint.
+- Appliquez une étiquette par défaut pour les éléments SharePoint ou les messages Exchange.
 
-- Utilisez la [révision avant destruction](./disposition.md)pour réviser le contenu avant sa suppression définitive.
+- Actions prises en charge à la fin de la période de rétention :
+    - [Révision avant destruction](./disposition.md) pour réviser le contenu avant sa suppression définitive.
+    - Appliquer automatiquement une autre étiquette de rétention
 
 - Marquez le contenu en tant qu’[enregistrement ](records-management.md#records) au niveau des paramètres d’étiquette, et conservez toujours une [preuve de destruction](disposition.md#disposition-of-records)lorsque le contenu est supprimé à la fin de sa période de rétention.
 
@@ -219,14 +221,18 @@ Pour les étiquettes de rétention standard (les éléments ne sont pas marqués
 
 - Lorsqu’une étiquette de rétention est déjà appliquée au contenu, celle-ci n’est pas automatiquement supprimée ou remplacée par une autre étiquette de rétention, à une exception près : l’étiquette existante a été appliquée comme étiquette par défaut. Lorsque vous utilisez une étiquette par défaut, il existe certains scénarios où elle peut être remplacée par une autre étiquette par défaut ou automatiquement supprimée.
 
-  Pour plus d’informations sur le comportement des étiquettes lorsqu’elles sont appliquées à l’aide d’une étiquette par défaut :
-
-  - Étiquette par défaut de SharePoint : [le comportement des étiquettes lorsque vous utilisez une étiquette par défaut pour SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
-  - Étiquette par défaut pour Outlook : [l’application d’une étiquette de rétention par défaut à un dossier Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+- Lorsqu’une étiquette de rétention est déjà appliquée au contenu, l’étiquette existante n’est pas automatiquement supprimée ou remplacée par une autre étiquette de rétention, à deux exceptions près : 
+    
+    - L’étiquette existante est configurée pour appliquer automatiquement une autre étiquette de rétention à la fin de la période de rétention.
+    - L’étiquette existante a été appliquée comme étiquette par défaut Lorsque vous utilisez une étiquette par défaut, il existe certains scénarios où elle peut être remplacée par une autre étiquette par défaut ou automatiquement supprimée. 
+        
+        Pour plus d’informations sur le comportement des étiquettes lorsqu’elles sont appliquées à l’aide d’une étiquette par défaut :
+        - Étiquette par défaut de SharePoint : [le comportement des étiquettes lorsque vous utilisez une étiquette par défaut pour SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
+        - Étiquette par défaut pour Outlook : [l’application d’une étiquette de rétention par défaut à un dossier Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 
 - S’il existe plusieurs règles qui affectent une étiquette à appliquer automatiquement et que le contenu remplit les critères de plusieurs stratégies, l’étiquette de rétention de la plus ancienne stratégie d'étiquetage automatique (par date de création) est affectée.
 
-Lorsque les étiquettes de rétention indiquent des éléments sous la forme d’un enregistrement ou d’un enregistrement réglementaire, ces étiquettes ne sont jamais modifiées automatiquement. Seuls les administrateurs du conteneur peuvent modifier ou supprimer manuellement les étiquettes de rétention qui marquent les éléments comme un enregistrement, mais pas les enregistrements réglementaires. Pour obtenir plus d’informations, voir [Comparer des restrictions relatives aux actions autorisées ou bloquées](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
+Lorsque les étiquettes de rétention indiquent des éléments sous la forme d’un enregistrement ou d’un enregistrement réglementaire, ces étiquettes ne sont jamais modifiées automatiquement pendant leur période de rétention configurée. Seuls les administrateurs du conteneur peuvent modifier ou supprimer manuellement les étiquettes de rétention qui marquent les éléments comme un enregistrement, mais pas les enregistrements réglementaires. Pour obtenir plus d’informations, voir [Comparer des restrictions relatives aux actions autorisées ou bloquées](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 #### <a name="monitoring-retention-labels"></a>Contrôle des étiquettes de conservation
 
@@ -254,6 +260,7 @@ Utilisez le tableau suivant pour savoir si vous devez utiliser une stratégie ou
 |Paramètres de rétention permettant conservation puis suppression, conservation uniquement ou suppression uniquement |Oui |Oui |
 |Charges de travail prises en charge : <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Groupes Microsoft 365 <br />- Skype Entreprise <br />- Teams<br />- Yammer|<br /> Oui <br /> Oui <br /> Oui <br /> Oui <br /> Oui <br /> Oui <br /> Oui | <br /> Oui, sauf dossiers publics <br /> Oui <br /> Oui <br /> Oui <br /> Non <br /> Non <br /> Non |
 |Rétention appliquée automatiquement | Oui | Oui |
+|Appliquer automatiquement des paramètres de rétention différents à la fin de la période de rétention | Non | Oui |
 |Rétention appliquée en fonction de conditions <br /> - types d'informations sensibles, requêtes KQL et mots-clés, classificateurs entraînables, pièces jointes en nuage| Non | Oui |
 |Rétention appliquée manuellement | Non | Oui |
 |Interaction de l’utilisateur final | Non | Oui |

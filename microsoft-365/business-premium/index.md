@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business Premium vue d’ensemble
+title: Vue d’ensemble de Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Découvrez comment implémenter la cybersécurité pour les petites ou moyennes entreprises avec Microsoft 365 Business Premium. Les fonctionnalités et fonctionnalités de cybersécurité sont optimisées pour empêcher les cyberattaques et les violations de la sécurité, et aider à protéger les données, les appareils et les informations avec des cyberdéfenses de haut niveau.
-ms.openlocfilehash: ac152ca67e7bdf62931b64e008669ca60b0a8031
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2d6ffd452e04c755fd60fcf7cad0d228005c5510
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100016"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320091"
 ---
 # <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>&mdash; Microsoft 365 Business Premium cybersécurité pour les petites entreprises
 
@@ -52,7 +52,7 @@ Dans ces premières missions, connectez-vous et configurez vos murs de défense 
 
 ## <a name="cybersecurity-playbook"></a>Playbook sur la cybersécurité
 
-Les conseils de ces missions aident votre entreprise à atteindre les objectifs décrits dans le  [playbook de la campagne de cybersécurité](https://go.microsoft.com/fwlink/p/?linkid=2015598) de la Harvard Kennedy School. Vous pouvez télécharger un résumé.
+Les conseils de ces missions sont basés sur la méthodologie de confiance zéro et aident votre entreprise à atteindre les objectifs décrits dans le  [playbook de la campagne de cybersécurité](https://go.microsoft.com/fwlink/p/?linkid=2015598) de l’École Harvard Kennedy. Vous pouvez télécharger un résumé.
 
 Cliquez sur l’infographie pour afficher une version plus grande, ou [téléchargez une copie de l’affiche du playbook Cybersecurity](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf) !
 
@@ -64,7 +64,7 @@ Cliquez sur l’infographie pour afficher une version plus grande, ou [télécha
 
 Cliquez ici pour découvrir les [avantages de Microsoft 365 Business Premium](m365bp-secure-users.md).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Maintenant, nous allons [fortifier votre environnement contre les cyberattaques](m365bp-setup-overview.md)!
 
@@ -85,7 +85,7 @@ Nous avons inclus un ensemble de missions ici avec certains objectifs qui doiven
 
 ## <a name="cybersecurity-playbook"></a>Playbook sur la cybersécurité
 
-Les conseils de ces missions aident votre entreprise à atteindre les objectifs décrits dans le  [playbook de la campagne de cybersécurité](https://go.microsoft.com/fwlink/p/?linkid=2015598) de la Harvard Kennedy School. Vous pouvez télécharger un résumé.
+Les conseils de ces missions sont basés sur la méthodologie de confiance zéro et aident votre entreprise à atteindre les objectifs décrits dans le  [playbook de la campagne de cybersécurité](https://go.microsoft.com/fwlink/p/?linkid=2015598) de l’École Harvard Kennedy. Vous pouvez télécharger un résumé.
 
 Cliquez sur l’infographie pour afficher une version plus grande, ou [téléchargez une copie de l’affiche du playbook Cybersecurity](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf) !
 
@@ -97,7 +97,7 @@ Cliquez sur l’infographie pour afficher une version plus grande, ou [télécha
 
 Cliquez ici pour découvrir les [avantages de Microsoft 365 Business Premium](m365bp-secure-users.md).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Maintenant, nous allons [fortifier votre environnement contre les cyberattaques](m365bp-setup-overview.md)!
 
@@ -114,7 +114,7 @@ Un appareil sécurisé est surveillé par l’organisation. Dans cette dernière
 
 ## <a name="cybersecurity-playbook"></a>Playbook sur la cybersécurité
 
-Les conseils de ces missions aident votre entreprise à atteindre les objectifs décrits dans le  [playbook de la campagne de cybersécurité](https://go.microsoft.com/fwlink/p/?linkid=2015598) de la Harvard Kennedy School. Vous pouvez télécharger un résumé.
+Les conseils de ces missions sont basés sur la méthodologie de confiance zéro et aident votre entreprise à atteindre les objectifs décrits dans le  [playbook de la campagne de cybersécurité](https://go.microsoft.com/fwlink/p/?linkid=2015598) de l’École Harvard Kennedy. Vous pouvez télécharger un résumé.
 
 Cliquez sur l’infographie pour afficher une version plus grande, ou [téléchargez une copie de l’affiche du playbook Cybersecurity](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf) !
 
@@ -126,7 +126,7 @@ Cliquez sur l’infographie pour afficher une version plus grande, ou [télécha
 
 Cliquez ici pour découvrir les [avantages de Microsoft 365 Business Premium](m365bp-secure-users.md).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Maintenant, nous allons [fortifier votre environnement contre les cyberattaques](m365bp-setup-overview.md)!
 

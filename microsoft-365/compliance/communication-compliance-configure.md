@@ -22,12 +22,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b5752d0ebeb0095defe47f52529392e4b9c01212
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: c4e28c91cc7e7fe441d000553e9099ad39420991
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973726"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317045"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
@@ -71,12 +71,12 @@ L’activité impliquant des [types d’informations sensibles](/microsoft-365/c
 > [!IMPORTANT]
 > Après avoir configuré vos groupes de rôles, l’application des autorisations de groupe de rôles aux utilisateurs affectés au sein de votre organisation peut prendre jusqu’à 30 minutes.
 
-Six groupes de rôles sont utilisés pour configurer les autorisations initiales pour gérer les fonctionnalités de conformité des communications. Pour rendre **la conformité des communications** disponible en tant qu’option de menu dans le portail de conformité Microsoft Purview et pour poursuivre ces étapes de configuration, vous devez être affecté à l’un des rôles ou groupes de rôles suivants :
+Six groupes de rôles sont utilisés pour configurer les autorisations initiales pour gérer les fonctionnalités de conformité des communications. Pour rendre **la conformité des communications** disponible en tant qu’option de menu dans portail de conformité Microsoft Purview et pour poursuivre ces étapes de configuration, vous devez être affecté à l’un des rôles ou groupes de rôles suivants :
 
 - Azure Active Directory rôle [*d’administrateur général*](/azure/active-directory/roles/permissions-reference#global-administrator)
 - Azure Active Directory rôle [*d’administrateur de conformité*](/azure/active-directory/roles/permissions-reference#compliance-administrator)
-- Groupe de rôles [*Gestion de l’organisation du*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) portail de conformité Microsoft Purview
-- Groupe de [*rôles Administrateur*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) de conformité du portail de conformité Microsoft Purview
+- portail de conformité Microsoft Purview groupe [*de rôles Gestion de l’organisation*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
+- groupe de [*rôles administrateur de conformité*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) portail de conformité Microsoft Purview
 - *Groupe de rôles Conformité des communications*
 - *Groupe de rôles Administrateur de la conformité des communications*
 
@@ -84,8 +84,8 @@ Les membres des rôles suivants disposent des mêmes autorisations de solution i
 
 - *administrateur général* Azure Active Directory
 - *administrateur de conformité* Azure Active Directory
-- *Gestion de l’organisation* du portail de conformité Microsoft Purview
-- *Administrateur* de conformité du portail de conformité Microsoft Purview
+- *gestion de l’organisation* portail de conformité Microsoft Purview
+- *Administrateur de conformité* portail de conformité Microsoft Purview
 
 > [!IMPORTANT]
 > Assurez-vous d’avoir toujours au moins un utilisateur dans les groupes de rôles *Conformité* des communications ou Administration de la *conformité* des communications (en fonction de l’option que vous choisissez) afin que votre configuration de conformité des communications n’accède pas à un scénario « zéro administrateur » si des utilisateurs spécifiques quittent votre organisation.
@@ -159,7 +159,7 @@ Utilisez le graphique suivant pour vous aider à configurer des groupes dans vot
 | **Membre de stratégie** | **Groupes pris en charge** | **Groupes non pris en charge** |
 |:-----|:-----|:-----|
 |Utilisateurs supervisés <br> Utilisateurs exclus | Groupes de distribution <br> Groupes Microsoft 365 | Groupes de distribution dynamique <br> Groupes de distribution imbriqués <br> Groupes de sécurité à extension messagerie <br> Microsoft 365 groupes avec appartenance dynamique |
-| Relecteurs | Aucun | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de distribution imbriqués <br> Groupes de sécurité à extension messagerie |
+| Relecteurs | Aucune | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de distribution imbriqués <br> Groupes de sécurité à extension messagerie |
 
 Lorsque vous affectez un *groupe de distribution* dans la stratégie, la stratégie surveille tous les e-mails et Teams conversations de chaque utilisateur du *groupe de distribution*. Lorsque vous affectez un *groupe Microsoft 365* dans la stratégie, la stratégie surveille tous les e-mails et Teams conversations envoyées au *groupe Microsoft 365** et non les e-mails et conversations individuels reçus par chaque membre du groupe. L’utilisation de groupes de distribution dans les stratégies de conformité des communications est recommandée afin que les e-mails individuels et les conversations Teams de chaque utilisateur soient automatiquement surveillés.
 
@@ -201,7 +201,7 @@ Pour plus d’informations sur la configuration de groupes, consultez :
 
 ## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>Étape 4 (facultatif) : vérifier que votre locataire Yammer est en mode natif
 
-En mode natif, tous les utilisateurs Yammer sont en Azure Active Directory (Azure AD), tous les groupes sont Office 365 groupes et tous les fichiers sont stockés dans SharePoint Online. Votre locataire Yammer doit être en mode natif pour que les stratégies de conformité des communications analysent et identifient les conversations à risque dans les messages privés et les conversations de la communauté dans Yammer.
+En mode natif, tous les utilisateurs Yammer sont en Azure Active Directory (Azure AD), tous les groupes sont des groupes Office 365 et tous les fichiers sont stockés dans SharePoint Online. Votre locataire Yammer doit être en mode natif pour que les stratégies de conformité des communications analysent et identifient les conversations à risque dans les messages privés et les conversations de la communauté dans Yammer.
 
 Pour plus d’informations sur la configuration de Yammer en mode natif, consultez :
 
@@ -312,7 +312,7 @@ Vous pouvez également choisir d’activer l’anonymisation pour les noms d’u
 
 ## <a name="step-8-optional-test-your-communication-compliance-policy"></a>Étape 8 (facultatif) : Tester votre stratégie de conformité des communications
 
-Une fois que vous avez créé une stratégie de conformité des communications, il est judicieux de la tester pour vous assurer que les conditions que vous avez définies sont correctement appliquées par la stratégie. Vous pouvez également [tester vos stratégies de protection contre la perte de données (DLP) Microsoft Purview](create-test-tune-dlp-policy.md) si vos stratégies de conformité des communications incluent des types d’informations sensibles. Veillez à laisser à vos stratégies le temps de s’activer afin que les communications que vous souhaitez tester soient capturées.
+Une fois que vous avez créé une stratégie de conformité des communications, il est judicieux de la tester pour vous assurer que les conditions que vous avez définies sont correctement appliquées par la stratégie. Vous pouvez également [tester vos stratégies Protection contre la perte de données Microsoft Purview (DLP)](create-test-tune-dlp-policy.md) si vos stratégies de conformité des communications incluent des types d’informations sensibles. Veillez à laisser à vos stratégies le temps de s’activer afin que les communications que vous souhaitez tester soient capturées.
 
 Procédez comme suit pour tester votre stratégie de conformité des communications :
 
@@ -321,13 +321,13 @@ Procédez comme suit pour tester votre stratégie de conformité des communicati
 2. Envoyez un e-mail, une conversation Microsoft Teams ou Yammer message qui répond aux critères que vous avez définis dans la stratégie de conformité des communications. Ce test peut être un mot clé, une taille de pièce jointe, un domaine, etc. Veillez à déterminer si vos paramètres conditionnels configurés dans la stratégie sont trop restrictifs ou trop souples.
 
     > [!NOTE]
-    > Le traitement complet des messages électroniques dans une stratégie peut prendre jusqu’à 24 heures. Les communications dans Microsoft Teams, les Yammer et les plateformes tierces peuvent prendre jusqu’à 48 heures pour être entièrement traitées dans une stratégie.
+    > Le traitement complet des messages électroniques dans une stratégie peut prendre environ 24 heures. Les communications dans les plateformes Microsoft Teams, Yammer et tierces peuvent prendre environ 48 heures pour être entièrement traitées dans une stratégie.
 
 3. Connectez-vous à Microsoft 365 en tant que réviseur désigné dans la stratégie de conformité des communications. Accédez à **Communication** **complianceAlerts** >  pour afficher les alertes de vos stratégies.
 
 4. Corrigez l’alerte à l’aide des contrôles de correction et vérifiez que l’alerte est correctement résolue.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Une fois que vous avez effectué ces étapes pour créer votre première stratégie de conformité des communications, vous commencerez à recevoir des alertes à partir d’indicateurs d’activité après 24 à 48 heures. Configurez des stratégies supplémentaires en fonction des besoins en suivant les instructions de l’étape 5 de cet article.
 

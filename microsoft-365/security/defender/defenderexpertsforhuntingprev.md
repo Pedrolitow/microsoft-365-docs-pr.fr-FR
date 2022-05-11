@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4c4b4e1310d56969b52de11ba51dd0f5f5ea62f9
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: be44a55774d1b201d2f1d99fe78994905d671e80
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302369"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320390"
 ---
 # <a name="microsoft-defender-experts-for-hunting-preview"></a>Microsoft Defender Experts for Hunting (préversion)
 
@@ -52,7 +52,7 @@ Defender Experts for Hunting fournit des notifications d’attaque ciblées dire
 ## <a name="apply-for-microsoft-defender-experts-for-hunting-service-preview"></a>Appliquer pour la préversion du service Microsoft Defender Experts for Hunting
 
 >[!IMPORTANT]
->Avant de présenter votre demande, veillez à discuter des conditions d’éligibilité des experts Defender pour la chasse avec votre fournisseur de services techniques Microsoft et votre équipe de compte. La préversion se remplit rapidement et la disponibilité est très limitée. Si nous ne pouvons pas vous faire entrer, nous vous contacterons dès que le service Microsoft Defender Experts for Hunting est prêt pour une disponibilité générale. 
+>Avant de présenter votre demande, veillez à discuter des conditions d’éligibilité des experts Defender pour la chasse avec votre fournisseur de services techniques Microsoft et votre équipe de compte. La préversion se remplit rapidement et la disponibilité est très limitée. Si nous ne pouvons pas vous faire entrer, nous vous contacterons dès que le service Microsoft Defender Experts for Hunting sera prêt pour la disponibilité générale. 
 
 Si vous ne l’avez pas encore fait, vous pouvez demander des experts Defender pour la chasse :
 
@@ -92,7 +92,7 @@ Consultez la capture d’écran d’un exemple ci-dessous :
 
 ## <a name="collaborate-with-experts-on-demand"></a>Collaborer avec des experts à la demande
 
-Vous pouvez consulter defender experts pour la chasse directement à l’intérieur du portail de sécurité Microsoft 365, pour une réponse rapide et précise aux menaces. Les experts peuvent fournir des insights pour mieux comprendre les menaces complexes auxquelles votre organisation peut faire face. Consultez un expert pour :
+Vous pouvez consulter Defender Experts for Hunting directement à l’intérieur du portail de sécurité Microsoft 365 pour obtenir une réponse rapide et précise aux menaces. Les experts peuvent fournir des insights pour mieux comprendre les menaces complexes auxquelles votre organisation peut faire face. Consultez un expert pour :
 
 - Collecter des informations supplémentaires sur les alertes et les incidents, notamment les causes et l’étendue racine
 - Clarifier les appareils suspects, les alertes ou les incidents et suivre les étapes suivantes si vous êtes confronté à un attaquant avancé

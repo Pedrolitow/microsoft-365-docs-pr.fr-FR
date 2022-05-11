@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: Découvrez comment utiliser Microsoft 365 pour les PME pour rétablir les paramètres d’usine les appareils Windows 10 que vous gérez, en les rétablissant à leurs paramètres d’origine lors de l’achat.
-ms.openlocfilehash: ef91a761202989afabd0ac2478250d4311eae664
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a43ebd545ca16dc846e02b485a8c087c4cb87bac
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095181"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320255"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Rétablir les paramètres par défaut des appareils Windows 10
 
@@ -52,4 +52,4 @@ La rétablissement des paramètres d'usine rétablit les paramètres d'origine d
   
 ## <a name="see-also"></a>Voir aussi
 
-[10 principales façons de sécuriser les plans Microsoft 365 pour les entreprises](../admin/security-and-compliance/secure-your-business-data.md)
+[Meilleures pratiques pour sécuriser les plans Microsoft 365 pour les PME](../admin/security-and-compliance/secure-your-business-data.md)

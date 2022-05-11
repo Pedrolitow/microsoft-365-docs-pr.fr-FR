@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,14 +14,14 @@ ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment utiliser la fonctionnalité de statistiques de recherche pour afficher des statistiques pour les recherches de contenu associées à un cas eDiscovery (Standard) dans le portail de conformité Microsoft Purview.
+description: Découvrez comment utiliser la fonctionnalité de statistiques de recherche pour afficher des statistiques pour les recherches de contenu et les recherches associées à un cas eDiscovery (Standard) dans le portail de conformité Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d96ad67a638ab3917743e64462debd9f2c94ef4d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: cc8e249f62b0dbfbeaa6bcf32e7873ca2ff5b36d
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092202"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318069"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>Afficher les statistiques pour les résultats de la recherche eDiscovery
 
@@ -43,7 +43,7 @@ Pour afficher les statistiques d’une recherche de contenu ou d’une recherche
 
      OR
 
-   - Cliquez sur **eDiscoveryCore** > , sélectionnez un cas, puis sélectionnez une recherche sous l’onglet **Recherches** pour afficher la page de menu volant.
+   - Cliquez sur **eDiscoveryeDiscovery** >  **(Standard),** sélectionnez un cas, puis sélectionnez une recherche sous l’onglet **Recherches** pour afficher la page de menu volant.
 
 2. Dans la page volante de la recherche sélectionnée, cliquez sur l’onglet **Statistiques de la recherche** .
   
@@ -51,7 +51,7 @@ Pour afficher les statistiques d’une recherche de contenu ou d’une recherche
 
 L’onglet Statistiques de recherche contient **les sections suivantes** qui contiennent différents types de statistiques sur la recherche.
 
-### <a name="search-content"></a>Rechercher du contenu
+### <a name="search-content"></a>Contenu de la recherche
 
 Cette section affiche un résumé graphique des éléments estimés retournés par la recherche. Cela indique le nombre d’éléments qui correspondent aux critères de recherche. Ces informations vous donnent une idée du nombre estimé d’éléments retournés par la recherche.
 

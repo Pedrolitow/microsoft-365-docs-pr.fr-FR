@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur DataParser 17a-4 Skype Entreprise Server pour importer et archiver des données Skype Entreprise Server dans Microsoft 365.
-ms.openlocfilehash: d1daedd7be239fa29746d51b625a633952461d09
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3842c8727dc33fd7d28c5a72537b39c71476ce66
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092522"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320781"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-server-data"></a>Configurer un connecteur pour archiver des données Skype Entreprise Server
 
@@ -25,7 +25,7 @@ ms.locfileid: "65092522"
 
 Utilisez le [Skype Server DataParser](https://www.17a-4.com/skype-server-dataparser/) de 17a-4 LLC pour importer et archiver des données d’un Skype Entreprise Server vers des boîtes aux lettres utilisateur de votre organisation Microsoft 365. DataParser inclut un connecteur Skype Entreprise configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur DataParser Skype Entreprise Server convertit Skype Entreprise Server données au format d’e-mail, puis importe ces éléments dans des boîtes aux lettres utilisateur dans Microsoft 365.
 
-Une fois que Skype Entreprise Server données sont stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, la découverte électronique, les stratégies de rétention et les étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur Skype Entreprise Server pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois Skype Entreprise Server données stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer Microsoft Purview fonctionnalités telles que la conservation des litiges, la découverte électronique, les stratégies de rétention et les étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur Skype Entreprise Server pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-skype-for-business-server-data"></a>Vue d’ensemble de l’archivage Skype Entreprise Server données
 
@@ -37,7 +37,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 2. Régulièrement, Skype Entreprise Server éléments sont collectés par dataParser. DataParser convertit également le contenu d’un message au format de message électronique.
 
-3. Le Skype Entreprise Server connecteur DataParser que vous créez dans le portail de conformité Microsoft Purview se connecte à DataParser et transfère les messages à un emplacement stockage Azure sécurisé dans le cloud Microsoft.
+3. Le connecteur Skype Entreprise Server DataParser que vous créez dans le portail de conformité Microsoft Purview se connecte à DataParser et transfère les messages à un emplacement stockage Azure sécurisé dans le cloud Microsoft.
 
 4. Un sous-dossier du dossier Boîte de réception nommé **Skype Entreprise Server DataParser** est créé dans les boîtes aux lettres utilisateur et les éléments Skype Entreprise Server sont importés dans ce dossier. Le connecteur détermine la boîte aux lettres vers laquelle importer des éléments à l’aide de la valeur de la propriété *Email* . Chaque élément Skype Entreprise Server contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant.
 
@@ -79,7 +79,7 @@ Après avoir créé un Skype Entreprise Server connecteur DataParser, vous pouve
 
 2. Cliquez sur l’onglet **Connecteurs**, puis sélectionnez le Skype Entreprise Server connecteur DataParser que vous avez créé pour afficher la page de menu volant, qui contient les propriétés et les informations sur le connecteur.
 
-3. Sous **État du connecteur avec source**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des données qui ont été importées dans le cloud Microsoft.
+3. Sous **État du connecteur avec source**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur les données qui ont été importées dans le cloud Microsoft. Pour plus d’informations, consultez [Afficher les journaux d’administration pour les connecteurs de données](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Problèmes détectés
 

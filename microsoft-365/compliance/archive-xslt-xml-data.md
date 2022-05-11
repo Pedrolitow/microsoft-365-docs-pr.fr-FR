@@ -12,20 +12,20 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données XSLT/XML à partir de Veritas dans Microsoft 365. Ce connecteur vous permet d’archiver les données de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: fbc7c170d31c1278b58a63953864ab6b1457db86
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 450294107ce9ef7d138a60e4fcc5de47bce47ef1
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093589"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319393"
 ---
 # <a name="set-up-a-connector-to-archive-xsltxml-data"></a>Configurer un connecteur pour archiver des données XSLT/XML
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Utilisez un connecteur Veritas dans le portail de conformité Microsoft Purview pour importer et archiver des données de la source de page Web vers les boîtes aux lettres utilisateur de votre organisation Microsoft 365. Veritas vous fournit un [connecteur XSLT/XML](https://globanet.com/xslt-xml) qui permet le développement rapide de fichiers créés à l’aide de XSLT (transformations de langage de feuille de style extensible) pour transformer des fichiers XML en d’autres formats de fichiers (tels que HTML ou texte) qui peuvent être importés dans Microsoft 365. Le connecteur convertit le contenu d’un élément de la source XSLT/XML au format de message électronique, puis importe l’élément converti en boîtes aux lettres Microsoft 365.
+Utilisez un connecteur Veritas dans le portail de conformité Microsoft Purview pour importer et archiver des données de la source de page Web vers des boîtes aux lettres utilisateur de votre organisation Microsoft 365. Veritas vous fournit un [connecteur XSLT/XML](https://globanet.com/xslt-xml) qui permet le développement rapide de fichiers créés à l’aide de XSLT (transformations de langage de feuille de style extensible) pour transformer des fichiers XML en d’autres formats de fichiers (tels que HTML ou texte) qui peuvent être importés dans Microsoft 365. Le connecteur convertit le contenu d’un élément de la source XSLT/XML au format de message électronique, puis importe l’élément converti en boîtes aux lettres Microsoft 365.
 
-Une fois que les données XSLT/XML sont stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, eDiscovery, ainsi que des stratégies de rétention et des étiquettes de rétention. L’utilisation d’un connecteur XSLT/XML pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois les données XSLT/XML stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer Microsoft Purview fonctionnalités telles que la conservation des litiges, eDiscovery et les stratégies de rétention et étiquettes de rétention. L’utilisation d’un connecteur XSLT/XML pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-xsltxml-data"></a>Vue d’ensemble de l’archivage des données XSLT/XML
 
@@ -85,7 +85,7 @@ Après avoir créé le connecteur XSLT/XML, vous pouvez afficher l’état du co
 
 2. Cliquez sur l’onglet **Connecteurs** , puis sélectionnez le connecteur **XSLT/XML** pour afficher la page de menu volant. Cette page contient les propriétés et les informations sur le connecteur.
 
-3. Sous **État du connecteur avec source**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des données qui ont été importées dans le cloud Microsoft.
+3. Sous **État du connecteur avec source**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur les données qui ont été importées dans le cloud Microsoft. Pour plus d’informations, consultez [Afficher les journaux d’administration pour les connecteurs de données](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Problèmes détectés
 

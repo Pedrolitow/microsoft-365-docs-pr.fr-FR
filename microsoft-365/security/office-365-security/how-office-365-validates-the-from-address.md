@@ -19,12 +19,12 @@ description: Les administrateurs peuvent en savoir plus sur les types d’adress
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 92b7072e3127da71f423648c83fc94c17bed7caa
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: c8b9fb5c9e2b67a656948684838b61b4a9c33a8d
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131061"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319547"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Comment EOP valide l’adresse From pour empêcher le hameçonnage
 
@@ -118,7 +118,7 @@ Vous ne pouvez pas utiliser la valeur `From: <>` pour supprimer les réponses au
 
 - L’enregistrement MX null pour ce domaine se compose d’une seule période.
 
-Par exemple :
+Par exemple :
 
 ```text
 noreply.contoso.com IN MX .
@@ -136,4 +136,4 @@ Vous ne pouvez pas remplacer les exigences d’adresse De pour les e-mails sorta
 
 ## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Autres moyens de prévenir et de protéger contre les cybercriminalités dans Microsoft 365
 
-Pour plus d’informations sur la façon dont vous pouvez renforcer votre organisation contre le hameçonnage, le courrier indésirable, les violations de données et d’autres menaces, consultez [les 10 principaux moyens de sécuriser Microsoft 365 pour les plans d’entreprise](../../admin/security-and-compliance/secure-your-business-data.md).
+Pour plus d’informations sur la façon dont vous pouvez renforcer votre organisation contre le hameçonnage, le courrier indésirable, les violations de données et d’autres menaces, consultez [les meilleures pratiques pour sécuriser Microsoft 365 pour les plans d’entreprise](../../admin/security-and-compliance/secure-your-business-data.md).

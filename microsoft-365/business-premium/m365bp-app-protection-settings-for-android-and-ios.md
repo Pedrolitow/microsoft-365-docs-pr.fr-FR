@@ -26,19 +26,19 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Découvrez comment créer, modifier ou supprimer une stratégie de gestion des applications et protéger des fichiers de travail sur des appareils Android ou iOS.
-ms.openlocfilehash: 797e95120a25a9205a76b63b278cb12c65e00891
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 5f754803677809c91f8f4a64f6089b4febd47d3d
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092286"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320041"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Définir les paramètres de protection des applications pour les appareils Android ou iOS
 
 Cet article s’applique à Microsoft 365 Business Premium.
 
 > [!NOTE]
-> Microsoft Defender pour les PME est déployé pour les clients Microsoft 365 Business Premium, à compter du 1er mars 2022. Cette offre fournit des fonctionnalités de sécurité supplémentaires pour les appareils. Pour en savoir plus, consultez la rubrique [Qu'est-ce que Microsoft Defender pour les PME](../business-premium/m365bp-app-protection-settings-for-android-and-ios.md).
+> Microsoft Defender pour les PME est déployée pour les clients Microsoft 365 Business Premium, à compter du 1er mars 2022. Cette offre fournit des fonctionnalités de sécurité supplémentaires pour les appareils. Pour en savoir plus, consultez la rubrique [Qu'est-ce que Microsoft Defender pour les PME](../business-premium/m365bp-app-protection-settings-for-android-and-ios.md).
 
 ## <a name="watch-secure-office-apps-on-ios"></a>Regarder : Sécuriser les applications Office sur iOS
 
@@ -138,4 +138,4 @@ Les paramètres suivants sont disponibles pour gérer la manière dont les utili
 
 ## <a name="see-also"></a>Voir aussi
 
-[10 principales façons de sécuriser les plans Microsoft 365 pour les entreprises](../admin/security-and-compliance/secure-your-business-data.md)
+[Meilleures pratiques pour sécuriser les plans Microsoft 365 pour les PME](../admin/security-and-compliance/secure-your-business-data.md)

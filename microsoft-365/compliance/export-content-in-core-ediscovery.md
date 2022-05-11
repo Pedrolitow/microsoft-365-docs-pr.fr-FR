@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Décrit comment exporter et télécharger du contenu à partir d’un cas eDiscovery (Standard) dans Microsoft 365.
-ms.openlocfilehash: fb142a735d30a59735bd4f9a6370543a92f3d926
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 550bdda2c8b2f8afb0e7b4934f5337d7ee323d3a
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095837"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318655"
 ---
 # <a name="export-content-from-a-ediscovery-standard-case"></a>Exporter du contenu à partir d’un cas eDiscovery (Standard)
 
@@ -31,11 +31,11 @@ ms.locfileid: "65095837"
 
 Une fois qu’une recherche associée à un cas Microsoft Purview eDiscovery (Standard) est exécutée, vous pouvez exporter les résultats de la recherche. Lorsque vous exportez des résultats de recherche, les éléments de boîte aux lettres sont téléchargés dans des fichiers PST ou en tant que messages individuels. Lorsque vous exportez du contenu à partir de sites SharePoint et OneDrive Entreprise, des copies de documents Office natifs et d’autres documents sont exportées. Un fichier Results.csv qui contient des informations sur chaque élément exporté et un fichier manifeste (au format XML) qui contient des informations sur chaque résultat de recherche est également exporté.
   
-## <a name="export-search-results"></a>Exporter les résultats de la recherche
+## <a name="export-search-results"></a>Exportation des résultats de recherche
 
-1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a> et connectez-vous à l’aide des informations d’identification du compte d’utilisateur qui a reçu les autorisations eDiscovery appropriées.
+1. Accédez à la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a> et connectez-vous à l’aide des informations d’identification du compte d’utilisateur qui a reçu les autorisations eDiscovery appropriées.
 
-2. Dans le volet de navigation gauche du portail de conformité, **sélectionnez Afficher tout**, puis **sélectionnez eDiscoveryCore** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank"></a>
+2. Dans le volet de navigation gauche du portail de conformité, **sélectionnez Afficher tout**, puis **sélectionnez eDiscoveryeDiscovery** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**(Standard).**</a>
 
 3. Dans la page **eDiscovery (Standard),** cliquez sur le nom du cas dans lequel vous souhaitez créer la conservation.
 
