@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 104bc9f10838be782ea70e3efe567ddee714d0a9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ec545bb38456b778b627c41994a1eb18ae665a86
+ms.sourcegitcommit: 2d870e06e87b10d9e8ec7a7a8381353bc3bc59c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100212"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65349760"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Mac
 
@@ -31,6 +31,11 @@ ms.locfileid: "65100212"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1016654-20122041166540"></a>101.66.54 (20.122041.16654.0)
+
+- Résolution d’un problème où `mdatp diagnostic real-time-protection-statistics` l’impression du chemin d’accès au processus n’était pas correcte dans certains cas.
+- Correctifs de bogue
 
 ## <a name="1016415-20122032164150"></a>101.64.15 (20.122032.16415.0)
 
@@ -51,7 +56,7 @@ ms.locfileid: "65100212"
 
 - Cette version ajoute la prise en charge de macOS 12.3. À compter de macOS 12.3, [Apple supprime Python 2.7](https://developer.apple.com/documentation/macos-release-notes/macos-12_3-release-notes). Aucune version de Python n’est préinstallée sur macOS par défaut. **ACTION NÉCESSAIRE** : 
   - Les utilisateurs doivent mettre à jour Microsoft Defender pour point de terminaison pour Mac vers la version 101.59.50 (ou ultérieure) avant de mettre à jour leurs appareils vers macOS Monterey 12.3 (ou version ultérieure). Cette version minimale 101.59.50 est un prérequis pour éliminer les problèmes liés à Python avec Microsoft Defender pour point de terminaison pour Mac sur macOS Monterey.
-  - Pour les déploiements à distance, les configurations MDM existantes doivent être mises à jour pour Microsoft Defender pour point de terminaison pour Mac version 101.59.50 (ou ultérieure). L’envoi (push) via GPM d’une ancienne version de Microsoft Defender pour point de terminaison pour Mac vers macOS Monterey 12.3 (ou version ultérieure) entraîne un échec d’installation.
+  - Pour les déploiements à distance, les configurations MDM existantes doivent être mises à jour pour Microsoft Defender pour point de terminaison pour Mac version 101.59.50 (ou ultérieure). L’envoi (push) via GPM d’une ancienne version de Microsoft Defender pour point de terminaison pour Mac à macOS Monterey 12.3 (ou version ultérieure) entraîne un échec d’installation.
 
 ## <a name="1015910-20122012159100"></a>101.59.10 (20.122012.15910.0)
 
@@ -70,7 +75,7 @@ ms.locfileid: "65100212"
   - Le chemin d’installation de l’application a été remplacé par `/Application/Microsoft Defender ATP.app` `/Applications/Microsoft Defender.app`.
   - Dans l’expérience utilisateur, les occurrences de « Microsoft Defender ATP » ont été remplacées par « Microsoft Defender »
 - Résolution d’un problème où certaines applications VPN ne pouvaient pas se connecter en raison du filtre de contenu réseau distribué avec Microsoft Defender pour point de terminaison pour Mac
-- Résolution d’un problème détecté dans macOS 12.2 beta 2 où le package d’installation n’a pas pu être ouvert en raison d’une modification du système d’exploitation qui empêche l’installation de packages présentant certaines caractéristiques. Bien qu’il semble que ce changement de système d’exploitation ne soit pas inclus dans la version finale de macOS 12.2, il est probable qu’il sera réintroduit dans une prochaine version de macOS. Par conséquent, nous encourageons tous les administrateurs d’entreprise à actualiser le package Microsoft Defender pour point de terminaison dans leur console de gestion vers cette version de produit (ou une version plus récente).
+- Résolution d’un problème détecté dans macOS version 12.2 bêta 2 où le package d’installation n’a pas pu être ouvert en raison d’une modification du système d’exploitation qui empêche l’installation de packages présentant certaines caractéristiques. Bien qu’il semble que ce changement de système d’exploitation ne soit pas inclus dans la version finale de macOS 12.2, il est probable qu’il sera réintroduit dans une version macOS ultérieure. Par conséquent, nous encourageons tous les administrateurs d’entreprise à actualiser le package Microsoft Defender pour point de terminaison dans leur console de gestion vers cette version de produit (ou une version plus récente).
 - Résolution d’un problème rencontré sur certains appareils M1 où le produit était bloqué avec des définitions de logiciel anti-programme malveillant non valides et n’a pas pu être mis à jour avec succès vers un ensemble de définitions fonctionnel.
 - `mdatp health`La sortie a été étendue avec un attribut supplémentaire appelé `full_disk_access_enabled` qui peut être utilisé pour déterminer si l’accès au disque complet a été accordé à tous les composants de Microsoft Defender pour point de terminaison pour Mac.
 - Améliorations des performances & correctifs de bogues
@@ -136,7 +141,7 @@ ms.locfileid: "65100212"
 - `mdatp diagnostic real-time-protection-statistics` prend désormais en charge deux commutateurs supplémentaires :
   - `--sort`: trie la sortie en fonction du nombre total de fichiers analysés
   - `--top N`: affiche les N premiers résultats (ne fonctionne que si `--sort` elle est également spécifiée)
-- Améliorations des performances (en particulier lors de l’utilisation de YARN) & correctifs de bogues
+- Améliorations des performances (en particulier lors de l’utilisation de YARN) & des correctifs de bogues
 
 ## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0)
 
@@ -180,7 +185,7 @@ ms.locfileid: "65100212"
 
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0)
 
-- Conditions supprimées quand Microsoft Defender pour point de terminaison déclenche un bogue macOS 11 (Big Sur) qui se manifeste dans une panique du noyau
+- Conditions supprimées quand Microsoft Defender pour point de terminaison déclenchant un bogue macOS 11 (Big Sur) qui se manifeste dans une panique du noyau
 - Correction d’une fuite de mémoire dans l’extension système Endpoint Security lors de l’exécution sur mac 11 (Big Sur)
 - Correctifs de bogue
 
@@ -278,9 +283,9 @@ ms.locfileid: "65100212"
 ## <a name="1008691"></a>100.86.91
 
 > [!CAUTION]
-> Pour garantir la protection la plus complète pour vos appareils macOS et en conformité avec l’arrêt par Apple de la remise des mises à jour de sécurité natives macOS aux versions du système d’exploitation antérieures à [actuelle - 2], le déploiement et les mises à jour MDATP pour Mac ne seront plus pris en charge sur macOS Sierra [10.12]. Les mises à jour et améliorations MDATP pour Mac seront fournies aux appareils exécutant les versions Catalina [10.15], Mojave [10.14] et High Sierra [10.13].
+> Pour garantir la protection la plus complète de vos appareils macOS et en conformité avec l’arrêt par Apple de la remise de macOS mises à jour de sécurité natives sur les versions de système d’exploitation antérieures à [actuelle - 2], le déploiement et les mises à jour MDATP pour Mac ne seront plus pris en charge sur macOS Sierra [10.12]. Les mises à jour et améliorations MDATP pour Mac seront fournies aux appareils exécutant les versions Catalina [10.15], Mojave [10.14] et High Sierra [10.13].
 >
-> Si vous avez déjà déployé MDATP pour Mac sur vos appareils Sierra [10.12], effectuez une mise à niveau vers la dernière version de macOS pour éliminer les risques de perte de protection.
+> Si vous avez déjà déployé MDATP pour Mac sur vos appareils Sierra [10.12], effectuez une mise à niveau vers la dernière version macOS afin d’éliminer les risques de perte de protection.
 
 - Améliorations des performances & correctifs de bogues
 

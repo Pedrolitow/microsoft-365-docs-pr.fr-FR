@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Découvrez comment créer un modèle de traitement de formulaire dans SharePoint Syntex.
-ms.openlocfilehash: 3eb14a76bd597f1f382b87813c7e4bd2a4518e19
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: bf0a15894e7b9bbc4905a0372d557e1880650e84
+ms.sourcegitcommit: 2d870e06e87b10d9e8ec7a7a8381353bc3bc59c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882349"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65349824"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Créer un modèle de traitement de formulaire dans Microsoft SharePoint Syntex
 
@@ -43,7 +43,7 @@ Pour créer un modèle de traitement de formulaire, vous devez suivre les étape
 
 Vous pouvez créer un modèle de traitement de formulaire uniquement dans les bibliothèques de documents SharePoint pour lesquelles il est activé. Si le traitement des formulaires est activé, vous pouvez voir le menu **Automatiser** > **AI Builder** > **Créer un modèle pour traiter les formulaires** dans votre bibliothèque de documents. Si vous souhaitez que le traitement soit activé sur votre bibliothèque de documents, vous devez contacter votre administrateur SharePoint.
 
- ![Capture d’écran montrant le modèle AI Builder.](../media/content-understanding/create-ai-builder-model2.png)
+![Capture d’écran montrant le modèle AI Builder.](../media/content-understanding/create-ai-builder-model2.png)
 
 ## <a name="step-1-create-a-form-processing-model"></a>Étape 1 : créer un modèle de traitement de formulaire
 
@@ -114,11 +114,9 @@ Vous devez baliser les documents pour apprendre au modèle à comprendre les cha
 
 2. Une fois le modèle publié, sélectionnez **Utiliser le modèle**, puis sélectionnez **Créer un flux**. Cela crée un flux de Power Automate qui peut s’exécuter dans votre bibliothèque de documents SharePoint et qui extrait les champs qui ont été identifiés dans le modèle.
 
-    ![Capture d’écran dans AI Builder montrant le panneau Créer un flux.](../media/content-understanding/ai-builder-create-a-flow.png)
+    ![Capture d’écran dans AI Builder montrant le panneau Créer un flux.](../media/content-understanding/ai-builder-create-a-flow-1.png)
  
 3. Une fois terminé, vous verrez le message *Votre flux a été créé avec succès*.
-
-    ![Capture d’écran dans AI Builder montrant que le flux a été créé.](../media/content-understanding/ai-builder-flow-created.png)
 
 4. Sélectionnez le bouton **Accéder à SharePoint** pour voir la bibliothèque de documents mise à jour avec votre modèle.
 
