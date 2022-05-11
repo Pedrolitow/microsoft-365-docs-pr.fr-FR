@@ -26,16 +26,16 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez comment envoyer des messages électroniques chiffrés à l’aide d’Outlook.
-ms.openlocfilehash: 02dc3b7720f6aa46ffaf3cf4a04511c725798a24
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b9b2251114831bfe0b6364dc4327bd0c21da55e2
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095163"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65316829"
 ---
 # <a name="encrypt-or-label-sensitive-email"></a>Chiffrer ou étiqueter votre courrier électronique sensible
 
-Vos données et informations sont importantes, et souvent confidentielles. L’objectif ici est de protéger ces informations sensibles en veillant à ce que tout le monde utilise des étiquettes de confidentialité afin que les destinataires des messages électroniques traitent les informations avec le plus haut niveau de confidentialité.
+Vos données et informations sont importantes, et souvent confidentielles. L’objectif ici est de protéger ces informations sensibles en veillant à ce que tout le monde utilise des étiquettes de confidentialité afin que les destinataires de l’e-mail traitent les informations avec le niveau de confidentialité le plus élevé.
 
 ## <a name="best-practices"></a>Meilleures pratiques
 
@@ -71,5 +71,6 @@ Pour en savoir plus, consultez la rubrique [Définir le flux de courrier pour ch
 
 Vous pouvez également appliquer la personnalisation pour personnaliser l’apparence et le texte des messages électroniques. Pour plus d’informations, consultez la rubrique [Ajouter la marque de votre organisation à vos messages chiffrés](../compliance/email-encryption.md).
 
-Si vous avez atteint ce stade, vous avez terminé une autre mission, alors félicitations ! Nous n’avons pas le temps de nous reposer sur nos lauriers. Nous allons donc nous atteler à la configuration d’un environnement sûr et sécurisé dans lequel l’équipe peut [collaborer en toute sécurité](m365bp-collaborate-share-securely.md). 
+## <a name="next-mission"></a>Prochaine mission
 
+Si vous avez atteint ce stade, vous avez terminé une autre mission, alors félicitations ! Nous n’avons pas le temps de nous reposer sur nos lauriers. Nous allons donc nous atteler à la configuration d’un environnement sûr et sécurisé dans lequel l’équipe peut [collaborer en toute sécurité](m365bp-collaborate-share-securely.md).

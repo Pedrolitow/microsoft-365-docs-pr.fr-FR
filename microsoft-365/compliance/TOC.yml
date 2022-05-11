@@ -214,6 +214,8 @@
       href: work-with-partner-to-archive-third-party-data.md
     - name: Rechercher des données tierces
       href: use-content-search-to-search-third-party-data-that-was-imported.md
+    - name: Afficher les journaux d’administration des connecteurs de données
+      href: data-connector-admin-logs.md
 - name: Gérer les risques internes
   items:
     - name: Solutions de risque interne Microsoft Purview

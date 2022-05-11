@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Glossaire des termes pour Microsoft 365 Business Premium
-ms.openlocfilehash: c9aaac1c7cf1eab8092efa0475cd94ceb1e1418d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2f5dc9d09d380ad1958fd73a096c00c258371edb
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101701"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318231"
 ---
 # <a name="glossary-of-terms"></a>Glossaire des termes
 
@@ -48,6 +48,7 @@ ms.locfileid: "65101701"
 |Data exfiltration |Fichiers de données volés et envoyés en dehors du réseau par e-mail ou par d’autres moyens. |
 |Défenseur |Logiciel antivirus de Microsoft, Antivirus Microsoft Defender. Pour plus d’informations sur [Microsoft Defender](https://support.microsoft.com/topic/.getting-started-with-microsoft-defender-9df0cb0f-4866-4433-9cbc-f83e5cf77693), consultez cet article.|
 |Groupe d’appareils |Un groupe de périphériques est une collection de périphériques qui sont regroupés en raison de certains critères spécifiques, tels que la version du système d'exploitation. Les appareils qui répondent aux critères sont inclus dans ce groupe d’appareils, sauf si vous les excluez. Dans Microsoft 365 Business Premium (et Defender Entreprise), les groupes de dispositifs sont stockés dans Azure Active Directory. |
+|gestion des appareils |La gestion des appareils se produit lorsque l’organisation protège activement les ressources et les données sur tous les ordinateurs portables, PC, tablettes et appareils mobiles de l’organisation.|
 |chiffrement |Le chiffrement est le processus par lequel les informations sont encodées afin que seul un destinataire autorisé puisse les décoder et les utiliser. |
 |Exploiter |Code qui utilise des vulnérabilités logicielles pour accéder à votre appareil et effectuer d’autres tâches, telles que l’installation de programmes malveillants. |
 |pare-feu |Un pare-feu est un système de sécurité qui protège un réseau interne contre les serveurs et réseaux non autorisés en fonction de règles prédéfinies. Il agit comme un obstacle et permet uniquement au réseau sécurisé d’envoyer ou de recevoir des données. |
@@ -64,10 +65,10 @@ ms.locfileid: "65101701"
 |courrier indésirable |Quand un grand nombre de contenus sont envoyés à un grand nombre de destinataires, généralement par e-mail, et souvent contenant des programmes malveillants.  |
 |usurpation |Lorsqu'un expéditeur usurpe une adresse électronique et se fait passer pour un utilisateur de l'un des domaines de votre organisation ou pour un utilisateur d'un domaine externe qui envoie des messages à votre organisation. |
 |logiciel espion |Logiciel qui vise à collecter des informations sur une personne ou une organisation et à les envoyer à une autre entité d’une manière qui nuit à l’utilisateur. |
-|client |Une instance unique dédiée aux services de Microsoft 365 et aux données de votre organisation, stockée dans un emplacement spécifique par défaut tel que l'Europe ou l'Amérique du Nord. Cet emplacement est spécifié lorsque vous créez le locataire pour votre organisation. |
+|client |Instance dédiée unique des services de Microsoft 365 et des données de votre organisation, stockée dans un emplacement par défaut spécifique tel que l’Europe ou Amérique du Nord. Cet emplacement est spécifié lorsque vous créez le locataire pour votre organisation. |
 |Paysage des menaces |Le paysage des menaces est le royaume des menaces agressives et tenaces, avec des attaquants qui ont déplacé leurs efforts de la reconnaissance vers l'argent, par exemple en prenant en otage des appareils et des données jusqu'à ce que le propriétaire paie la rançon demandée. Les attaques modernes se concentrent de plus en plus sur le vol de propriété intellectuelle à grande échelle, la dégradation ciblée du système qui peut entraîner une perte financière et le cyberterrorisme qui menace la sécurité des individus, des entreprises et des intérêts nationaux partout dans le monde. Ces attaquants sont généralement des individus hautement formés et des experts en sécurité, dont certains sont dans l’emploi d’États-nations qui ont des budgets importants et apparemment illimitées ressources humaines. |
 |cheval de Troie |Type de programme malveillant qui tente d’apparaître inoffensif. Contrairement à un virus ou un ver, un cheval de Troie ne se propage pas seul. Au lieu de cela, il tente d’avoir l’air légitime pour inciter les utilisateurs à le télécharger et à l’installer. Une fois installés, les chevaux de Troie effectuent diverses activités malveillantes telles que le vol d’informations personnelles, le téléchargement d’autres programmes malveillants ou l’accès des attaquants à votre appareil. |
-|Appareils non gérés |Les appareils tels que les PC, les ordinateurs portables, les tablettes et les appareils mobiles qui ne sont pas gérés par l’organisation posent donc plus de risques. (Voir BYODs.) |
+|Appareils non gérés |Des appareils tels que des PC, des ordinateurs portables, des tablettes et des appareils mobiles qui ne sont pas gérés par l’organisation et présentent donc plus de risques. (Voir BYODs.) |
 |virus | Élément de code capable de se copier et qui a généralement un effet néfaste, tel que la corruption du système ou la destruction des données. |
 |ver |Type de programme malveillant qui se propage à d’autres appareils. Les vers peuvent se propager par e-mail, messagerie instantanée, plateformes de partage de fichiers, réseaux sociaux, partages réseau et lecteurs amovibles. Les vers sophistiqués tirent parti des vulnérabilités logicielles pour se propager. |
 |confiance zéro |La confiance zéro est une approche proactive et intégrée de la sécurité dans toutes les couches du patrimoine numérique qui vérifie explicitement et en permanence chaque transaction, affirme le principe du moindre privilège et s'appuie sur l'intelligence, la détection avancée et la réponse en temps réel aux menaces. |

@@ -18,17 +18,17 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 6822f736cae73d7d4654f8b4310e0e397cffa677
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f427bcfbc5f8b6538c72cebea4adf6edc80a42ba
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077474"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320516"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises à jour de Antivirus Microsoft Defender et appliquer des lignes de base
 
 > [!IMPORTANT]
-> Les clients qui ont appliqué la mise à jour du moteur Microsoft Defender de mars 2022 (**1.1.19100.5**) ont peut-être rencontré une utilisation élevée des ressources (processeur et/ou mémoire). Microsoft a publié une mise à jour (**1.1.19200.5**) qui résout les bogues introduits dans la version antérieure. Il est recommandé aux clients de mettre à jour cette nouvelle version du moteur antivirus (**1.1.19200.5**). Pour vous assurer que les problèmes de performances sont entièrement résolus, il est recommandé de redémarrer les ordinateurs après l’application de la mise à jour. Consultez les [Versions mensuelles de la plateforme et du moteur](#monthly-platform-and-engine-versions) (dans cet article).
+> Les clients qui ont appliqué la mise à jour du moteur Microsoft Defender de mars 2022 (**1.1.19100.5**) peuvent avoir été confrontés à une utilisation élevée des ressources (processeur et/ou mémoire). Microsoft a publié une mise à jour (**1.1.19200.5**) qui résout les bogues introduits dans la version antérieure. Il est recommandé aux clients de mettre à jour cette nouvelle version de la build du moteur antivirus (**1.1.19200.5**). Pour vous assurer que les problèmes de performances sont entièrement résolus, il est recommandé de redémarrer les ordinateurs après l’application de la mise à jour. Consultez [Versions mensuelles de la plateforme et du moteur](#monthly-platform-and-engine-versions) (dans cet article).
 
 **S’applique à :**
 - [Plans 1 et 2 de Microsoft Defender pour points de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -721,6 +721,21 @@ Nous vous recommandons de mettre à jour vos Windows 10 (éditions Entreprise, P
 Pour plus d’informations, consultez [Mise à jour de Microsoft Defender pour les images d’installation du système d’exploitation Windows](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220506.6</summary>
+
+&ensp;Version du package : **20220506.6**<br/>
+&ensp;Version de la plateforme : **4.18.2203.5**<br/>
+&ensp;version du moteur : **1.1.19200.5**<br/>
+&ensp;Version de signature : **1.363.1436.0**<br/>
+
+### <a name="fixes"></a>Correctifs
+- Aucun
+
+### <a name="additional-information"></a>Informations supplémentaires
+- Aucun
+
+<br/>
+</details><details>
 <summary>20220321.1</summary>
 
 &ensp;Version du package : **20220321.1**<br/>

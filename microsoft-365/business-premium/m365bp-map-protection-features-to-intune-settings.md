@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Découvrez comment les fonctionnalités de protection de Microsoft 365 Business Premium mappent aux paramètres Intune. L’abonnement vous fournit une licence pour modifier les paramètres Intune.
-ms.openlocfilehash: b5493199b7a2593097d3e4efbf1d4a405fc1ae4b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: bf5b26a6ab8cbd64f9f9ef8235c194c6869c782d
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090632"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320311"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Comment les fonctionnalités de protection dans Microsoft 365 Business Premium sont mappées aux paramètres Intune
 
@@ -47,7 +47,7 @@ Pour trouver le paramètre Intune, connectez-vous avec vos informations d’iden
   
  > [!IMPORTANT]
  > 
- > Un abonnement Microsoft 365 Business Premium vous donne une licence pour modifier tous les paramètres Intune. Voir [Présentation de Intune pour commencer.](/intune/introduction-intune)
+ > Un abonnement Microsoft 365 Business Premium vous donne une licence pour modifier tous les paramètres Intune. Consultez [Introduction à la prise en main d’Intune.](/intune/introduction-intune)
   
 Sélectionnez le nom de la stratégie que vous souhaitez &mdash; par exemple, Stratégie d’application pour Android &mdash; , puis choisissez **Paramètres de stratégie**.
   
@@ -111,4 +111,4 @@ Pour trouver le paramètre Intune, connectez-vous avec vos informations d’iden
 
 ## <a name="see-also"></a>Voir aussi
 
-[10 principales façons de sécuriser les plans Microsoft 365 pour les entreprises](../admin/security-and-compliance/secure-your-business-data.md)
+[Meilleures pratiques pour sécuriser les plans Microsoft 365 pour les PME](../admin/security-and-compliance/secure-your-business-data.md)

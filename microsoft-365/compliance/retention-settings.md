@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: 39c0258cb4b471e05bae24d0d35c708a42252219
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: ec7743c2e72016c606decb1346bdd558e40ae412
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285377"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302141"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -396,6 +396,8 @@ Exemples :
 
 ![Page Paramètres de rétention.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
 
+Comme nous l’expliquons dans la section suivante, les étiquettes de rétention disposent d’une autre option : appliquer une autre étiquette de rétention avec sa propre période de rétention.
+
 Avant de configurer la rétention, familiarisez-vous tout d’abord avec les limites de capacité et de stockage pour les charges de travail respectives :
 
 - Pour SharePoint et OneDrive, les éléments conservés sont stockés dans la bibliothèque de conservation et de préservation du site, qui est incluse dans le quota de stockage du site. Pour plus d’informations, consultez [Gérer les limites de stockage de site](/sharepoint/manage-site-collection-storage-limits) de la documentation SharePoint.
@@ -403,6 +405,55 @@ Avant de configurer la rétention, familiarisez-vous tout d’abord avec les lim
 - Pour Exchange, Teams et Yammer, où les messages conservés sont stockés dans des boîtes aux lettres, consultez [Limites Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) et activez [Archivage à extension automatique](autoexpanding-archiving.md).
     
     Dans les cas extrêmes où un volume élevé d’e-mails est supprimé sur une courte période, soit par des utilisateurs, soit automatiquement à partir des paramètres de stratégie, vous devrez peut-être également configurer Exchange pour déplacer plus fréquemment des éléments du dossier Éléments récupérables de la boîte aux lettres principale de l’utilisateur vers le dossier Éléments récupérables de leur boîte aux lettres d’archivage. Pour obtenir des instructions pas à pas, consultez [Augmenter le quota d’éléments récupérables pour les boîtes aux lettres en attente](increase-the-recoverable-quota-for-mailboxes-on-hold.md).
+
+#### <a name="relabeling-at-the-end-of-the-retention-period"></a>Réétiquetage à la fin de la période de rétention
+
+> [!NOTE]
+> Cette option est actuellement déployée en version préliminaire et est susceptible d’être modifiée.
+
+Lorsque vous configurez une étiquette de rétention pour appliquer automatiquement une autre étiquette de rétention à la fin de la période de rétention, l’élément est alors soumis aux paramètres de rétention de l’étiquette de rétention nouvellement sélectionnée. Cette option vous permet de modifier automatiquement les paramètres de rétention de l’élément.
+
+Vous pouvez modifier l’étiquette de remplacement après avoir créé et enregistré l’étiquette de rétention principale. Pour les éléments auxquels l’étiquette de rétention principale est déjà appliquée et qui se trouvent dans la période de rétention configurée, la modification de l’étiquette de remplacement est synchronisée avec ces éléments. Comme pour les autres modifications d’étiquette, prévoyez jusqu’à 7 jours pour cette période de synchronisation.
+
+Pour l’étiquette de remplacement, vous choisissez généralement une étiquette dont la période de rétention est plus longue que celle de l’étiquette de rétention principale. Toutefois, ce n’est pas nécessairement le cas, car l’étiquette fixe le début de la période de rétention. Par exemple, l’étiquette de rétention principale est configurée pour démarrer la période de rétention lorsque l’élément est créé, et l’étiquette de remplacement démarre la période de rétention lorsqu’elle est étiquetée ou lorsqu’un événement se produit.
+
+En outre, si l’étiquette [indique que l’élément est un enregistrement ou un enregistrement régulier](declare-records.md), l’étiquette de remplacement peut également modifier les [restrictions relatives aux actions autorisées ou bloquées](records-management.md#records) pour cet élément.
+
+##### <a name="relabeling-example-configuration"></a>Configuration de l’exemple de réétiquetage
+
+Vous créez et configurez une étiquette de rétention pour une exigence de conformité du secteur consistant à conserver le contenu pendant trois ans après sa création, puis vous marquez l’élément en tant qu’enregistrement. Une fois cette étiquette est appliquée, les utilisateurs ne peuvent pas supprimer l’élément de leur application, car il s’agit de l’une des restrictions d’un enregistrement.
+
+Au terme des trois années, vous souhaitez conserver automatiquement le contenu pendant deux années supplémentaires en raison de stratégies de conformité internes, mais il n’est pas nécessaire de le marquer comme un enregistrement avec les restrictions appliquées par cette configuration.
+
+Pour terminer la configuration, vous sélectionnez le paramètre d’étiquette pour modifier l’étiquette à la fin de la période de rétention, puis choisissez une étiquette qui conserve le contenu pendant cinq ans après sa création, et ne marque pas l’élément en tant qu’enregistrement. 
+
+Avec ces paramètres concaténés, les utilisateurs peuvent supprimer l’élément de leur application au bout de trois ans, mais il reste accessible pour les recherches eDiscovery pendant cinq ans.
+
+##### <a name="considerations-for-the-relabeling-option"></a>Considérations relatives à l’option de réétiquetage
+
+- Vous ne pouvez pas réétiqueter un enregistrement réglementaire, mais l’étiquette de remplacement peut être configurée pour marquer le contenu en tant qu’enregistrement réglementaire.
+
+- Vous ne pourrez pas supprimer une étiquette de rétention sélectionnée en tant qu’étiquette de remplacement.
+
+- Vous pouvez choisir une étiquette de remplacement configurée pour appliquer une autre étiquette de remplacement. Il n’existe aucune limite au nombre d’étiquettes de remplacement dont un élément peut disposer.
+
+- Si l’étiquette de remplacement marque l’élément comme étant un enregistrement ou un enregistrement réglementaire, mais qu’elle ne peut pas être appliquée parce que le fichier est en cours d’extraction, le processus de réétiquetage est relancé lorsque le fichier est à nouveau extrait, ou l’extraction est ignorée.
+
+- En tant que problème connu pour cette version préliminaire, une étiquette de remplacement est visible pour les utilisateurs dans Outlook uniquement si cette étiquette est incluse dans une stratégie d’étiquette publiée pour le même emplacement, ou si elle est configurée pour être supprimée uniquement.
+
+##### <a name="configuration-paths-for-relabeling"></a>Chemins de configuration pour le réétiquetage
+
+L’option de réétiquetage à la fin de la période de rétention présente deux chemins de configuration lorsque vous créez une étiquette de rétention :
+
+- Si vous devez initialement conserver le contenu avec l’étiquette principale (le plus souvent) : sur la page **Définir les paramètres d’étiquette**, sélectionnez **Conserver les éléments indéfiniment ou pour une période spécifique**, puis spécifiez la période de rétention. Ensuite, sur la page **Choisir ce qui se passe après la période de rétention**, sélectionnez **Modifier l’étiquette** > **Choisir une étiquette**.
+
+- Si vous n’avez pas besoin de conserver initialement le contenu avec l’étiquette principale : sur la page **Définir les paramètres d’étiquette**, sélectionnez **Appliquer les actions après une période spécifique**, spécifiez la période de rétention, puis sélectionnez **Modifier l’étiquette** > **Choisir une étiquette**.
+
+Dans les deux cas, l’étiquette de remplacement doit déjà être créée mais ne doit pas nécessairement être incluse dans une stratégie d’étiquette existante.
+
+![Modifiez l’option d’étiquette après la période de rétention.](../media/change-label-option.png)
+
+Les réviseurs avant destruction peuvent également sélectionner manuellement une étiquette de remplacement dans le cadre du [processus de révision avant destruction](disposition.md#disposition-reviews) si le paramètre d’étiquette **Démarrer une révision avant destruction** est sélectionné sur la page **Choisir ce qui se passe après la période de rétention**.
 
 ### <a name="deleting-content-thats-older-than-a-specific-age"></a>Suppression du contenu antérieur à une date spécifique
 

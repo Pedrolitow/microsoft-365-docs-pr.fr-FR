@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: f888556ea32d9d59c53728b30b629169bc9db45d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9e24e6bada3b1f5aa047692dc4d742a5a006b9af
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093237"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317981"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Configurer Microsoft 365 Business Premium
 
@@ -53,9 +53,9 @@ Microsoft 365 Business Premium inclut un processus guidé pour l’installation 
 - [Ajout d’utilisateurs et attribution de licences](../admin/add-users/add-users.md)
 - [La mise à jour de vos enregistrements DNS](../admin/setup/setup-business-basic.md#connect-your-domain)
 
-La vidéo suivante montre le processus d’installation guidé pour Microsoft Office 365 Petite Entreprise, qui fonctionne de la même façon dans Microsoft 365 Business Premium.<br/><br/>
+La vidéo suivante montre le processus de configuration guidé pour Microsoft 365 Business Standard, qui fonctionne de la même façon dans Microsoft 365 Business Premium.<br/><br/>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vk3W]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 > [!TIP]
 > Une fois que vous avez ajouté des utilisateurs, donnez-leur un lien vers le [Guide de configuration rapide des employés](../admin/setup/employee-quick-setup.md). Le guide les oriente tout au long de la connexion, de l’obtention de Office applications et de l’enregistrement, de la copie et du partage de fichiers.
@@ -72,8 +72,13 @@ Si vous préférez avoir un partenaire Microsoft pour vous aider à obtenir et �
 
 4. Passez en revue la liste des résultats. Sélectionnez un fournisseur pour en savoir plus sur son expertise et les services qu’il fournit.
 
-Consultez également [Rechercher votre partenaire ou revendeur](../admin/manage/find-your-partner-or-reseller.md).
+## <a name="see-also"></a>Voir aussi
 
+- [Trouver votre partenaire ou revendeur](../admin/manage/find-your-partner-or-reseller.md)
+
+- [Configurer des mots de passe en libre-service](../admin/add-users/let-users-reset-passwords.md)
+
+- [Configurer la gestion des groupes en libre-service](/azure/active-directory/enterprise-users/groups-self-service-management)
 ## <a name="next-objectives"></a>Objectifs suivants
 
 Une fois que vous avez terminé votre processus d’installation initial, vos objectifs suivants sont de configurer vos fonctionnalités de sécurité et de conformité :

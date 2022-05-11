@@ -1,5 +1,5 @@
 ---
-title: Modifier ou définir les paramètres de protection des applications pour les appareils Windows 10
+title: Modifier ou définir les paramètres de protection des applications pour les appareils Windows
 ms.author: deniseb
 author: denisebmsft
 manager: scotv
@@ -27,22 +27,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
-description: Découvrez comment créer ou modifier des stratégies de gestion des applications et protéger des fichiers de travail sur les appareils Windows 10 personnels de vos utilisateurs.
-ms.openlocfilehash: f636c138d9364d9bc4739cc5ee11737707d32913
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Découvrez comment créer ou modifier des stratégies de gestion des applications et protéger des fichiers professionnels sur les appareils Windows personnels de vos utilisateurs.
+ms.openlocfilehash: e01cafb882e71537bffca3fefd2f84d57c112c7e
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096009"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318197"
 ---
-# <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a>Définir les paramètres de protection des applications pour les appareils Windows 10
+# <a name="set-or-edit-application-protection-settings-for-windows-devices"></a>Définir ou modifier les paramètres de protection des applications pour les appareils Windows
 
-Cet article s’applique à Microsoft 365 Business Premium.
+Cet article explique comment configurer des stratégies de protection des applications pour les appareils Windows de votre entreprise.
 
-> [!NOTE]
-> Microsoft Defender pour les PME est déployée pour les clients Microsoft 365 Business Premium, à compter du 1er mars 2022. Cette offre fournit des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender for Business](../security/defender-business/mdb-overview.md).
-
-## <a name="edit-an-app-management-policy-for-windows-10"></a>Modifier une stratégie de gestion des applications pour Windows 10
+## <a name="edit-an-app-management-policy-for-windows-devices"></a>Modifier une stratégie de gestion des applications pour les appareils Windows
 
 1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.     
 
@@ -52,9 +49,9 @@ Cet article s’applique à Microsoft 365 Business Premium.
 
 4. Choisissez **Modifier** à côté d’un paramètre que vous souhaitez modifier, puis **Enregistrer**.
 
-## <a name="create-an-app-management-policy-for-windows-10"></a>Créer une stratégie de gestion des applications pour Windows 10
+## <a name="create-an-app-management-policy-for-windows-devices"></a>Créer une stratégie de gestion des applications pour les appareils Windows
 
-Si vos utilisateurs disposent d'appareils Windows 10 sur lesquels ils effectuent des tâches professionnelles, vous pouvez également protéger vos données sur ces appareils.
+Si vos utilisateurs disposent d’appareils Windows personnels sur lesquels ils effectuent des tâches professionnelles, vous pouvez protéger vos données sur ces appareils.
   
 1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
 
@@ -86,4 +83,8 @@ Si vos utilisateurs disposent d'appareils Windows 10 sur lesquels ils effectuent
 
 ## <a name="see-also"></a>Voir aussi
 
-[10 principales façons de sécuriser les plans Microsoft 365 pour les entreprises](../admin/security-and-compliance/secure-your-business-data.md)
+[Meilleures pratiques pour sécuriser les plans Microsoft 365 pour les PME](../admin/security-and-compliance/secure-your-business-data.md)
+
+## <a name="next-objective"></a>Objectif suivant
+
+[Sécuriser les appareils Windows](m365bp-secure-windows-devices.md)

@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 774c23a4da7d368f46607fd588a07ffb01e92f53
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a03d79da004dab7a68e691c6c2a8ac21ac2b7501
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094194"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318179"
 ---
 # <a name="onboard-enrolled-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils à Microsoft Defender pour point de terminaison
 
@@ -82,7 +82,7 @@ Vous pouvez utiliser un script local pour intégrer des appareils Windows et Mac
 
 Pour inscrire un appareil, inscrivez-le vous-même ou demandez à vos utilisateurs de se connecter au portail d’entreprise et d’inscrire et d’installer les applications nécessaires. 
 
-Si vous utilisiez déjà Endpoint Manager (qui inclut Microsoft Intune et Gestion des appareils mobiles), avant d’obtenir Defender pour les PME, vous pouvez continuer à utiliser Endpoint Manager pour intégrer les appareils de votre organisation. Avec Endpoint Manager, vous pouvez intégrer des ordinateurs, des tablettes et des téléphones, y compris des appareils iOS et Android.
+Si vous utilisiez déjà Endpoint Manager (qui inclut Microsoft Intune et la gestion des appareils mobiles), avant d’obtenir Defender pour les PME, vous pouvez continuer à utiliser Endpoint Manager pour intégrer les appareils de votre organisation. Avec Endpoint Manager, vous pouvez intégrer des ordinateurs, des tablettes et des téléphones, y compris des appareils iOS et Android.
 
 Consultez [inscription de l’appareil dans Microsoft Intune](/mem/intune/enrollment/device-enrollment). 
 
@@ -100,7 +100,7 @@ Une fois que vous avez intégré les appareils Windows à Defender pour les PME,
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
-Une fois la commande exécutée, la fenêtre d’invite de commandes se ferme automatiquement. En cas de réussite, le test de détection est marqué comme terminé et une nouvelle alerte s’affiche dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) pour l’appareil nouvellement intégré dans environ dix minutes.
+Une fois la commande exécutée, la fenêtre d’invite de commandes se ferme automatiquement. En cas de réussite, le test de détection est marqué comme terminé et une nouvelle alerte s’affiche dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) pour l’appareil nouvellement intégré en dix minutes environ.
 
 ## <a name="onboard-devices-gradually"></a>Intégrer progressivement des appareils
 
@@ -112,7 +112,7 @@ Si vous préférez intégrer des appareils par phases, ce que nous appelons *l�
 
 3. Dans le volet de navigation, choisissez **Paramètres** >  **Endpoints**, puis, sous **Gestion des appareils**, choisissez **Intégration**.
 
-4. Sélectionnez un système d’exploitation (par exemple **, Windows 10 et 11)**, puis choisissez une méthode d’intégration (par exemple, un **Script local**). Suivez les instructions fournies pour la méthode que vous avez sélectionnée.
+4. Sélectionnez un système d’exploitation (par exemple **Windows 10 et 11)** puis choisissez une méthode d’intégration (par exemple, **Script local**). Suivez les instructions fournies pour la méthode que vous avez sélectionnée.
 
 5. Répétez ce processus pour chaque ensemble d’appareils que vous souhaitez intégrer. 
 
@@ -131,7 +131,7 @@ Si vous souhaitez déconnecter un appareil, utilisez l’une des procédures sui
 
 1. Dans l’écran de confirmation, passez en revue les informations, puis choisissez **Télécharger** pour continuer.
 
-1. Sélectionnez **Télécharger le package de retrait**. Nous vous recommandons d’enregistrer le package de retrait sur un lecteur amovible.
+1. Sélectionnez **Télécharger le package de retrait** Nous vous recommandons d’enregistrer le package de retrait sur un lecteur amovible.
 
 1. Exécutez le script sur chaque appareil que vous souhaitez déclasser. Vous avez besoin d’aide pour cette tâche ? Consultez les ressources suivantes :   
 
@@ -144,5 +144,4 @@ Si vous souhaitez déconnecter un appareil, utilisez l’une des procédures sui
 
 ## <a name="next-objective"></a>Objectif suivant
 
-Prenez le temps d’[examiner et modifier les stratégies](m365bp-view-edit-create-mdb-policies.md).
-
+[Configurez la protection de vos appareils Windows](m365bp-protection-settings-for-windows-10-devices.md).

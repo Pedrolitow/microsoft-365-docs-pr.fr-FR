@@ -23,45 +23,40 @@ search.appverid:
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: Découvrez comment installer automatiquement les applications Office 32 bits sur Windows 10 ordinateurs et les maintenir à jour.
-ms.openlocfilehash: 1b1aa1ba5f34528ea6e27fad38964b0fb952b287
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b4df5152e5adfbd2391fd51c184bd4547be12011
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090620"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317875"
 ---
-# <a name="prepare-for-office-client-deployment-by-microsoft-365-business-premium"></a>Préparer le déploiement du client Office par Microsoft 365 Business Premium
+# <a name="prepare-to-automatically-install-office-apps-to-client-computers"></a>Préparer l'installation automatique d'applications Office sur des ordinateurs clients
 
-> [!NOTE]
-> Microsoft Defender pour les PME est déployée pour les clients Microsoft 365 Business Premium, à compter du 1er mars 2022. Cette offre fournit des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender for Business](../security/defender-business/mdb-overview.md).
-
-## <a name="prepare-to-automatically-install-office-apps-to-client-computers"></a>Préparer l'installation automatique d'applications Office sur des ordinateurs clients
-
-Vous pouvez utiliser Microsoft 365 Business Premium pour installer automatiquement les applications Office 32 bits sur les ordinateurs Windows 10 et les maintenir à jour avec les mises à jour.
+Utilisez Microsoft 365 Business Premium pour installer automatiquement les applications Office 32 bits sur Windows 10 ordinateurs et les maintenir à jour avec les mises à jour.
   
-Il est préférable que l'ordinateur de l'utilisateur final fonctionne sous Windows 10 Business et :
+L’installation automatique fonctionne mieux si l’ordinateur : 
+
+- est sur Windows 10 Business.
   
-- qu'aucune application de bureau Office (Word, Excel, PowerPoint, Outlook, OneNote, Publisher, Access et OneDrive) ne soit installée.
-    
-    ou
-    
-- comprenne une version « Démarrer en un clic » d'Office.
-    
+- n’a pas d’applications de bureau Office existantes (Word, Excel, PowerPoint, Outlook, OneNote, Publisher, Access et OneDrive) OU une version existante d’Office « Démarrer en un clic » est installée.
+
 Pour déterminer si vous possédez la version « Démarrer en un clic » d'Office, dans une application Office, accédez à **Fichier** \> **Compte** ( **Compte Office** dans Outlook). Si **Mises à jour pour Office** se présente comme dans la figure suivante, cela signifie que l'installation a été effectuée à l'aide de « Démarrer en un clic ». 
   
 ![Capture d’écran des mises à jour d’Office dans le compte d’application Office.](./../media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
   
- **Pour qui cette fonctionnalité est-elle utile ?**
+## <a name="requirements-for-using-this-feature"></a>Configuration requise pour l’utilisation de cette fonctionnalité
   
-L'utilisateur final dont le PC :
+Travaille avec :
   
-- **a** une licence utilisateur Windows 10 Business, une Microsoft 365 active pour les entreprises, Windows 10 Creators Update et est jointe à Azure Active Directory. 
-    
-- **n’a pas** les applications Office 64 bits (exemple : Word, Excel, PowerPoint). Si des applications Office 64 bits sont requises, cette fonctionnalité n’est pas adaptée, car il n’existe aucune prise en charge pour déclencher une version 64 bits 2016 « Démarrer en un clic » d’Office à partir de la console d’administration Microsoft 365 pour les entreprises. 
-    
-- **n’a** aucune application autonome Windows Installer (MSI) 2016 (par exemple, Visio ou Project). Microsoft 365 pour les entreprises met à niveau Office vers la version Démarrer en un clic d’Office 2016 et cela ne fonctionne pas avec les applications autonomes Office 2016 MSI. 
-    
-Le tableau suivant indique l’action que les utilisateurs/administrateurs finaux peuvent avoir à entreprendre, en fonction de leur état de début, pour obtenir une version « Démarrer en un clic » 32 bits du déploiement d’Office à partir de la console d’administration Microsoft 365 pour les entreprises.<br/>
+- Un utilisateur disposant d’une licence utilisateur Windows 10 Business, d’une Microsoft 365 active pour les entreprises, d’une Windows 10 Creators Update et qui est joint à Azure Active Directory.
+
+Ne fonctionne pas avec : 
+
+- Applications Office 64 bits (exemple : Word, Excel, PowerPoint). Si des applications Office 64 bits sont requises, cette fonctionnalité n’est pas adaptée, car il n’existe aucune prise en charge pour déclencher une version 64 bits 2016 « Démarrer en un clic » d’Office à partir de la console d’administration Microsoft 365 pour les entreprises.
+
+- Toutes les applications autonomes Windows Installer (MSI) 2016 (par exemple, Visio ou Project). Microsoft 365 pour les entreprises met à niveau Office vers la version Démarrer en un clic d’Office 2016, et cela ne fonctionne pas avec les applications autonomes Office 2016 MSI.
+
+Le tableau suivant indique l’action que les utilisateurs finaux ou les administrateurs peuvent avoir à entreprendre, en fonction de leur état de début, pour obtenir une version 32 bits « Démarrer en un clic » réussie du déploiement d’Office à partir de la console d’administration Microsoft 365 pour les entreprises.<br/>
 
 
 |Situation de départ à l'installation d'Office|Action à entreprendre avant Microsoft 365 pour l’installation d’Office pour les entreprises|État final|
@@ -73,6 +68,10 @@ Le tableau suivant indique l’action que les utilisateurs/administrateurs finau
 |Version 64 bits « Démarrer en un clic » d'Office présente  |Désinstallez les applications Office 64 bits, si vous pouvez les remplacer par des applications Office 32 bits  |Si les applications 64 bits d'Office sont supprimées, la version 32 bits « Démarrer en un clic » d'Office 2016 est installée  |
 |Installation MSI d'Office 2016 existante, avec ou sans applications autonomes  |Désinstaller la version MSI d'Office 2016.  |La version 32 bits « Démarrer en un clic » d'Office 2016 est installée. Aucune modification apportée aux applications autonomes.  |
 |Installation MSI d'Office 2013 (ou version antérieure) présente et/ou des applications Office autonomes présentes  |Aucune  |Coexistence de la version 32 bits « Démarrer en un clic » d'Office 2016 avec l'installation MSI d'Office préexistante (et les applications autonomes)  |
-   
+
  **(\*) Remarque :** ne met pas à niveau vers la version 32 bits « Démarrer en un clic » d’Office 2016 en raison d’un bogue connu. Un correctif est en cours. 
+
+## <a name="next-objective"></a>Objectif suivant
+
+[Examiner et modifier les stratégies d’appareil](m365bp-view-edit-create-mdb-policies.md)
   

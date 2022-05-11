@@ -11,18 +11,18 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes de rétention.
-ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 5ed2ccfa1c26efc8e55f048e24de005701417576
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: d509d878b244054138e4e95329d00759719e131d
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286075"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319038"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Utiliser le plan de gestion de fichiers pour créer et gérer des étiquettes de rétention
 
@@ -52,9 +52,7 @@ Pour accéder au plan de gestion de fichiers, vous devez posséder l’un des r�
 
 - Gestionnaire de conservation en lecture seule
 
-Dans le portail de conformité Microsoft Purview, **allez dans Solutions** > **pour la gestion des enregistrements** > **Plan de classement**:
-
-![Page de plan de gestion de fichiers](../media/compliance-file-plan.png). 
+Dans le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com/), accédez à **Solutions** > **Gestion des enregistrements** > **Plan de gestion de fichiers**.
 
 Si **Gouvernance des informations** ne s’affiche pas dans le volet de navigation, faites défiler la liste vers le bas, puis sélectionnez **Tout afficher**.
 
@@ -86,6 +84,9 @@ Toutes les colonnes à l’exception du **Nom** de l’étiquette peuvent être 
 - **Est déverrouillé par défaut** -actuellement en cours de déploiement-identifie si l'élément marqué comme un enregistrement est déverrouillé lorsque l'étiquette est appliquée. Valeurs valides :
     - Non
     - Oui
+
+- **Réétiqueter sur** —en cours de déploiement—identifie si l’étiquette est configurée pour s’appliquer une autre étiquette à la fin de la période de rétention. Valeurs valides :
+    - Vide ou nom d’étiquette sélectionné
 
 - **Durée de rétention** identifie la période de rétention. Valeurs valides :
     - Jours
@@ -153,9 +154,7 @@ Toutefois, l’affichage des éléments étiquetés par l’explorateur de conte
 
 Depuis le plan de gestion de fichiers, vous pouvez exporter les détails de toutes les étiquettes de conservation dans un fichier .csv pour vous aider à fournir des évaluations périodiques de conformité aux responsables de la gouvernance des données de votre organisation.
 
-Pour exporter toutes les étiquettes de rétention : sur la page **Plan de gestion de fichiers**, cliquez sur **Exporter** :
-
-![Option d’exportation de plan de gestion de fichiers.](../media/compliance-file-plan-export-labels.png)
+Pour exporter toutes les étiquettes de rétention : sur la page **Plan de gestion de fichiers**, cliquez sur **Exporter**.
 
 Un fichier *.csv contenant toutes les étiquettes de rétention existantes s’ouvre. Par exemple :
 
@@ -221,9 +220,11 @@ Utilisez les informations suivantes pour vous aider à remplir le modèle télé
 
 Les paramètres d’étiquette ne sont actuellement pas pris en charge pour l’importation :
 
-- Révision de la disposition en plusieurs étapes : Bien que vous puissiez configurer les paramètres d'une seule étape de révision de la disposition lorsque vous importez des étiquettes de conservation avec un modèle, vous ne pouvez pas spécifier d'autres étapes de révision. Vous devez plutôt les configurer dans le centre de conformité une fois l'importation réussie.
+- Révision de destruction en plusieurs étapes : bien que vous puissiez configurer les paramètres d’une étape de révision de destruction unique lorsque vous importez des étiquettes de rétention avec un modèle, vous ne pouvez pas spécifier d’étapes de révision supplémentaires. Au lieu de cela, configurez-les dans le portail de conformité une fois l’importation réussie.
 
-- Déverrouillez cet enregistrement par défaut (actuellement en préversion) : ce paramètre n’est pas disponible dans le modèle à importer et vous ne pouvez pas sélectionner ce paramètre dans le centre de conformité une fois l’importation réussie.
+- Déverrouillez cet enregistrement par défaut (actuellement déployé en préversion) : ce paramètre n’est pas disponible dans le modèle à importer et vous ne pouvez pas sélectionner ce paramètre dans le portail de conformité une fois l’importation réussie.
+
+- Étiquette de remplacement (actuellement déployée en préversion) : ce paramètre n’est pas disponible dans le modèle à importer, mais vous pouvez sélectionner ce paramètre dans le portail de conformité une fois l’importation réussie.
 
 
 ## <a name="next-steps"></a>Prochaines étapes

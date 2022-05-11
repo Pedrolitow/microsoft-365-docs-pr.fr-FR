@@ -20,16 +20,18 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Dans une solution de gestion des enregistrements, vous pouvez généralement configurer une étiquette de rétention pour démarrer la période de rétention sur la base d’un événement que vous identifiez.
-ms.openlocfilehash: ad5fb2ef567525fa021acb0388ebc5cc98b1148c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 65a3c2088974398abb6ddbeb205cfb66541629e2
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313298"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285103"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Débuter la rétention lorsqu’un événement se produit
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsque vous conservez du contenu, la période de rétention est souvent basée sur l’ancienneté du contenu. Par exemple, vous pouvez conserver des documents pendant sept ans à compter de leur création, puis les supprimer. Cependant, lorsque vous configurez [étiquettes de rétention](retention.md#retention-labels), vous pouvez baser une période de rétention sur l’occurrence d’un type spécifique d’événement. L’événement déclenche le début de la période de rétention, et les actions de rétention d’une étiquette sont appliquées sur tout le contenu portant l’étiquette en question pour ce type d’événement.
   
@@ -89,7 +91,7 @@ Flux de travail général pour la rétention basée sur un événement :
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Étape 1 : créer une étiquette dont la période de rétention est basée sur des événements
 
-Pour créer et configurer votre étiquette de rétention, consultez les instructions pour [Créer des étiquettes de rétention](file-plan-manager.md#create-retention-labels) pour la gestion des enregistrements, ou [Comment créer des étiquettes de rétention pour la gouvernance des informations](create-retention-labels-information-governance.md). Mais pour ce qui spécifique à la rétention basée sur les événements, dans la page **Définissez les paramètres de rétention** lorsque vous créez l’étiquette de rétention, après **Démarrer la période de rétention en fonction de**, sélectionnez l’un des types d’événements par défaut dans la liste déroulante ou créez le vôtre en sélectionnant **Créer un type d’événement**:
+Pour créer et configurer votre étiquette de rétention, consultez les instructions pour [Créer des étiquettes de rétention](file-plan-manager.md#create-retention-labels) pour la gestion des enregistrements, ou [Comment créer des étiquettes de rétention pour la gestion de cycle de vie](create-retention-labels-data-lifecycle-management.md). Mais pour ce qui spécifique à la rétention basée sur les événements, dans la page **Définissez les paramètres de rétention** lorsque vous créez l’étiquette de rétention, après **Démarrer la période de rétention en fonction de**, sélectionnez l’un des types d’événements par défaut dans la liste déroulante ou créez le vôtre en sélectionnant **Créer un type d’événement**:
 
 ![Créer un nouveau type d’événement pour une étiquette de rétention.](../media/SPRetention6.png)
 
@@ -139,7 +141,7 @@ L'ID d'actif est simplement une autre propriété de document disponible dans Sh
   
 ### <a name="step-5-create-an-event"></a>Étape 5 : créer un événement
 
-Lorsqu'une instance particulière de ce type d'événement se produit, telle qu'un produit atteint sa fin de vie, accédez à la page **Événements de** > **gestion des enregistrements** dans le centre de conformité Microsoft 365 et sélectionnez **+ Créer** pour créer un événement. Vous déclenchez l'événement en le créant, ici.
+Lorsqu'une instance particulière de ce type d'événement se produit, telle qu'un produit atteint sa fin de vie, accédez à la page **Gestion des enregistrements** > **Événements** dans le portail de conformité Microsoft Purview et sélectionnez **+ Créer** pour créer un événement. Vous déclenchez l'événement en le créant, ici.
 
 ![Créer un événement pour déclencher le démarrage de la rétention pour les étiquettes de rétention basée sur les événements.](../media/create-event-records-management.png)
 
@@ -220,7 +222,7 @@ https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentio
 
 Vérifiez le code de réponse. S'il s'agit de 302, obtenez l'URL redirigée à partir de la propriété Location de l'en-tête de réponse et utilisez cette URL plutôt que `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent` dans les instructions qui suivent.
 
-Les événements qui sont créés automatiquement peuvent être confirmés en les affichant dans le Centre de conformité Microsoft 365 > **Gestion des enregistrements** >  **Événements**.
+Les événements qui sont créés automatiquement peuvent être confirmés en les affichant dans le portail de conformité Microsoft Purview > **Gestion des enregistrements** >  **Événements**.
 
 ### <a name="use-microsoft-power-automate-to-create-the-event"></a>Utiliser Microsoft Power Automate pour créer l’événement
 
@@ -314,8 +316,8 @@ Utilisation du code d’exemple pour appeler des API REST :
 
 | Code de réponse | Description                   |
 | ----------------- | --------------------------------- |
-| 200               | OK, une liste d’événements dans atome + xml |
-| 404               | Introuvable                         |
+| 200                | OK, une liste d’événements dans atome + xml |
+| 404                | Introuvable                         |
 | 302               | Rediriger                          |
 | 401               | Autorisation échouée              |
 | 403               | Message d’échec d’authentification             |
@@ -338,8 +340,8 @@ Utilisation du code d’exemple pour appeler des API REST :
 
 | Code de réponse | Description                                      |
 | ----------------- | ---------------------------------------------------- |
-| 200               | OK, le corps du message de réponse contient l’événement dans atome + xml |
-| 404               | Introuvable                                            |
+| 200                | OK, le corps du message de réponse contient l’événement dans atome + xml |
+| 404                | Introuvable                                            |
 | 302               | Rediriger                                             |
 | 401               | Autorisation échouée                                 |
 | 403               | Message d’échec d’authentification                                |
@@ -362,8 +364,8 @@ Utilisation du code d’exemple pour appeler des API REST :
 
 | Code de réponse | Description                                      |
 | ----------------- | ---------------------------------------------------- |
-| 200               | OK, le corps du message de réponse contient l’événement dans atome + xml |
-| 404               | Introuvable                                            |
+| 200                | OK, le corps du message de réponse contient l’événement dans atome + xml |
+| 404                | Introuvable                                            |
 | 302               | Rediriger                                             |
 | 401               | Autorisation échouée                                 |
 | 403               | Message d’échec d’authentification                                |
